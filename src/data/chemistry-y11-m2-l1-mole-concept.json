@@ -1,0 +1,260 @@
+{
+  "title": "The Mole Concept",
+  "subtitle": "Counting particles without counting particles",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "Use the mole as a counting unit for particles",
+    "Relate amount of substance to number of particles using Avogadro's constant"
+  ],
+  "lessonIntent": "Students can explain why the mole is used and convert between moles and particles.",
+  "examSkill": "Choose and apply N = n x N_A or n = N / N_A with correct units.",
+  "productionRole": "reference",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "The Mole Concept — Year 11 Chemistry, Module 2",
+      "voiceover": {
+        "text": "The Mole Concept. Year eleven Chemistry, Module two."
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A mole is a counting unit",
+      "body": "How do you count atoms when you cannot see or weigh one atom?",
+      "callout": "The mole is the shortcut.",
+      "diagram": { "type": "dozenMole" },
+      "durationInFrames": 780,
+      "caption": "The mole lets chemists count invisible particles using a measurable amount.",
+      "voiceover": {
+        "text": "Here is the challenge. Chemists need exact numbers of atoms and molecules, but those particles are too small to count one by one. A dozen gives a name to twelve. A century gives a name to one hundred. A mole gives a name to six-point-zero-two-two times ten to the power of twenty-three particles. That counting shortcut is what lets chemistry move from invisible particles to real masses in the lab."
+      }
+    },
+    {
+      "id": "concept-problem",
+      "type": "concept",
+      "heading": "Atoms are impossibly small",
+      "body": "A single carbon atom weighs 2 × 10⁻²³ g — far too small to measure on any lab balance.",
+      "secondary": "Yet reactions need exact ratios: 2 H atoms per O atom to make water. Chemists needed a bridge.",
+      "callout": "This is the problem the mole solves.",
+      "image": "waterMolecule",
+      "durationInFrames": 1080,
+      "caption": "Atoms are too small to count individually — chemists needed a counting bridge.",
+      "voiceover": {
+        "text": "Here is the problem chemists face. A single carbon atom weighs about two times ten to the negative twenty-three grams. Far too small to weigh on any lab balance. But chemical reactions care about exact numbers of atoms. To make water, you need exactly two hydrogen atoms for every one oxygen atom. The ratio matters. Counting individual atoms is impossible. Chemists needed a bridge — between the invisible atomic world and the measurable world of grams and beakers. The mole is that bridge."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "One mole = 6.022 × 10²³ particles",
+      "body": "One mole is the amount of substance containing exactly 6.022 × 10²³ elementary entities.",
+      "secondary": "Those entities can be atoms, molecules, ions, or formula units — whatever you are counting.",
+      "callout": "New counting word: mol.",
+      "diagram": {
+        "type": "table",
+        "headers": ["Symbol", "Quantity", "Value / units"],
+        "rows": [
+          ["Nₐ", "Avogadro's number", "6.022 × 10²³ mol⁻¹"],
+          ["1 mol", "one mole", "6.022 × 10²³ entities"],
+          ["n", "amount of substance", "measured in mol"]
+        ]
+      },
+      "durationInFrames": 750,
+      "caption": "One mole contains exactly 6.022 × 10²³ particles — this is Avogadro's number.",
+      "voiceover": {
+        "text": "One mole is defined as the amount of substance containing exactly six-point-zero-two-two times ten to the twenty-three elementary entities. Those entities can be atoms, molecules, ions, or formula units — whatever you are counting. This number has its own name and symbol: Avogadro's number, N subscript A. It is the SI unit for amount of substance."
+      }
+    },
+    {
+      "id": "concept-scale",
+      "type": "concept",
+      "heading": "How big is 6.022 × 10²³?",
+      "body": "Avogadro's number of sand grains would cover all of Australia 100 metres deep.",
+      "secondary": "The number of stars in the observable universe (~10²³) is still 10× smaller than Nₐ.",
+      "callout": "Huge number. Practical shortcut.",
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          { "label": "Big Bang", "value": 18 },
+          { "label": "Grass on Earth", "value": 19 },
+          { "label": "Stars in space", "value": 23 },
+          { "label": "Avogadro's Nₐ", "value": 24 }
+        ],
+        "unit": "log₁₀ scale"
+      },
+      "durationInFrames": 1020,
+      "caption": "Avogadro's number sits above the number of stars in the observable universe.",
+      "voiceover": {
+        "text": "How big is six times ten to the twenty-three? Let's put it in perspective. If you had Avogadro's number of grains of sand, they would cover the entire continent of Australia to a depth of one hundred metres. The number of stars in the observable universe is around ten to the twenty-three — still ten times smaller than Avogadro's number. Even the number of seconds since the Big Bang is only four times ten to the seventeen. This is genuinely one of the largest numbers used in everyday science."
+      }
+    },
+    {
+      "id": "concept-carbon12",
+      "type": "concept",
+      "heading": "Why 6.022 × 10²³ specifically?",
+      "body": "One mole of carbon-12 atoms has a mass of exactly 12 grams.",
+      "secondary": "This links atomic mass to real mass: molar mass in g/mol equals relative atomic mass from the periodic table.",
+      "callout": "This is why the periodic table is useful.",
+      "diagram": {
+        "type": "balance",
+        "leftLabel": "1 mol C-12 atoms",
+        "rightLabel": "12.000 g",
+        "leftValue": 1,
+        "rightValue": 1
+      },
+      "durationInFrames": 930,
+      "caption": "Nₐ was chosen so that 1 mol of carbon-12 has a mass of exactly 12 grams.",
+      "voiceover": {
+        "text": "Why six-point-zero-two-two times ten to the twenty-three specifically? It was not chosen randomly. The mole was defined so that one mole of carbon-twelve atoms has a mass of exactly twelve grams — a deliberate design decision. It means the molar mass of any element, in grams per mole, equals its relative atomic mass from the periodic table. Hydrogen: one gram per mole. Carbon: twelve. Oxygen: sixteen. This makes calculations enormously convenient."
+      }
+    },
+    {
+      "id": "misconception-nvn",
+      "type": "misconception",
+      "heading": "N and n are not the same",
+      "body": "Capital N is the raw count of particles — a huge number with no units.",
+      "secondary": "Lowercase n is the amount in moles — a small number. n = 2 mol → N = 1.204 × 10²⁴ particles.",
+      "mistakeTag": "Do not swap these",
+      "callout": "Ask first: am I finding N or n?",
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "N (particles)",
+        "afterLabel": "n (moles)",
+        "beforeContent": "1.204 × 10²⁴ — no units, just a count",
+        "afterContent": "2 mol — amount of substance"
+      },
+      "durationInFrames": 1080,
+      "caption": "N (particles) and n (moles) are completely different — never swap them.",
+      "voiceover": {
+        "text": "Before we use the formula, one critical distinction you must get right from day one. Capital N is the number of particles — a massive number like one-point-two times ten to the twenty-four — with no units. It is simply a count. Lowercase n is the amount in moles — a small, human-readable number like two mol. A sample with n equals two mol contains N equals one-point-two-zero-four times ten to the twenty-four particles. These are completely different quantities. Confusing them is the single most common error in this module."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "formula",
+      "heading": "N = n × Nₐ",
+      "body": "N = n × Nₐ",
+      "secondary": "N = particles (no units)  ·  n = moles (mol)  ·  Nₐ = 6.022 × 10²³ mol⁻¹. Units cancel: mol × mol⁻¹ = dimensionless count.",
+      "callout": "Units are the safety check.",
+      "unitCancel": {
+        "left": "mol",
+        "right": "mol⁻¹",
+        "result": "N is a particle count, so no mol unit remains."
+      },
+      "durationInFrames": 960,
+      "caption": "N = n × Nₐ connects particle count, moles, and Avogadro's number.",
+      "voiceover": {
+        "text": "The formula connecting all three quantities is: N equals n times N-A. N is the number of particles. n is the amount in moles. N-A is Avogadro's number — six-point-zero-two-two times ten to the twenty-three, with units of mol to the negative one. Know any two of these three quantities and you can find the third by rearranging. Notice how the units cancel: mol times mol-inverse gives a dimensionless count. That is why N has no units on its answer."
+      }
+    },
+    {
+      "id": "worked-example-1",
+      "type": "workedExample",
+      "heading": "Finding N — number of particles",
+      "question": "How many atoms are in 2.5 mol of carbon?",
+      "coachNote": "Target: N. So multiply by Nₐ.",
+      "unitCancel": {
+        "left": "mol",
+        "right": "mol⁻¹",
+        "result": "answer is atoms, not mol"
+      },
+      "steps": [
+        "Known: n = 2.5 mol,  Nₐ = 6.022 × 10²³ mol⁻¹",
+        "Find: N = ? (number of carbon atoms)",
+        "Formula: N = n × Nₐ",
+        "Substitute: N = 2.5 × 6.022 × 10²³",
+        "N = 1.506 × 10²⁴ atoms  (mol cancels with mol⁻¹)"
+      ],
+      "durationInFrames": 1260,
+      "caption": "N = 2.5 × 6.022 × 10²³ = 1.506 × 10²⁴ atoms.",
+      "voiceover": {
+        "text": "Example one. How many atoms are in two-point-five moles of carbon? Step one: identify what we know. n equals two-point-five mol. N-A equals six-point-zero-two-two times ten to the twenty-three mol-inverse. Step two: identify what we need. N — the number of carbon atoms. Step three: write the formula. N equals n times N-A. Step four: substitute. N equals two-point-five, multiplied by six-point-zero-two-two times ten to the twenty-three. Step five: calculate. N equals one-point-five-zero-six times ten to the twenty-four atoms. The mol units cancel. The answer is a pure count of particles, with no units."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Finding n — amount in moles",
+      "question": "A sample contains 3.01 × 10²⁴ molecules of water. How many moles is this?",
+      "coachNote": "Target: n. So divide by Nₐ.",
+      "unitCancel": {
+        "left": "particles",
+        "right": "particles mol⁻¹",
+        "result": "answer is mol"
+      },
+      "steps": [
+        "Known: N = 3.01 × 10²⁴,  Nₐ = 6.022 × 10²³ mol⁻¹",
+        "Find: n = ? (amount in moles)",
+        "Rearrange: n = N ÷ Nₐ",
+        "Substitute: n = 3.01 × 10²⁴ ÷ 6.022 × 10²³",
+        "n = 5.0 mol  ✓  (particles ÷ particles mol⁻¹ = mol)"
+      ],
+      "durationInFrames": 1200,
+      "caption": "Rearrange to n = N ÷ Nₐ when you need the amount in moles.",
+      "voiceover": {
+        "text": "Example two. A sample contains three-point-zero-one times ten to the twenty-four molecules of water. How many moles is this? Known: N equals three-point-zero-one times ten to the twenty-four. N-A equals six-point-zero-two-two times ten to the twenty-three. We want n — so rearrange the formula: n equals N divided by N-A. Substitute: n equals three-point-zero-one times ten to the twenty-four, divided by six-point-zero-two-two times ten to the twenty-three. Answer: five-point-zero mol. Check the units: particles divided by particles-per-mol gives mol. Correct."
+      }
+    },
+    {
+      "id": "misconception-mistakes",
+      "type": "misconception",
+      "heading": "Two mistakes to fix right now",
+      "body": "Mistake 1: swapping N and n. Always label which quantity you are finding before you substitute.",
+      "secondary": "Mistake 2: dropping units. Nₐ is mol⁻¹. Write units at every step — confirm they cancel to what you expect.",
+      "mistakeTag": "Exam marks live here",
+      "callout": "The units tell you if the setup is wrong.",
+      "diagram": { "type": "massComparison" },
+      "durationInFrames": 900,
+      "caption": "Always label N or n before substituting, and write units at every step.",
+      "voiceover": {
+        "text": "Two mistakes will cost you marks if you do not fix them now. First: confusing N and n. Capital N is a raw count with no units. Lowercase n is in moles. Before you substitute anything, write down which quantity you are finding. Second: dropping the units of N-A. Avogadro's number is mol-inverse. When you multiply mol by mol-inverse they cancel, leaving a pure count. Write units at every step."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A sample contains 0.75 mol of NaCl. How many formula units does it contain?",
+      "pausePrompt": "Pause: are you finding N or n?",
+      "answerSteps": [
+        "n = 0.75 mol,  Nₐ = 6.022 × 10²³ mol⁻¹",
+        "N = n × Nₐ = 0.75 × 6.022 × 10²³",
+        "N = 4.52 × 10²³ formula units"
+      ],
+      "durationInFrames": 960,
+      "caption": "N = 0.75 × 6.022 × 10²³ = 4.52 × 10²³ formula units.",
+      "voiceover": {
+        "text": "Quick check. A sample contains zero-point-seven-five moles of sodium chloride. How many formula units does it contain? Pause and try it yourself. Here is the working. n equals zero-point-seven-five mol. N-A equals six-point-zero-two-two times ten to the twenty-three. N equals n times N-A equals zero-point-seven-five times six-point-zero-two-two times ten to the twenty-three. N equals four-point-five-two times ten to the twenty-three formula units."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "The Mole Concept — Key Ideas",
+      "finalPrompt": "Before every question: N or n?",
+      "points": [
+        "The mole is a counting unit: 1 mol = 6.022 × 10²³ particles (Avogadro's number, Nₐ).",
+        "Capital N = number of particles (no units). Lowercase n = amount in moles.",
+        "Formula: N = n × Nₐ. Know any two, rearrange to find the third.",
+        "Units always cancel: mol × mol⁻¹ gives a dimensionless particle count.",
+        "Nₐ was defined using carbon-12 so molar mass (g/mol) equals atomic mass from the periodic table."
+      ],
+      "durationInFrames": 810,
+      "caption": "1 mol = 6.022 × 10²³. Use N = n × Nₐ. Units always cancel.",
+      "voiceover": {
+        "text": "Let's lock in the key ideas. The mole is a counting unit — one mole contains six-point-zero-two-two times ten to the twenty-three particles. Capital N is the particle count — no units. Lowercase n is the amount in moles. The formula is N equals n times N-A. Know any two, find the third. Units always cancel. And the mole was defined using carbon-twelve so that molar mass in grams-per-mol equals atomic mass from the periodic table."
+      }
+    }
+  ]
+}

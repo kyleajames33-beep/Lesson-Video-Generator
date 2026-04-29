@@ -1,0 +1,42 @@
+{
+  "name": "lesson-video-generator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "remotion studio src/index.ts",
+    "preview": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts Chemistry-Y11-M2-L1 out/lesson-video.mp4",
+    "render:lesson1": "remotion render src/index.ts Chemistry-Y11-M2-L1 out/lesson-1-mole-concept.mp4",
+    "render:lesson2": "remotion render src/index.ts Chemistry-Y11-M2-L2 out/lesson-2-molar-mass.mp4",
+    "generate:registry": "node scripts/generate-lesson-registry.mjs",
+    "audit:production": "node scripts/audit-production-system.mjs",
+    "gate:production": "node scripts/check-production-gate.mjs",
+    "dashboard:production": "node scripts/export-production-dashboard.mjs",
+    "retrospective:create": "node scripts/create-lesson-retrospective.mjs",
+    "check": "tsc --noEmit",
+    "check:all": "npm run generate:registry && npm run check && npm run validate:lessons",
+    "export:site-manifest": "node scripts/export-site-video-manifest.mjs",
+    "export:transcript": "node scripts/export-transcript.mjs",
+    "voiceover:timing": "node scripts/report-voiceover-timing.mjs",
+    "voiceover:fix-timing": "node scripts/apply-voiceover-timing-fix.mjs",
+    "voiceover:manifest": "node scripts/export-voiceover-manifest.mjs",
+    "voiceover:sync": "node scripts/sync-voiceover-assets.mjs",
+    "prepare:lesson": "node scripts/prepare-lesson.mjs",
+    "validate:lessons": "node scripts/validate-lesson.mjs",
+    "render:stills": "node scripts/render-lesson-stills.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "latest",
+    "@remotion/renderer": "latest",
+    "@remotion/transitions": "^4.0.451",
+    "react": "latest",
+    "react-dom": "latest",
+    "remotion": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  }
+}

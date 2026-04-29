@@ -1,0 +1,22 @@
+node_modules/
+.remotion/
+out/
+dist/
+.env
+.env.*
+
+# Local/editor/runtime noise
+.DS_Store
+*.log
+*.err.log
+remotion-root-*.log
+remotion-root-*.err.log
+remotion-studio*.log
+remotion-studio*.err.log
+.claude/
+
+# Separate starter project not used by the main pipeline
+lesson-video-generator-app/
+
+# Source dump duplicates; runtime assets live in public/assets
+/assets/
