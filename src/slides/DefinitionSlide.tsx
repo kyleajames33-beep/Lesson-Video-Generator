@@ -23,7 +23,8 @@ import {NumberTicker} from '../animations/MotionPrimitives';
 import {AmbientBorderPulse, AmbientGlow} from '../animations/AmbientMotion';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
-import {FONT_HAND, FONT_MONO, TOK} from '../styles/tokens';
+import {Eyebrow} from './shared/Eyebrow';
+import {FONT_HAND, FONT_MONO, TYPE, TOK} from '../styles/tokens';
 
 type DefinitionSlideProps = {
 	scene: TextScene;
@@ -46,18 +47,7 @@ export const DefinitionSlide = ({scene, lesson, sceneIndex, totalScenes}: Defini
 
 			{/* Mono eyebrow */}
 			<div style={{position: 'absolute', top: 150, left: 64}}>
-				<FadeUp delay={3} durationFrames={12}>
-					<div
-						style={{
-							fontFamily: FONT_MONO,
-							fontSize: 22,
-							color: TOK.amber,
-							letterSpacing: '0.2em',
-						}}
-					>
-						DEFINITION
-					</div>
-				</FadeUp>
+				<Eyebrow color={TOK.inkDim}>DEFINITION</Eyebrow>
 			</div>
 
 			{/* Hero word with scribble circle + handwritten annotation */}

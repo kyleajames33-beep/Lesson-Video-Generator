@@ -16,7 +16,8 @@ import {DiagramRenderer} from './diagrams/DiagramRenderer';
 import {StampInTitle} from '../animations/MotionPrimitives';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
-import {FONT_MONO, TOK} from '../styles/tokens';
+import {Eyebrow} from './shared/Eyebrow';
+import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
 
 type ConceptSlideProps = {
 	scene: TextScene;
@@ -46,23 +47,10 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 				}}
 			>
 				<div style={{minWidth: 0}}>
-					<FadeUp delay={3} durationFrames={12}>
-						<div
-							style={{
-								fontFamily: FONT_MONO,
-								fontSize: 20,
-								color: TOK.amber,
-								letterSpacing: '0.2em',
-								marginBottom: 28,
-								textTransform: 'uppercase',
-							}}
-						>
-							CORE IDEA
-						</div>
-					</FadeUp>
+					<Eyebrow color={TOK.inkDim}>CORE IDEA</Eyebrow>
 
 					<FadeUp delay={12} durationFrames={14} dy={22}>
-						<StampInTitle delay={12} color={TOK.ink} underlineColor={TOK.amber}>
+						<StampInTitle delay={12} color={TOK.ink} underlineColor={TOK.chem1}>
 							<h1
 								style={{
 									margin: 0,
@@ -90,9 +78,9 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 						/>
 						<div
 							style={{
-								fontSize: 34,
-								lineHeight: 1.28,
-								fontWeight: 600,
+								fontSize: TYPE.bodyLarge.fontSize,
+								lineHeight: TYPE.bodyLarge.lineHeight,
+								fontWeight: TYPE.bodyLarge.fontWeight,
 								color: TOK.ink,
 								letterSpacing: '-0.012em',
 							}}
@@ -171,10 +159,9 @@ const VisualStage = ({scene}: {scene: TextScene}) => {
 					`linear-gradient(135deg, ${TOK.bgLift} 0%, rgba(13,58,47,0.56) 55%, ${TOK.bg} 100%)`,
 				boxShadow: `0 34px 120px rgba(0,0,0,0.34), inset 0 0 0 1px rgba(232,239,233,0.025)`,
 				overflow: 'hidden',
-				transform: `translateY(${driftY}px)`,
-				willChange: 'transform',
 			}}
 		>
+			{/* Decorative layers drift; readable content stays locked */}
 			<div
 				aria-hidden
 				style={{
@@ -183,6 +170,8 @@ const VisualStage = ({scene}: {scene: TextScene}) => {
 					background:
 						`radial-gradient(circle at 50% 42%, ${TOK.chem2}38 0%, ${TOK.chem1}18 26%, transparent 58%)`,
 					opacity: glowOpacity,
+					transform: `translateY(${driftY}px)`,
+					willChange: 'transform',
 				}}
 			/>
 			<div
@@ -192,6 +181,8 @@ const VisualStage = ({scene}: {scene: TextScene}) => {
 					inset: 26,
 					border: `1px dashed rgba(232,239,233,0.08)`,
 					borderRadius: 14,
+					transform: `translateY(${driftY}px)`,
+					willChange: 'transform',
 				}}
 			/>
 			<div
@@ -205,45 +196,45 @@ const VisualStage = ({scene}: {scene: TextScene}) => {
 			>
 				{scene.image ? <ConceptAssetImage name={scene.image} /> : <ConceptDiagram scene={scene} />}
 			</div>
-		
-				{/* P0.2 — Leader-line callout on water molecule */}
-				{scene.image === 'waterMolecule' && (
-					<>
-						<LeaderLineCallout
-							x1={385}
-							y1={277}
-							x2={480}
-							y2={220}
-							label="Oxygen"
-							delay={90}
-							lineColor={TOK.chem1}
-						/>
-						<LeaderLineCallout
-							x1={237}
-							y1={366}
-							x2={180}
-							y2={320}
-							label="Hydrogen"
-							delay={102}
-							lineColor={TOK.chem2}
-						/>
-					</>
-				)}
 
-				{/* P0.5 — MarginNote on bar chart */}
-				{scene.diagram?.type === 'barChart' && (
-					<MarginNote
-						text="huge!"
-						x={660}
-						y={200}
-						pointToX={598}
-						pointToY={286}
-						delay={120}
-						color={TOK.amber}
-						seed={3}
+			{/* P0.2 — Leader-line callout on water molecule */}
+			{scene.image === 'waterMolecule' && (
+				<>
+					<LeaderLineCallout
+						x1={385}
+						y1={277}
+						x2={480}
+						y2={220}
+						label="Oxygen"
+						delay={90}
+						lineColor={TOK.chem1}
 					/>
-				)}
-</div>
+					<LeaderLineCallout
+						x1={237}
+						y1={366}
+						x2={180}
+						y2={320}
+						label="Hydrogen"
+						delay={102}
+						lineColor={TOK.chem2}
+					/>
+				</>
+			)}
+
+			{/* P0.5 — MarginNote on bar chart */}
+			{scene.diagram?.type === 'barChart' && (
+				<MarginNote
+					text="huge!"
+					x={660}
+					y={200}
+					pointToX={598}
+					pointToY={286}
+					delay={120}
+					color={TOK.amber}
+					seed={3}
+				/>
+			)}
+		</div>
 	);
 };
 

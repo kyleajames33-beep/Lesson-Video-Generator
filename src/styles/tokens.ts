@@ -35,9 +35,18 @@ export const FONT_HAND = '"Caveat", "Kalam", cursive';
 // Type scale (1080p frame). See visual-design-handbook.md "Type scale".
 export const TYPE = {
 	hero: {fontSize: 220, fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 0.9},
+	display: {fontSize: 208, fontWeight: 840, letterSpacing: '-0.045em', lineHeight: 0.92},
+	h1: {fontSize: 88, fontWeight: 820, letterSpacing: '-0.04em', lineHeight: 0.98},
+	h2: {fontSize: 82, fontWeight: 800, letterSpacing: '-0.035em', lineHeight: 0.98},
+	h3: {fontSize: 76, fontWeight: 800, letterSpacing: '-0.035em', lineHeight: 1.02},
+	h4: {fontSize: 68, fontWeight: 800, letterSpacing: '-0.035em', lineHeight: 1.02},
 	title: {fontSize: 96, fontWeight: 700, letterSpacing: '-0.03em', lineHeight: 1},
 	section: {fontSize: 56, fontWeight: 700, lineHeight: 1.05},
+	subhead: {fontSize: 58, fontWeight: 760, letterSpacing: '-0.025em', lineHeight: 1.08},
+	bodyLarge: {fontSize: 34, fontWeight: 600, lineHeight: 1.28},
 	body: {fontSize: 28, fontWeight: 400, lineHeight: 1.45},
+	bodySmall: {fontSize: 25, fontWeight: 400, lineHeight: 1.42},
+	callout: {fontSize: 30, fontWeight: 500, lineHeight: 1.3},
 	mono: {fontSize: 22, fontFamily: FONT_MONO, letterSpacing: '0.15em'},
 } as const;
 

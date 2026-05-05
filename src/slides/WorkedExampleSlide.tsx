@@ -14,7 +14,8 @@ import {AmbientBorderPulse, AmbientGlow} from '../animations/AmbientMotion';
 import {calculationStepLabel, getCalculationStepKind} from './shared/calculationSteps';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
-import {FONT_MONO, TOK} from '../styles/tokens';
+import {Eyebrow} from './shared/Eyebrow';
+import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
 
 type WorkedExampleSlideProps = {
 	scene: WorkedExampleScene;

@@ -23,7 +23,8 @@ import {FadeUp} from '../animations/FadeUp';
 import {ScribbleArrow} from '../animations/DoodlePrimitives';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
-import {FONT_HAND, FONT_MONO, TOK} from '../styles/tokens';
+import {Eyebrow} from './shared/Eyebrow';
+import {FONT_HAND, TYPE, TOK} from '../styles/tokens';
 
 type LabFootageSlideProps = {
 	scene: LabFootageScene;
@@ -48,18 +49,7 @@ export const LabFootageSlide = ({scene, lesson, sceneIndex, totalScenes}: LabFoo
 
 			{/* Mono eyebrow */}
 			<div style={{position: 'absolute', top: 150, left: 64}}>
-				<FadeUp delay={3} durationFrames={12}>
-					<div
-						style={{
-							fontFamily: FONT_MONO,
-							fontSize: 22,
-							color: TOK.amber,
-							letterSpacing: '0.2em',
-						}}
-					>
-						LAB DEMO
-					</div>
-				</FadeUp>
+				<Eyebrow color={TOK.inkDim}>LAB DEMO</Eyebrow>
 			</div>
 
 			{/* Heading + body */}

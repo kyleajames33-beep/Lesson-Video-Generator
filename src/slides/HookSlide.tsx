@@ -19,7 +19,8 @@ import {
 } from '../animations/DoodlePrimitives';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
-import {FONT_MONO, TOK} from '../styles/tokens';
+import {Eyebrow} from './shared/Eyebrow';
+import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
 
 type HookSlideProps = {
 	scene: TextScene;
@@ -98,9 +99,9 @@ export const HookSlide = ({scene, lesson, sceneIndex, totalScenes}: HookSlidePro
 						<div
 							style={{
 								marginTop: 28,
-								fontSize: 30,
+								fontSize: TYPE.callout.fontSize,
 								fontStyle: 'italic',
-								color: TOK.amber,
+								color: TOK.inkDim,
 								fontWeight: 500,
 								letterSpacing: '-0.01em',
 							}}
@@ -259,7 +260,7 @@ const HeroQuestion = ({
 					<div style={{position: 'absolute', left: -8, bottom: -34, width: '100%', pointerEvents: 'none'}}>
 						<ScribbleUnderline
 							width={Math.max(180, phrase.length * 32)}
-							color={TOK.amber}
+							color={TOK.chem2}
 							strokeWidth={6}
 							seed={7}
 							strokes={2}
@@ -275,7 +276,7 @@ const HeroQuestion = ({
 };
 
 const fitHookQuestionSize = (text: string) => {
-	if (text.length > 130) return 70;
-	if (text.length > 105) return 76;
-	return 88;
+	if (text.length > 130) return TYPE.h4.fontSize;
+	if (text.length > 105) return TYPE.h3.fontSize;
+	return TYPE.h1.fontSize;
 };

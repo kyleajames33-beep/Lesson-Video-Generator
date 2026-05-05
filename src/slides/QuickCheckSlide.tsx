@@ -13,7 +13,8 @@ import {calculationStepLabel, getCalculationStepKind} from './shared/calculation
 import {StampInTitle} from '../animations/MotionPrimitives';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
-import {FONT_HAND, FONT_MONO, TOK} from '../styles/tokens';
+import {Eyebrow} from './shared/Eyebrow';
+import {FONT_HAND, FONT_MONO, TYPE, TOK} from '../styles/tokens';
 
 type QuickCheckSlideProps = {
 	scene: QuickCheckScene;

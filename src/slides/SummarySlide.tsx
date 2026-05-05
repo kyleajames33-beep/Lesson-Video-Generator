@@ -11,7 +11,8 @@ import {AmbientBorderPulse, AmbientGlow} from '../animations/AmbientMotion';
 import {StampInTitle} from '../animations/MotionPrimitives';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
-import {FONT_MONO, TOK} from '../styles/tokens';
+import {Eyebrow} from './shared/Eyebrow';
+import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
 
 type SummarySlideProps = {
 	scene: SummaryScene;
@@ -28,19 +29,7 @@ export const SummarySlide = ({scene, lesson, sceneIndex, totalScenes}: SummarySl
 			<SlideChrome lesson={lesson} dot="2.1" topic="THE RECAP" sceneType="summary" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			<header style={{position: 'absolute', top: 138, left: 64, right: 64}}>
-				<FadeUp delay={3} durationFrames={12}>
-					<div
-						style={{
-							fontFamily: FONT_MONO,
-							fontSize: 22,
-							color: TOK.amber,
-							letterSpacing: '0.2em',
-							textTransform: 'uppercase',
-						}}
-					>
-						◆ FIVE THINGS TO REMEMBER
-					</div>
-				</FadeUp>
+				<Eyebrow color={TOK.inkDim}>◆ FIVE THINGS TO REMEMBER</Eyebrow>
 				<FadeUp delay={18} durationFrames={16} dy={24}>
 					<StampInTitle delay={18} color={TOK.ink} underlineColor={TOK.amber}>
 						<h1
