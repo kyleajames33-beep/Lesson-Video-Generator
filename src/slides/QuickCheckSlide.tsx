@@ -51,19 +51,7 @@ export const QuickCheckSlide = ({scene, lesson, sceneIndex, totalScenes}: QuickC
 			</FadeUp>
 
 			<div style={{position: 'absolute', top: 180, left: 64, right: 64}}>
-				<FadeUp delay={3} durationFrames={12}>
-					<div
-						style={{
-							fontFamily: FONT_MONO,
-							fontSize: 22,
-							color: TOK.amber,
-							letterSpacing: '0.2em',
-							textTransform: 'uppercase',
-						}}
-					>
-						QUICK CHECK · TRY IT FIRST
-					</div>
-				</FadeUp>
+				<Eyebrow color={TOK.inkDim}>QUICK CHECK · TRY IT FIRST</Eyebrow>
 
 				<FadeUp delay={24} durationFrames={16} dy={24}>
 					<StampInTitle delay={24} color={TOK.ink} underlineColor={TOK.amber}>
@@ -96,9 +84,9 @@ export const QuickCheckSlide = ({scene, lesson, sceneIndex, totalScenes}: QuickC
 									display: 'inline-flex',
 									alignItems: 'center',
 									gap: 14,
-									fontSize: 31,
-									color: TOK.amber,
-									fontWeight: 650,
+									fontSize: TYPE.callout.fontSize,
+									color: TOK.inkDim,
+									fontWeight: TYPE.callout.fontWeight,
 									fontStyle: 'italic',
 								}}
 							>
@@ -243,7 +231,7 @@ const AnswerStep = ({
 					style={{
 						fontFamily: FONT_MONO,
 						fontSize: 22,
-						color: isFinal ? TOK.amber : TOK.inkMute,
+						color: TOK.inkMute,
 						letterSpacing: '0.12em',
 						textTransform: 'uppercase',
 					}}
@@ -317,7 +305,7 @@ const colorForPiece = (piece: string, isFinal: boolean) => {
 };
 
 const fitQuestionSize = (question: string) => {
-	if (question.length > 88) return 66;
-	if (question.length > 70) return 74;
-	return 84;
+	if (question.length > 88) return TYPE.h4.fontSize;
+	if (question.length > 70) return TYPE.h3.fontSize;
+	return TYPE.h2.fontSize;
 };

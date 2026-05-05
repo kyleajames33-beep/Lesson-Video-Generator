@@ -40,19 +40,7 @@ export const FormulaSlide = ({scene, lesson, sceneIndex, totalScenes}: FormulaSl
 			<SlideChrome lesson={lesson} dot="2.1" topic="FORMULA" sceneType="formula" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			<div style={{position: 'absolute', top: 180, left: 64, right: 64}}>
-				<FadeUp delay={3} durationFrames={12}>
-					<div
-						style={{
-							fontFamily: FONT_MONO,
-							fontSize: 22,
-							color: TOK.amber,
-							letterSpacing: '0.2em',
-							textTransform: 'uppercase',
-						}}
-					>
-						↳ THE COUNTING EQUATION
-					</div>
-				</FadeUp>
+				<Eyebrow color={TOK.inkDim}>↳ THE COUNTING EQUATION</Eyebrow>
 				<FadeUp delay={18} durationFrames={14} dy={18}>
 					<div
 						style={{

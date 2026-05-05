@@ -10,7 +10,6 @@
 //   Check     → quickCheck
 //   Summary   → summary
 
-import {interpolate, useCurrentFrame} from 'remotion';
 import {TOK, FONT_MONO} from '../../styles/tokens';
 
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
@@ -46,13 +45,8 @@ type ChapterRibbonProps = {
 };
 
 export const ChapterRibbon = ({sceneType}: ChapterRibbonProps) => {
-	const frame = useCurrentFrame();
 	const currentPhase = getPhase(sceneType);
 	const activeIndex = PHASES.indexOf(currentPhase);
-
-	// Subtle pulse on the active segment
-	const t = frame / 30;
-	const pulse = 0.7 + 0.3 * Math.sin(t * Math.PI * 0.8);
 
 	return (
 		<div
@@ -72,8 +66,8 @@ export const ChapterRibbon = ({sceneType}: ChapterRibbonProps) => {
 				const isPast = index < activeIndex;
 				const isFuture = index > activeIndex;
 
-				const barOpacity = isActive ? pulse : isPast ? 0.5 : 0.2;
-				const textColor = isActive ? TOK.amber : isPast ? TOK.inkDim : TOK.inkMute;
+				const barOpacity = isActive ? 1 : isPast ? 0.5 : 0.2;
+				const textColor = isActive ? TOK.chem2 : isPast ? TOK.inkDim : TOK.inkMute;
 				const textOpacity = isActive ? 1 : isPast ? 0.6 : 0.35;
 
 				return (
@@ -92,7 +86,7 @@ export const ChapterRibbon = ({sceneType}: ChapterRibbonProps) => {
 								width: '100%',
 								height: 3,
 								borderRadius: 2,
-								background: isActive ? TOK.amber : isPast ? TOK.inkDim : TOK.inkMute,
+								background: isActive ? TOK.chem2 : isPast ? TOK.inkDim : TOK.inkMute,
 								opacity: barOpacity,
 								transition: 'none',
 							}}
@@ -100,7 +94,7 @@ export const ChapterRibbon = ({sceneType}: ChapterRibbonProps) => {
 						<div
 							style={{
 								fontFamily: FONT_MONO,
-								fontSize: 11,
+								fontSize: 14,
 								letterSpacing: '0.12em',
 								textTransform: 'uppercase',
 								color: textColor,

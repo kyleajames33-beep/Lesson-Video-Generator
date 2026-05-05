@@ -29,28 +29,16 @@ export const MisconceptionSlide = ({scene, lesson, sceneIndex, totalScenes}: Mis
 			<SlideChrome lesson={lesson} dot="2.1" topic="COMMON TRAP" sceneType="misconception" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			<div style={{position: 'absolute', top: 156, left: 64, right: 64}}>
-				<FadeUp delay={3} durationFrames={12}>
-					<div
-						style={{
-							fontFamily: FONT_MONO,
-							fontSize: 22,
-							color: TOK.amber,
-							letterSpacing: '0.2em',
-							textTransform: 'uppercase',
-						}}
-					>
-						COMMON TRAP
-					</div>
-				</FadeUp>
+				<Eyebrow color={TOK.inkDim}>COMMON TRAP</Eyebrow>
 
 				<FadeUp delay={16} durationFrames={14} dy={18}>
 					<StampInTitle delay={16} color={TOK.ink} underlineColor={TOK.amber}>
 						<div
 							style={{
 								marginTop: 14,
-								fontSize: 82,
-								fontWeight: 800,
-								lineHeight: 0.98,
+								fontSize: TYPE.h2.fontSize,
+								fontWeight: TYPE.h2.fontWeight,
+								lineHeight: TYPE.h2.lineHeight,
 								letterSpacing: '-0.035em',
 								color: TOK.ink,
 								maxWidth: 1320,

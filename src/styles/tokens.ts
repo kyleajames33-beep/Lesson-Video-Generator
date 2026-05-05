@@ -47,6 +47,8 @@ export const TYPE = {
 	body: {fontSize: 28, fontWeight: 400, lineHeight: 1.45},
 	bodySmall: {fontSize: 25, fontWeight: 400, lineHeight: 1.42},
 	callout: {fontSize: 30, fontWeight: 500, lineHeight: 1.3},
+	math: {fontSize: 38, fontWeight: 600, lineHeight: 1.2, letterSpacing: '-0.035em'},
+	mathFinal: {fontSize: 40, fontWeight: 760, lineHeight: 1.2, letterSpacing: '-0.035em'},
 	mono: {fontSize: 22, fontFamily: FONT_MONO, letterSpacing: '0.15em'},
 } as const;
 

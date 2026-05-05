@@ -68,19 +68,7 @@ export const HookSlide = ({scene, lesson, sceneIndex, totalScenes}: HookSlidePro
 					bottom: isLongHook ? 126 : 160,
 				}}
 			>
-				<FadeUp delay={3} durationFrames={12}>
-					<div
-						style={{
-							fontFamily: FONT_MONO,
-							fontSize: 20,
-							color: TOK.amber,
-							letterSpacing: '0.2em',
-							marginBottom: 28,
-						}}
-					>
-						↓  A QUESTION
-					</div>
-				</FadeUp>
+				<Eyebrow color={TOK.inkDim}>↓ A QUESTION</Eyebrow>
 
 				<div
 					style={{

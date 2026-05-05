@@ -35,27 +35,15 @@ export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: Wor
 			<SlideChrome lesson={lesson} dot="2.1" topic="WORKED EXAMPLE" sceneType="workedExample" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			<div style={{position: 'absolute', top: 142, left: 64, right: 64}}>
-				<FadeUp delay={3} durationFrames={12}>
-					<div
-						style={{
-							fontFamily: FONT_MONO,
-							fontSize: 22,
-							color: TOK.amber,
-							letterSpacing: '0.2em',
-							textTransform: 'uppercase',
-						}}
-					>
-						PROBLEM · {scene.heading.toUpperCase()}
-					</div>
-				</FadeUp>
+				<Eyebrow color={TOK.inkDim}>PROBLEM · {scene.heading.toUpperCase()}</Eyebrow>
 				<FadeUp delay={18} durationFrames={14} dy={18}>
 					<StampInTitle delay={18} color={TOK.ink} underlineColor={TOK.amber}>
 						<div
 							style={{
 								marginTop: 14,
-								fontSize: 58,
-								fontWeight: 760,
-								lineHeight: 1.08,
+								fontSize: TYPE.subhead.fontSize,
+								fontWeight: TYPE.subhead.fontWeight,
+								lineHeight: TYPE.subhead.lineHeight,
 								letterSpacing: '-0.025em',
 								maxWidth: 1350,
 								color: TOK.ink,
@@ -73,10 +61,10 @@ export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: Wor
 								display: 'inline-flex',
 								alignItems: 'center',
 								gap: 14,
-								fontSize: 28,
+								fontSize: TYPE.body.fontSize,
 								fontStyle: 'italic',
-								fontWeight: 600,
-								color: TOK.amber,
+								fontWeight: TYPE.body.fontWeight,
+								color: TOK.inkDim,
 							}}
 						>
 							<span style={{fontFamily: FONT_MONO, fontStyle: 'normal', fontSize: 22}}>→</span>
@@ -165,7 +153,7 @@ const WorkedStep = ({
 					style={{
 						fontFamily: FONT_MONO,
 						fontSize: 22,
-						color: isFinal ? TOK.amber : TOK.inkMute,
+						color: TOK.inkMute,
 						letterSpacing: '0.12em',
 						textTransform: 'uppercase',
 					}}
@@ -175,8 +163,8 @@ const WorkedStep = ({
 				<div
 					style={{
 						fontFamily: FONT_MONO,
-						fontSize: isFinal ? 39 : 38,
-						fontWeight: isFinal ? 760 : 600,
+						fontSize: isFinal ? TYPE.mathFinal.fontSize : TYPE.math.fontSize,
+						fontWeight: isFinal ? TYPE.mathFinal.fontWeight : TYPE.math.fontWeight,
 						lineHeight: 1.2,
 						color: isFinal ? TOK.amber : TOK.ink,
 						letterSpacing: '-0.035em',

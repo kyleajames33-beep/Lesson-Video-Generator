@@ -35,9 +35,9 @@ export const SummarySlide = ({scene, lesson, sceneIndex, totalScenes}: SummarySl
 						<h1
 							style={{
 								margin: '18px 0 0',
-								fontSize: 88,
-								fontWeight: 820,
-								lineHeight: 0.98,
+								fontSize: TYPE.h1.fontSize,
+								fontWeight: TYPE.h1.fontWeight,
+								lineHeight: TYPE.h1.lineHeight,
 								letterSpacing: '-0.04em',
 								maxWidth: 1120,
 							}}
@@ -104,8 +104,8 @@ const TakeawayRow = ({
 				style={{
 					fontFamily: FONT_MONO,
 					fontSize: 24,
-					color: TOK.amber,
-					border: `1px solid ${TOK.amber}`,
+					color: TOK.inkDim,
+					border: `1px solid ${TOK.inkDim}`,
 					borderRadius: 4,
 					padding: '8px 0',
 					textAlign: 'center',
@@ -118,9 +118,9 @@ const TakeawayRow = ({
 			<div>
 				<div
 					style={{
-						fontSize: 36,
-						fontWeight: 740,
-						lineHeight: 1.08,
+						fontSize: TYPE.section.fontSize,
+						fontWeight: TYPE.section.fontWeight,
+						lineHeight: TYPE.section.lineHeight,
 						letterSpacing: '-0.02em',
 						marginBottom: 6,
 					}}
@@ -129,8 +129,8 @@ const TakeawayRow = ({
 				</div>
 				<div
 					style={{
-						fontSize: 24,
-						lineHeight: 1.28,
+						fontSize: TYPE.bodySmall.fontSize,
+						lineHeight: TYPE.bodySmall.lineHeight,
 						color: TOK.inkDim,
 						maxWidth: 940,
 					}}
