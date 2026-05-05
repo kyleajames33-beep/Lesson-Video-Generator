@@ -24,7 +24,8 @@
     "voiceover:sync": "node scripts/sync-voiceover-assets.mjs",
     "prepare:lesson": "node scripts/prepare-lesson.mjs",
     "validate:lessons": "node scripts/validate-lesson.mjs",
-    "render:stills": "node scripts/render-lesson-stills.mjs"
+    "render:stills": "node scripts/render-lesson-stills.mjs",
+    "render:poster": "node scripts/render-lesson-posters.mjs"
   },
   "dependencies": {
     "@remotion/cli": "latest",

@@ -9,7 +9,9 @@ export type SceneBase = {
     | 'workedExample'
     | 'misconception'
     | 'quickCheck'
-    | 'summary';
+    | 'summary'
+    | 'marginalia'
+    | 'labFootage';
   durationInFrames: number;
   caption: string;
   voiceover?: {
@@ -122,12 +124,41 @@ export type SummaryScene = SceneBase & {
   points: string[];
 };
 
+export type MarginaliaNote = {
+  text: string;
+  position: 'top-right' | 'mid-right' | 'bottom-right';
+  color?: string;
+};
+
+export type MarginaliaScene = SceneBase & {
+  type: 'marginalia';
+  heading: string;
+  body: string;
+  callout?: string;
+  notes: MarginaliaNote[];
+};
+
+export type LabFootageAnnotation = {
+  text: string;
+  position: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
+};
+
+export type LabFootageScene = SceneBase & {
+  type: 'labFootage';
+  heading: string;
+  body?: string;
+  image: string;
+  annotations?: LabFootageAnnotation[];
+};
+
 export type SceneData =
   | TitleScene
   | TextScene
   | WorkedExampleScene
   | QuickCheckScene
-  | SummaryScene;
+  | SummaryScene
+  | MarginaliaScene
+  | LabFootageScene;
 
 export type LessonData = {
   title: string;

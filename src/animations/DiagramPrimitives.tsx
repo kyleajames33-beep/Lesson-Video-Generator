@@ -1,6 +1,7 @@
 import {Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {useMemo} from 'react';
+import {useMemo, Children, cloneElement, isValidElement} from 'react';
 import type {CSSProperties, ReactNode, SVGProps} from 'react';
+import {TOK, FONT_MONO} from '../styles/tokens';
 
 // ─── MagnifyLens — animated glass overlay for SVG viewBox 0 0 700 430 ─────────
 
@@ -429,4 +430,352 @@ export const PhaseReveal = ({phases, className, style}: PhaseRevealProps) => {
 			})}
 		</div>
 	);
+};
+
+// ─── P0.7 — Chart / graph data reveal ───────────────────────────────────────
+// Axes draw first, then bars/lines build sequentially.
+// Bar charts: bars grow from height 0 to target, staggered.
+// Line charts: path strokes left-to-right.
+// Use for any quantitative claim — atomic masses, reaction rates, trends.
+
+type DataPoint = {
+	label: string;
+	value: number;
+	color?: string;
+};
+
+type DataChartProps = {
+	kind?: 'bar' | 'line';
+	data: DataPoint[];
+	width?: number;
+	height?: number;
+	delay?: number;
+	axisDurationFrames?: number;
+	barDurationFrames?: number;
+	barStaggerFrames?: number;
+	lineDurationFrames?: number;
+	color?: string;
+	axisColor?: string;
+	labelColor?: string;
+	showValues?: boolean;
+};
+
+export const DataChart = ({
+	kind = 'bar',
+	data,
+	width = 520,
+	height = 320,
+	delay = 0,
+	axisDurationFrames = 9,
+	barDurationFrames = 12,
+	barStaggerFrames = 4,
+	lineDurationFrames = 24,
+	color = TOK.amber,
+	axisColor = TOK.inkDim,
+	labelColor = TOK.ink,
+	showValues = true,
+}: DataChartProps) => {
+	const frame = useCurrentFrame();
+
+	const padding = {top: 32, right: 24, bottom: 48, left: 56};
+	const chartW = width - padding.left - padding.right;
+	const chartH = height - padding.top - padding.bottom;
+
+	const maxValue = Math.max(...data.map((d) => d.value));
+	const yMax = Math.ceil(maxValue * 1.15) || 1;
+
+	// Axis draw progress
+	const axisProgress = interpolate(frame, [delay, delay + axisDurationFrames], [0, 1], clamp);
+	const axisEased = 1 - Math.pow(1 - axisProgress, 3);
+
+	// Y-axis ticks
+	const tickCount = 4;
+	const ticks = Array.from({length: tickCount + 1}, (_, i) => (yMax / tickCount) * i);
+
+	if (kind === 'bar') {
+		const barWidth = Math.min(48, (chartW / data.length) * 0.6);
+		const gap = data.length > 1 ? (chartW - barWidth * data.length) / (data.length - 1) : 0;
+
+		return (
+			<svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} aria-hidden>
+				{/* Axes */}
+				<g opacity={axisEased}>
+					<line
+						x1={padding.left}
+						y1={padding.top}
+						x2={padding.left}
+						y2={height - padding.bottom}
+						stroke={axisColor}
+						strokeWidth={2}
+					/>
+					<line
+						x1={padding.left}
+						y1={height - padding.bottom}
+						x2={width - padding.right}
+						y2={height - padding.bottom}
+						stroke={axisColor}
+						strokeWidth={2}
+					/>
+					{/* Y ticks */}
+					{ticks.map((t, i) => {
+						const ty = height - padding.bottom - (t / yMax) * chartH;
+						const tickOpacity = interpolate(
+							frame,
+							[delay + axisDurationFrames + i * 2, delay + axisDurationFrames + i * 2 + 6],
+							[0, 1],
+							clamp,
+						);
+						return (
+							<g key={`tick-${i}`}>
+								<line x1={padding.left - 5} y1={ty} x2={padding.left} y2={ty} stroke={axisColor} strokeWidth={1} opacity={tickOpacity} />
+								<text x={padding.left - 10} y={ty + 4} textAnchor="end" fill={labelColor} fontSize={12} fontFamily={FONT_MONO} opacity={tickOpacity}>
+									{Math.round(t)}
+								</text>
+							</g>
+						);
+					})}
+				</g>
+
+				{/* Bars */}
+				{data.map((d, i) => {
+					const bx = padding.left + i * (barWidth + gap) + (gap > 0 ? 0 : (chartW - barWidth) / 2);
+					const targetH = (d.value / yMax) * chartH;
+					const barDelay = delay + axisDurationFrames + i * barStaggerFrames;
+					const barProgress = interpolate(frame, [barDelay, barDelay + barDurationFrames], [0, 1], clamp);
+					const barEased = 1 - Math.pow(1 - barProgress, 3);
+					const bh = targetH * barEased;
+					const by = height - padding.bottom - bh;
+
+					const valueOpacity = interpolate(frame, [barDelay + barDurationFrames, barDelay + barDurationFrames + 6], [0, 1], clamp);
+
+					return (
+						<g key={d.label}>
+							<rect
+								x={bx}
+								y={by}
+								width={barWidth}
+								height={bh}
+								fill={d.color || color}
+								rx={3}
+								opacity={0.85}
+							/>
+							{showValues && (
+								<text
+									x={bx + barWidth / 2}
+									y={by - 8}
+									textAnchor="middle"
+									fill={labelColor}
+									fontSize={13}
+									fontFamily={FONT_MONO}
+									opacity={valueOpacity}
+								>
+									{d.value}
+								</text>
+							)}
+							<text
+								x={bx + barWidth / 2}
+								y={height - padding.bottom + 20}
+								textAnchor="middle"
+								fill={labelColor}
+								fontSize={12}
+								fontFamily={FONT_MONO}
+								opacity={axisEased}
+							>
+								{d.label}
+							</text>
+						</g>
+					);
+				})}
+			</svg>
+		);
+	}
+
+	// Line chart
+	const xStep = data.length > 1 ? chartW / (data.length - 1) : 0;
+	const points = data.map((d, i) => ({
+		x: padding.left + i * xStep,
+		y: height - padding.bottom - (d.value / yMax) * chartH,
+	}));
+
+	const pathD = points.map((p, i) => `${i === 0 ? 'M' : 'L'}${p.x},${p.y}`).join(' ');
+	const pathLen = points.reduce((sum, p, i) => {
+		if (i === 0) return 0;
+		const prev = points[i - 1];
+		return sum + Math.hypot(p.x - prev.x, p.y - prev.y);
+	}, 0);
+
+	const lineProgress = interpolate(frame, [delay + axisDurationFrames, delay + axisDurationFrames + lineDurationFrames], [0, 1], clamp);
+	const lineEased = 1 - Math.pow(1 - lineProgress, 3);
+	const dashOffset = (1 - lineEased) * pathLen;
+
+	return (
+		<svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} aria-hidden>
+			{/* Axes */}
+			<g opacity={axisEased}>
+				<line x1={padding.left} y1={padding.top} x2={padding.left} y2={height - padding.bottom} stroke={axisColor} strokeWidth={2} />
+				<line x1={padding.left} y1={height - padding.bottom} x2={width - padding.right} y2={height - padding.bottom} stroke={axisColor} strokeWidth={2} />
+				{ticks.map((t, i) => {
+					const ty = height - padding.bottom - (t / yMax) * chartH;
+					const tickOpacity = interpolate(frame, [delay + axisDurationFrames + i * 2, delay + axisDurationFrames + i * 2 + 6], [0, 1], clamp);
+					return (
+						<g key={`tick-${i}`}>
+							<line x1={padding.left - 5} y1={ty} x2={padding.left} y2={ty} stroke={axisColor} strokeWidth={1} opacity={tickOpacity} />
+							<text x={padding.left - 10} y={ty + 4} textAnchor="end" fill={labelColor} fontSize={12} fontFamily={FONT_MONO} opacity={tickOpacity}>
+								{Math.round(t)}
+							</text>
+						</g>
+					);
+				})}
+			</g>
+
+			{/* Line path */}
+			<path
+				d={pathD}
+				fill="none"
+				stroke={color}
+				strokeWidth={3}
+				strokeLinecap="round"
+				strokeLinejoin="round"
+				strokeDasharray={pathLen}
+				strokeDashoffset={dashOffset}
+			/>
+
+			{/* Points */}
+			{points.map((p, i) => {
+				const pointDelay = delay + axisDurationFrames + lineDurationFrames + i * 3;
+				const pointOpacity = interpolate(frame, [pointDelay, pointDelay + 6], [0, 1], clamp);
+				const pointScale = interpolate(frame, [pointDelay, pointDelay + 8], [0, 1], clamp);
+				return (
+					<g key={`pt-${i}`} opacity={pointOpacity} transform={`translate(${p.x}, ${p.y}) scale(${pointScale})`}>
+						<circle r={5} fill={TOK.bg} stroke={color} strokeWidth={2.5} />
+					</g>
+				);
+			})}
+
+			{/* X labels */}
+			{data.map((d, i) => (
+				<text
+					key={`lab-${i}`}
+					x={points[i].x}
+					y={height - padding.bottom + 20}
+					textAnchor="middle"
+					fill={labelColor}
+					fontSize={12}
+					fontFamily={FONT_MONO}
+					opacity={axisEased}
+				>
+					{d.label}
+				</text>
+			))}
+		</svg>
+	);
+};
+
+// ─── P1.3 — DrawOnSchematic: live-draw any SVG diagram ────────────────────
+// Higher-order component that wraps SVG children and animates stroke-dashoffset
+// on each stroke-capable element sequentially, with configurable stagger and
+// a slight hand-drawn jitter. Skip elements that already have strokeDasharray.
+//
+// Usage:
+//   <DrawOnSchematic staggerFrames={8} jitter={1.5} delay={20}>
+//     <svg viewBox="0 0 700 430">…paths/circles/lines…</svg>
+//   </DrawOnSchematic>
+
+const STROKE_TAG_NAMES = new Set([
+	'path', 'line', 'circle', 'rect', 'ellipse', 'polyline', 'polygon',
+]);
+
+type DrawOnSchematicProps = {
+	children: React.ReactNode;
+	/** Frames between each path starting its draw. Default 6 (~200ms). */
+	staggerFrames?: number;
+	/** Max rotation jitter in degrees. Default 1.2. */
+	jitter?: number;
+	/** Frame at which the first path starts drawing. */
+	delay?: number;
+	/** Frames for a single path to fully draw. Default 28. */
+	durationFrames?: number;
+	/** Apply a sketchy displacement filter to the container. Default true. */
+	sketchy?: boolean;
+};
+
+export const DrawOnSchematic = ({
+	children,
+	staggerFrames = 6,
+	jitter = 1.2,
+	delay = 0,
+	durationFrames = 28,
+	sketchy = true,
+}: DrawOnSchematicProps) => {
+	const frame = useCurrentFrame();
+	let pathIndex = 0;
+
+	const sketchyFilter = (
+		<defs>
+			<filter id="drawon-sketchy" x="-20%" y="-20%" width="140%" height="140%">
+				<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="7" result="noise" />
+				<feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8" xChannelSelector="R" yChannelSelector="G" />
+			</filter>
+		</defs>
+	);
+
+	const process = (child: React.ReactNode): React.ReactNode => {
+		if (!isValidElement(child)) return child;
+
+		const tag = typeof child.type === 'string' ? child.type : null;
+		const props = child.props as Record<string, unknown>;
+		const isStrokeable = tag && STROKE_TAG_NAMES.has(tag);
+		const hasStroke = props.stroke && props.stroke !== 'none';
+		const hasDashArray = props.strokeDasharray && props.strokeDasharray !== 'none';
+
+		if (isStrokeable && hasStroke && !hasDashArray) {
+			const idx = pathIndex++;
+			const start = delay + idx * staggerFrames;
+			const progress = interpolate(frame, [start, start + durationFrames], [0, 1], clamp);
+			const eased = 1 - Math.pow(1 - progress, 3);
+			const dashOffset = (1 - eased) * 100;
+
+			// Subtle jitter that dies off as the line finishes drawing
+			const j = jitter * Math.sin(frame * 0.22 + idx * 2.7) * (1 - eased) * 0.6;
+
+			return cloneElement(child, {
+				...props,
+				pathLength: 100,
+				strokeDasharray: 100,
+				strokeDashoffset: dashOffset,
+				style: {
+					...(props.style as CSSProperties),
+					transform: `rotate(${j}deg)`,
+					transformBox: 'fill-box',
+					transformOrigin: 'center',
+				},
+			} as SVGProps<SVGElement>);
+		}
+
+		if (tag === 'svg' && sketchy) {
+			// Inject sketchy filter into the SVG's defs
+			const existingChildren = props.children as React.ReactNode;
+			return cloneElement(child, {
+				...props,
+				filter: 'url(#drawon-sketchy)',
+				children: (
+					<>
+						{sketchyFilter}
+						{Children.map(existingChildren, process)}
+					</>
+				),
+			} as any);
+		}
+
+		if (props.children) {
+			return cloneElement(child, {
+				...props,
+				children: Children.map(props.children as React.ReactNode, process),
+			} as any);
+		}
+
+		return child;
+	};
+
+	return <>{Children.map(children, process)}</>;
 };

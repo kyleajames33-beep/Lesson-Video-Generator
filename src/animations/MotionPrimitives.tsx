@@ -1,5 +1,6 @@
 import {Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import type {CSSProperties, ReactNode} from 'react';
+import {TOK} from '../styles/tokens';
 
 const clamp = {
 	extrapolateLeft: 'clamp' as const,
@@ -14,6 +15,99 @@ type BasicMotionProps = {
 	delay?: number;
 	style?: CSSProperties;
 };
+
+// ─── P0.4 — Number ticker count-up ────────────────────────────────────────
+
+export const NumberTicker = ({
+	to,
+	delay = 0,
+	durationFrames = 24,
+	decimals = 3,
+}: {
+	to: string;
+	delay?: number;
+	durationFrames?: number;
+	decimals?: number;
+}) => {
+	const frame = useCurrentFrame();
+	const progress = interpolate(frame, [delay, delay + durationFrames], [0, 1], clamp);
+	const eased = 1 - Math.pow(1 - progress, 3);
+
+	const match = to.match(/^(\d+(?:\.\d+)?)\s*[×x]\s*10\^?(\d+|[⁰¹²³⁴⁵⁶⁷⁸⁹]+)$/);
+	if (!match) return <>{to}</>;
+
+	const mantissa = parseFloat(match[1]);
+	const exponent = match[2];
+	const currentMantissa = mantissa * eased;
+
+	return (
+		<>
+			{currentMantissa.toFixed(decimals)}
+			{' × 10'}
+			<sup>{exponent}</sup>
+		</>
+	);
+};
+
+// ─── P1.2 — Stamp-in title with stroking underline ────────────────────────
+// Title scales 1.05 → 1.0 with overshoot, while a thin underline strokes
+// left-to-right 100ms later. Use for episode titles and cold-open questions.
+
+export const StampInTitle = ({
+	children,
+	delay = 0,
+	color = TOK.ink,
+	underlineColor = TOK.amber,
+}: {
+	children: React.ReactNode;
+	delay?: number;
+	color?: string;
+	underlineColor?: string;
+}) => {
+	const frame = useCurrentFrame();
+	const {fps} = useVideoConfig();
+
+	// Overshoot spring: 1.05 → 1.0
+	const springProgress = spring({
+		frame: frame - delay,
+		fps,
+		config: {damping: 12, stiffness: 280, mass: 0.55},
+	});
+	const scale = interpolate(springProgress, [0, 1], [1.05, 1], clamp);
+
+	// Underline stroke: starts 100ms after stamp begins
+	const underlineDelay = delay + 3; // ~100ms at 30fps
+	const underlineProgress = interpolate(
+		frame,
+		[underlineDelay, underlineDelay + 18],
+		[0, 1],
+		clamp,
+	);
+	const underlineEased = 1 - Math.pow(1 - underlineProgress, 3);
+
+	return (
+		<span style={{position: 'relative', display: 'inline-block'}}>
+			<span style={{display: 'inline-block', transform: `scale(${scale})`, transformOrigin: 'left center', color}}>
+				{children}
+			</span>
+			<span
+				style={{
+					position: 'absolute',
+					bottom: -6,
+					left: 0,
+					right: 0,
+					height: 2,
+					background: underlineColor,
+					borderRadius: 1,
+					transform: `scaleX(${underlineEased})`,
+					transformOrigin: 'left center',
+				}}
+			/>
+		</span>
+	);
+};
+
+// ─── Legacy motion primitives (preserved for existing slides) ─────────────
 
 export const useAmbientFloat = (amplitude = 6, speedSeconds = 4.6, phase = 0) => {
 	const frame = useCurrentFrame();

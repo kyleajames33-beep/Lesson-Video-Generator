@@ -3,7 +3,7 @@ import {BridgeDiagram} from './BridgeDiagram';
 import {DozenMoleDiagram} from './DozenMoleDiagram';
 import {MassComparisonDiagram} from './MassComparisonDiagram';
 import {BalanceDiagram} from './BalanceDiagram';
-import {BarChartDiagram} from './BarChartDiagram';
+import {DataChart} from '../../animations/DiagramPrimitives';
 import {VennDiagram} from './VennDiagram';
 import {FlowDiagram} from './FlowDiagram';
 import {OrbitDiagram} from './OrbitDiagram';
@@ -17,7 +17,7 @@ export const DiagramRenderer = ({diagram}: {diagram: DiagramConfig}) => {
 		case 'dozenMole':      return <DozenMoleDiagram />;
 		case 'massComparison': return <MassComparisonDiagram />;
 		case 'balance':        return <BalanceDiagram {...diagram} />;
-		case 'barChart':       return <BarChartDiagram {...diagram} />;
+		case 'barChart':       return <DataChart kind="bar" data={diagram.bars} delay={diagram.delay ?? 0} />;
 		case 'venn':           return <VennDiagram {...diagram} />;
 		case 'flow':           return <FlowDiagram {...diagram} />;
 		case 'orbit':          return <OrbitDiagram {...diagram} />;

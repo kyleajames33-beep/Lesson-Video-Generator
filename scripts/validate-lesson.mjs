@@ -13,6 +13,8 @@ const supportedSceneTypes = new Set([
   'misconception',
   'quickCheck',
   'summary',
+  'marginalia',
+  'labFootage',
 ]);
 
 const supportedDiagramTypes = new Set([
@@ -191,6 +193,52 @@ const validateScene = (scene, index, errors, warnings, fps) => {
       scene.answerSteps.forEach((step, stepIndex) => {
         if (!isNonEmptyString(step)) {
           errors.push(`${pathLabel}: answerSteps[${stepIndex}] must be a non-empty string`);
+        }
+      });
+    }
+  }
+
+  if (scene.type === 'marginalia') {
+    requireString(scene, 'heading', errors, pathLabel);
+    requireString(scene, 'body', errors, pathLabel);
+    requireOptionalString(scene, 'callout', warnings, pathLabel, 'student-thinking prompt');
+
+    if (!Array.isArray(scene.notes) || scene.notes.length === 0) {
+      errors.push(`${pathLabel}: "notes" must be a non-empty array`);
+    } else {
+      const validPositions = new Set(['top-right', 'mid-right', 'bottom-right']);
+      scene.notes.forEach((note, noteIndex) => {
+        if (!isObject(note)) {
+          errors.push(`${pathLabel}: notes[${noteIndex}] must be an object`);
+        } else {
+          if (!isNonEmptyString(note.text)) {
+            errors.push(`${pathLabel}: notes[${noteIndex}].text must be a non-empty string`);
+          }
+          if (!validPositions.has(note.position)) {
+            errors.push(`${pathLabel}: notes[${noteIndex}].position must be one of top-right, mid-right, bottom-right`);
+          }
+        }
+      });
+    }
+  }
+
+  if (scene.type === 'labFootage') {
+    requireString(scene, 'heading', errors, pathLabel);
+    requireString(scene, 'image', errors, pathLabel);
+    requireOptionalString(scene, 'body', warnings, pathLabel, 'what the student should observe');
+
+    if (scene.annotations !== undefined) {
+      const validPositions = new Set(['top-left', 'top-right', 'bottom-left', 'bottom-right']);
+      scene.annotations.forEach((annotation, annotationIndex) => {
+        if (!isObject(annotation)) {
+          errors.push(`${pathLabel}: annotations[${annotationIndex}] must be an object`);
+        } else {
+          if (!isNonEmptyString(annotation.text)) {
+            errors.push(`${pathLabel}: annotations[${annotationIndex}].text must be a non-empty string`);
+          }
+          if (!validPositions.has(annotation.position)) {
+            errors.push(`${pathLabel}: annotations[${annotationIndex}].position must be one of top-left, top-right, bottom-left, bottom-right`);
+          }
         }
       });
     }

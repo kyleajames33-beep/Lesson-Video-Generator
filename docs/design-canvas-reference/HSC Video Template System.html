@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HSC Video Template System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { margin: 0; padding: 0; background: #f0eee9; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="animations.jsx"></script>
+<script type="text/babel" src="doodles.jsx"></script>
+<script type="text/babel" src="scenes.jsx"></script>
+<script type="text/babel" src="scenes-v2.jsx"></script>
+<script type="text/babel" src="animated-scenes.jsx"></script>
+<script type="text/babel" src="animated-scenes-v2.jsx"></script>
+<script type="text/babel" src="animated-scenes-v3.jsx"></script>
+<script type="text/babel" src="system.jsx"></script>
+
+<script type="text/babel" data-presets="react">
+// Alias from window so JSX uppercase rules apply, without re-declaring DesignCanvas
+// (the canvas script puts a top-level `function DesignCanvas` in scope already).
+const Canvas = window.DesignCanvas, Sec = window.DCSection, Art = window.DCArtboard, Note = window.DCPostIt;
+const W = 960, H = 540;
+
+function App() {
+  return (
+    <Canvas>
+      <Sec id="overview" title="Overview" subtitle="The whole system on one canvas — start here">
+        <Note width={340} top={40} left={40}>
+          <b>What this is</b><br/>
+          A design system + 11 reusable scene templates for HSC Science explainer videos (4–5 min, 1920×1080).<br/><br/>
+          <b>The doodle layer</b><br/>
+          Hand-drawn scribbles, circles, arrows, and handwritten margin notes — the Atomi/Antidote/Kurzgesagt move that makes a video feel made, not generated. Compare the v1 and v2 hook + key term scenes side-by-side to see the difference.<br/><br/>
+          <b>Worked example throughout</b><br/>
+          Chem · "Why iron rusts but gold doesn't."
+        </Note>
+        <Art id="arc" label="Storyboard · 5-minute arc" width={W} height={H}><StoryboardArc/></Art>
+      </Sec>
+
+      <Sec id="anim" title="LIVE PREVIEW · animated scenes" subtitle="Scrub each timeline — this is what the actual video will feel like">
+        <Art id="anim1" label="▶ Marginalia · 12s · doodles draw on, notes fade up" width={1280} height={720}><MarginaliaPreview/></Art>
+        <Art id="anim2" label="▶ Worked Example · 14s · line-by-line teacher reveal" width={1280} height={720}><WorkedExamplePreview/></Art>
+        <Art id="anim3" label="▶ Quiz · 10s · pause card with check-mark answer" width={1280} height={720}><QuizPreview/></Art>
+        <Art id="anim4" label="▶ Hook · 8s · word-by-word reveal + scribble underline" width={1280} height={720}><HookPreview/></Art>
+        <Art id="anim5" label="▶ Formula · 12s · equation builds term-by-term" width={1280} height={720}><FormulaPreview/></Art>
+        <Art id="anim6" label="▶ Process · 16s · 4 cards slide in with arrows" width={1280} height={720}><ProcessPreview/></Art>
+      </Sec>
+
+      <Sec id="doodle" title="The doodle layer" subtitle="Why these don't feel like slideshows — see v1 vs v2">
+        <Art id="hook1" label="HOOK · v1 · clean" width={W} height={H}><SceneHook/></Art>
+        <Art id="hook2" label="HOOK · v2 · doodled" width={W} height={H}><SceneHookDoodled/></Art>
+        <Art id="term1" label="KEY TERM · v1 · clean" width={W} height={H}><SceneKeyTerm/></Art>
+        <Art id="term2" label="KEY TERM · v2 · doodled" width={W} height={H}><SceneKeyTermDoodled/></Art>
+      </Sec>
+
+      <Sec id="ds" title="Design system" subtitle="Tokens, type, motion — the rules every scene follows">
+        <Art id="tok" label="01 · Color tokens" width={W} height={H}><SystemTokens/></Art>
+        <Art id="type" label="02 · Typography" width={W} height={H}><SystemType/></Art>
+        <Art id="mot" label="03 · Motion principles" width={W} height={H}><SystemMotion/></Art>
+      </Sec>
+
+      <Sec id="scenes" title="Scene templates · 8 originals" subtitle="The full lesson arc · all 8 scenes in playback order">
+        <Art id="s1" label="01 · Hook / cold open" width={W} height={H}><SceneHook/></Art>
+        <Art id="s2" label="02 · Title card" width={W} height={H}><SceneTitle/></Art>
+        <Art id="s3" label="03 · Key term reveal" width={W} height={H}><SceneKeyTerm/></Art>
+        <Art id="s4" label="04 · Formula breakdown" width={W} height={H}><SceneFormula/></Art>
+        <Art id="s5" label="05 · Step-by-step process" width={W} height={H}><SceneProcess/></Art>
+        <Art id="s6" label="06 · Diagram with callouts" width={W} height={H}><SceneDiagram/></Art>
+        <Art id="s7" label="07 · Comparison" width={W} height={H}><SceneCompare/></Art>
+        <Art id="s8" label="08 · Recap + end card" width={W} height={H}><SceneRecap/></Art>
+      </Sec>
+
+      <Sec id="new" title="New scene types" subtitle="Quiz, worked example, marginalia, and lab footage frame">
+        <Art id="s9" label="09 · Quiz / pause card" width={W} height={H}><SceneQuiz/></Art>
+        <Art id="s10" label="10 · Worked example" width={W} height={H}><SceneWorkedExample/></Art>
+        <Art id="s11" label="11 · Marginalia (Atomi-style)" width={W} height={H}><SceneMarginalia/></Art>
+        <Art id="s12" label="12 · Lab footage frame" width={W} height={H}><SceneLabFootage/></Art>
+      </Sec>
+
+      <Sec id="next" title="What's next" subtitle="Pick a follow-up to keep momentum">
+        <Note width={340} top={40} left={40}>
+          <b>Open follow-ups</b><br/><br/>
+          <b>1 · Re-skin for Bio/Phys/Maths.</b> Tokens are already there — needs a tweak panel that swaps chem→bio→phys→math across all scenes.<br/><br/>
+          <b>2 · Animate the doodles.</b> Wire stroke-dashoffset draw-on motion via the animations starter so you can preview the actual feel.<br/><br/>
+          <b>3 · Read your real Remotion repo.</b> Paste github.com/owner/repo URL and I'll align tokens + scenes to your actual code.
+        </Note>
+        <Note width={340} top={40} left={40}>
+          <b>Doodle library reference</b><br/>
+          (in doodles.jsx — usable in any scene)<br/><br/>
+          • <i>ScribbleCircle</i> — wobbly oval, 1–3 loops<br/>
+          • <i>ScribbleUnderline</i> — multi-stroke underline<br/>
+          • <i>ScribbleArrow</i> — curved jittered arrow<br/>
+          • <i>ScribbleBox</i> — sketchy rectangle<br/>
+          • <i>ScribbleMark</i> — hand-drawn ✓ or ✗<br/>
+          • <i>ScribbleHighlight</i> — marker highlight<br/>
+          • <i>ScribbleHatch</i> — diagonal shading<br/>
+          • <i>ScribbleStar</i> — sparkle/asterisk<br/>
+          • <i>ScribbleAnnotation</i> — leader line + label<br/><br/>
+          All seeded — same seed = same doodle (stable in Remotion render).
+        </Note>
+      </Sec>
+    </Canvas>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>
