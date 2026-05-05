@@ -49,6 +49,8 @@ export const TYPE = {
 	callout: {fontSize: 30, fontWeight: 500, lineHeight: 1.3},
 	math: {fontSize: 38, fontWeight: 600, lineHeight: 1.2, letterSpacing: '-0.035em'},
 	mathFinal: {fontSize: 40, fontWeight: 760, lineHeight: 1.2, letterSpacing: '-0.035em'},
+	cardTitle: {fontSize: 46, fontWeight: 760, lineHeight: 1.05, letterSpacing: '-0.025em'},
+	cardBody: {fontSize: 29, fontWeight: 400, lineHeight: 1.34},
 	mono: {fontSize: 22, fontFamily: FONT_MONO, letterSpacing: '0.15em'},
 } as const;
 

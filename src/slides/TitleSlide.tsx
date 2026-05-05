@@ -10,7 +10,8 @@ import {ScribbleUnderline} from '../animations/DoodlePrimitives';
 import {StampInTitle} from '../animations/MotionPrimitives';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
-import {FONT_MONO, TOK} from '../styles/tokens';
+import {Eyebrow} from './shared/Eyebrow';
+import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
 
 type TitleSlideProps = {
 	lesson: LessonData;
@@ -38,20 +39,7 @@ export const TitleSlide = ({lesson, sceneIndex, totalScenes}: TitleSlideProps) =
 					transform: 'translateY(-48%)',
 				}}
 			>
-				<FadeUp delay={3} durationFrames={12}>
-					<div
-						style={{
-							fontFamily: FONT_MONO,
-							fontSize: 22,
-							letterSpacing: '0.2em',
-							color: TOK.chem2,
-							marginBottom: 34,
-							textTransform: 'uppercase',
-						}}
-					>
-						{lesson.lesson} · {lesson.subject} · {lesson.yearLevel}
-					</div>
-				</FadeUp>
+				<Eyebrow color={TOK.chem2}>{lesson.lesson} · {lesson.subject} · {lesson.yearLevel}</Eyebrow>
 
 				<div
 					style={{
@@ -91,11 +79,11 @@ export const TitleSlide = ({lesson, sceneIndex, totalScenes}: TitleSlideProps) =
 					<p
 						style={{
 							margin: '28px 0 0',
-							fontSize: 34,
+							fontSize: TYPE.bodyLarge.fontSize,
 							color: TOK.inkDim,
 							maxWidth: 1050,
-							lineHeight: 1.38,
-							fontWeight: 430,
+							lineHeight: TYPE.bodyLarge.lineHeight,
+							fontWeight: TYPE.bodyLarge.fontWeight,
 						}}
 					>
 						{lesson.subtitle}
@@ -111,7 +99,7 @@ const TitleBackdrop = () => {
 	const {fps} = useVideoConfig();
 	const reveal = interpolate(frame, [8, 44], [0, 1], clamp);
 	const t = frame / fps;
-	const drift = Math.sin(t * 0.9) * 8;
+	const xOffset = Math.sin(t * 0.9) * 8;
 	const pulse = 0.5 + 0.5 * Math.sin(t * 1.2);
 
 	return (
@@ -127,8 +115,8 @@ const TitleBackdrop = () => {
 			<div
 				style={{
 					position: 'absolute',
-					right: 170 + drift,
-					top: 215 - drift * 0.4,
+					right: 170 + xOffset,
+					top: 215 - xOffset * 0.4,
 					width: 520,
 					height: 520,
 					borderRadius: '50%',
@@ -139,8 +127,8 @@ const TitleBackdrop = () => {
 			<div
 				style={{
 					position: 'absolute',
-					right: 295 - drift * 0.5,
-					top: 342 + drift * 0.3,
+					right: 295 - xOffset * 0.5,
+					top: 342 + xOffset * 0.3,
 					width: 270,
 					height: 270,
 					borderRadius: '50%',

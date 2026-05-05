@@ -11,6 +11,7 @@ import {ScribbleMark} from '../animations/DoodlePrimitives';
 import {DeltaMathText} from '../animations/FormulaBuild';
 import {StampInTitle} from '../animations/MotionPrimitives';
 import {AmbientBorderPulse, AmbientGlow} from '../animations/AmbientMotion';
+import {MathText} from './shared/MathText';
 import {calculationStepLabel, getCalculationStepKind} from './shared/calculationSteps';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
@@ -279,32 +280,6 @@ const CrossedUnit = ({text, draw}: {text: string; draw: number}) => (
 		</svg>
 	</span>
 );
-
-const MathText = ({text, isFinal}: {text: string; isFinal: boolean}) => {
-	const pieces = text.split(/(Nₐ|N|n|mol⁻¹|mol|atoms|molecules|formula units|=|×|÷|\?)/g).filter(Boolean);
-
-	return (
-		<>
-			{pieces.map((piece, index) => {
-				const color = colorForPiece(piece, isFinal);
-				return (
-					<span key={`${piece}-${index}`} style={{color}}>
-						{piece}
-					</span>
-				);
-			})}
-		</>
-	);
-};
-
-const colorForPiece = (piece: string, isFinal: boolean) => {
-	if (piece === 'Nₐ') return TOK.amber;
-	if (piece === 'N' || piece === 'n') return isFinal ? TOK.amber : TOK.chem2;
-	if (['mol', 'mol⁻¹'].includes(piece)) return TOK.chem2;
-	if (['atoms', 'molecules', 'formula units'].includes(piece)) return TOK.amber;
-	if (['=', '×', '÷'].includes(piece)) return TOK.inkDim;
-	return undefined;
-};
 
 const splitStep = (step: string) => {
 	const match = step.match(/^([^:]+):\s*(.+)$/);

@@ -9,6 +9,7 @@ import type {LessonData, QuickCheckScene} from '../lesson/types';
 import {FadeUp} from '../animations/FadeUp';
 import {ScribbleMark, ScribbleStar, ScribbleUnderline} from '../animations/DoodlePrimitives';
 import {AmbientBorderPulse, AmbientGlow} from '../animations/AmbientMotion';
+import {MathText} from './shared/MathText';
 import {calculationStepLabel, getCalculationStepKind} from './shared/calculationSteps';
 import {StampInTitle} from '../animations/MotionPrimitives';
 import {SlideFrame} from './shared/SlideFrame';
@@ -279,29 +280,6 @@ const AnswerStep = ({
 			</div>
 		</FadeUp>
 	);
-};
-
-const MathText = ({text, isFinal}: {text: string; isFinal: boolean}) => {
-	const pieces = text.split(/(Nₐ|N|n|mol⁻¹|mol|formula units|atoms|molecules|=|×|÷|\?)/g).filter(Boolean);
-
-	return (
-		<>
-			{pieces.map((piece, index) => (
-				<span key={`${piece}-${index}`} style={{color: colorForPiece(piece, isFinal)}}>
-					{piece}
-				</span>
-			))}
-		</>
-	);
-};
-
-const colorForPiece = (piece: string, isFinal: boolean) => {
-	if (piece === 'Nₐ') return TOK.amber;
-	if (piece === 'N' || piece === 'n') return isFinal ? TOK.amber : TOK.chem2;
-	if (['mol', 'mol⁻¹'].includes(piece)) return TOK.chem2;
-	if (['atoms', 'molecules', 'formula units'].includes(piece)) return TOK.amber;
-	if (['=', '×', '÷'].includes(piece)) return TOK.inkDim;
-	return undefined;
 };
 
 const fitQuestionSize = (question: string) => {

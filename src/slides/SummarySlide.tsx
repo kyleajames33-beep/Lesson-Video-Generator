@@ -10,6 +10,7 @@ import {ScribbleMark, ScribbleUnderline} from '../animations/DoodlePrimitives';
 import {AmbientBorderPulse, AmbientGlow} from '../animations/AmbientMotion';
 import {StampInTitle} from '../animations/MotionPrimitives';
 import {SlideFrame} from './shared/SlideFrame';
+import {MathText} from './shared/MathText';
 import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
 import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
@@ -222,30 +223,6 @@ const FinalRuleCard = ({text, delay}: {text: string; delay: number}) => (
 		</aside>
 	</FadeUp>
 );
-
-const MathText = ({text, muted = false}: {text: string; muted?: boolean}) => {
-	const pieces = text
-		.split(/(6\.022 × 10²³|10²³|Nₐ|N|n|mol⁻¹|mol|g\/mol|N = n × Nₐ|N or n\?|=|×|:)/g)
-		.filter(Boolean);
-
-	return (
-		<>
-			{pieces.map((piece, index) => (
-				<span key={`${piece}-${index}`} style={{color: colorForPiece(piece, muted)}}>
-					{piece}
-				</span>
-			))}
-		</>
-	);
-};
-
-const colorForPiece = (piece: string, muted: boolean) => {
-	if (piece === 'Nₐ' || piece === '6.022 × 10²³') return TOK.amber;
-	if (piece === 'N = n × Nₐ' || piece === 'N' || piece === 'n') return TOK.chem2;
-	if (['mol', 'mol⁻¹', 'g/mol'].includes(piece)) return TOK.chem2;
-	if (['=', '×', ':'].includes(piece)) return muted ? TOK.inkMute : TOK.inkDim;
-	return undefined;
-};
 
 const toTakeaway = (point: string): {title: string; detail: string} => {
 	const direct = TAKEAWAY_OVERRIDES.find(([prefix]) => point.startsWith(prefix));
