@@ -1,0 +1,28 @@
+name: check
+
+# Guards the lesson catalogue against regressions: regenerates the composition
+# registry, type-checks the render layer, and validates every lesson JSON.
+# This is the gate that `npm run check:all` runs locally.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate registry + typecheck + validate lessons
+        run: npm run check:all
