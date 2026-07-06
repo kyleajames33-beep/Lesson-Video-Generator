@@ -16,6 +16,7 @@ const supportedSceneTypes = new Set([
   'marginalia',
   'labFootage',
   'endCard',
+  'mnemonic',
 ]);
 
 const supportedDiagramTypes = new Set([
@@ -93,6 +94,17 @@ const requireString = (scene, field, errors, pathLabel) => {
   }
 };
 
+// Text scenes render EITHER a body paragraph OR a bullets list (bullets take
+// the body's place). Definitions in particular are bullets-first. Require one
+// or the other, not specifically `body`.
+const requireBodyOrBullets = (scene, errors, pathLabel) => {
+  const hasBody = isNonEmptyString(scene.body);
+  const hasBullets = Array.isArray(scene.bullets) && scene.bullets.length > 0;
+  if (!hasBody && !hasBullets) {
+    errors.push(`${pathLabel}: needs non-empty "body" or "bullets"`);
+  }
+};
+
 const requireOptionalString = (scene, field, warnings, pathLabel, reason) => {
   if (!isNonEmptyString(scene[field])) {
     warnings.push(`${pathLabel}: consider adding "${field}" (${reason})`);
@@ -151,13 +163,20 @@ const validateScene = (scene, index, errors, warnings, fps) => {
 
   requireString(scene, 'caption', errors, pathLabel);
 
-  if (!isObject(scene.voiceover) || !isNonEmptyString(scene.voiceover.text)) {
+  // Title scenes legitimately have no narration — the intro stinger voices
+  // the opener. Every other scene type must carry voiceover.text.
+  const requiresVoiceover = scene.type !== 'title';
+
+  if (requiresVoiceover && (!isObject(scene.voiceover) || !isNonEmptyString(scene.voiceover.text))) {
     errors.push(`${pathLabel}: missing "voiceover.text"`);
-  } else if (isPositiveInteger(scene.durationInFrames)) {
+  } else if (isObject(scene.voiceover) && isNonEmptyString(scene.voiceover.text) && isPositiveInteger(scene.durationInFrames)) {
     const budget = getVoiceoverBudget({
       text: scene.voiceover.text,
       durationInFrames: scene.durationInFrames,
       fps,
+      // ElevenLabs reads ~185 wpm in practice; the 145 default over-estimates
+      // spoken length by ~27% and floods this check with false "too long" hits.
+      wordsPerMinute: 185,
     });
     if (budget.status === 'tight') {
       warnings.push(
@@ -176,7 +195,7 @@ const validateScene = (scene, index, errors, warnings, fps) => {
 
   if (['hook', 'concept', 'definition', 'formula', 'misconception'].includes(scene.type)) {
     requireString(scene, 'heading', errors, pathLabel);
-    requireString(scene, 'body', errors, pathLabel);
+    requireBodyOrBullets(scene, errors, pathLabel);
     validateDiagram(scene.diagram, errors, pathLabel);
   }
 
