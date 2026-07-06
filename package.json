@@ -44,7 +44,8 @@
     "asset:prompts": "node scripts/generate-asset-prompts.mjs",
     "asset:generate": "node scripts/generate-asset-image.mjs",
     "asset:register": "node scripts/register-asset.mjs",
-    "broll:prompts": "node scripts/generate-broll-prompts.mjs"
+    "broll:prompts": "node scripts/generate-broll-prompts.mjs",
+    "backup:media": "node scripts/backup-media.mjs"
   },
   "dependencies": {
     "@remotion/captions": "^4.0.451",

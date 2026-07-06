@@ -65,7 +65,17 @@ Run before committing. This also runs in CI on every push/PR
 
 - `out/` (renders) and the large media dirs `public/audio/` (~591MB) and
   `public/assets/` (~253MB) are **not committed** — audio regenerates from the
-  scripts, images from the `image-prompts-*.md`. Back these up separately.
+  scripts, images from the `image-prompts-*.md`. Back these up separately:
+
+  ```powershell
+  # Incremental mirror to an external drive or a cloud-synced folder
+  # (OneDrive / Google Drive / Dropbox) = off-machine backup for free.
+  npm run backup:media -- "D:/Backups/hscscience-media"
+  npm run backup:media -- "$HOME/OneDrive/hscscience-media" --prune
+  ```
+
+  Re-running only copies changed/new files. `--prune` also removes destination
+  files no longer in source (off by default).
 - `scripts/_*.mjs` are one-off/throwaway patch scripts, not part of the durable
   pipeline. The durable commands are the ones wired into `package.json`.
 - Production docs live in [`docs/`](docs).
