@@ -11,7 +11,13 @@
     "explore the use of Keq for different types of chemical reactions, including but not limited to: dissociation of ionic solutions, dissociation of acids and bases"
   ],
   "moduleLessonCount": 18,
-  "nesaOutcomes": ["CH12-12", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-12",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "How can the position of equilibrium be described and what does the equilibrium constant represent?",
   "lessonIntent": "Students can write Ka and Kb as equilibrium expressions, use Ka × Kb = Kw for conjugate pairs, and link Keq to spontaneity through ΔG° = −RT ln Keq.",
   "examSkill": "Treat Ka and Kb as Keq for dissociation, calculate Kb from Kw/Ka, and compute ΔG° from Keq while converting temperature to kelvin and interpreting the sign.",
@@ -41,7 +47,8 @@
       "durationInFrames": 690,
       "caption": "Ka, Kb, Kw and Ksp are all Keq applied to specific equilibria.",
       "voiceover": {
-        "text": "OK, this lesson can look intimidating, because suddenly there are all these new constants, Ka, Kb, Kw, Ksp. It feels like a pile of new things to memorise. But here's the reframe that makes it easy. Every single one of them is just Keq, wearing a different costume for a different reaction. Ka is Keq for an acid splitting up. Kb is Keq for a base. Kw is Keq for water. And Ksp, which we'll meet later in the module, is Keq for a solid dissolving. The expression rules are identical to the ones you learned back in Lesson nine, products over reactants, leave out anything that's a pure liquid or solid. So if you can write a Keq expression, you can already write all of these. And in the second half of today, we link Keq back to Gibbs free energy from Module four, so the whole equilibrium story connects to spontaneity."
+        "text": "OK, this lesson can look intimidating, because suddenly there are all these new constants, Ka, Kb, Kw, Ksp. It feels like a pile of new things to memorise. But here's the reframe that makes it easy. Every single one of them is just Keq, wearing a different costume for a different reaction. Ka is Keq for an acid splitting up. Kb is Keq for a base. Kw is Keq for water. And Ksp, which we'll meet later in the module, is Keq for a solid dissolving. The expression rules are identical to the ones you learned back in Lesson nine, products over reactants, leave out anything that's a pure liquid or solid. So if you can write a Keq expression, you can already write all of these. And in the second half of today, we link Keq back to Gibbs free energy from Module four, so the whole equilibrium story connects to spontaneity.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L14/hook.9759c2a85d98.mp3"
       }
     },
     {
@@ -50,16 +57,23 @@
       "heading": "Ka is Keq for acid dissociation",
       "body": "For a weak acid splitting into ions, Ka is just the equilibrium constant for that dissociation.",
       "bullets": [
-        {"text": "HA ⇌ H⁺ + A⁻, so Ka = [H⁺][A⁻] ÷ [HA]."},
-        {"text": "Water is the solvent, so it's left out, exactly as in any Keq."},
-        {"text": "A larger Ka means more dissociation, so a stronger acid."}
+        {
+          "text": "HA ⇌ H⁺ + A⁻, so Ka = [H⁺][A⁻] ÷ [HA]."
+        },
+        {
+          "text": "Water is the solvent, so it's left out, exactly as in any Keq."
+        },
+        {
+          "text": "A larger Ka means more dissociation, so a stronger acid."
+        }
       ],
       "secondary": "Ka is not pH, and not [H⁺]. It's the equilibrium constant for the dissociation. A strong acid has Ka far greater than 1; a weak acid has Ka far less than 1.",
       "callout": "Bigger Ka means the dissociation sits further right, a stronger acid.",
       "durationInFrames": 1140,
       "caption": "Ka = [H⁺][A⁻]/[HA]; larger Ka = stronger acid. Ka is not pH.",
       "voiceover": {
-        "text": "Let's start with Ka, the acid dissociation constant. Take a weak acid, HA, dissolving and partly splitting into hydrogen ions and the conjugate base, A minus. That's an equilibrium, so it has an equilibrium constant, and we call it Ka. Following the usual rules, it's products over reactants, hydrogen ion times A minus, all over HA. And just like any Keq involving water as the solvent, the water is left out. The key interpretation, a larger Ka means the dissociation lies further to the right, more of the acid has broken into ions, so it's a stronger acid. One thing to be really careful about, Ka is not the same as pH, and it's not the same as the hydrogen ion concentration. It's the equilibrium constant for the splitting. A strong acid has a Ka far bigger than one, essentially fully dissociated. A weak acid has a Ka far smaller than one, mostly staying intact."
+        "text": "Let's start with Ka, the acid dissociation constant. Take a weak acid, HA, dissolving and partly splitting into hydrogen ions and the conjugate base, A minus. That's an equilibrium, so it has an equilibrium constant, and we call it Ka. Following the usual rules, it's products over reactants, hydrogen ion times A minus, all over HA. And just like any Keq involving water as the solvent, the water is left out. The key interpretation, a larger Ka means the dissociation lies further to the right, more of the acid has broken into ions, so it's a stronger acid. One thing to be really careful about, Ka is not the same as pH, and it's not the same as the hydrogen ion concentration. It's the equilibrium constant for the splitting. A strong acid has a Ka far bigger than one, essentially fully dissociated. A weak acid has a Ka far smaller than one, mostly staying intact.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L14/concept-ka.680f811481ed.mp3"
       }
     },
     {
@@ -67,16 +81,25 @@
       "type": "definition",
       "heading": "The constants in this family",
       "bullets": [
-        {"text": "Ka: equilibrium constant for acid dissociation, [H⁺][A⁻] ÷ [HA]."},
-        {"text": "Kb: equilibrium constant for base dissociation, [BH⁺][OH⁻] ÷ [B]."},
-        {"text": "Kw: ionic product of water, [H⁺][OH⁻] = 1.0 × 10⁻¹⁴ at 25 °C."},
-        {"text": "Conjugate-pair link: Ka × Kb = Kw."}
+        {
+          "text": "Ka: equilibrium constant for acid dissociation, [H⁺][A⁻] ÷ [HA]."
+        },
+        {
+          "text": "Kb: equilibrium constant for base dissociation, [BH⁺][OH⁻] ÷ [B]."
+        },
+        {
+          "text": "Kw: ionic product of water, [H⁺][OH⁻] = 1.0 × 10⁻¹⁴ at 25 °C."
+        },
+        {
+          "text": "Conjugate-pair link: Ka × Kb = Kw."
+        }
       ],
       "callout": "All four are Keq; the conjugate-pair link ties Ka and Kb together.",
       "durationInFrames": 990,
       "caption": "Ka, Kb, Kw defined; Ka × Kb = Kw for a conjugate pair.",
       "voiceover": {
-        "text": "Let's pin down the family in one place. Ka is the equilibrium constant for an acid dissociating, hydrogen ion times conjugate base over the undissociated acid. Kb is the same idea for a base, the protonated base times hydroxide, over the neutral base. Kw is the ionic product of water, hydrogen ion times hydroxide, and at twenty-five degrees it equals one-point-zero times ten to the minus fourteen, a number worth memorising. And the relationship that links the first two, for a conjugate acid-base pair, Ka times Kb equals Kw. That single equation lets you find one from the other. Every one of these is just Keq applied to a specific reaction, so there's really only one concept here, dressed four ways."
+        "text": "Let's pin down the family in one place. Ka is the equilibrium constant for an acid dissociating, hydrogen ion times conjugate base over the undissociated acid. Kb is the same idea for a base, the protonated base times hydroxide, over the neutral base. Kw is the ionic product of water, hydrogen ion times hydroxide, and at twenty-five degrees it equals one-point-zero times ten to the minus fourteen, a number worth memorising. And the relationship that links the first two, for a conjugate acid-base pair, Ka times Kb equals Kw. That single equation lets you find one from the other. Every one of these is just Keq applied to a specific reaction, so there's really only one concept here, dressed four ways.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L14/definition.f6a758a9357b.mp3"
       }
     },
     {
@@ -85,16 +108,23 @@
       "heading": "The conjugate seesaw: Ka × Kb = Kw",
       "body": "Multiply the Ka and Kb expressions for a conjugate pair and almost everything cancels, leaving Kw.",
       "bullets": [
-        {"text": "For a conjugate pair, Ka × Kb = Kw = 1.0 × 10⁻¹⁴ at 25 °C."},
-        {"text": "So to get Kb of the conjugate base, use Kb = Kw ÷ Ka."},
-        {"text": "Stronger acid means a larger Ka, so a smaller Kb, a weaker conjugate base."}
+        {
+          "text": "For a conjugate pair, Ka × Kb = Kw = 1.0 × 10⁻¹⁴ at 25 °C."
+        },
+        {
+          "text": "So to get Kb of the conjugate base, use Kb = Kw ÷ Ka."
+        },
+        {
+          "text": "Stronger acid means a larger Ka, so a smaller Kb, a weaker conjugate base."
+        }
       ],
       "secondary": "It's a seesaw. The stronger the acid, the weaker its conjugate base, and the product stays pinned at Kw. The cancellation works because multiplying the two expressions removes [HA] and [A⁻], leaving [H⁺][OH⁻].",
       "callout": "Strong acid, weak conjugate base. Their product is always Kw.",
       "durationInFrames": 1170,
       "caption": "Ka × Kb = Kw, so Kb = Kw/Ka; stronger acid → weaker conjugate base.",
       "voiceover": {
-        "text": "Now the most useful relationship in acid-base equilibrium, and where it comes from. Take a conjugate pair, an acid HA and its conjugate base A minus. Write the Ka expression for the acid, and the Kb expression for the base reacting with water. Now multiply them together. Watch what happens, the HA cancels, the A minus cancels, and you're left with just hydrogen ion times hydroxide, which is Kw. So Ka times Kb equals Kw, one-point-zero times ten to the minus fourteen at twenty-five degrees. That immediately gives you a way to find Kb without any new experiment, Kb is simply Kw divided by Ka. And it reveals a beautiful seesaw. The stronger the acid, the bigger its Ka, so the smaller its Kb must be to keep the product at Kw, which means a weaker conjugate base. Strong acid, weak conjugate base, every time, and their product is forever pinned at Kw."
+        "text": "Now the most useful relationship in acid-base equilibrium, and where it comes from. Take a conjugate pair, an acid HA and its conjugate base A minus. Write the Ka expression for the acid, and the Kb expression for the base reacting with water. Now multiply them together. Watch what happens, the HA cancels, the A minus cancels, and you're left with just hydrogen ion times hydroxide, which is Kw. So Ka times Kb equals Kw, one-point-zero times ten to the minus fourteen at twenty-five degrees. That immediately gives you a way to find Kb without any new experiment, Kb is simply Kw divided by Ka. And it reveals a beautiful seesaw. The stronger the acid, the bigger its Ka, so the smaller its Kb must be to keep the product at Kw, which means a weaker conjugate base. Strong acid, weak conjugate base, every time, and their product is forever pinned at Kw.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L14/concept-kakb.7c05178848b6.mp3"
       }
     },
     {
@@ -106,16 +136,23 @@
         "type": "gibbsSpontaneity"
       },
       "bullets": [
-        {"text": "ΔG° = −RT ln Keq, with R = 8.314 J K⁻¹ mol⁻¹ and T in kelvin."},
-        {"text": "Keq greater than 1: ln is positive, so ΔG° is negative, forward-favoured."},
-        {"text": "Keq less than 1: ln is negative, so ΔG° is positive, reactant-favoured."}
+        {
+          "text": "ΔG° = −RT ln Keq, with R = 8.314 J K⁻¹ mol⁻¹ and T in kelvin."
+        },
+        {
+          "text": "Keq greater than 1: ln is positive, so ΔG° is negative, forward-favoured."
+        },
+        {
+          "text": "Keq less than 1: ln is negative, so ΔG° is positive, reactant-favoured."
+        }
       ],
       "secondary": "Convert T to kelvin (°C + 273) and note the answer comes out in joules, divide by 1000 for kJ. And ΔG° is not ΔG: at equilibrium the actual ΔG is always zero.",
       "callout": "Keq above 1 gives a negative ΔG°, the forward reaction is favoured.",
       "durationInFrames": 1170,
       "caption": "ΔG° = −RT ln Keq links the constant to spontaneity; T in kelvin.",
       "voiceover": {
-        "text": "Now we bridge back to Module four. Gibbs free energy and the equilibrium constant aren't separate ideas, they're two views of the same thing, connected by one equation, the standard Gibbs free energy change equals minus R T times the natural log of Keq. R is the gas constant, eight-point-three-one-four joules per kelvin per mole, and T is the absolute temperature in kelvin. Look at what it tells you. If Keq is bigger than one, its log is positive, so the standard Gibbs free energy change comes out negative, which means the forward reaction is favoured, products win. If Keq is less than one, the log is negative, so the standard Gibbs free energy change is positive, and reactants win. A couple of must-do details, convert temperature to kelvin by adding two-seventy-three, and remember the answer lands in joules, so divide by a thousand for kilojoules. And don't confuse the standard Gibbs free energy change with the actual one, at equilibrium the actual Gibbs free energy change is always zero."
+        "text": "Now we bridge back to Module four. Gibbs free energy and the equilibrium constant aren't separate ideas, they're two views of the same thing, connected by one equation, the standard Gibbs free energy change equals minus R T times the natural log of Keq. R is the gas constant, eight-point-three-one-four joules per kelvin per mole, and T is the absolute temperature in kelvin. Look at what it tells you. If Keq is bigger than one, its log is positive, so the standard Gibbs free energy change comes out negative, which means the forward reaction is favoured, products win. If Keq is less than one, the log is negative, so the standard Gibbs free energy change is positive, and reactants win. A couple of must-do details, convert temperature to kelvin by adding two-seventy-three, and remember the answer lands in joules, so divide by a thousand for kilojoules. And don't confuse the standard Gibbs free energy change with the actual one, at equilibrium the actual Gibbs free energy change is always zero.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L14/concept-gibbs.b5c1bbe34927.mp3"
       }
     },
     {
@@ -140,7 +177,8 @@
       "durationInFrames": 1620,
       "caption": "HF stronger (larger Ka); Kb(F⁻) = 1.47×10⁻¹¹; F⁻ is the weaker base.",
       "voiceover": {
-        "text": "Let's work the acid-base side. Two weak acids, hydrofluoric acid with Ka six-point-eight times ten to the minus four, and nitrous acid with Ka four-point-five times ten to the minus four. First, the Ka expressions, each is hydrogen ion times the conjugate base, over the undissociated acid. To find the stronger acid, just compare the Ka values, six-point-eight is bigger than four-point-five, so hydrofluoric acid is the stronger one, its equilibrium sits further right. Now part b, the Kb of the fluoride ion. Use Kb equals Kw over Ka, that's one times ten to the minus fourteen, divided by six-point-eight times ten to the minus four, which gives one-point-four-seven times ten to the minus eleven. For part c, do the same for nitrite, Kw over four-point-five times ten to the minus four, giving two-point-two-two times ten to the minus eleven. Compare them, nitrite's Kb is larger than fluoride's, so fluoride is the weaker base. And that's the seesaw in action, hydrofluoric acid was the stronger acid, so its conjugate, fluoride, is the weaker base."
+        "text": "Let's work the acid-base side. Two weak acids, hydrofluoric acid with Ka six-point-eight times ten to the minus four, and nitrous acid with Ka four-point-five times ten to the minus four. First, the Ka expressions, each is hydrogen ion times the conjugate base, over the undissociated acid. To find the stronger acid, just compare the Ka values, six-point-eight is bigger than four-point-five, so hydrofluoric acid is the stronger one, its equilibrium sits further right. Now part b, the Kb of the fluoride ion. Use Kb equals Kw over Ka, that's one times ten to the minus fourteen, divided by six-point-eight times ten to the minus four, which gives one-point-four-seven times ten to the minus eleven. For part c, do the same for nitrite, Kw over four-point-five times ten to the minus four, giving two-point-two-two times ten to the minus eleven. Compare them, nitrite's Kb is larger than fluoride's, so fluoride is the weaker base. And that's the seesaw in action, hydrofluoric acid was the stronger acid, so its conjugate, fluoride, is the weaker base.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L14/worked-example.3b5ebb25b993.mp3"
       }
     },
     {
@@ -154,7 +192,8 @@
       "durationInFrames": 1230,
       "caption": "Negative ΔG = thermodynamically spontaneous, not fast. Rate is separate.",
       "voiceover": {
-        "text": "Here's the trap that catches almost everyone, seeing a negative Gibbs free energy change and concluding the reaction must be fast. It's the same confusion as last lesson with Keq, just in thermodynamic language. A negative Gibbs free energy change means the reaction is spontaneous, in the precise sense that it can occur on its own, without a continuous push of external energy. That is purely a statement about direction and feasibility, it says nothing whatsoever about how fast. Spontaneity is thermodynamics, rate is kinetics, and they're independent. The reaction of hydrogen and oxygen to form water has a hugely negative Gibbs free energy change, it's wildly spontaneous, and yet a mixture of those two reactants will sit unchanged for years until you provide a spark. So when you read a negative Gibbs free energy change, say it can happen, and resist the urge to say it happens quickly."
+        "text": "Here's the trap that catches almost everyone, seeing a negative Gibbs free energy change and concluding the reaction must be fast. It's the same confusion as last lesson with Keq, just in thermodynamic language. A negative Gibbs free energy change means the reaction is spontaneous, in the precise sense that it can occur on its own, without a continuous push of external energy. That is purely a statement about direction and feasibility, it says nothing whatsoever about how fast. Spontaneity is thermodynamics, rate is kinetics, and they're independent. The reaction of hydrogen and oxygen to form water has a hugely negative Gibbs free energy change, it's wildly spontaneous, and yet a mixture of those two reactants will sit unchanged for years until you provide a spark. So when you read a negative Gibbs free energy change, say it can happen, and resist the urge to say it happens quickly.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L14/misconception.cabf619f7e69.mp3"
       }
     },
     {
@@ -173,7 +212,8 @@
       "durationInFrames": 1320,
       "caption": "Kb(acetate) = Kw/Ka = 1.0×10⁻¹⁴ / 1.8×10⁻⁵ = 5.6×10⁻¹⁰ → weak base.",
       "voiceover": {
-        "text": "Your turn, with acetic acid, the acid in vinegar, Ka one-point-eight times ten to the minus five at twenty-five degrees. Write the dissociation and Ka expression, find the Kb of the acetate ion, and say whether acetate is a strong or weak base. Pause and try it. Right. Part a, acetic acid splits into a hydrogen ion and acetate, so Ka is hydrogen ion times acetate, over undissociated acetic acid. Part b, the acetate ion is the conjugate base, so use Kb equals Kw over Ka. That's one times ten to the minus fourteen, divided by one-point-eight times ten to the minus five. Doing the division gives five-point-six times ten to the minus ten. Part c, that Kb is tiny, far smaller than one, so acetate is a weak base, its reaction with water barely proceeds. Which makes sense, acetic acid is a weak acid, but it's still much stronger than its conjugate base is as a base."
+        "text": "Your turn, with acetic acid, the acid in vinegar, Ka one-point-eight times ten to the minus five at twenty-five degrees. Write the dissociation and Ka expression, find the Kb of the acetate ion, and say whether acetate is a strong or weak base. Pause and try it. Right. Part a, acetic acid splits into a hydrogen ion and acetate, so Ka is hydrogen ion times acetate, over undissociated acetic acid. Part b, the acetate ion is the conjugate base, so use Kb equals Kw over Ka. That's one times ten to the minus fourteen, divided by one-point-eight times ten to the minus five. Doing the division gives five-point-six times ten to the minus ten. Part c, that Kb is tiny, far smaller than one, so acetate is a weak base, its reaction with water barely proceeds. Which makes sense, acetic acid is a weak acid, but it's still much stronger than its conjugate base is as a base.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L14/quick-check.271bff64a23e.mp3"
       }
     },
     {
@@ -191,7 +231,8 @@
       "durationInFrames": 1200,
       "caption": "Five takeaways: K-family is Keq, Ka strength, Ka×Kb=Kw, ΔG°=−RT ln Keq.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, Ka, Kb, Kw, and Ksp aren't new theory, they're all Keq applied to a particular reaction. Second, Ka is hydrogen ion times conjugate base over the acid, and a larger Ka means a stronger acid. Third, for a conjugate pair, Ka times Kb equals Kw, so you get Kb just by dividing Kw by Ka. Fourth, that gives the seesaw, the stronger the acid, the weaker its conjugate base. And fifth, Keq links to spontaneity through the standard Gibbs free energy change equals minus R T natural log Keq, with temperature in kelvin, and a negative value means spontaneous, never automatically fast. So whenever you meet a K with a subscript, don't panic, just ask which reaction it describes, and write the Keq expression for it. Next lesson, we move into solubility and dissolution. See you there."
+        "text": "Let's lock it in. Five things to take away. First, Ka, Kb, Kw, and Ksp aren't new theory, they're all Keq applied to a particular reaction. Second, Ka is hydrogen ion times conjugate base over the acid, and a larger Ka means a stronger acid. Third, for a conjugate pair, Ka times Kb equals Kw, so you get Kb just by dividing Kw by Ka. Fourth, that gives the seesaw, the stronger the acid, the weaker its conjugate base. And fifth, Keq links to spontaneity through the standard Gibbs free energy change equals minus R T natural log Keq, with temperature in kelvin, and a negative value means spontaneous, never automatically fast. So whenever you meet a K with a subscript, don't panic, just ask which reaction it describes, and write the Keq expression for it. Next lesson, we move into solubility and dissolution. See you there.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L14/summary.dacce4182023.mp3"
       }
     }
   ]

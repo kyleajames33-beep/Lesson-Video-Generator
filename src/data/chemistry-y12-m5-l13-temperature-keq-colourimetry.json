@@ -12,7 +12,13 @@
     "conduct an investigation to determine Keq of a chemical equilibrium system"
   ],
   "moduleLessonCount": 18,
-  "nesaOutcomes": ["CH12-12", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-12",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "How can the position of equilibrium be described and what does the equilibrium constant represent?",
   "lessonIntent": "Students can predict how Keq changes with temperature from the sign of ΔH, infer ΔH from a Keq-temperature table, and describe the colourimetric determination of Keq.",
   "examSkill": "Read Keq-versus-temperature data to deduce whether the forward reaction is exo- or endothermic, and outline the five-step colourimetry method using a calibration curve and an ICE table.",
@@ -42,7 +48,8 @@
       "durationInFrames": 690,
       "caption": "Concentration, pressure and catalysts leave Keq unchanged; only temperature shifts it.",
       "voiceover": {
-        "text": "OK, here's something that trips up a lot of students. You can disturb an equilibrium in all sorts of ways. Add more reactant, add a catalyst, crank up the pressure. And in every one of those cases, the system shifts, the position changes, but the equilibrium constant itself stays exactly the same. The number doesn't budge. There is only one thing in the entire syllabus that genuinely changes the value of Keq, and that's temperature. Change the temperature and you get a brand new Keq. So today has two halves. First, how temperature changes Keq, and which direction, depending on whether the reaction releases or absorbs heat. And second, the experiment NESA wants you to know, how you actually measure Keq in the lab, by shining light through a coloured solution."
+        "text": "OK, here's something that trips up a lot of students. You can disturb an equilibrium in all sorts of ways. Add more reactant, add a catalyst, crank up the pressure. And in every one of those cases, the system shifts, the position changes, but the equilibrium constant itself stays exactly the same. The number doesn't budge. There is only one thing in the entire syllabus that genuinely changes the value of Keq, and that's temperature. Change the temperature and you get a brand new Keq. So today has two halves. First, how temperature changes Keq, and which direction, depending on whether the reaction releases or absorbs heat. And second, the experiment NESA wants you to know, how you actually measure Keq in the lab, by shining light through a coloured solution.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L13/hook.c910cb8f9f7a.mp3"
       }
     },
     {
@@ -52,24 +59,43 @@
       "body": "Treat heat as part of the equation, then Le Chatelier tells you which way Keq moves with temperature.",
       "diagram": {
         "type": "table",
-        "headers": ["Forward reaction", "Increase T", "Decrease T"],
+        "headers": [
+          "Forward reaction",
+          "Increase T",
+          "Decrease T"
+        ],
         "rows": [
-          ["Exothermic (ΔH < 0)", "Keq decreases", "Keq increases"],
-          ["Endothermic (ΔH > 0)", "Keq increases", "Keq decreases"]
+          [
+            "Exothermic (ΔH < 0)",
+            "Keq decreases",
+            "Keq increases"
+          ],
+          [
+            "Endothermic (ΔH > 0)",
+            "Keq increases",
+            "Keq decreases"
+          ]
         ],
         "delay": 20
       },
       "bullets": [
-        {"text": "Exothermic forward: heat is a product, so heating shifts left, Keq falls."},
-        {"text": "Endothermic forward: heat is a reactant, so heating shifts right, Keq rises."},
-        {"text": "Cooling does the opposite in each case."}
+        {
+          "text": "Exothermic forward: heat is a product, so heating shifts left, Keq falls."
+        },
+        {
+          "text": "Endothermic forward: heat is a reactant, so heating shifts right, Keq rises."
+        },
+        {
+          "text": "Cooling does the opposite in each case."
+        }
       ],
       "secondary": "Concentration, pressure and catalysts never change Keq, they only shift the position at a fixed Keq. Temperature alone rewrites the constant.",
       "callout": "Write heat into the equation, then apply Le Chatelier.",
       "durationInFrames": 1170,
       "caption": "Exothermic: heating lowers Keq. Endothermic: heating raises Keq.",
       "voiceover": {
-        "text": "Here's the trick that makes this effortless, treat heat as if it's one of the substances in the equation. For an exothermic forward reaction, heat is released, so you can write it as a product on the right. Now heat the system. By Le Chatelier, adding heat to the product side shifts the equilibrium left, away from products, so the ratio of products to reactants drops, which means Keq decreases. For an endothermic forward reaction, it's the reverse, heat is absorbed, so write it as a reactant on the left. Heating now shifts the system right, toward products, so Keq increases. Cooling just flips each case. And keep this front of mind, concentration, pressure, and catalysts only ever shift the position at a fixed Keq, they leave the constant untouched. Temperature is the only thing that genuinely rewrites the value."
+        "text": "Here's the trick that makes this effortless, treat heat as if it's one of the substances in the equation. For an exothermic forward reaction, heat is released, so you can write it as a product on the right. Now heat the system. By Le Chatelier, adding heat to the product side shifts the equilibrium left, away from products, so the ratio of products to reactants drops, which means Keq decreases. For an endothermic forward reaction, it's the reverse, heat is absorbed, so write it as a reactant on the left. Heating now shifts the system right, toward products, so Keq increases. Cooling just flips each case. And keep this front of mind, concentration, pressure, and catalysts only ever shift the position at a fixed Keq, they leave the constant untouched. Temperature is the only thing that genuinely rewrites the value.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L13/concept-temp.2be74745da11.mp3"
       }
     },
     {
@@ -78,16 +104,23 @@
       "heading": "Reading the trend backwards",
       "body": "Given a table of Keq at different temperatures, you can work backwards to the sign of ΔH.",
       "bullets": [
-        {"text": "If Keq rises as T rises, the forward reaction is endothermic."},
-        {"text": "If Keq falls as T rises, the forward reaction is exothermic."},
-        {"text": "Then extend the same trend to predict Keq outside the data range."}
+        {
+          "text": "If Keq rises as T rises, the forward reaction is endothermic."
+        },
+        {
+          "text": "If Keq falls as T rises, the forward reaction is exothermic."
+        },
+        {
+          "text": "Then extend the same trend to predict Keq outside the data range."
+        }
       ],
       "secondary": "A big Keq tells you products are favoured at equilibrium, not that the reaction is fast. Equilibrium position and reaction rate are completely separate ideas.",
       "callout": "Keq up with T means endothermic; Keq down with T means exothermic.",
       "durationInFrames": 1140,
       "caption": "Keq increasing with T → endothermic; decreasing with T → exothermic.",
       "voiceover": {
-        "text": "Exam questions love to run this in reverse. They give you a little table, Keq measured at three or four temperatures, and ask you to deduce whether the forward reaction is exothermic or endothermic. The logic is just the previous slide, backwards. If Keq gets bigger as the temperature climbs, then heating is favouring products, which only happens when heat is a reactant, so the forward reaction is endothermic. If Keq gets smaller as the temperature climbs, heating is favouring reactants, so heat is a product, and the forward reaction is exothermic. There are three marks waiting in these questions, state the direction Keq moves, infer the sign of the enthalpy change, then use the same trend to predict Keq at a temperature outside the table. One warning that comes up again and again, a large Keq means products are favoured at equilibrium, it says nothing about how fast the reaction is. Position and rate are different questions."
+        "text": "Exam questions love to run this in reverse. They give you a little table, Keq measured at three or four temperatures, and ask you to deduce whether the forward reaction is exothermic or endothermic. The logic is just the previous slide, backwards. If Keq gets bigger as the temperature climbs, then heating is favouring products, which only happens when heat is a reactant, so the forward reaction is endothermic. If Keq gets smaller as the temperature climbs, heating is favouring reactants, so heat is a product, and the forward reaction is exothermic. There are three marks waiting in these questions, state the direction Keq moves, infer the sign of the enthalpy change, then use the same trend to predict Keq at a temperature outside the table. One warning that comes up again and again, a large Keq means products are favoured at equilibrium, it says nothing about how fast the reaction is. Position and rate are different questions.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L13/concept-infer.6ca0685cd5f2.mp3"
       }
     },
     {
@@ -96,16 +129,23 @@
       "heading": "Measuring Keq by colourimetry",
       "body": "If one species is coloured, its concentration shows up as absorbance, and an ICE table finishes the job.",
       "bullets": [
-        {"text": "Beer-Lambert: absorbance is proportional to the coloured species' concentration."},
-        {"text": "Build a calibration curve of absorbance versus known concentration."},
-        {"text": "Read the equilibrium concentration off the curve, then ICE the rest."}
+        {
+          "text": "Beer-Lambert: absorbance is proportional to the coloured species' concentration."
+        },
+        {
+          "text": "Build a calibration curve of absorbance versus known concentration."
+        },
+        {
+          "text": "Read the equilibrium concentration off the curve, then ICE the rest."
+        }
       ],
       "secondary": "For Fe³⁺ + SCN⁻ ⇌ FeSCN²⁺, only the deep-red FeSCN²⁺ absorbs strongly. Measure its absorbance, find its concentration, then use an ICE table for the two reactants and substitute into Keq.",
       "callout": "Colour gives you one concentration; the ICE table gives you the rest.",
       "durationInFrames": 1200,
       "caption": "Colourimetry: calibration curve → [coloured species]eq → ICE table → Keq.",
       "voiceover": {
-        "text": "Now the experiment. How do you actually get a number for Keq? If one of the species is coloured, you're in luck, because colour intensity is a window onto concentration. The principle is the Beer-Lambert law, which says, for a given solution and path length, absorbance is directly proportional to the concentration of the coloured species. Deeper colour, higher concentration. So the method has five steps. First, make up several solutions of known concentration and measure their absorbance, that's your calibration curve. Second, prepare your equilibrium mixture. Third, measure its absorbance and read the equilibrium concentration of the coloured species straight off the curve. Fourth, use an ICE table to find the equilibrium concentrations of everything else. And fifth, substitute into the Keq expression. The classic system is iron three plus reacting with thiocyanate to form the blood-red iron thiocyanate ion. Only that product is strongly coloured, so its absorbance hands you one concentration, and the ICE table delivers the other two."
+        "text": "Now the experiment. How do you actually get a number for Keq? If one of the species is coloured, you're in luck, because colour intensity is a window onto concentration. The principle is the Beer-Lambert law, which says, for a given solution and path length, absorbance is directly proportional to the concentration of the coloured species. Deeper colour, higher concentration. So the method has five steps. First, make up several solutions of known concentration and measure their absorbance, that's your calibration curve. Second, prepare your equilibrium mixture. Third, measure its absorbance and read the equilibrium concentration of the coloured species straight off the curve. Fourth, use an ICE table to find the equilibrium concentrations of everything else. And fifth, substitute into the Keq expression. The classic system is iron three plus reacting with thiocyanate to form the blood-red iron thiocyanate ion. Only that product is strongly coloured, so its absorbance hands you one concentration, and the ICE table delivers the other two.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L13/concept-colourimetry.217229841611.mp3"
       }
     },
     {
@@ -130,7 +170,8 @@
       "durationInFrames": 1620,
       "caption": "[Fe³⁺]eq = 1.52 × 10⁻³; Keq = 4.80×10⁻⁴ / (1.52×10⁻³)² = 208.",
       "voiceover": {
-        "text": "Let's run the full colourimetry calculation. Iron three plus and thiocyanate, each starting at two times ten to the minus three, forming the red iron thiocyanate ion. The calibration curve tells us the equilibrium concentration of that coloured product, four-point-eight times ten to the minus four. Now the ICE table. The product went up by four-point-eight times ten to the minus four, and the ratio is one to one to one, so each reactant went down by that same amount. So the equilibrium concentration of iron three plus is two times ten to the minus three, minus four-point-eight times ten to the minus four, which is one-point-five-two times ten to the minus three. Thiocyanate is the same by symmetry. Now substitute into Keq, product over the two reactants multiplied. The top is four-point-eight times ten to the minus four. The bottom is one-point-five-two times ten to the minus three, squared, which is two-point-three-one times ten to the minus six. Divide, and Keq is two hundred and eight. That's comfortably bigger than one, which fits, the solution is intensely red even though we started with very little, because products are strongly favoured."
+        "text": "Let's run the full colourimetry calculation. Iron three plus and thiocyanate, each starting at two times ten to the minus three, forming the red iron thiocyanate ion. The calibration curve tells us the equilibrium concentration of that coloured product, four-point-eight times ten to the minus four. Now the ICE table. The product went up by four-point-eight times ten to the minus four, and the ratio is one to one to one, so each reactant went down by that same amount. So the equilibrium concentration of iron three plus is two times ten to the minus three, minus four-point-eight times ten to the minus four, which is one-point-five-two times ten to the minus three. Thiocyanate is the same by symmetry. Now substitute into Keq, product over the two reactants multiplied. The top is four-point-eight times ten to the minus four. The bottom is one-point-five-two times ten to the minus three, squared, which is two-point-three-one times ten to the minus six. Divide, and Keq is two hundred and eight. That's comfortably bigger than one, which fits, the solution is intensely red even though we started with very little, because products are strongly favoured.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L13/worked-example.fc67442616f4.mp3"
       }
     },
     {
@@ -144,7 +185,8 @@
       "durationInFrames": 1230,
       "caption": "Large Keq = products favoured (position), not fast (rate). Different ideas.",
       "voiceover": {
-        "text": "Here's a trap that catches students at every level, seeing a large Keq and assuming the reaction must be fast. It's an easy slip, but it's wrong, and the examiners know it. A large Keq tells you one thing only, that at equilibrium the products are strongly favoured, the position sits far to the right. It is purely a statement about how far the reaction goes, not how quickly it gets there. Speed is a completely separate question, governed by activation energy, temperature, and whether there's a catalyst. The two ideas don't even live in the same part of chemistry, one is thermodynamics, the other is kinetics. Think of the reaction that rusts iron, or carbon turning to diamond, both have favourable equilibria, both are absurdly slow. So whenever you see a big Keq, say products are favoured, and bite your tongue before you say fast."
+        "text": "Here's a trap that catches students at every level, seeing a large Keq and assuming the reaction must be fast. It's an easy slip, but it's wrong, and the examiners know it. A large Keq tells you one thing only, that at equilibrium the products are strongly favoured, the position sits far to the right. It is purely a statement about how far the reaction goes, not how quickly it gets there. Speed is a completely separate question, governed by activation energy, temperature, and whether there's a catalyst. The two ideas don't even live in the same part of chemistry, one is thermodynamics, the other is kinetics. Think of the reaction that rusts iron, or carbon turning to diamond, both have favourable equilibria, both are absurdly slow. So whenever you see a big Keq, say products are favoured, and bite your tongue before you say fast.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L13/misconception.93c50d4358bd.mp3"
       }
     },
     {
@@ -163,7 +205,8 @@
       "durationInFrames": 1320,
       "caption": "Endothermic: heating shifts right → more blue CoCl₄²⁻ → Keq increases.",
       "voiceover": {
-        "text": "Your turn, with the classic cobalt colour-change equilibrium. The pink hydrated cobalt ion reacts with chloride to give the blue cobalt chloride complex, and the forward reaction is endothermic. You heat it, and it turns more blue. Which way did it shift, what happened to Keq, and why does the absorbance change? Pause and think it through. Right. Because the forward reaction is endothermic, heat behaves like a reactant, sitting on the left of the equation. So adding heat shifts the system right, toward the blue product. That's why it gets bluer. And since you now have more product relative to reactant, the ratio rises, so Keq increases. This is exactly the endothermic case, heating raises Keq. And the deeper blue means more of the cobalt chloride complex is present, so it absorbs more strongly. The colour change is a direct, visible readout of the equilibrium shifting and Keq climbing."
+        "text": "Your turn, with the classic cobalt colour-change equilibrium. The pink hydrated cobalt ion reacts with chloride to give the blue cobalt chloride complex, and the forward reaction is endothermic. You heat it, and it turns more blue. Which way did it shift, what happened to Keq, and why does the absorbance change? Pause and think it through. Right. Because the forward reaction is endothermic, heat behaves like a reactant, sitting on the left of the equation. So adding heat shifts the system right, toward the blue product. That's why it gets bluer. And since you now have more product relative to reactant, the ratio rises, so Keq increases. This is exactly the endothermic case, heating raises Keq. And the deeper blue means more of the cobalt chloride complex is present, so it absorbs more strongly. The colour change is a direct, visible readout of the equilibrium shifting and Keq climbing.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L13/quick-check.2297280d75eb.mp3"
       }
     },
     {
@@ -181,7 +224,8 @@
       "durationInFrames": 1200,
       "caption": "Five takeaways: temperature alone, exo/endo trends, colourimetry, position vs rate.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to carry out. First, temperature is the only factor that changes the value of Keq, concentration, pressure, and catalysts only shift the position. Second, for an exothermic forward reaction, heating lowers Keq, and for an endothermic one, heating raises it, just treat heat as a substance and apply Le Chatelier. Third, run that backwards, if Keq rises with temperature the forward reaction is endothermic, if it falls it's exothermic. Fourth, to measure Keq by colourimetry, build a calibration curve to get one concentration from absorbance, then use an ICE table for the rest. And fifth, never confuse a large Keq with a fast reaction, it's about how far, not how fast. So when a Keq question lands, first ask whether it's really about temperature, or just a position shift at a fixed Keq. Next lesson, we apply Keq to acids, with Ka and Kb. See you there."
+        "text": "Let's lock it in. Five things to carry out. First, temperature is the only factor that changes the value of Keq, concentration, pressure, and catalysts only shift the position. Second, for an exothermic forward reaction, heating lowers Keq, and for an endothermic one, heating raises it, just treat heat as a substance and apply Le Chatelier. Third, run that backwards, if Keq rises with temperature the forward reaction is endothermic, if it falls it's exothermic. Fourth, to measure Keq by colourimetry, build a calibration curve to get one concentration from absorbance, then use an ICE table for the rest. And fifth, never confuse a large Keq with a fast reaction, it's about how far, not how fast. So when a Keq question lands, first ask whether it's really about temperature, or just a position shift at a fixed Keq. Next lesson, we apply Keq to acids, with Ka and Kb. See you there.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L13/summary.a98244a0a19d.mp3"
       }
     }
   ]

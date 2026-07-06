@@ -48,7 +48,8 @@
       "durationInFrames": 660,
       "caption": "The wrong indicator records the endpoint at the wrong pH, ruining the result.",
       "voiceover": {
-        "text": "OK, here's a real quality control failure. A lab was titrating a weak base with a strong acid, and the equivalence point sat up around pH nine. But the technician used methyl orange, which changes colour down at pH three to four. So the colour change fired way too early, long before the reaction was actually complete, and a faulty batch got approved at a hundred and twelve percent of its stated strength. The chemistry was fine. The arithmetic was fine. The single mistake was choosing an indicator whose colour change happened at the wrong pH. So today is about how indicators work, and how to pick one whose range actually matches the titration you're running."
+        "text": "OK, here's a real quality control failure. A lab was titrating a weak base with a strong acid, and the equivalence point sat up around pH nine. But the technician used methyl orange, which changes colour down at pH three to four. So the colour change fired way too early, long before the reaction was actually complete, and a faulty batch got approved at a hundred and twelve percent of its stated strength. The chemistry was fine. The arithmetic was fine. The single mistake was choosing an indicator whose colour change happened at the wrong pH. So today is about how indicators work, and how to pick one whose range actually matches the titration you're running.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L15/hook.e12ac1693528.mp3"
       }
     },
     {
@@ -57,16 +58,23 @@
       "heading": "An indicator is its own weak acid",
       "body": "An indicator is a weak acid where the HIn form and the In⁻ form are different colours.",
       "bullets": [
-        {"text": "HIn ⇌ H⁺ + In⁻, with the two forms coloured differently."},
-        {"text": "Low pH pushes it to HIn, the acid colour; high pH to In⁻, the base colour."},
-        {"text": "The change is gradual, spanning about pKIn ± 1, roughly two pH units."}
+        {
+          "text": "HIn ⇌ H⁺ + In⁻, with the two forms coloured differently."
+        },
+        {
+          "text": "Low pH pushes it to HIn, the acid colour; high pH to In⁻, the base colour."
+        },
+        {
+          "text": "The change is gradual, spanning about pKIn ± 1, roughly two pH units."
+        }
       ],
       "secondary": "The eye sees the switch when one form is about 10 times the other, which is why the range spans two units.",
       "callout": "Colour follows the H⁺, by Le Chatelier.",
       "durationInFrames": 1080,
       "caption": "HIn ⇌ H⁺ + In⁻; acid colour at low pH, base colour at high pH.",
       "voiceover": {
-        "text": "Let's start with what an indicator actually is. It's a weak acid, written HIn, where the acid form and its conjugate base have different colours. The equilibrium is HIn in balance with hydrogen ion plus In minus. Now apply Le Chatelier. In an acidic solution, all that hydrogen ion pushes the equilibrium left, so the HIn form dominates and you see the acid colour. In a basic solution, hydrogen ion is scarce, so the equilibrium shifts right, the In minus form takes over, and you see the base colour. The colour change isn't sudden, it happens gradually across a range of about the indicator's pKIn plus or minus one, which is roughly two pH units wide. The reason is that your eye only registers the switch once one form is about ten times more concentrated than the other, and a tenfold change in that ratio spans about one pH unit either side."
+        "text": "Let's start with what an indicator actually is. It's a weak acid, written HIn, where the acid form and its conjugate base have different colours. The equilibrium is HIn in balance with hydrogen ion plus In minus. Now apply Le Chatelier. In an acidic solution, all that hydrogen ion pushes the equilibrium left, so the HIn form dominates and you see the acid colour. In a basic solution, hydrogen ion is scarce, so the equilibrium shifts right, the In minus form takes over, and you see the base colour. The colour change isn't sudden, it happens gradually across a range of about the indicator's pKIn plus or minus one, which is roughly two pH units wide. The reason is that your eye only registers the switch once one form is about ten times more concentrated than the other, and a tenfold change in that ratio spans about one pH unit either side.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L15/concept-mechanism.fea2af482a09.mp3"
       }
     },
     {
@@ -75,26 +83,49 @@
       "heading": "The equivalence point isn't always pH 7",
       "body": "The salt left at equivalence decides the pH, so the right indicator depends on the titration type.",
       "bullets": [
-        {"text": "Strong acid + strong base: neutral salt, EP at pH 7, most indicators work."},
-        {"text": "Weak acid + strong base: basic salt, EP above 7, use phenolphthalein."},
-        {"text": "Strong acid + weak base: acidic salt, EP below 7, use methyl orange."}
+        {
+          "text": "Strong acid + strong base: neutral salt, EP at pH 7, most indicators work."
+        },
+        {
+          "text": "Weak acid + strong base: basic salt, EP above 7, use phenolphthalein."
+        },
+        {
+          "text": "Strong acid + weak base: acidic salt, EP below 7, use methyl orange."
+        }
       ],
       "secondary": "Weak acid with weak base gives no sharp jump, so no indicator is reliable; use a pH meter instead.",
       "callout": "Match the indicator range to the EP pH.",
       "diagram": {
         "type": "table",
-        "headers": ["Indicator", "Acid → base colour", "Range"],
+        "headers": [
+          "Indicator",
+          "Acid → base colour",
+          "Range"
+        ],
         "rows": [
-          ["Methyl orange", "red → yellow", "3.1–4.4"],
-          ["Bromothymol blue", "yellow → blue", "6.0–7.6"],
-          ["Phenolphthalein", "colourless → pink", "8.3–10.0"]
+          [
+            "Methyl orange",
+            "red → yellow",
+            "3.1–4.4"
+          ],
+          [
+            "Bromothymol blue",
+            "yellow → blue",
+            "6.0–7.6"
+          ],
+          [
+            "Phenolphthalein",
+            "colourless → pink",
+            "8.3–10.0"
+          ]
         ],
         "delay": 18
       },
       "durationInFrames": 1140,
       "caption": "SA+SB EP 7; WA+SB EP > 7 (Ph); SA+WB EP < 7 (MO); WA+WB no indicator.",
       "voiceover": {
-        "text": "Here's the idea most students miss. The equivalence point is not always pH seven. It depends on the salt left behind, because that salt can react with water. Take a strong acid with a strong base. The salt, like sodium chloride, is neutral, so the equivalence point is pH seven, and because the pH jump there is huge, almost any indicator works. Now a weak acid with a strong base. The salt is the conjugate base, which reacts with water to make hydroxide, so the equivalence point is above seven, typically around eight-point-seven. That calls for phenolphthalein, which changes between eight-point-three and ten. Flip it to a strong acid with a weak base. The salt is now an acidic conjugate acid, pulling the equivalence point below seven, so you use methyl orange. And a weak acid with a weak base gives almost no sharp jump at all, so no indicator is reliable, and you'd reach for a pH meter instead. The rule is simple. The indicator's range must bracket the equivalence point pH."
+        "text": "Here's the idea most students miss. The equivalence point is not always pH seven. It depends on the salt left behind, because that salt can react with water. Take a strong acid with a strong base. The salt, like sodium chloride, is neutral, so the equivalence point is pH seven, and because the pH jump there is huge, almost any indicator works. Now a weak acid with a strong base. The salt is the conjugate base, which reacts with water to make hydroxide, so the equivalence point is above seven, typically around eight-point-seven. That calls for phenolphthalein, which changes between eight-point-three and ten. Flip it to a strong acid with a weak base. The salt is now an acidic conjugate acid, pulling the equivalence point below seven, so you use methyl orange. And a weak acid with a weak base gives almost no sharp jump at all, so no indicator is reliable, and you'd reach for a pH meter instead. The rule is simple. The indicator's range must bracket the equivalence point pH.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L15/concept-ep.04ad7d4db7fe.mp3"
       }
     },
     {
@@ -102,16 +133,25 @@
       "type": "definition",
       "heading": "The three indicators to know",
       "bullets": [
-        {"text": "Methyl orange: red to yellow, range 3.1–4.4, for strong acid + weak base."},
-        {"text": "Bromothymol blue: yellow to blue, range 6.0–7.6, near neutral."},
-        {"text": "Phenolphthalein: colourless to pink, range 8.3–10.0, for weak acid + strong base."},
-        {"text": "Endpoint: where the indicator changes; ideally equals the equivalence point."}
+        {
+          "text": "Methyl orange: red to yellow, range 3.1–4.4, for strong acid + weak base."
+        },
+        {
+          "text": "Bromothymol blue: yellow to blue, range 6.0–7.6, near neutral."
+        },
+        {
+          "text": "Phenolphthalein: colourless to pink, range 8.3–10.0, for weak acid + strong base."
+        },
+        {
+          "text": "Endpoint: where the indicator changes; ideally equals the equivalence point."
+        }
       ],
       "callout": "Phenolphthalein is colourless in acid, pink in base.",
       "durationInFrames": 990,
       "caption": "Methyl orange, bromothymol blue, phenolphthalein, and the endpoint.",
       "voiceover": {
-        "text": "Three indicators are worth memorising cold. Methyl orange runs from red in acid to yellow in base, with a range of three-point-one to four-point-four, so it suits a strong acid with a weak base. Bromothymol blue goes yellow to blue across six to seven-point-six, sitting right around neutral, good for strong acid with strong base. And phenolphthalein goes from colourless to pink between eight-point-three and ten, ideal for a weak acid with a strong base. Watch the direction on that last one. Phenolphthalein is colourless in acid and pink in base, not the other way round. And one definition to keep separate, the endpoint is where the indicator changes colour, which should line up with the equivalence point if you've chosen well."
+        "text": "Three indicators are worth memorising cold. Methyl orange runs from red in acid to yellow in base, with a range of three-point-one to four-point-four, so it suits a strong acid with a weak base. Bromothymol blue goes yellow to blue across six to seven-point-six, sitting right around neutral, good for strong acid with strong base. And phenolphthalein goes from colourless to pink between eight-point-three and ten, ideal for a weak acid with a strong base. Watch the direction on that last one. Phenolphthalein is colourless in acid and pink in base, not the other way round. And one definition to keep separate, the endpoint is where the indicator changes colour, which should line up with the equivalence point if you've chosen well.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L15/definition.8536d7ed68dc.mp3"
       }
     },
     {
@@ -130,7 +170,8 @@
       "durationInFrames": 1410,
       "caption": "WA+SB → phenolphthalein (EP ≈ 8.7); SA+WB → methyl orange (EP ≈ 5).",
       "voiceover": {
-        "text": "Let's choose indicators properly, with justification, the way the exam wants it. Part a, acetic acid titrated with sodium hydroxide. That's a weak acid with a strong base. The salt is acetate, which reacts with water to release hydroxide, so the equivalence point is basic, around pH eight-point-seven. Phenolphthalein changes between eight-point-three and ten, which brackets that pH, so phenolphthalein is the right choice. Part b, ammonia titrated with hydrochloric acid. That's a strong acid with a weak base. The salt is ammonium, which reacts with water to release hydrogen ion, so the equivalence point is acidic, around pH five. Methyl orange changes between three-point-one and four-point-four, sitting in that acidic region, so methyl orange is correct here. Notice the structure of both answers. Name the salt, decide if the equivalence point is above or below seven, then pick the indicator whose range covers it."
+        "text": "Let's choose indicators properly, with justification, the way the exam wants it. Part a, acetic acid titrated with sodium hydroxide. That's a weak acid with a strong base. The salt is acetate, which reacts with water to release hydroxide, so the equivalence point is basic, around pH eight-point-seven. Phenolphthalein changes between eight-point-three and ten, which brackets that pH, so phenolphthalein is the right choice. Part b, ammonia titrated with hydrochloric acid. That's a strong acid with a weak base. The salt is ammonium, which reacts with water to release hydrogen ion, so the equivalence point is acidic, around pH five. Methyl orange changes between three-point-one and four-point-four, sitting in that acidic region, so methyl orange is correct here. Notice the structure of both answers. Name the salt, decide if the equivalence point is above or below seven, then pick the indicator whose range covers it.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L15/worked-example.5c174cd47992.mp3"
       }
     },
     {
@@ -144,7 +185,8 @@
       "durationInFrames": 1230,
       "caption": "EP isn't always 7; phenolphthalein is pink in base; BTB misses the WA+SB EP.",
       "voiceover": {
-        "text": "Three traps to avoid. Trap one, assuming every equivalence point is pH seven and grabbing any neutral indicator. Only a strong acid with a strong base gives pH seven. A weak acid with a strong base lands above seven, and a strong acid with a weak base lands below it. Trap two, getting phenolphthalein backwards. It is colourless in acidic and neutral solution, and turns pink only as the pH climbs into the basic range. Saying it's pink in acid is a common slip. Trap three, choosing bromothymol blue for a weak acid with a strong base. Bromothymol blue changes around six to seven-point-six, but that equivalence point is up near eight-point-seven, so the indicator would change colour too early, in the buffer region, giving a titre that's far too small. Match the range to the equivalence point and all three traps disappear."
+        "text": "Three traps to avoid. Trap one, assuming every equivalence point is pH seven and grabbing any neutral indicator. Only a strong acid with a strong base gives pH seven. A weak acid with a strong base lands above seven, and a strong acid with a weak base lands below it. Trap two, getting phenolphthalein backwards. It is colourless in acidic and neutral solution, and turns pink only as the pH climbs into the basic range. Saying it's pink in acid is a common slip. Trap three, choosing bromothymol blue for a weak acid with a strong base. Bromothymol blue changes around six to seven-point-six, but that equivalence point is up near eight-point-seven, so the indicator would change colour too early, in the buffer region, giving a titre that's far too small. Match the range to the equivalence point and all three traps disappear.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L15/misconception.25e12e0bd8f2.mp3"
       }
     },
     {
@@ -163,7 +205,8 @@
       "durationInFrames": 1290,
       "caption": "WA+SB → EP above 7 → phenolphthalein, not methyl orange.",
       "voiceover": {
-        "text": "Quick check. Twenty-five millilitres of nought-point-one mole per litre acetic acid is titrated with nought-point-one mole per litre sodium hydroxide. Part a, is the equivalence point above, at, or below pH seven? Part b, choose between methyl orange and phenolphthalein, with reasons. Pause and reason from the salt. Right, let's check. This is a weak acid with a strong base, so the salt formed is sodium acetate. The acetate reacts with water to produce hydroxide, which makes the solution basic. So the equivalence point pH is above seven, around eight-point-seven. That means phenolphthalein, with its range of eight-point-three to ten, brackets the equivalence point and is the correct indicator. Methyl orange would change down at three to four, far too early, back in the buffer region, giving a wildly wrong titre. Reason from the salt, and the indicator chooses itself."
+        "text": "Quick check. Twenty-five millilitres of nought-point-one mole per litre acetic acid is titrated with nought-point-one mole per litre sodium hydroxide. Part a, is the equivalence point above, at, or below pH seven? Part b, choose between methyl orange and phenolphthalein, with reasons. Pause and reason from the salt. Right, let's check. This is a weak acid with a strong base, so the salt formed is sodium acetate. The acetate reacts with water to produce hydroxide, which makes the solution basic. So the equivalence point pH is above seven, around eight-point-seven. That means phenolphthalein, with its range of eight-point-three to ten, brackets the equivalence point and is the correct indicator. Methyl orange would change down at three to four, far too early, back in the buffer region, giving a wildly wrong titre. Reason from the salt, and the indicator chooses itself.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L15/quick-check.811491c9dd02.mp3"
       }
     },
     {
@@ -181,7 +224,8 @@
       "durationInFrames": 1140,
       "caption": "Five takeaways: HIn equilibrium, EP pH by salt, and matching the range.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, an indicator is itself a weak acid, where the HIn form and the In minus form are different colours. Second, the colour follows the hydrogen ion by Le Chatelier, changing gradually over a range of about its pKIn plus or minus one. Third, the equivalence point pH depends on the salt left behind, so it is not always seven. Fourth, a weak acid with a strong base gives a basic equivalence point, so use phenolphthalein, while a strong acid with a weak base gives an acidic one, so use methyl orange. And fifth, the golden rule, the indicator's colour change range must bracket the equivalence point pH. When you choose an indicator, find the equivalence point pH first, then match the range to it. See you in the next lesson."
+        "text": "Let's lock it in. Five things to take away. First, an indicator is itself a weak acid, where the HIn form and the In minus form are different colours. Second, the colour follows the hydrogen ion by Le Chatelier, changing gradually over a range of about its pKIn plus or minus one. Third, the equivalence point pH depends on the salt left behind, so it is not always seven. Fourth, a weak acid with a strong base gives a basic equivalence point, so use phenolphthalein, while a strong acid with a weak base gives an acidic one, so use methyl orange. And fifth, the golden rule, the indicator's colour change range must bracket the equivalence point pH. When you choose an indicator, find the equivalence point pH first, then match the range to it. See you in the next lesson.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L15/summary.de6b34c6332e.mp3"
       }
     }
   ]

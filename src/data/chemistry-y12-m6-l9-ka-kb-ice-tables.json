@@ -46,7 +46,8 @@
       "durationInFrames": 660,
       "caption": "Different Ka values mean different [H⁺]; only an ICE table reveals how much.",
       "voiceover": {
-        "text": "OK, here's a question with a real pharmaceutical answer. Aspirin and ibuprofen are both weak acids, but aspirin has an acidity constant, Ka, of three times ten to the minus four, while ibuprofen's is ten times smaller. Dissolve the same dose of each in the same volume of stomach fluid, and which one releases more hydrogen ions? The answer matters for how each drug behaves in your body. But here's the catch, with a weak acid you can't just say hydrogen ion concentration equals the acid concentration, because most of it stays un-ionised. The amount that ionises depends on both Ka and concentration at once. So you need a proper method to solve the equilibrium, and that method is the ICE table."
+        "text": "OK, here's a question with a real pharmaceutical answer. Aspirin and ibuprofen are both weak acids, but aspirin has an acidity constant, Ka, of three times ten to the minus four, while ibuprofen's is ten times smaller. Dissolve the same dose of each in the same volume of stomach fluid, and which one releases more hydrogen ions? The answer matters for how each drug behaves in your body. But here's the catch, with a weak acid you can't just say hydrogen ion concentration equals the acid concentration, because most of it stays un-ionised. The amount that ionises depends on both Ka and concentration at once. So you need a proper method to solve the equilibrium, and that method is the ICE table.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L9/hook.ff723acb3db6.mp3"
       }
     },
     {
@@ -55,24 +56,51 @@
       "heading": "Why weak acids need an ICE table",
       "body": "A weak acid sits at equilibrium, so you track Initial, Change and Equilibrium concentrations.",
       "bullets": [
-        {"text": "Initial: the acid at c, with H⁺ and A⁻ both starting at zero."},
-        {"text": "Change: the acid loses x, while H⁺ and A⁻ each gain x."},
-        {"text": "Equilibrium: acid is (c − x), and H⁺ and A⁻ are each x."}
+        {
+          "text": "Initial: the acid at c, with H⁺ and A⁻ both starting at zero."
+        },
+        {
+          "text": "Change: the acid loses x, while H⁺ and A⁻ each gain x."
+        },
+        {
+          "text": "Equilibrium: acid is (c − x), and H⁺ and A⁻ are each x."
+        }
       ],
       "secondary": "Substitute into Ka = [H⁺][A⁻]/[HA] to get Ka = x²/(c − x), then solve for x, which is [H⁺].",
       "callout": "Treating a weak acid as strong can overstate [H⁺] by 100 times.",
       "durationInFrames": 1170,
       "caption": "ICE rows: c/0/0 → −x/+x/+x → (c−x)/x/x; Ka = x²/(c−x).",
       "voiceover": {
-        "text": "Let's see why a weak acid needs more than a one-liner. With a strong acid, ionisation is complete, so hydrogen ion concentration just equals the acid concentration. With a weak acid, most molecules stay intact, so we have to solve the equilibrium, and the tidy way to do that is an ICE table. ICE stands for Initial, Change, and Equilibrium. In the initial row, the acid is at its concentration c, and both hydrogen ion and the conjugate base start at zero. In the change row, the acid loses some amount x, while hydrogen ion and the conjugate base each gain x. In the equilibrium row, the acid is c minus x, and the two products are each x. Now substitute into the Ka expression, hydrogen ion times conjugate base over the acid, which gives Ka equals x squared over c minus x. Solve that for x, and x is your hydrogen ion concentration. Skip this and treat a weak acid as strong, and you can overstate the hydrogen ions by a factor of a hundred."
+        "text": "Let's see why a weak acid needs more than a one-liner. With a strong acid, ionisation is complete, so hydrogen ion concentration just equals the acid concentration. With a weak acid, most molecules stay intact, so we have to solve the equilibrium, and the tidy way to do that is an ICE table. ICE stands for Initial, Change, and Equilibrium. In the initial row, the acid is at its concentration c, and both hydrogen ion and the conjugate base start at zero. In the change row, the acid loses some amount x, while hydrogen ion and the conjugate base each gain x. In the equilibrium row, the acid is c minus x, and the two products are each x. Now substitute into the Ka expression, hydrogen ion times conjugate base over the acid, which gives Ka equals x squared over c minus x. Solve that for x, and x is your hydrogen ion concentration. Skip this and treat a weak acid as strong, and you can overstate the hydrogen ions by a factor of a hundred.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L9/concept-ice.d25d7e0b1343.mp3"
       },
       "diagram": {
         "type": "table",
-        "headers": ["", "[HA]", "[H⁺]", "[A⁻]"],
+        "headers": [
+          "",
+          "[HA]",
+          "[H⁺]",
+          "[A⁻]"
+        ],
         "rows": [
-          ["Initial", "c", "0", "0"],
-          ["Change", "−x", "+x", "+x"],
-          ["Equilibrium", "c − x", "x", "x"]
+          [
+            "Initial",
+            "c",
+            "0",
+            "0"
+          ],
+          [
+            "Change",
+            "−x",
+            "+x",
+            "+x"
+          ],
+          [
+            "Equilibrium",
+            "c − x",
+            "x",
+            "x"
+          ]
         ]
       }
     },
@@ -82,16 +110,23 @@
       "heading": "The shortcut, and when it breaks",
       "body": "If very little ionises, c − x is almost c, which turns the algebra into a simple square root.",
       "bullets": [
-        {"text": "Assume x ≪ c, so Ka ≈ x²/c, giving x = √(Ka × c)."},
-        {"text": "It's valid when Ka ÷ c is below 0.0025, meaning under 5% ionises."},
-        {"text": "If it fails, solve the full quadratic and take the positive root."}
+        {
+          "text": "Assume x ≪ c, so Ka ≈ x²/c, giving x = √(Ka × c)."
+        },
+        {
+          "text": "It's valid when Ka ÷ c is below 0.0025, meaning under 5% ionises."
+        },
+        {
+          "text": "If it fails, solve the full quadratic and take the positive root."
+        }
       ],
       "secondary": "Always check the assumption AFTER using it: work out x ÷ c × 100, and if it's 5% or more, redo it with the quadratic.",
       "callout": "Check the 5% rule every time; writing 'valid' without checking loses marks.",
       "durationInFrames": 1170,
       "caption": "x = √(Ka × c) when Ka/c < 0.0025; otherwise use the quadratic.",
       "voiceover": {
-        "text": "Solving x squared over c minus x exactly needs the quadratic formula, but there's a shortcut that works most of the time. If only a little acid ionises, then c minus x is almost the same as c, so Ka becomes roughly x squared over c, and x is just the square root of Ka times c. One clean step. The shortcut is valid when Ka divided by c is below nought-point-zero-zero-two-five, which is the same as saying less than five percent of the acid ionises. If that fails, you solve the full quadratic, x squared plus Ka x minus Ka c equals zero, taking the positive root. The discipline that earns marks, always check the assumption after you use it, not before. Calculate x, then work out x over c times a hundred. If that's five percent or more, the shortcut wasn't valid, so go back and use the quadratic. Writing assumption valid without actually checking is a methodology error."
+        "text": "Solving x squared over c minus x exactly needs the quadratic formula, but there's a shortcut that works most of the time. If only a little acid ionises, then c minus x is almost the same as c, so Ka becomes roughly x squared over c, and x is just the square root of Ka times c. One clean step. The shortcut is valid when Ka divided by c is below nought-point-zero-zero-two-five, which is the same as saying less than five percent of the acid ionises. If that fails, you solve the full quadratic, x squared plus Ka x minus Ka c equals zero, taking the positive root. The discipline that earns marks, always check the assumption after you use it, not before. Calculate x, then work out x over c times a hundred. If that's five percent or more, the shortcut wasn't valid, so go back and use the quadratic. Writing assumption valid without actually checking is a methodology error.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L9/concept-assumption.f57fc4a273b8.mp3"
       }
     },
     {
@@ -99,16 +134,25 @@
       "type": "definition",
       "heading": "The terms you need",
       "bullets": [
-        {"text": "Ka: the acid constant, [H⁺][A⁻]/[HA]; bigger Ka means a stronger acid."},
-        {"text": "Kb: the base constant, [BH⁺][OH⁻]/[B]."},
-        {"text": "ICE table: tracks Initial, Change and Equilibrium concentrations."},
-        {"text": "Conjugate link: Ka × Kb = Kw = 1.0 × 10⁻¹⁴ at 25 °C."}
+        {
+          "text": "Ka: the acid constant, [H⁺][A⁻]/[HA]; bigger Ka means a stronger acid."
+        },
+        {
+          "text": "Kb: the base constant, [BH⁺][OH⁻]/[B]."
+        },
+        {
+          "text": "ICE table: tracks Initial, Change and Equilibrium concentrations."
+        },
+        {
+          "text": "Conjugate link: Ka × Kb = Kw = 1.0 × 10⁻¹⁴ at 25 °C."
+        }
       ],
       "callout": "Ka × Kb = Kw only for a genuine conjugate pair, not any acid and base.",
       "durationInFrames": 1020,
       "caption": "Ka, Kb, ICE table, and Ka × Kb = Kw for a conjugate pair.",
       "voiceover": {
-        "text": "Quick vocabulary. Ka is the acid dissociation constant, hydrogen ion times conjugate base over the un-ionised acid, and a bigger Ka means a stronger acid. Kb is the base dissociation constant, the protonated base times hydroxide over the base. The ICE table, as we said, tracks Initial, Change, and Equilibrium concentrations. And there's a beautiful link for a conjugate pair, Ka times Kb equals Kw, which is one times ten to the minus fourteen at twenty-five degrees. So if you know the Ka of an acid, you instantly get the Kb of its conjugate base by dividing Kw by Ka. One warning, that relationship only holds for a true conjugate pair, the acid and its own conjugate base, not for any random acid and base you happen to pick."
+        "text": "Quick vocabulary. Ka is the acid dissociation constant, hydrogen ion times conjugate base over the un-ionised acid, and a bigger Ka means a stronger acid. Kb is the base dissociation constant, the protonated base times hydroxide over the base. The ICE table, as we said, tracks Initial, Change, and Equilibrium concentrations. And there's a beautiful link for a conjugate pair, Ka times Kb equals Kw, which is one times ten to the minus fourteen at twenty-five degrees. So if you know the Ka of an acid, you instantly get the Kb of its conjugate base by dividing Kw by Ka. One warning, that relationship only holds for a true conjugate pair, the acid and its own conjugate base, not for any random acid and base you happen to pick.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L9/definition.257bc87f7915.mp3"
       }
     },
     {
@@ -117,16 +161,23 @@
       "heading": "Weak bases run the same way",
       "body": "A weak base uses an identical ICE table, just with OH⁻ and Kb, then converts through pOH.",
       "bullets": [
-        {"text": "B + H₂O ⇌ BH⁺ + OH⁻, with Kb = [BH⁺][OH⁻]/[B]."},
-        {"text": "If Kb/c < 0.0025, then [OH⁻] = √(Kb × c)."},
-        {"text": "Finish via pOH = −log[OH⁻], then pH = 14 − pOH."}
+        {
+          "text": "B + H₂O ⇌ BH⁺ + OH⁻, with Kb = [BH⁺][OH⁻]/[B]."
+        },
+        {
+          "text": "If Kb/c < 0.0025, then [OH⁻] = √(Kb × c)."
+        },
+        {
+          "text": "Finish via pOH = −log[OH⁻], then pH = 14 − pOH."
+        }
       ],
       "secondary": "For a conjugate base like acetate, get Kb from Kw ÷ Ka first. Acetate's Kb is 5.6 × 10⁻¹⁰, so its solution is only mildly basic.",
       "callout": "Never write pH = −log[OH⁻]; that gives an acidic answer for a base.",
       "durationInFrames": 1140,
       "caption": "Weak base: [OH⁻] = √(Kb × c), then pOH, then pH = 14 − pOH.",
       "voiceover": {
-        "text": "Weak bases work exactly the same way, with three small swaps. The equilibrium is base plus water in balance with the protonated base plus hydroxide, and the constant is Kb. If Kb over c is below nought-point-zero-zero-two-five, then hydroxide concentration is the square root of Kb times c. The only extra step is the finish, because you've found hydroxide, not hydronium, so take pOH as minus the log of hydroxide, then convert with pH equals fourteen minus pOH. If your base is a conjugate base, like the acetate ion, first get its Kb from Kw divided by the parent acid's Ka. For acetate that's about five-point-six times ten to the minus ten, which is tiny, so a sodium acetate solution comes out only mildly basic. And the recurring trap, never write pH equals minus the log of hydroxide directly, because that hands you an acidic number for a base."
+        "text": "Weak bases work exactly the same way, with three small swaps. The equilibrium is base plus water in balance with the protonated base plus hydroxide, and the constant is Kb. If Kb over c is below nought-point-zero-zero-two-five, then hydroxide concentration is the square root of Kb times c. The only extra step is the finish, because you've found hydroxide, not hydronium, so take pOH as minus the log of hydroxide, then convert with pH equals fourteen minus pOH. If your base is a conjugate base, like the acetate ion, first get its Kb from Kw divided by the parent acid's Ka. For acetate that's about five-point-six times ten to the minus ten, which is tiny, so a sodium acetate solution comes out only mildly basic. And the recurring trap, never write pH equals minus the log of hydroxide directly, because that hands you an acidic number for a base.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L9/concept-base.a91cd56f0a9b.mp3"
       }
     },
     {
@@ -145,7 +196,8 @@
       "durationInFrames": 1350,
       "caption": "x = √(Ka × c) = 2.12 × 10⁻³ mol L⁻¹; pH = 2.67.",
       "voiceover": {
-        "text": "Let's calculate one. Find the pH of nought-point-two-five molar acetic acid, with a Ka of one-point-eight times ten to the minus five. Step one, pre-check, Ka over c is one-point-eight times ten to the minus five over nought-point-two-five, about seven times ten to the minus five, which is well below nought-point-zero-zero-two-five, so the shortcut should be fine. Step two, x equals the square root of Ka times c, the square root of one-point-eight times ten to the minus five times nought-point-two-five, which is the square root of four-point-five times ten to the minus six, giving two-point-one-two times ten to the minus three. Step three, verify, that's nought-point-eight-five percent ionised, comfortably under five, so the assumption holds. Step four, pH is minus the log of two-point-one-two times ten to the minus three, which is two-point-six-seven. Notice if you'd wrongly treated it as a strong acid, you'd have got pH nought-point-six. Treating weak as strong is a huge error."
+        "text": "Let's calculate one. Find the pH of nought-point-two-five molar acetic acid, with a Ka of one-point-eight times ten to the minus five. Step one, pre-check, Ka over c is one-point-eight times ten to the minus five over nought-point-two-five, about seven times ten to the minus five, which is well below nought-point-zero-zero-two-five, so the shortcut should be fine. Step two, x equals the square root of Ka times c, the square root of one-point-eight times ten to the minus five times nought-point-two-five, which is the square root of four-point-five times ten to the minus six, giving two-point-one-two times ten to the minus three. Step three, verify, that's nought-point-eight-five percent ionised, comfortably under five, so the assumption holds. Step four, pH is minus the log of two-point-one-two times ten to the minus three, which is two-point-six-seven. Notice if you'd wrongly treated it as a strong acid, you'd have got pH nought-point-six. Treating weak as strong is a huge error.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L9/worked-example.6807e197f937.mp3"
       }
     },
     {
@@ -164,7 +216,8 @@
       "durationInFrames": 1410,
       "caption": "Acetate Kb = 5.6×10⁻¹⁰ → NaOAc pH 9.07; from pH 2.87, Ka ≈ 1.8×10⁻⁵.",
       "voiceover": {
-        "text": "Now two related moves. Part a, the conjugate base. The acetate ion's Kb is Kw divided by the acid's Ka, one times ten to the minus fourteen over one-point-eight times ten to the minus five, which is five-point-six times ten to the minus ten. Then run the base route, hydroxide is the square root of Kb times c, about one-point-one-eight times ten to the minus five, the pOH is four-point-nine-three, and pH is fourteen minus that, nine-point-zero-seven. So sodium acetate is basic, exactly what salt hydrolysis predicted. Part b, going backwards from a measured pH. A nought-point-one molar weak acid reads pH two-point-eight-seven, so hydrogen ion is ten to the minus two-point-eight-seven, which is one-point-three-five times ten to the minus three. Then Ka is hydrogen ion squared over c minus hydrogen ion. Use c minus hydrogen ion in the denominator, not just c. That returns Ka of about one-point-eight times ten to the minus five, which is acetic acid."
+        "text": "Now two related moves. Part a, the conjugate base. The acetate ion's Kb is Kw divided by the acid's Ka, one times ten to the minus fourteen over one-point-eight times ten to the minus five, which is five-point-six times ten to the minus ten. Then run the base route, hydroxide is the square root of Kb times c, about one-point-one-eight times ten to the minus five, the pOH is four-point-nine-three, and pH is fourteen minus that, nine-point-zero-seven. So sodium acetate is basic, exactly what salt hydrolysis predicted. Part b, going backwards from a measured pH. A nought-point-one molar weak acid reads pH two-point-eight-seven, so hydrogen ion is ten to the minus two-point-eight-seven, which is one-point-three-five times ten to the minus three. Then Ka is hydrogen ion squared over c minus hydrogen ion. Use c minus hydrogen ion in the denominator, not just c. That returns Ka of about one-point-eight times ten to the minus five, which is acetic acid.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L9/worked-example-2.5dae26e5d814.mp3"
       }
     },
     {
@@ -178,7 +231,8 @@
       "durationInFrames": 1230,
       "caption": "Don't treat weak as strong; verify the 5% rule; pH = pKa only at half-equivalence.",
       "voiceover": {
-        "text": "Three traps. Trap one, using hydrogen ion equals concentration for a weak acid. It's only partly ionised, so you must solve the ICE table, or you'll overstate the acidity wildly. Trap two, skipping the five percent check, or only checking it beforehand. The honest way is to calculate x, then verify x over c times a hundred is under five percent, and if it isn't, use the quadratic. A common case is a dilute solution, where even a smallish Ka can fail the rule. Trap three, claiming pH equals pKa for any weak acid solution. That's only true at one special spot, the half-equivalence point of a titration, where the conjugate base concentration equals the acid concentration. For a plain weak acid solution, the pH is well below pKa, so don't confuse the two."
+        "text": "Three traps. Trap one, using hydrogen ion equals concentration for a weak acid. It's only partly ionised, so you must solve the ICE table, or you'll overstate the acidity wildly. Trap two, skipping the five percent check, or only checking it beforehand. The honest way is to calculate x, then verify x over c times a hundred is under five percent, and if it isn't, use the quadratic. A common case is a dilute solution, where even a smallish Ka can fail the rule. Trap three, claiming pH equals pKa for any weak acid solution. That's only true at one special spot, the half-equivalence point of a titration, where the conjugate base concentration equals the acid concentration. For a plain weak acid solution, the pH is well below pKa, so don't confuse the two.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L9/misconception.0a1c69686083.mp3"
       }
     },
     {
@@ -197,7 +251,8 @@
       "durationInFrames": 1110,
       "caption": "0.100 M acetic acid: x = 1.34 × 10⁻³, so pH = 2.87.",
       "voiceover": {
-        "text": "Quick check, the classic one. Find the pH of nought-point-one molar acetic acid, Ka one-point-eight times ten to the minus five. Pause and work it through. Right, let's check it. Step one, Ka over c is one-point-eight times ten to the minus four, below the threshold, so the square root shortcut is fine. Step two, x is the square root of Ka times c, the square root of one-point-eight times ten to the minus six, which is one-point-three-four times ten to the minus three. Step three, verify, that's one-point-three percent ionised, well under five, so it's valid. Step four, pH is minus the log of one-point-three-four times ten to the minus three, which is two-point-eight-seven. If you'd wrongly treated it as strong, you'd have said pH one. The gap between two-point-eight-seven and one is the whole reason weak acids get their own method."
+        "text": "Quick check, the classic one. Find the pH of nought-point-one molar acetic acid, Ka one-point-eight times ten to the minus five. Pause and work it through. Right, let's check it. Step one, Ka over c is one-point-eight times ten to the minus four, below the threshold, so the square root shortcut is fine. Step two, x is the square root of Ka times c, the square root of one-point-eight times ten to the minus six, which is one-point-three-four times ten to the minus three. Step three, verify, that's one-point-three percent ionised, well under five, so it's valid. Step four, pH is minus the log of one-point-three-four times ten to the minus three, which is two-point-eight-seven. If you'd wrongly treated it as strong, you'd have said pH one. The gap between two-point-eight-seven and one is the whole reason weak acids get their own method.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L9/quick-check.05e0532245dd.mp3"
       }
     },
     {
@@ -215,7 +270,8 @@
       "durationInFrames": 1140,
       "caption": "Five takeaways: ICE table, the square-root shortcut, the 5% check, the base route, Ka from pH.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, weak acids need an ICE table, giving Ka equals x squared over c minus x, where x is the hydrogen ion concentration. Second, the shortcut, x equals the square root of Ka times c, is valid when Ka over c is below nought-point-zero-zero-two-five, meaning under five percent ionises. Third, always verify that five percent rule after calculating, and switch to the quadratic if it fails. Fourth, weak bases run the same way with Kb, giving hydroxide as the square root of Kb times c, then pH equals fourteen minus pOH, and you get Kb from Kw over Ka. And fifth, to find Ka from a measured pH, use hydrogen ion squared over c minus hydrogen ion. Next lesson, we compare the enthalpy of neutralisation for strong and weak acids, tying these ideas back to energy. See you there."
+        "text": "Let's lock it in. Five things to take away. First, weak acids need an ICE table, giving Ka equals x squared over c minus x, where x is the hydrogen ion concentration. Second, the shortcut, x equals the square root of Ka times c, is valid when Ka over c is below nought-point-zero-zero-two-five, meaning under five percent ionises. Third, always verify that five percent rule after calculating, and switch to the quadratic if it fails. Fourth, weak bases run the same way with Kb, giving hydroxide as the square root of Kb times c, then pH equals fourteen minus pOH, and you get Kb from Kw over Ka. And fifth, to find Ka from a measured pH, use hydrogen ion squared over c minus hydrogen ion. Next lesson, we compare the enthalpy of neutralisation for strong and weak acids, tying these ideas back to energy. See you there.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L9/summary.7d00aede20d0.mp3"
       }
     }
   ]

@@ -11,7 +11,13 @@
     "derive equilibrium expressions for saturated solutions in terms of Ksp and calculate the solubility of an ionic substance from its Ksp value"
   ],
   "moduleLessonCount": 18,
-  "nesaOutcomes": ["CH12-12", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-12",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "How does solubility relate to chemical equilibrium?",
   "lessonIntent": "Students can write Ksp expressions for saturated solutions, convert between Ksp and molar solubility for different formula types, and compare solubilities correctly.",
   "examSkill": "Set up the ICE expression with the stoichiometric coefficient inside the bracket, derive Ksp = s² / 4s³ / 27s⁴ by formula type, and compare solubility by computing s, not Ksp.",
@@ -41,7 +47,8 @@
       "durationInFrames": 690,
       "caption": "Ksp quantifies the tiny solubility of so-called insoluble salts.",
       "voiceover": {
-        "text": "OK, last lesson we sorted compounds into two boxes, soluble and insoluble. But that's a simplification, and today we make it precise. The truth is, nothing is perfectly insoluble. Even silver chloride, which we happily called insoluble, does dissolve, just a vanishingly small amount. So how do we put a number on that tiny solubility? With the solubility product, Ksp. It's just the equilibrium constant for a solid dissolving, and it lets us say exactly how much of a so-called insoluble salt will dissolve before the solution is saturated. Once you have Ksp, you can calculate the actual molar solubility, and even compare two salts to see which one dissolves more. The one warning I'll give up front, comparing solubilities is sneakier than it looks, and there's a famous trap waiting at the end of this lesson."
+        "text": "OK, last lesson we sorted compounds into two boxes, soluble and insoluble. But that's a simplification, and today we make it precise. The truth is, nothing is perfectly insoluble. Even silver chloride, which we happily called insoluble, does dissolve, just a vanishingly small amount. So how do we put a number on that tiny solubility? With the solubility product, Ksp. It's just the equilibrium constant for a solid dissolving, and it lets us say exactly how much of a so-called insoluble salt will dissolve before the solution is saturated. Once you have Ksp, you can calculate the actual molar solubility, and even compare two salts to see which one dissolves more. The one warning I'll give up front, comparing solubilities is sneakier than it looks, and there's a famous trap waiting at the end of this lesson.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L17/hook.f18a5a42f342.mp3"
       }
     },
     {
@@ -51,25 +58,48 @@
       "body": "For a saturated solution, Ksp is the product of the ion concentrations, each raised to its coefficient. The solid is left out.",
       "diagram": {
         "type": "table",
-        "headers": ["Formula type", "Example", "Ksp in terms of s"],
+        "headers": [
+          "Formula type",
+          "Example",
+          "Ksp in terms of s"
+        ],
         "rows": [
-          ["AB (1:1)", "AgCl", "Ksp = s²"],
-          ["AB₂ or A₂B (1:2)", "CaF₂", "Ksp = 4s³"],
-          ["AB₃ or A₃B (1:3)", "Fe(OH)₃", "Ksp = 27s⁴"]
+          [
+            "AB (1:1)",
+            "AgCl",
+            "Ksp = s²"
+          ],
+          [
+            "AB₂ or A₂B (1:2)",
+            "CaF₂",
+            "Ksp = 4s³"
+          ],
+          [
+            "AB₃ or A₃B (1:3)",
+            "Fe(OH)₃",
+            "Ksp = 27s⁴"
+          ]
         ],
         "delay": 20
       },
       "bullets": [
-        {"text": "For MX(s) ⇌ M⁺ + X⁻, Ksp = [M⁺][X⁻], no denominator."},
-        {"text": "The solid is excluded, exactly as in any Keq."},
-        {"text": "Coefficients become powers, and also multiply s inside the bracket."}
+        {
+          "text": "For MX(s) ⇌ M⁺ + X⁻, Ksp = [M⁺][X⁻], no denominator."
+        },
+        {
+          "text": "The solid is excluded, exactly as in any Keq."
+        },
+        {
+          "text": "Coefficients become powers, and also multiply s inside the bracket."
+        }
       ],
       "secondary": "AB salts give Ksp = s². A one-to-two salt like CaF₂ has [F⁻] = 2s, so Ksp = s(2s)² = 4s³. A one-to-three salt gives Ksp = 27s⁴.",
       "callout": "Solid excluded; coefficients become both powers and multipliers of s.",
       "durationInFrames": 1200,
       "caption": "Ksp = s² (AB), 4s³ (AB₂), 27s⁴ (AB₃); the solid is excluded.",
       "voiceover": {
-        "text": "Let's build the expression. When a solid salt sits in a saturated solution, there's an equilibrium between the solid and its dissolved ions, and Ksp is just the equilibrium constant for that. Following the usual Keq rules, products over reactants, but the solid is excluded, just like a pure liquid is. So for a simple salt, M X dissolving into M plus and X minus, Ksp is simply the metal ion concentration times the non-metal ion concentration, with no denominator. Now the part that takes practice, relating Ksp to the molar solubility, which we call s, the moles per litre that dissolve. For a one-to-one salt like silver chloride, both ions equal s, so Ksp is s squared. For a one-to-two salt like calcium fluoride, every formula unit releases one calcium and two fluorides, so fluoride is two s. The coefficient does two jobs, it multiplies s inside the bracket, and it becomes the power. So Ksp is s times two s squared, which is four s cubed. And a one-to-three salt works out to twenty-seven s to the fourth."
+        "text": "Let's build the expression. When a solid salt sits in a saturated solution, there's an equilibrium between the solid and its dissolved ions, and Ksp is just the equilibrium constant for that. Following the usual Keq rules, products over reactants, but the solid is excluded, just like a pure liquid is. So for a simple salt, M X dissolving into M plus and X minus, Ksp is simply the metal ion concentration times the non-metal ion concentration, with no denominator. Now the part that takes practice, relating Ksp to the molar solubility, which we call s, the moles per litre that dissolve. For a one-to-one salt like silver chloride, both ions equal s, so Ksp is s squared. For a one-to-two salt like calcium fluoride, every formula unit releases one calcium and two fluorides, so fluoride is two s. The coefficient does two jobs, it multiplies s inside the bracket, and it becomes the power. So Ksp is s times two s squared, which is four s cubed. And a one-to-three salt works out to twenty-seven s to the fourth.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L17/concept-expression.0cd97e11df52.mp3"
       }
     },
     {
@@ -78,16 +108,23 @@
       "heading": "From Ksp to molar solubility",
       "body": "Set up an ICE-style expression with s, then solve for s. The key is putting the coefficient inside the bracket before you square.",
       "bullets": [
-        {"text": "Let [cation] = s and [anion] = (coefficient × s)."},
-        {"text": "Substitute into Ksp and solve for s, the molar solubility."},
-        {"text": "AgCl: s = √Ksp. CaF₂: s = ∛(Ksp ÷ 4)."}
+        {
+          "text": "Let [cation] = s and [anion] = (coefficient × s)."
+        },
+        {
+          "text": "Substitute into Ksp and solve for s, the molar solubility."
+        },
+        {
+          "text": "AgCl: s = √Ksp. CaF₂: s = ∛(Ksp ÷ 4)."
+        }
       ],
       "secondary": "The single most common error is forgetting to put the coefficient inside the bracket before squaring. For CaF₂ it must be (2s)² = 4s², not 2s². That one slip throws the answer off badly.",
       "callout": "Coefficient goes inside the bracket, then square. Always.",
       "durationInFrames": 1170,
       "caption": "Molar solubility: [anion] = coefficient × s, inside the bracket, then solve.",
       "voiceover": {
-        "text": "Now let's go the other way, from a given Ksp to the actual molar solubility. Set it up like an ICE problem. The solid dissolves, and you let the molar solubility be s. Then write each ion concentration in terms of s, using the stoichiometry. The cation is s, and the anion is its coefficient times s. Substitute into the Ksp expression and solve for s. For silver chloride, Ksp equals s squared, so s is just the square root of Ksp, clean. For calcium fluoride, fluoride is two s, so Ksp equals s times the quantity two s squared, which is four s cubed, and s is the cube root of Ksp over four. Here's where students lose marks, and it's worth burning in. You must put the coefficient inside the bracket before you square. For calcium fluoride that's two s, all squared, which is four s squared, not just two s squared. Forget that factor and your answer is wrong by a noticeable amount. Coefficient inside the bracket, then apply the power."
+        "text": "Now let's go the other way, from a given Ksp to the actual molar solubility. Set it up like an ICE problem. The solid dissolves, and you let the molar solubility be s. Then write each ion concentration in terms of s, using the stoichiometry. The cation is s, and the anion is its coefficient times s. Substitute into the Ksp expression and solve for s. For silver chloride, Ksp equals s squared, so s is just the square root of Ksp, clean. For calcium fluoride, fluoride is two s, so Ksp equals s times the quantity two s squared, which is four s cubed, and s is the cube root of Ksp over four. Here's where students lose marks, and it's worth burning in. You must put the coefficient inside the bracket before you square. For calcium fluoride that's two s, all squared, which is four s squared, not just two s squared. Forget that factor and your answer is wrong by a noticeable amount. Coefficient inside the bracket, then apply the power.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L17/concept-solubility.40b1fc8e974f.mp3"
       }
     },
     {
@@ -112,7 +149,8 @@
       "durationInFrames": 1620,
       "caption": "Mg(OH)₂: Ksp = 4s³ → s³ = 1.4×10⁻¹² → s = 1.1×10⁻⁴ mol L⁻¹.",
       "voiceover": {
-        "text": "Let's calculate a real molar solubility. Magnesium hydroxide, the active ingredient in milk of magnesia, with Ksp five-point-six times ten to the minus twelve. First, the dissolution equation, solid magnesium hydroxide gives one magnesium two plus and two hydroxide ions. So the Ksp expression is magnesium ion times hydroxide ion squared, the two becoming a power. Now let the molar solubility be s. Each formula unit gives one magnesium, so magnesium is s, and two hydroxides, so hydroxide is two s. Substitute. Ksp equals s times the quantity two s, squared. And here's the critical move, two s squared is four s squared, the two is inside the bracket. So Ksp equals s times four s squared, which is four s cubed. Set that equal to five-point-six times ten to the minus twelve. Divide both sides by four, s cubed is one-point-four times ten to the minus twelve. Take the cube root, and s is one-point-one times ten to the minus four moles per litre. That's the molar solubility. If you'd forgotten the factor of four, you'd have got a meaningfully wrong number."
+        "text": "Let's calculate a real molar solubility. Magnesium hydroxide, the active ingredient in milk of magnesia, with Ksp five-point-six times ten to the minus twelve. First, the dissolution equation, solid magnesium hydroxide gives one magnesium two plus and two hydroxide ions. So the Ksp expression is magnesium ion times hydroxide ion squared, the two becoming a power. Now let the molar solubility be s. Each formula unit gives one magnesium, so magnesium is s, and two hydroxides, so hydroxide is two s. Substitute. Ksp equals s times the quantity two s, squared. And here's the critical move, two s squared is four s squared, the two is inside the bracket. So Ksp equals s times four s squared, which is four s cubed. Set that equal to five-point-six times ten to the minus twelve. Divide both sides by four, s cubed is one-point-four times ten to the minus twelve. Take the cube root, and s is one-point-one times ten to the minus four moles per litre. That's the molar solubility. If you'd forgotten the factor of four, you'd have got a meaningfully wrong number.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L17/worked-example.256cbfbfea90.mp3"
       }
     },
     {
@@ -126,7 +164,8 @@
       "durationInFrames": 1290,
       "caption": "CaF₂ (smaller Ksp) is MORE soluble than AgCl: compare s, not Ksp.",
       "voiceover": {
-        "text": "Here's the most commonly tested trap in this whole topic, so slow down for it. Students see two Ksp values and assume the smaller one means less soluble. Sometimes that's fine, but only when both salts have the same formula type. Watch what happens when they don't. Calcium fluoride has a Ksp of three-point-nine times ten to the minus eleven. Silver chloride has a Ksp of one-point-eight times ten to the minus ten. Calcium fluoride's Ksp is smaller, so the naive conclusion is that it's less soluble. But it's actually the reverse. Let's compute the real solubilities. Silver chloride is a one-to-one salt, so s is the square root of Ksp, about one-point-three times ten to the minus five. Calcium fluoride is a one-to-two salt, so s is the cube root of Ksp over four, which comes out at two-point-one times ten to the minus four. That's more than ten times bigger. So calcium fluoride is genuinely more soluble, despite the smaller Ksp, because its different formula relates Ksp to s differently. The rule, only compare Ksp directly within the same formula type. Otherwise, calculate s and compare those."
+        "text": "Here's the most commonly tested trap in this whole topic, so slow down for it. Students see two Ksp values and assume the smaller one means less soluble. Sometimes that's fine, but only when both salts have the same formula type. Watch what happens when they don't. Calcium fluoride has a Ksp of three-point-nine times ten to the minus eleven. Silver chloride has a Ksp of one-point-eight times ten to the minus ten. Calcium fluoride's Ksp is smaller, so the naive conclusion is that it's less soluble. But it's actually the reverse. Let's compute the real solubilities. Silver chloride is a one-to-one salt, so s is the square root of Ksp, about one-point-three times ten to the minus five. Calcium fluoride is a one-to-two salt, so s is the cube root of Ksp over four, which comes out at two-point-one times ten to the minus four. That's more than ten times bigger. So calcium fluoride is genuinely more soluble, despite the smaller Ksp, because its different formula relates Ksp to s differently. The rule, only compare Ksp directly within the same formula type. Otherwise, calculate s and compare those.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L17/misconception.4b0bb89b2d5e.mp3"
       }
     },
     {
@@ -144,7 +183,8 @@
       "durationInFrames": 1290,
       "caption": "AgCl (1:1): Ksp = s² = (1.3×10⁻⁵)² = 1.7×10⁻¹⁰.",
       "voiceover": {
-        "text": "Your turn, and this one goes from solubility back to Ksp. The molar solubility of silver chloride is one-point-three times ten to the minus five moles per litre. Write the dissolution equation and Ksp expression, then calculate Ksp. Pause and try it. Right. Silver chloride solid dissolves into one silver ion and one chloride ion, a one-to-one salt. So the Ksp expression is just silver ion times chloride ion, no powers, no denominator. Because it's one-to-one, each ion concentration equals the molar solubility, so both are one-point-three times ten to the minus five. Ksp is their product, which is s squared, one-point-three times ten to the minus five, all squared. Squaring the number gives one-point-seven, and squaring the powers of ten gives ten to the minus ten. So Ksp is one-point-seven times ten to the minus ten. Nice and direct for a one-to-one salt, just square the solubility."
+        "text": "Your turn, and this one goes from solubility back to Ksp. The molar solubility of silver chloride is one-point-three times ten to the minus five moles per litre. Write the dissolution equation and Ksp expression, then calculate Ksp. Pause and try it. Right. Silver chloride solid dissolves into one silver ion and one chloride ion, a one-to-one salt. So the Ksp expression is just silver ion times chloride ion, no powers, no denominator. Because it's one-to-one, each ion concentration equals the molar solubility, so both are one-point-three times ten to the minus five. Ksp is their product, which is s squared, one-point-three times ten to the minus five, all squared. Squaring the number gives one-point-seven, and squaring the powers of ten gives ten to the minus ten. So Ksp is one-point-seven times ten to the minus ten. Nice and direct for a one-to-one salt, just square the solubility.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L17/quick-check.6f062bf8d076.mp3"
       }
     },
     {
@@ -162,7 +202,8 @@
       "durationInFrames": 1200,
       "caption": "Five takeaways: Ksp form, s-relations, bracket the coefficient, compare s.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, Ksp is just the equilibrium constant for a solid dissolving, with the solid left out of the expression. Second, the formula type sets the algebra, a one-to-one salt gives Ksp equals s squared, a one-to-two salt gives four s cubed, and a one-to-three salt gives twenty-seven s to the fourth. Third, the coefficient must go inside the bracket before you apply the power, that's where marks are won and lost. Fourth, going from Ksp to solubility, a one-to-one salt is the square root of Ksp, calcium fluoride is the cube root of Ksp over four. And fifth, the big trap, you can only compare Ksp values directly when the salts share a formula type, otherwise you must calculate the actual solubility s and compare that. Next lesson, we use Ksp to predict precipitation with Qsp, and meet the common ion effect. See you there."
+        "text": "Let's lock it in. Five things to take away. First, Ksp is just the equilibrium constant for a solid dissolving, with the solid left out of the expression. Second, the formula type sets the algebra, a one-to-one salt gives Ksp equals s squared, a one-to-two salt gives four s cubed, and a one-to-three salt gives twenty-seven s to the fourth. Third, the coefficient must go inside the bracket before you apply the power, that's where marks are won and lost. Fourth, going from Ksp to solubility, a one-to-one salt is the square root of Ksp, calcium fluoride is the cube root of Ksp over four. And fifth, the big trap, you can only compare Ksp values directly when the salts share a formula type, otherwise you must calculate the actual solubility s and compare that. Next lesson, we use Ksp to predict precipitation with Qsp, and meet the common ion effect. See you there.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L17/summary.ba1d71d321b8.mp3"
       }
     }
   ]

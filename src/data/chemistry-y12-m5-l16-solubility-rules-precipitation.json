@@ -11,7 +11,13 @@
     "conduct an investigation to determine solubility rules, and predict and analyse the composition of substances when two ionic solutions are mixed"
   ],
   "moduleLessonCount": 18,
-  "nesaOutcomes": ["CH12-12", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-12",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "How does solubility relate to chemical equilibrium?",
   "lessonIntent": "Students can apply the solubility rules to predict whether mixing two solutions forms a precipitate, and write balanced molecular, full ionic and net ionic equations.",
   "examSkill": "Use the NAGSAG solubility rules to identify the precipitate, then derive the net ionic equation by splitting only aqueous species and cancelling spectator ions.",
@@ -41,7 +47,8 @@
       "durationInFrames": 690,
       "caption": "Mixing two clear ionic solutions can produce a precipitate, predictably.",
       "voiceover": {
-        "text": "OK, here's one of the most satisfying demonstrations in chemistry. You take two perfectly clear, colourless solutions, pour one into the other, and instantly a solid forms and clouds the mixture. It looks like magic, but it's completely predictable, if you know the solubility rules. That solid is called a precipitate, and it forms when two ions that can't coexist in solution find each other and lock together into an insoluble compound. Today you'll learn the rules that tell you, in advance, exactly which combinations will produce a precipitate and which won't. Then you'll learn to write the net ionic equation, the cleanest possible description of what actually happened, stripping away every ion that just watched from the sidelines."
+        "text": "OK, here's one of the most satisfying demonstrations in chemistry. You take two perfectly clear, colourless solutions, pour one into the other, and instantly a solid forms and clouds the mixture. It looks like magic, but it's completely predictable, if you know the solubility rules. That solid is called a precipitate, and it forms when two ions that can't coexist in solution find each other and lock together into an insoluble compound. Today you'll learn the rules that tell you, in advance, exactly which combinations will produce a precipitate and which won't. Then you'll learn to write the net ionic equation, the cleanest possible description of what actually happened, stripping away every ion that just watched from the sidelines.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L16/hook.aedea81b8a5a.mp3"
       }
     },
     {
@@ -51,25 +58,48 @@
       "body": "A short, ordered set of rules tells you whether a given ionic compound dissolves or stays solid.",
       "diagram": {
         "type": "table",
-        "headers": ["Always soluble", "Soluble (exceptions)", "Generally insoluble"],
+        "headers": [
+          "Always soluble",
+          "Soluble (exceptions)",
+          "Generally insoluble"
+        ],
         "rows": [
-          ["Nitrates (NO₃⁻)", "Sulfates: not Ba²⁺, Pb²⁺", "Carbonates (CO₃²⁻)"],
-          ["Ammonium (NH₄⁺)", "Halides: not Ag⁺, Pb²⁺", "Phosphates (PO₄³⁻)"],
-          ["Group 1 metals", "Acetates soluble", "Hydroxides, sulfides"]
+          [
+            "Nitrates (NO₃⁻)",
+            "Sulfates: not Ba²⁺, Pb²⁺",
+            "Carbonates (CO₃²⁻)"
+          ],
+          [
+            "Ammonium (NH₄⁺)",
+            "Halides: not Ag⁺, Pb²⁺",
+            "Phosphates (PO₄³⁻)"
+          ],
+          [
+            "Group 1 metals",
+            "Acetates soluble",
+            "Hydroxides, sulfides"
+          ]
         ],
         "delay": 20
       },
       "bullets": [
-        {"text": "Always soluble: nitrates, ammonium, and Group 1 salts, no exceptions."},
-        {"text": "Mostly soluble: sulfates (not Ba²⁺, Pb²⁺) and halides (not Ag⁺, Pb²⁺)."},
-        {"text": "Generally insoluble: carbonates, phosphates, hydroxides, sulfides."}
+        {
+          "text": "Always soluble: nitrates, ammonium, and Group 1 salts, no exceptions."
+        },
+        {
+          "text": "Mostly soluble: sulfates (not Ba²⁺, Pb²⁺) and halides (not Ag⁺, Pb²⁺)."
+        },
+        {
+          "text": "Generally insoluble: carbonates, phosphates, hydroxides, sulfides."
+        }
       ],
       "secondary": "The always-soluble rules win every clash. If a compound contains nitrate, ammonium or a Group 1 metal, it stays dissolved no matter what the other ion is.",
       "callout": "Nitrates, ammonium and Group 1 override everything else.",
       "durationInFrames": 1200,
       "caption": "NAGSAG: nitrates/ammonium/Group 1 always soluble; carbonates/phosphates/hydroxides not.",
       "voiceover": {
-        "text": "Let's learn the rules, and there's a handy memory hook, NAGSAG. The top tier, the always-soluble ions, no exceptions. Nitrates, that's the N. Ammonium, the A. And Group one metals like sodium and potassium, the G. If a compound contains any of those three, it dissolves, full stop, whatever it's paired with. The middle tier, mostly soluble with a few important exceptions. Sulfates are generally soluble, except with barium and lead. Halides, the chlorides, bromides and iodides, are generally soluble, except with silver and lead. The bottom tier, generally insoluble, these are your usual precipitates, carbonates, phosphates, hydroxides, and sulfides, unless of course they're paired with one of the always-soluble ions from the top tier. And that's the key to resolving any clash, the top tier always wins. Sodium carbonate is soluble, because sodium is Group one, even though carbonates are usually insoluble."
+        "text": "Let's learn the rules, and there's a handy memory hook, NAGSAG. The top tier, the always-soluble ions, no exceptions. Nitrates, that's the N. Ammonium, the A. And Group one metals like sodium and potassium, the G. If a compound contains any of those three, it dissolves, full stop, whatever it's paired with. The middle tier, mostly soluble with a few important exceptions. Sulfates are generally soluble, except with barium and lead. Halides, the chlorides, bromides and iodides, are generally soluble, except with silver and lead. The bottom tier, generally insoluble, these are your usual precipitates, carbonates, phosphates, hydroxides, and sulfides, unless of course they're paired with one of the always-soluble ions from the top tier. And that's the key to resolving any clash, the top tier always wins. Sodium carbonate is soluble, because sodium is Group one, even though carbonates are usually insoluble.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L16/concept-rules.83c45ad4c962.mp3"
       }
     },
     {
@@ -78,16 +108,23 @@
       "heading": "From molecular to net ionic",
       "body": "Once you know the precipitate, write three equations, peeling away the ions that don't actually react.",
       "bullets": [
-        {"text": "Molecular: balanced equation with state symbols."},
-        {"text": "Full ionic: split every aqueous compound into its ions."},
-        {"text": "Net ionic: cancel the spectator ions that appear on both sides."}
+        {
+          "text": "Molecular: balanced equation with state symbols."
+        },
+        {
+          "text": "Full ionic: split every aqueous compound into its ions."
+        },
+        {
+          "text": "Net ionic: cancel the spectator ions that appear on both sides."
+        }
       ],
       "secondary": "Never split the precipitate. It's an insoluble solid, so it stays as one formula with the (s) label. Only species marked (aq) get separated into ions.",
       "callout": "Split the aqueous ions; keep the solid precipitate whole.",
       "durationInFrames": 1170,
       "caption": "Molecular → full ionic (split aqueous) → net ionic (cancel spectators).",
       "voiceover": {
-        "text": "Once the rules tell you a precipitate forms, you describe it in three stages, each one cleaner than the last. Stage one, the molecular equation, the full balanced reaction with state symbols, looking like the formulas you're used to. Stage two, the full ionic equation. Here you split every compound that's dissolved, every aqueous one, into its separate ions, because in solution they really are floating around independently. Stage three, the net ionic equation. You look across the full ionic equation and cancel any ion that appears identically on both sides, unchanged. Those are the spectator ions, they were just along for the ride. What's left is the net ionic equation, the actual chemistry. One rule you must never break, do not split the precipitate. It's an insoluble solid, so it stays as a single formula with the solid-state label. Only the aqueous species get broken into ions."
+        "text": "Once the rules tell you a precipitate forms, you describe it in three stages, each one cleaner than the last. Stage one, the molecular equation, the full balanced reaction with state symbols, looking like the formulas you're used to. Stage two, the full ionic equation. Here you split every compound that's dissolved, every aqueous one, into its separate ions, because in solution they really are floating around independently. Stage three, the net ionic equation. You look across the full ionic equation and cancel any ion that appears identically on both sides, unchanged. Those are the spectator ions, they were just along for the ride. What's left is the net ionic equation, the actual chemistry. One rule you must never break, do not split the precipitate. It's an insoluble solid, so it stays as a single formula with the solid-state label. Only the aqueous species get broken into ions.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L16/concept-netionic.cf75f0cb6285.mp3"
       }
     },
     {
@@ -95,16 +132,25 @@
       "type": "definition",
       "heading": "The words you need",
       "bullets": [
-        {"text": "Precipitate: an insoluble solid that forms when two solutions are mixed."},
-        {"text": "Spectator ion: an ion that appears unchanged on both sides, so it cancels."},
-        {"text": "Net ionic equation: shows only the ions that actually form the precipitate."},
-        {"text": "Soluble vs insoluble: decided by the NAGSAG solubility rules."}
+        {
+          "text": "Precipitate: an insoluble solid that forms when two solutions are mixed."
+        },
+        {
+          "text": "Spectator ion: an ion that appears unchanged on both sides, so it cancels."
+        },
+        {
+          "text": "Net ionic equation: shows only the ions that actually form the precipitate."
+        },
+        {
+          "text": "Soluble vs insoluble: decided by the NAGSAG solubility rules."
+        }
       ],
       "callout": "The net ionic equation is the reaction with the spectators removed.",
       "durationInFrames": 990,
       "caption": "Precipitate, spectator ion, net ionic equation, soluble vs insoluble.",
       "voiceover": {
-        "text": "Four terms to lock in. A precipitate is the insoluble solid that drops out when you mix two solutions, the cloudiness you see. A spectator ion is one that's present before and after, completely unchanged, so it cancels out, it didn't take part. The net ionic equation is what remains once you remove those spectators, it shows only the ions that actually combine to form the precipitate, the real reaction. And soluble versus insoluble, that's the call you make using the NAGSAG rules, deciding whether each possible product stays in solution or comes out as a solid. Get comfortable with these four, because every precipitation question is built from them."
+        "text": "Four terms to lock in. A precipitate is the insoluble solid that drops out when you mix two solutions, the cloudiness you see. A spectator ion is one that's present before and after, completely unchanged, so it cancels out, it didn't take part. The net ionic equation is what remains once you remove those spectators, it shows only the ions that actually combine to form the precipitate, the real reaction. And soluble versus insoluble, that's the call you make using the NAGSAG rules, deciding whether each possible product stays in solution or comes out as a solid. Get comfortable with these four, because every precipitation question is built from them.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L16/definition.cbf7df5ad03b.mp3"
       }
     },
     {
@@ -130,7 +176,8 @@
       "durationInFrames": 1650,
       "caption": "PbI₂ (yellow) precipitates; net ionic: Pb²⁺ + 2I⁻ → PbI₂(s).",
       "voiceover": {
-        "text": "Let's work a full example. Mix potassium iodide with lead nitrate. First, list the ions in the beaker, potassium, iodide, lead two plus, and nitrate. Now swap the partners to find the two possible new compounds, potassium nitrate and lead iodide. Apply the rules. Potassium nitrate, it has both a Group one metal and a nitrate, so it's definitely soluble, it stays dissolved. Lead iodide, that's a halide with lead, which is one of our exceptions, so it's insoluble, that's our precipitate. Get its formula from charge balance, lead is two plus, iodide is one minus, so you need two iodides, giving lead iodide, P b I two, a beautiful bright yellow solid. Now the equations. Molecular, two potassium iodide plus lead nitrate gives lead iodide solid plus two potassium nitrate. Full ionic, split everything aqueous into ions, but keep the lead iodide as a solid. Then cancel what appears on both sides, the potassium and nitrate ions, those are spectators. What's left is the net ionic equation, lead two plus plus two iodide gives solid lead iodide. That single line is the real reaction."
+        "text": "Let's work a full example. Mix potassium iodide with lead nitrate. First, list the ions in the beaker, potassium, iodide, lead two plus, and nitrate. Now swap the partners to find the two possible new compounds, potassium nitrate and lead iodide. Apply the rules. Potassium nitrate, it has both a Group one metal and a nitrate, so it's definitely soluble, it stays dissolved. Lead iodide, that's a halide with lead, which is one of our exceptions, so it's insoluble, that's our precipitate. Get its formula from charge balance, lead is two plus, iodide is one minus, so you need two iodides, giving lead iodide, P b I two, a beautiful bright yellow solid. Now the equations. Molecular, two potassium iodide plus lead nitrate gives lead iodide solid plus two potassium nitrate. Full ionic, split everything aqueous into ions, but keep the lead iodide as a solid. Then cancel what appears on both sides, the potassium and nitrate ions, those are spectators. What's left is the net ionic equation, lead two plus plus two iodide gives solid lead iodide. That single line is the real reaction.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L16/worked-example.dab61e7cc9c9.mp3"
       }
     },
     {
@@ -144,7 +191,8 @@
       "durationInFrames": 1230,
       "caption": "Keep the precipitate as one solid formula; only aqueous ions are split.",
       "voiceover": {
-        "text": "Here's the most common net-ionic mistake, and it's easy to make on autopilot. When students write the full ionic equation, they correctly split the dissolved reactants into ions, then they keep going and split the precipitate too, writing it as separate ions on the product side. But that's wrong, and it defeats the whole point. The precipitate is an insoluble solid, it came out of solution precisely because its ions won't stay separated, so you must write it as a single formula with the solid-state label, never as separate aqueous ions. Take silver chloride. On the product side it must read silver chloride, solid, not silver ion plus chloride ion, aqueous. The rule is clean, only species labelled aqueous get split into ions. Anything that's a solid, a liquid, or a gas stays as one whole formula. If you split the precipitate, you'll cancel it away to nothing, and end up with an equation that says no reaction happened, which is obviously false."
+        "text": "Here's the most common net-ionic mistake, and it's easy to make on autopilot. When students write the full ionic equation, they correctly split the dissolved reactants into ions, then they keep going and split the precipitate too, writing it as separate ions on the product side. But that's wrong, and it defeats the whole point. The precipitate is an insoluble solid, it came out of solution precisely because its ions won't stay separated, so you must write it as a single formula with the solid-state label, never as separate aqueous ions. Take silver chloride. On the product side it must read silver chloride, solid, not silver ion plus chloride ion, aqueous. The rule is clean, only species labelled aqueous get split into ions. Anything that's a solid, a liquid, or a gas stays as one whole formula. If you split the precipitate, you'll cancel it away to nothing, and end up with an equation that says no reaction happened, which is obviously false.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L16/misconception.2ff8d04a3253.mp3"
       }
     },
     {
@@ -162,7 +210,8 @@
       "durationInFrames": 1320,
       "caption": "(a) PbI₂ yes, (b) MgSO₄ no, (c) CaCO₃ yes, by the solubility rules.",
       "voiceover": {
-        "text": "Your turn. For each pair, decide whether a precipitate forms, and justify it with the rules. Pause and work through all three. Right. Part a, lead two plus with iodide. Iodides are generally soluble, but lead is one of the exceptions, so lead iodide is insoluble, a precipitate forms, that bright yellow solid again. Part b, magnesium with sulfate. Sulfates are generally soluble, and magnesium isn't on the exception list, only barium and lead are, so magnesium sulfate stays dissolved, no precipitate. Part c, calcium with carbonate. Carbonates are generally insoluble, soluble only with Group one metals and ammonium, and calcium is neither, so calcium carbonate precipitates, a white solid, the same stuff as chalk and limestone. So two precipitates and one clear solution, decided entirely by reading the rules carefully."
+        "text": "Your turn. For each pair, decide whether a precipitate forms, and justify it with the rules. Pause and work through all three. Right. Part a, lead two plus with iodide. Iodides are generally soluble, but lead is one of the exceptions, so lead iodide is insoluble, a precipitate forms, that bright yellow solid again. Part b, magnesium with sulfate. Sulfates are generally soluble, and magnesium isn't on the exception list, only barium and lead are, so magnesium sulfate stays dissolved, no precipitate. Part c, calcium with carbonate. Carbonates are generally insoluble, soluble only with Group one metals and ammonium, and calcium is neither, so calcium carbonate precipitates, a white solid, the same stuff as chalk and limestone. So two precipitates and one clear solution, decided entirely by reading the rules carefully.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L16/quick-check.c63f6ca2ba50.mp3"
       }
     },
     {
@@ -180,7 +229,8 @@
       "durationInFrames": 1200,
       "caption": "Five takeaways: NAGSAG tiers, exceptions, net ionic, keep the precipitate whole.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, the always-soluble ions, nitrates, ammonium, and Group one metals, with no exceptions, and they win every clash. Second, the mostly-soluble ones, sulfates except with barium and lead, and halides except with silver and lead. Third, the generally insoluble ones, carbonates, phosphates, hydroxides, and sulfides, your usual precipitates. Fourth, to write a net ionic equation, split only the aqueous species into ions, then cancel the spectator ions that appear on both sides. And fifth, never split the precipitate, it's a solid and stays as one whole formula. So whenever you mix two solutions, the routine is always the same, list the four ions, swap the partners, and apply the rules to each new pairing. Next lesson, we make solubility quantitative with the solubility product, Ksp. See you there."
+        "text": "Let's lock it in. Five things to take away. First, the always-soluble ions, nitrates, ammonium, and Group one metals, with no exceptions, and they win every clash. Second, the mostly-soluble ones, sulfates except with barium and lead, and halides except with silver and lead. Third, the generally insoluble ones, carbonates, phosphates, hydroxides, and sulfides, your usual precipitates. Fourth, to write a net ionic equation, split only the aqueous species into ions, then cancel the spectator ions that appear on both sides. And fifth, never split the precipitate, it's a solid and stays as one whole formula. So whenever you mix two solutions, the routine is always the same, list the four ions, swap the partners, and apply the rules to each new pairing. Next lesson, we make solubility quantitative with the solubility product, Ksp. See you there.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L16/summary.45f553b4d644.mp3"
       }
     }
   ]

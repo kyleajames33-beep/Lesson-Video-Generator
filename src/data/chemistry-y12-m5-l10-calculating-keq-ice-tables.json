@@ -11,7 +11,13 @@
     "perform calculations to find the value of Keq and concentrations of substances within an equilibrium system, and use these values to make predictions on the direction in which a reaction may proceed (ACSCH096)"
   ],
   "moduleLessonCount": 18,
-  "nesaOutcomes": ["CH12-12", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-12",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "How can the position of equilibrium be described and what does the equilibrium constant represent?",
   "lessonIntent": "Students can calculate Keq by direct substitution, set up an ICE table with correct stoichiometric ratios, and solve forward ICE problems for unknown equilibrium concentrations.",
   "examSkill": "Write the Keq expression first, build the ICE table using stoichiometric ratios in the Change row, convert moles to mol/L using the vessel volume, then solve and verify by back-substitution.",
@@ -41,7 +47,8 @@
       "durationInFrames": 690,
       "caption": "From one measured concentration, the ICE table gives you all the others and Keq.",
       "voiceover": {
-        "text": "OK, back in 1927, a chemist named Farrington Daniels shone light through a sealed flask of brown nitrogen dioxide gas, and from that single absorbance reading he worked out every other concentration in the mixture, and the equilibrium constant. He didn't measure everything, he measured one thing, then reasoned his way to the rest. The tool that lets you do that is the ICE table, and it's the single most important calculation skill in this whole module. In Lesson nine you learned to write a Keq expression. Today you learn to actually get numbers out of it, whether you're handed all the concentrations, or just one."
+        "text": "OK, back in 1927, a chemist named Farrington Daniels shone light through a sealed flask of brown nitrogen dioxide gas, and from that single absorbance reading he worked out every other concentration in the mixture, and the equilibrium constant. He didn't measure everything, he measured one thing, then reasoned his way to the rest. The tool that lets you do that is the ICE table, and it's the single most important calculation skill in this whole module. In Lesson nine you learned to write a Keq expression. Today you learn to actually get numbers out of it, whether you're handed all the concentrations, or just one.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L10/hook.2555c78523a6.mp3"
       }
     },
     {
@@ -50,16 +57,23 @@
       "heading": "Type one: direct substitution",
       "body": "When you are given all the equilibrium concentrations, you just drop them into the Keq expression you already know how to write.",
       "bullets": [
-        {"text": "Write the Keq expression first, before touching any numbers."},
-        {"text": "Apply the power to each concentration separately, not to a bracket."},
-        {"text": "Work out the top and bottom, then divide."}
+        {
+          "text": "Write the Keq expression first, before touching any numbers."
+        },
+        {
+          "text": "Apply the power to each concentration separately, not to a bracket."
+        },
+        {
+          "text": "Work out the top and bottom, then divide."
+        }
       ],
       "secondary": "For 2SO₂ + O₂ ⇌ 2SO₃ with [SO₂] = 0.200, [O₂] = 0.100 and [SO₃] = 0.350, Keq = (0.350)² over (0.200)² times 0.100, which is 30.6.",
       "callout": "Expression first, then substitute. It stops most power errors.",
       "durationInFrames": 1140,
       "caption": "Direct substitution: write the expression, apply powers separately, then divide → Keq = 30.6.",
       "voiceover": {
-        "text": "Let's start with the easy case, where the question hands you every equilibrium concentration. This is just direct substitution, and the only real skill is being disciplined about it. Always write the Keq expression first, before you reach for the numbers. From Lesson nine, products over reactants, each concentration raised to its coefficient. Take sulfur dioxide reacting with oxygen to make sulfur trioxide. At equilibrium, sulfur dioxide is nought-point-two, oxygen is nought-point-one, and sulfur trioxide is nought-point-three-five. So Keq is sulfur trioxide squared, over sulfur dioxide squared times oxygen. The trap here is squaring a whole bracket instead of each concentration on its own, so apply the power to each one separately. Sulfur trioxide squared is nought-point-one-two-two-five. The bottom is nought-point-zero-four times nought-point-one. Divide, and Keq comes out at thirty-point-six. Notice it has no units, which is exactly what we expect for this reaction."
+        "text": "Let's start with the easy case, where the question hands you every equilibrium concentration. This is just direct substitution, and the only real skill is being disciplined about it. Always write the Keq expression first, before you reach for the numbers. From Lesson nine, products over reactants, each concentration raised to its coefficient. Take sulfur dioxide reacting with oxygen to make sulfur trioxide. At equilibrium, sulfur dioxide is nought-point-two, oxygen is nought-point-one, and sulfur trioxide is nought-point-three-five. So Keq is sulfur trioxide squared, over sulfur dioxide squared times oxygen. The trap here is squaring a whole bracket instead of each concentration on its own, so apply the power to each one separately. Sulfur trioxide squared is nought-point-one-two-two-five. The bottom is nought-point-zero-four times nought-point-one. Divide, and Keq comes out at thirty-point-six. Notice it has no units, which is exactly what we expect for this reaction.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L10/concept-substitution.96d298d6a2c5.mp3"
       }
     },
     {
@@ -69,25 +83,52 @@
       "body": "Three rows track every species as the reaction settles. The Change row is where marks are won or lost.",
       "diagram": {
         "type": "table",
-        "headers": ["Row", "N₂", "3H₂", "2NH₃"],
+        "headers": [
+          "Row",
+          "N₂",
+          "3H₂",
+          "2NH₃"
+        ],
         "rows": [
-          ["Initial", "1.00", "3.00", "0"],
-          ["Change", "−x", "−3x", "+2x"],
-          ["Equilibrium", "1.00 − x", "3.00 − 3x", "2x"]
+          [
+            "Initial",
+            "1.00",
+            "3.00",
+            "0"
+          ],
+          [
+            "Change",
+            "−x",
+            "−3x",
+            "+2x"
+          ],
+          [
+            "Equilibrium",
+            "1.00 − x",
+            "3.00 − 3x",
+            "2x"
+          ]
         ],
         "delay": 20
       },
       "bullets": [
-        {"text": "Initial: the starting concentrations, products usually zero."},
-        {"text": "Change: the shift, using the coefficient ratios, reactants minus, products plus."},
-        {"text": "Equilibrium = Initial + Change, the row you put into Keq."}
+        {
+          "text": "Initial: the starting concentrations, products usually zero."
+        },
+        {
+          "text": "Change: the shift, using the coefficient ratios, reactants minus, products plus."
+        },
+        {
+          "text": "Equilibrium = Initial + Change, the row you put into Keq."
+        }
       ],
       "secondary": "For N₂ + 3H₂ ⇌ 2NH₃ the changes are −x, −3x and +2x, the one to three to two ratio. Writing ±x for every species is the single most common ICE error.",
       "callout": "The Change row uses the coefficients, never plain x for everything.",
       "durationInFrames": 1170,
       "caption": "ICE: Initial, Change (stoichiometric ratios), Equilibrium = Initial + Change.",
       "voiceover": {
-        "text": "Now the powerful case, where you're missing some concentrations. The fix is the ICE table, and ICE stands for Initial, Change, Equilibrium. Think of it like a bank account. The Initial row is your opening balance, the starting concentrations, with products usually at zero. The Change row is the transactions, how much each concentration moves as the reaction settles. And the Equilibrium row is the closing balance, simply Initial plus Change. Here's the part that separates a band-five answer from a band-six one. The Change row must follow the coefficient ratios from the balanced equation. For nitrogen plus three hydrogen making two ammonia, if nitrogen falls by x, then hydrogen falls by three x, and ammonia rises by two x. That one to three to two ratio comes straight from the coefficients. The most common mistake in the entire module is writing plus or minus x for every species, ignoring the coefficients. Don't do that. And one quick sanity check, every equilibrium value must come out positive. A negative concentration means you've slipped a sign or a ratio."
+        "text": "Now the powerful case, where you're missing some concentrations. The fix is the ICE table, and ICE stands for Initial, Change, Equilibrium. Think of it like a bank account. The Initial row is your opening balance, the starting concentrations, with products usually at zero. The Change row is the transactions, how much each concentration moves as the reaction settles. And the Equilibrium row is the closing balance, simply Initial plus Change. Here's the part that separates a band-five answer from a band-six one. The Change row must follow the coefficient ratios from the balanced equation. For nitrogen plus three hydrogen making two ammonia, if nitrogen falls by x, then hydrogen falls by three x, and ammonia rises by two x. That one to three to two ratio comes straight from the coefficients. The most common mistake in the entire module is writing plus or minus x for every species, ignoring the coefficients. Don't do that. And one quick sanity check, every equilibrium value must come out positive. A negative concentration means you've slipped a sign or a ratio.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L10/concept-ice.fa85fd15f93f.mp3"
       }
     },
     {
@@ -96,16 +137,23 @@
       "heading": "Solving for x when Keq is given",
       "body": "The harder version gives you Keq and the initial concentrations, then asks you to find x algebraically.",
       "bullets": [
-        {"text": "Write the Equilibrium row in terms of x, then substitute into Keq."},
-        {"text": "If both sides are perfect squares, take the square root to skip the quadratic."},
-        {"text": "Pick the root that keeps every concentration positive."}
+        {
+          "text": "Write the Equilibrium row in terms of x, then substitute into Keq."
+        },
+        {
+          "text": "If both sides are perfect squares, take the square root to skip the quadratic."
+        },
+        {
+          "text": "Pick the root that keeps every concentration positive."
+        }
       ],
       "secondary": "For H₂ + I₂ ⇌ 2HI with Keq = 54.3 and both starting at 0.100, Keq = 4x² over (0.100 − x)². Square-rooting gives x = 0.0787, so [HI] = 2x = 0.157.",
       "callout": "Spot a perfect square and you avoid the quadratic formula entirely.",
       "durationInFrames": 1170,
       "caption": "Forward ICE: substitute the E row into Keq, solve for x, here x = 0.0787 → [HI] = 0.157.",
       "voiceover": {
-        "text": "Let's flip the problem around. Now you're given Keq and the initial concentrations, and you have to find the equilibrium concentrations. Take hydrogen plus iodine making hydrogen iodide, with Keq fifty-four-point-three, both reactants starting at nought-point-one. Set x as the drop in each reactant, so hydrogen iodide rises by two x. Watch that, two x, not x, because the coefficient is two. Substitute the equilibrium row into Keq, and you get four x squared over the quantity nought-point-one minus x, all squared, equals fifty-four-point-three. Now here's a lovely shortcut. Both sides are perfect squares, so instead of grinding through the quadratic formula, just square-root both sides. That gives two x over nought-point-one minus x equals the square root of fifty-four-point-three, about seven-point-four. Solve that simple linear equation and x is nought-point-zero-seven-nine. So hydrogen and iodine each end at nought-point-zero-two-one, and hydrogen iodide at two x, nought-point-one-six. Always check for that perfect-square pattern first, it can save you a lot of algebra."
+        "text": "Let's flip the problem around. Now you're given Keq and the initial concentrations, and you have to find the equilibrium concentrations. Take hydrogen plus iodine making hydrogen iodide, with Keq fifty-four-point-three, both reactants starting at nought-point-one. Set x as the drop in each reactant, so hydrogen iodide rises by two x. Watch that, two x, not x, because the coefficient is two. Substitute the equilibrium row into Keq, and you get four x squared over the quantity nought-point-one minus x, all squared, equals fifty-four-point-three. Now here's a lovely shortcut. Both sides are perfect squares, so instead of grinding through the quadratic formula, just square-root both sides. That gives two x over nought-point-one minus x equals the square root of fifty-four-point-three, about seven-point-four. Solve that simple linear equation and x is nought-point-zero-seven-nine. So hydrogen and iodine each end at nought-point-zero-two-one, and hydrogen iodide at two x, nought-point-one-six. Always check for that perfect-square pattern first, it can save you a lot of algebra.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L10/concept-forward.c600cd71986e.mp3"
       }
     },
     {
@@ -130,7 +178,8 @@
       "durationInFrames": 1620,
       "caption": "Convert mol to mol/L first (÷ 2.00 L), then ICE → Keq = 0.74.",
       "voiceover": {
-        "text": "Here's the classic exam trap, and it has nothing to do with equilibrium and everything to do with reading carefully. A two litre vessel holds nought-point-eight moles of sulfur dioxide and nought-point-four moles of oxygen. At equilibrium there's nought-point-two moles of sulfur trioxide. Find Keq. The trap is that Keq uses concentrations, in moles per litre, but the question gives you moles. So before anything else, divide every amount by the two litres. Sulfur dioxide becomes nought-point-four, oxygen nought-point-two, and the equilibrium sulfur trioxide becomes nought-point-one. Now build the ICE table in concentrations. Sulfur trioxide changed by plus nought-point-one. The ratio is two sulfur dioxide to one oxygen to two sulfur trioxide, so sulfur dioxide drops by nought-point-one and oxygen by nought-point-zero-five. That leaves sulfur dioxide at nought-point-three, oxygen at nought-point-one-five, sulfur trioxide at nought-point-one. Substitute in, and Keq is nought-point-seven-four. If you'd forgotten to convert moles to concentration, every number would have been wrong. Volume first, always."
+        "text": "Here's the classic exam trap, and it has nothing to do with equilibrium and everything to do with reading carefully. A two litre vessel holds nought-point-eight moles of sulfur dioxide and nought-point-four moles of oxygen. At equilibrium there's nought-point-two moles of sulfur trioxide. Find Keq. The trap is that Keq uses concentrations, in moles per litre, but the question gives you moles. So before anything else, divide every amount by the two litres. Sulfur dioxide becomes nought-point-four, oxygen nought-point-two, and the equilibrium sulfur trioxide becomes nought-point-one. Now build the ICE table in concentrations. Sulfur trioxide changed by plus nought-point-one. The ratio is two sulfur dioxide to one oxygen to two sulfur trioxide, so sulfur dioxide drops by nought-point-one and oxygen by nought-point-zero-five. That leaves sulfur dioxide at nought-point-three, oxygen at nought-point-one-five, sulfur trioxide at nought-point-one. Substitute in, and Keq is nought-point-seven-four. If you'd forgotten to convert moles to concentration, every number would have been wrong. Volume first, always.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L10/worked-example.ccae6c9f7d89.mp3"
       }
     },
     {
@@ -144,7 +193,8 @@
       "durationInFrames": 1230,
       "caption": "x is not the concentration: if Change = +2x, then [HI] = 2x. Verify by back-substitution.",
       "voiceover": {
-        "text": "Here's the trap that quietly costs marks even when the algebra is perfect. Students set up the table beautifully, solve for x, and then just write x down as the equilibrium concentration. But x is only the building block. Look at what the equilibrium row actually says. For hydrogen iodide, the change was plus two x, so the equilibrium concentration is two x, not x. With x equal to nought-point-zero-seven-nine, hydrogen iodide is two times that, nought-point-one-six, not nought-point-zero-eight. You'd be off by a factor of two on every species that doesn't have a coefficient of one. So the rule is, never report x, report the equilibrium row. And then do the one thing that catches almost every arithmetic slip, substitute your final concentrations back into the Keq expression. If you don't recover the Keq you started with, within rounding, there's an error to hunt down before you lose the marks."
+        "text": "Here's the trap that quietly costs marks even when the algebra is perfect. Students set up the table beautifully, solve for x, and then just write x down as the equilibrium concentration. But x is only the building block. Look at what the equilibrium row actually says. For hydrogen iodide, the change was plus two x, so the equilibrium concentration is two x, not x. With x equal to nought-point-zero-seven-nine, hydrogen iodide is two times that, nought-point-one-six, not nought-point-zero-eight. You'd be off by a factor of two on every species that doesn't have a coefficient of one. So the rule is, never report x, report the equilibrium row. And then do the one thing that catches almost every arithmetic slip, substitute your final concentrations back into the Keq expression. If you don't recover the Keq you started with, within rounding, there's an error to hunt down before you lose the marks.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L10/misconception.db12e4ff4bcd.mp3"
       }
     },
     {
@@ -164,7 +214,8 @@
       "durationInFrames": 1350,
       "caption": "Δ[CO₂] = +0.60 (1:1:1:1) → [CO] = 0.40; Keq = 0.36 / 0.16 = 2.25.",
       "voiceover": {
-        "text": "Your turn. A one litre flask starts with one mole each of carbon monoxide and water vapour. At equilibrium there's nought-point-six moles of carbon dioxide. Find the carbon monoxide concentration, then Keq. Pause and build the table. Right, let's work it. The vessel is exactly one litre, so the mole numbers are already concentrations, which is a small gift. Carbon dioxide rose by nought-point-six, and every coefficient here is one, so it's a clean one to one to one to one ratio. That means carbon monoxide fell by nought-point-six, leaving it at nought-point-four. Water vapour also at nought-point-four. Carbon dioxide and hydrogen both at nought-point-six. Now Keq is the two products multiplied, over the two reactants multiplied. That's nought-point-six times nought-point-six, over nought-point-four times nought-point-four. So nought-point-three-six over nought-point-one-six, which is two-point-two-five. Carbon monoxide ends at nought-point-four, and Keq is two-point-two-five."
+        "text": "Your turn. A one litre flask starts with one mole each of carbon monoxide and water vapour. At equilibrium there's nought-point-six moles of carbon dioxide. Find the carbon monoxide concentration, then Keq. Pause and build the table. Right, let's work it. The vessel is exactly one litre, so the mole numbers are already concentrations, which is a small gift. Carbon dioxide rose by nought-point-six, and every coefficient here is one, so it's a clean one to one to one to one ratio. That means carbon monoxide fell by nought-point-six, leaving it at nought-point-four. Water vapour also at nought-point-four. Carbon dioxide and hydrogen both at nought-point-six. Now Keq is the two products multiplied, over the two reactants multiplied. That's nought-point-six times nought-point-six, over nought-point-four times nought-point-four. So nought-point-three-six over nought-point-one-six, which is two-point-two-five. Carbon monoxide ends at nought-point-four, and Keq is two-point-two-five.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L10/quick-check.e46d6fd01100.mp3"
       }
     },
     {
@@ -182,7 +233,8 @@
       "durationInFrames": 1200,
       "caption": "Five takeaways: expression first, ICE rows, ratios, convert to mol/L, verify.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to carry out of this lesson. First, for direct substitution, write the Keq expression before the numbers, and apply each power separately. Second, the ICE table has three rows, Initial, Change, and Equilibrium, where Equilibrium is just Initial plus Change. Third, and this is the big one, the Change row uses the stoichiometric ratios from the balanced equation, never plain x for every species. Fourth, if a question gives you moles in a vessel, convert to moles per litre using the volume before you substitute anything. And fifth, your answer is the equilibrium row, not x, and you always verify by substituting back into Keq. Get those five right and the ICE table becomes automatic. Next lesson, we push it further with quadratics and a clever shortcut. See you there."
+        "text": "Let's lock it in. Five things to carry out of this lesson. First, for direct substitution, write the Keq expression before the numbers, and apply each power separately. Second, the ICE table has three rows, Initial, Change, and Equilibrium, where Equilibrium is just Initial plus Change. Third, and this is the big one, the Change row uses the stoichiometric ratios from the balanced equation, never plain x for every species. Fourth, if a question gives you moles in a vessel, convert to moles per litre using the volume before you substitute anything. And fifth, your answer is the equilibrium row, not x, and you always verify by substituting back into Keq. Get those five right and the ICE table becomes automatic. Next lesson, we push it further with quadratics and a clever shortcut. See you there.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L10/summary.8780a52e9915.mp3"
       }
     }
   ]

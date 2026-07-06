@@ -47,7 +47,8 @@
       "durationInFrames": 660,
       "caption": "A 0.17 pH rise is a 32% fall in [H₃O⁺] because the scale is logarithmic.",
       "voiceover": {
-        "text": "OK, here's why this maths actually matters. High on a mountain, a climber hyperventilates, driving carbon dioxide out of the blood, and their blood pH climbs from about seven-point-four-five to seven-point-six-two. That looks like a tiny shift, barely zero-point-two of a pH unit. But because the pH scale is logarithmic, it's actually a thirty-two percent drop in hydrogen ion concentration, enough to cause muscle spasms, confusion, even cardiac problems. Today you'll learn the maths behind that. How to turn a concentration into a pH, how to go backwards from pH to concentration, and how to handle dilution and mixing of strong acids and bases. The logarithm is the whole story."
+        "text": "OK, here's why this maths actually matters. High on a mountain, a climber hyperventilates, driving carbon dioxide out of the blood, and their blood pH climbs from about seven-point-four-five to seven-point-six-two. That looks like a tiny shift, barely zero-point-two of a pH unit. But because the pH scale is logarithmic, it's actually a thirty-two percent drop in hydrogen ion concentration, enough to cause muscle spasms, confusion, even cardiac problems. Today you'll learn the maths behind that. How to turn a concentration into a pH, how to go backwards from pH to concentration, and how to handle dilution and mixing of strong acids and bases. The logarithm is the whole story.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L8/hook.7e84ccd80faa.mp3"
       }
     },
     {
@@ -56,25 +57,52 @@
       "heading": "The pH scale is logarithmic",
       "body": "pH = −log[H₃O⁺], so every single pH unit means a tenfold change in hydrogen ions.",
       "bullets": [
-        {"text": "pH 3 has ten times more H₃O⁺ than pH 4, and a hundred times more than pH 5."},
-        {"text": "Lower pH means more acidic, which means more H₃O⁺."},
-        {"text": "To go back, [H₃O⁺] = 10 to the power of minus pH."}
+        {
+          "text": "pH 3 has ten times more H₃O⁺ than pH 4, and a hundred times more than pH 5."
+        },
+        {
+          "text": "Lower pH means more acidic, which means more H₃O⁺."
+        },
+        {
+          "text": "To go back, [H₃O⁺] = 10 to the power of minus pH."
+        }
       ],
       "secondary": "So pH 3 isn't 'twice' pH 6, it's a thousand times more acidic. Always convert a pH gap into a power of ten.",
       "callout": "A difference of n pH units is a 10ⁿ-fold difference in [H₃O⁺].",
       "durationInFrames": 1110,
       "caption": "pH = −log[H₃O⁺]; each unit is 10× in [H₃O⁺]; lower pH = more acidic.",
       "voiceover": {
-        "text": "Let's get the scale straight first. pH is defined as the negative log, base ten, of the hydrogen ion concentration. The negative sign just turns those tiny decimal concentrations into friendly positive numbers. The key consequence of the log is that each single pH unit is a tenfold change in hydrogen ion concentration. So a solution at pH three has ten times more hydrogen ions than pH four, and a hundred times more than pH five, even though they look close on the scale. And the direction trips people up, so burn this in, lower pH means more acidic, which means more hydrogen ions. To go backwards from a pH to a concentration, raise ten to the power of minus pH. The big habit to build, never say pH three is twice as acidic as pH six. It's a thousand times more acidic. Always convert a pH gap into a power of ten."
+        "text": "Let's get the scale straight first. pH is defined as the negative log, base ten, of the hydrogen ion concentration. The negative sign just turns those tiny decimal concentrations into friendly positive numbers. The key consequence of the log is that each single pH unit is a tenfold change in hydrogen ion concentration. So a solution at pH three has ten times more hydrogen ions than pH four, and a hundred times more than pH five, even though they look close on the scale. And the direction trips people up, so burn this in, lower pH means more acidic, which means more hydrogen ions. To go backwards from a pH to a concentration, raise ten to the power of minus pH. The big habit to build, never say pH three is twice as acidic as pH six. It's a thousand times more acidic. Always convert a pH gap into a power of ten.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L8/concept-scale.9441276d8f81.mp3"
       },
       "diagram": {
         "type": "table",
-        "headers": ["pH", "[H₃O⁺] (mol L⁻¹)", "vs pH 7"],
+        "headers": [
+          "pH",
+          "[H₃O⁺] (mol L⁻¹)",
+          "vs pH 7"
+        ],
         "rows": [
-          ["1", "0.1", "1,000,000× more"],
-          ["3", "0.001", "10,000× more"],
-          ["7", "10⁻⁷", "1× neutral"],
-          ["11", "10⁻¹¹", "0.0001×"]
+          [
+            "1",
+            "0.1",
+            "1,000,000× more"
+          ],
+          [
+            "3",
+            "0.001",
+            "10,000× more"
+          ],
+          [
+            "7",
+            "10⁻⁷",
+            "1× neutral"
+          ],
+          [
+            "11",
+            "10⁻¹¹",
+            "0.0001×"
+          ]
         ]
       }
     },
@@ -83,16 +111,25 @@
       "type": "definition",
       "heading": "The formulas you need",
       "bullets": [
-        {"text": "pH = −log[H₃O⁺] and, in reverse, [H₃O⁺] = 10^(−pH)."},
-        {"text": "pOH = −log[OH⁻]; at 25 °C, pH + pOH = 14."},
-        {"text": "Strong acid: [H₃O⁺] = c, but ×2 for dilute H₂SO₄."},
-        {"text": "Strong base: [OH⁻] = c, but ×2 for Ca(OH)₂ and Ba(OH)₂."}
+        {
+          "text": "pH = −log[H₃O⁺] and, in reverse, [H₃O⁺] = 10^(−pH)."
+        },
+        {
+          "text": "pOH = −log[OH⁻]; at 25 °C, pH + pOH = 14."
+        },
+        {
+          "text": "Strong acid: [H₃O⁺] = c, but ×2 for dilute H₂SO₄."
+        },
+        {
+          "text": "Strong base: [OH⁻] = c, but ×2 for Ca(OH)₂ and Ba(OH)₂."
+        }
       ],
       "callout": "Count the ionisable protons or hydroxides before you take a log.",
       "durationInFrames": 1020,
       "caption": "pH = −log[H₃O⁺]; pOH = −log[OH⁻]; pH+pOH=14; ×2 for diprotic.",
       "voiceover": {
-        "text": "Here are the formulas. pH is minus the log of the hydronium concentration, and to reverse it, the hydronium concentration is ten to the power of minus pH. The same pattern gives pOH from the hydroxide concentration, and at twenty-five degrees, pH plus pOH equals fourteen, which is the bridge between them. For a strong acid, hydronium concentration equals the acid concentration, except for dilute sulfuric acid, where it's twice the concentration because each molecule gives two protons. For a strong base, hydroxide concentration equals the base concentration, except for calcium and barium hydroxide, where it's twice, because each formula unit gives two hydroxides. The single habit that protects your marks, count the ionisable protons or hydroxides before you ever take a log."
+        "text": "Here are the formulas. pH is minus the log of the hydronium concentration, and to reverse it, the hydronium concentration is ten to the power of minus pH. The same pattern gives pOH from the hydroxide concentration, and at twenty-five degrees, pH plus pOH equals fourteen, which is the bridge between them. For a strong acid, hydronium concentration equals the acid concentration, except for dilute sulfuric acid, where it's twice the concentration because each molecule gives two protons. For a strong base, hydroxide concentration equals the base concentration, except for calcium and barium hydroxide, where it's twice, because each formula unit gives two hydroxides. The single habit that protects your marks, count the ionisable protons or hydroxides before you ever take a log.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L8/definition.00afbbcc8352.mp3"
       }
     },
     {
@@ -101,16 +138,23 @@
       "heading": "Acid is direct; base goes via pOH",
       "body": "Strong acids give pH straight away; strong bases need one extra step through pOH.",
       "bullets": [
-        {"text": "Acid: [H₃O⁺] = c (×2 for H₂SO₄), then pH = −log[H₃O⁺]."},
-        {"text": "Base: [OH⁻] = c (×2 for group 2), then pOH = −log[OH⁻]."},
-        {"text": "Finish the base with pH = 14 − pOH at 25 °C."}
+        {
+          "text": "Acid: [H₃O⁺] = c (×2 for H₂SO₄), then pH = −log[H₃O⁺]."
+        },
+        {
+          "text": "Base: [OH⁻] = c (×2 for group 2), then pOH = −log[OH⁻]."
+        },
+        {
+          "text": "Finish the base with pH = 14 − pOH at 25 °C."
+        }
       ],
       "secondary": "Sanity-check every answer: an acid must land below pH 7, a base above it. If a base gives pH below 7, you forgot 14 minus pOH.",
       "callout": "Never use Ka for a strong acid; it ionises completely, so [H₃O⁺] = c.",
       "durationInFrames": 1110,
       "caption": "Acid: [H₃O⁺]→pH directly. Base: [OH⁻]→pOH→pH = 14 − pOH.",
       "voiceover": {
-        "text": "Now the two routes. For a strong acid it's direct. The hydronium concentration just is the acid concentration, doubling for sulfuric acid, and then pH is minus the log of that. For a strong base there's one extra step, because you start with hydroxide, not hydronium. You find the hydroxide concentration, doubling for calcium or barium hydroxide, then take pOH as minus its log, and finally convert with pH equals fourteen minus pOH. Always sanity-check. An acid must come out below pH seven, a base above seven. If your base calculation gives something below seven, you almost certainly forgot the fourteen-minus-pOH step. And one category error to avoid, never use Ka for a strong acid. Ka is for weak acids only. A strong acid is fully ionised, so its hydronium concentration simply equals its concentration."
+        "text": "Now the two routes. For a strong acid it's direct. The hydronium concentration just is the acid concentration, doubling for sulfuric acid, and then pH is minus the log of that. For a strong base there's one extra step, because you start with hydroxide, not hydronium. You find the hydroxide concentration, doubling for calcium or barium hydroxide, then take pOH as minus its log, and finally convert with pH equals fourteen minus pOH. Always sanity-check. An acid must come out below pH seven, a base above seven. If your base calculation gives something below seven, you almost certainly forgot the fourteen-minus-pOH step. And one category error to avoid, never use Ka for a strong acid. Ka is for weak acids only. A strong acid is fully ionised, so its hydronium concentration simply equals its concentration.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L8/concept-method.0ef2dd306f00.mp3"
       }
     },
     {
@@ -129,7 +173,8 @@
       "durationInFrames": 1320,
       "caption": "0.025 M HNO₃ → pH 1.60; 0.0040 M Ca(OH)₂ → pH 11.90.",
       "voiceover": {
-        "text": "Let's do one of each. Part a, nought-point-zero-two-five molar nitric acid. It's a strong, monoprotic acid, so the hydronium concentration is just nought-point-zero-two-five. The pH is minus the log of that, which is one-point-six-zero, comfortably below seven, good. Part b, nought-point-zero-zero-four molar calcium hydroxide. It's a strong base, but each formula unit gives two hydroxides, so the hydroxide concentration is two times nought-point-zero-zero-four, which is nought-point-zero-zero-eight. The pOH is minus the log of that, which is two-point-one-zero. Then convert, pH equals fourteen minus two-point-one-zero, giving eleven-point-nine-zero, nicely above seven. So nitric acid gives pH one-point-six, and calcium hydroxide gives pH eleven-point-nine. The doubling and the fourteen-minus step are where the marks live."
+        "text": "Let's do one of each. Part a, nought-point-zero-two-five molar nitric acid. It's a strong, monoprotic acid, so the hydronium concentration is just nought-point-zero-two-five. The pH is minus the log of that, which is one-point-six-zero, comfortably below seven, good. Part b, nought-point-zero-zero-four molar calcium hydroxide. It's a strong base, but each formula unit gives two hydroxides, so the hydroxide concentration is two times nought-point-zero-zero-four, which is nought-point-zero-zero-eight. The pOH is minus the log of that, which is two-point-one-zero. Then convert, pH equals fourteen minus two-point-one-zero, giving eleven-point-nine-zero, nicely above seven. So nitric acid gives pH one-point-six, and calcium hydroxide gives pH eleven-point-nine. The doubling and the fourteen-minus step are where the marks live.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L8/worked-example.919c02214cf0.mp3"
       }
     },
     {
@@ -148,7 +193,8 @@
       "durationInFrames": 1410,
       "caption": "Excess OH⁻ 3.60×10⁻³ mol in 100 mL → pH 12.56.",
       "voiceover": {
-        "text": "Now a mixing problem, where you find who wins. Forty millilitres of nought-point-one-five molar hydrochloric acid meets sixty millilitres of nought-point-zero-eight molar barium hydroxide. Step one, moles of hydrogen ion, nought-point-one-five times nought-point-zero-four, which is six times ten to the minus three. Step two, moles of hydroxide, and watch the trap, barium hydroxide gives two hydroxides, so it's nought-point-zero-eight times nought-point-zero-six times two, which is nine-point-six times ten to the minus three. Step three, hydroxide wins, and the excess is nine-point-six minus six, that's three-point-six times ten to the minus three moles. Step four, the total volume is a hundred millilitres, so the excess hydroxide concentration is three-point-six times ten to the minus three over nought-point-one, which is nought-point-zero-three-six. Step five, pOH is minus the log, one-point-four-four, so pH is fourteen minus that, twelve-point-five-six. Two traps caught, the doubling and the combined volume."
+        "text": "Now a mixing problem, where you find who wins. Forty millilitres of nought-point-one-five molar hydrochloric acid meets sixty millilitres of nought-point-zero-eight molar barium hydroxide. Step one, moles of hydrogen ion, nought-point-one-five times nought-point-zero-four, which is six times ten to the minus three. Step two, moles of hydroxide, and watch the trap, barium hydroxide gives two hydroxides, so it's nought-point-zero-eight times nought-point-zero-six times two, which is nine-point-six times ten to the minus three. Step three, hydroxide wins, and the excess is nine-point-six minus six, that's three-point-six times ten to the minus three moles. Step four, the total volume is a hundred millilitres, so the excess hydroxide concentration is three-point-six times ten to the minus three over nought-point-one, which is nought-point-zero-three-six. Step five, pOH is minus the log, one-point-four-four, so pH is fourteen minus that, twelve-point-five-six. Two traps caught, the doubling and the combined volume.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L8/worked-example-2.bb1e13a53287.mp3"
       }
     },
     {
@@ -162,7 +208,8 @@
       "durationInFrames": 1230,
       "caption": "H₂SO₄ pH 0.70 not 1.0; pH = 14 − pOH; use V(acid)+V(base).",
       "voiceover": {
-        "text": "Three traps. Trap one, giving nought-point-one molar sulfuric acid a pH of one. Sulfuric acid is diprotic, so the hydronium concentration is twice the concentration, nought-point-two, and the pH is minus the log of that, nought-point-seven-zero, not one. Always double for dilute sulfuric acid, and the same for calcium and barium hydroxide. Trap two, finishing a base calculation by writing pH equals pOH. That gives an acidic-looking answer for a base, which the sanity check should catch instantly. The correct final step is pH equals fourteen minus pOH. Trap three, in a mixing problem, dividing the excess moles by only the acid's volume, or only the base's. The leftover ion is spread through the combined volume, so always use the volume of acid plus the volume of base."
+        "text": "Three traps. Trap one, giving nought-point-one molar sulfuric acid a pH of one. Sulfuric acid is diprotic, so the hydronium concentration is twice the concentration, nought-point-two, and the pH is minus the log of that, nought-point-seven-zero, not one. Always double for dilute sulfuric acid, and the same for calcium and barium hydroxide. Trap two, finishing a base calculation by writing pH equals pOH. That gives an acidic-looking answer for a base, which the sanity check should catch instantly. The correct final step is pH equals fourteen minus pOH. Trap three, in a mixing problem, dividing the excess moles by only the acid's volume, or only the base's. The leftover ion is spread through the combined volume, so always use the volume of acid plus the volume of base.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L8/misconception.10e8d7c9ffd7.mp3"
       }
     },
     {
@@ -181,7 +228,8 @@
       "durationInFrames": 1080,
       "caption": "Dilution: c₂ = 0.0100 mol L⁻¹, so pH = 2.00.",
       "voiceover": {
-        "text": "Quick check. Twenty-five millilitres of nought-point-two molar hydrochloric acid is diluted to five hundred millilitres. Find the new pH. Pause and work it through. Right, let's check it. On dilution the moles of acid don't change, you're only adding water, so first find them, nought-point-two times nought-point-zero-two-five, which is five times ten to the minus three moles. Then use c-one V-one equals c-two V-two, or just divide those moles by the new volume, five times ten to the minus three over nought-point-five, giving nought-point-zero-one molar. Hydrochloric acid is strong and monoprotic, so the hydronium concentration is that same nought-point-zero-one. The pH is minus the log, which is two-point-zero-zero. And notice the acid is still strong, it's just more dilute. Dilution moves the pH up toward seven, but never past it."
+        "text": "Quick check. Twenty-five millilitres of nought-point-two molar hydrochloric acid is diluted to five hundred millilitres. Find the new pH. Pause and work it through. Right, let's check it. On dilution the moles of acid don't change, you're only adding water, so first find them, nought-point-two times nought-point-zero-two-five, which is five times ten to the minus three moles. Then use c-one V-one equals c-two V-two, or just divide those moles by the new volume, five times ten to the minus three over nought-point-five, giving nought-point-zero-one molar. Hydrochloric acid is strong and monoprotic, so the hydronium concentration is that same nought-point-zero-one. The pH is minus the log, which is two-point-zero-zero. And notice the acid is still strong, it's just more dilute. Dilution moves the pH up toward seven, but never past it.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L8/quick-check.42ca31be9362.mp3"
       }
     },
     {
@@ -199,7 +247,8 @@
       "durationInFrames": 1140,
       "caption": "Five takeaways: log scale, [H₃O⁺]=c (×2 diprotic), pOH route, dilution, mixing.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, pH is minus the log of the hydronium concentration, and each pH unit is a tenfold change in hydrogen ions. Second, for a strong acid the hydronium concentration equals the concentration, but double it for dilute sulfuric acid. Third, for a strong base, find the hydroxide concentration, doubling for calcium or barium hydroxide, then finish with pH equals fourteen minus pOH. Fourth, dilution conserves moles, so use c-one V-one equals c-two V-two before recalculating the pH. And fifth, for mixing, find the excess of acid or base, then divide by the combined volume. Next lesson, we tackle the harder case, the pH of weak acids and bases, using Ka, Kb, and ICE tables. See you there."
+        "text": "Let's lock it in. Five things to take away. First, pH is minus the log of the hydronium concentration, and each pH unit is a tenfold change in hydrogen ions. Second, for a strong acid the hydronium concentration equals the concentration, but double it for dilute sulfuric acid. Third, for a strong base, find the hydroxide concentration, doubling for calcium or barium hydroxide, then finish with pH equals fourteen minus pOH. Fourth, dilution conserves moles, so use c-one V-one equals c-two V-two before recalculating the pH. And fifth, for mixing, find the excess of acid or base, then divide by the combined volume. Next lesson, we tackle the harder case, the pH of weak acids and bases, using Ka, Kb, and ICE tables. See you there.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L8/summary.f48e69f8ff4a.mp3"
       }
     }
   ]

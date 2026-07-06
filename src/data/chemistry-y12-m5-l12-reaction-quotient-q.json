@@ -11,7 +11,13 @@
     "perform calculations to find the value of Keq and concentrations of substances within an equilibrium system, and use these values to make predictions on the direction in which a reaction may proceed (ACSCH096)"
   ],
   "moduleLessonCount": 18,
-  "nesaOutcomes": ["CH12-12", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-12",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "How can the position of equilibrium be described and what does the equilibrium constant represent?",
   "lessonIntent": "Students can calculate Q at any instant, compare it with Keq to predict the direction of shift, and explain how Q is the quantitative engine behind Le Chatelier's principle.",
   "examSkill": "Compute Q with current concentrations, apply the Q-versus-Keq rule for direction, and describe how Q moves toward Keq as the system approaches equilibrium.",
@@ -41,7 +47,8 @@
       "durationInFrames": 690,
       "caption": "Q is the system's current position; comparing it with Keq gives the direction.",
       "voiceover": {
-        "text": "OK, imagine a GPS. It needs two things to be useful, your destination, and your current location. Only with both can it tell you which way to drive. Equilibrium chemistry works exactly the same way. The equilibrium constant, Keq, is the destination, it's the ratio the system is always heading toward. But on its own it can't tell you what a reaction will do, because it doesn't know where you're starting from. That's what the reaction quotient, Q, is for. Q is your current location, the ratio of products to reactants right now, at this instant, whether or not you're at equilibrium. And once you have both, comparing Q with Keq tells you, instantly, which direction the reaction must go. Last lesson we used Q in passing. Today it gets the spotlight."
+        "text": "OK, imagine a GPS. It needs two things to be useful, your destination, and your current location. Only with both can it tell you which way to drive. Equilibrium chemistry works exactly the same way. The equilibrium constant, Keq, is the destination, it's the ratio the system is always heading toward. But on its own it can't tell you what a reaction will do, because it doesn't know where you're starting from. That's what the reaction quotient, Q, is for. Q is your current location, the ratio of products to reactants right now, at this instant, whether or not you're at equilibrium. And once you have both, comparing Q with Keq tells you, instantly, which direction the reaction must go. Last lesson we used Q in passing. Today it gets the spotlight.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L12/hook.40aa938d9648.mp3"
       }
     },
     {
@@ -50,16 +57,23 @@
       "heading": "Q uses the same expression as Keq",
       "body": "Q has the identical algebraic form as Keq, but you plug in the concentrations at any moment, not just at equilibrium.",
       "bullets": [
-        {"text": "Same expression: products over reactants, raised to their coefficients."},
-        {"text": "Keq uses equilibrium concentrations; Q uses the current ones."},
-        {"text": "From pure reactants Q = 0; from pure products Q = infinity."}
+        {
+          "text": "Same expression: products over reactants, raised to their coefficients."
+        },
+        {
+          "text": "Keq uses equilibrium concentrations; Q uses the current ones."
+        },
+        {
+          "text": "From pure reactants Q = 0; from pure products Q = infinity."
+        }
       ],
       "secondary": "Only substitute values straight into Keq when the question explicitly calls them equilibrium concentrations. For any other snapshot, what you've calculated is Q.",
       "callout": "Same formula, different moment. Keq is just Q at equilibrium.",
       "durationInFrames": 1140,
       "caption": "Q and Keq share one expression; Q uses concentrations at any instant.",
       "voiceover": {
-        "text": "Here's the good news. You already know how to calculate Q, because it's the same expression as Keq, letter for letter. Products over reactants, each concentration raised to its coefficient. The only difference is which concentrations you put in. Keq uses the values at equilibrium. Q uses the values right now, at whatever instant you're looking at, equilibrium or not. So Keq is really just the special value Q takes when the system has settled. Two quick anchor points. If you start with pure reactants and no products, the numerator is zero, so Q is zero. And if you somehow start with pure products and no reactants, the denominator is zero, so Q shoots off to infinity. One exam habit to build, only drop numbers straight into Keq when the question literally says equilibrium concentrations. Any other time, what you're calculating is Q, and you should call it Q."
+        "text": "Here's the good news. You already know how to calculate Q, because it's the same expression as Keq, letter for letter. Products over reactants, each concentration raised to its coefficient. The only difference is which concentrations you put in. Keq uses the values at equilibrium. Q uses the values right now, at whatever instant you're looking at, equilibrium or not. So Keq is really just the special value Q takes when the system has settled. Two quick anchor points. If you start with pure reactants and no products, the numerator is zero, so Q is zero. And if you somehow start with pure products and no reactants, the denominator is zero, so Q shoots off to infinity. One exam habit to build, only drop numbers straight into Keq when the question literally says equilibrium concentrations. Any other time, what you're calculating is Q, and you should call it Q.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L12/concept-define.8b5e5bf26c92.mp3"
       }
     },
     {
@@ -70,24 +84,40 @@
       "diagram": {
         "type": "barChart",
         "bars": [
-          {"label": "Q < Keq → right", "value": 1},
-          {"label": "Q = Keq → none", "value": 2},
-          {"label": "Q > Keq → left", "value": 3}
+          {
+            "label": "Q < Keq → right",
+            "value": 1
+          },
+          {
+            "label": "Q = Keq → none",
+            "value": 2
+          },
+          {
+            "label": "Q > Keq → left",
+            "value": 3
+          }
         ],
         "unit": "",
         "delay": 20
       },
       "bullets": [
-        {"text": "Q < Keq: too few products, so the reaction shifts right."},
-        {"text": "Q = Keq: already at equilibrium, no net shift."},
-        {"text": "Q > Keq: too many products, so the reaction shifts left."}
+        {
+          "text": "Q < Keq: too few products, so the reaction shifts right."
+        },
+        {
+          "text": "Q = Keq: already at equilibrium, no net shift."
+        },
+        {
+          "text": "Q > Keq: too many products, so the reaction shifts left."
+        }
       ],
       "secondary": "Whatever the value, the reaction always moves in the direction that brings Q back toward Keq. The shift is just Q's journey home.",
       "callout": "The reaction always moves to push Q toward Keq.",
       "durationInFrames": 1170,
       "caption": "Q < Keq shifts right; Q = Keq no shift; Q > Keq shifts left.",
       "voiceover": {
-        "text": "Now the rule that does all the work, and it has exactly three cases. If Q is less than Keq, there aren't enough products compared with where the system wants to be, so the reaction shifts right, making more product. If Q equals Keq, you're already at the destination, so there's no net change. And if Q is greater than Keq, there are too many products, so the reaction shifts left, breaking product back down into reactants. There's a lovely unifying way to remember all three. The reaction always moves in whatever direction drags Q back toward Keq. If Q is too low, it climbs by making products. If Q is too high, it drops by consuming them. The shift isn't some separate rule to memorise, it's simply Q finding its way home to Keq."
+        "text": "Now the rule that does all the work, and it has exactly three cases. If Q is less than Keq, there aren't enough products compared with where the system wants to be, so the reaction shifts right, making more product. If Q equals Keq, you're already at the destination, so there's no net change. And if Q is greater than Keq, there are too many products, so the reaction shifts left, breaking product back down into reactants. There's a lovely unifying way to remember all three. The reaction always moves in whatever direction drags Q back toward Keq. If Q is too low, it climbs by making products. If Q is too high, it drops by consuming them. The shift isn't some separate rule to memorise, it's simply Q finding its way home to Keq.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L12/concept-rule.26933fa2eda5.mp3"
       }
     },
     {
@@ -96,16 +126,23 @@
       "heading": "Q is the engine behind Le Chatelier",
       "body": "Every concentration change you met in Year 12 equilibrium works because it instantly changes Q.",
       "bullets": [
-        {"text": "Add a reactant: the denominator grows, Q drops below Keq, shifts right."},
-        {"text": "Add a product: the numerator grows, Q rises above Keq, shifts left."},
-        {"text": "The system then moves to restore Q to Keq, exactly as LCP predicts."}
+        {
+          "text": "Add a reactant: the denominator grows, Q drops below Keq, shifts right."
+        },
+        {
+          "text": "Add a product: the numerator grows, Q rises above Keq, shifts left."
+        },
+        {
+          "text": "The system then moves to restore Q to Keq, exactly as LCP predicts."
+        }
       ],
       "secondary": "Le Chatelier tells you what happens; Q tells you why. Disturbing a concentration is really just knocking Q off Keq, and the shift is the system answering back.",
       "callout": "LCP is the headline; Q is the mechanism underneath.",
       "durationInFrames": 1140,
       "caption": "Adding species changes Q; the shift restores Q to Keq, the mechanism behind LCP.",
       "voiceover": {
-        "text": "Here's where Q earns its place, it explains why Le Chatelier's principle works at all. Back when you first met equilibrium, you learned that adding a reactant shifts the system right. But why? Because the moment you add reactant, the denominator of Q gets bigger, so Q instantly drops below Keq. And we just said a system with Q below Keq shifts right. So it does, until Q climbs back to Keq. Same logic in reverse for adding a product, the numerator grows, Q jumps above Keq, and the system shifts left to bring it back down. So Le Chatelier's principle is really the headline, and Q is the mechanism printed underneath. Le Chatelier tells you what happens. Q tells you exactly why. Disturbing a concentration is just knocking Q off Keq, and the shift you observe is the system answering back."
+        "text": "Here's where Q earns its place, it explains why Le Chatelier's principle works at all. Back when you first met equilibrium, you learned that adding a reactant shifts the system right. But why? Because the moment you add reactant, the denominator of Q gets bigger, so Q instantly drops below Keq. And we just said a system with Q below Keq shifts right. So it does, until Q climbs back to Keq. Same logic in reverse for adding a product, the numerator grows, Q jumps above Keq, and the system shifts left to bring it back down. So Le Chatelier's principle is really the headline, and Q is the mechanism printed underneath. Le Chatelier tells you what happens. Q tells you exactly why. Disturbing a concentration is just knocking Q off Keq, and the shift you observe is the system answering back.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L12/concept-lcp.641c5adac5f9.mp3"
       }
     },
     {
@@ -131,7 +168,8 @@
       "durationInFrames": 1620,
       "caption": "Q = 4.17 > Keq = 0.500 → shift left; Q falls toward 0.500.",
       "voiceover": {
-        "text": "Let's put it to work on the Haber equilibrium, nitrogen plus three hydrogen making two ammonia, with Keq nought-point-five at four hundred degrees. We're handed a mixture, nitrogen at nought-point-two, hydrogen at nought-point-three, ammonia at nought-point-one-five, and asked which way it'll go. First, write Q, ammonia squared over nitrogen times hydrogen cubed. Mind that cube, hydrogen's coefficient is three. The top is nought-point-one-five squared, nought-point-zero-two-two-five. The bottom is nought-point-two times nought-point-three cubed. Nought-point-three cubed is nought-point-zero-two-seven, times nought-point-two is nought-point-zero-zero-five-four. Divide, and Q is four-point-one-seven. Now compare. Q is four-point-one-seven, but Keq is only nought-point-five, so Q is way above Keq. Too much product. The system shifts left, ammonia decomposes back into nitrogen and hydrogen. And as it does, the numerator shrinks and the denominator grows, so Q falls, steadily, from four-point-one-seven down toward nought-point-five, where it stops, because that's equilibrium."
+        "text": "Let's put it to work on the Haber equilibrium, nitrogen plus three hydrogen making two ammonia, with Keq nought-point-five at four hundred degrees. We're handed a mixture, nitrogen at nought-point-two, hydrogen at nought-point-three, ammonia at nought-point-one-five, and asked which way it'll go. First, write Q, ammonia squared over nitrogen times hydrogen cubed. Mind that cube, hydrogen's coefficient is three. The top is nought-point-one-five squared, nought-point-zero-two-two-five. The bottom is nought-point-two times nought-point-three cubed. Nought-point-three cubed is nought-point-zero-two-seven, times nought-point-two is nought-point-zero-zero-five-four. Divide, and Q is four-point-one-seven. Now compare. Q is four-point-one-seven, but Keq is only nought-point-five, so Q is way above Keq. Too much product. The system shifts left, ammonia decomposes back into nitrogen and hydrogen. And as it does, the numerator shrinks and the denominator grows, so Q falls, steadily, from four-point-one-seven down toward nought-point-five, where it stops, because that's equilibrium.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L12/worked-example.7eb79530ad05.mp3"
       }
     },
     {
@@ -145,7 +183,8 @@
       "durationInFrames": 1230,
       "caption": "Q and Keq are the same expression; Q is a snapshot, Keq is the settled value.",
       "voiceover": {
-        "text": "Here's a misconception that quietly doubles your workload, thinking Q and Keq are two different formulas you have to learn separately. They're not. They are the exact same expression, products over reactants, each raised to its coefficient. Identical. The only thing that changes is the moment in time you evaluate it. Plug in the concentrations at some arbitrary instant, and you've calculated Q, a snapshot of where the system is right now. Wait until the reaction has settled and stopped changing, plug in those concentrations, and the same expression gives you Keq. So Keq is nothing more than Q frozen at the equilibrium moment. Don't memorise two formulas. Memorise one, and just be clear about which concentrations you're feeding it, current ones give Q, equilibrium ones give Keq."
+        "text": "Here's a misconception that quietly doubles your workload, thinking Q and Keq are two different formulas you have to learn separately. They're not. They are the exact same expression, products over reactants, each raised to its coefficient. Identical. The only thing that changes is the moment in time you evaluate it. Plug in the concentrations at some arbitrary instant, and you've calculated Q, a snapshot of where the system is right now. Wait until the reaction has settled and stopped changing, plug in those concentrations, and the same expression gives you Keq. So Keq is nothing more than Q frozen at the equilibrium moment. Don't memorise two formulas. Memorise one, and just be clear about which concentrations you're feeding it, current ones give Q, equilibrium ones give Keq.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L12/misconception.fad82bfe10c2.mp3"
       }
     },
     {
@@ -164,7 +203,8 @@
       "durationInFrames": 1320,
       "caption": "Q = 0.040 > Keq = 0.020 → shift left toward HI.",
       "voiceover": {
-        "text": "Your turn. The decomposition of hydrogen iodide into hydrogen and iodine, Keq nought-point-zero-two at seven hundred kelvin. The mixture has hydrogen iodide at nought-point-five, and both products at nought-point-one. Find Q, predict the direction, and say what Q does on the way. Pause and try it. Right. Q is the products over the reactant, hydrogen times iodine over hydrogen iodide squared. Watch the square, hydrogen iodide's coefficient is two. So that's nought-point-one times nought-point-one, over nought-point-five squared. The top is nought-point-zero-one, the bottom is nought-point-two-five. Q is nought-point-zero-four. Now compare. Q is nought-point-zero-four, Keq is nought-point-zero-two, so Q is above Keq. Too much product. The reaction shifts left, back toward hydrogen iodide. And as it does, the products fall and hydrogen iodide rises, so Q drops, from nought-point-zero-four down to nought-point-zero-two, and there it sits."
+        "text": "Your turn. The decomposition of hydrogen iodide into hydrogen and iodine, Keq nought-point-zero-two at seven hundred kelvin. The mixture has hydrogen iodide at nought-point-five, and both products at nought-point-one. Find Q, predict the direction, and say what Q does on the way. Pause and try it. Right. Q is the products over the reactant, hydrogen times iodine over hydrogen iodide squared. Watch the square, hydrogen iodide's coefficient is two. So that's nought-point-one times nought-point-one, over nought-point-five squared. The top is nought-point-zero-one, the bottom is nought-point-two-five. Q is nought-point-zero-four. Now compare. Q is nought-point-zero-four, Keq is nought-point-zero-two, so Q is above Keq. Too much product. The reaction shifts left, back toward hydrogen iodide. And as it does, the products fall and hydrogen iodide rises, so Q drops, from nought-point-zero-four down to nought-point-zero-two, and there it sits.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L12/quick-check.87a364d073d6.mp3"
       }
     },
     {
@@ -182,7 +222,8 @@
       "durationInFrames": 1200,
       "caption": "Five takeaways: same expression, three-way rule, Q drives LCP.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, Q is the same expression as Keq, just evaluated at whatever instant you like, not only at equilibrium. Second, the three-way rule, Q below Keq shifts right, Q equal to Keq means no shift, Q above Keq shifts left. Third, the unifying idea, a reaction always moves in the direction that drags Q back toward Keq. Fourth, Q is the actual mechanism behind Le Chatelier, every concentration disturbance works by knocking Q off Keq. And fifth, the anchor points, pure reactants give Q of zero, pure products give Q of infinity. So whenever a question asks which way a reaction will go, you don't guess, you calculate Q, compare it with Keq, and read off the answer. Next lesson, we look at the one thing that actually changes Keq, temperature. See you there."
+        "text": "Let's lock it in. Five things to take away. First, Q is the same expression as Keq, just evaluated at whatever instant you like, not only at equilibrium. Second, the three-way rule, Q below Keq shifts right, Q equal to Keq means no shift, Q above Keq shifts left. Third, the unifying idea, a reaction always moves in the direction that drags Q back toward Keq. Fourth, Q is the actual mechanism behind Le Chatelier, every concentration disturbance works by knocking Q off Keq. And fifth, the anchor points, pure reactants give Q of zero, pure products give Q of infinity. So whenever a question asks which way a reaction will go, you don't guess, you calculate Q, compare it with Keq, and read off the answer. Next lesson, we look at the one thing that actually changes Keq, temperature. See you there.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L12/summary.627e913e3643.mp3"
       }
     }
   ]
