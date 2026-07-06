@@ -30,7 +30,7 @@ export const MisconceptionSlide = ({scene, lesson, sceneIndex, totalScenes}: Mis
 
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
-			<SlideChrome lesson={lesson} dot="2.1" topic="COMMON TRAP" sceneType="misconception" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<SlideChrome lesson={lesson} topic="COMMON TRAP" sceneType="misconception" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			{/* Red warning vignette — makes the whole scene feel different from normal teaching slides. */}
 			<div

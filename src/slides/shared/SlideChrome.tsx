@@ -60,7 +60,13 @@ export const SlideChrome = ({
 	const yearLabel = lessonPositionLabel
 		? `${lessonPositionLabel} · HSC · ${lesson.yearLevel.toUpperCase()}`
 		: `HSC · ${lesson.yearLevel.toUpperCase()}`;
-	const dotLabel = dot ? `SYLLABUS · ${dot}` : null;
+	// Syllabus reference for the bottom-left chip. Prefer an explicit `dot`
+	// override; otherwise derive a real per-lesson reference from data — the
+	// module content outcome (e.g. "CH12-13"), falling back to the module
+	// number (e.g. "M6"). Never a hardcoded value.
+	const moduleNumber = (lesson.module.match(/\d+/) ?? [])[0];
+	const syllabusRef = dot ?? lesson.nesaOutcomes?.[0] ?? (moduleNumber ? `M${moduleNumber}` : null);
+	const dotLabel = syllabusRef ? `SYLLABUS · ${syllabusRef}` : null;
 	const counter =
 		sceneIndex && totalScenes
 			? `${String(sceneIndex).padStart(4, '0')} / ${String(totalScenes).padStart(4, '0')}`

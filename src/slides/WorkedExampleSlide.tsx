@@ -36,7 +36,7 @@ export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: Wor
 	const stepInterval = rd.stepInterval ?? 86;
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
-			<SlideChrome lesson={lesson} dot="2.1" topic="WORKED EXAMPLE" sceneType="workedExample" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<SlideChrome lesson={lesson} topic="WORKED EXAMPLE" sceneType="workedExample" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			<div style={{position: 'absolute', top: 142, left: 64, right: 64}}>
 				<Eyebrow color={TOK.inkDim}>PROBLEM · {scene.heading.toUpperCase()}</Eyebrow>

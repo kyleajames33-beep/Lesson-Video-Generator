@@ -39,7 +39,7 @@ export const QuickCheckSlide = ({scene, lesson, sceneIndex, totalScenes}: QuickC
 
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
-			<SlideChrome lesson={lesson} dot="2.1" topic="YOUR TURN" sceneType="quickCheck" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<SlideChrome lesson={lesson} topic="YOUR TURN" sceneType="quickCheck" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			<FadeUp
 				delay={rd.pauseBadge ?? 14}

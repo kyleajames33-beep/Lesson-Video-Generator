@@ -43,7 +43,7 @@ export const MarginaliaSlide = ({scene, lesson, sceneIndex, totalScenes}: Margin
 	const theme = useAccent();
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
-			<SlideChrome lesson={lesson} dot="2.1" topic="KEY INSIGHT" sceneType="marginalia" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<SlideChrome lesson={lesson} topic="KEY INSIGHT" sceneType="marginalia" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			{/* Mono eyebrow */}
 			<div style={{position: 'absolute', top: 150, left: 64}}>

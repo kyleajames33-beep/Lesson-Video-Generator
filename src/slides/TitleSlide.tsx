@@ -32,7 +32,7 @@ export const TitleSlide = ({lesson, scene, sceneIndex, totalScenes}: TitleSlideP
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
 			{heroAsset ? <TitleHero src={heroAsset} /> : <TitleBackdrop />}
-			<SlideChrome lesson={lesson} dot="2.1" topic="LESSON START" sceneType="title" />
+			<SlideChrome lesson={lesson} topic="LESSON START" sceneType="title" />
 
 			<div
 				style={{

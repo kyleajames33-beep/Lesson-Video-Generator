@@ -56,7 +56,7 @@ export const LabFootageSlide = ({scene, lesson, sceneIndex, totalScenes}: LabFoo
 
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
-			<SlideChrome lesson={lesson} dot="2.1" topic="LAB DEMO" sceneType="labFootage" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<SlideChrome lesson={lesson} topic="LAB DEMO" sceneType="labFootage" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			{/* Mono eyebrow */}
 			<div style={{position: 'absolute', top: 150, left: 64}}>

@@ -42,7 +42,7 @@ export const EndCardSlide = ({scene, lesson, sceneIndex, totalScenes}: EndCardSl
 
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
-			<SlideChrome lesson={lesson} dot="2.1" topic="UP NEXT" sceneType="concept" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<SlideChrome lesson={lesson} topic="UP NEXT" sceneType="concept" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			<AmbientGlow left="50%" top={520} width="70%" height={420} delay={ctaDelay - 30} opacity={0.10} speedSeconds={6.0} />
 

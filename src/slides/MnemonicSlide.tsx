@@ -46,7 +46,7 @@ export const MnemonicSlide = ({scene, lesson, sceneIndex, totalScenes}: Mnemonic
 
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
-			<SlideChrome lesson={lesson} dot="2.1" topic="LOCK THIS IN" sceneType="concept" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<SlideChrome lesson={lesson} topic="LOCK THIS IN" sceneType="concept" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			<AmbientGlow left="20%" top={300} width="60%" height={520} delay={0} opacity={0.10} speedSeconds={6.4} />
 

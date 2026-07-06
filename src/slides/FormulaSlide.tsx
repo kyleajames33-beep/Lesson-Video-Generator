@@ -40,7 +40,7 @@ export const FormulaSlide = ({scene, lesson, sceneIndex, totalScenes}: FormulaSl
 
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
-			<SlideChrome lesson={lesson} dot="2.1" topic="FORMULA" sceneType="formula" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<SlideChrome lesson={lesson} topic="FORMULA" sceneType="formula" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			<div style={{position: 'absolute', top: 180, left: 64, right: 64}}>
 				<Eyebrow color={TOK.inkDim}>↳ THE COUNTING EQUATION</Eyebrow>

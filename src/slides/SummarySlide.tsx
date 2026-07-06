@@ -30,7 +30,7 @@ export const SummarySlide = ({scene, lesson, sceneIndex, totalScenes}: SummarySl
 
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
-			<SlideChrome lesson={lesson} dot="2.1" topic="THE RECAP" sceneType="summary" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<SlideChrome lesson={lesson} topic="THE RECAP" sceneType="summary" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			<header style={{position: 'absolute', top: 138, left: 64, right: 64}}>
 				<Eyebrow color={TOK.inkDim}>◆ FIVE THINGS TO REMEMBER</Eyebrow>

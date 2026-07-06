@@ -56,7 +56,7 @@ export const DefinitionSlide = ({scene, lesson, sceneIndex, totalScenes}: Defini
 
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
-			<SlideChrome lesson={lesson} dot="2.1" topic="KEY TERM" sceneType="definition" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<SlideChrome lesson={lesson} topic="KEY TERM" sceneType="definition" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 			<AmbientGlow left={28} top={214} width={940} height={330} delay={130} opacity={0.09} />
 
 			{/* Mono eyebrow */}
@@ -542,7 +542,7 @@ const DefinitionListLayout = ({
 
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
-			<SlideChrome lesson={lesson} dot="2.1" topic="KEY TERM" sceneType="definition" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<SlideChrome lesson={lesson} topic="KEY TERM" sceneType="definition" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 			<AmbientGlow left={28} top={214} width={940} height={330} delay={130} opacity={0.09} />
 
 			<div style={{position: 'absolute', top: 150, left: 64}}>

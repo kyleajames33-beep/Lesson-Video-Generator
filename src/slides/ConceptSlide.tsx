@@ -42,7 +42,7 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 	const hasVisual = Boolean(scene.image || scene.diagram);
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
-			<SlideChrome lesson={lesson} dot="2.1" topic="CORE IDEA" sceneType="concept" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<SlideChrome lesson={lesson} topic="CORE IDEA" sceneType="concept" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			<div
 				style={{

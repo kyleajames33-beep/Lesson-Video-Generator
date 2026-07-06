@@ -44,7 +44,7 @@ export const HookSlide = ({scene, lesson, sceneIndex, totalScenes}: HookSlidePro
 
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
-			<SlideChrome lesson={lesson} dot="2.1" topic="A QUESTION" sceneType="hook" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<SlideChrome lesson={lesson} topic="A QUESTION" sceneType="hook" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			{scene.image && ASSETS[scene.image as AssetName] ? (
 				<FadeUp delay={rd.glyph ?? 12} durationFrames={18} dy={16}>
