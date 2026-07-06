@@ -1,0 +1,190 @@
+{
+  "title": "Stoichiometry: Mole Ratios",
+  "subtitle": "Reading a balanced equation as a recipe",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 11",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "use balanced chemical equations and the mole concept to calculate mole ratios of reactants and products"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-9", "CH11/12-4", "CH11/12-6"],
+  "inquiryQuestion": "What happens in chemical reactions?",
+  "lessonIntent": "Students can read mole ratios from the coefficients of a balanced equation and use them to find moles of a product or reactant.",
+  "examSkill": "Take the mole ratio from coefficients (not subscripts), then scale a known amount to find an unknown amount.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, stoichiometry, reading a balanced equation as a recipe. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Stoichiometry: Mole Ratios (Year 11 Chemistry, Module 2, Lesson 11)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A balanced equation is a recipe",
+      "body": "The coefficients aren't decoration. They tell you exactly how many moles react and form.",
+      "callout": "Coefficients are the recipe quantities.",
+      "durationInFrames": 660,
+      "caption": "A balanced equation is a precise numerical recipe for a reaction.",
+      "voiceover": {
+        "text": "OK, a balanced equation is way more than a description of a reaction. It's a precise numerical recipe. Just like a cake recipe says two eggs for every cup of flour, a balanced equation says exactly how many moles of each substance react and how many form. Those big numbers in front, the coefficients, are the recipe quantities. Once you can read them as mole ratios, you can predict exactly how much product a reaction makes, or how much reactant you need. That's stoichiometry, and it's the heart of the whole module."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Coefficients, not subscripts",
+      "body": "The mole ratio comes from the coefficients in front of each formula, never the subscripts inside.",
+      "image": "l11MoleRatioRecipe",
+      "bullets": [
+        {"text": "A coefficient is the big number in front: it means moles."},
+        {"text": "A subscript is the small number inside a formula: it means atoms."},
+        {"text": "The mole ratio uses coefficients only."}
+      ],
+      "secondary": "In 2H₂ + O₂ → 2H₂O the ratio of hydrogen to water is 2 to 2, which is 1 to 1.",
+      "callout": "Big numbers out front give the mole ratio.",
+      "durationInFrames": 1080,
+      "caption": "Mole ratio = coefficients (the big numbers in front), not subscripts.",
+      "voiceover": {
+        "text": "Here's the single most important distinction in this topic. The mole ratio comes from the coefficients, the big numbers written in front of each formula. It never comes from the subscripts, the small numbers inside a formula. A coefficient tells you how many moles of that substance take part. A subscript tells you how many atoms are inside one formula unit. Completely different jobs. Take two H two plus O two gives two H two O. The coefficients are two, one, and two. So the ratio of hydrogen gas to water is two to two, which simplifies to one to one. The little twos inside the formulas don't enter the ratio at all."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Coefficient: the big number in front of a formula; it counts moles."},
+        {"text": "Subscript: the small number inside a formula; it counts atoms."},
+        {"text": "Mole ratio: the ratio of coefficients between two substances."},
+        {"text": "Conservation of mass: atoms are never created or destroyed."}
+      ],
+      "callout": "Balance by changing coefficients, never subscripts.",
+      "durationInFrames": 930,
+      "caption": "Coefficient, subscript, mole ratio, conservation of mass.",
+      "voiceover": {
+        "text": "Quick vocabulary. A coefficient is the big number in front of a formula, and it counts moles. A subscript is the small number inside a formula, and it counts atoms. The mole ratio is just the ratio of coefficients between any two substances in the equation. And conservation of mass is the law underneath it all, that atoms are never created or destroyed in a reaction, so they must balance on both sides. That last point matters when you balance an equation. You change coefficients to balance it. You never change a subscript, because that would turn it into a different substance."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The mole-ratio method",
+      "body": "Find moles of what you know, multiply by the mole ratio, get moles of what you want.",
+      "bullets": [
+        {"text": "Start with the moles of the substance you're given."},
+        {"text": "Multiply by the ratio: wanted coefficient over known coefficient."},
+        {"text": "That gives the moles of the substance you want."}
+      ],
+      "secondary": "The ratio is always wanted over known. Put the substance you want on top.",
+      "callout": "Moles known × (wanted ÷ known) = moles wanted.",
+      "durationInFrames": 1020,
+      "caption": "Moles known × (wanted coefficient ÷ known coefficient) = moles wanted.",
+      "voiceover": {
+        "text": "Here's the method that turns a mole ratio into an answer. Three steps. Start with the moles of the substance you're given. Multiply by the mole ratio, written as the coefficient of what you want, over the coefficient of what you know. That gives you the moles of the substance you want. The key to never getting it upside down, the ratio is always wanted over known. The thing you're solving for goes on top. So if you want product and you know reactant, it's product coefficient over reactant coefficient. Get that orientation right and you'll never flip the ratio."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Balancing first",
+      "question": "Balance: Fe + O₂ → Fe₂O₃. Then state the mole ratio of Fe to Fe₂O₃.",
+      "coachNote": "Only change coefficients to balance.",
+      "steps": [
+        "Balance Fe: need 2 Fe on the left for each Fe₂O₃",
+        "Balance O: 3 O₂ gives 6 O; 2 Fe₂O₃ gives 6 O",
+        "Balanced: 4Fe + 3O₂ → 2Fe₂O₃",
+        "Coefficients of Fe and Fe₂O₃ are 4 and 2",
+        "Mole ratio Fe : Fe₂O₃ = 4 : 2 = 2 : 1 ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "4Fe + 3O₂ → 2Fe₂O₃; the Fe to Fe₂O₃ ratio is 2:1.",
+      "voiceover": {
+        "text": "Let's balance one first, then read its ratio. Iron plus oxygen gives iron three oxide. To balance, you only ever change the coefficients out front. Start with iron. Each iron three oxide needs two irons, so put a two in front of the iron, but the oxygens force a bigger picture. Work it through and the balanced equation is four iron, plus three oxygen molecules, gives two iron three oxide. Check it. Four irons on the left, four on the right. Six oxygens on the left, six on the right. Balanced. Now read the ratio. The coefficient of iron is four, and of iron three oxide is two. So the mole ratio of iron to iron three oxide is four to two, which simplifies to two to one. Notice we balanced using only coefficients, never touching the subscripts inside the formulas."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Using the ratio",
+      "question": "For 2HCl + Ca(OH)₂ → CaCl₂ + 2H₂O, if 0.300 mol of Ca(OH)₂ reacts, how many moles of HCl are needed?",
+      "coachNote": "Ratio is wanted (HCl) over known Ca(OH)₂.",
+      "steps": [
+        "Coefficients: HCl is 2, Ca(OH)₂ is 1",
+        "Ratio HCl : Ca(OH)₂ = 2 : 1",
+        "n(HCl) = n(Ca(OH)₂) × (2 ÷ 1)",
+        "n(HCl) = 0.300 × 2",
+        "Answer: n(HCl) = 0.600 mol ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "0.300 mol Ca(OH)₂ needs 0.600 mol HCl (2:1 ratio).",
+      "voiceover": {
+        "text": "Now let's use a ratio to get an answer. For two hydrochloric acid plus calcium hydroxide gives calcium chloride plus two water, suppose nought-point-three moles of calcium hydroxide reacts. How many moles of acid are needed? Step one, read the coefficients. Hydrochloric acid has a two, calcium hydroxide has a one. Step two, the ratio of acid to base is two to one. Step three, multiply the known moles by the ratio, wanted over known, which is two over one. Step four, nought-point-three times two is nought-point-six. So you need nought-point-six moles of hydrochloric acid. Because the recipe calls for two acids per base, you need twice as much acid as base. The coefficients told you everything."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: using subscripts as the mole ratio instead of the coefficients out front.",
+      "secondary": "Trap 2: changing a subscript to balance an equation, which creates a different substance. Trap 3: assuming every reaction is 1:1 without reading the coefficients.",
+      "mistakeTag": "Where stoichiometry marks vanish",
+      "callout": "Coefficients for the ratio, never change subscripts, never assume 1:1.",
+      "durationInFrames": 1230,
+      "caption": "Use coefficients not subscripts; balance with coefficients; don't assume 1:1.",
+      "voiceover": {
+        "text": "Three traps, and the first one is the big one. Trap one, using subscripts as the mole ratio. The small numbers inside a formula count atoms, not moles, and they never go into the mole ratio. Only the coefficients out front do. Trap two, changing a subscript when you're trying to balance an equation. If you turn H two O into H two O two to make the oxygens work, you've just changed water into hydrogen peroxide, a completely different substance. Balance only by adjusting coefficients. Trap three, assuming every reaction is one to one. Plenty aren't, like that two to one acid to base ratio we just saw. Always read the coefficients before you scale."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "For 2H₂ + O₂ → 2H₂O, if 4.00 mol of H₂ reacts completely, how many moles of H₂O form?",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Coefficients: H₂ is 2, H₂O is 2",
+        "Ratio H₂O : H₂ = 2 : 2 = 1 : 1",
+        "n(H₂O) = n(H₂) × (2 ÷ 2)",
+        "n(H₂O) = 4.00 × 1",
+        "Answer: n(H₂O) = 4.00 mol ✓"
+      ],
+      "durationInFrames": 1140,
+      "caption": "2:2 simplifies to 1:1, so 4.00 mol H₂ makes 4.00 mol H₂O.",
+      "voiceover": {
+        "text": "Quick check. For two H two plus O two gives two H two O, if four moles of hydrogen react completely, how many moles of water form? Pause and work it through. Right, let's check it. Step one, read the coefficients. Hydrogen has a two, water has a two. Step two, the ratio of water to hydrogen is two to two, which simplifies to one to one. Step three, multiply the known moles by the ratio, wanted over known, which is one. Step four, four times one is four. So four moles of hydrogen make four moles of water. Even though the coefficients are both two, the ratio simplifies, so always reduce it before you scale."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A balanced equation is a mole recipe.",
+        "The mole ratio comes from coefficients, never subscripts.",
+        "Balance only by changing coefficients.",
+        "Moles known × (wanted ÷ known) = moles wanted.",
+        "Never assume 1:1 — read the coefficients."
+      ],
+      "finalPrompt": "Before you scale: is my ratio wanted over known?",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: coefficients give the ratio, wanted over known, never assume 1:1.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, a balanced equation is a mole recipe, telling you exactly how much reacts and forms. Second, the mole ratio comes from the coefficients out front, never the subscripts inside. Third, you balance an equation only by changing coefficients, never subscripts. Fourth, the method is moles known, times wanted over known, gives moles wanted. And fifth, never assume a reaction is one to one. Read the coefficients every time. Master the mole ratio and the next few lessons, which build on it, become straightforward. See you next lesson."
+      }
+    }
+  ]
+}

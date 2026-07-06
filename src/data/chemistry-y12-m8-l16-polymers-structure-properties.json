@@ -1,0 +1,198 @@
+{
+  "title": "Polymers, Structure, Properties and Applications",
+  "subtitle": "Why one polymer stops a bullet and another tears",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 16",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8: Applying Chemical Ideas",
+  "syllabusDotPoints": [
+    "model and compare the structure, properties and uses of addition polymers of ethylene and related monomers",
+    "model and compare the structure, properties and uses of condensation polymers"
+  ],
+  "moduleLessonCount": 16,
+  "nesaOutcomes": ["CH12-15", "CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-7"],
+  "inquiryQuestion": "What are the properties and uses of polymers?",
+  "lessonIntent": "Students can distinguish addition from condensation polymers and link chain length, branching, cross-linking and intermolecular forces to polymer properties.",
+  "examSkill": "Explain polymer properties from structure, including LDPE versus HDPE, and avoid attributing differences to thickness alone.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the structure and properties of polymers. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Polymers, Structure, Properties and Applications (Year 12 Chemistry, Module 8, Lesson 16)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same class, wildly different strength",
+      "body": "Kevlar is 5 times stronger than steel by weight and stops bullets. A polyethylene bag tears under a few newtons. Both are polymers.",
+      "image": "kevlarVsPolyethylene",
+      "callout": "The difference is structural, not just thickness.",
+      "durationInFrames": 690,
+      "caption": "Kevlar stops bullets; a polyethylene bag tears. Both are polymers.",
+      "voiceover": {
+        "text": "OK, here's a striking contrast. In 1965, a DuPont chemist named Stephanie Kwolek synthesised Kevlar, a polymer so strong it's five times stronger than steel by weight, and it stops bullets, which is why it's used in body armour. Now compare that to an ordinary polyethylene shopping bag, which tears under a load of groceries. Both of these are the same class of material, polymer, and yet their properties are wildly different. So what's going on at the molecular level? Why does one polymer absorb a bullet while the other rips under the weight of your shopping? It's not about how thick they are. It's about structure, and that's exactly what we'll unpack today."
+      }
+    },
+    {
+      "id": "concept-types",
+      "type": "concept",
+      "heading": "Addition versus condensation",
+      "body": "Not all polymers form the same way. The monomer and the reaction pathway decide the structure and any by-product.",
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "Addition",
+        "afterLabel": "Condensation",
+        "beforeContent": "Alkene monomers join across the C=C. No by-product.",
+        "afterContent": "Bifunctional monomers react. A small molecule, water or HCl, is lost.",
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Addition: alkene monomers join across the double bond, no by-product."},
+        {"text": "Condensation: bifunctional monomers react and lose a small molecule."},
+        {"text": "The presence or absence of a by-product is the key distinction."}
+      ],
+      "secondary": "Polyethylene from ethene is the classic addition polymer. Nylon and polyester are condensation polymers, losing water or HCl as they form.",
+      "callout": "By-product or no by-product? That's the test.",
+      "durationInFrames": 1020,
+      "caption": "Addition: no by-product. Condensation: a small molecule is eliminated.",
+      "voiceover": {
+        "text": "Let's start with the two ways polymers form, because it's the first thing every polymer question tests. Not all polymers form the same way, the type of monomer and the reaction pathway strongly affect the structure and any by-product. Addition polymers form when alkene monomers join across their carbon-carbon double bond, with no small-molecule by-product at all. Polyethylene, made from ethene, is the classic example. Condensation polymers form differently, bifunctional monomers, ones with two reactive groups, react together and eliminate a small molecule, usually water or hydrogen chloride. Nylon and polyester are the classic examples. So the single key distinction is the by-product. If a polymer forms from alkene monomers with no by-product, think addition. If functional groups react and a small molecule is removed, think condensation."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Thermoplastic: softens on heating, can be remoulded; no permanent cross-links."},
+        {"text": "Thermosetting polymer: heavily cross-linked, decomposes rather than melts."},
+        {"text": "Cross-linking: covalent bonds between chains, raising stiffness and melting point."},
+        {"text": "Microplastics: fragments under 5 mm, persistent in ecosystems."}
+      ],
+      "callout": "Cross-linking is what makes a thermoset permanent.",
+      "durationInFrames": 990,
+      "caption": "Thermoplastic, thermosetting polymer, cross-linking, microplastics.",
+      "voiceover": {
+        "text": "Quick vocabulary, four key terms. A thermoplastic softens on heating and re-hardens on cooling, so it can be remoulded and recycled, and that's because its chains are not permanently cross-linked. Examples include P-E-T and polypropylene. A thermosetting polymer is the opposite, it has extensive cross-linking, so on heating it decomposes rather than melting, and it can't be remoulded once set, like Bakelite or epoxy resin. Cross-linking is the covalent bonding between adjacent polymer chains, and it increases stiffness, strength, and melting point. And microplastics are plastic particles smaller than five millimetres, formed when larger plastics break down, and they're persistent in ecosystems and food chains. The one to really hold onto is cross-linking, because it's what makes a thermoset permanent and unmeltable."
+      }
+    },
+    {
+      "id": "concept-named",
+      "type": "concept",
+      "heading": "The named polymers",
+      "body": "The course names several common polymers in each class. They share a formation style but differ in their groups.",
+      "bullets": [
+        {"text": "Addition: polyethylene, polypropylene, PVC, polystyrene, PTFE."},
+        {"text": "Condensation: nylon-6,6 (polyamide), PET (polyester), polycarbonate."},
+        {"text": "Side groups change packing, intermolecular forces, and properties."}
+      ],
+      "secondary": "PVC is chloro-substituted and chemically resistant. PTFE is fluorinated and very inert. Nylon-6,6 has amide links, the -CO-NH- bonds we met in functional groups.",
+      "callout": "Same backbone style, different side groups, different behaviour.",
+      "durationInFrames": 1020,
+      "caption": "Addition: PE, PP, PVC, PS, PTFE. Condensation: nylon-6,6, PET, polycarbonate.",
+      "voiceover": {
+        "text": "Let's name the polymers you need, because the exam expects specific examples. On the addition side, you have polyethylene with its simple hydrocarbon backbone, polypropylene with a methyl side group, P-V-C which is chloro-substituted, polystyrene with a phenyl side group, and P-T-F-E which is fluorinated. They all form the same broad way, joining alkene monomers, but their side groups change how the chains pack and the intermolecular forces between them, which is why P-V-C is rigid and chemically resistant while P-T-F-E is extremely inert. On the condensation side, the named examples are nylon-six-six, a polyamide with amide links, P-E-T, a polyester with ester links, and polycarbonate. Notice the condensation polymers have polar functional groups built right into the backbone, the same amide and ester linkages we met back in functional groups, and that gives them stronger intermolecular forces than a simple hydrocarbon chain."
+      }
+    },
+    {
+      "id": "concept-structure",
+      "type": "concept",
+      "heading": "Structure controls properties",
+      "body": "Polymer properties aren't random. Flexibility, strength, and melting point all depend on chain structure and how strongly chains interact.",
+      "bullets": [
+        {"text": "Longer chains give higher strength and a higher melting range."},
+        {"text": "Branching reduces close packing, so softer and more flexible."},
+        {"text": "Cross-linking gives a rigid network, thermoset, that cannot remelt."}
+      ],
+      "secondary": "Stronger intermolecular forces, like the hydrogen bonding in nylon and Kevlar, give higher tensile strength and thermal resistance. That's Kevlar's secret.",
+      "callout": "Chains, branching, cross-links, and forces, four dials.",
+      "durationInFrames": 1080,
+      "caption": "Chain length, branching, cross-linking, and IMFs set polymer properties.",
+      "voiceover": {
+        "text": "Now the heart of the lesson, how structure controls properties, because this answers our Kevlar puzzle. Polymer properties are not random, the flexibility, tensile strength, melting point, and chemical resistance all depend on the structure of the chains and how strongly those chains interact. There are four dials. Longer chain length generally gives higher strength and a higher melting range, because there's more interaction between chains overall. Branching reduces how closely chains can pack together, so a branched polymer tends to be softer and more flexible. Cross-linking links chains into a rigid network, which gives thermosetting behaviour, the kind that can't be remelted. And stronger intermolecular forces, like the dense hydrogen bonding between the amide groups in nylon, and especially in Kevlar, give much higher tensile strength and thermal resistance. That hydrogen-bonding network is exactly why Kevlar is so strong, and why a non-polar polyethylene chain of the same length is so much weaker."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "LDPE versus HDPE",
+      "question": "Low-density polyethylene and high-density polyethylene are both polyethylene, yet they differ in properties and uses. Explain how their molecular structure accounts for the difference.",
+      "coachNote": "Both are addition polymers of ethene. The difference is branching, which controls packing.",
+      "steps": [
+        "LDPE: branched chains, which prevent close packing.",
+        "Poor packing gives lower density, more flexibility, lower tensile strength, so used for bags and squeeze bottles.",
+        "HDPE: linear chains, which pack closely together.",
+        "Close packing gives higher density, more rigidity, higher tensile strength, so used for milk bottles and piping.",
+        "Answer: branching versus linearity sets packing, which sets the properties and uses."
+      ],
+      "durationInFrames": 1320,
+      "caption": "LDPE branched, flexible, bags; HDPE linear, rigid, bottles and pipes.",
+      "voiceover": {
+        "text": "Let's do the classic polymer worked example, low-density versus high-density polyethylene. Both are polyethylene, both are addition polymers of ethene, yet they differ in properties and uses. Explain how their molecular structure accounts for that. Step one, low-density polyethylene, L-D-P-E, has branched chains, and those branches prevent the chains from packing closely together. Step two, that poor packing gives a lower density, more flexibility, and lower tensile strength, which is why L-D-P-E is used for plastic bags and squeeze bottles. Step three, high-density polyethylene, H-D-P-E, has linear, unbranched chains, which pack closely together. Step four, that close packing gives a higher density, more rigidity, and higher tensile strength, so H-D-P-E is used for milk bottles and piping. So step five, the answer, the difference is branching versus linearity, the branching controls how well the chains pack, and the packing controls both the properties and the uses. Same monomer, different chain architecture, different material."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The trap that costs Band 6",
+      "body": "The classic error: one plastic is softer only because it's thinner.",
+      "secondary": "Thickness matters in a real product, but polymer chemistry matters too. Chain structure, branching, cross-linking, and intermolecular forces are what explain why two plastics behave differently, even at the same thickness.",
+      "mistakeTag": "Where polymer marks vanish",
+      "callout": "Explain properties from structure, not thickness alone.",
+      "durationInFrames": 870,
+      "caption": "Plastics differ by chain structure and IMFs, not just thickness.",
+      "voiceover": {
+        "text": "Here's the trap that costs the top band. Students often write that one plastic is softer only because it's thinner. Thickness does matter in a real product, but it is not the chemical explanation, and stopping there loses marks. The reason two plastics behave differently is their polymer chemistry, the chain structure, the branching, the cross-linking, and the intermolecular forces between chains. Take our worked example, L-D-P-E is more flexible than H-D-P-E because of branching, not because it happens to be thinner. So when a question asks you to explain a property difference, anchor it in the molecular structure, the chain architecture and the forces between chains. That's the difference between a thickness hand-wave and a Band 6 chemistry answer."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A polymer sample is rigid and chars instead of melting when heated, and cannot be remoulded. What structural feature explains this, and what class is it?",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Not melting, and charring instead, points to a network that can't flow.",
+        "Cannot be remoulded means the chains are locked together.",
+        "Permanent covalent cross-links between chains create that rigid network.",
+        "Heat decomposes the network rather than melting it.",
+        "Answer: permanent cross-linking, so it's a thermosetting polymer."
+      ],
+      "durationInFrames": 960,
+      "caption": "Rigid, chars not melts, can't remould: cross-linked thermoset.",
+      "voiceover": {
+        "text": "Quick check, classifying from behaviour. A polymer sample is rigid, and when heated it chars instead of melting, and it cannot be remoulded. What structural feature explains this, and what class is it? Pause and reason it through. Right, let's check it. Step one, the fact that it doesn't melt and chars instead points to a network structure that can't flow when heated. Step two, the fact that it cannot be remoulded tells us the chains are locked together permanently. Step three, that's the signature of permanent covalent cross-links between the chains, forming a rigid network. Step four, so heat decomposes the network rather than melting it. So the answer, the feature is permanent cross-linking, which means this is a thermosetting polymer, not a thermoplastic. A thermoplastic would have softened and flowed instead."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Addition polymers: alkene monomers, no by-product. Condensation: a small molecule is lost.",
+        "Named addition: PE, PP, PVC, PS, PTFE. Condensation: nylon-6,6, PET, polycarbonate.",
+        "Longer chains and stronger forces raise strength; branching raises flexibility.",
+        "Cross-linking gives thermosets that decompose rather than melt.",
+        "Property differences come from structure, not just thickness."
+      ],
+      "finalPrompt": "Polymer question? Explain every property from chain structure and forces.",
+      "durationInFrames": 1050,
+      "caption": "Five takeaways: the two types, named polymers, structure-property, thermosets, the trap.",
+      "voiceover": {
+        "text": "Let's lock it in, and this closes out Module 8. Five things to take away. First, addition polymers form from alkene monomers with no by-product, while condensation polymers form by losing a small molecule like water or hydrogen chloride. Second, know the named examples, addition gives polyethylene, polypropylene, P-V-C, polystyrene, and P-T-F-E, while condensation gives nylon-six-six, P-E-T, and polycarbonate. Third, longer chains and stronger intermolecular forces raise strength, while branching reduces packing and raises flexibility. Fourth, cross-linking creates thermosets, which decompose rather than melt. And fifth, the trap, property differences come from structure and intermolecular forces, not just thickness. So in any polymer question, explain every property from the chain structure and the forces between chains. That's the whole module. Well done finishing Module 8."
+      }
+    }
+  ]
+}

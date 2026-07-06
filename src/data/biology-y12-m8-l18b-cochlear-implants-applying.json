@@ -1,0 +1,170 @@
+{
+  "title": "Hearing Loss and Cochlear Implants, Part B",
+  "subtitle": "The cochlear implant, a worked example, and the exam traps",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 18B",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "explain a range of causes of disorders by investigating the structures and functions of the relevant organs, for example the ear",
+    "investigate technologies that are used to assist with the effects of a disorder, including hearing aids, cochlear implants and bone conduction devices (ACSBL100)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How can technologies be used to assist people who experience disorders?",
+  "lessonIntent": "Students can trace the auditory pathway, distinguish conductive from sensorineural hearing loss, and match hearing aids, cochlear implants and bone conduction devices to the right disorder.",
+  "examSkill": "Match a hearing technology to a patient by the site of the hearing loss, and explain why a cochlear implant provides access to sound rather than restoring normal hearing.",
+  "productionRole": "production",
+  "productionNotes": "Part B of a 2-part split of L18. Opens with a brief recap of Part A, then the cochlear implant, the worked example, misconception, quick-check and summary. Assumes the student has watched Part A.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, hearing loss and cochlear implants, continued. Let's go."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Hearing Loss and Cochlear Implants, Part B (Year 12 Biology, Module 8, Lesson 18B)"
+    },
+    {
+      "id": "recap",
+      "type": "concept",
+      "heading": "Where we left off",
+      "body": "Quick recap from Part A. Sound travels outer to middle to inner ear, where hair cells turn vibration into nerve signals. Conductive loss blocks the path; sensorineural loss damages the hair cells. Aids amplify; bone conduction routes around a blocked middle ear.",
+      "bullets": [
+        {
+          "text": "Sound path: outer, middle, inner ear, then the auditory nerve.",
+          "at": 5
+        },
+        {
+          "text": "Conductive loss blocks sound; sensorineural damages hair cells.",
+          "at": 11
+        },
+        {
+          "text": "Hearing aids amplify; bone conduction bypasses the middle ear.",
+          "at": 17
+        }
+      ],
+      "callout": "Now the cochlear implant.",
+      "durationInFrames": 780,
+      "caption": "Quick recap of Part A before we continue.",
+      "revealDelays": {
+        "heading": 29,
+        "body": 88,
+        "bulletsStart": 107,
+        "callout": 698
+      },
+      "voiceover": {
+        "text": "Welcome back. Quick recap from Part A. Sound runs from the outer ear through the middle ear to the inner ear, where tiny hair cells convert the vibrations into nerve signals. Conductive loss is a blockage along that path, while sensorineural loss is damage to the hair cells themselves. Hearing aids just make sound louder, and bone conduction routes sound around a blocked middle ear. Right, but none of those fix dead hair cells, so let's meet the device that does."
+      },
+      "recapSeed": "Where we left off"
+    },
+    {
+      "id": "concept-cochlear-implant",
+      "type": "concept",
+      "heading": "The cochlear implant bypass",
+      "body": "A cochlear implant skips the dead hair cells entirely and feeds electrical pulses straight to the auditory nerve.",
+      "bullets": [
+        {
+          "text": "An external processor codes sound and sends it through the skin to an internal receiver."
+        },
+        {
+          "text": "An electrode array in the cochlea directly depolarises auditory nerve fibres."
+        },
+        {
+          "text": "It needs an intact auditory nerve, since it has nothing to stimulate without one."
+        }
+      ],
+      "secondary": "But it does not restore normal hearing. It provides only 12 to 22 channels versus around 3,500 hair cell positions, so the sound is different and often called robotic, and music is hard. Implanting children early, during the critical period for language, gives the best outcomes.",
+      "callout": "It gives access to sound, it does not restore normal hearing.",
+      "durationInFrames": 2148,
+      "caption": "A cochlear implant's electrode array stimulates the auditory nerve directly but gives far fewer channels than natural hearing.",
+      "voiceover": {
+        "text": "Now the third technology, the one for when the hair cells are simply gone, the cochlear implant. Instead of amplifying sound for hair cells, it bypasses them completely and stimulates the auditory nerve directly. Here's how. An external processor worn behind the ear has a microphone that captures sound, and a speech processor that splits it into frequency bands and codes it into electrical signals. A coil transmits those coded signals across the intact skin by radio waves to an internal receiver implanted under the skin, so no wires pierce the body. The receiver then sends precisely timed pulses to an electrode array threaded into the cochlea, and each electrode, sitting at its tonotopic position, directly depolarises the auditory nerve fibres there, skipping the dead hair cells entirely. One absolute requirement, the auditory nerve must be intact, because if there are no working nerve fibres, there's nothing for the electrodes to stimulate. But here is the most important point in this whole lesson, and the most penalised error in exams. A cochlear implant does not restore normal hearing. It gives only twelve to twenty two channels, against the roughly three and a half thousand hair cell positions of a natural cochlea, so the sound is different, often described as robotic, and music is genuinely difficult. That's why we say it provides access to sound, and why implanting children early, during the critical period for language, produces the best outcomes."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Matching the technology to the patient",
+      "question": "Recommend a hearing technology for each: (a) James, 72, with moderate age-related sensorineural loss but measurable residual hearing; (b) Sophie, 8, born with no ear canals but intact cochleae and nerves; (c) Daniel, profoundly deaf after meningitis destroyed his hair cells, but with intact auditory nerves.",
+      "coachNote": "For each, name the site of the loss first, then choose the technology whose mechanism fits that exact site.",
+      "steps": [
+        "(a) James has residual hair cells, so amplification works: a hearing aid suits his moderate sensorineural loss.",
+        "(b) Sophie has a conductive problem with no ear canals but a working cochlea, so a bone conduction device bypasses the outer ear.",
+        "(c) Daniel's hair cells are destroyed but his auditory nerve is intact, so a cochlear implant bypasses the hair cells.",
+        "Each choice matches the technology's mechanism to where the pathway is broken.",
+        "Answer: (a) hearing aid, (b) bone-anchored device, (c) cochlear implant ✓"
+      ],
+      "durationInFrames": 1926,
+      "caption": "(a) hearing aid, (b) bone conduction device, (c) cochlear implant, each matched to the site of loss.",
+      "voiceover": {
+        "text": "Let's apply it to three patients, because matching technology to patient is exactly how this is examined. For each one, name where the loss is first, then pick the technology whose mechanism fits. Part a, James, seventy two, with moderate age-related sensorineural loss, but importantly he still has measurable residual hearing. Residual hearing means he still has working hair cells, so amplification will help, and a hearing aid is the right choice. A cochlear implant would be inappropriate, it's irreversible and would destroy his remaining hair cells. Part b, Sophie, eight, born with no ear canals at all, but her cochleae and auditory nerves are perfectly intact. That's a conductive problem, sound can't get in, but the inner ear works fine. A conventional hearing aid is impossible with no ear canal, so the answer is a bone-anchored device, which sends vibration through the skull straight to her working cochlea. Part c, Daniel, profoundly deaf after meningitis destroyed his hair cells, but his auditory nerves are intact. His hair cells are gone, so amplification is useless, but the intact nerve is the key, so he's a candidate for a cochlear implant, which bypasses the dead hair cells and stimulates the nerve directly. Hearing aid, bone conduction, cochlear implant, each matched to where the break is."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: saying a cochlear implant restores normal hearing. It gives a different, coded signal of 12 to 22 channels that the brain must learn to interpret.",
+      "secondary": "Trap 2: recommending a bone conduction device for sensorineural loss. It sends vibration to the cochlea, so it still needs working hair cells, and only suits conductive loss. Trap 3: assuming a hearing aid helps every kind of loss. It only amplifies sound for residual hair cells, so it does nothing for profound sensorineural loss.",
+      "mistakeTag": "Where hearing-tech marks vanish",
+      "callout": "Implant gives access not normal hearing, bone conduction needs a cochlea, aids need residual cells.",
+      "durationInFrames": 1596,
+      "caption": "A cochlear implant gives access not normal hearing; bone conduction and hearing aids both need a working cochlea.",
+      "voiceover": {
+        "text": "Three traps that quietly cost marks every year. Trap one, the single most penalised error in this whole topic, saying a cochlear implant restores normal hearing. It does not. It provides a different, electrically coded signal, only twelve to twenty two channels against the cochlea's three and a half thousand, which the brain has to learn to interpret over months of rehabilitation, and music is poorly perceived. Always say it provides access to sound, never that it restores hearing. Trap two, recommending a bone conduction device for sensorineural loss. Remember, bone conduction sends vibration through the skull to the cochlea, so it still relies on a working cochlea with functioning hair cells. It's for conductive loss or single-sided deafness, not for damaged hair cells. Trap three, assuming a hearing aid helps every kind of hearing loss. It only amplifies sound for hair cells that still work, so for profound sensorineural loss, where the hair cells are gone, there's nothing left to respond, no matter how loud the sound. Nail those three and hearing-technology questions become easy marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Maya is born with profound sensorineural hearing loss in both ears and gets no benefit from hearing aids. Her auditory nerves are intact. Which technology is appropriate, and why are a hearing aid and a bone conduction device both unsuitable?",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Her loss is sensorineural, so her cochlear hair cells do not work.",
+        "A hearing aid only amplifies sound for residual hair cells, and she has none that function, so it cannot help.",
+        "A bone conduction device delivers vibration to the cochlea, which still needs working hair cells, so it also fails.",
+        "Her auditory nerves are intact, so a cochlear implant can bypass the hair cells and stimulate the nerve directly.",
+        "Answer: a cochlear implant, ideally implanted early during the critical period for language ✓"
+      ],
+      "durationInFrames": 1788,
+      "caption": "Maya needs a cochlear implant: aids and bone conduction both rely on the hair cells she lacks.",
+      "voiceover": {
+        "text": "Quick check, and this brings the whole lesson together. Maya is born with profound sensorineural hearing loss in both ears, and she gets no benefit at all from hearing aids, even at maximum volume. Her auditory nerves are intact. Which technology is appropriate, and why are both a hearing aid and a bone conduction device unsuitable? Pause and reason it through. Right, let's work it. First, her loss is sensorineural, which means her cochlear hair cells don't work. Now test each technology against that. A hearing aid only amplifies sound for hair cells that still function, and Maya has none that do, which is exactly why amplification gave her no benefit. So that's out. A bone conduction device sends vibration through the skull to the cochlea, but the cochlea still has to transduce it with working hair cells, which she lacks, so that fails too. But here's the key, her auditory nerves are intact. That makes her a candidate for a cochlear implant, which bypasses the dead hair cells completely and stimulates the auditory nerve directly. And ideally she's implanted early, during the critical period, to give the best language outcomes. The intact nerve is what makes it possible."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Sound goes outer ear, middle ear, cochlea, auditory nerve, cortex; the cochlea is the transducer.",
+        "Conductive loss is an outer or middle ear problem; sensorineural loss damages hair cells or nerve.",
+        "Hearing aids amplify for residual hair cells; bone conduction bypasses the outer and middle ear.",
+        "A cochlear implant bypasses dead hair cells to stimulate the auditory nerve, needing an intact nerve.",
+        "A cochlear implant gives access to sound with few channels, it does not restore normal hearing."
+      ],
+      "finalPrompt": "Choosing a hearing technology? Locate the break in the pathway, then pick the technology whose mechanism fits it.",
+      "durationInFrames": 1464,
+      "caption": "Five takeaways: the pathway, the two loss types, the three technologies, and what a cochlear implant really does.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, sound travels outer ear, middle ear, cochlea, auditory nerve, then cortex, and the cochlea is the transducer, converting vibration into electrical impulses. Second, conductive hearing loss is a problem in the outer or middle ear with an intact cochlea, while sensorineural loss damages the hair cells or auditory nerve and is usually permanent. Third, hearing aids amplify sound for residual hair cells, and bone conduction devices bypass the outer and middle ear but still need a working cochlea. Fourth, a cochlear implant bypasses dead hair cells to stimulate the auditory nerve directly, and it absolutely requires an intact auditory nerve. And fifth, the big one, a cochlear implant gives access to sound through only a handful of channels, it does not restore normal hearing. So whenever you choose a hearing technology, locate where the break in the pathway is, then pick the technology whose mechanism fits that exact spot. See you next lesson."
+      }
+    }
+  ]
+}

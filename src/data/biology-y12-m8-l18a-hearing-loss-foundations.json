@@ -1,0 +1,258 @@
+{
+  "title": "Hearing Loss and Cochlear Implants, Part A",
+  "subtitle": "The pathway of sound, the two types of hearing loss, and basic aids",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 18A",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "explain a range of causes of disorders by investigating the structures and functions of the relevant organs, for example the ear",
+    "investigate technologies that are used to assist with the effects of a disorder, including hearing aids, cochlear implants and bone conduction devices (ACSBL100)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How can technologies be used to assist people who experience disorders?",
+  "lessonIntent": "Students can trace the auditory pathway, distinguish conductive from sensorineural hearing loss, and match hearing aids, cochlear implants and bone conduction devices to the right disorder.",
+  "examSkill": "Match a hearing technology to a patient by the site of the hearing loss, and explain why a cochlear implant provides access to sound rather than restoring normal hearing.",
+  "productionRole": "production",
+  "productionNotes": "Part A of a 2-part split of L18. Covers the auditory pathway, conductive versus sensorineural loss, and hearing aids and bone conduction. Ends with a bridge to Part B (cochlear implant + worked example + practice). Silent title.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, hearing loss, and the technologies that bring sound back. We start with how the ear hears and the simpler devices. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Hearing Loss and Cochlear Implants, Part A (Year 12 Biology, Module 8, Lesson 18A)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Replacing 3,500 sensors with 22 electrodes",
+      "body": "In 1978 an Australian gave a deaf man hearing with a device that bypasses the ear's sensors entirely.",
+      "callout": "What does the cochlea do that makes bypassing it so hard?",
+      "image": "bioM8L18CochlearImplant",
+      "durationInFrames": 1428,
+      "caption": "Graeme Clark's 1978 multi-channel cochlear implant now restores functional hearing in over 700,000 people.",
+      "voiceover": {
+        "text": "In 1978, Graeme Clark at the University of Melbourne implanted the world's first multi-channel cochlear device into a profoundly deaf man, and for the first time, someone whose ear sensors were completely dead could hear again. His cochlear implant now works in over seven hundred thousand people worldwide, making it the most successful neural prosthetic in history. But here's the staggering part. The healthy inner ear uses around three and a half thousand sensory cells to detect sound, and Clark's implant replaces all of them with just twenty two electrodes. The World Health Organisation projects that by 2050, two and a half billion people, a quarter of the planet, will have some degree of hearing loss. So today we'll find out exactly what the cochlea does, why losing it is so different from a simple blockage, and how three very different technologies, the hearing aid, the cochlear implant, and bone conduction, each tackle a different point in the pathway."
+      }
+    },
+    {
+      "id": "concept-auditory-pathway",
+      "type": "concept",
+      "heading": "The pathway of sound",
+      "body": "Sound travels outer ear, middle ear, then cochlea, where hair cells convert vibration into the electrical signals the brain reads.",
+      "bullets": [
+        {
+          "text": "The outer ear funnels sound to the eardrum, which vibrates."
+        },
+        {
+          "text": "The middle ear bones amplify that vibration and pass it to the cochlea."
+        },
+        {
+          "text": "In the cochlea, hair cells turn vibration into nerve impulses sent to the brain."
+        }
+      ],
+      "secondary": "The cochlea is the transducer, converting mechanical energy into electrical energy. Its hair cells are laid out tonotopically, so high frequencies are detected at the base and low frequencies at the apex, which is how we tell pitch apart.",
+      "callout": "The cochlea is the transducer: vibration in, nerve impulses out.",
+      "durationInFrames": 1710,
+      "caption": "Outer ear to middle ear to cochlea to auditory nerve to cortex; the cochlea transduces vibration to impulses.",
+      "voiceover": {
+        "text": "So let's follow sound through the ear, because every technology targets a specific point in this pathway. First, the outer ear, the visible flap and the canal, funnels sound waves inward and makes the eardrum vibrate at the same frequency as the sound. Second, the middle ear, which holds three tiny bones, the malleus, incus and stapes. They act as a lever system, amplifying the vibration and passing it to the cochlea, and importantly they match the vibration from air into the fluid-filled inner ear. Third, the inner ear, the cochlea, a coiled, fluid-filled structure, and this is where the magic happens. Vibrations create pressure waves that ripple along a membrane lined with hair cells, and when those hair cells bend, they fire off electrical impulses down the auditory nerve to the auditory cortex in the brain. Here's the single most important idea, the cochlea is the transducer, the part that converts mechanical vibration into electrical signals. And those hair cells are arranged tonotopically, meaning high frequencies are picked up at one end, the base, and low frequencies at the other, the apex, which is exactly how you distinguish pitch."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "outer",
+            "label": "Outer ear"
+          },
+          {
+            "id": "middle",
+            "label": "Middle ear"
+          },
+          {
+            "id": "cochlea",
+            "label": "Cochlea"
+          },
+          {
+            "id": "nerve",
+            "label": "Auditory nerve"
+          },
+          {
+            "id": "brain",
+            "label": "Cortex"
+          }
+        ],
+        "edges": [
+          {
+            "from": "outer",
+            "to": "middle"
+          },
+          {
+            "from": "middle",
+            "to": "cochlea"
+          },
+          {
+            "from": "cochlea",
+            "to": "nerve"
+          },
+          {
+            "from": "nerve",
+            "to": "brain"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms run through hearing disorders, so lock them in before we compare technologies.",
+      "bullets": [
+        {
+          "text": "Cochlea: the coiled inner-ear structure that converts sound vibration into electrical signals."
+        },
+        {
+          "text": "Hair cells: the sensory cells in the cochlea that transduce vibration into nerve impulses."
+        },
+        {
+          "text": "Sensorineural hearing loss: damage to hair cells or the auditory nerve."
+        },
+        {
+          "text": "Conductive hearing loss: a problem in the outer or middle ear blocking sound."
+        },
+        {
+          "text": "Cochlear implant: a device that stimulates the auditory nerve directly, bypassing hair cells."
+        }
+      ],
+      "callout": "The transducer, its sensors, two kinds of loss, and the bypass device.",
+      "durationInFrames": 1404,
+      "caption": "Cochlea, hair cells, sensorineural hearing loss, conductive hearing loss, cochlear implant.",
+      "voiceover": {
+        "text": "Let's pin down five terms you'll use all lesson. The cochlea is the fluid-filled, coiled structure in the inner ear that converts sound vibrations into electrical signals. Hair cells are the sensory cells inside the cochlea whose tiny projections bend in response to vibration, generating the nerve impulses. Sensorineural hearing loss is hearing loss caused by damage to the hair cells or to the auditory nerve, and crucially it cannot be fixed by amplification alone. Conductive hearing loss is hearing loss caused by a problem in the outer or middle ear that reduces sound getting through to the cochlea, like fluid or a perforated eardrum. And a cochlear implant is a device that directly stimulates the auditory nerve through electrodes in the cochlea, bypassing hair cells that no longer work. Keep conductive and sensorineural firmly apart, because where the loss sits decides which technology can actually help, and that's the core skill of this whole lesson."
+      }
+    },
+    {
+      "id": "concept-two-types",
+      "type": "concept",
+      "heading": "Where the hearing breaks",
+      "body": "Hearing loss is classified by where in the pathway it occurs, and that location decides which technology can help.",
+      "bullets": [
+        {
+          "text": "Conductive loss is in the outer or middle ear, and the cochlea is still intact."
+        },
+        {
+          "text": "Sensorineural loss is in the hair cells or auditory nerve, and is usually permanent."
+        },
+        {
+          "text": "Mammalian hair cells do not regenerate, so sensorineural loss does not recover."
+        }
+      ],
+      "secondary": "This matters because a cochlear implant only helps sensorineural loss where the auditory nerve still works. If sound simply cannot reach a healthy cochlea, that is conductive loss, and amplification or bypassing the blockage is what helps.",
+      "callout": "Find where the break is before you pick the fix.",
+      "durationInFrames": 1674,
+      "caption": "Conductive loss spares the cochlea; sensorineural loss damages hair cells or nerve and is usually permanent.",
+      "voiceover": {
+        "text": "Now the classification that decides everything, because identifying the type of hearing loss tells you which technology is appropriate. There are two categories, and the key question is where in the pathway the breakdown occurs. The first is conductive hearing loss, where the problem is in the outer or middle ear, so sound simply can't be conducted through to the cochlea. Think fluid in the middle ear, a perforated eardrum, earwax, or stiffened ossicles. The vital point is that the cochlea itself is intact and working, so if you can just get sound to it, transduction happens normally. The second is sensorineural hearing loss, where the damage is in the cochlear hair cells or the auditory nerve itself. Causes include loud noise, ageing, genetics, and certain infections. And here's the hard truth, mammalian hair cells do not regenerate, so this kind of loss is typically permanent. This distinction is the whole game. A cochlear implant only helps sensorineural loss, and only if the auditory nerve still works, because it needs working nerve fibres to stimulate. So always find where the break is before choosing the fix."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Type",
+          "Site of problem",
+          "Cochlea status"
+        ],
+        "rows": [
+          [
+            "Conductive",
+            "Outer or middle ear",
+            "Intact and working"
+          ],
+          [
+            "Sensorineural",
+            "Hair cells or nerve",
+            "Damaged, usually permanent"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-aid-baha",
+      "type": "concept",
+      "heading": "Hearing aids and bone conduction",
+      "body": "A hearing aid amplifies sound for residual hair cells, while a bone conduction device sends vibration through the skull to an intact cochlea.",
+      "bullets": [
+        {
+          "text": "A hearing aid amplifies sound, so it needs some residual hair cell function to work."
+        },
+        {
+          "text": "A bone-anchored device vibrates the skull bone, delivering sound straight to the cochlea."
+        },
+        {
+          "text": "Bone conduction bypasses the outer and middle ear, but still needs a working cochlea."
+        }
+      ],
+      "secondary": "So a hearing aid suits mild to moderate loss with residual hearing, and a bone conduction device suits conductive loss or single-sided deafness. Neither helps profound sensorineural loss, because both still rely on a functioning cochlea.",
+      "callout": "Both still need a working cochlea downstream.",
+      "durationInFrames": 1800,
+      "caption": "Hearing aids amplify for residual hair cells; bone conduction bypasses outer and middle ear but needs a working cochlea.",
+      "voiceover": {
+        "text": "Let's take the first two technologies together, because they share one requirement. A hearing aid is an external device that simply amplifies incoming sound before it reaches the ear. A microphone picks up sound, an amplifier boosts it, often boosting specific frequencies where the person's loss is worst, and a speaker delivers louder sound into the ear canal. But notice, that amplified sound still travels the normal pathway, vibrating the eardrum and reaching the cochlea, so a hearing aid only works if there are residual hair cells left to respond. The second is the bone-anchored hearing aid, which uses a completely different route, bone conduction. A titanium implant is fixed into the skull bone behind the ear, and the processor converts sound into vibrations that travel directly through the skull to the cochlea, completely bypassing the outer and middle ear. But here's the catch they share, bone conduction still needs a working cochlea, because the cochlea still has to do the transduction. So a hearing aid suits mild to moderate loss with residual hearing, and a bone conduction device suits conductive loss or single-sided deafness. Neither one helps profound sensorineural loss, because both still depend on a functioning cochlea downstream."
+      }
+    },
+    {
+      "id": "bridge-to-part-b",
+      "type": "endCard",
+      "partLabel": "Part B",
+      "partSubtitle": "The cochlear implant and the exam",
+      "heading": "Next: the cochlear implant and applying it",
+      "body": "You have got the pathway of sound, the two types of hearing loss, and how hearing aids and bone-conduction devices help. In Part B we reach the headline technology.",
+      "bullets": [
+        {
+          "text": "The cochlear implant, how it bypasses the damaged hair cells.",
+          "at": 6
+        },
+        {
+          "text": "A worked example matching the technology to the patient.",
+          "at": 11
+        },
+        {
+          "text": "The common traps, a quick-check question, and the summary.",
+          "at": 15
+        }
+      ],
+      "ctaLabel": "Watch Part B →",
+      "callout": "see you there",
+      "durationInFrames": 612,
+      "caption": "End of Part A, continued in Part B.",
+      "revealDelays": {
+        "heading": 24,
+        "body": 80,
+        "bulletsStart": 80,
+        "callout": 540
+      },
+      "voiceover": {
+        "text": "OK, that is the foundation in place. You can trace sound through the ear, you know the difference between conductive and sensorineural hearing loss, and you understand where hearing aids and bone-conduction devices fit in. In Part B, we get to the technology this lesson is named for, the cochlear implant, and see exactly how it bypasses the damaged part of the ear. Then we match the right device to the right patient, clear up the traps, and finish with a quick check. See you there."
+      }
+    }
+  ]
+}

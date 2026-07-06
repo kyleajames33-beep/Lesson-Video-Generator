@@ -11,6 +11,7 @@
 //   Summary   → summary
 
 import {TOK, FONT_MONO} from '../../styles/tokens';
+import {useAccent} from '../../styles/theme';
 
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
 
@@ -47,6 +48,7 @@ type ChapterRibbonProps = {
 export const ChapterRibbon = ({sceneType}: ChapterRibbonProps) => {
 	const currentPhase = getPhase(sceneType);
 	const activeIndex = PHASES.indexOf(currentPhase);
+	const theme = useAccent();
 
 	return (
 		<div
@@ -67,7 +69,7 @@ export const ChapterRibbon = ({sceneType}: ChapterRibbonProps) => {
 				const isFuture = index > activeIndex;
 
 				const barOpacity = isActive ? 1 : isPast ? 0.5 : 0.2;
-				const textColor = isActive ? TOK.chem2 : isPast ? TOK.inkDim : TOK.inkMute;
+				const textColor = isActive ? theme.accent2 : isPast ? TOK.inkDim : TOK.inkMute;
 				const textOpacity = isActive ? 1 : isPast ? 0.6 : 0.35;
 
 				return (
@@ -86,7 +88,7 @@ export const ChapterRibbon = ({sceneType}: ChapterRibbonProps) => {
 								width: '100%',
 								height: 3,
 								borderRadius: 2,
-								background: isActive ? TOK.chem2 : isPast ? TOK.inkDim : TOK.inkMute,
+								background: isActive ? theme.accent2 : isPast ? TOK.inkDim : TOK.inkMute,
 								opacity: barOpacity,
 								transition: 'none',
 							}}

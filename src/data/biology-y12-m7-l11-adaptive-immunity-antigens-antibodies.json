@@ -1,0 +1,356 @@
+{
+  "title": "Adaptive Immunity — Antigens and Antibodies",
+  "subtitle": "Finding the one matching cell among millions",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 11",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "investigate and model the innate and adaptive immune systems in the human body (ACSBL119)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does the human immune system respond to exposure to a pathogen?",
+  "lessonIntent": "Students can define antigen and epitope, describe antibody structure and actions, explain clonal selection, and contrast the primary and secondary responses.",
+  "examSkill": "Explain clonal selection and why the secondary immune response is faster and stronger than the primary.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, adaptive immunity, antigens and antibodies. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Adaptive Immunity — Antigens and Antibodies (Year 12 Biology, Module 7, Lesson 11)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A library, and the one matching book",
+      "body": "Burnet proposed the body pre-makes millions of B cells. Infection selects the one that matches and multiplies it.",
+      "callout": "How does the body find the perfect match so fast?",
+      "image": "bioM7L11AntibodyStructure",
+      "durationInFrames": 1545,
+      "caption": "Burnet's clonal selection theory: the body pre-makes B cells and selects the matching clone.",
+      "voiceover": {
+        "text": "In nineteen fifty-seven, an Australian scientist, Frank Macfarlane Burnet, proposed something radical. The body, he suggested, pre-makes an entire library of B cells, each carrying a unique receptor, before it ever meets a pathogen. Then, when an infection arrives, it selects the single B cell that matches, and multiplies it into an army of antibody factories, churning out up to two thousand antibodies per second. He won the nineteen sixty Nobel Prize for this idea, clonal selection. But it raises an obvious question. How does the body find that one perfect match so quickly, among millions of candidates? That's the machinery we're building today, and it's the basis of every vaccine you've ever had."
+      }
+    },
+    {
+      "id": "concept-antigen",
+      "type": "concept",
+      "heading": "Antigens and epitopes",
+      "body": "The adaptive system recognises specific molecules on a pathogen, and only a small region of each one.",
+      "bullets": [
+        {
+          "text": "Antigen: any molecule the adaptive system recognises, triggering a specific response."
+        },
+        {
+          "text": "Epitope: the exact region of an antigen that an antibody actually binds."
+        },
+        {
+          "text": "One antigen can carry many epitopes, each stimulating a different B cell."
+        }
+      ],
+      "secondary": "The immune system tolerates self-antigens, your own normal molecules, but attacks non-self antigens. This self versus non-self recognition is the basis of specificity.",
+      "callout": "The antigen is the whole tag; the epitope is the spot.",
+      "durationInFrames": 1780,
+      "caption": "An antigen is a recognised molecule; the epitope is the precise region an antibody binds.",
+      "voiceover": {
+        "text": "Let's start with what the adaptive system actually recognises. An antigen is any molecule the adaptive immune system recognises as foreign, triggering a specific response. Most antigens are proteins or polysaccharides on a pathogen's surface, like the spike protein of a coronavirus. But here's the precise bit. An antibody doesn't bind the whole antigen, it binds just one small region of it, and that region is the epitope. So one antigen can carry many epitopes, each stimulating a different B cell clone. There's also a crucial distinction your immune system makes. It tolerates self-antigens, the normal molecules on your own cells, but attacks non-self antigens, the foreign ones. That self versus non-self recognition is the basis of immune specificity, letting the system target a pathogen while leaving your own cells alone."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The terms you need",
+      "bullets": [
+        {
+          "text": "Antibody: a Y-shaped protein from plasma cells that binds one specific antigen."
+        },
+        {
+          "text": "Clonal selection: activating the lymphocyte whose receptor matches the antigen."
+        },
+        {
+          "text": "Plasma cell: an activated B cell that secretes large amounts of antibody."
+        },
+        {
+          "text": "Memory B cell: a long-lived B cell enabling a faster secondary response."
+        }
+      ],
+      "callout": "Plasma cells fight now; memory cells wait for next time.",
+      "durationInFrames": 1560,
+      "caption": "Antibody, clonal selection, plasma cell, memory B cell.",
+      "voiceover": {
+        "text": "Four terms underpin the rest of the lesson. An antibody, also called an immunoglobulin, is a Y-shaped protein made by plasma cells, and it binds one specific antigen. Clonal selection is the activation of the one lymphocyte clone whose receptor matches a particular antigen. A plasma cell is an activated B cell that has become an antibody factory, secreting huge amounts of antibody, but it's short-lived, lasting days to weeks. And a memory B cell is a long-lived B cell that persists for years, ready for a much faster response if the same antigen returns. The pairing to lock in, plasma cells fight the current infection, while memory cells wait in reserve for next time."
+      }
+    },
+    {
+      "id": "concept-antibody",
+      "type": "concept",
+      "heading": "Antibody structure and actions",
+      "body": "Every antibody shares a Y-shape but has a unique binding site, and it marks pathogens rather than killing them.",
+      "bullets": [
+        {
+          "text": "The variable region is the unique antigen-binding site that fits one epitope."
+        },
+        {
+          "text": "The constant region sets the antibody's class and effector functions."
+        },
+        {
+          "text": "Each antibody has two identical binding sites."
+        }
+      ],
+      "secondary": "Four actions: neutralisation blocks attachment, opsonisation marks for phagocytosis, complement activation forms the membrane attack complex, and agglutination clumps pathogens.",
+      "callout": "Antibodies mark and block; they do not kill directly.",
+      "durationInFrames": 1870,
+      "caption": "The variable region binds one epitope; antibodies neutralise, opsonise, activate complement, agglutinate.",
+      "voiceover": {
+        "text": "Now the antibody itself. Every antibody has the same basic Y-shape, but a unique antigen-binding site that matches exactly one epitope. The tips of the Y are the variable region, the unique binding site that gives each antibody its specificity. The stem is the constant region, which sets the antibody's class and effector functions. And each antibody has two identical binding sites, one on each arm. So what do antibodies do? Four things. Neutralisation, binding a pathogen to block it from attaching to host cells. Opsonisation, coating a pathogen to mark it for phagocytosis. Complement activation, where antibody-antigen complexes trigger the complement cascade and a membrane attack complex. And agglutination, clumping pathogens together, since each antibody has two binding sites, making them easier to engulf. The key point, antibodies mark or block pathogens, they don't kill them directly."
+      }
+    },
+    {
+      "id": "concept-clonal",
+      "type": "concept",
+      "heading": "Clonal selection and expansion",
+      "body": "The body can't pre-make an antibody for every germ, so it finds and mass-produces the one match on demand.",
+      "bullets": [
+        {
+          "text": "Millions of naive B cells exist, each with a unique receptor for one antigen."
+        },
+        {
+          "text": "Selection: the antigen binds the one matching B cell, with a T helper signal."
+        },
+        {
+          "text": "Expansion: that cell divides into plasma cells and memory B cells."
+        }
+      ],
+      "secondary": "B cells need a co-stimulatory signal from a T helper cell to fully activate. This is why HIV, which destroys T helper cells, eventually cripples antibody responses.",
+      "callout": "One cell is selected, then becomes an army.",
+      "durationInFrames": 2010,
+      "caption": "The antigen selects the one matching B cell, which expands into plasma and memory cells.",
+      "voiceover": {
+        "text": "So how does the body find that one matching cell Burnet described? Through clonal selection and expansion. Your body holds millions of different naive B cells, each carrying a unique receptor that binds only one specific antigen, and almost all have never met their antigen. Now an antigen arrives, often presented on a dendritic cell from the innate system, as we saw last lesson. It binds the one B cell whose receptor matches, and that's the selection step. That B cell also needs a co-stimulatory signal from a T helper cell that recognised the same antigen. With both signals, clonal expansion begins, the selected B cell divides rapidly into two fates, plasma cells, the short-lived antibody factories, and memory B cells, the long-lived reserve. And one key consequence, because B cells need that T helper signal, HIV, which destroys T helper cells, eventually cripples the whole antibody response."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "many",
+            "label": "Many"
+          },
+          {
+            "id": "select",
+            "label": "Select"
+          },
+          {
+            "id": "expand",
+            "label": "Expand"
+          },
+          {
+            "id": "memory",
+            "label": "Memory"
+          }
+        ],
+        "edges": [
+          {
+            "from": "many",
+            "to": "select"
+          },
+          {
+            "from": "select",
+            "to": "expand"
+          },
+          {
+            "from": "expand",
+            "to": "memory"
+          }
+        ]
+      }
+    },
+    {
+      "id": "concept-secondary",
+      "type": "concept",
+      "heading": "Primary versus secondary response",
+      "body": "The dramatic difference between a first and second exposure is explained entirely by memory B cells.",
+      "bullets": [
+        {
+          "text": "Primary: 7 to 14 days to peak, a modest antibody level, and you may fall ill."
+        },
+        {
+          "text": "Secondary: 1 to 3 days to peak, a much higher level, often before symptoms."
+        },
+        {
+          "text": "Memory B cells activate immediately on re-exposure, driving the faster response."
+        }
+      ],
+      "secondary": "This is the basis of vaccination. A vaccine creates memory cells safely, so a real infection later triggers a rapid, powerful secondary response.",
+      "callout": "Second time around: faster, higher, and you barely notice.",
+      "durationInFrames": 1870,
+      "caption": "The secondary response is faster and far larger because memory B cells act immediately.",
+      "voiceover": {
+        "text": "Finally, the payoff, the difference between your first and second exposure, explained entirely by memory B cells. The primary response is your first meeting with an antigen. It takes seven to fourteen days to peak, the level is relatively low, and because it's slow, you may become ill while your body catches up. The secondary response is any later exposure to the same antigen. Now it peaks in just one to three days, because the memory B cells activate immediately, the peak is much higher and longer-lasting, and the infection is usually cleared before symptoms even appear. Picture antibody level against time, and the primary is a slow, small bump while the secondary is a sharp, towering peak. This is exactly the basis of vaccination, the memory cells made safely the first time drive that rapid second response."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Time",
+        "yLabel": "Antibody level",
+        "series": [
+          {
+            "label": "1st exposure",
+            "color": "chem1",
+            "points": [
+              [
+                0,
+                0.02
+              ],
+              [
+                0.12,
+                0.05
+              ],
+              [
+                0.22,
+                0.28
+              ],
+              [
+                0.32,
+                0.34
+              ],
+              [
+                0.42,
+                0.22
+              ],
+              [
+                0.5,
+                0.12
+              ],
+              [
+                0.6,
+                0.08
+              ]
+            ]
+          },
+          {
+            "label": "2nd exposure",
+            "color": "bio",
+            "points": [
+              [
+                0.6,
+                0.08
+              ],
+              [
+                0.66,
+                0.4
+              ],
+              [
+                0.72,
+                0.85
+              ],
+              [
+                0.8,
+                0.92
+              ],
+              [
+                0.9,
+                0.8
+              ],
+              [
+                1,
+                0.7
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 0.6,
+            "label": "2nd exposure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Why the second time is faster",
+      "question": "After a first infection, antibody levels peak at day 14, then fall. On re-exposure at day 60, antibodies peak within 3 days at a far higher level. Explain this difference.",
+      "coachNote": "Link each feature of the curves to the cells responsible.",
+      "steps": [
+        "The first exposure is the primary response: naive B cells must be selected and expanded, which is slow.",
+        "That delay explains the 14-day peak and the relatively modest antibody level.",
+        "Clonal expansion also left behind long-lived memory B cells that persisted to day 60.",
+        "On re-exposure, those memory cells activate immediately, giving the 3-day peak.",
+        "Answer: memory B cells make the secondary response faster and far larger than the primary."
+      ],
+      "durationInFrames": 1860,
+      "caption": "Naive cells make the primary slow; memory cells make the secondary fast and large.",
+      "voiceover": {
+        "text": "Let's interpret some response data, the style the HSC uses. After a first infection, antibody levels peak at day fourteen, then fall away. But on re-exposure at day sixty, they peak within just three days, and far higher. Explain the difference. First, the initial exposure is the primary response, where naive B cells must be selected and expanded from scratch, and that's slow, which is why the peak waits until day fourteen and stays modest. Second, the crucial part, that clonal expansion also left behind long-lived memory B cells, which persisted right through to day sixty. Third, on re-exposure, those memory cells don't have to be built from nothing, they activate immediately, giving the rapid three-day peak. So the answer is, the memory B cells make the secondary response both faster and far larger than the primary."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking one antibody can bind any pathogen. Antibodies are specific; each binds one matching epitope, which is why clonal selection is needed.",
+      "secondary": "Trap 2: thinking antibodies kill pathogens directly, like piercing their membranes. They mark and block, through neutralisation, opsonisation, complement activation, and agglutination. The killing is done by phagocytes and complement.",
+      "mistakeTag": "Where adaptive-immunity marks vanish",
+      "callout": "One antibody, one epitope; antibodies tag, they don't kill.",
+      "durationInFrames": 1725,
+      "caption": "Antibodies are specific to one epitope and mark pathogens rather than killing directly.",
+      "voiceover": {
+        "text": "Two traps to finish the module's immunity strand. Trap one, thinking that once an antibody is made, it can bind any pathogen. It can't. Antibodies are highly specific, each one binds a single matching epitope and nothing else, and that's the whole reason clonal selection exists, to find and multiply the one B cell that makes the right antibody. Trap two, thinking antibodies kill pathogens directly, for example by piercing their membranes. They don't. Antibodies mark and block, through neutralisation, opsonisation, complement activation, and agglutination. The actual killing is done by other players, the phagocytes that engulf the marked pathogens, and the complement system that forms the membrane attack complex. So remember, one antibody binds one epitope, and antibodies tag the target, they don't kill it themselves."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A vaccine contains a harmless version of a pathogen's antigen. Explain how it protects someone from later infection, using clonal selection and the secondary response.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The vaccine antigen is recognised by the one matching B cell, which undergoes clonal selection.",
+        "That B cell expands into plasma cells and, crucially, long-lived memory B cells.",
+        "No illness results, because the antigen is harmless, but the memory cells persist.",
+        "On real infection, those memory cells trigger a rapid, large secondary response.",
+        "Answer: the vaccine builds memory cells safely, so a later infection meets a fast secondary response."
+      ],
+      "durationInFrames": 1830,
+      "caption": "A vaccine builds memory cells safely, enabling a rapid secondary response on real infection.",
+      "voiceover": {
+        "text": "Quick check, and it ties everything together. A vaccine contains a harmless version of a pathogen's antigen. Explain how it protects someone from a later infection, using clonal selection and the secondary response. Pause and reason it through. Right. When the vaccine is given, its antigen is recognised by the one matching B cell, which undergoes clonal selection. That B cell expands into plasma cells and, the important part, long-lived memory B cells. Because the antigen is harmless, no illness results, but the memory cells persist for years. Then, if the person meets the real pathogen, those memory cells are already there, triggering a rapid, large secondary response that clears the infection before symptoms develop. So the answer is, the vaccine safely builds memory cells, so a later real infection meets a fast secondary response."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "An antigen is a recognised molecule; the epitope is the exact region an antibody binds.",
+        "Antibodies are Y-shaped; the variable region gives specificity, and they mark, not kill.",
+        "Clonal selection picks the one matching B cell; expansion makes plasma and memory cells.",
+        "The secondary response is faster and larger, thanks to memory B cells.",
+        "Vaccination works by safely creating memory cells in advance."
+      ],
+      "finalPrompt": "Explaining immunity or vaccines? Trace selection, then memory, then the secondary response.",
+      "durationInFrames": 1805,
+      "caption": "Five takeaways: antigen and epitope, antibody, clonal selection, secondary response, vaccines.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, an antigen is any molecule the adaptive system recognises, while the epitope is the exact region an antibody actually binds. Second, antibodies are Y-shaped, their variable region gives specificity, and they mark or block pathogens rather than killing directly. Third, clonal selection picks the one B cell whose receptor matches the antigen, and expansion turns it into plasma cells and memory cells. Fourth, the secondary response is faster and far larger than the primary, thanks to those memory B cells. And fifth, vaccination works by safely creating memory cells in advance. Whenever you explain immunity or vaccines, trace the selection, then the memory, then the secondary response. That completes our look at how the body defends itself. See you in the next lesson."
+      }
+    }
+  ]
+}

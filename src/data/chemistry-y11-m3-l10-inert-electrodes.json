@@ -1,0 +1,274 @@
+{
+  "title": "Galvanic Cells — Inert Electrodes & Predicting Reactions",
+  "subtitle": "Using standard potentials to predict what will react",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 10",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 3: Reactive Chemistry",
+  "syllabusDotPoints": [
+    "Conduct investigations to measure and compare the reduction potential of galvanic half-cells",
+    "Calculate the potential difference of galvanic cells using standard reduction potentials",
+    "Predict the spontaneity of redox reactions using standard reduction potentials"
+  ],
+  "lessonIntent": "Students can predict whether a metal will react with dilute acid using standard reduction potentials, and explain when inert electrodes are needed.",
+  "examSkill": "Use E° values to predict acid reactivity of metals and identify when inert electrodes are required.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson subjects/chemistry/year11/module3/lesson10.html. Real-world anchor: cathodic protection on ships. Worked example: Cu vs Zn in dilute HCl using E°. Misconception: all metals react with acid. Uses galvanicCell diagram from L9.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Galvanic Cells - Inert Electrodes and Predicting Reactions. Year 11 Chemistry, Module 3.",
+      "voiceover": {
+        "text": "Galvanic Cells - Inert Electrodes and Predicting Reactions. Year eleven Chemistry, Module three.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L10/title.3592621abf41.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Does copper react with hydrochloric acid?",
+      "body": "Zinc fizzes violently in dilute acid. Copper does nothing. But why? It is not about courage. It is about standard reduction potentials. A metal will only dissolve in acid if its E° is below zero volts - below hydrogen. Copper sits at plus zero-point-three-four volts. It is too noble to be bothered by acid.",
+      "bullets": [
+        {
+          "text": "Zn fizzes in acid. Cu does nothing.",
+          "at": 4
+        },
+        {
+          "text": "The difference is E°, not speed or courage.",
+          "at": 10
+        },
+        {
+          "text": "E° < 0 V → metal displaces H⁺ from acid.",
+          "at": 16
+        },
+        {
+          "text": "E° > 0 V → metal cannot displace H⁺.",
+          "at": 23
+        },
+        {
+          "text": "E° tells you the answer before you open the bottle.",
+          "at": 30
+        }
+      ],
+      "callout": "E° tells you the answer before you open the reagent bottle.",
+      "image": "l10HookCopperAcid",
+      "durationInFrames": 1260,
+      "caption": "Copper does not react with acid because its E° is above hydrogen.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "bulletsStart": 90,
+        "callout": 1020,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Does copper react with hydrochloric acid? Zinc fizzes violently in dilute acid. Copper does nothing. But why? It is not about courage. It is about standard reduction potentials. A metal will only dissolve in acid if its E° is below zero volts - below hydrogen. Copper sits at plus zero-point-three-four volts. It is too noble to be bothered by acid. E° tells you the answer before you open the reagent bottle.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L10/hook.6ca8bb4ce598.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Inert electrodes fill the gap",
+      "body": "Think of an inert electrode as a toll bridge: it lets traffic pass but does not enter the traffic itself. Where the analogy breaks: a toll bridge collects money; an electrode only transfers electrons without gaining or losing anything. What happens when both the oxidant and reductant are dissolved or gaseous? You cannot dip a solid metal into a solution of ions if there is no solid metal involved. Enter the inert electrode.",
+      "bullets": [
+        {
+          "text": "Inert electrodes = Pt or graphite. They conduct electrons but do not react.",
+          "at": 4
+        },
+        {
+          "text": "Used when both species in a half-cell are aqueous or gaseous.",
+          "at": 12
+        },
+        {
+          "text": "Example: Fe³⁺/Fe²⁺ half-cell uses a Pt electrode.",
+          "at": 20
+        },
+        {
+          "text": "The electrode provides a surface for electron transfer without participating.",
+          "at": 28
+        }
+      ],
+      "callout": "No solid metal? Use platinum or graphite.",
+      "diagram": {
+        "type": "galvanicCell",
+        "leftMetal": "Pt",
+        "leftIon": "Fe²⁺/Fe³⁺",
+        "rightMetal": "Cu",
+        "rightIon": "Cu²⁺",
+        "delay": 0
+      },
+      "durationInFrames": 1620,
+      "caption": "Inert electrodes conduct electrons without reacting themselves.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1200,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Think of an inert electrode as a toll bridge. It lets traffic pass but does not enter the traffic itself. Where the analogy breaks: a toll bridge collects money; an electrode only transfers electrons without gaining or losing anything. What happens when both the oxidant and reductant are dissolved or gaseous? You cannot dip a solid metal into a solution if there is no solid metal involved. Enter the inert electrode. Platinum or graphite conduct electrons but do not react. Use them when both species in a half-cell are aqueous or gaseous. For example, an Fe three plus over Fe two plus half-cell uses a platinum electrode. The electrode provides a surface for electron transfer without participating.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L10/concept.5f2ed27cee72.mp3"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Predicting reactivity from E°",
+      "body": "Standard reduction potentials are not just numbers. They are a reactivity ranking. Any metal with E° less than zero volts can displace hydrogen from acid. Any metal with E° greater than zero volts cannot.",
+      "bullets": [
+        {
+          "text": "E°(H⁺/H₂) = 0.00 V is the reference point.",
+          "at": 4
+        },
+        {
+          "text": "Metal with E° < 0 V → reacts with dilute acid → produces H₂ gas.",
+          "at": 11
+        },
+        {
+          "text": "Metal with E° > 0 V → does not react with dilute acid.",
+          "at": 19
+        },
+        {
+          "text": "The more negative the E°, the more reactive the metal.",
+          "at": 26
+        },
+        {
+          "text": "This is the quantitative version of the activity series.",
+          "at": 32
+        }
+      ],
+      "callout": "E° < 0 V = acid reactive. E° > 0 V = acid inert.",
+      "image": "l10DefinitionAcidReactivity",
+      "durationInFrames": 1440,
+      "caption": "E° values predict acid reactivity: below zero reacts, above zero does not.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1200,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Standard reduction potentials are not just numbers. They are a reactivity ranking. Any metal with E° less than zero volts can displace hydrogen from acid. Any metal with E° greater than zero volts cannot. Hydrogen over hydrogen two is the reference at zero volts. The more negative the E°, the more reactive the metal. This is the quantitative version of the activity series - now with actual numbers that predict behaviour.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L10/definition.2b7393a1987c.mp3"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Predicting acid reactivity from E°",
+      "question": "Predict whether copper metal and zinc metal will each react with dilute hydrochloric acid. Justify your predictions using standard reduction potentials: E°(Cu²⁺/Cu) = +0.34 V and E°(Zn²⁺/Zn) = -0.76 V.",
+      "coachNote": "Target: compare each metal's E° to hydrogen (0.00 V). Below = reacts. Above = does not.",
+      "unitCancel": {
+        "left": "V",
+        "right": "V",
+        "result": "V"
+      },
+      "steps": [
+        "Known: E°(Cu²⁺/Cu) = +0.34 V. E°(Zn²⁺/Zn) = -0.76 V. E°(H⁺/H₂) = 0.00 V.",
+        "Find: will Cu and Zn each react with dilute HCl?",
+        "Formula: compare E°(metal) to E°(H⁺/H₂) = 0.00 V.",
+        "Substitute: E°(Zn) = -0.76 V < 0.00 V → Zn is more reactive than H₂.",
+        "Predict Zn: Zn displaces H⁺ from acid. Reaction: Zn + 2HCl → ZnCl₂ + H₂.",
+        "Substitute: E°(Cu) = +0.34 V > 0.00 V → Cu is less reactive than H₂.",
+        "Predict Cu: Cu cannot displace H⁺ from acid. No reaction.",
+        "Answer: Zn reacts; Cu does not. E° relative to 0.00 V decides."
+      ],
+      "image": "l10WorkedExampleCuZn",
+      "durationInFrames": 1440,
+      "caption": "Zn reacts (E° < 0). Cu does not (E° > 0). E° predicts the outcome.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 120
+      },
+      "voiceover": {
+        "text": "Predict whether copper and zinc react with dilute hydrochloric acid. E° for copper is plus zero-point-three-four volts. E° for zinc is minus zero-point-seven-six volts. Target: compare each to hydrogen at zero volts. Zinc is below zero - more reactive than hydrogen - so it displaces H plus from acid. Copper is above zero - less reactive than hydrogen - so it cannot displace H plus. Answer: zinc reacts vigorously; copper does not react at all. E° relative to zero volts decides before you even open the bottle.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L10/worked-example.3afb167feac3.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Every metal reacts with acid?",
+      "body": "Students often think: \"All metals react with acid - some just react slowly.\" That is the wrong instinct. Copper, silver, and gold have positive E° values. They are thermodynamically unable to displace hydrogen from acid. It is not about speed. It is about whether the reaction is spontaneous at all. The correct rule: compare E° to zero volts. Below zero means reaction. Above zero means no reaction.",
+      "callout": "No reaction is not slow reaction. Check E° first.",
+      "mistakeTag": "Universal acid reactivity",
+      "image": "l10MisconceptionCopperAcid",
+      "durationInFrames": 1350,
+      "caption": "Copper, silver, and gold have E° > 0 V. They cannot displace H⁺.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here is the trap. Students think all metals react with acid, and that some just react slowly, but that's wrong. Copper, silver, and gold all have positive E° values, which means they are thermodynamically unable to displace hydrogen from acid. So it isn't about speed at all, it's about whether the reaction is even spontaneous in the first place. The rule is to compare the metal's E° to zero volts, where below zero means a reaction happens and above zero means it doesn't. With copper, no reaction genuinely means no reaction, not just a slow one."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "Predict whether magnesium and tin will each react with dilute sulfuric acid. E°(Mg²⁺/Mg) = -2.37 V and E°(Sn²⁺/Sn) = -0.14 V. Write balanced equations for any reactions that occur.",
+      "pausePrompt": "Pause: compare each E° to 0.00 V before the answer plays.",
+      "answerSteps": [
+        "Known: E°(Mg²⁺/Mg) = -2.37 V. E°(Sn²⁺/Sn) = -0.14 V. E°(H⁺/H₂) = 0.00 V.",
+        "Mg: -2.37 V < 0.00 V → reacts with acid.",
+        "Sn: -0.14 V < 0.00 V → reacts with acid.",
+        "Mg equation: Mg(s) + H₂SO₄(aq) → MgSO₄(aq) + H₂(g).",
+        "Sn equation: Sn(s) + H₂SO₄(aq) → SnSO₄(aq) + H₂(g).",
+        "Answer: Both react. Mg is more reactive (more negative E°)."
+      ],
+      "image": "l10QuickCheckMgSn",
+      "durationInFrames": 1440,
+      "caption": "Both Mg and Sn react (E° < 0). Mg is more reactive.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 540,
+        "answerInterval": 100
+      },
+      "voiceover": {
+        "text": "Time for you to try one. Predict whether magnesium and tin react with dilute sulfuric acid. E° for magnesium is minus two-point-three-seven volts. E° for tin is minus zero-point-one-four volts. Pause now. Right - both are below zero volts, so both react with acid. Magnesium equation: Mg plus H two SO four gives Mg SO four plus H two gas. Tin equation: Sn plus H two SO four gives Sn SO four plus H two gas. Magnesium is far more reactive because its E° is much more negative.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L10/quick-check.3dd9f10d631f.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Is the metal's E° more negative or more positive than hydrogen?",
+      "image": "l10SummaryInertElectrodes",
+      "points": [
+        "Inert electrodes (Pt, graphite) conduct electrons without reacting.",
+        "Use inert electrodes when both half-cell species are aqueous or gaseous.",
+        "Metals with E° < 0.00 V react with dilute acid; metals with E° > 0.00 V do not.",
+        "E° is a quantitative reactivity ranking - the activity series with numbers.",
+        "A positive E°cell means spontaneous; negative means non-spontaneous."
+      ],
+      "durationInFrames": 1260,
+      "caption": "Five takeaways and one decision rule for inert electrodes and acid reactivity.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 110,
+        "finalPrompt": 720,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways. One: inert electrodes - platinum or graphite - conduct electrons without reacting. Two: use them when both half-cell species are aqueous or gaseous. Three: metals with E° below zero volts react with dilute acid; metals with E° above zero volts do not. Four: E° is a quantitative reactivity ranking - the activity series with numbers. Five: a positive E°cell means spontaneous; negative means non-spontaneous. Decision rule: is the metal's E° more negative or more positive than hydrogen?",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L10/summary.99985e7e898b.mp3"
+      }
+    }
+  ]
+}

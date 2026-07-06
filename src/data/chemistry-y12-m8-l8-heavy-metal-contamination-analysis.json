@@ -1,0 +1,204 @@
+{
+  "title": "Heavy Metal Contamination and Analysis",
+  "subtitle": "Trace concentration, high consequence",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 8",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8: Applying Chemical Ideas",
+  "syllabusDotPoints": [
+    "conduct investigations and/or process data to determine the concentration of heavy metal ions in aqueous solution using atomic absorption spectroscopy",
+    "analyse the need for monitoring the environment for heavy metal contamination"
+  ],
+  "moduleLessonCount": 16,
+  "nesaOutcomes": ["CH12-15", "CH11/12-2", "CH11/12-5", "CH11/12-7"],
+  "inquiryQuestion": "How are the ions present in the environment identified and measured?",
+  "lessonIntent": "Students can name key heavy metals and sources, justify AAS for trace monitoring, distinguish bioaccumulation from biomagnification, and match remediation strategies to context.",
+  "examSkill": "Justify AAS for trace metals, explain why a low water concentration can still be high-risk through bioaccumulation and biomagnification, and select an appropriate remediation method.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, heavy metal contamination and analysis. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Heavy Metal Contamination and Analysis (Year 12 Chemistry, Module 8, Lesson 8)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A bay poisoned by a number too small to see",
+      "body": "Mercury at trace levels in water still devastated Minamata, by climbing the food chain into people.",
+      "callout": "Low in the water can still be lethal in a predator.",
+      "durationInFrames": 660,
+      "caption": "Heavy metals are toxic at trace levels and concentrate up food chains.",
+      "voiceover": {
+        "text": "OK, here's the lesson that should change how you read a contamination report. In Minamata Bay in Japan, mercury sat in the water at concentrations that looked almost trivial. And yet it caused one of the worst poisoning disasters in history, with severe neurological damage and deaths. How? The mercury didn't stay dilute, it climbed the food chain, concentrating at every step until a single meal of fish could carry a dangerous dose. So heavy metals break the rule your intuition wants, low concentration does not mean low risk. Today, the key metals, why we use AAS to find them, how they magnify up food chains, and how we clean them up."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "The metals of concern",
+      "body": "A handful of metals are dangerous because they're toxic at low concentration and persist in the environment.",
+      "bullets": [
+        {"text": "Lead causes neurological damage; mercury caused Minamata disease."},
+        {"text": "Cadmium damages kidneys; arsenic brings chronic toxicity."},
+        {"text": "Chromium's toxicity depends on its chemical form."}
+      ],
+      "secondary": "Sources aren't only industrial. Lead leaches from old plumbing, and arsenic can come from natural groundwater, so natural never means safe.",
+      "callout": "Toxic at trace levels, and they don't break down.",
+      "durationInFrames": 1020,
+      "caption": "Pb, Hg, Cd, As, Cr: toxic at low levels and environmentally persistent.",
+      "voiceover": {
+        "text": "Let's name the offenders. The heavy metals that matter most in our water are lead, mercury, cadmium, arsenic, and chromium. What unites them is a nasty combination, they're toxic even at low concentration, and they persist, they don't break down in the environment. Each has its signature harm. Lead causes neurological damage, especially in children. Mercury caused Minamata disease. Cadmium damages the kidneys. Arsenic brings chronic toxicity and long-term health risk. And chromium's toxicity depends on its chemical form. One myth to kill straight away. This isn't just an industrial problem. Lead leaches from old plumbing, and arsenic can come from natural geological groundwater. Natural does not mean safe."
+      }
+    },
+    {
+      "id": "concept-aas",
+      "type": "concept",
+      "heading": "Why AAS finds them",
+      "body": "These metals are dangerous below what the eye can detect, so monitoring needs a sensitive, specific method.",
+      "bullets": [
+        {"text": "Build a calibration curve from metal standards of known concentration."},
+        {"text": "Atomise the unknown, then measure absorbance at the element's wavelength."},
+        {"text": "Read the concentration against the calibration curve."}
+      ],
+      "secondary": "You met the AAS mechanics in Lesson 4. It's chosen here because it's sensitive to the parts-per-billion range and element-specific, measuring ground-state atoms, not ions.",
+      "callout": "Sensitive and element-specific, perfect for trace metals.",
+      "durationInFrames": 1050,
+      "caption": "AAS: standards, calibration curve, atomise unknown, read concentration.",
+      "voiceover": {
+        "text": "So how do we find a poison too dilute to see? This is where atomic absorption spectroscopy earns its place. You met how AAS works back in Lesson 4, so just the workflow here. You prepare standards of known metal concentration and build a calibration curve. You atomise the unknown water sample, and measure its absorbance at the characteristic wavelength for your target metal. Then you read its concentration off the calibration curve. AAS is the right tool for heavy metals for two reasons. It's sensitive, detecting down to the parts-per-billion range. And it's element-specific, targeting one metal at a time, and remember, it measures ground-state atoms after atomisation, not the hydrated ions in the water."
+      }
+    },
+    {
+      "id": "concept-biomag",
+      "type": "concept",
+      "heading": "Bioaccumulation and biomagnification",
+      "body": "A low water concentration can still be deadly, because contaminants build up in bodies and up food chains.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "water", "label": "Water (low)"},
+          {"id": "plankton", "label": "Plankton"},
+          {"id": "fish", "label": "Small fish"},
+          {"id": "predator", "label": "Predator (high)"}
+        ],
+        "edges": [
+          {"from": "water", "to": "plankton"},
+          {"from": "plankton", "to": "fish"},
+          {"from": "fish", "to": "predator"}
+        ]
+      },
+      "bullets": [
+        {"text": "Bioaccumulation: build-up within one organism over its lifetime."},
+        {"text": "Biomagnification: rising concentration at each higher trophic level."},
+        {"text": "Top predators can carry far more than the surrounding water."}
+      ],
+      "secondary": "Mercury is the classic case. Its internal concentration in a predator can vastly exceed the water it came from, which is why food-chain transfer drives the risk.",
+      "callout": "Low in water, concentrated in the predator.",
+      "durationInFrames": 1110,
+      "caption": "Bioaccumulation builds up in one organism; biomagnification rises up the food chain.",
+      "voiceover": {
+        "text": "Now the idea that explains Minamata, and the exam loves the precise definitions. Two terms that sound similar but aren't. Bioaccumulation is the build-up of a contaminant within a single organism over time, faster than its body can clear it. Biomagnification is the increase in concentration at each successively higher level of a food chain. Put them together with mercury. A tiny amount in the water is taken up by plankton, small fish eat a lot of plankton, big fish eat a lot of small fish, and a top predator, including us, sits at the end. At every step the concentration climbs, so the predator can carry far more mercury than the water ever held. That's why a low water reading does not guarantee low biological risk."
+      }
+    },
+    {
+      "id": "concept-remediation",
+      "type": "concept",
+      "heading": "Cleaning it up",
+      "body": "No single fix suits every case. Four strategies, each matched to a contamination context.",
+      "bullets": [
+        {"text": "Chemical precipitation turns dissolved metals into insoluble solids."},
+        {"text": "Ion exchange swaps contaminant ions for harmless ones on a resin."},
+        {"text": "Reverse osmosis and phytoremediation suit drinking water and long-term sites."}
+      ],
+      "secondary": "Chemical precipitation suits industrial wastewater; reverse osmosis is high-efficiency but energy-intensive; phytoremediation uses plants for long-term management.",
+      "callout": "Match the method to concentration, volume and source.",
+      "durationInFrames": 1080,
+      "caption": "Precipitation, ion exchange, reverse osmosis, phytoremediation, by context.",
+      "voiceover": {
+        "text": "Once monitoring confirms a problem, the question becomes what do we actually do. There are four strategies, and the skill is matching them to the situation. Chemical precipitation converts dissolved metals into insoluble solids you can filter out, which uses the solubility chemistry from gravimetric analysis, and suits industrial wastewater. Ion exchange swaps contaminant ions for harmless ones on a resin, good for dissolved ions at low concentration. Reverse osmosis forces water through a selective membrane, very effective but energy-hungry, often used for drinking water. And phytoremediation uses plants to take up or stabilise contaminants, suited to long-term site management. No single method wins everywhere, it depends on concentration, water volume, infrastructure, and whether the source is ongoing."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Reading a result against risk",
+      "question": "AAS gives arsenic at about 0.125 mg L⁻¹ in groundwater, against a 0.10 mg L⁻¹ limit. Explain, step by step, why this is a concern even though the number is small.",
+      "coachNote": "Compare to the standard first, then bring in persistence and food-chain transfer.",
+      "steps": [
+        "The measured 0.125 mg L⁻¹ exceeds the 0.10 mg L⁻¹ guideline limit",
+        "Arsenic is toxic at low concentration and persists in the environment",
+        "It can bioaccumulate within organisms over time",
+        "Biomagnification raises its concentration up the food chain",
+        "Answer: above the limit, persistent, and amplified, so it needs action ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "0.125 > 0.10 limit; persistent and biomagnifying, so it's a real concern.",
+      "voiceover": {
+        "text": "Let's turn a number into an argument, which is exactly what Module 8 wants. AAS reports arsenic at about nought-point-one-two-five milligrams per litre in groundwater, and the guideline limit is nought-point-one-zero. Explain why that's a concern despite the small number. Step one, compare to the standard, the measured value exceeds the guideline limit, so it already fails. Step two, arsenic is toxic at low concentration and persists, it won't simply break down. Step three, it can bioaccumulate, building up within organisms over time. Step four, biomagnification then raises its concentration at each step up the food chain. Step five, so the conclusion is, it's above the limit, persistent, and amplified through the food web, which together justify monitoring and treatment. Take the number, then connect it to risk, source, and method."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking a small measured concentration means remediation is unnecessary. Persistence and food-chain transfer change that.",
+      "secondary": "Trap 2: confusing bioaccumulation with biomagnification. One is within an organism, the other is up the food chain. Trap 3: saying AAS measures the ions in the water, when it measures ground-state atoms.",
+      "mistakeTag": "Where heavy-metal marks vanish",
+      "callout": "Low isn't safe, accumulate vs magnify, AAS reads atoms.",
+      "durationInFrames": 1230,
+      "caption": "Small ≠ safe; bioaccumulation ≠ biomagnification; AAS reads atoms.",
+      "voiceover": {
+        "text": "Three traps. Trap one, assuming a small measured concentration means you can ignore it. That's poor environmental reasoning, because some metals stay dangerous at very low levels once you account for chronic exposure, bioaccumulation, and food-chain transfer. Trap two, mixing up the two key terms. Bioaccumulation is build-up within one organism over time. Biomagnification is the rise in concentration up the food chain. Use them precisely. Trap three, saying AAS measures the metal ions floating in the water. It doesn't, the sample is atomised first, and the analytical step measures ground-state atoms. Small isn't safe, keep accumulate and magnify separate, and remember AAS reads atoms."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A lab must measure trace cadmium in river water and recommend a fix for an industrial wastewater stream. Which analysis technique and which remediation suit best, and why?",
+      "pausePrompt": "Pause and think it through.",
+      "answerSteps": [
+        "Cadmium is a trace, colourless metal contaminant",
+        "AAS suits it: sensitive and element-specific for trace metals",
+        "The fix is for a concentrated industrial wastewater stream",
+        "Chemical precipitation converts dissolved metals to insoluble solids",
+        "Answer: AAS to measure, chemical precipitation to treat ✓"
+      ],
+      "durationInFrames": 1170,
+      "caption": "AAS measures trace cadmium; chemical precipitation treats industrial wastewater.",
+      "voiceover": {
+        "text": "Quick check. A lab has to measure trace cadmium in river water, and recommend a fix for an industrial wastewater stream. Which analysis technique, and which remediation, and why? Pause and think it through. Right, let's check it. Step one, cadmium here is a trace, colourless metal contaminant. Step two, that points straight to AAS, which is sensitive and element-specific for trace metals, far better than a colour-based method. Step three, the fix is for an industrial wastewater stream, a fairly concentrated source. Step four, chemical precipitation fits that, converting the dissolved metal into an insoluble solid you can remove. Step five, so the answer is AAS to measure, and chemical precipitation to treat. Match the tool to the concentration and the context."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Heavy metals like Pb, Hg, Cd, As and Cr are toxic at trace levels and persist.",
+        "AAS is chosen for its sensitivity and element-specificity at the ppb range.",
+        "Bioaccumulation builds up in one organism; biomagnification rises up the food chain.",
+        "A low water concentration can still be a high biological risk.",
+        "Match remediation to context: precipitation, ion exchange, reverse osmosis, plants."
+      ],
+      "finalPrompt": "Got a small number? Check the limit, then the food chain.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: key metals, AAS choice, bioaccumulation vs magnification, remediation.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, heavy metals like lead, mercury, cadmium, arsenic, and chromium are toxic at trace levels and persist in the environment. Second, AAS is chosen for them because it's sensitive to the parts-per-billion range and element-specific. Third, bioaccumulation is build-up within one organism, while biomagnification is the rise in concentration up the food chain. Fourth, because of that, a low water concentration can still be a high biological risk. And fifth, match the remediation to the context, chemical precipitation, ion exchange, reverse osmosis, or phytoremediation. Check the limit, then check the food chain. That's Module 8. See you in the next one."
+      }
+    }
+  ]
+}

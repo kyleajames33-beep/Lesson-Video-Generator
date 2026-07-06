@@ -1,0 +1,313 @@
+{
+  "title": "Collision Theory Applied to Equilibrium",
+  "subtitle": "Reading equilibrium through the lens of colliding particles",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+  "syllabusDotPoints": [
+    "investigate the relationship between collision theory and reaction rate in order to analyse chemical equilibrium reactions (ACSCH070, ACSCH094)"
+  ],
+  "moduleLessonCount": 18,
+  "nesaOutcomes": [
+    "CH12-12",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What happens when chemical reactions do not go through to completion?",
+  "lessonIntent": "Students can use collision theory to explain how a reversible reaction reaches equilibrium and why a catalyst cannot change the equilibrium position.",
+  "examSkill": "Explain equilibrium approach and disturbances in collision-theory language, using ΔH = Ea(forward) − Ea(reverse) and the equal-barrier effect of a catalyst.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, collision theory applied to equilibrium. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Collision Theory Applied to Equilibrium (Year 12 Chemistry, Module 5, Lesson 3)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Watch equilibrium move",
+      "body": "Cool a sealed brown NO₂ tube and the colour fades. Collision theory explains exactly why.",
+      "callout": "Two rates, two barriers, one shifting balance.",
+      "image": "m5L3NitrogenDioxideTube",
+      "durationInFrames": 690,
+      "caption": "Cooling a NO₂/N₂O₄ tube fades the colour — collision theory explains the shift.",
+      "voiceover": {
+        "text": "OK, picture a sealed glass tube of brown nitrogen dioxide gas, in equilibrium with colourless dinitrogen tetroxide. Drop it into an ice bath, and over a couple of minutes the brown noticeably fades. Back in 1884, Le Chatelier recorded exactly this, and he needed collision theory to explain it. Here's the thing, you already have collision theory from Module three, where it told you how fast a reaction goes. In Module five, that same idea explains how a reversible reaction reaches equilibrium in the first place, and which way it moves when you disturb it. Two opposing rates, two energy barriers, and one balance that can shift. By the end you'll be able to talk about every equilibrium change in the language of colliding particles."
+      }
+    },
+    {
+      "id": "concept-approach",
+      "type": "concept",
+      "heading": "How rates meet at equilibrium",
+      "body": "As a reversible reaction runs, the forward rate falls and the reverse rate rises until they're equal.",
+      "bullets": [
+        {
+          "text": "Forward rate ∝ [reactants], so it starts high and falls as reactants are consumed."
+        },
+        {
+          "text": "Reverse rate ∝ [products], so it starts at zero and rises as products build up."
+        },
+        {
+          "text": "Equilibrium is when the two rates become equal and non-zero."
+        }
+      ],
+      "secondary": "Say it precisely: the forward reaction slows AND the reverse reaction speeds up. Not just 'the reaction slows down', which loses marks.",
+      "callout": "Forward falls, reverse rises, they meet.",
+      "durationInFrames": 1140,
+      "caption": "Forward rate falls, reverse rate rises, until both are equal and non-zero.",
+      "voiceover": {
+        "text": "Let's start with how a system actually reaches equilibrium, in collision terms. Imagine you begin with pure reactants. The forward rate depends on the concentration of reactants, so at the start it's at its maximum, lots of effective collisions between reactant particles. There are no products yet, so the reverse rate is zero. Now press play. As reactants get used up, their concentration drops, the frequency of effective forward collisions falls, and the forward rate decreases. At the same time products accumulate, so the frequency of effective reverse collisions rises, and the reverse rate increases. The two rates head toward each other and meet at a common, non-zero value, and that's dynamic equilibrium. One precise point for your exam, don't just say the reaction slows down. Say the forward reaction slows and the reverse reaction speeds up, until the two rates are equal. That distinction is worth marks."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Time",
+        "yLabel": "Reaction rate",
+        "series": [
+          {
+            "label": "Forward rate",
+            "color": "chem1",
+            "points": [
+              [
+                0,
+                0.92
+              ],
+              [
+                0.12,
+                0.72
+              ],
+              [
+                0.28,
+                0.56
+              ],
+              [
+                0.45,
+                0.45
+              ],
+              [
+                0.65,
+                0.385
+              ],
+              [
+                0.82,
+                0.36
+              ],
+              [
+                1,
+                0.35
+              ]
+            ]
+          },
+          {
+            "label": "Reverse rate",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0.02
+              ],
+              [
+                0.12,
+                0.16
+              ],
+              [
+                0.28,
+                0.26
+              ],
+              [
+                0.45,
+                0.31
+              ],
+              [
+                0.65,
+                0.34
+              ],
+              [
+                0.82,
+                0.348
+              ],
+              [
+                1,
+                0.35
+              ]
+            ]
+          }
+        ],
+        "hLines": [
+          {
+            "y": 0.35,
+            "label": "rates equal"
+          }
+        ],
+        "markers": [
+          {
+            "x": 0.66,
+            "label": "equilibrium"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Collision theory: reactions need collisions with correct orientation and energy ≥ Ea."
+        },
+        {
+          "text": "Activation energy (Ea): the minimum energy a collision needs to react."
+        },
+        {
+          "text": "Effective collision: one with enough energy and the right orientation to react."
+        },
+        {
+          "text": "ΔH = Ea(forward) − Ea(reverse): the gap between the two energy barriers."
+        }
+      ],
+      "callout": "Two directions, two activation energies, one ΔH between them.",
+      "durationInFrames": 990,
+      "caption": "Collision theory, activation energy, effective collision, ΔH from the two barriers.",
+      "voiceover": {
+        "text": "Four ideas to lock in. Collision theory says a reaction only happens when particles collide with the correct orientation and with energy at least equal to the activation energy. Activation energy is that minimum energy a collision needs to actually react, the height of the hill. An effective collision is one that clears the hill, right energy and right orientation, so it goes on to form products. And here's the new one for equilibrium, the enthalpy change equals the forward activation energy minus the reverse activation energy. In other words, a reversible reaction has two barriers, one going each way, and the difference between them is the enthalpy change of the reaction. Hold onto that, because the relative size of those two barriers is what decides which way an equilibrium shifts when you change the temperature."
+      }
+    },
+    {
+      "id": "concept-catalyst",
+      "type": "concept",
+      "heading": "Why a catalyst can't shift equilibrium",
+      "body": "A catalyst lowers both activation energies by the same amount, so the ratio of rates is unchanged.",
+      "bullets": [
+        {
+          "text": "It lowers Ea for the forward AND reverse reactions equally."
+        },
+        {
+          "text": "Both rates speed up by the same factor, so their ratio is unchanged."
+        },
+        {
+          "text": "No change to equilibrium position, no change to Keq, only faster to get there."
+        }
+      ],
+      "secondary": "Keq depends only on temperature. This is why the iron catalyst in the Haber process speeds things up but does not raise the ammonia yield.",
+      "callout": "Same barrier drop both ways means same destination, reached faster.",
+      "durationInFrames": 1140,
+      "caption": "A catalyst lowers both barriers equally: faster to equilibrium, same position and Keq.",
+      "voiceover": {
+        "text": "Now the single most-tested idea in this lesson, why a catalyst does not shift equilibrium. A catalyst gives the reaction an alternative pathway with a lower activation energy. The key word is both. It lowers the forward activation energy and the reverse activation energy by the same amount. So the forward rate speeds up, but the reverse rate speeds up by exactly the same factor. The ratio of the two rates is unchanged, and it's that ratio that fixes the equilibrium position and the equilibrium constant. So there's no shift, no change to the equilibrium constant, the system just reaches the same equilibrium faster. The equilibrium constant depends only on temperature. This is precisely why the iron catalyst in the Haber process makes ammonia form faster but cannot raise the yield, only temperature and pressure can do that. Catalysts buy you speed, not yield."
+      },
+      "diagram": {
+        "type": "energyProfile",
+        "exothermic": true,
+        "ea": 75,
+        "deltaH": -57,
+        "showCatalyst": true
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Approaching equilibrium from pure PCl₅",
+      "question": "PCl₅(g) ⇌ PCl₃(g) + Cl₂(g) is endothermic, ΔH = +88 kJ mol⁻¹. A flask starts with pure PCl₅. (a) Explain the approach to equilibrium with collision theory. (b) Which is larger, Ea(forward) or Ea(reverse)?",
+      "coachNote": "Use ΔH = Ea(forward) − Ea(reverse) to compare the barriers.",
+      "steps": [
+        "(a) At t=0 only PCl₅ is present: forward rate maximum, reverse rate zero.",
+        "As PCl₅ is consumed the forward rate falls; as PCl₃ and Cl₂ build the reverse rate rises.",
+        "Equilibrium is reached when the two rates are equal and non-zero.",
+        "(b) ΔH = Ea(fwd) − Ea(rev) = +88, a positive value, so Ea(forward) > Ea(reverse).",
+        "Answer: rates converge to equilibrium; Ea(forward) is the larger barrier ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "From pure PCl₅: forward falls, reverse rises; endothermic means Ea(forward) larger.",
+      "voiceover": {
+        "text": "Let's work one. The reaction phosphorus pentachloride giving phosphorus trichloride plus chlorine is endothermic, with an enthalpy change of plus eighty-eight, and the flask starts with pure phosphorus pentachloride. Part a, explain how it reaches equilibrium. At the start, only the reactant is present, so the forward rate is at its maximum and the reverse rate is zero. As the phosphorus pentachloride is consumed, its concentration drops, the forward collision frequency falls, and the forward rate decreases. Meanwhile the two products build up, the reverse collision frequency rises, and the reverse rate increases. When the two rates meet at a common non-zero value, equilibrium is established. Part b, which activation energy is larger? Use the relationship, enthalpy change equals forward activation energy minus reverse activation energy, and that's plus eighty-eight. A positive answer means the forward barrier is the bigger one. That makes sense, an endothermic reaction climbs to higher-energy products, so the hill going forward is taller than the hill coming back."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Cooling the Contact process",
+      "question": "Contact process: 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), ΔH = −196 kJ mol⁻¹, at equilibrium. Using Ea and collision theory, explain why lowering the temperature shifts equilibrium right.",
+      "coachNote": "Exothermic forward means Ea(reverse) is the bigger barrier. Cooling hurts the bigger barrier more.",
+      "steps": [
+        "Forward is exothermic, ΔH = −196, so Ea(forward) < Ea(reverse).",
+        "Lowering T reduces the average kinetic energy, so both rates fall.",
+        "The reaction with the higher barrier, the reverse, loses proportionally more rate.",
+        "So forward rate now exceeds reverse rate: net forward reaction.",
+        "Answer: equilibrium shifts right, making more SO₃ ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "Cooling slows both rates but the higher reverse barrier more → shift right to SO₃.",
+      "voiceover": {
+        "text": "Now the Contact process, two sulfur dioxide plus oxygen giving sulfur trioxide, exothermic with an enthalpy change of minus one hundred and ninety-six, sitting at equilibrium. Explain, in collision terms, why cooling it shifts the equilibrium to the right. Step one, the forward reaction is exothermic, so the forward activation energy is smaller than the reverse activation energy. Step two, lowering the temperature reduces the average kinetic energy of the particles, so fewer collisions clear either barrier, and both rates fall. Step three, here's the subtle bit, the rate of the reaction with the higher barrier is more sensitive to temperature, so it falls proportionally more. Since the reverse barrier is the taller one, the reverse rate drops more than the forward rate. Step four, that means the forward rate now exceeds the reverse rate, so there's a net forward reaction. The equilibrium shifts right, producing more sulfur trioxide. Cooling didn't stop the reaction, it just knocked the reverse rate down harder than the forward."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking a catalyst increases the amount of product at equilibrium. It changes rate, never position.",
+      "secondary": "Trap 2: saying 'the reaction slows down' as equilibrium nears. The forward rate slows but the reverse rate speeds up. Trap 3: drawing equal forward and reverse barriers for an exothermic reaction. For exothermic, Ea(forward) is smaller, by exactly |ΔH|.",
+      "mistakeTag": "Where collision-theory marks vanish",
+      "callout": "Catalyst = rate not yield; forward slows AND reverse speeds; unequal barriers.",
+      "durationInFrames": 1230,
+      "caption": "Catalysts don't change yield; distinguish forward vs reverse rates; barriers differ by |ΔH|.",
+      "voiceover": {
+        "text": "Three traps. Trap one, and it's the big marks-killer, thinking a catalyst increases the amount of product at equilibrium. It does not. A catalyst speeds up the forward and reverse reactions equally, so you reach the same equilibrium faster, but the position and the equilibrium constant are unchanged. Trap two, saying the reaction slows down as equilibrium approaches. That's imprecise. The forward rate slows, yes, but the reverse rate speeds up, and at equilibrium both are running at equal non-zero rates. Always separate forward from reverse. Trap three is on the energy diagram. Students draw the forward and reverse activation energies the same height for an exothermic reaction. Wrong. For an exothermic reaction the forward barrier is smaller, and the gap between the two barriers is exactly the size of the enthalpy change. Get those three right and you can analyse any equilibrium disturbance cleanly."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A sealed syringe of NO₂ (brown) ⇌ N₂O₄ (colourless), ΔH = −57 kJ mol⁻¹, is put in hot water. Does the mixture get darker or paler, and why in collision terms?",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Forward (2NO₂ → N₂O₄) is exothermic, so Ea(forward) < Ea(reverse).",
+        "Heating raises kinetic energy, so both rates rise.",
+        "The higher-barrier reverse reaction rises proportionally more.",
+        "Reverse rate now exceeds forward: shift left, making more brown NO₂.",
+        "Answer: the mixture gets darker brown ✓"
+      ],
+      "durationInFrames": 1200,
+      "caption": "Heating the exothermic NO₂/N₂O₄ system shifts it left → darker brown.",
+      "voiceover": {
+        "text": "Quick check. A sealed syringe holds brown nitrogen dioxide in equilibrium with colourless dinitrogen tetroxide, forward reaction exothermic with an enthalpy change of minus fifty-seven. You put it in hot water. Does it get darker or paler, and why, in collision terms? Pause and reason it through. Right, let's check it. The forward reaction is exothermic, so the forward activation energy is smaller than the reverse. Heating raises the average kinetic energy, so more collisions clear both barriers and both rates increase. But the reaction with the higher barrier, the reverse one, is more temperature-sensitive, so its rate rises proportionally more. Now the reverse rate exceeds the forward rate, the equilibrium shifts left, and you make more nitrogen dioxide. So the mixture gets darker brown. And notice, this is the opposite of cooling it, which made it paler, exactly the result Le Chatelier saw."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Forward rate falls and reverse rate rises until they're equal: that's equilibrium.",
+        "ΔH = Ea(forward) − Ea(reverse); exothermic means Ea(forward) is smaller.",
+        "Cooling an exothermic equilibrium shifts it right; heating shifts it left.",
+        "A catalyst lowers both barriers equally: faster, but no shift and no change to Keq.",
+        "Keq depends only on temperature."
+      ],
+      "finalPrompt": "Analysing a shift? Compare the two barriers and what the change does to each rate.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: rates converge, the two barriers, temperature shifts, catalyst effect.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, a system reaches equilibrium when the falling forward rate meets the rising reverse rate at a common non-zero value. Second, the enthalpy change equals the forward activation energy minus the reverse activation energy, and for an exothermic reaction the forward barrier is the smaller one. Third, cooling an exothermic equilibrium shifts it to the right, while heating shifts it left, because temperature affects the higher barrier more. Fourth, a catalyst lowers both barriers equally, so you get to equilibrium faster but the position and the equilibrium constant never change. And fifth, the equilibrium constant depends only on temperature. Whenever you analyse a disturbance, just compare the two barriers and ask what the change does to each rate. See you next lesson."
+      }
+    }
+  ]
+}

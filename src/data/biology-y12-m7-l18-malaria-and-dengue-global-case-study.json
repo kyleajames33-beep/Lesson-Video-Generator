@@ -1,0 +1,231 @@
+{
+  "title": "Malaria and Dengue — Global Case Study",
+  "subtitle": "Same mosquito delivery, completely different biology",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 18",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "investigate and analyse the wide range of interrelated factors involved in limiting local, regional and global spread of a named infectious disease"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How can the spread of infectious diseases be controlled?",
+  "lessonIntent": "Students can describe the Plasmodium life cycle and dengue serotype biology, explain antibody-dependent enhancement, and compare malaria and dengue control.",
+  "examSkill": "Identify intervention points in the Plasmodium life cycle and explain why dengue is so hard to vaccinate against.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, malaria and dengue, a global case study. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Malaria and Dengue — Global Case Study (Year 12 Biology, Module 7, Lesson 18)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A child every two minutes",
+      "body": "In 2022 malaria caused 247 million cases and 619,000 deaths. We have nets, drugs, even a vaccine. Why isn't it gone?",
+      "callout": "Why is a parasite that needs a mosquito so impossible to eradicate?",
+      "image": "bioM7L18MalariaBurden",
+      "durationInFrames": 1870,
+      "caption": "Malaria still kills hundreds of thousands a year despite every available tool.",
+      "voiceover": {
+        "text": "OK, here's a sobering set of numbers. The World Health Organization's twenty twenty-two malaria report counted two hundred and forty-seven million cases, and six hundred and nineteen thousand deaths, ninety-six percent of them in Africa, and most of those in children under five. Put another way, malaria kills a child roughly every two minutes. And here's what's maddening, we are not helpless against it. We have insecticide-treated bed nets, we have effective antimalarial drugs, and after thirty years of development we even have a working vaccine. Yet the parasite keeps killing. So why has malaria, a parasite that literally cannot complete its life cycle without a mosquito, been so impossible to wipe out? Today we use malaria and dengue as a case study, two diseases delivered by the same kind of insect, but with completely different biology underneath."
+      }
+    },
+    {
+      "id": "concept-malaria",
+      "type": "concept",
+      "heading": "Malaria: a parasite with a life cycle",
+      "body": "Malaria is not a virus or a bacterium. It is caused by Plasmodium, a eukaryotic parasite with a multi-stage life cycle.",
+      "bullets": [
+        {
+          "text": "Spread by female Anopheles mosquitoes, which bite at night. P. falciparum is the most lethal species."
+        },
+        {
+          "text": "Its life cycle runs mosquito, then liver (silent), then blood (the fever and symptoms)."
+        },
+        {
+          "text": "Each stage is a separate intervention point: nets for the mosquito, drugs for the blood stage."
+        }
+      ],
+      "secondary": "Because Plasmodium is a complex eukaryote, antibiotics and antivirals do not touch it. Antimalarial drugs target parasite-specific processes.",
+      "callout": "A multi-stage life cycle means multiple places to attack it.",
+      "durationInFrames": 2425,
+      "caption": "Malaria is caused by the eukaryotic parasite Plasmodium, with mosquito, liver and blood stages.",
+      "voiceover": {
+        "text": "Let's start with malaria, and the first thing to get right is what causes it. Malaria is not a virus, and it's not a bacterium. It's caused by Plasmodium, a eukaryotic parasite, a single-celled organism far more complex than a bacterium. It's spread by female Anopheles mosquitoes, which tend to bite at night, and the deadliest species is Plasmodium falciparum. Now the key to understanding malaria is its life cycle, which runs in stages. The mosquito injects the parasite, it travels first to the liver, where it multiplies silently with no symptoms, and then it bursts into the blood, where it invades red blood cells and causes the cyclical fever, anaemia and organ damage. And here's why the life cycle matters so much, each stage is a separate point where you can attack it. Bed nets target the mosquito stage, antimalarial drugs target the blood stage, and vaccines aim at the parasite as it heads for the liver. Because Plasmodium is a eukaryote, by the way, antibiotics and antivirals do nothing, you need drugs designed for the parasite itself."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "n1",
+            "label": "Mosquito"
+          },
+          {
+            "id": "n2",
+            "label": "Liver"
+          },
+          {
+            "id": "n3",
+            "label": "Blood"
+          },
+          {
+            "id": "n4",
+            "label": "Mosquito"
+          }
+        ],
+        "edges": [
+          {
+            "from": "n1",
+            "to": "n2"
+          },
+          {
+            "from": "n2",
+            "to": "n3"
+          },
+          {
+            "from": "n3",
+            "to": "n4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Plasmodium: the eukaryotic parasite that causes malaria, with mosquito, liver and blood stages."
+        },
+        {
+          "text": "Serotype: a distinct variant of a pathogen; dengue virus has four (DENV-1 to DENV-4)."
+        },
+        {
+          "text": "Antibody-dependent enhancement: where antibodies from one dengue serotype worsen infection by another."
+        },
+        {
+          "text": "Vector competence: how able a mosquito is to carry and transmit a particular pathogen."
+        }
+      ],
+      "callout": "Four dengue serotypes, and immunity to one is not immunity to all.",
+      "durationInFrames": 1900,
+      "caption": "Plasmodium, serotype, antibody-dependent enhancement, vector competence.",
+      "voiceover": {
+        "text": "Let's pin down the key terms, especially the ones for dengue, which are trickier. Plasmodium is the eukaryotic parasite that causes malaria, with those mosquito, liver and blood stages we just covered. A serotype is a distinct variant of a pathogen, and this matters enormously for dengue, because dengue virus comes in four serotypes, labelled DENV one through four. Then there's antibody-dependent enhancement, often shortened to ADE, which is a genuinely counterintuitive effect where antibodies left over from one dengue serotype actually make a later infection by a different serotype worse, not better. We'll dig into that next. And vector competence just means how capable a mosquito is of carrying and transmitting a particular pathogen, the term you met with Wolbachia last lesson. The big idea to hold onto, with dengue, immunity to one serotype is not immunity to all."
+      }
+    },
+    {
+      "id": "concept-dengue",
+      "type": "concept",
+      "heading": "Dengue: four serotypes and a paradox",
+      "body": "Dengue is a virus with four serotypes, and a second infection can be worse than the first.",
+      "bullets": [
+        {
+          "text": "Spread by Aedes aegypti, a daytime, urban mosquito that breeds in small water containers."
+        },
+        {
+          "text": "One infection gives lifelong immunity to that serotype only, not the other three."
+        },
+        {
+          "text": "A second infection with a different serotype can trigger antibody-dependent enhancement and severe dengue."
+        }
+      ],
+      "secondary": "This is the vaccine paradox: a dengue vaccine must protect against all four serotypes equally, or it can prime ADE, which is exactly what harmed seronegative children given Dengvaxia.",
+      "callout": "The second dengue infection can be the dangerous one.",
+      "durationInFrames": 2315,
+      "caption": "Dengue has four serotypes; a second infection can trigger ADE and severe disease.",
+      "voiceover": {
+        "text": "Now dengue, which behaves completely differently. Dengue is caused by a virus, and it's spread by a different mosquito, Aedes aegypti, an urban, daytime biter that breeds in tiny pools of water, like a bottle cap or a plant pot. Here's the strange part. There are four serotypes of dengue, and when you catch one, you get lifelong immunity to that serotype, but only that one. You're still fully susceptible to the other three. And it gets worse. If you later catch a different serotype, the leftover antibodies from your first infection can actually bind the new virus without neutralising it, and instead help it infect your cells, that's antibody-dependent enhancement, and it can cause severe, life-threatening dengue. So here's the vaccine paradox. A dengue vaccine has to protect against all four serotypes equally well, because if it only primes a partial response, it can set someone up for ADE. That's exactly what went wrong with the Dengvaxia vaccine, which harmed children who had never had dengue before, the seronegative ones."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Explain the dengue vaccine paradox",
+      "question": "A child who has never had dengue is given a dengue vaccine, then later catches dengue and develops severe disease. Using serotypes and ADE, explain why vaccinating dengue-naive children can backfire.",
+      "coachNote": "Link the vaccine priming a partial response to the ADE mechanism on later infection.",
+      "steps": [
+        "Dengue has four serotypes; immunity to one does not protect against the others.",
+        "In a dengue-naive child, the vaccine can act like a first exposure, priming non-neutralising antibodies.",
+        "When a real, different serotype arrives, those antibodies bind it but fail to neutralise it.",
+        "Instead they help the virus enter immune cells, the ADE effect, amplifying the infection.",
+        "Answer: the vaccine mimicked a first infection, so a later serotype triggered ADE and severe dengue ✓"
+      ],
+      "durationInFrames": 2395,
+      "caption": "Vaccinating dengue-naive children can prime ADE on a later infection.",
+      "voiceover": {
+        "text": "Let's reason through the dengue vaccine paradox properly, because it's a beautiful, if grim, application of immunology. A child who has never had dengue is given the vaccine, then later catches dengue, and develops severe disease. Explain why vaccinating dengue-naive children can backfire. Step one, remember dengue has four serotypes, and immunity to one does not protect against the others. Step two, in a child who's never had dengue, the vaccine acts a bit like a first exposure, priming antibodies, but if those antibodies don't fully neutralise all four serotypes, that's a problem. Step three, when a real infection with a different serotype arrives, those primed antibodies bind the virus, but they can't neutralise it. Step four, instead of helping, they actually escort the virus into immune cells, that's antibody-dependent enhancement, and it amplifies the infection dramatically. So the answer is, the vaccine mimicked a first infection, which then set the child up for ADE when a different serotype came along, producing severe dengue. That's why Dengvaxia is now only given to people with confirmed prior dengue."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking malaria is caused by a virus or bacterium. It is a eukaryotic parasite, Plasmodium, so antibiotics and antivirals do not work on it.",
+      "secondary": "Trap 2: thinking one dengue infection makes you immune to all dengue. It only protects against that one serotype, and a second infection with another serotype can be more severe via ADE.",
+      "mistakeTag": "What malaria is, and dengue immunity",
+      "callout": "Malaria is a parasite, not a microbe; dengue immunity is serotype-specific.",
+      "durationInFrames": 2075,
+      "caption": "Malaria is a eukaryotic parasite; dengue immunity is serotype-specific.",
+      "voiceover": {
+        "text": "Two traps that cost marks. Trap one, writing that malaria is caused by a virus, or a bacterium. It is neither. Malaria is caused by Plasmodium, a eukaryotic parasite, and that distinction has a real consequence, antibiotics don't work on it because it's not a bacterium, and antivirals don't work on it because it's not a virus. You need antimalarial drugs designed for the parasite's own machinery. Trap two, thinking that catching dengue once makes you immune to dengue forever. It doesn't. You only become immune to the specific serotype you caught, and you're still fully vulnerable to the other three. And the dangerous part, a second infection with a different serotype can actually be more severe than the first, because of antibody-dependent enhancement. So prior dengue is not simply protection, it can be a risk factor. Get both of those straight and you'll avoid the most common errors in this case study."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A new antimalarial drug targets the liver stage of Plasmodium. Explain why hitting the liver stage is strategically valuable, even though that stage causes no symptoms.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The liver stage comes before the blood stage, where all the symptoms and damage occur.",
+        "Killing the parasite in the liver stops it ever reaching the blood, preventing illness entirely.",
+        "It is also a numerical bottleneck, with fewer parasites present than later in the blood.",
+        "So intervening early prevents disease rather than just treating it once symptoms appear.",
+        "Answer: the liver stage is an early, low-number bottleneck, so clearing it prevents the blood stage and symptoms ✓"
+      ],
+      "durationInFrames": 2275,
+      "caption": "The silent liver stage is an early bottleneck, ideal for prevention.",
+      "voiceover": {
+        "text": "Quick check. A new antimalarial drug targets the liver stage of Plasmodium. Explain why hitting the liver stage is strategically valuable, even though that stage causes no symptoms at all. Pause and reason it through. Right. Think about the sequence. The liver stage comes before the blood stage, and it's the blood stage that causes all the fever, anaemia and damage. So if you kill the parasite while it's still in the liver, it never reaches the blood, and the person never gets sick, you've prevented the disease, not just treated it. There's a second advantage too. The liver stage is a numerical bottleneck, there are far fewer parasites present in the liver than there will be once they've multiplied in the blood, so it's an easier target to clear completely. So the answer is, the liver stage is an early, low-number bottleneck, and clearing it there prevents the blood stage and the symptoms entirely. Prevention beats treatment, and the silent stage is the smart place to strike."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Malaria is caused by Plasmodium, a eukaryotic parasite spread by night-biting Anopheles mosquitoes.",
+        "Its life cycle (mosquito, liver, blood) gives multiple intervention points: nets, drugs, vaccines.",
+        "Dengue is a virus with four serotypes, spread by the daytime urban mosquito Aedes aegypti.",
+        "Immunity to one dengue serotype is not immunity to all; a second can trigger ADE and severe disease.",
+        "Antibodies and antivirals do not treat malaria; dengue's serotypes make vaccination uniquely hard."
+      ],
+      "finalPrompt": "Analysing a vector disease? Name the pathogen type, the vector, and the life-cycle intervention points.",
+      "durationInFrames": 1775,
+      "caption": "Five takeaways: Plasmodium, life-cycle targets, dengue serotypes, ADE, and treatment.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, malaria is caused by Plasmodium, a eukaryotic parasite spread by night-biting Anopheles mosquitoes. Second, its life cycle, mosquito, then liver, then blood, gives multiple intervention points, bed nets, drugs, and vaccines each hit a different stage. Third, dengue is a virus with four serotypes, spread by the daytime urban mosquito Aedes aegypti. Fourth, immunity to one dengue serotype is not immunity to all, and a second infection with a different serotype can trigger antibody-dependent enhancement and severe disease. And fifth, antibiotics and antivirals don't treat malaria because it's a parasite, while dengue's four serotypes make vaccination uniquely hard. Whenever you analyse a vector-borne disease, name the pathogen type, name the vector, and find the life-cycle intervention points. See you next lesson."
+      }
+    }
+  ]
+}

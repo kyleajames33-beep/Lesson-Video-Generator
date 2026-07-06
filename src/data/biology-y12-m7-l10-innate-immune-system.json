@@ -1,0 +1,285 @@
+{
+  "title": "The Innate Immune System",
+  "subtitle": "Fast, broad, and always on guard",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 10",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "investigate and model the innate and adaptive immune systems in the human body (ACSBL119)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does the human immune system respond to exposure to a pathogen?",
+  "lessonIntent": "Students can contrast innate and adaptive immunity, name the innate components, sequence phagocytosis, and explain how NK cells detect missing self.",
+  "examSkill": "Describe the role of innate immune cells and the steps of phagocytosis, and distinguish innate from adaptive immunity.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, the innate immune system. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "The Innate Immune System (Year 12 Biology, Module 7, Lesson 10)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Cells that eat the invader",
+      "body": "In 1882 Metchnikoff pushed a thorn into a starfish larva. Mobile cells swarmed and engulfed it, with no nerves at all.",
+      "callout": "What drives this automatic first line of cellular defence?",
+      "image": "bioM7L10Phagocytosis",
+      "durationInFrames": 1505,
+      "caption": "Metchnikoff watched mobile cells engulf a thorn in a starfish larva, discovering phagocytosis.",
+      "voiceover": {
+        "text": "On the fourteenth of December, eighteen eighty-two, a scientist named Elie Metchnikoff pushed a tiny rose thorn into a transparent starfish larva, and then he simply watched. Within hours, mobile cells inside the larva surrounded the thorn and began to engulf it. And remember, this larva had no nervous system, no antibodies, and no prior exposure to anything like that thorn. He had just discovered phagocytosis, the process where cells eat invaders. It's automatic, it's self-directed, and it's the same first line of cellular defence working inside you right now. So what drives it? That's what we'll unpack, starting with how this fast, broad system differs from the slower, precise one."
+      }
+    },
+    {
+      "id": "concept-twolayer",
+      "type": "concept",
+      "heading": "Innate versus adaptive",
+      "body": "The immune system has two integrated layers: one fast and broad, the other slow and precise.",
+      "bullets": [
+        {
+          "text": "Innate: fast, minutes to hours, non-specific, and has no memory."
+        },
+        {
+          "text": "Adaptive: slow, days to weeks, highly specific, with lasting memory."
+        },
+        {
+          "text": "They work together; dendritic cells bridge the two layers."
+        }
+      ],
+      "secondary": "Innate cells use pattern recognition receptors to detect molecular patterns shared by many pathogens. Adaptive cells use receptors that bind one specific antigen.",
+      "callout": "Fast and broad, then slow and specific.",
+      "durationInFrames": 2185,
+      "caption": "Innate is fast and non-specific; adaptive is slow, specific, and remembers.",
+      "voiceover": {
+        "text": "Your immune system runs in two integrated layers, and the contrast between them is examined constantly. The innate immune system is the first layer. It's fast, responding in minutes to hours, it's non-specific, meaning it reacts to broad patterns shared by many pathogens, and it has no memory, it does the same thing every time. Its cells include neutrophils, macrophages, dendritic cells, natural killer cells, and mast cells, and they detect pathogens using pattern recognition receptors that recognise pathogen-associated molecular patterns. The adaptive immune system is the second layer. It's slow, taking days to weeks to ramp up, it's highly specific, targeting a single antigen, and crucially it has immunological memory, so it responds faster and stronger on re-exposure. Its cells are the B and T lymphocytes. And here's the key, they aren't separate systems. They work together, and dendritic cells are the bridge, because after engulfing a pathogen they present its antigens to T cells, switching on the adaptive response."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Innate",
+          "Adaptive"
+        ],
+        "rows": [
+          [
+            "Speed",
+            "Minutes to hours",
+            "Days to weeks"
+          ],
+          [
+            "Specificity",
+            "Non-specific",
+            "Highly specific"
+          ],
+          [
+            "Memory",
+            "None",
+            "Long-lasting"
+          ],
+          [
+            "Cells",
+            "Phagocytes, NK, mast",
+            "B and T lymphocytes"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The terms you need",
+      "bullets": [
+        {
+          "text": "Phagocytosis: the engulfing and digestion of pathogens by a cell."
+        },
+        {
+          "text": "Phagocyte: a white blood cell, like a neutrophil or macrophage, that does this."
+        },
+        {
+          "text": "Natural killer cell: an innate cell that kills virus-infected or abnormal host cells."
+        },
+        {
+          "text": "Opsonisation: coating a pathogen so phagocytes can grip and engulf it more easily."
+        }
+      ],
+      "callout": "Phagocytes eat pathogens; NK cells kill our own infected cells.",
+      "durationInFrames": 1670,
+      "caption": "Phagocytosis, phagocyte, natural killer cell, opsonisation.",
+      "voiceover": {
+        "text": "Four terms before the detail, and one of them is a classic trap. Phagocytosis is the process by which a cell engulfs and digests pathogens or debris. A phagocyte is the white blood cell that does this, like a neutrophil or a macrophage. A natural killer cell, and here's the trap, does not eat pathogens, instead it kills the body's own cells that have become virus-infected or abnormal, like cancer cells. So phagocytes eat pathogens, while natural killer cells kill our own infected cells. And opsonisation is the coating of a pathogen with molecules, usually complement proteins or antibodies, so that phagocytes can grip onto it and engulf it much more easily. Keep that phagocyte-versus-natural-killer distinction sharp, because it's a favourite true-or-false question."
+      }
+    },
+    {
+      "id": "concept-components",
+      "type": "concept",
+      "heading": "Components of innate immunity",
+      "body": "The innate system has cellular components and soluble chemical components working together.",
+      "bullets": [
+        {
+          "text": "Neutrophils: first-responder phagocytes, short-lived, the most abundant white cell."
+        },
+        {
+          "text": "Macrophages and dendritic cells: phagocytes that also present antigens to T cells."
+        },
+        {
+          "text": "NK cells: kill virus-infected and cancerous host cells."
+        }
+      ],
+      "secondary": "Soluble components include the complement system, which opsonises pathogens and punches holes in them, and interferons, which warn neighbouring cells of a virus.",
+      "callout": "Cells that eat or kill, plus chemicals that tag and warn.",
+      "durationInFrames": 2090,
+      "caption": "Innate components: neutrophils, macrophages, dendritic cells, NK cells, complement, interferons.",
+      "voiceover": {
+        "text": "Let's name the components, because the exam asks you to describe their roles. On the cellular side, neutrophils are the first phagocytes to arrive at an infection, they're short-lived, and they're the most abundant white blood cell in your blood. Macrophages are long-lived phagocytes that patrol the tissues, engulfing pathogens and releasing cytokines, and they present antigens to T cells, bridging to the adaptive system. Dendritic cells are sentinels that engulf and process antigens, then migrate to the lymph nodes to activate T cells, so they're the key link between innate and adaptive. Natural killer cells kill virus-infected and cancerous host cells. And mast cells release histamine to start inflammation. On the soluble side, you have the complement system, a set of blood proteins that opsonise pathogens and form a membrane attack complex to punch holes in them, and interferons, which are released by virus-infected cells to warn their neighbours to prepare antiviral defences."
+      }
+    },
+    {
+      "id": "concept-phago",
+      "type": "concept",
+      "heading": "Phagocytosis, step by step",
+      "body": "Phagocytosis is the innate system's main weapon, and it ends by handing the adaptive system its target.",
+      "bullets": [
+        {
+          "text": "Chemotaxis: the phagocyte follows a chemical gradient to the pathogen."
+        },
+        {
+          "text": "Adherence: its receptors bind the pathogen, then pseudopods engulf it into a phagosome."
+        },
+        {
+          "text": "Digestion: a lysosome fuses and enzymes destroy the pathogen."
+        }
+      ],
+      "secondary": "The final step is antigen presentation, displaying pathogen fragments on MHC molecules to activate T cells. Opsonisation makes the adherence step far faster.",
+      "callout": "Find it, grab it, eat it, digest it, present it.",
+      "durationInFrames": 1915,
+      "caption": "Phagocytosis: chemotaxis, adherence, ingestion, digestion, then antigen presentation.",
+      "voiceover": {
+        "text": "Now the innate system's primary weapon against bacteria and fungi, phagocytosis, step by step. Step one, chemotaxis, the phagocyte follows a chemical gradient, the chemokines, toward the pathogen. Step two, adherence, the phagocyte's pattern recognition receptors bind the pathogen's surface. Step three, ingestion, the phagocyte extends arm-like pseudopods that wrap around and engulf the pathogen, sealing it inside a bubble called a phagosome. Step four, digestion, a lysosome fuses with the phagosome, and its enzymes, plus reactive oxygen species, destroy the pathogen. And step five, the one that matters for what comes next, presentation, the phagocyte displays fragments of the pathogen, its antigens, on MHC molecules on its surface, which activates T cells. That fifth step is where innate immunity hands off to adaptive. And remember opsonisation, coating the pathogen with complement or antibody dramatically speeds up step two, the adherence."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "find",
+            "label": "Find"
+          },
+          {
+            "id": "bind",
+            "label": "Bind"
+          },
+          {
+            "id": "engulf",
+            "label": "Engulf"
+          },
+          {
+            "id": "present",
+            "label": "Present"
+          }
+        ],
+        "edges": [
+          {
+            "from": "find",
+            "to": "bind"
+          },
+          {
+            "from": "bind",
+            "to": "engulf"
+          },
+          {
+            "from": "engulf",
+            "to": "present"
+          }
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Detecting a hidden virus",
+      "question": "Phagocytes detect pathogens by their surface patterns, but a virus hides inside a host cell. Explain how natural killer cells solve this problem.",
+      "coachNote": "Think about what a healthy cell displays, and what an infected cell loses.",
+      "steps": [
+        "A phagocyte needs surface patterns to detect, but a virus inside a host cell shows none.",
+        "Every healthy host cell displays MHC class 1 molecules, a signal that says it is normal.",
+        "When a cell is virus-infected or cancerous, its MHC class 1 display is often reduced or lost.",
+        "NK cells patrol for cells with reduced or absent MHC class 1, detecting missing self.",
+        "Answer: NK cells kill cells that have lost their healthy MHC class 1 signal, exposing the hidden virus."
+      ],
+      "durationInFrames": 2375,
+      "caption": "NK cells detect missing self, killing cells that have lost MHC class 1.",
+      "voiceover": {
+        "text": "Let's work through a problem the innate system has to solve, the kind the HSC builds questions around. Phagocytes detect pathogens by the patterns on their surface, but a virus hides inside a host cell, where there's no pathogen surface to see. How do natural killer cells get around this? Here's the logic. First, the problem, a phagocyte needs a surface pattern to recognise, but a virus tucked inside one of your own cells displays none. Second, the clever signal, every healthy host cell displays MHC class one molecules on its surface, essentially a flag that says I'm a normal, healthy body cell. Third, what changes, when a cell becomes virus-infected, or cancerous, that MHC class one display is often reduced or lost. Fourth, the NK cell's job, it continuously patrols the body looking for cells with reduced or absent MHC class one, a strategy called detecting missing self. So the answer is, natural killer cells kill the cells that have lost their healthy MHC class one signal, which exposes and eliminates the hidden virus."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking innate immunity is weak because it is non-specific. It is fast and powerful, and it triggers the adaptive response.",
+      "secondary": "Trap 2: thinking natural killer cells engulf pathogens. They do not. NK cells kill abnormal host cells, like virus-infected or cancerous ones. Phagocytes are the ones that engulf pathogens.",
+      "mistakeTag": "Where innate-immunity marks vanish",
+      "callout": "Non-specific isn't weak; NK cells kill, they don't eat.",
+      "durationInFrames": 1685,
+      "caption": "Innate immunity is powerful, not weak; NK cells kill host cells, not engulf pathogens.",
+      "voiceover": {
+        "text": "Two traps to clear before we finish. Trap one, thinking the innate immune system is weak just because it's non-specific. That's wrong. It's fast and genuinely powerful. It detects broad pathogen patterns, contains many infections entirely on its own before the adaptive system even activates, and it actively triggers and shapes that adaptive response. Non-specific does not mean feeble. Trap two, and this is the big one, thinking natural killer cells kill pathogens by engulfing them. They don't. Natural killer cells kill abnormal host cells, such as virus-infected cells or cancerous cells, by releasing perforin and granzymes. It's the phagocytes, the neutrophils and macrophages, that engulf pathogens. So keep the two jobs distinct, phagocytes eat pathogens, natural killer cells destroy our own compromised cells."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A macrophage engulfs a bacterium, then displays fragments of it on its surface. Name this final step, name the cell type it activates, and explain why it links the two immune systems.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Engulfing and digesting the bacterium is phagocytosis, an innate process.",
+        "Displaying pathogen fragments on the surface is antigen presentation on MHC molecules.",
+        "This activates T cells, which belong to the adaptive immune system.",
+        "So an innate cell hands a specific target to the adaptive system, switching it on.",
+        "Answer: antigen presentation, which activates T cells and bridges innate to adaptive immunity."
+      ],
+      "durationInFrames": 1955,
+      "caption": "Antigen presentation activates T cells, bridging innate and adaptive immunity.",
+      "voiceover": {
+        "text": "Quick check. A macrophage engulfs a bacterium, then displays fragments of it on its surface. Name this final step, name the cell type it activates, and explain why it links the two immune systems. Pause and reason it through. Okay. The engulfing and digesting of the bacterium is phagocytosis, which is an innate process. Then the displaying of pathogen fragments on the cell's surface, that's antigen presentation, where the fragments sit on MHC molecules. Now, what does that activate? It activates T cells, and T cells belong to the adaptive immune system. So why does this link the two systems? Because here you have an innate cell, the macrophage, handing a specific target, the antigen, directly to the adaptive system, switching it on. So the answer is, the step is antigen presentation, it activates T cells, and it bridges innate immunity to adaptive immunity."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Two layers: innate is fast, broad, no memory; adaptive is slow, specific, remembers.",
+        "Innate cells: neutrophils, macrophages, dendritic cells, NK cells, mast cells.",
+        "Phagocytosis: chemotaxis, adherence, ingestion, digestion, antigen presentation.",
+        "Dendritic cells and antigen presentation bridge innate to adaptive immunity.",
+        "NK cells kill host cells with missing MHC class 1; phagocytes eat pathogens."
+      ],
+      "finalPrompt": "Describing innate immunity? Separate the eaters from the killers, and trace the bridge.",
+      "durationInFrames": 1860,
+      "caption": "Five takeaways: two layers, innate cells, phagocytosis, the bridge, eaters vs killers.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, the immune system has two layers, the innate one is fast, broad, and has no memory, while the adaptive one is slow, specific, and remembers. Second, the innate cells are neutrophils, macrophages, dendritic cells, natural killer cells, and mast cells. Third, phagocytosis runs through five steps, chemotaxis, adherence, ingestion, digestion, and antigen presentation. Fourth, dendritic cells and antigen presentation are the bridge that links innate immunity to the adaptive response. And fifth, natural killer cells kill host cells that have lost their MHC class one signal, while phagocytes are the ones that engulf pathogens. When you describe innate immunity, separate the eaters from the killers, and trace the bridge to the adaptive system. Next lesson, that adaptive system itself, antigens, antibodies, and immunological memory. See you there."
+      }
+    }
+  ]
+}

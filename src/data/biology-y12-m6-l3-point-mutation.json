@@ -1,0 +1,219 @@
+{
+  "title": "Point Mutation",
+  "subtitle": "Base-level change with effects from silent to severe",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6 — Genetic Change",
+  "syllabusDotPoints": [
+    "compare the causes, processes and effects of different types of mutation, including but not limited to point mutation and chromosomal mutation"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-13",
+    "BIO11/12-4",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does mutation introduce new alleles into a population?",
+  "lessonIntent": "Students can classify point mutations and explain why a single base change can have anything from no effect to a severe one.",
+  "examSkill": "Read a sequence change, name the mutation type, and predict its likely protein-level consequence.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, point mutation, one base at a time. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Point Mutation — Base-Level Genetic Change (Year 12 Biology, Module 6, Lesson 3)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One letter out of three billion",
+      "body": "In sickle cell anaemia, a single DNA base changes one amino acid, and that reshapes a protein, a cell, and a life.",
+      "callout": "How can something so small reshape an entire organism?",
+      "image": "bioM6L3SickleCell",
+      "durationInFrames": 690,
+      "caption": "The sickle cell mutation is a single base change with a severe effect.",
+      "voiceover": {
+        "text": "In nineteen forty nine, Linus Pauling called sickle cell anaemia the first molecular disease, a condition caused by a single faulty protein. Seven years later, Vernon Ingram found the exact cause, and it was astonishingly small. At codon six of the beta-haemoglobin gene, a single base swaps, G A G becomes G T G, and that one change replaces glutamic acid with valine. One amino acid out of a whole protein, from one base out of three billion. And the consequence cascades. Under low oxygen, the haemoglobin molecules clump and stack up, deforming red blood cells from smooth discs into rigid sickle shapes that jam in capillaries. So today's puzzle is this, how can a change at the level of a single base reshape a protein, a cell, and a person's whole life?"
+      }
+    },
+    {
+      "id": "concept-types",
+      "type": "concept",
+      "heading": "Three kinds of point mutation",
+      "body": "A point mutation changes the DNA at base level. Because the code is read in triplets, even one base can change how the message is translated.",
+      "bullets": [
+        {"text": "Substitution: one base is swapped for another; the reading frame usually stays."},
+        {"text": "Insertion: an extra base is added, which can shift the reading frame."},
+        {"text": "Deletion: a base is removed, which can also shift the reading frame."}
+      ],
+      "secondary": "Point mutation describes the scale, base-level, not the size of the effect. The outcome depends on what the change does to the codons.",
+      "callout": "Small scale, but the effect can be anything.",
+      "durationInFrames": 1080,
+      "caption": "Point mutations: substitution, insertion, deletion at base level.",
+      "voiceover": {
+        "text": "Let's set up the categories. A point mutation is a change to the DNA at the level of a single base, or a very small number of bases. There are three kinds. A substitution swaps one base for another, and because nothing is added or removed, the reading frame usually stays intact. An insertion adds an extra base into the sequence. A deletion removes a base. Now here's the key idea to hold on to. The phrase point mutation describes the scale of the change, base-level, it does not tell you the size of the effect. Because the genetic code is read in triplets, in codons of three bases, even a single base change can alter how the messenger RNA is read during translation. So the real question is always what the change does to the codons downstream, and that's where substitution and frameshift behave very differently."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Point mutation: a change affecting one base pair or a very small number of bases."},
+        {"text": "Silent: the changed codon still codes for the same amino acid, often no effect."},
+        {"text": "Missense: the changed codon codes for a different amino acid, like sickle cell."},
+        {"text": "Nonsense: the changed codon becomes a stop codon, shortening the protein."},
+        {"text": "Frameshift: insertion or deletion shifts the reading frame for every codon downstream."}
+      ],
+      "callout": "Silent, missense, nonsense, frameshift: learn all four.",
+      "durationInFrames": 1110,
+      "caption": "Point mutation, silent, missense, nonsense, frameshift.",
+      "voiceover": {
+        "text": "Let's lock down the vocabulary, because these five words appear in almost every point-mutation question. A point mutation is a change affecting one base pair, or a very small number of bases. Then we classify the outcomes. A silent mutation is where the changed codon still codes for the same amino acid, because the code is degenerate, so there's often no effect at all. A missense mutation is where the changed codon now codes for a different amino acid, and sickle cell is the classic example. A nonsense mutation is where the changed codon becomes a stop codon, which cuts the protein short and usually breaks it. And a frameshift is different in kind, it's caused by an insertion or deletion that shifts the reading frame for every single codon downstream of the change. Get all four straight, because the exam will give you a sequence and ask you to name which one it is."
+      }
+    },
+    {
+      "id": "concept-substitution",
+      "type": "concept",
+      "heading": "Substitution: silent, missense or nonsense",
+      "body": "Because several codons can code for the same amino acid, a substitution can do nothing, swap one amino acid, or insert an early stop.",
+      "bullets": [
+        {"text": "Silent: GAA to GAG still codes glutamic acid, no amino acid change."},
+        {"text": "Missense: a different amino acid, like the sickle cell beta-globin change."},
+        {"text": "Nonsense: an early stop codon, giving a shortened, often non-functional protein."}
+      ],
+      "secondary": "The sickle cell mutation is the textbook missense example: one base substitution changes one amino acid, and that alters haemoglobin enough to deform red blood cells.",
+      "callout": "Same amino acid, different amino acid, or an early stop.",
+      "durationInFrames": 1050,
+      "caption": "Substitutions can be silent, missense (sickle cell), or nonsense.",
+      "voiceover": {
+        "text": "Let's zoom in on substitutions, because they have three very different outcomes. Remember the genetic code is degenerate, several codons can code for the same amino acid. So sometimes a substitution changes a codon but lands on a synonym, for example G A A changing to G A G, both of which still code for glutamic acid. No amino acid changes, that's silent. Other times the new codon codes for a genuinely different amino acid, and that's missense, exactly what happens in sickle cell where one substitution swaps glutamic acid for valine in beta-globin. And sometimes the new codon becomes a stop signal, which is nonsense, ending the protein early and usually breaking it. So the same type of mutation, a single substitution, can do nothing, swap one amino acid, or wreck the whole protein, depending purely on which codon you land on."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Outcome",
+          "Codon-level change",
+          "Likely protein effect"
+        ],
+        "rows": [
+          [
+            "Silent",
+            "Same amino acid coded",
+            "Often little or no effect"
+          ],
+          [
+            "Missense",
+            "Different amino acid coded",
+            "Function may change, e.g. sickle cell"
+          ],
+          [
+            "Nonsense",
+            "Becomes a stop codon",
+            "Shortened, often non-functional"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Classify and predict",
+      "question": "Classify each: (a) a base change leaves the amino acid unchanged; (b) a base change turns a codon into a stop codon; (c) one extra base is added near the start of the gene; (d) one base is deleted in the middle of the coding sequence.",
+      "coachNote": "Substitution keeps the frame, so ask silent/missense/nonsense. Insertion or deletion shifts the frame, so it is a frameshift.",
+      "steps": [
+        "(a) Same amino acid means a silent substitution.",
+        "(b) A new stop codon means a nonsense substitution.",
+        "(c) One extra base shifts the frame, so an insertion causing a frameshift.",
+        "(d) One base removed shifts the frame, so a deletion causing a frameshift.",
+        "Answer: (a) silent, (b) nonsense, (c) frameshift insertion, (d) frameshift deletion."
+      ],
+      "durationInFrames": 1170,
+      "caption": "(a) silent, (b) nonsense, (c) frameshift insertion, (d) frameshift deletion.",
+      "voiceover": {
+        "text": "Let's classify four changes. Part a, a base change that leaves the amino acid unchanged. The sequence changed but the amino acid didn't, so this is a silent substitution, the code landed on a synonym. Part b, a base change that turns a codon into a stop codon. That ends translation early, so it's a nonsense substitution. Part c, one extra base is added near the start of the gene. Adding a base shifts the reading frame, so every codon downstream is regrouped, that's an insertion causing a frameshift. And because it's near the start, almost the entire protein is affected. Part d, one base is deleted in the middle of the coding sequence. Removing a base also shifts the frame, so this is a deletion causing a frameshift from that point on. So substitutions keep the frame and give you silent, missense or nonsense, while insertions and deletions shift the frame and give you frameshifts."
+      }
+    },
+    {
+      "id": "concept-context",
+      "type": "concept",
+      "heading": "Effect depends on type and position",
+      "body": "You cannot rank point mutations as always harmless or always severe. Both the type and the position in the gene matter.",
+      "bullets": [
+        {"text": "Smaller effect: a silent change, or a change in a less critical region."},
+        {"text": "Larger effect: a nonsense mutation, a frameshift near the start, or a missense in an active site."},
+        {"text": "The HSC chain: DNA change to codon change to amino acid change to protein change to phenotype."}
+      ],
+      "secondary": "A change near the end of a gene may affect fewer amino acids than one near the start. A substituted amino acid matters more if it sits in the active site.",
+      "callout": "Where in the gene matters as much as which type.",
+      "durationInFrames": 1020,
+      "caption": "Point mutation effect depends on both the type and the position.",
+      "voiceover": {
+        "text": "Here's the nuance that separates a top answer. You cannot simply rank point mutations as always harmless or always severe, because the effect depends on two things together, the type and the position. On the smaller end, a silent substitution, or a change sitting in a less critical region of the protein, may barely matter. On the larger end, a nonsense mutation that ends the protein early, a frameshift near the start of the gene, or a missense change right in the active site, can be devastating. Position is genuinely important. A change near the end of a gene affects fewer amino acids than one near the start, and a swapped amino acid matters far more if it sits in the active site or disrupts folding. And the logic chain you should be able to recite is, DNA change leads to codon change, leads to amino acid change, leads to protein structure change, leads to a possible phenotype change."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The big traps",
+      "body": "Trap 1: assuming a point mutation only has a small effect because it changes one base. Scale is not the same as size of effect.",
+      "secondary": "Trap 2: thinking insertions and deletions affect only one amino acid. A frameshift alters every codon from the change to the stop codon. Trap 3: forgetting that insertions or deletions in multiples of three do not shift the frame.",
+      "mistakeTag": "Where point-mutation marks vanish",
+      "callout": "Small scale, but the effect ranges from nothing to severe.",
+      "durationInFrames": 1020,
+      "caption": "Scale is not effect size; frameshifts cascade; multiples of three keep the frame.",
+      "voiceover": {
+        "text": "Three traps that cost marks. Trap one, assuming a point mutation must have only a small effect because it changes just one base. That's the scale-equals-size mistake. A single substitution can be completely silent, or it can create a missense or even a nonsense change that wrecks the protein. Small scale does not mean small effect. Trap two, thinking that insertions and deletions affect only one amino acid. They don't, when the number of bases isn't a multiple of three, they cause a frameshift, which alters every codon from the mutation point all the way to the stop codon. The downstream cascade is the whole point. And trap three, forgetting the exception. If bases are inserted or deleted in multiples of three, the reading frame is not shifted, although extra or missing amino acids may still matter. So keep those three straight and frameshift questions become reliable marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Why is the sickle cell mutation a strong example that a small DNA change can still have a major effect? Identify the mutation type and trace the effect.",
+      "pausePrompt": "Pause and build the chain.",
+      "answerSteps": [
+        "It is a single base substitution, classified as a missense mutation.",
+        "It changes one codon and therefore one amino acid in the beta-globin protein.",
+        "That amino acid change alters how haemoglobin behaves under low oxygen.",
+        "The altered haemoglobin deforms red blood cells into a sickle shape.",
+        "Answer: a one-base missense change cascades from codon to protein to whole-organism disease."
+      ],
+      "durationInFrames": 1080,
+      "caption": "Sickle cell: a missense substitution cascading from one codon to disease.",
+      "voiceover": {
+        "text": "Quick check. Why is sickle cell such a strong example that a small DNA change can still have a major effect? Pause and build the chain before I do. Right. First, classify it. It's a single base substitution, and because it changes one amino acid rather than creating a stop codon, it's a missense mutation. Now trace the effect. That one substitution changes one codon, which changes one amino acid in the beta-globin protein, swapping glutamic acid for valine. That single amino acid change alters how the haemoglobin behaves, especially under low oxygen, where the molecules stick together and polymerise. And that, in turn, deforms the red blood cells into the rigid sickle shape that blocks vessels. So the power of the example is the cascade, a one-base missense change runs all the way from codon, to protein, to a whole-organism disease."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A point mutation changes DNA at base level: substitution, insertion or deletion.",
+        "Substitutions are silent, missense or nonsense, depending on the codon.",
+        "Insertion or deletion can cause a frameshift, altering every downstream codon.",
+        "Effect depends on both type and position in the gene.",
+        "Scale is not the same as size of effect, from silent to severe."
+      ],
+      "finalPrompt": "Given a sequence change? Check the frame first, then name the outcome.",
+      "durationInFrames": 1020,
+      "caption": "Five takeaways: three types, three substitution outcomes, frameshifts, position, scale vs effect.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, a point mutation changes DNA at the level of a base, and it comes in three types, substitution, insertion and deletion. Second, substitutions are classified as silent, missense or nonsense, depending entirely on which codon you land on. Third, insertions and deletions can cause a frameshift, which alters every codon downstream of the change. Fourth, the effect depends on both the type of mutation and its position in the gene, a change in the active site matters far more than one in a quiet region. And fifth, the headline, scale is not the same as size of effect, a single base change can do anything from nothing to severe. Given a sequence change, check the reading frame first, then name the outcome. See you next lesson."
+      }
+    }
+  ]
+}

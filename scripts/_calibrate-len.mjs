@@ -1,0 +1,10 @@
+import {readFileSync, readdirSync} from 'node:fs';
+const span = (f)=>{const d=JSON.parse(readFileSync('src/data/'+f,'utf8'));let w=0;if(d.introVoiceover?.text)w+=d.introVoiceover.text.trim().split(/\s+/).length;for(const s of d.scenes||[])if(s.voiceover?.text)w+=s.voiceover.text.trim().split(/\s+/).length;return w;};
+const stat=(re)=>{const fs=readdirSync('src/data').filter(f=>re.test(f)&&f.endsWith('.json'));const mins=fs.map(f=>span(f)/145).sort((a,b)=>a-b);const avg=mins.reduce((a,b)=>a+b,0)/mins.length;return {n:fs.length,min:mins[0].toFixed(1),max:mins[mins.length-1].toFixed(1),median:mins[Math.floor(mins.length/2)].toFixed(1),avg:avg.toFixed(1)};};
+console.log('@145wpm spoken-minute ranges:');
+console.log('  CHEM Y12 :', JSON.stringify(stat(/^chemistry-y12-/)));
+console.log('  CHEM Y11 :', JSON.stringify(stat(/^chemistry-y11-/)));
+console.log('  BIO  M5  :', JSON.stringify(stat(/^biology-y12-m5-/)));
+console.log('  BIO  M6  :', JSON.stringify(stat(/^biology-y12-m6-/)));
+console.log('  BIO  M7  :', JSON.stringify(stat(/^biology-y12-m7-/)));
+console.log('  BIO  M8  :', JSON.stringify(stat(/^biology-y12-m8-/)));

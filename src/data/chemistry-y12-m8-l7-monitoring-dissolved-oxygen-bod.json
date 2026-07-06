@@ -1,0 +1,186 @@
+{
+  "title": "Monitoring Dissolved Oxygen and BOD",
+  "subtitle": "From a thiosulfate titre to a fish kill forecast",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8: Applying Chemical Ideas",
+  "syllabusDotPoints": [
+    "analyse the need for monitoring the environment",
+    "conduct investigations and/or process data to measure dissolved oxygen and biochemical oxygen demand in water samples"
+  ],
+  "moduleLessonCount": 16,
+  "nesaOutcomes": ["CH12-15", "CH11/12-4", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "How are the ions present in the environment identified and measured?",
+  "lessonIntent": "Students can explain the Winkler chain, use the 1:4 oxygen-to-thiosulfate ratio to find DO, calculate BOD₅, and read DO and BOD together to judge a waterway.",
+  "examSkill": "Find n(S₂O₃²⁻) with n = cV, divide by 4 for n(O₂), convert to a DO concentration, and compute BOD₅ as initial DO minus final DO against the pollution thresholds.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, monitoring dissolved oxygen and BOD. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Monitoring Dissolved Oxygen and BOD (Year 12 Chemistry, Module 8, Lesson 7)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A green river that looks fine on Monday",
+      "body": "By Friday the bloom is dying, bacteria surge, oxygen collapses, and fish surface gasping for air.",
+      "callout": "One number forecasts the crash before it happens.",
+      "durationInFrames": 660,
+      "caption": "Dissolved oxygen is a snapshot; BOD forecasts the oxygen crash.",
+      "voiceover": {
+        "text": "OK, picture a slow river on a warm Monday. It's faintly green, looks like a minor eyesore, nothing urgent. By Friday the algal bloom is dying, bacteria have surged to break it down, the dissolved oxygen has crashed below one milligram per litre, and fish are at the surface gasping. The danger was never the green colour, it was the oxygen crash coming behind it. So chemists track two things. Dissolved oxygen, which is a snapshot of the oxygen right now. And BOD, which forecasts how hard the system is about to consume oxygen. Today, how we measure both, including the Winkler titration and its all-important one to four ratio."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Dissolved oxygen as a signal",
+      "body": "DO is the oxygen dissolved in water, the supply aerobic life depends on. A low reading is a warning.",
+      "bullets": [
+        {"text": "Fish, invertebrates and aerobic microbes all rely on dissolved oxygen."},
+        {"text": "DO falls with higher temperature and reduced mixing."},
+        {"text": "It also falls when biological oxygen consumption rises."}
+      ],
+      "secondary": "You met the temperature-DO link last lesson. A low DO reading flags that the system is under chemical or biological stress.",
+      "callout": "Low oxygen, organisms in trouble.",
+      "durationInFrames": 990,
+      "caption": "DO is oxygen available to aquatic life; low DO signals stress.",
+      "voiceover": {
+        "text": "Let's start with dissolved oxygen, DO. It's simply the concentration of oxygen gas dissolved in the water, and it's one of the most urgent parameters, because ecosystems can fail fast when it drops. Fish, many invertebrates, and aerobic microbes all depend on it. DO falls for a few reasons. Higher temperature, which you saw last lesson lowers oxygen solubility. Reduced mixing, so less oxygen gets in from the air. And increased biological consumption, when there's a lot of organic matter to decompose. That's why a low DO reading is such a useful warning, it tells you the system is already under chemical or biological stress."
+      }
+    },
+    {
+      "id": "concept-winkler",
+      "type": "concept",
+      "heading": "The Winkler titration chain",
+      "body": "Oxygen isn't titrated directly. It's trapped, turned into iodine, and that iodine is titrated.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "o2", "label": "O₂"},
+          {"id": "mno2", "label": "MnO₂"},
+          {"id": "i2", "label": "I₂"},
+          {"id": "titre", "label": "S₂O₃²⁻ titre"}
+        ],
+        "edges": [
+          {"from": "o2", "to": "mno2"},
+          {"from": "mno2", "to": "i2"},
+          {"from": "i2", "to": "titre"}
+        ]
+      },
+      "bullets": [
+        {"text": "Dissolved O₂ oxidises Mn²⁺ to MnO₂, trapping the oxygen."},
+        {"text": "MnO₂ then oxidises I⁻ to I₂, releasing iodine."},
+        {"text": "The I₂ is titrated with sodium thiosulfate, Na₂S₂O₃."}
+      ],
+      "secondary": "The shortcut you must memorise is 1 mol O₂ to 4 mol Na₂S₂O₃. Thiosulfate titrates the iodine, never the oxygen directly.",
+      "callout": "One oxygen, four thiosulfate. Bank it.",
+      "durationInFrames": 1110,
+      "caption": "O₂ → MnO₂ → I₂ → thiosulfate titre; ratio 1 O₂ : 4 S₂O₃²⁻.",
+      "voiceover": {
+        "text": "Now the method that earns the calculation marks, the Winkler titration. The clever bit is that you don't titrate oxygen directly, you can't. Instead you convert it through a chain. First, the dissolved oxygen oxidises manganese two to manganese dioxide, which chemically traps the oxygen as an oxidised manganese species. Second, that manganese dioxide oxidises iodide to iodine, and the amount of iodine released depends on how much oxygen there was. Third, you titrate that iodine with sodium thiosulfate, and the titre lets you work back to the original oxygen. Here's the number to memorise, the shortcut for the whole chain is one mole of oxygen to four moles of thiosulfate. And say it correctly, thiosulfate titrates the iodine, not the oxygen."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "DO from a Winkler titre",
+      "question": "A 50.0 mL water sample is fixed and titrated, needing 4.00 mL of 0.0100 mol L⁻¹ Na₂S₂O₃. Find the dissolved oxygen in mg L⁻¹. (M(O₂) = 32.00)",
+      "coachNote": "Find moles of thiosulfate, divide by 4 for O₂, then convert to a concentration.",
+      "steps": [
+        "n(Na₂S₂O₃) = c × V = 0.0100 × 0.00400 = 4.00 × 10⁻⁵ mol",
+        "Ratio 1 O₂ : 4 S₂O₃²⁻, so n(O₂) = 4.00 × 10⁻⁵ ÷ 4 = 1.00 × 10⁻⁵ mol",
+        "m(O₂) = n × M = 1.00 × 10⁻⁵ × 32.00 = 3.20 × 10⁻⁴ g = 0.320 mg",
+        "V = 50.0 ÷ 1000 = 0.0500 L",
+        "DO = 0.320 mg ÷ 0.0500 L = 6.40 mg L⁻¹ ✓"
+      ],
+      "durationInFrames": 1560,
+      "caption": "4.00 mL of 0.0100 thiosulfate gives DO = 6.40 mg L⁻¹.",
+      "voiceover": {
+        "text": "Let's run a Winkler calculation. A fifty millilitre water sample is fixed and titrated, and it needs four millilitres of nought-point-zero-one mole per litre sodium thiosulfate. Find the dissolved oxygen in milligrams per litre. Step one, moles of thiosulfate. n equals c times V, so nought-point-zero-one times nought-point-zero-zero-four is four times ten to the minus five moles. Step two, the ratio, and this is the whole trick. One oxygen to four thiosulfate, so divide by four, giving one times ten to the minus five moles of oxygen. Step three, mass of oxygen. Multiply by thirty-two, which gives three-point-two times ten to the minus four grams, or nought-point-three-two milligrams. Step four, the volume, nought-point-zero-five litres. Step five, concentration, nought-point-three-two milligrams over nought-point-zero-five litres is six-point-four milligrams per litre. That whole calculation hangs on dividing by four."
+      }
+    },
+    {
+      "id": "concept-bod",
+      "type": "concept",
+      "heading": "BOD, oxygen demand over time",
+      "body": "BOD isn't how much oxygen is present. It's how much oxygen microbes consume over five days.",
+      "bullets": [
+        {"text": "BOD₅ = initial DO − final DO, after 5 days at 20°C in the dark."},
+        {"text": "Under 2 mg L⁻¹ is clean; 2 to 8 is moderate pollution."},
+        {"text": "Above 8 mg L⁻¹ means heavy pollution and major concern."}
+      ],
+      "secondary": "DO is the snapshot; BOD is the forecast. A high BOD means a heavy organic load that will keep stripping oxygen out.",
+      "callout": "BOD is oxygen consumed, not oxygen present.",
+      "durationInFrames": 1050,
+      "caption": "BOD₅ = initial DO − final DO; <2 clean, 2 to 8 moderate, >8 heavy.",
+      "voiceover": {
+        "text": "Dissolved oxygen is a snapshot, but BOD is a forecast, and the difference matters. Biochemical oxygen demand, usually written BOD-five, is the amount of dissolved oxygen that microbes consume as they decompose organic matter over five days, at twenty degrees, in the dark. You calculate it simply, the initial dissolved oxygen minus the final dissolved oxygen after those five days. The thresholds are worth knowing. Under two milligrams per litre is clean water. Two to eight is moderate pollution. Above eight is heavy pollution and a serious ecological concern. And here's the wording that trips people, BOD measures oxygen consumed, not oxygen present. A high BOD means more pollution pressure, not more oxygen available."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: saying thiosulfate titrates the oxygen. It titrates the iodine, linked to oxygen by the 1:4 ratio.",
+      "secondary": "Trap 2: forgetting to divide the thiosulfate moles by 4 to get oxygen. Trap 3: reading a high BOD as high oxygen availability; it actually means oxygen is being consumed fast.",
+      "mistakeTag": "Where DO and BOD marks vanish",
+      "callout": "Titrate the iodine, divide by four, high BOD means trouble.",
+      "durationInFrames": 1230,
+      "caption": "Thiosulfate titrates iodine; divide by 4 for O₂; high BOD = poor water.",
+      "voiceover": {
+        "text": "Three traps. Trap one, saying the thiosulfate titrates the dissolved oxygen directly. It doesn't. It titrates the iodine, and that iodine is linked back to the original oxygen by the one to four ratio. Get the wording exact. Trap two, forgetting to divide. The titre gives you moles of thiosulfate, and you must divide by four to get moles of oxygen. Skip that and your DO is four times too big. Trap three, reading a high BOD as good news, as if it means lots of oxygen. The opposite. A high BOD means a heavy organic load is consuming oxygen fast, so the water is poor and heading for stress. Titrate the iodine, divide by four, and treat a high BOD as a red flag."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A sample reads 7.2 mg L⁻¹ DO initially and 3.6 mg L⁻¹ after 5 days. Find BOD₅ and classify the water.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "BOD₅ = initial DO − final DO",
+        "BOD₅ = 7.2 − 3.6 = 3.6 mg L⁻¹",
+        "Compare against the thresholds",
+        "3.6 falls in the 2 to 8 mg L⁻¹ band",
+        "Answer: BOD₅ = 3.6 mg L⁻¹, moderate pollution ✓"
+      ],
+      "durationInFrames": 1110,
+      "caption": "BOD₅ = 7.2 − 3.6 = 3.6 mg L⁻¹, moderate pollution.",
+      "voiceover": {
+        "text": "Quick check. A sample reads seven-point-two milligrams per litre dissolved oxygen at the start, and three-point-six after five days. Find the BOD-five and classify the water. Pause and work it through. Right, let's check it. Step one, the formula, BOD-five is the initial dissolved oxygen minus the final, so seven-point-two minus three-point-six is three-point-six milligrams per litre. Step two, compare that against the thresholds, where three-point-six sits inside the two-to-eight band. Step three, so the BOD is three-point-six milligrams per litre, which is moderate pollution. Subtract, then read the band."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Dissolved oxygen is the oxygen available to aquatic life; low DO signals stress.",
+        "The Winkler chain: O₂ → MnO₂ → I₂ → thiosulfate titre.",
+        "Use 1 mol O₂ : 4 mol Na₂S₂O₃, dividing thiosulfate moles by 4.",
+        "BOD₅ = initial DO − final DO, measuring oxygen consumed, not present.",
+        "BOD bands: under 2 clean, 2 to 8 moderate, over 8 heavy pollution."
+      ],
+      "finalPrompt": "Winkler calc? Find thiosulfate moles, then divide by four for oxygen.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: DO signal, Winkler chain, 1:4 ratio, BOD formula, BOD bands.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, dissolved oxygen is the oxygen available to aquatic life, and a low reading signals stress. Second, the Winkler chain runs oxygen to manganese dioxide to iodine to the thiosulfate titre. Third, the ratio is one mole of oxygen to four moles of thiosulfate, so you divide the thiosulfate moles by four. Fourth, BOD-five is the initial dissolved oxygen minus the final, and it measures oxygen consumed, not oxygen present. And fifth, the BOD bands, under two is clean, two to eight is moderate, over eight is heavy pollution. Find the thiosulfate moles, then divide by four. See you next lesson."
+      }
+    }
+  ]
+}

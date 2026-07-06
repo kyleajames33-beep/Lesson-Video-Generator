@@ -1,0 +1,199 @@
+{
+  "title": "Chromatography, TLC, Column and HPLC",
+  "subtitle": "Separating a mixture by how it splits between two phases",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 5",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8: Applying Chemical Ideas",
+  "syllabusDotPoints": [
+    "conduct investigations and/or process data involving chromatographic techniques to separate and identify the components of a mixture",
+    "calculate Rf values and interpret chromatographic data to identify components and assess purity"
+  ],
+  "moduleLessonCount": 16,
+  "nesaOutcomes": ["CH12-15", "CH11/12-2", "CH11/12-5", "CH11/12-7"],
+  "inquiryQuestion": "How are the ions present in the environment identified and measured?",
+  "lessonIntent": "Students can explain separation by differential affinity, calculate and interpret Rf, choose between TLC, column and HPLC, and read a chromatogram for identity and purity.",
+  "examSkill": "Compute Rf as compound distance over solvent-front distance, link a low Rf to strong stationary-phase affinity, and read extra spots or peaks as evidence of a mixture.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, chromatography, from TLC to HPLC. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Chromatography, TLC, Column and HPLC (Year 12 Chemistry, Module 8, Lesson 5)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "An extra peak that cost 81 lives",
+      "body": "In 2008, an HPLC trace of a blood-thinning drug showed a second peak that should not have been there.",
+      "callout": "Separation can expose what weighing never could.",
+      "durationInFrames": 660,
+      "caption": "Chromatography separates a mixture so hidden components become visible.",
+      "voiceover": {
+        "text": "OK, here's one with real stakes. In 2008, a batch of the blood thinner heparin was run through an HPLC machine, and the trace showed two peaks. One was the drug, right where it should be. The other shouldn't have existed, and it made up as much as half the sample. That second peak was a dangerous adulterant, and it was linked to eighty-one deaths. Weight checks had missed it. Single-element tests had missed it. Chromatography caught it, by separating the mixture out so a hidden component became a visible peak. Today, how that separation works, from a simple plate to a high-pressure instrument, plus the Rf calculation."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "The principle of chromatography",
+      "body": "Components separate because they split differently between a stationary phase and a moving mobile phase.",
+      "bullets": [
+        {"text": "Stronger attraction to the stationary phase means slower movement."},
+        {"text": "Greater affinity for the mobile phase means faster movement."},
+        {"text": "Separation reflects real properties: polarity and intermolecular forces."}
+      ],
+      "secondary": "Separation isn't random. A component's speed encodes its chemistry, so different substances spread out along the path.",
+      "callout": "Differential affinity for two phases does the sorting.",
+      "durationInFrames": 1020,
+      "caption": "Differential affinity for the stationary and mobile phases separates components.",
+      "voiceover": {
+        "text": "So let's get the core idea, and there's a phrase the exam wants. Chromatography separates a mixture by differential affinity for two phases. Every method has a stationary phase that stays put, and a mobile phase that moves. As the mobile phase carries the mixture along, each component splits between the two phases in its own way. A component strongly attracted to the stationary phase clings and moves slowly. A component that prefers the mobile phase travels fast. The key point is that this separation isn't random, it reflects real chemistry, polarity, intermolecular forces, solubility. So the speed a component moves at is actually telling you about its structure."
+      }
+    },
+    {
+      "id": "concept-tlc",
+      "type": "concept",
+      "heading": "TLC and the Rf value",
+      "body": "Spot the mixture on a plate, let solvent rise, and measure how far each component travels.",
+      "bullets": [
+        {"text": "Stationary phase is silica on a plate; the solvent rises by capillary action."},
+        {"text": "Rf = distance the compound travels ÷ distance the solvent front travels."},
+        {"text": "Rf has no units and always sits between 0 and 1."}
+      ],
+      "secondary": "More than one spot from a supposedly pure sample is evidence of more than one component. A polar compound on silica gives a low Rf.",
+      "callout": "Compound distance on top, so Rf stays under 1.",
+      "durationInFrames": 1080,
+      "caption": "Rf = compound distance ÷ solvent-front distance, between 0 and 1.",
+      "voiceover": {
+        "text": "The simplest version is thin-layer chromatography, TLC. The stationary phase is a thin coat of silica on a plate, and the mobile phase is a solvent creeping up by capillary action. You spot your mixture near the bottom, and as the solvent rises, the components travel different distances. To put a number on it, you calculate the Rf value, the distance the compound travelled divided by the distance the solvent front travelled. Rf has no units, and because the compound can't outrun the solvent, it always lands between zero and one. Two things to remember. If a supposedly pure sample gives more than one spot, it's not pure. And on silica, which is polar, a polar compound sticks hard and gives a low Rf."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "concept",
+      "heading": "TLC, column and HPLC",
+      "body": "Same principle, three scales. Quick check, preparative collection, or high-precision analysis.",
+      "diagram": {
+        "type": "table",
+        "headers": ["Technique", "Main use", "Sensitivity"],
+        "rows": [
+          ["TLC", "Check purity fast", "Moderate"],
+          ["Column", "Collect fractions", "Moderate"],
+          ["HPLC", "Precise analysis", "High"]
+        ]
+      },
+      "bullets": [
+        {"text": "TLC: a fast, small-scale purity and identity check."},
+        {"text": "Column: preparative, for physically collecting separated fractions."},
+        {"text": "HPLC: fast, automated, high-sensitivity quantitative analysis."}
+      ],
+      "secondary": "HPLC drives the mobile phase through the column under high pressure, giving rapid, highly reproducible separations with instrument detection.",
+      "callout": "Pick the scale the question actually needs.",
+      "durationInFrames": 1080,
+      "caption": "TLC checks purity, column collects fractions, HPLC measures precisely.",
+      "voiceover": {
+        "text": "The same principle scales three ways, and the exam likes you to pick the right one. TLC is the quick, small-scale check, how many components, do any match a standard. Column chromatography is preparative, you run the mixture through a packed column and physically collect the separated fractions as they come off, which is how you'd purify a product. And HPLC, high-performance liquid chromatography, is the analytical heavyweight. It forces the mobile phase through the column under high pressure, giving fast, extremely reproducible separations with sensitive instrument detection. So if you just need a yes-or-no on purity, TLC. If you need to collect a pure component, column. If you need precise, quantitative data, HPLC."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Calculating Rf values",
+      "question": "On a TLC plate, compound A travels 3.2 cm and compound B travels 2.1 cm. The solvent front travels 4.0 cm. Find both Rf values and state which has the stronger affinity for the stationary phase.",
+      "coachNote": "Rf = compound distance ÷ solvent-front distance. Lower Rf means it clings harder.",
+      "steps": [
+        "Rf(A) = 3.2 ÷ 4.0 = 0.80",
+        "Rf(B) = 2.1 ÷ 4.0 = 0.525",
+        "Both lie between 0 and 1, as required",
+        "B has the lower Rf, so it travelled less far",
+        "Answer: B has the stronger affinity for the stationary phase ✓"
+      ],
+      "durationInFrames": 1350,
+      "caption": "Rf(A) = 0.80, Rf(B) = 0.525; lower Rf B clings harder to the plate.",
+      "voiceover": {
+        "text": "Let's calculate some Rf values. On a TLC plate, compound A travels three-point-two centimetres and compound B travels two-point-one. The solvent front travels four centimetres. Find both Rf values, and say which has the stronger affinity for the stationary phase. Step one, Rf for A, three-point-two over four, which is nought-point-eight. Step two, Rf for B, two-point-one over four, which is nought-point-five-two-five. Step three, sanity check, both sit between zero and one, good. Step four, B has the lower Rf, so it didn't travel as far. Step five, and that's the interpretation, a lower Rf means it spent more time stuck to the stationary phase, so B has the stronger affinity for it. Distance on top, then read the chemistry from the size of the number."
+      }
+    },
+    {
+      "id": "concept-hplc",
+      "type": "concept",
+      "heading": "Reading an HPLC chromatogram",
+      "body": "Each peak is a component leaving the column. Its retention time and the number of peaks tell the story.",
+      "bullets": [
+        {"text": "Retention time is how long a component takes to reach the detector."},
+        {"text": "A matching retention time, under identical conditions, supports identity."},
+        {"text": "One clean peak suggests purity; extra peaks mean a mixture or impurity."}
+      ],
+      "secondary": "A matching retention time is strong evidence, but not absolute proof on its own, and only when the operating conditions are identical.",
+      "callout": "Same conditions, or the retention time means nothing.",
+      "durationInFrames": 1050,
+      "caption": "Retention time supports identity; extra peaks reveal impurities.",
+      "voiceover": {
+        "text": "When the HPLC run finishes, you get a chromatogram, basically a timeline of the mixture. Each peak marks a component leaving the column and hitting the detector. The retention time is how long that took, and under identical conditions, a known compound always comes off at its characteristic time. So if a peak in your unknown matches a standard's retention time, that supports its identity, strong evidence, though not absolute proof on its own. The number of peaks matters just as much. One clean major peak with nothing else suggests a pure substance. Extra peaks, even small ones, mean there's another component or an impurity, exactly like that heparin trace from the hook."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: inverting the Rf ratio. Compound distance goes on top, so Rf stays between 0 and 1.",
+      "secondary": "Trap 2: calling a sample pure when it shows extra spots or peaks. Extra signals mean a mixture. Trap 3: comparing retention times or Rf values taken under different conditions.",
+      "mistakeTag": "Where chromatography marks vanish",
+      "callout": "Compound over solvent, extra peaks mean impure, match conditions.",
+      "durationInFrames": 1230,
+      "caption": "Don't invert Rf; extra spots mean impure; only compare under matched conditions.",
+      "voiceover": {
+        "text": "Three traps. Trap one, flipping the Rf ratio. It's the distance the compound travelled on top, over the solvent front distance, which keeps Rf between zero and one. Put the solvent front on top and you'll get a number bigger than one, which is impossible. Trap two, declaring a sample pure when its chromatogram shows extra spots or peaks. Extra signals are direct evidence of more than one component. Trap three, comparing Rf values or retention times that were measured under different conditions. A different solvent, plate, or temperature changes the numbers, so a match only counts when the conditions are identical. Compound over solvent, extra peaks mean impure, and always match the conditions."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A TLC spot travels 1.8 cm while the solvent front travels 6.0 cm. Find the Rf, and say whether this compound is strongly or weakly held by the stationary phase.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Rf = compound distance ÷ solvent-front distance",
+        "Rf = 1.8 ÷ 6.0 = 0.30",
+        "This is a low Rf, between 0 and 1",
+        "A low Rf means it travelled only a short way",
+        "Answer: Rf = 0.30, so it is strongly held by the stationary phase ✓"
+      ],
+      "durationInFrames": 1140,
+      "caption": "Rf = 1.8 ÷ 6.0 = 0.30, a low value, so strongly held.",
+      "voiceover": {
+        "text": "Quick check. A TLC spot travels one-point-eight centimetres while the solvent front travels six centimetres. Find the Rf, and say whether this compound is strongly or weakly held by the stationary phase. Pause and work it through. Right, let's check it. Step one, Rf is the compound distance over the solvent front distance, so one-point-eight over six is nought-point-three. Step two, that's a low value, comfortably between zero and one. Step three, a low Rf means it barely moved, so it's strongly held by the stationary phase. Low Rf, strong grip, and that link is worth banking."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Chromatography separates by differential affinity for the stationary and mobile phases.",
+        "Rf = compound distance ÷ solvent-front distance, always between 0 and 1.",
+        "A low Rf means the compound is strongly held by the stationary phase.",
+        "TLC checks purity, column collects fractions, HPLC measures precisely.",
+        "Extra spots or peaks are evidence of a mixture or an impurity."
+      ],
+      "finalPrompt": "Reading a chromatogram? Compound over solvent, and how many signals?",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: differential affinity, Rf, low-Rf grip, technique choice, extra peaks.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, chromatography separates a mixture by differential affinity for the stationary and mobile phases. Second, Rf is the compound distance over the solvent front distance, always between zero and one. Third, a low Rf means the compound is strongly held by the stationary phase. Fourth, TLC checks purity, column chromatography collects fractions, and HPLC gives precise quantitative data. And fifth, extra spots or peaks are evidence of a mixture or an impurity, never assume purity from one signal. Compound over solvent, and count the peaks. See you next lesson."
+      }
+    }
+  ]
+}

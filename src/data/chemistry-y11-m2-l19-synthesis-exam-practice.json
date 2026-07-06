@@ -1,0 +1,172 @@
+{
+  "title": "Module 2 Synthesis and Exam Practice",
+  "subtitle": "Chaining every tool in one problem",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 19",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "apply quantitative chemistry concepts to solve multi-step problems across the module"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-9", "CH11/12-4", "CH11/12-6"],
+  "inquiryQuestion": "What happens in chemical reactions?",
+  "lessonIntent": "Students can plan and execute multi-step problems that chain the mole formulas, stoichiometry, gas volume, purity and yield without losing the thread.",
+  "examSkill": "Plan the route through moles, apply purity before stoichiometry, choose the right mole formula at each end, and finish with yield or concentration as asked.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, synthesis and exam practice, chaining every tool in one problem. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Module 2 Synthesis and Exam Practice (Year 11 Chemistry, Module 2, Lesson 19)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Five steps without losing the thread",
+      "body": "The hard exam questions aren't harder maths. They just chain four or five steps together.",
+      "callout": "Plan the route before you calculate.",
+      "durationInFrames": 660,
+      "caption": "Exam mastery is chaining steps, not harder arithmetic.",
+      "voiceover": {
+        "text": "OK, here's the truth about the hardest Module 2 exam questions. They don't use harder maths. Every individual step is something you can already do. What makes them hard is that they chain four or five steps together, and it's easy to lose the thread halfway through. So the skill today isn't new chemistry, it's planning. Before you touch the calculator, you map the route from what you're given to what you want, through moles. Plan first, calculate second, and these long questions become a series of small, familiar moves."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Plan the route through moles",
+      "body": "Every multi-step problem is a path from given to wanted, passing through moles.",
+      "image": "l19ExamStrategy",
+      "bullets": [
+        {"text": "Identify what you're given and what you're asked for."},
+        {"text": "Pick the formula that turns your given into moles."},
+        {"text": "Cross the mole ratio, then pick the formula out to the answer."}
+      ],
+      "secondary": "If a reactant is impure, apply purity first. If conditions involve a gas, use molar volume. The plan tells you which.",
+      "callout": "Map the path first; the steps follow.",
+      "durationInFrames": 1110,
+      "caption": "Given → moles → ratio → wanted, planned before calculating.",
+      "voiceover": {
+        "text": "Here's the planning method that holds every long problem together. First, identify clearly what you're given and what you're being asked for. Second, pick the formula that turns your given quantity into moles. Mass uses molar mass. A gas uses molar volume. A solution uses concentration times volume. Particles use Avogadro's number. Third, cross the mole ratio from the balanced equation, then pick the formula that takes you out to the answer. And weave in the extras where the problem demands. If a reactant is impure, handle purity first. If yield is asked, compare at the end. The plan tells you the order, so you never lose the thread."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The four mole formulas",
+      "bullets": [
+        {"text": "n = m ÷ M, for a mass of solid or liquid."},
+        {"text": "n = V ÷ Vₘ, for a volume of gas."},
+        {"text": "n = c × V, for a volume of solution."},
+        {"text": "n = N ÷ Nₐ, for a number of particles."}
+      ],
+      "callout": "Whatever you're given, one of these turns it into moles.",
+      "durationInFrames": 960,
+      "caption": "The four ways into moles: mass, gas, solution, particles.",
+      "voiceover": {
+        "text": "Everything in this module funnels through four formulas that get you into moles. From a mass, n equals m over capital M. From a gas volume, n equals V over molar volume. From a solution, n equals concentration times volume. From a number of particles, n equals big N over Avogadro's number. That's the whole toolkit. Whatever a question hands you, one of these four turns it into moles, and once you're in moles, the mole ratio carries you across to anything else. Recognising which of the four to reach for is the first decision in every problem."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Acid, metal, and a gas",
+      "question": "35.0 mL of 0.400 mol L⁻¹ H₂SO₄ reacts with excess Zn. Zn + H₂SO₄ → ZnSO₄ + H₂. Find V(H₂) at RTP and the mass of Zn used. (Zn 65.38)",
+      "coachNote": "Solution in via n = cV; gas out via Vₘ; metal out via molar mass.",
+      "steps": [
+        "n(H₂SO₄) = c × V = 0.400 × 0.0350 = 0.0140 mol",
+        "Ratio H₂SO₄ : H₂ = 1 : 1, so n(H₂) = 0.0140 mol",
+        "V(H₂) at RTP = n × Vₘ = 0.0140 × 24.8 = 0.347 L",
+        "Ratio H₂SO₄ : Zn = 1 : 1, so n(Zn) = 0.0140 mol",
+        "m(Zn) = n × M = 0.0140 × 65.38 = 0.915 g ✓"
+      ],
+      "durationInFrames": 1560,
+      "caption": "0.0140 mol drives 0.347 L H₂ at RTP and 0.915 g Zn consumed.",
+      "voiceover": {
+        "text": "Let's chain one. Thirty-five millilitres of nought-point-four mole per litre sulfuric acid reacts with excess zinc, producing zinc sulfate and hydrogen gas. Find the volume of hydrogen at RTP and the mass of zinc used. Plan first. The acid is a solution, so we enter through n equals c times V. The hydrogen is a gas, so it exits through molar volume. The zinc is a solid, so it exits through molar mass. Now execute. Step one, moles of acid. Nought-point-four times nought-point-zero-three-five is nought-point-zero-one-four moles. Step two, the ratio of acid to hydrogen is one to one, so nought-point-zero-one-four moles of hydrogen. Step three, at RTP, volume is moles times twenty-four-point-eight, which is nought-point-three-four-seven litres. Step four, the ratio of acid to zinc is also one to one, so nought-point-zero-one-four moles of zinc. Step five, mass of zinc is moles times sixty-five-point-three-eight, which is nought-point-nine-one-five grams. One mole value drove two different answers, each using a different exit formula."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Impure ore and yield",
+      "question": "500 g of ore is 76.0% Fe₂O₃. Fe₂O₃ + 3CO → 2Fe + 3CO₂. Actual Fe = 245 g. Find the theoretical yield and the % yield. (Fe 55.845, O 15.999)",
+      "coachNote": "Purity first, theoretical yield by stoichiometry, then % yield.",
+      "steps": [
+        "Pure Fe₂O₃ = 0.760 × 500 = 380 g",
+        "M(Fe₂O₃) = 159.69 g mol⁻¹; n = 380 ÷ 159.69 = 2.380 mol",
+        "Ratio Fe₂O₃ : Fe = 1 : 2, so n(Fe) = 4.759 mol; m = 4.759 × 55.845 = 266 g",
+        "Theoretical yield = 266 g Fe",
+        "% yield = (245 ÷ 266) × 100 = 92.1% ✓"
+      ],
+      "durationInFrames": 1620,
+      "caption": "Purity first → 266 g theoretical Fe → 92.1% yield.",
+      "voiceover": {
+        "text": "Now one that combines purity, stoichiometry, and yield. Five hundred grams of iron ore is seventy-six percent iron three oxide. It's reduced to iron, and the actual iron collected is two hundred and forty-five grams. Find the theoretical yield and the percentage yield. Plan. Purity comes first, then stoichiometry for the theoretical mass, then the percentage at the end. Execute. Step one, the pure iron three oxide. Seventy-six percent of five hundred grams is three hundred and eighty grams. Step two, convert to moles. Molar mass of iron three oxide is one hundred and fifty-nine-point-six-nine, so three hundred and eighty grams is two-point-three-eight moles. Step three, the ratio of iron three oxide to iron is one to two, so four-point-seven-six moles of iron, which is two hundred and sixty-six grams. That's the theoretical yield. Step four, restate it, two hundred and sixty-six grams. Step five, the percentage yield, actual over theoretical, two forty-five over two sixty-six, times one hundred, which is ninety-two-point-one percent. Purity first, stoichiometry second, percentage last. The order is everything."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: applying purity after the stoichiometry instead of before it.",
+      "secondary": "Trap 2: forgetting to convert millilitres to litres in concentration steps. Trap 3: skipping the balanced equation and guessing the mole ratio.",
+      "mistakeTag": "Where multi-step marks vanish",
+      "callout": "Purity first, litres always, balance the equation.",
+      "durationInFrames": 1230,
+      "caption": "Apply purity first; convert mL to L; never skip the balanced equation.",
+      "voiceover": {
+        "text": "Three traps that ruin long questions. Trap one, applying purity after the stoichiometry instead of before. Purity strips your impure mass down to the real reacting amount, and that has to happen before any moles. Do it at the end and every step before it used the wrong mass. Trap two, forgetting to convert millilitres to litres in the concentration steps. It's the oldest trap in the module and it still catches people under exam pressure. Trap three, skipping the balanced equation and guessing the mole ratio. In a five-step problem, a wrong ratio in the middle wrecks everything after it. Write the balanced equation first, every time. Purity first, litres always, and never guess the ratio."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "2.40 g of impure NaOH is made to 250 mL. 25.0 mL aliquots need 23.6 mL of 0.0980 mol L⁻¹ HCl. Find the % purity. (M(NaOH) = 40.00)",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "n(HCl) = 0.0980 × 0.0236 = 2.313 × 10⁻³ mol (in aliquot)",
+        "Ratio 1:1, so n(NaOH) in aliquot = 2.313 × 10⁻³ mol",
+        "Whole flask = 10 × aliquot, so n(NaOH) = 2.313 × 10⁻² mol",
+        "m(pure NaOH) = 2.313 × 10⁻² × 40.00 = 0.925 g",
+        "% purity = (0.925 ÷ 2.40) × 100 = 38.6% ✓"
+      ],
+      "durationInFrames": 1560,
+      "caption": "Scale aliquot ×10, then 0.925 g pure ÷ 2.40 g = 38.6% purity.",
+      "voiceover": {
+        "text": "Quick check, a full back-calculation. Two-point-four grams of impure sodium hydroxide is dissolved to make two hundred and fifty millilitres. Twenty-five millilitre aliquots need twenty-three-point-six millilitres of nought-point-zero-nine-eight mole per litre hydrochloric acid. Find the percentage purity. Pause and work it through. Right, let's check it. Step one, moles of acid in the titration. Nought-point-zero-nine-eight times nought-point-zero-two-three-six is two-point-three-one times ten to the minus three moles. Step two, the ratio is one to one, so the sodium hydroxide in that aliquot is the same. Step three, the whole flask is ten times the aliquot, so two-point-three-one times ten to the minus two moles of sodium hydroxide in total. Step four, the pure mass. That times forty is nought-point-nine-two-five grams of actual sodium hydroxide. Step five, percentage purity, nought-point-nine-two-five over the two-point-four grams weighed, times one hundred, which is thirty-eight-point-six percent. Titre to moles, scale the aliquot up, then compare to the sample mass."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Hard questions chain familiar steps; plan the route first.",
+        "Pick the right mole formula for your given and your wanted.",
+        "Apply purity before stoichiometry, never after.",
+        "Use molar volume for gases, molar mass for solids and liquids.",
+        "Finish with yield or concentration as the question asks."
+      ],
+      "finalPrompt": "Long question? Map given → moles → ratio → wanted before you start.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: plan the route, right formula each end, purity first.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, hard questions just chain familiar steps, so plan the route before you calculate. Second, pick the right mole formula for what you're given and what you want, from the four. Third, apply purity before the stoichiometry, never after. Fourth, use molar volume for gases and molar mass for solids and liquids, sometimes both in one problem. And fifth, finish with whatever the question asks, a yield, a mass, a concentration. Map the path from given to wanted through moles, and the longest problem becomes a series of small, familiar moves. One lesson to go, the module review. See you there."
+      }
+    }
+  ]
+}

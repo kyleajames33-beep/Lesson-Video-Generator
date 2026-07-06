@@ -1,0 +1,217 @@
+{
+  "title": "Strong vs Weak Acids and Bases",
+  "subtitle": "The distinction that powers every pH calculation",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 5",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6: Acid/Base Reactions",
+  "syllabusDotPoints": [
+    "conduct an investigation to demonstrate the use of pH to indicate the differences between the strength of acids and bases (ACSCH102)",
+    "construct models and/or animations to communicate the differences between strong, weak, concentrated and dilute acids and bases (ACSCH099)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "CH12-13",
+    "CH11/12-2",
+    "CH11/12-3",
+    "CH11/12-5"
+  ],
+  "inquiryQuestion": "What is the role of water in solutions of acids and bases?",
+  "lessonIntent": "Students can separate acid strength from concentration, list the strong acids and bases, and write ionic equations with the correct arrow.",
+  "examSkill": "Decide strong vs weak from the strong list, write → or ⇌ accordingly, and explain why equal-concentration solutions give different pH because of degree of ionisation.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, strong versus weak acids and bases. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Strong vs Weak Acids and Bases (Year 12 Chemistry, Module 6, Lesson 5)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same concentration, different pH",
+      "body": "Two beakers, both 0.1 mol L⁻¹. The HCl reads pH 1.0; the acetic acid reads pH 2.9.",
+      "callout": "Same number of molecules, yet nearly 100 times the H⁺. Why?",
+      "image": "strongWeakBeakers",
+      "durationInFrames": 660,
+      "caption": "Equal-concentration HCl and acetic acid give very different pH.",
+      "voiceover": {
+        "text": "OK, here's an experiment that nearly cost a man his doctorate. Back in eighteen eighty-four, Arrhenius measured two acid solutions at exactly the same concentration. One conducted electricity over seventy times better than the other. Picture it as two beakers, both nought-point-one molar. Dip a pH probe in the hydrochloric acid and it reads one-point-zero. Dip it in the acetic acid, the acid in vinegar, and it reads two-point-nine. Same concentration, the same number of acid molecules per litre, yet nearly a hundred times more hydrogen ions in the hydrochloric acid. His examiners almost failed him for the explanation. Forty years later it won him a Nobel Prize. Today you'll understand exactly what he saw."
+      }
+    },
+    {
+      "id": "concept-independence",
+      "type": "concept",
+      "heading": "Strength and concentration are independent",
+      "body": "Strength is what fraction ionises; concentration is how much you dissolved. They are separate dials.",
+      "bullets": [
+        {"text": "Strength: a strong acid ionises completely; a weak acid only partially."},
+        {"text": "Concentration: moles per litre, set by how much you dissolved."},
+        {"text": "[H⁺] depends on BOTH, so pH alone cannot tell you the strength."}
+      ],
+      "secondary": "A concentrated weak acid can beat a dilute strong one: 10 mol L⁻¹ acetic acid (pH ≈ 1.9) is lower than 0.001 mol L⁻¹ HCl (pH 3.0).",
+      "callout": "Diluting an acid changes its concentration, never its strength.",
+      "durationInFrames": 1170,
+      "caption": "Strength (fraction ionised) and concentration (mol/L) are independent; [H⁺] needs both.",
+      "voiceover": {
+        "text": "Here's the idea that unlocks the whole module, and it's the most confused one too. Strength and concentration are completely separate properties. Strength describes what fraction of the acid molecules actually give up their proton. A strong acid ionises essentially completely, a weak acid only partially. Concentration is just how much acid you dissolved, in moles per litre, regardless of how much ionises. They're two independent dials. You can have a concentrated strong acid, a dilute strong acid, a concentrated weak acid, or a dilute weak acid. The hydrogen ion concentration depends on both dials at once, which is why pH on its own can never tell you whether an acid is strong. In fact, a concentrated weak acid can have a lower pH than a dilute strong one. Ten molar acetic acid sits near pH one-point-nine, below nought-point-zero-zero-one molar hydrochloric acid at pH three."
+      },
+      "diagram": {
+        "type": "concentrationCompare"
+      }
+    },
+    {
+      "id": "concept-lists",
+      "type": "concept",
+      "heading": "The short lists to memorise",
+      "body": "There are only six strong acids and four strong bases. Everything else is weak.",
+      "bullets": [
+        {"text": "Strong acids: HCl, H₂SO₄ (1st), HNO₃, HClO₄, HBr, HI."},
+        {"text": "Strong bases: NaOH, KOH, Ca(OH)₂, Ba(OH)₂."},
+        {"text": "HF is weak: the short, strong H–F bond resists donating the proton."}
+      ],
+      "secondary": "Ca(OH)₂ and Ba(OH)₂ each release two OH⁻, so [OH⁻] = 2 × c. Their low limewater pH is low solubility, not weakness.",
+      "callout": "Not on the strong list? Treat it as weak, including ammonia.",
+      "durationInFrames": 1170,
+      "caption": "Six strong acids, four strong bases; everything else weak; HF is weak.",
+      "voiceover": {
+        "text": "The good news is the lists are tiny. There are exactly six strong acids, hydrochloric, sulfuric on its first ionisation, nitric, perchloric, hydrobromic, and hydroiodic. There are exactly four strong bases, sodium, potassium, calcium, and barium hydroxide. If an acid or base isn't on those lists, treat it as weak, and that includes ammonia and hydrofluoric acid. Two things to flag. First, hydrofluoric acid is weak even though it's a hydrogen halide like hydrochloric, because the hydrogen fluorine bond is so short and strong that the proton won't leave easily. Second, calcium and barium hydroxide each release two hydroxides per formula unit, so their hydroxide concentration is twice the concentration of the base. And limewater's modest pH is down to low solubility, not weakness. Calcium hydroxide is genuinely strong."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Strong acid: ionises completely, so [H⁺] equals the acid's concentration."},
+        {"text": "Weak acid: ionises only partially, setting up an equilibrium."},
+        {"text": "Degree of ionisation: the fraction of molecules that have ionised."},
+        {"text": "Arrow rule: → for strong (complete), ⇌ for weak (partial)."}
+      ],
+      "callout": "Strong takes a single arrow; weak takes the equilibrium arrow.",
+      "durationInFrames": 1020,
+      "caption": "Strong acid, weak acid, degree of ionisation, the arrow rule.",
+      "voiceover": {
+        "text": "Quick vocabulary, and one rule that earns or loses marks. A strong acid ionises completely, so its hydrogen ion concentration just equals the concentration you dissolved. A weak acid ionises only partially, setting up a dynamic equilibrium between the intact acid and its ions. The degree of ionisation is the fraction of molecules that have ionised, high for strong, tiny for weak. And the non-negotiable arrow rule. Strong acids and bases take a single forward arrow, because the reaction effectively goes to completion. Weak acids and bases take the equilibrium arrow, the double harpoon, because they only partially ionise. Writing the wrong arrow changes the meaning of the equation, and a correct formula with the wrong arrow loses the mark every time."
+      }
+    },
+    {
+      "id": "concept-practical",
+      "type": "concept",
+      "heading": "Proving it with a pH probe",
+      "body": "The prescribed practical measures pH of equal-concentration acids to expose the strength gap.",
+      "bullets": [
+        {"text": "0.1 mol L⁻¹ HCl reads pH 1.0, so [H⁺] is the full 0.1 mol L⁻¹."},
+        {"text": "0.1 mol L⁻¹ acetic acid reads pH 2.9, so [H⁺] is only about 0.0013 mol L⁻¹."},
+        {"text": "That 1.9-unit gap means roughly 79 times more H⁺ in the HCl."}
+      ],
+      "secondary": "The report wording matters: at equal concentration HCl gives a higher [H⁺] because it ionises completely while acetic acid ionises only partially.",
+      "callout": "Equal concentration, different pH, is direct proof of different ionisation.",
+      "durationInFrames": 1140,
+      "caption": "0.1 M HCl pH 1.0 vs 0.1 M acetic acid pH 2.9: experimental proof of partial ionisation.",
+      "voiceover": {
+        "text": "Here's how you prove all this in the lab, and it's the prescribed investigation. You take a calibrated pH probe and measure equal-concentration solutions. Nought-point-one molar hydrochloric acid reads pH one-point-zero, which means the hydrogen ion concentration is the full nought-point-one molar, every molecule ionised. Nought-point-one molar acetic acid reads pH two-point-nine, which works out to only about nought-point-zero-zero-one-three molar hydrogen ions, just over one percent ionised. That gap of one-point-nine pH units means there's roughly seventy-nine times more hydrogen ion in the hydrochloric acid at the same concentration. Now the wording the markers want. Don't just say hydrochloric is more acidic. Say at equal concentration it gives a higher hydrogen ion concentration because it ionises completely, while acetic acid ionises only partially. That phrasing names the actual concept."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Classify and write equations",
+      "question": "Classify and write ionic equations for: (a) HBr, (b) HF, (c) Ba(OH)₂, (d) NH₃ in water.",
+      "coachNote": "Check the strong list, then pick → or ⇌.",
+      "steps": [
+        "HBr is on the strong-acid list → strong, single arrow: HBr → H⁺ + Br⁻",
+        "HF is not on the list → weak → HF ⇌ H⁺ + F⁻",
+        "Ba(OH)₂ is a strong base, two OH⁻: Ba(OH)₂ → Ba²⁺ + 2OH⁻",
+        "NH₃ is not on the strong-base list → weak: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻",
+        "Answer: strong, weak, strong, weak; arrows →, ⇌, →, ⇌ ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "HBr→H⁺+Br⁻; HF⇌H⁺+F⁻; Ba(OH)₂→Ba²⁺+2OH⁻; NH₃+H₂O⇌NH₄⁺+OH⁻.",
+      "voiceover": {
+        "text": "Let's classify four and write their equations. First, hydrobromic acid is on the strong-acid list, so it's strong, single arrow, hydrobromic acid gives hydrogen ion plus bromide. Second, hydrofluoric acid is not on the list, so it's weak, equilibrium arrow, hydrofluoric acid in balance with hydrogen ion plus fluoride. Third, barium hydroxide is one of the four strong bases, single arrow, and crucially it releases two hydroxides, so barium hydroxide gives barium two-plus plus two hydroxide. Fourth, ammonia isn't on the strong-base list, so it's weak, and it reacts with water, ammonia plus water in equilibrium with ammonium plus hydroxide. The whole method is just, check the list, then choose the arrow. Three seconds, and you never lose the arrow mark."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Why the pH differs",
+      "question": "At 0.10 mol L⁻¹: HNO₃ pH 1.0, HNO₂ pH 2.1, HCl pH 1.0, CH₃COOH pH 2.9. Explain the pattern.",
+      "coachNote": "Same concentration throughout, so any pH difference is a strength difference.",
+      "steps": [
+        "Strong (on the list): HNO₃ and HCl, both 100% ionised → [H⁺] = 0.10 → pH 1.0",
+        "HNO₃ and HCl match because the spectator anion (NO₃⁻ vs Cl⁻) doesn't affect [H⁺]",
+        "Weak (not on the list): HNO₂ and CH₃COOH, only partly ionised → pH above 1.0",
+        "HNO₂ (pH 2.1) has a larger Ka than CH₃COOH (pH 2.9), so it ionises more",
+        "Answer: pH order tracks degree of ionisation, not concentration ✓"
+      ],
+      "durationInFrames": 1350,
+      "caption": "Strong acids both pH 1.0; weaker Ka → higher pH at the same concentration.",
+      "voiceover": {
+        "text": "Now let's read pH data. Four acids, all at nought-point-one molar. Nitric acid reads one-point-zero, nitrous acid two-point-one, hydrochloric one-point-zero, acetic two-point-nine. Because the concentration is identical for all four, every pH difference is purely a strength difference. Step one, the strong ones on the list, nitric and hydrochloric, are fully ionised, so their hydrogen ion concentration is the full nought-point-one and both read pH one-point-zero. Step two, they match each other because the leftover anion, nitrate versus chloride, doesn't touch the hydrogen ion concentration. Step three, the weak ones, nitrous and acetic, only partly ionise, so they sit above pH one. And step four, nitrous at pH two-point-one ionises more than acetic at two-point-nine, because nitrous has the larger acidity constant. So the pH order simply tracks the degree of ionisation."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: calling dilute HCl a weak acid. HCl is strong at any concentration; dilute just means fewer molecules.",
+      "secondary": "Trap 2: thinking weak means safe. Glacial acetic acid is corrosive and concentrated HF is deadly. Trap 3: using pH alone to judge strength. pH depends on strength AND concentration, so a concentrated weak acid can out-acidify a dilute strong one.",
+      "mistakeTag": "Where strength-vs-concentration marks slip",
+      "callout": "Dilute isn't weak; weak isn't safe; pH alone isn't strength.",
+      "durationInFrames": 1230,
+      "caption": "Dilute strong ≠ weak; weak ≠ safe; pH alone can't determine strength.",
+      "voiceover": {
+        "text": "Three traps, and these are the module's most punished errors. Trap one, calling dilute hydrochloric acid a weak acid. Hydrochloric acid is strong at any concentration, twelve molar or one-millionth molar, because every molecule still ionises. Dilute just means fewer molecules. Say dilute strong acid, never weak. Trap two, assuming weak means safe. Glacial acetic acid, nearly pure, is a classified corrosive, and concentrated hydrofluoric acid can kill through the skin. Weak only describes the fraction that ionises, not the hazard. Trap three, using pH by itself to decide strength. pH depends on both strength and concentration, so as we saw, a concentrated weak acid can have a lower pH than a dilute strong acid. To compare strength fairly, you must compare at equal concentration, or compare acidity constants directly."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A 0.10 mol L⁻¹ weak acid (pH 3.5) is diluted to 0.010 mol L⁻¹. What happens to its strength and its pH?",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Strength is set by Ka, which is fixed at constant temperature",
+        "So dilution does not change the acid's strength at all",
+        "Diluting lowers the concentration, so [H⁺] decreases",
+        "Lower [H⁺] means a higher pH",
+        "Answer: strength unchanged; pH rises (toward 7) ✓"
+      ],
+      "durationInFrames": 1080,
+      "caption": "Dilution leaves Ka (strength) unchanged but raises pH as [H⁺] falls.",
+      "voiceover": {
+        "text": "Quick check. A nought-point-one molar weak acid reads pH three-point-five. You dilute it to nought-point-zero-one molar. What happens to its strength, and to its pH? Pause and work it through. Right, let's check it. Strength is set by the acidity constant, the Ka, and that's fixed at a given temperature. It doesn't care how much water you add. So the strength is completely unchanged, it's still exactly as weak as before. But diluting lowers the concentration, which lowers the hydrogen ion concentration, and a lower hydrogen ion concentration means a higher pH, drifting up toward seven. So the answer is, strength unchanged, pH rises. This is the strength versus concentration distinction in one move, you changed the concentration dial without touching the strength dial."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Strength is the fraction ionised; concentration is moles per litre; they're independent.",
+        "Six strong acids, four strong bases; everything else is weak.",
+        "→ for strong (complete), ⇌ for weak (partial); the wrong arrow loses the mark.",
+        "Equal concentration but different pH proves different degrees of ionisation.",
+        "A concentrated weak acid can have a lower pH than a dilute strong acid."
+      ],
+      "finalPrompt": "Before any pH method: is this acid strong or weak?",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: independence, the lists, the arrow rule, the practical, dilute strong ≠ weak.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, strength is the fraction that ionises and concentration is how much you dissolved, and they're independent, so the hydrogen ion concentration depends on both. Second, memorise the lists, six strong acids and four strong bases, with everything else weak. Third, the arrow rule, a single arrow for strong, the equilibrium arrow for weak, and the wrong one costs you the mark. Fourth, equal concentration with different pH is direct proof of different degrees of ionisation. And fifth, because pH depends on both dials, a concentrated weak acid can out-acidify a dilute strong one. Next lesson is a consolidation, drilling exactly these strong and weak distinctions. See you there."
+      }
+    }
+  ]
+}

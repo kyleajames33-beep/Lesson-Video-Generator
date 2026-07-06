@@ -1,0 +1,284 @@
+{
+  "title": "Checkpoint 1, Energy Changes in Reactions",
+  "subtitle": "Boss-fight synthesis of Module 4 Lessons 1–5",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Checkpoint 1",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Synthesise IQ1, enthalpy, calorimetry, activation energy, and energy profile diagrams"
+  ],
+  "lessonIntent": "Students can choose the right method (sign convention, q=mcΔT, profile reading) for any IQ1 scenario and execute it.",
+  "examSkill": "Recognise scenario type from cues, apply the matching method, and avoid the canonical pitfalls.",
+  "productionRole": "production",
+  "productionNotes": "Boss-fight checkpoint covering M4 L1-L5. Cold open: 3 scenarios. Decision tree: sign convention → calorimetry → energy profile. 3 walkthroughs: classify ΔH, calorimetry calc, energy profile read. Exam pitfalls: sign confusion, q vs ΔH, catalyst-changes-ΔH.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Checkpoint 1, IQ1: Energy Changes. Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Checkpoint one. Energy Changes in Reactions. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint1/title.92e24870c285.mp3"
+      }
+    },
+    {
+      "id": "cold-open",
+      "type": "hook",
+      "heading": "Three scenarios. Three different methods. Can you pick?",
+      "body": "Five lessons of IQ1 in one stress test. Each scenario points to a different method, sign convention, calorimetry, or energy profile reading. Knowing which is which is the exam skill.",
+      "bullets": [
+        {
+          "text": "A: ΔH = −890 kJ/mol, exo or endo, and what's the reverse?",
+          "at": 5
+        },
+        {
+          "text": "B: 0.50 g ethanol heats 100 g water by 12 °C, find ΔHc.",
+          "at": 12
+        },
+        {
+          "text": "C: Ea forward = 80, ΔH = −30, what's Ea reverse?",
+          "at": 19
+        },
+        {
+          "text": "Each uses a different IQ1 tool.",
+          "at": 25
+        }
+      ],
+      "callout": "Read the data. The data picks the method.",
+      "image": "m4cp1ColdOpenScenarios",
+      "durationInFrames": 1188,
+      "caption": "Three scenarios, three methods, diagnostic test for IQ1.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Five lessons of IQ1 in one stress test. Three scenarios, each pointing to a different method. Scenario A: delta H is minus eight-ninety — is it exo or endo, and what's the reverse? Scenario B: half a gram of ethanol heats one hundred grams of water by twelve degrees — find the molar enthalpy of combustion. Scenario C: forward activation energy is eighty, delta H is minus thirty — what's the reverse activation energy? Each scenario uses a different tool from IQ1. The exam skill is recognising which.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint1/cold-open.5c9e2baf860d.mp3"
+      }
+    },
+    {
+      "id": "decision-tree",
+      "type": "concept",
+      "heading": "The IQ1 decision tree",
+      "body": "Look at what the question hands you. The data picks the method.",
+      "bullets": [
+        {
+          "text": "Asked about exo/endo or to reverse an equation? → Sign convention (L1).",
+          "at": 5
+        },
+        {
+          "text": "Given mass, ΔT, specific heat? → Calorimetry q = mcΔT (L2-L4).",
+          "at": 12
+        },
+        {
+          "text": "Given Ea and ΔH on a diagram? → Energy profile (L1–L5).",
+          "at": 19
+        },
+        {
+          "text": "Mention of a catalyst? → ΔH unchanged, only Ea drops (L5).",
+          "at": 26
+        }
+      ],
+      "callout": "Sign · calorimetry · profile · catalyst. Four cues, four methods.",
+      "durationInFrames": 1440,
+      "caption": "Decision tree: pick the method from the data cues.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1050,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the decision tree for IQ1. Think of it like triage in an emergency room — the symptoms point straight to the diagnosis, you don't pick at random. But unlike triage, the data in your question is unambiguous. Asked about exothermic or endothermic, or to reverse an equation? Use the sign convention from Lesson one — negative is exothermic, reversing flips the sign. Given a mass, temperature change, and specific heat? Calorimetry — q equals m c delta T — from Lessons two to four. Given Ea and delta H? Energy profile, from Lessons one and five. Catalyst mentioned? Delta H is unchanged.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint1/decision-tree.07d9cbb0a3c9.mp3"
+      },
+      "diagram": {
+        "type": "calorimeter"
+      }
+    },
+    {
+      "id": "walkthrough-1",
+      "type": "workedExample",
+      "heading": "Walkthrough 1, sign convention",
+      "question": "For 2H₂(g) + O₂(g) → 2H₂O(l), ΔH = −572 kJ mol⁻¹. (a) Classify. (b) ΔH for 4H₂ + 2O₂ → 4H₂O? (c) ΔH for the reverse reaction?",
+      "coachNote": "Three operations: read the sign, scale ΔH, then reverse and flip.",
+      "unitCancel": {
+        "left": "kJ mol⁻¹",
+        "right": "kJ mol⁻¹",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: ΔH = −572 kJ mol⁻¹.",
+        "Find: (a) classification, (b) ΔH for doubled equation, (c) reverse.",
+        "(a) Negative ΔH → exothermic.",
+        "Formula: scale ΔH proportionally with coefficients.",
+        "Substitute: doubled ΔH = 2 × 572 = 1144 kJ mol⁻¹ released.",
+        "(c) Reverse flips the sign of ΔH.",
+        "Answer = 3 results: (a) exothermic; (b) 1144 kJ mol⁻¹ released; (c) reverse +572 kJ mol⁻¹."
+      ],
+      "durationInFrames": 1410,
+      "caption": "Exothermic; ×2 doubles ΔH; reverse flips sign.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Walkthrough one — the sign-convention move. Delta H is minus five-seventy-two. Part a: negative, so exothermic. Part b: doubling the equation doubles delta H — two times minus five-seventy-two is minus one thousand one hundred and forty-four kilojoules per mole. Part c: reversing flips the sign — plus five-seventy-two kilojoules per mole. Three operations, all from Lesson one.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint1/walkthrough-1.b39c3f776d84.mp3"
+      }
+    },
+    {
+      "id": "walkthrough-2",
+      "type": "workedExample",
+      "heading": "Walkthrough 2, calorimetry",
+      "question": "Burning 0.50 g of ethanol (M = 46.07) heats 100.0 g of water by 12.0 °C. Calculate the molar enthalpy of combustion.",
+      "coachNote": "q = mcΔT for the heat, then divide by moles of fuel. ΔHc is negative.",
+      "unitCancel": {
+        "left": "kJ",
+        "right": "mol",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: m(water) = 100.0 g, c = 4.18, ΔT = 12.0 °C, m(ethanol) = 0.50 g, M = 46.07.",
+        "Find: ΔHc.",
+        "Formula: q = mcΔT.",
+        "Substitute: q = 100.0 × 4.18 × 12.0 = 5016 J = 5.016 kJ.",
+        "Moles: n = 0.50 / 46.07 = 0.01085 mol.",
+        "Substitute: ΔHc = −q/n = −5.016 / 0.01085.",
+        "Answer: ΔHc = 462 kJ mol⁻¹ released (i.e. −462 kJ mol⁻¹)."
+      ],
+      "durationInFrames": 1530,
+      "caption": "q = 5.016 kJ; n = 0.01085 mol; ΔHc = −462 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Walkthrough two — calorimetry. Half a gram of ethanol, one hundred grams of water, twelve-degree rise. q equals one hundred times four-point-one-eight times twelve — five thousand and sixteen joules, or five-point-zero-one-six kilojoules. Moles: zero-point-five over forty-six-point-zero-seven, that's zero-point-zero-one-zero-eight-five moles. Delta H of combustion is minus q over n — minus four hundred and sixty-two kilojoules per mole. Three steps from Lesson two.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint1/walkthrough-2.0ee9a6074850.mp3"
+      }
+    },
+    {
+      "id": "walkthrough-3",
+      "type": "workedExample",
+      "heading": "Walkthrough 3, energy profile with catalyst",
+      "question": "An uncatalysed reaction has Ea forward = 80 kJ mol⁻¹, ΔH = −30 kJ mol⁻¹. A catalyst lowers Ea forward to 45 kJ mol⁻¹. Find (a) Ea reverse uncatalysed; (b) ΔH catalysed; (c) Ea reverse catalysed.",
+      "coachNote": "Ea reverse = Ea forward − ΔH. The catalyst leaves ΔH alone.",
+      "unitCancel": {
+        "left": "kJ mol⁻¹",
+        "right": "kJ mol⁻¹",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: uncatalysed Ea forward = 80, ΔH = −30; catalysed forward Ea = 45.",
+        "Find: Ea reverse uncatalysed, ΔH catalysed, Ea reverse catalysed.",
+        "(a) Ea reverse uncatalysed = 80 − (−30) = 110 kJ mol⁻¹.",
+        "Formula: ΔH is independent of pathway (catalyst leaves it unchanged).",
+        "(b) ΔH catalysed = ΔH uncatalysed = −30 kJ mol⁻¹.",
+        "(c) Ea reverse catalysed = 45 − (−30) = 75 kJ mol⁻¹.",
+        "Answer: (a) 110 kJ mol⁻¹; (b) ΔH = 30 kJ mol⁻¹ released; (c) 75 kJ mol⁻¹."
+      ],
+      "durationInFrames": 1500,
+      "caption": "Ea reverse uncat 110; ΔH stays −30; Ea reverse cat 75 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Walkthrough three — energy profile with a catalyst. Uncatalysed forward Ea is eighty, delta H is minus thirty, catalysed forward Ea is forty-five. Part a: uncatalysed reverse Ea is forward minus delta H — eighty minus negative thirty — one hundred and ten. Part b: the catalyst doesn't touch delta H — still minus thirty kilojoules per mole. Part c: catalysed reverse Ea is forty-five minus negative thirty — seventy-five kilojoules per mole. The catalyst lowered both forward and reverse barriers, but delta H stayed put.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint1/walkthrough-3.8497827dd49d.mp3"
+      }
+    },
+    {
+      "id": "exam-pitfalls",
+      "type": "misconception",
+      "heading": "Three classic IQ1 pitfalls",
+      "body": "Students often get these wrong in IQ1 exams: (1) calling an exothermic reaction ΔH > 0 because heat is released, wrong, the sign refers to the system. (2) Reporting q as the molar enthalpy without dividing by moles, q is just the heat in the water. (3) Drawing a catalysed profile where the product level moves, a catalyst only lowers the peak; ΔH is fixed. The correct rule: sign refers to the system, divide by moles for molar, catalyst lowers peak only.",
+      "callout": "System sign · q ÷ n · catalyst peak-only. Three pitfalls, three rules.",
+      "mistakeTag": "IQ1 pitfall montage",
+      "durationInFrames": 1377,
+      "caption": "Three classic IQ1 errors, and the rules that fix them.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Three classic IQ1 traps. One: students think exothermic means delta H is positive because heat is released. Wrong instinct. The correct rule: the sign always refers to the system — and the system loses energy, so delta H is negative. Two: students report q as the molar enthalpy without dividing by moles of fuel. Wrong instinct. The correct rule: q is just the heat in the water; molar enthalpy needs division by n. Three: students draw a catalysed profile where the product level moves. Wrong instinct. The correct rule: catalysts only lower the peak; both curves share the same start and end.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint1/exam-pitfalls.b7aa84118ab5.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Boss-fight quick check",
+      "question": "A reaction has Ea forward = 120 kJ mol⁻¹ and ΔH = +40 kJ mol⁻¹. (a) Classify. (b) Find Ea reverse. (c) If a catalyst lowers forward Ea by 30 kJ mol⁻¹, what is the catalysed forward Ea, and what is the new ΔH?",
+      "pausePrompt": "Pause: classify from sign, use Ea reverse = forward − ΔH, then apply the catalyst rule.",
+      "answerSteps": [
+        "(a) ΔH = +40 → positive → endothermic.",
+        "Formula: Ea reverse = Ea forward − ΔH.",
+        "(b) Ea reverse = 120 − (+40) = 80 kJ mol⁻¹.",
+        "(c) Catalyst lowers Ea by 30: new Ea forward = 120 − 30 = 90 kJ mol⁻¹.",
+        "Answer: (a) endothermic; (b) Ea reverse = 80 kJ mol⁻¹; (c) catalysed Ea forward = 90 kJ mol⁻¹, ΔH stays +40 kJ mol⁻¹."
+      ],
+      "durationInFrames": 1380,
+      "caption": "Endothermic; Ea reverse 80; catalysed Ea forward 90; ΔH still +40.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 600,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Boss-fight quick check. Forward Ea is one-twenty, delta H is plus forty. Pause and try all three parts. Part a: positive delta H means endothermic. Part b: Ea reverse equals forward minus delta H — one-twenty minus plus forty — eighty kilojoules per mole. Part c: catalyst lowers Ea by thirty, so new forward Ea is ninety. And delta H stays at plus forty — a catalyst never moves it.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint1/quick-check.a3888612ff74.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "IQ1 closing summary",
+      "finalPrompt": "Check the data first, it picks the method every time.",
+      "points": [
+        "Sign convention (L1): negative ΔH = exothermic, reverse flips sign.",
+        "Calorimetry (L2–L4): q = mcΔT, then ΔHc = −q/n with the right mass.",
+        "Energy profile (L1–L5): Ea forward − ΔH gives Ea reverse.",
+        "Catalysts (L5): lower the peak only; ΔH is unchanged.",
+        "Pick the method from the data cues, sign, calorimetry, profile, catalyst."
+      ],
+      "durationInFrames": 1500,
+      "caption": "Five tools, one decision rule: data picks method.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "IQ1 closing summary. Five takeaways. One: sign convention from Lesson one — negative delta H is exothermic, reversing flips the sign. Two: calorimetry from Lessons two to four — q equals m c delta T, then delta H of combustion equals minus q over n with the correct mass. Three: energy profile reading from Lessons one and five — Ea forward minus delta H gives Ea reverse. Four: catalysts from Lesson five — lower the peak only, delta H is unchanged. Five: pick the method from the data cues — sign, calorimetry, profile, or catalyst. Decision rule: check the data first — it picks the method every time.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint1/summary.29f21911ecc5.mp3"
+      }
+    }
+  ]
+}

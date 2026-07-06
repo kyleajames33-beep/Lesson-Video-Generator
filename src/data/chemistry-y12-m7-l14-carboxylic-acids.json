@@ -1,0 +1,246 @@
+{
+  "title": "Carboxylic Acids",
+  "subtitle": "Dimers, weak acidity, and the bubble test",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 14",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "investigate the structural formulae, properties and functional group including: carboxylic acids",
+    "explain the properties within and between the homologous series of carboxylic acids, amines and amides with reference to the intermolecular and intramolecular bonding present"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": [
+    "CH12-14",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What are the properties of organic acids and bases?",
+  "lessonIntent": "Students can explain the anomalously high boiling points of carboxylic acids via dimerisation, write equations for their reactions as weak acids, and use the sodium hydrogen carbonate test to identify them.",
+  "examSkill": "Reason from carboxyl-group structure to dimerisation and conjugate-base resonance, and apply the carbonate and hydrogen carbonate tests to distinguish carboxylic acids from phenols and alcohols.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, carboxylic acids, the strongest organic acid you'll meet. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Carboxylic Acids (Year 12 Chemistry, Module 7, Lesson 14)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A 40-degree mystery",
+      "body": "Ethanol boils at 78 degrees. Ethanoic acid, only slightly heavier, boils at 118. Both have an O-H bond. So where does the extra 40 degrees come from?",
+      "callout": "Same O-H, heavier molecule, 40 degrees higher. Why?",
+      "image": "m7l14HookWineVinegar",
+      "durationInFrames": 1422,
+      "caption": "Ethanoic acid boils 40 degrees higher than ethanol despite a similar mass.",
+      "voiceover": {
+        "text": "OK, here's something that should bother you. Ethanol boils at seventy-eight degrees. Ethanoic acid, the acid in vinegar, is only a little heavier, and yet it boils at one hundred and eighteen degrees. That's a forty degree jump. And it's not obvious, because both molecules have an oxygen-hydrogen bond, so both can hydrogen bond. From Year 11 you'd predict similar boiling points. So what is the carboxyl group doing that a plain hydroxyl group can't? Today we answer that, and we'll also see why these are the strongest acids in organic chemistry, and the one bubble test that picks them out instantly."
+      }
+    },
+    {
+      "id": "concept-structure",
+      "type": "concept",
+      "heading": "The carboxyl group and its dimer",
+      "body": "The carboxyl group, written -COOH, is a carbonyl and a hydroxyl on the same carbon. Together they let two molecules lock into a dimer.",
+      "image": "m7l14EthanoicAcidDimer",
+      "bullets": [
+        {
+          "text": "The -COOH group has both a C=O acceptor and an O-H donor.",
+          "at": 8
+        },
+        {
+          "text": "Two molecules align and form two hydrogen bonds at once: a dimer.",
+          "at": 17
+        },
+        {
+          "text": "To boil, both H-bonds of the pair must break together.",
+          "at": 26
+        },
+        {
+          "text": "Only one O-H per molecule; the C=O oxygen has no hydrogen.",
+          "at": 33
+        }
+      ],
+      "secondary": "Near the boiling point, the vaporising unit behaves like a pair, roughly double the monomer mass.",
+      "callout": "Two H-bonds per pair is why the boiling point is so high.",
+      "durationInFrames": 2069,
+      "caption": "Two carboxyl groups lock into a dimer held by two simultaneous H-bonds.",
+      "voiceover": {
+        "text": "Let's look at the carboxyl group, written C-O-O-H. It's a carbonyl, a carbon double bonded to oxygen, plus a hydroxyl, an oxygen-hydrogen, both on the same carbon. That combination is special, because it gives each molecule both a hydrogen bond donor, the O-H, and a hydrogen bond acceptor, the carbonyl oxygen. So two carboxylic acid molecules can swing around to face each other and form two hydrogen bonds at the same time, locking into a pair we call a dimer. Here's why that matters for boiling point. To vaporise the acid, you have to break both of those hydrogen bonds in the pair together, and that takes a lot of energy. Near the boiling point the molecules effectively leave the surface as pairs, behaving like a unit of roughly double the mass. One caution, though. Each molecule has only one O-H. The carbonyl oxygen has no hydrogen of its own."
+      }
+    },
+    {
+      "id": "concept-weak-acid",
+      "type": "concept",
+      "heading": "Weak, but the strongest organic acid",
+      "body": "Carboxylic acids only partially ionise in water, so they are weak. But they are far stronger acids than alcohols, and the reason is resonance.",
+      "bullets": [
+        {
+          "text": "Partial ionisation: R-COOH plus water gives R-COO minus and hydronium.",
+          "at": 9
+        },
+        {
+          "text": "Ethanoic acid has a Ka near ten to the minus five, so only about one percent ionises.",
+          "at": 18
+        },
+        {
+          "text": "The carboxylate ion spreads its charge over two oxygens by resonance.",
+          "at": 27
+        },
+        {
+          "text": "A more stable conjugate base means a stronger acid than an alcohol.",
+          "at": 35
+        }
+      ],
+      "callout": "Resonance stabilises the carboxylate, so the acid ionises more readily.",
+      "durationInFrames": 2016,
+      "caption": "Carboxylic acids are weak, but resonance makes them stronger than alcohols.",
+      "voiceover": {
+        "text": "Now their acidity, and there's a subtlety here worth getting right. Carboxylic acids are weak acids. They only partially ionise in water, sitting at equilibrium with their ions, and for ethanoic acid the acid constant is about ten to the minus five, so only around one percent of molecules are ionised at any moment. So weak, yes. But they are by far the strongest acids in organic chemistry, much stronger than alcohols, and the reason is resonance. When a carboxylic acid loses its proton, the negative charge on the carboxylate ion doesn't sit on one oxygen. It spreads evenly across both oxygens. That delocalised, more stable conjugate base is less eager to grab the proton back, so the equilibrium sits further toward ionisation. An alcohol's conjugate base puts all the charge on a single oxygen with no resonance, so the alcohol is a far weaker acid."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Four reactions and one key test",
+      "bullets": [
+        {
+          "text": "With NaOH: acid plus base gives a carboxylate salt and water, no gas.",
+          "at": 7
+        },
+        {
+          "text": "With Na2CO3 or NaHCO3: salt, water, and CO2 bubbles.",
+          "at": 16
+        },
+        {
+          "text": "The hydrogen carbonate test is the key: only carboxylic acids fizz with it.",
+          "at": 25
+        },
+        {
+          "text": "With a reactive metal like magnesium: a salt and hydrogen gas.",
+          "at": 33
+        }
+      ],
+      "callout": "Fizzing with sodium hydrogen carbonate flags a carboxylic acid.",
+      "durationInFrames": 1840,
+      "caption": "Only carboxylic acids produce CO2 with sodium hydrogen carbonate.",
+      "voiceover": {
+        "text": "So what reactions should you know. There are four, and one of them is a diagnostic test you'll use again and again. First, with sodium hydroxide, the acid is neutralised to a carboxylate salt and water, with no gas. Second, with sodium carbonate or sodium hydrogen carbonate, you get the salt, water, and carbon dioxide, which means visible fizzing. Now here is the key one. The reaction with sodium hydrogen carbonate is the test that picks out a carboxylic acid, because only a carboxylic acid is acidic enough to release carbon dioxide from it. Phenols and alcohols don't. Fourth, with a reactive metal such as magnesium, the acid gives a salt and hydrogen gas, and the metal dissolves. So if you ever see bubbling with sodium hydrogen carbonate, you've found a carboxylic acid."
+      }
+    },
+    {
+      "id": "concept-strength-ladder",
+      "type": "concept",
+      "heading": "Acid strength: acid, phenol, alcohol",
+      "body": "The acid strength ranking reflects how stable each conjugate base is, and you can predict it from structure.",
+      "bullets": [
+        {
+          "text": "Carboxylic acid, pKa near 5: charge shared over two oxygens, most stable.",
+          "at": 9
+        },
+        {
+          "text": "Phenol, pKa near 10: charge spreads into the ring, partly stabilised.",
+          "at": 18
+        },
+        {
+          "text": "Alcohol, pKa near 16: charge stuck on one oxygen, least stable, weakest.",
+          "at": 27
+        },
+        {
+          "text": "Lower pKa means a stronger acid, so the order is acid, phenol, alcohol.",
+          "at": 35
+        }
+      ],
+      "callout": "The more the conjugate base spreads its charge, the stronger the acid.",
+      "durationInFrames": 1989,
+      "caption": "Acid strength: carboxylic acid is greater than phenol, greater than alcohol.",
+      "voiceover": {
+        "text": "Let's place carboxylic acids on the wider strength scale, because the exam often asks you to rank them against phenols and alcohols. The ranking is carboxylic acid, then phenol, then alcohol, from strongest to weakest, and you can reason it from structure rather than memorise it. A carboxylic acid has a pKa around five. Its conjugate base shares the charge over two equivalent oxygens, the most stable case. Phenol has a pKa around ten. Its conjugate base spreads charge into the benzene ring, so it's partly stabilised but less so. An alcohol has a pKa around sixteen. Its conjugate base traps all the charge on one oxygen with no resonance, the least stable, so it's the weakest acid. Remember, lower pKa means stronger acid. The pattern is simple. The more a conjugate base can spread out its negative charge, the stronger the parent acid."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Equations for propanoic acid",
+      "question": "Write balanced equations for propanoic acid (CH3CH2COOH) reacting with (a) NaOH, (b) Na2CO3, (c) NaHCO3, (d) Mg.",
+      "coachNote": "Carbonate and hydrogen carbonate both release CO2, so account for the carbon and oxygen with a CO2 on the right.",
+      "steps": [
+        "(a) Neutralisation, no gas: CH3CH2COOH + NaOH gives CH3CH2COONa + H2O.",
+        "(b) With carbonate, two acids per carbonate: 2CH3CH2COOH + Na2CO3 gives 2CH3CH2COONa + H2O + CO2.",
+        "(c) With hydrogen carbonate, one to one: CH3CH2COOH + NaHCO3 gives CH3CH2COONa + H2O + CO2.",
+        "(d) With magnesium, hydrogen gas: 2CH3CH2COOH + Mg gives (CH3CH2COO)2Mg + H2.",
+        "Check (c): the CO2 carries the carbon and the extra oxygens, so the equation balances.",
+        "Answer: only (b) and (c) fizz; both release CO2; (a) gives no gas and (d) gives H2."
+      ],
+      "durationInFrames": 1948,
+      "caption": "Carbonate and hydrogen carbonate give CO2; NaOH gives none; Mg gives H2.",
+      "voiceover": {
+        "text": "Let's write the four reactions for propanoic acid. Start with sodium hydroxide. That's a simple neutralisation, giving sodium propanoate and water, with no gas. Next, sodium carbonate. Carbonate needs two acid molecules, so two propanoic acids give two sodium propanoate, plus water and carbon dioxide. The most common mistake here is forgetting the carbon dioxide, which leaves the equation unbalanced, so always include it. Then sodium hydrogen carbonate, which reacts one to one, giving sodium propanoate, water, and carbon dioxide. Finally magnesium. A reactive metal gives the salt, magnesium propanoate, and hydrogen gas. Let's quickly check the hydrogen carbonate equation. The carbon dioxide on the right carries the extra carbon and oxygens, so both sides balance. So the two reactions that bubble are the carbonate and hydrogen carbonate ones. Sodium hydroxide gives no gas, and magnesium gives hydrogen, not carbon dioxide."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Two oxygens means two O-H bonds\"",
+      "body": "Students assume the carboxyl group has two O-H bonds because it has two oxygens, and that this explains the high boiling point.",
+      "secondary": "The carboxyl group has only one O-H. The carbonyl oxygen accepts H-bonds but has no hydrogen to donate. The high boiling point comes from dimerisation, two molecules forming two H-bonds together, not from extra O-H bonds.",
+      "callout": "One O-H per molecule. The dimer creates two H-bonds per pair.",
+      "mistakeTag": "Carboxyl has one O-H, not two",
+      "durationInFrames": 2016,
+      "caption": "The carboxyl group has one O-H; the dimer pairs two molecules' bonds.",
+      "voiceover": {
+        "text": "Here's a trap that catches careful students. They see the carboxyl group has two oxygens and conclude it has two oxygen-hydrogen bonds, and that this is why the boiling point is high. That's not right. Look at the group again. There's a carbonyl oxygen, double bonded to carbon with no hydrogen, and there's a hydroxyl oxygen with one hydrogen. So each molecule has only one O-H bond. The carbonyl oxygen can accept a hydrogen bond, but it has nothing to donate. So where do the two hydrogen bonds come from? Not from one molecule. They come from the dimer, where two separate molecules face each other and each one donates one bond and accepts one. That gives two hydrogen bonds per pair. The high boiling point is about pairing up, not about extra O-H bonds. Name the dimer in your answer, and you've got the mark."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "Unknown X is C4H8O2. It fizzes with NaHCO3, gives a negative Tollens' test, and does not decolourise bromine water. Identify the functional group and give a possible structure.",
+      "pausePrompt": "Pause and use each test before the answer plays.",
+      "answerSteps": [
+        "C4H8O2 fits CnH2nO2, the formula of a saturated carboxylic acid or an ester.",
+        "It fizzes with NaHCO3, so it must be a carboxylic acid; esters do not react.",
+        "Negative Tollens' rules out an aldehyde group, consistent with a carboxylic acid.",
+        "No bromine decolourisation means no C=C, so the chain is saturated.",
+        "Answer: a saturated carboxylic acid, for example butanoic acid, CH3CH2CH2COOH."
+      ],
+      "durationInFrames": 1948,
+      "caption": "Fizzes with NaHCO3 and saturated, so X is a carboxylic acid like butanoic acid.",
+      "voiceover": {
+        "text": "Your turn. Unknown X has the formula C4H8O2. It fizzes with sodium hydrogen carbonate, gives a negative Tollens' test, and does not decolourise bromine water. Work out the functional group and suggest a structure. Pause and reason through each clue. Now let's check it. The formula C4H8O2 matches the general pattern for a saturated carboxylic acid or an ester, since both fit C-n, H-2n, O-2. The deciding test is the fizzing with sodium hydrogen carbonate, because only a carboxylic acid is acidic enough to release carbon dioxide from it. An ester would not react. The negative Tollens' confirms there's no aldehyde group, which fits. And no bromine decolourisation tells us there's no carbon-carbon double bond, so the molecule is saturated. Put it together and X is a saturated carboxylic acid, for instance butanoic acid. The bubble test did the heavy lifting."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Anomalously high boiling point? Name the dimer. Identifying the acid? Reach for sodium hydrogen carbonate.",
+      "points": [
+        "The carboxyl group is a carbonyl plus a hydroxyl on the same carbon, written -COOH.",
+        "Carboxylic acids form dimers, two H-bonds per pair, giving very high boiling points.",
+        "They are weak acids, but stronger than alcohols, because the carboxylate is resonance-stabilised.",
+        "They react with NaOH, carbonates, hydrogen carbonates, and reactive metals.",
+        "Only carboxylic acids fizz with sodium hydrogen carbonate, the key identifying test."
+      ],
+      "durationInFrames": 1827,
+      "caption": "Dimers raise the boiling point; the bicarb test identifies the acid.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, the carboxyl group is a carbonyl plus a hydroxyl on the same carbon, written C-O-O-H. Second, carboxylic acids form dimers, two molecules held by two hydrogen bonds, and that pairing is why their boiling points are the highest of all the families at a given size. Third, they are weak acids, only partly ionised, but stronger than alcohols, because resonance spreads the charge on the carboxylate ion and stabilises it. Fourth, they react with sodium hydroxide, with carbonates, with hydrogen carbonates, and with reactive metals. And fifth, the standout test, only carboxylic acids fizz with sodium hydrogen carbonate. So when a boiling point looks anomalously high, name the dimer, and when you need to identify the acid, reach for the bicarb. See you next lesson."
+      }
+    }
+  ]
+}

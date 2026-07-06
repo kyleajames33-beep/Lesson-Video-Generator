@@ -1,0 +1,281 @@
+{
+  "title": "Analysing Epidemiological Data — Pattern Recognition and Risk Factor Quantification, Part A",
+  "subtitle": "Relative risk, absolute risk and reading survival curves",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "analyse patterns of non-infectious diseases in populations, including their incidence and prevalence (ACSBL114, ACSBL115)",
+    "investigate the treatment of non-infectious diseases and disorders by evaluating data and reported risk measures from clinical trials"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Why are epidemiological studies used?",
+  "lessonIntent": "Students can calculate relative risk, absolute risk reduction, relative risk reduction and number needed to treat from trial data, read a survival curve, and rank evidence by study type.",
+  "examSkill": "Convert a relative risk reduction headline into absolute risk reduction and number needed to treat, and judge whether a statistically significant result is clinically meaningful.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "lesson": "Lesson 13A",
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today: the risk measures and reading a survival curve. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Analysing Epidemiological Data — Pattern Recognition and Risk Factor Quantification, Part A (Year 12 Biology, Module 8, Lesson 13A)",
+      "voiceover": {
+        "text": "Analysing Epidemiological Data. Part A."
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One trial, three very different stories",
+      "body": "A 1998 trial reported tamoxifen cut breast cancer by 49%. The same data also says the absolute drop was under 1%.",
+      "callout": "How can one set of numbers tell three different stories?",
+      "image": "bioM8L13RiskFraming",
+      "durationInFrames": 2057,
+      "caption": "The NSABP P-1 tamoxifen trial: 49% relative risk reduction, but only 0.64% absolute, with a number needed to treat of 156.",
+      "voiceover": {
+        "text": "In 1998, a major trial tested tamoxifen in over thirteen thousand high-risk women. The tamoxifen group had eighty nine invasive breast cancers, the placebo group had a hundred and seventy five. The press release said a forty nine percent reduction in breast cancer, and newspapers screamed cancer breakthrough. But hold on. The very same data also says the absolute risk fell by just zero point six four percent, and that you'd have to treat a hundred and fifty six women to prevent one extra cancer. So which is it, a stunning forty nine percent, or a tiny fraction of a percent? The strange thing is, all of those numbers are arithmetically correct. They're just different ways of framing the same result, and they create wildly different impressions. Today you'll learn the handful of numbers that let you cut through any treatment headline and judge what a result actually means."
+      }
+    },
+    {
+      "id": "concept-three-numbers",
+      "type": "concept",
+      "heading": "The three numbers that matter",
+      "body": "Relative risk reduction sounds big, but absolute risk reduction and number needed to treat tell you what it means for a real patient.",
+      "bullets": [
+        {
+          "text": "Relative risk is the ratio of risk in the treated group to the control group."
+        },
+        {
+          "text": "Absolute risk reduction is the actual percentage-point drop in risk."
+        },
+        {
+          "text": "Number needed to treat is one divided by the absolute risk reduction."
+        }
+      ],
+      "secondary": "Relative figures amplify small effects. A 50% reduction sounds huge, but if it takes the risk from 0.002% to 0.001%, the absolute benefit is almost nothing and the number needed to treat is enormous.",
+      "callout": "Always check the absolute drop, not just the relative one.",
+      "durationInFrames": 2581,
+      "caption": "Relative risk, absolute risk reduction and number needed to treat express the same result very differently.",
+      "voiceover": {
+        "text": "So let's meet the three numbers that let you read any treatment claim honestly. The first is relative risk, which is simply the risk in the treated group divided by the risk in the control group. The second is the absolute risk reduction, which is the real, on-the-ground difference in risk, the control risk minus the treatment risk, in actual percentage points. And the third is the number needed to treat, which is just one divided by the absolute risk reduction, and it tells you how many people you have to treat to prevent one bad outcome. Here's why this matters so much. Relative figures amplify tiny effects. Imagine a supplement that reduces cancer risk by fifty percent. Sounds incredible. But if the baseline risk was only two in a hundred thousand, that fifty percent drop takes it to one in a hundred thousand, and you'd have to treat a hundred thousand people to prevent a single case. The relative number is truthful, but stripped of context it's almost meaningless. That's why you always go hunting for the absolute risk reduction and the number needed to treat."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Measure",
+          "Formula",
+          "Tells you"
+        ],
+        "rows": [
+          [
+            "Relative risk",
+            "risk treated / risk control",
+            "Ratio of the two risks"
+          ],
+          [
+            "Abs. risk reduction",
+            "risk control − risk treated",
+            "Real percentage-point drop"
+          ],
+          [
+            "Number needed to treat",
+            "1 / ARR",
+            "People treated per case prevented"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms make trial data readable, so lock them in before we start calculating.",
+      "bullets": [
+        {
+          "text": "Relative risk: the ratio of risk in the exposed or treated group to the control group."
+        },
+        {
+          "text": "Absolute risk reduction: the control-group risk minus the treatment-group risk."
+        },
+        {
+          "text": "Relative risk reduction: the absolute risk reduction divided by the control risk."
+        },
+        {
+          "text": "Number needed to treat: one divided by the absolute risk reduction."
+        },
+        {
+          "text": "Double-blind trial: neither the participants nor the researchers know who got the real treatment."
+        }
+      ],
+      "callout": "Ratio, real drop, proportional drop, people per case, blinded.",
+      "durationInFrames": 2084,
+      "caption": "Relative risk, absolute risk reduction, relative risk reduction, number needed to treat, double-blind.",
+      "voiceover": {
+        "text": "Let's pin down five terms you'll use all lesson. Relative risk is the ratio of risk in the treated or exposed group to the risk in the control group. Absolute risk reduction is the control-group risk minus the treatment-group risk, the genuine difference in percentage points. Relative risk reduction is the absolute risk reduction divided by the control risk, expressed as a percentage, and this is the one that headlines love to quote. Number needed to treat is one divided by the absolute risk reduction, the number of patients you must treat to prevent one extra bad outcome. And a double-blind trial is one where neither the participants nor the researchers know who received the real treatment and who got the placebo, which stops expectations from biasing the results. Keep relative risk and relative risk reduction separate, because mixing them up is the single most common slip in this whole topic."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Statins, four ways",
+      "question": "An RCT follows 10,000 people for 5 years. Among 5,000 on a statin, 100 have heart attacks (2%). Among 5,000 on placebo, 150 have heart attacks (3%). Find the relative risk, absolute risk reduction, relative risk reduction and number needed to treat.",
+      "coachNote": "Work out each group's risk first, then feed those two risks into all four formulas.",
+      "steps": [
+        "Risks: statin = 100/5,000 = 0.02 (2%); placebo = 150/5,000 = 0.03 (3%).",
+        "Relative risk = 0.02 ÷ 0.03 = 0.67, so the statin group carries 67% of the placebo risk.",
+        "Absolute risk reduction = 0.03 − 0.02 = 0.01, a 1 percentage-point drop over 5 years.",
+        "Relative risk reduction = 0.01 ÷ 0.03 = 33%; number needed to treat = 1 ÷ 0.01 = 100.",
+        "Answer: RR 0.67, ARR 1%, RRR 33%, NNT 100 ✓"
+      ],
+      "durationInFrames": 3147,
+      "caption": "Statin trial: RR 0.67, ARR 1%, RRR 33%, NNT 100 over 5 years.",
+      "voiceover": {
+        "text": "Let's actually calculate all four numbers from one trial. A randomised controlled trial follows ten thousand people for five years. Of the five thousand on a statin, a hundred have heart attacks, that's a risk of two percent. Of the five thousand on placebo, a hundred and fifty have heart attacks, a risk of three percent. Start with those two risks, because everything flows from them. Relative risk is the treated risk over the control risk, so zero point zero two divided by zero point zero three, which is zero point six seven. So the statin group carries sixty seven percent of the placebo group's risk. Absolute risk reduction is the control risk minus the treatment risk, three percent minus two percent, which is one percentage point over five years. Relative risk reduction is that absolute drop over the control risk, zero point zero one divided by zero point zero three, which is thirty three percent. And the number needed to treat is one over the absolute risk reduction, one divided by zero point zero one, which is a hundred. So a headline saying statins cut heart attack risk by thirty three percent is true, but the real drop is one percent, and you treat a hundred people for five years to prevent one heart attack. Whether that's worth it depends on the cost and the side effects."
+      }
+    },
+    {
+      "id": "concept-survival-curves",
+      "type": "concept",
+      "heading": "Reading a survival curve",
+      "body": "A Kaplan-Meier curve shows the proportion of patients still alive or event-free over time, with each group as its own line.",
+      "bullets": [
+        {
+          "text": "The y-axis is the proportion surviving or event-free; it starts at 1 and falls."
+        },
+        {
+          "text": "A steeper fall means more events happening faster, so a worse outcome."
+        },
+        {
+          "text": "The vertical gap between lines is the difference between the groups at that time."
+        }
+      ],
+      "secondary": "Small tick marks are censored patients who left the study or whose follow-up ended, so their outcome is unknown. A line that flattens does not mean those patients are cured, just that no more events were recorded.",
+      "callout": "Steeper drop is worse; the gap between lines is the benefit.",
+      "durationInFrames": 2733,
+      "caption": "On a survival curve, a steeper fall is a worse outcome and the gap between lines is the treatment difference.",
+      "voiceover": {
+        "text": "Now the most common graph in trial reporting, the survival curve, sometimes called a Kaplan-Meier plot. The y-axis is the proportion of patients who have not yet had the bad outcome, often death, but it could be recurrence or hospitalisation. It starts at one, meaning everyone is event-free, and it falls over time as events happen. Each group gets its own line, so you might have immunotherapy versus chemotherapy. Here's how you read it. A line that falls more steeply means events are happening faster, so that's the worse outcome. And the vertical gap between the two lines at any moment is the difference in survival between the groups at that time. If the gap widens, the benefit is growing. Now two traps. Those little tick marks on the line are censored patients, people who left the study or whose follow-up simply ended, so we don't know their outcome. And when a line flattens out, that does not mean those patients are cured, it just means no more events were recorded, often because the study ended. In the exam, never just say the treatment group did better, always read off the actual numbers at a given time point."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Years",
+        "yLabel": "Proportion surviving",
+        "series": [
+          {
+            "label": "Immunotherapy",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                1
+              ],
+              [
+                0.2,
+                0.85
+              ],
+              [
+                0.4,
+                0.72
+              ],
+              [
+                0.6,
+                0.63
+              ],
+              [
+                0.8,
+                0.56
+              ],
+              [
+                1,
+                0.52
+              ]
+            ]
+          },
+          {
+            "label": "Chemotherapy",
+            "color": "phys",
+            "points": [
+              [
+                0,
+                1
+              ],
+              [
+                0.2,
+                0.74
+              ],
+              [
+                0.4,
+                0.55
+              ],
+              [
+                0.6,
+                0.42
+              ],
+              [
+                0.8,
+                0.33
+              ],
+              [
+                1,
+                0.28
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 0.6,
+            "label": "gap = benefit"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "bridge-to-part-b",
+      "type": "endCard",
+      "partLabel": "Part B",
+      "partSubtitle": "Weighing the evidence",
+      "heading": "Next: weighing the evidence",
+      "body": "You can calculate the risk numbers and read a survival curve, now we judge how much any result is worth.",
+      "bullets": [
+        {
+          "text": "A second worked example, calculating all four measures."
+        },
+        {
+          "text": "The evidence hierarchy, from systematic reviews to case reports."
+        },
+        {
+          "text": "The three traps, plus a quick-check question."
+        }
+      ],
+      "ctaLabel": "Watch Part B →",
+      "callout": "see you there",
+      "durationInFrames": 787,
+      "caption": "End of Part A, see you in Part B for weighing the evidence.",
+      "voiceover": {
+        "text": "OK, that's the core toolkit locked in. You can calculate relative risk, absolute risk reduction and number needed to treat, and you can read a survival curve properly. In Part B, we run the routine once more on a fresh trial, then rank the evidence and clean up the traps that cost students marks. See you there."
+      }
+    }
+  ]
+}

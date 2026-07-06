@@ -1,0 +1,222 @@
+{
+  "title": "Activation Energy, Catalysts & Energy Diagrams",
+  "subtitle": "How catalysts speed reactions without changing ΔH",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Lesson 5",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Explain the role of activation energy and catalysts in reactions using energy profile diagrams",
+    "Describe how a catalyst provides an alternative reaction pathway with lower activation energy without changing ΔH"
+  ],
+  "lessonIntent": "Students can show on an energy profile how a catalyst lowers activation energy without changing ΔH, and explain why.",
+  "examSkill": "Label activation energy and ΔH on catalysed and uncatalysed energy profiles, and explain that a catalyst lowers Ea but leaves ΔH unchanged.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson `subjects/chemistry/year11/module4/lesson05.html`. Anchor: catalytic converters. Energy profiles taught in M4 L1; catalyst rate effect taught in M3 L12, reference both, don't re-teach. Focus: catalyst = alternative pathway, lower Ea, ΔH UNCHANGED. Misconception: catalyst changes ΔH (verbatim from site: it provides lower-Ea pathway, ΔH depends only on product-reactant difference). Uses energyProfile diagram with showCatalyst.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Activation Energy, Catalysts and Energy Diagrams. Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Activation Energy, Catalysts, and Energy Diagrams. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L5/title.fd84134c4d8e.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "How does a catalytic converter clean exhaust in milliseconds?",
+      "body": "Your car's catalytic converter turns toxic exhaust gases into harmless ones as they rush through, in a fraction of a second. The platinum inside is a catalyst. It doesn't change what the reaction produces; it just makes it happen far faster.",
+      "bullets": [
+        {
+          "text": "Toxic CO and NOₓ enter the converter.",
+          "at": 5
+        },
+        {
+          "text": "Platinum catalyst speeds their conversion.",
+          "at": 11
+        },
+        {
+          "text": "Harmless CO₂ and N₂ come out.",
+          "at": 17
+        },
+        {
+          "text": "The catalyst lowers the energy barrier, not the products.",
+          "at": 23
+        }
+      ],
+      "callout": "A catalyst changes the path, not the destination.",
+      "image": "m4l5HookConverter",
+      "durationInFrames": 1080,
+      "caption": "A catalytic converter speeds reactions via a platinum catalyst.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 870,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's some chemistry happening under your car right now. A catalytic converter turns toxic exhaust gases into harmless ones as they rush through — in a fraction of a second. The platinum inside is a catalyst. And the key idea you'll prove this lesson: it doesn't change what the reaction produces, or how much energy it releases. It just makes the reaction happen far faster, by lowering the energy barrier the molecules have to climb.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L5/hook.b508b604995e.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "An alternative path with a lower barrier",
+      "body": "You met energy profiles in Lesson 1 and saw catalysts speed reactions in Module 3. Here we put them together on one diagram.",
+      "bullets": [
+        {
+          "text": "Activation energy (Ea): the barrier reactants must climb.",
+          "at": 5
+        },
+        {
+          "text": "A catalyst offers an alternative pathway with lower Ea.",
+          "at": 12
+        },
+        {
+          "text": "More molecules now have enough energy to react.",
+          "at": 19
+        },
+        {
+          "text": "But the reactant and product levels don't move.",
+          "at": 26
+        }
+      ],
+      "callout": "Lower Ea = faster reaction. Same start and finish = same ΔH.",
+      "diagram": {
+        "type": "energyProfile",
+        "exothermic": true,
+        "ea": 75,
+        "deltaH": -100,
+        "showCatalyst": true,
+        "delay": 90
+      },
+      "durationInFrames": 1444,
+      "caption": "A catalyst lowers Ea via an alternative pathway; ΔH is unchanged.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1170,
+        "diagram": 60
+      },
+      "voiceover": {
+        "text": "You've already met both halves of this. Energy profiles back in Lesson one, and how catalysts speed reactions in Module three with collision theory. Now we put them on one diagram. The activation energy is the barrier the reactants climb to react. Think of a catalyst like a tunnel through a mountain instead of climbing over the top — you reach the same valley on the far side, just with far less climbing. But unlike a tunnel, a catalyst speeds the reverse direction equally too. On the diagram, the catalyst lowers the hump in the middle — but the reactant and product levels don't move at all.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L5/concept.eb76b51df2b0.mp3"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Reading a catalysed energy profile",
+      "question": "An uncatalysed reaction has Ea = 100 kJ mol⁻¹ and ΔH = −50 kJ mol⁻¹. A catalyst lowers the forward activation energy to 60 kJ mol⁻¹. (a) What is the new ΔH? (b) What is the new reverse activation energy?",
+      "coachNote": "The catalyst only moves the peak. Reactant and product levels are fixed, so ΔH is unchanged.",
+      "unitCancel": {
+        "left": "kJ mol⁻¹",
+        "right": "kJ mol⁻¹",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: uncatalysed Ea = 100, ΔH = −50; catalysed forward Ea = 60.",
+        "Find: (a) new ΔH, (b) new reverse Ea.",
+        "(a) ΔH depends only on product minus reactant levels, the catalyst moves neither.",
+        "So ΔH is unchanged: ΔH = −50 kJ mol⁻¹.",
+        "Formula: reverse Ea = forward Ea − ΔH (on the catalysed path).",
+        "Substitute: reverse Ea = 60 − (−50).",
+        "Answer: (a) ΔH = −50 kJ mol⁻¹ unchanged; (b) reverse Ea = 110 kJ mol⁻¹."
+      ],
+      "durationInFrames": 1500,
+      "caption": "ΔH stays −50 kJ mol⁻¹; catalysed reverse Ea = 60 − (−50) = 110 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Let's read a catalysed profile. The uncatalysed reaction has an activation energy of one hundred and a delta H of minus fifty. A catalyst lowers the forward barrier to sixty. Part a: what's the new delta H? This is the whole point of the lesson — delta H depends only on the product level minus the reactant level, and the catalyst moves neither of them. So delta H is unchanged: still minus fifty kilojoules per mole. Part b: the new reverse activation energy on the catalysed path is the forward Ea minus delta H — sixty minus negative fifty — which is one hundred and ten kilojoules per mole.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L5/worked-example.bc1ba415d84f.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"A catalyst changes ΔH\"",
+      "body": "Students often think: \"A catalyst makes the reaction easier, so it must lower ΔH too.\" That's the wrong instinct. A catalyst provides an alternative pathway with lower activation energy, but ΔH depends only on the difference between product and reactant enthalpies, not the path taken. The correct rule: a catalyst lowers Ea and leaves ΔH completely unchanged.",
+      "callout": "A catalyst lowers Ea only. ΔH depends on the levels, not the path.",
+      "mistakeTag": "Catalyst-changes-ΔH trap",
+      "durationInFrames": 1290,
+      "caption": "A catalyst lowers Ea but never changes ΔH.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the trap, and it's a favourite of examiners. Students think: a catalyst makes the reaction easier, so surely it lowers delta H too. Wrong instinct. A catalyst provides an alternative pathway with a lower activation energy — but delta H depends only on the difference between the product and reactant enthalpies, not the route the reaction takes to get there. The correct rule: a catalyst lowers Ea and leaves delta H completely unchanged. If a diagram shows a catalyst changing the product level, that diagram is wrong.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L5/misconception.944010a92f91.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "A student draws a catalysed energy profile where the catalysed curve ends at a LOWER product level than the uncatalysed one. Explain what is wrong and what should stay the same.",
+      "pausePrompt": "Pause: what can a catalyst move, and what must it leave alone?",
+      "answerSteps": [
+        "A catalyst only lowers the peak (activation energy).",
+        "It cannot move the reactant or product energy levels.",
+        "Both curves must start and finish at the same heights.",
+        "So ΔH is identical for catalysed and uncatalysed paths.",
+        "Answer: the product level is wrong, both curves must end at the same height; only the peak should be lower."
+      ],
+      "durationInFrames": 1380,
+      "caption": "Both curves share the same product level; only the peak lowers.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 600,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Your turn — a spot-the-error question. A student draws a catalysed energy profile where the catalysed curve ends at a lower product level than the uncatalysed one. What's wrong, and what should stay the same? Pause now and think. A catalyst can only lower the peak — the activation energy. It cannot move the reactant or the product levels. So both curves must start at the same reactant height and finish at the same product height. That means delta H is identical for both paths. The student's product level is the error — only the hump in the middle should be lower.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L5/quick-check.33c100ca597d.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Ask: did the catalyst move the peak only? It must never move ΔH.",
+      "points": [
+        "Activation energy (Ea) is the barrier reactants climb to react.",
+        "A catalyst provides an alternative pathway with lower Ea, so the reaction speeds up.",
+        "The reactant and product levels do not move.",
+        "Therefore ΔH is completely unchanged by a catalyst.",
+        "On a diagram, only the peak lowers, both curves share the same ends."
+      ],
+      "durationInFrames": 1320,
+      "caption": "Catalyst lowers the barrier, never the ΔH. One decision rule.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways. One: activation energy is the barrier the reactants climb to react. Two: a catalyst provides an alternative pathway with a lower activation energy, so the reaction speeds up. Three: the reactant and product energy levels do not move. Four: therefore delta H is completely unchanged by a catalyst. Five: on an energy profile, only the peak lowers — both curves share the same start and finish. Decision rule: ask yourself, did the catalyst move only the peak? Because it must never move delta H.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L5/summary.d5a9ccc2ec73.mp3"
+      }
+    }
+  ]
+}

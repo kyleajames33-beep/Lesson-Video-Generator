@@ -1,0 +1,198 @@
+{
+  "title": "Intermolecular Forces and Physical Properties",
+  "subtitle": "Dispersion, dipole–dipole, and hydrogen bonding",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 10",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "explore the similarities and differences between the nature of intermolecular and intramolecular bonds and the strength of the forces associated with each, in order to explain the:"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-5", "CH11/12-7"],
+  "inquiryQuestion": "What binds atoms together in elements and compounds?",
+  "lessonIntent": "Students can identify the IMFs in a molecule and use them to predict and explain boiling-point trends.",
+  "examSkill": "Name all IMFs present (dispersion is always there), identify the strongest, and rank boiling points, accounting for the size effect.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, intermolecular forces and physical properties. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Intermolecular Forces and Physical Properties (Year 11 Chemistry, Module 1, Lesson 10)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two near-twins, 160°C apart",
+      "body": "Water and hydrogen sulfide have almost the same shape, yet water boils at 100°C and H₂S at −60°C. Why the gulf?",
+      "callout": "The forces between molecules, not inside them, decide this.",
+      "durationInFrames": 660,
+      "caption": "Water and H₂S look alike but boil 160°C apart.",
+      "voiceover": {
+        "text": "OK, last lesson we saw that water boils far above hydrogen sulfide, even though the two molecules look almost identical. Water boils at one hundred degrees, hydrogen sulfide at minus sixty, a gulf of one hundred and sixty degrees. Today we explain exactly why, by going right into the forces that act between molecules. These intermolecular forces decide boiling point, melting point, surface tension, and more, and being able to name them and rank them is one of the most testable skills in this whole module. So let's build the full toolkit."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "The three intermolecular forces",
+      "body": "From weakest to strongest, three forces act between molecules, and dispersion is always present.",
+      "diagram": {
+        "type": "table",
+        "headers": ["Force", "Present in", "Strength"],
+        "rows": [
+          ["Dispersion", "All molecules", "Weakest (grows with size)"],
+          ["Dipole–dipole", "Polar molecules only", "Moderate"],
+          ["Hydrogen bonding", "H bonded to N, O, or F", "Strongest"]
+        ]
+      },
+      "bullets": [
+        {"text": "Dispersion: temporary dipoles from fluctuating electron clouds — in every molecule."},
+        {"text": "Dipole–dipole: permanent partial charges in polar molecules."},
+        {"text": "Hydrogen bonding: needs H on N, O, or F, plus an adjacent lone pair."}
+      ],
+      "secondary": "Dispersion never switches off. A polar molecule has dispersion plus dipole–dipole; an H-bonder can have all three.",
+      "callout": "Dispersion is always there; stronger forces stack on top.",
+      "durationInFrames": 1170,
+      "caption": "Dispersion < dipole–dipole < hydrogen bonding; dispersion is universal.",
+      "voiceover": {
+        "text": "There are three intermolecular forces, and you rank them weakest to strongest. First, dispersion forces, which come from temporary dipoles as the electron cloud constantly fluctuates. These are the weakest, but crucially they're present in every single molecule, polar or not. Second, dipole dipole forces, which come from the permanent partial charges in polar molecules. Third, and strongest, hydrogen bonding, which only forms when hydrogen is bonded to nitrogen, oxygen, or fluorine, with a lone pair on an adjacent molecule to accept it. Here's the key point students forget. Dispersion never switches off. A polar molecule has both dispersion and dipole dipole, and a hydrogen bonder can have all three acting at once."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "What controls dispersion strength",
+      "bullets": [
+        {"text": "Number of electrons: more electrons → more polarisable → stronger dispersion."},
+        {"text": "That's why I₂ > Br₂ > Cl₂ > F₂ in boiling point."},
+        {"text": "Molecular shape: straight chains contact along their full length."},
+        {"text": "n-pentane (BP 36°C) > neopentane (BP 9.5°C), same formula C₅H₁₂."}
+      ],
+      "callout": "More electrons and more contact area mean stronger dispersion.",
+      "durationInFrames": 1020,
+      "caption": "Dispersion grows with electron count and with chain straightness.",
+      "voiceover": {
+        "text": "Since dispersion is in everything, it's worth knowing what makes it stronger. Two factors. First, the number of electrons. More electrons mean a larger, more easily distorted electron cloud, so stronger temporary dipoles and stronger dispersion. That's why boiling point climbs down the halogens, iodine above bromine above chlorine above fluorine, simply because they have more and more electrons. Second, molecular shape. A long, straight chain molecule can touch its neighbours along its entire length, giving more contact and stronger dispersion than a compact, branched version of the same formula. Take pentane. The straight chain, n-pentane, boils at thirty-six degrees, while its branched twin, neopentane, with the identical formula, boils at only nine and a half."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The boiling-point prediction routine",
+      "body": "Work through the molecule in a fixed order to find its strongest IMF, then rank.",
+      "bullets": [
+        {"text": "Step 1: is H bonded directly to N, O, or F? → hydrogen bonding."},
+        {"text": "Step 2: is the molecule polar? → dipole–dipole (plus dispersion)."},
+        {"text": "Step 3: otherwise → dispersion only; compare electron count and shape."}
+      ],
+      "secondary": "Higher total IMF means higher boiling point. But a very large non-polar molecule can outrank a small hydrogen-bonded one.",
+      "callout": "H-bonding? Polar? Size? In that order.",
+      "durationInFrames": 1020,
+      "caption": "Predict BP: check H-bonding, then polarity, then size.",
+      "voiceover": {
+        "text": "Here's the routine for any boiling point question, run it in a fixed order so you never miss a force. Step one, is hydrogen bonded directly to nitrogen, oxygen, or fluorine? If yes, hydrogen bonding is present, the strongest force. Step two, if not, is the molecule polar? If yes, it has dipole dipole forces on top of dispersion. Step three, if it's neither, then only dispersion acts, so you compare electron count and shape. Higher total intermolecular force means higher boiling point. But watch one subtlety. A very large non-polar molecule can actually outrank a small hydrogen bonded one, because its huge dispersion forces can dominate. So always weigh both the type of force and the size of the molecule."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Rank three molecules",
+      "question": "Rank by boiling point: propane (C₃H₈, non-polar), chloromethane (CH₃Cl, polar), propan-1-ol (C₃H₇OH, has O–H). Justify.",
+      "coachNote": "Find the strongest IMF in each, then order them.",
+      "steps": [
+        "Propane: no polar bonds, no N/O/F–H → dispersion only",
+        "Chloromethane: polar C–Cl → dispersion + dipole–dipole",
+        "Propan-1-ol: O–H bond → hydrogen bonding (strongest)",
+        "Order of strength: dispersion < dipole–dipole < hydrogen bonding",
+        "Answer: propane (−42°C) < chloromethane (−24°C) < propan-1-ol (97°C) ✓"
+      ],
+      "durationInFrames": 1350,
+      "caption": "Propane < chloromethane < propan-1-ol, by strongest IMF.",
+      "voiceover": {
+        "text": "Let's rank three molecules by boiling point. Propane, chloromethane, and propan-one-ol. Step one, propane has no polar bonds and no hydrogen on nitrogen, oxygen, or fluorine, so only dispersion forces act, the weakest. Step two, chloromethane has a polar carbon chlorine bond, so it has dipole dipole forces on top of dispersion, putting it in the middle. Step three, propan-one-ol has an oxygen hydrogen bond, so it can hydrogen bond, the strongest force. Step four, ranking the strongest force in each, dispersion is below dipole dipole, which is below hydrogen bonding. So the order from lowest to highest is propane at minus forty-two, chloromethane at minus twenty-four, then propan-one-ol way up at ninety-seven degrees. That jump to ninety-seven shows just how powerfully hydrogen bonding lifts a boiling point."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "The water anomaly",
+      "question": "Group 16 hydrides: H₂S −60°C, H₂Se −41°C, H₂Te −2°C — yet H₂O boils at 100°C. Explain the anomaly.",
+      "coachNote": "First find the normal trend, then the exception.",
+      "steps": [
+        "H₂S → H₂Se → H₂Te: BP rises with more electrons → stronger dispersion",
+        "Extrapolating, H₂O 'should' boil around −80°C",
+        "But H₂O actually boils at 100°C — about 180°C higher",
+        "Oxygen is highly electronegative → water forms strong O–H···O hydrogen bonds",
+        "Answer: hydrogen bonding (absent in the others) lifts water's BP enormously ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Water breaks the Group 16 trend because it hydrogen-bonds.",
+      "voiceover": {
+        "text": "Now the famous water anomaly. Look at the Group sixteen hydrides going down. Hydrogen sulfide boils at minus sixty, hydrogen selenide at minus forty-one, hydrogen telluride at minus two. That's a smooth rise, because each one has more electrons and therefore stronger dispersion forces. Step one, that's the normal trend. Step two, if you extrapolate it backwards, water should boil around minus eighty. Step three, but water actually boils at one hundred, roughly one hundred and eighty degrees higher than predicted, a massive anomaly. Step four, the cause is hydrogen bonding. Oxygen is highly electronegative, so water forms strong oxygen to oxygen hydrogen bonds, while sulfur, selenium, and tellurium aren't electronegative enough to do the same. So hydrogen bonding, present only in water, lifts its boiling point far above the trend."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three IMF traps",
+      "body": "Trap 1: thinking HCl forms hydrogen bonds because it's polar. Chlorine isn't electronegative enough — HCl has only dispersion plus dipole–dipole.",
+      "secondary": "Trap 2: forgetting dispersion in polar molecules. It acts between every pair of molecules. Trap 3: assuming hydrogen bonding always wins. A much larger non-polar molecule (e.g. hexadecane) can boil higher than water.",
+      "mistakeTag": "Where IMF marks vanish",
+      "callout": "HCl doesn't H-bond; dispersion is always there; size can beat H-bonding.",
+      "durationInFrames": 1260,
+      "caption": "HCl can't H-bond; never forget dispersion; size can override H-bonding.",
+      "voiceover": {
+        "text": "Three traps. Trap one, thinking hydrogen chloride forms hydrogen bonds just because it's polar. It doesn't. Hydrogen bonding needs hydrogen attached to nitrogen, oxygen, or fluorine, and chlorine isn't electronegative enough, so hydrogen chloride has only dispersion and dipole dipole forces. Trap two, forgetting dispersion in polar molecules. Students write that water only has hydrogen bonds, but dispersion acts between every pair of molecules, so always list it too. Trap three, assuming hydrogen bonding always wins. It usually does for similar sized molecules, but a much larger non-polar molecule, like the long chain hexadecane, can actually boil higher than water, because its enormous dispersion forces outweigh water's hydrogen bonding. So always weigh size against force type."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Predict the BP order, lowest to highest: CH₄, CH₃F, CH₃OH. Justify each.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "CH₄: non-polar, no N/O/F–H → dispersion only (weakest)",
+        "CH₃F: polar C–F, but H is on C not F → dispersion + dipole–dipole",
+        "CH₃OH: O–H bond → hydrogen bonding (strongest)",
+        "Rank by strongest IMF in each",
+        "Answer: CH₄ (−162°C) < CH₃F (−78°C) < CH₃OH (65°C) ✓"
+      ],
+      "durationInFrames": 1170,
+      "caption": "CH₄ < CH₃F < CH₃OH, set by their strongest IMF.",
+      "voiceover": {
+        "text": "Quick check. Predict the boiling point order, lowest to highest, for methane, fluoromethane, and methanol. Pause and work it through. Right, let's check it. Step one, methane is non-polar with no hydrogen on nitrogen, oxygen, or fluorine, so only dispersion forces act, the weakest. Step two, fluoromethane has a polar carbon fluorine bond, but watch out, the hydrogen is on carbon, not on fluorine, so there's no hydrogen bonding, just dispersion plus dipole dipole. Step three, methanol has an oxygen hydrogen bond, so it hydrogen bonds, the strongest force. Step four, ranking by strongest force gives methane lowest, then fluoromethane, then methanol. So the order is methane at minus one hundred and sixty-two, fluoromethane at minus seventy-eight, and methanol at sixty-five. The trap was assuming fluoromethane hydrogen bonds, but the hydrogen sits on carbon, so it can't."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Three IMFs: dispersion < dipole–dipole < hydrogen bonding.",
+        "Dispersion is in every molecule and grows with electrons and contact area.",
+        "Hydrogen bonding needs H on N, O, or F — HCl doesn't qualify.",
+        "Predict BP: check H-bonding, then polarity, then size.",
+        "A very large non-polar molecule can outrank a small H-bonded one."
+      ],
+      "finalPrompt": "Comparing BPs? Name every IMF, then rank by the strongest.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: three IMFs, dispersion always present, H-bonding rules, the size effect.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, there are three intermolecular forces, dispersion, then dipole dipole, then hydrogen bonding, weakest to strongest. Second, dispersion is present in every molecule, and it grows with the number of electrons and the contact area. Third, hydrogen bonding only forms when hydrogen is on nitrogen, oxygen, or fluorine, so hydrogen chloride doesn't qualify. Fourth, predict a boiling point by checking hydrogen bonding first, then polarity, then size. And fifth, a very large non-polar molecule can outrank a small hydrogen bonded one, because dispersion can dominate. That completes the bonding inquiry. Great work through Module one. See you next lesson."
+      }
+    }
+  ]
+}

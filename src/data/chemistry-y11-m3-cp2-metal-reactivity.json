@@ -1,0 +1,293 @@
+{
+  "title": "Checkpoint 2: Metal Reactivity & Electrochemistry",
+  "subtitle": "IQ2 synthesis — activity series, redox, galvanic cells, and prediction",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Checkpoint 2",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 3: Reactive Chemistry",
+  "syllabusDotPoints": [
+    "Investigate the reactions of metals with water, dilute acids and oxygen",
+    "Construct half-equations and balance redox reactions",
+    "Explain the relationship between the reactivity of metals and their standard reduction potentials",
+    "Investigate the operation of galvanic cells and predict their voltage"
+  ],
+  "lessonIntent": "Students can predict displacement reactions, balance redox half-equations, calculate cell potentials, and determine whether a metal will react with acid.",
+  "examSkill": "Select the correct electrochemical method from a scenario, balance half-equations, calculate E°cell, and predict spontaneity.",
+  "productionRole": "production",
+  "productionNotes": "Synthesis \"boss fight\" video for IQ2 (L7-L10). Format: cold open with 4 scenarios → decision tree → 3 worked walkthroughs → exam pitfall montage → boss fight quick-check → closing decision rule.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Checkpoint 2: Metal Reactivity and Electrochemistry.",
+      "voiceover": {
+        "text": "Checkpoint Two: Metal Reactivity and Electrochemistry.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-Checkpoint2/title.f8680a4b921f.mp3"
+      }
+    },
+    {
+      "id": "cold-open",
+      "type": "hook",
+      "heading": "Four scenarios. Four electrochemical problems. Can you solve them?",
+      "body": "Here are four situations from Lessons seven through ten. Each tests a different electrochemical skill. Think of this like a diagnostic panel — each observation points to a specific principle. Where the analogy breaks: a doctor treats symptoms, but in chemistry the \"symptom\" itself is the method — the observation tells you which equation to use. Try to identify the method and predict the outcome for each before the answers play.",
+      "bullets": [
+        {
+          "text": "A: Zinc metal is placed in copper sulfate solution. The zinc dissolves and copper metal deposits.",
+          "at": 4
+        },
+        {
+          "text": "B: In a galvanic cell, E° for Zn²⁺/Zn is -0.76 V and for Cu²⁺/Cu is +0.34 V. Predict the cell voltage.",
+          "at": 13
+        },
+        {
+          "text": "C: Permanganate ion (MnO₄⁻) reduces to Mn²⁺ in acidic solution. Balance the half-equation.",
+          "at": 22
+        },
+        {
+          "text": "D: Will copper metal react with dilute hydrochloric acid? Use standard reduction potentials.",
+          "at": 31
+        }
+      ],
+      "callout": "A = displacement. B = E°cell calculation. C = redox half-equation. D = acid reactivity prediction.",
+      "image": "cp2ColdOpenScenarios",
+      "durationInFrames": 1560,
+      "caption": "Four mixed scenarios covering displacement, cell potential, redox balancing, and acid reactivity.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "bulletsStart": 90,
+        "callout": 1200,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here are four scenarios, each testing a different electrochemical skill. Think of it like a diagnostic panel, where each observation points to a specific principle, except in chemistry the observation itself tells you which equation to reach for. In scenario A, zinc metal goes into copper sulfate, the zinc dissolves and copper deposits. In scenario B, a galvanic cell is built from zinc and copper half-cells, and you predict the voltage. In scenario C, permanganate reduces to Mn two plus in acid, and you balance the half-equation. And in scenario D, you decide whether copper reacts with dilute HCl using standard potentials. So A is displacement, B is the E naught cell calculation, C is redox balancing, and D is acid reactivity."
+      }
+    },
+    {
+      "id": "decision-tree",
+      "type": "concept",
+      "heading": "The IQ2 decision tree",
+      "body": "Every IQ2 problem asks one of four questions. The key is to read the scenario and match the discriminator to the correct method.",
+      "bullets": [
+        {
+          "text": "Metal + metal ion solution → displacement → more reactive metal displaces less reactive.",
+          "at": 4
+        },
+        {
+          "text": "Two half-cells connected → galvanic cell → E°cell = E°cathode - E°anode. Spontaneous if positive.",
+          "at": 13
+        },
+        {
+          "text": "Oxidation numbers changing → redox → OIL RIG. Balance with H₂O, H⁺, and electrons.",
+          "at": 22
+        },
+        {
+          "text": "Metal + acid → compare E° to H⁺/H₂ (0.00 V). Dissolves if E°metal < 0.00 V.",
+          "at": 30
+        }
+      ],
+      "callout": "Read the scenario first. Match the discriminator. Then choose the method.",
+      "image": "cp2DecisionTree",
+      "durationInFrames": 1680,
+      "caption": "Four discriminators map every IQ2 scenario to the correct electrochemical method.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1380,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Every IQ2 problem really asks one of four questions. If a metal is placed in a metal-ion solution, that's displacement, where the more reactive metal displaces the less reactive one. If two half-cells are connected, that's a galvanic cell, so E naught cell equals E naught cathode minus E naught anode, and it's spontaneous when that's positive. If oxidation numbers are changing, that's redox, so remember OIL RIG, oxidation is loss and reduction is gain, and you balance the half-equations with water, hydrogen ions, and electrons. And if it's a metal plus acid, you compare the metal's standard potential to hydrogen at zero point zero zero volts, since the metal only dissolves when its E naught is below zero. So read the scenario first, match the discriminator, and then choose the method."
+      }
+    },
+    {
+      "id": "walkthrough-1",
+      "type": "workedExample",
+      "heading": "Walkthrough 1: Balance a redox half-equation",
+      "question": "Balance the following reduction half-equation in acidic solution: MnO₄⁻(aq) → Mn²⁺(aq). Show all steps including the addition of H₂O, H⁺, and electrons.",
+      "coachNote": "Target: balance atoms first, then O with H₂O, then H with H⁺, then charge with e⁻.",
+      "unitCancel": {
+        "left": "charge",
+        "right": "charge",
+        "result": "balanced"
+      },
+      "steps": [
+        "Known: MnO₄⁻ → Mn²⁺ in acidic solution.",
+        "Find: balanced half-equation with H₂O, H⁺, and electrons.",
+        "Formula: Balance atoms → O with H₂O → H with H⁺ → charge with e⁻.",
+        "Balance Mn: 1 Mn each side. Already balanced.",
+        "Substitute O: 4 O on left → 4 H₂O on right.",
+        "Substitute H: 8 H on right → 8 H⁺ on left.",
+        "Balance charge: left = -1 + 8 = +7. Right = +2. Need 5 e⁻ on left.",
+        "Answer: MnO₄⁻(aq) + 8H⁺(aq) + 5e⁻ → Mn²⁺(aq) + 4H₂O(l). = 1 balanced half-equation. Check: 1 Mn, 4 O, 8 H, charge +2 each side."
+      ],
+      "image": "cp2Walkthrough1Redox",
+      "durationInFrames": 1800,
+      "caption": "Balance atoms → O with H₂O → H with H⁺ → charge with e⁻.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 120
+      },
+      "voiceover": {
+        "text": "Walkthrough one: balance a redox half-equation. Mn O four minus aqueous reduces to Mn two plus aqueous in acidic solution. Show all steps. Target: balance atoms, then oxygen with water, then hydrogen with hydrogen ions, then charge with electrons. Manganese: one each side. Already balanced. Oxygen: four on the left means four H two O on the right. Hydrogen: eight on the right means eight H plus on the left. Charge: left side is minus one plus eight equals plus seven. Right side is plus two. Need five electrons on the left to bring plus seven down to plus two. Answer: Mn O four minus aqueous plus eight H plus aqueous plus five electrons produces Mn two plus aqueous plus four H two O liquid. Check: one Mn, four O, eight H, charge plus two each side.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-Checkpoint2/walkthrough-1.f090ae12f002.mp3"
+      }
+    },
+    {
+      "id": "walkthrough-2",
+      "type": "workedExample",
+      "heading": "Walkthrough 2: Calculate E°cell and predict spontaneity",
+      "question": "A galvanic cell is constructed with a zinc electrode in 1.0 mol/L Zn²⁺(aq) and a copper electrode in 1.0 mol/L Cu²⁺(aq). Given E°(Zn²⁺/Zn) = -0.76 V and E°(Cu²⁺/Cu) = +0.34 V, (a) identify the anode and cathode, (b) calculate E°cell, and (c) predict whether the reaction is spontaneous.",
+      "coachNote": "Target: more negative E° = anode (oxidation). Less negative = cathode (reduction). E°cell = E°cathode - E°anode.",
+      "unitCancel": {
+        "left": "V",
+        "right": "V",
+        "result": "V"
+      },
+      "steps": [
+        "Known: E°(Zn²⁺/Zn) = -0.76 V. E°(Cu²⁺/Cu) = +0.34 V.",
+        "Find: anode, cathode, E°cell, spontaneity.",
+        "Formula: E°cell = E°cathode - E°anode. Spontaneous if E°cell > 0.",
+        "Anode: more negative E° → Zn (oxidation: Zn → Zn²⁺ + 2e⁻).",
+        "Cathode: less negative E° → Cu (reduction: Cu²⁺ + 2e⁻ → Cu).",
+        "Substitute: E°cell = (+0.34) - (-0.76) = +0.34 + 0.76 = +1.10 V.",
+        "Spontaneity: E°cell = +1.10 V > 0 → spontaneous.",
+        "Answer: Anode = Zn. Cathode = Cu. E°cell = +1.10 V. Spontaneous."
+      ],
+      "image": "cp2Walkthrough2Cell",
+      "durationInFrames": 1800,
+      "caption": "More negative E° = anode. E°cell = E°cathode - E°anode. Positive = spontaneous.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 120
+      },
+      "voiceover": {
+        "text": "Walkthrough two: calculate E naught cell and predict spontaneity. Zinc electrode in zinc two plus and copper electrode in copper two plus. E naught zinc is minus zero point seven six volts. E naught copper is plus zero point three four volts. Identify anode and cathode, calculate E naught cell, and predict spontaneity. Formula: E naught cell equals E naught cathode minus E naught anode. Spontaneous if positive. Anode is more negative: zinc at minus zero point seven six. Cathode is less negative: copper at plus zero point three four. Substitute: plus zero point three four minus minus zero point seven six equals plus one point one zero volts. Positive, so spontaneous. Answer: anode is zinc, cathode is copper, E naught cell equals plus one point one zero volts, spontaneous.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-Checkpoint2/walkthrough-2.4cf50c0e1c4b.mp3"
+      }
+    },
+    {
+      "id": "walkthrough-3",
+      "type": "workedExample",
+      "heading": "Walkthrough 3: Predict acid reactivity from E° values",
+      "question": "Using standard reduction potentials, predict whether each metal will react with dilute HCl: (a) magnesium, (b) copper, (c) silver. E°(Mg²⁺/Mg) = -2.37 V, E°(Cu²⁺/Cu) = +0.34 V, E°(Ag⁺/Ag) = +0.80 V. Explain your reasoning for each.",
+      "coachNote": "Target: compare metal E° to H⁺/H₂ (0.00 V). Metal dissolves if E° < 0.00 V.",
+      "unitCancel": {
+        "left": "V",
+        "right": "V",
+        "result": "reacts / no reaction"
+      },
+      "steps": [
+        "Known: E°(H⁺/H₂) = 0.00 V. E°(Mg²⁺/Mg) = -2.37 V. E°(Cu²⁺/Cu) = +0.34 V. E°(Ag⁺/Ag) = +0.80 V.",
+        "Find: Predict reaction with dilute HCl for Mg, Cu, Ag.",
+        "Formula: Metal dissolves in dilute acid if E°metal < E°(H⁺/H₂) = 0.00 V.",
+        "Substitute Mg: -2.37 V < 0.00 V → Mg reacts. Mg + 2HCl → MgCl₂ + H₂.",
+        "Substitute Cu: +0.34 V > 0.00 V → Cu does not react.",
+        "Substitute Ag: +0.80 V > 0.00 V → Ag does not react.",
+        "Answer: Mg reacts (E° = -2.37 V < 0). Cu and Ag do not react (E° > 0)."
+      ],
+      "image": "cp2Walkthrough3Acid",
+      "durationInFrames": 1680,
+      "caption": "Compare metal E° to 0.00 V. Dissolves if E° < 0.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 120
+      },
+      "voiceover": {
+        "text": "Walkthrough three: predict acid reactivity from standard reduction potentials. Predict whether magnesium, copper, and silver react with dilute HCl. E naught for magnesium is minus two point three seven volts. Copper is plus zero point three four. Silver is plus zero point eight zero. Hydrogen over hydrogen plus is zero point zero zero volts. Metal dissolves if its E naught is less than zero. Magnesium: minus two point three seven is less than zero, so it reacts. Copper: plus zero point three four is greater than zero, so no reaction. Silver: plus zero point eight zero is greater than zero, so no reaction. Answer: magnesium reacts. Copper and silver do not react.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-Checkpoint2/walkthrough-3.0b212eb0ab32.mp3"
+      }
+    },
+    {
+      "id": "exam-pitfalls",
+      "type": "misconception",
+      "heading": "The three most dangerous IQ2 distractors",
+      "body": "Wrong instinct one: Redox always involves oxygen. Corrected: Redox is electron transfer. Bleach oxidises dyes without donating oxygen at all. OIL RIG: oxidation is loss, reduction is gain of electrons. Wrong instinct two: The salt bridge carries electrons from anode to cathode. Corrected: Electrons travel through the external wire. The salt bridge carries ions to maintain charge neutrality. No electrons enter the salt bridge. Wrong instinct three: Every metal reacts with dilute acid. Corrected: Only metals with E° < 0.00 V dissolve in dilute acid. Copper, silver, and gold do not react. Check E° against hydrogen before predicting.",
+      "callout": "In the exam, check E° values and track electron flow carefully.",
+      "mistakeTag": "IQ2 triple trap",
+      "image": "cp2ExamPitfalls",
+      "durationInFrames": 1500,
+      "caption": "Three common distractors: redox needs oxygen, salt bridge carries electrons, all metals react with acid.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 1200,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here are the three most dangerous IQ2 distractors. The first wrong instinct is that redox always involves oxygen, but redox is really about electron transfer, since bleach oxidises dyes without donating any oxygen at all, which is why we lean on OIL RIG, oxidation is loss and reduction is gain of electrons. The second wrong instinct is that the salt bridge carries electrons from anode to cathode, but the electrons actually travel through the external wire, while the salt bridge only carries ions to keep the charge neutral, with no electrons entering it. And the third wrong instinct is that every metal reacts with dilute acid, when in fact only metals with an E naught below zero point zero zero volts dissolve, so copper, silver, and gold don't react, which means you should always check E naught against hydrogen before predicting."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Boss fight — your turn",
+      "question": "A student has four metals (Mg, Zn, Cu, Ag) and 1.0 mol/L solutions of their ions. They also have a salt bridge, voltmeter, and connecting wires. Design an experiment to: (a) rank the metals by reactivity from highest to lowest, (b) identify which pair of metals will produce the highest cell voltage in a galvanic cell, and (c) calculate that maximum cell voltage using E°(Mg²⁺/Mg) = -2.37 V, E°(Zn²⁺/Zn) = -0.76 V, E°(Cu²⁺/Cu) = +0.34 V, E°(Ag⁺/Ag) = +0.80 V.",
+      "pausePrompt": "Pause: think about displacement reactions and cell potential calculations.",
+      "answerSteps": [
+        "Known: Four metals and their ions. E° values given.",
+        "Reactivity ranking: more negative E° = more reactive. Order: Mg > Zn > Cu > Ag.",
+        "Highest cell voltage: pair with greatest difference in E°.",
+        "Substitute: E°cell = E°cathode - E°anode. Largest difference = most negative anode + most positive cathode.",
+        "Maximum: Mg (-2.37 V) as anode, Ag (+0.80 V) as cathode.",
+        "E°cell = (+0.80) - (-2.37) = +3.17 V.",
+        "Answer: Reactivity: Mg > Zn > Cu > Ag. Highest voltage: Mg-Ag cell. E°cell = +3.17 V."
+      ],
+      "image": "cp2QuickCheckBossFight",
+      "durationInFrames": 1800,
+      "caption": "Rank reactivity by E°. Highest cell voltage = most negative anode + most positive cathode.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 600,
+        "answerInterval": 120
+      },
+      "voiceover": {
+        "text": "OK, boss fight. You've got four metals, magnesium, zinc, copper, and silver, each sitting in a one molar solution of its own ions, wired up with a salt bridge and a voltmeter. Your job is to rank their reactivity, find the pair that gives the highest cell voltage, and calculate it. The standard potentials are magnesium at minus two-point-three-seven, zinc at minus zero-point-seven-six, copper at plus zero-point-three-four, and silver at plus zero-point-eight-zero. Pause now and work it through. Right, let's check it. For reactivity, the more negative the standard potential, the more reactive the metal, so the order is magnesium, then zinc, then copper, then silver. For the highest voltage, you want the biggest gap between two potentials, which means magnesium as the anode and silver as the cathode. The cell potential is plus zero-point-eight-zero minus minus two-point-three-seven, which comes to plus three-point-one-seven volts. So the reactivity order is magnesium, zinc, copper, silver, and the magnesium to silver cell gives plus three-point-one-seven volts."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Which metal is more reactive? What is E°cell? Is it spontaneous?",
+      "image": "cp2SummaryClosing",
+      "points": [
+        "Displacement: more reactive metal displaces less reactive from solution.",
+        "Galvanic cell: E°cell = E°cathode - E°anode. Spontaneous if E°cell > 0.",
+        "Redox half-equations: balance atoms → O with H₂O → H with H⁺ → charge with e⁻.",
+        "Acid reactivity: metal dissolves if E° < 0.00 V (H⁺/H₂ reference).",
+        "Salt bridge carries ions, not electrons. Electrons flow through the wire.",
+        "OIL RIG: oxidation is loss, reduction is gain of electrons."
+      ],
+      "durationInFrames": 1440,
+      "caption": "Six takeaways and the ultimate IQ2 decision rule.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 100,
+        "finalPrompt": 780,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Six takeaways for checkpoint two. One: displacement means the more reactive metal displaces the less reactive from solution. Two: galvanic cell voltage equals E naught cathode minus E naught anode. Spontaneous if positive. Three: balance redox half-equations by balancing atoms, then oxygen with water, then hydrogen with hydrogen ions, then charge with electrons. Four: a metal dissolves in dilute acid only if its E naught is less than zero. Five: the salt bridge carries ions, not electrons. Electrons flow through the wire. Six: OIL RIG — oxidation is loss, reduction is gain. Decision rule: which metal is more reactive? What is E naught cell? Is it spontaneous?",
+        "audioFile": "public/audio/Chemistry-Y11-M3-Checkpoint2/summary.b64e7146684c.mp3"
+      }
+    }
+  ]
+}

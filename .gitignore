@@ -20,3 +20,13 @@ lesson-video-generator-app/
 
 # Source dump duplicates; runtime assets live in public/assets
 /assets/
+
+# Scratch / working dirs
+tmp/
+tmp-m3site/
+
+# Large binary media — NOT stored in git (repo would balloon to ~850MB).
+# Audio is regenerable via the ElevenLabs scripts; images are reproducible
+# from the committed image-prompts-*.md. Back these up separately (cloud/LFS).
+public/audio/
+public/assets/

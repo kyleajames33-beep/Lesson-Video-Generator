@@ -1,0 +1,265 @@
+{
+  "title": "Koch and Pasteur — Germ Theory",
+  "subtitle": "How we proved invisible agents cause disease",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "investigate the work of Robert Koch and Louis Pasteur, to explain the causes and transmission of infectious diseases"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-1",
+    "BIO11/12-4",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How are diseases transmitted?",
+  "lessonIntent": "Students can describe Pasteur's swan-neck experiment with its variables, list Koch's four postulates in order, and state two limitations of the postulates.",
+  "examSkill": "Apply Koch's postulates to a novel disease scenario and explain how they establish causation rather than correlation.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, Koch, Pasteur, and germ theory. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Koch and Pasteur — Germ Theory (Year 12 Biology, Module 7, Lesson 3)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One flask, two thousand years of wrong",
+      "body": "Pasteur's broth stayed clear for 18 months. The instant he broke the flask's neck, it clouded with microbes.",
+      "callout": "What did that single broken neck actually prove?",
+      "image": "bioM7L3SwanNeckFlask",
+      "durationInFrames": 1480,
+      "caption": "Pasteur's swan-neck flask stayed sterile until the neck was broken, disproving spontaneous generation.",
+      "voiceover": {
+        "text": "Between eighteen fifty-nine and eighteen sixty-one, Louis Pasteur ran eleven sealed swan-neck flask experiments. After eighteen months, not a single flask showed any microbial growth. Then he broke the necks off, and within three days the broth was cloudy with microbes. Zero versus millions, same broth, the only difference was exposure. That one experiment collapsed a belief that had stood for two thousand years, the idea that life could just arise from non-living matter. But disproving that was only half the story. It still took a second scientist, Robert Koch, to turn the insight into hard proof that specific microbes cause specific diseases. Let's see how they did it."
+      }
+    },
+    {
+      "id": "concept-before",
+      "type": "concept",
+      "heading": "What people believed before",
+      "body": "For over a thousand years, two wrong ideas explained disease, and getting the cause wrong meant useless cures.",
+      "bullets": [
+        {
+          "text": "Miasma theory: disease comes from bad air given off by rotting matter."
+        },
+        {
+          "text": "Spontaneous generation: living things arise from non-living matter."
+        },
+        {
+          "text": "Get the cause wrong and you fix the wrong thing, ventilation instead of hygiene."
+        }
+      ],
+      "secondary": "If disease is bad air, you build hospitals on hills. If it's invisible living agents, you turn to isolation, sterilisation, and hand-washing. The cause dictates the response.",
+      "callout": "The cause you believe in decides the cure you choose.",
+      "durationInFrames": 1980,
+      "caption": "Miasma theory and spontaneous generation dominated before germ theory.",
+      "voiceover": {
+        "text": "To appreciate the breakthrough, you have to know what came before. For well over a thousand years, the leading explanation for disease was miasma theory, the idea that bad air given off by rotting organic matter caused illness. The smell of decay was thought to be the agent itself. That's why hospitals were built on hills for better air, and why doctors carried bunches of aromatic herbs. Alongside it sat spontaneous generation, the belief that living things could just appear from non-living matter. Maggots showed up in meat, so people assumed the meat generated them. And here's why this mattered so much. If disease came from bad air, the fix was ventilation and city planning. But if it came from invisible living agents, the fix was isolation, sterilisation, and hygiene. Getting the cause right was the difference between useless interventions and ones that actually saved lives."
+      },
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "Miasma theory",
+        "afterLabel": "Germ theory",
+        "beforeContent": "Disease from bad air; fix with ventilation",
+        "afterContent": "Disease from microbes; fix with hygiene"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The terms you need",
+      "bullets": [
+        {
+          "text": "Spontaneous generation: the disproven idea that life arises from non-living matter."
+        },
+        {
+          "text": "Germ theory: the theory that pathogens cause infectious disease."
+        },
+        {
+          "text": "Pure culture: a culture containing only one identified microorganism."
+        },
+        {
+          "text": "Causation: evidence one factor directly causes an outcome, not just appears with it."
+        }
+      ],
+      "callout": "Correlation is appearing together; causation is making it happen.",
+      "durationInFrames": 1695,
+      "caption": "Spontaneous generation, germ theory, pure culture, causation.",
+      "voiceover": {
+        "text": "Four terms to pin down before the experiments. Spontaneous generation is the now-disproven idea that living organisms can arise from non-living matter. Germ theory is what replaced it, the theory that infectious diseases are caused by microorganisms or other pathogens. A pure culture is a culture that contains only one identified microorganism, grown in isolation from everything else, and that idea is central to Koch's method. And causation, this is the big one, is evidence that one factor directly causes an outcome, not merely appears alongside it. The contrast you must hold onto is correlation versus causation. Correlation is two things showing up together. Causation is one thing actually making the other happen, and proving that takes far more than just finding a microbe present."
+      }
+    },
+    {
+      "id": "concept-pasteur",
+      "type": "concept",
+      "heading": "Pasteur's swan-neck flask",
+      "body": "Pasteur designed a flask that let air in but trapped airborne particles in the curve, isolating one variable.",
+      "bullets": [
+        {
+          "text": "Swan-neck flasks stayed clear: air entered, but particles settled in the curve."
+        },
+        {
+          "text": "Straight-neck flasks turned cloudy: particles reached the broth and grew."
+        },
+        {
+          "text": "Break the curved neck and growth appears, the microbes came from the air."
+        }
+      ],
+      "secondary": "Independent variable: whether airborne particles could reach the broth. Dependent variable: microbial growth, seen as cloudiness. Broth, temperature, and sterilising were all kept constant.",
+      "callout": "Same broth, only the particle path changed.",
+      "durationInFrames": 2060,
+      "caption": "The swan-neck shape let air in but blocked particles, proving microbes come from air.",
+      "voiceover": {
+        "text": "So how did Pasteur disprove spontaneous generation? With a beautifully simple piece of glassware. He used flasks with long, curved swan necks. The clever part is that air could still flow in freely, but any airborne particles, including microbes, settled in the bottom of the curve before they ever reached the broth. He boiled the broth to sterilise it, then left the flasks open. The swan-neck flasks stayed perfectly clear, month after month, while ordinary straight-neck flasks turned cloudy within days as particles fell straight in. Then came the decisive step. When he snapped the curved neck off a clear flask, exposing the broth to unfiltered air, growth appeared within days. Think about the design. The independent variable was whether airborne particles could reach the broth. The dependent variable was microbial growth, seen as cloudiness. And everything else, the broth, the temperature, the sterilising, was kept constant. That's a textbook controlled experiment."
+      }
+    },
+    {
+      "id": "concept-koch",
+      "type": "concept",
+      "heading": "Koch's four postulates",
+      "body": "Koch turned the insight into a rigorous test: four criteria that must all be met to prove a microbe causes a disease.",
+      "bullets": [
+        {
+          "text": "1 Association: the microbe is in every diseased host, absent in healthy ones."
+        },
+        {
+          "text": "2 Isolation: it is grown in pure culture, away from the host."
+        },
+        {
+          "text": "3 Causation: the pure culture causes the same disease in a healthy host."
+        },
+        {
+          "text": "4 Confirmation: the same microbe is re-isolated from that new host."
+        }
+      ],
+      "secondary": "Postulate 1 alone only shows correlation. Postulate 3 adds causation; postulate 4 adds reproducibility. Together they rule out coincidence and contamination.",
+      "callout": "Association, isolation, causation, confirmation.",
+      "durationInFrames": 2060,
+      "caption": "Koch's four postulates build from association to confirmed causation.",
+      "voiceover": {
+        "text": "Pasteur showed microbes come from the air, but Robert Koch went further and proved that a specific microbe causes a specific disease. He laid out four criteria, and all four must be satisfied. Postulate one, association, the microbe must be found in every organism with the disease, and absent in healthy ones. Postulate two, isolation, you extract that microbe and grow it in pure culture, separate from the host and from anything else. Postulate three, causation, you take that pure culture and introduce it into a healthy host, and that host must develop the same disease. Postulate four, confirmation, you re-isolate the microbe from the newly infected host and confirm it's identical to the one you started with. And here's why you need all four. Postulate one on its own only shows correlation. Postulate three adds genuine causation. Postulate four adds reproducibility. Chained together, they rule out coincidence, contamination, and confounding factors."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "p1",
+            "label": "Found"
+          },
+          {
+            "id": "p2",
+            "label": "Isolate"
+          },
+          {
+            "id": "p3",
+            "label": "Infect"
+          },
+          {
+            "id": "p4",
+            "label": "Re-isolate"
+          }
+        ],
+        "edges": [
+          {
+            "from": "p1",
+            "to": "p2"
+          },
+          {
+            "from": "p2",
+            "to": "p3"
+          },
+          {
+            "from": "p3",
+            "to": "p4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Apply the postulates",
+      "question": "A new bacterium is suspected of causing a cattle disease. Outline how a scientist would use Koch's postulates to prove causation rather than mere correlation.",
+      "coachNote": "Walk the four steps in order, and say what each one rules out.",
+      "steps": [
+        "Step 1: show the bacterium is present in all diseased cattle and absent in healthy cattle, establishing association.",
+        "Step 2: isolate the bacterium and grow it in pure culture, ensuring a single identified agent.",
+        "Step 3: inoculate a healthy animal with the pure culture; it must develop the same disease, showing causation.",
+        "Step 4: re-isolate the bacterium from that animal and confirm it matches the original, proving reproducibility.",
+        "Because presence alone is only correlation, steps 3 and 4 are what lift the evidence to causation."
+      ],
+      "durationInFrames": 2225,
+      "caption": "Find in all diseased, isolate, infect a healthy host, re-isolate and confirm.",
+      "voiceover": {
+        "text": "Let's apply this to a fresh scenario, the kind the exam throws at you. A new bacterium is suspected of causing a disease in cattle. How would a scientist use Koch's postulates to prove it causes the disease, rather than just being present? Step one, show that the bacterium is found in every diseased animal, and absent in the healthy ones. That establishes association. Step two, isolate that bacterium and grow it in pure culture, so you know you're working with a single, identified agent and nothing else. Step three, take that pure culture and inoculate a healthy animal, and it must come down with the same disease. That's the step that demonstrates causation. Step four, re-isolate the bacterium from the newly infected animal and confirm it's identical to your original. That proves reproducibility. And the key reasoning to state explicitly is this, presence alone is only correlation, so it's steps three and four that actually lift your evidence all the way to causation."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking Pasteur proved germs cause disease. He disproved spontaneous generation; Koch later linked specific microbes to specific diseases.",
+      "secondary": "Trap 2: thinking the postulates work for everything. Viruses can't be grown in pure culture, some pathogens can't be cultured at all, asymptomatic carriers break postulate 1, and infecting a healthy human is unethical. Molecular postulates use DNA instead.",
+      "mistakeTag": "Where germ-theory marks vanish",
+      "callout": "Pasteur disproved; Koch proved. And the postulates have real limits.",
+      "durationInFrames": 1915,
+      "caption": "Pasteur disproved spontaneous generation; Koch proved causation; postulates have limits.",
+      "voiceover": {
+        "text": "Two traps that catch students every year. Trap one, claiming that Pasteur proved germs cause disease. He didn't, not directly. What Pasteur proved was that microorganisms come from the air, disproving spontaneous generation. It was Koch who later developed the postulates that actually linked specific microbes to specific diseases. So keep their roles distinct, Pasteur disproved, Koch proved. Trap two, assuming the postulates apply to every pathogen. They don't. Viruses can't be grown in pure culture on artificial media, because they need living host cells. Some pathogens, like the syphilis bacterium, can't be reliably cultured at all. Asymptomatic carriers, people who carry a pathogen without getting sick, break postulate one. And postulate three, deliberately infecting a healthy host, is simply unethical in humans. Modern molecular versions of the postulates get around this by detecting the pathogen's DNA instead of culturing it."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "In Pasteur's experiment, a friend claims the swan-neck flasks stayed clear because air could not get in at all. Explain why this is wrong, and state what actually kept them sterile.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Air could freely enter the swan-neck flasks; the necks were open, not sealed.",
+        "The curved shape trapped airborne particles, including microbes, in the bend of the neck.",
+        "So air reached the broth but particles did not, and there was nothing to seed growth.",
+        "Breaking the neck let particles in, and growth then appeared, confirming the cause.",
+        "Answer: it was particle exclusion, not air exclusion, that kept the broth sterile."
+      ],
+      "durationInFrames": 1925,
+      "caption": "Air entered freely; the curve trapped particles, so it was particle exclusion, not air.",
+      "voiceover": {
+        "text": "Quick check. A friend looks at Pasteur's experiment and says the swan-neck flasks stayed clear because air couldn't get in at all. Explain why that's wrong, and say what actually kept them sterile. Pause and reason it through. Okay. The claim is wrong because air could freely enter the swan-neck flasks, the necks were open, not sealed shut. What the curved shape did was trap airborne particles, including microbes, down in the bend of the neck. So air reached the broth, but particles didn't, and with nothing to seed it, the broth stayed sterile. And we know that's the real cause, because the moment Pasteur broke the neck and let particles through, growth appeared. So the answer is that it was particle exclusion, not air exclusion, that kept the broth clear. That distinction is exactly what makes it such an elegant control."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Before germ theory: miasma (bad air) and spontaneous generation explained disease.",
+        "Pasteur's swan-neck flask disproved spontaneous generation, isolating one variable.",
+        "Koch's four postulates: association, isolation, causation, confirmation.",
+        "Together the postulates turn correlation into proven causation.",
+        "Limits: viruses, unculturable pathogens, carriers, and ethics; molecular versions use DNA."
+      ],
+      "finalPrompt": "Proving a microbe causes a disease? Walk all four postulates, in order.",
+      "durationInFrames": 1790,
+      "caption": "Five takeaways: old beliefs, Pasteur's flask, the four postulates, their limits.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, before germ theory, disease was explained by miasma theory, the idea of bad air, and by spontaneous generation. Second, Pasteur's swan-neck flask experiment disproved spontaneous generation by isolating a single variable, whether particles could reach the broth. Third, Koch's four postulates run association, isolation, causation, and confirmation, in that order. Fourth, chained together, those postulates turn mere correlation into proven causation. And fifth, the postulates have real limits, they fail for viruses and unculturable pathogens, they're broken by asymptomatic carriers, and infecting a human is unethical, which is why molecular versions detect DNA instead. Whenever you're asked to prove a microbe causes a disease, walk all four postulates in order. Next lesson, the modes by which diseases actually spread. See you there."
+      }
+    }
+  ]
+}

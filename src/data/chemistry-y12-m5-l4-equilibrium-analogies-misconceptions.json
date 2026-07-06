@@ -1,0 +1,268 @@
+{
+  "title": "Equilibrium in Context: Analogies and Misconceptions",
+  "subtitle": "Killing the equilibrium myths once and for all",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+  "syllabusDotPoints": [
+    "model static and dynamic equilibrium and analyse the differences between open and closed systems (ACSCH079, ACSCH091)"
+  ],
+  "moduleLessonCount": 18,
+  "nesaOutcomes": [
+    "CH12-12",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What happens when chemical reactions do not go through to completion?",
+  "lessonIntent": "Students can describe dynamic equilibrium with correct chemical language, using sound analogies and avoiding the four common misconceptions.",
+  "examSkill": "Correct flawed equilibrium descriptions precisely and read concentration–time graphs, identifying equilibrium where curves flatten, not where they cross.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, equilibrium analogies and the misconceptions that cost marks. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Equilibrium in Context: Analogies and Misconceptions (Year 12 Chemistry, Module 5, Lesson 4)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Which student is right?",
+      "body": "Three students describe dynamic equilibrium. Only one is correct, and the other two make the exact errors that lose marks.",
+      "callout": "Spot the error and you'll never make it.",
+      "image": "m5L4ThreeStudents",
+      "durationInFrames": 690,
+      "caption": "Three student descriptions of equilibrium; only one is correct.",
+      "voiceover": {
+        "text": "OK, this lesson is a consolidation, no new content, just the deep understanding that turns a band four answer into a band six. So let's start with a challenge. Three students are asked what's happening at the molecular level at dynamic equilibrium. Student A says both reactions are running at equal rates, with concentrations staying constant. Student B says the concentrations of reactants and products become equal. Student C says the reaction has stopped, everything is frozen. Only one of them is right, and the other two are making the two most common mistakes in the whole module. Back in 1888, van 't Hoff nailed the definition, the forward and reverse reactions proceed at the same time at equal rates. Today we'll see exactly why student A has it, and precisely where B and C go wrong, so you never make those errors yourself."
+      }
+    },
+    {
+      "id": "concept-escalator",
+      "type": "concept",
+      "heading": "The escalator analogy",
+      "body": "Two escalators between floors model equal rates with constant, unequal numbers.",
+      "bullets": [
+        {
+          "text": "Floor 1 is reactants, Floor 2 is products; up-escalator is the forward rate."
+        },
+        {
+          "text": "Fifty people up and fifty down each minute: equal rates, but huge ongoing movement."
+        },
+        {
+          "text": "Two hundred on Floor 1, one hundred and fifty on Floor 2: constant, but not equal."
+        }
+      ],
+      "secondary": "Equilibrium is macroscopically static but microscopically dynamic. The numbers per floor hold steady precisely because the two flows cancel, not because anyone has stopped.",
+      "callout": "Equal flow, steady numbers, never frozen.",
+      "durationInFrames": 1140,
+      "caption": "Escalator analogy: equal forward/reverse flow, constant but unequal floor numbers.",
+      "voiceover": {
+        "text": "Here's an analogy that makes the right answer obvious. Picture a shopping centre with an up escalator and a down escalator between two floors. At peak hour, the number of people on Floor one holds steady at two hundred, and Floor two holds steady at one hundred and fifty. Does that mean nobody's moving? Of course not. Every minute fifty people ride up and fifty ride down. The net change is zero, but the activity is enormous and constant. Map it onto chemistry. Floor one is the reactants, Floor two is the products. The up escalator rate is the forward reaction rate, the down escalator rate is the reverse. Equal flows mean equal forward and reverse rates. And here's the part students miss, the numbers on each floor are constant but not equal, two hundred versus one hundred and fifty. That's exactly dynamic equilibrium, macroscopically static but microscopically dynamic. The floor numbers hold steady because the two flows cancel, not because anyone stopped walking."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Description level",
+          "What you see"
+        ],
+        "rows": [
+          [
+            "Macroscopic",
+            "Concentrations constant, looks frozen"
+          ],
+          [
+            "Microscopic",
+            "Both reactions running at equal rates"
+          ],
+          [
+            "Common error B",
+            "Says concentrations are equal (wrong)"
+          ],
+          [
+            "Common error C",
+            "Says reaction has stopped (wrong)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Dynamic equilibrium: forward and reverse rates equal; concentrations constant, not equal."
+        },
+        {
+          "text": "Macroscopically static: bulk properties like colour and concentration don't change."
+        },
+        {
+          "text": "Microscopically dynamic: individual molecules keep converting both ways."
+        },
+        {
+          "text": "Equilibrium position: which side is favoured, set by Keq, independent of starting direction."
+        }
+      ],
+      "callout": "Constant, not equal; busy, not stopped.",
+      "durationInFrames": 990,
+      "caption": "Dynamic equilibrium, macroscopically static, microscopically dynamic, equilibrium position.",
+      "voiceover": {
+        "text": "Let's pin the language down, because precise words are what earn the marks here. Dynamic equilibrium means the forward and reverse rates are equal, so concentrations stay constant, but constant is not the same as equal. Macroscopically static means the bulk properties you can observe, colour, pressure, concentration, simply don't change. Microscopically dynamic means that underneath, individual molecules are still converting in both directions, billions of times a second. And the equilibrium position is just which side is favoured, set by the equilibrium constant. A subtle but important point, that position is the same whether you start from all reactants or all products, as long as the atoms present are the same. Equilibrium doesn't care which direction you came from."
+      }
+    },
+    {
+      "id": "concept-graphs",
+      "type": "concept",
+      "heading": "Reading concentration–time graphs",
+      "body": "Equilibrium is where the curves go flat, not where they cross.",
+      "bullets": [
+        {
+          "text": "Reactant curves fall and level off; product curves rise and level off."
+        },
+        {
+          "text": "Equilibrium is the moment ALL curves become horizontal together."
+        },
+        {
+          "text": "The crossing point only matters if Keq happens to be about 1."
+        }
+      ],
+      "secondary": "Disturbances show as sudden jumps: adding reactant spikes its curve up; removing product drops its curve. The system then re-levels at new constant values, with Keq unchanged if temperature held.",
+      "callout": "Flat lines mark equilibrium, not crossing lines.",
+      "durationInFrames": 1140,
+      "caption": "Equilibrium on a concentration–time graph is where curves flatten, not where they cross.",
+      "voiceover": {
+        "text": "Now the graph that trips people up, the concentration versus time graph. It shows the same approach to equilibrium, but in terms of what you can actually measure in a flask. The reactant curves start high and fall, then level off at a constant value. The product curves start low and rise, then level off too. And here's the key, equilibrium is the moment when all the curves become horizontal at the same time. It is not the point where the reactant and product curves cross. They only cross at equal concentrations, which happens just in the special case where the equilibrium constant is about one. In general the curves might never cross at all. When you disturb the system, you see a sudden jump, adding reactant spikes its curve straight up, removing a product drops its curve straight down. Then the system re-levels at new constant values, and as long as the temperature is unchanged, the equilibrium constant stays the same."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "r",
+            "label": "Reactant curve falls"
+          },
+          {
+            "id": "p",
+            "label": "Product curve rises"
+          },
+          {
+            "id": "eq",
+            "label": "All curves flatten = equilibrium"
+          }
+        ],
+        "edges": [
+          {
+            "from": "r",
+            "to": "eq"
+          },
+          {
+            "from": "p",
+            "to": "eq"
+          }
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Fix the student's answer",
+      "question": "A student writes: 'When N₂ + 3H₂ ⇌ 2NH₃ reaches equilibrium in a sealed flask, the concentrations of N₂, H₂ and NH₃ are all equal, and the reaction has stopped.' Identify two errors and correct them.",
+      "coachNote": "Hunt for the 'equal concentrations' trap and the 'reaction stopped' trap.",
+      "steps": [
+        "Error 1: 'concentrations are all equal'. It's the RATES that are equal; concentrations are constant and set by Keq.",
+        "For this reaction Keq ≈ 6 × 10⁵, so NH₃ vastly outnumbers N₂ and H₂ at equilibrium.",
+        "Error 2: 'the reaction has stopped'. Both forward and reverse reactions continue at equal, non-zero rates.",
+        "Corrected: concentrations are each constant but not equal, and both reactions run on at equal rates.",
+        "Answer: equal rates not equal amounts; nothing has stopped ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "Two fixes: 'equal' → constant (Keq sets amounts); 'stopped' → both reactions continue.",
+      "voiceover": {
+        "text": "Let's fix a flawed answer, the exact kind the exam asks you to correct. A student writes, when nitrogen plus hydrogen makes ammonia at equilibrium in a sealed flask, the concentrations of all three are equal, and the reaction has stopped. There are two errors. Error one, concentrations are all equal. No, it's the rates that are equal, the concentrations are merely constant, and their actual values are set by the equilibrium constant. For this reaction the equilibrium constant is about six times ten to the five, enormously product-favoured, so the ammonia massively outnumbers the nitrogen and hydrogen, nowhere near equal. Error two, the reaction has stopped. That describes static equilibrium. At dynamic equilibrium both the forward and reverse reactions are still running, at equal non-zero rates. So the corrected version, the concentrations are each constant but not necessarily equal to each other, depending on the equilibrium constant, and both reactions continue at equal rates, the system is dynamic at the molecular level even though it looks unchanged."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Proof in a salt solution",
+      "question": "A crystal of NaCl labelled with radioactive ²⁴Na is dropped into a saturated NaCl solution. Total dissolved NaCl stays constant, yet ²⁴Na appears in solution. What does this prove, and what's a limit of the analogy?",
+      "coachNote": "Constant total = equilibrium; the tracer appearing = ongoing exchange.",
+      "steps": [
+        "The system is NaCl(s) ⇌ Na⁺(aq) + Cl⁻(aq), a saturated solution at equilibrium.",
+        "Total dissolved NaCl is constant, so dissolution rate equals recrystallisation rate.",
+        "²⁴Na crossing into solution shows ions are still leaving and rejoining the crystal.",
+        "So the system is dynamic, not static, despite looking unchanged.",
+        "Limit: this is a solid–liquid equilibrium; gas-phase equilibria exchange by collisions, not a surface. ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "²⁴Na tracer in saturated NaCl proves ongoing dissolution/recrystallisation (dynamic).",
+      "voiceover": {
+        "text": "Now real evidence, not just an analogy. Take a saturated salt solution with a solid crystal sitting in it, the equilibrium solid sodium chloride in balance with dissolved sodium and chloride ions. It looks like nothing's happening. Now drop in a crystal of sodium chloride that's been labelled with radioactive sodium twenty-four. Here's the result. The total amount of dissolved salt does not change, but over time the radioactive sodium starts showing up in the solution. What does that prove? The constant total tells us we're at equilibrium, the dissolution rate equals the recrystallisation rate. But the radioactive label crossing into solution can only happen if ions are genuinely still leaving the crystal and rejoining it. So the system is dynamic, not static, even though it looks frozen. One honest limit of this example, it's a solid dissolving in a liquid, a heterogeneous equilibrium with a surface. A gas-phase equilibrium has no surface, it exchanges through collisions instead, but the same equal-rates idea applies."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The four classic errors",
+      "body": "Trap 1: 'equal amounts of reactants and products'. It's equal rates; amounts depend on Keq.",
+      "secondary": "Trap 2: 'the reaction stops'. Both reactions run at equal non-zero rates. Trap 3: 'a catalyst increases yield'. It changes rate only, never Keq. Trap 4: 'equilibrium only forms from the reactant side'. The same position is reached from either direction.",
+      "mistakeTag": "The four myths examiners hunt for",
+      "callout": "Equal rates; never stops; catalyst = rate; either direction.",
+      "durationInFrames": 1230,
+      "caption": "Four myths: equal amounts, reaction stops, catalyst raises yield, one-way approach.",
+      "voiceover": {
+        "text": "Here are the four myths examiners hunt for, lock in the correction for each. Myth one, equal amounts of reactants and products. The fix, it's the rates that are equal, the amounts are whatever the equilibrium constant dictates, often wildly unequal. Myth two, the reaction stops. The fix, both reactions keep running at equal non-zero rates, proven by that radioactive tracer. Myth three, adding a catalyst increases the yield. The fix, a catalyst speeds you to equilibrium but leaves the position and the equilibrium constant untouched, since the constant depends only on temperature. Myth four, equilibrium can only be reached starting from reactants. The fix, you reach exactly the same equilibrium position from either side, as long as the atoms present are the same, because equilibrium is a property of composition and temperature, not of history. Carry those four corrections into every extended response."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Fe³⁺(aq) + SCN⁻(aq) ⇌ FeSCN²⁺(aq) sits deep red at equilibrium. You add more Fe³⁺. Predict the colour change, explain it with collision theory, and say whether Keq changes.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Adding Fe³⁺ raises [Fe³⁺], so the forward collision frequency rises.",
+        "Forward rate now exceeds reverse rate, so the system shifts right.",
+        "More FeSCN²⁺ forms, so the solution goes deeper red.",
+        "Keq is unchanged: only temperature changes Keq, not concentration.",
+        "Answer: deeper red, shift right, Keq unchanged ✓"
+      ],
+      "durationInFrames": 1200,
+      "caption": "Adding Fe³⁺ shifts FeSCN²⁺ right (deeper red); Keq unchanged.",
+      "voiceover": {
+        "text": "Quick check. The iron thiocyanate equilibrium sits deep blood-red at equilibrium, that red colour is the iron thiocyanate complex. You add more iron three ions. Predict the colour change, explain it with collision theory, and say whether the equilibrium constant changes. Pause and reason it through. Right, let's check it. Adding iron three ions raises their concentration, so the frequency of effective forward collisions increases. That means the forward rate now beats the reverse rate, so the system shifts to the right. More of the red complex forms, so the solution goes a deeper red. And the equilibrium constant? It does not change. Only temperature can change the equilibrium constant, never a concentration change. The position shifted, but the constant held."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "At equilibrium the RATES are equal; concentrations are constant, not equal.",
+        "Macroscopically static, microscopically dynamic, never stopped.",
+        "On a concentration–time graph, equilibrium is where curves flatten, not cross.",
+        "A catalyst changes rate only; the same equilibrium is reached from either direction.",
+        "Only temperature changes Keq."
+      ],
+      "finalPrompt": "Writing about equilibrium? Check you didn't say 'equal amounts' or 'stopped'.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: equal rates, macro/micro, graph reading, catalyst/direction, Keq.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, at equilibrium the rates are equal, while the concentrations are constant, not equal. Second, equilibrium is macroscopically static but microscopically dynamic, it never actually stops. Third, on a concentration versus time graph, equilibrium is where the curves flatten out together, not where they cross. Fourth, a catalyst changes only the rate, and the same equilibrium is reached from either direction. And fifth, only temperature changes the equilibrium constant. Every time you write about equilibrium, do a quick check, did I accidentally say equal amounts, or did I imply the reaction stopped? Fix those two and your answers jump a band. See you next lesson."
+      }
+    }
+  ]
+}

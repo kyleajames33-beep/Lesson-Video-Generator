@@ -1,0 +1,254 @@
+{
+  "title": "Calorimetry, Combustion",
+  "subtitle": "Measuring the heat a fuel releases",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Lesson 2",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Conduct an investigation to measure the molar enthalpy of combustion of a fuel using calorimetry",
+    "Apply q = mcΔT to determine heat released and calculate molar enthalpy of combustion"
+  ],
+  "lessonIntent": "Students can use calorimetry data and q = mcΔT to calculate the molar enthalpy of combustion of a fuel.",
+  "examSkill": "Calculate heat absorbed by water with q = mcΔT, convert to molar enthalpy of combustion by dividing by moles of fuel, and evaluate sources of experimental error.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson `subjects/chemistry/year11/module4/lesson02.html`. Anchor: fuel energy density. Worked example: ethanol (m=0.72 g, M=46.07, n=0.01562 mol; water 200.0 g, ΔT=11.7; q=9.781 kJ; ΔHc=-626 kJ/mol), verbatim from site. WE2: % error 43.3% from heat loss + incomplete combustion. Misconception: q is the reaction enthalpy (it's heat gained by water; divide by moles for molar ΔH). q=mcΔT introduced here; reused L3/L4. Calorimeter diagram = image ref (component not yet built).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Calorimetry, Combustion. Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Calorimetry. Combustion. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L2/title.cc5b3db1217e.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "How do we measure the energy in a fuel?",
+      "body": "Petrol, ethanol, hydrogen, every fuel stores chemical energy. But how do you actually put a number on it? You burn it under a beaker of water and watch how hot the water gets.",
+      "bullets": [
+        {
+          "text": "Burn a known mass of fuel.",
+          "at": 5
+        },
+        {
+          "text": "Capture the heat in a known mass of water.",
+          "at": 10
+        },
+        {
+          "text": "Measure the water's temperature rise.",
+          "at": 16
+        },
+        {
+          "text": "That rise tells you the energy released.",
+          "at": 22
+        }
+      ],
+      "callout": "Calorimetry turns a temperature change into an energy measurement.",
+      "image": "m4l2HookFuel",
+      "durationInFrames": 1110,
+      "caption": "Calorimetry measures fuel energy by capturing heat in water.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 870,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's a practical question. Petrol, ethanol, hydrogen — every fuel stores chemical energy. But how do you actually put a number on it? The answer is calorimetry. You burn a known mass of the fuel, capture the heat in a known mass of water sitting above it, and measure how much the water's temperature rises. That temperature rise is your window into the energy released. Master this and you can measure the energy in any fuel.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L2/hook.50335eb613a0.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Heat captured, then heat per mole",
+      "body": "Calorimetry is a two-step idea: first find the heat the water gained, then convert it to the energy per mole of fuel.",
+      "bullets": [
+        {
+          "text": "Step 1: heat gained by the water, q.",
+          "at": 5
+        },
+        {
+          "text": "Step 2: divide by moles of fuel burned.",
+          "at": 11
+        },
+        {
+          "text": "Combustion releases heat, so ΔH is negative.",
+          "at": 18
+        },
+        {
+          "text": "The water is the messenger, it carries the reaction's heat.",
+          "at": 25
+        }
+      ],
+      "callout": "Find q first. Then convert to energy per mole.",
+      "durationInFrames": 1350,
+      "caption": "Two steps: heat gained by water, then energy per mole of fuel.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1110,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "The whole method is two steps. Step one: find the heat the water gained — we call it q. Step two: convert that to the energy released per mole of fuel, by dividing by the moles you burned. Think of the water like a messenger carrying the heat out of the reaction so you can measure it. But unlike a perfect messenger, some heat always leaks to the surroundings — which is exactly why measured answers come out a little low. And because combustion releases heat, the enthalpy of combustion is always negative.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L2/concept.1bee8697091a.mp3"
+      },
+      "diagram": {
+        "type": "calorimeter"
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "q = mcΔT, then divide by moles",
+      "body": "Two equations do all the work in combustion calorimetry. The first finds the heat; the second turns it into a molar value.",
+      "bullets": [
+        {
+          "text": "q = mcΔT, heat gained by the water (in J).",
+          "at": 5
+        },
+        {
+          "text": "m = mass of water (g), c = 4.18 J g⁻¹ °C⁻¹, ΔT = temp rise.",
+          "at": 12
+        },
+        {
+          "text": "n = m(fuel) / M, moles of fuel burned.",
+          "at": 20
+        },
+        {
+          "text": "ΔHc = −q / n, negative because heat is released.",
+          "at": 27
+        }
+      ],
+      "callout": "q = mcΔT for the heat; ΔHc = −q/n for the molar enthalpy.",
+      "durationInFrames": 1290,
+      "caption": "q = mcΔT finds the heat; ΔHc = −q/n converts to per-mole.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1050,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Two equations do all the work. The first is q equals m c delta T — the heat gained by the water, in joules. M is the mass of the water in grams, c is the specific heat capacity, four-point-one-eight joules per gram per degree, and delta T is the temperature rise. The second equation converts that heat to a molar value: delta H of combustion equals minus q over n, where n is the moles of fuel you burned. The minus sign is there because combustion releases energy — delta H comes out negative.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L2/formula.4c3b8da02d34.mp3"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Molar enthalpy of combustion of ethanol",
+      "question": "Burning 0.72 g of ethanol (M = 46.07 g mol⁻¹) raises the temperature of 200.0 g of water from 19.5 °C to 31.2 °C. Calculate the molar enthalpy of combustion of ethanol.",
+      "coachNote": "Find q with mcΔT, find moles of fuel, then divide: ΔHc = −q/n.",
+      "unitCancel": {
+        "left": "kJ",
+        "right": "mol",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: m(water) = 200.0 g, c = 4.18 J g⁻¹ °C⁻¹, m(fuel) = 0.72 g, M = 46.07.",
+        "Find: molar enthalpy of combustion, ΔHc.",
+        "ΔT = 31.2 − 19.5 = 11.7 °C.",
+        "Formula: q = mcΔT.",
+        "Substitute: q = 200.0 × 4.18 × 11.7 = 9781 J = 9.781 kJ.",
+        "Moles of fuel: n = m/M = 0.72 / 46.07 = 0.01562 mol.",
+        "Apply ΔHc = −q/n = −9.781 / 0.01562.",
+        "Answer: ΔHc = 626 kJ mol⁻¹ released (negative, exothermic)."
+      ],
+      "durationInFrames": 1620,
+      "caption": "ΔHc(ethanol) = −9.781 kJ / 0.01562 mol = −626 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Let's measure the molar enthalpy of combustion of ethanol. Burning zero-point-seven-two grams heats two hundred grams of water from nineteen-point-five to thirty-one-point-two degrees. First the temperature rise: thirty-one-point-two minus nineteen-point-five is eleven-point-seven degrees. Now q equals m c delta T — two hundred times four-point-one-eight times eleven-point-seven — that's nine thousand seven hundred and eighty-one joules, or nine-point-seven-eight-one kilojoules. Next, moles of ethanol: mass over molar mass, zero-point-seven-two over forty-six-point-zero-seven, is zero-point-zero-one-five-six-two moles. Finally, delta H of combustion is minus q over n — minus nine-point-seven-eight-one over zero-point-zero-one-five-six-two — which gives minus six hundred and twenty-six kilojoules per mole.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L2/worked-example.ee7551643bd2.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"q is the enthalpy of the reaction\"",
+      "body": "Students often think: \"I calculated q with mcΔT, so q is the answer, that's ΔH.\" That's the wrong instinct. q is only the heat gained by the water, for the exact mass of fuel you happened to burn. The correct rule: enthalpy of combustion is per mole, so you must divide q by the moles of fuel. Skipping that step leaves you with joules of heat, not kJ per mole.",
+      "callout": "q is the heat gained by water. ΔH is per mole, always divide by n.",
+      "mistakeTag": "q is not ΔH",
+      "durationInFrames": 1320,
+      "caption": "q is heat gained by the water; molar ΔH needs dividing by moles of fuel.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the trap. Students calculate q with m c delta T and think they're done — that q is the enthalpy of the reaction. Wrong instinct. q is only the heat gained by the water, for whatever mass of fuel you happened to burn. The correct rule: enthalpy of combustion is defined per mole. So you must divide q by the moles of fuel. Skip that and you're left with joules of heat, not kilojoules per mole — and that's a different quantity entirely.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L2/misconception.9d23422cd763.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "An experiment gives a molar enthalpy of combustion of −412 kJ mol⁻¹ for a fuel whose accepted value is −726 kJ mol⁻¹. Calculate the percentage error and give two reasons the experimental value is too low.",
+      "pausePrompt": "Pause: percentage error formula, then think about where heat goes.",
+      "answerSteps": [
+        "% error = |experimental − accepted| / |accepted| × 100.",
+        "= |−412 − (−726)| / |−726| × 100.",
+        "= 314 / 726 × 100 = 43.3%.",
+        "Reason 1: heat lost to the surroundings, not the water.",
+        "Answer = 43.3% error; causes: heat loss to surroundings and incomplete combustion."
+      ],
+      "durationInFrames": 1444,
+      "caption": "% error = 314/726 × 100 = 43.3%. Heat loss + incomplete combustion.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 600,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Your turn. An experiment gives a molar enthalpy of combustion of minus four hundred and twelve kilojoules per mole, but the accepted value is minus seven hundred and twenty-six. Find the percentage error and give two reasons it's too low. Pause now and try. Percentage error is the difference over the accepted value, times one hundred. The difference is three hundred and fourteen, over seven hundred and twenty-six, times one hundred — forty-three-point-three percent. Why so low? Two classic reasons: heat lost to the surroundings instead of the water, and incomplete combustion of the fuel. Both mean the water captured less heat than the reaction truly released.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L2/quick-check.7534b95eb510.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Always check: have you divided q by moles? That's what makes it molar enthalpy.",
+      "points": [
+        "Calorimetry captures a reaction's heat in water and reads it from the temperature rise.",
+        "q = mcΔT gives the heat gained by the water, in joules.",
+        "ΔHc = −q/n converts that heat to energy per mole of fuel (negative for combustion).",
+        "q is NOT the molar enthalpy, you must divide by moles of fuel.",
+        "Experimental values are usually too low: heat loss and incomplete combustion."
+      ],
+      "durationInFrames": 1560,
+      "caption": "Two equations, one decision rule, two error sources.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways. One: calorimetry captures a reaction's heat in water and reads it from the temperature rise. Two: q equals m c delta T gives the heat gained by the water, in joules. Three: delta H of combustion equals minus q over n — that converts the heat to energy per mole of fuel, and it's negative for combustion. Four: q is not the molar enthalpy on its own — you must divide by the moles of fuel. Five: experimental values come out too low because of heat loss to the surroundings and incomplete combustion. Decision rule: find q with m c delta T first, then divide by moles for the molar enthalpy.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L2/summary.d14918ebc693.mp3"
+      }
+    }
+  ]
+}

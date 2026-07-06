@@ -1,0 +1,228 @@
+{
+  "title": "Hydrocarbon Reactions: Combustion, Substitution, Addition",
+  "subtitle": "Classify by the bond being targeted, then predict the product",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 5",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "investigate, write equations and construct models to represent the reactions of unsaturated hydrocarbons when added to a range of chemicals, including but not limited to:",
+    "investigate, write equations and construct models to represent the reactions of saturated hydrocarbons when substituted with halogens"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": ["CH12-14", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "What are the products of reactions of hydrocarbons and how do they react?",
+  "lessonIntent": "Students can classify a hydrocarbon reaction as combustion, substitution, addition or polymerisation, and write a balanced equation for each.",
+  "examSkill": "Identify saturated versus unsaturated, match structure and reagent to the reaction family, and write the polymer repeat unit with the double bond opened.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the four reactions of hydrocarbons and how to tell them apart. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Hydrocarbon Reactions: Combustion, Substitution, Addition (Year 12 Chemistry, Module 7, Lesson 5)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One tube clears, one stays orange",
+      "body": "Two colourless gases bubble into bromine water. One tube turns clear instantly; the other stays orange. The bonding tells you which is which.",
+      "callout": "What is different inside each molecule?",
+      "durationInFrames": 690,
+      "caption": "An alkene decolourises bromine water; an alkane does not.",
+      "voiceover": {
+        "text": "OK, picture two test tubes of orange bromine water. You bubble a colourless gas through each. One tube turns completely clear in seconds. The other stays orange, no change at all. Same setup, same reagent, opposite results. What's different about the two gases? It comes down to the bonding inside each molecule, exactly what we built up last lesson. The gas that cleared the bromine water has a reactive pi bond. The one that stayed orange doesn't. Today we organise all of hydrocarbon chemistry around that idea, classifying every reaction by the bond being targeted, so that combustion, substitution, addition, and polymerisation stop feeling like a list to memorise and start feeling like one system."
+      }
+    },
+    {
+      "id": "concept-classify",
+      "type": "concept",
+      "heading": "Classify by the bond",
+      "body": "Stop memorising isolated equations. Sort every reaction by the hydrocarbon class and the bond involved.",
+      "bullets": [
+        {"text": "All hydrocarbons combust: burn in oxygen to give carbon oxides and water."},
+        {"text": "Alkanes mainly substitute: a halogen replaces an H, but only under UV light."},
+        {"text": "Alkenes mainly add: the reactive C=C pi bond lets reagents add across it."}
+      ],
+      "secondary": "First identify the class. Single bonds only point to combustion or substitution; a C=C opens up addition and bromine-water decolourisation.",
+      "callout": "Identify the class first; the available reactions follow.",
+      "durationInFrames": 1020,
+      "caption": "All combust; alkanes substitute; alkenes add. Class first, then reaction.",
+      "voiceover": {
+        "text": "Here's the organising principle, and it saves you a lot of memorising. Don't learn isolated equations, classify every reaction by the hydrocarbon class and the bond it targets. Three patterns cover most of it. One, all hydrocarbons combust, they all burn in oxygen to give carbon oxides and water. Two, alkanes mainly substitute, a halogen can replace a hydrogen, but only when ultraviolet light supplies the energy. Three, alkenes mainly add, because their reactive carbon to carbon double bond, that exposed pi bond, lets reagents add straight across it. So your very first move on any reaction question is to identify the class. If the molecule has only single bonds, expect combustion or substitution. If it has a double bond, addition and the bromine water colour change become available."
+      }
+    },
+    {
+      "id": "concept-combustion",
+      "type": "concept",
+      "heading": "Complete vs incomplete combustion",
+      "body": "Combustion is the most important hydrocarbon reaction economically, and the oxygen supply decides the products.",
+      "bullets": [
+        {"text": "Excess oxygen: complete combustion gives only CO2 and water, a clean blue flame."},
+        {"text": "Limited oxygen: incomplete combustion gives CO and/or soot, a yellow sooty flame."},
+        {"text": "CO is toxic; soot harms the lungs and air quality."}
+      ],
+      "secondary": "Do not write that incomplete combustion is cleaner because it makes less CO2. It is more dangerous, because it produces carbon monoxide and particulates.",
+      "callout": "Plenty of oxygen, clean CO2; starved of oxygen, toxic CO and soot.",
+      "durationInFrames": 1050,
+      "caption": "Complete: CO2 + H2O, blue flame. Incomplete: CO and soot, yellow flame.",
+      "voiceover": {
+        "text": "Let's start with combustion, the most economically important hydrocarbon reaction, and the one students answer too vaguely. The amount of oxygen decides the products. With excess oxygen, you get complete combustion, producing only carbon dioxide and water, burning with a clean blue flame. With limited oxygen, you get incomplete combustion, producing carbon monoxide, and sometimes solid carbon soot, along with water, burning with a yellow, sooty, luminous flame. Now the trap to avoid. Don't ever write that incomplete combustion is cleaner because it makes less carbon dioxide. It's actually more dangerous, because carbon monoxide is toxic, it binds to your blood and blocks oxygen transport, and the soot particles damage your lungs and the air. Less carbon dioxide does not make it safer."
+      }
+    },
+    {
+      "id": "concept-substitution",
+      "type": "concept",
+      "heading": "Substitution of alkanes",
+      "body": "Alkanes are unreactive, but a halogen can replace a hydrogen when UV light initiates the reaction.",
+      "bullets": [
+        {"text": "Reagent: Cl2 or Br2; condition: UV light as the energy source."},
+        {"text": "One H is replaced by one halogen atom, leaving the carbon framework intact."},
+        {"text": "Two products form: the haloalkane and a hydrogen halide (HX)."}
+      ],
+      "secondary": "The classic example is methane plus chlorine: CH4 + Cl2 gives CH3Cl + HCl under UV. UV light is an energy source, not a catalyst.",
+      "callout": "Replace one H with one halogen; produce a haloalkane plus HX.",
+      "durationInFrames": 1020,
+      "caption": "CH4 + Cl2 -> CH3Cl + HCl, under UV light, by substitution.",
+      "voiceover": {
+        "text": "Next, substitution, the reaction of alkanes. Alkanes are pretty unreactive, because they only have strong, unexposed sigma bonds. But under the right conditions, a halogen can replace one of their hydrogens. The reagent is chlorine or bromine, and the essential condition is ultraviolet light, which supplies the energy to get things started. In the reaction, one hydrogen atom is swapped for one halogen atom, while the carbon skeleton stays intact, and crucially, two products form, the haloalkane and a hydrogen halide. The classic example is methane plus chlorine, giving chloromethane plus hydrogen chloride, under ultraviolet light. Notice it's substitution, not addition, because methane has no double bond for anything to add across, one atom simply replaces another. And note the UV light is an energy source, we'll see why that wording matters later."
+      }
+    },
+    {
+      "id": "concept-addition-test",
+      "type": "concept",
+      "heading": "Addition and the bromine water test",
+      "body": "Alkenes add reagents across the C=C. The pi bond breaks and new single bonds form, with nothing lost.",
+      "image": "m7L5BromineWaterTest",
+      "bullets": [
+        {"text": "Br2 adds across C=C, so orange bromine water decolourises (test for unsaturation)."},
+        {"text": "H2 adds to give an alkane; H2O adds to give an alcohol."},
+        {"text": "Two reactants always make one product; the double bond disappears."}
+      ],
+      "secondary": "Decolourising bromine water is the standard test for a C=C. The orange colour vanishes because Br2 is consumed by addition.",
+      "callout": "Two reactants, one product, the double bond gone.",
+      "durationInFrames": 1050,
+      "caption": "Alkenes add Br2 (decolourising bromine water), H2, or H2O across the C=C.",
+      "voiceover": {
+        "text": "Now addition, the signature reaction of alkenes. The pi bond of the double bond breaks, and a reagent adds across the two carbons, forming new single bonds, with no atoms lost. Bromine adds across the carbon to carbon double bond, which is exactly why orange bromine water decolourises when you bubble an alkene through it. The bromine is consumed, so the colour disappears, and that colour change is the standard test for unsaturation, for a carbon to carbon double bond. Other reagents add too, hydrogen adds to give an alkane, and water adds to give an alcohol. The defining feature of every addition reaction is that two reactants combine into a single product, and the double bond disappears in the process. That's the back to back with substitution, where you got two products instead of one."
+      }
+    },
+    {
+      "id": "formula-polymerisation",
+      "type": "concept",
+      "heading": "Addition polymerisation",
+      "body": "Polymerisation is repeated addition. Many alkene monomers open their double bonds and link into one long chain.",
+      "bullets": [
+        {"text": "The C=C in each monomer opens, forming new C-C single bonds between units."},
+        {"text": "Ethene to polyethene: n CH2=CH2 -> [-CH2-CH2-]n."},
+        {"text": "No atoms are lost; the repeat unit has the same atoms as the monomer."}
+      ],
+      "secondary": "The repeat unit must show the opened bond and the subscript n. Writing (CH2=CH2)n is wrong: the double bond has opened.",
+      "callout": "Open the double bond, then show the repeat unit with subscript n.",
+      "durationInFrames": 1020,
+      "caption": "n CH2=CH2 -> [-CH2-CH2-]n; the double bond opens into the chain.",
+      "voiceover": {
+        "text": "The fourth reaction is addition polymerisation, which is really just addition done over and over. Many small alkene molecules, called monomers, each open their double bond and link to their neighbours, building one very long carbon chain. For ethene, the monomer is C H two double bond C H two, and the polymer is polyethene, written as the repeat unit, an open bracket, minus C H two minus C H two minus, close bracket, subscript n. The brackets show the repeating pattern, and the n means it repeats many times. No atoms are lost, so the repeat unit contains the same atoms as the monomer. The critical detail, the repeat unit must show that the double bond has opened, and it must carry the subscript n. Writing the polymer as just the monomer in brackets, with the double bond still there, is wrong and loses the mark."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Balance a combustion equation",
+      "question": "Write the balanced equation for complete combustion of butane, C4H10.",
+      "coachNote": "Balance carbon, then hydrogen, then oxygen last.",
+      "steps": [
+        "Skeleton: C4H10 + O2 -> CO2 + H2O",
+        "Balance C: 4 carbons -> 4 CO2",
+        "Balance H: 10 hydrogens -> 5 H2O",
+        "Count O on the right: 8 + 5 = 13 O atoms, so O2 = 13/2",
+        "Double through: 2C4H10 + 13O2 -> 8CO2 + 10H2O ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "2C4H10 + 13O2 -> 8CO2 + 10H2O.",
+      "voiceover": {
+        "text": "Let's balance a combustion equation cleanly, because the order matters. Complete combustion of butane, C four H ten. Step one, write the skeleton, butane plus oxygen gives carbon dioxide plus water. Step two, balance carbon first, four carbons means four carbon dioxide. Step three, balance hydrogen next, ten hydrogens means five water. Step four, leave oxygen for last, count the oxygen atoms on the right, eight from the carbon dioxide plus five from the water is thirteen, so you need thirteen over two oxygen molecules. Since we want whole numbers, double everything through. The balanced equation is two butane plus thirteen oxygen gives eight carbon dioxide plus ten water. Carbon, then hydrogen, then oxygen, and double up if you land on a fraction. Balancing oxygen first just sends you round in circles."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Identify the reaction type",
+      "question": "Classify each: (a) C2H4 + Br2  (b) CH4 + Cl2 (UV)  (c) n CH2=CH2.",
+      "coachNote": "Saturated or unsaturated? Then match to the family.",
+      "steps": [
+        "(a) Alkene + Br2: pi bond opens, Br adds across C=C -> addition (C2H4Br2)",
+        "(b) Alkane + Cl2 under UV: one H replaced -> substitution (CH3Cl + HCl)",
+        "(c) Many alkene monomers link -> addition polymerisation ([-CH2-CH2-]n)",
+        "Check: addition gives one product; substitution gives two products",
+        "Answer: (a) addition, (b) substitution, (c) polymerisation ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "(a) addition, (b) substitution, (c) addition polymerisation.",
+      "voiceover": {
+        "text": "Now a classification drill. For each, decide saturated or unsaturated, then match the family. Part a, ethene plus bromine. Ethene is an alkene with a double bond, so the pi bond opens and bromine adds across it. That's addition, giving C two H four B r two. Part b, methane plus chlorine under ultraviolet light. Methane is a saturated alkane with no double bond, so nothing can add. Instead, one hydrogen is replaced by chlorine. That's substitution, giving chloromethane plus hydrogen chloride. Part c, many ethene monomers. Each opens its double bond and links into a chain, so that's addition polymerisation, giving the polyethene repeat unit. A quick self-check, addition gives a single product, substitution gives two products. So, addition, substitution, and polymerisation."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three reaction traps",
+      "body": "Trap 1: thinking incomplete combustion is cleaner. It makes toxic CO and soot, so it is more dangerous, not safer.",
+      "secondary": "Trap 2: writing the ethene polymer as (CH2=CH2)n. The double bond opens, so the repeat unit is [-CH2-CH2-]n. Trap 3: calling methane plus chlorine an addition reaction. Methane has no double bond, so it is substitution.",
+      "mistakeTag": "Where reaction marks vanish",
+      "callout": "Incomplete is dangerous, open the double bond, no C=C means substitution.",
+      "durationInFrames": 1230,
+      "caption": "Incomplete combustion is hazardous; open the double bond; methane substitutes.",
+      "voiceover": {
+        "text": "Three traps. Trap one, thinking incomplete combustion is somehow cleaner because it makes less carbon dioxide. It produces carbon monoxide and soot, so it's more dangerous, not safer, and that's the point markers want you to make. Trap two, writing the polymer of ethene as the monomer in brackets, with the double bond still in there. The double bond opens during polymerisation, so the repeat unit is open bracket, minus C H two minus C H two minus, close bracket n, with single bonds and the subscript n. Trap three, calling methane plus chlorine an addition reaction. Methane has no double bond, there's nothing for chlorine to add across, so it must be substitution, where one hydrogen is replaced and a hydrogen halide is also produced."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Ethene reacts with HCl to form chloroethane. Name the reaction type and write the equation.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Ethene is an alkene with a reactive C=C double bond",
+        "H and Cl add across the double bond, one to each carbon",
+        "Two reactants combine into one product, with nothing lost",
+        "So this is an addition reaction (hydrohalogenation)",
+        "Equation: C2H4 + HCl -> CH3CH2Cl ✓"
+      ],
+      "durationInFrames": 1200,
+      "caption": "C2H4 + HCl -> CH3CH2Cl is an addition reaction.",
+      "voiceover": {
+        "text": "Quick check. Ethene reacts with hydrogen chloride to form chloroethane. Name the reaction type and write the equation. Pause and work it through. Right. Ethene is an alkene, so it has a reactive carbon to carbon double bond. The hydrogen chloride adds across that double bond, with the hydrogen going to one carbon and the chlorine to the other. Two reactants combine into a single product, with nothing lost, which is the signature of an addition reaction. This particular one, adding a hydrogen halide, is sometimes called hydrohalogenation. The balanced equation is ethene, C two H four, plus H C L, gives chloroethane, C H three C H two C L. The giveaway that it's addition, not substitution, is that there's only one product, and no hydrogen halide is left over."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Classify by the bond: all combust, alkanes substitute, alkenes add.",
+        "Complete combustion gives CO2 and water; incomplete gives toxic CO and soot.",
+        "Substitution replaces one H with a halogen under UV and gives two products.",
+        "Addition opens the C=C: two reactants, one product; bromine water decolourises.",
+        "Polymerisation is repeated addition: open the double bond, show [-...-]n."
+      ],
+      "finalPrompt": "Every reaction: identify the class, then match structure and reagent to the family.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: classify by bond, combustion, substitution, addition, polymerisation.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, classify reactions by the bond, all hydrocarbons combust, alkanes mainly substitute, and alkenes mainly add. Second, complete combustion gives carbon dioxide and water with a clean flame, while incomplete combustion gives toxic carbon monoxide and soot. Third, substitution replaces one hydrogen with a halogen, needs ultraviolet light, and gives two products. Fourth, addition opens the carbon to carbon double bond, combining two reactants into one product, and it's why alkenes decolourise bromine water. And fifth, polymerisation is repeated addition, so open the double bond and write the repeat unit with a subscript n. Next lesson we go deep on alkene addition, the four reagents, and Markovnikov's rule for picking the major product. See you next lesson."
+      }
+    }
+  ]
+}

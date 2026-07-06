@@ -1,0 +1,211 @@
+{
+  "title": "Properties and Classification of Matter",
+  "subtitle": "Pure substances, mixtures, and the classification tree",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "classify the elements based on their properties and position in the periodic table through their:",
+    "explore homogeneous mixtures and heterogeneous mixtures through practical investigations:"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-7"],
+  "inquiryQuestion": "How do the properties of substances help us to classify and separate them?",
+  "lessonIntent": "Students can classify any substance as an element, compound, homogeneous mixture, or heterogeneous mixture using the matter classification tree.",
+  "examSkill": "Apply the three-step decision tree (fixed composition? chemically breakable? uniform?) to classify a substance and justify it.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, how chemists classify all matter. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Properties and Classification of Matter (Year 11 Chemistry, Module 1, Lesson 1)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Pure substance, or mixture?",
+      "body": "Dissolve salt in water until it vanishes. Is the result pure? And is bronze a mixture or a compound?",
+      "image": "m1L1SaltWaterBronze",
+      "callout": "One question sorts every substance in the universe.",
+      "durationInFrames": 660,
+      "caption": "Salt water and bronze both test how you classify matter.",
+      "voiceover": {
+        "text": "OK, here's a question that looks simple until you really think about it. You stir a spoon of salt into water until none of it is left. Is that result a pure substance, or a mixture? And what about bronze, the copper and tin alloy that's been used for coins and statues for thousands of years? Is bronze a mixture, or a compound? By the end of this lesson you'll have one clear tool that classifies every substance in the universe, and you'll see why both of those answers trip students up in exams."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "The matter classification tree",
+      "body": "All matter splits into pure substances and mixtures, based on whether composition is fixed or variable.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "matter", "label": "MATTER"},
+          {"id": "pure", "label": "Pure substance"},
+          {"id": "mix", "label": "Mixture"},
+          {"id": "elem", "label": "Element"},
+          {"id": "comp", "label": "Compound"},
+          {"id": "homo", "label": "Homogeneous"},
+          {"id": "hetero", "label": "Heterogeneous"}
+        ],
+        "edges": [
+          {"from": "matter", "to": "pure"},
+          {"from": "matter", "to": "mix"},
+          {"from": "pure", "to": "elem"},
+          {"from": "pure", "to": "comp"},
+          {"from": "mix", "to": "homo"},
+          {"from": "mix", "to": "hetero"}
+        ]
+      },
+      "bullets": [
+        {"text": "Pure substance: fixed composition. Element, or compound."},
+        {"text": "Mixture: variable composition. Homogeneous, or heterogeneous."},
+        {"text": "First question: can physical means separate it without breaking bonds?"}
+      ],
+      "secondary": "If physical separation works without breaking chemical bonds, it's a mixture. If it doesn't, it's a pure substance.",
+      "callout": "This tree is the foundation of the whole module.",
+      "durationInFrames": 1140,
+      "caption": "Matter → pure substance (element/compound) or mixture (homo/hetero).",
+      "voiceover": {
+        "text": "Here's the tool, and it's the foundation of everything that follows this module. All matter splits into two branches. On the left, pure substances, which have a fixed composition. On the right, mixtures, which have a variable composition. Pure substances split again into elements and compounds. Mixtures split into homogeneous and heterogeneous. The key question to ask first is this. Can you separate it by physical means, without breaking any chemical bonds? If yes, it's a mixture. If no, it's a pure substance. Master this branching now, because you'll lean on it in every single lesson from here."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The four categories",
+      "bullets": [
+        {"text": "Element: one type of atom only, like Fe, O₂, or S₈."},
+        {"text": "Compound: two or more elements bonded in a fixed ratio, like H₂O or NaCl."},
+        {"text": "Homogeneous mixture: uniform throughout, like salt water, air, or brass."},
+        {"text": "Heterogeneous mixture: visible distinct regions, like sand and water."}
+      ],
+      "callout": "Read the formula: one symbol is an element, two is a compound.",
+      "durationInFrames": 990,
+      "caption": "Element, compound, homogeneous mixture, heterogeneous mixture.",
+      "voiceover": {
+        "text": "Let's pin down the four categories. An element contains only one type of atom, like iron, oxygen, or sulfur. And notice, oxygen gas is O two, two atoms joined, but it's still an element, because there's only one type of atom. A compound has two or more elements chemically bonded in a fixed ratio, like water or table salt. Water is always two hydrogens to one oxygen, and that fixed ratio never changes. A homogeneous mixture is uniform throughout, so you can't see the separate parts, like salt water, air, or brass. And a heterogeneous mixture has visible, distinct regions, like sand sitting in water. A quick shortcut, just read the formula. One element symbol means element, two or more means compound."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The three-step decision tree",
+      "body": "Three questions, asked in order, classify any substance you're given.",
+      "bullets": [
+        {"text": "1. Is composition fixed? If no → mixture."},
+        {"text": "2. Can it be broken down chemically? If no → element. If yes → compound."},
+        {"text": "3. Is the mixture uniform? If yes → homogeneous. If no → heterogeneous."}
+      ],
+      "secondary": "Run the questions in order and the answer falls out. This is the framework examiners reward.",
+      "callout": "Fixed? Breakable? Uniform? In that order, every time.",
+      "durationInFrames": 990,
+      "caption": "Decision tree: fixed composition? chemically breakable? uniform?",
+      "voiceover": {
+        "text": "Here's how you turn that tree into a routine for any exam question. Ask three things, in order. First, is the composition fixed? If it isn't, you're done, it's a mixture. Second, if it is fixed, can it be broken down chemically? If it can't, it's an element. If it can, it's a compound. Third, if it turned out to be a mixture, is it uniform? If yes, it's homogeneous. If no, it's heterogeneous. Run those three questions in that order, and the classification just falls out. Examiners reward this structured reasoning, so make it a habit."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Classifying salt water",
+      "question": "A student dissolves table salt (NaCl) in water and stirs until no solid remains. Classify the result and justify it.",
+      "coachNote": "Run the decision tree in order: fixed? bonded? uniform?",
+      "steps": [
+        "Components present: NaCl and H₂O — two different substances",
+        "Chemically bonded? No — salt is recoverable by evaporation → mixture",
+        "Composition fixed? No — you could add more salt or water → confirms mixture",
+        "Uniform after stirring? Yes — one visible phase",
+        "Answer: homogeneous mixture ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Salt water = homogeneous mixture (variable composition, one phase).",
+      "voiceover": {
+        "text": "Let's run the salt water question through the tree. Step one, identify what's present. We have sodium chloride and water, so two different substances. Step two, are they chemically bonded? No. The salt is just dissolved, and you can get it straight back by evaporating the water, which is a physical process, so this is a mixture. Step three, is the composition fixed? Also no, because you could add more salt or more water and change the concentration, which confirms it's a mixture and not a pure substance. Step four, after stirring, is it uniform? Yes, the ions are spread evenly and there's only one visible phase. So the answer is a homogeneous mixture. The looks-uniform appearance fooled nobody, because we tested composition, not just appearance."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Classify four substances",
+      "question": "Classify each: (a) Fe, (b) CO₂, (c) ocean water, (d) iron filings mixed with sulfur powder.",
+      "coachNote": "Count element symbols, then test composition and uniformity.",
+      "steps": [
+        "(a) Fe — one element symbol, can't break down chemically → element",
+        "(b) CO₂ — two elements in a fixed 1:2 ratio, bonded → compound",
+        "(c) Ocean water — many components, variable, uniform appearance → homogeneous mixture",
+        "(d) Iron + sulfur — two visible regions (grey, yellow), not bonded → heterogeneous mixture",
+        "Answer: element, compound, homogeneous, heterogeneous ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "Fe = element, CO₂ = compound, ocean water = homo, Fe+S = hetero.",
+      "voiceover": {
+        "text": "Now let's classify four at once. Part a, iron, written as F e. One element symbol, one type of atom, and you can't break it down chemically, so it's an element. Part b, carbon dioxide. Two different element symbols in a fixed one to two ratio, chemically bonded, so it's a compound. Part c, ocean water. It contains water plus dissolved salts, dissolved gases, and trace minerals, the composition varies from place to place, but it looks uniform, so it's a homogeneous mixture. Part d, iron filings stirred into sulfur powder. You can see two distinct regions, grey iron and yellow sulfur, and they're not bonded, so it's a heterogeneous mixture. Four substances, one tree, four clean answers."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three classification traps",
+      "body": "Trap 1: thinking a homogeneous mixture is a pure substance because it looks uniform.",
+      "secondary": "Trap 2: misreading formulas — one element symbol is an element, two or more is a compound. Trap 3: calling alloys like brass and bronze compounds. They're homogeneous mixtures, with no fixed ratio and no chemical bond.",
+      "mistakeTag": "Where classification marks vanish",
+      "callout": "Uniform describes appearance, not purity. Alloys are mixtures.",
+      "durationInFrames": 1260,
+      "caption": "Uniform ≠ pure; read the formula; alloys are mixtures, not compounds.",
+      "voiceover": {
+        "text": "Three traps that quietly cost marks. Trap one, treating a homogeneous mixture as a pure substance just because it looks uniform. Salt water looks completely even, but its composition can vary, so it's still a mixture. The word uniform describes appearance, not purity. Trap two, misreading a formula. One element symbol means an element, two or more different symbols means a compound, with no exceptions. Trap three, and this is the big one, calling alloys like brass and bronze compounds. They're metals physically blended together, with no fixed ratio and no chemical bond, so they're homogeneous mixtures. Students label them compounds because they're metallic and shiny, but that's wrong every time."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A clear liquid has a fixed boiling point that does not change between samples. Apply the decision tree. What is it?",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Fixed boiling point that never varies → composition is fixed",
+        "Fixed composition rules out a mixture (mixtures boil over a range)",
+        "So it must be a pure substance",
+        "It could be an element or a compound — but it is definitely pure",
+        "Answer: a pure substance ✓"
+      ],
+      "durationInFrames": 1140,
+      "caption": "A fixed, unchanging boiling point means a pure substance.",
+      "voiceover": {
+        "text": "Quick check. A clear liquid has a fixed boiling point that doesn't change between samples. Run the decision tree. What is it? Pause and work it through. Right, let's check it. Step one, the boiling point is fixed and never varies, which tells you the composition is fixed. Step two, a fixed composition rules out a mixture, because mixtures boil over a range, not at one sharp temperature. Step three, so it has to be a pure substance. Step four, we can't tell from this alone whether it's an element or a compound, but we know for certain it's pure. The trap answer was homogeneous mixture, because the liquid looks uniform, but uniform appearance is not the test. The fixed boiling point is."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "All matter is a pure substance (fixed) or a mixture (variable).",
+        "Pure substances are elements or compounds; mixtures are homo or hetero.",
+        "Decision tree: fixed? → breakable? → uniform?",
+        "Uniform appearance does not mean pure — test the composition.",
+        "Alloys like brass and bronze are homogeneous mixtures, not compounds."
+      ],
+      "finalPrompt": "Classifying anything? Ask fixed, then breakable, then uniform.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: the tree, the decision routine, uniform ≠ pure, alloys are mixtures.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, all matter is either a pure substance with fixed composition, or a mixture with variable composition. Second, pure substances are elements or compounds, and mixtures are homogeneous or heterogeneous. Third, classify with three questions in order, is composition fixed, can it be broken down chemically, and is the mixture uniform. Fourth, a uniform appearance never means pure, so always test the composition. And fifth, alloys like brass and bronze are homogeneous mixtures, not compounds. Get that tree solid, because the next lesson uses physical properties to put it into practice. See you next lesson."
+      }
+    }
+  ]
+}

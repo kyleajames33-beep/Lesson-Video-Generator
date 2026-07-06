@@ -1,0 +1,204 @@
+{
+  "title": "Gravimetric Analysis",
+  "subtitle": "Finding an analyte by weighing a pure solid",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 2",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8: Applying Chemical Ideas",
+  "syllabusDotPoints": [
+    "conduct investigations and/or process data involving the gravimetric analysis of a sample to determine the percentage by mass of an analyte"
+  ],
+  "moduleLessonCount": 16,
+  "nesaOutcomes": ["CH12-15", "CH11/12-4", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "How are the ions present in the environment identified and measured?",
+  "lessonIntent": "Students can run the precipitate-to-analyte mole pathway, calculate percentage by mass, and state the direction each procedural error pushes the result.",
+  "examSkill": "Convert precipitate mass to moles with its own molar mass, apply the mole ratio, find analyte mass and percentage, and link each error to whether the result is over- or underestimated.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, gravimetric analysis. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Gravimetric Analysis (Year 12 Chemistry, Module 8, Lesson 2)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A scandal a balance could have caught",
+      "body": "In 2008, infant formula was spiked with melamine to fake a high protein reading across the supply chain.",
+      "callout": "A pure solid on a balance is hard to fake.",
+      "durationInFrames": 690,
+      "caption": "Gravimetric analysis weighs a pure precipitate to measure an unknown.",
+      "voiceover": {
+        "text": "OK, here's a sobering one. In 2008, a dairy company was caught spiking infant formula with melamine, a chemical that fakes a high protein reading on the standard test. Thousands of tonnes were affected. The thing is, careful gravimetric checks on the byproducts could have flagged the fraud months earlier, because a pure, weighed solid is very hard to fake. You met the precipitate-and-weigh idea in Year 11. Today we push it to the Module 8 standard, percentage by mass, and crucially, knowing which way each error pushes your final answer."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "The big idea, the analyst's way",
+      "body": "Turn the target ion into a pure insoluble solid of known formula, weigh it dry, and walk the moles back.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "dissolve", "label": "Dissolve"},
+          {"id": "precip", "label": "Precipitate"},
+          {"id": "filter", "label": "Filter"},
+          {"id": "dry", "label": "Dry"},
+          {"id": "weigh", "label": "Weigh"}
+        ],
+        "edges": [
+          {"from": "dissolve", "to": "precip"},
+          {"from": "precip", "to": "filter"},
+          {"from": "filter", "to": "dry"},
+          {"from": "dry", "to": "weigh"}
+        ]
+      },
+      "bullets": [
+        {"text": "Dissolve, then add a precipitating agent in excess for complete precipitation."},
+        {"text": "Filter through ashless paper, then dry to constant mass."},
+        {"text": "Mass to moles, mole ratio, then analyte mass and percentage."}
+      ],
+      "secondary": "Drying to constant mass means re-heating and re-weighing until the reading stops changing. Trapped water is mass you didn't want.",
+      "callout": "Weigh the dry solid, then walk the ratio backwards.",
+      "durationInFrames": 1140,
+      "caption": "Dissolve, precipitate, filter, dry to constant mass, then calculate.",
+      "voiceover": {
+        "text": "Here's the big idea, done the analyst's way. You take the ion you care about and convert it into a pure, insoluble solid with a known formula, then you weigh it and work backwards. The method is five disciplined steps. Dissolve the sample fully. Add a precipitating agent in excess, so every target ion is captured. Filter through ashless paper, which doesn't add mass when burned. Dry the solid to constant mass, meaning you re-heat and re-weigh until the reading stops changing. And weigh it. Then the chemistry, mass to moles, mole ratio, analyte mass, and percentage. The method is unforgiving, because if any step is incomplete, the mass you read isn't the mass you wanted."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Precipitating agent: the reagent added in excess to capture the target ion."},
+        {"text": "Quantitative filtration: separating the solid using ashless paper to avoid mass error."},
+        {"text": "Ignition: heating to constant mass, giving a stable compound of known formula."},
+        {"text": "Percentage composition: analyte mass ÷ sample mass, times 100."}
+      ],
+      "callout": "Excess agent, dried to constant mass, then weighed.",
+      "durationInFrames": 960,
+      "caption": "Precipitating agent, quantitative filtration, ignition, percentage composition.",
+      "voiceover": {
+        "text": "Quick vocabulary. The precipitating agent is the reagent you add in excess to make sure every target ion drops out of solution as a solid. Quantitative filtration means separating that solid using ashless filter paper, so the paper doesn't add mass to your reading. Ignition is heating the precipitate to constant mass, leaving a stable compound with a known formula and no trapped water. And percentage composition is the mass of your analyte divided by the mass of the original sample, times one hundred. That last one is what Module 8 questions usually ask you to land on."
+      }
+    },
+    {
+      "id": "pathway",
+      "type": "concept",
+      "heading": "The calculation pathway",
+      "body": "No new formula. Chain mass to moles of precipitate, the mole ratio, analyte mass, then percentage.",
+      "bullets": [
+        {"text": "Precipitate mass → moles, using n = m ÷ M of the precipitate."},
+        {"text": "Apply the mole ratio: precipitate moles to analyte moles."},
+        {"text": "Analyte mass = n × M, then percentage of the sample."}
+      ],
+      "secondary": "Use the molar mass of the precipitate to get its moles, not the molar mass of the analyte. That swap is the classic error.",
+      "callout": "Right molar mass, right ratio, then percentage.",
+      "durationInFrames": 1020,
+      "caption": "Mass → moles (precipitate) → mole ratio → analyte mass → percentage.",
+      "voiceover": {
+        "text": "Good news, no new formula. You're chaining tools you already have. Start with the mass of the dried precipitate, and convert it to moles using n equals m over capital M, where capital M is the molar mass of the precipitate. Then apply the mole ratio from the balanced equation to turn precipitate moles into analyte moles. Convert those to a mass with m equals n times M. And if the question wants it, divide by the original sample mass and times by one hundred for the percentage. One warning that costs marks every year. When you find moles of the precipitate, use the molar mass of the precipitate, not the analyte. Mixing those two up wrecks everything downstream."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Percentage of sulfate",
+      "question": "A 0.500 g sample gives 0.350 g of BaSO₄. Find the mass and percentage of sulfate. (M(BaSO₄) = 233.39, M(SO₄²⁻) = 96.06)",
+      "coachNote": "BaSO₄ to SO₄²⁻ is 1:1. Precipitate molar mass first, sample mass at the end.",
+      "steps": [
+        "n(BaSO₄) = m ÷ M = 0.350 ÷ 233.39 = 1.500 × 10⁻³ mol",
+        "Ratio BaSO₄ : SO₄²⁻ = 1 : 1, so n(SO₄²⁻) = 1.500 × 10⁻³ mol",
+        "m(SO₄²⁻) = n × M = 1.500 × 10⁻³ × 96.06 = 0.144 g",
+        "% sulfate = (0.144 ÷ 0.500) × 100",
+        "Answer: 0.144 g of sulfate, which is 28.8% by mass ✓"
+      ],
+      "durationInFrames": 1470,
+      "caption": "0.350 g BaSO₄ gives 0.144 g sulfate, or 28.8% of the sample.",
+      "voiceover": {
+        "text": "Let's do one. A nought-point-five gram sample produces nought-point-three-five-zero grams of barium sulfate. Find the mass and percentage of sulfate. Step one, moles of precipitate, using its own molar mass. Nought-point-three-five over two hundred and thirty-three-point-three-nine is one-point-five times ten to the minus three moles. Step two, the ratio. Each barium sulfate came from one sulfate ion, so it's one to one, and the sulfate moles match. Step three, sulfate mass. Multiply by the molar mass of sulfate, ninety-six-point-zero-six, giving nought-point-one-four-four grams. Step four, the percentage. Nought-point-one-four-four over the original nought-point-five grams, times one hundred, is twenty-eight-point-eight percent. Notice the two different molar masses, the precipitate's to get its moles, the sulfate's to get its mass."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Purity of impure salt",
+      "question": "2.50 g of impure NaCl is treated with excess AgNO₃, giving 5.74 g of AgCl. Find the percentage by mass of NaCl. (M(AgCl) = 143.32, M(NaCl) = 58.44)",
+      "coachNote": "AgCl to NaCl is 1:1. The precipitate is silver chloride, so use its molar mass first.",
+      "steps": [
+        "n(AgCl) = m ÷ M = 5.74 ÷ 143.32 = 0.04005 mol",
+        "Ratio AgCl : NaCl = 1 : 1, so n(NaCl) = 0.04005 mol",
+        "m(NaCl) = n × M = 0.04005 × 58.44 = 2.34 g",
+        "% NaCl = (2.34 ÷ 2.50) × 100",
+        "Answer: the sample is 93.6% NaCl by mass ✓"
+      ],
+      "durationInFrames": 1470,
+      "caption": "5.74 g AgCl gives 2.34 g NaCl, so the sample is 93.6% NaCl.",
+      "voiceover": {
+        "text": "Another one, this time a purity check. Two-point-five grams of impure sodium chloride is treated with excess silver nitrate, which precipitates all the chloride as silver chloride, five-point-seven-four grams of it. Find the percentage by mass of sodium chloride. Step one, moles of the precipitate, silver chloride. Five-point-seven-four over one hundred and forty-three-point-three-two is nought-point-zero-four-zero-zero moles. Step two, the ratio. One chloride gives one silver chloride, so sodium chloride is also nought-point-zero-four-zero-zero moles. Step three, the mass of sodium chloride. Multiply by its molar mass, fifty-eight-point-four-four, giving two-point-three-four grams. Step four, the percentage. Two-point-three-four over the original two-point-five grams is ninety-three-point-six percent. So the salt was about ninety-four percent pure. Same discipline, precipitate molar mass first, then the analyte's."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Errors have a direction",
+      "body": "Trap 1: incomplete precipitation or loss on filtration. Mass comes out too low, so the analyte is underestimated.",
+      "secondary": "Trap 2: co-precipitated impurities or trapped water. Mass comes out too high, so the analyte is overestimated. Trap 3: using the analyte's molar mass when you weighed the precipitate.",
+      "mistakeTag": "Where gravimetric marks vanish",
+      "callout": "State the direction: mass too high or low, then over- or underestimate.",
+      "durationInFrames": 1290,
+      "caption": "Low mass underestimates; high mass overestimates. Always state the direction.",
+      "voiceover": {
+        "text": "Here's where the marks really live, and it's the direction of each error. Trap one, anything that loses solid, like incomplete precipitation or precipitate slipping through the filter. The measured mass comes out too low, so the analyte is underestimated. Trap two, anything that adds mass, like impurities co-precipitating, or water left in from incomplete drying. Now the mass is too high, so the analyte is overestimated. The exam wants that full chain, the mass is too high or too low, therefore the result is over or underestimated. Just saying it's an error earns nothing. And trap three, the calculation slip, using the analyte's molar mass when you actually weighed the precipitate. Always state the direction, and always use the precipitate's molar mass for its moles."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A sample gives 2.330 g of dried BaSO₄. How many moles of sulfate did it contain? (M(BaSO₄) = 233.39)",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "n(BaSO₄) = m ÷ M = 2.330 ÷ 233.39 = 9.983 × 10⁻³ mol",
+        "Ratio BaSO₄ : SO₄²⁻ = 1 : 1",
+        "n(SO₄²⁻) = 9.983 × 10⁻³ mol",
+        "Answer: 9.98 × 10⁻³ mol of sulfate ✓"
+      ],
+      "durationInFrames": 1140,
+      "caption": "2.330 g BaSO₄ ÷ 233.39 = 9.98 × 10⁻³ mol sulfate (1:1 ratio).",
+      "voiceover": {
+        "text": "Quick check. A sample gives two-point-three-three-zero grams of dried barium sulfate. How many moles of sulfate did it contain? Pause and work it through. Right, let's check it. Step one, moles of the precipitate, using its molar mass, so two-point-three-three over two hundred and thirty-three-point-three-nine is nought-point-zero-zero-nine-nine-eight-three moles. Step two, the ratio of barium sulfate to sulfate is one to one, so the sulfate is nine-point-nine-eight times ten to the minus three moles. Precipitate molar mass first, then the ratio, the same move every time."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Gravimetric analysis weighs a pure precipitate of known formula to find an analyte.",
+        "Dissolve, precipitate in excess, filter, dry to constant mass, weigh.",
+        "Convert precipitate mass to moles with the precipitate's molar mass.",
+        "Apply the mole ratio, find the analyte mass, then the percentage.",
+        "Low mass underestimates, high mass overestimates, so always state the direction."
+      ],
+      "finalPrompt": "Before you finish: precipitate molar mass first, and which way does my error push?",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: precipitate and weigh, mole pathway, percentage, error direction.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, gravimetric analysis weighs a pure precipitate of known formula to find your analyte. Second, the method is dissolve, precipitate in excess, filter, dry to constant mass, and weigh. Third, convert the precipitate mass to moles using the precipitate's molar mass, not the analyte's. Fourth, apply the mole ratio, find the analyte mass, then the percentage of the original sample. And fifth, low mass underestimates the result, high mass overestimates it, so always state the direction of any error. Precipitate molar mass first, and name the direction. See you next lesson."
+      }
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "title": "Writing Keq Expressions",
+  "subtitle": "The rules behind every equilibrium calculation",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 9",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+  "syllabusDotPoints": [
+    "deduce the equilibrium expression (in terms of Keq) for homogeneous reactions occurring in solution (ACSCH079, ACSCH096)"
+  ],
+  "moduleLessonCount": 18,
+  "nesaOutcomes": [
+    "CH12-12",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "How can the position of equilibrium be described and what does the equilibrium constant represent?",
+  "lessonIntent": "Students can write correct Keq expressions, excluding pure solids and liquids, and interpret the magnitude of Keq.",
+  "examSkill": "Build Keq as products over reactants raised to their coefficients, exclude solids and solvent water, and read what the magnitude means.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, writing equilibrium constant expressions. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Writing Keq Expressions (Year 12 Chemistry, Module 5, Lesson 9)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The number that explains the air",
+      "body": "For N₂ + O₂ ⇌ 2NO, Keq is about 10⁻³⁰. That one tiny number is why our atmosphere is stable.",
+      "callout": "One ratio captures where every equilibrium sits.",
+      "image": "m5L9AtmosphereStable",
+      "durationInFrames": 690,
+      "caption": "Keq ≈ 10⁻³⁰ for N₂ + O₂ ⇌ 2NO explains why air doesn't react.",
+      "voiceover": {
+        "text": "OK, here's a beautiful fact. The air you're breathing is seventy-eight percent nitrogen and twenty-one percent oxygen, sitting together, and they basically never react. Why not? Because for nitrogen plus oxygen giving nitric oxide, the equilibrium constant is about ten to the minus thirty, an almost unimaginably tiny number, which tells you the equilibrium lies massively toward the reactants. Back in 1864, two Norwegian chemists, Guldberg and Waage, discovered that for any equilibrium there's a single ratio of concentrations, raised to the right powers, that stays constant. That ratio is the equilibrium constant, and learning to write it correctly is the gateway to every calculation in this module. Today, the rules for writing it, and what its size actually tells you."
+      }
+    },
+    {
+      "id": "concept-rules",
+      "type": "concept",
+      "heading": "The rules for writing Keq",
+      "body": "Products over reactants, each raised to its coefficient, with solids and pure liquids left out.",
+      "bullets": [
+        {
+          "text": "Products go on top, reactants on the bottom."
+        },
+        {
+          "text": "Each concentration is raised to its stoichiometric coefficient."
+        },
+        {
+          "text": "Exclude pure solids and pure liquids, including water as a solvent."
+        }
+      ],
+      "secondary": "Include gases and aqueous species. The coefficients must match the equation exactly as written; halving the equation square-roots the value.",
+      "callout": "Top is products, powers are coefficients, drop the solids.",
+      "durationInFrames": 1140,
+      "caption": "Keq = products/reactants raised to coefficients; exclude solids and solvent liquids.",
+      "voiceover": {
+        "text": "Here are the rules, and they're worth memorising exactly. For a general reaction, the equilibrium constant is the concentrations of the products on top, divided by the concentrations of the reactants on the bottom. Each concentration is raised to the power of its coefficient in the balanced equation. Then the exclusions, leave out pure solids, and leave out pure liquids, and that includes water when it's acting as the solvent. What you do include is gases and dissolved aqueous species. So for the Haber process, nitrogen plus three hydrogen giving two ammonia, the equilibrium constant is ammonia squared, because its coefficient is two, divided by nitrogen times hydrogen cubed. One warning that costs people marks, the coefficients must match the equation exactly as written. If you halve the whole equation, every power halves, and the numerical value gets square-rooted. Always check which version of the equation you've been given."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Species",
+          "In Keq?",
+          "Why"
+        ],
+        "rows": [
+          [
+            "Gas (g)",
+            "Yes",
+            "Concentration varies"
+          ],
+          [
+            "Aqueous (aq)",
+            "Yes",
+            "Concentration varies"
+          ],
+          [
+            "Pure solid (s)",
+            "No",
+            "Activity = 1"
+          ],
+          [
+            "Pure liquid / solvent water (l)",
+            "No",
+            "Activity = 1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Equilibrium constant (Keq): the products-over-reactants ratio at equilibrium, raised to coefficients."
+        },
+        {
+          "text": "Homogeneous equilibrium: all species in the same phase."
+        },
+        {
+          "text": "Heterogeneous equilibrium: species in different phases; solids and pure liquids are omitted."
+        },
+        {
+          "text": "Stoichiometric coefficient: the number in front of a species, used as its exponent."
+        }
+      ],
+      "callout": "Coefficients become exponents, every time.",
+      "durationInFrames": 990,
+      "caption": "Equilibrium constant, homogeneous, heterogeneous, stoichiometric coefficient.",
+      "voiceover": {
+        "text": "Four terms to lock in. The equilibrium constant, written K e q, is the ratio of product concentrations to reactant concentrations at equilibrium, each raised to its coefficient. A homogeneous equilibrium is one where all the species are in the same phase, like an all-gas reaction. A heterogeneous equilibrium is one where the species are in different phases, and that's exactly when you have to drop the solids and pure liquids. And a stoichiometric coefficient is just the number in front of a species in the balanced equation, which becomes the exponent on that species in the expression. That last link is the one to burn in, the coefficient in the equation becomes the power in the equilibrium constant. A two in front means squared, a three means cubed."
+      }
+    },
+    {
+      "id": "concept-magnitude",
+      "type": "concept",
+      "heading": "What the magnitude tells you",
+      "body": "The size of Keq tells you which side the equilibrium favours at a glance.",
+      "bullets": [
+        {
+          "text": "Keq greater than about 10³: products strongly favoured, reactants nearly gone."
+        },
+        {
+          "text": "Keq around 1: significant amounts of both reactants and products."
+        },
+        {
+          "text": "Keq less than about 10⁻³: reactants strongly favoured, very little product."
+        }
+      ],
+      "secondary": "Magnitude is about position, not rate. A huge Keq says the equilibrium lies far right, but says nothing about how fast it gets there.",
+      "callout": "Big Keq leans to products; tiny Keq leans to reactants.",
+      "durationInFrames": 1140,
+      "caption": "Keq > 10³ favours products; ~1 is mixed; < 10⁻³ favours reactants.",
+      "voiceover": {
+        "text": "Now what the number itself means, because the magnitude of the equilibrium constant tells you where the balance sits at a glance. If the equilibrium constant is much bigger than one, say above ten to the three, the products are strongly favoured, and the mixture at equilibrium is almost entirely products with the reactants nearly used up. If it's around one, you get significant amounts of both reactants and products coexisting. And if it's much less than one, below ten to the minus three, the reactants are strongly favoured, and there's very little product. Go back to the three from the hook. Nitrogen plus oxygen giving nitric oxide, ten to the minus thirty, reactants overwhelmingly, which is why the air is stable. Hydrogen plus iodine giving hydrogen iodide, fifty-four, a real mixture of both. And two nitric oxide plus oxygen giving nitrogen dioxide, ten to the twelve, almost entirely product. One caution, the magnitude is about position, not rate, a huge constant tells you where you end up, never how fast you get there."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Keq value",
+          "Position",
+          "Mixture"
+        ],
+        "rows": [
+          [
+            "> 10³",
+            "Products favoured",
+            "Almost all products"
+          ],
+          [
+            "~1 (10⁻¹ to 10³)",
+            "Intermediate",
+            "Both present"
+          ],
+          [
+            "< 10⁻³",
+            "Reactants favoured",
+            "Almost all reactants"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Writing four expressions",
+      "question": "Write Keq for each, noting exclusions: (a) 2NO(g) + O₂(g) ⇌ 2NO₂(g); (b) AgCl(s) ⇌ Ag⁺(aq) + Cl⁻(aq); (c) CO₂(g) + C(s) ⇌ 2CO(g); (d) CH₃COOH(aq) ⇌ CH₃COO⁻(aq) + H⁺(aq).",
+      "coachNote": "Check each species' state symbol; drop solids and solvent water.",
+      "steps": [
+        "(a) All gases: Keq = [NO₂]² ÷ ([NO]²[O₂]).",
+        "(b) AgCl is solid, excluded; ions are aqueous: Keq = [Ag⁺][Cl⁻].",
+        "(c) Carbon is solid, excluded: Keq = [CO]² ÷ [CO₂].",
+        "(d) Water is the solvent, excluded: Keq = [CH₃COO⁻][H⁺] ÷ [CH₃COOH].",
+        "Answer: exclude solids (b, c) and solvent water (d); coefficients become powers ✓"
+      ],
+      "durationInFrames": 1440,
+      "caption": "Four Keq expressions: drop AgCl, C(s), and solvent water; coefficients become powers.",
+      "voiceover": {
+        "text": "Let's write four expressions, the core skill of this lesson. Part a, two nitric oxide plus oxygen giving nitrogen dioxide. Everything is a gas, so all are included. The equilibrium constant is nitrogen dioxide squared, on top, divided by nitric oxide squared times oxygen. Part b, silver chloride solid in equilibrium with silver and chloride ions. The silver chloride is a pure solid, so it's excluded, and the two ions are aqueous, so they're in. The constant is just silver ion times chloride ion. By the way, that's the solubility product you'll meet later. Part c, carbon dioxide plus carbon giving carbon monoxide. The carbon is a pure solid, so drop it, leaving carbon monoxide squared divided by carbon dioxide. Part d, acetic acid splitting into its ions in water. The acetic acid and both ions are aqueous, so they're in, but the water is the solvent, so it's excluded. The constant is acetate ion times hydrogen ion, divided by acetic acid, and that's the acid dissociation constant. The whole skill is checking each state symbol and dropping the solids and the solvent water."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Reverse and scale",
+      "question": "For 2SO₃(g) ⇌ 2SO₂(g) + O₂(g), Keq = 1.8 × 10⁻⁶ at 600°C. Find Keq for (a) the reverse reaction, and (b) SO₃(g) ⇌ SO₂(g) + ½O₂(g).",
+      "coachNote": "Reversing takes the reciprocal; halving the coefficients takes the square root.",
+      "steps": [
+        "(a) Reverse: 2SO₂ + O₂ ⇌ 2SO₃, so Keq = 1 ÷ (1.8 × 10⁻⁶) = 5.6 × 10⁵.",
+        "(b) Halving the original coefficients means taking the square root of the value.",
+        "Keq = √(1.8 × 10⁻⁶) = 1.34 × 10⁻³.",
+        "Always check both: is the equation reversed, and are the coefficients scaled?",
+        "Answer: (a) 5.6 × 10⁵; (b) 1.34 × 10⁻³ ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "Reverse → reciprocal (5.6 × 10⁵); halve coefficients → square root (1.34 × 10⁻³).",
+      "voiceover": {
+        "text": "Now manipulating the value, because the equilibrium constant belongs to the equation as written, not to the reaction in the abstract. For two sulfur trioxide breaking into two sulfur dioxide plus oxygen, the constant is one-point-eight times ten to the minus six at six hundred degrees. Part a, the reverse reaction, two sulfur dioxide plus oxygen giving sulfur trioxide. Reversing means taking the reciprocal, so one divided by one-point-eight times ten to the minus six, which is five-point-six times ten to the five. That big number makes sense, the reverse direction is strongly favoured. Part b, sulfur trioxide giving sulfur dioxide plus half oxygen. Compared with the original, all the coefficients have been halved, and halving the coefficients means taking the square root of the value. The square root of one-point-eight times ten to the minus six is one-point-three-four times ten to the minus three. The routine before any equilibrium calculation, two checks, is the equation reversed, and are the coefficients scaled. Reverse means reciprocal, scaling by n means raise to the power n."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: including pure solids in Keq. For CaCO₃(s) ⇌ CaO(s) + CO₂(g), Keq is just [CO₂].",
+      "secondary": "Trap 2: including water when it's the solvent. In aqueous reactions, leave H₂O out, but include H₂O(g) in a gas-phase reaction. Trap 3: reusing a Keq value when the equation has been reversed or scaled. Reverse takes the reciprocal; scaling raises to a power.",
+      "mistakeTag": "Where Keq marks vanish",
+      "callout": "No solids, solvent water out, recheck the equation form.",
+      "durationInFrames": 1230,
+      "caption": "Exclude solids; exclude solvent water (but keep H₂O gas); adjust Keq for reversed/scaled equations.",
+      "voiceover": {
+        "text": "Three traps. Trap one, the most common in this whole inquiry question, including pure solids in the expression. For calcium carbonate decomposing into calcium oxide plus carbon dioxide, both the carbonate and the oxide are solids, so the equilibrium constant is simply carbon dioxide on its own. Writing the two solids in is wrong, always leave solids out. Trap two, including water when it's the solvent. In a reaction happening in aqueous solution, the water is the solvent, so leave it out, but, and this catches people, if water appears as a gas in a gas-phase reaction, like steam, then you do include it. The state symbol tells you which case you're in. Trap three, reusing a given equilibrium constant when the equation has been reversed or scaled. If the value was given for one direction and the question asks the other, you must take the reciprocal, and if the coefficients have been multiplied or divided, you raise the value to that power. Get those three right and writing equilibrium constants is mechanical."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Write Keq for Fe₃O₄(s) + 4H₂(g) ⇌ 3Fe(s) + 4H₂O(g), and say what a value of 8.5 × 10⁻¹⁰ would tell you about the mixture.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Fe₃O₄ and Fe are pure solids, so both are excluded.",
+        "H₂ and H₂O are gases here (steam, not solvent), so both are included.",
+        "Keq = [H₂O]⁴ ÷ [H₂]⁴, with the coefficient 4 as each power.",
+        "A value of 8.5 × 10⁻¹⁰ is far below 1, so reactants are strongly favoured.",
+        "Answer: Keq = [H₂O]⁴ ÷ [H₂]⁴; almost all reactants ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "Keq = [H₂O]⁴/[H₂]⁴ (solids excluded); 8.5 × 10⁻¹⁰ means reactants favoured.",
+      "voiceover": {
+        "text": "Quick check. Write the equilibrium constant for iron oxide plus hydrogen giving iron plus steam, and then say what a value of eight-point-five times ten to the minus ten would tell you about the mixture. Pause and reason it through. Right, let's check it. First the exclusions, the iron oxide and the iron are both pure solids, so they're both out. The hydrogen and the water are gases here, the water is steam, not a solvent, so they're both in. So the equilibrium constant is water vapour to the fourth power, divided by hydrogen to the fourth power, with that coefficient of four becoming each exponent. Now the magnitude, eight-point-five times ten to the minus ten is far, far below one, so the reactants are strongly favoured, and at equilibrium the mixture is almost entirely hydrogen and iron oxide with very little iron and steam. Notice the two skills working together, exclude the solids to get the expression, then read the size to get the position."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Keq = products over reactants, each raised to its coefficient.",
+        "Exclude pure solids and pure liquids, including solvent water; keep H₂O gas.",
+        "Keq > 10³ favours products; ~1 is mixed; < 10⁻³ favours reactants.",
+        "Reverse the equation → take the reciprocal of Keq.",
+        "Scale the coefficients by n → raise Keq to the power n; only T changes Keq."
+      ],
+      "finalPrompt": "Writing Keq? Products on top, coefficients as powers, solids and solvent water out.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: the expression, exclusions, magnitude, reverse, scale.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, the equilibrium constant is products over reactants, each concentration raised to its coefficient. Second, exclude pure solids and pure liquids, including water when it's the solvent, but keep water when it's a gas. Third, the magnitude tells you the position, above ten to the three favours products, around one is a real mixture, below ten to the minus three favours reactants. Fourth, reversing the equation means taking the reciprocal of the constant. And fifth, scaling the coefficients by a factor means raising the constant to that power, and remember only temperature actually changes its value. So whenever you write an equilibrium constant, products on top, coefficients as powers, and the solids and solvent water left out. See you next lesson."
+      }
+    }
+  ]
+}

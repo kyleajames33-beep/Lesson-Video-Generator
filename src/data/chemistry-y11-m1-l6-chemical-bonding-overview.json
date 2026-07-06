@@ -1,0 +1,201 @@
+{
+  "title": "Chemical Bonding Overview",
+  "subtitle": "Using properties to classify the four bonding types",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 6",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "investigate the role of electronegativity in determining the ionic or covalent nature of bonds between atoms",
+    "investigate the differences between ionic and covalent compounds through:"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "What binds atoms together in elements and compounds?",
+  "lessonIntent": "Students can classify an unknown substance as ionic, covalent molecular, covalent network, or metallic using the diagnostic trio of properties.",
+  "examSkill": "Use melting point, conductivity, and hardness data to identify the bonding type and justify it from structure.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, an overview of chemical bonding. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Chemical Bonding Overview (Year 11 Chemistry, Module 1, Lesson 6)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same element, opposite properties",
+      "body": "Diamond is the hardest known substance and won't conduct. Graphite is soft, slippery, and conducts. Both are pure carbon.",
+      "callout": "If the atoms are identical, the structure must explain it.",
+      "durationInFrames": 660,
+      "caption": "Diamond and graphite are both carbon but behave completely differently.",
+      "voiceover": {
+        "text": "OK, here's a puzzle that gets right to the heart of this inquiry. Diamond is one of the hardest substances known, and it won't conduct electricity at all. Graphite is soft enough to write with, slippery enough to lubricate machines, and it conducts electricity well. And yet both are made of nothing but pure carbon, the same single element. So how can two substances with identical atoms behave in completely opposite ways? The answer is structure, and in this inquiry the type of bonding and the way particles are arranged decides every physical property a substance has."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "The four structural types",
+      "body": "Bonding type determines structure, and structure determines every physical property.",
+      "diagram": {
+        "type": "table",
+        "headers": ["Type", "Melting point", "Conducts?", "Hardness"],
+        "rows": [
+          ["Ionic", "High", "Molten / dissolved only", "Hard, brittle"],
+          ["Covalent molecular", "Low (<200°C)", "No", "Soft"],
+          ["Covalent network", "Very high (>1000°C)", "No (except graphite)", "Very hard"],
+          ["Metallic", "Variable", "Always", "Malleable"]
+        ]
+      },
+      "bullets": [
+        {"text": "Ionic: a giant lattice of cations and anions, e.g. NaCl."},
+        {"text": "Covalent molecular: discrete molecules with weak forces between, e.g. CO₂."},
+        {"text": "Covalent network: a continuous 3D web of covalent bonds, e.g. diamond, SiO₂."},
+        {"text": "Metallic: cations in a sea of delocalised electrons, e.g. Cu, Fe."}
+      ],
+      "secondary": "Strong forces holding particles together give high melting points. Mobile charge carriers give conductivity.",
+      "callout": "Four structures, four property fingerprints.",
+      "durationInFrames": 1170,
+      "caption": "Ionic, covalent molecular, covalent network, metallic — four structural types.",
+      "voiceover": {
+        "text": "There are four structural types, and each one has its own property fingerprint. Ionic substances are giant lattices of positive and negative ions, like sodium chloride. Covalent molecular substances are discrete molecules with only weak forces between them, like carbon dioxide. Covalent network solids are one continuous web of covalent bonds throughout the crystal, like diamond and silicon dioxide. And metallic substances are positive cations sitting in a sea of delocalised electrons, like copper and iron. Two principles connect structure to properties. The stronger the forces holding particles together, the higher the melting point. And conductivity needs mobile charge carriers, so it only shows up where charges are free to move."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The diagnostic trio",
+      "bullets": [
+        {"text": "Melting point: low, high, or very high?"},
+        {"text": "Conductivity: as a solid, and when molten or dissolved?"},
+        {"text": "Hardness: hard and brittle, or malleable?"},
+        {"text": "Together, these three usually give one unique answer."}
+      ],
+      "callout": "MP, conductivity, hardness — three questions, one answer.",
+      "durationInFrames": 960,
+      "caption": "Diagnostic trio: melting point, conductivity, hardness.",
+      "voiceover": {
+        "text": "To classify an unknown substance, you don't need all five properties, just three. Call it the diagnostic trio. First, the melting point, is it low, high, or very high? Second, conductivity, does it conduct as a solid, and does it conduct when molten or dissolved? Third, hardness, is it hard and brittle, or malleable and bendable? Together these three almost always pin down a unique answer. For example, a high melting point that doesn't conduct as a solid but does conduct when molten, and is hard but brittle, can only be ionic. Three quick questions, and the structure reveals itself."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "Conductivity needs mobile charges",
+      "body": "Only some bonding types provide charge carriers that are free to move.",
+      "bullets": [
+        {"text": "Metals: delocalised electrons, always free → conduct in every state."},
+        {"text": "Ionic: ions, mobile only when molten or dissolved → conduct then."},
+        {"text": "Covalent: no free electrons or ions → don't conduct (graphite excepted)."}
+      ],
+      "secondary": "Graphite is the famous exception — one delocalised electron per carbon, within its layers, lets it conduct.",
+      "callout": "No mobile charge carriers, no conductivity.",
+      "durationInFrames": 990,
+      "caption": "Metals always conduct; ionic only molten/dissolved; covalent generally not.",
+      "voiceover": {
+        "text": "Conductivity is the property examiners test most, so let's nail the rule. To conduct, a substance needs charge carriers that are free to move. Metals have a sea of delocalised electrons that are always free, so metals conduct in every state, solid or molten. Ionic compounds have ions, but those ions are locked in the lattice when solid, and only become mobile when the substance is molten or dissolved, so they conduct then, not as a solid. Covalent substances have no free electrons and no ions, so they generally don't conduct at all. The famous exception is graphite. Each carbon has one delocalised electron free to move within its layers, which is why graphite, alone among covalent networks, conducts electricity."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Identify the unknown",
+      "question": "MP 1713°C (sharp), doesn't conduct as a solid or when molten, insoluble, extremely hard. Classify it and name a likely substance.",
+      "coachNote": "Use the trio: melting point, then conductivity, then hardness.",
+      "steps": [
+        "MP 1713°C is very high → rules out covalent molecular and most metals",
+        "No conductivity even when molten → rules out metals and ionic",
+        "Only covalent network fits at this point",
+        "Extremely hard and insoluble confirms covalent network",
+        "Answer: covalent network solid — silicon dioxide (SiO₂, quartz) ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Very high MP + non-conducting + very hard = covalent network (SiO₂).",
+      "voiceover": {
+        "text": "Let's identify an unknown. It melts sharply at one thousand seven hundred and thirteen degrees, it doesn't conduct as a solid or even when molten, it's insoluble, and it's extremely hard. Step one, the melting point is very high, which rules out covalent molecular, those melt low, and rules out most metals. So it's ionic or covalent network. Step two, it doesn't conduct even when molten. That rules out metals, which always conduct, and ionic compounds, which conduct when molten. Step three, that leaves only covalent network. Step four, extremely hard and insoluble confirms it. So it's a covalent network solid, and given the exact melting point of seventeen thirteen, it's silicon dioxide, quartz. Diamond melts much higher, around three and a half thousand, so the number points straight to silicon dioxide."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Hard-and-brittle versus malleable",
+      "question": "Both NaCl and copper have high melting points. Why is NaCl hard and brittle, while copper is malleable and ductile?",
+      "coachNote": "It comes down to ionic lattice versus electron sea.",
+      "steps": [
+        "NaCl: Na⁺ and Cl⁻ in a rigid ionic lattice",
+        "Force shifts the layers → like charges align → repel → lattice shatters",
+        "Cu: Cu cations in a sea of delocalised electrons",
+        "Force shifts the layers → electron sea moves with them → bonding stays intact",
+        "Answer: NaCl shatters; copper deforms without breaking ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Ionic layers shatter when like charges align; metal layers slide with the electron sea.",
+      "voiceover": {
+        "text": "Now explain why two high melting point solids behave so differently when you hit them. Sodium chloride is hard and brittle, while copper is malleable and ductile. Step one, sodium chloride has sodium and chloride ions in a rigid lattice. Step two, when a force shifts the ion layers, like charges suddenly line up next to each other, they repel strongly, and the lattice cracks apart along that plane, so it shatters. Step three, copper instead has cations sitting in a sea of delocalised electrons. Step four, when a force shifts those layers, the electron sea simply moves along with them, so the bonding is maintained the whole time and no plane of repulsion forms. So sodium chloride shatters, but copper just bends and stretches. Same high melting point, opposite mechanical behaviour, all because of the bonding."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three bonding traps",
+      "body": "Trap 1: claiming ionic compounds conduct as solids because they contain ions. They only conduct when molten or dissolved.",
+      "secondary": "Trap 2: treating hardness and strength as the same. Diamond is very hard yet brittle. Trap 3: forgetting graphite is the conducting exception among covalent networks.",
+      "mistakeTag": "Where bonding marks vanish",
+      "callout": "Solid ionic won't conduct; hard isn't strong; graphite is the exception.",
+      "durationInFrames": 1230,
+      "caption": "Solid ionic doesn't conduct; hardness ≠ strength; graphite is the exception.",
+      "voiceover": {
+        "text": "Three traps. Trap one, claiming ionic compounds conduct as solids just because they contain ions. They don't. The ions are locked in fixed positions in the solid lattice and can't move, so a solid ionic compound does not conduct. It only conducts once it's molten or dissolved and the ions are free. Trap two, treating hardness and strength as the same thing. Hardness is resistance to scratching, while strength is resistance to breaking. Diamond is extremely hard, almost nothing scratches it, yet it's brittle and shatters under a sharp impact, so the two are independent. Trap three, forgetting that graphite is the conducting exception. Most covalent networks don't conduct, but graphite does, because of its delocalised electrons within the layers."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Classify three solids: X — MP 801°C, no solid conductivity, conducts dissolved; Y — MP 1085°C, conducts as a solid, malleable; Z — MP −115°C, never conducts, soft.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "X: conducts only when dissolved, high MP → ionic compound",
+        "Y: conducts as a solid and is malleable → metallic element",
+        "Z: very low MP, never conducts, soft → covalent molecular",
+        "Each is fixed by the trio: MP, conductivity, hardness",
+        "Answer: X ionic, Y metallic, Z covalent molecular ✓"
+      ],
+      "durationInFrames": 1170,
+      "caption": "X = ionic, Y = metallic, Z = covalent molecular.",
+      "voiceover": {
+        "text": "Quick check, three solids to classify. X melts at eight hundred and one degrees, doesn't conduct as a solid, but conducts when dissolved. Y melts at one thousand and eighty-five, conducts as a solid, and is malleable. Z melts at minus one hundred and fifteen, never conducts, and is soft. Pause and work it through. Right, let's check it. X conducts only when dissolved and has a high melting point, which is the ionic fingerprint, so X is an ionic compound. Y conducts as a solid and is malleable, which only metals do, so Y is a metallic element, copper in fact. Z has a very low melting point, never conducts, and is soft, which is covalent molecular. So X ionic, Y metallic, Z covalent molecular, and the trio sorted all three."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Four structural types: ionic, covalent molecular, covalent network, metallic.",
+        "Bonding determines structure, and structure determines properties.",
+        "Classify with the trio: melting point, conductivity, hardness.",
+        "Conductivity needs mobile charges; solid ionic won't conduct.",
+        "Graphite conducts (delocalised electrons); diamond doesn't (all bonds fixed)."
+      ],
+      "finalPrompt": "Classifying bonding? Ask MP, then conductivity, then hardness.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: four types, structure→property, the diagnostic trio, graphite vs diamond.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, there are four structural types, ionic, covalent molecular, covalent network, and metallic. Second, the bonding type determines the structure, and the structure determines every physical property. Third, classify an unknown with the diagnostic trio, melting point, conductivity, and hardness. Fourth, conductivity needs mobile charge carriers, so a solid ionic compound won't conduct, only the molten or dissolved form will. And fifth, graphite conducts because of its delocalised electrons, while diamond doesn't because all its bonds are fixed. Next lesson we go deep on the first type, ionic bonding. See you next lesson."
+      }
+    }
+  ]
+}

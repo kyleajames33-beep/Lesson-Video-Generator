@@ -1,0 +1,198 @@
+{
+  "title": "Spectroscopic Analysis, UV-Vis and AAS",
+  "subtitle": "Reading concentration from absorbed light",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8: Applying Chemical Ideas",
+  "syllabusDotPoints": [
+    "conduct investigations and/or process data to determine the concentration of coloured species and/or metal ions using colourimetry or UV-visible spectrophotometry, and atomic absorption spectroscopy"
+  ],
+  "moduleLessonCount": 16,
+  "nesaOutcomes": ["CH12-15", "CH11/12-4", "CH11/12-5", "CH11/12-7"],
+  "inquiryQuestion": "How are the ions present in the environment identified and measured?",
+  "lessonIntent": "Students can apply the Beer-Lambert law, read an unknown from a calibration curve, explain that AAS measures ground-state atoms after atomisation, and choose between UV-Vis and AAS for a task.",
+  "examSkill": "Use A = εcl and its rearrangement, interpolate within a calibration range, and justify technique choice by sensitivity, sample type, and limitations like matrix effects.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, spectroscopic analysis with UV-Vis and AAS. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Spectroscopic Analysis, UV-Vis and AAS (Year 12 Chemistry, Module 8, Lesson 4)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "How do you weigh lead you can't even see?",
+      "body": "Trace lead in drinking water can sit far below any colour. Yet labs report it to parts per billion.",
+      "callout": "Let the atoms tell you, by the light they swallow.",
+      "durationInFrames": 660,
+      "caption": "Spectroscopy measures concentration from how much light a sample absorbs.",
+      "voiceover": {
+        "text": "OK, here's a hard problem. There's lead in a glass of drinking water, but it's so dilute there's no colour, no precipitate, nothing you can see. And yet a lab can report that lead down to parts per billion. How? You let the atoms tell you, by the light they swallow. Every species absorbs light in its own way, and the amount of light absorbed depends on how much is there. Today, two techniques built on that idea, UV-Vis spectroscopy for coloured species, and atomic absorption spectroscopy, AAS, the workhorse for trace metals. Plus the law that ties absorbance to concentration."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "UV-Vis and the Beer-Lambert law",
+      "body": "Pass light through a solution, measure what's absorbed, and link that absorbance to concentration.",
+      "bullets": [
+        {"text": "Coloured species absorb visible light; more particles absorb more."},
+        {"text": "Beer-Lambert law: A = εcl, absorbance proportional to concentration."},
+        {"text": "Rearrange to find concentration: c = A ÷ (εl)."}
+      ],
+      "secondary": "A is absorbance with no units, ε is molar absorptivity, c is concentration, and l is the path length in cm. Don't drop the l.",
+      "callout": "Absorbance tracks concentration, with the path length in.",
+      "durationInFrames": 1080,
+      "caption": "Beer-Lambert: A = εcl, so c = A ÷ (εl). Keep the path length.",
+      "voiceover": {
+        "text": "Start with UV-Vis. The instrument isolates one wavelength, sends it through your solution, and measures how much light gets absorbed. Coloured species absorb visible light selectively, and the more absorbing particles there are, the more light disappears. That relationship is the Beer-Lambert law, A equals epsilon c l. A is the absorbance, with no units. Epsilon is the molar absorptivity, a constant for that species at that wavelength. c is the concentration, and l is the path length the light travels through the sample, in centimetres. To find an unknown concentration, rearrange to c equals A over epsilon l. And the classic slip is dropping the l. The full law is A equals epsilon c l, not just epsilon c."
+      }
+    },
+    {
+      "id": "concept-calibration",
+      "type": "concept",
+      "heading": "The calibration curve",
+      "body": "Build a line from standards of known concentration, then read the unknown off it by interpolation.",
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          {"label": "0.50", "value": 0.08},
+          {"label": "1.00", "value": 0.16},
+          {"label": "1.50", "value": 0.24},
+          {"label": "2.00", "value": 0.32}
+        ],
+        "unit": "absorbance"
+      },
+      "bullets": [
+        {"text": "Measure absorbance for several standards at one wavelength."},
+        {"text": "Plot absorbance on the y-axis against concentration on the x-axis."},
+        {"text": "Read the unknown across to the line, then down to concentration."}
+      ],
+      "secondary": "If Beer-Lambert holds, the plot is linear through the origin. The unknown must sit inside the calibrated range, so interpolate, never extrapolate.",
+      "callout": "Standards first, then read the unknown inside the range.",
+      "durationInFrames": 1080,
+      "caption": "Plot standards' absorbance vs concentration; interpolate the unknown.",
+      "voiceover": {
+        "text": "A single absorbance number means little on its own. It becomes defensible when you compare it against standards, and that's what a calibration curve does. You prepare several standard solutions of known concentration, measure each one's absorbance at the same wavelength, and plot absorbance up the side against concentration along the bottom. If the system obeys Beer-Lambert, that plot is a straight line through the origin. Now measure your unknown's absorbance, run across to the line, and drop down to read its concentration. One rule that protects your marks. The unknown must fall inside the range you calibrated. You interpolate between standards, you never extrapolate past the highest one, because the line might curve out there."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Beer-Lambert calculation",
+      "question": "A solution has absorbance A = 0.480, with ε = 120 L mol⁻¹ cm⁻¹ and path length l = 1.00 cm. Find the concentration.",
+      "coachNote": "Rearrange A = εcl. Keep the path length in the denominator.",
+      "steps": [
+        "Beer-Lambert: A = εcl, so c = A ÷ (εl)",
+        "c = 0.480 ÷ (120 × 1.00)",
+        "c = 0.480 ÷ 120",
+        "Answer: c = 4.00 × 10⁻³ mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1140,
+      "caption": "c = 0.480 ÷ (120 × 1.00) = 4.00 × 10⁻³ mol L⁻¹.",
+      "voiceover": {
+        "text": "Let's use the law. A solution has an absorbance of nought-point-four-eight, the molar absorptivity is one hundred and twenty, and the path length is one centimetre. Find the concentration. Step one, start from A equals epsilon c l, and rearrange to c equals A over epsilon l. Step two, substitute. Nought-point-four-eight over one hundred and twenty times one. Step three, since the path length is one, that's just nought-point-four-eight over one hundred and twenty. Step four, which gives four times ten to the minus three moles per litre. The path length was one here, so it didn't change the number, but write it in anyway, because when the cuvette isn't one centimetre, dropping it gives you the wrong answer."
+      }
+    },
+    {
+      "id": "concept-aas",
+      "type": "concept",
+      "heading": "Atomic absorption spectroscopy",
+      "body": "Atomise the sample into free atoms, then measure the element-specific light those atoms absorb.",
+      "bullets": [
+        {"text": "A flame or graphite furnace atomises the sample into free atoms."},
+        {"text": "A hollow cathode lamp emits the element's characteristic wavelength."},
+        {"text": "Ground-state atoms absorb it; the drop in signal gives concentration."}
+      ],
+      "secondary": "AAS does not detect ions in solution. It measures ground-state atoms produced after atomisation, which is exactly why students lose this mark.",
+      "callout": "It reads atoms, not the ions you started with.",
+      "durationInFrames": 1110,
+      "caption": "AAS atomises the sample; ground-state atoms absorb the lamp's wavelength.",
+      "voiceover": {
+        "text": "Now AAS, the trace-metal specialist. The clever part is that each element absorbs light at its own characteristic wavelengths, which makes the method extremely specific. Here's the sequence. The sample is fed into a flame or a graphite furnace, where it's atomised, broken down into free, ground-state atoms. Then a hollow cathode lamp, matched to your target metal, shines that element's exact wavelength through the atomised sample. If those atoms are present, they absorb some of the light, and the drop in signal tells you the concentration against calibration standards. And here is the mark students throw away. AAS does not detect ions in solution. It measures ground-state atoms, produced after atomisation. Say atoms, not ions."
+      }
+    },
+    {
+      "id": "concept-compare",
+      "type": "concept",
+      "heading": "UV-Vis or AAS?",
+      "body": "Match the technique to the sample. Colour points to UV-Vis; trace metals point to AAS.",
+      "bullets": [
+        {"text": "UV-Vis and colourimetry suit coloured species or coloured complexes."},
+        {"text": "AAS is sensitive and element-specific for trace metals like Pb and Cd."},
+        {"text": "AAS limits: one element per run, matrix effects, higher cost."}
+      ],
+      "secondary": "A high calcium or magnesium matrix can suppress an AAS lead result. The fix is matrix-matching the standards to the sample.",
+      "callout": "No technique is universally best; justify the choice.",
+      "durationInFrames": 1110,
+      "caption": "Coloured species → UV-Vis; trace metals → AAS, but mind matrix effects.",
+      "voiceover": {
+        "text": "So when do you reach for which? Match the technique to the sample. If the target is a coloured species, or a metal you can develop a colour with, UV-Vis or colourimetry is simple, fast, and cheap. If the question is how much of this particular metal, even at very low concentration, AAS wins, because it's sensitive and element-specific. But AAS isn't magic, and the exam wants you to know its limits. It usually measures one element per run, because each element needs its own lamp. It suffers matrix effects, where other substances in the sample interfere, so a high calcium and magnesium background can suppress a lead reading. And the instrument is costlier than wet chemistry. The fix for matrix effects is to matrix-match your standards to the sample. Always name a limitation when you evaluate AAS."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: writing A = εc and dropping the path length l. The full Beer-Lambert law is A = εcl.",
+      "secondary": "Trap 2: saying AAS detects ions in solution. It measures ground-state atoms after atomisation. Trap 3: extrapolating beyond the highest standard instead of interpolating inside the range.",
+      "mistakeTag": "Where spectroscopy marks vanish",
+      "callout": "Keep the l, AAS reads atoms, interpolate only.",
+      "durationInFrames": 1230,
+      "caption": "Don't drop l; AAS reads atoms not ions; interpolate, never extrapolate.",
+      "voiceover": {
+        "text": "Three traps. Trap one, writing the Beer-Lambert law as A equals epsilon c and dropping the path length. The full law is A equals epsilon c l, and the l matters whenever the cuvette isn't one centimetre. Trap two, saying AAS detects ions in solution. It doesn't. The sample is atomised first, and what absorbs the light is the free, ground-state atoms. Get the wording right. Trap three, reading an unknown by extrapolating past your highest standard. The calibration line is only trustworthy across the range you measured, so your unknown must sit inside it, and you interpolate. Keep the path length, say atoms not ions, and stay inside the calibrated range."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "An unknown gives absorbance 0.201. Standards: 1.00 mg L⁻¹ → A = 0.161, and 1.50 mg L⁻¹ → A = 0.242. Estimate the concentration.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "0.201 lies between the two standard absorbances 0.161 and 0.242",
+        "It sits roughly halfway: (0.201 − 0.161) ÷ (0.242 − 0.161) ≈ 0.5",
+        "So the concentration is about halfway between 1.00 and 1.50 mg L⁻¹",
+        "This is interpolation, inside the calibrated range",
+        "Answer: about 1.25 mg L⁻¹ ✓"
+      ],
+      "durationInFrames": 1170,
+      "caption": "0.201 sits between the standards, giving about 1.25 mg L⁻¹ by interpolation.",
+      "voiceover": {
+        "text": "Quick check. An unknown gives an absorbance of nought-point-two-zero-one. Two standards bracket it, one milligram per litre reads nought-point-one-six-one, and one-point-five milligrams per litre reads nought-point-two-four-two. Estimate the concentration. Pause and work it through. Right, let's check it. Step one, notice nought-point-two-zero-one sits between those two absorbances. Step two, work out where, the gap from the lower standard divided by the total gap is about a half. Step three, so the concentration is roughly halfway between one and one-point-five milligrams per litre. Step four, and this is interpolation, safely inside the calibrated range. Step five, that gives about one-point-two-five milligrams per litre."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "UV-Vis links absorbance to concentration through A = εcl, so c = A ÷ (εl).",
+        "Build a calibration curve from standards and interpolate the unknown.",
+        "AAS atomises the sample, then ground-state atoms absorb the lamp's wavelength.",
+        "AAS suits trace metals; UV-Vis suits coloured species.",
+        "Name an AAS limitation: one element per run, matrix effects, or cost."
+      ],
+      "finalPrompt": "Choosing a technique? Coloured species or trace metal, and what's the limitation?",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: Beer-Lambert, calibration, AAS atomisation, technique choice, limitations.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, UV-Vis links absorbance to concentration through the Beer-Lambert law, A equals epsilon c l, so concentration is A over epsilon l. Second, you build a calibration curve from standards and interpolate the unknown inside that range. Third, AAS atomises the sample first, and the free ground-state atoms absorb the lamp's characteristic wavelength. Fourth, AAS suits trace metals while UV-Vis suits coloured species. And fifth, whenever you evaluate AAS, name a limitation, one element per run, matrix effects, or cost. Match the technique to the sample, and state its limits. See you next lesson."
+      }
+    }
+  ]
+}

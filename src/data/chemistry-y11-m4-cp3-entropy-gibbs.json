@@ -1,0 +1,289 @@
+{
+  "title": "Checkpoint 3, Entropy & Gibbs Free Energy",
+  "subtitle": "Boss-fight synthesis of Module 4 Lessons 11–13",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Checkpoint 3",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Synthesise IQ3, entropy sign prediction, ΔS° calculation, and Gibbs free energy spontaneity"
+  ],
+  "lessonIntent": "Students can predict ΔS sign, calculate ΔS° from a table, then combine with ΔH° to find ΔG° and decide spontaneity.",
+  "examSkill": "Move from qualitative ΔS prediction → quantitative ΔS° → ΔG° = ΔH° − TΔS°, including the kJ/J unit conversion.",
+  "productionRole": "production",
+  "productionNotes": "Final boss-fight covering M4 L11-L13. Three walkthroughs: predict ΔS sign, calculate ΔS° from table, calculate ΔG° + decide spontaneity + T_cross. Pitfalls: always-positive-ΔS, element-S°-zero, spontaneous-means-fast. Ends Module 4.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Checkpoint 3, IQ3: Entropy & Gibbs. Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Checkpoint three. Entropy and Gibbs Free Energy. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint3/title.2976b32408d2.mp3"
+      }
+    },
+    {
+      "id": "cold-open",
+      "type": "hook",
+      "heading": "Will the reaction actually go? Three steps to the answer.",
+      "body": "IQ3 is the climax of the module. To decide whether a reaction is spontaneous, you walk a ladder: predict ΔS, calculate ΔS°, then combine with ΔH° via Gibbs. One process, three skills.",
+      "bullets": [
+        {
+          "text": "Step 1: predict ΔS sign from gas moles (L11).",
+          "at": 5
+        },
+        {
+          "text": "Step 2: calculate ΔS° from a table (L12).",
+          "at": 12
+        },
+        {
+          "text": "Step 3: ΔG° = ΔH° − TΔS° → sign decides (L13).",
+          "at": 19
+        },
+        {
+          "text": "Negative ΔG° means thermodynamically spontaneous.",
+          "at": 26
+        }
+      ],
+      "callout": "Three steps from disorder prediction to a spontaneity answer.",
+      "image": "m4cp3ColdOpenScenarios",
+      "durationInFrames": 1170,
+      "caption": "ΔS sign → ΔS° value → ΔG°; the IQ3 ladder.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "IQ3 is the climax of the module. To decide whether a reaction is spontaneous, you climb a ladder of three skills. First, predict the sign of delta S by counting gas moles — that's qualitative. Second, calculate delta S zero from a standard entropy table — that's quantitative. Third, combine with delta H zero using the Gibbs equation — delta G zero equals delta H zero minus T delta S zero. The sign of delta G zero is your final answer. Negative means thermodynamically spontaneous.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint3/cold-open.cf161c76eedb.mp3"
+      }
+    },
+    {
+      "id": "decision-tree",
+      "type": "concept",
+      "heading": "The IQ3 decision tree",
+      "body": "Read the question and match it to the right skill.",
+      "bullets": [
+        {
+          "text": "Asked for ΔS sign? → Count gas moles (L11).",
+          "at": 5
+        },
+        {
+          "text": "Given a table of S° values? → Σ products − Σ reactants (L12).",
+          "at": 12
+        },
+        {
+          "text": "Asked for spontaneity at given T? → ΔG° = ΔH° − TΔS° (L13).",
+          "at": 19
+        },
+        {
+          "text": "Asked for crossover T? → T = ΔH°/ΔS° (L13).",
+          "at": 26
+        }
+      ],
+      "callout": "Sign → S° value → Gibbs. Crossover T = ΔH°/ΔS°.",
+      "durationInFrames": 1500,
+      "caption": "Decision tree for IQ3 skills.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1080,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "The IQ3 decision tree. Think of it like climbing a three-rung ladder — predict, calculate, then combine. But unlike a physical ladder, you don't always need all three rungs; the question tells you where to start. Asked for the sign of delta S — count gas moles from Lesson eleven. Given a table of standard entropies — apply products minus reactants from Lesson twelve. Asked for spontaneity at a given temperature — use Gibbs from Lesson thirteen, delta G equals delta H minus T delta S. Asked for the crossover temperature — set delta G to zero, so T equals delta H over delta S.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint3/decision-tree.0454441e518d.mp3"
+      },
+      "diagram": {
+        "type": "gibbsSpontaneity"
+      }
+    },
+    {
+      "id": "walkthrough-1",
+      "type": "workedExample",
+      "heading": "Walkthrough 1, predict ΔS sign",
+      "question": "Predict the sign of ΔS for: (a) 2NO(g) + O₂(g) → 2NO₂(g); (b) CaCO₃(s) → CaO(s) + CO₂(g); (c) H₂O(l) → H₂O(s).",
+      "coachNote": "Count gas moles on each side. State changes matter too.",
+      "unitCancel": {
+        "left": "Δn(gas)",
+        "right": "Δn(gas)",
+        "result": "ΔS sign"
+      },
+      "steps": [
+        "Known: three equations with different gas-mole changes.",
+        "Find: sign of ΔS for each.",
+        "(a) Reactant gas = 3 mol; product gas = 2 mol; Δn = −1 → ΔS negative.",
+        "(b) Reactant gas = 0; product gas = 1; Δn = +1 → ΔS positive.",
+        "Formula: more disorder = more arrangements (gas > liquid > solid).",
+        "Substitute: count Δn(gas) for each = (a) 2 − 3 = -1; (b) 1 − 0 = 1; (c) state change l → s.",
+        "(c) Liquid → solid → ΔS strongly negative (freezing).",
+        "Answer = 3 signs predicted: (a) negative; (b) positive; (c) negative (freezing is ordering)."
+      ],
+      "durationInFrames": 1410,
+      "caption": "Predictions: (a) − (b) + (c) − . Gas moles + state change.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Walkthrough one — predict three signs. Part a: two NO plus O two giving two NO two — three moles of gas become two. Delta n is minus one, so delta S negative. Part b: calcium carbonate decomposing — zero gas moles becomes one. Delta n plus one, delta S positive. Part c: liquid water freezing to solid ice — that's an ordering process, delta S strongly negative.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint3/walkthrough-1.c90642c2b3ec.mp3"
+      }
+    },
+    {
+      "id": "walkthrough-2",
+      "type": "workedExample",
+      "heading": "Walkthrough 2, calculate ΔS°",
+      "question": "Calculate ΔS° for 2H₂(g) + O₂(g) → 2H₂O(l). Use S°[H₂(g)] = 130.7, S°[O₂(g)] = 205.2, S°[H₂O(l)] = 69.9 J K⁻¹ mol⁻¹.",
+      "coachNote": "Sum products − sum reactants, scaled by coefficients. Verify sign against Δn(gas).",
+      "unitCancel": {
+        "left": "J K⁻¹ mol⁻¹",
+        "right": "J K⁻¹ mol⁻¹",
+        "result": "J K⁻¹ mol⁻¹"
+      },
+      "steps": [
+        "Known: S° values; coefficients in the equation.",
+        "Find: ΔS° in J K⁻¹ mol⁻¹.",
+        "Σ S°(products) = 2 × 69.9 = 139.8 J K⁻¹ mol⁻¹.",
+        "Σ S°(reactants) = 2 × 130.7 + 1 × 205.2 = 261.4 + 205.2 = 466.6 J K⁻¹ mol⁻¹.",
+        "Formula: ΔS° = Σ S°(products) − Σ S°(reactants).",
+        "Substitute: ΔS° = 139.8 − 466.6.",
+        "Check: 3 mol gas → 0 mol gas (liquid), strongly negative, confirmed.",
+        "Answer: ΔS° = 326.8 J K⁻¹ mol⁻¹ decrease (i.e. −326.8 J K⁻¹ mol⁻¹)."
+      ],
+      "durationInFrames": 1620,
+      "caption": "ΔS° = 139.8 − 466.6 = −326.8 J K⁻¹ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Walkthrough two — calculate delta S zero for hydrogen combustion to liquid water. Sum products: two times sixty-nine-point-nine, one-thirty-nine-point-eight. Sum reactants: two times one-thirty-point-seven plus one times two-zero-five-point-two, total four-sixty-six-point-six. Delta S zero is one-thirty-nine-point-eight minus four-sixty-six-point-six — minus three hundred and twenty-six-point-eight joules per kelvin per mole. Three gas moles become two liquid moles — strongly negative confirms the qualitative prediction.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint3/walkthrough-2.bd6cc8c50724.mp3"
+      }
+    },
+    {
+      "id": "walkthrough-3",
+      "type": "workedExample",
+      "heading": "Walkthrough 3, Gibbs spontaneity + crossover T",
+      "question": "For N₂(g) + 3H₂(g) → 2NH₃(g), ΔH° = −92.4 kJ mol⁻¹ and ΔS° = −198.9 J K⁻¹ mol⁻¹. (a) ΔG° at 25 °C? (b) Crossover T where ΔG° = 0?",
+      "coachNote": "Convert ΔS° to kJ. Convert T to K. Watch the double negative.",
+      "unitCancel": {
+        "left": "kJ mol⁻¹",
+        "right": "kJ mol⁻¹",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: ΔH° = −92.4 kJ mol⁻¹, ΔS° = −198.9 J K⁻¹ mol⁻¹.",
+        "Find: ΔG° at 25 °C and crossover T.",
+        "Convert: T = 298 K, ΔS° = −0.1989 kJ K⁻¹ mol⁻¹.",
+        "Formula: ΔG° = ΔH° − TΔS°.",
+        "Substitute (a): ΔG° = −92.4 − (298 × −0.1989) = −92.4 + 59.27.",
+        "ΔG°(298 K) = −33.1 kJ mol⁻¹ → spontaneous at 25 °C.",
+        "Formula: set ΔG° = 0 → T_cross = ΔH°/ΔS°.",
+        "(b) Substitute: T_cross = (−92.4)/(−0.1989).",
+        "Answer: (a) ΔG° = 33.1 kJ mol⁻¹ released; (b) T_cross = 465 K (192 °C)."
+      ],
+      "durationInFrames": 1740,
+      "caption": "ΔG°(298 K) = −33.1 kJ mol⁻¹; T_cross ≈ 465 K.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Walkthrough three — Haber Gibbs. Delta H is minus ninety-two-point-four, delta S is minus one-ninety-eight-point-nine joules per kelvin per mole. Convert: temperature is two-ninety-eight kelvin, delta S in kilojoules is minus zero-point-one-nine-eight-nine. Substitute: delta G equals minus ninety-two-point-four minus two-ninety-eight times minus zero-point-one-nine-eight-nine. Watch the double negative — that becomes minus ninety-two-point-four plus fifty-nine-point-two-seven, giving minus thirty-three-point-one kilojoules per mole. Negative, so spontaneous at room temperature. Crossover temperature: set delta G to zero — T equals delta H over delta S, both negatives cancel, four hundred and sixty-five kelvin, about one-ninety-two Celsius.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint3/walkthrough-3.55d0ad545a4b.mp3"
+      }
+    },
+    {
+      "id": "exam-pitfalls",
+      "type": "misconception",
+      "heading": "Three classic IQ3 pitfalls",
+      "body": "Students often get these wrong: (1) thinking ΔS is always positive because the Second Law says so, wrong, that's the universe; the system alone can decrease. (2) Setting S° of elements to zero (confusing it with ΔH°f), wrong, S° of every substance is positive. (3) Treating a negative ΔG as a guarantee of fast reaction, wrong, that's thermodynamics, not kinetics. The correct rules: system ΔS can be negative, elements have nonzero S°, spontaneous ≠ fast.",
+      "callout": "System ΔS can be negative · elements S° ≠ 0 · spontaneous ≠ fast.",
+      "mistakeTag": "IQ3 pitfall montage",
+      "durationInFrames": 1500,
+      "caption": "Three IQ3 traps: always-positive-ΔS, element-S°-zero, spontaneous-means-fast.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Three classic IQ3 traps. One: students think delta S of the system is always positive because the Second Law says so. Wrong instinct. The correct rule: the Second Law applies to the universe; the system alone can decrease in entropy, as long as the surroundings compensate. Two: students set standard entropy of elements to zero, confusing it with delta H of formation. Wrong instinct. The correct rule: every substance has positive standard entropy — elements included. Three: students treat a negative delta G as a guarantee the reaction will go quickly. Wrong instinct. The correct rule: thermodynamics says it can go; kinetics says how fast. They're independent.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint3/exam-pitfalls.6f3997de5be6.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Boss-fight quick check",
+      "question": "For C₂H₄(g) + H₂(g) → C₂H₆(g), ΔH° = −137 kJ mol⁻¹ and ΔS° = −120.7 J K⁻¹ mol⁻¹. (a) Predict ΔS sign qualitatively. (b) Calculate ΔG° at 25 °C. (c) Find T_cross.",
+      "pausePrompt": "Pause: predict from gas moles, then Gibbs at 298 K, then T_cross = ΔH°/ΔS°.",
+      "answerSteps": [
+        "(a) 2 gas moles → 1 gas mole → ΔS negative (matches the given −120.7).",
+        "Convert: T = 298 K, ΔS° = −0.1207 kJ K⁻¹ mol⁻¹.",
+        "(b) ΔG° = −137 − (298 × −0.1207) = −137 + 35.97 = −101 kJ mol⁻¹ → spontaneous.",
+        "Formula: T_cross = ΔH°/ΔS° (set ΔG° = 0).",
+        "(c) T_cross = (−137) / (−0.1207) = 1135 K (about 862 °C).",
+        "Answer: (a) ΔS negative; (b) ΔG° = 101 kJ mol⁻¹ released (spontaneous); (c) T_cross ≈ 1135 K."
+      ],
+      "durationInFrames": 1620,
+      "caption": "ΔS −; ΔG°(298)=−101 kJ mol⁻¹ (spontaneous); T_cross ≈ 1135 K.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 600,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Boss-fight quick check. Hydrogenation of ethene to ethane. Delta H minus one-thirty-seven, delta S minus one-twenty-point-seven joules per kelvin per mole. Pause and try. Part a: two gas moles become one, so delta S negative — matches the given value. Part b: convert delta S to kilojoules, minus zero-point-one-two-zero-seven. Substitute at two-ninety-eight kelvin: minus one-thirty-seven minus two-ninety-eight times minus zero-point-one-two-zero-seven, which is minus one-thirty-seven plus thirty-five-point-nine-seven — minus one-hundred-and-one kilojoules per mole. Spontaneous. Part c: crossover T equals delta H over delta S — both negatives cancel — eleven hundred and thirty-five kelvin, about eight hundred and sixty-two degrees Celsius.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint3/quick-check.429cecc30aa5.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "IQ3 closing summary",
+      "finalPrompt": "Always check: spontaneous means thermodynamically allowed, never automatically fast.",
+      "points": [
+        "Predict ΔS sign qualitatively from gas moles (L11).",
+        "Calculate ΔS° = Σ S°(products) − Σ S°(reactants) (L12); elements ≠ 0.",
+        "Convert ΔS° from J to kJ before Gibbs.",
+        "ΔG° = ΔH° − TΔS° decides spontaneity; T in kelvin.",
+        "T_cross = ΔH°/ΔS° (set ΔG° = 0). Spontaneous ≠ fast."
+      ],
+      "durationInFrames": 1500,
+      "caption": "Three skills, one Gibbs equation, one decision rule.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "IQ3 closing summary — and the end of Module four. Five takeaways. One: predict delta S sign qualitatively from gas moles. Two: calculate delta S zero as sum of products minus reactants — and remember, standard entropy of elements is not zero. Three: convert delta S zero from joules to kilojoules before using it in Gibbs. Four: delta G zero equals delta H zero minus T delta S zero decides spontaneity, with T in kelvin. Five: the crossover temperature is delta H over delta S — and remember, spontaneous never automatically means fast. Decision rule: spontaneous is thermodynamically allowed — kinetics is a separate question.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint3/summary.9ee55aeb7953.mp3"
+      }
+    }
+  ]
+}

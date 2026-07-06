@@ -1,0 +1,217 @@
+{
+  "title": "Precipitation Reactions and Qualitative Analysis",
+  "subtitle": "Identifying ions from what you see",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8: Applying Chemical Ideas",
+  "syllabusDotPoints": [
+    "conduct qualitative investigations using flame tests, precipitation and complexation reactions to test for the presence of ions in aqueous solution",
+    "use precipitation and net ionic equations to identify ions present in a sample"
+  ],
+  "moduleLessonCount": 16,
+  "nesaOutcomes": ["CH12-15", "CH11/12-2", "CH11/12-4", "CH11/12-7"],
+  "inquiryQuestion": "How are the ions present in the environment identified and measured?",
+  "lessonIntent": "Students can identify cations and anions from characteristic precipitates, gases and flame colours, write net ionic equations, and treat single tests as evidence rather than proof.",
+  "examSkill": "Match each observation to its ion, write the net ionic equation by stripping spectators, and combine tests to build a defensible ion profile rather than over-claiming from one result.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, precipitation reactions and qualitative analysis. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Precipitation Reactions and Qualitative Analysis (Year 12 Chemistry, Module 8, Lesson 3)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A forensic chemist's first questions",
+      "body": "A white powder arrives unlabelled. Not how much is here, but what ions are in it?",
+      "callout": "Each test is a clue, not a verdict.",
+      "durationInFrames": 660,
+      "caption": "Qualitative analysis identifies which ions are present, using characteristic observations.",
+      "voiceover": {
+        "text": "OK, picture a forensic lab. An unlabelled white powder lands on the bench, and the first question isn't how much is here, it's what is it? That's qualitative analysis, working out which ions are present from what you can see, a precipitate forming, a gas fizzing off, a flame flashing colour. And here's the mindset that earns marks. Each test is a clue, not a verdict. One white precipitate narrows it down, but you build a confident answer by stacking tests that all point the same way. Today, the anion tests, the cation tests, flame tests, and the net ionic equations behind them."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Qualitative versus quantitative",
+      "body": "Qualitative analysis asks what is present. It gives evidence for identity, never an amount.",
+      "bullets": [
+        {"text": "A positive test matches a known pattern for one specific ion."},
+        {"text": "It tells you identity, not concentration or mass."},
+        {"text": "One test rarely proves it; consistent tests build the case."}
+      ],
+      "secondary": "A white precipitate with silver nitrate says chloride may be present. It can't tell 0.001 from 1.0 mol L⁻¹ without measurement.",
+      "callout": "Identity, not amount, and never from a single test.",
+      "durationInFrames": 1050,
+      "caption": "Qualitative = which ion is present; it gives identity, not amount.",
+      "voiceover": {
+        "text": "First, get the framing right, because the exam tests it directly. Qualitative analysis answers what is in this sample, not how much. A positive test gives you evidence for identity, where the observation matches a known pattern for one specific ion. Compare that to quantitative analysis, which we did with titration and gravimetry, where you're after an amount. Two important habits. First, a single test rarely proves an identity on its own, so you stack consistent results to build confidence. And second, qualitative tells you nothing about concentration. A white precipitate with silver nitrate says chloride might be here, but whether it's a trace or a flood, you can't say without measuring."
+      }
+    },
+    {
+      "id": "concept-net-ionic",
+      "type": "concept",
+      "heading": "Net ionic equations",
+      "body": "Write the full ionic equation, then strip out the spectator ions to show what actually changes.",
+      "bullets": [
+        {"text": "Spectators appear identically on both sides; cross them out."},
+        {"text": "Chloride test: Ag⁺(aq) + Cl⁻(aq) → AgCl(s)."},
+        {"text": "Sulfate test: Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)."}
+      ],
+      "secondary": "Spectators like Na⁺ and NO₃⁻ take no part in the precipitation, so they don't belong in the net ionic equation.",
+      "callout": "Only the species that change survive the cut.",
+      "durationInFrames": 1020,
+      "caption": "Strip spectators: Ag⁺ + Cl⁻ → AgCl(s); Ba²⁺ + SO₄²⁻ → BaSO₄(s).",
+      "voiceover": {
+        "text": "These tests make far more sense written at the ionic level, because the net ionic equation shows the actual chemistry, not just the labels on the bottles. Take the chloride test. Silver nitrate plus sodium chloride. Write everything that's dissolved as separate ions, and you'll see sodium and nitrate sitting unchanged on both sides. Those are spectators, and you cross them out. What's left is the net ionic equation, silver ion plus chloride ion gives solid silver chloride. Same logic for sulfate, barium ion plus sulfate ion gives solid barium sulfate. The rule is simple. Only the species that actually change chemically survive into the net ionic equation."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "concept",
+      "heading": "The anion tests",
+      "body": "Three workhorse anion tests. Two give a white precipitate; carbonate gives a gas.",
+      "diagram": {
+        "type": "table",
+        "headers": ["Anion", "Reagent", "Observation"],
+        "rows": [
+          ["Cl⁻", "AgNO₃", "White AgCl"],
+          ["SO₄²⁻", "BaCl₂", "White BaSO₄"],
+          ["CO₃²⁻", "dilute acid", "CO₂ fizz"]
+        ]
+      },
+      "bullets": [
+        {"text": "Chloride: add AgNO₃, get a white precipitate of AgCl."},
+        {"text": "Sulfate: add BaCl₂, get a white precipitate of BaSO₄."},
+        {"text": "Carbonate: add dilute acid, get effervescence of CO₂."}
+      ],
+      "secondary": "Two white precipitates look alike, so the discriminator matters: BaSO₄ stays solid in acid, while BaCO₃ dissolves with fizzing.",
+      "callout": "Not every test is a precipitate; carbonate fizzes.",
+      "durationInFrames": 1110,
+      "caption": "Cl⁻ → white AgCl; SO₄²⁻ → white BaSO₄; CO₃²⁻ → CO₂ fizz.",
+      "voiceover": {
+        "text": "Now the anion tests, the ones you'll use constantly. Three workhorses. For chloride, add silver nitrate and you get a white precipitate of silver chloride. For sulfate, add barium chloride and you get a white precipitate of barium sulfate. And for carbonate, add dilute acid and you get effervescence, bubbles of carbon dioxide. Notice carbonate doesn't form a precipitate at all, it's identified by the gas. Now, two of those are both white precipitates, so how do you tell sulfate from carbonate? Add acid. Barium sulfate stays put, it's insoluble in acid, while barium carbonate dissolves and fizzes. That little discriminator shows up in exams a lot."
+      }
+    },
+    {
+      "id": "concept-cations",
+      "type": "concept",
+      "heading": "The cation tests",
+      "body": "Add sodium hydroxide and read the colour of the precipitate that forms.",
+      "bullets": [
+        {"text": "Fe²⁺ gives a green precipitate; Fe³⁺ gives red-brown."},
+        {"text": "Cu²⁺ gives a pale blue precipitate of Cu(OH)₂."},
+        {"text": "NH₄⁺ gives pungent ammonia gas when warmed."}
+      ],
+      "secondary": "Ca²⁺ gives a white precipitate with sodium carbonate. Combining a flame colour with the precipitate colour makes the call much stronger.",
+      "callout": "Colour of the hydroxide tells you the metal.",
+      "durationInFrames": 1080,
+      "caption": "With NaOH: Fe²⁺ green, Fe³⁺ red-brown, Cu²⁺ pale blue, NH₄⁺ ammonia.",
+      "voiceover": {
+        "text": "For the positive ions, the cations, your main tool is sodium hydroxide, and you read the colour of the precipitate. Iron two gives a green precipitate. Iron three gives a red-brown one. Copper two gives a pale blue precipitate of copper hydroxide. And ammonium is the odd one out, it gives no coloured solid, but warm it with sodium hydroxide and you get pungent ammonia gas. Calcium you'd test with sodium carbonate, giving a white precipitate. The real power comes from combining tests. A blue-green flame plus a pale blue precipitate with sodium hydroxide together make a very strong case for copper, much stronger than either one alone."
+      }
+    },
+    {
+      "id": "concept-flame",
+      "type": "concept",
+      "heading": "Flame tests as support",
+      "body": "Excited metal ions emit characteristic colours, but treat the colour as supporting evidence only.",
+      "bullets": [
+        {"text": "Li⁺ crimson, Na⁺ yellow, K⁺ lilac."},
+        {"text": "Ca²⁺ brick red, Ba²⁺ pale green, Cu²⁺ blue-green."},
+        {"text": "Use a clean nichrome wire to avoid carrying over colour."}
+      ],
+      "secondary": "Sodium's bright yellow can swamp weaker colours, so a flame test alone is never definitive proof of identity.",
+      "callout": "Fast clue, not final proof.",
+      "durationInFrames": 1020,
+      "caption": "Flame colours give a fast clue; sodium yellow can mask the rest.",
+      "voiceover": {
+        "text": "Flame tests are the quick first clue. Dip a clean nichrome wire in the sample, hold it in the flame, and excited metal ions release light at characteristic wavelengths as their electrons fall back down, you met that emission idea in Year 11. Lithium is crimson, sodium yellow, potassium lilac. Calcium is brick red, barium pale green, copper blue-green. But here's the limitation you must state. Sodium's bright yellow flame is so strong it can mask the weaker colours of other ions, and contamination is everywhere. So a flame test is supporting evidence, a fast pointer, never definitive proof on its own."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Two tests, two ions",
+      "question": "A solution gives a white precipitate with AgNO₃ and a pale blue precipitate with NaOH. Identify the ions and write the net ionic equation for each positive test.",
+      "coachNote": "Match each observation to its known pattern, then strip spectators.",
+      "steps": [
+        "White precipitate with AgNO₃ → chloride present",
+        "Net ionic: Ag⁺(aq) + Cl⁻(aq) → AgCl(s)",
+        "Pale blue precipitate with NaOH → copper(II) present",
+        "Net ionic: Cu²⁺(aq) + 2OH⁻(aq) → Cu(OH)₂(s)",
+        "Answer: the ions are Cl⁻ and Cu²⁺ ✓"
+      ],
+      "durationInFrames": 1350,
+      "caption": "White AgCl → Cl⁻; pale blue Cu(OH)₂ → Cu²⁺.",
+      "voiceover": {
+        "text": "Let's put it together. A solution gives a white precipitate with silver nitrate, and a pale blue precipitate with sodium hydroxide. Identify the ions and give the net ionic equation for each positive test. Step one, the white precipitate with silver nitrate. That matches chloride. Step two, the equation, silver ion plus chloride ion gives solid silver chloride, spectators stripped out. Step three, the pale blue precipitate with sodium hydroxide. That's the signature of copper two. Step four, its equation, copper two ion plus two hydroxide ions gives solid copper hydroxide. So the answer is chloride and copper two. Two independent observations, each matched to its pattern, each written as a clean net ionic equation."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: claiming a definite identity from one test. A single white precipitate is evidence, not proof.",
+      "secondary": "Trap 2: leaving spectator ions in the net ionic equation. Strip anything unchanged on both sides. Trap 3: not separating two white precipitates; BaSO₄ is insoluble in acid but BaCO₃ dissolves.",
+      "mistakeTag": "Where qualitative marks vanish",
+      "callout": "Stack tests, strip spectators, use acid to split the whites.",
+      "durationInFrames": 1230,
+      "caption": "One test isn't proof; remove spectators; acid distinguishes BaSO₄ from BaCO₃.",
+      "voiceover": {
+        "text": "Three traps. Trap one, declaring a definite identity from a single test. A white precipitate with silver nitrate is evidence for chloride, but on its own it's not proof, you back it with a second consistent test. Trap two, leaving spectator ions in your net ionic equation. Anything that appears unchanged on both sides, like sodium or nitrate, must be crossed out. Only the species that react belong. Trap three, treating two white precipitates as the same thing. Sulfate and carbonate both give white precipitates, but add acid and barium sulfate stays solid while barium carbonate dissolves with fizzing. That acid test is how you separate them. Stack your tests, strip your spectators, and use acid to split the whites."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A colourless solution gives a white precipitate with NaOH that is insoluble in excess, and a white precipitate with BaCl₂. Identify the cation and anion, with equations.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "White precipitate with NaOH, insoluble in excess → Mg²⁺",
+        "Mg²⁺(aq) + 2OH⁻(aq) → Mg(OH)₂(s)",
+        "White precipitate with BaCl₂ → SO₄²⁻",
+        "Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)",
+        "Answer: the ions are Mg²⁺ and SO₄²⁻ ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "Mg(OH)₂ white, insoluble in excess → Mg²⁺; BaSO₄ → SO₄²⁻.",
+      "voiceover": {
+        "text": "Quick check. A colourless solution gives a white precipitate with sodium hydroxide that stays insoluble in excess, and a white precipitate with barium chloride. Identify the cation and anion, with equations. Pause and work it through. Right, let's check it. Step one, the white precipitate with sodium hydroxide, insoluble in excess, and colourless. That points to magnesium. Step two, its equation, magnesium ion plus two hydroxide ions gives solid magnesium hydroxide. Step three, the white precipitate with barium chloride is the sulfate test. Step four, barium ion plus sulfate ion gives solid barium sulfate. So the ions are magnesium and sulfate. Two tests, two ions, two clean equations."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Qualitative analysis identifies which ions are present, never the amount.",
+        "Net ionic equations keep only the species that change; strip spectators.",
+        "Anions: Cl⁻ → white AgCl, SO₄²⁻ → white BaSO₄, CO₃²⁻ → CO₂ fizz.",
+        "Cations with NaOH: Fe²⁺ green, Fe³⁺ red-brown, Cu²⁺ pale blue.",
+        "Flame tests support a conclusion; combine tests for a confident answer."
+      ],
+      "finalPrompt": "Before you conclude: do my tests agree, and did I strip the spectators?",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: identity not amount, net ionic, anion tests, cation colours, flame support.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, qualitative analysis tells you which ions are present, never how much. Second, a net ionic equation keeps only the species that change, so strip the spectators. Third, the anion tests, chloride gives white silver chloride, sulfate gives white barium sulfate, and carbonate fizzes off carbon dioxide. Fourth, with sodium hydroxide, iron two is green, iron three is red-brown, and copper two is pale blue. And fifth, flame tests support your conclusion, but you combine several tests for a confident identification. Make your tests agree, and strip the spectators. See you next lesson."
+      }
+    }
+  ]
+}

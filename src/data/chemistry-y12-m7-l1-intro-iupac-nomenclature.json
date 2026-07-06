@@ -1,0 +1,228 @@
+{
+  "title": "Intro to Organic Chemistry & IUPAC Nomenclature I",
+  "subtitle": "Reading carbon's code: naming alkanes, alkenes and alkynes",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127)",
+    "analyse the shape of molecules formed between carbon atoms when a single, double or triple bond is formed between them"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": ["CH12-14", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "How do we systematically name organic chemical compounds?",
+  "lessonIntent": "Students can name straight-chain and branched alkanes, alkenes and alkynes up to C8 using IUPAC rules, and state the shape and bond angle at any carbon from its bond type.",
+  "examSkill": "Find the longest chain, number for lowest locants, name substituents alphabetically, and count every carbon (including branches) when verifying a molecular formula.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, organic chemistry and the IUPAC naming system. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Intro to Organic Chemistry & IUPAC Nomenclature I (Year 12 Chemistry, Module 7, Lesson 1)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A name that is a blueprint",
+      "body": "Read \"hex-1-ene\" off a label and you already know the structure: six carbons, a double bond, starting at carbon one.",
+      "callout": "An IUPAC name is a code you can decode and write.",
+      "durationInFrames": 690,
+      "caption": "An IUPAC name encodes chain length, functional group and position.",
+      "voiceover": {
+        "text": "OK, here's the thing about organic chemistry that makes the whole topic click. Every name is secretly a blueprint. Take hex-one-ene. The hex part tells you six carbons. The ene ending tells you there's a carbon to carbon double bond. And the one tells you that double bond starts at carbon number one. So before you've drawn anything, the name has already handed you the structure. That works in reverse too. Give me a structure, and there's exactly one correct name for it. By the end of today, you'll be able to read these names, and write them, for any alkane, alkene, or alkyne up to eight carbons."
+      }
+    },
+    {
+      "id": "concept-tetravalency",
+      "type": "concept",
+      "heading": "Why carbon runs the show",
+      "body": "Carbon has four valence electrons, so it forms four covalent bonds. That lets it build chains, branches and rings of almost any size.",
+      "bullets": [
+        {"text": "Four bonds per carbon: to other carbons and to H, O, N or halogens."},
+        {"text": "Carbon chains to itself, so structures can grow without limit."},
+        {"text": "Organic chemistry is the study of carbon compounds, whatever their source."}
+      ],
+      "secondary": "The misconception to drop: organic does not mean from living things. It means carbon based, and most are made industrially.",
+      "callout": "Tetravalency is the reason organic structures are so diverse.",
+      "durationInFrames": 1020,
+      "caption": "Carbon's four bonds give organic chemistry its endless structural variety.",
+      "voiceover": {
+        "text": "Let's start with why carbon, of all elements, gets a whole module to itself. Carbon sits in group fourteen, so it has four valence electrons, which means it forms four covalent bonds to complete its octet. That number, four, is everything. Carbon can bond to other carbons in straight chains, in branched chains, and in rings, and it can do that while also bonding to hydrogen, oxygen, nitrogen, and the halogens. No other element comes close to that flexibility, and it's why there are millions of organic compounds, with more made every year. One quick myth to clear up. Organic does not mean it came from a living thing. It just means the molecule is built around carbon. Plenty of organic compounds are synthesised in a factory, and they're every bit as organic as the ones in your cells."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Hydrocarbon: a compound of carbon and hydrogen only."},
+        {"text": "Functional group: the atoms that give a molecule its characteristic reactions."},
+        {"text": "Homologous series: a family sharing one functional group, each differing by a CH2 unit."},
+        {"text": "Isomers: same molecular formula, different structural arrangement."}
+      ],
+      "callout": "Spot the functional group first; everything else follows from it.",
+      "durationInFrames": 990,
+      "caption": "Hydrocarbon, functional group, homologous series, isomer.",
+      "voiceover": {
+        "text": "Four terms to lock in before we name anything. A hydrocarbon is a compound made of only carbon and hydrogen, nothing else. A functional group is the specific arrangement of atoms that gives a molecule its characteristic reactions, like a carbon double bond, or an oxygen hydrogen group. A homologous series is a family of compounds that all share the same functional group and differ from each other by one C H two unit, so methane, ethane, propane, and so on. And isomers are compounds with the same molecular formula but a different arrangement of atoms. Keep these straight, because the very first move in any naming question is to identify the functional group, and the suffix follows directly from it."
+      }
+    },
+    {
+      "id": "concept-general-formulas",
+      "type": "concept",
+      "heading": "Three families, three formulas",
+      "body": "The general formula tells you how saturated a hydrocarbon is, and the suffix tells you which family it belongs to.",
+      "image": "m7L1HydrocarbonFamilies",
+      "bullets": [
+        {"text": "Alkanes: CnH2n+2, only single bonds, suffix -ane (ethane)."},
+        {"text": "Alkenes: CnH2n, one C=C double bond, suffix -ene (ethene)."},
+        {"text": "Alkynes: CnH2n-2, one C(triple)C triple bond, suffix -yne (ethyne)."}
+      ],
+      "secondary": "Each double bond removes two hydrogens; a triple bond removes four. That is why the general formulas step down by two.",
+      "callout": "Count carbons, then check the H count against the right formula.",
+      "durationInFrames": 1050,
+      "caption": "Alkanes CnH2n+2, alkenes CnH2n, alkynes CnH2n-2.",
+      "voiceover": {
+        "text": "There are three hydrocarbon families you need cold, and each has a general formula. Alkanes have only single bonds, the general formula is C n H two n plus two, and the names end in ane, like ethane. Alkenes have one carbon to carbon double bond, the formula is C n H two n, and they end in ene, like ethene. Alkynes have one carbon to carbon triple bond, the formula is C n H two n minus two, and they end in yne, like ethyne. Here's the logic that ties them together. Every extra bond between two carbons costs you hydrogens. A double bond removes two hydrogens compared to the alkane, and a triple bond removes four. That's exactly why the formulas step down by two each time, and it's a fast way to check any molecular formula you write."
+      }
+    },
+    {
+      "id": "formula-naming-rules",
+      "type": "concept",
+      "heading": "The naming rules, in order",
+      "body": "An IUPAC name is built in a fixed sequence. Apply the steps in order and the name comes out unique every time.",
+      "bullets": [
+        {"text": "1. Find the longest continuous carbon chain. That is the parent name."},
+        {"text": "2. Number from the end nearest the first branch or multiple bond, for lowest locants."},
+        {"text": "3. Name substituents alphabetically with their locants (methyl, ethyl)."},
+        {"text": "4. For alkenes and alkynes, put the bond locant just before -ene or -yne."}
+      ],
+      "secondary": "A double or triple bond outranks a branch when you choose the numbering direction. Give the multiple bond the lowest locant.",
+      "callout": "Longest chain first; a branch can never sit in the parent name.",
+      "durationInFrames": 1140,
+      "caption": "Longest chain, lowest locants, alphabetical substituents, bond locant before the suffix.",
+      "voiceover": {
+        "text": "Here's the method, and the order matters. Step one, find the longest continuous carbon chain. That chain gives you the parent name, the meth, eth, prop, but, pent part. Step two, number the chain from the end nearest the first point of difference, so substituents and multiple bonds get the lowest possible locants. Step three, name each branch as a substituent, with its locant, and list them alphabetically, so ethyl comes before methyl. Step four, for alkenes and alkynes, the bond locant goes immediately before the suffix, so it's but-one-ene, not one-butene. One priority rule sits on top of all this. If there's a double or triple bond, it outranks a branch when you decide which way to number. The multiple bond always takes the lower number, even if that pushes a branch to a higher one."
+      }
+    },
+    {
+      "id": "concept-shapes",
+      "type": "concept",
+      "heading": "Shape straight from the bond",
+      "body": "You can read the geometry at any carbon directly from its bond type. No orbital theory required for the HSC.",
+      "bullets": [
+        {"text": "Single bonds only: tetrahedral, 109.5 degrees (methane)."},
+        {"text": "Part of a C=C double bond: trigonal planar, about 120 degrees (ethene)."},
+        {"text": "Part of a C(triple)C triple bond: linear, 180 degrees (ethyne)."}
+      ],
+      "secondary": "Always give both the shape name and the bond angle. Stating only one of the two loses a mark.",
+      "callout": "More bonds between two carbons pulls the shape flatter, then straighter.",
+      "durationInFrames": 1020,
+      "caption": "Single: tetrahedral 109.5. Double: trigonal planar 120. Triple: linear 180.",
+      "voiceover": {
+        "text": "Now a quick piece of geometry that you can read straight off the structure. If a carbon has only single bonds, it points to the corners of a tetrahedron, with bond angles of one hundred and nine point five degrees. That's methane. If a carbon is part of a double bond, it and its neighbours lie flat in a plane, trigonal planar, with angles of about one hundred and twenty degrees. That's ethene. And if a carbon is part of a triple bond, it's linear, a straight line, with a bond angle of one hundred and eighty degrees. That's ethyne. Notice the pattern, more bonds between two carbons pulls the shape flatter, and then straighter. One exam habit to build, always give both the shape name and the angle together. Writing trigonal planar on its own, or one hundred and twenty on its own, only earns half the marks."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Name a branched alkane",
+      "question": "Name CH3CH2CH(CH3)CH2CH3 and verify its molecular formula.",
+      "coachNote": "Trace the longest chain before you touch the branch.",
+      "steps": [
+        "Longest chain: CH3-CH2-CH-CH2-CH3 = 5 carbons, so the parent is pentane",
+        "Number from either end: the CH3 branch lands on C3 both ways",
+        "Substituent: a methyl group at C3, so the name is 3-methylpentane",
+        "Count all carbons: 5 in the chain + 1 in the branch = 6 carbons",
+        "Check with CnH2n+2: n = 6 gives C6H14 ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "CH3CH2CH(CH3)CH2CH3 is 3-methylpentane, C6H14.",
+      "voiceover": {
+        "text": "Let's name one cleanly. The condensed formula is C H three, C H two, C H bracket C H three, C H two, C H three. Step one, trace the longest continuous chain. Following the backbone gives five carbons, so the parent is pentane, and the lone C H three hangs off the middle. Step two, number the chain. From either end, that methyl branch lands on carbon three, so both directions agree. Step three, name the branch, a methyl group at carbon three, giving three-methylpentane. Now step four, the molecular formula, and this is where people slip. You have to count every carbon, the five in the chain plus the one in the branch, which is six carbons total. Check it against C n H two n plus two. With n equals six, that's C six H fourteen. Notice that the branch carbon is easy to forget, and forgetting it gives the wrong formula."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Name an alkene with a branch",
+      "question": "Write the IUPAC name for CH3CH2CH(CH3)CH=CH2.",
+      "coachNote": "The double bond outranks the branch when you number.",
+      "steps": [
+        "Functional group: a C=C, so this is an alkene; longest chain through it = 5 C → pentene",
+        "Number from the CH2= end so the double bond gets the lowest locant: C1=C2",
+        "The methyl branch then sits on C3",
+        "Assemble: double bond at C1, methyl at C3 → 3-methylpent-1-ene",
+        "Verify: 6 carbons, one C=C → CnH2n, C6H12 ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "CH3CH2CH(CH3)CH=CH2 is 3-methylpent-1-ene, C6H12.",
+      "voiceover": {
+        "text": "Now one with both a branch and a double bond, where the priority rule earns its keep. The formula is C H three, C H two, C H bracket C H three, C H double bond C H two. Step one, find the functional group, there's a carbon to carbon double bond, so it's an alkene, and the longest chain that includes that double bond is five carbons, so the parent is pentene. Step two, here's the key decision, you number from the end that gives the double bond the lowest locant. Starting from the C H two double bond end puts the double bond at carbon one. Step three, with that numbering, the methyl branch falls on carbon three. Step four, put it together, double bond at one, methyl at three, giving three-methylpent-one-ene. And checking the formula, six carbons with one double bond is C six H twelve. If you'd numbered from the other end to give the branch a lower number, you'd have broken the priority rule and lost the mark."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three naming traps",
+      "body": "Trap 1: numbering from the wrong end, like calling 2-methylbutane \"3-methylbutane\". Always choose lowest locants.",
+      "secondary": "Trap 2: forgetting branch carbons when you count the molecular formula, so C7H16 gets written as C6H14. Trap 3: putting a branch in the parent chain, instead of tracing the genuine longest chain.",
+      "mistakeTag": "Where nomenclature marks vanish",
+      "callout": "Lowest locants, count every carbon, longest chain wins.",
+      "durationInFrames": 1230,
+      "caption": "Lowest locants; count branch carbons; the parent is the longest chain.",
+      "voiceover": {
+        "text": "Three traps that quietly cost marks. Trap one, numbering from the wrong end. If you number two-methylbutane from the far side, you'd call it three-methylbutane, but the rule is lowest locants, so two-methylbutane is correct. Always check both directions and take the smaller number. Trap two, forgetting branch carbons when you work out the molecular formula. Take two-comma-two-dimethylpentane. The parent is five carbons, but there are two methyl branches, so the total is seven carbons, giving C seven H sixteen, not C six H fourteen. Count every carbon, including the ones hanging off the side. Trap three, putting a branch into the parent name because the drawing looked like a straight line. Redraw it if you have to, but the parent chain is always the genuine longest continuous path, and a substituent can never be part of it."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Name CH3CH2CH(CH3)CH2CH2CH3 and give its molecular formula.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Longest chain: 6 carbons → parent is hexane",
+        "Number from the end nearer the branch: methyl lands on C3 (not C4)",
+        "Name: 3-methylhexane",
+        "Count all carbons: 6 + 1 = 7 → CnH2n+2 gives C7H16",
+        "Answer: 3-methylhexane, C7H16 ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "CH3CH2CH(CH3)CH2CH2CH3 is 3-methylhexane, C7H16.",
+      "voiceover": {
+        "text": "Quick check, and watch the numbering direction. The formula is C H three, C H two, C H bracket C H three, then C H two, C H two, C H three. Pause and work it through. Right, let's check it. Step one, the longest chain is six carbons, so the parent is hexane. Step two, number from the end nearer the branch. From that end the methyl lands on carbon three, whereas the other direction would wrongly give carbon four, so we take three. Step three, the name is three-methylhexane. Step four, the molecular formula, six carbons in the chain plus one in the branch is seven carbons, so with C n H two n plus two that's C seven H sixteen. So it's three-methylhexane, C seven H sixteen. Lowest locants on the way in, and count the branch carbon on the way out."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Carbon's four bonds give organic chemistry its huge structural variety.",
+        "Alkanes CnH2n+2, alkenes CnH2n, alkynes CnH2n-2; suffixes -ane, -ene, -yne.",
+        "Name in order: longest chain, lowest locants, alphabetical substituents, bond locant before the suffix.",
+        "A multiple bond outranks a branch when choosing the numbering direction.",
+        "Shape from bond type: single tetrahedral 109.5, double trigonal planar 120, triple linear 180."
+      ],
+      "finalPrompt": "Every naming question: functional group first, then longest chain, then lowest locants.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: tetravalency, general formulas, the naming order, bond priority, shapes.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, carbon forms four bonds, and that single fact is why organic chemistry has such enormous structural variety. Second, the three families, alkanes are C n H two n plus two, alkenes are C n H two n, and alkynes are C n H two n minus two, ending in ane, ene, and yne. Third, build the name in order, longest chain for the parent, number for lowest locants, list substituents alphabetically, and put the bond locant right before the suffix. Fourth, when you choose the numbering direction, a double or triple bond outranks a branch. And fifth, you can read shape straight from the bond, single bonds are tetrahedral at one hundred and nine point five, a double bond is trigonal planar at one hundred and twenty, and a triple bond is linear at one hundred and eighty. Next lesson we name the functional group families and sort out the isomers. See you next lesson."
+      }
+    }
+  ]
+}

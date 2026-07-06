@@ -1,0 +1,285 @@
+{
+  "title": "Disease in Agriculture — Plants",
+  "subtitle": "When one fungus outruns a continent",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 6",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "assess the causes and effects of diseases on agricultural production, including plant diseases"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How are diseases transmitted?",
+  "lessonIntent": "Students can classify plant pathogens by type, assess both the economic and ecological effects of plant disease, and justify biosecurity as prevention.",
+  "examSkill": "Assess the causes and effects of a plant disease, separating economic from ecological consequences, and argue why prevention beats cure.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, disease in agriculture, starting with plants. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Disease in Agriculture — Plants (Year 12 Biology, Module 7, Lesson 6)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One nursery, then a whole continent",
+      "body": "In 2010 myrtle rust appeared at one NSW nursery. Within three years it had reached every Australian state.",
+      "callout": "How does one microscopic fungus outrun a continent?",
+      "image": "bioM7L6MyrtleRust",
+      "durationInFrames": 1505,
+      "caption": "Myrtle rust spread from one nursery to every Australian state within three years.",
+      "voiceover": {
+        "text": "In April twenty-ten, a single plant nursery in Gosford, New South Wales received a plant infected with myrtle rust, a fungus called Austropuccinia psidii. Within three years, that fungus had spread to every Australian state, infecting more than three hundred and fifty species in the myrtle family, eucalyptus, paperbark, bottlebrush, and tea tree, plants that had evolved for sixty-five million years with no exposure to it whatsoever. Today it threatens fourteen federally listed species, with an estimated horticultural impact in the hundreds of millions, and there's still no fully effective fungicide. So how does one microscopic fungus outrun an entire continent? And what does plant disease really cost? Let's dig in."
+      }
+    },
+    {
+      "id": "concept-matters",
+      "type": "concept",
+      "heading": "Why plant disease matters",
+      "body": "Plant disease does far more than dent yields, so you must assess both economic and ecological effects.",
+      "bullets": [
+        {
+          "text": "It causes roughly 10 to 16 percent of global crop losses every year."
+        },
+        {
+          "text": "It threatens Australia's agricultural economy, worth over 60 billion dollars."
+        },
+        {
+          "text": "It devastates native ecosystems, cascading into lost habitat and biodiversity."
+        }
+      ],
+      "secondary": "Losing a dominant native species, as myrtle rust does to the myrtle family, alters soil chemistry, changes water cycles, and removes habitat for dependent animals.",
+      "callout": "Always assess two things: the cause and the effects.",
+      "durationInFrames": 2145,
+      "caption": "Plant disease causes economic loss and ecological devastation, not just lower yield.",
+      "voiceover": {
+        "text": "Let's start with the scale, because the exam wants you to assess both causes and effects. Plant diseases caused by pathogens are responsible for roughly ten to sixteen percent of global crop losses every year, which is hundreds of billions of dollars and a direct threat to food security for billions of people. In Australia, where agriculture contributes over sixty billion dollars to the economy, plant disease is one of the most significant ongoing threats to production and to our export markets. But here's the part students forget, the effects go well beyond the farm. Plant diseases can devastate native ecosystems. When you lose a dominant native species, like what myrtle rust is doing to the myrtle family, it cascades, you lose habitat for dependent animals, soil chemistry shifts, water cycles change, and biodiversity drops. So whenever you assess a plant disease, address both the cause, which is the pathogen, and the effects, which are economic and ecological."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The terms you need",
+      "bullets": [
+        {
+          "text": "Plant pathogen: an agent, microbe, virus, or nematode, that causes plant disease."
+        },
+        {
+          "text": "Biosecurity: measures that prevent the introduction and spread of pests and diseases."
+        },
+        {
+          "text": "Crop loss: a reduction in yield, quality, or market value caused by disease."
+        },
+        {
+          "text": "Host resistance: a variety's ability to reduce infection or damage."
+        }
+      ],
+      "callout": "Biosecurity keeps the pathogen out; resistance limits the damage.",
+      "durationInFrames": 1790,
+      "caption": "Plant pathogen, biosecurity, crop loss, host resistance.",
+      "voiceover": {
+        "text": "Four terms before we go on. A plant pathogen is any agent that causes disease in plants, whether that's a microbe, a virus, or a nematode worm. Biosecurity is the set of measures used to prevent the introduction and spread of pests and diseases, and in Australia it's a national priority, enforced right at the border. Crop loss is a reduction in yield, quality, or market value caused by disease or other stress, and notice it isn't only about quantity, damaged produce can be unsaleable even if there's plenty of it. And host resistance is the ability of a particular plant variety to reduce the infection or damage a pathogen causes. So in short, biosecurity tries to keep the pathogen out, while host resistance limits the damage when it does get in."
+      }
+    },
+    {
+      "id": "concept-types",
+      "type": "concept",
+      "heading": "Four plant pathogen types",
+      "body": "Plant pathogens span four main groups, and each causes characteristic damage by a different mechanism.",
+      "bullets": [
+        {
+          "text": "Fungal: hyphae and enzymes, spread by airborne spores, like wheat stem rust."
+        },
+        {
+          "text": "Bacterial: enter via wounds and stomata, spread by water and tools, like fire blight."
+        },
+        {
+          "text": "Viral: replicate inside cells, spread by insect vectors, no cure once infected."
+        }
+      ],
+      "secondary": "Nematodes are soil roundworms that cause root galling, like root-knot nematode, costing an estimated 80 billion dollars globally each year.",
+      "callout": "Same pathogen families as animals, different species.",
+      "durationInFrames": 2280,
+      "caption": "Fungal, bacterial, viral, and nematode pathogens each damage plants differently.",
+      "voiceover": {
+        "text": "You already met the pathogen types back in lesson two, so let's see how they play out in plants. There are four main groups. Fungal pathogens push hyphae into plant tissue and release enzymes that break down cell walls, and they spread mainly as airborne spores, wheat stem rust and myrtle rust are the classic examples, and a bad rust season can wipe out an entire crop. Bacterial pathogens enter through wounds, stomata, or insect feeding sites, then produce toxins and block vascular tissue, and they spread via water, insects, and contaminated tools, like fire blight in apples and pears. Viral pathogens replicate inside plant cells and hijack their function, they spread mostly by insect vectors like aphids, and crucially, once a plant is infected with a virus, there is no cure, examples are tobacco mosaic virus and banana bunchy top virus. And the fourth group, nematodes, are soil-dwelling roundworms that cause root galling, like root-knot nematode, which alone costs an estimated eighty billion dollars worldwide every year."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Type",
+          "Spread route",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Fungal",
+            "Airborne spores",
+            "Wheat stem rust, myrtle rust"
+          ],
+          [
+            "Bacterial",
+            "Water, insects, tools",
+            "Fire blight, crown gall"
+          ],
+          [
+            "Viral",
+            "Insect vectors",
+            "TMV, banana bunchy top"
+          ],
+          [
+            "Nematode",
+            "Soil, water",
+            "Root-knot nematode"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-effects",
+      "type": "concept",
+      "heading": "Economic and ecological effects",
+      "body": "The damage runs from the visible symptom right through to lost markets and broken ecosystems.",
+      "bullets": [
+        {
+          "text": "Economic: reduced yield and quality, control costs, and lost export markets."
+        },
+        {
+          "text": "Ecological: loss of a dominant species, soil persistence, and altered habitat."
+        },
+        {
+          "text": "Many of Australia's worst plant diseases were introduced, not native."
+        }
+      ],
+      "secondary": "A single fire blight detection can trigger export bans on Australian apples, while crown gall can persist in vineyard soils for decades, preventing replanting.",
+      "callout": "Prevention is far cheaper than cure.",
+      "durationInFrames": 2090,
+      "caption": "Plant disease causes economic losses and ecological damage; prevention beats cure.",
+      "voiceover": {
+        "text": "Now let's trace the chain from symptom to real-world cost. On the economic side, you get reduced yield, fewer harvestable units per hectare, and reduced quality, where produce drops to a lower grade or becomes unsaleable. Then there are control costs, fungicides, resistant varieties, quarantine, and replanting, and Australian grape growers alone spend over a hundred million dollars a year just controlling downy mildew. And the big one for an exporter, lost market access, where a single fire blight detection can trigger bans on Australian apple exports. On the ecological side, you can lose a dominant native species, the pathogen can persist in soil for years, blocking replanting, and habitats get altered. And here's the policy punchline, many of Australia's most damaging plant diseases, myrtle rust, banana bunchy top, fire blight, were introduced from elsewhere. That's exactly why biosecurity exists, because preventing a pathogen's entry is exponentially cheaper than managing it once it's established."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "infect",
+            "label": "Infect"
+          },
+          {
+            "id": "yield",
+            "label": "Low yield"
+          },
+          {
+            "id": "cost",
+            "label": "Costs"
+          },
+          {
+            "id": "export",
+            "label": "Bans"
+          }
+        ],
+        "edges": [
+          {
+            "from": "infect",
+            "to": "yield"
+          },
+          {
+            "from": "yield",
+            "to": "cost"
+          },
+          {
+            "from": "cost",
+            "to": "export"
+          }
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Assess myrtle rust",
+      "question": "Myrtle rust is an introduced fungus with no cure that infects the new growth of native myrtle-family plants. Assess its causes and effects, and justify Australia's biosecurity response.",
+      "coachNote": "Separate cause from effects, then split effects into economic and ecological.",
+      "steps": [
+        "Cause: a fungal pathogen, spread by wind-dispersed spores and movement of infected plant material.",
+        "Economic effects: losses to the nursery and bush-food industries, plus ongoing research and control costs.",
+        "Ecological effects: critically endangered native species and loss of dominant myrtle-family trees in ecosystems.",
+        "Why it spread so fast: Australian hosts had no co-evolutionary exposure, so they had no natural resistance.",
+        "Biosecurity justified: with no cure, preventing entry and further spread is far cheaper than managing it."
+      ],
+      "durationInFrames": 2290,
+      "caption": "Fungal cause, economic and ecological effects, and biosecurity as the only cheap defence.",
+      "voiceover": {
+        "text": "Let's assess myrtle rust properly, the way an extended-response question demands. It's an introduced fungus, with no cure, that infects the new growth of native myrtle-family plants. First, the cause. It's a fungal pathogen, and it spreads by wind-dispersed spores and by the movement of infected plant material. Next, the effects, and you must split these. The economic effects include losses to the nursery industry, which is worth over nine hundred million dollars, losses to the bush-food industry, and ongoing research and management costs. The ecological effects are arguably worse, two native species, scrub turpentine and the penda, are now critically endangered as a direct result, and you can lose dominant myrtle-family trees across whole ecosystems. Now, why did it spread so fast? Because Australian hosts had zero co-evolutionary exposure to this pathogen, so they had no natural resistance built up. And that justifies the biosecurity response, because with no cure available, preventing entry and limiting further spread is far cheaper than trying to manage it after the fact."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking plant viruses can be cured with sprays. Once a plant has a virus, there is no cure; control is prevention only.",
+      "secondary": "Trap 2: thinking introduced pathogens are dangerous simply because they are foreign. The real reason is that native hosts have had no co-evolutionary exposure, so they carry no resistance. Origin is not the danger, absence of shared history is.",
+      "mistakeTag": "Where plant-disease marks vanish",
+      "callout": "No cure for plant viruses; the danger is no shared history.",
+      "durationInFrames": 1980,
+      "caption": "Plant viruses cannot be cured; introduced pathogens are dangerous due to no co-evolution.",
+      "voiceover": {
+        "text": "Two traps to clear up. Trap one, thinking a plant virus can be cured with the right spray. It can't. Unlike bacterial diseases, which can sometimes be managed with bactericides, or fungal diseases, which respond to fungicides, a plant viral infection has no cure once it's established. Management relies entirely on prevention, controlling insect vectors, using certified virus-free planting material, and destroying infected plants. That's why virus-free certification matters so much for bananas and grapevines. Trap two, assuming introduced pathogens are dangerous simply because they're foreign. That's not the real reason. They're dangerous because the native host plants have had no co-evolutionary exposure to them, so they carry no built-in resistance. In the pathogen's home range, hosts and pathogen have balanced each other over thousands of generations. So the danger isn't the pathogen's origin, it's the absence of a shared evolutionary history in the host population."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A grapevine shows mosaic mottling from a viral infection. A farmer asks which spray will cure it. Explain your answer, and state how the disease should be managed instead.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "No spray can cure a viral infection once the plant is infected; viruses replicate inside the plant's own cells.",
+        "Fungicides and bactericides target fungal and bacterial structures, which a virus does not have.",
+        "So management must be preventive, not curative.",
+        "Control the insect vectors, use certified virus-free planting material, and remove infected plants.",
+        "Answer: there is no curative spray; manage by prevention and removing infected plants."
+      ],
+      "durationInFrames": 1965,
+      "caption": "No spray cures a plant virus; manage by vector control and removing infected plants.",
+      "voiceover": {
+        "text": "Quick check. A grapevine shows mosaic mottling from a viral infection, and the farmer asks which spray will cure it. Explain your answer, and say how the disease should be managed instead. Pause and reason it through. Right. The honest answer is that no spray can cure a viral infection once the plant is infected, because the virus replicates inside the plant's own cells, and there's nothing external to target. Fungicides and bactericides work by attacking fungal or bacterial structures, but a virus simply doesn't have those structures. So management has to be preventive rather than curative. That means controlling the insect vectors that carry the virus, using certified virus-free planting material in the first place, and removing and destroying any infected plants to stop further spread. So the answer is, there's no curative spray, you manage it by prevention and by removing infected plants."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Plant disease causes 10 to 16 percent of global crop losses, plus ecological damage.",
+        "Four pathogen types: fungal, bacterial, viral, and nematode.",
+        "Assess effects in two halves: economic and ecological.",
+        "Plant viral infections have no cure; control is prevention only.",
+        "Introduced pathogens are dangerous because hosts have no co-evolved resistance."
+      ],
+      "finalPrompt": "Assessing a plant disease? Name the cause, then split effects into economic and ecological.",
+      "durationInFrames": 1735,
+      "caption": "Five takeaways: scale, four types, two effect halves, no viral cure, co-evolution.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, plant disease causes roughly ten to sixteen percent of global crop losses each year, plus serious ecological damage beyond the farm. Second, there are four main plant pathogen types, fungal, bacterial, viral, and nematode. Third, when you assess the effects, always split them into two halves, economic and ecological. Fourth, plant viral infections have no cure once established, so control is purely preventive, vector control and virus-free planting material. And fifth, introduced pathogens are so dangerous because native hosts have had no co-evolutionary exposure, and therefore no built-in resistance. Whenever you assess a plant disease, name the cause first, then split the effects into economic and ecological. Next lesson, the same questions for animal agriculture. See you there."
+      }
+    }
+  ]
+}

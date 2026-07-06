@@ -1,0 +1,209 @@
+{
+  "title": "Variation and Allele Frequency",
+  "subtitle": "Where variation comes from and what makes a gene pool shift",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 19",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6 — Genetic Change",
+  "syllabusDotPoints": [
+    "evaluate the effect of mutation, gene flow and genetic drift on the gene pool of populations (ACSBL091, ACSBL092)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-13",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does mutation introduce new alleles into a population?",
+  "lessonIntent": "Students can explain the sources of genetic variation and define evolution as a change in allele frequency, distinguishing natural selection from genetic drift.",
+  "examSkill": "Distinguish natural selection from genetic drift as causes of allele-frequency change using evidence about randomness and fitness.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, variation and allele frequency, and we close out Module 6. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Variation and Allele Frequency (Year 12 Biology, Module 6, Lesson 19)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "What if mutation simply stopped?",
+      "body": "On Daphne Major, finch beak genes mutate at about one in ten million bases. Without it, variation would run dry.",
+      "callout": "Mutation is the slow drip that keeps a gene pool alive.",
+      "image": "bioM6L19FinchVariation",
+      "durationInFrames": 870,
+      "caption": "The Grant finch study frames mutation as the ultimate source of new alleles.",
+      "voiceover": {
+        "text": "On the Galapagos island of Daphne Major, Peter and Rosemary Grant published in 2002 that the spontaneous mutation rate in the finch beak genes is about ten to the minus seven, that's roughly one in ten million bases per generation, a tiny trickle. Yet without that continuous low-level input, they calculated the standing genetic variation in the population would be exhausted within just two to four hundred generations. So here's the closing question for Module Six. Mutation is the ultimate source of new alleles, but if it stopped completely, what would happen to every biological process this whole module has been studying? Let's bring it together."
+      }
+    },
+    {
+      "id": "concept-sources",
+      "type": "concept",
+      "heading": "Three sources of variation",
+      "body": "Genetic variation in a population comes from three processes, each with a distinct role.",
+      "bullets": [
+        {"text": "Mutation creates genuinely new alleles in the DNA."},
+        {"text": "Recombination in meiosis shuffles existing alleles into new combinations."},
+        {"text": "Gene flow moves alleles between populations by migration."}
+      ],
+      "secondary": "Only mutation makes new alleles. Recombination rearranges what already exists, and gene flow transfers alleles between gene pools.",
+      "callout": "New, shuffled, or transferred: three different jobs.",
+      "durationInFrames": 930,
+      "caption": "Mutation creates, recombination shuffles, gene flow transfers alleles.",
+      "voiceover": {
+        "text": "Let's bring together where variation actually comes from, because there are three distinct sources and they don't do the same job. Mutation creates genuinely new alleles, a change in the DNA sequence that wasn't there before, and it's the only source of brand-new genetic material. Recombination during meiosis, the crossing over and independent assortment we met earlier in the module, shuffles existing alleles into new combinations, but it doesn't invent anything new. And gene flow moves alleles between populations by migration, transferring genetic material from one gene pool to another. So hold the three jobs apart, mutation makes new alleles, recombination shuffles what's already there, and gene flow transfers alleles between populations."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": ["Source", "What it does", "New alleles?"],
+        "rows": [
+          ["Mutation", "Changes the DNA sequence", "Yes, creates new"],
+          ["Recombination", "Shuffles alleles in meiosis", "No, rearranges"],
+          ["Gene flow", "Migration between populations", "New to that pool"]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Allele frequency: the proportion of a specific allele in a gene pool."},
+        {"text": "Gene pool: the total set of alleles in a population."},
+        {"text": "Genetic drift: random changes in allele frequencies, strongest in small populations."},
+        {"text": "Gene flow: the transfer of alleles between populations by migration."},
+        {"text": "Hardy-Weinberg equilibrium: a theoretical state where allele frequencies stay constant."}
+      ],
+      "callout": "Allele frequency is a proportion; the gene pool is the whole set.",
+      "durationInFrames": 930,
+      "caption": "Allele frequency, gene pool, genetic drift, gene flow, Hardy-Weinberg equilibrium.",
+      "voiceover": {
+        "text": "Five terms to be precise about. Allele frequency is the proportion of a specific allele in a gene pool, often written as a decimal or a percentage. The gene pool is the total set of all alleles in a population, the full collection you're drawing those proportions from. Genetic drift is random change in allele frequencies, and it's strongest in small populations where chance has a bigger say. Gene flow is the transfer of alleles between populations by migration. And Hardy-Weinberg equilibrium is a theoretical state where allele frequencies stay constant, generation to generation, when no evolutionary forces act, it's the baseline you compare reality against. The key pairing, allele frequency is a proportion, the gene pool is the whole set it comes from."
+      }
+    },
+    {
+      "id": "concept-evolution",
+      "type": "concept",
+      "heading": "Evolution is a change in allele frequency",
+      "body": "At the population level, evolution is defined simply as a change in allele frequency over generations.",
+      "bullets": [
+        {"text": "Allele frequency is the proportion of an allele in the gene pool."},
+        {"text": "If an allele gives a fitness advantage, its carriers leave more offspring."},
+        {"text": "So that allele rises in frequency over generations, which is evolution."}
+      ],
+      "secondary": "This is the link between an individual advantage and a population change: better survival and reproduction translate directly into a shifting allele frequency.",
+      "callout": "Individual advantage becomes population change through frequency.",
+      "durationInFrames": 900,
+      "caption": "Evolution is a change in allele frequency, driven by differences in fitness.",
+      "voiceover": {
+        "text": "Now the definition everything hinges on. At the population level, evolution is simply a change in allele frequency over generations, that's it, no more mysterious than that. Allele frequency, again, is the proportion of an allele in the gene pool. So picture an allele that gives its carriers a fitness advantage, maybe a beak shape that handles the available seeds better. Those carriers survive and reproduce more, so they leave more offspring, and each of those offspring carries copies of that allele. Generation after generation, the proportion of that allele in the gene pool rises, and that rise is evolution. This is the crucial link, an individual advantage becomes a population-level change, through the mechanism of shifting allele frequency."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Generations",
+        "yLabel": "Allele frequency",
+        "series": [
+          {
+            "label": "Favoured allele",
+            "color": "bio",
+            "points": [[0, 0.1], [0.2, 0.18], [0.4, 0.34], [0.6, 0.55], [0.8, 0.74], [1, 0.85]]
+          },
+          {
+            "label": "Alternative allele",
+            "color": "chem1",
+            "points": [[0, 0.9], [0.2, 0.82], [0.4, 0.66], [0.6, 0.45], [0.8, 0.26], [1, 0.15]]
+          }
+        ],
+        "markers": [
+          {"x": 0.6, "label": "advantage takes hold"}
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Selection or drift?",
+      "question": "In a large beetle population, a camouflage allele steadily rises from 20% to 70% as a new predator arrives. In a tiny isolated population, a neutral colour allele jumps from 30% to 65% in one generation after a flood kills most beetles. Which is natural selection and which is genetic drift?",
+      "coachNote": "Check two things: population size, and whether the allele affects fitness in the given environment.",
+      "steps": [
+        "Case 1: the change is consistent, directional, and tied to a predator, so the allele affects fitness.",
+        "Case 1: a large population plus a fitness reason means this is natural selection.",
+        "Case 2: the allele is neutral, the population is tiny, and the change followed a chance flood.",
+        "Case 2: a small population plus a random event with no fitness reason means this is genetic drift.",
+        "Answer: case 1 is natural selection; case 2 is genetic drift."
+      ],
+      "durationInFrames": 1140,
+      "caption": "Directional change with a fitness reason is selection; random change in a small population is drift.",
+      "voiceover": {
+        "text": "Let's work the distinction that the exam loves, selection versus drift. Case one, in a large beetle population, a camouflage allele steadily rises from twenty percent to seventy percent as a new predator arrives. Case two, in a tiny isolated population, a neutral colour allele jumps from thirty percent to sixty-five percent in a single generation after a flood kills most of the beetles. Which is which? For case one, the change is consistent, directional, and clearly tied to a predator, so the allele genuinely affects fitness. A large population plus a fitness reason, that's natural selection. For case two, the allele is neutral, it doesn't help survival, the population is tiny, and the change followed a chance flood. A small population plus a random event with no fitness reason, that's genetic drift. So case one is natural selection, case two is genetic drift. Always check population size, and whether the allele actually affects fitness."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The selection trap",
+      "body": "Trap: thinking that a change in allele frequency always means natural selection is occurring.",
+      "secondary": "Allele frequencies also change through genetic drift, mutation and gene flow. In small populations, genetic drift can cause large random frequency changes with no selective advantage at all. Identifying the mechanism requires evidence beyond the frequency change itself.",
+      "mistakeTag": "Why a frequency shift is not automatically selection",
+      "callout": "Selection is non-random; drift is pure chance.",
+      "durationInFrames": 930,
+      "caption": "A frequency change can come from drift, mutation or gene flow, not only selection.",
+      "voiceover": {
+        "text": "Here's the trap that separates the bands. Thinking that a change in allele frequency always means natural selection is occurring. It does not. Allele frequencies also change through genetic drift, through mutation, and through gene flow. In small populations especially, genetic drift can cause large, random frequency changes with no selective advantage whatsoever, just chance deciding who survives and breeds. So the core distinction is this, natural selection is non-random, the environment consistently favours certain variants for a biological reason, whereas genetic drift is random, chance events shift frequencies with no fitness reason at all. And identifying which mechanism is responsible always requires evidence beyond the frequency change itself, you have to look at population size and at fitness."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A researcher observes that a rare allele doubled in frequency in a small population over one generation, and concludes natural selection must favour it. Why is that conclusion unsafe, and what would you need to check?",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "A frequency change alone does not identify the mechanism that caused it.",
+        "The population is small, so genetic drift could easily produce a large random change.",
+        "You would need evidence that the allele affects fitness in this environment.",
+        "You would also distinguish drift, gene flow and mutation as alternative causes.",
+        "Answer: the conclusion is unsafe because drift can mimic selection in small populations; check whether the allele affects fitness before claiming selection."
+      ],
+      "durationInFrames": 990,
+      "caption": "A frequency jump in a small population could be drift; check fitness before claiming selection.",
+      "voiceover": {
+        "text": "Quick check. A researcher observes that a rare allele doubled in frequency in a small population over one generation, and concludes that natural selection must favour it. Why is that conclusion unsafe, and what would you need to check? Pause and reason it through. Right. The first problem is that a frequency change on its own does not tell you the mechanism that caused it. And critically, the population is small, which is exactly where genetic drift can produce a large random change by pure chance. So before claiming selection, you'd need evidence that the allele actually affects fitness in this environment, that carrying it genuinely improves survival or reproduction. You'd also want to rule out gene flow and mutation as alternative causes. So the conclusion is unsafe, because drift can easily mimic selection in a small population, you have to check fitness first."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Variation comes from mutation (new), recombination (shuffled) and gene flow (transferred).",
+        "Allele frequency is the proportion of an allele in the gene pool.",
+        "Evolution is a change in allele frequency over generations.",
+        "Natural selection is non-random; genetic drift is random.",
+        "A frequency change alone does not prove selection; check fitness and population size."
+      ],
+      "finalPrompt": "Explaining a frequency change? Ask: is it random drift, or a non-random fitness advantage?",
+      "durationInFrames": 930,
+      "caption": "Five takeaways: three sources, allele frequency, evolution defined, selection vs drift, evidence needed.",
+      "voiceover": {
+        "text": "Let's lock it in, and close out Module Six. Five things to take away. First, variation comes from three sources, mutation makes new alleles, recombination shuffles existing ones, and gene flow transfers them between populations. Second, allele frequency is the proportion of an allele in the gene pool. Third, evolution at the population level is defined as a change in allele frequency over generations. Fourth, natural selection is non-random while genetic drift is purely random, and that's the key separator. And fifth, a frequency change on its own does not prove selection, you have to check fitness and population size. Whenever you explain a frequency change, ask, is this random drift, or a non-random fitness advantage. That completes Module Six, well done."
+      }
+    }
+  ]
+}

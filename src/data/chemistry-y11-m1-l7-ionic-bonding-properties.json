@@ -1,0 +1,238 @@
+{
+  "title": "Ionic Bonding and Properties",
+  "subtitle": "Lattices, lattice energy, and Coulomb's law",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "investigate the differences between ionic and covalent compounds through:"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": [
+    "CH11-8",
+    "CH11/12-4",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What binds atoms together in elements and compounds?",
+  "lessonIntent": "Students can explain ionic properties from the lattice and predict melting-point trends using ion charge and ion size.",
+  "examSkill": "Use Coulomb's law (F ∝ q₁q₂/r²) to compare ionic melting points and explain conductivity in solid, molten, and dissolved states.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, ionic bonding and its properties. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Ionic Bonding and Properties (Year 11 Chemistry, Module 1, Lesson 7)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why MgO needs so much more heat",
+      "body": "NaCl melts at 801°C. MgO melts at 2852°C. Both are ionic lattices of positive and negative ions. What's the difference?",
+      "callout": "The charge on the ions changes everything.",
+      "durationInFrames": 660,
+      "caption": "MgO melts far hotter than NaCl despite both being ionic.",
+      "voiceover": {
+        "text": "OK, here's a number that should make you curious. Sodium chloride melts at eight hundred and one degrees. Magnesium oxide melts at two thousand eight hundred and fifty-two, more than three times hotter. And yet both are ionic, both are lattices of positive and negative ions held by electrostatic attraction. So what makes magnesium oxide cling together so much more fiercely? The answer is the charge on the ions, and once you can use one simple law to compare ionic compounds, melting point questions become some of the most predictable marks in the exam."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "The ionic lattice",
+      "body": "Ions don't form molecules. They build a giant 3D lattice where every ion is surrounded by opposite charges.",
+      "bullets": [
+        {
+          "text": "In NaCl, each Na⁺ is surrounded by 6 Cl⁻, and vice versa — 6:6 coordination."
+        },
+        {
+          "text": "The whole crystal is one giant structure, not separate molecules."
+        },
+        {
+          "text": "The formula NaCl just gives the simplest ratio of ions, 1:1."
+        }
+      ],
+      "secondary": "Strong electrostatic attraction acts in all directions at once, which is why ionic solids are so rigid and high-melting.",
+      "callout": "No molecules — just a repeating lattice of ions.",
+      "durationInFrames": 1110,
+      "caption": "NaCl: 6:6 coordination in a giant ionic lattice, not molecules.",
+      "voiceover": {
+        "text": "Let's start with the structure. Ionic compounds do not form discrete molecules. Instead, the ions arrange into a giant, repeating three-dimensional lattice, where every positive ion is surrounded by negative ions and every negative ion is surrounded by positives. In sodium chloride, each sodium ion is surrounded by exactly six chloride ions, and each chloride by six sodiums, which we call six to six coordination. The entire crystal is effectively one giant structure, so there's no such thing as a single sodium chloride molecule. The formula, N a C l, simply tells you the simplest ratio of ions, one to one. Because the electrostatic attraction acts in all directions at once, the lattice is extremely rigid, which is the root of nearly every ionic property."
+      },
+      "diagram": {
+        "type": "latticeVsElectronSea"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Lattice energy: charge and size",
+      "bullets": [
+        {
+          "text": "Lattice energy is the energy holding the ions together."
+        },
+        {
+          "text": "Higher ion charge → stronger attraction → higher melting point."
+        },
+        {
+          "text": "Smaller ions sit closer → stronger attraction → higher melting point."
+        },
+        {
+          "text": "Coulomb's law: force ∝ (charge₁ × charge₂) ÷ distance²."
+        }
+      ],
+      "callout": "Compare charges first; if equal, compare ion sizes.",
+      "durationInFrames": 1020,
+      "caption": "Lattice energy rises with higher charge and smaller ion size.",
+      "voiceover": {
+        "text": "The strength of an ionic lattice is its lattice energy, the energy holding the ions together, and it depends on two things. First, the charge on the ions. Higher charges pull together more strongly, giving a higher lattice energy and a higher melting point. Second, the size of the ions. Smaller ions can get closer together, and closer means stronger attraction, so smaller ions also raise the melting point. Both effects come straight from Coulomb's law, which says the force is proportional to the product of the charges, divided by the distance between them squared. So when you compare two ionic compounds, check the charges first, and if the charges are equal, then compare the ion sizes."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "Predicting melting-point trends",
+      "body": "Use charge and size to rank ionic compounds by melting point.",
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          {
+            "label": "CsI",
+            "value": 632
+          },
+          {
+            "label": "NaCl",
+            "value": 801
+          },
+          {
+            "label": "LiF",
+            "value": 848
+          },
+          {
+            "label": "MgO",
+            "value": 2852
+          }
+        ],
+        "unit": "°C"
+      },
+      "bullets": [
+        {
+          "text": "MgO (±2) ≫ NaCl (±1): the charge effect dominates."
+        },
+        {
+          "text": "LiF > CsI (both ±1): smaller ions win on size."
+        },
+        {
+          "text": "Charge first, then size — that order resolves every comparison."
+        }
+      ],
+      "secondary": "MgO has roughly 4× the electrostatic force of NaCl from doubling both charges, which drives its far higher melting point.",
+      "callout": "Charge beats size when they disagree.",
+      "durationInFrames": 1050,
+      "caption": "MP order: CsI 632 < NaCl 801 < LiF 848 < MgO 2852 °C.",
+      "voiceover": {
+        "text": "Let's turn that into a ranking. Look at four ionic compounds. Magnesium oxide melts at two thousand eight hundred and fifty-two degrees, far above the others, because its ions carry charges of plus and minus two, so the charge effect dominates. Compare that with sodium chloride at eight hundred and one, where the charges are only plus and minus one. Now look at lithium fluoride at eight hundred and forty-eight versus caesium iodide at six hundred and thirty-two. Both have charges of one, so here it's size that decides, lithium and fluoride are small ions that sit close together, so lithium fluoride melts higher. The rule is simple, compare charge first, and only if the charges are equal do you fall back on size."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Why MgO beats NaCl",
+      "question": "Explain why MgO (MP 2852°C) melts far higher than NaCl (MP 801°C), given both have similar crystal structures.",
+      "coachNote": "Use Coulomb's law on the ion charges.",
+      "steps": [
+        "NaCl: Na⁺ (+1) and Cl⁻ (−1); MgO: Mg²⁺ (+2) and O²⁻ (−2)",
+        "Coulomb: force ∝ (charge₁ × charge₂) ÷ distance²",
+        "NaCl: force ∝ 1 × 1 = 1; MgO: force ∝ 2 × 2 = 4",
+        "MgO's attraction is ~4× stronger → far more energy to melt",
+        "Answer: higher ion charge → much higher lattice energy → much higher MP ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Doubling both charges makes MgO's attraction ~4× NaCl's.",
+      "voiceover": {
+        "text": "Let's prove why magnesium oxide melts so much higher than sodium chloride. Step one, identify the ions. Sodium chloride has charges of plus one and minus one, while magnesium oxide has plus two and minus two. Step two, apply Coulomb's law, where the force is proportional to the product of the charges over the distance squared. Step three, for sodium chloride that product is one times one, which is one. For magnesium oxide it's two times two, which is four. Step four, so assuming similar ion spacing, the electrostatic attraction in magnesium oxide is about four times stronger, which means far more energy is needed to pull the lattice apart. So higher ion charge gives a much higher lattice energy, and that's why magnesium oxide melts at nearly three thousand degrees while sodium chloride melts at eight hundred."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Conductivity in three states",
+      "question": "NaCl conducts when dissolved and when molten, but not as a solid. Explain all three results using the ionic model.",
+      "coachNote": "Conductivity needs ions that are free to move.",
+      "steps": [
+        "Solid: Na⁺ and Cl⁻ locked in fixed lattice positions → can't move → no conduction",
+        "Molten (801°C): lattice collapses → ions free to move → conducts",
+        "Dissolved: water hydrates and separates the ions → ions mobile → conducts",
+        "Conductivity always requires mobile charge carriers",
+        "Answer: solid no, molten yes, dissolved yes ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Ions conduct only when free — molten or dissolved, never as a solid.",
+      "voiceover": {
+        "text": "Now explain sodium chloride's conductivity in three different states. Step one, as a solid, the sodium and chloride ions are locked in fixed positions in the lattice, so they can't move, and a substance that can't move its charges can't conduct. So no conduction as a solid. Step two, when you melt it at eight hundred and one degrees, the lattice collapses, and now the ions are free to move through the liquid, so it conducts. Step three, when you dissolve it, water molecules surround and pull the ions off the lattice, a process called hydration, and the freed ions are mobile in solution, so it conducts again. The principle is the same every time, conduction needs mobile charge carriers, and the ions only become mobile once the lattice breaks down."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three ionic traps",
+      "body": "Trap 1: claiming solid ionic compounds conduct because they contain ions. The ions are fixed and can't move.",
+      "secondary": "Trap 2: thinking NaCl is a discrete molecule. It's a giant lattice, and the formula is just the simplest ratio. Trap 3: comparing ion size before charge. Charge dominates, so compare it first.",
+      "mistakeTag": "Where ionic marks vanish",
+      "callout": "Solid ions are stuck; NaCl is a lattice; charge before size.",
+      "durationInFrames": 1230,
+      "caption": "Solid ionic doesn't conduct; NaCl isn't a molecule; charge before size.",
+      "voiceover": {
+        "text": "Three traps. Trap one, claiming a solid ionic compound conducts because it has ions. It doesn't. The ions are real, but they're fixed in the lattice and can't move, so there's nothing to carry the charge. It only conducts once melted or dissolved. Trap two, thinking the formula means sodium chloride is a discrete molecule, one sodium bonded to one chlorine. It isn't. It's a giant lattice, and the formula just gives the simplest whole number ratio of ions. Trap three, comparing ion sizes before charges. The charge effect dominates, so always compare charge first, and only use size as a tiebreaker when the charges are equal."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Which melts higher, LiF or CsI? Both have ±1 charges. Justify your answer.",
+      "pausePrompt": "Pause and think it through.",
+      "answerSteps": [
+        "Both have charges of ±1, so charge can't decide it",
+        "Fall back on ion size: Li⁺ and F⁻ are small; Cs⁺ and I⁻ are large",
+        "Smaller ions sit closer → stronger attraction (Coulomb: force ∝ 1/r²)",
+        "So LiF has the higher lattice energy",
+        "Answer: LiF melts higher (848°C vs 632°C) ✓"
+      ],
+      "durationInFrames": 1140,
+      "caption": "Equal charges, so size decides: small LiF melts higher than CsI.",
+      "voiceover": {
+        "text": "Quick check. Which has the higher melting point, lithium fluoride or caesium iodide? Both have charges of plus and minus one. Justify it. Pause and think it through. Right, let's check it. Step one, both compounds have charges of one, so the charge effect can't separate them. Step two, that means we fall back on ion size. Lithium and fluoride are small ions, while caesium and iodide are large ions. Step three, smaller ions can sit closer together, and Coulomb's law says the force grows as the distance shrinks, since force is proportional to one over distance squared. Step four, so lithium fluoride has the stronger attraction and the higher lattice energy. So lithium fluoride melts higher, eight hundred and forty-eight versus six hundred and thirty-two, decided entirely by size because the charges were tied."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Ionic compounds form giant lattices, not molecules; NaCl is 6:6.",
+        "Lattice energy rises with higher ion charge and smaller ion size.",
+        "Coulomb's law: force ∝ (q₁ × q₂) ÷ r²; compare charge first.",
+        "MgO ≫ NaCl on charge; LiF > CsI on size.",
+        "Ionic solids don't conduct; molten or dissolved, they do."
+      ],
+      "finalPrompt": "Comparing ionic MPs? Charge first, then size.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: lattice structure, lattice energy, Coulomb's law, conductivity.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, ionic compounds form giant lattices rather than molecules, with sodium chloride showing six to six coordination. Second, lattice energy rises with higher ion charge and smaller ion size. Third, Coulomb's law, force proportional to the charges over distance squared, lets you compare melting points, and you check charge first. Fourth, magnesium oxide beats sodium chloride on charge, while lithium fluoride beats caesium iodide on size. And fifth, ionic solids don't conduct, but molten or dissolved, they do, because the ions become free. Next lesson we look at the second bonding type, metallic. See you next lesson."
+      }
+    }
+  ]
+}

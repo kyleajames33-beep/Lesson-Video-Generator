@@ -1,0 +1,221 @@
+{
+  "title": "Drug Classification and Functional Groups",
+  "subtitle": "Why small structural changes change everything",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 11",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8: Applying Chemical Ideas",
+  "syllabusDotPoints": [
+    "conduct qualitative investigations to test for the presence in organic molecules of the following functional groups: carboxylic acids, amines, amides",
+    "investigate the structure and action of named medicines in terms of their functional groups"
+  ],
+  "moduleLessonCount": 16,
+  "nesaOutcomes": ["CH12-15", "CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-7"],
+  "inquiryQuestion": "How is information about the reactivity and structure of organic compounds obtained?",
+  "lessonIntent": "Students can classify medicines by function and structure, identify the key functional groups in common drugs, and explain the pharmacophore concept.",
+  "examSkill": "Identify functional groups in aspirin, paracetamol and ibuprofen, and link them to polarity, acidity and binding rather than assuming same use means same structure.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, drug classification and functional groups. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Drug Classification and Functional Groups (Year 12 Chemistry, Module 8, Lesson 11)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One group change, a blockbuster drug",
+      "body": "In 1897, Bayer changed a single -OH group in salicylic acid into -OCOCH3. The result was aspirin, gentler on the stomach but just as effective.",
+      "image": "aspirinMolecule",
+      "callout": "Same skeleton, one group swapped, a different drug.",
+      "durationInFrames": 690,
+      "caption": "Bayer swapped one functional group on salicylic acid in 1897 to create aspirin.",
+      "voiceover": {
+        "text": "OK, here's a story that built a pharmaceutical empire. In 1897, a chemist at Bayer named Felix Hoffmann was looking for a gentler version of salicylic acid, because the existing drug wrecked his father's stomach. So he changed one functional group, converting an O-H group into an O-C-O-C-H-three group. That single change reduced the gastric irritation but kept the pain relief, and it turned aspirin into the world's first mass-market pharmaceutical. One functional group decision, on the same molecular skeleton, made all the difference. So today's question, what does that new group do that the old one didn't, and why does such a small structural change matter so much biologically? Let's learn to read drug molecules."
+      }
+    },
+    {
+      "id": "concept-classify",
+      "type": "concept",
+      "heading": "Two ways to classify a medicine",
+      "body": "A medicine can be classified in more than one way. Chemists care about what it does biologically, but also about the structure that lets it do that job.",
+      "bullets": [
+        {"text": "By function: analgesic, antibiotic, antiviral, antacid, local anaesthetic."},
+        {"text": "By structure: the functional groups and overall molecular framework."},
+        {"text": "Aspirin, ibuprofen and paracetamol are all analgesics, but differ structurally."}
+      ],
+      "secondary": "Functional categories group medicines by biological purpose. The same molecule can also be described structurally by its functional groups. Both lenses matter.",
+      "callout": "Classification isn't only what it treats. It's also how it's built.",
+      "durationInFrames": 990,
+      "caption": "Medicines classify by function (analgesic, antibiotic) and by chemical structure.",
+      "voiceover": {
+        "text": "Let's start with classification, because there's more than one way to do it. A medicine can be classified by what it does biologically, but also by the structural features that let it do that job. By function, you get categories like analgesics that relieve pain, antibiotics that act against bacteria, antivirals, antacids that neutralise stomach acid, and local anaesthetics like lignocaine. But the same medicine can also be described structurally, in terms of its functional groups and overall molecular framework. Here's a nice example of why both lenses matter. Aspirin, ibuprofen, and paracetamol are all analgesics, the same functional category, yet they have quite different structures. So in this module, drug classification isn't only what illness a drug treats, it's also how the molecule is actually built."
+      }
+    },
+    {
+      "id": "concept-groups",
+      "type": "concept",
+      "heading": "Key functional groups in drugs",
+      "body": "Functional groups are small substructures with big consequences. They control intermolecular forces, acid-base behaviour, reactivity, and binding.",
+      "diagram": {
+        "type": "table",
+        "headers": ["Group", "Chemical effect"],
+        "rows": [
+          ["-OH hydroxyl/phenol", "Raises polarity and H-bonding"],
+          ["-COOH carboxylic acid", "Acidic, increases polarity"],
+          ["-NH2 amine", "Basic, H-bonding"],
+          ["-COO- ester", "Polar, can hydrolyse"],
+          ["-CONH- amide", "Strongly polar, key for binding"],
+          ["Aromatic ring", "Hydrophobic, adds shape"]
+        ],
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Polar groups raise water solubility and binding potential."},
+        {"text": "Acidic and basic groups shift behaviour with pH."},
+        {"text": "Aromatic and hydrocarbon regions add hydrophobic character."}
+      ],
+      "secondary": "If two painkillers carry different functional groups, they can differ in acidity, polarity, shape and binding strength. That's why equal masses don't mean equal effect.",
+      "callout": "Each group is a lever on polarity, acidity, or binding.",
+      "durationInFrames": 1110,
+      "caption": "Functional groups: -OH, -COOH, -NH2, ester, amide, aromatic ring.",
+      "voiceover": {
+        "text": "Now the toolkit, the key functional groups you'll find in drug molecules. These are small substructures with outsized consequences, because they control intermolecular forces, acid-base behaviour, reactivity, and how the molecule interacts with a biological target. A hydroxyl or phenol O-H group raises polarity and hydrogen bonding. A carboxylic acid, C-O-O-H, gives acidic behaviour and adds polarity. An amine, N-H-two, gives basic behaviour and hydrogen bonding. An ester, C-O-O, is polar and can be hydrolysed. An amide, C-O-N-H, is strongly polar and often important for binding. And an aromatic ring contributes hydrophobic character and shape. Here's the practical payoff. If two painkillers carry different functional groups, they can differ in acidity, polarity, shape, and binding strength, and that's exactly why two tablets of equal mass don't automatically produce equal effect."
+      }
+    },
+    {
+      "id": "concept-reading",
+      "type": "concept",
+      "heading": "Reading the four key medicines",
+      "body": "You don't memorise every atom. You learn to spot the functional groups and overall framework in structural and skeletal formulas.",
+      "bullets": [
+        {"text": "Aspirin: aromatic ring, ester, carboxylic acid, so acidic and hydrolysable."},
+        {"text": "Paracetamol: aromatic ring, phenol, amide, so polar and H-bonding."},
+        {"text": "Ibuprofen: aromatic ring, carboxylic acid, branched hydrocarbon, mixed character."}
+      ],
+      "secondary": "Penicillin carries an amide-containing framework tied directly to its antibacterial action. Spot the groups first, then reason about behaviour.",
+      "callout": "Recognise the groups, don't count every bond.",
+      "durationInFrames": 1050,
+      "caption": "Aspirin, paracetamol, ibuprofen and penicillin, read by their functional groups.",
+      "voiceover": {
+        "text": "Let's apply that to the four medicines you need to know. The goal is not to memorise every atom, it's to recognise the functional groups and the overall framework when you look at a structural or skeletal formula. Aspirin has an aromatic ring, an ester, and a carboxylic acid, so it's acidic and it carries a hydrolysable ester linkage. Paracetamol has an aromatic ring, a phenol, and an amide, so it's polar with strong hydrogen-bonding potential. Ibuprofen has an aromatic ring, a carboxylic acid, and a branched hydrocarbon region, which gives it mixed polar and non-polar character. And penicillin has an amide-containing framework, with reactive ring features, and that structure is tied directly to its antibacterial action. The method is always the same, spot the groups first, then reason about how the molecule will behave."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Pharmacophore: the part of a molecule responsible for its biological activity."},
+        {"text": "SAR: structure-activity relationship, linking structure to biological effect."},
+        {"text": "Receptor binding: the drug fits a specific site, shape and groups must be complementary."},
+        {"text": "Analgesic: a pain-relieving drug, classified by mechanism."}
+      ],
+      "callout": "The pharmacophore is the part that must stay for the drug to work.",
+      "durationInFrames": 960,
+      "caption": "Pharmacophore, structure-activity relationship, receptor binding, analgesic.",
+      "voiceover": {
+        "text": "Quick vocabulary before we go deeper. A pharmacophore is the specific part of a drug molecule responsible for its biological activity, usually a functional group or arrangement of groups that interacts with a receptor. The structure-activity relationship, or S-A-R, is the link between a drug's chemical structure and its biological effect, and it's what guides drug design and optimisation. Receptor binding means the drug exerts its effect by binding to a specific site, and for that the shape, polarity, and functional groups have to be complementary, like a lock and key. And an analgesic is simply a pain-relieving drug, classified by its mechanism, whether anti-inflammatory, opioid, and so on. Hold onto the pharmacophore idea especially, it's the part of the molecule that must be preserved for the drug to keep working."
+      }
+    },
+    {
+      "id": "concept-pharmacophore",
+      "type": "concept",
+      "heading": "The pharmacophore in action",
+      "body": "Back to Bayer in 1897. The chemists kept the -COOH pharmacophore, the part that inhibits COX enzymes, and only changed the irritating -OH group.",
+      "bullets": [
+        {"text": "Keep the critical region: the -COOH stays, so pain relief survives."},
+        {"text": "Modify elsewhere: -OH becomes -OCOCH3, cutting stomach irritation."},
+        {"text": "A small change to the pharmacophore can alter potency or effect type."}
+      ],
+      "secondary": "One part of the molecule drives the effect. You can modify other parts, as long as you don't touch the critical region. That's why minor changes can matter so much.",
+      "callout": "Protect the pharmacophore; tune everything else.",
+      "durationInFrames": 990,
+      "caption": "Aspirin kept the -COOH pharmacophore while changing the -OH to reduce irritation.",
+      "voiceover": {
+        "text": "Now let's see the pharmacophore concept in action, back at Bayer in 1897. When the chemists modified salicylic acid to make aspirin, they were careful about which part they changed. They kept the carboxylic acid group, the pharmacophore region that inhibits C-O-X enzymes and drives the pain relief. And they only changed the irritating O-H group, converting it to that O-C-O-C-H-three ester. The result, the analgesic activity was preserved, but the stomach irritation dropped. That's the pharmacophore concept exactly, one part of the molecule drives the biological effect, and you can modify other parts of the molecule without destroying it, as long as you don't touch the critical region. And it cuts both ways. A change that looks minor on paper can alter the geometry of the pharmacophore and shift the potency, or even the type of effect."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Classify and predict from structure",
+      "question": "A molecule used to relieve pain and inflammation contains an aromatic ring, a carboxylic acid, and a branched hydrocarbon region. Classify it, name its groups, and predict two chemical properties.",
+      "coachNote": "Identify groups first, then translate each into a chemical property.",
+      "steps": [
+        "Function: relieves pain and inflammation, so it's an analgesic, specifically an NSAID.",
+        "Groups present: aromatic ring, carboxylic acid (-COOH), branched hydrocarbon.",
+        "The -COOH gives acidic behaviour and a polar region.",
+        "The hydrocarbon region adds non-polar, hydrophobic character.",
+        "Answer: this profile matches ibuprofen, acidic with mixed polar and non-polar character."
+      ],
+      "durationInFrames": 1320,
+      "caption": "Aromatic plus -COOH plus branched hydrocarbon means ibuprofen, acidic and mixed.",
+      "voiceover": {
+        "text": "Let's do a structure-reading question, the kind the exam loves. A molecule used to relieve pain and inflammation contains an aromatic ring, a carboxylic acid, and a branched hydrocarbon region. Classify it, name its groups, and predict two chemical properties. Step one, the function. It relieves pain and inflammation, so it's an analgesic, and more specifically a non-steroidal anti-inflammatory, an N-SAID. Step two, name the groups, an aromatic ring, a carboxylic acid, and a branched hydrocarbon region. Step three, translate each group into a property. The carboxylic acid gives acidic behaviour and a polar region. Step four, the branched hydrocarbon region adds non-polar, hydrophobic character. So step five, the answer, this profile matches ibuprofen, an acidic molecule with mixed polar and non-polar character. Notice the method, you identify the groups first, then translate each one into a chemical property. That's the move every structure question rewards."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The trap that costs Band 6",
+      "body": "The classic error: if two drugs treat the same symptom, their molecules must work the same way.",
+      "secondary": "Not necessarily. Similar therapeutic use does not mean identical structure, identical binding, or identical potency. That's why a 200 mg ibuprofen tablet and a 500 mg paracetamol tablet aren't interchangeable masses.",
+      "mistakeTag": "Where medicinal-chemistry marks vanish",
+      "callout": "Same use does not mean same structure or mechanism.",
+      "durationInFrames": 870,
+      "caption": "Same therapeutic use does not imply identical structure, binding, or potency.",
+      "voiceover": {
+        "text": "Here's the trap that costs the top band. Students often write that if two drugs treat the same symptom, their molecules must work the same way. Not necessarily, and saying so loses marks. Similar therapeutic use does not mean identical structure, identical binding, or identical potency. Ibuprofen and paracetamol both relieve pain, but they carry different functional groups, so they differ in polarity, acid-base behaviour, binding features, and pharmacophore. That's the real reason a two hundred milligram ibuprofen tablet and a five hundred milligram paracetamol tablet aren't the same dose, it's not a packaging choice, it's a consequence of medicinal chemistry. So when you compare two drugs, anchor it in their structures, not just their shared use."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Aspirin contains both an ester and a carboxylic acid. Which group makes it mildly acidic, and what happens to that group in the basic small intestine at pH around 8?",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The carboxylic acid (-COOH) is responsible for the acidity.",
+        "In a basic environment, the -COOH donates its proton.",
+        "It forms the carboxylate anion, -COO minus.",
+        "The ionised form is more water-soluble.",
+        "Answer: the -COOH ionises to -COO minus, raising water solubility for absorption."
+      ],
+      "durationInFrames": 1020,
+      "caption": "The -COOH ionises to -COO minus in the intestine, raising water solubility.",
+      "voiceover": {
+        "text": "Quick check, linking a group to its behaviour. Aspirin contains both an ester and a carboxylic acid. Which group makes it mildly acidic, and what happens to that group in the basic environment of the small intestine, around pH eight? Pause and reason it through. Right, let's check it. Step one, the carboxylic acid group, C-O-O-H, is the one responsible for the acidity. Step two, in a basic environment, that group donates its proton. Step three, it forms the carboxylate anion, C-O-O minus. Step four, that ionised form is more water-soluble. So the answer, the carboxylic acid ionises to the carboxylate anion in the intestine, and that raises the water solubility, which helps absorption. We'll quantify this exact behaviour next lesson with the Henderson-Hasselbalch equation."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Medicines classify by function and by chemical structure.",
+        "Functional groups control polarity, acidity, reactivity, and binding.",
+        "Aspirin: ester plus carboxylic acid; paracetamol: phenol plus amide.",
+        "The pharmacophore is the part that must stay for activity to remain.",
+        "Same therapeutic use does not mean same structure or mechanism."
+      ],
+      "finalPrompt": "Comparing two drugs? Identify the groups first, then reason about behaviour.",
+      "durationInFrames": 1020,
+      "caption": "Five takeaways: two classifications, groups, key structures, pharmacophore, the trap.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, medicines can be classified two ways, by biological function and by chemical structure. Second, functional groups are the levers, they control polarity, acidity, reactivity, and binding. Third, learn the key structures, aspirin carries an ester plus a carboxylic acid, while paracetamol carries a phenol plus an amide. Fourth, the pharmacophore is the part of the molecule that must be preserved for the activity to remain, which is why a tiny change can have a big effect. And fifth, the trap, same therapeutic use does not mean same structure or mechanism. So whenever you compare two drugs, identify the functional groups first, then reason about behaviour. Next lesson, we make this quantitative with acid-base chemistry and the Henderson-Hasselbalch equation. See you there."
+      }
+    }
+  ]
+}

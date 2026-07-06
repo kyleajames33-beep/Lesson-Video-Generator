@@ -3,15 +3,17 @@
 // Pattern: docs/design-canvas-reference/scenes.jsx SceneTitle.
 // Big topic, module context, one drawn accent. Confident and spacious.
 
-import {interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
+import {Img, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import type {LessonData, TitleScene} from '../lesson/types';
+import {ASSETS, type AssetName} from '../assets';
 import {FadeUp} from '../animations/FadeUp';
 import {ScribbleUnderline} from '../animations/DoodlePrimitives';
 import {StampInTitle} from '../animations/MotionPrimitives';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
-import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
+import {TYPE, TOK} from '../styles/tokens';
+import {useAccent} from '../styles/theme';
 
 type TitleSlideProps = {
 	lesson: LessonData;
@@ -22,12 +24,14 @@ type TitleSlideProps = {
 
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
 
-export const TitleSlide = ({lesson, sceneIndex, totalScenes}: TitleSlideProps) => {
+export const TitleSlide = ({lesson, scene, sceneIndex, totalScenes}: TitleSlideProps) => {
+	const theme = useAccent();
 	const titleParts = splitTitle(lesson.title);
+	const heroAsset = scene.image ? ASSETS[scene.image as AssetName] : undefined;
 
 	return (
-		<SlideFrame>
-			<TitleBackdrop />
+		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
+			{heroAsset ? <TitleHero src={heroAsset} /> : <TitleBackdrop />}
 			<SlideChrome lesson={lesson} dot="2.1" topic="LESSON START" sceneType="title" />
 
 			<div
@@ -39,7 +43,7 @@ export const TitleSlide = ({lesson, sceneIndex, totalScenes}: TitleSlideProps) =
 					transform: 'translateY(-48%)',
 				}}
 			>
-				<Eyebrow color={TOK.chem2}>{lesson.lesson} · {lesson.subject} · {lesson.yearLevel}</Eyebrow>
+				<Eyebrow color={theme.accent2}>{lesson.lesson} · {lesson.subject} · {lesson.yearLevel}</Eyebrow>
 
 				<div
 					style={{
@@ -55,7 +59,7 @@ export const TitleSlide = ({lesson, sceneIndex, totalScenes}: TitleSlideProps) =
 							{titleParts.first}
 						</div>
 					</StampInTitle>
-					<StampInTitle delay={26} color={TOK.chem1} underlineColor={TOK.amber}>
+					<StampInTitle delay={26} color={theme.accent} underlineColor={TOK.amber}>
 						<div style={{fontSize: 208, fontWeight: 840, lineHeight: 0.92, letterSpacing: '-0.045em'}}>
 							{titleParts.second}.
 						</div>
@@ -94,9 +98,54 @@ export const TitleSlide = ({lesson, sceneIndex, totalScenes}: TitleSlideProps) =
 	);
 };
 
+// TitleHero — when the title scene provides a hero illustration, render
+// it in the right-half of the stage with a slow Ken Burns drift. Sits
+// behind the title text but in front of the ambient backdrop layer.
+const TitleHero = ({src}: {src: string}) => {
+	const frame = useCurrentFrame();
+	const {fps} = useVideoConfig();
+	const reveal = interpolate(frame, [6, 32], [0, 1], clamp);
+	const settle = spring({frame: frame - 6, fps, config: {damping: 18, stiffness: 140, mass: 0.8}});
+	const t = frame / fps;
+	const scale = interpolate(settle, [0, 1], [0.92, 1.02], clamp) + Math.sin(t * 0.6) * 0.01;
+	const driftY = Math.sin(t * 0.5) * 4;
+
+	return (
+		<div
+			aria-hidden
+			style={{
+				position: 'absolute',
+				right: 64,
+				top: 90,
+				bottom: 90,
+				width: 920,
+				display: 'flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+				opacity: reveal,
+				pointerEvents: 'none',
+			}}
+		>
+			<Img
+				src={src}
+				alt=""
+				style={{
+					maxWidth: '100%',
+					maxHeight: '100%',
+					objectFit: 'contain',
+					transform: `scale(${scale}) translateY(${driftY}px)`,
+					filter: 'drop-shadow(0 24px 48px rgba(0,0,0,0.42))',
+					willChange: 'transform',
+				}}
+			/>
+		</div>
+	);
+};
+
 const TitleBackdrop = () => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
+	const theme = useAccent();
 	const reveal = interpolate(frame, [8, 44], [0, 1], clamp);
 	const t = frame / fps;
 	const xOffset = Math.sin(t * 0.9) * 8;
@@ -121,7 +170,7 @@ const TitleBackdrop = () => {
 					height: 520,
 					borderRadius: '50%',
 					border: `1px solid ${TOK.rule}`,
-					boxShadow: `0 0 ${90 + pulse * 30}px ${TOK.chem1}1f`,
+					boxShadow: `0 0 ${90 + pulse * 30}px ${theme.accent}1f`,
 				}}
 			/>
 			<div
@@ -132,25 +181,10 @@ const TitleBackdrop = () => {
 					width: 270,
 					height: 270,
 					borderRadius: '50%',
-					background: `radial-gradient(circle at 35% 30%, ${TOK.chem2}44 0%, ${TOK.chem3}30 45%, transparent 70%)`,
+					background: `radial-gradient(circle at 35% 30%, ${theme.accent2}44 0%, ${theme.soft}30 45%, transparent 70%)`,
 					filter: 'blur(1px)',
 				}}
 			/>
-			<div
-				style={{
-					position: 'absolute',
-					right: 130,
-					bottom: 170,
-					fontFamily: FONT_MONO,
-					fontSize: 118,
-					fontWeight: 700,
-					color: TOK.chem3,
-					opacity: 0.55,
-					letterSpacing: '-0.08em',
-				}}
-			>
-				N = n × Nₐ
-			</div>
 		</div>
 	);
 };

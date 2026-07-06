@@ -1,0 +1,196 @@
+{
+  "title": "Titration and Indicator Mastery",
+  "subtitle": "Reading curves and choosing indicators under pressure",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 17",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6: Acid/Base Reactions",
+  "syllabusDotPoints": [
+    "conduct practical investigations to analyse the concentration of an unknown acid or base by titration",
+    "investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "CH12-13",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "How are solutions of acids and bases analysed?",
+  "lessonIntent": "Students can identify the equivalence point, pKa, and correct indicator from any unfamiliar curve and diagnose the common interpretation errors.",
+  "examSkill": "Work through six questions in order to read any curve, never placing the EP at pH 7 by default or reading pKa from the wrong point.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, titration and indicator mastery, the band six curve skills. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Titration and Indicator Mastery (Year 12 Chemistry, Module 6, Lesson 17)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Four students, one curve, three answers",
+      "body": "On a weak acid curve, many students still put the equivalence point at pH 7 and pick the wrong indicator.",
+      "callout": "One curve hides three classic mistakes.",
+      "image": "fourStudentsCurve",
+      "durationInFrames": 660,
+      "caption": "Most titration curve marks are lost to a few repeated interpretation errors.",
+      "voiceover": {
+        "text": "OK, NESA's markers report the same problem year after year. On a weak acid titration curve, a big chunk of students still place the equivalence point at pH seven, and a fair few choose the wrong indicator on top of that. So picture four students all handed the same curve. It starts around pH three, rises through a flat stretch, jumps between seven-point-five and eleven-point-five at twenty-five millilitres, and at twelve-point-five millilitres the pH is four-point-seven-four. They're each asked three things, the equivalence point, the indicator, and the pKa. Only one gets all three right. Today we'll be that student, and we'll diagnose exactly where the others go wrong, because precise diagnosis is what separates band four from band six."
+      }
+    },
+    {
+      "id": "concept-students",
+      "type": "concept",
+      "heading": "Diagnosing the four answers",
+      "body": "The right reading: equivalence point by volume, indicator by EP pH, pKa at the half-equivalence volume.",
+      "bullets": [
+        {"text": "Equivalence point is at 25.00 mL, the midpoint of the jump, pH about 9.5."},
+        {"text": "EP is above 7, so phenolphthalein, not bromothymol blue or methyl orange."},
+        {"text": "pKa is the pH at 12.50 mL, the half-equivalence point: 4.74."}
+      ],
+      "secondary": "Putting the EP at pH 7 forces the wrong indicator, so those two errors almost always appear together.",
+      "callout": "EP by volume, indicator by EP pH, pKa at half-EP.",
+      "durationInFrames": 1140,
+      "caption": "Correct: EP 25.00 mL pH ≈ 9.5, phenolphthalein, pKa 4.74 at half-EP.",
+      "voiceover": {
+        "text": "Let's work the right answer and catch the wrong ones against it. The equivalence point is the midpoint of the steep jump, at twenty-five millilitres, and its pH is halfway up the jump, about nine-point-five. Since that's above seven, the indicator must be phenolphthalein, whose range is eight-point-three to ten. And the pKa is the pH at the half-equivalence point, twelve-point-five millilitres, which reads four-point-seven-four. Now the errors. One student put the equivalence point at pH seven, which is only true for strong with strong, and that pushed them to bromothymol blue, the wrong indicator. See how those two mistakes are linked, a wrong equivalence point forces a wrong indicator. Another student read the equivalence point correctly but picked methyl orange, which changes far too early, and called the pKa seven, confusing it with the middle of the pH scale. And a third thought the pKa was just the starting pH. Three different misconceptions, all avoidable."
+      }
+    },
+    {
+      "id": "concept-framework",
+      "type": "concept",
+      "heading": "Six questions before any curve",
+      "body": "Work through six questions in order and the curve gives up every answer the exam can ask for.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "types", "label": "Acid & base types?"},
+          {"id": "conc", "label": "Start pH from conc?"},
+          {"id": "vep", "label": "V at equivalence?"},
+          {"id": "eppH", "label": "EP pH from the salt?"},
+          {"id": "pka", "label": "pKa at half-EP?"},
+          {"id": "ind", "label": "Indicator brackets EP?"}
+        ],
+        "edges": [
+          {"from": "types", "to": "conc"},
+          {"from": "conc", "to": "vep"},
+          {"from": "vep", "to": "eppH"},
+          {"from": "eppH", "to": "pka"},
+          {"from": "pka", "to": "ind"}
+        ],
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Name the acid and base types, then the starting pH."},
+        {"text": "Find the equivalence volume, then the EP pH from the salt."},
+        {"text": "Read pKa at half the EP volume, then pick the matching indicator."}
+      ],
+      "secondary": "Run the same six questions in order for every curve and you never default the EP to pH 7.",
+      "callout": "Same six questions, every curve.",
+      "durationInFrames": 1110,
+      "caption": "Six questions: types → start pH → V(EP) → EP pH → pKa → indicator.",
+      "voiceover": {
+        "text": "To make this automatic, run the same six questions in order on any curve. Question one, what are the acid and base types? That sets the whole shape. Question two, what's the starting pH, from the concentration and, for a weak acid, an ICE table. Question three, what volume reaches the equivalence point, read at the centre of the jump. Question four, what's the equivalence point pH, worked out from the salt that forms, above seven for a weak acid with strong base, below seven for a strong acid with weak base. Question five, what's the pKa, read as the pH at half the equivalence volume. And question six, which indicator's range brackets that equivalence point pH? Six questions, asked in that order, produce every single thing an exam can ask about a curve, and crucially, they stop you defaulting the equivalence point to seven out of habit."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The mastery checklist",
+      "bullets": [
+        {"text": "Equivalence point: read on the volume axis, at the steepest section."},
+        {"text": "Half-equivalence point: V(EP) ÷ 2, where pH = pKa."},
+        {"text": "Endpoint: where the indicator changes; should match the EP."},
+        {"text": "Indicator rule: its range must encompass the equivalence point pH."}
+      ],
+      "callout": "Endpoint and equivalence point should coincide.",
+      "durationInFrames": 930,
+      "caption": "Equivalence point, half-equivalence point, endpoint, and the indicator rule.",
+      "voiceover": {
+        "text": "Quick checklist of the terms that carry the marks. The equivalence point is read on the volume axis, at the steepest part of the curve, where the moles exactly match. The half-equivalence point is at half that volume, and the pH there is the pKa. The endpoint is where your indicator actually changes colour, and a good choice makes it coincide with the equivalence point. And the one rule that ties indicators to curves, the indicator's colour change range must encompass the equivalence point pH. State the type, find the equivalence point, read the pKa at half its volume, then match the indicator. That sequence answers everything."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Full curve interpretation",
+      "question": "A weak acid is titrated with 0.100 mol L⁻¹ NaOH. The jump is centred at 30.00 mL between pH 7.6 and 11.0; at 15.00 mL the pH is 4.20. Find the EP pH, the pKa, and the indicator.",
+      "coachNote": "Run the six questions: EP by volume, pKa at half-EP, indicator by EP pH.",
+      "steps": [
+        "Equivalence point volume = 30.00 mL (centre of the steep jump)",
+        "EP pH = (7.6 + 11.0) ÷ 2 ≈ 9.3 (above 7, weak acid + strong base)",
+        "Half-equivalence volume = 30.00 ÷ 2 = 15.00 mL",
+        "pH at 15.00 mL = 4.20, so pKa = 4.20 (Ka ≈ 6.3 × 10⁻⁵)",
+        "EP pH ≈ 9.3 → phenolphthalein (8.3–10.0) is suitable ✓"
+      ],
+      "durationInFrames": 1440,
+      "caption": "EP at 30.00 mL pH ≈ 9.3; pKa 4.20; phenolphthalein.",
+      "voiceover": {
+        "text": "Let's run the full interpretation on a fresh curve. A weak acid is titrated with nought-point-one mole per litre sodium hydroxide. The jump is centred at thirty millilitres, between pH seven-point-six and eleven, and at fifteen millilitres the pH is four-point-two. Question by question. The equivalence point volume is thirty millilitres, the centre of the jump. Its pH is the midpoint of the jump, halfway between seven-point-six and eleven, about nine-point-three, and being above seven confirms a weak acid with a strong base. The half-equivalence volume is half of thirty, fifteen millilitres, and the pH there is four-point-two, so the pKa is four-point-two, which is a Ka of roughly six times ten to the minus five. Finally, the equivalence point is near nine-point-three, so phenolphthalein, range eight-point-three to ten, is the indicator. Six questions, every answer."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three mastery traps",
+      "body": "Trap 1: defaulting the equivalence point to pH 7. Read its pH from the curve and the salt.",
+      "secondary": "Trap 2: reading pKa at the equivalence point instead of the half-equivalence point. Trap 3: choosing an indicator by visual clarity instead of matching its range to the EP pH.",
+      "mistakeTag": "Where mastery marks vanish",
+      "callout": "EP pH from the salt, pKa at half-EP, range over EP.",
+      "durationInFrames": 1230,
+      "caption": "Don't default EP to 7; read pKa at half-EP; match indicator range, not colour.",
+      "voiceover": {
+        "text": "Three traps that separate the bands. Trap one, defaulting the equivalence point to pH seven. Read it off the curve and reason from the salt, because a weak acid lands above seven and a strong acid with a weak base lands below it. Trap two, reading the pKa at the equivalence point instead of the half-equivalence point. The pKa is the pH at half the equivalence volume, not at the full one. At the actual equivalence point the acid is all gone, so there's no pKa to read there. Trap three, choosing an indicator because its colour change is easy to see. Visual clarity is irrelevant if the change happens at the wrong pH. The only thing that matters is whether the indicator's range encompasses the equivalence point pH. Fix these three, and titration curve questions become some of the most reliable marks in the paper."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "For a weak acid titrated with a strong base: (a) where on the curve is the buffer region? (b) Why is the equivalence point pH above 7?",
+      "pausePrompt": "Pause and link each region to its chemistry.",
+      "answerSteps": [
+        "(a) The buffer region is the flat stretch around the half-equivalence point",
+        "There [HA] ≈ [A⁻], so pH ≈ pKa and the pH resists change",
+        "(b) At equivalence all HA has become A⁻ (the conjugate base)",
+        "A⁻ + H₂O ⇌ HA + OH⁻ produces OH⁻, making the solution basic",
+        "So the equivalence point pH is above 7 ✓"
+      ],
+      "durationInFrames": 1260,
+      "caption": "Buffer region at half-EP (pH ≈ pKa); EP above 7 as A⁻ hydrolyses.",
+      "voiceover": {
+        "text": "Quick check, tying regions to chemistry. For a weak acid titrated with a strong base, part a, where is the buffer region on the curve? Part b, why is the equivalence point pH above seven? Pause and link each region to its chemistry. Right, let's check. The buffer region is the flat stretch around the half-equivalence point. There, the weak acid and its conjugate base are present in roughly equal amounts, so the pH sits near the pKa and strongly resists change, exactly like a buffer should. Part b. At the equivalence point, all the weak acid has been converted to its conjugate base. That conjugate base then reacts with water, taking a proton and releasing hydroxide. The extra hydroxide makes the solution basic, so the equivalence point pH is above seven. Every feature of the curve maps onto a piece of chemistry you already know."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Read the equivalence point on the volume axis, at the steepest section.",
+        "Never default the EP to pH 7; reason from the salt formed.",
+        "pKa is the pH at the half-equivalence volume, not the EP.",
+        "Choose the indicator whose range brackets the EP pH.",
+        "Run the same six questions in order on every curve."
+      ],
+      "finalPrompt": "Any curve: six questions in order, and never assume pH 7.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: EP by volume, no default 7, pKa at half-EP, indicator rule.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to carry into the exam. First, read the equivalence point on the volume axis, at the steepest section of the curve. Second, never default the equivalence point to pH seven, reason from the salt that forms, above seven for a weak acid, below seven for a weak base. Third, the pKa is the pH at the half-equivalence volume, never at the equivalence point itself. Fourth, choose the indicator whose colour change range brackets the equivalence point pH, not the one that's easiest to see. And fifth, run the same six questions in order on every curve, types, starting pH, equivalence volume, equivalence pH, pKa, indicator. Do that, and no curve can surprise you. See you in the next lesson."
+      }
+    }
+  ]
+}

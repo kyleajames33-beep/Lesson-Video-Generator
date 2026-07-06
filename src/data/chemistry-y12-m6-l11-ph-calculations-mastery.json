@@ -1,0 +1,213 @@
+{
+  "title": "pH Calculations Mastery",
+  "subtitle": "Choosing the right method every time",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 11",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6: Acid/Base Reactions",
+  "syllabusDotPoints": [
+    "calculate pH, pOH, hydrogen ion concentration ([H+]) and hydroxide ion concentration ([OH–]) for a range of solutions (ACSCH102)",
+    "calculate the pH of the resultant solution when solutions of acids and/or bases are diluted or mixed"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "CH12-13",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What is the role of water in solutions of acids and bases?",
+  "lessonIntent": "Students can identify the acid or base system in any pH question and select the correct method, avoiding the five highest-frequency IQ2 calculation errors.",
+  "examSkill": "Identify acid or base type before calculating, then apply the matching method: direct for strong, ICE table for weak, total volume for mixing, Henderson-Hasselbalch for buffers.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, pH calculations mastery, picking the right method every time. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "pH Calculations Mastery (Year 12 Chemistry, Module 6, Lesson 11)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same concentration, very different pH",
+      "body": "Three students each get a 0.100 mol L⁻¹ acid and calculate the pH. Two are right, one makes the classic mistake.",
+      "callout": "The method you pick decides the mark.",
+      "durationInFrames": 660,
+      "caption": "Method selection, not arithmetic, is where IQ2 pH marks are won or lost.",
+      "voiceover": {
+        "text": "OK, here's a situation NESA tests every single year. Three students each get a nought-point-one mole per litre acid and have to find the pH. The first has nitric acid, a strong acid, so it ionises completely, and the pH is one-point-zero-zero. The second has acetic acid, but treats it like a strong one too, and writes the same answer. The third has hydrofluoric acid, sets up an ICE table properly, and gets two-point-one-zero. Same concentration, wildly different answers. The difference isn't the maths, it's whether each student identified the type of acid before calculating. That one decision is where most IQ2 marks are won or lost, so today we lock it down."
+      }
+    },
+    {
+      "id": "concept-decision-tree",
+      "type": "concept",
+      "heading": "Identify first, then calculate",
+      "body": "Every pH question starts with two questions: acid or base, and strong or weak. The answers fix the method.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "q", "label": "Acid or base? Strong or weak?"},
+          {"id": "sa", "label": "Strong acid: [H⁺] = c"},
+          {"id": "wa", "label": "Weak acid: ICE table"},
+          {"id": "mix", "label": "Mixing: moles → V(total)"},
+          {"id": "buf", "label": "Buffer: pKa + log ratio"}
+        ],
+        "edges": [
+          {"from": "q", "to": "sa"},
+          {"from": "q", "to": "wa"},
+          {"from": "q", "to": "mix"},
+          {"from": "q", "to": "buf"}
+        ],
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Strong acid or base: ionises fully, so [H⁺] or [OH⁻] equals c."},
+        {"text": "Weak acid or base: only partly ionises, so set up an ICE table."},
+        {"text": "Mixing or partial neutralisation needs moles, not concentrations."}
+      ],
+      "secondary": "The six strong acids are HCl, H₂SO₄, HNO₃, HClO₄, HBr and HI. Everything else is weak.",
+      "callout": "No method until you've named the system.",
+      "durationInFrames": 1140,
+      "caption": "Strong → direct; weak → ICE table; mixing → moles and total volume; buffer → H-H.",
+      "voiceover": {
+        "text": "So here's the decision tree that covers every scenario. Before you write a single number, ask two questions. Is it an acid or a base, and is it strong or weak? Those two answers completely fix the method. A strong acid or base ionises fully, so the hydrogen ion or hydroxide concentration just equals the concentration you're given. A weak acid or base only partly ionises, so you need an ICE table to find how much hydrogen ion actually formed. And if you're mixing two solutions, or you've partly neutralised an acid, you work in moles, not concentrations. The key fact that drives the whole thing, only six acids are strong. Hydrochloric, sulfuric, nitric, perchloric, hydrobromic and hydroiodic. If an acid isn't on that list, it's weak, and it needs the ICE table. Memorise those six, and the identification becomes automatic."
+      }
+    },
+    {
+      "id": "concept-weak-and-mixing",
+      "type": "concept",
+      "heading": "The two steps people skip",
+      "body": "Weak acids need the 5% check. Mixing always needs the combined volume.",
+      "bullets": [
+        {"text": "Weak acid: x = √(Ka × c), then verify x ÷ c is under 5%."},
+        {"text": "If it's 5% or more, the shortcut fails, so solve the quadratic."},
+        {"text": "Mixing: c of the excess = moles of excess ÷ total volume."}
+      ],
+      "secondary": "V(total) is always V(acid) + V(base). Using one volume alone is the most common mixing error.",
+      "callout": "Check the assumption; add the volumes.",
+      "durationInFrames": 1080,
+      "caption": "Verify x ÷ c < 5% for weak acids; divide excess moles by V(acid) + V(base).",
+      "voiceover": {
+        "text": "Two steps trip people up constantly, so let's be explicit about both. For a weak acid, the quick estimate is x equals the square root of Ka times the concentration. But that shortcut only holds if the acid barely ionises. So after you get x, check that x divided by the concentration is under five percent. If it comes out at five percent or more, like it does for hydrofluoric acid, the shortcut isn't valid, and you have to solve the full quadratic instead. The second step is in mixing problems. When acid and base are mixed and one is left over, the concentration of that excess is its moles divided by the total volume. And the total volume is always the acid volume plus the base volume added together. Using just one of them, say the acid volume on its own, is the single most common mixing mistake, and for a fifty plus fifty mix it throws your pH out by nought-point-three of a unit."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words behind the methods",
+      "bullets": [
+        {"text": "Strong acid: ionises completely, so [H⁺] equals the concentration."},
+        {"text": "Weak acid: only partly ionises; Ka is small and fixed."},
+        {"text": "Equivalence point: moles of acid exactly equal moles of base."},
+        {"text": "Buffer: a weak acid and its conjugate base present together."}
+      ],
+      "callout": "Each term points to one method.",
+      "durationInFrames": 960,
+      "caption": "Strong acid, weak acid, equivalence point, and buffer, each with its own method.",
+      "voiceover": {
+        "text": "Quick vocabulary, because each of these words tells you which method to reach for. A strong acid ionises completely, so its hydrogen ion concentration simply equals the concentration of the acid. A weak acid only partly ionises, and its Ka is a small, fixed number, never something you calculate from the concentration. The equivalence point is where the moles of acid exactly equal the moles of base, and the pH there depends on the salt that's left behind. And a buffer is a weak acid sitting alongside its conjugate base, both present at once. Spot a buffer and you reach for Henderson-Hasselbalch, not an ICE table. Naming the system correctly is half the battle."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Three at once",
+      "question": "Find the pH at 25°C of: (a) 0.0400 mol L⁻¹ KOH; (b) 0.0400 mol L⁻¹ HBr; (c) 0.0400 mol L⁻¹ HCN (Ka = 6.2 × 10⁻¹⁰).",
+      "coachNote": "Identify the type of each before touching a calculator.",
+      "steps": [
+        "(a) KOH is a strong base: [OH⁻] = 0.0400, pOH = 1.40, pH = 14.00 − 1.40 = 12.60",
+        "(b) HBr is a strong acid: [H⁺] = 0.0400, pH = −log(0.0400) = 1.40",
+        "(c) HCN is weak: x = √(6.2 × 10⁻¹⁰ × 0.0400) = 4.98 × 10⁻⁶ mol L⁻¹",
+        "Check: 4.98 × 10⁻⁶ ÷ 0.0400 = 0.012% ≪ 5% ✓",
+        "pH = −log(4.98 × 10⁻⁶) = 5.30"
+      ],
+      "durationInFrames": 1470,
+      "caption": "Same concentration: KOH pH 12.60, HBr pH 1.40, HCN pH 5.30.",
+      "voiceover": {
+        "text": "Let's run three solutions, all at the same concentration, nought-point-zero-four mole per litre. Part a, potassium hydroxide. That's a strong base, so the hydroxide concentration equals nought-point-zero-four. The pOH is one-point-four-zero, and the pH is fourteen minus that, twelve-point-six-zero. Sanity check, it's above seven, good, it's a base. Part b, hydrobromic acid. Strong acid, so the hydrogen ion concentration is nought-point-zero-four directly, and the pH is one-point-four-zero. Part c is the interesting one. Hydrogen cyanide isn't on the strong list, so it's weak. x is the square root of Ka times concentration, which gives about five times ten to the minus six. Check the assumption, that's nought-point-zero-one-two percent of the concentration, way under five percent, so the shortcut holds. The pH is five-point-three-zero. Same concentration, three completely different answers, all because we identified the type first."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "A mixing problem",
+      "question": "Mix 35.0 mL of 0.200 mol L⁻¹ Ba(OH)₂ with 65.0 mL of 0.150 mol L⁻¹ HNO₃. Find the pH.",
+      "coachNote": "Ba(OH)₂ gives two OH⁻ per formula; use the total volume.",
+      "steps": [
+        "n(OH⁻) = 0.200 × 0.0350 × 2 = 1.40 × 10⁻² mol",
+        "n(H⁺) = 0.150 × 0.0650 = 9.75 × 10⁻³ mol",
+        "Excess OH⁻ = 0.01400 − 0.009750 = 4.25 × 10⁻³ mol",
+        "V(total) = 35.0 + 65.0 = 100.0 mL = 0.1000 L",
+        "c(OH⁻) = 4.25 × 10⁻³ ÷ 0.1000 = 0.0425; pOH = 1.37; pH = 12.63"
+      ],
+      "durationInFrames": 1500,
+      "caption": "Excess OH⁻ over 100.0 mL gives pH = 12.63.",
+      "voiceover": {
+        "text": "Now a mixing problem, the kind that catches people on volumes. We mix thirty-five millilitres of nought-point-two mole per litre barium hydroxide with sixty-five millilitres of nought-point-one-five mole per litre nitric acid. First the moles. Barium hydroxide gives two hydroxides per formula, so the moles of hydroxide are nought-point-two times nought-point-zero-three-five times two, which is one-point-four times ten to the minus two. The moles of hydrogen ion are nought-point-one-five times nought-point-zero-six-five, about nine-point-eight times ten to the minus three. So hydroxide is in excess by four-point-two-five times ten to the minus three moles. Here's the step that matters, the total volume is thirty-five plus sixty-five, a hundred millilitres, not just one of them. Divide the excess by nought-point-one litres to get nought-point-zero-four-two-five. The pOH is one-point-three-seven, so the pH is twelve-point-six-three. Two hydroxides per barium, and the combined volume. Miss either and the answer's wrong."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The five IQ2 traps",
+      "body": "Trap 1: using [H⁺] = c for a weak acid. Identify the type first.",
+      "secondary": "Trap 2: skipping the 5% check. Trap 3: reporting pOH as the pH of a base. Trap 4: using one volume instead of the total. Trap 5: using an ICE table on a buffer.",
+      "mistakeTag": "Where IQ2 pH marks vanish",
+      "callout": "All five come from calculating before identifying.",
+      "durationInFrames": 1290,
+      "caption": "Weak-as-strong, no 5% check, pOH as pH, wrong volume, ICE on a buffer.",
+      "voiceover": {
+        "text": "Here are the five traps that quietly drain IQ2 marks, and they all share one root cause. Trap one, using hydrogen ion equals concentration for a weak acid. That's the acetic acid mistake from the start, and it can overestimate the hydrogen ion by a factor of seventy. Identify the acid type first. Trap two, skipping the five percent check after the square root shortcut. Trap three, working out the pOH of a base correctly, then writing it down as the pH, forgetting to subtract from fourteen. Always sanity check, a base must be above seven. Trap four, using just the acid or just the base volume when mixing, instead of the total. And trap five, applying an ICE table to a solution that's actually a buffer, because it already contains the conjugate base. Notice the pattern. Every single one comes from calculating before identifying the system. Identify first, and all five disappear."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Add 25.0 mL of 0.100 mol L⁻¹ NaOH to 25.0 mL of 0.100 mol L⁻¹ CH₃COOH (Ka = 1.8 × 10⁻⁵). Find the pH. Is the solution a buffer?",
+      "pausePrompt": "Pause and identify the system first.",
+      "answerSteps": [
+        "n(NaOH) = n(CH₃COOH) = 2.50 × 10⁻³ mol → equal moles, so the equivalence point",
+        "All CH₃COOH → CH₃COO⁻; not a buffer (no HA left)",
+        "n(CH₃COO⁻) = 2.50 × 10⁻³ mol in 50.0 mL → c = 0.0500 mol L⁻¹",
+        "Kb = Kw ÷ Ka = 1.0 × 10⁻¹⁴ ÷ 1.8 × 10⁻⁵ = 5.6 × 10⁻¹⁰",
+        "[OH⁻] = √(5.6 × 10⁻¹⁰ × 0.0500) = 5.3 × 10⁻⁶; pOH = 5.28; pH = 8.72"
+      ],
+      "durationInFrames": 1530,
+      "caption": "Equal moles → equivalence point; basic salt gives pH = 8.72, not a buffer.",
+      "voiceover": {
+        "text": "Quick check, and this one's a trap unless you identify carefully. Add twenty-five millilitres of nought-point-one mole per litre sodium hydroxide to twenty-five millilitres of nought-point-one mole per litre acetic acid. Find the pH, and decide whether it's a buffer. Pause and identify the system first. Right, let's work it. The moles of base and acid are equal, both two-point-five times ten to the minus three. Equal moles means we're exactly at the equivalence point, so all the acetic acid has turned into acetate. That means it is not a buffer, because there's no acetic acid left, just its conjugate base. So we have a basic salt solution. The acetate concentration is nought-point-zero-five in the combined fifty millilitres. Its Kb is Kw over Ka, five-point-six times ten to the minus ten. The hydroxide concentration is the square root of Kb times concentration, about five-point-three times ten to the minus six. The pOH is five-point-two-eight, so the pH is eight-point-seven-two. Basic, just above seven, exactly what a weak acid salt should give. The trap was assuming a buffer when you've actually hit the equivalence point."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Identify acid or base, strong or weak, before any calculation.",
+        "Strong → [H⁺] = c; weak → ICE table with the 5% check.",
+        "Mixing → work in moles and divide by the total volume.",
+        "Both HA and A⁻ present → buffer → Henderson-Hasselbalch.",
+        "For a base, finish with pH = 14 − pOH and sanity check above 7."
+      ],
+      "finalPrompt": "Any pH question: name the system, then the method follows.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: identify first, match the method, watch volume and pOH.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, before any calculation, identify whether it's an acid or a base, and whether it's strong or weak. That decision drives everything. Second, strong means hydrogen ion equals concentration directly, while weak means an ICE table, with the five percent check every time. Third, for mixing, work in moles and divide by the total combined volume, never just one of them. Fourth, if both a weak acid and its conjugate base are present, it's a buffer, so use Henderson-Hasselbalch, not an ICE table. And fifth, for any base, finish with pH equals fourteen minus the pOH, and sanity check that it's above seven. Name the system first, and the right method falls out on its own. See you in the next lesson."
+      }
+    }
+  ]
+}

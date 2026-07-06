@@ -1,0 +1,202 @@
+{
+  "title": "Chromosomal Mutation",
+  "subtitle": "Large-scale change across many genes at once",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6 — Genetic Change",
+  "syllabusDotPoints": [
+    "compare the causes, processes and effects of different types of mutation, including but not limited to point mutation and chromosomal mutation"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-13",
+    "BIO11/12-4",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does mutation introduce new alleles into a population?",
+  "lessonIntent": "Students can classify structural chromosomal mutations and explain why chromosome-level change usually affects many more genes than a point mutation.",
+  "examSkill": "Name a structural chromosome change and explain why its phenotypic effect is usually broader than a point mutation.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, chromosomal mutation, change at large scale. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Chromosomal Mutation — Large-Scale Genetic Change (Year 12 Biology, Module 6, Lesson 4)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One extra chromosome",
+      "body": "In Down syndrome, every cell carries 47 chromosomes instead of 46, adding hundreds of extra gene copies at once.",
+      "callout": "How can a change at chromosome scale, not base scale, arise in meiosis?",
+      "image": "bioM6L4ChromosomeTypes",
+      "durationInFrames": 690,
+      "caption": "Trisomy 21 adds an entire chromosome, affecting hundreds of genes.",
+      "voiceover": {
+        "text": "In nineteen fifty nine, a French team led by Jerome Lejeune published the first karyotype of a person with Down syndrome, and they counted something unexpected, forty seven chromosomes in every cell, instead of the usual forty six. There was one extra copy of chromosome twenty one, and it came from non-disjunction during meiosis, when chromosomes fail to separate properly. Trisomy twenty one affects about one in eight hundred live births worldwide. Now think about the scale of this. This is not one base changing in one gene. It's an entire extra chromosome, carrying hundreds of genes, altering their dosage in every single cell of the body for that person's whole life. So today's question is, how does a change at chromosome scale, rather than base scale, arise in meiosis, and why are its effects so much broader?"
+      }
+    },
+    {
+      "id": "concept-scale",
+      "type": "concept",
+      "heading": "Big regions, not single codons",
+      "body": "A chromosomal mutation is a structural change to chromosome segments, and sometimes chromosome number, rather than a single base.",
+      "bullets": [
+        {"text": "A point mutation changes one base or codon inside a gene."},
+        {"text": "A chromosomal mutation loses, copies, reverses or relocates whole segments."},
+        {"text": "Because many genes sit inside one segment, effects are usually broader."}
+      ],
+      "secondary": "When a segment is lost, copied, reversed or moved, multiple genes can be removed, duplicated, interrupted, or placed beside new regulatory regions all at once.",
+      "callout": "Same kind of DNA change, much larger scale.",
+      "durationInFrames": 1050,
+      "caption": "Chromosomal mutations restructure whole segments, affecting many genes.",
+      "voiceover": {
+        "text": "Let's set the big distinction. Back in the last lesson, point mutations changed one base, or a few bases, inside a single gene. A chromosomal mutation operates at a completely different scale. It's a structural change to whole chromosome segments, and sometimes to chromosome number itself, rather than to a single base. So when a segment is lost, copied, reversed, or relocated, you're not touching one codon, you're affecting many genes at once. Multiple genes can be removed together, duplicated together, interrupted at the break points, or suddenly placed beside brand new regulatory regions. That's exactly why chromosomal mutations usually have broader effects than a substitution or a small insertion inside one gene. It's the same fundamental kind of DNA change, but operating across a far larger stretch of the genome, and that scale is what drives the bigger consequences."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Chromosomal mutation: a large-scale change to chromosome structure, sometimes number."},
+        {"text": "Deletion: a chromosome segment is lost, removing multiple genes."},
+        {"text": "Duplication: a segment is copied, increasing gene dosage in that region."},
+        {"text": "Inversion: a segment breaks off and reattaches in reverse orientation."},
+        {"text": "Translocation: a segment moves to a different position, often another chromosome."},
+        {"text": "Gene dosage: the number of copies of a gene, which can affect how much product is made."}
+      ],
+      "callout": "Deletion, duplication, inversion, translocation: the four structural types.",
+      "durationInFrames": 1140,
+      "caption": "Chromosomal mutation, deletion, duplication, inversion, translocation, gene dosage.",
+      "voiceover": {
+        "text": "Let's pin down the vocabulary, and there are six terms here. A chromosomal mutation is a large-scale change to chromosome structure, and sometimes to chromosome number. Then there are the four structural types. A deletion is where a chromosome segment is lost, taking multiple genes with it. A duplication is where a segment is copied, so it appears twice, which increases the gene dosage in that region. An inversion is where a segment breaks off and reattaches in reverse orientation, flipping the gene order. And a translocation is where a segment moves to a different position, often onto another chromosome entirely. The sixth term, gene dosage, is the number of copies of a gene present, and it matters because more copies can mean more gene product. Those four structural types, deletion, duplication, inversion and translocation, are the spine of this whole lesson."
+      }
+    },
+    {
+      "id": "concept-four-types",
+      "type": "concept",
+      "heading": "Four structural types, four mechanisms",
+      "body": "Each structural type rearranges the chromosome differently, and each can change phenotype through a different mechanism.",
+      "bullets": [
+        {"text": "Deletion: genes in the lost region may be gone entirely."},
+        {"text": "Duplication: extra copies raise gene dosage and can overproduce the product."},
+        {"text": "Inversion: gene order flips, and break points can disrupt genes or controls."},
+        {"text": "Translocation: genes move beside new regulators or break at the junction."}
+      ],
+      "secondary": "You don't need fine cytogenetic detail. You need the mechanism and the consequence: losing, gaining, reversing or moving a segment changes more than one codon.",
+      "callout": "Lost, doubled, flipped or moved, each with a distinct effect.",
+      "durationInFrames": 1080,
+      "caption": "Deletion removes, duplication overproduces, inversion flips, translocation relocates.",
+      "voiceover": {
+        "text": "Let's walk through the four structural types and how each one actually changes the phenotype, because that mechanism is what earns the marks. A deletion removes a segment, so the genes in that region may be lost entirely, and missing gene products or missing controls can disrupt development. A duplication copies a segment, so genes appear in extra copies, raising the gene dosage and potentially overproducing the product. An inversion flips a segment around, so the gene order is reversed, and the break points where it snapped can disrupt a gene or its control region. And a translocation moves a segment somewhere new, often another chromosome, so genes can end up beside unfamiliar regulatory sequences, or be broken right at the junction. You don't need fine cytogenetic detail for HSC, but you do need this, losing, gaining, reversing or moving a segment changes far more than one codon, and that's why these effects are broad."
+      },
+      "diagram": {
+        "type": "chromosomeMutation"
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-number",
+      "type": "concept",
+      "heading": "Chromosome number change",
+      "body": "Some large-scale mutations change chromosome number rather than internal structure, and they affect all genes on that chromosome.",
+      "bullets": [
+        {"text": "Non-disjunction in meiosis can give gametes an abnormal chromosome number."},
+        {"text": "Gaining or losing a whole chromosome alters the copy number of all its genes."},
+        {"text": "Trisomy 21 is the standard example, an extra chromosome 21 in every cell."}
+      ],
+      "secondary": "The unifying principle: the larger the genomic region affected, the more widespread the possible biological consequences.",
+      "callout": "Bigger region affected means broader consequences.",
+      "durationInFrames": 990,
+      "caption": "Chromosome number changes affect every gene on the chromosome.",
+      "voiceover": {
+        "text": "There's one more class of large-scale mutation to know, and it's about chromosome number rather than internal structure. Sometimes, during meiosis, chromosomes fail to separate properly, that's non-disjunction, and the result is a gamete with an abnormal number of chromosomes. If that gamete is fertilised, the offspring gains or loses a whole chromosome, which alters the copy number of every single gene sitting on it. Trisomy twenty one, the cause of Down syndrome, is the standard example, an extra copy of chromosome twenty one in every cell. At HSC survey level, you don't need every numerical disorder, you just need to recognise that whole-chromosome changes have major effects because so many genes are involved at once. And that reinforces the unifying principle of the whole lesson, the larger the genomic region affected, the more widespread the possible consequences."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Name the change",
+      "question": "Name the chromosomal mutation: (a) a segment is lost after breakage; (b) a segment appears twice on the chromosome; (c) a segment breaks off and reattaches reversed; (d) a segment moves onto a different chromosome.",
+      "coachNote": "Track what happens to the segment: gone, doubled, flipped, or relocated.",
+      "steps": [
+        "(a) A lost segment is a deletion.",
+        "(b) A segment appearing twice is a duplication.",
+        "(c) A segment reattaching reversed is an inversion.",
+        "(d) A segment moving to another chromosome is a translocation.",
+        "Answer: (a) deletion, (b) duplication, (c) inversion, (d) translocation."
+      ],
+      "durationInFrames": 990,
+      "caption": "(a) deletion, (b) duplication, (c) inversion, (d) translocation.",
+      "voiceover": {
+        "text": "Let's name four changes quickly. The trick is to track what happens to the segment. Part a, a segment is lost after breakage. Gone means a deletion. Part b, a segment appears twice on the chromosome. Doubled means a duplication, and remember that raises gene dosage. Part c, a segment breaks off and reattaches reversed. Flipped means an inversion, and watch for break points that might disrupt a gene. Part d, a segment moves onto a different chromosome. Relocated means a translocation, which can place genes beside new regulators. So the whole classification comes down to one question, what happened to the segment, was it gone, doubled, flipped, or moved. Answer the four, deletion, duplication, inversion, translocation."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The big traps",
+      "body": "Trap 1: treating a chromosomal mutation as just a big point mutation. Point mutations affect a few bases; chromosomal mutations restructure many genes at once.",
+      "secondary": "Trap 2: assuming an inversion always causes disease. If no gene or control region is broken at the break points, an inversion can be carried with no symptoms. Trap 3: forgetting that translocation moves a segment, while deletion simply loses one.",
+      "mistakeTag": "Where chromosomal-mutation marks vanish",
+      "callout": "Restructuring genes, not just a longer point mutation.",
+      "durationInFrames": 1020,
+      "caption": "Chromosomal is not a big point mutation; inversions are not always harmful.",
+      "voiceover": {
+        "text": "Three traps to avoid. Trap one, treating a chromosomal mutation as if it's just a large point mutation that happens to be on a chromosome. That misses the point. Point mutations affect one or a few bases, whereas chromosomal mutations simultaneously remove, duplicate, invert or translocate many genes, producing much larger and often more severe effects. They differ in scale and in mechanism. Trap two, assuming a chromosomal inversion always causes disease. Inversions rearrange the gene order, but if the break points don't actually disrupt a coding sequence or a control region, many inversions are carried with no symptoms at all. The effect depends on what gets broken. And trap three, blurring translocation and deletion. A translocation moves a segment to a new location, while a deletion simply loses one, so keep those distinct. Nail those three and chromosomal questions get a lot easier."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Compare a missense substitution in one gene with a deletion removing a large chromosome segment. Which is more likely to affect many genes, why, and why is the exact outcome not perfectly predictable?",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The deletion of a large segment is more likely to affect many genes.",
+        "It can remove multiple genes and regulatory regions at once, whereas the substitution changes one codon in one gene.",
+        "The exact outcome depends on which genes and controls sit inside the deleted segment.",
+        "It also depends on how critical those genes are to cell function.",
+        "Answer: the large deletion has broader, less predictable effects than the single missense change."
+      ],
+      "durationInFrames": 1050,
+      "caption": "A large deletion affects more genes than a single missense substitution.",
+      "voiceover": {
+        "text": "Quick check. Compare a missense substitution in one gene with a deletion that removes a large chromosome segment. Which is more likely to affect many genes, why, and why is the exact outcome not perfectly predictable? Pause and reason it through. Right. The deletion of a large segment is clearly more likely to affect many genes. The reason is scale, a large deletion can wipe out multiple genes and regulatory regions all at once, whereas a missense substitution changes just one codon in a single gene. Now, why isn't the outcome perfectly predictable? Because it depends entirely on which genes and which control regions happen to sit inside that deleted segment, and on how critical those particular genes are to the cell's function. So the large deletion has broader and less predictable effects than the single missense change, which is the whole point about scale."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A chromosomal mutation restructures whole segments, and sometimes changes chromosome number.",
+        "The four structural types are deletion, duplication, inversion and translocation.",
+        "Each type changes phenotype through a different mechanism, including gene dosage.",
+        "Non-disjunction in meiosis can change chromosome number, as in trisomy 21.",
+        "The larger the region affected, the broader the likely effects."
+      ],
+      "finalPrompt": "Comparing mutations? Ask how much of the genome the change touches.",
+      "durationInFrames": 1020,
+      "caption": "Five takeaways: structural change, four types, mechanisms, number change, scale.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, a chromosomal mutation restructures whole chromosome segments, and sometimes changes chromosome number itself. Second, the four structural types are deletion, duplication, inversion and translocation. Third, each type changes phenotype through a different mechanism, deletion removes products, duplication raises gene dosage, inversion flips order and can break genes, and translocation places genes in a new context. Fourth, non-disjunction during meiosis can change chromosome number, as in trisomy twenty one. And fifth, the unifying idea, the larger the region of the genome affected, the broader the likely effects. So whenever you're comparing mutations, ask how much of the genome the change actually touches. See you next lesson."
+      }
+    }
+  ]
+}

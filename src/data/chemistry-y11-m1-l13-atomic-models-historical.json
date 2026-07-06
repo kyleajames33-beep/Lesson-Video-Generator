@@ -1,0 +1,203 @@
+{
+  "title": "Atomic Models: Historical Development",
+  "subtitle": "How evidence reshaped our picture of the atom",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 13",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "investigate the basic structure of stable and unstable isotopes by examining their position in the periodic table and the distribution of electrons, protons and neutrons in the atom"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-7"],
+  "inquiryQuestion": "Why are atoms of elements different from one another?",
+  "lessonIntent": "Students can describe how each atomic model was revised by new evidence and calculate subatomic particle counts from nuclide notation.",
+  "examSkill": "Match each key experiment to the model change it forced, and calculate protons, neutrons, and electrons from nuclide notation including ions.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the atomic models, how evidence reshaped the atom. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Atomic Models: Historical Development (Year 11 Chemistry, Module 1, Lesson 13)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The bounce that broke a model",
+      "body": "Rutherford fired tiny particles at gold foil. A few bounced straight back, and that shouldn't have been possible.",
+      "callout": "One surprising result can demolish an entire model.",
+      "durationInFrames": 690,
+      "caption": "Rutherford's gold foil: a few alpha particles bounced back, breaking the old model.",
+      "voiceover": {
+        "text": "OK, picture a famous experiment from 1911. Ernest Rutherford fired positively charged alpha particles at an incredibly thin sheet of gold foil. At the time, everyone believed the atom was a soft, spread-out ball of positive charge with electrons dotted through it, the so-called plum pudding model. If that were true, the particles should have sailed straight through, barely nudged. Most did. But a tiny fraction came bouncing right back, as if they'd hit something solid. Rutherford said it was like firing a shell at tissue paper and having it rebound at you. That single surprising result demolished the plum pudding model. And that's the story of this whole lesson, how each new piece of evidence forced scientists to redraw the atom."
+      }
+    },
+    {
+      "id": "concept-particles",
+      "type": "concept",
+      "heading": "The three subatomic particles",
+      "body": "Every atom is built from protons, neutrons, and electrons, and each has a fixed charge, mass, and location.",
+      "diagram": {
+        "type": "table",
+        "headers": ["Particle", "Rel. mass", "Charge", "Location"],
+        "rows": [
+          ["Proton", "1", "+1", "Nucleus"],
+          ["Neutron", "1", "0", "Nucleus"],
+          ["Electron", "≈0 (1/1836)", "−1", "Shells"]
+        ],
+        "delay": 18
+      },
+      "secondary": "Atomic number Z = protons. Mass number A = protons + neutrons. Neutrons = A − Z. In a neutral atom, electrons = Z.",
+      "callout": "Z counts protons; A counts protons plus neutrons.",
+      "durationInFrames": 1140,
+      "caption": "Proton (+1, nucleus), neutron (0, nucleus), electron (−1, shells).",
+      "voiceover": {
+        "text": "Before we trace the models, let's pin down what an atom is made of. There are three subatomic particles. The proton has a relative mass of one, a charge of plus one, and it sits in the nucleus. The neutron also has a relative mass of one, but no charge at all, and it sits in the nucleus too. The electron is the lightweight, with a mass roughly one eighteen-hundredth of a proton, so we treat it as nearly zero, a charge of minus one, and it lives out in the shells around the nucleus. Now the relationships you'll use constantly. The atomic number, capital Z, is just the number of protons. The mass number, capital A, is protons plus neutrons. So the number of neutrons is A minus Z. And in a neutral atom, the number of electrons equals the number of protons, which is Z."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Atomic number (Z): the number of protons; it defines the element."},
+        {"text": "Mass number (A): the number of protons plus neutrons."},
+        {"text": "Nucleus: the tiny, dense, positively charged core of the atom."},
+        {"text": "Nuclide notation: ᴬZ X, showing mass number, atomic number, symbol."}
+      ],
+      "callout": "Z fixes which element it is; A fixes how heavy that atom is.",
+      "durationInFrames": 930,
+      "caption": "Atomic number, mass number, nucleus, nuclide notation.",
+      "voiceover": {
+        "text": "Let's lock in the vocabulary. The atomic number, Z, is the number of protons, and it's the most important number in chemistry because it defines which element you have. The mass number, A, is the total of protons and neutrons. The nucleus is the tiny, dense, positively charged core where all those protons and neutrons live, and where almost all the mass sits. And nuclide notation is the shorthand we use to show it all, the mass number written top-left, the atomic number bottom-left, and the element symbol next to them. Read that notation and you can pull out every particle count in an atom."
+      }
+    },
+    {
+      "id": "concept-models",
+      "type": "concept",
+      "heading": "The models, in order",
+      "body": "Four models, each replaced when an experiment showed something the model couldn't explain.",
+      "image": "l13AtomicModelTimeline",
+      "bullets": [
+        {"text": "Dalton (1803): the atom is a solid, indivisible sphere."},
+        {"text": "Thomson (1904): plum pudding, electrons set in positive charge."},
+        {"text": "Rutherford (1911): a tiny dense nucleus in mostly empty space."},
+        {"text": "Bohr (1913): electrons sit in fixed energy-level shells."}
+      ],
+      "secondary": "Each model fell when new evidence appeared: electrons broke Dalton, gold foil broke Thomson, and spectra broke Rutherford.",
+      "callout": "Models change when the evidence outgrows them.",
+      "durationInFrames": 1200,
+      "caption": "Dalton → Thomson → Rutherford → Bohr, each revised by new evidence.",
+      "voiceover": {
+        "text": "Now the timeline, and notice the pattern as we go. In 1803, Dalton pictured the atom as a solid, indivisible sphere, like a tiny billiard ball. That held until 1897, when Thomson discovered the electron, proving atoms have internal parts. So in 1904 Thomson proposed the plum pudding, a ball of positive charge with electrons embedded through it like fruit in a pudding. That held until Rutherford's gold foil experiment, which showed the mass is concentrated in a tiny core. So in 1911 Rutherford proposed the nuclear model, a small dense nucleus surrounded by mostly empty space. But that had a problem. Classical physics said orbiting electrons should spiral into the nucleus, so atoms would collapse. So in 1913, Bohr fixed it by putting electrons into fixed energy levels, or shells, which also explained the discrete lines in hydrogen's spectrum. Four models, and each one fell the moment the evidence outgrew it."
+      }
+    },
+    {
+      "id": "concept-goldfoil",
+      "type": "concept",
+      "heading": "Reading the gold foil result",
+      "body": "Each observation in the gold foil experiment maps to a precise conclusion about atomic structure.",
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "Plum pudding predicted",
+        "afterLabel": "Rutherford observed",
+        "beforeContent": "All alpha particles pass through with only slight deflection.",
+        "afterContent": "Most pass through, a few deflect sharply, very few bounce back.",
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Most passed straight through, so the atom is mostly empty space."},
+        {"text": "A few deflected sharply, so there is a concentrated positive charge."},
+        {"text": "Very few bounced back, so that charge is tiny but dense, the nucleus."}
+      ],
+      "secondary": "Only a small, concentrated, positive nucleus could repel the rare alpha particle straight back.",
+      "callout": "Observation to conclusion is the marks-winning structure.",
+      "durationInFrames": 1170,
+      "caption": "Most pass through (empty space); few deflect (positive core); fewer bounce (tiny dense nucleus).",
+      "voiceover": {
+        "text": "The gold foil experiment is the single most examined experiment in atomic theory, so let's read it the way an examiner wants, observation linked to conclusion. Observation one, most alpha particles passed straight through the foil with little deflection. Conclusion, the atom must be mostly empty space, because there was nothing in the way. Observation two, a small fraction deflected at large angles. Conclusion, there must be a concentrated region of positive charge, repelling the positive alpha particles. Observation three, a very tiny fraction bounced almost straight back. Conclusion, that positive charge must be incredibly small and dense, a nucleus, because only a tiny, massive target could throw a particle back the way it came. Every mark in this question comes from pairing the observation with the right conclusion, so always write them as a pair."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Counting particles in an ion",
+      "question": "How many protons, neutrons, and electrons are in ⁵⁶₂₆Fe²⁺?",
+      "coachNote": "Get neutral counts first, then adjust electrons for the charge.",
+      "steps": [
+        "Atomic number Z = 26, so there are 26 protons",
+        "Neutrons = A − Z = 56 − 26 = 30 neutrons",
+        "A neutral Fe atom would have 26 electrons",
+        "The 2+ charge means two electrons were lost: 26 − 2 = 24 electrons",
+        "Answer: 26 protons, 30 neutrons, 24 electrons ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "⁵⁶₂₆Fe²⁺: 26 protons, 30 neutrons, 24 electrons.",
+      "voiceover": {
+        "text": "Let's calculate from nuclide notation, and I'm using an ion on purpose, because that's where students slip. How many protons, neutrons, and electrons are in iron fifty-six, with atomic number twenty-six, and a two plus charge? Step one, the atomic number is twenty-six, so there are twenty-six protons. That never changes, it defines iron. Step two, neutrons equal mass number minus atomic number, so fifty-six minus twenty-six gives thirty neutrons. Step three, a neutral iron atom would have twenty-six electrons. Step four, and here's the key, the charge is two plus, which means it lost two electrons. So twenty-six minus two gives twenty-four electrons. The full answer, twenty-six protons, thirty neutrons, and twenty-four electrons. The trap is forgetting that a positive charge means fewer electrons, not more."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking a 2+ charge adds electrons. A positive ion has lost electrons, so it has fewer.",
+      "secondary": "Trap 2: saying the gold foil result showed electrons in shells. It showed the nucleus; shells came later, from Bohr. Trap 3: describing models as simply wrong, rather than superseded by new evidence.",
+      "mistakeTag": "Where atomic-model marks vanish",
+      "callout": "Cations have fewer electrons; gold foil showed the nucleus; models were superseded.",
+      "durationInFrames": 1200,
+      "caption": "Cation = fewer electrons; gold foil showed the nucleus; models were superseded, not just wrong.",
+      "voiceover": {
+        "text": "Three traps. Trap one, getting the electron count backwards for an ion. A two plus charge means the atom lost two electrons, so it has fewer than the neutral atom, not more. Positive means electrons left. Trap two, claiming the gold foil experiment revealed electrons in shells. It didn't. The gold foil experiment showed the nucleus, a tiny dense positive core. The idea of fixed electron shells came two years later, from Bohr, to explain hydrogen's spectrum. Keep the evidence matched to the right model. Trap three, dismissing the old models as just wrong. In an exam, say they were superseded when new evidence appeared. Dalton wasn't stupid, his model simply couldn't explain the electron, so it was revised. That language earns the marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Which observation in the gold foil experiment shows the atom is mostly empty space, and why?",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Recall the three observations: pass through, deflect, bounce back",
+        "Most alpha particles passed straight through the foil",
+        "If the atom were a solid positive sphere, they would all be deflected",
+        "Passing through unimpeded means there is little matter in the way",
+        "Answer: most particles passing straight through shows mostly empty space ✓"
+      ],
+      "durationInFrames": 1140,
+      "caption": "Most alpha particles passing straight through shows the atom is mostly empty space.",
+      "voiceover": {
+        "text": "Quick check on the experiment. Which observation in the gold foil experiment tells us the atom is mostly empty space, and why? Pause and work it through. Right, let's check it. Step one, recall the three observations, most particles passed through, a few deflected, and a very few bounced back. Step two, the relevant one here is that most alpha particles passed straight through the foil. Step three, ask what the plum pudding model predicted. If the atom were a solid sphere of positive charge filling its volume, the particles should all have been deflected as they pushed through it. Step four, since they sailed through unimpeded instead, there must be very little matter in their path. So the answer, most particles passing straight through is the observation that shows the atom is mostly empty space."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Three particles: proton (+1), neutron (0), electron (−1).",
+        "Z = protons; A = protons + neutrons; neutrons = A − Z.",
+        "Dalton → Thomson → Rutherford → Bohr, each revised by evidence.",
+        "Gold foil: most pass (empty space), few deflect, very few bounce (nucleus).",
+        "A cation lost electrons, so it has fewer than the neutral atom."
+      ],
+      "finalPrompt": "Describing a model change? Name the experiment that forced it.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: the particles, Z and A, the model timeline, gold foil, ion electron counts.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, the three subatomic particles, the proton with charge plus one, the neutron with no charge, and the electron with charge minus one. Second, the atomic number Z is the proton count, the mass number A is protons plus neutrons, so neutrons equal A minus Z. Third, the models ran Dalton, Thomson, Rutherford, then Bohr, and each was revised when new evidence appeared. Fourth, the gold foil result, most particles passed through showing empty space, a few deflected showing a positive core, and very few bounced back showing a tiny dense nucleus. And fifth, a positive ion has lost electrons, so it has fewer than the neutral atom. Whenever you describe a model changing, name the experiment that forced it. See you next lesson."
+      }
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "title": "Reactions of Alkenes: Addition & Markovnikov's Rule",
+  "subtitle": "Hydrogenation, halogenation, hydrohalogenation and hydration",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 6",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "investigate, write equations and construct models to represent the reactions of unsaturated hydrocarbons when added to a range of chemicals, including but not limited to:"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": ["CH12-14", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "What are the products of reactions of hydrocarbons and how do they react?",
+  "lessonIntent": "Students can write equations with full conditions for the four alkene addition reactions and apply Markovnikov's rule to choose the major product.",
+  "examSkill": "State the catalyst and conditions for each addition, and for HX or water on an unsymmetrical alkene, add H to the carbon with more H atoms.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the four addition reactions of alkenes and Markovnikov's rule. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Reactions of Alkenes: Addition & Markovnikov's Rule (Year 12 Chemistry, Module 7, Lesson 6)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "How oil becomes margarine",
+      "body": "Liquid vegetable oil turns into solid margarine by reacting with hydrogen gas. The only change is a few double bonds disappearing.",
+      "callout": "Where do the hydrogen atoms go?",
+      "durationInFrames": 690,
+      "caption": "Hydrogenating the C=C bonds in oil raises its melting point into a solid spread.",
+      "voiceover": {
+        "text": "OK, here's a reaction you've eaten. Margarine is made from liquid vegetable oil by reacting it with hydrogen gas over a nickel catalyst. The oil and the margarine have almost the same molecular formula and the same carbon skeletons. The only real change is that some carbon to carbon double bonds have disappeared, replaced by single bonds. So where do the hydrogen atoms go, and why does losing a few double bonds turn a liquid into a solid spread? That's hydrogenation, the first of four addition reactions of alkenes we're covering today. By the end you'll be able to write all four, with their full conditions, and use Markovnikov's rule to predict which product forms when there's a choice."
+      }
+    },
+    {
+      "id": "concept-why-addition",
+      "type": "concept",
+      "heading": "Why alkenes add",
+      "body": "The C=C is one sigma bond plus an exposed pi bond. Addition breaks the pi bond and keeps the sigma frame.",
+      "bullets": [
+        {"text": "The pi bond is electron-rich and exposed, so reagents add across the C=C."},
+        {"text": "Two reactants combine into one product, with nothing lost."},
+        {"text": "Each carbon of the former double bond gains one new single bond."}
+      ],
+      "secondary": "Contrast with substitution: there, two products form and one group replaces another. If the product has more atoms than either reactant, it is addition.",
+      "callout": "The pi bond breaks; the sigma bond stays.",
+      "durationInFrames": 990,
+      "caption": "Addition opens the pi bond: two reactants, one product, nothing lost.",
+      "voiceover": {
+        "text": "Let's quickly ground why alkenes add, building on the bonding from lesson four. The carbon to carbon double bond is one strong sigma bond plus one weaker, exposed pi bond. In an addition reaction, that pi bond breaks while the sigma bond stays intact, and a reagent adds across the two carbons. Because it's electron-rich and sticks out, the pi bond is easy for reagents to attack. The result, two reactants combine into a single product, with no atoms lost, and each carbon of the old double bond picks up one new single bond. Compare that with substitution, where two products form and one group replaces another. A quick test, if the product has more atoms than either reactant on its own, it's addition. Hold that, because all four reactions today follow the same add across the double bond pattern."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The four addition reactions",
+      "bullets": [
+        {"text": "Hydrogenation: alkene + H2 -> alkane. Ni catalyst, about 150 to 200 degrees."},
+        {"text": "Halogenation: alkene + X2 -> dihaloalkane. No catalyst, room temperature."},
+        {"text": "Hydrohalogenation: alkene + HX -> haloalkane. No catalyst, room temperature."},
+        {"text": "Hydration: alkene + H2O -> alcohol. H3PO4 catalyst, about 300 degrees, high pressure."}
+      ],
+      "callout": "Same pattern, four reagents: H2, X2, HX, H2O.",
+      "durationInFrames": 1110,
+      "caption": "Hydrogenation, halogenation, hydrohalogenation, hydration: four reagents across the C=C.",
+      "voiceover": {
+        "text": "Here are the four addition reactions, all adding across the double bond, just with different reagents and conditions. Hydrogenation adds hydrogen gas to give an alkane, and it needs a nickel catalyst, palladium or platinum also work, at about one hundred and fifty to two hundred degrees. Halogenation adds a halogen, bromine or chlorine, to give a dihaloalkane, with no catalyst, at room temperature. Hydrohalogenation adds a hydrogen halide, like H Br, to give a single haloalkane, again no catalyst, room temperature. And hydration adds water as steam to give an alcohol, and this one is fussy, it needs a phosphoric acid catalyst, about three hundred degrees, and high pressure, all three. Notice the reagents, hydrogen, halogen, hydrogen halide, and water. The conditions are what you really have to memorise, especially for hydration."
+      }
+    },
+    {
+      "id": "concept-hydrogenation-halogenation",
+      "type": "concept",
+      "heading": "Hydrogenation and halogenation",
+      "body": "Two industrial workhorses: one makes margarine, the other is the test for unsaturation.",
+      "bullets": [
+        {"text": "Hydrogenation: CH2=CH2 + H2 -> CH3CH3, over a Ni catalyst, heated."},
+        {"text": "The catalyst is heterogeneous and is not consumed, so it is not in the equation."},
+        {"text": "Halogenation: CH2=CH2 + Br2 -> CH2BrCH2Br, decolourising bromine water."}
+      ],
+      "secondary": "For hydrogenation you must state both the catalyst and the temperature. Hydrogen gas alone does not react with an alkene at room temperature.",
+      "callout": "Ni catalyst plus heat for H2; no catalyst, room temperature for Br2.",
+      "durationInFrames": 1050,
+      "caption": "Hydrogenation needs Ni + heat; halogenation needs no catalyst and decolourises Br2.",
+      "voiceover": {
+        "text": "Let's take the first two together. Hydrogenation adds hydrogen across the double bond, so ethene plus hydrogen gives ethane, run over a nickel catalyst with heat. The catalyst is heterogeneous, a solid surface that the gases stick to, and it's not consumed, so it never appears in the balanced equation. This is the margarine reaction, adding hydrogen to the double bonds in oils raises their melting point. In your answers, always state both the catalyst and the temperature, because hydrogen gas on its own does nothing to an alkene at room temperature. Halogenation is simpler. Ethene plus bromine gives one-comma-two-dibromoethane, with a bromine on each carbon, no catalyst, room temperature. And because bromine is consumed adding across the double bond, this is the reaction behind the bromine water test, the orange colour disappears."
+      }
+    },
+    {
+      "id": "formula-markovnikov",
+      "type": "concept",
+      "heading": "Markovnikov's rule",
+      "body": "For an unsymmetrical alkene plus HX or water, two products are possible. Markovnikov tells you which dominates.",
+      "image": "m7L6Markovnikov",
+      "bullets": [
+        {"text": "Count the H atoms on each carbon of the C=C."},
+        {"text": "H adds to the carbon that already has more H atoms."},
+        {"text": "X or OH adds to the other carbon, the more substituted one."}
+      ],
+      "secondary": "The memory aid: the rich get richer, the H-rich carbon gains the extra H. The more substituted carbocation is more stable, so that pathway is faster.",
+      "callout": "More H gets the H; the other carbon gets the X or OH.",
+      "durationInFrames": 1080,
+      "caption": "Markovnikov: H to the carbon with more H; X or OH to the more substituted carbon.",
+      "voiceover": {
+        "text": "Now the rule that decides the product when there's a choice. When a reagent like H Br, or water, adds to an unsymmetrical alkene, where the two carbons of the double bond are different, two products are possible. The hydrogen could go to either carbon. Markovnikov's rule tells you which one dominates. Here it is. First, count the hydrogen atoms on each carbon of the double bond. Then, the hydrogen from the reagent adds to the carbon that already has more hydrogens. And the halogen, or the oxygen hydrogen group, adds to the other carbon, the more substituted one. The memory aid is, the rich get richer, the carbon already rich in hydrogen gains the extra one. The deeper reason is that this route goes through the more stable carbocation, so it's the faster pathway, and gives the major product."
+      }
+    },
+    {
+      "id": "concept-hydration",
+      "type": "concept",
+      "heading": "Hydration: making ethanol",
+      "body": "Hydration is the industrial route to ethanol, and it needs three conditions stated together.",
+      "bullets": [
+        {"text": "Reagent water (steam); catalyst dilute H3PO4 or H2SO4."},
+        {"text": "About 300 degrees, and high pressure (around 65 atmospheres)."},
+        {"text": "CH2=CH2 + H2O -> CH3CH2OH; for unsymmetrical alkenes, Markovnikov applies."}
+      ],
+      "secondary": "The most commonly omitted condition is pressure. The reaction is reversible, so high pressure drives the equilibrium toward the alcohol.",
+      "callout": "Catalyst, high temperature, and high pressure: all three or lose marks.",
+      "durationInFrames": 1080,
+      "caption": "Hydration: steam, H3PO4, ~300C, high pressure -> ethanol (Markovnikov).",
+      "voiceover": {
+        "text": "Hydration is the industrial way to make ethanol, and it's the one students lose marks on. The reagent is water, as steam. The catalyst is phosphoric acid, or sulfuric acid. The temperature is about three hundred degrees, and crucially, the pressure is high, around sixty-five atmospheres. So ethene plus water gives ethanol. For an unsymmetrical alkene, Markovnikov applies, the oxygen hydrogen group goes to the more substituted carbon, so propene gives propan-two-ol, not propan-one-ol. The big exam point, you must state all three conditions together, catalyst, high temperature, and high pressure. The one people forget most often is pressure. The reaction is reversible, and high pressure pushes the equilibrium toward the alcohol side, which has fewer gas molecules. State only one or two conditions and you lose marks, even if the equation is perfect."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Equations with conditions",
+      "question": "Write equations and full conditions for: (a) propene + H2  (b) ethene + Br2  (c) but-1-ene + H2O.",
+      "coachNote": "State catalyst, temperature and pressure where each applies.",
+      "steps": [
+        "(a) CH3CH=CH2 + H2 -> CH3CH2CH3; Ni catalyst, ~150-200C",
+        "(b) CH2=CH2 + Br2 -> CH2BrCH2Br; no catalyst, room temperature",
+        "(c) But-1-ene: C1(=CH2) has 2H, C2 has 1H, so OH -> C2 (Markovnikov)",
+        "(c) CH3CH2CH=CH2 + H2O -> CH3CH2CH(OH)CH3 (butan-2-ol)",
+        "(c) Conditions: H3PO4 catalyst, ~300C, high pressure ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "(a) propane (Ni), (b) 1,2-dibromoethane, (c) butan-2-ol (H3PO4, 300C, high P).",
+      "voiceover": {
+        "text": "Let's write three with full conditions. Part a, hydrogenation of propene. Propene plus hydrogen gives propane, over a nickel catalyst at about one hundred and fifty to two hundred degrees. Part b, halogenation of ethene. Ethene plus bromine gives one-comma-two-dibromoethane, no catalyst, room temperature. Part c, hydration of but-one-ene, and here Markovnikov matters. Carbon one, the C H two end, has two hydrogens, while carbon two has only one, so the oxygen hydrogen group adds to carbon two, the more substituted one. That gives butan-two-ol, not butan-one-ol. The equation is but-one-ene plus water gives butan-two-ol, with the conditions phosphoric acid catalyst, about three hundred degrees, and high pressure. Notice how each reaction has its own conditions, and you have to state them, especially that full set of three for hydration."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Major product with Markovnikov",
+      "question": "What is the major product when but-1-ene reacts with HBr? Explain.",
+      "coachNote": "Find which C=C carbon has more H atoms first.",
+      "steps": [
+        "But-1-ene: CH3CH2CH=CH2; C1(=CH2) has 2H, C2 has 1H",
+        "Markovnikov: H adds to C1 (more H); Br adds to C2 (fewer H, more substituted)",
+        "Major product: CH3CH2CHBrCH3 = 2-bromobutane",
+        "Reason: the secondary carbocation at C2 is more stable than a primary one",
+        "Answer: 2-bromobutane is the major product ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "but-1-ene + HBr -> 2-bromobutane (Markovnikov major product).",
+      "voiceover": {
+        "text": "Now a Markovnikov question. What's the major product when but-one-ene reacts with H Br? Step one, draw it, C H three C H two C H double bond C H two, and count hydrogens on the double bond carbons. Carbon one, the end C H two, has two hydrogens. Carbon two has one. Step two, apply the rule. The hydrogen adds to carbon one, which already has more hydrogens. The bromine adds to carbon two, the more substituted carbon. Step three, that gives C H three C H two C H Br C H three, which is two-bromobutane, the major product. Step four, the reason. When the hydrogen adds to carbon one, the positive charge develops on carbon two, giving a secondary carbocation. A secondary carbocation is more stable than a primary one, because the neighbouring alkyl groups donate electron density, so that pathway is faster. So the major product is two-bromobutane."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three alkene traps",
+      "body": "Trap 1: stating only one or two conditions for hydration. You need the catalyst, about 300 degrees, AND high pressure.",
+      "secondary": "Trap 2: applying Markovnikov to a symmetrical alkene like but-2-ene, where only one product is possible anyway. Trap 3: saying bromine water decolourising proves it is an alkene. It proves unsaturation; alkynes also decolourise it, and cycloalkanes do not.",
+      "mistakeTag": "Where alkene reaction marks vanish",
+      "callout": "All three hydration conditions, skip Markovnikov if symmetrical, Br2 tests unsaturation.",
+      "durationInFrames": 1230,
+      "caption": "State all hydration conditions; Markovnikov only if unsymmetrical; Br2 tests unsaturation.",
+      "voiceover": {
+        "text": "Three traps. Trap one, giving only part of the hydration conditions. You need all three, the phosphoric acid catalyst, the temperature of about three hundred degrees, and the high pressure, and pressure is the one most often left out. Trap two, applying Markovnikov's rule to a symmetrical alkene like but-two-ene, where both double bond carbons are identical. There's only one possible product, so the rule isn't needed, and forcing it can lead you astray. Trap three, claiming that decolourising bromine water proves a compound is an alkene. It only proves unsaturation, a carbon to carbon double or triple bond. Alkynes also decolourise bromine water, and a cycloalkane, which has the same general formula as an alkene, does not react at all. So the test confirms unsaturation, not specifically an alkene."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "What is the major product when propene reacts with water industrially? Give conditions.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Propene CH3CH=CH2: C1(=CH2) has 2H, C2 has 1H",
+        "Hydration with Markovnikov: OH adds to C2 (more substituted)",
+        "Product: CH3CH(OH)CH3 = propan-2-ol",
+        "Conditions: H2O (steam), H3PO4 catalyst, ~300C, high pressure",
+        "Answer: propan-2-ol, via Markovnikov hydration ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "propene + H2O -> propan-2-ol (H3PO4, ~300C, high pressure).",
+      "voiceover": {
+        "text": "Quick check. What's the major product when propene reacts with water industrially, and what are the conditions? Pause and work it through. Right. Propene is C H three C H double bond C H two. Carbon one, the end C H two, has two hydrogens, and carbon two has one. This is hydration, so Markovnikov applies, and the oxygen hydrogen group adds to the more substituted carbon, carbon two. That gives C H three C H bracket O H, C H three, which is propan-two-ol, a secondary alcohol. The conditions are water as steam, a phosphoric acid catalyst, about three hundred degrees, and high pressure. So the major product is propan-two-ol. Notice it's the secondary alcohol, not propan-one-ol, because the oxygen hydrogen goes to the more substituted carbon, and remember to give all three conditions."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "All four reactions add across the C=C: H2, X2, HX, or H2O.",
+        "Hydrogenation needs a Ni catalyst and heat; halogenation needs neither.",
+        "Hydration needs H3PO4, about 300 degrees, AND high pressure, all three.",
+        "Markovnikov: H joins the carbon with more H; X or OH joins the more substituted carbon.",
+        "Bromine water decolourising confirms unsaturation, not specifically an alkene."
+      ],
+      "finalPrompt": "Unsymmetrical alkene plus HX or water? Count the H atoms, then apply Markovnikov.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: four additions, conditions, hydration trio, Markovnikov, bromine test.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, all four reactions add across the carbon to carbon double bond, just with different reagents, hydrogen, a halogen, a hydrogen halide, or water. Second, hydrogenation needs a nickel catalyst and heat, while halogenation needs neither. Third, hydration needs all three conditions stated together, the phosphoric acid catalyst, about three hundred degrees, and high pressure. Fourth, Markovnikov's rule decides the major product on unsymmetrical alkenes, the hydrogen joins the carbon with more hydrogens, and the halogen or oxygen hydrogen group joins the more substituted carbon. And fifth, decolourising bromine water confirms unsaturation, not specifically an alkene. Next lesson we handle alkynes, with two pi bonds and a surprising ketone, plus alkane substitution and combustion. See you next lesson."
+      }
+    }
+  ]
+}

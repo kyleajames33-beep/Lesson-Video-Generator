@@ -24,12 +24,33 @@
     "voiceover:sync": "node scripts/sync-voiceover-assets.mjs",
     "prepare:lesson": "node scripts/prepare-lesson.mjs",
     "validate:lessons": "node scripts/validate-lesson.mjs",
+    "score:lesson": "node scripts/score-lesson.mjs",
+    "voiceover:autosync": "node scripts/auto-sync-bullets.mjs",
     "render:stills": "node scripts/render-lesson-stills.mjs",
     "render:poster": "node scripts/render-lesson-posters.mjs",
-    "review:frames": "node scripts/export-review-frames.mjs"
+    "review:frames": "node scripts/export-review-frames.mjs",
+    "audit:lesson": "node scripts/audit-lesson.mjs",
+    "export:notes": "node scripts/export-lesson-notes.mjs",
+    "export:youtube": "node scripts/export-youtube-package.mjs",
+    "export:youtube-ai": "node scripts/export-youtube-ai-description.mjs",
+    "export:srt": "node scripts/export-captions-srt.mjs",
+    "seed:recaps": "node scripts/seed-recaps.mjs",
+    "build:captions": "node scripts/build-captions.mjs",
+    "voiceover:fit": "node scripts/fit-scene-durations.mjs",
+    "voiceover:autosync-reveals": "node scripts/auto-sync-reveals.mjs",
+    "voiceover:dialogue": "node scripts/generate-elevenlabs-dialogue.mjs",
+    "voiceover:multilang": "node scripts/generate-elevenlabs-multilang.mjs",
+    "translation:prompts": "node scripts/generate-translation-prompts.mjs",
+    "asset:prompts": "node scripts/generate-asset-prompts.mjs",
+    "asset:generate": "node scripts/generate-asset-image.mjs",
+    "asset:register": "node scripts/register-asset.mjs",
+    "broll:prompts": "node scripts/generate-broll-prompts.mjs"
   },
   "dependencies": {
+    "@remotion/captions": "^4.0.451",
     "@remotion/cli": "latest",
+    "@remotion/lottie": "^4.0.451",
+    "@remotion/media": "^4.0.451",
     "@remotion/renderer": "latest",
     "@remotion/transitions": "^4.0.451",
     "react": "latest",
@@ -39,6 +60,7 @@
   "devDependencies": {
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "pngjs": "^7.0.0",
     "typescript": "latest"
   }
 }

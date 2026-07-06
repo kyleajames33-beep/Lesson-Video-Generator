@@ -73,7 +73,10 @@ for (const scene of scenes) {
   console.log(`  GEN  ${scene.id}: "${scene.text.slice(0, 50)}${scene.text.length > 50 ? '...' : ''}"`);
 
   try {
-    const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
+    // Use the with-timestamps endpoint so we get character-level alignment
+    // data back — needed by scripts/auto-sync-bullets.mjs to land bullet
+    // reveals exactly when the narrator says them.
+    const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}/with-timestamps`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -81,10 +84,15 @@ for (const scene of scenes) {
       },
       body: JSON.stringify({
         text: scene.text,
-        model_id: 'eleven_monolingual_v1',
+        // turbo_v2_5 won the model A/B for this voice + dense-chemistry
+        // scripts — zero gibberish words, cleaner cadence than multilingual_v2.
+        model_id: 'eleven_turbo_v2_5',
         voice_settings: {
           stability: 0.5,
           similarity_boost: 0.75,
+          style: 0.3,
+          use_speaker_boost: true,
+          speed: 1.0,
         },
       }),
     });
@@ -96,9 +104,20 @@ for (const scene of scenes) {
       continue;
     }
 
-    const buffer = Buffer.from(await response.arrayBuffer());
-    writeFileSync(outputPath, buffer);
-    console.log(`  OK   ${scene.id}: ${outputPath} (${buffer.length} bytes)`);
+    // with-timestamps returns JSON with base64 audio + alignment data
+    const payload = await response.json();
+    const audioBuffer = Buffer.from(payload.audio_base64, 'base64');
+    writeFileSync(outputPath, audioBuffer);
+
+    // Save alignment sidecar — character-level start/end times
+    const alignmentPath = outputPath.replace(/\.mp3$/, '.alignment.json');
+    writeFileSync(alignmentPath, JSON.stringify({
+      characters: payload.alignment?.characters ?? [],
+      character_start_times_seconds: payload.alignment?.character_start_times_seconds ?? [],
+      character_end_times_seconds: payload.alignment?.character_end_times_seconds ?? [],
+    }, null, 2));
+
+    console.log(`  OK   ${scene.id}: ${outputPath} (${audioBuffer.length} bytes, alignment saved)`);
     generated++;
   } catch (err) {
     console.error(`  FAIL ${scene.id}: ${err.message}`);

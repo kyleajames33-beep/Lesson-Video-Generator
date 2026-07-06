@@ -1,0 +1,216 @@
+{
+  "title": "Working Scientifically",
+  "subtitle": "Evaluating experiments and errors",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 18",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "evaluate the reliability, accuracy and validity of quantitative investigations and identify sources of error"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": [
+    "CH11-9",
+    "CH11/12-4",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "What happens in chemical reactions?",
+  "lessonIntent": "Students can classify errors as systematic or random, evaluate validity, reliability and accuracy, and predict how a given error affects a calculated result.",
+  "examSkill": "Identify error type (systematic vs random), state the effect on the measured value and the final result, and suggest a valid improvement.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, working scientifically, how to evaluate an experiment and its errors. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Working Scientifically (Year 11 Chemistry, Module 2, Lesson 18)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Examiners don't just want the number",
+      "body": "They want you to evaluate the experiment: what went wrong, why, and how to fix it.",
+      "callout": "Evaluation marks are easy marks if you know the language.",
+      "durationInFrames": 660,
+      "caption": "Working scientifically means evaluating experiments, not just calculating.",
+      "voiceover": {
+        "text": "OK, knowing the formulas is only half the job. The other half is evaluating experiments. Examiners constantly ask you to look at a method, identify what went wrong, explain how it affected the results, and suggest an improvement. These are some of the most reliable marks in the paper, because they follow predictable patterns. But there's a catch. You have to use the precise language, things like systematic error and random error, validity and reliability. Use the wrong word and you lose the mark even when your reasoning is right. So today is about that language and how to apply it."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Systematic vs random error",
+      "body": "Systematic errors push results the same way every time. Random errors scatter both ways.",
+      "bullets": [
+        {
+          "text": "Systematic error: a consistent bias, always in the same direction."
+        },
+        {
+          "text": "Random error: unpredictable scatter, sometimes high, sometimes low."
+        },
+        {
+          "text": "Repeating trials reduces random error, but never fixes systematic error."
+        }
+      ],
+      "secondary": "An uncalibrated balance is systematic. Slightly misjudging the meniscus each time is random.",
+      "callout": "Repeats average out random error, not systematic.",
+      "durationInFrames": 1110,
+      "caption": "Systematic = consistent bias; random = scatter. Repeats fix only random.",
+      "voiceover": {
+        "text": "The single most important distinction in this topic is systematic versus random error. A systematic error pushes every result the same way, a consistent bias in one direction. A balance that reads nought-point-two grams high every time is systematic, because every measurement is too big by the same amount. A random error scatters results unpredictably, sometimes too high, sometimes too low, like slightly misjudging the meniscus differently each trial. Here's the consequence that examiners love to test. Repeating your trials and averaging reduces random error, because the scatter cancels out. But repeating does nothing for a systematic error, because the bias is in every single trial. To fix a systematic error you have to find its cause, like recalibrating the balance."
+      },
+      "diagram": {
+        "type": "errorDartboard"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Independent variable: the one you deliberately change."
+        },
+        {
+          "text": "Dependent variable: the one you measure in response."
+        },
+        {
+          "text": "Controlled variable: one kept constant for a fair test."
+        },
+        {
+          "text": "Uncertainty: ± half the smallest scale division of the instrument."
+        }
+      ],
+      "callout": "Control everything except the one variable you change.",
+      "durationInFrames": 960,
+      "caption": "Independent, dependent, controlled variables, and uncertainty.",
+      "voiceover": {
+        "text": "Quick vocabulary that underpins any experiment. The independent variable is the one you deliberately change. The dependent variable is the one you measure in response to that change. The controlled variables are everything you deliberately keep constant, so the test is fair and only your independent variable can affect the result. And uncertainty is the range your true value likely sits within, usually taken as plus or minus half the smallest scale division of your instrument. A burette marked every nought-point-one of a millilitre has an uncertainty of plus or minus nought-point-zero-five. Control everything except the one thing you're changing."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "Validity, reliability, accuracy",
+      "body": "Three different quality words. Examiners check you can tell them apart.",
+      "bullets": [
+        {
+          "text": "Validity: does the method actually test the aim, with controls?"
+        },
+        {
+          "text": "Reliability: do repeats give consistent, close results?"
+        },
+        {
+          "text": "Accuracy: how close the result is to the true value."
+        }
+      ],
+      "secondary": "A method can be reliable but invalid, giving the same wrong answer every time. They are not the same thing.",
+      "callout": "Reliable means repeatable. Valid means it tests the right thing.",
+      "durationInFrames": 1020,
+      "caption": "Validity tests the aim; reliability is consistency; accuracy is closeness to truth.",
+      "voiceover": {
+        "text": "Three quality words that students constantly mix up, and examiners constantly test. Validity asks, does the method actually test what the aim says, with the right variables controlled? Reliability asks, do repeated trials give consistent, close results? Accuracy asks, how close is the result to the true value? The trap is thinking reliable and valid mean the same thing. They don't. An experiment can be perfectly reliable, giving the same answer every time, yet completely invalid, because that answer is consistently wrong due to a flawed method. Reliable means repeatable. Valid means it genuinely tests the right thing. Keep those separate and you'll never lose those marks."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "The burette air bubble",
+      "question": "A student doesn't clear an air bubble from the burette tip. During the titration it works out. Identify the error and its effect on c(analyte).",
+      "coachNote": "Decide systematic or random, then trace the effect through.",
+      "steps": [
+        "Error type: systematic — the bubble adds a fixed extra volume",
+        "Effect on titre: the recorded titre is too large",
+        "Larger titre → more moles of standard calculated",
+        "More standard moles → calculated c(analyte) too high",
+        "Fix: clear the bubble before the first reading ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "Air bubble = systematic; titre too high, so c(analyte) too high.",
+      "voiceover": {
+        "text": "Let's evaluate a real error. A student starts a titration without clearing an air bubble from the burette tip, and during the titration the bubble works its way out. Identify the error type and its effect on the calculated concentration of the analyte. Step one, classify it. The bubble adds a fixed extra volume to the reading, the same way each time, so it's a systematic error. Step two, the effect on the titre. Because that bubble volume gets counted as delivered solution, the recorded titre is too large. Step three, trace it forward. A larger titre means you calculate more moles of the standard. Step four, more standard moles, through the mole ratio, makes the calculated analyte concentration too high. Step five, the fix, clear the bubble before taking your first reading. Classify, then follow the error all the way to the final answer. That's the structure examiners want."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Lost precipitate",
+      "question": "While filtering a gravimetric precipitate, a small amount falls off the paper. Identify the error type and its effect on the calculated concentration.",
+      "coachNote": "Less precipitate means less measured mass.",
+      "steps": [
+        "Error type: systematic — mass is always lost in one direction",
+        "Effect on mass: the weighed precipitate is too low",
+        "Lower precipitate mass → fewer moles calculated",
+        "Fewer moles → calculated concentration too low",
+        "Fix: rinse all solid through; use quantitative transfer ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "Lost precipitate = systematic; mass too low, so concentration too low.",
+      "voiceover": {
+        "text": "Another scenario, this time gravimetric. While filtering the precipitate, a small amount falls off the filter paper and is lost. Identify the error type and its effect on the calculated concentration. Step one, classify it. Losing solid pushes the result in one consistent direction, the mass always comes out lower, so it's systematic. Step two, the effect on the measurement. The weighed precipitate mass is too low. Step three, trace it. A lower precipitate mass means you calculate fewer moles. Step four, fewer moles means the calculated concentration of the original ion comes out too low. Step five, the fix, rinse every bit of solid through quantitatively so none is lost. Same structure as before. Classify the error, then trace it step by step to the final result."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: writing 'human error' as your answer. It's vague and earns nothing. Name the specific error.",
+      "secondary": "Trap 2: saying repeats fix systematic error. Repeats only reduce random error. Trap 3: confusing validity with reliability.",
+      "mistakeTag": "Where evaluation marks vanish",
+      "callout": "Be specific, repeats fix random only, validity ≠ reliability.",
+      "durationInFrames": 1230,
+      "caption": "Never write 'human error'; repeats fix random only; validity ≠ reliability.",
+      "voiceover": {
+        "text": "Three traps that quietly cost evaluation marks. Trap one, writing human error as your answer. It's too vague and earns nothing. Name the specific error, like a misread meniscus or an uncleared air bubble, and say why it matters. Trap two, claiming that repeating trials fixes a systematic error. It doesn't. Repeats only reduce random error by averaging out the scatter. A systematic bias survives every repeat. Trap three, confusing validity with reliability. Reliable means you get consistent results. Valid means the method genuinely tests the aim. An experiment can be reliable and still completely invalid. Be specific, remember repeats fix only random error, and keep validity and reliability apart."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Different students read the burette from different angles each trial. What error is this, and how do repeats affect it?",
+      "pausePrompt": "Pause and think it through.",
+      "answerSteps": [
+        "Varying the viewing angle is parallax error",
+        "It scatters readings both high and low → random error",
+        "Random errors partly cancel when averaged",
+        "So repeating trials and averaging reduces its effect",
+        "Best fix: read at eye level, square to the meniscus ✓"
+      ],
+      "durationInFrames": 1200,
+      "caption": "Parallax from varying angles is random error; repeats reduce it.",
+      "voiceover": {
+        "text": "Quick check. Different students read the burette from different angles on different trials. What type of error is this, and how do repeats affect it? Pause and think it through. Right, let's check it. Step one, reading from varying angles is parallax error. Step two, because the angle varies unpredictably, the readings scatter both too high and too low, so it's a random error, not systematic. Step three, random errors partly cancel out when you average. Step four, so repeating the trials and taking a mean genuinely reduces the effect of this one. Step five, the best fix, always read at eye level, square to the bottom of the meniscus. Random error, helped by repeats. The opposite of the systematic bubble error from earlier."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Systematic errors bias one way; random errors scatter both ways.",
+        "Repeats reduce random error only, never systematic.",
+        "Validity tests the aim; reliability is consistency; accuracy is closeness.",
+        "Never write 'human error' — name the specific error and its effect.",
+        "Classify the error, then trace it to the final result."
+      ],
+      "finalPrompt": "Evaluating an error? Classify it, then follow it to the answer.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: systematic vs random, repeats fix random, validity vs reliability.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, systematic errors bias the result one way, while random errors scatter it both ways. Second, repeating trials reduces random error only, never systematic. Third, validity is about testing the aim, reliability is about consistency, and accuracy is about closeness to the true value. Fourth, never write human error. Name the specific error and explain its effect. And fifth, the winning structure for any evaluation question is to classify the error, then trace it step by step to the final result. These are predictable marks once you know the language. See you next lesson."
+      }
+    }
+  ]
+}

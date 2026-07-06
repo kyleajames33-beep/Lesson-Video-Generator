@@ -1,0 +1,282 @@
+{
+  "title": "Checkpoint 2, Enthalpy & Hess's Law",
+  "subtitle": "Boss-fight synthesis of Module 4 Lessons 6–10",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Checkpoint 2",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Synthesise IQ2, bond energy, enthalpy of formation, and Hess's Law calculations"
+  ],
+  "lessonIntent": "Students can choose between bond energies, ΔH°f, and Hess from equations, and execute any of the three to find ΔH.",
+  "examSkill": "Recognise which calculation method the data points to, then perform the calculation correctly.",
+  "productionRole": "production",
+  "productionNotes": "Boss-fight checkpoint covering M4 L6-L10. Three walkthroughs map to the three methods. Decision tree: bond energies vs ΔH°f vs Hess from equations. Pitfalls: breaking-releases trap, element-ΔH°f-nonzero trap, formula-rewrite-in-Hess trap.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Checkpoint 2, IQ2: Enthalpy & Hess. Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Checkpoint two. Enthalpy and Hess's Law. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint2/title.0142f7710df2.mp3"
+      }
+    },
+    {
+      "id": "cold-open",
+      "type": "hook",
+      "heading": "Which calculation method do you reach for?",
+      "body": "Lessons 6–10 gave you three ways to calculate ΔH for any reaction. The question is which one fits the data you've been handed.",
+      "bullets": [
+        {
+          "text": "A: Bond-energy table provided → bonds broken − formed (L6).",
+          "at": 5
+        },
+        {
+          "text": "B: ΔH°f table provided → products − reactants (L7).",
+          "at": 12
+        },
+        {
+          "text": "C: Two thermochemical equations given → Hess (L8).",
+          "at": 19
+        },
+        {
+          "text": "All three give the same answer if applied correctly.",
+          "at": 26
+        }
+      ],
+      "callout": "Three methods, one underlying law: Hess.",
+      "image": "m4cp2ColdOpenScenarios",
+      "durationInFrames": 1170,
+      "caption": "Bond energies vs ΔH°f vs Hess from equations.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Lessons six to ten gave you three ways to calculate delta H for any reaction. The exam skill is recognising which one fits the data. Scenario A: bond-energy table provided — use bonds broken minus bonds formed, from Lesson six. Scenario B: a standard formation enthalpy table — use sum of products minus reactants, from Lesson seven. Scenario C: two or three thermochemical equations — use Hess's Law, from Lesson eight. All three give the same answer if applied correctly. Hess's Law is what guarantees it.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint2/cold-open.b65581ae1a1a.mp3"
+      }
+    },
+    {
+      "id": "decision-tree",
+      "type": "concept",
+      "heading": "The IQ2 decision tree",
+      "body": "The data you're given dictates the method.",
+      "bullets": [
+        {
+          "text": "Bond energies in the question? → ΔH = Σ(broken) − Σ(formed) (L6).",
+          "at": 5
+        },
+        {
+          "text": "Formation enthalpy table? → ΔH = ΣΔH°f(prod) − ΣΔH°f(react) (L7).",
+          "at": 12
+        },
+        {
+          "text": "Thermochemical equations? → reverse + scale + add (L8).",
+          "at": 20
+        },
+        {
+          "text": "Reverse reaction asked? → flip the sign (L9).",
+          "at": 27
+        }
+      ],
+      "callout": "The data picks the method. Hess's Law unifies all three.",
+      "durationInFrames": 1470,
+      "caption": "Decision tree: read the data, pick the matching method.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1080,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "The IQ2 decision tree. Think of the three methods like three roads to the same town — Hess's Law guarantees they all arrive at the same delta H. But unlike real roads, you don't choose; the data picks for you. Bond energies in the question — use bonds broken minus bonds formed. A standard formation enthalpy table — use sum of products minus reactants. Two or three thermochemical equations — reverse, scale, and add. Asked for the reverse of a known reaction — just flip the sign. All three rely on Hess underneath, which is why they always agree.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint2/decision-tree.a0dc150ebcf2.mp3"
+      },
+      "diagram": {
+        "type": "hessCycle"
+      }
+    },
+    {
+      "id": "walkthrough-1",
+      "type": "workedExample",
+      "heading": "Walkthrough 1, bond energies",
+      "question": "Calculate ΔH for H₂(g) + Cl₂(g) → 2HCl(g) using H–H = 436, Cl–Cl = 243, H–Cl = 432 kJ mol⁻¹.",
+      "coachNote": "Bonds broken minus bonds formed. Breaking absorbs, forming releases.",
+      "unitCancel": {
+        "left": "kJ",
+        "right": "kJ",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: H–H = 436, Cl–Cl = 243, H–Cl = 432 kJ mol⁻¹.",
+        "Find: ΔH.",
+        "Bonds broken: 1 H–H + 1 Cl–Cl = 436 + 243 = 679 kJ.",
+        "Bonds formed: 2 H–Cl = 864 kJ.",
+        "Formula: ΔH = Σ(broken) − Σ(formed).",
+        "Substitute: ΔH = 679 − 864.",
+        "Answer: ΔH = 185 kJ mol⁻¹ released (i.e. −185 kJ mol⁻¹, exothermic)."
+      ],
+      "durationInFrames": 1410,
+      "caption": "ΔH = 679 − 864 = −185 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Walkthrough one, bond energies. Hydrogen plus chlorine giving two HCl. Bonds broken are one H–H plus one Cl–Cl, so four-thirty-six plus two-forty-three, which is six hundred and seventy-nine kilojoules. Bonds formed are two H–Cl, so eight hundred and sixty-four. Delta H is broken minus formed, six-seventy-nine minus eight-sixty-four, which is minus one hundred and eighty-five kilojoules per mole. Forming released more than breaking cost, so it's exothermic."
+      }
+    },
+    {
+      "id": "walkthrough-2",
+      "type": "workedExample",
+      "heading": "Walkthrough 2, formation enthalpies",
+      "question": "Calculate ΔH for CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l). Use ΔH°f[CH₄] = −74.8, ΔH°f[O₂] = 0, ΔH°f[CO₂] = −393.5, ΔH°f[H₂O(l)] = −285.8 kJ mol⁻¹.",
+      "coachNote": "Sum products − sum reactants. Elements (O₂) drop out.",
+      "unitCancel": {
+        "left": "kJ mol⁻¹",
+        "right": "kJ mol⁻¹",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: ΔH°f for all four species; coefficients in the equation.",
+        "Find: ΔH for the reaction.",
+        "Σ ΔH°f(products) = 1×(−393.5) + 2×(−285.8) = −965.1 kJ.",
+        "Σ ΔH°f(reactants) = 1×(−74.8) + 2×(0) = −74.8 kJ.",
+        "Formula: ΔH = Σ ΔH°f(products) − Σ ΔH°f(reactants).",
+        "Substitute: ΔH = −965.1 − (−74.8).",
+        "Answer: ΔH = 890.3 kJ mol⁻¹ released (i.e. −890.3 kJ mol⁻¹)."
+      ],
+      "durationInFrames": 1500,
+      "caption": "ΔH(CH₄ combustion) = −965.1 − (−74.8) = −890.3 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Walkthrough two, formation enthalpies. Methane combustion. Sum the products, one times minus three-ninety-three-point-five for CO two, plus two times minus two-eighty-five-point-eight for water, which totals minus nine-sixty-five-point-one kilojoules. Sum the reactants, methane is minus seventy-four-point-eight and O two is zero, so the total is minus seventy-four-point-eight. Delta H is products minus reactants, minus nine-sixty-five-point-one minus negative seventy-four-point-eight, which comes out at minus eight hundred and ninety-point-three kilojoules per mole. The accepted value for methane combustion."
+      }
+    },
+    {
+      "id": "walkthrough-3",
+      "type": "workedExample",
+      "heading": "Walkthrough 3, Hess from equations",
+      "question": "Find ΔH for C(s) + ½O₂(g) → CO(g) using (1) C + O₂ → CO₂, ΔH = −393.5; (2) CO + ½O₂ → CO₂, ΔH = −283.0 kJ mol⁻¹.",
+      "coachNote": "Reverse equation 2 so CO ends up as a product. Then add.",
+      "unitCancel": {
+        "left": "kJ mol⁻¹",
+        "right": "kJ mol⁻¹",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: ΔH₁ = −393.5, ΔH₂ = −283.0 kJ mol⁻¹.",
+        "Find: ΔH for C(s) + ½O₂(g) → CO(g).",
+        "Equation 2 has CO as reactant, we want it as product. Reverse it.",
+        "Reversed eq 2: CO₂ → CO + ½O₂, ΔH = +283.0 kJ mol⁻¹.",
+        "Formula: ΔH(target) = ΔH₁ + ΔH(reversed 2).",
+        "Substitute: ΔH = −393.5 + 283.0.",
+        "Answer: ΔH = 110.5 kJ mol⁻¹ released (i.e. −110.5 kJ mol⁻¹)."
+      ],
+      "durationInFrames": 1500,
+      "caption": "Reverse eq 2 (+283), add to eq 1 (−393.5) → −110.5 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Walkthrough three — Hess from equations. Target: carbon plus half O two giving CO. Equation two has CO as a reactant; we need it as a product. Reverse equation two — delta H flips to plus two-eighty-three. Now add equation one and reversed equation two — the CO twos cancel, leaving the target. Delta H is minus three-ninety-three-point-five plus two-eighty-three, which is minus one hundred and ten-point-five kilojoules per mole.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint2/walkthrough-3.2b1a9ec0bb8f.mp3"
+      }
+    },
+    {
+      "id": "exam-pitfalls",
+      "type": "misconception",
+      "heading": "Three classic IQ2 pitfalls",
+      "body": "Students often get these wrong: (1) thinking bond breaking releases energy, wrong, breaking absorbs and forming releases. (2) Assigning a non-zero ΔH°f to an element like O₂, wrong, elements in standard state are exactly zero by definition. (3) Trying to change chemical formulas in Hess to make equations add up, wrong, you may only reverse and scale. The correct rules: break absorbs, elements are zero ΔH°f, never edit formulas.",
+      "callout": "Break absorbs · elements ΔH°f=0 · never edit formulas.",
+      "mistakeTag": "IQ2 pitfall montage",
+      "durationInFrames": 1320,
+      "caption": "Three IQ2 traps: breaking-releases, elements-nonzero, formula-rewrite.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Three classic IQ2 traps. One: students think bond breaking releases energy. Wrong instinct. The correct rule: breaking absorbs, forming releases. Two: students assign some small non-zero delta H of formation to elements like O two. Wrong instinct. The correct rule: elements in standard state are exactly zero by definition. Three: students try to change chemical formulas in Hess to make equations add up — rewriting CO as CO two, for example. Wrong instinct. The correct rule: you may only reverse and scale, never edit a formula.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint2/exam-pitfalls.4eae8612c566.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Boss-fight quick check",
+      "question": "Given (1) 2H₂(g) + O₂(g) → 2H₂O(l), ΔH = −572 kJ mol⁻¹ and (2) H₂(g) + ½O₂(g) → H₂O(g), ΔH = −242 kJ mol⁻¹, find ΔH for H₂O(l) → H₂O(g).",
+      "pausePrompt": "Pause: reverse and scale to set up the target. Then add.",
+      "answerSteps": [
+        "Halve equation 1 (so we get 1 H₂O(l) instead of 2): H₂ + ½O₂ → H₂O(l), ΔH = −286 kJ mol⁻¹.",
+        "Reverse the halved equation 1: H₂O(l) → H₂ + ½O₂, ΔH = +286 kJ mol⁻¹.",
+        "Keep equation 2: H₂ + ½O₂ → H₂O(g), ΔH = −242 kJ mol⁻¹.",
+        "Formula: ΔH(target) = sum of manipulated ΔH values.",
+        "Answer: ΔH = +286 + (−242) = +44 kJ mol⁻¹ absorbed (i.e. +44 kJ mol⁻¹), vaporisation is endothermic."
+      ],
+      "durationInFrames": 1500,
+      "caption": "Halve + reverse eq 1 (+286), add eq 2 (−242) → +44 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 600,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Boss-fight quick check. Given two combustion-of-hydrogen equations producing liquid and gaseous water respectively, find delta H for vaporising water. Pause and try. First, halve equation one so we deal with one mole of water — minus two-eighty-six. Reverse it so liquid water is the reactant — plus two-eighty-six. Then add equation two as is — minus two-forty-two. Sum: plus two-eighty-six plus minus two-forty-two is plus forty-four kilojoules per mole. Positive — endothermic, as expected for vaporising water.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint2/quick-check.7bcc1b08be5c.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "IQ2 closing summary",
+      "finalPrompt": "Check what the question gives, that's your method.",
+      "points": [
+        "Bond energies (L6): ΔH = Σ(broken) − Σ(formed); break absorbs, form releases.",
+        "Formation enthalpies (L7): ΔH = Σ ΔH°f(prod) − Σ ΔH°f(react); elements = 0.",
+        "Hess from equations (L8): reverse + scale + add; never edit a formula.",
+        "Reverse reaction (L9): flip the sign, same |ΔH|.",
+        "All three methods agree because Hess's Law makes ΔH path-independent."
+      ],
+      "durationInFrames": 1320,
+      "caption": "Three methods, one law (Hess). Decision rule: data picks method.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "IQ2 closing summary. Five takeaways. One: bond energies — delta H equals bonds broken minus bonds formed; breaking absorbs, forming releases. Two: formation enthalpies — delta H equals sum of products minus reactants; elements in standard state are zero. Three: Hess from equations — reverse and scale to set up, then add; never edit a chemical formula. Four: a reverse reaction has the same magnitude of delta H but opposite sign. Five: all three methods agree because Hess's Law makes delta H path-independent. Decision rule: check what the question gives — that's your method.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-Checkpoint2/summary.f87f682e99c6.mp3"
+      }
+    }
+  ]
+}

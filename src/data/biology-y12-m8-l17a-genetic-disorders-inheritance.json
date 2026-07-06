@@ -1,0 +1,271 @@
+{
+  "title": "Genetic Disorders, Part A",
+  "subtitle": "Categories, chromosomal errors, inheritance and screening",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 17A",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "investigate the causes and effects of genetic disorders in humans, including chromosomal and single-gene disorders",
+    "use secondary sources to evaluate the effectiveness of current disease-prevention methods, including genetic screening and emerging gene technologies"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How can non-infectious diseases be prevented?",
+  "lessonIntent": "Students can classify a genetic disorder as chromosomal or single-gene, explain non-disjunction and Mendelian inheritance, and evaluate genetic screening and gene therapy as prevention strategies.",
+  "examSkill": "Classify a genetic disorder and its inheritance pattern, calculate offspring risk, and distinguish a screening test from a diagnostic one.",
+  "productionRole": "production",
+  "productionNotes": "Part A of a 2-part split of the longest L17. Covers the three categories, chromosomal non-disjunction, single-gene inheritance, and screening versus diagnosis. Ends with a bridge to Part B (worked example + gene therapy + practice). Silent title.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, genetic disorders, how they happen and how we detect them. This part builds the inheritance and screening foundations. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Genetic Disorders, Part A (Year 12 Biology, Module 8, Lesson 17A)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One missing chromosome, a predictable pattern",
+      "body": "Turner syndrome was described in 1938 from its symptoms alone. The cause turned out to be a single missing X chromosome.",
+      "callout": "How can one missing chromosome create such a specific pattern?",
+      "image": "bioM8L17Karyotype",
+      "durationInFrames": 1536,
+      "caption": "Turner syndrome (45,X) affects about 1 in 2,500 female births and arises from non-disjunction in meiosis.",
+      "voiceover": {
+        "text": "In 1938, the doctor Henry Turner noticed seven patients who all shared the same striking cluster of features, short stature, a webbed neck, and undeveloped ovaries. He described the syndrome purely from its symptoms, with no idea what caused it. It took until 1959 for Gerald Lejeune to find the answer, and it was beautifully simple. These patients had only forty five chromosomes instead of forty six, because they were missing one copy of the X chromosome, written as forty five X. This happens through an error in cell division called non-disjunction, and it affects about one in twenty five hundred female births. Here's the puzzle that drives today's lesson. How can a single missing chromosome produce such a specific, predictable set of consequences? The answer is that a genetic disorder is an error written into the genome itself, and its effects follow logically from what the missing or altered genes normally do. Let's see how these disorders arise, how we detect them, and what we can actually do about them."
+      }
+    },
+    {
+      "id": "concept-categories",
+      "type": "concept",
+      "heading": "Three kinds of genetic disorder",
+      "body": "Genetic disorders fall into three categories depending on whether the error is in whole chromosomes, one gene, or many genes plus environment.",
+      "bullets": [
+        {
+          "text": "Chromosomal: the wrong number or structure of chromosomes, like Down or Turner syndrome."
+        },
+        {
+          "text": "Single-gene or Mendelian: one mutated gene, like cystic fibrosis or Huntington's disease."
+        },
+        {
+          "text": "Multifactorial: many gene variants plus environment, like type 2 diabetes."
+        }
+      ],
+      "secondary": "Not every disorder is inherited. Many arise as de novo mutations, appearing spontaneously during gamete formation, so neither parent carries them. Most chromosomal disorders are de novo in this way.",
+      "callout": "Whole chromosomes, one gene, or many genes plus lifestyle.",
+      "durationInFrames": 1530,
+      "caption": "Genetic disorders are chromosomal, single-gene (Mendelian), or multifactorial; many are de novo, not inherited.",
+      "voiceover": {
+        "text": "Let's organise the whole topic, because genetic disorders come in three categories. The first is chromosomal disorders, where there's the wrong number or structure of chromosomes, an extra one, a missing one, or a rearrangement. Down syndrome and Turner syndrome are the examples here. The second is single-gene, or Mendelian, disorders, where a mutation in just one specific gene disrupts a protein, and these follow predictable inheritance patterns. Cystic fibrosis, Huntington's disease and haemophilia are the classic ones. The third is multifactorial disorders, which come from many gene variants interacting with the environment, like type 2 diabetes or heart disease, and these don't follow simple ratios. Today we focus on the first two, because they have the clearest cause-and-effect pathways. And one crucial point, not every genetic disorder is inherited from a parent. Many are what we call de novo mutations, arising spontaneously during the formation of the egg or sperm, so neither parent carries them. In fact, most chromosomal disorders are de novo, which surprises a lot of students."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms run through genetics questions, so lock them in before we trace inheritance.",
+      "bullets": [
+        {
+          "text": "Genetic disorder: a disease caused by an abnormality in a person's DNA."
+        },
+        {
+          "text": "Non-disjunction: the failure of chromosomes to separate properly during meiosis."
+        },
+        {
+          "text": "Single-gene disorder: a disease caused by a mutation in one specific gene."
+        },
+        {
+          "text": "Carrier: someone with one recessive disease allele who shows no symptoms."
+        },
+        {
+          "text": "Karyotype: a display of a person's chromosomes used to spot abnormalities."
+        }
+      ],
+      "callout": "DNA fault, separation failure, one-gene fault, hidden allele, chromosome picture.",
+      "durationInFrames": 1392,
+      "caption": "Genetic disorder, non-disjunction, single-gene disorder, carrier, karyotype.",
+      "voiceover": {
+        "text": "Let's pin down five terms you'll use all lesson. A genetic disorder is a disease caused by an abnormality in a person's DNA, either in the number or structure of chromosomes, or in a single gene's sequence. Non-disjunction is the failure of homologous chromosomes or sister chromatids to separate properly during meiosis, which produces gametes with an extra or a missing chromosome. A single-gene disorder is a disease caused by a mutation in one specific gene, and it follows Mendelian inheritance. A carrier is someone who carries one copy of a recessive disease allele but shows no symptoms, because their one working copy makes enough protein. And a karyotype is a display of all of a person's chromosomes, arranged by size and banding pattern, used to detect chromosomal abnormalities. Keep carrier firmly in mind, because the idea that carriers are unaffected is tested constantly, and it's where a lot of marks are won or lost."
+      }
+    },
+    {
+      "id": "concept-chromosomal",
+      "type": "concept",
+      "heading": "Non-disjunction and chromosome number",
+      "body": "When chromosomes fail to separate in meiosis, a gamete ends up with one too many or one too few, giving trisomy or monosomy.",
+      "bullets": [
+        {
+          "text": "Non-disjunction makes one gamete with two copies and one with none."
+        },
+        {
+          "text": "An extra chromosome gives trisomy, like Down syndrome, trisomy 21."
+        },
+        {
+          "text": "A missing chromosome gives monosomy, like Turner syndrome, a single X."
+        }
+      ],
+      "secondary": "Klinefelter syndrome, an extra X in males giving 47 XXY, is another example. The risk of trisomy 21 rises steeply with maternal age, because a woman's eggs are paused mid-meiosis for decades, raising the chance of mis-separation.",
+      "callout": "Extra chromosome is trisomy, missing one is monosomy.",
+      "durationInFrames": 1800,
+      "caption": "Non-disjunction yields trisomy (Down, 47,+21) or monosomy (Turner, 45,X); risk rises with maternal age.",
+      "voiceover": {
+        "text": "Let's look closely at how chromosome numbers go wrong, because non-disjunction is the core mechanism. Normally in meiosis, chromosomes separate evenly, so each gamete gets exactly one copy of each. In non-disjunction, a pair fails to separate, so one gamete ends up with two copies of that chromosome and the other gamete gets none. Now follow what happens at fertilisation. If a gamete carrying two copies joins a normal gamete, the embryo has three copies of that chromosome, which is trisomy. The famous example is Down syndrome, trisomy twenty one, an extra chromosome twenty one, written forty seven plus twenty one. If instead a gamete with no copy joins a normal one, the embryo has only one copy, which is monosomy. Turner syndrome is the example, a single X, forty five X. There's also Klinefelter syndrome, an extra X in males, forty seven X X Y. And here's an important pattern, the risk of trisomy twenty one climbs steeply with the mother's age, from about one in fifteen hundred at twenty to roughly one in a hundred at forty, because a woman's eggs sit paused in meiosis for decades, and the longer they're paused, the more likely the chromosomes mis-separate."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Disorder",
+          "Chromosome change",
+          "Karyotype"
+        ],
+        "rows": [
+          [
+            "Down syndrome",
+            "Trisomy 21 (extra 21)",
+            "47, +21"
+          ],
+          [
+            "Turner syndrome",
+            "Monosomy X (one X)",
+            "45, X"
+          ],
+          [
+            "Klinefelter syndrome",
+            "Extra X in males",
+            "47, XXY"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-inheritance",
+      "type": "concept",
+      "heading": "How single genes are inherited",
+      "body": "A single-gene disorder's inheritance depends on whether the allele is dominant or recessive, and whether it sits on an autosome or the X chromosome.",
+      "bullets": [
+        {
+          "text": "Autosomal recessive needs both copies faulty, so two carriers have a 25% risk, like cystic fibrosis."
+        },
+        {
+          "text": "Autosomal dominant needs only one copy, so a 50% risk, like Huntington's disease."
+        },
+        {
+          "text": "X-linked recessive mainly affects males, who have only one X, like haemophilia."
+        }
+      ],
+      "secondary": "Mechanism matters. In cystic fibrosis a faulty CFTR gene leaves no working chloride channel, so mucus turns thick. In Huntington's an expanded repeat makes a toxic protein, and with near 100% penetrance, everyone who inherits it eventually develops it.",
+      "callout": "Recessive hides in carriers; dominant shows with one copy.",
+      "durationInFrames": 1920,
+      "caption": "Inheritance is autosomal recessive (CF), autosomal dominant (Huntington's) or X-linked recessive (haemophilia).",
+      "voiceover": {
+        "text": "Now single-gene disorders, where the inheritance pattern decides who's affected. It depends on two things, whether the disease allele is dominant or recessive, and whether it sits on an autosome or on the X chromosome. First, autosomal recessive. Here both copies of the gene must be faulty for disease, so the parents are usually unaffected carriers, each carrying one bad copy, and when two carriers have a child there's a twenty five percent chance that child is affected. Cystic fibrosis works this way. Second, autosomal dominant. Here just one faulty copy is enough to cause disease, so an affected person usually has an affected parent, and each child has a fifty percent risk. Huntington's disease is the example. Third, X-linked recessive, where the gene is on the X chromosome. Females have two X's, so one bad copy is usually masked, making them carriers, but males have only one X, so a single bad copy means they're affected. Haemophilia and Duchenne muscular dystrophy follow this. And the mechanisms matter. In cystic fibrosis the faulty CFTR gene means no working chloride channel, so mucus becomes thick and sticky. In Huntington's an expanded DNA repeat builds a toxic protein, and with nearly a hundred percent penetrance, everyone who inherits that allele will eventually develop the disease."
+      }
+    },
+    {
+      "id": "concept-screening",
+      "type": "concept",
+      "heading": "Screening versus diagnosis",
+      "body": "Detecting disorders means knowing the difference between a screening test, which flags risk, and a diagnostic test, which confirms.",
+      "bullets": [
+        {
+          "text": "Screening assesses risk across a population and can give false positives, like NIPT."
+        },
+        {
+          "text": "Diagnostic tests confirm definitively but carry more risk or cost, like amniocentesis."
+        },
+        {
+          "text": "NIPT reads fetal DNA from the mother's blood with no miscarriage risk, but only screens."
+        }
+      ],
+      "secondary": "Amniocentesis samples amniotic fluid from about 15 weeks and carries roughly a 0.5% miscarriage risk, while CVS samples the placenta earlier with a slightly higher risk. A positive screen always needs a diagnostic test to confirm.",
+      "callout": "A screen flags risk; only a diagnostic test confirms.",
+      "durationInFrames": 1818,
+      "caption": "Screening (NIPT) assesses risk with false positives; diagnostic tests (amniocentesis, CVS) confirm definitively.",
+      "voiceover": {
+        "text": "Now, how do we actually find these disorders, and here you must nail one distinction, screening versus diagnosis. A screening test assesses risk across a whole population, casting a wide net, and because of that it generates some false positives, so it tells you someone is at higher risk, not that they definitely have the condition. A diagnostic test, on the other hand, confirms or rules out a specific condition with high certainty, but it usually carries more procedural risk or cost. Let's apply that. N I P T, non-invasive prenatal testing, analyses cell-free fetal DNA floating in the mother's blood from about ten weeks, and it has no miscarriage risk at all, which is wonderful, but, and this is the trap, it is only a screening test. A positive N I P T result must be confirmed. Amniocentesis is diagnostic, taking a sample of amniotic fluid at fifteen to twenty weeks, and it carries about a zero point five percent miscarriage risk. Chorionic villus sampling, or C V S, is also diagnostic, sampling the placenta earlier at ten to thirteen weeks, with a slightly higher risk. So the workflow is, screen first to flag risk, then confirm with a diagnostic test."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Test",
+          "Type",
+          "Risk / timing"
+        ],
+        "rows": [
+          [
+            "NIPT",
+            "Screening",
+            "No miscarriage risk, from 10 wk"
+          ],
+          [
+            "Amniocentesis",
+            "Diagnostic",
+            "~0.5% miscarriage, 15–20 wk"
+          ],
+          [
+            "CVS",
+            "Diagnostic",
+            "~1% miscarriage, 10–13 wk"
+          ],
+          [
+            "Newborn (Guthrie)",
+            "Screening",
+            "Heel prick, 48–72 h"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "bridge-to-part-b",
+      "type": "endCard",
+      "partLabel": "Part B",
+      "partSubtitle": "A worked example, gene therapy and the exam",
+      "heading": "Next: working a pedigree and gene therapy",
+      "body": "You have got the three categories, how chromosome-number errors happen, how single genes are inherited, and how screening differs from diagnosis. In Part B we put it to work.",
+      "bullets": [
+        {
+          "text": "A worked example on carrier probability from a pedigree.",
+          "at": 6
+        },
+        {
+          "text": "Gene therapy, CRISPR, and where the real limits are.",
+          "at": 11
+        },
+        {
+          "text": "The common traps, a quick-check question, and the summary.",
+          "at": 16
+        }
+      ],
+      "ctaLabel": "Watch Part B →",
+      "callout": "see you there",
+      "durationInFrames": 612,
+      "caption": "End of Part A, continued in Part B.",
+      "revealDelays": {
+        "heading": 24,
+        "body": 80,
+        "bulletsStart": 80,
+        "callout": 540
+      },
+      "voiceover": {
+        "text": "OK, that is a lot of ground covered. You know the three kinds of genetic disorder, how non-disjunction changes chromosome number, and how alleles pass through families. In Part B, we put it to work on a real pedigree question, then look at what gene therapy and CRISPR can and cannot actually do, before the traps and a quick check. See you there."
+      }
+    }
+  ]
+}

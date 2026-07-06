@@ -1,0 +1,255 @@
+{
+  "title": "Pesticides and Genetic Engineering",
+  "subtitle": "Fighting disease vectors with chemicals, sterile insects and modified genes",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 17",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "investigate and evaluate environmental management and quarantine methods used to control an epidemic or pandemic"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How can the spread of infectious diseases be controlled?",
+  "lessonIntent": "Students can evaluate pesticides, the sterile insect technique and genetic engineering for vector control, and explain why some approaches resist the evolution of resistance.",
+  "examSkill": "Compare vector-control strategies on effectiveness, resistance potential and ecological impact.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, pesticides and genetic engineering for disease control. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Pesticides and Genetic Engineering (Year 12 Biology, Module 7, Lesson 17)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Beating a pest with infertility",
+      "body": "From 1958, the USDA released 50 million sterile flies a week. By 1982 the screwworm was gone from the US.",
+      "callout": "How do you wipe out a pest by flooding it with infertile males?",
+      "image": "bioM7L17SterileInsect",
+      "durationInFrames": 1925,
+      "caption": "The sterile insect technique eradicated screwworm from the US by 1982.",
+      "voiceover": {
+        "text": "OK, here's one of the strangest success stories in pest control. From nineteen fifty-eight, a USDA scientist named Edward Knipling began releasing sterile flies, on purpose, across the southern United States. We're talking fifty million irradiated, infertile male screwworm flies, every single week. Screwworms were a horror, their larvae eat the living flesh of cattle, killing tens of thousands a year. And the plan sounds backwards, fight the pest by adding more of it. But by nineteen eighty-two, the screwworm was completely eradicated from the entire country, and the two hundred and fifty million dollar program paid for itself in livestock savings within a single year. So how on earth do you wipe out a species by flooding it with infertile males? That's where we're headed, along with chemicals and genetic engineering, the modern toolkit for controlling the insects that spread disease."
+      }
+    },
+    {
+      "id": "concept-pesticides",
+      "type": "concept",
+      "heading": "Pesticides attack the vector",
+      "body": "Many diseases reach us through an insect vector. Pesticides break that link by killing the insect.",
+      "bullets": [
+        {
+          "text": "They target the insect nervous system, growth, or gut, like DDT, pyrethroids and Bt toxin."
+        },
+        {
+          "text": "Pyrethroid-treated bed nets are a frontline tool against malaria-carrying mosquitoes."
+        },
+        {
+          "text": "Pesticide resistance evolves by natural selection, exactly the logic you met for antibiotics in Lesson 16."
+        }
+      ],
+      "secondary": "DDT was hugely effective at first, but it bioaccumulates up food chains and bred resistant mosquitoes, so it is now banned or restricted in most countries.",
+      "callout": "Kill the vector, break the chain, but resistance follows.",
+      "durationInFrames": 1980,
+      "caption": "Pesticides kill insect vectors; resistance evolves by natural selection.",
+      "voiceover": {
+        "text": "Let's start with the oldest tool, chemical pesticides. Many serious diseases, malaria, dengue, reach humans through an insect vector, usually a mosquito. So one obvious strategy is to break that link by killing the insect. Pesticides do this by attacking the insect's nervous system, its growth, or its gut, that's how chemicals like DDT, the pyrethroids, and the bacterial Bt toxin work. A great example is the pyrethroid-treated bed net, a frontline defence against malaria mosquitoes. But here's the catch you should now be able to predict. Pesticide resistance evolves by natural selection, the exact same logic as antibiotic resistance from last lesson. Spray a pesticide, and the rare resistant insects survive and breed. DDT is the cautionary tale. It worked brilliantly at first, but it builds up in food chains, that's bioaccumulation, and it bred resistant mosquitoes, so today it's banned or restricted almost everywhere."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Vector control: reducing disease spread by targeting the organism that transmits the pathogen."
+        },
+        {
+          "text": "Sterile insect technique: releasing sterile males so wild females produce no viable offspring."
+        },
+        {
+          "text": "Gene drive: a genetic system that pushes a chosen allele through a population faster than normal inheritance."
+        },
+        {
+          "text": "Non-target effect: an unintended impact on organisms other than the pest being controlled."
+        }
+      ],
+      "callout": "Different tools, same goal: stop the vector spreading the pathogen.",
+      "durationInFrames": 1900,
+      "caption": "Vector control, sterile insect technique, gene drive, non-target effect.",
+      "voiceover": {
+        "text": "Let's pin down the key terms. Vector control is the umbrella idea, reducing disease spread by targeting the organism that carries the pathogen, rather than the pathogen itself. The sterile insect technique, which we'll unpack next, means releasing sterile males so that wild females mate but produce no viable offspring. A gene drive is a clever and controversial genetic system that forces a chosen gene to spread through a population much faster than normal Mendelian inheritance would allow, so a trait can sweep through in just a few generations. And a non-target effect is any unintended impact on organisms other than the pest you're aiming at, which is a major consideration when you're deciding whether a control method is worth using. Keep those four in mind, because the rest of the lesson is really about weighing them against each other."
+      }
+    },
+    {
+      "id": "concept-sit",
+      "type": "concept",
+      "heading": "The sterile insect technique",
+      "body": "SIT turns the pest's own reproduction against it: mate with a sterile male, and you get no offspring.",
+      "bullets": [
+        {
+          "text": "Mass-rear the insect, sterilise the males, then release them in huge numbers."
+        },
+        {
+          "text": "Wild females that mate with sterile males produce no offspring, so the population collapses over generations."
+        },
+        {
+          "text": "It is species-specific, leaves no chemical residue, and is essentially resistance-proof."
+        }
+      ],
+      "secondary": "Why resistance-proof? Refusing to mate with a sterile male is not a trait that can be selected for, because a female cannot tell a sterile male from a fertile one.",
+      "callout": "Turn the pest's own mating against it.",
+      "durationInFrames": 2140,
+      "caption": "SIT collapses a population using sterile males; it is species-specific and resistance-proof.",
+      "voiceover": {
+        "text": "So here's how the sterile insect technique works, the screwworm trick from the hook. First you mass-rear the insect in a factory, millions of them. Then you sterilise the males, usually with radiation. Then you release them into the wild in overwhelming numbers, far more than the wild males. Now, when a wild female mates, she's far more likely to pair with a sterile male, and that mating produces no offspring at all. Do that generation after generation, and the population simply collapses, fewer fertile matings each time. And it has three big advantages. It's species-specific, the sterile males only compete for mates within their own species, so it doesn't harm anything else. It leaves no chemical residue. And it's essentially resistance-proof. Why? Because refusing to mate with a sterile male is not a trait that can be selected for, a female can't tell a sterile male from a fertile one. There's nothing for evolution to grab onto."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "n1",
+            "label": "Rear"
+          },
+          {
+            "id": "n2",
+            "label": "Sterilise"
+          },
+          {
+            "id": "n3",
+            "label": "Release"
+          },
+          {
+            "id": "n4",
+            "label": "Collapse"
+          }
+        ],
+        "edges": [
+          {
+            "from": "n1",
+            "to": "n2"
+          },
+          {
+            "from": "n2",
+            "to": "n3"
+          },
+          {
+            "from": "n3",
+            "to": "n4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "concept-genetic",
+      "type": "concept",
+      "heading": "Genetic tools for control",
+      "body": "Genetic engineering gives newer, more targeted ways to suppress vectors or block transmission.",
+      "bullets": [
+        {
+          "text": "Self-limiting GM males (OX513A): their offspring die before adulthood, so releases must continue."
+        },
+        {
+          "text": "Gene drive: spreads a trait through a population fast, powerful but irreversible and still experimental."
+        },
+        {
+          "text": "Bt crops: a plant makes its own bacterial Cry toxin, cutting external pesticide spraying."
+        }
+      ],
+      "secondary": "Watch this one: Wolbachia is NOT genetic modification. It is a natural bacterium that, once in a mosquito, lowers its ability to transmit dengue. No foreign DNA is added.",
+      "callout": "Modify the insect, or just lower its ability to spread disease.",
+      "durationInFrames": 2125,
+      "caption": "OX513A, gene drive and Bt crops are GM; Wolbachia is a natural bacterium, not GM.",
+      "voiceover": {
+        "text": "Now the cutting edge, genetic tools. The first is self-limiting GM males, like the strain OX five one three A. These are engineered so that when they mate with wild females, the offspring die before reaching adulthood. It suppresses the population, but because the gene removes itself, you have to keep releasing them. The second is a gene drive, which uses gene-editing to force a trait through a population far faster than normal, incredibly powerful, but also irreversible and still largely experimental, which raises real biosafety concerns. The third is Bt crops, where a plant is engineered to make its own bacterial Cry toxin, killing the insects that eat it and cutting external spraying. And here's a point examiners love to catch you on. Wolbachia is not genetic modification. It's a natural bacterium that, once inside a mosquito, dramatically lowers that mosquito's ability to transmit dengue. No foreign DNA is added, the mosquito's own genome is untouched."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Compare two strategies",
+      "question": "A health authority must choose between spraying a chemical pesticide and using the sterile insect technique against a mosquito vector. Compare them on effectiveness, resistance and ecological impact.",
+      "coachNote": "Take each criterion in turn and contrast the two approaches.",
+      "steps": [
+        "Effectiveness: pesticide acts fast but broadly; SIT is slower, needing several generations, but highly targeted.",
+        "Resistance: pesticide use selects for resistant insects; SIT is essentially resistance-proof, with no selectable trait.",
+        "Ecological impact: pesticides can bioaccumulate and harm non-target species; SIT is species-specific with no residue.",
+        "Trade-off: SIT is cleaner and resistance-proof but expensive and needs sustained releases.",
+        "Answer: SIT is more sustainable and targeted; pesticide is faster and cheaper but breeds resistance and harms non-targets ✓"
+      ],
+      "durationInFrames": 2180,
+      "caption": "Pesticide versus SIT compared on effectiveness, resistance and ecology.",
+      "voiceover": {
+        "text": "Let's do the kind of comparison the exam asks for. A health authority has to choose between spraying a chemical pesticide and using the sterile insect technique against a mosquito vector. Compare them on three criteria. First, effectiveness. The pesticide acts fast, but broadly, hitting lots of insects quickly, whereas SIT is slower, it needs several generations to collapse the population, but it's highly targeted. Second, resistance. Pesticide use selects for resistant insects over time, that's the natural selection problem again, while SIT is essentially resistance-proof, because there's no selectable trait for the insects to evolve. Third, ecological impact. Pesticides can bioaccumulate and harm non-target species, like the birds DDT nearly wiped out, while SIT is species-specific and leaves no residue. So the trade-off is, SIT is cleaner and resistance-proof, but it's expensive and needs sustained releases. The pesticide is faster and cheaper, but it breeds resistance and damages other species. There's no single right answer, it depends on the situation."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking pesticide resistance means the pesticide changed or got weaker. The chemical is unchanged; the insect population evolved.",
+      "secondary": "Trap 2: assuming Wolbachia mosquitoes are genetically modified. They are not, Wolbachia is a natural bacterium and no foreign DNA is inserted. Also remember, self-limiting GM mosquitoes cannot spread their gene through the wild population without continued releases.",
+      "mistakeTag": "What resistance means, and what counts as GM",
+      "callout": "The insect evolves, not the chemical; Wolbachia is natural, not GM.",
+      "durationInFrames": 2005,
+      "caption": "Resistance is an insect population change; Wolbachia is not genetic modification.",
+      "voiceover": {
+        "text": "Two traps to watch. Trap one, thinking that pesticide resistance means the pesticide itself changed, or got weaker, or stopped being poisonous. It didn't. The chemical is exactly as toxic as it always was. What changed is the insect population, mutations in things like the sodium channel, or detox enzymes, let some individuals survive, and those survivors bred. The pesticide still kills susceptible insects, it just no longer kills all of them. Trap two, assuming that Wolbachia mosquitoes are genetically modified. They are not. Wolbachia is a naturally occurring bacterium, and releasing mosquitoes infected with it inserts no foreign DNA at all, the mosquito's own genome is unchanged. And one more to remember, those self-limiting GM mosquitoes, like OX five one three A, cannot establish their gene in the wild population on their own, because the offspring die, so the effect only lasts while you keep releasing them."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "After years of spraying the same pesticide, it stops controlling a mosquito population. Explain why, and suggest why switching to the sterile insect technique would not face the same problem.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Rare resistant insects existed by random mutation before spraying began.",
+        "The pesticide killed susceptible insects and selected for the resistant ones, which then bred.",
+        "Over years the population became dominated by resistant insects, so the chemical stopped working.",
+        "SIT has no selectable trait, because females cannot detect or avoid sterile males.",
+        "Answer: pesticide resistance evolved by natural selection; SIT avoids it as there is nothing to select for ✓"
+      ],
+      "durationInFrames": 2220,
+      "caption": "Pesticide resistance evolves by selection; SIT has no trait to select for.",
+      "voiceover": {
+        "text": "Quick check. After years of spraying the same pesticide, it stops controlling a mosquito population. Explain why, and suggest why switching to the sterile insect technique wouldn't face the same problem. Pause and reason it through. Right. Why did the pesticide fail? Because rare resistant insects already existed in the population by random mutation, before spraying even began. Every time you sprayed, you killed the susceptible insects and spared the resistant ones, which then bred. Over years, the population became dominated by resistant insects, so the chemical stopped working, classic natural selection. Now, why would SIT escape this? Because SIT offers no selectable trait. The only way to resist it would be for females to detect and avoid sterile males, but they simply can't tell a sterile male from a fertile one. With nothing for evolution to act on, resistance can't build. So the answer is, pesticide resistance evolved by natural selection, while SIT avoids the trap entirely because there's nothing to select for."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Vector control breaks the chain of infection by targeting the insect that carries the pathogen.",
+        "Pesticides act fast but bioaccumulate and breed resistance by natural selection.",
+        "The sterile insect technique collapses a population using sterile males; it is species-specific and resistance-proof.",
+        "Genetic tools include self-limiting GM males, gene drives and Bt crops.",
+        "Wolbachia is a natural bacterium, not GM, that lowers a mosquito's ability to transmit dengue."
+      ],
+      "finalPrompt": "Evaluating a control method? Weigh effectiveness, resistance potential and ecological impact.",
+      "durationInFrames": 1680,
+      "caption": "Five takeaways: vector control, pesticides, SIT, genetic tools, and Wolbachia.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, vector control breaks the chain of infection by targeting the insect that carries the pathogen, not the pathogen itself. Second, pesticides act fast, but they bioaccumulate up food chains and breed resistance by natural selection. Third, the sterile insect technique collapses a population using sterile males, and it's species-specific and essentially resistance-proof. Fourth, the genetic tools to know are self-limiting GM males, gene drives, and Bt crops. And fifth, Wolbachia is a natural bacterium, not genetic modification, that lowers a mosquito's ability to transmit dengue. Whenever you evaluate a control method, weigh up three things, how effective it is, how likely resistance is, and what its ecological impact might be. See you next lesson."
+      }
+    }
+  ]
+}

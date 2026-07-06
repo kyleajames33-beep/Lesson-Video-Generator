@@ -1,0 +1,211 @@
+{
+  "title": "Acid-Base Titrations and Indicators",
+  "subtitle": "Reading concentration from a single colour change",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8: Applying Chemical Ideas",
+  "syllabusDotPoints": [
+    "conduct practical investigations to analyse the concentration of an unknown acid or base by titration",
+    "investigate the use of indicators and pH to determine the equivalence point of acid-base reactions"
+  ],
+  "moduleLessonCount": 16,
+  "nesaOutcomes": ["CH12-15", "CH11/12-4", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "How are the ions present in the environment identified and measured?",
+  "lessonIntent": "Students can average concordant titres, run the four-step mole pathway for any ratio, choose an indicator from the equivalence pH, and solve a back titration by subtracting the excess.",
+  "examSkill": "Reject the rough titre; find moles of the standard with n = cV; apply the balanced-equation ratio; for a back titration, subtract excess from initial to get the amount that actually reacted.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, acid-base titrations and indicators. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Acid-Base Titrations and Indicators (Year 12 Chemistry, Module 8, Lesson 1)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "An antacid recall, settled by a flask",
+      "body": "A 2009 batch was pulled when titration showed it held far less active base than the label claimed.",
+      "callout": "One colour change becomes a legally defensible number.",
+      "durationInFrames": 690,
+      "caption": "Titration turns a single endpoint into a defensible concentration value.",
+      "voiceover": {
+        "text": "OK, here's a real one. In 2009, Australia's medicines regulator pulled a batch of antacid tablets off the shelves. The reason? An in-house titration showed the active base was about eighteen percent below the label claim. Now think about what that means. A single colour change in a flask, judged by eye, became the legal evidence that a medicine wasn't what it said it was. You met titration back in Module 5, the basic mechanics. Today we sharpen it for the exam, the four-step pathway, choosing the right indicator, and the back titration, which is where the harder marks live."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "What a titration actually does",
+      "body": "You react an unknown against a standard of known concentration, then let stoichiometry count the moles.",
+      "bullets": [
+        {"text": "The standard goes in the burette; the measured aliquot sits in the flask."},
+        {"text": "An indicator flags the endpoint, when reaction is complete."},
+        {"text": "The first run is a rough titre; repeat for concordant results."}
+      ],
+      "secondary": "Concordant titres agree within 0.10 mL. You average only those, never the rough run, for an accurate volume.",
+      "callout": "Precision lives in the concordant titres, not one reading.",
+      "durationInFrames": 1110,
+      "caption": "Standard from the burette, indicator endpoint, average only concordant titres.",
+      "voiceover": {
+        "text": "So let's be precise about what's happening. A titration isn't adding liquid until something turns pink, it's counting moles through stoichiometry. You put a measured volume of your unknown in a conical flask, and you run a standard solution of known concentration in from the burette. An indicator in the flask changes colour at the endpoint, the moment the reaction is complete. The volume you delivered is the titre. Here's the technique part. Your first run is a rough titre, just to find the ballpark, and you throw it out. Then you repeat carefully until you get concordant titres, ones agreeing within nought-point-one of a millilitre, and you average only those."
+      },
+      "diagram": {
+        "type": "titrationSetup"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words the exam tests",
+      "bullets": [
+        {"text": "Standard solution: a titrant of accurately known concentration."},
+        {"text": "Equivalence point: where acid and base have stoichiometrically reacted."},
+        {"text": "Endpoint: where the indicator changes colour; should match equivalence."},
+        {"text": "Primary standard: a pure, stable solid like Na₂CO₃ used to fix concentration."}
+      ],
+      "callout": "Endpoint is what you see; equivalence is what's true.",
+      "durationInFrames": 960,
+      "caption": "Standard solution, equivalence point, endpoint, primary standard.",
+      "voiceover": {
+        "text": "Quick vocabulary, and the exam is fussy here. A standard solution is your titrant, with an accurately known concentration. The equivalence point is where stoichiometrically equal amounts of acid and base have reacted, the true completion of the reaction. The endpoint is where the indicator actually changes colour, and a well-chosen indicator makes the endpoint sit right on the equivalence point. And a primary standard is a highly pure, stable substance, like sodium carbonate or oxalic acid, used to fix the concentration of a standard solution in the first place. Keep endpoint and equivalence point separate in your head, because that distinction is worth marks."
+      }
+    },
+    {
+      "id": "pathway",
+      "type": "concept",
+      "heading": "The four-step calculation",
+      "body": "Convert the titre to litres, find moles of the standard, apply the real ratio, then divide by the unknown's volume.",
+      "bullets": [
+        {"text": "Moles of the standard = c × V, using the average titre in litres."},
+        {"text": "Apply the mole ratio straight from the balanced equation."},
+        {"text": "Unknown concentration = its moles ÷ its aliquot volume."}
+      ],
+      "secondary": "The c₁V₁ = c₂V₂ shortcut only works for a 1:1 reaction. Diprotic H₂SO₄ needs twice as much base.",
+      "callout": "Read the ratio off the equation, never assume one to one.",
+      "durationInFrames": 1020,
+      "caption": "Titre to litres, n = cV, balanced-equation ratio, then c = n ÷ V.",
+      "voiceover": {
+        "text": "Here's the pathway, and it's the mole tools you already own. First, convert your average titre to litres. Second, find the moles of the standard using n equals c times V. Third, apply the mole ratio, straight from the balanced equation. And fourth, divide those moles by the volume of the unknown to get its concentration. Now, you might know the shortcut, c-one V-one equals c-two V-two. That only works when the reaction is one to one. The moment you hit a diprotic acid like sulfuric acid, one mole of acid needs two moles of base, and the shortcut quietly gives you the wrong answer. So read the ratio off the balanced equation every time."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Concentration of an unknown base",
+      "question": "24.60 mL of 0.1000 mol L⁻¹ HCl neutralises 25.00 mL of NaOH. Find c(NaOH). HCl + NaOH → NaCl + H₂O.",
+      "coachNote": "HCl to NaOH is 1:1. Moles of acid first, then divide by the base volume.",
+      "steps": [
+        "n(HCl) = c × V = 0.1000 × 0.02460 = 2.460 × 10⁻³ mol",
+        "Ratio HCl : NaOH = 1 : 1, so n(NaOH) = 2.460 × 10⁻³ mol",
+        "V(NaOH) = 25.00 ÷ 1000 = 0.02500 L",
+        "c(NaOH) = n ÷ V = 2.460 × 10⁻³ ÷ 0.02500",
+        "Answer: c(NaOH) = 0.0984 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "24.60 mL of 0.1000 HCl gives c(NaOH) = 0.0984 mol L⁻¹.",
+      "voiceover": {
+        "text": "Let's run a standard one. Twenty-four-point-six millilitres of nought-point-one mole per litre hydrochloric acid neutralises twenty-five millilitres of sodium hydroxide. Find the concentration of the base. Step one, moles of the acid we know. n equals c times V, so nought-point-one times nought-point-zero-two-four-six is two-point-four-six times ten to the minus three moles. Step two, the ratio. Hydrochloric acid and sodium hydroxide react one to one, so the base has the same moles. Step three, the base volume, twenty-five millilitres, is nought-point-zero-two-five litres. Step four, concentration equals moles over volume, which gives nought-point-zero-nine-eight-four moles per litre. Moles first, ratio second, then divide. That order never lets you down."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Back titration of an antacid",
+      "question": "A tablet is treated with 50.00 mL of 0.2000 mol L⁻¹ HCl. The excess needs 18.40 mL of 0.1000 mol L⁻¹ NaOH. Find the mass of NaHCO₃. (M = 84.01)",
+      "coachNote": "Only the acid that reacted with the tablet counts. Subtract the excess first.",
+      "steps": [
+        "n(HCl initial) = 0.2000 × 0.05000 = 0.01000 mol",
+        "n(NaOH) = 0.1000 × 0.01840 = 1.840 × 10⁻³ mol, so n(excess HCl) = 1.840 × 10⁻³ mol (1:1)",
+        "n(HCl reacted) = 0.01000 − 1.840 × 10⁻³ = 8.160 × 10⁻³ mol",
+        "NaHCO₃ : HCl = 1 : 1, so n(NaHCO₃) = 8.160 × 10⁻³ mol",
+        "m = nM = 8.160 × 10⁻³ × 84.01 = 0.685 g ✓"
+      ],
+      "durationInFrames": 1560,
+      "caption": "Subtracting the excess gives 8.16 × 10⁻³ mol, or 0.685 g of NaHCO₃.",
+      "voiceover": {
+        "text": "Now the back titration, where the marks hide. A crushed antacid tablet is treated with fifty millilitres of nought-point-two mole per litre hydrochloric acid, a known excess. The tablet's base soaks up some of that acid, and whatever's left over needs eighteen-point-four millilitres of nought-point-one mole per litre sodium hydroxide. Find the mass of sodium bicarbonate. Step one, the total acid added. Nought-point-two times nought-point-zero-five is nought-point-zero-one moles. Step two, the leftover acid, found from the base titre. Nought-point-one times nought-point-zero-one-eight-four is one-point-eight-four times ten to the minus three moles, and since it's one to one, that's the excess hydrochloric acid. Step three, and this is the whole idea. The acid that actually reacted with the tablet is the total minus the excess, which gives eight-point-one-six times ten to the minus three moles. Step four, bicarbonate reacts one to one with acid, so that's the bicarbonate moles. Step five, mass equals moles times molar mass, nought-point-six-eight-five grams. The trap is thinking all the acid you added reacted. It didn't. You have to subtract the leftover."
+      }
+    },
+    {
+      "id": "concept-indicators",
+      "type": "concept",
+      "heading": "Choosing the indicator",
+      "body": "Match the indicator's transition range to the steep pH jump near equivalence, which depends on the acid-base pair.",
+      "bullets": [
+        {"text": "Methyl orange, pH 3.1 to 4.4: strong acid with a weak base."},
+        {"text": "Bromothymol blue, pH 6.0 to 7.6: strong acid with a strong base."},
+        {"text": "Phenolphthalein, pH 8.2 to 10.0: weak acid with a strong base."}
+      ],
+      "secondary": "Equivalence pH is only 7 for strong-strong. A weak acid with strong base ends above 7, so phenolphthalein fits.",
+      "callout": "The indicator must change inside the steep jump.",
+      "durationInFrames": 1140,
+      "caption": "Pick the indicator whose range sits in the steep pH jump at equivalence.",
+      "voiceover": {
+        "text": "Last piece, and it's a genuine chemistry decision, not a guess. Picture the burette dripping base into acid. Nothing visible happens for ages, then one drop swings the whole flask to a permanent colour. You want your indicator to change colour right in that steep pH jump near equivalence. Which indicator depends on the pair. Methyl orange, around pH three to four, suits a strong acid with a weak base. Bromothymol blue, near neutral, suits strong acid with strong base. Phenolphthalein, up around pH eight to ten, suits a weak acid with a strong base. And here's the catch students fall for. The equivalence point is only at pH seven for strong with strong. Titrate a weak acid like ethanoic acid with sodium hydroxide and equivalence lands above seven, so phenolphthalein is the right call, not methyl orange."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: averaging the rough titre. The first run is a locator only, so exclude it and average concordant runs.",
+      "secondary": "Trap 2: thinking equivalence point always means pH 7. Only for strong-strong. Trap 3: in a back titration, assuming all the added acid reacted instead of subtracting the excess.",
+      "mistakeTag": "Where titration marks vanish",
+      "callout": "Drop the rough run, equivalence isn't always pH 7, subtract the excess.",
+      "durationInFrames": 1230,
+      "caption": "Exclude the rough titre, equivalence ≠ pH 7 always, subtract the back-titration excess.",
+      "voiceover": {
+        "text": "Three traps. Trap one, averaging the rough titre. The first run is just to find the ballpark, and it's usually overshot. Average only the concordant runs that agree within nought-point-one of a millilitre. Trap two, assuming the equivalence point is always pH seven. That's only true for a strong acid with a strong base. A weak acid with a strong base reaches equivalence above seven, and that changes which indicator you choose. Trap three, the back titration killer. Assuming all the acid you added reacted with the sample. It didn't, some was left over. You measure that excess in the second titration and subtract it, and only then do you know how much actually reacted."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "25.00 mL of NaOH is neutralised by 20.00 mL of 0.1500 mol L⁻¹ HCl. Find c(NaOH).",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "n(HCl) = c × V = 0.1500 × 0.02000 = 3.00 × 10⁻³ mol",
+        "Ratio HCl : NaOH = 1 : 1, so n(NaOH) = 3.00 × 10⁻³ mol",
+        "V(NaOH) = 25.00 ÷ 1000 = 0.02500 L",
+        "c(NaOH) = 3.00 × 10⁻³ ÷ 0.02500",
+        "Answer: c(NaOH) = 0.1200 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1170,
+      "caption": "1:1 ratio gives c(NaOH) = 0.1200 mol L⁻¹.",
+      "voiceover": {
+        "text": "Quick check. Twenty-five millilitres of sodium hydroxide is neutralised by twenty millilitres of nought-point-one-five mole per litre hydrochloric acid. Find the concentration of the base. Pause and work it through. Right, let's check it. Step one, moles of the acid we know. Nought-point-one-five times nought-point-zero-two is three times ten to the minus three moles. Step two, the ratio is one to one, so the base has the same moles. Step three, the base volume is nought-point-zero-two-five litres. Step four, concentration equals moles over volume, which gives nought-point-one-two moles per litre. Clean one to one, so no ratio adjustment this time."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Titration finds an unknown concentration using a standard of known concentration.",
+        "Average only concordant titres, never the rough run.",
+        "Run the four steps: titre to litres, n = cV, balanced-equation ratio, c = n ÷ V.",
+        "Pick the indicator whose range sits in the steep pH jump near equivalence.",
+        "Back titration: subtract the measured excess to find what actually reacted."
+      ],
+      "finalPrompt": "Before you divide: right ratio, and did I subtract any excess?",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: concordant titres, four-step pathway, indicator choice, back titration.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, titration finds an unknown concentration by reacting it with a standard of known concentration. Second, average only your concordant titres, never the rough first run. Third, run the four steps, titre to litres, n equals c V, the ratio from the balanced equation, then concentration is moles over volume. Fourth, choose the indicator whose transition range sits in the steep pH jump near equivalence, remembering that pH isn't always seven there. And fifth, for a back titration, subtract the measured excess to find how much actually reacted. Get the ratio right and check for an excess, and these calculations are very predictable. See you next lesson."
+      }
+    }
+  ]
+}

@@ -14,17 +14,21 @@
 //   140  callout reveals
 
 import type {LessonData, TextScene} from '../lesson/types';
+import {ASSETS, type AssetName} from '../assets';
 import {FadeUp} from '../animations/FadeUp';
 import {
 	ScribbleCircle,
 } from '../animations/DoodlePrimitives';
 import {HighlightWipe} from '../animations/AttentionPrimitives';
-import {NumberTicker} from '../animations/MotionPrimitives';
+import {NumberTicker, StampInTitle} from '../animations/MotionPrimitives';
+import {BulletReveal} from '../animations/BulletReveal';
 import {AmbientBorderPulse, AmbientGlow} from '../animations/AmbientMotion';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
+import {ConceptText} from './shared/ConceptText';
 import {FONT_HAND, FONT_MONO, TYPE, TOK} from '../styles/tokens';
+import {useAccent} from '../styles/theme';
 
 type DefinitionSlideProps = {
 	scene: TextScene;
@@ -34,6 +38,16 @@ type DefinitionSlideProps = {
 };
 
 export const DefinitionSlide = ({scene, lesson, sceneIndex, totalScenes}: DefinitionSlideProps) => {
+	const theme = useAccent();
+	const rd = scene.revealDelays ?? {};
+
+	// Branch: if bullets are present, render a structured-list layout rather
+	// than the hero-word layout. Hero-word treatment is for single-term
+	// definitions ("One mole."); list treatment is for "Five indicators…".
+	if (scene.bullets && scene.bullets.length > 0) {
+		return <DefinitionListLayout scene={scene} lesson={lesson} sceneIndex={sceneIndex} totalScenes={totalScenes} />;
+	}
+
 	const {hero, sub} = splitHeading(scene.heading);
 	// Try to find a key word inside the hero to circle. Falls back to whole hero.
 	const heroCircleTarget = pickCircleTarget(hero);
@@ -41,7 +55,7 @@ export const DefinitionSlide = ({scene, lesson, sceneIndex, totalScenes}: Defini
 	const annotationLabel = pickAnnotationLabel(scene);
 
 	return (
-		<SlideFrame>
+		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
 			<SlideChrome lesson={lesson} dot="2.1" topic="KEY TERM" sceneType="definition" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 			<AmbientGlow left={28} top={214} width={940} height={330} delay={130} opacity={0.09} />
 
@@ -59,7 +73,7 @@ export const DefinitionSlide = ({scene, lesson, sceneIndex, totalScenes}: Defini
 					right: 64,
 				}}
 			>
-				<FadeUp delay={12} durationFrames={14}>
+				<FadeUp delay={rd.hero ?? 12} durationFrames={14}>
 					<div
 						style={{
 							fontSize: 200,
@@ -73,27 +87,26 @@ export const DefinitionSlide = ({scene, lesson, sceneIndex, totalScenes}: Defini
 						<HeroWithCircle
 							text={hero}
 							circleTarget={heroCircleTarget}
-							circleDelay={24}
+							circleDelay={rd.circle ?? 24}
 							annotationLabel={annotationLabel}
-							annotationDelay={36}
+							annotationDelay={rd.annotation ?? 36}
 						/>
-						<span style={{color: TOK.chem1}}>.</span>
-					</div>
+											</div>
 				</FadeUp>
 
 				{sub ? (
-					<FadeUp delay={42} durationFrames={14}>
+					<FadeUp delay={rd.subheading ?? 42} durationFrames={14}>
 						<div
 							style={{
 								fontSize: 88,
 								fontWeight: 600,
 								lineHeight: 1.05,
 								letterSpacing: '-0.03em',
-								color: TOK.chem2,
+								color: theme.accent2,
 								marginTop: 42,
 							}}
 						>
-							<ScientificSub text={sub} delay={42} />
+							<ScientificSub text={sub} delay={rd.subheading ?? 42} />
 						</div>
 					</FadeUp>
 				) : null}
@@ -105,11 +118,11 @@ export const DefinitionSlide = ({scene, lesson, sceneIndex, totalScenes}: Defini
 					position: 'absolute',
 					bottom: 240,
 					left: 64,
-					right: hasUnitTable(scene) ? 760 : 64,
-					maxWidth: hasUnitTable(scene) ? 1020 : 1500,
+					right: hasUnitTable(scene) || scene.image ? 760 : 64,
+					maxWidth: hasUnitTable(scene) || scene.image ? 1020 : 1500,
 				}}
 			>
-				<FadeUp delay={70} durationFrames={12}>
+				<FadeUp delay={rd.body ?? 70} durationFrames={12}>
 					<div
 						style={{
 							height: 1,
@@ -118,7 +131,7 @@ export const DefinitionSlide = ({scene, lesson, sceneIndex, totalScenes}: Defini
 						}}
 					/>
 				</FadeUp>
-				<FadeUp delay={70} durationFrames={14}>
+				<FadeUp delay={rd.body ?? 70} durationFrames={14}>
 					<div
 						style={{
 							fontSize: 32,
@@ -130,12 +143,12 @@ export const DefinitionSlide = ({scene, lesson, sceneIndex, totalScenes}: Defini
 						<BodyWithHighlight
 							text={scene.body}
 							highlightPhrase={bodyHighlight}
-							highlightDelay={90}
+							highlightDelay={rd.highlight ?? 90}
 						/>
 					</div>
 				</FadeUp>
 				{scene.secondary ? (
-					<FadeUp delay={100} durationFrames={14}>
+					<FadeUp delay={rd.secondary ?? 100} durationFrames={14}>
 						<div
 							style={{
 								fontSize: 24,
@@ -143,22 +156,45 @@ export const DefinitionSlide = ({scene, lesson, sceneIndex, totalScenes}: Defini
 								color: TOK.inkDim,
 								marginTop: 22,
 								maxWidth: 1300,
+								display: 'flex',
+								flexDirection: 'column',
+								gap: 10,
 							}}
 						>
-							{scene.secondary}
+							{splitSecondary(scene.secondary).map((line, i) => (
+								<div key={i}>
+									<ConceptText baseColor={TOK.inkDim}>{line}</ConceptText>
+								</div>
+							))}
 						</div>
 					</FadeUp>
 				) : null}
 			</div>
 
 			{hasUnitTable(scene) ? (
-				<UnitTable diagram={scene.diagram} delay={84} />
+				<UnitTable diagram={scene.diagram} delay={rd.unitTable ?? 84} />
+			) : scene.image && ASSETS[scene.image as AssetName] ? (
+				<FadeUp delay={rd.unitTable ?? 84} durationFrames={16} dy={22}>
+					<img
+						src={ASSETS[scene.image as AssetName]}
+						alt=""
+						style={{
+							position: 'absolute',
+							right: 64,
+							bottom: 250,
+							width: 540,
+							maxHeight: 620,
+							objectFit: 'contain',
+							filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.18))',
+						}}
+					/>
+				</FadeUp>
 			) : null}
 
 			{/* Callout */}
 			{scene.callout ? (
 				<div style={{position: 'absolute', bottom: 150, left: 64}}>
-					<FadeUp delay={140} durationFrames={14} dy={20}>
+					<FadeUp delay={rd.callout ?? 140} durationFrames={14} dy={20}>
 						<div
 							style={{
 								fontSize: 28,
@@ -420,6 +456,17 @@ const MathText = ({text}: {text: string}) => {
 
 // ─── Heuristics for parsing JSON content ───────────────────────────────
 
+function splitSecondary(secondary: string): string[] {
+	// Split on sentence boundary so each "Term. Definition." pair gets its
+	// own line in the rendered stack. Falls back to the whole string if
+	// no boundary is found.
+	const parts = secondary
+		.split(/(?<=[.!?])\s+(?=[A-Z])/)
+		.map((p) => p.trim())
+		.filter(Boolean);
+	return parts.length > 0 ? parts : [secondary];
+}
+
 function splitHeading(heading: string): {hero: string; sub: string | null} {
 	// Split on `=` if present — formula-style headings get their RHS on a second line.
 	const eqIdx = heading.indexOf('=');
@@ -474,3 +521,128 @@ function pickAnnotationLabel(scene: TextScene): string | null {
 	if (headingLower.includes('avogadro')) return '↑ Nₐ';
 	return null;
 }
+
+// ─── Definition rendered as structured list (when bullets present) ──────
+//
+// Used for definition scenes that are actually frameworks/lists rather than
+// single-term definitions — e.g. "Five indicators of chemical change". The
+// hero-word treatment is wrong for these; we use a tighter heading + bullet
+// reveal instead.
+
+const DefinitionListLayout = ({
+	scene,
+	lesson,
+	sceneIndex,
+	totalScenes,
+}: DefinitionSlideProps) => {
+	const theme = useAccent();
+	const rd = scene.revealDelays ?? {};
+	const bulletStart = rd.bulletsStart ?? rd.body ?? 70;
+	const bulletEnd = Math.max(bulletStart + 60, scene.durationInFrames - 90);
+
+	return (
+		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
+			<SlideChrome lesson={lesson} dot="2.1" topic="KEY TERM" sceneType="definition" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<AmbientGlow left={28} top={214} width={940} height={330} delay={130} opacity={0.09} />
+
+			<div style={{position: 'absolute', top: 150, left: 64}}>
+				<Eyebrow color={TOK.inkDim}>DEFINITION</Eyebrow>
+			</div>
+
+			<div
+				style={{
+					position: 'absolute',
+					top: 200,
+					left: 64,
+					right: scene.image ? 760 : 64,
+					maxWidth: scene.image ? 1080 : 1700,
+				}}
+			>
+				<FadeUp delay={rd.heading ?? 12} durationFrames={14} dy={20}>
+					<StampInTitle delay={rd.heading ?? 12} color={TOK.ink} underlineColor={theme.accent}>
+						<h1
+							style={{
+								margin: 0,
+								fontSize: fitDefinitionListHeadingSize(scene.heading),
+								fontWeight: 800,
+								lineHeight: 1.02,
+								letterSpacing: '-0.035em',
+								color: TOK.ink,
+							}}
+						>
+							{scene.heading}
+													</h1>
+					</StampInTitle>
+				</FadeUp>
+
+				{scene.body ? (
+					<FadeUp delay={rd.subheading ?? 36} durationFrames={14} dy={14}>
+						<p
+							style={{
+								margin: '24px 0 0',
+								fontSize: 26,
+								lineHeight: 1.4,
+								color: TOK.inkDim,
+								maxWidth: 980,
+							}}
+						>
+							<ConceptText baseColor={TOK.inkDim}>{scene.body}</ConceptText>
+						</p>
+					</FadeUp>
+				) : null}
+
+				<div style={{marginTop: 36}}>
+					<BulletReveal
+						bullets={scene.bullets!}
+						startFrame={bulletStart}
+						endFrame={bulletEnd}
+						markerColor={theme.accent}
+						fontSize={32}
+					/>
+				</div>
+			</div>
+
+			{scene.image && ASSETS[scene.image as AssetName] ? (
+				<FadeUp delay={rd.diagram ?? 90} durationFrames={16} dy={22}>
+					<img
+						src={ASSETS[scene.image as AssetName]}
+						alt=""
+						style={{
+							position: 'absolute',
+							right: 64,
+							top: 220,
+							width: 620,
+							maxHeight: 660,
+							objectFit: 'contain',
+							filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.18))',
+						}}
+					/>
+				</FadeUp>
+			) : null}
+
+			{scene.callout ? (
+				<div style={{position: 'absolute', bottom: 150, left: 64}}>
+					<FadeUp delay={rd.callout ?? 200} durationFrames={14} dy={20}>
+						<div
+							style={{
+								fontSize: 28,
+								fontStyle: 'italic',
+								color: TOK.amber,
+								fontWeight: 500,
+								letterSpacing: '-0.01em',
+							}}
+						>
+							→ {scene.callout}
+						</div>
+					</FadeUp>
+				</div>
+			) : null}
+		</SlideFrame>
+	);
+};
+
+const fitDefinitionListHeadingSize = (heading: string) => {
+	if (heading.length > 36) return 56;
+	if (heading.length > 26) return 64;
+	return 72;
+};

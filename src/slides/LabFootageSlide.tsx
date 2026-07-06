@@ -25,6 +25,7 @@ import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
 import {FONT_HAND, TYPE, TOK} from '../styles/tokens';
+import {useAccent} from '../styles/theme';
 
 type LabFootageSlideProps = {
 	scene: LabFootageScene;
@@ -33,18 +34,28 @@ type LabFootageSlideProps = {
 	totalScenes?: number;
 };
 
-const ANNOTATION_POSITIONS: Record<string, {nx: number; ny: number; tx: number; ty: number; flip: boolean}> = {
-	'top-left':     {nx: 160,  ny: 220, tx: 520, ty: 280, flip: false},
-	'top-right':    {nx: 1340, ny: 220, tx: 1200, ty: 280, flip: true},
-	'bottom-left':  {nx: 160,  ny: 700, tx: 520, ty: 640, flip: false},
-	'bottom-right': {nx: 1340, ny: 700, tx: 1200, ty: 640, flip: true},
+// Anchor labels to the corresponding frame edge so long captions never clip.
+// `anchorX` says which side of the frame to pin the text to; the label then
+// grows inward.
+const ANNOTATION_POSITIONS: Record<
+	string,
+	{anchorX: 'left' | 'right'; nx: number; ny: number; tx: number; ty: number; flip: boolean}
+> = {
+	// top-left sits ABOVE the heading column (ny: 110, between chrome and
+	// heading at top:210) — at ny:220 it collided with the heading text.
+	'top-left':     {anchorX: 'left',  nx: 110, ny: 110, tx: 540,  ty: 250, flip: false},
+	'top-right':    {anchorX: 'right', nx: 110, ny: 220, tx: 1420, ty: 290, flip: true},
+	'bottom-left':  {anchorX: 'left',  nx: 110, ny: 870, tx: 540,  ty: 760, flip: false},
+	'bottom-right': {anchorX: 'right', nx: 110, ny: 720, tx: 1420, ty: 720, flip: true},
 };
 
 export const LabFootageSlide = ({scene, lesson, sceneIndex, totalScenes}: LabFootageSlideProps) => {
+	const rd = scene.revealDelays ?? {};
 	const src = ASSETS[scene.image as AssetName];
+	const theme = useAccent();
 
 	return (
-		<SlideFrame>
+		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
 			<SlideChrome lesson={lesson} dot="2.1" topic="LAB DEMO" sceneType="labFootage" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			{/* Mono eyebrow */}
@@ -54,7 +65,7 @@ export const LabFootageSlide = ({scene, lesson, sceneIndex, totalScenes}: LabFoo
 
 			{/* Heading + body */}
 			<div style={{position: 'absolute', top: 210, left: 64, width: 440}}>
-				<FadeUp delay={12} durationFrames={14} dy={16}>
+				<FadeUp delay={rd.heading ?? 12} durationFrames={14} dy={16}>
 					<h1
 						style={{
 							margin: 0,
@@ -66,13 +77,12 @@ export const LabFootageSlide = ({scene, lesson, sceneIndex, totalScenes}: LabFoo
 						}}
 					>
 						{scene.heading}
-						<span style={{color: TOK.chem1}}>.</span>
 					</h1>
 				</FadeUp>
 
 				{scene.body ? (
 					<div style={{marginTop: 28}}>
-						<FadeUp delay={36} durationFrames={14} dy={12}>
+						<FadeUp delay={rd.body ?? 36} durationFrames={14} dy={12}>
 							<div
 								style={{
 									fontSize: 26,
@@ -88,19 +98,19 @@ export const LabFootageSlide = ({scene, lesson, sceneIndex, totalScenes}: LabFoo
 				) : null}
 			</div>
 
-			{/* Visual stage */}
-			<FadeUp delay={24} durationFrames={16} dy={20}>
+			{/* Visual stage — narrower so right-side annotations have clear room */}
+			<FadeUp delay={rd.visual ?? 24} durationFrames={16} dy={20}>
 				<div
 					style={{
 						position: 'absolute',
 						left: 540,
 						top: 190,
-						width: 1160,
+						width: 880,
 						height: 640,
 						borderRadius: 18,
 						border: `1px solid ${TOK.rule}`,
 						background:
-							`linear-gradient(135deg, ${TOK.bgLift} 0%, rgba(13,58,47,0.48) 55%, ${TOK.bg} 100%)`,
+							`linear-gradient(135deg, ${TOK.bgLift} 0%, rgba(${theme.cardTint},0.48) 55%, ${TOK.bg} 100%)`,
 						boxShadow: `0 34px 120px rgba(0,0,0,0.34), inset 0 0 0 1px rgba(232,239,233,0.025)`,
 						overflow: 'hidden',
 						display: 'flex',
@@ -114,7 +124,7 @@ export const LabFootageSlide = ({scene, lesson, sceneIndex, totalScenes}: LabFoo
 							position: 'absolute',
 							inset: -160,
 							background:
-								`radial-gradient(circle at 50% 42%, ${TOK.chem2}38 0%, ${TOK.chem1}18 26%, transparent 58%)`,
+								`radial-gradient(circle at 50% 42%, ${theme.accent2}38 0%, ${theme.accent}18 26%, transparent 58%)`,
 							opacity: 0.18,
 						}}
 					/>
@@ -132,7 +142,7 @@ export const LabFootageSlide = ({scene, lesson, sceneIndex, totalScenes}: LabFoo
 						<FadeUp delay={36} durationFrames={14} dy={10}>
 							<Img
 								src={src}
-								alt={scene.image}
+								alt=""
 								style={{
 									maxWidth: '82%',
 									maxHeight: '82%',
@@ -145,35 +155,39 @@ export const LabFootageSlide = ({scene, lesson, sceneIndex, totalScenes}: LabFoo
 				</div>
 			</FadeUp>
 
-			{/* Annotations */}
+			{/* Annotations — labels anchor to the frame edge to prevent clipping */}
 			{scene.annotations?.map((annotation, index) => {
 				const pos = ANNOTATION_POSITIONS[annotation.position];
 				if (!pos) return null;
 				const delay = 60 + index * 30;
 				const color = TOK.amber;
-				const arrowStartX = pos.flip ? pos.nx - 40 : pos.nx + 40;
-				const arrowStartY = pos.ny + 18;
+				// Arrow start: estimate the label's inner edge from the anchor side.
+				// 320px is a conservative budget for a 3-4 word handwritten label.
+				const labelWidth = 320;
+				const arrowStartX = pos.anchorX === 'right'
+					? 1920 - pos.nx - labelWidth + 20
+					: pos.nx + labelWidth - 20;
+				const arrowStartY = pos.ny + 28;
+
+				const labelStyle = {
+					position: 'absolute' as const,
+					top: pos.ny,
+					fontFamily: FONT_HAND,
+					fontSize: 44,
+					color,
+					fontWeight: 600,
+					whiteSpace: 'nowrap' as const,
+					transform: `rotate(${pos.flip ? 4 : -4}deg)`,
+					transformOrigin: pos.flip ? ('right center' as const) : ('left center' as const),
+					textAlign: pos.flip ? ('right' as const) : ('left' as const),
+					zIndex: 2,
+					...(pos.anchorX === 'right' ? {right: pos.nx} : {left: pos.nx}),
+				};
 
 				return (
 					<div key={index} style={{position: 'absolute', left: 0, top: 0, width: 1920, height: 1080, pointerEvents: 'none'}}>
 						<FadeUp delay={delay} durationFrames={12} dy={14}>
-							<div
-								style={{
-									position: 'absolute',
-									left: pos.nx,
-									top: pos.ny,
-									fontFamily: FONT_HAND,
-									fontSize: 44,
-									color,
-									fontWeight: 600,
-									whiteSpace: 'nowrap',
-									transform: `rotate(${pos.flip ? 4 : -4}deg)`,
-									transformOrigin: pos.flip ? 'right center' : 'left center',
-									zIndex: 2,
-								}}
-							>
-								{annotation.text}
-							</div>
+							<div style={labelStyle}>{annotation.text}</div>
 						</FadeUp>
 						<ScribbleArrow
 							x1={arrowStartX}

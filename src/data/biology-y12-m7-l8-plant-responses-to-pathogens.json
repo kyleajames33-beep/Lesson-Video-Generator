@@ -1,0 +1,280 @@
+{
+  "title": "How Plants Respond to Pathogens",
+  "subtitle": "Defence without a single immune cell",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 8",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "investigate the response of a named Australian plant to a named pathogen through practical and/or secondary-sourced investigation"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does a plant or animal respond to infection?",
+  "lessonIntent": "Students can describe plant physical and chemical defences, explain the hypersensitive response and systemic acquired resistance, and apply them to Banksia versus Phytophthora.",
+  "examSkill": "Explain how a named Australian plant responds to a named pathogen, using physical, chemical, HR and SAR mechanisms.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, how plants respond to pathogens. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "How Plants Respond to Pathogens (Year 12 Biology, Module 7, Lesson 8)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Defence with no immune cells",
+      "body": "Phytophthora has exposed 40 percent of WA's jarrah forest. Plants have no white blood cells. How do they fight back?",
+      "callout": "How does a rooted plant defend itself with no mobile immunity?",
+      "image": "bioM7L8PlantDefenceCrossSection",
+      "durationInFrames": 1495,
+      "caption": "Plants face aggressive pathogens like Phytophthora with no mobile immune cells.",
+      "voiceover": {
+        "text": "Phytophthora cinnamomi was first identified in Western Australia's Darling Ranges back in nineteen sixty-five. By twenty-eighteen, surveys showed that forty percent of the jarrah forest had been exposed to it, and this pathogen kills roughly forty percent of the plant species it encounters. Now here's the puzzle. A plant has no white blood cells. It has no antibodies. It can't run away, and it can't send mobile defenders rushing to the site of an infection. So how on earth does a rooted, stationary plant defend itself against a pathogen this aggressive? The answer is a surprisingly sophisticated toolkit, built entirely from structure and chemistry, and that's what we're unpacking today."
+      }
+    },
+    {
+      "id": "concept-barriers",
+      "type": "concept",
+      "heading": "Two lines: physical and chemical",
+      "body": "With no immune cells, plants rely on structural barriers and antimicrobial chemistry, both active and sophisticated.",
+      "bullets": [
+        {
+          "text": "Physical: cuticle, reinforced cell walls, bark, stomatal closure, and tyloses."
+        },
+        {
+          "text": "Chemical: phytoalexins, defensive PR proteins, and reactive oxygen species."
+        },
+        {
+          "text": "Defences are constitutive, always present, or induced, switched on by attack."
+        }
+      ],
+      "secondary": "Tyloses are balloon-like outgrowths that plug xylem vessels, stopping wilt pathogens from spreading through the plant's water-transport system.",
+      "callout": "Block it with structure, or poison it with chemistry.",
+      "durationInFrames": 2155,
+      "caption": "Plants defend with physical barriers and antimicrobial chemicals, constitutive or induced.",
+      "voiceover": {
+        "text": "Since plants have no immune cells, they lean on two integrated systems, physical and chemical defences. The physical, or structural, defences are barriers. The waxy cuticle covers leaves and stems and stops spores germinating. The cell wall, made of cellulose and lignin, physically blocks invading hyphae, and it can be reinforced with extra callose and lignin right at the infection site. Bark is a thick layer of dead cells in woody plants. Stomata can close to block the main entry point for airborne pathogens. And tyloses are balloon-like outgrowths that plug the xylem vessels, stopping wilt pathogens spreading through the water-transport system. The chemical defences are antimicrobial molecules, phytoalexins that are directly toxic to pathogens, pathogenesis-related proteins like chitinases that break down fungal cell walls, and reactive oxygen species. And one distinction the exam likes, some defences are constitutive, meaning always present, like the cuticle, while others are induced, switched on only when a pathogen is detected, like phytoalexins."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Defence",
+          "Physical",
+          "Chemical"
+        ],
+        "rows": [
+          [
+            "Barrier",
+            "Cuticle, bark",
+            "Tannins, resin"
+          ],
+          [
+            "At infection site",
+            "Callose, lignin, tyloses",
+            "Phytoalexins, ROS"
+          ],
+          [
+            "Entry block",
+            "Stomatal closure",
+            "PR proteins, chitinases"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The terms you need",
+      "bullets": [
+        {
+          "text": "Phytoalexin: an antimicrobial chemical made in response to pathogen attack."
+        },
+        {
+          "text": "Hypersensitive response: localised programmed cell death to contain a pathogen."
+        },
+        {
+          "text": "Systemic acquired resistance: whole-plant defensive priming after a local infection."
+        },
+        {
+          "text": "Phytophthora cinnamomi: an oomycete causing root rot and dieback in native plants."
+        }
+      ],
+      "callout": "HR is local sacrifice; SAR is whole-plant alert.",
+      "durationInFrames": 1735,
+      "caption": "Phytoalexin, hypersensitive response, systemic acquired resistance, Phytophthora.",
+      "voiceover": {
+        "text": "Four terms before the mechanisms. A phytoalexin is an antimicrobial chemical that a plant produces rapidly in response to a pathogen attack, and it's directly toxic to fungi and bacteria. The hypersensitive response is localised, programmed cell death that the plant uses to contain a pathogen, and we'll see exactly how that works in a moment. Systemic acquired resistance is whole-plant defensive priming that kicks in after a local infection, preparing the rest of the plant for attack. And Phytophthora cinnamomi is the named pathogen for this topic, an oomycete, or water mould, that causes root rot and dieback in a huge range of Australian native plants. The pairing to remember is that the hypersensitive response is a local sacrifice, while systemic acquired resistance is a whole-plant alert."
+      }
+    },
+    {
+      "id": "concept-hr",
+      "type": "concept",
+      "heading": "The hypersensitive response",
+      "body": "When a pathogen breaks in, the plant deliberately kills its own cells at the site to trap it.",
+      "bullets": [
+        {
+          "text": "R-proteins detect pathogen molecules, triggering the defence cascade."
+        },
+        {
+          "text": "A burst of reactive oxygen species damages the pathogen and signals locally."
+        },
+        {
+          "text": "Infected and surrounding cells die, forming a sealed-off necrotic lesion."
+        }
+      ],
+      "secondary": "It works because most plant pathogens are biotrophs that need living cells. A zone of dead tissue starves them, so a visible necrotic lesion means containment succeeded.",
+      "callout": "Sacrifice a few cells to save the whole plant.",
+      "durationInFrames": 2145,
+      "caption": "The hypersensitive response kills cells around an infection to trap biotrophic pathogens.",
+      "voiceover": {
+        "text": "Now to the most counterintuitive plant defence, the hypersensitive response. When a pathogen breaks through the outer barriers and starts infecting living cells, the plant does something that sounds self-destructive, it deliberately kills its own cells around the infection point. Here's the sequence. First, R-proteins inside the cell detect molecules from the pathogen, which triggers the defence cascade. Second, there's a burst of reactive oxygen species, which directly damages the pathogen and acts as a local signal. Third, the infected and surrounding cells undergo rapid programmed death, forming a visible dead patch called a necrotic lesion. And fourth, the surviving neighbours reinforce their walls with callose and lignin, sealing the zone off. Why does killing cells help? Because most plant pathogens are biotrophs, they need living host cells to survive. By creating a zone of dead, nutrient-poor tissue, the plant starves them. So a visible necrotic lesion is actually evidence the response worked, the pathogen has been contained."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "detect",
+            "label": "Detect"
+          },
+          {
+            "id": "ros",
+            "label": "ROS"
+          },
+          {
+            "id": "die",
+            "label": "Die"
+          },
+          {
+            "id": "seal",
+            "label": "Seal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "detect",
+            "to": "ros"
+          },
+          {
+            "from": "ros",
+            "to": "die"
+          },
+          {
+            "from": "die",
+            "to": "seal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "concept-sar",
+      "type": "concept",
+      "heading": "Systemic acquired resistance",
+      "body": "After a local infection, the plant sends a chemical signal that primes defences across its whole body.",
+      "bullets": [
+        {
+          "text": "Salicylic acid travels through the phloem to uninfected tissue."
+        },
+        {
+          "text": "It switches on PR genes plant-wide, priming defences everywhere."
+        },
+        {
+          "text": "It is broad-spectrum, not pathogen-specific, and lasts days to weeks."
+        }
+      ],
+      "secondary": "SAR is analogous to animal immunological memory, but mechanistically different. It is not antibody-specific, and unlike animal memory it does not last a lifetime.",
+      "callout": "One local hit, whole-plant readiness.",
+      "durationInFrames": 1925,
+      "caption": "Salicylic acid signals systemic acquired resistance, priming the whole plant broadly.",
+      "voiceover": {
+        "text": "The hypersensitive response contains a pathogen locally, but it also releases a signal, and that signal does something bigger. This is systemic acquired resistance. After a localised infection triggers the hypersensitive response, signalling molecules, mainly salicylic acid, travel through the phloem to the uninfected parts of the plant. In those distant tissues, salicylic acid switches on pathogenesis-related genes, producing defensive PR proteins that prime the plant against future infection. So the entire plant becomes more resistant, not just the original site. Now, the exam loves to compare this with animal immunity. Systemic acquired resistance is analogous to immunological memory, but the mechanism is completely different. It's broad-spectrum, meaning it isn't specific to one pathogen, whereas animal memory is highly specific. And it lasts only days to weeks, not a lifetime. So it's a useful analogy, but don't call them the same thing."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Banksia versus Phytophthora",
+      "question": "Phytophthora cinnamomi, an introduced oomycete, attacks Banksia roots. Explain how this Australian plant responds, and why its defences are often insufficient.",
+      "coachNote": "Trace the pathogen's attack, then the defences, then the evolutionary reason they fall short.",
+      "steps": [
+        "Attack: zoospores swim through soil water to roots, penetrate cells, then destroy the cortex and block the xylem.",
+        "Result: above ground, leaves yellow and wilt because root failure cuts off water and nutrients.",
+        "Defences: Banksia deposits callose and phenolics, makes phytoalexins, and uses the hypersensitive response.",
+        "Why insufficient: Phytophthora is introduced, so Banksia has had limited evolutionary exposure and weak recognition.",
+        "Answer: real but partial defences, often overwhelmed because the host never co-evolved with this pathogen."
+      ],
+      "durationInFrames": 2385,
+      "caption": "Banksia uses callose, phytoalexins and HR, but limited co-evolution makes them insufficient.",
+      "voiceover": {
+        "text": "Let's work through the named example the syllabus requires, Banksia versus Phytophthora cinnamomi. It's an introduced oomycete, and it attacks Banksia roots. Explain how the plant responds, and why its defences often fall short. First, the attack. Phytophthora produces swimming spores called zoospores that move through the films of water between soil particles, attracted by chemicals from living roots. They penetrate the root cells, then the hyphae grow through the cortex, destroying cells and blocking the xylem. Second, the visible result. Above ground, the leaves yellow and wilt, but notice that's a consequence of root failure cutting off water and nutrients, not a direct attack on the leaves. Third, the defences. Banksia does respond, it deposits callose and phenolic compounds in root cell walls, produces antimicrobial phytoalexins, and mounts the hypersensitive response. So why are these often insufficient? Because Phytophthora is introduced, so Banksia has had only limited evolutionary exposure to it, which means weak pathogen recognition. So the answer is, real but partial defences, frequently overwhelmed because the host simply never co-evolved with this pathogen."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking plants have no defences because they lack immune cells. They defend with barriers, chemicals, HR and SAR.",
+      "secondary": "Trap 2: thinking the hypersensitive response is the plant failing, or an allergy. It is a deliberate, protective sacrifice of cells. Trap 3: calling Phytophthora a fungus. It is an oomycete, with cellulose walls and swimming zoospores, so antifungal chemicals targeting chitin do not work on it.",
+      "mistakeTag": "Where plant-defence marks vanish",
+      "callout": "HR is strategic, not failure; Phytophthora is not a fungus.",
+      "durationInFrames": 1830,
+      "caption": "Plants do defend themselves; HR is deliberate; Phytophthora is an oomycete, not a fungus.",
+      "voiceover": {
+        "text": "Three traps to clear before we finish. Trap one, thinking plants have no defences because they lack immune cells. They absolutely do defend themselves, with physical barriers, antimicrobial chemicals, the hypersensitive response, and whole-plant signalling. Trap two, reading the hypersensitive response as the plant failing, or as an allergic reaction. It's neither, it's a deliberate, protective sacrifice, the plant demolishes a few cells to create a firebreak the pathogen can't cross, and a visible lesion means it worked. Trap three, and this one's specific, calling Phytophthora a fungus. It isn't. It's an oomycete, a water mould, and although it looks fungus-like with its hyphae and spores, its cell walls contain cellulose rather than chitin, and it produces swimming zoospores. That distinction matters for treatment, because antifungal chemicals that target chitin simply don't work on it."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A leaf infected by a fungus develops small dead brown spots, and the rest of the plant later becomes more resistant to infection. Name the two responses involved and explain how each helps.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The dead brown spots are necrotic lesions from the hypersensitive response.",
+        "The HR kills infected and surrounding cells, starving the biotrophic pathogen and containing it.",
+        "The rest of the plant becoming resistant is systemic acquired resistance.",
+        "SAR uses salicylic acid through the phloem to prime PR genes plant-wide against future attack.",
+        "Answer: hypersensitive response contains it locally; SAR primes the whole plant afterward."
+      ],
+      "durationInFrames": 1900,
+      "caption": "Necrotic spots are the HR; later whole-plant resistance is SAR.",
+      "voiceover": {
+        "text": "Quick check. A leaf infected by a fungus develops small dead brown spots, and then later, the rest of the plant becomes more resistant to infection. Name the two responses involved, and explain how each one helps. Pause and reason it through. Right. Those small dead brown spots are necrotic lesions, and they're the signature of the hypersensitive response. The hypersensitive response kills the infected and surrounding cells, which starves the biotrophic pathogen of the living cells it needs and contains it locally. Then, the rest of the plant becoming more resistant afterward, that's systemic acquired resistance. SAR uses salicylic acid travelling through the phloem to switch on pathogenesis-related genes across the whole plant, priming its defences against future attack. So the answer is, the hypersensitive response contains the infection locally, and systemic acquired resistance primes the whole plant afterward."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Plants defend with physical barriers and antimicrobial chemicals, not immune cells.",
+        "Defences are constitutive, always present, or induced, switched on by attack.",
+        "The hypersensitive response sacrifices cells to starve and trap biotrophic pathogens.",
+        "Systemic acquired resistance uses salicylic acid to prime the whole plant broadly.",
+        "Phytophthora is an oomycete, and Banksia's partial defences often fail without co-evolution."
+      ],
+      "finalPrompt": "Explaining a plant response? Cover barriers, chemicals, HR, then SAR.",
+      "durationInFrames": 1925,
+      "caption": "Five takeaways: two lines, constitutive vs induced, HR, SAR, the Banksia example.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, plants defend themselves with physical barriers and antimicrobial chemicals, not with immune cells. Second, those defences are either constitutive, meaning always present, or induced, switched on only when a pathogen is detected. Third, the hypersensitive response sacrifices cells around an infection to starve and trap biotrophic pathogens, and a visible necrotic lesion means it worked. Fourth, systemic acquired resistance uses salicylic acid travelling through the phloem to prime the whole plant, broadly rather than specifically. And fifth, Phytophthora is an oomycete, not a fungus, and Banksia's real but partial defences often fail because it never co-evolved with this introduced pathogen. When you explain a plant response, cover the barriers, the chemicals, the hypersensitive response, then systemic acquired resistance. Next lesson, the animal equivalent, physical and chemical responses to infection. See you there."
+      }
+    }
+  ]
+}

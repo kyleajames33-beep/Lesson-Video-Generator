@@ -1,0 +1,301 @@
+{
+  "title": "Galvanic Cells & Standard Reduction Potentials",
+  "subtitle": "Turning spontaneous redox into electrical work",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 9",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 3: Reactive Chemistry",
+  "syllabusDotPoints": [
+    "Conduct investigations to measure and compare the reduction potential of galvanic half-cells",
+    "Calculate the potential difference of galvanic cells using standard reduction potentials"
+  ],
+  "lessonIntent": "Students can describe the components of a galvanic cell, calculate E°cell from standard reduction potentials, and predict whether a reaction is spontaneous.",
+  "examSkill": "Calculate E°cell using standard reduction potentials and predict spontaneity from the sign of E°cell.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson subjects/chemistry/year11/module3/lesson09.html. Real-world anchor: why batteries die. Worked example: Zn-Cu cell E°cell = +1.10 V. Misconception: salt bridge carries electrons. Sets up L10 (inert electrodes). Uses galvanicCell diagram.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Galvanic Cells and Standard Reduction Potentials - Year 11 Chemistry, Module 3.",
+      "voiceover": {
+        "text": "Galvanic Cells and Standard Reduction Potentials. Year eleven Chemistry, Module three.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L9/title.80f2a28c68e7.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why does a battery die?",
+      "body": "A battery is a tiny chemical factory. On one side, a metal gives up electrons. On the other side, a different metal ion grabs them. The electron flow is what powers your device. When the reactants run out, the factory shuts down - and your phone goes flat.",
+      "bullets": [
+        {
+          "text": "A battery is a chemical factory in a can.",
+          "at": 4
+        },
+        {
+          "text": "One side gives up electrons (oxidation).",
+          "at": 10
+        },
+        {
+          "text": "The other side grabs them (reduction).",
+          "at": 16
+        },
+        {
+          "text": "Electron flow = electrical current.",
+          "at": 22
+        },
+        {
+          "text": "When reactants run out, the battery dies.",
+          "at": 29
+        }
+      ],
+      "callout": "A galvanic cell turns spontaneous redox into continuous electron flow.",
+      "image": "l9HookBattery",
+      "durationInFrames": 1260,
+      "caption": "Batteries die when the redox reactants are consumed.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "bulletsStart": 90,
+        "callout": 1020,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Why does a battery die? A battery is a tiny chemical factory. On one side, a metal gives up electrons. On the other side, a different metal ion grabs them. The electron flow is what powers your device. When the reactants run out, the factory shuts down - and your phone goes flat. A galvanic cell turns spontaneous redox into continuous electron flow.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L9/hook.2c93b15f3fd6.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "The four parts every galvanic cell needs",
+      "body": "Think of a galvanic cell as a water wheel: water flows downhill doing work, then a pump returns it to the top. Where the analogy breaks: in a cell, the \"pump\" is chemical potential energy, not mechanical. Remove any part and the loop breaks. Electrons leave the anode, travel through a wire doing work, arrive at the cathode, and ions complete the circuit through a salt bridge.",
+      "bullets": [
+        {
+          "text": "Anode: oxidation occurs. Electrons are released into the wire.",
+          "at": 4
+        },
+        {
+          "text": "Cathode: reduction occurs. Electrons are consumed from the wire.",
+          "at": 12
+        },
+        {
+          "text": "External circuit: electrons flow from anode to cathode.",
+          "at": 20
+        },
+        {
+          "text": "Salt bridge: ions move to keep both half-cells neutral.",
+          "at": 28
+        }
+      ],
+      "callout": "Remove any one part and the cell stops producing current.",
+      "diagram": {
+        "type": "galvanicCell",
+        "leftMetal": "Zn",
+        "leftIon": "Zn²⁺",
+        "rightMetal": "Cu",
+        "rightIon": "Cu²⁺",
+        "delay": 0
+      },
+      "durationInFrames": 1440,
+      "caption": "Four components: anode, cathode, external wire, salt bridge.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1200,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Think of a galvanic cell as a water wheel. Water flows downhill doing work, then a pump returns it to the top. Where the analogy breaks: in a cell, the pump is chemical potential energy, not mechanical. Remove any part and the loop breaks. Electrons leave the anode, travel through a wire doing work, arrive at the cathode, and ions complete the circuit through a salt bridge. The anode is oxidation - electrons are released. The cathode is reduction - electrons are consumed. The external circuit carries electrons. The salt bridge lets ions move to keep both solutions neutral.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L9/concept.1519c7fa4694.mp3"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Standard reduction potentials",
+      "body": "Every half-reaction has a standard reduction potential, E°, measured in volts. Higher E° means a stronger tendency to gain electrons - a better oxidising agent. Lower E° means a stronger tendency to lose electrons - a better reducing agent.",
+      "bullets": [
+        {
+          "text": "E° measures tendency to gain electrons (be reduced).",
+          "at": 4
+        },
+        {
+          "text": "Higher E° = stronger oxidising agent (gains e⁻ easily).",
+          "at": 11
+        },
+        {
+          "text": "Lower E° = stronger reducing agent (loses e⁻ easily).",
+          "at": 18
+        },
+        {
+          "text": "The standard hydrogen electrode (SHE) is the reference: E° = 0.00 V.",
+          "at": 25
+        },
+        {
+          "text": "All E° values are measured at 25°C, 1 atm, 1 M concentration.",
+          "at": 33
+        }
+      ],
+      "callout": "Higher E° = stronger oxidiser. Lower E° = stronger reducer.",
+      "durationInFrames": 1440,
+      "caption": "E° values rank how strongly each species wants to gain electrons.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1200,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Every half-reaction has a standard reduction potential, E°, measured in volts. Higher E° means a stronger tendency to gain electrons - a better oxidising agent. Lower E° means a stronger tendency to lose electrons - a better reducing agent. The standard hydrogen electrode is the reference point at zero volts. All E° values are measured at twenty-five degrees Celsius, one atmosphere, and one molar concentration.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L9/definition.219540479bec.mp3"
+      },
+      "image": "l9DefinitionReductionPotentials"
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "Calculating E°cell",
+      "body": "E°cell = E°cathode - E°anode",
+      "secondary": "E°cathode is the reduction potential of the species being reduced. E°anode is the reduction potential of the species being oxidised. Use the values as written - do not flip signs.",
+      "callout": "E°cell > 0 means spontaneous. E°cell < 0 means non-spontaneous.",
+      "unitCancel": {
+        "left": "V",
+        "right": "V",
+        "result": "V (volts)"
+      },
+      "durationInFrames": 1260,
+      "caption": "E°cell equals cathode potential minus anode potential.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "secondary": 360,
+        "callout": 900
+      },
+      "voiceover": {
+        "text": "The formula for cell potential is simple: E°cell equals E°cathode minus E°anode. Use the reduction potential values exactly as they appear in the data sheet. Do not flip signs. The species with the higher E° becomes the cathode - it gets reduced. The species with the lower E° becomes the anode - it gets oxidised. If E°cell is positive, the reaction is spontaneous. If negative, it is not spontaneous and needs energy input.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L9/formula.dec6bf5bac18.mp3"
+      },
+      "diagram": {
+        "type": "reductionPotentialLadder"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Predicting spontaneity from standard potentials",
+      "question": "A galvanic cell is constructed with a zinc electrode in Zn²⁺(aq) and a copper electrode in Cu²⁺(aq). Given E°(Zn²⁺/Zn) = -0.76 V and E°(Cu²⁺/Cu) = +0.34 V, calculate E°cell and predict whether the reaction is spontaneous.",
+      "coachNote": "Target: identify cathode and anode from E° values, then apply E°cell = E°cathode - E°anode.",
+      "unitCancel": {
+        "left": "V",
+        "right": "V",
+        "result": "V"
+      },
+      "steps": [
+        "Known: E°(Cu²⁺/Cu) = +0.34 V. E°(Zn²⁺/Zn) = -0.76 V.",
+        "Find: E°cell and spontaneity.",
+        "Identify cathode: Cu²⁺/Cu has higher E° (+0.34 V) → reduction occurs here.",
+        "Identify anode: Zn²⁺/Zn has lower E° (-0.76 V) → oxidation occurs here.",
+        "Formula: E°cell = E°cathode - E°anode.",
+        "Substitute: E°cell = (+0.34) - (-0.76) = +0.34 + 0.76.",
+        "Answer: E°cell = +1.10 V.",
+        "Unit check: volts minus volts gives volts.",
+        "Spontaneity: E°cell > 0 → reaction is spontaneous under standard conditions."
+      ],
+      "image": "l9WorkedExampleZnCu",
+      "durationInFrames": 1560,
+      "caption": "E°cell = +1.10 V. Positive means spontaneous.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 110
+      },
+      "voiceover": {
+        "text": "A galvanic cell with zinc and copper. Given E° for copper two plus is plus zero-point-three-four volts and E° for zinc two plus is minus zero-point-seven-six volts. Target: calculate E°cell and predict spontaneity. Copper has the higher E°, so it is the cathode - reduction. Zinc has the lower E°, so it is the anode - oxidation. E°cell equals E°cathode minus E°anode. Substitute: plus zero-point-three-four minus minus zero-point-seven-six. That equals plus one-point-one-zero volts. Unit check: volts. Spontaneity: positive E°cell means the reaction is spontaneous under standard conditions.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L9/worked-example.45834867f4ff.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The salt bridge carries electrons?",
+      "body": "Students often think: \"Electrons travel through the salt bridge to complete the circuit.\" That is the wrong instinct. Electrons only flow through the external wire - from anode to cathode. The correct picture: the salt bridge carries ions, not electrons. Anions flow toward the anode to balance positive charge buildup from metal oxidation. Cations flow toward the cathode to balance negative charge loss from metal ion reduction. Electrons and ions never share the same path.",
+      "callout": "The correct rule: electrons in the wire, ions in the salt bridge. Never both in the same path.",
+      "mistakeTag": "Electron-ion confusion",
+      "image": "l9MisconceptionSaltBridge",
+      "durationInFrames": 1350,
+      "caption": "Electrons in the wire. Ions in the salt bridge. Never both in the same path.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here is the trap. Students think electrons travel through the salt bridge, but that's wrong, because electrons only ever flow through the external wire, from the anode to the cathode. The salt bridge carries ions instead, not electrons. Anions flow toward the anode to balance the positive charge building up there, while cations flow toward the cathode to balance the negative charge it would otherwise lose. So keep it straight, electrons stay in the wire and ions stay in the salt bridge, and the two paths never overlap."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "A student constructs a cell with Fe|Fe²⁺ and Ni|Ni²⁺. Given E°(Fe²⁺/Fe) = -0.44 V and E°(Ni²⁺/Ni) = -0.25 V, calculate E°cell, identify the anode and cathode, and state whether the reaction is spontaneous.",
+      "pausePrompt": "Pause: decide which metal has the higher E° before the answer plays.",
+      "answerSteps": [
+        "Known: E°(Ni²⁺/Ni) = -0.25 V. E°(Fe²⁺/Fe) = -0.44 V.",
+        "Cathode: Ni²⁺/Ni has higher E° (-0.25 V) → reduction.",
+        "Anode: Fe²⁺/Fe has lower E° (-0.44 V) → oxidation.",
+        "Formula: E°cell = E°cathode - E°anode.",
+        "Substitute: E°cell = (-0.25) - (-0.44) = +0.19 V.",
+        "Answer: E°cell = +0.19 V. Spontaneous (E°cell > 0)."
+      ],
+      "image": "l9QuickCheckFeNi",
+      "durationInFrames": 1440,
+      "caption": "E°cell = +0.19 V. Fe is anode, Ni is cathode, spontaneous.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 540,
+        "answerInterval": 100
+      },
+      "voiceover": {
+        "text": "Time for you to try one, a cell built from iron and nickel. The E° for nickel two plus is minus zero-point-two-five volts, and for iron two plus it's minus zero-point-four-four volts. Calculate E°cell, identify the anode and cathode, and state whether it's spontaneous. Pause now and work it through. Since nickel has the higher E°, it becomes the cathode, which makes iron the anode. So E°cell equals minus zero-point-two-five minus minus zero-point-four-four, which gives plus zero-point-one-nine volts. That's positive, so the reaction is spontaneous, with iron oxidising and nickel being reduced."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Is E°cell positive or negative?",
+      "image": "l9SummaryGalvanicCell",
+      "points": [
+        "A galvanic cell has four parts: anode, cathode, external wire, salt bridge.",
+        "Anode = oxidation. Cathode = reduction. Electrons flow anode to cathode.",
+        "E°cell = E°cathode - E°anode. Use reduction potentials as written.",
+        "E°cell > 0 means spontaneous. E°cell < 0 means non-spontaneous.",
+        "The salt bridge carries ions, not electrons, to maintain charge neutrality."
+      ],
+      "durationInFrames": 1260,
+      "caption": "Five takeaways and one decision rule for galvanic cells.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 110,
+        "finalPrompt": 720,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways. One: a galvanic cell needs four parts - anode, cathode, external wire, and salt bridge. Two: anode is oxidation, cathode is reduction, electrons flow anode to cathode. Three: E°cell equals E°cathode minus E°anode. Use the values as written. Four: E°cell positive means spontaneous; negative means non-spontaneous. Five: the salt bridge carries ions, not electrons, to maintain charge neutrality. Decision rule: is E°cell positive or negative?",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L9/summary.ddaa0e0a4237.mp3"
+      }
+    }
+  ]
+}

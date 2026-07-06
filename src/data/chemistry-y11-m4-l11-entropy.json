@@ -1,0 +1,217 @@
+{
+  "title": "Entropy, Definition, Modelling & Predicting ΔS",
+  "subtitle": "How nature counts disorder",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Lesson 11",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Define entropy as a measure of disorder in a system",
+    "Predict the sign of ΔS for a chemical reaction from changes in state and number of moles of gas"
+  ],
+  "lessonIntent": "Students can define entropy qualitatively and predict whether ΔS is positive or negative from changes in state and moles of gas.",
+  "examSkill": "Predict ΔS sign by comparing states (s → l → g) and moles of gas across the equation.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson `subjects/chemistry/year11/module4/lesson11.html`. Anchor: messy room / ice melting / gas expanding (qualitative entropy). Core idea: entropy = disorder; s → l → g increases ΔS; more gas moles on product side → ΔS positive. Misconception (verbatim from site): 'entropy always increases in every reaction' (it's the universe that must increase; the system can decrease).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Entropy, Definition and Predicting ΔS. Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Entropy. Definition, modelling, and predicting delta S. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L11/title.6f92b2889fc6.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why does a smashed glass never reassemble?",
+      "body": "Drop a glass and it shatters into a hundred pieces. Wait all day and the pieces never jump back together. The chemistry isn't forbidding it, the energy is the same either way. What's stopping reassembly is something else: entropy.",
+      "bullets": [
+        {
+          "text": "Energy is conserved either way, broken or whole.",
+          "at": 5
+        },
+        {
+          "text": "But broken pieces have far more arrangements than one whole glass.",
+          "at": 12
+        },
+        {
+          "text": "Nature drifts toward the high-arrangement state.",
+          "at": 19
+        },
+        {
+          "text": "That drift is entropy, a measure of disorder.",
+          "at": 25
+        }
+      ],
+      "callout": "Entropy is why the universe drifts toward more disordered states.",
+      "image": "m4l11HookGlass",
+      "durationInFrames": 1170,
+      "caption": "A smashed glass has more arrangements than a whole one, that's entropy.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the puzzle. Drop a glass — it shatters into a hundred pieces. Wait all day, and the pieces never jump back together. The chemistry doesn't forbid it; the energy is exactly the same either way. So what's stopping reassembly? Something more subtle: entropy. There are many more ways to be a pile of shards than one intact glass — and nature drifts toward whatever has more arrangements.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L11/hook.94a996907d2c.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Predicting the sign of ΔS",
+      "body": "Entropy increases when matter becomes more spread out, more disordered, or more numerous in molecules. The simplest signals are state changes and changes in moles of gas.",
+      "bullets": [
+        {
+          "text": "Solid → liquid → gas: each step increases entropy.",
+          "at": 5
+        },
+        {
+          "text": "More moles of gas on product side → ΔS positive.",
+          "at": 12
+        },
+        {
+          "text": "Fewer moles of gas on product side → ΔS negative.",
+          "at": 19
+        },
+        {
+          "text": "Dissolving a solid in water usually increases ΔS too.",
+          "at": 26
+        }
+      ],
+      "callout": "More gas, more spread out → ΔS positive.",
+      "durationInFrames": 1363,
+      "caption": "Predict ΔS sign: count gas moles on each side.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1080,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "How do we predict whether delta S is positive or negative without measuring it? Two main signals. First, state matters: solid to liquid to gas, each step increases entropy because the particles get freer. Think of it like a marching band moving from a tight formation to a casual mingle in the carpark — but unlike a band that follows orders, the particles drift to disorder on their own. Second, count moles of gas across the equation. More gas moles on the product side means delta S is positive. Fewer means negative. Dissolving a solid in water usually increases entropy too.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L11/concept.72468c785b32.mp3"
+      },
+      "diagram": {
+        "type": "entropyDisorder"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Predicting ΔS sign for three reactions",
+      "question": "Predict the sign of ΔS for each: (a) H₂O(l) → H₂O(g); (b) 2NO₂(g) → N₂O₄(g); (c) 2H₂(g) + O₂(g) → 2H₂O(l).",
+      "coachNote": "Look at the states. Count moles of gas. The bigger the change, the more confident the prediction.",
+      "unitCancel": {
+        "left": "states",
+        "right": "states",
+        "result": "ΔS sign"
+      },
+      "steps": [
+        "Known: three equations with different state changes.",
+        "Find: sign of ΔS for each.",
+        "(a) Liquid → gas: a clear increase in disorder → ΔS positive.",
+        "(b) 2 gas moles → 1 gas mole: fewer gas moles → ΔS negative.",
+        "Formula: count Δn(gas) = n(gas products) − n(gas reactants).",
+        "(c) Gas moles: 3 → 0 (water is liquid here); plus liquid is more ordered than gas.",
+        "Answer: (a) ΔS > 0; (b) ΔS < 0; (c) ΔS strongly negative (3 mol gas → 0 mol gas + condensation)."
+      ],
+      "durationInFrames": 1410,
+      "caption": "Count gas moles + check states → predict ΔS sign.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Three predictions. Part a: water liquid going to water gas — a clear increase in disorder, so delta S is positive. Part b: two moles of NO two gas combining into one mole of N two O four gas — fewer gas moles on the product side, so delta S is negative. Part c: three moles of gas — two H two plus O two — turning into two moles of liquid water. Zero gas on the product side, plus condensation from gas to liquid. Both factors point the same way — delta S is strongly negative.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L11/worked-example.1cdbf72ad526.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Entropy always increases in every reaction\"",
+      "body": "Students often think: \"The Second Law says entropy always increases, so every reaction must have ΔS positive.\" That's the wrong instinct. The Second Law applies to the universe, the system plus its surroundings. The system alone can have ΔS negative (like our N₂O₄ example) as long as the surroundings compensate with a bigger increase. The correct rule: ΔS of the SYSTEM can be either sign.",
+      "callout": "The universe's entropy increases, but the system's can decrease.",
+      "mistakeTag": "Always-positive-ΔS trap",
+      "durationInFrames": 1320,
+      "caption": "The Second Law is about the universe; the system's ΔS can be negative.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the trap. Students think: the Second Law says entropy always increases, so every reaction must have a positive delta S. Wrong instinct. The Second Law applies to the universe — the reacting system plus the surroundings. The system on its own can have negative delta S, like our N two O four example. What can't decrease is the total — the universe's entropy. So whenever you predict delta S for a reaction, you're predicting the system's value, and it can be either sign.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L11/misconception.01d4159114b6.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "Predict the sign of ΔS for: CaCO₃(s) → CaO(s) + CO₂(g). Justify in one sentence.",
+      "pausePrompt": "Pause: count gas moles before and after.",
+      "answerSteps": [
+        "Reactant gas moles: 0 (CaCO₃ is solid).",
+        "Product gas moles: 1 (CO₂(g)).",
+        "Δn(gas) = 1 − 0 = +1 → gas appears.",
+        "Both solids stay solid; one gas appears from nothing.",
+        "Answer: ΔS positive, a gas molecule has been produced where there was none before."
+      ],
+      "durationInFrames": 1200,
+      "caption": "Δn(gas) = +1 (CO₂ appears) → ΔS positive.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 540,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Your turn. Predict the sign of delta S for calcium carbonate decomposing into calcium oxide plus carbon dioxide gas. Pause and try. Reactant gas moles: zero — calcium carbonate is a solid. Product gas moles: one — CO two is a gas. Delta n of gas is plus one — a gas molecule appears where there was none. Both solids stay solid, but you've gone from no gas to one mole of gas. Delta S is positive.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L11/quick-check.6b1166e2515d.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Check the gas moles first: more gas on the product side means ΔS positive.",
+      "points": [
+        "Entropy (S) measures disorder, how many arrangements a system can take.",
+        "Solid → liquid → gas: each step increases entropy.",
+        "More moles of gas on the product side → ΔS positive (and vice versa).",
+        "Dissolving a solid in water usually increases ΔS.",
+        "The Second Law: the universe's entropy always increases, but the system's can decrease."
+      ],
+      "durationInFrames": 1290,
+      "caption": "Predict by state + gas moles. One decision rule.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways. One: entropy is a measure of disorder — how many arrangements a system can take. Two: solid to liquid to gas, each step increases entropy. Three: more moles of gas on the product side means delta S is positive; fewer means negative. Four: dissolving a solid in water usually increases entropy. Five: the Second Law applies to the universe — the system alone can have delta S negative as long as the surroundings compensate. Decision rule: check the gas moles first. More gas on the product side means delta S positive.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L11/summary.ded09aafcdd1.mp3"
+      }
+    }
+  ]
+}

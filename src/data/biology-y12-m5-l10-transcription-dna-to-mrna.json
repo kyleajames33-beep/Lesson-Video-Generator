@@ -1,0 +1,232 @@
+{
+  "title": "Transcription — From DNA to mRNA",
+  "subtitle": "Copying a gene into a portable message",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 10",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "model the process of transcription, including the role of the template strand and the formation of mRNA, as part of polypeptide synthesis"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Why is polypeptide synthesis important?",
+  "lessonIntent": "Students can model transcription, using the template strand and RNA base-pairing to build an mRNA copy of a gene.",
+  "examSkill": "Transcribe a DNA template strand into mRNA, using A-U and C-G pairing and uracil in place of thymine.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, transcription, where a gene in DNA is copied into a portable mRNA message. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Transcription — From DNA to mRNA (Year 12 Biology, Module 5, Lesson 10)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Cracking the code with one letter",
+      "body": "In 1961, a strand of pure U-RNA produced just one amino acid, phenylalanine, revealing that the codon UUU means Phe.",
+      "callout": "How does a sequence of bases become a message a cell can read?",
+      "image": "bioM5L10TranscriptionBubble",
+      "durationInFrames": 1764,
+      "caption": "Nirenberg's 1961 poly-U experiment cracked the first codon, UUU coding for phenylalanine.",
+      "voiceover": {
+        "text": "In nineteen sixty one, Marshall Nirenberg ran a beautifully simple experiment. He fed a cell free system a synthetic RNA strand made of nothing but uracil, poly U, and it produced a chain of just one amino acid, phenylalanine. That single result cracked the first entry in the genetic code, the codon U U U means phenylalanine. By nineteen sixty six, all sixty four codons had been decoded, and astonishingly the code turned out to be universal, the same in bacteria, plants and humans. That universality is only possible because transcription copies DNA into mRNA using the same base pairing rules in every organism. So today we model transcription, the first step of turning a gene into a protein, where DNA is copied into a portable message called mRNA."
+      }
+    },
+    {
+      "id": "concept-gene",
+      "type": "concept",
+      "heading": "A gene is coded DNA",
+      "body": "A gene is a section of DNA whose base sequence codes for a product, usually a polypeptide.",
+      "bullets": [
+        {
+          "text": "A gene is a length of DNA carrying coded information."
+        },
+        {
+          "text": "The order of bases is what carries the hereditary information."
+        },
+        {
+          "text": "A gene codes for a product; it is not itself a trait."
+        }
+      ],
+      "secondary": "Keep the wording precise. A gene codes for a functional product, usually a polypeptide. It does not directly equal an observable feature.",
+      "callout": "A gene codes for a product. It is not the trait itself.",
+      "durationInFrames": 1902,
+      "caption": "A gene is a DNA sequence coding for a product, usually a polypeptide, not a trait itself.",
+      "voiceover": {
+        "text": "Let's start by being precise about what a gene actually is, because the wording matters in the exam. A gene is a section of DNA whose base sequence codes for a functional product, and that product is usually a polypeptide, a chain that folds into a protein. As we have seen throughout this module, it is the order of the bases along the DNA that carries the hereditary information. Now here is the subtle but important point. A gene codes for a product, it is not itself a trait. So a gene does not directly equal brown eyes, or tallness. It codes for a polypeptide, and that polypeptide, often working with many others and the environment, contributes to the observable feature. So say it carefully, a gene codes for a product, usually a polypeptide, not for a trait directly."
+      }
+    },
+    {
+      "id": "concept-template",
+      "type": "concept",
+      "heading": "mRNA is built from the template strand",
+      "body": "DNA unwinds, one strand acts as template, and RNA nucleotides pair against it using uracil.",
+      "bullets": [
+        {
+          "text": "The DNA unwinds and only one strand, the template, is read for a given gene."
+        },
+        {
+          "text": "RNA pairs complementarily: A with U, T with A, C with G, G with C."
+        },
+        {
+          "text": "RNA uses uracil in place of thymine."
+        }
+      ],
+      "secondary": "This is the rule you apply in calculations. Only one DNA strand is the template for any given gene, and thymine never appears in the mRNA.",
+      "callout": "Same pairing logic, but thymine is replaced by uracil.",
+      "durationInFrames": 1848,
+      "caption": "One DNA strand templates mRNA; A pairs with U and thymine is replaced by uracil.",
+      "voiceover": {
+        "text": "Now the mechanism. During transcription, the DNA unwinds, and crucially only one of the two strands, called the template strand, is read for a given gene. RNA nucleotides then pair up against that exposed template, following complementary base pairing, but with one important change. Adenine on the DNA pairs with uracil on the RNA, thymine pairs with adenine, cytosine with guanine, and guanine with cytosine. Did you catch the change? RNA does not use thymine at all, it uses uracil instead. So wherever the template has an A, the new mRNA gets a U. This is the exact rule you apply in transcription questions, so lock in two things. First, only one DNA strand is the template for any given gene. And second, thymine never appears in the mRNA, it is always replaced by uracil."
+      },
+      "diagram": {
+        "type": "transcriptionStrand"
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-portable",
+      "type": "concept",
+      "heading": "mRNA is a portable, temporary copy",
+      "body": "In eukaryotes, DNA stays in the nucleus while mRNA carries the message out, read in codons.",
+      "bullets": [
+        {
+          "text": "DNA stays safely in the nucleus; mRNA is the copy that leaves."
+        },
+        {
+          "text": "mRNA is temporary and portable, carrying the coded message out for translation."
+        },
+        {
+          "text": "mRNA is read in three-base units called codons."
+        }
+      ],
+      "secondary": "This protects the original DNA and lets many protein copies be made from one gene. mRNA does not replace DNA, and how codons are decoded is translation, the next step.",
+      "callout": "Send a copy out; keep the master safe in the nucleus.",
+      "durationInFrames": 1914,
+      "caption": "mRNA carries the gene's message out of the nucleus in codons, protecting the original DNA.",
+      "voiceover": {
+        "text": "So why make a copy at all, why not just use the DNA directly? In eukaryotes, the DNA stays safely inside the nucleus, it does not leave. Instead, transcription makes mRNA, a temporary and portable copy of the gene, and that copy carries the coded message out of the nucleus to where proteins are built. This is clever for two reasons. It protects the original DNA from damage, and it lets the cell make many protein copies from a single gene, just by making lots of mRNA copies. And the message is read in three base units called codons, each one coding part of the eventual protein. Two cautions. The mRNA does not replace the DNA, it is just a working copy. And how those codons are decoded into a polypeptide is the next process, translation, the very next lesson."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Gene: a section of DNA that contains coded information for a product, usually a polypeptide."
+        },
+        {
+          "text": "Transcription: producing an mRNA copy from a DNA template strand."
+        },
+        {
+          "text": "mRNA: messenger RNA, a temporary copy carrying coded information from DNA."
+        },
+        {
+          "text": "Template strand: the DNA strand used to determine the mRNA sequence."
+        },
+        {
+          "text": "Codon: a three-base sequence on mRNA carrying coded information."
+        },
+        {
+          "text": "Uracil: the RNA base that pairs with adenine instead of thymine."
+        }
+      ],
+      "callout": "Six terms for one step: DNA in, mRNA out.",
+      "durationInFrames": 1752,
+      "caption": "Gene, transcription, mRNA, template strand, codon and uracil defined.",
+      "voiceover": {
+        "text": "Let's pin down the vocabulary. A gene is a section of DNA that contains coded information for a product, usually a polypeptide. Transcription is the process of producing an mRNA copy from a DNA template strand. mRNA, or messenger RNA, is a temporary RNA copy that carries coded information from the DNA. The template strand is the DNA strand used to determine the complementary mRNA sequence. A codon is a three base sequence on the mRNA that carries a unit of the coded information. And uracil is the RNA base that pairs with adenine, taking the place of thymine. All six of these terms describe a single step in the bigger picture, taking the information in DNA and producing an mRNA copy of it. DNA in, mRNA out."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Transcribe the CFTR template",
+      "question": "A DNA template strand from the CFTR gene reads TAC GAA CCT ATG. Write the mRNA produced by transcription.",
+      "coachNote": "Pair each base, and remember A on DNA gives U on mRNA, never T.",
+      "steps": [
+        "Apply the RNA pairing rule base by base: T gives A, A gives U, C gives G.",
+        "First codon: T-A-C becomes A-U-G.",
+        "Second codon: G-A-A becomes C-U-U. Third codon: C-C-T becomes G-G-A.",
+        "Fourth codon: A-T-G becomes U-A-C. Note every A on the template gave a U.",
+        "Answer: the mRNA reads AUG CUU GGA UAC."
+      ],
+      "durationInFrames": 2514,
+      "caption": "Template TAC GAA CCT ATG transcribes to mRNA AUG CUU GGA UAC, using uracil.",
+      "voiceover": {
+        "text": "Let's do a transcription, because this is a guaranteed exam skill and it is easy marks once you have the rule. A DNA template strand from the CFTR gene reads T A C, G A A, C C T, A T G. Write the mRNA. We go base by base, and the golden rule is, A on the template gives U on the mRNA, never T. Take the first codon, T A C. T pairs with A, A pairs with U, C pairs with G, so T A C becomes A U G. Second codon, G A A. G gives C, A gives U, A gives U, so that is C U U. Third codon, C C T. C gives G, C gives G, T gives A, so G G A. And the fourth codon, A T G. A gives U, T gives A, G gives C, so U A C. Notice that every single A on the template strand produced a U, because RNA uses uracil. So the finished mRNA reads A U G, C U U, G G A, U A C."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The one-gene-one-protein trap",
+      "body": "Trap: thinking one gene always codes for exactly one protein with one function.",
+      "secondary": "Alternative splicing lets a single gene produce several different mRNA transcripts, and therefore several proteins. Many genes also have regulatory roles rather than coding for a protein at all. One gene, one protein is a useful starting model, but it is a real oversimplification of eukaryotic gene expression. Also remember, mRNA uses uracil, not thymine.",
+      "mistakeTag": "Where transcription marks vanish",
+      "callout": "One gene can yield several proteins, and mRNA has uracil.",
+      "durationInFrames": 1998,
+      "caption": "One gene can yield several proteins via alternative splicing; mRNA uses uracil not thymine.",
+      "voiceover": {
+        "text": "Here is the trap, and it is a conceptual one. Thinking that one gene always codes for exactly one protein, with exactly one function. That neat idea, one gene one protein, is a useful starting model, but it is actually a significant oversimplification. Through a process called alternative splicing, a single gene can produce several different mRNA transcripts, and therefore several different proteins, from the same starting sequence. And many genes do not code for a protein at all, instead they have regulatory roles, controlling other genes. So for a top band answer, acknowledge that one gene one protein is just a starting model. And while we are flagging errors, the most common factual slip on this topic is writing thymine in the mRNA. Remember, RNA uses uracil, never thymine, so if you ever see a T in your mRNA answer, you have made a mistake."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Explain why a single base change in the DNA template of a gene could change the mRNA produced during transcription, even before any protein is made.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Transcription pairs each template base with a specific complementary RNA base.",
+        "A change in one template base means a different RNA base is now paired at that position.",
+        "So the mRNA sequence is altered at that codon, directly from the template change.",
+        "This happens during transcription itself, before translation builds any protein.",
+        "Answer: because the template determines the mRNA by base pairing, changing the template changes the mRNA immediately."
+      ],
+      "durationInFrames": 2136,
+      "caption": "A template base change pairs a different RNA base, altering the mRNA during transcription itself.",
+      "voiceover": {
+        "text": "Quick check, and it ties the mechanism to why mutations matter. Explain why a single base change in the DNA template of a gene could change the mRNA produced during transcription, even before any protein is made. Pause and reason it through. Right. The key is that transcription works by complementary base pairing, each base on the template pairs with one specific RNA base. So if you change a single base on the template strand, then at that position a different RNA base will now be paired in. That directly alters the mRNA sequence at that codon. And the important timing detail the question is pushing you toward, this change happens during transcription itself, as the mRNA is being built, well before translation has made any protein at all. So the answer, because the template strand determines the mRNA purely by base pairing, changing even one template base changes the mRNA immediately, right there in transcription."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A gene is DNA that codes for a product, usually a polypeptide, not a trait directly.",
+        "Transcription reads one template strand to build mRNA.",
+        "RNA pairs A with U and uses uracil in place of thymine.",
+        "mRNA is a temporary, portable copy, read in three-base codons.",
+        "One gene can yield several proteins, so one gene one protein is only a starting model."
+      ],
+      "finalPrompt": "Transcribing? Read the template, pair each base, and replace every thymine outcome with uracil.",
+      "durationInFrames": 2148,
+      "caption": "Five takeaways: gene, template, uracil pairing, portable codons, beyond one gene one protein.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, a gene is a section of DNA that codes for a product, usually a polypeptide, and not for a trait directly. Second, transcription reads just one strand, the template strand, to build the mRNA. Third, RNA pairing replaces thymine with uracil, so adenine on the template pairs with uracil on the mRNA. Fourth, the mRNA is a temporary, portable copy that carries the message out of the nucleus, and it is read in three base codons. And fifth, one gene can actually yield several proteins through alternative splicing, so one gene one protein is only a starting model. When you transcribe, read the template, pair each base, and replace every thymine outcome with uracil. That brings us to the end of these ten lessons on heredity. From here, the message travels on to translation, where the codons are finally decoded into a protein. Well done, and see you next time."
+      }
+    }
+  ]
+}

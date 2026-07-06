@@ -1,0 +1,217 @@
+{
+  "title": "Acid-Base Properties of Drug Molecules",
+  "subtitle": "Why pH decides where a drug is absorbed",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 12",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8: Applying Chemical Ideas",
+  "syllabusDotPoints": [
+    "investigate the structure and action of named medicines in terms of their functional groups",
+    "explore the relationship between the structure of a drug and its acid-base behaviour"
+  ],
+  "moduleLessonCount": 16,
+  "nesaOutcomes": ["CH12-15", "CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "How is information about the reactivity and structure of organic compounds obtained?",
+  "lessonIntent": "Students can apply the Henderson-Hasselbalch equation to find the ionised-to-unionised ratio of a weak-acid drug and explain how pH controls absorption.",
+  "examSkill": "Use pH versus pKa to decide which form dominates, calculate the ratio, and avoid the trap that higher pH protonates a weak acid.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the acid-base behaviour of drug molecules. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Acid-Base Properties of Drug Molecules (Year 12 Chemistry, Module 8, Lesson 12)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why coat an aspirin tablet?",
+      "body": "Aspirin has a pKa of 3.5. In the stomach it's about 99.7% unionised, and unionised molecules cross membranes far more easily.",
+      "image": "entericCoatedTablet",
+      "callout": "One pKa value explains where the drug gets absorbed.",
+      "durationInFrames": 690,
+      "caption": "Aspirin's pKa of 3.5 makes it about 99.7% unionised in the stomach.",
+      "voiceover": {
+        "text": "OK, here's a question that one number can answer. Aspirin has a pKa of three point five. In the strongly acidic stomach, around pH one point five, it turns out aspirin is roughly ninety-nine point seven percent in its unionised form, and unionised molecules cross lipid membranes far more readily than charged ions. That's why plain aspirin is absorbed largely in the stomach. Now in the nineteen sixties, drug makers introduced enteric coatings, which delay release until the small intestine, around pH six point five, where aspirin flips to about ninety-nine point seven percent ionised. That coating dramatically cuts ulcer risk, but slows absorption. The remarkable thing is, you can predict all of that from a single value, the pKa. Today we'll learn the equation that makes it quantitative."
+      }
+    },
+    {
+      "id": "concept-forms",
+      "type": "concept",
+      "heading": "Drugs exist in two forms at once",
+      "body": "Many medicines aren't locked into one chemical form in the body. They sit in equilibrium between protonated and deprotonated forms, and pH shifts that balance.",
+      "bullets": [
+        {"text": "A weak acid exists as HA and as A minus."},
+        {"text": "HA is unionised, less polar, better at crossing membranes."},
+        {"text": "A minus is ionised, more polar, better dissolved in water."}
+      ],
+      "secondary": "These forms differ in charge, so they differ in polarity and in how easily they move through different environments. Ionised versus unionised isn't just naming, it drives absorption.",
+      "callout": "HA crosses membranes; A minus dissolves in water.",
+      "durationInFrames": 990,
+      "caption": "A weak acid drug sits in equilibrium: HA unionised, A minus ionised.",
+      "voiceover": {
+        "text": "Let's build the chemistry. Many drug molecules are not locked into a single form in the body. Instead, they sit in equilibrium between a protonated form and a deprotonated form, and the surrounding pH shifts that balance. Take a weak acid. It can exist as H-A, the neutral acid, or as A minus, its conjugate base. The equilibrium is H-A in balance with hydrogen ion plus A minus. The crucial point is that these two forms differ in charge. The unionised form, H-A, is less polar, so it crosses lipid membranes more easily. The ionised form, A minus, is more polar, so it's more soluble in water but worse at crossing membranes. So in drug chemistry, ionised versus unionised is not just a naming detail, it directly controls solubility, membrane permeability, and where the drug ends up."
+      }
+    },
+    {
+      "id": "concept-hh",
+      "type": "concept",
+      "heading": "Henderson-Hasselbalch",
+      "body": "This equation links pH, pKa, and the ratio of ionised to unionised forms for a weak acid.",
+      "bullets": [
+        {"text": "pH equals pKa plus log of the ratio A minus over HA."},
+        {"text": "If pH is below pKa, HA, the unionised form, is favoured."},
+        {"text": "If pH is above pKa, A minus, the ionised form, is favoured."}
+      ],
+      "secondary": "When pH equals pKa, the ratio is exactly one to one. And watch the direction: higher pH favours deprotonation, the ionised form, not more protonation.",
+      "callout": "pH below pKa means unionised; pH above pKa means ionised.",
+      "durationInFrames": 1020,
+      "caption": "pH = pKa + log([A minus]/[HA]); pH below pKa favours unionised HA.",
+      "voiceover": {
+        "text": "Now the key equation, Henderson-Hasselbalch. It links the pH, the pKa, and the ratio of the two forms for a weak acid. The equation is, pH equals pKa plus the log of the ratio of A minus over H-A. You can use it as a full calculation, but there's also a fast rule that prevents most errors. If the pH is below the pKa, then H-A, the unionised acid form, is favoured. If the pH is above the pKa, then A minus, the ionised form, is favoured. And when the pH exactly equals the pKa, the ratio is one to one, equal amounts of each. Now hold onto the direction, because this is where people slip. For a weak acid, a higher pH favours losing the proton, so it favours the ionised form A minus. Higher pH does not mean more protonation. It means more deprotonation."
+      }
+    },
+    {
+      "id": "concept-aspirin",
+      "type": "concept",
+      "heading": "Aspirin in the stomach and intestine",
+      "body": "Same molecule, two environments, two behaviours. Aspirin's pKa is 3.5.",
+      "diagram": {
+        "type": "table",
+        "headers": ["Location", "pH", "Form favoured"],
+        "rows": [
+          ["Stomach", "1 to 2", "Mostly HA, unionised"],
+          ["Small intestine", "6 to 7", "Mostly A minus, ionised"]
+        ],
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Stomach pH 1 to 2 is below pKa, so mostly unionised HA."},
+        {"text": "Unionised HA crosses lipid membranes more easily."},
+        {"text": "Intestine pH 6 to 7 is above pKa, so mostly ionised A minus."}
+      ],
+      "secondary": "The intestinal form is more water-soluble but less membrane-permeable. The key principle is simple: the unionised form crosses lipid membranes more readily.",
+      "callout": "Below pKa in the stomach, above pKa in the intestine.",
+      "durationInFrames": 1020,
+      "caption": "Aspirin: unionised in the stomach, ionised in the small intestine.",
+      "voiceover": {
+        "text": "Let's apply that to aspirin, because its behaviour changes strongly between the stomach and the small intestine. Aspirin's pKa is three point five. In the stomach, at around pH one to two, the pH is below the pKa, so aspirin exists mostly as the unionised weak acid, H-A. And the unionised form crosses lipid membranes more easily, so it's well absorbed there. In the small intestine, at around pH six to seven, the pH is now above the pKa, so aspirin flips to mostly the ionised form, A minus. That form is more water-soluble but less membrane-permeable. This doesn't mean the stomach is the only absorption site, but it shows the key principle in action, the unionised form crosses lipid membranes more readily, and pH relative to pKa decides which form dominates."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Henderson-Hasselbalch for aspirin",
+      "question": "Aspirin is a weak acid with pKa 3.5. In the stomach at pH 1.5, find the ratio of ionised to unionised aspirin, [A minus] over [HA].",
+      "coachNote": "Substitute into pH = pKa + log([A minus]/[HA]) and solve for the ratio.",
+      "steps": [
+        "pH = pKa + log([A minus]/[HA])",
+        "1.5 = 3.5 + log([A minus]/[HA])",
+        "log([A minus]/[HA]) = 1.5 - 3.5 = -2.0",
+        "[A minus]/[HA] = 10 to the power -2.0 = 0.01",
+        "Answer: ratio is 0.01 to 1, so aspirin is mostly unionised in the stomach."
+      ],
+      "durationInFrames": 1290,
+      "caption": "1.5 = 3.5 + log(ratio), so ratio = 10^-2 = 0.01, mostly unionised.",
+      "voiceover": {
+        "text": "Let's run the calculation. Aspirin is a weak acid with pKa three point five. In the stomach at pH one point five, find the ratio of ionised to unionised aspirin. Step one, write Henderson-Hasselbalch, pH equals pKa plus the log of A minus over H-A. Step two, substitute, one point five equals three point five plus the log of the ratio. Step three, rearrange, the log of the ratio equals one point five minus three point five, which is minus two point zero. Step four, undo the log, the ratio equals ten to the minus two, which is nought point zero one. So step five, the answer, the ratio of ionised to unionised is nought point zero one to one. That means only one ionised molecule for every hundred unionised ones, so aspirin is overwhelmingly unionised in the stomach, exactly as the fast rule predicted, since pH is below pKa."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Unionised form: the uncharged, lipid-soluble form that crosses membranes."},
+        {"text": "Ionised form: the charged form, more water-soluble, poor at crossing membranes."},
+        {"text": "Salt form: an ionic version, e.g. morphine sulfate, chosen to improve solubility."},
+        {"text": "Bioavailability: how much active drug reaches circulation, set by solubility and permeability."}
+      ],
+      "callout": "Salt forms fix solubility, not membrane crossing.",
+      "durationInFrames": 960,
+      "caption": "Unionised form, ionised form, salt form, and bioavailability.",
+      "voiceover": {
+        "text": "Quick vocabulary, because these terms get mixed up. The unionised form is the uncharged, lipid-soluble form of a drug, the one that crosses biological membranes more readily. The ionised form is the charged form, more water-soluble but poor at crossing lipid membranes. A salt form is an ionic version of the drug, like morphine sulfate or lignocaine hydrochloride, and it's chosen to improve aqueous solubility and make formulation easier. And bioavailability is how much active drug actually reaches circulation, which depends on both solubility and membrane permeability. Hold onto one distinction especially, salt forms are chosen to fix solubility, not to improve membrane crossing, because membrane crossing still depends on the unionised form."
+      }
+    },
+    {
+      "id": "concept-salts",
+      "type": "concept",
+      "heading": "Salt forms and ranking acid strength",
+      "body": "Aspirin's free acid dissolves at about 3 grams per litre. Its sodium salt dissolves at over 500. That's a 160-fold jump, purely a solubility fix.",
+      "bullets": [
+        {"text": "Salt forms like morphine sulfate boost aqueous solubility and formulation."},
+        {"text": "They do not primarily improve membrane crossing, that needs the unionised form."},
+        {"text": "Acid strength: higher Ka means stronger; lower pKa means stronger."}
+      ],
+      "secondary": "pKa and Ka move in opposite directions, since pKa is minus log Ka. A fast-dissolving salt tablet helps acute pain without changing what the drug does.",
+      "callout": "Lower pKa, stronger acid. Higher Ka, stronger acid.",
+      "durationInFrames": 1020,
+      "caption": "Salt forms fix solubility; lower pKa and higher Ka both mean a stronger acid.",
+      "voiceover": {
+        "text": "Two practical ideas to finish the chemistry. First, salt forms. Aspirin's free acid dissolves at only about three grams per litre, but its sodium salt dissolves at over five hundred. That's a hundred-and-sixty-fold jump in solubility, and it lets you formulate a fast-dissolving or effervescent tablet for acute pain. Salt forms like morphine sulfate are chosen exactly for that, to boost aqueous solubility and ease formulation, not to improve membrane crossing, which still depends on the unionised form. Second, ranking acid strength. A larger Ka means a stronger acid, and a smaller pKa means a stronger acid. The two move in opposite directions, because pKa is the negative log of Ka. So if you're handed pKa values, the lowest pKa is the strongest acid, every time."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The trap that costs Band 6",
+      "body": "The classic error: if pH is higher, the molecule must become more protonated.",
+      "secondary": "For a weak acid, the opposite happens. Higher pH favours loss of H+, so it favours the ionised form A minus. A second trap: thinking a salt form is chosen to cross membranes better, when it's actually for solubility.",
+      "mistakeTag": "Where acid-base drug marks vanish",
+      "callout": "Higher pH deprotonates a weak acid. Don't reverse it.",
+      "durationInFrames": 900,
+      "caption": "Higher pH deprotonates a weak acid; salt forms are for solubility, not membranes.",
+      "voiceover": {
+        "text": "Now the trap that costs the top band. Students often reason that if the pH is higher, the molecule must become more protonated. For a weak acid, that's backwards. A higher pH means fewer hydrogen ions around, so the equilibrium shifts toward losing the proton, and that favours the ionised form, A minus. Higher pH deprotonates a weak acid, it does not protonate it, so be careful which way you push the equilibrium. There's a second trap right next to it. Students sometimes say a salt form is chosen because it crosses membranes better. It isn't. Salt forms are chosen to improve solubility and formulation, while membrane crossing depends on the unionised form. Keep those two straight and you protect a lot of marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Three drugs have pKa values of 2.1, 4.8, and 6.2. Rank them from strongest to weakest acid, and explain the rule.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Rule: lower pKa means a stronger acid, since pKa = -log Ka.",
+        "Compare: 2.1 is lowest, then 4.8, then 6.2.",
+        "Strongest to weakest: pKa 2.1, then 4.8, then 6.2.",
+        "The pKa 2.1 drug dissociates most extensively.",
+        "Answer: pKa 2.1 > pKa 4.8 > pKa 6.2 in acid strength."
+      ],
+      "durationInFrames": 960,
+      "caption": "Lower pKa means stronger acid: 2.1 > 4.8 > 6.2.",
+      "voiceover": {
+        "text": "Quick check, ranking acid strength. Three drugs have pKa values of two point one, four point eight, and six point two. Rank them from strongest to weakest acid, and explain the rule. Pause and work it through. Right, let's check it. Step one, the rule, a lower pKa means a stronger acid, because pKa is the negative log of Ka. Step two, compare the values, two point one is the lowest, then four point eight, then six point two. Step three, so strongest to weakest is pKa two point one, then four point eight, then six point two. Step four, the drug with pKa two point one dissociates the most extensively, which is what stronger acid means. So the answer, two point one beats four point eight beats six point two. Lower pKa, stronger acid, every time."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Weak-acid drugs sit in equilibrium: HA unionised, A minus ionised.",
+        "Henderson-Hasselbalch: pH = pKa + log([A minus]/[HA]).",
+        "pH below pKa favours HA; pH above pKa favours A minus.",
+        "The unionised form crosses lipid membranes more readily.",
+        "Salt forms fix solubility; lower pKa means a stronger acid."
+      ],
+      "finalPrompt": "Weak-acid drug? Compare pH to pKa before reaching for the calculator.",
+      "durationInFrames": 1020,
+      "caption": "Five takeaways: two forms, the equation, the rule, membranes, salts.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, weak-acid drugs sit in equilibrium between the unionised form H-A and the ionised form A minus. Second, the Henderson-Hasselbalch equation, pH equals pKa plus the log of A minus over H-A. Third, the fast rule, pH below pKa favours the unionised form, and pH above pKa favours the ionised form. Fourth, the unionised form crosses lipid membranes more readily, which is why aspirin is absorbed well in the acidic stomach. And fifth, salt forms are chosen to fix solubility, and a lower pKa always means a stronger acid. When you meet a weak-acid drug, compare the pH to the pKa first, before you even reach for the calculator. Next lesson, chirality and the thalidomide tragedy. See you there."
+      }
+    }
+  ]
+}

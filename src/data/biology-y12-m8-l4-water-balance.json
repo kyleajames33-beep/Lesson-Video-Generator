@@ -1,0 +1,258 @@
+{
+  "title": "Water Balance",
+  "subtitle": "ADH, aldosterone and the kidney",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "investigate the various mechanisms used by organisms to maintain their internal environment within tolerance limits, including the regulation of body water and blood osmolarity (ACSBL101, ACSBL110, ACSBL111)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How is an organism's internal environment maintained in response to a changing external environment?",
+  "lessonIntent": "Students can describe the ADH and aldosterone pathways and explain how the kidney acts as the effector for water and salt balance.",
+  "examSkill": "Distinguish the ADH and aldosterone pathways by stimulus, site of action, and what is reabsorbed, and trace the dehydration response in full.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, water balance. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Water Balance (Year 12 Biology, Module 8, Lesson 4)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Urine output cut to a trickle",
+      "body": "Soldiers losing nearly two litres of water an hour dropped their urine output sixfold to conserve it. There is a limit to even that.",
+      "callout": "The kidney can defend you, but only so far.",
+      "image": "bioM8L4DesertHydration",
+      "durationInFrames": 2130,
+      "caption": "In 50 degree heat, soldiers' ADH quadrupled and urine output fell from 60 to 10 mL/h.",
+      "voiceover": {
+        "text": "In 2003, army researchers studied soldiers during the first Iraq summer, in fifty degree heat. Those soldiers were losing between one and a half and two litres of water every hour through sweat. In response, their bodies released a hormone called A D H, and its level shot up four-fold. The effect on the kidneys was dramatic, urine output fell from about sixty millilitres an hour all the way down to ten, the kidney clamping down hard to hold on to every drop of water. And yet, despite that maximal effort, around half of the heat casualties that summer still came from dehydration, because the water loss simply outran what the system could conserve. So today we open up that defence, what A D H actually does, the second hormone aldosterone, and how the kidney works as the effector for water balance, along with where its limits lie."
+      }
+    },
+    {
+      "id": "concept-nephron",
+      "type": "concept",
+      "heading": "The kidney is the effector",
+      "body": "Each kidney holds about a million nephrons. They filter the blood, then reabsorb water and salts back into it under hormonal control.",
+      "bullets": [
+        {
+          "text": "The nephron is the kidney's functional unit, where filtration and reabsorption happen."
+        },
+        {
+          "text": "ADH acts on the collecting duct, controlling how much water is reabsorbed."
+        },
+        {
+          "text": "Aldosterone acts on the distal tubule, controlling how much sodium is reabsorbed."
+        }
+      ],
+      "secondary": "Reabsorption means reclaiming water and solutes from the filtrate back into the blood, the opposite of letting them leave as urine.",
+      "callout": "ADH to the collecting duct. Aldosterone to the distal tubule.",
+      "durationInFrames": 2250,
+      "caption": "Nephrons filter and reabsorb; ADH targets the collecting duct, aldosterone the distal tubule.",
+      "voiceover": {
+        "text": "So let's set up the effector first, the kidney. Each kidney contains about a million tiny units called nephrons, and the nephron is where all the action happens. Blood is filtered into the nephron, and then water and useful solutes are selectively reabsorbed back into the blood, while waste stays behind to become urine. That word reabsorption is important, it means reclaiming water and solutes from the filtrate back into the blood, the opposite of letting them leave the body. Now, two hormones fine-tune this reabsorption, and they act at two different sites, which the exam loves to test. A D H acts on the collecting duct, where it controls how much water is reabsorbed. Aldosterone acts on the distal tubule, where it controls how much sodium is reabsorbed. A D H to the collecting duct, aldosterone to the distal tubule, lock that pairing in now because we build on it for the rest of the lesson."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Osmoregulation: homeostatic control of blood osmolarity, the water and solute balance."
+        },
+        {
+          "text": "ADH: hormone from the posterior pituitary that increases water reabsorption in the collecting duct."
+        },
+        {
+          "text": "Aldosterone: adrenal hormone that increases sodium reabsorption in the distal tubule."
+        },
+        {
+          "text": "Osmoreceptor: cells in the hypothalamus that detect changes in blood osmolarity."
+        }
+      ],
+      "callout": "ADH controls water. Aldosterone controls sodium.",
+      "durationInFrames": 1905,
+      "caption": "Osmoregulation, ADH, aldosterone, osmoreceptor.",
+      "voiceover": {
+        "text": "Let's pin down the key terms. Osmoregulation is the homeostatic control of blood osmolarity, which just means the balance of water and dissolved solutes in the blood. A D H, antidiuretic hormone, is released from the posterior pituitary, and it increases water reabsorption in the collecting duct of the kidney. Aldosterone is released from the adrenal gland, and it increases sodium reabsorption in the distal tubule. Notice the clean division of labour, A D H controls water directly, aldosterone controls sodium. Finally, the osmoreceptors, these are specialised cells in the hypothalamus that detect changes in blood osmolarity, and they are the receptor that kicks off the A D H response. The name antidiuretic is a useful clue, anti-diuretic means against urination, so high A D H means less urine, more water kept in."
+      }
+    },
+    {
+      "id": "concept-adh",
+      "type": "concept",
+      "heading": "The ADH pathway",
+      "body": "When the blood becomes too concentrated, ADH makes the kidney reclaim water, producing small amounts of concentrated urine.",
+      "bullets": [
+        {
+          "text": "High osmolarity is detected by osmoreceptors in the hypothalamus."
+        },
+        {
+          "text": "The posterior pituitary releases ADH into the blood."
+        },
+        {
+          "text": "ADH inserts aquaporin channels into the collecting duct, so water is reabsorbed."
+        }
+      ],
+      "secondary": "High ADH gives concentrated, low-volume urine. Low ADH leaves the duct impermeable, giving dilute, high-volume urine.",
+      "callout": "More ADH, more aquaporins, more water saved.",
+      "durationInFrames": 2340,
+      "caption": "High osmolarity, osmoreceptors, ADH, aquaporins, water reabsorbed.",
+      "voiceover": {
+        "text": "Now let's walk the A D H pathway step by step, because it is the centrepiece of this lesson. It begins when blood osmolarity rises, meaning the blood has become too concentrated, perhaps from sweating or salty food or not drinking. Osmoreceptors in the hypothalamus detect that rise, that is the receptor. The hypothalamus then signals the posterior pituitary to release A D H into the blood. A D H travels to the kidney and acts on the collecting duct, where it does something clever, it inserts tiny water channels called aquaporins into the duct walls. With those channels in place, water is reabsorbed out of the filtrate and back into the blood. The result, blood osmolarity falls back to normal, and the urine that is produced is concentrated and small in volume. The reverse is just as testable, when A D H is low, the collecting duct stays impermeable, so water is not reclaimed and you produce large volumes of dilute urine."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "o",
+            "label": "High osmo"
+          },
+          {
+            "id": "r",
+            "label": "Osmo-receptor"
+          },
+          {
+            "id": "p",
+            "label": "ADH"
+          },
+          {
+            "id": "d",
+            "label": "Collect. duct"
+          },
+          {
+            "id": "w",
+            "label": "Water saved"
+          }
+        ],
+        "edges": [
+          {
+            "from": "o",
+            "to": "r"
+          },
+          {
+            "from": "r",
+            "to": "p"
+          },
+          {
+            "from": "p",
+            "to": "d"
+          },
+          {
+            "from": "d",
+            "to": "w"
+          }
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Trace the dehydration response",
+      "question": "A person becomes dehydrated on a hot day. Describe the homeostatic pathway that restores blood osmolarity, naming all five components and stating where the hormone acts and how.",
+      "coachNote": "Build the loop in order, and be specific about the site of action.",
+      "steps": [
+        "Stimulus: blood osmolarity rises above the tolerance range (blood too concentrated).",
+        "Receptor: osmoreceptors in the hypothalamus detect the rise.",
+        "Control centre: the hypothalamus signals the posterior pituitary to release ADH.",
+        "Effector and response: ADH inserts aquaporins in the collecting duct, water is reabsorbed, osmolarity falls back to normal.",
+        "This is negative feedback because the response opposes the rise in osmolarity ✓"
+      ],
+      "durationInFrames": 2055,
+      "caption": "Dehydration: osmoreceptors, ADH, collecting duct aquaporins, water reabsorbed.",
+      "voiceover": {
+        "text": "Let's trace the dehydration response in full, the classic five-mark pathway question. Start with the stimulus, on a hot day water is lost, so blood osmolarity rises above the tolerance range, the blood is too concentrated. The receptor comes next, osmoreceptors in the hypothalamus detect that rise. Then the control centre, the hypothalamus, which signals the posterior pituitary to release A D H. Now the effector and the response, and here you must be specific, A D H acts on the collecting duct, inserting aquaporin channels so that water is reabsorbed back into the blood, and blood osmolarity falls back toward normal. Finish by naming and justifying the feedback type, this is negative feedback, because the response, lowering osmolarity, opposes the original stimulus, which was osmolarity rising. The mark difference here is precision, name the collecting duct, name aquaporins, and say water follows."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "ADH versus aldosterone",
+      "question": "Compare the ADH and aldosterone pathways. For each, give the main stimulus, the site of action in the kidney, and what is directly reabsorbed.",
+      "coachNote": "Keep the two hormones in separate columns; do not let them blur.",
+      "steps": [
+        "ADH stimulus: high blood osmolarity. Aldosterone stimulus: low blood pressure or volume.",
+        "ADH site: the collecting duct. Aldosterone site: the distal tubule.",
+        "ADH directly reabsorbs water (via aquaporins). Aldosterone directly reabsorbs sodium.",
+        "For aldosterone, water then follows the sodium passively by osmosis, raising blood volume and pressure.",
+        "Answer: ADH = osmolarity, collecting duct, water; aldosterone = pressure, distal tubule, sodium ✓"
+      ],
+      "durationInFrames": 2025,
+      "caption": "ADH: osmolarity, collecting duct, water. Aldosterone: pressure, distal tubule, sodium.",
+      "voiceover": {
+        "text": "Now let's put the two hormones side by side, because keeping them apart is worth a lot of marks. Start with the stimulus each responds to. A D H responds to high blood osmolarity, the blood being too concentrated. Aldosterone responds to something different, low blood pressure or low blood volume. Next, the site of action. A D H acts on the collecting duct, aldosterone acts on the distal tubule. Then, crucially, what each one directly reabsorbs. A D H directly reabsorbs water, by inserting aquaporins. Aldosterone directly reabsorbs sodium, not water. And this is the subtlety examiners hunt for, with aldosterone, water then follows the sodium passively by osmosis, which raises blood volume and pressure. So you must say sodium first, then water follows. To summarise, A D H is osmolarity, collecting duct, water. Aldosterone is pressure, distal tubule, sodium."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: writing that ADH acts on the distal tubule. ADH acts on the collecting duct; it is aldosterone that acts on the distal tubule.",
+      "secondary": "Trap 2: saying aldosterone directly reabsorbs water. It reabsorbs sodium, and water then follows by osmosis. Trap 3: saying ADH is released straight from the hypothalamus. It is made in the hypothalamus but stored and released by the posterior pituitary.",
+      "mistakeTag": "Where water-balance marks vanish",
+      "callout": "ADH to collecting duct. Aldosterone moves sodium first. ADH released from the pituitary.",
+      "durationInFrames": 2175,
+      "caption": "ADH to collecting duct; aldosterone moves sodium first; ADH released from the pituitary.",
+      "voiceover": {
+        "text": "Three traps, and these are the most consistently confused points in the whole module. Trap one, writing that A D H acts on the distal tubule. It does not. A D H acts on the collecting duct, and it is aldosterone that acts on the distal tubule. The letters deliberately do not match, so you have to memorise the pairing rather than guess it. Trap two, saying that aldosterone directly causes water reabsorption. It does not act on water at all, aldosterone reabsorbs sodium in the distal tubule, and water then follows that sodium passively by osmosis. Always state the mechanism in order, sodium first, then water follows. Trap three, saying A D H is released straight from the hypothalamus. Be precise, A D H is synthesised in the hypothalamus, but it is stored in and released from the posterior pituitary gland. Separate the site of synthesis from the site of release."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A person drinks two litres of water quickly, so blood osmolarity falls below normal. What happens to ADH secretion, the collecting duct, and the urine produced?",
+      "pausePrompt": "Pause and run the low-osmolarity case.",
+      "answerSteps": [
+        "Stimulus: blood osmolarity falls below the tolerance range (blood too dilute).",
+        "Osmoreceptors detect the fall, so ADH secretion decreases.",
+        "With little ADH, the collecting duct stays impermeable and few aquaporins are inserted.",
+        "Less water is reabsorbed, so a large volume of dilute urine is produced, raising osmolarity back to normal.",
+        "Answer: ADH falls, collecting duct stays impermeable, dilute high-volume urine ✓"
+      ],
+      "durationInFrames": 2085,
+      "caption": "Overhydration: ADH falls, duct impermeable, dilute high-volume urine.",
+      "voiceover": {
+        "text": "Quick check, and this time we run the loop in the opposite direction. A person drinks two litres of water quickly, so blood osmolarity falls below normal, the blood is now too dilute. What happens to A D H secretion, the collecting duct, and the urine produced? Pause and reason it through. Right, let's check it. The stimulus is falling osmolarity. The osmoreceptors detect that the blood is too dilute, so A D H secretion decreases. With very little A D H around, the collecting duct stays impermeable, few aquaporins are inserted. That means less water is reabsorbed, so the person produces a large volume of dilute urine, dumping the excess water and raising osmolarity back toward normal. So the answer, A D H falls, the collecting duct stays impermeable, and you get dilute, high-volume urine. Same negative feedback loop, simply running the other way."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Osmoreceptors in the hypothalamus detect blood osmolarity; the kidney is the effector.",
+        "ADH acts on the collecting duct to reabsorb water, giving concentrated urine.",
+        "Aldosterone acts on the distal tubule to reabsorb sodium, and water follows by osmosis.",
+        "ADH responds to osmolarity; aldosterone responds to blood pressure.",
+        "High ADH means small concentrated urine; low ADH means large dilute urine."
+      ],
+      "finalPrompt": "Which hormone? ADH for concentration and water; aldosterone for pressure and sodium.",
+      "durationInFrames": 1800,
+      "caption": "Five takeaways: the receptor, the two hormones, their sites, and what each reabsorbs.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, osmoreceptors in the hypothalamus detect blood osmolarity, and the kidney is the effector that does something about it. Second, A D H acts on the collecting duct to reabsorb water, producing concentrated urine. Third, aldosterone acts on the distal tubule to reabsorb sodium, and water then follows that sodium by osmosis. Fourth, the two triggers differ, A D H responds to osmolarity, aldosterone responds to blood pressure. And fifth, the quick check, high A D H means small concentrated urine, low A D H means large dilute urine. Whenever you are asked which hormone, ask what is being corrected, A D H for concentration and water, aldosterone for pressure and sodium. See you next lesson."
+      }
+    }
+  ]
+}

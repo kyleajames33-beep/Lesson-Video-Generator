@@ -1,0 +1,190 @@
+{
+  "title": "Gravimetric Analysis",
+  "subtitle": "Measuring an unknown by weighing a solid",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 9",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "conduct gravimetric analysis to determine the percentage by mass of an element or compound in a sample"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-9", "CH11/12-4", "CH11/12-6"],
+  "inquiryQuestion": "What happens in chemical reactions?",
+  "lessonIntent": "Students can use the mass of a pure precipitate and a mole ratio to calculate the amount or concentration of a target ion in a sample.",
+  "examSkill": "Convert precipitate mass to moles, apply the precipitate-to-analyte mole ratio, then find the analyte mass or concentration.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, gravimetric analysis, measuring an unknown by weighing a solid. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Gravimetric Analysis (Year 11 Chemistry, Module 2, Lesson 9)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "How do you weigh something dissolved?",
+      "body": "A mine needs the exact gold in a tonne of ore. A plant needs sulfate down to 0.1 mg.",
+      "callout": "Turn the invisible into a solid you can weigh.",
+      "durationInFrames": 690,
+      "caption": "Gravimetric analysis turns a dissolved ion into a weighable solid.",
+      "voiceover": {
+        "text": "OK, here's a problem. A gold mining company needs to know how much gold is in a tonne of ore, not roughly, exactly. A water treatment plant needs to measure sulfate contamination down to a tenth of a milligram. But the thing you're measuring is dissolved and invisible. So how do you weigh it? The answer is clever. You force the dissolved ion to clump together into a pure solid, filter it out, dry it, and weigh that. Then you work backwards. It's called gravimetric analysis, and it's one of the most precise techniques in chemistry."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "The big idea",
+      "body": "You convert the target ion into a pure insoluble solid of known formula, then weigh it and work back.",
+      "image": "l9GravimetricFlow",
+      "bullets": [
+        {"text": "Add an excess precipitating agent so every target ion reacts."},
+        {"text": "Filter, wash, and dry the solid until its mass is constant."},
+        {"text": "Use the mole ratio to convert precipitate moles back to the analyte."}
+      ],
+      "secondary": "The precipitate has a known formula, so its mass tells you its moles, and the mole ratio tells you the original amount.",
+      "callout": "Weigh the solid, then walk the mole ratio backwards.",
+      "durationInFrames": 1110,
+      "caption": "Precipitate the ion, weigh the solid, use the mole ratio to find the original amount.",
+      "voiceover": {
+        "text": "Here's the big idea. You take the dissolved ion you care about and turn it into a pure, insoluble solid with a known formula. Three moves. First, add a precipitating agent in excess, so every last target ion gets captured into the solid. Excess matters, because you need complete precipitation. Second, filter the solid out, wash it, and dry it until its mass stops changing. Third, and this is the chemistry, use the mole ratio from the reaction to convert the moles of precipitate back into the moles of your original ion. Because the precipitate has a known formula, weighing it tells you its moles, and the mole ratio tells you how much of the target ion you started with."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Precipitating agent: the reagent added in excess to capture the target ion."},
+        {"text": "Filtration: separating the solid precipitate from the liquid."},
+        {"text": "Ignition: heating the solid to constant mass, driving off water."},
+        {"text": "Mole ratio: links moles of precipitate to moles of the analyte."}
+      ],
+      "callout": "Excess agent + drying to constant mass = a trustworthy weight.",
+      "durationInFrames": 960,
+      "caption": "Precipitating agent, filtration, ignition, and the mole ratio.",
+      "voiceover": {
+        "text": "Quick vocabulary. The precipitating agent is the reagent you add in excess to make sure every target ion drops out of solution as a solid. Filtration is separating that solid from the liquid, and for accurate work you use ashless filter paper so it doesn't add mass. Ignition means heating the precipitate in a crucible until its mass stops changing, which drives off any trapped water and leaves a stable, known compound. And the mole ratio is the link from moles of precipitate back to moles of the ion you actually wanted. Those four ideas are the whole method."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The pathway",
+      "body": "No new formula. You chain mass to moles, mole ratio, then moles to mass or concentration.",
+      "bullets": [
+        {"text": "Precipitate mass → moles, using n = m ÷ M of the precipitate."},
+        {"text": "Apply the mole ratio: precipitate moles to analyte moles."},
+        {"text": "Analyte moles → mass or concentration as the question asks."}
+      ],
+      "secondary": "Use the molar mass of the precipitate to get its moles, not the molar mass of the analyte.",
+      "callout": "Right molar mass, right mole ratio, right direction.",
+      "durationInFrames": 1020,
+      "caption": "Mass → moles (precipitate) → mole ratio → analyte amount.",
+      "voiceover": {
+        "text": "Good news, no new formula. You're chaining the tools you already have. Start with the mass of the dried precipitate, and convert it to moles using n equals m over capital M, where capital M is the molar mass of the precipitate. Then apply the mole ratio from the balanced reaction to turn moles of precipitate into moles of the ion you wanted. Finally, convert those moles to whatever the question asks, a mass or a concentration. One warning that costs marks. When you find moles of the precipitate, use the molar mass of the precipitate, not the molar mass of the analyte. Mixing those two up is the classic error here."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Sulfate in water",
+      "question": "250 mL of water is treated with excess BaCl₂. The dried BaSO₄ weighs 0.4660 g. Find c(SO₄²⁻). (Ba 137.33, S 32.06, O 15.999)",
+      "coachNote": "BaSO₄ to SO₄²⁻ is a 1:1 mole ratio.",
+      "steps": [
+        "M(BaSO₄) = 137.33 + 32.06 + 4(15.999) = 233.39 g mol⁻¹",
+        "n(BaSO₄) = 0.4660 ÷ 233.39 = 1.997 × 10⁻³ mol",
+        "Mole ratio BaSO₄ : SO₄²⁻ = 1 : 1, so n(SO₄²⁻) = 1.997 × 10⁻³ mol",
+        "V = 250 ÷ 1000 = 0.250 L",
+        "c = n ÷ V = 1.997 × 10⁻³ ÷ 0.250 = 7.99 × 10⁻³ mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1470,
+      "caption": "0.4660 g BaSO₄ gives 7.99 × 10⁻³ mol L⁻¹ sulfate.",
+      "voiceover": {
+        "text": "Let's do one. A two hundred and fifty millilitre water sample is treated with excess barium chloride, which precipitates all the sulfate as barium sulfate. The dried precipitate weighs nought-point-four-six-six grams. Find the concentration of sulfate. Step one, molar mass of barium sulfate, the precipitate. Barium, sulfur, and four oxygens, which is two hundred and thirty-three-point-three-nine grams per mole. Step two, moles of precipitate. Nought-point-four-six-six over two hundred and thirty-three-point-three-nine is one-point-nine-nine-seven times ten to the minus three moles. Step three, the mole ratio. Each barium sulfate came from one sulfate ion, so the ratio is one to one, and the moles of sulfate are the same. Step four, convert the volume, nought-point-two-five litres. Step five, concentration equals moles over volume, which gives seven-point-nine-nine times ten to the minus three moles per litre. Notice we used the molar mass of the precipitate, not the sulfate, to get the moles."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Chloride in bore water",
+      "question": "500 mL of bore water + excess AgNO₃ gives 1.435 g AgCl. Find the mass of Cl⁻ and its concentration in mg L⁻¹. (Ag 107.87, Cl 35.453)",
+      "coachNote": "AgCl to Cl⁻ is 1:1. Watch the unit at the end.",
+      "steps": [
+        "M(AgCl) = 107.87 + 35.453 = 143.32 g mol⁻¹",
+        "n(AgCl) = 1.435 ÷ 143.32 = 0.01001 mol",
+        "Ratio AgCl : Cl⁻ = 1 : 1, so n(Cl⁻) = 0.01001 mol",
+        "mass Cl⁻ = 0.01001 × 35.453 = 0.3550 g = 355.0 mg",
+        "c = 355.0 mg ÷ 0.500 L = 710 mg L⁻¹ ✓"
+      ],
+      "durationInFrames": 1470,
+      "caption": "1.435 g AgCl gives 355.0 mg Cl⁻, or 710 mg L⁻¹.",
+      "voiceover": {
+        "text": "Another one, with a twist at the end. Five hundred millilitres of bore water is treated with excess silver nitrate, and the dried silver chloride weighs one-point-four-three-five grams. Find the mass of chloride, and its concentration in milligrams per litre. Step one, molar mass of silver chloride, the precipitate. Silver plus chlorine, one hundred and forty-three-point-three-two grams per mole. Step two, moles of precipitate. One-point-four-three-five over one hundred and forty-three-point-three-two is nought-point-zero-one-zero-zero-one moles. Step three, the ratio of silver chloride to chloride is one to one, so the chloride moles match. Step four, mass of chloride. Multiply by the molar mass of chlorine, thirty-five-point-four-five, which gives nought-point-three-five-five grams, or three hundred and fifty-five milligrams. Step five, concentration. Three hundred and fifty-five milligrams over nought-point-five litres is seven hundred and ten milligrams per litre. The question asked for milligrams per litre, so we kept the mass in milligrams. Always read the unit it wants."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: using the molar mass of the analyte when you mean the precipitate. Get the moles of what you weighed.",
+      "secondary": "Trap 2: forgetting the mole ratio step and assuming precipitate moles equal analyte moles without checking. Trap 3: not drying to constant mass, so trapped water inflates the weight.",
+      "mistakeTag": "Where gravimetric marks vanish",
+      "callout": "Right molar mass, check the ratio, weigh it dry.",
+      "durationInFrames": 1230,
+      "caption": "Use the precipitate's molar mass, check the mole ratio, dry to constant mass.",
+      "voiceover": {
+        "text": "Three traps. Trap one, using the molar mass of the analyte when you should use the molar mass of the precipitate. You weighed the precipitate, so its molar mass gives you its moles. Get that backwards and everything downstream is wrong. Trap two, forgetting the mole ratio step. A lot of precipitates do work out one to one, but never assume it. Check the balanced reaction, because if the ratio isn't one to one, skipping it gives a wrong answer. Trap three, a practical one. If you don't dry the precipitate to constant mass, leftover water adds weight, and your result comes out too high. Right molar mass, check the ratio, weigh it bone dry."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A sample gives 2.330 g of dried BaSO₄. How many moles of sulfate did it contain? (Ba 137.33, S 32.06, O 15.999)",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "M(BaSO₄) = 137.33 + 32.06 + 4(15.999) = 233.39 g mol⁻¹",
+        "n(BaSO₄) = 2.330 ÷ 233.39 = 0.009983 mol",
+        "Ratio BaSO₄ : SO₄²⁻ = 1 : 1",
+        "n(SO₄²⁻) = 0.009983 mol",
+        "Answer: 9.98 × 10⁻³ mol of sulfate ✓"
+      ],
+      "durationInFrames": 1170,
+      "caption": "2.330 g BaSO₄ ÷ 233.39 = 9.98 × 10⁻³ mol sulfate (1:1 ratio).",
+      "voiceover": {
+        "text": "Quick check. A sample gives two-point-three-three-zero grams of dried barium sulfate. How many moles of sulfate did it contain? Pause and work it through. Right, let's check it. Step one, molar mass of barium sulfate, the precipitate, two hundred and thirty-three-point-three-nine grams per mole. Step two, moles of precipitate. Two-point-three-three over two hundred and thirty-three-point-three-nine is nought-point-zero-zero-nine-nine-eight-three moles. Step three, the mole ratio of barium sulfate to sulfate is one to one. So the sulfate is nine-point-nine-eight times ten to the minus three moles. Precipitate molar mass first, then the ratio. Same method every time."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Gravimetric analysis turns a dissolved ion into a weighable pure solid.",
+        "Add the precipitating agent in excess for complete precipitation.",
+        "Convert precipitate mass to moles using the precipitate's molar mass.",
+        "Apply the mole ratio to find the analyte amount.",
+        "Dry to constant mass, or trapped water inflates the result."
+      ],
+      "finalPrompt": "Always: precipitate molar mass first, then the mole ratio.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: precipitate, excess agent, precipitate molar mass, mole ratio, dry.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, gravimetric analysis turns a dissolved, invisible ion into a pure solid you can weigh. Second, add the precipitating agent in excess so every target ion is captured. Third, convert the precipitate mass to moles using the precipitate's molar mass, not the analyte's. Fourth, apply the mole ratio from the reaction to find the amount of your target ion. And fifth, dry the solid to constant mass, or trapped water makes your answer too high. Precipitate molar mass, then mole ratio, every single time. See you next lesson."
+      }
+    }
+  ]
+}

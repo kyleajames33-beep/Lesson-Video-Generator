@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill} from 'remotion';
+import {AbsoluteFill, Series} from 'remotion';
 import {TransitionSeries, springTiming} from '@remotion/transitions';
 import {TitleSlide} from './slides/TitleSlide';
 import {HookSlide} from './slides/HookSlide';
@@ -12,10 +12,19 @@ import {QuickCheckSlide} from './slides/QuickCheckSlide';
 import {SummarySlide} from './slides/SummarySlide';
 import {MarginaliaSlide} from './slides/MarginaliaSlide';
 import {LabFootageSlide} from './slides/LabFootageSlide';
-import {CaptionBar} from './slides/shared/CaptionBar';
+import {EndCardSlide} from './slides/EndCardSlide';
+import {MnemonicSlide} from './slides/MnemonicSlide';
 import {SceneVoiceover} from './audio/SceneVoiceover';
+import {BackgroundMusic} from './audio/BackgroundMusic';
+import {IntroVoiceover} from './audio/IntroVoiceover';
+// BurnedCaptions intentionally unused for YouTube exports — see comment
+// inside the render where it would otherwise appear. Re-add for short-form.
+// import {BurnedCaptions} from './slides/shared/BurnedCaptions';
+import {IntroStinger} from './slides/shared/IntroStinger';
+import {LessonProgressBar} from './slides/shared/LessonProgressBar';
 import type {LessonData, SceneData} from './lesson/types';
-import {TRANSITION_FRAMES} from './lesson/timing';
+import {AccentContext, themeFor} from './styles/theme';
+import {TRANSITION_FRAMES, INTRO_STINGER_FRAMES} from './lesson/timing';
 import type {TransitionPresentation} from '@remotion/transitions';
 import {cinematicTransition, transitionKinds} from './transitions/cinematicTransitions';
 import {crashZoom} from './transitions/crashZoom';
@@ -53,6 +62,10 @@ const renderSlide = (scene: SceneData, lesson: LessonData, sceneIndex: number, t
       return <MarginaliaSlide scene={scene} lesson={lesson} sceneIndex={sceneIndex} totalScenes={totalScenes} />;
     case 'labFootage':
       return <LabFootageSlide scene={scene} lesson={lesson} sceneIndex={sceneIndex} totalScenes={totalScenes} />;
+    case 'endCard':
+      return <EndCardSlide scene={scene} lesson={lesson} sceneIndex={sceneIndex} totalScenes={totalScenes} />;
+    case 'mnemonic':
+      return <MnemonicSlide scene={scene} lesson={lesson} sceneIndex={sceneIndex} totalScenes={totalScenes} />;
     default:
       return null;
   }
@@ -62,6 +75,13 @@ export const LessonVideo = ({lesson}: LessonVideoProps) => {
   const items: React.ReactNode[] = [];
 
   const TRANSITION_POOL_SIZE = transitionKinds.length + 1; // +1 for crashZoom slot
+
+  // Collect all "you should now be able to" objectives. They render once
+  // up-front in the intro stinger — pulling them out of per-scene
+  // overlays so the teaching slides aren't visually cluttered.
+  const objectives = lesson.scenes
+    .map((s) => s.confidenceCheck)
+    .filter((c): c is string => Boolean(c));
 
   lesson.scenes.forEach((scene, index) => {
     const sceneIndex = index + 1;
@@ -89,15 +109,50 @@ export const LessonVideo = ({lesson}: LessonVideoProps) => {
     items.push(
       <TransitionSeries.Sequence key={scene.id} durationInFrames={scene.durationInFrames}>
         {renderSlide(scene, lesson, sceneIndex, totalScenes)}
-        <CaptionBar text={scene.caption} />
+        {/* Burned-in captions intentionally NOT rendered — viewers toggle
+            them via YouTube's CC button instead, fed by the SRT in
+            out/captions/. This gives users the choice and unlocks
+            YouTube's auto-translate. The BurnedCaptions component
+            stays in the tree for short-form cuts where CC toggle isn't
+            available (TikTok / Reels / Shorts). */}
         <SceneVoiceover scene={scene} />
       </TransitionSeries.Sequence>
     );
   });
 
+  // Total raw lesson length (after transitions) for the second Series slot.
+  const lessonRawDuration = lesson.scenes.reduce((t, s) => t + s.durationInFrames, 0) - (lesson.scenes.length - 1) * TRANSITION_FRAMES;
+
   return (
     <AbsoluteFill className="video-shell">
-      <TransitionSeries>{items}</TransitionSeries>
+      <AccentContext.Provider value={themeFor(lesson.subject)}>
+      <Series>
+        <Series.Sequence durationInFrames={INTRO_STINGER_FRAMES}>
+          {/* Background music bed plays ONLY during the stinger — fills the
+              otherwise-silent opener without competing with narration during
+              the teaching scenes. No-op if lesson.backgroundMusic is unset. */}
+          <BackgroundMusic
+            src={lesson.backgroundMusic}
+            volume={lesson.backgroundMusicVolume}
+            playForFrames={INTRO_STINGER_FRAMES}
+          />
+          <IntroVoiceover src={lesson.introVoiceover?.audioFile} />
+          <IntroStinger
+            subjectLabel={lesson.subject}
+            yearLabel={lesson.yearLevel}
+            moduleLabel={lesson.module}
+            objectives={objectives}
+            nesaOutcomes={lesson.nesaOutcomes}
+            inquiryQuestion={lesson.inquiryQuestion}
+            syllabusDotPoints={lesson.syllabusDotPoints}
+          />
+        </Series.Sequence>
+        <Series.Sequence durationInFrames={lessonRawDuration}>
+          <TransitionSeries>{items}</TransitionSeries>
+          <LessonProgressBar totalFrames={lessonRawDuration} />
+        </Series.Sequence>
+      </Series>
+      </AccentContext.Provider>
     </AbsoluteFill>
   );
 };

@@ -1,0 +1,278 @@
+{
+  "title": "T Cells and Cell-Mediated Immunity",
+  "subtitle": "How losing one cell type can collapse the whole immune system",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 12",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "investigate and model the innate and adaptive immune systems in the human body (ACSBL119)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does the human immune system respond to exposure to a pathogen?",
+  "lessonIntent": "Students can distinguish cell-mediated from humoral immunity and explain how cytotoxic and helper T cells work, and why losing helper T cells collapses both arms of adaptive immunity.",
+  "examSkill": "Explain T cell roles and predict the consequences of losing CD4+ helper T cells, as in HIV.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, T cells and cell-mediated immunity. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "T Cells and Cell-Mediated Immunity (Year 12 Biology, Module 7, Lesson 12)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One cell, the whole system",
+      "body": "HIV destroys just one type of immune cell. Somehow, that brings the entire adaptive defence down.",
+      "callout": "Why does losing one cell type collapse the whole network?",
+      "image": "bioM7L12HivTHelper",
+      "durationInFrames": 1775,
+      "caption": "HIV targets CD4+ helper T cells, dismantling adaptive immunity.",
+      "voiceover": {
+        "text": "OK, picture this. On the fifth of June, nineteen eighty-one, the US Centers for Disease Control reported five cases of a strange pneumonia in previously healthy young men in Los Angeles. Within six months, two hundred and seventy people were sick and a hundred and twenty-one had died. The cause turned out to be HIV, and here is the chilling part. HIV attacks just one kind of immune cell, the CD four helper T cell. Knock out that single cell type, and the whole adaptive immune system starts to fall apart, both the antibody side and the killer side. In Lesson eleven you met the B cells and antibodies. Today we meet the T cells, and by the end you'll understand why losing one coordinator brings the entire defence network down."
+      }
+    },
+    {
+      "id": "concept-two-arms",
+      "type": "concept",
+      "heading": "Two arms of adaptive immunity",
+      "body": "Adaptive immunity splits into a humoral arm and a cell-mediated arm. Both are specific, both build memory.",
+      "bullets": [
+        {
+          "text": "Humoral immunity: B cells make antibodies that target pathogens outside cells. You met this in Lesson 11."
+        },
+        {
+          "text": "Cell-mediated immunity: T cells target the body's own cells once they are infected or abnormal."
+        },
+        {
+          "text": "Antibodies cannot reach a virus hiding inside a cell. Only the cell-mediated arm can deal with that."
+        }
+      ],
+      "secondary": "Both arms are triggered by antigen recognition and both leave memory behind, but they hit completely different targets.",
+      "callout": "Outside the cell, antibodies. Inside the cell, T cells.",
+      "durationInFrames": 1870,
+      "caption": "Humoral immunity targets extracellular pathogens; cell-mediated targets infected host cells.",
+      "voiceover": {
+        "text": "So adaptive immunity actually comes in two arms that do very different jobs. The first is humoral immunity, the one you studied last lesson. B cells produce antibodies, and those antibodies hunt down pathogens floating outside our cells, like bacteria and viruses drifting in the blood. The second arm is cell-mediated immunity, and this is today's focus. Here the T cells go after our own body cells, but only once they've been infected by a virus or turned cancerous. Why do we need this second arm? Because a virus that has slipped inside one of your cells is completely hidden from antibodies. They just can't reach it in there. The only way to deal with a virus hiding inside a cell is to find that infected cell and destroy it, and that is exactly what cell-mediated immunity does."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Humoral (L11)",
+          "Cell-mediated"
+        ],
+        "rows": [
+          [
+            "Main cell",
+            "B cells",
+            "T cells"
+          ],
+          [
+            "Weapon",
+            "Antibodies",
+            "Direct cell killing"
+          ],
+          [
+            "Target",
+            "Pathogens outside cells",
+            "Infected or abnormal host cells"
+          ],
+          [
+            "Memory?",
+            "Yes",
+            "Yes"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Cell-mediated immunity: adaptive immunity in which T cells target infected or abnormal host cells."
+        },
+        {
+          "text": "Helper T cell (CD4+): coordinates the whole immune response by releasing cytokines; does not kill directly."
+        },
+        {
+          "text": "Cytotoxic T cell (CD8+): kills infected, cancerous or foreign cells using perforin and granzymes."
+        },
+        {
+          "text": "MHC class I: a marker on every nucleated cell that displays internal peptides to cytotoxic T cells."
+        },
+        {
+          "text": "MHC class II: a marker on antigen-presenting cells that displays antigen to helper T cells."
+        }
+      ],
+      "callout": "MHC one on every cell. MHC two only on the professionals.",
+      "durationInFrames": 1980,
+      "caption": "Cell-mediated immunity, helper T cell, cytotoxic T cell, MHC class I and II.",
+      "voiceover": {
+        "text": "Let's pin down the key terms, because the markers really matter here. The helper T cell carries the CD four marker, and its job is coordination. It releases chemical messengers called cytokines that switch on the rest of the immune system, but it never kills anything itself. The cytotoxic T cell carries the CD eight marker, and this one is the assassin, killing infected cells with two molecules, perforin and granzymes. Then there are the display molecules. M H C class one sits on every nucleated cell, showing off fragments of whatever proteins that cell is making, so a cytotoxic T cell can inspect them. M H C class two is found only on professional antigen-presenting cells, and it shows captured antigen to the helper T cells. Keep those two pairings straight, CD four with M H C two, CD eight with M H C one."
+      }
+    },
+    {
+      "id": "concept-cytotoxic",
+      "type": "concept",
+      "heading": "How a cytotoxic T cell kills",
+      "body": "An infected cell betrays itself by displaying viral peptide on MHC class I. The cytotoxic T cell reads that flag and destroys the cell.",
+      "bullets": [
+        {
+          "text": "The infected cell loads viral peptide onto MHC class I, flagging itself as compromised."
+        },
+        {
+          "text": "The cytotoxic T cell recognises it and, with a helper T cell signal, clones into an army of killers."
+        },
+        {
+          "text": "Perforin punches pores in the target; granzymes enter and trigger apoptosis, killing it from within."
+        }
+      ],
+      "secondary": "Destroying the infected cell shuts down the virus factory at the source, which antibodies alone could never reach.",
+      "callout": "Don't fight the virus inside. Destroy the factory that makes it.",
+      "durationInFrames": 2045,
+      "caption": "Cytotoxic T cells read MHC I, need a helper signal, then kill via perforin and granzymes.",
+      "voiceover": {
+        "text": "Let's walk through how a cytotoxic T cell finds and kills its target, because this is a favourite exam question. When a virus infects a cell, that cell loads little fragments of the viral proteins onto its M H C class one molecules. So the infected cell is basically waving a flag that says, I'm compromised, look inside me. A patrolling cytotoxic T cell with the matching receptor reads that flag. But recognition alone is not enough. It also needs a go signal, the cytokine interleukin two, from a helper T cell. With both, the cytotoxic T cell multiplies into a clone of identical killers. Then it kills, and the mechanism is precise. Perforin punches holes in the target's membrane, and granzymes slip through and trigger apoptosis, programmed cell death. The infected cell dies from the inside, and the virus factory shuts down at the source, something antibodies could never reach."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Stage",
+          "What happens"
+        ],
+        "rows": [
+          [
+            "1. Display",
+            "Infected cell shows viral peptide on MHC class I"
+          ],
+          [
+            "2. Recognise",
+            "Cytotoxic T cell binds it and gets a helper IL-2 signal"
+          ],
+          [
+            "3. Expand",
+            "It clones into an army of identical killers"
+          ],
+          [
+            "4. Kill",
+            "Perforin forms pores; granzymes trigger apoptosis"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-helper",
+      "type": "concept",
+      "heading": "The helper T cell is the coordinator",
+      "body": "The helper T cell kills nothing, yet it is the command centre. Its cytokines switch on every other arm.",
+      "bullets": [
+        {
+          "text": "Activated by antigen on MHC class II, displayed by dendritic cells and macrophages."
+        },
+        {
+          "text": "Its cytokines give B cells the second signal they need, and drive cytotoxic T cells via IL-2."
+        },
+        {
+          "text": "It also boosts macrophages and recruits innate cells, linking both arms of immunity."
+        }
+      ],
+      "secondary": "This is why HIV is so devastating. Destroy the coordinator, and the killers and antibody-makers are still there but cannot be switched on.",
+      "callout": "Lose the officer and the soldiers stand idle.",
+      "durationInFrames": 2115,
+      "caption": "Helper T cells coordinate B cells, cytotoxic T cells and macrophages via cytokines.",
+      "voiceover": {
+        "text": "Now the helper T cell, the one HIV destroys, which is the cell that ties everything together. It's switched on when its receptor binds antigen displayed on M H C class two, on professional antigen-presenting cells like dendritic cells and macrophages. Once active, it does not kill anyone. Instead it releases cytokines, and those are the command signals for the whole immune system. They give B cells the extra co-stimulatory signal they need to make high-quality antibodies. They drive the cytotoxic T cells to multiply, using interleukin two. And they crank up macrophages and call in innate cells too. So the helper T cell sits at the centre, coordinating both arms at once. That is exactly why HIV is so devastating. It does not destroy your killers or your antibody-makers. It just removes the coordinator, and the whole orchestra has lost its conductor. The musicians are still there, but nobody is telling them when to play."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Fix the student's answer",
+      "question": "A student wrote: 'Cytotoxic T cells recognise antigen on MHC class II, then engulf and digest the infected cell by phagocytosis. Helper T cells are CD8+ killers.' Identify and correct the three errors.",
+      "coachNote": "Check each claim against the two rules: which marker, which MHC, and the killing mechanism.",
+      "steps": [
+        "Error 1: Cytotoxic T cells recognise antigen on MHC class I, not class II. MHC I is on all nucleated cells and displays internal viral peptide.",
+        "Error 2: Cytotoxic T cells do not engulf cells. They release perforin and granzymes that trigger apoptosis; phagocytosis is what macrophages do.",
+        "Error 3: Helper T cells are CD4+, not CD8+, and they coordinate via cytokines rather than killing.",
+        "Corrected: a CD8+ cytotoxic T cell reads viral peptide on MHC I, receives a helper signal, then kills by perforin and granzymes.",
+        "Answer: three errors fixed, MHC class, killing mechanism, and the CD marker ✓"
+      ],
+      "durationInFrames": 2115,
+      "caption": "Three classic T cell errors: wrong MHC class, phagocytosis, and CD4 versus CD8.",
+      "voiceover": {
+        "text": "Let's apply this by fixing a student answer packed with the classic mistakes. The student wrote, cytotoxic T cells recognise antigen on M H C class two, then engulf and digest the infected cell by phagocytosis, and helper T cells are CD eight killers. There are three errors. First, cytotoxic T cells recognise antigen on M H C class one, not class two. Class one is on every nucleated cell and displays the internal viral peptide, exactly what a cytotoxic T cell needs to see. Second, cytotoxic T cells do not engulf anything. Phagocytosis is what macrophages do. Cytotoxic T cells release perforin and granzymes to trigger apoptosis. Third, helper T cells are CD four, not CD eight, and they coordinate with cytokines rather than killing. So the corrected version is, a CD eight cytotoxic T cell reads viral peptide on M H C class one, gets a helper signal, then kills using perforin and granzymes."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking cytotoxic T cells kill free viruses. They kill infected host cells, not loose pathogens.",
+      "secondary": "Trap 2: dismissing helper T cells as minor because they don't kill. They are the central coordinator, which is why HIV damage is so catastrophic. Trap 3: treating MHC I and MHC II as the same. MHC I is on all cells for cytotoxic T cells; MHC II is on antigen-presenting cells for helper T cells.",
+      "mistakeTag": "Where T cell marks vanish",
+      "callout": "Kill infected cells, not free virus; coordinator is not minor; the two MHC classes differ.",
+      "durationInFrames": 1965,
+      "caption": "Cytotoxic T cells kill infected cells; helper cells coordinate; MHC I and II differ.",
+      "voiceover": {
+        "text": "Three traps that cost marks every year. Trap one, thinking cytotoxic T cells kill viruses directly. They don't. They kill the infected host cell that's displaying viral antigen. Free-floating viruses are dealt with by antibodies and phagocytes, not by cytotoxic T cells. Trap two, writing off helper T cells as unimportant because they don't actually kill anything. That's backwards. The helper T cell is the central coordinator, and that is precisely why losing it in HIV is so catastrophic. No coordinator, no full response. Trap three, treating M H C class one and class two as interchangeable. They're not. M H C one is on all nucleated cells and presents internal peptides to cytotoxic T cells. M H C two is only on antigen-presenting cells and presents external antigen to helper T cells. Get those three right and the T cell questions become easy marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A patient with advanced HIV still has normal numbers of B cells and cytotoxic T cells, yet cannot mount an effective response to a new infection. Explain why.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "HIV destroys CD4+ helper T cells, which are the coordinators of adaptive immunity.",
+        "Without helper signals, B cells lack the co-stimulation needed for strong antibody production.",
+        "Without IL-2 from helper cells, cytotoxic T cells cannot undergo full clonal expansion.",
+        "So both arms are present but cannot be activated, the coordinator is missing.",
+        "Answer: loss of helper T cell coordination disables both humoral and cell-mediated responses ✓"
+      ],
+      "durationInFrames": 1925,
+      "caption": "Helper T cell loss disables both arms even when other cells are present.",
+      "voiceover": {
+        "text": "Quick check. A patient with advanced HIV still has normal numbers of B cells and cytotoxic T cells, yet they cannot fight off a new infection. Explain why. Pause and reason it through. Right, here's the logic. HIV specifically destroys the CD four helper T cells, and those are the coordinators of the entire adaptive response. Without helper signals, the B cells are missing the co-stimulation they need to produce strong, high-quality antibodies. And without interleukin two from the helper cells, the cytotoxic T cells cannot undergo full clonal expansion into an effective killing force. So both arms are physically present, but neither can be properly switched on, because the coordinator is gone. The answer is that losing helper T cell coordination disables both the humoral and the cell-mediated response at the same time, even when the other cells look perfectly normal."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Adaptive immunity has two arms: humoral (B cells, antibodies) and cell-mediated (T cells).",
+        "Cytotoxic T cells (CD8+) read viral peptide on MHC I and kill infected cells with perforin and granzymes.",
+        "Cytotoxic T cells need a helper signal (IL-2) before they fully activate.",
+        "Helper T cells (CD4+) are activated by MHC II and coordinate both arms via cytokines.",
+        "HIV destroys CD4+ helper T cells, so losing the coordinator collapses the whole response."
+      ],
+      "finalPrompt": "Asked about a T cell? Pin the marker, the MHC class, and whether it coordinates or kills.",
+      "durationInFrames": 1925,
+      "caption": "Five takeaways: two arms, cytotoxic killing, the helper signal, coordination, and HIV.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, adaptive immunity has two arms, the humoral arm with B cells and antibodies, and the cell-mediated arm with T cells. Second, cytotoxic T cells, the CD eight cells, read viral peptide on M H C class one and kill infected cells using perforin and granzymes. Third, those cytotoxic T cells need a helper signal, interleukin two, before they fully activate. Fourth, helper T cells, the CD four cells, are switched on by M H C class two and they coordinate both arms through cytokines. And fifth, HIV destroys the CD four helper T cells, which is why removing one coordinator brings the whole response down. Whenever you're asked about a T cell, pin three things, the marker, the M H C class, and whether it coordinates or kills. See you next lesson."
+      }
+    }
+  ]
+}

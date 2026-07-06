@@ -6,6 +6,7 @@
 
 import {interpolate, useCurrentFrame} from 'remotion';
 import type {LessonData, WorkedExampleScene} from '../lesson/types';
+import {ASSETS, type AssetName} from '../assets';
 import {FadeUp} from '../animations/FadeUp';
 import {ScribbleMark} from '../animations/DoodlePrimitives';
 import {DeltaMathText} from '../animations/FormulaBuild';
@@ -17,6 +18,7 @@ import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
 import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
+import {useAccent} from '../styles/theme';
 
 type WorkedExampleSlideProps = {
 	scene: WorkedExampleScene;
@@ -28,25 +30,43 @@ type WorkedExampleSlideProps = {
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
 
 export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: WorkedExampleSlideProps) => {
+	const rd = scene.revealDelays ?? {};
 	const n = scene.steps.length;
-	const stepsStart = 116;
-	const stepInterval = 86;
+	const stepsStart = rd.stepsStart ?? 116;
+	const stepInterval = rd.stepInterval ?? 86;
 	return (
-		<SlideFrame>
+		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
 			<SlideChrome lesson={lesson} dot="2.1" topic="WORKED EXAMPLE" sceneType="workedExample" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			<div style={{position: 'absolute', top: 142, left: 64, right: 64}}>
 				<Eyebrow color={TOK.inkDim}>PROBLEM · {scene.heading.toUpperCase()}</Eyebrow>
-				<FadeUp delay={18} durationFrames={14} dy={18}>
+			{scene.image && ASSETS[scene.image as AssetName] && (
+				<FadeUp delay={rd.diagram ?? 30} durationFrames={16} dy={16}>
+					<img
+						src={ASSETS[scene.image as AssetName]}
+						alt=""
+						style={{
+							position: 'absolute',
+							right: 0,
+							top: 0,
+							width: 380,
+							maxHeight: 220,
+							objectFit: 'contain',
+							filter: 'drop-shadow(0 16px 32px rgba(0,0,0,0.14))',
+						}}
+					/>
+				</FadeUp>
+			)}
+				<FadeUp delay={rd.heading ?? 18} durationFrames={14} dy={18}>
 					<StampInTitle delay={18} color={TOK.ink} underlineColor={TOK.amber}>
 						<div
 							style={{
 								marginTop: 14,
-								fontSize: TYPE.subhead.fontSize,
-								fontWeight: TYPE.subhead.fontWeight,
-								lineHeight: TYPE.subhead.lineHeight,
-								letterSpacing: '-0.025em',
-								maxWidth: 1350,
+								fontSize: scene.question.length > 200 ? 32 : scene.question.length > 120 ? 36 : 42,
+								fontWeight: 700,
+								lineHeight: 1.3,
+								letterSpacing: '-0.015em',
+								maxWidth: scene.image ? 1430 : 1700,
 								color: TOK.ink,
 							}}
 						>
@@ -55,7 +75,7 @@ export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: Wor
 					</StampInTitle>
 				</FadeUp>
 				{scene.coachNote ? (
-					<FadeUp delay={42} durationFrames={14} dy={14}>
+					<FadeUp delay={rd.coachNote ?? 42} durationFrames={14} dy={14}>
 						<div
 							style={{
 								marginTop: 18,
@@ -78,17 +98,23 @@ export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: Wor
 			<div
 				style={{
 					position: 'absolute',
-					top: 350,
+					top: 470,
 					left: 64,
 					right: 64,
 					display: 'grid',
 					gridTemplateColumns: 'minmax(0, 1fr)',
-					gap: 22,
+					gap: 18,
 				}}
 			>
 				<AmbientGlow left="8%" top={300} width="84%" height={520} delay={260} opacity={0.07} speedSeconds={6.8} />
 				{scene.steps.map((step, index) => {
-					const delay = stepsStart + index * stepInterval;
+					// Per-step anchored delays take precedence — auto-sync-reveals
+					// matches each step against the narration. Falls back to
+					// stepsStart + i × stepInterval if no per-step delays.
+					const ats = (rd as {stepAts?: number[]}).stepAts;
+					const delay = ats && ats[index] !== undefined
+						? ats[index]
+						: stepsStart + index * stepInterval;
 					const kind = getCalculationStepKind(step, index, n);
 					const isFinal = index === n - 1;
 
@@ -126,6 +152,7 @@ const WorkedStep = ({
 	isFinal: boolean;
 	unitCancel?: {left: string; right: string; result: string};
 }) => {
+	const theme = useAccent();
 	const {prefix, rest} = splitStep(step);
 
 	return (
@@ -188,7 +215,7 @@ const WorkedStep = ({
 						<ScribbleMark
 							kind="check"
 							size={58}
-							color={TOK.chem1}
+							color={theme.accent}
 							strokeWidth={6}
 							seed={31}
 							delay={delay + 20}
@@ -215,6 +242,7 @@ const InlineUnitCheck = ({
 	delay: number;
 }) => {
 	const frame = useCurrentFrame();
+	const theme = useAccent();
 	const draw = interpolate(frame, [delay + 14, delay + 30], [0, 1], clamp);
 
 	return (
@@ -226,7 +254,7 @@ const InlineUnitCheck = ({
 					maxWidth: 1000,
 					padding: '16px 20px',
 					borderRadius: 10,
-					border: `1px dashed ${TOK.chem2}`,
+					border: `1px dashed ${theme.accent2}`,
 					background: 'rgba(15,22,20,0.7)',
 					display: 'grid',
 					gridTemplateColumns: 'auto minmax(0, 1fr)',
@@ -245,7 +273,7 @@ const InlineUnitCheck = ({
 								fontFamily: FONT_MONO,
 								fontSize: 17,
 								letterSpacing: '0.16em',
-								color: TOK.chem2,
+								color: theme.accent2,
 								marginBottom: 6,
 								textTransform: 'uppercase',
 							}}

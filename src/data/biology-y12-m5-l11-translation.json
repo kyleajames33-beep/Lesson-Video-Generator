@@ -1,0 +1,270 @@
+{
+  "title": "Translation — From mRNA to Polypeptide",
+  "subtitle": "How the ribosome reads the message and builds a protein",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 11",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "model the process of polypeptide synthesis, including translation at the ribosome (ACSBL079)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Why is polypeptide synthesis important?",
+  "lessonIntent": "Students can trace a short mRNA sequence through codon-anticodon matching and explain how ribosomes, tRNA and peptide bonds build a polypeptide during translation.",
+  "examSkill": "Trace an mRNA codon sequence through tRNA anticodon matching to predict amino acid order, and state the distinct roles of mRNA, tRNA and the ribosome.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, translation, from mRNA to polypeptide. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Translation — From mRNA to Polypeptide (Year 12 Biology, Module 5, Lesson 11)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A drug that kills bacteria but not you",
+      "body": "Streptomycin jams the bacterial ribosome so it misreads mRNA. Your ribosomes keep working fine.",
+      "callout": "Same genetic code, two ribosomes, one fatal difference.",
+      "image": "bioM5L11Streptomycin",
+      "durationInFrames": 1764,
+      "caption": "Streptomycin binds the bacterial 30S subunit and causes codon misreading; human 80S ribosomes are unaffected.",
+      "voiceover": {
+        "text": "Back in 1943, Selman Waksman isolated streptomycin, the first antibiotic shown to kill the bacteria that cause tuberculosis. Here's the strange part. Streptomycin wipes out the bacteria, but leaves your own cells completely unharmed, even though both are reading the exact same genetic code. By 1962 researchers worked out why. Streptomycin grabs the bacterial ribosome and makes it misread the mRNA, so the wrong amino acids get inserted and the proteins come out broken. Your ribosomes are built differently, so the drug slides right past them. To understand how one ribosome fails while another keeps working, we need to look at what the ribosome is actually doing at every codon. That's translation, and by the end of today you'll be able to walk through it step by step."
+      }
+    },
+    {
+      "id": "concept-ribosome",
+      "type": "concept",
+      "heading": "The ribosome reads, it doesn't write",
+      "body": "During translation the mRNA binds a ribosome, which moves along and reads the message three bases at a time.",
+      "bullets": [
+        {
+          "text": "The ribosome reads mRNA in codons, one three-base unit at a time."
+        },
+        {
+          "text": "It interprets the message that transcription already copied into mRNA."
+        },
+        {
+          "text": "The ribosome does not create the code, and it reads mRNA, never DNA."
+        }
+      ],
+      "secondary": "Translation happens in the cytoplasm at the ribosome, not in the nucleus. The mRNA has to be exported from the nucleus first before any reading can begin.",
+      "callout": "Ribosome reads mRNA, in codons, in the cytoplasm.",
+      "durationInFrames": 1858,
+      "caption": "The ribosome reads mRNA in codons in the cytoplasm; it interprets but does not create the code.",
+      "voiceover": {
+        "text": "So let's start with the ribosome itself. In lesson ten we copied the DNA message into messenger RNA during transcription. Now that mRNA leaves the nucleus and attaches to a ribosome out in the cytoplasm. The ribosome then slides along the mRNA and reads it in codons, which are three-base chunks, one at a time. That's the key job, breaking the message into readable units. And here's the distinction that earns marks. The ribosome does not write or create the genetic message, it only interprets a message that was already written during transcription. In an exam, always say the ribosome reads mRNA, never that it reads DNA, because the DNA stayed back in the nucleus. Translation is a cytoplasm event, so if you ever write that it happens in the nucleus, you've lost the mark."
+      }
+    },
+    {
+      "id": "concept-trna",
+      "type": "concept",
+      "heading": "tRNA is the delivery service",
+      "body": "Each tRNA carries one specific amino acid at one end and an anticodon at the other.",
+      "bullets": [
+        {
+          "text": "One end of a tRNA holds a specific amino acid."
+        },
+        {
+          "text": "The other end is an anticodon, a three-base sequence."
+        },
+        {
+          "text": "The anticodon pairs with the complementary codon on the mRNA."
+        }
+      ],
+      "secondary": "This is why mRNA and tRNA have different jobs. The mRNA carries the code; the tRNA carries the amino acid that the code calls for. Without tRNA, there is no way to connect a codon to its amino acid.",
+      "callout": "mRNA carries codons. tRNA carries amino acids plus anticodons. Never swap them.",
+      "durationInFrames": 1804,
+      "caption": "tRNA carries a specific amino acid and an anticodon that pairs with the complementary mRNA codon.",
+      "voiceover": {
+        "text": "Now the ribosome can read the codons, but reading isn't enough. Something has to bring the right amino acid to each codon, and that something is transfer RNA, or tRNA. Picture each tRNA as a tiny delivery molecule. At one end it carries one specific amino acid, and at the other end it has an anticodon, its own three-base sequence. That anticodon is the part that pairs up with the matching codon on the mRNA. This is exactly why messenger RNA and transfer RNA have different jobs. The mRNA holds the coded instructions, while the tRNA physically carries the amino acid those instructions ask for. The trap that catches students every year is reversing these two. So lock it in, mRNA has codons, tRNA has anticodons and carries the amino acids."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Translation: using the mRNA code to assemble a polypeptide at the ribosome."
+        },
+        {
+          "text": "Codon: a three-base sequence on mRNA that specifies one amino acid."
+        },
+        {
+          "text": "Anticodon: a three-base sequence on tRNA that pairs with a complementary codon."
+        },
+        {
+          "text": "Peptide bond: the bond that links adjacent amino acids in a polypeptide."
+        }
+      ],
+      "callout": "Codon on mRNA, anticodon on tRNA, peptide bond between amino acids.",
+      "durationInFrames": 1669,
+      "caption": "Translation, codon, anticodon, peptide bond.",
+      "voiceover": {
+        "text": "Let's pin down the four words you'll be using all lesson. Translation is the process of using the mRNA code to assemble a polypeptide, and it happens at the ribosome. A codon is a three-base sequence on the mRNA that specifies one amino acid. An anticodon is a three-base sequence on the tRNA, and it pairs with a complementary codon on the mRNA. And a peptide bond is the bond that links one amino acid to the next inside the growing chain. So the codon sits on the messenger RNA, the anticodon sits on the transfer RNA, and the peptide bond forms between the amino acids themselves. Keep those three locations straight and the rest of translation just clicks into place."
+      }
+    },
+    {
+      "id": "concept-pairing",
+      "type": "concept",
+      "heading": "Sequence dictates sequence",
+      "body": "Codon-anticodon pairing places each amino acid in the right spot, so the order of codons sets the order of amino acids.",
+      "bullets": [
+        {
+          "text": "Each anticodon pairs with its complementary codon at the ribosome."
+        },
+        {
+          "text": "That pairing drops the correct amino acid into the next position."
+        },
+        {
+          "text": "Change the mRNA sequence and the amino acid sequence can change too."
+        }
+      ],
+      "secondary": "This is the core idea of the whole topic: the order of bases controls the order of amino acids, which controls the protein, which controls the trait.",
+      "callout": "Order of codons decides order of amino acids.",
+      "durationInFrames": 1791,
+      "caption": "Codon-anticodon pairing means the order of codons determines the order of amino acids.",
+      "voiceover": {
+        "text": "Here's where it comes together. At the ribosome, a tRNA anticodon pairs with its complementary mRNA codon, and that pairing locks the tRNA's amino acid into the correct position in the chain. Now think about the whole strand. Because each codon is read in order, the sequence of codons directly sets the sequence of amino acids. First codon, first amino acid, second codon, second amino acid, on down the line. And this is the big idea of the entire module, so hold onto it. The order of bases controls the order of amino acids, which controls how the protein folds, which eventually shows up as a trait. That's also why a single change in the mRNA can change which amino acid gets placed, and sometimes that changes the protein entirely."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Decode and match",
+      "question": "An mRNA strand reads the codons AUG then GAA then CCU. Write the complementary tRNA anticodon for each codon, and state which molecule carries the amino acids.",
+      "coachNote": "Pair each base by the RNA rule: A with U, U with A, G with C, C with G.",
+      "steps": [
+        "Codon 1 is AUG, so the anticodon pairs base by base: A→U, U→A, G→C, giving UAC.",
+        "Codon 2 is GAA, so G→C, A→U, A→U, giving CUU.",
+        "Codon 3 is CCU, so C→G, C→G, U→A, giving GGA.",
+        "Read codons on mRNA, read anticodons on tRNA; the tRNA is the molecule carrying the amino acids.",
+        "Answer: anticodons UAC, CUU, GGA; amino acids are carried by tRNA ✓"
+      ],
+      "durationInFrames": 1723,
+      "caption": "Anticodons for AUG, GAA, CCU are UAC, CUU, GGA; tRNA carries the amino acids.",
+      "voiceover": {
+        "text": "Let's decode a short strand. The mRNA reads three codons, A U G, then G A A, then C C U. We need the complementary tRNA anticodon for each, using the RNA pairing rule, A with U, and G with C. Take A U G. A pairs with U, U pairs with A, G pairs with C, so the anticodon is U A C. Next, G A A becomes C U U. And C C U becomes G G A. So our three anticodons are U A C, C U U, and G G A. Now the last part, which molecule carries the amino acids. That's the transfer RNA, never the messenger RNA. The mRNA holds the codons, the tRNA brings the amino acids in."
+      }
+    },
+    {
+      "id": "concept-elongation",
+      "type": "concept",
+      "heading": "Peptide bonds build the chain",
+      "body": "Once amino acids are positioned, the ribosome joins them with peptide bonds and the chain grows. That growth is polypeptide elongation.",
+      "bullets": [
+        {
+          "text": "The ribosome catalyses a peptide bond between adjacent amino acids."
+        },
+        {
+          "text": "Repeating this lengthens the chain, which is polypeptide elongation."
+        },
+        {
+          "text": "Enzymes, structural, transport and signalling proteins all need the right sequence."
+        }
+      ],
+      "secondary": "Insulin is a real example. It only works as a hormone if translation builds the correct amino acid sequence; get the sequence wrong and the protein may not function.",
+      "callout": "Position the amino acid, bond it, repeat, and the polypeptide grows.",
+      "durationInFrames": 2007,
+      "caption": "The ribosome joins positioned amino acids with peptide bonds; repeating this is polypeptide elongation.",
+      "voiceover": {
+        "text": "So we've got the amino acids being positioned in order by codon-anticodon matching. Now they need to be joined together. Once two amino acids sit next to each other at the ribosome, the ribosome catalyses a peptide bond between them, linking them into a chain. Then it shifts along, the next tRNA comes in, the next amino acid is positioned, another peptide bond forms, and the chain gets longer. That repeating, lengthening process is called polypeptide elongation. And the reason this matters so much is that almost everything a cell does depends on it. Enzymes, structural proteins, transport proteins, signalling proteins, all of them only work if their amino acids are in the right order. Insulin is the classic example. It only functions as a hormone if translation builds exactly the right sequence, and if that sequence comes out wrong, the insulin may simply not work."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: saying translation happens in the nucleus. Transcription is in the nucleus; translation is in the cytoplasm at the ribosome.",
+      "secondary": "Trap 2: reversing the molecules. mRNA carries codons, tRNA carries amino acids and anticodons, never the other way round. Trap 3: thinking each tRNA carries any amino acid. Each tRNA has a specific anticodon and is charged with the matching amino acid by enzymes.",
+      "mistakeTag": "Where translation marks vanish",
+      "callout": "Cytoplasm, not nucleus. mRNA codons, tRNA amino acids. Specific tRNAs.",
+      "durationInFrames": 1899,
+      "caption": "Translation is cytoplasmic; mRNA = codons, tRNA = amino acids; each tRNA is specific.",
+      "voiceover": {
+        "text": "Three traps that quietly cost marks every year. Trap one, writing that translation happens in the nucleus. It does not. Transcription is the nuclear step, but translation happens out in the cytoplasm at the ribosome, after the mRNA has been exported through the nuclear pores. Trap two, the big one, reversing the molecules. Students write that mRNA carries the amino acids, or that tRNA carries the codons. It's the other way round, every time. The mRNA carries codons, and the tRNA carries the amino acids and has the anticodons. Trap three is subtler. Some students think a single tRNA can grab whatever amino acid is lying around. It can't. Each tRNA has one specific anticodon, and it's charged with the one matching amino acid by special enzymes. Get those three right and translation questions turn into easy marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A mutation changes one mRNA codon so a different amino acid is inserted into an enzyme. Explain how this single change could stop the enzyme from working.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The codon sequence on mRNA determines the amino acid sequence in the polypeptide.",
+        "A changed codon means a different tRNA anticodon pairs, so a different amino acid is placed.",
+        "One wrong amino acid can change how the polypeptide folds into its 3D shape.",
+        "An enzyme's shape, especially its active site, controls its function.",
+        "Answer: the altered shape can disable the active site, so the enzyme stops working ✓"
+      ],
+      "durationInFrames": 1872,
+      "caption": "One changed codon → one different amino acid → altered folding → non-functional enzyme.",
+      "voiceover": {
+        "text": "Quick check, and this one ties translation to function. A mutation changes a single mRNA codon, so a different amino acid gets inserted into an enzyme. How could just one change stop that enzyme working? Pause and reason it through. Okay, let's build the logic. The codon sequence sets the amino acid sequence in the polypeptide. So if one codon changes, a different tRNA anticodon pairs there, and a different amino acid is placed into the chain. Here's the link. That one different amino acid can change the way the whole polypeptide folds into its three dimensional shape. And for an enzyme, shape is everything, because the active site has to fit its substrate precisely. So if the folding shifts and the active site is distorted, the substrate no longer fits, and the enzyme stops working."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Translation builds a polypeptide from the mRNA code at the ribosome, in the cytoplasm.",
+        "The ribosome reads mRNA in codons; tRNA carries amino acids and anticodons.",
+        "Codon-anticodon pairing makes the order of codons set the order of amino acids.",
+        "The ribosome joins amino acids with peptide bonds during polypeptide elongation.",
+        "The right sequence means a functional protein, like insulin; the wrong one may fail."
+      ],
+      "finalPrompt": "Tracing translation? Read codons on mRNA, match anticodons on tRNA, bond the amino acids in order.",
+      "durationInFrames": 1804,
+      "caption": "Five takeaways: site, reading, pairing, peptide bonds, and why sequence matters.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, translation builds a polypeptide from the mRNA code, and it happens at the ribosome out in the cytoplasm. Second, the ribosome reads the mRNA in codons, while transfer RNA carries the amino acids and the anticodons. Third, because anticodons pair with codons in order, the sequence of codons sets the sequence of amino acids. Fourth, the ribosome joins those amino acids together with peptide bonds, and that lengthening process is polypeptide elongation. And fifth, getting the sequence right means a working protein, like insulin, while getting it wrong can leave the protein non-functional. Whenever you trace translation, just read the codons on the mRNA, match the anticodons on the tRNA, and bond the amino acids in order. See you next lesson."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Molecule",
+          "Carries",
+          "Role"
+        ],
+        "rows": [
+          [
+            "mRNA",
+            "Codons",
+            "Read by the ribosome"
+          ],
+          [
+            "tRNA",
+            "Anticodon + amino acid",
+            "Delivers the matching amino acid"
+          ],
+          [
+            "Ribosome",
+            "Catalytic core",
+            "Reads codons, forms peptide bonds"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "title": "Neutralisation Enthalpy: Strong vs Weak Compared",
+  "subtitle": "Why a weak acid releases less heat",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 10",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6: Acid/Base Reactions",
+  "syllabusDotPoints": [
+    "conduct a practical investigation to measure the enthalpy of neutralisation (ACSCH093)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "CH12-13",
+    "CH11/12-2",
+    "CH11/12-5",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "What is an acid and what is a base?",
+  "lessonIntent": "Students can explain why weak acids and bases give a less exothermic neutralisation and quantify the ionisation enthalpy from calorimetry data.",
+  "examSkill": "Rank ΔHn by sign, explain the endothermic ionisation step at the molecular level, and compute ΔH(ionisation) = ΔHn(weak + NaOH) − ΔHn(HCl + NaOH).",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, comparing the neutralisation enthalpy of strong and weak acids. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Neutralisation Enthalpy: Strong vs Weak Compared (Year 12 Chemistry, Module 6, Lesson 10)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A 2.1 kilojoule fingerprint",
+      "body": "Thomsen measured −57.3 kJ/mol for HCl with NaOH, but only −55.2 for acetic acid with NaOH.",
+      "callout": "Why is the weak acid less exothermic, and what does the gap reveal?",
+      "image": "strongWeakEnthalpyThermometers",
+      "durationInFrames": 660,
+      "caption": "Weak acid neutralisation is less exothermic; the gap is the ionisation enthalpy.",
+      "voiceover": {
+        "text": "OK, this lesson is a consolidation, pulling together energy from lesson three and strength from lesson nine. Back in eighteen eighty-three, Thomsen measured the heat of neutralisation very carefully. For hydrochloric acid with sodium hydroxide, he got minus fifty-seven-point-three kilojoules per mole. For acetic acid with the same sodium hydroxide, he got only minus fifty-five-point-two. Same concentrations, same volumes, yet the weak acid consistently released a little less heat, a gap of about two-point-one kilojoules per mole. That small, reproducible difference isn't an error. It's the fingerprint of ionisation energy, direct proof that acetic acid was only partly ionised to begin with. Today you'll explain that gap and even calculate it."
+      }
+    },
+    {
+      "id": "concept-baseline",
+      "type": "concept",
+      "heading": "Why −57 is the maximum",
+      "body": "For strong plus strong, the only event is H⁺ + OH⁻ → H₂O, so −57 kJ/mol is the most you can get.",
+      "bullets": [
+        {"text": "Both reactants arrive fully ionised, so no energy goes into making ions."},
+        {"text": "The only reaction is H⁺ + OH⁻ → H₂O, forming the O–H bonds in water."},
+        {"text": "Any weak species makes ΔHn more positive, never more negative than −57."}
+      ],
+      "secondary": "So −57 kJ/mol is the maximum heat per mole of water. A more positive value means energy was spent elsewhere, on ionisation.",
+      "callout": "More negative is more exothermic; −52 releases less heat than −57.",
+      "durationInFrames": 1140,
+      "caption": "Strong+strong gives the max −57 kJ/mol; weak species shift ΔHn positive.",
+      "voiceover": {
+        "text": "Let's set the baseline, building on lesson three. For a strong acid with a strong base, both arrive completely ionised, so no energy is needed to make ions. The only thing that happens on mixing is hydrogen ion plus hydroxide forms water, and that releases about fifty-seven kilojoules per mole. So minus fifty-seven is actually the maximum heat you can get per mole of water, the pure energy of forming that oxygen-hydrogen bond. Here's the key consequence. Bringing in any weak species can only make the enthalpy more positive, that is, less exothermic, never more negative than fifty-seven. So if you ever measure something past fifty-seven, like minus fifty-nine, suspect a systematic error. And a habit to lock in, more negative means more exothermic, so minus fifty-two releases less heat than minus fifty-seven, even though fifty-two is the smaller number."
+      }
+    },
+    {
+      "id": "concept-mechanism",
+      "type": "concept",
+      "heading": "The weak-acid mechanism",
+      "body": "A weak acid must ionise during the reaction, and that bond-breaking step costs energy.",
+      "bullets": [
+        {"text": "Most acetic acid is intact, so OH⁻ has to drive its ionisation: CH₃COOH → H⁺ + CH₃COO⁻."},
+        {"text": "Breaking that O–H bond is endothermic, absorbing heat."},
+        {"text": "Net heat = the 57 from H⁺ + OH⁻ → H₂O, minus the ionisation cost."}
+      ],
+      "secondary": "It's thermodynamic, not kinetic. The reaction still goes to completion; the smaller temperature rise is the energy spent ionising, not a slow or partial reaction.",
+      "callout": "ΔH(ionisation) = ΔHn(weak + NaOH) − ΔHn(HCl + NaOH), always positive.",
+      "durationInFrames": 1200,
+      "caption": "Weak acid: endothermic ionisation step subtracts from the −57 kJ/mol.",
+      "voiceover": {
+        "text": "Now the mechanism, which is what a band six answer needs. With hydrochloric acid, the hydrogen ions are already free, so the moment you add base, hydrogen ion plus hydroxide makes water and you get the full fifty-seven. With acetic acid, almost all of it is sitting there as whole molecules, only about a percent ionised. So when hydroxide comes in and grabs the few free hydrogen ions, it pulls the acetic acid equilibrium to the right, forcing more of it to ionise, acetic acid to hydrogen ion plus acetate. But breaking that oxygen-hydrogen bond to ionise is endothermic, it absorbs heat. So the net heat measured is the fifty-seven from forming water, minus the energy spent ionising. Crucially, this is thermodynamic, not kinetic. The reaction still goes fully to completion. The smaller temperature rise isn't a slow or incomplete reaction, it's energy diverted into ionisation. And you can measure that cost, it's just the difference between the two enthalpies."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Baseline ΔHn: −57 kJ/mol for any strong acid with strong base."},
+        {"text": "Ionisation enthalpy: the endothermic energy to ionise a weak acid or base."},
+        {"text": "Endothermic: absorbs heat, lowering the temperature rise."},
+        {"text": "ΔH(ionisation) = ΔHn(weak + NaOH) − ΔHn(HCl + NaOH)."}
+      ],
+      "callout": "A weaker acid has a stronger O–H bond, so a bigger, more positive deviation.",
+      "durationInFrames": 1020,
+      "caption": "Baseline −57, ionisation enthalpy, endothermic, the deviation formula.",
+      "voiceover": {
+        "text": "Quick vocabulary. The baseline enthalpy of neutralisation is minus fifty-seven kilojoules per mole, the value for any strong acid with a strong base. The ionisation enthalpy is the endothermic energy needed to ionise a weak acid or base, the cost that eats into the heat. Endothermic just means it absorbs heat, which lowers the temperature rise you measure. And the deviation formula, the ionisation enthalpy equals the weak acid's enthalpy of neutralisation minus the strong acid's baseline, which always comes out positive. One subtle but examinable point, a weaker acid, with a smaller Ka, has a stronger oxygen-hydrogen bond, so it costs more to ionise, which means a bigger, more positive deviation from fifty-seven. The weaker the acid, the further its value sits from the baseline."
+      }
+    },
+    {
+      "id": "concept-ranking",
+      "type": "concept",
+      "heading": "Ranking the combinations",
+      "body": "Each weak partner adds its own endothermic cost, so the heat drops step by step.",
+      "bullets": [
+        {"text": "Strong acid + strong base is the most exothermic, near −57 kJ/mol."},
+        {"text": "One weak partner, acid or base, drops it a few kJ/mol."},
+        {"text": "Weak acid + weak base is the least exothermic of all."}
+      ],
+      "secondary": "The costs are additive: ΔHn(weak + weak) ≈ −57 plus the acid's ionisation plus the base's proton-acceptance energy.",
+      "callout": "Two weak partners means two endothermic costs subtracted from −57.",
+      "durationInFrames": 1140,
+      "caption": "Ranking: strong+strong > one weak > weak+weak (least exothermic).",
+      "voiceover": {
+        "text": "Now let's rank all four combinations, and there's a clean logic to it. Strong acid with strong base is the most exothermic, right up near minus fifty-seven, because nothing has to ionise. Add one weak partner, say a weak acid with a strong base, or a strong acid with a weak base, and you pay one endothermic ionisation cost, so the heat drops a few kilojoules, into the low fifties. Put two weak partners together, a weak acid with a weak base, and you pay both costs, so it's the least exothermic of all, often down near minus fifty. The beautiful part is the costs are additive. The weak-plus-weak value is roughly minus fifty-seven, plus the acid's ionisation energy, plus the base's proton-acceptance energy. Each weak species independently subtracts its own endothermic toll from the baseline."
+      },
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          {"label": "HCl + NaOH", "value": 57},
+          {"label": "CH₃COOH + NaOH", "value": 55},
+          {"label": "HCl + NH₃", "value": 52},
+          {"label": "CH₃COOH + NH₃", "value": 49}
+        ],
+        "unit": "|ΔHn| kJ/mol"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Comparing two ΔHn",
+      "question": "Both 50.0 mL + 50.0 mL at 1.00 mol L⁻¹. HCl+NaOH: 21.0→27.8 °C. CH₃COOH+NaOH: 21.0→27.2 °C. Find each ΔHn.",
+      "coachNote": "Total mass 100 g; n(H₂O) = 0.0500 mol each.",
+      "steps": [
+        "HCl: ΔT = 6.8 °C; q = 100.0 × 4.18 × 6.8 = 2842 J = 2.842 kJ",
+        "ΔHn(HCl) = −2.842 ÷ 0.0500 = −56.8 kJ mol⁻¹ (≈ −57, strong)",
+        "CH₃COOH: ΔT = 6.2 °C; q = 100.0 × 4.18 × 6.2 = 2592 J = 2.592 kJ",
+        "ΔHn(CH₃COOH) = −2.592 ÷ 0.0500 = −51.8 kJ mol⁻¹",
+        "Answer: gap = 5.0 kJ mol⁻¹ = the ionisation enthalpy of acetic acid ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "ΔHn: HCl −56.8, acetic −51.8 kJ/mol; the 5.0 gap is ionisation enthalpy.",
+      "voiceover": {
+        "text": "Let's calculate and compare. Both setups are fifty millilitres plus fifty millilitres at one molar, so the total mass is a hundred grams and the moles of water are nought-point-zero-five in each. For hydrochloric acid the rise is six-point-eight degrees, so q is a hundred times four-point-one-eight times six-point-eight, which is two thousand eight hundred and forty-two joules, or two-point-eight-four-two kilojoules. Divide by nought-point-zero-five and flip the sign, and the enthalpy is minus fifty-six-point-eight, basically the strong baseline. For acetic acid the rise is only six-point-two degrees, so q is two-point-five-nine-two kilojoules, and the enthalpy is minus fifty-one-point-eight. The gap between them, five kilojoules per mole, is the ionisation enthalpy of acetic acid, the energy spent breaking its oxygen-hydrogen bonds during the reaction. Two simple experiments, and you've measured a thermodynamic property."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Classifying three unknowns",
+      "question": "1.00 mol L⁻¹ acids X, Y, Z + NaOH, all start 20.0 °C. T max: X 26.6, Y 26.8, Z 25.9 °C. Classify each.",
+      "coachNote": "Compute ΔHn, then compare to −57. Closest = strong.",
+      "steps": [
+        "X: ΔT = 6.6; q = 2758.8 J; ΔHn = −55.2 kJ mol⁻¹ → weak (+1.8 deviation)",
+        "Y: ΔT = 6.8; q = 2842.4 J; ΔHn = −56.8 kJ mol⁻¹ → strong (≈ −57)",
+        "Z: ΔT = 5.9; q = 2466.2 J; ΔHn = −49.3 kJ mol⁻¹ → weak (+7.5 deviation)",
+        "Using Y as baseline: ΔH(ion) of X = +1.6, of Z = +7.5 kJ mol⁻¹",
+        "Answer: Y strong; X and Z weak, with Z the weaker (bigger deviation) ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "Y ≈ −57 strong; X −55.2 and Z −49.3 weak; Z weaker (larger deviation).",
+      "voiceover": {
+        "text": "Now classify three unknowns from calorimetry alone. All are one molar acids with sodium hydroxide, starting at twenty degrees. For X, the rise is six-point-six, so q is two thousand seven hundred and fifty-nine joules, and the enthalpy is minus fifty-five-point-two, a small deviation from fifty-seven, so X is weak. For Y, the rise is six-point-eight, giving minus fifty-six-point-eight, essentially the baseline, so Y is strong. For Z, the rise is only five-point-nine, giving minus forty-nine-point-three, a big deviation, so Z is weak. Using Y as our experimental baseline, the ionisation enthalpy of X is about one-point-six, and of Z about seven-point-five kilojoules per mole. And the counterintuitive bit, the bigger deviation means Z is the weaker acid, because a weaker acid holds its proton more tightly and costs more to ionise."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: saying a weak acid releases more heat, or that its smaller ΔT is from an incomplete reaction.",
+      "secondary": "Trap 2: blaming reaction rate. The cause is thermodynamic: endothermic ionisation, not slow kinetics. Trap 3: thinking a bigger deviation means a stronger weak acid. It's the opposite; a weaker acid has a stronger bond and a bigger deviation.",
+      "mistakeTag": "Where comparison marks slip",
+      "callout": "Weak releases less; it's energy not rate; bigger deviation = weaker acid.",
+      "durationInFrames": 1230,
+      "caption": "Weak gives less heat; thermodynamic not kinetic; bigger deviation = weaker acid.",
+      "voiceover": {
+        "text": "Three traps. Trap one, saying a weak acid releases more heat, or that its smaller temperature rise is because the reaction didn't finish. Both wrong. The weak acid releases less heat, and the reaction goes fully to completion. Trap two, blaming reaction rate or kinetics. The smaller rise has nothing to do with speed. It's purely thermodynamic, the endothermic ionisation step absorbing energy. Confusing rate with energy is a classic conceptual slip. Trap three, thinking a bigger deviation from fifty-seven means a stronger weak acid. It's exactly the opposite. A weaker acid, with a smaller Ka, holds its proton in a stronger bond, so ionising it costs more energy, giving a bigger, more positive deviation. So the acid furthest from fifty-seven is the weakest one, not the strongest."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "ΔHn(HCl + NaOH) = −57 kJ/mol; an unknown acid + NaOH gives −43 kJ/mol. What can you conclude?",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "−43 is far more positive than −57, so much heat was spent on ionisation",
+        "That means the acid is weak (a strong acid would land near −57)",
+        "ΔH(ionisation) = −43 − (−57) = +14 kJ mol⁻¹",
+        "That is a large cost, far above acetic acid's ~+1.6, so it's a very weak acid",
+        "Answer: weak acid, ΔH(ionisation) ≈ +14 kJ/mol, weaker than acetic ✓"
+      ],
+      "durationInFrames": 1110,
+      "caption": "ΔHn −43 → weak acid; ΔH(ionisation) = +14 kJ/mol; weaker than acetic.",
+      "voiceover": {
+        "text": "Quick check. The strong baseline is minus fifty-seven, and an unknown acid with sodium hydroxide gives minus forty-three. What can you conclude? Pause and work it through. Right, let's check it. Minus forty-three is far more positive than minus fifty-seven, meaning a big chunk of the water-forming energy was diverted into ionisation. That tells you the acid is weak, because a strong acid would land right near minus fifty-seven with no ionisation cost. The ionisation enthalpy is the deviation, minus forty-three minus minus fifty-seven, which is plus fourteen kilojoules per mole. That's a large cost, far bigger than acetic acid's roughly plus one-point-six, so this is a very weak acid indeed. One caution, calorimetry tells you it's weak and gives the ionisation energy, but it can't give you Ka. For that you'd measure pH."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Strong + strong is the most exothermic, near the −57 kJ/mol maximum.",
+        "A weak acid or base gives a less negative ΔHn; ionisation costs energy.",
+        "It's thermodynamic, not kinetic; both reactions go to completion.",
+        "ΔH(ionisation) = ΔHn(weak + NaOH) − ΔHn(HCl + NaOH), always positive.",
+        "A weaker acid has a bigger deviation; calorimetry can't give Ka."
+      ],
+      "finalPrompt": "Comparing ΔHn? Remember more negative means more exothermic.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: −57 max, weak gives less, thermodynamic, the deviation formula, weaker=bigger deviation.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, strong acid with strong base is the most exothermic, sitting near the minus fifty-seven kilojoule per mole maximum. Second, a weak acid or base gives a less negative value, because energy is spent ionising it. Third, this is thermodynamic, not kinetic, both reactions still go fully to completion. Fourth, the ionisation enthalpy is the weak value minus the strong baseline, and it's always positive. And fifth, a weaker acid shows a bigger deviation from fifty-seven, and remember calorimetry classifies strong versus weak but can't hand you Ka, that needs pH. That wraps up the first ten lessons of Module six. Great work, and see you next lesson."
+      }
+    }
+  ]
+}

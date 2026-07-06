@@ -1,0 +1,244 @@
+{
+  "title": "Metallic Bonding and Properties",
+  "subtitle": "The electron sea model and alloys",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 8",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "investigate the different chemical structures of atoms and elements, including but not limited to:"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": [
+    "CH11-8",
+    "CH11/12-2",
+    "CH11/12-3",
+    "CH11/12-4",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What binds atoms together in elements and compounds?",
+  "lessonIntent": "Students can explain every metallic property using the electron sea model and predict how alloying changes those properties.",
+  "examSkill": "Use the electron sea model to explain conductivity, malleability, and melting-point trends, and explain why alloys are harder than pure metals.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, metallic bonding and its properties. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Metallic Bonding and Properties (Year 11 Chemistry, Module 1, Lesson 8)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why metals bend instead of shatter",
+      "body": "Copper conducts and draws into thin wire without breaking. Diamond is hard but shatters and won't conduct. Both are regular lattices.",
+      "callout": "One model explains every metallic property at once.",
+      "durationInFrames": 660,
+      "caption": "Metals conduct and deform; diamond is hard but brittle and non-conducting.",
+      "voiceover": {
+        "text": "OK, think about copper. It conducts electricity beautifully, and you can draw it out into a thin wire without it snapping. Now think about diamond. It's incredibly hard, but it won't conduct at all, and a sharp blow shatters it. Both are solids with atoms arranged in a regular lattice, so why do metals behave so differently from a covalent network like diamond? There's one elegant model, the electron sea, that explains conductivity, malleability, ductility, and melting point all at once. Once you've got it, you can answer almost any metallic property question."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "The electron sea model",
+      "body": "Metal atoms release their valence electrons, leaving cations in a shared, mobile sea of electrons.",
+      "bullets": [
+        {
+          "text": "A lattice of positive metal cations."
+        },
+        {
+          "text": "A sea of delocalised valence electrons, free to move."
+        },
+        {
+          "text": "The bond is the attraction between cations and that electron sea."
+        }
+      ],
+      "secondary": "The bond is non-directional — it has no preferred direction. That single fact is the root of malleability and ductility.",
+      "callout": "Cations in a sea of free electrons.",
+      "durationInFrames": 1110,
+      "caption": "Metallic bonding: cations in a sea of delocalised electrons.",
+      "voiceover": {
+        "text": "Here's the model. When metal atoms come together, each one releases its outer valence electrons, and those electrons stop belonging to any single atom, they become delocalised, shared across the whole structure. What's left is a regular lattice of positive metal cations, sitting in a mobile sea of these delocalised electrons. The metallic bond is simply the electrostatic attraction between that cation lattice and the electron sea. The crucial feature is that, unlike an ionic or covalent bond which points between specific particles, the metallic bond is non-directional, it pulls equally in all directions. That one fact, non-directionality, is the root cause of why metals are malleable and ductile."
+      },
+      "diagram": {
+        "type": "latticeVsElectronSea"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "How the model explains each property",
+      "bullets": [
+        {
+          "text": "Conductivity: delocalised electrons drift under a voltage and carry charge."
+        },
+        {
+          "text": "Malleability and ductility: cation layers slide while the electron sea holds them."
+        },
+        {
+          "text": "Thermal conductivity: mobile electrons carry kinetic energy rapidly."
+        },
+        {
+          "text": "Lustre: the free electrons reflect light, giving a shine."
+        }
+      ],
+      "callout": "Free electrons explain conduction; sliding layers explain shaping.",
+      "durationInFrames": 990,
+      "caption": "Electron sea explains conductivity, malleability, ductility, and lustre.",
+      "voiceover": {
+        "text": "Now let's use the model to explain the properties. Electrical conductivity, the delocalised electrons are free to drift through the lattice, so when you apply a voltage they flow as a current. Malleability and ductility, when you hammer or stretch the metal, the layers of cations slide past one another, and because the bond is non-directional, the electron sea simply moves with them and the bonding holds, so the metal deforms instead of breaking. Thermal conductivity, those same mobile electrons pick up kinetic energy at the hot end and carry it rapidly through the metal. And lustre, the free electrons reflect light, which is why polished metals shine. One model, every property."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "Why melting points vary",
+      "body": "Bond strength depends on how many electrons are delocalised, the cation charge, and the ion size.",
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          {
+            "label": "Cs",
+            "value": 29
+          },
+          {
+            "label": "Na",
+            "value": 98
+          },
+          {
+            "label": "Mg",
+            "value": 650
+          },
+          {
+            "label": "Fe",
+            "value": 1538
+          },
+          {
+            "label": "W",
+            "value": 3422
+          }
+        ],
+        "unit": "°C"
+      },
+      "bullets": [
+        {
+          "text": "More delocalised electrons per atom → stronger electron sea."
+        },
+        {
+          "text": "Higher cation charge → stronger pull on the sea."
+        },
+        {
+          "text": "Trend: Cs < Na < Mg < Fe < W."
+        }
+      ],
+      "secondary": "Group 1 metals give one electron each and melt low; transition metals like tungsten give many and melt extremely high.",
+      "callout": "More electrons, higher charge → higher melting point.",
+      "durationInFrames": 1050,
+      "caption": "MP trend: Cs 29 < Na 98 < Mg 650 < Fe 1538 < W 3422 °C.",
+      "voiceover": {
+        "text": "Not all metals melt at the same temperature, and the model explains why. Metallic bond strength depends on how many electrons each atom contributes to the sea, the charge on the cation, and the ion size. Look at the trend. Caesium melts at just twenty-nine degrees, because it gives only one electron and forms a large, low charge ion. Sodium is a bit higher at ninety-eight. Magnesium jumps to six hundred and fifty, because it contributes two electrons and forms a plus two cation. Iron reaches one thousand five hundred and thirty-eight, and tungsten tops out at three thousand four hundred and twenty-two, the highest of any metal, because transition metals pour many electrons into a dense sea around small, highly charged cations. More electrons and higher charge mean stronger bonding and a higher melting point."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Sodium versus magnesium",
+      "question": "Why does magnesium (MP 650°C) melt much higher than sodium (MP 98°C)? Use the electron sea model.",
+      "coachNote": "Compare electrons contributed and cation charge.",
+      "steps": [
+        "Na (Group 1): 1 valence electron, forms Na⁺ (+1)",
+        "Mg (Group 2): 2 valence electrons, forms Mg²⁺ (+2)",
+        "Mg gives a denser electron sea and a higher-charged cation",
+        "Stronger cation–sea attraction → more energy needed to melt",
+        "Answer: Mg's stronger metallic bonding gives the far higher MP ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Mg gives 2 electrons and a 2+ cation, so it melts far above Na.",
+      "voiceover": {
+        "text": "Let's explain why magnesium melts so much higher than sodium. Step one, sodium is in Group one, so each atom releases one valence electron and forms a plus one cation. Step two, magnesium is in Group two, so each atom releases two valence electrons and forms a plus two cation. Step three, magnesium therefore creates a denser electron sea, with twice as many electrons per atom, around cations that carry double the charge. Step four, both of those factors strengthen the attraction between the cations and the sea, so much more thermal energy is needed to break the lattice apart. So magnesium's stronger metallic bonding is exactly why it melts at six hundred and fifty degrees while sodium melts at only ninety-eight."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Why bronze beats pure copper",
+      "question": "Pure copper is soft and malleable; bronze (Cu + ~10% Sn) is much harder. Explain using the electron sea model and alloy structure.",
+      "coachNote": "Foreign atoms of a different size disrupt the lattice.",
+      "steps": [
+        "Pure Cu: a regular lattice of identical-sized cations",
+        "Hammering it: layers slide smoothly, electron sea keeps bonding → soft",
+        "Bronze: ~10% larger Sn atoms distort the regular lattice",
+        "The distortions block layers from sliding past one another",
+        "Answer: lattice distortion makes bronze harder and less malleable ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Different-sized Sn atoms distort the lattice and block layer sliding.",
+      "voiceover": {
+        "text": "Now explain why bronze is harder than pure copper. Step one, pure copper has a regular lattice of identical sized cations, all perfectly uniform. Step two, when you hammer it, those uniform layers slide smoothly past each other while the electron sea keeps the bonding intact, so pure copper is soft and easily shaped. Step three, bronze adds about ten percent tin, and tin atoms are a different size from copper, so they sit in the lattice and distort its regular arrangement. Step four, those distortions act like obstacles, they block the layers from sliding cleanly, so it takes much more force to deform the metal. So the harder, stronger bronze comes from lattice distortion, not from having more atoms. It's the disruption of the regular pattern that does it."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three metallic traps",
+      "body": "Trap 1: writing that metallic bonds break when a metal is hammered. If they broke, it would shatter — the layers slide and the electron sea re-forms.",
+      "secondary": "Trap 2: saying cations move to carry current. The cations stay put; the delocalised electrons drift. Trap 3: thinking alloys are harder because they have more atoms. They're harder because foreign atoms distort the lattice.",
+      "mistakeTag": "Where metallic marks vanish",
+      "callout": "Layers slide, not break; electrons carry current; alloys distort the lattice.",
+      "durationInFrames": 1230,
+      "caption": "Bonds don't break when hammered; electrons carry current; alloys distort the lattice.",
+      "voiceover": {
+        "text": "Three traps. Trap one, writing that the metallic bonds break when you hammer a metal. If the bonds actually broke, the metal would shatter like an ionic crystal, but it doesn't, it bends. What really happens is the cation layers slide and the non-directional electron sea instantly re-forms the attraction, so the bonds reshape, they don't break. Trap two, saying the cations move to carry the current. They don't, the cations stay fixed in place, and it's the delocalised electrons that drift under the voltage. Trap three, thinking alloys are harder because they contain more atoms. They're harder because the foreign atoms are a different size, and they distort the regular lattice so layers can no longer slide easily."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Tungsten (W) has the highest melting point of any metal, 3422°C. Caesium (Cs) has one of the lowest, 29°C. Explain the difference.",
+      "pausePrompt": "Pause and think it through.",
+      "answerSteps": [
+        "Cs (Group 1): contributes 1 electron, forms a large Cs⁺ (+1)",
+        "Weak attraction between a sparse sea and a low-charge, large ion → low MP",
+        "W (transition): contributes ~6 electrons, small, highly-charged cation",
+        "Dense electron sea + high cation charge → very strong metallic bonding",
+        "Answer: W's far stronger cation–sea attraction gives the much higher MP ✓"
+      ],
+      "durationInFrames": 1170,
+      "caption": "W gives many electrons to a dense sea; Cs gives just one — hence the huge MP gap.",
+      "voiceover": {
+        "text": "Quick check. Tungsten has the highest melting point of any metal, three thousand four hundred and twenty-two degrees, while caesium has one of the lowest, just twenty-nine. Explain it with the electron sea model. Pause and think it through. Right, let's check it. Step one, caesium is in Group one, so each atom contributes a single electron and forms a large plus one cation. Step two, that gives a sparse electron sea attracted weakly to a large, low charge ion, so the bonding is weak and the melting point is very low. Step three, tungsten is a transition metal that contributes around six electrons per atom, forming small, highly charged cations. Step four, that produces a very dense electron sea and a strong cation charge, so the metallic bonding is enormously strong. So tungsten's far stronger attraction is exactly why it melts more than three thousand degrees hotter than caesium."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Metallic bonding: cations in a sea of delocalised electrons.",
+        "The non-directional bond explains conductivity, malleability, ductility, lustre.",
+        "MP rises with more delocalised electrons and higher cation charge.",
+        "Trend: Cs < Na < Mg < Fe < W.",
+        "Alloys are harder because different-sized atoms distort the lattice."
+      ],
+      "finalPrompt": "Metal property? Trace it back to the electron sea.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: electron sea model, property explanations, MP trend, alloys.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, metallic bonding is a lattice of cations in a sea of delocalised electrons. Second, because the bond is non-directional, the same model explains conductivity, malleability, ductility, and lustre. Third, the melting point rises with more delocalised electrons per atom and higher cation charge. Fourth, the trend runs caesium, sodium, magnesium, iron, tungsten, from lowest to highest. And fifth, alloys are harder than pure metals because different sized atoms distort the regular lattice and block layers from sliding. Next lesson we tackle covalent compounds, both molecular and network. See you next lesson."
+      }
+    }
+  ]
+}

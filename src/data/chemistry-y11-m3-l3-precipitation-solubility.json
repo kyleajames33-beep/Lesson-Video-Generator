@@ -1,0 +1,305 @@
+{
+  "title": "Precipitation & Solubility Rules",
+  "subtitle": "Predicting when ions stay dissolved — and when they don't",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 3: Reactive Chemistry",
+  "syllabusDotPoints": [
+    "Construct ionic equations for precipitation reactions",
+    "Use solubility rules to predict the products of reactions when two aqueous solutions are mixed"
+  ],
+  "lessonIntent": "Students can predict whether mixing two aqueous solutions produces a precipitate, and write the molecular, full ionic, and net ionic equations.",
+  "examSkill": "Apply the NAGSAG solubility framework, identify spectator ions, and write a balanced net ionic equation for a precipitation reaction.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson `subjects/chemistry/year11/module3/lesson03.html`. Real-world anchor: BaSO4 contrast agent (barium meal — insoluble, safe to swallow). Worked example: BaCl2 + Na2SO4 (verbatim from site). Misconception: 'all ionic compounds dissolve because water is polar' (lattice vs hydration energy).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Precipitation and Solubility Rules — Year 11 Chemistry, Module 3.",
+      "voiceover": {
+        "text": "Precipitation and Solubility Rules. Year eleven Chemistry, Module three.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L3/title.122fa2324a70.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "How can a patient swallow barium and survive?",
+      "body": "Barium is a heavy-metal poison. Yet patients drink barium sulfate before an X-ray of their gut and walk out fine. The trick: BaSO₄ is so insoluble it never dissociates in the body — the toxic Ba²⁺ ions never leave the solid. Solubility, not toxicity, is what made the medicine safe.",
+      "callout": "Whether ions stay locked or swim free decides everything.",
+      "image": "l3HookBariumMeal",
+      "durationInFrames": 1170,
+      "caption": "Barium sulfate is safe because it's insoluble — the ions never escape.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "callout": 780,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's a question that opens the whole lesson. How can a hospital patient swallow barium — a heavy-metal poison — and walk out fine? Doctors give them barium sulfate before an X-ray of the gut. The trick: BaSO four is so insoluble it never dissociates in the body. The toxic barium-two-plus ions stay locked inside the solid and never reach the bloodstream. The patient excretes it unchanged. Solubility, not toxicity, is what makes that medicine safe — and predicting solubility is what this lesson teaches you.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L3/hook.f95eb2890968.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "When ions meet, sometimes they bond again",
+      "body": "Mix two aqueous solutions and you don't always get a reaction. Sometimes the ions just keep swimming. Other times, two ions find each other and bond into an insoluble solid — a precipitate — that drops out of solution. The question is: how do you know in advance?",
+      "bullets": [
+        {
+          "text": "Aqueous ionic compounds dissociate into ions floating freely.",
+          "at": 4
+        },
+        {
+          "text": "Mix two solutions: the ions can re-pair into new combinations.",
+          "at": 11
+        },
+        {
+          "text": "If a new combination is insoluble, it precipitates as a solid.",
+          "at": 19
+        },
+        {
+          "text": "The NAGSAG rules predict which combinations are insoluble.",
+          "at": 27
+        }
+      ],
+      "callout": "Predict the products from the rules — don't memorise every compound.",
+      "durationInFrames": 1260,
+      "caption": "Mixing solutions tests whether new ion pairings stay dissolved or fall out.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1020,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the mechanism. When an ionic compound is aqueous, it has dissociated into separate ions, swimming around in water. Mix two aqueous solutions and you suddenly have four ions in the beaker. They can re-pair into new combinations. If a new combination is soluble, the ions just keep swimming — no reaction. But if a new combination is insoluble, those two ions find each other and lock together as a solid. That solid drops out of solution as a precipitate. NAGSAG is the framework you use to predict which combinations are insoluble.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L3/concept.121d97c0132d.mp3"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "NAGSAG — the solubility framework",
+      "body": "Rather than memorising hundreds of compounds, apply six rules in priority order. Higher rules override lower ones.",
+      "bullets": [
+        {
+          "text": "N — Nitrates: all soluble (no exceptions).",
+          "at": 4
+        },
+        {
+          "text": "A — Ammonium and alkali metals: all soluble.",
+          "at": 9
+        },
+        {
+          "text": "G — Group 17 halides: soluble except with Ag⁺ and Pb²⁺.",
+          "at": 14
+        },
+        {
+          "text": "S — Sulfates: soluble except with Ba²⁺, Pb²⁺, Ca²⁺.",
+          "at": 20
+        },
+        {
+          "text": "A — Acetates: soluble. G — Most others (carbonates, hydroxides, sulfides) insoluble.",
+          "at": 27
+        }
+      ],
+      "callout": "Apply rules top-down. The first match wins.",
+      "image": "l3DefinitionNAGSAG",
+      "durationInFrames": 1260,
+      "caption": "NAGSAG: nitrate, ammonium, halides, sulfates, acetates, others.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1020,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "NAGSAG is the memory aid, six rules applied from the top down. N is for nitrates, which are all soluble with no exceptions. A is for ammonium and alkali metal compounds, also all soluble. G is for the group seventeen halides, the chlorides, bromides and iodides, which are soluble except when paired with silver or lead. S is for sulfates, which are soluble except with barium, lead, or calcium. The second A is for acetates, again all soluble. And the final G covers most other compounds, including carbonates, hydroxides and sulfides, which are generally insoluble. Apply the rules from the top down, and the first match wins."
+      }
+    },
+    {
+      "id": "marginalia-three-equations",
+      "type": "marginalia",
+      "heading": "Three levels of detail in equations",
+      "body": "An HSC question can ask for the molecular, full ionic, or net ionic equation. Think of them like a film at three resolutions: molecular shows the cast, full ionic shows every actor on stage, and net ionic shows just the ones who actually do something.",
+      "callout": "Net ionic = full ionic minus spectator ions.",
+      "notes": [
+        {
+          "text": "molecular = compounds",
+          "position": "top-right"
+        },
+        {
+          "text": "full ionic = all ions",
+          "position": "mid-right"
+        },
+        {
+          "text": "net ionic = chemistry only",
+          "position": "bottom-right"
+        }
+      ],
+      "image": "l3MarginaliaEquationLevels",
+      "durationInFrames": 1140,
+      "caption": "Molecular shows the substances. Net ionic shows the actual reaction.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "callout": 780,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Three levels of detail. Think of them like a film at three resolutions. Molecular shows the cast — names of compounds. Full ionic shows every actor on stage — all the dissociated ions. Net ionic shows just the actors that actually do something — the ones combining into the precipitate. But unlike a film, you can't skip levels. Full ionic comes first; then you cancel spectator ions to reach the net ionic.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L3/marginalia-three-equations.c70c3a0b3028.mp3"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Predicting and writing a precipitation reaction",
+      "question": "Aqueous barium chloride is mixed with aqueous sodium sulfate. Predict whether a precipitate forms. If yes, name it, give its colour, and write the molecular, full ionic, and net ionic equations.",
+      "coachNote": "Target: identify the precipitate from NAGSAG, then strip down to the net ionic.",
+      "unitCancel": {
+        "left": "atoms in",
+        "right": "atoms out",
+        "result": "balanced"
+      },
+      "steps": [
+        "Known: BaCl₂(aq) + Na₂SO₄(aq) mixed.",
+        "Find: precipitate identity + 3 equation forms.",
+        "List ions present: Ba²⁺, Cl⁻, Na⁺, SO₄²⁻.",
+        "Possible new pairs: BaSO₄ and NaCl. Apply NAGSAG.",
+        "NaCl: alkali metal chloride → soluble. BaSO₄: sulfate with Ba²⁺ → insoluble exception → precipitate.",
+        "Formula molecular: BaCl₂(aq) + Na₂SO₄(aq) → BaSO₄(s) + 2NaCl(aq).",
+        "Substitute full ionic: Ba²⁺(aq) + 2Cl⁻(aq) + 2Na⁺(aq) + SO₄²⁻(aq) → BaSO₄(s) + 2Na⁺(aq) + 2Cl⁻(aq).",
+        "Cancel spectators (Na⁺ and Cl⁻ both sides). Answer = Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s) — white precipitate."
+      ],
+      "image": "l3WorkedBaSO4",
+      "durationInFrames": 1440,
+      "caption": "BaSO₄ precipitates white. Net ionic: Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s).",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Let's mix aqueous barium chloride with aqueous sodium sulfate. The target is to identify the precipitate, then strip the equation down to its essentials. First, list the ions floating in the beaker, which are barium two-plus, chloride, sodium, and sulfate. The new pairings would be barium sulfate and sodium chloride, so apply NAGSAG to each. Sodium chloride is an alkali metal chloride, so it stays soluble, but barium sulfate is a sulfate paired with barium, which is the insoluble exception, so a precipitate forms. The molecular equation is barium chloride plus sodium sulfate gives barium sulfate solid plus two sodium chloride. For the full ionic, you write every soluble compound as separate ions, then cancel the spectators, which are sodium and chloride. That leaves the net ionic, barium plus sulfate gives barium sulfate solid, a white precipitate."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"All ionic compounds dissolve because water is polar\"",
+      "body": "Students often think: \"Water dissolves any ionic compound — it's polar.\" That's the wrong instinct. Water dissolves many ionic compounds via ion-dipole interactions, but not all. Solubility is actually the balance between two energies: lattice energy (holding the solid together) and hydration energy (water surrounding the ions). When lattice energy dominates — as in AgCl, BaSO₄, PbI₂ — the compound stays solid no matter how polar the water.",
+      "callout": "Water can't always win against the lattice. NAGSAG tells you when it loses.",
+      "mistakeTag": "Polar-water-dissolves-all",
+      "image": "l3MisconceptionLatticeEnergy",
+      "durationInFrames": 1290,
+      "caption": "Lattice energy can beat hydration energy — and then the compound stays insoluble.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "The trap. Students often think: water dissolves any ionic compound, because water is polar. That's the wrong instinct. Water dissolves many ionic compounds through ion-dipole interactions — but not all. Solubility is actually a tug of war between two energies. Lattice energy holds the solid together. Hydration energy is the energy released when water surrounds free ions. When the lattice energy wins — as it does for silver chloride, barium sulfate, and lead iodide — the compound stays solid, regardless of how polar water is. The fix: instead of relying on intuition, apply NAGSAG.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L3/misconception.ed58b11f6c90.mp3"
+      }
+    },
+    {
+      "id": "lab-footage",
+      "type": "labFootage",
+      "heading": "Mixing AgNO₃ with NaCl",
+      "body": "Two clear, colourless solutions. The instant they meet, a thick white cloud of silver chloride drops out. Ag⁺(aq) + Cl⁻(aq) → AgCl(s) — net ionic in real time.",
+      "image": "l3LabFootageAgCl",
+      "annotations": [
+        {
+          "text": "clear → cloudy white",
+          "position": "top-left"
+        },
+        {
+          "text": "AgCl(s) precipitates",
+          "position": "top-right"
+        },
+        {
+          "text": "Na⁺ and NO₃⁻ stay aqueous",
+          "position": "bottom-right"
+        }
+      ],
+      "durationInFrames": 780,
+      "caption": "Ag⁺(aq) + Cl⁻(aq) → AgCl(s). Spectators: Na⁺ and NO₃⁻.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "visual": 24
+      },
+      "voiceover": {
+        "text": "Precipitation in real time. Two clear, colourless solutions. The instant silver nitrate meets sodium chloride, a thick white cloud of silver chloride drops out. Net ionic equation: silver-plus aqueous plus chloride-minus aqueous gives AgCl solid. The sodium and nitrate ions stay swimming as spectators — they don't appear in the net ionic equation.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L3/lab-footage.89f798209fc4.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "Lead(II) nitrate Pb(NO₃)₂(aq) is mixed with potassium iodide KI(aq). A bright yellow solid forms instantly. Predict the precipitate, write the net ionic equation, and identify the spectator ions.",
+      "pausePrompt": "Pause: list the ions, apply NAGSAG, then strip to net ionic.",
+      "answerSteps": [
+        "Ions present: Pb²⁺, NO₃⁻, K⁺, I⁻.",
+        "Possible pairs: PbI₂ and KNO₃. Apply NAGSAG.",
+        "KNO₃: nitrate (rule N) → soluble. PbI₂: halide with Pb²⁺ (rule G exception) → insoluble.",
+        "Net ionic: Pb²⁺(aq) + 2I⁻(aq) → PbI₂(s) — bright yellow precipitate.",
+        "Answer = spectators are K⁺ and NO₃⁻. They appear unchanged on both sides."
+      ],
+      "image": "l3QuickCheckPbI2",
+      "durationInFrames": 1320,
+      "caption": "PbI₂ precipitates bright yellow. Spectators: K⁺ and NO₃⁻.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 540,
+        "answerInterval": 100
+      },
+      "voiceover": {
+        "text": "Your turn. Lead nitrate is mixed with potassium iodide, and a bright yellow solid forms instantly. Predict the precipitate and write the net ionic equation. Pause now and try it before the answer plays. The ions in the beaker are lead two-plus, nitrate, potassium, and iodide, so the possible new pairs are lead iodide and potassium nitrate. Running NAGSAG, potassium nitrate is soluble, since it's both an alkali metal salt and a nitrate, but lead iodide is the halide exception, so it's insoluble. The net ionic equation is lead two-plus plus two iodide gives PbI two solid, which is that bright yellow precipitate, leaving potassium and nitrate as the spectators."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Ask: which new ion pairing is insoluble? That's your precipitate.",
+      "image": "l3SummaryBadges",
+      "points": [
+        "Aqueous ionic compounds dissociate into free ions; mixing solutions tests new pairings.",
+        "Apply NAGSAG top-down: nitrate, ammonium/alkali, halides, sulfates, acetates, others.",
+        "Solubility = balance of lattice energy vs hydration energy — not just water polarity.",
+        "Three equation forms: molecular (compounds), full ionic (all ions), net ionic (no spectators).",
+        "Spectator ions appear identically on both sides — cancel them to get the net ionic."
+      ],
+      "durationInFrames": 1320,
+      "caption": "Six rules. Three equation forms. One decision rule.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 900,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five things to remember. Aqueous ionic compounds dissociate into separate ions, and mixing two solutions tests new pairings. Apply NAGSAG top-down to predict which pairings are insoluble. Solubility is actually a balance between lattice energy and hydration energy — water polarity isn't enough on its own. Equations come at three levels: molecular shows compounds, full ionic shows every ion, net ionic strips out the spectators. Spectator ions appear identically on both sides — cancel them. Decision rule: ask which new ion pairing is insoluble. That pair is your precipitate.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L3/summary.7a91596d30ec.mp3"
+      }
+    }
+  ]
+}

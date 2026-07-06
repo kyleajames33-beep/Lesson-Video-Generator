@@ -1,0 +1,310 @@
+{
+  "title": "Microbial Testing",
+  "subtitle": "Counting an enemy you cannot see",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 5",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "design and conduct a practical investigation relating to the microbial testing of water or food samples"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-2",
+    "BIO11/12-3",
+    "BIO11/12-4"
+  ],
+  "inquiryQuestion": "How are diseases transmitted?",
+  "lessonIntent": "Students can outline the serial dilution and plate count method, calculate CFU per mL, and identify the variables and controls that make a microbial test valid and reliable.",
+  "examSkill": "Calculate CFU per mL from a plate count, and evaluate the validity and reliability of a microbial testing design.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, microbial testing of water and food. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Microbial Testing (Year 12 Biology, Module 7, Lesson 5)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Deadly water looks exactly like safe water",
+      "body": "Water full of E. coli looks, smells, and tastes identical to clean water. The only way to know is to test.",
+      "callout": "How do you detect an enemy you cannot see?",
+      "image": "bioM7L5AgarColonies",
+      "durationInFrames": 1600,
+      "caption": "Contaminated water is indistinguishable from safe water, so microbial testing is essential.",
+      "voiceover": {
+        "text": "Here's a sobering fact. Water carrying dangerous levels of E. coli, Salmonella, or Cryptosporidium looks, smells, and tastes completely identical to perfectly safe water. The World Health Organization estimates that contaminated water causes around four hundred and eighty-five thousand diarrhoeal deaths every single year, and roughly two point two billion people lack safely managed drinking water. Unlike chemical pollution, microbial contamination is invisible. You can't see it, you can't taste it, and you certainly can't guess your way to safety. The only way to know whether water or food is contaminated is to test directly for the organisms themselves. So how do scientists detect, and actually count, an enemy they can't see? That's the technique we're building today."
+      }
+    },
+    {
+      "id": "concept-indicator",
+      "type": "concept",
+      "heading": "Why test, and why E. coli",
+      "body": "Testing measures whether a sample carries harmful microbes, and at what concentration. E. coli is the key signal.",
+      "bullets": [
+        {
+          "text": "Safe drinking water means fewer than 1 colony forming unit of E. coli per 100 mL."
+        },
+        {
+          "text": "E. coli signals faecal contamination, so other pathogens may be present too."
+        },
+        {
+          "text": "It is chosen because it is easy to culture and easy to count."
+        }
+      ],
+      "secondary": "E. coli is an indicator organism. It may not itself cause disease, but its presence reliably flags a sewage or animal-waste contamination event.",
+      "callout": "One easy-to-count bug that warns of all the rest.",
+      "durationInFrames": 1820,
+      "caption": "Microbial testing measures harmful microbes; E. coli is the faecal indicator organism.",
+      "voiceover": {
+        "text": "So why test, and why is E. coli always the star? Microbial testing determines whether a sample contains harmful microorganisms, and crucially, at what concentration. In Australia, water is considered safe to drink if it contains fewer than one colony forming unit of E. coli per one hundred millilitres. Now here's the clever bit. E. coli itself may not always cause disease, but it lives in the gut, so finding it in water signals faecal contamination, which means other, more dangerous pathogens like Salmonella or Cryptosporidium could well be present too. That's why we call it an indicator organism, it's a warning flag for the whole group. And it's chosen for a practical reason as well, it's easy to culture and easy to count. So one convenient bug warns you about all the rest."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Sample",
+          "Indicator",
+          "Safety standard"
+        ],
+        "rows": [
+          [
+            "Drinking water",
+            "E. coli",
+            "Under 1 CFU per 100 mL"
+          ],
+          [
+            "Recreational water",
+            "Enterococci, E. coli",
+            "Pools: 0 CFU per 100 mL"
+          ],
+          [
+            "Food safety",
+            "Salmonella, Listeria",
+            "Not detected in 25 g"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The terms you need",
+      "bullets": [
+        {
+          "text": "Serial dilution: stepwise dilution of a sample to produce countable colonies."
+        },
+        {
+          "text": "Colony forming unit: a viable cell or cluster that grows into one visible colony."
+        },
+        {
+          "text": "Aseptic technique: methods that prevent contamination of samples and plates."
+        },
+        {
+          "text": "Negative control: a sample expected to show no growth, to detect contamination."
+        }
+      ],
+      "callout": "Dilute to count; one CFU is one visible colony.",
+      "durationInFrames": 1710,
+      "caption": "Serial dilution, colony forming unit, aseptic technique, negative control.",
+      "voiceover": {
+        "text": "Four terms before the method. Serial dilution is the stepwise dilution of a sample, diluting again and again, until the colonies become few enough to count. A colony forming unit, or CFU, is a viable cell, or a small cluster of cells, that grows into one visible colony on the agar, and that's an important subtlety, one colony doesn't necessarily mean exactly one original cell. Aseptic technique is the set of methods that prevent contamination of your samples, plates, and cultures, things like sterile equipment and not talking over open plates. And a negative control is a sample you expect to show no growth at all, used to check that nothing has contaminated your medium. Hold onto these, because the whole protocol is built on them."
+      }
+    },
+    {
+      "id": "concept-method",
+      "type": "concept",
+      "heading": "Serial dilution and plate count",
+      "body": "The core technique dilutes the sample until colonies are countable, then scales the count back up.",
+      "bullets": [
+        {
+          "text": "Collect a measured sample using aseptic technique."
+        },
+        {
+          "text": "Serially dilute: 1 mL into 9 mL gives a tenfold dilution each step."
+        },
+        {
+          "text": "Plate, incubate inverted, then count plates with 30 to 300 colonies."
+        }
+      ],
+      "secondary": "Dilution is needed because a concentrated sample gives confluent, uncountable growth. Plates are inverted so condensation does not drip onto colonies.",
+      "callout": "Too many to count? Dilute until you can.",
+      "durationInFrames": 2010,
+      "caption": "Collect, serially dilute tenfold, plate, incubate inverted, and count 30 to 300.",
+      "voiceover": {
+        "text": "Now the core technique, the serial dilution and plate count. First, you collect a measured volume of water, or a weighed food sample, using aseptic technique throughout to avoid contaminating it. Second, you serially dilute. You transfer one millilitre of sample into nine millilitres of sterile water, which gives a one-in-ten dilution, and then you repeat that to get a hundredfold, a thousandfold, and so on. Why bother? Because a heavily contaminated sample would grow into one confluent, uncountable smear. Diluting it spreads the colonies out until you can actually count them, and the sweet spot is a plate with between thirty and three hundred colonies. Third, you spread a measured amount onto nutrient agar, then incubate the plates upside down, so that condensation doesn't drip down onto your colonies and ruin the count. Finally, you count the plate that falls in that thirty to three hundred range."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "collect",
+            "label": "Collect"
+          },
+          {
+            "id": "dilute",
+            "label": "Dilute"
+          },
+          {
+            "id": "plate",
+            "label": "Plate"
+          },
+          {
+            "id": "count",
+            "label": "Count"
+          }
+        ],
+        "edges": [
+          {
+            "from": "collect",
+            "to": "dilute"
+          },
+          {
+            "from": "dilute",
+            "to": "plate"
+          },
+          {
+            "from": "plate",
+            "to": "count"
+          }
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Calculate CFU per mL",
+      "question": "A plate inoculated with 0.1 mL of a thousandfold (10 to the minus 3) dilution shows 156 colonies. Calculate the concentration of bacteria in the original sample, in CFU per mL.",
+      "coachNote": "CFU per mL equals colony count divided by the volume plated times the dilution factor.",
+      "unitCancel": {
+        "left": "colonies",
+        "right": "mL × dilution",
+        "result": "leaves CFU per mL"
+      },
+      "steps": [
+        "Write the formula: CFU per mL = colony count ÷ (volume plated × dilution factor).",
+        "Substitute: 156 ÷ (0.1 × 10 to the minus 3) = 156 ÷ 0.0001.",
+        "Divide: 156 ÷ 0.0001 = 1 560 000 CFU per mL.",
+        "Express in standard form: 1.56 × 10 to the 6 CFU per mL.",
+        "Answer: the original sample held about 1.56 million bacteria per mL."
+      ],
+      "durationInFrames": 2210,
+      "caption": "156 ÷ (0.1 × 10⁻³) = 1.56 × 10⁶ CFU per mL.",
+      "voiceover": {
+        "text": "Let's do the calculation the HSC will ask for, the CFU per millilitre. A plate was inoculated with nought point one millilitres of a thousandfold dilution, that's ten to the minus three, and it shows one hundred and fifty-six colonies. Find the concentration in the original sample. Start with the formula. CFU per millilitre equals the colony count divided by the volume plated times the dilution factor. Now substitute. That's one hundred and fifty-six divided by nought point one times ten to the minus three, which is one hundred and fifty-six divided by nought point zero zero zero one. Do the division, and you get one million, five hundred and sixty thousand CFU per millilitre. Written in standard form, that's one point five six times ten to the six. So the original sample contained roughly one point five six million bacteria per millilitre. Notice how the units fall out, colonies divided by millilitres leaves CFU per millilitre, which is exactly what you want."
+      }
+    },
+    {
+      "id": "concept-design",
+      "type": "concept",
+      "heading": "Making the test trustworthy",
+      "body": "A strong investigation names its variables, justifies its controls, and maximises validity and reliability.",
+      "bullets": [
+        {
+          "text": "Independent variable: the water source. Dependent variable: the colony count."
+        },
+        {
+          "text": "Controlled: volume plated, agar type, incubation temperature and time."
+        },
+        {
+          "text": "Negative control gives zero colonies; positive control confirms growth works."
+        }
+      ],
+      "secondary": "Validity means it measures what it claims. Reliability means consistent, repeatable results. Use at least three replicates per dilution and average them.",
+      "callout": "Controls catch contamination; replicates buy reliability.",
+      "durationInFrames": 2130,
+      "caption": "Identify variables and controls, and use replicates, to maximise validity and reliability.",
+      "voiceover": {
+        "text": "Knowing the method isn't enough, the exam wants you to design a trustworthy test. A strong investigation does three things, it names its variables, it justifies its controls, and it's built to maximise both validity and reliability. So suppose you're comparing tap water with creek water. Your independent variable is the water source, the thing you deliberately change. Your dependent variable is the colony count in CFU per millilitre. And your controlled variables are everything kept constant, the volume plated, the agar type, and the incubation temperature and time. Then the controls. A negative control, sterile water only, should grow zero colonies, and if it doesn't, you know your equipment was contaminated. A positive control, a known culture, confirms the medium actually supports growth. Finally, remember the difference. Validity means the test measures what it claims to measure. Reliability means consistent, repeatable results, which is why you run at least three replicates per dilution and average them."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Term",
+          "Meaning",
+          "How to maximise"
+        ],
+        "rows": [
+          [
+            "Validity",
+            "Measures what it claims",
+            "Correct controls, aseptic"
+          ],
+          [
+            "Reliability",
+            "Consistent, repeatable",
+            "Replicates, standard volumes"
+          ],
+          [
+            "Accuracy",
+            "Close to true value",
+            "Count 30 to 300, calibrate"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking one CFU always equals exactly one bacterial cell. A clump of cells can grow into a single colony.",
+      "secondary": "Trap 2: skipping serial dilution. A concentrated sample grows into confluent, uncountable growth, so dilution is what makes counting possible. And used plates must never be reopened, they are autoclaved or bleached before disposal.",
+      "mistakeTag": "Where microbial-testing marks vanish",
+      "callout": "One colony can be many cells; always dilute first.",
+      "durationInFrames": 1860,
+      "caption": "One CFU may be several cells; serial dilution is essential; decontaminate plates.",
+      "voiceover": {
+        "text": "Two traps to clear before we finish. Trap one, assuming that one colony forming unit always equals exactly one bacterial cell. It doesn't necessarily. If several cells are clumped together when they land on the agar, they can grow into a single colony, which is precisely why we say colony forming unit rather than cell. Trap two, skipping serial dilution because it seems like a hassle. If you plate a concentrated sample directly, it grows into one confluent, uncountable smear, and your result is meaningless. Dilution is the whole reason you can count at all. And one safety point that's non-negotiable, once a plate has been incubated, you never reopen it. Used cultures are treated as potentially pathogenic and must be autoclaved or soaked in bleach before disposal. Get those right and your method answers stay solid."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A student plates undiluted creek water and gets a confluent lawn of growth that cannot be counted. Their negative control plate, however, shows several colonies. Identify the two problems and how to fix each.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Problem 1: the sample was too concentrated, so growth was confluent and uncountable.",
+        "Fix 1: perform serial dilution and count a plate with 30 to 300 colonies.",
+        "Problem 2: the negative control grew colonies, which signals contamination of equipment or medium.",
+        "Fix 2: repeat using sterile equipment and proper aseptic technique throughout.",
+        "Answer: dilute the sample, and re-run aseptically so the negative control reads zero."
+      ],
+      "durationInFrames": 2090,
+      "caption": "Too concentrated, so dilute; contaminated control, so repeat aseptically.",
+      "voiceover": {
+        "text": "Quick check. A student plates undiluted creek water and gets a confluent lawn of growth that simply can't be counted. And on top of that, their negative control plate shows several colonies. Identify the two problems, and how to fix each. Pause and reason it through. Okay, two separate issues here. Problem one, the sample was far too concentrated, which is why the growth came out as an uncountable lawn. The fix is to perform serial dilution, then count a plate that falls in the thirty to three hundred range. Problem two, the negative control grew colonies, and that should never happen, because a negative control is sterile water and should read zero. Growth there tells you the equipment or medium was contaminated. The fix is to repeat the whole thing using sterile equipment and proper aseptic technique. So the answer is, dilute the sample, and re-run aseptically so that negative control reads zero."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Microbial contamination is invisible; testing is the only way to detect it.",
+        "E. coli is the indicator of faecal contamination, easy to culture and count.",
+        "Serial dilution makes colonies countable; aim for 30 to 300 per plate.",
+        "CFU per mL = colony count ÷ (volume plated × dilution factor).",
+        "Validity is measuring the right thing; reliability comes from replicates."
+      ],
+      "finalPrompt": "Evaluating a microbial test? Check variables, controls, and the dilution maths.",
+      "durationInFrames": 1870,
+      "caption": "Five takeaways: invisible contamination, the indicator, dilution, the formula, design.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, microbial contamination is invisible, so testing is the only reliable way to detect it. Second, E. coli is the indicator organism for faecal contamination, chosen because it's easy to culture and easy to count, and its presence warns that other pathogens may be there. Third, serial dilution is what makes colonies countable, and you aim for a plate with thirty to three hundred. Fourth, the key formula, CFU per millilitre equals the colony count divided by the volume plated times the dilution factor. And fifth, validity is measuring the right thing, while reliability comes from running replicates and averaging. Whenever you evaluate a microbial test, check the variables, the controls, and the dilution maths. Next lesson, we turn to disease in agriculture, starting with plants. See you there."
+      }
+    }
+  ]
+}

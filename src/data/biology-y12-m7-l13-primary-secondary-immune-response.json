@@ -1,0 +1,273 @@
+{
+  "title": "Primary and Secondary Immune Response",
+  "subtitle": "Why the second time you meet a pathogen is so different from the first",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 13",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "explain how the immune system responds after primary exposure to a pathogen, including innate and acquired immunity"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does the human immune system respond to exposure to a pathogen?",
+  "lessonIntent": "Students can compare the primary and secondary immune responses and explain how immunological memory underlies the difference, using Jenner's smallpox work as the historical anchor.",
+  "examSkill": "Compare primary and secondary responses on lag, antibody level, antibody class and outcome, and explain the role of memory cells.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, the primary and secondary immune response. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Primary and Secondary Immune Response (Year 12 Biology, Module 7, Lesson 13)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A milkmaid, a boy, and no smallpox",
+      "body": "In 1796 Jenner gave a boy cowpox, then deliberately exposed him to smallpox. Nothing happened. Why?",
+      "callout": "What was happening inside James Phipps during those six weeks?",
+      "image": "bioM7L13JennerMemory",
+      "durationInFrames": 1845,
+      "caption": "Jenner's 1796 cowpox experiment, the first demonstration of immune memory.",
+      "voiceover": {
+        "text": "OK, here's a story from before anyone knew immune cells even existed. On the fourteenth of May, seventeen ninety-six, Edward Jenner scratched a little cowpox material from a milkmaid into the arm of an eight-year-old boy, James Phipps. The boy got a mild reaction and recovered. Then, six weeks later, Jenner did something that would never be allowed today. He deliberately exposed the boy to smallpox, a disease that killed roughly a third of the people it infected. And nothing happened. Phipps didn't get sick. Jenner had no idea about B cells, or T cells, or memory, he just saw that it worked. So what was actually going on inside that boy during those six weeks? That's the whole story of today, the difference between meeting a pathogen for the first time and meeting it again."
+      }
+    },
+    {
+      "id": "concept-primary",
+      "type": "concept",
+      "heading": "The primary response is slow",
+      "body": "The first time you meet an antigen, your immune system is starting from scratch, and it takes a week or two to ramp up.",
+      "bullets": [
+        {
+          "text": "Lag of 7 to 14 days while the matching B cell is selected and clones up. You met clonal selection in Lesson 11."
+        },
+        {
+          "text": "Antibody level stays relatively low, and the first antibody made is IgM before switching to IgG."
+        },
+        {
+          "text": "Because it's so slow, you usually feel sick before the response peaks."
+        }
+      ],
+      "secondary": "The lasting payoff is the memory cells: long-lived memory B and T cells that quietly persist for years after the infection clears.",
+      "callout": "Slow, low, and you get ill, but memory is being laid down.",
+      "durationInFrames": 2115,
+      "caption": "Primary response: 7 to 14 day lag, low antibody, IgM then IgG, memory cells formed.",
+      "voiceover": {
+        "text": "Let's start with the primary response, which is what happens the very first time your body meets a particular antigen. The key word here is slow. There's a lag of about seven to fourteen days, because your immune system has to find the one B cell whose receptor happens to match this antigen, and then clone it up into a working population. That's the clonal selection you covered back in Lesson eleven. During that lag the antibody level stays fairly low, and the first antibody you produce is IgM, before the response matures and switches to IgG. And because all of this is so slow, here's the consequence, you usually get sick before the response even peaks. But there's a payoff that lasts. At the end of the primary response, your body keeps a reserve of long-lived memory B cells and memory T cells. They don't do much right now, they just wait, sometimes for decades."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Primary immune response: the first adaptive response to a specific antigen; slow, with a 7 to 14 day lag."
+        },
+        {
+          "text": "Secondary immune response: a faster, stronger response on re-exposure to the same antigen."
+        },
+        {
+          "text": "Memory cell: a long-lived B or T cell that persists after the primary response and enables the secondary one."
+        },
+        {
+          "text": "Antibody titre: the measured concentration of specific antibody in the blood over time."
+        }
+      ],
+      "callout": "Memory cells are the bridge between the two responses.",
+      "durationInFrames": 1775,
+      "caption": "Primary response, secondary response, memory cell, antibody titre.",
+      "voiceover": {
+        "text": "Let's pin down the words. The primary immune response is your body's first adaptive response to a specific antigen, the slow one, with that seven to fourteen day lag. The secondary immune response is what you get on re-exposure to the same antigen, and it is faster and stronger. The thing that connects them is the memory cell, a long-lived B or T cell that persists after the primary response and is ready to act if that antigen ever shows up again. And one more term you'll see on graphs, the antibody titre, which just means the measured concentration of specific antibody in the blood. When we plot titre over time, the difference between the first and second exposure becomes really obvious. Memory cells are the bridge, hold onto that idea."
+      }
+    },
+    {
+      "id": "concept-secondary",
+      "type": "concept",
+      "heading": "The secondary response is fast and huge",
+      "body": "On re-exposure, the memory cells are already there and waiting, so the response is dramatically faster and bigger.",
+      "bullets": [
+        {
+          "text": "Lag drops to just 1 to 3 days, because memory cells are pre-selected and present in large numbers."
+        },
+        {
+          "text": "Antibody level climbs 10 to 100 times higher than the primary peak, and it's mostly high-affinity IgG."
+        },
+        {
+          "text": "The pathogen is usually cleared before you ever develop symptoms."
+        }
+      ],
+      "secondary": "Same machinery as the primary response, but pre-built. The entire difference comes down to those pre-existing memory cells.",
+      "callout": "The whole difference is the memory cells waiting in reserve.",
+      "durationInFrames": 1980,
+      "caption": "Secondary response: 1 to 3 day lag, 10 to 100x higher antibody, mostly IgG, cleared before symptoms.",
+      "voiceover": {
+        "text": "Now the secondary response, and this is where the magic happens. When that same antigen turns up a second time, your memory cells are already there, already matched to it, and sitting in much larger numbers than the original naive cell. So the lag collapses, from a week or two, down to just one to three days. The antibody level shoots up, ten to a hundred times higher than the primary peak, and it's mostly the high-quality IgG straight away, not IgM. The result, the pathogen is usually wiped out before you ever notice a single symptom. And here's the thing to really hold onto. It's the exact same machinery as the primary response, B cells turning into plasma cells. The only difference is that it's pre-built. The whole reason the second response is so much better is simply that the memory cells were already waiting."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Time",
+        "yLabel": "Antibody titre",
+        "series": [
+          {
+            "label": "1st exposure (primary)",
+            "color": "inkDim",
+            "points": [
+              [
+                0,
+                0.05
+              ],
+              [
+                0.1,
+                0.06
+              ],
+              [
+                0.2,
+                0.22
+              ],
+              [
+                0.3,
+                0.36
+              ],
+              [
+                0.4,
+                0.34
+              ],
+              [
+                0.5,
+                0.26
+              ],
+              [
+                0.6,
+                0.2
+              ]
+            ]
+          },
+          {
+            "label": "2nd exposure (secondary)",
+            "color": "bio",
+            "points": [
+              [
+                0.55,
+                0.2
+              ],
+              [
+                0.62,
+                0.55
+              ],
+              [
+                0.68,
+                0.92
+              ],
+              [
+                0.78,
+                0.95
+              ],
+              [
+                0.9,
+                0.85
+              ],
+              [
+                1,
+                0.78
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 0.58,
+            "label": "re-exposure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Read the antibody graph",
+      "question": "An antibody-titre graph shows a small slow bump after a first injection, then a fast 50-fold spike after a second injection of the same antigen weeks later. Identify each response and explain the three differences shown.",
+      "coachNote": "Name the responses first, then read off lag, height and the cause.",
+      "steps": [
+        "The first small slow bump is the primary response; the large fast spike is the secondary response.",
+        "Difference 1: lag. The primary takes 7 to 14 days; the secondary takes only 1 to 3 days.",
+        "Difference 2: magnitude. The secondary peak is far higher here, roughly 50 times, and is mostly IgG.",
+        "Difference 3: cause. Memory B cells from the first exposure are pre-selected, so they respond almost immediately.",
+        "Answer: primary then secondary, differing in lag, magnitude and the pre-existing memory cells ✓"
+      ],
+      "durationInFrames": 2250,
+      "caption": "Primary versus secondary read directly from an antibody-titre graph.",
+      "voiceover": {
+        "text": "Let's read a graph, because this is a classic exam task. You're shown an antibody titre curve. After a first injection there's a small, slow bump. Then weeks later, after a second injection of the same antigen, there's a fast spike about fifty times higher. First, name them. That small slow bump is the primary response, and the big fast spike is the secondary response. Now explain the three differences. Difference one is the lag, the primary takes seven to fourteen days to get going, while the secondary takes only one to three days. Difference two is the magnitude, the secondary peak here is roughly fifty times higher, and it's mostly the high-affinity IgG. Difference three is the cause, and this is the mark that separates a good answer. Memory B cells made during the first exposure are already selected and waiting, so on the second exposure they respond almost immediately. Primary, then secondary, differing in lag, in magnitude, and because of those pre-existing memory cells."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking the antibodies themselves provide long-term protection. They fade. It's the memory cells that last.",
+      "secondary": "Trap 2: thinking the secondary response uses some different, special mechanism. It doesn't. It's the same clonal selection and plasma cells as the primary response, just starting from a large pre-selected memory population instead of one rare naive cell.",
+      "mistakeTag": "Memory cells versus antibodies",
+      "callout": "Antibodies fade; memory cells persist. Same mechanism, pre-built.",
+      "durationInFrames": 1830,
+      "caption": "Long-term protection comes from memory cells, not lingering antibodies.",
+      "voiceover": {
+        "text": "Two traps that catch students every year. Trap one, thinking that the antibodies themselves are what protect you long term. They don't. Antibodies are proteins, and they get broken down over weeks to months. If protection depended on antibodies hanging around, immunity would always be temporary. What actually lasts is the memory cells, and they're the ones that crank out a flood of fresh antibodies the moment the pathogen returns. Trap two, imagining the secondary response uses some completely different, special mechanism. It doesn't. It's the very same process as the primary response, clonal selection, B cells becoming plasma cells. The only difference is the starting point. The primary response starts from one rare naive B cell, while the secondary starts from a large, pre-selected memory population. Same machinery, just pre-built and ready to go."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Jenner gave James Phipps cowpox, then exposed him to smallpox six weeks later and he stayed healthy. Using memory cells and cross-reactivity, explain why.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The cowpox exposure triggered a primary response, forming memory B and T cells.",
+        "Cowpox and smallpox share several surface antigens, so those memory cells also recognise smallpox.",
+        "When smallpox was introduced, the memory cells launched a fast secondary response within days.",
+        "High-affinity IgG cleared the virus before it could reach disease-causing levels.",
+        "Answer: cross-reactive memory cells gave Phipps a rapid secondary response to smallpox ✓"
+      ],
+      "durationInFrames": 2005,
+      "caption": "Cross-reactive memory from cowpox drives a fast secondary response to smallpox.",
+      "voiceover": {
+        "text": "Quick check, and it brings us back to James Phipps. Jenner gave him cowpox, then exposed him to smallpox six weeks later, and the boy stayed perfectly healthy. Using memory cells and cross-reactivity, explain why. Pause and reason it through. Right, here's the chain of reasoning. The cowpox exposure triggered a normal primary response, which formed memory B and T cells. Now the clever bit, cowpox and smallpox are closely related viruses that share several surface antigens. So the memory cells raised against cowpox also happen to recognise smallpox, that's cross-reactivity. When the smallpox was introduced, those memory cells launched a fast secondary response within a few days, flooding the blood with high-affinity IgG that cleared the virus before it could ever build up to disease-causing levels. So the answer is, cross-reactive memory cells gave Phipps a rapid secondary response against a virus he had technically never met."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Primary response: first exposure, 7 to 14 day lag, low antibody, IgM then IgG, and you often get ill.",
+        "Secondary response: re-exposure, 1 to 3 day lag, 10 to 100x higher antibody, mostly IgG, usually no symptoms.",
+        "The entire difference is pre-existing memory B and T cells from the primary response.",
+        "Long-term protection comes from memory cells, not from lingering antibodies.",
+        "Jenner's cowpox gave cross-reactive memory that protected against smallpox, the basis of all vaccination."
+      ],
+      "finalPrompt": "Comparing the two responses? Hit lag, antibody level, antibody class, and name the memory cells.",
+      "durationInFrames": 2115,
+      "caption": "Five takeaways: primary, secondary, memory cells, what lasts, and Jenner.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, the primary response is your first exposure, with a seven to fourteen day lag, a low antibody level, IgM switching to IgG, and you often feel ill. Second, the secondary response is on re-exposure, with a one to three day lag, an antibody level ten to a hundred times higher, mostly IgG, and usually no symptoms at all. Third, the entire difference between them comes down to the pre-existing memory B and T cells laid down in the primary response. Fourth, long-term protection comes from those memory cells, not from antibodies that linger, because antibodies fade. And fifth, Jenner's cowpox gave cross-reactive memory that protected against smallpox, and that is the basis of every vaccine ever made, which is exactly where we go next lesson. Whenever you compare the two responses, hit lag, antibody level, antibody class, and name the memory cells. See you next lesson."
+      }
+    }
+  ]
+}

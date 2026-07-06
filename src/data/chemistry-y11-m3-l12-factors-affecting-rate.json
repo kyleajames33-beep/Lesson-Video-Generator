@@ -1,0 +1,264 @@
+{
+  "title": "Factors Affecting Reaction Rate",
+  "subtitle": "How to speed up or slow down a reaction",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 12",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 3: Reactive Chemistry",
+  "syllabusDotPoints": [
+    "Investigate the factors that affect the rate of reactions",
+    "Explain the relationship between collision theory and reaction rate"
+  ],
+  "lessonIntent": "Students can explain how concentration, temperature, surface area, and catalysts affect reaction rate using collision theory.",
+  "examSkill": "Predict and explain how changing conditions affects reaction rate, using collision theory and energy distribution diagrams.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson subjects/chemistry/year11/module3/lesson12.html. Real-world anchor: cooking and enzymes. Uses boltzmannDistribution diagram. Worked example: identify the factor. Misconception: catalysts change delta H.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Factors Affecting Reaction Rate. Year 11 Chemistry, Module 3.",
+      "voiceover": {
+        "text": "Factors Affecting Reaction Rate. Year eleven Chemistry, Module three.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L12/title.4e3a61accd6e.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why does chopped onion cook faster than a whole onion?",
+      "body": "A chef dices an onion into tiny pieces and throws it into a hot pan. It sizzles and browns in seconds. A whole onion left whole would take an hour to cook through. Three factors are at work: smaller pieces mean more surface area, the hot pan means higher temperature, and the browning itself is catalysed by enzymes in the onion. Every time you cook, you are manipulating reaction rate.",
+      "bullets": [
+        {
+          "text": "Diced onion = more surface area = faster reaction.",
+          "at": 4
+        },
+        {
+          "text": "Hot pan = higher temperature = more energetic collisions.",
+          "at": 11
+        },
+        {
+          "text": "Enzymes in the onion act as biological catalysts.",
+          "at": 19
+        },
+        {
+          "text": "Every kitchen trick is a lesson in collision theory.",
+          "at": 27
+        }
+      ],
+      "callout": "Rate is all about effective collisions. You can control it.",
+      "image": "l12HookCooking",
+      "durationInFrames": 1260,
+      "caption": "Dicing, heating, and enzymes all speed up cooking by increasing reaction rate.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "bulletsStart": 90,
+        "callout": 1020,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Why does chopped onion cook faster than a whole onion? A chef dices an onion into tiny pieces and throws it into a hot pan. It sizzles and browns in seconds. A whole onion left whole would take an hour to cook through. Three factors are at work: smaller pieces mean more surface area, the hot pan means higher temperature, and the browning itself is catalysed by enzymes in the onion. Every time you cook, you are manipulating reaction rate.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L12/hook.e1c2577309ca.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Four ways to change the rate",
+      "body": "Think of a crowded nightclub. More people on the dance floor, faster music making everyone move quicker, a bigger floor with more space, or a dance instructor showing easier moves all lead to more successful dances. In chemistry, concentration, temperature, surface area, and catalysts play the same roles. Where the analogy breaks: molecules do not choose their collisions. Every interaction is random and governed by energy and orientation.",
+      "bullets": [
+        {
+          "text": "Concentration: more particles per unit volume = more collisions.",
+          "at": 4
+        },
+        {
+          "text": "Temperature: higher kinetic energy = more molecules exceed Ea.",
+          "at": 12
+        },
+        {
+          "text": "Surface area: more exposed reactant = more collision sites.",
+          "at": 21
+        },
+        {
+          "text": "Catalyst: lowers Ea = more molecules have sufficient energy.",
+          "at": 29
+        }
+      ],
+      "callout": "All four factors increase the frequency of effective collisions.",
+      "diagram": {
+        "type": "boltzmannDistribution",
+        "temperatureLow": 1,
+        "temperatureHigh": 2,
+        "activationEnergy": 1.5,
+        "delay": 0
+      },
+      "durationInFrames": 1440,
+      "caption": "Higher temperature shifts the energy distribution: more molecules exceed Ea.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1200,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Think of a crowded nightclub. More people on the dance floor, faster music making everyone move quicker, a bigger floor with more space, or a dance instructor showing easier moves all lead to more successful dances. In chemistry, concentration, temperature, surface area, and catalysts play the same roles. Where the analogy breaks: molecules do not choose their collisions. Every interaction is random and governed by energy and orientation. All four factors increase the frequency of effective collisions.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L12/concept.7d9655d852d3.mp3"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "How each factor works",
+      "body": "Each factor changes the reaction conditions in a specific way. Understanding the mechanism lets you predict the outcome and choose the right condition for a given purpose.",
+      "bullets": [
+        {
+          "text": "Concentration ↑: particles closer together → collision frequency ↑.",
+          "at": 4
+        },
+        {
+          "text": "Temperature ↑: kinetic energy ↑ → fraction with E ≥ Ea ↑.",
+          "at": 12
+        },
+        {
+          "text": "Surface area ↑: more reactant exposed → collision sites ↑.",
+          "at": 21
+        },
+        {
+          "text": "Catalyst: alternative pathway with lower Ea → rate ↑, ΔH unchanged.",
+          "at": 29
+        }
+      ],
+      "callout": "Know the mechanism. Do not just memorise the factor.",
+      "image": "l12DefinitionFactors",
+      "durationInFrames": 1260,
+      "caption": "Each factor has a distinct mechanism but the same outcome: more effective collisions.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1020,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Each factor changes the reaction conditions in a specific way. Higher concentration means particles are closer together, so collision frequency increases. Higher temperature means higher kinetic energy, so the fraction of molecules with energy greater than or equal to Ea increases. Higher surface area means more reactant is exposed, so collision sites increase. A catalyst provides an alternative pathway with lower activation energy, so rate increases but delta H stays unchanged. Know the mechanism. Do not just memorise the factor.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L12/definition.2e48e01f295f.mp3"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Identify the rate factor",
+      "question": "A student investigates the reaction between magnesium ribbon and hydrochloric acid. In Experiment 1, they use 1.0 mol/L HCl at 25°C with a 5 cm strip of Mg ribbon. The reaction produces 20 cm³ of hydrogen gas in 30 seconds. In Experiment 2, they double the HCl concentration to 2.0 mol/L while keeping everything else the same. Predict what happens to the rate and calculate the new volume of hydrogen produced in 30 seconds. Explain your reasoning using collision theory.",
+      "coachNote": "Target: concentration doubles, so collision frequency doubles and the rate doubles. Twice the rate means twice the H₂ in the same 30 seconds.",
+      "steps": [
+        "Known: Experiment 1: 1.0 mol/L HCl, 25°C, 5 cm Mg ribbon, 20 cm³ H₂ in 30 s. Experiment 2: 2.0 mol/L HCl, same T, same Mg.",
+        "Find: Predict rate change and calculate H₂ volume in 30 s for Experiment 2.",
+        "Formula: Rate ∝ concentration. Doubling concentration doubles collision frequency.",
+        "Substitute: Concentration ×2 → collision frequency ×2 → rate ×2.",
+        "Answer: Rate doubles. H₂ volume in 30 s = 20 × 2 = 40 cm³. Total H₂ possible from complete reaction is unchanged.",
+        "Explanation: More HCl particles per unit volume means more collisions with Mg per second. More effective collisions per second means faster rate."
+      ],
+      "image": "l12WorkedExampleScenarios",
+      "durationInFrames": 1560,
+      "caption": "Match observations to factors and explain using collision theory.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 100
+      },
+      "voiceover": {
+        "text": "A student investigates magnesium plus hydrochloric acid. Experiment one: one molar HCl at twenty five degrees, five centimetres magnesium ribbon, twenty cubic centimetres hydrogen in thirty seconds. Experiment two: two molar HCl, same temperature, same magnesium. Predict rate change and calculate hydrogen volume. Known: concentration doubles. Find: predict rate and volume. Formula: rate is proportional to concentration. Doubling concentration doubles collision frequency. Substitute: concentration times two means collision frequency times two, rate times two. Answer: rate doubles. Hydrogen volume in thirty seconds equals twenty times two equals forty cubic centimetres. Total hydrogen possible is unchanged. Explanation: more HCl particles per unit volume means more collisions with magnesium per second, so faster rate.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L12/worked-example.cce3783aacdd.mp3"
+      },
+      "unitCancel": {
+        "left": "mol/L",
+        "right": "mol/L",
+        "result": "mol/L"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Catalysts change the enthalpy change?",
+      "body": "Wrong instinct: A catalyst changes how much energy is released or absorbed, making the reaction more exothermic or less endothermic. Corrected rule: A catalyst only lowers the activation energy by providing an alternative reaction pathway. The energy of reactants and products stays exactly the same. Enthalpy change is determined by the difference between reactant and product energies. A catalyst cannot change that difference. It speeds up both forward and reverse reactions equally without touching ΔH.",
+      "callout": "Catalyst lowers Ea. It does NOT change ΔH.",
+      "mistakeTag": "Catalyst = energy change trap",
+      "image": "l12MisconceptionCatalyst",
+      "durationInFrames": 1260,
+      "caption": "Catalysts lower Ea but leave ΔH completely unchanged.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Wrong instinct: a catalyst changes how much energy is released or absorbed. Corrected rule: a catalyst only lowers the activation energy by providing an alternative pathway. The energy of reactants and products stays exactly the same. Enthalpy change is the difference between reactant and product energies. A catalyst cannot change that difference. It speeds up both forward and reverse reactions equally without touching delta H.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L12/misconception.3035dc5964ba.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "A reaction between magnesium and hydrochloric acid produces hydrogen gas. Suggest two different ways to increase the rate of this reaction, explain the collision-theory mechanism for each, and state whether either method would change the total amount of hydrogen produced.",
+      "pausePrompt": "Pause: think about concentration, temperature, surface area, and catalysts.",
+      "answerSteps": [
+        "Known: Mg + HCl → H₂ gas.",
+        "Method 1: Increase HCl concentration.",
+        "Mechanism: more HCl particles per unit volume → more collisions with Mg → rate ↑.",
+        "Method 2: Increase temperature OR use Mg powder instead of ribbon.",
+        "Temperature mechanism: higher T → more molecules exceed Ea → rate ↑.",
+        "Surface area mechanism: powder has more exposed Mg → more collision sites → rate ↑.",
+        "Total H₂: unchanged. These factors affect rate, not total yield.",
+        "Answer: increase concentration or temperature/surface area. Rate increases. Total H₂ unchanged."
+      ],
+      "image": "l12QuickCheckMagnesium",
+      "durationInFrames": 1440,
+      "caption": "Two methods to increase rate, with mechanisms, without changing total yield.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 540,
+        "answerInterval": 100
+      },
+      "voiceover": {
+        "text": "Your turn. Magnesium plus hydrochloric acid produces hydrogen gas. Suggest two ways to increase the rate, explain the collision theory mechanism for each, and state whether either one changes the total hydrogen produced. Pause now and work it through. The first method is to increase the HCl concentration, because more acid particles per unit volume means more collisions with the magnesium each second, so the rate goes up. The second method is to raise the temperature or to use magnesium powder, since a higher temperature gives more molecules energy above Ea, while powder exposes far more surface and so more collision sites. In both cases the total hydrogen produced stays the same, because these factors change the rate, not the final yield."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Which factor increases effective collision frequency?",
+      "image": "l12SummaryFactors",
+      "points": [
+        "Concentration ↑: more particles per volume → more collisions.",
+        "Temperature ↑: more molecules exceed Ea → more effective collisions.",
+        "Surface area ↑: more exposed reactant → more collision sites.",
+        "Catalyst: lowers Ea → more molecules have sufficient energy.",
+        "None of these change ΔH or total yield at equilibrium."
+      ],
+      "durationInFrames": 1260,
+      "caption": "Five takeaways and one decision rule for factors affecting rate.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 110,
+        "finalPrompt": 720,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways. One: higher concentration means more particles per volume, so more collisions. Two: higher temperature means more molecules exceed Ea, so more effective collisions. Three: higher surface area means more exposed reactant, so more collision sites. Four: a catalyst lowers Ea, so more molecules have sufficient energy. Five: none of these change delta H or total yield at equilibrium. Decision rule: which factor increases effective collision frequency?",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L12/summary.2420429c4267.mp3"
+      }
+    }
+  ]
+}

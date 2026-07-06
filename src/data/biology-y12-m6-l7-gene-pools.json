@@ -1,0 +1,220 @@
+{
+  "title": "Gene Pools",
+  "subtitle": "Mutation, gene flow and genetic drift",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6 — Genetic Change",
+  "syllabusDotPoints": [
+    "evaluate the effect of mutation, gene flow and genetic drift on the gene pool of populations (ACSBL091, ACSBL092)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-13",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does mutation introduce new alleles into a population?",
+  "lessonIntent": "Students can compare mutation, gene flow and genetic drift, and evaluate which has the strongest effect on a gene pool in a given scenario.",
+  "examSkill": "Identify the process driving an allele-frequency change and evaluate its relative effect using conditional language.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, gene pools, and what changes them. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Gene Pools — Mutation, Gene Flow and Genetic Drift (Year 12 Biology, Module 6, Lesson 7)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "500 species, no selection needed",
+      "body": "Isolated lake fish diverged into hundreds of species, partly by chance, without a new environment selecting for survival.",
+      "callout": "What changes a gene pool even when selection is not the main driver?",
+      "image": "bioM6L7Cichlids",
+      "durationInFrames": 690,
+      "caption": "Lake Victoria cichlids diverged via isolation, drift and sexual selection.",
+      "voiceover": {
+        "text": "Lake Victoria holds one of the fastest bursts of speciation we know of. Roughly five hundred species of cichlid fish evolved there in about fifteen thousand years, an eyeblink in evolutionary terms. Here's how it started. When sub-populations became geographically isolated, gene flow between them stopped. Each isolated group then began with a slightly different sample of alleles, and over generations their gene pools drifted apart, accumulating different allele frequencies for the genes controlling colour vision. That shifted mate preferences and drove the groups further apart. And crucially, none of this required a harsh new environment selecting for survival. So today's question is, what actually changes a gene pool, even when natural selection isn't the main driver?"
+      }
+    },
+    {
+      "id": "concept-population",
+      "type": "concept",
+      "heading": "The gene pool is population-level",
+      "body": "A gene pool is the total set of alleles present in a population. Changing it means changing which alleles exist or how frequent they are.",
+      "bullets": [
+        {"text": "The gene pool is about a whole population, not one organism's genotype."},
+        {"text": "Changing the gene pool means changing which alleles are present or their frequency."},
+        {"text": "Evolution is tracked at population scale, over generations."}
+      ],
+      "secondary": "Mutation, gene flow and genetic drift are all population-level in their consequences, even if some begin with events in a single cell or individual.",
+      "callout": "Population scale, not individual scale.",
+      "durationInFrames": 990,
+      "caption": "A gene pool is the total set of alleles in a population.",
+      "voiceover": {
+        "text": "Let's start with what a gene pool actually is, because it's a population-level idea, and that framing matters. A gene pool is the total set of alleles present across a whole population. So when biologists say a process changes the gene pool, they mean it changes which alleles are present, or how frequent each one is, within that population. This is different from looking at one organism's genotype. Evolution and long-term genetic change are tracked at population scale, across generations, not by examining a single individual. And the three processes we're about to compare, mutation, gene flow, and genetic drift, are all population-level in their consequences, even though some of them begin with an event in just one cell or one individual. So keep your eye on the population, not the individual."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Gene pool: the total collection of alleles present in a population."},
+        {"text": "Allele frequency: how common an allele is relative to other alleles of the same gene."},
+        {"text": "Mutation: the source of new alleles entering the gene pool."},
+        {"text": "Gene flow: movement of alleles between populations through migration and breeding."},
+        {"text": "Genetic drift: random change in allele frequency, strongest in small populations."},
+        {"text": "Founder effect and bottleneck: forms of strong drift from a small starting group or sharp crash."}
+      ],
+      "callout": "Three drivers: mutation adds, gene flow moves, drift randomises.",
+      "durationInFrames": 1140,
+      "caption": "Gene pool, allele frequency, mutation, gene flow, genetic drift, founder effect.",
+      "voiceover": {
+        "text": "Let's pin down the vocabulary, six terms. A gene pool is the total collection of alleles present in a population. Allele frequency is how common a particular allele is, relative to the other alleles of the same gene. Then the three drivers. Mutation is the source of new alleles entering the gene pool. Gene flow is the movement of alleles between populations, through migration and breeding. And genetic drift is random change in allele frequency, which is strongest in small populations. The founder effect and the bottleneck are both examples of strong drift, one from a small starting group colonising a new area, the other from a sharp crash in population size. So the headline you'll keep returning to is, mutation adds new alleles, gene flow moves existing alleles, and drift randomises their frequencies."
+      }
+    },
+    {
+      "id": "concept-three-processes",
+      "type": "concept",
+      "heading": "Three processes, three distinct effects",
+      "body": "Mutation, gene flow and genetic drift each change the gene pool in a different way.",
+      "bullets": [
+        {"text": "Mutation: adds new alleles, but usually changes frequency slowly on its own."},
+        {"text": "Gene flow: moves existing alleles between populations, often reducing differences."},
+        {"text": "Genetic drift: shifts frequencies by chance, and can reduce diversity in small populations."}
+      ],
+      "secondary": "Gene flow transfers alleles but does not create them. Drift is random, not adaptive, so a drifting allele is not necessarily the best one.",
+      "callout": "Add, move, randomise, three different mechanisms.",
+      "durationInFrames": 1050,
+      "caption": "Mutation adds, gene flow transfers, genetic drift randomises.",
+      "voiceover": {
+        "text": "Let's lay the three processes side by side, because each changes the gene pool differently. Mutation adds genuinely new alleles, although on its own it usually changes population frequencies quite slowly. It's essential, though, because without it no new allele ever appears. Gene flow moves existing alleles between populations, when individuals migrate and then breed, and it often reduces the differences between populations by mixing their alleles. Crucially, gene flow transfers alleles, it does not create them. Genetic drift shifts allele frequencies purely by chance, the random sampling of who survives and reproduces, and in small populations it can sharply change frequencies and even reduce genetic diversity. And remember, drift is random, not adaptive, so an allele that becomes common by drift is not necessarily the best one. Add, move, randomise, three distinct mechanisms."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Process",
+          "Effect on gene pool",
+          "Key idea"
+        ],
+        "rows": [
+          [
+            "Mutation",
+            "Adds new alleles",
+            "Source of novelty"
+          ],
+          [
+            "Gene flow",
+            "Moves alleles between populations",
+            "Transfers, does not create"
+          ],
+          [
+            "Genetic drift",
+            "Changes frequency by chance",
+            "Random, strongest in small populations"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-drift",
+      "type": "concept",
+      "heading": "Drift dominates in small populations",
+      "body": "Genetic drift matters most when populations are small, because chance has more power to shift frequencies sharply.",
+      "bullets": [
+        {"text": "In large populations, chance events tend to average out."},
+        {"text": "In small populations, chance can sharply change frequencies each generation."},
+        {"text": "Founder effects and bottlenecks are important examples of strong drift."}
+      ],
+      "secondary": "In a small founding group, the alleles those founders happen to carry can become common even if they offer no advantage. Drift is not adaptation.",
+      "callout": "Small population, big role for chance.",
+      "durationInFrames": 990,
+      "caption": "Drift is strongest in small populations; founder effects and bottlenecks.",
+      "voiceover": {
+        "text": "Now let's see when genetic drift really takes over, because it's all about population size. In a large population, chance events tend to average out, one unlucky death here is balanced by a lucky survival there, so allele frequencies stay relatively stable. But in a small population, chance has far more power, it can shift allele frequencies sharply from one generation to the next. That's why founder effects and bottlenecks are such important examples of drift. In a founder effect, a small group colonises a new area, and the particular alleles those few founders happen to carry can become unusually common, even if they're not advantageous in any way. A bottleneck is similar, a sharp crash leaves only a few survivors carrying a limited sample of alleles. And the key reminder, drift is random, it is not adaptation, so a common allele isn't automatically the best one."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Identify the process",
+      "question": "Name the process for each: (a) a new allele appears in a population for the first time; (b) migrating birds breed into a population and change its allele frequencies; (c) a disease crashes a population and surviving frequencies differ by chance; (d) a few founders colonise an island and their alleles become common.",
+      "coachNote": "Ask: created (mutation), moved between populations (gene flow), or random in a small population (drift)?",
+      "steps": [
+        "(a) A brand new allele appearing is mutation.",
+        "(b) Alleles arriving with migrants is gene flow.",
+        "(c) A crash with chance survival is genetic drift, a bottleneck.",
+        "(d) Founders' alleles becoming common is genetic drift, a founder effect.",
+        "Answer: (a) mutation, (b) gene flow, (c) drift bottleneck, (d) drift founder effect."
+      ],
+      "durationInFrames": 1080,
+      "caption": "(a) mutation, (b) gene flow, (c) drift bottleneck, (d) drift founder effect.",
+      "voiceover": {
+        "text": "Let's identify the process behind four changes. The test is, was the allele created, moved between populations, or shifted randomly in a small population. Part a, a new allele appears in a population for the first time. Created from nothing means mutation. Part b, migrating birds breed into a population and change its allele frequencies. Alleles arriving with migrants is gene flow. Part c, a disease crashes a population and the surviving allele frequencies differ by chance. A sharp crash with random survival is genetic drift, specifically a bottleneck. Part d, a few founders colonise an island and their alleles become common. That's genetic drift too, but the founder-effect version, where the colonisers' alleles dominate by chance. So the answers are mutation, gene flow, drift bottleneck, and drift founder effect. Notice drift shows up twice, as bottleneck and as founder effect."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The big traps",
+      "body": "Trap 1: calling genetic drift adaptive. Drift is random; it does not select the best allele, and a drifting allele can spread despite no advantage.",
+      "secondary": "Trap 2: treating gene flow as a source of new alleles. Gene flow only moves existing alleles between populations. Trap 3: saying one process always dominates. Relative importance depends on the scenario, especially population size and migration rate.",
+      "mistakeTag": "Where gene-pool marks vanish",
+      "callout": "Drift is random; gene flow moves, never creates.",
+      "durationInFrames": 1020,
+      "caption": "Drift is not adaptive; gene flow does not create alleles; importance is conditional.",
+      "voiceover": {
+        "text": "Three traps that lose marks. Trap one, calling genetic drift an adaptive process. It is not. Drift is random, it does not select the best allele, and an allele can become common by drift while offering no advantage at all. If you describe drift as choosing the fittest allele, you've described natural selection by mistake. Trap two, treating gene flow as a source of new alleles. Gene flow only moves alleles that already exist from one population to another, it never creates them, only mutation does that. And trap three, claiming that one process always dominates. The correct, examiner-pleasing position is conditional, the relative importance of mutation, gene flow and drift depends on the scenario, especially the population size and the migration rate. So use conditional language, and never crown one process as always strongest."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Why can genetic drift have a stronger short-term effect than mutation in a very small isolated population? Explain, then say why mutation still matters.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "In a small population, chance events sharply change allele frequencies each generation.",
+        "Random survival and reproduction have a large proportional effect when numbers are small.",
+        "Mutation still matters because it is the source of new alleles.",
+        "But mutation alone usually changes population frequency more slowly than strong drift.",
+        "Answer: drift can dominate short-term in a small population, while mutation remains essential long-term."
+      ],
+      "durationInFrames": 1080,
+      "caption": "Drift dominates short-term in small populations; mutation is essential long-term.",
+      "voiceover": {
+        "text": "Quick check. Why can genetic drift have a stronger short-term effect than mutation in a very small isolated population? Explain it, then say why mutation still matters. Pause and reason it through. Right. In a very small population, chance events can sharply change allele frequencies from one generation to the next. The reason is proportional, when the numbers are small, a single random death or a single lucky breeding success has a large effect on the overall frequencies. So drift can swing things fast. Mutation, by contrast, still matters because it's the source of new alleles, without it no genuinely new variant ever appears. But mutation on its own usually changes population frequencies quite slowly. So putting it together, in a small isolated population drift can dominate the short-term allele-frequency change, while mutation remains essential for long-term novelty. That's the balanced, conditional answer the exam wants."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "The gene pool is the total set of alleles in a population, tracked at population scale.",
+        "Mutation adds new alleles; gene flow moves existing alleles; drift randomises frequencies.",
+        "Genetic drift is random, not adaptive, and strongest in small populations.",
+        "Founder effects and bottlenecks are examples of strong drift.",
+        "Which process dominates depends on the scenario, so use conditional language."
+      ],
+      "finalPrompt": "Evaluating a gene-pool change? Check population size and migration before ranking.",
+      "durationInFrames": 1020,
+      "caption": "Five takeaways: population-level, three processes, drift random, founder/bottleneck, conditional.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, the gene pool is the total set of alleles in a population, and it's tracked at population scale, not individual scale. Second, the three processes, mutation adds new alleles, gene flow moves existing alleles between populations, and drift randomises frequencies. Third, genetic drift is random, not adaptive, and it's strongest in small populations. Fourth, founder effects and bottlenecks are the key examples of strong drift. And fifth, which process dominates depends entirely on the scenario, so use conditional language rather than crowning one as always strongest. When you evaluate a gene-pool change, check the population size and the migration rate before you rank anything. See you next lesson."
+      }
+    }
+  ]
+}

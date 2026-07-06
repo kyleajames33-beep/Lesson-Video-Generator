@@ -1,0 +1,216 @@
+{
+  "title": "Hess's Law Applied, Heat of Combustion & Consolidation",
+  "subtitle": "Using formation enthalpies and Hess together",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Lesson 10",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Apply Hess's Law and standard enthalpies of formation to calculate the heat of combustion of fuels"
+  ],
+  "lessonIntent": "Students can combine the formation-enthalpy method (L7) with Hess's Law manipulations (L8) to calculate heats of combustion of fuels.",
+  "examSkill": "Choose between two methods (Hess via given equations, or ΔH°f table) and execute either to find a heat of combustion.",
+  "productionRole": "production",
+  "productionNotes": "Consolidation lesson, synthesises L6 (bond energy), L7 (formation enthalpy), L8 (Hess's Law), L9 (reverse). Anchor: which method to use when. Worked example: heat of combustion of ethanol (C2H5OH + 3O2 → 2CO2 + 3H2O) using ΔH°f table. Misconception: 'there's one right method' (both Hess via given equations and ΔH°f give the same answer, choose by what you're given).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Hess's Law Applied, Heat of Combustion. Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Hess's Law applied. Heat of Combustion and Consolidation. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L10/title.e37909fd71f7.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Which method do you reach for first?",
+      "body": "You now have three ways to find ΔH for a reaction: bond energies, formation enthalpies, or Hess's Law from given equations. This lesson is the consolidation, when each one is the right tool.",
+      "bullets": [
+        {
+          "text": "Bond energies → when you're given bond-energy values (L6).",
+          "at": 5
+        },
+        {
+          "text": "Formation enthalpies → when you have a ΔH°f table (L7).",
+          "at": 12
+        },
+        {
+          "text": "Hess's Law from equations → when you're given other reactions (L8).",
+          "at": 20
+        },
+        {
+          "text": "All three are Hess's Law in different disguises.",
+          "at": 28
+        }
+      ],
+      "callout": "Choose the method by what the question gives you.",
+      "image": "m4l10HookToolbox",
+      "durationInFrames": 1320,
+      "caption": "Three methods to find ΔH; the data you're given decides which.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 1080,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's where everything comes together. You now have three different ways to find delta H for a reaction. Bond energies, from Lesson six. Standard enthalpies of formation, from Lesson seven. And Hess's Law from given equations, from Lesson eight. This lesson is the consolidation — when to reach for each one. The answer is simple: pick the method that matches the data the question gives you. And in the end, all three are Hess's Law in different disguises.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L10/hook.0d6f2e636cb3.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "The decision tree",
+      "body": "Look at what the question hands you. The answer is in the data.",
+      "bullets": [
+        {
+          "text": "Given bond-energy values? → ΔH = Σ(bonds broken) − Σ(bonds formed).",
+          "at": 5
+        },
+        {
+          "text": "Given a table of ΔH°f? → ΔH = Σ ΔH°f(products) − Σ ΔH°f(reactants).",
+          "at": 13
+        },
+        {
+          "text": "Given 2, 3 thermochemical equations? → reverse + scale + add.",
+          "at": 21
+        },
+        {
+          "text": "All three rely on Hess's Law, path independence.",
+          "at": 28
+        }
+      ],
+      "callout": "Read the question. The data tells you the method.",
+      "durationInFrames": 1530,
+      "caption": "Decision tree: bond energies, ΔH°f, or Hess from equations.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1110,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Think of the three methods like three GPS routes to the same destination. But unlike GPS, you don't get to choose — the data in the question picks the route for you. Bond-energy values in the question — use sum of bonds broken minus sum of bonds formed. A table of standard formation enthalpies — use products minus reactants from the table. Two or three thermochemical equations — reverse and scale to match the target, then add their delta H values. Three methods, all rely on Hess's Law underneath: enthalpy is path-independent, so any valid route gives the same answer.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L10/concept.41541e86f4fd.mp3"
+      },
+      "diagram": {
+        "type": "hessCycle"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Heat of combustion of ethanol from ΔH°f",
+      "question": "Calculate the heat of combustion of ethanol: C₂H₅OH(l) + 3O₂(g) → 2CO₂(g) + 3H₂O(l). Use: ΔH°f[C₂H₅OH(l)] = −277, ΔH°f[O₂] = 0, ΔH°f[CO₂] = −393.5, ΔH°f[H₂O(l)] = −285.8 kJ mol⁻¹.",
+      "coachNote": "Use the formation-enthalpy method (L7). Scale by coefficients; O₂ drops out.",
+      "unitCancel": {
+        "left": "kJ mol⁻¹",
+        "right": "kJ mol⁻¹",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: ΔH°f values for ethanol, O₂, CO₂, H₂O(l).",
+        "Find: heat of combustion of ethanol, ΔH.",
+        "Σ ΔH°f(products): 2×(−393.5) + 3×(−285.8) = −787.0 − 857.4 = −1644.4 kJ.",
+        "Σ ΔH°f(reactants): 1×(−277) + 3×(0) = −277 kJ.",
+        "Formula: ΔH = Σ ΔH°f(products) − Σ ΔH°f(reactants).",
+        "Substitute: ΔH = −1644.4 − (−277) = −1644.4 + 277.",
+        "Answer: ΔH = 1367 kJ mol⁻¹ released (i.e. −1367 kJ mol⁻¹, exothermic)."
+      ],
+      "durationInFrames": 1620,
+      "caption": "ΔHc(ethanol) = −1644.4 − (−277) = −1367 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Let's combine the methods. Find the heat of combustion of ethanol using a delta H of formation table. Sum the products first — two times minus three-ninety-three-point-five for CO two, plus three times minus two-eighty-five-point-eight for water — that's minus sixteen hundred and forty-four-point-four kilojoules. Sum the reactants — one times minus two-seventy-seven for ethanol, plus three times zero for O two — minus two-seventy-seven. Delta H equals products minus reactants — minus sixteen-forty-four-point-four minus negative two-seventy-seven — which is minus one thousand three hundred and sixty-seven kilojoules per mole. The same value you'd get from a calorimetry experiment, no flame required.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L10/worked-example.8f11292b43d7.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"There's one correct method for ΔH\"",
+      "body": "Students often think: \"My teacher must want a specific method, bond energies, or formation, or Hess. I have to guess the right one.\" That's the wrong instinct. The correct rule: every valid method gives the same ΔH (Hess's Law guarantees it). The method to use is whichever matches the data you're given. The answer is in the question, not in a hidden preference.",
+      "callout": "Every valid method gives the same ΔH. Choose by the data.",
+      "mistakeTag": "One-true-method trap",
+      "durationInFrames": 1320,
+      "caption": "All valid methods give the same ΔH, choose by what you're given.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the trap. Students think: my teacher must want a specific method — bond energies, or formation enthalpies, or Hess from equations — and I have to guess which. Wrong instinct. The correct rule: every valid method gives the same delta H. That's literally what Hess's Law guarantees. The method you use is whichever matches the data the question gives you. If they give you bond energies, use bond energies. A formation table, use formation. Equations, use Hess. The answer is in the data, not in a hidden preference.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L10/misconception.676a16e5e0b9.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "A question gives you ΔH for ethyne combustion (−1300 kJ mol⁻¹) and ΔH for ethane combustion (−1560 kJ mol⁻¹), then asks for ΔH of the hydrogenation of ethyne: C₂H₂ + 2H₂ → C₂H₆. Which method do you use, and why?",
+      "pausePrompt": "Pause: look at what you've been given. What method fits?",
+      "answerSteps": [
+        "Given: two combustion ΔH values for ethyne and ethane.",
+        "Target: hydrogenation reaction (C₂H₂ + 2H₂ → C₂H₆).",
+        "No bond energies, no ΔH°f table, only equations and their ΔH.",
+        "Method choice: Hess's Law from given equations (reverse + scale + add).",
+        "Answer: use Hess from given combustion equations, set up so C₂H₂ + 2H₂ → C₂H₆ comes out after reversing the ethane combustion."
+      ],
+      "durationInFrames": 1380,
+      "caption": "Method choice: Hess from given equations (no table, no bond energies).",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 600,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Your turn — but this one's about method choice, not calculation. The question gives you delta H for ethyne combustion and ethane combustion, and asks for delta H of the hydrogenation of ethyne. Pause and decide: which method do you use? You weren't given bond energies. You weren't given a formation table. You were given two thermochemical equations with their delta H values. That's the Hess-from-equations setup. You'd reverse the ethane combustion to get ethane as a product, then add it to the ethyne combustion, and the right combination produces the hydrogenation reaction.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L10/quick-check.0914064daec4.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Check the data first: bond energies, ΔH°f table, or other equations? That picks your method.",
+      "points": [
+        "Three methods to find ΔH: bond energies, ΔH°f, Hess from equations.",
+        "All three rely on Hess's Law, they always give the same answer.",
+        "Use bond energies when the question gives bond-energy values.",
+        "Use ΔH°f when you're given a formation table.",
+        "Use Hess from equations when you're given 2, 3 thermochemical equations."
+      ],
+      "durationInFrames": 1320,
+      "caption": "Three methods, one underlying law, one decision rule.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways. One: three methods to find delta H — bond energies, formation enthalpies, or Hess from given equations. Two: all three rely on Hess's Law underneath — they always give the same answer. Three: use bond energies when the question gives bond-energy values. Four: use formation enthalpies when you're given a delta H of formation table. Five: use Hess from equations when you're given two or three thermochemical equations. Decision rule: check the data first — that picks your method automatically.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L10/summary.97e1309b3f97.mp3"
+      }
+    }
+  ]
+}

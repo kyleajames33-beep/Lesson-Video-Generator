@@ -1,0 +1,266 @@
+{
+  "title": "Glucose Regulation",
+  "subtitle": "Insulin, glucagon and the pancreatic feedback system",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "investigate the various mechanisms used by organisms to maintain their internal environment within tolerance limits, including the regulation of blood glucose (ACSBL101, ACSBL110, ACSBL111)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How is an organism's internal environment maintained in response to a changing external environment?",
+  "lessonIntent": "Students can describe the two opposing negative feedback loops that regulate blood glucose and identify the receptor, hormone, and effector in each.",
+  "examSkill": "Trace the full glucose feedback pathway after a meal and after fasting, and explain mechanistically why Type 1 and Type 2 diabetes both cause hyperglycaemia.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, glucose regulation. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Glucose Regulation (Year 12 Biology, Module 8, Lesson 3)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why doesn't glucose crash mid-race?",
+      "body": "Sprinting muscles burn glucose 20 times faster than at rest, enough to drain the blood supply in seconds. Yet the level holds.",
+      "callout": "Demand exploded, but the number barely moved.",
+      "image": "bioM8L3RunnerGlucose",
+      "durationInFrames": 2025,
+      "caption": "During Bannister's sub-4-minute mile, glucose use rose 20-fold yet blood glucose held steady.",
+      "voiceover": {
+        "text": "When Roger Bannister ran the first sub-four-minute mile on the sixth of May 1954, his muscles were burning glucose at about twenty times their resting rate. That is fast enough, on paper, to empty his entire blood glucose supply in roughly thirty seconds. And yet, throughout the whole race, his blood glucose stayed inside the normal range of four to six millimoles per litre. So what kept it there? Not the brain, not the muscles, but the pancreas. While he ran, the pancreas was sensing the falling glucose and pumping out a hormone to mobilise stored fuel from the liver, fast enough to exactly match what his legs were consuming. Today we open up that pancreatic feedback system, the two hormones, the organ that actually changes the glucose level, and what happens when this beautifully tuned loop breaks down into diabetes."
+      }
+    },
+    {
+      "id": "concept-pancreas",
+      "type": "concept",
+      "heading": "The pancreas senses, the liver acts",
+      "body": "The pancreatic islets are the receptor and control centre. The liver is the effector that physically changes blood glucose.",
+      "bullets": [
+        {
+          "text": "Beta cells in the islets detect high glucose and release insulin."
+        },
+        {
+          "text": "Alpha cells in the islets detect low glucose and release glucagon."
+        },
+        {
+          "text": "Both hormones travel to the liver, which actually stores or releases glucose."
+        }
+      ],
+      "secondary": "The pancreas is the sensor and signaller. The liver is the effector. Confusing the two is a classic mark-loser.",
+      "callout": "Pancreas detects and signals. Liver does the work.",
+      "durationInFrames": 2190,
+      "caption": "Pancreatic islets sense glucose; the liver is the effector.",
+      "voiceover": {
+        "text": "So let's lay out the machinery, and the key is to separate sensing from acting. The control of blood glucose is run by tiny clusters of cells in the pancreas called the islets of Langerhans. Inside them are two cell types that do the sensing. Beta cells detect when blood glucose is too high, and respond by releasing insulin. Alpha cells detect when blood glucose is too low, and respond by releasing glucagon. So the pancreas is acting as both the receptor and the control centre, it detects the change and sends out the hormonal signal. But, and this is the part students drop marks on, the pancreas does not actually change the glucose level itself. Both hormones travel in the blood to the liver, and it is the liver that is the effector, physically storing glucose away or releasing it back into the blood. Pancreas senses and signals, liver does the work."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Insulin: hormone from beta cells that lowers blood glucose by driving uptake and glycogenesis."
+        },
+        {
+          "text": "Glucagon: hormone from alpha cells that raises blood glucose by triggering glycogenolysis."
+        },
+        {
+          "text": "Glycogenesis: building glycogen from glucose for storage when glucose is high."
+        },
+        {
+          "text": "Glycogenolysis: breaking glycogen back down into glucose when glucose is low."
+        }
+      ],
+      "callout": "Genesis builds glycogen. Lysis breaks it down.",
+      "durationInFrames": 1920,
+      "caption": "Insulin, glucagon, glycogenesis, glycogenolysis.",
+      "voiceover": {
+        "text": "Let's pin down four terms that the whole topic rests on. Insulin is the hormone from beta cells that lowers blood glucose, by signalling body cells to take glucose up, and signalling the liver to store it. Glucagon is the hormone from alpha cells that raises blood glucose, by triggering the liver to release stored fuel. Then the two liver processes, and the names sound similar so be careful. Glycogenesis, with genesis, means building glycogen from glucose, locking glucose away into storage when there is too much of it. Glycogenolysis, with lysis, means breaking glycogen back down into glucose, releasing it when there is too little. A quick memory cue, genesis builds glycogen up, lysis breaks it down. And a useful pairing for the cells, beta cells, blood glucose too high, bring it down."
+      }
+    },
+    {
+      "id": "concept-two-loops",
+      "type": "concept",
+      "heading": "Two opposing feedback loops",
+      "body": "Glucose is held steady by two negative feedback loops working in opposite directions around a 5 mmol/L set point.",
+      "bullets": [
+        {
+          "text": "High glucose: beta cells, insulin, cells take up glucose and the liver does glycogenesis, glucose falls."
+        },
+        {
+          "text": "Low glucose: alpha cells, glucagon, the liver does glycogenolysis, glucose rises."
+        },
+        {
+          "text": "Each loop is self-limiting, so the level oscillates gently around the set point."
+        }
+      ],
+      "secondary": "Both are negative feedback. As glucose returns to normal, the hormone signal fades and the response winds down.",
+      "callout": "One loop pushes glucose down, the other pushes it up.",
+      "durationInFrames": 2175,
+      "caption": "Two opposing negative feedback loops keep glucose near 5 mmol/L.",
+      "voiceover": {
+        "text": "Here is the elegant part, glucose is held steady by two negative feedback loops pulling in opposite directions, around a set point of about five millimoles per litre. Loop one handles glucose being too high, say after a meal. Beta cells detect the rise and release insulin, insulin tells body cells to take glucose up and tells the liver to run glycogenesis, storing glucose as glycogen, and the level falls back down. Loop two handles glucose being too low, say during exercise or fasting. Alpha cells detect the fall and release glucagon, glucagon tells the liver to run glycogenolysis, breaking glycogen back into glucose and releasing it, so the level rises back up. Both are textbook negative feedback, because as glucose returns toward normal, the hormone signal fades and the response winds down on its own. The result is that gentle oscillation around the set point you can see on the graph."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Time",
+        "yLabel": "Blood glucose",
+        "series": [
+          {
+            "label": "Blood glucose",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0.5
+              ],
+              [
+                0.12,
+                0.78
+              ],
+              [
+                0.26,
+                0.5
+              ],
+              [
+                0.4,
+                0.32
+              ],
+              [
+                0.55,
+                0.5
+              ],
+              [
+                0.7,
+                0.74
+              ],
+              [
+                0.85,
+                0.5
+              ],
+              [
+                1,
+                0.4
+              ]
+            ]
+          }
+        ],
+        "hLines": [
+          {
+            "y": 0.5,
+            "label": "set point ~5 mmol/L"
+          }
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Trace the post-meal pathway",
+      "question": "Describe the complete negative feedback pathway that returns blood glucose to normal after a sugary meal. Name the stimulus, the receptor, the hormone, the effector, the process, and the response.",
+      "coachNote": "Build the loop in order, and finish by saying why it is negative feedback.",
+      "steps": [
+        "Stimulus: blood glucose rises above the tolerance range after the meal.",
+        "Receptor: beta cells in the pancreatic islets detect the rise and secrete insulin.",
+        "Effector and process: body cells take up glucose, and the liver runs glycogenesis, storing glucose as glycogen.",
+        "Response: blood glucose falls back toward the set point of about 5 mmol/L.",
+        "It is negative feedback because the response opposes the original rise ✓"
+      ],
+      "durationInFrames": 2040,
+      "caption": "Post-meal: beta cells, insulin, liver glycogenesis, glucose falls.",
+      "voiceover": {
+        "text": "Let's trace the full post-meal pathway, because this is the bread-and-butter five-mark question. Start with the stimulus, after a sugary meal blood glucose rises above the tolerance range. The receptor comes next, the beta cells in the pancreatic islets detect that rise, and secrete insulin into the blood. Then the effector and the process, insulin reaches body cells and tells them to take glucose up for respiration, and it reaches the liver, which runs glycogenesis, converting glucose into glycogen for storage. The response follows, blood glucose falls back toward the set point of about five millimoles per litre. And finally, name the feedback type and justify it, this is negative feedback because the whole response, lowering glucose, opposes the original stimulus, which was glucose rising. Notice that is exactly the five-component structure from Lesson One, just dressed in hormones and an organ."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Type 1 versus Type 2 diabetes",
+      "question": "Both types of diabetes cause chronic high blood glucose. Identify which part of the feedback loop fails in each, and explain why the same symptom arises from different mechanisms.",
+      "coachNote": "Map each disease onto a specific broken step of the loop.",
+      "steps": [
+        "Type 1: autoimmune destruction of beta cells means little or no insulin is produced, so step 2 of the loop fails.",
+        "Type 2: cells become resistant to insulin, so insulin is present but the target cells do not respond, step 3 fails.",
+        "In both, the high-glucose loop cannot bring glucose down, so it stays chronically elevated (hyperglycaemia).",
+        "Treatment differs: Type 1 needs injected insulin; Type 2 is managed first with lifestyle and medication.",
+        "Answer: Type 1 fails at insulin production; Type 2 fails at insulin response ✓"
+      ],
+      "durationInFrames": 2280,
+      "caption": "Type 1 fails at insulin production; Type 2 fails at the cells' response.",
+      "voiceover": {
+        "text": "Now the Module Eight payoff, what happens when this loop breaks. Both Type One and Type Two diabetes share the same end result, chronically high blood glucose, but the mechanism is completely different, and exams reward that distinction. In Type One diabetes, the immune system destroys the beta cells, so the body produces little or no insulin at all. That breaks step two of the loop, the signal is never sent. In Type Two diabetes, the beta cells still work and insulin is present, but the body cells have become resistant to it, they no longer respond properly. That breaks step three, the message arrives but is ignored. Either way, the high-glucose loop can no longer pull glucose back down, so it stays elevated, which is hyperglycaemia. And that is why the treatments differ, Type One requires injected insulin to replace what is missing, whereas Type Two is managed first through lifestyle and medication that improves the cells' response."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: writing that glucagon breaks down glucose. Glucagon triggers glycogenolysis, the breakdown of glycogen into glucose, raising the level.",
+      "secondary": "Trap 2: mixing up the cells. Insulin is from beta cells, glucagon is from alpha cells. Trap 3: calling Type 1 and Type 2 the same disease at different severities. Type 1 produces no insulin; Type 2 produces insulin but cells resist it.",
+      "mistakeTag": "Where glucose marks vanish",
+      "callout": "Glucagon breaks glycogen, not glucose. Insulin is beta-cell. The two diabetes types differ.",
+      "durationInFrames": 2070,
+      "caption": "Glucagon breaks glycogen (not glucose); insulin is from beta cells; T1 and T2 differ.",
+      "voiceover": {
+        "text": "Three traps that quietly cost marks. Trap one, writing that glucagon breaks down glucose. It does not. Glucagon triggers glycogenolysis, the breakdown of glycogen, the stored polymer, back into glucose, which raises the blood level. Glucagon never destroys glucose, it releases it. And while we are here, insulin does not destroy glucose either, it signals cells to take it up and store it. Trap two, mixing up which cell makes which hormone. Insulin comes from beta cells, glucagon comes from alpha cells, and that pairing is worth memorising deliberately. Trap three, treating Type One and Type Two diabetes as the same disease at different severities. They are mechanistically distinct. A Type One patient has no functioning beta cells and cannot survive without injected insulin. A Type Two patient still makes insulin, the problem is that their cells resist it. Same symptom, genuinely different diseases."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "After a long fast, blood glucose drops below the tolerance range. Name the cells that respond, the hormone they release, the liver process triggered, and the feedback type.",
+      "pausePrompt": "Pause and run the low-glucose loop.",
+      "answerSteps": [
+        "Stimulus: blood glucose falls below the tolerance range during the fast.",
+        "Alpha cells in the pancreatic islets detect the fall and release glucagon.",
+        "Glucagon triggers glycogenolysis in the liver, breaking glycogen down into glucose.",
+        "Glucose is released into the blood, raising it back toward the set point.",
+        "Answer: alpha cells, glucagon, glycogenolysis, negative feedback ✓"
+      ],
+      "durationInFrames": 1785,
+      "caption": "Fasting: alpha cells, glucagon, liver glycogenolysis, negative feedback.",
+      "voiceover": {
+        "text": "Quick check. After a long fast, blood glucose drops below the tolerance range. Name the cells that respond, the hormone they release, the liver process that is triggered, and the feedback type. Pause and run the low-glucose loop. Right, let's check it. The stimulus is falling blood glucose during the fast. The cells that detect it are the alpha cells in the pancreatic islets, and they release glucagon. Glucagon travels to the liver and triggers glycogenolysis, the breakdown of stored glycogen back into glucose. That glucose is released into the blood, raising the level back toward the set point. And it is negative feedback, because the response, raising glucose, opposes the original fall. So the answer is alpha cells, glucagon, glycogenolysis, and negative feedback."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Pancreatic islets are the receptor and control centre; the liver is the effector.",
+        "Insulin from beta cells lowers glucose; glucagon from alpha cells raises it.",
+        "Two opposing negative feedback loops hold glucose near 5 mmol/L.",
+        "Glycogenesis stores glucose as glycogen; glycogenolysis releases it again.",
+        "Type 1 diabetes fails at insulin production; Type 2 fails at insulin response."
+      ],
+      "finalPrompt": "Tracing a glucose loop? Name the cell, the hormone, the liver process, then the feedback type.",
+      "durationInFrames": 1710,
+      "caption": "Five takeaways: pancreas vs liver, the two hormones, the two loops, the two diabetes types.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, the pancreatic islets are the receptor and control centre, while the liver is the effector that actually changes blood glucose. Second, insulin from beta cells lowers glucose, and glucagon from alpha cells raises it. Third, those two hormones run two opposing negative feedback loops that hold glucose near five millimoles per litre. Fourth, the liver processes, glycogenesis stores glucose away as glycogen, glycogenolysis releases it again. And fifth, the disease link, Type One diabetes fails at insulin production, Type Two fails at the cells' response to insulin. Whenever you trace a glucose loop, name the cell, the hormone, the liver process, then the feedback type. See you next lesson."
+      }
+    }
+  ]
+}

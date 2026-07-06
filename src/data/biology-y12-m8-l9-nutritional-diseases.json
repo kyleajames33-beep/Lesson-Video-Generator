@@ -1,0 +1,269 @@
+{
+  "title": "Nutritional Diseases",
+  "subtitle": "Deficiency, excess and diet-related disorders",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 9",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "investigate the causes and effects of non-infectious diseases in humans, including nutritional diseases (ACSBL114, ACSBL115)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Do non-infectious diseases cause more deaths than infectious diseases?",
+  "lessonIntent": "Students can explain nutritional disease through the nutrient-function-consequence framework and contrast deficiency with excess diseases.",
+  "examSkill": "Explain a deficiency disease by the biochemical role of the missing nutrient, and trace the pathway from dietary excess to a chronic disease.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, nutritional diseases. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Nutritional Diseases (Year 12 Biology, Module 8, Lesson 9)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A disease that hides for 15 years",
+      "body": "A major study found millions of Australians had Type 2 diabetes or were on the way, most of them unaware, because it builds silently for over a decade.",
+      "callout": "What you eat over decades quietly rewires your biology.",
+      "image": "bioM8L9NutritionBalance",
+      "durationInFrames": 1905,
+      "caption": "The AusDiab study found 7.5% of adults had Type 2 diabetes, most undiagnosed.",
+      "voiceover": {
+        "text": "The AusDiab study, run by the Baker Institute, screened over eleven thousand Australian adults. It found that seven and a half percent already had type two diabetes, and another sixteen percent had pre-diabetes, and most of these people had no idea. Why didn't they know? Because type two diabetes develops over ten to fifteen years of progressive insulin resistance, slowly, silently, driven by diet and inactivity, long before any obvious symptoms appear. And that is the unsettling thing about nutritional disease, what a person eats over decades can quietly rewire their biology, disrupting the very glucose homeostasis system we built back in Lesson Three. Today we set up a framework that makes every nutritional disease predictable, and we work through both sides of it, the diseases of deficiency, and the diseases of excess."
+      }
+    },
+    {
+      "id": "concept-framework",
+      "type": "concept",
+      "heading": "The nutrient-function-consequence framework",
+      "body": "Every nutritional disease comes down to a nutrient, its essential function, and what happens when you have too little or too much.",
+      "bullets": [
+        {
+          "text": "Each nutrient has a specific job in the body."
+        },
+        {
+          "text": "Deficiency removes that function, producing predictable symptoms."
+        },
+        {
+          "text": "Excess overloads metabolism over years, producing chronic disease."
+        }
+      ],
+      "secondary": "This is why you should never just memorise symptoms. State the nutrient's function first, and the symptoms follow as a logical consequence.",
+      "callout": "Nutrient, function, then the consequence of too little or too much.",
+      "durationInFrames": 2040,
+      "caption": "Nutritional disease framework: nutrient, function, deficiency or excess.",
+      "voiceover": {
+        "text": "So before the specific diseases, let's build a framework that makes them all predictable, instead of a list to cram. Every nutritional disease comes down to three things, a nutrient, its essential function, and what goes wrong with too little or too much. Step one, each nutrient has a specific job in the body, a biochemical role. Step two, deficiency removes that function, and the symptoms that follow are simply the predictable result of losing that job. Step three, excess overloads the metabolism over years, producing chronic disease. Here is the exam habit that this framework gives you, never just memorise symptoms. State the nutrient's function first, and then the symptoms follow as a logical consequence. A weak answer lists symptoms, a strong answer explains them from the function. Hold that pattern, because it works for every deficiency disease in the course."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Nutritional disease: a disease from nutrient deficiency, excess, or imbalance, not a pathogen."
+        },
+        {
+          "text": "Deficiency disease: caused by too little of an essential nutrient, disrupting its function."
+        },
+        {
+          "text": "Atherosclerosis: build-up of lipid-rich plaques in artery walls, an inflammatory process."
+        },
+        {
+          "text": "Scurvy: vitamin C deficiency that blocks collagen synthesis, weakening connective tissue."
+        }
+      ],
+      "callout": "Deficiency removes a function. Excess overloads the system.",
+      "durationInFrames": 1905,
+      "caption": "Nutritional disease, deficiency disease, atherosclerosis, scurvy.",
+      "voiceover": {
+        "text": "Let's pin down four terms. A nutritional disease is one that arises from nutrient deficiency, excess, or imbalance, rather than from a pathogen or an inherited mutation. A deficiency disease is caused specifically by too little of an essential nutrient, which disrupts that nutrient's function in the body. Atherosclerosis is the build-up of lipid-rich plaques in the artery walls, and a key point we will return to, it is an inflammatory process, not just fat sticking to a pipe. And scurvy is the classic deficiency disease, caused by a lack of vitamin C, which blocks collagen synthesis and weakens connective tissue throughout the body. The contrast to carry through the lesson, deficiency removes a function the body needs, whereas excess overloads a system the body relies on, two opposite routes to nutritional disease."
+      }
+    },
+    {
+      "id": "concept-deficiency",
+      "type": "concept",
+      "heading": "Four deficiency diseases",
+      "body": "Each deficiency disease is the direct loss of one nutrient's specific function.",
+      "bullets": [
+        {
+          "text": "Vitamin D: needed for calcium absorption and bone mineralisation, so deficiency causes rickets."
+        },
+        {
+          "text": "Vitamin C: a cofactor for collagen-building enzymes, so deficiency causes scurvy."
+        },
+        {
+          "text": "Iodine: a component of thyroid hormones, so deficiency causes goitre; iron: the core of haemoglobin, so deficiency causes anaemia."
+        }
+      ],
+      "secondary": "Symptoms always trace back to the function. Vitamin C builds collagen, so without it gums bleed; iron carries oxygen in haemoglobin, so without it tissues are starved of oxygen.",
+      "callout": "Know each nutrient's job, and the deficiency explains itself.",
+      "durationInFrames": 2160,
+      "caption": "Vitamin D, vitamin C, iodine, iron: each deficiency removes a specific function.",
+      "voiceover": {
+        "text": "Let's apply the framework to four deficiency diseases. Vitamin D, its job is to enable calcium absorption and bone mineralisation, so a deficiency means bones do not mineralise properly, causing rickets in children and contributing to osteoporosis. Vitamin C, its job is to act as a cofactor for the enzymes that build collagen, so a deficiency means collagen cannot be made, causing scurvy, with bleeding gums and poor wound healing. Iodine, its job is to be a building block of the thyroid hormones, so a deficiency means the thyroid cannot make enough hormone, and it enlarges into a goitre trying to compensate. And iron, its job is to sit at the centre of haemoglobin and carry oxygen, so a deficiency means less oxygen is carried, causing anaemia. Notice the single pattern across all four, the symptoms always trace straight back to the lost function, which is exactly what the framework predicts."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Nutrient",
+          "Function",
+          "Deficiency disease"
+        ],
+        "rows": [
+          [
+            "Vitamin D",
+            "Calcium absorption",
+            "Rickets"
+          ],
+          [
+            "Vitamin C",
+            "Collagen synthesis",
+            "Scurvy"
+          ],
+          [
+            "Iodine",
+            "Thyroid hormones",
+            "Goitre"
+          ],
+          [
+            "Iron",
+            "Haemoglobin oxygen",
+            "Anaemia"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-excess",
+      "type": "concept",
+      "heading": "Diseases of excess",
+      "body": "Type 2 diabetes and cardiovascular disease are the dominant diseases of dietary excess in Australia.",
+      "bullets": [
+        {
+          "text": "Type 2 diabetes: chronic excess refined carbohydrate drives high insulin, then insulin resistance."
+        },
+        {
+          "text": "Cardiovascular disease: excess saturated fat raises LDL, which builds arterial plaque."
+        },
+        {
+          "text": "Both develop slowly over years, which is why they are diagnosed late."
+        }
+      ],
+      "secondary": "Type 2 diabetes here is the cells failing to respond to insulin, the resistance mechanism from Lesson Three, not an absence of insulin.",
+      "callout": "Excess over years, not a single bad meal, drives these diseases.",
+      "durationInFrames": 2265,
+      "caption": "Type 2 diabetes and CVD are slow diseases of dietary excess.",
+      "voiceover": {
+        "text": "Now the other side of the framework, diseases of excess, which are the dominant nutritional diseases in modern Australia. First, type two diabetes. A chronic excess of refined carbohydrates keeps insulin levels high for years, and eventually the body cells stop responding properly, which is the insulin resistance we met in Lesson Three. So this is not an absence of insulin, it is the cells failing to respond to it, and the result is chronic high blood glucose. Second, cardiovascular disease. A chronic excess of saturated fat raises the level of L D L cholesterol in the blood, and that L D L builds up in the artery walls as plaque, over many years. The thread connecting both diseases is time, they develop slowly over years or decades, which is exactly why they are so often diagnosed late, just as the AusDiab study showed. Excess over the long term, not a single bad meal, is what drives these."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "How iodine deficiency causes goitre",
+      "question": "Explain how a lack of dietary iodine leads to a goitre, and why the enlarged thyroid still cannot fix the problem.",
+      "coachNote": "Start from iodine's function, then follow the feedback failure.",
+      "steps": [
+        "Iodine is an essential component of the thyroid hormones, so without it the thyroid cannot make enough hormone.",
+        "Low thyroid hormone is detected by the pituitary, which releases more thyroid-stimulating hormone.",
+        "TSH drives the thyroid gland to grow larger, which is the goitre.",
+        "But the gland still lacks iodine, so even when enlarged it cannot produce enough hormone.",
+        "Answer: iodine is the missing ingredient, so a bigger thyroid still cannot solve the shortage ✓"
+      ],
+      "durationInFrames": 2190,
+      "caption": "Iodine deficiency: low hormone, more TSH, thyroid enlarges, still cannot compensate.",
+      "voiceover": {
+        "text": "Let's work through iodine deficiency and goitre, a great example because it combines the framework with a feedback loop. Start with iodine's function, it is an essential component of the thyroid hormones, so without enough iodine, the thyroid simply cannot make enough hormone. Now the feedback response kicks in. Low thyroid hormone is detected by the pituitary gland, which responds by releasing more thyroid-stimulating hormone, T S H, to push the thyroid harder. That extra T S H drives the thyroid gland to grow larger and larger, and that enlargement is the goitre, the visible swelling in the neck. But here is the cruel twist the question asks for, the gland is still missing its key ingredient, iodine, so no matter how large it grows, it cannot produce enough hormone. So a bigger thyroid cannot solve the problem, because the shortage was never about gland size, it was about the missing raw material."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Saturated fat to heart attack",
+      "question": "Trace the pathway from chronic excess saturated fat to a heart attack, naming the key steps in atherosclerosis.",
+      "coachNote": "Make it inflammation and rupture, not just fat clogging a pipe.",
+      "steps": [
+        "Excess saturated fat raises blood LDL cholesterol over a long period.",
+        "LDL infiltrates the artery wall and is oxidised, triggering an inflammatory response.",
+        "Macrophages engulf the oxidised LDL and become foam cells, building up as plaque.",
+        "The plaque narrows the artery, and if it ruptures it triggers a clot (thrombus).",
+        "Answer: the clot blocks the artery, cutting off blood to heart muscle, causing a heart attack ✓"
+      ],
+      "durationInFrames": 2340,
+      "caption": "Excess fat, LDL, oxidation, foam cells, plaque, rupture, clot, infarction.",
+      "voiceover": {
+        "text": "Now trace the pathway from a diet high in saturated fat to a heart attack, and the marks here come from showing it is an inflammatory process, not just fat clogging a pipe. Step one, chronic excess saturated fat raises L D L cholesterol in the blood over a long period. Step two, that L D L infiltrates the artery wall and is oxidised, triggering an inflammatory response. Step three, macrophages engulf the oxidised L D L and become bloated foam cells, which build up to form atherosclerotic plaque. Step four, the plaque narrows the artery, and crucially, if it ruptures, it triggers a blood clot, a thrombus. Step five, that clot blocks the artery, cutting off blood and oxygen to the heart muscle downstream, which is a heart attack. So the full chain is excess fat, raised L D L, oxidation and inflammation, foam cells, plaque, rupture, clot, infarction. The inflammation and the rupture are what lift this above the pipe analogy."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking nutritional diseases only affect developing countries. Australia has significant vitamin D and iron deficiency, and excess diseases dominate.",
+      "secondary": "Trap 2: saying Type 2 diabetes is just caused by sugar. It is multifactorial, involving fat intake, obesity, inactivity, and genetics. Trap 3: thinking atherosclerosis is fat passively clogging a pipe. It is an inflammatory disease of the artery wall, and plaque rupture is the dangerous event.",
+      "mistakeTag": "Where nutritional marks vanish",
+      "callout": "Deficiency happens in Australia too. T2D is multifactorial. Atherosclerosis is inflammation.",
+      "durationInFrames": 2280,
+      "caption": "Deficiency occurs in Australia; T2D is multifactorial; atherosclerosis is inflammation.",
+      "voiceover": {
+        "text": "Three traps that cost marks. Trap one, thinking nutritional diseases only affect developing countries. Not true. Australia has significant rates of vitamin D deficiency, around twenty three percent of the population, and widespread iron deficiency anaemia, especially in women of reproductive age, while the diseases of excess, type two diabetes and cardiovascular disease, are the dominant killers. Nutritional disease is not confined to poverty. Trap two, saying type two diabetes is just caused by eating too much sugar. That is an oversimplification. It is multifactorial, involving saturated fat intake, obesity, physical inactivity, and genetic predisposition, so a person with strong genetic susceptibility may develop it without extreme sugar intake, while another may avoid it despite a high-sugar diet. Trap three, thinking atherosclerosis is just fat passively clogging a pipe. It is an inflammatory disease of the artery wall, immune cells are central to it, and the most dangerous event is plaque rupture triggering a clot, not slow narrowing alone."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Australia gets abundant sunshine, yet about a quarter of Australians are vitamin D deficient. Using vitamin D's main source and function, explain how this is possible.",
+      "pausePrompt": "Pause and think about where vitamin D actually comes from.",
+      "answerSteps": [
+        "The main source of vitamin D is skin synthesis from UVB sunlight, not food.",
+        "Sunscreen, indoor lifestyles, clothing, and darker skin all reduce that UVB-driven synthesis.",
+        "So plentiful sunshine does not guarantee adequate vitamin D if skin exposure is low.",
+        "Without enough vitamin D, calcium absorption falls and bone mineralisation is impaired.",
+        "Answer: vitamin D depends on skin UVB exposure, which modern lifestyles limit ✓"
+      ],
+      "durationInFrames": 2250,
+      "caption": "Vitamin D depends on UVB skin exposure, which lifestyle can limit.",
+      "voiceover": {
+        "text": "Quick check. Australia gets abundant sunshine, and yet about a quarter of Australians are vitamin D deficient. Using vitamin D's main source and function, explain how that is possible. Pause and think about where vitamin D actually comes from. Right, let's check it. The key fact is that the main source of vitamin D for most people is skin synthesis from U V B sunlight, not diet, most foods contain very little of it. So the amount you make depends on how much U V B actually reaches your skin. And many modern factors reduce that, sunscreen, indoor lifestyles, covering clothing, and naturally darker skin all cut down that synthesis. So plentiful sunshine does not guarantee adequate vitamin D if very little reaches the skin. And because vitamin D's function is to enable calcium absorption, a deficiency impairs bone mineralisation. So the answer, vitamin D depends on skin U V B exposure, which modern lifestyles often limit."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Every nutritional disease is a nutrient, its function, and the effect of too little or too much.",
+        "Deficiency diseases: vitamin D (rickets), vitamin C (scurvy), iodine (goitre), iron (anaemia).",
+        "Type 2 diabetes and cardiovascular disease are the dominant diseases of excess.",
+        "Atherosclerosis is an inflammatory disease of the artery wall, not passive clogging.",
+        "Nutritional disease affects Australia, both deficiency and excess, not just poorer nations."
+      ],
+      "finalPrompt": "Explaining a deficiency? State the nutrient's function first, then the symptoms follow.",
+      "durationInFrames": 1935,
+      "caption": "Five takeaways: the framework, four deficiencies, diseases of excess, atherosclerosis.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, every nutritional disease is built from three parts, a nutrient, its function, and the effect of having too little or too much. Second, the four deficiency diseases, vitamin D and rickets, vitamin C and scurvy, iodine and goitre, iron and anaemia, each one the loss of a specific function. Third, the diseases of excess, type two diabetes and cardiovascular disease, are the dominant nutritional diseases in modern Australia. Fourth, atherosclerosis is an inflammatory disease of the artery wall, with plaque rupture as the dangerous event, not just passive clogging. And fifth, nutritional disease affects Australia too, both deficiency and excess, not only poorer nations. Whenever you explain a deficiency, state the nutrient's function first, and the symptoms follow logically. Next lesson, cancer. See you there."
+      }
+    }
+  ]
+}

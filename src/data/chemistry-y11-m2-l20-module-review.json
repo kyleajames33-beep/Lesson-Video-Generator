@@ -1,0 +1,154 @@
+{
+  "title": "Module 2 Review",
+  "subtitle": "Quantitative chemistry, end to end",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 20",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "consolidate and review the key concepts and skills of quantitative chemistry"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-9", "CH11/12-4", "CH11/12-6"],
+  "inquiryQuestion": "What happens in chemical reactions?",
+  "lessonIntent": "Students can recall the mole as the central unit, choose the right mole formula, and connect stoichiometry and analysis techniques across the whole module.",
+  "examSkill": "Recall and select among the four mole formulas, the stoichiometry method, and the two analysis techniques to approach any Module 2 question.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the Module 2 review, quantitative chemistry from end to end. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Module 2 Review (Year 11 Chemistry, Module 2, Lesson 20)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The whole module on one map",
+      "body": "Every formula, every technique, all connected through one central idea: the mole.",
+      "callout": "Master the connections, not just the pieces.",
+      "durationInFrames": 630,
+      "caption": "A complete map of Module 2, connected through the mole.",
+      "voiceover": {
+        "text": "OK, this is your complete review of Module 2, quantitative chemistry. We've covered a lot, the mole, molar mass, concentration, stoichiometry, gas volumes, titrations, gravimetric analysis. But here's the thing to walk away with. None of these are separate islands. They all connect through one central idea, the mole. Today we'll put the whole module on a single map, so that when an exam question lands, you know exactly which tool to reach for and how the pieces fit together. Let's tie it all up."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "The mole is the hub",
+      "body": "The mole is the bridge between particles you can't see and quantities you can measure.",
+      "image": "l20MoleHub",
+      "bullets": [
+        {"text": "One mole is 6.022 × 10²³ particles, Avogadro's constant."},
+        {"text": "Every quantity — mass, volume, concentration — connects through moles."},
+        {"text": "Solve any problem by getting to moles, then moving on from moles."}
+      ],
+      "secondary": "Mass, gas volume, solution volume, and particle count all convert to and from moles. Moles are the universal currency.",
+      "callout": "Get to moles, then go wherever you need.",
+      "durationInFrames": 1080,
+      "caption": "The mole connects mass, volume, concentration, and particle count.",
+      "voiceover": {
+        "text": "Start with the idea that holds the whole module together. The mole is the hub. It's the bridge between the particles you can't see and the quantities you can actually measure on a bench. One mole is six-point-zero-two-two times ten to the twenty-three particles, Avogadro's constant. And every measurable quantity connects through it. A mass converts to moles, a gas volume converts to moles, a solution's concentration and volume give moles, and a particle count gives moles. So the strategy for any problem in this module is the same. Get to moles from whatever you're given, then move from moles to whatever you want. Moles are the universal currency."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The four mole formulas",
+      "bullets": [
+        {"text": "n = m ÷ M, from a mass of solid or liquid."},
+        {"text": "n = V ÷ Vₘ, from a volume of gas at known conditions."},
+        {"text": "n = c × V, from a solution's concentration and volume."},
+        {"text": "n = N ÷ Nₐ, from a number of particles."}
+      ],
+      "callout": "Four ways in, all leading to the same hub.",
+      "durationInFrames": 960,
+      "caption": "n = m/M, n = V/Vₘ, n = cV, n = N/Nₐ.",
+      "voiceover": {
+        "text": "Here are the four formulas that get you to the hub, and you should know them cold. From a mass, n equals m over capital M. From a gas volume, n equals V over molar volume, choosing the right molar volume for the conditions. From a solution, n equals concentration times volume. And from a particle count, n equals big N over Avogadro's number. Four different starting points, all arriving at moles. When a question gives you grams, litres of gas, a concentration, or a number of particles, you instantly know which of these four to use. That recognition is the foundation of every calculation you've learned."
+      }
+    },
+    {
+      "id": "concept-stoich",
+      "type": "concept",
+      "heading": "Stoichiometry ties substances together",
+      "body": "The balanced equation's mole ratio links one substance's moles to another's.",
+      "bullets": [
+        {"text": "The mole ratio comes from coefficients, never subscripts."},
+        {"text": "Two reactant amounts? Find the limiting reagent first."},
+        {"text": "Compare actual to theoretical for percentage yield."}
+      ],
+      "secondary": "Mole ratio, limiting reagent, and percentage yield are the three stoichiometry ideas that recur across every reaction question.",
+      "callout": "Coefficients give the ratio; the limiting reagent caps the yield.",
+      "durationInFrames": 1080,
+      "caption": "Mole ratio from coefficients; limiting reagent; percentage yield.",
+      "voiceover": {
+        "text": "Once you can get to moles, stoichiometry connects different substances. Three ideas recur in every reaction question. First, the mole ratio, which comes from the coefficients in the balanced equation, never the subscripts. It carries you from moles of one substance to moles of another. Second, the limiting reagent. Whenever you're given amounts of two reactants, you find which one runs out first by dividing each by its coefficient, and the smallest result limits the reaction. Third, percentage yield, comparing what you actually made to the theoretical maximum, always at or below a hundred percent. Mole ratio, limiting reagent, percentage yield. Those three handle the reaction side of the module."
+      }
+    },
+    {
+      "id": "definition-analysis",
+      "type": "definition",
+      "heading": "Two analysis techniques",
+      "bullets": [
+        {"text": "Gravimetric analysis: weigh a pure precipitate, work back via the ratio."},
+        {"text": "Volumetric analysis: titrate against a standard to the endpoint."},
+        {"text": "Both find an unknown amount or concentration in a sample."}
+      ],
+      "callout": "Gravimetric weighs a solid; volumetric measures a volume.",
+      "durationInFrames": 930,
+      "caption": "Gravimetric weighs a precipitate; volumetric titrates to an endpoint.",
+      "voiceover": {
+        "text": "The module also gives you two ways to measure an unknown in the lab. Gravimetric analysis turns a dissolved ion into a pure solid precipitate, weighs it, and works backwards through the mole ratio to find the original amount. Volumetric analysis, the titration, reacts an unknown against a standard solution of known concentration, stopping at the endpoint, and uses the titre and mole ratio to find the unknown. One weighs a solid, the other measures a volume, but both lean on exactly the same mole reasoning underneath. So even the practical techniques come straight back to the hub."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "11.2 g of N₂ gas is at RTP. How many molecules is that? (N = 14.007, Nₐ = 6.022 × 10²³, Vₘ = 24.8)",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "M(N₂) = 2 × 14.007 = 28.01 g mol⁻¹",
+        "n = m ÷ M = 11.2 ÷ 28.01 = 0.400 mol",
+        "N = n × Nₐ = 0.400 × 6.022 × 10²³",
+        "N = 2.41 × 10²³ molecules",
+        "Answer: 2.41 × 10²³ molecules of N₂ ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "Mass → moles → particles: 11.2 g N₂ is 2.41 × 10²³ molecules.",
+      "voiceover": {
+        "text": "Quick check, to prove the hub idea. Eleven-point-two grams of nitrogen gas. How many molecules is that? Notice it gives you a volume condition, RTP, as a distractor, but mass is what you have, so use the mass route. Pause and work it through. Right, let's check it. Step one, molar mass of nitrogen gas. Two nitrogens, twenty-eight grams per mole. Step two, get to moles from the mass. Eleven-point-two over twenty-eight is nought-point-four moles. Step three, now go from moles to particles, the other direction. Big N equals moles times Avogadro's number. Nought-point-four times six-point-zero-two-two times ten to the twenty-three. Step four, that's two-point-four-one times ten to the twenty-three molecules. Mass in, moles in the middle, particles out. The molar volume was never needed. Always use the route that matches what you're actually given."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "The whole module",
+      "points": [
+        "The mole is the hub: 6.022 × 10²³ particles.",
+        "Four formulas reach moles: mass, gas, solution, particles.",
+        "Mole ratio from coefficients links substances.",
+        "Limiting reagent caps yield; yield ≤ 100%.",
+        "Gravimetric weighs a solid; volumetric titrates a volume."
+      ],
+      "finalPrompt": "Any Module 2 question: get to moles, then go where you need.",
+      "durationInFrames": 1170,
+      "caption": "Module 2 in five: the hub, four formulas, stoichiometry, analysis.",
+      "voiceover": {
+        "text": "Let's tie up the whole module. Five things to carry into the exam. First, the mole is the hub, six-point-zero-two-two times ten to the twenty-three particles. Second, four formulas reach moles, from mass, gas volume, solution, and particle count. Third, the mole ratio, taken from coefficients, links one substance to another. Fourth, the limiting reagent caps the theoretical yield, and percentage yield is never above a hundred. And fifth, the two analysis techniques, gravimetric weighing a solid and volumetric titrating a volume, both rest on the same mole reasoning. For any question in this module, the move is always the same. Get to moles, then go where you need. That's quantitative chemistry. Well done finishing Module 2."
+      }
+    }
+  ]
+}

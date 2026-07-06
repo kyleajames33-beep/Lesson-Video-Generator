@@ -1,0 +1,246 @@
+{
+  "title": "DNA Sequencing and DNA Profiling",
+  "subtitle": "Reading the base order versus comparing marker patterns",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 17",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "investigate the use of DNA sequencing and DNA profiling to determine inheritance patterns in a population (ACSBL064, ACSBL085)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Can population genetic patterns be predicted with any accuracy?",
+  "lessonIntent": "Students can distinguish DNA sequencing from DNA profiling by what each produces and the questions each can answer about inheritance and relatedness.",
+  "examSkill": "Match a claim to the right technology: base order from sequencing, marker-pattern comparison from profiling, then link it to inheritance, relatedness or disease.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, DNA sequencing and DNA profiling. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "DNA Sequencing and DNA Profiling (Year 12 Biology, Module 5, Lesson 17)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Convicting a murderer with a fraction of the genome",
+      "body": "In 1986, the first DNA conviction matched patterns at a few DNA regions, with odds of 1 in 40 billion, without reading anyone's full genome.",
+      "callout": "How can comparing a tiny part of the DNA be that reliable?",
+      "image": "bioM5L17DnaProfile",
+      "durationInFrames": 1849,
+      "caption": "Alec Jeffreys' 1986 case was the first DNA conviction; it compared marker regions, not a full sequence.",
+      "voiceover": {
+        "text": "In 1986, Alec Jeffreys and his team in Leicester collected DNA from over five thousand local men to catch a murderer. The match they found had odds of one in forty billion, and it became the world's first criminal conviction using DNA evidence. But here's the detail most people miss. They were not reading anyone's entire genome. They were comparing patterns at just a few selected regions of the DNA. So that raises a genuinely good question. If you only look at a tiny fraction of the genome, how can the result be reliable enough to convict someone, and what exactly is being measured? The answer lives in the difference between two technologies that students constantly mix up, DNA sequencing and DNA profiling. Today we'll pull them apart, and connect them to inheritance across populations."
+      }
+    },
+    {
+      "id": "concept-sequencing",
+      "type": "concept",
+      "heading": "Sequencing reads the base order",
+      "body": "DNA sequencing determines the exact order of the nucleotide bases, A, T, C and G, in a region of DNA.",
+      "bullets": [
+        {
+          "text": "It produces the actual base order of the DNA region."
+        },
+        {
+          "text": "Knowing the order, you can spot specific mutations and SNPs directly."
+        },
+        {
+          "text": "It is used for inherited disorders and comparing species or populations."
+        }
+      ],
+      "secondary": "Because it gives the real sequence, sequencing can confirm whether a particular disease-linked variant is actually present in an individual or group.",
+      "callout": "Sequencing tells you the letters, in order.",
+      "durationInFrames": 1768,
+      "caption": "DNA sequencing reads the exact base order, revealing specific mutations and variants.",
+      "voiceover": {
+        "text": "Let's start with DNA sequencing. Sequencing determines the exact order of the bases, the A's, T's, C's and G's, along a region of DNA. So the output is literally the sequence of letters, in order. And that's powerful, because once you know the precise order, you can directly identify specific mutations or SNPs, the single-base differences we met last lesson. You can see exactly which base is present at a position of interest. That's why sequencing is the go-to technology for investigating inherited disorders, and for comparing the DNA of different species or populations at the molecular level. If you want to confirm whether a particular disease-linked variant is actually present in someone, you sequence that region and read it. Sequencing tells you the letters, in their exact order."
+      }
+    },
+    {
+      "id": "concept-profiling",
+      "type": "concept",
+      "heading": "Profiling compares patterns",
+      "body": "DNA profiling compares patterns at selected variable regions to match or distinguish samples, without reading the full sequence.",
+      "bullets": [
+        {
+          "text": "It looks at selected, highly variable marker regions, not the whole genome."
+        },
+        {
+          "text": "It efficiently shows similarity, difference and possible inheritance links."
+        },
+        {
+          "text": "A profile is a pattern of markers, not a full base-order readout."
+        }
+      ],
+      "secondary": "This is exactly what the 1986 case used. Comparing patterns at a few variable regions is fast, and across enough regions it becomes extremely discriminating.",
+      "callout": "Profiling matches patterns; it doesn't read every letter.",
+      "durationInFrames": 1903,
+      "caption": "DNA profiling compares marker patterns at selected variable regions; it is not full sequencing.",
+      "voiceover": {
+        "text": "Now DNA profiling, which works completely differently. Profiling does not try to read the whole genome. Instead, it compares patterns at a handful of selected, highly variable regions of the DNA, the spots where people differ a lot from one another. By comparing those marker patterns between samples, profiling can efficiently show whether samples are similar, different, or possibly linked by inheritance. And this is the key conceptual point, a DNA profile is a pattern of markers, it is not a full base-order readout. This is exactly what the 1986 case relied on. Comparing patterns at just a few variable regions is fast and cheap, and once you compare enough regions together, the combined pattern becomes incredibly discriminating, which is where that one in forty billion figure comes from. Profiling matches patterns, it does not read every single letter."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "DNA sequencing: determining the order of the nucleotide bases in a DNA region."
+        },
+        {
+          "text": "DNA profiling: comparing patterns at selected DNA regions to relate or distinguish samples."
+        },
+        {
+          "text": "Marker region: a selected DNA region used for comparison, not full reading."
+        },
+        {
+          "text": "Relatedness: the degree of genetic similarity suggesting inheritance links."
+        }
+      ],
+      "callout": "Sequencing reads order; profiling compares marker patterns.",
+      "durationInFrames": 1539,
+      "caption": "DNA sequencing, DNA profiling, marker region, relatedness.",
+      "voiceover": {
+        "text": "Let's pin down the words. DNA sequencing is determining the order of the nucleotide bases in a region of DNA, so its output is the actual sequence. DNA profiling is comparing patterns at selected DNA regions, in order to relate or distinguish samples, so its output is a pattern, not a sequence. A marker region is one of those selected, variable DNA regions used for comparison rather than full reading. And relatedness is the degree of genetic similarity between samples, which can suggest inheritance links. So hold the contrast in one sentence, sequencing reads the base order, while profiling compares marker patterns. Same DNA, two very different questions being asked of it."
+      }
+    },
+    {
+      "id": "concept-different-questions",
+      "type": "concept",
+      "heading": "Two tools, two questions",
+      "body": "Sequencing and profiling are not rivals; they answer different questions about the same DNA.",
+      "bullets": [
+        {
+          "text": "Sequencing: reads base order, finds specific variants, gives molecular detail."
+        },
+        {
+          "text": "Profiling: compares selected patterns, matches samples, gives efficient comparison."
+        },
+        {
+          "text": "Both can be used to study inheritance patterns in populations."
+        }
+      ],
+      "secondary": "Choose by the question. Need to know which exact variant is present? Sequence it. Need to compare or match samples quickly? Profile them.",
+      "callout": "Detail versus efficiency: pick the tool to fit the question.",
+      "durationInFrames": 1863,
+      "caption": "Sequencing gives molecular detail; profiling gives efficient comparison; both study inheritance.",
+      "voiceover": {
+        "text": "So which one is better? That's the wrong question, because they're not rivals, they answer different questions about the same DNA. Sequencing reads the base order, so it gives you fine molecular detail and can pinpoint the exact variant present. Profiling compares selected patterns, so it gives you fast, efficient comparison and matching of samples. Crucially, both technologies can be used to study inheritance patterns across populations, which is the focus of this module. Sequencing can identify which inherited, disease-linked variants are present and how common they are. Profiling can compare related samples and lineages. So you choose the tool by the question you're asking. If you need to know which exact base or variant is there, you sequence it. If you just need to compare or match samples efficiently, you profile them. Detail versus efficiency."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Sort the technology",
+      "question": "Decide whether each matches DNA sequencing or DNA profiling: (a) determines the base order of a gene; (b) compares selected marker patterns between samples; (c) directly identifies a specific inherited base change.",
+      "coachNote": "Ask: does it read the actual letters, or compare patterns?",
+      "steps": [
+        "(a) Determining the base order of a gene means reading the letters → DNA sequencing.",
+        "(b) Comparing selected marker patterns between samples → DNA profiling.",
+        "(c) Identifying a specific inherited base change needs the actual base → DNA sequencing.",
+        "Decision rule: reading the letters is sequencing; comparing patterns is profiling.",
+        "Answer: (a) sequencing, (b) profiling, (c) sequencing ✓"
+      ],
+      "durationInFrames": 1849,
+      "caption": "(a) sequencing, (b) profiling, (c) sequencing — reading letters vs comparing patterns.",
+      "voiceover": {
+        "text": "Let's sort three statements, the way an exam will test you. The single question to ask each time is, does this read the actual letters of the DNA, or does it just compare patterns? Part a, determines the base order of a gene. Reading the order of bases is literally the definition of sequencing, so that's DNA sequencing. Part b, compares selected marker patterns between samples. Comparing patterns at selected regions is profiling, so that's DNA profiling. Part c, directly identifies a specific inherited base change. To know exactly which base has changed, you need the actual sequence, so that's DNA sequencing again. So the decision rule is clean, reading the letters is sequencing, comparing patterns is profiling. Anything that needs the exact base must be sequencing, because profiling never reads the full base order."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Sequencing",
+          "Profiling"
+        ],
+        "rows": [
+          [
+            "Output",
+            "Exact base order",
+            "Marker pattern"
+          ],
+          [
+            "Reads whole region?",
+            "Yes, the letters",
+            "No, selected markers"
+          ],
+          [
+            "Best for",
+            "Finding exact variants",
+            "Matching samples"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: saying a DNA profile is the same as a full genome sequence. Profiling compares patterns at selected regions; it never reads the complete base order.",
+      "secondary": "Trap 2: thinking sequencing reads a chromosome straight through, end to end. Sequencing works on short fragments: the genome is broken up, millions of short reads are taken, then computers assemble the overlaps. The chromosome is never read in one pass.",
+      "mistakeTag": "Where sequencing-profiling marks vanish",
+      "callout": "A profile is not a sequence; a sequence is built from fragments.",
+      "durationInFrames": 1917,
+      "caption": "Profiling is not full sequencing; sequencing assembles short fragment reads, not one pass.",
+      "voiceover": {
+        "text": "Two traps to avoid. Trap one, saying that a DNA profile is the same thing as a full genome sequence. It is not. Profiling compares patterns at a few selected regions, it never reads the complete base order of the genome. So don't ever equate a profile with a sequence, they're different scales of information. Trap two is more advanced, but it impresses examiners. Students imagine that sequencing reads a chromosome straight through from one end to the other, like reading a sentence. That's not how it works. Sequencing actually operates on short fragments of DNA. The genome is broken into pieces, millions of short reads are taken, and then computers stitch the overlapping fragments back together into the full sequence. The chromosome itself is never read end to end in a single pass. Knowing that distinction shows real understanding."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A researcher wants to know whether a specific disease-linked base change is present in two populations. Should they use DNA sequencing or DNA profiling, and why?",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The goal is to detect a specific base change, an exact variant.",
+        "Profiling only compares marker patterns; it does not read the actual base order.",
+        "Sequencing reads the exact base order, so it can confirm the specific variant directly.",
+        "Sequencing the region in both populations shows whether the variant is present and how common.",
+        "Answer: DNA sequencing, because only it reads the exact base needed to detect the variant ✓"
+      ],
+      "durationInFrames": 2132,
+      "caption": "Detecting a specific variant needs the exact base, so sequencing is the right tool.",
+      "voiceover": {
+        "text": "Quick check. A researcher wants to find out whether a specific disease-linked base change is present in two different populations. Should they use DNA sequencing or DNA profiling, and why? Pause and reason it through. Right, let's work it out. The goal here is very specific, they need to detect a particular base change, an exact variant at a known position. Now think about what each tool gives you. Profiling only compares marker patterns between samples, it does not read the actual base order, so it can't tell you which specific base is sitting at that position. Sequencing, on the other hand, reads the exact base order, so it can confirm directly whether the variant is present. By sequencing that region in both populations, the researcher can see whether the variant is there and compare how common it is. So the answer is DNA sequencing, because only sequencing reads the exact base the question depends on."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "DNA sequencing determines the exact order of bases in a DNA region.",
+        "DNA profiling compares patterns at selected marker regions, not the full sequence.",
+        "Sequencing finds specific variants; profiling efficiently matches and compares samples.",
+        "Both are used to study inheritance patterns and relatedness in populations.",
+        "A profile is not a full sequence, and a sequence is assembled from short fragments."
+      ],
+      "finalPrompt": "Sequencing or profiling? If you need the exact base, sequence it; if you need to compare samples, profile them.",
+      "durationInFrames": 1876,
+      "caption": "Five takeaways: sequencing, profiling, their uses, population inheritance, the key limits.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, DNA sequencing determines the exact order of the bases in a region of DNA. Second, DNA profiling compares patterns at selected marker regions, and it is not a full genome sequence. Third, sequencing is best for finding specific variants, while profiling is best for efficiently matching and comparing samples. Fourth, both technologies are used to study inheritance patterns and relatedness across populations, which is the real Module 5 focus, not just forensics. And fifth, remember the two limits, a profile is not a full sequence, and a full sequence is assembled from millions of short fragments, never read in one pass. So when you choose, ask, do I need the exact base, then sequence, or do I need to compare samples, then profile. See you next lesson."
+      }
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "title": "Mass–Mass Stoichiometry",
+  "subtitle": "From grams of one substance to grams of another",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 12",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "solve problems using mass-to-mass stoichiometric calculations based on balanced chemical equations"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-9", "CH11/12-4", "CH11/12-6"],
+  "inquiryQuestion": "What happens in chemical reactions?",
+  "lessonIntent": "Students can convert the mass of one substance to the mass of another using the four-step method: mass to moles, mole ratio, moles to mass.",
+  "examSkill": "Apply the four-step method: m → n (given), × mole ratio, n → m (wanted), using the correct molar mass at each end.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, mass to mass stoichiometry, the core calculation of the whole module. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Mass–Mass Stoichiometry (Year 11 Chemistry, Module 2, Lesson 12)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Grams in, grams out",
+      "body": "Given the mass of one substance, predict the mass of another. This is the calculation everything builds on.",
+      "callout": "Moles are the bridge between the two masses.",
+      "durationInFrames": 660,
+      "caption": "Mass–mass stoichiometry predicts product mass from reactant mass.",
+      "voiceover": {
+        "text": "OK, here's the calculation that everything in this module builds toward. You're given the mass of one substance, and you have to find the mass of another. How much carbon dioxide does burning twelve grams of carbon make? How much iron can you extract from eighty grams of ore? You can't go straight from grams to grams, because the balance doesn't know about the reaction. But moles do. So moles are the bridge, and once you see the four-step path across that bridge, every one of these problems looks the same."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Moles are the bridge",
+      "body": "You can't convert grams to grams directly. You cross through moles, where the mole ratio lives.",
+      "image": "l12MassMassBridge",
+      "bullets": [
+        {"text": "Grams of the given substance don't directly give grams of the product."},
+        {"text": "Convert to moles, where the balanced equation's ratio applies."},
+        {"text": "Then convert back to grams of the substance you want."}
+      ],
+      "secondary": "The mole ratio only works on moles, never on masses. That's why you must cross through moles both ways.",
+      "callout": "Mass can't talk to mass. Moles translate between them.",
+      "durationInFrames": 1080,
+      "caption": "Grams → moles → (mole ratio) → moles → grams.",
+      "voiceover": {
+        "text": "Here's the idea that makes every one of these problems click. You cannot convert grams of one substance directly into grams of another. The mole ratio from the balanced equation only works on moles, not on masses. So moles are the bridge. You start with the mass you're given, cross over to moles, apply the mole ratio there in the middle, then cross back to the mass of what you want. Mass can't talk to mass directly. Moles are the translator in between, and you have to pass through them both ways."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Given substance: the one whose mass you start with."},
+        {"text": "Wanted substance: the one whose mass you're solving for."},
+        {"text": "Mole ratio: the coefficient ratio that converts given moles to wanted moles."},
+        {"text": "Theoretical mass: the maximum product mass if the reaction is complete."}
+      ],
+      "callout": "Given starts you off; wanted is the finish line.",
+      "durationInFrames": 930,
+      "caption": "Given substance, wanted substance, mole ratio, theoretical mass.",
+      "voiceover": {
+        "text": "Quick vocabulary. The given substance is the one whose mass the question hands you, and it's where you start. The wanted substance is the one you're asked to find, and it's the finish line. The mole ratio is the coefficient ratio that carries you from moles of the given to moles of the wanted. And the theoretical mass is the maximum mass of product you could get if the reaction goes perfectly, with nothing lost. Keeping given and wanted straight in your head is half the battle, because the ratio is always wanted over given."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The four-step method",
+      "body": "Mass of given to moles, apply the mole ratio, moles of wanted to mass. Four moves, every time.",
+      "bullets": [
+        {"text": "1. Mass of given → moles: n = m ÷ M of the given."},
+        {"text": "2. Apply the mole ratio: wanted over given."},
+        {"text": "3. Moles of wanted → mass: m = n × M of the wanted."},
+        {"text": "4. Round sensibly and state the unit."}
+      ],
+      "secondary": "Use the given substance's molar mass at step 1 and the wanted substance's molar mass at step 3. They're different.",
+      "callout": "Different substance each end, so different molar mass each end.",
+      "durationInFrames": 1050,
+      "caption": "Four steps: m→n (given), ×ratio, n→m (wanted).",
+      "voiceover": {
+        "text": "Here's the four-step method that solves every mass to mass problem. Step one, convert the mass of the given substance to moles, using its molar mass. Step two, apply the mole ratio, wanted over given, to get moles of the substance you want. Step three, convert those moles to a mass using the molar mass of the wanted substance. Step four, round sensibly and state the unit. The one detail that trips people up, you use the given substance's molar mass at step one, and the wanted substance's molar mass at step three. They're different substances, so they have different molar masses. Don't reuse the same number at both ends."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Burning carbon",
+      "question": "What mass of CO₂ forms when 12.0 g of carbon burns? C + O₂ → CO₂. (C 12.011, O 15.999)",
+      "coachNote": "Ratio C : CO₂ is 1:1, but the molar masses differ.",
+      "steps": [
+        "n(C) = m ÷ M = 12.0 ÷ 12.011 = 0.999 mol",
+        "Ratio C : CO₂ = 1 : 1, so n(CO₂) = 0.999 mol",
+        "M(CO₂) = 12.011 + 2(15.999) = 44.01 g mol⁻¹",
+        "m(CO₂) = n × M = 0.999 × 44.01",
+        "Answer: m(CO₂) = 44.0 g ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "12.0 g C burns to make 44.0 g CO₂.",
+      "voiceover": {
+        "text": "Let's burn some carbon. What mass of carbon dioxide forms when twelve grams of carbon burns completely? The equation is carbon plus oxygen gives carbon dioxide. Step one, convert the given mass to moles using carbon's molar mass. Twelve over twelve-point-zero-one-one is nought-point-nine-nine-nine moles. Step two, the mole ratio of carbon to carbon dioxide is one to one, so the moles of carbon dioxide are the same, nought-point-nine-nine-nine. Step three, convert to a mass using carbon dioxide's molar mass, which is forty-four-point-zero-one. Nought-point-nine-nine-nine times forty-four-point-zero-one is forty-four grams. Notice the ratio was one to one, but the answer isn't twelve grams. That's because carbon dioxide has a much bigger molar mass than carbon. Same moles, very different mass."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Iron from ore",
+      "question": "What mass of iron comes from 80.0 g of Fe₂O₃? Fe₂O₃ + 3CO → 2Fe + 3CO₂. (Fe 55.845, O 15.999)",
+      "coachNote": "Ratio Fe₂O₃ : Fe is 1:2 — don't skip it.",
+      "steps": [
+        "M(Fe₂O₃) = 2(55.845) + 3(15.999) = 159.69 g mol⁻¹",
+        "n(Fe₂O₃) = 80.0 ÷ 159.69 = 0.501 mol",
+        "Ratio Fe₂O₃ : Fe = 1 : 2, so n(Fe) = 0.501 × 2 = 1.002 mol",
+        "m(Fe) = n × M = 1.002 × 55.845",
+        "Answer: m(Fe) = 56.0 g ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "80.0 g Fe₂O₃ yields 56.0 g iron (1:2 ratio).",
+      "voiceover": {
+        "text": "Now iron from ore, where the ratio actually matters. What mass of iron comes from eighty grams of iron three oxide, in the reaction iron three oxide plus three carbon monoxide gives two iron plus three carbon dioxide? Step one, molar mass of the given, iron three oxide. Two irons and three oxygens, one hundred and fifty-nine-point-six-nine grams per mole. Convert eighty grams to moles, nought-point-five-zero-one moles. Step two, the mole ratio. One iron three oxide gives two irons, so multiply by two over one. Nought-point-five-zero-one times two is one-point-zero-zero-two moles of iron. Step three, convert to mass using iron's molar mass, fifty-five-point-eight-four-five. One-point-zero-zero-two times that is fifty-six grams. If you'd skipped the one to two ratio, you'd have got half the iron. The ratio is never optional."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: skipping the mole ratio and assuming everything is 1:1.",
+      "secondary": "Trap 2: using the wrong molar mass, like an element's when you mean the compound's, or reusing one molar mass at both ends. Trap 3: applying the ratio upside down. It's always wanted over given.",
+      "mistakeTag": "Where mass–mass marks vanish",
+      "callout": "Check the ratio, right molar mass each end, wanted over given.",
+      "durationInFrames": 1230,
+      "caption": "Don't skip the ratio, use the right molar mass at each end, ratio wanted/given.",
+      "voiceover": {
+        "text": "Three traps. Trap one, skipping the mole ratio and assuming everything is one to one. We just saw a one to two ratio change the answer completely, so always read the coefficients. Trap two, using the wrong molar mass. You need the given substance's molar mass to get into moles, and the wanted substance's molar mass to get back to grams. They're different numbers, so don't reuse one at both ends, and don't grab an element's molar mass when the formula is a compound. Trap three, flipping the ratio. It's always wanted over given. If you want product and you know reactant, the product coefficient goes on top. Get those three right and mass to mass is mechanical."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "What mass of Mg must burn to make 20.0 g of MgO? 2Mg + O₂ → 2MgO. (Mg 24.305, O 15.999)",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "M(MgO) = 24.305 + 15.999 = 40.30 g mol⁻¹",
+        "n(MgO) = 20.0 ÷ 40.30 = 0.496 mol",
+        "Ratio Mg : MgO = 2 : 2 = 1 : 1, so n(Mg) = 0.496 mol",
+        "m(Mg) = n × M = 0.496 × 24.305",
+        "Answer: m(Mg) = 12.1 g ✓"
+      ],
+      "durationInFrames": 1200,
+      "caption": "Work backwards from 20.0 g MgO: 12.1 g Mg needed.",
+      "voiceover": {
+        "text": "Quick check, and this one runs from product back to reactant. What mass of magnesium must burn to make twenty grams of magnesium oxide, in two magnesium plus oxygen gives two magnesium oxide? Pause and work it through. Right, let's check it. Step one, molar mass of the given, magnesium oxide, which is forty-point-three. Twenty over forty-point-three is nought-point-four-nine-six moles. Step two, the ratio of magnesium to magnesium oxide is two to two, which simplifies to one to one, so the magnesium moles match. Step three, convert to mass using magnesium's molar mass, twenty-four-point-three. Nought-point-four-nine-six times that is twelve-point-one grams. The method runs in either direction. Given to wanted is always the same four steps."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "You can't convert grams to grams directly; moles are the bridge.",
+        "Step 1: mass of given → moles with its molar mass.",
+        "Step 2: apply the mole ratio, wanted over given.",
+        "Step 3: moles of wanted → mass with its molar mass.",
+        "Use a different molar mass at each end."
+      ],
+      "finalPrompt": "Every mass–mass question: m → n → ratio → n → m.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: moles bridge, four-step method, different molar mass each end.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, you can't convert grams to grams directly, so moles are always the bridge. Second, step one is mass of the given to moles, using its molar mass. Third, step two applies the mole ratio, wanted over given. Fourth, step three converts moles of the wanted to a mass, using its molar mass. And fifth, the two molar masses are different, so use the right one at each end. Mass to moles, ratio, moles to mass. That four-step rhythm solves every problem in this lesson and powers the next three. See you next lesson."
+      }
+    }
+  ]
+}

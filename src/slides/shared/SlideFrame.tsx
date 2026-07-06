@@ -4,6 +4,7 @@
 import type {CSSProperties, ReactNode} from 'react';
 import {AbsoluteFill} from 'remotion';
 import {FONT_DISPLAY, TOK} from '../../styles/tokens';
+import {SceneProgress} from './SceneProgress';
 
 type SlideFrameProps = {
 	children: ReactNode;
@@ -11,6 +12,14 @@ type SlideFrameProps = {
 	background?: string;
 	/** Apply a subtle vignette to focus attention on centre. Default: true. */
 	vignette?: boolean;
+	/**
+	 * Scene duration in frames. When provided, renders the perimeter trace
+	 * and corner dial that complete with the scene. Slides should pass
+	 * `scene.durationInFrames` here.
+	 */
+	sceneDurationInFrames?: number;
+	/** Override the trace/dial accent. Defaults to TOK.chem1. */
+	progressColor?: string;
 	style?: CSSProperties;
 };
 
@@ -18,6 +27,8 @@ export const SlideFrame = ({
 	children,
 	background = TOK.bg,
 	vignette = true,
+	sceneDurationInFrames,
+	progressColor,
 	style,
 }: SlideFrameProps) => {
 	return (
@@ -39,10 +50,13 @@ export const SlideFrame = ({
 						inset: 0,
 						pointerEvents: 'none',
 						background:
-							'radial-gradient(ellipse 70% 70% at 50% 50%, transparent 40%, rgba(0,0,0,0.55) 100%)',
+							'radial-gradient(ellipse 70% 70% at 50% 50%, transparent 40%, rgba(0,0,0,0.12) 100%)',
 					}}
 				/>
 			) : null}
+			{/* SceneProgress (corner dial + perimeter trace) removed — was overlapping
+			    the year/lesson chrome at top-right. Lesson progress is already shown
+			    by the LessonProgressBar at the very top of the video. */}
 		</AbsoluteFill>
 	);
 };

@@ -1,0 +1,319 @@
+{
+  "title": "Autoimmune Diseases and Allergies",
+  "subtitle": "Self-tolerance, autoimmune disease, and how an allergy is set up",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 16",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "investigate the causes and effects of non-infectious diseases in humans, including but not limited to autoimmune diseases and allergic reactions",
+    "investigate the treatment and management of autoimmune diseases and allergies"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Do non-infectious diseases cause more deaths than infectious diseases?",
+  "lessonIntent": "Students can explain autoimmune disease as a loss of self-tolerance and allergy as IgE-mediated hypersensitivity, and describe the two-stage allergic mechanism and the emergency treatment of anaphylaxis.",
+  "examSkill": "Distinguish autoimmune disease from allergy by target, antibody class and mechanism, and explain why anaphylaxis needs prior sensitisation and immediate adrenaline.",
+  "productionRole": "production",
+  "productionNotes": "Part A of a 2-part split of L16. Covers self-tolerance, autoimmune examples, and the two-stage allergy mechanism. Ends with a bridge to Part B (anaphylaxis + worked example + practice). Silent title; no new content trimmed.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, autoimmune disease and allergy, when the immune system aims at the wrong target. We start with self-tolerance and how an allergy is set up. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Autoimmune Diseases and Allergies, Part A (Year 12 Biology, Module 8, Lesson 16A)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "An immune system attacking its own body",
+      "body": "Your immune system is built to spare your own cells. In 1 in 20 Australians, that safeguard fails.",
+      "callout": "If the body deletes self-attacking cells, why is autoimmunity so common?",
+      "image": "bioM8L16SelfTolerance",
+      "durationInFrames": 1332,
+      "caption": "Burnet's 1959 clonal deletion theory explained self-tolerance; today 3.9 million Australians have an autoimmune condition.",
+      "voiceover": {
+        "text": "In 1959, the Australian scientist Macfarlane Burnet proposed an elegant idea. During development, any immune cell that reacts against your own body is hunted down and destroyed in an organ called the thymus, before it can ever cause harm. This is why your immune system normally leaves your own cells completely alone, and it won Burnet a Nobel Prize. But here's the puzzle. If that safeguard works, why do three point nine million Australians, about one in twenty of us, have an autoimmune condition, and why has it been rising about nine percent every decade since 1980? Clearly the safeguard sometimes fails. And there's a flip side too, because the immune system can also overreact to completely harmless things like pollen or peanuts, producing allergy. Today we'll see how both happen, a fully working immune system simply aiming at the wrong target, and how we treat each one."
+      }
+    },
+    {
+      "id": "concept-self-tolerance",
+      "type": "concept",
+      "heading": "The self-tolerance rule book",
+      "body": "Self-tolerance lets the immune system tell self from non-self, and autoimmune disease is what happens when it breaks.",
+      "bullets": [
+        {
+          "text": "Self-tolerance is maintained by clonal deletion of self-reactive T cells in the thymus."
+        },
+        {
+          "text": "Molecular mimicry: a pathogen looks like a self-antigen, so antibodies hit host tissue too."
+        },
+        {
+          "text": "Faulty regulatory T cells or exposed hidden antigens can also break tolerance."
+        }
+      ],
+      "secondary": "Genetics matters as well, since certain HLA gene variants raise the risk and many autoimmune diseases run in families. The crucial point is that the immune system here is not weak, it is overactive and misdirected.",
+      "callout": "Autoimmunity is an overactive immune system, never a weak one.",
+      "durationInFrames": 1746,
+      "caption": "Self-tolerance comes from clonal deletion; it breaks via molecular mimicry, faulty T-regs, hidden antigens or genetics.",
+      "voiceover": {
+        "text": "So let's start with the rule book, self-tolerance. Self-tolerance is the immune system's ability to tell your own cells, self, apart from invaders, non-self. The main way the body achieves it is clonal deletion, where developing T cells that react strongly against your own proteins are destroyed in the thymus before they're ever released. So how does this break down and cause autoimmune disease? There are a few routes. One is molecular mimicry, where a pathogen happens to carry an antigen that looks like one of your own, so the antibodies made against the pathogen accidentally attack your own tissue too. Another is faulty regulatory T cells, which normally keep self-reactive cells in check, so if they fail, those rogue clones multiply. A third is exposure of hidden antigens, where damage releases proteins the immune system has never seen and treats as foreign. And genetics plays a role too, because certain H L A gene variants raise the risk, which is why these diseases cluster in families. Now the single most important point for the exam. In autoimmune disease the immune system is not weak. It is overactive and pointed at the wrong target."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms run through autoimmunity and allergy, so lock them in before the mechanisms.",
+      "bullets": [
+        {
+          "text": "Autoimmune disease: a disorder where the immune system attacks the body's own tissues."
+        },
+        {
+          "text": "Self-tolerance: the ability to distinguish self from non-self, kept by clonal deletion."
+        },
+        {
+          "text": "Allergen: a normally harmless substance that triggers an exaggerated immune response."
+        },
+        {
+          "text": "IgE: the antibody class that binds mast cells and drives allergic reactions."
+        },
+        {
+          "text": "Anaphylaxis: a severe, body-wide allergic reaction that is a medical emergency."
+        }
+      ],
+      "callout": "Self-attack, the self rule, the trigger, the antibody, the emergency.",
+      "durationInFrames": 1260,
+      "caption": "Autoimmune disease, self-tolerance, allergen, IgE, anaphylaxis.",
+      "voiceover": {
+        "text": "Let's pin down five terms you'll use all lesson. An autoimmune disease is a non-infectious disorder where the immune system attacks the body's own tissues, causing chronic inflammation and organ damage. Self-tolerance is the immune system's ability to distinguish self from non-self, maintained by clonal deletion of self-reactive lymphocytes in the thymus. An allergen is a normally harmless substance, like pollen or peanut protein, that triggers an exaggerated immune response in a sensitised person. I g E is the antibody class produced against allergens, and it binds to mast cells, priming them to react. And anaphylaxis is a severe, body-wide allergic reaction involving massive histamine release, and it is a life-threatening medical emergency. Keep autoimmune disease and allergy clearly apart in your mind, because the whole lesson hinges on the difference between attacking self and overreacting to a harmless outsider."
+      }
+    },
+    {
+      "id": "concept-autoimmune-examples",
+      "type": "concept",
+      "heading": "Which tissue gets attacked",
+      "body": "Autoimmune diseases are grouped by their target: organ-specific diseases hit one organ, systemic ones hit antigens found body-wide.",
+      "bullets": [
+        {
+          "text": "Type 1 diabetes: T cells destroy the insulin-making beta cells of the pancreas."
+        },
+        {
+          "text": "Multiple sclerosis hits the myelin sheath; rheumatoid arthritis hits the joint lining."
+        },
+        {
+          "text": "Lupus is systemic, with antibodies against DNA forming complexes that damage many organs."
+        }
+      ],
+      "secondary": "Most treatments are immunosuppressive, like corticosteroids and biologics such as anti-TNF antibodies, so they calm the misguided attack but do not cure the underlying loss of self-tolerance. Hormone replacement, like insulin, just replaces the missing product.",
+      "callout": "Organ-specific hits one target; systemic hits many.",
+      "durationInFrames": 1728,
+      "caption": "Organ-specific (T1D, MS, RA) versus systemic (lupus); treatments suppress immunity but do not restore tolerance.",
+      "voiceover": {
+        "text": "Now let's name some autoimmune diseases, because the exam wants you to know the target tissue for each. They split into two groups. Organ-specific diseases attack a single organ. Type 1 diabetes is the classic example, where cytotoxic T cells destroy the insulin-producing beta cells in the pancreas, causing an absolute lack of insulin. Multiple sclerosis attacks the myelin sheath wrapping nerves in the central nervous system, so nerve signals slow and falter, affecting vision, balance and movement. Rheumatoid arthritis attacks the synovial membrane lining the joints, eroding cartilage and deforming the joints. Then there are systemic diseases, which attack antigens found all over the body. Systemic lupus is the key one, where antibodies are made against your own DNA and nuclear proteins, forming immune complexes that deposit in tissues and inflame many organs at once, with that classic butterfly rash on the face. Now treatment. Most are immunosuppressive, corticosteroids to damp inflammation broadly, and biologic drugs like anti-T N F antibodies that block specific inflammatory signals. But notice, these manage the attack, they don't restore self-tolerance, so they don't cure it. And hormone replacement, like insulin, simply replaces what was lost."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Disease",
+          "Target tissue",
+          "Type"
+        ],
+        "rows": [
+          [
+            "Type 1 diabetes",
+            "Pancreatic beta cells",
+            "Organ-specific"
+          ],
+          [
+            "Multiple sclerosis",
+            "Myelin sheath (CNS)",
+            "Organ-specific"
+          ],
+          [
+            "Rheumatoid arthritis",
+            "Joint synovium",
+            "Organ-specific"
+          ],
+          [
+            "Lupus (SLE)",
+            "DNA, nuclei, many organs",
+            "Systemic"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-allergy-mechanism",
+      "type": "concept",
+      "heading": "Allergy is a two-stage trap",
+      "body": "An allergy is an IgE-driven overreaction to a harmless allergen, and it always takes two encounters to cause symptoms.",
+      "bullets": [
+        {
+          "text": "Sensitisation: the first exposure makes IgE that coats mast cells, with no symptoms."
+        },
+        {
+          "text": "Re-exposure: the allergen cross-links that IgE and triggers mast cell degranulation."
+        },
+        {
+          "text": "Histamine then causes vasodilation, swelling, mucus and bronchoconstriction."
+        }
+      ],
+      "secondary": "This is why a first exposure feels harmless, the body is only being primed. The symptoms appear within minutes on a later exposure because the mast cells are already loaded and ready to fire.",
+      "callout": "First exposure primes, second exposure fires.",
+      "durationInFrames": 1740,
+      "caption": "Allergy: first exposure makes IgE that coats mast cells; re-exposure cross-links it and releases histamine.",
+      "voiceover": {
+        "text": "Now the other side, allergy, which is a Type one hypersensitivity. An allergy is an exaggerated immune response to a normally harmless substance, an allergen. And here's the key feature, it takes two stages, two separate encounters. Stage one is sensitisation, the first exposure. The allergen is taken up and processed, helper T cells push B cells to make I g E antibodies specific to that allergen, and crucially that I g E goes and binds to the surface of mast cells in your tissues. And here's the thing, no symptoms happen at all during this first exposure. You feel completely fine, but you are now sensitised, your mast cells are loaded. Stage two is re-exposure. The same allergen comes back, and it physically cross-links two neighbouring I g E molecules sitting on a mast cell. That cross-linking is the trigger, and it causes the mast cell to degranulate, dumping out pre-made chemicals, the most important being histamine. Histamine then causes vasodilation and redness, leaky vessels and swelling, mucus secretion, and contraction of smooth muscle giving bronchoconstriction and gut cramps. So first exposure primes you silently, and the second exposure fires within minutes."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "allergen",
+            "label": "Allergen"
+          },
+          {
+            "id": "ige",
+            "label": "IgE made"
+          },
+          {
+            "id": "mast",
+            "label": "Coats mast cell"
+          },
+          {
+            "id": "degran",
+            "label": "Histamine"
+          }
+        ],
+        "edges": [
+          {
+            "from": "allergen",
+            "to": "ige"
+          },
+          {
+            "from": "ige",
+            "to": "mast"
+          },
+          {
+            "from": "mast",
+            "to": "degran"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-anaphylaxis",
+      "type": "concept",
+      "heading": "Anaphylaxis and adrenaline",
+      "body": "Anaphylaxis is the same allergic mechanism firing body-wide at once, causing collapse, and adrenaline is the life-saving reversal.",
+      "bullets": [
+        {
+          "text": "Mast cells everywhere degranulate together, so histamine floods the whole body."
+        },
+        {
+          "text": "Vasodilation drops blood pressure and airway swelling plus bronchoconstriction stops breathing."
+        },
+        {
+          "text": "Intramuscular adrenaline reverses it: vasoconstriction, bronchodilation and stronger heartbeat."
+        }
+      ],
+      "secondary": "Adrenaline acts within minutes, which is why it is first-line. Antihistamines and steroids are too slow for the crisis itself and only help prevent a later second wave.",
+      "callout": "Adrenaline first, every time. Antihistamines are too slow here.",
+      "durationInFrames": 1716,
+      "caption": "Anaphylaxis is systemic degranulation causing shock and airway closure; adrenaline reverses it fast.",
+      "voiceover": {
+        "text": "Now the deadly extreme, anaphylaxis. It's the exact same mechanism we just described, but instead of firing at one spot like your nose, mast cells all over the body degranulate at the same time, so histamine floods everywhere at once. Two things make it lethal. First, the widespread vasodilation causes a sudden, dangerous drop in blood pressure, called anaphylactic shock, so organs aren't perfused. Second, fluid leaks into tissues causing the face, throat and tongue to swell, that's angioedema, and combined with severe bronchoconstriction, the airway closes and the person can't breathe. This can go from first symptom to collapse in five to ten minutes. The treatment is intramuscular adrenaline, and you need to know how it works. Adrenaline acts on alpha receptors to cause vasoconstriction, which reverses the vasodilation and restores blood pressure, and on beta receptors to cause bronchodilation, opening the airway, and to strengthen the heartbeat. That's why an EpiPen into the thigh is first-line and life-saving. And here's a key exam point, antihistamines and steroids are far too slow for the acute crisis, they only help prevent a second wave hours later. In anaphylaxis, adrenaline first, always."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Jess's anaphylaxis",
+      "question": "Jess has a peanut allergy managed with daily antihistamines. She accidentally eats peanut oil and within 5 minutes has hives, facial swelling and trouble breathing. Why didn't she react the very first time she ate peanuts, what happened this time, why didn't her antihistamines prevent it, and how does her EpiPen help?",
+      "coachNote": "Use the two-stage model, then explain why the symptom-blocking drug fails against a flood of already-released histamine.",
+      "steps": [
+        "First time: she was only sensitised, making peanut-specific IgE that coated her mast cells, which causes no symptoms.",
+        "This time: the peanut allergen cross-linked that IgE, so her mast cells degranulated and released histamine across her body.",
+        "Histamine caused the hives and facial swelling, the airway narrowing, and a falling blood pressure.",
+        "Antihistamines only block histamine receptors, they don't stop degranulation, and they act too slowly for this flood.",
+        "Answer: the EpiPen's adrenaline reverses it, vasoconstriction restores blood pressure and bronchodilation opens the airway ✓"
+      ],
+      "durationInFrames": 1872,
+      "caption": "First exposure sensitised Jess; re-exposure caused degranulation; antihistamines can't stop it, but adrenaline reverses it.",
+      "voiceover": {
+        "text": "Let's apply the whole mechanism to a real scenario, because this is exactly how the exam tests it. Jess has a known peanut allergy, managed with daily antihistamines. At a school event she accidentally eats food with peanut oil, and within five minutes she has hives, facial swelling, and difficulty breathing. Four questions. Why no reaction the first time she ate peanuts? Because that first time she was only sensitised, her body made peanut-specific I g E that bound to her mast cells, and sensitisation produces no symptoms at all. What happened this time? The peanut allergen cross-linked the I g E sitting on her mast cells, triggering degranulation, so histamine and other mediators poured out across her body. That histamine caused the hives and facial swelling through leaky, dilated vessels, the breathing difficulty through bronchoconstriction, and the faintness through falling blood pressure. Why didn't her daily antihistamines prevent this? Because antihistamines only block histamine receptors on target cells, they do not stop the mast cells degranulating in the first place, and they act far too slowly to counter this massive sudden release. And how does her EpiPen help? The adrenaline reverses the dangerous effects directly, vasoconstriction to restore her blood pressure, and bronchodilation to reopen her airway."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking autoimmune disease means a weak immune system. It is the opposite, an overactive immune system attacking self, which is why we suppress it.",
+      "secondary": "Trap 2: believing you can have anaphylaxis on a first exposure. Anaphylaxis needs prior sensitisation, because the first exposure only makes the IgE that later triggers it. Trap 3: saying antihistamines stop mast cells releasing histamine. They only block histamine receptors on target cells, so the release still happens.",
+      "mistakeTag": "Where immune-disease marks vanish",
+      "callout": "Overactive not weak, second exposure not first, block receptors not release.",
+      "durationInFrames": 1548,
+      "caption": "Autoimmunity is overactive not weak; anaphylaxis needs prior sensitisation; antihistamines block receptors, not release.",
+      "voiceover": {
+        "text": "Three traps that quietly cost marks every year. Trap one, the big one, thinking autoimmune disease means the immune system is weak. It is the exact opposite. The immune system is overactive and attacking the body's own tissues, which is precisely why the treatment is immunosuppression, drugs to calm a response that's too strong, not too weak. Trap two, believing someone can have an anaphylactic reaction the very first time they meet an allergen. They cannot. Anaphylaxis requires prior sensitisation, because that first exposure only produces the I g E and binds it to mast cells. The reaction can only happen on a second or later exposure, when the I g E is already in place. Trap three, saying antihistamines stop mast cells from releasing histamine. They don't. Antihistamines block histamine receptors on the target cells, so they prevent histamine from acting, but the mast cells still degranulate and release it. A different drug class, mast cell stabilisers, is what actually prevents release. Nail those three and immune-disease questions become easy marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A new drug stabilises mast cells so they cannot degranulate. Predict how effective it would be for (a) hayfever, (b) anaphylaxis first-aid after exposure, and (c) multiple sclerosis. Justify each.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "(a) Hayfever is driven by mast cell degranulation, so blocking that would stop histamine release and the symptoms, highly effective.",
+        "(b) As first-aid after exposure, the mast cells have already degranulated, so stabilising them now does nothing, ineffective.",
+        "(c) Multiple sclerosis is driven by T cells attacking myelin, not by mast cells, so the drug is irrelevant, ineffective.",
+        "The drug only helps where mast cell degranulation is the cause and where it is given before release.",
+        "Answer: (a) effective, (b) ineffective as first-aid, (c) ineffective ✓"
+      ],
+      "durationInFrames": 1746,
+      "caption": "Mast cell stabiliser: works for hayfever, useless once anaphylaxis has fired, irrelevant to T-cell-driven MS.",
+      "voiceover": {
+        "text": "Quick check, and this one really tests whether you understand the mechanisms. A new drug stabilises mast cells so they cannot degranulate. Predict how effective it would be for three conditions, and justify each. Part a, hayfever. Part b, anaphylaxis first-aid given after exposure. Part c, multiple sclerosis. Pause and reason it through. Right. Part a, hayfever is a Type one reaction driven by mast cells degranulating in the nasal lining, so a drug that prevents degranulation would stop the histamine release and therefore the symptoms. Highly effective. Part b, anaphylaxis first-aid, but notice the timing, this is after exposure. By then the mast cells have already degranulated and dumped their histamine, so stabilising them now does nothing, the horse has bolted. Ineffective as first-aid, which is why adrenaline is still essential. Part c, multiple sclerosis. M S is driven by cytotoxic T cells attacking the myelin sheath, mast cells are not the key players at all, so the drug's mechanism is simply irrelevant. Ineffective. So the drug only helps where mast cell degranulation is the cause, and only if it's given before the release. Matching mechanism to disease is exactly the high-band skill."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Self-tolerance comes from clonal deletion; autoimmune disease is its breakdown, an overactive immune system attacking self.",
+        "Autoimmune diseases are organ-specific (type 1 diabetes, MS, RA) or systemic (lupus).",
+        "Allergy is IgE-mediated: first exposure sensitises and coats mast cells, re-exposure triggers degranulation.",
+        "Anaphylaxis is systemic degranulation; intramuscular adrenaline reverses it, antihistamines are too slow.",
+        "Most autoimmune and allergy treatments manage symptoms; only desensitisation re-educates the immune response."
+      ],
+      "finalPrompt": "Sorting an immune disorder? Ask: is the target self or a harmless allergen, and which antibody, IgG or IgE?",
+      "durationInFrames": 1572,
+      "caption": "Five takeaways: self-tolerance, autoimmune targets, the two-stage allergy, anaphylaxis, and management.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, self-tolerance comes from clonal deletion of self-reactive cells in the thymus, and autoimmune disease is what happens when that breaks, an overactive immune system attacking the body's own tissues, never a weak one. Second, autoimmune diseases are either organ-specific, like type 1 diabetes hitting beta cells, multiple sclerosis hitting myelin, and rheumatoid arthritis hitting joints, or systemic, like lupus attacking DNA across many organs. Third, allergy is an I g E mediated overreaction in two stages, the first exposure sensitises you by coating mast cells with I g E, and the re-exposure cross-links it and triggers degranulation. Fourth, anaphylaxis is that same degranulation happening body-wide, and intramuscular adrenaline reverses it fast, while antihistamines are too slow for the crisis. And fifth, most treatments manage symptoms, and only desensitisation actually re-educates the immune response. So whenever you sort an immune disorder, ask, is the target self or a harmless allergen, and which antibody is involved, I g G or I g E. See you next lesson."
+      }
+    }
+  ]
+}

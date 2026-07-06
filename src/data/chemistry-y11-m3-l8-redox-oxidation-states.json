@@ -1,0 +1,301 @@
+{
+  "title": "Redox Reactions & Oxidation States",
+  "subtitle": "Tracking electrons through oxidation and reduction",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 8",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 3: Reactive Chemistry",
+  "syllabusDotPoints": [
+    "Apply the definitions of oxidation and reduction in terms of electron transfer and oxidation numbers to a range of reduction and oxidation (redox) reactions",
+    "Construct relevant half-equations and balanced overall equations to represent a range of redox reactions"
+  ],
+  "lessonIntent": "Students can assign oxidation numbers using the six rules, identify redox reactions from oxidation number changes, and balance half-equations in acidic solution.",
+  "examSkill": "Determine oxidation states in compounds and ions, identify oxidising and reducing agents, and balance half-equations in acidic medium.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson subjects/chemistry/year11/module3/lesson08.html. Real-world anchor: household bleach (OCl-). Worked example: Mn in MnO4- (+7) and half-equation balancing. Misconception: redox requires oxygen. Sets up L9 (galvanic cells) and L10 (inert electrodes).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Redox Reactions and Oxidation States - Year 11 Chemistry, Module 3.",
+      "voiceover": {
+        "text": "Redox Reactions and Oxidation States. Year eleven Chemistry, Module three.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L8/title.5fa756b2a1f7.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why does bleach stain your clothes white?",
+      "body": "Household bleach is sodium hypochlorite - NaOCl. The hypochlorite ion rips electrons out of coloured dye molecules, destroying their structure. The dye can no longer absorb light, so the fabric looks white. No oxygen is donated. It is pure electron theft.",
+      "bullets": [
+        {
+          "text": "Bleach = NaOCl. The OCl- ion is the active ingredient.",
+          "at": 4
+        },
+        {
+          "text": "OCl- rips electrons from dye molecules.",
+          "at": 10
+        },
+        {
+          "text": "The dye structure breaks; it cannot absorb light.",
+          "at": 17
+        },
+        {
+          "text": "No oxygen is donated - just electrons stolen.",
+          "at": 24
+        },
+        {
+          "text": "That is redox: electron transfer in action.",
+          "at": 31
+        }
+      ],
+      "callout": "Redox is about electron transfer - not just oxygen.",
+      "image": "l8HookBleach",
+      "durationInFrames": 1260,
+      "caption": "Bleach destroys dye by ripping out electrons - redox without oxygen.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "bulletsStart": 90,
+        "callout": 1020,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Why does bleach stain your clothes white? Household bleach is sodium hypochlorite - NaOCl. The hypochlorite ion rips electrons out of coloured dye molecules, destroying their structure. The dye can no longer absorb light, so the fabric looks white. No oxygen is donated. It is pure electron theft. That is redox in action - and it proves redox is not just about oxygen.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L8/hook.5a15aa25a634.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Redox = electron transfer",
+      "body": "Think of a redox reaction as a relay race: one runner drops the baton (loses electrons) and another picks it up (gains them). Where the analogy breaks: electrons are not physical objects passed hand-to-hand — they transfer through contact or a wire. Every redox reaction has two halves.",
+      "bullets": [
+        {
+          "text": "Oxidation: loss of electrons. Oxidation number increases.",
+          "at": 4
+        },
+        {
+          "text": "Reduction: gain of electrons. Oxidation number decreases.",
+          "at": 11
+        },
+        {
+          "text": "OIL RIG: Oxidation Is Loss, Reduction Is Gain.",
+          "at": 19
+        },
+        {
+          "text": "LEO says GER: Lose Electrons Oxidation, Gain Electrons Reduction.",
+          "at": 27
+        }
+      ],
+      "callout": "Track the electrons. They never disappear - they just move.",
+      "image": "l8ConceptElectronTransfer",
+      "durationInFrames": 1500,
+      "caption": "Redox is the transfer of electrons from one species to another.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1020,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Think of a redox reaction as a relay race, where one runner drops the baton by losing electrons, and another runner picks it up by gaining them. Where the analogy breaks down is that electrons aren't physical objects passed hand to hand, they transfer through direct contact or through a wire. Every redox reaction has two halves, because one species loses electrons in oxidation, while another species gains those same electrons in reduction, and you can never have one without the other. The mnemonic is OIL RIG, Oxidation Is Loss, Reduction Is Gain. Or if you prefer, LEO the lion says GER, Lose Electrons Oxidation, Gain Electrons Reduction. Just track the electrons, because they never disappear, they only move."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Six rules for oxidation numbers",
+      "body": "Oxidation numbers are bookkeeping tools. They let you track electron transfer even when you cannot see it. Apply these six rules in order.",
+      "bullets": [
+        {
+          "text": "Free elements = 0. Na(s), O2(g), Cl2(g) all equal 0.",
+          "at": 4
+        },
+        {
+          "text": "Monatomic ions = charge. Na+ = +1, Cl- = -1.",
+          "at": 10
+        },
+        {
+          "text": "Oxygen = -2 in compounds (except peroxides = -1).",
+          "at": 16
+        },
+        {
+          "text": "Hydrogen = +1 with non-metals, -1 with metals.",
+          "at": 22
+        },
+        {
+          "text": "Group 1 = +1, Group 2 = +2, Group 17 = -1 in compounds.",
+          "at": 28
+        },
+        {
+          "text": "The sum of oxidation numbers equals the overall charge.",
+          "at": 34
+        }
+      ],
+      "callout": "Oxidation numbers are bookkeeping - not real charges.",
+      "image": "l8DefinitionOxidationRules",
+      "durationInFrames": 1440,
+      "caption": "Six rules let you assign oxidation numbers to any element in any compound.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1200,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Oxidation numbers are just bookkeeping tools, and there are six rules to assign them. First, free elements are always zero, so sodium metal, oxygen gas, and chlorine gas are all zero. Second, a monatomic ion equals its charge, so sodium ion is plus one and chloride is minus one. Third, oxygen is minus two in compounds, except in peroxides where it's minus one. Fourth, hydrogen is plus one with non-metals but minus one with metals. Fifth, group one is plus one, group two is plus two, and group seventeen is minus one in compounds. And sixth, the sum of all the oxidation numbers equals the overall charge."
+      }
+    },
+    {
+      "id": "marginalia-half-equation",
+      "type": "marginalia",
+      "heading": "Balancing half-equations in acid",
+      "body": "In acidic solution, you balance oxygen with water and hydrogen with H+ ions. Then balance charge by adding electrons. The electrons must end up on the correct side for oxidation or reduction.",
+      "callout": "Acidic solution means H2O and H+ are your tools.",
+      "notes": [
+        {
+          "text": "balance O with H2O",
+          "position": "top-right"
+        },
+        {
+          "text": "balance H with H+",
+          "position": "mid-right"
+        },
+        {
+          "text": "balance charge with e-",
+          "position": "bottom-right"
+        }
+      ],
+      "image": "l8MarginaliaHalfEquation",
+      "durationInFrames": 1140,
+      "caption": "In acid: H2O for oxygen, H+ for hydrogen, e- for charge.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "callout": 780,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "In acidic solution, balancing half-equations follows a reliable pattern. You balance the oxygen atoms first by adding water molecules, then balance the hydrogen atoms by adding H plus ions, and finally balance the overall charge by adding electrons. For a reduction, those electrons go on the left because the species is gaining them, whereas for an oxidation they go on the right because the species is losing them. Practise this method carefully, because HSC exams test it directly."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Determining oxidation states and balancing a half-equation",
+      "question": "Determine the oxidation state of manganese in the permanganate ion, MnO4-. Then balance the reduction half-equation MnO4- -> Mn2+ in acidic solution.",
+      "coachNote": "Target: apply the oxidation number rules, then use H2O, H+, and e- to balance.",
+      "unitCancel": {
+        "left": "atoms in",
+        "right": "atoms out",
+        "result": "balanced"
+      },
+      "steps": [
+        "Known: MnO4- overall charge = -1. Need oxidation state of Mn.",
+        "Find: oxidation state of Mn + balanced half-equation in acid.",
+        "Formula: x + (n x oxidation state of O) = overall charge.",
+        "Substitute: x + (4 x -2) = -1. So x - 8 = -1.",
+        "Solve: x = +7. Mn in MnO4- has oxidation state +7.",
+        "Half-equation unbalanced: MnO4- -> Mn2+.",
+        "Balance O: add 4 H2O to the right. MnO4- -> Mn2+ + 4H2O.",
+        "Balance H: add 8 H+ to the left. 8H+ + MnO4- -> Mn2+ + 4H2O.",
+        "Balance charge: left = +7, right = +2. Add 5 e- to the left.",
+        "Answer: 8H+ + MnO4- + 5e- -> Mn2+ + 4H2O. Mn reduced from +7 to +2."
+      ],
+      "image": "l8WorkedExampleMnO4",
+      "durationInFrames": 1560,
+      "caption": "Mn in MnO4- is +7. Balanced half-equation uses H2O, H+, and 5e-.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 120
+      },
+      "voiceover": {
+        "text": "Determine manganese's oxidation state in permanganate, then balance the half-equation. Four oxygens at minus two gives minus eight. Overall charge minus one, so Mn is plus seven. Balance the half-equation: add four waters for oxygen, eight H plus for hydrogen. Left charge is plus seven, right is plus two. Add five electrons to the left. Final: eight H plus plus MnO four minus plus five e minus gives Mn two plus plus four H two O. Reduced from plus seven to plus two.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L8/worked-example.d942fb4eb0f3.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Redox always involves oxygen?",
+      "body": "Students often think: \"Redox means oxygen is involved - either gained or lost.\" That is the wrong instinct. The name comes from history: oxidation originally meant reaction with oxygen. But the correct modern definition is electron transfer. Bleach oxidises dyes without donating oxygen. The hypochlorite ion strips electrons directly. Hydrogen gas reducing metal oxides is redox too - with no oxygen gained or lost in the transfer.",
+      "callout": "The correct definition: redox = electron transfer. Oxygen is optional.",
+      "mistakeTag": "Oxygen-required redox",
+      "image": "l8MisconceptionBleach",
+      "durationInFrames": 1350,
+      "caption": "Bleach proves redox does not need oxygen - just electron transfer.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here is the trap. Students think redox always means oxygen is involved, either gained or lost, but that's wrong. The name just comes from history, since oxidation originally meant a reaction with oxygen, whereas the modern definition is really about electron transfer. Bleach, for instance, oxidises dyes without donating any oxygen at all, because the hypochlorite ion strips their electrons directly. And when hydrogen gas reduces a metal oxide, that's redox too, with no oxygen gained or lost in the transfer. So the fix is simple, redox equals electron transfer, and oxygen is completely optional."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "First, determine the oxidation state of chromium in the dichromate ion, Cr2O7^2-. Then, in the reaction Zn(s) + Cu2+(aq) -> Zn2+(aq) + Cu(s), state which species is the oxidising agent and which is the reducing agent, giving your reasoning.",
+      "pausePrompt": "Pause: work out the oxidation numbers before the answer plays.",
+      "answerSteps": [
+        "Dichromate Cr2O7^2- has overall charge -2. Seven oxygens at -2 each = -14.",
+        "Let Cr oxidation state = x. Equation: 2x + (-14) = -2.",
+        "Solve: 2x = +12, so x = +6. Chromium is +6 in dichromate.",
+        "For the reaction: Zn(s) starts at 0, becomes Zn2+ = +2. Number rises = oxidation.",
+        "Cu2+ starts at +2, becomes Cu(s) = 0. Number falls = reduction.",
+        "Answer: Zn is the reductant (oxidised, loses 2e-). Cu2+ is the oxidant (reduced, gains 2e-)."
+      ],
+      "image": "l8QuickCheckCr2O7",
+      "durationInFrames": 1500,
+      "caption": "Cr in Cr2O7^2- is +6. Zn oxidised; Cu2+ reduced.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 540,
+        "answerInterval": 100
+      },
+      "voiceover": {
+        "text": "Time for you to try one. First, determine chromium's oxidation state in dichromate, and then identify the oxidant and reductant in the reaction between zinc and copper two plus. Pause now and work it out. Starting with the dichromate, seven oxygens at minus two give minus fourteen, and since the two chromiums must total plus twelve, each chromium is plus six. Now for the reaction, zinc starts at zero and becomes plus two, so its oxidation number rises, which means zinc is oxidised, making it the reductant. Copper two plus starts at plus two and falls to zero, so it's reduced, making it the oxidant. Zinc loses two electrons and copper gains them."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Are the oxidation numbers changing? If yes, track the electrons.",
+      "image": "l8SummaryRedox",
+      "points": [
+        "Redox = electron transfer. Oxidation is loss; reduction is gain.",
+        "OIL RIG: Oxidation Is Loss, Reduction Is Gain.",
+        "Oxidation numbers are bookkeeping tools with six priority rules.",
+        "In acidic solution, balance half-equations with H2O, H+, and e-.",
+        "A species is oxidised if its oxidation number rises; reduced if it falls."
+      ],
+      "durationInFrames": 1260,
+      "caption": "Five takeaways and one decision rule for redox reactions.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 110,
+        "finalPrompt": 720,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Let's pull it together with five takeaways. First, redox is electron transfer, where oxidation is loss and reduction is gain. Second, remember OIL RIG to keep those straight. Third, oxidation numbers follow six priority rules. Fourth, in acidic solution you balance half-equations with water, H plus, and electrons. And fifth, a species is oxidised if its oxidation number rises, and reduced if it falls. So the decision rule is, are the oxidation numbers changing? If they are, track the electrons."
+      }
+    }
+  ]
+}

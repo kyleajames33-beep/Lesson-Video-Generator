@@ -1,0 +1,232 @@
+{
+  "title": "DNA Structure and DNA Replication",
+  "subtitle": "How one molecule both stores and copies the code of life",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 6",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "model the process of DNA replication, including the role of complementary base pairing and the semiconservative nature of replication"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Why is it important for genetic material to be replicated exactly?",
+  "lessonIntent": "Students can describe DNA structure and explain how complementary base pairing makes semiconservative replication accurate.",
+  "examSkill": "Use complementary base pairing to predict a new DNA strand and explain why replication is semiconservative.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. We are now in Inquiry Question two. Today, the structure of DNA and how it copies itself. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "DNA Structure and DNA Replication (Year 12 Biology, Module 5, Lesson 6)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A structure that explained itself",
+      "body": "When Watson and Crick saw the double helix in 1953, the way it could copy itself was suddenly obvious.",
+      "callout": "How can one molecule both store information and copy it perfectly?",
+      "image": "bioM5L6DoubleHelix",
+      "durationInFrames": 1740,
+      "caption": "The 1953 double helix and the 1958 Meselson-Stahl experiment established the molecular basis of heredity.",
+      "voiceover": {
+        "text": "On the twenty fifth of April, nineteen fifty three, Watson and Crick published the structure of DNA, the famous double helix, built using Rosalind Franklin's X ray data, the image known as Photo fifty one. And the moment they saw the structure, something clicked, because the shape itself hinted at how DNA could be copied. Five years later, in nineteen fifty eight, Meselson and Stahl confirmed exactly how that copying works, by growing bacteria in heavy nitrogen and tracking the strands. Together, these two discoveries, the structure and the copying mechanism, established the molecular basis of heredity. Today we are going to see the same thing they saw, how the structure of DNA explains both how it stores information and how it copies that information almost perfectly."
+      }
+    },
+    {
+      "id": "concept-nucleotide",
+      "type": "concept",
+      "heading": "DNA is built from nucleotides",
+      "body": "DNA is a double helix of repeating nucleotides, and the base sequence is the information.",
+      "bullets": [
+        {
+          "text": "A nucleotide is a sugar, a phosphate group and a nitrogenous base."
+        },
+        {
+          "text": "Nucleotides link into two strands forming a sugar-phosphate backbone, twisted into a double helix."
+        },
+        {
+          "text": "The specific sequence of bases is what stores the hereditary information."
+        }
+      ],
+      "secondary": "There are four bases. The order they sit in along the strand is the genetic code, the same way letters in order make words.",
+      "callout": "Same building blocks every time; the order of bases is the message.",
+      "durationInFrames": 1848,
+      "caption": "Nucleotides build a double-helix backbone; the base sequence stores the information.",
+      "voiceover": {
+        "text": "Let's start with what DNA is actually made of. The building block is the nucleotide, and every nucleotide has three parts, a sugar, a phosphate group, and a nitrogenous base. Those nucleotides link together into long strands, with the sugars and phosphates forming a backbone, the sugar phosphate backbone, and two of those strands twist around each other into the famous double helix. Now here is the key idea. The building blocks themselves are pretty repetitive, the same sugar and phosphate over and over. So where is the information? It is in the bases. There are four of them, and the specific sequence, the order they appear in along the strand, is what stores the hereditary information. It works just like letters, the same twenty six letters spell every different word depending on their order."
+      },
+      "diagram": {
+        "type": "dnaHelix"
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-pairing",
+      "type": "concept",
+      "heading": "Complementary base pairing",
+      "body": "Each base pairs with only one partner: A with T, and C with G, held by hydrogen bonds.",
+      "bullets": [
+        {
+          "text": "A pairs with T, and C pairs with G. No other pairings fit."
+        },
+        {
+          "text": "The pairs are held together by hydrogen bonds between the strands."
+        },
+        {
+          "text": "So each strand is a template: it dictates the exact sequence of the other."
+        }
+      ],
+      "secondary": "This single rule is why DNA can both store and copy information. Structure explains both jobs at once, which is what made the discovery so powerful.",
+      "callout": "One base, one partner. That rule makes accurate copying possible.",
+      "durationInFrames": 1926,
+      "caption": "A-T and C-G pairing by hydrogen bonds lets each strand template the other.",
+      "voiceover": {
+        "text": "Now the rule that makes everything work, complementary base pairing. Each base can only pair with one specific partner. Adenine always pairs with thymine, that is A with T. And cytosine always pairs with guanine, C with G. No other combinations physically fit. Those pairs are held together by hydrogen bonds stretching across between the two strands, weak individually, but there are millions of them. And here is why this is so beautiful. Because each base has only one possible partner, each strand automatically dictates the sequence of the other. If you know one strand, you know the other. So each strand acts as a template. This one simple rule is what lets DNA do two jobs with the same structure, store the information in the sequence, and copy it accurately by pairing. That is what Watson and Crick saw immediately."
+      }
+    },
+    {
+      "id": "concept-semiconservative",
+      "type": "concept",
+      "heading": "Replication is semiconservative",
+      "body": "The two strands separate, and each acts as a template for a new complementary strand.",
+      "bullets": [
+        {
+          "text": "The two original strands unzip and separate."
+        },
+        {
+          "text": "Each old strand templates a brand-new complementary strand."
+        },
+        {
+          "text": "Result: two molecules, each with one original strand and one new strand."
+        }
+      ],
+      "secondary": "This is why it is called semiconservative, half of each new molecule is conserved from the original. It is not two brand-new molecules, and no original strand is discarded.",
+      "callout": "Each new DNA molecule keeps one original strand. That is semiconservative.",
+      "durationInFrames": 1956,
+      "caption": "Strands separate and each templates a new strand: each product keeps one original strand.",
+      "voiceover": {
+        "text": "So how does the copying actually happen? It is a process called semiconservative replication, and the name tells you the answer. First, the two original strands unzip and separate, the hydrogen bonds between the pairs break. Then each old strand acts as a template, and a brand new complementary strand is built against it, following the pairing rule, A with T, C with G. The result is two complete DNA molecules, and here is the crucial detail, each one contains one original strand and one newly made strand. That is why we call it semiconservative, because half of each new molecule, one strand, is conserved from the original. Get the wording exactly right, because the exam tests it. It is not two completely brand new molecules, and no original strand is thrown away. Each product keeps one old strand and one new one."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Nucleotide: the building block of DNA, a sugar, a phosphate and a nitrogenous base."
+        },
+        {
+          "text": "Double helix: the twisted-ladder structure formed by two DNA strands."
+        },
+        {
+          "text": "Complementary base pairing: A pairs with T, and C pairs with G."
+        },
+        {
+          "text": "Hydrogen bonds: the weak bonds between paired bases that hold the strands together."
+        },
+        {
+          "text": "Semiconservative replication: each new molecule has one original and one new strand."
+        },
+        {
+          "text": "Template strand: an original strand used to guide a new complementary strand."
+        }
+      ],
+      "callout": "These six terms describe one elegant idea: structure enables copying.",
+      "durationInFrames": 1806,
+      "caption": "Nucleotide, double helix, complementary pairing, hydrogen bonds, semiconservative, template strand.",
+      "voiceover": {
+        "text": "Let's pin down the vocabulary, because precision really matters in this topic. A nucleotide is the building block of DNA, made of a sugar, a phosphate group, and a nitrogenous base. The double helix is the twisted ladder structure formed by two DNA strands. Complementary base pairing is the rule that adenine pairs with thymine, and cytosine pairs with guanine. Hydrogen bonds are the weak bonds between those paired bases that hold the two strands together. Semiconservative replication describes how each new DNA molecule ends up with one original strand and one newly synthesised strand. And a template strand is an original strand used to guide the formation of a new complementary strand. Six terms, but they all describe one elegant idea, the structure of DNA is what makes accurate copying possible."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Build the complementary strand",
+      "question": "A DNA template strand reads A-T-C-G-G-A. Write the new complementary strand, and state what each molecule contains after replication.",
+      "coachNote": "Apply the rule base by base: A pairs with T, T with A, C with G, G with C.",
+      "steps": [
+        "Take the template base by base: A, T, C, G, G, A.",
+        "Apply complementary pairing: A gives T, T gives A, C gives G, G gives C, G gives C, A gives T.",
+        "So the new complementary strand reads T-A-G-C-C-T.",
+        "After replication, the template and its new partner form one molecule; the other original strand templates the second molecule.",
+        "Answer: new strand T-A-G-C-C-T, and each molecule has one original plus one new strand."
+      ],
+      "durationInFrames": 2136,
+      "caption": "Template A-T-C-G-G-A gives new strand T-A-G-C-C-T; each molecule keeps one original strand.",
+      "voiceover": {
+        "text": "Let's apply the pairing rule, because this is a guaranteed exam skill. A DNA template strand reads A, T, C, G, G, A. Write the new complementary strand. We just go base by base and apply the rule. A pairs with T, so the first new base is T. T pairs with A, giving A. C pairs with G, giving G. G pairs with C, giving C. The next G also gives C. And the final A gives T. So reading along, the new complementary strand is T, A, G, C, C, T. Now the second part of the question, what does each molecule contain after replication. The template strand and the new strand we just built pair up to form one of the two molecules, and the other original strand templates the second molecule. So each of the two daughter molecules contains one original strand and one new strand, which is exactly what semiconservative means."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two structure traps",
+      "body": "Trap 1: thinking DNA and RNA have the same structure and bases. DNA is double-stranded with deoxyribose and uses A, T, G, C; RNA is single-stranded with ribose and uses uracil instead of thymine.",
+      "secondary": "Trap 2: thinking the two strands of DNA are identical. They are complementary and antiparallel, running in opposite directions, not identical. Each strand is the template for producing the other, which is the whole basis of copying.",
+      "mistakeTag": "Where DNA-structure marks vanish",
+      "callout": "Complementary, not identical; DNA is not the same as RNA.",
+      "durationInFrames": 1890,
+      "caption": "DNA differs from RNA in strands, sugar and bases; the two DNA strands are complementary, not identical.",
+      "voiceover": {
+        "text": "Two traps on DNA structure. Trap one, thinking DNA and RNA have the same structure and the same bases. They do not. DNA is double stranded, it uses the sugar deoxyribose, and its bases are A, T, G and C. RNA is single stranded, it uses the sugar ribose, and crucially it replaces thymine with uracil. Those differences are not trivia, they relate directly to their different jobs, and we will use them next time. Trap two, and this one is sneaky, thinking the two strands of DNA are identical. They are not identical, they are complementary, and they are antiparallel, meaning they run in opposite directions. Each strand is the template for producing the other, which is the entire basis of copying. So lock these in, complementary not identical, and DNA is not the same as RNA."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Explain how complementary base pairing and semiconservative replication together ensure that hereditary information is preserved accurately in daughter cells.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Complementary pairing means each base has only one partner, so each strand fixes the sequence of the other.",
+        "When strands separate, each one templates an exact new partner strand by following A-T and C-G.",
+        "Semiconservative replication keeps one original strand in each new molecule as a faithful reference.",
+        "Together they make each daughter molecule a faithful copy of the original sequence.",
+        "Answer: the pairing rule guarantees accuracy, and keeping an original strand preserves the information."
+      ],
+      "durationInFrames": 2172,
+      "caption": "Pairing fixes each new strand's sequence; keeping an original strand preserves the information.",
+      "voiceover": {
+        "text": "Quick check, and this is almost word for word a band six exam question. Explain how complementary base pairing and semiconservative replication together ensure hereditary information is preserved accurately in daughter cells. Pause and reason it through. Right, build it in steps. First, complementary base pairing means each base has only one possible partner, A with T, C with G, so each strand completely fixes the sequence of the other. Second, when the two strands separate, each one acts as a template, and a new partner strand is built against it following that same rule, so the new strand has to match exactly. Third, because replication is semiconservative, each new molecule keeps one original strand, a faithful reference copy from the parent. Put those together and every daughter molecule ends up a faithful copy of the original sequence. So the answer, the pairing rule guarantees the accuracy of each new strand, and conserving an original strand preserves the information."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "DNA is a double helix of nucleotides, and the base sequence stores the information.",
+        "Complementary base pairing: A with T, C with G, held by hydrogen bonds.",
+        "Each strand is a template that fixes the sequence of the other.",
+        "Replication is semiconservative: each new molecule has one original and one new strand.",
+        "DNA is complementary not identical, and differs from RNA in strands, sugar and bases."
+      ],
+      "finalPrompt": "Predicting a strand? Apply A-T and C-G base by base, then remember each molecule keeps one original strand.",
+      "durationInFrames": 1986,
+      "caption": "Five takeaways: structure, pairing, templating, semiconservative replication, DNA vs RNA.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, DNA is a double helix built from nucleotides, and it is the sequence of bases that stores the information. Second, complementary base pairing means adenine pairs with thymine, and cytosine with guanine, held together by hydrogen bonds. Third, because of that rule, each strand is a template that completely fixes the sequence of the other. Fourth, replication is semiconservative, so each new molecule ends up with one original strand and one new strand, never thrown away, never two brand new ones. And fifth, remember the two strands are complementary not identical, and DNA differs from RNA in its strands, its sugar, and its bases. When you predict a strand, apply the pairing rule base by base, then recall that each molecule keeps one original strand. Next lesson, mitosis, the cell division that copies these molecules into new cells."
+      }
+    }
+  ]
+}

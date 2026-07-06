@@ -1,0 +1,230 @@
+{
+  "title": "Electron Configuration and Chemical Behaviour",
+  "subtitle": "How configuration sets ion charge and group chemistry",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 19",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "model the atom’s discrete energy levels, including electronic configuration and spdf notation (ACSCH017, ACSCH018, ACSCH020, ACSCH022)"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-8", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-7"],
+  "inquiryQuestion": "Why are atoms of elements different from one another?",
+  "lessonIntent": "Students can predict ion charge from electron configuration, explain why a group shares chemistry, and account for transition-metal variable oxidation states.",
+  "examSkill": "Use the octet rule to predict an ion and its configuration, and apply the 4s-before-3d removal rule to transition-metal cations.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, how electron configuration drives chemical behaviour. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Electron Configuration and Chemical Behaviour (Year 11 Chemistry, Module 1, Lesson 19)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why iron has two ions",
+      "body": "Sodium only ever forms Na⁺, but iron forms both Fe²⁺ and Fe³⁺. The configuration explains the difference.",
+      "callout": "The outer electrons decide what ions form.",
+      "durationInFrames": 690,
+      "caption": "Na forms only Na⁺, but Fe forms Fe²⁺ and Fe³⁺; configuration explains why.",
+      "voiceover": {
+        "text": "OK, here's a contrast that puzzles a lot of students. Sodium only ever forms one ion, sodium plus, and that's it. But iron happily forms two different ions, iron two plus and iron three plus, which is why rust chemistry is so messy. So why can iron do something sodium can't? The answer is in the electron configuration. We've already learned how to write those configurations, and how the periodic table is built from them. Today we turn that into behaviour. We'll use configuration to predict what ion an element forms, to explain why a whole group shares the same chemistry, and to explain why transition metals like iron get to pick from several ion charges."
+      }
+    },
+    {
+      "id": "concept-octet",
+      "type": "concept",
+      "heading": "Configuration sets the ion charge",
+      "body": "Main-group atoms gain or lose electrons to reach the nearest noble-gas configuration, and that sets the charge.",
+      "diagram": {
+        "type": "table",
+        "headers": ["Group", "Valence e⁻", "Action", "Ion"],
+        "rows": [
+          ["1", "1", "Lose 1", "1+"],
+          ["2", "2", "Lose 2", "2+"],
+          ["13", "3", "Lose 3", "3+"],
+          ["16", "6", "Gain 2", "2−"],
+          ["17", "7", "Gain 1", "1−"]
+        ],
+        "delay": 18
+      },
+      "secondary": "As covered in L15, the group number gives the valence count. Here that count decides whether to lose or gain electrons.",
+      "callout": "Reach the nearest noble gas; the electrons moved set the charge.",
+      "durationInFrames": 1170,
+      "caption": "Main-group atoms reach a noble-gas octet; the electrons moved set the ion charge.",
+      "voiceover": {
+        "text": "Let's start with the rule that predicts ion charges, the octet rule. Main-group atoms gain or lose electrons to reach the configuration of the nearest noble gas, which means a full, stable outer shell. The number of electrons they move sets the charge. Group one has one valence electron, so it loses that one to form a one plus ion. Group two loses two, forming two plus. Group thirteen loses three, forming three plus. On the other side, group seventeen is one short of full, so it gains one to form a one minus ion, and group sixteen gains two to form two minus. We saw in the periodic table lesson that the group number gives the valence count. Now that same count tells you whether the atom finds it cheaper to lose its few outer electrons or to grab the few it's missing."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Octet rule: atoms gain or lose electrons to reach a full s²p⁶ outer shell."},
+        {"text": "Cation: a positive ion, formed by losing electrons."},
+        {"text": "Anion: a negative ion, formed by gaining electrons."},
+        {"text": "Oxidation state: the charge an atom appears to have in a compound."}
+      ],
+      "callout": "Lose electrons for cations; gain for anions.",
+      "durationInFrames": 930,
+      "caption": "Octet rule, cation, anion, oxidation state.",
+      "voiceover": {
+        "text": "Four quick definitions. The octet rule says atoms tend to gain or lose electrons to reach a full outer shell, the stable s two p six arrangement of a noble gas. A cation is a positive ion, formed when an atom loses electrons, which is what metals do. An anion is a negative ion, formed when an atom gains electrons, which is what non-metals do. And an oxidation state is the charge an atom appears to carry in a compound. For simple ions it's just the ion charge, but it becomes really useful for transition metals, which we'll get to, because they can show several different oxidation states."
+      }
+    },
+    {
+      "id": "concept-group",
+      "type": "concept",
+      "heading": "Same group, same chemistry",
+      "body": "Every element in a group has the same valence configuration, so it undergoes the same kind of reaction.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "li", "label": "Li (2s¹)"},
+          {"id": "na", "label": "Na (3s¹)"},
+          {"id": "k", "label": "K (4s¹)"},
+          {"id": "rxn", "label": "2M + 2H₂O → 2MOH + H₂"}
+        ],
+        "edges": [
+          {"from": "li", "to": "rxn"},
+          {"from": "na", "to": "rxn"},
+          {"from": "k", "to": "rxn"}
+        ],
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Group 1 all share an ns¹ valence, so all react with water the same way."},
+        {"text": "Reaction type is fixed by the valence configuration."},
+        {"text": "Vigour rises down the group, as covered in L17 and L18."}
+      ],
+      "secondary": "Lithium, sodium, and potassium all give 2M + 2H₂O → 2MOH + H₂; only the violence of the reaction changes.",
+      "callout": "Valence config sets the reaction; position sets the vigour.",
+      "durationInFrames": 1170,
+      "caption": "Group 1 share ns¹, so all react: 2M + 2H₂O → 2MOH + H₂.",
+      "voiceover": {
+        "text": "Now let's explain why a whole group behaves alike. As we saw in the periodic table lesson, the group number is the valence electron count. The deeper point is that every element in a group has the same valence configuration, in the same kind of subshell. Take group one. Lithium ends in two s one, sodium in three s one, potassium in four s one. Same single outer s electron, just in a higher shell each time. Because chemistry is driven by valence electrons, they all do the same reaction, reacting with water to give a metal hydroxide and hydrogen gas, two metal plus two water gives two metal hydroxide plus hydrogen. What changes is only the vigour. Going down, the atom is bigger and the outer electron is easier to lose, which we explained with the radius trend, so potassium reacts far more violently than lithium. The configuration sets the reaction, the position sets the intensity."
+      }
+    },
+    {
+      "id": "concept-transition",
+      "type": "concept",
+      "heading": "Transition metals, variable charge",
+      "body": "Because 3d and 4s energies are close, transition metals can lose different numbers of electrons.",
+      "image": "l19TransitionMetalIons",
+      "bullets": [
+        {"text": "The 3d and 4s subshells are close in energy, so several ions are possible."},
+        {"text": "When forming ions, 4s electrons are removed before 3d."},
+        {"text": "Iron: Fe²⁺ is [Ar]3d⁶, Fe³⁺ is [Ar]3d⁵."}
+      ],
+      "secondary": "Partly filled d subshells let electrons jump between d orbitals, absorbing visible light, which is why their compounds are coloured.",
+      "callout": "Remove 4s before 3d when a transition metal forms an ion.",
+      "durationInFrames": 1170,
+      "caption": "Transition metals: 4s lost before 3d; Fe²⁺ = [Ar]3d⁶, Fe³⁺ = [Ar]3d⁵.",
+      "voiceover": {
+        "text": "Now to the iron puzzle from the start. Transition metals can form more than one ion because their three d and four s subshells are very close in energy. So losing a couple of electrons or a few more both lead to reasonably stable ions, which gives them several possible oxidation states. There's one rule you must get right. When a transition metal forms an ion, the four s electrons come off first, before any three d electrons, because once you start removing electrons the energy ordering flips and three d sits lower. So for iron, which is argon, three d six, four s two, removing the two four s electrons gives iron two plus as argon, three d six. Remove one more, a three d this time, and you get iron three plus as argon, three d five. And a bonus, those partly filled d subshells let electrons jump between d orbitals, absorbing visible light, which is exactly why transition metal compounds are so often coloured."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Predicting an ion",
+      "question": "Aluminium (Z = 13) has configuration 1s²2s²2p⁶3s²3p¹. Predict its ion and the noble gas it matches.",
+      "coachNote": "Count valence electrons, then decide lose or gain.",
+      "steps": [
+        "Valence electrons are 3s²3p¹ = 3 electrons in shell 3",
+        "Losing 3 electrons is easier than gaining 5, so aluminium loses 3",
+        "Losing 3 electrons gives a 3+ charge, so the ion is Al³⁺",
+        "Removing 3s²3p¹ leaves 1s²2s²2p⁶, the configuration of neon",
+        "Answer: Al³⁺, with the [Ne] configuration ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Al loses 3 electrons → Al³⁺ with the [Ne] configuration.",
+      "voiceover": {
+        "text": "Let's predict an ion from a configuration. Aluminium, atomic number thirteen, is one s two, two s two, two p six, three s two, three p one. Step one, find the valence electrons. They're in shell three, three s two plus three p one, so three valence electrons. Step two, decide lose or gain. Aluminium could lose three electrons to empty shell three, or gain five to fill it. Losing three is far easier than gaining five, so it loses. Step three, count the charge. Losing three electrons leaves a three plus charge, so the ion is aluminium three plus. Step four, check the configuration. Stripping off the three s two and three p one leaves one s two, two s two, two p six, which is exactly neon. So aluminium three plus has the neon configuration, a full stable octet. That's why aluminium reliably forms a three plus ion."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Iron's two ions",
+      "question": "Iron (Z = 26) is [Ar]3d⁶4s². Write the configurations of Fe²⁺ and Fe³⁺.",
+      "coachNote": "Remove 4s electrons before 3d electrons.",
+      "steps": [
+        "Neutral Fe is [Ar]3d⁶4s²",
+        "For Fe²⁺, remove the two 4s electrons first, not 3d",
+        "Fe²⁺ is [Ar]3d⁶ (the 4s is now empty)",
+        "For Fe³⁺, remove the two 4s electrons, then one 3d electron",
+        "Answer: Fe²⁺ = [Ar]3d⁶ and Fe³⁺ = [Ar]3d⁵ ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Fe²⁺ = [Ar]3d⁶ (lose 4s²); Fe³⁺ = [Ar]3d⁵ (lose 4s² + one 3d).",
+      "voiceover": {
+        "text": "Now the iron ions in full, because the order of removal is the whole exam point. Iron is argon, three d six, four s two. Step one, write the neutral atom, argon, three d six, four s two. Step two, for iron two plus, remove two electrons, and the rule is four s comes off before three d. So you take both four s electrons, not the three d ones. Step three, that leaves iron two plus as argon, three d six, with an empty four s. Step four, for iron three plus, you remove those same two four s electrons and then one more, this time from three d, giving argon, three d five. So iron two plus is argon three d six, and iron three plus is argon three d five. The classic mistake is writing iron two plus as argon four s two three d four, by removing three d first. Always strip the four s electrons before the three d."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: removing 3d before 4s for a transition-metal ion. The 4s electrons always leave first.",
+      "secondary": "Trap 2: thinking Group 14 forms simple ions. With 4 valence electrons it usually bonds covalently. Trap 3: confusing reaction type with vigour; the same group's type is fixed, only vigour changes.",
+      "mistakeTag": "Where behaviour marks vanish",
+      "callout": "Lose 4s before 3d; Group 14 shares electrons; type fixed, vigour varies.",
+      "durationInFrames": 1230,
+      "caption": "Remove 4s before 3d; Group 14 is covalent; same group = same type, different vigour.",
+      "voiceover": {
+        "text": "Three traps. Trap one, removing three d electrons before four s when a transition metal forms an ion. It's always four s first. Iron two plus is argon three d six, never argon four s two three d four. Burn that ordering in. Trap two, expecting group fourteen elements like carbon to form simple ions. With four valence electrons, losing four or gaining four both cost too much, so they almost always bond covalently instead, sharing electrons. Don't force a carbon four plus ion into an answer. Trap three, mixing up reaction type and vigour. Everything in a group does the same type of reaction, because the valence configuration is the same. What changes down the group is only the vigour. So lithium and potassium both react with water, potassium just does it far more violently."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Sulfur (Z = 16) is 1s²2s²2p⁶3s²3p⁴. Predict the ion it forms and the noble gas it matches.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Valence electrons are 3s²3p⁴ = 6 in shell 3",
+        "Gaining 2 electrons is easier than losing 6, so sulfur gains 2",
+        "Gaining 2 electrons gives a 2− charge, so the ion is S²⁻",
+        "Adding 2 electrons fills 3p to 3p⁶, giving 1s²2s²2p⁶3s²3p⁶ (argon)",
+        "Answer: S²⁻, with the [Ar] configuration ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "S gains 2 electrons → S²⁻ with the [Ar] configuration.",
+      "voiceover": {
+        "text": "Quick check, predicting an anion this time. Sulfur, atomic number sixteen, is one s two, two s two, two p six, three s two, three p four. Predict its ion and the noble gas it matches. Pause and work it through. Right, let's check it. Step one, find the valence electrons, three s two plus three p four, which is six in shell three. Step two, decide lose or gain. Sulfur could lose six or gain two to fill the shell. Gaining two is much cheaper, so it gains. Step three, count the charge. Gaining two electrons gives a two minus charge, so the ion is sulfide, S two minus. Step four, check the configuration. The two extra electrons fill three p up to three p six, giving one s two, two s two, two p six, three s two, three p six, which is argon. So sulfur forms a two minus ion with the argon configuration. Non-metals gain to reach the next noble gas up."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Atoms reach the nearest noble gas; the electrons moved set the charge.",
+        "Metals lose electrons (cations); non-metals gain (anions).",
+        "A group shares valence config, so it shares reaction type.",
+        "Transition metals lose 4s before 3d: Fe²⁺ = [Ar]3d⁶, Fe³⁺ = [Ar]3d⁵.",
+        "Partly filled d subshells make many transition-metal compounds coloured."
+      ],
+      "finalPrompt": "Writing a transition-metal ion? Strip the 4s electrons first.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: octet rule, cations vs anions, group behaviour, transition ions, colour.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, atoms gain or lose electrons to reach the nearest noble gas, and the number moved sets the ion charge. Second, metals lose electrons to form cations, while non-metals gain electrons to form anions. Third, every element in a group shares the same valence configuration, so it shares the same type of reaction, with only the vigour changing down the group. Fourth, transition metals lose their four s electrons before their three d electrons, so iron two plus is argon three d six and iron three plus is argon three d five. And fifth, those partly filled d subshells are why so many transition-metal compounds are coloured. When you write a transition-metal ion, always strip the four s electrons first. See you next lesson."
+      }
+    }
+  ]
+}

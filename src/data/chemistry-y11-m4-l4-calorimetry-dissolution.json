@@ -1,0 +1,218 @@
+{
+  "title": "Calorimetry, Dissolution of Ionic Substances",
+  "subtitle": "Why some salts heat water and others cool it",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Conduct an investigation to measure the enthalpy of dissolution of ionic substances using calorimetry",
+    "Apply q = mcΔT to dissolution and calculate molar enthalpy of solution, which may be exothermic or endothermic"
+  ],
+  "lessonIntent": "Students can calculate the molar enthalpy of solution from calorimetry data and explain why dissolution can be either exothermic or endothermic.",
+  "examSkill": "Apply q = mcΔT to a dissolution experiment, determine the sign of ΔHsol from whether the solution warms or cools, and relate it to lattice vs hydration energy.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson `subjects/chemistry/year11/module4/lesson04.html`. Anchor: cold pack (NH4NO3, endothermic) vs hot pack (CaCl2, exothermic). q=mcΔT taught in L2, reference. Key new idea: ΔHsol can be + or − depending on lattice energy vs hydration energy balance. Misconception: dissolving is always endothermic (it depends on the balance).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Calorimetry, Dissolution of Ionic Substances. Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Calorimetry. Dissolution of ionic substances. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L4/title.a0ea0d98a569.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why does one instant pack heat and another cool?",
+      "body": "An instant cold pack contains ammonium nitrate. An instant hot pack contains calcium chloride. Both work by dissolving a salt in water, yet one drops to near-freezing and the other gets hot enough to soothe a muscle.",
+      "bullets": [
+        {
+          "text": "Cold pack: NH₄NO₃ dissolving, endothermic, ΔH positive.",
+          "at": 5
+        },
+        {
+          "text": "Hot pack: CaCl₂ dissolving, exothermic, ΔH negative.",
+          "at": 12
+        },
+        {
+          "text": "Same process, dissolving, opposite temperature change.",
+          "at": 19
+        },
+        {
+          "text": "Dissolution can absorb OR release heat.",
+          "at": 25
+        }
+      ],
+      "callout": "Dissolving a salt can be exothermic or endothermic.",
+      "image": "m4l4HookPacks",
+      "durationInFrames": 1110,
+      "caption": "Cold packs (NH₄NO₃) absorb heat; hot packs (CaCl₂) release it.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 870,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's a puzzle from the first-aid kit. An instant cold pack contains ammonium nitrate. An instant hot pack contains calcium chloride. Both work the same way — you dissolve a salt in water. Yet the cold pack drops to near-freezing, while the hot pack gets warm enough to soothe a sore muscle. Same process — dissolving — opposite result. The lesson here: unlike combustion, which always releases heat, dissolution can either absorb heat or release it.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L4/hook.ab29bae7ac1e.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Lattice energy versus hydration energy",
+      "body": "Dissolving a salt is a tug-of-war between two energies. Which one wins decides whether the solution warms or cools.",
+      "bullets": [
+        {
+          "text": "Breaking the ionic lattice apart costs energy (absorbs).",
+          "at": 5
+        },
+        {
+          "text": "Water surrounding the ions releases energy (hydration).",
+          "at": 12
+        },
+        {
+          "text": "Hydration wins → net release → exothermic (CaCl₂).",
+          "at": 19
+        },
+        {
+          "text": "Lattice wins → net absorb → endothermic (NH₄NO₃).",
+          "at": 26
+        }
+      ],
+      "callout": "ΔHsol = lattice energy in − hydration energy out.",
+      "durationInFrames": 1471,
+      "caption": "Dissolution: lattice energy (in) vs hydration energy (out).",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1170,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "So why the two outcomes? Think of dissolving a salt like a tug-of-war between two energies. First, you pull the ionic lattice apart — and breaking those strong ionic bonds costs energy, it absorbs heat. Second, water molecules surround the freed ions, and that hydration step releases energy. But unlike a tug-of-war you can watch, you can't tell which side wins just by looking — you measure the temperature. If hydration releases more than the lattice cost, net release — exothermic, like calcium chloride. If breaking the lattice costs more, net absorb — endothermic, like ammonium nitrate. The same q equals m c delta T measures it either way.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L4/concept.d9c20703e2a4.mp3"
+      },
+      "diagram": {
+        "type": "calorimeter"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Enthalpy of solution of ammonium nitrate",
+      "question": "4.00 g of NH₄NO₃ (M = 80.04 g mol⁻¹) is dissolved in 100.0 g of water. The temperature falls from 21.0 °C to 17.6 °C. Calculate the molar enthalpy of solution.",
+      "coachNote": "Temperature FELL, so the reaction absorbed heat. ΔHsol will be positive.",
+      "unitCancel": {
+        "left": "kJ",
+        "right": "mol",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: m(water) = 100.0 g, c = 4.18, m(salt) = 4.00 g, M = 80.04.",
+        "Find: molar enthalpy of solution, ΔHsol.",
+        "ΔT = 17.6 − 21.0 = −3.4 °C (temperature fell).",
+        "Formula: q = mcΔT.",
+        "Substitute: q = 100.0 × 4.18 × 3.4 = 1421 J = 1.421 kJ absorbed.",
+        "Moles: n = m/M = 4.00 / 80.04 = 0.0500 mol.",
+        "Heat was absorbed, so ΔHsol is positive: ΔHsol = +q/n.",
+        "Answer: ΔHsol = 1.421/0.0500 = 28.4 kJ mol⁻¹ (positive, endothermic)."
+      ],
+      "durationInFrames": 1620,
+      "caption": "Temp fell → endothermic. ΔHsol = +1.421 kJ / 0.0500 mol = +28.4 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Let's do ammonium nitrate — the cold pack salt. Four grams dissolved in one hundred grams of water, and the temperature falls from twenty-one to seventeen-point-six degrees. That fall is your first clue: heat was absorbed, so this is endothermic. The temperature change is minus three-point-four degrees, but for q we use the magnitude — q equals one hundred times four-point-one-eight times three-point-four — fourteen hundred and twenty-one joules, or one-point-four-two-one kilojoules absorbed. Moles: four over eighty-point-zero-four is zero-point-zero-five-zero-zero moles. Because heat was absorbed, delta H of solution is positive — one-point-four-two-one over zero-point-zero-five — giving plus twenty-eight-point-four kilojoules per mole.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L4/worked-example.c9b9a9d006fe.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Dissolving always absorbs heat\"",
+      "body": "Students often think: \"Dissolving needs energy to break the lattice, so it's always endothermic.\" That's the wrong instinct, it only counts half the story. The correct rule: you must also count the hydration energy released when water surrounds the ions. When hydration releases more than the lattice costs, dissolving is exothermic, that's exactly how an instant hot pack works.",
+      "callout": "Dissolving can be exo or endo, it's lattice cost vs hydration release.",
+      "mistakeTag": "Always-endothermic trap",
+      "durationInFrames": 1290,
+      "caption": "Dissolving isn't always endothermic, hydration energy can win.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the trap. Students think: dissolving needs energy to break the lattice apart, so it must always be endothermic. Wrong instinct — that only counts half the story. The correct rule: you also have to count the hydration energy released when water surrounds the freed ions. When that hydration release is bigger than the lattice cost, dissolving is exothermic overall. That's literally how an instant hot pack works — calcium chloride dissolving and releasing heat. So never assume the sign; let the temperature change tell you.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L4/misconception.298da484e932.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "Dissolving 5.00 g of CaCl₂ (M = 110.98 g mol⁻¹) in 100.0 g of water raises the temperature by 9.5 °C. Calculate the molar enthalpy of solution and state its sign.",
+      "pausePrompt": "Pause: temperature ROSE, what does that tell you about the sign?",
+      "answerSteps": [
+        "Temperature rose → exothermic → ΔHsol negative.",
+        "q = mcΔT = 100.0 × 4.18 × 9.5 = 3971 J = 3.971 kJ.",
+        "Moles: n = 5.00 / 110.98 = 0.04506 mol.",
+        "ΔHsol = −q/n = −3.971/0.04506.",
+        "Answer: ΔHsol = 88.1 kJ mol⁻¹ released (negative, exothermic)."
+      ],
+      "durationInFrames": 1440,
+      "caption": "Temp rose → exothermic. ΔHsol = −3.971/0.04506 = −88.1 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 600,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Your turn. Dissolving five grams of calcium chloride in one hundred grams of water raises the temperature by nine-point-five degrees. Find the molar enthalpy of solution and its sign. Pause now and try. The temperature rose, so this is exothermic — delta H will be negative. q equals m c delta T — one hundred times four-point-one-eight times nine-point-five — three thousand nine hundred and seventy-one joules, or three-point-nine-seven-one kilojoules. Moles: five over a hundred-and-eleven, that's zero-point-zero-four-five-zero-six moles. Delta H of solution is minus q over n — about minus eighty-eight-point-one kilojoules per mole. Negative, exothermic — the hot pack salt.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L4/quick-check.a9d0fd6690a6.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Check the temperature change first: rose means exothermic, fell means endothermic.",
+      "points": [
+        "Dissolving a salt can be exothermic or endothermic, unlike combustion.",
+        "It's a tug-of-war: lattice energy (absorbed) vs hydration energy (released).",
+        "Hydration wins → exothermic (CaCl₂); lattice wins → endothermic (NH₄NO₃).",
+        "q = mcΔT measures the heat; the temperature direction gives the sign.",
+        "Never assume dissolving is endothermic, count both energies."
+      ],
+      "durationInFrames": 1320,
+      "caption": "Two energies, either sign, one decision rule.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways. One: dissolving a salt can be exothermic or endothermic — unlike combustion, which is always exothermic. Two: it's a tug-of-war between lattice energy, which is absorbed, and hydration energy, which is released. Three: hydration wins and it's exothermic, like calcium chloride; lattice wins and it's endothermic, like ammonium nitrate. Four: q equals m c delta T measures the heat, and the direction of the temperature change gives you the sign. Decision rule: check the temperature change first — rose means exothermic, fell means endothermic.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L4/summary.404c2e336f92.mp3"
+      }
+    }
+  ]
+}

@@ -4,21 +4,36 @@
 
 export const TOK = {
 	// Stage
-	bg: '#0a0f0d',
-	bgLift: '#0f1614',
-	rule: 'rgba(232,239,233,0.08)',
+	bg: '#f7f7f5',
+	bgLift: '#ffffff',
+	rule: 'rgba(0,0,0,0.08)',
 
 	// Ink
-	ink: '#e8efe9',
-	inkDim: '#8a9590',
-	inkMute: '#4a554f',
+	ink: '#1a1a1a',
+	inkDim: '#5a5a5a',
+	inkMute: '#9a9a9a',
 
-	// Subject — Chemistry (primary subject in current lesson set)
-	chem1: '#1f8a6f',
-	chem2: '#6fd9b8',
-	chem3: '#0d3a2f',
+	// Subject — Chemistry (deep teal-green). accent / accent2 / soft tint.
+	chem1: '#0d6b52',
+	chem2: '#148a6f',
+	chem3: '#e8f5f0',
 
-	// Subject — other (locked in for system completeness)
+	// Subject — Biology (blue). accent / accent2 / soft tint.
+	bio1: '#1f6fb2',
+	bio2: '#3a8ad9',
+	bio3: '#e9f2fb',
+
+	// Subject — Physics (orange). accent / accent2 / soft tint.
+	phys1: '#c2410c',
+	phys2: '#e07a3a',
+	phys3: '#fdf0e8',
+
+	// Subject — Mathematics (purple). accent / accent2 / soft tint.
+	math1: '#6d28d9',
+	math2: '#9b6dd9',
+	math3: '#f2ebfb',
+
+	// Back-compat single-hue subject keys (used by subjectColor()).
 	bio: '#3a8ad9',
 	phys: '#e07a3a',
 	math: '#9b6dd9',

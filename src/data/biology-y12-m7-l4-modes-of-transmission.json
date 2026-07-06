@@ -1,0 +1,320 @@
+{
+  "title": "Modes of Transmission",
+  "subtitle": "How a pathogen bridges the gap between hosts",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "investigate modes of transmission of infectious diseases, including direct contact, indirect contact and vector transmission"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How are diseases transmitted?",
+  "lessonIntent": "Students can classify a disease by its mode of transmission, match a control measure to that mode, and read an epidemic curve to infer the transmission pattern.",
+  "examSkill": "Identify the transmission mode of a given disease and justify the matching control measure; interpret epidemic-curve shape.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, the modes of disease transmission. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Modes of Transmission (Year 12 Biology, Module 7, Lesson 4)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A map that stopped an epidemic",
+      "body": "In 1854 John Snow plotted 616 cholera deaths. They clustered around one water pump, no microscope needed.",
+      "callout": "How do pathogens cross the gap between hosts?",
+      "image": "bioM7L4SnowCholeraMap",
+      "durationInFrames": 1600,
+      "caption": "John Snow mapped cholera deaths to the Broad Street pump, identifying the transmission route.",
+      "voiceover": {
+        "text": "In September eighteen fifty-four, a doctor named John Snow plotted six hundred and sixteen cholera deaths onto a street map of Soho, London. The dots clustered tightly around one thing, the water pump on Broad Street. People who used a different pump just two hundred metres away weren't dying. Snow had no microscope, no germ theory, and no idea that a bacterium called Vibrio cholerae even existed. Yet by mapping cases to their source, he worked out the transmission route, the disease was travelling through water, not air, and he stopped the epidemic by removing the pump handle. So how exactly do pathogens bridge the gap between one host and the next? That's what this lesson is about."
+      }
+    },
+    {
+      "id": "concept-modes",
+      "type": "concept",
+      "heading": "Three modes of transmission",
+      "body": "Every infectious disease must move between hosts to persist, and it does so by one of three routes.",
+      "bullets": [
+        {
+          "text": "Direct contact: host to host, with nothing in between."
+        },
+        {
+          "text": "Indirect contact: via a fomite, food, water, soil, or airborne particles."
+        },
+        {
+          "text": "Vector: a living organism, often a mosquito or tick, carries the pathogen."
+        }
+      ],
+      "secondary": "Droplets over five micrometres fall quickly and need close contact, so they are direct. Smaller droplet nuclei stay airborne and travel further, so they count as indirect.",
+      "callout": "Direct, indirect, or carried by something alive?",
+      "durationInFrames": 2050,
+      "caption": "Direct contact, indirect contact, and vector transmission.",
+      "voiceover": {
+        "text": "Every infectious disease has the same problem, it must get from one host to another, or it dies out. There are three main ways it does this. The first is direct contact, where the pathogen passes straight from one host to another with nothing in between. That covers skin-to-skin spread like tinea, large respiratory droplets in close conversation, sexual contact, and blood-to-blood transmission. The second is indirect contact, where the pathogen travels via an intermediate, a contaminated object called a fomite, or food, water, soil, or fine airborne particles. The third is vector transmission, where a living organism, usually an arthropod like a mosquito or tick, carries the pathogen between hosts. One subtle point the exam loves, large droplets over five micrometres fall quickly and need close contact, so they're direct, but the tiny droplet nuclei under five micrometres linger in the air and travel further, so they count as indirect."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Mode",
+          "How it spreads",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Direct",
+            "Host to host, nothing between",
+            "Tinea, HIV, influenza droplets"
+          ],
+          [
+            "Indirect",
+            "Fomite, water, food, airborne",
+            "Cholera, TB, salmonella"
+          ],
+          [
+            "Vector",
+            "Living carrier organism",
+            "Malaria, dengue, Lyme"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The terms you need",
+      "bullets": [
+        {
+          "text": "Fomite: a non-living contaminated object that can transmit a pathogen."
+        },
+        {
+          "text": "Vector: a living organism that carries a pathogen between hosts."
+        },
+        {
+          "text": "Biological vector: the pathogen completes part of its life cycle inside it."
+        },
+        {
+          "text": "Mechanical vector: it merely carries the pathogen on its body, no life cycle."
+        }
+      ],
+      "callout": "Fomite is a thing; a vector is alive.",
+      "durationInFrames": 1695,
+      "caption": "Fomite, vector, biological vector, mechanical vector.",
+      "voiceover": {
+        "text": "Let's pin down four terms, because the exam tests them precisely. A fomite is a non-living contaminated object that can transmit a pathogen, think door handles, shared cups, or surfaces. A vector is different, it's a living organism that carries a pathogen between hosts. So the simplest check is, a fomite is a thing, a vector is alive. And vectors split into two kinds. A biological vector is one where the pathogen actually completes part of its life cycle inside the vector, like Plasmodium developing inside a mosquito. A mechanical vector just carries the pathogen on its body, with no life cycle involved, like a housefly tracking bacteria on its legs. That biological versus mechanical distinction is a classic short-answer question, so keep it sharp."
+      }
+    },
+    {
+      "id": "concept-compare",
+      "type": "concept",
+      "heading": "Matching control to the route",
+      "body": "Identify the route correctly and the control measure follows; misidentify it and the intervention is useless.",
+      "bullets": [
+        {
+          "text": "Cholera is waterborne, so the control is water treatment and sanitation."
+        },
+        {
+          "text": "Malaria is vector-borne, so the control is nets, insecticides, and drainage."
+        },
+        {
+          "text": "Tuberculosis is airborne under five micrometres, so surface cleaning is irrelevant."
+        }
+      ],
+      "secondary": "Most diseases have a primary route and a secondary one. The control must target the actual route; isolating people does nothing against a mosquito-borne disease.",
+      "callout": "Wrong route, wrong response, wasted effort.",
+      "durationInFrames": 1725,
+      "caption": "Control measures only work when matched to the actual transmission route.",
+      "voiceover": {
+        "text": "Here's why getting the mode right has real consequences, because the control measure has to match the route. Take cholera. It's spread by contaminated water, an indirect route, so the controls are water treatment and sanitation, exactly what John Snow figured out. Take malaria. It's vector-borne, carried by mosquitoes, so the controls are bed nets, insecticides, and draining breeding sites, and isolating patients does almost nothing. Take tuberculosis. It spreads as tiny airborne droplet nuclei under five micrometres, which means ventilation and proper masks matter, but scrubbing surfaces is irrelevant because it isn't on surfaces. And most real diseases actually have a primary route and a secondary one, so a comprehensive strategy considers both. The takeaway is blunt, misidentify the route and your intervention is wasted effort."
+      }
+    },
+    {
+      "id": "concept-curves",
+      "type": "concept",
+      "heading": "Reading an epidemic curve",
+      "body": "Plotting cases by date of symptom onset reveals the transmission pattern before any lab result arrives.",
+      "bullets": [
+        {
+          "text": "Point source: one sharp peak, all cases within a single incubation period."
+        },
+        {
+          "text": "Continuous common source: a sustained plateau while exposure continues."
+        },
+        {
+          "text": "Propagated: successive waves, each one an incubation period apart and often larger."
+        }
+      ],
+      "secondary": "A point-source curve points to a single shared exposure, like one contaminated meal. A propagated curve, with growing waves, signals person-to-person spread.",
+      "callout": "The shape of the curve names the route.",
+      "durationInFrames": 2075,
+      "caption": "Point source, continuous source, and propagated curves reveal the transmission pattern.",
+      "voiceover": {
+        "text": "Now for a tool epidemiologists reach for constantly, the epidemic curve. You plot the number of new cases against the date their symptoms began, and the shape of that curve tells you the transmission pattern before any laboratory result comes back. There are three classic shapes. A point-source curve rises sharply to a single peak and then falls, with all the cases landing inside one incubation period, which points to a single shared exposure, like one contaminated meal at an event. A continuous common-source curve forms a sustained plateau rather than a peak, because the contamination keeps going, think a polluted water supply over weeks. And a propagated curve shows a series of waves, each one roughly an incubation period apart, and often each wave is bigger than the last, which is the signature of person-to-person spread, like flu moving through a school. So before any test, the curve already names the route."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Day of symptom onset",
+        "yLabel": "New cases",
+        "series": [
+          {
+            "label": "Point source",
+            "color": "chem1",
+            "points": [
+              [
+                0,
+                0.05
+              ],
+              [
+                0.18,
+                0.85
+              ],
+              [
+                0.3,
+                0.6
+              ],
+              [
+                0.45,
+                0.3
+              ],
+              [
+                0.6,
+                0.12
+              ],
+              [
+                0.8,
+                0.04
+              ],
+              [
+                1,
+                0.02
+              ]
+            ]
+          },
+          {
+            "label": "Propagated",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0.05
+              ],
+              [
+                0.15,
+                0.25
+              ],
+              [
+                0.28,
+                0.12
+              ],
+              [
+                0.45,
+                0.5
+              ],
+              [
+                0.6,
+                0.28
+              ],
+              [
+                0.78,
+                0.85
+              ],
+              [
+                1,
+                0.5
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Read the outbreak",
+      "question": "At a camp, 18 students fall ill overnight after one shared dinner, then a second cluster of 16 falls ill the next night, all of whom ate the same lunch. Classify the curve and identify the likely source.",
+      "coachNote": "Match the timing pattern to a curve shape, then trace the shared exposure.",
+      "steps": [
+        "Both clusters are tight bursts that each fall within one incubation period, not continuous.",
+        "Each burst follows a single shared meal, so each is a point-source event, not propagated.",
+        "The first cluster traces to the shared dinner; the second traces to the shared lunch.",
+        "No further cases appear once that lunch food is removed, confirming the source.",
+        "Answer: two point-source clusters, caused by the contaminated dinner and lunch."
+      ],
+      "durationInFrames": 2240,
+      "caption": "Two tight bursts, each from one shared meal, are point-source clusters.",
+      "voiceover": {
+        "text": "Let's read a real outbreak, the style the HSC uses. At a camp, eighteen students fall ill overnight after one shared dinner. Then the next night, a second cluster of sixteen falls ill, and all of them had eaten the same lunch. Classify the curve and identify the likely source. First, look at the timing. Both clusters are tight bursts, and each one falls within a single incubation period, rather than dragging on continuously. That rules out a continuous common source. Second, each burst follows a single shared meal, so each is a point-source event. It's not propagated, because we'd expect growing person-to-person waves for that, not sudden meal-linked clusters. Third, trace the exposures. The first cluster links back to the shared dinner, and the second links to the shared lunch. And the clincher, no further cases appear once that lunch food is removed from the menu, which confirms the source. So the answer is two point-source clusters, caused by the contaminated dinner and lunch."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: confusing fomites with vectors. A fomite is a non-living object; a vector is a living organism.",
+      "secondary": "Trap 2: assuming tuberculosis spreads through food and water. TB is airborne via droplet nuclei under five micrometres, so ventilation and masks control it, not surface cleaning or water treatment.",
+      "mistakeTag": "Where transmission marks vanish",
+      "callout": "Object versus organism; and TB is airborne, not waterborne.",
+      "durationInFrames": 1710,
+      "caption": "Fomites are objects not vectors; tuberculosis is airborne, not foodborne.",
+      "voiceover": {
+        "text": "Two traps to clear before we finish. Trap one, confusing fomites with vectors. A fomite is a non-living contaminated object, like a doorknob or a shared towel. A vector is a living organism, like a mosquito. So if a question describes a contaminated surface and calls it a vector, that's wrong, it's a fomite, and the transmission is indirect contact, not vector-borne. Trap two, assuming tuberculosis spreads through food and water. It doesn't. TB is airborne, carried in tiny droplet nuclei under five micrometres that linger in the air, so it's controlled by ventilation, negative-pressure rooms, and proper masks. Scrubbing surfaces or treating water does nothing for it, because that's simply not how it moves. Match the control to the real route, and these traps disappear."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Malaria is carried between people by Anopheles mosquitoes, inside which the parasite develops. Name the transmission mode, state whether the mosquito is a biological or mechanical vector, and give the best control measure.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The pathogen is carried by a living organism, the mosquito, so the mode is vector transmission.",
+        "The parasite completes part of its life cycle inside the mosquito, not just riding on it.",
+        "That makes the mosquito a biological vector, not a mechanical one.",
+        "Because spread depends on the mosquito, control targets the vector: nets, insecticides, drainage.",
+        "Answer: vector transmission, a biological vector, controlled by eliminating mosquitoes."
+      ],
+      "durationInFrames": 1870,
+      "caption": "Vector transmission by a biological vector; control by eliminating mosquitoes.",
+      "voiceover": {
+        "text": "Quick check. Malaria is carried between people by Anopheles mosquitoes, and the parasite actually develops inside the mosquito. Name the transmission mode, say whether the mosquito is a biological or mechanical vector, and give the best control measure. Pause and reason it through. Right. The pathogen is carried by a living organism, the mosquito, so the mode is vector transmission, not direct or indirect contact. Next, is it a biological or mechanical vector? Well, the parasite completes part of its life cycle inside the mosquito, it isn't just hitching a ride on the outside, so that makes it a biological vector. And because the whole spread depends on the mosquito, the best control targets the vector itself, bed nets, insecticides, and draining breeding sites. So the full answer is vector transmission, a biological vector, controlled by eliminating mosquitoes."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Three modes: direct contact, indirect contact, and vector transmission.",
+        "A fomite is a non-living object; a vector is a living organism.",
+        "Control must match the route: sanitation, vector control, or ventilation.",
+        "Epidemic-curve shape reveals the pattern: point, continuous, or propagated.",
+        "A point source gives one sharp peak; propagated gives growing waves."
+      ],
+      "finalPrompt": "Given a disease? Name its route, then match the control to that route.",
+      "durationInFrames": 1870,
+      "caption": "Five takeaways: three modes, fomite vs vector, matched control, curve shapes.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, there are three modes of transmission, direct contact, indirect contact, and vector transmission. Second, a fomite is a non-living contaminated object, while a vector is a living organism that carries the pathogen. Third, the control measure must match the route, sanitation for waterborne disease, vector control for mosquito-borne disease, and ventilation for airborne disease. Fourth, the shape of an epidemic curve reveals the pattern, point source, continuous common source, or propagated. And fifth, a point source gives one sharp peak from a single exposure, while a propagated outbreak gives a series of growing waves from person-to-person spread. Whenever you're handed a disease, name its route first, then match the control to that route. Next lesson, how we test water and food for the microbes themselves. See you there."
+      }
+    }
+  ]
+}

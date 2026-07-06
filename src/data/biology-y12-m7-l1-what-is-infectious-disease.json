@@ -1,0 +1,329 @@
+{
+  "title": "What Is Infectious Disease?",
+  "subtitle": "The invisible enemy, and how we name it",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "describe a variety of infectious diseases caused by pathogens, including microorganisms, macroorganisms and non-cellular pathogens, and collect primary and secondary-sourced data and information relating to disease transmission (ACSBL097, ACSBL098, ACSBL116, ACSBL117)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6"
+  ],
+  "inquiryQuestion": "How are diseases transmitted?",
+  "lessonIntent": "Students can define infectious disease and a pathogen, classify a pathogen into one of three categories, and distinguish primary from secondary transmission data.",
+  "examSkill": "Classify a condition as infectious or non-infectious, and a pathogen into microorganism, macroorganism, or non-cellular, with a reason each time.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, what infectious disease actually is. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "What Is Infectious Disease? (Year 12 Biology, Module 7, Lesson 1)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A virus that stopped the world",
+      "body": "In 2020, one new coronavirus reached 188 countries in months. Understanding that starts with one word: pathogen.",
+      "callout": "What gives a pathogen the power to spread that fast?",
+      "image": "bioM7L1PandemicWorld",
+      "durationInFrames": 1465,
+      "caption": "COVID-19 reached 188 countries within months, raising the question of what a pathogen really is.",
+      "voiceover": {
+        "text": "On the eleventh of March twenty-twenty, the World Health Organization declared SARS-CoV-2 a pandemic. Within six months, eleven million cases had been recorded across one hundred and eighty-eight countries, and the entire viral genome, almost thirty thousand base pairs, had been sequenced and shared in just ten days. Think about that speed for a moment. A single, invisible agent brought global aviation to a halt in weeks. Understanding how that happens starts with one precise idea, the pathogen. By the end of this lesson, you'll be able to define infectious disease, sort any pathogen into the right category, and explain how scientists actually track disease as it spreads."
+      }
+    },
+    {
+      "id": "concept-infectious",
+      "type": "concept",
+      "heading": "Infectious versus non-infectious",
+      "body": "An infectious disease is caused by a pathogen and can spread between hosts. A non-infectious one cannot.",
+      "bullets": [
+        {
+          "text": "Infectious: caused by an invading pathogen, can transmit between hosts."
+        },
+        {
+          "text": "Non-infectious: caused by genetic, lifestyle, or environmental factors."
+        },
+        {
+          "text": "The line is about cause and transmission, never about how serious it is."
+        }
+      ],
+      "secondary": "Non-infectious diseases such as heart disease and type 2 diabetes are the leading causes of death globally, so this distinction is not about severity.",
+      "callout": "Ask one question: is there an invading organism?",
+      "durationInFrames": 1685,
+      "caption": "Infectious disease has a pathogen and can spread; non-infectious has neither.",
+      "voiceover": {
+        "text": "So let's pin down the central distinction. An infectious disease is one caused by a pathogen, an organism or agent that enters a host and causes harm, and crucially, it can spread between hosts. COVID-19, malaria, tuberculosis, these are infectious. A non-infectious disease is different. It arises from genetic, lifestyle, or environmental factors, things like type 2 diabetes, coronary heart disease, or melanoma, and it cannot pass from one person to another. Here's the trap students fall into. They assume infectious means more serious, but that's not the line at all. Non-infectious diseases are actually the leading causes of death worldwide. The real distinction is about cause and transmission, so whenever you classify a condition, ask yourself one question, is there an invading organism."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Infectious",
+          "Non-infectious"
+        ],
+        "rows": [
+          [
+            "Cause",
+            "A pathogen",
+            "Genes, lifestyle, environment"
+          ],
+          [
+            "Transmissible?",
+            "Yes, between hosts",
+            "No"
+          ],
+          [
+            "Example",
+            "COVID-19, malaria",
+            "Type 2 diabetes, melanoma"
+          ],
+          [
+            "Treatment",
+            "Targets the pathogen",
+            "Targets cause or symptoms"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Pathogen: a disease-causing organism or agent that enters a host."
+        },
+        {
+          "text": "Host: an organism that harbours a pathogen."
+        },
+        {
+          "text": "Vector: an organism that carries a pathogen between hosts."
+        },
+        {
+          "text": "Reservoir: a population or environment where a pathogen naturally lives."
+        }
+      ],
+      "callout": "Pathogen, host, vector, reservoir, the vocabulary of the whole module.",
+      "durationInFrames": 1370,
+      "caption": "Pathogen, host, vector, reservoir.",
+      "voiceover": {
+        "text": "Before we go further, four words that run through this entire module. A pathogen is the disease-causing agent itself, the bacterium, the virus, the fungus that enters a host and causes harm. A host is the organism that the pathogen lives in or on, so you are a potential host. A vector is an organism that carries a pathogen from one host to another, the classic example being a mosquito carrying malaria. And a reservoir is the population or environment where a pathogen naturally lives between outbreaks. Get comfortable with these four now, because every lesson that follows leans on them."
+      }
+    },
+    {
+      "id": "concept-categories",
+      "type": "concept",
+      "heading": "Three categories of pathogen",
+      "body": "Every pathogen falls into one of three groups, and the group decides how the disease is treated.",
+      "bullets": [
+        {
+          "text": "Microorganisms: bacteria, fungi, protozoa, living cells."
+        },
+        {
+          "text": "Macroorganisms: helminths and ectoparasites, visible parasites."
+        },
+        {
+          "text": "Non-cellular: viruses, prions, viroids, not living cells."
+        }
+      ],
+      "secondary": "Antibiotics target living bacterial cells, so they do nothing against viruses, fungi, or prions. Classification directly determines treatment.",
+      "callout": "The category isn't trivia, it dictates the cure.",
+      "durationInFrames": 1805,
+      "caption": "Three pathogen groups: microorganisms, macroorganisms, non-cellular.",
+      "voiceover": {
+        "text": "Now, are all pathogens the same kind of thing? Not at all. They sort into three groups, and the group you put a pathogen in decides how you can treat it. First, microorganisms, microscopic living cells, and that covers bacteria like tuberculosis, fungi like tinea, and protozoa like the malaria parasite. Second, macroorganisms, parasites large enough to see at some life stage, like tapeworms and other helminths, or lice and ticks. Third, non-cellular pathogens, things that are not living cells at all, and that's viruses, prions, which are just misfolded proteins, and viroids, which are tiny rings of RNA. Why does this matter so much? Because antibiotics only work on bacterial cells. They do absolutely nothing to a virus, a fungus, or a prion. So classification isn't trivia, it directly determines the cure."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Group",
+          "What it is",
+          "Examples"
+        ],
+        "rows": [
+          [
+            "Microorganisms",
+            "Living cells",
+            "Bacteria, fungi, protozoa"
+          ],
+          [
+            "Macroorganisms",
+            "Visible parasites",
+            "Tapeworms, lice, ticks"
+          ],
+          [
+            "Non-cellular",
+            "Not living cells",
+            "Viruses, prions, viroids"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-kingdoms",
+      "type": "concept",
+      "heading": "Same types, plants and animals",
+      "body": "The same pathogen types attack both kingdoms, with two neat exceptions worth memorising.",
+      "bullets": [
+        {
+          "text": "Bacteria, viruses, fungi, protozoa, and helminths hit both plants and animals."
+        },
+        {
+          "text": "Viroids infect plants only, for example potato spindle tuber viroid."
+        },
+        {
+          "text": "Prions infect animals only, for example BSE, or mad cow disease."
+        }
+      ],
+      "secondary": "A crown gall on a grapevine and tuberculosis in a lung are both bacterial. The pathogen type is shared; the species differs.",
+      "callout": "Two exceptions: viroids plant-only, prions animal-only.",
+      "durationInFrames": 1305,
+      "caption": "Same pathogen types span both kingdoms; viroids are plant-only and prions animal-only.",
+      "voiceover": {
+        "text": "Here's a point the exam loves. The same pathogen types attack both plants and animals, the specific species just differs. A bacterium causes crown gall in a grapevine and tuberculosis in a human lung. A fungus causes wheat stem rust and athlete's foot. So the framework carries straight across both kingdoms. But there are two clean exceptions worth memorising. Viroids, those tiny RNA rings, infect plants only, like potato spindle tuber viroid. And prions, the misfolded proteins, infect animals only, like mad cow disease. Everything else, bacteria, viruses, fungi, protozoa, worms, can be found in both."
+      }
+    },
+    {
+      "id": "concept-data",
+      "type": "concept",
+      "heading": "Tracking how disease spreads",
+      "body": "Epidemiologists map transmission using two kinds of data: primary and secondary.",
+      "bullets": [
+        {
+          "text": "Primary data: collected directly, like swabbing patients or contact tracing."
+        },
+        {
+          "text": "Secondary data: collected by others, like historical records or published research."
+        },
+        {
+          "text": "Both are combined to reconstruct how an outbreak is moving."
+        }
+      ],
+      "secondary": "Contact tracing, case reporting, and serology surveys are primary. Death records and WHO surveillance reports are secondary.",
+      "callout": "Who collected it? You, or someone else?",
+      "durationInFrames": 1710,
+      "caption": "Primary data is collected directly; secondary data is reused from others.",
+      "voiceover": {
+        "text": "So we know what pathogens are. How do scientists actually track a disease as it spreads? The people who do this are epidemiologists, and they rely on two kinds of data. Primary data is what the investigator collects directly, things like swabbing patients, interviewing contacts in contact tracing, or running serology surveys to see who carries antibodies. Secondary data is collected by someone else and then reused, things like historical death records, government health databases, or published research from the WHO. The exam will often hand you a scenario and ask which type a given method is, so the question to ask yourself is simple, who actually collected it, you, or someone else? Real outbreak investigations combine both to piece together how the disease is moving."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Method",
+          "Type",
+          "What it reveals"
+        ],
+        "rows": [
+          [
+            "Contact tracing",
+            "Primary",
+            "Who infected whom"
+          ],
+          [
+            "Serology survey",
+            "Primary",
+            "Who has been exposed"
+          ],
+          [
+            "Historical records",
+            "Secondary",
+            "Patterns over time"
+          ],
+          [
+            "Published research",
+            "Secondary",
+            "Mechanism and risk factors"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Classify each pathogen",
+      "question": "Classify and justify: (a) the influenza virus, (b) Plasmodium falciparum, the malaria parasite, (c) the prion that causes CJD.",
+      "coachNote": "For each one, ask: is it a living cell? If not, it's non-cellular. If it is, it's a microorganism.",
+      "steps": [
+        "(a) Influenza virus is non-cellular: genetic material in a protein coat, with no cell and no independent metabolism.",
+        "(b) Plasmodium falciparum is a microorganism, specifically a protozoan: a single-celled eukaryote that carries out all life processes.",
+        "(c) The CJD prion is non-cellular: a misfolded protein with no nucleic acid and no cellular structure at all.",
+        "Decision rule: not a living cell means non-cellular; a living microscopic cell means microorganism.",
+        "Answer: (a) non-cellular, (b) microorganism, (c) non-cellular."
+      ],
+      "durationInFrames": 1900,
+      "caption": "(a) non-cellular virus, (b) protozoan microorganism, (c) non-cellular prion.",
+      "voiceover": {
+        "text": "Let's classify three pathogens, the exact style the HSC uses. Part a, the influenza virus. A virus is just genetic material wrapped in a protein coat. It has no cell, it can't metabolise, and it can only copy itself inside a host cell, so it's non-cellular. Part b, Plasmodium falciparum, the parasite behind malaria. This one is a single-celled eukaryote that carries out all its own life processes, so it's a living cell, which makes it a microorganism, specifically a protozoan. Part c, the prion that causes CJD. A prion is a misfolded protein, with no nucleic acid and no cell structure whatsoever, so it's non-cellular. And notice the rule running underneath all three. If it isn't a living cell, it's non-cellular. If it is a living microscopic cell, it's a microorganism. That single question handles almost every classification mark."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking all microorganisms are pathogens. The vast majority are harmless or essential.",
+      "secondary": "Trap 2: calling viruses a type of microorganism. Viruses are non-cellular, not living cells. Trap 3: assuming all infectious disease comes from microorganisms. Macroorganisms like tapeworms and non-cellular agents like prions cause disease too.",
+      "mistakeTag": "Where classification marks vanish",
+      "callout": "Most microbes are friends; viruses aren't microorganisms.",
+      "durationInFrames": 1710,
+      "caption": "Most microbes aren't pathogens; viruses aren't microorganisms; not all infection is microbial.",
+      "voiceover": {
+        "text": "Three traps that cost marks every year. Trap one, assuming all microorganisms are pathogens. They are not. Your body carries roughly thirty-eight trillion bacterial cells, and almost all of them are harmless or essential for digestion and immunity. Only a tiny fraction of microbes cause disease. Calling all microorganisms harmful is like calling all chemicals toxic. Trap two, calling a virus a type of microorganism. A microorganism is a living cell. A virus is not, it can't grow or reproduce on its own, so it sits firmly in the non-cellular group. And trap three, assuming infectious disease always comes from microorganisms. Macroorganisms like tapeworms cause infectious disease, and so do non-cellular agents like prions and viroids. Keep those three straight and your classification answers stay clean."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A nurse swabs patients and interviews their close contacts to map how a flu outbreak is spreading. Is this primary or secondary data, and is influenza infectious or non-infectious?",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The nurse is collecting the information directly herself, by swabbing and interviewing.",
+        "Data collected directly by the investigator is primary data.",
+        "Influenza is caused by a pathogen, the influenza virus, and spreads between people.",
+        "A disease caused by a pathogen that transmits between hosts is infectious.",
+        "Answer: primary data, and influenza is an infectious disease."
+      ],
+      "durationInFrames": 1385,
+      "caption": "Swabbing and interviewing directly is primary data; influenza is infectious.",
+      "voiceover": {
+        "text": "Quick check. A nurse swabs patients and interviews their close contacts to map how a flu outbreak is spreading. Two questions, is that primary or secondary data, and is influenza infectious or non-infectious? Pause and reason it through. Right, let's work it out. The nurse is gathering the information herself, directly, by swabbing and interviewing, and data the investigator collects directly is primary data. Secondary would be reusing someone else's records. And influenza is caused by the influenza virus, a pathogen, and it clearly spreads from person to person, so it's an infectious disease. So the answer is primary data, and infectious."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Infectious disease is caused by a pathogen and can spread; non-infectious cannot.",
+        "Three pathogen groups: microorganisms, macroorganisms, non-cellular.",
+        "Antibiotics work on bacteria only, never on viruses, fungi, or prions.",
+        "Same types span plants and animals; viroids are plant-only, prions animal-only.",
+        "Primary data is collected directly; secondary data is reused from others."
+      ],
+      "finalPrompt": "Classifying anything? Ask: is there an invading organism, and is it a living cell?",
+      "durationInFrames": 1575,
+      "caption": "Five takeaways: the infectious line, three groups, antibiotics, exceptions, data types.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, an infectious disease is caused by a pathogen and can spread between hosts, while a non-infectious disease cannot. Second, every pathogen sits in one of three groups, microorganisms, macroorganisms, or non-cellular. Third, antibiotics only work on bacteria, never on viruses, fungi, or prions. Fourth, the same pathogen types attack both plants and animals, with viroids being plant-only and prions animal-only. And fifth, primary data is collected directly by the investigator, while secondary data is reused from someone else. When you classify anything, ask whether there's an invading organism, and whether it's a living cell. Next lesson, we go deeper into classifying those pathogens. See you there."
+      }
+    }
+  ]
+}

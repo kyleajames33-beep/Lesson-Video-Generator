@@ -1,0 +1,200 @@
+{
+  "title": "Water Quality Parameters and Standards",
+  "subtitle": "Reading a river through many measurements",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 6",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8: Applying Chemical Ideas",
+  "syllabusDotPoints": [
+    "analyse the need for monitoring the environment",
+    "investigate the chemical analysis of water quality parameters and compare measured values against acceptable standards"
+  ],
+  "moduleLessonCount": 16,
+  "nesaOutcomes": ["CH12-15", "CH11/12-2", "CH11/12-4", "CH11/12-7"],
+  "inquiryQuestion": "How are the ions present in the environment identified and measured?",
+  "lessonIntent": "Students can classify water-quality parameters, link each to its measurement method, judge values against standards like the ADWG, and trace the eutrophication chain.",
+  "examSkill": "Classify parameters as physical, chemical or biological, interpret a pattern of results together, and explain eutrophication from nutrients to algal bloom to oxygen depletion and rising BOD.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, water quality parameters and standards. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Water Quality Parameters and Standards (Year 12 Chemistry, Module 8, Lesson 6)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Crystal-clear water that can still kill",
+      "body": "A river can look perfectly clean and still be oxygen-starved, salty, or carrying invisible contamination.",
+      "callout": "One number never tells the whole story.",
+      "durationInFrames": 660,
+      "caption": "Water quality is a bundle of measurements read together, not one score.",
+      "voiceover": {
+        "text": "OK, here's a trap your eyes set for you. Water can look crystal-clear and still be dangerous, oxygen-starved, too salty, or carrying contamination you simply can't see. So how do chemists actually judge water? Not with one number. Water quality is a whole bundle of measurements, physical, chemical, and biological, and the skill is reading them together. One bad reading is a flag. A pattern of bad readings is a verdict. Today, what those parameters are, how we measure them, how we judge them against standards, and the classic chain that turns fertiliser runoff into dead fish."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "What water quality means",
+      "body": "It's a multi-parameter picture spanning physical, chemical, and biological measurements.",
+      "bullets": [
+        {"text": "Physical: temperature and turbidity, the cloudiness from particles."},
+        {"text": "Chemical: pH, dissolved oxygen, total dissolved solids, conductivity."},
+        {"text": "Biological: coliform bacteria, an indicator of faecal contamination."}
+      ],
+      "secondary": "No single parameter is enough. Clear water can hide harmful ions, and neutral-pH water can still be oxygen-poor.",
+      "callout": "Judge the parameters together, never alone.",
+      "durationInFrames": 1020,
+      "caption": "Physical, chemical, and biological parameters, read together.",
+      "voiceover": {
+        "text": "So let's define it properly, because the exam rewards the phrase. Water quality is assessed using physical, chemical, and biological parameters. The physical ones are things like temperature and turbidity, which is the cloudiness from suspended particles. The chemical ones include pH, dissolved oxygen, total dissolved solids, and conductivity. And the biological one you need is coliform bacteria, which flags faecal contamination. The crucial idea is that no single parameter gives the full answer. Water can be crystal-clear but full of dissolved ions, or sit at a perfect neutral pH while being dangerously low on oxygen. You only get a real judgement by reading the measurements together."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "concept",
+      "heading": "What each parameter tells you",
+      "body": "Some parameters measure directly; others, like conductivity, are indicators that stand in for something.",
+      "diagram": {
+        "type": "table",
+        "headers": ["Parameter", "Type", "Indicates"],
+        "rows": [
+          ["pH", "Chemical", "Acidity"],
+          ["Dissolved O₂", "Chemical", "Aerobic life"],
+          ["Conductivity", "Chemical", "Dissolved ions"],
+          ["Coliforms", "Biological", "Contamination"]
+        ]
+      },
+      "bullets": [
+        {"text": "Dissolved oxygen is essential for aerobic aquatic life."},
+        {"text": "Conductivity and TDS both track the dissolved-ion load, the salinity."},
+        {"text": "Coliform bacteria signal a microbial safety risk."}
+      ],
+      "secondary": "Conductivity is indirect. It doesn't name the ions, but it measures how well the water conducts, which rises with dissolved ion concentration.",
+      "callout": "Direct measure or indicator? Know which is which.",
+      "durationInFrames": 1080,
+      "caption": "Dissolved oxygen, conductivity and TDS, coliforms, each with a meaning.",
+      "voiceover": {
+        "text": "Now what each measurement actually tells you, because that's where marks are won and lost. Dissolved oxygen is the oxygen available in the water, essential for aerobic aquatic life, so a low reading means organisms are under stress. Conductivity and total dissolved solids both track the dissolved-ion load, basically the salinity. pH tells you acidity, which drives chemical equilibria and toxicity. And coliform bacteria flag a microbial safety risk. Here's a subtle point the exam likes. Some parameters are direct measurements, but conductivity is an indicator. It doesn't tell you which ions are present, it measures how well the water conducts electricity, which rises with the concentration of dissolved ions. So conductivity stands in for ion load."
+      }
+    },
+    {
+      "id": "concept-measure",
+      "type": "concept",
+      "heading": "How they're measured",
+      "body": "Each parameter has its tool, from a fast field probe to a classical titration.",
+      "bullets": [
+        {"text": "pH by meter or indicator; conductivity and TDS by a probe."},
+        {"text": "Dissolved oxygen by a DO meter, or by the Winkler titration."},
+        {"text": "BOD is the fall in DO after 5 days at 20°C in the dark."}
+      ],
+      "secondary": "Field monitoring favours fast probes, while compliance testing may need formal lab methods. The Winkler method is the classical redox route to DO.",
+      "callout": "Match the method to speed and accuracy needed.",
+      "durationInFrames": 1050,
+      "caption": "Probes for fast field work; Winkler titration for DO; BOD over 5 days.",
+      "voiceover": {
+        "text": "A parameter is only useful if you can measure it reliably, so let's match tools to jobs. Temperature is a probe or thermometer. Turbidity uses a turbidity meter. pH is a meter or an indicator. Dissolved oxygen you can read fast with an electronic DO meter, or measure classically with a Winkler titration, which is a redox method, you fix the oxygen, release iodine, and titrate it. BOD, biological oxygen demand, is the drop in dissolved oxygen after incubating the sample for five days at twenty degrees in the dark. And conductivity and TDS use a probe. The method you choose depends on the question, field monitoring wants fast probes, while formal compliance testing may demand careful lab methods."
+      }
+    },
+    {
+      "id": "concept-standards",
+      "type": "concept",
+      "heading": "Standards give numbers meaning",
+      "body": "A measured value only means something when you compare it against an appropriate guideline.",
+      "bullets": [
+        {"text": "The ADWG sets acceptable limits for drinking-water parameters."},
+        {"text": "Limits protect health, and also taste, odour and appearance."},
+        {"text": "Acceptable ranges differ by ecosystem and intended use."}
+      ],
+      "secondary": "A value fine for one context can be concerning in another, so you interpret standards in context, not as isolated numbers.",
+      "callout": "A number alone decides nothing; the standard does.",
+      "durationInFrames": 1020,
+      "caption": "The ADWG sets limits; judge measured values against the right standard.",
+      "voiceover": {
+        "text": "Here's the step students skip. A measurement on its own decides nothing. Water-quality data only become meaningful when you compare them against a standard, an acceptable range for the intended use. In Australia, the Australian Drinking Water Guidelines, the ADWG, set acceptable limits for chemical, physical, and microbiological parameters in drinking water. Those limits protect human health, and they also manage aesthetic things like taste, odour, and appearance. For environmental monitoring, the acceptable ranges can differ depending on the ecosystem and how the water is used. So a value that's perfectly fine in one context might be alarming in another. When a question mentions standards, don't just define them, explain that they let you decide whether a measured value is acceptable or a problem."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Tracing eutrophication",
+      "question": "Fertiliser runoff enters a slow river. Explain, step by step, how this leads to falling dissolved oxygen and rising BOD.",
+      "coachNote": "Follow the cause through: nutrients first, then biology, then the oxygen consequences.",
+      "steps": [
+        "Excess nutrients (nitrates and phosphates) enter the water",
+        "Nutrients fuel rapid algal growth, an algal bloom",
+        "The algae die, and decomposing bacteria multiply",
+        "Those bacteria consume dissolved oxygen, so DO falls",
+        "More oxygen is demanded for decomposition, so BOD rises ✓"
+      ],
+      "durationInFrames": 1350,
+      "caption": "Nutrients → algal bloom → decomposition → DO falls, BOD rises.",
+      "voiceover": {
+        "text": "Let's trace the most tested chain in this topic, eutrophication. Fertiliser runoff enters a slow-moving river. Explain how that ends in falling oxygen and rising BOD. Step one, the trigger, excess nutrients, nitrates and phosphates, wash into the water. Step two, those nutrients fuel rapid algal growth, an algal bloom that can blanket the surface. Step three, the algae die, and decomposing bacteria multiply to break the dead matter down. Step four, here's the damage, those bacteria consume dissolved oxygen, so the DO drops, and fish and aquatic organisms suffer. Step five, because so much oxygen is being demanded for decomposition, the biological oxygen demand, BOD, rises. Nutrients, bloom, decomposition, oxygen crash. Learn that sequence and you can write the four-mark answer cold."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking clean water means zero dissolved substances. Clean means within standards, not pure distilled.",
+      "secondary": "Trap 2: judging a value without a standard. A number is meaningless until compared. Trap 3: forgetting that temperature and dissolved oxygen are inversely related, so warm water holds less oxygen.",
+      "mistakeTag": "Where water-quality marks vanish",
+      "callout": "Clean means within limits, compare to a standard, warm water holds less O₂.",
+      "durationInFrames": 1230,
+      "caption": "Clean ≠ pure; values need a standard; warmer water holds less oxygen.",
+      "voiceover": {
+        "text": "Three traps. Trap one, thinking clean water means no dissolved substances at all. It doesn't. Clean means meeting the standards for its use, with acceptable minerals and safe microbial counts. Pure distilled water would actually taste awful and isn't the goal. Trap two, judging a measured value without a standard. A pH or a conductivity number on its own tells you nothing, you have to compare it against a guideline like the ADWG to call it acceptable or not. Trap three, forgetting that temperature and dissolved oxygen are inversely related. As water warms, it holds less dissolved oxygen, so a warm discharge stresses aquatic life even before any pollution is added. Clean means within limits, always compare to a standard, and remember warm water carries less oxygen."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A river sample shows higher temperature, lower dissolved oxygen, higher conductivity, and raised coliforms. What overall judgement is justified, and why?",
+      "pausePrompt": "Pause and think it through.",
+      "answerSteps": [
+        "Higher temperature lowers oxygen capacity, consistent with the low DO",
+        "Higher conductivity means a raised dissolved-ion load",
+        "Raised coliforms signal possible faecal contamination",
+        "Several parameters are concerning at once, not just one",
+        "Answer: a pattern of poor results indicates degraded, likely contaminated water ✓"
+      ],
+      "durationInFrames": 1170,
+      "caption": "Multiple concerning parameters together point to degraded water quality.",
+      "voiceover": {
+        "text": "Quick check. A river sample shows higher temperature, lower dissolved oxygen, higher conductivity, and raised coliform bacteria. What overall judgement is justified, and why? Pause and think it through. Right, let's check it. Step one, the higher temperature lowers the water's oxygen capacity, which fits the low dissolved oxygen. Step two, the higher conductivity means a raised dissolved-ion load, more salt or runoff. Step three, the raised coliforms point to possible faecal contamination, a microbial risk. Step four, and this is the key move, several parameters are concerning at once, not just one. Step five, so the justified judgement is degraded, likely contaminated water. A pattern matters more than any single number."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Water quality spans physical, chemical, and biological parameters, read together.",
+        "Conductivity and TDS indicate dissolved-ion load; DO supports aquatic life.",
+        "Each parameter has a method, like the Winkler titration for dissolved oxygen.",
+        "Standards like the ADWG give a measured value its meaning.",
+        "Eutrophication: nutrients → algal bloom → decomposition → DO falls, BOD rises."
+      ],
+      "finalPrompt": "Judging water? Read the parameters together, and against a standard.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: multi-parameter, conductivity, methods, standards, eutrophication.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, water quality spans physical, chemical, and biological parameters, and you read them together. Second, conductivity and total dissolved solids indicate the dissolved-ion load, while dissolved oxygen supports aquatic life. Third, each parameter has its measurement method, like the Winkler titration for dissolved oxygen. Fourth, standards like the Australian Drinking Water Guidelines give a measured value its meaning. And fifth, the eutrophication chain runs from nutrients, to an algal bloom, to decomposition, which crashes the dissolved oxygen and drives BOD up. Read the parameters together, and always against a standard. See you next lesson."
+      }
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "title": "Module 1 Synthesis and Review",
+  "subtitle": "Structure to bonding to properties, end to end",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 20",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "consolidate and review the key concepts and skills of properties and structure of matter"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "What binds atoms together in elements and compounds?",
+  "lessonIntent": "Students can connect atomic structure, bonding, properties, and separation into one chain and use it to classify and predict the behaviour of substances.",
+  "examSkill": "Apply the structure → bonding → properties chain in both directions, predicting properties from structure and inferring structure from observed properties.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the Module 1 review, structure to properties end to end. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Module 1 Synthesis and Review (Year 11 Chemistry, Module 1, Lesson 20)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One chain holds it all together",
+      "body": "Every topic in Module 1, from atomic structure to separation, links into a single logical chain.",
+      "callout": "Learn the chain, not just the pieces.",
+      "durationInFrames": 630,
+      "caption": "Module 1 connects into one chain: structure → bonding → properties → separation.",
+      "voiceover": {
+        "text": "OK, this is your complete review of Module 1, the properties and structure of matter. We've covered a lot, atomic structure, electron configuration, the periodic table and its trends, bonding, intermolecular forces, polymers, solubility, and separation. But here's the thing to walk away with. These aren't separate islands. They link into one logical chain. Atomic structure decides the bonding, the bonding decides the properties, and the properties decide which separation technique to use. Today we'll lay that whole chain out, so when an exam question lands, you know exactly where it sits and which tool to reach for. Let's tie it all up."
+      }
+    },
+    {
+      "id": "concept-chain",
+      "type": "concept",
+      "heading": "The master chain",
+      "body": "Atomic structure flows to bonding, then to physical properties, then to the right separation method.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "structure", "label": "Atomic structure"},
+          {"id": "bonding", "label": "Bond type & IMFs"},
+          {"id": "props", "label": "Physical properties"},
+          {"id": "sep", "label": "Separation method"}
+        ],
+        "edges": [
+          {"from": "structure", "to": "bonding"},
+          {"from": "bonding", "to": "props"},
+          {"from": "props", "to": "sep"}
+        ],
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Structure sets valence electrons and effective nuclear charge."},
+        {"text": "Those set bond type and the strength of forces between particles."},
+        {"text": "Bonding sets melting point, conductivity, solubility, and hardness."}
+      ],
+      "secondary": "The chain runs both ways: predict properties from structure, or infer structure from observed properties.",
+      "callout": "Structure decides bonding decides properties decides separation.",
+      "durationInFrames": 1140,
+      "caption": "Structure → bonding → properties → separation, the Module 1 master chain.",
+      "voiceover": {
+        "text": "Here's the chain that unifies everything. It starts with atomic structure, the protons, electrons, and configuration of an atom. That structure fixes two things, the valence electrons and the effective nuclear charge, which together decide how an atom bonds, whether ionic, covalent, metallic, or through intermolecular forces. The bonding in turn decides the physical properties, the melting point, the electrical conductivity, the solubility, and the hardness. And those properties decide which separation technique you'd use to purify or analyse the substance. The really powerful part is that the chain runs in both directions. Give me the structure and I'll predict the properties. But give me the observed properties, and I can work backwards to deduce the structure and bonding. That bidirectional reasoning is exactly what the hardest exam questions test."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The four bonding models",
+      "bullets": [
+        {"text": "Ionic: metal plus non-metal; a lattice of ions; high MP, conducts when molten."},
+        {"text": "Covalent molecular: non-metals; small molecules; low MP, non-conducting."},
+        {"text": "Covalent network: atoms bonded in a giant lattice; very high MP, hard."},
+        {"text": "Metallic: metal cations in a sea of electrons; conducts, malleable."}
+      ],
+      "callout": "Name the bonding model, and the properties follow.",
+      "durationInFrames": 990,
+      "caption": "Ionic, covalent molecular, covalent network, and metallic bonding models.",
+      "voiceover": {
+        "text": "Let's recap the four bonding models, because naming the right one unlocks the properties. Ionic bonding forms between a metal and a non-metal, giving a lattice of ions, which means a high melting point and conduction only when molten or dissolved, once the ions are free to move. Covalent molecular forms between non-metals as small, discrete molecules, so it has a low melting point and doesn't conduct, because there are no free charges. Covalent network is atoms bonded into one giant lattice, like diamond, giving an extremely high melting point and great hardness. And metallic bonding is a lattice of metal cations sitting in a sea of delocalised electrons, which makes metals conduct electricity and bend without shattering. Pick the model, and the properties fall out of it."
+      }
+    },
+    {
+      "id": "concept-trends",
+      "type": "concept",
+      "heading": "The periodic trends, in one breath",
+      "body": "All three trends trace back to effective nuclear charge and the number of shells.",
+      "bullets": [
+        {"text": "Atomic radius: decreases across a period, increases down a group."},
+        {"text": "Electronegativity: increases across a period, decreases down a group."},
+        {"text": "Reactivity: metals more reactive down; non-metals more reactive up."}
+      ],
+      "secondary": "Across a period, rising Z_eff dominates. Down a group, extra shells and shielding dominate. One cause, three trends.",
+      "callout": "Z_eff and shell count drive every trend.",
+      "durationInFrames": 1110,
+      "caption": "Radius, electronegativity, and reactivity all trace to Z_eff and shell count.",
+      "voiceover": {
+        "text": "Let's compress the trends into one idea, because they all share a root cause. Atomic radius decreases across a period and increases down a group. Electronegativity does the opposite for size, it increases across a period and decreases down a group. And reactivity splits by element type, metals get more reactive down a group while non-metals get more reactive up. Now the unifying point. Every one of these comes back to two factors, the effective nuclear charge and the number of occupied shells. Across a period, the rising effective nuclear charge dominates, so atoms shrink and pull electrons harder. Down a group, the extra shells and shielding dominate, so atoms grow and hold their electrons more loosely. One cause, three trends. If you can recite that, you can reconstruct any of the trends under pressure."
+      }
+    },
+    {
+      "id": "concept-master",
+      "type": "concept",
+      "heading": "Diamond versus graphite",
+      "body": "Same element, opposite properties, purely because the atoms are arranged differently.",
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "Diamond",
+        "afterLabel": "Graphite",
+        "beforeContent": "3D network, 4 bonds per C: hardest, insulating, transparent.",
+        "afterContent": "Layered sheets, 3 bonds + 1 free e⁻: soft, conducting, opaque.",
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Both are pure carbon with the same electron configuration."},
+        {"text": "Diamond: each C bonds to 4 others in a rigid 3D network."},
+        {"text": "Graphite: layered sheets with one delocalised electron per carbon."}
+      ],
+      "secondary": "Diamond is hard and non-conducting; graphite is soft and conducts in-plane. Structure alone explains every difference.",
+      "callout": "Same atoms, different arrangement, opposite properties.",
+      "durationInFrames": 1170,
+      "caption": "Diamond vs graphite: same C, different structure, opposite properties.",
+      "voiceover": {
+        "text": "Here's the single best example of the whole chain, diamond versus graphite. Both are pure carbon. Same atomic number, same atomic mass, same electron configuration. The only difference is how the atoms are arranged, and yet their properties are completely opposite. In diamond, each carbon bonds covalently to four others in a rigid three-dimensional network, so it's the hardest natural substance and it doesn't conduct, because every electron is locked in a bond. In graphite, the carbons form flat layers, each carbon using three bonds in its sheet and leaving one electron delocalised. So graphite is soft and slippery, because the layers slide over each other, and it conducts electricity along the sheets, because of those free electrons. Same element, different arrangement, opposite everything. That's the purest proof that structure determines properties."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A solid has a very high melting point, doesn't conduct as a solid, but conducts when molten and dissolves in water. Classify its bonding and justify it.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "High melting point rules out covalent molecular (those melt low)",
+        "Conducting only when molten or dissolved points to mobile ions",
+        "Mobile ions when free, but fixed in the solid, is the signature of an ionic lattice",
+        "Dissolving in water fits ionic compounds via ion–dipole forces",
+        "Answer: ionic bonding, a lattice of ions freed on melting or dissolving ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "High MP + conducts only when molten/dissolved + soluble → ionic bonding.",
+      "voiceover": {
+        "text": "Quick check, working the chain backwards, which is the classification-first skill. A solid has a very high melting point, doesn't conduct as a solid, but does conduct when molten, and it dissolves in water. Classify its bonding. Pause and work it through. Right, let's reason it out. Step one, the high melting point rules out covalent molecular, because those have low melting points. Step two, the fact that it conducts only when molten or dissolved tells us there are charge carriers that are stuck in place in the solid but free to move once it melts. Step three, ions fixed in a lattice but freed on melting, that's the unmistakable signature of an ionic compound. Step four, dissolving in water fits too, because water's dipoles pull ions out of the lattice. So the answer is ionic bonding, a lattice of ions that become mobile when the solid melts or dissolves. We deduced the structure purely from the properties."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "The whole module",
+      "points": [
+        "Structure → bonding → properties → separation: the master chain.",
+        "Four models: ionic, covalent molecular, covalent network, metallic.",
+        "Radius, electronegativity, and reactivity all trace to Z_eff and shells.",
+        "Diamond vs graphite proves structure determines properties.",
+        "Reason both ways: predict from structure, infer from properties."
+      ],
+      "finalPrompt": "Any Module 1 question: start by classifying the bonding.",
+      "durationInFrames": 1170,
+      "caption": "Module 1 in five: the chain, four models, the trends, the master example.",
+      "voiceover": {
+        "text": "Let's tie up the whole module. Five things to carry into the exam. First, the master chain, atomic structure decides bonding, which decides properties, which decides the separation method. Second, the four bonding models, ionic, covalent molecular, covalent network, and metallic, each with its own property fingerprint. Third, the three periodic trends, radius, electronegativity, and reactivity, all trace back to effective nuclear charge and the number of shells. Fourth, diamond versus graphite is the clearest proof that structure, not just the element, determines properties. And fifth, always be ready to reason both ways, predicting properties from a structure, or inferring the structure from observed properties. For any question in this module, start by classifying the bonding, and the chain carries you the rest of the way. Well done finishing Module 1."
+      }
+    }
+  ]
+}

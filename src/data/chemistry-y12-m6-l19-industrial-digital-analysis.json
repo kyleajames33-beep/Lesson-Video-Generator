@@ -1,0 +1,188 @@
+{
+  "title": "Industrial and Digital Acid-Base Analysis",
+  "subtitle": "pH probes, automated titrators, and choosing the method",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 19",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6: Acid/Base Reactions",
+  "syllabusDotPoints": [
+    "explore acid/base analysis techniques that are applied in industries, identifying the chemistry behind the technique and explaining how the technique works"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "CH12-13",
+    "CH11/12-1",
+    "CH11/12-2",
+    "CH11/12-3",
+    "CH11/12-5",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "How are solutions of acids and bases analysed?",
+  "lessonIntent": "Students can explain how a glass electrode pH meter works and choose between a pH probe, a titration, and an automated titrator for a given task.",
+  "examSkill": "Describe the glass electrode measuring a voltage that the meter converts to pH, and distinguish [H⁺] from total titratable acidity when choosing a method.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, industrial and digital acid-base analysis. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Industrial and Digital Acid-Base Analysis (Year 12 Chemistry, Module 6, Lesson 19)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why a pH probe failed the vinegar test",
+      "body": "Labs that read only pH missed under-strength vinegar, because pH isn't the same as total acidity.",
+      "callout": "A pH probe measures [H⁺], not total acid.",
+      "durationInFrames": 630,
+      "caption": "A pH reading and a titration answer different questions about an acid.",
+      "voiceover": {
+        "text": "OK, here's a subtle but important story. A food regulator tested commercial vinegars, which legally must contain between four and eight percent acetic acid. Nearly a quarter were out of range, and the labs most likely to miss the bad samples were the ones using only a pH probe instead of a titration. Why? Because a pH probe measures the hydrogen ion concentration at that moment, but acetic acid is weak, so most of it is sitting there un-ionised, invisible to the probe. A titration, on the other hand, neutralises all the acid, ionised or not, so it measures the total acidity. Same sample, two different questions. Today we look at how these instruments actually work, and when to choose each one."
+      }
+    },
+    {
+      "id": "concept-probe",
+      "type": "concept",
+      "heading": "The glass electrode measures a voltage",
+      "body": "A glass membrane selective to H⁺ develops a voltage that the meter converts to pH.",
+      "image": "glassElectrodeProbe",
+      "bullets": [
+        {"text": "H⁺ exchange across the glass membrane creates a potential difference."},
+        {"text": "The voltage follows the Nernst equation: E ≈ E° − 0.0592 × pH at 25°C."},
+        {"text": "A reference electrode gives a steady baseline to measure against."}
+      ],
+      "secondary": "The probe does not read concentration directly. It reads a voltage, and the meter's electronics convert that to pH.",
+      "callout": "Voltage in, pH out.",
+      "durationInFrames": 1140,
+      "caption": "Glass electrode: H⁺ across the membrane makes a voltage; E ≈ E° − 0.0592 × pH.",
+      "voiceover": {
+        "text": "Let's open up the pH meter, because it's not a chemical indicator in disguise, it's an electrochemical device. At its heart is a thin glass membrane whose special composition lets hydrogen ions exchange in and out of its surface. The hydrogen ion concentration inside the electrode is fixed, but outside it depends on your sample. When those two differ, a voltage develops across the membrane. And that voltage is governed by the Nernst equation, which at twenty-five degrees comes out to about minus nought-point-zero-five-nine-two volts for every pH unit. A second electrode, the reference electrode, provides a steady baseline so the meter can measure that voltage cleanly. Here's the part students get wrong. The probe does not measure concentration directly. It measures a voltage, an electrical potential difference, and the meter's electronics convert that voltage into the pH number you read off the screen."
+      }
+    },
+    {
+      "id": "concept-methods",
+      "type": "concept",
+      "heading": "Probe, titration, or automation",
+      "body": "Each method answers a different need. Calibration and choice of method are the whole game.",
+      "diagram": {
+        "type": "table",
+        "headers": ["Method", "Measures", "Best for"],
+        "rows": [
+          ["pH probe", "[H⁺] right now", "fast, continuous monitoring"],
+          ["Manual titration", "total titratable acidity", "accurate concentration"],
+          ["Automated titrator", "EP from a derivative peak", "consistent, objective testing"]
+        ],
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Calibrate a probe with two buffers, usually pH 4.00 and 7.00, before use."},
+        {"text": "Automated titrators plot dpH/dV, and the endpoint is the sharp peak."},
+        {"text": "A potentiometric endpoint is the point of fastest pH or potential change."}
+      ],
+      "secondary": "For total acidity you must titrate; a probe reading of pH alone undercounts a weak acid.",
+      "callout": "Pick the method that answers the question asked.",
+      "durationInFrames": 1140,
+      "caption": "Probe (fast [H⁺]), titration (total acidity), automated titrator (derivative EP).",
+      "voiceover": {
+        "text": "Now the practical side, choosing the right tool, because each answers a different need. A pH probe gives a fast, continuous reading of the hydrogen ion concentration right now, perfect for monitoring a process line in real time. But before you trust it, you calibrate it with two buffer solutions of known pH, typically four-point-zero-zero and seven-point-zero-zero, which fixes the slope and the baseline. A manual titration measures total titratable acidity, all the acid neutralised, ionised or not, so it's the method for an accurate concentration. And an automated titrator combines both, dispensing titrant while a probe tracks the pH, then plotting the rate of change, dpH over dV. The endpoint shows up as a sharp peak on that derivative plot, which removes the subjectivity of judging a colour change. That peak, the point of fastest pH change, is called the potentiometric endpoint. The rule, if you need total acidity, you titrate, because a probe reading alone undercounts a weak acid."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Analysis vocabulary",
+      "bullets": [
+        {"text": "Glass electrode: measures a voltage set by H⁺, converted to pH."},
+        {"text": "Calibration: setting a probe against buffers of known pH, e.g. 4 and 7."},
+        {"text": "Potentiometric endpoint: the point of fastest change in pH or potential."},
+        {"text": "Derivative plot: dpH/dV against volume; the peak marks the endpoint."}
+      ],
+      "callout": "Calibrate before you trust a reading.",
+      "durationInFrames": 930,
+      "caption": "Glass electrode, calibration, potentiometric endpoint, and derivative plot.",
+      "voiceover": {
+        "text": "Quick vocabulary for this lesson. A glass electrode measures a voltage that depends on the hydrogen ion concentration, and the meter converts that voltage into pH. Calibration is the step where you set the probe against buffer solutions of known pH, usually four and seven, so its readings are accurate and corrected for any electrode drift. A potentiometric endpoint is the point where the pH, or the electrode potential, changes fastest as you add titrant. And a derivative plot graphs the rate of change of pH against volume, where the endpoint appears as a clear, sharp peak. These are the digital, instrumental versions of the endpoint you used to spot by eye with an indicator."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Percentage acetic acid in vinegar",
+      "question": "25.00 mL of vinegar (density 1.01 g mL⁻¹) needs 21.50 mL of 0.500 mol L⁻¹ NaOH. CH₃COOH + NaOH → CH₃COONa + H₂O (M = 60.05). Find the % by mass of acetic acid.",
+      "coachNote": "1:1 ratio; mass of sample = volume × density.",
+      "steps": [
+        "n(NaOH) = 0.500 × 0.02150 = 1.075 × 10⁻² mol",
+        "Ratio 1:1, so n(CH₃COOH) = 1.075 × 10⁻² mol",
+        "mass(CH₃COOH) = 1.075 × 10⁻² × 60.05 = 0.6455 g",
+        "mass(vinegar) = 25.00 × 1.01 = 25.25 g",
+        "% = 0.6455 ÷ 25.25 × 100 = 2.56% by mass"
+      ],
+      "durationInFrames": 1440,
+      "caption": "1:1 titration gives 0.6455 g acetic acid in 25.25 g vinegar = 2.56%.",
+      "voiceover": {
+        "text": "Let's do the vinegar calculation by titration. Twenty-five millilitres of vinegar, with a density of one-point-zero-one grams per millilitre, needs twenty-one-point-five millilitres of nought-point-five mole per litre sodium hydroxide. The reaction is one to one. Step one, the moles of base. Nought-point-five times nought-point-zero-two-one-five is one-point-zero-seven-five times ten to the minus two moles. Step two, the ratio is one to one, so the acetic acid has the same moles. Step three, convert to mass. Times the molar mass of sixty-point-zero-five gives nought-point-six-four-five grams of acetic acid. Step four, find the mass of the vinegar sample, volume times density, twenty-five times one-point-zero-one, which is twenty-five-point-two-five grams. Step five, the percentage by mass is nought-point-six-four-five over twenty-five-point-two-five times a hundred, about two-point-five-six percent. Notice this counted all the acetic acid, ionised or not, which is exactly why titration, not a pH probe, is the compliance method."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three analysis traps",
+      "body": "Trap 1: saying a pH probe measures [H⁺] directly. It measures a voltage the meter converts to pH.",
+      "secondary": "Trap 2: using a pH reading to judge total acidity of a weak acid; it only sees the ionised part. Trap 3: skipping calibration, so electrode drift goes uncorrected.",
+      "mistakeTag": "Where analysis marks vanish",
+      "callout": "Voltage not concentration; titrate for total acid; calibrate first.",
+      "durationInFrames": 1230,
+      "caption": "Probe reads voltage→pH; pH ≠ total acidity for weak acids; always calibrate.",
+      "voiceover": {
+        "text": "Three traps to finish the module. Trap one, saying a pH probe measures the hydrogen ion concentration directly. It doesn't. It measures a voltage across the glass membrane, and the meter's electronics convert that voltage into pH. The distinction matters in extended responses. Trap two, using a single pH reading to judge the total acidity of a weak acid. The probe only sees the ionised hydrogen ions, and a weak acid is mostly un-ionised, so the probe undercounts. To get total acidity, you have to titrate. Trap three, skipping calibration. Glass electrodes drift over time, so without calibrating against known buffers, like pH four and seven, your readings can be off. Three habits, and they're exactly the reasoning a band six answer on analysis techniques needs."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "An automated titrator records pH against volume of NaOH added. (a) How is the equivalence point found from the data? (b) Why is this more reliable than an indicator?",
+      "pausePrompt": "Pause and think about the derivative.",
+      "answerSteps": [
+        "(a) Plot dpH/dV against volume; the equivalence point is the sharp peak",
+        "That is the point of fastest pH change, the potentiometric endpoint",
+        "(b) It is objective, read from the graph, not a judged colour change",
+        "It works for coloured or cloudy solutions where an indicator fails",
+        "It removes operator subjectivity, improving consistency"
+      ],
+      "durationInFrames": 1230,
+      "caption": "EP = peak of the dpH/dV plot; objective, works on coloured solutions.",
+      "voiceover": {
+        "text": "Quick check, on automated titration. A titrator records the pH against the volume of sodium hydroxide added. Part a, how do you find the equivalence point from that data? Part b, why is this more reliable than an indicator? Pause and think about the derivative. Right, let's check. For part a, you plot the rate of change of pH against volume, dpH over dV, and the equivalence point shows up as a sharp peak on that plot. That peak is the point where the pH is changing fastest, the potentiometric endpoint. For part b, it's more reliable because it's objective. You read a number off a graph rather than judging a colour change by eye. It works on coloured or cloudy solutions where an indicator would be hopeless, and it removes operator subjectivity, so different analysts get the same answer. That consistency is exactly why industry automates it."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A glass electrode measures a voltage the meter converts to pH.",
+        "The voltage follows the Nernst equation, E ≈ E° − 0.0592 × pH.",
+        "Calibrate a probe with known buffers, usually pH 4 and 7.",
+        "A pH probe reads [H⁺]; titration reads total titratable acidity.",
+        "Automated titrators find the endpoint as a peak on a dpH/dV plot."
+      ],
+      "finalPrompt": "Need total acidity? Titrate. Need a fast live reading? Use the probe.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: the glass electrode, calibration, probe vs titration, automation.",
+      "voiceover": {
+        "text": "Let's lock it in, and the module, with five takeaways. First, a glass electrode pH meter measures a voltage that depends on hydrogen ion concentration, and the meter converts that voltage into pH. Second, that voltage follows the Nernst equation, about minus nought-point-zero-five-nine-two volts per pH unit at twenty-five degrees. Third, you must calibrate a probe against buffers of known pH, usually four and seven, to correct for drift. Fourth, a pH probe reads the hydrogen ion concentration at one moment, while a titration measures the total titratable acidity, which is why titration is the compliance method for weak acids like vinegar. And fifth, automated titrators pinpoint the endpoint as a sharp peak on a derivative plot of pH against volume. Need total acidity, titrate. Need a fast live reading, use the probe. That's Module six. Well done getting through it, and see you next time."
+      }
+    }
+  ]
+}

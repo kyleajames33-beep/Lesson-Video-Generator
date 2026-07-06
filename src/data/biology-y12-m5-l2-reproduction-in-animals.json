@@ -1,0 +1,233 @@
+{
+  "title": "Reproduction in Animals",
+  "subtitle": "How fertilisation restores the diploid number, inside or out",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 2",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "analyse sexual and asexual methods of reproduction in animals, including internal and external fertilisation"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does reproduction ensure the continuity of a species?",
+  "lessonIntent": "Students can explain how fertilisation restores the diploid number and compare external and internal fertilisation as strategies shaped by environment.",
+  "examSkill": "Classify an animal's fertilisation as external or internal and justify the gamete-number and survival trade-off it carries.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, reproduction in animals, and the two ways fertilisation can happen. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Reproduction in Animals (Year 12 Biology, Module 5, Lesson 2)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Everything for one spawning",
+      "body": "A Chinook salmon swims thousands of kilometres back to its birthplace, spawns once, releasing thousands of eggs, and then dies.",
+      "callout": "Why gamble everything on a single reproductive event?",
+      "image": "bioM5L2SalmonSpawning",
+      "durationInFrames": 1752,
+      "caption": "Pacific salmon are semelparous: one massive external-fertilisation spawning event, then death.",
+      "voiceover": {
+        "text": "A two thousand twenty two NOAA study tracked Chinook salmon in the Columbia River, and the numbers are extraordinary. Around ninety percent of them returned to within twenty kilometres of the exact stream where they hatched, after years out at sea, by following pheromone gradients diluted to about one part in ten billion. And then each female releases thousands of eggs in a single mass spawning event, and dies. Biologists call that semelparous, betting everything on one reproductive moment. Why pour all that into one explosive event, releasing gametes straight into the water? Animals across the kingdom solve the same problem, getting sperm and egg together, in remarkably different ways. Today we unpack the two big strategies, external and internal fertilisation, and why each suits a different environment."
+      }
+    },
+    {
+      "id": "concept-fertilisation",
+      "type": "concept",
+      "heading": "Fertilisation restores the diploid number",
+      "body": "Two haploid gametes fuse into one diploid zygote, putting the species' chromosome number back.",
+      "bullets": [
+        {
+          "text": "Gametes are haploid: they carry one set of chromosomes."
+        },
+        {
+          "text": "Fertilisation fuses a haploid sperm with a haploid egg."
+        },
+        {
+          "text": "The resulting zygote is diploid, with two sets, ready to develop."
+        }
+      ],
+      "secondary": "Sequence to memorise: haploid gametes, then fertilisation, then a diploid zygote. Meiosis halves the number first so fusion can restore it, not double it.",
+      "callout": "Haploid plus haploid gives diploid. That is the point of fertilisation.",
+      "durationInFrames": 1740,
+      "caption": "Haploid sperm and egg fuse into a diploid zygote, restoring the chromosome number.",
+      "voiceover": {
+        "text": "Let's start with what fertilisation actually achieves, because it is more than just sperm meets egg. Gametes are haploid, meaning each one carries only a single set of chromosomes. When a haploid sperm fuses with a haploid egg, the two single sets combine into a full double set. That fused cell is the zygote, and it is diploid, with two sets of chromosomes, one from each parent. So fertilisation restores the species chromosome number, putting it back to where a body cell sits. The sequence to lock in is short, haploid gametes, then fertilisation, then a diploid zygote. We saw last lesson that this halving and restoring keeps the chromosome number stable across generations, rather than doubling it every time, and meiosis is what does the halving."
+      }
+    },
+    {
+      "id": "concept-external",
+      "type": "concept",
+      "heading": "External fertilisation: many gametes, high risk",
+      "body": "Gametes meet outside the body, usually in water. Numbers are huge, but per-gamete success is low.",
+      "bullets": [
+        {
+          "text": "Advantage: huge numbers of gametes and offspring are produced."
+        },
+        {
+          "text": "Limitation: low success per gamete, and it needs water plus synchronised timing."
+        },
+        {
+          "text": "Common in fish, amphibians and many marine invertebrates."
+        }
+      ],
+      "secondary": "Water is essential, since gametes would dry out on land. Mass spawning synchronises release so sperm and egg actually meet before they disperse.",
+      "callout": "Flood the water with gametes and let sheer numbers do the work.",
+      "durationInFrames": 1872,
+      "caption": "External fertilisation releases many gametes in water, with low per-gamete success.",
+      "voiceover": {
+        "text": "The first strategy is external fertilisation, and the salmon are a perfect example. Here the gametes meet outside the body, almost always in water. The big advantage is sheer quantity, animals release enormous numbers of gametes, and so potentially produce many offspring at once. The catch is that the success rate per gamete is low. Out in open water, most sperm never reach an egg, predators eat many of the eggs and young, and the whole thing only works in water, because gametes would simply dry out on land. It also relies on timing, which is why so many species spawn together in synchronised events, so the sperm and egg are actually in the water at the same moment before they drift apart. You see external fertilisation in fish, amphibians like frogs, and lots of marine invertebrates."
+      }
+    },
+    {
+      "id": "concept-internal",
+      "type": "concept",
+      "heading": "Internal fertilisation: fewer gametes, more protection",
+      "body": "Gametes meet inside the female body. Fewer offspring, but far higher protection and survival per offspring.",
+      "bullets": [
+        {
+          "text": "Advantage: gametes are protected from drying out, so success per gamete is higher."
+        },
+        {
+          "text": "It supports life on land, where external fertilisation cannot work."
+        },
+        {
+          "text": "Limitation: requires mating, produces fewer offspring, higher investment in each."
+        }
+      ],
+      "secondary": "Common in reptiles, birds and mammals. Watch the trap: fertilisation strategy is not the same as development, birds fertilise internally but develop externally in an egg.",
+      "callout": "Trade raw numbers for protection, and you can leave the water.",
+      "durationInFrames": 1848,
+      "caption": "Internal fertilisation protects gametes and enables terrestrial life, at higher cost per offspring.",
+      "voiceover": {
+        "text": "The second strategy is internal fertilisation, where the gametes meet inside the female body. The advantage here is protection. The gametes are shielded from drying out, so the success rate per gamete is much higher, and crucially this is what allows fully terrestrial life, reproducing on dry land where external fertilisation simply could not work. The trade off is that it requires mating, usually produces far fewer offspring, and demands much higher parental investment in each one. It is common in reptiles, birds and mammals. Now here is a trap that catches people every year. Fertilisation strategy is not the same thing as developmental strategy. Birds use internal fertilisation, but their embryos then develop externally, inside an egg laid outside the body. So do not assume internal fertilisation means the young develop inside the mother."
+      },
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "External fertilisation",
+        "afterLabel": "Internal fertilisation",
+        "beforeContent": "Many gametes — low success, needs water",
+        "afterContent": "Fewer gametes — high protection, on land"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Fertilisation: fusion of haploid gametes to form a diploid zygote."
+        },
+        {
+          "text": "Gamete: a haploid reproductive cell, such as a sperm or egg."
+        },
+        {
+          "text": "Zygote: the diploid cell formed when two gametes fuse."
+        },
+        {
+          "text": "External fertilisation: fusion outside the body, usually in water."
+        },
+        {
+          "text": "Internal fertilisation: fusion inside the female reproductive tract."
+        },
+        {
+          "text": "Parental investment: time, energy and protection a parent gives to offspring survival."
+        }
+      ],
+      "callout": "External floods the water; internal protects inside the body.",
+      "durationInFrames": 1506,
+      "caption": "Fertilisation, gamete, zygote, external, internal and parental investment defined.",
+      "voiceover": {
+        "text": "Let's pin down the vocabulary. Fertilisation is the fusion of haploid gametes to form a diploid zygote. A gamete is a haploid reproductive cell, like a sperm or an egg. A zygote is the diploid cell you get when two gametes fuse. External fertilisation happens outside the body, usually in water, while internal fertilisation happens inside the female reproductive tract. And parental investment is the time, energy and protection a parent puts into the survival of its offspring. Notice how that last term ties the whole lesson together. External fertilisation tends to mean low investment spread across many offspring, while internal fertilisation usually means high investment in just a few."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "External or internal, and why",
+      "question": "Classify the fertilisation strategy and justify it: (a) a frog releasing eggs as a male releases sperm over them in a pond; (b) a kangaroo; (c) a bird laying a fertilised egg in a nest.",
+      "coachNote": "Ask where sperm meets egg, then separate fertilisation from where development happens.",
+      "steps": [
+        "(a) Sperm and eggs meet in the pond water outside the body, so this is external fertilisation.",
+        "(b) A kangaroo is a mammal that mates, so sperm meets egg inside the female, making it internal fertilisation.",
+        "(c) The egg is already fertilised before laying, so fertilisation was internal; only development is external.",
+        "Decision rule: location of gamete fusion sets the fertilisation type, regardless of where development occurs.",
+        "Answer: (a) external, (b) internal, (c) internal fertilisation with external development."
+      ],
+      "durationInFrames": 1986,
+      "caption": "(a) external, (b) internal, (c) internal fertilisation with external development.",
+      "voiceover": {
+        "text": "Let's classify three animals, and watch the trap from a moment ago. The question to ask is, where does sperm actually meet egg. Part a, a frog releasing eggs while a male releases sperm over them in a pond. The gametes meet in the pond water, outside the body, so that is external fertilisation. Part b, a kangaroo. It is a mammal that mates, so sperm meets egg inside the female body, which makes it internal fertilisation. Part c, a bird laying a fertilised egg in a nest. This is the tricky one. The egg was already fertilised before it was laid, so fertilisation happened internally. Only the development is external, inside the egg. So the decision rule is, the location where gametes fuse sets the fertilisation type, no matter where development later happens. The answers are external, internal, and internal fertilisation with external development."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The numbers trap",
+      "body": "Trap: assuming internal fertilisation always produces more offspring than external. It usually produces fewer.",
+      "secondary": "Internal fertilisation makes fewer offspring per event but invests more in each, giving higher per-offspring survival. External fertilisation releases far more gametes but with low fertilisation and survival rates. Both are evolutionarily successful, just different bets. And remember, internal fertilisation does not always mean internal development.",
+      "mistakeTag": "More gametes does not mean more survivors",
+      "callout": "Fewer offspring, more care, is a winning strategy too.",
+      "durationInFrames": 1710,
+      "caption": "Internal fertilisation usually means fewer offspring with higher survival, not more offspring.",
+      "voiceover": {
+        "text": "Here is the trap that costs marks on this topic. Students assume that internal fertilisation, being the more advanced sounding option, must produce more offspring. It is usually the opposite. Internal fertilisation typically produces fewer offspring per reproductive event, but it invests far more in each one, which gives much higher survival per offspring. External fertilisation goes the other way, releasing huge numbers of gametes but with low fertilisation and low survival rates. The key insight for a band six answer is that both strategies are evolutionarily successful, they are just different bets, lots of cheap offspring versus a few well protected ones. And do not forget the other trap, internal fertilisation does not automatically mean the young develop inside the mother, think of birds."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A fish species releases millions of eggs and sperm into open ocean water, while a whale gives birth to a single calf. Explain how each fertilisation strategy supports continuity despite the very different offspring numbers.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The fish uses external fertilisation: gametes meet in water, so huge numbers offset the low success rate.",
+        "Enough of those many offspring survive predation and chance for the species to continue.",
+        "The whale uses internal fertilisation with high parental investment in one calf.",
+        "That heavy protection gives the single calf a high chance of surviving to reproduce.",
+        "Answer: both reach continuity, one through sheer numbers, the other through protected investment."
+      ],
+      "durationInFrames": 2010,
+      "caption": "Fish reach continuity through gamete numbers; whales through protected investment in one calf.",
+      "voiceover": {
+        "text": "Quick check. A fish species releases millions of eggs and sperm into open ocean water, while a whale gives birth to a single calf. Explain how each strategy supports continuity, despite those wildly different offspring numbers. Pause and reason it through. Right. The fish is using external fertilisation. The gametes meet out in the water, where success per gamete is very low, so the species compensates with sheer numbers, releasing millions. Even though most are lost to predators and chance, enough survive for the species to continue. The whale is using internal fertilisation with very high parental investment in that single calf. Because the calf is fertilised internally, carried, born, and then protected and fed, it has a high chance of surviving to reproduce itself. So both strategies reach the same goal of continuity, one through overwhelming numbers, the other through heavy protected investment in very few."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Fertilisation fuses two haploid gametes into a diploid zygote, restoring the chromosome number.",
+        "External fertilisation: in water, many gametes, low success per gamete, fish and amphibians.",
+        "Internal fertilisation: inside the body, fewer offspring, high protection, reptiles, birds, mammals.",
+        "Internal fertilisation does not mean internal development, birds prove it.",
+        "Both strategies achieve continuity, through numbers or through investment."
+      ],
+      "finalPrompt": "Classifying fertilisation? Ask where gametes fuse, then separate it from where development happens.",
+      "durationInFrames": 1764,
+      "caption": "Five takeaways: diploid restoration, external vs internal, the development trap, two routes to continuity.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, fertilisation fuses two haploid gametes into a diploid zygote, restoring the species chromosome number. Second, external fertilisation happens in water, releasing many gametes with a low success rate per gamete, typical of fish and amphibians. Third, internal fertilisation happens inside the body, producing fewer offspring but with high protection, typical of reptiles, birds and mammals. Fourth, internal fertilisation does not mean internal development, and birds are the proof, fertilised inside but developing in a laid egg. And fifth, both strategies achieve continuity, one through overwhelming numbers, the other through heavy investment in a few. When you classify, ask where the gametes fuse, and keep that separate from where development happens. Next lesson, we move beyond animals to plants, fungi, bacteria and protists."
+      }
+    }
+  ]
+}

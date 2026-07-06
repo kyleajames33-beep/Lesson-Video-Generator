@@ -20,7 +20,7 @@ export const SceneAssetImage = ({name, delay = 26}: Props) => {
 	return (
 		<div className="scene-asset-image-wrap" style={{transform: `scale(${scale})`, opacity}}>
 			<KenBurns delay={delay}>
-				<img src={src} alt={name} className="scene-asset-image" />
+				<img src={src} alt="" className="scene-asset-image" />
 			</KenBurns>
 		</div>
 	);

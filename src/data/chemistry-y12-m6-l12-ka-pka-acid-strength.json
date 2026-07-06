@@ -1,0 +1,207 @@
+{
+  "title": "Ka, pKa and Acid Strength",
+  "subtitle": "Measuring how strong an acid really is",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 12",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6: Acid/Base Reactions",
+  "syllabusDotPoints": [
+    "calculate and apply the dissociation constant (Ka) and pKa (pKa = -log10 (Ka)) to determine the difference between strong and weak acids (ACSCH098)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "CH12-13",
+    "CH11/12-1",
+    "CH11/12-2",
+    "CH11/12-3",
+    "CH11/12-5",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "What is the role of water in solutions of acids and bases?",
+  "lessonIntent": "Students can use Ka and pKa to rank acid strength, find a conjugate base's Kb, and explain why successive Ka values fall for polyprotic acids.",
+  "examSkill": "Rank acids by Ka or pKa (lower pKa is stronger), apply Ka × Kb = Kw only within a conjugate pair, and use Ka1 only for polyprotic pH.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, Ka and pKa, how we measure acid strength. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Ka, pKa and Acid Strength (Year 12 Chemistry, Module 6, Lesson 12)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why cola attacks enamel harder than soda water",
+      "body": "Both are acidic, but cola's phosphoric acid is thousands of times stronger than soda water's carbonic acid.",
+      "callout": "pH tells you the solution; Ka tells you the acid.",
+      "image": "colaEnamelKa",
+      "durationInFrames": 660,
+      "caption": "Cola's H₃PO₄ has a far larger Ka than soda water's H₂CO₃, so it erodes enamel faster.",
+      "voiceover": {
+        "text": "OK, here's something a dentist could tell you. Tooth enamel starts dissolving below about pH five-point-five, and both cola and sparkling water sit under that line. But cola is far more damaging, and the reason is a number called Ka. Sparkling water gets its acidity from carbonic acid, which is extremely weak. Cola adds phosphoric acid, whose Ka is roughly seventeen thousand times larger. A bigger Ka means the acid ionises much more, releasing far more hydrogen ions at the same concentration. So pH only tells you how acidic a particular solution happens to be. Ka tells you how strong the acid itself is, no matter the concentration. Today we make that distinction precise."
+      }
+    },
+    {
+      "id": "concept-ka",
+      "type": "concept",
+      "heading": "Ka measures the acid itself",
+      "body": "Ka is the equilibrium constant for ionisation. A bigger Ka means more ionisation and a stronger acid.",
+      "bullets": [
+        {"text": "Ka = [H⁺][A⁻] ÷ [HA] for HA ⇌ H⁺ + A⁻."},
+        {"text": "Larger Ka means the equilibrium sits further right, so stronger."},
+        {"text": "Ka depends only on the acid and temperature, never concentration."}
+      ],
+      "secondary": "pH depends on both Ka and concentration, so two different acids can share a pH. Only Ka ranks strength.",
+      "callout": "Ka is a property of the acid, not the solution.",
+      "durationInFrames": 1080,
+      "caption": "Ka = [H⁺][A⁻] ÷ [HA]; bigger Ka means more ionised and stronger.",
+      "voiceover": {
+        "text": "So let's define it. Ka is just the equilibrium constant for an acid ionising in water. For a weak acid splitting into hydrogen ion and its conjugate base, Ka equals the hydrogen ion concentration times the conjugate base concentration, divided by the undissociated acid. A large Ka means the equilibrium lies well to the right, most of the acid has ionised, so it's a relatively strong acid. A small Ka means most molecules stay intact, so it's weak. The crucial thing is that Ka depends only on the identity of the acid and the temperature. It does not depend on concentration. That's exactly why Ka is the right tool for comparing acid strengths, while pH is not. pH depends on both Ka and concentration, so two different acids can actually show the same pH at different concentrations. To rank strength fairly, you always use Ka."
+      }
+    },
+    {
+      "id": "concept-pka",
+      "type": "concept",
+      "heading": "pKa: like a golf score",
+      "body": "pKa = −log(Ka). Because of the minus sign, a smaller pKa means a stronger acid.",
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          {"label": "HF", "value": 3.17},
+          {"label": "CH₃COOH", "value": 4.74},
+          {"label": "H₂CO₃", "value": 6.37},
+          {"label": "HCN", "value": 9.21}
+        ],
+        "unit": "pKa",
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "pKa = −log(Ka), so it compresses a huge range into small numbers."},
+        {"text": "Lower pKa means larger Ka means stronger acid."},
+        {"text": "HF (3.17) is stronger than acetic (4.74), then carbonic, then HCN."}
+      ],
+      "secondary": "Think golf: the lower score wins. The acid with the smallest pKa is the strongest.",
+      "callout": "Lower pKa, stronger acid.",
+      "durationInFrames": 1080,
+      "caption": "pKa = −log(Ka); the lower the pKa, the stronger the acid.",
+      "voiceover": {
+        "text": "Ka values are awkward, because they span huge ranges, from about ten to the minus two down to ten to the minus ten and beyond. So we take the negative log and call it pKa, exactly the way pH is the negative log of hydrogen ion concentration. Here's the catch that trips students up. Because of that minus sign, the direction flips. A larger Ka gives a smaller pKa. So the stronger the acid, the lower the pKa. The mnemonic that sticks is golf. In golf, the lower score wins, and with pKa, the lower number is the stronger acid. Look at the chart. Hydrofluoric acid has the lowest pKa, three-point-one-seven, so it's the strongest here. Then acetic acid at four-point-seven-four, then carbonic, then hydrogen cyanide at nine-point-two-one, the weakest. Smaller bar, stronger acid."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The relationships you need",
+      "bullets": [
+        {"text": "pKa: pKa = −log(Ka); a lower pKa is a stronger acid."},
+        {"text": "Conjugate pair: an acid and base differing by one proton."},
+        {"text": "Ka × Kb = Kw: holds only within a conjugate pair (1.0 × 10⁻¹⁴)."},
+        {"text": "Polyprotic acid: more than one proton, with Ka₁ ≫ Ka₂ ≫ Ka₃."}
+      ],
+      "callout": "Ka × Kb = Kw is for conjugate pairs only.",
+      "durationInFrames": 990,
+      "caption": "pKa, conjugate pair, Ka × Kb = Kw, and polyprotic acids.",
+      "voiceover": {
+        "text": "Four relationships to have ready. First, pKa is minus the log of Ka, and a lower pKa means a stronger acid. Second, a conjugate pair is an acid and a base that differ by exactly one proton, like acetic acid and acetate. Third, and this is the one people misuse, Ka of an acid times Kb of its conjugate base equals Kw, one times ten to the minus fourteen at twenty-five degrees. That relationship holds only within a genuine conjugate pair. You cannot apply it to two unrelated species like acetic acid and ammonia. And fourth, a polyprotic acid has more than one proton it can donate, and its successive Ka values fall sharply, Ka one is far bigger than Ka two, which is far bigger than Ka three."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Rank, convert, and find Kb",
+      "question": "Acids: P (Ka = 1.3 × 10⁻²), Q (Ka = 8.4 × 10⁻⁵), R (Ka = 2.1 × 10⁻⁸). (a) Rank them. (b) Find pKa of Q. (c) Find Kb of R's conjugate base.",
+      "coachNote": "Largest Ka is strongest; Kb of a conjugate base is Kw ÷ Ka.",
+      "steps": [
+        "(a) Larger Ka = stronger: P > Q > R; P strongest, R weakest",
+        "(b) pKa(Q) = −log(8.4 × 10⁻⁵) = 5 − log(8.4) = 5 − 0.924 = 4.08",
+        "(c) Conjugate base of R: Kb = Kw ÷ Ka",
+        "Kb = 1.0 × 10⁻¹⁴ ÷ 2.1 × 10⁻⁸ = 4.8 × 10⁻⁷",
+        "Check: weakest acid R has the strongest conjugate base ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "P > Q > R; pKa(Q) = 4.08; Kb of R's base = 4.8 × 10⁻⁷.",
+      "voiceover": {
+        "text": "Let's put it to work. Three acids. P with a Ka of one-point-three times ten to the minus two, Q at eight-point-four times ten to the minus five, and R at two-point-one times ten to the minus eight. Part a, rank them. Larger Ka is stronger, so P beats Q beats R. P is the strongest, R the weakest. Part b, the pKa of Q. That's minus the log of eight-point-four times ten to the minus five. Pull the power out, five minus the log of eight-point-four, which is five minus nought-point-nine-two, giving four-point-zero-eight. Part c, the Kb of R's conjugate base. For any conjugate pair, Kb equals Kw divided by Ka. So one times ten to the minus fourteen over two-point-one times ten to the minus eight, which is four-point-eight times ten to the minus seven. And a nice check, R was our weakest acid, and it has the strongest conjugate base. Acid and base strengths run in opposite directions."
+      }
+    },
+    {
+      "id": "concept-polyprotic",
+      "type": "concept",
+      "heading": "Polyprotic acids let go one proton at a time",
+      "body": "Each proton is harder to remove than the last, so Ka drops by about 10⁵ each step.",
+      "bullets": [
+        {"text": "H₃PO₄: Ka₁ = 7.5 × 10⁻³, Ka₂ = 6.2 × 10⁻⁸, Ka₃ = 4.8 × 10⁻¹³."},
+        {"text": "Pulling H⁺ off an already-negative ion takes more energy."},
+        {"text": "For pH, use Ka₁ only; later steps add almost no extra H⁺."}
+      ],
+      "secondary": "Each ionisation is a separate equilibrium with its own Ka. Never combine them into one expression.",
+      "callout": "Ka₁ ≫ Ka₂ ≫ Ka₃; use Ka₁ for pH.",
+      "durationInFrames": 1050,
+      "caption": "Successive Ka values fall ~10⁵ each step; use only Ka₁ for pH.",
+      "voiceover": {
+        "text": "Polyprotic acids deserve a closer look, because they donate their protons in separate steps. Take phosphoric acid. Its first Ka is seven-point-five times ten to the minus three. The second is six-point-two times ten to the minus eight, and the third is four-point-eight times ten to the minus thirteen. Each step is about a hundred thousand times weaker than the one before. The reason is electrostatic. Once the first proton leaves, you're trying to pull a positive hydrogen ion away from an ion that's now negatively charged, and the next time it's even more negative. That attraction makes each successive proton harder to remove. The practical payoff for the exam, when you calculate the pH of a polyprotic acid, you only use Ka one. The later ionisations contribute almost no extra hydrogen ion. And remember, each step is its own separate equilibrium with its own Ka, so you never lump them into a single expression."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three Ka traps",
+      "body": "Trap 1: thinking a larger pKa means a stronger acid. It's the reverse.",
+      "secondary": "Trap 2: applying Ka × Kb = Kw to species that aren't a conjugate pair. Trap 3: summing all the Ka steps of a polyprotic acid for pH instead of using Ka₁ only.",
+      "mistakeTag": "Where Ka and pKa marks vanish",
+      "callout": "Golf score, conjugate pairs only, Ka₁ for pH.",
+      "durationInFrames": 1200,
+      "caption": "pKa is golf (lower stronger); Ka×Kb is conjugate-only; use Ka₁ for polyprotic pH.",
+      "voiceover": {
+        "text": "Three traps to sidestep. Trap one, thinking a bigger pKa means a stronger acid. It's the opposite, and it's the most common ranking error there is. Remember golf, the lower pKa wins. An acid with pKa four-point-two is stronger than one with pKa eight-point-five. Trap two, applying Ka times Kb equals Kw to a pair that isn't actually conjugate. It works for acetic acid and acetate, because acetate is what's left when acetic acid loses a proton. It does not work for acetic acid and ammonia, which aren't related that way. Always check the one-proton link first. Trap three, trying to add up all the Ka steps of a polyprotic acid to find pH. Don't. Ka one dominates so completely that the rest are negligible, so use Ka one alone. Three traps, three quick checks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "An acid HA has Ka = 3.2 × 10⁻⁵. (a) Find its pKa. (b) Find the Kb of A⁻. (c) Which is stronger: this acid or HCN (pKa = 9.21)?",
+      "pausePrompt": "Pause and work all three parts.",
+      "answerSteps": [
+        "(a) pKa = −log(3.2 × 10⁻⁵) = 5 − log(3.2) = 5 − 0.51 = 4.49",
+        "(b) A⁻ and HA are a conjugate pair: Kb = Kw ÷ Ka",
+        "Kb = 1.0 × 10⁻¹⁴ ÷ 3.2 × 10⁻⁵ = 3.1 × 10⁻¹⁰",
+        "(c) Compare pKa: 4.49 < 9.21, so HA is the stronger acid",
+        "Lower pKa wins; HCN is much weaker"
+      ],
+      "durationInFrames": 1320,
+      "caption": "pKa = 4.49, Kb = 3.1 × 10⁻¹⁰, and HA beats HCN (lower pKa).",
+      "voiceover": {
+        "text": "Quick check, three quick parts. An acid HA has a Ka of three-point-two times ten to the minus five. Part a, find its pKa. Pause and work all three. Right, let's check. The pKa is minus the log of three-point-two times ten to the minus five. That's five minus the log of three-point-two, five minus nought-point-five-one, giving four-point-four-nine. Part b, the Kb of its conjugate base. They're a conjugate pair, so Kb is Kw over Ka, one times ten to the minus fourteen divided by three-point-two times ten to the minus five, which is three-point-one times ten to the minus ten. Part c, is HA stronger than hydrogen cyanide, which has a pKa of nine-point-two-one? Compare the pKa values. Four-point-four-nine is well below nine-point-two-one, and lower pKa wins, so HA is much the stronger acid. Golf score, every time."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Ka measures the acid itself; bigger Ka means stronger.",
+        "pKa = −log(Ka); lower pKa means stronger, like golf.",
+        "Ka × Kb = Kw, but only within a conjugate pair.",
+        "Weakest acid has the strongest conjugate base, and vice versa.",
+        "Polyprotic acids: Ka₁ ≫ Ka₂ ≫ Ka₃; use Ka₁ for pH."
+      ],
+      "finalPrompt": "Ranking acids? Use Ka or pKa, never the pH of one solution.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: Ka and pKa, the golf rule, conjugate pairs, and polyprotic Ka₁.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, Ka measures the strength of the acid itself, independent of concentration, and a bigger Ka means a stronger acid. Second, pKa is minus the log of Ka, so a lower pKa means a stronger acid, just like a golf score. Third, Ka of an acid times Kb of its conjugate base equals Kw, but only when they're a genuine conjugate pair. Fourth, that inverse link means the weakest acid has the strongest conjugate base, and the strongest acid the weakest. And fifth, for polyprotic acids, the successive Ka values fall steeply, so you use Ka one alone for any pH calculation. When you need to rank acids, reach for Ka or pKa, never the pH of one particular solution. See you in the next lesson."
+      }
+    }
+  ]
+}

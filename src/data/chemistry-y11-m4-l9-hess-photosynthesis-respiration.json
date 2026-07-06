@@ -1,0 +1,215 @@
+{
+  "title": "Hess's Law Applied, Photosynthesis & Respiration",
+  "subtitle": "When two reactions are exact reverses",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Lesson 9",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Apply Hess's Law to biological processes, including the reverse relationship between photosynthesis and cellular respiration"
+  ],
+  "lessonIntent": "Students can identify photosynthesis and respiration as exact reverses and use Hess's Law to deduce one ΔH from the other.",
+  "examSkill": "Recognise reverse reactions, apply the sign-flip rule, and explain why the two ΔH values must be equal in magnitude and opposite in sign.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson `subjects/chemistry/year11/module4/lesson09.html`. Anchor: photosynthesis and cellular respiration as exact reverses. Hess's Law taught L8, reference, don't re-teach. Standard ΔH(respiration of glucose) ≈ −2803 kJ/mol; therefore ΔH(photosynthesis) ≈ +2803 kJ/mol. Misconception: 'photosynthesis and respiration are independent' (they're exact reverses → Hess gives one from the other).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Hess's Law Applied, Photosynthesis & Respiration. Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Hess's Law applied. Photosynthesis and Respiration. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L9/title.c65a58d0c222.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "How can we measure photosynthesis using respiration?",
+      "body": "Plants do photosynthesis. Your cells do respiration. At the level of chemistry, they are mirror images, the exact same atoms, the same compounds, the same equation reversed. So we can deduce one ΔH from the other without measuring it.",
+      "bullets": [
+        {
+          "text": "Respiration: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O (releases energy).",
+          "at": 5
+        },
+        {
+          "text": "Photosynthesis: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (absorbs energy).",
+          "at": 13
+        },
+        {
+          "text": "Same atoms. Same equation. Just reversed.",
+          "at": 21
+        },
+        {
+          "text": "Hess's Law: ΔH of one tells us the other.",
+          "at": 26
+        }
+      ],
+      "callout": "Photosynthesis and respiration are exact reverses.",
+      "image": "m4l9HookCycle",
+      "durationInFrames": 1170,
+      "caption": "Photosynthesis and respiration are reverse equations; Hess links them.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's a beautiful piece of chemistry. Plants do photosynthesis. Your cells do respiration. At the molecular level, they are mirror images — the exact same atoms, the same compounds, just the equation reversed. So we don't need to measure both separately. Hess's Law lets us deduce delta H for one straight from the other.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L9/hook.de7daf3ab704.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Reverse equation, flip sign",
+      "body": "You already met the reverse-flip rule in Lesson 1 and applied it through Hess's Law in Lesson 8. Photosynthesis and respiration are the textbook case: a complete reversal.",
+      "bullets": [
+        {
+          "text": "Respiration breaks glucose down, exothermic, ΔH negative.",
+          "at": 5
+        },
+        {
+          "text": "Photosynthesis builds glucose up, endothermic, ΔH positive.",
+          "at": 12
+        },
+        {
+          "text": "Same magnitude (Hess's Law), opposite sign.",
+          "at": 19
+        },
+        {
+          "text": "Sunlight supplies the energy that respiration releases.",
+          "at": 26
+        }
+      ],
+      "callout": "Reverse reaction → same ΔH magnitude, opposite sign.",
+      "durationInFrames": 1350,
+      "caption": "Respiration is exothermic; photosynthesis is endothermic with the same |ΔH|.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1110,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "You already know the rule from Lesson one, and you used it through Hess's Law last lesson. Photosynthesis and respiration are the textbook case of a complete reversal. Respiration breaks glucose down — exothermic, delta H is negative. Photosynthesis builds glucose up from carbon dioxide and water — endothermic, delta H positive. Think of it like uploading versus downloading a file — same data, opposite direction. But unlike a file transfer, here the energy doesn't appear from nowhere — sunlight supplies what respiration later releases.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L9/concept.5b0b54f1ec64.mp3"
+      },
+      "diagram": {
+        "type": "hessCycle"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "ΔH for photosynthesis from respiration",
+      "question": "The molar enthalpy of respiration is ΔH = −2803 kJ mol⁻¹ for C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O. Calculate ΔH for photosynthesis: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂.",
+      "coachNote": "Photosynthesis is the exact reverse of respiration. Reverse the equation, flip the sign.",
+      "unitCancel": {
+        "left": "kJ mol⁻¹",
+        "right": "kJ mol⁻¹",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: ΔH(respiration) = −2803 kJ mol⁻¹.",
+        "Find: ΔH(photosynthesis) for the reverse equation.",
+        "Compare: target equation reverses every reactant and product.",
+        "Formula: ΔH(reverse) = −ΔH(forward).",
+        "Substitute: ΔH(photosynthesis) = −(−2803).",
+        "Answer: ΔH(photosynthesis) = 2803 kJ mol⁻¹ absorbed (i.e. +2803 kJ mol⁻¹, endothermic)."
+      ],
+      "durationInFrames": 1320,
+      "caption": "ΔH(photosynthesis) = −(−2803) = +2803 kJ mol⁻¹ (endothermic).",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Let's do it. The molar enthalpy of respiration is minus two thousand eight hundred and three kilojoules per mole — that's the energy your cells get from a mole of glucose. Photosynthesis is the exact reverse equation, so we reverse and flip the sign. Delta H of photosynthesis equals minus delta H of respiration — minus negative two-eight-zero-three — which is plus two thousand eight hundred and three kilojoules per mole. Endothermic, of course — that energy has to come from somewhere, and it does: sunlight.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L9/worked-example.5a107a97a615.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Photosynthesis and respiration are independent reactions\"",
+      "body": "Students often think: \"They're two separate biological processes, so they have unrelated ΔH values.\" That's the wrong instinct. The correct rule: they are the exact reverse of each other, same atoms, same compounds, mirrored. Hess's Law (specifically the reverse rule) says their ΔH values must be equal in magnitude and opposite in sign. They are linked by definition, not by coincidence.",
+      "callout": "Photosynthesis and respiration share |ΔH|, they're not independent.",
+      "mistakeTag": "Independent-reactions trap",
+      "durationInFrames": 1290,
+      "caption": "They're not independent, they're exact reverses with equal |ΔH|.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the trap. Students think: photosynthesis and respiration are two separate biological processes, so their delta H values must be unrelated. Wrong instinct. The correct rule: they're the exact reverse of each other — same atoms, same compounds, just mirrored. Hess's Law, specifically the reverse rule, says their delta H values must be equal in magnitude and opposite in sign. They're linked by definition, not by coincidence. Measure one — you have the other for free.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L9/misconception.046826e189d3.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "The combustion of methane has ΔH = −890 kJ mol⁻¹. What is ΔH for the reverse reaction (CO₂ + 2H₂O → CH₄ + 2O₂), and is it exo- or endothermic?",
+      "pausePrompt": "Pause: reverse → flip the sign. Then read it.",
+      "answerSteps": [
+        "Formula: ΔH(reverse) = −ΔH(forward).",
+        "Substitute: ΔH(reverse) = −(−890).",
+        "ΔH(reverse) = +890 kJ mol⁻¹.",
+        "Positive sign → endothermic.",
+        "Answer: ΔH = 890 kJ mol⁻¹ absorbed (i.e. +890 kJ mol⁻¹), endothermic."
+      ],
+      "durationInFrames": 1230,
+      "caption": "ΔH(reverse methane combustion) = +890 kJ mol⁻¹, endothermic.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 540,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Your turn. Methane combustion has delta H of minus eight hundred and ninety. What's delta H for the reverse reaction, and is it exo or endo? Pause and try. Reverse the equation, flip the sign — minus negative eight-ninety is plus eight-ninety kilojoules per mole. Positive, so endothermic. Note: it would take eight hundred and ninety kilojoules per mole to reverse a combustion — far more energy than any practical process supplies, which is why combustion only ever runs forward.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L9/quick-check.56e57d61407d.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Ask: is this the reverse of a reaction I already know? If yes, flip the sign.",
+      "points": [
+        "Photosynthesis and respiration are exact reverses of each other.",
+        "Hess's Law: a reverse reaction has the same |ΔH|, opposite sign.",
+        "Respiration ΔH = −2803 kJ mol⁻¹ → photosynthesis ΔH = +2803 kJ mol⁻¹.",
+        "Sunlight supplies the energy that respiration later releases.",
+        "Whenever a reaction is the reverse of a known one, you already have its ΔH."
+      ],
+      "durationInFrames": 1290,
+      "caption": "Reverse reactions share |ΔH| with opposite sign. One decision rule.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways. One: photosynthesis and respiration are exact reverses of each other. Two: Hess's Law says a reverse reaction has the same magnitude of delta H, but opposite sign. Three: respiration's minus two-eight-zero-three kilojoules per mole gives photosynthesis's plus two-eight-zero-three. Four: the sunlight that powers photosynthesis stores exactly the energy that respiration later releases. Five: whenever a reaction is the reverse of one you already know, you already have its delta H — just flip the sign. Decision rule: ask, is this the reverse of a reaction I know?",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L9/summary.d2e5517b1888.mp3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "title": "Hydrocarbons: Homologous Series & Physical Properties",
+  "subtitle": "Why chain length and shape decide boiling point and solubility",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "construct models, identify the functional group, and write structural and molecular formulae for homologous series of organic chemical compounds, up to C8 (ACSCH035)",
+    "conduct an investigation to compare the properties of organic chemical compounds within a homologous series, and explain these differences in terms of bonding (ACSCH035)",
+    "explain the properties within and between the homologous series of alkanes with reference to the intermolecular and intramolecular bonding present"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": ["CH12-14", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "How can hydrocarbons be classified based on their structure and reactivity?",
+  "lessonIntent": "Students can explain boiling point and solubility trends across hydrocarbons using dispersion forces, surface area and the disrupt-and-replace model.",
+  "examSkill": "Build the four-step boiling-point answer: name the IMF, identify the structural difference, link it to force strength, then conclude.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the physical properties of hydrocarbons and the bonding behind them. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Hydrocarbons: Homologous Series & Physical Properties (Year 12 Chemistry, Module 7, Lesson 3)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "From gas to wax, same bonds",
+      "body": "Methane boils at -162 degrees and escapes as a gas. Paraffin wax is the same kind of molecule, just longer, and it is solid.",
+      "callout": "What changes when you add more carbons?",
+      "durationInFrames": 690,
+      "caption": "Methane is a gas; long-chain paraffin wax is solid, despite identical bonding.",
+      "voiceover": {
+        "text": "OK, here's a comparison that runs through this whole lesson. Methane boils at minus one hundred and sixty-two degrees, so it escapes as a gas the moment it leaves a pipe. Paraffin wax is made of the same kind of molecule, just much longer chains, and it sits there as a solid at room temperature. Same type of bonding throughout, only carbon and hydrogen single bonds, yet one is a gas and the other a solid. So what actually changes when you add more carbons? The answer is the forces between molecules, and once you can explain that properly, you can predict whether any hydrocarbon is a gas, a liquid, or a solid, and rank their boiling points with confidence."
+      }
+    },
+    {
+      "id": "concept-alkane-reference",
+      "type": "concept",
+      "heading": "The first eight alkanes",
+      "body": "These are your reference points. The gas-to-liquid switch happens around pentane, the fifth member.",
+      "diagram": {
+        "type": "table",
+        "headers": ["Alkane", "Formula", "State (25C)", "BP (C)"],
+        "rows": [
+          ["Methane", "CH4", "Gas", "-162"],
+          ["Propane", "C3H8", "Gas", "-42"],
+          ["Butane", "C4H10", "Gas", "-1"],
+          ["Pentane", "C5H12", "Liquid", "36"],
+          ["Hexane", "C6H14", "Liquid", "69"],
+          ["Octane", "C8H18", "Liquid", "126"]
+        ]
+      },
+      "bullets": [
+        {"text": "Methane to butane (C1 to C4) are gases at room temperature."},
+        {"text": "Pentane onward (C5+) are liquids; boiling point climbs steadily."},
+        {"text": "All are saturated: only C-C and C-H single bonds, tetrahedral carbons."}
+      ],
+      "secondary": "Memorise the names, formulas, and the gas-to-liquid change around C5. They anchor every property prediction.",
+      "callout": "Boiling point rises smoothly down the series.",
+      "durationInFrames": 1080,
+      "caption": "C1-C4 are gases; C5 onward are liquids; BP rises with chain length.",
+      "voiceover": {
+        "text": "Let's set up the reference points you'll lean on all module, the first eight straight-chain alkanes. Methane, ethane, propane, and butane, the first four, are all gases at room temperature. From pentane onward, the fifth member, they're liquids, and the boiling point climbs steadily as the chain gets longer. Methane is minus one hundred and sixty-two, pentane is plus thirty-six, octane is one hundred and twenty-six. All of them are saturated, meaning only carbon carbon and carbon hydrogen single bonds, with every carbon tetrahedral. It's genuinely worth memorising these names, their formulas, and that gas to liquid switch around pentane, because they anchor every trend you'll be asked to predict from here on."
+      }
+    },
+    {
+      "id": "concept-boiling-point",
+      "type": "concept",
+      "heading": "Why boiling point rises with chain length",
+      "body": "Boiling separates molecules from each other, so the key is the strength of the forces between them, not the bonds inside.",
+      "bullets": [
+        {"text": "Alkanes are non-polar, so the only forces between molecules are dispersion forces."},
+        {"text": "Longer chains have more electrons and a larger surface area for contact."},
+        {"text": "More contact means more simultaneous dispersion attractions, so a higher BP."}
+      ],
+      "secondary": "Non-polar does not mean no forces. Dispersion forces are weak per contact, but they add up fast as molecules get bigger.",
+      "callout": "Boiling breaks forces between molecules, never the covalent bonds.",
+      "durationInFrames": 1110,
+      "caption": "Longer chain, more electrons, larger surface area, stronger dispersion forces, higher BP.",
+      "voiceover": {
+        "text": "Now the central idea, and a strong answer never stops at larger molecules boil higher. Let's do it properly. First, what breaks when something boils? The molecules separate from each other, so what matters is the force between molecules, not the strong covalent bonds inside them. Alkanes are non-polar, so the only force between them is the London dispersion force, which comes from momentary fluctuations in the electron cloud. Here's the link to chain length. A longer chain has more electrons and a bigger, flatter surface that can lie alongside its neighbours. That means more of these instantaneous attractions happening at once. More simultaneous dispersion forces need more energy to overcome, so the boiling point goes up. And just to be clear, non-polar doesn't mean no forces, it means dispersion only, and those add up quickly as molecules get larger."
+      }
+    },
+    {
+      "id": "formula-band6-structure",
+      "type": "concept",
+      "heading": "The four-step Band 6 answer",
+      "body": "Marker-ready structure for any \"why does X boil higher than Y\" question on hydrocarbons.",
+      "bullets": [
+        {"text": "1. Name the IMF: both are non-polar, so only dispersion forces act."},
+        {"text": "2. State the structural difference: which has the longer chain or larger surface area."},
+        {"text": "3. Link to force strength: more surface area means more dispersion contact."},
+        {"text": "4. Conclude: stronger forces need more energy, so the higher BP."}
+      ],
+      "secondary": "The marks live in the linking steps, two and three. Stating the IMF and the answer alone is a Band 4 response.",
+      "callout": "Name the force, the difference, the link, the conclusion.",
+      "durationInFrames": 1020,
+      "caption": "Four steps: IMF, structural difference, link to force strength, conclusion.",
+      "voiceover": {
+        "text": "Let's turn that into a structure you can reuse on any boiling point comparison. Four steps. Step one, name the intermolecular force. For hydrocarbons, both molecules are non-polar, so the only force present is dispersion. Step two, state the structural difference, which molecule has the longer chain, or the larger surface area. Step three, and this is where the marks are, link that difference to force strength. A larger surface area allows more simultaneous dispersion contacts between molecules. Step four, conclude. Stronger dispersion forces need more energy to overcome, so that molecule has the higher boiling point. If you only name the force and state the answer, that's a band four response. The linking steps, two and three, are what lift it to a band six."
+      }
+    },
+    {
+      "id": "concept-branching",
+      "type": "concept",
+      "heading": "Branching lowers boiling point",
+      "body": "Same formula, same mass, different shape. A compact branched isomer boils lower than its straight-chain twin.",
+      "image": "m7L3BranchingSurfaceArea",
+      "bullets": [
+        {"text": "Pentane (straight) boils at 36; 2-methylbutane at 28; 2,2-dimethylpropane at 10."},
+        {"text": "Branching makes the molecule compact, reducing contact surface area."},
+        {"text": "Less contact means weaker total dispersion forces, so a lower BP."}
+      ],
+      "secondary": "Never explain this with bond strength. The covalent bonds are identical in isomers; only the shape, and so the surface contact, changes.",
+      "callout": "Compact shape, less surface, weaker dispersion, lower BP.",
+      "durationInFrames": 1050,
+      "caption": "Branching reduces surface contact, so branched isomers boil lower.",
+      "voiceover": {
+        "text": "Here's a subtler case, where two molecules have the exact same formula and mass but different boiling points. Take the three isomers of C five H twelve. Straight chain pentane boils at thirty-six degrees, two-methylbutane at twenty-eight, and the highly branched two-comma-two-dimethylpropane at just ten. Same atoms, very different boiling points. The reason is shape. A straight chain can lie alongside its neighbours along a long surface, giving lots of dispersion contact. A branched molecule is compact, almost spherical, so it touches its neighbours over a much smaller area. Less contact means weaker total dispersion forces, and so a lower boiling point. One warning, never explain this with stronger or weaker bonds. The covalent bonds are identical in isomers, it's purely the surface contact that changes."
+      }
+    },
+    {
+      "id": "concept-solubility",
+      "type": "concept",
+      "heading": "Solubility: disrupt and replace",
+      "body": "Full-mark solubility answers name the forces broken and the forces formed, and judge whether the trade is favourable.",
+      "bullets": [
+        {"text": "Hydrocarbons are non-polar; water is held together by hydrogen bonds."},
+        {"text": "Dissolving in water would break H-bonds without replacing them with anything as strong."},
+        {"text": "In a non-polar solvent, dispersion forces are simply swapped for dispersion forces."}
+      ],
+      "secondary": "So hydrocarbons are insoluble in water but freely soluble in non-polar solvents like hexane. Like dissolves like is the shortcut; this is the reason.",
+      "callout": "Insoluble in water, soluble in non-polar solvents.",
+      "durationInFrames": 1050,
+      "caption": "Hydrocarbons can't replace water's H-bonds, so they dissolve only in non-polar solvents.",
+      "voiceover": {
+        "text": "Last property, solubility, and a full-mark answer goes beyond like dissolves like. Use the disrupt and replace model. Hydrocarbons are non-polar, with only dispersion forces. Water is strongly polar, held together by an extensive hydrogen bond network. For a hydrocarbon to dissolve in water, those water to water hydrogen bonds would have to be broken, but the hydrocarbon can only offer weak dispersion forces in return, nowhere near strong enough to replace them. So the energy trade is unfavourable, and the hydrocarbon stays insoluble. Now put that same hydrocarbon in a non-polar solvent like hexane. Here you're only swapping dispersion forces for dispersion forces, a fair trade, so it dissolves readily. That's why hydrocarbons are insoluble in water but freely soluble in non-polar solvents."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Rank by boiling point",
+      "question": "Order methane, propane, butane and heptane by increasing boiling point and explain.",
+      "coachNote": "All are straight-chain alkanes, so only chain length differs.",
+      "steps": [
+        "All four are non-polar alkanes, so only dispersion forces act between molecules",
+        "Boiling point rises with chain length: more electrons, larger surface area",
+        "Order by carbon count: methane (C1) < propane (C3) < butane (C4) < heptane (C7)",
+        "Longer chains give stronger dispersion forces, needing more energy to boil",
+        "Answer: methane < propane < butane < heptane ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "methane < propane < butane < heptane, by chain length.",
+      "voiceover": {
+        "text": "Let's apply the structure. Order methane, propane, butane, and heptane by increasing boiling point, and explain. Step one, all four are straight-chain alkanes, non-polar, so the only force between molecules is dispersion. Step two, boiling point rises with chain length, because a longer chain has more electrons and a larger surface area. Step three, so just order them by carbon count, methane with one carbon is lowest, then propane with three, then butane with four, then heptane with seven. Step four, link it, the longer chains have stronger dispersion forces and need more energy to separate into the gas phase. So the order is methane, then propane, then butane, then heptane. Notice the whole answer hangs off chain length, because nothing else differs between them."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Isomers with the same formula",
+      "question": "Pentane and 2,2-dimethylpropane are both C5H12. Why does pentane boil higher?",
+      "coachNote": "Same formula and mass, so the answer must be shape.",
+      "steps": [
+        "Same molecular formula and mass, so mass cannot explain the difference",
+        "Pentane is an extended straight chain; 2,2-dimethylpropane is compact",
+        "The straight chain offers more surface area for molecular contact",
+        "More contact means stronger dispersion forces between pentane molecules",
+        "Answer: pentane boils higher (36 vs 10) due to greater surface contact ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "Pentane boils higher than 2,2-dimethylpropane because its chain has more surface contact.",
+      "voiceover": {
+        "text": "Now the isomer case. Pentane and two-comma-two-dimethylpropane are both C five H twelve, so why does pentane boil higher? Step one, they have the same molecular formula and the same mass, so mass alone can't be the answer. Step two, look at the shapes, pentane is an extended straight chain, while two-comma-two-dimethylpropane is compact and nearly spherical. Step three, the straight chain offers far more surface area for contact with neighbouring molecules. Step four, more contact means stronger total dispersion forces between pentane molecules. So pentane boils higher, thirty-six degrees versus ten, purely because its shape gives more surface contact. The key move in this kind of question is to rule out mass first, then pin the difference on shape and surface area."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three property traps",
+      "body": "Trap 1: saying alkanes have no intermolecular forces. Non-polar still means dispersion forces, and those set the boiling point.",
+      "secondary": "Trap 2: explaining boiling point with bond strength inside the molecule. Boiling separates molecules, so it's about forces between them. Trap 3: claiming hydrocarbons are insoluble in everything. They are insoluble in water but very soluble in non-polar solvents.",
+      "mistakeTag": "Where hydrocarbon-property marks vanish",
+      "callout": "Dispersion always acts, boiling breaks IMFs, insoluble in water only.",
+      "durationInFrames": 1230,
+      "caption": "Dispersion always present; boiling breaks IMFs; insoluble in water, soluble in non-polar.",
+      "voiceover": {
+        "text": "Three traps. Trap one, writing that alkanes have no intermolecular forces because they're non-polar. Every molecule has dispersion forces, and for alkanes those forces are the entire reason they have a measurable boiling point at all. Trap two, explaining a boiling point difference using the strength of the bonds inside the molecule. Boiling pulls whole molecules apart, it doesn't break covalent bonds, so the answer is always about the forces between molecules. Trap three, saying hydrocarbons are insoluble in everything. They're insoluble in water, yes, but they're highly soluble in non-polar solvents like hexane, because there the dispersion forces are simply exchanged for dispersion forces. Get those three right and your property answers stay clean."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Which boils higher: hexane or decane? And is hexane soluble in water or in heptane?",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Both are non-polar alkanes → only dispersion forces act",
+        "Decane (C10) has a longer chain and larger surface area than hexane (C6)",
+        "So decane has stronger dispersion forces and the higher boiling point",
+        "Hexane is insoluble in water (can't replace H-bonds) but soluble in heptane (dispersion swap)",
+        "Answer: decane boils higher; hexane dissolves in heptane, not water ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "Decane boils higher than hexane; hexane dissolves in heptane, not water.",
+      "voiceover": {
+        "text": "Quick check, two parts. Which boils higher, hexane or decane, and is hexane soluble in water or in heptane? Pause and work it through. Right. Both hexane and decane are non-polar alkanes, so only dispersion forces act. Decane has ten carbons against hexane's six, so it has a longer chain and a larger surface area. That gives decane stronger dispersion forces, and so the higher boiling point. For the solubility, hexane is insoluble in water, because it can't replace water's hydrogen bonds with anything strong enough. But hexane mixes freely with heptane, because both are non-polar and you're just swapping dispersion forces for dispersion forces. So decane boils higher, and hexane dissolves in heptane, not in water."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Memorise C1-C8 alkanes; the gas-to-liquid switch is around pentane.",
+        "Boiling point rises with chain length: more electrons, more surface, stronger dispersion.",
+        "Use the four-step answer: IMF, structural difference, link, conclusion.",
+        "Branching lowers BP by reducing surface contact, not by changing bonds.",
+        "Hydrocarbons are insoluble in water but soluble in non-polar solvents."
+      ],
+      "finalPrompt": "Any property question: name the IMF, then link structure to force strength.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: alkane reference, BP trend, four-step answer, branching, solubility.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, know the first eight alkanes, and remember the gas to liquid switch happens around pentane. Second, boiling point rises with chain length, because longer chains have more electrons, more surface area, and so stronger dispersion forces. Third, use the four-step answer every time, name the intermolecular force, state the structural difference, link it to force strength, then conclude. Fourth, branching lowers boiling point by making the molecule compact and reducing surface contact, and never by changing the bonds. And fifth, hydrocarbons are insoluble in water but soluble in non-polar solvents, which the disrupt and replace model explains. Next lesson we zoom into the bonding and shapes that make unsaturated hydrocarbons so much more reactive. See you next lesson."
+      }
+    }
+  ]
+}

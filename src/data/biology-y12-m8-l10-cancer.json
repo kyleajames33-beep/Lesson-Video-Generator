@@ -1,0 +1,269 @@
+{
+  "title": "Cancer",
+  "subtitle": "Cell cycle, oncogenes, tumour suppressors and metastasis",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 10",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "investigate the causes and effects of non-infectious diseases in humans, including cancer (ACSBL114, ACSBL115)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Do non-infectious diseases cause more deaths than infectious diseases?",
+  "lessonIntent": "Students can explain cancer as the accumulation of mutations that disable cell-cycle control, and distinguish oncogenes from tumour suppressor genes.",
+  "examSkill": "Explain how oncogene activation and tumour suppressor loss cause uncontrolled division, and why metastasis, not tumour size, makes cancer lethal.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, cancer. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Cancer (Year 12 Biology, Module 8, Lesson 10)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A cancer cell is a normal cell with the brakes cut",
+      "body": "In 1982, a single mutated version of a normal gene was enough to turn a healthy cell cancerous. The seeds of cancer sit in every genome.",
+      "callout": "Cancer is your own genes, with their controls disabled.",
+      "image": "bioM8L10CellDivision",
+      "durationInFrames": 2160,
+      "caption": "Weinberg's 1982 ras discovery showed a mutated normal gene can transform a cell.",
+      "voiceover": {
+        "text": "In 1982, the biologist Robert Weinberg showed something that reshaped how we understand cancer. He found that a single mutated version of a perfectly normal human gene, called ras, was enough to transform a healthy bladder cell into a cancer cell. The implication was profound, a cancer cell is not an invader, it is one of your own cells, whose molecular control systems have been disabled by specific mutations. The seeds of cancer sit in every genome we carry. But here is the reassuring part, in a normal cell, division only happens when several independent conditions are all met, so cancer requires several different mutations, accumulating one by one, to disable each of those controls. Today we open up the cell cycle and its checkpoints, the two kinds of genes that go wrong, and why it is the spread of cancer, not the original lump, that does the real damage."
+      }
+    },
+    {
+      "id": "concept-cell-cycle",
+      "type": "concept",
+      "heading": "The cell cycle and its checkpoints",
+      "body": "Cell division is tightly controlled by checkpoints. Cancer is the accumulation of mutations that disable that control.",
+      "bullets": [
+        {
+          "text": "The cell cycle runs through ordered phases with checkpoints that must be passed."
+        },
+        {
+          "text": "Checkpoints halt division if growth signals are absent or the DNA is damaged."
+        },
+        {
+          "text": "Cancer needs several mutations in one cell lineage, not just a single one."
+        }
+      ],
+      "secondary": "This multi-hit requirement is why cancer takes years to decades to develop, and why it becomes more common with age.",
+      "callout": "Many brakes must fail together, not just one.",
+      "durationInFrames": 2130,
+      "caption": "Checkpoints control the cell cycle; cancer disables them through multiple mutations.",
+      "voiceover": {
+        "text": "So let's build the foundation, the cell cycle, the ordered sequence a cell goes through to divide. Critically, the cycle has checkpoints, control points the cell must pass before it can proceed. These checkpoints halt division if conditions are not right, for example if there are no growth signals to divide, or if the D N A is damaged and needs repair. Cancer is what happens when mutations disable this control system. And here is the single most important idea, cancer is not caused by one mutation, it requires the accumulation of several driver mutations, typically four to eight, in a single cell lineage over time. Each mutation gives that cell line a small growth advantage, and selection enriches for the cells with the most. This multi-hit requirement is exactly why cancer takes years, even decades, to develop, and why it becomes much more common as we age."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Proto-oncogene: a normal gene that promotes cell division; mutated, it becomes an oncogene."
+        },
+        {
+          "text": "Tumour suppressor gene: a gene that brakes division or triggers apoptosis, like p53."
+        },
+        {
+          "text": "Apoptosis: programmed cell death that removes damaged cells; cancer cells evade it."
+        },
+        {
+          "text": "Metastasis: the spread of cancer cells to distant tissues via blood or lymph."
+        }
+      ],
+      "callout": "Oncogenes are stuck accelerators. Tumour suppressors are the brakes.",
+      "durationInFrames": 2070,
+      "caption": "Proto-oncogene, tumour suppressor gene, apoptosis, metastasis.",
+      "voiceover": {
+        "text": "Let's pin down four terms. A proto-oncogene is a normal gene that promotes cell division, a useful gene in healthy cells, but when it mutates it becomes an oncogene, stuck in the on position. A tumour suppressor gene does the opposite, it brakes cell division or triggers cell death when something is wrong, and the most famous example is p fifty three. Apoptosis is programmed cell death, an orderly self-destruct that normally removes damaged or abnormal cells, and a hallmark of cancer cells is that they evade it. And metastasis is the spread of cancer cells from the original tumour to distant tissues, travelling through the blood or the lymphatic system. The analogy to hold, oncogenes are stuck accelerators driving division forward, while tumour suppressors are the brakes that should stop it, and cancer needs both the accelerator jammed on and the brakes cut."
+      }
+    },
+    {
+      "id": "concept-onco-suppressor",
+      "type": "concept",
+      "heading": "Two ways to lose control",
+      "body": "Oncogenes and tumour suppressors fail by opposite genetic logic, which explains inherited cancer risk.",
+      "bullets": [
+        {
+          "text": "Oncogenes: gain of function and dominant, so one mutated copy is enough."
+        },
+        {
+          "text": "Tumour suppressors: loss of function and recessive, so both copies must be lost."
+        },
+        {
+          "text": "Inheriting one faulty tumour suppressor copy gives a head start toward cancer."
+        }
+      ],
+      "secondary": "An oncogene problem is constant on-signalling, not overproduction. A RAS protein locked in its active state drives division whether or not growth signals are present.",
+      "callout": "One hit jams an accelerator; both hits are needed to cut a brake.",
+      "durationInFrames": 2160,
+      "caption": "Oncogenes: dominant, one hit. Tumour suppressors: recessive, two hits.",
+      "voiceover": {
+        "text": "Now the two ways a cell loses control, and they follow opposite genetic logic, a favourite exam point. Oncogenes act by gain of function, and they are dominant, meaning just one mutated copy is enough to drive excessive division, because that copy is now jammed in the on position. Tumour suppressors act by loss of function, and they are recessive, meaning both copies must be inactivated before the brake is gone, since one working copy can still apply it. This explains inherited cancer risk beautifully. If you inherit one already-faulty tumour suppressor copy, every cell starts with one brake already gone, so it only takes one more hit to lose control, which is why inherited cancer syndromes usually involve tumour suppressors. One more precision point, an oncogene problem is constant on-signalling, not overproduction, a RAS protein locked in its active state drives division whether or not growth signals are present."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Oncogene",
+          "Tumour suppressor"
+        ],
+        "rows": [
+          [
+            "Normal role",
+            "Promotes division",
+            "Brakes division"
+          ],
+          [
+            "Mutation type",
+            "Gain of function",
+            "Loss of function"
+          ],
+          [
+            "Genetic logic",
+            "Dominant (one hit)",
+            "Recessive (two hits)"
+          ],
+          [
+            "Example",
+            "RAS",
+            "p53"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-carcinogens-metastasis",
+      "type": "concept",
+      "heading": "Carcinogens and metastasis",
+      "body": "Carcinogens all converge on mutation, and it is metastasis, not size, that makes cancer deadly.",
+      "bullets": [
+        {
+          "text": "Carcinogens come in three types: chemical, physical, and biological, all causing mutation."
+        },
+        {
+          "text": "Benign tumours stay localised; malignant tumours invade and can metastasise."
+        },
+        {
+          "text": "Metastasis needs extra mutations to detach, travel, survive, and seed a new tumour."
+        }
+      ],
+      "secondary": "Metastasis is an active multi-step process, not a passive overflow. A large benign tumour never metastasises; it is the specific mutations that allow spread.",
+      "callout": "Spreading, not size, is what kills. Metastasis takes its own mutations.",
+      "durationInFrames": 2265,
+      "caption": "Three carcinogen types converge on mutation; metastasis makes cancer lethal.",
+      "voiceover": {
+        "text": "Now two final pieces, what causes the mutations, and what makes cancer lethal. Carcinogens come in three types, all converging on the same endpoint, mutation. Chemical carcinogens, like the compounds in tobacco smoke, form D N A adducts. Physical carcinogens, like U V radiation, cause thymine dimers, and asbestos causes inflammation. And biological carcinogens, like the virus H P V, interfere with the cell-cycle control proteins directly. All three end up activating oncogenes or inactivating tumour suppressors. Now the lethal part, the difference between benign and malignant. A benign tumour stays localised and does not spread. A malignant tumour invades surrounding tissue and can metastasise, spreading to distant organs. And here is the crucial idea, metastasis is what kills most cancer patients, and it is an active multi-step process, the cell needs extra mutations to detach, enter the bloodstream, survive the journey, and seed a brand new tumour elsewhere. It is spreading, not size, that does the damage."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "The role of p53",
+      "question": "Explain what p53 normally does, and what happens when both copies of the TP53 gene are mutated in a cell.",
+      "coachNote": "p53 is a tumour suppressor, so apply the two-hit logic.",
+      "steps": [
+        "p53 normally detects DNA damage at a cell-cycle checkpoint.",
+        "It halts the cycle so the damage can be repaired, or triggers apoptosis if it cannot.",
+        "TP53 is a tumour suppressor, so one working copy can still perform this role.",
+        "If both copies are mutated, the checkpoint is lost, and damaged cells divide unchecked.",
+        "Answer: losing both p53 copies removes a key brake, letting mutated cells proliferate ✓"
+      ],
+      "durationInFrames": 2385,
+      "caption": "p53 halts the cycle or triggers apoptosis; losing both copies removes the brake.",
+      "voiceover": {
+        "text": "Let's work through p fifty three, the most important tumour suppressor, often called the guardian of the genome. First, what it normally does. p fifty three sits at a cell-cycle checkpoint and detects D N A damage. When it finds damage, it halts the cell cycle to give time for repair, and if the damage is too severe to fix, it triggers apoptosis, programmed cell death, to remove the dangerous cell. Now apply the two-hit logic, because T P fifty three is a tumour suppressor. One working copy can still perform this guardian role, so a single mutation is not enough. But if both copies are inactivated, the checkpoint is gone, p fifty three can no longer halt the cycle or trigger apoptosis. So damaged cells that should have been stopped now divide unchecked, accumulating still more mutations. So losing both p fifty three copies removes one of the most important brakes in the cell, which is why it is mutated in so many human cancers."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Benign, malignant, metastasis",
+      "question": "Distinguish a benign from a malignant tumour, and explain why a large benign tumour does not metastasise while a smaller malignant one can.",
+      "coachNote": "Make spread depend on specific mutations, not on size.",
+      "steps": [
+        "A benign tumour is localised and encapsulated, and does not invade or spread.",
+        "A malignant tumour invades surrounding tissue and can spread to distant sites.",
+        "Metastasis requires specific mutations: loss of cell adhesion, proteases to break through tissue, and survival in circulation.",
+        "A benign tumour lacks these mutations, so however large it grows, it cannot metastasise.",
+        "Answer: spread depends on acquiring metastatic mutations, not on tumour size ✓"
+      ],
+      "durationInFrames": 2160,
+      "caption": "Metastasis depends on specific mutations, not tumour size.",
+      "voiceover": {
+        "text": "Now distinguish benign from malignant, and tackle a question students get wrong, why a large benign tumour does not spread but a smaller malignant one can. First the distinction. A benign tumour is localised and usually encapsulated, it grows in one place but does not invade surrounding tissue or spread. A malignant tumour invades the surrounding tissue and can spread to distant sites in the body. Now the key, why does size not determine spread? Because metastasis requires specific additional mutations, the cell must lose its adhesion molecules so it can detach, it must make proteases to break through surrounding tissue, and it must be able to survive travelling in the bloodstream. A benign tumour simply has not acquired those mutations, so no matter how large it grows, it cannot metastasise. The answer the marker wants, spread depends on acquiring the metastatic mutations, not on the tumour reaching a certain size."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking cancer is caused by a single mutation. It requires several driver mutations accumulating in one cell lineage.",
+      "secondary": "Trap 2: saying oncogenes cause cancer by making too much protein. The protein is usually constitutively active, stuck on, not overproduced. Trap 3: thinking metastasis happens because a tumour grows too large. Metastasis needs specific extra mutations; a large benign tumour never spreads.",
+      "mistakeTag": "Where cancer marks vanish",
+      "callout": "Cancer is many mutations. Oncogenes are stuck on. Metastasis is mutations, not size.",
+      "durationInFrames": 2130,
+      "caption": "Cancer is multi-hit; oncogenes are stuck on; metastasis is mutations, not size.",
+      "voiceover": {
+        "text": "Three traps that cost marks. Trap one, thinking cancer is caused by a single mutation. It is not. Cancer requires the accumulation of several driver mutations, typically four to eight, in a single cell lineage over time, which is why it develops slowly and mostly affects older people. Trap two, saying oncogenes cause cancer by making too much protein. Usually wrong. An oncogene mutation typically produces a protein that is constitutively active, permanently switched on, regardless of growth signals. A single amino acid change in RAS can lock it in its active state. The problem is unregulated activity, not quantity. Trap three, thinking metastasis happens because the tumour grows too large. Metastasis is an active multi-step process that needs specific additional mutations, in adhesion molecules, in tissue-breaking enzymes, in survival pathways. Size alone does nothing, a large benign tumour never metastasises, because it has not acquired those mutations."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A person inherits one faulty copy of a tumour suppressor gene. Explain why this raises their cancer risk, even though one faulty copy alone does not cause cancer.",
+      "pausePrompt": "Pause and apply the two-hit logic.",
+      "answerSteps": [
+        "A tumour suppressor is recessive, so both copies must be lost for the brake to fail.",
+        "Inheriting one faulty copy means every cell already has one brake gone from birth.",
+        "Only a single further mutation is then needed to knock out the second copy.",
+        "That is far more likely to occur than two separate hits in the same cell.",
+        "Answer: the inherited first hit gives a head start, so cancer is much more likely ✓"
+      ],
+      "durationInFrames": 2340,
+      "caption": "An inherited first hit means only one more mutation is needed.",
+      "voiceover": {
+        "text": "Quick check. A person inherits one faulty copy of a tumour suppressor gene. Explain why this raises their cancer risk, even though one faulty copy alone does not cause cancer. Pause and apply the two-hit logic. Right, let's check it. A tumour suppressor gene is recessive, so both copies must be inactivated before the brake fails, one working copy is enough to keep applying it. Now, if a person inherits one faulty copy, then every cell in their body already has one brake gone, right from birth. That means only one further mutation is needed, knocking out the remaining good copy, to lose control in any given cell. And a single further hit is far more likely than two separate hits arising in the same cell by chance. So the answer, the inherited first hit gives every cell a head start toward losing both copies, which makes cancer much more likely, even though that one inherited copy does not cause cancer by itself."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Cancer is the accumulation of several mutations that disable cell-cycle control.",
+        "Oncogenes are dominant gain-of-function; tumour suppressors are recessive loss-of-function.",
+        "An oncogene is stuck on; a tumour suppressor needs both copies lost to fail.",
+        "Carcinogens (chemical, physical, biological) all converge on causing mutations.",
+        "Metastasis, not tumour size, kills, and it needs its own specific mutations."
+      ],
+      "finalPrompt": "Explaining cancer? Accelerator stuck on plus brakes cut, built up over many mutations.",
+      "durationInFrames": 1920,
+      "caption": "Five takeaways: multi-hit, oncogene vs suppressor logic, carcinogens, metastasis.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, cancer is the accumulation of several mutations that together disable cell-cycle control, the multi-hit model. Second, the two gene types follow opposite logic, oncogenes are dominant gain-of-function, tumour suppressors are recessive loss-of-function. Third, that means an oncogene is jammed on by a single hit, while a tumour suppressor needs both copies lost to fail. Fourth, carcinogens come in three types, chemical, physical, and biological, and they all converge on causing mutations. And fifth, the lethal idea, it is metastasis, not tumour size, that kills, and metastasis requires its own specific set of mutations. Whenever you explain cancer, think accelerator stuck on plus brakes cut, built up over many mutations. Next lesson is a consolidation, putting all of these disease causes together. See you there."
+      }
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "title": "Somatic vs Germ-Line; Coding vs Non-Coding",
+  "subtitle": "Two dimensions that decide a mutation's significance",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 5",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6 — Genetic Change",
+  "syllabusDotPoints": [
+    "assess the significance of 'coding' and 'non-coding' DNA segments in the process of mutation (ACSBL078)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-13",
+    "BIO11/12-4",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does mutation introduce new alleles into a population?",
+  "lessonIntent": "Students can judge a mutation's significance using two dimensions: inheritability (somatic vs germ-line) and functional location (coding vs non-coding).",
+  "examSkill": "Classify a mutation by inheritance relevance and explain why a non-coding mutation can still be significant.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, somatic versus germ-line, and coding versus non-coding. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Somatic vs Germ-Line; Coding vs Non-Coding DNA (Year 12 Biology, Module 6, Lesson 5)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same gene, different consequence",
+      "body": "An inherited BRCA1 mutation sits in every cell, including eggs. The same mutation arising in one breast cell affects only that person.",
+      "callout": "Why does it matter so much whether a mutation is in a body cell or a gamete?",
+      "image": "bioM6L5SomaticGermline",
+      "durationInFrames": 690,
+      "caption": "Germ-line BRCA1 mutations are heritable; a somatic one is not.",
+      "voiceover": {
+        "text": "In nineteen ninety, Mary-Claire King mapped the BRCA one gene to chromosome seventeen, a breakthrough in understanding inherited breast cancer risk. A woman carrying a BRCA one germline mutation has roughly a seventy percent lifetime risk of breast cancer, because that mutation is present in every cell of her body, including her eggs, having been inherited from a parent. When Angelina Jolie revealed her preventive surgery in twenty thirteen, BRCA testing jumped sixty four percent in weeks. But here's the contrast that drives today's lesson. If that very same BRCA one mutation instead arose in just one breast cell later in life, it would affect only her, and could never be passed to her children. So why does it matter so much whether a mutation lands in a body cell or in a gamete?"
+      }
+    },
+    {
+      "id": "concept-somatic-germline",
+      "type": "concept",
+      "heading": "Somatic stays; germ-line is heritable",
+      "body": "The first dimension of significance is inheritability: whether the mutation can reach the next generation.",
+      "bullets": [
+        {"text": "Somatic mutation: occurs in a body cell, affects the individual, not normally inherited."},
+        {"text": "Germ-line mutation: occurs in gametes or their cell line, so it can be inherited."},
+        {"text": "Only germ-line mutations can enter the population gene pool."}
+      ],
+      "secondary": "A somatic mutation can still be serious for the individual, especially in cancer. But it is not population-relevant unless the germ line is involved.",
+      "callout": "Body cell affects you; gamete affects the future.",
+      "durationInFrames": 1080,
+      "caption": "Somatic mutations affect the individual; germ-line mutations can be inherited.",
+      "voiceover": {
+        "text": "The first dimension of significance is inheritability, and it comes down to which cell lineage carries the mutation. A somatic mutation occurs in a body cell, so it can affect the tissues of that individual, but it is not normally inherited through sexual reproduction. A germ-line mutation, by contrast, occurs in a gamete, or in the cell line that produces gametes, so it can be passed on to offspring. And that's the crucial difference, only germ-line mutations can enter the population gene pool and affect future generations. Now don't dismiss somatic mutations as unimportant, they can be extremely serious for the individual, many cancers begin with somatic mutations, and a somatic change early in development can spread through a whole tissue. But in standard inheritance terms, a somatic mutation stays with you, while a germ-line mutation reaches into the future."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Somatic mutation: a mutation in a body cell; affects the individual, not normally inherited."},
+        {"text": "Germ-line mutation: a mutation in a gamete or gamete-producing cell; can be inherited."},
+        {"text": "Coding DNA: sequence that contributes to the amino acid sequence of a protein."},
+        {"text": "Non-coding DNA: sequence not translated, but often important in regulation and timing."},
+        {"text": "Regulation: control of when, where and how strongly a gene is expressed."},
+        {"text": "Population relevance: whether a mutation can enter the gene pool and affect future generations."}
+      ],
+      "callout": "Two dimensions: inheritability and functional location.",
+      "durationInFrames": 1170,
+      "caption": "Somatic, germ-line, coding, non-coding, regulation, population relevance.",
+      "voiceover": {
+        "text": "Let's pin down the vocabulary, six terms across the two dimensions of this lesson. On inheritability, a somatic mutation is one in a body cell, which affects the individual but is not normally inherited, while a germ-line mutation is one in a gamete or its cell line, which can be inherited. On functional location, coding DNA is the sequence that contributes to the amino acid sequence of a protein, while non-coding DNA is sequence that isn't translated into protein, but is often important in regulation, timing, and overall genome function. Regulation itself means the control of when, where, and how strongly a gene is expressed. And population relevance is the question of whether a mutation can enter the gene pool and affect future generations. Hold those two dimensions in mind, inheritability and functional location, because a complete answer addresses both."
+      }
+    },
+    {
+      "id": "concept-coding",
+      "type": "concept",
+      "heading": "Coding mutations can change the protein",
+      "body": "The second dimension is functional location. Mutations in coding DNA can change codons and therefore the amino acid sequence.",
+      "bullets": [
+        {"text": "Coding mutations can alter protein folding, active-site shape or stability."},
+        {"text": "The logic builds straight from point mutations: codon change to amino acid change."},
+        {"text": "But not every coding mutation is severe; it may be silent, missense, nonsense or frameshift."}
+      ],
+      "secondary": "Coding DNA is important, but it is not the whole story. The exact protein consequence still depends on what sequence change occurred and where.",
+      "callout": "Coding DNA matters, but it isn't the whole picture.",
+      "durationInFrames": 990,
+      "caption": "Coding mutations can alter the protein, but not all are severe.",
+      "voiceover": {
+        "text": "The second dimension is functional location, where in the genome the mutation sits. Mutations in coding DNA can change codons, and therefore alter the amino acid sequence of a protein. That can affect how the protein folds, the shape of its active site, its ability to transport or bind, or its structural stability. This logic builds directly on the point-mutation lesson, a codon change leads to an amino acid change leads to a protein change. But here's the balance you need to strike. Not every coding mutation is severe. A coding-region mutation might be silent, missense, nonsense or frameshift, and the actual protein consequence depends on exactly what changed and where. So coding DNA is genuinely important, but it is not the whole story, which brings us to the part students most often get wrong, non-coding DNA."
+      }
+    },
+    {
+      "id": "concept-noncoding",
+      "type": "concept",
+      "heading": "Non-coding mutations can still matter",
+      "body": "Non-coding DNA does not set amino acid sequence directly, but that does not make a mutation there irrelevant.",
+      "bullets": [
+        {"text": "Some non-coding regions regulate when, where and how strongly a gene is expressed."},
+        {"text": "A mutation in a promoter, enhancer or splice site can change the phenotype."},
+        {"text": "It changes expression rather than the protein sequence itself."}
+      ],
+      "secondary": "The careful HSC position: some non-coding mutations have little effect, but it is wrong to claim non-coding DNA is always unimportant.",
+      "callout": "No amino acid change can still mean a phenotype change.",
+      "durationInFrames": 1020,
+      "caption": "Non-coding mutations can alter gene regulation and the phenotype.",
+      "voiceover": {
+        "text": "Now the idea examiners love to test. Non-coding DNA does not normally determine amino acid sequence directly, but that absolutely does not make it irrelevant. Some non-coding regions do critical regulatory work, they help control when a gene is switched on, where in the body it's expressed, how much transcript gets made, and how the RNA is processed. So a mutation in a promoter, an enhancer, or a splice site can genuinely change the phenotype, not by altering the protein sequence, but by altering gene expression. A splice-site mutation, for instance, can cause exon skipping and produce an abnormal protein even though the coding sequence itself wasn't touched. The careful HSC position is balanced, yes, some non-coding mutations have little effect, but it is simply wrong to claim that non-coding DNA is always biologically unimportant."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "DNA region",
+          "How a mutation matters",
+          "Main consequence"
+        ],
+        "rows": [
+          [
+            "Coding DNA",
+            "Codon sequence changes",
+            "Different or shortened protein"
+          ],
+          [
+            "Non-coding regulatory DNA",
+            "Switches or controls altered",
+            "Changed timing, amount or location of expression"
+          ],
+          [
+            "Other non-coding DNA",
+            "May have little effect",
+            "Ranges from neutral to significant"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The big traps",
+      "body": "Trap 1: thinking any mutation in a body cell is passed to offspring. Only germ-line mutations are inherited; somatic ones, including many cancers, are not.",
+      "secondary": "Trap 2: claiming non-coding DNA mutations have no consequences. Promoters, enhancers and splice sites are non-coding and can change expression. Trap 3: answering only one dimension. A full answer covers inheritability and functional location.",
+      "mistakeTag": "Where significance marks vanish",
+      "callout": "Two dimensions, both required.",
+      "durationInFrames": 1020,
+      "caption": "Somatic is not inherited; non-coding is not irrelevant; answer both dimensions.",
+      "voiceover": {
+        "text": "Three traps that cost marks. Trap one, thinking that any mutation in a body cell gets passed to offspring. It doesn't. Only germ-line mutations, in the cells that make eggs or sperm, can be inherited. Somatic mutations may cause disease in the individual, including many cancers, but they are not transmitted to the next generation. Trap two, claiming that non-coding DNA mutations have no consequences. Non-coding DNA includes promoters, enhancers, splice sites, and regulatory RNA genes, and mutations in those can change gene expression levels, timing, and tissue specificity, sometimes with serious effects. And trap three, the subtle one, answering only one dimension. If a question asks about significance, a full-mark answer addresses both inheritability, somatic versus germ-line, and functional significance, coding versus regulatory. Cover both and you've got the whole picture."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Explain why a UV-induced skin-cell mutation and a mutation in a gamete have different significance for long-term genetic change in a population.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The skin-cell mutation is somatic, so it may affect the individual, for example cancer.",
+        "A somatic mutation is not normally inherited by offspring.",
+        "The gamete mutation is germ-line, so it can be passed to the next generation.",
+        "A germ-line mutation can enter the gene pool and contribute to long-term genetic change.",
+        "Answer: the gamete mutation is population-relevant; the somatic one usually is not, even if similar at DNA level."
+      ],
+      "durationInFrames": 1080,
+      "caption": "Germ-line mutations are population-relevant; somatic ones usually are not.",
+      "voiceover": {
+        "text": "Quick check. Explain why a UV-induced skin-cell mutation and a mutation in a gamete have different significance for long-term genetic change in a population. Pause and reason it through. Right. Start with the skin-cell mutation. UV acts on a body cell, so this is a somatic mutation. It may affect the individual, for example by contributing to skin cancer, but a somatic mutation is not normally inherited by that person's offspring. Now the gamete mutation. A mutation in an egg or sperm cell is a germ-line mutation, and that can be passed on to the next generation. Because it can be inherited, it can enter the population gene pool and contribute to long-term genetic change. So even if the two mutations were identical at the DNA level, the gamete mutation is population-relevant while the somatic one usually is not. Inheritance depends entirely on which cell lineage carries it."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Somatic mutations affect the individual; germ-line mutations can be inherited.",
+        "Only germ-line mutations are population-relevant.",
+        "Coding mutations can alter the protein, but not all are severe.",
+        "Non-coding mutations can still matter by changing gene regulation.",
+        "Significance has two dimensions: inheritability and functional location."
+      ],
+      "finalPrompt": "Judging significance? Always check both: heritable or not, coding or regulatory.",
+      "durationInFrames": 1020,
+      "caption": "Five takeaways: somatic vs germ-line, coding vs non-coding, two dimensions.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, somatic mutations affect the individual, while germ-line mutations can be inherited by offspring. Second, only germ-line mutations are population-relevant, because only they can enter the gene pool. Third, coding mutations can alter the protein directly, but not all of them are severe, they may be silent, missense, nonsense or frameshift. Fourth, non-coding mutations can still matter, by changing gene regulation rather than the protein sequence. And fifth, the headline, significance has two independent dimensions, inheritability and functional location, and a complete answer addresses both. So whenever you judge a mutation's significance, always check both, is it heritable or not, and is it coding or regulatory. See you next lesson."
+      }
+    }
+  ]
+}

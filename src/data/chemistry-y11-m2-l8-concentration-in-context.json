@@ -1,0 +1,190 @@
+{
+  "title": "Concentration in Context",
+  "subtitle": "Purity, parts per million, and real-world data",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 8",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "calculate the concentration of solutions and apply concentration to real contexts including purity and parts per million (ppm)"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-9", "CH11/12-4", "CH11/12-6"],
+  "inquiryQuestion": "How are chemicals in solutions measured?",
+  "lessonIntent": "Students can apply concentration calculations to real contexts: correcting for sample purity and converting between ppm, g L⁻¹, and mol L⁻¹.",
+  "examSkill": "Apply a purity factor before converting mass to moles; convert ppm (mg L⁻¹) to mol L⁻¹ by dividing by molar mass.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, concentration in context, purity and parts per million. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Concentration in Context (Year 11 Chemistry, Module 2, Lesson 8)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The maths is easy. The wrapping isn't.",
+      "body": "You can ace every calculation and still drop marks when the numbers are buried in a real scenario.",
+      "callout": "This lesson is about reading the context, not new formulas.",
+      "durationInFrames": 690,
+      "caption": "Same concentration maths, dressed up in real-world purity and ppm problems.",
+      "voiceover": {
+        "text": "OK, here's a hard truth. You can do every concentration calculation perfectly on paper and still lose marks in the exam. Why? Because the numbers come wrapped in a real-world story you have to decode first. Impure chemicals, pollutant limits in drinking water, parts per million. There's no new formula today. The skill is stripping away the context, spotting which numbers actually matter, and feeding them into the tools you already have."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Purity and trace amounts",
+      "body": "Real chemicals aren't 100% pure, and real pollutants are measured in tiny trace units.",
+      "image": "l8PurityPpm",
+      "bullets": [
+        {"text": "Purity: only part of a weighed sample is the actual chemical."},
+        {"text": "Parts per million, ppm: one milligram of solute per litre."},
+        {"text": "Parts per billion, ppb: one microgram per litre, for tiny traces."}
+      ],
+      "secondary": "ppm and mg per litre mean the same thing in dilute water solutions. Both convert to mol L⁻¹ by dividing by molar mass.",
+      "callout": "Purity shrinks the useful mass. ppm just scales the units.",
+      "durationInFrames": 1110,
+      "caption": "Purity reduces usable mass; ppm and ppb measure trace concentrations.",
+      "voiceover": {
+        "text": "Two real-world ideas drive this lesson. First, purity. A bottle of sodium hydroxide labelled ninety-six percent pure means only ninety-six percent of what you weigh is actually sodium hydroxide. The rest is impurity, often absorbed water. So before any mole calculation, you scale the mass down to the part that's real. Second, trace amounts. Pollutants in water are far too dilute for moles per litre to be friendly, so we use parts per million, where one ppm is one milligram of solute per litre. For even tinier traces we use parts per billion, one microgram per litre. The useful fact, ppm and milligrams per litre are the same thing in dilute water, and both convert to moles per litre by dividing by the molar mass."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Purity: the percentage of a sample that is the actual substance."},
+        {"text": "Parts per million (ppm): milligrams of solute per litre of solution."},
+        {"text": "Parts per billion (ppb): micrograms of solute per litre."},
+        {"text": "Safe limit: a regulated maximum concentration, e.g. fluoride ≤ 1.5 mg L⁻¹."}
+      ],
+      "callout": "ppm in dilute water = mg L⁻¹. Same number, different name.",
+      "durationInFrames": 930,
+      "caption": "Purity, ppm, ppb, and regulatory safe limits.",
+      "voiceover": {
+        "text": "Quick vocabulary. Purity is the percentage of your sample that's the actual substance you want. Parts per million, ppm, is milligrams of solute per litre of solution. Parts per billion, ppb, is micrograms per litre, for even smaller traces. And a safe limit is a regulated maximum, like fluoride at or below one-point-five milligrams per litre in drinking water. The one to remember, in dilute water solutions, ppm and milligrams per litre are the same number, just a different name."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The tools, reused",
+      "body": "No new formula. You combine purity with the tools from earlier lessons.",
+      "bullets": [
+        {"text": "Apply purity: real mass = weighed mass × purity fraction."},
+        {"text": "Mass to moles: n = m ÷ M, as always."},
+        {"text": "ppm to mol L⁻¹: divide mg L⁻¹ by molar mass, then by 1000."}
+      ],
+      "secondary": "Purity is a multiply step. Going from impure mass needed back up uses divide. Track the direction carefully.",
+      "callout": "Decide first: am I scaling mass down, or working backwards up?",
+      "durationInFrames": 1020,
+      "caption": "Combine purity factor with n = m ÷ M and c = n ÷ V.",
+      "voiceover": {
+        "text": "Here's the good news. There's no new formula to memorise. You're reusing n equals m over capital M, and c equals n over V, from the last two lessons. The only new move is purity. To find the real mass of substance in an impure sample, multiply the weighed mass by the purity fraction. Ninety-six percent pure means multiply by nought-point-nine-six. But watch the direction. If a question asks what mass of impure solid you need to weigh out, you work backwards, and that becomes a divide. So before you touch the numbers, decide which way you're going. Am I scaling a known mass down, or working backwards to find how much impure solid to weigh? Get the direction right and the rest is just arithmetic."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Working with purity",
+      "question": "5.00 g of 96.0% pure NaOH is dissolved to make 500 mL. Find the actual concentration. (M = 39.997)",
+      "coachNote": "Scale the mass by purity before finding moles.",
+      "steps": [
+        "Real mass = 5.00 × 0.960 = 4.80 g NaOH",
+        "n = m ÷ M = 4.80 ÷ 39.997 = 0.120 mol",
+        "Convert: V = 500 ÷ 1000 = 0.500 L",
+        "c = n ÷ V = 0.120 ÷ 0.500",
+        "Answer: c = 0.240 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "96% pure: only 4.80 g is NaOH, giving 0.240 mol L⁻¹.",
+      "voiceover": {
+        "text": "Let's work with purity. Five grams of sodium hydroxide that's ninety-six percent pure is dissolved to make five hundred millilitres of solution. Find the actual concentration. Step one, and this is the step that's easy to skip, scale the mass by purity. Five times nought-point-nine-six is four-point-eight grams of real sodium hydroxide. The other nought-point-two grams is impurity, and it doesn't count. Step two, convert that real mass to moles. Four-point-eight over thirty-nine-point-nine-nine-seven is nought-point-one-two-zero moles. Step three, the volume is nought-point-five litres. Step four, concentration equals moles over volume. Nought-point-one-two over nought-point-five is nought-point-two-four moles per litre. If you'd used the full five grams, your answer would have been too high. Purity first, always."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "ppm in drinking water",
+      "question": "A water sample contains 0.0500 g L⁻¹ of nitrate (NO₃⁻). Is it under the WHO limit of 8.06 × 10⁻³ mol L⁻¹? (N 14.007, O 15.999)",
+      "coachNote": "Convert g L⁻¹ to mol L⁻¹, then compare.",
+      "steps": [
+        "M(NO₃⁻) = 14.007 + 3(15.999) = 62.00 g mol⁻¹",
+        "c = (g L⁻¹) ÷ M = 0.0500 ÷ 62.00",
+        "c = 8.06 × 10⁻⁴ mol L⁻¹",
+        "Compare: 8.06 × 10⁻⁴ vs limit 8.06 × 10⁻³",
+        "Answer: well under the limit (10× lower) ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "0.0500 g L⁻¹ nitrate = 8.06 × 10⁻⁴ mol L⁻¹, ten times under the WHO limit.",
+      "voiceover": {
+        "text": "Now a real context. A water sample contains nought-point-zero-five grams per litre of nitrate ions. Is it under the World Health Organisation safe limit of eight-point-zero-six times ten to the minus three moles per litre? First, recognise that grams per litre is a concentration. To compare with the limit, convert it to moles per litre. Step one, molar mass of the nitrate ion. Nitrogen plus three oxygens, sixty-two grams per mole. Step two, divide the grams per litre by the molar mass. Nought-point-zero-five over sixty-two is eight-point-zero-six times ten to the minus four moles per litre. Step three, compare. Our value is ten to the minus four, the limit is ten to the minus three. So the sample is ten times below the limit. Safe to drink. The skill was recognising you had to convert before you could compare."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: forgetting purity entirely and using the full weighed mass.",
+      "secondary": "Trap 2: dividing by the purity when you should multiply, or the reverse. Decide the direction first. Trap 3: not recognising g L⁻¹ or ppm as concentrations you can convert.",
+      "mistakeTag": "Where context questions bite",
+      "callout": "Purity direction, and remember g L⁻¹ and ppm are concentrations.",
+      "durationInFrames": 1230,
+      "caption": "Apply purity, get the multiply/divide direction right, and recognise g L⁻¹ as concentration.",
+      "voiceover": {
+        "text": "Three traps to watch. Trap one, forgetting purity completely and shoving the full weighed mass into the calculation. If a sample is impure, only part of it counts. Trap two, getting the purity direction wrong, dividing when you should multiply or the other way round. Scaling a known impure mass down to the real substance is a multiply. Working backwards to find how much impure solid to weigh is a divide. Decide which way you're going before you touch the calculator. Trap three, not recognising that grams per litre, milligrams per litre, and ppm are all concentrations you can convert. The moment you see those units, you know a division by molar mass is coming."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "What mass of 95.0% pure NaOH must be weighed to make 250 mL of 0.200 mol L⁻¹ solution? (M = 39.997)",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "n needed = c × V = 0.200 × 0.250 = 0.0500 mol",
+        "Pure mass = n × M = 0.0500 × 39.997 = 2.00 g",
+        "Adjust for purity (work backwards): ÷ 0.950",
+        "Impure mass = 2.00 ÷ 0.950",
+        "Answer: 2.11 g of impure NaOH ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Need 2.00 g pure NaOH, so weigh 2.00 ÷ 0.95 = 2.11 g impure.",
+      "voiceover": {
+        "text": "Quick check, and this one runs backwards. What mass of ninety-five percent pure sodium hydroxide must you weigh out to make two hundred and fifty millilitres of a nought-point-two mole per litre solution? Pause and work it through. Right, let's check it. Step one, how many moles do you actually need? Concentration times volume. Nought-point-two times nought-point-two-five is nought-point-zero-five moles. Step two, the mass of pure sodium hydroxide for that. Nought-point-zero-five times forty is two grams. Step three, here's the backwards bit. You only have ninety-five percent pure solid, so you need more of it. Divide by nought-point-nine-five. Two over nought-point-nine-five is two-point-one-one grams. So you weigh out two-point-one-one grams of the impure solid. Going backwards means divide by purity, not multiply."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "No new formula. You reuse n = m ÷ M and c = n ÷ V.",
+        "Apply purity before converting mass to moles.",
+        "Scaling a mass down multiplies; working backwards divides.",
+        "ppm = mg L⁻¹ in dilute water; convert to mol L⁻¹ via molar mass.",
+        "g L⁻¹, mg L⁻¹, and ppm are all concentrations you can convert."
+      ],
+      "finalPrompt": "Impure sample? Sort out the purity step before anything else.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: purity direction, ppm conversions, reusing the core tools.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, there's no new formula here. You reuse n equals m over M, and c equals n over V. Second, apply purity before converting mass to moles, never after. Third, scaling a known mass down to the real substance is a multiply, but working backwards to find how much impure solid to weigh is a divide. Fourth, in dilute water, parts per million equals milligrams per litre, and you convert to moles per litre by dividing by the molar mass. And fifth, the moment you see grams per litre, milligrams per litre, or ppm, recognise them as concentrations. Decode the context, and the maths is the easy part. See you next lesson."
+      }
+    }
+  ]
+}

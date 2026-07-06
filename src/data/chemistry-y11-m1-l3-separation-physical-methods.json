@@ -1,0 +1,204 @@
+{
+  "title": "Separation Techniques — Physical Methods",
+  "subtitle": "Filtration and crystallisation",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "explore homogeneous mixtures and heterogeneous mixtures through practical investigations:"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-8", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-7"],
+  "inquiryQuestion": "How do the properties of substances help us to classify and separate them?",
+  "lessonIntent": "Students can choose between filtration and crystallisation based on whether a solid is undissolved or dissolved, and describe each procedure.",
+  "examSkill": "Match the technique to the property that differs: particle size → filtration; solubility-temperature change → crystallisation.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, separation by filtration and crystallisation. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Separation Techniques — Physical Methods (Year 11 Chemistry, Module 1, Lesson 3)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two beakers, one filter",
+      "body": "Pour sand in water and salt in water both through filter paper. Only one leaves a solid behind. Why?",
+      "image": "m1L3FiltrationFunnel",
+      "callout": "Dissolved or undissolved? That answers everything.",
+      "durationInFrames": 660,
+      "caption": "Filtration traps insoluble sand but not dissolved salt.",
+      "voiceover": {
+        "text": "OK, here's a quick experiment. You've got two beakers. One is sand stirred into water, the other is salt stirred into water. You pour both through filter paper in a funnel. In one case you collect a solid on the paper, in the other you collect nothing. Which is which, and why? The answer comes down to one question you'll ask before every separation, is the solid dissolved, or undissolved? Get that right and choosing a technique becomes almost automatic."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Filtration separates by particle size",
+      "body": "A porous barrier lets liquid through but traps an insoluble solid that is too large to pass.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "mix", "label": "Mixture poured in"},
+          {"id": "paper", "label": "Filter paper"},
+          {"id": "res", "label": "Residue (solid on paper)"},
+          {"id": "filt", "label": "Filtrate (liquid below)"}
+        ],
+        "edges": [
+          {"from": "mix", "to": "paper"},
+          {"from": "paper", "to": "res"},
+          {"from": "paper", "to": "filt"}
+        ]
+      },
+      "bullets": [
+        {"text": "Separation basis: particle size — the solid must be insoluble."},
+        {"text": "Residue: the solid retained on the filter paper."},
+        {"text": "Filtrate: the liquid, plus anything dissolved, collected below."}
+      ],
+      "secondary": "Filtration can't separate a dissolved solute. Dissolved ions are far smaller than the pores, so they pass straight through.",
+      "callout": "Insoluble solid stays; dissolved solute escapes.",
+      "durationInFrames": 1110,
+      "caption": "Filtration: residue on the paper, filtrate below; basis is particle size.",
+      "voiceover": {
+        "text": "Let's take filtration first. You pour the mixture through filter paper folded into a funnel. The liquid passes through the tiny pores, but an insoluble solid is too large to fit through, so it gets trapped on the paper. The separation basis is particle size, and the key word is insoluble. The solid left on the paper is called the residue, and the liquid that collects in the flask below is called the filtrate. Now here's the limit you must remember. Filtration cannot separate a dissolved solute from a solution. When salt dissolves, it splits into sodium and chloride ions, which are far smaller than the pores, so they slip straight through with the water."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Crystallisation, step by step",
+      "bullets": [
+        {"text": "Dissolve the solid in the minimum volume of hot solvent."},
+        {"text": "Heat in an evaporating basin until the solution is concentrated."},
+        {"text": "Cool slowly so the excess solute comes out as crystals."},
+        {"text": "Filter off the crystals and dry them."}
+      ],
+      "callout": "Slow cooling gives larger, purer crystals.",
+      "durationInFrames": 990,
+      "caption": "Crystallisation: dissolve hot, concentrate, cool slowly, filter, dry.",
+      "voiceover": {
+        "text": "So how do you recover a solid that's already dissolved? That's crystallisation. The trick is that most solids become less soluble as the temperature drops. So first you dissolve the solid in the smallest amount of hot solvent that will take it. Then you heat it in an evaporating basin to concentrate the solution until it's saturated. Then, and this part matters, you cool it slowly. As it cools, the solution can no longer hold all the solute, so the excess comes out as crystals. Finally you filter off those crystals and dry them. Cooling slowly is the key, because it gives the particles time to arrange into a neat lattice, producing larger, purer crystals. Rush it, and you get small crystals that trap impurities."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "Choosing between the two",
+      "body": "Ask one question first: is the solid dissolved or undissolved?",
+      "bullets": [
+        {"text": "Undissolved solid → filtration (separates by particle size)."},
+        {"text": "Dissolved solid → crystallisation (separates by solubility change)."},
+        {"text": "Crystallisation also purifies — each cycle raises purity."}
+      ],
+      "secondary": "Many real mixtures need both in sequence. Filter out the insoluble part first, then crystallise the dissolved part.",
+      "callout": "Undissolved? Filter. Dissolved? Crystallise.",
+      "durationInFrames": 960,
+      "caption": "Undissolved → filtration; dissolved → crystallisation; often used in sequence.",
+      "voiceover": {
+        "text": "Here's the decision rule that ties them together. Before anything else, ask, is the solid dissolved or undissolved? If it's undissolved, you filter, separating by particle size. If it's dissolved, you crystallise, separating by the change in solubility with temperature. And there's a bonus, crystallisation isn't just separation, it's purification, because each cycle leaves impurities behind in the leftover solution. Most real mixtures need both techniques in sequence. You filter out the insoluble part first, then crystallise the dissolved part from the filtrate."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Muddy salt water",
+      "question": "From muddy water (water + sand + dissolved salt), describe how to obtain pure dry sand and pure dry salt. Justify each technique.",
+      "coachNote": "Sand is insoluble; salt is dissolved — different techniques.",
+      "steps": [
+        "Sand is insoluble; salt is dissolved — that decides each method",
+        "Sand: filter the mixture — sand is the residue, rinse and dry it",
+        "Salt: the filtrate is salt water — heat to concentrate it",
+        "Cool slowly, filter off the salt crystals, and dry them",
+        "Answer: filtration for sand, crystallisation for salt ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Filter sand out first, then crystallise salt from the filtrate.",
+      "voiceover": {
+        "text": "Let's separate muddy salt water, which is water, sand, and dissolved salt. We want pure dry sand and pure dry salt. First, identify what's dissolved and what isn't. Sand is insoluble, and salt is dissolved, and that decides everything. To get the sand, you filter the mixture. The sand is too large to pass through, so it stays on the paper as the residue, and you rinse it with distilled water to wash off any clinging salt, then dry it. To get the salt, you work with the filtrate, which is salt water. You heat it in an evaporating basin to concentrate it, cool it slowly so the salt crystallises out, then filter off the crystals and dry them. So filtration for the sand, because it's insoluble, and crystallisation for the salt, because it's dissolved. Neither one alone could do both."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Recovering KNO₃ on cooling",
+      "question": "A KNO₃ solution holds 80 g per 100 g water at 60°C. Solubility at 20°C is 31 g per 100 g water. What mass crystallises on cooling to 20°C?",
+      "coachNote": "What cools out = starting amount minus what stays dissolved.",
+      "steps": [
+        "At 60°C, 80 g of KNO₃ is dissolved in 100 g of water",
+        "At 20°C, only 31 g can stay dissolved in 100 g of water",
+        "Excess that must come out = 80 − 31",
+        "= 49 g forced out of solution as crystals",
+        "Answer: 49 g of KNO₃ crystallises ✓"
+      ],
+      "durationInFrames": 1260,
+      "caption": "80 g dissolved minus 31 g still soluble at 20°C = 49 g crystallises.",
+      "voiceover": {
+        "text": "Now a quick calculation using a solubility curve, which examiners love. A potassium nitrate solution holds eighty grams of solute per one hundred grams of water at sixty degrees. As it cools to twenty degrees, the solubility drops to only thirty-one grams per one hundred grams of water. How much crystallises out? Step one, at sixty degrees we have eighty grams dissolved. Step two, at twenty degrees, only thirty-one grams can remain dissolved. Step three, the excess that has to come out is eighty minus thirty-one. Step four, that's forty-nine grams forced out of solution as crystals. So the answer is forty-nine grams of potassium nitrate. The amount that crystallises is simply what you started with, minus what can still stay dissolved at the lower temperature."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three separation traps",
+      "body": "Trap 1: thinking filtration can separate a dissolved solid. Dissolved ions pass straight through the paper.",
+      "secondary": "Trap 2: cooling crystals quickly in an ice bath to save time. Rapid cooling traps impurities and lowers purity. Trap 3: expecting one crystallisation to give a chemically pure product when impurities are also soluble.",
+      "mistakeTag": "Where separation marks vanish",
+      "callout": "Dissolved solids slip through; cool slowly; one cycle isn't pure.",
+      "durationInFrames": 1230,
+      "caption": "Filtration can't catch dissolved solids; cool slowly; one cycle isn't fully pure.",
+      "voiceover": {
+        "text": "Three traps. Trap one, believing filtration can separate a dissolved solid. It can't. Dissolved sodium chloride exists as individual ions far smaller than the pores, so they pass straight through with the water, and you collect nothing on the paper. Trap two, plunging the hot solution into an ice bath to speed things up. Rapid cooling produces lots of tiny crystals that trap impurities and leftover solution inside them, so purity actually drops. Cool slowly instead. Trap three, expecting a single crystallisation to give a chemically pure product. If the impurities are also soluble, some stay behind in the crystals, so you repeat the process, recrystallising two or three times to push the purity right up."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A mixture is sand stirred into salt water. Which sequence cleanly separates sand, salt, and water?",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Sand is undissolved → filter first; sand is the residue",
+        "The filtrate is salt water — sand is now gone",
+        "Distil the filtrate to collect pure water as the distillate",
+        "Keep heating until the salt crystallises out as a dry solid",
+        "Answer: filter sand, then distil/crystallise for water and salt ✓"
+      ],
+      "durationInFrames": 1140,
+      "caption": "Filter sand first, then recover water and salt from the filtrate.",
+      "voiceover": {
+        "text": "Quick check. A mixture is sand stirred into salt water. What sequence cleanly separates all three, the sand, the salt, and the water? Pause and work it through. Right, let's check it. Step one, the sand is undissolved, so you filter first, and the sand stays on the paper as the residue. Step two, the filtrate is now just salt water, with the sand removed. Step three, to recover the water itself, you distil the filtrate, collecting pure water as the distillate, a technique we cover properly next lesson. Step four, keep heating, and the salt crystallises out as a dry solid. The trap answer was filtration alone, but filtration can never catch the dissolved salt. You always remove the insoluble sand first, then deal with the dissolved salt second."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Filtration separates an insoluble solid from a liquid by particle size.",
+        "Residue stays on the paper; filtrate passes through below.",
+        "Crystallisation recovers a dissolved solid as solubility drops on cooling.",
+        "Cool slowly for larger, purer crystals; repeat to purify further.",
+        "Decide by asking: is the solid undissolved or dissolved?"
+      ],
+      "finalPrompt": "Undissolved? Filter. Dissolved? Crystallise.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: filtration by particle size, crystallisation by solubility, decide by dissolved or not.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, filtration separates an insoluble solid from a liquid based on particle size. Second, the residue is what stays on the paper, and the filtrate is what passes through below. Third, crystallisation recovers a dissolved solid by exploiting the drop in solubility as the solution cools. Fourth, cool slowly for larger, purer crystals, and repeat the process to purify even further. And fifth, choose your technique by asking whether the solid is undissolved or dissolved. Next lesson we go further, into distillation and chromatography, for the mixtures these two can't handle. See you next lesson."
+      }
+    }
+  ]
+}

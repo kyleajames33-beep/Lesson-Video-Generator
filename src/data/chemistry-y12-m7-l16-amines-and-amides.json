@@ -1,0 +1,246 @@
+{
+  "title": "Amines and Amides",
+  "subtitle": "One lone pair, two opposite behaviours",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 16",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "investigate the structural formulae, properties and functional group including: amines and amides",
+    "explain the properties within and between the homologous series of carboxylic acids, amines and amides with reference to the intermolecular and intramolecular bonding present"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": [
+    "CH12-14",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What are the properties of organic acids and bases?",
+  "lessonIntent": "Students can classify amines, explain their basicity and that of amides using the nitrogen lone pair, write amine reactions with acids, and rank boiling points across the families.",
+  "examSkill": "Use lone-pair availability on nitrogen to explain why amines are weak bases but amides are neutral, and distinguish ammonium-salt formation from esterification.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, amines and amides, where one lone pair decides everything. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Amines and Amides (Year 12 Chemistry, Module 7, Lesson 16)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The smell of decay, and of life",
+      "body": "The stench of rotting flesh comes from amines. So do adrenaline and every local anaesthetic. The same family, depending on the molecule.",
+      "callout": "What makes an amine a weak base, and why does an amide refuse to be one?",
+      "image": "m7l16HookAmines",
+      "durationInFrames": 1651,
+      "caption": "Amines range from foul diamines to adrenaline; amides build proteins.",
+      "voiceover": {
+        "text": "OK, let's start somewhere memorable. The smell of rotting flesh comes from two amines with the wonderful names putrescine and cadaverine. But the same family, amines, also includes adrenaline, the fight-or-flight hormone, and just about every local anaesthetic from the dentist. They're all weak bases. Now, take an amine and put a carbonyl group right next to the nitrogen, and you get an amide, the linkage that builds every protein in your body. Here's the strange part. That tiny change flips the nitrogen from a weak base into something essentially neutral. Today you'll see why, and it all comes down to one lone pair of electrons on nitrogen, and whether it's free to grab a proton or locked away."
+      }
+    },
+    {
+      "id": "concept-classification",
+      "type": "concept",
+      "heading": "Count the groups on nitrogen",
+      "body": "An amine is ammonia with one or more hydrogens replaced by carbon groups. You classify it by counting the carbon groups on the nitrogen itself.",
+      "image": "m7l16AmineVsAmide",
+      "bullets": [
+        {
+          "text": "Primary amine: one carbon group on N, like ethylamine.",
+          "at": 8
+        },
+        {
+          "text": "Secondary: two groups on N. Tertiary: three groups on N.",
+          "at": 16
+        },
+        {
+          "text": "Count groups on the nitrogen, not the carbon, unlike alcohols.",
+          "at": 25
+        },
+        {
+          "text": "The nitrogen keeps a lone pair, the source of all amine reactivity.",
+          "at": 33
+        }
+      ],
+      "secondary": "Propan-2-amine has NH2 on a middle carbon, but it is still a primary amine: only one group on N.",
+      "callout": "Classify by the number of carbon groups bonded to nitrogen.",
+      "durationInFrames": 1935,
+      "caption": "Amine class = number of carbon groups on the nitrogen atom.",
+      "voiceover": {
+        "text": "Let's start with structure. An amine is just ammonia with one or more of its hydrogens swapped for carbon groups, and you classify it by counting how many carbon groups are attached to the nitrogen. One group makes it a primary amine, like ethylamine. Two groups, secondary. Three groups, tertiary. Now here's a critical point that trips students up. For amines, you count the groups on the nitrogen itself, which is different from alcohols, where you count carbons around the carbon that bears the hydroxyl. So propan-2-amine has its nitrogen group on a middle carbon, but the nitrogen still only carries one carbon group, so it's a primary amine. Locate the nitrogen first, count its groups, done. And whatever the class, the nitrogen keeps one lone pair of electrons, and that lone pair is the source of everything amines do."
+      }
+    },
+    {
+      "id": "concept-imf",
+      "type": "concept",
+      "heading": "N-H bonds, but weaker than O-H",
+      "body": "Primary and secondary amines hydrogen bond, but more weakly than alcohols, because nitrogen is less electronegative than oxygen.",
+      "bullets": [
+        {
+          "text": "Primary and secondary amines have N-H bonds, so they can hydrogen bond.",
+          "at": 9
+        },
+        {
+          "text": "Nitrogen is less electronegative than oxygen, so N-H H-bonds are weaker.",
+          "at": 18
+        },
+        {
+          "text": "So an amine boils below the alcohol of the same size.",
+          "at": 26
+        },
+        {
+          "text": "Tertiary amines have no N-H, so they cannot donate H-bonds and boil lower.",
+          "at": 34
+        }
+      ],
+      "callout": "Weaker N-H hydrogen bonds put amines below alcohols on boiling point.",
+      "durationInFrames": 1881,
+      "caption": "Amines hydrogen bond, but weaker than alcohols; tertiary amines cannot donate.",
+      "voiceover": {
+        "text": "Now boiling points, which the exam tests through comparisons. Primary and secondary amines have nitrogen-hydrogen bonds, so they can hydrogen bond to each other. But those hydrogen bonds are weaker than the ones alcohols form, and there's a precise reason. Nitrogen has an electronegativity around three, while oxygen is around three point five. The less electronegative nitrogen makes the N-H bond less polar, so its hydrogen is less positive and forms a weaker hydrogen bond. The consequence is that an amine boils below an alcohol of the same size. And tertiary amines are different again. They have no nitrogen-hydrogen bond at all, so they can't donate a hydrogen bond between their own molecules, which drops their boiling point below the primary amines. For a band-six answer, quote the electronegativity values and link them to H-bond strength."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Amines as weak bases",
+      "bullets": [
+        {
+          "text": "In water: R-NH2 plus water gives R-NH3 plus and hydroxide; the solution is basic.",
+          "at": 8
+        },
+        {
+          "text": "Kb is much less than one, so amines are weak bases.",
+          "at": 16
+        },
+        {
+          "text": "With acid: amine plus HCl gives an ionic ammonium salt, no water, at room temperature.",
+          "at": 25
+        },
+        {
+          "text": "Alkyl amines are slightly stronger bases than ammonia.",
+          "at": 33
+        }
+      ],
+      "callout": "The lone pair on nitrogen grabs a proton, making the amine a base.",
+      "durationInFrames": 1867,
+      "caption": "Amines accept a proton on the N lone pair: weak bases that form ammonium salts.",
+      "voiceover": {
+        "text": "So why are amines bases? Every amine reaction comes from the same move. The lone pair on nitrogen reaches out and grabs a proton, forming a new nitrogen-hydrogen bond. In water, an amine takes a proton from water, producing an ammonium cation and a hydroxide ion, so the solution turns basic. But the base constant is much less than one, so amines are weak bases. Most molecules stay un-protonated at any moment. With an acid, the story is sharper. An amine plus hydrochloric acid forms an ionic ammonium salt, like ethylammonium chloride, and this happens instantly at room temperature, with no catalyst and no water produced. One more detail. Alkyl amines are actually slightly stronger bases than ammonia, because the carbon groups push electron density onto the nitrogen, making its lone pair even more available."
+      }
+    },
+    {
+      "id": "concept-amide",
+      "type": "concept",
+      "heading": "Why the amide is neutral",
+      "body": "An amide places a carbonyl directly beside the nitrogen. The lone pair delocalises into the C=O, so it can no longer accept a proton.",
+      "bullets": [
+        {
+          "text": "Amide group is -CONH2: a carbonyl bonded straight to nitrogen.",
+          "at": 8
+        },
+        {
+          "text": "The N lone pair is delocalised into the C=O by resonance.",
+          "at": 16
+        },
+        {
+          "text": "A tied-up lone pair cannot accept a proton, so amides are neutral.",
+          "at": 24
+        },
+        {
+          "text": "Amides also have the highest boiling points, with both N-H and C=O.",
+          "at": 33
+        }
+      ],
+      "callout": "Delocalised lone pair means no proton acceptance, so no basicity.",
+      "durationInFrames": 1948,
+      "caption": "In an amide the N lone pair delocalises into the C=O, so it is not basic.",
+      "voiceover": {
+        "text": "Now the twist that defines the lesson. Put a carbonyl group directly next to the nitrogen and you get an amide, with the group carbon double-bond oxygen, then nitrogen. The nitrogen still has a lone pair, so you might expect it to be a base like an amine. But it isn't. The lone pair is delocalised into the carbonyl by resonance, spread into the carbon-oxygen system rather than sitting free on the nitrogen. And a lone pair that's tied up like that can't reach out to grab a proton, so amides are essentially neutral in water. That single structural change, adding the adjacent carbonyl, completely switches off the basicity. There's a bonus property too. Amides have both nitrogen-hydrogen donors and a strong carbonyl acceptor, so they form an extensive hydrogen-bond network and have the highest boiling points of all these families."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Amine plus acid, not esterification",
+      "question": "Methylamine reacts with ethanoic acid at room temperature. Write the product, and contrast this reaction with esterification.",
+      "coachNote": "Acid plus base gives an ionic salt instantly; acid plus alcohol needs a catalyst and reflux. Do not confuse them.",
+      "steps": [
+        "Methylamine is a base; ethanoic acid is an acid. Acid plus base gives a salt.",
+        "Product: methylammonium ethanoate, an ionic salt, [CH3NH3]+ [CH3COO]-.",
+        "Conditions: room temperature, no catalyst, instantaneous, no water produced.",
+        "Esterification (acid plus alcohol) instead needs conc. sulfuric acid and reflux.",
+        "Esterification makes a covalent ester plus water; this makes an ionic salt with no water.",
+        "Answer: methylammonium ethanoate forms at once; esterification is slower, catalysed, and gives water."
+      ],
+      "durationInFrames": 1962,
+      "caption": "Amine + acid gives an ionic ammonium salt instantly, unlike esterification.",
+      "voiceover": {
+        "text": "Let's work an example that targets a classic confusion. Methylamine reacts with ethanoic acid at room temperature. What forms, and how does this differ from esterification? Step one, recognise the players. Methylamine is a base, ethanoic acid is an acid, so acid plus base gives a salt. The product is methylammonium ethanoate, an ionic salt, the methylammonium cation paired with the ethanoate anion. The conditions matter. This happens instantly at room temperature, with no catalyst, and no water is produced. Now contrast that with esterification. If you instead reacted the acid with an alcohol, you'd need concentrated sulfuric acid and heating under reflux, it would be slow, and it would produce a covalent ester plus water. So the amine reaction is fast, gives an ionic salt, and makes no water, whereas esterification is slow, catalysed, and makes water. Don't mix them up."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Amides are basic because they have N\"",
+      "body": "Students assume that because an amide has a nitrogen with a lone pair, it must be a base like an amine. It is not.",
+      "secondary": "In an amide the nitrogen lone pair is delocalised into the adjacent carbonyl by resonance, so it is not freely available to accept a proton. With a Kb near ten to the minus fifteen, an amide is effectively neutral, while an amine has a Kb near ten to the minus four.",
+      "callout": "A nitrogen lone pair only makes a base if it is free, not delocalised.",
+      "mistakeTag": "Amide N lone pair is delocalised, not basic",
+      "durationInFrames": 2056,
+      "caption": "Amides are neutral: the N lone pair is delocalised into the carbonyl.",
+      "voiceover": {
+        "text": "Here's the trap, and it's the band-six discriminator. Students see that an amide has a nitrogen with a lone pair, just like an amine, and conclude that amides must be basic too. They aren't. The difference is whether the lone pair is free. In an amine, the lone pair sits free on the nitrogen, ready to accept a proton, so the amine is a weak base with a base constant around ten to the minus four. In an amide, the carbonyl sits right next to the nitrogen, and the lone pair is delocalised into that carbon-oxygen system by resonance. Tied up like that, it can't accept a proton, so the base constant collapses to around ten to the minus fifteen, which is effectively neutral. So the rule isn't nitrogen lone pair equals base. It's free lone pair equals base. Mention delocalisation and resonance explicitly, and you've got the mark."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "Explain why ethanamine gives a basic solution in water but ethanamide gives a neutral one. Refer to structure and Kb.",
+      "pausePrompt": "Pause and focus on the nitrogen lone pair in each.",
+      "answerSteps": [
+        "Ethanamine, CH3CH2NH2, has a free lone pair on its nitrogen.",
+        "That free lone pair accepts a proton from water, releasing hydroxide, so the solution is basic; Kb is about ten to the minus four.",
+        "Ethanamide, CH3CONH2, has the nitrogen next to a carbonyl.",
+        "Its lone pair is delocalised into the C=O by resonance, so it cannot accept a proton; Kb is about ten to the minus fifteen.",
+        "So ethanamine is a weak base while ethanamide is effectively neutral."
+      ],
+      "durationInFrames": 2164,
+      "caption": "Ethanamine: free lone pair, basic. Ethanamide: delocalised lone pair, neutral.",
+      "voiceover": {
+        "text": "Your turn, and this is a real band-six question. Explain why ethanamine gives a basic solution in water, but ethanamide gives a neutral one, referring to structure and to base constants. Pause now and focus on the nitrogen lone pair in each. Let's work it. Ethanamine is a normal primary amine, and its nitrogen carries a free lone pair. That free lone pair accepts a proton from water and releases a hydroxide ion, so the solution is basic, with a base constant around ten to the minus four. Ethanamide is different, because its nitrogen sits directly beside a carbonyl group. The lone pair is delocalised into that carbon-oxygen system by resonance, so it's no longer available to grab a proton. Its base constant drops to about ten to the minus fifteen, which is essentially neutral. So same element, same lone pair on paper, but one is free and one is tied up, and that's the whole answer."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Basic or neutral? Ask whether the nitrogen lone pair is free or delocalised into a carbonyl.",
+      "points": [
+        "Classify amines by the number of carbon groups on the nitrogen.",
+        "Amines hydrogen bond, but weaker than alcohols, because N is less electronegative than O.",
+        "Amines are weak bases: the free N lone pair accepts a proton; with acid they form ionic salts.",
+        "Amides are neutral: the N lone pair is delocalised into the carbonyl by resonance.",
+        "Amides have the highest boiling points, with both N-H donors and a C=O acceptor."
+      ],
+      "durationInFrames": 1975,
+      "caption": "Free lone pair means a base; delocalised lone pair means neutral.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, classify an amine by counting the carbon groups on the nitrogen, not the carbon, which is different from alcohols. Second, amines hydrogen bond, but more weakly than alcohols, because nitrogen is less electronegative than oxygen, so they boil lower. Third, amines are weak bases. The free lone pair on nitrogen accepts a proton, and with an acid they form ionic ammonium salts instantly. Fourth, amides are neutral, because the nitrogen lone pair is delocalised into the adjacent carbonyl by resonance and can't accept a proton. And fifth, amides have the highest boiling points of all these families, because they have both nitrogen-hydrogen donors and a strong carbonyl acceptor. So whenever you're asked basic or neutral, ask one thing. Is the nitrogen lone pair free, or is it tied up in a carbonyl. See you next lesson."
+      }
+    }
+  ]
+}

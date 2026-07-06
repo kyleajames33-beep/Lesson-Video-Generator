@@ -1,0 +1,217 @@
+{
+  "title": "Calculating ΔS° & Standard Entropy",
+  "subtitle": "From a table of S° values to ΔS° for a reaction",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Lesson 12",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Calculate the standard entropy change (ΔS°) of a reaction using standard entropies of products and reactants"
+  ],
+  "lessonIntent": "Students can calculate ΔS° for a reaction from a table of standard entropies and verify the sign matches qualitative prediction.",
+  "examSkill": "Apply ΔS° = Σ S°(products) − Σ S°(reactants) with coefficients, in units J K⁻¹ mol⁻¹, and confirm the sign agrees with Δn(gas).",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson `subjects/chemistry/year11/module4/lesson12.html`. Worked example: Haber N2+3H2→2NH3 (verbatim from site). S°[N2]=191.6, S°[H2]=130.7, S°[NH3]=192.4 J K⁻¹ mol⁻¹. ΔS° = 2(192.4) − [191.6 + 3(130.7)] = 384.8 − 583.7 = −198.9 J K⁻¹ mol⁻¹. Negative because Δn(gas) = 2 − 4 = −2. Misconception: 'S° of an element is zero' (unlike ΔH°f, S° of elements is NOT zero, they have real entropy).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Calculating ΔS° and Standard Entropy. Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Calculating delta S and Standard Entropy. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L12/title.b29f2e8cf00b.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "How do we put a real number on disorder?",
+      "body": "Last lesson you predicted the sign of ΔS by counting gas moles. That gives a yes-or-no. To actually use entropy in calculations, especially for Gibbs free energy next lesson, you need a real number, in J K⁻¹ mol⁻¹.",
+      "bullets": [
+        {
+          "text": "Qualitative ΔS prediction: counts gas moles, gives a sign.",
+          "at": 5
+        },
+        {
+          "text": "Quantitative ΔS°: comes from a table of S° values.",
+          "at": 12
+        },
+        {
+          "text": "Units: joules per kelvin per mole, not kilojoules.",
+          "at": 19
+        },
+        {
+          "text": "The sign must match your qualitative prediction.",
+          "at": 26
+        }
+      ],
+      "callout": "Quantitative ΔS° puts a real number on what L11 predicted.",
+      "image": "m4l12HookFromSign",
+      "durationInFrames": 1410,
+      "caption": "ΔS° gives an exact value, in J K⁻¹ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 990,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Last lesson you predicted the sign of delta S by counting gas moles. That gives a yes-or-no. But to actually use entropy in calculations — especially for Gibbs free energy next lesson — you need a real number, in joules per kelvin per mole. Think of qualitative versus quantitative entropy like saying a building is tall versus saying it's two hundred and fifty metres. But unlike height, where you can just measure, we can't measure absolute entropy directly — so we look up standard values in a table. This lesson is how to use that table.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L12/hook.1b0e6379fe47.mp3"
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "ΔS° = Σ S°(products) − Σ S°(reactants)",
+      "body": "Same shape as the formation-enthalpy formula from Lesson 7. Sum the products, sum the reactants, subtract, with coefficients.",
+      "bullets": [
+        {
+          "text": "ΔS° = Σ S°(products) − Σ S°(reactants).",
+          "at": 5
+        },
+        {
+          "text": "Scale each S° value by its stoichiometric coefficient.",
+          "at": 12
+        },
+        {
+          "text": "Units: J K⁻¹ mol⁻¹ (notice: joules, not kilojoules).",
+          "at": 19
+        },
+        {
+          "text": "Crucially: S° of elements is NOT zero (unlike ΔH°f).",
+          "at": 26
+        }
+      ],
+      "callout": "ΔS° = Σ S°(products) − Σ S°(reactants).",
+      "durationInFrames": 1320,
+      "caption": "Sum products, sum reactants, subtract; all elements have S° > 0.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1080,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "The formula has the same shape as the formation-enthalpy one from Lesson seven. Delta S zero equals the sum of standard entropies of products minus the sum for reactants — each scaled by its coefficient. Units are joules per kelvin per mole — and the joules matters; they're not kilojoules, which catches people out next lesson when we mix delta S with delta H. And here's the critical difference from delta H of formation: standard entropy of an element is not zero. Every substance has real positive entropy, including elements.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L12/formula.98d806d86954.mp3"
+      },
+      "diagram": {
+        "type": "entropyDisorder"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "ΔS° for the Haber process",
+      "question": "Calculate ΔS° for N₂(g) + 3H₂(g) → 2NH₃(g). Use: S°[N₂(g)] = 191.6, S°[H₂(g)] = 130.7, S°[NH₃(g)] = 192.4 J K⁻¹ mol⁻¹.",
+      "coachNote": "Scale by coefficients. Sum products, sum reactants, subtract. Then check the sign against Δn(gas).",
+      "unitCancel": {
+        "left": "J K⁻¹ mol⁻¹",
+        "right": "J K⁻¹ mol⁻¹",
+        "result": "J K⁻¹ mol⁻¹"
+      },
+      "steps": [
+        "Known: S°[N₂] = 191.6, S°[H₂] = 130.7, S°[NH₃] = 192.4.",
+        "Find: ΔS° for the reaction.",
+        "Σ S°(products) = 2 × 192.4 = 384.8 J K⁻¹ mol⁻¹.",
+        "Σ S°(reactants) = 1×191.6 + 3×130.7 = 191.6 + 392.1 = 583.7 J K⁻¹ mol⁻¹.",
+        "Formula: ΔS° = Σ S°(products) − Σ S°(reactants).",
+        "Substitute: ΔS° = 384.8 − 583.7.",
+        "Δn(gas) check: 2 − 4 = −2, so ΔS° should be negative, confirmed.",
+        "Answer: ΔS° = 198.9 J K⁻¹ mol⁻¹ decrease (i.e. −198.9 J K⁻¹ mol⁻¹)."
+      ],
+      "durationInFrames": 1620,
+      "caption": "ΔS°(Haber) = 384.8 − 583.7 = −198.9 J K⁻¹ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Let's do the Haber process. Sum the products — two times one-ninety-two-point-four for ammonia — three hundred and eighty-four-point-eight. Sum the reactants — one times one-ninety-one-point-six for nitrogen, plus three times one-thirty-point-seven for hydrogen — total five hundred and eighty-three-point-seven. Delta S zero is products minus reactants — three-eighty-four-point-eight minus five-eighty-three-point-seven — minus one hundred and ninety-eight-point-nine joules per kelvin per mole. Quick sanity check: four moles of gas become two, so delta n of gas is minus two — and the negative sign matches. The qualitative prediction and the calculation agree.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L12/worked-example.681527bdfbae.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"S° of an element is zero\"",
+      "body": "Students often think: \"ΔH°f of elements is zero, so S° must be too.\" That's the wrong instinct, it confuses two different reference conventions. The correct rule: standard entropy of any substance, including elements, is NOT zero. Every substance has real positive entropy because it has many possible microstates. So S°[N₂] = 191.6, S°[H₂] = 130.7, both included in the reactant sum.",
+      "callout": "ΔH°f of elements = 0. But S° of elements ≠ 0. Different conventions.",
+      "mistakeTag": "Element-S°-zero trap",
+      "durationInFrames": 1320,
+      "caption": "Unlike ΔH°f, S° of an element is NOT zero, include it.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the trap. Students learn that delta H of formation of elements is zero, and assume standard entropy of elements is too. Wrong instinct — it confuses two different reference conventions. The correct rule: standard entropy of any substance, including elements, is not zero. Every substance has real positive entropy because it has many possible microstates available to it. So S of N two is one-ninety-one-point-six, S of H two is one-thirty-point-seven — both go into the reactant sum, in full. Drop them and your answer is off by hundreds of joules per kelvin per mole.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L12/misconception.40dac3a99260.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "Calculate ΔS° for 2H₂(g) + O₂(g) → 2H₂O(l). Use S°[H₂(g)] = 130.7, S°[O₂(g)] = 205.2, S°[H₂O(l)] = 69.9 J K⁻¹ mol⁻¹.",
+      "pausePrompt": "Pause: sum products (scaled), sum reactants (scaled), subtract.",
+      "answerSteps": [
+        "Σ S°(products) = 2 × 69.9 = 139.8 J K⁻¹ mol⁻¹.",
+        "Σ S°(reactants) = 2 × 130.7 + 1 × 205.2 = 261.4 + 205.2 = 466.6 J K⁻¹ mol⁻¹.",
+        "Formula: ΔS° = Σ S°(products) − Σ S°(reactants).",
+        "Substitute: ΔS° = 139.8 − 466.6.",
+        "Answer: ΔS° = 326.8 J K⁻¹ mol⁻¹ decrease (i.e. −326.8 J K⁻¹ mol⁻¹), 3 mol gas → 0 mol gas + condensation."
+      ],
+      "durationInFrames": 1380,
+      "caption": "ΔS° = 139.8 − 466.6 = −326.8 J K⁻¹ mol⁻¹ (gas → liquid).",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 600,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Your turn. Calculate delta S zero for the combustion of hydrogen to liquid water. Sum the products: two times sixty-nine-point-nine for liquid water — one hundred and thirty-nine-point-eight. Sum the reactants: two times one-thirty-point-seven for H two, plus one times two-zero-five-point-two for O two — four hundred and sixty-six-point-six. Delta S zero is one-thirty-nine-point-eight minus four-sixty-six-point-six — minus three hundred and twenty-six-point-eight joules per kelvin per mole. Strongly negative, as expected: three moles of gas become two moles of liquid — a big collapse in disorder.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L12/quick-check.7a89f14fe57e.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Always check: does the calculated sign match the gas-moles prediction?",
+      "points": [
+        "ΔS° = Σ S°(products) − Σ S°(reactants), scaled by coefficients.",
+        "Units are J K⁻¹ mol⁻¹, joules, not kilojoules.",
+        "S° of an element is NOT zero, include it (unlike ΔH°f).",
+        "Sanity-check the sign against Δn(gas): more gas → ΔS° positive.",
+        "ΔS° in J K⁻¹ mol⁻¹ feeds straight into Gibbs free energy next lesson."
+      ],
+      "durationInFrames": 1320,
+      "caption": "Sum products, subtract reactants, sanity-check the sign.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways. One: delta S zero equals the sum of standard entropies of products minus reactants, each scaled by its coefficient. Two: units are joules per kelvin per mole — joules, not kilojoules. Three: standard entropy of an element is not zero, unlike delta H of formation — include it. Four: sanity-check your sign against delta n of gas — more gas on the product side means delta S positive. Five: this calculated delta S zero feeds straight into Gibbs free energy next lesson. Decision rule: always check that your calculated sign matches the gas-moles prediction.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L12/summary.8036ecfd8e35.mp3"
+      }
+    }
+  ]
+}

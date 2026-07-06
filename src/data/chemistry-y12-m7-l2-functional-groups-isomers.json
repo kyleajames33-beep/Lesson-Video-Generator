@@ -1,0 +1,227 @@
+{
+  "title": "IUPAC Nomenclature II: Functional Groups & Isomers",
+  "subtitle": "Naming the eight classes and classifying structural isomers",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 2",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127)",
+    "explore and distinguish the different types of structural isomers, including saturated and unsaturated hydrocarbons, including: (ACSCH035)"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": ["CH12-14", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "How do we systematically name organic chemical compounds?",
+  "lessonIntent": "Students can name compounds across the eight functional group classes and classify a pair of structural isomers as chain, position or functional group isomers.",
+  "examSkill": "Read the functional group to fix the suffix, name esters as alkyl alkanoate with the alkyl first, and tell position isomers from functional group isomers.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, naming the functional group families and sorting out isomers. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "IUPAC Nomenclature II: Functional Groups & Isomers (Year 12 Chemistry, Module 7, Lesson 2)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same atoms, opposite molecules",
+      "body": "Ethanol and dimethyl ether are both C2H6O. One is metabolised by your liver; the other is an anaesthetic propellant.",
+      "callout": "The arrangement, not the formula, decides the chemistry.",
+      "durationInFrames": 690,
+      "caption": "Ethanol and dimethyl ether share C2H6O but behave completely differently.",
+      "voiceover": {
+        "text": "OK, here's a puzzle that shows why naming matters so much. Ethanol, the alcohol in wine, and dimethyl ether, an industrial propellant, have the exact same molecular formula, C two H six O. Same atoms, same count. Yet your liver metabolises ethanol at a steady rate, while dimethyl ether acts as an anaesthetic and a refrigerant. How can identical formulas behave so differently? Because the atoms are arranged differently. In ethanol the oxygen sits between a carbon and a hydrogen, an oxygen hydrogen group. In the ether the oxygen sits between two carbons. The formula can't tell them apart, but the structure, and the name, can. Today we name the eight functional group families, and then we learn to classify these structural isomers properly."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The eight functional group classes",
+      "bullets": [
+        {"text": "Alcohol -OH, suffix -ol; aldehyde -CHO at C1, suffix -al."},
+        {"text": "Ketone internal C=O, suffix -one; carboxylic acid -COOH at C1, suffix -oic acid."},
+        {"text": "Ester R-COO-R', named alkyl alkanoate; haloalkane R-X, prefix chloro/bromo."},
+        {"text": "Amine R-NH2, suffix -amine (a weak base); amide R-CONH2, suffix -amide (neutral)."}
+      ],
+      "callout": "The suffix is decided entirely by the functional group present.",
+      "durationInFrames": 1110,
+      "caption": "Eight classes: alcohol, aldehyde, ketone, acid, ester, haloalkane, amine, amide.",
+      "voiceover": {
+        "text": "Let's meet the eight classes you need to recognise. Alcohols carry an oxygen hydrogen group and take the suffix ol. Aldehydes have a carbon double bond oxygen at the chain end, with a hydrogen on it, and take al. Ketones have that carbon double bond oxygen in the middle of the chain, flanked by two carbons, and take one. Carboxylic acids have a C O O H group at the end, and take oic acid. Esters have a C O O linkage between two carbon groups, and they're named as alkyl alkanoate. Haloalkanes have a halogen, named with a prefix like chloro or bromo. Amines have a nitrogen with hydrogens and behave as weak bases. And amides have that nitrogen next to a carbon double bond oxygen, and they're neutral, not basic. Whichever group is present decides the suffix, so spotting it is always your first move."
+      }
+    },
+    {
+      "id": "concept-alcohols-classification",
+      "type": "concept",
+      "heading": "Primary, secondary, tertiary",
+      "body": "For alcohols and amines, classification comes from counting carbon neighbours on the key atom.",
+      "bullets": [
+        {"text": "Find the C-OH carbon, then count only its carbon neighbours."},
+        {"text": "One carbon neighbour is primary; two is secondary; three is tertiary."},
+        {"text": "Same rule on nitrogen for amines: one, two or three alkyl groups."}
+      ],
+      "secondary": "This classification is not just a label. It decides what oxidation products an alcohol can form, which matters in later lessons.",
+      "callout": "Count carbon neighbours of the key atom, nothing else.",
+      "durationInFrames": 1020,
+      "caption": "1, 2 or 3 carbon neighbours on the C-OH carbon gives primary, secondary, tertiary.",
+      "voiceover": {
+        "text": "A few of these classes get split further into primary, secondary, and tertiary, and there's one clean rule for it. For an alcohol, find the carbon that carries the oxygen hydrogen group, then count how many other carbons are bonded to that one carbon. One carbon neighbour makes it primary, two makes it secondary, and three makes it tertiary. Don't count the oxygen, and don't count hydrogens, just the carbon neighbours. Ethanol is primary, propan-two-ol is secondary, and two-methylpropan-two-ol is tertiary. The same logic applies to amines, but you count the alkyl groups on the nitrogen instead. This isn't just a naming label, by the way. It decides what an alcohol can be oxidised to, which becomes the whole story in lesson twelve."
+      }
+    },
+    {
+      "id": "concept-carbonyl",
+      "type": "concept",
+      "heading": "Reading the carbonyl",
+      "body": "Aldehyde, ketone and carboxylic acid all contain a C=O. What sits next to it decides which class you have.",
+      "image": "m7L2FunctionalGroups",
+      "bullets": [
+        {"text": "Hydrogen on the carbonyl carbon, at the chain end: aldehyde (-al)."},
+        {"text": "Two carbon neighbours on the carbonyl carbon: ketone (-one)."},
+        {"text": "An -OH on the carbonyl carbon, at the chain end: carboxylic acid (-oic acid)."}
+      ],
+      "secondary": "Propanal and propanone are both C3H6O, but one is an aldehyde and one a ketone. This five second check stops the most common mix-up.",
+      "callout": "Check what is bonded to the C=O carbon before you name it.",
+      "durationInFrames": 1050,
+      "caption": "Aldehyde: H on C=O. Ketone: two carbons. Acid: -OH on C=O.",
+      "voiceover": {
+        "text": "Three of the classes share a carbon double bond oxygen, the carbonyl group, so let's nail the difference. Look at what's bonded to that carbonyl carbon. If there's a hydrogen on it, and it sits at the end of the chain, it's an aldehyde, suffix al. If the carbonyl carbon has two carbon neighbours, sitting inside the chain, it's a ketone, suffix one. And if there's an oxygen hydrogen group on the carbonyl carbon, at the end of the chain, it's a carboxylic acid, suffix oic acid. Here's why this matters. Propanal and propanone are both C three H six O, same formula, but propanal is an aldehyde and propanone is a ketone. That five second check, what's next to the carbonyl, stops the single most common functional group mix-up in the whole module."
+      }
+    },
+    {
+      "id": "formula-esters",
+      "type": "concept",
+      "heading": "Naming esters: alkyl alkanoate",
+      "body": "Esters get a two-word name. The alkyl part comes from the alcohol and is written first; the alkanoate comes from the acid.",
+      "bullets": [
+        {"text": "Write the template \"alkyl alkanoate\" before you start."},
+        {"text": "Alkyl = the group on the single-bonded oxygen (from the alcohol)."},
+        {"text": "Alkanoate = the RCOO part (from the acid), written second."}
+      ],
+      "secondary": "CH3COOCH2CH3 is ethyl ethanoate, never ethanoate ethyl. The alkyl always comes first.",
+      "callout": "Alcohol first, then acid: alkyl alkanoate.",
+      "durationInFrames": 1020,
+      "caption": "Ester = alkyl alkanoate; the alkyl (from the alcohol) is written first.",
+      "voiceover": {
+        "text": "Esters trip people up because they get a two-word name with a fixed order. Here's a trick that fixes it. Before you write anything, put down the template, alkyl space alkanoate. Now fill it in. The alkyl part is the group attached to the single bonded oxygen, the bit that came from the alcohol, and it goes first. The alkanoate part is the rest, the R C O O piece that came from the acid, and it goes second. So C H three C O O C H two C H three is ethyl ethanoate. The ethyl came from ethanol, the ethanoate from ethanoic acid. It is never ethanoate ethyl. If you remember just one thing, it's that the alkyl, the alcohol part, always comes first."
+      }
+    },
+    {
+      "id": "concept-isomers",
+      "type": "concept",
+      "heading": "Three kinds of structural isomer",
+      "body": "Structural isomers share a molecular formula but differ in how the atoms connect. There are three types to tell apart.",
+      "bullets": [
+        {"text": "Chain isomers: same group, different carbon skeleton (butane vs 2-methylpropane)."},
+        {"text": "Position isomers: same group and skeleton, group in a different place (propan-1-ol vs propan-2-ol)."},
+        {"text": "Functional group isomers: same formula, different functional group (propanal vs propanone)."}
+      ],
+      "secondary": "If two drawings give the same IUPAC name, they are the same compound, not two isomers.",
+      "callout": "Ask what changed: the skeleton, the position, or the group itself.",
+      "durationInFrames": 1110,
+      "caption": "Chain, position and functional group isomers.",
+      "voiceover": {
+        "text": "Now isomers, which the HSC loves to test. Structural isomers have the same molecular formula but a different arrangement of atoms, and there are three types. Chain isomers keep the same functional group but change the carbon skeleton, like butane versus two-methylpropane, both C four H ten. Position isomers keep the same group and the same skeleton, but move the group to a different carbon, like propan-one-ol versus propan-two-ol, both alcohols, both three carbons, with the oxygen hydrogen in a different spot. And functional group isomers have the same formula but a genuinely different functional group, like propanal versus propanone, an aldehyde and a ketone. One handy check, if you draw two structures and they end up with the same IUPAC name, they're actually the same compound, not two different isomers."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Name across the classes",
+      "question": "Name: (a) CH3CH2CHO  (b) CH3COCH3  (c) CH3CH2COOCH3.",
+      "coachNote": "Identify the functional group first, then apply its suffix rule.",
+      "steps": [
+        "(a) Terminal C=O with an H → aldehyde; 3 carbons → propanal",
+        "(b) Internal C=O between two carbons → ketone; 3 carbons → propanone",
+        "(c) C-O-O linkage → ester; acid part CH3CH2COO = propanoate",
+        "(c) Alkyl part -OCH3 = methyl, written first",
+        "Answer: (a) propanal, (b) propanone, (c) methyl propanoate ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "propanal, propanone, methyl propanoate.",
+      "voiceover": {
+        "text": "Let's name three compounds from different classes. Part a, C H three C H two C H O. The carbon double bond oxygen is at the end with a hydrogen on it, so it's an aldehyde, and with three carbons that's propanal. Part b, C H three C O C H three. Here the carbonyl is in the middle, between two carbons, so it's a ketone, and three carbons gives propanone. Part c, C H three C H two C O O C H three. That C O O linkage between two carbon groups is an ester, so we use the alkyl alkanoate pattern. The acid part, C H three C H two C O O, is propanoate. The alkyl part, the O C H three, is methyl, and it goes first. So the name is methyl propanoate. Functional group first every time, and for the ester, the alcohol part leads."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Classify the isomer type",
+      "question": "A student calls propan-1-ol and propan-2-ol functional group isomers. Is that right?",
+      "coachNote": "Compare formula, then functional group, then position.",
+      "steps": [
+        "Both are C3H8O, so they are genuine structural isomers ✓",
+        "Both contain the same -OH group, so the functional group is identical",
+        "\"Functional group isomers\" is wrong: that label needs different groups",
+        "Same formula, same group, same skeleton, -OH at C1 vs C2 → position isomers",
+        "Answer: they are position isomers, not functional group isomers ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "propan-1-ol vs propan-2-ol are position isomers, not functional group isomers.",
+      "voiceover": {
+        "text": "Now the classic isomer trap. A student says propan-one-ol and propan-two-ol are functional group isomers, because they have the same formula but the oxygen hydrogen is in a different place. Let's evaluate it. Step one, check the formula. Both are C three H eight O, so yes, they are genuine structural isomers, that part is fine. Step two, look at the functional group. Both contain an oxygen hydrogen group, an alcohol, so the functional group is identical in both. Step three, that's the problem, because functional group isomers must have different functional groups, and these don't. Step four, so what are they? Same formula, same group, same three carbon skeleton, with the oxygen hydrogen at carbon one versus carbon two. That's the definition of position isomers. So the student is wrong, they're position isomers, and only the position of the group has changed."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three classification traps",
+      "body": "Trap 1: writing esters as \"ethanoate ethyl\". The alkyl, from the alcohol, always comes first.",
+      "secondary": "Trap 2: calling propan-1-ol and propan-2-ol functional group isomers. They share the -OH group, so they are position isomers. Trap 3: treating amides as basic like amines. The amide nitrogen lone pair is tied up next to the C=O, so amides are neutral.",
+      "mistakeTag": "Where naming and isomer marks vanish",
+      "callout": "Alkyl first, position not functional group, amides are neutral.",
+      "durationInFrames": 1230,
+      "caption": "Ester alkyl first; 1-ol vs 2-ol are position isomers; amides are neutral.",
+      "voiceover": {
+        "text": "Three traps to sidestep. Trap one, writing an ester back to front, like ethanoate ethyl. The alkyl group, the one from the alcohol, always comes first, so it's ethyl ethanoate. Trap two, calling propan-one-ol and propan-two-ol functional group isomers. They both contain the same oxygen hydrogen group, so the functional group hasn't changed, only its position has, which makes them position isomers. Functional group isomers need genuinely different groups, like an aldehyde versus a ketone. Trap three, assuming amides are basic just because they contain nitrogen, like amines. They aren't. In an amide, the nitrogen's lone pair is pulled into the neighbouring carbon double bond oxygen, so it isn't free to grab a proton. That makes amines weak bases, but amides neutral."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Name CH3CH2CH(NH2)CH3 and classify the amine. Then classify butan-1-ol vs butan-2-ol.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Longest chain 4 C, -NH2 at C2 (lower locant) → butan-2-amine",
+        "Nitrogen carries only one alkyl group → primary amine",
+        "Butan-1-ol vs butan-2-ol: both C4H10O, both -OH, same skeleton",
+        "Only the -OH position differs (C1 vs C2) → position isomers",
+        "Answer: butan-2-amine (primary); the alcohols are position isomers ✓"
+      ],
+      "durationInFrames": 1260,
+      "caption": "Butan-2-amine is a primary amine; butan-1-ol and butan-2-ol are position isomers.",
+      "voiceover": {
+        "text": "Quick check with two parts. First, name C H three C H two C H bracket N H two, C H three, and classify the amine. Pause and work it through. Right. The longest chain is four carbons, and the nitrogen group sits on carbon two, which is the lower locant, so it's butan-two-amine. Now classify it. The nitrogen is bonded to just one alkyl group, the rest of the chain, so it's a primary amine. Don't be fooled by the position number, primary refers to the groups on the nitrogen, not the locant. Second part, classify butan-one-ol against butan-two-ol. Both are C four H ten O, both have an oxygen hydrogen group, and both have the same four carbon skeleton. Only the position of that group differs, carbon one versus carbon two, so they're position isomers. So, butan-two-amine, a primary amine, and the two alcohols are position isomers."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "The functional group decides the suffix; identify it before naming.",
+        "Classify alcohols and amines by counting carbon neighbours of the key atom.",
+        "Tell aldehyde, ketone and acid apart by what sits on the carbonyl carbon.",
+        "Esters are alkyl alkanoate, with the alkyl (from the alcohol) written first.",
+        "Isomers: chain (skeleton), position (place), or functional group (group itself)."
+      ],
+      "finalPrompt": "Naming: group first, suffix follows. Isomers: ask what actually changed.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: suffix from group, 1/2/3 classification, carbonyl check, esters, isomer types.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, the functional group sets the suffix, so always identify it before you name anything. Second, classify alcohols and amines by counting the carbon neighbours on the key atom, one, two, or three for primary, secondary, tertiary. Third, separate aldehyde, ketone, and carboxylic acid by looking at what's bonded to the carbonyl carbon, a hydrogen, two carbons, or an oxygen hydrogen group. Fourth, name esters as alkyl alkanoate, with the alkyl part, the one from the alcohol, written first. And fifth, the three isomer types, chain isomers change the skeleton, position isomers move the group, and functional group isomers swap the group entirely. Next lesson we use this to explain physical properties across a homologous series. See you next lesson."
+      }
+    }
+  ]
+}

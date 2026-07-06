@@ -1,0 +1,216 @@
+{
+  "title": "Concentration: Moles Per Litre",
+  "subtitle": "The most-used calculation in senior chemistry",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 6",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "conduct investigations to determine the concentration of solutions and calculate the concentration of solutions in moles per litre (mol L⁻¹)"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": [
+    "CH11-9",
+    "CH11/12-4",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "How are chemicals in solutions measured?",
+  "lessonIntent": "Students can calculate concentration in mol L⁻¹ using c = n ÷ V, rearrange it for amount or volume, and convert mass or g L⁻¹ data into molarity.",
+  "examSkill": "Apply c = n ÷ V with volume in litres; rearrange for n or V; convert grams to moles before finding concentration.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, concentration, the most-used calculation in the whole course. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Concentration: Moles Per Litre (Year 11 Chemistry, Module 2, Lesson 6)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why does an espresso hit harder?",
+      "body": "Same caffeine, same cup size, different strength. That difference is concentration.",
+      "callout": "It's the single most-used calculation in senior chemistry.",
+      "durationInFrames": 690,
+      "caption": "Concentration is how much solute sits in a given volume of solution.",
+      "voiceover": {
+        "text": "OK, here's something you already know without the chemistry. A mug of drip coffee and a tiny espresso can both contain caffeine, but the espresso hits harder. Why? Because the same amount of caffeine is packed into a much smaller volume. That's concentration. And it's everywhere. A nurse setting an IV drip, a pool technician testing chlorine, a chemist mixing a reagent, they're all working with this one idea. It's the single most-used calculation in the whole senior course, so let's nail it properly."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "What concentration means",
+      "body": "Concentration is the amount of solute divided by the volume of solution it's dissolved in.",
+      "bullets": [
+        {
+          "text": "More solute in the same volume means a higher concentration."
+        },
+        {
+          "text": "The same solute in a larger volume means a lower concentration."
+        },
+        {
+          "text": "In chemistry we measure it in moles per litre, written mol L⁻¹."
+        }
+      ],
+      "secondary": "Moles per litre is also called molarity. It tells you how crowded the dissolved particles are.",
+      "callout": "Concentration is about crowding, not total amount.",
+      "durationInFrames": 1110,
+      "caption": "Concentration = amount of solute ÷ volume of solution, in mol L⁻¹.",
+      "voiceover": {
+        "text": "So what is concentration, exactly? It's the amount of stuff dissolved, divided by the volume it's dissolved in. Put more solute into the same volume, and the concentration goes up. Spread the same solute through a bigger volume, and it goes down. In chemistry we measure it in moles per litre, written mol L to the minus one, and we call that molarity. Here's the mindset that helps. Concentration isn't about how much you have in total. It's about how crowded the particles are. A drop of food dye in a teaspoon of water is intense. The same drop in a swimming pool is barely there. Same dye, completely different concentration."
+      },
+      "diagram": {
+        "type": "concentrationCompare"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Solute: the substance that dissolves, like the salt in saltwater."
+        },
+        {
+          "text": "Solvent: the liquid doing the dissolving, usually water."
+        },
+        {
+          "text": "Solution: the two combined, written with (aq) when it's water-based."
+        },
+        {
+          "text": "Concentration (c): amount of solute per litre of solution, in mol L⁻¹."
+        }
+      ],
+      "callout": "Volume means the volume of the whole solution, not just the solvent.",
+      "durationInFrames": 960,
+      "caption": "Solute dissolves into solvent to make a solution; concentration measures the crowding.",
+      "voiceover": {
+        "text": "Let's lock in the words, because the exam uses them precisely. The solute is the thing that dissolves, like the salt in saltwater. The solvent is the liquid doing the dissolving, which is usually water. Put them together and you get a solution, and when water is the solvent we label it a q, for aqueous. Concentration, given the symbol lowercase c, is the amount of solute per litre of solution. And here's the detail that catches people out. Volume means the volume of the finished solution, not just the water you started with."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The formula",
+      "body": "c equals n divided by V. Concentration equals moles of solute over volume of solution in litres.",
+      "bullets": [
+        {
+          "text": "Find c → divide moles by litres."
+        },
+        {
+          "text": "Find n → multiply concentration by litres."
+        },
+        {
+          "text": "Find V → divide moles by concentration."
+        }
+      ],
+      "secondary": "Volume must be in litres. If you're given millilitres, divide by 1000 first.",
+      "callout": "500 mL is 0.5 L. Convert before you substitute.",
+      "durationInFrames": 1020,
+      "caption": "c = n ÷ V. Rearrange for n or V. Volume always in litres.",
+      "voiceover": {
+        "text": "Here's the formula that does all the work. c equals n over V. Concentration equals the moles of solute, divided by the volume of solution in litres. Like the formulas before it, it rearranges three ways. To find concentration, divide moles by litres. To find the moles, multiply concentration by litres. To find the volume, divide moles by concentration. There's one rule that trips up more students than anything else in this topic. The volume has to be in litres. Almost every question gives you millilitres to test whether you remember. Five hundred millilitres is nought-point-five litres. Convert first, then substitute."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Worked example",
+      "question": "0.500 mol of NaOH is dissolved to make 250 mL of solution. Find the concentration in mol L⁻¹.",
+      "coachNote": "Convert the volume to litres before substituting.",
+      "steps": [
+        "Knowns: n = 0.500 mol, V = 250 mL",
+        "Convert: V = 250 ÷ 1000 = 0.250 L",
+        "Formula: c = n ÷ V",
+        "Substitute: c = 0.500 ÷ 0.250",
+        "Answer: c = 2.00 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "0.500 mol NaOH in 250 mL gives 2.00 mol L⁻¹.",
+      "voiceover": {
+        "text": "Let's work one through. Nought-point-five moles of sodium hydroxide is dissolved to make two hundred and fifty millilitres of solution. Find the concentration. Step one, write down what you know. n is nought-point-five moles, and the volume is two hundred and fifty millilitres. Step two, and this is the one everyone forgets, convert the volume to litres. Two hundred and fifty divided by a thousand is nought-point-two-five litres. Step three, the formula. c equals n over V. Step four, substitute. Nought-point-five divided by nought-point-two-five. Step five, that gives two moles per litre. If you'd left the volume in millilitres, you'd have been off by a factor of a thousand, so always convert first."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "When they give you grams",
+      "question": "5.85 g of NaCl is dissolved to make 500 mL of solution. Find the concentration. (Na = 22.99, Cl = 35.45)",
+      "coachNote": "Grams first become moles, then concentration.",
+      "steps": [
+        "M(NaCl) = 22.99 + 35.45 = 58.44 g mol⁻¹",
+        "n = m ÷ M = 5.85 ÷ 58.44 = 0.100 mol",
+        "Convert: V = 500 ÷ 1000 = 0.500 L",
+        "c = n ÷ V = 0.100 ÷ 0.500",
+        "Answer: c = 0.200 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "5.85 g NaCl in 500 mL: convert to moles first, then 0.200 mol L⁻¹.",
+      "voiceover": {
+        "text": "Now a tougher version, because the exam loves to give you grams instead of moles. Five-point-eight-five grams of sodium chloride is dissolved to make five hundred millilitres of solution. Find the concentration. The trick is that you can't put grams into the concentration formula. You have to go through moles first. Step one, molar mass of sodium chloride. Twenty-two-point-nine-nine plus thirty-five-point-four-five, which is fifty-eight-point-four-four grams per mole. Step two, convert the mass to moles. Five-point-eight-five divided by fifty-eight-point-four-four is nought-point-one moles. Step three, convert the volume. Five hundred millilitres is nought-point-five litres. Step four, now use the formula. c equals nought-point-one over nought-point-five. That's nought-point-two moles per litre. Grams to moles, then moles to concentration. Never skip the middle step."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: substituting millilitres straight into the formula. Volume must be in litres, so divide by 1000 first.",
+      "secondary": "Trap 2: using the volume of solute instead of the volume of the whole solution. Trap 3: putting grams per litre straight into c = n ÷ V. Convert grams to moles first.",
+      "mistakeTag": "Where solution marks vanish",
+      "callout": "Litres, whole solution, moles. Check all three before you substitute.",
+      "durationInFrames": 1290,
+      "caption": "Watch units (L not mL), volume of solution not solute, and convert grams to moles.",
+      "voiceover": {
+        "text": "Three traps cost students easy marks in this topic, every single year. Trap one, substituting millilitres straight into the formula. The volume has to be in litres, so divide by a thousand first. This is the most common mistake in the entire module. Trap two, using the volume of the solute instead of the volume of the whole solution. The formula always wants the volume of the finished solution. Trap three, putting grams per litre straight into the concentration formula. The formula needs moles, so if you're given a mass, convert it to moles first using the molar mass. Litres, whole solution, moles. Check all three before you substitute, and these marks are yours."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "What volume of 0.250 mol L⁻¹ glucose solution contains 0.0500 mol of glucose?",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Knowns: c = 0.250 mol L⁻¹, n = 0.0500 mol",
+        "Rearrange: V = n ÷ c",
+        "Substitute: V = 0.0500 ÷ 0.250",
+        "V = 0.200 L",
+        "Convert if needed: 0.200 L = 200 mL ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "V = n ÷ c = 0.0500 ÷ 0.250 = 0.200 L (200 mL).",
+      "voiceover": {
+        "text": "Quick check. What volume of a nought-point-two-five mole per litre glucose solution contains nought-point-zero-five moles of glucose? Pause and work it through. Right, let's check it. You know the concentration and the moles, and you want the volume, so rearrange the formula. V equals n over c. Substitute. Nought-point-zero-five divided by nought-point-two-five. That's nought-point-two litres. And if the question wanted millilitres, multiply by a thousand to get two hundred millilitres. Either form is correct, just state your units."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Concentration is amount of solute per litre of solution, in mol L⁻¹.",
+        "c = n ÷ V. Rearrange for n or V as needed.",
+        "Volume must be in litres. Convert mL by dividing by 1000.",
+        "Given grams? Convert to moles first, then find concentration.",
+        "Volume means the whole solution, not just the solvent."
+      ],
+      "finalPrompt": "Before every concentration question: is my volume in litres?",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: c = n ÷ V, litres, grams-to-moles first, whole-solution volume.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, concentration is the amount of solute per litre of solution, measured in moles per litre. Second, the formula is c equals n over V, and it rearranges to give you moles or volume. Third, the volume must be in litres, so convert millilitres by dividing by a thousand. Fourth, if a question gives you grams, convert to moles first, then find the concentration. And fifth, volume always means the whole solution, not just the solvent you started with. Get those five right, and concentration becomes one of the easiest mark-earners in the course. See you next lesson."
+      }
+    }
+  ]
+}

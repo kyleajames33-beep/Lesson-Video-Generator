@@ -1,0 +1,285 @@
+{
+  "title": "Antibiotics and Antivirals",
+  "subtitle": "Why one drug class works on bacteria, another on viruses, and resistance evolves",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 16",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "investigate and assess the effectiveness of pharmaceuticals as treatment strategies for the control of infectious disease, for example: antivirals and antibiotics"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How can the spread of infectious diseases be controlled?",
+  "lessonIntent": "Students can explain antibiotic selective toxicity, why antibiotics fail against viruses, how antivirals work, and how antibiotic resistance evolves by natural selection.",
+  "examSkill": "Explain why antibiotics target bacteria but not viruses, and explain resistance as a natural selection process.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, antibiotics and antivirals. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Antibiotics and Antivirals (Year 12 Biology, Module 7, Lesson 16)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A warning at the Nobel podium",
+      "body": "Penicillin may have prevented one in seven WWII wound deaths. In 1945 Fleming warned it could all be undone.",
+      "callout": "Was Fleming right that misuse would breed resistant bacteria?",
+      "image": "bioM7L16PenicillinResistance",
+      "durationInFrames": 1735,
+      "caption": "Penicillin's wartime impact, and Fleming's 1945 warning about resistance.",
+      "voiceover": {
+        "text": "OK, picture nineteen forty. At Oxford, Howard Florey and Ernst Chain purified enough penicillin to treat a policeman dying of blood poisoning. The drug clearly worked, but there wasn't enough of it, and he died anyway. Four years later, by D-Day, the US Army had two point three million doses, and penicillin is estimated to have prevented something like one in seven battlefield deaths from wound infections. It was a miracle drug. But here's the twist. When Fleming accepted his Nobel Prize in nineteen forty-five, he used the moment to warn the world, explicitly, that misusing penicillin would breed bacteria that could resist it. He predicted the crisis we're living through right now. So today, two big questions, how do these drugs actually work, and was Fleming right?"
+      }
+    },
+    {
+      "id": "concept-antibiotics",
+      "type": "concept",
+      "heading": "Antibiotics use selective toxicity",
+      "body": "Antibiotics hit structures and processes that bacteria have but our own cells do not. That is what makes them safe.",
+      "bullets": [
+        {
+          "text": "They target bacteria-only features: the peptidoglycan cell wall, the 70S ribosome, DNA gyrase, folate synthesis."
+        },
+        {
+          "text": "Human cells lack these, so the drug harms the bacterium while leaving us largely untouched."
+        },
+        {
+          "text": "Bactericidal antibiotics kill bacteria directly; bacteriostatic ones halt growth so the immune system clears them."
+        }
+      ],
+      "secondary": "Selective toxicity is the whole idea. Penicillin blocks cell wall building, a structure human cells simply do not have.",
+      "callout": "Hit what bacteria have and we don't.",
+      "durationInFrames": 1885,
+      "caption": "Antibiotics work by selective toxicity, targeting bacteria-only structures.",
+      "voiceover": {
+        "text": "Let's start with how antibiotics work, and the key phrase is selective toxicity. An antibiotic has to kill the bacterium without poisoning you, and it pulls that off by attacking structures and processes that bacteria have but your cells don't. So what are those bacteria-only targets? There's the peptidoglycan cell wall, which human cells completely lack, that's what penicillin attacks. There's the bacterial ribosome, the seventy S ribosome, which is different from our eighty S one. There's an enzyme called DNA gyrase, and there's the folate synthesis pathway, which bacteria run themselves but we don't. Because human cells don't have these, the drug damages the bacterium and mostly leaves us alone. One more distinction, some antibiotics are bactericidal, they kill bacteria outright, and others are bacteriostatic, they just stop bacteria growing so your immune system can finish the job."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Antibiotic target",
+          "In bacteria?",
+          "In human cells?"
+        ],
+        "rows": [
+          [
+            "Peptidoglycan cell wall",
+            "Yes",
+            "No"
+          ],
+          [
+            "70S ribosome",
+            "Yes",
+            "No (we have 80S)"
+          ],
+          [
+            "DNA gyrase",
+            "Yes",
+            "No"
+          ],
+          [
+            "Folate synthesis",
+            "Yes",
+            "No (we eat folate)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Antibiotic: a drug that kills bacteria or stops them growing."
+        },
+        {
+          "text": "Antiviral: a drug that interferes with a specific stage of viral replication."
+        },
+        {
+          "text": "Selective toxicity: targeting pathogen-only structures with limited harm to host cells."
+        },
+        {
+          "text": "Antibiotic resistance: the heritable ability of bacteria to survive antibiotic exposure."
+        }
+      ],
+      "callout": "Antibiotics for bacteria, antivirals for viruses, never the reverse.",
+      "durationInFrames": 1815,
+      "caption": "Antibiotic, antiviral, selective toxicity, antibiotic resistance.",
+      "voiceover": {
+        "text": "Let's pin down the key terms. An antibiotic is a drug that kills bacteria, or stops them growing. An antiviral is different, it's a drug that interferes with a specific stage of a virus's replication cycle. Selective toxicity, which we just met, is the principle of targeting pathogen-only structures while doing limited harm to your own cells, it's why these drugs are safe to take. And antibiotic resistance is the heritable ability of bacteria to survive exposure to an antibiotic, heritable being the important word, because it means it can be passed on to the next generation. Keep the first two completely separate in your mind, antibiotics for bacteria, antivirals for viruses, and never the other way around. Getting that wrong is one of the most common and most penalised errors in this topic."
+      }
+    },
+    {
+      "id": "concept-viruses",
+      "type": "concept",
+      "heading": "Why antibiotics fail on viruses",
+      "body": "Antibiotics are useless against viruses, and the reason is simple: the targets just are not there.",
+      "bullets": [
+        {
+          "text": "Viruses have no cell wall, no 70S ribosome, no DNA gyrase, and no folate pathway."
+        },
+        {
+          "text": "They hijack the host cell's own machinery, so there is nothing for an antibiotic to attack."
+        },
+        {
+          "text": "Antivirals instead target the few processes unique to the virus, like its own enzymes."
+        }
+      ],
+      "secondary": "Antivirals are harder to design than antibiotics, precisely because a virus uses your own cell's machinery, so there are very few virus-only targets to aim at safely.",
+      "callout": "No bacterial structures means no antibiotic targets.",
+      "durationInFrames": 2115,
+      "caption": "Antibiotics fail on viruses because viruses lack all the bacterial targets.",
+      "voiceover": {
+        "text": "Now the most clinically important point in this whole topic, and the one students get wrong most often. Antibiotics do absolutely nothing against viral infections. Taking antibiotics for a cold or the flu is pointless. And the reason is beautifully simple, the targets just aren't there. A virus has no cell wall, no seventy S ribosome, no DNA gyrase, and no folate pathway. It doesn't have any of the structures antibiotics attack, because a virus isn't a cell at all. Instead, a virus hijacks your own cell's machinery to copy itself, so there's simply nothing for the antibiotic to bind to. So how do we fight viruses? With antivirals, which target the few processes that are genuinely unique to the virus, usually the virus's own enzymes. And that's exactly why antivirals are so much harder to design than antibiotics, because the virus is using your machinery, there are very few virus-only targets you can safely hit."
+      }
+    },
+    {
+      "id": "concept-resistance",
+      "type": "concept",
+      "heading": "Resistance is natural selection",
+      "body": "Antibiotics do not create resistance. They select for resistant variants that already exist in the population.",
+      "bullets": [
+        {
+          "text": "Rare resistant variants arise by random mutation before the antibiotic ever arrives."
+        },
+        {
+          "text": "The antibiotic kills the susceptible bacteria, sparing the resistant ones, which then reproduce."
+        },
+        {
+          "text": "Horizontal gene transfer via plasmids can spread resistance between species in hours."
+        }
+      ],
+      "secondary": "This is textbook natural selection happening within a human lifetime. The drug is the selection pressure, not the cause of the mutation.",
+      "callout": "The antibiotic selects resistance; it does not create it.",
+      "durationInFrames": 2030,
+      "caption": "Resistance evolves by natural selection; plasmids spread it between species.",
+      "voiceover": {
+        "text": "So was Fleming right? Absolutely, and resistance is one of the clearest examples of natural selection you can see in a human lifetime. Here's the crucial idea. The antibiotic does not create resistance. Within any large bacterial population, rare resistant variants already exist, thrown up by random mutation before the antibiotic ever shows up. When you apply the antibiotic, it kills off the susceptible bacteria, but the resistant ones survive, and now they have the whole place to themselves, so they reproduce, and the next generation is mostly resistant. The drug acted as the selection pressure, it selected for resistance, it didn't cause the mutation. And it gets worse, because bacteria can swap resistance genes directly, on little rings of DNA called plasmids, through horizontal gene transfer. A resistance gene can jump from one species to a completely different species in a matter of hours, far faster than mutation alone."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "n1",
+            "label": "Mutation"
+          },
+          {
+            "id": "n2",
+            "label": "Exposure"
+          },
+          {
+            "id": "n3",
+            "label": "Survive"
+          },
+          {
+            "id": "n4",
+            "label": "Spread"
+          }
+        ],
+        "edges": [
+          {
+            "from": "n1",
+            "to": "n2"
+          },
+          {
+            "from": "n2",
+            "to": "n3"
+          },
+          {
+            "from": "n3",
+            "to": "n4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Explain the resistant population",
+      "question": "A patient stops their antibiotics early, feeling better. Weeks later the infection returns and the same antibiotic no longer works. Using natural selection, explain what happened.",
+      "coachNote": "Trace variation, selection pressure and reproduction, and why stopping early matters.",
+      "steps": [
+        "The original population contained rare resistant variants from random mutation.",
+        "The antibiotic killed the susceptible bacteria first; the hardier, more resistant ones survived longest.",
+        "Stopping early left those survivors alive instead of eliminating the whole population.",
+        "Those resistant survivors reproduced, so the returning population is now mostly resistant.",
+        "Answer: incomplete treatment selected for resistant survivors that repopulated, so the drug now fails ✓"
+      ],
+      "durationInFrames": 2085,
+      "caption": "Stopping antibiotics early selects for the resistant survivors that repopulate.",
+      "voiceover": {
+        "text": "Let's apply this to the classic scenario your teacher warns you about, stopping antibiotics early. A patient feels better after a few days and stops taking the course. Weeks later the infection comes back, and now the same antibiotic doesn't work. Explain it with natural selection. Step one, the original bacterial population already contained rare resistant variants, from random mutation. Step two, when the antibiotic went in, it killed the susceptible bacteria first, and the hardier, more resistant individuals survived the longest. Step three, by stopping early, the patient left those survivors alive, instead of finishing the course and wiping out the whole population. Step four, those resistant survivors then reproduced, so the population that grew back is now mostly resistant. That's why the answer is, incomplete treatment selected for the resistant survivors, which repopulated, so the drug now fails. This is exactly why you finish the whole course, even when you feel fine."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking individual bacteria become resistant by trying to survive. Mutations are random and pre-exist; the drug only selects.",
+      "secondary": "Trap 2: thinking your body becomes resistant to antibiotics. Resistance evolves in the bacterial population, not in you. And a third quick one, antivirals do not kill viruses directly the way antibiotics kill bacteria, they block a step in viral replication.",
+      "mistakeTag": "Who becomes resistant, and how",
+      "callout": "Bacteria don't try to mutate; you don't become resistant; antivirals block, not kill.",
+      "durationInFrames": 1965,
+      "caption": "Resistance is random and population-level; antivirals block replication.",
+      "voiceover": {
+        "text": "Two traps, and they both cost marks. Trap one, writing that individual bacteria become resistant because they try to survive the antibiotic, or because the antibiotic makes them adapt. That's wrong, and it's the Lamarckian mistake. Mutations are random and they already exist in the population before the drug arrives. The antibiotic doesn't induce resistance, it just selects the variants that happen to have it. Trap two, saying that your body becomes resistant to antibiotics. It doesn't. Resistance evolves in the bacterial population, not in the person. After many courses, you might be carrying more resistant bacteria, but you, the human, have not become resistant. And a quick third one to remember, antivirals don't kill viruses directly the way antibiotics kill bacteria. They block a specific step in viral replication, which is why they work best taken early, before the virus has copied itself everywhere."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A doctor refuses to prescribe antibiotics for a patient's viral throat infection. Explain why antibiotics would not help, and why prescribing them anyway would be harmful.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The infection is viral, and viruses lack cell walls, 70S ribosomes, DNA gyrase and folate synthesis.",
+        "Antibiotics target exactly those bacterial structures, so there is nothing for them to act on.",
+        "So the antibiotic would give no benefit against the virus at all.",
+        "It would still kill the patient's normal bacteria and apply selection pressure that drives resistance.",
+        "Answer: no benefit because the viral targets are absent, plus it needlessly promotes resistance ✓"
+      ],
+      "durationInFrames": 2020,
+      "caption": "Antibiotics give no benefit against viruses and still drive resistance.",
+      "voiceover": {
+        "text": "Quick check. A doctor refuses to prescribe antibiotics for a patient's viral throat infection. Explain why the antibiotics wouldn't help, and why prescribing them anyway would actually be harmful. Pause and reason it through. Right. First, why no benefit? The infection is viral, and viruses lack all the bacterial targets, no cell wall, no seventy S ribosome, no DNA gyrase, no folate pathway. Antibiotics work by attacking exactly those structures, so against a virus there's simply nothing for the drug to act on, zero benefit. Now, why is it harmful, not just useless? Because the antibiotic would still kill off the patient's normal, helpful bacteria, the gut flora, and more importantly it would apply selection pressure that drives antibiotic resistance, for no good reason. So the answer is, no benefit because the viral targets are absent, and real harm because it needlessly promotes resistance. That's why responsible prescribing matters."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Antibiotics work by selective toxicity, hitting bacteria-only targets: cell wall, 70S ribosome, DNA gyrase, folate synthesis.",
+        "Antibiotics fail on viruses because viruses lack all those targets and use the host's machinery.",
+        "Antivirals block a specific step in viral replication; they are harder to design.",
+        "Resistance is natural selection: the drug selects pre-existing resistant variants, it does not create them.",
+        "Plasmids spread resistance between species fast via horizontal gene transfer."
+      ],
+      "finalPrompt": "Bacterial or viral? Match the drug, then check whether the target even exists.",
+      "durationInFrames": 1845,
+      "caption": "Five takeaways: selective toxicity, viruses, antivirals, resistance, and plasmids.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, antibiotics work by selective toxicity, hitting targets only bacteria have, the cell wall, the seventy S ribosome, DNA gyrase, and folate synthesis. Second, antibiotics are useless against viruses, because viruses lack all of those targets and just borrow your cell's machinery. Third, antivirals work differently, they block a specific step in viral replication, and they're harder to design because there are so few virus-only targets. Fourth, antibiotic resistance is natural selection, the drug selects for resistant variants that already existed, it does not create them. And fifth, plasmids can spread resistance genes between species fast, through horizontal gene transfer. Whenever you're faced with an infection, ask first, is it bacterial or viral, match the drug, then check whether the target even exists. See you next lesson."
+      }
+    }
+  ]
+}

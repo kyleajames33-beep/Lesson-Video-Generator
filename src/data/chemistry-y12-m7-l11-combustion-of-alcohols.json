@@ -1,0 +1,266 @@
+{
+  "title": "Combustion of Alcohols & Comparison with Fossil Fuels",
+  "subtitle": "The calorimetry calculation, the discrepancy, and the energy trend",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 11",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "conduct a practical investigation to measure and reliably compare the enthalpy of combustion for a range of alcohols",
+    "compare and contrast fuels from organic sources to biofuels, including ethanol"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": [
+    "CH12-14",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "How can alcohols be produced and what are their properties?",
+  "lessonIntent": "Students can calculate molar enthalpy of combustion from calorimetry data, explain why experimental values are systematically low, and describe the energy trend down the alcohol series.",
+  "examSkill": "Run q = mcDeltaT then n then DeltaHc with units, and explain why experimental values are systematically low.",
+  "productionNotes": "Part A of a 2-part split of Lesson 11. Covers the calorimetry method, the systematic discrepancy, and the energy trend. Part B covers the biofuel debate, worked examples, traps and practice. Bridge scene at the end teases Part B.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the calorimetry of alcohol combustion, why the experiment falls short, and the energy trend down the series. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Combustion of Alcohols & Comparison with Fossil Fuels, Part A (Year 12 Chemistry, Module 7, Lesson 11)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Where did half the heat go?",
+      "body": "A student burns methanol in a spirit burner and gets 53 percent of the textbook enthalpy of combustion. No calculation error, equipment fine.",
+      "callout": "Why does the experiment fall so far short?",
+      "durationInFrames": 690,
+      "caption": "Spirit burner experiments systematically underestimate the enthalpy of combustion.",
+      "voiceover": {
+        "text": "OK, here's a result that confuses students every year. Someone burns methanol in a spirit burner under a can of water, measures the temperature rise and the mass of fuel used, and calculates the molar enthalpy of combustion. The textbook value is minus seven hundred and twenty-six kilojoules per mole. Their experiment gives minus three hundred and eighty-three, barely fifty-three percent of it. And here's the thing, there's no calculation error, and the equipment was set up correctly. So where did the other half of the heat go? That question is the heart of this lesson. We'll do the calorimetry calculation, explain why the experiment always falls short, and then look at how combustion energy grows down the alcohol series."
+      }
+    },
+    {
+      "id": "concept-method",
+      "type": "concept",
+      "heading": "The calorimetry calculation",
+      "body": "Three steps turn a temperature rise and a mass loss into a molar enthalpy of combustion.",
+      "image": "m7L11Calorimeter",
+      "bullets": [
+        {
+          "text": "Step 1: heat into the water, q = m c DeltaT, where m is the mass of WATER."
+        },
+        {
+          "text": "Step 2: moles of fuel, n = mass of fuel burned divided by molar mass."
+        },
+        {
+          "text": "Step 3: DeltaHc = minus q (in kJ) divided by n, a negative value."
+        }
+      ],
+      "secondary": "Use c = 4.18 joules per gram per degree. Convert q from joules to kilojoules before step 3. The m in q = m c DeltaT is always the water, never the fuel.",
+      "callout": "q from the water, n from the fuel, then combine.",
+      "durationInFrames": 1080,
+      "caption": "q = mcDeltaT (water), n = mass/M (fuel), DeltaHc = -q/n in kJ/mol.",
+      "voiceover": {
+        "text": "Let's set up the calculation, which is just three steps. Step one, find the heat absorbed by the water, using q equals m c delta T. Here m is the mass of the water, c is the specific heat capacity of water, four point one eight joules per gram per degree, and delta T is the temperature rise. This gives q in joules. Step two, find the moles of fuel burned, using n equals the mass of fuel burned divided by its molar mass. Step three, find the molar enthalpy of combustion, delta H c equals minus q divided by n, and it comes out negative because combustion is exothermic. Two things people get wrong. The m in q equals m c delta T is always the mass of water, not the fuel, because it's the water whose temperature you measured. And you must convert q from joules to kilojoules, dividing by a thousand, before the last step."
+      }
+    },
+    {
+      "id": "concept-discrepancy",
+      "type": "concept",
+      "heading": "Why the result is always low",
+      "body": "Experimental values are always lower in magnitude than theoretical, typically 40 to 70 percent. This is systematic, not random.",
+      "bullets": [
+        {
+          "text": "Heat loss to surroundings: walls, air and bench absorb heat, so q is too low."
+        },
+        {
+          "text": "Incomplete combustion: CO and soot keep energy, so q is too low."
+        },
+        {
+          "text": "Evaporation without burning: inflates the fuel mass, so n is too high."
+        }
+      ],
+      "secondary": "All causes push the magnitude of DeltaHc down, in the same direction every time. So repeating trials does not fix it; only redesigning the experiment helps.",
+      "callout": "Systematic error: repeats improve precision, not accuracy.",
+      "durationInFrames": 1080,
+      "caption": "Heat loss, incomplete combustion, evaporation all lower the magnitude of DeltaHc.",
+      "voiceover": {
+        "text": "Now the big conceptual point, why the experimental value is always lower in magnitude than the textbook one, typically only forty to seventy percent of it. There are three main causes. One, heat loss to the surroundings. The calorimeter walls, the air, and the bench all absorb heat that never reaches the water, so the measured q is too low. Two, incomplete combustion. A spirit burner flame can produce carbon monoxide and soot, which still hold chemical energy that wasn't released as heat, so again q is too low. Three, evaporation without burning. Some alcohol evaporates off the wick without combusting, which inflates the mass loss, so n comes out too high. Crucially, all three push the magnitude of delta H c downward, in the same direction every single time. That makes it a systematic error, so repeating the experiment and averaging won't fix it, it only improves precision. Only redesigning the experiment reduces it."
+      }
+    },
+    {
+      "id": "formula-trend",
+      "type": "concept",
+      "heading": "Energy with chain length",
+      "body": "Molar enthalpy of combustion grows steadily down the alcohol series, by about 650 kJ per mole per CH2 unit.",
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          {
+            "label": "Methanol",
+            "value": 726
+          },
+          {
+            "label": "Ethanol",
+            "value": 1367
+          },
+          {
+            "label": "Propan-1-ol",
+            "value": 2021
+          },
+          {
+            "label": "Butan-1-ol",
+            "value": 2676
+          },
+          {
+            "label": "Pentan-1-ol",
+            "value": 3329
+          }
+        ],
+        "unit": "kJ/mol (magnitude)"
+      },
+      "bullets": [
+        {
+          "text": "Each extra CH2 adds C-H and C-C bonds that release energy on combustion."
+        },
+        {
+          "text": "Magnitude rises by a near-constant ~650 kJ/mol per CH2 unit."
+        },
+        {
+          "text": "Energy density (kJ/g) also rises with chain length."
+        }
+      ],
+      "secondary": "But every alcohol has a lower energy density than the matching alkane, because the -OH adds oxygen mass without adding much combustion energy.",
+      "callout": "More CH2 units, more bonds combusted, more energy per mole.",
+      "durationInFrames": 1080,
+      "caption": "DeltaHc magnitude rises ~650 kJ/mol per CH2 down the alcohol series.",
+      "voiceover": {
+        "text": "Let's look at the trend in combustion energy down the alcohol series. The molar enthalpy of combustion grows steadily as the chain gets longer. Methanol is about minus seven hundred and twenty-six, ethanol about minus one thousand three hundred and sixty-seven, propan-one-ol about minus two thousand and twenty-one, and so on up. The increase per step is remarkably constant, roughly six hundred and fifty kilojoules per mole for each extra C H two unit. The reason is bond-based, each extra C H two adds carbon hydrogen and carbon carbon bonds, and when those combust they form more carbon dioxide and water, releasing about six hundred and fifty kilojoules more each time. Energy density, the kilojoules per gram, also rises with chain length. But here's the catch for the next comparison, every alcohol has a lower energy density than the matching alkane, because the oxygen hydrogen group adds oxygen mass without adding much combustion energy."
+      }
+    },
+    {
+      "id": "concept-biofuel",
+      "type": "concept",
+      "heading": "Ethanol vs fossil fuels",
+      "body": "Ethanol and petrol both burn to CO2 and water. The honest comparison weighs energy density against the carbon cycle.",
+      "bullets": [
+        {
+          "text": "Energy density: petrol about 48 kJ/g, ethanol about 30 kJ/g, so petrol is denser."
+        },
+        {
+          "text": "Both give only CO2 and water on complete combustion; neither is cleaner that way."
+        },
+        {
+          "text": "Ethanol's advantage is the carbon cycle: plants reabsorb the CO2 as they grow."
+        }
+      ],
+      "secondary": "So ethanol is near carbon neutral, but its lower energy density and the energy cost of distillation mean it is not simply better. Acknowledge both sides.",
+      "callout": "Same products; ethanol wins on carbon cycle, loses on energy density.",
+      "durationInFrames": 1080,
+      "caption": "Petrol is denser (48 vs 30 kJ/g); ethanol's edge is the near-neutral carbon cycle.",
+      "voiceover": {
+        "text": "Now the biofuel debate, and the trick is to be balanced. Compare ethanol with petrol, roughly octane. First, energy density. Petrol releases about forty-eight kilojoules per gram, while ethanol releases only about thirty. So petrol is significantly more energy dense, and a car on pure ethanol needs more fuel for the same range. Why? Because ethanol already contains an oxygen atom, it's partly oxidised, so less energy is released per gram when it burns. Second, the combustion products. Both ethanol and petrol produce only carbon dioxide and water when burned completely, so neither is cleaner in that sense. Ethanol's real advantage is the carbon cycle. Because it's made from plants that absorbed carbon dioxide as they grew, burning it is close to carbon neutral, whereas fossil fuel carbon is a net addition to the atmosphere. So ethanol wins on the carbon cycle, but loses on energy density, and a good answer states both."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Calculate the enthalpy of combustion",
+      "question": "Burning ethanol (M = 46.07) heats 200 g of water by 15.4C; the burner loses 0.48 g. Find DeltaHc.",
+      "coachNote": "Carry units through; convert q to kJ before the last step.",
+      "steps": [
+        "q = m c DeltaT = 200 x 4.18 x 15.4 = 12874 J",
+        "n = mass / M = 0.48 / 46.07 = 0.01042 mol",
+        "Convert q to kJ: 12874 J = 12.874 kJ",
+        "DeltaHc = -q / n = -12.874 / 0.01042 = -1236 kJ/mol",
+        "Answer: about -1240 kJ/mol (90% of the -1367 theoretical) ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "q = 12874 J, n = 0.0104 mol, DeltaHc = about -1240 kJ/mol.",
+      "voiceover": {
+        "text": "Let's run the calculation. Burning ethanol, molar mass forty-six point zero seven, heats two hundred grams of water by fifteen point four degrees, and the burner loses nought point four eight grams of fuel. Find delta H c. Step one, the heat into the water, q equals m c delta T, that's two hundred times four point one eight times fifteen point four, which is twelve thousand eight hundred and seventy-four joules. Remember, m is the water, two hundred grams. Step two, the moles of fuel, n equals nought point four eight divided by forty-six point zero seven, which is nought point zero one zero four two moles. Step three, convert q to kilojoules, twelve thousand eight hundred and seventy-four joules is twelve point eight seven four kilojoules. Step four, delta H c equals minus q over n, minus twelve point eight seven four divided by nought point zero one zero four two, which is about minus one thousand two hundred and forty kilojoules per mole. That's around ninety percent of the textbook value, so this was a well run experiment."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Explain three sources of error",
+      "question": "Why is the experimental DeltaHc always lower in magnitude than the theoretical value? Give three sources.",
+      "coachNote": "For each: name it, say q or n, then the effect on the magnitude.",
+      "steps": [
+        "Heat loss: walls, air and bench take heat -> q too low -> |DeltaHc| too low",
+        "Incomplete combustion: CO and soot keep energy -> q too low -> |DeltaHc| too low",
+        "Evaporation without burning: inflates fuel mass -> n too high -> |DeltaHc| too low",
+        "All three act in the same direction, so the error is systematic",
+        "Answer: heat loss, incomplete combustion, evaporation; not fixed by repeats ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Heat loss, incomplete combustion, evaporation: all lower |DeltaHc| systematically.",
+      "voiceover": {
+        "text": "Now the discrepancy answer, which is worth a lot of marks. Why is the experimental delta H c always smaller in magnitude than the theoretical? Give three sources, and for each, name it, say whether it affects q or n, and state the effect on the magnitude. Source one, heat loss to the surroundings. The calorimeter walls, the air, and the bench absorb heat, so q is too low, and the magnitude of delta H c comes out too low. Source two, incomplete combustion. The flame makes some carbon monoxide and soot, which still hold energy that wasn't released, so again q is too low, and the magnitude is too low. Source three, evaporation without combustion. Some alcohol evaporates off the wick without burning, which inflates the mass loss, so n is too high, and dividing by a larger n makes the magnitude too low. All three push in the same direction, which is exactly why this is systematic error, and why repeating trials won't fix it. And avoid writing human error, that earns nothing."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three combustion traps",
+      "body": "Trap 1: using the fuel mass in q = m c DeltaT. The m is the mass of water, the thing that heated up.",
+      "secondary": "Trap 2: thinking repeats fix the discrepancy. It is systematic, so repeats only improve precision; redesign reduces it. Trap 3: calling ethanol cleaner because it is renewable. Both fuels give CO2 and water; ethanol's edge is the carbon cycle, and petrol is more energy dense.",
+      "mistakeTag": "Where combustion and biofuel marks vanish",
+      "callout": "Water mass in q, systematic not random, carbon cycle not cleaner products.",
+      "durationInFrames": 1230,
+      "caption": "m is water; the error is systematic; ethanol's edge is the carbon cycle.",
+      "voiceover": {
+        "text": "Three traps. Trap one, using the mass of fuel in q equals m c delta T. The m is the mass of water, because it's the water whose temperature rose, that's what you measured. Using the fuel mass gives a completely wrong q. Trap two, thinking that repeating the experiment fixes the gap from the theoretical value. The error is systematic, every cause pushes the same way, so repeats only tighten your precision, they don't make the answer more accurate. You reduce systematic error by redesigning, things like a draught shield and a cooling curve. Trap three, calling ethanol a cleaner fuel just because it's renewable. Both ethanol and petrol produce only carbon dioxide and water on complete combustion, so the products aren't cleaner. Ethanol's genuine advantage is the carbon cycle, near carbon neutral, while petrol is more energy dense. State both sides for full marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Burning propan-1-ol (M = 60.09) heats 150 g of water by 13.6C; the burner loses 0.55 g. Find DeltaHc.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "q = m c DeltaT = 150 x 4.18 x 13.6 = 8527 J",
+        "n = mass / M = 0.55 / 60.09 = 0.009153 mol",
+        "Convert q: 8527 J = 8.527 kJ",
+        "DeltaHc = -q / n = -8.527 / 0.009153 = -932 kJ/mol",
+        "Answer: about -932 kJ/mol (46% of the -2021 theoretical) ✓"
+      ],
+      "durationInFrames": 1260,
+      "caption": "q = 8527 J, n = 0.00915 mol, DeltaHc = about -932 kJ/mol.",
+      "voiceover": {
+        "text": "Quick check, a full calculation. Burning propan-one-ol, molar mass sixty point zero nine, heats one hundred and fifty grams of water by thirteen point six degrees, and the burner loses nought point five five grams. Find delta H c. Pause and work it through. Right. Step one, q equals m c delta T, one hundred and fifty times four point one eight times thirteen point six, which is eight thousand five hundred and twenty-seven joules, using the water mass. Step two, n equals nought point five five divided by sixty point zero nine, which is nought point zero zero nine one five three moles. Step three, convert q, eight thousand five hundred and twenty-seven joules is eight point five two seven kilojoules. Step four, delta H c equals minus eight point five two seven divided by nought point zero zero nine one five three, which is about minus nine hundred and thirty-two kilojoules per mole. That's only about forty-six percent of the textbook value, a typical spirit burner result, with heat loss and incomplete combustion to blame."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Calculate DeltaHc in three steps: q = mcDeltaT (water), n = mass/M (fuel), -q/n.",
+        "The m in q = mcDeltaT is the water; convert q to kJ before dividing.",
+        "Experimental values are systematically low; repeats improve precision, not accuracy.",
+        "DeltaHc magnitude rises ~650 kJ/mol per CH2 down the alcohol series.",
+        "Ethanol vs petrol: same products, lower energy density, but a near-neutral carbon cycle."
+      ],
+      "finalPrompt": "Discrepancy question? Name the source, say q or n, then the effect on magnitude.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: the calculation, water mass, systematic error, the trend, biofuels.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, calculate the molar enthalpy of combustion in three steps, q equals m c delta T for the water, n equals mass over molar mass for the fuel, then delta H c equals minus q over n. Second, the m in q equals m c delta T is the mass of water, and you must convert q to kilojoules before the last step. Third, experimental values are systematically lower than theoretical, from heat loss, incomplete combustion, and evaporation, so repeating trials improves precision but not accuracy. Fourth, the molar enthalpy of combustion rises by about six hundred and fifty kilojoules per mole for each extra C H two unit down the series. And fifth, comparing ethanol with petrol, they give the same combustion products, ethanol is less energy dense, but it has a near carbon neutral life cycle. Next lesson, the reactions of alcohols, dehydration, substitution, and oxidation. See you next lesson."
+      }
+    }
+  ]
+}

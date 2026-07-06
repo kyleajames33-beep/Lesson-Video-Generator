@@ -1,0 +1,258 @@
+{
+  "title": "Mammalian Reproduction",
+  "subtitle": "Fertilisation, implantation, pregnancy and birth",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "describe the events of fertilisation, implantation, pregnancy and birth in mammals, including the role of hormones"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does reproduction ensure the continuity of a species?",
+  "lessonIntent": "Students can sequence the events from fertilisation to birth in mammals and explain how hormones and the placenta sustain pregnancy.",
+  "examSkill": "Order the events from fertilisation to implantation and link each pregnancy hormone to its specific role.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, mammalian reproduction, from fertilisation all the way to birth. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Mammalian Reproduction (Year 12 Biology, Module 5, Lesson 4)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Eight million from one breakthrough",
+      "body": "Since the first IVF baby in 1978, over 8 million babies have been born through IVF, each one following the same steps as natural reproduction.",
+      "callout": "Why is fertilisation only the very first step?",
+      "image": "bioM5L4IvfEmbryo",
+      "durationInFrames": 1860,
+      "caption": "IVF recreates the natural sequence: fertilisation, cleavage, blastocyst, implantation.",
+      "voiceover": {
+        "text": "Since Louise Brown, the first IVF baby, was born in nineteen seventy eight, more than eight million babies have been born through IVF worldwide. And here is what makes it relevant to us. Every clinical step the doctors perform, fertilisation in a dish, the early cell divisions, blastocyst formation, then transferring the embryo to implant, mirrors exactly what happens naturally inside the body. IVF also reveals how fragile the process is. UK data show the live birth rate per cycle is around twenty three percent for women under thirty five, dropping to about six percent by the early forties. That tells you fertilisation is only the beginning. So many things have to go right afterwards, and today we follow that whole sequence, from sperm meeting egg, to implantation, to the hormones that drive pregnancy and birth."
+      }
+    },
+    {
+      "id": "concept-gametes",
+      "type": "concept",
+      "heading": "Sperm and egg are built for their jobs",
+      "body": "Each gamete's structure matches its role, and fertilisation in the oviduct restores the diploid number.",
+      "bullets": [
+        {
+          "text": "Sperm: a flagellum to swim, mitochondria for energy, an acrosome of enzymes, a haploid nucleus."
+        },
+        {
+          "text": "Egg: large and non-motile, haploid, with nutrient-rich cytoplasm for the early embryo."
+        },
+        {
+          "text": "Fertilisation normally happens in the oviduct, restoring the diploid chromosome number."
+        }
+      ],
+      "secondary": "Form fits function: the sperm is stripped down for movement and delivery, while the egg is stocked with the supplies the zygote will need first.",
+      "callout": "The sperm travels light; the egg carries the supplies.",
+      "durationInFrames": 2040,
+      "caption": "Sperm structure supports movement and delivery; the egg supplies the early embryo.",
+      "voiceover": {
+        "text": "Let's start with the two gametes, because their structures are a beautiful example of form fitting function. The sperm is built for one job, getting to the egg and delivering its DNA. It has a flagellum, a tail, to swim. It is packed with mitochondria to power that swimming. It carries an acrosome at the tip, full of digestive enzymes to break into the egg. And it holds a haploid nucleus. The egg is the opposite, built for supply. It is large and non motile, it does not move, it is also haploid, and it is loaded with nutrient rich cytoplasm to feed the early embryo before it can get nutrients any other way. Fertilisation itself normally happens in the oviduct, the tube leading from the ovary, and when sperm and egg fuse there, the diploid chromosome number is restored. But, as we said, that is only the start."
+      }
+    },
+    {
+      "id": "concept-implantation",
+      "type": "concept",
+      "heading": "From zygote to implantation",
+      "body": "The zygote divides as it travels, becomes a blastocyst, then implants in the uterine wall.",
+      "bullets": [
+        {
+          "text": "The zygote undergoes cleavage, repeated mitotic divisions, while travelling to the uterus."
+        },
+        {
+          "text": "It becomes a blastocyst, an early embryo stage ready to implant."
+        },
+        {
+          "text": "Implantation is the blastocyst embedding in the endometrium, the uterine lining."
+        }
+      ],
+      "secondary": "Implantation is critical. Without it, pregnancy cannot continue. Note the zygote divides while travelling, it does not implant immediately at fertilisation.",
+      "callout": "No implantation, no pregnancy. It is the make-or-break step.",
+      "durationInFrames": 1848,
+      "caption": "Zygote, cleavage, blastocyst, then implantation in the endometrium, the critical step.",
+      "voiceover": {
+        "text": "So fertilisation has produced a diploid zygote. What happens next is a sequence you must be able to order. The zygote immediately begins dividing, by repeated mitotic divisions called cleavage, and crucially it does this while it is still travelling down the oviduct toward the uterus. It does not implant straight away. As those divisions continue, it develops into a blastocyst, an early embryo stage that is ready to implant. Then comes implantation, where the blastocyst embeds itself into the endometrium, the lining of the uterus. And here is the point to underline. Implantation is the make or break step. Without successful implantation, the pregnancy simply cannot continue, no matter how perfect the fertilisation was. That is one big reason early IVF success rates are not higher, getting the embryo to implant is genuinely hard."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "z",
+            "label": "Zygote"
+          },
+          {
+            "id": "c",
+            "label": "Cleavage"
+          },
+          {
+            "id": "b",
+            "label": "Blastocyst"
+          },
+          {
+            "id": "i",
+            "label": "Implantation"
+          }
+        ],
+        "edges": [
+          {
+            "from": "z",
+            "to": "c"
+          },
+          {
+            "from": "c",
+            "to": "b"
+          },
+          {
+            "from": "b",
+            "to": "i"
+          }
+        ]
+      }
+    },
+    {
+      "id": "concept-placenta",
+      "type": "concept",
+      "heading": "The placenta: exchange without mixing",
+      "body": "The placenta swaps materials between mother and fetus without their blood directly mixing.",
+      "bullets": [
+        {
+          "text": "To the fetus: oxygen and nutrients pass across from the mother."
+        },
+        {
+          "text": "To the mother: carbon dioxide and wastes pass back from the fetus."
+        },
+        {
+          "text": "Maternal and fetal blood do not mix directly; exchange is across a barrier."
+        }
+      ],
+      "secondary": "The placenta also has an endocrine role, releasing hormones. Distinguish the stages: embryo is the early stage of organ formation; fetus is the later growth and maturation stage.",
+      "callout": "Exchange across a barrier, not a direct blood connection.",
+      "durationInFrames": 1860,
+      "caption": "The placenta exchanges gases, nutrients and wastes without maternal and fetal blood mixing.",
+      "voiceover": {
+        "text": "Once the embryo is implanted, it needs a supply line, and that is the placenta. The placenta is an exchange organ. Oxygen and nutrients pass from the mother across to the fetus, and in the other direction, carbon dioxide and metabolic wastes pass from the fetus back to the mother. But here is the detail examiners always check. Maternal and fetal blood do not mix directly. The exchange happens across a thin barrier, by diffusion, which keeps the two blood supplies separate while still letting materials cross. The placenta also has a second job, an endocrine one, releasing hormones that help maintain the pregnancy. And while we are here, get the two developmental terms straight. The embryo is the early stage, when organs are forming. The fetus is the later stage, focused on growth and maturation."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The hormones you need",
+      "bullets": [
+        {
+          "text": "Progesterone: maintains the endometrium so the pregnancy can continue."
+        },
+        {
+          "text": "hCG: maintains progesterone support in early pregnancy."
+        },
+        {
+          "text": "Oestrogen: prepares and develops reproductive tissues."
+        },
+        {
+          "text": "Oxytocin: drives uterine contractions in labour and milk ejection."
+        },
+        {
+          "text": "Prolactin: stimulates milk production after birth."
+        }
+      ],
+      "callout": "Each hormone has one main job, learn them as a set.",
+      "durationInFrames": 1548,
+      "caption": "Progesterone, hCG, oestrogen, oxytocin and prolactin and their roles.",
+      "voiceover": {
+        "text": "Pregnancy is coordinated by hormones, and you need to match each one to its job. Progesterone maintains the endometrium, the uterine lining, so the pregnancy can continue. Human chorionic gonadotropin, hCG, is the early pregnancy hormone, it maintains progesterone support in those first weeks, and it is the hormone pregnancy tests detect. Oestrogen prepares and develops the reproductive tissues. Oxytocin drives the uterine contractions of labour, and later triggers milk ejection during breastfeeding. And prolactin stimulates milk production after birth. The cleanest way to learn these is as a set, with one main role each. Progesterone maintains, hCG supports progesterone early on, oestrogen prepares, oxytocin contracts and ejects milk, and prolactin makes milk."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Order the events from fertilisation",
+      "question": "Put these in the correct order and name where fertilisation occurs: implantation, blastocyst formation, fertilisation, cleavage divisions.",
+      "coachNote": "Track the cell as it moves from oviduct to uterus, dividing the whole way.",
+      "steps": [
+        "Fertilisation happens first, in the oviduct, fusing sperm and egg into a diploid zygote.",
+        "Cleavage divisions follow, the zygote dividing by mitosis as it travels toward the uterus.",
+        "Blastocyst formation comes next, the dividing cells forming the implantation-ready stage.",
+        "Implantation is last, the blastocyst embedding in the endometrium of the uterus.",
+        "Answer: fertilisation (oviduct), then cleavage, then blastocyst, then implantation."
+      ],
+      "durationInFrames": 1860,
+      "caption": "Order: fertilisation in the oviduct, cleavage, blastocyst, then implantation.",
+      "voiceover": {
+        "text": "Let's order these events, because sequence questions come up every year. The trick is to follow the cell as it physically travels from the oviduct down to the uterus, dividing the entire way. First is fertilisation, and you should name the location, it happens in the oviduct, fusing the sperm and egg into a diploid zygote. Second is cleavage, the rapid mitotic divisions of that zygote as it travels toward the uterus. Third is blastocyst formation, where those dividing cells organise into the implantation ready stage. And fourth, last, is implantation, where the blastocyst embeds into the endometrium lining the uterus. So the full order is fertilisation in the oviduct, then cleavage, then blastocyst, then implantation. A common error is putting implantation too early, remember the cell divides while travelling, it does not implant at fertilisation."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two pregnancy traps",
+      "body": "Trap 1: thinking fertilisation immediately triggers active development and implantation. The zygote divides while travelling, and some mammals even delay implantation.",
+      "secondary": "Trap 2: thinking maternal and fetal blood mix in the placenta. They do not, exchange happens across a barrier by diffusion. Many organisms can pause development after fertilisation, through delayed implantation or dormant seeds, so fertilisation starts the potential for development, but timing depends on signals.",
+      "mistakeTag": "Where mammalian reproduction marks vanish",
+      "callout": "Fertilisation starts potential; it does not force immediate development.",
+      "durationInFrames": 1818,
+      "caption": "Fertilisation does not force immediate development; placental blood supplies never mix.",
+      "voiceover": {
+        "text": "Two traps on this topic. Trap one, thinking that fertilisation immediately triggers active development and implantation, like flicking a switch. It does not. The zygote divides as it travels, and implantation happens days later. In fact, some mammals deliberately delay implantation, and many plants hold seeds dormant, so fertilisation really initiates the potential for development, but the timing depends on hormonal and environmental signals. Trap two, and this one is very common, thinking that maternal and fetal blood mix together in the placenta. They do not. The two blood supplies stay separate, and exchange happens across a thin barrier by diffusion. If you write that the bloods mix, you lose the mark, every time. So remember, fertilisation starts the potential, and the placenta exchanges across a barrier, it does not connect the bloodstreams."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "In early pregnancy, hCG levels rise sharply. Explain what hCG does, why that matters for maintaining the endometrium, and what would happen to the pregnancy if progesterone fell too early.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "hCG maintains progesterone support during early pregnancy.",
+        "Progesterone in turn maintains the endometrium, the uterine lining the embryo is implanted in.",
+        "So hCG indirectly keeps the endometrium intact by keeping progesterone high.",
+        "If progesterone fell too early, the endometrium would break down and the pregnancy could not continue.",
+        "Answer: hCG sustains progesterone, progesterone sustains the endometrium, so the pregnancy is maintained."
+      ],
+      "durationInFrames": 2022,
+      "caption": "hCG sustains progesterone, which sustains the endometrium and the early pregnancy.",
+      "voiceover": {
+        "text": "Quick check, and this tests how the hormones link together. In early pregnancy, hCG levels rise sharply. Explain what hCG does, why that matters for the endometrium, and what would happen if progesterone fell too early. Pause and reason it through. Right. hCG, the early pregnancy hormone, maintains progesterone support during those first weeks. And progesterone in turn maintains the endometrium, the uterine lining that the embryo has implanted into. So you can see the chain, hCG keeps progesterone high, and progesterone keeps the endometrium intact, which means hCG indirectly protects the lining. Now the last part. If progesterone fell too early, the endometrium would start to break down, and because the embryo depends on that lining, the pregnancy could not continue, it would be lost. So the answer is a chain, hCG sustains progesterone, progesterone sustains the endometrium, and that is what keeps the early pregnancy going."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Sperm is built to move and deliver; the egg is built to supply the early embryo.",
+        "Sequence: fertilisation in the oviduct, cleavage, blastocyst, then implantation.",
+        "Implantation is critical, and the zygote divides while travelling, not at fertilisation.",
+        "The placenta exchanges materials across a barrier; maternal and fetal blood never mix.",
+        "Hormones: progesterone maintains, hCG supports it, oestrogen prepares, oxytocin contracts, prolactin makes milk."
+      ],
+      "finalPrompt": "Sequencing pregnancy? Follow the cell from oviduct to uterus, then match each hormone to one job.",
+      "durationInFrames": 1782,
+      "caption": "Five takeaways: gamete structure, the sequence, implantation, the placenta, the hormones.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, the sperm is built to move and deliver, while the egg is built to supply the early embryo, form fitting function. Second, the sequence is fertilisation in the oviduct, then cleavage, then blastocyst, then implantation. Third, implantation is the critical step, and remember the zygote divides while travelling, it does not implant at fertilisation. Fourth, the placenta exchanges materials across a barrier by diffusion, and maternal and fetal blood never mix directly. And fifth, the hormones, progesterone maintains the endometrium, hCG supports progesterone early, oestrogen prepares the tissues, oxytocin drives contractions, and prolactin makes milk. When you sequence pregnancy, follow the cell from oviduct to uterus, then match each hormone to its one job. Next lesson, how humans deliberately manipulate reproduction in agriculture."
+      }
+    }
+  ]
+}

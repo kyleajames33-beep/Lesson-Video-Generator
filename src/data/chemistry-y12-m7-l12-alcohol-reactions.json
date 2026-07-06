@@ -1,0 +1,236 @@
+{
+  "title": "Reactions of Alcohols: Dehydration, Substitution, Oxidation",
+  "subtitle": "Make an alkene, swap for a halogen, or build a carbonyl",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 12",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "write equations, state conditions and predict products to represent the reactions of alcohols, including but not limited to (ACSCH128, ACSCH136):",
+    "investigate the products of the oxidation of primary and secondary alcohols"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": ["CH12-14", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "How can alcohols be produced and what are their properties?",
+  "lessonIntent": "Students can write equations and conditions for dehydration, HX substitution and oxidation of alcohols, and predict oxidation products from the alcohol class.",
+  "examSkill": "Use concentrated acid for dehydration, distillation vs reflux to control the oxidation product, and read the dichromate colour change to classify an alcohol.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the reactions of alcohols, the central hub of organic synthesis. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Reactions of Alcohols: Dehydration, Substitution, Oxidation (Year 12 Chemistry, Module 7, Lesson 12)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why does the breathalyser go green?",
+      "body": "A breathalyser turns orange dichromate green when you breathe into it. Yet the same oxidant stays orange with a tertiary alcohol.",
+      "callout": "What makes one alcohol react and another refuse?",
+      "durationInFrames": 690,
+      "caption": "Acidified dichromate oxidises some alcohols (orange to green), but not tertiary ones.",
+      "voiceover": {
+        "text": "OK, here's a reaction you might have to take one day. A breathalyser works by oxidising the ethanol in your breath, and as it does, the orange potassium dichromate turns green. That colour change is the measurement. But here's the puzzle. Take that same orange oxidant and add it to a tertiary alcohol, and nothing happens, it stays orange. Same reagent, same family of compound, yet one reacts and the other completely refuses. Why? The answer is structural, and it's the heart of today's lesson. We're covering the three reactions of alcohols, dehydration to make alkenes, substitution to make haloalkanes, and oxidation to build aldehydes, ketones, and acids, with the conditions that control each one."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Three reactions, key outcomes",
+      "bullets": [
+        {"text": "Dehydration: alcohol -> alkene + water. Concentrated H2SO4, about 170 degrees."},
+        {"text": "Substitution with HX: alcohol + HX -> haloalkane + water."},
+        {"text": "Oxidation, primary: -> aldehyde (distillation), then carboxylic acid (reflux)."},
+        {"text": "Oxidation, secondary -> ketone; tertiary -> no reaction."}
+      ],
+      "callout": "The alcohol class decides what oxidation can produce.",
+      "durationInFrames": 1080,
+      "caption": "Dehydration, HX substitution, and oxidation (1 -> aldehyde/acid, 2 -> ketone, 3 -> none).",
+      "voiceover": {
+        "text": "Three reactions to know, with their outcomes. Dehydration removes water from an alcohol to give an alkene, using concentrated sulfuric acid at about one hundred and seventy degrees. Substitution with a hydrogen halide swaps the oxygen hydrogen group for a halogen, giving a haloalkane plus water. And oxidation depends entirely on the alcohol class. A primary alcohol oxidises first to an aldehyde, and then on to a carboxylic acid. A secondary alcohol oxidises to a ketone. And a tertiary alcohol doesn't oxidise at all. Notice how the classification from lesson nine suddenly does real work here, it decides exactly what oxidation can produce. That's the throughline of this lesson, the conditions and the class together control the product."
+      }
+    },
+    {
+      "id": "concept-dehydration",
+      "type": "concept",
+      "heading": "Dehydration: the reverse of hydration",
+      "body": "Dehydration eliminates water across the C-OH and an adjacent C-H, reforming a C=C. Its conditions are the opposite of hydration's.",
+      "bullets": [
+        {"text": "Conditions: concentrated H2SO4 (or H3PO4), heat to about 170 degrees."},
+        {"text": "The -OH and an H from the next carbon leave together as water."},
+        {"text": "CH3CH2OH -> CH2=CH2 + H2O (ethanol to ethene)."}
+      ],
+      "secondary": "Hydration uses dilute acid and high pressure to add water; dehydration uses concentrated acid and heat to remove it. The acid concentration sets the direction.",
+      "callout": "Concentrated acid removes water; dilute acid adds it.",
+      "durationInFrames": 1080,
+      "caption": "Dehydration: conc. H2SO4, ~170C, removes water to form an alkene.",
+      "voiceover": {
+        "text": "Let's start with dehydration, which is exactly the reverse of the hydration you met earlier. Here, water is eliminated from the alcohol, the oxygen hydrogen group leaves from one carbon, and a hydrogen leaves from the neighbouring carbon, and together they go as a water molecule, reforming a carbon to carbon double bond. The conditions are concentrated sulfuric acid, or phosphoric acid, heated to about one hundred and seventy degrees. So ethanol gives ethene plus water. Here's the contrast worth holding. Hydration used dilute acid and high pressure to add water. Dehydration uses concentrated acid and heat to remove it. The acid concentration is what sets the direction, dilute pushes toward the alcohol, concentrated pushes toward the alkene. So if you ever write dilute acid for dehydration, you've actually described the reverse reaction."
+      }
+    },
+    {
+      "id": "concept-substitution",
+      "type": "concept",
+      "heading": "Substitution with HX",
+      "body": "An alcohol plus a hydrogen halide swaps the -OH for a halogen. Water is always a co-product.",
+      "bullets": [
+        {"text": "R-OH + HX -> R-X + H2O, heated under reflux."},
+        {"text": "Reactivity order: HI > HBr > HCl, since C-I forms most easily."},
+        {"text": "Always include H2O; the -OH and the H of HX combine to form it."}
+      ],
+      "secondary": "This is the reverse of the haloalkane substitution in Lesson 10. The H2O product is what distinguishes it from adding HX across an alkene.",
+      "callout": "Swap -OH for X, and never forget the water.",
+      "durationInFrames": 1050,
+      "caption": "R-OH + HX -> R-X + H2O; reactivity HI > HBr > HCl.",
+      "voiceover": {
+        "text": "Next, substitution with a hydrogen halide, which converts an alcohol into a haloalkane. The oxygen hydrogen group is replaced by a halogen, so a generic alcohol plus H X gives the haloalkane plus water, heated under reflux. So ethanol plus H Br gives bromoethane plus water. The reactivity order of the hydrogen halides is H I fastest, then H Br, then H C L, because the carbon iodine bond forms most easily. The one detail you must not drop, water is always a product. The oxygen hydrogen group from the alcohol and the hydrogen from the H X combine to form that water. In fact, the presence of water as a product is exactly what distinguishes this from adding H X across an alkene, which makes no water. This is also the reverse of the haloalkane to alcohol substitution we did in lesson ten."
+      }
+    },
+    {
+      "id": "formula-oxidation",
+      "type": "concept",
+      "heading": "Oxidation: class decides everything",
+      "body": "Oxidation removes hydrogens from the C-OH carbon. If there is no H to remove, there is no reaction.",
+      "diagram": {
+        "type": "table",
+        "headers": ["Alcohol", "Equipment", "Product", "Colour"],
+        "rows": [
+          ["Primary", "Distillation", "Aldehyde", "Orange to green"],
+          ["Primary", "Reflux", "Carboxylic acid", "Orange to green"],
+          ["Secondary", "Reflux", "Ketone", "Orange to green"],
+          ["Tertiary", "Any", "No reaction", "Stays orange"]
+        ]
+      },
+      "bullets": [
+        {"text": "Primary (2 H on C-OH): aldehyde by distillation, then carboxylic acid by reflux."},
+        {"text": "Secondary (1 H): ketone, which cannot oxidise further."},
+        {"text": "Tertiary (0 H on C-OH): no reaction; dichromate stays orange."}
+      ],
+      "secondary": "Distillation removes the aldehyde as it forms, before further oxidation; reflux keeps it in to push through to the acid. Oxidant: acidified K2Cr2O7.",
+      "callout": "No H on the C-OH carbon means no oxidation.",
+      "durationInFrames": 1110,
+      "caption": "Primary -> aldehyde/acid, secondary -> ketone, tertiary -> no reaction (stays orange).",
+      "voiceover": {
+        "text": "Now oxidation, the richest of the three, and the answer to our breathalyser puzzle. Oxidation removes two hydrogens, one from the carbon bearing the oxygen hydrogen group, and one from the oxygen, to build a carbon double bond oxygen. So the key question is, does that carbon have a hydrogen to remove? A primary alcohol has two hydrogens on that carbon, so it oxidises first to an aldehyde, and then on to a carboxylic acid. A secondary alcohol has one hydrogen, so it oxidises to a ketone, which can't go further. A tertiary alcohol has zero hydrogens on that carbon, so there's nothing to remove, and it simply doesn't react, the orange dichromate stays orange. That's the breathalyser answer. And the equipment controls the primary product, distillation removes the aldehyde as it forms, before it can oxidise further, while reflux keeps everything in the flask to push all the way to the acid. The oxidant throughout is acidified potassium dichromate."
+      }
+    },
+    {
+      "id": "concept-colour-test",
+      "type": "concept",
+      "heading": "Reading the colour change",
+      "body": "The dichromate colour change is a diagnostic test, but it tells you only part of the story.",
+      "bullets": [
+        {"text": "Orange to green means oxidation happened: a primary or secondary alcohol."},
+        {"text": "Stays orange means no oxidation: a tertiary alcohol (the diagnostic test)."},
+        {"text": "Green confirms the class, not the specific product."}
+      ],
+      "secondary": "To pin down the product, also use the conditions (distillation vs reflux) and a second test, like Tollens' for an aldehyde. Note: acidified KMnO4 goes purple to colourless, never orange.",
+      "callout": "Green confirms a primary or secondary alcohol; orange means tertiary.",
+      "durationInFrames": 1050,
+      "caption": "Orange to green = oxidised (1 or 2); stays orange = tertiary; KMnO4 goes purple to colourless.",
+      "voiceover": {
+        "text": "Let's be precise about what the colour change tells you, because it's easy to over-read. With acidified potassium dichromate, orange turning to green means oxidation has occurred, which tells you the alcohol is primary or secondary. If it stays orange, no oxidation has occurred, which is the diagnostic test for a tertiary alcohol. But here's the limit, the green colour confirms the class, primary or secondary, it does not tell you the specific product. To identify whether you've made an aldehyde or an acid, you also need the conditions, distillation versus reflux, and ideally a second test, like Tollens' reagent for an aldehyde. One more thing, don't confuse the oxidants. Acidified potassium permanganate goes from purple to colourless, never to orange. Orange is dichromate. Mixing those colour changes up is a classic error."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Predict three products",
+      "question": "Give product and conditions for: (a) dehydration of propan-1-ol  (b) propan-2-ol oxidised to its max  (c) butan-1-ol + HBr.",
+      "coachNote": "Class first for oxidation; concentrated acid for dehydration.",
+      "steps": [
+        "(a) CH3CH2CH2OH -> CH3CH=CH2 + H2O; conc. H2SO4, ~170C (propene)",
+        "(b) Propan-2-ol is secondary -> ketone (max); CH3CHOHCH3 + [O] -> CH3COCH3 + H2O",
+        "(b) Conditions: K2Cr2O7/H+, reflux; orange to green",
+        "(c) CH3CH2CH2CH2OH + HBr -> CH3CH2CH2CH2Br + H2O; reflux",
+        "Answer: (a) propene, (b) propanone, (c) 1-bromobutane ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "(a) propene, (b) propanone, (c) 1-bromobutane, with conditions.",
+      "voiceover": {
+        "text": "Let's predict three products. Part a, dehydration of propan-one-ol. Remove water across the oxygen hydrogen carbon and its neighbour, giving propene plus water, with concentrated sulfuric acid at about one hundred and seventy degrees. Part b, oxidise propan-two-ol to its maximum. Propan-two-ol is a secondary alcohol, so its maximum oxidation product is a ketone, propanone, and a ketone can't oxidise any further. The equation is propan-two-ol plus oxidant gives propanone plus water, with acidified potassium dichromate under reflux, and the colour goes orange to green. Part c, butan-one-ol plus H Br. The oxygen hydrogen group is swapped for bromine, giving one-bromobutane plus water, heated under reflux, and don't forget that water. So, propene, propanone, and one-bromobutane. Notice for the oxidation, identifying the class as secondary immediately told us the product is a ketone."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Identify alcohols by oxidation",
+      "question": "Three C4H10O alcohols: P stays orange; Q goes green, its product gives a silver mirror; R goes green, no silver mirror, not acidic. Identify each.",
+      "coachNote": "Stays orange means tertiary; silver mirror means an aldehyde.",
+      "steps": [
+        "P stays orange -> no oxidation -> tertiary -> 2-methylpropan-2-ol",
+        "Q goes green; product gives a silver mirror (Tollens') -> aldehyde -> primary",
+        "Q is butan-1-ol (the C4 primary alcohol)",
+        "R goes green; product is neither aldehyde nor acid -> ketone -> secondary",
+        "Answer: P 2-methylpropan-2-ol, Q butan-1-ol, R butan-2-ol ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "P = 2-methylpropan-2-ol (3), Q = butan-1-ol (1), R = butan-2-ol (2).",
+      "voiceover": {
+        "text": "Now an identification using oxidation. Three C four H ten O alcohols. P stays orange. Q turns green, and its product gives a silver mirror with Tollens' reagent. R turns green, but its product gives no silver mirror and isn't acidic. Identify each. Start with P, it stays orange, so no oxidation, which means it's the tertiary alcohol, two-methylpropan-two-ol. Q turns green, so it oxidised, and its product gives a silver mirror, which is the test for an aldehyde, so Q is a primary alcohol, and the C four primary alcohol is butan-one-ol. R also turns green, so it oxidised, but its product is neither an aldehyde nor an acid, which points to a ketone, so R is a secondary alcohol, butan-two-ol. So P is two-methylpropan-two-ol, Q is butan-one-ol, and R is butan-two-ol. The oxidation behaviour, plus one follow-up test, pins down all three."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three alcohol-reaction traps",
+      "body": "Trap 1: using dilute acid for dehydration. It needs concentrated acid; dilute acid drives the reverse reaction, hydration.",
+      "secondary": "Trap 2: saying tertiary alcohols give a ketone. They do not oxidise at all, so the dichromate stays orange. Trap 3: forgetting the water in alcohol plus HX, or saying permanganate turns orange. Permanganate goes purple to colourless; orange is dichromate.",
+      "mistakeTag": "Where alcohol-reaction marks vanish",
+      "callout": "Concentrated for dehydration, tertiary won't oxidise, include the water.",
+      "durationInFrames": 1230,
+      "caption": "Dehydration needs conc. acid; tertiary won't oxidise; include H2O; KMnO4 not orange.",
+      "voiceover": {
+        "text": "Three traps. Trap one, using dilute acid for dehydration. It needs concentrated acid, because dilute acid with high pressure actually drives the reverse reaction, hydration, back to the alcohol. The acid concentration sets the direction. Trap two, saying a tertiary alcohol gives a ketone, or any product, with dichromate. It doesn't oxidise at all, because there's no hydrogen on the oxygen hydrogen carbon to remove, so the dichromate stays orange, and that's actually the diagnostic test for a tertiary alcohol. Trap three is really two small ones. First, forgetting the water when an alcohol reacts with H X, the equation is unbalanced without it. And second, saying potassium permanganate turns orange. It doesn't, it goes from purple to colourless. Orange to green is dichromate. Keep the two oxidants and their colour changes separate."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "How do you oxidise pentan-1-ol to pentanal rather than pentanoic acid, and why does the method matter?",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Pentan-1-ol is primary, so it can give an aldehyde then a carboxylic acid",
+        "Use acidified K2Cr2O7 with distillation (not reflux)",
+        "The aldehyde has a lower BP, so it distils off as it forms",
+        "Removing it stops further oxidation to pentanoic acid",
+        "Answer: distillation gives pentanal; reflux would give pentanoic acid ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "Distil to get pentanal; reflux would push on to pentanoic acid.",
+      "voiceover": {
+        "text": "Quick check. How do you oxidise pentan-one-ol to pentanal, the aldehyde, rather than to pentanoic acid, and why does the method matter? Pause and work it through. Right. Pentan-one-ol is a primary alcohol, so it can oxidise first to the aldehyde, pentanal, and then on to the carboxylic acid, pentanoic acid. To stop at the aldehyde, use acidified potassium dichromate with distillation, not reflux. Here's why it works. The aldehyde, pentanal, has a lower boiling point than the alcohol, so as it forms it distils off out of the reaction mixture. Removing it immediately means the oxidant can't reach it to oxidise it further. If you used reflux instead, everything would stay in the flask, and the oxidant would push the aldehyde all the way through to pentanoic acid. So the equipment choice, distillation versus reflux, is what controls the product."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Dehydration: concentrated acid, about 170 degrees, removes water to give an alkene.",
+        "Substitution with HX swaps -OH for a halogen and always makes water too.",
+        "Primary alcohols oxidise to aldehydes (distillation) then acids (reflux).",
+        "Secondary alcohols give ketones; tertiary alcohols do not oxidise (stay orange).",
+        "Orange to green confirms a primary or secondary alcohol, not the exact product."
+      ],
+      "finalPrompt": "Oxidation question? Classify the alcohol first, then choose distillation or reflux.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: dehydration, HX substitution, oxidation outcomes, tertiary, the colour test.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, dehydration uses concentrated acid at about one hundred and seventy degrees to remove water and form an alkene. Second, substitution with a hydrogen halide swaps the oxygen hydrogen group for a halogen, and always produces water as well. Third, primary alcohols oxidise to aldehydes under distillation, and on to carboxylic acids under reflux. Fourth, secondary alcohols give ketones, while tertiary alcohols don't oxidise at all, leaving the dichromate orange. And fifth, the orange to green colour change confirms a primary or secondary alcohol, but not the exact product, so you need the conditions and a follow-up test too. That completes the core of Module seven, the language of organic chemistry, the reactions of hydrocarbons, and the chemistry of alcohols. Well done getting through it. See you next lesson."
+      }
+    }
+  ]
+}

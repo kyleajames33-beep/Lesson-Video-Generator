@@ -1,0 +1,246 @@
+{
+  "title": "Soaps, Detergents and Saponification",
+  "subtitle": "How one molecule bridges grease and water",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 17",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "investigate the structure and action of soaps and detergents",
+    "investigate the production, in a school laboratory, of soap"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": [
+    "CH12-14",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What are the properties of organic acids and bases?",
+  "lessonIntent": "Students can describe soap's amphipathic structure and micelle cleaning action, write saponification equations, and compare soaps with synthetic detergents in hard water.",
+  "examSkill": "Explain emulsification using the hydrophobic tail and hydrophilic head, write the saponification equation with correct conditions, and justify why detergents outperform soaps in hard water.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, soaps and detergents, and how one molecule cleans. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Soaps, Detergents and Saponification (Year 12 Chemistry, Module 7, Lesson 17)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Grease hates water. So how does soap win?",
+      "body": "Grease and water refuse to mix. Yet a smear of soap lets you rinse grease straight off a plate. Soap somehow bridges two things that repel each other.",
+      "callout": "How does one molecule make grease and water cooperate?",
+      "image": "m7l17HookGreaseWater",
+      "durationInFrames": 1570,
+      "caption": "Soap bridges grease and water, two things that normally refuse to mix.",
+      "voiceover": {
+        "text": "OK, here's an everyday mystery worth unpacking. Grease and water simply don't mix. Pour oil into water and it sits there in a separate layer. And yet, rub a bit of soap on a greasy plate, scrub, and the grease rinses away with the water. So soap is doing something clever. It's bridging two things that actively repel each other, the non-polar grease and the polar water. Today you'll see exactly how, and the answer is a molecule with a split personality, one end that loves water and one end that loves grease. We'll also make soap from a fat, and work out why ordinary soap fails in hard water while detergents don't."
+      }
+    },
+    {
+      "id": "concept-structure",
+      "type": "concept",
+      "heading": "A molecule with two faces",
+      "body": "Soap is the sodium salt of a long fatty acid. It has a non-polar tail and an ionic head, so it is amphipathic.",
+      "image": "m7l17Micelle",
+      "bullets": [
+        {
+          "text": "Hydrophobic tail: a long hydrocarbon chain that mixes with grease.",
+          "at": 8
+        },
+        {
+          "text": "Hydrophilic head: the ionic carboxylate group that dissolves in water.",
+          "at": 16
+        },
+        {
+          "text": "Having both ends in one molecule is called amphipathic.",
+          "at": 24
+        },
+        {
+          "text": "In water, tails point inward and heads outward, forming a micelle.",
+          "at": 32
+        }
+      ],
+      "secondary": "A typical soap is sodium stearate; the tail is the C17 chain and the head is the -COO minus Na plus group.",
+      "callout": "Tail loves grease, head loves water: that is amphipathic.",
+      "durationInFrames": 1962,
+      "caption": "Soap is amphipathic: a non-polar tail and an ionic head in one molecule.",
+      "voiceover": {
+        "text": "Let's look at the molecule. Soap is the sodium or potassium salt of a long-chain fatty acid, something like sodium stearate. And the molecule has two completely different ends. One end is a long hydrocarbon chain, non-polar, which we call the hydrophobic tail. It hates water but mixes happily with grease, because like dissolves like. The other end is the ionic carboxylate group, with its sodium ion, and we call it the hydrophilic head. It loves water and dissolves readily. Having both an oil-loving end and a water-loving end in the same molecule is described by one word, amphipathic, and that's the structural feature behind all of soap's cleaning power. When you drop soap into water, the molecules organise themselves. The tails huddle inward away from water, and the heads face outward into the water, forming a tiny sphere called a micelle."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Saponification: making soap",
+      "bullets": [
+        {
+          "text": "Saponification: a fat or oil plus NaOH gives glycerol plus soap.",
+          "at": 8
+        },
+        {
+          "text": "It is base hydrolysis of the ester linkages in a triglyceride.",
+          "at": 16
+        },
+        {
+          "text": "NaOH is a reagent, consumed, not a catalyst; written as a reactant.",
+          "at": 25
+        },
+        {
+          "text": "It is irreversible, a single arrow, because the carboxylate salt cannot re-esterify.",
+          "at": 34
+        }
+      ],
+      "callout": "Base hydrolysis of a fat gives glycerol and soap, and it runs to completion.",
+      "durationInFrames": 1908,
+      "caption": "Saponification: triglyceride + NaOH gives glycerol + soap, irreversibly.",
+      "voiceover": {
+        "text": "So how do we make soap? The reaction is called saponification, and it's the base hydrolysis of a fat or an oil. A fat is a triglyceride, an ester of glycerol with three fatty acid chains, so it has three ester linkages. Treat it with sodium hydroxide and you break those ester bonds, releasing glycerol and producing three soap molecules, the sodium carboxylate salts. Two things to get right for the marks. First, the sodium hydroxide is a reagent, not a catalyst. It's consumed, the sodium ends up in the soap, so you write it as a reactant with the right coefficient. Second, this reaction is irreversible, drawn with a single arrow, because the carboxylate salt product can't re-form the ester under basic conditions. So unlike esterification, saponification goes to completion, giving close to a hundred percent yield."
+      }
+    },
+    {
+      "id": "concept-cleaning",
+      "type": "concept",
+      "heading": "Emulsified, not dissolved",
+      "body": "Soap cleans by surrounding grease, not by dissolving it. The tails embed in the grease and the charged heads keep the droplet suspended in water.",
+      "bullets": [
+        {
+          "text": "Tails embed in the grease; ionic heads face outward into the water.",
+          "at": 9
+        },
+        {
+          "text": "Agitation lifts the grease off as a droplet wrapped in soap: a micelle.",
+          "at": 18
+        },
+        {
+          "text": "The grease is emulsified, suspended, not dissolved.",
+          "at": 26
+        },
+        {
+          "text": "Like-charged heads repel, so droplets do not recombine, and rinse away.",
+          "at": 34
+        }
+      ],
+      "callout": "Grease is emulsified inside micelles, then rinsed away.",
+      "durationInFrames": 1921,
+      "caption": "Soap emulsifies grease into charged micelles that rinse away without recombining.",
+      "voiceover": {
+        "text": "Now the cleaning mechanism, and there's one word the marker is looking for. Soap doesn't dissolve grease, it emulsifies it. Here's how. The hydrophobic tails are attracted to the grease and embed themselves in it, while the ionic heads point outward into the water. When you scrub, the agitation lifts the grease off the surface as a droplet completely wrapped in soap molecules, with grease inside and charged heads outside. That wrapped droplet is a micelle, and the grease inside it is emulsified, meaning suspended as tiny droplets, not actually dissolved. There's a clever final touch. Every droplet's surface carries the same negative charge from the carboxylate heads, so the droplets repel each other and can't merge back together or redeposit on the plate. Then the water simply rinses them away. So the key word is emulsified, not dissolved."
+      }
+    },
+    {
+      "id": "concept-hardwater",
+      "type": "concept",
+      "heading": "Why soap fails in hard water",
+      "body": "Hard water contains calcium and magnesium ions. They turn soap into an insoluble scum. Detergents avoid this with a different head group.",
+      "bullets": [
+        {
+          "text": "Hard water has Ca2+ and Mg2+ ions dissolved in it.",
+          "at": 9
+        },
+        {
+          "text": "Soap reacts with them to form insoluble calcium or magnesium scum.",
+          "at": 18
+        },
+        {
+          "text": "Detergents use a sulfonate head whose calcium salt stays soluble.",
+          "at": 26
+        },
+        {
+          "text": "So detergents keep working in hard water; soap is wasted as scum.",
+          "at": 34
+        }
+      ],
+      "callout": "Soap precipitates with Ca2+ and Mg2+; detergent head groups stay soluble.",
+      "durationInFrames": 1908,
+      "caption": "Soap forms scum with Ca2+/Mg2+; detergent sulfonate heads stay soluble.",
+      "voiceover": {
+        "text": "Soap has one big weakness, and it's hard water. Hard water contains dissolved calcium and magnesium ions, picked up from limestone. When soap meets those ions, the carboxylate heads bind to them and form an insoluble precipitate, the grey calcium and magnesium scum you see as a bathtub ring. That scum is useless for cleaning, so soap gets wasted, and you need more of it. This is exactly the problem synthetic detergents were invented to solve. A detergent has the same amphipathic design, a long tail and a charged head, but the head group is different, typically a sulfonate instead of a carboxylate. The crucial difference is that the calcium and magnesium salts of a sulfonate head stay soluble. So detergents don't form scum, and they keep cleaning effectively even in hard water. Same mechanism, smarter head group."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Build butyl butanoate from a haloalkane",
+      "question": "Starting only from 1-iodobutane, outline the synthesis of butyl butanoate. Give an equation and conditions for each step.",
+      "coachNote": "You need an alcohol, an acid, and then an ester. Split the alcohol: keep some, oxidise the rest to the acid.",
+      "steps": [
+        "Step 1: 1-iodobutane to butan-1-ol. CH3CH2CH2CH2I + NaOH(aq), reflux, gives CH3CH2CH2CH2OH.",
+        "Step 2: oxidise some butan-1-ol to butanoic acid. With excess K2Cr2O7/H2SO4, reflux, gives CH3CH2CH2COOH.",
+        "Step 3: esterify the acid with the remaining butan-1-ol.",
+        "CH3CH2CH2COOH + CH3CH2CH2CH2OH, reversible, with conc. H2SO4 and reflux, gives butyl butanoate + H2O.",
+        "Intermediates: butan-1-ol, then butanoic acid, then butyl butanoate.",
+        "Answer: substitution to the alcohol, oxidation of part to the acid, then esterification."
+      ],
+      "durationInFrames": 1962,
+      "caption": "1-iodobutane to butan-1-ol to butanoic acid, then esterify to butyl butanoate.",
+      "voiceover": {
+        "text": "Let's tackle a band-six synthesis, the kind that ties the whole module together. Starting only from 1-iodobutane, make butyl butanoate. Think about what you need. An ester is made from an acid and an alcohol, and the name butyl butanoate tells us both halves come from four-carbon pieces. So the plan is to make butan-1-ol, then convert part of it to butanoic acid, and finally esterify the two. Step one, turn the haloalkane into the alcohol. 1-iodobutane with aqueous sodium hydroxide under reflux gives butan-1-ol. Step two, take some of that butan-1-ol and oxidise it fully with excess acidified dichromate under reflux to get butanoic acid. Step three, esterify. React the butanoic acid with the butan-1-ol you kept, using concentrated sulfuric acid under reflux, with a reversible arrow, and you get butyl butanoate plus water. Name each intermediate, and that's full marks."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Soap dissolves the grease\"",
+      "body": "Students say soap dissolves grease, and that NaOH in soap-making is a catalyst. Both are wrong.",
+      "secondary": "Soap emulsifies grease, holding it as suspended droplets inside micelles, not as a true solution. And in saponification, NaOH is a reagent that is consumed; the sodium becomes part of the soap, so it is never written above the arrow.",
+      "callout": "Grease is emulsified, not dissolved; NaOH is consumed, not a catalyst.",
+      "mistakeTag": "Emulsified, and NaOH is a reagent",
+      "durationInFrames": 1935,
+      "caption": "Soap emulsifies grease; NaOH in saponification is a consumed reagent.",
+      "voiceover": {
+        "text": "Two traps here, and they come up constantly. The first is saying soap dissolves grease. It doesn't. Dissolving would mean the grease spreads out evenly at the molecular level into a true solution. What actually happens is emulsification. The grease stays as tiny droplets, each wrapped inside a micelle and suspended in the water as a separate phase. So always say emulsified, not dissolved. The second trap is calling the sodium hydroxide in soap-making a catalyst. It isn't. In saponification the sodium hydroxide is a reagent that gets used up, and the sodium ends up built into the soap molecule itself. A catalyst would be regenerated and left over, but here it's consumed, so you write it as a reactant on the left, with the right coefficient, never above the arrow. Get those two right and you protect easy marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "Distinguish a soap from a synthetic detergent in terms of (a) head group structure and (b) behaviour in hard water.",
+      "pausePrompt": "Pause and think about the head group in each.",
+      "answerSteps": [
+        "(a) A soap has a carboxylate head, -COO minus, from a fatty acid.",
+        "(a) A synthetic detergent has a sulfonate head, -SO3 minus, from a petrochemical chain.",
+        "(b) In hard water, soap reacts with Ca2+ and Mg2+ to form an insoluble scum, so it is wasted.",
+        "(b) A detergent's calcium and magnesium salts stay soluble, so it keeps working with no scum.",
+        "Both clean by the same amphipathic, emulsifying mechanism; only the head group differs."
+      ],
+      "durationInFrames": 2029,
+      "caption": "Soap: carboxylate head, scums in hard water. Detergent: sulfonate head, no scum.",
+      "voiceover": {
+        "text": "Your turn. Distinguish a soap from a synthetic detergent on two points, the head group structure, and the behaviour in hard water. Pause and think about the head group in each. Now let's check. On structure, a soap has a carboxylate head, the C-O-O minus group, coming from a natural fatty acid. A synthetic detergent has a different head, usually a sulfonate, the S-O-3 minus group, on a chain derived from petrochemicals. On hard water, here's the payoff. Soap reacts with the calcium and magnesium ions in hard water to form an insoluble scum, so it precipitates out and is wasted. A detergent's calcium and magnesium salts, by contrast, stay soluble, so the detergent keeps cleaning and leaves no scum. And the key fairness point. Both clean by the same amphipathic, emulsifying mechanism. The only real difference is the head group, and that's what decides hard-water performance."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Cleaning question? Say amphipathic and emulsified. Saponification? NaOH is a reagent and the arrow is one-way.",
+      "points": [
+        "Soap is amphipathic: a non-polar hydrophobic tail and an ionic hydrophilic head.",
+        "Saponification is base hydrolysis of a fat: triglyceride plus NaOH gives glycerol plus soap.",
+        "NaOH is a consumed reagent and the reaction is irreversible, a single arrow.",
+        "Soap emulsifies grease inside micelles; the charged heads stop droplets recombining.",
+        "Soap scums in hard water; detergents use a sulfonate head whose salts stay soluble."
+      ],
+      "durationInFrames": 1908,
+      "caption": "Amphipathic soap emulsifies grease; detergents win in hard water.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, soap is amphipathic, with a non-polar hydrophobic tail that mixes with grease and an ionic hydrophilic head that dissolves in water. Second, you make it by saponification, the base hydrolysis of a fat, where a triglyceride plus sodium hydroxide gives glycerol and soap. Third, in that reaction the sodium hydroxide is a reagent that's consumed, and the reaction is irreversible, drawn with a single arrow. Fourth, soap cleans by emulsifying grease inside micelles, and the like-charged heads keep the droplets apart so they rinse away. And fifth, soap forms an insoluble scum in hard water, while detergents use a sulfonate head whose calcium and magnesium salts stay soluble. So for a cleaning question, say amphipathic and emulsified, and for saponification, remember the reagent and the one-way arrow. See you next lesson."
+      }
+    }
+  ]
+}

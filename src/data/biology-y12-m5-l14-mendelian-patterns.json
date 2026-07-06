@@ -1,0 +1,275 @@
+{
+  "title": "Mendelian Patterns",
+  "subtitle": "Punnett squares, autosomal and sex-linked inheritance, and pedigrees",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 14",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "conduct practical investigations to predict variations in the genotype of offspring by modelling meiosis, including crossing over, fertilisation and mutation (ACSBL084)",
+    "model the inheritance of autosomal and sex-linked traits using Punnett squares and pedigrees"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How can the genetic similarities and differences within and between species be compared?",
+  "lessonIntent": "Students can set up Punnett squares for autosomal and X-linked crosses, infer genotypes from pedigrees, and state results as a probability per child.",
+  "examSkill": "Define alleles, infer parental genotypes, list gametes, complete a Punnett square, and report a per-child probability for autosomal and sex-linked crosses.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, Mendelian patterns of inheritance. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Mendelian Patterns (Year 12 Biology, Module 5, Lesson 14)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Predicting a disease before anyone knew DNA",
+      "body": "In 1902, Archibald Garrod predicted the inheritance of a human enzyme disease using only family patterns and probability.",
+      "callout": "How can a Punnett square predict inheritance without knowing the mechanism?",
+      "image": "bioM5L14PedigreeChart",
+      "durationInFrames": 1759,
+      "caption": "Garrod used Mendel's probability rules to identify alkaptonuria as recessive, 56 years before the enzyme was found.",
+      "voiceover": {
+        "text": "In 1902, a doctor named Archibald Garrod noticed that a rare condition called alkaptonuria kept appearing in just a handful of children across two families. He had no idea what DNA was. Chromosomes were barely understood. And yet, using nothing but family patterns and Mendel's probability rules, he correctly worked out that the condition was caused by a recessive allele. The enzyme actually responsible wasn't identified for another fifty-six years. So how can simple probability predict the way a disease is inherited, long before anyone knows the molecular mechanism? The answer is the Punnett square, a probability model that turns parental genotypes into the chances for each child. Today we'll learn to set one up cleanly, for both ordinary and sex-linked traits, and read inheritance straight off a pedigree."
+      }
+    },
+    {
+      "id": "concept-punnett",
+      "type": "concept",
+      "heading": "A Punnett square is a probability model",
+      "body": "A Punnett square combines parental gametes to predict the chance of each genotype in a child.",
+      "bullets": [
+        {
+          "text": "Each parent contributes one allele per gene, because of meiosis."
+        },
+        {
+          "text": "A heterozygote makes two gamete types; a homozygote makes one."
+        },
+        {
+          "text": "Each fertilisation is independent, so it predicts probability, not a fixed family."
+        }
+      ],
+      "secondary": "Critically, 'dominant' means expressed in a heterozygote. It does not mean more common, more powerful or better. Frequency and dominance are separate ideas.",
+      "callout": "Dominant means expressed in a heterozygote, nothing more.",
+      "durationInFrames": 1894,
+      "caption": "A Punnett square predicts per-child genotype probabilities; dominant means expressed in a heterozygote.",
+      "voiceover": {
+        "text": "So what exactly is a Punnett square? It's a probability model that combines the parents' gametes to predict the chance of each possible genotype in a child. The logic comes straight from meiosis. Each parent contributes just one allele per gene to each gamete, so a heterozygote, with two different alleles, can make two types of gamete, while a homozygote can only make one. You then cross them in the grid. And here's the part to be careful with, every fertilisation is independent, so the square gives you a probability for each child, not a locked-in outcome for the whole family. One more crucial point about language. Dominant means an allele is expressed when it's in a heterozygote. It does not mean the allele is more common, more powerful, or somehow better. Dominance and frequency are completely separate ideas."
+      },
+      "diagram": {
+        "type": "punnettSquare",
+        "top": ["T", "t"],
+        "left": ["T", "t"]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-autosomal",
+      "type": "concept",
+      "heading": "Autosomal: both sexes, equally",
+      "body": "An autosomal gene sits on a non-sex chromosome, so it affects males and females equally.",
+      "bullets": [
+        {
+          "text": "Autosomal dominant: appears every generation; an affected child usually has an affected parent."
+        },
+        {
+          "text": "Autosomal recessive: can skip generations through unaffected carriers."
+        },
+        {
+          "text": "Two carriers, Aa by Aa, give a 3 to 1 phenotype ratio, so 25% affected."
+        }
+      ],
+      "secondary": "That carrier cross gives a 1:2:1 genotype ratio and a 3:1 phenotype ratio. Each child has a 25% probability of being affected.",
+      "callout": "Recessive can hide in carriers and skip a generation.",
+      "durationInFrames": 1800,
+      "caption": "Autosomal traits affect both sexes; Aa × Aa gives 1:2:1 genotype, 3:1 phenotype, 25% affected.",
+      "voiceover": {
+        "text": "Let's start with autosomal traits, meaning the gene sits on one of the non-sex chromosomes. The first consequence is simple, autosomal traits affect males and females equally, because everyone has those chromosomes. Now, dominant versus recessive gives different family patterns. An autosomal dominant trait appears in every generation, and an affected child almost always has an affected parent, because you only need one copy. An autosomal recessive trait is sneakier. It can skip generations, because unaffected carriers can quietly carry one recessive allele without showing it. The classic cross is two carriers, Aa by Aa. That gives a genotype ratio of one to two to one, and a phenotype ratio of three to one. So each child has a twenty-five percent probability of being affected. Memorise that carrier cross, it appears constantly."
+      },
+      "diagram": {
+        "type": "pedigree"
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "A monohybrid cross",
+      "question": "In pea plants, T is dominant for tall and t is recessive for short, on an autosome. Cross two heterozygous plants (Tt × Tt). State the gametes, complete the cross, and give the genotype and phenotype ratios.",
+      "coachNote": "Each Tt parent makes two gamete types: T and t. Fill the 2 by 2 grid.",
+      "steps": [
+        "Parents are Tt × Tt, so each parent's gametes are T and t.",
+        "Filling the grid gives offspring: TT, Tt, Tt, tt.",
+        "Genotype ratio is 1 TT : 2 Tt : 1 tt, the classic 1:2:1.",
+        "With complete dominance, TT and Tt are both tall, tt is short, so 3 tall : 1 short.",
+        "Answer: genotype 1:2:1; phenotype 3:1; each child has a 25% chance of being short ✓"
+      ],
+      "durationInFrames": 2016,
+      "caption": "Tt × Tt gives genotypes 1 TT : 2 Tt : 1 tt and phenotypes 3 tall : 1 short.",
+      "voiceover": {
+        "text": "Let's run the standard monohybrid cross. In pea plants, capital T is dominant for tall and lowercase t is recessive for short, on an autosome. We're crossing two heterozygous plants, Tt by Tt. First, the gametes. Each Tt parent can pass either a T or a t, so both parents have gametes T and t. Now fill the two by two grid, and you get four offspring, capital T capital T, two copies of capital T lowercase t, and lowercase t lowercase t. So the genotype ratio is one TT, two Tt, one tt, the classic one to two to one. For the phenotypes, with complete dominance both TT and Tt are tall, and only tt is short, which gives three tall to one short. So each individual child has a twenty-five percent chance of being short. Notice we report a probability per child, never four locked-in plants."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "×",
+          "T",
+          "t"
+        ],
+        "rows": [
+          [
+            "T",
+            "TT",
+            "Tt"
+          ],
+          [
+            "t",
+            "Tt",
+            "tt"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Autosomal: a gene on a non-sex chromosome, affecting both sexes equally."
+        },
+        {
+          "text": "Dominant: an allele expressed in the phenotype of a heterozygote."
+        },
+        {
+          "text": "Recessive: an allele expressed only when no dominant allele is present."
+        },
+        {
+          "text": "Sex-linked: a trait from a gene on a sex chromosome, usually the X."
+        }
+      ],
+      "callout": "Autosomal versus sex-linked is about which chromosome the gene sits on.",
+      "durationInFrames": 1611,
+      "caption": "Autosomal, dominant, recessive, sex-linked.",
+      "voiceover": {
+        "text": "Let's pin the four words. Autosomal means the gene is on a non-sex chromosome, so it affects both sexes equally. Dominant means the allele is expressed in the phenotype even in a heterozygote, with just one copy. Recessive means the allele is only expressed when there's no dominant allele present, so you need two copies. And sex-linked means the trait comes from a gene on a sex chromosome, and at this level that almost always means the X chromosome. So the big organising question for any trait is just, which chromosome is the gene on. If it's an autosome, it's autosomal. If it's a sex chromosome, it's sex-linked, and that changes how it's inherited by sons and daughters."
+      }
+    },
+    {
+      "id": "concept-sexlinked",
+      "type": "concept",
+      "heading": "Sex-linked: it depends on X and Y",
+      "body": "X-linked recessive traits show up more in males, because males have only one X.",
+      "bullets": [
+        {
+          "text": "Females are XX; males are XY, so males are hemizygous for X genes."
+        },
+        {
+          "text": "A male needs only one recessive X allele to show the trait."
+        },
+        {
+          "text": "A father gives his sons a Y, not an X, so no father-to-son transmission."
+        }
+      ],
+      "secondary": "A carrier mother, XHXh, with an unaffected father, XHY, gives each son a 50% chance of being affected and each daughter a 50% chance of being a carrier.",
+      "callout": "Males have one X, so one recessive allele is enough.",
+      "durationInFrames": 2016,
+      "caption": "X-linked recessive: hemizygous males affected more; fathers pass sons Y, not X.",
+      "voiceover": {
+        "text": "Now the sex-linked case, and this is where students lose marks if they rush. Most sex-linked genes you'll meet are on the X chromosome. Females are XX, but males are XY, which means males have only a single X for these genes. We call that hemizygous. Here's why it matters. A female needs two recessive alleles to show an X-linked recessive trait, but a male needs only one, because he's got nowhere to hide it. That's why conditions like haemophilia and red-green colour blindness show up far more often in males. And there's one golden rule for pedigrees, a father passes his sons a Y chromosome, not an X, so there is no direct father-to-son transmission of an X-linked trait. A carrier mother with an unaffected father gives each son a fifty percent chance of being affected, and each daughter a fifty percent chance of being a carrier."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "An X-linked cross",
+      "question": "Haemophilia is X-linked recessive. A carrier mother (XHXh) has children with an unaffected father (XHY). Find the probability that a son is affected, and explain why the father cannot pass the allele to his sons.",
+      "coachNote": "Write alleles on the X itself. The father's sons get his Y.",
+      "steps": [
+        "Mother XHXh makes eggs XH and Xh; father XHY makes sperm XH and Y.",
+        "Offspring are XHXH, XHXh, XHY, XhY.",
+        "Only XhY is an affected son, so 25% of all children, or 50% of sons, are affected.",
+        "Sons receive the father's Y chromosome, never his X, so his XH cannot reach a son.",
+        "Answer: affected son = 50% of sons; the father gives sons a Y, so no father-to-son transmission ✓"
+      ],
+      "durationInFrames": 2150,
+      "caption": "Carrier mother × unaffected father: 50% of sons affected; fathers pass sons Y, not X.",
+      "voiceover": {
+        "text": "Let's do the X-linked cross properly. Haemophilia is X-linked recessive. We have a carrier mother, written X H X h, and an unaffected father, X H Y. The trick is to write the alleles right on the X chromosome. The mother makes two kinds of egg, X H and X h. The father makes two kinds of sperm, X H and the Y. Cross them, and the four outcomes are X H X H, X H X h, X H Y, and X h Y. Now find the affected sons. Only X h Y is an affected son, one out of four, so twenty-five percent of all the children, or fifty percent of the sons. And the second part, why can't the father pass haemophilia to a son? Because a son always receives the father's Y chromosome, never his X. So the father's X can only ever go to a daughter. That's the no father-to-son rule in action."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking a dominant allele must be more common. Dominance is about expression, not frequency. The Huntington's allele is dominant but rare.",
+      "secondary": "Trap 2: saying '25% of the children will be affected' as if the family is fixed. It is a 25% probability per child. Four children could all be affected, or none. Each fertilisation is independent.",
+      "mistakeTag": "Where inheritance marks vanish",
+      "callout": "Dominant is not common; 25% is per child, not per family.",
+      "durationInFrames": 1813,
+      "caption": "Dominance describes expression, not frequency; ratios are per-child probabilities.",
+      "voiceover": {
+        "text": "Two traps that cost marks every single year. Trap one, thinking that a dominant allele must be the common one in the population. Not true. Dominance only describes how an allele is expressed in a heterozygote, it says nothing about how frequent it is. The Huntington's disease allele is dominant, yet it's very rare, and plenty of recessive alleles are extremely common. Frequency and dominance are independent. Trap two is about how you state results. Don't write twenty-five percent of the children will be affected, as if the family outcome is locked in. The correct statement is each child has a twenty-five percent probability of being affected. Because every fertilisation is independent, a family of four could have all four affected, or none affected. The square gives probabilities per child, not guaranteed counts."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A pedigree shows two unaffected parents with an affected daughter, and the trait appears in both sexes. Is this more likely autosomal recessive or X-linked recessive? Justify it.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Two unaffected parents producing an affected child points to a recessive trait carried by both.",
+        "The affected individual is female, which is a strong clue.",
+        "For X-linked recessive, an affected daughter needs an affected father, but the father is unaffected.",
+        "The trait appearing in both sexes equally fits an autosomal gene.",
+        "Answer: autosomal recessive; an X-linked recessive daughter would need an affected father ✓"
+      ],
+      "durationInFrames": 1881,
+      "caption": "Unaffected parents, affected daughter, both sexes: autosomal recessive, not X-linked.",
+      "voiceover": {
+        "text": "Quick check, a pedigree puzzle. Two unaffected parents have an affected daughter, and the trait shows up in both sexes across the family. Is this more likely autosomal recessive or X-linked recessive? Pause and reason it through. Right, let's use the clues. Two unaffected parents producing an affected child tells us the trait is recessive, and that both parents are carriers. Now look at who's affected, a daughter. This is the deciding clue. For an X-linked recessive trait, an affected daughter would have to inherit an affected X from each parent, which means her father would have to be affected himself. But the father here is unaffected, so X-linked recessive doesn't fit. On top of that, the trait appearing in both sexes equally is exactly what we expect from an autosomal gene. So the answer is autosomal recessive."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A Punnett square is a probability model; dominant means expressed in a heterozygote.",
+        "Autosomal traits affect both sexes; Aa × Aa gives 3:1 phenotype, 25% affected per child.",
+        "X-linked recessive traits affect more males; fathers pass sons Y, not X.",
+        "Dominance is about expression, not frequency, and ratios are per-child probabilities.",
+        "Solve cleanly: define symbols, infer genotypes, list gametes, fill the square."
+      ],
+      "finalPrompt": "Every cross: define symbols, infer parent genotypes, list gametes, complete the square, report probability per child.",
+      "durationInFrames": 1692,
+      "caption": "Five takeaways: the model, autosomal, X-linked, expression vs frequency, the method.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, a Punnett square is a probability model, and dominant simply means expressed in a heterozygote. Second, autosomal traits affect both sexes, and the carrier cross, Aa by Aa, gives a three to one phenotype ratio, so twenty-five percent affected per child. Third, X-linked recessive traits affect more males, because males have only one X, and remember fathers pass their sons a Y, not an X. Fourth, dominance is about expression, not frequency, and your ratios are probabilities per child, not fixed family counts. And fifth, solve every cross the same clean way, define your symbols, infer the parent genotypes, list the gametes, then complete the square and report the probability. See you next lesson."
+      }
+    }
+  ]
+}

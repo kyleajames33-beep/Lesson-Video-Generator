@@ -1,0 +1,247 @@
+{
+  "title": "Aldehydes and Ketones",
+  "subtitle": "One hydrogen decides every test result",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 13",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "investigate the products of the oxidation of primary and secondary alcohols",
+    "investigate the structural formulae, properties and functional group including: primary, secondary and tertiary alcohols, aldehydes and ketones"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": [
+    "CH12-14",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "How can alcohols be produced and what are their properties?",
+  "lessonIntent": "Students can distinguish aldehydes from ketones by structure, name them, predict their relative boiling points, and identify them using Tollens' and Fehling's tests.",
+  "examSkill": "Use the presence or absence of a hydrogen on the carbonyl carbon to predict oxidisability and chemical test results, and justify why ketones resist oxidation.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, aldehydes and ketones, and the one hydrogen that changes everything. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Aldehydes and Ketones (Year 12 Chemistry, Module 7, Lesson 13)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why does one form a silver mirror?",
+      "body": "Vanilla and raspberry both owe their flavour to a carbonyl group. Yet one plates a test tube with silver and the other does nothing.",
+      "callout": "Same C=O group, completely different chemistry. Why?",
+      "image": "m7l13HookVanillaRaspberry",
+      "durationInFrames": 1449,
+      "caption": "Vanillin is an aldehyde; raspberry ketone is a ketone. One reacts, one doesn't.",
+      "voiceover": {
+        "text": "OK, here's a puzzle. Vanilla flavour comes from vanillin, and the smell of raspberries comes from raspberry ketone. Both molecules contain the carbonyl group, that's a carbon double bonded to oxygen. So you'd expect them to behave the same way. But put each one in a test of silver nitrate, and only the vanillin coats the glass with a shiny silver mirror. The raspberry compound does nothing at all. Same functional group, opposite results. Today you'll see that the entire difference comes down to a single hydrogen atom, and that one atom decides naming, boiling point, and every chemical test for these two families."
+      }
+    },
+    {
+      "id": "concept-structure",
+      "type": "concept",
+      "heading": "The carbonyl in two positions",
+      "body": "Both families are built around the carbonyl group. What differs is where it sits and what the carbonyl carbon is bonded to.",
+      "image": "m7l13CarbonylComparison",
+      "bullets": [
+        {
+          "text": "Aldehyde: terminal C=O, written R-CHO, with a hydrogen on the carbonyl carbon.",
+          "at": 8
+        },
+        {
+          "text": "Ketone: internal C=O, written R-CO-R', with no hydrogen on the carbonyl carbon.",
+          "at": 17
+        },
+        {
+          "text": "Aldehyde suffix is -al; ketone suffix is -one.",
+          "at": 26
+        },
+        {
+          "text": "Same molecular formula at the same carbon count, so they are isomers.",
+          "at": 33
+        }
+      ],
+      "secondary": "Propanal and propanone are both C3H6O, yet that single H makes them chemically different.",
+      "callout": "The hydrogen on the carbonyl carbon is the whole story.",
+      "durationInFrames": 1827,
+      "caption": "Aldehyde = terminal C=O with an H; ketone = internal C=O, no H.",
+      "voiceover": {
+        "text": "Let's get the structure clear, because everything flows from it. Both families have the carbonyl group, a carbon double bonded to oxygen. In an aldehyde, the carbonyl sits at the end of the chain, and we write it R-C-H-O. The key feature is that the carbonyl carbon also carries a hydrogen. In a ketone, the carbonyl sits inside the chain, written R-C-O-R prime, so the carbonyl carbon is bonded to two carbon groups and has no hydrogen at all. Naming follows the position. Aldehydes take the suffix -al, like propanal, and ketones take the suffix -one, like propanone. Here's the striking part. Propanal and propanone are both C3H6O. Identical formula, identical mass, and yet they react completely differently, purely because one has that hydrogen on the carbonyl carbon and the other doesn't."
+      }
+    },
+    {
+      "id": "concept-imf",
+      "type": "concept",
+      "heading": "Stuck in the middle on boiling point",
+      "body": "The polar C=O gives dipole-dipole forces, but with no O-H bond, these molecules cannot donate hydrogen bonds to each other.",
+      "bullets": [
+        {
+          "text": "More polar than alkanes, so dipole-dipole forces raise the boiling point.",
+          "at": 9
+        },
+        {
+          "text": "No O-H bond, so they cannot donate hydrogen bonds to each other.",
+          "at": 18
+        },
+        {
+          "text": "The C=O oxygen can still accept H-bonds from water, which aids solubility.",
+          "at": 27
+        },
+        {
+          "text": "Boiling point order: alkane, then aldehyde or ketone, then alcohol, then acid.",
+          "at": 35
+        }
+      ],
+      "callout": "Dipole-dipole, but no H-bond donation between molecules.",
+      "durationInFrames": 1908,
+      "caption": "Aldehydes and ketones: dipole-dipole forces, but no H-bond donation.",
+      "voiceover": {
+        "text": "Now their physical properties, which the exam loves to test through boiling points. The carbonyl bond is strongly polar, so these molecules attract each other with permanent dipole-dipole forces. That makes them boil higher than alkanes of similar size. But here's the limitation. An aldehyde or ketone has no oxygen-hydrogen bond, so it cannot donate a hydrogen bond to another molecule of itself. The oxygen can still accept a hydrogen bond from water, which is why short ones dissolve, but molecule to molecule, there's no H-bond donation. That places them in the middle of the boiling point ladder. Alkanes sit lowest with dispersion only, then aldehydes and ketones with dipole-dipole, then alcohols which can hydrogen bond, and carboxylic acids highest of all. If you can reason from forces rather than memorise the order, you can rank any set."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Two tests, one diagnosis",
+      "bullets": [
+        {
+          "text": "Tollens' reagent: aldehyde gives a silver mirror; ketone gives no reaction.",
+          "at": 7
+        },
+        {
+          "text": "Fehling's solution: aldehyde turns blue to a brick-red precipitate; ketone stays blue.",
+          "at": 16
+        },
+        {
+          "text": "Both work by oxidising the aldehyde; the ketone has no H to remove.",
+          "at": 25
+        },
+        {
+          "text": "Acidified dichromate: aldehyde turns orange to green; ketone stays orange.",
+          "at": 33
+        }
+      ],
+      "callout": "A positive result means the carbonyl carbon had a hydrogen to lose.",
+      "durationInFrames": 2043,
+      "caption": "Tollens' silver mirror and Fehling's brick-red precipitate both flag an aldehyde.",
+      "voiceover": {
+        "text": "So how do we actually tell them apart in the lab. There are two classic tests, and both exploit that one hydrogen. Tollens' reagent is ammoniacal silver nitrate. With an aldehyde, the silver ions are reduced to metallic silver, which plates the glass as a bright silver mirror. With a ketone, nothing happens. Fehling's solution contains copper two ions and is deep blue. An aldehyde reduces those copper ions and a brick-red precipitate of copper one oxide drops out, while a ketone leaves it blue. Both tests work the same way underneath. They are mild oxidising agents that pull the hydrogen off the carbonyl carbon, oxidising the aldehyde to a carboxylate. A ketone has no hydrogen there to remove, so it can't be oxidised, and the test stays negative. Acidified dichromate behaves the same way, turning orange to green with an aldehyde but staying orange with a ketone."
+      }
+    },
+    {
+      "id": "concept-oxidation",
+      "type": "concept",
+      "heading": "Why ketones hit a dead end",
+      "body": "Oxidising a carbonyl compound means removing the hydrogen from the carbonyl carbon. A ketone simply has none to remove.",
+      "bullets": [
+        {
+          "text": "Aldehyde: the carbonyl carbon has one H, so it oxidises to a carboxylic acid.",
+          "at": 8
+        },
+        {
+          "text": "Ketone: the carbonyl carbon has no H, so oxidation cannot proceed.",
+          "at": 16
+        },
+        {
+          "text": "This is structural, not a special rule you have to memorise.",
+          "at": 24
+        },
+        {
+          "text": "So secondary alcohol to ketone is a dead end for further oxidation.",
+          "at": 31
+        }
+      ],
+      "callout": "No hydrogen on the carbonyl carbon means no further oxidation.",
+      "durationInFrames": 1921,
+      "caption": "Ketones resist oxidation because the carbonyl carbon has no H to remove.",
+      "voiceover": {
+        "text": "Let's make the oxidation logic airtight, because it explains the test results and it's a guaranteed exam point. To oxidise a carbonyl compound, an oxidising agent has to remove the hydrogen attached to the carbonyl carbon. An aldehyde has exactly one hydrogen sitting there, so it readily oxidises up to a carboxylic acid. A ketone has two carbon groups on its carbonyl carbon and no hydrogen, so there is simply nothing for the oxidising agent to take. That's why ketones don't react with Tollens', Fehling's, or dichromate under normal conditions. Notice this is a structural argument, not a rule to memorise. And it links straight back to alcohols. A primary alcohol oxidises to an aldehyde and onward to an acid, but a secondary alcohol oxidises to a ketone and stops dead. The ketone is the end of the line."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Identify, name, and predict",
+      "question": "Classify each compound and predict its Tollens' result: (a) CH3CH2CH2CHO, (b) CH3COCH2CH2CH3, (c) CH3CH2COCH2CH3.",
+      "coachNote": "Find the carbonyl. A hydrogen on it means aldehyde and Tollens' positive; no hydrogen means ketone and Tollens' negative.",
+      "steps": [
+        "(a) CH3CH2CH2CHO: carbonyl at the chain end with an H on it. Aldehyde, 4 carbons, so butanal.",
+        "(a) An aldehyde reduces Tollens', so the result is positive, a silver mirror.",
+        "(b) CH3COCH2CH2CH3: C=O between C2 and C3, no H on the carbonyl carbon. Ketone.",
+        "(b) Five carbons with C=O at C2, so pentan-2-one. Tollens' is negative.",
+        "(c) CH3CH2COCH2CH3: C=O at C3, flanked by two ethyl-type groups. Ketone, so pentan-3-one.",
+        "(c) No hydrogen on the carbonyl carbon, so Tollens' is negative.",
+        "Answer: butanal (positive), pentan-2-one (negative), pentan-3-one (negative)."
+      ],
+      "durationInFrames": 1948,
+      "caption": "Butanal is Tollens' positive; pentan-2-one and pentan-3-one are negative.",
+      "voiceover": {
+        "text": "Let's work through a typical identification. We have three compounds to classify and name, and to predict the Tollens' result for each. Take the first, C-H-3, C-H-2, C-H-2, C-H-O. The carbonyl is right at the end of the chain and it carries a hydrogen, so this is an aldehyde. Four carbons makes it butanal. An aldehyde reduces Tollens', so we'd see a silver mirror, a positive result. The second compound has the carbonyl between carbon two and carbon three, with no hydrogen on that carbon, so it's a ketone. Five carbons with the carbonyl at position two gives pentan-2-one, and Tollens' is negative. The third has its carbonyl at carbon three, again with no hydrogen, so it's pentan-3-one, also Tollens' negative. So the only one that gives a silver mirror is the aldehyde, butanal. The same hydrogen test sorts every case."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"The C=O oxygen lets it hydrogen bond\"",
+      "body": "Students assume that because aldehydes and ketones contain oxygen, they can hydrogen bond like alcohols. They can't donate H-bonds at all.",
+      "secondary": "Hydrogen bonding needs an O-H, N-H, or F-H bond as the donor. The aldehyde's hydrogen is a C-H bond, not an O-H. The carbonyl oxygen can only accept H-bonds, never donate them.",
+      "callout": "No O-H bond means no H-bond donation, which is why their boiling point sits below alcohols.",
+      "mistakeTag": "Carbonyl oxygen does not mean H-bond donor",
+      "durationInFrames": 1813,
+      "caption": "Aldehydes and ketones have no O-H, so they cannot donate hydrogen bonds.",
+      "voiceover": {
+        "text": "Here's the trap that costs marks every year. Students see that aldehydes and ketones contain oxygen and conclude they hydrogen bond to each other like alcohols do. That's wrong, and the reason is precise. Hydrogen bonding needs a hydrogen attached to a strongly electronegative atom, an oxygen-hydrogen, nitrogen-hydrogen, or fluorine-hydrogen bond, to act as the donor. Look closely at an aldehyde. The only hydrogen near the carbonyl is bonded to carbon, a carbon-hydrogen bond, and that can't donate a hydrogen bond. The carbonyl oxygen does have lone pairs, so it can accept a hydrogen bond from water, but it can never donate one to another aldehyde. So between their own molecules there is no H-bond donation, only dipole-dipole. That's exactly why their boiling points fall below alcohols of the same size."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "Compound A (C4H8O) gives a silver mirror with Tollens'. Compound B (C4H8O) gives no reaction with Tollens', Fehling's, or acidified dichromate. Classify A and B, name each, and explain B's negative tests.",
+      "pausePrompt": "Pause and reason from the tests before the answer plays.",
+      "answerSteps": [
+        "Both are C4H8O, so each is an aldehyde or a ketone (one degree of unsaturation, the C=O).",
+        "A gives a silver mirror, so A is an aldehyde: butanal, CH3CH2CH2CHO.",
+        "B gives no Tollens', no Fehling's, and no dichromate change, so it cannot be oxidised: a ketone.",
+        "The only C4 ketone is butan-2-one, CH3COCH2CH3.",
+        "B is negative because its carbonyl carbon has no hydrogen for the oxidising agent to remove."
+      ],
+      "durationInFrames": 2043,
+      "caption": "A = butanal (aldehyde); B = butan-2-one (ketone, no H to oxidise).",
+      "voiceover": {
+        "text": "Your turn. Two compounds, both C4H8O. Compound A gives a silver mirror with Tollens'. Compound B gives no reaction with Tollens', no reaction with Fehling's, and no colour change with acidified dichromate. Classify and name both, and explain why B is negative. Pause now and reason it through. Right, let's check. Both formulas are C4H8O, which has one degree of unsaturation, and that's the carbon-oxygen double bond, so each must be an aldehyde or a ketone. A gives a silver mirror, so A is an aldehyde, and the straight-chain C4 aldehyde is butanal. B refuses every oxidising test, which means it can't be oxidised at all, so B is a ketone. The only four-carbon ketone is butan-2-one. And the reason B is negative is the heart of the lesson. Its carbonyl carbon has two carbon groups and no hydrogen, so there's nothing for the oxidising agent to remove."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "First question on any carbonyl compound: is there a hydrogen on the carbonyl carbon?",
+      "points": [
+        "Aldehyde: terminal C=O with an H (suffix -al). Ketone: internal C=O, no H (suffix -one).",
+        "Both have dipole-dipole forces but cannot donate H-bonds, so they boil below alcohols.",
+        "Tollens' gives a silver mirror and Fehling's a brick-red precipitate, with aldehydes only.",
+        "Ketones resist oxidation because the carbonyl carbon has no hydrogen to remove.",
+        "Secondary alcohol to ketone is a dead end for further oxidation."
+      ],
+      "durationInFrames": 1921,
+      "caption": "One hydrogen decides naming, boiling point, oxidation, and every test.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, an aldehyde has a terminal carbonyl with a hydrogen on it and the suffix -al, while a ketone has an internal carbonyl, no hydrogen, and the suffix -one. Second, both have dipole-dipole forces but neither can donate a hydrogen bond, so they boil below alcohols of the same size. Third, Tollens' gives a silver mirror and Fehling's gives a brick-red precipitate, and both are positive only for aldehydes. Fourth, ketones resist oxidation because their carbonyl carbon has no hydrogen for an oxidising agent to take. And fifth, that's why oxidising a secondary alcohol stops at the ketone. So whenever a carbonyl compound lands in front of you, ask one question first. Is there a hydrogen on the carbonyl carbon. Answer that, and everything else follows. See you next lesson."
+      }
+    }
+  ]
+}

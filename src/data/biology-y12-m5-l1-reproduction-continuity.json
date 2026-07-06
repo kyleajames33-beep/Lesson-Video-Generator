@@ -1,0 +1,315 @@
+{
+  "title": "Reproduction and Continuity of Species",
+  "subtitle": "Why a species survives even though every individual dies",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "explain the mechanisms of reproduction that ensure the continuity of a species, by analysing sexual and asexual methods of reproduction in a variety of organisms"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does reproduction ensure the continuity of a species?",
+  "lessonIntent": "Students can explain how reproduction maintains continuity of a species and compare sexual and asexual reproduction as trade-offs suited to different environments.",
+  "examSkill": "Compare sexual and asexual reproduction by parent number, variation and suitability, then justify which strategy fits a given environment.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today we open Module 5, Heredity, with reproduction and the continuity of a species. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Reproduction and Continuity of Species (Year 12 Biology, Module 5, Lesson 1)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The banana that can't fight back",
+      "body": "Every Cavendish banana on Earth is a clone of one plant. A single fungus is now wiping them out, country by country.",
+      "callout": "If every plant is identical, one pathogen can threaten them all at once.",
+      "image": "bioM5L1BananaClone",
+      "durationInFrames": 1710,
+      "caption": "Cavendish bananas are genetically identical clones, leaving them vulnerable to one disease.",
+      "voiceover": {
+        "text": "Almost every banana you have ever eaten is a Cavendish, and here is the unsettling part. They are all clones, grown from cuttings of essentially one plant since the nineteen fifties, so genetically they are near enough identical. Around two thousand nineteen, the FAO reported that a soil fungus called TR4 had spread to twenty countries, killing Cavendish plantations one by one. Because every plant carries the same genes, every plant carries the same weakness, and not one can resist. That is this whole module in a single crop. A species only continues if its genetic information is passed on, and variation in that information is what lets it survive when conditions change. Today we work out why reproduction sits at the centre of heredity."
+      }
+    },
+    {
+      "id": "concept-continuity",
+      "type": "concept",
+      "heading": "Continuity is about the lineage, not the individual",
+      "body": "Individuals die. A species continues only if genetic information is passed into a new, viable generation.",
+      "bullets": [
+        {
+          "text": "Reproduction does two jobs: it makes offspring and it transfers hereditary information."
+        },
+        {
+          "text": "Condition one: DNA must be transferred from parent to offspring."
+        },
+        {
+          "text": "Condition two: those offspring must be viable enough to reproduce again."
+        }
+      ],
+      "secondary": "This is why Module 5 starts here. Meiosis, DNA replication and inheritance patterns all answer the same question: how does genetic information move through time?",
+      "callout": "A species persists by passing on DNA, not by keeping any one organism alive.",
+      "durationInFrames": 1848,
+      "caption": "Continuity needs DNA transferred to offspring that are viable enough to reproduce again.",
+      "voiceover": {
+        "text": "Let's start with what continuity actually means, because students often get this slightly wrong. Continuity of a species is not about keeping any single organism alive, every individual dies eventually. It is about the genetic information surviving across generations. Reproduction is what makes that possible, and it does two jobs at once. First, it produces offspring. Second, and just as important for HSC, it transfers hereditary information, the DNA, from parent to offspring. So continuity depends on two linked conditions. The DNA has to be passed on, and the offspring that receive it have to be viable, meaning they survive long enough to reproduce themselves. Hold onto that framing, because the whole module builds on it. Meiosis, DNA replication, inheritance, they are all really answering one question, how does genetic information move forward through time?"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Reproduction: producing offspring and transferring hereditary information to the next generation."
+        },
+        {
+          "text": "Continuity of species: the ongoing survival of a species across generations through inheritance of DNA."
+        },
+        {
+          "text": "Asexual reproduction: one parent, no gamete fusion, offspring usually genetically identical clones."
+        },
+        {
+          "text": "Sexual reproduction: fusion of gametes, usually two parents, offspring genetically varied."
+        },
+        {
+          "text": "Variation: differences in characteristics between individuals, often linked to different alleles."
+        }
+      ],
+      "callout": "Asexual copies the parent; sexual reshuffles the genes.",
+      "durationInFrames": 1626,
+      "caption": "Reproduction, continuity, asexual, sexual and variation defined.",
+      "voiceover": {
+        "text": "Let's lock down five terms you will use all module. Reproduction is producing offspring and transferring hereditary information to the next generation. Continuity of a species is the ongoing survival of that species across generations, through the inheritance of DNA. Asexual reproduction uses a single parent with no fusion of gametes, so the offspring are usually genetically identical to the parent, what we call clones. Sexual reproduction involves the fusion of gametes, usually from two parents, producing offspring that are genetically varied. And variation just means the differences in characteristics between individuals, which usually trace back to different alleles. The clean way to hold the two apart, asexual copies the parent, while sexual reshuffles the genes into new combinations."
+      }
+    },
+    {
+      "id": "concept-asexual",
+      "type": "concept",
+      "heading": "Asexual: fast, efficient, low variation",
+      "body": "One parent, no fertilisation. Offspring are usually genetically identical clones, apart from mutation.",
+      "bullets": [
+        {
+          "text": "Advantages: no mate needed, rapid population growth, a successful genotype is preserved."
+        },
+        {
+          "text": "Limitation: low variation, so one pathogen or change can hit the whole population at once."
+        },
+        {
+          "text": "Examples: bacterial binary fission, budding in yeast and hydra, runners in strawberries."
+        }
+      ],
+      "secondary": "Careful: asexual does not mean zero variation. Mutation still happens. It just does not routinely reshuffle alleles the way sexual reproduction does.",
+      "callout": "Cloning is a speed strategy, and the price is uniformity.",
+      "durationInFrames": 2118,
+      "caption": "Asexual reproduction is rapid and clonal, but low variation makes populations vulnerable.",
+      "voiceover": {
+        "text": "Asexual reproduction is a strategy built for speed. A single parent produces offspring without any fertilisation, so with no fusion of gametes, the offspring come out genetically identical to the parent, apart from the odd mutation. We call those near identical offspring clones. The advantages are real. You do not need a mate, the population can grow fast under stable conditions, and a genotype that already works is preserved exactly. But there is a cost, the same one we saw with the bananas. Low variation means if one pathogen or change can harm one individual, it can harm all of them, because they are basically the same. You see this in bacterial binary fission, budding in yeast and hydra, and runners in strawberries. One warning for the exam, do not write that asexual means no variation at all. Mutation still happens. The point is it does not routinely reshuffle alleles the way sexual reproduction does."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "p",
+            "label": "1 parent"
+          },
+          {
+            "id": "d",
+            "label": "DNA copied"
+          },
+          {
+            "id": "o",
+            "label": "Clones"
+          }
+        ],
+        "edges": [
+          {
+            "from": "p",
+            "to": "d"
+          },
+          {
+            "from": "d",
+            "to": "o"
+          }
+        ]
+      }
+    },
+    {
+      "id": "concept-sexual",
+      "type": "concept",
+      "heading": "Sexual: slower, costlier, higher variation",
+      "body": "Gametes fuse to form a zygote carrying genes from more than one parent, so offspring are genetically varied.",
+      "bullets": [
+        {
+          "text": "Advantage: greater variation improves a population's resilience when conditions change."
+        },
+        {
+          "text": "Cost: usually needs a mate, takes more time and energy, often fewer offspring."
+        },
+        {
+          "text": "If disease, drought or temperature shift, some varied offspring may already suit the new conditions."
+        }
+      ],
+      "secondary": "Sexual reproduction does not guarantee survival. It raises the chance that at least some offspring cope with change. Meiosis later explains exactly why variation appears.",
+      "callout": "Variation is the raw material survival works with when the environment turns.",
+      "durationInFrames": 2022,
+      "caption": "Sexual reproduction trades speed and energy for the variation that aids survival.",
+      "voiceover": {
+        "text": "So if cloning is so efficient, why do most complex organisms bother with sex at all? Here is the answer. In sexual reproduction, offspring form after the fusion of gametes, so the resulting zygote carries genetic information from more than one parent. Because those gametes carry different combinations of alleles, the offspring come out genetically varied, every one a bit different. And that variation is the whole point in evolutionary terms. If conditions shift, because of disease, drought, or competition, some of those varied offspring may already happen to carry combinations that suit the new conditions. Sexual reproduction does not guarantee anyone survives, but it raises the odds that at least some offspring will cope. The cost is that it is slower, it usually needs a mate, and it uses more energy, often for fewer offspring. We will see how meiosis manufactures that variation later in the module."
+      },
+      "diagram": {
+        "type": "venn",
+        "leftLabel": "Parent A alleles",
+        "rightLabel": "Parent B alleles",
+        "overlapLabel": "New combinations in offspring"
+      }
+    },
+    {
+      "id": "concept-tradeoff",
+      "type": "concept",
+      "heading": "It's a trade-off, not a ranking",
+      "body": "Neither strategy is universally better. The right one depends entirely on the environment.",
+      "bullets": [
+        {
+          "text": "Stable, predictable environment: asexual wins on speed and efficiency."
+        },
+        {
+          "text": "Changing environment or disease pressure: sexual wins on resilience through variation."
+        },
+        {
+          "text": "Cavendish bananas: cloning preserved quality, but zero variation left the crop globally vulnerable."
+        }
+      ],
+      "secondary": "The most common exam mistake is treating sexual reproduction as automatically superior. Biology rewards different strategies in different contexts.",
+      "callout": "Productive now can still mean vulnerable later.",
+      "durationInFrames": 2094,
+      "caption": "Asexual suits stable conditions; sexual suits change. Neither is universally better.",
+      "voiceover": {
+        "text": "Now the idea examiners most want you to get right. Neither strategy is automatically better. It depends on the environment. Under stable, predictable conditions, asexual reproduction can be brilliant. If one genotype already performs well and nothing is changing, rapid cloning fills the habitat fast, which is why so many microbes and farming systems lean on it. But under changing conditions, that same uniformity becomes the risk. If every individual shares the same susceptibility to a pathogen, a toxin, or a climate stress, the whole population can be hit at once. Sexual reproduction softens that by spreading out the allele combinations. The bananas show the trade off perfectly. Cloning preserved the quality markets want, but with no variation, a single fungal disease could threaten a globally identical crop. So do not write that sexual reproduction is just better. Productive now can still mean vulnerable later, and the smart answer always names the environment."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Question",
+          "Asexual",
+          "Sexual"
+        ],
+        "rows": [
+          [
+            "Parents needed",
+            "Usually one",
+            "Usually two"
+          ],
+          [
+            "Fertilisation",
+            "No",
+            "Yes"
+          ],
+          [
+            "Routine variation",
+            "Low",
+            "High"
+          ],
+          [
+            "Speed of increase",
+            "Faster",
+            "Slower"
+          ],
+          [
+            "Resilience to change",
+            "Lower",
+            "Higher"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Name the method, then justify it",
+      "question": "For each case, state sexual or asexual and give the reason: (a) a bacterium dividing by binary fission; (b) a strawberry plant growing a new plant on a runner; (c) coral releasing eggs and sperm into the water during spawning.",
+      "coachNote": "Check one thing first: is there fusion of gametes? No fusion means asexual.",
+      "steps": [
+        "(a) Binary fission is one cell copying its DNA and splitting in two, with no gamete fusion, so it is asexual.",
+        "(b) A runner grows a new plant directly from the parent by vegetative propagation, with no fertilisation, so it is asexual.",
+        "(c) Spawning releases gametes that fuse during external fertilisation, producing varied offspring, so it is sexual.",
+        "Decision rule: gamete fusion present means sexual; no gamete fusion means asexual.",
+        "Answer: (a) asexual, (b) asexual, (c) sexual."
+      ],
+      "durationInFrames": 2094,
+      "caption": "(a) asexual, (b) asexual, (c) sexual, decided by whether gametes fuse.",
+      "voiceover": {
+        "text": "Let's run the classification on three examples, because this is exactly how the exam asks it. The trick is to check one thing first, is there fusion of gametes. Part a, a bacterium dividing by binary fission. That is one cell copying its DNA and splitting into two daughter cells, with no gametes and no fusion, so it is asexual. Part b, a strawberry plant sending out a runner that grows into a new plant. That new plant grows directly from the parent by vegetative propagation, no fertilisation involved, so again asexual. Part c, coral releasing eggs and sperm into the water during a spawning event. Here gametes are released and they fuse in external fertilisation, producing genetically varied offspring, so that one is sexual. The decision rule is simple. If gametes fuse, it is sexual. If there is no gamete fusion, it is asexual. So the answers are asexual, asexual, and sexual."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps that cost marks",
+      "body": "Trap 1: thinking sexual offspring are a fifty-fifty blend of each parent. They inherit half their chromosomes from each parent, but the allele combination is unique, not an average.",
+      "secondary": "Trap 2: writing that asexual offspring are identical in every way. They share the same nuclear DNA, but somatic mutation, epigenetics and environment during development mean clones are not perfectly identical. And the big one for this topic: never call sexual reproduction automatically better, it depends on the environment.",
+      "mistakeTag": "Where reproduction marks vanish",
+      "callout": "Half the chromosomes, yes; a blended average, no.",
+      "durationInFrames": 1914,
+      "caption": "Sexual offspring are unique, not averages; clones are near-identical, not perfectly identical.",
+      "voiceover": {
+        "text": "Two traps that quietly cost marks. Trap one, thinking sexual reproduction makes offspring that are a fifty fifty blend of each parent, like mixing paint. That is not how it works. Offspring do inherit half their chromosomes from each parent, but the specific combination of alleles is unique to that individual. No child is an average of mum and dad, they are a fresh shuffle. Trap two, writing that asexual offspring are identical to the parent in every single way. They share the same nuclear DNA, yes, but somatic mutations, epigenetic differences, and the environment during development all mean clones are not perfectly identical. And the big one for this topic, which we already flagged, never say sexual reproduction is simply better. Whether sexual or asexual wins depends entirely on the environment, so always tie your answer to the conditions."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A new fungal pathogen begins spreading through a plantation of genetically uniform cloned crop plants. Explain why low genetic variation makes this population especially vulnerable, and what sexual reproduction would change.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Cloned plants are genetically near-identical, so they share the same susceptibility to the pathogen.",
+        "If the pathogen can infect one plant, it can infect essentially all of them, with no resistant individuals to survive.",
+        "Sexual reproduction would generate varied offspring with different allele combinations.",
+        "Some of those varied individuals might carry resistance, allowing differential survival and continuity.",
+        "Answer: uniformity removes any chance of resistant survivors; variation from sexual reproduction restores it."
+      ],
+      "durationInFrames": 2040,
+      "caption": "Uniform clones share one weakness; sexual variation gives some individuals a chance to resist.",
+      "voiceover": {
+        "text": "Quick check, the banana logic applied to an exam scenario. A new fungal pathogen starts spreading through a plantation of genetically uniform cloned crop plants. Explain why that low variation makes the population especially vulnerable, and what sexual reproduction would change. Pause and reason it through. Right. Because the plants are clones, they are genetically near identical, so they share the same susceptibility to the pathogen. If the fungus can infect one plant, it can infect basically all of them, and crucially no genetically different individual is there to resist. Now bring in sexual reproduction. It would generate offspring with varied allele combinations, and some of them might carry resistance. That allows differential survival, where the resistant ones live, pass on their genes, and the species continues. So the key line is, uniformity removes any chance of a resistant survivor, and variation from sexual reproduction puts that chance back."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Continuity of a species means genetic information surviving across generations, not any one individual.",
+        "Reproduction does two jobs: makes offspring and transfers hereditary information.",
+        "Asexual reproduction: one parent, clones, fast, low variation, suits stable conditions.",
+        "Sexual reproduction: gamete fusion, varied offspring, slower, suits changing conditions.",
+        "Neither strategy is universally better, so always justify by the environment."
+      ],
+      "finalPrompt": "Classifying reproduction? Ask: do gametes fuse? Then tie the strategy to the environment.",
+      "durationInFrames": 1710,
+      "caption": "Five takeaways: continuity, reproduction's two jobs, asexual vs sexual, the trade-off.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, continuity of a species is about genetic information surviving across generations, not about any single individual living forever. Second, reproduction does two jobs at once, it makes offspring and it transfers hereditary information. Third, asexual reproduction uses one parent to make clones, it is fast and efficient with low variation, and it suits stable conditions. Fourth, sexual reproduction fuses gametes to make varied offspring, it is slower and costlier, and it suits changing conditions. And fifth, neither strategy is universally better, so always justify your choice by the environment. When you classify a case, ask whether gametes fuse, then tie the strategy to the conditions. Next lesson, we look at how animals actually achieve fertilisation."
+      }
+    }
+  ]
+}

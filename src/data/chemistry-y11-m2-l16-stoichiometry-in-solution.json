@@ -1,0 +1,190 @@
+{
+  "title": "Stoichiometry in Solution",
+  "subtitle": "Mole ratios meet concentration and volume",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 16",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "solve stoichiometry problems involving solutions using concentration, volume and balanced equations"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-9", "CH11/12-4", "CH11/12-6"],
+  "inquiryQuestion": "What happens in chemical reactions?",
+  "lessonIntent": "Students can solve reaction problems where reactants are solutions, using n = cV to enter and exit the mole bridge.",
+  "examSkill": "Use n = cV to find moles of a solution, apply the mole ratio, then convert to mass, or back to concentration using the correct final volume.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, stoichiometry in solution, where mole ratios meet concentration. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Stoichiometry in Solution (Year 11 Chemistry, Module 2, Lesson 16)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two skills you already have, combined",
+      "body": "Moles from concentration and volume. Mole ratios from equations. Put them together.",
+      "callout": "n = cV is the new way onto the mole bridge.",
+      "durationInFrames": 660,
+      "caption": "Solution stoichiometry combines n = cV with mole ratios.",
+      "voiceover": {
+        "text": "OK, today is a combination lesson, and you already own both halves. From the concentration lesson, you know how to get moles from a solution, using concentration times volume. From the stoichiometry lessons, you know how to use a mole ratio from a balanced equation. Solution stoichiometry just bolts those two together. Instead of getting onto the mole bridge through mass, you get on through concentration and volume. The bridge itself, the mole ratio, is identical. So there's no new theory, just a new on-ramp."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "n = cV gets you on the bridge",
+      "body": "When a reactant is a solution, you find its moles from concentration times volume.",
+      "image": "l16SolutionStoich",
+      "bullets": [
+        {"text": "Solution given: n = c × V, with volume in litres."},
+        {"text": "Cross the mole bridge with the balanced equation's ratio."},
+        {"text": "Finish as mass, or as a concentration using the final volume."}
+      ],
+      "secondary": "If the question asks for a final concentration, use the total combined volume, not one reactant's volume.",
+      "callout": "Moles in via n = cV; the ratio works the same as ever.",
+      "durationInFrames": 1110,
+      "caption": "n = cV enters the bridge; finish as mass or as concentration.",
+      "voiceover": {
+        "text": "Here's the structure. When a reactant is a solution, you find its moles by multiplying concentration by volume, with the volume in litres. That puts you on the mole bridge. From there it's identical to every stoichiometry problem. Apply the mole ratio from the balanced equation to get moles of the substance you want. Then finish however the question asks, as a mass using molar mass, or as a concentration. One subtlety to flag now. If the question asks for the final concentration of something after mixing, you divide by the total combined volume of the mixture, not the volume of just one reactant. We'll see exactly that in a worked example."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The tools you need",
+      "bullets": [
+        {"text": "n = cV: moles from concentration and volume, in litres."},
+        {"text": "Mole ratio: the coefficient ratio from the balanced equation."},
+        {"text": "Final concentration: moles formed ÷ total mixed volume."},
+        {"text": "Units: mol L⁻¹ and litres, so convert mL by dividing by 1000."}
+      ],
+      "callout": "Final concentration uses the combined volume of everything mixed.",
+      "durationInFrames": 930,
+      "caption": "n = cV, mole ratio, final concentration over total volume.",
+      "voiceover": {
+        "text": "Quick tool check. n equals c times V gives moles from a solution, with the volume in litres. The mole ratio is the coefficient ratio from the balanced equation, your bridge. The final concentration of a product is its moles divided by the total mixed volume. And on units, concentration is in moles per litre and volume in litres, so convert any millilitres by dividing by a thousand. That last point about the total mixed volume is the one that separates a band-five answer from a band-six one, so hold onto it."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The pathway",
+      "body": "Solution to moles with n = cV, mole ratio across, then mass or concentration out.",
+      "bullets": [
+        {"text": "Moles in: n = c × V for each solution given."},
+        {"text": "Apply the mole ratio across the bridge."},
+        {"text": "Out: × molar mass for mass, or ÷ total volume for concentration."}
+      ],
+      "secondary": "For a precipitate mass, exit via molar mass. For a product concentration, exit via the combined volume.",
+      "callout": "Pick the exit ramp the question is asking for.",
+      "durationInFrames": 1020,
+      "caption": "n = cV in, mole ratio across, mass or concentration out.",
+      "voiceover": {
+        "text": "Here's the pathway. Get onto the bridge by converting each given solution to moles with n equals c times V. Cross the bridge with the mole ratio. Then choose your exit ramp based on what the question wants. If it asks for the mass of a precipitate, exit by multiplying by the molar mass. If it asks for the concentration of a product in the mixture, exit by dividing by the total combined volume. Same bridge, two possible exits. The skill is reading which one the question is asking for, then taking that ramp."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Mass of a precipitate",
+      "question": "30.0 mL of 0.200 mol L⁻¹ AgNO₃ + excess NaCl. Find the mass of AgCl. AgNO₃ + NaCl → AgCl + NaNO₃. (Ag 107.87, Cl 35.45)",
+      "coachNote": "Solution in via n = cV; solid out via molar mass.",
+      "steps": [
+        "n(AgNO₃) = c × V = 0.200 × 0.0300 = 6.00 × 10⁻³ mol",
+        "Ratio AgNO₃ : AgCl = 1 : 1, so n(AgCl) = 6.00 × 10⁻³ mol",
+        "M(AgCl) = 107.87 + 35.45 = 143.32 g mol⁻¹",
+        "m(AgCl) = n × M = 6.00 × 10⁻³ × 143.32",
+        "Answer: m(AgCl) = 0.860 g ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "30.0 mL of 0.200 mol L⁻¹ AgNO₃ gives 0.860 g AgCl.",
+      "voiceover": {
+        "text": "Let's find a precipitate mass. Thirty millilitres of nought-point-two mole per litre silver nitrate is mixed with excess sodium chloride, forming a white silver chloride precipitate. Find its mass. The silver nitrate is a solution, so we enter through n equals c times V. Step one, moles of silver nitrate. Nought-point-two times nought-point-zero-three litres is six times ten to the minus three moles. Step two, the ratio of silver nitrate to silver chloride is one to one, so the same moles of precipitate. Step three, molar mass of silver chloride is one hundred and forty-three-point-three-two. Step four, the product is a solid, so exit through molar mass. Six times ten to the minus three, times one hundred and forty-three-point-three-two, is nought-point-eight-six grams. Solution in through n equals c V, solid out through molar mass."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Final concentration after mixing",
+      "question": "25.0 mL of 0.100 mol L⁻¹ HCl + 25.0 mL NaOH → NaCl in 50.0 mL total. Find c(NaCl). HCl + NaOH → NaCl + H₂O.",
+      "coachNote": "Divide product moles by the TOTAL mixed volume.",
+      "steps": [
+        "n(HCl) = c × V = 0.100 × 0.0250 = 2.50 × 10⁻³ mol",
+        "Ratio HCl : NaCl = 1 : 1, so n(NaCl) = 2.50 × 10⁻³ mol",
+        "Total volume = 25.0 + 25.0 = 50.0 mL = 0.0500 L",
+        "c(NaCl) = n ÷ V(total) = 2.50 × 10⁻³ ÷ 0.0500",
+        "Answer: c(NaCl) = 0.0500 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1500,
+      "caption": "Use the combined 50.0 mL: c(NaCl) = 0.0500 mol L⁻¹.",
+      "voiceover": {
+        "text": "Now the one that tests the total volume idea. Twenty-five millilitres of nought-point-one mole per litre hydrochloric acid is neutralised by twenty-five millilitres of sodium hydroxide, and the resulting salt solution occupies fifty millilitres in total. Find the concentration of the sodium chloride. Step one, moles of acid. Nought-point-one times nought-point-zero-two-five is two-point-five times ten to the minus three moles. Step two, the ratio of acid to salt is one to one, so the same moles of sodium chloride form. Step three, and here's the key, the salt is now spread through the combined volume. Twenty-five plus twenty-five is fifty millilitres, which is nought-point-zero-five litres. Step four, concentration equals moles over that total volume. Two-point-five times ten to the minus three, over nought-point-zero-five, is nought-point-zero-five moles per litre. If you'd divided by just twenty-five millilitres, you'd have doubled the answer. The product fills the whole mixture."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: putting millilitres straight into n = cV. Volume must be in litres.",
+      "secondary": "Trap 2: dividing a product's moles by one reactant's volume instead of the total combined volume. Trap 3: skipping the mole ratio when it isn't 1:1.",
+      "mistakeTag": "Where solution-stoichiometry marks vanish",
+      "callout": "Litres in n = cV, total volume for final concentration, check the ratio.",
+      "durationInFrames": 1230,
+      "caption": "Use litres in n=cV; total volume for product concentration; respect the ratio.",
+      "voiceover": {
+        "text": "Three traps. Trap one, putting millilitres straight into n equals c times V. The volume must be in litres, so divide by a thousand first. This is the same units trap from the concentration lesson, and it never stops being relevant. Trap two, dividing a product's moles by just one reactant's volume when finding its final concentration. After mixing, the product fills the total combined volume, so use that. Trap three, skipping the mole ratio when it isn't one to one. Plenty of solution reactions, like carbonate with acid, are two to one, so always read the coefficients. Litres, total volume, and the right ratio."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "25.0 mL of 0.200 mol L⁻¹ Na₂CO₃ + 50.0 mL of 0.100 mol L⁻¹ HCl. Which is in excess? Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "n(Na₂CO₃) = 0.200 × 0.0250 = 5.00 × 10⁻³ mol",
+        "n(HCl) = 0.100 × 0.0500 = 5.00 × 10⁻³ mol",
+        "Need 2 HCl per Na₂CO₃: 5.00 × 10⁻³ Na₂CO₃ needs 1.00 × 10⁻² HCl",
+        "Only 5.00 × 10⁻³ HCl available → HCl limiting",
+        "Answer: Na₂CO₃ is in excess ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "HCl is limiting (needs 2:1), so Na₂CO₃ is in excess.",
+      "voiceover": {
+        "text": "Quick check, with a limiting-reagent twist. Twenty-five millilitres of nought-point-two mole per litre sodium carbonate is mixed with fifty millilitres of nought-point-one mole per litre hydrochloric acid. Which reactant is in excess? The reaction needs two acids per carbonate. Pause and work it through. Right, let's check it. Step one, moles of each. Sodium carbonate, nought-point-two times nought-point-zero-two-five is five times ten to the minus three. Hydrochloric acid, nought-point-one times nought-point-zero-five is also five times ten to the minus three. They look equal, but the ratio isn't one to one. Step two, the carbonate needs two acids each, so five times ten to the minus three moles of carbonate would need ten times ten to the minus three moles of acid. Step three, there's only five times ten to the minus three of acid, so the acid runs out first. The acid is limiting, which means the sodium carbonate is in excess. Equal moles, but the two to one ratio decides it."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Solution stoichiometry combines n = cV with the mole ratio.",
+        "Get onto the mole bridge using n = cV, volume in litres.",
+        "Exit as mass (× molar mass) or concentration (÷ total volume).",
+        "A product's final concentration uses the total mixed volume.",
+        "Read the coefficients; many solution reactions aren't 1:1."
+      ],
+      "finalPrompt": "Final concentration? Divide by the total combined volume.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: n=cV on-ramp, same ratio, total volume for concentration.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, solution stoichiometry combines n equals c times V with the mole ratio you already know. Second, you get onto the mole bridge using n equals c times V, with the volume in litres. Third, you exit either as a mass, times molar mass, or as a concentration, divided by volume. Fourth, a product's final concentration uses the total combined volume of the mixture, not one reactant's volume. And fifth, read the coefficients, because many solution reactions aren't one to one. Same bridge, new on-ramp, two exits. See you next lesson."
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "title": "Structure & Properties of Alcohols",
+  "subtitle": "The hydroxyl group, hydrogen bonding, and primary to tertiary",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 9",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "investigate the structural formulae, properties and functional group including:",
+    "explain the properties within and between the homologous series of alcohols with reference to the intermolecular and intramolecular bonding present"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": ["CH12-14", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "How can alcohols be produced and what are their properties?",
+  "lessonIntent": "Students can classify alcohols as primary, secondary or tertiary and explain their boiling points and solubility using hydrogen bonding and dispersion forces.",
+  "examSkill": "Explain alcohol properties with two effects: equal hydrogen bonding from the -OH, and dispersion forces that change with chain length and branching.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the structure and properties of alcohols, and the power of one hydroxyl group. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Structure & Properties of Alcohols (Year 12 Chemistry, Module 7, Lesson 9)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One carbon apart, worlds apart",
+      "body": "Methanol and ethanol share the same functional group, one carbon apart. Yet a tablespoon of methanol can blind you, while ethanol does not.",
+      "callout": "What can make near-identical alcohols so different?",
+      "durationInFrames": 690,
+      "caption": "Methanol and ethanol are consecutive alcohols with very different toxicity.",
+      "voiceover": {
+        "text": "OK, here's a striking comparison. Methanol and ethanol are both primary alcohols, in the same family, just one carbon apart. They look almost identical on paper. Yet a single tablespoon of methanol can cause permanent blindness, while ethanol, the alcohol in drinks, is consumed in enormous quantities without that kind of acute danger. How can two members of the same homologous series, one carbon apart, behave so differently in the body? We'll come back to that. But first, this lesson is about how that one oxygen hydrogen group, the hydroxyl, completely transforms a hydrocarbon, giving alcohols their high boiling points, their water solubility, and their very different reactions depending on where the group sits."
+      }
+    },
+    {
+      "id": "concept-hydroxyl",
+      "type": "concept",
+      "heading": "The hydroxyl group",
+      "body": "The -OH group is small, very polar, and able to hydrogen bond. Those three traits explain almost every alcohol property.",
+      "image": "m7L9HydrogenBonding",
+      "bullets": [
+        {"text": "The C-OH carbon has only single bonds: tetrahedral, about 109.5 degrees."},
+        {"text": "The O-H bond is highly polar, so the H is a strong hydrogen bond donor."},
+        {"text": "Oxygen's lone pairs make it a hydrogen bond acceptor."}
+      ],
+      "secondary": "So alcohol molecules hydrogen bond to each other and to water. The donor is the delta-plus H on the O-H bond, not the oxygen itself.",
+      "callout": "Donor is the H on oxygen; acceptor is the oxygen's lone pairs.",
+      "durationInFrames": 1050,
+      "caption": "The -OH is polar: H is the H-bond donor, O's lone pairs are the acceptor.",
+      "voiceover": {
+        "text": "Let's start with the group itself. The oxygen hydrogen group, the hydroxyl, has three features that drive everything. It's small, it's very polar, and it can hydrogen bond. The carbon carrying it has only single bonds, so it's tetrahedral, about one hundred and nine point five degrees. The oxygen hydrogen bond is highly polar, because oxygen is far more electronegative than hydrogen, so the hydrogen carries a delta-plus charge, which makes it a strong hydrogen bond donor. And the oxygen has two lone pairs, which makes it a hydrogen bond acceptor. So alcohol molecules form hydrogen bonds with each other, and with water. One precise point for the exam, the donor is that delta-plus hydrogen on the oxygen hydrogen bond, not the oxygen. The oxygen is the acceptor, through its lone pairs. Mixing up donor and acceptor is a common slip."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Classifying alcohols by the C-OH carbon",
+      "bullets": [
+        {"text": "Find the C-OH carbon, then count only its carbon neighbours."},
+        {"text": "Primary: one carbon neighbour (or zero, as in methanol, by convention)."},
+        {"text": "Secondary: two carbon neighbours (propan-2-ol)."},
+        {"text": "Tertiary: three carbon neighbours, no H on the C-OH carbon (2-methylpropan-2-ol)."}
+      ],
+      "callout": "Count carbon neighbours of the C-OH carbon, nothing else.",
+      "durationInFrames": 1020,
+      "caption": "1, 2 or 3 carbon neighbours on the C-OH carbon gives primary, secondary, tertiary.",
+      "voiceover": {
+        "text": "Now the classification, which decides what reactions an alcohol can undergo later. Find the carbon bearing the oxygen hydrogen group, then count only the carbon atoms directly bonded to that one carbon. One carbon neighbour makes it primary, two makes it secondary, and three makes it tertiary. Don't count the oxygen, and don't count hydrogens, just the carbon neighbours. Ethanol is primary, propan-two-ol is secondary, and two-methylpropan-two-ol is tertiary, with no hydrogen left on its central carbon. There's one convention to remember, methanol has zero carbon neighbours on its oxygen hydrogen carbon, and by convention we still classify it as primary. So it's one step, one count, and that classification will matter a lot when we get to oxidation."
+      }
+    },
+    {
+      "id": "concept-boiling-vs-alkane",
+      "type": "concept",
+      "heading": "Why alcohols boil so high",
+      "body": "Compared with an alkane of similar mass, an alcohol boils far higher. Hydrogen bonding is the reason.",
+      "bullets": [
+        {"text": "Ethanol boils at 78 degrees; ethane, similar mass, boils at -89."},
+        {"text": "Alcohols hydrogen bond (about 20 to 25 kJ per mole), much stronger than dispersion."},
+        {"text": "More energy is needed to break the H-bond network, so the BP is much higher."}
+      ],
+      "secondary": "Within a primary alcohol series, BP still rises with chain length, because dispersion forces add to the hydrogen bonding as the chain grows.",
+      "callout": "Hydrogen bonding, not just dispersion, lifts alcohol boiling points.",
+      "durationInFrames": 1050,
+      "caption": "Ethanol (78C) boils far above ethane (-89C) because alcohols hydrogen bond.",
+      "voiceover": {
+        "text": "Here's the property the hydroxyl group transforms most dramatically, boiling point. Compare ethanol with ethane, which has a similar molecular mass. Ethane boils at minus eighty-nine degrees, but ethanol boils at plus seventy-eight, a gap of one hundred and sixty-seven degrees. Why such a difference? Ethanol can form hydrogen bonds, worth about twenty to twenty-five kilojoules per mole each, which is far stronger than the weak dispersion forces that are all ethane has. To boil ethanol you have to break that whole hydrogen bond network, which takes much more energy, so the boiling point is much higher. And within a series of primary alcohols, boiling point still climbs with chain length, because dispersion forces grow alongside the hydrogen bonding as the carbon chain gets longer. So the message, alcohols boil high because of hydrogen bonding, on top of the usual dispersion forces."
+      }
+    },
+    {
+      "id": "formula-isomer-bp",
+      "type": "concept",
+      "heading": "Primary beats secondary beats tertiary",
+      "body": "For constitutional isomers, boiling point order is primary > secondary > tertiary. The reason is dispersion, not hydrogen bonding.",
+      "bullets": [
+        {"text": "All three classes have one -OH, so the hydrogen bonding is about equal."},
+        {"text": "Tertiary alcohols are the most branched, so the most compact shape."},
+        {"text": "Compact shape means less surface area, weaker dispersion, lower BP."}
+      ],
+      "secondary": "Butan-1-ol (118C) > butan-2-ol (100C) > 2-methylpropan-2-ol (83C), all C4H10O. State both reasons: equal H-bonding, and dispersion set by shape.",
+      "callout": "Same H-bonding; branching decides the dispersion difference.",
+      "durationInFrames": 1050,
+      "caption": "For C4H10O isomers: butan-1-ol > butan-2-ol > 2-methylpropan-2-ol.",
+      "voiceover": {
+        "text": "Now a subtler comparison, isomers with the same formula. For constitutional isomers, the boiling point order is primary, then secondary, then tertiary. Take the C four H ten O alcohols. Butan-one-ol boils at one hundred and eighteen, butan-two-ol at one hundred, and two-methylpropan-two-ol, the tertiary one, at just eighty-three. Here's the reasoning, and you need both parts. First, all three have exactly one oxygen hydrogen group, so the hydrogen bonding contribution is about the same for each. So that's not the difference. Second, the difference is dispersion forces. The tertiary alcohol is the most branched, so it's the most compact, with the smallest surface area, which gives the weakest dispersion forces and the lowest boiling point. The trap to avoid, never say the tertiary boils highest because it has the most alkyl groups. More branching means less surface area, and so a lower boiling point."
+      }
+    },
+    {
+      "id": "concept-solubility",
+      "type": "concept",
+      "heading": "Solubility: -OH vs the chain",
+      "body": "Short-chain alcohols dissolve in water; long-chain ones do not. It is a tug of war between the polar -OH and the non-polar chain.",
+      "bullets": [
+        {"text": "The -OH hydrogen bonds with water, favouring solubility."},
+        {"text": "The non-polar carbon chain disrupts water's H-bonds, opposing solubility."},
+        {"text": "Methanol to propan-1-ol are fully miscible; from about C5 they become insoluble."}
+      ],
+      "secondary": "Solubility falls gradually with chain length; there is no sharp cut-off. Branched alcohols are a little more soluble than their straight-chain isomers.",
+      "callout": "Short chain, the -OH wins; long chain, the chain wins.",
+      "durationInFrames": 1050,
+      "caption": "Solubility falls with chain length as the non-polar chain overwhelms the -OH.",
+      "voiceover": {
+        "text": "Last property, solubility in water, which is a tug of war. On one side, the oxygen hydrogen group can hydrogen bond with water, which favours dissolving. On the other side, the non-polar carbon chain disrupts water's hydrogen bond network without replacing it, which opposes dissolving. For short chains, the oxygen hydrogen group wins, so methanol, ethanol, and propan-one-ol are fully miscible with water. As the chain gets longer, the non-polar part grows while the oxygen hydrogen group stays the same size, so from around five carbons the chain wins and the alcohol becomes essentially insoluble. Two details, the change is gradual, there's no sharp cut-off carbon number, and branched alcohols are slightly more soluble than their straight-chain isomers, because their compact shape exposes less non-polar surface to the water."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Classify and rank boiling points",
+      "question": "Classify and rank by decreasing BP: pentan-1-ol, pentan-2-ol, 2-methylbutan-2-ol.",
+      "coachNote": "All are C5H12O, so rank by surface area.",
+      "steps": [
+        "Pentan-1-ol: C-OH has 1 carbon neighbour -> primary (straight chain)",
+        "Pentan-2-ol: C-OH has 2 carbon neighbours -> secondary",
+        "2-methylbutan-2-ol: C-OH has 3 carbon neighbours -> tertiary (most branched)",
+        "All C5H12O, equal H-bonding; rank by surface area (most extended first)",
+        "Answer: pentan-1-ol > pentan-2-ol > 2-methylbutan-2-ol ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "pentan-1-ol (1) > pentan-2-ol (2) > 2-methylbutan-2-ol (3) by surface area.",
+      "voiceover": {
+        "text": "Let's classify and rank. Three alcohols, pentan-one-ol, pentan-two-ol, and two-methylbutan-two-ol, ranked by decreasing boiling point. First classify each by counting carbon neighbours of the oxygen hydrogen carbon. Pentan-one-ol has one carbon neighbour, so it's primary, and it's a straight chain. Pentan-two-ol has two, so it's secondary. And two-methylbutan-two-ol has three, so it's tertiary, and the most branched. Now, all three are C five H twelve O, so the hydrogen bonding is about equal, which means we rank by dispersion, which is set by surface area. The most extended molecule boils highest. So the order is pentan-one-ol, the straight chain, highest, then pentan-two-ol, then two-methylbutan-two-ol, the most compact, lowest. The key reasoning to state, equal hydrogen bonding, so the difference comes entirely from shape and surface area."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Explain a solubility difference",
+      "question": "Explain why ethanol is fully miscible with water but hexan-1-ol is practically insoluble.",
+      "coachNote": "Both have -OH; the difference is the chain length.",
+      "steps": [
+        "Both have an -OH that can hydrogen bond with water",
+        "Ethanol's 2-carbon chain is small, so it disrupts few water H-bonds",
+        "The -OH H-bonding compensates, so ethanol is fully miscible",
+        "Hexan-1-ol's 6-carbon chain disrupts many more water H-bonds",
+        "Answer: the long chain overwhelms the single -OH, so hexan-1-ol is insoluble ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Ethanol's short chain lets the -OH win; hexan-1-ol's long chain wins.",
+      "voiceover": {
+        "text": "Now a solubility explanation. Why is ethanol fully miscible with water, but hexan-one-ol practically insoluble? Step one, both have an oxygen hydrogen group that can hydrogen bond with water, so that's common to both. Step two, ethanol has only a two carbon chain, a small non-polar region, so it disrupts very few of water's hydrogen bonds. Step three, the oxygen hydrogen group's hydrogen bonding with water more than compensates for that small disruption, so ethanol mixes completely. Step four, hexan-one-ol has a six carbon chain, a much larger non-polar region, which disrupts far more water to water hydrogen bonds. The single oxygen hydrogen group can't compensate for breaking that many, so dissolving is unfavourable. So the answer comes down to chain length, the long non-polar chain in hexan-one-ol overwhelms the one oxygen hydrogen group, and it stays insoluble."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three alcohol-property traps",
+      "body": "Trap 1: saying tertiary alcohols boil highest. They are most branched, so least surface area, so lowest BP.",
+      "secondary": "Trap 2: naming the oxygen as the hydrogen bond donor. The donor is the delta-plus H on the O-H bond; oxygen is the acceptor. Trap 3: claiming tertiary alcohols cannot hydrogen bond. Every alcohol has an -OH, so all of them hydrogen bond.",
+      "mistakeTag": "Where alcohol-property marks vanish",
+      "callout": "Tertiary boils lowest, H is the donor, all alcohols H-bond.",
+      "durationInFrames": 1230,
+      "caption": "Tertiary boils lowest; H is the donor; all alcohols hydrogen bond.",
+      "voiceover": {
+        "text": "Three traps. Trap one, saying tertiary alcohols boil highest because they have more alkyl groups. It's the opposite. More alkyl groups means more branching, which means a more compact shape, less surface area, weaker dispersion forces, and so a lower boiling point. The order is primary, then secondary, then tertiary. Trap two, naming the oxygen as the hydrogen bond donor. The donor is the delta-plus hydrogen on the oxygen hydrogen bond, the hydrogen being offered. The oxygen is the acceptor, through its lone pairs. Trap three, claiming tertiary alcohols can't hydrogen bond. Every alcohol has an oxygen hydrogen group, so they all hydrogen bond, regardless of classification. The classification only changes the dispersion contribution, through shape, not the hydrogen bonding."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Why does butan-1-ol boil much higher than butane, despite similar molecular mass?",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Butan-1-ol has an -OH group; butane has only C-H and C-C bonds",
+        "The O-H makes the H a donor and O's lone pairs acceptors -> hydrogen bonding",
+        "Butan-1-ol molecules form H-bonds (~20-25 kJ/mol); butane has only dispersion",
+        "Breaking the H-bond network needs much more energy than dispersion forces",
+        "Answer: hydrogen bonding in butan-1-ol gives the much higher boiling point ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "Butan-1-ol's hydrogen bonding lifts its BP far above butane's.",
+      "voiceover": {
+        "text": "Quick check. Why does butan-one-ol boil much higher than butane, even though their molecular masses are similar? Pause and work it through. Right. Butan-one-ol has an oxygen hydrogen group, whereas butane has only carbon hydrogen and carbon carbon bonds. That oxygen hydrogen bond is highly polar, so the hydrogen is a donor and the oxygen's lone pairs are acceptors, which means butan-one-ol molecules form hydrogen bonds with each other, worth about twenty to twenty-five kilojoules per mole each. Butane has only weak dispersion forces. To boil butan-one-ol, you have to break that whole hydrogen bond network, which takes far more energy than overcoming butane's dispersion forces. So butan-one-ol boils much higher, and the cause is hydrogen bonding from the oxygen hydrogen group. Same mass, but a completely different type of intermolecular force."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "The -OH is polar and hydrogen bonds: the H is the donor, the O the acceptor.",
+        "Classify by counting carbon neighbours of the C-OH carbon (1, 2 or 3).",
+        "Alcohols boil far above comparable alkanes because of hydrogen bonding.",
+        "For isomers, BP order is primary > secondary > tertiary, set by dispersion.",
+        "Water solubility falls with chain length as the chain overwhelms the -OH."
+      ],
+      "finalPrompt": "Alcohol property question? Split it into hydrogen bonding plus dispersion.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: hydroxyl bonding, classification, high BP, isomer order, solubility.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, the oxygen hydrogen group is polar and hydrogen bonds, with the hydrogen as the donor and the oxygen as the acceptor. Second, classify alcohols by counting the carbon neighbours of the oxygen hydrogen carbon, one, two, or three, for primary, secondary, tertiary. Third, alcohols boil far above comparable alkanes, because of hydrogen bonding on top of dispersion forces. Fourth, for constitutional isomers, the boiling point order is primary, then secondary, then tertiary, and that order comes from dispersion forces set by shape, not from the hydrogen bonding. And fifth, water solubility falls as the chain lengthens, because the growing non-polar chain eventually overwhelms the single oxygen hydrogen group. Next lesson we look at how alcohols are actually produced. See you next lesson."
+      }
+    }
+  ]
+}

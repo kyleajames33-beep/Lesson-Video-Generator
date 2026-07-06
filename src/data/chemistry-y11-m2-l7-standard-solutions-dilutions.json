@@ -1,0 +1,190 @@
+{
+  "title": "Standard Solutions and Dilutions",
+  "subtitle": "Making a concentration you can trust",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "conduct investigations to make a standard solution and perform a dilution, and calculate concentrations using c₁V₁ = c₂V₂"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-9", "CH11/12-4", "CH11/12-6"],
+  "inquiryQuestion": "How are chemicals in solutions measured?",
+  "lessonIntent": "Students can prepare a standard solution from a primary standard and calculate dilutions using c₁V₁ = c₂V₂.",
+  "examSkill": "Calculate the exact concentration of a standard solution from mass and volume; apply c₁V₁ = c₂V₂ for dilutions, using final volume not added volume.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, standard solutions and dilutions, how to make a concentration you can trust. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Standard Solutions and Dilutions (Year 11 Chemistry, Module 2, Lesson 7)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Roughly 1 mol/L isn't good enough",
+      "body": "A forensic result has to hold up in court. A drug standard can't be off by 0.1%.",
+      "callout": "Precision starts with a primary standard.",
+      "durationInFrames": 690,
+      "caption": "Real labs need concentrations known precisely, not approximately.",
+      "voiceover": {
+        "text": "OK, picture a forensic toxicologist testing a blood sample. The result has to stand up in court, so roughly one mole per litre of acid simply won't cut it. Same in a pharmaceutical lab dissolving a drug standard, where being off by a tenth of a percent could matter. So how do chemists make a solution whose concentration they know precisely, not approximately? That's what a standard solution is, and today you'll learn to make one and then dilute it accurately."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "What dilution really does",
+      "body": "Adding solvent spreads the same solute through a bigger volume. The moles of solute never change.",
+      "image": "l7DilutionConcept",
+      "bullets": [
+        {"text": "Dilution adds solvent, never more solute."},
+        {"text": "The number of moles of solute stays exactly the same."},
+        {"text": "So the concentration drops, because the same moles fill more litres."}
+      ],
+      "secondary": "Because moles stay constant, c₁V₁ before equals c₂V₂ after. That's the whole dilution equation.",
+      "callout": "Same moles, more volume, lower concentration.",
+      "durationInFrames": 1080,
+      "caption": "Dilution keeps moles constant while volume rises, so concentration falls.",
+      "voiceover": {
+        "text": "Before the formulas, get the picture clear. When you dilute a solution, you add more solvent, usually water. You do not add any more solute. So the number of moles of solute sitting in the beaker never changes. All that changes is the volume they're spread through. More volume, same moles, so the concentration drops. And here's the neat part. Because the moles before equals the moles after, and moles is concentration times volume, you can write c one V one equals c two V two. That single line is the entire dilution equation, and it falls straight out of moles staying constant."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Primary standard: a very pure, stable substance of known molar mass."},
+        {"text": "Standard solution: one whose concentration is known precisely."},
+        {"text": "Volumetric flask: glassware calibrated to one exact volume."},
+        {"text": "Aliquot: a precisely measured sub-sample taken for analysis."}
+      ],
+      "callout": "A primary standard is what makes a standard solution trustworthy.",
+      "durationInFrames": 960,
+      "caption": "Primary standard, standard solution, volumetric flask, aliquot.",
+      "voiceover": {
+        "text": "Let's lock in the vocabulary, because these words appear in every titration question later. A primary standard is a substance that's extremely pure, stable in air, and has a known molar mass, which makes it perfect for measuring out precisely. A standard solution is one whose concentration you know exactly, made by dissolving a primary standard. A volumetric flask is the special glassware calibrated to hold one exact volume, with a single line on the neck. And an aliquot is a precisely measured sub-sample you take from a larger solution to analyse. Those four words carry the whole topic."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The dilution equation",
+      "body": "c₁V₁ = c₂V₂. Concentration times volume before equals concentration times volume after.",
+      "bullets": [
+        {"text": "c₁, V₁ are the concentration and volume before diluting."},
+        {"text": "c₂, V₂ are the concentration and volume after diluting."},
+        {"text": "Rearrange for whichever single value is missing."}
+      ],
+      "secondary": "V₂ is the final total volume, not the amount of water you added.",
+      "callout": "Both volumes can stay in mL, as long as they match.",
+      "durationInFrames": 1020,
+      "caption": "c₁V₁ = c₂V₂. V₂ is the final volume, not the water added.",
+      "voiceover": {
+        "text": "Here's the equation. c one V one equals c two V two. The left side is the concentration and volume before you dilute. The right side is the concentration and volume after. Because both sides equal the same number of moles, you just rearrange to find whichever value is missing. One nice thing about this formula, the volumes can both stay in millilitres, as long as they're in the same unit on both sides. But here's the trap that catches everyone. V two is the final, total volume of the solution. It is not the amount of water you added. If you top a hundred millilitres up to five hundred, V two is five hundred, not four hundred."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Making a standard solution",
+      "question": "2.650 g of Na₂CO₃ is dissolved and made up to 250.0 mL. Find the exact concentration. (Na 22.99, C 12.011, O 15.999)",
+      "coachNote": "Mass to moles, then moles to concentration.",
+      "steps": [
+        "M(Na₂CO₃) = 2(22.99) + 12.011 + 3(15.999) = 105.99 g mol⁻¹",
+        "n = m ÷ M = 2.650 ÷ 105.99 = 0.02500 mol",
+        "Convert: V = 250.0 ÷ 1000 = 0.2500 L",
+        "c = n ÷ V = 0.02500 ÷ 0.2500",
+        "Answer: c = 0.1000 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "2.650 g Na₂CO₃ in 250.0 mL gives exactly 0.1000 mol L⁻¹.",
+      "voiceover": {
+        "text": "Let's make a standard solution. A student dissolves two-point-six-five-zero grams of anhydrous sodium carbonate and makes it up to two hundred and fifty-point-zero millilitres in a volumetric flask. Find the exact concentration. Step one, molar mass of sodium carbonate. Two sodiums, a carbon, and three oxygens, which comes to one hundred and five-point-nine-nine grams per mole. Step two, convert the mass to moles. Two-point-six-five divided by one hundred and five-point-nine-nine is nought-point-zero-two-five-zero moles. Step three, convert the volume to litres, so nought-point-two-five litres. Step four, concentration equals moles over volume. Nought-point-zero-two-five divided by nought-point-two-five. That's exactly nought-point-one-zero-zero moles per litre. A clean, precisely known concentration, which is the whole point of a standard solution."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "A dilution",
+      "question": "100 mL of 2.00 mol L⁻¹ HCl is diluted to a final volume of 500 mL. Find the new concentration.",
+      "coachNote": "Use c₁V₁ = c₂V₂. Volumes can stay in mL.",
+      "steps": [
+        "Knowns: c₁ = 2.00, V₁ = 100 mL, V₂ = 500 mL",
+        "Rearrange: c₂ = c₁V₁ ÷ V₂",
+        "Substitute: c₂ = (2.00 × 100) ÷ 500",
+        "c₂ = 200 ÷ 500",
+        "Answer: c₂ = 0.400 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Diluting 100 mL of 2.00 mol L⁻¹ to 500 mL gives 0.400 mol L⁻¹.",
+      "voiceover": {
+        "text": "Now a dilution. One hundred millilitres of two mole per litre hydrochloric acid is diluted to a final volume of five hundred millilitres. Find the new concentration. Reach for c one V one equals c two V two. You know the starting concentration and volume, and the final volume, so rearrange for c two. That's c one V one over V two. Substitute. Two times one hundred, all over five hundred. The volumes are both in millilitres, which is fine because they match. Two hundred over five hundred is nought-point-four. So the diluted acid is nought-point-four moles per litre. You took the same moles of acid and spread them through five times the volume, so the concentration dropped to a fifth."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: mixing up V₁ and V₂. Keep before on the left, after on the right.",
+      "secondary": "Trap 2: treating V₂ as the water added instead of the final total volume. Trap 3: listing primary-standard properties without saying why each one matters.",
+      "mistakeTag": "Where dilution marks slip",
+      "callout": "Before on the left, after on the right, final volume for V₂.",
+      "durationInFrames": 1260,
+      "caption": "Don't swap V₁/V₂, V₂ is the final volume, and explain primary-standard properties.",
+      "voiceover": {
+        "text": "Three traps to dodge. Trap one, mixing up V one and V two. Keep it simple. Before goes on the left, after goes on the right, and the concentration and volume on each side belong to the same moment. Trap two, and this is the big one, treating V two as the volume of water you added. V two is always the final, total volume of the solution, not the top-up. Trap three is a written-response trap. If a question asks why a substance makes a good primary standard, don't just list high purity, stable, known molar mass. Say why each one matters, that purity means you know exactly how much you weighed, and stability means it won't absorb water and change. Explain, don't list."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "What volume of 6.00 mol L⁻¹ H₂SO₄ must be diluted to 250 mL to give 0.500 mol L⁻¹?",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Knowns: c₁ = 6.00, c₂ = 0.500, V₂ = 250 mL",
+        "Rearrange: V₁ = c₂V₂ ÷ c₁",
+        "Substitute: V₁ = (0.500 × 250) ÷ 6.00",
+        "V₁ = 125 ÷ 6.00",
+        "Answer: V₁ = 20.8 mL ✓"
+      ],
+      "durationInFrames": 1200,
+      "caption": "V₁ = c₂V₂ ÷ c₁ = 125 ÷ 6.00 = 20.8 mL.",
+      "voiceover": {
+        "text": "Quick check. What volume of six mole per litre sulfuric acid must be diluted to two hundred and fifty millilitres to give a nought-point-five mole per litre solution? Pause and work it through. Right, let's check it. You want the starting volume, V one, so rearrange to c two V two over c one. Substitute. Nought-point-five times two hundred and fifty, all over six. That's one hundred and twenty-five over six, which is twenty-point-eight millilitres. So you measure out about twenty-one millilitres of the concentrated acid and top it up to two hundred and fifty. And remember, always add acid to water, never the reverse."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A primary standard is pure and stable, so its concentration is known exactly.",
+        "Dilution adds solvent; the moles of solute stay constant.",
+        "c₁V₁ = c₂V₂ links concentration and volume before and after.",
+        "V₂ is the final total volume, not the water added.",
+        "Volumes can stay in mL as long as both sides match."
+      ],
+      "finalPrompt": "Diluting? Check V₂ is the final volume, not the top-up.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: primary standards, constant moles, c₁V₁ = c₂V₂, final volume.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, a primary standard is pure and stable, which is what lets you know a concentration exactly. Second, dilution only adds solvent, so the moles of solute stay constant. Third, that gives you c one V one equals c two V two, linking the before and after. Fourth, V two is the final total volume, never the amount of water you added. And fifth, the volumes can stay in millilitres as long as both sides use the same unit. Get those down and standard solutions become routine. See you next lesson."
+      }
+    }
+  ]
+}

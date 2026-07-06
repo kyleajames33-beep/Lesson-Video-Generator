@@ -1,0 +1,197 @@
+{
+  "title": "Covalent Compounds: Molecular and Network",
+  "subtitle": "What breaks on melting decides everything",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 9",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "investigate the differences between ionic and covalent compounds through:",
+    "investigate the different chemical structures of atoms and elements, including but not limited to:"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-8", "CH11/12-5", "CH11/12-7"],
+  "inquiryQuestion": "What binds atoms together in elements and compounds?",
+  "lessonIntent": "Students can distinguish covalent molecular from covalent network substances and explain melting points by identifying what breaks on melting.",
+  "examSkill": "State whether IMFs or covalent bonds break on melting, and rank molecular boiling points by IMF strength.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, covalent molecular versus covalent network. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Covalent Compounds: Molecular and Network (Year 11 Chemistry, Module 1, Lesson 9)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same bonds, wildly different solids",
+      "body": "CO₂ is a gas that turns solid at −78°C. SiO₂ is quartz, melting at 1713°C. Both are non-metals joined by covalent bonds.",
+      "callout": "It's not the bonds — it's how they're arranged.",
+      "durationInFrames": 660,
+      "caption": "CO₂ and SiO₂ are both covalent but melt 1800°C apart.",
+      "voiceover": {
+        "text": "OK, here's the classic comparison that this whole lesson rests on. Carbon dioxide is a gas at room temperature, and even when you cool it into dry ice, it's solid only below minus seventy-eight degrees. Silicon dioxide is quartz, a hard solid that doesn't melt until one thousand seven hundred and thirteen degrees. Both are made of non-metal atoms joined by covalent bonds, so why such a staggering difference, almost eighteen hundred degrees apart? The answer isn't the bonds themselves, it's how they're arranged, and that one idea, what actually breaks when something melts, unlocks every covalent property question."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "The critical distinction",
+      "body": "What breaks on melting? IMFs in a molecular substance, but covalent bonds in a network solid.",
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "Covalent molecular",
+        "afterLabel": "Covalent network",
+        "beforeContent": "Discrete molecules. Melting breaks weak forces between them. Low MP (<300°C). e.g. CO₂, I₂.",
+        "afterContent": "One continuous 3D web of covalent bonds. Melting breaks the bonds themselves. Very high MP (>1000°C). e.g. diamond, SiO₂."
+      },
+      "bullets": [
+        {"text": "Covalent molecular: melting breaks only the weak forces between molecules."},
+        {"text": "Covalent network: melting must break strong covalent bonds throughout."},
+        {"text": "Same atoms, but the structure decides how much energy melting needs."}
+      ],
+      "secondary": "The covalent bonds inside a molecule are strong. The forces between separate molecules are weak. That's the whole difference.",
+      "callout": "Ask what breaks on melting, not what atoms are present.",
+      "durationInFrames": 1170,
+      "caption": "Molecular: break weak forces between molecules. Network: break covalent bonds.",
+      "voiceover": {
+        "text": "Here's the single most important idea in covalent chemistry. Ask what actually breaks when the substance melts. In a covalent molecular substance, you have discrete, separate molecules, and melting only has to overcome the weak forces between those molecules. The strong covalent bonds inside each molecule stay completely intact, so very little energy is needed, and the melting point is low. In a covalent network solid, there are no separate molecules, the whole crystal is one continuous web of covalent bonds, so to melt it you have to break those strong covalent bonds themselves, which takes enormous energy and gives a very high melting point. Same kind of atoms, but the structure decides everything, so always ask what breaks, not which atoms are there."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Boiling-point trends in molecular substances",
+      "bullets": [
+        {"text": "Larger molecules: more electrons → stronger dispersion forces → higher BP."},
+        {"text": "I₂ (184°C) > Br₂ (59°C) > Cl₂ (−35°C) > F₂ (−188°C)."},
+        {"text": "Polar molecules add dipole–dipole forces on top of dispersion."},
+        {"text": "Hydrogen bonding (N–H, O–H, F–H) is strongest: H₂O 100°C vs H₂S −60°C."}
+      ],
+      "callout": "More electrons, or hydrogen bonding, lifts the boiling point.",
+      "durationInFrames": 1050,
+      "caption": "BP rises with size; H₂O's hydrogen bonding lifts it far above H₂S.",
+      "voiceover": {
+        "text": "Within molecular substances, the boiling point depends on how strong the forces between molecules are. First, size. Larger molecules have more electrons, which gives a bigger, more easily distorted electron cloud and stronger dispersion forces, so the boiling point rises. Look at the halogens, iodine at one hundred and eighty-four, bromine at fifty-nine, chlorine at minus thirty-five, fluorine at minus one hundred and eighty-eight, all the same type of molecule, increasing in size. Second, polar molecules have permanent dipoles, adding dipole dipole forces on top of dispersion. And third, the strongest force of all is hydrogen bonding, which appears when hydrogen is bonded to nitrogen, oxygen, or fluorine. That's why water boils at one hundred while hydrogen sulfide, a similar molecule, boils at minus sixty."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The network solids to know",
+      "body": "Each network solid shows a different facet of network bonding.",
+      "bullets": [
+        {"text": "Diamond: each C bonded to 4 others in 3D → hardest, MP 3550°C, non-conducting."},
+        {"text": "Graphite: each C bonded to 3, with a delocalised electron → conducts, soft."},
+        {"text": "Silicon dioxide (SiO₂): 3D Si–O–Si network → MP 1713°C, very hard, insoluble."}
+      ],
+      "secondary": "Diamond and graphite are both pure carbon, but the bonding pattern flips their hardness and conductivity completely.",
+      "callout": "Same element, different network, opposite properties.",
+      "durationInFrames": 1020,
+      "caption": "Diamond, graphite, and SiO₂ each illustrate network bonding.",
+      "voiceover": {
+        "text": "Let's meet the network solids you need to know. Diamond, where each carbon is bonded to four others in a rigid three-dimensional tetrahedral web, making it the hardest natural substance, melting around three and a half thousand degrees, and non-conducting because every electron is locked in a bond. Graphite, also pure carbon, but here each carbon bonds to only three others in flat layers, leaving one delocalised electron per atom, so graphite conducts within its layers, and because the layers are held together only weakly, it's soft and slippery. And silicon dioxide, a continuous silicon oxygen network, melting at seventeen thirteen, very hard, and insoluble. Notice diamond and graphite are the same element, yet the bonding pattern flips their hardness and conductivity entirely."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "CO₂ versus SiO₂",
+      "question": "CO₂ boils at −78°C; SiO₂ melts at 1713°C. Both have a central atom bonded to oxygen. Explain the difference.",
+      "coachNote": "Identify the structure, then ask what breaks on melting.",
+      "steps": [
+        "CO₂: discrete O=C=O molecules → covalent molecular",
+        "SiO₂: continuous Si–O–Si 3D network → covalent network",
+        "Melt CO₂: overcome only weak dispersion forces between molecules → very low MP",
+        "Melt SiO₂: break strong Si–O covalent bonds throughout → very high MP",
+        "Answer: the structural type, not the atoms, drives the MP difference ✓"
+      ],
+      "durationInFrames": 1350,
+      "caption": "CO₂ breaks weak forces; SiO₂ breaks covalent bonds — hence the MP gap.",
+      "voiceover": {
+        "text": "Let's explain the carbon dioxide versus silicon dioxide difference properly. Step one, identify each structure. Carbon dioxide is made of discrete molecules, each one an oxygen double bonded carbon double bonded oxygen, so it's covalent molecular. Silicon dioxide is a continuous three-dimensional network of silicon oxygen bonds, with no separate molecules, so it's covalent network. Step two, to melt carbon dioxide, you only need to overcome the weak dispersion forces between the molecules, the strong carbon oxygen bonds inside each molecule stay intact, so the melting point is very low, minus seventy-eight. Step three, to melt silicon dioxide, you have to break the strong silicon oxygen covalent bonds throughout the entire lattice, which takes enormous energy, giving a melting point of seventeen thirteen. So the difference comes from the structural type, molecular versus network, not from carbon versus silicon."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Water versus hydrogen sulfide",
+      "question": "H₂O boils at 100°C, H₂S at −60°C. Both are bent molecules with two X–H bonds. Explain the large difference.",
+      "coachNote": "Find which IMFs each molecule can form.",
+      "steps": [
+        "H₂O: O is highly electronegative → strongly polar O–H → forms hydrogen bonds",
+        "H₂S: S is much less electronegative → no hydrogen bonding, only dispersion + weak dipole",
+        "Hydrogen bonding is far stronger than the IMFs in H₂S",
+        "More energy is needed to separate water molecules → higher BP",
+        "Answer: H₂O's hydrogen bonding gives the 160°C higher boiling point ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Water hydrogen-bonds; H₂S can't — so water boils 160°C higher.",
+      "voiceover": {
+        "text": "Now water versus hydrogen sulfide. They're both bent molecules with two hydrogen bonds, yet water boils at one hundred and hydrogen sulfide at minus sixty. Step one, in water, oxygen is highly electronegative, so the oxygen hydrogen bond is strongly polar, and water molecules can form hydrogen bonds with each other, the strongest type of intermolecular force. Step two, in hydrogen sulfide, sulfur is far less electronegative, so it can't form hydrogen bonds at all, leaving only weak dispersion forces and a weak dipole. Step three, hydrogen bonding is dramatically stronger than the forces in hydrogen sulfide. Step four, so it takes much more energy to pull water molecules apart. So water's hydrogen bonding is exactly why its boiling point sits one hundred and sixty degrees above hydrogen sulfide, even though hydrogen sulfide is the heavier molecule."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three covalent traps",
+      "body": "Trap 1: claiming all covalent substances have low melting points because covalent bonds are weak. The bonds are strong; molecular substances just break weak forces between molecules.",
+      "secondary": "Trap 2: writing that boiling water breaks the O–H bonds. It breaks only the hydrogen bonds between molecules; each H₂O survives intact. Trap 3: treating SiO₂ as molecular. It's a network solid, so its high MP comes from breaking covalent bonds.",
+      "mistakeTag": "Where covalent marks vanish",
+      "callout": "Bonds are strong; boiling breaks IMFs only; SiO₂ is a network.",
+      "durationInFrames": 1260,
+      "caption": "Covalent bonds aren't weak; boiling breaks IMFs only; SiO₂ is a network solid.",
+      "voiceover": {
+        "text": "Three traps. Trap one, claiming all covalent substances melt low because covalent bonds are weak. They aren't weak. Covalent bonds inside a molecule are strong, and molecular substances melt low only because melting breaks the weak forces between molecules, not the bonds. Trap two, and this is the classic exam killer, writing that boiling water breaks the oxygen hydrogen bonds. It doesn't. Boiling only overcomes the hydrogen bonds between molecules, so each water molecule survives intact into the gas phase. If you broke the oxygen hydrogen bonds you'd get free atoms, which is a chemical reaction, not boiling. Trap three, treating silicon dioxide as molecular. It's a network solid, so its sky high melting point comes from breaking covalent bonds throughout the lattice."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Classify two substances: X (MP −22°C, never conducts, dissolves in water) and Y (MP 1713°C, never conducts, insoluble). Explain each.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "X: very low MP → only weak IMFs broken on melting → covalent molecular",
+        "X: dissolves in water and doesn't conduct → polar molecule, no free ions",
+        "Y: very high MP, never conducts, insoluble → covalent network solid",
+        "Y: melting requires breaking covalent bonds throughout (this is SiO₂)",
+        "Answer: X covalent molecular, Y covalent network ✓"
+      ],
+      "durationInFrames": 1170,
+      "caption": "X = covalent molecular (low MP); Y = covalent network (very high MP).",
+      "voiceover": {
+        "text": "Quick check, classify two substances. X melts at minus twenty-two, never conducts, and dissolves in water. Y melts at seventeen thirteen, never conducts, and is insoluble in everything. Pause and work it through. Right, let's check it. Step one, X has a very low melting point, which means melting only breaks weak intermolecular forces, so X is covalent molecular. Step two, X dissolves in water and doesn't conduct, which tells us it's a polar molecule with no free ions, consistent with covalent molecular. Step three, Y has a very high melting point, never conducts, and is insoluble, the classic covalent network fingerprint. Step four, melting Y means breaking covalent bonds throughout the lattice, and that melting point of seventeen thirteen points straight to silicon dioxide. So X is covalent molecular and Y is covalent network."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Covalent molecular: discrete molecules; melting breaks only weak IMFs → low MP.",
+        "Covalent network: a 3D web of covalent bonds; melting breaks bonds → very high MP.",
+        "Within molecular substances, BP rises with size (more dispersion).",
+        "Hydrogen bonding (N–H, O–H, F–H) lifts BP dramatically: H₂O ≫ H₂S.",
+        "Boiling a molecular substance breaks IMFs, never the covalent bonds."
+      ],
+      "finalPrompt": "Covalent MP question? Ask what breaks on melting.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: molecular vs network, what breaks on melting, IMF trends, hydrogen bonding.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, covalent molecular substances are discrete molecules, and melting breaks only the weak forces between them, giving a low melting point. Second, covalent network solids are one continuous web of covalent bonds, and melting breaks those bonds, giving a very high melting point. Third, within molecular substances, boiling point rises with size, because larger molecules have stronger dispersion forces. Fourth, hydrogen bonding lifts boiling point dramatically, which is why water boils far above hydrogen sulfide. And fifth, boiling a molecular substance breaks the intermolecular forces, never the covalent bonds inside. Next lesson we zoom right in on those intermolecular forces. See you next lesson."
+      }
+    }
+  ]
+}

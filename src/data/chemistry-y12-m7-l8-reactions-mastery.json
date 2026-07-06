@@ -1,0 +1,226 @@
+{
+  "title": "Hydrocarbon Reactions Mastery: Conditions, Products & Errors",
+  "subtitle": "Stress-testing every reaction so no mark slips away",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 8",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "investigate, write equations and construct models to represent the reactions of unsaturated hydrocarbons when added to a range of chemicals, including but not limited to:",
+    "investigate, write equations and construct models to represent the reactions of saturated hydrocarbons when substituted with halogens"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": ["CH12-14", "CH11/12-4", "CH11/12-5", "CH11/12-7"],
+  "inquiryQuestion": "What are the products of reactions of hydrocarbons and how do they react?",
+  "lessonIntent": "Students can reproduce the full conditions for every hydrocarbon reaction, plan multi-step syntheses, and spot and fix wrong conditions, products and reaction types.",
+  "examSkill": "Catch the three error types: wrong conditions, wrong product, wrong reaction type, and work backwards from a product to its starting material.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, a mastery lesson on hydrocarbon reactions, and the errors that cost marks. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Hydrocarbon Reactions Mastery: Conditions, Products & Errors (Year 12 Chemistry, Module 7, Lesson 8)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Right reaction, lost marks",
+      "body": "A student gets the reaction type right on every question, but loses marks on all of them. The marker writes the same note five times: conditions incomplete.",
+      "callout": "In Module 7, the conditions are the marks.",
+      "durationInFrames": 690,
+      "caption": "Most lost marks in reaction questions come from incomplete conditions.",
+      "voiceover": {
+        "text": "OK, here's a scenario that's painfully common. A student sits a test, and they get the reaction type right every single time, addition, substitution, they nail the classification. But they still lose marks on every question. The marker has written the same comment five times, conditions incomplete. They forgot a catalyst on two questions, wrote U V light catalyst on another, left pressure off the hydration, and put heat instead of the proper catalysts on the alkyne hydration. This is a consolidation lesson, no new content, just stress-testing what you already know. Because in Module 7, knowing the reaction is only half of it. The conditions are where the marks actually live, and today we make sure you can reproduce every one of them."
+      }
+    },
+    {
+      "id": "concept-conditions",
+      "type": "concept",
+      "heading": "Conditions are the marks",
+      "body": "Reproduce these from memory. Any condition set you cannot recall is a potential lost mark.",
+      "bullets": [
+        {"text": "Hydrogenation: H2, Ni catalyst, 150 to 200 degrees."},
+        {"text": "Halogenation: X2, no catalyst, room temperature."},
+        {"text": "Hydration of an alkene: steam, H3PO4, about 300 degrees, high pressure."},
+        {"text": "Alkyne hydration: water, dilute H2SO4 AND Hg2+, about 60 degrees, gives a ketone."}
+      ],
+      "secondary": "Alkane substitution: X2 under UV light (energy source), giving a haloalkane plus HX. Partial alkyne hydrogenation to a cis-alkene needs the Lindlar catalyst.",
+      "callout": "If you cannot reproduce a condition set, that is a mark at risk.",
+      "durationInFrames": 1110,
+      "caption": "Full conditions for hydrogenation, halogenation, hydration, alkyne hydration, substitution.",
+      "voiceover": {
+        "text": "Let's run the conditions you must be able to write from memory. Hydrogenation, hydrogen gas, a nickel catalyst, one hundred and fifty to two hundred degrees. Halogenation, the halogen, no catalyst, room temperature. Alkene hydration, steam, a phosphoric acid catalyst, about three hundred degrees, and high pressure, all three. Alkyne hydration, water, but with both dilute sulfuric acid and a mercury two plus catalyst, about sixty degrees, and remember it gives a ketone. Alkane substitution, the halogen under ultraviolet light, which is an energy source, giving a haloalkane plus a hydrogen halide. And if you ever need to stop hydrogenation of an alkyne at the alkene, you specify the Lindlar catalyst. Here's the honest test, any one of these condition sets you can't reproduce right now is a mark you'll drop in the exam, so drill the gaps."
+      }
+    },
+    {
+      "id": "concept-dihalides",
+      "type": "concept",
+      "heading": "Vicinal vs geminal dihalides",
+      "body": "Two dihalide types, two origins. Telling them apart lets you work backwards to the starting material.",
+      "bullets": [
+        {"text": "Vicinal: halogens on adjacent carbons; from halogenation of an alkene."},
+        {"text": "Geminal: both halogens on the same carbon; from two-step HX on an alkyne."},
+        {"text": "Propene + Cl2 -> 1,2-dichloropropane (vicinal); propyne + 2HBr -> 2,2-dibromopropane (geminal)."}
+      ],
+      "secondary": "To find an alkyne precursor from a geminal dihalide, strip both halogens off the shared carbon and reform the triple bond to its neighbour.",
+      "callout": "Adjacent carbons means alkene; same carbon means alkyne.",
+      "durationInFrames": 1050,
+      "caption": "Vicinal (adjacent, from alkene); geminal (same carbon, from alkyne).",
+      "voiceover": {
+        "text": "Now a distinction that shows up in working-backwards questions, vicinal versus geminal dihalides. A vicinal dihalide has its two halogens on adjacent carbons, and it comes from halogenation of an alkene, where one halogen adds to each carbon of the double bond. A geminal dihalide has both halogens on the same carbon, and it comes from the two-step hydrohalogenation of an alkyne, where Markovnikov directs both halogens to the same carbon. For example, propene plus chlorine gives one-comma-two-dichloropropane, vicinal. Propyne plus two H Br gives two-comma-two-dibromopropane, geminal. And here's the useful reverse trick. If you're handed a geminal dihalide and asked for the starting material, strip both halogens off the shared carbon and reform a triple bond to its neighbour, and you've got the alkyne it came from."
+      }
+    },
+    {
+      "id": "formula-synthesis-hub",
+      "type": "concept",
+      "heading": "Propyne: a synthesis hub",
+      "body": "One starting material, five products, depending only on which reaction you choose. Multi-step questions test exactly this.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "yne", "label": "Propyne"},
+          {"id": "ane", "label": "Propane (2H2, Ni)"},
+          {"id": "ene", "label": "cis-Propene (Lindlar)"},
+          {"id": "one", "label": "Propanone (H2O, H2SO4+Hg2+)"},
+          {"id": "br2", "label": "2,2-dibromopropane (2 HBr)"}
+        ],
+        "edges": [
+          {"from": "yne", "to": "ane"},
+          {"from": "yne", "to": "ene"},
+          {"from": "yne", "to": "one"},
+          {"from": "yne", "to": "br2"}
+        ]
+      },
+      "bullets": [
+        {"text": "Full hydrogenation (2H2, Ni) -> propane."},
+        {"text": "Partial hydrogenation (Lindlar) -> cis-propene."},
+        {"text": "Hydration (H2SO4 + Hg2+) -> propanone; full HX (2 eq) -> 2,2-dibromopropane."}
+      ],
+      "secondary": "Specify Lindlar for the alkene, or Ni gives the alkane. State both catalysts for the ketone, or you have described alkene hydration.",
+      "callout": "Same starting material; the conditions decide the product.",
+      "durationInFrames": 1080,
+      "caption": "Propyne to propane, cis-propene, propanone or 2,2-dibromopropane by choice of conditions.",
+      "voiceover": {
+        "text": "Let's see how the conditions become the whole answer in a multi-step question. Take propyne as a synthesis hub. From this one molecule, you can reach at least five different products, and the only thing that changes is which reaction you choose. Full hydrogenation, two hydrogen over nickel, gives propane. Partial hydrogenation, with the Lindlar catalyst, stops at cis-propene. Hydration, with sulfuric acid and mercury two plus, gives propanone, a ketone. And two equivalents of H Br gives two-comma-two-dibromopropane, the geminal dihalide. Notice the precision required. If you want the alkene, you must say Lindlar, because plain nickel takes you all the way to the alkane. And for the ketone you must state both catalysts, or you've just described alkene hydration. Same starting material, completely different products, decided entirely by the conditions you write."
+      }
+    },
+    {
+      "id": "concept-working-backwards",
+      "type": "concept",
+      "heading": "Working backwards from a product",
+      "body": "Many questions give the product and ask for the starting material and conditions. Reverse the logic.",
+      "bullets": [
+        {"text": "Identify the functional group on the product (alcohol, dihalide, ketone)."},
+        {"text": "Decide what was added: H2, X2, HX or H2O."},
+        {"text": "Remove the added atoms and reform the pi bond(s), then state the conditions."}
+      ],
+      "secondary": "A secondary or tertiary alcohol points to Markovnikov hydration of an alkene. Locate the C=C position that puts the OH where it is.",
+      "callout": "Group on the product, atoms added, then rebuild the starting material.",
+      "durationInFrames": 1020,
+      "caption": "Reverse synthesis: group, atoms added, reform the multiple bond, state conditions.",
+      "voiceover": {
+        "text": "The flip side of synthesis is working backwards, where you're given a product and asked for the starting material and conditions. Reverse the same logic. Step one, identify the functional group on the product, is it an alcohol, a dihalide, a ketone? Step two, decide what was added to make it, hydrogen, a halogen, a hydrogen halide, or water. Step three, mentally remove those added atoms and reform the pi bond, or pi bonds, that were there before, then state the conditions for that forward reaction. A useful clue, if the product is a secondary or tertiary alcohol, it almost certainly came from Markovnikov hydration of an alkene, so find the double bond position that would place the oxygen hydrogen group exactly where it sits. Working backwards is just running the reaction table in reverse."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Multi-step from propyne",
+      "question": "Give equations and full conditions to make (a) propanone and (b) 2,2-dibromopropane from propyne.",
+      "coachNote": "Name both catalysts for the ketone; use two equivalents for the dihalide.",
+      "steps": [
+        "(a) Alkyne hydration: CH3C(triple)CH + H2O -> CH3COCH3",
+        "(a) Conditions: dilute H2SO4 AND Hg2+, about 60 degrees (enol -> ketone)",
+        "(b) Two-step hydrohalogenation, Markovnikov each time, 2 eq HBr",
+        "(b) CH3C(triple)CH + 2HBr -> CH3CBr2CH3 (both Br on C2)",
+        "Answer: (a) propanone, (b) 2,2-dibromopropane (geminal) ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Propyne -> propanone (H2SO4+Hg2+); propyne + 2HBr -> 2,2-dibromopropane.",
+      "voiceover": {
+        "text": "Let's run a multi-step from propyne. Part a, make propanone. That's alkyne hydration, propyne plus water gives propanone, with conditions dilute sulfuric acid and a mercury two plus catalyst, at about sixty degrees. Remember, the enol intermediate tautomerises to the ketone, and you must state both catalysts, not just one. Part b, make two-comma-two-dibromopropane. That's a geminal dihalide, so it comes from two-step hydrohalogenation, with Markovnikov applying each time, using two equivalents of H Br. Propyne plus two H Br gives C H three C Br two C H three, with both bromines landing on carbon two. So part a gives propanone, and part b gives two-comma-two-dibromopropane. The two details that earn the marks here are stating both catalysts for the hydration, and specifying two equivalents for the full hydrohalogenation."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Spot and fix the errors",
+      "question": "Find every error: \"propene + H2O -> propan-1-ol. Conditions: H2SO4, 300 degrees.\"",
+      "coachNote": "Check the product (Markovnikov) and the full conditions.",
+      "steps": [
+        "Product error: Markovnikov puts OH on C2, not C1",
+        "Correct product: propan-2-ol (CH3CH(OH)CH3)",
+        "Conditions error: high pressure is missing",
+        "Full conditions: steam, H3PO4 (or H2SO4), about 300 degrees, high pressure",
+        "Fixed: propene + H2O -> propan-2-ol (H3PO4, 300C, high pressure) ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Fix: propan-2-ol (Markovnikov) and add high pressure to the conditions.",
+      "voiceover": {
+        "text": "Now a spot the error. The student writes, propene plus water gives propan-one-ol, conditions sulfuric acid, three hundred degrees. There are two errors, find both. Error one, the product. This is hydration, so Markovnikov applies, and the oxygen hydrogen group goes to the more substituted carbon, carbon two, not carbon one. So the correct product is propan-two-ol, the secondary alcohol. Error two, the conditions are incomplete. High pressure is missing. The full set is steam, a phosphoric acid or sulfuric acid catalyst, about three hundred degrees, and high pressure. So the fixed answer is propene plus water gives propan-two-ol, with phosphoric acid, three hundred degrees, and high pressure. Two errors, a wrong product from forgetting Markovnikov, and incomplete conditions from forgetting pressure, both classic mark-losers."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The three error types",
+      "body": "Trap 1: wrong product, like an alcohol from alkyne hydration when it should be a ketone.",
+      "secondary": "Trap 2: wrong conditions, like dilute acid for dehydration, or UV light labelled a catalyst, or pressure left off hydration. Trap 3: wrong reaction type, like calling an alkyne plus excess Br2 a substitution when it is two-step addition.",
+      "mistakeTag": "Where mastery-level marks vanish",
+      "callout": "Check the product, the conditions, and the reaction type, every time.",
+      "durationInFrames": 1230,
+      "caption": "Three error types: wrong product, wrong conditions, wrong reaction type.",
+      "voiceover": {
+        "text": "Every lost mark in this topic falls into one of three error types, so check for all three. Trap one, wrong product. The classic is writing an alcohol from alkyne hydration when it should be a ketone, or putting an oxygen hydrogen group on the wrong carbon by ignoring Markovnikov. Trap two, wrong conditions. Using dilute acid for dehydration when it needs concentrated, labelling ultraviolet light a catalyst when it's an energy source, or leaving pressure off the hydration. Trap three, wrong reaction type. Calling an alkyne plus excess bromine a substitution, when it's actually two-step addition, or treating an alkane reaction as addition when alkanes only substitute. Before you move on from any reaction answer, run the checklist, is the product right, are the conditions complete, and is the reaction type correct?"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A student isolates 2,2-dibromopropane. Identify the dihalide type, the starting material, and the reagent.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Both Br atoms are on the same carbon (C2) -> geminal dihalide",
+        "Geminal dihalides come from two-step HX addition to an alkyne",
+        "Strip both Br from C2, reform the triple bond -> propyne",
+        "Reagent: 2 equivalents of HBr, room temperature, Markovnikov each step",
+        "Answer: geminal; from propyne + 2HBr ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "2,2-dibromopropane is geminal, from propyne + 2HBr.",
+      "voiceover": {
+        "text": "Quick check, a working-backwards question. A student isolates two-comma-two-dibromopropane. Identify the dihalide type, the starting material, and the reagent. Pause and work it through. Right. Both bromine atoms are on the same carbon, carbon two, so it's a geminal dihalide. Geminal dihalides come from the two-step hydrohalogenation of an alkyne, not from an alkene, which would give a vicinal dihalide. So strip both bromines off carbon two and reform a triple bond to the neighbouring carbon, and you get propyne. The reagent was two equivalents of H Br, at room temperature, with Markovnikov directing both bromines to the same carbon each step. So it's a geminal dihalide, made from propyne plus two H Br. That same-carbon clue is what tells you the precursor is an alkyne."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Reproduce every reaction's full conditions; that is where most marks are won or lost.",
+        "Vicinal dihalides come from alkenes; geminal from two-step HX on alkynes.",
+        "One starting material gives many products; the conditions decide which.",
+        "Work backwards by reading the product's group, then reforming the pi bond.",
+        "Check three things on every answer: product, conditions, reaction type."
+      ],
+      "finalPrompt": "Before moving on: is the product right, the conditions complete, the type correct?",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: conditions, dihalide origins, synthesis choice, reverse logic, the checklist.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, be able to reproduce every reaction's full conditions, because that's where most of the marks are won or lost. Second, vicinal dihalides come from halogenation of alkenes, while geminal dihalides come from two-step hydrohalogenation of alkynes. Third, one starting material can give many products, and the conditions you write decide which one. Fourth, to work backwards, read the functional group on the product, decide what was added, and reform the pi bond. And fifth, run the three-point checklist on every answer, is the product right, are the conditions complete, and is the reaction type correct? Get into that habit, and the careless marks stop slipping away. Next lesson we move into alcohols, their structure and properties. See you next lesson."
+      }
+    }
+  ]
+}

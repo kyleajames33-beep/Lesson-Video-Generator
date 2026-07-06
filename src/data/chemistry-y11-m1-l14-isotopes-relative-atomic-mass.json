@@ -1,0 +1,216 @@
+{
+  "title": "Isotopes and Relative Atomic Mass",
+  "subtitle": "Why atomic masses aren't whole numbers",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 14",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "calculate the relative atomic mass from isotopic composition (ACSCH024)"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": [
+    "CH11-8",
+    "CH11/12-4",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "Why are atoms of elements different from one another?",
+  "lessonIntent": "Students can define isotopes and calculate relative atomic mass as a weighted average of isotopic masses and abundances.",
+  "examSkill": "Convert each percentage abundance to a fraction, multiply by the isotopic mass, and sum to get the relative atomic mass.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, isotopes and relative atomic mass. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Isotopes and Relative Atomic Mass (Year 11 Chemistry, Module 1, Lesson 14)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why is chlorine 35.45?",
+      "body": "No single chlorine atom weighs 35.45. So why is that the number on the periodic table?",
+      "callout": "The decimal is a clue, not an error.",
+      "durationInFrames": 690,
+      "caption": "Chlorine's Ar of 35.45 is not a whole number; isotopes explain why.",
+      "voiceover": {
+        "text": "OK, look up chlorine on the periodic table and you'll see a relative atomic mass of thirty-five-point-four-five. But here's the strange part. Not a single chlorine atom actually weighs thirty-five-point-four-five. Every chlorine atom is either chlorine thirty-five or chlorine thirty-seven, both whole numbers. So where does that decimal come from? It's not a rounding error, and it's not an average atom that exists somewhere. It's a clue. Chlorine comes as a mixture of two isotopes, and that listed mass is a weighted average of the mixture. By the end of today, you'll be able to calculate that number yourself for any element."
+      }
+    },
+    {
+      "id": "concept-isotopes",
+      "type": "concept",
+      "heading": "Isotopes: same element, different mass",
+      "body": "Isotopes share the same number of protons but differ in neutrons, so they have identical chemistry but different mass.",
+      "bullets": [
+        {
+          "text": "Same proton number Z, so they are the same element."
+        },
+        {
+          "text": "Different neutron number, so they have different mass numbers."
+        },
+        {
+          "text": "Identical chemistry, because chemistry depends on electrons."
+        }
+      ],
+      "secondary": "They differ physically: slightly different density and boiling point, and some isotopes are radioactive while others are stable.",
+      "callout": "Same protons means same element; different neutrons means different mass.",
+      "durationInFrames": 1140,
+      "caption": "Isotopes: same protons (same element), different neutrons (different mass).",
+      "voiceover": {
+        "text": "Let's define the key idea. Isotopes are atoms of the same element that have the same number of protons but a different number of neutrons. The proton number is what makes them the same element, so chlorine thirty-five and chlorine thirty-seven are both genuinely chlorine. The extra neutrons in the heavier one just make it weigh more. Now the crucial consequence. Because chemistry is decided by electrons, and isotopes have the same number of electrons, isotopes are chemically identical. They react the same way, form the same compounds, everything. Where they differ is physical. The heavier isotope has slightly higher density and boiling point, and importantly, some isotopes are radioactive, with unstable nuclei, while others are stable. Carbon fourteen is radioactive, carbon twelve is not, but both react with oxygen to make carbon dioxide in exactly the same way."
+      },
+      "diagram": {
+        "type": "isotopeAtoms"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Isotopes: atoms of one element with the same Z but different neutron counts."
+        },
+        {
+          "text": "Relative atomic mass (Ar): the weighted average of all isotopic masses."
+        },
+        {
+          "text": "Fractional abundance: a percentage abundance divided by 100."
+        },
+        {
+          "text": "Mass spectrum: peaks at each isotope's mass, with height showing abundance."
+        }
+      ],
+      "callout": "Ar is an average weighted by how common each isotope is.",
+      "durationInFrames": 960,
+      "caption": "Isotopes, relative atomic mass, fractional abundance, mass spectrum.",
+      "voiceover": {
+        "text": "Four terms to lock in. Isotopes are atoms of one element with the same atomic number but different neutron counts, which we just covered. Relative atomic mass, written A r, is the weighted average of all the naturally occurring isotopic masses, measured against carbon twelve set at exactly twelve. Fractional abundance is simply a percentage abundance divided by one hundred, so seventy-five percent becomes nought-point-seven-five. And a mass spectrum is the experimental readout, a graph with a peak at each isotope's mass, where the height of the peak tells you how abundant that isotope is. Those four words carry the whole calculation."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The weighted-average method",
+      "body": "Multiply each isotope's mass by its fractional abundance, then add the contributions.",
+      "bullets": [
+        {
+          "text": "Convert every percentage abundance to a fraction by dividing by 100."
+        },
+        {
+          "text": "Multiply each isotopic mass by its fractional abundance."
+        },
+        {
+          "text": "Add all the contributions to get the relative atomic mass."
+        }
+      ],
+      "secondary": "Ar = (m₁ × f₁) + (m₂ × f₂) + ... It is a weighted average, never the simple mean of the masses.",
+      "callout": "Ar = Σ (isotopic mass × fractional abundance).",
+      "durationInFrames": 1020,
+      "caption": "Ar = (m₁ × f₁) + (m₂ × f₂) + ... using fractional abundances.",
+      "voiceover": {
+        "text": "Here's the method, and it's just three moves. First, convert every percentage abundance into a fraction by dividing by one hundred. So seventy-five-point-seven-seven percent becomes nought-point-seven-five-seven-seven. Second, multiply each isotope's mass by its fractional abundance, which gives that isotope's contribution to the average. Third, add up all the contributions. The formula is A r equals the sum of each isotopic mass times its fractional abundance. The one thing to burn in, it's a weighted average, not a plain average of the masses. The more abundant isotope pulls the answer toward itself, which is exactly why chlorine, being mostly chlorine thirty-five, ends up closer to thirty-five than to thirty-seven."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Relative atomic mass of bromine",
+      "question": "Bromine has two isotopes: ⁷⁹Br (50.69%) and ⁸¹Br (49.31%). Calculate its relative atomic mass.",
+      "coachNote": "Convert percentages to fractions, then weight each mass.",
+      "steps": [
+        "Fractional abundances: 50.69% = 0.5069 and 49.31% = 0.4931",
+        "Contribution of ⁷⁹Br = 79 × 0.5069 = 40.05",
+        "Contribution of ⁸¹Br = 81 × 0.4931 = 39.94",
+        "Ar = 40.05 + 39.94 = 79.99",
+        "Answer: Ar(Br) = 79.99 ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Br: (79 × 0.5069) + (81 × 0.4931) = 79.99.",
+      "voiceover": {
+        "text": "Let's calculate one cleanly. Bromine has two isotopes, bromine seventy-nine at fifty-point-six-nine percent, and bromine eighty-one at forty-nine-point-three-one percent. Find the relative atomic mass. Step one, convert the percentages to fractions. Fifty-point-six-nine percent becomes nought-point-five-zero-six-nine, and forty-nine-point-three-one percent becomes nought-point-four-nine-three-one. Step two, the contribution from bromine seventy-nine is seventy-nine times nought-point-five-zero-six-nine, which is forty-point-zero-five. Step three, the contribution from bromine eighty-one is eighty-one times nought-point-four-nine-three-one, which is thirty-nine-point-nine-four. Step four, add them, forty-point-zero-five plus thirty-nine-point-nine-four gives seventy-nine-point-nine-nine. So the relative atomic mass of bromine is seventy-nine-point-nine-nine. And notice the abundances are nearly fifty-fifty, so the answer lands almost exactly halfway between seventy-nine and eighty-one."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Reading a mass spectrum",
+      "question": "A mass spectrum shows peaks at mass 107 (52%) and mass 109 (48%). Calculate the relative atomic mass.",
+      "coachNote": "Peak height is abundance, so read it like a calculation.",
+      "steps": [
+        "Read the peaks: isotope mass 107 at 52%, isotope mass 109 at 48%",
+        "Fractional abundances: 0.52 and 0.48",
+        "Contributions: 107 × 0.52 = 55.64 and 109 × 0.48 = 52.32",
+        "Ar = 55.64 + 52.32 = 107.96",
+        "Answer: Ar = 107.96 (this element is silver) ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Mass spectrum: (107 × 0.52) + (109 × 0.48) = 107.96.",
+      "voiceover": {
+        "text": "Now let's read it straight off a mass spectrum, which is how chemists actually measure this. The spectrum shows two peaks, one at mass one hundred and seven with fifty-two percent abundance, and one at mass one hundred and nine with forty-eight percent. Step one, read the peaks. Peak height is abundance, so the taller peak at one hundred and seven is the more common isotope. Step two, convert to fractions, nought-point-five-two and nought-point-four-eight. Step three, the contributions, one hundred and seven times nought-point-five-two is fifty-five-point-six-four, and one hundred and nine times nought-point-four-eight is fifty-two-point-three-two. Step four, add them, that's one hundred and seven-point-nine-six. So the relative atomic mass is one hundred and seven-point-nine-six, which tells us this element is silver. Reading a spectrum is just the same weighted average, with the heights handing you the abundances."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: taking the simple average of the masses, ignoring abundance. That only works if abundances are equal.",
+      "secondary": "Trap 2: forgetting to divide the percentages by 100. Trap 3: thinking isotopes react differently. Chemistry depends on electrons, which are identical.",
+      "mistakeTag": "Where isotope marks vanish",
+      "callout": "Weight by abundance, use fractions, and isotopes are chemically identical.",
+      "durationInFrames": 1200,
+      "caption": "Don't take the plain mean; convert % to fractions; isotopes are chemically identical.",
+      "voiceover": {
+        "text": "Three traps. Trap one, taking the plain average of the masses. For chlorine that would give thirty-six, halfway between thirty-five and thirty-seven, which is wrong. You must weight by abundance, and since chlorine is mostly the lighter isotope, the real answer sits down near thirty-five-point-five. The plain average only works in the rare case where the abundances are exactly equal. Trap two, forgetting to divide the percentages by one hundred. If you multiply by seventy-five instead of nought-point-seven-five, your answer comes out a hundred times too big, so always convert to fractions first. Trap three, thinking the heavier isotope reacts differently. It doesn't. Chemistry is set by electrons, and isotopes have identical electron arrangements, so they're chemically the same."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Neon has three isotopes: ²⁰Ne (90.48%), ²¹Ne (0.27%), and ²²Ne (9.25%). Calculate its relative atomic mass.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Fractions: 0.9048, 0.0027, and 0.0925",
+        "Contributions: 20 × 0.9048 = 18.096; 21 × 0.0027 = 0.0567; 22 × 0.0925 = 2.035",
+        "Ar = 18.096 + 0.0567 + 2.035 = 20.19",
+        "It is closest to 20 because ²⁰Ne is by far the most abundant",
+        "Answer: Ar(Ne) = 20.19 ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Ne: (20 × 0.9048) + (21 × 0.0027) + (22 × 0.0925) = 20.19.",
+      "voiceover": {
+        "text": "Quick check, and this one has three isotopes. Neon is ninety-point-four-eight percent neon twenty, nought-point-two-seven percent neon twenty-one, and nine-point-two-five percent neon twenty-two. Find the relative atomic mass. Pause and work it through. Right, let's check it. Step one, convert to fractions, nought-point-nine-zero-four-eight, nought-point-zero-zero-two-seven, and nought-point-zero-nine-two-five. Step two, the contributions. Twenty times nought-point-nine-zero-four-eight is eighteen-point-zero-nine-six. Twenty-one times nought-point-zero-zero-two-seven is nought-point-zero-five-seven. And twenty-two times nought-point-zero-nine-two-five is two-point-zero-three-five. Step three, add all three, that gives twenty-point-one-nine. And it makes sense that the answer is so close to twenty, because neon twenty makes up over ninety percent of the sample, so it dominates the average."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Isotopes: same protons, different neutrons; chemically identical.",
+        "Ar is a weighted average of isotopic masses, not the simple mean.",
+        "Always convert percentage abundances to fractions first.",
+        "Ar = Σ (isotopic mass × fractional abundance).",
+        "On a mass spectrum, peak height equals relative abundance."
+      ],
+      "finalPrompt": "Calculating Ar? Weight each mass by its fractional abundance.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: isotope definition, weighted average, fractions, the formula, mass spectra.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, isotopes have the same number of protons but different neutrons, which makes them chemically identical but physically a little different. Second, relative atomic mass is a weighted average of the isotopic masses, never the plain average. Third, always convert percentage abundances to fractions by dividing by one hundred before you start. Fourth, the formula is A r equals the sum of each isotopic mass times its fractional abundance. And fifth, on a mass spectrum, the height of each peak gives you the relative abundance directly. Get those, and every relative atomic mass question becomes a quick, reliable calculation. See you next lesson."
+      }
+    }
+  ]
+}

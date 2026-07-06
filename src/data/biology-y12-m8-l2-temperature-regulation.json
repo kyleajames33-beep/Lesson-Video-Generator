@@ -1,0 +1,245 @@
+{
+  "title": "Temperature Regulation",
+  "subtitle": "How endotherms and ectotherms hold their temperature",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 2",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "investigate the various mechanisms used by organisms to maintain their internal environment within tolerance limits, including thermoregulation (ACSBL101, ACSBL110, ACSBL111)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How is an organism's internal environment maintained in response to a changing external environment?",
+  "lessonIntent": "Students can compare endotherm and ectotherm thermoregulation and classify temperature adaptations as physiological, behavioural, or structural.",
+  "examSkill": "Classify a named temperature adaptation by category and explain its mechanism, and contrast endotherm and ectotherm strategies using Australian examples.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, temperature regulation. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Temperature Regulation (Year 12 Biology, Module 8, Lesson 2)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two animals, one 49 degree day",
+      "body": "On the same scorching day, a person sweats and flushes red while a lizard sits still in a crevice. Both are controlling temperature.",
+      "callout": "Same goal, completely different machinery.",
+      "image": "bioM8L2HeatwaveTwoAnimals",
+      "durationInFrames": 2115,
+      "caption": "On a 48.9 degree Penrith day, an endotherm and an ectotherm thermoregulate differently.",
+      "voiceover": {
+        "text": "On the fourth of January 2020, Penrith hit forty eight point nine degrees, the hottest day ever recorded in the Sydney basin. That summer, New South Wales Health recorded eleven heat-related deaths, and most of them happened when core temperature climbed past forty degrees and the body's cooling system was overwhelmed. Now picture two animals out in that heat, a person and a bluetongue lizard. The person is sweating hard, skin flushed red. The lizard has retreated into a cool rock crevice and is sitting perfectly still. Here is the thing, both of them are thermoregulating, both are working to control body temperature. But they are using completely different strategies, because one is an endotherm and one is an ectotherm. Today we unpack how the hypothalamus normally keeps core temperature away from that lethal threshold, and why these two kinds of animal go about it so differently."
+      }
+    },
+    {
+      "id": "concept-endo-ecto",
+      "type": "concept",
+      "heading": "Endotherms versus ectotherms",
+      "body": "The split is about the source of heat: generated internally, or taken from the environment.",
+      "bullets": [
+        {
+          "text": "Endotherms generate heat internally by metabolism, so core temperature stays stable, at a high energy cost."
+        },
+        {
+          "text": "Ectotherms rely on external heat sources, so body temperature varies, at a low energy cost."
+        },
+        {
+          "text": "Ectotherms still regulate temperature, mostly through behaviour, not internal heat."
+        }
+      ],
+      "secondary": "Use the precise terms endotherm and ectotherm, not warm-blooded and cold-blooded. A basking lizard can be warmer than you.",
+      "callout": "Endotherm makes its own heat. Ectotherm borrows it from outside.",
+      "durationInFrames": 2160,
+      "caption": "Endotherms generate internal heat; ectotherms rely on external heat sources.",
+      "voiceover": {
+        "text": "So let's draw the fundamental line. The difference between an endotherm and an ectotherm is the source of the heat. An endotherm generates its own heat internally, through metabolic processes, so its core temperature stays stable across a huge range of environments. Mammals and birds do this. The cost is energy, endotherms have to eat a lot to fuel that constant heat production. An ectotherm, like a reptile or a fish, relies on external heat sources instead, so its body temperature rises and falls with the surroundings. The big advantage is that it costs very little energy. Now here is the trap to avoid, ectotherms absolutely do regulate their temperature, they just do it mainly through behaviour rather than internal heat. And please, in the exam, always say endotherm and ectotherm, not warm-blooded and cold-blooded, because a lizard basking on a hot rock can easily be warmer than you are."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Endotherm",
+          "Ectotherm"
+        ],
+        "rows": [
+          [
+            "Heat source",
+            "Internal metabolism",
+            "External environment"
+          ],
+          [
+            "Core temperature",
+            "Stable",
+            "Varies with surroundings"
+          ],
+          [
+            "Energy cost",
+            "High",
+            "Low"
+          ],
+          [
+            "Main strategy",
+            "Physiological",
+            "Behavioural"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Thermoregulation: maintaining core body temperature within a narrow range despite external change."
+        },
+        {
+          "text": "Endotherm: an organism that generates body heat internally through metabolism."
+        },
+        {
+          "text": "Ectotherm: an organism that relies on external heat and behaviour to regulate temperature."
+        },
+        {
+          "text": "Vasodilation: widening of skin blood vessels to lose heat; vasoconstriction: narrowing them to conserve heat."
+        }
+      ],
+      "callout": "Vasodilation cools. Vasoconstriction warms. Don't swap them.",
+      "durationInFrames": 1860,
+      "caption": "Thermoregulation, endotherm, ectotherm, vasodilation, vasoconstriction.",
+      "voiceover": {
+        "text": "Let's lock in the key terms. Thermoregulation is the homeostatic process that keeps core body temperature within a narrow range, despite changes in the external temperature. An endotherm is an organism that generates its body heat internally through metabolism. An ectotherm relies on external heat sources and behaviour instead. And then two terms that students constantly reverse, vasodilation and vasoconstriction. Vasodilation is the widening of blood vessels near the skin, which brings warm blood to the surface so heat radiates away, it is a cooling response. Vasoconstriction is the narrowing of those vessels, which keeps warm blood deep in the body, conserving heat, it is a warming response. So vasodilation cools you down, vasoconstriction warms you up. Get those the right way round and you have just protected several marks."
+      }
+    },
+    {
+      "id": "concept-categories",
+      "type": "concept",
+      "heading": "Three categories of adaptation",
+      "body": "Every temperature adaptation is physiological, behavioural, or structural. They differ in speed, energy cost, and reversibility.",
+      "bullets": [
+        {
+          "text": "Physiological: automatic and fast but energy-costly, like sweating, shivering, vasodilation."
+        },
+        {
+          "text": "Behavioural: conscious or instinctive and low cost, like basking, shade-seeking, huddling."
+        },
+        {
+          "text": "Structural: permanent features with no ongoing cost, like fur, blubber, countercurrent heat exchange."
+        }
+      ],
+      "secondary": "A full-mark answer does two things: it names the category, and it explains the mechanism behind the adaptation.",
+      "callout": "Classify it, then explain how it actually moves heat.",
+      "durationInFrames": 1875,
+      "caption": "Adaptations are physiological, behavioural, or structural.",
+      "voiceover": {
+        "text": "Now a framework that organises everything in this lesson. Every temperature adaptation falls into one of three categories, and they differ in speed, energy cost, and reversibility. First, physiological adaptations, these are automatic and fast, but energy-costly, things like sweating, shivering, and vasodilation. Second, behavioural adaptations, which are conscious or instinctive, slower, but very low cost, like basking in the sun, seeking shade, or huddling together for warmth. Third, structural adaptations, which are permanent features with no ongoing energy cost at all, like fur, blubber, and countercurrent heat exchange in the limbs. The exam skill here is twofold. A weak answer just names the adaptation. A full-mark answer classifies it into the right category, and then explains the actual mechanism by which it moves heat into or out of the body."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Endotherm responses, both directions",
+      "question": "A human core temperature rises to 39 degrees, then later falls to 35 degrees. Give two physiological responses for each direction and state how each moves heat.",
+      "coachNote": "Pair each response with the direction of heat flow it produces.",
+      "steps": [
+        "Too hot, response 1: sweating, water evaporates and removes latent heat from the skin (evaporative cooling).",
+        "Too hot, response 2: vasodilation, warm blood is brought to the skin so heat radiates to the surroundings.",
+        "Too cold, response 1: shivering, rapid muscle contraction generates metabolic heat.",
+        "Too cold, response 2: vasoconstriction, skin vessels narrow so warm blood stays deep and heat is conserved.",
+        "Answer: cooling uses sweating and vasodilation; warming uses shivering and vasoconstriction ✓"
+      ],
+      "durationInFrames": 2070,
+      "caption": "Cooling: sweating + vasodilation. Warming: shivering + vasoconstriction.",
+      "voiceover": {
+        "text": "Let's work through the endotherm responses in both directions, because exams love asking for them paired up. Say a human core temperature rises to thirty nine degrees. Response one, sweating, water on the skin evaporates and carries latent heat away with it, that is evaporative cooling. Response two, vasodilation, the skin vessels widen and bring warm blood to the surface, so heat radiates out to the surroundings. Now the temperature swings the other way and falls to thirty five degrees. Response one, shivering, rapid involuntary muscle contraction generates heat from metabolism. Response two, vasoconstriction, the skin vessels narrow so warm blood stays deep in the core and heat is conserved. Notice the pattern, cooling uses sweating and vasodilation, warming uses shivering and vasoconstriction, and every single one is coordinated by the hypothalamus as the control centre, exactly the negative feedback loop from Lesson One."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "An ectotherm on a hot day",
+      "question": "Explain how a desert lizard keeps its body temperature stable across a day using only behaviour, and why this leaves it vulnerable to rapid climate change.",
+      "coachNote": "Behaviour means moving between microenvironments, not generating heat.",
+      "steps": [
+        "Morning, cool: the lizard basks in direct sun on a rock to absorb radiant heat and raise body temperature.",
+        "Midday, very hot: it shuttles into shade or burrows underground to avoid overheating.",
+        "It also changes body orientation and posture to control how much surface faces the sun.",
+        "This gives a surprisingly stable preferred temperature, but only because suitable microhabitats exist.",
+        "Answer: if warming removes cool refuges faster than behaviour can compensate, the ectotherm overheats ✓"
+      ],
+      "durationInFrames": 2220,
+      "caption": "Ectotherms regulate by shuttling between microhabitats; losing refuges is the risk.",
+      "voiceover": {
+        "text": "Now the ectotherm side, and this is where students lose marks by claiming ectotherms cannot regulate at all. They can, beautifully, just behaviourally. Take a desert lizard across a single day. In the cool morning, it basks in direct sun on a rock, absorbing radiant heat to raise its body temperature into the active range. At midday, when it is dangerously hot, it shuttles into the shade, or burrows underground, to avoid overheating. Throughout the day it also adjusts its body orientation and posture, controlling how much of its surface faces the sun. The result is a surprisingly stable preferred body temperature, achieved entirely by moving between microenvironments. But here is the catch, and it is a great evaluation point. This whole strategy depends on suitable cool refuges actually existing. If rapid climate change removes those refuges faster than behaviour can compensate, the ectotherm has no internal buffer to fall back on, and it overheats."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: writing that ectotherms cannot regulate their body temperature. They regulate very effectively, just through behaviour rather than internal heat.",
+      "secondary": "Trap 2: swapping vasodilation and vasoconstriction. Vasodilation brings blood to the skin to lose heat; vasoconstriction keeps it deep to conserve heat. Trap 3: thinking torpor means the animal has given up on homeostasis. Torpor is a controlled, reversible lowering of the set point to save energy.",
+      "mistakeTag": "Where temperature marks vanish",
+      "callout": "Ectotherms do regulate. Vasodilation loses heat. Torpor is strategic, not failure.",
+      "durationInFrames": 2100,
+      "caption": "Ectotherms do regulate; vasodilation loses heat; torpor is controlled, not failure.",
+      "voiceover": {
+        "text": "Three traps that cost marks every year. Trap one, writing that ectotherms simply cannot regulate their body temperature. That is wrong, ectotherms regulate temperature very effectively, just through behaviour rather than internal metabolic heat. The precise statement is that they cannot regulate through internal heat production, so they rely on behavioural thermoregulation. Trap two, swapping vasodilation and vasoconstriction, which is incredibly common. Vasodilation brings warm blood to the skin so heat is lost, it is cooling. Vasoconstriction keeps blood deep in the core so heat is conserved, it is warming. Trap three, thinking torpor means the animal has given up on homeostasis. Not at all. Torpor, like an echidna uses, is a controlled, reversible lowering of the set point to conserve energy. The animal is still maintaining temperature, just within a deliberately lowered range, it is a strategic modification of homeostasis, not a failure of it."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A kangaroo licks saliva onto its forearms on a hot day, where blood vessels run close to the skin. Classify this adaptation by category, and explain the mechanism that cools the kangaroo.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The kangaroo is choosing to perform the action, so it is a behavioural adaptation.",
+        "Saliva on the thin forearm skin evaporates, and evaporation removes latent heat.",
+        "Blood vessels sit close to the surface there, so cooled blood returns to the core.",
+        "This is evaporative cooling delivered behaviourally, a negative feedback response to rising temperature.",
+        "Answer: behavioural; evaporation of saliva removes heat and cools the blood ✓"
+      ],
+      "durationInFrames": 1965,
+      "caption": "Forearm licking is behavioural evaporative cooling.",
+      "voiceover": {
+        "text": "Quick check. On a hot day, a kangaroo licks saliva onto its forearms, where blood vessels run close to the skin. Classify this adaptation by category, and explain the mechanism that cools the animal. Pause and reason it through. Right, let's check it. First the category, the kangaroo is actively choosing to perform this action, so it is a behavioural adaptation. Now the mechanism. The saliva spread on that thin forearm skin evaporates, and evaporation removes latent heat from the surface. Because blood vessels sit close to the skin right there, the blood is cooled and then carries that lower temperature back to the core. So this is evaporative cooling, the same physics as human sweating, but delivered behaviourally. And of course it is a negative feedback response, triggered by rising temperature and acting to oppose it."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Endotherms generate heat internally; ectotherms rely on external heat and behaviour.",
+        "Both groups thermoregulate; ectotherms do it behaviourally, not by internal heat.",
+        "Adaptations are physiological, behavioural, or structural, differing in speed and cost.",
+        "Vasodilation loses heat (cooling); vasoconstriction conserves heat (warming).",
+        "The hypothalamus is the control centre, running temperature as a negative feedback loop."
+      ],
+      "finalPrompt": "Naming an adaptation? State its category, then the heat-flow mechanism behind it.",
+      "durationInFrames": 1665,
+      "caption": "Five takeaways: endo vs ecto, the three categories, vasodilation vs vasoconstriction.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, endotherms generate their heat internally by metabolism, while ectotherms rely on external heat and behaviour. Second, both groups genuinely thermoregulate, ectotherms just do it behaviourally rather than by producing internal heat. Third, every adaptation is physiological, behavioural, or structural, and they differ in speed, energy cost, and reversibility. Fourth, the pair to never swap, vasodilation loses heat and cools you, vasoconstriction conserves heat and warms you. And fifth, tying it back to Lesson One, the hypothalamus is the control centre running temperature as a negative feedback loop. Whenever you name an adaptation, state its category, then explain the heat-flow mechanism behind it. See you next lesson."
+      }
+    }
+  ]
+}

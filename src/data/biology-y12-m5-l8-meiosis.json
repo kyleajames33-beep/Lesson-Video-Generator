@@ -1,0 +1,261 @@
+{
+  "title": "Meiosis — Reduction Division and Variation",
+  "subtitle": "How gametes get half the chromosomes and all the variety",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 8",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "model the process of meiosis, including reduction division, crossing over and independent assortment, and explain its role in sexual reproduction and variation"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Why is it important for genetic material to be replicated exactly?",
+  "lessonIntent": "Students can model meiosis as a reduction division and explain how crossing over and independent assortment generate variation while keeping chromosome number stable across generations.",
+  "examSkill": "Explain why meiosis produces variable haploid gametes and why gametes cannot be made by mitosis.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, meiosis, the division that halves the chromosome number and creates variation. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Meiosis — Reduction Division and Variation (Year 12 Biology, Module 5, Lesson 8)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "When separation goes wrong",
+      "body": "An extra copy of chromosome 21 causes Down syndrome. In 95% of cases it traces to a single failed separation in meiosis I.",
+      "callout": "What is meiosis getting right almost every time?",
+      "image": "bioM5L8NondisjunctionKaryotype",
+      "durationInFrames": 1794,
+      "caption": "Non-disjunction in meiosis I, a failure of chromosome separation, can produce an extra chromosome 21.",
+      "voiceover": {
+        "text": "In nineteen fifty nine, researchers identified a third copy of chromosome twenty one in people with Down syndrome, the first time a specific chromosomal change was linked to a human condition. Down syndrome occurs in roughly one in eight hundred births, and in about ninety five percent of cases it traces back to a single event, non disjunction in meiosis one, where a pair of chromosomes fails to separate properly. That one detail tells you how precise meiosis normally is, and how much rides on it. So today we model meiosis, the division that does two remarkable things at once, it halves the chromosome number to make gametes, and it deliberately generates genetic variation. And we will see exactly why gametes have to be made this way, and not by mitosis."
+      }
+    },
+    {
+      "id": "concept-diploid-haploid",
+      "type": "concept",
+      "heading": "Diploid in, haploid out",
+      "body": "Meiosis halves a diploid cell's chromosome number to make haploid gametes, so fertilisation restores it.",
+      "bullets": [
+        {
+          "text": "Diploid means two chromosome sets, homologous pairs, one from each parent."
+        },
+        {
+          "text": "Haploid means one set, which is what gametes carry."
+        },
+        {
+          "text": "Meiosis reduces the number before fertilisation, so fusion restores it rather than doubling it."
+        }
+      ],
+      "secondary": "Without meiosis, gamete fusion would double the chromosome number every generation. Meiosis and fertilisation together keep it stable.",
+      "callout": "Halve before fusion, so fusion restores rather than doubles.",
+      "durationInFrames": 1818,
+      "caption": "Meiosis halves a diploid cell to haploid gametes so fertilisation restores the number.",
+      "voiceover": {
+        "text": "Let's start with the core problem meiosis solves. Body cells are diploid, which means they carry two complete sets of chromosomes, arranged as homologous pairs, one chromosome of each pair inherited from each parent. Gametes, though, are haploid, carrying just a single set. Why does that matter? Think about fertilisation. When two gametes fuse, their chromosomes add together. If gametes were diploid, fusion would double the chromosome number every single generation, which would quickly be catastrophic. So meiosis steps in beforehand and halves the number, taking a diploid cell down to haploid gametes. Then, when fertilisation happens, the two haploid sets combine to restore the normal diploid number, rather than doubling it. So meiosis and fertilisation work as a pair, one halves, the other restores, and the chromosome number stays stable across generations."
+      }
+    },
+    {
+      "id": "concept-two-divisions",
+      "type": "concept",
+      "heading": "Two divisions, four haploid cells",
+      "body": "Meiosis I separates homologous pairs; meiosis II separates sister chromatids. DNA is copied only once.",
+      "bullets": [
+        {
+          "text": "Meiosis I is the reduction division: homologous pairs separate, halving the number."
+        },
+        {
+          "text": "Meiosis II separates sister chromatids, much like mitosis."
+        },
+        {
+          "text": "The outcome is four haploid cells from one diploid starting cell."
+        }
+      ],
+      "secondary": "Crucial detail: DNA replicates once before meiosis, but two divisions follow. That is what produces four cells, each with half the chromosomes.",
+      "callout": "One replication, two divisions, four haploid cells.",
+      "durationInFrames": 1794,
+      "caption": "Meiosis I separates homologous pairs, meiosis II separates chromatids, giving four haploid cells.",
+      "voiceover": {
+        "text": "Meiosis runs as two divisions, one after the other, and the distinction between them is heavily tested. Meiosis one is the reduction division, this is the one that actually halves the chromosome number, because here the homologous pairs are separated, one chromosome of each pair going to each new cell. Then meiosis two follows, and it looks much like mitosis, because here the sister chromatids separate. Starting from one diploid cell, the two divisions together produce four haploid cells. And here is the detail you must get right. The DNA is replicated only once, before meiosis begins, but then two divisions follow. That single replication followed by two divisions is exactly what gives you four cells, each with only half the original chromosome number. One replication, two divisions, four haploid cells."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "d",
+            "label": "Diploid cell"
+          },
+          {
+            "id": "m1",
+            "label": "Meiosis I"
+          },
+          {
+            "id": "m2",
+            "label": "Meiosis II"
+          },
+          {
+            "id": "g",
+            "label": "4 haploid"
+          }
+        ],
+        "edges": [
+          {
+            "from": "d",
+            "to": "m1"
+          },
+          {
+            "from": "m1",
+            "to": "m2"
+          },
+          {
+            "from": "m2",
+            "to": "g"
+          }
+        ]
+      }
+    },
+    {
+      "id": "concept-variation",
+      "type": "concept",
+      "heading": "Crossing over and independent assortment",
+      "body": "Two processes in meiosis make every gamete genetically unique.",
+      "bullets": [
+        {
+          "text": "Crossing over: homologous chromosomes exchange segments, making new allele combinations."
+        },
+        {
+          "text": "Independent assortment: pairs line up randomly, so gametes get different chromosome mixes."
+        },
+        {
+          "text": "Both increase variation between the gametes produced."
+        }
+      ],
+      "secondary": "Vital trap: crossing over makes new COMBINATIONS of existing alleles, not brand-new alleles. New alleles arise only through mutation, which comes later in the module.",
+      "callout": "New combinations, not new alleles. Hold that line.",
+      "durationInFrames": 1986,
+      "caption": "Crossing over and independent assortment generate new allele combinations in each gamete.",
+      "voiceover": {
+        "text": "Now the part that makes meiosis special, because it does not just halve the number, it also generates variation, and it does so by two processes. The first is crossing over, which happens in meiosis one. Homologous chromosomes line up together and physically exchange corresponding segments, which produces new combinations of alleles along the chromosomes. The second is independent assortment. When the homologous pairs line up before separating, they do so randomly, so different mixes of maternal and paternal chromosomes end up in different gametes. Both processes increase the variation between the gametes that are produced. And here is the trap that catches so many students. Crossing over creates new combinations of existing alleles, it does not create brand new alleles. New alleles only arise through mutation, which is a different process later in the module. So say it carefully, new combinations, not new alleles."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Meiosis: division that halves chromosome number to produce haploid gametes."
+        },
+        {
+          "text": "Homologous chromosomes: a matching pair carrying the same genes, one from each parent."
+        },
+        {
+          "text": "Diploid: having two sets of chromosomes, one from each parent."
+        },
+        {
+          "text": "Haploid: having one set of chromosomes."
+        },
+        {
+          "text": "Crossing over: exchange of segments between homologous chromosomes in meiosis."
+        },
+        {
+          "text": "Independent assortment: random orientation of pairs, giving different chromosome mixes in gametes."
+        }
+      ],
+      "callout": "Reduction plus reshuffling, that is meiosis in two words.",
+      "durationInFrames": 1680,
+      "caption": "Meiosis, homologous chromosomes, diploid, haploid, crossing over and independent assortment.",
+      "voiceover": {
+        "text": "Let's lock down the vocabulary. Meiosis is the cell division that halves the chromosome number to produce haploid gametes for sexual reproduction. Homologous chromosomes are a matching pair that carry the same genes in the same positions, with one inherited from each parent. Diploid means having two sets of chromosomes, one from each parent. Haploid means having just one set. Crossing over is the exchange of corresponding segments between homologous chromosomes during meiosis. And independent assortment is the random orientation of those homologous pairs during meiosis, which produces different combinations of chromosomes in the gametes. Two of these terms, crossing over and independent assortment, are the variation makers, while diploid and haploid track the number. So meiosis in two words, reduction plus reshuffling."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Track the chromosome number",
+      "question": "A diploid human cell with 46 chromosomes undergoes meiosis. State how many cells form, the chromosome number in each, and where the number is halved.",
+      "coachNote": "Replication happens once before meiosis. Meiosis I halves the number; meiosis II keeps it.",
+      "steps": [
+        "DNA replicates once before meiosis, making each of the 46 chromosomes into two sister chromatids.",
+        "Meiosis I separates homologous pairs, so each of the two cells now has 23 chromosomes, the number is halved here.",
+        "Meiosis II separates sister chromatids, producing four cells in total.",
+        "Each of the four haploid gametes has 23 chromosomes, half the original 46.",
+        "Answer: four haploid cells, 23 chromosomes each, with the halving occurring at meiosis I."
+      ],
+      "durationInFrames": 2022,
+      "caption": "Meiosis gives four haploid cells of 23 chromosomes; the halving happens at meiosis I.",
+      "voiceover": {
+        "text": "Let's track the chromosome number through meiosis, and pay attention to where the halving happens. A diploid human cell with forty six chromosomes undergoes meiosis. State how many cells form, the chromosome number in each, and where the number is halved. Step one, the DNA replicates once before meiosis starts, so each of the forty six chromosomes becomes two sister chromatids. Step two, meiosis one separates the homologous pairs, so each of the two resulting cells now has twenty three chromosomes, and this is the key point, the number is halved here, at meiosis one, the reduction division. Step three, meiosis two then separates the sister chromatids, giving four cells in total. Step four, each of those four haploid gametes ends up with twenty three chromosomes, half the original forty six. So the answer, four haploid cells, twenty three chromosomes each, and the halving occurs at meiosis one."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two meiosis traps",
+      "body": "Trap 1: thinking meiosis produces four identical cells. It produces four genetically unique haploid cells, thanks to crossing over and independent assortment.",
+      "secondary": "Trap 2: thinking crossing over is an error. It is a normal, regulated process that exchanges segments between homologous chromosomes, generating variation and helping chromosomes align in meiosis I. And remember, it makes new combinations, not new alleles.",
+      "mistakeTag": "Where meiosis marks vanish",
+      "callout": "Four unique cells, and crossing over is a feature not a fault.",
+      "durationInFrames": 1998,
+      "caption": "Meiosis makes four unique cells; crossing over is a normal, regulated variation process.",
+      "voiceover": {
+        "text": "Two traps on meiosis. Trap one, thinking that meiosis produces four identical daughter cells, like mitosis does but twice. It does not. Meiosis produces four haploid cells that are genetically unique, different from each other and from the parent cell, precisely because of crossing over and independent assortment in meiosis one. So the whole point of meiosis is that the products are varied. Trap two, thinking that crossing over is some kind of error or accident. It is the opposite, it is a normal, regulated process that deliberately exchanges segments between homologous chromosomes, and it does two jobs, it generates genetic variation, and it actually helps the chromosomes align correctly during meiosis one. And do not forget the line from before, crossing over makes new combinations of existing alleles, not brand new alleles. So, four unique cells, and crossing over is a feature, not a fault."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A student claims, 'Mitosis would be better for making gametes because it is more accurate than meiosis.' Evaluate this using chromosome-number reasoning and the role of variation.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Mitosis keeps the chromosome number the same, so it would make diploid gametes.",
+        "Two diploid gametes fusing would double the chromosome number every generation, which is unsustainable.",
+        "Meiosis halves the number to haploid, so fertilisation restores diploid rather than doubling it.",
+        "Meiosis also generates variation through crossing over and independent assortment, which sexual reproduction needs.",
+        "Answer: the claim is wrong; only meiosis gives stable chromosome number across generations plus essential variation."
+      ],
+      "durationInFrames": 2310,
+      "caption": "Mitosis would double chromosome number and add no variation; only meiosis suits gametes.",
+      "voiceover": {
+        "text": "Quick check, and this is a classic band six evaluate question. A student claims that mitosis would be better for making gametes, because it is more accurate than meiosis. Evaluate that, using chromosome number reasoning and the role of variation. Pause and reason it through. Right, take it apart. First, mitosis keeps the chromosome number the same, so it would produce diploid gametes, with the full forty six. Now imagine two of those fusing at fertilisation. The number would double every generation, ninety two, then one hundred and eighty four, and so on, which is completely unsustainable. Meiosis avoids this by halving the number to haploid, so that fertilisation restores the diploid number rather than doubling it. On top of that, meiosis generates variation, through crossing over and independent assortment, and that variation is exactly what sexual reproduction depends on. So the verdict, the student is wrong. Only meiosis gives a stable chromosome number across generations, and only meiosis provides the variation, so accuracy alone is not the point."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Meiosis halves a diploid cell to haploid gametes, so fertilisation restores the number.",
+        "Meiosis I is the reduction division; meiosis II separates sister chromatids.",
+        "One replication, two divisions, four genetically unique haploid cells.",
+        "Crossing over and independent assortment make new combinations, not new alleles.",
+        "Meiosis plus fertilisation keep chromosome number stable while creating variation."
+      ],
+      "finalPrompt": "Meiosis question? Halving happens at meiosis I, and variation comes from crossing over and assortment.",
+      "durationInFrames": 1872,
+      "caption": "Five takeaways: reduction, two divisions, four unique cells, variation source, stability plus variety.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, meiosis halves a diploid cell to haploid gametes, so that fertilisation restores the number rather than doubling it. Second, meiosis one is the reduction division that separates homologous pairs, while meiosis two separates the sister chromatids. Third, one round of replication followed by two divisions gives four genetically unique haploid cells. Fourth, the variation comes from crossing over and independent assortment, and remember those make new combinations of existing alleles, not new alleles. And fifth, meiosis and fertilisation together keep the chromosome number stable across generations, while still creating the variation sexual reproduction needs. When you get a meiosis question, remember the halving happens at meiosis one, and the variation comes from crossing over and assortment. Next lesson, we look at how DNA is organised differently in prokaryotes and eukaryotes."
+      }
+    }
+  ]
+}

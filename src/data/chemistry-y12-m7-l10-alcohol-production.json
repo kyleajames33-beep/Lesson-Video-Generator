@@ -1,0 +1,227 @@
+{
+  "title": "Production of Alcohols: Hydration, Substitution, Fermentation",
+  "subtitle": "Three routes to ethanol, three sets of conditions",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 10",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "investigate the production of alcohols, including:",
+    "write equations, state conditions and predict products to represent the reactions of alcohols, including but not limited to (ACSCH128, ACSCH136):"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": ["CH12-14", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "How can alcohols be produced and what are their properties?",
+  "lessonIntent": "Students can write equations and conditions for producing alcohols by hydration, haloalkane substitution and fermentation, and compare the methods.",
+  "examSkill": "Use the reversible arrow for hydration, explain pressure and temperature with Le Chatelier, and pick substitution vs elimination from aqueous vs alcoholic hydroxide.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the three ways we produce alcohols, especially ethanol. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Production of Alcohols: Hydration, Substitution, Fermentation (Year 12 Chemistry, Module 7, Lesson 10)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two factories, one molecule",
+      "body": "Brazil makes ethanol from sugar cane in 35 degree vats. Europe makes it from ethene at 300 degrees and 65 atmospheres. Same molecule, opposite processes.",
+      "callout": "Why pick one route over the other?",
+      "durationInFrames": 690,
+      "caption": "Fermentation and hydration both make ethanol under very different conditions.",
+      "voiceover": {
+        "text": "OK, picture two factories on opposite sides of the world, both making the exact same molecule, ethanol. In Brazil, huge vats ferment sugar cane with yeast at about thirty-five degrees, gently, biologically. In Europe, steel reactors react ethene with steam at three hundred degrees and sixty-five atmospheres of pressure, over a phosphoric acid catalyst. Same product, completely opposite conditions. So why would you choose one route over the other? That's the heart of today's lesson. We'll cover three ways to make alcohols, hydration of alkenes, substitution of haloalkanes, and fermentation, each with its own equation and conditions, and then compare them on rate, purity, cost, and sustainability."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Three routes to an alcohol",
+      "bullets": [
+        {"text": "Alkene hydration: CH2=CH2 + H2O gives ethanol; reversible, an equilibrium."},
+        {"text": "Haloalkane substitution: R-X + NaOH(aq) gives R-OH + NaX."},
+        {"text": "Fermentation: glucose C6H12O6 gives 2 ethanol + 2 CO2, with yeast."},
+        {"text": "Reflux: a condenser returns vapour to the flask, preventing loss of reactants."}
+      ],
+      "callout": "Hydration is reversible; substitution and fermentation go essentially to completion.",
+      "durationInFrames": 1080,
+      "caption": "Three routes: hydration (equilibrium), substitution, fermentation; plus reflux.",
+      "voiceover": {
+        "text": "Three routes to an alcohol, and one piece of apparatus to know. Route one, alkene hydration, ethene plus water gives ethanol, and this one is reversible, it reaches an equilibrium rather than going to completion. Route two, haloalkane substitution, a haloalkane plus aqueous sodium hydroxide gives the alcohol plus the sodium halide salt. Route three, fermentation, glucose gives two ethanol plus two carbon dioxide, catalysed by yeast. And the apparatus, reflux, where a condenser sits above the flask and returns evaporating vapour back into the mixture, so you can heat the reaction strongly without losing your volatile reactants or products. Notice straight away that hydration is the only reversible one of the three, written with the equilibrium arrow, while substitution and fermentation effectively go to completion."
+      }
+    },
+    {
+      "id": "concept-hydration",
+      "type": "concept",
+      "heading": "Hydration as an equilibrium",
+      "body": "Industrial hydration is reversible, so the conditions are chosen using Le Chatelier's principle to push toward ethanol.",
+      "bullets": [
+        {"text": "Conditions: steam, H3PO4 catalyst, about 300 degrees, about 65 atmospheres."},
+        {"text": "High pressure favours the side with fewer gas moles, the ethanol side."},
+        {"text": "Single-pass conversion is low, so unreacted ethene is recycled."}
+      ],
+      "secondary": "300 degrees is a rate compromise, not a yield choice. The forward reaction is exothermic, so a lower temperature would give more ethanol but too slowly.",
+      "callout": "High pressure for yield; high temperature for rate, not yield.",
+      "durationInFrames": 1080,
+      "caption": "Hydration: high pressure shifts equilibrium to ethanol; 300C is a rate compromise.",
+      "voiceover": {
+        "text": "Let's look at hydration properly, as an equilibrium. Ethene plus water, reversible, with the conditions steam, a phosphoric acid catalyst, about three hundred degrees, and about sixty-five atmospheres of pressure. Now apply Le Chatelier. The left side has two moles of gas, ethene and steam, while the right side is effectively zero moles of gas because the ethanol condenses out. So increasing the pressure shifts the equilibrium toward the side with fewer gas moles, the ethanol side, raising the yield. That's why high pressure is used. The temperature is more subtle. The forward reaction is exothermic, so a lower temperature would actually give more ethanol, but it would be far too slow. Three hundred degrees is a rate compromise, fast enough to be practical, not the yield-maximising choice. And because conversion per pass is low, the unreacted ethene is separated and recycled, so overall yield stays high."
+      }
+    },
+    {
+      "id": "concept-substitution",
+      "type": "concept",
+      "heading": "Substitution: aqueous or alcoholic?",
+      "body": "A haloalkane heated with hydroxide can give an alcohol or an alkene. The solvent decides which.",
+      "image": "m7L10RefluxApparatus",
+      "bullets": [
+        {"text": "Aqueous NaOH: nucleophilic substitution, -OH replaces the halogen, gives an alcohol."},
+        {"text": "Alcoholic NaOH: elimination instead, gives an alkene."},
+        {"text": "R-X + NaOH(aq) -> R-OH + NaX, heated under reflux."}
+      ],
+      "secondary": "Halide reactivity is R-I > R-Br > R-Cl, since C-I is the weakest bond. The product is NaX, not separate Na and X.",
+      "callout": "Aqueous gives the alcohol; alcoholic gives the alkene.",
+      "durationInFrames": 1080,
+      "caption": "Aqueous NaOH -> alcohol (substitution); alcoholic NaOH -> alkene (elimination).",
+      "voiceover": {
+        "text": "The second route is substitution of a haloalkane, and there's a condition here that the HSC loves to test. When you heat a haloalkane with sodium hydroxide, the product depends entirely on the solvent. With aqueous sodium hydroxide, dissolved in water, you get nucleophilic substitution, the hydroxide replaces the halogen, and you get an alcohol. But with alcoholic sodium hydroxide, dissolved in ethanol, you get elimination instead, and the product is an alkene. So the equation is, haloalkane plus aqueous sodium hydroxide gives the alcohol plus the sodium halide, heated under reflux. Two details, the halide reactivity order is iodide fastest, then bromide, then chloride, because the carbon iodine bond is the weakest, and the salt product is sodium halide, written as one compound, not separate sodium and halide. Always check, aqueous or alcoholic?"
+      }
+    },
+    {
+      "id": "formula-fermentation",
+      "type": "concept",
+      "heading": "Fermentation: the biological route",
+      "body": "Yeast converts glucose to ethanol and carbon dioxide. Three conditions are required, all of them.",
+      "bullets": [
+        {"text": "C6H12O6 -> 2 C2H5OH + 2 CO2, catalysed by yeast (zymase)."},
+        {"text": "About 35 degrees: the enzyme's optimum; too hot denatures it."},
+        {"text": "Anaerobic: no oxygen, or the yeast respires to CO2 and water instead."}
+      ],
+      "secondary": "Fermentation stops near 15 percent ethanol, which is toxic to yeast, so spirits need fractional distillation. The most-omitted condition is anaerobic.",
+      "callout": "Yeast, about 35 degrees, and no oxygen, all three.",
+      "durationInFrames": 1080,
+      "caption": "C6H12O6 -> 2 C2H5OH + 2 CO2, with yeast, ~35C, anaerobic.",
+      "voiceover": {
+        "text": "The third route is fermentation, the oldest one humans have used on purpose. Yeast contains an enzyme, zymase, that converts glucose into ethanol and carbon dioxide. The balanced equation is glucose gives two ethanol plus two carbon dioxide, and that coefficient of two on both products is essential, an unbalanced version loses marks. Three conditions are required, all of them. First, about thirty-five degrees, the enzyme's optimum, because much hotter denatures it and much colder is too slow. Second, anaerobic conditions, no oxygen, because if oxygen is present the yeast respires aerobically and makes carbon dioxide and water instead of ethanol. And third, the yeast itself as the catalyst. Fermentation stalls at around fifteen percent ethanol, which becomes toxic to the yeast, so making spirits needs fractional distillation afterwards. The condition students forget most is anaerobic, so write it every time."
+      }
+    },
+    {
+      "id": "concept-comparison",
+      "type": "concept",
+      "heading": "Comparing the three methods",
+      "body": "Choosing a route is an engineering and environmental decision. Compare them directly, point by point.",
+      "bullets": [
+        {"text": "Rate: hydration is fast and continuous; fermentation is slow and batch."},
+        {"text": "Purity: hydration gives about 95 percent; fermentation only about 15 percent."},
+        {"text": "Sustainability: fermentation uses renewable biomass; hydration uses fossil ethene."}
+      ],
+      "secondary": "Write comparative statements, not separate descriptions. Marks reward fermentation is slower than hydration because..., with both advantages and limitations acknowledged.",
+      "callout": "Compare on rate, purity, and sustainability, side by side.",
+      "durationInFrames": 1050,
+      "caption": "Hydration: fast, pure, fossil. Fermentation: slow, dilute, renewable.",
+      "voiceover": {
+        "text": "Now let's compare the methods, because choosing one is really an engineering and environmental decision. Compare them point by point. On rate, hydration is fast and runs continuously, while fermentation is slow and done in batches over days. On purity, hydration gives high purity ethanol, around ninety-five percent, straight from the reactor, while fermentation gives only about fifteen percent, which must be distilled up. On sustainability, fermentation wins, it uses renewable plant biomass and is close to carbon neutral, since the plants absorbed carbon dioxide as they grew, whereas hydration relies on ethene from fossil fuels. The exam technique here is crucial, write comparative statements, not separate descriptions. Say fermentation is slower than hydration because, rather than describing each one in isolation. And acknowledge both advantages and limitations of each, because a one-sided answer caps your marks."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Three equations with conditions",
+      "question": "Write equations and conditions for ethanol by: (a) hydration  (b) substitution of bromoethane  (c) fermentation.",
+      "coachNote": "Use the reversible arrow only for hydration.",
+      "steps": [
+        "(a) CH2=CH2 + H2O reversible CH3CH2OH; H3PO4, ~300C, ~65 atm",
+        "(b) CH3CH2Br + NaOH(aq) -> CH3CH2OH + NaBr; reflux (aqueous)",
+        "(c) C6H12O6 -> 2C2H5OH + 2CO2; yeast, ~35C, anaerobic",
+        "Check fermentation balance: 6C, 12H, 6O each side",
+        "Answer: hydration (equilibrium), substitution, fermentation as above ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Hydration (H3PO4, 300C, 65 atm); substitution (reflux); fermentation (yeast, 35C).",
+      "voiceover": {
+        "text": "Let's write all three with their conditions. Part a, hydration. Ethene plus water, reversible, gives ethanol, with conditions phosphoric acid catalyst, about three hundred degrees, and about sixty-five atmospheres. The reversible arrow is essential here, using a single arrow tells the marker you've missed that it's an equilibrium. Part b, substitution of bromoethane. Bromoethane plus aqueous sodium hydroxide gives ethanol plus sodium bromide, heated under reflux. The word aqueous matters, that's what gives substitution rather than elimination. Part c, fermentation. Glucose gives two ethanol plus two carbon dioxide, with yeast, about thirty-five degrees, and anaerobic. Check the balance, six carbons, twelve hydrogens, and six oxygens on each side. So three routes, three equations, and the one detail to nail is the reversible arrow for hydration only."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Why high pressure for hydration",
+      "question": "Use Le Chatelier to explain why high pressure is used in the hydration of ethene, but high temperature is only a compromise.",
+      "coachNote": "Count gas moles, and recall the forward reaction is exothermic.",
+      "steps": [
+        "Equation: CH2=CH2 + H2O reversible CH3CH2OH",
+        "Left = 2 mol gas; right = effectively 0 mol gas (ethanol condenses)",
+        "High pressure shifts equilibrium to fewer gas moles -> more ethanol",
+        "Forward reaction is exothermic, so a lower T would raise yield but is too slow",
+        "Answer: pressure boosts yield; 300C is a rate-vs-yield compromise ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "High pressure raises yield; 300C trades some yield for an acceptable rate.",
+      "voiceover": {
+        "text": "Now the Le Chatelier reasoning. Explain why high pressure helps the hydration of ethene, but why three hundred degrees is only a compromise. The equation is ethene plus water, reversible, gives ethanol. Step one, count the gas moles. The left side has two moles of gas, ethene and steam, while the right side is effectively zero, because the ethanol condenses to a liquid. Step two, increasing pressure shifts the equilibrium toward the side with fewer gas moles, the ethanol side, so high pressure raises the yield. Step three, the temperature. The forward reaction is exothermic, so by Le Chatelier a lower temperature would push the equilibrium toward more ethanol, raising the yield. Step four, but a low temperature also makes the reaction far too slow to be practical. So three hundred degrees is a compromise, sacrificing some yield to get an acceptable rate. Pressure is chosen for yield, temperature for rate."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three production traps",
+      "body": "Trap 1: writing hydration with a single arrow. It is reversible, so use the equilibrium arrow.",
+      "secondary": "Trap 2: saying high temperature increases hydration yield. The reaction is exothermic, so high temperature lowers yield; 300 degrees is for rate. Trap 3: assuming any NaOH gives substitution. Only aqueous NaOH does; alcoholic NaOH gives elimination to an alkene.",
+      "mistakeTag": "Where alcohol-production marks vanish",
+      "callout": "Reversible arrow, temperature for rate, aqueous for substitution.",
+      "durationInFrames": 1230,
+      "caption": "Hydration is reversible; high T is for rate; only aqueous NaOH substitutes.",
+      "voiceover": {
+        "text": "Three traps. Trap one, writing the hydration of ethene with a single arrow. It's reversible, an equilibrium, so it needs the equilibrium arrow. A single arrow tells the marker you think it goes to completion, which misses the whole point of the conditions. Trap two, saying high temperature increases the hydration yield. The forward reaction is exothermic, so high temperature actually lowers the yield. Three hundred degrees is chosen for rate, not yield, and you have to keep rate effects and equilibrium effects separate. Trap three, assuming any sodium hydroxide gives substitution. Only aqueous sodium hydroxide gives substitution to an alcohol. Alcoholic sodium hydroxide, dissolved in ethanol, gives elimination instead, producing an alkene. So before you write the product, always check, is the hydroxide aqueous or alcoholic?"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "State the three conditions for fermentation and explain why anaerobic conditions are essential.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Condition 1: yeast (the enzyme zymase) as the biological catalyst",
+        "Condition 2: about 35 degrees, the enzyme's optimum temperature",
+        "Condition 3: anaerobic, with oxygen excluded",
+        "With oxygen, yeast respires aerobically -> CO2 + H2O, not ethanol",
+        "Answer: yeast, ~35C, anaerobic; oxygen would give CO2 and water instead ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "Fermentation needs yeast, ~35C, anaerobic; oxygen would give respiration instead.",
+      "voiceover": {
+        "text": "Quick check. State the three conditions for fermentation, and explain why the anaerobic condition is essential. Pause and work it through. Right. Condition one, yeast, which provides the enzyme zymase as the biological catalyst. Condition two, a temperature of about thirty-five degrees, which is the enzyme's optimum, hot enough to work quickly but not so hot it denatures. Condition three, anaerobic conditions, meaning oxygen is excluded. Now why does anaerobic matter so much? Because if oxygen is present, the yeast switches to aerobic respiration, breaking the glucose all the way down to carbon dioxide and water, and producing no ethanol at all. So excluding oxygen is what forces the yeast to ferment rather than respire. The three conditions are yeast, about thirty-five degrees, and anaerobic, and the anaerobic one is the condition most often left out."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Hydration: ethene + water, reversible, with H3PO4, ~300C, ~65 atm.",
+        "High pressure raises hydration yield; 300C is a rate compromise, not yield.",
+        "Substitution: aqueous NaOH gives an alcohol; alcoholic NaOH gives an alkene.",
+        "Fermentation: glucose -> 2 ethanol + 2 CO2, with yeast, ~35C, anaerobic.",
+        "Compare methods directly on rate, purity and sustainability."
+      ],
+      "finalPrompt": "Hydration uses the reversible arrow; check aqueous vs alcoholic for substitution.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: hydration equilibrium, pressure vs temperature, substitution, fermentation, comparison.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, hydration is ethene plus water, reversible, with a phosphoric acid catalyst, about three hundred degrees, and high pressure. Second, high pressure raises the hydration yield, while three hundred degrees is a rate compromise, because the forward reaction is exothermic. Third, substitution of a haloalkane gives an alcohol with aqueous sodium hydroxide, but an alkene with alcoholic sodium hydroxide. Fourth, fermentation turns glucose into two ethanol plus two carbon dioxide, with yeast, about thirty-five degrees, and anaerobic conditions. And fifth, compare the methods directly, point by point, on rate, purity, and sustainability, acknowledging the trade-offs. Next lesson we burn these alcohols, measure the energy released, and weigh up ethanol as a biofuel. See you next lesson."
+      }
+    }
+  ]
+}

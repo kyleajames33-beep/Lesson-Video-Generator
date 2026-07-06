@@ -1,0 +1,197 @@
+{
+  "title": "Separation Techniques — Advanced Methods",
+  "subtitle": "Distillation and chromatography",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "explore homogeneous mixtures and heterogeneous mixtures through practical investigations:"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-7"],
+  "inquiryQuestion": "How do the properties of substances help us to classify and separate them?",
+  "lessonIntent": "Students can choose between simple distillation, fractional distillation, and chromatography, and calculate Rf values.",
+  "examSkill": "Match technique to property: large BP gap → simple distillation; close BPs → fractional; phase affinity → chromatography (Rf).",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, distillation and chromatography. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Separation Techniques — Advanced Methods (Year 11 Chemistry, Module 1, Lesson 4)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same idea, two versions",
+      "body": "Separating water from salt is easy. Separating ethanol from water is harder. Both use boiling — but not the same way.",
+      "callout": "How close the boiling points are decides everything.",
+      "durationInFrames": 660,
+      "caption": "The boiling-point gap decides simple versus fractional distillation.",
+      "voiceover": {
+        "text": "OK, two jobs that sound similar but aren't. One chemist needs to get pure water out of salt water. Another needs to separate ethanol, which boils at seventy-eight degrees, from water, which boils at one hundred. Both jobs use boiling to separate, but one needs a much cleverer setup than the other. The deciding factor is how close the boiling points are. Today we cover distillation in both its forms, plus chromatography for the mixtures that can't be boiled apart at all, like the dyes in ink."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Distillation separates by boiling point",
+      "body": "Heat the mixture, vaporise the more volatile component, then cool the vapour back to liquid in a condenser.",
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "Simple distillation",
+        "afterLabel": "Fractional distillation",
+        "beforeContent": "Large BP gap (>25°C). One vaporise–condense cycle. e.g. salt water → pure water.",
+        "afterContent": "Close BPs (<25°C). A column gives many cycles. e.g. ethanol (78°C) / water (100°C)."
+      },
+      "bullets": [
+        {"text": "Simple distillation: large BP gap, or a non-volatile solute."},
+        {"text": "Fractional distillation: close boiling points, both volatile."},
+        {"text": "The fractionating column gives many vaporise–condense cycles."}
+      ],
+      "secondary": "A longer fractionating column means more cycles and a cleaner separation. That's why it works where simple distillation fails.",
+      "callout": "Big gap, go simple. Small gap, go fractional.",
+      "durationInFrames": 1140,
+      "caption": "Simple distillation for big BP gaps; fractional for close BPs.",
+      "voiceover": {
+        "text": "Distillation separates liquids by their boiling point. You heat the mixture, the more volatile component, the one with the lower boiling point, vaporises first, and that vapour travels into a condenser, where cooling water turns it back into liquid called the distillate. Simple distillation works when there's a large boiling point gap, more than about twenty-five degrees, or when one component doesn't boil at all, like the salt in salt water. Fractional distillation is for liquids with close boiling points that are both volatile. The difference is a fractionating column packed with beads, which creates many successive vaporise and condense cycles up its length. A longer column means more cycles and a cleaner separation, which is exactly why it works where simple distillation can't."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Chromatography and the Rf value",
+      "bullets": [
+        {"text": "Stationary phase: the paper or silica that holds components back."},
+        {"text": "Mobile phase: the solvent that rises and carries components up."},
+        {"text": "Rf = distance moved by component ÷ distance moved by solvent front."},
+        {"text": "Rf is always between 0 and 1, and is characteristic for each compound."}
+      ],
+      "callout": "Higher Rf means greater affinity for the mobile phase.",
+      "durationInFrames": 1020,
+      "caption": "Chromatography: stationary vs mobile phase; Rf = component ÷ solvent front.",
+      "voiceover": {
+        "text": "Now chromatography, which separates a mixture by how strongly each component sticks to a stationary phase versus how well it dissolves in a moving one. In paper chromatography, the stationary phase is the paper itself, and the mobile phase is a solvent that rises up by capillary action, carrying the components at different rates. Components that cling to the paper move slowly, those that prefer the solvent move fast. We measure how far each one travels with the R f value, which is the distance moved by the component divided by the distance moved by the solvent front. Because the component can never outrun the solvent, R f is always between zero and one, and each compound has its own characteristic value. A higher R f means a greater affinity for the moving solvent."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "Four techniques, one question",
+      "body": "Choosing always comes down to which physical property differs between the components.",
+      "bullets": [
+        {"text": "Particle size → filtration."},
+        {"text": "Solubility change with temperature → crystallisation."},
+        {"text": "Boiling point, large gap → simple distillation."},
+        {"text": "Boiling point, close → fractional; phase affinity → chromatography."}
+      ],
+      "secondary": "Chromatography also identifies components, by comparing each spot's Rf to known standards run in the same system.",
+      "callout": "Name the property that differs, then pick the technique.",
+      "durationInFrames": 990,
+      "caption": "Match technique to the differentiating property; chromatography also identifies.",
+      "voiceover": {
+        "text": "You now have four techniques, so let's make choosing simple. It always comes down to one question, which physical property differs between the components? If it's particle size, you filter. If it's how solubility changes with temperature, you crystallise. If it's boiling point with a big gap, you use simple distillation. If the boiling points are close, you use fractional distillation, and if the difference is how strongly things stick to a surface versus dissolve in a solvent, you use chromatography. And chromatography does something extra, it identifies components too, because you compare each spot's R f value to known standards run under the very same conditions."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Which distillation method?",
+      "question": "Scenario A: pure water from sea water. Scenario B: ethanol (BP 78°C) from an ethanol/water mixture. Choose and justify each.",
+      "coachNote": "Measure the boiling-point gap first.",
+      "steps": [
+        "A: salt doesn't boil — a huge effective BP gap",
+        "A: one vaporise–condense cycle suffices → simple distillation",
+        "B: ethanol 78°C and water 100°C — only a 22°C gap",
+        "B: both volatile, close BPs → fractional distillation with a column",
+        "Answer: A simple distillation, B fractional distillation ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Sea water → simple; ethanol/water (22°C gap) → fractional.",
+      "voiceover": {
+        "text": "Let's pick the right distillation for each scenario. Scenario A, pure water from sea water. The salt is non-volatile, it doesn't boil at any sensible temperature, so the effective boiling point gap is enormous. That means a single vaporise and condense cycle is enough, so simple distillation works. The water boils off and condenses pure, while the salt stays behind in the flask. Scenario B, ethanol from an ethanol water mixture. Ethanol boils at seventy-eight, water at one hundred, so the gap is only twenty-two degrees, and both are volatile liquids. That's too close for simple distillation, so you need fractional distillation with a fractionating column, which gives the many cycles required to enrich the vapour in ethanol. So scenario A is simple, scenario B is fractional, and the boiling point gap decided both."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Identify spots by Rf",
+      "question": "Solvent front travels 8.0 cm. Spot P moves 2.4 cm, Spot Q moves 6.4 cm. Standards: X has Rf 0.30, Y has Rf 0.80. Identify P and Q.",
+      "coachNote": "Rf = component distance ÷ solvent front distance.",
+      "steps": [
+        "Rf = distance moved by component ÷ distance moved by solvent front",
+        "Rf(P) = 2.4 ÷ 8.0 = 0.30",
+        "Rf(Q) = 6.4 ÷ 8.0 = 0.80",
+        "Match to standards: 0.30 = X, 0.80 = Y",
+        "Answer: P is compound X, Q is compound Y ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Rf(P) = 0.30 matches X; Rf(Q) = 0.80 matches Y.",
+      "voiceover": {
+        "text": "Now an R f calculation. The solvent front travels eight centimetres up the strip. Spot P moves two-point-four centimetres, and spot Q moves six-point-four. We also have reference standards, compound X with an R f of nought-point-three, and compound Y with an R f of nought-point-eight. Identify the spots. Step one, the formula is component distance divided by solvent front distance. Step two, R f of P is two-point-four over eight, which is nought-point-three exactly. Step three, R f of Q is six-point-four over eight, which is nought-point-eight. Step four, match those to the standards. Nought-point-three is compound X, and nought-point-eight is compound Y. So P is X and Q is Y. As long as the conditions are identical, matching R f values means matching compounds."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three advanced traps",
+      "body": "Trap 1: thinking simple distillation can separate any two liquids. It needs a large BP gap.",
+      "secondary": "Trap 2: inverting the Rf formula and getting a value above 1. The component can't move further than the solvent front. Trap 3: thinking a high Rf means strong attraction to the paper. High Rf means the opposite — strong attraction to the mobile phase.",
+      "mistakeTag": "Where advanced-separation marks vanish",
+      "callout": "Close BPs need a column; Rf < 1 always; high Rf = mobile-phase affinity.",
+      "durationInFrames": 1230,
+      "caption": "Simple distillation needs a big gap; Rf is always <1; high Rf = mobile affinity.",
+      "voiceover": {
+        "text": "Three traps. Trap one, assuming simple distillation can separate any two liquids. It can't. If the boiling points are close, the vapour is a mix of both, and you need a fractionating column. Trap two, inverting the R f formula. If you accidentally divide the solvent distance by the component distance, you get a value above one, which is impossible, because a spot can never travel further than the solvent front. R f is always less than one, so use that as your check. Trap three, thinking a high R f means the component is strongly attracted to the paper. It's the opposite. A high R f means it travelled far, so it has a strong affinity for the mobile phase and a weak one for the stationary phase."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Three amino acids run on paper. Solvent front moves 12.0 cm; A moves 3.6 cm, B moves 9.6 cm, C moves 7.2 cm. Find each Rf and which has the greatest affinity for the mobile phase.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Rf(A) = 3.6 ÷ 12.0 = 0.30",
+        "Rf(B) = 9.6 ÷ 12.0 = 0.80",
+        "Rf(C) = 7.2 ÷ 12.0 = 0.60",
+        "B moved furthest, so it has the highest Rf",
+        "Answer: B has the greatest affinity for the mobile phase ✓"
+      ],
+      "durationInFrames": 1170,
+      "caption": "Rf: A=0.30, B=0.80, C=0.60; B travels furthest → most mobile-phase affinity.",
+      "voiceover": {
+        "text": "Quick check. Three amino acids are run on paper. The solvent front moves twelve centimetres. A moves three-point-six, B moves nine-point-six, and C moves seven-point-two. Find each R f, and say which has the greatest affinity for the mobile phase. Pause and work it through. Right, let's check it. Step one, R f of A is three-point-six over twelve, which is nought-point-three. Step two, R f of B is nine-point-six over twelve, which is nought-point-eight. Step three, R f of C is seven-point-two over twelve, which is nought-point-six. Step four, B travelled the furthest, so it has the highest R f. So B has the greatest affinity for the mobile phase, because it spent more time moving with the solvent and less time clinging to the paper."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Distillation separates liquids by boiling point, condensing the vapour.",
+        "Simple distillation: large BP gap or a non-volatile solute.",
+        "Fractional distillation: close BPs — the column gives many cycles.",
+        "Chromatography separates by phase affinity; Rf = component ÷ solvent front.",
+        "Rf is always 0–1; a higher Rf means more mobile-phase affinity."
+      ],
+      "finalPrompt": "Always ask: which physical property differs?",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: distillation by BP, simple vs fractional, chromatography and Rf.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, distillation separates liquids by boiling point, vaporising the more volatile one and condensing it back. Second, use simple distillation when there's a large boiling point gap or a non-volatile solute. Third, use fractional distillation for close boiling points, where the column provides many vaporise and condense cycles. Fourth, chromatography separates by affinity for the stationary versus the mobile phase, and R f equals the component distance over the solvent front distance. And fifth, R f is always between zero and one, and a higher value means a greater affinity for the mobile phase. Next lesson we consolidate the whole inquiry, including gravimetric analysis. See you next lesson."
+      }
+    }
+  ]
+}

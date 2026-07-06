@@ -1,0 +1,217 @@
+{
+  "title": "Hess's Law",
+  "subtitle": "Adding equations to find ΔH",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Lesson 8",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Use Hess's Law to calculate the enthalpy change for a reaction from known enthalpy changes of related reactions"
+  ],
+  "lessonIntent": "Students can combine 2, 3 given thermochemical equations (reversing and scaling as needed) to find ΔH for a target reaction.",
+  "examSkill": "Recognise that ΔH is path-independent, manipulate equations (reverse → flip sign; scale → scale ΔH), and add them to match the target equation.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson `subjects/chemistry/year11/module4/lesson08.html`. Anchor: enthalpy is a state function, path-independent. Worked example: classic C(s) + ½O₂ → CO using C+O₂→CO₂ (−393.5) and CO+½O₂→CO₂ (−283.0); reverse second, add → −110.5 kJ/mol. Misconception (verbatim from site): cannot change chemical formulas, only reverse + scale. References thermochemical equation manipulation from L1.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Hess's Law. Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Hess's Law. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L8/title.ccb84536cf00.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "What if a reaction is too dangerous to measure?",
+      "body": "Some reactions are too explosive, too slow, or too rare to put in a calorimeter. Hess's Law solves this: if you can't measure ΔH directly, you build it from other reactions whose ΔH you already know.",
+      "bullets": [
+        {
+          "text": "Enthalpy is path-independent, start and end matter, not the route.",
+          "at": 5
+        },
+        {
+          "text": "So you can take an indirect path through known reactions.",
+          "at": 12
+        },
+        {
+          "text": "Add their ΔH values to get the target ΔH.",
+          "at": 18
+        },
+        {
+          "text": "Reverse equations? Flip the sign. Scale them? Scale ΔH.",
+          "at": 24
+        }
+      ],
+      "callout": "Hess's Law: enthalpy is path-independent.",
+      "image": "m4l8HookIndirectPath",
+      "durationInFrames": 1170,
+      "caption": "Hess's Law: ΔH depends only on start and end states, not the path.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 870,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the problem Hess solves. Some reactions are too explosive, too slow, or just too rare to put in a calorimeter. So how do you find their delta H? Hess's Law: enthalpy is path-independent. Only the start and end matter, not the route between them. So you take an indirect path through reactions whose delta H you already know, add their values up, and you've got the target. It's chemistry's elegant workaround.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L8/hook.1e17a975c751.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Two moves: reverse and scale",
+      "body": "You already saw in Lesson 1 that reversing an equation flips ΔH's sign, and scaling it scales ΔH. Hess's Law just uses both repeatedly to bend equations into the target.",
+      "bullets": [
+        {
+          "text": "Reverse an equation → flip the sign of ΔH.",
+          "at": 5
+        },
+        {
+          "text": "Multiply an equation by n → multiply ΔH by n.",
+          "at": 11
+        },
+        {
+          "text": "Add the manipulated equations; species on both sides cancel.",
+          "at": 18
+        },
+        {
+          "text": "The remaining equation should match the target.",
+          "at": 26
+        }
+      ],
+      "callout": "Reverse flips. Scale scales. Add and cancel.",
+      "durationInFrames": 1290,
+      "caption": "Two operations: reverse (flip sign) and scale (scale ΔH).",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1050,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "You already saw the two moves back in Lesson one. Reversing a thermochemical equation flips the sign of delta H. Scaling it multiplies delta H by the same number. Hess's Law is just applying those two moves to a few known equations until they add up to the target. Think of it like rearranging algebra — you're allowed to flip equations and multiply both sides, as long as you keep the bookkeeping right. But unlike normal algebra, the bookkeeping is on delta H.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L8/concept.ef97dac10722.mp3"
+      },
+      "diagram": {
+        "type": "hessCycle"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Finding ΔH for C(s) + ½O₂(g) → CO(g)",
+      "question": "Find ΔH for C(s) + ½O₂(g) → CO(g), given: (1) C(s) + O₂(g) → CO₂(g), ΔH = −393.5 kJ mol⁻¹; (2) CO(g) + ½O₂(g) → CO₂(g), ΔH = −283.0 kJ mol⁻¹.",
+      "coachNote": "We want CO as a product. Equation 2 has CO as a reactant, reverse it, then add.",
+      "unitCancel": {
+        "left": "kJ mol⁻¹",
+        "right": "kJ mol⁻¹",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: ΔH₁ = −393.5 kJ mol⁻¹; ΔH₂ = −283.0 kJ mol⁻¹.",
+        "Find: ΔH for C(s) + ½O₂(g) → CO(g).",
+        "We need CO on the product side. Reverse equation 2.",
+        "Reversed eq 2: CO₂(g) → CO(g) + ½O₂(g), ΔH = +283.0 kJ mol⁻¹.",
+        "Formula: ΔH(target) = ΔH₁ + ΔH(reversed 2).",
+        "Substitute: ΔH = −393.5 + 283.0.",
+        "Add equations: C + O₂ + CO₂ → CO₂ + CO + ½O₂. Cancel CO₂; net ½O₂ on left.",
+        "Answer: ΔH = 110.5 kJ mol⁻¹ released (i.e. −110.5 kJ mol⁻¹)."
+      ],
+      "durationInFrames": 1633,
+      "caption": "Reverse eq 2 (+283), add to eq 1 (−393.5) → ΔH = −110.5 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Classic Hess problem. Find delta H for carbon plus half O two giving CO. We have two equations. Equation one: carbon plus O two gives CO two, minus three-ninety-three-point-five. Equation two: CO plus half O two gives CO two, minus two-eighty-three. We want CO as a product, but in equation two CO is a reactant. So reverse equation two — that flips delta H to plus two-eighty-three, and rewrites it as CO two giving CO plus half O two. Now add equation one and the reversed equation two. The CO twos cancel. You're left with carbon plus half O two giving CO — the target. Delta H is minus three-ninety-three-point-five plus two-eighty-three — minus one hundred and ten-point-five kilojoules per mole.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L8/worked-example.ef3840d0cd67.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"You can change the chemical formulas to make it work\"",
+      "body": "Students often think: \"I'll just rewrite CO as CO₂, close enough.\" That's the wrong instinct, and it breaks the law. The correct rule: in Hess's Law you may only reverse equations and scale coefficients. You cannot change a chemical formula. If the target needs CO₂, you must find an equation that already has CO₂. The substances themselves are fixed.",
+      "callout": "Allowed: reverse + scale. Forbidden: changing formulas.",
+      "mistakeTag": "Formula-rewrite trap",
+      "durationInFrames": 1290,
+      "caption": "You can reverse and scale equations, never change formulas.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the trap, and it's a marks-killer. Students get stuck and think: I'll just rewrite CO as CO two — close enough. Wrong instinct. The correct rule: in Hess's Law you're only allowed two moves — reverse equations, and scale coefficients. You cannot change a chemical formula. If the target needs CO two, you must find an equation that already produces CO two; you can't modify a CO equation to fit. The substances themselves are fixed; only what you do with the equations is flexible.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L8/misconception.b61b6ecbb584.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "Given (1) N₂(g) + O₂(g) → 2NO(g), ΔH = +180 kJ mol⁻¹ and (2) 2NO(g) + O₂(g) → 2NO₂(g), ΔH = −114 kJ mol⁻¹, find ΔH for N₂(g) + 2O₂(g) → 2NO₂(g).",
+      "pausePrompt": "Pause: do you need to reverse or scale anything? Then add.",
+      "answerSteps": [
+        "Equation 1 already gives 2NO from N₂, keep it.",
+        "Equation 2 converts 2NO into 2NO₂, keep it.",
+        "Formula: ΔH(target) = ΔH₁ + ΔH₂ = +180 + (−114).",
+        "Add equations: N₂ + O₂ + 2NO + O₂ → 2NO + 2NO₂. 2NO cancels.",
+        "Net: N₂ + 2O₂ → 2NO₂. Answer: ΔH = 66 kJ mol⁻¹ absorbed (+66, endothermic)."
+      ],
+      "durationInFrames": 1380,
+      "caption": "ΔH = +180 + (−114) = +66 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 600,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Your turn. Given two equations involving nitrogen oxides, find delta H for nitrogen plus two O two giving two NO two. Pause and try. Look at the equations: equation one makes two NO from nitrogen — keep as is. Equation two turns that two NO into two NO two — also keep. So no reversing or scaling needed; just add. Delta H is plus one-eighty plus minus one-fourteen — plus sixty-six kilojoules per mole. When you add the equations, the two NOs cancel, and you're left with the target: N two plus two O two giving two NO two.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L8/quick-check.69700873ec49.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Check the target: which species do you need on each side? That tells you what to reverse.",
+      "points": [
+        "Hess's Law: ΔH is path-independent (enthalpy is a state function).",
+        "Reverse an equation → flip the sign of ΔH.",
+        "Scale an equation by n → scale ΔH by n.",
+        "Add the manipulated equations; common species on both sides cancel.",
+        "You can never change chemical formulas, only reverse and scale."
+      ],
+      "durationInFrames": 1290,
+      "caption": "Reverse, scale, add, one decision rule.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways. One: Hess's Law says delta H is path-independent — enthalpy is a state function. Two: reversing an equation flips the sign of delta H. Three: scaling an equation by n scales delta H by n. Four: add the manipulated equations and common species on both sides cancel. Five: you can never change a chemical formula — only reverse and scale. Decision rule: check the target first. Which species do you need on each side? That tells you what to reverse and what to keep.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L8/summary.ebc2af1337fe.mp3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "title": "Acid-Base Models: Arrhenius to Brønsted-Lowry",
+  "subtitle": "Why the definition of an acid had to keep changing",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6: Acid/Base Reactions",
+  "syllabusDotPoints": [
+    "explore the changes in definitions and models of an acid and a base over time to explain the limitations of each model, including but not limited to: Lavoisier, Davy, Arrhenius and Brønsted-Lowry"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "CH12-13",
+    "CH11/12-1",
+    "CH11/12-5",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What is an acid and what is a base?",
+  "lessonIntent": "Students can trace how acid-base definitions evolved, state each model's limitation, and identify Brønsted-Lowry acids, bases and conjugate pairs.",
+  "examSkill": "For any equation, identify the proton donor and acceptor and both conjugate pairs; state each historical model's definition AND its specific limitation.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, acid-base models, from Arrhenius to Brønsted-Lowry. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Acid-Base Models: Arrhenius to Brønsted-Lowry (Year 12 Chemistry, Module 6, Lesson 1)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The base with no hydroxide",
+      "body": "Dissolve ammonia in water and it turns litmus blue. Yet ammonia contains no OH⁻ at all.",
+      "callout": "If a base needs hydroxide, how is ammonia basic?",
+      "image": "ammoniaBreaksArrhenius",
+      "durationInFrames": 690,
+      "caption": "Ammonia is clearly basic but contains no OH⁻, breaking the Arrhenius model.",
+      "voiceover": {
+        "text": "OK, here's a puzzle that broke a famous theory. Ammonia is one of the most important industrial chemicals on the planet, the starting point for the fertilisers that feed about half the world. Dissolve it in water and the solution is unmistakably basic. Litmus turns blue, the pH climbs above seven, every test agrees. But here's the strange part. Ammonia contains no hydroxide ions whatsoever. According to the model most students meet first, a base has to produce hydroxide, so ammonia being basic should be impossible. Today we'll trace how chemists fixed that, and you'll learn the model that actually explains it."
+      }
+    },
+    {
+      "id": "concept-history",
+      "type": "concept",
+      "heading": "A history of broken models",
+      "body": "Each model was replaced by the one observation it could not explain, three times in just over a century.",
+      "bullets": [
+        {"text": "Lavoisier: acids contain oxygen. Broken by HCl, which has none."},
+        {"text": "Davy: acids contain hydrogen. But methane has hydrogen and isn't acidic."},
+        {"text": "Arrhenius: acid makes H⁺, base makes OH⁻, but only in water."}
+      ],
+      "secondary": "Arrhenius worked beautifully for lab acids and metal hydroxides, but it was locked to aqueous solution and couldn't classify ammonia.",
+      "callout": "A model that is incomplete is not the same as a model that is wrong.",
+      "durationInFrames": 1170,
+      "caption": "Lavoisier → Davy → Arrhenius, each broken by one anomaly it couldn't explain.",
+      "voiceover": {
+        "text": "Let's walk the history, because the exam loves it. Every model here was replaced not because chemists got bored, but because one observation appeared that it just could not explain. It starts with Lavoisier in the late seventeen hundreds, who said all acids contain oxygen. Reasonable, given the acids he knew. Then in eighteen-ten, Davy showed hydrochloric acid is strongly acidic and contains no oxygen at all, so Lavoisier's idea fell. Davy's fix was that acids must contain hydrogen instead. But that wasn't enough either, because methane is full of hydrogen and isn't acidic, and Davy still had no definition for bases. Then in eighteen eighty-four, Arrhenius gave the first proper quantitative model. An acid produces hydrogen ions in water, a base produces hydroxide ions in water. It worked brilliantly for common acids and alkalis, but it was trapped in water, and it could never call ammonia a base."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "lav", "label": "Lavoisier: acids contain O"},
+          {"id": "davy", "label": "Davy: acids contain H"},
+          {"id": "arr", "label": "Arrhenius: H⁺ / OH⁻ in water"},
+          {"id": "bl", "label": "Brønsted-Lowry: proton transfer"}
+        ],
+        "edges": [
+          {"from": "lav", "to": "davy"},
+          {"from": "davy", "to": "arr"},
+          {"from": "arr", "to": "bl"}
+        ]
+      }
+    },
+    {
+      "id": "concept-bronsted",
+      "type": "concept",
+      "heading": "Brønsted-Lowry: it's all proton transfer",
+      "body": "An acid is a proton donor and a base is a proton acceptor, in any reaction, in any medium.",
+      "bullets": [
+        {"text": "The acid hands an H⁺ across; the base receives it."},
+        {"text": "Roles depend on the reaction, not the substance in isolation."},
+        {"text": "Ammonia is a base because it accepts H⁺ from water, leaving OH⁻ behind."}
+      ],
+      "secondary": "Water is amphiprotic: with HCl it accepts a proton and acts as a base; with ammonia it donates a proton and acts as an acid.",
+      "callout": "The OH⁻ in ammonia solution comes from the water, not from the ammonia.",
+      "durationInFrames": 1200,
+      "caption": "Brønsted-Lowry: acid donates a proton, base accepts a proton, in any medium.",
+      "voiceover": {
+        "text": "In nineteen twenty-three, Brønsted in Copenhagen and Lowry in London published the same fix on the same idea, independently, without ever contacting each other. Their model defines an acid as a proton donor and a base as a proton acceptor, in any reaction, in any medium. So picture what physically happens, a single hydrogen nucleus detaches from one species and bonds to another. Watch how this rescues ammonia. When ammonia dissolves, water donates a proton to it, so here water is the acid and ammonia is the base. The hydroxide you measure is simply what the water molecule became after giving its proton away. Ammonia is basic not because it holds hydroxide, but because it accepts a proton. And notice water can swing both ways, donating to ammonia, accepting from hydrochloric acid. We call that amphiprotic."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Brønsted-Lowry acid: a proton, that is H⁺, donor."},
+        {"text": "Brønsted-Lowry base: a proton acceptor."},
+        {"text": "Conjugate pair: two species differing by exactly one H⁺, on opposite sides."},
+        {"text": "Amphiprotic: a species that can both donate and accept a proton, like water."}
+      ],
+      "callout": "Conjugate base equals the acid minus one H⁺; conjugate acid equals the base plus one H⁺.",
+      "durationInFrames": 1020,
+      "caption": "Brønsted-Lowry acid and base, conjugate pair, amphiprotic.",
+      "voiceover": {
+        "text": "Let's lock in the vocabulary, because the marks live here. A Brønsted-Lowry acid is a proton donor, meaning it gives away an H⁺. A Brønsted-Lowry base is a proton acceptor, it takes one. A conjugate acid-base pair is two species that differ by exactly one proton and sit on opposite sides of the equation. To find a conjugate base, take the acid and strip one H⁺, which adds one negative charge. To find a conjugate acid, take the base and add one H⁺. And amphiprotic describes a species like water that can act as either an acid or a base, depending on its partner. Four words, and they carry this entire lesson."
+      }
+    },
+    {
+      "id": "concept-conjugate",
+      "type": "concept",
+      "heading": "Reading conjugate pairs off an equation",
+      "body": "When the acid donates, it becomes its conjugate base. When the base accepts, it becomes its conjugate acid.",
+      "bullets": [
+        {"text": "In CH₃COOH + H₂O ⇌ H₃O⁺ + CH₃COO⁻, pair one is CH₃COOH and CH₃COO⁻."},
+        {"text": "Pair two is H₂O and H₃O⁺. Each differs by one H⁺."},
+        {"text": "A strong acid has a very weak conjugate base, and vice versa."}
+      ],
+      "secondary": "The conjugate base of H₂SO₄ is HSO₄⁻, not SO₄²⁻. You only ever remove one proton at a time.",
+      "callout": "Pairs are always one species from the left and one from the right.",
+      "durationInFrames": 1110,
+      "caption": "Acid → conjugate base; base → conjugate acid; remove one proton at a time.",
+      "voiceover": {
+        "text": "Now let's read pairs straight off an equation. Take acetic acid reacting with water, giving hydronium and the acetate ion. When acetic acid donates its proton, it becomes acetate, so acetic acid and acetate are conjugate pair one, differing by one H⁺. When water accepts a proton, it becomes hydronium, so water and hydronium are pair two. Always one species from the left, one from the right, never two on the same side. There's also a lovely strength rule, a strong acid gives up its proton so eagerly that the leftover conjugate base barely wants it back, so a strong acid has a very weak conjugate base. One trap to flag now, the conjugate base of sulfuric acid is hydrogen sulfate, written H-S-O-four-minus, not the sulfate ion. You only remove one proton at a time."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: saying Arrhenius was wrong. He wasn't, his model is just limited to aqueous solutions with OH⁻ bases.",
+      "secondary": "Trap 2: explaining ammonia's basicity by claiming it contains OH⁻. It accepts a proton from water instead. Trap 3: in a Brønsted-Lowry equation, writing HCl gives H⁺ plus Cl⁻ and leaving out water, which must accept the proton to form H₃O⁺.",
+      "mistakeTag": "Where acid-base model marks slip",
+      "callout": "Limited isn't wrong; ammonia accepts a proton; show water in the equation.",
+      "durationInFrames": 1230,
+      "caption": "Arrhenius is limited not wrong; ammonia accepts H⁺; show water forming H₃O⁺.",
+      "voiceover": {
+        "text": "Three traps that cost real marks. Trap one, calling Arrhenius wrong or disproved. He wasn't. His model correctly describes every strong acid and base in water and still powers basic pH calculations. The right language is that it's limited to aqueous systems, or that it can't handle bases without hydroxide. Incomplete is not the same as incorrect. Trap two, explaining ammonia by saying it contains hydroxide. It doesn't. Say it accepts a proton from water, and the hydroxide is what the water leaves behind. Trap three, the notation one. In a Brønsted-Lowry answer, don't write hydrochloric acid splitting into H-plus and chloride on its own. That hides the proton transfer. Show water accepting the proton to make hydronium, so it reads HCl plus water gives hydronium plus chloride."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "In HCO₃⁻ + OH⁻ → CO₃²⁻ + H₂O, identify the Brønsted-Lowry acid and its conjugate base.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Find the species that loses a proton: HCO₃⁻ becomes CO₃²⁻",
+        "Losing one H⁺ means HCO₃⁻ is the proton donor, so it is the acid",
+        "Its conjugate base is what's left after donating: CO₃²⁻",
+        "Check OH⁻ + H⁺ → H₂O, so OH⁻ is the base and H₂O its conjugate acid",
+        "Answer: acid = HCO₃⁻, conjugate base = CO₃²⁻ ✓"
+      ],
+      "durationInFrames": 1080,
+      "caption": "HCO₃⁻ donates a proton, so it is the acid; CO₃²⁻ is its conjugate base.",
+      "voiceover": {
+        "text": "Quick check. In the reaction hydrogen carbonate plus hydroxide gives carbonate plus water, identify the Brønsted-Lowry acid and its conjugate base. Pause and work it through. Right, let's check it. Look for the species that loses a proton. Hydrogen carbonate becomes carbonate, dropping one H⁺, so hydrogen carbonate is the proton donor, which makes it the acid. What's left after it donates is carbonate, so carbonate is its conjugate base. And as a sanity check, hydroxide gains a proton to become water, so hydroxide is the base here and water is its conjugate acid. So the acid is hydrogen carbonate, and the conjugate base is carbonate. Notice the very same hydrogen carbonate ion acted as a base back when it took a proton from water. Role depends on the reaction."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Acid-base models evolved: Lavoisier, Davy, Arrhenius, then Brønsted-Lowry.",
+        "Each older model was broken by one case it couldn't explain.",
+        "Brønsted-Lowry: acid donates a proton, base accepts one, in any medium.",
+        "Conjugate pairs differ by exactly one H⁺, on opposite sides.",
+        "State a model's definition AND its limitation for full marks."
+      ],
+      "finalPrompt": "Asked to evaluate a model? Give its definition and its specific limitation.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: model history, the anomalies, proton transfer, conjugate pairs, definition plus limitation.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, acid-base theory evolved through four stages, Lavoisier, Davy, Arrhenius, and finally Brønsted-Lowry. Second, each older model fell to a single anomaly it couldn't explain, like hydrochloric acid having no oxygen, or ammonia having no hydroxide. Third, the Brønsted-Lowry model defines an acid as a proton donor and a base as a proton acceptor, working in any medium, even gas phase. Fourth, conjugate pairs differ by exactly one proton and always sit on opposite sides of the equation. And fifth, when the exam asks you to evaluate a model, give both its definition and its specific limitation, because the limitation is worth just as many marks. Next lesson, we name these acids and bases and predict their reactions. See you there."
+      }
+    }
+  ]
+}

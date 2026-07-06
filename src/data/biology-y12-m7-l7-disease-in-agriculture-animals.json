@@ -1,0 +1,265 @@
+{
+  "title": "Disease in Agriculture — Animals",
+  "subtitle": "Why the dead animals are the smaller bill",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "assess the causes and effects of diseases on agricultural production, including animal diseases"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How are diseases transmitted?",
+  "lessonIntent": "Students can name major livestock diseases by pathogen type, separate direct from indirect economic effects, and explain why disease-free status drives biosecurity.",
+  "examSkill": "Assess the effects of an animal disease on production, distinguishing direct from indirect costs and justifying biosecurity.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, disease in animal agriculture. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Disease in Agriculture — Animals (Year 12 Biology, Module 7, Lesson 7)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "An 8 billion pound disease",
+      "body": "In 2001 foot-and-mouth disease hit UK livestock. 6 million animals were culled. The total cost dwarfed their value.",
+      "callout": "Why is biosecurity so relentless at the border?",
+      "image": "bioM7L7CattleBiosecurity",
+      "durationInFrames": 1615,
+      "caption": "The 2001 UK foot-and-mouth outbreak cost about 8 billion pounds, far more than the culled animals.",
+      "voiceover": {
+        "text": "In two thousand and one, foot-and-mouth disease spread through livestock across the United Kingdom. The response was staggering, over six million animals were culled, the countryside was closed, and export markets were suspended. The final bill exceeded eight billion pounds, far more than the value of the animals themselves. Now contrast that with Australia, which has been free of foot-and-mouth since eighteen seventy-two. A government estimate put the cost of a single outbreak here at fifty-two billion dollars over ten years. And our quarantine service intercepts more than a hundred thousand prohibited items at the border every year. So why is biosecurity so relentless? Because the dead animals, it turns out, are often the smallest part of the bill."
+      }
+    },
+    {
+      "id": "concept-effects",
+      "type": "concept",
+      "heading": "Direct versus indirect effects",
+      "body": "Animal disease hurts production two ways, and for an exporter like Australia, the indirect side dominates.",
+      "bullets": [
+        {
+          "text": "Direct: animal death, reduced productivity, and treatment or culling costs."
+        },
+        {
+          "text": "Indirect: export bans, movement restrictions, and lost consumer confidence."
+        },
+        {
+          "text": "For Australia, lost export markets usually exceed the cost of the animals."
+        }
+      ],
+      "secondary": "In the 2001 UK outbreak, the direct agricultural loss was about 2.7 billion pounds, but the total cost, including lost tourism and trade, reached around 8 billion.",
+      "callout": "Split every cost: direct, then indirect.",
+      "durationInFrames": 2115,
+      "caption": "Direct costs are animals and treatment; indirect costs are trade bans and lost markets.",
+      "voiceover": {
+        "text": "Here's the framework the exam wants, and it's all about splitting the cost in two. Animal disease reduces production through direct effects and indirect effects. The direct effects are the obvious ones, animals dying, sick animals producing less milk or gaining weight more slowly, and the costs of treatment and culling. But the indirect effects are usually bigger, especially for an exporter. These are export bans, where importing countries shut their doors the moment a notifiable disease is detected, movement restrictions that stop animals being sold or transported, lost consumer confidence even for unaffected produce, and the cost of the government's emergency response. And here's the key insight for Australia, the indirect effects, particularly lost export markets, almost always exceed the direct cost of the animals. The UK outbreak proves it, the direct agricultural loss was about two point seven billion pounds, but the total cost, with lost tourism and trade disruption, reached around eight billion."
+      },
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          {
+            "label": "Direct loss",
+            "value": 2.7,
+            "color": "amber"
+          },
+          {
+            "label": "Total cost",
+            "value": 8,
+            "color": "bio"
+          }
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The terms you need",
+      "bullets": [
+        {
+          "text": "Notifiable disease: one that must be reported to authorities by law."
+        },
+        {
+          "text": "Disease-free status: official recognition a country is free of a given pathogen."
+        },
+        {
+          "text": "Culling: the destruction of infected or at-risk animals to control spread."
+        },
+        {
+          "text": "Export market access: the right to sell into markets that require disease-free status."
+        }
+      ],
+      "callout": "Disease-free status is an economic asset, not just a label.",
+      "durationInFrames": 1695,
+      "caption": "Notifiable disease, disease-free status, culling, export market access.",
+      "voiceover": {
+        "text": "Four terms underpin this whole lesson. A notifiable disease is one that, by law, must be reported to authorities, because of its economic or public health significance, foot-and-mouth is the prime example. Disease-free status is the official recognition that a country is free of a particular pathogen, and this is genuinely an economic asset, not just a label. Culling is the destruction of infected and at-risk animals to control the spread of a disease, and it's one strategy among several. And export market access is the ability to sell agricultural products into overseas markets that require disease-free status, like Japan and South Korea. Hold onto that idea that disease-free status is an asset, because it explains everything about why Australia guards its borders so fiercely."
+      }
+    },
+    {
+      "id": "concept-diseases",
+      "type": "concept",
+      "heading": "Major livestock diseases",
+      "body": "The HSC expects you to name livestock diseases with their pathogen type and main impact.",
+      "bullets": [
+        {
+          "text": "Foot-and-mouth: a virus in cloven-hoofed animals, highly contagious."
+        },
+        {
+          "text": "Bovine tuberculosis: a bacterium in cattle, controlled by test and cull."
+        },
+        {
+          "text": "Avian influenza: a virus in poultry, with near 100 percent mortality."
+        }
+      ],
+      "secondary": "Hydatid disease is caused by a tapeworm, and bovine viral diarrhoea by a Pestivirus. The pathogen type shapes whether you vaccinate, test and cull, or simply cull.",
+      "callout": "Name it, then state its type and impact.",
+      "durationInFrames": 1995,
+      "caption": "Foot-and-mouth, bovine TB, avian influenza, hydatid, and BVD span all pathogen types.",
+      "voiceover": {
+        "text": "The exam wants you to name livestock diseases, with their pathogen type and main impact, so let's run the key ones. Foot-and-mouth disease is caused by a virus, it affects all cloven-hoofed animals like cattle, pigs, and sheep, and it's extremely contagious, spreading by contact, aerosol, and contaminated vehicles, and the biggest threat is the export ban, not the animals. Bovine tuberculosis is caused by a bacterium, it affects cattle and deer, and it's controlled by test-and-cull programs. Avian influenza is a virus of poultry, and the highly pathogenic strains cause near one hundred percent mortality in a flock. Two more worth knowing, hydatid disease is caused by a tapeworm, a macroorganism, forming cysts in the organs of sheep and cattle, and bovine viral diarrhoea is caused by a Pestivirus. And notice, the pathogen type shapes the response, whether you vaccinate, test and cull, or simply cull."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Disease",
+          "Pathogen",
+          "Control"
+        ],
+        "rows": [
+          [
+            "Foot-and-mouth",
+            "Virus",
+            "Quarantine, culling"
+          ],
+          [
+            "Bovine TB",
+            "Bacterium",
+            "Test and cull"
+          ],
+          [
+            "Avian influenza",
+            "Virus",
+            "Culling, trade bans"
+          ],
+          [
+            "Hydatid",
+            "Tapeworm",
+            "Break dog-sheep cycle"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-biosecurity",
+      "type": "concept",
+      "heading": "Disease-free status as an asset",
+      "body": "Australia's freedom from key diseases is a competitive advantage that commands market premiums.",
+      "bullets": [
+        {
+          "text": "Disease-free status lets Australian produce command higher prices in premium markets."
+        },
+        {
+          "text": "Maintaining it needs surveillance, border biosecurity, and rapid response."
+        },
+        {
+          "text": "Geography alone is not enough; active biosecurity does the real work."
+        }
+      ],
+      "secondary": "Livestock traceability, the National Livestock Identification System, lets authorities trace and contain an outbreak fast, protecting that disease-free status.",
+      "callout": "Prevention is exponentially cheaper than eradication.",
+      "durationInFrames": 2170,
+      "caption": "Disease-free status is a market advantage maintained by active biosecurity, not geography.",
+      "voiceover": {
+        "text": "Let's pull the economics together around one idea, disease-free status as an asset. Australia's freedom from diseases like foot-and-mouth and mad cow disease is a genuine competitive advantage, because it lets our produce command price premiums in demanding markets like Japan, South Korea, and China. Australian beef often sells for more precisely because of its disease status. But that status doesn't maintain itself. It requires constant surveillance, strict biosecurity at the borders, rapid response capability, and extensive livestock identification and movement controls. And here's a misconception worth killing now, geography alone is not enough. Yes, being an island gives a passive barrier, but foot-and-mouth can be introduced through contaminated meat carried by a traveller, and the virus can even drift several kilometres in aerosol form. So the protection comes from active biosecurity, and tools like the National Livestock Identification System, which lets authorities trace and contain an outbreak fast. The whole logic is that prevention is exponentially cheaper than eradication."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Assess an FMD outbreak",
+      "question": "A single case of foot-and-mouth disease is detected in Australian cattle. Assess the likely economic effects, distinguishing direct from indirect, and explain why the indirect effects dominate.",
+      "coachNote": "List direct costs, then indirect, then weigh them for an export economy.",
+      "steps": [
+        "Direct effects: culling infected and at-risk animals, plus disposal, decontamination, and lost productivity.",
+        "Indirect effects: immediate export bans, movement restrictions on all livestock, and lost consumer confidence.",
+        "For Australia, exports are a huge share of livestock value, so losing market access dwarfs the animal losses.",
+        "Disease-free status, an economic asset, is lost the moment FMD is confirmed, removing premium pricing.",
+        "Conclusion: indirect effects dominate because lost export access far exceeds the cost of the culled animals."
+      ],
+      "durationInFrames": 2280,
+      "caption": "Direct culling costs are dwarfed by indirect export bans for an export economy.",
+      "voiceover": {
+        "text": "Let's assess a foot-and-mouth outbreak, the way an extended-response question asks. A single case is detected in Australian cattle. Assess the likely economic effects, separate direct from indirect, and explain why the indirect ones dominate. Start with the direct effects. You'd cull the infected and at-risk animals, then pay for disposal, decontamination, and the lost productivity of those animals. Real costs, but contained. Now the indirect effects. The moment foot-and-mouth is confirmed, importing countries impose immediate export bans, movement restrictions lock down all livestock across the country, and consumer confidence drops even for produce that's perfectly safe. Here's the reasoning that earns the marks. For Australia, exports make up a huge share of livestock value, so losing market access dwarfs the cost of the animals. And the disease-free status itself, that economic asset we talked about, vanishes the instant foot-and-mouth is confirmed, taking premium pricing with it. So the conclusion is clear, the indirect effects dominate, because lost export access vastly exceeds the cost of the culled animals."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking the main cost of animal disease is the lost or treated animals. For an exporter, lost markets are almost always larger.",
+      "secondary": "Trap 2: thinking culling is always the best response. Culling suits highly contagious diseases with no vaccine, but vaccination, test-and-remove, or managing infected animals can be better. The right strategy depends on the pathogen and the economics.",
+      "mistakeTag": "Where animal-disease marks vanish",
+      "callout": "Lost markets beat lost animals; culling isn't always right.",
+      "durationInFrames": 2060,
+      "caption": "Lost markets usually exceed animal losses; culling is not always the best response.",
+      "voiceover": {
+        "text": "Two traps to finish. Trap one, assuming the main economic damage from animal disease is the cost of the animals that die or get culled. For an export-dependent nation like Australia, that's almost never the biggest cost. The loss of export markets is. Remember the UK, where the direct loss was two point seven billion pounds, but the total cost topped eight billion once you added lost tourism and trade. And a single foot-and-mouth detection here would trigger export bans worth far more than the animals. Trap two, assuming culling is always the best response. It isn't. Culling suits highly contagious diseases with no vaccine, like foot-and-mouth, where you need to eliminate susceptible animals fast. But for other diseases, vaccination, like for Newcastle disease, test-and-remove, like for bovine TB, or carefully managing infected animals can be far more appropriate. The right strategy depends on the pathogen, the vaccine availability, and the economics."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Two countries get the same poultry disease. One is a major exporter, the other only sells domestically. Explain why the disease is likely to cost the exporter far more, even with identical animal losses.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Both countries face the same direct costs: animal deaths, culling, and treatment.",
+        "The exporter also faces large indirect costs that the domestic-only seller largely avoids.",
+        "Importing countries impose export bans, so the exporter loses market access immediately.",
+        "The exporter also loses its disease-free status, which removes premium pricing.",
+        "Answer: identical direct costs, but the exporter's indirect losses, especially lost exports, dominate."
+      ],
+      "durationInFrames": 2060,
+      "caption": "Same direct costs, but the exporter loses market access and disease-free status.",
+      "voiceover": {
+        "text": "Quick check. Two countries get the same poultry disease. One is a major exporter, the other only sells domestically. Explain why the disease is likely to cost the exporter far more, even with identical animal losses. Pause and reason it through. Okay, here's the logic. Both countries face the same direct costs, the animal deaths, the culling, and the treatment, those are identical by assumption. But the exporter faces a whole layer of indirect costs that the domestic-only seller largely avoids. The moment the disease is confirmed, importing countries impose export bans, so the exporter loses market access right away. And the exporter also loses its disease-free status, which strips away the premium pricing its produce used to command. The domestic seller has no export markets to lose in the first place. So the answer is, the direct costs are identical, but the exporter's indirect losses, especially lost exports, are what dominate."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Animal disease has direct effects, animals and treatment, and indirect effects, trade and markets.",
+        "For an exporter like Australia, indirect effects usually dominate.",
+        "Know key diseases by type: FMD and avian flu are viral, bovine TB bacterial, hydatid a tapeworm.",
+        "Disease-free status is an economic asset that commands market premiums.",
+        "Active biosecurity, not geography, maintains that status; prevention beats eradication."
+      ],
+      "finalPrompt": "Assessing animal disease? Split direct and indirect, then weigh exports.",
+      "durationInFrames": 1805,
+      "caption": "Five takeaways: direct vs indirect, exporter impact, diseases, status, biosecurity.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, animal disease has direct effects, the animals and their treatment, and indirect effects, the trade bans and lost markets. Second, for an export-dependent nation like Australia, the indirect effects usually dominate. Third, know the key diseases by pathogen type, foot-and-mouth and avian influenza are viral, bovine TB is bacterial, and hydatid disease is caused by a tapeworm. Fourth, disease-free status is a genuine economic asset that commands market premiums. And fifth, it's active biosecurity, not geography, that maintains that status, because prevention is far cheaper than eradication. Whenever you assess an animal disease, split the effects into direct and indirect, then weigh the impact on exports. Next lesson, we move inside the organism, to how plants defend themselves against pathogens. See you there."
+      }
+    }
+  ]
+}

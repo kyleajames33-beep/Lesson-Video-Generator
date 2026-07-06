@@ -1,0 +1,255 @@
+{
+  "title": "Enthalpy of Formation",
+  "subtitle": "Calculating ΔH from standard formation values",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Define standard enthalpy of formation, ΔH°f, and identify it as zero for elements in their standard state",
+    "Calculate the enthalpy change of a reaction using standard enthalpies of formation"
+  ],
+  "lessonIntent": "Students can use a table of standard enthalpies of formation to calculate ΔH for a reaction.",
+  "examSkill": "Apply ΔH = Σ ΔH°f(products) − Σ ΔH°f(reactants), remember that ΔH°f of an element in its standard state is zero, and scale by stoichiometric coefficients.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson `subjects/chemistry/year11/module4/lesson07.html`. Anchor: Apollo rocket propellant. Core: ΔH°f definition; elements in standard state = 0; ΔH = ΣΔH°f(products) − ΣΔH°f(reactants). Worked example: methane combustion CH4 + 2O2 → CO2 + 2H2O(l) using ΔH°f values; standard textbook answer ≈ −890.5 kJ/mol. Misconception: 'elements have a nonzero ΔH°f' (the definition makes elements in standard state exactly zero, used as the reference).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Enthalpy of Formation. Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Enthalpy of Formation. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L7/title.46525e56a1ea.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "How did NASA know its rocket fuel would work?",
+      "body": "The Apollo lunar module ran on a hydrazine-based propellant. NASA engineers had to predict the exact energy per kilogram of fuel, before ever firing it. They used tables of standard enthalpies of formation to calculate ΔH straight from a reference book.",
+      "bullets": [
+        {
+          "text": "Every compound has a ΔH°f, heat to form 1 mol from its elements.",
+          "at": 5
+        },
+        {
+          "text": "Tables of ΔH°f exist for thousands of substances.",
+          "at": 12
+        },
+        {
+          "text": "From them, any reaction's ΔH is just arithmetic.",
+          "at": 18
+        },
+        {
+          "text": "No experiment required.",
+          "at": 24
+        }
+      ],
+      "callout": "Formation enthalpies turn ΔH into a lookup-and-subtract calculation.",
+      "image": "m4l7HookApollo",
+      "durationInFrames": 1140,
+      "caption": "Formation enthalpies let engineers predict ΔH from a table.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 870,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's a problem NASA had to solve. The Apollo lunar module ran on hydrazine-based propellant, and engineers needed to know the exact energy per kilogram before they ever lit it — lives depended on it. They didn't run experiments for every reaction. They used tables of standard enthalpies of formation. With those, any reaction's delta H is just look-up-and-subtract — no calorimeter required.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L7/hook.84d3726cf685.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "What is ΔH°f?",
+      "body": "ΔH°f is the enthalpy change when 1 mole of a compound is formed from its elements in their standard states, at 25 °C and 1 atm.",
+      "bullets": [
+        {
+          "text": "ΔH°f = energy to make 1 mol of compound from its elements.",
+          "at": 5
+        },
+        {
+          "text": "Measured at standard conditions: 25 °C, 1 atm.",
+          "at": 12
+        },
+        {
+          "text": "Elements in their standard state have ΔH°f = 0 (by definition).",
+          "at": 19
+        },
+        {
+          "text": "So O₂(g), H₂(g), C(graphite) all have ΔH°f = 0.",
+          "at": 26
+        }
+      ],
+      "callout": "Elements in their standard state are the zero reference for enthalpy.",
+      "durationInFrames": 1410,
+      "caption": "ΔH°f is heat to form 1 mol from elements; elements themselves = 0.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1170,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the definition. Delta H of formation, written delta H zero f, is the enthalpy change when one mole of a compound is formed from its elements in their standard states — at twenty-five degrees and one atmosphere. Think of it like sea level on a map — we need a reference height to measure everything else from. But unlike sea level, we get to choose this one by definition: elements in their standard state are set to zero. So O two gas, H two gas, graphite — all zero. Every compound's value is its enthalpy relative to that reference.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L7/concept.37977f4397c9.mp3"
+      },
+      "diagram": {
+        "type": "energyProfile",
+        "exothermic": true,
+        "ea": 40,
+        "deltaH": -75
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "ΔH = Σ ΔH°f(products) − Σ ΔH°f(reactants)",
+      "body": "Once every species has a ΔH°f, the reaction's enthalpy is just products minus reactants, weighted by coefficients.",
+      "bullets": [
+        {
+          "text": "Add ΔH°f for every product, scaled by its coefficient.",
+          "at": 5
+        },
+        {
+          "text": "Add ΔH°f for every reactant, scaled by its coefficient.",
+          "at": 12
+        },
+        {
+          "text": "Subtract: products − reactants.",
+          "at": 19
+        },
+        {
+          "text": "Element terms vanish (they're zero).",
+          "at": 25
+        }
+      ],
+      "callout": "ΔH = Σ ΔH°f(products) − Σ ΔH°f(reactants).",
+      "durationInFrames": 1230,
+      "caption": "Sum products, sum reactants, subtract, coefficients matter.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 990,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "The master equation is simple. Delta H equals the sum of delta H of formation for every product, scaled by its coefficient, minus the sum of delta H of formation for every reactant, also scaled. Subtract: products minus reactants. The convenient part: any element in its standard state contributes zero, so those terms drop out. You only really sum the compounds.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L7/formula.631959dc0156.mp3"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Combustion of methane",
+      "question": "Calculate ΔH for CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l). Use: ΔH°f[CH₄] = −74.8, ΔH°f[O₂] = 0, ΔH°f[CO₂] = −393.5, ΔH°f[H₂O(l)] = −285.8 kJ mol⁻¹.",
+      "coachNote": "Scale each value by its coefficient. Products − reactants. O₂ drops out (= 0).",
+      "unitCancel": {
+        "left": "kJ mol⁻¹",
+        "right": "kJ mol⁻¹",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: ΔH°f values listed; CH₄ and O₂ on reactant side; CO₂ and H₂O on product side.",
+        "Find: ΔH for the reaction.",
+        "Σ ΔH°f(products): 1×(−393.5) + 2×(−285.8) = −393.5 − 571.6 = −965.1 kJ.",
+        "Σ ΔH°f(reactants): 1×(−74.8) + 2×(0) = −74.8 kJ.",
+        "Formula: ΔH = Σ ΔH°f(products) − Σ ΔH°f(reactants).",
+        "Substitute: ΔH = −965.1 − (−74.8) = −965.1 + 74.8.",
+        "Answer: ΔH = 890.3 kJ mol⁻¹ released (i.e. −890.3 kJ mol⁻¹, exothermic)."
+      ],
+      "durationInFrames": 1530,
+      "caption": "ΔH(methane combustion) = −965.1 − (−74.8) = −890.3 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Let's calculate delta H for methane combustion. Sum the products first, so one times minus three-ninety-three-point-five for CO two, plus two times minus two-eighty-five-point-eight for water, which gives minus nine hundred and sixty-five-point-one kilojoules. Now sum the reactants, one times minus seventy-four-point-eight for methane, plus two times zero for O two, so the O two drops out and the reactants total minus seventy-four-point-eight. Delta H is products minus reactants, minus nine-sixty-five-point-one minus negative seventy-four-point-eight, which comes out at minus eight hundred and ninety-point-three kilojoules per mole. That's the accepted value for the combustion of methane."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Every substance has a ΔH°f value\"",
+      "body": "Students often think: \"O₂ must have some small ΔH°f.\" That's the wrong instinct. The correct rule: any element in its standard state has ΔH°f exactly zero, by definition. We need a reference point, and elements are it. So O₂(g), H₂(g), N₂(g), and C(graphite) all contribute zero to any calculation. Use the wrong value (like quoting O₂ as anything other than 0) and your reactant sum is wrong.",
+      "callout": "Elements in their standard state: ΔH°f = 0. Always.",
+      "mistakeTag": "Element-nonzero-ΔH°f trap",
+      "durationInFrames": 1290,
+      "caption": "Elements in their standard state have ΔH°f = 0, they're the reference.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the trap that wastes calculation marks. Students think every substance must have some non-zero delta H of formation — surely O two has a small value? Wrong instinct. The correct rule: any element in its standard state has delta H of formation of exactly zero, by definition. We need a reference, and elements are it. So O two gas, H two gas, nitrogen, graphite — all zero. Use anything else for O two and your reactant sum is wrong, and your final delta H drifts away from the right answer.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L7/misconception.9eebb750535a.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "Calculate ΔH for 2H₂(g) + O₂(g) → 2H₂O(l) using ΔH°f[H₂] = 0, ΔH°f[O₂] = 0, ΔH°f[H₂O(l)] = −285.8 kJ mol⁻¹.",
+      "pausePrompt": "Pause: the reactant sum is the easy bit. Then scale H₂O by 2.",
+      "answerSteps": [
+        "Σ ΔH°f(reactants): 2(0) + 1(0) = 0 kJ.",
+        "Σ ΔH°f(products): 2 × (−285.8) = −571.6 kJ.",
+        "Formula: ΔH = Σ ΔH°f(products) − Σ ΔH°f(reactants).",
+        "Substitute: ΔH = −571.6 − 0.",
+        "Answer: ΔH = 571.6 kJ mol⁻¹ released (i.e. −571.6 kJ mol⁻¹)."
+      ],
+      "durationInFrames": 1290,
+      "caption": "ΔH(H₂ combustion) = 2(−285.8) − 0 = −571.6 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 540,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Your turn. Calculate delta H for two H two plus O two giving two H two O liquid. Both reactants are elements, so their formation enthalpies are zero — the entire reactant sum is zero. For the products, two times minus two-eighty-five-point-eight equals minus five-seventy-one-point-six. Delta H is products minus reactants — minus five-seventy-one-point-six minus zero — so the answer is minus five hundred and seventy-one-point-six kilojoules per mole.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L7/quick-check.99b81153a5d2.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Always check: are any reactants elements? Those contribute zero.",
+      "points": [
+        "ΔH°f is the enthalpy to form 1 mole of compound from elements in standard state.",
+        "Elements in their standard state have ΔH°f = 0 by definition.",
+        "ΔH = Σ ΔH°f(products) − Σ ΔH°f(reactants), scaled by coefficients.",
+        "Element terms vanish; you only really sum compound values.",
+        "This lets you predict ΔH for any reaction with no calorimeter at all."
+      ],
+      "durationInFrames": 1290,
+      "caption": "Standard reference, sum products, subtract reactants, one decision rule.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways. One: delta H of formation is the enthalpy to make one mole of compound from its elements in standard state. Two: elements in their standard state have delta H of formation of exactly zero, by definition. Three: delta H equals the sum of products minus the sum of reactants, each scaled by its coefficient. Four: element terms drop out, so you only really sum the compound values. Five: this lets you predict delta H for any reaction without a calorimeter. Decision rule: always check — are any reactants elements? Those contribute zero.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L7/summary.b967de6ab106.mp3"
+      }
+    }
+  ]
+}

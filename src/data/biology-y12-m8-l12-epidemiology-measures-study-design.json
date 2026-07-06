@@ -1,0 +1,336 @@
+{
+  "title": "Epidemiology — Incidence, Prevalence, Mortality and Study Design",
+  "subtitle": "How we measure disease and choose a study design",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "analyse patterns of non-infectious diseases in populations, including their incidence and prevalence (ACSBL114, ACSBL115)",
+    "investigate the treatment of non-infectious diseases and disorders by evaluating the methods used to identify risk factors and patterns of disease"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Why are epidemiological studies used?",
+  "lessonIntent": "Students can define and calculate incidence, prevalence and mortality, choose an appropriate study design, and judge whether epidemiological data supports a causal or merely associative conclusion.",
+  "examSkill": "Read an epidemiological data table, distinguish total counts from age-standardised rates, and evaluate whether the evidence supports causation rather than just correlation.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "lesson": "Lesson 12",
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today: measuring disease and reading study designs. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Epidemiology — Incidence, Prevalence, Mortality and Study Design, Part A (Year 12 Biology, Module 8, Lesson 12A)",
+      "voiceover": {
+        "text": "Epidemiology. Part A."
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Proving smoking kills, without an experiment",
+      "body": "Doll and Hill linked smoking to lung cancer with statistics alone. The tobacco industry called it just a correlation.",
+      "callout": "How do you prove cause when you can't run the experiment?",
+      "image": "bioM8L12EpidemiologyStudy",
+      "durationInFrames": 2029,
+      "caption": "Doll and Hill's British Doctors Study found a relative risk of 14.9 for lung cancer in heavy smokers.",
+      "voiceover": {
+        "text": "In 1950, Richard Doll and Austin Bradford Hill published a study linking smoking to lung cancer. Here was the problem. They had a powerful statistical association, but no proof of cause, and the tobacco industry pounced on exactly that, arguing it was only a correlation. So Doll and Hill did something clever. They started following forty thousand British doctors and recorded who smoked and who later died of what, year after year for decades. Heavy smokers turned out to have nearly fifteen times the lung cancer risk of non-smokers. To handle the causation question, Bradford Hill then laid out a set of criteria for moving from these two things are linked to one of them causes the other. That whole way of thinking is epidemiology, and by the end of today you'll be able to measure disease in a population and judge what the numbers actually prove."
+      }
+    },
+    {
+      "id": "concept-measures",
+      "type": "concept",
+      "heading": "Three ways to measure a disease",
+      "body": "Incidence, prevalence and mortality each answer a different question about how much disease is in a population.",
+      "bullets": [
+        {
+          "text": "Incidence: how many NEW cases appear per population per time period."
+        },
+        {
+          "text": "Prevalence: how many EXISTING cases there are at one point in time."
+        },
+        {
+          "text": "Mortality rate: how many deaths from the disease per population per year."
+        }
+      ],
+      "secondary": "A useful link: prevalence is roughly incidence multiplied by how long people live with the disease. So a chronic disease like Type 2 diabetes can have low incidence but high prevalence.",
+      "callout": "New cases, existing cases, deaths. Three different numbers.",
+      "durationInFrames": 2581,
+      "caption": "Incidence = new cases, prevalence = existing cases, mortality = deaths, each over a defined population.",
+      "voiceover": {
+        "text": "Before you can prove anything, you have to measure the disease correctly, and there are three measures that each answer a different question. The first is incidence. Incidence counts new cases appearing in a population over a set time, so it tells you how fast a disease is developing. For example, eighteen hundred new melanoma diagnoses in a population of ten million in one year gives an incidence of eighteen per hundred thousand per year. The second is prevalence, which counts all existing cases at one moment, both new and old, so it tells you how much disease is in the community right now. If one point three million of Australia's twenty six million people have Type 2 diabetes, that's a prevalence of about five percent. The third is the mortality rate, the deaths from the disease per population per year. And here's the link that ties them together, prevalence is roughly incidence times the average duration. So a chronic, lifelong disease like Type 2 diabetes builds up a high prevalence even when its incidence is modest, because people stay in the pool of cases for years."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Measure",
+          "Counts",
+          "Answers"
+        ],
+        "rows": [
+          [
+            "Incidence",
+            "New cases / time",
+            "How fast is it developing?"
+          ],
+          [
+            "Prevalence",
+            "All existing cases",
+            "How much exists now?"
+          ],
+          [
+            "Mortality",
+            "Deaths / time",
+            "How lethal is it?"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms run through every epidemiology question, so lock them in before we use them.",
+      "bullets": [
+        {
+          "text": "Epidemiology: the study of how disease is distributed in populations and what drives it."
+        },
+        {
+          "text": "Incidence: the number of new cases in a population over a defined time period."
+        },
+        {
+          "text": "Prevalence: the total proportion of a population with the disease at a point in time."
+        },
+        {
+          "text": "Confounding variable: a third factor linked to both the exposure and the outcome."
+        },
+        {
+          "text": "Age-standardised rate: a rate adjusted for age structure so populations can be compared fairly."
+        }
+      ],
+      "callout": "Incidence is new, prevalence is total, a confounder hides between them.",
+      "durationInFrames": 2029,
+      "caption": "Epidemiology, incidence, prevalence, confounding variable, age-standardised rate.",
+      "voiceover": {
+        "text": "Let's pin down five words you'll use all lesson. Epidemiology is the study of how disease is distributed across populations and what factors drive it. Incidence is the number of new cases in a population over a defined time period. Prevalence is the total proportion of a population that has the disease at a given point in time, counting both new and existing cases. A confounding variable is a third factor that is linked to both the exposure you're studying and the disease outcome, and it can fake a relationship that isn't really there. And an age-standardised rate is a rate that's been adjusted for the age structure of a population, so that two populations with different age profiles can be compared on a level playing field. Keep incidence and prevalence separate in your head, because almost every trap in this topic comes from blurring those two."
+      }
+    },
+    {
+      "id": "concept-study-designs",
+      "type": "concept",
+      "heading": "Four study designs",
+      "body": "Different questions need different designs, and each one trades off speed, cost and how strongly it can show cause.",
+      "bullets": [
+        {
+          "text": "Cohort: follow healthy people forward, compare exposed and unexposed over time."
+        },
+        {
+          "text": "Case-control: start with cases and controls, look back at past exposures."
+        },
+        {
+          "text": "Cross-sectional: a one-time snapshot, good for measuring prevalence."
+        },
+        {
+          "text": "Randomised controlled trial: randomly assign treatment or placebo, the gold standard."
+        }
+      ],
+      "secondary": "Randomisation is what makes the RCT so strong, because it spreads confounders evenly between the groups. But you can't ethically assign people to a harmful exposure, so disease-risk questions usually need observational designs instead.",
+      "callout": "Cohort looks forward, case-control looks back, the RCT randomises.",
+      "durationInFrames": 2636,
+      "caption": "Cohort, case-control, cross-sectional and RCT designs trade off cost, speed and strength of evidence.",
+      "voiceover": {
+        "text": "Now, how do you actually generate the data? There are four main study designs. A cohort study takes a group of disease-free people and follows them forward in time, comparing those exposed to something against those who aren't. Because the exposure is recorded before the disease appears, a cohort study can establish the order of events, which is exactly what the British Doctors Study did. A case-control study works backwards, it starts with people who already have the disease and a comparison group who don't, then looks back at their past exposures. That's efficient for rare diseases, but it leans on memory, so recall bias creeps in. A cross-sectional study is a snapshot, measuring exposure and disease at the same moment, which is great for prevalence but can't tell you which came first. And the randomised controlled trial randomly assigns people to a treatment or a placebo. Randomisation is the magic, because it spreads confounders evenly across the groups, so it's the gold standard for proving cause. The catch is ethics, you simply cannot assign people to smoke for twenty years, so for harmful exposures you're stuck with the observational designs."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Design",
+          "Strength",
+          "Main limitation"
+        ],
+        "rows": [
+          [
+            "Cohort",
+            "Shows exposure came first",
+            "Slow, costly"
+          ],
+          [
+            "Case-control",
+            "Efficient for rare disease",
+            "Recall bias"
+          ],
+          [
+            "Cross-sectional",
+            "Measures prevalence fast",
+            "Can't show order"
+          ],
+          [
+            "RCT",
+            "Controls confounders",
+            "Unethical for harms"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-confounding",
+      "type": "concept",
+      "heading": "Why correlation isn't causation",
+      "body": "A confounding variable links to both the exposure and the outcome, so it can manufacture an association that looks causal but isn't.",
+      "bullets": [
+        {
+          "text": "A confounder is tied to both the exposure being studied and the disease."
+        },
+        {
+          "text": "Classic case: coffee looked linked to lung cancer, but coffee drinkers also smoked."
+        },
+        {
+          "text": "Control confounders by matching, statistical adjustment, or randomisation."
+        }
+      ],
+      "secondary": "Bias matters too. Selection bias means the sample isn't representative, and recall bias means cases remember exposures differently from controls. To call something causal, you apply criteria like strength, consistency, a dose-response relationship and biological plausibility.",
+      "callout": "Find the hidden third factor before you believe the link.",
+      "durationInFrames": 2760,
+      "caption": "A confounder linked to both exposure and outcome can fake a causal link; control it before concluding cause.",
+      "voiceover": {
+        "text": "Here's the idea that the whole topic turns on. Two things can be correlated without one causing the other. The reason is the confounding variable, a third factor linked to both the exposure and the disease. The classic example, a study finds coffee drinking is associated with lung cancer, and the lazy conclusion is that coffee causes cancer. But back then, coffee drinkers were also far more likely to smoke. Smoking is the confounder, it's linked to coffee through the same social setting, and it genuinely causes lung cancer. Once you control for smoking, the coffee link basically vanishes. So how do you control confounders? You can match cases and controls on the factor, adjust for it statistically, or best of all randomise, which spreads it evenly by chance. And watch for bias too, selection bias when your sample isn't representative, and recall bias when people with the disease remember exposures more sharply than healthy controls. To actually claim cause, you look for a bundle of signs, a strong effect, the same result across many studies, a dose-response where more exposure means more disease, and a known biological mechanism. That bundle is how smoking was finally proven to cause cancer."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "coffee",
+            "label": "Coffee"
+          },
+          {
+            "id": "smoke",
+            "label": "Smoking"
+          },
+          {
+            "id": "cancer",
+            "label": "Lung cancer"
+          }
+        ],
+        "edges": [
+          {
+            "from": "coffee",
+            "to": "smoke"
+          },
+          {
+            "from": "smoke",
+            "to": "cancer"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Reading a data table",
+      "question": "Australian Type 2 diabetes data: in 2000, 640,000 cases in 19.2 million people; in 2022, 1,300,000 cases in 25.9 million. Crude prevalence rose 3.3% to 5.0%, but age-standardised prevalence went 4.1% to 4.2%. Is the diabetes epidemic genuinely worsening?",
+      "coachNote": "Separate total cases from rates, and crude rates from age-standardised rates, before you judge the trend.",
+      "steps": [
+        "Total cases roughly doubled, but the population also grew from 19.2 to 25.9 million, so raw counts overstate the trend.",
+        "Crude prevalence rose from 3.3% to 5.0%, yet this partly reflects an ageing population, since older people have higher diabetes rates.",
+        "Age-standardised prevalence barely moved, 4.1% to 4.2%, which removes the age effect.",
+        "So the underlying rate in comparable age groups is roughly stable; most of the rise is demographic change.",
+        "Answer: the apparent worsening is largely population growth and ageing, not a surging underlying rate ✓"
+      ],
+      "durationInFrames": 2595,
+      "caption": "Age-standardised prevalence (4.1% to 4.2%) shows the underlying T2D rate is roughly stable despite rising totals.",
+      "voiceover": {
+        "text": "Let's read a real-style data table, because this is exactly what the exam asks. Australian Type 2 diabetes data. In the year two thousand, six hundred and forty thousand cases in a population of nineteen point two million. By twenty twenty two, one point three million cases in twenty five point nine million people. Headlines screamed that the epidemic was exploding. So let's check it properly. First, yes, the total cases roughly doubled, but look at the population, it grew from nineteen to nearly twenty six million, so raw counts are inflated just by there being more people. Second, the crude prevalence rose from three point three to five percent, but that partly reflects an ageing population, because older people have higher diabetes rates. Third, here's the decisive number, the age-standardised prevalence, which strips out the age effect, barely moved, four point one to four point two percent. So the underlying rate in comparable age groups is essentially stable. The conclusion is that most of the apparent surge is population growth and ageing, not a worsening underlying disease rate. That's why age-standardised rates are non-negotiable for fair comparisons."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Calculating the measures",
+      "question": "In a population of 5 million, 450 new cases of bowel cancer are diagnosed in one year, 8,500 people are living with it, and 90 of those die during the year. Find (a) incidence per 100,000 per year, (b) prevalence as a percentage, (c) the case fatality rate.",
+      "coachNote": "Pick the right denominator for each measure: population for incidence and prevalence, existing cases for case fatality.",
+      "steps": [
+        "(a) Incidence = new cases ÷ population × 100,000 = 450 ÷ 5,000,000 × 100,000 = 9 per 100,000 per year.",
+        "(b) Prevalence = existing cases ÷ population × 100 = 8,500 ÷ 5,000,000 × 100 = 0.17%.",
+        "(c) Case fatality = deaths ÷ existing cases × 100 = 90 ÷ 8,500 × 100 = 1.06% per year.",
+        "Note the case fatality uses existing cases as the denominator, not the whole population.",
+        "Answer: (a) 9 per 100,000/yr, (b) 0.17%, (c) about 1.06% ✓"
+      ],
+      "durationInFrames": 2498,
+      "caption": "Incidence 9 per 100,000/yr, prevalence 0.17%, case fatality about 1.06% per year.",
+      "voiceover": {
+        "text": "Now let's actually crunch the numbers, because these calculations come up directly. A population of five million. In one year, four hundred and fifty new bowel cancer cases, eight and a half thousand people living with the disease, and ninety of those die during the year. Part a, the incidence. Incidence is new cases over the population times a hundred thousand, so four hundred and fifty divided by five million, times a hundred thousand, gives nine per hundred thousand per year. Part b, the prevalence. That's existing cases over the population times a hundred, so eight and a half thousand divided by five million, times a hundred, is zero point one seven percent. Part c, the case fatality rate, and watch the denominator here, because it trips people up. Case fatality is deaths divided by existing cases, not by the whole population. So ninety divided by eight and a half thousand, times a hundred, is about one point zero six percent. So roughly one in a hundred existing patients dies of the disease each year. Right measure, right denominator, every time."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: treating prevalence and incidence as the same thing. Incidence is new cases over time; prevalence is all existing cases at a moment.",
+      "secondary": "Trap 2: reading correlation as causation, when a confounder may explain the whole association. Trap 3: assuming a rising rate means the disease is genuinely getting more common, when population growth, ageing, or better screening can all lift the numbers. Always check whether a rate is crude or age-standardised.",
+      "mistakeTag": "Where epidemiology marks vanish",
+      "callout": "New is not total, linked is not caused, rising is not always real.",
+      "durationInFrames": 2512,
+      "caption": "Incidence is not prevalence; correlation is not causation; a rising count is not always a rising rate.",
+      "voiceover": {
+        "text": "Three traps that quietly cost marks every year. Trap one, the big one, treating prevalence and incidence as the same word. They're not. Incidence is the rate of new cases over time, prevalence is all existing cases at a moment. Watch what happens with effective treatment. Take H I V in wealthy countries, where antiretroviral therapy keeps people alive for decades. Prevalence rises, because more people are living with the disease, even while incidence, the new infection rate, is actually falling. Same disease, opposite trends, and you must say which measure you mean. Trap two, reading correlation as causation. A statistical link does not prove cause, because a confounder might explain the whole thing, so you need that bundle of causal criteria first. Trap three, assuming a rising rate means the disease is genuinely getting more common. Rates can climb just from population growth, from an ageing population, or from better screening picking up cases that were always there. So before you interpret any trend, ask whether the rate is crude or age-standardised. Nail those three and epidemiology questions become easy marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "In high-income countries, the prevalence of HIV has risen over the last two decades, yet the incidence of HIV has fallen. Explain how both can be true at the same time.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Incidence counts new infections per year, while prevalence counts everyone currently living with HIV.",
+        "Prevalence is roughly incidence multiplied by the average duration of the disease.",
+        "Antiretroviral therapy keeps people alive far longer, so the average duration rises sharply.",
+        "Even with fewer new infections each year, people stay in the existing-cases pool for much longer, so that pool grows.",
+        "Answer: falling incidence with longer survival raises duration, so prevalence climbs ✓"
+      ],
+      "durationInFrames": 2181,
+      "caption": "Longer survival raises duration, so prevalence rises even as incidence (new infections) falls.",
+      "voiceover": {
+        "text": "Quick check, and this one separates the students who really get incidence and prevalence. In high-income countries, the prevalence of H I V has risen over the last twenty years, yet the incidence of H I V has fallen. How can both be true at once? Pause and reason it through. Okay, let's build it. First, the two measures count different things. Incidence counts new infections each year, while prevalence counts everyone currently living with the disease. Second, recall the link, prevalence is roughly incidence times the average duration. Third, here's the key, antiretroviral therapy keeps people alive for decades, so the average duration of the disease shoots up. So even though fewer people are newly infected each year, the people already infected stay in the pool of existing cases far longer, and that pool keeps growing. Falling incidence, longer survival, rising prevalence, all perfectly consistent. That's exactly why you must always state which measure you're talking about."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Incidence is new cases over time; prevalence is all existing cases at a point; mortality is deaths over time.",
+        "Prevalence is roughly incidence times duration, so chronic disease builds high prevalence.",
+        "Cohort looks forward, case-control looks back, cross-sectional is a snapshot, the RCT randomises.",
+        "A confounder linked to both exposure and outcome can fake causation, so control it first.",
+        "Always check whether a rate is crude or age-standardised before judging a trend."
+      ],
+      "finalPrompt": "Given epidemiological data? Ask: is this a count or a rate, crude or age-standardised, correlation or proven cause?",
+      "durationInFrames": 2167,
+      "caption": "Five takeaways: the three measures, the duration link, the four designs, confounding, and crude vs standardised.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, incidence is new cases over time, prevalence is all existing cases at a point in time, and the mortality rate is deaths over time. Second, prevalence is roughly incidence times duration, which is why a chronic disease builds up a high prevalence. Third, the four study designs, a cohort looks forward, a case-control looks back, a cross-sectional study is a snapshot, and the randomised controlled trial randomises to control confounders. Fourth, a confounding variable is linked to both the exposure and the outcome, and it can fake causation, so you have to control it before you trust a link. And fifth, always check whether a rate is crude or age-standardised before you read anything into a trend. Whenever you're handed epidemiological data, just ask, is this a count or a rate, is it crude or standardised, and is this correlation or proven cause. See you next lesson."
+      }
+    }
+  ]
+}

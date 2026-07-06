@@ -1,0 +1,292 @@
+{
+  "title": "Enthalpy & Energy Profile Diagrams",
+  "subtitle": "Why reactions release or absorb heat",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Investigate enthalpy changes in reactions using calorimetry, and represent these using thermochemical equations and energy profile diagrams",
+    "Explain the enthalpy changes in a reaction in terms of breaking and reforming bonds, and classify reactions as exothermic or endothermic"
+  ],
+  "lessonIntent": "Students can classify a reaction as exothermic or endothermic from the sign of ΔH, read an energy profile diagram, and scale and reverse thermochemical equations.",
+  "examSkill": "Interpret the sign of ΔH against the system convention, label Ea and ΔH on an energy profile diagram, and manipulate thermochemical equations (scaling and reversing).",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson `subjects/chemistry/year11/module4/lesson01.html`. Anchor: hand warmers vs cold packs. Worked example: propane combustion thermochemical equation (verbatim from site), ΔH = -2220 kJ/mol, scale for 2 mol (4440 kJ), reverse (+2220). Misconception: 'exothermic has ΔH > 0' (sign refers to the SYSTEM). Energy profile diagrams previously seen in M3 L11 collision theory, reference, don't re-teach the diagram convention. Calc-heavy module: leans into worked example + formula.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Enthalpy and Energy Profile Diagrams, Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Enthalpy and Energy Profile Diagrams. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L1/title.1884b41e5597.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why does one pack heat up and the other go cold?",
+      "body": "A hand warmer and an instant cold pack look almost identical. Snap one and it warms your hands. Snap the other and it turns ice-cold. Same idea, a chemical change in a pouch, opposite result.",
+      "bullets": [
+        {
+          "text": "Hand warmer: releases heat, exothermic.",
+          "at": 5
+        },
+        {
+          "text": "Cold pack: absorbs heat, endothermic.",
+          "at": 11
+        },
+        {
+          "text": "The difference is the direction energy flows.",
+          "at": 18
+        },
+        {
+          "text": "Enthalpy, ΔH, is how we measure that.",
+          "at": 25
+        }
+      ],
+      "callout": "Every reaction either releases or absorbs energy.",
+      "image": "m4l1HookPacks",
+      "durationInFrames": 1350,
+      "caption": "Hand warmers release heat; cold packs absorb it. Enthalpy measures which.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Let's start with two things you'll find in any chemist or sports bag. A hand warmer and an instant cold pack — they look almost identical. Snap the hand warmer and it heats your hands for hours. Snap the cold pack and it turns ice-cold. Same idea — a chemical change inside a pouch — but the opposite result. One releases heat; we call that exothermic. The other absorbs heat from your hand; that's endothermic. The whole of Module four starts here: with the direction energy flows in a reaction, and how we measure it with enthalpy.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L1/hook.cd05f9ad0837.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Enthalpy and the sign of ΔH",
+      "body": "Enthalpy (H) is the heat energy stored in a substance. We never measure H directly, only the change, ΔH, between products and reactants.",
+      "bullets": [
+        {
+          "text": "ΔH = H(products) − H(reactants).",
+          "at": 5
+        },
+        {
+          "text": "Exothermic: energy released, products lower, ΔH is negative.",
+          "at": 12
+        },
+        {
+          "text": "Endothermic: energy absorbed, products higher, ΔH is positive.",
+          "at": 21
+        },
+        {
+          "text": "The sign always refers to the system, the reaction itself.",
+          "at": 29
+        }
+      ],
+      "callout": "Negative ΔH = exothermic. Positive ΔH = endothermic.",
+      "durationInFrames": 1800,
+      "caption": "ΔH is the enthalpy of products minus reactants. Its sign classifies the reaction.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1080,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "So here's the idea. Enthalpy, capital H, is the heat energy stored inside a substance. Think of it like the balance in a bank account — you never get to see the total, only the deposits and withdrawals. But unlike a bank balance, we genuinely can't read the starting amount at all. Only the change matters, and we call it delta H. Delta H equals the enthalpy of the products minus the enthalpy of the reactants. If the products end up lower in energy, the reaction released that energy — exothermic, delta H negative. If the products end up higher, the reaction soaked energy in — endothermic, delta H positive. And the thing students trip on: that sign always describes the system, the reaction itself — not the surroundings.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L1/concept.0e6f5fa82fe2.mp3"
+      },
+      "diagram": {
+        "type": "energyProfile",
+        "exothermic": true,
+        "ea": 50,
+        "deltaH": -100
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Reading an energy profile diagram",
+      "body": "You met energy profiles in Module 3 collision theory. Here we use the same diagram to read ΔH and activation energy for an enthalpy problem.",
+      "bullets": [
+        {
+          "text": "Reactants start on the left, products on the right.",
+          "at": 5
+        },
+        {
+          "text": "The peak is the transition state, the energy barrier.",
+          "at": 11
+        },
+        {
+          "text": "Activation energy (Ea): reactants up to the peak.",
+          "at": 18
+        },
+        {
+          "text": "ΔH: the gap between reactant and product levels.",
+          "at": 25
+        }
+      ],
+      "callout": "Ea is the climb to the peak. ΔH is the start-to-finish drop or rise.",
+      "durationInFrames": 1404,
+      "caption": "Reactants, transition state, products. Ea is the barrier; ΔH is the net change.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1020,
+        "diagram": 60
+      },
+      "voiceover": {
+        "text": "Now, you already met energy profile diagrams back in Module three, with collision theory — so you know the shape. Here we read the same diagram for enthalpy. Reactants sit on the left, products on the right. The hump in the middle is the transition state — the energy barrier the reaction has to climb. The height from the reactants up to that peak is the activation energy, Ea. And the gap between the reactant level and the product level — that's delta H. If the products sit lower than the reactants, like this one, delta H is negative and the reaction is exothermic.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L1/definition.3f2862153fc2.mp3"
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "Manipulating thermochemical equations",
+      "body": "A thermochemical equation writes ΔH next to the balanced equation. Two moves you must master: scaling and reversing.",
+      "bullets": [
+        {
+          "text": "ΔH is per mole of the equation as written.",
+          "at": 5
+        },
+        {
+          "text": "Double the equation → double ΔH.",
+          "at": 11
+        },
+        {
+          "text": "Reverse the equation → flip the sign of ΔH.",
+          "at": 18
+        },
+        {
+          "text": "Always quote ΔH with its unit: kJ mol⁻¹.",
+          "at": 25
+        }
+      ],
+      "callout": "Scale ΔH with the coefficients. Reverse flips its sign.",
+      "durationInFrames": 1170,
+      "caption": "ΔH scales with the equation and flips sign when the equation reverses.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the machinery you'll use constantly this module. A thermochemical equation just writes delta H next to the balanced equation. Two moves matter. First, delta H is quoted per mole of the equation exactly as it's written — so if you double every coefficient, you double delta H. Second, if you reverse the equation, you flip the sign of delta H. An exothermic forward reaction becomes endothermic in reverse, same magnitude. And always, always quote delta H with its unit — kilojoules per mole.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L1/formula.1931518e07fc.mp3"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Propane combustion",
+      "question": "The thermochemical equation for the combustion of propane is C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(l), ΔH = −2220 kJ mol⁻¹. (a) Is it exothermic or endothermic? (b) How much energy is released when 2.00 mol of propane burns? (c) Write the thermochemical equation for the reverse reaction.",
+      "coachNote": "Three moves: read the sign, scale ΔH by the moles, then reverse and flip the sign.",
+      "unitCancel": {
+        "left": "mol",
+        "right": "kJ mol⁻¹",
+        "result": "kJ"
+      },
+      "steps": [
+        "Known: ΔH = −2220 kJ mol⁻¹ for 1 mol propane.",
+        "Find: (a) classification, (b) energy for 2.00 mol, (c) reverse equation.",
+        "(a) ΔH is negative → exothermic. Energy is released.",
+        "Formula: energy = moles × ΔH per mole.",
+        "Substitute: energy = 2.00 × 2220 = 4440 kJ released.",
+        "(c) Reverse the equation and flip the sign of ΔH.",
+        "Answer = 4440 kJ released; reverse ΔH = +2220 kJ mol⁻¹ (exothermic forward)."
+      ],
+      "durationInFrames": 1560,
+      "caption": "Exothermic; 4440 kJ for 2 mol; reverse ΔH = +2220 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Let's work the classic propane example. The combustion of propane has a delta H of minus two-two-two-zero kilojoules per mole. Part a: is it exothermic or endothermic? The sign is negative, so it's exothermic — energy released. Part b: how much energy when two moles burn? Delta H is per mole, so scale it — two-point-zero-zero moles times twenty-two-twenty equals four thousand four hundred and forty kilojoules released. Notice moles times kilojoules-per-mole leaves kilojoules — the unit checks out. Part c: the reverse reaction. Flip the equation around, and flip the sign — delta H becomes positive twenty-two-twenty kilojoules per mole. The reverse of an exothermic reaction is endothermic.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L1/worked-example.c99239ffebe2.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Exothermic means ΔH is positive\"",
+      "body": "Students often think: \"It releases heat, so ΔH must be positive.\" That's the wrong instinct, it confuses the system with the surroundings. The correct rule: in an exothermic reaction the SYSTEM loses energy, so ΔH is negative. The surroundings warm up, but the sign always describes the system, not your hand feeling the heat.",
+      "callout": "Exothermic = system loses energy = ΔH negative. The sign is always about the system.",
+      "mistakeTag": "Sign-convention flip",
+      "durationInFrames": 1320,
+      "caption": "Exothermic ΔH is negative, the sign describes the system, not the surroundings.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the trap that costs marks every year. Students think: it releases heat, so delta H must be positive. Wrong instinct — and it comes from confusing the system with the surroundings. The actual rule: in an exothermic reaction, the system — the chemicals reacting — loses energy. So delta H is negative. Yes, your hand feels warmer, the surroundings gain that heat — but the sign convention always describes the system, never the surroundings. So whenever you see heat released, write delta H as negative.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L1/misconception.5087ebfebbb8.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "A reaction has a forward activation energy of 95 kJ mol⁻¹ and ΔH = −40 kJ mol⁻¹. Is it exothermic or endothermic, and what is the activation energy of the reverse reaction?",
+      "pausePrompt": "Pause: classify from the ΔH sign, then use the energy profile to get Ea reverse.",
+      "answerSteps": [
+        "ΔH = −40 kJ mol⁻¹ → negative → exothermic.",
+        "On the profile: products sit 40 kJ below reactants.",
+        "Ea reverse = climb from products back up to the same peak.",
+        "Ea reverse = Ea forward − ΔH = 95 − (−40).",
+        "Answer = exothermic; Ea reverse = 135 kJ mol⁻¹."
+      ],
+      "durationInFrames": 1560,
+      "caption": "Exothermic; Ea reverse = 95 − (−40) = 135 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 600,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Your turn. A reaction has a forward activation energy of ninety-five kilojoules per mole, and a delta H of minus forty. Is it exothermic or endothermic, and what's the activation energy of the reverse reaction? Pause now and try it. Delta H is negative, so it's exothermic — the products sit forty kilojoules below the reactants. For the reverse reaction, you start at the products and climb all the way back up to the same peak. So Ea reverse equals Ea forward minus delta H — ninety-five minus negative forty — which is one hundred and thirty-five kilojoules per mole. The reverse barrier is always bigger for an exothermic reaction.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L1/quick-check.46bd631f7a1b.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Check the sign of ΔH first: negative is exothermic, positive is endothermic.",
+      "points": [
+        "Enthalpy change ΔH = H(products) − H(reactants).",
+        "Exothermic: releases energy, products lower, ΔH negative.",
+        "Endothermic: absorbs energy, products higher, ΔH positive.",
+        "The sign always describes the system, not the surroundings.",
+        "Thermochemical equations: scale ΔH with coefficients, flip the sign when reversed."
+      ],
+      "durationInFrames": 1350,
+      "caption": "Sign convention, energy profiles, and equation manipulation, one decision rule.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five things to take away. One: enthalpy change, delta H, equals the enthalpy of products minus reactants. Two: exothermic reactions release energy — products lower, delta H negative. Three: endothermic reactions absorb energy — products higher, delta H positive. Four: that sign always describes the system, not the surroundings — the single biggest trap in this topic. Five: with thermochemical equations, scale delta H with the coefficients, and flip its sign when you reverse the equation. Decision rule for the exam: check the sign of delta H first. Negative is exothermic. Positive is endothermic.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L1/summary.4d0178c1d2d0.mp3"
+      }
+    }
+  ]
+}

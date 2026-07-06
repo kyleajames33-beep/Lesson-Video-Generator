@@ -1,0 +1,210 @@
+{
+  "title": "Hydrocarbon Structure & Bonding",
+  "subtitle": "Sigma and pi bonds, molecular shape, and the reactive double bond",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "analyse the shape of molecules formed between carbon atoms when a single, double or triple bond is formed between them",
+    "construct models, identify the functional group, and write structural and molecular formulae for homologous series of organic chemical compounds, up to C8 (ACSCH035)"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": ["CH12-14", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "How can hydrocarbons be classified based on their structure and reactivity?",
+  "lessonIntent": "Students can describe the shape and bond angle at single, double and triple bonded carbons, and explain why the pi bond makes alkenes and alkynes reactive.",
+  "examSkill": "State both shape and bond angle from the bond type, and explain reactivity by pointing to the exposed, weaker pi bond of a multiple bond.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the shapes and bonding of hydrocarbons, and the reactive double bond. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Hydrocarbon Structure & Bonding (Year 12 Chemistry, Module 7, Lesson 4)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One bond changes everything",
+      "body": "Ethene reacts in seconds with bromine; ethane barely reacts at all. The only difference is one extra bond between two carbons.",
+      "callout": "Why is a double bond so much more reactive?",
+      "durationInFrames": 690,
+      "caption": "Ethene reacts readily where ethane resists; the difference is the double bond.",
+      "voiceover": {
+        "text": "OK, here's the contrast that this lesson explains. Ethene, with a carbon to carbon double bond, reacts in seconds with bromine, decolourising it on contact. Ethane, which is almost identical but has only single bonds, barely reacts with bromine at all under normal conditions. The molecules are nearly twins. The only real difference is one extra bond sitting between two of the carbons. So why does that one extra bond make such a dramatic difference to reactivity? The answer is in how that double bond is built, and once you see it, you'll understand why alkenes add, alkanes substitute, and why a whole industry rests on opening up double bonds."
+      }
+    },
+    {
+      "id": "concept-shapes",
+      "type": "concept",
+      "heading": "Shape from the bond type",
+      "body": "Recall from Lesson 1: the bond type at a carbon fixes its shape and bond angle directly. You read it straight off the structure.",
+      "bullets": [
+        {"text": "Single bonds only: tetrahedral, 109.5 degrees (ethane)."},
+        {"text": "Part of a C=C: trigonal planar, about 120 degrees (ethene is flat)."},
+        {"text": "Part of a C(triple)C: linear, 180 degrees (ethyne is a straight line)."}
+      ],
+      "secondary": "Always pair the shape name with the bond angle. The HSC awards a mark for each, so give both.",
+      "callout": "More bonds between carbons means a flatter, then straighter shape.",
+      "durationInFrames": 990,
+      "caption": "Single tetrahedral 109.5; double trigonal planar 120; triple linear 180.",
+      "voiceover": {
+        "text": "Let's recap the geometry from lesson one, because it sets up everything here. The bond type at a carbon decides its shape, and you can read it straight off the structure. A carbon with only single bonds points to the corners of a tetrahedron, with angles of one hundred and nine point five degrees, like ethane. A carbon that's part of a double bond lies flat with its neighbours in a plane, trigonal planar, at about one hundred and twenty degrees, so ethene is a flat molecule. A carbon in a triple bond is linear, a straight line, at one hundred and eighty degrees, so ethyne is dead straight. The pattern, more bonds between two carbons pulls the shape flatter and then straighter. And remember to always give both the shape name and the angle, because each earns a separate mark."
+      }
+    },
+    {
+      "id": "concept-sigma-pi",
+      "type": "concept",
+      "heading": "Inside a double bond: sigma and pi",
+      "body": "A C=C double bond is not two identical bonds. It is one strong sigma bond plus one weaker, more exposed pi bond.",
+      "image": "m7L4SigmaPiBond",
+      "bullets": [
+        {"text": "Sigma bond: the strong framework bond lying directly along the C-C axis."},
+        {"text": "Pi bond: the weaker bond, sitting above and below that axis."},
+        {"text": "The pi bond is electron-rich and exposed, so it is easily attacked."}
+      ],
+      "secondary": "A triple bond is one sigma plus two pi bonds. That second pi bond is why alkynes can add reagents in two separate steps.",
+      "callout": "The pi bond is the reactive part; the sigma bond is the sturdy frame.",
+      "durationInFrames": 1080,
+      "caption": "A C=C is one sigma bond (along the axis) plus one weaker, exposed pi bond.",
+      "voiceover": {
+        "text": "Here's the key structural idea. A carbon to carbon double bond is not just two identical bonds stacked together. It's actually two different kinds of bond. One is a sigma bond, the strong framework bond that lies directly along the line joining the two carbons. The other is a pi bond, a weaker bond whose electron density sits above and below that axis, kind of draped over the top and bottom. That pi bond is the important one. It's electron-rich, and because it sticks out, exposed, it's easy for an incoming reagent to attack. A triple bond, by the way, is one sigma plus two pi bonds, and that extra pi bond is exactly why alkynes can react in two separate steps, which we'll see later. For now, hold this picture, sigma is the sturdy frame, pi is the reactive part."
+      }
+    },
+    {
+      "id": "formula-reactivity",
+      "type": "concept",
+      "heading": "Why the pi bond drives reactivity",
+      "body": "The presence or absence of a pi bond is the single feature that splits alkene chemistry from alkane chemistry.",
+      "bullets": [
+        {"text": "Alkenes have an exposed pi bond, so reagents add across the C=C (addition)."},
+        {"text": "Alkanes have only strong sigma bonds, so they resist most reagents."},
+        {"text": "Alkanes react only by substitution, and only with energy like UV light."}
+      ],
+      "secondary": "The pi bond also locks the double bond against rotation, so the two carbons and their attached atoms stay fixed in one plane.",
+      "callout": "Pi bond present, the molecule adds; pi bond absent, it resists.",
+      "durationInFrames": 1020,
+      "caption": "A pi bond enables addition; without one, alkanes only substitute under UV.",
+      "voiceover": {
+        "text": "So let's connect the bonding to the reactivity. The single most important structural feature in hydrocarbon chemistry is whether or not there's a pi bond. If a molecule has one, like an alkene, that exposed, electron-rich pi bond invites reagents to add across the double bond, breaking the pi bond and forming two new single bonds. That's an addition reaction, and it happens readily, often at room temperature. If a molecule has no pi bond, like an alkane, it only has strong sigma bonds, which are not exposed and not easily broken, so alkanes resist most reagents. They'll only react by substitution, swapping one atom for another, and only when you supply energy, such as ultraviolet light. One more consequence, the pi bond locks the double bond against rotation, so the carbons and everything attached to them stay fixed in a single plane."
+      }
+    },
+    {
+      "id": "concept-reaction-preview",
+      "type": "concept",
+      "heading": "The reaction families ahead",
+      "body": "Bonding decides behaviour. Here is the map for the next few lessons, organised by what each class does.",
+      "bullets": [
+        {"text": "Addition: alkenes and alkynes open a pi bond; two reactants make one product."},
+        {"text": "Substitution: alkanes swap one H for a halogen under UV; two products form."},
+        {"text": "Combustion: every hydrocarbon burns in oxygen to give CO2 and water."}
+      ],
+      "secondary": "Polymerisation is repeated addition: many alkene monomers open their double bonds and link into one long chain.",
+      "callout": "Alkenes add, alkanes substitute, all hydrocarbons burn.",
+      "durationInFrames": 990,
+      "caption": "Addition (alkenes), substitution (alkanes), combustion (all), polymerisation (alkenes).",
+      "voiceover": {
+        "text": "Let's preview the reaction families, because bonding decides which one a molecule undergoes. There are really four. Addition, where alkenes and alkynes open a pi bond and two reactants combine into a single product, with nothing lost. Substitution, where an alkane swaps one hydrogen for a halogen under ultraviolet light, producing two products. Combustion, where every hydrocarbon, saturated or unsaturated, burns in oxygen to give carbon dioxide and water. And polymerisation, which is really just repeated addition, where many alkene monomers each open their double bond and link together into one long chain, like ethene becoming polyethene. The slogan to carry forward, alkenes add, alkanes substitute, and all hydrocarbons burn. We'll spend the next lessons making each of these precise."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Shapes within one molecule",
+      "question": "State the shape and bond angle at each carbon in propene, CH3CH=CH2.",
+      "coachNote": "Treat each carbon by its own bond type.",
+      "steps": [
+        "C1 (=CH2) is part of the C=C → trigonal planar, about 120 degrees",
+        "C2 (CH=) is part of the C=C → trigonal planar, about 120 degrees",
+        "C3 (CH3) has only single bonds → tetrahedral, 109.5 degrees",
+        "The C=C arises from the double bond; C3's shape from single bonds only",
+        "Answer: C1 and C2 trigonal planar (~120); C3 tetrahedral (109.5) ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "Propene: C1 and C2 trigonal planar (~120); C3 tetrahedral (109.5).",
+      "voiceover": {
+        "text": "Let's do a shapes question that has two different geometries in one molecule. State the shape and bond angle at each carbon in propene, C H three, C H double bond C H two. The trick is to treat each carbon by its own bond type. Carbon one, the C H two at the end of the double bond, is part of the carbon to carbon double bond, so it's trigonal planar, about one hundred and twenty degrees. Carbon two, the other end of the double bond, is also part of the double bond, so it's trigonal planar too, about one hundred and twenty. Carbon three, the methyl carbon, has only single bonds, so it's tetrahedral, one hundred and nine point five degrees. So carbons one and two are flat and trigonal planar, while carbon three is tetrahedral. Whenever a molecule mixes single and double bonds, just classify each carbon separately."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Explain the reactivity difference",
+      "question": "Explain why ethene reacts readily with bromine but ethane does not.",
+      "coachNote": "Point to the pi bond as the reactive site.",
+      "steps": [
+        "Ethene has a C=C: one sigma bond plus a weaker, exposed pi bond",
+        "The pi bond is electron-rich and accessible, so bromine adds across it",
+        "Ethane has only C-C and C-H sigma bonds, all strong and not exposed",
+        "With no pi bond, ethane has no accessible site for bromine to add",
+        "Answer: the exposed pi bond makes ethene react; ethane lacks one ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "Ethene's exposed pi bond lets bromine add; ethane has no pi bond.",
+      "voiceover": {
+        "text": "Now the reactivity question from the hook. Explain why ethene reacts readily with bromine but ethane does not. Step one, ethene has a carbon to carbon double bond, which is one sigma bond plus a weaker, exposed pi bond. Step two, that pi bond is electron-rich and sticks out above and below the molecule, so it's accessible, and bromine adds straight across it in an addition reaction. Step three, ethane is different, it has only carbon carbon and carbon hydrogen sigma bonds, all of them strong and tucked along the bond axes. Step four, with no pi bond, ethane simply has no accessible, reactive site for bromine to attack. So the whole difference comes down to that exposed pi bond, present in ethene, absent in ethane. This is the reasoning the HSC wants, name the pi bond and call it the reactive site."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three bonding traps",
+      "body": "Trap 1: giving a bond angle without the shape name, or the reverse. Always state both for the mark.",
+      "secondary": "Trap 2: thinking both bonds in a C=C are the same. It is one strong sigma plus one weaker pi. Trap 3: balancing an equation by changing subscripts. Subscripts define the substance; only change coefficients.",
+      "mistakeTag": "Where structure and bonding marks vanish",
+      "callout": "Shape plus angle, sigma plus pi, coefficients not subscripts.",
+      "durationInFrames": 1230,
+      "caption": "Give shape and angle; a C=C is sigma + pi; balance with coefficients only.",
+      "voiceover": {
+        "text": "Three traps to avoid. Trap one, giving a bond angle without naming the shape, or naming the shape without the angle. The HSC awards a mark for each, so always write both, like trigonal planar with bond angles of about one hundred and twenty degrees. Trap two, thinking the two bonds in a double bond are identical. They're not, it's one strong sigma bond and one weaker, more reactive pi bond, and that difference is the whole reason alkenes react. Trap three, and this one carries into every equation you'll write, trying to balance by changing the subscripts in a formula. Subscripts define the identity of the substance, so changing them gives you a different compound. You only ever balance by changing the coefficients, the big numbers in front."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Ethyne is HC(triple)CH. State its shape and bond angle, and the bonds making up the triple bond.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Each carbon is part of a C(triple)C triple bond",
+        "A triple bond gives linear geometry, bond angle 180 degrees",
+        "The triple bond is one sigma bond plus two pi bonds",
+        "Those two exposed pi bonds make ethyne react in two steps",
+        "Answer: linear, 180 degrees; one sigma + two pi bonds ✓"
+      ],
+      "durationInFrames": 1200,
+      "caption": "Ethyne is linear (180); its triple bond is one sigma + two pi bonds.",
+      "voiceover": {
+        "text": "Quick check on the triple bond. Ethyne is H C triple bond C H. State its shape and bond angle, and the bonds that make up the triple bond. Pause and work it through. Right. Each carbon is part of a carbon to carbon triple bond. A triple bond gives a linear shape, a straight line, with a bond angle of one hundred and eighty degrees. And the triple bond itself is made of one sigma bond plus two pi bonds. Those two pi bonds are both exposed and reactive, which is why an alkyne can add a reagent twice, in two separate steps, where an alkene with its single pi bond only adds once. So ethyne is linear at one hundred and eighty degrees, with one sigma and two pi bonds. That second pi bond is a detail worth remembering for the alkyne reactions coming up."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Shape from bond type: single tetrahedral 109.5, double trigonal planar 120, triple linear 180.",
+        "A C=C is one strong sigma bond plus one weaker, exposed pi bond.",
+        "The pi bond is electron-rich and accessible, so it is the reactive site.",
+        "Pi bond present means addition; no pi bond means alkanes only substitute.",
+        "Balance equations by changing coefficients, never subscripts."
+      ],
+      "finalPrompt": "Reactivity question? Find the pi bond and name it as the reactive site.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: shapes, sigma vs pi, pi as reactive site, addition vs substitution, balancing.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, you read shape from the bond type, single bonds are tetrahedral at one hundred and nine point five, a double bond is trigonal planar at one hundred and twenty, and a triple bond is linear at one hundred and eighty. Second, a double bond is one strong sigma bond plus one weaker, exposed pi bond, not two identical bonds. Third, that pi bond is electron-rich and accessible, so it's the reactive site of the molecule. Fourth, if a pi bond is present the molecule undergoes addition, while alkanes, with no pi bond, can only substitute, and only with energy like ultraviolet light. And fifth, always balance equations by changing coefficients, never the subscripts. Next lesson we put this to work on the reactions themselves, combustion, substitution, addition, and polymerisation. See you next lesson."
+      }
+    }
+  ]
+}

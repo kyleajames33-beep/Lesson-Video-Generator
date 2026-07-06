@@ -1,0 +1,245 @@
+{
+  "title": "Condensation Polymers",
+  "subtitle": "Two functional groups, water released, a chain formed",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 22",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "model and compare the structure, properties and uses of condensation polymers, for example: nylon and polyesters"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": [
+    "CH12-14",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What are the properties and uses of polymers?",
+  "lessonIntent": "Students can describe condensation polymerisation, identify the monomers and linkages of PET and nylon, and contrast condensation with addition polymerisation.",
+  "examSkill": "Draw repeat units for polyesters and polyamides, name the by-product, and explain why condensation polymers can be hydrolysed while addition polymers cannot.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, condensation polymers, the kind that release water. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Condensation Polymers (Year 12 Chemistry, Module 7, Lesson 22)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The shirt and the bottle are the same polymer",
+      "body": "A polyester shirt and a clear drink bottle are both PET. The same condensation reaction that builds them is the esterification you already know, just repeated.",
+      "callout": "How does an esterification, done over and over, build a whole material?",
+      "image": "m7l22HookPolyester",
+      "durationInFrames": 1557,
+      "caption": "Polyester clothing and PET bottles are the same polymer, built by repeated esterification.",
+      "voiceover": {
+        "text": "OK, here's a nice realisation. The polyester shirt you might be wearing and a clear plastic drink bottle are made of the very same polymer, called PET. And the reaction that builds PET is one you already know, esterification, an acid reacting with an alcohol. The trick is that instead of doing it once, you do it over and over, building a long chain. That's the essence of condensation polymerisation. Today you'll see how two reactive groups on each monomer let the chain grow from both ends, why a small molecule, usually water, is released at every link, and how this whole family differs from the addition polymers of the last lesson."
+      }
+    },
+    {
+      "id": "concept-mechanism",
+      "type": "concept",
+      "heading": "Bifunctional monomers, water released",
+      "body": "Condensation polymerisation joins monomers that each have two reactive groups, releasing a small molecule, usually water, at every bond formed.",
+      "image": "m7l22PetFormation",
+      "bullets": [
+        {
+          "text": "Each monomer is bifunctional: two reactive groups, one at each end.",
+          "at": 8
+        },
+        {
+          "text": "Two groups react to form a linkage, releasing a small molecule like water.",
+          "at": 17
+        },
+        {
+          "text": "Two groups per monomer let the chain grow from both ends.",
+          "at": 26
+        },
+        {
+          "text": "The name condensation refers to the small molecule that is eliminated.",
+          "at": 34
+        }
+      ],
+      "secondary": "An -OH from one monomer and -COOH from another combine, with water leaving and an ester linkage forming.",
+      "callout": "Two reactive groups per monomer, and a small molecule leaves each time.",
+      "durationInFrames": 1975,
+      "caption": "Condensation: bifunctional monomers join and release water at each linkage.",
+      "voiceover": {
+        "text": "Let's get the mechanism. Condensation polymerisation needs a different kind of monomer from addition. Instead of a double bond, each monomer must be bifunctional, meaning it has two reactive groups, one at each end. When a reactive group on one monomer meets a reactive group on another, they join to form a linkage, and as they do, a small molecule is eliminated, almost always water. For example, a hydroxyl group from one monomer and a carboxyl group from another combine, water leaves, and an ester linkage forms. Why does having two groups per monomer matter so much? Because it lets the chain grow from both ends, so the molecule keeps extending indefinitely. And the name tells you the key feature. Condensation refers to that small molecule being condensed out, eliminated, at every single bond that forms. That's the signature of this whole family."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Polyesters and polyamides",
+      "bullets": [
+        {
+          "text": "Polyester: a diol plus a dicarboxylic acid, joined by ester linkages.",
+          "at": 8
+        },
+        {
+          "text": "PET is ethylene glycol plus terephthalic acid; by-product is water.",
+          "at": 17
+        },
+        {
+          "text": "Polyamide: a diamine plus a dicarboxylic acid, joined by amide linkages.",
+          "at": 26
+        },
+        {
+          "text": "Nylon 6,6 is hexane-1,6-diamine plus hexanedioic acid; by-product is water.",
+          "at": 35
+        }
+      ],
+      "callout": "Ester linkage from OH plus COOH; amide linkage from NH2 plus COOH.",
+      "durationInFrames": 1881,
+      "caption": "Polyester: diol + diacid (ester links). Polyamide: diamine + diacid (amide links).",
+      "voiceover": {
+        "text": "There are two condensation polymers you must know in detail. First, polyesters, built from a diol, which has a hydroxyl group at each end, and a dicarboxylic acid, which has a carboxyl group at each end. They join through ester linkages, releasing water. The famous example is PET, made from ethylene glycol and terephthalic acid, and the by-product is water. Second, polyamides, built from a diamine, with an amine group at each end, and a dicarboxylic acid. These join through amide linkages, again releasing water. The classic example is nylon six-six, made from hexane-one-six-diamine and hexanedioic acid, also giving off water. So learn the pairing. A hydroxyl plus a carboxyl makes an ester linkage, the polyester. An amine plus a carboxyl makes an amide linkage, the polyamide. Memorise PET and nylon by name and by monomer."
+      }
+    },
+    {
+      "id": "concept-pet",
+      "type": "concept",
+      "heading": "Reading the PET repeat unit",
+      "body": "PET's repeat unit contains two ester linkages, one at each end of the terephthalic acid part. Spotting both is a common marking point.",
+      "bullets": [
+        {
+          "text": "The diol contributes the -O-CH2-CH2-O- portion.",
+          "at": 8
+        },
+        {
+          "text": "The diacid contributes the -CO-C6H4-CO- portion, including the benzene ring.",
+          "at": 17
+        },
+        {
+          "text": "There are two ester linkages per repeat unit, not one.",
+          "at": 25
+        },
+        {
+          "text": "The benzene ring makes PET rigid and high-melting, around 260 degrees.",
+          "at": 34
+        }
+      ],
+      "callout": "Two ester linkages per PET repeat unit; the ring gives rigidity.",
+      "durationInFrames": 1948,
+      "caption": "PET repeat unit has two ester linkages; the benzene ring makes it rigid.",
+      "voiceover": {
+        "text": "Let's read the PET repeat unit closely, because there's a detail markers look for. PET comes from two monomers, so its repeat unit has two parts. The diol, ethylene glycol, contributes the oxygen-carbon-carbon-oxygen portion. The diacid, terephthalic acid, contributes the carbonyl-benzene ring-carbonyl portion. Now the key point. Because the diacid has a carboxyl group at each end, there are two ester linkages in every repeat unit, one at each end of that benzene-containing block, not one. Students routinely draw only one and lose a mark. And the benzene ring isn't just decoration. Its rigid, flat structure stiffens the whole chain, which is why PET has a high melting point around two hundred and sixty degrees, good tensile strength, and works both as a bottle and as a clothing fibre. So count two ester linkages, and credit the ring for the rigidity."
+      }
+    },
+    {
+      "id": "concept-vs-addition",
+      "type": "concept",
+      "heading": "Why condensation polymers can rot",
+      "body": "The ester and amide linkages in condensation polymers can be hydrolysed, unlike the inert carbon backbone of addition polymers.",
+      "bullets": [
+        {
+          "text": "Addition polymers have an inert C-C backbone that water cannot break.",
+          "at": 9
+        },
+        {
+          "text": "Condensation polymers contain ester or amide bonds in the backbone.",
+          "at": 18
+        },
+        {
+          "text": "Those bonds can be hydrolysed by acid, base, or enzymes.",
+          "at": 26
+        },
+        {
+          "text": "So condensation polymers, especially polyamides, are more degradable.",
+          "at": 34
+        }
+      ],
+      "callout": "Hydrolysable linkages make condensation polymers more degradable.",
+      "durationInFrames": 1854,
+      "caption": "Ester and amide linkages can hydrolyse; the C-C backbone of addition polymers cannot.",
+      "voiceover": {
+        "text": "Here's a difference between the two polymer families that has real environmental weight. Addition polymers, from the last lesson, have a backbone made entirely of carbon-carbon bonds. Those bonds are non-polar and chemically inert, so water can't attack them, which is exactly why polyethylene persists for centuries. Condensation polymers are built differently. Their backbones contain ester or amide linkages, the same bonds we've been hydrolysing all module. And those bonds can be broken by water under the right conditions, by acid, by base, or by enzymes. So condensation polymers are generally more degradable than addition polymers. This is most striking with polyamides. Proteins, which are natural polyamides, are broken down rapidly by enzymes called proteases, and even tough nylon will slowly hydrolyse, whereas polyethylene just fragments. The linkage in the backbone decides the fate."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "PET from its monomers",
+      "question": "Identify the two monomers of PET, draw the repeat unit showing the ester linkages, name the by-product, and state how many ester linkages each repeat unit has.",
+      "coachNote": "Polyester means a diol plus a dicarboxylic acid. Each new ester linkage releases one water molecule.",
+      "steps": [
+        "Monomer 1: ethylene glycol (ethane-1,2-diol), HOCH2CH2OH, a diol.",
+        "Monomer 2: terephthalic acid (benzene-1,4-dicarboxylic acid), HOOC-C6H4-COOH.",
+        "Repeat unit: -O-CH2CH2-O-CO-C6H4-CO-, repeated n times.",
+        "An -OH and a -COOH combine to form each ester linkage, releasing water.",
+        "By-product: water; the equation releases 2n water molecules overall.",
+        "Answer: two monomers as above, two ester linkages per repeat unit, by-product is water."
+      ],
+      "durationInFrames": 2002,
+      "caption": "PET: ethylene glycol + terephthalic acid, two ester linkages, water released.",
+      "voiceover": {
+        "text": "Let's work the standard PET question, the band-six one. Identify the monomers, draw the repeat unit, name the by-product, and count the ester linkages. PET is a polyester, so it's a diol plus a dicarboxylic acid. The diol is ethylene glycol, hydroxyl groups on a two-carbon chain. The diacid is terephthalic acid, carboxyl groups on either side of a benzene ring. Now the repeat unit. From the diol you get the oxygen-carbon-carbon-oxygen part, and from the diacid you get the carbonyl-benzene-carbonyl part, joined into oxygen-C-H-2-C-H-2-oxygen, then carbonyl, benzene ring, carbonyl, repeated n times. Each linkage forms when a hydroxyl meets a carboxyl and water leaves, so the by-product is water, with two water molecules released per repeat unit, written two-n overall. And the detail that earns the mark, there are two ester linkages in every repeat unit, one at each end of the diacid block."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Addition polymerisation releases water\"",
+      "body": "Students mix up the two families and say addition polymerisation gives off water. Only condensation does.",
+      "secondary": "Addition polymerisation retains every atom; the C=C simply opens, so there is no by-product. Only condensation polymerisation eliminates a small molecule such as water, and only condensation polymers contain hydrolysable linkages.",
+      "callout": "No by-product in addition; water released only in condensation.",
+      "mistakeTag": "Only condensation releases a small molecule",
+      "durationInFrames": 1908,
+      "caption": "Addition retains all atoms; only condensation releases water.",
+      "voiceover": {
+        "text": "Here's the trap, and it's a swap of the two families. Students get asked which polymerisation produces water, and they accidentally pick addition. That's backwards. Think about what each one does. Addition polymerisation keeps every single atom. The carbon-carbon double bond just opens to link the monomers, so nothing is released, there is no by-product. Condensation polymerisation is the one that eliminates a small molecule, usually water, at every linkage that forms. So the rule is simple. If a small molecule is released, it's condensation. If nothing is released, it's addition. And there's a knock-on consequence worth tying in. Only condensation polymers contain those ester and amide linkages in the backbone, which means only condensation polymers can be hydrolysed. Addition polymers, with their bare carbon backbone, can't. Keep the two families cleanly apart and these marks are free."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "A repeat unit is shown as -NH-(CH2)6-NH-CO-(CH2)4-CO-. Name the polymer type and its two monomers, and state the by-product.",
+      "pausePrompt": "Pause and identify the linkage before the answer plays.",
+      "answerSteps": [
+        "The linkage is -CO-NH-, an amide linkage, so this is a polyamide.",
+        "An amide linkage forms from an amine group and a carboxyl group.",
+        "Monomer 1: the diamine, hexane-1,6-diamine, H2N-(CH2)6-NH2.",
+        "Monomer 2: the diacid, hexanedioic acid, HOOC-(CH2)4-COOH.",
+        "This is nylon 6,6; the by-product released at each linkage is water."
+      ],
+      "durationInFrames": 1840,
+      "caption": "Amide linkage = polyamide: nylon 6,6 from a diamine and a diacid, releasing water.",
+      "voiceover": {
+        "text": "Your turn. You're shown a repeat unit, nitrogen-hydrogen, then a six-carbon chain, then nitrogen-hydrogen, then a carbonyl, a four-carbon chain, and another carbonyl. Name the polymer type, its two monomers, and the by-product. Pause and identify the linkage first. Let's check. The linkage here is carbonyl-nitrogen-hydrogen, which is an amide linkage, so this is a polyamide. An amide linkage forms when an amine group meets a carboxyl group, so the two monomers must be a diamine and a dicarboxylic acid. The diamine is hexane-one-six-diamine, with amine groups on a six-carbon chain. The diacid is hexanedioic acid, with carboxyl groups on a six-carbon chain in total. This is the polymer nylon six-six. And because it's a condensation polymer, the by-product released at every linkage is water. Spot the amide linkage, and the rest unfolds."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Small molecule released? It is condensation. Identify the linkage to find the monomers.",
+      "points": [
+        "Condensation polymerisation joins bifunctional monomers and releases water at each linkage.",
+        "Polyester: diol plus dicarboxylic acid, ester linkages, like PET.",
+        "Polyamide: diamine plus dicarboxylic acid, amide linkages, like nylon 6,6.",
+        "PET has two ester linkages per repeat unit, and the benzene ring makes it rigid.",
+        "Ester and amide linkages can hydrolyse, so condensation polymers are more degradable than addition."
+      ],
+      "durationInFrames": 1813,
+      "caption": "Condensation releases water; the linkage type tells you the polymer and monomers.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, condensation polymerisation joins bifunctional monomers, each with two reactive groups, and releases a small molecule, usually water, at every linkage. Second, a polyester comes from a diol plus a dicarboxylic acid, joined by ester linkages, with PET the key example. Third, a polyamide comes from a diamine plus a dicarboxylic acid, joined by amide linkages, with nylon six-six the key example. Fourth, PET has two ester linkages per repeat unit, and its benzene ring is what makes it rigid and high-melting. And fifth, because their backbones contain ester or amide linkages, condensation polymers can be hydrolysed and are more degradable than addition polymers. So if a small molecule is released it's condensation, and identifying the linkage tells you the monomers. See you next lesson."
+      }
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "title": "Hygiene, Quarantine and Public Health",
+  "subtitle": "Breaking the chain of infection, with or without germ theory",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 15",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "investigate and evaluate environmental management and quarantine methods used to control an epidemic or pandemic"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How can the spread of infectious diseases be controlled?",
+  "lessonIntent": "Students can use the chain of infection to explain how hygiene, isolation, quarantine, contact tracing and sanitation control disease, and distinguish isolation from quarantine.",
+  "examSkill": "Identify which link in the chain of infection a public health strategy targets, and distinguish isolation from quarantine.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, hygiene, quarantine and public health. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Hygiene, Quarantine and Public Health (Year 12 Biology, Module 7, Lesson 15)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Wash your hands, they said no",
+      "body": "In 1847 Semmelweis showed handwashing cut maternity deaths by ninety percent. His colleagues fired him.",
+      "callout": "Why do simple public health measures meet such resistance?",
+      "image": "bioM7L15SemmelweisWards",
+      "durationInFrames": 2060,
+      "caption": "Semmelweis's 1847 handwashing reform, decades before germ theory.",
+      "voiceover": {
+        "text": "OK, here's a story that should make you angry. In eighteen forty-seven, a doctor named Ignaz Semmelweis was working in a Vienna maternity hospital, and he noticed something disturbing. In the ward staffed by doctors, who came straight from performing autopsies, about one in ten mothers died of fever. In the ward next door, staffed by midwives who did no autopsies, far fewer died. So Semmelweis ordered the doctors to wash their hands in chlorine solution, and the death rate in that ward dropped by around ninety percent. He had no idea about bacteria, germ theory didn't exist yet, he just saw the pattern and acted. And how did his colleagues respond? They mocked him, dismissed him, and eventually had him committed to an asylum, where he died. He was right. Today is about how we actually break the spread of disease, and why the simplest measures are often the most powerful."
+      }
+    },
+    {
+      "id": "concept-chain",
+      "type": "concept",
+      "heading": "The chain of infection",
+      "body": "For a pathogen to spread, six links must all connect. Break any single link and the spread stops.",
+      "bullets": [
+        {
+          "text": "The links: agent, reservoir, portal of exit, mode of transmission, portal of entry, susceptible host."
+        },
+        {
+          "text": "Every public health strategy works by snapping at least one of these links."
+        },
+        {
+          "text": "You do not need to break them all. One broken link is enough to stop transmission."
+        }
+      ],
+      "secondary": "Layered strategies break several links at once, which is why combining measures is so much more effective than relying on any single one.",
+      "callout": "A chain is only as strong as its weakest link.",
+      "durationInFrames": 2085,
+      "caption": "The chain of infection has six links; breaking any one stops the spread.",
+      "voiceover": {
+        "text": "Let's build the central model of this whole topic, the chain of infection. For a pathogen to spread from one person to the next, a sequence of links all have to connect. First there's the agent, the pathogen itself. Then the reservoir, where it lives, maybe a person, an animal, or contaminated water. Then the portal of exit, how it leaves, like coughing or in faeces. Then the mode of transmission, how it travels, droplets, contact, or a vehicle like water. Then the portal of entry into the next person, the mouth, nose, or a wound. And finally a susceptible host, someone who isn't immune. Here's the powerful insight. You do not have to break all six links. Snap any single one, and the chain fails, transmission stops. Every public health strategy you'll meet works by breaking at least one link, and the best programs layer several together to break a few at once."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Link in the chain",
+          "How we break it"
+        ],
+        "rows": [
+          [
+            "Reservoir",
+            "Clean water, food safety, isolation"
+          ],
+          [
+            "Mode of transmission",
+            "Handwashing, PPE, distancing, quarantine"
+          ],
+          [
+            "Portal of entry",
+            "PPE, safe food and water handling"
+          ],
+          [
+            "Susceptible host",
+            "Vaccination, chemoprophylaxis"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Hygiene: practices that reduce transmission via hands, surfaces, food, water or droplets."
+        },
+        {
+          "text": "Isolation: separating confirmed infectious cases from everyone else."
+        },
+        {
+          "text": "Quarantine: separating exposed people during the incubation period, before infection is confirmed."
+        },
+        {
+          "text": "Contact tracing: finding and following up people who may have been exposed to a case."
+        }
+      ],
+      "callout": "Isolation is for the confirmed sick; quarantine is for the maybe-exposed.",
+      "durationInFrames": 1805,
+      "caption": "Hygiene, isolation, quarantine, contact tracing.",
+      "voiceover": {
+        "text": "Let's pin down the words, because two of them get confused constantly. Hygiene is the set of practices that reduce transmission through hands, surfaces, food, water and droplets, things like handwashing and respiratory etiquette. Now the pair people mix up. Isolation is separating people who are confirmed to be infectious, you know they have the disease, so you keep them away from everyone else. Quarantine is separating people who have been exposed but are not yet confirmed, they might be incubating the disease, so you separate them as a precaution during the incubation period. Confirmed sick, that's isolation. Maybe exposed, that's quarantine. And contact tracing is the detective work, finding and following up everyone who may have been exposed to a known case, so they can be quarantined before they become infectious themselves."
+      }
+    },
+    {
+      "id": "concept-strategies",
+      "type": "concept",
+      "heading": "The key strategies",
+      "body": "A handful of public health tools, each snapping a different link in the chain, do most of the work.",
+      "bullets": [
+        {
+          "text": "Hygiene: soap disrupts pathogen membranes and physically washes them away. The most cost-efficient measure."
+        },
+        {
+          "text": "Isolation and quarantine: quarantine lasts as long as the maximum incubation period of the disease."
+        },
+        {
+          "text": "Surveillance and notifiable diseases: mandatory reporting gives early warning of an outbreak."
+        }
+      ],
+      "secondary": "Sanitation and clean water are the single greatest historical reducer of infectious-disease mortality, far ahead of antibiotics or vaccines.",
+      "callout": "The biggest wins came from clean water, not wonder drugs.",
+      "durationInFrames": 2045,
+      "caption": "Hygiene, isolation/quarantine, surveillance, and sanitation as the greatest historical lever.",
+      "voiceover": {
+        "text": "So let's run through the key strategies, and how each one breaks the chain. Hygiene first. Soap is remarkably clever, it disrupts the lipid membranes of many pathogens and the scrubbing physically washes them off your skin, and it's the most cost-efficient measure we have. Isolation and quarantine break the transmission link by keeping infectious or possibly-infectious people apart, and here's a key exam point, quarantine has to last at least as long as the maximum incubation period of the disease, which is why COVID quarantine was fourteen days. Surveillance, including making certain diseases notifiable, meaning doctors must report them, gives us early warning so outbreaks get caught fast. But here's the one that surprises people most. The single greatest reducer of infectious-disease mortality in history was not antibiotics, and it was not vaccines. It was sanitation, clean water and sewage systems. Those saved more lives than any drug ever has."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Semmelweis's numbers",
+      "question": "In the doctors' ward, deaths fell from about 9.5% before handwashing to 1.27% after. Calculate the percentage reduction, and explain which link in the chain handwashing broke.",
+      "coachNote": "Reduction = (before minus after) divided by before, then identify the link.",
+      "steps": [
+        "Absolute drop = 9.5% minus 1.27% = 8.23 percentage points.",
+        "Percentage reduction = 8.23 / 9.5 = 0.866, which is about an 87 percent reduction.",
+        "Doctors carried pathogens from autopsy bodies to mothers on their hands, the mode of transmission.",
+        "Chlorine handwashing destroyed and removed those pathogens, breaking the transmission link.",
+        "Answer: about an 87 percent reduction, achieved by breaking the transmission link ✓"
+      ],
+      "durationInFrames": 2115,
+      "caption": "Semmelweis: ~87% reduction in deaths by breaking the transmission link.",
+      "voiceover": {
+        "text": "Let's put numbers on the Semmelweis story, because the data is striking. In the doctors' ward, the maternal death rate before handwashing was about nine point five percent. After he introduced chlorine handwashing, it fell to one point two seven percent. Calculate the percentage reduction. First, the absolute drop, nine point five minus one point two seven, gives eight point two three percentage points. Then the percentage reduction is that drop divided by the original, eight point two three over nine point five, which is zero point eight seven, about an eighty-seven percent reduction. Now, which link in the chain did handwashing break? The doctors were carrying pathogens from autopsy bodies straight to mothers on their unwashed hands, that's the mode of transmission. The chlorine destroyed and physically removed those pathogens, snapping the transmission link. So, an eighty-seven percent reduction, achieved purely by breaking one link in the chain, decades before anyone understood why it worked."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: using isolation and quarantine as if they mean the same thing. Isolation is for confirmed cases; quarantine is for the exposed but unconfirmed.",
+      "secondary": "Trap 2: believing antibiotics and vaccines caused the big fall in infectious-disease deaths. The largest declines, from typhoid, cholera and dysentery, came from clean water and sanitation, mostly before antibiotics existed.",
+      "mistakeTag": "Isolation versus quarantine, and what really saved lives",
+      "callout": "Isolation: confirmed. Quarantine: exposed. Sanitation did the heavy lifting.",
+      "durationInFrames": 1910,
+      "caption": "Isolation versus quarantine; sanitation, not drugs, drove the great mortality decline.",
+      "voiceover": {
+        "text": "Two traps to nail down. Trap one, using isolation and quarantine as if they're the same word. They are not. Isolation applies to people you've confirmed are infectious, you know they're sick. Quarantine applies to people who've been exposed but aren't confirmed, they might be incubating it. If a quarantined person develops symptoms, they then move into isolation. Get that distinction crisp, examiners test it directly. Trap two, the big one, believing that antibiotics and vaccines are the main reason infectious-disease deaths fell so dramatically in the twentieth century. They're not. The largest declines, from diseases like typhoid, cholera and dysentery, happened largely before antibiotics were even widely available, and the main driver was clean water, sewage systems, better nutrition and housing. Antibiotics and vaccines then accelerated a decline that sanitation had already started. Don't give the drugs all the credit."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "During an outbreak with a maximum incubation period of 10 days, a person who shared a flight with a confirmed case is separated for 10 days but has no symptoms. Is this isolation or quarantine, and why that exact duration?",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The person was exposed but is not a confirmed case, with no symptoms, so they are not known to be infectious.",
+        "Separating an exposed, unconfirmed person is quarantine, not isolation.",
+        "Quarantine duration is set to the maximum incubation period of the disease.",
+        "If they pass 10 days symptom-free, they are very unlikely to be infected and can be released.",
+        "Answer: quarantine; 10 days matches the maximum incubation period so an infection would have shown ✓"
+      ],
+      "durationInFrames": 2165,
+      "caption": "Separating an exposed, symptom-free contact for the incubation period is quarantine.",
+      "voiceover": {
+        "text": "Quick check. During an outbreak with a maximum incubation period of ten days, a person who shared a flight with a confirmed case is separated for ten days, but never develops any symptoms. Is this isolation or quarantine, and why that exact ten-day duration? Pause and reason it through. Right. Was this person a confirmed case? No, they were exposed, but they have no symptoms, so we don't know that they're infectious. Separating an exposed, unconfirmed person is quarantine, not isolation. And why ten days exactly? Because quarantine duration is set to match the maximum incubation period of the disease. The logic is, if this person makes it through the full ten days without developing symptoms, then it's very unlikely they were ever infected, so they can be safely released. If they had been released earlier, they might still have been incubating it, and become infectious after going free. So, quarantine, and the ten days matches the maximum incubation period."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "The chain of infection has six links; breaking any one stops transmission.",
+        "Isolation separates confirmed infectious cases; quarantine separates the exposed but unconfirmed.",
+        "Quarantine lasts as long as the maximum incubation period of the disease.",
+        "Hygiene works because soap disrupts membranes and physically removes pathogens.",
+        "Sanitation and clean water were the single greatest historical reducer of infectious-disease deaths."
+      ],
+      "finalPrompt": "Evaluating a strategy? Ask which link of the chain it breaks, and whether it stacks with others.",
+      "durationInFrames": 1765,
+      "caption": "Five takeaways: the chain, isolation vs quarantine, incubation timing, hygiene, sanitation.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, the chain of infection has six links, and breaking any single one stops transmission. Second, isolation separates people who are confirmed infectious, while quarantine separates people who are exposed but not yet confirmed. Third, quarantine lasts as long as the maximum incubation period of the disease, so that an infection would have shown itself by the end. Fourth, hygiene works because soap disrupts pathogen membranes and physically washes them away, and it's our most cost-efficient tool. And fifth, the biggest historical win against infectious disease came from sanitation and clean water, not from antibiotics or vaccines. Whenever you evaluate a strategy, ask which link of the chain it breaks, and whether it stacks with other measures. See you next lesson."
+      }
+    }
+  ]
+}

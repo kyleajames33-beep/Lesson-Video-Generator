@@ -1,0 +1,245 @@
+{
+  "title": "Organic Reaction Pathways",
+  "subtitle": "Connecting functional groups into a synthesis",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 19",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "write equations, state conditions and predict products to represent the reactions of alcohols",
+    "investigate the products of organic reactions including but not limited to: addition, substitution, oxidation, esterification and combustion reactions"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": [
+    "CH12-14",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "How can alcohols be produced and what are their properties?",
+  "lessonIntent": "Students can use the functional-group reaction map to plan a multi-step synthesis, choosing the correct reagents and conditions and avoiding dead ends.",
+  "examSkill": "Trace the shortest valid path between two functional groups, write each step with full conditions, and apply the distillation-versus-reflux decision correctly.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, organic reaction pathways, planning a synthesis. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Organic Reaction Pathways (Year 12 Chemistry, Module 7, Lesson 19)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "From a gas to a flavour in four steps",
+      "body": "A food scientist needs banana flavour, ethyl ethanoate, and all she has is ethene. There is no single reaction that gets there. So she has to build a route.",
+      "callout": "How do you plan a path between two molecules that don't react directly?",
+      "image": "m7l19HookSynthesisRoute",
+      "durationInFrames": 1651,
+      "caption": "No single reaction makes ethyl ethanoate from ethene, so plan a multi-step route.",
+      "voiceover": {
+        "text": "OK, here's the kind of problem that separates a band-five student from a band-six one. A food scientist needs to make ethyl ethanoate, that banana-and-pear flavour, and all she's got to start with is ethene, a simple gas. The trouble is, there's no single reaction that turns ethene into an ester. You can't get there in one jump. So she has to think like a chemist and build a route, a sequence of reactions, each one nudging the molecule one functional group closer to the target. Today you'll learn to do exactly that, using a map of every reaction in the module, and you'll see the one decision that trips up more students than any other, distillation versus reflux."
+      }
+    },
+    {
+      "id": "concept-map",
+      "type": "concept",
+      "heading": "The reaction map",
+      "body": "Every Module 7 reaction connects two functional groups. Lay them out as a map and a synthesis becomes a route between two points.",
+      "image": "m7l19ReactionMap",
+      "bullets": [
+        {
+          "text": "Alcohol is the hub: most routes pass through it.",
+          "at": 9
+        },
+        {
+          "text": "Alkene to alcohol by hydration; haloalkane to alcohol by aqueous NaOH.",
+          "at": 18
+        },
+        {
+          "text": "Alcohol oxidises up to aldehyde then acid; acid plus alcohol gives an ester.",
+          "at": 27
+        },
+        {
+          "text": "Every arrow is one step, and every step has its own conditions.",
+          "at": 35
+        }
+      ],
+      "callout": "A synthesis is just the shortest valid route across the map.",
+      "durationInFrames": 2069,
+      "caption": "The functional-group map: each arrow is one reaction with its own conditions.",
+      "voiceover": {
+        "text": "Here's the central idea. Every reaction you've met in this module connects one functional group to another. Lay them all out as a map, with functional groups as the points and reactions as the arrows between them, and suddenly a synthesis problem becomes a navigation problem. You just find a route from your starting point to your target. Look at the layout. The alcohol sits at the centre as a hub, because most routes pass through it. You can reach an alcohol from an alkene by hydration, adding water, or from a haloalkane by warming with aqueous sodium hydroxide. From the alcohol, you can oxidise up to an aldehyde and then to a carboxylic acid. And a carboxylic acid plus an alcohol gives an ester. Each arrow is exactly one step, and crucially, each arrow carries its own set of conditions. Learn the map, and you can plan any pathway."
+      }
+    },
+    {
+      "id": "concept-conditions",
+      "type": "concept",
+      "heading": "The conditions that earn the marks",
+      "body": "A pathway answer lives and dies on conditions. The same starting material can give different products depending on how you run the reaction.",
+      "bullets": [
+        {
+          "text": "Alkene to alcohol: steam and phosphoric acid catalyst, high pressure.",
+          "at": 9
+        },
+        {
+          "text": "Haloalkane to alcohol: aqueous NaOH, reflux.",
+          "at": 17
+        },
+        {
+          "text": "Primary alcohol with dichromate, distillation, stops at the aldehyde.",
+          "at": 25
+        },
+        {
+          "text": "Primary alcohol with excess dichromate, reflux, goes to the acid.",
+          "at": 33
+        }
+      ],
+      "callout": "Distillation stops at the aldehyde; reflux drives on to the acid.",
+      "durationInFrames": 1989,
+      "caption": "Conditions decide the product: distillation gives aldehyde, reflux gives acid.",
+      "voiceover": {
+        "text": "Now the part that actually earns or loses the marks, the conditions. In a pathway answer, naming the reagent isn't enough. You need the full conditions, because the same starting material can give different products depending on how you run it. A few key ones. Alkene to alcohol needs steam with a phosphoric acid catalyst at high pressure. Haloalkane to alcohol needs aqueous sodium hydroxide under reflux. And here's the famous one, the oxidation of a primary alcohol. If you use acidified dichromate and set up for distillation, you collect the aldehyde and stop there, because distillation removes the aldehyde as it forms before it can be oxidised further. But if you use excess dichromate and reflux instead, the aldehyde stays in the flask and gets oxidised all the way to the carboxylic acid. Same reagent, opposite product, decided purely by distillation versus reflux."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The dead ends to avoid",
+      "bullets": [
+        {
+          "text": "Alkane to alcohol directly: not possible; go via the haloalkane.",
+          "at": 8
+        },
+        {
+          "text": "Secondary alcohol to ketone is a dead end; ketones do not oxidise further.",
+          "at": 17
+        },
+        {
+          "text": "Tertiary alcohols do not oxidise at all.",
+          "at": 25
+        },
+        {
+          "text": "Esterification is reversible, so always use a reversible arrow.",
+          "at": 33
+        }
+      ],
+      "callout": "Know the routes that do not exist before you plan one that does.",
+      "durationInFrames": 2002,
+      "caption": "Dead ends: no direct alkane-to-alcohol; ketone oxidation stops; tertiary won't oxidise.",
+      "voiceover": {
+        "text": "Just as important as knowing the routes is knowing the dead ends, the moves that look reasonable but don't exist. First, you cannot turn an alkane into an alcohol directly. There's no such reaction in the course, so you have to go the long way, alkane to haloalkane to alcohol, two steps. Second, oxidising a secondary alcohol gives a ketone, and that's the end of the line, because ketones can't be oxidised further. So if a route needs to pass through and beyond a ketone, it's impossible. Third, tertiary alcohols don't oxidise at all, since there's no hydrogen on the carbon bearing the hydroxyl. And fourth, a reminder rather than a dead end. Esterification is reversible, so any step that forms an ester must use a reversible arrow. Check your route against these before you commit, and you won't draw an arrow that doesn't exist."
+      }
+    },
+    {
+      "id": "concept-algorithm",
+      "type": "concept",
+      "heading": "A four-step planning method",
+      "body": "Approach every pathway question the same way: a simple algorithm beats guessing.",
+      "bullets": [
+        {
+          "text": "One: identify the functional group of the start and the target.",
+          "at": 9
+        },
+        {
+          "text": "Two: trace the shortest valid route between them on the map.",
+          "at": 17
+        },
+        {
+          "text": "Three: check each step for dead ends and the distillation choice.",
+          "at": 25
+        },
+        {
+          "text": "Four: write each step with a balanced equation, conditions, and the intermediate.",
+          "at": 34
+        }
+      ],
+      "callout": "Identify, route, check, then write each step in full.",
+      "durationInFrames": 1975,
+      "caption": "Plan pathways: identify, trace the route, check, then write each step fully.",
+      "voiceover": {
+        "text": "So let's turn this into a repeatable method, because a pathway question is solved by algorithm, not by inspiration. Step one, identify the functional group you're starting with and the one you're aiming for. Just name them. Step two, trace the shortest valid route between those two points on the map, counting the arrows. Each arrow is one reaction step. Step three, check each step. Is there a dead end in the way? Does the oxidation need distillation or reflux? Is there a reversible arrow needed? Step four, write it out in full. For each step, give a balanced equation, the complete conditions, and the name of the intermediate you've just made. That last detail matters. The marker wants to see you know what's produced at each stage, not just at the end. Identify, route, check, write. The same four moves every time."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Ethene to ethyl ethanoate",
+      "question": "Outline a pathway from ethene to ethyl ethanoate. Give a balanced equation and conditions for each step.",
+      "coachNote": "Plan: ethene to ethanol, oxidise part of the ethanol to ethanoic acid, then esterify the two.",
+      "steps": [
+        "Step 1: ethene to ethanol by hydration. C2H4 + H2O, with H3PO4 catalyst at about 300 degrees and high pressure, gives C2H5OH.",
+        "Step 2: oxidise some ethanol to ethanoic acid. With excess K2Cr2O7/H2SO4 under reflux, C2H5OH gives CH3COOH.",
+        "Step 3: esterify the acid with the remaining ethanol.",
+        "CH3COOH + C2H5OH, reversible, conc. H2SO4 catalyst, reflux, gives CH3COOC2H5 + H2O.",
+        "Intermediates: ethanol, then ethanoic acid, then ethyl ethanoate.",
+        "Answer: hydrate, oxidise part to the acid under reflux, then esterify to ethyl ethanoate."
+      ],
+      "durationInFrames": 2056,
+      "caption": "Ethene to ethanol (hydration), to ethanoic acid (reflux), then esterify to the ester.",
+      "voiceover": {
+        "text": "Let's solve the hook problem, ethene to ethyl ethanoate, the band-six classic. First, plan it. The ester is made from ethanoic acid and ethanol, and both are two-carbon, so the strategy is to make ethanol, convert part of it to ethanoic acid, then esterify the two together. Now the steps. Step one, hydrate the ethene. Ethene plus water, with a phosphoric acid catalyst at around three hundred degrees and high pressure, gives ethanol. Step two, take some of that ethanol and oxidise it fully with excess acidified dichromate under reflux to get ethanoic acid. The reflux matters, because it drives the oxidation all the way to the acid. Step three, esterify. React the ethanoic acid with the ethanol you kept, using concentrated sulfuric acid under reflux, with a reversible arrow, and you get ethyl ethanoate plus water. Name each intermediate, ethanol, ethanoic acid, ethyl ethanoate, and that's full marks."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Just oxidise the alcohol to the aldehyde\"",
+      "body": "Students write a primary alcohol oxidising to an aldehyde without stating distillation, or use reflux and still expect the aldehyde.",
+      "secondary": "The reagent alone does not fix the product. To stop at the aldehyde you must distil it off as it forms. To reach the carboxylic acid you use excess oxidant and reflux. State the technique, not just the reagent.",
+      "callout": "Same dichromate, different product: distillation gives the aldehyde, reflux the acid.",
+      "mistakeTag": "Distillation vs reflux must be stated",
+      "durationInFrames": 1989,
+      "caption": "Naming dichromate is not enough: distillation gives aldehyde, reflux gives acid.",
+      "voiceover": {
+        "text": "Here's the trap that costs marks almost every year. A student needs an aldehyde, writes primary alcohol plus acidified dichromate, and stops, without saying how. Or worse, they write reflux but still expect to get the aldehyde. The problem is that the reagent alone doesn't determine the product. Acidified dichromate can take a primary alcohol to the aldehyde or all the way to the carboxylic acid, and what decides it is the technique. To stop at the aldehyde, you must set up for distillation, so the volatile aldehyde boils off and leaves the flask before it can be oxidised further. To go on to the carboxylic acid, you use excess oxidant and reflux, keeping everything in the flask. So always state the technique alongside the reagent. Distillation for the aldehyde, reflux for the acid. Leaving it out is the single most common pathway error."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "Outline a two-step pathway from ethanol to ethyl ethanoate, with an equation and conditions for each step.",
+      "pausePrompt": "Pause and split the ethanol into two roles before the answer plays.",
+      "answerSteps": [
+        "Ethanol serves two roles: oxidise some to the acid, keep some as the alcohol.",
+        "Step 1: oxidise ethanol to ethanoic acid with excess K2Cr2O7/H2SO4 under reflux.",
+        "CH3CH2OH oxidised gives CH3COOH (orange to green).",
+        "Step 2: esterify the acid with the remaining ethanol.",
+        "CH3COOH + C2H5OH, reversible, conc. H2SO4, reflux, gives ethyl ethanoate + water."
+      ],
+      "durationInFrames": 1854,
+      "caption": "Ethanol to ethanoic acid (reflux), then esterify with more ethanol to the ester.",
+      "voiceover": {
+        "text": "Your turn. Outline a two-step pathway from ethanol to ethyl ethanoate, giving an equation and conditions for each step. Pause now, and here's a hint, split the ethanol into two roles. Right, let's check. The trick is that ethanol does double duty. You oxidise some of it to the acid, and you keep the rest as the alcohol for the ester. Step one, oxidise ethanol to ethanoic acid using excess acidified dichromate under reflux, and you'd see the orange dichromate turn green. Step two, esterify. React that ethanoic acid with the ethanol you set aside, using concentrated sulfuric acid under reflux, with a reversible arrow, giving ethyl ethanoate and water. This split-the-starting-material strategy comes up again and again whenever an ester has matching acid and alcohol halves, so it's well worth recognising on sight."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Pathway question? Identify, route, check, write, and never forget distillation versus reflux.",
+      "points": [
+        "Every reaction links two functional groups; a synthesis is a route across the map.",
+        "The alcohol is the hub that most pathways pass through.",
+        "Distillation stops a primary alcohol oxidation at the aldehyde; reflux drives it to the acid.",
+        "Dead ends: no direct alkane to alcohol, ketones and tertiary alcohols do not oxidise.",
+        "For each step give a balanced equation, full conditions, and the named intermediate."
+      ],
+      "durationInFrames": 1786,
+      "caption": "Plan pathways with the map; state conditions and the distillation choice for every step.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, every reaction in the module links two functional groups, so a synthesis is just a route across the map. Second, the alcohol is the hub that most pathways pass through, so it's often your stepping stone. Third, the distillation-versus-reflux decision. Distillation stops a primary alcohol oxidation at the aldehyde, while reflux with excess oxidant drives it on to the carboxylic acid. Fourth, watch the dead ends. There's no direct alkane to alcohol route, and neither ketones nor tertiary alcohols can be oxidised. And fifth, for every step, write a balanced equation, the full conditions, and the name of the intermediate. So approach any pathway the same way, identify, route, check, write, and never leave out the distillation choice. See you next lesson."
+      }
+    }
+  ]
+}

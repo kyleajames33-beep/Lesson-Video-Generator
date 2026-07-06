@@ -1,0 +1,330 @@
+{
+  "title": "Static vs Dynamic Equilibrium",
+  "subtitle": "Why a still-looking system can be furiously busy",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+  "syllabusDotPoints": [
+    "model static and dynamic equilibrium and analyse the differences between open and closed systems (ACSCH079, ACSCH091)"
+  ],
+  "moduleLessonCount": 18,
+  "nesaOutcomes": [
+    "CH12-12",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What happens when chemical reactions do not go through to completion?",
+  "lessonIntent": "Students can distinguish static from dynamic equilibrium and explain why dynamic equilibrium requires a reversible reaction in a closed system.",
+  "examSkill": "Classify a system as static equilibrium, dynamic equilibrium, or neither by checking reversibility and whether the system is closed.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, static versus dynamic equilibrium. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Static vs Dynamic Equilibrium (Year 12 Chemistry, Module 5, Lesson 1)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A still drink that's secretly busy",
+      "body": "A sealed bottle of sparkling water looks frozen. At the molecular level, it's anything but.",
+      "callout": "Stillness on the outside doesn't mean stillness inside.",
+      "image": "m5L1SparklingBottle",
+      "durationInFrames": 690,
+      "caption": "A sealed sparkling-water bottle looks static but is at dynamic equilibrium.",
+      "voiceover": {
+        "text": "OK, picture a sealed bottle of sparkling water sitting on a bench. The pressure gauge reads the same every single minute, and nothing visible is happening. Now put a rusted iron nail next to it, also apparently doing nothing. Here's the thing, chemists would call one of these static equilibrium and the other dynamic equilibrium, and they are completely different ideas. Back in 1864, Alexander Williamson proved this kind of stillness can hide two reactions running at once, by getting the same mixture whether he started from ethanol or from ether. By the end of today, you'll be able to tell these two states apart and say exactly what's going on at the particle level."
+      }
+    },
+    {
+      "id": "concept-two-states",
+      "type": "concept",
+      "heading": "Two kinds of standstill",
+      "body": "Static equilibrium has stopped completely. Dynamic equilibrium only looks stopped.",
+      "bullets": [
+        {
+          "text": "Static: an irreversible reaction has finished, so nothing is moving at all."
+        },
+        {
+          "text": "Dynamic: a reversible reaction where forward and reverse rates are equal but non-zero."
+        },
+        {
+          "text": "Same calm surface, totally different molecular story underneath."
+        }
+      ],
+      "secondary": "The forward rate falling to zero is the signature of static equilibrium. Two equal non-zero rates is the signature of dynamic.",
+      "callout": "Static is finished. Dynamic is balanced.",
+      "durationInFrames": 1140,
+      "caption": "Static equilibrium has fully stopped; dynamic equilibrium is balanced and ongoing.",
+      "voiceover": {
+        "text": "So there are two completely different ways a system can look still. The first is static equilibrium. This is what you get after an irreversible reaction has gone to completion. The reactants are used up, the products just sit there, and both the forward and reverse rates are zero. Nothing is happening, at the macroscopic level and at the molecular level. Burning magnesium ribbon is a good example, once the magnesium is gone, the magnesium oxide just stays as magnesium oxide. The second is dynamic equilibrium, and this is the counterintuitive one. The reaction is reversible, it's running in both directions, and the forward rate exactly equals the reverse rate. So the concentrations hold steady, but molecules are constantly being remade and broken apart underneath. Same calm surface, but one has genuinely stopped while the other is a busy standstill."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Static",
+          "Dynamic"
+        ],
+        "rows": [
+          [
+            "Reaction type",
+            "Irreversible, complete",
+            "Reversible (⇌)"
+          ],
+          [
+            "Forward rate",
+            "Zero",
+            "Non-zero"
+          ],
+          [
+            "Reverse rate",
+            "Zero",
+            "Equal to forward"
+          ],
+          [
+            "Molecular activity",
+            "None",
+            "Continuous"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Static equilibrium: an irreversible reaction that has gone to completion; all rates are zero."
+        },
+        {
+          "text": "Dynamic equilibrium: forward rate equals reverse rate, both non-zero, in a closed system."
+        },
+        {
+          "text": "Closed system: matter cannot enter or leave, though energy can."
+        },
+        {
+          "text": "Open system: matter can enter or leave, so concentrations never settle."
+        }
+      ],
+      "callout": "Closed keeps the matter in; open lets it escape.",
+      "durationInFrames": 990,
+      "caption": "Static equilibrium, dynamic equilibrium, closed system, open system.",
+      "voiceover": {
+        "text": "Let's pin down the four words. Static equilibrium is the state after an irreversible reaction has finished, where the forward and reverse rates are both zero. Dynamic equilibrium is the state where the forward rate equals the reverse rate, both non-zero, and crucially it can only happen in a closed system. A closed system is one where matter cannot enter or leave, although energy can still flow in and out as heat. An open system is one where matter can enter or leave, like a beaker or a campfire, and that's the killer, because if matter keeps escaping, the concentrations can never settle down. Keep open and closed straight, because it decides everything in this topic."
+      }
+    },
+    {
+      "id": "concept-conditions",
+      "type": "concept",
+      "heading": "The two conditions, every time",
+      "body": "For dynamic equilibrium you need a reversible reaction AND a closed system. Both, no exceptions.",
+      "bullets": [
+        {
+          "text": "Condition 1: the reaction is reversible, written with the ⇌ arrow."
+        },
+        {
+          "text": "Condition 2: the system is closed, so nothing escapes."
+        },
+        {
+          "text": "Open the system and the equilibrium collapses, the drink goes flat."
+        }
+      ],
+      "secondary": "In a sealed bottle, CO₂ gas dissolves into the liquid as fast as it escapes back out, so the fizz holds. Open it and CO₂ leaves without being replaced.",
+      "callout": "Reversible plus closed. Miss either and there's no equilibrium.",
+      "durationInFrames": 1080,
+      "caption": "Dynamic equilibrium needs both a reversible reaction and a closed system.",
+      "voiceover": {
+        "text": "Here's the test you run on every system. For dynamic equilibrium, you need two things to be true at once. First, the reaction has to be reversible, the kind written with that double arrow. Second, the system has to be closed, so no matter can sneak in or out. Miss either one and you do not get equilibrium. Go back to the sparkling water. Sealed up, it's a closed system, and carbon dioxide dissolves into the liquid at exactly the same rate it escapes back into the gas above, so the fizz stays put. The moment you open the bottle, it becomes an open system. Carbon dioxide escapes into the room and nothing replaces it, the reverse rate can't keep up, and the equilibrium is destroyed. That's literally why an open drink goes flat."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Time",
+        "yLabel": "Concentration",
+        "series": [
+          {
+            "label": "Reactants",
+            "color": "chem1",
+            "points": [
+              [
+                0,
+                0.9
+              ],
+              [
+                0.12,
+                0.7
+              ],
+              [
+                0.28,
+                0.55
+              ],
+              [
+                0.45,
+                0.46
+              ],
+              [
+                0.65,
+                0.415
+              ],
+              [
+                0.82,
+                0.4
+              ],
+              [
+                1,
+                0.4
+              ]
+            ]
+          },
+          {
+            "label": "Products",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0.05
+              ],
+              [
+                0.12,
+                0.24
+              ],
+              [
+                0.28,
+                0.38
+              ],
+              [
+                0.45,
+                0.47
+              ],
+              [
+                0.65,
+                0.51
+              ],
+              [
+                0.82,
+                0.52
+              ],
+              [
+                1,
+                0.52
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 0.66,
+            "label": "constant from here"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Static, dynamic, or neither?",
+      "question": "Classify each: (a) a sealed flask of H₂ and I₂ at 450°C, colour now steady; (b) a campfire whose wood has burned to cold ash; (c) a beaker of water evaporating in a warm room.",
+      "coachNote": "Run the checklist: reversible? closed? Both true means dynamic.",
+      "steps": [
+        "(a) H₂(g) + I₂(g) ⇌ 2HI(g) is reversible, the flask is sealed (closed), colour steady → dynamic equilibrium.",
+        "(b) Combustion of wood is irreversible and the fuel is fully consumed → static equilibrium.",
+        "(c) The beaker is open, so vapour escapes and concentrations never settle → neither.",
+        "Decision rule: reversible AND closed gives dynamic; finished irreversible gives static.",
+        "Answer: (a) dynamic, (b) static, (c) neither ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "(a) dynamic, (b) static, (c) neither — by reversibility and closure.",
+      "voiceover": {
+        "text": "Let's run the checklist on three systems. Part a, a sealed flask of hydrogen and iodine at four hundred and fifty degrees, and the colour has stopped changing. The reaction hydrogen plus iodine giving hydrogen iodide is reversible, the flask is sealed so it's closed, and the steady colour tells us the concentrations have settled. Both conditions are met, so that's dynamic equilibrium. Part b, a campfire where all the wood has burned to cold ash. Combustion is irreversible, and the fuel is completely gone, so the reaction has simply finished. Forward rate zero, reverse rate zero, that's static equilibrium. Part c, a beaker of water evaporating in a warm room. The beaker is open, so water vapour escapes into the room and never comes back in equal measure. The concentrations can't stabilise, so this is neither, it's just a non-equilibrium system heading toward an empty beaker. Reversible and closed gives you dynamic, a finished irreversible reaction gives you static, and an open system gives you neither."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Proving it's really dynamic",
+      "question": "A sealed, opaque flask holds N₂O₄ ⇌ 2NO₂ at equilibrium. Total NO₂ stays constant. What single observation proves the reaction is still running both ways?",
+      "coachNote": "Constant pressure, mass and temperature can't tell static from dynamic. Look for molecular interchange.",
+      "steps": [
+        "Constant total mass, pressure and temperature all fit static AND dynamic, so none of them prove it.",
+        "Add a labelled isotope, ¹⁵N₂O₄, to the flask.",
+        "Over time, ¹⁵N shows up inside the NO₂ even though total [NO₂] never changes.",
+        "That interchange can only happen if both forward and reverse reactions are running.",
+        "Answer: the appearance of the label in NO₂ proves dynamic equilibrium ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "An isotope label appearing in NO₂ at constant [NO₂] proves both reactions run.",
+      "voiceover": {
+        "text": "Now a sharper question, the kind that separates a band six answer. You've got a sealed, opaque flask of dinitrogen tetroxide in equilibrium with nitrogen dioxide, and the total nitrogen dioxide concentration stays constant. What one observation actually proves the reaction is still running in both directions? Here's the trap. Constant pressure, constant mass, constant temperature, every one of those is true for static equilibrium as well as dynamic, so none of them prove anything. The clever move is to add a labelled isotope, say nitrogen fifteen dinitrogen tetroxide, into the flask. Over time, that nitrogen fifteen label turns up inside the nitrogen dioxide molecules, even though the total amount of nitrogen dioxide never changes. The only way the label can cross over is if molecules are genuinely being converted both ways. So the label appearing in the product is the proof, the system is dynamic, not static."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking equilibrium means equal concentrations of reactants and products. It means equal rates.",
+      "secondary": "Trap 2: saying the reaction has stopped at dynamic equilibrium. Both rates are non-zero, the system is busy. Trap 3: drawing the forward-rate curve falling all the way to zero. At equilibrium both rate curves meet at the same non-zero value.",
+      "mistakeTag": "Where equilibrium marks vanish",
+      "callout": "Equal rates, not equal amounts; non-zero, not stopped.",
+      "durationInFrames": 1230,
+      "caption": "Equilibrium = equal rates (not equal amounts); rates non-zero; curves meet above zero.",
+      "voiceover": {
+        "text": "Three traps that cost marks every year. Trap one, the big one, thinking equilibrium means equal concentrations of reactants and products. It does not. It means equal rates. A reaction can have a huge equilibrium constant, with almost everything sitting as product, and still be perfectly at equilibrium, because the forward and reverse rates match. Trap two, saying the reaction has stopped. At dynamic equilibrium nothing has stopped, both rates are non-zero, the molecules are just being made and unmade at the same speed. Trap three is graphical. Students draw the forward rate curve dropping right down to zero. That's wrong, because a forward rate of zero is static equilibrium. On a correct rate versus time graph, the forward rate falls and the reverse rate rises until they meet at the same non-zero value and go flat. Get those three right and equilibrium questions become easy marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A sealed flask of SO₂, O₂ and SO₃ at 600°C shows identical concentrations every 10 minutes. What state is it in, and why aren't the concentrations necessarily equal?",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "All three species are present, so the reaction has not gone to completion.",
+        "The flask is sealed (closed) and 2SO₂ + O₂ ⇌ 2SO₃ is reversible.",
+        "Steady concentrations over time mean forward rate = reverse rate, both non-zero → dynamic equilibrium.",
+        "Equilibrium fixes the rates as equal, not the amounts; the actual amounts depend on Keq.",
+        "Answer: dynamic equilibrium; concentrations are constant, not equal ✓"
+      ],
+      "durationInFrames": 1200,
+      "caption": "Constant ≠ equal: the SO₂/O₂/SO₃ flask is at dynamic equilibrium.",
+      "voiceover": {
+        "text": "Quick check. A sealed flask holds sulfur dioxide, oxygen and sulfur trioxide at six hundred degrees, and when you measure every ten minutes the concentrations are identical each time. What state is it in, and why aren't those concentrations necessarily equal to each other? Pause and reason it through. Right, let's check it. First, all three species are present, so the reaction clearly hasn't gone to completion. Second, the flask is sealed, so it's a closed system, and the reaction two sulfur dioxide plus oxygen giving sulfur trioxide is reversible. Third, the concentrations holding steady over time tells you the forward rate equals the reverse rate, both non-zero, so this is dynamic equilibrium. And the key subtlety, equilibrium makes the rates equal, not the amounts. How much of each species you actually have is set by the equilibrium constant, so constant does not mean equal."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Static equilibrium: an irreversible reaction has finished; all rates are zero.",
+        "Dynamic equilibrium: forward rate = reverse rate, both non-zero.",
+        "Dynamic needs two things: a reversible reaction AND a closed system.",
+        "Equilibrium means equal rates, not equal concentrations.",
+        "On a rate–time graph both curves meet at the same non-zero value."
+      ],
+      "finalPrompt": "Classifying a system? Ask: reversible? closed? Both true means dynamic.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: static vs dynamic, the two conditions, equal rates, the graph.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, static equilibrium is an irreversible reaction that has finished, with both rates at zero. Second, dynamic equilibrium is when the forward and reverse rates are equal and both non-zero. Third, dynamic equilibrium needs two conditions together, a reversible reaction and a closed system. Fourth, equilibrium means equal rates, never equal concentrations. And fifth, on a rate versus time graph, the forward and reverse curves meet at the same non-zero value and stay flat. Whenever you classify a system, just ask the two questions, is it reversible, and is it closed. If both are yes, it's dynamic. See you next lesson."
+      }
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "title": "Proteins, Phenotype and Gene-Environment Interaction",
+  "subtitle": "How a gene becomes a trait, and why the environment gets a say",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 12",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "investigate the structure and function of proteins in living things",
+    "assess the relationship between the genotype and phenotype, including the effect of the environment"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Why is polypeptide synthesis important?",
+  "lessonIntent": "Students can explain the pathway from genotype to phenotype through protein structure and function, and explain how the environment influences phenotype without changing the genotype.",
+  "examSkill": "Explain a trait using the pathway genotype → protein → biological effect → phenotype, and justify why the same genotype can give different phenotypes in different environments.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, proteins, phenotype, and gene-environment interaction. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Proteins, Phenotype and Gene-Environment Interaction (Year 12 Biology, Module 5, Lesson 12)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One base, one whole disease",
+      "body": "In sickle-cell anaemia, a single DNA base change swaps one amino acid in haemoglobin, and the whole red blood cell deforms.",
+      "callout": "How does one nucleotide cascade into a whole-organism trait?",
+      "image": "bioM5L12SickleCell",
+      "durationInFrames": 1861,
+      "caption": "A single base change swaps glutamate for valine at position 6 of haemoglobin, causing sickle-cell anaemia.",
+      "voiceover": {
+        "text": "In 1941, Beadle and Tatum showed that each mutant strain of bread mould that couldn't make a certain enzyme had exactly one mutated gene. That gave us the one gene, one enzyme idea. Then in 1955, Vernon Ingram looked at sickle-cell anaemia and found something striking. The entire disease comes down to a single amino acid change in haemoglobin, glutamate swapped for valine at position six. Trace that backwards and it's even smaller, one base changed in the DNA, which changed one amino acid, which changed the protein's shape, which deformed the red blood cell, which produced a whole disease. So one tiny nucleotide can cascade all the way up to a whole-organism trait. Today we'll follow that pathway from gene to trait, and then ask why the same genotype can sometimes give different phenotypes."
+      }
+    },
+    {
+      "id": "concept-roles",
+      "type": "concept",
+      "heading": "Proteins do the work",
+      "body": "Proteins are the working products of gene expression, and they fall into a handful of key categories.",
+      "bullets": [
+        {
+          "text": "Enzymes catalyse reactions; structural proteins give support and strength."
+        },
+        {
+          "text": "Transport proteins move substances; receptors receive signals."
+        },
+        {
+          "text": "Antibodies defend the body by recognising foreign molecules."
+        }
+      ],
+      "secondary": "A gene's information doesn't act directly. It acts through the protein it codes for, and that protein then does a specific job in the cell or body.",
+      "callout": "Genes carry information; proteins do the actual work.",
+      "durationInFrames": 1726,
+      "caption": "Proteins are the working products of genes: enzymes, structural, transport, receptors, antibodies.",
+      "voiceover": {
+        "text": "So let's start with proteins, because proteins are where genes actually do something. A gene is just information, but the protein it codes for is the working product, the thing that gets a job done. And proteins come in a handful of key categories you should know. Enzymes catalyse chemical reactions. Structural proteins give cells and tissues their support and strength. Transport proteins move substances, like haemoglobin carrying oxygen. Receptor proteins receive signals from outside the cell. And antibodies defend the body by recognising foreign molecules. The big idea here is that a gene never acts directly on a trait. It acts through the protein, and that protein then carries out a specific function. Hold onto that, because it's the missing step most students skip."
+      }
+    },
+    {
+      "id": "concept-structure",
+      "type": "concept",
+      "heading": "Shape decides function",
+      "body": "A protein is a chain of amino acids folded into a specific shape, and that shape determines what the protein can do.",
+      "bullets": [
+        {
+          "text": "Change the amino acid sequence and you change the folded shape."
+        },
+        {
+          "text": "Change the shape and you change the function."
+        },
+        {
+          "text": "That is why a single mutation can break a protein entirely."
+        }
+      ],
+      "secondary": "This is the biological reason errors in transcription, translation or DNA itself actually matter: they can alter the sequence, which alters shape, which alters function.",
+      "callout": "Sequence sets shape; shape sets function.",
+      "durationInFrames": 1794,
+      "caption": "Protein shape comes from amino acid sequence and determines function; one change can break it.",
+      "voiceover": {
+        "text": "Now why does that one amino acid in haemoglobin matter so much? Because a protein isn't just a string of amino acids, it's that string folded into a very specific three dimensional shape, and the shape is what does the job. So here's the chain of logic that runs through this whole module. Change the amino acid sequence, and you change the way the protein folds. Change the folding, and you change its shape. Change the shape, and you change its function. That's exactly why a single mutation can completely break a protein, like it does in sickle-cell. And it's the deeper reason that errors in transcription, translation, or the DNA itself actually matter biologically, because every one of them can shift the sequence, and the sequence sets the shape."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Genotype: the genetic makeup, the combination of alleles an organism carries."
+        },
+        {
+          "text": "Phenotype: the observable characteristics of an organism."
+        },
+        {
+          "text": "Gene expression: the process of using a gene to build its protein product."
+        },
+        {
+          "text": "Gene-environment interaction: genotype and environment together shaping phenotype."
+        }
+      ],
+      "callout": "Genotype is the code; phenotype is what you can observe.",
+      "durationInFrames": 1537,
+      "caption": "Genotype, phenotype, gene expression, gene-environment interaction.",
+      "voiceover": {
+        "text": "Let's pin down the four words. Genotype is the genetic makeup, the particular combination of alleles an organism carries. Phenotype is the observable characteristics, the traits you can actually see or measure. Gene expression is the process of using a gene to build its protein product, which is everything we covered in transcription and translation. And gene-environment interaction is the idea that genotype and environment work together to shape the final phenotype. The cleanest way to keep the first two straight, genotype is the code written in the DNA, and phenotype is what shows up on the outside. The genotype is the instructions, the phenotype is the result you can observe."
+      }
+    },
+    {
+      "id": "concept-pathway",
+      "type": "concept",
+      "heading": "The pathway, not a shortcut",
+      "body": "Genes do not become traits directly. The real pathway runs genotype to protein to biological effect to phenotype.",
+      "bullets": [
+        {
+          "text": "Genotype sets which proteins are made and how they function."
+        },
+        {
+          "text": "Protein function produces a biological effect in the cell or body."
+        },
+        {
+          "text": "That effect is what we observe as the phenotype."
+        }
+      ],
+      "secondary": "Protein function is the missing link that students leave out. Never write that genes directly become traits; always route it through the protein.",
+      "callout": "Genotype to protein to effect to phenotype, every time.",
+      "durationInFrames": 1753,
+      "caption": "The pathway: genotype → protein → biological effect → phenotype; protein is the missing step.",
+      "voiceover": {
+        "text": "Now the single most important idea in this lesson, and the one that separates a band six answer. Genes do not turn into traits directly. There's a pathway, and you need to write all of it. It goes genotype, then protein, then biological effect, then phenotype. So the genotype sets which proteins get made and how well they function. Those proteins then carry out their jobs, producing some biological effect inside the cell or the body. And that effect is what we finally observe as the phenotype. The step almost everyone leaves out is the protein in the middle. So please, never write that genes directly become traits. Always route it through the protein, because the protein is the mechanism that links the gene to the trait."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "geno",
+            "label": "Genotype"
+          },
+          {
+            "id": "prot",
+            "label": "Protein"
+          },
+          {
+            "id": "effect",
+            "label": "Effect"
+          },
+          {
+            "id": "pheno",
+            "label": "Phenotype"
+          }
+        ],
+        "edges": [
+          {
+            "from": "geno",
+            "to": "prot"
+          },
+          {
+            "from": "prot",
+            "to": "effect"
+          },
+          {
+            "from": "effect",
+            "to": "pheno"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-environment",
+      "type": "concept",
+      "heading": "The environment gets a vote",
+      "body": "Phenotype is not set by genes alone. The environment can influence how a trait is expressed, without changing the genotype.",
+      "bullets": [
+        {
+          "text": "Genes set the potential; the environment can decide how much is reached."
+        },
+        {
+          "text": "Phenotype is the interaction of genotype and environment together."
+        },
+        {
+          "text": "The environment normally does not change the DNA sequence itself."
+        }
+      ],
+      "secondary": "Height is the classic example: genes set a potential height, but nutrition during growth decides whether that potential is actually reached.",
+      "callout": "Same genotype, different environment, different phenotype.",
+      "durationInFrames": 1888,
+      "caption": "Phenotype = genotype and environment interacting; environment shapes expression, not the DNA.",
+      "voiceover": {
+        "text": "But here's the twist that makes this topic interesting. Phenotype is not decided by genes alone. The environment gets a vote too. Think of it this way, your genes set a potential, and the environment often decides how much of that potential actually shows up. Height is the textbook example. Your genes set a potential height, but your nutrition during the growing years decides whether you actually reach it. Two people with very similar genetic potential can end up at different adult heights if one was well nourished and the other wasn't. So phenotype is really the interaction of genotype and environment working together. And notice the careful wording, the environment influences how the trait is expressed, but it does not normally change the underlying DNA sequence. The genotype stays the same; what changes is the outcome."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Same genes, different fur",
+      "question": "A Himalayan rabbit has the genotype for dark fur at its extremities, yet a rabbit raised in a warm room grows pale fur all over. Explain this using the genotype, phenotype and environment.",
+      "coachNote": "Route it through the protein: the pigment enzyme only works in the cold.",
+      "steps": [
+        "The genotype codes for a pigment-producing enzyme, so the genetic potential for dark fur is present.",
+        "That enzyme is temperature-sensitive: it only works in cooler conditions, like the cold extremities (ears, nose, paws).",
+        "In a warm room, the enzyme stays inactive everywhere, so no dark pigment is made.",
+        "The genotype is unchanged, but the environment changed how the gene's protein was expressed.",
+        "Answer: phenotype = genotype interacting with environment; same genes, temperature decides the fur colour ✓"
+      ],
+      "durationInFrames": 2023,
+      "caption": "Himalayan rabbit: a temperature-sensitive enzyme means the same genotype gives different fur in warm vs cold.",
+      "voiceover": {
+        "text": "Let's work through a classic example, the Himalayan rabbit. This rabbit has the genotype for dark fur at its extremities, its ears, nose and paws. But if you raise it in a warm room, it grows pale fur all over. How can the same genes give a different result? Route it through the protein. The genotype codes for a pigment-producing enzyme, so the potential for dark fur is genuinely there. But that enzyme is temperature-sensitive. It only works in cooler conditions, which is exactly why the cold extremities normally go dark while the warm body stays light. Now raise the rabbit somewhere warm, and the enzyme stays switched off everywhere, so no dark pigment forms at all. The genotype never changed. What changed was the temperature, and that changed whether the gene's protein could do its job. So the phenotype is the genotype interacting with the environment."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: saying the genotype directly determines the phenotype with nothing else involved. Phenotype is genotype, environment, and their interaction.",
+      "secondary": "Trap 2: skipping the protein. Writing 'the gene causes the trait' loses the mechanism. The gene codes for a protein, and the protein's function produces the trait. The environment can change expression without changing the DNA, and that includes epigenetic effects.",
+      "mistakeTag": "Where genotype-phenotype marks vanish",
+      "callout": "Don't skip the protein, and don't ignore the environment.",
+      "durationInFrames": 1699,
+      "caption": "Phenotype is not genes alone; always include the protein step and the environment.",
+      "voiceover": {
+        "text": "Two traps to avoid. Trap one, writing that the genotype directly determines the phenotype, full stop, with nothing else involved. That's incomplete, because phenotype comes from the genotype, the environment, and the interaction between them. The same genotype really can give different phenotypes in different environments, which is called phenotypic plasticity. Trap two, skipping the protein. If you just write the gene causes the trait, you've left out the entire mechanism. The gene codes for a protein, and it's the protein's function that produces the trait. And remember, the environment can change how genes are expressed without altering the DNA at all, including through epigenetic effects like methylation. So include both the protein step and the environment, and you've got the full picture."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Two identical twins share 100% of their DNA, yet one is noticeably taller as an adult. Explain how this is possible without any change to their genes.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Identical twins have the same genotype, so genes alone cannot explain the difference.",
+        "Phenotype is the interaction of genotype and environment, not genotype alone.",
+        "Genes set the same potential height for both twins.",
+        "Differences in nutrition or health during growth changed how fully that potential was expressed.",
+        "Answer: the environment shaped phenotype without changing the identical genotype ✓"
+      ],
+      "durationInFrames": 1807,
+      "caption": "Identical twins, identical DNA: environment shapes phenotype, so adult heights can differ.",
+      "voiceover": {
+        "text": "Quick check. Two identical twins share one hundred percent of their DNA, yet one ends up noticeably taller as an adult. How is that possible with no change to their genes? Pause and reason it through. Right, let's reason it out. Because the twins are identical, they have exactly the same genotype, so genes on their own cannot explain the difference. The key idea is that phenotype is the interaction of genotype and environment, not genotype alone. Their genes set the same potential height for both of them. But if one twin had better nutrition or health during the growing years, that twin expressed more of the shared potential. So the difference comes entirely from the environment shaping the phenotype, while the genotype stayed identical. Same genes, different conditions, different outcome."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Proteins are the working products of genes: enzymes, structural, transport, receptors, antibodies.",
+        "Amino acid sequence sets the protein's shape, and shape sets its function.",
+        "The pathway is genotype → protein → biological effect → phenotype, never genes straight to traits.",
+        "Phenotype is genotype and environment interacting, not genotype alone.",
+        "The environment changes expression, like height or fur colour, without changing the DNA."
+      ],
+      "finalPrompt": "Explaining a trait? Start at the genotype, go through the protein, then the effect, then the phenotype, and ask what the environment did.",
+      "durationInFrames": 1780,
+      "caption": "Five takeaways: protein roles, shape-function, the pathway, gene-environment, expression.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, proteins are the working products of genes, and the main categories are enzymes, structural proteins, transport proteins, receptors and antibodies. Second, the amino acid sequence sets the protein's shape, and the shape sets its function. Third, the pathway from gene to trait runs genotype, protein, biological effect, phenotype, never genes straight to traits. Fourth, phenotype is the genotype and the environment interacting, not the genotype alone. And fifth, the environment changes how a trait is expressed, like height or the Himalayan rabbit's fur, without changing the DNA itself. So whenever you explain a trait, start at the genotype, go through the protein, then the effect, then the phenotype, and always ask what the environment did. See you next lesson."
+      }
+    }
+  ]
+}

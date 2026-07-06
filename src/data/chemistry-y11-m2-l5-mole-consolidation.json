@@ -1,0 +1,172 @@
+{
+  "title": "Mole Calculations Consolidation",
+  "subtitle": "Four formulas, one currency, every IQ1 problem",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 5",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "explore the concept of the mole and relate this to Avogadro's constant to describe, calculate and manipulate masses, chemical amounts and numbers of particles"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": [
+    "CH11-9",
+    "CH11/12-4",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "How are measurements made in chemistry?",
+  "lessonIntent": "Students can chain two or more mole-calculation formulas in sequence using moles as the central hub, and solve multi-step problems that pull from Lessons 1 to 4.",
+  "examSkill": "Select and chain N = n × Nₐ, n = m ÷ M, V = n × Vₘ, and MF = EF × n to convert between any two of: particles, mass, volume, and molecular formula.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today: a consolidation. No new formulas. Just the four we already know, working together. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Mole Calculations Consolidation (Year 11 Chemistry, Module 2, Lesson 5)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "What is this gas?",
+      "body": "A 2.24 L gas sample at STP, mass 1.57 g, only C and H, 3:1 mass ratio. Find the molecule.",
+      "callout": "One question. Four lessons worth of tools.",
+      "diagram": {
+        "type": "dozenMole"
+      },
+      "durationInFrames": 720,
+      "caption": "A mystery gas problem that needs every formula from L1 through L4.",
+      "voiceover": {
+        "text": "OK, here's the problem. A chemist collects a two-point-two-four litre gas sample at STP. Mass on the balance reads one-point-five-seven grams. They analyse it and find it contains only carbon and hydrogen, in a mass ratio of three to one. What is the molecule? This is the kind of question that traps students who learnt the formulas one at a time. Because no single formula gives you the answer. You need to chain three of them together. Today, no new content. Just the four formulas we already have, working as a team. By the end you'll crack this open in five steps. Let's go."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "n is the hub",
+      "body": "Every mole problem passes through moles. n is the central currency that links mass, particles, and gas volume.",
+      "image": "l5MoleHub",
+      "bullets": [
+        {
+          "text": "From particles: n = N ÷ Nₐ. From moles: N = n × Nₐ."
+        },
+        {
+          "text": "From mass: n = m ÷ M. From moles: m = n × M."
+        },
+        {
+          "text": "From gas volume: n = V ÷ Vₘ. From moles: V = n × Vₘ."
+        },
+        {
+          "text": "From empirical formula: MF = EF × n, where n = M(compound) ÷ M(EF)."
+        }
+      ],
+      "secondary": "Two questions to ask: what gets me to moles from what I have? What gets me from moles to what I want?",
+      "callout": "Always pass through moles. Never skip the middle.",
+      "durationInFrames": 1320,
+      "caption": "Moles sit at the centre. Every formula converts to or from n.",
+      "voiceover": {
+        "text": "OK, here's the big idea for today. Every mole problem in this unit passes through moles. n is the central currency. Think of it like changing money at an airport. You can't go directly from yen to pounds. You always change to a hub currency first. Same idea here. From particles to moles. n equals N over N A. Going the other way. N equals n times N A. From mass to moles. n equals m over capital M. Going back. m equals n times capital M. From the volume of a gas to moles. n equals V over V m. And the reverse. V equals n times V m. From an empirical formula to a molecular formula. Molecular formula equals empirical formula times n, where n is the actual molar mass divided by the empirical molar mass. Four pathways. One hub. So whenever you're stuck on a multi-step problem, ask two questions. First. What formula gets me to moles from what I have? Second. What formula gets me from moles to what I want? Find those two, chain them together, you're done."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Warm-up: particles to mass",
+      "question": "A sample contains 1.806 × 10²⁴ molecules of ammonia (NH₃). Find the mass. (N = 14.007, H = 1.008)",
+      "coachNote": "Two pathways: particles → moles, then moles → mass.",
+      "steps": [
+        "n = N ÷ Nₐ = 1.806×10²⁴ ÷ 6.022×10²³ = 3.00 mol",
+        "M(NH₃) = 14.007 + 3(1.008) = 17.031 g mol⁻¹",
+        "m = n × M = 3.00 × 17.031",
+        "m = 51.09 g ✓"
+      ],
+      "image": "l5FormulaChain",
+      "durationInFrames": 1500,
+      "caption": "Particles → moles → mass. Two formulas, chained through n.",
+      "voiceover": {
+        "text": "Right, warm-up first. The question reads: a sample contains one-point-eight-zero-six times ten to the twenty-four molecules of ammonia. Find the mass. Two-step problem. Particles to moles. Then moles to mass. Step one. From lesson one. n equals N over N A. One-point-eight-zero-six times ten to the twenty-four. Divide by six-point-zero-two-two times ten to the twenty-three. That's exactly three moles. Step two. From lesson two. Molar mass of ammonia. NH three. Fourteen-point-zero-zero-seven plus three times one-point-zero-zero-eight. That's seventeen-point-zero-three-one grams per mole. Step three. Mass equals moles times molar mass. Three times seventeen-point-zero-three-one. Step four. Mass equals fifty-one-point-zero-nine grams. Done. Notice how moles in step one became the input for step three. n is the hub."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "The headline problem",
+      "question": "2.24 L of gas at STP, mass 1.57 g, only C and H, mass ratio 3:1 C:H. Find the molecular formula.",
+      "coachNote": "Five steps. All four formulas appear.",
+      "steps": [
+        "n = V ÷ Vₘ = 2.24 ÷ 22.71 = 0.0986 mol (L4)",
+        "Treat 3:1 mass ratio as 75 g C, 25 g H per 100 g (L3)",
+        "n(C) = 75 ÷ 12.011 = 6.24; n(H) = 25 ÷ 1.008 = 24.80; H:C = 3.97 ≈ 4 → EF = CH₄",
+        "M(compound) = m ÷ n = 1.57 ÷ 0.0986 = 15.9 g mol⁻¹ (L2)",
+        "Multiplier = 15.9 ÷ 16.04 ≈ 1 → MF = CH₄ (methane) ✓"
+      ],
+      "image": "l5MysteryGas",
+      "durationInFrames": 1860,
+      "caption": "All four formulas chained. The answer: CH₄.",
+      "voiceover": {
+        "text": "OK, the headline problem. Let's crack it. Step one. Volume to moles. From lesson four. n equals V over V m. The question says STP, so V m is twenty-two-point-seven-one litres per mole. n equals two-point-two-four divided by twenty-two-point-seven-one. That's nought-point-zero-nine-eight-six moles. Step two. Set up the empirical formula calc. From lesson three. Three to one mass ratio means seventy-five grams carbon and twenty-five grams hydrogen per hundred-gram sample. Step three. Moles of each element. n of carbon equals seventy-five over twelve-point-zero-one-one, that's six-point-two-four. n of hydrogen equals twenty-five over one-point-zero-zero-eight, that's twenty-four-point-eight. Ratio of H to C is twenty-four-point-eight over six-point-two-four, that's three-point-nine-seven, rounds to four. Empirical formula. CH four. Step four. Find the actual molar mass. From lesson two. Capital M equals mass over moles. One-point-five-seven divided by nought-point-zero-nine-eight-six. That's fifteen-point-nine grams per mole. Step five. Compare. Molar mass of CH four is sixteen-point-zero-four. Multiplier is fifteen-point-nine divided by sixteen-point-zero-four. Approximately one. So the molecular formula is just the empirical formula. CH four. Methane. Four formulas. One answer."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three multi-step traps",
+      "body": "Trap 1: rounding intermediate values too early. Use full precision through every step. Only round the final answer.",
+      "secondary": "Trap 2: confusing N with n. N is a particle count. n is moles. Trap 3: forgetting to multiply every subscript when scaling empirical to molecular. CH₂ times four is C₄H₈, not CH₈.",
+      "mistakeTag": "Where multi-step problems leak marks",
+      "callout": "Carry full precision. Label N vs n. Multiply every subscript.",
+      "durationInFrames": 1410,
+      "caption": "Three traps that lose marks on multi-step calculations.",
+      "voiceover": {
+        "text": "OK, three traps that cost marks every year. Trap one. Rounding too early. The classic version. A student rounds nought-point-zero-nine-eight-six moles to nought-point-one. Then carries that through three more steps. The final answer can drift by five or ten percent. Marks gone. Fix. Keep all the decimals in your calculator. Round only at the very end. Trap two. Confusing big N with little n. Big N is a count of particles, sometimes huge, like ten to the twenty-three. Little n is moles, usually small. When the question asks how many molecules, the answer is N, and you almost always need to multiply by Avogadro's number at the end. When the question asks how many moles, the answer is n. Fix. Label every quantity. Capital N or lowercase n. Trap three. Scaling the empirical formula. If the multiplier is four and your empirical formula is CH two, the molecular formula is C four H eight. Not CH eight. Every subscript multiplies, including the implicit one on carbon. Fix. Write the empirical formula with all the ones spelled out. C one H two. Then multiply each subscript."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "What mass of SO₃ contains the same number of moles as 22.0 g of CO₂? (S = 32.06, C = 12.011, O = 15.999)",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "M(CO₂) = 12.011 + 2(15.999) = 44.009 g mol⁻¹",
+        "n(CO₂) = 22.0 ÷ 44.009 = 0.500 mol",
+        "Same moles for SO₃: n(SO₃) = 0.500 mol",
+        "M(SO₃) = 32.06 + 3(15.999) = 80.057 g mol⁻¹",
+        "m(SO₃) = n × M = 0.500 × 80.057 = 40.0 g ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Two mass-to-mass conversions, linked through equal moles.",
+      "voiceover": {
+        "text": "Quick check. What mass of sulfur trioxide contains the same number of moles as twenty-two grams of carbon dioxide? Pause and work it through. Right, let's check it. Step one. Molar mass of CO two. Twelve-point-zero-one-one plus two times fifteen-point-nine-nine-nine. That's forty-four-point-zero-zero-nine grams per mole. Step two. Moles of CO two. n equals m over M. Twenty-two divided by forty-four-point-zero-zero-nine. That's exactly nought-point-five-zero-zero moles. Step three. Same number of moles for SO three. So n of SO three is also nought-point-five-zero-zero. Step four. Molar mass of SO three. Thirty-two-point-zero-six plus three times fifteen-point-nine-nine-nine. That's eighty-point-zero-five-seven grams per mole. Step five. Mass equals n times M. Nought-point-five times eighty-point-zero-five-seven. That's forty grams. Answer. Forty grams of SO three."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "What to lock in",
+      "points": [
+        "Every IQ1 problem passes through moles. n is the hub.",
+        "N = n × Nₐ links particles to moles.",
+        "n = m ÷ M links mass to moles.",
+        "V = n × Vₘ links gas volume to moles.",
+        "MF = EF × n scales empirical to molecular."
+      ],
+      "finalPrompt": "Before any multi-step problem: what gets me to moles, then from moles to the answer?",
+      "durationInFrames": 1200,
+      "caption": "Five anchors: n at the hub, plus the four pathways.",
+      "voiceover": {
+        "text": "OK, let's lock it in. Five things to remember. First, every problem in this unit passes through moles. n is the hub. Second, the four pathways. Big N equals n times Avogadro's number. That's particles. Third, n equals mass over capital M. That's mass. Fourth, V equals n times V m. That's gas volume. And fifth, the molecular formula equals the empirical formula times some whole number n, where n is the actual molar mass divided by the empirical molar mass. Two questions before every multi-step. What gets me to moles from what I have? What gets me from moles to what I want? Lock those two in, you've got the unit. See you in lesson six."
+      }
+    }
+  ]
+}

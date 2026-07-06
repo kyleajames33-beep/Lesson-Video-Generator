@@ -1,0 +1,271 @@
+{
+  "title": "LCP Mastery: Multi-Variable Problems and Graphs",
+  "subtitle": "Turning Le Chatelier knowledge into band-6 answers",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 8",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+  "syllabusDotPoints": [
+    "investigate the effects of temperature, concentration, volume and/or pressure on a system at equilibrium and explain how Le Chatelier's principle can be used to predict such effects"
+  ],
+  "moduleLessonCount": 18,
+  "nesaOutcomes": [
+    "CH12-12",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What factors affect equilibrium and how?",
+  "lessonIntent": "Students can solve multi-variable Le Chatelier problems systematically and read disturbance signatures off concentration–time graphs.",
+  "examSkill": "Analyse each disturbance separately, decide if effects reinforce or oppose, and keep rate and yield strictly distinct in every answer.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, mastering Le Chatelier with multi-variable problems and graphs. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "LCP Mastery: Multi-Variable Problems and Graphs (Year 12 Chemistry, Module 5, Lesson 8)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same knowledge, different mark",
+      "body": "In a 6-mark Haber question, the top students and the middle students knew the same content. One thing separated them.",
+      "callout": "Structure and the rate–yield distinction win the marks.",
+      "image": "m5L8ExamScript",
+      "durationInFrames": 690,
+      "caption": "Top and middle HSC answers differ by structure, not knowledge.",
+      "voiceover": {
+        "text": "OK, this is a consolidation lesson, no new content, just turning what you know into full marks. Here's a real pattern from the HSC. A six-mark Haber process question asked students to explain the effect of raising the temperature on yield and rate. The students who scored six out of six and the ones who scored two or three knew essentially the same chemistry. What separated them was structure, a clear four-part answer, and one specific idea, the activation energy argument, plus never confusing rate with yield. Today we build a systematic method for multi-variable problems, learn to read disturbance signatures straight off a graph, and lock in the rate versus yield distinction that decides the top band. This is the lesson that converts understanding into marks."
+      }
+    },
+    {
+      "id": "concept-method",
+      "type": "concept",
+      "heading": "The multi-variable method",
+      "body": "Two disturbances at once are just two single problems, then a decision about which dominates.",
+      "bullets": [
+        {
+          "text": "Analyse each disturbance separately for direction and effect on Keq."
+        },
+        {
+          "text": "Decide whether the shifts reinforce or oppose each other."
+        },
+        {
+          "text": "If they oppose, the temperature change usually dominates the position."
+        }
+      ],
+      "secondary": "Keq is always unambiguous: it changes only if temperature changed, no matter how messy the position is. Never leave Keq out of a multi-variable answer.",
+      "callout": "Separate, compare, then decide the winner.",
+      "durationInFrames": 1140,
+      "caption": "Multi-variable LCP: analyse each disturbance, then resolve reinforce vs oppose.",
+      "voiceover": {
+        "text": "Here's the method for the questions that throw two changes at you at once, like raise the temperature and decrease the volume. The trick is to stop panicking and treat it as two ordinary single problems done in sequence. First, take each disturbance on its own, and for each one work out the direction of the shift and the effect on the equilibrium constant. Second, check whether the two shifts reinforce, both pushing the same way, or oppose, pulling against each other. Third, if they oppose, you decide which dominates, and for significant temperature changes the temperature effect on the position is usually the bigger one. And here's the part that always scores, the equilibrium constant is unambiguous no matter how tangled the position gets. It changes if and only if the temperature changed. So even when you can't be totally sure which way the position lands, you can always state confidently what happened to the equilibrium constant. Never leave it out."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Step",
+          "What you do"
+        ],
+        "rows": [
+          [
+            "1. List",
+            "Write each disturbance separately"
+          ],
+          [
+            "2. Predict",
+            "Direction + Keq effect for each"
+          ],
+          [
+            "3. Compare",
+            "Do they reinforce or oppose?"
+          ],
+          [
+            "4. Decide",
+            "Temperature usually dominates position"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Rate: how fast equilibrium is reached, set by collisions, Ea and catalyst (kinetics)."
+        },
+        {
+          "text": "Yield: the proportion of product at equilibrium, set by Keq (thermodynamics)."
+        },
+        {
+          "text": "Reinforcing disturbances: two changes that shift the equilibrium the same way."
+        },
+        {
+          "text": "Opposing disturbances: two changes that shift it in opposite directions."
+        },
+        {
+          "text": "Disturbance signature: the tell-tale shape a change leaves on a concentration–time graph."
+        }
+      ],
+      "callout": "Rate is kinetics, yield is thermodynamics. Keep them apart.",
+      "durationInFrames": 1020,
+      "caption": "Rate, yield, reinforcing, opposing, disturbance signature.",
+      "voiceover": {
+        "text": "Five terms, and the first two are the heart of this lesson. Rate is how fast the system reaches equilibrium, and it's set by collision frequency, activation energy, and catalysts, that's kinetics. Yield is the proportion of reactant that's been converted to product at equilibrium, and it's set by the equilibrium constant, that's thermodynamics. These two are completely independent, and confusing them is the single most expensive error in this whole inquiry question. Reinforcing disturbances are two changes that shift the equilibrium the same way. Opposing disturbances pull it in opposite directions. And a disturbance signature is the tell-tale shape that a particular change leaves on a concentration versus time graph, which lets you work backwards and identify what was done. Rate is kinetics, yield is thermodynamics, keep them apart and you've won half the marks."
+      }
+    },
+    {
+      "id": "concept-graphs",
+      "type": "concept",
+      "heading": "Reading disturbance signatures",
+      "body": "Each disturbance leaves a unique fingerprint on a concentration–time graph.",
+      "bullets": [
+        {
+          "text": "One line jumps suddenly: that single species was added or removed."
+        },
+        {
+          "text": "All gas lines jump together: the volume was decreased (pressure up)."
+        },
+        {
+          "text": "A gradual drift with no jump: the temperature changed (Keq changes)."
+        },
+        {
+          "text": "Nothing changes at all: a catalyst was added to a system already at equilibrium."
+        }
+      ],
+      "secondary": "Always describe both the immediate change at the disturbance and the subsequent re-equilibration. The catalyst signature, a totally flat graph, is tested almost every year.",
+      "callout": "One jumps = added; all jump = squeezed; drift = heat; flat = catalyst.",
+      "durationInFrames": 1170,
+      "caption": "Graph signatures: one line jumps, all jump, gradual drift, or no change.",
+      "voiceover": {
+        "text": "Now the graph skill, reading disturbance signatures. Every type of change leaves a unique fingerprint on a concentration versus time graph, and once you know them you can work backwards from the graph to what was done. If one line jumps suddenly while the others sit still, that single species was added or removed. If all the gas lines jump up together, the volume was decreased, which raises every concentration at once. If there's no sudden jump at all, just a gradual drift to new values, the temperature was changed, and that's the only case where the equilibrium constant also changes. And if literally nothing changes, the graph stays dead flat, then a catalyst was added to a system that was already at equilibrium. That flat-line catalyst signature is tested almost every single year, so memorise it. And whatever you identify, always describe both the immediate change at the moment of disturbance and the slower re-equilibration afterwards."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Graph signature",
+          "Disturbance"
+        ],
+        "rows": [
+          [
+            "One line jumps",
+            "That species added/removed"
+          ],
+          [
+            "All gas lines jump together",
+            "Volume decreased (pressure up)"
+          ],
+          [
+            "Gradual drift, no jump",
+            "Temperature change (Keq changes)"
+          ],
+          [
+            "No change at all",
+            "Catalyst added at equilibrium"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Two changes that reinforce",
+      "question": "SO₂(g) + NO₂(g) ⇌ SO₃(g) + NO(g), ΔH = −41 kJ mol⁻¹, equal gas moles each side. The temperature is lowered 100°C AND some SO₃ is removed. Find the overall shift and the change in Keq.",
+      "coachNote": "Equal gas moles means pressure is irrelevant. Do each change, then combine.",
+      "steps": [
+        "Lowering T: forward is exothermic, so cooling shifts right; Keq increases.",
+        "Removing SO₃: a product is removed, so the system shifts right to replace it; Keq unchanged.",
+        "Both disturbances push right, so they reinforce.",
+        "Overall: shift right, more SO₃ and NO; Keq increases (from the temperature drop only).",
+        "Answer: net shift right, Keq increases ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "Cooling + removing SO₃ both shift right (reinforce); Keq up from the cooling.",
+      "voiceover": {
+        "text": "Let's work a multi-variable one. The reaction sulfur dioxide plus nitrogen dioxide giving sulfur trioxide plus nitric oxide, exothermic, with equal moles of gas on each side, so pressure is irrelevant here. Two changes happen at once, the temperature is lowered by a hundred degrees, and some sulfur trioxide is removed. Do them separately. Lowering the temperature, the forward reaction is exothermic, so cooling favours the forward direction, the equilibrium shifts right, and because temperature changed, the equilibrium constant increases. Removing sulfur trioxide, that's removing a product, so the system shifts right to replace it, and the equilibrium constant is unchanged by a concentration change. Now combine, both disturbances push the equilibrium right, so they reinforce each other. The overall result, the equilibrium shifts right, making more sulfur trioxide and nitric oxide, and the equilibrium constant increases, that change coming purely from the temperature drop. When two effects reinforce, the answer is clean and confident."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Two changes that fight, on a graph",
+      "question": "N₂O₄(g) ⇌ 2NO₂(g), ΔH = +57 kJ mol⁻¹ (brown NO₂). At t₁ the sealed syringe is compressed; at t₂ it's heated. Describe the colour at each step and the effect on Keq.",
+      "coachNote": "Compression: count gas moles. Heating: it's endothermic.",
+      "steps": [
+        "t₁ compress: colour darkens instantly (all concentrations rise), then 1 mol vs 2 mol shifts left → fades a little; Keq unchanged.",
+        "Net after t₁: paler than the instant dark, but still darker than the original.",
+        "t₂ heat: forward is endothermic, so heating shifts right, making more brown NO₂ → darkens.",
+        "Heating changed temperature, so Keq increases.",
+        "Answer: t₁ dark then partly fades; t₂ darkens; Keq up only at t₂ ✓"
+      ],
+      "durationInFrames": 1440,
+      "caption": "Compress: dark then fades (shift left); heat endothermic: darkens, Keq up.",
+      "voiceover": {
+        "text": "Now one that combines a graph with opposing intuitions. The equilibrium dinitrogen tetroxide giving two nitrogen dioxide, endothermic, where nitrogen dioxide is brown. At time one you compress the sealed syringe, at time two you heat it. Describe the colour at each step and what happens to the equilibrium constant. Time one, compression. The instant you squeeze, the colour darkens, because all the concentrations jump up together, more brown molecules per unit volume. But then the system responds, and counting gas moles, one on the left versus two on the right, increasing the pressure shifts it left, toward the colourless side, so the colour fades a little. The net result, paler than that instant dark, but still darker than where it started, and the equilibrium constant is unchanged, because pressure doesn't change it. Time two, heating. The forward reaction is endothermic, so heating shifts it right, making more brown nitrogen dioxide, so it darkens. And because you changed the temperature, this time the equilibrium constant increases. So the colour story is darken-then-partly-fade, then darken again, and the equilibrium constant only moves at the heating step."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: saying 'conditions changed, so Keq changed'. Only a temperature change moves Keq.",
+      "secondary": "Trap 2: confusing rate with yield, like 'the catalyst makes more product'. Rate is how fast; yield is how much. Trap 3: analysing only one disturbance and ignoring the other. Address every change the question names.",
+      "mistakeTag": "Where consolidation marks vanish",
+      "callout": "Only T moves Keq; rate ≠ yield; handle every disturbance.",
+      "durationInFrames": 1230,
+      "caption": "Only temperature changes Keq; rate isn't yield; analyse every disturbance.",
+      "voiceover": {
+        "text": "Three traps, and these are the exact ones that cost marks in that HSC question. Trap one, writing conditions changed, so the equilibrium constant changed. No. Only a temperature change moves the equilibrium constant, full stop. If you changed concentration or pressure, the constant is the same. Trap two, confusing rate with yield, the classic being the catalyst makes more product. Rate is how fast you reach equilibrium, yield is how much product you have there, and a catalyst changes only the rate. Say more product and you've claimed a yield change, which is wrong. Trap three, the lazy multi-variable answer that analyses one disturbance and quietly ignores the other. If the question says the temperature is increased and the volume is decreased, the marker wants both, separately, before you combine them. Miss one and you cap your marks. Avoid those three and your consolidation answers are airtight."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Sealed N₂ + 3H₂ ⇌ 2NH₃ at 500 K. For each: (i) remove some NH₃; (ii) halve the volume; (iii) add argon at constant volume. State the shift, if any.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "(i) Removing NH₃ removes a product, so the system shifts right to replace it.",
+        "(ii) Halving the volume raises pressure; left has 4 mol gas, right 2 → shift right.",
+        "(iii) Argon at constant volume leaves the reacting partial pressures unchanged → no shift.",
+        "Keq is unchanged in all three, since temperature is constant.",
+        "Answer: (i) right, (ii) right, (iii) no shift ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "Remove NH₃ → right; halve volume → right; inert gas at fixed V → no shift.",
+      "voiceover": {
+        "text": "Quick check, three changes to the Haber equilibrium at five hundred kelvin. Part one, you remove some ammonia. Part two, you halve the volume. Part three, you add argon at constant volume. State the shift for each, if any. Pause and reason it through. Right, let's check it. Part one, removing ammonia removes a product, so the system shifts right to replace some of it. Part two, halving the volume raises the pressure, and counting gas moles, four on the left versus two on the right, so it shifts right toward fewer gas moles. Part three, the trap, adding argon at constant volume. It raises the total pressure, but it doesn't squeeze the nitrogen, hydrogen and ammonia any closer together, so their partial pressures and collision frequencies are unchanged, and there's no shift. And in all three, the equilibrium constant is unchanged, because the temperature never moved. Two shifts right and one no-shift, and the constant holds throughout."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "For multi-variable problems, analyse each disturbance separately, then combine.",
+        "When effects oppose, the temperature change usually dominates the position.",
+        "Keq changes only if temperature changed, however messy the position.",
+        "Graph signatures: one jump = added; all jump = squeezed; drift = heat; flat = catalyst.",
+        "Rate is kinetics; yield is thermodynamics; never confuse them."
+      ],
+      "finalPrompt": "Two disturbances? Do them one at a time, then ask: reinforce or oppose?",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: separate analysis, dominance, Keq rule, graph signatures, rate vs yield.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, for multi-variable problems, analyse each disturbance on its own, then combine them. Second, when the effects oppose, the temperature change usually dominates the position. Third, the equilibrium constant changes only if the temperature changed, no matter how complicated the position is. Fourth, the graph signatures, one line jumping means that species was added, all lines jumping means the volume was decreased, a gradual drift means the temperature changed, and a completely flat graph means a catalyst was added at equilibrium. And fifth, rate is kinetics and yield is thermodynamics, so never let those two blur together. Whenever a question hits you with two changes, do them one at a time, then ask the key question, do they reinforce or oppose. See you next lesson."
+      }
+    }
+  ]
+}

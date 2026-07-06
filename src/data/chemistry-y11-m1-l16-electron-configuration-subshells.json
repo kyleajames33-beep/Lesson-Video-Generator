@@ -1,0 +1,237 @@
+{
+  "title": "Electron Configuration: Subshell Notation",
+  "subtitle": "Filling s, p, and d subshells the spdf way",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 16",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "model the atom’s discrete energy levels, including electronic configuration and spdf notation (ACSCH017, ACSCH018, ACSCH020, ACSCH022)"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": [
+    "CH11-8",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "Why are atoms of elements different from one another?",
+  "lessonIntent": "Students can write spdf electron configurations using the Aufbau order and account for the 4s-before-3d rule and the Cr and Cu anomalies.",
+  "examSkill": "Fill subshells in Aufbau order, write them in shell-number order, and recognise the half-filled and full d-subshell exceptions.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, electron configuration with spdf subshell notation. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Electron Configuration: Subshell Notation (Year 11 Chemistry, Module 1, Lesson 16)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One address per electron",
+      "body": "Sodium and potassium are both in Group 1 and both react violently with water. Their configurations reveal why.",
+      "callout": "Configuration is the electron's exact address.",
+      "durationInFrames": 690,
+      "caption": "Na and K share Group 1 chemistry; their configurations both end in a single s electron.",
+      "voiceover": {
+        "text": "OK, here's a question to set us up. Sodium has eleven electrons and potassium has nineteen, yet they're both in group one and both react violently with water to form a one plus ion. Why do two atoms with such different electron counts behave almost identically? The answer is hidden in their electron configurations. Both end with a single, lonely electron in an outer s subshell. That one outer electron is what drives the chemistry, and everything underneath it is just buried core. Today we'll learn to write out the full address of every electron in an atom, using spdf notation, so you can read this kind of similarity straight off the page."
+      }
+    },
+    {
+      "id": "concept-subshells",
+      "type": "concept",
+      "heading": "Subshells and their capacity",
+      "body": "Each shell splits into subshells, s, p, d, and f, and each subshell holds a fixed maximum number of electrons.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Subshell",
+          "Orbitals",
+          "Max electrons"
+        ],
+        "rows": [
+          [
+            "s",
+            "1",
+            "2"
+          ],
+          [
+            "p",
+            "3",
+            "6"
+          ],
+          [
+            "d",
+            "5",
+            "10"
+          ],
+          [
+            "f",
+            "7",
+            "14"
+          ]
+        ],
+        "delay": 18
+      },
+      "secondary": "Each orbital holds at most 2 electrons. A shell n holds 2n² electrons: shell 1 → 2, shell 2 → 8, shell 3 → 18.",
+      "callout": "s holds 2, p holds 6, d holds 10, f holds 14.",
+      "durationInFrames": 1140,
+      "caption": "s (2e⁻), p (6e⁻), d (10e⁻), f (14e⁻); shell n holds 2n².",
+      "voiceover": {
+        "text": "Let's build up the structure. Each electron shell isn't a single thing, it splits into subshells, and there are four types you need, s, p, d, and f. They differ in how many orbitals they contain, and since each orbital holds a maximum of two electrons, that sets the capacity. The s subshell has one orbital, so it holds two electrons. The p subshell has three orbitals, holding six. The d subshell has five orbitals, holding ten. And the f subshell has seven orbitals, holding fourteen. So the capacities run two, six, ten, fourteen, and that's worth memorising. There's also a neat rule for a whole shell, shell number n holds two n squared electrons, so shell one holds two, shell two holds eight, and shell three holds eighteen."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Subshell: a division of a shell, written s, p, d, or f."
+        },
+        {
+          "text": "Aufbau principle: electrons fill the lowest-energy subshell first."
+        },
+        {
+          "text": "Pauli exclusion: an orbital holds at most 2 electrons, opposite spins."
+        },
+        {
+          "text": "Hund's rule: fill orbitals of equal energy singly before pairing."
+        }
+      ],
+      "callout": "Aufbau sets the order; Pauli and Hund set how each orbital fills.",
+      "durationInFrames": 960,
+      "caption": "Subshell, Aufbau principle, Pauli exclusion, Hund's rule.",
+      "voiceover": {
+        "text": "Four terms anchor everything. A subshell is a division within a shell, written as s, p, d, or f. The Aufbau principle says electrons fill the lowest-energy subshell available first, so you build the atom from the bottom up. The Pauli exclusion principle says any one orbital holds at most two electrons, and they must have opposite spins, so you'll never see two arrows pointing the same way in one box. And Hund's rule says when you have several orbitals at the same energy, you put one electron in each singly before you start pairing them up. So Aufbau gives the order you fill in, while Pauli and Hund govern how each subshell fills internally."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The Aufbau filling order",
+      "body": "Subshells don't fill in plain shell order. The 4s fills before 3d because 4s is lower in energy.",
+      "bullets": [
+        {
+          "text": "Memorise: 1s 2s 2p 3s 3p 4s 3d 4p 5s 4d 5p."
+        },
+        {
+          "text": "4s fills before 3d because 4s is lower in energy."
+        },
+        {
+          "text": "Write the finished configuration in shell-number order, not filling order."
+        }
+      ],
+      "secondary": "So calcium fills 4s before 3d, but is written 1s²2s²2p⁶3s²3p⁶4s² with shells in numerical order.",
+      "callout": "Fill by energy; write by shell number.",
+      "durationInFrames": 1080,
+      "caption": "Fill order 1s 2s 2p 3s 3p 4s 3d 4p 5s 4d 5p; write in shell-number order.",
+      "voiceover": {
+        "text": "Now the part students trip over, the filling order. Subshells do not simply fill in shell-number order, because their energies overlap. The sequence to memorise for HSC is one s, two s, two p, three s, three p, four s, three d, four p, five s, four d, five p. The headline surprise is that four s fills before three d, and that's because the four s subshell is actually lower in energy than three d, so electrons go there first. But here's the second half of the rule, which matters just as much. When you write the finished configuration down, you list the subshells in shell-number order, not the order you filled them. So calcium fills four s before three d, but you write it as one s two, two s two, two p six, three s two, three p six, four s two, with shell four after shell three. Fill by energy, write by shell number."
+      },
+      "diagram": {
+        "type": "aufbauStaircase"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Configuration of sulfur",
+      "question": "Write the full electron configuration for sulfur (Z = 16).",
+      "coachNote": "Fill in Aufbau order until you place all 16 electrons.",
+      "steps": [
+        "Sulfur has 16 electrons to place",
+        "Fill in order: 1s² (2), 2s² (4), 2p⁶ (10), 3s² (12)",
+        "Continue into 3p: 16 − 12 = 4 electrons go into 3p",
+        "Full configuration: 1s²2s²2p⁶3s²3p⁴",
+        "Answer: 1s²2s²2p⁶3s²3p⁴ ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "S (Z = 16): 1s²2s²2p⁶3s²3p⁴.",
+      "voiceover": {
+        "text": "Let's write a configuration from scratch. Sulfur, atomic number sixteen, so sixteen electrons to place. Step one, note we have sixteen electrons. Step two, fill in Aufbau order, counting as we go. One s two takes us to two electrons, two s two takes us to four, two p six takes us to ten, and three s two takes us to twelve. Step three, we've placed twelve, so four electrons remain, and the next subshell is three p, so those four go into three p. Step four, write it all out, one s two, two s two, two p six, three s two, three p four. So the full configuration of sulfur is one s two two s two two p six three s two three p four. A common wrong answer is to overfill three s or skip to a four shell, so always track your running total against the atomic number."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "The chromium anomaly",
+      "question": "Write the abbreviated configuration for chromium (Z = 24). Why isn't it [Ar]3d⁴4s²?",
+      "coachNote": "Expect the pattern, then apply the half-filled stability exception.",
+      "steps": [
+        "Argon (Z = 18) is the core, leaving 6 electrons for Cr",
+        "The expected pattern would be [Ar]3d⁴4s²",
+        "A half-filled d⁵ subshell is extra stable, so one 4s electron shifts to 3d",
+        "This gives [Ar]3d⁵4s¹, with all five d orbitals singly filled",
+        "Answer: Cr is [Ar]3d⁵4s¹ (half-filled d⁵ stability) ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Cr (Z = 24) is [Ar]3d⁵4s¹, not [Ar]3d⁴4s², for half-filled d⁵ stability.",
+      "voiceover": {
+        "text": "Now an exception worth knowing cold, chromium. Atomic number twenty-four. Step one, the nearest noble gas below it is argon, with eighteen electrons, so we use argon as the core and have six electrons left to place. Step two, the pattern you'd expect is argon core, then three d four, four s two. Step three, but there's a stability rule. A half-filled d subshell, with all five d orbitals each holding one electron, is unusually stable. So chromium promotes one electron out of four s and into three d, to reach that half-filled arrangement. Step four, that gives argon core, three d five, four s one. So chromium is written as argon, three d five, four s one. The reason isn't random, it's that half-filled d five gives the atom extra stability, which is also why copper does a similar thing to reach a full d ten."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: writing iron as ...4s²3d⁶. Fill 4s first, but write 3d before 4s in shell order: ...3d⁶4s².",
+      "secondary": "Trap 2: forgetting the Cr and Cu exceptions, writing 3d⁴4s² and 3d⁹4s². Trap 3: violating Hund's rule by pairing electrons before each orbital has one.",
+      "mistakeTag": "Where configuration marks vanish",
+      "callout": "Write 3d before 4s; remember Cr and Cu; fill singly before pairing.",
+      "durationInFrames": 1230,
+      "caption": "Write 3d before 4s; Cr and Cu are exceptions; obey Hund's singly-fill rule.",
+      "voiceover": {
+        "text": "Three traps. Trap one, writing iron as ending in four s two, three d six. The exam wants shell-number order, so even though you fill four s first, you write three d before four s, giving three d six, four s two. Fill by energy, write by shell number, every time. Trap two, forgetting the two famous exceptions. Chromium is three d five, four s one, not three d four, four s two, and copper is three d ten, four s one, not three d nine, four s two. Half-filled and full d subshells are extra stable, so memorise those two. Trap three, breaking Hund's rule in orbital diagrams. When you fill a p or d subshell, put one electron in each orbital first, all pointing the same way, before you double any of them up. Pairing too early is a classic lost mark."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "An element has the abbreviated configuration [Kr]4d¹⁰5s²5p⁴. What is its atomic number?",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Krypton has atomic number 36, so the core holds 36 electrons",
+        "Count the rest: 4d¹⁰ + 5s² + 5p⁴ = 10 + 2 + 4 = 16 electrons",
+        "Total electrons = 36 + 16 = 52",
+        "A neutral atom has Z = number of electrons",
+        "Answer: Z = 52 (it is tellurium) ✓"
+      ],
+      "durationInFrames": 1200,
+      "caption": "[Kr]4d¹⁰5s²5p⁴ → 36 + 16 = 52 (tellurium).",
+      "voiceover": {
+        "text": "Quick check, reading a configuration backwards. An element has the abbreviated configuration krypton core, four d ten, five s two, five p four. Find its atomic number. Pause and work it through. Right, let's check it. Step one, the krypton core stands for thirty-six electrons, since krypton has atomic number thirty-six. Step two, count the electrons written after the core. Four d ten is ten, five s two is two, and five p four is four, which adds to sixteen. Step three, total them, thirty-six plus sixteen gives fifty-two. Step four, for a neutral atom the atomic number equals the number of electrons, so the atomic number is fifty-two. That element is tellurium. The abbreviation is just a shortcut, the core noble gas carries its own electron count."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Subshell capacity: s = 2, p = 6, d = 10, f = 14.",
+        "Aufbau order: 1s 2s 2p 3s 3p 4s 3d 4p 5s 4d 5p.",
+        "Fill 4s before 3d, but write subshells in shell-number order.",
+        "Cr is [Ar]3d⁵4s¹ and Cu is [Ar]3d¹⁰4s¹ for d-subshell stability.",
+        "Obey Hund's rule: fill orbitals singly before pairing."
+      ],
+      "finalPrompt": "Writing a configuration? Fill by energy, but write by shell number.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: capacities, Aufbau order, 4s/3d, Cr/Cu, Hund's rule.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, the subshell capacities, s holds two, p holds six, d holds ten, and f holds fourteen. Second, the Aufbau filling order, one s, two s, two p, three s, three p, four s, three d, four p, five s, four d, five p. Third, you fill four s before three d, but you write the subshells in shell-number order. Fourth, the two exceptions, chromium is argon three d five four s one, and copper is argon three d ten four s one, both for the stability of a half-filled or full d subshell. And fifth, obey Hund's rule, fill orbitals singly before you pair them. Fill by energy, write by shell number, and you'll get these right every time. See you next lesson."
+      }
+    }
+  ]
+}

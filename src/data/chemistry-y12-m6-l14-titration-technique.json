@@ -1,0 +1,200 @@
+{
+  "title": "Titration: Technique and Calculations",
+  "subtitle": "Standard solutions, concordant titres, clean results",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 14",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6: Acid/Base Reactions",
+  "syllabusDotPoints": [
+    "conduct practical investigations to analyse the concentration of an unknown acid or base by titration"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "CH12-13",
+    "CH11/12-1",
+    "CH11/12-2",
+    "CH11/12-3",
+    "CH11/12-5",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "How are solutions of acids and bases analysed?",
+  "lessonIntent": "Students can choose a valid primary standard, apply correct titration technique, and run the four-step calculation to find an unknown concentration.",
+  "examSkill": "Justify a primary standard against its criteria, rinse each piece of glassware correctly, average only concordant titres, then run moles, ratio, divide.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, titration, the technique and the calculation done right. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Titration: Technique and Calculations (Year 12 Chemistry, Module 6, Lesson 14)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A whole result rests on one concentration",
+      "body": "If the solution you trust isn't truly known, every titre and every answer inherits the error.",
+      "callout": "Accuracy starts before the first drop.",
+      "image": "titrationBenchSetup",
+      "durationInFrames": 630,
+      "caption": "A titration is only as accurate as the standard solution it relies on.",
+      "voiceover": {
+        "text": "OK, a titration looks simple. You drip one solution into another until an indicator changes colour, then do a quick calculation. But the whole result rests on one thing, knowing the exact concentration of the solution you're measuring against. If that reference concentration is even slightly wrong, every titre you read and every answer you calculate inherits the error. So accuracy in titration doesn't start at the burette. It starts earlier, with how you prepare your standard solution, and which substance you trust to make it. Today we walk through the technique decisions that make a result reliable, and the four-step calculation that turns a titre into a concentration."
+      }
+    },
+    {
+      "id": "concept-standards",
+      "type": "concept",
+      "heading": "Primary standards you can trust",
+      "body": "A primary standard can be weighed accurately and dissolved to a precisely known concentration.",
+      "bullets": [
+        {"text": "Must be pure, stable in air, non-hygroscopic, and high in molar mass."},
+        {"text": "Na₂CO₃ (M = 106.0) standardises HCl; oxalic acid dihydrate (M = 126.1) standardises NaOH."},
+        {"text": "NaOH and HCl cannot be primary standards."}
+      ],
+      "secondary": "NaOH absorbs CO₂ and water from the air; HCl's concentration can't be fixed by weighing. Both must be standardised first.",
+      "callout": "Weigh it accurately, or it can't be a standard.",
+      "durationInFrames": 1110,
+      "caption": "Primary standards: pure, stable, non-hygroscopic, high M (Na₂CO₃, oxalic acid).",
+      "voiceover": {
+        "text": "First, the reference. A standard solution is one whose concentration is precisely known, and to make one you need a primary standard. That's a substance you can weigh accurately and dissolve to give a reliably known concentration. The criteria are worth memorising. It must be high purity, stable in air, non-hygroscopic, meaning it doesn't soak up water vapour, and ideally high in molar mass, so a tiny weighing error barely matters. Two you'll use constantly. Anhydrous sodium carbonate, molar mass one hundred and six, standardises hydrochloric acid. And oxalic acid dihydrate, molar mass one hundred and twenty-six, standardises sodium hydroxide. Now the catch. Sodium hydroxide and hydrochloric acid cannot be primary standards. Sodium hydroxide absorbs carbon dioxide and water straight from the air, so its concentration drifts. And hydrochloric acid is a gas dissolved in water, so you can't pin its concentration down by weighing. Both must be standardised against a true primary standard before you rely on them."
+      }
+    },
+    {
+      "id": "concept-technique",
+      "type": "concept",
+      "heading": "Rinse right, read right",
+      "body": "Each piece of glassware gets a specific rinse, and only concordant titres count.",
+      "diagram": {
+        "type": "titrationSetup"
+      },
+      "bullets": [
+        {"text": "Rinse the burette with titrant, the pipette with analyte, the flask with water only."},
+        {"text": "Read the bottom of the meniscus at eye level to ±0.05 mL."},
+        {"text": "Average only concordant titres, those within 0.10 mL of each other."}
+      ],
+      "secondary": "The endpoint is where the indicator changes; the equivalence point is where the moles exactly match. A good indicator makes them coincide.",
+      "callout": "Concordant titres only, never the rough one.",
+      "durationInFrames": 1140,
+      "caption": "Burette↔titrant, pipette↔analyte, flask↔water; average only concordant titres.",
+      "voiceover": {
+        "text": "Now the technique, and every rule here has a reason. Rinsing matters because leftover water dilutes a solution. So rinse the burette with the titrant that goes in it, and rinse the pipette with the analyte it will deliver. But the conical flask gets rinsed with distilled water only, because the moles in the flask are what you measured with the pipette, and a bit of water doesn't change those moles. Read the burette at the bottom of the meniscus, with your eye level with the liquid, to avoid parallax, recording to the nearest nought-point-zero-five of a millilitre. Then run several trials and keep only the concordant ones, the titres within nought-point-one of a millilitre of each other. You average those and discard the rough first run. And keep two terms straight. The endpoint is where the indicator changes colour. The equivalence point is where the moles of acid and base exactly match. A well chosen indicator makes those two practically coincide."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Titration vocabulary",
+      "bullets": [
+        {"text": "Standard solution: a solution of accurately known concentration."},
+        {"text": "Aliquot: the fixed volume of analyte pipetted into the flask."},
+        {"text": "Titre: the volume of titrant delivered from the burette."},
+        {"text": "Concordant titres: results agreeing within 0.10 mL, averaged for the answer."}
+      ],
+      "callout": "Only concordant titres go into the average.",
+      "durationInFrames": 930,
+      "caption": "Standard solution, aliquot, titre, and concordant titres.",
+      "voiceover": {
+        "text": "Quick vocabulary, because the calculation leans on these. A standard solution is one whose concentration you know accurately, made from a primary standard. An aliquot is the fixed volume of the unknown that you pipette into the flask, say twenty-five millilitres. The titre is the volume of titrant you deliver from the burette to reach the endpoint. And concordant titres are the ones that agree within nought-point-one of a millilitre. Those are the only results you average. The rough trial, where you overshoot to find the rough endpoint, is never included. Keep those four straight and the four-step calculation is just bookkeeping."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Finding an unknown acid",
+      "question": "20.00 mL of ethanoic acid is titrated with 0.100 mol L⁻¹ NaOH. Concordant titre 18.50 mL. CH₃COOH + NaOH → CH₃COONa + H₂O. Find c(CH₃COOH).",
+      "coachNote": "1:1 ratio; divide by the 20.00 mL aliquot, not the titre.",
+      "steps": [
+        "n(NaOH) = c × V = 0.100 × 0.01850 = 1.85 × 10⁻³ mol",
+        "Ratio CH₃COOH : NaOH = 1 : 1, so n(CH₃COOH) = 1.85 × 10⁻³ mol",
+        "V(aliquot) = 20.00 mL = 0.02000 L",
+        "c(CH₃COOH) = 1.85 × 10⁻³ ÷ 0.02000",
+        "c(CH₃COOH) = 0.0925 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "1:1 ratio and the 20.00 mL aliquot give c = 0.0925 mol L⁻¹.",
+      "voiceover": {
+        "text": "Let's find an unknown concentration. Twenty millilitres of ethanoic acid is titrated with nought-point-one mole per litre sodium hydroxide, and the concordant titre is eighteen-point-five-zero millilitres. The equation is one to one. Step one, the moles of the base we know exactly. Nought-point-one times nought-point-zero-one-eight-five is one-point-eight-five times ten to the minus three moles. Step two, the ratio of acid to base is one to one, so the acid has the same number of moles, one-point-eight-five times ten to the minus three. Step three, the volume to divide by is the aliquot, the twenty millilitres of acid you pipetted, not the titre. That's nought-point-zero-two litres. Step four, divide. One-point-eight-five times ten to the minus three over nought-point-zero-two is nought-point-zero-nine-two-five moles per litre. The titre got us the moles, but the aliquot gives us the concentration."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "A diprotic titration",
+      "question": "25.00 mL of H₂SO₄ is titrated with 0.1000 mol L⁻¹ NaOH. Average titre 22.60 mL. H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O. Find c(H₂SO₄).",
+      "coachNote": "Ratio is 1:2, so halve the base moles for the acid.",
+      "steps": [
+        "n(NaOH) = 0.1000 × 0.02260 = 2.260 × 10⁻³ mol",
+        "Ratio H₂SO₄ : NaOH = 1 : 2, so n(H₂SO₄) = 2.260 × 10⁻³ ÷ 2 = 1.130 × 10⁻³ mol",
+        "V(aliquot) = 25.00 mL = 0.02500 L",
+        "c(H₂SO₄) = 1.130 × 10⁻³ ÷ 0.02500",
+        "c(H₂SO₄) = 0.04520 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "Halving for the 1:2 ratio gives c(H₂SO₄) = 0.04520 mol L⁻¹.",
+      "voiceover": {
+        "text": "Now one where the ratio bites. Twenty-five millilitres of sulfuric acid is titrated with nought-point-one mole per litre sodium hydroxide, average titre twenty-two-point-six millilitres. The equation shows sulfuric acid reacting with two sodium hydroxide. Step one, the base moles. Nought-point-one times nought-point-zero-two-two-six is two-point-two-six times ten to the minus three. Step two, the ratio is one acid to two base, so divide the base moles by two. That gives one-point-one-three times ten to the minus three moles of acid. Step three, divide by the acid's aliquot, twenty-five millilitres, nought-point-zero-two-five litres. Step four, one-point-one-three times ten to the minus three over nought-point-zero-two-five is nought-point-zero-four-five-two moles per litre. Forgetting to halve for the one to two ratio would have doubled your answer, and that's the single most common slip in these calculations."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three technique traps",
+      "body": "Trap 1: calling NaOH a primary standard. It absorbs CO₂ and water, so it must be standardised.",
+      "secondary": "Trap 2: rinsing the conical flask with the analyte. Rinse it with water only. Trap 3: averaging a non-concordant rough titre into the result.",
+      "mistakeTag": "Where titration marks vanish",
+      "callout": "Standardise NaOH, water-rinse the flask, concordant only.",
+      "durationInFrames": 1230,
+      "caption": "NaOH isn't a primary standard; flask gets water; never average the rough titre.",
+      "voiceover": {
+        "text": "Three traps that quietly cost marks. Trap one, calling sodium hydroxide a primary standard because it's easy to weigh. It isn't one, because it absorbs carbon dioxide and water from the air, so its true concentration drifts. It must be standardised against something like oxalic acid first. And by the way, the reason isn't that it's a strong base, it's the air sensitivity. Trap two, rinsing the conical flask with the analyte. Don't. Rinse the flask with distilled water only, because you've already fixed the moles in it with the pipette, and extra analyte would add extra moles and inflate your result. Trap three, averaging the rough titre. That first, fast run is just for finding the rough endpoint. Only the concordant titres, the ones within nought-point-one of a millilitre, go into the average. Three small habits, easy marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "25.00 mL of NaOH is titrated against 0.100 mol L⁻¹ HCl. Titres: 22.45, 22.50, 22.40, and a rough 23.10 mL. HCl + NaOH → NaCl + H₂O. Find c(NaOH).",
+      "pausePrompt": "Pause and decide which titres to average first.",
+      "answerSteps": [
+        "Discard 23.10 mL (rough, not concordant with the others)",
+        "Average = (22.45 + 22.50 + 22.40) ÷ 3 = 22.45 mL",
+        "n(HCl) = 0.100 × 0.02245 = 2.245 × 10⁻³ mol",
+        "Ratio 1:1, so n(NaOH) = 2.245 × 10⁻³ mol; V = 25.00 mL = 0.02500 L",
+        "c(NaOH) = 2.245 × 10⁻³ ÷ 0.02500 = 0.0898 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Drop the rough titre; average 22.45 mL gives c(NaOH) = 0.0898 mol L⁻¹.",
+      "voiceover": {
+        "text": "Quick check, and the first move is the test. Twenty-five millilitres of sodium hydroxide is titrated against nought-point-one mole per litre hydrochloric acid. The titres are twenty-two-point-four-five, twenty-two-point-five-zero, twenty-two-point-four-zero, and a rough twenty-three-point-one-zero. Pause and decide which to average. Right, let's check. The twenty-three-point-one is the rough run, well outside nought-point-one of the others, so discard it. Average the three concordant titres and you get twenty-two-point-four-five millilitres. Now the calculation. The moles of acid are nought-point-one times nought-point-zero-two-two-four-five, which is two-point-two-four-five times ten to the minus three. The ratio is one to one, so the base has the same moles. Divide by the twenty-five millilitre aliquot, nought-point-zero-two-five litres, and you get nought-point-zero-eight-nine-eight moles per litre. Spotting and dropping that rough titre is what keeps the answer honest."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A primary standard is pure, stable, non-hygroscopic and high in molar mass.",
+        "NaOH and HCl must be standardised; they aren't primary standards.",
+        "Rinse burette with titrant, pipette with analyte, flask with water only.",
+        "Average only concordant titres, within 0.10 mL of each other.",
+        "Calculate: moles known → mole ratio → divide by the aliquot."
+      ],
+      "finalPrompt": "Dividing for concentration? Use the aliquot volume, not the titre.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: standards, rinses, concordant titres, and the four-step calc.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, a primary standard is pure, stable in air, non-hygroscopic, and ideally high in molar mass, like sodium carbonate or oxalic acid. Second, sodium hydroxide and hydrochloric acid are not primary standards, so they must be standardised before you trust their concentration. Third, rinse the burette with the titrant, the pipette with the analyte, but the conical flask with distilled water only. Fourth, average only the concordant titres, the ones agreeing within nought-point-one of a millilitre, and throw out the rough run. And fifth, the calculation is four steps, find the moles you know, cross the mole ratio, then divide by the aliquot volume to get the concentration. Always the aliquot, never the titre. See you in the next lesson."
+      }
+    }
+  ]
+}

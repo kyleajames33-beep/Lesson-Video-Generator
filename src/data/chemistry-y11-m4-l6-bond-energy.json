@@ -1,0 +1,216 @@
+{
+  "title": "Bond Energy & Enthalpy Change",
+  "subtitle": "Calculating ΔH from the bonds broken and formed",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Lesson 6",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Explain the enthalpy change of a reaction in terms of the energy required to break bonds and the energy released when bonds form",
+    "Calculate the enthalpy change of a reaction using bond energies"
+  ],
+  "lessonIntent": "Students can calculate ΔH for a reaction from bond energies using ΔH = Σ(bonds broken) − Σ(bonds formed).",
+  "examSkill": "Sum the bond energies broken and formed, apply ΔH = bonds broken − bonds formed, and interpret the sign.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson `subjects/chemistry/year11/module4/lesson06.html`. Anchor: nitrogen cycle & Haber process. Core: ΔH = Σ(bonds broken) − Σ(bonds formed); breaking absorbs, forming releases. Worked example: H2 + Cl2 → 2HCl from bond energies. Misconception: bond breaking releases energy (it ABSORBS; forming releases). Bond-energy table = image ref (table component exists but using site-style image).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Bond Energy and Enthalpy Change. Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Bond Energy and Enthalpy Change. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L6/title.fc5f999b7a61.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why is the Haber process so hard to start?",
+      "body": "The Haber process makes ammonia to feed half the planet. But nitrogen's triple bond is one of the strongest in chemistry, it takes a huge amount of energy to break before any ammonia can form. Bond energies explain exactly how much.",
+      "bullets": [
+        {
+          "text": "N₂ has a very strong triple bond.",
+          "at": 5
+        },
+        {
+          "text": "Breaking it absorbs a lot of energy.",
+          "at": 10
+        },
+        {
+          "text": "Forming new N–H bonds releases energy.",
+          "at": 16
+        },
+        {
+          "text": "ΔH is the balance of the two.",
+          "at": 22
+        }
+      ],
+      "callout": "Every reaction is bonds broken, then bonds formed.",
+      "image": "m4l6HookHaber",
+      "durationInFrames": 1107,
+      "caption": "The Haber process: breaking N₂'s strong bond costs energy.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 870,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the reaction that feeds the world. The Haber process makes ammonia, the basis of fertiliser for half the planet. But there's a catch — nitrogen's triple bond is one of the strongest bonds in all of chemistry, and you have to break it before any ammonia can form. That's why the process needs such extreme conditions. Bond energies let us calculate exactly how much energy the breaking costs and the forming returns — and the balance between them is delta H.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L6/hook.e29e52c1cb15.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Break bonds in, form bonds out",
+      "body": "Every reaction does two things energetically: it breaks the reactant bonds, then forms the product bonds. The energy balance is ΔH.",
+      "bullets": [
+        {
+          "text": "Breaking bonds ABSORBS energy (endothermic step).",
+          "at": 5
+        },
+        {
+          "text": "Forming bonds RELEASES energy (exothermic step).",
+          "at": 11
+        },
+        {
+          "text": "ΔH = Σ(bonds broken) − Σ(bonds formed).",
+          "at": 18
+        },
+        {
+          "text": "Negative ΔH means forming released more than breaking cost.",
+          "at": 26
+        }
+      ],
+      "callout": "ΔH = bonds broken − bonds formed.",
+      "durationInFrames": 1410,
+      "caption": "Breaking absorbs, forming releases; ΔH is the difference.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1170,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Every reaction does two things with energy. Think of bonds like magnets stuck together — pulling them apart takes effort, and snapping them together gives that effort back. But unlike magnets, different bonds store very different amounts. So first, breaking the reactant bonds always absorbs energy. Then forming the product bonds always releases energy. The overall enthalpy change is the balance: delta H equals the sum of the bonds broken minus the sum of the bonds formed. If forming releases more than breaking cost, delta H is negative — exothermic. If breaking costs more, it's positive — endothermic.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L6/concept.37622530c8fc.mp3"
+      },
+      "diagram": {
+        "type": "bondEnergy"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "ΔH for H₂ + Cl₂ → 2HCl",
+      "question": "Calculate ΔH for H₂(g) + Cl₂(g) → 2HCl(g) using bond energies: H–H = 436 kJ mol⁻¹, Cl–Cl = 243 kJ mol⁻¹, H–Cl = 432 kJ mol⁻¹.",
+      "coachNote": "Add up every bond broken, add up every bond formed, then subtract: broken − formed.",
+      "unitCancel": {
+        "left": "kJ",
+        "right": "kJ",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: H–H = 436, Cl–Cl = 243, H–Cl = 432 kJ mol⁻¹.",
+        "Find: ΔH for the reaction.",
+        "Bonds broken: 1 H–H + 1 Cl–Cl = 436 + 243 = 679 kJ.",
+        "Bonds formed: 2 H–Cl = 2 × 432 = 864 kJ.",
+        "Formula: ΔH = Σ(broken) − Σ(formed).",
+        "Substitute: ΔH = 679 − 864.",
+        "Answer: ΔH = 185 kJ mol⁻¹ released, i.e. −185 kJ mol⁻¹ (exothermic)."
+      ],
+      "durationInFrames": 1500,
+      "caption": "ΔH = 679 − 864 = −185 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Let's calculate delta H for hydrogen plus chlorine making hydrogen chloride. The bond energies are H–H at four hundred and thirty-six, Cl–Cl at two hundred and forty-three, and H–Cl at four hundred and thirty-two kilojoules per mole. First the bonds broken, one H–H and one Cl–Cl, so four-thirty-six plus two-forty-three, which is six hundred and seventy-nine kilojoules. Then the bonds formed, two H–Cl bonds, so two times four-thirty-two, eight hundred and sixty-four kilojoules. Delta H equals broken minus formed, six-seventy-nine minus eight-sixty-four, which comes out at minus one hundred and eighty-five kilojoules per mole. It's negative because forming the HCl released more energy than breaking the reactants cost."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Breaking bonds releases energy\"",
+      "body": "Students often think: \"Breaking a bond releases the energy stored in it.\" That's the wrong instinct, and it flips the whole calculation. The correct rule: breaking bonds always ABSORBS energy, you must put energy in to pull atoms apart. Forming bonds is what releases energy. Get this backwards and your ΔH comes out with the wrong sign.",
+      "callout": "Breaking absorbs energy. Forming releases it. Never the reverse.",
+      "mistakeTag": "Bond-breaking-releases trap",
+      "durationInFrames": 1290,
+      "caption": "Breaking bonds absorbs energy; forming bonds releases it.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the trap that flips your whole answer. Students think: breaking a bond releases the energy stored inside it. Wrong instinct — and it reverses the entire calculation. The correct rule: breaking bonds always absorbs energy. You have to put energy in to pull bonded atoms apart, like pulling apart two magnets. It's forming bonds that releases energy. Get this backwards and your delta H comes out with the wrong sign — turning an exothermic reaction into an endothermic one on paper.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L6/misconception.ae733aaddd95.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "For H₂(g) + Br₂(g) → 2HBr(g), the bonds broken total 629 kJ and the bonds formed total 732 kJ. Calculate ΔH and state whether it is exothermic or endothermic.",
+      "pausePrompt": "Pause: ΔH = broken − formed. Then read the sign.",
+      "answerSteps": [
+        "Formula: ΔH = Σ(broken) − Σ(formed).",
+        "Substitute: ΔH = 629 − 732.",
+        "ΔH = −103 kJ mol⁻¹.",
+        "Negative sign → exothermic.",
+        "Answer: ΔH = −103 kJ mol⁻¹, exothermic (forming released more than breaking cost)."
+      ],
+      "durationInFrames": 1350,
+      "caption": "ΔH = 629 − 732 = −103 kJ mol⁻¹, exothermic.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 540,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Your turn. For hydrogen plus bromine making hydrogen bromide, the bonds broken total six hundred and twenty-nine kilojoules and the bonds formed total seven hundred and thirty-two. Find delta H and say whether it's exothermic or endothermic. Pause now and try. Delta H equals broken minus formed — six-twenty-nine minus seven-thirty-two — which is minus one hundred and three kilojoules per mole. The sign is negative, so the reaction is exothermic. Forming the hydrogen bromide bonds released more energy than breaking the reactant bonds cost.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L6/quick-check.6022293dcdfa.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Check the order: bonds broken minus bonds formed, never the reverse.",
+      "points": [
+        "Breaking bonds absorbs energy; forming bonds releases energy.",
+        "ΔH = Σ(bonds broken) − Σ(bonds formed).",
+        "Negative ΔH: forming released more than breaking cost (exothermic).",
+        "Positive ΔH: breaking cost more than forming released (endothermic).",
+        "The classic error: thinking bond breaking releases energy, it absorbs it."
+      ],
+      "durationInFrames": 1320,
+      "caption": "Break absorbs, form releases, subtract in the right order.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways. One: breaking bonds absorbs energy, and forming bonds releases energy. Two: delta H equals the sum of the bonds broken minus the sum of the bonds formed. Three: a negative delta H means forming released more than breaking cost — exothermic. Four: a positive delta H means breaking cost more than forming released — endothermic. Five: the classic error is thinking bond breaking releases energy, when it actually absorbs it. Decision rule: check the order — bonds broken minus bonds formed, never the reverse.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L6/summary.e2c64825025b.mp3"
+      }
+    }
+  ]
+}

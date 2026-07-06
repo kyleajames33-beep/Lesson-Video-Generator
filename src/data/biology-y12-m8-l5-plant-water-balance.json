@@ -1,0 +1,245 @@
+{
+  "title": "Plant Water Balance",
+  "subtitle": "Stomata, xerophytes and osmoregulation in other organisms",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 5",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "investigate the mechanisms used by plants and other organisms to maintain water balance within tolerance limits, including stomatal control and osmoregulation (ACSBL101, ACSBL110, ACSBL111)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How is an organism's internal environment maintained in response to a changing external environment?",
+  "lessonIntent": "Students can explain stomatal control and xerophytic adaptations, and compare osmoregulation in marine and freshwater fish.",
+  "examSkill": "Explain a plant or animal water-balance adaptation by its mechanism, always linking the structural feature or hormone to the physical effect on water movement.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, plant water balance. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Plant Water Balance (Year 12 Biology, Module 8, Lesson 5)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Homeostasis with no nervous system",
+      "body": "A desert plant holds its internal water steady through a 40 degree day using a single chemical signal. No brain, no blood, no nerves.",
+      "callout": "Regulation is universal, not just an animal thing.",
+      "image": "bioM8L5DesertPlant",
+      "durationInFrames": 2040,
+      "caption": "CSIRO found arid-zone plants hold leaf water potential steady using the hormone ABA.",
+      "voiceover": {
+        "text": "In a 2019 CSIRO survey of the Great Victoria Desert, researchers measured arid-zone Australian plants holding their leaf water potential almost perfectly steady, within about zero point two megapascals, right across a forty degree daily temperature swing. And they did it with a single chemical signal, a hormone called A B A, which jumps about ten-fold the moment water stress begins. Now stop and think about what these plants do not have, no nervous system, no blood, no brain, no hypothalamus running a feedback loop. And yet here is homeostasis, the same self-correcting stability we saw in humans, achieved with just one chemical messenger and no neural coordination at all. That tells us something important, homeostatic regulation is a universal feature of life, not an animal-only trick. Today we see how plants do it, and how water balance works in fish too."
+      }
+    },
+    {
+      "id": "concept-stomata",
+      "type": "concept",
+      "heading": "Stomatal control by guard cells",
+      "body": "Guard cells open and close the leaf pores by pumping potassium ions, which moves water and changes their turgor.",
+      "bullets": [
+        {
+          "text": "To open: guard cells pump potassium in, water follows by osmosis, turgor rises and the pore opens."
+        },
+        {
+          "text": "To close in drought: the hormone ABA triggers potassium out, water leaves, turgor falls and the pore shuts."
+        },
+        {
+          "text": "The active step is potassium transport; water movement is always passive osmosis."
+        }
+      ],
+      "secondary": "Closing stomata saves water but also blocks carbon dioxide entry for photosynthesis, the central trade-off plants must manage.",
+      "callout": "Pump potassium, water follows, turgor changes, the pore moves.",
+      "durationInFrames": 2280,
+      "caption": "Guard cells move potassium; water follows by osmosis to open or close the stoma.",
+      "voiceover": {
+        "text": "So how does a plant regulate water loss? Through the stomata, the microscopic pores on the leaf surface, controlled by paired guard cells. Here is the mechanism, and the detail matters. To open a stoma, the guard cells actively pump potassium ions into themselves. Water then follows those ions in by osmosis, the guard cells swell, their turgor pressure rises, and they bow apart so the pore opens. To close the stoma in drought, the hormone A B A is released, which triggers potassium to leave the guard cells. Water follows it out by osmosis, turgor falls, the guard cells go limp, and the pore shuts. The single most important point for the exam, the active step is the potassium transport, and the water movement is always passive osmosis following the ions. And notice the trade-off at the heart of it, closing the stomata saves water, but it also shuts out the carbon dioxide the plant needs for photosynthesis."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Transpiration: the evaporation of water vapour from leaf surfaces through the stomata."
+        },
+        {
+          "text": "Guard cell: a paired cell that changes turgor to open or close a stoma."
+        },
+        {
+          "text": "Xerophyte: a plant structurally adapted to survive in dry environments."
+        },
+        {
+          "text": "Osmoregulator vs osmoconformer: one holds internal osmolarity constant, the other lets it match the surroundings."
+        }
+      ],
+      "callout": "Osmoregulators hold steady. Osmoconformers go with the water.",
+      "durationInFrames": 1845,
+      "caption": "Transpiration, guard cell, xerophyte, osmoregulator vs osmoconformer.",
+      "voiceover": {
+        "text": "Let's pin down the key terms. Transpiration is the evaporation of water vapour from leaf surfaces through the stomata, and it is what drives water up the plant. A guard cell is one of the paired cells flanking a stoma, which changes its turgor pressure to open or close that pore. A xerophyte is a plant structurally adapted to survive in dry environments, think thick cuticles and sunken stomata. And then a pair of terms for animals in water, an osmoregulator actively holds its internal osmolarity constant regardless of the surroundings, like a fish or a mammal, whereas an osmoconformer simply lets its body fluids match the concentration of the surrounding water, like most marine invertebrates. So osmoregulators hold steady against the environment, osmoconformers go along with it."
+      }
+    },
+    {
+      "id": "concept-xerophyte",
+      "type": "concept",
+      "heading": "Xerophytic adaptations",
+      "body": "Xerophytes carry permanent structural features that passively reduce water loss at all times, easing the load on active control.",
+      "bullets": [
+        {
+          "text": "A thick waxy cuticle blocks water loss through the leaf surface itself."
+        },
+        {
+          "text": "Sunken or rolled stomata trap humid air, reducing the diffusion gradient for water out."
+        },
+        {
+          "text": "Hairs (trichomes) and small, pale leaves cut surface area and reflect heat."
+        }
+      ],
+      "secondary": "Always link the feature to the mechanism. Saying small leaves reduce water loss is weak; small leaves reduce surface area for transpiration is the mark.",
+      "callout": "Name the feature, then the physical reason it cuts water loss.",
+      "durationInFrames": 2070,
+      "caption": "Xerophyte features passively reduce water loss; always state the mechanism.",
+      "voiceover": {
+        "text": "Now structural adaptations, the features of xerophytes, plants built for dry places. Unlike stomatal control, which is an active response, these are permanent structures that passively reduce water loss all the time, easing the load on the active mechanisms. A thick waxy cuticle blocks water from escaping through the leaf surface itself. Sunken or rolled stomata trap a pocket of humid air right next to the pore, which reduces the diffusion gradient, so less water vapour leaves. Hairs, called trichomes, do the same thing while also reflecting sunlight, and small, pale leaves cut the surface area and absorb less heat. Here is the exam technique that separates the bands. Always link the feature to the mechanism. Saying small leaves reduce water loss earns very little. Saying small leaves reduce the surface area available for transpiration, that is the mark. Feature, then the physical reason."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Stomatal closure in drought",
+      "question": "Describe how a plant closes its stomata when it is water-stressed. Name the hormone, the role of potassium and turgor, and the trade-off involved.",
+      "coachNote": "Lead with the active ion step, then let water follow.",
+      "steps": [
+        "The plant detects water stress and releases the hormone ABA to the guard cells.",
+        "ABA triggers potassium ions to move out of the guard cells (the active step).",
+        "Water follows the potassium out by osmosis, so guard cell turgor falls.",
+        "The flaccid guard cells close the stoma, reducing transpiration and saving water.",
+        "Trade-off: the closed stoma also blocks carbon dioxide entry, slowing photosynthesis ✓"
+      ],
+      "durationInFrames": 2160,
+      "caption": "Drought: ABA, potassium out, turgor falls, stoma closes; CO2 entry is the cost.",
+      "voiceover": {
+        "text": "Let's work through stomatal closure in drought, a very common four-mark question. First, the plant detects water stress, and releases the hormone A B A to the guard cells. A B A triggers the key event, potassium ions move out of the guard cells, and remember, that ion movement is the active step. Water then follows the potassium out of the cells by osmosis, so the guard cells lose turgor pressure and go flaccid. The limp guard cells close the stoma, which reduces transpiration and conserves water. So far so good, but the question asks for the trade-off, and that is where the marks are. By closing the stoma, the plant also blocks carbon dioxide from entering the leaf, which slows photosynthesis. So the plant is constantly balancing two competing needs, keeping water in, versus letting carbon dioxide in, and A B A tips that balance toward survival in a drought."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Marine versus freshwater fish",
+      "question": "Compare osmoregulation in a marine fish and a freshwater fish. For each, give the direction of water movement, the response, and the urine produced.",
+      "coachNote": "Start from whether the surrounding water is more or less concentrated than the fish's blood.",
+      "steps": [
+        "Marine fish: seawater is more concentrated than its blood, so water is lost by osmosis.",
+        "It drinks seawater to replace the loss and actively excretes excess salt at the gills; urine is small and concentrated.",
+        "Freshwater fish: the water is more dilute than its blood, so water moves in by osmosis.",
+        "It never drinks, absorbs ions at the gills, and produces large volumes of dilute urine to dump the excess water.",
+        "Both use negative feedback to hold blood osmolarity steady ✓"
+      ],
+      "durationInFrames": 2160,
+      "caption": "Marine fish lose water and drink; freshwater fish gain water and never drink.",
+      "voiceover": {
+        "text": "Now osmoregulation in fish, and the whole comparison flows from one question, is the surrounding water more or less concentrated than the fish's blood? Take the marine fish first. Seawater is more concentrated than its blood, so water is constantly pulled out of the fish by osmosis. To survive, the marine fish drinks seawater to replace that lost water, and then actively excretes the excess salt through its gills. Its urine is small in volume and concentrated. Now the freshwater fish, which faces the exact opposite problem. The surrounding water is more dilute than its blood, so water floods into the fish by osmosis. So the freshwater fish never drinks, instead it absorbs ions back in at the gills, and it produces large volumes of very dilute urine to dump all that excess water. Both fish are using negative feedback to hold their blood osmolarity steady, they just face opposite challenges."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Marine fish",
+          "Freshwater fish"
+        ],
+        "rows": [
+          [
+            "Surrounding water",
+            "More concentrated",
+            "More dilute"
+          ],
+          [
+            "Water moves",
+            "Out, by osmosis",
+            "In, by osmosis"
+          ],
+          [
+            "Drinking",
+            "Drinks seawater",
+            "Never drinks"
+          ],
+          [
+            "Urine",
+            "Small, concentrated",
+            "Large, dilute"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: writing that guard cells pump water to open stomata. They pump potassium ions, and water follows by osmosis.",
+      "secondary": "Trap 2: saying stomata close in the dark because the plant is sleeping. Without light there is no ATP for the potassium pumps, so guard cells cannot stay turgid. Trap 3: thinking freshwater fish drink lots of water. They never drink, osmosis already floods them; it is marine fish that drink seawater.",
+      "mistakeTag": "Where plant and fish marks vanish",
+      "callout": "Guard cells pump ions, not water. Freshwater fish never drink. Marine fish do.",
+      "durationInFrames": 2295,
+      "caption": "Guard cells pump ions (not water); freshwater fish never drink; marine fish do.",
+      "voiceover": {
+        "text": "Three traps, and they map neatly onto earlier ideas. Trap one, writing that guard cells pump water to open the stomata. They do not. Guard cells actively pump potassium ions into themselves, and water follows by osmosis, exactly the same logic as the kidney tubule in Lesson Four, the active step is ion transport, water is passive. Trap two, saying stomata close in the dark because the plant is sleeping. There is no sleeping involved. In the dark, there is no light to make A T P, so the potassium pumps cannot run, the guard cells cannot stay swollen, and the stomata close. It is a direct mechanism, not a rest cycle. Trap three, thinking freshwater fish drink large amounts of water. They never drink, osmosis already drives water into them constantly, so they actually produce huge volumes of dilute urine to get rid of it. It is the marine fish, losing water to concentrated seawater, that has to drink."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Two leaves are identical except one has sunken stomata. On a hot, dry, windy day, which loses water more slowly, and what is the mechanism?",
+      "pausePrompt": "Pause and think about the diffusion gradient.",
+      "answerSteps": [
+        "Transpiration depends on the water vapour gradient between the leaf interior and the air outside.",
+        "Sunken stomata sit in pits that trap a layer of humid air right at the pore.",
+        "That humid pocket reduces the steepness of the diffusion gradient for water vapour leaving.",
+        "Wind cannot strip that trapped humid air away as easily, so loss stays lower.",
+        "Answer: the sunken-stomata leaf loses water more slowly, by reducing the diffusion gradient ✓"
+      ],
+      "durationInFrames": 2130,
+      "caption": "Sunken stomata trap humid air, reducing the water-vapour gradient.",
+      "voiceover": {
+        "text": "Quick check. Two leaves are identical except one has sunken stomata. On a hot, dry, windy day, which loses water more slowly, and what is the mechanism? Pause and think about the diffusion gradient. Right, let's check it. Transpiration depends on the gradient of water vapour between the moist interior of the leaf and the drier air outside, the steeper the gradient, the faster water leaves. Sunken stomata sit at the bottom of little pits, and those pits trap a pocket of humid air right at the pore. That humid pocket reduces the steepness of the diffusion gradient, so water vapour leaves more slowly. And because the air is trapped down in the pit, the wind cannot strip it away as easily, which matters on a windy day. So the leaf with sunken stomata loses water more slowly, by reducing the water vapour diffusion gradient at the pore."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Guard cells open and close stomata by pumping potassium; water follows by osmosis.",
+        "ABA triggers stomatal closure in drought, trading water saving against carbon dioxide entry.",
+        "Xerophytic features passively reduce water loss; always state the mechanism.",
+        "Marine fish lose water and drink seawater; freshwater fish gain water and never drink.",
+        "Homeostasis is universal, working in plants and fish without a nervous system."
+      ],
+      "finalPrompt": "Explaining any water adaptation? Name the feature or hormone, then the effect on water movement.",
+      "durationInFrames": 1860,
+      "caption": "Five takeaways: stomatal control, ABA, xerophytes, fish osmoregulation, universality.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, guard cells open and close the stomata by pumping potassium ions, and water always follows by osmosis. Second, in drought the hormone A B A triggers stomatal closure, trading off water saving against the loss of carbon dioxide for photosynthesis. Third, xerophytic features passively reduce water loss, and you must always state the mechanism, not just the feature. Fourth, the fish comparison, marine fish lose water and so they drink seawater, freshwater fish gain water and so they never drink. And fifth, the big idea, homeostasis is universal, working in plants and fish without any nervous system at all. Whenever you explain a water adaptation, name the feature or hormone, then the effect on water movement. See you next lesson."
+      }
+    }
+  ]
+}

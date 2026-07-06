@@ -1,0 +1,197 @@
+{
+  "title": "Periodic Trends: Electronegativity and Reactivity",
+  "subtitle": "The pull on electrons, and why both ends react",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 18",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "demonstrate, explain and predict the relationships in the observable trends in the physical and chemical properties of elements in periods and groups in the periodic table, including but not limited to electronegativity and reactivity"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-8", "CH11/12-7"],
+  "inquiryQuestion": "Are there patterns in the properties of elements?",
+  "lessonIntent": "Students can explain the electronegativity trends, classify bonds using the electronegativity difference, and predict reactivity for metals and non-metals.",
+  "examSkill": "Calculate the electronegativity difference and classify a bond, and predict reactivity using shell distance, shielding, and effective nuclear charge.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, electronegativity and reactivity. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Periodic Trends: Electronegativity and Reactivity (Year 11 Chemistry, Module 1, Lesson 18)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Reactive at both ends",
+      "body": "Fluorine reacts violently because it grabs electrons. Caesium reacts violently because it gives them away.",
+      "callout": "Opposite tendencies, both intensely reactive.",
+      "durationInFrames": 690,
+      "caption": "Fluorine grabs electrons; caesium loses them; both are highly reactive.",
+      "voiceover": {
+        "text": "OK, here's an apparent contradiction. Fluorine sits in the top corner of the table and is the most electronegative element there is, so it reacts violently because it desperately grabs electrons. Caesium sits in the opposite corner and is one of the least electronegative elements, yet it also reacts violently, this time because it gives its electron away so easily. So how can two elements at opposite ends both be wildly reactive? Because reactivity isn't one thing, it's about how strongly an atom wants to gain or lose electrons. Fluorine wins the tug-of-war by pulling, caesium wins by letting go. Today we'll quantify that pull with electronegativity, and use it to classify bonds and rank reactivity."
+      }
+    },
+    {
+      "id": "concept-trend",
+      "type": "concept",
+      "heading": "The electronegativity trend",
+      "body": "Electronegativity increases across a period and decreases down a group, peaking at fluorine.",
+      "image": "l18ElectronegativityTrend",
+      "bullets": [
+        {"text": "Across a period: Z_eff rises, so the pull on bonding electrons grows."},
+        {"text": "Down a group: more shells and shielding weaken the pull."},
+        {"text": "Fluorine is highest at 4.0; the top-right corner is the most pulling."}
+      ],
+      "secondary": "Key values: F 4.0, O 3.4, Cl 3.2, N 3.0, C 2.6, H 2.2, Na 0.9. Noble gases get no value as they rarely bond.",
+      "callout": "Top-right pulls hardest; bottom-left pulls least.",
+      "durationInFrames": 1170,
+      "caption": "Electronegativity rises across, falls down; F highest at 4.0.",
+      "voiceover": {
+        "text": "Let's define the trend. Electronegativity is the ability of an atom to attract the shared electrons in a covalent bond, measured on the Pauling scale from about nought-point-seven up to four. It follows the same logic as atomic radius, just flipped. Across a period, the effective nuclear charge rises while shielding barely changes, so the atom pulls bonding electrons more strongly, and electronegativity increases. Down a group, extra shells push the bonding electrons further out and add shielding, so the pull weakens, and electronegativity decreases. The peak is fluorine, at four-point-zero, in the top-right corner. Some values worth memorising, fluorine four, oxygen three-point-four, chlorine three-point-two, nitrogen three, carbon two-point-six, hydrogen two-point-two, and sodium nought-point-nine. Noble gases aren't given values, because they rarely form bonds at all."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Electronegativity (χ): an atom's pull on shared bonding electrons."},
+        {"text": "Non-polar covalent: |Δχ| < 0.4, electrons shared almost equally."},
+        {"text": "Polar covalent: |Δχ| from 0.4 to 1.7, unequal sharing with δ⁺ and δ⁻."},
+        {"text": "Ionic: |Δχ| ≥ 1.7, electrons effectively transferred."}
+      ],
+      "callout": "The electronegativity difference sorts the bond type.",
+      "durationInFrames": 960,
+      "caption": "Electronegativity, non-polar covalent, polar covalent, ionic thresholds.",
+      "voiceover": {
+        "text": "Four definitions carry the bonding part of this lesson. Electronegativity, the Greek letter chi, is an atom's pull on the shared electrons in a bond. Then three bond types, sorted by the difference in electronegativity between the two atoms, written delta chi. If that difference is below nought-point-four, the sharing is nearly equal, and we call it non-polar covalent. If it's between nought-point-four and one-point-seven, the sharing is unequal, giving a slightly negative end and a slightly positive end, and that's polar covalent. And if it's one-point-seven or more, the electrons are effectively transferred, giving full charges, and that's ionic. So the electronegativity difference is the tool that tells you which kind of bond you've got."
+      }
+    },
+    {
+      "id": "concept-reactivity",
+      "type": "concept",
+      "heading": "Reactivity runs opposite ways",
+      "body": "Metals get more reactive down a group; non-metals get less reactive down a group.",
+      "diagram": {
+        "type": "venn",
+        "leftLabel": "Metals: react by losing e⁻",
+        "rightLabel": "Non-metals: react by gaining e⁻",
+        "overlapLabel": "Both driven by the pull on outer electrons",
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Metals react by losing electrons, so easier loss means more reactive."},
+        {"text": "Down a group, larger atoms lose electrons more easily, so metals get more reactive."},
+        {"text": "Non-metals react by gaining electrons, so larger atoms get less reactive down a group."}
+      ],
+      "secondary": "Metal activity (most to least): K > Na > Ca > Mg > Al > Zn > Fe. Halogen reactivity: F₂ > Cl₂ > Br₂ > I₂.",
+      "callout": "Metals: reactive down. Non-metals: reactive up.",
+      "durationInFrames": 1170,
+      "caption": "Metals get more reactive down a group; non-metals get less reactive down a group.",
+      "voiceover": {
+        "text": "Now reactivity, and the key is that metals and non-metals run in opposite directions, so you must always say which type you mean. Metals react by losing electrons. So anything that makes losing easier makes the metal more reactive. Going down a group, the atom gets bigger, the outer electron is further out and more shielded, so it's easier to lose, which means metals get more reactive down a group. That's why caesium is more reactive than lithium. Non-metals react by gaining electrons. Going down a group, the bigger atom finds it harder to attract a new electron into its larger outer shell, so non-metals get less reactive down a group. That's why fluorine is more reactive than iodine. Two useful orders, the metal activity series runs potassium, sodium, calcium, magnesium and so on, and the halogen reactivity runs fluorine, chlorine, bromine, iodine."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Classifying bonds by Δχ",
+      "question": "Classify each bond using χ: Na–Cl (0.9, 3.2), N–H in NH₃ (3.0, 2.2), and C–H in CH₄ (2.6, 2.2).",
+      "coachNote": "Find |Δχ|, then read the threshold.",
+      "steps": [
+        "Na–Cl: |Δχ| = 3.2 − 0.9 = 2.3, which is ≥ 1.7 → ionic",
+        "N–H: |Δχ| = 3.0 − 2.2 = 0.8, between 0.4 and 1.7 → polar covalent",
+        "C–H: |Δχ| = 2.6 − 2.2 = 0.4, at the lower edge → non-polar covalent",
+        "For N–H, N is more electronegative, so N is δ⁻ and H is δ⁺",
+        "Answer: ionic, polar covalent, non-polar covalent ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "Na–Cl (2.3) ionic; N–H (0.8) polar; C–H (0.4) non-polar.",
+      "voiceover": {
+        "text": "Let's classify three bonds using electronegativity differences. First, sodium to chlorine. Chlorine is three-point-two, sodium is nought-point-nine, so the difference is two-point-three. That's well above one-point-seven, so it's an ionic bond, the electron is effectively handed over to form sodium plus and chloride. Second, the nitrogen to hydrogen bond in ammonia. Nitrogen is three, hydrogen is two-point-two, difference nought-point-eight. That sits between nought-point-four and one-point-seven, so it's polar covalent. And since nitrogen pulls harder, nitrogen carries the slightly negative end and hydrogen the slightly positive end. Third, the carbon to hydrogen bond in methane. Carbon is two-point-six, hydrogen two-point-two, difference nought-point-four, which is right at the lower edge, so we treat it as non-polar covalent. So the three answers, ionic, polar covalent, and non-polar covalent. Always subtract first, then read the threshold."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Why caesium beats lithium",
+      "question": "Explain why caesium is a more reactive metal than lithium.",
+      "coachNote": "Both are Group 1; compare how easily each loses its outer electron.",
+      "steps": [
+        "Both are Group 1 metals, reacting by losing one valence electron",
+        "Caesium is much further down the group than lithium",
+        "Its valence electron is in a higher shell, further from the nucleus and more shielded",
+        "So caesium has a lower ionisation energy and loses its electron more easily",
+        "Answer: easier electron loss makes caesium the more reactive metal ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Cs is more reactive than Li: outer electron is further out and shielded, easier to lose.",
+      "voiceover": {
+        "text": "Now a reactivity explanation, the kind that needs careful wording. Explain why caesium is more reactive than lithium. Step one, recognise the shared chemistry. Both are group one metals, and they react by losing one valence electron. Step two, note the positions. Caesium is far down the group, lithium is near the top. Step three, link position to the electron. Caesium's valence electron sits in a much higher shell, so it's further from the nucleus and more shielded by the inner electrons. Step four, draw the consequence. That distance and shielding mean caesium has a lower ionisation energy, so it lets go of its electron much more easily than lithium does. So the full answer, caesium loses its outer electron more readily, which makes it the more reactive metal. Notice we explained reactivity through ease of electron loss, not just by saying it's lower down."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: stating one reactivity trend for all elements. Metals and non-metals run opposite ways down a group.",
+      "secondary": "Trap 2: treating 1.7 as a hard line. Bonding is a continuum, so near 1.7 has mixed character. Trap 3: giving noble gases electronegativity values; they rarely bond.",
+      "mistakeTag": "Where trends marks vanish",
+      "callout": "Specify metal or non-metal; 1.7 is a guide; noble gases have no value.",
+      "durationInFrames": 1230,
+      "caption": "State metal vs non-metal; 1.7 is a guide not a line; noble gases get no χ value.",
+      "voiceover": {
+        "text": "Three traps. Trap one, giving a single reactivity trend without saying which elements you mean. Down a group, metals get more reactive but non-metals get less reactive, so you must always specify metal or non-metal, or your answer is half wrong. Trap two, treating the one-point-seven cutoff as a hard wall. Bonding is really a smooth continuum from covalent to ionic, so a difference right around one-point-seven has significant character of both. Use the threshold as a guide, and say so. Trap three, quoting an electronegativity value for a noble gas. Noble gases like neon and argon rarely form bonds, so they're not assigned electronegativity values on the standard scale. Don't try to classify a bond they don't make."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Using χ values (K 0.8, F 4.0), classify the K–F bond and identify the more electronegative atom.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Calculate the difference: |Δχ| = 4.0 − 0.8 = 3.2",
+        "3.2 is well above 1.7, so the bond is ionic",
+        "Fluorine has the higher χ, so it attracts the electron more strongly",
+        "K effectively transfers its electron, forming K⁺ and F⁻",
+        "Answer: ionic bond; fluorine is the more electronegative atom ✓"
+      ],
+      "durationInFrames": 1200,
+      "caption": "K–F: |Δχ| = 3.2 → ionic; fluorine is more electronegative.",
+      "voiceover": {
+        "text": "Quick check on bond classification. Using the values potassium nought-point-eight and fluorine four, classify the potassium to fluorine bond, and say which atom is more electronegative. Pause and work it through. Right, let's check it. Step one, find the difference. Four minus nought-point-eight is three-point-two. Step two, compare to the thresholds. Three-point-two is well above one-point-seven, so the bond is ionic. Step three, identify the puller. Fluorine has the much higher electronegativity, so it attracts the bonding electron far more strongly. Step four, describe what happens. Potassium effectively hands its electron over, forming a potassium plus ion and a fluoride ion. So the answer, it's an ionic bond, and fluorine is the more electronegative atom. Big difference, ionic, every time."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Electronegativity rises across a period, falls down a group; F is 4.0.",
+        "|Δχ| < 0.4 non-polar, 0.4–1.7 polar covalent, ≥ 1.7 ionic.",
+        "Metals get more reactive down a group (easier to lose electrons).",
+        "Non-metals get less reactive down a group (harder to gain electrons).",
+        "The 1.7 cutoff is a guide; bonding is a continuum."
+      ],
+      "finalPrompt": "Predicting reactivity? Did I say metal or non-metal first?",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: EN trend, Δχ thresholds, metal vs non-metal reactivity, the continuum.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, electronegativity increases across a period and decreases down a group, with fluorine the highest at four. Second, the bond thresholds, below nought-point-four is non-polar covalent, nought-point-four to one-point-seven is polar covalent, and one-point-seven or above is ionic. Third, metals get more reactive going down a group, because the outer electron becomes easier to lose. Fourth, non-metals get less reactive going down a group, because a larger atom finds it harder to gain an electron. And fifth, the one-point-seven cutoff is only a guide, since bond character is a continuum. Whenever you predict reactivity, say metal or non-metal first. See you next lesson."
+      }
+    }
+  ]
+}

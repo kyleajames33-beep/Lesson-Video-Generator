@@ -1,0 +1,232 @@
+{
+  "title": "DNA in Prokaryotes and Eukaryotes",
+  "subtitle": "Same molecule, very different packaging",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 9",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "compare the structure and organisation of DNA in prokaryotes and eukaryotes, including the role of plasmids and chromosomes"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Why is polypeptide synthesis important?",
+  "lessonIntent": "Students can compare how DNA is structured and organised in prokaryotes and eukaryotes and explain why that organisation matters for biotechnology.",
+  "examSkill": "Compare prokaryotic and eukaryotic DNA by main form and location, and explain why plasmids are useful vectors.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, how DNA is organised differently in prokaryotes and eukaryotes. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "DNA in Prokaryotes and Eukaryotes (Year 12 Biology, Module 5, Lesson 9)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Bacteria that swapped DNA",
+      "body": "In 1928, Griffith found harmless bacteria could be transformed into deadly ones by something from dead cells. That something was DNA.",
+      "callout": "Why can bacteria move DNA around in ways our cells cannot?",
+      "image": "bioM5L9PlasmidTransformation",
+      "durationInFrames": 1752,
+      "caption": "Griffith's transformation works because prokaryotic DNA, including plasmids, can move between cells.",
+      "voiceover": {
+        "text": "In nineteen twenty eight, Frederick Griffith ran a famous experiment. He injected mice with a mixture of harmless live bacteria and heat killed deadly bacteria, neither lethal on its own. But the mice died, and live deadly bacteria were recovered from them. Something from the dead cells had transformed the harmless bacteria. In nineteen forty four, Avery, MacLeod and McCarty identified that something, it was DNA. Now here is the deeper point for today. Transformation works precisely because of how prokaryotic DNA is organised, small circular chromosomes and transferable plasmids, which let genetic material move between cells in ways that our own tightly packaged nuclear DNA simply cannot. So today we compare DNA organisation in prokaryotes and eukaryotes, and see why that difference matters so much for biotechnology."
+      }
+    },
+    {
+      "id": "concept-contexts",
+      "type": "concept",
+      "heading": "Same DNA, different arrangement",
+      "body": "Prokaryotes and eukaryotes use the same DNA chemistry, but organise and locate it very differently.",
+      "bullets": [
+        {
+          "text": "Both cell types use DNA with the same bases and base-pairing rules."
+        },
+        {
+          "text": "Prokaryotes: one main circular DNA molecule in the nucleoid, with no membrane."
+        },
+        {
+          "text": "Eukaryotes: multiple linear chromosomes inside a membrane-bound nucleus."
+        }
+      ],
+      "secondary": "Use precise terms in the exam: circular DNA and nucleoid for prokaryotes, linear chromosomes and nucleus for eukaryotes.",
+      "callout": "Only the arrangement differs, the molecule itself is the same.",
+      "durationInFrames": 1818,
+      "caption": "Prokaryotes use circular DNA in a nucleoid; eukaryotes use linear chromosomes in a nucleus.",
+      "voiceover": {
+        "text": "Let's begin with the big picture, because it frames everything. Both prokaryotes and eukaryotes use exactly the same DNA chemistry, the same four bases, the same complementary pairing rules we learned earlier in this module. So the molecule itself is the same. What differs is how that DNA is arranged and where it is kept. In prokaryotes, like bacteria, there is usually one main circular DNA molecule, and it sits in a region of the cell called the nucleoid, which is not enclosed by any membrane. In eukaryotes, like our cells, the DNA is split across multiple linear chromosomes, and these are kept inside a membrane bound nucleus. So in the exam, reach for the precise terms, circular DNA and nucleoid for prokaryotes, linear chromosomes and nucleus for eukaryotes. Only the arrangement differs."
+      },
+      "diagram": {
+        "type": "venn",
+        "leftLabel": "Prokaryote: circular, nucleoid",
+        "rightLabel": "Eukaryote: linear, nucleus",
+        "overlapLabel": "Same DNA bases and pairing"
+      }
+    },
+    {
+      "id": "concept-prokaryote",
+      "type": "concept",
+      "heading": "Circular DNA and plasmids",
+      "body": "Prokaryotes carry one main circular chromosome plus small separate circular plasmids.",
+      "bullets": [
+        {
+          "text": "The main DNA is a single circular molecule in the nucleoid."
+        },
+        {
+          "text": "Plasmids are small circular DNA molecules, separate from the main chromosome."
+        },
+        {
+          "text": "Plasmids often carry extra genes, such as antibiotic resistance."
+        }
+      ],
+      "secondary": "Because plasmids are separate and small, they make excellent vectors in biotechnology, carrying genes from one cell to another. Plasmids are not the main chromosome.",
+      "callout": "Plasmids are the spare, transferable rings, not the main chromosome.",
+      "durationInFrames": 1998,
+      "caption": "Prokaryotes have a circular chromosome plus separate plasmids that carry extra genes.",
+      "voiceover": {
+        "text": "Let's zoom in on prokaryotes, because they have a clever extra feature. The main DNA, as we said, is a single circular molecule sitting in the nucleoid. But many bacteria also carry plasmids, and these are the key to so much of biotechnology. A plasmid is a small circular DNA molecule that is completely separate from the main chromosome. Think of the main chromosome as the cell's core instruction manual, and plasmids as little extra booklets of optional information. Plasmids often carry extra genes, and a really important example is antibiotic resistance, which is how resistance can spread so quickly between bacteria. And because plasmids are small and separate from the main chromosome, scientists can use them as vectors, vehicles for carrying a chosen gene from one cell into another. Just be clear, a plasmid is not the main chromosome, it is the spare, transferable ring."
+      }
+    },
+    {
+      "id": "concept-eukaryote",
+      "type": "concept",
+      "heading": "Linear chromosomes and chromatin",
+      "body": "Eukaryotic DNA wraps with proteins as chromatin inside the nucleus and condenses for division.",
+      "bullets": [
+        {
+          "text": "Eukaryotes have multiple linear chromosomes inside a membrane-bound nucleus."
+        },
+        {
+          "text": "DNA plus proteins forms chromatin, which is less condensed most of the time."
+        },
+        {
+          "text": "Chromatin condenses into visible chromosomes during cell division."
+        }
+      ],
+      "secondary": "This packaging lets a huge amount of DNA fit inside a tiny nucleus, while still keeping genes accessible for use. It also allows complex gene regulation.",
+      "callout": "Wrap it with protein to fit metres of DNA into one nucleus.",
+      "durationInFrames": 1914,
+      "caption": "Eukaryotic DNA forms chromatin with proteins and condenses into chromosomes for division.",
+      "voiceover": {
+        "text": "Now the eukaryotes, where the packaging problem is much bigger, because there is so much more DNA. Eukaryotes have multiple linear chromosomes, all kept inside the membrane bound nucleus. But for most of the cell's life, that DNA is not in tightly wound chromosome form. Instead, the DNA is wound around proteins to form a complex called chromatin, which is relatively less condensed, more like loosely spooled thread. Then, only when the cell is about to divide, that chromatin condenses tightly into the visible X shaped chromosomes you would see under a microscope. Why bother with all this packaging? Because it lets an enormous length of DNA, around two metres in each human cell, fit inside a microscopic nucleus, while still keeping the genes accessible when they are needed. It also enables the complex gene regulation that eukaryotes rely on."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Prokaryote: an organism whose cells lack a membrane-bound nucleus, such as bacteria."
+        },
+        {
+          "text": "Eukaryote: an organism whose cells have a membrane-bound nucleus and organelles."
+        },
+        {
+          "text": "Nucleoid: the region of a prokaryotic cell where the main DNA sits."
+        },
+        {
+          "text": "Plasmid: a small circular DNA molecule separate from the main chromosome."
+        },
+        {
+          "text": "Chromatin: DNA associated with proteins in eukaryotes before full condensation."
+        },
+        {
+          "text": "Chromosome: a packaged DNA-protein structure carrying genes."
+        }
+      ],
+      "callout": "Match each term to the right cell type and you cannot go wrong.",
+      "durationInFrames": 1806,
+      "caption": "Prokaryote, eukaryote, nucleoid, plasmid, chromatin and chromosome defined.",
+      "voiceover": {
+        "text": "Let's pin down the vocabulary, because using the precise term is exactly what earns marks in comparison questions. A prokaryote is an organism whose cells lack a membrane bound nucleus, such as bacteria. A eukaryote is an organism whose cells do contain a membrane bound nucleus and other organelles, like animal and plant cells. The nucleoid is the region in a prokaryotic cell where the main DNA is located. A plasmid is a small circular DNA molecule in many prokaryotes that is separate from the main chromosome. Chromatin is DNA associated with proteins in eukaryotic cells, before it fully condenses. And a chromosome is a packaged DNA and protein structure carrying genes. The trick is to tie each term to the right cell type, nucleoid and plasmid for prokaryotes, chromatin for eukaryotes."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Compare the two cell types",
+      "question": "Compare DNA organisation in prokaryotic and eukaryotic cells, referring to the main DNA form and its location.",
+      "coachNote": "A compare answer needs both sides on the same features: form and location.",
+      "steps": [
+        "Main DNA form: prokaryotes have a single circular DNA molecule; eukaryotes have multiple linear chromosomes.",
+        "Location: prokaryotic DNA sits in the nucleoid with no membrane; eukaryotic DNA sits in a membrane-bound nucleus.",
+        "Extra DNA: prokaryotes often have separate plasmids; eukaryotes package DNA with proteins as chromatin.",
+        "Shared point: both use the same DNA bases and complementary base-pairing rules.",
+        "Answer: prokaryotes use circular DNA in a nucleoid plus plasmids; eukaryotes use linear chromosomes in a nucleus."
+      ],
+      "durationInFrames": 2040,
+      "caption": "Prokaryotes: circular DNA in a nucleoid plus plasmids; eukaryotes: linear chromosomes in a nucleus.",
+      "voiceover": {
+        "text": "Let's structure a compare answer, because compare is a specific skill, you must address both sides on the same features. The question, compare DNA organisation in prokaryotic and eukaryotic cells, referring to the main DNA form and its location. Feature one, the main DNA form. Prokaryotes have a single circular DNA molecule, while eukaryotes have multiple linear chromosomes. Feature two, location. Prokaryotic DNA sits in the nucleoid, with no surrounding membrane, while eukaryotic DNA sits inside a membrane bound nucleus. You can add extra DNA features, prokaryotes often carry separate plasmids, while eukaryotes package their DNA with proteins as chromatin. And it is worth noting a shared point, both use the same DNA bases and the same complementary pairing rules. So the answer, prokaryotes use circular DNA in a nucleoid plus plasmids, while eukaryotes use linear chromosomes inside a nucleus. Notice how every point pairs the two sides directly."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The disorganised-DNA trap",
+      "body": "Trap: thinking prokaryotic DNA just floats loosely with no organisation. It is organised into a nucleoid and supercoiled by proteins.",
+      "secondary": "Although prokaryotes lack the histone-based chromatin of eukaryotes, their DNA is far from disorganised. Its compaction and topology are precisely regulated and are critical for gene expression. So do not write that prokaryotes have no DNA organisation.",
+      "mistakeTag": "Where comparison marks vanish",
+      "callout": "No nucleus does not mean no organisation.",
+      "durationInFrames": 1836,
+      "caption": "Prokaryotic DNA is organised in a nucleoid and supercoiled, not floating loosely.",
+      "voiceover": {
+        "text": "Here is the trap on this topic. Thinking that because prokaryotes have no nucleus, their DNA must just float around loosely, all tangled and disorganised. That is wrong, and examiners specifically look for it. Prokaryotic DNA is organised into the nucleoid region, and it is supercoiled, twisted up compactly by proteins, to fit inside the cell. Now it is true that prokaryotes lack the histone based chromatin structure that eukaryotes have, that distinction is fair. But that does not mean their DNA is disorganised. In fact, its compaction and its topology, the way it is coiled, are precisely regulated, and that regulation is critical for controlling gene expression. So the line to remember is simple, no nucleus does not mean no organisation. Prokaryotic DNA is highly organised, just in a different way from ours."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A biotechnologist wants to insert a human gene into bacteria so the bacteria produce a human protein. Explain why a plasmid is a useful tool, and why a full human chromosome could not be used the same way.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "A plasmid is a small circular DNA molecule, separate from the main bacterial chromosome.",
+        "Its separateness and small size let scientists insert a chosen gene and put it into a bacterium as a vector.",
+        "The bacterium can then read that gene and make the human protein.",
+        "A full human chromosome is huge, linear, and built for a eukaryotic nucleus with chromatin packaging.",
+        "Answer: plasmids work as transferable vectors; a whole human chromosome is too large and wrongly organised for bacteria."
+      ],
+      "durationInFrames": 2478,
+      "caption": "Plasmids are transferable vectors; a full human chromosome is too large and wrongly packaged for bacteria.",
+      "voiceover": {
+        "text": "Quick check, and this is exactly why the lesson matters for biotechnology. A biotechnologist wants to insert a human gene into bacteria, so the bacteria will produce a human protein, this is genuinely how we make insulin. Explain why a plasmid is a useful tool, and why a full human chromosome could not be used the same way. Pause and reason it through. Right. A plasmid is a small circular DNA molecule that is separate from the main bacterial chromosome. That separateness, and its small size, are exactly what let scientists open it up, insert a chosen gene, and then put it back into a bacterium, using the plasmid as a vector, a delivery vehicle. The bacterium then reads that gene and manufactures the human protein. Now the contrast. A full human chromosome is enormous, it is linear, and it is built to work inside a eukaryotic nucleus with all that chromatin packaging and regulation. So the answer, plasmids work brilliantly as small transferable vectors, whereas a whole human chromosome is far too large and wrongly organised to function inside bacteria."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Both cell types use the same DNA; only the arrangement and location differ.",
+        "Prokaryotes: one circular DNA molecule in a nucleoid, plus plasmids.",
+        "Eukaryotes: multiple linear chromosomes in a nucleus, packaged as chromatin.",
+        "Plasmids are small, separate, transferable, which makes them ideal biotech vectors.",
+        "Prokaryotic DNA is organised and supercoiled, not floating loosely."
+      ],
+      "finalPrompt": "Comparing cells? Pair the two sides on the same features: form, location, and extra DNA.",
+      "durationInFrames": 1782,
+      "caption": "Five takeaways: same DNA, prokaryote vs eukaryote organisation, plasmids, real organisation.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, both prokaryotes and eukaryotes use the same DNA, with the same bases and pairing rules, only the arrangement and location differ. Second, prokaryotes have one main circular DNA molecule sitting in a nucleoid, plus separate plasmids. Third, eukaryotes have multiple linear chromosomes inside a membrane bound nucleus, packaged with proteins as chromatin. Fourth, plasmids are small, separate and transferable, which is exactly what makes them ideal vectors in biotechnology, like making human insulin in bacteria. And fifth, prokaryotic DNA is genuinely organised and supercoiled, it does not float loosely. When you compare the two cell types, always pair the sides on the same features, form, location, and extra DNA. Next lesson, our final one for now, transcription, where DNA is copied into mRNA."
+      }
+    }
+  ]
+}

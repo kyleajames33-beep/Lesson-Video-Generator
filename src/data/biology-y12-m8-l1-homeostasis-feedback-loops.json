@@ -1,0 +1,288 @@
+{
+  "title": "Homeostasis and Feedback Loops",
+  "subtitle": "How the body detects a change and corrects it",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "construct and interpret negative feedback loops that show homeostasis by using a range of sources (ACSBL101, ACSBL110, ACSBL111)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How is an organism's internal environment maintained in response to a changing external environment?",
+  "lessonIntent": "Students can describe the stimulus-response model and explain why negative feedback, not positive feedback, is the mechanism that maintains homeostasis.",
+  "examSkill": "Trace a homeostatic response through all five components in order, and classify any scenario as negative or positive feedback by the direction of the response.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, homeostasis and feedback loops. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Homeostasis and Feedback Loops (Year 12 Biology, Module 8, Lesson 1)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A number that refuses to move",
+      "body": "Your blood glucose barely shifts, even while you eat, sprint, and stress all day. Something is actively holding it there.",
+      "callout": "Stability you never notice is the result of constant correction.",
+      "image": "bioM8L1GlucoseStability",
+      "durationInFrames": 1710,
+      "caption": "Walter Cannon found blood glucose stays near 5 mmol/L despite constant disturbance.",
+      "voiceover": {
+        "text": "Back in 1926, a physiologist named Walter Cannon measured blood glucose in healthy volunteers, while they fasted, ate, and exercised. He found something striking. The glucose level never strayed more than about zero point three from a set point of five millimoles per litre. It barely moved, even though the body was constantly being disturbed. Cannon gave this self-correcting stability a name, homeostasis. And here is why it matters for the whole of Module Eight. Every non-infectious disease you are about to study, from diabetes to kidney failure to cancer, begins when one of these self-correcting systems breaks down. So today we build the framework, what homeostasis actually is, and the feedback machinery that holds those numbers so steady."
+      }
+    },
+    {
+      "id": "concept-stimulus-response",
+      "type": "concept",
+      "heading": "The stimulus-response pathway",
+      "body": "Every homeostatic response runs through the same five components, in the same order, every time.",
+      "bullets": [
+        {
+          "text": "A stimulus is any change that pushes a variable outside its tolerance range."
+        },
+        {
+          "text": "The receptor detects it, the control centre processes it, the effector acts."
+        },
+        {
+          "text": "The response opposes the stimulus and returns the variable toward its set point."
+        }
+      ],
+      "secondary": "Receptors are specific to one variable. Thermoreceptors detect temperature, osmoreceptors detect blood concentration, chemoreceptors detect blood carbon dioxide.",
+      "callout": "Stimulus, receptor, control centre, effector, response. Name all five.",
+      "durationInFrames": 2145,
+      "caption": "The five-component stimulus-response pathway, in order.",
+      "voiceover": {
+        "text": "So let's build the universal template first, the stimulus-response model. It has five components, and the order matters enormously in the exam. It starts with a stimulus, which is any change that pushes a variable outside its tolerance range, like body temperature climbing above thirty seven degrees. That change is picked up by a receptor, a specialised structure that detects one specific variable. Thermoreceptors detect temperature, osmoreceptors detect blood concentration, chemoreceptors detect carbon dioxide. The receptor sends a signal to a control centre, often the hypothalamus or a gland, which processes it and decides on the response. The control centre then activates an effector, a muscle or organ or gland that physically acts. And the effector produces the response, which opposes the original stimulus and nudges the variable back toward its set point. Stimulus, receptor, control centre, effector, response. A good answer names every one, with its specific role."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "s",
+            "label": "Stimulus"
+          },
+          {
+            "id": "r",
+            "label": "Receptor"
+          },
+          {
+            "id": "c",
+            "label": "Control"
+          },
+          {
+            "id": "e",
+            "label": "Effector"
+          },
+          {
+            "id": "resp",
+            "label": "Response"
+          }
+        ],
+        "edges": [
+          {
+            "from": "s",
+            "to": "r"
+          },
+          {
+            "from": "r",
+            "to": "c"
+          },
+          {
+            "from": "c",
+            "to": "e"
+          },
+          {
+            "from": "e",
+            "to": "resp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Homeostasis: maintaining a stable internal environment within a tolerance range around a set point."
+        },
+        {
+          "text": "Tolerance range: the band of values within which the body functions optimally, set by enzyme limits."
+        },
+        {
+          "text": "Negative feedback: a response that opposes the stimulus, returning the variable toward the set point."
+        },
+        {
+          "text": "Positive feedback: a response that amplifies the stimulus, driving the variable further away."
+        }
+      ],
+      "callout": "Negative opposes the change. Positive amplifies it.",
+      "durationInFrames": 1890,
+      "caption": "Homeostasis, tolerance range, negative feedback, positive feedback.",
+      "voiceover": {
+        "text": "Let's pin down the four key terms. Homeostasis is the maintenance of a relatively stable internal environment, within a tolerance range around a set point. Notice it is a range, not a fixed value, the internal environment is always gently oscillating. The tolerance range is the band of values within which the body works properly, and it exists because enzymes denature outside their optimal temperature and pH. Then there are the two kinds of feedback. Negative feedback is a response that opposes the original stimulus and returns the variable toward its set point. Positive feedback is the opposite, a response that amplifies the stimulus and drives the variable further away. Keep that distinction sharp, because it is the single most tested idea in this lesson, negative opposes the change, positive amplifies it."
+      }
+    },
+    {
+      "id": "concept-feedback-types",
+      "type": "concept",
+      "heading": "Why negative feedback is the one that matters",
+      "body": "Negative feedback is self-limiting, so it produces stable oscillation. Positive feedback reinforces itself until an outside event stops it.",
+      "bullets": [
+        {
+          "text": "Negative: as the variable returns to normal, the response weakens. It is self-correcting."
+        },
+        {
+          "text": "Positive: as the variable moves, the response strengthens. It runs to completion."
+        },
+        {
+          "text": "Positive feedback is normal in childbirth and blood clotting, not a homeostatic mechanism."
+        }
+      ],
+      "secondary": "Childbirth shows the logic. Cervical stretch triggers oxytocin, which intensifies contractions, which stretch the cervix more. The loop only stops when the baby is delivered.",
+      "callout": "Homeostasis runs on negative feedback. Positive feedback finishes a job.",
+      "durationInFrames": 2130,
+      "caption": "Negative feedback is self-limiting; positive feedback is self-reinforcing.",
+      "voiceover": {
+        "text": "So why is negative feedback the mechanism of homeostasis, and positive feedback is not? It comes down to one feature, self-limiting. With negative feedback, as the variable returns toward normal, the stimulus shrinks, so the response also weakens. The system settles into a stable oscillation around the set point, it corrects itself. Positive feedback does the reverse. As the variable moves, the response gets stronger, which moves the variable even further, so the loop reinforces itself and runs to completion. The classic example is childbirth. Cervical stretch triggers the hormone oxytocin, oxytocin intensifies the contractions, the contractions stretch the cervix even more, and round it goes. Crucially, that loop only stops when an outside event happens, the baby is delivered. So positive feedback is a perfectly normal, healthy mechanism, in childbirth, in blood clotting, in nerve impulses. It just is not how the body holds a variable steady."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Negative feedback",
+          "Positive feedback"
+        ],
+        "rows": [
+          [
+            "Response direction",
+            "Opposes stimulus",
+            "Amplifies stimulus"
+          ],
+          [
+            "Effect on variable",
+            "Returns to set point",
+            "Driven further away"
+          ],
+          [
+            "Self-limiting?",
+            "Yes",
+            "No"
+          ],
+          [
+            "Role",
+            "Maintains homeostasis",
+            "Drives a process to completion"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Negative or positive feedback?",
+      "question": "Classify each: (a) after a meal, blood glucose rises, insulin is released, glucose returns to normal; (b) in childbirth, cervical stretch triggers oxytocin, which strengthens contractions; (c) on a hot day, body temperature rises, sweating begins, temperature falls back to 37 degrees.",
+      "coachNote": "Ask one question of each: does the response oppose the stimulus, or amplify it?",
+      "steps": [
+        "(a) The stimulus is rising glucose; the response (insulin lowering glucose) opposes it and returns it to set point, so negative feedback.",
+        "(b) The stimulus is cervical stretch; oxytocin increases contractions, which increase stretch, amplifying the stimulus, so positive feedback.",
+        "(c) The stimulus is rising temperature; sweating cools the body back toward 37 degrees, opposing the stimulus, so negative feedback.",
+        "Decision rule: response opposes the stimulus is negative; response amplifies the stimulus is positive.",
+        "Answer: (a) negative, (b) positive, (c) negative ✓"
+      ],
+      "durationInFrames": 2010,
+      "caption": "(a) negative, (b) positive, (c) negative — judged by response direction.",
+      "voiceover": {
+        "text": "Let's run the test on three scenarios. The only question you ever ask is, does the response oppose the stimulus, or amplify it? Part a, after a meal blood glucose rises, insulin is released, and glucose comes back to normal. The stimulus is rising glucose, and the response, insulin lowering glucose, opposes that and returns it to the set point. That is negative feedback. Part b, in childbirth, stretching the cervix triggers oxytocin, which strengthens the contractions. Here the response, more contractions, increases the stretch, which triggers even more oxytocin. The response amplifies the stimulus, so that is positive feedback. Part c, on a hot day temperature rises, sweating begins, and temperature falls back to thirty seven degrees. Sweating cools the body, opposing the rise, so back to negative feedback. The rule never changes, opposes is negative, amplifies is positive."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Trace the full pathway",
+      "question": "A person becomes dehydrated and blood concentration rises above the tolerance range. Name all five stimulus-response components for the corrective response, and identify the feedback type.",
+      "coachNote": "Build it in order: stimulus, receptor, control centre, effector, response. Don't skip components.",
+      "steps": [
+        "Stimulus: blood osmolarity rises above its tolerance range (too concentrated).",
+        "Receptor: osmoreceptors in the hypothalamus detect the rise.",
+        "Control centre: the hypothalamus signals the posterior pituitary to release ADH.",
+        "Effector and response: the kidney collecting duct reabsorbs more water, so blood concentration falls back toward normal.",
+        "Because the response opposes the stimulus, this is negative feedback ✓"
+      ],
+      "durationInFrames": 1995,
+      "caption": "Dehydration response traced through all five components (negative feedback).",
+      "voiceover": {
+        "text": "Now the harder skill, tracing a full pathway in order. A person becomes dehydrated, so name all five components of the corrective response. Start with the stimulus, blood osmolarity rises above the tolerance range, the blood is too concentrated. The receptor comes next, osmoreceptors in the hypothalamus detect that rise. Then the control centre, the hypothalamus, which signals the posterior pituitary to release a hormone called A D H. Then the effector and its response together, the collecting duct of the kidney reabsorbs more water back into the blood, so blood concentration falls back toward normal. And because that whole response opposes the original stimulus, the rising concentration, it is negative feedback. We will unpack the kidney and A D H properly in Lesson Four, for now just notice how cleanly every homeostatic story fits those same five slots."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking negative feedback is harmful because it sounds negative. The word describes direction, opposing the change, not a bad outcome.",
+      "secondary": "Trap 2: saying homeostasis keeps a variable at one fixed value. It holds a tolerance range, oscillating around a set point. Trap 3: writing that the receptor detects the response. The receptor detects the stimulus, the original change, never the response.",
+      "mistakeTag": "Where homeostasis marks vanish",
+      "callout": "Negative means opposing, not bad. A range, not a value. Receptor detects the stimulus.",
+      "durationInFrames": 2100,
+      "caption": "Negative = opposing (not bad); a tolerance range (not a value); receptor detects the stimulus.",
+      "voiceover": {
+        "text": "Three traps that cost marks every single year. Trap one, the big one, thinking negative feedback is somehow harmful, because the word negative sounds bad. It is not. Negative refers only to the direction of the response, it opposes the change. Negative feedback is the healthy, corrective mechanism keeping you alive. Positive feedback is the amplifying one, and it is not inherently harmful either. Trap two, writing that homeostasis keeps a variable at a single fixed value. It does not. It holds a variable within a tolerance range, oscillating around a set point, it is dynamic, never frozen. Trap three is subtle, students write that the receptor detects the response. Wrong, the receptor detects the stimulus, the original change in the variable. The response is what the effector does about it, much later in the loop. Get those three right and homeostasis questions become easy marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "During exercise, blood carbon dioxide rises. Chemoreceptors in the carotid arteries signal the medulla, which increases breathing rate, so carbon dioxide falls back to normal. Name the receptor, the control centre, and the feedback type.",
+      "pausePrompt": "Pause and map it onto the five components.",
+      "answerSteps": [
+        "Stimulus: rising blood carbon dioxide above the tolerance range.",
+        "Receptor: chemoreceptors in the carotid arteries.",
+        "Control centre: the medulla; effector: the breathing muscles; response: faster, deeper breathing.",
+        "The response lowers carbon dioxide, opposing the stimulus, so it is negative feedback.",
+        "Answer: chemoreceptors, medulla, negative feedback ✓"
+      ],
+      "durationInFrames": 1815,
+      "caption": "Carotid chemoreceptors, medulla, negative feedback.",
+      "voiceover": {
+        "text": "Quick check. During exercise, blood carbon dioxide rises. Chemoreceptors in the carotid arteries signal the medulla, which increases breathing rate, so carbon dioxide falls back to normal. Name the receptor, the control centre, and the feedback type. Pause and map it onto the five components. Right, let's check it. The stimulus is rising carbon dioxide, above the tolerance range. The receptor is the chemoreceptors in the carotid arteries. The control centre is the medulla, which drives the effector, the breathing muscles, producing the response, faster and deeper breathing. That extra breathing blows off carbon dioxide and brings it back down, opposing the original rise. So the answer is, chemoreceptors detect it, the medulla processes it, and because the response opposes the stimulus, it is negative feedback."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Homeostasis keeps a variable within a tolerance range around a set point, not at a fixed value.",
+        "The stimulus-response pathway: stimulus, receptor, control centre, effector, response, in order.",
+        "Negative feedback opposes the stimulus and is the mechanism of homeostasis.",
+        "Positive feedback amplifies the stimulus and drives a process to completion.",
+        "Every non-infectious disease in Module 8 is a homeostatic system that has failed."
+      ],
+      "finalPrompt": "Classifying feedback? Ask one thing: does the response oppose the stimulus, or amplify it?",
+      "durationInFrames": 1860,
+      "caption": "Five takeaways: tolerance range, the five components, negative vs positive feedback.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, homeostasis keeps a variable within a tolerance range around a set point, never at a single fixed value. Second, the stimulus-response pathway runs in a fixed order, stimulus, receptor, control centre, effector, response, and a full-mark answer names all five. Third, negative feedback opposes the stimulus, and it is the mechanism of homeostasis. Fourth, positive feedback amplifies the stimulus, and it drives a process to completion, like childbirth, it is not a homeostatic mechanism. And fifth, the big-picture idea for the whole module, every non-infectious disease you are about to study is a homeostatic system that has failed. Whenever you classify feedback, just ask one thing, does the response oppose the stimulus, or amplify it. See you next lesson."
+      }
+    }
+  ]
+}

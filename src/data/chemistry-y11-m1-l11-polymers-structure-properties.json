@@ -1,0 +1,209 @@
+{
+  "title": "Polymers: Structure and Properties",
+  "subtitle": "How monomers build materials with very different properties",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 11",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "investigate the different chemical structures of atoms and elements, including but not limited to: polymers"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-7"],
+  "inquiryQuestion": "What binds atoms together in elements and compounds?",
+  "lessonIntent": "Students can distinguish addition and condensation polymerisation and relate a polymer's structural features to its physical properties.",
+  "examSkill": "Identify the polymerisation type from the monomers, then explain a property using chain length, branching, or intermolecular forces between chains.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, polymers, how tiny monomers build very different materials. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Polymers: Structure and Properties (Year 11 Chemistry, Module 1, Lesson 11)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same monomer, opposite materials",
+      "body": "A soft plastic bag and a rigid milk bottle are both made from ethene. The difference is structure.",
+      "callout": "Structure decides the property, not just the ingredient.",
+      "durationInFrames": 690,
+      "caption": "LDPE bags and HDPE bottles share one monomer but differ in structure.",
+      "voiceover": {
+        "text": "OK, here's something that should feel strange. A soft, stretchy plastic bag and a rigid milk bottle are both made from exactly the same monomer, ethene. So how can one identical building block give you two materials that behave so differently? The answer is the whole point of today. It isn't just what you build with, it's how the chains are put together. The bag is low density polyethylene, with branched chains that can't pack tightly. The bottle is high density polyethylene, with long straight chains that line up neatly. Same monomer, completely different structure, and that structure is what you can actually feel in your hands."
+      }
+    },
+    {
+      "id": "concept-addition",
+      "type": "concept",
+      "heading": "Addition polymerisation",
+      "body": "Alkene monomers with a C=C double bond open up and join into a long chain, losing no atoms at all.",
+      "image": "l11AdditionPolymerisation",
+      "bullets": [
+        {"text": "Each C=C double bond opens and forms new single bonds to its neighbours."},
+        {"text": "No small molecule is released, so atom economy is one hundred percent."},
+        {"text": "The R group, like H, Cl, or CH₃, changes the polymer's properties."}
+      ],
+      "secondary": "Ethene gives polyethylene, propene gives polypropylene, vinyl chloride gives PVC, and styrene gives polystyrene.",
+      "callout": "Open the double bond, join the chain, lose nothing.",
+      "durationInFrames": 1140,
+      "caption": "Addition polymerisation: C=C monomers join with no byproduct, 100% atom economy.",
+      "voiceover": {
+        "text": "Let's start with the first way to make a polymer, addition polymerisation. The monomers here are alkenes, which means they carry a carbon to carbon double bond. In the reaction, each of those double bonds opens up, and the carbons form new single bonds to the monomers on either side. Picture a long line of people unlinking one arm so they can grab the hand of the next person, and the chain just grows. The beautiful thing is that nothing is thrown away. Every single atom from the monomers ends up in the polymer, so the atom economy is one hundred percent. Change the side group, the R group, and you change the material. Hydrogen gives you polyethylene, a chlorine gives you PVC, a methyl group gives you polypropylene. Same backbone, different personality."
+      }
+    },
+    {
+      "id": "concept-condensation",
+      "type": "concept",
+      "heading": "Condensation polymerisation",
+      "body": "Monomers with two reactive groups join while releasing a small molecule, usually water, at every link.",
+      "image": "l11CondensationPolymerisation",
+      "bullets": [
+        {"text": "Each monomer needs two reactive ends, so it can join on both sides."},
+        {"text": "A small molecule, usually water, is released at every new linkage."},
+        {"text": "Polyester forms ester links; nylon forms amide links."}
+      ],
+      "secondary": "PET polyester comes from a diol plus a diacid. Nylon comes from a diamine plus a diacid. Both lose water at each junction.",
+      "callout": "Two reactive ends, plus a small molecule lost at every link.",
+      "durationInFrames": 1170,
+      "caption": "Condensation polymerisation: bifunctional monomers join, releasing H₂O at each link.",
+      "voiceover": {
+        "text": "Now the second route, condensation polymerisation, and it works on a different principle. Here the monomers are bifunctional, which simply means each one has two reactive groups, one at each end, so it can bond on both sides and keep the chain going. But unlike addition, every time two ends join, a small molecule is squeezed out, almost always water. That released molecule is why we call it condensation. Take polyester, the PET in drink bottles. It's built from a diol and a diacid, and at each junction an ester linkage forms and water leaves. Nylon works the same way, from a diamine and a diacid, forming amide linkages and again releasing water. So the headline difference is simple. Addition loses nothing, condensation always loses a small byproduct."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Monomer: the small repeating unit that joins up to form a polymer."},
+        {"text": "Polymer: a long molecule made of many monomers bonded together."},
+        {"text": "Addition polymerisation: alkene monomers join with no byproduct."},
+        {"text": "Condensation polymerisation: bifunctional monomers join, releasing a small molecule."}
+      ],
+      "callout": "Addition keeps every atom; condensation sheds a small molecule.",
+      "durationInFrames": 960,
+      "caption": "Monomer, polymer, addition polymerisation, condensation polymerisation.",
+      "voiceover": {
+        "text": "Let's nail the vocabulary before we go further. A monomer is the small repeating unit, the single Lego brick. A polymer is the long molecule you get when many of those bricks bond together. Addition polymerisation is the route where alkene monomers, with their double bonds, join up without losing anything. And condensation polymerisation is the route where bifunctional monomers join while releasing a small molecule at each link, usually water. If you can keep those two routes straight, and remember that only condensation produces a byproduct, you've got the backbone of this whole lesson."
+      }
+    },
+    {
+      "id": "concept-properties",
+      "type": "concept",
+      "heading": "Structure controls properties",
+      "body": "The forces between chains, and how the chains are shaped, decide whether a plastic is soft, rigid, or rock-hard.",
+      "bullets": [
+        {"text": "Longer chains mean more contact, so higher melting point and strength."},
+        {"text": "More branching stops tight packing, so lower density and more flexibility."},
+        {"text": "Cross-links lock chains together, giving rigid, heat-resistant thermosets."}
+      ],
+      "secondary": "Polar groups, like the C–Cl in PVC, add dipole forces between chains, so PVC is stiffer than dispersion-only polyethylene.",
+      "callout": "Chain length, branching, and forces between chains set the properties.",
+      "durationInFrames": 1170,
+      "caption": "Chain length, branching, cross-linking, and polarity between chains set the properties.",
+      "voiceover": {
+        "text": "So why do polymers behave so differently? It comes back to the intermolecular forces between the chains, the same idea from the previous lesson, just on a giant scale. A few structural features do the heavy lifting. First, chain length. Longer chains touch each other over a larger area, so the forces add up, which raises the melting point and the strength. Second, branching. Branched chains can't pack closely, so the material is less dense and more flexible, which is exactly why those floppy bags are branched. Third, cross-linking. Actual covalent bonds between chains lock everything in place, giving you a rigid, heat-resistant thermoset like bakelite. And fourth, polarity. The polar carbon to chlorine bonds in PVC add dipole forces between the chains, so PVC ends up noticeably stiffer than polyethylene, which only has dispersion forces."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Reading the monomers",
+      "question": "Ethylene glycol (a diol) reacts with terephthalic acid (a diacid) to make PET. State the polymerisation type, the linkage formed, and the byproduct.",
+      "coachNote": "Count the reactive groups first, then decide the route.",
+      "steps": [
+        "Each monomer has two reactive groups, so the monomers are bifunctional",
+        "Bifunctional monomers that lose a small molecule means condensation polymerisation",
+        "A –OH from the diol reacts with a –COOH from the diacid, forming an ester linkage (–COO–)",
+        "Each new linkage releases one molecule of water",
+        "Answer: condensation, ester linkage, byproduct is H₂O ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Diol + diacid → PET: condensation, ester linkage, water released.",
+      "voiceover": {
+        "text": "Let's work through a classic exam set-up. Ethylene glycol, which is a diol, reacts with terephthalic acid, which is a diacid, to make PET. We need the polymerisation type, the linkage, and the byproduct. Step one, count the reactive groups on each monomer. The diol has two hydroxyl groups, the diacid has two acid groups, so both monomers are bifunctional. Step two, bifunctional monomers that join while losing a small molecule, that's the signature of condensation polymerisation. Step three, an O H group on the diol reacts with a C double bond O O H group on the diacid, and they form an ester linkage. Step four, every time that ester link forms, one molecule of water is squeezed out. So the full answer is condensation polymerisation, an ester linkage, and water as the byproduct. Counting the reactive ends first told us everything."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Explaining a property",
+      "question": "PVC is stiffer than polyethylene, yet both are addition polymers. Explain the difference in terms of structure.",
+      "coachNote": "Compare the side groups, then the forces between chains.",
+      "steps": [
+        "Both are addition polymers with a carbon backbone, so the chains are similar",
+        "Polyethylene's side group is just –H, so chains attract by dispersion forces only",
+        "PVC has a polar C–Cl side group, giving each chain a permanent dipole",
+        "Permanent dipoles mean dipole–dipole forces between PVC chains, stronger than dispersion",
+        "Answer: stronger forces between PVC chains resist deformation, so PVC is stiffer ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Polar C–Cl adds dipole forces between PVC chains, so it is stiffer than PE.",
+      "voiceover": {
+        "text": "Now an explanation question, which is where the marks live. PVC is stiffer than polyethylene, even though both are addition polymers. Explain it using structure. Step one, recognise what's the same. Both have a carbon backbone built by addition, so the chains themselves are very similar. Step two, look at the side group on polyethylene. It's just a hydrogen, which is non-polar, so the only thing holding neighbouring chains together is weak dispersion forces. Step three, look at PVC's side group. It carries a chlorine, and the carbon to chlorine bond is polar, so each chain has a permanent dipole. Step four, permanent dipoles mean dipole to dipole forces between the chains, and those are stronger than dispersion. So the full answer, the stronger forces between PVC chains make them harder to pull apart and slide, which is exactly what we feel as stiffness. Notice we never said PVC is just stronger. We linked the side group, to the dipole, to the force, to the property."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking addition polymerisation releases a byproduct. It never does; that's condensation's signature.",
+      "secondary": "Trap 2: saying a longer chain is stronger because of stronger bonds. The covalent bonds are the same; it's the extra intermolecular contact. Trap 3: forgetting condensation needs two reactive groups per monomer.",
+      "mistakeTag": "Where polymer marks vanish",
+      "callout": "No byproduct in addition; chains grip by IMFs; condensation needs two reactive ends.",
+      "durationInFrames": 1230,
+      "caption": "Addition has no byproduct; chain strength is from IMFs; condensation needs bifunctional monomers.",
+      "voiceover": {
+        "text": "Three traps that quietly cost marks. Trap one, thinking addition polymerisation releases a byproduct. It doesn't, ever. One hundred percent of the atoms stay in the polymer. Releasing a small molecule like water is the unmistakable signature of condensation, so don't mix them up. Trap two, claiming a longer chain is stronger because the bonds are stronger. The covalent bonds along the chain are identical. What changes is the amount of intermolecular contact between chains, and more contact means more total force. Always explain strength through the forces between chains, not the bonds within them. Trap three, forgetting that condensation needs two reactive groups on each monomer. A monomer with only one reactive end can join on one side and then it stops, so the chain can't grow. You need bifunctional monomers for a real condensation polymer."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Nylon-6,6 forms from a diamine and a diacid. State the polymerisation type, the linkage formed, and the byproduct.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "A diamine and a diacid each have two reactive groups, so both are bifunctional",
+        "Bifunctional monomers releasing a small molecule means condensation polymerisation",
+        "An –NH₂ group reacts with a –COOH group, forming an amide linkage (–CO–NH–)",
+        "Each amide linkage releases one molecule of water",
+        "Answer: condensation, amide linkage, byproduct is H₂O ✓"
+      ],
+      "durationInFrames": 1200,
+      "caption": "Diamine + diacid → nylon: condensation, amide linkage, water released.",
+      "voiceover": {
+        "text": "Quick check, and it's the nylon version of the worked example. Nylon-6,6 forms from a diamine and a diacid. Give me the polymerisation type, the linkage, and the byproduct. Pause and work it through. Right, let's check it. Step one, the diamine has two amine groups and the diacid has two acid groups, so both monomers are bifunctional. Step two, bifunctional monomers joining while losing a small molecule, that's condensation polymerisation again. Step three, an N H two group on the diamine reacts with an acid group on the diacid, and together they form an amide linkage. Step four, each of those amide links squeezes out one molecule of water. So the answer is condensation, an amide linkage, and water. Same logic as PET, just with amide links instead of ester links."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Addition: alkene monomers join, no byproduct, 100% atom economy.",
+        "Condensation: bifunctional monomers join, releasing a small molecule.",
+        "Polyester has ester links; nylon has amide links.",
+        "Longer chains and polar groups raise melting point and stiffness.",
+        "Properties come from forces between chains, not the bonds within them."
+      ],
+      "finalPrompt": "Asked to explain a property? Link the structure to the forces between chains.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: addition vs condensation, ester vs amide, structure controls properties.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, addition polymerisation joins alkene monomers with no byproduct at all, so the atom economy is one hundred percent. Second, condensation polymerisation joins bifunctional monomers while releasing a small molecule, usually water. Third, polyester is held together by ester linkages, while nylon uses amide linkages. Fourth, longer chains and polar side groups both raise the melting point and stiffness, because they strengthen the forces between chains. And fifth, whenever you're asked to explain a property, link the structure to the intermolecular forces between the chains, never to the bonds inside them. Get that habit and polymer questions become predictable. See you next lesson."
+      }
+    }
+  ]
+}

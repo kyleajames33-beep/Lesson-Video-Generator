@@ -1,0 +1,215 @@
+{
+  "title": "Optical Isomerism and Chirality in Medicines",
+  "subtitle": "How a mirror-image molecule can heal or harm",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 13",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8: Applying Chemical Ideas",
+  "syllabusDotPoints": [
+    "investigate the processes used to analyse the structure of simple organic compounds addressed in the course",
+    "examine the structural formulae and properties of optical isomers (enantiomers) and their significance in medicine"
+  ],
+  "moduleLessonCount": 16,
+  "nesaOutcomes": ["CH12-15", "CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-7"],
+  "inquiryQuestion": "How is information about the reactivity and structure of organic compounds obtained?",
+  "lessonIntent": "Students can identify a chiral centre, distinguish enantiomers from other isomers, and explain why chiral biology makes enantiopurity matter, using thalidomide.",
+  "examSkill": "Explain why two enantiomers can differ biologically despite identical physical properties, and what polarimetry can and cannot tell you.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, optical isomerism and chirality in medicines. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Optical Isomerism and Chirality in Medicines (Year 12 Chemistry, Module 8, Lesson 13)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "How can mirror images differ this much?",
+      "body": "Thalidomide was sold as a 50:50 mix of two mirror-image forms. One was a safe sedative. The other caused birth defects in 10,000 children.",
+      "image": "thalidomideStory",
+      "callout": "Same formula, same connectivity. Opposite outcomes.",
+      "durationInFrames": 720,
+      "caption": "Thalidomide's two mirror-image forms: one a sedative, one a teratogen.",
+      "voiceover": {
+        "text": "OK, here's one of the most important stories in all of medicinal chemistry. In 1957, a company called Grunenthal launched thalidomide as a sedative, including for pregnant women with morning sickness. It was sold as a racemic mixture, a fifty-fifty blend of two mirror-image forms of the molecule, called the R and the S enantiomer. By 1961, around ten thousand children had been born with severe limb malformations across forty-six countries. Later analysis showed the R form was the safe sedative, while the S form disrupted foetal development. Same molecular formula. Same connectivity. Two molecules that are mirror images of each other, and yet one heals and one harms. How is that even possible? That's what chirality explains, and it's our whole lesson."
+      }
+    },
+    {
+      "id": "concept-chiral",
+      "type": "concept",
+      "heading": "What makes a molecule chiral",
+      "body": "A molecule is chiral if it can't be superimposed on its mirror image. The key structural clue is a chiral centre.",
+      "bullets": [
+        {"text": "A chiral centre is a carbon bonded to four different groups."},
+        {"text": "Four different groups allow two distinct 3D arrangements."},
+        {"text": "Those arrangements are non-superimposable mirror images, a pair of enantiomers."}
+      ],
+      "secondary": "Chirality is about three-dimensional arrangement, not just molecular formula. Two molecules can share a formula and the same groups but have different 3D shapes.",
+      "callout": "Carbon, four different groups, two mirror-image forms.",
+      "durationInFrames": 990,
+      "caption": "A chiral centre is a carbon bonded to four different groups.",
+      "voiceover": {
+        "text": "Let's define chirality properly. A molecule is chiral if it cannot be superimposed on its own mirror image, a bit like your left and right hands. In this course, the key structural clue is a chiral centre, which is usually a carbon atom bonded to four different groups. Here's why that matters. When a carbon has four different substituents, there are two genuinely different ways to arrange them in three-dimensional space. Those two arrangements are mirror images of each other, but they are not identical, you can't rotate one to land exactly on the other. That gives you a pair of enantiomers. And the crucial idea is that chirality is about three-dimensional arrangement, not molecular formula. Two molecules can have the same formula and the same functional groups, yet still be different because their 3D shapes differ."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Chiral centre: a carbon bonded to four different groups, a stereocentre."},
+        {"text": "Enantiomers: non-superimposable mirror-image stereoisomers."},
+        {"text": "Racemic mixture: a 50:50 mix of both enantiomers, optically inactive."},
+        {"text": "Optical activity: the ability of a chiral molecule to rotate plane-polarised light."}
+      ],
+      "callout": "Enantiomers share everything except their handedness.",
+      "durationInFrames": 990,
+      "caption": "Chiral centre, enantiomers, racemic mixture, and optical activity.",
+      "voiceover": {
+        "text": "Quick vocabulary, because precise words really matter here. A chiral centre is a carbon atom bonded to four different groups, also called a stereocentre. Enantiomers are non-superimposable mirror-image stereoisomers, they have identical physical properties in a normal environment, but they rotate plane-polarised light in opposite directions. A racemic mixture is a fifty-fifty mixture of both enantiomers, and it's optically inactive, because the two opposite rotations cancel out. And optical activity is the ability of a chiral molecule to rotate plane-polarised light, where a plus or minus sign tells you the direction of that rotation. The thing to internalise, enantiomers share almost everything, formula, connectivity, melting point, the lot. The only difference is their handedness, their three-dimensional arrangement."
+      }
+    },
+    {
+      "id": "concept-vs-isomers",
+      "type": "concept",
+      "heading": "Enantiomers versus other isomers",
+      "body": "Don't mix up enantiomers with other isomers. The source of the difference isn't the same for each.",
+      "bullets": [
+        {"text": "Structural isomers differ in connectivity, which atoms join which."},
+        {"text": "Geometric isomers differ in arrangement around a restricted bond, cis/trans."},
+        {"text": "Enantiomers share connectivity and differ only in mirror-image 3D arrangement."}
+      ],
+      "secondary": "Enantiomers usually have the same molecular formula, the same connectivity, and many of the same physical properties. Their difference lies purely in how they occupy space.",
+      "callout": "Different connectivity? Structural. Same connectivity, mirror image? Enantiomers.",
+      "durationInFrames": 990,
+      "caption": "Structural isomers differ in connectivity; enantiomers differ only in 3D arrangement.",
+      "voiceover": {
+        "text": "It's really important not to confuse enantiomers with other kinds of isomers, because the source of the difference isn't the same. Structural isomers differ in connectivity, that is, in which atoms are bonded to which, so they have genuinely different bonding arrangements. Geometric isomers differ in their arrangement around a restricted bond, the classic cis and trans, or E and Z, around a double bond. Enantiomers are different again. They share the same connectivity, and they differ only in their non-superimposable mirror-image three-dimensional arrangement. So enantiomers usually have the same molecular formula, the same connectivity, and many of the same physical properties, and their only difference is how they occupy space. A common slip is to call enantiomers structural isomers with a chiral centre. They're not, because structural isomers differ in connectivity, and enantiomers do not."
+      }
+    },
+    {
+      "id": "concept-biology",
+      "type": "concept",
+      "heading": "Why biology can tell them apart",
+      "body": "Enantiomers look almost identical in a non-chiral environment. But biological environments are not non-chiral.",
+      "bullets": [
+        {"text": "Enzymes, receptors and biomolecules are themselves chiral structures."},
+        {"text": "A chiral binding site can favour one mirror-image arrangement over the other."},
+        {"text": "So one enantiomer may be therapeutic while the other is inactive or harmful."}
+      ],
+      "secondary": "This is the deep reason chirality matters in medicines. Same atoms does not mean same biological outcome, because the body's machinery is handed.",
+      "callout": "Chiral receptors distinguish handedness, like a glove fits one hand.",
+      "durationInFrames": 1020,
+      "caption": "Chiral receptors distinguish enantiomers, so biological effects can differ.",
+      "voiceover": {
+        "text": "So if enantiomers are so similar, why would they ever behave differently as medicines? Here's the answer. Enantiomers do have very similar physical properties, but only in a non-chiral environment. Biological environments are not non-chiral. Enzymes, receptors, and many biomolecules are themselves chiral structures, they have a definite handedness. That means a chiral binding site can favour one mirror-image arrangement over the other, the same way a glove fits one hand but not the other. So one enantiomer may bind well to its target and produce a therapeutic effect, while the other binds weakly, does nothing, or even produces harmful effects. This is the deep reason chirality matters so much in medicine. Same atoms does not mean same biological outcome, because the body's molecular machinery is handed, and it can tell left from right."
+      }
+    },
+    {
+      "id": "concept-thalidomide",
+      "type": "concept",
+      "heading": "The thalidomide case",
+      "body": "Thalidomide is studied because failing to appreciate stereochemistry had devastating consequences.",
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "R-enantiomer",
+        "afterLabel": "S-enantiomer",
+        "beforeContent": "Sedative, the intended therapeutic effect.",
+        "afterContent": "Teratogenic, caused severe birth defects.",
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "R-enantiomer: associated with the sedative effect."},
+        {"text": "S-enantiomer: associated with teratogenic effects."},
+        {"text": "Sold as a racemic mixture, so both forms were given together."}
+      ],
+      "secondary": "Even pure R isn't a clean fix: in the body, enantiomers can interconvert by racemisation, so some S would form anyway. Each enantiomer must be assessed independently.",
+      "callout": "A racemic drug delivers the harmful form alongside the helpful one.",
+      "durationInFrames": 1110,
+      "caption": "Thalidomide: R was sedative, S was teratogenic, sold as a racemic mix.",
+      "voiceover": {
+        "text": "Let's look at the thalidomide case directly, because it's the classic demonstration of why this matters. In the syllabus framing, the R enantiomer of thalidomide is associated with the sedative effect, the intended one, while the S enantiomer is associated with teratogenic effects, the ones that caused birth defects. The drug was sold as a racemic mixture, a fifty-fifty blend, which means both forms were administered together. So patients received the harmful S form right alongside the helpful R form. This history is a major reason modern drug development strongly prefers enantiopure drugs, rather than assuming both enantiomers are equally safe. And there's a sting in the tail. Even giving pure R wouldn't have been a clean fix, because in the body enantiomers can interconvert by a process called racemisation, so some of the dangerous S form would have appeared anyway. That's why each enantiomer has to be assessed independently."
+      }
+    },
+    {
+      "id": "concept-polarimetry",
+      "type": "concept",
+      "heading": "Detecting optical activity",
+      "body": "Polarimetry detects optical activity by measuring how much a sample rotates plane-polarised light.",
+      "bullets": [
+        {"text": "A pure enantiomer rotates plane-polarised light."},
+        {"text": "A racemic mixture shows zero net rotation, the effects cancel."},
+        {"text": "Polarimetry is evidence of optical activity, not structural identification."}
+      ],
+      "secondary": "A zero reading doesn't mean pure: a racemic mix reads the same as an achiral compound. Recognise chirality structurally first, then measure it, then confirm with chiral HPLC if safety needs it.",
+      "callout": "Polarimetry measures rotation; it doesn't draw the structure.",
+      "durationInFrames": 1020,
+      "caption": "Polarimetry: pure enantiomer rotates light, racemic mix gives zero net rotation.",
+      "voiceover": {
+        "text": "Finally, how do chemists actually detect chirality in the lab? The named technique is polarimetry, which detects optical activity by measuring how much a sample rotates plane-polarised light as it passes through. A pure enantiomer rotates that light by a definite amount. A racemic mixture, the fifty-fifty blend, shows zero net rotation, because the two opposite rotations cancel each other out. Now here's the subtlety that makes a good exam point. That zero reading does not mean the sample is chemically pure. A racemic mixture gives the same zero result as a genuinely achiral compound. So polarimetry is experimental evidence of optical activity, it is not structural identification, it doesn't draw the molecule for you. The proper workflow is, recognise chirality structurally by finding the chiral centre, then measure optical activity by polarimetry, and then, if safety demands enantiopure product, separate and confirm with chiral H-P-L-C."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The trap that costs Band 6",
+      "body": "The classic error: same formula and same functional groups means the same biological effect.",
+      "secondary": "Wrong, because biological receptors are chiral and read 3D handedness. A second slip: thinking a zero polarimetry reading proves purity, when a racemic mix also reads zero.",
+      "mistakeTag": "Where chirality marks vanish",
+      "callout": "Same atoms, different handedness, different biology.",
+      "durationInFrames": 870,
+      "caption": "Same groups can give different biology; zero rotation doesn't prove purity.",
+      "voiceover": {
+        "text": "Now the trap that costs the top band. Students often write that if two molecules share a formula and the same functional groups, they must have the same biological effect. That's exactly the thinking that caused the thalidomide tragedy, and it's marked wrong, because biological receptors are chiral and they read three-dimensional handedness, not just the list of groups. There's a second, sneakier slip. Students see a zero polarimetry reading and conclude the sample is pure. It isn't necessarily, because a racemic mixture gives a zero reading too, identical to an achiral compound. So remember, same atoms can still mean different biology if the handedness differs, and a zero rotation does not prove purity. Naming both of those correctly is what separates a Band 6 answer here."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A pharmacist suspects a drug batch has racemised during synthesis. She runs polarimetry and reads zero net rotation. Does that confirm the batch is the pure active enantiomer? Explain.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "A pure single enantiomer would rotate plane-polarised light, giving a non-zero reading.",
+        "Zero net rotation means the two enantiomers are present in equal amounts.",
+        "Their opposite rotations cancel, exactly like a racemic mixture.",
+        "So zero rotation is consistent with racemisation, not purity.",
+        "Answer: no, the zero reading suggests a racemic mix, the opposite of pure active drug."
+      ],
+      "durationInFrames": 1020,
+      "caption": "Zero net rotation suggests a racemic mix, not the pure active enantiomer.",
+      "voiceover": {
+        "text": "Quick check, applying polarimetry carefully. A pharmacist suspects a drug batch has racemised during synthesis. She runs polarimetry and reads zero net rotation. Does that confirm the batch is the pure active enantiomer? Pause and reason it through. Right, let's check it. Step one, a pure single enantiomer would rotate plane-polarised light, giving a clear non-zero reading. Step two, a reading of zero net rotation means the two enantiomers are present in equal amounts. Step three, their opposite rotations cancel, which is exactly what a racemic mixture does. Step four, so a zero reading is consistent with racemisation, not with purity. So the answer, no, it does not confirm purity, in fact the zero reading suggests the batch has racemised into a fifty-fifty mix, which is the opposite of the pure active drug she wanted."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A chiral centre is a carbon bonded to four different groups.",
+        "Enantiomers share connectivity and differ only in 3D mirror-image arrangement.",
+        "Chiral receptors can distinguish enantiomers, so biology can differ.",
+        "Thalidomide: R was sedative, S was teratogenic, sold as a racemic mix.",
+        "Polarimetry detects optical activity but a racemic mix reads zero."
+      ],
+      "finalPrompt": "Chirality question? Same atoms can still mean different biology.",
+      "durationInFrames": 1020,
+      "caption": "Five takeaways: chiral centre, enantiomers, chiral biology, thalidomide, polarimetry.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, a chiral centre is a carbon bonded to four different groups, and it produces a pair of non-superimposable mirror images. Second, enantiomers share the same connectivity and differ only in their three-dimensional mirror-image arrangement, unlike structural isomers, which differ in connectivity. Third, biological receptors and enzymes are themselves chiral, so they can distinguish enantiomers, which is why the biological effects can differ. Fourth, thalidomide is the cautionary tale, the R form was the sedative and the S form was teratogenic, and it was sold as a racemic mixture. And fifth, polarimetry detects optical activity, but remember a racemic mixture reads zero, the same as an achiral compound. So whenever you meet a chirality question, hold onto the big idea, same atoms can still mean different biology. Next lesson, solubility and drug delivery. See you there."
+      }
+    }
+  ]
+}

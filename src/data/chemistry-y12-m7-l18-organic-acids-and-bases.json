@@ -1,0 +1,246 @@
+{
+  "title": "Organic Acids and Bases",
+  "subtitle": "pKa, conjugate-base stability, and the inductive effect",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 18",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "investigate the differences between an organic acid and organic base",
+    "explain the properties within and between the homologous series of carboxylic acids, amines and amides with reference to the intermolecular and intramolecular bonding present"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": [
+    "CH12-14",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What are the properties of organic acids and bases?",
+  "lessonIntent": "Students can rank organic acid strength using pKa and conjugate-base stability, explain the inductive effect, and design a reagent scheme to distinguish acid classes.",
+  "examSkill": "Use conjugate-base stability and the inductive effect to predict relative acid strength, and apply the hydrogen carbonate, hydroxide and sodium tests to identify organic acid classes.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, organic acids and bases, ranked by pKa. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Organic Acids and Bases (Year 12 Chemistry, Module 7, Lesson 18)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Three acids, three bottles, no labels",
+      "body": "A pharmacist has three unlabelled acidic solutions. With just two reagents she sorts a carboxylic acid from a phenol from an alcohol. How?",
+      "callout": "Which reagents, in which order, identify an unknown organic acid?",
+      "image": "m7l18HookUnknownSolutions",
+      "durationInFrames": 1462,
+      "caption": "Two simple reagents can sort a carboxylic acid, a phenol, and an alcohol.",
+      "voiceover": {
+        "text": "OK, picture a pharmacist with three unlabelled bottles. All three are acidic, all three turn litmus red. One holds a carboxylic acid, one a phenol, and one is barely acidic at all. With just two carefully chosen reagents, and the right order, she can tell them apart for certain. Today you'll see how, and the deeper idea behind it. Why are some organic compounds stronger acids than others? It comes down to one thing, how stable the conjugate base is after the proton leaves. Get that, and you can predict acid strength, rank molecules by pKa, and design a test scheme to identify any unknown."
+      }
+    },
+    {
+      "id": "concept-pka",
+      "type": "concept",
+      "heading": "pKa: willingness to give up a proton",
+      "body": "pKa measures how readily an acid donates a proton. The lower the pKa, the stronger the acid, and the three organic classes sit at very different values.",
+      "bullets": [
+        {
+          "text": "pKa is minus log of Ka; lower pKa means a stronger acid.",
+          "at": 9
+        },
+        {
+          "text": "Carboxylic acid is near 5, the strongest organic acid class.",
+          "at": 17
+        },
+        {
+          "text": "Phenol is near 10; an alcohol is near 16, essentially non-acidic.",
+          "at": 26
+        },
+        {
+          "text": "Each unit of pKa is a tenfold change in strength.",
+          "at": 33
+        }
+      ],
+      "secondary": "Carboxylic acids are still weak acids overall: only about one percent ionised, despite being the strongest organic class.",
+      "callout": "Lower pKa means stronger acid. Acid 5, phenol 10, alcohol 16.",
+      "durationInFrames": 2002,
+      "caption": "pKa ranks acidity: carboxylic acid (5), phenol (10), alcohol (16).",
+      "voiceover": {
+        "text": "Let's start with the measuring stick, pKa. It tells you how willing a molecule is to give up a proton. Formally it's minus the log of the acid constant, but the rule you actually use is simple. The lower the pKa, the stronger the acid. And the three organic classes sit at strikingly different values. A carboxylic acid has a pKa around five, making it the strongest organic acid class. Phenol comes in around ten, much weaker. And an alcohol is around sixteen, so weak it's essentially non-acidic. Remember that pKa is a log scale, so each unit is a tenfold change in strength, which means a carboxylic acid is around a hundred billion times stronger than an alcohol. One honest caveat. Even a carboxylic acid is still a weak acid overall, only about one percent ionised. It's just the strongest of a weak bunch."
+      }
+    },
+    {
+      "id": "concept-conjugate",
+      "type": "concept",
+      "heading": "Why the ladder looks like that",
+      "body": "Acid strength tracks conjugate-base stability. The more the negative charge can spread out, the more stable the base and the stronger the acid.",
+      "image": "m7l18ConjugateBaseStability",
+      "bullets": [
+        {
+          "text": "Carboxylate: charge shared over two equal oxygens, most stable.",
+          "at": 9
+        },
+        {
+          "text": "Phenoxide: charge spreads into the benzene ring, partly stabilised.",
+          "at": 17
+        },
+        {
+          "text": "Alkoxide: charge stuck on one oxygen, no resonance, least stable.",
+          "at": 26
+        },
+        {
+          "text": "More stable conjugate base means the acid ionises more readily.",
+          "at": 33
+        }
+      ],
+      "callout": "Spread the charge, stabilise the base, strengthen the acid.",
+      "durationInFrames": 2043,
+      "caption": "Conjugate-base stability: carboxylate > phenoxide > alkoxide.",
+      "voiceover": {
+        "text": "So why do the three classes sit where they do? The answer is conjugate-base stability, and it's the single most important idea in this lesson. When an acid loses its proton, you're left with a negatively charged conjugate base, and the more stable that base, the more willingly the acid let the proton go in the first place. Compare the three. The carboxylate ion spreads its charge evenly over two equivalent oxygens by resonance, the most stable case, so the carboxylic acid is strongest. The phenoxide ion spreads charge into the benzene ring, so it's partly stabilised, making phenol intermediate. The alkoxide ion from an alcohol traps all its charge on a single oxygen with no resonance at all, the least stable, so the alcohol is the weakest acid. The pattern is one line. The more a conjugate base can delocalise its charge, the stronger the parent acid."
+      }
+    },
+    {
+      "id": "concept-inductive",
+      "type": "concept",
+      "heading": "Electronegative atoms pull the charge",
+      "body": "Adding electron-withdrawing atoms near the carboxyl group stabilises the conjugate base further, making a stronger acid. This is the inductive effect.",
+      "bullets": [
+        {
+          "text": "Electronegative atoms like chlorine pull electron density away from the COO group.",
+          "at": 9
+        },
+        {
+          "text": "This spreads the negative charge further, stabilising the conjugate base.",
+          "at": 18
+        },
+        {
+          "text": "A more stable base shifts ionisation right, raising acid strength.",
+          "at": 26
+        },
+        {
+          "text": "So chloroethanoic acid is stronger than ethanoic acid; more Cl, stronger still.",
+          "at": 35
+        }
+      ],
+      "callout": "Electron-withdrawing groups stabilise the base, so the acid gets stronger.",
+      "durationInFrames": 1921,
+      "caption": "The inductive effect: electron-withdrawing atoms raise carboxylic acid strength.",
+      "voiceover": {
+        "text": "Now a refinement that lets you rank acids within the carboxylic family, the inductive effect. Take ethanoic acid and replace a hydrogen on the next carbon with a chlorine. Chlorine is strongly electronegative, so it pulls electron density toward itself, away from the carboxylate group. That pulling spreads the negative charge of the conjugate base out even further, which makes the base more stable. A more stable conjugate base means the ionisation equilibrium sits further to the right, so the acid is stronger. The numbers back it up. Ethanoic acid has a pKa around four point seven six, while chloroethanoic acid drops to around two point eight six, clearly stronger. And the effect stacks. Add three chlorines and trichloroethanoic acid becomes stronger still. So electron-withdrawing groups near the carboxyl group always strengthen the acid by stabilising its conjugate base."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "A reagent ladder for identification",
+      "bullets": [
+        {
+          "text": "Sodium hydrogen carbonate: only a carboxylic acid fizzes, giving CO2.",
+          "at": 8
+        },
+        {
+          "text": "Sodium hydroxide: phenol reacts here, but an alcohol does not.",
+          "at": 16
+        },
+        {
+          "text": "Sodium metal: all three give hydrogen, so it cannot distinguish them.",
+          "at": 25
+        },
+        {
+          "text": "So run hydrogen carbonate first, then hydroxide, to sort all three.",
+          "at": 33
+        }
+      ],
+      "callout": "Hydrogen carbonate finds the acid; hydroxide separates phenol from alcohol.",
+      "durationInFrames": 2002,
+      "caption": "Bicarb identifies the acid; hydroxide separates phenol from alcohol.",
+      "voiceover": {
+        "text": "Now the practical pay-off, a reagent ladder that identifies an unknown. The logic is thermodynamic. A reaction goes forward only if the acid you start with is stronger than the acid that would form. So sodium hydrogen carbonate, which relates to carbonic acid at pKa six point four, only reacts with something stronger than that. Only a carboxylic acid qualifies, so only a carboxylic acid fizzes and releases carbon dioxide. Phenol and alcohol don't. Next, sodium hydroxide, a strong base with no pKa limit, will deprotonate phenol but not an alcohol, so it separates those two. And a warning about sodium metal. It reacts with all three, because all three have an oxygen-hydrogen bond, so it gives hydrogen with every one and can't tell them apart. The winning order is clear. Hydrogen carbonate first to catch the acid, then hydroxide to split phenol from alcohol."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Identify three unknowns",
+      "question": "Solutions A, B, C are each acidic. A fizzes with NaHCO3. B does not react with NaHCO3 but does react with NaOH. C reacts with neither. Identify each.",
+      "coachNote": "Apply the ladder: hydrogen carbonate finds the carboxylic acid; hydroxide then catches the phenol.",
+      "steps": [
+        "A fizzes with NaHCO3: only carboxylic acids do this, so A is a carboxylic acid.",
+        "B does not fizz with NaHCO3, so it is weaker than carbonic acid: not a carboxylic acid.",
+        "B does react with NaOH, the strong base, so B is acidic enough to be a phenol.",
+        "C reacts with neither reagent, so it is the weakest: an alcohol.",
+        "Cross-check: all three would react with sodium metal, which is why we avoid it here.",
+        "Answer: A is a carboxylic acid, B is a phenol, C is an alcohol."
+      ],
+      "durationInFrames": 2069,
+      "caption": "A = carboxylic acid (fizzes), B = phenol (NaOH only), C = alcohol (neither).",
+      "voiceover": {
+        "text": "Let's run the ladder on a real identification. Three acidic solutions. A fizzes with sodium hydrogen carbonate. B does not fizz with it, but does react with sodium hydroxide. C reacts with neither. Identify each. Start with A. Fizzing with sodium hydrogen carbonate is the carboxylic acid signature, because only an acid stronger than carbonic acid can release carbon dioxide. So A is a carboxylic acid. Now B. It doesn't fizz with hydrogen carbonate, so it's weaker than carbonic acid, ruling out a carboxylic acid. But it does react with sodium hydroxide, the strong base, which a phenol can do. So B is a phenol. That leaves C, which reacts with neither reagent, making it the weakest, an alcohol. And notice why we never used sodium metal here. It reacts with all three, so it would tell us nothing. A is a carboxylic acid, B a phenol, C an alcohol."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Phenol fizzes with bicarb because it is acidic\"",
+      "body": "Students assume any acidic compound reacts with sodium hydrogen carbonate. Phenol is acidic, yet it does not.",
+      "secondary": "Sodium hydrogen carbonate only reacts with acids stronger than carbonic acid, pKa about 6.4. Phenol, at pKa about 10, is too weak, so no carbon dioxide forms. Only carboxylic acids, near pKa 5, are strong enough.",
+      "callout": "Acidic is not enough; bicarb needs an acid stronger than carbonic acid.",
+      "mistakeTag": "Phenol is too weak for the bicarb test",
+      "durationInFrames": 1800,
+      "caption": "Phenol does not fizz with bicarb: it is weaker than carbonic acid.",
+      "voiceover": {
+        "text": "Here's the trap. Students learn that phenol is acidic, turns litmus red, reacts with sodium hydroxide, and then assume it must also fizz with sodium hydrogen carbonate. It doesn't, and the reason is precise. Sodium hydrogen carbonate only reacts with an acid that is stronger than carbonic acid, which has a pKa around six point four. That's the threshold. A carboxylic acid, near pKa five, clears it easily and releases carbon dioxide. But phenol, at pKa around ten, is well below the threshold, far too weak, so no gas forms at all. So being acidic is not enough. The acid has to be stronger than carbonic acid specifically. That single threshold is exactly why the hydrogen carbonate test is so good at picking out carboxylic acids and rejecting everything weaker."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "Explain why ethanamine produces a basic solution in water but ethanamide produces a neutral one, using structure and Kb.",
+      "pausePrompt": "Pause and think about the nitrogen lone pair in each.",
+      "answerSteps": [
+        "Ethanamine, CH3CH2NH2, has a free lone pair on its nitrogen.",
+        "That lone pair accepts a proton from water, releasing hydroxide, so the solution is basic; Kb about ten to the minus four.",
+        "Ethanamide, CH3CONH2, has its nitrogen bonded to a carbonyl.",
+        "Its lone pair is delocalised into the C=O by resonance, so it cannot accept a proton; Kb about ten to the minus fifteen.",
+        "So ethanamine is a weak base and ethanamide is effectively neutral."
+      ],
+      "durationInFrames": 2177,
+      "caption": "Ethanamine: free lone pair, basic. Ethanamide: delocalised lone pair, neutral.",
+      "voiceover": {
+        "text": "Your turn, and this one is on the base side. Explain why ethanamine gives a basic solution in water, but ethanamide gives a neutral one, using structure and base constants. Pause and think about the nitrogen lone pair in each. Now let's check. Ethanamine is a normal primary amine, and its nitrogen carries a free lone pair. That lone pair accepts a proton from water and releases hydroxide, so the solution is basic, with a base constant around ten to the minus four. Ethanamide is different, because its nitrogen is bonded directly to a carbonyl group. The lone pair is delocalised into that carbon-oxygen system by resonance, so it's no longer free to grab a proton. Its base constant collapses to about ten to the minus fifteen, effectively neutral. So same nitrogen, same lone pair on paper, but in the amine it's free, and in the amide it's tied up. That single structural difference is the whole answer."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Ranking acid strength? Compare conjugate-base stability. Identifying a class? Bicarb first, then hydroxide.",
+      "points": [
+        "Lower pKa means a stronger acid: carboxylic acid 5, phenol 10, alcohol 16.",
+        "Acid strength tracks conjugate-base stability: more charge delocalisation, stronger acid.",
+        "The inductive effect: electron-withdrawing groups stabilise the base and strengthen the acid.",
+        "Hydrogen carbonate finds the carboxylic acid; hydroxide then separates phenol from alcohol.",
+        "Amines are weak bases with a free lone pair; amides are neutral because it is delocalised."
+      ],
+      "durationInFrames": 1975,
+      "caption": "Conjugate-base stability sets acid strength; a reagent ladder sorts the classes.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, the lower the pKa, the stronger the acid, with carboxylic acids around five, phenols around ten, and alcohols around sixteen. Second, acid strength tracks conjugate-base stability. The more a conjugate base can spread its negative charge, the stronger the acid. Third, the inductive effect. Electron-withdrawing atoms like chlorine pull charge away, stabilise the conjugate base, and make the acid stronger. Fourth, for identification, run sodium hydrogen carbonate first to catch the carboxylic acid, then sodium hydroxide to separate phenol from alcohol, and avoid sodium metal because it reacts with all three. And fifth, on the base side, amines are weak bases with a free lone pair, while amides are neutral because that lone pair is delocalised. So to rank acids, compare conjugate bases, and to identify a class, use the reagent ladder. See you next lesson."
+      }
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "title": "Frequency Data and SNP Analysis",
+  "subtitle": "Reading population genetic data without overclaiming",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 16",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "investigate the use of technologies to determine inheritance patterns in a population, including frequency data and SNP analysis (ACSBL064, ACSBL085)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Can population genetic patterns be predicted with any accuracy?",
+  "lessonIntent": "Students can interpret frequency data with cautious language, explain what a SNP is, and judge what SNP and frequency evidence can and cannot conclude.",
+  "examSkill": "State a trend, compare groups with frequency language, then qualify the claim with a limitation, keeping conclusions proportional to the evidence.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, frequency data and SNP analysis. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Frequency Data and SNP Analysis (Year 12 Biology, Module 5, Lesson 16)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "When data is used to harm",
+      "body": "The Tuskegee study tracked disease in 399 men for decades without treating them, and it reshaped research ethics forever.",
+      "callout": "What do scientists owe the people whose data they collect?",
+      "image": "bioM5L16SnpComparison",
+      "durationInFrames": 1735,
+      "caption": "Tuskegee led to the Belmont Report and its principles: autonomy, beneficence and justice.",
+      "voiceover": {
+        "text": "From 1932 to 1972, the US Public Health Service ran a study that tracked the progression of syphilis in three hundred and ninety-nine Black men, and deliberately never treated them, even after penicillin became a standard cure in 1947. When the Tuskegee study was finally exposed, the outrage reshaped research forever, producing the Belmont Report and its three core principles, autonomy, beneficence, and justice. We open with this because today is about population genetic data, comparing how common traits and alleles are across groups. That kind of data is powerful, and it can be misused. So as we learn to read frequency data and SNP analysis, keep two questions running, what can this evidence actually tell us, and what do we owe the people it comes from."
+      }
+    },
+    {
+      "id": "concept-frequency",
+      "type": "concept",
+      "heading": "Frequency is a group pattern",
+      "body": "Frequency tells you how common a trait or allele is in a sample, describing the group, not any single individual.",
+      "bullets": [
+        {
+          "text": "Frequency is just a proportion: 60 out of 100 is 60%."
+        },
+        {
+          "text": "It describes a pattern across a group, not every individual in it."
+        },
+        {
+          "text": "Different populations can show different observed frequencies."
+        }
+      ],
+      "secondary": "Because it's only a sample, use cautious language. Say 'more common' or 'in this sample', never 'proves' or 'always'.",
+      "callout": "Frequency describes the group; one individual can still differ.",
+      "durationInFrames": 1897,
+      "caption": "Frequency is a proportion describing a group; report it with cautious language.",
+      "voiceover": {
+        "text": "Let's start with what frequency actually means. The frequency of a trait is simply how common it is in your sample, expressed as a proportion. If sixty out of a hundred people have attached earlobes, the frequency is sixty percent. But here's the point that matters for marks. A frequency describes a pattern across a whole group, it does not tell you about any single individual. So a sixty percent frequency doesn't mean any one person is sixty percent anything, it means most of the group has the trait. And different populations will naturally show different observed frequencies. Because you're working from a sample, your language has to stay cautious. Say more common, or higher frequency, or in this sample. Never say it proves something, or that it's always true. That careful wording is exactly what examiners look for."
+      }
+    },
+    {
+      "id": "concept-quality",
+      "type": "concept",
+      "heading": "The numbers are only as good as the sample",
+      "body": "Strong conclusions need large, representative samples with consistent definitions, not just big-looking numbers.",
+      "bullets": [
+        {
+          "text": "Name the limitations: small sample size, single location, observer bias."
+        },
+        {
+          "text": "A one-generation snapshot can't show change over time."
+        },
+        {
+          "text": "A difference in a table is not automatically meaningful for the species."
+        }
+      ],
+      "secondary": "This is the skill the exam rewards: spotting why a dataset might not represent the wider population before you trust the trend.",
+      "callout": "A bigger or biased sample is not the same as a better one.",
+      "durationInFrames": 1816,
+      "caption": "Conclusion strength depends on sample size, representativeness and consistent definitions.",
+      "voiceover": {
+        "text": "Now, a frequency is only as trustworthy as the data behind it. Strong conclusions need large, representative samples, with everyone measuring the trait the same way. So whenever you interpret data, you should be ready to name the limitations. The big ones are small sample size, because a handful of people may not represent the wider population. Sampling from a single location or one subgroup, which can skew the result. Observer bias, where the person collecting data influences it. And a one-generation snapshot, which can't reveal anything about change over time. The deeper idea is this, a difference showing up in a data table does not automatically mean a real, biologically meaningful difference for the whole species. The sample might just be too small, or unrepresentative. Spotting that is the skill being tested."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Read the table",
+      "question": "Group A has 18 attached and 42 free earlobes; Group B has 30 attached and 30 free. State the frequency of attached earlobes in each group, compare them, and give one limitation.",
+      "coachNote": "Frequency = attached ÷ total, as a percentage. Each group totals 60.",
+      "steps": [
+        "Group A: 18 attached out of 60 total, so 18 ÷ 60 = 30%.",
+        "Group B: 30 attached out of 60 total, so 30 ÷ 60 = 50%.",
+        "Compare with frequency language: attached earlobes are more common in Group B in this sample.",
+        "Limitation: 60 people from two school groups is a small, single-location sample.",
+        "Answer: A = 30%, B = 50%; more common in B; small, unrepresentative sample ✓"
+      ],
+      "durationInFrames": 1924,
+      "caption": "Group A 30%, Group B 50% attached; more common in B; small single-location sample.",
+      "voiceover": {
+        "text": "Let's read a real table. Group A has eighteen people with attached earlobes and forty-two with free earlobes. Group B has thirty attached and thirty free. First, the frequencies. Each group totals sixty people. For Group A, eighteen attached out of sixty is thirty percent. For Group B, thirty out of sixty is fifty percent. Now compare them, and notice the careful language, attached earlobes are more common in Group B in this sample. I'm not saying they're always more common, just in this data. And finally, the part students forget, a limitation. Sixty people drawn from two school groups is a small sample from a single location, so it may not represent the wider population. That three-part structure, state the frequency, compare with cautious language, then give a limitation, is exactly how to score full marks on a data question."
+      },
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          {
+            "label": "Group A attached",
+            "value": 30
+          },
+          {
+            "label": "Group B attached",
+            "value": 50
+          }
+        ],
+        "unit": "% with attached earlobes (this sample)"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Frequency data: how common a characteristic or allele is in a sample."
+        },
+        {
+          "text": "Bias: a systematic problem that makes a sample unrepresentative."
+        },
+        {
+          "text": "SNP: a single nucleotide polymorphism, a one-base difference at a DNA position."
+        },
+        {
+          "text": "Marker: a DNA feature used to compare individuals, populations or species."
+        }
+      ],
+      "callout": "A SNP is one base; a marker is anything you compare by.",
+      "durationInFrames": 1735,
+      "caption": "Frequency data, bias, SNP, marker.",
+      "voiceover": {
+        "text": "Let's pin down the words. Frequency data is information about how common a characteristic or an allele is within a sample or population. Bias is a systematic problem in how data is collected that makes the sample unrepresentative, like only sampling one location. A SNP, spelled S N P, is a single nucleotide polymorphism, which just means a position in the DNA where individuals differ by a single base, one person has an A, say, and another has a G. And a marker is any DNA feature you use to compare individuals, populations, or species. So the relationship is simple, a SNP is one specific kind of marker, a single-base one, and a marker is the more general idea of anything you line up and compare by."
+      }
+    },
+    {
+      "id": "concept-snp",
+      "type": "concept",
+      "heading": "SNPs: one base, many comparisons",
+      "body": "A SNP is a single-base difference in the DNA, and because SNPs are common, they make handy comparison markers.",
+      "bullets": [
+        {
+          "text": "At a SNP position, individuals differ by just one base, like A versus G."
+        },
+        {
+          "text": "SNPs are scattered all through the genome, so there are many to compare."
+        },
+        {
+          "text": "Comparing SNPs shows similarity or difference within and between populations."
+        }
+      ],
+      "secondary": "Each person has an almost unique SNP profile, which is why SNPs are used in forensic identification and in mapping disease-associated regions.",
+      "callout": "Many SNP positions, lined up, become a comparison tool.",
+      "durationInFrames": 1924,
+      "caption": "SNPs are common single-base differences used as markers for comparison and identification.",
+      "voiceover": {
+        "text": "Now let's get concrete about SNPs. A SNP is a single position in the DNA where people differ by exactly one base. At that spot, one person might carry an A while another carries a G. On its own that sounds tiny, but here's why it's useful. SNPs are scattered right across the genome, so there are millions of these positions available to compare. Line up the same SNP positions across many individuals, and you can measure how similar or different they are, both within a population and between populations. Because everyone's particular combination of SNPs is almost unique, except for identical twins, SNPs are powerful in forensic identification, matching crime-scene DNA to a person. And by comparing SNP frequencies between people who have a disease and people who don't, scientists can map regions of the genome associated with that disease."
+      }
+    },
+    {
+      "id": "concept-limits",
+      "type": "concept",
+      "heading": "What one SNP cannot do",
+      "body": "A single SNP is only one marker, so it can suggest relatedness but cannot prove overall similarity or separation.",
+      "bullets": [
+        {
+          "text": "SNPs can compare genomes and support inferences about relatedness."
+        },
+        {
+          "text": "One SNP cannot describe a whole genome or prove complete separation."
+        },
+        {
+          "text": "More positions and bigger samples give stronger conclusions."
+        }
+      ],
+      "secondary": "Conclusion quality scales with the number of SNP positions compared, the number of individuals, and how representative they are. Keep the claim proportional to the evidence.",
+      "callout": "One marker is a hint; many markers are evidence.",
+      "durationInFrames": 1762,
+      "caption": "One SNP is a single marker; strong conclusions need many positions and large samples.",
+      "voiceover": {
+        "text": "But here's the crucial limit, and it's a favourite exam point. A single SNP is just one marker, one position out of millions. So while SNPs as a set are powerful, you cannot lean a big conclusion on a single one. One SNP can hint at relatedness, but it cannot describe a whole genome, and it cannot prove that two populations are completely related, or completely separate. After all, two groups might differ at one SNP but match at thousands of others. So the quality of any conclusion scales with three things, the number of SNP positions you compared, the number of individuals, and how representative they were. More positions and bigger, fairer samples give stronger conclusions. The golden rule is to keep your claim proportional to the evidence."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: concluding from one SNP that two populations are completely unrelated. One marker cannot carry that weight.",
+      "secondary": "Trap 2: assuming a change in allele frequency always means natural selection. Frequencies also shift through genetic drift, mutation and gene flow. In small populations, drift alone causes large random changes, so claiming selection needs evidence of differential survival or reproduction.",
+      "mistakeTag": "Where data-interpretation marks vanish",
+      "callout": "One SNP proves little; frequency change is not always selection.",
+      "durationInFrames": 1762,
+      "caption": "Don't overclaim from one SNP; frequency change can be drift, mutation or gene flow.",
+      "voiceover": {
+        "text": "Two traps that cost marks. Trap one, concluding from a single SNP that two populations are completely unrelated, or completely the same. One marker simply cannot carry that weight, you need many positions before you draw a conclusion about overall relatedness. Trap two is a classic. Students see a change in allele frequency over time and immediately write natural selection. But that's an overclaim. Allele frequencies can change through several mechanisms, natural selection, yes, but also genetic drift, mutation, and gene flow. In a small population especially, genetic drift can cause big random swings in frequency with no selective pressure at all. So to actually conclude natural selection, you need extra evidence that some individuals survived or reproduced more because of the trait. Frequency change alone is not enough."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A study of 12 beetles finds a dark-colour allele at 70% one year and 45% the next, and concludes natural selection caused it. Give two reasons this conclusion is weak.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The sample is only 12 beetles, far too small to represent the population reliably.",
+        "In such a small group, genetic drift can cause large random frequency swings.",
+        "A frequency change can also come from mutation or gene flow, not just selection.",
+        "No evidence of differential survival or reproduction has been given.",
+        "Answer: tiny sample plus no survival evidence means selection is an overclaim ✓"
+      ],
+      "durationInFrames": 2045,
+      "caption": "A 12-beetle frequency swing is weak evidence: small sample, drift, no survival data.",
+      "voiceover": {
+        "text": "Quick check. A study of just twelve beetles finds a dark-colour allele at seventy percent one year and forty-five percent the next, and the researchers conclude that natural selection caused the change. Give two reasons this conclusion is weak. Pause and reason it through. Okay, there are several good reasons, you only need two. First, the sample is tiny, only twelve beetles, which is far too few to represent the wider population reliably. Second, and connected to that, in such a small group genetic drift can produce large random swings in frequency all on its own, with no selection involved. Third, a frequency change could equally come from mutation or gene flow. And fourth, they've given no evidence that dark beetles actually survived or reproduced more. So between the tiny sample and the missing survival evidence, calling it natural selection is an overclaim. Keep the conclusion proportional to the evidence."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Frequency is a group pattern, reported with cautious language like 'in this sample'.",
+        "Conclusions are only as strong as the sample size and representativeness.",
+        "A SNP is a one-base difference used as a comparison marker across the genome.",
+        "One SNP cannot prove overall relatedness; more positions and people are stronger.",
+        "A frequency change is not automatically natural selection; drift and others count too."
+      ],
+      "finalPrompt": "Data question? State the trend, compare with frequency language, then qualify it with a limitation.",
+      "durationInFrames": 1911,
+      "caption": "Five takeaways: frequency, sample quality, SNPs, their limits, and frequency change.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, a frequency is a group pattern, so report it with cautious language, like more common, or in this sample. Second, your conclusions are only ever as strong as your sample size and how representative it is. Third, a SNP is a single-base difference in the DNA, used as a comparison marker, and there are millions of them across the genome. Fourth, one SNP on its own cannot prove overall relatedness or separation, you need many positions and many individuals for a strong conclusion. And fifth, a change in allele frequency is not automatically natural selection, because genetic drift, mutation, and gene flow can all shift frequencies too. So on any data question, state the trend, compare it using frequency language, then qualify it with a limitation. See you next lesson."
+      }
+    }
+  ]
+}

@@ -12,15 +12,18 @@
 
 import {interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
 import type {LessonData, TextScene} from '../lesson/types';
+import {ASSETS, type AssetName} from '../assets';
 import {FadeUp} from '../animations/FadeUp';
 import {
 	ScribbleAnnotation,
 	ScribbleUnderline,
 } from '../animations/DoodlePrimitives';
+import {BulletReveal} from '../animations/BulletReveal';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
 import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
+import {useAccent} from '../styles/theme';
 
 type HookSlideProps = {
 	scene: TextScene;
@@ -32,6 +35,7 @@ type HookSlideProps = {
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
 
 export const HookSlide = ({scene, lesson, sceneIndex, totalScenes}: HookSlideProps) => {
+	const rd = scene.revealDelays ?? {};
 	const keyPhrase = pickKeyPhrase(scene.body);
 	const isLongHook = scene.body.length > 95;
 	const atom = isLongHook
@@ -39,25 +43,45 @@ export const HookSlide = ({scene, lesson, sceneIndex, totalScenes}: HookSlidePro
 		: {x: 960, y: 420, labelDx: 140, labelDy: -90};
 
 	return (
-		<SlideFrame>
+		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
 			<SlideChrome lesson={lesson} dot="2.1" topic="A QUESTION" sceneType="hook" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
-			{/* Single iconic glyph — "one atom" */}
-			<AtomGlyph delay={12} centerX={atom.x} centerY={atom.y} compact={isLongHook} />
+			{scene.image && ASSETS[scene.image as AssetName] ? (
+				<FadeUp delay={rd.glyph ?? 12} durationFrames={18} dy={16}>
+					<img
+						src={ASSETS[scene.image as AssetName]}
+						alt=""
+						style={{
+							position: 'absolute',
+							left: atom.x,
+							top: atom.y,
+							transform: 'translate(-50%, -50%)',
+							maxWidth: isLongHook ? 520 : 640,
+							maxHeight: isLongHook ? 340 : 420,
+							objectFit: 'contain',
+							filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.18))',
+						}}
+					/>
+				</FadeUp>
+			) : (
+				<AtomGlyph delay={rd.glyph ?? 12} centerX={atom.x} centerY={atom.y} compact={isLongHook} />
+			)}
 
 			{/* Margin annotation pointing at the glyph */}
-			<ScribbleAnnotation
-				x={atom.x + 46}
-				y={atom.y}
-				dx={atom.labelDx}
-				dy={atom.labelDy}
-				label="↑ one atom"
-				color={TOK.amber}
-				seed={11}
-				delay={100}
-				leaderDurationFrames={14}
-				labelDurationFrames={10}
-			/>
+			{!scene.image && (
+				<ScribbleAnnotation
+					x={atom.x + 46}
+					y={atom.y}
+					dx={atom.labelDx}
+					dy={atom.labelDy}
+					label="↑ one atom"
+					color={TOK.amber}
+					seed={11}
+					delay={rd.annotation ?? 100}
+					leaderDurationFrames={14}
+					labelDurationFrames={10}
+				/>
+			)}
 
 			{/* Bottom hero panel */}
 			<div
@@ -70,20 +94,48 @@ export const HookSlide = ({scene, lesson, sceneIndex, totalScenes}: HookSlidePro
 			>
 				<Eyebrow color={TOK.inkDim}>↓ A QUESTION</Eyebrow>
 
-				<div
-					style={{
-						fontSize: fitHookQuestionSize(scene.body),
-						fontWeight: 800,
-						lineHeight: 1.05,
-						letterSpacing: '-0.03em',
-						maxWidth: isLongHook ? 1780 : 1500,
-					}}
-				>
-					<HeroQuestion text={scene.body} keyPhrase={keyPhrase} startDelay={30} />
-				</div>
+				{scene.bullets && scene.bullets.length > 0 ? (
+					<HookBulletList
+						scene={scene}
+						bulletStart={rd.bulletsStart ?? rd.body ?? 30}
+						bulletEnd={Math.max((rd.bulletsStart ?? rd.body ?? 30) + 60, scene.durationInFrames - 90)}
+					/>
+				) : (
+					<>
+						{scene.heading ? (
+							<FadeUp delay={rd.heading ?? 6} durationFrames={14} dy={16}>
+								<h1
+									style={{
+										margin: '6px 0 18px',
+										fontSize: 56,
+										fontWeight: 800,
+										lineHeight: 1.05,
+										letterSpacing: '-0.025em',
+										color: TOK.ink,
+										maxWidth: 1700,
+									}}
+								>
+									{scene.heading}
+								</h1>
+							</FadeUp>
+						) : null}
+						<div
+							style={{
+								fontSize: fitHookQuestionSize(scene.body),
+								fontWeight: 700,
+								lineHeight: 1.1,
+								letterSpacing: '-0.02em',
+								maxWidth: isLongHook ? 1780 : 1500,
+								color: scene.heading ? TOK.inkDim : undefined,
+							}}
+						>
+							<HeroQuestion text={scene.body} keyPhrase={keyPhrase} startDelay={rd.body ?? 30} />
+						</div>
+					</>
+				)}
 
 				{scene.callout ? (
-					<FadeUp delay={165} durationFrames={14} dy={20}>
+					<FadeUp delay={rd.callout ?? 165} durationFrames={14} dy={20}>
 						<div
 							style={{
 								marginTop: 28,
@@ -103,6 +155,48 @@ export const HookSlide = ({scene, lesson, sceneIndex, totalScenes}: HookSlidePro
 	);
 };
 
+// ─── HookBulletList — bullet form of the hook question ─────────────────
+// Used when the hook scene supplies `bullets` instead of relying on a long
+// prose body. The hook stays high-impact: heading is still the strongest
+// visual element via short bold text, and bullets land in narrator order.
+
+const HookBulletList = ({
+	scene,
+	bulletStart,
+	bulletEnd,
+}: {
+	scene: TextScene;
+	bulletStart: number;
+	bulletEnd: number;
+}) => (
+	<>
+		{scene.heading ? (
+			<FadeUp delay={Math.max(0, bulletStart - 12)} durationFrames={14} dy={18}>
+				<h1
+					style={{
+						margin: '0 0 18px',
+						fontSize: 64,
+						fontWeight: 800,
+						lineHeight: 1.04,
+						letterSpacing: '-0.025em',
+						color: TOK.ink,
+						maxWidth: 1700,
+					}}
+				>
+					{scene.heading}
+				</h1>
+			</FadeUp>
+		) : null}
+		<BulletReveal
+			bullets={scene.bullets!}
+			startFrame={bulletStart}
+			endFrame={bulletEnd}
+			markerColor={TOK.amber}
+			fontSize={34}
+		/>
+	</>
+);
+
 // ─── AtomGlyph — a single glowing circle representing "one atom" ─────────
 // Fulfills motion principle #7 (no dead frames) via slow ambient pulse on
 // the outer halo. The amber accent obeys principle #3 (one accent per beat)
@@ -121,6 +215,7 @@ const AtomGlyph = ({
 }) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
+	const theme = useAccent();
 	const t = (frame - delay) / fps;
 	const reveal = interpolate(frame, [delay, delay + 18], [0, 1], clamp);
 	// Slow halo pulse — 4s cycle, gentle (motion principle #7)
@@ -164,8 +259,8 @@ const AtomGlyph = ({
 					width: compact ? 136 : 180,
 					height: compact ? 136 : 180,
 					borderRadius: '50%',
-					background: `radial-gradient(circle at 35% 30%, ${TOK.chem2}aa 0%, ${TOK.chem3} 60%, ${TOK.bg} 100%)`,
-					boxShadow: `0 0 80px ${TOK.chem1}40`,
+					background: `radial-gradient(circle at 35% 30%, ${theme.accent2}aa 0%, ${theme.soft} 60%, ${TOK.bg} 100%)`,
+					boxShadow: `0 0 80px ${theme.accent}40`,
 				}}
 			/>
 			{/* Core highlight */}
@@ -208,6 +303,7 @@ const HeroQuestion = ({
 	keyPhrase: string | null;
 	startDelay: number;
 }) => {
+	const theme = useAccent();
 	if (!keyPhrase) {
 		return (
 			<FadeUp delay={startDelay} durationFrames={16} dy={18}>
@@ -248,7 +344,7 @@ const HeroQuestion = ({
 					<div style={{position: 'absolute', left: -8, bottom: -34, width: '100%', pointerEvents: 'none'}}>
 						<ScribbleUnderline
 							width={Math.max(180, phrase.length * 32)}
-							color={TOK.chem2}
+							color={theme.accent2}
 							strokeWidth={6}
 							seed={7}
 							strokes={2}

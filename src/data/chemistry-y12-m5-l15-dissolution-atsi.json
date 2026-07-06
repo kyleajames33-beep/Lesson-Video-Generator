@@ -1,0 +1,187 @@
+{
+  "title": "Dissolution and First Nations Knowledge",
+  "subtitle": "The energetics of dissolving, and a 65,000-year-old equilibrium",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 15",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+  "syllabusDotPoints": [
+    "describe and analyse the processes involved in the dissolution of ionic compounds in water",
+    "investigate the use of solubility equilibria by Aboriginal and Torres Strait Islander Peoples when removing toxicity from foods, for example: the use of water to remove toxicity from cycad fruit"
+  ],
+  "moduleLessonCount": 18,
+  "nesaOutcomes": ["CH12-12", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "How does solubility relate to chemical equilibrium?",
+  "lessonIntent": "Students can explain dissolution as competing lattice and hydration energies, classify it as exo- or endothermic, and analyse First Nations cycad detoxification as an applied solubility equilibrium.",
+  "examSkill": "Compare lattice energy with hydration energy to predict the sign of ΔH_dissolution, and explain running-water leaching of cycads using Le Chatelier's principle.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the energetics of dissolution. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Dissolution and First Nations Knowledge (Year 12 Chemistry, Module 5, Lesson 15)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why one pack warms and another cools",
+      "body": "Two solids dissolve in water. One makes the beaker hot, the other makes it cold. Same process, opposite energy.",
+      "callout": "Whether dissolving warms or cools comes down to two competing energies.",
+      "image": "m5L15HookHotColdPacks",
+      "durationInFrames": 690,
+      "caption": "Dissolving can be exothermic (hot pack) or endothermic (cold pack).",
+      "voiceover": {
+        "text": "OK, here's a question you can almost feel. Crack open a chemical hand-warmer, and a salt dissolves and the pack gets hot. Crack open an instant cold pack for a sports injury, and a different salt dissolves and the pack goes icy cold. Both are just a solid dissolving in water. So why does one release heat and the other absorb it? The answer is a tug-of-war between two energies that happen every time something dissolves, and today you'll learn to predict which one wins. Then, in the second half, we'll look at one of the oldest and most sophisticated applications of solubility on Earth, the way Aboriginal and Torres Strait Islander peoples have used water to detoxify cycad seeds, a practice tens of thousands of years old."
+      }
+    },
+    {
+      "id": "concept-energetics",
+      "type": "concept",
+      "heading": "Two competing energies",
+      "body": "Dissolving means breaking the lattice apart, then surrounding the freed ions with water. One costs energy, the other releases it.",
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "Lattice energy (in)",
+        "afterLabel": "Hydration energy (out)",
+        "beforeContent": "Breaking the ionic lattice: always endothermic, energy absorbed.",
+        "afterContent": "Water surrounding the ions: always exothermic, energy released.",
+        "delay": 20
+      },
+      "bullets": [
+        {"text": "Breaking the lattice: always absorbs energy, it's endothermic."},
+        {"text": "Hydrating the freed ions: always releases energy, it's exothermic."},
+        {"text": "ΔH_dissolution is the sum of these two opposing terms."}
+      ],
+      "secondary": "If the hydration energy released outweighs the lattice energy needed, the solution warms. If the lattice energy dominates, the solution cools.",
+      "callout": "Lattice energy in, hydration energy out. The bigger one wins.",
+      "durationInFrames": 1170,
+      "caption": "Dissolution = lattice energy (endothermic) + hydration energy (exothermic).",
+      "voiceover": {
+        "text": "Let's unpack the tug-of-war. Dissolving an ionic solid happens in two steps, and they pull in opposite directions energetically. Step one, you have to rip the ions out of their rigid lattice. Pulling apart particles that are strongly attracted always costs energy, so this step is endothermic, it absorbs heat. That energy is the lattice energy. Step two, once the ions are free, water molecules cluster around them, the slightly negative oxygen ends pointing at cations, the slightly positive hydrogen ends pointing at anions. Forming those attractions always releases energy, so this step is exothermic. That's the hydration energy. The overall enthalpy of dissolution is just these two added together. So the whole outcome depends on which is bigger. If the hydration energy released beats the lattice energy you paid, you come out ahead and the solution warms. If the lattice energy dominates, you're running an energy deficit and the solution cools."
+      }
+    },
+    {
+      "id": "concept-exoendo",
+      "type": "concept",
+      "heading": "Hot packs and cold packs",
+      "body": "Real salts fall into two camps, and entropy explains why even the cold ones still dissolve.",
+      "bullets": [
+        {"text": "Exothermic: NaOH (−44) and CaCl₂ (−81 kJ mol⁻¹), used in hot packs."},
+        {"text": "Endothermic: NH₄NO₃ (+25.7) and KNO₃ (+35 kJ mol⁻¹), used in cold packs."},
+        {"text": "Endothermic dissolving still happens because entropy rises sharply."}
+      ],
+      "secondary": "When ions disperse through the water, the disorder increases a lot, so TΔS is large and positive. That entropy term can outweigh a positive ΔH, making ΔG negative, exactly the Module 4 logic.",
+      "callout": "Entropy can pay the enthalpy bill, so cold packs still dissolve.",
+      "durationInFrames": 1170,
+      "caption": "Exothermic: NaOH, CaCl₂. Endothermic: NH₄NO₃, KNO₃ (entropy-driven).",
+      "voiceover": {
+        "text": "Let's put real salts into the two camps. On the exothermic side, where hydration energy wins, sodium hydroxide releases about forty-four kilojoules per mole as it dissolves, and calcium chloride about eighty-one. Both get genuinely hot, which is why calcium chloride goes into reusable hand-warmers. On the endothermic side, where breaking the lattice dominates, ammonium nitrate absorbs about twenty-five-point-seven kilojoules per mole, and potassium nitrate about thirty-five. Both go cold, which is why ammonium nitrate is the classic instant cold pack. But here's the puzzle, if dissolving ammonium nitrate absorbs energy, why does it dissolve at all? The answer is entropy, straight from Module four. When the ordered lattice breaks and the ions scatter through the water, disorder increases enormously, so the temperature times entropy term is large and positive. That term outweighs the positive enthalpy change, making the overall Gibbs free energy change negative, so it dissolves spontaneously, while cooling the surroundings. Entropy pays the enthalpy bill."
+      }
+    },
+    {
+      "id": "concept-atsi",
+      "type": "concept",
+      "heading": "Detoxifying cycads with running water",
+      "body": "Cycad seeds contain a water-soluble toxin. First Nations peoples remove it by exploiting a solubility equilibrium.",
+      "bullets": [
+        {"text": "Cycad seeds contain cycasin and macrozamin, water-soluble toxins."},
+        {"text": "Soaking dissolves the toxin into the water, a dissolution equilibrium."},
+        {"text": "Running water removes dissolved toxin, so the equilibrium keeps shifting out."}
+      ],
+      "secondary": "By Le Chatelier, continuously carrying away the dissolved toxin keeps its concentration near zero, so the system never reaches equilibrium and toxin keeps leaching out, maximising extraction.",
+      "callout": "Running water keeps shifting the equilibrium toward more dissolving.",
+      "durationInFrames": 1200,
+      "caption": "Cycasin leaches out; running water keeps the dissolution equilibrium shifting right.",
+      "voiceover": {
+        "text": "Now one of the most elegant real-world uses of everything we've covered. Cycad seeds are a rich food source across northern Australia, but raw, they contain potent water-soluble toxins, cycasin and macrozamin, which cause serious illness. Aboriginal and Torres Strait Islander peoples developed detailed methods to make them safe to eat. The chemistry is a solubility equilibrium. When you soak the crushed seed, the toxin dissolves into the water, setting up an equilibrium between toxin in the seed and toxin in the water. If you used still water, that equilibrium would reach a balance and leaching would stop, with toxin still left in the seed. But the traditional method uses running water, often a flowing stream, or repeated changes of fresh water. By Le Chatelier, continuously carrying the dissolved toxin away keeps its concentration in the water near zero, so the system can never settle, and toxin keeps moving out of the seed. It's the same logic as removing a product to drive a reaction forward, applied for tens of thousands of years."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Predicting the sign of ΔH_dissolution",
+      "question": "For a salt, the lattice energy is +780 kJ mol⁻¹ (energy to break the lattice) and the total hydration energy is −805 kJ mol⁻¹. (a) Calculate ΔH_dissolution. (b) Will the solution warm or cool? (c) Why might it still dissolve if ΔH were positive?",
+      "coachNote": "ΔH_dissolution = lattice energy + hydration energy (add the signed values).",
+      "unitCancel": {
+        "left": "kJ mol⁻¹",
+        "right": "kJ mol⁻¹",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "ΔH_dissolution = lattice energy + hydration energy.",
+        "ΔH_dissolution = (+780) + (−805) = −25 kJ mol⁻¹.",
+        "(b) ΔH is negative, so the dissolution is exothermic, the solution warms.",
+        "(c) If ΔH were positive, a large positive ΔS (ions dispersing) can make TΔS exceed ΔH.",
+        "That makes ΔG = ΔH − TΔS negative, so dissolving is still spontaneous.",
+        "Answer: ΔH_dissolution = −25 kJ mol⁻¹, exothermic; entropy can drive endothermic dissolving ✓"
+      ],
+      "durationInFrames": 1620,
+      "caption": "ΔH = +780 + (−805) = −25 kJ mol⁻¹ → exothermic; entropy rescues endothermic cases.",
+      "voiceover": {
+        "text": "Let's make the energetics quantitative. For some salt, breaking the lattice costs seven hundred and eighty kilojoules per mole, that's the lattice energy, a positive number because you're putting energy in. And hydrating all the freed ions releases eight hundred and five kilojoules per mole, that's the hydration energy, negative because energy comes out. The enthalpy of dissolution is simply these added together, with their signs. Plus seven-eighty plus minus eight-oh-five gives minus twenty-five kilojoules per mole. It's negative, so dissolving this salt is exothermic, the solution warms up, the hydration energy just edged out the lattice energy. Now part c, the thinking part. If the lattice energy had been a bit bigger, the enthalpy of dissolution would have come out positive, endothermic. Would it still dissolve? Often yes, because the ions spreading through the water produce a big positive entropy change, so the temperature times entropy term can exceed the positive enthalpy. That makes the Gibbs free energy change negative, and it dissolves anyway, pulling heat from the surroundings, just like a cold pack."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Endothermic means it can't happen\"",
+      "body": "Students assume that if dissolving absorbs heat, it must be non-spontaneous and shouldn't occur. Cold packs prove otherwise.",
+      "secondary": "Spontaneity is decided by ΔG, not ΔH alone. When ions disperse, the entropy increase is large, so TΔS can outweigh a positive ΔH and make ΔG negative. That's exactly why an endothermic cold pack dissolves while going cold.",
+      "mistakeTag": "Judging dissolving by enthalpy alone",
+      "callout": "ΔG decides, not ΔH. Entropy can carry an endothermic process.",
+      "durationInFrames": 1230,
+      "caption": "Endothermic dissolving is still spontaneous when TΔS outweighs ΔH (cold packs).",
+      "voiceover": {
+        "text": "Here's a misconception worth dismantling, the idea that if dissolving absorbs heat, it can't happen on its own. Students reason, endothermic means unfavourable, so it shouldn't dissolve. But you've literally held the counterexample, an instant cold pack. It absorbs heat, it goes cold, and yet the salt clearly dissolves. The fix is to remember what actually decides spontaneity, and it's not enthalpy on its own, it's the Gibbs free energy change, enthalpy minus temperature times entropy. When the lattice breaks and ions scatter through the water, the entropy jump is huge and positive, so the temperature times entropy term is large. That term can more than cancel a positive enthalpy change, leaving the Gibbs free energy change negative. So the process is spontaneous, it dissolves, and it does so by drawing heat in from the surroundings. Endothermic does not mean impossible, it just means entropy is doing the heavy lifting."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Traditional Aboriginal cycad preparation involves leaching the crushed seed in running water. (a) Explain using Le Chatelier's principle. (b) Why is running water more effective than still water? (c) Name the toxic compounds removed.",
+      "pausePrompt": "Pause. Think about what removing the dissolved toxin does to the equilibrium.",
+      "answerSteps": [
+        "(a) The toxin sets up an equilibrium between seed and water; as water removes it, the equilibrium shifts right to dissolve more.",
+        "(b) Running water continuously carries the toxin away, keeping its concentration low.",
+        "That keeps the equilibrium shifted toward dissolving, so leaching never stops.",
+        "(c) The toxins removed are cycasin and macrozamin.",
+        "Answer: continuous removal keeps shifting the equilibrium right, maximising toxin extraction ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Running water keeps [toxin] low → equilibrium stays shifted right → full extraction.",
+      "voiceover": {
+        "text": "Your turn. Traditional cycad preparation leaches the crushed seed in running water. Explain it with Le Chatelier, say why running water beats still water, and name the toxins. Pause and have a go. Right. Part a, when the seed soaks, the toxin dissolves into the water, setting up an equilibrium between toxin in the seed and toxin in the solution. As the surrounding water removes some toxin, the equilibrium responds by shifting right, dissolving more out of the seed. Part b, with running water, the dissolved toxin is constantly swept away, so its concentration in the water stays near zero. That keeps the equilibrium permanently shifted toward dissolving, so the leaching never reaches a stopping point, unlike still water, which would settle at a balance with toxin still in the seed. And part c, the toxins are cycasin and macrozamin. It's a genuine, systematic application of solubility equilibrium, developed and refined over tens of thousands of years."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Dissolving = breaking the lattice (endothermic) + hydrating ions (exothermic).",
+        "ΔH_dissolution is their sum; the bigger term decides warm or cool.",
+        "Exothermic: NaOH, CaCl₂. Endothermic: NH₄NO₃, KNO₃.",
+        "Endothermic dissolving is still spontaneous when TΔS outweighs ΔH.",
+        "Cycad leaching uses running water to keep the dissolution equilibrium shifting right."
+      ],
+      "finalPrompt": "Dissolving question: compare lattice energy with hydration energy first.",
+      "durationInFrames": 1200,
+      "caption": "Five takeaways: two energies, ΔH sign, hot/cold packs, entropy, cycad LCP.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to carry out. First, dissolving has two energy steps, breaking the lattice, which absorbs energy, and hydrating the ions, which releases it. Second, the overall enthalpy of dissolution is just those two added together, and the bigger one decides whether the solution warms or cools. Third, the exothermic salts include sodium hydroxide and calcium chloride, the endothermic ones include ammonium nitrate and potassium nitrate. Fourth, even an endothermic dissolution can be spontaneous, because the entropy of ions dispersing makes the temperature times entropy term win. And fifth, First Nations cycad detoxification uses running water to keep the dissolved toxin's concentration low, so the dissolution equilibrium stays shifted toward leaching the toxin out. So for any dissolving question, start by comparing the lattice energy with the hydration energy. Next lesson, we get systematic about which salts dissolve at all, with the solubility rules. See you there."
+      }
+    }
+  ]
+}

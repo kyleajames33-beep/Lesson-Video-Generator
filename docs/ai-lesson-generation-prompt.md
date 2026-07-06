@@ -10,6 +10,7 @@ Follow these rules:
 
 - Use the lesson structure and teaching style from `docs/lesson-reference-style.md`.
 - Use the 10/10 target from `docs/gold-standard-video-standard.md`.
+- **Hit every rhetorical piece in `docs/gold-standard-script.md` §1, score ≥85 on the rubric in §5, and pass the pre-flight checklist in §6.** Do not output a lesson that fails any pre-flight item.
 - Reuse the patterns and avoid the known mistakes in `docs/production-memory.md`.
 - Stay aligned to the syllabus policy in `docs/hsc-chemistry-production-plan.md`.
 - Start with a concrete problem or question, not a definition.
@@ -139,4 +140,9 @@ Then run:
 npm run prepare:lesson -- path/to/generated-lesson.json
 npm run check:all
 node scripts/validate-lesson.mjs path/to/generated-lesson.json
+npm run score:lesson -- path/to/generated-lesson.json
 ```
+
+`score:lesson` must report ≥85 before the lesson is rendered. Below that, fix
+the findings the scorer prints (or document an unfixable item in
+`productionNotes`) and re-run.

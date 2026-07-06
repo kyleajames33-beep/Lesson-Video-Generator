@@ -1,0 +1,227 @@
+{
+  "title": "Periodic Trends: Atomic Radius",
+  "subtitle": "Why atoms shrink across and grow down",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 17",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "demonstrate, explain and predict the relationships in the observable trends in the physical and chemical properties of elements in periods and groups in the periodic table, including but not limited to atomic radius"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-5", "CH11/12-7"],
+  "inquiryQuestion": "Are there patterns in the properties of elements?",
+  "lessonIntent": "Students can explain the atomic-radius trends using effective nuclear charge, shielding, and shell count, and compare atoms with their ions.",
+  "examSkill": "Use Z_eff, shielding, and shell number to justify a radius comparison, including atom versus ion and isoelectronic species.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, atomic radius, why atoms shrink across and grow down. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Periodic Trends: Atomic Radius (Year 11 Chemistry, Module 1, Lesson 17)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two directions, two stories",
+      "body": "Sodium is bigger than chlorine, yet both are smaller than potassium. The same table, two opposite trends.",
+      "callout": "Across and down behave in opposite ways.",
+      "durationInFrames": 690,
+      "caption": "Atomic radius decreases across a period but increases down a group.",
+      "voiceover": {
+        "text": "OK, here's a pattern that seems contradictory at first. Across period three, sodium is noticeably bigger than chlorine, so atoms get smaller as you move right. But sodium is smaller than potassium just below it, so atoms get bigger as you move down. Same property, atomic radius, but two opposite directions depending on which way you travel. There's a clean reason for each. Going across, more protons pull harder on the same shell. Going down, you add whole new shells. By the end of today, you'll be able to rank any elements by size and, more importantly, explain it in the exact language examiners reward."
+      }
+    },
+    {
+      "id": "concept-trend",
+      "type": "concept",
+      "heading": "The two radius trends",
+      "body": "Atomic radius decreases left to right across a period and increases down a group.",
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          {"label": "Na", "value": 186},
+          {"label": "Mg", "value": 160},
+          {"label": "Al", "value": 143},
+          {"label": "Si", "value": 117},
+          {"label": "Cl", "value": 99}
+        ],
+        "unit": "pm",
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Across a period: more protons, same shell, so radius decreases."},
+        {"text": "Down a group: an extra shell each step, so radius increases."},
+        {"text": "Across wins by stronger pull; down wins by extra distance."}
+      ],
+      "secondary": "Effective nuclear charge rises across a period while shielding barely changes, pulling the outer electrons closer.",
+      "callout": "Across, the pull tightens; down, the shells stack up.",
+      "durationInFrames": 1140,
+      "caption": "Across a period: radius shrinks (Na > Mg > Al > Si > Cl); down a group: radius grows.",
+      "voiceover": {
+        "text": "Let's state the two trends and the reason for each. First, across a period, going left to right, the atomic radius decreases. Look at period three, sodium is the widest and chlorine is much narrower. Why? Each step adds a proton, but the new electron goes into the same outer shell, so the shielding from inner electrons barely changes. That means the effective nuclear charge, the net pull felt by the outer electrons, keeps rising, and it drags the whole electron cloud inward. Second, down a group, the atomic radius increases. Each step down adds a brand new electron shell, so the outer electrons sit further out and are more shielded by the inner shells. Even though there are more protons, the extra distance and shielding win, so the atom gets bigger. Across, the tightening pull wins. Down, the stacking shells win."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Atomic radius: the size of an atom, from nucleus to outer electrons."},
+        {"text": "Effective nuclear charge (Z_eff): the net pull the outer electrons feel."},
+        {"text": "Shielding: inner electrons screening outer electrons from the nucleus."},
+        {"text": "Isoelectronic: species with the same number of electrons."}
+      ],
+      "callout": "Z_eff is the tug-of-war between protons pulling and inner electrons shielding.",
+      "durationInFrames": 960,
+      "caption": "Atomic radius, effective nuclear charge, shielding, isoelectronic.",
+      "voiceover": {
+        "text": "Four terms run this whole topic. Atomic radius is just the size of the atom, the distance from the nucleus out to the outer electrons. Effective nuclear charge, written Z e f f, is the net positive pull that the outer electrons actually feel, after the inner electrons have done their screening. Shielding is that screening, the way inner-shell electrons sit between the nucleus and the outer electrons and reduce the pull they feel. And isoelectronic describes two species that have the same number of electrons, even if they have different numbers of protons. Effective nuclear charge is really a tug-of-war, the protons pulling in, the inner electrons shielding outward."
+      }
+    },
+    {
+      "id": "concept-ions",
+      "type": "concept",
+      "heading": "Atoms versus ions",
+      "body": "Losing electrons makes an atom smaller; gaining electrons makes it larger.",
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "Atom",
+        "afterLabel": "Its ion",
+        "beforeContent": "Na is larger; Cl is smaller.",
+        "afterContent": "Na⁺ shrinks (lost a shell); Cl⁻ expands (more repulsion).",
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Cation: fewer electrons, often one fewer shell, so it is smaller."},
+        {"text": "Anion: extra electrons increase repulsion, so it is larger."},
+        {"text": "Isoelectronic: more protons pull the same electrons in tighter."}
+      ],
+      "secondary": "For isoelectronic species, size falls as protons rise: Al³⁺ < Mg²⁺ < Na⁺ < F⁻ < O²⁻.",
+      "callout": "Cations shrink; anions grow; more protons mean smaller.",
+      "durationInFrames": 1140,
+      "caption": "Cations are smaller than their atom; anions larger; isoelectronic shrinks with more protons.",
+      "voiceover": {
+        "text": "Radius questions almost always extend to ions, so let's nail that too. When an atom loses electrons to form a cation, it gets smaller. There are fewer electrons repelling each other, and often an entire outer shell is removed, so the remaining electrons are pulled in tightly. Sodium plus is much smaller than sodium. When an atom gains electrons to form an anion, it gets bigger. The extra electrons crowd into the outer shell and repel each other more, so the cloud puffs outward. Chloride is bigger than chlorine. And the elegant case, isoelectronic species, which have the same electron count. Here, the one with more protons pulls those electrons in harder, so it's smaller. That gives the order aluminium three plus, smaller than magnesium two plus, smaller than sodium plus, smaller than fluoride, smaller than oxide, even though they all have ten electrons."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "Exam-language sentences",
+      "body": "A full-mark answer names protons, shielding, and shells, then links them to the radius change.",
+      "bullets": [
+        {"text": "Across: more protons raise Z_eff, shielding stays similar, electrons pulled in."},
+        {"text": "Down: an extra occupied shell puts outer electrons further out, more shielded."},
+        {"text": "Always state the cause and then the effect on radius."}
+      ],
+      "secondary": "Avoid 'it just gets bigger.' Examiners want the mechanism: nuclear charge, shielding, and shell count.",
+      "callout": "Name the mechanism, then the size change.",
+      "durationInFrames": 1020,
+      "caption": "Full-mark answers link protons, shielding, and shells to the radius change.",
+      "voiceover": {
+        "text": "Here's the part that turns understanding into marks, the exam language. Examiners don't reward it gets bigger or it gets smaller. They reward a mechanism. For the across-a-period answer, say this. The proton number increases while electrons are added to the same shell, so shielding changes little, and the stronger effective nuclear charge pulls the outer electrons closer, decreasing the radius. For the down-a-group answer, say this. Each element has an extra occupied shell, so the outer electrons are further from the nucleus and more shielded by inner electrons, increasing the radius. The pattern is always the same, state the cause, protons, shielding, and shells, then state the effect on the radius. Cause then effect, every time."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Largest atom in Period 3",
+      "question": "Which element in Period 3 has the largest atomic radius: Na, Si, Cl, or Ar? Justify it.",
+      "coachNote": "Use the across-period trend and the cause behind it.",
+      "steps": [
+        "Across a period, atomic radius decreases left to right",
+        "Sodium (Z = 11) is the leftmost of these, with the fewest protons",
+        "Fewer protons means the lowest effective nuclear charge on the outer shell",
+        "So the outer electron is held least tightly and sits furthest out",
+        "Answer: sodium has the largest atomic radius in Period 3 ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Na has the largest radius in Period 3 (lowest Z_eff, leftmost).",
+      "voiceover": {
+        "text": "Let's apply the trend. Which element in period three is the biggest, sodium, silicon, chlorine, or argon? Step one, recall the trend. Across a period, the atomic radius decreases from left to right. Step two, identify the leftmost option. Sodium, with atomic number eleven, is furthest to the left and has the fewest protons of the four. Step three, link it to the cause. Fewer protons means the lowest effective nuclear charge acting on the outer shell. Step four, draw the conclusion. With the weakest pull, sodium's outer electron is held the most loosely and sits the furthest out, so sodium is the largest. The answer is sodium. Notice we didn't just point to the left, we justified it with effective nuclear charge."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Na⁺ versus Mg²⁺",
+      "question": "Na⁺ and Mg²⁺ are isoelectronic. Which is larger, and why?",
+      "coachNote": "Same electrons, so compare the proton pull.",
+      "steps": [
+        "Both ions have 10 electrons, the neon configuration, so they are isoelectronic",
+        "Na⁺ has 11 protons; Mg²⁺ has 12 protons",
+        "More protons in Mg²⁺ pull the 10 electrons in more strongly",
+        "So Mg²⁺ is smaller, and Na⁺ is the larger ion",
+        "Answer: Na⁺ is larger than Mg²⁺ (fewer protons, weaker pull) ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Na⁺ > Mg²⁺: same 10 electrons, but Mg²⁺ has more protons pulling them in.",
+      "voiceover": {
+        "text": "Now an isoelectronic comparison, which is a favourite exam trap. Sodium plus and magnesium two plus, which is larger? Step one, count electrons. Sodium plus has lost one electron, leaving ten. Magnesium two plus has lost two, also leaving ten. So both have the neon configuration, they're isoelectronic. Step two, count protons. Sodium plus still has eleven protons, magnesium two plus has twelve. Step three, compare the pull. With the same ten electrons but more protons, magnesium two plus pulls its electrons in more strongly. Step four, conclude. Stronger pull means smaller, so magnesium two plus is the smaller ion, and sodium plus is the larger one. The answer is sodium plus is larger. The trick is to ignore the charge label and just compare protons when the electron counts match."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking atoms get bigger across a period because they have more electrons. They get smaller, because Z_eff rises.",
+      "secondary": "Trap 2: assuming a higher charge always means a bigger ion. For isoelectronic species, more protons means smaller. Trap 3: answering 'it just gets bigger' without naming shells or Z_eff.",
+      "mistakeTag": "Where atomic-radius marks vanish",
+      "callout": "Across shrinks via Z_eff; more protons mean smaller; always name the mechanism.",
+      "durationInFrames": 1230,
+      "caption": "Across shrinks (Z_eff up); isoelectronic shrinks with more protons; always give the mechanism.",
+      "voiceover": {
+        "text": "Three traps. Trap one, thinking atoms grow across a period because they gain electrons. They actually shrink. The added electrons go into the same shell, so they don't push the size out, while the extra protons raise the effective nuclear charge and pull everything inward. Across means smaller. Trap two, assuming a bigger charge number means a bigger ion. For isoelectronic species it's the reverse. Magnesium two plus is smaller than sodium plus, because more protons pull the same electrons in tighter. Count protons, not charge labels. Trap three, the lazy answer, it just gets bigger or smaller. That earns almost nothing. Always name the mechanism, the protons, the shielding, and the shell count, then state the effect on the radius."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Rank these by radius, largest first: Na, Na⁺, and Cl⁻. Justify the order.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Na⁺ lost an electron and a whole shell, so it is the smallest",
+        "Na is the neutral atom, larger than its cation",
+        "Cl⁻ gained an electron, increasing repulsion and expanding the cloud",
+        "Cl⁻ has more shells than Na in this comparison, making it the largest",
+        "Answer: Cl⁻ > Na > Na⁺ ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "Cl⁻ > Na > Na⁺: anion expands, atom in the middle, cation shrinks.",
+      "voiceover": {
+        "text": "Quick check, mixing atoms and ions. Rank sodium, sodium plus, and chloride from largest to smallest, and justify it. Pause and work it through. Right, let's check it. Step one, sodium plus has lost an electron, and with it an entire outer shell, so it's the smallest of the three. Step two, neutral sodium still has that outer shell, so it's bigger than its cation. Step three, chloride has gained an electron, which increases the repulsion in its outer shell and expands the cloud. Step four, chloride also sits further along with its outer electrons well out, making it the largest here. So the order, largest to smallest, is chloride, then sodium, then sodium plus. Anions expand, cations shrink, and the neutral atom sits in between."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Across a period: radius decreases as Z_eff rises.",
+        "Down a group: radius increases as shells are added.",
+        "Cations are smaller; anions are larger than their atoms.",
+        "Isoelectronic: more protons means smaller ion.",
+        "Full marks: name protons, shielding, and shells, then the radius change."
+      ],
+      "finalPrompt": "Comparing sizes? Did I name Z_eff, shielding, and shell count?",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: across shrinks, down grows, ions, isoelectronic, exam language.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, across a period the radius decreases, because the effective nuclear charge rises while the shell stays the same. Second, down a group the radius increases, because each step adds a new electron shell. Third, cations are smaller than their parent atoms, and anions are larger. Fourth, for isoelectronic species, the one with more protons is the smaller ion. And fifth, for full marks, always name the mechanism, the protons, the shielding, and the shell count, then state the effect on the radius. This trend sets up ionisation energy and electronegativity, so it's worth owning. See you next lesson."
+      }
+    }
+  ]
+}

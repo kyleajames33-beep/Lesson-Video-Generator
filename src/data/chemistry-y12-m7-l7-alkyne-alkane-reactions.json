@@ -1,0 +1,227 @@
+{
+  "title": "Reactions of Alkynes & Alkanes",
+  "subtitle": "Two-step addition, the surprise ketone, UV substitution and combustion",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "investigate, write equations and construct models to represent the reactions of unsaturated hydrocarbons when added to a range of chemicals, including but not limited to:",
+    "investigate, write equations and construct models to represent the reactions of saturated hydrocarbons when substituted with halogens"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": ["CH12-14", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "What are the products of reactions of hydrocarbons and how do they react?",
+  "lessonIntent": "Students can write two-step alkyne additions, explain why alkyne hydration gives a ketone, and state correctly that UV light is the energy source for alkane substitution.",
+  "examSkill": "Use two equivalents for full alkyne addition, give both catalysts for alkyne hydration, label UV light as an energy source, and balance combustion by C then H then O.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the reactions of alkynes and alkanes, including a surprise product. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Reactions of Alkynes & Alkanes (Year 12 Chemistry, Module 7, Lesson 7)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One product or two?",
+      "body": "Ethyne burns at 3500 degrees in a welding torch, yet it is also a feedstock for plastics. Add bromine to its triple bond: one product, or two?",
+      "callout": "A triple bond has two pi bonds, so it reacts twice.",
+      "durationInFrames": 690,
+      "caption": "An alkyne's triple bond reacts in two steps, consuming two equivalents of reagent.",
+      "voiceover": {
+        "text": "OK, here's the alkyne to keep in mind. Ethyne, also called acetylene, burns at about three and a half thousand degrees in an oxy-acetylene welding torch, hot enough to cut steel, and yet the same molecule is a starting material for P V C plastic and paints. Now a question. If you add bromine to ethyne's triple bond, do you get one product, or two? The key is that a triple bond contains two pi bonds, not one. So where an alkene reacts once and stops, an alkyne can react twice, in two separate steps. That single fact, two pi bonds, shapes everything about alkyne chemistry, and today we'll also handle alkane substitution and combustion to round out hydrocarbon reactions."
+      }
+    },
+    {
+      "id": "concept-two-step",
+      "type": "concept",
+      "heading": "Alkynes react in two steps",
+      "body": "A triple bond is one sigma plus two pi bonds. Each pi bond adds independently, so full addition needs two equivalents.",
+      "bullets": [
+        {"text": "Step 1: the first pi bond opens, alkyne -> alkene-type product."},
+        {"text": "Step 2: the second pi bond opens -> fully saturated product."},
+        {"text": "Full halogenation of ethyne consumes two Br2: -> tetrabromoethane."}
+      ],
+      "secondary": "Hydrohalogenation is two-step too, with Markovnikov each time, giving a geminal dihalide with both halogens on the same carbon.",
+      "callout": "Two pi bonds, two equivalents, two steps.",
+      "durationInFrames": 1050,
+      "caption": "Alkyne addition is two-step: each pi bond opens with one equivalent of reagent.",
+      "voiceover": {
+        "text": "Let's start with the defining feature. A carbon to carbon triple bond is one sigma bond plus two pi bonds. Each pi bond can undergo addition on its own, so alkyne addition happens in two distinct steps. In step one, the first pi bond opens, turning the alkyne into an alkene-type product that still has one double bond. In step two, the second pi bond opens, giving a fully saturated product. So full halogenation of ethyne consumes two molecules of bromine, ending at one-comma-one-comma-two-comma-two-tetrabromoethane. Hydrohalogenation is also two-step, with Markovnikov's rule applying each time, and because both halogens end up on the same carbon, you get what's called a geminal dihalide. The contrast to keep clear, an alkene has one pi bond and reacts once, an alkyne has two and reacts twice."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Two-step addition: each pi bond of a triple bond reacts separately."},
+        {"text": "Lindlar catalyst: poisoned palladium that stops hydrogenation at the alkene."},
+        {"text": "Enol tautomerism: an unstable vinyl alcohol rearranges to a carbonyl (keto) form."},
+        {"text": "Geminal dihalide: two halogens on the same carbon; vicinal: on adjacent carbons."}
+      ],
+      "callout": "Lindlar stops halfway; enol tautomerism flips an OH into a C=O.",
+      "durationInFrames": 990,
+      "caption": "Two-step addition, Lindlar catalyst, enol tautomerism, geminal vs vicinal.",
+      "voiceover": {
+        "text": "Four terms that carry this lesson. Two-step addition, where each pi bond of a triple bond reacts separately, so you can stop after one step or push through to two. The Lindlar catalyst, a deliberately poisoned palladium catalyst, deactivated just enough to stop hydrogenation at the alkene stage, instead of going all the way to the alkane. Enol tautomerism, where an unstable vinyl alcohol, an oxygen hydrogen group sitting on a double bond carbon, spontaneously rearranges into the more stable carbonyl, or keto, form. And the dihalide pair, a geminal dihalide has both halogens on the same carbon, while a vicinal dihalide has them on adjacent carbons. These two, Lindlar and enol tautomerism, are exactly the details that separate alkyne chemistry from alkene chemistry."
+      }
+    },
+    {
+      "id": "concept-alkyne-hydration",
+      "type": "concept",
+      "heading": "Alkyne hydration gives a ketone",
+      "body": "Every other addition behaves as expected. Alkyne hydration is the surprise: the product is a ketone, not an alcohol.",
+      "image": "m7L7AlkyneHydration",
+      "bullets": [
+        {"text": "Conditions: dilute H2SO4 AND Hg2+ catalyst, both required, about 60 degrees."},
+        {"text": "The first product is an unstable enol (a vinyl alcohol)."},
+        {"text": "It tautomerises instantly to the keto form: a ketone."}
+      ],
+      "secondary": "Propyne + water -> propanone, a ketone. The exception is ethyne, which gives ethanal, an aldehyde, because its carbonyl lands on a terminal carbon.",
+      "callout": "Both catalysts, and the product is a ketone, not an alcohol.",
+      "durationInFrames": 1110,
+      "caption": "Alkyne + H2O (dil. H2SO4 + Hg2+) -> ketone, via an unstable enol.",
+      "voiceover": {
+        "text": "Now the reaction that surprises students every year, alkyne hydration. Every other addition gives the product you'd predict. This one doesn't. The conditions are dilute sulfuric acid and a mercury two plus catalyst, both required, at about sixty degrees. Here's what happens. Water adds across the triple bond, and the immediate product is an enol, a vinyl alcohol, an oxygen hydrogen group sitting directly on a double bond carbon. But vinyl alcohols are unstable, so it instantly rearranges, tautomerises, into the more stable keto form, which is a ketone. So propyne plus water gives propanone, a ketone, not the alcohol you might expect. There's one exception, ethyne, which gives ethanal, an aldehyde, because its carbonyl ends up on a terminal carbon. So state both catalysts, and remember the product is a carbonyl compound, not an alcohol."
+      }
+    },
+    {
+      "id": "concept-alkane-substitution",
+      "type": "concept",
+      "heading": "Alkane substitution: UV is energy",
+      "body": "Alkanes only react with halogens under UV light, and the wording about UV light is heavily tested.",
+      "bullets": [
+        {"text": "CH4 + Cl2 -> CH3Cl + HCl, under UV light."},
+        {"text": "One H is replaced by one halogen; HX is the second product."},
+        {"text": "UV light is an energy source, not a catalyst: it is energy, not matter."}
+      ],
+      "secondary": "UV light breaks the halogen molecule into radicals and is consumed doing so. A catalyst is a substance that is regenerated; UV light is neither.",
+      "callout": "Energy source, not catalyst. Energy cannot be a catalyst.",
+      "durationInFrames": 1050,
+      "caption": "CH4 + Cl2 -> CH3Cl + HCl; UV light is the energy source, not a catalyst.",
+      "voiceover": {
+        "text": "Now the alkanes. Being saturated, with only sigma bonds, alkanes are unreactive, but they do undergo substitution with halogens under one condition, ultraviolet light. Methane plus chlorine gives chloromethane plus hydrogen chloride, under U V light, with one hydrogen replaced by one chlorine, and the hydrogen chloride as the second product. Now the point the HSC tests over and over. The U V light is an energy source, not a catalyst. Here's the logic. A catalyst is a substance, matter, that lowers activation energy and is regenerated unchanged. Ultraviolet light is electromagnetic radiation, it's energy, not matter, and it's absorbed when it breaks the halogen molecule into radicals to start the reaction. It is not regenerated. So always write U V light as an energy source. Calling it a catalyst is one of the most penalised errors in this module."
+      }
+    },
+    {
+      "id": "formula-combustion",
+      "type": "concept",
+      "heading": "Balancing combustion: C, H, O",
+      "body": "All hydrocarbons combust. Balance in a fixed order to avoid going in circles.",
+      "bullets": [
+        {"text": "Balance carbon first: CO2 coefficient equals the carbon count."},
+        {"text": "Balance hydrogen next: H2O coefficient is half the hydrogen count."},
+        {"text": "Balance oxygen last: total the right-hand O, divide by 2; double if fractional."}
+      ],
+      "secondary": "NOx forms from atmospheric N2 reacting with O2 at high flame temperatures, not from nitrogen in the fuel. Most hydrocarbon fuels contain no nitrogen.",
+      "callout": "Carbon, then hydrogen, then oxygen.",
+      "durationInFrames": 1020,
+      "caption": "Balance combustion as C, then H, then O; NOx comes from air, not fuel.",
+      "voiceover": {
+        "text": "Last, combustion, which every hydrocarbon undergoes, and there's a reliable order for balancing. Step one, balance carbon, the coefficient on carbon dioxide equals the number of carbons in the fuel. Step two, balance hydrogen, the coefficient on water is half the number of hydrogens. Step three, balance oxygen last, total up the oxygen atoms on the right, divide by two for the oxygen molecules, and if that's a fraction, double the whole equation. Balancing oxygen first just sends you round in circles. One subtlety worth knowing, the oxides of nitrogen, the N O x pollutants, form when atmospheric nitrogen reacts with oxygen at the high temperatures of combustion. The nitrogen comes from the air, not from the fuel, because most hydrocarbon fuels contain no nitrogen at all. That's a common misconception markers look for."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Two-step alkyne halogenation",
+      "question": "Write both steps for but-2-yne reacting with bromine, and name each product.",
+      "coachNote": "One Br2 opens each pi bond in turn.",
+      "steps": [
+        "But-2-yne is CH3C(triple)CCH3, a triple bond between C2 and C3",
+        "Step 1: + Br2 opens the first pi bond -> CH3CBr=CBrCH3",
+        "Step 1 product: 2,3-dibromobut-2-ene (still has a C=C)",
+        "Step 2: + Br2 opens the second pi bond -> CH3CBr2CBr2CH3",
+        "Step 2 product: 2,2,3,3-tetrabromobutane (two Br2 used total) ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "but-2-yne + 2Br2 -> 2,2,3,3-tetrabromobutane, in two steps.",
+      "voiceover": {
+        "text": "Let's do a two-step alkyne reaction. Write both steps for but-two-yne reacting with bromine, naming each product. But-two-yne is C H three, C triple bond C, C H three, with the triple bond between carbons two and three. Step one, one bromine molecule opens the first pi bond, putting a bromine on each of those carbons, giving C H three C Br double bond C Br C H three. That product is two-comma-three-dibromobut-two-ene, and notice it still has a double bond. Step two, a second bromine molecule opens that remaining double bond, giving C H three C Br two C Br two C H three, which is two-comma-two-comma-three-comma-three-tetrabromobutane, now fully saturated. So full halogenation used two bromine molecules in total, and both steps would decolourise bromine water. That two-step, two-equivalent pattern is the fingerprint of an alkyne."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Alkyne hydration product",
+      "question": "Write the equation for propyne + water and identify the product. A student predicts propan-2-ol. Correct?",
+      "coachNote": "Watch for the enol that tautomerises.",
+      "steps": [
+        "Propyne CH3C(triple)CH + H2O, with dilute H2SO4 and Hg2+, ~60C",
+        "Markovnikov gives the enol CH3C(OH)=CH2, an unstable vinyl alcohol",
+        "It tautomerises instantly to the keto form: CH3COCH3 (propanone)",
+        "Equation: CH3C(triple)CH + H2O -> CH3COCH3",
+        "The student is wrong: the product is a ketone, not an alcohol ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "propyne + H2O -> propanone (a ketone), not propan-2-ol.",
+      "voiceover": {
+        "text": "Now alkyne hydration. Write the equation for propyne plus water, identify the product, and evaluate a student who predicts propan-two-ol. Propyne is C H three, C triple bond C H, and the conditions are dilute sulfuric acid with a mercury two plus catalyst at about sixty degrees. Markovnikov gives the enol, C H three, C with an oxygen hydrogen group, double bond C H two, a vinyl alcohol. But that enol is unstable, so it tautomerises instantly to the keto form, C H three C O C H three, which is propanone, a ketone. So the equation is propyne plus water gives propanone. And the student is wrong. Propan-two-ol would only form if the enol stayed as it was, but it doesn't, it flips to the ketone. The student has copied the alkene rule, alkene plus water gives an alcohol, but for alkynes the product is a carbonyl compound."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three alkyne and alkane traps",
+      "body": "Trap 1: writing \"alkyne + water -> alcohol\". Alkyne hydration gives a ketone (or ethanal from ethyne), via the enol.",
+      "secondary": "Trap 2: calling UV light a catalyst in alkane substitution. It is an energy source, consumed making radicals, not regenerated. Trap 3: omitting Hg2+ from alkyne hydration. Both dilute H2SO4 AND Hg2+ are required, or the reaction does not go.",
+      "mistakeTag": "Where alkyne and alkane marks vanish",
+      "callout": "Ketone not alcohol, UV is energy, both catalysts needed.",
+      "durationInFrames": 1230,
+      "caption": "Alkyne hydration gives a ketone; UV is an energy source; need both catalysts.",
+      "voiceover": {
+        "text": "Three traps. Trap one, writing alkyne plus water gives an alcohol. It doesn't, alkyne hydration gives a ketone, or ethanal in the special case of ethyne, because the enol intermediate tautomerises. Copying the alkene rule across is the classic slip. Trap two, calling ultraviolet light a catalyst in alkane substitution. It's an energy source, consumed when it breaks the halogen into radicals to start the chain, and it's not regenerated, so it can't be a catalyst. A catalyst is matter, U V light is energy. Trap three, leaving out the mercury two plus from alkyne hydration. You need both the dilute sulfuric acid and the mercury two plus catalyst, and omitting either means the reaction doesn't proceed. State both every time."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "How would you distinguish but-1-yne from but-1-ene using bromine water? And balance combustion of propane.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "But-1-yne has two pi bonds; but-1-ene has one",
+        "The alkyne decolourises TWO portions of Br2 water; the alkene only one",
+        "Propane combustion: C: 3 -> 3CO2; H: 8 -> 4H2O",
+        "O on right: 6 + 4 = 10, so O2 = 5",
+        "Answer: alkyne decolourises twice; C3H8 + 5O2 -> 3CO2 + 4H2O ✓"
+      ],
+      "durationInFrames": 1260,
+      "caption": "Alkyne decolourises two portions of Br2; C3H8 + 5O2 -> 3CO2 + 4H2O.",
+      "voiceover": {
+        "text": "Quick check, two parts. First, how do you tell but-one-yne from but-one-ene using bromine water? Pause and think. Right. But-one-yne is an alkyne with two pi bonds, while but-one-ene is an alkene with one. So the alkyne will decolourise two successive portions of bromine water, one for each pi bond, whereas the alkene decolourises only one. That two portion behaviour is the distinguishing test. Second part, balance the combustion of propane, C three H eight. Carbon first, three carbons gives three carbon dioxide. Hydrogen next, eight hydrogens gives four water. Oxygen last, six plus four is ten oxygen atoms on the right, so five oxygen molecules. The balanced equation is propane plus five oxygen gives three carbon dioxide plus four water. So, the alkyne decolourises twice, and that's the balanced combustion equation."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A triple bond is one sigma plus two pi bonds, so alkynes add in two steps.",
+        "Alkyne hydration gives a ketone (ethyne gives ethanal), needing dil. H2SO4 AND Hg2+.",
+        "Alkane substitution needs UV light, an energy source, not a catalyst.",
+        "Balance combustion in the order C, then H, then O; double if fractional.",
+        "NOx comes from atmospheric nitrogen at high temperatures, not from the fuel."
+      ],
+      "finalPrompt": "Alkyne hydration? Expect a ketone, and write both catalysts every time.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: two-step addition, the ketone, UV as energy, combustion order, NOx.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, a triple bond is one sigma plus two pi bonds, so alkynes add reagents in two steps, consuming two equivalents for full addition. Second, alkyne hydration gives a ketone, with ethyne the exception giving ethanal, and it needs both dilute sulfuric acid and a mercury two plus catalyst. Third, alkane substitution needs ultraviolet light, which is an energy source, not a catalyst. Fourth, balance combustion in the order carbon, then hydrogen, then oxygen, and double through if you hit a fraction. And fifth, the nitrogen oxides form from atmospheric nitrogen at high flame temperatures, not from the fuel. Next lesson is a consolidation, stress-testing every hydrocarbon reaction so you can spot and fix the errors that cost marks. See you next lesson."
+      }
+    }
+  ]
+}

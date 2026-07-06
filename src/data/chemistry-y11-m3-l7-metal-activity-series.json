@@ -1,0 +1,367 @@
+{
+  "title": "Metal Activity Series",
+  "subtitle": "Ranking metals by how readily they react",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 3: Reactive Chemistry",
+  "syllabusDotPoints": [
+    "Conduct practical investigations to compare the reactivity of a variety of metals in water, dilute acid, oxygen and other metal ions in solution",
+    "Construct a metal activity series using the data obtained from practical investigations and compare this series with that obtained from standard secondary-sourced information"
+  ],
+  "lessonIntent": "Students can construct and use the metal activity series to predict displacement reactions and explain sacrificial protection.",
+  "examSkill": "Predict whether a metal displacement reaction will occur using the activity series, and write the balanced ionic equation.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson subjects/chemistry/year11/module3/lesson07.html. Real-world anchor: Sydney Harbour Bridge zinc coating (sacrificial protection). Worked example: Mg vs Cu in Zn(NO3)2. Misconception: aluminium passivation (Al2O3 layer). Sets up L8 (redox electron transfer) and L9-L10 (electrochemistry).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Metal Activity Series - Year 11 Chemistry, Module 3.",
+      "voiceover": {
+        "text": "Metal Activity Series. Year eleven Chemistry, Module three.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L7/title.7e5805332839.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why is the Sydney Harbour Bridge painted with zinc?",
+      "body": "The Sydney Harbour Bridge is made of steel. Steel rusts. So why has it not corroded away after nearly a century above salt water? The answer is not the grey paint you see from the ferry - it is what that paint contains.",
+      "bullets": [
+        {
+          "text": "Steel rusts. Zinc corrodes faster.",
+          "at": 4
+        },
+        {
+          "text": "Zinc paint oxidises first, forming a protective layer.",
+          "at": 10
+        },
+        {
+          "text": "The steel underneath stays intact.",
+          "at": 17
+        },
+        {
+          "text": "Replace the zinc layer; keep the bridge.",
+          "at": 24
+        },
+        {
+          "text": "Sacrificial protection - the activity series explains why.",
+          "at": 31
+        }
+      ],
+      "callout": "A more reactive metal sacrifices itself to protect a less reactive one.",
+      "image": "l7HookHarbourBridge",
+      "durationInFrames": 1260,
+      "caption": "Zinc protects steel by corroding first - sacrificial protection.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "bulletsStart": 90,
+        "callout": 1020,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here is a question most students cannot answer until they have seen this lesson. The Sydney Harbour Bridge is steel. Steel rusts. So why has it not corroded away after nearly a century? The answer: a thin layer of zinc paint. Zinc is more reactive than iron. It oxidises first - sacrifices itself - so the steel underneath stays intact. That is the activity series in action. A more reactive metal will always protect a less reactive one.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L7/hook.cfe52c6cc1e9.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "How do we rank metals by reactivity?",
+      "body": "Think of the activity series as a ladder — height maps to reactivity. The higher a metal sits, the more easily it loses electrons. Where the analogy breaks: a ladder is fixed, but reactivity also depends on temperature. Chemists build this ladder from four simple tests.",
+      "bullets": [
+        {
+          "text": "Water test: very reactive metals (K, Na, Ca) react with cold water.",
+          "at": 4
+        },
+        {
+          "text": "Acid test: reactive metals (Mg, Zn, Fe) react with dilute acid to produce H2.",
+          "at": 11
+        },
+        {
+          "text": "Oxygen test: most metals form oxides; the speed reveals reactivity.",
+          "at": 19
+        },
+        {
+          "text": "Displacement test: a metal displaces any metal ion below it in the series.",
+          "at": 27
+        }
+      ],
+      "callout": "The activity series is built from experimental evidence - not memorised.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Test",
+          "Very reactive",
+          "Reactive",
+          "Unreactive"
+        ],
+        "rows": [
+          [
+            "Cold water",
+            "K, Na, Ca",
+            "-",
+            "-"
+          ],
+          [
+            "Dilute acid",
+            "K, Na, Ca",
+            "Mg, Zn, Fe",
+            "Cu, Ag, Au"
+          ],
+          [
+            "Heated O2",
+            "K, Na, Ca",
+            "Mg, Zn, Fe, Pb",
+            "Cu, Ag, Au"
+          ],
+          [
+            "Displacement",
+            "Displaces all below",
+            "Displaces below",
+            "Cannot displace"
+          ]
+        ]
+      },
+      "durationInFrames": 1440,
+      "caption": "Four lab tests build the activity series from observation, not memory.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1020,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Think of the activity series as a ladder. Height is to falling as position is to reactivity — the higher a metal sits, the more easily it loses electrons. Where the analogy breaks: a ladder is fixed, but reactivity also depends on temperature. Chemists build this ladder from four tests. Water: potassium, sodium, and calcium react with cold water. Acid: magnesium, zinc, and iron react with dilute acid. Oxygen: most metals form oxides when heated. Displacement: a more reactive metal displaces a less reactive one. The series is evidence, not memorised.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L7/concept.90b15cf16b82.mp3"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The metal activity series",
+      "body": "From experimental data, metals arrange into a clear ranking. Higher in the series means more reactive - more eager to lose electrons and form positive ions.",
+      "bullets": [
+        {
+          "text": "Most reactive: K, Na, Ca, Mg, Al - react with water or acid.",
+          "at": 4
+        },
+        {
+          "text": "Mid reactivity: Zn, Fe, Sn, Pb - react with acid and oxygen.",
+          "at": 11
+        },
+        {
+          "text": "Least reactive: Cu, Ag, Au - barely corrode at all.",
+          "at": 19
+        },
+        {
+          "text": "Hydrogen sits between Pb and Cu as a reference point.",
+          "at": 25
+        },
+        {
+          "text": "A metal displaces any metal below it - never above.",
+          "at": 32
+        }
+      ],
+      "callout": "Higher in the series = more easily oxidised = stronger reductant.",
+      "image": "l7DefinitionActivitySeries",
+      "durationInFrames": 1260,
+      "caption": "The activity series: a ranked ladder from potassium to gold.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1020,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "From experiment, metals arrange into a clear ranking. At the top: potassium, sodium, calcium, magnesium, aluminium - most reactive, most eager to lose electrons. In the middle: zinc, iron, tin, lead. At the bottom: copper, silver, gold - barely corrode. Hydrogen sits between lead and copper as a reference. Any metal displaces any metal below it. Never above. Higher means more easily oxidised - a stronger reductant.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L7/definition.ca33e0c887cc.mp3"
+      }
+    },
+    {
+      "id": "marginalia-sacrificial",
+      "type": "marginalia",
+      "heading": "Sacrificial protection everywhere",
+      "body": "The Harbour Bridge is not unique. Ships, pipelines, and offshore rigs all use sacrificial anodes - zinc or magnesium blocks bolted to steel. The sacrificial metal corrodes instead of the structure. It is far cheaper to replace a zinc block every few years than to rebuild a steel hull.",
+      "callout": "Let the cheap metal corrode; save the expensive structure.",
+      "notes": [
+        {
+          "text": "zinc block on ship hull",
+          "position": "top-right"
+        },
+        {
+          "text": "replaced every 2-5 years",
+          "position": "mid-right"
+        },
+        {
+          "text": "Mg used in seawater",
+          "position": "bottom-right"
+        }
+      ],
+      "image": "l7MarginaliaSacrificial",
+      "durationInFrames": 1140,
+      "caption": "Ships and pipelines use the same trick: sacrificial anodes.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "callout": 780,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "The Harbour Bridge is not unique. Ships, pipelines, and offshore rigs all use sacrificial anodes - zinc or magnesium blocks bolted to steel. The sacrificial metal corrodes instead of the structure. It is far cheaper to replace a zinc block every few years than to rebuild a steel hull. Magnesium is used in seawater because it is even more reactive than zinc. Same principle everywhere: let the cheap metal corrode, save the expensive structure.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L7/marginalia-sacrificial.a882f88011e5.mp3"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Predicting a displacement reaction",
+      "question": "Magnesium ribbon is placed in zinc nitrate solution. Copper metal is placed in a separate zinc nitrate solution. Predict whether a reaction occurs in each case, and write a balanced equation for any reaction that does.",
+      "coachNote": "Target: use the activity series. A metal displaces any metal below it.",
+      "unitCancel": {
+        "left": "atoms in",
+        "right": "atoms out",
+        "result": "balanced"
+      },
+      "steps": [
+        "Known: Mg(s) and Cu(s) each placed in Zn(NO3)2(aq).",
+        "Find: will a reaction occur? + balanced equation for each.",
+        "Formula: activity series rule — a metal displaces any metal below it.",
+        "Substitute: Mg is above Zn -> reaction predicted. Cu is below Zn -> no reaction.",
+        "Equation: Mg(s) + Zn(NO3)2(aq) -> Mg(NO3)2(aq) + Zn(s).",
+        "Net ionic: Mg(s) + Zn2+(aq) -> Mg2+(aq) + Zn(s).",
+        "Answer = Mg displaces Zn2+; Cu cannot. Unit: state symbols (s) and (aq) confirm phase."
+      ],
+      "image": "l7WorkedDisplacement",
+      "durationInFrames": 1440,
+      "caption": "Mg displaces Zn2+; Cu cannot. One series, two opposite outcomes.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Here we've got magnesium in zinc nitrate, and copper in zinc nitrate, and the target is to use the activity series. Magnesium sits above zinc, so it's more reactive, which means it displaces the zinc ions. The equation is Mg solid plus Zn(NO3)2 aqueous gives Mg(NO3)2 aqueous plus Zn solid, and the net ionic is Mg plus Zn2+ gives Mg2+ plus Zn. Copper, on the other hand, sits below zinc, so it can't displace zinc ions at all, and nothing happens. One test, two opposite outcomes, and that's the power of the series."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Aluminium does not fizz - so it must be unreactive?",
+      "body": "Students often think: Aluminium does not react with acid, so it must be low in the activity series. Wrong instinct. Aluminium is actually high in the series - above zinc. The problem is a thin, invisible layer of aluminium oxide, Al2O3, that forms instantly on exposed surfaces. This oxide layer is chemically inert and physically tough. It seals the metal underneath from acid, water, and oxygen. Scratch the surface, and fresh aluminium reacts vigorously. The fix: aluminium is reactive - it is just disguised by passivation.",
+      "callout": "Look past the surface. Passivation hides true reactivity.",
+      "mistakeTag": "Passivation trap",
+      "image": "l7MisconceptionAluminium",
+      "durationInFrames": 1350,
+      "caption": "Aluminium is reactive - an Al2O3 layer just hides it.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here is the trap that costs marks. Students think that because aluminium doesn't fizz in acid, it must be low in the activity series. But that's wrong, because aluminium actually sits above zinc. The real story is a thin, invisible layer of aluminium oxide that forms instantly on any exposed surface, and that oxide is both inert and tough, sealing the metal off from acid, water, and oxygen. Scratch through it, and the fresh aluminium underneath reacts vigorously. So aluminium really is reactive, it's just disguised by passivation, which is why you have to look past the surface."
+      }
+    },
+    {
+      "id": "lab-footage",
+      "type": "labFootage",
+      "heading": "Metal + acid in the lab",
+      "body": "Watch four metals react with dilute hydrochloric acid. The vigour of the reaction maps directly onto the activity series.",
+      "image": "l7LabFootageAcidReactions",
+      "annotations": [
+        {
+          "text": "Mg - vigorous fizzing",
+          "position": "top-left"
+        },
+        {
+          "text": "Zn - steady bubbles",
+          "position": "top-right"
+        },
+        {
+          "text": "Fe - slow, weak reaction",
+          "position": "bottom-left"
+        },
+        {
+          "text": "Cu - no reaction",
+          "position": "bottom-right"
+        }
+      ],
+      "durationInFrames": 900,
+      "caption": "Mg > Zn > Fe > Cu. The activity series made visible.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "visual": 24
+      },
+      "voiceover": {
+        "text": "In the lab, the series is obvious. Magnesium in dilute acid fizzes vigorously, zinc reacts steadily, iron only bubbles weakly, and copper does nothing at all. That descending pattern is the activity series made visible, because the higher metals give up their electrons more easily, so hydrogen forms faster. What you see in the test tube is exactly what the series predicts."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "An iron nail is placed in a solution of copper(II) sulfate. Predict the observation, name the reaction type, and write the balanced ionic equation.",
+      "pausePrompt": "Pause: check the activity series before the answer plays.",
+      "answerSteps": [
+        "Known: Fe(s) in CuSO4(aq). Iron is above copper in the activity series.",
+        "Predict: iron displaces copper ions from solution.",
+        "Observation: iron nail becomes coated with copper-coloured solid; blue solution fades.",
+        "Equation: Fe(s) + CuSO4(aq) -> FeSO4(aq) + Cu(s).",
+        "Net ionic: Fe(s) + Cu2+(aq) -> Fe2+(aq) + Cu(s).",
+        "Answer: displacement reaction. Iron replaces copper."
+      ],
+      "image": "l7QuickCheckFeCu",
+      "durationInFrames": 1350,
+      "caption": "Fe displaces Cu2+. Displacement reaction: Fe(s) + Cu2+(aq) -> Fe2+(aq) + Cu(s).",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 540,
+        "answerInterval": 100
+      },
+      "voiceover": {
+        "text": "Time for you to try one. An iron nail goes into copper two sulfate solution. Predict the observation, name the reaction type, and write the balanced ionic equation. Pause now and work it out. Right - iron is above copper in the activity series, so it displaces copper ions. The iron nail becomes coated with a copper-coloured solid, and the blue solution fades as copper two-plus is consumed. Net ionic: iron solid plus copper two-plus aqueous gives iron two-plus aqueous plus copper solid. Displacement reaction. Iron replaces copper.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L7/quick-check.7b089192a635.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Is the metal higher or lower in the activity series?",
+      "image": "l7SummaryActivitySeries",
+      "points": [
+        "The activity series ranks metals by reactivity from experimental tests.",
+        "Water, acid, oxygen, and displacement reactions reveal the ranking.",
+        "A metal displaces any metal below it - never above.",
+        "Aluminium is reactive but passivated - do not trust surface behaviour.",
+        "Sacrificial protection uses a more reactive metal to save a structure."
+      ],
+      "durationInFrames": 1260,
+      "caption": "Five takeaways and one decision rule for the activity series.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 110,
+        "finalPrompt": 720,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways. One: the activity series ranks metals by reactivity from experimental tests. Two: water, acid, oxygen, and displacement reveal the ranking. Three: a metal displaces any metal below it - never above. Four: aluminium is reactive but passivated - do not trust surface behaviour. Five: sacrificial protection uses a more reactive metal to save a structure. Decision rule: is the metal higher or lower in the activity series?",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L7/summary.a9772b62559c.mp3"
+      }
+    }
+  ]
+}

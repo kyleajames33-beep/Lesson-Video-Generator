@@ -1,0 +1,206 @@
+{
+  "title": "IQ1 Consolidation — Classification and Separation",
+  "subtitle": "Gravimetric analysis and choosing techniques",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 5",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "explore homogeneous mixtures and heterogeneous mixtures through practical investigations:",
+    "classify the elements based on their properties and position in the periodic table through their:"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-7"],
+  "inquiryQuestion": "How do the properties of substances help us to classify and separate them?",
+  "lessonIntent": "Students can perform a gravimetric analysis calculation via the mole ratio and select the right separation technique for any mixture.",
+  "examSkill": "Convert precipitate mass to ion mass using n = m ÷ M, the mole ratio, then m = n × M; and justify a chosen separation technique.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, consolidating classification and separation. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "IQ1 Consolidation — Classification and Separation (Year 11 Chemistry, Module 1, Lesson 5)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Don't just separate — measure",
+      "body": "Earlier techniques separate substances. Gravimetric analysis goes further: it tells you exactly how much is there.",
+      "callout": "Weigh a precipitate, then calculate back to the original ion.",
+      "durationInFrames": 660,
+      "caption": "Gravimetric analysis is quantitative — it measures how much, not just what.",
+      "voiceover": {
+        "text": "OK, this lesson pulls the whole inquiry together, and it adds the one technique that doesn't just separate, it measures. Filtration, crystallisation, distillation, and chromatography all separate substances, or identify them. But gravimetric analysis answers a sharper question, exactly how much of something is present. You form an insoluble precipitate, weigh it precisely, and then use the mole ratio to calculate back to the mass of the original ion. It's your first real taste of quantitative chemistry, and the calculation routine is one you'll use again and again in Module two."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "The gravimetric workflow",
+      "body": "Precipitate the target ion, then filter, wash, dry, and weigh the solid before calculating.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "react", "label": "Add excess reagent"},
+          {"id": "ppt", "label": "Precipitate forms"},
+          {"id": "filt", "label": "Filter (ashless)"},
+          {"id": "wash", "label": "Wash + dry to constant mass"},
+          {"id": "weigh", "label": "Weigh + calculate"}
+        ],
+        "edges": [
+          {"from": "react", "to": "ppt"},
+          {"from": "ppt", "to": "filt"},
+          {"from": "filt", "to": "wash"},
+          {"from": "wash", "to": "weigh"}
+        ]
+      },
+      "bullets": [
+        {"text": "Add excess reagent so all of the target ion precipitates."},
+        {"text": "Filter with ashless paper, then wash off soluble impurities."},
+        {"text": "Dry to constant mass, weigh, then calculate with stoichiometry."}
+      ],
+      "secondary": "Each step exists to protect the mass. Excess reagent prevents underestimation; washing and drying prevent inflated mass.",
+      "callout": "Form it, filter it, dry it, weigh it, calculate.",
+      "durationInFrames": 1140,
+      "caption": "Precipitate → filter → wash → dry to constant mass → weigh → calculate.",
+      "voiceover": {
+        "text": "Here's the gravimetric workflow, and every step exists to protect the final mass. You start with a solution of the unknown, and you add an excess of a precipitating reagent so the target ion forms an insoluble solid. You add excess so that every last bit of the ion comes out, otherwise you'd underestimate it. Then you filter, using ashless paper so the paper itself adds no mass. You wash the precipitate to rinse off any soluble impurities that would otherwise inflate the mass. You dry it to constant mass, meaning you weigh, dry again, and reweigh until the number stops changing, which proves no water is left. Finally you weigh the dry solid and use stoichiometry to calculate the mass of the original ion."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The decision tree, all six techniques",
+      "bullets": [
+        {"text": "Undissolved solid → filtration (particle size)."},
+        {"text": "Dissolved solid → crystallisation (solubility falls on cooling)."},
+        {"text": "Boiling point: large gap → simple distillation; close → fractional."},
+        {"text": "Phase affinity → chromatography; quantify an ion → gravimetric analysis."}
+      ],
+      "callout": "Pick the technique that targets the property that differs.",
+      "durationInFrames": 1020,
+      "caption": "Decision tree across filtration, crystallisation, distillation, chromatography, gravimetric.",
+      "voiceover": {
+        "text": "Let's lay out the full decision tree, all six techniques from this inquiry. If the solid is undissolved, you filter, separating by particle size. If it's dissolved, you crystallise, exploiting the fall in solubility as it cools. If the components are liquids that differ in boiling point, you distil, simple distillation for a large gap, fractional for boiling points close together. If they differ in how strongly they stick to a surface versus a solvent, you use chromatography. And if you need to measure how much of a specific ion is present, and it forms an insoluble precipitate, you use gravimetric analysis. Real samples often need a sequence, like filter, then distil, then crystallise. Always pick the technique that targets the property that actually differs."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The gravimetric calculation route",
+      "body": "Never go straight from precipitate mass to ion mass. Go through moles and the mole ratio.",
+      "bullets": [
+        {"text": "1. Moles of precipitate: n = m ÷ M."},
+        {"text": "2. Apply the mole ratio from the balanced equation."},
+        {"text": "3. Mass of the target ion: m = n × M of the ion."}
+      ],
+      "secondary": "The mole ratio is the bridge. Skipping it is the single most common way students lose marks here.",
+      "callout": "Mass → moles → ratio → moles → mass.",
+      "durationInFrames": 990,
+      "caption": "n = m ÷ M, apply the mole ratio, then m = n × M.",
+      "voiceover": {
+        "text": "Here's the calculation route, and there's a tempting shortcut you must avoid. Never divide the precipitate mass straight by the ion's molar mass in one step. Instead go through moles. Step one, find the moles of precipitate, which is its mass divided by its molar mass. Step two, apply the mole ratio from the balanced equation, which links the precipitate to the target ion. Step three, convert those moles to a mass using the molar mass of the ion. So it's mass to moles, then the ratio, then moles back to mass. In these examples the ratio is often one to one, which is why students get away with skipping it, but the moment the ratio isn't one to one, the shortcut gives a wrong answer."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Sulfate in drinking water",
+      "question": "Excess BaCl₂ added to a 250 mL sample gives 0.466 g of dried BaSO₄. Find the mass of SO₄²⁻. (Ba 137.3, S 32.1, O 16.0)",
+      "coachNote": "Ratio Ba²⁺ : SO₄²⁻ is 1:1; molar masses differ.",
+      "steps": [
+        "Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s); M(BaSO₄) = 233.4, M(SO₄²⁻) = 96.1",
+        "n(BaSO₄) = 0.466 ÷ 233.4 = 0.001997 mol",
+        "Ratio 1:1, so n(SO₄²⁻) = 0.001997 mol",
+        "m(SO₄²⁻) = n × M = 0.001997 × 96.1",
+        "Answer: m(SO₄²⁻) = 0.192 g ✓"
+      ],
+      "durationInFrames": 1350,
+      "caption": "0.466 g BaSO₄ → 0.192 g sulfate (1:1 ratio).",
+      "voiceover": {
+        "text": "Let's find the sulfate in drinking water. Excess barium chloride is added to a two hundred and fifty millilitre sample, and the dried barium sulfate precipitate weighs nought-point-four-six-six grams. Find the mass of sulfate. Step one, write the equation, barium ion plus sulfate ion gives solid barium sulfate, and note the molar masses, two hundred and thirty-three-point-four for barium sulfate, ninety-six-point-one for the sulfate ion. Step two, moles of barium sulfate is nought-point-four-six-six over two hundred and thirty-three-point-four, which is nought-point-zero-zero-two moles. Step three, the ratio is one to one, so the moles of sulfate match. Step four, mass of sulfate is that times ninety-six-point-one. So the answer is nought-point-one-nine-two grams of sulfate. Notice we used the precipitate's molar mass going in, and the ion's molar mass coming out."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Chloride from AgCl",
+      "question": "Excess AgNO₃ added to a chloride solution gives 1.435 g of dried AgCl. Find the mass of Cl⁻. (M(AgCl) = 143.3, M(Cl) = 35.5)",
+      "coachNote": "Ratio Ag⁺ : Cl⁻ is 1:1 — don't skip the mole step.",
+      "steps": [
+        "Ag⁺(aq) + Cl⁻(aq) → AgCl(s)",
+        "n(AgCl) = 1.435 ÷ 143.3 = 0.01001 mol",
+        "Ratio 1:1, so n(Cl⁻) = 0.01001 mol",
+        "m(Cl⁻) = n × M = 0.01001 × 35.5",
+        "Answer: m(Cl⁻) = 0.355 g ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "1.435 g AgCl → 0.355 g chloride.",
+      "voiceover": {
+        "text": "Now chloride from silver chloride, the classic gravimetric example. Excess silver nitrate is added to a chloride solution, and the dried silver chloride precipitate weighs one-point-four-three-five grams. Find the mass of chloride. Step one, the equation is silver ion plus chloride ion gives solid silver chloride. Step two, moles of silver chloride is one-point-four-three-five over one hundred and forty-three-point-three, which is nought-point-zero-one-zero-zero-one moles. Step three, the ratio is one to one, so the chloride moles are the same. Step four, mass of chloride is that times thirty-five-point-five. So the answer is nought-point-three-five-five grams of chloride. Same three-stage route every time, mass to moles, ratio, moles back to mass."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three gravimetric traps",
+      "body": "Trap 1: weighing the precipitate while it's still damp. Residual water inflates the mass and overestimates the result.",
+      "secondary": "Trap 2: skipping the mole ratio and dividing precipitate mass straight by the ion's molar mass. Trap 3: too little reagent, leaving some target ion in solution, which underestimates the result.",
+      "mistakeTag": "Where gravimetric marks vanish",
+      "callout": "Dry to constant mass; use the ratio; add excess reagent.",
+      "durationInFrames": 1230,
+      "caption": "Don't weigh damp; never skip the ratio; always use excess reagent.",
+      "voiceover": {
+        "text": "Three traps. Trap one, weighing the precipitate while it's still damp. Leftover water adds to the mass, so the precipitate looks heavier than it is, and you overestimate the ion. Always dry to constant mass first. Trap two, skipping the mole ratio. Students divide the precipitate mass straight by the ion's molar mass in one move, which only happens to work when the ratio is one to one. Go through moles every time, so the method survives a two to one ratio. Trap three, not adding enough precipitating reagent. If some target ion stays dissolved, your precipitate is too light, and you underestimate the result, which is why you always add the reagent in excess."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A sample contains sand, dissolved sugar, and dissolved iodine. Propose a sequence to separate all three and justify each step.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Sand is undissolved → filter first; sand is the residue",
+        "The filtrate now holds dissolved sugar and iodine",
+        "Chromatography (or distillation) separates iodine and sugar by phase affinity",
+        "Crystallise the remaining solution to recover the sugar from water",
+        "Answer: filter → chromatography/distil → crystallise ✓"
+      ],
+      "durationInFrames": 1170,
+      "caption": "Filter sand, separate iodine and sugar, then crystallise the sugar.",
+      "voiceover": {
+        "text": "Quick check, using the whole decision tree. A water sample contains sand, dissolved sugar, and a small amount of dissolved iodine. Propose a sequence to separate all three, and justify each step. Pause and work it through. Right, let's check it. Step one, the sand is undissolved, so filter first, and the sand stays on the paper as the residue. Step two, the filtrate now carries the dissolved sugar and iodine. Step three, those two differ in how they interact with a solvent, so chromatography, or distillation, separates them by phase affinity. Step four, finally you crystallise the remaining solution to recover the sugar from the water. So it's filter, then separate the dissolved pair, then crystallise. The golden rule holds, always remove the insoluble part first."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Gravimetric analysis is quantitative: weigh a precipitate, calculate the ion.",
+        "Workflow: excess reagent, filter, wash, dry to constant mass, weigh.",
+        "Calculate via moles: n = m ÷ M, mole ratio, then m = n × M.",
+        "Choose any technique by the property that differs between components.",
+        "Multi-component mixtures usually need a sequence — filter first."
+      ],
+      "finalPrompt": "Gravimetric answer? Mass → moles → ratio → moles → mass.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: gravimetric workflow, mole-ratio calculation, the decision tree.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, gravimetric analysis is quantitative, you weigh a precipitate and calculate back to the original ion. Second, the workflow is excess reagent, filter, wash, dry to constant mass, and weigh. Third, the calculation always goes through moles, find the moles of precipitate, apply the mole ratio, then convert to the ion's mass. Fourth, choose any separation technique by the property that differs between the components. And fifth, a multi-component mixture usually needs a sequence, and you always remove the insoluble part first. That closes off classification and separation. Next lesson we begin chemical bonding. See you next lesson."
+      }
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "title": "Calorimetry, Neutralisation",
+  "subtitle": "The heat released when acid meets base",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Conduct an investigation to measure the enthalpy of neutralisation using calorimetry",
+    "Apply q = mcΔT to neutralisation reactions and calculate molar enthalpy of neutralisation"
+  ],
+  "lessonIntent": "Students can calculate the molar enthalpy of neutralisation from calorimetry data using the total solution mass and moles of water formed.",
+  "examSkill": "Apply q = mcΔT using total solution mass, find moles of the limiting reactant, and calculate molar enthalpy of neutralisation.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson `subjects/chemistry/year11/module4/lesson03.html`. Anchor: why the nurse's cup gets warm. Worked example: 50.0 mL acid + 50.0 mL base = 100.0 g, ΔT=6.6, q=2.759 kJ, n=cV=0.0500 mol, ΔHn=-55.2 kJ/mol (verbatim from site). Misconception: use mass of acid only (must use TOTAL solution mass). q=mcΔT taught in L2, reference, don't re-teach; lean into worked example.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Calorimetry, Neutralisation. Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Calorimetry. Neutralisation. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L3/title.54b64fa82983.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why does the cup warm up when acid meets base?",
+      "body": "Mix a strong acid with a strong base and the beaker gets noticeably warm, every time. That warmth is the enthalpy of neutralisation, and we measure it the same way we measured combustion: with q = mcΔT.",
+      "bullets": [
+        {
+          "text": "Acid + base → salt + water, releasing heat.",
+          "at": 5
+        },
+        {
+          "text": "The solution itself warms up.",
+          "at": 11
+        },
+        {
+          "text": "Same tool as last lesson: q = mcΔT.",
+          "at": 17
+        },
+        {
+          "text": "One twist, what mass do you use?",
+          "at": 23
+        }
+      ],
+      "callout": "Neutralisation is exothermic, and we measure it by calorimetry.",
+      "image": "m4l3HookCup",
+      "durationInFrames": 1080,
+      "caption": "Acid + base releases heat; calorimetry measures the enthalpy of neutralisation.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 870,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's something you can feel. Mix a strong acid with a strong base and the beaker gets noticeably warm — every single time. That warmth is the enthalpy of neutralisation. And the good news: we measure it with exactly the same tool you learned last lesson — q equals m c delta T. There's just one twist that catches people out, and it's about which mass you put into that equation.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L3/hook.b089492a19c7.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Same equation, total solution mass",
+      "body": "You already know q = mcΔT from combustion. Neutralisation reuses it, with two specific choices for this context.",
+      "bullets": [
+        {
+          "text": "m = the TOTAL mass of solution (acid + base combined).",
+          "at": 5
+        },
+        {
+          "text": "c = 4.18, treat dilute solutions like water.",
+          "at": 12
+        },
+        {
+          "text": "Moles of water formed = c × V of the limiting reactant.",
+          "at": 19
+        },
+        {
+          "text": "ΔHn = −q / n, negative, because heat is released.",
+          "at": 26
+        }
+      ],
+      "callout": "Use the combined solution mass, not just the acid.",
+      "durationInFrames": 1590,
+      "caption": "q = mcΔT with total solution mass; ΔHn = −q/n.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1140,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "You already know q equals m c delta T from the combustion lesson, so we won't re-derive it. Neutralisation just reuses it with two specific choices. Think of the acid and base like two warm cups poured into one — the heat spreads through the whole combined volume, so m is the total mass of both solutions. But unlike pouring warm drinks, here the heat is created by the reaction itself. Second, c stays at four-point-one-eight, since dilute solutions behave like water. The moles you divide by are the moles of water formed — concentration times volume of the limiting reactant. Then delta H of neutralisation is minus q over n, negative because the reaction releases heat.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L3/concept.3effca406076.mp3"
+      },
+      "diagram": {
+        "type": "calorimeter"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Enthalpy of neutralisation",
+      "question": "50.0 mL of 1.00 mol L⁻¹ HCl is mixed with 50.0 mL of 1.00 mol L⁻¹ NaOH. The temperature rises from 21.4 °C to 28.0 °C. Calculate the molar enthalpy of neutralisation.",
+      "coachNote": "Total mass is both volumes combined. Moles of water = c × V of one reactant.",
+      "unitCancel": {
+        "left": "kJ",
+        "right": "mol",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: 50.0 mL HCl + 50.0 mL NaOH, both 1.00 mol L⁻¹, ΔT from 21.4 to 28.0 °C.",
+        "Find: molar enthalpy of neutralisation, ΔHn.",
+        "Total mass: m = 50.0 + 50.0 = 100.0 g (1 mL ≈ 1 g).",
+        "ΔT = 28.0 − 21.4 = 6.6 °C.",
+        "Formula: q = mcΔT.",
+        "Substitute: q = 100.0 × 4.18 × 6.6 = 2759 J = 2.759 kJ.",
+        "Moles of water: n = cV = 1.00 × 0.0500 = 0.0500 mol.",
+        "Answer: ΔHn = −q/n = −2.759/0.0500 = 55.2 kJ mol⁻¹ released."
+      ],
+      "durationInFrames": 1620,
+      "caption": "ΔHn = −2.759 kJ / 0.0500 mol = −55.2 kJ mol⁻¹.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Let's work it. Fifty millilitres of one molar hydrochloric acid mixed with fifty millilitres of one molar sodium hydroxide. The temperature climbs from twenty-one-point-four to twenty-eight degrees. First, the total mass: fifty plus fifty is one hundred grams — you use both volumes, because the whole solution warms up. Temperature rise is six-point-six degrees. Now q equals m c delta T — one hundred times four-point-one-eight times six-point-six — that's two thousand seven hundred and fifty-nine joules, or two-point-seven-five-nine kilojoules. Moles of water formed: concentration times volume, one molar times zero-point-zero-five litres, is zero-point-zero-five-zero-zero moles. Finally, delta H of neutralisation is minus q over n — minus fifty-five-point-two kilojoules per mole.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L3/worked-example.0a199d3e1ee9.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Use the mass of the acid only\"",
+      "body": "Students often think: \"The acid is the reactant, so m is the mass of the acid.\" That's the wrong instinct. Both the acid and base solutions are warming up together. The correct rule: m is the TOTAL combined mass of the solution. Using only the acid mass halves your q and gives an enthalpy that's far too small.",
+      "callout": "m in q = mcΔT is the combined solution mass, acid plus base.",
+      "mistakeTag": "Acid-mass-only trap",
+      "durationInFrames": 1290,
+      "caption": "Use the combined mass of acid + base, not just the acid.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the trap, and it's specific to this lesson. Students think: the acid is the reactant, so m must be the mass of the acid. Wrong instinct. Both the acid and the base are in the beaker, and both solutions warm up together. The correct rule: m is the total combined mass of the solution. Use only the acid's mass and you halve your q — which gives an enthalpy that's far too small. Whenever two solutions mix, add their masses.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L3/misconception.00934169c1f0.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "25.0 mL of 2.00 mol L⁻¹ H₂SO₄ is mixed with 50.0 mL of 2.00 mol L⁻¹ NaOH. The 75.0 g of solution warms by 9.2 °C. Find q, and the moles of water formed (watch the diprotic acid).",
+      "pausePrompt": "Pause: q = mcΔT with total mass, then count the H⁺ from the diprotic acid.",
+      "answerSteps": [
+        "Total mass given: m = 75.0 g, ΔT = 9.2 °C.",
+        "q = mcΔT = 75.0 × 4.18 × 9.2.",
+        "q = 2884 J = 2.884 kJ.",
+        "n(H⁺) = 2 × (2.00 × 0.0250) = 0.100 mol; n(OH⁻) = 2.00 × 0.0500 = 0.100 mol.",
+        "Answer: q = 2.88 kJ; H⁺ and OH⁻ match at 0.100 mol, so 0.100 mol water forms."
+      ],
+      "durationInFrames": 1440,
+      "caption": "q = 75.0 × 4.18 × 9.2 = 2.88 kJ; H⁺ and OH⁻ both 0.100 mol.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 600,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Your turn. Twenty-five millilitres of two molar sulfuric acid mixes with fifty millilitres of two molar sodium hydroxide. The seventy-five grams of solution warms by nine-point-two degrees. Find q, and the moles of water formed. Pause now and try. q equals m c delta T, so seventy-five times four-point-one-eight times nine-point-two, which is two thousand eight hundred and eighty-four joules, about two-point-eight-eight kilojoules. Now the moles of water, and here's where the diprotic acid bites. Sulfuric acid gives two hydrogen ions per mole, so zero-point-zero-two-five litres of two molar acid releases zero-point-one-zero-zero moles of hydrogen ions. The hydroxide gives zero-point-one-zero-zero moles too, so they match exactly, and zero-point-one-zero-zero moles of water form. Miss the diprotic factor and you'd halve the acid's hydrogen ions and get the wrong answer."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Ask: did I use the combined solution mass? That's the neutralisation trap.",
+      "points": [
+        "Neutralisation is exothermic, the whole solution warms up.",
+        "q = mcΔT, with m = total combined mass of acid + base.",
+        "Moles of water = c × V of the limiting reactant.",
+        "ΔHn = −q/n, negative because heat is released.",
+        "The classic error: using only the acid's mass instead of the total."
+      ],
+      "durationInFrames": 1320,
+      "caption": "Same q = mcΔT, total mass, one decision rule.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways. One: neutralisation is exothermic — the whole solution warms up. Two: q equals m c delta T, with m being the total combined mass of acid and base. Three: the moles you divide by are the moles of water formed, from concentration times volume of the limiting reactant. Four: delta H of neutralisation is minus q over n, negative because heat is released. Five: the classic error is using only the acid's mass. Decision rule: ask yourself, did I use the combined solution mass? That's the trap this topic is built around.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L3/summary.06ecea843ad1.mp3"
+      }
+    }
+  ]
+}

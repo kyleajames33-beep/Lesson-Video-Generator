@@ -16,12 +16,14 @@
 //   150  callout reveals (if present)
 
 import type {LessonData, MarginaliaScene} from '../lesson/types';
+import {ASSETS, type AssetName} from '../assets';
 import {FadeUp} from '../animations/FadeUp';
 import {ScribbleArrow} from '../animations/DoodlePrimitives';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
 import {FONT_HAND, TYPE, TOK} from '../styles/tokens';
+import {useAccent} from '../styles/theme';
 
 type MarginaliaSlideProps = {
 	scene: MarginaliaScene;
@@ -37,17 +39,19 @@ const NOTE_POSITIONS: Record<string, {x: number; y: number; tx: number; ty: numb
 };
 
 export const MarginaliaSlide = ({scene, lesson, sceneIndex, totalScenes}: MarginaliaSlideProps) => {
+	const rd = scene.revealDelays ?? {};
+	const theme = useAccent();
 	return (
-		<SlideFrame>
-			<SlideChrome lesson={lesson} dot="2.1" topic="MARGINALIA" sceneType="marginalia" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
+			<SlideChrome lesson={lesson} dot="2.1" topic="KEY INSIGHT" sceneType="marginalia" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			{/* Mono eyebrow */}
 			<div style={{position: 'absolute', top: 150, left: 64}}>
-				<Eyebrow color={TOK.inkDim}>MARGINALIA</Eyebrow>
+				<Eyebrow color={TOK.inkDim}>KEY INSIGHT</Eyebrow>
 			</div>
 
-			{/* Concept card */}
-			<FadeUp delay={12} durationFrames={16} dy={24}>
+			{/* Concept card — 2-column layout: text left, image right */}
+			<FadeUp delay={rd.card ?? 12} durationFrames={16} dy={24}>
 				<div
 					style={{
 						position: 'absolute',
@@ -58,10 +62,9 @@ export const MarginaliaSlide = ({scene, lesson, sceneIndex, totalScenes}: Margin
 						borderRadius: 18,
 						border: `1px solid ${TOK.rule}`,
 						background:
-							`linear-gradient(135deg, ${TOK.bgLift} 0%, rgba(13,58,47,0.48) 55%, ${TOK.bg} 100%)`,
+							`linear-gradient(135deg, ${TOK.bgLift} 0%, rgba(${theme.cardTint},0.48) 55%, ${TOK.bg} 100%)`,
 						boxShadow: `0 34px 120px rgba(0,0,0,0.34), inset 0 0 0 1px rgba(232,239,233,0.025)`,
 						overflow: 'hidden',
-						padding: '54px 58px',
 					}}
 				>
 					{/* Subtle inner glow */}
@@ -71,7 +74,7 @@ export const MarginaliaSlide = ({scene, lesson, sceneIndex, totalScenes}: Margin
 							position: 'absolute',
 							inset: -120,
 							background:
-								`radial-gradient(circle at 50% 42%, ${TOK.chem2}30 0%, ${TOK.chem1}14 26%, transparent 58%)`,
+								`radial-gradient(circle at 32% 42%, ${theme.accent2}30 0%, ${theme.accent}14 26%, transparent 58%)`,
 							opacity: 0.18,
 						}}
 					/>
@@ -85,40 +88,77 @@ export const MarginaliaSlide = ({scene, lesson, sceneIndex, totalScenes}: Margin
 						}}
 					/>
 
-					{/* Heading */}
-					<FadeUp delay={18} durationFrames={14} dy={16}>
-						<h1
-							style={{
-								margin: 0,
-								fontSize: fitHeadingSize(scene.heading),
-								fontWeight: 800,
-								lineHeight: 1.02,
-								letterSpacing: '-0.035em',
-								color: TOK.ink,
-								position: 'relative',
-								zIndex: 1,
-							}}
-						>
-							{scene.heading}
-							<span style={{color: TOK.chem1}}>.</span>
-						</h1>
-					</FadeUp>
+					{/* Two-column grid: text | image. Image gets its own zone so it
+					    can't bleed under the heading. */}
+					<div
+						style={{
+							position: 'relative',
+							zIndex: 1,
+							display: 'grid',
+							gridTemplateColumns: scene.image ? 'minmax(0, 1.05fr) minmax(0, 0.95fr)' : '1fr',
+							alignItems: 'center',
+							gap: 24,
+							padding: '54px 58px',
+							height: '100%',
+							boxSizing: 'border-box',
+						}}
+					>
+						<div style={{minWidth: 0}}>
+							<FadeUp delay={rd.heading ?? 18} durationFrames={14} dy={16}>
+								<h1
+									style={{
+										margin: 0,
+										fontSize: fitHeadingSize(scene.heading),
+										fontWeight: 800,
+										lineHeight: 1.02,
+										letterSpacing: '-0.035em',
+										color: TOK.ink,
+									}}
+								>
+									{scene.heading}
+								</h1>
+							</FadeUp>
 
-					{/* Body */}
-					<div style={{marginTop: 38, position: 'relative', zIndex: 1}}>
-						<FadeUp delay={36} durationFrames={14} dy={12}>
-							<div
-								style={{
-									fontSize: 32,
-									lineHeight: 1.4,
-									fontWeight: 400,
-									color: TOK.ink,
-									maxWidth: 780,
-								}}
-							>
-								{scene.body}
+							<div style={{marginTop: 30}}>
+								<FadeUp delay={rd.body ?? 36} durationFrames={14} dy={12}>
+									<div
+										style={{
+											fontSize: 28,
+											lineHeight: 1.4,
+											fontWeight: 400,
+											color: TOK.ink,
+										}}
+									>
+										{scene.body}
+									</div>
+								</FadeUp>
 							</div>
-						</FadeUp>
+						</div>
+
+						{scene.image && ASSETS[scene.image as AssetName] && (
+							<FadeUp delay={rd.diagram ?? 24} durationFrames={16} dy={12}>
+								<div
+									style={{
+										display: 'flex',
+										alignItems: 'center',
+										justifyContent: 'center',
+										height: '100%',
+									}}
+								>
+									<img
+										src={ASSETS[scene.image as AssetName]}
+										alt=""
+										style={{
+											maxWidth: '100%',
+											maxHeight: 360,
+											objectFit: 'contain',
+											filter: 'drop-shadow(0 16px 32px rgba(0,0,0,0.14))',
+											opacity: 0.85,
+										}}
+									/>
+								</div>
+							</FadeUp>
+						)}
 					</div>
 				</div>
 			</FadeUp>

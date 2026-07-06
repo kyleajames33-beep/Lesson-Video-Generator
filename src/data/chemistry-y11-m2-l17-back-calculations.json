@@ -1,0 +1,216 @@
+{
+  "title": "Back Calculations and Unknown Concentrations",
+  "subtitle": "Working backwards from the result",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 17",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "perform back-calculations to determine unknown concentrations and amounts from experimental results"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": [
+    "CH11-9",
+    "CH11/12-4",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "How are chemicals in solutions measured?",
+  "lessonIntent": "Students can work backwards from a titration result, including non-1:1 ratios and aliquot scaling, to find an unknown concentration.",
+  "examSkill": "Find moles of the standard from the titre, apply the mole ratio, then divide by the unknown's aliquot or flask volume — never the titre volume.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, back calculations, working backwards from a result to an unknown. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Back Calculations and Unknown Concentrations (Year 11 Chemistry, Module 2, Lesson 17)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Start from the answer, find the question",
+      "body": "Often a chemist knows the result and has to work backwards to the unknown they started with.",
+      "callout": "Run the mole bridge in reverse.",
+      "durationInFrames": 660,
+      "caption": "Back calculations work from experimental data back to an unknown.",
+      "voiceover": {
+        "text": "OK, most problems so far have run forwards, from what you have to what you make. But in real quantitative analysis, chemists often work the other way. They know the result, a titre volume, a precipitate mass, and they have to work backwards to find the unknown they started with, like the concentration of a mystery solution. It's the same mole bridge you already know, just travelled in reverse. The challenge is staying organised across two or three steps and not tripping on the details, especially which volume to divide by at the end."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "The reverse pathway",
+      "body": "From the known standard, find moles, cross the ratio, then divide by the unknown's own volume.",
+      "bullets": [
+        {
+          "text": "Find moles of the standard from its concentration and titre."
+        },
+        {
+          "text": "Cross the mole ratio to the unknown substance."
+        },
+        {
+          "text": "Divide by the unknown's volume to get its concentration."
+        }
+      ],
+      "secondary": "The volume you divide by is the unknown's aliquot or flask volume, never the titre volume from the burette.",
+      "callout": "Divide by the unknown's volume, not the titre.",
+      "durationInFrames": 1110,
+      "caption": "Standard moles → mole ratio → ÷ the unknown's volume.",
+      "voiceover": {
+        "text": "Here's the reverse pathway. You always start from the substance you know exactly, the standard. Find its moles from its concentration and the titre volume. Then cross the mole ratio to the unknown substance, getting its moles. Finally, divide by the unknown's volume to get its concentration. And this is the step that catches people. The volume you divide by is the unknown's own volume, the aliquot you measured into the flask, not the titre volume that came out of the burette. The titre belongs to the standard. The aliquot belongs to the unknown. Keep those two volumes in separate boxes."
+      },
+      "diagram": {
+        "type": "titrationSetup"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Back calculation: working backwards from data to an unknown."
+        },
+        {
+          "text": "Aliquot: the measured volume of unknown placed in the flask."
+        },
+        {
+          "text": "Titre: the volume of standard delivered from the burette."
+        },
+        {
+          "text": "Scaling: multiplying an aliquot result up to the whole flask."
+        }
+      ],
+      "callout": "Titre is the standard's volume; aliquot is the unknown's.",
+      "durationInFrames": 930,
+      "caption": "Back calculation, aliquot, titre, and scaling to the whole flask.",
+      "voiceover": {
+        "text": "Quick vocabulary, because the two volumes are the whole game here. A back calculation is working backwards from experimental data to an unknown quantity. An aliquot is the precise volume of the unknown solution you pipette into the flask. The titre is the volume of standard you deliver from the burette to reach the endpoint. And scaling is multiplying a result from one aliquot up to the whole flask it came from. The single most important pairing, the titre is the standard's volume, the aliquot is the unknown's volume. Mix those up and the answer is wrong."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "Keep precision, watch the ratio",
+      "body": "Carry full precision through every step. Watch for non-1:1 ratios and aliquot scaling.",
+      "bullets": [
+        {
+          "text": "n(standard) = c × titre, then × mole ratio for the unknown."
+        },
+        {
+          "text": "c(unknown) = its moles ÷ its aliquot volume."
+        },
+        {
+          "text": "Scale up to the flask if the question wants the total."
+        }
+      ],
+      "secondary": "Don't round intermediate values. Only round the final answer to the right significant figures.",
+      "callout": "Full precision until the very last line.",
+      "durationInFrames": 1020,
+      "caption": "n = c × titre → ratio → ÷ aliquot; keep full precision.",
+      "voiceover": {
+        "text": "Here's the method, with two warnings built in. Find the moles of the standard from its concentration times the titre. Apply the mole ratio to get the unknown's moles. Then divide by the unknown's aliquot volume for its concentration, and scale up to the whole flask if the question asks for a total. Warning one, watch the ratio. Diprotic acids and carbonates aren't one to one, so read the equation. Warning two, keep full precision. Carry every decimal through the intermediate steps, and only round at the very end. Rounding early in a two or three step calculation can throw your final answer off by enough to lose a mark."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Finding [NaOH]",
+      "question": "25.0 mL of NaOH is titrated against 0.100 mol L⁻¹ HCl. Concordant titres: 22.3, 22.4, 22.3 mL. Find [NaOH]. HCl + NaOH → NaCl + H₂O.",
+      "coachNote": "Divide by the 25.0 mL aliquot, not the titre.",
+      "steps": [
+        "Average titre = (22.3 + 22.4 + 22.3) ÷ 3 = 22.3 mL",
+        "n(HCl) = c × V = 0.100 × 0.0223 = 2.23 × 10⁻³ mol",
+        "Ratio HCl : NaOH = 1 : 1, so n(NaOH) = 2.23 × 10⁻³ mol",
+        "Divide by aliquot: V(NaOH) = 25.0 mL = 0.0250 L",
+        "[NaOH] = 2.23 × 10⁻³ ÷ 0.0250 = 0.0893 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1470,
+      "caption": "Average titre 22.3 mL gives [NaOH] = 0.0893 mol L⁻¹.",
+      "voiceover": {
+        "text": "Let's find an unknown concentration. Twenty-five millilitres of sodium hydroxide is titrated against nought-point-one mole per litre hydrochloric acid, with concordant titres of twenty-two-point-three, twenty-two-point-four, and twenty-two-point-three millilitres. Find the sodium hydroxide concentration. Step one, average the concordant titres, which gives twenty-two-point-three millilitres. Step two, moles of the standard acid. Nought-point-one times nought-point-zero-two-two-three is two-point-two-three times ten to the minus three moles. Step three, the ratio is one to one, so the base has the same moles. Step four, here's the key, divide by the unknown's volume, the twenty-five millilitre aliquot, not the titre. Two-point-two-three times ten to the minus three over nought-point-zero-two-five is nought-point-zero-eight-nine-three moles per litre. The titre got you the moles, but the aliquot gets you the concentration."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "A diprotic unknown",
+      "question": "25.0 mL of H₂SO₄ is titrated with 0.200 mol L⁻¹ NaOH. Average titre 18.50 mL. Find [H₂SO₄]. H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O.",
+      "coachNote": "Ratio is 1:2 — halve the base moles for the acid.",
+      "steps": [
+        "n(NaOH) = c × V = 0.200 × 0.01850 = 3.70 × 10⁻³ mol",
+        "Ratio H₂SO₄ : NaOH = 1 : 2, so n(H₂SO₄) = 3.70 × 10⁻³ ÷ 2 = 1.85 × 10⁻³ mol",
+        "Divide by aliquot: V(H₂SO₄) = 25.0 mL = 0.0250 L",
+        "[H₂SO₄] = 1.85 × 10⁻³ ÷ 0.0250",
+        "Answer: [H₂SO₄] = 0.0740 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1470,
+      "caption": "Halving for the 1:2 ratio gives [H₂SO₄] = 0.0740 mol L⁻¹.",
+      "voiceover": {
+        "text": "Now one where the ratio bites. Twenty-five millilitres of sulfuric acid is titrated with nought-point-two mole per litre sodium hydroxide, with an average titre of eighteen-point-five millilitres. Find the acid concentration. The equation is sulfuric acid plus two sodium hydroxide. Step one, moles of the standard base. Nought-point-two times nought-point-zero-one-eight-five is three-point-seven times ten to the minus three moles. Step two, the ratio of acid to base is one to two, so divide the base moles by two. That's one-point-eight-five times ten to the minus three moles of acid. Step three, divide by the acid's aliquot volume, twenty-five millilitres. One-point-eight-five times ten to the minus three over nought-point-zero-two-five is nought-point-zero-seven-four moles per litre. The one to two ratio halved the acid moles, and forgetting it would have doubled your answer."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: dividing by the titre volume instead of the unknown's aliquot volume.",
+      "secondary": "Trap 2: forgetting a non-1:1 ratio, like the 1:2 of a diprotic acid. Trap 3: rounding intermediate values, which drifts the final answer.",
+      "mistakeTag": "Where back-calculation marks vanish",
+      "callout": "Aliquot not titre, check the ratio, keep full precision.",
+      "durationInFrames": 1230,
+      "caption": "Divide by the aliquot not the titre; respect the ratio; don't round early.",
+      "voiceover": {
+        "text": "Three traps, and they're the same details that decide band five versus band six. Trap one, dividing by the titre volume instead of the unknown's aliquot. The titre gave you the moles of the unknown, but the concentration comes from dividing by the unknown's own volume, the aliquot. Trap two, forgetting a non one to one ratio. Diprotic acids and carbonates need that halving or doubling, so always read the balanced equation. Trap three, rounding intermediate values. In a two or three step back calculation, early rounding builds up and can shift your final answer enough to drop a mark. Carry full precision, round once at the end."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "0.530 g Na₂CO₃ is dissolved to 100.0 mL. 25.0 mL aliquots are titrated against HCl, average titre 24.5 mL. Find [HCl]. Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂. (Na 22.99, C 12.011, O 15.999)",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "M(Na₂CO₃) = 105.99 g mol⁻¹; n total = 0.530 ÷ 105.99 = 5.00 × 10⁻³ mol in 100 mL",
+        "Aliquot is 25.0/100.0 = 1/4, so n(Na₂CO₃) in aliquot = 1.25 × 10⁻³ mol",
+        "Ratio Na₂CO₃ : HCl = 1 : 2, so n(HCl) = 2.50 × 10⁻³ mol",
+        "Divide by titre for the standard HCl: V = 24.5 mL = 0.0245 L",
+        "[HCl] = 2.50 × 10⁻³ ÷ 0.0245 = 0.102 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1560,
+      "caption": "Scale to the aliquot, apply 1:2, then divide by the titre: 0.102 mol L⁻¹.",
+      "voiceover": {
+        "text": "Quick check, and this one has every twist at once. Nought-point-five-three-zero grams of sodium carbonate is dissolved to make one hundred millilitres. Twenty-five millilitre aliquots are titrated against hydrochloric acid, with an average titre of twenty-four-point-five millilitres. Find the acid concentration. Pause and work it through. Right, let's check it. Step one, moles of carbonate in the whole flask. Molar mass is one hundred and five-point-nine-nine, so nought-point-five-three over that is five times ten to the minus three moles in the full hundred millilitres. Step two, the aliquot is twenty-five out of one hundred, a quarter, so it holds one-point-two-five times ten to the minus three moles of carbonate. Step three, the ratio of carbonate to acid is one to two, so double it, two-point-five times ten to the minus three moles of acid. Step four, now here the acid is the standard being delivered, so divide by its titre, twenty-four-point-five millilitres. Two-point-five times ten to the minus three over nought-point-zero-two-four-five is nought-point-one-zero-two moles per litre. Scaling, ratio, and the right volume, all in one."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Back calculations run the mole bridge in reverse from data.",
+        "Find moles of the standard, then cross the mole ratio.",
+        "Divide by the unknown's own volume, not the titre.",
+        "Watch non-1:1 ratios; scale aliquots up to the flask.",
+        "Carry full precision; round only the final answer."
+      ],
+      "finalPrompt": "Dividing for concentration? Use the right volume for that substance.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: reverse bridge, aliquot vs titre, ratio, scaling, precision.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, back calculations run the mole bridge in reverse, starting from experimental data. Second, find the moles of the standard, then cross the mole ratio to the unknown. Third, divide by the right volume for that substance, the aliquot for the unknown, the titre for the standard. Fourth, watch for non one to one ratios, and scale aliquot results up to the whole flask when asked. And fifth, carry full precision through every step, and round only at the very end. Stay organised across the steps and these become some of the most rewarding questions in the module. See you next lesson."
+      }
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "title": "The Periodic Table: Organisation",
+  "subtitle": "Why ordering by atomic number unlocks chemistry",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 15",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "classify the elements based on their properties and position in the periodic table through their physical and chemical properties"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-5", "CH11/12-7"],
+  "inquiryQuestion": "How do the properties of substances help us to classify and separate them?",
+  "lessonIntent": "Students can explain why the table is ordered by atomic number and read an element's group, period, and key properties from its position.",
+  "examSkill": "Use atomic number to place an element, then predict valence electrons, likely ion charge, and group behaviour from its position.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the periodic table and how it's organised. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "The Periodic Table: Organisation (Year 11 Chemistry, Module 1, Lesson 15)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "When mass got it wrong",
+      "body": "Argon is heavier than potassium, yet potassium comes after argon. Ordering by mass breaks; ordering by number fixes it.",
+      "callout": "Atomic number, not mass, is the true organising principle.",
+      "durationInFrames": 690,
+      "caption": "Argon (39.95) is heavier than potassium (39.10), yet K comes after Ar by atomic number.",
+      "voiceover": {
+        "text": "OK, here's a puzzle that stumped early chemists. Mendeleev built his table by ordering elements by atomic mass. But look at argon and potassium. Argon has a relative atomic mass of about thirty-nine-point-nine-five, while potassium is lighter at thirty-nine-point-one-zero. By mass, potassium should come first. Yet in the real table, argon comes first, then potassium. If you order strictly by mass, the chemistry comes out wrong, an unreactive gas would land in the reactive-metals column. The fix is to order by atomic number, the proton count, instead. Do that, and every element falls into the group that matches its chemistry. Today is about why that one change makes the whole table work."
+      }
+    },
+    {
+      "id": "concept-ordering",
+      "type": "concept",
+      "heading": "Ordered by atomic number",
+      "body": "The modern table runs by increasing atomic number, so elements with the same valence electrons line up in groups.",
+      "image": "l15PeriodicTableOrganisation",
+      "bullets": [
+        {"text": "Order is increasing atomic number Z, not atomic mass."},
+        {"text": "Periods are rows; period number is the number of occupied shells."},
+        {"text": "Groups are columns; main-group number is the valence electron count."}
+      ],
+      "secondary": "Properties repeat because chemistry depends on valence electrons, and elements in a group share the same valence count.",
+      "callout": "Same column means same valence electrons means similar chemistry.",
+      "durationInFrames": 1170,
+      "caption": "Order by atomic number; periods = shells, groups = valence electrons.",
+      "voiceover": {
+        "text": "Let's get the layout right. The modern periodic table is ordered by increasing atomic number, the number of protons, not by mass. And the structure carries real meaning. The horizontal rows are called periods, and the period number tells you how many electron shells an element has occupied. The vertical columns are called groups, and for the main-group elements, the group number tells you how many valence electrons the atom has. Now here's why the whole thing repeats. Chemistry is driven by valence electrons. Elements stacked in the same column have the same number of valence electrons, so they behave in similar ways. Mendeleev actually spotted this repeating pattern before anyone understood electrons, which is why his table worked at all. He'd accidentally lined up the valence electrons."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Period: a horizontal row; its number is the number of occupied shells."},
+        {"text": "Group: a vertical column; its number gives valence electrons (main group)."},
+        {"text": "Valence electrons: the outer-shell electrons that control bonding."},
+        {"text": "Block (s, p, d, f): the region named for the subshell being filled."}
+      ],
+      "callout": "Period counts shells; group counts valence electrons.",
+      "durationInFrames": 960,
+      "caption": "Period, group, valence electrons, block.",
+      "voiceover": {
+        "text": "Quick vocabulary. A period is a horizontal row, and the period number equals the number of occupied electron shells. So a period three element has three shells. A group is a vertical column, and for main-group elements the group number gives you the valence electron count. Valence electrons are the outer-shell electrons, and they're the ones that decide how an element bonds and reacts. And a block, the s, p, d, or f block, names the region of the table according to which type of subshell is being filled there. Keep period and group straight, because period is about how many shells, and group is about how many valence electrons."
+      }
+    },
+    {
+      "id": "concept-regions",
+      "type": "concept",
+      "heading": "Metals, non-metals, metalloids",
+      "body": "The staircase line splits electron-losers on the left from electron-gainers on the upper right.",
+      "diagram": {
+        "type": "venn",
+        "leftLabel": "Metals (lose e⁻ → cations)",
+        "rightLabel": "Non-metals (gain e⁻ → anions)",
+        "overlapLabel": "Metalloids (staircase)",
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Metals on the left and d-block lose electrons to form cations."},
+        {"text": "Non-metals on the upper right gain electrons to form anions."},
+        {"text": "Metalloids sit on the staircase boundary between the two."}
+      ],
+      "secondary": "Metal reactivity increases down a group, while non-metal reactivity decreases down a group.",
+      "callout": "Left side loses electrons; upper right gains them.",
+      "durationInFrames": 1140,
+      "caption": "Metals (left) lose e⁻; non-metals (upper right) gain e⁻; metalloids on the staircase.",
+      "voiceover": {
+        "text": "Now the big regions of the table. A staircase line near the right splits everything into two camps. On the left, and across the d-block, you have the metals. Metals tend to lose electrons, forming positive ions, cations. On the upper right you have the non-metals, which tend to gain electrons, forming negative ions, anions. And straddling the staircase boundary are the metalloids, like silicon, which show a mix of metallic and non-metallic behaviour. One reactivity pattern worth previewing now. For metals, reactivity increases as you go down a group, because the outer electron gets easier to lose. For non-metals, it's the opposite, reactivity decreases down a group, because a larger atom finds it harder to grab an extra electron. We'll unpack the why of that in the trends lessons."
+      }
+    },
+    {
+      "id": "concept-groups",
+      "type": "concept",
+      "heading": "The key groups",
+      "body": "Each main group has a name and a signature behaviour set by its valence electron count.",
+      "diagram": {
+        "type": "table",
+        "headers": ["Group", "Name", "Valence e⁻", "Signature"],
+        "rows": [
+          ["1", "Alkali metals", "1", "Very reactive; react with water → H₂"],
+          ["2", "Alkaline earth", "2", "Reactive; form 2+ ions"],
+          ["17", "Halogens", "7", "Reactive non-metals; form 1− ions"],
+          ["18", "Noble gases", "8 (He: 2)", "Full shell; unreactive"]
+        ],
+        "delay": 18
+      },
+      "secondary": "The transition metals (groups 3–12) are hard, high-melting, form coloured compounds, and show multiple oxidation states.",
+      "callout": "Group number predicts the typical ion charge.",
+      "durationInFrames": 1170,
+      "caption": "Group 1 alkali metals, group 2 alkaline earths, group 17 halogens, group 18 noble gases.",
+      "voiceover": {
+        "text": "Let's meet the headline groups, because their valence count predicts their behaviour. Group one, the alkali metals, have one valence electron. They're soft, very reactive, and they react vigorously with water to give hydrogen gas and a metal hydroxide. Group two, the alkaline earth metals, have two valence electrons, are still reactive, and form two plus ions. Group seventeen, the halogens, are reactive non-metals that are one electron short of a full shell, so they grab one to form one minus ions, the halides. Group eighteen, the noble gases, already have a full outer shell, eight electrons, or two for helium, so they're famously unreactive. And spanning the middle, the transition metals, are hard, high-melting, form coloured compounds, and can adopt several oxidation states. Notice the pattern, the group number hands you the valence count, which hands you the likely ion charge."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Placing an element from Z",
+      "question": "An element has atomic number 16. State its period, group, and most likely ion charge.",
+      "coachNote": "Build the configuration, then read shells and valence electrons.",
+      "steps": [
+        "Z = 16, so the configuration is 1s²2s²2p⁶3s²3p⁴",
+        "Highest occupied shell is shell 3, so it is in Period 3",
+        "Valence electrons are 3s²3p⁴ = 6, so it is in Group 16",
+        "Six valence electrons means it gains 2 to fill the shell",
+        "Answer: Period 3, Group 16, forms a 2− ion (it is sulfur) ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Z = 16 → Period 3, Group 16, forms a 2− ion (sulfur).",
+      "voiceover": {
+        "text": "Let's place an element using only its atomic number. The element has atomic number sixteen. Find its period, its group, and its most likely ion charge. Step one, write the electron configuration. Sixteen electrons fill as one s two, two s two, two p six, three s two, three p four. Step two, find the period. The highest occupied shell is shell three, so the element sits in period three. Step three, find the group. The valence electrons are in shell three, that's three s two plus three p four, which is six valence electrons, so it's in group sixteen. Step four, predict the ion. With six valence electrons, it's two short of a full shell, so it gains two electrons to form a two minus ion. The full answer, period three, group sixteen, forms a two minus ion. And that element is sulfur. Everything came straight from the atomic number."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking the table is ordered by atomic mass. The modern table is ordered by atomic number.",
+      "secondary": "Trap 2: confusing period and group. Period counts shells; group counts valence electrons. Trap 3: assuming two elements in the same period share valence electrons. They don't; same group does.",
+      "mistakeTag": "Where periodic-table marks vanish",
+      "callout": "Order by Z; period = shells, group = valence; same group shares valence electrons.",
+      "durationInFrames": 1200,
+      "caption": "Ordered by Z; period = shells; group = valence; same group (not period) shares valence.",
+      "voiceover": {
+        "text": "Three traps. Trap one, saying the modern table is ordered by atomic mass. It isn't. Mendeleev used mass, but the modern table is ordered by atomic number, which is what fixes the argon and potassium problem we opened with. Trap two, swapping period and group. The period number counts shells, the group number counts valence electrons. If you mix them up, every prediction goes wrong. Trap three, assuming elements in the same period have the same valence electrons. They don't. Across a period the valence count rises, from one up to eight. It's the same group, the same column, that shares a valence count, and that's why a column shares chemistry. Period for shells, group for valence."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "An element has atomic number 12. State its period, group, and most likely ion charge.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Z = 12, so the configuration is 1s²2s²2p⁶3s²",
+        "Highest occupied shell is shell 3, so it is in Period 3",
+        "Valence electrons are 3s² = 2, so it is in Group 2",
+        "Two valence electrons means it loses 2 to empty the shell",
+        "Answer: Period 3, Group 2, forms a 2+ ion (it is magnesium) ✓"
+      ],
+      "durationInFrames": 1200,
+      "caption": "Z = 12 → Period 3, Group 2, forms a 2+ ion (magnesium).",
+      "voiceover": {
+        "text": "Quick check, same skill. An element has atomic number twelve. Find its period, group, and most likely ion charge. Pause and work it through. Right, let's check it. Step one, write the configuration. Twelve electrons fill as one s two, two s two, two p six, three s two. Step two, the highest occupied shell is shell three, so it's in period three. Step three, the valence electrons are three s two, that's two valence electrons, so it's in group two. Step four, with two valence electrons, it loses both to empty the outer shell, forming a two plus ion. So the answer is period three, group two, forms a two plus ion, and that's magnesium. Reading the table is really just reading the electron configuration."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "The modern table is ordered by atomic number, not mass.",
+        "Period number = occupied shells; group number = valence electrons.",
+        "Same group means same valence electrons means similar chemistry.",
+        "Metals lose electrons (left); non-metals gain electrons (upper right).",
+        "Group number predicts the typical ion charge."
+      ],
+      "finalPrompt": "Given just Z? Build the configuration to read group and period.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: ordered by Z, period vs group, group chemistry, regions, ion charge.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, the modern periodic table is ordered by atomic number, not atomic mass, which is what keeps the chemistry consistent. Second, the period number tells you how many shells are occupied, and the main-group number tells you the valence electron count. Third, elements in the same group share a valence count, which is why they share similar chemistry. Fourth, metals on the left lose electrons to form cations, while non-metals on the upper right gain electrons to form anions. And fifth, the group number predicts the typical ion charge an element forms. Given nothing but an atomic number, build the configuration and the table reads itself. See you next lesson."
+      }
+    }
+  ]
+}

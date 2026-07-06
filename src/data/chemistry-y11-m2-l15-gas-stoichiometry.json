@@ -1,0 +1,190 @@
+{
+  "title": "Gas Stoichiometry",
+  "subtitle": "The four-step method, plus a gas conversion",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 15",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "solve stoichiometry problems involving gases using molar volume at standard conditions"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-9", "CH11/12-4", "CH11/12-6"],
+  "inquiryQuestion": "How does the Ideal Gas Law relate to all other Gas Laws?",
+  "lessonIntent": "Students can solve stoichiometry problems where a gas is given or wanted, by adding a volume-to-moles conversion to the four-step method.",
+  "examSkill": "Use n = V ÷ Vₘ (or V = n × Vₘ) to swap between gas volume and moles, choosing the correct Vₘ for the stated conditions, then apply the mole ratio.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, gas stoichiometry, the four-step method with one gas conversion added. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Gas Stoichiometry (Year 11 Chemistry, Module 2, Lesson 15)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Not a new method, just one extra step",
+      "body": "When a gas is given or wanted, you swap between volume and moles. Everything else is familiar.",
+      "callout": "Gas volume ↔ moles is the only new move.",
+      "durationInFrames": 660,
+      "caption": "Gas stoichiometry adds one volume-to-moles step to the four-step method.",
+      "voiceover": {
+        "text": "OK, good news to start. Gas stoichiometry is not a brand new method. It's the same four-step method from the mass to mass lesson, with one extra conversion bolted on. The only new idea is this. When a gas is given to you, or asked for, you swap between its volume and its moles using molar volume. That's it. Everything else, the mole ratio, the bridge through moles, is exactly what you already know. So today is really about slotting one familiar tool, molar volume, into a method you've already mastered."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Volume joins the bridge",
+      "body": "For gases, volume connects to moles through molar volume, the same way mass connects through molar mass.",
+      "image": "l15GasStoich",
+      "bullets": [
+        {"text": "Gas given: convert its volume to moles with n = V ÷ Vₘ."},
+        {"text": "Cross the mole bridge using the balanced equation's ratio."},
+        {"text": "Gas wanted: convert moles back to volume with V = n × Vₘ."}
+      ],
+      "secondary": "Solids and liquids still use molar mass. Only gases use molar volume. A problem can mix both.",
+      "callout": "Gas uses molar volume; everything else uses molar mass.",
+      "durationInFrames": 1110,
+      "caption": "Gases convert via molar volume; solids and liquids via molar mass.",
+      "voiceover": {
+        "text": "Here's how it fits together. You already know that mass connects to moles through molar mass. For a gas, volume connects to moles through molar volume, in exactly the same role. So if a gas is given, convert its volume to moles by dividing by the molar volume. Then cross the mole bridge using the mole ratio from the balanced equation. If a gas is what you want at the end, convert those moles back to a volume by multiplying by the molar volume. The thing to stay alert to, only gases use molar volume. Solids and liquids still use molar mass. And a single problem might have a solid reactant and a gas product, so you'd use molar mass at one end and molar volume at the other."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The conditions you need",
+      "bullets": [
+        {"text": "Molar volume (Vₘ): the volume of one mole of any gas at set conditions."},
+        {"text": "STP: 0°C and 100 kPa, where Vₘ = 22.71 L mol⁻¹."},
+        {"text": "RTP: 25°C and 100 kPa, where Vₘ = 24.8 L mol⁻¹."},
+        {"text": "Avogadro's law: equal gas volumes hold equal moles at the same conditions."}
+      ],
+      "callout": "Read the conditions, then pick the matching Vₘ.",
+      "durationInFrames": 960,
+      "caption": "STP gives 22.71 L mol⁻¹; RTP gives 24.8 L mol⁻¹. Match the conditions.",
+      "voiceover": {
+        "text": "Quick refresher on the conditions, from the molar volume lesson. Molar volume is the volume of one mole of any gas at set conditions. At STP, which is zero degrees and one hundred kilopascals, the molar volume is twenty-two-point-seven-one litres per mole. At RTP, which is twenty-five degrees and one hundred kilopascals, it's twenty-four-point-eight litres per mole. And Avogadro's law underpins it all, equal volumes of any gas at the same conditions contain equal moles. Watch out, some older textbooks quote twenty-two-point-four for STP, which is the value at one atmosphere, not one hundred kilopascals. Read the conditions in the question, then pick the matching molar volume."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The extended method",
+      "body": "Same four steps. Just use molar volume instead of molar mass at any gas end.",
+      "bullets": [
+        {"text": "Gas in: n = V ÷ Vₘ to start in moles."},
+        {"text": "Apply the mole ratio across the bridge."},
+        {"text": "Gas out: V = n × Vₘ to finish in volume."}
+      ],
+      "secondary": "Volume must be in litres, and the molar volume must match the stated conditions.",
+      "callout": "Swap molar mass for molar volume at the gas end.",
+      "durationInFrames": 1020,
+      "caption": "n = V ÷ Vₘ in, mole ratio across, V = n × Vₘ out.",
+      "voiceover": {
+        "text": "Here's the extended method. It's the same four steps, but at any end that's a gas, you use molar volume instead of molar mass. If a gas is given, start by converting its volume to moles, n equals V over molar volume. Then apply the mole ratio across the bridge, just like always. If a gas is wanted, finish by converting moles to volume, V equals n times molar volume. Two reminders. The volume has to be in litres, and the molar volume you choose has to match the conditions the question states. Get the conditions right and the rest is the method you already own."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Gas from a solid",
+      "question": "What volume of CO₂ at STP forms when 25.0 g of CaCO₃ decomposes? CaCO₃ → CaO + CO₂. (Ca 40.08, C 12.011, O 15.999)",
+      "coachNote": "Solid in via molar mass; gas out via molar volume.",
+      "steps": [
+        "M(CaCO₃) = 100.09 g mol⁻¹; n = 25.0 ÷ 100.09 = 0.250 mol",
+        "Ratio CaCO₃ : CO₂ = 1 : 1, so n(CO₂) = 0.250 mol",
+        "STP → Vₘ = 22.71 L mol⁻¹",
+        "V(CO₂) = n × Vₘ = 0.250 × 22.71",
+        "Answer: V(CO₂) = 5.67 L at STP ✓"
+      ],
+      "durationInFrames": 1470,
+      "caption": "25.0 g CaCO₃ releases 5.67 L of CO₂ at STP.",
+      "voiceover": {
+        "text": "Let's do a solid in, gas out. What volume of carbon dioxide at STP forms when twenty-five grams of calcium carbonate decomposes? The reactant is a solid, so we enter through molar mass. Step one, molar mass of calcium carbonate is one hundred-point-zero-nine, so twenty-five grams is nought-point-two-five moles. Step two, the ratio of calcium carbonate to carbon dioxide is one to one, so nought-point-two-five moles of gas. Step three, the gas is at STP, so use twenty-two-point-seven-one litres per mole. Step four, the product is a gas, so we exit through molar volume. Volume equals moles times molar volume. Nought-point-two-five times twenty-two-point-seven-one is five-point-six-seven litres. Solid in through molar mass, gas out through molar volume."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Gas from gas",
+      "question": "What volume of O₂ at RTP burns 0.500 mol of C₂H₆? 2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O.",
+      "coachNote": "Moles given already; ratio is 2:7.",
+      "steps": [
+        "Given: n(C₂H₆) = 0.500 mol",
+        "Ratio C₂H₆ : O₂ = 2 : 7",
+        "n(O₂) = 0.500 × (7 ÷ 2) = 1.75 mol",
+        "RTP → Vₘ = 24.8 L mol⁻¹; V = n × Vₘ = 1.75 × 24.8",
+        "Answer: V(O₂) = 43.4 L at RTP ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "0.500 mol C₂H₆ needs 43.4 L of O₂ at RTP.",
+      "voiceover": {
+        "text": "Now a gas to gas problem. What volume of oxygen at RTP is needed to completely burn nought-point-five moles of ethane? The equation is two ethane plus seven oxygen gives four carbon dioxide plus six water. This time the moles are given, so we skip the first conversion. Step one, we have nought-point-five moles of ethane. Step two, the ratio of ethane to oxygen is two to seven, a big ratio, so multiply by seven over two. Nought-point-five times three-point-five is one-point-seven-five moles of oxygen. Step three, the gas is at RTP, so use twenty-four-point-eight litres per mole. Step four, volume equals moles times molar volume. One-point-seven-five times twenty-four-point-eight is forty-three-point-four litres. The seven to two ratio did the heavy lifting, so reading the coefficients carefully was everything."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: using the wrong molar volume for the conditions, like 22.71 at RTP or 24.8 at STP.",
+      "secondary": "Trap 2: using molar volume for a solid or liquid. Only gases use it. Trap 3: forgetting to convert a given mass to moles before the mole ratio.",
+      "mistakeTag": "Where gas-stoichiometry marks vanish",
+      "callout": "Match Vₘ to conditions, gas-only for Vₘ, moles before the ratio.",
+      "durationInFrames": 1230,
+      "caption": "Match Vₘ to conditions; only gases use Vₘ; convert mass to moles first.",
+      "voiceover": {
+        "text": "Three traps. Trap one, using the wrong molar volume for the conditions. STP and RTP have different values, so grabbing twenty-four-point-eight when the question says STP gives a wrong answer even with perfect method. Read the conditions first. Trap two, using molar volume for a solid or liquid. Only gases occupy that big molar volume. A solid reactant still goes through molar mass. Trap three, forgetting to convert a given mass into moles before applying the mole ratio. The ratio only works on moles, so if you're handed grams, convert first. Match the conditions, gas only for molar volume, and always reach moles before the ratio."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "What mass of Zn produces 3.72 L of H₂ at RTP? Zn + 2HCl → ZnCl₂ + H₂. (Zn 65.38)",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "RTP → Vₘ = 24.8 L mol⁻¹; n(H₂) = V ÷ Vₘ = 3.72 ÷ 24.8 = 0.150 mol",
+        "Ratio Zn : H₂ = 1 : 1, so n(Zn) = 0.150 mol",
+        "M(Zn) = 65.38 g mol⁻¹",
+        "m(Zn) = n × M = 0.150 × 65.38",
+        "Answer: m(Zn) = 9.81 g ✓"
+      ],
+      "durationInFrames": 1230,
+      "caption": "3.72 L H₂ at RTP needs 9.81 g of Zn.",
+      "voiceover": {
+        "text": "Quick check, gas in, solid out. What mass of zinc produces three-point-seven-two litres of hydrogen at RTP, in zinc plus two hydrochloric acid gives zinc chloride plus hydrogen? Pause and work it through. Right, let's check it. Step one, the gas is given, and it's at RTP, so molar volume is twenty-four-point-eight. Moles of hydrogen is three-point-seven-two over twenty-four-point-eight, which is nought-point-one-five moles. Step two, the ratio of zinc to hydrogen is one to one, so nought-point-one-five moles of zinc. Step three, zinc's molar mass is sixty-five-point-three-eight. Step four, mass equals moles times molar mass. Nought-point-one-five times sixty-five-point-three-eight is nine-point-eight-one grams. Gas in through molar volume, solid out through molar mass."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Gas stoichiometry is the four-step method plus a gas conversion.",
+        "Gas given: n = V ÷ Vₘ. Gas wanted: V = n × Vₘ.",
+        "Only gases use molar volume; solids and liquids use molar mass.",
+        "Match Vₘ to the conditions: 22.71 at STP, 24.8 at RTP.",
+        "Volume in litres, and reach moles before the mole ratio."
+      ],
+      "finalPrompt": "Gas in the question? Decide STP or RTP before you pick Vₘ.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: extra gas step, n=V/Vₘ, gas-only molar volume, match conditions.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, gas stoichiometry is just the four-step method with a gas conversion added. Second, if a gas is given, divide its volume by the molar volume, and if a gas is wanted, multiply moles by the molar volume. Third, only gases use molar volume. Solids and liquids still use molar mass. Fourth, match the molar volume to the conditions, twenty-two-point-seven-one at STP and twenty-four-point-eight at RTP. And fifth, keep volume in litres and always reach moles before applying the mole ratio. One familiar tool slotted into a method you own. See you next lesson."
+      }
+    }
+  ]
+}

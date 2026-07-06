@@ -1,0 +1,261 @@
+{
+  "title": "Non-Mendelian Patterns",
+  "subtitle": "Co-dominance, incomplete dominance and multiple alleles",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 15",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "conduct practical investigations to predict variations in the genotype of offspring by modelling meiosis, fertilisation and mutation (ACSBL084)",
+    "investigate inheritance patterns including co-dominance, incomplete dominance and multiple alleles"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How can the genetic similarities and differences within and between species be compared?",
+  "lessonIntent": "Students can distinguish co-dominance, incomplete dominance and multiple alleles, and use observed phenotype ratios to identify the inheritance pattern.",
+  "examSkill": "Read a phenotype ratio to identify the inheritance pattern, then complete crosses for incomplete dominance, co-dominance and multiple-allele systems like ABO.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, non-Mendelian inheritance patterns. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Non-Mendelian Patterns (Year 12 Biology, Module 5, Lesson 15)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Four blood types from three alleles",
+      "body": "Before blood typing, about half of all transfusions were fatal. Landsteiner found blood type AB breaks the simple dominance rules.",
+      "callout": "How do three alleles make four phenotypes?",
+      "image": "bioM5L15BloodGroups",
+      "durationInFrames": 1732,
+      "caption": "Landsteiner's ABO system shows co-dominance and multiple alleles: three alleles give four blood types.",
+      "voiceover": {
+        "text": "Around 1900, Karl Landsteiner worked out why blood transfusions were so dangerous. Before he did, roughly half of all transfusions killed the patient, because of immune reactions nobody understood. Landsteiner identified the blood groups, A, B, O, and crucially AB. And blood type AB was strange, because it didn't fit simple dominant and recessive rules at all. In an AB person, both the A allele and the B allele are expressed fully, at the same time. So here's the puzzle for today. Simple Mendelian genetics says two alleles give you two phenotypes. Yet the ABO system produces four different blood types from just three alleles. To explain that, we need three new patterns that go beyond Mendel, co-dominance, incomplete dominance, and multiple alleles. Let's sort them out."
+      }
+    },
+    {
+      "id": "concept-beyond",
+      "type": "concept",
+      "heading": "Not every cross gives 3 to 1",
+      "body": "In some traits the heterozygote does not just look like the dominant homozygote, so the familiar 3:1 ratio breaks down.",
+      "bullets": [
+        {
+          "text": "Simple dominance: the heterozygote shows the dominant phenotype, giving 3 to 1."
+        },
+        {
+          "text": "Incomplete dominance: the heterozygote is intermediate, giving 1 to 2 to 1."
+        },
+        {
+          "text": "Co-dominance: both allele products show together, also a distinct heterozygote."
+        }
+      ],
+      "secondary": "The lesson from L14 still holds: alleles segregate normally in meiosis. What changes here is only how the heterozygote is expressed.",
+      "callout": "Read the heterozygote first; the ratio follows from it.",
+      "durationInFrames": 1854,
+      "caption": "When the heterozygote has its own phenotype, the ratio shifts from 3:1 to 1:2:1.",
+      "voiceover": {
+        "text": "Let's reframe what we learned last lesson. In simple Mendelian inheritance, the heterozygote looks exactly like the dominant homozygote, which is what gives you that three to one phenotype ratio. But that's not the only possibility. Sometimes the heterozygote has its own distinct appearance, and when that happens, the three to one ratio breaks down. In incomplete dominance, the heterozygote is intermediate, a blend, which gives a one to two to one phenotype ratio instead. In co-dominance, both allele products show up together in the heterozygote, again giving it a distinct phenotype. The key thing to hold onto is that the alleles still segregate normally in meiosis, exactly as before. The only thing that's different in these patterns is how the heterozygote gets expressed. So always read the heterozygote first, and the ratio follows from there."
+      }
+    },
+    {
+      "id": "concept-incomplete",
+      "type": "concept",
+      "heading": "Incomplete dominance: a blend",
+      "body": "In incomplete dominance neither allele is fully dominant, so the heterozygote shows an intermediate phenotype.",
+      "bullets": [
+        {
+          "text": "Red flower crossed with white flower gives a pink heterozygote."
+        },
+        {
+          "text": "The genotype ratio 1:2:1 equals the phenotype ratio 1:2:1."
+        },
+        {
+          "text": "The alleles have not merged; they still separate cleanly in meiosis."
+        }
+      ],
+      "secondary": "This is the trap to avoid: pink does not mean the red and white alleles blended permanently. Cross two pinks and you get red, pink and white again.",
+      "callout": "Intermediate phenotype, but the alleles stay separate.",
+      "durationInFrames": 1935,
+      "caption": "Incomplete dominance gives an intermediate heterozygote; genotype and phenotype ratios are both 1:2:1.",
+      "voiceover": {
+        "text": "Let's take incomplete dominance first. Here, neither allele is fully dominant over the other, so the heterozygote ends up somewhere in between the two homozygotes. The classic example is flower colour, a red flower crossed with a white flower gives pink offspring. Because the heterozygote has its own distinct look, the phenotype ratio matches the genotype ratio exactly, both one to two to one. Now here's the trap that catches people. Pink does not mean the red and white alleles have blended together permanently, like mixing paint. The alleles are completely intact and they still segregate cleanly in meiosis. The proof is in the next generation, cross two pink flowers together, and you get red, pink, and white offspring reappearing. If the alleles had truly merged, the red and white could never come back. So it's a blended phenotype, not blended inheritance."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Crossing two pinks",
+      "question": "Flower colour shows incomplete dominance: CR CR is red, CW CW is white, CR CW is pink. Cross two pink plants and give the genotype and phenotype ratios.",
+      "coachNote": "Each pink parent is the heterozygote CR CW, making gametes CR and CW.",
+      "steps": [
+        "Both parents are pink, so both are CR CW; gametes are CR and CW.",
+        "Filling the grid gives CR CR, CR CW, CR CW, CW CW.",
+        "Genotype ratio is 1 CR CR : 2 CR CW : 1 CW CW.",
+        "With incomplete dominance the heterozygote is pink, so phenotypes are 1 red : 2 pink : 1 white.",
+        "Answer: genotype 1:2:1 and phenotype 1:2:1, with red and white reappearing ✓"
+      ],
+      "durationInFrames": 1840,
+      "caption": "CR CW × CR CW gives 1 red : 2 pink : 1 white; genotype and phenotype ratios both 1:2:1.",
+      "voiceover": {
+        "text": "Let's work the cross. Flower colour shows incomplete dominance, so C R C R is red, C W C W is white, and the heterozygote C R C W is pink. We're crossing two pink plants, so both must be the heterozygote, C R C W, each making gametes C R and C W. Fill the grid, and you get C R C R, two copies of C R C W, and C W C W. So the genotype ratio is one to two to one. And because incomplete dominance makes the heterozygote pink, the phenotype ratio is the same, one red, two pink, one white. This is the giveaway of incomplete dominance, the phenotype ratio equals the genotype ratio, and notice the red and white colours both come back, proving the alleles never merged."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "×",
+          "CR",
+          "CW"
+        ],
+        "rows": [
+          [
+            "CR",
+            "CR CR",
+            "CR CW"
+          ],
+          [
+            "CW",
+            "CR CW",
+            "CW CW"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Incomplete dominance: the heterozygote is intermediate between the two homozygotes."
+        },
+        {
+          "text": "Co-dominance: both alleles are fully and separately expressed in the heterozygote."
+        },
+        {
+          "text": "Multiple alleles: a gene has more than two allele forms in the population."
+        },
+        {
+          "text": "ABO blood group: a human trait showing both co-dominance and multiple alleles."
+        }
+      ],
+      "callout": "Intermediate is incomplete; both visible is co-dominant.",
+      "durationInFrames": 1557,
+      "caption": "Incomplete dominance, co-dominance, multiple alleles, ABO blood group.",
+      "voiceover": {
+        "text": "Let's pin down the words, because these are easy to confuse. Incomplete dominance is where the heterozygote is intermediate, sitting between the two homozygotes, like pink between red and white. Co-dominance is where both alleles are fully and separately expressed in the heterozygote, so you see both products at once, not a blend. Multiple alleles means a gene exists in more than two forms across the population, even though any single individual still only carries two of them. And the ABO blood group is the human example that shows both co-dominance and multiple alleles at the same time. The fastest way to keep the first two straight, intermediate equals incomplete, both visible equals co-dominant."
+      }
+    },
+    {
+      "id": "concept-codominance",
+      "type": "concept",
+      "heading": "Co-dominance: both at once",
+      "body": "In co-dominance both allele products appear together in the heterozygote, with neither blended nor hidden.",
+      "bullets": [
+        {
+          "text": "Both alleles are expressed fully and at the same time."
+        },
+        {
+          "text": "The heterozygote is not intermediate; it shows both products."
+        },
+        {
+          "text": "AB blood is the standard example: both A and B antigens are present."
+        }
+      ],
+      "secondary": "Contrast it directly with incomplete dominance: incomplete gives an in-between phenotype like pink, co-dominance gives both separate products like A and B antigens together.",
+      "callout": "Co-dominance shows both products; incomplete dominance averages them.",
+      "durationInFrames": 1813,
+      "caption": "Co-dominance expresses both allele products together; AB blood shows both A and B antigens.",
+      "voiceover": {
+        "text": "Now co-dominance, which is the one most often confused with incomplete dominance. In co-dominance, both alleles are expressed fully, and at the same time, in the heterozygote. Nothing is blended and nothing is hidden, you simply see both allele products together. The standard example is the AB blood type. A person with the A allele and the B allele has both the A antigen and the B antigen sitting on their red blood cells, side by side. They don't have some in-between, blended antigen, they have both, distinctly. So contrast the two patterns carefully. Incomplete dominance gives you an in-between phenotype, like pink. Co-dominance gives you both separate products at once, like the A and B antigens together. Different mechanisms, different results, and the exam loves testing whether you can tell them apart."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "An ABO cross",
+      "question": "One parent is blood group A (IA i), the other is group B (IB i). List all offspring genotypes and blood groups, and explain why this shows both multiple alleles and co-dominance.",
+      "coachNote": "IA and IB are co-dominant; both are dominant over i.",
+      "steps": [
+        "Parent 1 (IA i) makes gametes IA and i; parent 2 (IB i) makes gametes IB and i.",
+        "Offspring genotypes are IA IB, IA i, IB i, ii.",
+        "Phenotypes are AB, A, B and O respectively, all four blood groups.",
+        "Co-dominance: in IA IB both A and B antigens are expressed together (group AB).",
+        "Answer: four blood groups from three alleles; co-dominance plus multiple alleles ✓"
+      ],
+      "durationInFrames": 2029,
+      "caption": "IA i × IB i gives AB, A, B and O — co-dominance (AB) plus a three-allele system.",
+      "voiceover": {
+        "text": "Let's finish with the blood type cross that opened the lesson. One parent is group A, genotype I A i, the other is group B, genotype I B i. Parent one makes gametes I A and i. Parent two makes I B and i. Cross them, and the four genotypes are I A I B, I A i, I B i, and i i. Read off the blood groups. I A I B is AB, I A i is A, I B i is B, and i i is O. So a single cross produces all four blood groups. This shows co-dominance, because in the I A I B child both the A and B antigens are expressed together. And it shows multiple alleles, because the ABO gene exists as three alleles in the population, I A, I B, and i. Four phenotypes, three alleles, two patterns at once."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: treating co-dominance and incomplete dominance as the same. Co-dominance shows both products; incomplete dominance shows an intermediate blend.",
+      "secondary": "Trap 2: thinking multiple alleles means one individual carries more than two. The population has more than two forms, but each individual still carries only two alleles for the gene.",
+      "mistakeTag": "Where non-Mendelian marks vanish",
+      "callout": "Co-dominance is not a blend; individuals still carry only two alleles.",
+      "durationInFrames": 1840,
+      "caption": "Co-dominance ≠ incomplete dominance; multiple alleles is population-level, two per individual.",
+      "voiceover": {
+        "text": "Two traps to avoid. Trap one, treating co-dominance and incomplete dominance as if they're the same thing. They are not. In co-dominance, both alleles are fully expressed, so you see both products together, like the A and B antigens in AB blood. In incomplete dominance, neither allele wins, so the heterozygote is an intermediate blend, like pink. Both separate products versus one in-between blend, keep those distinct. Trap two, thinking multiple alleles means a single individual carries more than two alleles for a gene. That's wrong. Multiple alleles is a population-level idea, it means more than two forms of the gene exist across all people. But any one individual still carries exactly two alleles, one from each parent. The ABO gene has three alleles in the population, but you personally only have two of them."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A monohybrid cross gives offspring in a 1:2:1 phenotype ratio, with the middle group looking different from both parents but not a blend. Which inheritance pattern is this, and how do you know?",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "A 1:2:1 phenotype ratio means the heterozygote has its own distinct phenotype.",
+        "That rules out simple dominance, which would give 3:1.",
+        "The heterozygote is not an intermediate blend, so it is not incomplete dominance.",
+        "Both allele products showing together, not blended, is the signature of co-dominance.",
+        "Answer: co-dominance, because the heterozygote shows both products rather than a blend ✓"
+      ],
+      "durationInFrames": 1975,
+      "caption": "1:2:1 with a distinct, non-blended heterozygote indicates co-dominance.",
+      "voiceover": {
+        "text": "Quick check, and it tests whether you can read a ratio. A monohybrid cross gives offspring in a one to two to one phenotype ratio, and the middle group looks different from both parents, but importantly it's not a blend of them. Which inheritance pattern is this, and how do you know? Pause and reason it through. Okay, step by step. A one to two to one phenotype ratio immediately tells you the heterozygote has its own distinct phenotype, otherwise you'd see three to one. So that rules out simple dominance straight away. Now we just have to choose between incomplete dominance and co-dominance. The clue is that the middle group is not an intermediate blend. Incomplete dominance would give a blend, like pink. Since instead we're seeing both products together rather than an average, that's the signature of co-dominance. So the answer is co-dominance."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Not every cross gives 3:1; read how the heterozygote is expressed first.",
+        "Incomplete dominance gives an intermediate heterozygote and a 1:2:1 phenotype ratio.",
+        "Co-dominance expresses both allele products together, like A and B antigens in AB blood.",
+        "Multiple alleles means more than two forms in the population, but two per individual.",
+        "ABO blood groups show co-dominance and multiple alleles at once."
+      ],
+      "finalPrompt": "Identifying a pattern? Read the phenotype ratio: 3:1 is simple, 1:2:1 is incomplete or co-dominant.",
+      "durationInFrames": 1854,
+      "caption": "Five takeaways: read the heterozygote, incomplete, co-dominance, multiple alleles, ABO.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, not every monohybrid cross gives three to one, so always read how the heterozygote is expressed before you interpret the square. Second, incomplete dominance gives an intermediate heterozygote, like pink, and a one to two to one phenotype ratio. Third, co-dominance expresses both allele products together, like the A and B antigens in AB blood, with no blending. Fourth, multiple alleles means more than two forms of a gene exist in the population, though each individual still carries only two. And fifth, the ABO blood group shows both co-dominance and multiple alleles at the same time. So whenever you're identifying a pattern, read the phenotype ratio first, three to one is simple dominance, one to two to one is incomplete or co-dominant. See you next lesson."
+      }
+    }
+  ]
+}

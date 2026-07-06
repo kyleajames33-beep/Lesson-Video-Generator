@@ -1,0 +1,202 @@
+{
+  "title": "Long-Term Population Change",
+  "subtitle": "Why biology sets the possibilities but society decides the outcome",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 18",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6 — Genetic Change",
+  "syllabusDotPoints": [
+    "interpret a range of secondary sources to assess the influence of social, economic and cultural contexts on a range of biotechnologies"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-13",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Does artificial manipulation of DNA have the potential to change populations forever?",
+  "lessonIntent": "Students can explain how social, economic, cultural and regulatory contexts shape the real-world uptake and long-term population impact of biotechnologies.",
+  "examSkill": "Assess a biotechnology's long-term population impact by weighing scientific effectiveness against social, economic, cultural and regulatory uptake.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, long-term population change. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Long-Term Population Change (Year 12 Biology, Module 6, Lesson 18)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "When the full picture takes 50 years",
+      "body": "Borlaug's 1966 wheat may have saved a billion people, yet it locked farming into heavy irrigation and fertiliser.",
+      "callout": "The biggest agricultural experiment in history helped and harmed at once.",
+      "image": "bioM6L18LongTermChange",
+      "durationInFrames": 870,
+      "caption": "The Green Revolution frames long-term consequences that only emerge over decades.",
+      "voiceover": {
+        "text": "Norman Borlaug's semi-dwarf wheat varieties, released in 1966, tripled global yields, and are credited with saving roughly one billion people from famine. But by 2019, those same varieties had also locked agriculture into a system dependent on irrigation, now around seventy percent of global freshwater use, and on synthetic nitrogen fertiliser, now responsible for about sixty percent of global nitrous oxide emissions. So the largest agricultural biotechnology experiment in history delivered extraordinary benefits and unforeseen long-term costs at the same time. Today's question, how do you evaluate a biotechnology's long-term consequences, when the full picture only emerges after fifty years?"
+      }
+    },
+    {
+      "id": "concept-uptake",
+      "type": "concept",
+      "heading": "Impact depends on uptake, not just biology",
+      "body": "A technology only changes populations if it is actually adopted. Working in a lab is not enough.",
+      "bullets": [
+        {"text": "Expensive, regulated, rejected or restricted technologies have limited impact, even if they work."},
+        {"text": "Affordable, accepted and widely adopted technologies can influence populations over time."},
+        {"text": "So population impact depends on real-world uptake, not just scientific effectiveness."}
+      ],
+      "secondary": "This is why two equally effective technologies can have completely different effects: one is taken up widely, the other sits unused.",
+      "callout": "Effectiveness sets the ceiling; uptake decides the result.",
+      "durationInFrames": 930,
+      "caption": "Population impact depends on uptake, not just whether the technology works.",
+      "voiceover": {
+        "text": "Let's start with the central idea, which reframes the whole inquiry question. A biotechnology only changes populations if it is actually taken up and used, working in a laboratory is not enough. Think it through. A technology that is expensive, heavily regulated, publicly rejected, or legally restricted will have limited population impact, even if it works perfectly in biological terms. Whereas a technology that is affordable, accepted and widely adopted can genuinely influence populations over time. So the real determinant of population impact is uptake in the real world, not just scientific effectiveness. That's why two equally effective technologies can have completely different effects, one is embraced and spreads, the other sits on a shelf unused."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "works", "label": "Works biologically"},
+          {"id": "uptake", "label": "Real-world uptake?"},
+          {"id": "impact", "label": "Population change"},
+          {"id": "none", "label": "Little impact"}
+        ],
+        "edges": [
+          {"from": "works", "to": "uptake"},
+          {"from": "uptake", "to": "impact"},
+          {"from": "uptake", "to": "none"}
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Social context: how public values, trust and acceptance shape use of a technology."},
+        {"text": "Economic context: how cost, funding, ownership and access affect uptake."},
+        {"text": "Cultural context: how beliefs, traditions and identity influence responses."},
+        {"text": "Regulation: rules and governance that allow, limit or condition a technology."},
+        {"text": "Long-term population change: a lasting shift in genetic patterns or outcomes across generations."}
+      ],
+      "callout": "Four contexts decide uptake: social, economic, cultural, regulatory.",
+      "durationInFrames": 930,
+      "caption": "Social, economic and cultural context, regulation, long-term population change.",
+      "voiceover": {
+        "text": "Five terms shape this lesson. Social context is how public values, trust and acceptance shape whether a technology is actually used. Economic context is how cost, funding, ownership and access affect uptake, who can afford it and who owns it. Cultural context is how beliefs, traditions, identity and community knowledge influence people's responses to a biotechnology. Regulation is the rules and governance that allow, limit or condition the use of a technology. And long-term population change is a lasting shift in genetic patterns or biological outcomes across many generations, the thing we're ultimately trying to predict. Hold onto those four contexts, social, economic, cultural and regulatory, because together they decide uptake."
+      }
+    },
+    {
+      "id": "concept-contexts",
+      "type": "concept",
+      "heading": "Four contexts shape adoption",
+      "body": "Adoption of any biotechnology is shaped by four kinds of context working together.",
+      "bullets": [
+        {"text": "Social: public trust and acceptance."},
+        {"text": "Economic: cost, patents and ownership."},
+        {"text": "Cultural: beliefs, ethics, traditions and identity."},
+        {"text": "Regulatory: laws and policy that permit or restrict use."}
+      ],
+      "secondary": "All four can amplify, redirect or restrict the biological changes a technology would otherwise produce, and Indigenous and community perspectives matter because they affect land use, species management and food systems.",
+      "callout": "Context can amplify a change, redirect it, or shut it down.",
+      "durationInFrames": 960,
+      "caption": "Social, economic, cultural and regulatory contexts together shape biotechnology adoption.",
+      "voiceover": {
+        "text": "Now the four contexts in action, because they work together, not in isolation. Social context is about public trust and acceptance, whether people are willing to use a technology at all. Economic context is about cost, patents and ownership, including who profits and who can access it. Cultural context is about beliefs, ethics, traditions and identity, which can make the same technology welcome in one community and rejected in another. And regulatory context is the laws and policy that permit or restrict use. All four can amplify a biological change, redirect it, or shut it down entirely. And Indigenous and community perspectives are a real part of this, because they affect land use, species management, food systems and cultural identity, and ownership structures further shape who actually benefits."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": ["Context", "Question it raises"],
+        "rows": [
+          ["Social", "Do people trust and accept it?"],
+          ["Economic", "Who can afford and owns it?"],
+          ["Cultural", "Does it fit beliefs and identity?"],
+          ["Regulatory", "Do laws permit or restrict it?"]
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Why uptake differs between countries",
+      "question": "Two countries are offered the same effective GM crop. Country A adopts it widely; Country B bans it. Using the four contexts, explain how identical biology can lead to opposite long-term population outcomes.",
+      "coachNote": "Hold the biology constant and vary the contexts to explain the difference in uptake.",
+      "steps": [
+        "The biology is identical, so effectiveness alone cannot explain the difference.",
+        "Economic: if Country A finds it affordable and Country B faces patent or cost barriers, uptake diverges.",
+        "Social and cultural: public trust and cultural acceptance may differ, driving adoption or rejection.",
+        "Regulatory: Country B's laws may prohibit it despite similar scientific risk assessments.",
+        "Answer: identical biology gives opposite outcomes because social, economic, cultural and regulatory contexts shape uptake, and only adoption drives long-term population change."
+      ],
+      "durationInFrames": 1140,
+      "caption": "Identical biology yields opposite outcomes because context decides uptake.",
+      "voiceover": {
+        "text": "Let's work a case that shows the principle clearly. Two countries are offered the same effective GM crop. Country A adopts it widely, Country B bans it. Using the four contexts, explain how identical biology can lead to opposite long-term population outcomes. First, note that the biology is identical, so effectiveness on its own cannot explain the difference, something else must. Economic context, if Country A finds it affordable while Country B faces patent or cost barriers, uptake immediately diverges. Social and cultural context, public trust and cultural acceptance may differ sharply, driving adoption in one and rejection in the other. Regulatory context, Country B's laws may simply prohibit it, even though the scientific risk assessments are similar. So identical biology produces opposite outcomes, because the social, economic, cultural and regulatory contexts shape uptake, and only actual adoption drives long-term population change."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The consensus trap",
+      "body": "Trap: thinking that scientific consensus on safety means public acceptance will automatically follow.",
+      "secondary": "Public acceptance depends on trust, cultural values, perceived fairness and historical experience with technology, not just scientific evidence. GM crops are accepted in some countries and banned in others despite similar scientific risk assessments, reflecting different social, cultural and regulatory contexts.",
+      "mistakeTag": "Why evidence does not guarantee adoption",
+      "callout": "Safe in the data is not the same as accepted by the public.",
+      "durationInFrames": 930,
+      "caption": "Scientific consensus on safety does not guarantee public acceptance or uptake.",
+      "voiceover": {
+        "text": "Here's the trap. Thinking that once there's scientific consensus on a biotechnology's safety, public acceptance will automatically follow. It won't, not on its own. Public acceptance depends on trust, on cultural values, on perceived fairness, and on a community's historical experience with technology, not purely on the scientific evidence. The clearest proof is genetically modified crops, which are accepted in some countries and banned in others, despite broadly similar scientific risk assessments. The difference isn't the science, it's the social, cultural and regulatory context. So in an answer, never assume that proving something is safe will make people use it. Safe in the data is simply not the same as accepted by the public."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A gene therapy is shown to work but is extremely expensive and available only in a few wealthy countries. A student says it will change the human population. Evaluate that claim.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Working biologically sets the ceiling, but population change needs widespread uptake.",
+        "Extreme cost and limited availability mean very low uptake across the global population.",
+        "Economic and access barriers therefore restrict its long-term population impact.",
+        "It may affect small, wealthy subgroups, not the population as a whole.",
+        "Answer: the claim overreaches; without affordable, broad uptake the population-level effect is limited, however effective the therapy is."
+      ],
+      "durationInFrames": 990,
+      "caption": "An effective but inaccessible therapy has limited population impact without broad uptake.",
+      "voiceover": {
+        "text": "Quick check. A gene therapy is shown to work, but it's extremely expensive and available only in a few wealthy countries. A student says it will change the human population. Evaluate that claim. Pause and reason it through. Okay. Working biologically sets the ceiling on what's possible, but actually changing a population requires widespread uptake. Here the therapy is extremely expensive and barely available, which means very low uptake across the global population. So economic and access barriers strongly restrict its long-term population impact, no matter how well it works. At most it might affect small, wealthy subgroups, not the population as a whole. So the claim overreaches, without affordable, broad uptake the population-level effect is limited, however effective the therapy is. Effectiveness and impact are not the same thing."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Population impact depends on uptake, not just scientific effectiveness.",
+        "Four contexts shape uptake: social, economic, cultural, regulatory.",
+        "Indigenous and community perspectives and ownership shape who benefits.",
+        "Scientific consensus on safety does not guarantee public acceptance.",
+        "DNA manipulation can change populations long-term, but it is biologically possible and socially mediated."
+      ],
+      "finalPrompt": "Assessing long-term impact? Weigh effectiveness against social, economic, cultural and regulatory uptake.",
+      "durationInFrames": 930,
+      "caption": "Five takeaways: uptake over effectiveness, four contexts, ownership, acceptance, possible but mediated.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, population impact depends on uptake, not just on scientific effectiveness. Second, four contexts shape that uptake, social, economic, cultural and regulatory. Third, Indigenous and community perspectives, and ownership structures like patents, shape who actually benefits. Fourth, scientific consensus on safety does not guarantee public acceptance. And fifth, the answer to the big inquiry question, artificial manipulation of DNA can change populations over the long term, but it's biologically possible and socially mediated. Whenever you assess long-term impact, weigh effectiveness against social, economic, cultural and regulatory uptake. See you next lesson."
+      }
+    }
+  ]
+}

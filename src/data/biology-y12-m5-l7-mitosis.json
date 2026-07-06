@@ -1,0 +1,264 @@
+{
+  "title": "Mitosis — Maintaining Genetic Stability",
+  "subtitle": "How somatic cells copy themselves without changing the code",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "model the process of mitosis and explain its role in growth, repair and maintaining genetic stability in somatic cells"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Why is it important for genetic material to be replicated exactly?",
+  "lessonIntent": "Students can model the stages of mitosis and explain how it maintains chromosome number and genetic stability in somatic cells.",
+  "examSkill": "Sequence the stages of mitosis and explain why daughter cells are genetically identical to the parent.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, mitosis, the cell division that copies cells without changing the code. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Mitosis — Maintaining Genetic Stability (Year 12 Biology, Module 5, Lesson 7)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The cells that never stopped dividing",
+      "body": "HeLa cells, taken in 1951, have divided in labs for over 70 years, an estimated 60,000 times. Mitosis, unregulated, can repeat almost forever.",
+      "callout": "What keeps every copy genetically the same as the last?",
+      "image": "bioM5L7HelaCells",
+      "durationInFrames": 1698,
+      "caption": "HeLa cells show mitosis repeating indefinitely; normally it copies cells with great fidelity.",
+      "voiceover": {
+        "text": "In nineteen fifty one, cancer cells taken from a patient named Henrietta Lacks were put into culture, and astonishingly they just kept dividing. Those cells, now called HeLa, have been dividing in laboratories for over seventy years, an estimated sixty thousand times, and they helped develop the polio vaccine. A normal human body cell has forty six chromosomes, and the HeLa line is living proof that mitosis, when it is unregulated, can repeat almost indefinitely. But here is the thing that should puzzle you. Across all those divisions, each new cell is essentially a faithful copy of the one before. So today's question is, how does mitosis copy a cell so reliably, keeping the chromosome number and the genetic information stable every single time?"
+      }
+    },
+    {
+      "id": "concept-replication",
+      "type": "concept",
+      "heading": "Copy first, then divide",
+      "body": "DNA replicates before mitosis, producing identical sister chromatids ready to be shared out.",
+      "bullets": [
+        {
+          "text": "Before mitosis begins, the cell replicates all its DNA."
+        },
+        {
+          "text": "Each chromosome becomes two identical sister chromatids, joined together."
+        },
+        {
+          "text": "This guarantees a full copy of each chromosome for both daughter cells."
+        }
+      ],
+      "secondary": "Without prior replication, the daughter cells would inherit incomplete information. The copying we saw last lesson is the essential first step of cell division.",
+      "callout": "Replication first means both daughters get a complete set.",
+      "durationInFrames": 1914,
+      "caption": "DNA replicates before mitosis, forming sister chromatids so each daughter gets a full copy.",
+      "voiceover": {
+        "text": "Let's start with the step that makes everything else possible, and it actually happens before mitosis even begins. The cell replicates all of its DNA, using exactly the semiconservative process we covered last lesson. Once that is done, each chromosome now exists as two identical copies, called sister chromatids, joined together at a central point. Picture each chromosome going from a single thread to an X shape, two identical halves. Why does the cell do this first? Because it guarantees there is a full, complete copy of every chromosome ready to hand to each of the two daughter cells. If the cell skipped replication and just divided, the daughter cells would inherit incomplete genetic information, which would be a disaster. So the rule is, copy first, then divide. That prior copying is the essential first step of the whole process."
+      }
+    },
+    {
+      "id": "concept-stages",
+      "type": "concept",
+      "heading": "The four stages of mitosis",
+      "body": "Prophase, metaphase, anaphase and telophase separate the chromatids into two stable nuclei.",
+      "bullets": [
+        {
+          "text": "Prophase: chromosomes condense and become visible; the nucleus breaks down."
+        },
+        {
+          "text": "Metaphase: chromosomes line up along the cell's equator."
+        },
+        {
+          "text": "Anaphase: sister chromatids separate and move to opposite poles."
+        },
+        {
+          "text": "Telophase and cytokinesis: new nuclei form and the cytoplasm divides into two cells."
+        }
+      ],
+      "secondary": "The two daughter cells end with the same chromosome number as the parent. A handy order to remember the stages: prophase, metaphase, anaphase, telophase.",
+      "callout": "Condense, align, separate, split. Same number out as in.",
+      "durationInFrames": 1872,
+      "caption": "Prophase, metaphase, anaphase, telophase produce two nuclei with the parent's chromosome number.",
+      "voiceover": {
+        "text": "Now the division itself, which runs in four stages, and you need them in order. Prophase comes first. The chromosomes, already copied into sister chromatids, condense and become visible, and the membrane around the nucleus breaks down. Then metaphase, where the chromosomes line up neatly along the equator, the middle of the cell. Next is anaphase, the dramatic one, where the sister chromatids are pulled apart and dragged to opposite poles, opposite ends of the cell. And finally telophase, together with cytokinesis, where a new nucleus forms at each pole and the cytoplasm itself divides, pinching the cell into two separate daughter cells. The crucial outcome is that each daughter cell ends up with the same chromosome number as the parent cell. A simple way to remember the order is the first letters, prophase, metaphase, anaphase, telophase."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "p",
+            "label": "Prophase"
+          },
+          {
+            "id": "m",
+            "label": "Metaphase"
+          },
+          {
+            "id": "a",
+            "label": "Anaphase"
+          },
+          {
+            "id": "t",
+            "label": "Telophase"
+          }
+        ],
+        "edges": [
+          {
+            "from": "p",
+            "to": "m"
+          },
+          {
+            "from": "m",
+            "to": "a"
+          },
+          {
+            "from": "a",
+            "to": "t"
+          }
+        ]
+      }
+    },
+    {
+      "id": "concept-stability",
+      "type": "concept",
+      "heading": "Mitosis maintains chromosome number",
+      "body": "Daughter cells have the same chromosome count as the parent, and are genetically very similar.",
+      "bullets": [
+        {
+          "text": "Daughter cells have the same chromosome number as the parent somatic cell."
+        },
+        {
+          "text": "They are genetically very similar to the cells they replace, supporting internal continuity."
+        },
+        {
+          "text": "Mitosis does not routinely create variation."
+        }
+      ],
+      "secondary": "This is the opposite of meiosis, which we meet next lesson. Mitosis is for stable copies; meiosis is for varied gametes.",
+      "callout": "Same number, same information. Stability is the whole point.",
+      "durationInFrames": 1914,
+      "caption": "Mitosis keeps the chromosome number constant and produces genetically similar cells.",
+      "voiceover": {
+        "text": "So what is mitosis actually for? The headline is genetic stability. Because the DNA was copied first and then shared evenly, the two daughter cells have the same chromosome number as the parent somatic cell, no gain, no loss. And they are genetically very similar to the cells they are replacing, which is exactly what you want when you are healing a wound or replacing worn out cells, you want like for like. The key contrast to hold onto, and we will develop it next lesson, is that mitosis does not routinely create variation. That is deliberate. Mitosis is the division for stable, faithful copies, used in growth, repair and asexual reproduction. Meiosis, which is coming up, is the completely different division that does create variation, for making gametes. Same number and same information is the whole point of mitosis."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Mitosis: division producing two daughter cells with the same chromosome number as the parent."
+        },
+        {
+          "text": "Somatic cell: a body cell that is not a gamete."
+        },
+        {
+          "text": "Chromosome: a condensed DNA-protein structure carrying hereditary information."
+        },
+        {
+          "text": "Chromatid: one of two identical copies of a replicated chromosome, joined before separation."
+        },
+        {
+          "text": "Cytokinesis: division of the cytoplasm to form separate daughter cells."
+        },
+        {
+          "text": "Genetic stability: keeping the correct chromosome number and information in daughter cells."
+        }
+      ],
+      "callout": "These six terms describe faithful copying, not variation.",
+      "durationInFrames": 1818,
+      "caption": "Mitosis, somatic cell, chromosome, chromatid, cytokinesis and genetic stability defined.",
+      "voiceover": {
+        "text": "Let's pin down the vocabulary. Mitosis is cell division that produces two daughter cells with the same chromosome number as the parent. A somatic cell is a body cell, any cell that is not a gamete. A chromosome is a condensed structure of DNA and protein carrying hereditary information. A chromatid is one of the two identical copies of a replicated chromosome, joined together before they separate, so the two sister chromatids are the two halves of that X shape. Cytokinesis is the division of the cytoplasm itself, which actually pinches the cell into two separate daughter cells. And genetic stability is the maintenance of the correct chromosome number and the correct hereditary information in those daughter cells. Notice every one of these terms is about faithful copying, not about creating anything new."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Track the chromosome number",
+      "question": "A human somatic cell with 46 chromosomes undergoes mitosis. State the chromosome number in each daughter cell, and explain when the DNA was copied.",
+      "coachNote": "Replication happens before mitosis, so do not halve the number, mitosis keeps it constant.",
+      "steps": [
+        "Before mitosis, the cell replicates its DNA, making each of the 46 chromosomes into two sister chromatids.",
+        "In anaphase, sister chromatids separate, sending one full set to each pole.",
+        "After cytokinesis, each daughter cell receives 46 chromosomes, the same as the parent.",
+        "Mitosis maintains chromosome number; it does not halve it, that is meiosis.",
+        "Answer: each daughter cell has 46 chromosomes, and the DNA was copied before mitosis began."
+      ],
+      "durationInFrames": 1902,
+      "caption": "Each daughter cell has 46 chromosomes; DNA was copied before mitosis, keeping the number constant.",
+      "voiceover": {
+        "text": "Let's track the chromosome number through mitosis, because students lose marks by halving it. A human somatic cell with forty six chromosomes undergoes mitosis. State the chromosome number in each daughter cell, and explain when the DNA was copied. Step one, before mitosis even starts, the cell replicates its DNA, so each of the forty six chromosomes becomes two identical sister chromatids joined together. Step two, in anaphase, those sister chromatids separate, sending one complete set toward each pole. Step three, after cytokinesis splits the cell, each daughter cell receives forty six chromosomes, exactly the same number as the parent. The key point, mitosis maintains the chromosome number, it does not halve it, halving is what meiosis does. So the answer, each daughter cell has forty six chromosomes, and the DNA was copied before mitosis began, not during it."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two mitosis traps",
+      "body": "Trap 1: thinking mitosis produces genetically different daughter cells. It produces cells genetically identical to each other and the parent; variation comes from meiosis.",
+      "secondary": "Trap 2: thinking mitosis only happens during early growth. It continues throughout life in tissues that renew, like skin, gut lining and blood, and in wound repair. Some cells, like neurons and cardiac muscle, have very limited mitotic capacity, which is why that damage is hard to repair.",
+      "mistakeTag": "Where mitosis marks vanish",
+      "callout": "Mitosis is for identical copies, and it runs all life long.",
+      "durationInFrames": 1902,
+      "caption": "Mitosis makes identical cells, not variation, and continues throughout life in renewing tissues.",
+      "voiceover": {
+        "text": "Two traps on mitosis. Trap one, thinking that mitosis produces genetically different daughter cells. It is the opposite. Mitosis produces two daughter cells that are genetically identical to each other and to the parent cell, barring the occasional replication error. Genetic diversity comes from meiosis, not mitosis, so never credit mitosis with creating variation. Trap two, thinking mitosis only happens during early growth, when you are a child. Not true. Mitosis continues throughout your whole life, in any tissue that needs ongoing renewal, your skin, the lining of your gut, your blood cells, and of course wound repair. The interesting flip side is that some cells, like neurons and cardiac muscle, have very limited mitotic capacity, which is exactly why damage to the brain or heart is so hard to repair. So, identical copies, and running all life long."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A skin wound heals by producing many new cells to replace damaged ones. Explain why mitosis, rather than meiosis, is the appropriate division, referring to chromosome number and genetic stability.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Wound repair needs new cells genetically identical to the skin cells being replaced.",
+        "Mitosis produces daughter cells with the same chromosome number as the parent, keeping them functional skin cells.",
+        "It maintains genetic stability, so the new cells behave just like the originals.",
+        "Meiosis would halve the chromosome number and create variation, useless for replacing body cells.",
+        "Answer: mitosis is correct because it keeps chromosome number and genetic information stable for like-for-like repair."
+      ],
+      "durationInFrames": 2214,
+      "caption": "Wound repair needs mitosis: identical cells with stable chromosome number, not meiosis.",
+      "voiceover": {
+        "text": "Quick check. A skin wound heals by producing many new cells to replace the damaged ones. Explain why mitosis, rather than meiosis, is the right division here, referring to chromosome number and genetic stability. Pause and reason it through. Right. Healing a wound needs new cells that are genetically identical to the skin cells being replaced, you want exact replacements, not something different. Mitosis delivers that, because it produces daughter cells with the same chromosome number as the parent, so they stay fully functional skin cells. It maintains genetic stability, meaning the new cells carry the same information and behave just like the originals. Now contrast meiosis, it would halve the chromosome number and deliberately create variation, which is exactly what you do not want when replacing body cells, you would get cells with the wrong chromosome number. So the answer, mitosis is correct because it keeps both the chromosome number and the genetic information stable, giving you like for like repair."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "DNA replicates before mitosis, making identical sister chromatids.",
+        "Stages in order: prophase, metaphase, anaphase, telophase, then cytokinesis.",
+        "Daughter cells have the same chromosome number as the parent and are genetically identical.",
+        "Mitosis is for growth, repair and asexual reproduction, where stability is the goal.",
+        "Mitosis does not create variation, and it continues throughout life."
+      ],
+      "finalPrompt": "Mitosis question? Remember: copy first, divide once, chromosome number stays the same.",
+      "durationInFrames": 1656,
+      "caption": "Five takeaways: replication first, the four stages, stable number, functions, no variation.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, DNA replicates before mitosis begins, making each chromosome into two identical sister chromatids. Second, the stages run in order, prophase, metaphase, anaphase, telophase, finishing with cytokinesis. Third, the daughter cells have the same chromosome number as the parent and are genetically identical to it. Fourth, mitosis is used for growth, repair and some asexual reproduction, all situations where genetic stability is the goal. And fifth, mitosis does not routinely create variation, and it keeps running throughout your whole life. Whenever you get a mitosis question, remember the rhythm, copy first, divide once, and the chromosome number stays the same. Next lesson, meiosis, the very different division that halves the number and deliberately creates variation."
+      }
+    }
+  ]
+}

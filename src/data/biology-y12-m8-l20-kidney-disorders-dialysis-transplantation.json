@@ -1,0 +1,327 @@
+{
+  "title": "Kidney Disorders, Dialysis and Transplantation",
+  "subtitle": "How the nephron works, what destroys it, and how dialysis filters blood",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 20",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "explain a range of causes of disorders by investigating the structures and functions of the relevant organs, for example the kidney",
+    "investigate technologies that are used to assist with the effects of a disorder, including kidney dialysis and transplantation (ACSBL100)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How can technologies be used to assist people who experience disorders?",
+  "lessonIntent": "Students can describe nephron function, identify the main causes of kidney failure, and explain how dialysis filters blood by diffusion across a semi-permeable membrane.",
+  "examSkill": "Describe nephron filtration and reabsorption, name the leading causes of kidney failure, and explain haemodialysis using concentration gradients.",
+  "productionNotes": "Part A of a 2-part split of Lesson 20. Covers the nephron, the causes of kidney failure, and how dialysis works. Part B covers transplantation, evaluation, traps and practice. Bridge scene at the end teases Part B.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, kidney failure, how the nephron works, what destroys it, and how dialysis filters the blood. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Kidney Disorders, Dialysis and Transplantation, Part A (Year 12 Biology, Module 8, Lesson 20)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A kidney built from sausage casings",
+      "body": "In 1943, a doctor built the first dialysis machine from sausage skins and a water pump. It worked.",
+      "callout": "Why does losing your kidneys need such a dramatic replacement?",
+      "image": "bioM8L20DialysisMachine",
+      "durationInFrames": 1386,
+      "caption": "Willem Kolff's 1943 dialysis machine led to today's treatment for 13,000 Australians at about $80,000 per year.",
+      "voiceover": {
+        "text": "In 1943, in Nazi-occupied Netherlands, a doctor named Willem Kolff did something extraordinary. He built the world's first dialysis machine out of sausage casings, orange juice cans, and a water pump, trying to filter a dying patient's blood. His first patient died, but two years later his machine achieved the first successful dialysis treatment in history. Today, around thirteen thousand Australians are on dialysis, each spending roughly twelve hours a week hooked to a machine doing what their kidneys no longer can, at about eighty thousand dollars per patient every year, one of the most expensive chronic treatments in all of medicine. So here's the question that drives today's lesson. Why does losing your kidneys require such a dramatic, continuous mechanical replacement? The answer is that the kidney is the master homeostatic organ, and when it fails, every system it controls, your blood volume, your salts, your acidity, your waste removal, fails with it."
+      }
+    },
+    {
+      "id": "concept-nephron",
+      "type": "concept",
+      "heading": "Inside the nephron",
+      "body": "Each kidney holds about a million nephrons, and each one filters blood then reclaims what the body needs.",
+      "bullets": [
+        {
+          "text": "The glomerulus filters blood under pressure, pushing small molecules into the filtrate."
+        },
+        {
+          "text": "The proximal tubule reabsorbs most water, all glucose, and most ions back into the blood."
+        },
+        {
+          "text": "The loop of Henle, distal tubule and collecting duct fine-tune water and salt."
+        }
+      ],
+      "secondary": "The collecting duct does the final water reabsorption under hormonal control, producing concentrated urine, the same ADH and aldosterone homeostasis you met in Module 7. Crucially, the nephron also makes hormones, which dialysis cannot replace.",
+      "callout": "Filter everything small, then reclaim what you need.",
+      "durationInFrames": 1692,
+      "caption": "The nephron filters at the glomerulus then reabsorbs through the tubules and collecting duct.",
+      "voiceover": {
+        "text": "Let's go inside the kidney's working unit, the nephron, because every technology in this lesson is trying to copy what it does. Each kidney holds about a million nephrons, and each one works in two stages, filter, then reclaim. First, filtration. Blood enters a tight knot of capillaries called the glomerulus, where high pressure forces small molecules, water, glucose, urea and ions, out into a capsule, while large proteins and blood cells stay behind in the blood. Second, reabsorption, which happens along the tubules. The proximal convoluted tubule does the bulk work, reclaiming about sixty five percent of the water, all of the glucose, and most of the ions back into the blood. Then the loop of Henle sets up a salt gradient in the kidney, and the distal tubule and collecting duct fine-tune the final water and salt levels. The collecting duct does the last water reabsorption under hormonal control, producing concentrated urine, and that's the same A D H and aldosterone homeostasis you met in Module 7. One more crucial point, the nephron also makes hormones, and that's something dialysis simply cannot replace, which matters later."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "glom",
+            "label": "Glomerulus"
+          },
+          {
+            "id": "pct",
+            "label": "Proximal tubule"
+          },
+          {
+            "id": "loop",
+            "label": "Loop of Henle"
+          },
+          {
+            "id": "dct",
+            "label": "Distal tubule"
+          },
+          {
+            "id": "duct",
+            "label": "Collecting duct"
+          }
+        ],
+        "edges": [
+          {
+            "from": "glom",
+            "to": "pct"
+          },
+          {
+            "from": "pct",
+            "to": "loop"
+          },
+          {
+            "from": "loop",
+            "to": "dct"
+          },
+          {
+            "from": "dct",
+            "to": "duct"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms run through kidney failure and its treatment, so lock them in before we filter anything.",
+      "bullets": [
+        {
+          "text": "Nephron: the functional unit of the kidney, about a million per kidney."
+        },
+        {
+          "text": "Glomerulus: the capillary knot where blood is filtered under pressure."
+        },
+        {
+          "text": "GFR: glomerular filtration rate, a measure of how well the kidneys filter."
+        },
+        {
+          "text": "Haemodialysis: filtering blood through an external semi-permeable membrane."
+        },
+        {
+          "text": "Immunosuppressants: drugs that lower immune activity to prevent transplant rejection."
+        }
+      ],
+      "callout": "The unit, the filter, the filtering score, the machine, the anti-rejection drugs.",
+      "durationInFrames": 1206,
+      "caption": "Nephron, glomerulus, GFR, haemodialysis, immunosuppressants.",
+      "voiceover": {
+        "text": "Let's pin down five terms you'll use all lesson. The nephron is the functional unit of the kidney, and each kidney contains about a million of them. The glomerulus is the knot of capillaries inside the nephron where blood is filtered under pressure. G F R, the glomerular filtration rate, is a measure of how well the kidneys are filtering, and it's the number doctors use to stage kidney disease, with end-stage failure below fifteen. Haemodialysis is the filtering of blood through an external machine containing a semi-permeable membrane. And immunosuppressants are drugs that reduce immune activity to prevent the body rejecting a transplanted organ. Keep G F R in mind as the headline number for kidney function, because it's how the severity of kidney disease is described, and it appears throughout this topic."
+      }
+    },
+    {
+      "id": "concept-causes",
+      "type": "concept",
+      "heading": "What destroys the kidney",
+      "body": "Several diseases progressively destroy nephrons, and the two biggest are conditions you have already studied.",
+      "bullets": [
+        {
+          "text": "Type 2 diabetes is the leading cause, with high glucose damaging glomerular capillaries."
+        },
+        {
+          "text": "Long-term high blood pressure is second, scarring the glomerular membranes."
+        },
+        {
+          "text": "Polycystic kidney disease is a genetic cause, with cysts replacing working tissue."
+        }
+      ],
+      "secondary": "Autoimmune glomerulonephritis and repeated infections also scar nephrons, while acute kidney injury from dehydration or toxins can sometimes recover. End-stage renal disease is defined as a GFR below 15.",
+      "callout": "Diabetes and hypertension cause most kidney failure.",
+      "durationInFrames": 1596,
+      "caption": "Diabetes (~37%) and hypertension (~25%) lead; PKD is genetic; AKI can recover.",
+      "voiceover": {
+        "text": "So what actually destroys the kidney? Chronic kidney disease affects about ten percent of Australians, and end-stage renal disease, full kidney failure, is defined as a G F R below fifteen. The leading cause, and notice it's a disease you've already met, is type 2 diabetes. Years of high blood glucose damage the delicate glomerular capillaries, a process called diabetic nephropathy, and it accounts for around thirty seven percent of cases. The second biggest cause is long-term high blood pressure, which damages the glomerular filtering membranes over decades, about twenty five percent of cases. Third is polycystic kidney disease, a genetic, autosomal dominant condition where fluid-filled cysts slowly replace the functional nephron tissue, linking back to the genetic disorders we covered earlier. There's also autoimmune glomerulonephritis, where immune complexes inflame and scar the filtering membranes, and repeated kidney infections that scar the cortex. And finally acute kidney injury, sudden damage from severe dehydration or toxins, which, unlike the others, can sometimes recover if treated quickly. So diabetes and hypertension between them cause the majority of kidney failure."
+      }
+    },
+    {
+      "id": "concept-dialysis",
+      "type": "concept",
+      "heading": "How dialysis filters blood",
+      "body": "Dialysis replaces filtration by letting wastes diffuse across a semi-permeable membrane down a concentration gradient.",
+      "bullets": [
+        {
+          "text": "Wastes like urea diffuse from blood into dialysate across a semi-permeable membrane."
+        },
+        {
+          "text": "In haemodialysis, dialysate flows counter-current to blood to keep the gradient steep."
+        },
+        {
+          "text": "Peritoneal dialysis uses the body's own abdominal lining as the membrane."
+        }
+      ],
+      "secondary": "The dialysate is made with normal plasma levels of useful solutes, so urea, which is high in the blood, diffuses out, while glucose, equal on both sides, stays. Proteins and cells are too large to cross, so they remain in the blood.",
+      "callout": "Diffusion does the work; the gradient does the choosing.",
+      "durationInFrames": 2016,
+      "caption": "Dialysis removes wastes by diffusion across a semi-permeable membrane; counter-current flow keeps the gradient steep.",
+      "voiceover": {
+        "text": "Now the first technology, dialysis, and the key is one principle you already know, diffusion across a semi-permeable membrane. Here's the idea. You pass the patient's blood along one side of a semi-permeable membrane, and a special fluid called dialysate along the other side. Waste solutes like urea are highly concentrated in the blood and almost absent in the dialysate, so they diffuse down their concentration gradient, out of the blood and into the dialysate, which is then thrown away. There are two forms. In haemodialysis, blood is drawn out through a surgically made connection called a fistula and pumped through an external dialyser, the artificial kidney. And here's a clever detail, the dialysate flows counter-current, in the opposite direction to the blood, which keeps the concentration gradient steep along the whole membrane, maximising waste removal. Patients typically do this three times a week, about four hours a session. The second form is peritoneal dialysis, which uses the body's own abdominal lining, the peritoneum, as the membrane, with dialysate run into the belly through a catheter, and it can be done at home. And the elegant bit, the dialysate is made with normal plasma levels of useful solutes, so urea, high in the blood, diffuses out, while glucose, equal on both sides, stays put, and proteins and cells are simply too big to cross."
+      }
+    },
+    {
+      "id": "concept-transplant",
+      "type": "concept",
+      "heading": "Transplant and the immune problem",
+      "body": "A transplant replaces the whole organ and restores full function, but the immune system treats the donor kidney as foreign.",
+      "bullets": [
+        {
+          "text": "A donor kidney is HLA tissue-matched and connected to the recipient's blood vessels and bladder."
+        },
+        {
+          "text": "The recipient must take immunosuppressant drugs for life to prevent rejection."
+        },
+        {
+          "text": "Rejection can be hyperacute in minutes, acute over weeks, or chronic over years."
+        }
+      ],
+      "secondary": "This creates the central trade-off of transplant medicine. Suppressing the immune system stops rejection but raises the risk of infections and certain cancers. A transplant restores hormone production and continuous function that dialysis cannot.",
+      "callout": "Restores full function, but at the cost of lifelong immunosuppression.",
+      "durationInFrames": 1728,
+      "caption": "A transplant restores full kidney function but needs HLA matching and lifelong immunosuppression to avoid rejection.",
+      "voiceover": {
+        "text": "Now the second technology, kidney transplantation, which replaces the failed organ with a donor kidney from a living or deceased donor. Unlike dialysis, which only filters, a transplant restores nearly all kidney functions, including the hormones, continuously. The procedure tissue-matches donor and recipient using H L A markers to reduce rejection, then implants the new kidney in the pelvis, connecting it to blood vessels and the bladder, while the old kidneys are usually left in place. But here's the catch that dominates transplant medicine, the immune system recognises the donor kidney as foreign and tries to destroy it. So the recipient must take immunosuppressant drugs for the rest of their life. Rejection comes in three forms, hyperacute, within minutes, from pre-formed antibodies, prevented by cross-matching before surgery, acute, over days to weeks, a T-cell attack treated with extra immunosuppression, and chronic, a slow scarring over months to years. And this sets up the central trade-off, suppressing the immune system stops rejection, but it also raises the risk of infections and certain cancers, especially skin cancer and lymphoma. So a transplant gives you full function back, but at the price of lifelong immunosuppression."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Criterion",
+          "Dialysis",
+          "Transplant"
+        ],
+        "rows": [
+          [
+            "Function restored",
+            "Filtration only",
+            "Filtration + hormones"
+          ],
+          [
+            "Lifestyle",
+            "~12 h/week, fatigue",
+            "Near-normal after recovery"
+          ],
+          [
+            "Main risk",
+            "Access infection, clotting",
+            "Rejection, immunosuppression"
+          ],
+          [
+            "Availability",
+            "Widely available",
+            "3–5 year wait, shortage"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "How haemodialysis clears urea",
+      "question": "Explain how haemodialysis removes urea from the blood. Refer to the semi-permeable membrane, the concentration gradient, and why the dialysate flows counter-current.",
+      "coachNote": "Build the explanation around diffusion: the membrane selects by size, the gradient drives the movement, counter-current keeps the gradient steep.",
+      "steps": [
+        "Blood flows along one side of a semi-permeable membrane and dialysate along the other.",
+        "Urea is high in the blood and near zero in the dialysate, so it diffuses down its gradient across the membrane.",
+        "The membrane's pores let small wastes like urea and excess ions through, but keep large proteins and cells in the blood.",
+        "Dialysate flows counter-current, opposite to the blood, so the gradient stays steep along the whole membrane.",
+        "Answer: urea diffuses from blood to dialysate down a gradient kept steep by counter-current flow, while proteins stay behind ✓"
+      ],
+      "durationInFrames": 1860,
+      "caption": "Urea diffuses across the membrane down its gradient; counter-current flow keeps that gradient steep.",
+      "voiceover": {
+        "text": "Let's build the full explanation of how haemodialysis clears urea, because this is a guaranteed exam question and the marks are in the detail. Frame it around diffusion. Step one, the setup. The patient's blood flows along one side of a semi-permeable membrane inside the dialyser, and dialysate flows along the other side. Step two, the driving force. Urea is highly concentrated in the blood and almost absent from the fresh dialysate, so urea diffuses down its concentration gradient, across the membrane, from blood into dialysate, where it's carried away. Step three, the selectivity. The membrane's pore size is the key, it's large enough to let small waste molecules like urea, creatinine and excess potassium pass through, but small enough to keep the large plasma proteins and blood cells in the blood where they belong. Step four, the clever part, counter-current flow. The dialysate is run in the opposite direction to the blood, so that fresh, urea-free dialysate always meets blood that still has urea, keeping the gradient steep along the entire length of the membrane. If they flowed the same way, the concentrations would equalise partway and removal would stall. So, urea diffuses out down a gradient that counter-current flow keeps steep, while proteins stay behind."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: saying dialysis cures kidney disease. It only replaces filtration, and cannot make the hormones, like erythropoietin, that healthy kidneys produce.",
+      "secondary": "Trap 2: thinking a transplant recipient can stop immunosuppressants once healed. The donor kidney is foreign for life, so the drugs are lifelong. Trap 3: believing a transplanted kidney lasts forever. Median graft survival is around 12 to 15 years, so many patients eventually return to dialysis or re-list.",
+      "mistakeTag": "Where kidney marks vanish",
+      "callout": "Dialysis is not a cure, immunosuppression is for life, grafts do not last forever.",
+      "durationInFrames": 1428,
+      "caption": "Dialysis filters but does not cure; immunosuppression is lifelong; a graft lasts years, not forever.",
+      "voiceover": {
+        "text": "Three traps that quietly cost marks every year. Trap one, saying dialysis cures kidney disease. It does not. Dialysis only replaces the filtration function, and even that just three times a week, not continuously. Crucially, it cannot produce the hormones a healthy kidney makes, like erythropoietin for red blood cells and activated vitamin D, nor control acid-base balance as precisely. So dialysis is a bridge, not a cure. Trap two, thinking a transplant recipient can stop their immunosuppressant drugs once they've healed. They can't. The donor kidney remains foreign tissue for the rest of their life, so without the drugs the immune system would attack it. Immunosuppression is lifelong. Trap three, believing a transplanted kidney lasts forever. It usually doesn't. The median graft survival is around twelve to fifteen years, so many patients eventually face declining function and a return to dialysis or going back on the transplant waiting list. Nail those three and kidney questions become easy marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Aisha is 42, otherwise healthy, with a GFR of 11 and failing kidneys. She can start haemodialysis now or wait 4 to 5 years for a transplant. Which generally gives the better long-term outcome, and what must she weigh up?",
+      "pausePrompt": "Pause and weigh it up.",
+      "answerSteps": [
+        "A transplant restores continuous, near-full kidney function including hormones, while dialysis only filters part-time.",
+        "Transplant gives better long-term survival and quality of life, and at 42 and healthy she tolerates surgery well.",
+        "But she must weigh the 4 to 5 year wait, the surgical risk, and lifelong immunosuppression with its infection and cancer risk.",
+        "Haemodialysis, or home peritoneal dialysis, can bridge the gap while she waits for a donor.",
+        "Answer: transplantation generally offers the best outcome for Aisha, with dialysis as a bridge until a kidney is available ✓"
+      ],
+      "durationInFrames": 1872,
+      "caption": "For a healthy 42-year-old, transplant generally wins long-term, with dialysis bridging the wait.",
+      "voiceover": {
+        "text": "Quick check, and this is exactly the kind of evaluate question the exam loves. Aisha is forty two, otherwise healthy, with a G F R of just eleven and failing kidneys. She can start haemodialysis now, or wait four to five years for a transplant. Which generally gives the better long-term outcome, and what must she weigh up? Pause and weigh it up. Okay, let's reason it through. First, effectiveness. A transplant restores continuous, near-complete kidney function, including the hormones, whereas dialysis only filters, and only part-time, three sessions a week. Second, the outcomes. Transplantation gives better long-term survival and a near-normal quality of life, and importantly, at forty two and otherwise healthy, Aisha would tolerate the surgery and the drugs well. So transplant is generally the better long-term choice for her. But, third, she has to weigh the downsides, the four to five year wait for a donor, the surgical risk, and lifelong immunosuppression, which raises her risk of infections and certain cancers. And fourth, the practical answer, she doesn't have to choose one or the other, haemodialysis, or home peritoneal dialysis, can bridge the gap while she waits. So for Aisha, transplant offers the best outcome, with dialysis keeping her alive until a kidney is available."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "The nephron filters at the glomerulus, then reabsorbs water, glucose and ions along the tubules.",
+        "Diabetes and hypertension cause most kidney failure; end-stage disease is a GFR below 15.",
+        "Dialysis removes wastes by diffusion across a semi-permeable membrane down a concentration gradient.",
+        "A transplant restores full function but needs HLA matching and lifelong immunosuppression.",
+        "Dialysis filters only and is not a cure; transplant grafts last around 12 to 15 years, not forever."
+      ],
+      "finalPrompt": "Evaluating kidney treatments? Weigh continuous function and quality of life against surgical risk, immunosuppression and donor availability.",
+      "durationInFrames": 1476,
+      "caption": "Five takeaways: the nephron, the causes, dialysis by diffusion, transplant trade-offs, and cure versus management.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, the nephron filters blood at the glomerulus under pressure, then reabsorbs water, glucose and ions back into the blood along the tubules, with the collecting duct doing the final hormone-controlled water reabsorption. Second, the big causes of kidney failure are type 2 diabetes and high blood pressure, and end-stage renal disease is defined as a G F R below fifteen. Third, dialysis removes wastes by diffusion across a semi-permeable membrane down a concentration gradient, with counter-current flow keeping that gradient steep in haemodialysis. Fourth, a transplant restores full kidney function, including hormones, but it needs H L A matching and lifelong immunosuppression to prevent rejection. And fifth, dialysis only filters and is not a cure, while a transplanted kidney typically lasts around twelve to fifteen years, not forever. So whenever you evaluate kidney treatments, weigh continuous function and quality of life against the surgical risk, the immunosuppression, and donor availability. See you next lesson."
+      }
+    }
+  ]
+}

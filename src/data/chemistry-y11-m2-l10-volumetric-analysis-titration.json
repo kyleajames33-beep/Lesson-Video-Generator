@@ -1,0 +1,216 @@
+{
+  "title": "Volumetric Analysis and Titration",
+  "subtitle": "Finding an unknown concentration drop by drop",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 10",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "conduct a titration to determine the concentration of an unknown solution using a standard solution and the mole ratio of the reaction"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": [
+    "CH11-9",
+    "CH11/12-4",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "How are chemicals in solutions measured?",
+  "lessonIntent": "Students can average concordant titres and use the mole ratio to calculate an unknown concentration from a titration.",
+  "examSkill": "Average concordant titres only; find moles of the standard with n = cV; apply the mole ratio; divide by aliquot volume for the unknown concentration; scale aliquot results to the whole sample.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, titration, finding an unknown concentration drop by drop. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Volumetric Analysis and Titration (Year 11 Chemistry, Module 2, Lesson 10)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Every antacid tablet was tested this way",
+      "body": "Wine acidity, blood pH, drug batches — all checked by reacting against a known solution.",
+      "callout": "A known solution reveals an unknown one.",
+      "durationInFrames": 690,
+      "caption": "Titration measures an unknown concentration using a standard of known concentration.",
+      "voiceover": {
+        "text": "OK, here's something you've benefited from without knowing. Every antacid tablet you've ever taken was tested by titration before it left the factory. So was the acidity of your favourite wine, the pH of a blood sample, and every batch of pharmaceutical drug. The idea is beautiful. If you have one solution whose concentration you know exactly, you can use it to find the concentration of another solution you don't know, just by reacting them carefully and measuring the volume. That's titration, and today you'll learn to run the numbers."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "How titration works",
+      "body": "You add a standard solution from a burette until it has exactly reacted with the unknown.",
+      "bullets": [
+        {
+          "text": "The standard solution has a precisely known concentration."
+        },
+        {
+          "text": "An indicator changes colour at the endpoint, when reaction is complete."
+        },
+        {
+          "text": "The volume delivered is the titre. You repeat for concordant results."
+        }
+      ],
+      "secondary": "Concordant titres agree within 0.10 mL. You average those, never the rough first run, for an accurate volume.",
+      "callout": "Precision comes from concordant titres, not a single reading.",
+      "durationInFrames": 1110,
+      "caption": "Add standard from a burette to the endpoint; average concordant titres.",
+      "voiceover": {
+        "text": "Here's how it works. You put your unknown solution in a flask, and you slowly add a standard solution from a burette, drop by drop. The standard has a precisely known concentration. An indicator in the flask changes colour at the endpoint, the moment the reaction is exactly complete. The volume of standard you delivered is called the titre. Now, you never trust a single run. Your first attempt is a rough titre, just to find the ballpark. Then you repeat carefully until you get concordant titres, ones that agree within nought-point-one of a millilitre. You average those concordant runs, and that average is the accurate volume you calculate with."
+      },
+      "diagram": {
+        "type": "titrationSetup"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Equivalence point: where the acid and base have exactly reacted."
+        },
+        {
+          "text": "Endpoint: where the indicator changes colour; should match it closely."
+        },
+        {
+          "text": "Titre: the burette volume delivered to reach the endpoint."
+        },
+        {
+          "text": "Concordant titres: runs agreeing within 0.10 mL; average these only."
+        }
+      ],
+      "callout": "Endpoint is what you see; equivalence point is what's true.",
+      "durationInFrames": 960,
+      "caption": "Equivalence point, endpoint, titre, concordant titres.",
+      "voiceover": {
+        "text": "Quick vocabulary, and the exam is fussy about these. The equivalence point is where stoichiometrically equal amounts of acid and base have reacted, the true completion of the reaction. The endpoint is where the indicator actually changes colour, and a good indicator makes the endpoint match the equivalence point closely. The titre is the volume of standard you delivered from the burette to reach the endpoint. And concordant titres are the repeat runs that agree within nought-point-one of a millilitre. You average only those, never including the rough first run."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The pathway",
+      "body": "Average the titre, find moles of the standard, apply the mole ratio, divide by the unknown's volume.",
+      "bullets": [
+        {
+          "text": "Moles of standard = c × V, using the average concordant titre."
+        },
+        {
+          "text": "Apply the mole ratio from the balanced equation."
+        },
+        {
+          "text": "Unknown concentration = its moles ÷ its volume."
+        }
+      ],
+      "secondary": "Never assume a 1:1 ratio. A diprotic acid like H₂SO₄ reacts with twice as much base.",
+      "callout": "Check the balanced equation for the real mole ratio.",
+      "durationInFrames": 1020,
+      "caption": "n = cV for the standard → mole ratio → unknown concentration.",
+      "voiceover": {
+        "text": "Here's the pathway, and it's all tools you already have. First, average your concordant titres to get an accurate volume. Second, find the moles of the standard solution using n equals c times V. Third, apply the mole ratio from the balanced equation to get the moles of the unknown. Fourth, divide those moles by the volume of the unknown to get its concentration. The one place students lose marks is the mole ratio. Do not assume it's one to one. A diprotic acid like sulfuric acid reacts with twice as much base, so the ratio is two to one. Always read it off the balanced equation."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Finding c(NaOH)",
+      "question": "25.00 mL of NaOH is titrated against 0.1000 mol L⁻¹ HCl. Concordant titres: 18.45, 18.50, 18.48 mL. Find c(NaOH).",
+      "coachNote": "NaOH + HCl is 1:1. Average the concordant titres.",
+      "steps": [
+        "Average titre = (18.45 + 18.50 + 18.48) ÷ 3 = 18.48 mL",
+        "n(HCl) = c × V = 0.1000 × 0.01848 = 1.848 × 10⁻³ mol",
+        "Ratio NaOH : HCl = 1 : 1, so n(NaOH) = 1.848 × 10⁻³ mol",
+        "V(NaOH) = 25.00 ÷ 1000 = 0.02500 L",
+        "c(NaOH) = 1.848 × 10⁻³ ÷ 0.02500 = 0.0739 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1470,
+      "caption": "Average titre 18.48 mL gives c(NaOH) = 0.0739 mol L⁻¹.",
+      "voiceover": {
+        "text": "Let's run a titration. Twenty-five millilitres of sodium hydroxide is titrated against nought-point-one mole per litre hydrochloric acid. The concordant titres are eighteen-point-four-five, eighteen-point-five-zero, and eighteen-point-four-eight millilitres. Find the concentration of the sodium hydroxide. Step one, average the concordant titres. They add to fifty-five-point-four-three, divided by three is eighteen-point-four-eight millilitres. Step two, moles of the standard acid. n equals c times V. Nought-point-one times nought-point-zero-one-eight-four-eight is one-point-eight-four-eight times ten to the minus three moles. Step three, the mole ratio. Sodium hydroxide and hydrochloric acid react one to one, so the base has the same moles. Step four, the volume of base was twenty-five millilitres, nought-point-zero-two-five litres. Step five, concentration equals moles over volume, which gives nought-point-zero-seven-three-nine moles per litre."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "A 2:1 ratio",
+      "question": "20.00 mL of 0.2500 mol L⁻¹ NaOH is titrated against H₂SO₄. Average titre 12.50 mL. Find c(H₂SO₄).",
+      "coachNote": "2NaOH + H₂SO₄ → ratio is 2:1. This is the trap.",
+      "steps": [
+        "n(NaOH) = c × V = 0.2500 × 0.02000 = 5.000 × 10⁻³ mol",
+        "Ratio 2 NaOH : 1 H₂SO₄, so n(H₂SO₄) = 5.000 × 10⁻³ ÷ 2 = 2.500 × 10⁻³ mol",
+        "V(H₂SO₄) = 12.50 ÷ 1000 = 0.01250 L",
+        "c(H₂SO₄) = 2.500 × 10⁻³ ÷ 0.01250",
+        "Answer: c(H₂SO₄) = 0.2000 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "Halving for the 2:1 ratio gives c(H₂SO₄) = 0.2000 mol L⁻¹.",
+      "voiceover": {
+        "text": "Now the one where the ratio matters. Twenty millilitres of nought-point-two-five mole per litre sodium hydroxide is titrated against sulfuric acid, with an average titre of twelve-point-five millilitres. Find the concentration of the sulfuric acid. Step one, moles of the sodium hydroxide we know. Nought-point-two-five times nought-point-zero-two is five times ten to the minus three moles. Step two, the mole ratio, and here's the trap. Sulfuric acid is diprotic, so two sodium hydroxides react with one sulfuric acid. To get moles of acid, divide the base moles by two, giving two-point-five times ten to the minus three moles. Step three, the acid volume was twelve-point-five millilitres, nought-point-zero-one-two-five litres. Step four, concentration equals moles over volume, which is nought-point-two moles per litre. If you'd assumed one to one, you'd have doubled the answer. The balanced equation always tells you the ratio."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: assuming a 1:1 mole ratio without checking the balanced equation.",
+      "secondary": "Trap 2: including the rough titre in your average. Only average concordant runs. Trap 3: forgetting to scale up from the aliquot to the whole sample when asked for total amount.",
+      "mistakeTag": "Where titration marks slip",
+      "callout": "Check the ratio, average only concordant titres, scale the aliquot up.",
+      "durationInFrames": 1230,
+      "caption": "Don't assume 1:1, exclude the rough titre, and scale aliquot to whole sample.",
+      "voiceover": {
+        "text": "Three traps. Trap one, assuming a one to one mole ratio. So many titrations involve a diprotic acid or a metal hydroxide where the ratio isn't one to one. Always read it off the balanced equation. Trap two, including the rough titre in your average. The first run is just to find the ballpark, and it's usually over-shot. Average only the concordant runs that agree within nought-point-one of a millilitre. Trap three, forgetting to scale up. If you titrated a twenty-five millilitre aliquot taken from a two hundred and fifty millilitre flask, the flask holds ten times as much. When a question asks for the total amount in the original sample, multiply up by that factor."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "25.00 mL of HCl is neutralised by 20.00 mL of 0.150 mol L⁻¹ NaOH. Find c(HCl).",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "n(NaOH) = c × V = 0.150 × 0.02000 = 3.00 × 10⁻³ mol",
+        "Ratio HCl : NaOH = 1 : 1, so n(HCl) = 3.00 × 10⁻³ mol",
+        "V(HCl) = 25.00 ÷ 1000 = 0.02500 L",
+        "c(HCl) = 3.00 × 10⁻³ ÷ 0.02500",
+        "Answer: c(HCl) = 0.120 mol L⁻¹ ✓"
+      ],
+      "durationInFrames": 1170,
+      "caption": "1:1 ratio gives c(HCl) = 0.120 mol L⁻¹.",
+      "voiceover": {
+        "text": "Quick check. Twenty-five millilitres of hydrochloric acid is neutralised by twenty millilitres of nought-point-one-five mole per litre sodium hydroxide. Find the concentration of the acid. Pause and work it through. Right, let's check it. Step one, moles of the base we know. Nought-point-one-five times nought-point-zero-two is three times ten to the minus three moles. Step two, the ratio. Hydrochloric acid and sodium hydroxide are one to one, so the acid has the same moles. Step three, the acid volume was twenty-five millilitres, nought-point-zero-two-five litres. Step four, concentration equals moles over volume, which gives nought-point-one-two moles per litre. Clean one to one, so no halving needed this time."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Titration finds an unknown concentration using a standard solution.",
+        "Average only concordant titres, never the rough run.",
+        "Find moles of the standard with n = cV.",
+        "Apply the mole ratio from the balanced equation — never assume 1:1.",
+        "Scale aliquot results up to the whole sample when asked."
+      ],
+      "finalPrompt": "Before you divide: did I use the right mole ratio?",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: standard solution, concordant titres, n=cV, mole ratio, scale up.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, titration finds an unknown concentration by reacting it with a standard solution of known concentration. Second, average only your concordant titres, never the rough first run. Third, find the moles of the standard using n equals c times V. Fourth, apply the mole ratio from the balanced equation, and never assume it's one to one. And fifth, if you titrated an aliquot, scale your result up to the whole sample when the question asks for the total. Get the ratio right and titration calculations are very predictable. See you next lesson."
+      }
+    }
+  ]
+}

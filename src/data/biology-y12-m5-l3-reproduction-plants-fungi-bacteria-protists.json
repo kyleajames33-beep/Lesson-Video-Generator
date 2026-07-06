@@ -1,0 +1,253 @@
+{
+  "title": "Reproduction in Plants, Fungi, Bacteria and Protists",
+  "subtitle": "One goal, many strategies, from spores to runners to fission",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "analyse sexual and asexual methods of reproduction in plants, fungi, bacteria and protists, including the role of pollination and vegetative propagation"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does reproduction ensure the continuity of a species?",
+  "lessonIntent": "Students can distinguish pollination from fertilisation and compare the sexual and asexual reproductive strategies of plants, fungi, bacteria and protists.",
+  "examSkill": "Name a reproductive method for a non-animal organism and justify why it suits the organism's conditions.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today we go beyond animals, into plants, fungi, bacteria and protists. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Reproduction in Plants, Fungi, Bacteria and Protists (Year 12 Biology, Module 5, Lesson 3)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A virgin birth in a reptile",
+      "body": "A female Komodo dragon named Flora laid 11 eggs without ever mating, and the hatchlings were genetically derived from her alone.",
+      "callout": "If one parent can do it, what counts as sexual reproduction?",
+      "image": "bioM5L3KomodoParthenogenesis",
+      "durationInFrames": 1698,
+      "caption": "Flora the Komodo dragon reproduced by parthenogenesis, producing offspring from one parent.",
+      "voiceover": {
+        "text": "In two thousand six, zoologists at Chester Zoo confirmed something strange. A female Komodo dragon named Flora laid eleven eggs, despite never having mated with a male. DNA profiling, published in Nature, showed all seven hatchlings were genetically derived from Flora alone, the first vertebrate documented to switch to this kind of virgin birth in captivity. The process is called parthenogenesis, reproduction from an unfertilised egg. Flora sits at one end of a huge spectrum of ways living things make new individuals without two parents, from budding in yeast, to binary fission in bacteria, to runners spreading across a strawberry patch. Today we tour reproduction in plants, fungi, bacteria and protists, and one distinction trips up nearly everyone, the difference between pollination and fertilisation."
+      }
+    },
+    {
+      "id": "concept-plants",
+      "type": "concept",
+      "heading": "Plants: pollination is not fertilisation",
+      "body": "Pollination only moves pollen to the stigma. Fertilisation is the later fusion of gametes in the ovule.",
+      "bullets": [
+        {
+          "text": "Pollination: transfer of pollen from anther to stigma. It comes before fertilisation."
+        },
+        {
+          "text": "Fertilisation: the male gamete fuses with the female gamete in the ovule, forming a zygote."
+        },
+        {
+          "text": "The zygote develops into a seed, the sexual route producing varied offspring."
+        }
+      ],
+      "secondary": "Plants also reproduce asexually by vegetative propagation, using runners, tubers and bulbs, producing genetically identical offspring without any fertilisation.",
+      "callout": "Pollination delivers the pollen; fertilisation is the fusion that follows.",
+      "durationInFrames": 1860,
+      "caption": "Pollination precedes fertilisation; vegetative propagation is the asexual plant route.",
+      "voiceover": {
+        "text": "Let's start with flowering plants, and the distinction that examiners love to test. Pollination is not fertilisation. Pollination is simply the transfer of pollen from the anther, the male part, to the stigma, the female part. That is it, just delivery. Fertilisation comes afterwards, when a male gamete travels down and fuses with the female gamete inside the ovule, forming a zygote, which then develops into a seed. So pollination is the postal service, and fertilisation is the actual fusion. That is the sexual route, and it produces genetically varied seeds. But plants can also skip all of that and reproduce asexually, through vegetative propagation, using structures like runners, tubers and bulbs. Those produce genetically identical offspring, clones of the parent, with no fertilisation at all. A strawberry plant sending out runners is doing exactly that."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "p",
+            "label": "Pollination"
+          },
+          {
+            "id": "f",
+            "label": "Fertilisation"
+          },
+          {
+            "id": "s",
+            "label": "Seed"
+          }
+        ],
+        "edges": [
+          {
+            "from": "p",
+            "to": "f"
+          },
+          {
+            "from": "f",
+            "to": "s"
+          }
+        ]
+      }
+    },
+    {
+      "id": "concept-microbes",
+      "type": "concept",
+      "heading": "Fungi, bacteria and protists: fast cellular copying",
+      "body": "These groups lean heavily on rapid asexual reproduction to multiply quickly.",
+      "bullets": [
+        {
+          "text": "Fungi: budding in yeast, or spores in moulds for dispersal and survival."
+        },
+        {
+          "text": "Bacteria: binary fission, copying the chromosome then splitting into two cells."
+        },
+        {
+          "text": "Protists: mostly binary fission or budding, with no gametes or fertilisation."
+        }
+      ],
+      "secondary": "Spores are a clever extra: they let fungi survive harsh conditions and disperse widely, before growing into new individuals when conditions improve.",
+      "callout": "No mate, no gametes, just rapid cellular division.",
+      "durationInFrames": 1764,
+      "caption": "Fungi use budding and spores; bacteria and protists mostly use binary fission.",
+      "voiceover": {
+        "text": "Now the microbes and fungi, where speed is everything. Fungi reproduce asexually in two main ways. Yeasts use budding, where a small bud grows off the parent cell and breaks away. Moulds release spores, and those spores are clever, because they let the fungus both survive harsh conditions and disperse widely on the wind, only growing into a new individual when they land somewhere suitable. Bacteria use binary fission. The single cell copies its chromosome, then splits straight down the middle into two daughter cells, no gametes and no fertilisation involved at all. Protists, the single celled eukaryotes, mostly do the same, using binary fission or budding. The common thread across all three groups is rapid asexual division, which lets a population explode in numbers whenever conditions are good."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Pollination: transfer of pollen from anther to stigma in flowering plants."
+        },
+        {
+          "text": "Fertilisation: fusion of male and female gametes to form a zygote."
+        },
+        {
+          "text": "Vegetative propagation: plant asexual reproduction using runners, bulbs, tubers or cuttings."
+        },
+        {
+          "text": "Budding: a new organism grows out from the body of the parent."
+        },
+        {
+          "text": "Spore: a reproductive cell that grows into a new organism in suitable conditions."
+        },
+        {
+          "text": "Binary fission: one cell replicates its DNA and divides into two daughter cells."
+        }
+      ],
+      "callout": "Six methods, two outcomes: varied offspring or clones.",
+      "durationInFrames": 1782,
+      "caption": "Pollination, fertilisation, vegetative propagation, budding, spore and binary fission defined.",
+      "voiceover": {
+        "text": "Let's lock down the vocabulary, because this lesson is full of named methods. Pollination is the transfer of pollen from anther to stigma in flowering plants. Fertilisation is the fusion of male and female gametes to form a zygote. Vegetative propagation is asexual reproduction in plants using structures like runners, bulbs, tubers or cuttings. Budding is when a new organism grows out from the body of the parent, as in yeast. A spore is a reproductive cell that can grow into a new organism under suitable conditions. And binary fission is when one cell replicates its DNA and then divides into two daughter cells. Notice the pattern. Pollination and fertilisation belong to the sexual route, producing variation, while vegetative propagation, budding, spores and binary fission are mostly asexual, producing clones."
+      }
+    },
+    {
+      "id": "concept-environment",
+      "type": "concept",
+      "heading": "Match the method to the conditions",
+      "body": "Asexual speed suits stable, resource-rich conditions. Sexual variation suits change and disease pressure.",
+      "bullets": [
+        {
+          "text": "Stable, resource-rich conditions favour fast asexual methods to build numbers."
+        },
+        {
+          "text": "Changing conditions or disease pressure favour the variation of sexual reproduction."
+        },
+        {
+          "text": "Reproductive success means enough offspring surviving, not just maximum numbers."
+        }
+      ],
+      "secondary": "Many plants hedge their bets, using both routes. Exam structure: name the method, then explain why it suits the specific conditions.",
+      "callout": "Always name the method, then justify it by the environment.",
+      "durationInFrames": 1836,
+      "caption": "Asexual suits stable conditions; sexual suits change. Name the method, then justify it.",
+      "voiceover": {
+        "text": "So with all these methods on the table, how do you decide which one wins? It is the same logic as lesson one, just applied more widely. Under stable, resource rich conditions, the fast asexual methods are excellent, because they let a population build numbers quickly without needing a mate. Under changing conditions, or when disease is spreading, the variation from sexual reproduction becomes the advantage, because some varied offspring may resist. And here is a subtle point examiners reward. Reproductive success does not mean producing the maximum number of offspring. It means producing enough offspring that survive to continue the species. Many plants actually hedge their bets, using both sexual and asexual routes. For the exam, the structure is always the same, name the method, then explain why it suits those specific conditions."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Name it, then justify it",
+      "question": "For each, name the reproductive method and whether it is sexual or asexual: (a) a mould releasing spores; (b) a bee carrying pollen between two flowers; (c) a potato growing new plants from its tubers.",
+      "coachNote": "Decide first if gametes fuse. Pollination alone is not fertilisation.",
+      "steps": [
+        "(a) A mould releasing spores is asexual reproduction by spore formation, with no gamete fusion.",
+        "(b) A bee moving pollen between flowers is pollination, a step toward sexual reproduction, fertilisation follows in the ovule.",
+        "(c) A potato growing plants from tubers is asexual vegetative propagation, producing clones.",
+        "Decision rule: gamete fusion means sexual; spores, tubers and fission without fusion mean asexual.",
+        "Answer: (a) asexual spores, (b) pollination leading to sexual reproduction, (c) asexual vegetative propagation."
+      ],
+      "durationInFrames": 1998,
+      "caption": "(a) asexual spores, (b) pollination toward sexual, (c) asexual vegetative propagation.",
+      "voiceover": {
+        "text": "Let's classify three cases, the exact style the exam uses. Remember to decide first whether gametes actually fuse, and that pollination on its own is not fertilisation. Part a, a mould releasing spores. That is asexual reproduction by spore formation, no gamete fusion involved, so the offspring are genetically identical. Part b, a bee carrying pollen between two flowers. That is pollination, which is a step toward sexual reproduction, but it is not fertilisation itself, the actual fusion happens later in the ovule. So we call this pollination leading to sexual reproduction. Part c, a potato growing new plants from its tubers. That is asexual vegetative propagation, producing clones of the parent potato. The decision rule, gamete fusion means sexual, while spores, tubers and binary fission without fusion are all asexual. So the answers are asexual spores, pollination leading to sexual reproduction, and asexual vegetative propagation."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two plant traps",
+      "body": "Trap 1: calling pollination the same as fertilisation. Pollination is only pollen transfer; fertilisation is the gamete fusion that follows.",
+      "secondary": "Trap 2: thinking self-pollination and cross-pollination give identical offspring. Self-pollination produces genetically uniform offspring with higher homozygosity, while cross-pollination brings in alleles from another plant, increasing variation. Many plants have evolved mechanisms specifically to prevent self-pollination.",
+      "mistakeTag": "Where plant reproduction marks vanish",
+      "callout": "Pollen transfer is not fusion; self and cross are not the same.",
+      "durationInFrames": 1740,
+      "caption": "Pollination is not fertilisation; self and cross-pollination differ in variation.",
+      "voiceover": {
+        "text": "Two traps, and the first is the big one for this whole lesson. Calling pollination the same as fertilisation. They are not the same. Pollination is just the transfer of pollen from anther to stigma, the delivery step. Fertilisation is the fusion of the gametes that happens afterwards, deep inside the ovule. If you blur those two together, you lose marks instantly. Trap two is more subtle. Thinking that self pollination and cross pollination produce identical offspring. They do not. Self pollination, where a plant pollinates itself, produces genetically uniform offspring and increases homozygosity. Cross pollination, between two different plants, brings in new alleles and increases variation. In fact many flowering plants have evolved specific mechanisms to prevent self pollination, precisely because that variation is so valuable."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A farmer propagates an apple variety only by grafting cuttings, never from seed. Explain what reproductive method this is, why the trees stay identical, and one long-term risk.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Grafting cuttings is vegetative propagation, an asexual method with no fertilisation.",
+        "Because there is no gamete fusion, every tree is a genetic clone of the original variety.",
+        "That keeps fruit quality uniform and predictable, which is why growers use it.",
+        "Long-term risk: the orchard has very low genetic variation, so one pest or disease could affect them all.",
+        "Answer: asexual vegetative propagation produces uniform clones, but low variation creates shared vulnerability."
+      ],
+      "durationInFrames": 2052,
+      "caption": "Grafting is asexual vegetative propagation: uniform clones, but shared disease vulnerability.",
+      "voiceover": {
+        "text": "Quick check, and this connects straight back to the banana logic. A farmer propagates an apple variety only by grafting cuttings, never from seed. Explain what reproductive method this is, why the trees stay identical, and one long term risk. Pause and reason it through. Right. Grafting cuttings is vegetative propagation, which is an asexual method, there is no fertilisation involved. Because there is no gamete fusion, every tree produced is a genetic clone of the original variety. That is exactly why growers do it, it keeps the fruit quality uniform and predictable, every apple the same. But the long term risk is the familiar one. The whole orchard has very low genetic variation, so if a new pest or disease can attack that one genotype, it can attack every tree at once. So the answer, asexual vegetative propagation produces uniform clones, but that low variation creates a shared vulnerability."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Pollination is pollen transfer; fertilisation is the gamete fusion that follows in the ovule.",
+        "Vegetative propagation is the asexual plant route, producing clones.",
+        "Fungi use budding and spores; bacteria and protists mostly use binary fission.",
+        "Self-pollination lowers variation; cross-pollination raises it.",
+        "Name the method, then justify it by the environment and reproductive success."
+      ],
+      "finalPrompt": "Classifying a non-animal? Check for gamete fusion, then tie the method to the conditions.",
+      "durationInFrames": 1782,
+      "caption": "Five takeaways: pollination vs fertilisation, asexual routes, self vs cross, justify by conditions.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, pollination is just pollen transfer, while fertilisation is the gamete fusion that follows in the ovule, never confuse the two. Second, vegetative propagation is the asexual route in plants, producing clones from runners, tubers and bulbs. Third, fungi reproduce by budding and spores, while bacteria and protists mostly use binary fission. Fourth, self pollination lowers variation by increasing homozygosity, while cross pollination raises variation by bringing in new alleles. And fifth, the exam structure is always to name the method, then justify it by the environment and by reproductive success. When you classify any non animal, check first for gamete fusion, then tie the method to the conditions. Next lesson, we go deep on mammalian reproduction, from fertilisation all the way to birth."
+      }
+    }
+  ]
+}

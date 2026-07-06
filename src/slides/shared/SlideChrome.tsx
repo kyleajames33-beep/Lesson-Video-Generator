@@ -7,6 +7,7 @@
 import {interpolate, useCurrentFrame} from 'remotion';
 import type {LessonData} from '../../lesson/types';
 import {FONT_MONO, TOK} from '../../styles/tokens';
+import {useAccent} from '../../styles/theme';
 import {ChapterRibbon} from './ChapterRibbon';
 
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
@@ -39,17 +40,26 @@ export const SlideChrome = ({
 	totalScenes,
 	hideTop,
 	hideBottom,
-	accent = TOK.chem1,
+	accent,
 	sceneType,
 }: SlideChromeProps) => {
 	const frame = useCurrentFrame();
+	const theme = useAccent();
+	const accentColor = accent ?? theme.accent;
 	// Chrome appears within first 400ms (motion principle #2)
 	const reveal = interpolate(frame, [0, 12], [0, 1], clamp);
 	const translateY = (1 - reveal) * 8;
 
 	const subject = lesson.subject.toUpperCase();
 	const moduleLabel = (lesson.syllabusModule || lesson.module).toUpperCase();
-	const yearLabel = `HSC · ${lesson.yearLevel.toUpperCase()}`;
+	// Extract just the lesson code from "Lesson 1A" → "1A", with fallback.
+	const lessonCode = lesson.lesson.replace(/^Lesson\s+/i, '');
+	const lessonPositionLabel = lesson.moduleLessonCount
+		? `L${lessonCode} OF ${lesson.moduleLessonCount}`
+		: null;
+	const yearLabel = lessonPositionLabel
+		? `${lessonPositionLabel} · HSC · ${lesson.yearLevel.toUpperCase()}`
+		: `HSC · ${lesson.yearLevel.toUpperCase()}`;
 	const dotLabel = dot ? `SYLLABUS · ${dot}` : null;
 	const counter =
 		sceneIndex && totalScenes
@@ -78,7 +88,7 @@ export const SlideChrome = ({
 					}}
 				>
 					<div style={{display: 'flex', alignItems: 'center', gap: 16}}>
-						<span style={{width: 10, height: 10, background: accent, borderRadius: 2}} />
+						<span style={{width: 10, height: 10, background: accentColor, borderRadius: 2}} />
 						<span style={{color: TOK.ink, fontWeight: 600}}>{subject}</span>
 						<span style={{color: TOK.rule}}>/</span>
 						<span>{moduleLabel}</span>
@@ -111,7 +121,9 @@ export const SlideChrome = ({
 					<div>{counter ?? <span style={{opacity: 0.4}}>·</span>}</div>
 				</div>
 			) : null}
-			{sceneType ? <ChapterRibbon sceneType={sceneType} /> : null}
+			{/* ChapterRibbon removed — was sitting above the bottom chrome and
+			    bleeding into slide content (callouts, footers). Phase info is
+			    redundant: the scene counter + slide type label already convey it. */}
 		</>
 	);
 };

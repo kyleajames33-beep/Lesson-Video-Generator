@@ -1,0 +1,192 @@
+{
+  "title": "Analysing Epidemiological Data — Pattern Recognition and Risk Factor Quantification, Part B",
+  "subtitle": "The evidence hierarchy and the traps to avoid",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "analyse patterns of non-infectious diseases in populations, including their incidence and prevalence (ACSBL114, ACSBL115)",
+    "investigate the treatment of non-infectious diseases and disorders by evaluating data and reported risk measures from clinical trials"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Why are epidemiological studies used?",
+  "lessonIntent": "Students can calculate relative risk, absolute risk reduction, relative risk reduction and number needed to treat from trial data, read a survival curve, and rank evidence by study type.",
+  "examSkill": "Convert a relative risk reduction headline into absolute risk reduction and number needed to treat, and judge whether a statistically significant result is clinically meaningful.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "lesson": "Lesson 13B",
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today: analysing epidemiological data, continued. Let's go."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Analysing Epidemiological Data — Pattern Recognition and Risk Factor Quantification, Part B (Year 12 Biology, Module 8, Lesson 13B)",
+      "voiceover": {
+        "text": "Analysing Epidemiological Data. Part B."
+      }
+    },
+    {
+      "id": "recap",
+      "type": "concept",
+      "heading": "Where we left off",
+      "body": "Quick recap from Part A: relative risk is a ratio, absolute risk reduction is the real drop, and number needed to treat is one over it.",
+      "bullets": [
+        {
+          "text": "Relative risk is the ratio of the two risks; the relative reduction is the proportional drop."
+        },
+        {
+          "text": "Absolute risk reduction is the real percentage-point fall in risk."
+        },
+        {
+          "text": "Number needed to treat is one divided by the absolute risk reduction."
+        }
+      ],
+      "callout": "Now we apply it.",
+      "durationInFrames": 1077,
+      "caption": "Quick recap from Part A: relative risk is a ratio, absolute risk reduction is the real drop, and number needed to treat is one over it.",
+      "voiceover": {
+        "text": "Welcome back. Quick recap from Part A. Relative risk is just the ratio of the two risks, while the absolute risk reduction is the real percentage-point drop, and the number needed to treat is one over that. We also saw how to read a survival curve, where a steeper fall is worse and the gap between the lines is the benefit. Right, now let's run the routine again and then judge how much the evidence is really worth."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "A diabetes drug trial",
+      "question": "A 3-year trial gives 1,000 people a new Type 2 diabetes drug and 1,000 a placebo. 60 in the drug group progress to diabetes; 100 in the placebo group do. Find the relative risk, absolute risk reduction, relative risk reduction and number needed to treat, then explain the number needed to treat in plain words.",
+      "coachNote": "Same routine: each group's risk first, then the four measures, then translate the number needed to treat.",
+      "steps": [
+        "Risks: drug = 60/1,000 = 0.06 (6%); placebo = 100/1,000 = 0.10 (10%).",
+        "Relative risk = 0.06 ÷ 0.10 = 0.60, so the drug group has 60% of the placebo risk.",
+        "Absolute risk reduction = 0.10 − 0.06 = 0.04 (4%); relative risk reduction = 0.04 ÷ 0.10 = 40%.",
+        "Number needed to treat = 1 ÷ 0.04 = 25.",
+        "Answer: RR 0.60, ARR 4%, RRR 40%, NNT 25 — treat 25 people for 3 years to prevent one extra case ✓"
+      ],
+      "durationInFrames": 2898,
+      "caption": "Diabetes drug: RR 0.60, ARR 4%, RRR 40%, NNT 25 over 3 years.",
+      "voiceover": {
+        "text": "Let's run the routine once more, because speed here wins marks. A three-year trial gives a thousand people a new Type 2 diabetes drug and another thousand a placebo. In the drug group, sixty people progress to diabetes. In the placebo group, a hundred do. Risks first. The drug risk is sixty over a thousand, which is zero point zero six, or six percent. The placebo risk is a hundred over a thousand, zero point one zero, or ten percent. Relative risk is six percent over ten percent, which is zero point six zero, so the drug group has sixty percent of the placebo risk. Absolute risk reduction is ten percent minus six percent, four percentage points. Relative risk reduction is that four over the ten, which is forty percent. And the number needed to treat is one over zero point zero four, which is twenty five. So in plain words, you treat twenty five people with this drug for three years to prevent one extra person developing diabetes. And given how serious diabetes complications are, a number needed to treat of twenty five over three years is genuinely worthwhile. Notice the same forty percent relative reduction means something very different when the baseline risk is high rather than tiny."
+      }
+    },
+    {
+      "id": "concept-evidence-hierarchy",
+      "type": "concept",
+      "heading": "Not all evidence is equal",
+      "body": "Studies are ranked by how well they control confounding, from systematic reviews at the top down to single case reports.",
+      "bullets": [
+        {
+          "text": "Systematic reviews and meta-analyses of trials sit at the top."
+        },
+        {
+          "text": "A single randomised controlled trial, then cohort, then case-control and cross-sectional."
+        },
+        {
+          "text": "A single case report or expert opinion is the weakest evidence."
+        }
+      ],
+      "secondary": "And beware the p-value. A result with p below 0.05 is unlikely to be chance, but it says nothing about size. With a huge sample, a trivial 0.3 millimetre of mercury blood-pressure drop can be statistically significant yet clinically useless.",
+      "callout": "Statistically significant is not the same as clinically important.",
+      "durationInFrames": 2871,
+      "caption": "The evidence hierarchy runs from systematic reviews down to case reports; significance is not importance.",
+      "voiceover": {
+        "text": "Now, not all evidence carries the same weight, and there's a clear hierarchy. At the very top sits the systematic review and meta-analysis, which pools many high-quality trials together, giving the greatest statistical power and smoothing out the quirks of any single study. Below that is a single well-designed randomised controlled trial, where randomisation controls the confounders. Then come cohort studies, which follow people forward, then case-control studies, then cross-sectional snapshots. And right at the bottom is the single case report or expert opinion, useful for spotting something new, but with no comparison group and wide open to bias. What decides the ranking is how well each design controls confounding and establishes cause. Now one more crucial idea, the p-value. A p-value below zero point zero five means the result is unlikely to be due to chance, but, and this is the trap, it tells you nothing about whether the effect is big enough to matter. With a massive sample, a drug might lower blood pressure by zero point three millimetres of mercury with a beautiful p-value, and yet no patient would ever notice. Statistical significance tells you an effect exists. Clinical significance, the absolute risk reduction and number needed to treat, tells you whether it's worth having."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Rank",
+          "Study type",
+          "Why there"
+        ],
+        "rows": [
+          [
+            "1 (best)",
+            "Systematic review of RCTs",
+            "Pools trials, greatest power"
+          ],
+          [
+            "2",
+            "Single RCT",
+            "Randomisation controls confounders"
+          ],
+          [
+            "3–5",
+            "Cohort, case-control, cross-sectional",
+            "Observational, residual confounding"
+          ],
+          [
+            "6 (weakest)",
+            "Case report / expert opinion",
+            "No comparison group"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: trusting a big relative risk reduction on its own. A 50% drop from a tiny baseline is almost nothing in absolute terms.",
+      "secondary": "Trap 2: treating a p-value below 0.05 as proof the result is important. It only means the effect is unlikely to be chance, not that it is large enough to matter. Trap 3: reading a survival curve that plateaus as proof those patients are cured. A flat line just means no further events were recorded, and censoring marks are patients whose outcome is unknown.",
+      "mistakeTag": "Where data-analysis marks vanish",
+      "callout": "Relative is not absolute, significant is not important, flat is not cured.",
+      "durationInFrames": 2429,
+      "caption": "Relative risk needs an absolute context; p < 0.05 is not importance; a flat survival curve is not a cure.",
+      "voiceover": {
+        "text": "Three traps that quietly cost marks every year. Trap one, trusting a big relative risk reduction all by itself. A fifty percent reduction sounds spectacular, but if the baseline risk was two in a hundred thousand, the absolute reduction is almost nothing and the number needed to treat runs into the tens of thousands. Always pair the relative figure with the absolute risk reduction and the number needed to treat. Trap two, treating a p-value below zero point zero five as proof that a result is important. It is not. It only tells you the effect is unlikely to be chance. With a large enough sample, a trivially small, useless difference can be statistically significant, so you must check the effect size as well. Trap three, reading a survival curve that flattens out as proof those patients are cured. A plateau just means no more events were recorded in the study window, and those little tick marks are censored patients whose outcomes we simply don't know. Nail those three and data questions turn into easy marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A headline says a drug 'cuts heart attack risk by 40%'. The trial shows 5 in 1,000 placebo patients had a heart attack over 5 years versus 3 in 1,000 on the drug. Find the absolute risk reduction and number needed to treat, and explain why the 40% figure can mislead.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Risks: placebo = 5/1,000 = 0.5%; drug = 3/1,000 = 0.3%.",
+        "Absolute risk reduction = 0.5% − 0.3% = 0.2 percentage points (0.002).",
+        "Number needed to treat = 1 ÷ 0.002 = 500.",
+        "Check the 40%: relative risk reduction = 0.2% ÷ 0.5% = 40%, the headline figure.",
+        "Answer: ARR 0.2%, NNT 500; the 40% is relative, so it hides how small the real benefit is ✓"
+      ],
+      "durationInFrames": 2760,
+      "caption": "ARR 0.2%, NNT 500: the 40% is a relative figure that hides a tiny absolute benefit.",
+      "voiceover": {
+        "text": "Quick check, and this is exactly the kind of headline you'll be asked to dismantle. A drug supposedly cuts heart attack risk by forty percent. The trial shows five in a thousand placebo patients had a heart attack over five years, versus three in a thousand on the drug. Find the absolute risk reduction and the number needed to treat, and explain why that forty percent can mislead. Pause and work it through. Okay. Risks first. Placebo is five in a thousand, which is zero point five percent. The drug is three in a thousand, zero point three percent. The absolute risk reduction is zero point five minus zero point three, which is just zero point two of a percentage point. The number needed to treat is one over zero point zero zero two, which is five hundred. Now let's see where forty percent came from. The relative risk reduction is that zero point two over the zero point five, which is forty percent. So the headline quoted the relative figure. It's true, but it hides the reality, that you'd treat five hundred people for five years to prevent a single heart attack. Same data, honest framing, very different decision."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Relative risk is the ratio of risks; relative risk reduction is the proportional drop.",
+        "Absolute risk reduction is the real percentage-point drop, and number needed to treat is one over it.",
+        "Always pair a relative figure with the absolute risk reduction and number needed to treat.",
+        "On a survival curve, a steeper fall is worse and the gap between lines is the benefit.",
+        "Statistical significance is not clinical importance, and systematic reviews top the evidence hierarchy."
+      ],
+      "finalPrompt": "Given a treatment claim? Convert it to absolute risk reduction and number needed to treat before you believe it.",
+      "durationInFrames": 2374,
+      "caption": "Five takeaways: the risk measures, the calculation routine, survival curves, significance, and the hierarchy.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, relative risk is the ratio of the two risks, while relative risk reduction is the proportional drop, and the two are easy to confuse. Second, the absolute risk reduction is the real percentage-point fall, and the number needed to treat is just one divided by it. Third, whenever you see a relative figure in a headline, immediately pair it with the absolute risk reduction and the number needed to treat, because that's what tells a patient anything useful. Fourth, on a survival curve, a steeper fall is the worse outcome and the vertical gap between the lines is the size of the benefit. And fifth, a small p-value means an effect is unlikely to be chance, not that it's important, and the strongest evidence of all is the systematic review at the top of the hierarchy. So whenever you meet a treatment claim, convert it into absolute risk reduction and number needed to treat before you believe it. See you next lesson."
+      }
+    }
+  ]
+}

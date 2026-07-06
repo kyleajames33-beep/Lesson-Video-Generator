@@ -1,0 +1,204 @@
+{
+  "title": "Biotechnology Synthesis — Evaluating Benefit, Risk and Biodiversity",
+  "subtitle": "A five-move framework for the marks the markers actually want",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 12",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6 — Genetic Change",
+  "syllabusDotPoints": [
+    "investigate the uses and applications of biotechnology (past, present and future), including: (ACSBL087)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-13",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How do genetic techniques affect Earth's biodiversity?",
+  "lessonIntent": "Students can build a balanced, evidence-based evaluation of a biotechnology that names benefit, risk, stakeholder impact, biodiversity level and a conditional conclusion.",
+  "examSkill": "Structure an extended-response evaluation of a biotechnology using five moves rather than listing facts or picking a one-sided verdict.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, how to actually evaluate a biotechnology. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Biotechnology Synthesis — Evaluating Benefit, Risk and Biodiversity (Year 12 Biology, Module 6, Lesson 12)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Would you release a gene drive?",
+      "body": "Gene-drive mosquitoes could suppress malaria, but they spread through a wild population and cannot be recalled.",
+      "callout": "A powerful benefit and an irreversible risk in the same decision.",
+      "image": "bioM6L12GeneDriveMosquito",
+      "durationInFrames": 870,
+      "caption": "The Target Malaria gene-drive case demands a structured evaluation, not a slogan.",
+      "voiceover": {
+        "text": "In 2015, the Target Malaria consortium proposed something extraordinary, releasing gene-drive mosquitoes to crash the populations that spread malaria, a disease that caused around two hundred and forty-seven million cases in 2022. In 2019 they ran the first African field trial in Burkina Faso. Here's what makes this so hard. A normal gene is inherited by about half the offspring, but a gene drive forces itself into nearly all of them, so it sweeps through a wild population and cannot be recalled. Enormous benefit, irreversible risk, in one decision. You can't answer that with a slogan, so today I'll give you the five-move framework the markers are really after."
+      }
+    },
+    {
+      "id": "concept-framework",
+      "type": "concept",
+      "heading": "The five-move evaluation",
+      "body": "A complete evaluation is not a list of facts. It runs five moves in order and ends with a position.",
+      "bullets": [
+        {"text": "Move 1: identify the benefit clearly and specifically."},
+        {"text": "Move 2: describe the risk or limitation."},
+        {"text": "Move 3: analyse stakeholder impact, who gains and who bears the cost."},
+        {"text": "Move 4: assess the biodiversity effect at a named level."},
+        {"text": "Move 5: reach a conditional conclusion, not a slogan."}
+      ],
+      "secondary": "The strongest answers are conditional, not one-sided. A catalogue of facts without a judgement stays in the middle bands.",
+      "callout": "Five moves, in order, always ending on a stated position.",
+      "durationInFrames": 990,
+      "caption": "Five moves: benefit, risk, stakeholder impact, biodiversity level, conditional conclusion.",
+      "voiceover": {
+        "text": "Here's the framework, and it works for any biotechnology they throw at you. A complete evaluation runs five moves in order. Move one, identify the benefit clearly and specifically, not just it helps people. Move two, describe the risk or limitation honestly. Move three, analyse stakeholder impact, because the same technology affects different groups differently, ask who gains and who carries the cost. Move four, assess the biodiversity effect at a named level, genetic, species or ecosystem, exactly as we practised last lesson. And move five, reach a conditional conclusion, a stated position, not a slogan. The key insight is that the strongest answers are conditional rather than one-sided, and a pile of facts with no judgement stays stuck in the middle bands."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "benefit", "label": "1. Benefit"},
+          {"id": "risk", "label": "2. Risk / limit"},
+          {"id": "stake", "label": "3. Stakeholders"},
+          {"id": "biodiv", "label": "4. Biodiversity level"},
+          {"id": "concl", "label": "5. Conditional conclusion"}
+        ],
+        "edges": [
+          {"from": "benefit", "to": "risk"},
+          {"from": "risk", "to": "stake"},
+          {"from": "stake", "to": "biodiv"},
+          {"from": "biodiv", "to": "concl"}
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Synthesis: combining several ideas and examples into one coherent judgement."},
+        {"text": "Evidence-based evaluation: a judgement backed by examples and conditions, not absolutes."},
+        {"text": "Trade-off: a benefit that comes linked to a cost, risk or competing consequence."},
+        {"text": "Stakeholder impact: how different groups are affected differently by the same technology."},
+        {"text": "Qualified judgement: a conclusion using conditional language such as in some contexts or provided that."}
+      ],
+      "callout": "Synthesis and qualified judgement earn the top marks, not recall.",
+      "durationInFrames": 930,
+      "caption": "Synthesis, evidence-based evaluation, trade-off, stakeholder impact, qualified judgement.",
+      "voiceover": {
+        "text": "Five terms underpin this. Synthesis is combining several ideas and examples into one coherent judgement, rather than treating them as separate dot points. Evidence-based evaluation is a judgement supported by relevant examples, conditions and limitations, not by sweeping absolutes. A trade-off is a situation where a benefit comes linked to a cost, a risk or a competing consequence, and almost every biotechnology has one. Stakeholder impact is the idea that the same technology affects different groups differently, a farmer, a patient and a seed company do not all experience it the same way. And a qualified judgement is a conclusion that uses conditional language, phrases like in some contexts, or provided that. Synthesis and qualified judgement are what actually earn the top marks, not recall."
+      }
+    },
+    {
+      "id": "concept-domains",
+      "type": "concept",
+      "heading": "Different domains, different issues",
+      "body": "You cannot force one universal verdict. Medical, agricultural and animal biotech raise different concerns.",
+      "bullets": [
+        {"text": "Medical: access, cost, safety and consent."},
+        {"text": "Agricultural: ownership, monoculture and biodiversity trade-offs."},
+        {"text": "Animal: welfare, necessity and harm."}
+      ],
+      "secondary": "Compare cases on their own terms. A response that judges insulin and gene drives by the same single rule will miss the specific issues each one raises.",
+      "callout": "Match the issues to the domain before you conclude.",
+      "durationInFrames": 870,
+      "caption": "Medical, agricultural and animal biotechnology each raise distinct evaluation issues.",
+      "voiceover": {
+        "text": "Now a refinement that lifts an answer. You cannot force one universal verdict across every kind of biotechnology, because different domains raise different issues. Medical biotechnology tends to raise questions of access, cost, safety and consent, who can afford it and did they agree to it. Agricultural biotechnology raises ownership, monoculture and biodiversity trade-offs, including who owns the seed. And animal biotechnology raises welfare, necessity and harm, is the suffering justified. So compare cases on their own terms. An answer that judges insulin production and a gene drive by the exact same single rule will simply miss the specific issues each one actually raises."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": ["Domain", "Key issues to weigh"],
+        "rows": [
+          ["Medical", "Access, cost, safety, consent"],
+          ["Agricultural", "Ownership, monoculture, biodiversity"],
+          ["Animal", "Welfare, necessity, harm"]
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Apply the framework to gene drives",
+      "question": "Use the five-move framework to evaluate releasing gene-drive mosquitoes to suppress malaria. Work through benefit, risk, stakeholders, biodiversity level, then a conditional conclusion.",
+      "coachNote": "Hit all five moves. The mark is lost by skipping stakeholders or ending without a position.",
+      "steps": [
+        "Benefit: suppressing the mosquito population could sharply cut malaria, which caused about 247 million cases in 2022.",
+        "Risk: a gene drive spreads through nearly all offspring instead of half, so the change is self-propagating and cannot be recalled.",
+        "Stakeholders: communities gain disease relief, but neighbouring regions and ecosystems inherit an irreversible change they did not choose.",
+        "Biodiversity level: removing a species can alter predators and food webs, an ecosystem-level effect that is hard to predict.",
+        "Conclusion: justified only under strict regulation, containment trials and consent, because the benefit is large but the risk is irreversible."
+      ],
+      "durationInFrames": 1170,
+      "caption": "A five-move evaluation of gene drives ends in a conditional, regulated conclusion.",
+      "voiceover": {
+        "text": "Let's run all five moves on the gene-drive case. Move one, benefit, suppressing the mosquito population could sharply cut malaria, which caused around two hundred and forty-seven million cases in 2022, so the upside is enormous. Move two, risk, the gene drive spreads through nearly all of the offspring instead of half, so it is self-propagating and cannot be recalled once it's out. Move three, stakeholders, affected communities gain real relief from disease, but neighbouring regions and ecosystems inherit an irreversible change they never agreed to. Move four, biodiversity, wiping out a species can ripple up through predators and food webs, an ecosystem-level effect that is genuinely hard to predict. And move five, the conditional conclusion, this is justified only under strict regulation, contained trials and genuine consent, because the benefit is large but the risk is irreversible. Notice that every move is present, and it ends on a clear position."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The big evaluation trap",
+      "body": "Trap 1: thinking a thorough answer just lists all the relevant facts. Listing is not evaluating.",
+      "secondary": "Trap 2: ending with there are pros and cons and stopping there, with no stated position. Trap 3: judging by production alone, biotechnology is good because it increases output, which confuses productivity with biodiversity.",
+      "mistakeTag": "Why fact-dumps stall in the middle bands",
+      "callout": "Analyse and judge; a list with no verdict caps your marks.",
+      "durationInFrames": 990,
+      "caption": "Listing facts is not evaluating; finish with a stated, qualified position.",
+      "voiceover": {
+        "text": "Three traps that keep good students out of the top band. Trap one, the big one, thinking a thorough response just lists all the relevant facts. It does not, listing is not evaluating, and a catalogue of true statements with no analysis stays mid-range. High-scoring answers analyse evidence, identify trade-offs and limitations, weigh different stakeholders, and then reach a supported judgement. Trap two, ending with there are pros and cons, and stopping, with no actual position. That sits on the fence and the markers see straight through it, you have to commit using qualified language. And trap three, judging by production alone, biotechnology is good because it increases output, which we already know confuses productivity with biodiversity. Analyse, then judge, that's the whole game here."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A student finishes an evaluation of GM crops with: in conclusion, there are many benefits and also some risks, so it is a complex issue. Why does this cap their marks, and how should they fix it?",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The conclusion states there are pros and cons but never reaches a position, which is the fence-sitting trap.",
+        "Top bands need a qualified judgement using conditional language, not a restatement that the issue is complex.",
+        "A fix names the biodiversity level affected and the key stakeholder, then commits.",
+        "For example: GM crops are justified provided seed ownership is regulated and genetic diversity is monitored at the crop level.",
+        "Answer: replace the non-committal ending with a conditional, stakeholder-aware judgement."
+      ],
+      "durationInFrames": 990,
+      "caption": "A fence-sitting conclusion must become a conditional, stakeholder-aware judgement.",
+      "voiceover": {
+        "text": "Quick check. A student ends their evaluation of genetically modified crops like this, in conclusion, there are many benefits and also some risks, so it is a complex issue. Why does that cap their marks, and how should they fix it? Pause and reason it through. Okay, here's the issue. The conclusion lists that there are pros and cons, but it never actually reaches a position, that's the classic fence-sitting trap. The top bands want a qualified judgement using conditional language, not just a restatement that the topic is complicated. The fix is to name the biodiversity level affected and the key stakeholder, and then commit. Something like, genetically modified crops are justified provided that seed ownership is regulated and genetic diversity is monitored at the crop level. That commits to a position, and it stays conditional, which is exactly what they want."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Run five moves: benefit, risk, stakeholders, biodiversity level, conclusion.",
+        "End every evaluation with a conditional, qualified position.",
+        "Different domains raise different issues; match issues to domain.",
+        "Listing facts is not evaluating; analyse and judge.",
+        "Never let production gains stand in for biodiversity gains."
+      ],
+      "finalPrompt": "Evaluating a biotechnology? Five moves, then commit with conditional language.",
+      "durationInFrames": 900,
+      "caption": "Five takeaways: the five moves, conditional conclusion, domain-matching, analyse not list, productivity is not diversity.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, run the five moves, benefit, risk, stakeholders, biodiversity level, and conclusion. Second, end every evaluation with a conditional, qualified position, never a slogan and never a fence-sit. Third, different domains raise different issues, so match the issues to the domain, medical, agricultural or animal. Fourth, listing facts is not evaluating, you have to analyse and then judge. And fifth, never let a production gain quietly stand in for a biodiversity gain. Whenever you evaluate a biotechnology, run the five moves, then commit using conditional language. See you next lesson."
+      }
+    }
+  ]
+}

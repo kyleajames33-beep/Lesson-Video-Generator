@@ -1,0 +1,218 @@
+{
+  "title": "Gibbs Free Energy & Spontaneity",
+  "subtitle": "The single number that decides if a reaction will go",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 4",
+  "lesson": "Lesson 13",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 4: Drivers of Reactions",
+  "syllabusDotPoints": [
+    "Apply the Gibbs free energy equation ΔG = ΔH − TΔS to predict spontaneity of a reaction at a given temperature",
+    "Calculate the temperature at which a reaction switches between spontaneous and non-spontaneous"
+  ],
+  "lessonIntent": "Students can calculate ΔG° from ΔH° and ΔS° at a given temperature, predict spontaneity from its sign, and find T at which ΔG° = 0.",
+  "examSkill": "Convert ΔS° to kJ before substituting, apply ΔG° = ΔH° − TΔS°, interpret sign for spontaneity, and find T_cross = ΔH°/ΔS°.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson `subjects/chemistry/year11/module4/lesson13.html`. Worked example: Haber Gibbs (verbatim), ΔH=−92.4 kJ/mol, ΔS=−198.9 J/K/mol = −0.1989 kJ/K/mol. T=298K: ΔG=−92.4−(298×−0.1989) = −33.1 kJ/mol (spontaneous). T_cross=−92.4/−0.1989=464.6K. T=773K: ΔG=+61.4 kJ/mol (non-spontaneous). Misconception (verbatim): 'negative ΔG means it happens quickly' (it means thermodynamically spontaneous; says NOTHING about rate). Module climax: ties ΔH (L1) + ΔS (L11-12) together.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Gibbs Free Energy and Spontaneity. Year 11 Chemistry, Module 4.",
+      "voiceover": {
+        "text": "Gibbs Free Energy and Spontaneity. Year eleven Chemistry, Module four.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L13/title.1f8d9393d28d.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Will the reaction actually happen?",
+      "body": "We've calculated ΔH (the energy change) and ΔS (the disorder change). But neither alone tells you whether a reaction will spontaneously go. That's what Gibbs free energy is for, one number that combines them.",
+      "bullets": [
+        {
+          "text": "ΔH alone isn't enough, endothermic reactions can be spontaneous.",
+          "at": 5
+        },
+        {
+          "text": "ΔS alone isn't enough either.",
+          "at": 12
+        },
+        {
+          "text": "ΔG = ΔH − TΔS combines them with temperature.",
+          "at": 18
+        },
+        {
+          "text": "Negative ΔG → reaction is spontaneous. That's the test.",
+          "at": 25
+        }
+      ],
+      "callout": "ΔG combines ΔH and ΔS into one go/no-go answer.",
+      "image": "m4l13HookGoNoGo",
+      "durationInFrames": 1410,
+      "caption": "ΔG = ΔH − TΔS, the spontaneity test.",
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 120,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the climax of Module four. You've calculated delta H — the energy change. You've calculated delta S — the disorder change. But neither alone tells you whether a reaction will actually go. Think of delta H and delta S like two votes on whether to start a project — you need both, weighted by some criterion, to make the final call. But unlike a vote with equal weights, the weighting here is temperature — and that's exactly what Gibbs free energy does. Delta G combines them: negative means go.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L13/hook.1a620a066ac3.mp3"
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "ΔG° = ΔH° − TΔS°",
+      "body": "One equation. Three quantities you've already calculated. One critical unit gotcha.",
+      "bullets": [
+        {
+          "text": "ΔG° = ΔH° − TΔS°.",
+          "at": 5
+        },
+        {
+          "text": "T is absolute temperature, in kelvin (add 273 to °C).",
+          "at": 11
+        },
+        {
+          "text": "Unit gotcha: ΔS° in J K⁻¹ mol⁻¹, convert to kJ first.",
+          "at": 18
+        },
+        {
+          "text": "Negative ΔG° → spontaneous. Positive → non-spontaneous.",
+          "at": 26
+        }
+      ],
+      "callout": "Convert ΔS° to kJ before substituting (divide by 1000).",
+      "durationInFrames": 1309,
+      "caption": "ΔG° = ΔH° − TΔS°. T in kelvin; ΔS° in kJ.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1050,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "One equation does it all. Delta G zero equals delta H zero minus T delta S zero. T is absolute temperature, in kelvin — so add two-seventy-three to anything given in Celsius. The unit gotcha is critical: delta S zero from last lesson is in joules per kelvin per mole, but delta H is in kilojoules. You must convert delta S to kilojoules first, by dividing by one thousand. Skip that and your answer is off by a factor of a thousand. Then the sign of delta G is your answer: negative means spontaneous, positive means non-spontaneous.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L13/formula.2f1f98b0f49c.mp3"
+      },
+      "diagram": {
+        "type": "gibbsSpontaneity"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Haber process: spontaneity and crossover temperature",
+      "question": "For N₂(g) + 3H₂(g) → 2NH₃(g), ΔH° = −92.4 kJ mol⁻¹ and ΔS° = −198.9 J K⁻¹ mol⁻¹. (a) Calculate ΔG° at 25 °C. (b) Is the reaction spontaneous at 25 °C? (c) Find the temperature where ΔG° = 0.",
+      "coachNote": "Convert ΔS to kJ first. Convert T to K. Then substitute carefully, watch the double-negative.",
+      "unitCancel": {
+        "left": "kJ mol⁻¹",
+        "right": "kJ mol⁻¹",
+        "result": "kJ mol⁻¹"
+      },
+      "steps": [
+        "Known: ΔH° = −92.4 kJ mol⁻¹, ΔS° = −198.9 J K⁻¹ mol⁻¹.",
+        "Find: (a) ΔG° at 298 K, (b) spontaneity, (c) crossover T.",
+        "Convert: T = 25 + 273 = 298 K; ΔS° = −0.1989 kJ K⁻¹ mol⁻¹.",
+        "Formula: ΔG° = ΔH° − TΔS°.",
+        "Substitute (a): ΔG° = −92.4 − (298 × −0.1989) = −92.4 − (−59.27).",
+        "ΔG°(298 K) = −92.4 + 59.27 = −33.1 kJ mol⁻¹.",
+        "(b) ΔG° is negative → spontaneous at 25 °C.",
+        "Answer (c): T_cross = ΔH°/ΔS° = (−92.4)/(−0.1989) = 464.6 K ≈ 465 K (192 °C)."
+      ],
+      "durationInFrames": 1740,
+      "caption": "ΔG°(298 K) = −33.1 kJ mol⁻¹ (spontaneous); T_cross ≈ 465 K.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "The Haber process at room temperature. Delta H is minus ninety-two-point-four kilojoules per mole. Delta S is minus one-ninety-eight-point-nine joules per kelvin per mole. First, convert: temperature is twenty-five plus two-seventy-three, two-ninety-eight kelvin. Delta S in kilojoules is minus zero-point-one-nine-eight-nine. Now substitute: delta G equals minus ninety-two-point-four minus two-ninety-eight times minus zero-point-one-nine-eight-nine. Watch the double negative — that's minus ninety-two-point-four minus negative fifty-nine-point-two-seven, which is minus ninety-two-point-four plus fifty-nine-point-two-seven, giving minus thirty-three-point-one kilojoules per mole. Negative — so spontaneous at room temperature. For the crossover temperature, set delta G to zero: T equals delta H over delta S, both negatives cancel, giving four hundred and sixty-five kelvin — about one hundred and ninety-two Celsius. Above that, delta G turns positive.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L13/worked-example.0411bc26f9c0.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Negative ΔG means the reaction is fast\"",
+      "body": "Students often think: \"ΔG is negative, so the reaction will happen quickly.\" That's the wrong instinct, and it confuses thermodynamics with kinetics. The correct rule: a negative ΔG means the reaction is thermodynamically spontaneous, it CAN occur without external energy. It says nothing about rate. The Haber process is spontaneous at 25 °C but essentially no reaction happens, kinetics, not thermodynamics, limit it.",
+      "callout": "Negative ΔG = thermodynamically allowed. Rate is a separate question.",
+      "mistakeTag": "Spontaneous-means-fast trap",
+      "durationInFrames": 1320,
+      "caption": "Negative ΔG means thermodynamically spontaneous, rate is a separate question.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 960,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's the trap that catches every student. Delta G is negative, so the reaction will happen quickly. Wrong instinct — it confuses thermodynamics with kinetics. The correct rule: a negative delta G means the reaction is thermodynamically spontaneous — it can occur without an external energy push. It says absolutely nothing about how fast. The Haber process at room temperature is a perfect example: delta G is negative, so it's spontaneous — but essentially no reaction happens at twenty-five degrees, because the rate is limited by the strong nitrogen triple bond. Thermodynamics says yes; kinetics says wait.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L13/misconception.87d30183223c.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "For C₂H₄(g) + H₂(g) → C₂H₆(g), ΔH° = −137 kJ mol⁻¹ and ΔS° = −120.7 J K⁻¹ mol⁻¹. Calculate ΔG° at 25 °C and decide whether the reaction is spontaneous.",
+      "pausePrompt": "Pause: convert ΔS to kJ, T to K. Then ΔG° = ΔH° − TΔS°.",
+      "answerSteps": [
+        "Convert: T = 298 K; ΔS° = −0.1207 kJ K⁻¹ mol⁻¹.",
+        "Formula: ΔG° = ΔH° − TΔS°.",
+        "Substitute: ΔG° = −137 − (298 × −0.1207) = −137 − (−35.97).",
+        "ΔG° = −137 + 35.97.",
+        "Answer: ΔG° = 101 kJ mol⁻¹ released (i.e. −101 kJ mol⁻¹) → spontaneous at 25 °C."
+      ],
+      "durationInFrames": 1290,
+      "caption": "ΔG°(298 K) = −137 + 35.97 = −101 kJ mol⁻¹ → spontaneous.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 540,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Your turn. Hydrogenation of ethene. Delta H is minus one-thirty-seven, delta S is minus one-twenty-point-seven joules per kelvin per mole. Find delta G at twenty-five degrees and decide. Pause and try. T is two-ninety-eight kelvin. Delta S in kilojoules is minus zero-point-one-two-zero-seven. Delta G equals minus one-thirty-seven minus two-ninety-eight times minus zero-point-one-two-zero-seven — minus one-thirty-seven minus minus thirty-five-point-nine-seven — which is minus one-thirty-seven plus thirty-five-point-nine-seven, giving minus one-hundred-and-one kilojoules per mole. Negative — spontaneous at twenty-five degrees.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L13/quick-check.142421d1d0df.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Always check the sign of ΔG: negative means spontaneous, never fast.",
+      "points": [
+        "ΔG° = ΔH° − TΔS°, combines enthalpy and entropy at temperature T.",
+        "Convert ΔS° to kJ K⁻¹ mol⁻¹ before substituting (it's the most common error).",
+        "T is in kelvin (°C + 273).",
+        "Negative ΔG° → thermodynamically spontaneous; positive → non-spontaneous.",
+        "Spontaneous ≠ fast, rate is a separate (kinetic) question."
+      ],
+      "durationInFrames": 1440,
+      "caption": "One equation, three quantities, one decision rule.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 960,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five takeaways for the module climax. One: delta G zero equals delta H zero minus T delta S zero — it combines enthalpy and entropy at a given temperature. Two: convert delta S to kilojoules per kelvin per mole before substituting, by dividing by one thousand — this is the most common error. Three: T is absolute, in kelvin — add two-seventy-three to Celsius. Four: negative delta G means thermodynamically spontaneous; positive means non-spontaneous. Five: spontaneous is not the same as fast — rate is a separate, kinetic question. Decision rule: check the sign of delta G — negative means spontaneous, never automatically fast.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L13/summary.6930b8da87ee.mp3"
+      }
+    }
+  ]
+}

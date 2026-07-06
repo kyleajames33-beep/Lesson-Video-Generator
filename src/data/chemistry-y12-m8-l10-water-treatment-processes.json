@@ -1,0 +1,225 @@
+{
+  "title": "Water Treatment Processes",
+  "subtitle": "The chemistry behind safe drinking water",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 10",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8: Applying Chemical Ideas",
+  "syllabusDotPoints": [
+    "analyse the need for monitoring the environment",
+    "investigate the chemistry involved in the maintenance of water quality in a chosen body of water"
+  ],
+  "moduleLessonCount": 16,
+  "nesaOutcomes": ["CH12-15", "CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-7"],
+  "inquiryQuestion": "How are the ions present in the environment identified and measured?",
+  "lessonIntent": "Students can describe each stage of the drinking-water treatment train by its chemical purpose and explain why HOCl is the active disinfecting species.",
+  "examSkill": "Link a water-quality problem to the correct treatment stage, and use the HOCl/OCl- equilibrium to explain how pH controls disinfection.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the chemistry of water treatment. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Water Treatment Processes (Year 12 Chemistry, Module 8, Lesson 10)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "What happens when one step is skipped?",
+      "body": "In 2014, Flint, Michigan changed water source but skipped one corrosion-inhibitor step costing under 100 dollars a day. Lead at the tap hit 26 times the safe limit.",
+      "image": "waterTreatmentPlant",
+      "callout": "Treatment is a chain. Drop one link and a city gets poisoned.",
+      "durationInFrames": 720,
+      "caption": "Flint skipped one treatment step in 2014, and lead reached 26 times the safe limit.",
+      "voiceover": {
+        "text": "OK, here's a sobering one. In 2014, the city of Flint, Michigan switched its water source to save money, but the treatment plant left out one step, adding an orthophosphate corrosion inhibitor, a step that costs less than a hundred dollars a day. Without it, the old iron and lead pipes started leaching metal straight into the water, and by 2015 lead at some taps measured twenty-six times the safe limit. An entire city's health was harmed by one missing link in the treatment train. So that's our question today. What does each chemical step in water treatment actually do, and what goes wrong when one is skipped? Let's walk the whole train."
+      }
+    },
+    {
+      "id": "concept-train",
+      "type": "concept",
+      "heading": "The treatment train",
+      "body": "Drinking water treatment works because different stages solve different chemical problems. It's a multi-barrier system, not one magic step.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "coag", "label": "Coagulation"},
+          {"id": "floc", "label": "Flocculation"},
+          {"id": "sed", "label": "Sedimentation"},
+          {"id": "filt", "label": "Filtration"},
+          {"id": "dis", "label": "Disinfection"}
+        ],
+        "edges": [
+          {"from": "coag", "to": "floc"},
+          {"from": "floc", "to": "sed"},
+          {"from": "sed", "to": "filt"},
+          {"from": "filt", "to": "dis"}
+        ],
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Coagulation and flocculation: destabilise and clump fine particles."},
+        {"text": "Sedimentation and filtration: settle then strain the solids out."},
+        {"text": "Disinfection: the final step that reduces pathogen risk."}
+      ],
+      "secondary": "Clear-looking water can still hold fine particles, dissolved organics, and microbes. Each stage targets a different class of risk.",
+      "callout": "Don't call treatment just adding chlorine. That's only the last stage.",
+      "durationInFrames": 1110,
+      "caption": "The NSW train: coagulation, flocculation, sedimentation, filtration, disinfection.",
+      "voiceover": {
+        "text": "Here's the big picture. Drinking water treatment works because different stages solve completely different chemical problems. It's a multi-barrier system, not a single magic step. In a typical NSW facility, the train runs in this order. Coagulation, then flocculation, then sedimentation, then filtration, and finally disinfection. The first two stages destabilise and clump the fine suspended particles. Sedimentation lets those clumps settle out, and filtration strains out what's left. Then disinfection, the last stage, reduces the pathogen risk. The reason you need all of it is that clear-looking water can still be full of fine particles, dissolved organic matter, and microorganisms, and each stage targets a different class of risk. So please don't describe treatment as just adding chlorine. Chlorination is only the final stage of a much longer process."
+      }
+    },
+    {
+      "id": "concept-coagulation",
+      "type": "concept",
+      "heading": "Coagulation chemistry",
+      "body": "Many particles in raw water are too small and too stable to settle on their own. Alum changes that.",
+      "bullets": [
+        {"text": "Alum, Al2(SO4)3, provides Al3+ ions in the water."},
+        {"text": "Al3+ plus 3H2O gives Al(OH)3 colloid plus 3H+."},
+        {"text": "The Al(OH)3 colloid adsorbs and destabilises the particles."}
+      ],
+      "secondary": "Flocculation then uses gentle mixing to grow larger flocs, and sedimentation lets gravity pull them down. Coagulation is about particles, not killing microbes.",
+      "callout": "Al(OH)3 is the workhorse: it grabs particles by adsorption.",
+      "durationInFrames": 1050,
+      "caption": "Al3+ hydrolyses to Al(OH)3 colloid, which adsorbs suspended particles.",
+      "voiceover": {
+        "text": "Let's get into the chemistry of coagulation, because it's a classic exam target. Many suspended particles in raw water are just too small and too stable to settle on their own. Alum fixes that. Alum is aluminium sulfate, and in water it provides aluminium three plus ions. Those ions hydrolyse, aluminium three plus plus three water molecules gives a gelatinous aluminium hydroxide colloid plus three hydrogen ions. That aluminium hydroxide colloid is the workhorse, it adsorbs the suspended particles onto its surface and destabilises them. Then flocculation, gentle mixing, lets those destabilised particles collide and grow into larger flocs. And sedimentation lets gravity settle the flocs out. One thing to be careful about, coagulation is about removing particles, it is not mainly about killing microbes. That's a separate job for disinfection later."
+      }
+    },
+    {
+      "id": "concept-filtration",
+      "type": "concept",
+      "heading": "Filtration and the organics problem",
+      "body": "Sedimentation removes a lot, but not everything. Filtration is the next barrier for the smaller particles left behind.",
+      "bullets": [
+        {"text": "Sand and gravel beds trap remaining particulate matter."},
+        {"text": "Activated carbon adsorbs dissolved organics affecting taste and odour."},
+        {"text": "Removing organics before chlorination is chemically important."}
+      ],
+      "secondary": "Dissolved organic matter can react with chlorine to form disinfection by-products. Stripping organics out first lowers that risk downstream.",
+      "callout": "Cut the organics now, or pay in by-products later.",
+      "durationInFrames": 960,
+      "caption": "Filtration removes fine particles; activated carbon removes organics before chlorination.",
+      "voiceover": {
+        "text": "Sedimentation removes a lot, but not everything, so filtration acts as the next barrier for the smaller particles left behind. The water passes through layers of sand and gravel, which trap the remaining particulate matter. Activated carbon can also be used, because its enormous surface area adsorbs dissolved organic compounds, the ones that affect taste, odour, and treatment performance. And here's why that matters chemically, and it's easy to miss. Dissolved organic matter isn't just an aesthetic problem. It can react later with chlorine to form disinfection by-products. So by removing the organic matter now, before the disinfection stage, you lower the chance of those unwanted by-products forming downstream. Good particle and organic removal before chlorination is genuinely a chemistry decision, not just a polishing step."
+      }
+    },
+    {
+      "id": "concept-chlorination",
+      "type": "concept",
+      "heading": "Chlorination and pH",
+      "body": "When chlorine is added, the real question isn't the dose. It's which chemical species is present.",
+      "bullets": [
+        {"text": "Cl2 plus H2O gives HOCl plus HCl."},
+        {"text": "Then HOCl is in equilibrium with H+ plus OCl minus."},
+        {"text": "HOCl is the more effective disinfecting species."}
+      ],
+      "secondary": "As pH rises, more chlorine sits as OCl minus, the weaker disinfectant. So lower pH favours HOCl and stronger disinfection. pH matters even after dosing.",
+      "callout": "Lower pH, more HOCl, stronger kill.",
+      "durationInFrames": 1080,
+      "caption": "HOCl is the active disinfectant; lower pH favours it over OCl minus.",
+      "voiceover": {
+        "text": "Now chlorination, and this is where the chemistry gets sharp. When chlorine is added to water, the important question is not how much you dosed, it's which chemical species ends up present. Two equilibria. First, chlorine reacts with water, C-l two plus water gives hypochlorous acid plus hydrochloric acid. Then the hypochlorous acid itself ionises, it's in equilibrium with hydrogen ions plus hypochlorite. Here's the key fact, hypochlorous acid, H-O-C-l, is the more effective disinfecting species. And this is where pH comes in. As pH rises, more of the chlorine sits as the hypochlorite ion, O-C-l minus, which is the weaker disinfectant. So lower pH favours hypochlorous acid and stronger disinfection, while higher pH shifts it toward the weaker form. The takeaway, pH management matters even after the chlorine has been dosed."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Disinfection trade-offs",
+      "bullets": [
+        {"text": "DBPs: by-products like trihalomethanes, formed when chlorine meets organic matter."},
+        {"text": "UV: no DBPs, but leaves no residual disinfectant in the pipes."},
+        {"text": "Ozone: powerful, but no residual and high energy cost."},
+        {"text": "Chloramines: fewer DBPs and a residual, but slower than free chlorine."}
+      ],
+      "callout": "Reverse osmosis removes salts, but it's energy-hungry.",
+      "durationInFrames": 1020,
+      "caption": "DBPs, UV, ozone, and chloramines, each a trade-off in disinfection.",
+      "voiceover": {
+        "text": "Let's define the trade-offs, because the alternatives are all about balancing competing goals. First, D-B-Ps, disinfection by-products. These include trihalomethanes like chloroform, and they form when chlorine reacts with natural organic matter in the water. Safe water in, by-product-containing water out, which is why reducing organics first matters. Now the alternative disinfectants. U-V light produces no by-products, but it leaves no residual disinfectant in the pipes once the water moves on. Ozone is powerful, but again no residual, and it demands high energy. Chloramines form fewer by-products than free chlorine and do leave a useful residual, but they disinfect more slowly. And separately, reverse osmosis removes dissolved salts in desalination, but it's energy-hungry. There's no free lunch, every method is a compromise."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Match the problem to the stage",
+      "question": "A treatment plant faces four issues. Assign the most relevant stage to each: too many suspended particles; dissolved organics remain; a residual disinfectant is needed in the pipe network; dissolved salts must be removed.",
+      "coachNote": "Each chemical problem maps to one stage. Treat it as a classification task.",
+      "steps": [
+        "Too many suspended particles: coagulation, flocculation and sedimentation, which clump and settle them.",
+        "Dissolved organics remain: activated carbon filtration, which adsorbs them.",
+        "Residual disinfectant needed in distribution: chlorine or chloramines, which leave a residual.",
+        "Dissolved salts must be removed: reverse osmosis desalination.",
+        "Answer: each problem maps to one stage, no single method fixes all four."
+      ],
+      "durationInFrames": 1350,
+      "caption": "Particles to coagulation, organics to carbon, residual to chloramines, salts to RO.",
+      "voiceover": {
+        "text": "Let's do a classification-style question, because this is exactly how the exam tests treatment. A plant faces four separate problems, and you have to assign the most relevant stage to each. Step one, too many suspended particles. That's coagulation, flocculation, and sedimentation, which destabilise, clump, and then settle the particles out. Step two, dissolved organics still in the water. That's activated carbon filtration, because the carbon's huge surface area adsorbs dissolved organic compounds. Step three, a residual disinfectant is needed out in the pipe network. That points to chlorine or chloramines, because they leave a residual that keeps protecting the water as it travels, unlike U-V or ozone. Step four, dissolved salts must be removed. That's reverse osmosis desalination, forcing water through a membrane. So the answer, each problem maps cleanly to one stage, and the whole point is that no single method solves all four. Treat treatment as matching the right tool to the specific problem."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two chlorination traps",
+      "body": "Trap 1: thinking chlorination is just a physical filtering step. It's a chemical disinfection step, and its strength depends on the HOCl to OCl minus equilibrium.",
+      "secondary": "Trap 2: assuming more chlorine always means safer water. If organics aren't removed first, more chlorine can mean more carcinogenic trihalomethanes. The dominant species and the organics both matter.",
+      "mistakeTag": "Where water-treatment marks vanish",
+      "callout": "Disinfection is equilibrium chemistry, not just a dose.",
+      "durationInFrames": 870,
+      "caption": "Chlorination is chemical, not physical; more chlorine plus organics means more DBPs.",
+      "voiceover": {
+        "text": "Two traps on chlorination. Trap one, treating chlorination as if it's just a physical filtering step. It is not, it's a chemical disinfection step, and how well it works depends on the equilibrium between hypochlorous acid and hypochlorite. Get the pH wrong and you've weakened your disinfection without changing the dose at all. Trap two, assuming that more chlorine always means safer water. If the organic matter hasn't been removed first, then adding more chlorine can actually mean more trihalomethanes, which are carcinogenic by-products. So the safe-water answer isn't just dose more chlorine. It's manage the pH so hypochlorous acid dominates, and strip the organics out first so the chlorine has less to react with."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A large network wants strong disinfection while limiting DBP formation. Compare free chlorine with chloramines, and recommend an approach.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Free chlorine: strong, fast, leaves a residual, but forms more DBPs with organics.",
+        "Chloramines: form fewer DBPs and still leave a residual, but act more slowly.",
+        "Reducing organics first lowers DBP risk for either choice.",
+        "Recommendation: remove organics, then use chloramines for residual protection.",
+        "Answer: chloramines balance residual protection against lower DBP formation."
+      ],
+      "durationInFrames": 1050,
+      "caption": "Remove organics first, then chloramines for residual with fewer DBPs.",
+      "voiceover": {
+        "text": "Quick check, an evaluate-style question. A large distribution network wants strong disinfection but also wants to limit by-product formation. Compare free chlorine with chloramines, and recommend an approach. Pause and work it through. Right, let's reason it out. Step one, free chlorine. It's strong and fast and it leaves a residual, but it forms more by-products when organic matter is present. Step two, chloramines. They form fewer by-products and still leave a useful residual, but they disinfect more slowly. Step three, whichever you choose, removing organics first lowers the by-product risk. Step four, so the recommendation, strip the organics out, then use chloramines for the residual protection through the pipes. The answer, chloramines are usually the better balance here, because they keep a residual while cutting by-product formation, and that's exactly the trade-off the question is testing."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Treatment is a multi-barrier train, not one step.",
+        "Alum gives Al(OH)3 colloid that adsorbs particles in coagulation.",
+        "HOCl is the active disinfectant; lower pH favours it over OCl minus.",
+        "Remove organics before chlorination to limit DBPs like trihalomethanes.",
+        "Each disinfection method is a trade-off of speed, residual, and by-products."
+      ],
+      "finalPrompt": "Treatment question? Match each water-quality problem to its specific stage.",
+      "durationInFrames": 1050,
+      "caption": "Five takeaways: the train, alum, HOCl and pH, organics first, trade-offs.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, drinking water treatment is a multi-barrier train, not a single step, with each stage solving a different problem. Second, in coagulation, alum hydrolyses to an aluminium hydroxide colloid that adsorbs suspended particles so they can settle. Third, in chlorination, hypochlorous acid is the active disinfectant, and lower pH favours it over the weaker hypochlorite ion. Fourth, remove organic matter before chlorination, or chlorine reacts with it to form by-products like trihalomethanes. And fifth, every disinfection method is a trade-off between speed, residual protection, and by-product risk. When you get a treatment question, match each water-quality problem to its specific stage. Next lesson, we move into medicinal chemistry, starting with drug functional groups. See you there."
+      }
+    }
+  ]
+}

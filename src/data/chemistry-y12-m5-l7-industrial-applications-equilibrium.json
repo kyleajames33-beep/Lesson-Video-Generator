@@ -1,0 +1,267 @@
+{
+  "title": "Industrial Applications of Equilibrium",
+  "subtitle": "The rate–yield compromise behind the Haber process",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+  "syllabusDotPoints": [
+    "explain the overall observations about equilibrium in terms of the collision theory (ACSCH094)"
+  ],
+  "moduleLessonCount": 18,
+  "nesaOutcomes": [
+    "CH12-12",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What factors affect equilibrium and how?",
+  "lessonIntent": "Students can justify the compromise conditions of the Haber and Contact processes using collision theory and the rate–yield trade-off.",
+  "examSkill": "Explain industrial conditions with the four-part structure: direction of shift, LCP reason, collision-theory mechanism, and the rate–yield trade-off.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, industrial applications of equilibrium and the Haber process. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Industrial Applications of Equilibrium (Year 12 Chemistry, Module 5, Lesson 7)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why accept a 15% yield?",
+      "body": "Carl Bosch ran the Haber process at conditions that gave only 15% ammonia per pass. On purpose.",
+      "callout": "Sometimes the best yield is the worst business.",
+      "image": "m5L7AmmoniaPlant",
+      "durationInFrames": 690,
+      "caption": "The Haber process runs at ~15% yield per pass — a deliberate compromise.",
+      "voiceover": {
+        "text": "OK, here's a puzzle that looks like bad chemistry. In 1913, Carl Bosch scaled up Fritz Haber's ammonia reaction to an industrial plant at Oppau, and he chose conditions that converted only about fifteen percent of the gases per pass. Now, a low temperature would give a much higher yield, so why didn't he use it? Because at a low temperature the reaction is far too slow to make money, no matter how good the yield. This is the central tension of industrial chemistry, the conditions that give the best yield often give a hopeless rate, and the conditions that give a great rate wreck the yield. Today you'll learn how the Haber and Contact processes thread that needle, and how to explain every choice using collision theory, which is exactly what the exam wants."
+      }
+    },
+    {
+      "id": "concept-tradeoff",
+      "type": "concept",
+      "heading": "The rate–yield trade-off",
+      "body": "For an exothermic reaction, temperature pulls rate and yield in opposite directions.",
+      "bullets": [
+        {
+          "text": "Low temperature: higher yield (larger Keq) but a painfully slow rate."
+        },
+        {
+          "text": "High temperature: fast rate but lower yield (smaller Keq)."
+        },
+        {
+          "text": "Pressure is the lucky one: for the Haber process it improves both yield and rate."
+        }
+      ],
+      "secondary": "At 25°C the Haber Keq is about 6 × 10⁵, so nearly everything would convert, but the rate is essentially zero. Thermodynamically perfect, kinetically useless.",
+      "callout": "Best yield, worst rate; the compromise lives in between.",
+      "durationInFrames": 1140,
+      "caption": "Temperature trades rate against yield; pressure improves both for the Haber process.",
+      "voiceover": {
+        "text": "Here's the idea that explains every industrial decision, the rate yield trade-off. For an exothermic reaction like the Haber process, temperature pulls rate and yield in opposite directions. Drop the temperature and the yield goes up, because the equilibrium constant is larger, but the rate crashes, because the molecules barely have the energy to react. Raise the temperature and the rate takes off, but the yield falls, because the equilibrium constant shrinks. So temperature is a genuine compromise, you can't win on both. Pressure, on the other hand, is the lucky variable for the Haber process, it improves the yield, by shifting toward fewer gas moles, and it improves the rate, by packing the molecules closer together. Here's the punchline that captures the whole dilemma. At room temperature the Haber equilibrium constant is about six times ten to the five, so almost everything would convert to ammonia, but the rate at room temperature is essentially zero. Thermodynamically perfect, kinetically useless."
+      },
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          {
+            "label": "200°C yield",
+            "value": 38
+          },
+          {
+            "label": "400°C yield",
+            "value": 25
+          },
+          {
+            "label": "550°C yield",
+            "value": 12
+          }
+        ],
+        "unit": "% NH₃"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Haber process: N₂ + 3H₂ ⇌ 2NH₃ for ammonia; ~450°C, 150–300 atm, iron catalyst."
+        },
+        {
+          "text": "Contact process: makes SO₃ for sulfuric acid using a vanadium(V) oxide catalyst."
+        },
+        {
+          "text": "Industrial compromise: conditions balancing rate and yield to maximise profit."
+        },
+        {
+          "text": "Recycling: returning unreacted gases to the reactor to lift overall conversion."
+        }
+      ],
+      "callout": "Compromise plus recycling beats raw yield.",
+      "durationInFrames": 990,
+      "caption": "Haber process, Contact process, industrial compromise, recycling.",
+      "voiceover": {
+        "text": "Four terms to lock in. The Haber process is the industrial synthesis of ammonia, nitrogen plus hydrogen giving ammonia, run at around four hundred and fifty degrees, one hundred and fifty to three hundred atmospheres, over an iron catalyst. The Contact process is the industrial synthesis of sulfuric acid, going through sulfur trioxide, using a vanadium five oxide catalyst. The industrial compromise is the set of conditions that balances the rate and the yield to make the most profit, rather than chasing the best possible yield. And recycling means taking the unreacted gases that come out the end and feeding them back into the reactor. That last one is the clever trick, even with only fifteen percent conversion per pass, recycling pushes the overall conversion above ninety-five percent."
+      }
+    },
+    {
+      "id": "concept-haber-conditions",
+      "type": "concept",
+      "heading": "Why those exact conditions",
+      "body": "Each Haber condition is a deliberate answer to the rate–yield problem.",
+      "bullets": [
+        {
+          "text": "400–500°C: low enough for decent yield, hot enough for the catalyst to work."
+        },
+        {
+          "text": "150–300 atm: high pressure helps both, but vessels get too costly past this."
+        },
+        {
+          "text": "Iron catalyst: lifts the rate so a moderate temperature is enough."
+        },
+        {
+          "text": "Recycling: turns 15% per pass into over 95% overall."
+        }
+      ],
+      "secondary": "The catalyst is inactive below about 300°C, so you can't just run cold for the better yield. Higher pressure keeps helping chemically, but the cost ceiling is an engineering limit, not a chemical one.",
+      "callout": "Every number is a compromise, not an ideal.",
+      "durationInFrames": 1170,
+      "caption": "Haber conditions: temperature, pressure, catalyst and recycling each justified.",
+      "voiceover": {
+        "text": "So let's justify each Haber condition, because this is exactly how the exam phrases it. Temperature, four hundred to five hundred degrees. A lower temperature would give a better yield, but two things stop you, the rate would be far too slow, and the iron catalyst is actually inactive below about three hundred degrees. So you pick a temperature that's low enough for a worthwhile yield but hot enough for the catalyst to do its job. Pressure, one hundred and fifty to three hundred atmospheres. High pressure helps both yield and rate, so chemically you'd want it as high as possible, but the vessels and pumps get exponentially more expensive and dangerous, so the ceiling here is engineering cost, not chemistry. The iron catalyst, it lifts the rate so that a moderate temperature is enough, but remember it does nothing to the yield. And recycling, the unreacted nitrogen and hydrogen are separated off and fed back in, which turns that fifteen percent per pass into over ninety-five percent overall. Every single number is a compromise, not an ideal."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Variable",
+          "Effect on yield",
+          "Effect on rate"
+        ],
+        "rows": [
+          [
+            "Low temperature",
+            "Increases",
+            "Decreases (too slow)"
+          ],
+          [
+            "High pressure",
+            "Increases",
+            "Increases"
+          ],
+          [
+            "Iron catalyst",
+            "No change",
+            "Increases"
+          ],
+          [
+            "Recycling",
+            "Raises overall conversion",
+            "—"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Heating the Contact process",
+      "question": "2SO₂(g) + O₂(g) ⇌ 2SO₃(g), ΔH = −196 kJ mol⁻¹, at equilibrium. The temperature rises from 450°C to 550°C. Explain the effect on position, concentrations and Keq with full collision theory.",
+      "coachNote": "Use the four-part structure: direction, LCP reason, collision mechanism, new equilibrium.",
+      "steps": [
+        "Direction: forward is exothermic, so the equilibrium shifts left.",
+        "LCP reason: the system opposes added heat by favouring the endothermic reverse reaction.",
+        "Collision theory: heating raises kinetic energy; the higher-Ea reverse rate rises more than the forward.",
+        "New equilibrium: [SO₃] falls, [SO₂] and [O₂] rise; the ratio shrinks so Keq decreases.",
+        "Answer: shift left, less SO₃, Keq decreases ✓"
+      ],
+      "durationInFrames": 1440,
+      "caption": "Heating the exothermic Contact process: shift left, less SO₃, Keq decreases.",
+      "voiceover": {
+        "text": "Let's write a full band six answer for the Contact process, two sulfur dioxide plus oxygen giving sulfur trioxide, exothermic, when the temperature rises from four hundred and fifty to five hundred and fifty degrees. Use the four-part structure. Part one, the direction. The forward reaction is exothermic, so the equilibrium shifts left. Part two, the Le Chatelier reason. The system opposes the added heat by favouring the endothermic direction, which is the reverse reaction, because that absorbs heat. Part three, the collision theory mechanism, this is what lifts you to a top band. Heating raises the average kinetic energy of all the particles, so both rates increase, but the reverse reaction has the higher activation energy, so a proportionally greater fraction of particles can now clear that higher barrier, and the reverse rate increases more than the forward. Part four, the new equilibrium. The sulfur trioxide concentration falls, the sulfur dioxide and oxygen rise, so the ratio of products to reactants shrinks, which means the equilibrium constant decreases. Direction, reason, mechanism, new equilibrium, that structure scores full marks."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Justifying the Haber conditions",
+      "question": "Explain why the Haber process (N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ mol⁻¹) uses 400–500°C, 150–300 atm, an iron catalyst, and recycling.",
+      "coachNote": "Address all four conditions; missing one loses marks.",
+      "steps": [
+        "Temperature: a compromise; lower T gives more yield but too slow a rate, and the catalyst is dead below ~300°C.",
+        "Pressure: 4 mol gas → 2 mol gas, so high P boosts yield and rate; the limit is engineering cost.",
+        "Iron catalyst: speeds both rates equally, giving an acceptable rate at moderate T; it does not change yield.",
+        "Recycling: unreacted N₂ and H₂ are returned, lifting ~15% per pass to over 95% overall.",
+        "Answer: each condition balances rate against yield for maximum profit ✓"
+      ],
+      "durationInFrames": 1440,
+      "caption": "Haber: temperature compromise, pressure helps both, catalyst for rate, recycling for total yield.",
+      "voiceover": {
+        "text": "Now the classic, justify every condition of the Haber process. Address all four, because missing one costs marks. Temperature, four hundred to five hundred degrees, is a compromise. A lower temperature would shift the exothermic reaction right for a better yield, but the rate would be far too slow, and on top of that the iron catalyst stops working below about three hundred degrees. So you accept a modest yield to get a workable rate. Pressure, one hundred and fifty to three hundred atmospheres. The left side has four moles of gas and the right has two, so high pressure shifts it right for more yield, and it also speeds the reaction by concentrating the gases. You'd push it even higher, except the vessels become too expensive and dangerous, so the limit is engineering cost, not chemistry. The iron catalyst speeds up both rates equally, giving an acceptable rate at that moderate temperature, but it does not change the yield, only the speed. And recycling, the unreacted nitrogen and hydrogen are separated off and returned to the reactor, which lifts that fifteen percent per pass to over ninety-five percent overall. Four conditions, each one balancing rate against yield to maximise profit."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: saying the catalyst improves the yield. It improves the rate only; yield is set by Keq.",
+      "secondary": "Trap 2: 'higher temperature makes more product'. For the exothermic Haber and Contact processes, higher temperature lowers the yield. Trap 3: explaining a temperature shift with 'particles move faster'. You must say which direction has the higher activation energy.",
+      "mistakeTag": "Where industrial-equilibrium marks vanish",
+      "callout": "Catalyst = rate; hotter = less yield here; name the bigger barrier.",
+      "durationInFrames": 1230,
+      "caption": "Catalyst raises rate not yield; heat lowers yield for these exothermic processes; cite Ea.",
+      "voiceover": {
+        "text": "Three traps. Trap one, saying the catalyst improves the yield. It does not. The catalyst improves the rate, letting you reach equilibrium quickly, but the yield is set by the equilibrium constant, which only temperature can change. Write rate, not yield, every time. Trap two, the lazy line, higher temperature makes more product. For the Haber process and the Contact process, both exothermic, higher temperature actually lowers the yield, because it shifts the equilibrium back toward reactants. Don't reach for more energy equals more product. Trap three, explaining a temperature shift by just saying the particles move faster. That doesn't explain the direction. You have to say which reaction has the higher activation energy, because that's the one whose rate climbs more, and that's what decides the direction of the shift. Nail those three and your industrial answers are bulletproof."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "At 25°C the Haber Keq is about 6 × 10⁵, yet plants run hot at 450°C. Why not run at 25°C for the far higher yield?",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "A large Keq means equilibrium would lie far toward ammonia, a high yield in principle.",
+        "But Keq says nothing about rate; it's a thermodynamic quantity.",
+        "At 25°C the activation energy can't be overcome, so the rate is essentially zero.",
+        "Equilibrium would take an impractically long time to reach, even with a catalyst.",
+        "Answer: the yield is great but the rate is hopeless, so you must run hot ✓"
+      ],
+      "durationInFrames": 1200,
+      "caption": "Huge Keq at 25°C is useless because the rate is near zero — plants must run hot.",
+      "voiceover": {
+        "text": "Quick check, and it's the heart of this lesson. At twenty-five degrees the Haber equilibrium constant is about six times ten to the five, which is enormous, yet real plants run hot at four hundred and fifty degrees. Why not just run at room temperature for that far higher yield? Pause and reason it through. Right, let's check it. That huge equilibrium constant does mean the equilibrium lies far toward ammonia, so in principle the yield would be excellent. But here's the catch, the equilibrium constant tells you nothing about rate, it's purely a thermodynamic quantity, about where the balance sits, not how fast you get there. At twenty-five degrees the molecules simply don't have enough energy to clear the activation barrier, so the rate is essentially zero, and equilibrium would take an impractically long time to reach, even with a catalyst. So the yield is wonderful but the rate is hopeless, and that's why you have to run the process hot. Thermodynamically favourable, kinetically inaccessible."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Industrial conditions balance rate against yield to maximise profit.",
+        "For exothermic processes, low T means high yield but a slow rate.",
+        "Pressure improves both yield and rate for the Haber process; cost sets the limit.",
+        "A catalyst raises rate only; recycling lifts overall conversion above 95%.",
+        "Always explain shifts with collision theory and the relevant activation energy."
+      ],
+      "finalPrompt": "Explaining a condition? Cover direction, LCP reason, collision mechanism, and the trade-off.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: compromise, temperature trade-off, pressure, catalyst/recycling, collision theory.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, industrial conditions are always a balance of rate against yield, chosen to maximise profit, not to maximise yield alone. Second, for an exothermic process, a low temperature gives a high yield but a slow rate, so you compromise. Third, pressure improves both the yield and the rate for the Haber process, and the only limit is engineering cost. Fourth, a catalyst raises the rate only, while recycling the unreacted gases lifts the overall conversion above ninety-five percent. And fifth, always explain a shift using collision theory and the relevant activation energy, not just more energy. When you justify any condition, cover the direction, the Le Chatelier reason, the collision mechanism, and the trade-off. See you next lesson."
+      }
+    }
+  ]
+}

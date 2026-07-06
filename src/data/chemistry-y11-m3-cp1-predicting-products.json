@@ -1,0 +1,298 @@
+{
+  "title": "Checkpoint 1: Predicting Products",
+  "subtitle": "IQ1 synthesis — physical change, reaction types, balancing, and Indigenous knowledge",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Checkpoint 1",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 3: Reactive Chemistry",
+  "syllabusDotPoints": [
+    "Investigate the distinguishing properties of physical and chemical changes",
+    "Write and balance chemical equations for synthesis, decomposition, precipitation, combustion, acid-base, and acid-carbonate reactions",
+    "Investigate the applications of Aboriginal and Torres Strait Islander peoples' knowledge of physical and chemical properties of natural materials"
+  ],
+  "lessonIntent": "Students can identify reaction types from descriptions, balance equations with state symbols, and apply chemical principles to traditional Indigenous processing methods.",
+  "examSkill": "Select the correct reaction type from a scenario, balance the equation, and identify the chemical principle at work.",
+  "productionRole": "production",
+  "productionNotes": "Synthesis \"boss fight\" video for IQ1 (L1-L6). Format: cold open with 4 scenarios → decision tree → 3 worked walkthroughs → exam pitfall montage → closing decision rule. Longer than standard lessons by design.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Checkpoint 1: Predicting Products of Chemical Reactions.",
+      "voiceover": {
+        "text": "Checkpoint One: Predicting Products of Chemical Reactions.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-Checkpoint1/title.4d9f16a8f121.mp3"
+      }
+    },
+    {
+      "id": "cold-open",
+      "type": "hook",
+      "heading": "Four scenarios. Four reaction types. Can you identify them?",
+      "body": "Here are four situations you might encounter in an exam. Each involves a different reaction type from Lessons one through six. Think of this like a diagnostic test in medicine — each symptom points to a specific condition. Where it breaks: in chemistry, the \"symptoms\" are the observations, and the \"condition\" is the reaction type. Try to identify each one before the answers play.",
+      "bullets": [
+        {
+          "text": "A: Barium chloride solution mixes with sodium sulfate solution. A white solid forms.",
+          "at": 4
+        },
+        {
+          "text": "B: Propane gas burns in a Bunsen burner with a blue flame.",
+          "at": 13
+        },
+        {
+          "text": "C: Hydrochloric acid is poured onto marble chips. Bubbles form.",
+          "at": 22
+        },
+        {
+          "text": "D: A cycad seed is soaked in running water for two weeks. The toxin dissolves.",
+          "at": 31
+        }
+      ],
+      "callout": "Scenario A is precipitation. B is combustion. C is acid-carbonate. D is physical leaching.",
+      "image": "cp1ColdOpenScenarios",
+      "durationInFrames": 1560,
+      "caption": "Four mixed scenarios covering precipitation, combustion, acid-carbonate, and physical leaching.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "bulletsStart": 90,
+        "callout": 1200,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here are four situations, each pointing to a different reaction type. Think of it like a diagnostic test in medicine, where each symptom points to a specific condition, except here the symptoms are the observations and the condition is the reaction type. In scenario A, barium chloride solution mixes with sodium sulfate solution and a white solid forms. In scenario B, propane gas burns in a Bunsen burner with a blue flame. In scenario C, hydrochloric acid is poured onto marble chips and bubbles form. And in scenario D, a cycad seed is soaked in running water for two weeks and the toxin dissolves. So scenario A is precipitation, B is combustion, C is acid-carbonate, and D is physical leaching."
+      }
+    },
+    {
+      "id": "decision-tree",
+      "type": "concept",
+      "heading": "The IQ1 decision tree",
+      "body": "Every IQ1 problem asks the same underlying question: what reaction type is occurring, and what are the products? The key is to look for the discriminator — the one clue that tells you which pattern applies.",
+      "bullets": [
+        {
+          "text": "Two solutions mixed + solid forms → precipitation. Use solubility rules.",
+          "at": 4
+        },
+        {
+          "text": "Hydrocarbon + O₂ → CO₂ + H₂O → combustion. Check for limited O₂.",
+          "at": 13
+        },
+        {
+          "text": "Acid + carbonate → salt + water + CO₂ gas. Bubbles = carbonate.",
+          "at": 22
+        },
+        {
+          "text": "Acid + base → salt + water. No gas = neutralisation.",
+          "at": 30
+        },
+        {
+          "text": "One reactant → multiple products → decomposition. Two → one → synthesis.",
+          "at": 38
+        },
+        {
+          "text": "No new substance formed, recoverable by physical means → physical change.",
+          "at": 47
+        }
+      ],
+      "callout": "Do not memorise steps. Read the scenario and match the discriminator.",
+      "image": "cp1DecisionTree",
+      "durationInFrames": 1800,
+      "caption": "Six discriminators map every IQ1 scenario to the correct reaction type and products.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1500,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Every IQ1 problem asks the same question, what reaction type is occurring, and what are the products? The trick is to look for the discriminator, the one clue that gives it away. If two solutions are mixed and a solid forms, that's precipitation, so reach for the solubility rules. If a hydrocarbon reacts with oxygen to give carbon dioxide and water, that's combustion, though you should check whether the oxygen is limited. If an acid meets a carbonate, you get salt, water, and carbon dioxide gas, so bubbles point to a carbonate, whereas an acid plus a base with no gas is just neutralisation, giving salt and water. And on the structure side, one reactant breaking into several products is decomposition, while two combining into one is synthesis. Finally, if no new substance forms and it's recoverable by physical means, it's a physical change. So don't memorise steps, just read the scenario and match the discriminator."
+      }
+    },
+    {
+      "id": "walkthrough-1",
+      "type": "workedExample",
+      "heading": "Walkthrough 1: Precipitation with net ionic equation",
+      "question": "A student mixes aqueous solutions of lead(II) nitrate and potassium iodide. A bright yellow precipitate forms. (a) Identify the precipitate. (b) Write the balanced molecular equation. (c) Write the net ionic equation. (d) Name the spectator ions.",
+      "coachNote": "Target: identify the insoluble product, drop spectators, write net ionic.",
+      "unitCancel": {
+        "left": "ions",
+        "right": "ions",
+        "result": "net ionic"
+      },
+      "steps": [
+        "Known: Pb(NO₃)₂(aq) + KI(aq) → yellow precipitate.",
+        "Find: precipitate name, molecular equation, net ionic equation, spectator ions.",
+        "Formula: precipitation = insoluble product from mixing two aqueous solutions.",
+        "Identify precipitate: Pb²⁺ + I⁻ → PbI₂. All potassium and nitrate salts are soluble.",
+        "Substitute: Pb(NO₃)₂(aq) + 2KI(aq) → PbI₂(s) + 2KNO₃(aq).",
+        "Net ionic: Pb²⁺(aq) + 2I⁻(aq) → PbI₂(s).",
+        "Spectators: K⁺(aq) and NO₃⁻(aq) — appear unchanged on both sides.",
+        "Answer: Precipitate = lead(II) iodide = 1 insoluble product. Net ionic: Pb²⁺ + 2I⁻ → PbI₂(s). Spectators = K⁺ and NO₃⁻."
+      ],
+      "image": "cp1Walkthrough1Precipitation",
+      "durationInFrames": 1920,
+      "caption": "Identify insoluble product → molecular → drop spectators → net ionic.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 110
+      },
+      "voiceover": {
+        "text": "Walkthrough one: precipitation with net ionic equation. Lead two nitrate plus potassium iodide produces a bright yellow precipitate. Identify the precipitate, write the balanced molecular equation, net ionic equation, and name the spectator ions. Known: lead two nitrate aqueous plus potassium iodide aqueous. Precipitation means insoluble product. Lead two plus iodide makes lead two iodide. All potassium and nitrate salts are soluble. Molecular equation: Pb open bracket N O three close bracket two aqueous plus two K I aqueous produces Pb I two solid plus two K N O three aqueous. Net ionic: Pb two plus aqueous plus two I minus aqueous produces Pb I two solid. Spectators are K plus and N O three minus. Answer: precipitate is lead two iodide. Net ionic: Pb two plus plus two I minus produces Pb I two solid.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-Checkpoint1/walkthrough-1.bad5c49dced7.mp3"
+      }
+    },
+    {
+      "id": "walkthrough-2",
+      "type": "workedExample",
+      "heading": "Walkthrough 2: Combustion with state symbols",
+      "question": "Ethanol (C₂H₅OH) burns completely in oxygen. (a) Identify the reaction type. (b) Write the balanced equation with state symbols. (c) State the conditions under which incomplete combustion would occur and name the toxic product.",
+      "coachNote": "Target: complete combustion → CO₂ + H₂O. Limited O₂ → incomplete → CO.",
+      "unitCancel": {
+        "left": "O atoms",
+        "right": "O atoms",
+        "result": "balanced"
+      },
+      "steps": [
+        "Known: C₂H₅OH(l) + O₂(g) → complete combustion.",
+        "Find: reaction type, balanced equation with states, incomplete combustion conditions and toxic product.",
+        "Reaction type: complete combustion of a hydrocarbon fuel.",
+        "Formula: C₂H₅OH + O₂ → CO₂ + H₂O. Balance C: 2 CO₂. Balance H: 3 H₂O. Balance O: 1+6=7 → 3 O₂.",
+        "Substitute: C₂H₅OH(l) + 3O₂(g) → 2CO₂(g) + 3H₂O(g).",
+        "Check: 2C, 6H, 7O each side. Balanced.",
+        "Incomplete combustion: limited oxygen. Toxic product: carbon monoxide (CO).",
+        "Answer: C₂H₅OH(l) + 3O₂(g) → 2CO₂(g) + 3H₂O(g). Incomplete: limited O₂ produces = 1 toxic product CO."
+      ],
+      "image": "cp1Walkthrough2Combustion",
+      "durationInFrames": 1920,
+      "caption": "Complete combustion → CO₂ + H₂O. Limited O₂ → CO. Always balance C → H → O.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 110
+      },
+      "voiceover": {
+        "text": "Walkthrough two is combustion with state symbols. Ethanol liquid burns completely in oxygen, and we need the reaction type, the balanced equation with states, plus the conditions for incomplete combustion and its toxic product. This is complete combustion of a fuel, so we balance carbon first, giving two C O two, then hydrogen, giving three H two O. For oxygen, ethanol already has one O, and the right side has seven O atoms in total, so the left side needs three O two molecules, which checks out as one plus six equals seven. That gives C two H five O H liquid plus three O two gas produces two C O two gas plus three H two O gas. Incomplete combustion happens when the oxygen supply is limited, and the toxic product in that case is carbon monoxide."
+      }
+    },
+    {
+      "id": "walkthrough-3",
+      "type": "workedExample",
+      "heading": "Walkthrough 3: Acid-carbonate with gas test",
+      "question": "Dilute sulfuric acid is added to solid calcium carbonate. Bubbles of gas are observed. (a) Identify the reaction type and the gas. (b) Write the balanced equation with state symbols. (c) Describe a chemical test to confirm the identity of the gas.",
+      "coachNote": "Target: acid + carbonate → salt + water + CO₂. Gas turns limewater milky.",
+      "unitCancel": {
+        "left": "moles CO₂",
+        "right": "moles CaCO₃",
+        "result": "1:1 ratio"
+      },
+      "steps": [
+        "Known: H₂SO₄(aq) + CaCO₃(s) → bubbles of gas.",
+        "Find: reaction type, gas identity, balanced equation, chemical test.",
+        "Reaction type: acid-carbonate. Discriminator: bubbles from solid + acid = carbonate.",
+        "Gas: CO₂. Test: bubble through limewater → milky white precipitate of CaCO₃.",
+        "Formula: Acid + carbonate → salt + water + CO₂.",
+        "Substitute: H₂SO₄ + CaCO₃ → CaSO₄ + H₂O + CO₂. Already balanced.",
+        "Answer: Acid-carbonate. CO₂ gas. H₂SO₄(aq) + CaCO₃(s) → CaSO₄(aq) + H₂O(l) + CO₂(g). Test: limewater → milky = 1 positive test."
+      ],
+      "image": "cp1Walkthrough3Carbonate",
+      "durationInFrames": 1876,
+      "caption": "Bubbles + solid + acid = carbonate reaction. CO₂ turns limewater milky.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 100
+      },
+      "voiceover": {
+        "text": "Walkthrough three: acid-carbonate with gas test. Sulfuric acid added to solid calcium carbonate. Bubbles form. Identify the reaction type and gas, balance the equation, and describe a chemical test. Known: H two S O four aqueous plus Ca C O three solid. Bubbles. Reaction type: acid-carbonate. The discriminator is bubbles from a solid reacting with acid — that means carbonate. Gas is carbon dioxide. Test: bubble through limewater. It turns milky white. Balance: H two S O four plus Ca C O three produces Ca S O four plus H two O plus C O two. Already balanced. Answer: acid-carbonate reaction producing carbon dioxide. Equation: H two S O four aqueous plus Ca C O three solid produces Ca S O four aqueous plus H two O liquid plus C O two gas. Limewater test gives milky white precipitate.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-Checkpoint1/walkthrough-3.13418d422abb.mp3"
+      }
+    },
+    {
+      "id": "exam-pitfalls",
+      "type": "misconception",
+      "heading": "The three most dangerous IQ1 distractors",
+      "body": "Wrong instinct one: Dissolving salt in water is a chemical change because the salt disappears. Corrected: Dissolution is physical — no new substance forms, and the salt can be recovered by evaporation. Wrong instinct two: All sulfates are soluble, so barium sulfate must dissolve. Corrected: Barium sulfate is the key exception — it is insoluble and precipitates. Wrong instinct three: Acid plus metal oxide produces hydrogen gas. Corrected: Acid plus metal oxide is neutralisation — salt plus water only. Hydrogen gas comes from acid plus reactive metal, not metal oxide.",
+      "callout": "In the exam, read the reactants carefully. One word changes the entire reaction type.",
+      "mistakeTag": "IQ1 triple trap",
+      "image": "cp1ExamPitfalls",
+      "durationInFrames": 1500,
+      "caption": "Three common distractors: dissolving = chemical, all sulfates soluble, acid + oxide = H₂ gas.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 1200,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "The three most dangerous IQ1 distractors. Wrong instinct one: dissolving salt in water is a chemical change because the salt disappears. Corrected: dissolution is physical. No new substance forms, and the salt can be recovered by evaporation. Wrong instinct two: all sulfates are soluble, so barium sulfate must dissolve. Corrected: barium sulfate is the key exception. It is insoluble and precipitates. Wrong instinct three: acid plus metal oxide produces hydrogen gas. Corrected: acid plus metal oxide is neutralisation — salt plus water only. Hydrogen gas comes from acid plus reactive metal, not metal oxide. In the exam, read the reactants carefully. One word changes the entire reaction type.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-Checkpoint1/exam-pitfalls.12a531728515.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Boss fight — your turn",
+      "question": "A student is given four unlabelled white powders: sodium chloride, calcium carbonate, magnesium oxide, and copper(II) sulfate. They have dilute hydrochloric acid, distilled water, and a Bunsen burner available. Design a sequence of tests to identify each powder, naming the reaction type and expected observation for each positive test.",
+      "pausePrompt": "Pause: think about solubility, acid reactions, and flame colours.",
+      "answerSteps": [
+        "Known: Four powders — NaCl, CaCO₃, MgO, CuSO₄. Reagents: HCl, water, Bunsen burner.",
+        "Test 1 — Add water: CuSO₄ dissolves to give a blue solution. The others are white or colourless.",
+        "Test 2 — Add HCl to remaining three: CaCO₃ bubbles vigorously (CO₂). Reaction type: acid-carbonate.",
+        "Test 3 — Add HCl to remaining two: MgO dissolves with no bubbles. Reaction type: acid-base.",
+        "Test 4 — Flame test the last powder: NaCl gives persistent yellow-orange flame. Confirms sodium.",
+        "Answer: CuSO₄ = blue solution in water. CaCO₃ = bubbles with HCl. MgO = dissolves in HCl, no gas. NaCl = yellow flame test."
+      ],
+      "image": "cp1QuickCheckBossFight",
+      "durationInFrames": 1680,
+      "caption": "Design a test sequence using solubility, acid reactions, and flame tests.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 600,
+        "answerInterval": 110
+      },
+      "voiceover": {
+        "text": "Boss fight. You've got four unlabelled white powders, sodium chloride, calcium carbonate, magnesium oxide, and copper two sulfate, plus dilute hydrochloric acid, distilled water, and a Bunsen burner. Design a test sequence to identify each one. Pause now and plan it out. First, add water, and copper two sulfate gives itself away as a blue solution. Next, add acid to the remaining three, and calcium carbonate bubbles vigorously with carbon dioxide, which is the acid-carbonate reaction. Then add acid to the last two, where magnesium oxide dissolves with no bubbles at all, an acid-base reaction. Finally, a flame test on the last powder gives sodium chloride away with its yellow-orange flame. So copper two sulfate is the blue solution, calcium carbonate fizzes, magnesium oxide dissolves without gas, and sodium chloride burns yellow."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Has a new substance formed? What are the products? Balance and verify.",
+      "image": "cp1SummaryClosing",
+      "points": [
+        "Read the scenario first. Match the discriminator to the reaction type.",
+        "Precipitation: two aqueous + solid forms → use solubility rules.",
+        "Combustion: fuel + O₂ → CO₂ + H₂O. Limited O₂ → CO.",
+        "Acid-carbonate: bubbles from solid + acid → salt + water + CO₂.",
+        "Acid-base: no gas → salt + water only.",
+        "Balance: complex molecule → H → O. Verify atom counts on both sides."
+      ],
+      "durationInFrames": 1444,
+      "caption": "Six takeaways and the ultimate IQ1 decision rule.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 100,
+        "finalPrompt": 840,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Let's lock in six takeaways for checkpoint one. First, read the scenario before anything else and match the discriminator to the reaction type. Second, precipitation is when two aqueous solutions mix and a solid forms, so you use the solubility rules. Third, combustion is fuel plus oxygen giving carbon dioxide and water, though limited oxygen gives carbon monoxide instead. Fourth, an acid-carbonate reaction shows bubbles from a solid meeting acid, producing salt, water, and carbon dioxide. Fifth, an acid-base reaction gives no gas, just salt and water. And sixth, you balance equations by starting with the most complex molecule, then hydrogen, then oxygen, before verifying the atom counts. So the decision rule is, has a new substance formed, what are the products, then balance and verify."
+      }
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "title": "Percentage Yield and Purity",
+  "subtitle": "How efficient was the reaction, how pure the sample",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 14",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "calculate percentage yield and percentage purity from experimental data"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-9", "CH11/12-4", "CH11/12-6"],
+  "inquiryQuestion": "What happens in chemical reactions?",
+  "lessonIntent": "Students can calculate percentage yield from actual and theoretical yields, and use percentage purity to find the reacting mass in a stoichiometry problem.",
+  "examSkill": "Apply % yield = actual ÷ theoretical × 100; apply % purity to find pure mass before stoichiometry; never let yield exceed 100%.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, percentage yield and percentage purity, the reality check on every reaction. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Percentage Yield and Purity (Year 11 Chemistry, Module 2, Lesson 14)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Reality never matches the theory",
+      "body": "Real reactions don't give 100%. Real samples aren't 100% pure. Two percentages fix that.",
+      "callout": "Yield measures efficiency. Purity measures quality.",
+      "durationInFrames": 690,
+      "caption": "Percentage yield and purity connect ideal stoichiometry to real results.",
+      "voiceover": {
+        "text": "OK, so far every calculation has assumed a perfect world. Reactions go to completion, samples are pure, nothing is lost. Reality is messier. A real reaction might only convert eighty percent of what it could. A real sample of limestone might only be eighty-five percent calcium carbonate. Two percentages bridge the gap between the theory and the bench. Percentage yield tells you how efficient a reaction actually was. Percentage purity tells you how much of a sample is the real thing. Today you'll use both, and learn to keep them straight, because mixing them up is the classic trap."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Two different percentages",
+      "body": "Yield is about the product you got. Purity is about the sample you started with.",
+      "image": "l14YieldPurity",
+      "bullets": [
+        {"text": "Percentage yield: actual product ÷ theoretical product × 100."},
+        {"text": "Percentage purity: pure substance ÷ total sample × 100."},
+        {"text": "Yield is checked at the end; purity at the start."}
+      ],
+      "secondary": "Yield can never exceed 100%, because you can't make more than the theory allows. If yours does, you made an error.",
+      "callout": "Yield is the finish line. Purity is the starting line.",
+      "durationInFrames": 1110,
+      "caption": "Yield = output efficiency; purity = input quality. Yield ≤ 100%.",
+      "voiceover": {
+        "text": "These two percentages sound similar but do completely different jobs. Percentage yield is about the product. It compares the amount you actually got to the maximum the theory predicted. Percentage purity is about the starting sample. It tells you what fraction of your impure material is the real substance. The timing is the key to keeping them apart. Purity is something you handle at the start, before any stoichiometry, to find the real reacting mass. Yield is something you calculate at the end, after you've measured your product. And one hard rule. Percentage yield can never go above one hundred percent. You cannot create more product than the theory allows, so if your answer exceeds a hundred, you've made a mistake somewhere."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Theoretical yield: the maximum product the stoichiometry predicts."},
+        {"text": "Actual yield: the product you really obtained in the experiment."},
+        {"text": "Percentage yield: actual ÷ theoretical × 100, always ≤ 100%."},
+        {"text": "Percentage purity: pure mass ÷ sample mass × 100."}
+      ],
+      "callout": "Losses, side reactions, and equilibrium all pull yield below 100%.",
+      "durationInFrames": 960,
+      "caption": "Theoretical yield, actual yield, percentage yield, percentage purity.",
+      "voiceover": {
+        "text": "Quick vocabulary. The theoretical yield is the maximum product the stoichiometry predicts, the perfect-world answer. The actual yield is what you really collected at the bench, always less than or equal to the theoretical. Percentage yield is the actual divided by the theoretical, times one hundred, and it can never exceed a hundred percent. Percentage purity is the mass of pure substance divided by the total sample mass, times one hundred. Why is yield usually below a hundred? Side reactions make byproducts, some reactions don't go to completion, equilibrium can limit them, and product gets lost during filtering and purifying. All of it pulls the real yield down."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "The two formulas",
+      "body": "Percentage yield uses actual over theoretical. Percentage purity uses pure over sample.",
+      "bullets": [
+        {"text": "% yield = (actual yield ÷ theoretical yield) × 100."},
+        {"text": "% purity = (pure mass ÷ sample mass) × 100."},
+        {"text": "Pure mass = (% purity ÷ 100) × sample mass."}
+      ],
+      "secondary": "In a stoichiometry problem with an impure reactant, find the pure mass first, then do the calculation on that.",
+      "callout": "Impure reactant? Strip it down to pure mass before any moles.",
+      "durationInFrames": 1020,
+      "caption": "% yield = actual ÷ theoretical; % purity = pure ÷ sample.",
+      "voiceover": {
+        "text": "Two formulas, kept apart. Percentage yield is the actual yield over the theoretical yield, times one hundred. Percentage purity is the mass of pure substance over the total sample mass, times one hundred. And rearranged, the pure mass equals the purity fraction times the sample mass. Here's how they fit into a bigger problem. If a question gives you an impure reactant, your very first move is to find the pure mass, using the purity. Then you do all the stoichiometry on that pure mass, never the impure sample mass. Purity comes off the top before any moles. Yield comes in at the very end, once you've compared what you got to what was possible."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "A simple yield",
+      "question": "In 2SO₂ + O₂ → 2SO₃, 8.00 g of SO₃ is theoretically possible but only 6.40 g is collected. Find the percentage yield.",
+      "coachNote": "Yield = actual ÷ theoretical × 100.",
+      "steps": [
+        "Actual yield = 6.40 g",
+        "Theoretical yield = 8.00 g",
+        "% yield = (6.40 ÷ 8.00) × 100",
+        "% yield = 0.800 × 100",
+        "Answer: 80.0% ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "6.40 g out of 8.00 g possible is an 80.0% yield.",
+      "voiceover": {
+        "text": "Let's do a straightforward yield. In the reaction making sulfur trioxide, eight grams is theoretically possible, but only six-point-four grams is actually collected. Find the percentage yield. This one is direct. Step one, the actual yield is six-point-four grams. Step two, the theoretical yield is eight grams. Step three, percentage yield is actual over theoretical, times one hundred. Six-point-four over eight is nought-point-eight. Step four, times one hundred is eighty percent. So the reaction was eighty percent efficient. The other twenty percent was lost to incomplete reaction or losses on the way. Notice the answer is comfortably below a hundred, exactly as it should be."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Yield needing stoichiometry",
+      "question": "CaCO₃ → CaO + CO₂. 20.0 g CaCO₃ is heated and 9.80 g CaO collected. Find the % yield of CaO. (Ca 40.08, C 12.011, O 15.999)",
+      "coachNote": "Find the theoretical CaO first, then compare.",
+      "steps": [
+        "M(CaCO₃) = 40.08 + 12.011 + 3(15.999) = 100.09 g mol⁻¹",
+        "n(CaCO₃) = 20.0 ÷ 100.09 = 0.200 mol",
+        "Ratio 1:1, so theoretical n(CaO) = 0.200 mol; M(CaO) = 56.08",
+        "Theoretical m(CaO) = 0.200 × 56.08 = 11.2 g",
+        "% yield = (9.80 ÷ 11.2) × 100 = 87.4% ✓"
+      ],
+      "durationInFrames": 1500,
+      "caption": "Theoretical CaO is 11.2 g; collecting 9.80 g is an 87.4% yield.",
+      "voiceover": {
+        "text": "Now a yield that needs stoichiometry first. Calcium carbonate breaks down into calcium oxide and carbon dioxide when heated. Twenty grams of calcium carbonate is heated, and nine-point-eight grams of calcium oxide is collected. Find the percentage yield. You can't compare yet, because you don't know the theoretical yield. So find it. Step one, molar mass of calcium carbonate, one hundred-point-zero-nine grams per mole. Twenty grams is nought-point-two moles. Step two, the ratio is one to one, so theoretically nought-point-two moles of calcium oxide form. Its molar mass is fifty-six-point-zero-eight, so the theoretical mass is eleven-point-two grams. Step three, now compare. Percentage yield is the actual nine-point-eight over the theoretical eleven-point-two, times one hundred, which is eighty-seven-point-four percent. Theoretical yield by stoichiometry first, then the percentage."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: confusing percentage purity with percentage yield, applying them at the wrong stage.",
+      "secondary": "Trap 2: using the impure sample mass in stoichiometry instead of the pure mass. Trap 3: reporting a yield above 100%, which is impossible.",
+      "mistakeTag": "Where yield and purity marks vanish",
+      "callout": "Purity at the start, yield at the end, yield ≤ 100%.",
+      "durationInFrames": 1230,
+      "caption": "Keep purity (start) and yield (end) separate; use pure mass; yield ≤ 100%.",
+      "voiceover": {
+        "text": "Three traps, and the first is the classic. Trap one, confusing percentage purity with percentage yield. They feel similar, but purity is handled at the start of a problem and yield at the end. Mix up which one a question is asking for and you'll apply the wrong formula at the wrong moment. Trap two, using the impure sample mass in your stoichiometry. If a reactant is only eighty-five percent pure, you must find the pure mass first, then calculate on that. Use the full impure mass and your answer is too high. Trap three, reporting a yield above one hundred percent. It is physically impossible to make more product than the theory allows, so if you ever get more than a hundred, go back and find your mistake."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "An 85.0% pure CaCO₃ sample (20.0 g) is heated: CaCO₃ → CaO + CO₂. What mass of CO₂ forms? (Ca 40.08, C 12.011, O 15.999)",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Pure mass = 0.850 × 20.0 = 17.0 g CaCO₃",
+        "M(CaCO₃) = 100.09 g mol⁻¹; n = 17.0 ÷ 100.09 = 0.170 mol",
+        "Ratio CaCO₃ : CO₂ = 1 : 1, so n(CO₂) = 0.170 mol",
+        "M(CO₂) = 44.01; m = 0.170 × 44.01",
+        "Answer: m(CO₂) = 7.47 g ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Apply purity first (17.0 g), then stoichiometry gives 7.47 g CO₂.",
+      "voiceover": {
+        "text": "Quick check, combining purity with stoichiometry. An eighty-five percent pure sample of calcium carbonate, weighing twenty grams, is heated and breaks down into calcium oxide and carbon dioxide. What mass of carbon dioxide forms? Pause and work it through. Right, let's check it. Step one, and don't skip this, find the pure mass. Eighty-five percent of twenty grams is seventeen grams of actual calcium carbonate. Step two, convert to moles. Seventeen over one hundred-point-zero-nine is nought-point-one-seven moles. Step three, the ratio of calcium carbonate to carbon dioxide is one to one, so nought-point-one-seven moles of carbon dioxide. Step four, mass. Nought-point-one-seven times forty-four is seven-point-four-seven grams. The whole problem hinged on using seventeen grams, the pure mass, not the full twenty. Purity first, always."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Percentage yield = actual ÷ theoretical × 100; always ≤ 100%.",
+        "Percentage purity = pure mass ÷ sample mass × 100.",
+        "Purity is handled at the start; yield at the end.",
+        "With an impure reactant, find the pure mass before any moles.",
+        "A yield above 100% means you've made an error."
+      ],
+      "finalPrompt": "Impure reactant? Pure mass first. Comparing products? Yield last.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: yield ≤ 100%, purity at start, yield at end, pure mass first.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, percentage yield is actual over theoretical, times one hundred, and it can never exceed a hundred percent. Second, percentage purity is the pure mass over the sample mass, times one hundred. Third, purity is handled at the start of a problem, and yield at the end. Fourth, if a reactant is impure, find the pure mass before you do any moles. And fifth, a yield above a hundred percent always means an error, so check your working. Keep purity and yield in their proper places and these problems are very doable. See you next lesson."
+      }
+    }
+  ]
+}

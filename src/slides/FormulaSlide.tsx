@@ -6,8 +6,10 @@
 
 import {interpolate, useCurrentFrame} from 'remotion';
 import type {LessonData, TextScene} from '../lesson/types';
+import {ASSETS, type AssetName} from '../assets';
 import {FadeUp} from '../animations/FadeUp';
 import {AmbientBorderPulse, AmbientGlow} from '../animations/AmbientMotion';
+import {HandWriteReveal} from '../animations/HandWriteReveal';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
@@ -33,29 +35,38 @@ type FormulaTermConfig = {
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
 
 export const FormulaSlide = ({scene, lesson, sceneIndex, totalScenes}: FormulaSlideProps) => {
+	const rd = scene.revealDelays ?? {};
 	const terms = buildTerms(scene.body);
 
 	return (
-		<SlideFrame>
+		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
 			<SlideChrome lesson={lesson} dot="2.1" topic="FORMULA" sceneType="formula" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
 			<div style={{position: 'absolute', top: 180, left: 64, right: 64}}>
 				<Eyebrow color={TOK.inkDim}>↳ THE COUNTING EQUATION</Eyebrow>
-				<FadeUp delay={18} durationFrames={14} dy={18}>
-					<div
-						style={{
-							maxWidth: 1400,
-							marginTop: 18,
-							fontSize: 56,
-							fontWeight: 650,
-							lineHeight: 1.12,
-							letterSpacing: '-0.025em',
-							color: TOK.inkDim,
-						}}
-					>
-						Connect particles, moles, and Avogadro&apos;s number.
-					</div>
-				</FadeUp>
+				<div
+					style={{
+						maxWidth: 1400,
+						marginTop: 18,
+						fontSize: 56,
+						fontWeight: 650,
+						lineHeight: 1.12,
+						letterSpacing: '-0.025em',
+						color: TOK.inkDim,
+					}}
+				>
+					<HandWriteReveal
+						text="Connect particles, moles, and Avogadro's number."
+						delay={rd.heading ?? 18}
+						msPerChar={45}
+						font="hand"
+						size={56}
+						weight={600}
+						color={TOK.inkDim}
+						penColor={TOK.amber}
+						letterSpacing="-0.01em"
+					/>
+				</div>
 			</div>
 
 			<AmbientGlow left={420} top={330} width={1080} height={300} delay={132} opacity={0.075} speedSeconds={6.2} />
@@ -73,6 +84,23 @@ export const FormulaSlide = ({scene, lesson, sceneIndex, totalScenes}: FormulaSl
 					gap: 36,
 				}}
 			>
+				{scene.image && ASSETS[scene.image as AssetName] && (
+					<FadeUp delay={rd.diagram ?? 90} durationFrames={16} dy={18}>
+						<img
+							src={ASSETS[scene.image as AssetName]}
+							alt=""
+							style={{
+								position: 'absolute',
+								right: 40,
+								top: 20,
+								width: 460,
+								maxHeight: 280,
+								objectFit: 'contain',
+								filter: 'drop-shadow(0 16px 32px rgba(0,0,0,0.14))',
+							}}
+						/>
+					</FadeUp>
+				)}
 				{terms.map((term) =>
 					term.kind === 'operator' ? (
 						<OperatorTerm key={term.key} term={term} />
@@ -83,7 +111,7 @@ export const FormulaSlide = ({scene, lesson, sceneIndex, totalScenes}: FormulaSl
 			</div>
 
 			{scene.secondary ? (
-				<FormulaNotes secondary={scene.secondary} delay={168} />
+				<FormulaNotes secondary={scene.secondary} delay={rd.notes ?? 168} />
 			) : null}
 
 			{scene.unitCancel ? (
@@ -92,11 +120,11 @@ export const FormulaSlide = ({scene, lesson, sceneIndex, totalScenes}: FormulaSl
 					right={scene.unitCancel.right}
 					result={scene.unitCancel.result}
 					callout={scene.callout}
-					delay={216}
+					delay={rd.callout ?? 216}
 				/>
 			) : scene.callout ? (
 				<div style={{position: 'absolute', bottom: 154, left: 64, right: 64, textAlign: 'center'}}>
-					<FadeUp delay={216} durationFrames={14} dy={18}>
+					<FadeUp delay={rd.callout ?? 216} durationFrames={14} dy={18}>
 						<div style={{fontSize: 30, color: TOK.amber, fontStyle: 'italic', fontWeight: 600}}>
 							→ {scene.callout}
 						</div>

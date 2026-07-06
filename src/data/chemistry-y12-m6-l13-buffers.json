@@ -1,0 +1,205 @@
+{
+  "title": "Buffer Solutions",
+  "subtitle": "How a solution holds its pH steady",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 13",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6: Acid/Base Reactions",
+  "syllabusDotPoints": [
+    "conduct a practical investigation to prepare a buffer and demonstrate its properties (ACSCH080)",
+    "describe the importance of buffers in natural systems (ACSCH098, ACSCH102)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "CH12-13",
+    "CH11/12-1",
+    "CH11/12-2",
+    "CH11/12-3",
+    "CH11/12-5",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "What is the role of water in solutions of acids and bases?",
+  "lessonIntent": "Students can explain the buffer mechanism, calculate buffer pH with Henderson-Hasselbalch, and describe the blood bicarbonate buffer.",
+  "examSkill": "Identify the weak acid and conjugate base, write the consumption equation for added H⁺ or OH⁻, and calculate pH from pKa + log of the mole ratio.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, buffer solutions, how a mixture holds its pH steady. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Buffer Solutions (Year 12 Chemistry, Module 6, Lesson 13)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Your blood barely moves off pH 7.4",
+      "body": "Add the same acid to pure water and to blood: water swings five pH units, blood barely shifts.",
+      "callout": "A buffer resists pH change. How?",
+      "image": "bufferBloodBeakers",
+      "durationInFrames": 660,
+      "caption": "A buffer like blood resists pH change where pure water would swing wildly.",
+      "voiceover": {
+        "text": "OK, picture two beakers. One holds pure water, the other holds blood, and both start near neutral. Now add the same small amount of acid to each. The pure water plunges by about five pH units. The blood barely moves, just a few hundredths. That stability is not luck. Your blood is a buffer, and it holds its pH between seven-point-three-five and seven-point-four-five every second of your life, because drifting even a few tenths outside that range is a medical emergency. So what is it about a buffer that lets it soak up added acid or base and barely change? That's the whole lesson, mechanism first, then the calculation."
+      }
+    },
+    {
+      "id": "concept-what",
+      "type": "concept",
+      "heading": "What a buffer is, and isn't",
+      "body": "A buffer is a weak acid and its conjugate base together. It resists pH change; it does not prevent it.",
+      "bullets": [
+        {"text": "Two components at once: weak acid HA and conjugate base A⁻."},
+        {"text": "Add acid: A⁻ mops up H⁺. Add base: HA mops up OH⁻."},
+        {"text": "It resists change, but its capacity is finite."}
+      ],
+      "secondary": "A buffer is not always neutral. The acetate buffer sits at pH 4.74 and works perfectly well.",
+      "callout": "Weak acid plus its conjugate base, side by side.",
+      "durationInFrames": 1050,
+      "caption": "Buffer = HA + A⁻ together; resists pH change but has finite capacity.",
+      "voiceover": {
+        "text": "Let's nail what a buffer actually is. A buffer is a weak acid and its conjugate base, present together in comparable amounts. The classic one is acetic acid alongside sodium acetate. Here's how it copes. When you add a bit of strong acid, the conjugate base mops up the extra hydrogen ions. When you add a bit of strong base, the weak acid mops up the hydroxide. Either way, the added species gets consumed before it can shift the pH much. Now three quick things a buffer is not. It is not necessarily neutral, the acetate buffer happily holds pH four-point-seven-four. It does not neutralise the added acid to nothing, it just resists the change. And it does not have unlimited capacity, every buffer can be exhausted if you push too hard."
+      }
+    },
+    {
+      "id": "concept-mechanism",
+      "type": "concept",
+      "heading": "The mechanism, both directions",
+      "body": "Two equations carry the whole idea. The ratio of base to acid barely shifts, so the pH barely shifts.",
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "Add acid (H⁺)",
+        "afterLabel": "Add base (OH⁻)",
+        "beforeContent": "CH₃COO⁻ + H⁺ → CH₃COOH. [A⁻] dips, [HA] rises, ratio barely moves.",
+        "afterContent": "CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O. [HA] dips, [A⁻] rises, ratio barely moves.",
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Add H⁺: CH₃COO⁻ + H⁺ → CH₃COOH consumes the acid."},
+        {"text": "Add OH⁻: CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O consumes the base."},
+        {"text": "Both components are abundant, so the ratio shifts only slightly."}
+      ],
+      "secondary": "Diluting a buffer keeps the ratio the same, so the pH is essentially unchanged.",
+      "callout": "Resists, never prevents.",
+      "durationInFrames": 1110,
+      "caption": "A⁻ + H⁺ → HA; HA + OH⁻ → A⁻ + H₂O; the ratio barely moves.",
+      "voiceover": {
+        "text": "Here's the mechanism, and it's just two equations. Take an acetate buffer. When you add strong acid, the acetate reacts with the hydrogen ions to form acetic acid. When you add strong base, the acetic acid reacts with the hydroxide to form acetate and water. Now why does this keep the pH so steady? Because both the acid and the base are sitting there in large amounts. When a little acid arrives, the acetate goes down slightly and the acetic acid goes up slightly, but the ratio between them barely changes. And since pH depends on that ratio, the pH barely changes. There's a lovely bonus too. If you dilute a buffer with water, both components dilute equally, so the ratio stays the same, and the pH is essentially unchanged. The right word for all of this is resists. A buffer resists pH change, it never fully prevents it."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The buffer toolkit",
+      "bullets": [
+        {"text": "Henderson-Hasselbalch: pH = pKa + log([A⁻] ÷ [HA])."},
+        {"text": "Maximum capacity: when [A⁻] = [HA], the log is 0, so pH = pKa."},
+        {"text": "Useful range: about pKa ± 1, where the ratio is 10:1 to 1:10."},
+        {"text": "Buffer capacity: more moles of each component resists more added acid or base."}
+      ],
+      "callout": "When the amounts are equal, pH equals pKa.",
+      "durationInFrames": 990,
+      "caption": "Henderson-Hasselbalch, pH = pKa at equal amounts, range pKa ± 1.",
+      "voiceover": {
+        "text": "Now the toolkit. The key equation is Henderson-Hasselbalch. The pH equals the pKa plus the log of the conjugate base concentration divided by the weak acid concentration. Three things fall straight out of it. When the base and acid amounts are equal, the log of one is zero, so the pH simply equals the pKa, and that's where the buffer is most powerful. The useful working range is roughly pKa plus or minus one, which corresponds to ratios between ten to one and one to ten. Outside that, one component is too scarce to do its job. And buffer capacity just means how much acid or base it can absorb, which depends on the actual moles of each component present. More of each, and the buffer can take more of a hit. One handy shortcut, after a neutralisation you can use the mole ratio directly, because the volume cancels top and bottom."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Buffer pH, then add base",
+      "question": "A buffer has 0.15 mol CH₃COOH and 0.10 mol CH₃COONa in 1.00 L (Ka = 1.8 × 10⁻⁵). (a) Find the pH. (b) Predict and explain the change when 0.01 mol NaOH is added.",
+      "coachNote": "Use moles in the ratio; the added OH⁻ converts HA into A⁻.",
+      "steps": [
+        "pKa = −log(1.8 × 10⁻⁵) = 4.74",
+        "(a) pH = 4.74 + log(0.10 ÷ 0.15) = 4.74 + (−0.18) = 4.56",
+        "(b) OH⁻ converts HA → A⁻: n(HA) = 0.15 − 0.01 = 0.14 mol",
+        "n(A⁻) = 0.10 + 0.01 = 0.11 mol",
+        "pH = 4.74 + log(0.11 ÷ 0.14) = 4.74 − 0.10 = 4.64 (rises only slightly) ✓"
+      ],
+      "durationInFrames": 1500,
+      "caption": "Buffer pH 4.56; adding 0.01 mol NaOH lifts it only to 4.64.",
+      "voiceover": {
+        "text": "Let's calculate a real buffer. We have nought-point-one-five moles of acetic acid and nought-point-one moles of sodium acetate in one litre, with a Ka of one-point-eight times ten to the minus five. Part a, the pH. First the pKa, minus the log of one-point-eight times ten to the minus five, which is four-point-seven-four. Then the pH is four-point-seven-four plus the log of nought-point-one over nought-point-one-five. That log is about minus nought-point-one-eight, so the pH is four-point-five-six. Part b, we add nought-point-zero-one moles of sodium hydroxide. The hydroxide converts acetic acid into acetate, so the acid drops to nought-point-one-four moles and the acetate rises to nought-point-one-one. The new pH is four-point-seven-four plus the log of nought-point-one-one over nought-point-one-four, which is four-point-six-four. So adding strong base lifted the pH by less than nought-point-one of a unit. In pure water that much base would have sent the pH soaring. That's the buffer doing its job."
+      }
+    },
+    {
+      "id": "concept-blood",
+      "type": "concept",
+      "heading": "The blood buffer",
+      "body": "Blood uses carbonic acid and bicarbonate at a 20-to-1 ratio to hold pH at 7.40.",
+      "bullets": [
+        {"text": "H₂CO₃ / HCO₃⁻ with pKa 6.10 and a 20:1 ratio gives pH 7.40."},
+        {"text": "Add H⁺: HCO₃⁻ + H⁺ → H₂CO₃ → CO₂ + H₂O, breathed out."},
+        {"text": "Add OH⁻: H₂CO₃ + OH⁻ → HCO₃⁻ + H₂O."}
+      ],
+      "secondary": "Because CO₂ is exhaled, the blood buffer is an open system, with capacity far beyond a sealed beaker.",
+      "callout": "20:1 bicarbonate to carbonic acid holds pH 7.40.",
+      "durationInFrames": 1050,
+      "caption": "Blood: H₂CO₃/HCO₃⁻, pKa 6.10, 20:1 → pH 7.40; CO₂ exhaled.",
+      "voiceover": {
+        "text": "Now the buffer NESA loves, the one in your blood. It runs on carbonic acid and bicarbonate. The pKa of carbonic acid is six-point-one-zero, and the body keeps the bicarbonate to carbonic acid ratio at about twenty to one. Plug that into Henderson-Hasselbalch, six-point-one plus the log of twenty, which is six-point-one plus one-point-three, giving pH seven-point-four-zero, right where it should be. When acid builds up, bicarbonate grabs the hydrogen ions to form carbonic acid, which breaks down into carbon dioxide and water, and you simply breathe the carbon dioxide out. When base is added, carbonic acid donates a proton to it. And because the carbon dioxide leaves through your lungs, this is an open system, which gives it far more capacity than any sealed beaker of buffer ever could."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three buffer traps",
+      "body": "Trap 1: thinking a buffer must sit at pH 7. Its pH is set by pKa and the ratio.",
+      "secondary": "Trap 2: saying a buffer neutralises added acid. It resists, it does not remove it. Trap 3: in an ammonia buffer, treating NH₃ as the weak acid; the weak acid is actually NH₄⁺.",
+      "mistakeTag": "Where buffer marks vanish",
+      "callout": "Not always neutral; resists not neutralises; NH₄⁺ is the acid.",
+      "durationInFrames": 1230,
+      "caption": "Buffers aren't always pH 7; they resist not neutralise; NH₄⁺ is the weak acid.",
+      "voiceover": {
+        "text": "Three traps to dodge. Trap one, assuming a buffer must sit at pH seven. Not true. A buffer's pH is set by the pKa of its weak acid plus the log of the ratio, so the acetate buffer lives at four-point-seven-four and works perfectly. Trap two, writing that a buffer neutralises the acid you add. The precise word is resists. The buffer converts the added hydrogen ions into weak acid molecules, it doesn't make them vanish, and the pH does shift a tiny bit. Trap three is sneaky. In an ammonia buffer, made of ammonia and ammonium chloride, students call ammonia the weak acid. It isn't. Ammonia is the base. The weak acid is the ammonium ion, because that's the species that donates a proton. Get the acid and base the right way round before you touch Henderson-Hasselbalch."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Blood holds pH 7.40 using H₂CO₃/HCO₃⁻ (pKa = 6.10). (a) Confirm the required [HCO₃⁻]/[H₂CO₃] ratio. (b) If pH falls to 7.30, classify the condition.",
+      "pausePrompt": "Pause and rearrange Henderson-Hasselbalch.",
+      "answerSteps": [
+        "(a) 7.40 = 6.10 + log(ratio) → log(ratio) = 1.30",
+        "ratio = 10^1.30 = 20, so [HCO₃⁻]/[H₂CO₃] = 20:1 ✓",
+        "(b) pH 7.30 is below the normal range of 7.35–7.45",
+        "Below 7.35 is acidosis",
+        "A lower ratio (more H₂CO₃) means more dissolved CO₂"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Ratio = 10^1.30 = 20:1; pH 7.30 is acidosis (below 7.35).",
+      "voiceover": {
+        "text": "Quick check on the blood buffer. It holds pH seven-point-four-zero using carbonic acid and bicarbonate, with a pKa of six-point-one-zero. Part a, confirm the bicarbonate to carbonic acid ratio. Pause and rearrange Henderson-Hasselbalch. Right, let's check. Seven-point-four equals six-point-one plus the log of the ratio, so the log of the ratio is one-point-three. Take ten to the power one-point-three, and you get twenty. So the ratio is twenty to one, exactly as stated. Part b, suppose the pH drops to seven-point-three-zero. The normal range is seven-point-three-five to seven-point-four-five, and seven-point-three is below that, so this is acidosis. It corresponds to a lower ratio, meaning more dissolved carbon dioxide and carbonic acid in the blood. Rearranging the buffer equation is exactly how doctors connect blood pH to bicarbonate levels."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A buffer is a weak acid plus its conjugate base together.",
+        "Add H⁺: A⁻ consumes it. Add OH⁻: HA consumes it.",
+        "pH = pKa + log([A⁻] ÷ [HA]); pH = pKa when amounts are equal.",
+        "Useful range is about pKa ± 1; capacity depends on the moles present.",
+        "Blood: H₂CO₃/HCO₃⁻ at 20:1, pKa 6.10, holds pH 7.40."
+      ],
+      "finalPrompt": "Both HA and A⁻ present? It's a buffer, so use Henderson-Hasselbalch.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: composition, mechanism, H-H, range, and the blood buffer.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, a buffer is a weak acid and its conjugate base present together in comparable amounts. Second, the mechanism runs both ways, the conjugate base consumes added hydrogen ions, and the weak acid consumes added hydroxide. Third, the pH comes from Henderson-Hasselbalch, the pKa plus the log of the base to acid ratio, and when those amounts are equal, the pH simply equals the pKa. Fourth, a buffer works best within about one pH unit of its pKa, and its capacity depends on how many moles of each component you have. And fifth, the blood buffer uses carbonic acid and bicarbonate at a twenty to one ratio with a pKa of six-point-one, holding your blood at seven-point-four-zero. Whenever you see both a weak acid and its conjugate base, it's a buffer, so reach for Henderson-Hasselbalch. See you in the next lesson."
+      }
+    }
+  ]
+}

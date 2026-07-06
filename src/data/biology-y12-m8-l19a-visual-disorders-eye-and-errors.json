@@ -1,0 +1,254 @@
+{
+  "title": "Visual Disorders, Glasses, Contact Lenses and Eye Surgery, Part A",
+  "subtitle": "How the eye focuses light, the refractive errors, and which lens fixes which",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 19A",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "explain a range of causes of disorders by investigating the structures and functions of the relevant organs, for example the eye",
+    "investigate technologies that are used to assist with the effects of a disorder, including spectacle lenses, contact lenses and corrective surgery (ACSBL100)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How can technologies be used to assist people who experience disorders?",
+  "lessonIntent": "Students can trace light through the eye, explain myopia, hyperopia, astigmatism and presbyopia by their anatomical cause, and match each error to its corrective lens.",
+  "examSkill": "Identify a refractive disorder from its anatomical cause and choose the correct lens type.",
+  "productionNotes": "Part A of a 2-part split of Lesson 19. Covers the optics of the eye, the refractive errors and which lens corrects which. Part B covers the technologies, application, traps and practice. Bridge scene at the end teases Part B.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, visual disorders, how the eye focuses light and the lenses that correct refractive errors. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Visual Disorders, Glasses, Contact Lenses and Eye Surgery, Part A (Year 12 Biology, Module 8, Lesson 19)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Half the planet, short-sighted by 2050",
+      "body": "In some cities, 80 to 90% of students are already short-sighted. The cause is often not their genes.",
+      "callout": "What actually goes wrong inside a short-sighted eye?",
+      "image": "bioM8L19MyopiaFocus",
+      "durationInFrames": 1494,
+      "caption": "Global myopia is projected to reach 50% by 2050, up from 23% in 2000 (Holden et al. 2016).",
+      "voiceover": {
+        "text": "Here's a startling projection. By 2050, around half of the entire global population is expected to be short-sighted, up from just twenty three percent in the year two thousand. In some East Asian cities, eighty to ninety percent of school students are already myopic. And the surprising part is that this isn't mainly genetic, it's strongly linked to children spending too little time outdoors. So what is actually happening inside a short-sighted eye? The eyeball has grown slightly too long, so light from distant objects comes to a focus just in front of the retina instead of on it, and once the eyeball has grown that way, it can't shorten back. The eye's whole job is to focus light precisely onto the retina, and every visual disorder is a failure of that focusing. Today we'll trace how the eye focuses light, see the three ways it can go wrong, and work out which lens corrects each one."
+      }
+    },
+    {
+      "id": "concept-visual-pathway",
+      "type": "concept",
+      "heading": "How the eye focuses light",
+      "body": "Light is bent mostly by the cornea, fine-tuned by the lens, and focused onto the retina, where it becomes nerve signals.",
+      "bullets": [
+        {
+          "text": "The cornea provides about 70% of the eye's focusing power, with a fixed curvature."
+        },
+        {
+          "text": "The flexible lens provides the rest and changes shape to focus near or far."
+        },
+        {
+          "text": "Light must land on the fovea, the retina's sharpest, cone-rich spot."
+        }
+      ],
+      "secondary": "Changing the lens shape is called accommodation. For near objects the ciliary muscles contract and the lens bulges more convex, bending light more steeply. Signals then travel along the optic nerve to the visual cortex.",
+      "callout": "Cornea bends most, the lens fine-tunes by changing shape.",
+      "durationInFrames": 1788,
+      "caption": "The cornea does ~70% of refraction; the lens accommodates; light focuses on the fovea then travels to the cortex.",
+      "voiceover": {
+        "text": "So let's follow light through the eye, because every disorder and every correction is about where the light comes to a focus. Light first hits the cornea, the clear curved front surface, and here's a number worth knowing, the cornea provides about seventy percent of the eye's total focusing power, with a fixed curvature it can't change. The remaining thirty percent comes from the crystalline lens, which is flexible and can change shape. The light then has to be focused precisely onto the fovea, the tiny central spot of the retina packed with cone cells, which gives our sharpest, most detailed colour vision. Now the clever bit, accommodation, which is how the lens fine-tunes focus for different distances. For a near object, the ciliary muscles around the lens contract, the tension on the lens relaxes, and the elastic lens bulges into a more convex shape, bending light more steeply to keep it focused on the retina. For a distant object, those muscles relax and the lens flattens. Finally, the focused image becomes electrical signals that travel down the optic nerve to the visual cortex at the back of the brain. So, cornea bends most, lens fine-tunes by changing shape."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "cornea",
+            "label": "Cornea"
+          },
+          {
+            "id": "lens",
+            "label": "Lens"
+          },
+          {
+            "id": "retina",
+            "label": "Retina"
+          },
+          {
+            "id": "nerve",
+            "label": "Optic nerve"
+          },
+          {
+            "id": "cortex",
+            "label": "Cortex"
+          }
+        ],
+        "edges": [
+          {
+            "from": "cornea",
+            "to": "lens"
+          },
+          {
+            "from": "lens",
+            "to": "retina"
+          },
+          {
+            "from": "retina",
+            "to": "nerve"
+          },
+          {
+            "from": "nerve",
+            "to": "cortex"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms run through visual disorders, so lock them in before we trace the errors.",
+      "bullets": [
+        {
+          "text": "Myopia: short-sightedness, where distant objects focus in front of the retina."
+        },
+        {
+          "text": "Hyperopia: long-sightedness, where near objects focus behind the retina."
+        },
+        {
+          "text": "Astigmatism: an uneven cornea that focuses light at multiple points."
+        },
+        {
+          "text": "Accommodation: the lens changing shape to focus on objects at different distances."
+        },
+        {
+          "text": "Presbyopia: age-related loss of lens elasticity, reducing near focus."
+        }
+      ],
+      "callout": "Short, long, uneven, the focusing flex, and its age-related loss.",
+      "durationInFrames": 1308,
+      "caption": "Myopia, hyperopia, astigmatism, accommodation, presbyopia.",
+      "voiceover": {
+        "text": "Let's pin down five terms you'll use all lesson. Myopia is short-sightedness, where the eyeball is too long or the cornea too curved, so distant objects focus in front of the retina. Hyperopia is long-sightedness, where the eyeball is too short or the cornea too flat, so near objects focus behind the retina. Astigmatism is an uneven curvature of the cornea, so light focuses at several points instead of one, blurring vision at all distances. Accommodation is the ability of the lens to change shape, using the ciliary muscles, to adjust focus for objects at different distances. And presbyopia is the age-related loss of lens elasticity, usually from the mid-forties, which reduces the ability to focus on near objects. Keep presbyopia and hyperopia firmly apart, because they both blur near vision but for completely different reasons, and the exam loves to test exactly that distinction."
+      }
+    },
+    {
+      "id": "concept-refractive-errors",
+      "type": "concept",
+      "heading": "Three ways focus goes wrong",
+      "body": "Each refractive error is a mismatch between the eye's focusing power and its length, putting the focal point in the wrong place.",
+      "bullets": [
+        {
+          "text": "Myopia: the eye is too long, so distant light focuses in front of the retina."
+        },
+        {
+          "text": "Hyperopia: the eye is too short, so near light would focus behind the retina."
+        },
+        {
+          "text": "Astigmatism: an irregular cornea gives no single focal point at any distance."
+        }
+      ],
+      "secondary": "Presbyopia is different again. It is not a length mismatch but a stiffening lens that can no longer accommodate, which is why people with perfect vision suddenly need reading glasses in their forties.",
+      "callout": "Too long, too short, uneven, or a stiffening lens.",
+      "durationInFrames": 1854,
+      "caption": "Myopia focuses in front, hyperopia behind, astigmatism at multiple points; presbyopia is a stiffening lens.",
+      "voiceover": {
+        "text": "Now the three ways focusing goes wrong, and they all come down to a mismatch between the eye's focusing power and its length. First, myopia, short-sightedness. The eyeball is too long, or the cornea too steeply curved, so parallel light from distant objects converges too early and comes to a focus in front of the retina, leaving distant things blurred. Near vision, though, is fine, because light from close objects is more spread out and focuses further back, right on the retina. Second, hyperopia, long-sightedness. Now the eyeball is too short, or the cornea too flat, so light would focus behind the retina, and it's near objects that blur the most, because they demand the most focusing effort. Third, astigmatism. Here the cornea is unevenly curved, shaped more like a rugby ball than a soccer ball, so light entering along different axes focuses at different points, and there's no single focal point, blurring vision at every distance. And then there's presbyopia, which is different again, because it's not a length mismatch at all. It's a lens that's stiffened with age and can no longer change shape to accommodate, which is exactly why someone with perfect vision their whole life suddenly needs reading glasses in their forties."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Disorder",
+          "Anatomical cause",
+          "Focal point"
+        ],
+        "rows": [
+          [
+            "Myopia",
+            "Eye too long / cornea too steep",
+            "In front of retina"
+          ],
+          [
+            "Hyperopia",
+            "Eye too short / cornea too flat",
+            "Behind the retina"
+          ],
+          [
+            "Astigmatism",
+            "Uneven corneal curvature",
+            "Multiple points"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-correction-lenses",
+      "type": "concept",
+      "heading": "Which lens fixes which",
+      "body": "Each lens moves the focal point onto the retina by bending light the opposite way to the error.",
+      "bullets": [
+        {
+          "text": "Myopia needs a concave lens, which spreads light so the focus moves back onto the retina."
+        },
+        {
+          "text": "Hyperopia needs a convex lens, which converges light so the focus moves forward."
+        },
+        {
+          "text": "Astigmatism needs a cylindrical lens, with different power along different axes."
+        }
+      ],
+      "secondary": "A handy memory hook: myopia uses concave, hyperopia uses convex. Reading glasses for presbyopia are convex too, because they supply the extra convergence the stiff lens can no longer generate for near objects.",
+      "callout": "Myopia concave, hyperopia convex, astigmatism cylindrical.",
+      "durationInFrames": 1572,
+      "caption": "Concave corrects myopia, convex corrects hyperopia and presbyopia, cylindrical corrects astigmatism.",
+      "voiceover": {
+        "text": "So how do lenses fix these? The principle is simple, each lens bends light the opposite way to the error, so the focal point lands back on the retina. For myopia, where the focus falls in front of the retina, you use a concave, or diverging, lens. It spreads the light out a little before it enters the eye, which pushes the focal point backwards onto the retina. For hyperopia, where the focus falls behind the retina, you use a convex, or converging, lens, which brings the light together sooner, pulling the focal point forwards onto the retina. For astigmatism, you need a cylindrical, sometimes called toric, lens, which has different curvatures along different axes to compensate for the uneven cornea. Here's a memory hook that saves marks, myopia uses concave, hyperopia uses convex, and students mix these up constantly. And one more, reading glasses for presbyopia are convex as well, because they supply the extra convergence that the stiffened lens can no longer produce for near objects. So, myopia concave, hyperopia convex, astigmatism cylindrical."
+      }
+    },
+    {
+      "id": "bridge-to-part-b",
+      "type": "endCard",
+      "partLabel": "Part B",
+      "partSubtitle": "The correction technologies",
+      "heading": "Next: glasses, contacts and LASIK",
+      "body": "You've got the optics and the lens types, now we put them to work with real correction technologies.",
+      "bullets": [
+        {
+          "text": "Glasses, contacts and LASIK compared."
+        },
+        {
+          "text": "Matching the correction to the patient."
+        },
+        {
+          "text": "The traps, and a quick-check to test yourself."
+        }
+      ],
+      "ctaLabel": "Watch Part B →",
+      "callout": "see you there",
+      "durationInFrames": 660,
+      "caption": "End of Part A, see you in Part B for the correction technologies.",
+      "voiceover": {
+        "text": "OK, that's the optics locked in. You can trace light through the eye, you know the three refractive errors and presbyopia, and you know which lens corrects each one. In Part B, coming up, we put all of that to work on the real correction technologies, glasses, contacts and laser surgery, then match each one to a patient and clear up the traps that cost marks. See you there."
+      }
+    }
+  ]
+}

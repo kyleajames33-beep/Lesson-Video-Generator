@@ -1,0 +1,264 @@
+{
+  "title": "Causes of Non-infectious Disease",
+  "subtitle": "Genetic, environmental, nutritional and cancer",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 6",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "investigate the causes and effects of non-infectious diseases in humans, including genetic, environmental, and nutritional diseases and cancer (ACSBL114, ACSBL115)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Do non-infectious diseases cause more deaths than infectious diseases?",
+  "lessonIntent": "Students can distinguish infectious from non-infectious disease and classify non-infectious diseases into the four NESA categories.",
+  "examSkill": "Classify a disease by its primary cause and explain why most non-infectious diseases are multifactorial rather than the result of a single cause.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, the causes of non-infectious disease. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Causes of Non-infectious Disease (Year 12 Biology, Module 8, Lesson 6)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A complete reversal in a century",
+      "body": "In 1900, Australia's top three killers were all infectious. By 2022, nearly nine in ten deaths were non-infectious.",
+      "callout": "What we die from has been turned upside down.",
+      "image": "bioM8L6CausesOfDeathShift",
+      "durationInFrames": 1935,
+      "caption": "ABS data: infectious disease dominated in 1900; non-infectious causes dominate today.",
+      "voiceover": {
+        "text": "Here is a striking statistic from the Australian Bureau of Statistics. In 1900, the three biggest killers in Australia were influenza and pneumonia, tuberculosis, and diarrhoeal disease, every one of them an infectious disease, caused by a pathogen you could catch. Now fast forward to 2022. The top killers are completely different, cardiovascular disease, cancer, and dementia, and a remarkable eighty nine percent of all deaths now come from non-infectious causes. In between, life expectancy jumped from about fifty five years to eighty three. So what we die from has been turned almost completely upside down in a single century. Today we ask why that reversal happened, what actually separates an infectious disease from a non-infectious one, and the four categories that organise every non-infectious disease you will study for the rest of this module."
+      }
+    },
+    {
+      "id": "concept-distinction",
+      "type": "concept",
+      "heading": "Infectious versus non-infectious",
+      "body": "The dividing line is transmissibility. A non-infectious disease cannot be passed from person to person by a pathogen.",
+      "bullets": [
+        {
+          "text": "Infectious disease is caused by a pathogen and can be transmitted between people."
+        },
+        {
+          "text": "Non-infectious disease cannot be caught; the cause is not a transmissible pathogen."
+        },
+        {
+          "text": "The criterion is transmissibility, not severity, treatability, or whether genes are involved."
+        }
+      ],
+      "secondary": "Some non-infectious diseases have an infectious trigger, like HPV leading to cervical cancer, but the cancer itself still cannot be caught.",
+      "callout": "Can you catch it? If not, it is non-infectious.",
+      "durationInFrames": 1980,
+      "caption": "Non-infectious means it cannot be transmitted by a pathogen.",
+      "voiceover": {
+        "text": "So let's nail the distinction, because the definition is more subtle than it looks. The single dividing line is transmissibility. An infectious disease is caused by a pathogen, and it can be transmitted from one person to another. A non-infectious disease cannot be caught, because its cause is not a transmissible pathogen. And here is the key point that trips students up, the criterion is purely about transmissibility, not about how severe or treatable the disease is, or whether genetics are involved. So a genetic disease like cystic fibrosis is non-infectious, even though it is inherited. And watch this twist, some non-infectious diseases have an infectious trigger, for example the virus H P V can trigger cervical cancer, but the cancer itself still cannot be caught. The simple test, can you catch it? If not, it is non-infectious."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Non-infectious disease: a disease that cannot be transmitted between individuals by a pathogen."
+        },
+        {
+          "text": "Risk factor: anything that raises the probability of a disease, not a guaranteed cause."
+        },
+        {
+          "text": "Multifactorial disease: a disease caused by several interacting genetic and environmental factors."
+        },
+        {
+          "text": "Epidemiology: the study of how disease is distributed across populations and what determines it."
+        }
+      ],
+      "callout": "A risk factor shifts the odds. It does not seal your fate.",
+      "durationInFrames": 2010,
+      "caption": "Non-infectious disease, risk factor, multifactorial disease, epidemiology.",
+      "voiceover": {
+        "text": "Let's pin down four terms you will use constantly from here on. A non-infectious disease is one that cannot be transmitted between individuals by a pathogen. A risk factor is any characteristic, exposure, or behaviour that increases the probability of developing a disease, and the important word there is probability, it is not the same as a guaranteed cause. A multifactorial disease is one caused by the interaction of several factors together, genetic, environmental, and nutritional, and most non-infectious diseases are multifactorial. And epidemiology is the study of how disease is distributed across whole populations, and what determines those patterns, it is the data-driven side of this inquiry question. Hold onto that idea about risk factors, a risk factor shifts the odds, it does not seal your fate, because it underpins almost every misconception in this part of the module."
+      }
+    },
+    {
+      "id": "concept-four-categories",
+      "type": "concept",
+      "heading": "The four categories",
+      "body": "NESA groups non-infectious diseases by primary cause into genetic, environmental, nutritional, and cancer.",
+      "bullets": [
+        {
+          "text": "Genetic: a gene mutation produces an altered or missing protein."
+        },
+        {
+          "text": "Environmental: a harmful external exposure damages the body."
+        },
+        {
+          "text": "Nutritional: a deficiency or an excess of a nutrient; cancer: uncontrolled cell division."
+        }
+      ],
+      "secondary": "Cancer is its own category regardless of its trigger. Always justify a classification by linking the mechanism to the category.",
+      "callout": "Genetic, environmental, nutritional, cancer. Justify by mechanism.",
+      "durationInFrames": 1980,
+      "caption": "Four categories: genetic, environmental, nutritional, cancer.",
+      "voiceover": {
+        "text": "Now the framework that organises the next four lessons. The N E S A syllabus sorts non-infectious diseases into four categories, by their primary cause. First, genetic diseases, where a gene mutation produces an altered or missing protein, like cystic fibrosis. Second, environmental diseases, where a harmful external exposure damages the body, like smoking. Third, nutritional diseases, caused by either a deficiency or an excess of a nutrient, like scurvy or type two diabetes. And fourth, cancer, uncontrolled cell division, which gets its own category regardless of what triggered it. A vital exam habit, these categories are not strictly separate, most real diseases involve several at once, so always justify your classification by linking the mechanism to the category, not just slapping on a label. The chart shows how these play out in Australia's leading causes of death."
+      },
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          {
+            "label": "Cardiovascular",
+            "value": 27,
+            "color": "bio"
+          },
+          {
+            "label": "Cancer",
+            "value": 25,
+            "color": "amber"
+          },
+          {
+            "label": "Dementia",
+            "value": 10,
+            "color": "chem1"
+          },
+          {
+            "label": "Other NID",
+            "value": 27,
+            "color": "inkDim"
+          }
+        ]
+      }
+    },
+    {
+      "id": "concept-transition",
+      "type": "concept",
+      "heading": "Why the numbers flipped",
+      "body": "Non-infectious diseases did not become more dangerous. Infectious deaths fell, revealing them as the main remaining killers.",
+      "bullets": [
+        {
+          "text": "Vaccines, antibiotics, and sanitation slashed infectious-disease deaths in the 20th century."
+        },
+        {
+          "text": "As people live longer, age-related non-infectious diseases become the leading cause."
+        },
+        {
+          "text": "This shift is called the epidemiological transition."
+        }
+      ],
+      "secondary": "Most non-infectious diseases are multifactorial, so two people with identical risk factors can have very different outcomes.",
+      "callout": "Infectious deaths fell, so non-infectious deaths rose to the top.",
+      "durationInFrames": 2115,
+      "caption": "The epidemiological transition: falling infectious deaths reveal non-infectious killers.",
+      "voiceover": {
+        "text": "So why did the numbers flip so dramatically? Here is the subtle answer that earns marks. Non-infectious diseases did not suddenly become more dangerous. What happened is that infectious disease deaths collapsed over the twentieth century, thanks to vaccines, antibiotics, clean water and sanitation. As fewer people died young from infections, populations aged, and the age-related non-infectious diseases, heart disease, cancer, dementia, were revealed as the dominant remaining killers. This shift from infectious to non-infectious as the leading cause of death has a name, the epidemiological transition, and the World Health Organisation now puts non-communicable diseases at roughly seventy four percent of all global deaths. One more idea to carry forward, most non-infectious diseases are multifactorial, genetic predisposition sets a baseline, and environmental and nutritional factors push the risk up or down, which is why two people with identical risk factors can still have completely different outcomes."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Classify by mechanism",
+      "question": "Classify each disease into one of the four categories and justify by its mechanism: (a) cystic fibrosis; (b) mesothelioma from asbestos; (c) scurvy.",
+      "coachNote": "Do not just label; name the mechanism that places it in the category.",
+      "steps": [
+        "(a) Cystic fibrosis: an inherited CFTR gene mutation alters a protein, so it is a genetic disease.",
+        "(b) Mesothelioma: caused by an external exposure to asbestos fibres, so it is an environmental disease (and a cancer).",
+        "(c) Scurvy: caused by a deficiency of vitamin C in the diet, so it is a nutritional disease.",
+        "Justification rule: link the actual cause (mutation, exposure, deficiency) to the category.",
+        "Answer: (a) genetic, (b) environmental, (c) nutritional ✓"
+      ],
+      "durationInFrames": 2040,
+      "caption": "(a) genetic, (b) environmental, (c) nutritional — justified by mechanism.",
+      "voiceover": {
+        "text": "Let's practise classifying, because exams want the mechanism, not just the label. Part a, cystic fibrosis. It is caused by an inherited mutation in the C F T R gene, which alters a protein, so that is a genetic disease, and the justification is the mutation. Part b, mesothelioma caused by asbestos. The cause here is an external exposure, breathing in asbestos fibres, so it is an environmental disease, and it also happens to be a cancer, which shows how categories overlap. Part c, scurvy. It is caused by a dietary deficiency of vitamin C, so it is a nutritional disease, and the justification is the missing nutrient. Notice the pattern in every justification, you link the actual cause, a mutation, an exposure, or a deficiency, to the category. That linking sentence is what turns a one-word label into a full-mark classification."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Is Type 2 diabetes a lifestyle disease?",
+      "question": "Type 2 diabetes is often called a lifestyle disease. Evaluate that label by considering more than one type of factor.",
+      "coachNote": "Evaluate means weigh both sides, then make a judgement.",
+      "steps": [
+        "Supporting the label: diet, physical inactivity, and obesity are major modifiable risk factors.",
+        "Against the label: there is strong genetic predisposition, so risk varies between people with similar diets.",
+        "Also against: socioeconomic factors like food access and environment are not simply free choices.",
+        "Judgement: the label captures the modifiable risk but is misleading if it implies pure personal choice.",
+        "Answer: partly accurate, but oversimplified because the disease is multifactorial ✓"
+      ],
+      "durationInFrames": 2160,
+      "caption": "T2D label is partly accurate but oversimplified; the disease is multifactorial.",
+      "voiceover": {
+        "text": "Now an evaluate question, the kind that separates the top bands. Type two diabetes is often called a lifestyle disease, so evaluate that label, which means weigh both sides and then make a judgement. First, what supports the label. Diet, physical inactivity, and obesity are genuinely major modifiable risk factors for type two diabetes, so the lifestyle framing does capture something real. Now what argues against it. There is a strong genetic predisposition, which is why two people with very similar diets can have very different risk. And there are powerful socioeconomic factors too, food access, cost, and the physical environment, which are not simply free personal choices. So the judgement, the label is partly accurate, because lifestyle factors clearly matter, but it is misleading if it implies the disease is purely about individual choice. The disease is multifactorial, and a good evaluation says exactly that, partly true, but an oversimplification."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking non-infectious means non-genetic. The term is only about transmissibility, so genetic diseases are non-infectious.",
+      "secondary": "Trap 2: thinking a risk factor guarantees the disease. A risk factor only raises probability; many heavy smokers never get lung cancer. Trap 3: treating cancer as one disease. Cancer is hundreds of distinct diseases sharing only uncontrolled cell division.",
+      "mistakeTag": "Where causes marks vanish",
+      "callout": "Non-infectious is about transmission, not genes. Risk is probability, not destiny.",
+      "durationInFrames": 2130,
+      "caption": "Non-infectious is about transmission (not genes); risk is probability; cancer is many diseases.",
+      "voiceover": {
+        "text": "Three traps that cost marks across this whole inquiry question. Trap one, thinking non-infectious means non-genetic. It does not. The term refers only to transmissibility, so a genetic disease like cystic fibrosis or Huntington's is absolutely non-infectious. Non-infectious and genetic are independent ideas. Trap two, the big one, thinking that having a risk factor guarantees the disease. A risk factor only increases the statistical probability of disease, it does not determine your individual outcome. Millions of heavy smokers never develop lung cancer, and millions of people with a B R C A one mutation never develop breast cancer. Risk operates at the population level, not as personal destiny. Trap three, treating cancer as a single disease. Cancer is a broad category of hundreds of distinct diseases, with different cells of origin, different mechanisms, and different treatments. Lung cancer, leukaemia, and melanoma share only one feature, uncontrolled cell division."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A student says, my grandfather smoked for 50 years and never got cancer, so smoking does not really cause it. Explain the flaw in this reasoning using the idea of a risk factor.",
+      "pausePrompt": "Pause and think about population versus individual.",
+      "answerSteps": [
+        "Smoking is a risk factor, meaning it raises the probability of cancer across a population.",
+        "A risk factor does not guarantee disease in any single individual.",
+        "One person avoiding cancer does not disprove a strong population-level link.",
+        "Across millions of people, smoking clearly and substantially increases cancer rates.",
+        "Answer: the flaw is treating a population probability as an individual certainty ✓"
+      ],
+      "durationInFrames": 2085,
+      "caption": "One non-smoker outcome does not refute a population-level risk factor.",
+      "voiceover": {
+        "text": "Quick check. A student says, my grandfather smoked for fifty years and never got cancer, so smoking does not really cause it. Explain the flaw in this reasoning, using the idea of a risk factor. Pause and think about population versus individual. Right, let's check it. Smoking is a risk factor, which means it raises the probability of cancer across a whole population. But a risk factor does not guarantee the disease in any single individual, some heavy smokers genuinely never develop cancer, by chance and biology. So one person avoiding cancer does not disprove a strong population-level link at all. Across millions of people, smoking clearly and substantially increases cancer rates, that is exactly what the epidemiological data shows. The flaw, then, is treating a population-level probability as if it were an individual certainty, the grandfather is one data point, not the whole pattern."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Non-infectious disease is defined by transmissibility: it cannot be caught from a pathogen.",
+        "The four categories are genetic, environmental, nutritional, and cancer.",
+        "Non-infectious deaths rose because infectious deaths fell: the epidemiological transition.",
+        "Most non-infectious diseases are multifactorial, so risk is not destiny.",
+        "A risk factor raises probability at the population level, not certainty for an individual."
+      ],
+      "finalPrompt": "Classifying a disease? Name the mechanism, then link it to the category.",
+      "durationInFrames": 1755,
+      "caption": "Five takeaways: the definition, the four categories, the transition, multifactorial risk.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, a non-infectious disease is defined by transmissibility, it cannot be caught from a pathogen, regardless of whether genes are involved. Second, the four categories are genetic, environmental, nutritional, and cancer. Third, non-infectious deaths rose to the top not because they got worse, but because infectious deaths fell, the epidemiological transition. Fourth, most non-infectious diseases are multifactorial, which is why risk is never destiny. And fifth, a risk factor raises probability at the population level, it does not guarantee disease for any one person. Whenever you classify a disease, name the mechanism first, then link it to the category. Next lesson we go deep on the first category, genetic disease. See you there."
+      }
+    }
+  ]
+}

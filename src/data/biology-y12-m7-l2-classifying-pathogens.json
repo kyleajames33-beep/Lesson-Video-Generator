@@ -1,0 +1,315 @@
+{
+  "title": "Classifying Pathogens",
+  "subtitle": "Why one drug can never kill them all",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 2",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "describe a variety of infectious diseases caused by pathogens, including microorganisms, macroorganisms and non-cellular pathogens (ACSBL097, ACSBL098, ACSBL116, ACSBL117)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6"
+  ],
+  "inquiryQuestion": "How are diseases transmitted?",
+  "lessonIntent": "Students can classify any pathogen by type, link its structure to its treatment, and describe a host-entry adaptation for each major type.",
+  "examSkill": "Classify a pathogen with a structural reason, and explain why a treatment effective against one type fails against another.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, classifying pathogens. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Classifying Pathogens (Year 12 Biology, Module 7, Lesson 2)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The drug that only kills bacteria",
+      "body": "Penicillin was a miracle. But it does nothing to viruses, fungi, or worms. The reason is classification.",
+      "callout": "Why can't one drug kill them all?",
+      "image": "bioM7L2PenicillinZone",
+      "durationInFrames": 1410,
+      "caption": "Penicillin kills bacteria but not viruses, fungi, or parasites, because of pathogen classification.",
+      "voiceover": {
+        "text": "In September nineteen twenty-eight, Alexander Fleming came back from holiday to find a mould had killed the bacteria on one of his culture plates, leaving a clear, bacteria-free ring around it. That mould gave us penicillin, one of the most important discoveries in medical history. But here's the catch. Penicillin works beautifully against bacteria, and yet it does absolutely nothing against viruses, fungi, or parasitic worms. Same drug, completely different outcomes. So why can't one drug just kill them all? The answer is classification, because each type of pathogen has a different biology, and a treatment has to target that specific biology to work."
+      }
+    },
+    {
+      "id": "concept-treatment",
+      "type": "concept",
+      "heading": "Classification decides treatment",
+      "body": "Penicillin disrupts bacterial cell walls. Other pathogens don't have that target, so it misses them entirely.",
+      "bullets": [
+        {
+          "text": "Bacteria, antibiotics: target cell walls and ribosomes."
+        },
+        {
+          "text": "Viruses, antivirals or vaccines: no cell wall to attack."
+        },
+        {
+          "text": "Fungi, antifungals: a different cell wall made of chitin and ergosterol."
+        }
+      ],
+      "secondary": "Giving antibiotics for a viral infection does not just fail, it actively breeds antibiotic resistance by selecting for resistant bacteria in the patient.",
+      "callout": "Right tool for the right structure, every time.",
+      "durationInFrames": 1915,
+      "caption": "Each pathogen type needs treatment matched to its specific structure.",
+      "voiceover": {
+        "text": "So let's see why classification is the very first step in choosing a treatment. Think of it as a locksmith problem. Penicillin works by disrupting the synthesis of bacterial cell walls. That's its lock. But a virus has no cell wall at all, a fungus has a completely different wall made of chitin and ergosterol, and a tapeworm is a multicellular animal. The antibiotic's key simply doesn't fit any of those locks. So bacteria get antibiotics, viruses get antivirals or vaccines, fungi get antifungals, and parasitic worms get anthelmintics. And here's the part that really matters clinically. Giving someone antibiotics for a viral infection doesn't just fail to help, it actively breeds antibiotic resistance by killing off the helpful bacteria and selecting for the resistant ones. Accurate classification isn't academic, it's the difference between the right treatment and a harmful one."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Pathogen",
+          "Treatment",
+          "Target"
+        ],
+        "rows": [
+          [
+            "Bacteria",
+            "Antibiotics",
+            "Cell wall, ribosomes"
+          ],
+          [
+            "Viruses",
+            "Antivirals, vaccines",
+            "No cell wall to hit"
+          ],
+          [
+            "Fungi",
+            "Antifungals",
+            "Chitin, ergosterol wall"
+          ],
+          [
+            "Helminths",
+            "Anthelmintics",
+            "Paralyse or starve worm"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The pathogen vocabulary",
+      "bullets": [
+        {
+          "text": "Bacteria: single-celled prokaryotes with no membrane-bound nucleus."
+        },
+        {
+          "text": "Fungi: eukaryotes including yeasts and moulds, with a chitin cell wall."
+        },
+        {
+          "text": "Protozoa: mostly single-celled eukaryotes with complex life cycles."
+        },
+        {
+          "text": "Helminth: a parasitic worm, such as a tapeworm or roundworm."
+        }
+      ],
+      "callout": "Prokaryote bacterium, eukaryote fungus and protozoan, animal helminth.",
+      "durationInFrames": 1385,
+      "caption": "Bacteria, fungi, protozoa, helminths.",
+      "voiceover": {
+        "text": "Let's lock down the vocabulary, because the exam expects precision here. Bacteria are single-celled prokaryotes, meaning they have no membrane-bound nucleus. Fungi are eukaryotes, the group that includes yeasts and moulds, and their cell walls are made of chitin. Protozoa are mostly single-celled eukaryotes, often with complex life cycles that move between hosts, and the malaria parasite is the classic example. A helminth is simply a parasitic worm, like a tapeworm or a roundworm, and because it's a multicellular animal, it counts as a macroorganism. Keep prokaryote versus eukaryote clear, because that single word can earn or lose you a classification mark."
+      }
+    },
+    {
+      "id": "concept-noncellular",
+      "type": "concept",
+      "heading": "Viroid versus prion",
+      "body": "Both are non-cellular and both break the usual rules, but they are completely different agents.",
+      "bullets": [
+        {
+          "text": "Viroid: a tiny circular RNA, no protein coat, smallest known pathogen, plants only."
+        },
+        {
+          "text": "Prion: a misfolded protein, no nucleic acid at all, animals only."
+        },
+        {
+          "text": "Neither is a cell, and neither has both nucleic acid and protein."
+        }
+      ],
+      "secondary": "A virus has both nucleic acid and a protein coat. A viroid drops the coat; a prion drops the nucleic acid entirely. That contrast is a classic exam trap.",
+      "callout": "RNA only versus protein only, plants versus animals.",
+      "durationInFrames": 1820,
+      "caption": "Viroid is RNA-only and plant-only; prion is protein-only and animal-only.",
+      "voiceover": {
+        "text": "Now to a distinction the HSC tests almost every year, viroids versus prions. Both are non-cellular, and both break the rules you'd expect, but they are completely different agents. A viroid is a tiny ring of single-stranded RNA, with no protein coat at all. It's the smallest known pathogen, and it infects plants only, like potato spindle tuber viroid. A prion is the mirror image, it's a misfolded protein with no nucleic acid whatsoever, and it infects animals only, like mad cow disease. Compare that to a virus, which has both nucleic acid and a protein coat. A viroid drops the coat, a prion drops the nucleic acid. So the trap is treating a viroid as a small virus, or lumping prions and viroids together. They share only one thing, neither is a cell."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Viroid",
+          "Prion"
+        ],
+        "rows": [
+          [
+            "Made of",
+            "Circular RNA only",
+            "Misfolded protein only"
+          ],
+          [
+            "Nucleic acid?",
+            "Yes, RNA",
+            "None"
+          ],
+          [
+            "Infects",
+            "Plants only",
+            "Animals only"
+          ],
+          [
+            "Example",
+            "PSTVd",
+            "BSE, CJD"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-entry",
+      "type": "concept",
+      "heading": "Adaptations for host entry",
+      "body": "A pathogen that cannot get into a host cannot cause disease, so each type has tools to breach the barriers.",
+      "bullets": [
+        {
+          "text": "Bacteria: fimbriae and pili to attach, a capsule to resist being engulfed."
+        },
+        {
+          "text": "Viruses: surface proteins that lock onto specific host receptors."
+        },
+        {
+          "text": "Fungi: keratinases that digest skin, plus spores for airborne spread."
+        }
+      ],
+      "secondary": "Helminths use hooks and suckers to anchor in the gut, and some larvae burrow straight through bare skin. Structure follows the job of getting in.",
+      "callout": "Different doorways, different keys.",
+      "durationInFrames": 1940,
+      "caption": "Each pathogen type has structural adaptations to breach host barriers.",
+      "voiceover": {
+        "text": "We just saw the types, so now, how do they actually get in? A pathogen that can't breach a host can't cause disease, so each type has evolved specific tools. Bacteria use fimbriae and pili, hair-like projections that grip onto host cell receptors, and many wear a capsule, a slimy coat that resists being engulfed by immune cells. Viruses rely on surface proteins, like the spike protein of SARS-CoV-2, which lock onto specific receptor molecules, and that's what decides exactly which cells a virus can infect. Fungi secrete keratinases, enzymes that digest the keratin in your skin, nails, and hair, and they spread as airborne spores you can inhale straight into the lungs. And helminths use hooks and suckers to anchor in the gut, while some larvae burrow directly through bare skin. In every case, the structure follows the job of getting in."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "attach",
+            "label": "Attach"
+          },
+          {
+            "id": "evade",
+            "label": "Evade"
+          },
+          {
+            "id": "enter",
+            "label": "Enter"
+          },
+          {
+            "id": "spread",
+            "label": "Spread"
+          }
+        ],
+        "edges": [
+          {
+            "from": "attach",
+            "to": "evade"
+          },
+          {
+            "from": "evade",
+            "to": "enter"
+          },
+          {
+            "from": "enter",
+            "to": "spread"
+          }
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Spot the classification errors",
+      "question": "A student writes: bacteria, viruses, and fungi are all cellular pathogens; prions are small pieces of RNA; viroids infect both plants and animals using a protein coat. Find and correct the three errors.",
+      "coachNote": "Check each claim against two questions: is it a living cell, and what is it actually made of?",
+      "steps": [
+        "Error 1: viruses are not cellular. They are non-cellular, so only bacteria and fungi in that list are cellular.",
+        "Error 2: prions are not RNA. A prion is a misfolded protein with no nucleic acid; RNA-only describes a viroid.",
+        "Error 3: viroids do not infect animals and have no protein coat. They are bare circular RNA, plants only.",
+        "Corrected: bacteria and fungi are cellular; prions are misfolded proteins; viroids are coatless RNA infecting plants only.",
+        "Decision rule: living cell versus non-cellular first, then identify the molecule, RNA or protein."
+      ],
+      "durationInFrames": 2050,
+      "caption": "Viruses are non-cellular; prions are protein; viroids are coatless plant-only RNA.",
+      "voiceover": {
+        "text": "Let's do an error-spotting question, exactly the format the HSC uses. A student writes the following. Bacteria, viruses, and fungi are all cellular pathogens. Prions are small pieces of RNA. And viroids infect both plants and animals using a protein coat. There are three errors, let's hunt them. Error one, viruses are not cellular. A virus is non-cellular, so in that first list, only bacteria and fungi are actually cells. Error two, prions are not RNA. A prion is a misfolded protein with no nucleic acid at all, and RNA-only describes a viroid, not a prion. Error three, viroids do not infect animals, and they have no protein coat. A viroid is just a bare ring of RNA, and it infects plants only. Notice the method underneath. First ask, living cell or non-cellular, then ask what it's actually made of, RNA or protein. That two-step check fixes every one of these."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking all pathogens are microorganisms. Viruses, viroids, and prions are non-cellular, and helminths are macroorganisms.",
+      "secondary": "Trap 2: treating prions as a kind of virus because both lack a cell. A prion has no nucleic acid; a virus always carries DNA or RNA inside a protein coat. They are fundamentally different non-cellular agents.",
+      "mistakeTag": "Where the non-cellular marks vanish",
+      "callout": "Non-cellular is not one thing, it's three different things.",
+      "durationInFrames": 1575,
+      "caption": "Not all pathogens are microorganisms; prions are not viruses.",
+      "voiceover": {
+        "text": "Two traps to nail before we finish. Trap one, assuming all pathogens are microorganisms, those tiny living cells. They aren't. Viruses, viroids, and prions are non-cellular, with no membrane, no cytoplasm, no ribosomes. And helminths sit in the opposite direction, they're multicellular animals, so they're macroorganisms. Only bacteria, fungi, and protozoa are true microorganisms. Trap two, lumping prions in with viruses because both lack a proper cell. That's wrong. A prion is purely a misfolded protein with no genetic material, whereas a virus always carries DNA or RNA tucked inside a protein coat. They're both non-cellular, but they are fundamentally different agents. So remember, non-cellular isn't one category, it's three distinct things, viruses, viroids, and prions."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A patient has a fungal skin infection but is prescribed penicillin, which has no effect. Using structure, explain why the antibiotic failed, and name the correct class of drug.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Penicillin works by disrupting bacterial cell wall synthesis, specifically the peptidoglycan wall.",
+        "A fungus is a eukaryote with a cell wall made of chitin and ergosterol, not peptidoglycan.",
+        "Penicillin has no peptidoglycan target in a fungus, so it cannot affect it.",
+        "The correct treatment is an antifungal, which targets fungal-specific structures like ergosterol.",
+        "Answer: wrong target structure, so use an antifungal, not an antibiotic."
+      ],
+      "durationInFrames": 1600,
+      "caption": "Penicillin targets bacterial walls; a fungus has a chitin wall, so use an antifungal.",
+      "voiceover": {
+        "text": "Quick check. A patient has a fungal skin infection, but they're prescribed penicillin, and it does nothing. Using structure, explain why the antibiotic failed, and name the correct class of drug. Pause and reason it through. Okay, here's the logic. Penicillin works by disrupting the synthesis of the bacterial cell wall, specifically a molecule called peptidoglycan. But a fungus is a eukaryote, and its cell wall is made of chitin and ergosterol, not peptidoglycan. So there's simply no target there for penicillin to attack, which is exactly why it has no effect. The correct treatment is an antifungal, which goes after fungal-specific structures like ergosterol. So the answer is wrong target structure, use an antifungal, not an antibiotic."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Classification is the first step in treatment, because structure decides the cure.",
+        "Antibiotics hit bacterial walls and ribosomes, targets absent in other pathogens.",
+        "Viroid: coatless RNA, plants only. Prion: nucleic-acid-free protein, animals only.",
+        "Each type has host-entry tools: fimbriae, surface proteins, keratinases, hooks.",
+        "Check living cell versus non-cellular first, then identify the molecule."
+      ],
+      "finalPrompt": "Classifying a pathogen? Cell or not, then what is it made of?",
+      "durationInFrames": 1750,
+      "caption": "Five takeaways: structure drives treatment, viroid vs prion, entry tools, the check.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, classification is the first step in treatment, because a pathogen's structure decides which cure can work. Second, antibiotics target bacterial cell walls and ribosomes, structures that other pathogens simply don't have, which is why they fail against viruses and fungi. Third, a viroid is coatless RNA that infects plants only, while a prion is a nucleic-acid-free protein that infects animals only. Fourth, each pathogen type has its own host-entry tools, fimbriae and capsules for bacteria, surface proteins for viruses, keratinases for fungi, and hooks and suckers for worms. And fifth, when you classify, always check living cell versus non-cellular first, then identify the molecule. Next lesson, how Pasteur and Koch proved these pathogens actually cause disease. See you there."
+      }
+    }
+  ]
+}

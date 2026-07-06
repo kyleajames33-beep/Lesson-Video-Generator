@@ -1,0 +1,264 @@
+{
+  "title": "Environmental Diseases",
+  "subtitle": "Smoking, UV radiation, asbestos and epigenetics",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 8",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "investigate the causes and effects of non-infectious diseases in humans, including environmental diseases (ACSBL114, ACSBL115)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Do non-infectious diseases cause more deaths than infectious diseases?",
+  "lessonIntent": "Students can explain how environmental exposures cause disease through exposure, dose-response, and latency, and describe the molecular mechanism of named environmental diseases.",
+  "examSkill": "Describe the molecular mechanism by which a named environmental agent causes disease, and distinguish epigenetic change from genetic mutation.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, environmental diseases. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Environmental Diseases (Year 12 Biology, Module 8, Lesson 8)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Proven deadly, still killing millions",
+      "body": "Tobacco causes 22 different cancers and 8 million deaths a year, yet a billion people still smoke. Australia shows it is preventable.",
+      "callout": "The exposure is the disease. Remove it, and risk falls.",
+      "image": "bioM8L8TobaccoExposure",
+      "durationInFrames": 1965,
+      "caption": "IARC: tobacco causes 22 cancers; Australian plain packaging cut smoking from 35% to 11%.",
+      "voiceover": {
+        "text": "The International Agency for Research on Cancer reports that tobacco causes twenty two different types of cancer, and kills around eight million people every year worldwide. The link between smoking and cancer has been proven beyond any doubt since the nineteen sixties, and yet about a billion people still smoke today. But here is the hopeful side, and it is pure biology. In Australia, plain packaging laws introduced in 2012 helped drive smoking prevalence down from thirty five percent in nineteen eighty to just eleven percent by 2022. That is direct evidence that an environmental disease is preventable, because if you remove the exposure, you reduce the disease. Today we unpack what makes a disease environmental in the first place, and we follow the precise molecular mechanisms by which smoking, ultraviolet light, and asbestos each cause disease."
+      }
+    },
+    {
+      "id": "concept-environmental",
+      "type": "concept",
+      "heading": "What makes a disease environmental",
+      "body": "Three signatures mark an environmental disease: an external exposure, a dose-response relationship, and a latency period.",
+      "bullets": [
+        {
+          "text": "Exposure: an external agent is required, so removing it prevents the disease."
+        },
+        {
+          "text": "Dose-response: more exposure means more DNA damage and higher risk."
+        },
+        {
+          "text": "Latency: years or decades pass between first exposure and disease appearing."
+        }
+      ],
+      "secondary": "Long latency reflects the time needed for multiple mutations to accumulate in a single cell lineage, which is why asbestos disease can take 20 to 50 years.",
+      "callout": "External agent, dose builds risk, disease arrives years later.",
+      "durationInFrames": 2070,
+      "caption": "Environmental diseases show exposure, dose-response, and latency.",
+      "voiceover": {
+        "text": "So what actually defines an environmental disease? There are three signatures, and naming them earns marks. First, exposure, an external agent is required, which means that if you remove the agent, you prevent the disease, exactly what the smoking statistics show. Second, a dose-response relationship, the more exposure you get, the more D N A damage occurs, and the higher your risk climbs, which is why doctors measure smoking in pack-years. Third, a latency period, there is a long gap, often years or decades, between the first exposure and the disease actually appearing. Why such a long delay? Because cancer requires multiple mutations to accumulate in a single cell lineage, one after another, and that takes time. It is the reason asbestos-related disease can take twenty to fifty years to show up. External agent, dose builds the risk, and the disease arrives years later."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Environmental disease: a disease caused by external exposure rather than inherited genes."
+        },
+        {
+          "text": "Carcinogen: an agent that damages DNA and increases the risk of cancer."
+        },
+        {
+          "text": "Mutagen: any agent that raises the mutation rate; all carcinogens are mutagens."
+        },
+        {
+          "text": "Epigenetics: changes in gene expression that do not alter the DNA sequence itself."
+        }
+      ],
+      "callout": "A carcinogen damages DNA. Epigenetics changes which genes are on.",
+      "durationInFrames": 2025,
+      "caption": "Environmental disease, carcinogen, mutagen, epigenetics.",
+      "voiceover": {
+        "text": "Let's pin down four key terms. An environmental disease is one caused or triggered by exposure to external agents, physical, chemical, or biological, rather than by inherited genes. A carcinogen is an agent that damages D N A and increases the risk of cancer, for example ultraviolet radiation or tobacco smoke. A mutagen is any agent that raises the mutation rate, and the relationship is worth knowing, all carcinogens are mutagens, but not all mutagens cause cancer. And epigenetics, a big one for this lesson, refers to changes in gene expression that do not alter the underlying D N A sequence at all, environmental exposures can switch genes on or off without mutating them. So the contrast to hold in mind, a carcinogen damages the D N A itself, whereas epigenetics changes which genes are switched on, leaving the sequence intact."
+      }
+    },
+    {
+      "id": "concept-tobacco",
+      "type": "concept",
+      "heading": "Tobacco: three disease pathways",
+      "body": "Tobacco smoke causes three different diseases through three distinct mechanisms, not one.",
+      "bullets": [
+        {
+          "text": "Lung cancer: carcinogens form DNA adducts, mutating tumour suppressor and oncogene controls."
+        },
+        {
+          "text": "COPD: chronic irritants destroy lung tissue through ongoing inflammation."
+        },
+        {
+          "text": "Cardiovascular disease: damage to vessel linings plus nicotine and carbon monoxide drive atherosclerosis."
+        }
+      ],
+      "secondary": "Lung cancer involves DNA mutation and loss of cell-cycle control. COPD is tissue destruction by inflammation. Saying smoking damages the lungs is too vague for marks.",
+      "callout": "Name the mechanism, not just that it harms the lungs.",
+      "durationInFrames": 2280,
+      "caption": "Tobacco causes lung cancer, COPD, and CVD by three different mechanisms.",
+      "voiceover": {
+        "text": "Let's take tobacco first, because it is the most studied environmental carcinogen, and it actually causes three different diseases through three distinct mechanisms. Pathway one, lung cancer. The carcinogens in smoke form D N A adducts in the bronchial cells, which cause mutations in the genes that control the cell cycle, the tumour suppressors and oncogenes we will study next lesson, and that leads to uncontrolled cell division. Pathway two, C O P D, or emphysema. Here the chronic irritants in smoke trigger ongoing inflammation that physically destroys the delicate lung tissue, this is tissue destruction, not a D N A mutation. Pathway three, cardiovascular disease. Smoke damages the lining of blood vessels, and combined with nicotine and carbon monoxide, it accelerates atherosclerosis. The exam point across all three, name the actual mechanism. Writing that smoking damages the lungs is far too vague, you need adducts and mutations for cancer, inflammation and tissue destruction for C O P D."
+      }
+    },
+    {
+      "id": "concept-uv-asbestos",
+      "type": "concept",
+      "heading": "UV and asbestos: physical carcinogens",
+      "body": "Both are physical carcinogens, but they damage DNA in completely different ways.",
+      "bullets": [
+        {
+          "text": "UV radiation forms thymine dimers, bonding adjacent bases and corrupting DNA on replication."
+        },
+        {
+          "text": "Asbestos fibres cannot be broken down, so they cause chronic inflammation and DNA damage."
+        },
+        {
+          "text": "Asbestos causes mesothelioma by its physical shape, not by any chemical reaction."
+        }
+      ],
+      "secondary": "UV directly alters DNA structure; asbestos is chemically inert and works mechanically. Asbestos plus smoking is synergistic, multiplying lung cancer risk.",
+      "callout": "UV bonds DNA bases. Asbestos works by its shape, not chemistry.",
+      "durationInFrames": 2460,
+      "caption": "UV forms thymine dimers; asbestos causes inflammation by physical shape.",
+      "voiceover": {
+        "text": "Now two physical carcinogens that damage D N A in completely different ways. First, ultraviolet radiation. U V is a physical mutagen, and it does something very specific, it causes covalent bonds to form between two adjacent thymine bases, creating what is called a thymine dimer. If that dimer is not repaired before the cell copies its D N A, it causes a mutation, and in skin cells this can lead to melanoma. Australia has the world's highest melanoma rate, fair skin plus a high U V index. Second, asbestos, which is different again. Asbestos is chemically inert, it does not react with D N A. Instead, its fibres are so durable that the body cannot break them down, so they cause chronic inflammation that damages the D N A of the lining cells, eventually causing mesothelioma. The key insight, asbestos causes disease through its physical shape and persistence, not through chemistry. And asbestos combined with smoking is synergistic, the two together multiply lung cancer risk far beyond simply adding them."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Agent",
+          "Mechanism",
+          "Main disease"
+        ],
+        "rows": [
+          [
+            "Tobacco",
+            "DNA adducts, mutation",
+            "Lung cancer, COPD"
+          ],
+          [
+            "UV radiation",
+            "Thymine dimers",
+            "Melanoma"
+          ],
+          [
+            "Asbestos",
+            "Physical, inflammation",
+            "Mesothelioma"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "How UV causes melanoma",
+      "question": "Explain how UV radiation causes melanoma. Name the DNA lesion formed, what happens if it is not repaired, and the effect on the cell.",
+      "coachNote": "Move from the physical lesion to a mutation to lost cell-cycle control.",
+      "steps": [
+        "UV-B photons cause covalent bonds between adjacent thymine bases, forming a thymine dimer.",
+        "Repair enzymes normally remove the dimer, but high UV exposure can overwhelm them.",
+        "If the dimer remains during DNA replication, a permanent mutation is introduced.",
+        "Mutations in cell-cycle control genes remove the brakes on division in the melanocyte.",
+        "Answer: thymine dimer, unrepaired mutation, loss of cell-cycle control, melanoma ✓"
+      ],
+      "durationInFrames": 2190,
+      "caption": "UV: thymine dimer, unrepaired mutation, loss of cell-cycle control, melanoma.",
+      "voiceover": {
+        "text": "Let's work through how U V causes melanoma, a very common four-mark question, and the trick is to move cleanly from a physical lesion to a mutation to lost control. Step one, U V B photons strike the D N A and cause covalent bonds between two adjacent thymine bases, creating a thymine dimer that distorts the D N A. Step two, the cell has repair enzymes that normally cut these dimers out, but very high U V exposure can overwhelm that repair. Step three, if the dimer is still there when the cell replicates, the copying machinery makes an error, introducing a permanent mutation. Step four, if those mutations hit the genes that control the cell cycle, the brakes on division are removed in the pigment cell, the melanocyte. So the full chain is, thymine dimer, unrepaired mutation, loss of cell-cycle control, melanoma. Name the dimer, and you have the key mark."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "What epigenetics actually means",
+      "question": "Explain what epigenetics is, give one mechanism, and explain how an environmental exposure can use it to contribute to cancer.",
+      "coachNote": "Keep the DNA sequence intact; only the expression changes.",
+      "steps": [
+        "Epigenetics is a change in gene expression without any change to the DNA nucleotide sequence.",
+        "One mechanism is DNA methylation: adding a methyl group to a gene's promoter region.",
+        "A methylated promoter blocks transcription factors, so the gene is silenced but still intact.",
+        "Tobacco smoke can methylate and silence a tumour suppressor gene's promoter.",
+        "Answer: silencing a tumour suppressor by methylation has the same effect as deleting it ✓"
+      ],
+      "durationInFrames": 2130,
+      "caption": "Epigenetics: methylation silences a gene without changing its sequence.",
+      "voiceover": {
+        "text": "Now epigenetics, which students find slippery, so let's make it concrete with a six-mark structure. First, the definition, epigenetics is a change in gene expression without any change to the underlying D N A sequence. The gene is still physically there and intact, it is just switched off. Second, a specific mechanism, D N A methylation, where a methyl group is added to a gene's promoter region. Third, how that silences the gene, a methylated promoter blocks the transcription factors from binding, so the gene cannot be read, even though its sequence is intact. Fourth, the cancer link, tobacco smoke can methylate and silence the promoter of a tumour suppressor gene. And here is the punchline that earns top marks, silencing a tumour suppressor by methylation has the same functional effect as deleting it with a mutation, the brake is gone, even though the sequence was never changed."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: writing that smoking always causes lung cancer. It greatly raises risk, but most heavy smokers do not develop lung cancer; risk is not certainty.",
+      "secondary": "Trap 2: saying epigenetic changes alter the DNA sequence. They change gene expression while leaving the sequence intact. Trap 3: saying mesothelioma comes from the chemistry of asbestos. It comes from the physical shape and persistence of the fibres, which are chemically inert.",
+      "mistakeTag": "Where environmental marks vanish",
+      "callout": "Smoking raises risk, not certainty. Epigenetics keeps the sequence. Asbestos is physical.",
+      "durationInFrames": 2295,
+      "caption": "Smoking is risk not certainty; epigenetics keeps the sequence; asbestos is physical.",
+      "voiceover": {
+        "text": "Three traps that cost marks. Trap one, writing that smoking always causes lung cancer. It greatly increases the risk, a heavy lifetime smoker has perhaps ten to twenty five times the risk of a non-smoker, but the majority of heavy smokers do not actually develop lung cancer, because D N A repair efficiency and genetic susceptibility modify individual risk. Risk is not certainty. Trap two, saying epigenetic changes alter the D N A sequence. They do not. Epigenetic changes alter gene expression while leaving the nucleotide sequence completely intact, a methylated cytosine is still a cytosine, the gene is just silenced. That is the defining feature of epigenetics. Trap three, saying mesothelioma is caused by the chemical content of asbestos. It is not, asbestos is chemically inert. Mesothelioma is caused by the physical shape and durability of the fibres, the body simply cannot break them down, and that mechanical persistence drives the chronic inflammation. The mechanism is physical, not chemical."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A person tans regularly but is careful never to get sunburnt. They believe they are safe from skin cancer. Explain why this belief is mistaken.",
+      "pausePrompt": "Pause and think about what actually damages the DNA.",
+      "answerSteps": [
+        "Sunburn is an inflammatory response to UV, but it is not the source of cancer risk.",
+        "The cancer risk comes from UV forming thymine dimers in DNA.",
+        "Thymine dimers accumulate during UV exposure whether or not a visible burn occurs.",
+        "So tanning without burning still accumulates mutagenic DNA damage over time.",
+        "Answer: the absence of a burn does not mean the absence of DNA damage ✓"
+      ],
+      "durationInFrames": 2265,
+      "caption": "Tanning without burning still accumulates DNA damage.",
+      "voiceover": {
+        "text": "Quick check. A person tans regularly but is careful never to get sunburnt, and they believe this keeps them safe from skin cancer. Explain why that belief is mistaken. Pause and think about what actually damages the D N A. Right, let's check it. Sunburn is a physiological response to U V, inflammation and increased blood flow, but the burn itself is not the source of the cancer risk. The cancer risk comes from U V forming thymine dimers in the D N A of skin cells. And here is the key, those thymine dimers form during U V exposure whether or not you ever develop a visible burn. So tanning without burning still steadily accumulates mutagenic D N A damage over time. The belief is mistaken because the absence of a burn does not mean the absence of D N A damage, every hour of U V exposure is adding dimers regardless of how your skin looks."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Environmental diseases show exposure, a dose-response relationship, and a latency period.",
+        "Tobacco causes lung cancer, COPD, and CVD through three different mechanisms.",
+        "UV forms thymine dimers; asbestos causes inflammation by its physical shape.",
+        "Epigenetics changes gene expression without changing the DNA sequence.",
+        "Environmental risk is probabilistic, so exposure raises risk, it does not guarantee disease."
+      ],
+      "finalPrompt": "Explaining an environmental disease? State the agent, then the molecular mechanism.",
+      "durationInFrames": 1770,
+      "caption": "Five takeaways: the three signatures, tobacco, UV and asbestos, epigenetics.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, environmental diseases share three signatures, an external exposure, a dose-response relationship, and a latency period. Second, tobacco causes three different diseases, lung cancer, C O P D, and cardiovascular disease, through three distinct mechanisms. Third, the two physical carcinogens, U V forms thymine dimers in D N A, while asbestos causes inflammation through the physical shape and persistence of its fibres. Fourth, epigenetics changes which genes are switched on, without changing the D N A sequence itself. And fifth, environmental risk is probabilistic, exposure raises your risk, it does not guarantee disease. Whenever you explain an environmental disease, state the agent, then describe the molecular mechanism. Next lesson, nutritional diseases. See you there."
+      }
+    }
+  ]
+}

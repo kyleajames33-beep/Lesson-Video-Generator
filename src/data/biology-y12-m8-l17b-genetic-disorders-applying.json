@@ -1,0 +1,170 @@
+{
+  "title": "Genetic Disorders, Part B",
+  "subtitle": "A pedigree worked example, gene therapy, and the exam traps",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 17B",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "investigate the causes and effects of genetic disorders in humans, including chromosomal and single-gene disorders",
+    "use secondary sources to evaluate the effectiveness of current disease-prevention methods, including genetic screening and emerging gene technologies"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How can non-infectious diseases be prevented?",
+  "lessonIntent": "Students can classify a genetic disorder as chromosomal or single-gene, explain non-disjunction and Mendelian inheritance, and evaluate genetic screening and gene therapy as prevention strategies.",
+  "examSkill": "Classify a genetic disorder and its inheritance pattern, calculate offspring risk, and distinguish a screening test from a diagnostic one.",
+  "productionRole": "production",
+  "productionNotes": "Part B of a 2-part split of L17. Opens with a brief recap of Part A, then the carrier-probability worked example, gene therapy and CRISPR, misconception, quick-check and summary. Assumes the student has watched Part A.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, genetic disorders, continued. Let's go."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Genetic Disorders, Part B (Year 12 Biology, Module 8, Lesson 17B)"
+    },
+    {
+      "id": "recap",
+      "type": "concept",
+      "heading": "Where we left off",
+      "body": "Quick recap from Part A. Genetic disorders come in three kinds. Non-disjunction changes chromosome number. Single genes follow dominant and recessive patterns through a family. Screening flags risk; diagnosis confirms it.",
+      "bullets": [
+        {
+          "text": "Three categories: single-gene, chromosomal, and multifactorial.",
+          "at": 5
+        },
+        {
+          "text": "Single-gene disorders follow dominant or recessive inheritance.",
+          "at": 11
+        },
+        {
+          "text": "Screening flags risk; a diagnostic test confirms the disorder.",
+          "at": 16
+        }
+      ],
+      "callout": "Now we work a real pedigree.",
+      "durationInFrames": 780,
+      "caption": "Quick recap of Part A before we continue.",
+      "revealDelays": {
+        "heading": 29,
+        "body": 88,
+        "bulletsStart": 107,
+        "callout": 698
+      },
+      "voiceover": {
+        "text": "Welcome back. Quick recap from Part A. Genetic disorders fall into three kinds, and non-disjunction is what changes chromosome number when cells divide. Single-gene disorders follow dominant and recessive patterns that you can trace through a family, and screening is about flagging risk while a diagnostic test is what actually confirms a disorder. Right, with the inheritance rules fresh, let's work through a real pedigree question."
+      },
+      "recapSeed": "Where we left off"
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "What's the chance she's a carrier?",
+      "question": "Both of Priya's parents are unaffected carriers of cystic fibrosis, an autosomal recessive disease. Priya herself is unaffected. What is the probability that Priya is a carrier?",
+      "coachNote": "List the genotypes from the cross, then condition on the fact that she is unaffected.",
+      "steps": [
+        "Each parent is a carrier, written Aa, so the cross is Aa × Aa.",
+        "The offspring ratio is 1 AA : 2 Aa : 1 aa, where aa is affected.",
+        "Priya is unaffected, so she cannot be aa; that leaves only AA and Aa, in a 1 to 2 ratio.",
+        "Of those three unaffected outcomes, two are carriers (Aa), so the chance is 2 out of 3.",
+        "Answer: there is a 2/3, about 67%, probability that Priya is a carrier ✓"
+      ],
+      "durationInFrames": 1764,
+      "caption": "Given she is unaffected, Priya has a 2/3 chance of being a carrier (1 AA : 2 Aa among unaffected).",
+      "voiceover": {
+        "text": "Let's do a genetics calculation, because conditional probability trips students up every year. Both of Priya's parents are unaffected carriers of cystic fibrosis, which is autosomal recessive. Priya herself is unaffected. What's the probability she's a carrier? Step one, write the cross. Each carrier parent is big A little a, so the cross is big A little a, times big A little a. Step two, the standard offspring ratio. That cross gives one big A big A, to two big A little a, to one little a little a, where little a little a would be affected. Step three, and this is the crucial move, we're told Priya is unaffected. So she cannot be little a little a. That removes the affected quarter entirely, leaving only the unaffected outcomes, one big A big A and two big A little a. Step four, count the carriers among what's left. Of those three unaffected possibilities, two are carriers, the big A little a ones. So the probability is two out of three, about sixty seven percent. The trick was conditioning on the information that she's unaffected, not just reading twenty five or fifty percent straight off the square."
+      }
+    },
+    {
+      "id": "concept-gene-therapy",
+      "type": "concept",
+      "heading": "Gene therapy, CRISPR and ethics",
+      "body": "Gene therapy targets the genetic root cause, but it remains experimental for most disorders and raises serious ethical questions.",
+      "bullets": [
+        {
+          "text": "Viral vectors deliver a working gene copy into cells, as in approved therapies for inherited blindness."
+        },
+        {
+          "text": "CRISPR-Cas9 cuts and edits DNA at a precise site; Casgevy was the first approved in 2023."
+        },
+        {
+          "text": "Somatic editing affects only the patient; germline editing is heritable and banned in most countries."
+        }
+      ],
+      "secondary": "The limits are real. Off-target edits, delivery to the right organ, and cost all constrain it, with Casgevy around 3.5 million dollars per patient. Ethics covers access equity, genetic discrimination, and reproductive choice.",
+      "callout": "Powerful, but experimental, costly and ethically loaded.",
+      "durationInFrames": 1854,
+      "caption": "Gene therapy and CRISPR target the root cause but remain limited; germline editing is banned in most countries.",
+      "voiceover": {
+        "text": "Finally, can we fix the gene itself? That's gene therapy, which delivers a functional version of a gene into a patient's cells to address the root cause. There are two main approaches. The first uses viral vectors, modified harmless viruses that carry a working gene copy into cells, and there are already approved examples, like Luxturna for an inherited form of blindness. The second is CRISPR Cas nine, molecular scissors guided by a short RNA to cut DNA at a precise spot, then either disable a gene or correct a mutation. In twenty twenty three, Casgevy became the first approved CRISPR therapy, for sickle cell disease. But here's the reality check the exam wants. CRISPR is approved for only a couple of conditions, because off-target edits, getting the machinery into the right organ, and cost all remain huge obstacles, with Casgevy running around three and a half million dollars per patient. There's also a vital distinction, somatic editing changes only the treated individual, while germline editing changes eggs, sperm or embryos and is therefore heritable, which is banned in most countries. And the ethics matter too, access equity, genetic discrimination by insurers or employers, and reproductive autonomy. Powerful technology, but nowhere near a universal cure yet."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: claiming CRISPR can now cure any genetic disease. It is approved for only a couple of conditions, and delivery, off-target edits and cost still limit it.",
+      "secondary": "Trap 2: assuming chromosomal abnormalities are always inherited. Most trisomies are de novo, arising from non-disjunction in a parent with a normal karyotype. Trap 3: thinking carriers of a recessive condition are partly affected. One working allele usually makes enough protein, so carriers are typically symptom-free.",
+      "mistakeTag": "Where genetics marks vanish",
+      "callout": "CRISPR is not a cure-all, chromosomal is often de novo, carriers are unaffected.",
+      "durationInFrames": 1602,
+      "caption": "CRISPR is not a universal cure; most chromosomal disorders are de novo; carriers are usually unaffected.",
+      "voiceover": {
+        "text": "Three traps that quietly cost marks every year. Trap one, the headline-driven one, claiming CRISPR can now cure any genetic disease. It can't. As of now it's approved for only a couple of conditions, both affecting blood cells, and delivering the machinery to other organs, off-target edits, and a multi-million-dollar price tag all remain major barriers. Calling CRISPR a current widespread treatment is simply wrong in an exam. Trap two, assuming chromosomal abnormalities are always inherited from a parent. The vast majority of trisomies, like trisomy twenty one, are de novo, arising from non-disjunction in the parent's gametes, while the parent's own karyotype is completely normal. Only the rarer translocation form of Down syndrome can be inherited from a carrier parent. Trap three, thinking carriers of a recessive condition are partly affected. They almost never are. A carrier has one faulty allele and one working one, and that single working copy usually makes enough protein, so the carrier is symptom-free. Only someone with two faulty copies develops the disease. Nail those three and genetics questions become easy marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A mother is an unaffected carrier of haemophilia A, an X-linked recessive disorder. The father is unaffected. What is the probability that (a) a son is affected, and (b) a daughter is a carrier?",
+      "pausePrompt": "Pause and draw the cross.",
+      "answerSteps": [
+        "The mother is XᴴXʰ (carrier); the father is XᴴY (unaffected).",
+        "The four equally likely offspring are XᴴXᴴ, XᴴXʰ, XᴴY and XʰY.",
+        "(a) Sons are XᴴY or XʰY, and one of those two is affected, so the chance a son is affected is 1/2.",
+        "(b) Daughters are XᴴXᴴ or XᴴXʰ, and one of those two is a carrier, so the chance a daughter is a carrier is 1/2.",
+        "Answer: (a) a son is affected with probability 1/2, (b) a daughter is a carrier with probability 1/2 ✓"
+      ],
+      "durationInFrames": 2142,
+      "caption": "Carrier mother × unaffected father: sons affected 1/2, daughters carriers 1/2.",
+      "voiceover": {
+        "text": "Quick check, and this is a guaranteed pedigree skill, an X-linked cross. A mother is an unaffected carrier of haemophilia A, which is X-linked recessive. The father is unaffected. What's the probability that, a, a son is affected, and b, a daughter is a carrier? Pause and draw the cross. Right, let's set it up. The mother carries one normal and one faulty X, so she's big X H, big X little h. The father is unaffected, so he's big X H, Y. Now the four equally likely children. From the mother's two X's and the father's X and Y, you get big X H big X H, big X H big X little h, big X H Y, and big X little h Y. Part a, the sons. Sons get the father's Y, paired with one of the mother's X's, so a son is either big X H Y, unaffected, or big X little h Y, affected. One of the two, so the chance a son is affected is one half. Part b, the daughters. Daughters get the father's big X H plus one of the mother's X's, so a daughter is either big X H big X H, completely normal, or big X H big X little h, a carrier. One of the two, so the chance a daughter is a carrier is one half. Set up the parental genotypes carefully and these are guaranteed marks."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Genetic disorders are chromosomal, single-gene, or multifactorial, and many are de novo, not inherited.",
+        "Non-disjunction in meiosis causes trisomy, like Down syndrome, or monosomy, like Turner syndrome.",
+        "Inheritance is autosomal recessive (CF, 25%), autosomal dominant (Huntington's, 50%), or X-linked recessive (haemophilia).",
+        "Screening tests like NIPT flag risk; diagnostic tests like amniocentesis confirm.",
+        "Gene therapy and CRISPR target the root cause but stay experimental, costly and ethically complex."
+      ],
+      "finalPrompt": "Given a genetic disorder? Ask: chromosomal or single-gene, what inheritance pattern, and is this test screening or diagnostic?",
+      "durationInFrames": 1500,
+      "caption": "Five takeaways: the categories, non-disjunction, inheritance patterns, screening vs diagnosis, and gene editing.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, genetic disorders come in three categories, chromosomal, single-gene, and multifactorial, and many arise as de novo mutations rather than being inherited. Second, non-disjunction during meiosis causes either trisomy, like Down syndrome with an extra chromosome twenty one, or monosomy, like Turner syndrome with a single X. Third, the inheritance patterns, autosomal recessive like cystic fibrosis with a twenty five percent risk from two carriers, autosomal dominant like Huntington's with a fifty percent risk, and X-linked recessive like haemophilia, which mainly affects males. Fourth, screening tests like N I P T flag who's at risk, while diagnostic tests like amniocentesis confirm it definitively. And fifth, gene therapy and CRISPR can target the root cause, but they remain experimental, expensive, and ethically loaded, and germline editing is banned in most countries. So whenever you meet a genetic disorder, ask, is it chromosomal or single-gene, what's the inheritance pattern, and is this test screening or diagnostic. See you next lesson."
+      }
+    }
+  ]
+}

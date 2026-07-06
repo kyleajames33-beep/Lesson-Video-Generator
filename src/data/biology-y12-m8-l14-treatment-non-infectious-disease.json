@@ -1,0 +1,345 @@
+{
+  "title": "Treatment of Non-infectious Disease — Pharmacological, Surgical, Lifestyle and Emerging Therapies",
+  "subtitle": "The framework and how drugs hit a molecular target",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "investigate the treatment, management, and possible future directions for further research of a non-infectious disease using an example from one of the non-infectious disease categories",
+    "investigate the treatment of non-infectious diseases by examining pharmacological, surgical, lifestyle and emerging therapies"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Why are epidemiological studies used?",
+  "lessonIntent": "Students can classify a treatment by where it intervenes in a disease pathway and explain pharmacological, surgical, lifestyle and emerging therapies by their molecular mechanism.",
+  "examSkill": "Explain a treatment by tracing drug or intervention to molecular target to physiological effect to clinical outcome, rather than just naming a category.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "lesson": "Lesson 14",
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today: where treatments intervene and how drugs work. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Treatment of Non-infectious Disease — Pharmacological, Surgical, Lifestyle and Emerging Therapies, Part A (Year 12 Biology, Module 8, Lesson 14A)",
+      "voiceover": {
+        "text": "Treatment of Non-infectious Disease. Part A."
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Tripling survival by releasing a brake",
+      "body": "Some melanoma drugs don't attack the tumour at all. They take the brakes off the patient's own immune system.",
+      "callout": "How does a molecular mechanism turn into a survival statistic?",
+      "image": "bioM8L14CheckpointInhibitor",
+      "durationInFrames": 2153,
+      "caption": "Checkpoint inhibitors blocking CTLA-4 and PD-1 lifted 5-year melanoma survival from about 20% to 55%.",
+      "voiceover": {
+        "text": "In 2018, James Allison and Tasuku Honjo won the Nobel Prize for a strange idea. Instead of attacking cancer directly, what if you took the brakes off the immune system and let it do the job? Cancer cells often switch off the body's T cells by pressing on molecular brakes called C T L A four and P D one. Allison and Honjo worked out that if you block those brakes with a drug, the T cells wake up and start killing the tumour. The result was staggering. Five-year survival for advanced melanoma jumped from around twenty percent to fifty five percent, more than doubling, in a single decade. And notice what actually happened here. Understanding one molecular mechanism, a brake on a T cell, translated straight into a survival statistic. That's the whole story of treatment, so today we'll see how drugs, surgery, lifestyle and gene editing each interrupt a disease at a specific point."
+      }
+    },
+    {
+      "id": "concept-framework",
+      "type": "concept",
+      "heading": "Where a treatment intervenes",
+      "body": "Every treatment can be placed by where it acts in the disease pathway, from fixing the root cause down to just easing symptoms.",
+      "bullets": [
+        {
+          "text": "Root cause: corrects the underlying molecular defect, like CFTR modulators in cystic fibrosis."
+        },
+        {
+          "text": "Mechanism: interrupts a key step, like insulin replacing what type 1 diabetes destroyed."
+        },
+        {
+          "text": "Progression: slows the disease, like statins slowing plaque build-up."
+        },
+        {
+          "text": "Symptoms: relieves discomfort without changing the disease, like painkillers."
+        }
+      ],
+      "callout": "The deeper the intervention, the harder it usually is to develop.",
+      "durationInFrames": 2567,
+      "caption": "Treatments act at four levels: root cause, mechanism, progression, or symptoms.",
+      "voiceover": {
+        "text": "So let's build a framework, because it organises everything else. Every treatment can be placed by where it acts along the disease pathway, and there are four levels. The deepest is the root cause, where you correct the underlying molecular defect itself. The CFTR modulators in cystic fibrosis do this, restoring the faulty protein's function. One level up is the mechanism, where you interrupt a key step without fixing the root. Insulin therapy in type 1 diabetes is the classic case, it replaces the insulin the immune system destroyed, but it doesn't bring the cells back. Next is progression, where you simply slow the disease down, the way statins slow the build-up of arterial plaque. And the shallowest level is symptoms, where you ease the discomfort without touching the disease itself, like a painkiller for cancer pain. Here's the pattern, the deeper the intervention, the more it helps the patient, but the harder it is to develop. And here's the exam tip, never just name a category. Always say what the treatment targets at the molecular level, how it changes that target, and the downstream effect."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Level",
+          "What it does",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Root cause",
+            "Corrects the defect",
+            "CFTR modulators (CF)"
+          ],
+          [
+            "Mechanism",
+            "Interrupts a key step",
+            "Insulin (type 1 diabetes)"
+          ],
+          [
+            "Progression",
+            "Slows worsening",
+            "Statins (atherosclerosis)"
+          ],
+          [
+            "Symptoms",
+            "Eases discomfort",
+            "Analgesics (cancer pain)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms describe what a treatment is trying to do, so lock them in before the examples.",
+      "bullets": [
+        {
+          "text": "Pharmacotherapy: treatment using drugs that target a specific disease mechanism."
+        },
+        {
+          "text": "Curative treatment: eliminates the underlying cause, like removing a tumour."
+        },
+        {
+          "text": "Symptomatic treatment: relieves symptoms without addressing the root cause."
+        },
+        {
+          "text": "Targeted therapy: acts on one specific molecular target, sparing normal cells."
+        },
+        {
+          "text": "Lifestyle modification: changing diet, exercise or behaviour to address the cause."
+        }
+      ],
+      "callout": "Drug, cure, symptom-relief, precision, behaviour. Five distinct ideas.",
+      "durationInFrames": 1767,
+      "caption": "Pharmacotherapy, curative treatment, symptomatic treatment, targeted therapy, lifestyle modification.",
+      "voiceover": {
+        "text": "Let's pin down five terms you'll use all lesson. Pharmacotherapy is treatment using drugs that target a specific disease mechanism, like metformin acting on the liver in type 2 diabetes. Curative treatment eliminates the underlying cause of the disease, for instance surgically removing a tumour completely. Symptomatic treatment relieves the symptoms without addressing the root cause, the way insulin injections manage type 1 diabetes without restoring the lost cells. Targeted therapy acts on one specific molecular target, so it kills or blocks the disease while sparing most normal cells. And lifestyle modification means changing diet, exercise, or other behaviours to address the physiological cause directly. Keep curative and symptomatic clearly apart, because examiners love to ask whether a given treatment actually cures the disease or merely manages it."
+      }
+    },
+    {
+      "id": "concept-pharmacological",
+      "type": "concept",
+      "heading": "Drugs that hit a target",
+      "body": "Pharmacological treatments bind a specific molecule, either restoring a lost function or shutting down an overactive one.",
+      "bullets": [
+        {
+          "text": "Statins block the enzyme HMG-CoA reductase, so the liver clears more LDL from the blood."
+        },
+        {
+          "text": "CFTR modulators fold and open the faulty CFTR channel, the root-cause fix in cystic fibrosis."
+        },
+        {
+          "text": "Targeted cancer drugs hit a cancer-specific molecule, sparing healthy cells."
+        }
+      ],
+      "secondary": "This is the key contrast with conventional chemotherapy, which kills every rapidly dividing cell, cancer and healthy alike, which is why it causes hair loss and nausea. The more precisely a drug targets the disease mechanism, the fewer side effects it produces.",
+      "callout": "Precision is the difference between targeted therapy and blunt chemotherapy.",
+      "durationInFrames": 2705,
+      "caption": "Statins, CFTR modulators and targeted cancer drugs each bind a specific molecule to restore or block a function.",
+      "voiceover": {
+        "text": "Now let's get specific about drugs, because naming the molecular target is what earns the marks. Pharmacological treatments work by binding a specific target, a receptor, an enzyme, an ion channel, and either restoring a lost function or shutting down an overactive one. Take statins, used for cardiovascular disease. They block an enzyme called H M G co A reductase, the rate-limiting step in the liver making cholesterol. With less cholesterol being made, the liver puts out more LDL receptors and pulls more LDL out of the blood, so blood LDL falls and plaque builds more slowly. Take CFTR modulators for cystic fibrosis. These are root-cause drugs, with correctors that help the misfolded channel fold properly and reach the membrane, and a potentiator that holds it open once it gets there. And take targeted cancer drugs, which bind a cancer-specific molecule, like the mutant B R A F protein in melanoma, so they hit the cancer while sparing normal cells. That precision is exactly the contrast with conventional chemotherapy, which kills every fast-dividing cell, cancer and healthy alike, and that's why it causes hair loss and nausea. The sharper the target, the cleaner the side-effect profile."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Drug",
+          "Molecular target",
+          "Effect"
+        ],
+        "rows": [
+          [
+            "Statin",
+            "HMG-CoA reductase",
+            "Lowers blood LDL"
+          ],
+          [
+            "CFTR modulator",
+            "CFTR chloride channel",
+            "Restores channel function"
+          ],
+          [
+            "BRAF inhibitor",
+            "Mutant BRAF protein",
+            "Blocks cancer growth signal"
+          ],
+          [
+            "PD-1 inhibitor",
+            "PD-1 brake on T cells",
+            "Frees immune attack"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "How checkpoint inhibitors work",
+      "question": "Explain how a PD-1 inhibitor such as pembrolizumab treats cancer. Cover the normal job of the PD-1 pathway, how cancer exploits it, and how the drug disrupts that.",
+      "coachNote": "Build it as a chain: normal function, then the cancer's trick, then the drug's block, then the outcome.",
+      "steps": [
+        "Normally, when PD-L1 binds the PD-1 receptor on a T cell, it sends an off signal that calms the immune response and prevents autoimmunity.",
+        "Cancer cells exploit this by displaying lots of PD-L1, switching off the T cells that should kill them, so the tumour hides.",
+        "Pembrolizumab is an antibody that binds PD-1 and blocks the PD-L1 connection, so the off signal can't be sent.",
+        "The T cells stay active, recognise the cancer, and destroy it; immune memory can keep the response going.",
+        "Answer: the drug releases an immune brake the cancer was pressing, so the patient's own T cells clear the tumour ✓"
+      ],
+      "durationInFrames": 2760,
+      "caption": "PD-1 inhibitors block the off signal cancer uses, so the patient's T cells attack the tumour.",
+      "voiceover": {
+        "text": "Let's walk through a full mechanism the way an extended-response answer should, using the checkpoint inhibitor pembrolizumab. Build it as a chain. First, the normal function. The P D one receptor sits on cytotoxic T cells, and when a molecule called P D L one binds it, it sends an off signal that calms the T cell down. That's a useful brake, it stops the immune system attacking healthy tissue. Second, the cancer's trick. Tumour cells cover themselves in P D L one, so they press that brake on any T cell that comes near, switching it off, and the cancer becomes invisible to the immune system. Third, the drug. Pembrolizumab is an antibody that binds the P D one receptor and physically blocks the P D L one connection, so the off signal can't be delivered. Fourth, the outcome. The T cells stay switched on, recognise the cancer as abnormal, and kill it, and because the immune system can form memory, the response can last. So the answer is that the drug releases an immune brake the cancer was exploiting, letting the patient's own T cells clear the tumour. Notice this is restoring immune function, not generally boosting it."
+      }
+    },
+    {
+      "id": "concept-surgical-lifestyle",
+      "type": "concept",
+      "heading": "When surgery or lifestyle wins",
+      "body": "Some diseases need physical correction a drug can't give, while others, like type 2 diabetes, respond best to lifestyle change.",
+      "bullets": [
+        {
+          "text": "Angioplasty inflates a balloon in a blocked artery and leaves a stent to hold it open."
+        },
+        {
+          "text": "A bypass graft reroutes blood around a blockage drugs cannot clear."
+        },
+        {
+          "text": "Major weight loss can put type 2 diabetes into remission by reversing insulin resistance."
+        }
+      ],
+      "secondary": "In the DiRECT trial, structured dietary weight loss put 46% of type 2 diabetes patients into remission at one year, versus 4% on standard care. Losing visceral fat lowers inflammatory signals, so insulin receptors become sensitive again and exhausted beta cells recover.",
+      "callout": "Lifestyle change can outperform any single diabetes drug.",
+      "durationInFrames": 2829,
+      "caption": "Surgery corrects structural disease; lifestyle weight loss can reverse the insulin resistance driving type 2 diabetes.",
+      "voiceover": {
+        "text": "Drugs aren't always the answer. Some diseases need physical correction, and others respond far better to lifestyle change. Start with surgery for cardiovascular disease. In angioplasty, a thin catheter with a balloon is threaded into a blocked coronary artery, the balloon inflates to crush the plaque against the wall, and a little metal mesh stent is left behind to hold the artery open, restoring blood flow to the heart muscle. If the disease is too extensive, a bypass graft takes a vessel from elsewhere in the body and reroutes blood around the blockage entirely, something no drug can do. Now the surprising one, lifestyle. Type 2 diabetes can actually go into remission, meaning blood glucose returns to the normal range with no medication, in people who lose enough weight, usually ten to fifteen kilograms. The mechanism is elegant. Excess visceral fat pumps out inflammatory signals that jam insulin receptors, so losing that fat quietens the inflammation, the receptors become sensitive again, and the overworked beta cells, which were exhausted but not destroyed, recover. The DiRECT trial proved it, putting forty six percent of patients into remission at one year, versus just four percent on standard care. For the right patient, that beats any single drug."
+      }
+    },
+    {
+      "id": "concept-emerging",
+      "type": "concept",
+      "heading": "The frontier therapies",
+      "body": "Emerging treatments act at the level of the gene, the RNA, or the engineered immune cell, applying molecular biology directly.",
+      "bullets": [
+        {
+          "text": "CAR-T: a patient's T cells are engineered to recognise and kill their cancer."
+        },
+        {
+          "text": "Antisense oligonucleotides silence a faulty mRNA before its toxic protein is made."
+        },
+        {
+          "text": "CRISPR edits the DNA itself; GLP-1 agonists drive weight loss and diabetes remission."
+        }
+      ],
+      "secondary": "These act at different points of the same pathway. CRISPR fixes the gene, antisense oligonucleotides intercept the mRNA, and CAR-T and checkpoint drugs work at the cell. Casgevy, the first approved CRISPR therapy, reached patients in 2023.",
+      "callout": "Gene, RNA, or cell: pick the level that matches the defect.",
+      "durationInFrames": 2636,
+      "caption": "CAR-T, antisense oligonucleotides, CRISPR and GLP-1 agonists target disease at the gene, RNA or cell level.",
+      "voiceover": {
+        "text": "Finally, the frontier, where molecular biology becomes treatment directly. Four examples worth knowing. First, CAR-T cell therapy for cancer. Doctors take a patient's own T cells, genetically engineer them in the lab to carry a receptor that recognises a protein on the cancer's surface, then grow them up and reinfuse them, so they hunt down and kill the cancer. It's produced lasting remissions in blood cancers that had run out of options. Second, antisense oligonucleotides, used in Huntington's disease. These are short synthetic strands that bind the faulty messenger RNA and trigger its destruction, so the toxic protein is never made in the first place. Third, CRISPR gene editing, which can correct a disease-causing mutation in the DNA itself. In twenty twenty three, the first CRISPR therapy, Casgevy, was approved for sickle cell disease. And fourth, the G L P one agonists like semaglutide, which mimic a gut hormone to boost insulin, curb appetite, and drive fifteen percent weight loss, putting type 2 diabetes into remission. Notice the pattern, these therapies act at different levels, the gene, the RNA, or the cell, and you choose the level that matches the defect."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Therapy",
+          "Level it acts",
+          "Use"
+        ],
+        "rows": [
+          [
+            "CRISPR",
+            "DNA / gene",
+            "Sickle cell, future CF"
+          ],
+          [
+            "Antisense oligo",
+            "mRNA",
+            "Huntington's disease"
+          ],
+          [
+            "CAR-T",
+            "Engineered cell",
+            "Blood cancers"
+          ],
+          [
+            "GLP-1 agonist",
+            "Hormone signalling",
+            "Type 2 diabetes, obesity"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: assuming treating a disease means curing it. Most therapies manage the disease, since insulin and statins do not undo the underlying defect.",
+      "secondary": "Trap 2: thinking chemotherapy targets cancer specifically. Conventional chemotherapy kills all rapidly dividing cells, which is why it has such harsh side effects, unlike targeted therapy. Trap 3: calling type 2 diabetes remission a permanent cure. The genetic predisposition remains, so weight regain can bring the disease back.",
+      "mistakeTag": "Where treatment marks vanish",
+      "callout": "Treating is not curing, chemo is not targeted, remission is not cure.",
+      "durationInFrames": 2291,
+      "caption": "Treatment is not always cure; chemotherapy is not targeted; T2D remission is reversible, not a cure.",
+      "voiceover": {
+        "text": "Three traps that quietly cost marks every year. Trap one, the big one, assuming that treating a disease means curing it. Most treatments for non-infectious disease manage it rather than cure it. Insulin manages type 1 diabetes but never restores the lost cells. Statins slow plaque but don't reverse it. Even CFTR modulators restore the protein's function while the genetic mutation persists in every single cell. So always distinguish management, remission, and cure. Trap two, thinking chemotherapy targets cancer specifically. It does not. Conventional chemotherapy kills all rapidly dividing cells, the cancer plus hair follicles, bone marrow, and gut lining, which is exactly why it causes those harsh side effects. Targeted therapy is the one that spares normal cells. Trap three, calling type 2 diabetes remission a permanent cure. Remission means glucose is normal without medication, but the underlying genetic tendency to insulin resistance is still there, so regaining the weight usually brings the disease straight back. Nail those three and treatment questions become easy marks."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Classify each treatment by the level it acts at, root cause, mechanism, progression, or symptoms: (a) a CFTR modulator in cystic fibrosis; (b) a painkiller for cancer pain; (c) insulin in type 1 diabetes; (d) a statin slowing atherosclerosis.",
+      "pausePrompt": "Pause and sort them.",
+      "answerSteps": [
+        "(a) The CFTR modulator restores the faulty channel's function, so it acts at the root cause.",
+        "(b) The painkiller eases pain without touching the cancer, so it acts at the symptom level.",
+        "(c) Insulin replaces a missing molecule but doesn't restore the cells, so it acts at the mechanism level.",
+        "(d) The statin slows plaque build-up without reversing it, so it acts on progression.",
+        "Answer: (a) root cause, (b) symptoms, (c) mechanism, (d) progression ✓"
+      ],
+      "durationInFrames": 2319,
+      "caption": "(a) root cause, (b) symptoms, (c) mechanism, (d) progression.",
+      "voiceover": {
+        "text": "Quick check, and this tests whether you can place treatments on the framework. Classify each one by the level it acts at, root cause, mechanism, progression, or symptoms. Part a, a CFTR modulator in cystic fibrosis. Part b, a painkiller for cancer pain. Part c, insulin in type 1 diabetes. Part d, a statin slowing atherosclerosis. Pause and sort them. Right, let's go. Part a, the CFTR modulator restores the function of the faulty chloride channel itself, so it's acting at the root cause. Part b, the painkiller eases the pain but does nothing to the cancer, so that's the symptom level. Part c, insulin replaces the missing molecule, but it doesn't bring back the destroyed beta cells, so that's the mechanism level, managing rather than fixing. And part d, the statin slows the rate at which plaque forms without reversing what's there, so it acts on progression. Root cause, symptoms, mechanism, progression. Being able to place a treatment like this is exactly what the extended-response questions reward."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Treatments act at four levels: root cause, mechanism, progression, or symptoms.",
+        "Pharmacological drugs bind a specific target; targeted therapy spares normal cells, unlike chemotherapy.",
+        "Surgery corrects structural disease; lifestyle weight loss can put type 2 diabetes into remission.",
+        "Emerging therapies act at the gene, RNA or cell, like CRISPR, antisense oligonucleotides and CAR-T.",
+        "Treating usually means managing, not curing, so distinguish management, remission and cure."
+      ],
+      "finalPrompt": "Explaining a treatment? Trace it: drug or intervention, molecular target, physiological effect, clinical outcome.",
+      "durationInFrames": 2139,
+      "caption": "Five takeaways: the four levels, drug precision, surgery and lifestyle, the frontier, and manage vs cure.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, every treatment can be placed by where it acts in the disease pathway, the root cause, the mechanism, the progression, or just the symptoms. Second, pharmacological drugs bind a specific molecular target, and targeted therapy spares normal cells, which is the key difference from blunt chemotherapy. Third, surgery corrects structural disease that drugs can't fix, while lifestyle weight loss can actually put type 2 diabetes into remission by reversing insulin resistance. Fourth, the emerging therapies act at different levels of the same pathway, CRISPR at the gene, antisense oligonucleotides at the RNA, and CAR-T at the cell. And fifth, treating a disease usually means managing it, not curing it, so always distinguish management, remission, and cure. Whenever you explain a treatment, trace it all the way through, the drug or intervention, the molecular target, the physiological effect, and the clinical outcome. See you next lesson."
+      }
+    }
+  ]
+}

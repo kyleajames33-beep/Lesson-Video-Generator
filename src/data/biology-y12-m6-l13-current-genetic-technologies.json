@@ -1,0 +1,188 @@
+{
+  "title": "Current Genetic Technologies That Induce Genetic Change",
+  "subtitle": "Mapping the toolkit, from controlling reproduction to inserting DNA",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 13",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6 — Genetic Change",
+  "syllabusDotPoints": [
+    "investigate the uses and advantages of current genetic technologies that induce genetic change"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-13",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Does artificial manipulation of DNA have the potential to change populations forever?",
+  "lessonIntent": "Students can map current genetic technologies by what they change and where they act, distinguishing reproductive control from DNA-level change.",
+  "examSkill": "Classify a named genetic technology by the biological level it acts on and state its main advantage.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, mapping the current genetic technologies. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Current Genetic Technologies That Induce Genetic Change (Year 12 Biology, Module 6, Lesson 13)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Controlling inheritance without editing DNA",
+      "body": "One elite cow can leave 30 to 40 calves a year. 80% of Australian Angus bulls trace back to just 10 founders.",
+      "callout": "You can reshape a population without touching a single base of DNA.",
+      "image": "bioM6L13TechnologyMap",
+      "durationInFrames": 840,
+      "caption": "Embryo transfer shows reproductive control reshaping a population without DNA editing.",
+      "voiceover": {
+        "text": "The International Embryo Technology Society reported that in 2021 alone, around one point two million cattle embryos were transferred worldwide. Using multiple ovulation and embryo transfer, a single elite cow can leave thirty to forty calves in a year, instead of the natural one. As a result, about eighty percent of Australian Angus bulls now trace back to just ten founder animals. And here's the striking part, none of this edits any DNA, it simply controls reproduction. So today we map the whole toolkit, and the first big idea is that you can reshape a population without touching a single base of DNA."
+      }
+    },
+    {
+      "id": "concept-two-families",
+      "type": "concept",
+      "heading": "Two families of technology",
+      "body": "Current genetic technologies fall into two families that must not be treated as interchangeable.",
+      "bullets": [
+        {"text": "Reproductive technologies control which gametes combine, like artificial insemination and pollination."},
+        {"text": "DNA-level technologies copy, move or insert DNA directly, like gene cloning and recombinant DNA."},
+        {"text": "Reproductive control changes the combination; DNA technologies change the sequence."}
+      ],
+      "secondary": "Each technology acts at a different biological level, so a careful answer says exactly where the change happens.",
+      "callout": "Combination versus sequence is the dividing line.",
+      "durationInFrames": 900,
+      "caption": "Reproductive technologies control gamete combination; DNA technologies change the sequence.",
+      "voiceover": {
+        "text": "Let's split the toolkit in two, and these two families are not interchangeable. The first family is reproductive technologies, which control which gametes combine, things like artificial insemination and artificial pollination. They decide the parents, but they don't rewrite any genes. The second family is DNA-level technologies, which copy, move or insert DNA directly, things like gene cloning and recombinant DNA. The clean way to hold the difference is this, reproductive control changes the combination of existing alleles, while DNA technologies change the actual sequence. Each one acts at a different biological level, so a careful answer always says exactly where the change is happening."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": ["Technology", "What it changes", "Why it is used"],
+        "rows": [
+          ["Artificial insemination / pollination", "Which parents combine", "Deliberate trait combinations"],
+          ["Whole-organism cloning", "Preserves a whole genotype", "Copy an elite organism"],
+          ["Gene cloning", "Copies one DNA sequence", "Many copies for analysis or protein"],
+          ["Recombinant DNA / transgenics", "Inserts chosen DNA", "Add a trait not already present"]
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Genetic technology: a tool used to analyse, manipulate or direct inheritance and genetic change."},
+        {"text": "Reproductive technology: a tool that controls how gametes or reproductive material are brought together."},
+        {"text": "Gene cloning: making many identical copies of a selected DNA sequence."},
+        {"text": "Recombinant DNA: DNA formed by combining genetic material from different sources."},
+        {"text": "Transgenic organism: an organism carrying inserted DNA from another species or source."}
+      ],
+      "callout": "Gene cloning copies DNA; recombinant DNA inserts it. Different jobs.",
+      "durationInFrames": 930,
+      "caption": "Genetic technology, reproductive technology, gene cloning, recombinant DNA, transgenic organism.",
+      "voiceover": {
+        "text": "Five terms to map the field. A genetic technology is any tool used to analyse, manipulate or direct inheritance and genetic change, the broad umbrella. A reproductive technology, more specifically, controls how gametes or reproductive material are brought together. Gene cloning means making many identical copies of one selected DNA sequence, copying, not creating a whole creature. Recombinant DNA is DNA formed by combining genetic material from different sources, joining pieces that don't naturally occur together. And a transgenic organism is one that carries inserted DNA from another species or source. Keep gene cloning and recombinant DNA separate in your head, one copies a sequence, the other inserts a sequence."
+      }
+    },
+    {
+      "id": "concept-advantages",
+      "type": "concept",
+      "heading": "Each tool has a distinct advantage",
+      "body": "These technologies are not rivals doing the same job. Each one solves a different problem.",
+      "bullets": [
+        {"text": "Reproductive control allows deliberate trait combinations in offspring."},
+        {"text": "Gene cloning provides many copies for analysis and protein production."},
+        {"text": "Recombinant DNA introduces traits that are not already present."},
+        {"text": "Whole-organism cloning preserves a valuable elite genotype."}
+      ],
+      "secondary": "Choosing the right tool starts with the goal: combine traits, copy a sequence, add a new trait, or preserve a whole genome.",
+      "callout": "Pick the tool from the goal, not the other way round.",
+      "durationInFrames": 870,
+      "caption": "Reproductive control, gene cloning, recombinant DNA and cloning each solve a different problem.",
+      "voiceover": {
+        "text": "Now why each tool exists, because they are not rivals doing the same job. Reproductive control, the artificial insemination and pollination family, lets you create deliberate trait combinations in the offspring by choosing the parents. Gene cloning provides many identical copies of a sequence, which you need for analysis and for manufacturing proteins. Recombinant DNA introduces traits that are not already present in the organism, genuinely new capabilities. And whole-organism cloning preserves a valuable elite genotype, copying the whole genome of a prized individual. So the way you choose is always from the goal first, do you want to combine traits, copy a sequence, add a new trait, or preserve an entire genome."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Classify each technology",
+      "question": "For each goal, name the most suitable technology and the level it acts on: (a) cross two prize wheat plants to combine their traits; (b) make millions of copies of one human gene for study; (c) give a bacterium the human insulin gene so it makes insulin.",
+      "coachNote": "Decide first: is this reproductive control, copying a sequence, or inserting a sequence?",
+      "steps": [
+        "(a) Combining traits by controlling which parents cross is reproductive control, so artificial pollination, acting at the level of gamete combination.",
+        "(b) Making many copies of one sequence is gene cloning, acting at the DNA-copying level, with no new trait added.",
+        "(c) Giving a bacterium a gene it did not have is recombinant DNA producing a transgenic organism, acting at the DNA-insertion level.",
+        "Decision rule: reproductive control changes the combination; gene cloning copies a sequence; recombinant DNA inserts a sequence.",
+        "Answer: (a) artificial pollination; (b) gene cloning; (c) recombinant DNA / transgenic."
+      ],
+      "durationInFrames": 1110,
+      "caption": "(a) artificial pollination; (b) gene cloning; (c) recombinant DNA / transgenic.",
+      "voiceover": {
+        "text": "Let's classify three goals. Part a, cross two prize wheat plants to combine their traits. That's controlling which parents contribute pollen, so it's reproductive control, specifically artificial pollination, acting at the level of gamete combination, no genes are rewritten. Part b, make millions of copies of one human gene for study. Copying a single sequence over and over is gene cloning, acting at the DNA-copying level, and again no new trait is added, you just want lots of the same piece. Part c, give a bacterium the human insulin gene so it produces insulin. Handing an organism a gene it never had is recombinant DNA, producing a transgenic organism, acting at the DNA-insertion level. The decision rule is clean, combination, copy, or insert."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three distinctions to keep clear",
+      "body": "Trap 1: blurring reproductive control with DNA change. Choosing parents is not editing genes.",
+      "secondary": "Trap 2: treating gene cloning and recombinant DNA as the same thing. Copying a sequence is not inserting one. Trap 3: assuming a clone is identical in every way. Similar genotype does not guarantee identical phenotype, because environment and development still matter, which is why cloned cats can have different coat patterns.",
+      "mistakeTag": "Where the toolkit gets blurred",
+      "callout": "Combination versus sequence; copy versus insert; genotype versus phenotype.",
+      "durationInFrames": 1020,
+      "caption": "Keep three pairs distinct: reproductive vs DNA, cloning vs recombinant, genotype vs phenotype.",
+      "voiceover": {
+        "text": "Three distinctions that separate a clear answer from a muddled one. Trap one, blurring reproductive control with DNA change. Choosing which parents breed is not the same as editing their genes, the sequence is untouched. Trap two, treating gene cloning and recombinant DNA as if they're the same thing. Gene cloning copies an existing sequence, recombinant DNA inserts a sequence, copying is not inserting. Trap three, assuming a clone is identical in every way to its donor. A similar genotype does not guarantee an identical phenotype, because environment, development and even mitochondrial DNA still play a role. The classic example is cloned cats that end up with different coat-colour patterns from the donor, despite sharing nuclear DNA. Combination versus sequence, copy versus insert, genotype versus phenotype, keep those three pairs straight."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A breeder uses embryo transfer to spread an elite cow's genes through a herd, while a lab inserts a jellyfish gene into a plant. A student says both are examples of genetic engineering of DNA. Where is the error?",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Embryo transfer is a reproductive technology; it controls which parents breed and does not change any DNA sequence.",
+        "Inserting a jellyfish gene is recombinant DNA, which produces a transgenic organism by changing the sequence.",
+        "Only the second one is genetic engineering of DNA; the first is reproductive control.",
+        "The error is grouping reproductive control with DNA-level change under one label.",
+        "Answer: embryo transfer changes the combination, not the sequence, so only the gene insertion engineers DNA."
+      ],
+      "durationInFrames": 990,
+      "caption": "Embryo transfer is reproductive control; only the gene insertion engineers DNA.",
+      "voiceover": {
+        "text": "Quick check. A breeder uses embryo transfer to spread an elite cow's genes through a herd, while in a lab someone inserts a jellyfish gene into a plant. A student says both are examples of genetic engineering of DNA. Where's the error? Pause and reason it through. Right, let's separate them. Embryo transfer is a reproductive technology, it controls which parents breed and how many offspring an elite animal leaves, but it does not change any DNA sequence at all. Inserting a jellyfish gene, on the other hand, is recombinant DNA, and it produces a transgenic organism by genuinely changing the sequence. So only the second one is genetic engineering of DNA. The error is lumping reproductive control together with DNA-level change under the same label. One changes the combination, the other changes the sequence."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Two families: reproductive technologies and DNA-level technologies.",
+        "Reproductive control changes the combination; DNA tools change the sequence.",
+        "Gene cloning copies a sequence; recombinant DNA inserts one.",
+        "Each tool has a distinct advantage; pick it from the goal.",
+        "Similar genotype does not guarantee identical phenotype."
+      ],
+      "finalPrompt": "Classifying a technology? Ask: combination, copy, or insert?",
+      "durationInFrames": 870,
+      "caption": "Five takeaways: two families, combination vs sequence, copy vs insert, distinct advantages, genotype vs phenotype.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, there are two families, reproductive technologies and DNA-level technologies. Second, reproductive control changes the combination of existing alleles, while DNA tools change the actual sequence. Third, gene cloning copies a sequence, recombinant DNA inserts one, don't blur them. Fourth, each tool has a distinct advantage, so you pick it from the goal, combine, copy, insert or preserve. And fifth, a similar genotype does not guarantee an identical phenotype, environment and development still matter. Whenever you classify a technology, just ask, is this combination, copy, or insert. See you next lesson."
+      }
+    }
+  ]
+}

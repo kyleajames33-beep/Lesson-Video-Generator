@@ -1,0 +1,188 @@
+{
+  "title": "Qsp, Precipitation and the Common Ion Effect",
+  "subtitle": "Predicting precipitation and shifting solubility",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 18",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5: Equilibrium and Acid Reactions",
+  "syllabusDotPoints": [
+    "predict the formation of a precipitate given the standard reference values for Ksp"
+  ],
+  "moduleLessonCount": 18,
+  "nesaOutcomes": ["CH12-12", "CH11/12-4", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "inquiryQuestion": "How does solubility relate to chemical equilibrium?",
+  "lessonIntent": "Students can calculate Qsp after dilution, compare it with Ksp to predict precipitation, and apply the common ion effect to explain reduced solubility.",
+  "examSkill": "Dilute every ion to the new total volume before computing Qsp, apply the Qsp-versus-Ksp rule, and use the common ion effect while remembering Ksp is unchanged.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, Qsp and the common ion effect. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Qsp, Precipitation and the Common Ion Effect (Year 12 Chemistry, Module 5, Lesson 18)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Will it actually precipitate?",
+      "body": "The solubility rules say a salt is insoluble. But at these particular concentrations, will a precipitate really form? Qsp answers it.",
+      "callout": "Qsp versus Ksp turns a maybe into a definite yes or no.",
+      "image": "m5L18HookWillItPrecipitate",
+      "durationInFrames": 690,
+      "caption": "Qsp compared with Ksp predicts whether a precipitate actually forms.",
+      "voiceover": {
+        "text": "OK, this is the lesson that ties the whole module together. Back in Lesson sixteen, the solubility rules gave you a yes or no, this salt is insoluble, so it precipitates. But real questions are subtler. You mix two dilute solutions, and even though the product is technically insoluble, the concentrations might be so low that nothing actually comes out. So how do you tell? You use the ion product, Qsp, the exact same trick as the reaction quotient from Lesson twelve, but for solubility. Calculate Qsp from the current ion concentrations, compare it with Ksp, and you get a definite answer about whether a precipitate forms. And then we'll add the common ion effect, a clever way to make a salt even less soluble on purpose. This is the capstone of the whole solubility story."
+      }
+    },
+    {
+      "id": "concept-qsp",
+      "type": "concept",
+      "heading": "Qsp versus Ksp: the decision rule",
+      "body": "Qsp uses the current ion concentrations in the same expression as Ksp. Comparing them tells you what happens.",
+      "diagram": {
+        "type": "table",
+        "headers": ["Comparison", "State", "What happens"],
+        "rows": [
+          ["Qsp < Ksp", "Unsaturated", "No precipitate; more can dissolve"],
+          ["Qsp = Ksp", "Saturated", "At equilibrium; on the edge"],
+          ["Qsp > Ksp", "Supersaturated", "Precipitate forms (shifts left)"]
+        ],
+        "delay": 20
+      },
+      "bullets": [
+        {"text": "Qsp < Ksp: unsaturated, no precipitate, more could dissolve."},
+        {"text": "Qsp = Ksp: exactly saturated, sitting at equilibrium."},
+        {"text": "Qsp > Ksp: supersaturated, so a precipitate forms."}
+      ],
+      "secondary": "Only Qsp greater than Ksp causes precipitation. The most common error is reversing this, thinking a small Qsp triggers a precipitate. It's the opposite.",
+      "callout": "Only Qsp greater than Ksp precipitates. Don't reverse it.",
+      "durationInFrames": 1170,
+      "caption": "Qsp < Ksp unsaturated; Qsp = Ksp saturated; Qsp > Ksp precipitates.",
+      "voiceover": {
+        "text": "Here's the central tool. The ion product, Qsp, is calculated exactly like Ksp, the same product of ion concentrations raised to their coefficients, but you use the concentrations right now, not the saturated equilibrium values. Then compare Qsp with Ksp, and there are three cases, just like Q and Keq. If Qsp is less than Ksp, the solution is unsaturated, it could hold more, so no precipitate forms. If Qsp equals Ksp, the solution is exactly saturated, perfectly at equilibrium, right on the edge. And if Qsp is greater than Ksp, the solution is supersaturated, it's holding more than it can sustain, so a precipitate forms and ions drop out until Qsp falls back to Ksp. The one mistake to never make, and examiners test it constantly, is reversing the rule. Only Qsp greater than Ksp causes precipitation. A small Qsp means unsaturated, the very opposite of precipitating."
+      }
+    },
+    {
+      "id": "concept-dilution",
+      "type": "concept",
+      "heading": "Don't forget to dilute",
+      "body": "When you mix two solutions, every concentration drops, because each is now spread through the larger combined volume.",
+      "bullets": [
+        {"text": "Mixing dilutes: c_new = c_original × V_original ÷ V_total."},
+        {"text": "Apply it to every ion before calculating Qsp."},
+        {"text": "Then substitute the diluted concentrations into the Qsp expression."}
+      ],
+      "secondary": "Skipping the dilution makes Qsp too large. Mixing 50 mL with 50 mL halves every concentration, so the error can be fourfold in a 1:1 salt, enough to flip a borderline answer.",
+      "callout": "Dilute to the total volume first, then compute Qsp.",
+      "durationInFrames": 1140,
+      "caption": "On mixing, dilute every ion to the total volume before computing Qsp.",
+      "voiceover": {
+        "text": "Now the step that quietly destroys answers, dilution. When you pour two solutions together, you're not just combining the ions, you're also spreading each one through a bigger volume, so every concentration drops. This is the same idea as the final-volume point from the solution stoichiometry lesson back in Year eleven. The formula is straightforward, the new concentration equals the original concentration times the original volume, divided by the total combined volume. You must apply this to every ion, before you calculate Qsp. Only then do you substitute into the Qsp expression. If you skip it and use the original concentrations, your Qsp comes out far too large. Mixing fifty millilitres with fifty millilitres halves every concentration, and because Qsp often multiplies two concentrations together, the error can be a factor of four. In a borderline case, that's more than enough to wrongly predict a precipitate that never forms."
+      }
+    },
+    {
+      "id": "concept-commonion",
+      "type": "concept",
+      "heading": "The common ion effect",
+      "body": "Add an ion the salt already contains, and the salt becomes less soluble, even though Ksp doesn't change.",
+      "bullets": [
+        {"text": "Adding a common ion pushes Qsp up past Ksp, shifting the equilibrium left."},
+        {"text": "So the salt's solubility decreases, often dramatically."},
+        {"text": "Ksp itself is unchanged, only temperature changes Ksp."}
+      ],
+      "secondary": "AgCl in pure water dissolves to about 1.3 × 10⁻⁵ mol L⁻¹. In 0.10 mol L⁻¹ NaCl, the extra Cl⁻ drives [Ag⁺] down to Ksp ÷ 0.10 = 1.8 × 10⁻⁹, thousands of times less soluble.",
+      "callout": "A common ion lowers solubility but never changes Ksp.",
+      "durationInFrames": 1170,
+      "caption": "Common ion effect: extra shared ion → less soluble; Ksp unchanged.",
+      "voiceover": {
+        "text": "Now a neat application, the common ion effect. Suppose you have a saturated solution of silver chloride, sitting in its dissolution equilibrium. What happens if you add some sodium chloride, which shares the chloride ion? You've just increased the chloride concentration, which pushes Qsp above Ksp, so by Le Chatelier the equilibrium shifts left, toward the solid, and silver chloride precipitates out. The result, the silver chloride is now less soluble than it was in pure water. And it can be dramatic. In pure water, silver chloride dissolves to about one-point-three times ten to the minus five moles per litre. But in nought-point-one molar sodium chloride, the silver ion concentration is forced down to Ksp divided by nought-point-one, about one-point-eight times ten to the minus nine, thousands of times less soluble. The crucial subtlety, and a favourite exam point, Ksp itself does not change. The position shifts, the solubility drops, but the constant stays the same, because only temperature changes Ksp."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Predicting precipitation on mixing",
+      "question": "50.0 mL of 2.0 × 10⁻³ mol L⁻¹ AgNO₃ is mixed with 50.0 mL of 2.0 × 10⁻³ mol L⁻¹ NaCl. Ksp(AgCl) = 1.8 × 10⁻¹⁰. Will a precipitate of AgCl form?",
+      "coachNote": "Dilute both ions to the 100 mL total before computing Qsp.",
+      "unitCancel": {
+        "left": "mol L⁻¹",
+        "right": "mol L⁻¹",
+        "result": "Qsp"
+      },
+      "steps": [
+        "Total volume = 50.0 + 50.0 = 100.0 mL.",
+        "Dilute Ag⁺: 2.0 × 10⁻³ × (50.0 / 100.0) = 1.0 × 10⁻³ mol L⁻¹.",
+        "Dilute Cl⁻: 2.0 × 10⁻³ × (50.0 / 100.0) = 1.0 × 10⁻³ mol L⁻¹.",
+        "Qsp = [Ag⁺][Cl⁻] = (1.0 × 10⁻³)(1.0 × 10⁻³) = 1.0 × 10⁻⁶.",
+        "Compare: Qsp (1.0 × 10⁻⁶) > Ksp (1.8 × 10⁻¹⁰).",
+        "Answer: Qsp > Ksp, so a precipitate of AgCl forms ✓"
+      ],
+      "durationInFrames": 1620,
+      "caption": "Dilute to 100 mL → Qsp = 1.0×10⁻⁶ > Ksp = 1.8×10⁻¹⁰ → AgCl precipitates.",
+      "voiceover": {
+        "text": "Let's predict a precipitate properly, dilution and all. Fifty millilitres of two times ten to the minus three molar silver nitrate, mixed with fifty millilitres of the same concentration of sodium chloride. Will silver chloride precipitate? First, the total volume, fifty plus fifty is a hundred millilitres. Now dilute each ion to that new volume. Silver was two times ten to the minus three in fifty millilitres, now spread through a hundred, so multiply by fifty over a hundred, giving one times ten to the minus three. Chloride is the same, one times ten to the minus three. Notice each was halved, that's the dilution doing its job. Now Qsp, silver ion times chloride ion, one times ten to the minus three, times one times ten to the minus three, which is one times ten to the minus six. Compare with Ksp, one-point-eight times ten to the minus ten. Qsp is one times ten to the minus six, which is far bigger than Ksp. Since Qsp is greater than Ksp, the solution is supersaturated, so yes, a precipitate of silver chloride forms. If you'd skipped the dilution, your Qsp would have been four times too big, though here the answer would have been the same, because it's nowhere near borderline."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Qsp less than Ksp means it precipitates\"",
+      "body": "Students reverse the rule and think a small Qsp triggers precipitation. It's exactly the other way around.",
+      "secondary": "Qsp < Ksp means unsaturated, the solution can dissolve more, so no precipitate. Only Qsp > Ksp means supersaturated and precipitates. Also remember, adding a common ion lowers solubility but leaves Ksp unchanged.",
+      "mistakeTag": "Reversing the Qsp-versus-Ksp rule",
+      "callout": "Qsp below Ksp = room to dissolve. Qsp above Ksp = precipitate.",
+      "durationInFrames": 1230,
+      "caption": "Qsp < Ksp = unsaturated (no precipitate); only Qsp > Ksp precipitates.",
+      "voiceover": {
+        "text": "Here's the trap, and it's purely a logic slip, so it's avoidable. Students reverse the rule and say that when Qsp is less than Ksp, a precipitate forms. It's completely backwards. Think about what less than Ksp actually means. Ksp is the maximum ion product a saturated solution can hold. If your current ion product, Qsp, is below that maximum, then the solution is unsaturated, it has room to dissolve more, so nothing precipitates. Precipitation only happens when you exceed the maximum, when Qsp is greater than Ksp, making the solution supersaturated, so the excess drops out as solid. Less than means room to spare, greater than means overflow. While we're clearing things up, one more, the common ion effect lowers a salt's solubility, but it never changes Ksp. The constant only responds to temperature. Position shifts, solubility falls, Ksp holds steady."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Ag₂CrO₄ has Ksp = 1.1 × 10⁻¹². (a) Write the dissolution equation and Ksp expression. (b) Calculate its molar solubility in pure water. (c) Will its solubility increase, decrease or stay the same in 0.10 mol L⁻¹ AgNO₃?",
+      "pausePrompt": "Pause. Note Ag₂CrO₄ gives 2 Ag⁺ per formula unit, so [Ag⁺] = 2s.",
+      "answerSteps": [
+        "(a) Ag₂CrO₄(s) ⇌ 2Ag⁺(aq) + CrO₄²⁻(aq); Ksp = [Ag⁺]²[CrO₄²⁻].",
+        "(b) [Ag⁺] = 2s, [CrO₄²⁻] = s, so Ksp = (2s)²(s) = 4s³.",
+        "1.1 × 10⁻¹² = 4s³, so s³ = 2.75 × 10⁻¹³, giving s = 6.5 × 10⁻⁵ mol L⁻¹.",
+        "(c) AgNO₃ supplies the common ion Ag⁺, so by LCP the equilibrium shifts left.",
+        "Answer: s = 6.5 × 10⁻⁵ mol L⁻¹; solubility DECREASES in AgNO₃ (common ion effect) ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "Ag₂CrO₄: Ksp = 4s³ → s = 6.5×10⁻⁵; solubility decreases in AgNO₃.",
+      "voiceover": {
+        "text": "Your turn, and this one brings together everything, a band-six question. Silver chromate, Ksp one-point-one times ten to the minus twelve. Write the dissolution and Ksp expression, find the molar solubility in pure water, then say what happens to its solubility in nought-point-one molar silver nitrate. Pause and work through all three. Right. Part a, silver chromate dissolves into two silver ions and one chromate ion, so Ksp is silver ion squared times chromate ion, that two becoming a power. Part b, let the molar solubility be s. Each formula unit gives two silvers, so silver is two s, and one chromate, so chromate is s. Substitute, Ksp equals two s squared, times s, and two s squared is four s squared, so it's four s cubed. Set equal to one-point-one times ten to the minus twelve, divide by four, s cubed is two-point-seven-five times ten to the minus thirteen, take the cube root, s is six-point-five times ten to the minus five. Part c, silver nitrate supplies silver ions, a common ion, so the equilibrium shifts left and the solubility decreases. Same Ksp, lower solubility."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Qsp uses current ion concentrations in the same expression as Ksp.",
+        "Qsp < Ksp unsaturated; Qsp = Ksp saturated; Qsp > Ksp precipitates.",
+        "On mixing, dilute every ion to the total volume before computing Qsp.",
+        "A common ion lowers solubility but never changes Ksp.",
+        "Only temperature changes Ksp, exactly as with every equilibrium constant."
+      ],
+      "finalPrompt": "Precipitate question: dilute, calculate Qsp, then compare with Ksp.",
+      "durationInFrames": 1230,
+      "caption": "Five takeaways: Qsp rule, dilute first, common ion effect, Ksp only by temperature.",
+      "voiceover": {
+        "text": "Let's lock it in, and with it, the whole module. Five things to take away. First, Qsp is the ion product calculated from current concentrations, the same expression as Ksp. Second, the decision rule, Qsp below Ksp is unsaturated with no precipitate, equal means saturated, and above Ksp means a precipitate forms. Third, whenever you mix solutions, dilute every ion to the total combined volume before you calculate Qsp. Fourth, the common ion effect lowers a salt's solubility, but it leaves Ksp unchanged. And fifth, the thread running through the entire module, only temperature changes an equilibrium constant, whether that's Keq, Ka, or Ksp. So for any precipitation question, the routine is, dilute, calculate Qsp, compare with Ksp. That's the end of Module five, equilibrium and acid reactions. You've gone from what equilibrium is, all the way to predicting precipitation with real numbers. Well done getting through it."
+      }
+    }
+  ]
+}

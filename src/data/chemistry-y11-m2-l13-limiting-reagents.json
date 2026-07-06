@@ -1,0 +1,216 @@
+{
+  "title": "Limiting Reagents and Theoretical Yield",
+  "subtitle": "Which reactant runs out first?",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 13",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "investigate and solve problems involving limiting reagents and calculate theoretical yields"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": [
+    "CH11-9",
+    "CH11/12-4",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "What happens in chemical reactions?",
+  "lessonIntent": "Students can identify the limiting reagent by dividing moles by coefficients, then calculate theoretical yield and leftover excess.",
+  "examSkill": "Convert all reactant masses to moles, divide each by its coefficient; smallest ratio is the limiting reagent; calculate yield from the limiting reagent only.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, limiting reagents, which reactant runs out first. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Limiting Reagents and Theoretical Yield (Year 11 Chemistry, Module 2, Lesson 13)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The reactant that runs out first wins",
+      "body": "Real reactions rarely have perfect proportions. One reactant runs out and stops everything.",
+      "callout": "The limiting reagent sets the maximum product.",
+      "durationInFrames": 690,
+      "caption": "Whichever reactant runs out first controls how much product forms.",
+      "voiceover": {
+        "text": "OK, think about making cheese toasties. If you've got ten slices of bread but only four slices of cheese, how many toasties can you make? Four. The cheese runs out first, so it sets the limit, no matter how much bread is left over. Chemical reactions work the same way. In real life, reactants are almost never in perfect proportions. One of them runs out first and stops the reaction dead. That one is called the limiting reagent, and it controls the maximum amount of product you can possibly make. Finding it is today's job."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Limiting vs excess",
+      "body": "The limiting reagent is consumed completely. The excess reagent has some left over.",
+      "bullets": [
+        {
+          "text": "Limiting reagent: runs out first, sets the maximum product."
+        },
+        {
+          "text": "Excess reagent: more than enough, so some remains unreacted."
+        },
+        {
+          "text": "Only the limiting reagent's moles decide the yield."
+        }
+      ],
+      "secondary": "You can't tell which is limiting from mass alone. You must compare moles divided by coefficients.",
+      "callout": "Smallest moles-per-coefficient is the limiting reagent.",
+      "durationInFrames": 1110,
+      "caption": "Limiting runs out first and sets the yield; excess is left over.",
+      "voiceover": {
+        "text": "Two roles in every reaction with set amounts. The limiting reagent is the one that runs out first, and it sets the maximum product you can make. The excess reagent is the one there's more than enough of, so some is left sitting there unreacted when the reaction stops. Here's the crucial point. Only the limiting reagent's moles decide the yield. The leftover excess does nothing. And you cannot tell which reactant is limiting just by looking at the masses, because the substances have different molar masses and the equation has different coefficients. You have to compare moles divided by coefficients. The smallest result is your limiting reagent."
+      },
+      "diagram": {
+        "type": "limitingExcess"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Limiting reagent: fully consumed; caps the product amount."
+        },
+        {
+          "text": "Excess reagent: present beyond what's needed; some remains."
+        },
+        {
+          "text": "Theoretical yield: maximum product from the limiting reagent."
+        },
+        {
+          "text": "Excess remaining: initial excess moles minus those that reacted."
+        }
+      ],
+      "callout": "Yield always comes from the limiting reagent, never the excess.",
+      "durationInFrames": 960,
+      "caption": "Limiting reagent, excess reagent, theoretical yield, excess remaining.",
+      "voiceover": {
+        "text": "Quick vocabulary. The limiting reagent is the one fully consumed, and it caps how much product forms. The excess reagent is present beyond what's needed, so some of it remains after the reaction. The theoretical yield is the maximum product you can make, calculated from the limiting reagent assuming everything reacts. And the excess remaining is what's left of the excess reagent, found by taking the initial excess moles and subtracting the moles that actually reacted. The golden rule, yield always comes from the limiting reagent, never from the excess."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "Finding the limiting reagent",
+      "body": "Convert every reactant to moles, divide each by its coefficient, and the smallest result is limiting.",
+      "bullets": [
+        {
+          "text": "Convert each reactant mass to moles."
+        },
+        {
+          "text": "Divide each mole value by its coefficient in the equation."
+        },
+        {
+          "text": "The smallest answer is the limiting reagent."
+        }
+      ],
+      "secondary": "Then calculate the yield using the limiting reagent's moles and the mole ratio to the product.",
+      "callout": "Divide moles by coefficient. Smallest wins the title.",
+      "durationInFrames": 1020,
+      "caption": "Moles ÷ coefficient for each reactant; smallest is limiting.",
+      "voiceover": {
+        "text": "Here's the reliable method for finding the limiting reagent. Step one, convert every reactant mass to moles. Step two, and this is the bit people skip, divide each mole value by its coefficient in the balanced equation. This corrects for the fact that some reactants are needed in bigger amounts than others. Step three, the smallest result is the limiting reagent. Don't just pick the one with fewer grams, or even fewer moles, because the coefficients change everything. Once you know which is limiting, you calculate the theoretical yield using only the limiting reagent's moles and its mole ratio to the product."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Hydrogen and oxygen",
+      "question": "5.00 g H₂ reacts with 32.0 g O₂. 2H₂ + O₂ → 2H₂O. Find the limiting reagent and theoretical yield of H₂O. (H 1.008, O 15.999)",
+      "coachNote": "Divide each reactant's moles by its coefficient.",
+      "steps": [
+        "n(H₂) = 5.00 ÷ 2.016 = 2.48 mol; ÷ coefficient 2 = 1.24",
+        "n(O₂) = 32.0 ÷ 31.998 = 1.00 mol; ÷ coefficient 1 = 1.00",
+        "Smallest is O₂ (1.00), so O₂ is limiting",
+        "Ratio O₂ : H₂O = 1 : 2, so n(H₂O) = 1.00 × 2 = 2.00 mol",
+        "m(H₂O) = 2.00 × 18.02 = 36.0 g ✓"
+      ],
+      "durationInFrames": 1500,
+      "caption": "O₂ is limiting; theoretical yield is 36.0 g H₂O.",
+      "voiceover": {
+        "text": "Let's find a limiting reagent. Five grams of hydrogen reacts with thirty-two grams of oxygen, in two hydrogen plus oxygen gives two water. Find the limiting reagent and the theoretical yield of water. Step one, moles of each. Hydrogen, five over two-point-zero-one-six is two-point-four-eight moles. Oxygen, thirty-two over thirty-two is one moles. Step two, divide each by its coefficient. Hydrogen, two-point-four-eight over two is one-point-two-four. Oxygen, one over one is one. Step three, the smallest is oxygen at one, so oxygen is the limiting reagent. Even though there are fewer moles of oxygen, you had to divide by the coefficients to be sure. Step four, calculate the yield from oxygen. The ratio of oxygen to water is one to two, so two moles of water form. Step five, mass of water, two times eighteen is thirty-six grams. That's the theoretical yield."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Excess left over",
+      "question": "10.0 g Na reacts with 20.0 g Cl₂. 2Na + Cl₂ → 2NaCl. Find the LR, the yield of NaCl, and the Cl₂ left over. (Na 22.99, Cl 35.45)",
+      "coachNote": "After finding the LR, subtract reacted excess from initial excess.",
+      "steps": [
+        "n(Na) = 10.0 ÷ 22.99 = 0.435 mol; ÷ 2 = 0.218 → limiting",
+        "n(Cl₂) = 20.0 ÷ 70.91 = 0.282 mol; ÷ 1 = 0.282 → excess",
+        "Ratio Na : NaCl = 1 : 1, so n(NaCl) = 0.435 mol; m = 0.435 × 58.44 = 25.4 g",
+        "Cl₂ reacted = n(Na) ÷ 2 = 0.4350 ÷ 2 = 0.2175 mol",
+        "Cl₂ left = 0.2821 − 0.2175 = 0.0646 mol = 4.58 g ✓"
+      ],
+      "durationInFrames": 1560,
+      "caption": "Na limiting → 25.4 g NaCl; 4.58 g Cl₂ remains.",
+      "voiceover": {
+        "text": "Now one with leftover excess. Ten grams of sodium reacts with twenty grams of chlorine gas, in two sodium plus chlorine gives two sodium chloride. Find the limiting reagent, the yield of sodium chloride, and the chlorine left over. Step one, moles. Sodium, ten over twenty-three is nought-point-four-three-five. Chlorine, twenty over seventy-point-nine-one is nought-point-two-eight-two. Step two, divide by coefficients. Sodium, nought-point-four-three-five over two is nought-point-two-one-eight. Chlorine, nought-point-two-eight-two over one is nought-point-two-eight-two. The smaller is sodium, so sodium is limiting and chlorine is in excess. Step three, yield. Sodium to sodium chloride is one to one, so nought-point-four-three-five moles of product, which is twenty-five-point-four grams. Step four, how much chlorine actually reacted? The ratio of sodium to chlorine is two to one, so chlorine reacted is nought-point-four-three-five over two, which is nought-point-two-one-seven-five moles. Step five, the chlorine left over is the initial nought-point-two-eight-two minus that nought-point-two-one-seven-five, which leaves about nought-point-zero-six-five moles of chlorine, and converting to mass gives four-point-five-eight grams. You subtract what reacted from what you started with."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: picking the limiting reagent from smaller mass or smaller moles alone, without dividing by the coefficient.",
+      "secondary": "Trap 2: calculating the yield from the excess reagent instead of the limiting one. Trap 3: forgetting to subtract the reacted moles when finding how much excess remains.",
+      "mistakeTag": "Where limiting-reagent marks vanish",
+      "callout": "Divide by coefficient, yield from limiting, subtract for leftover.",
+      "durationInFrames": 1260,
+      "caption": "Always divide moles by coefficient; yield from the LR; subtract reacted excess.",
+      "voiceover": {
+        "text": "Three traps, and they cost a lot of marks. Trap one, picking the limiting reagent based on smaller mass, or even smaller moles, without dividing by the coefficient. We just saw oxygen win with fewer moles only after dividing by coefficients, and sodium win even though it had more moles. You must divide by the coefficient. Trap two, calculating the yield from the excess reagent. The yield always comes from the limiting reagent, because that's what runs out and stops the reaction. Trap three, when finding how much excess is left, forgetting to subtract the moles that reacted. It's initial excess minus reacted excess, not the initial amount. Those three are the whole topic's difficulty."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "4.00 g H₂ reacts with 16.0 g O₂. 2H₂ + O₂ → 2H₂O. Which is limiting? (H 1.008, O 15.999)",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "n(H₂) = 4.00 ÷ 2.016 = 1.98 mol; ÷ 2 = 0.992",
+        "n(O₂) = 16.0 ÷ 31.998 = 0.500 mol; ÷ 1 = 0.500",
+        "Compare 0.992 vs 0.500",
+        "Smallest is O₂ (0.500)",
+        "Answer: O₂ is the limiting reagent ✓"
+      ],
+      "durationInFrames": 1170,
+      "caption": "O₂ gives the smaller moles-per-coefficient, so O₂ is limiting.",
+      "voiceover": {
+        "text": "Quick check. Four grams of hydrogen reacts with sixteen grams of oxygen, in two hydrogen plus oxygen gives two water. Which is the limiting reagent? Pause and work it through. Right, let's check it. Step one, moles. Hydrogen, four over two-point-zero-one-six is one-point-nine-eight. Oxygen, sixteen over thirty-two is nought-point-five. Step two, divide by coefficients. Hydrogen, one-point-nine-eight over two is nought-point-nine-nine. Oxygen, nought-point-five over one is nought-point-five. Step three, compare. Nought-point-five is smaller than nought-point-nine-nine. So oxygen is the limiting reagent. Hydrogen had nearly four times the moles per coefficient, so plenty of it is left over."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "The limiting reagent runs out first and caps the product.",
+        "Find it by dividing each reactant's moles by its coefficient.",
+        "The smallest result is the limiting reagent.",
+        "Calculate the theoretical yield from the limiting reagent only.",
+        "Excess remaining = initial moles − moles that reacted."
+      ],
+      "finalPrompt": "Two reactant amounts given? Find the limiting reagent first.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: divide by coefficient, smallest is limiting, yield from LR.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, the limiting reagent runs out first and caps the maximum product. Second, you find it by dividing each reactant's moles by its coefficient. Third, the smallest result is the limiting reagent, not the one with the smallest mass. Fourth, you calculate the theoretical yield from the limiting reagent only, never the excess. And fifth, to find how much excess is left, subtract the moles that reacted from the moles you started with. Whenever a question gives you two reactant amounts, your first move is always to find the limiting reagent. See you next lesson."
+      }
+    }
+  ]
+}

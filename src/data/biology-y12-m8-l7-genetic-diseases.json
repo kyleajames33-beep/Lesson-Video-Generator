@@ -1,0 +1,269 @@
+{
+  "title": "Genetic Diseases",
+  "subtitle": "Cystic fibrosis, PKU, Huntington's and Type 1 diabetes",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusDotPoints": [
+    "investigate the causes and effects of non-infectious diseases in humans, including genetic diseases (ACSBL114, ACSBL115)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-15",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Do non-infectious diseases cause more deaths than infectious diseases?",
+  "lessonIntent": "Students can trace the gene-protein-disease pathway for named genetic diseases and explain how mutation type relates to inheritance pattern.",
+  "examSkill": "Link a named mutation to its altered protein and clinical consequence, and explain why penetrance and inheritance pattern mean genetic does not equal inevitable.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, genetic diseases. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Genetic Diseases (Year 12 Biology, Module 8, Lesson 7)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two healthy parents, one sick child",
+      "body": "Both parents carry a single faulty copy of one gene and have no symptoms at all. Their child inherits two copies and is seriously ill.",
+      "callout": "How can one copy be harmless but two be life-threatening?",
+      "image": "bioM8L7GenePathway",
+      "durationInFrames": 2070,
+      "caption": "The 1989 CFTR gene discovery linked one mutation to a non-functional chloride channel.",
+      "voiceover": {
+        "text": "In 1989, Francis Collins and Lap-Chee Tsui announced the discovery of the C F T R gene, the first disease gene ever pinned down by tracking it along a chromosome. The mutation they found produces a chloride channel that simply does not open, and the result is thick, sticky mucus building up in the lungs and pancreas, the disease cystic fibrosis. But here is the puzzle that this lesson revolves around. Both parents of a child with cystic fibrosis carry one mutated copy of the C F T R gene, and they have no symptoms whatsoever. Somehow, inheriting two copies of a single gene variant causes a life-threatening disease, while inheriting just one causes no harm at all. How can that be? Today we build the framework that explains it, the path from gene, to protein, to disease, across four very different genetic conditions."
+      }
+    },
+    {
+      "id": "concept-framework",
+      "type": "concept",
+      "heading": "Gene, protein, disease",
+      "body": "Every genetic disease follows one logic: a mutated gene makes an altered protein, and the altered protein produces the disease.",
+      "bullets": [
+        {
+          "text": "Loss of function: the protein no longer works, as in cystic fibrosis or PKU."
+        },
+        {
+          "text": "Gain of toxic function: the protein takes on a new, harmful role, as in Huntington's."
+        },
+        {
+          "text": "An immune trigger: genes raise the risk of the body attacking itself, as in Type 1 diabetes."
+        }
+      ],
+      "secondary": "Full marks require all three links: name the gene, describe the change to the protein, and state the physiological consequence.",
+      "callout": "Gene to protein to consequence. Name all three links.",
+      "durationInFrames": 2070,
+      "caption": "Genetic disease logic: mutated gene, altered protein, physiological consequence.",
+      "voiceover": {
+        "text": "So before the specific diseases, let's build the universal framework, because every genetic disease follows the same three-step logic. A mutated gene produces an altered protein, and that altered protein produces the disease. The mutations come in a few flavours, and naming the type is worth marks. First, loss of function, where the protein no longer does its job, as in cystic fibrosis and P K U. Second, gain of toxic function, where the mutation produces a new, harmful protein that poisons cells, as in Huntington's disease. And third, an immune trigger, where genes raise the risk of the body attacking its own tissues, the basis of type one diabetes. The exam technique is the same across all of them, full marks require all three links, name the gene, the change to the protein, and the physiological consequence. Miss a link, lose a mark."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Mutation: a permanent change in DNA sequence that can alter a protein."
+        },
+        {
+          "text": "Dominant inheritance: one mutated copy is enough to cause the disease."
+        },
+        {
+          "text": "Recessive inheritance: two mutated copies are needed; one-copy carriers are unaffected."
+        },
+        {
+          "text": "Penetrance: the proportion of people with the genotype who actually show the disease."
+        }
+      ],
+      "callout": "Dominant needs one bad copy. Recessive needs two.",
+      "durationInFrames": 2055,
+      "caption": "Mutation, dominant inheritance, recessive inheritance, penetrance.",
+      "voiceover": {
+        "text": "Let's pin down four genetics terms the lesson depends on. A mutation is a permanent change in the DNA sequence, which can alter the structure and function of a protein. Dominant inheritance means a single mutated copy of the gene is enough to cause the disease, so an affected parent has a fifty percent chance of passing it on. Recessive inheritance means two mutated copies are required, so a person with only one copy is a carrier and shows no symptoms, which directly answers our opening puzzle about cystic fibrosis. And penetrance is the proportion of people who carry a disease genotype and actually go on to express the disease, and it is often less than one hundred percent. The quick cue, dominant needs just one faulty copy to cause disease, recessive needs two, and a carrier with one recessive copy is unaffected."
+      }
+    },
+    {
+      "id": "concept-cf",
+      "type": "concept",
+      "heading": "Cystic fibrosis, step by step",
+      "body": "A CFTR mutation removes a working chloride channel, which dehydrates the mucus that lines the lungs and pancreas.",
+      "bullets": [
+        {
+          "text": "The CFTR gene mutation produces a misfolded, non-functional chloride channel."
+        },
+        {
+          "text": "Without it, chloride is not secreted, so water does not follow by osmosis."
+        },
+        {
+          "text": "The mucus dehydrates and thickens, causing lung infections and poor digestion."
+        }
+      ],
+      "secondary": "Cystic fibrosis is autosomal recessive, so carriers make enough working CFTR from their one normal allele. The thick mucus is the consequence, never the cause.",
+      "callout": "No chloride out, no water out, the mucus dries and thickens.",
+      "durationInFrames": 2235,
+      "caption": "CFTR mutation, no chloride channel, dehydrated mucus, lung and pancreas damage.",
+      "voiceover": {
+        "text": "Let's walk through cystic fibrosis step by step, because the order of cause and effect is exactly what gets marked. It begins with a mutation in the C F T R gene, which produces a misfolded chloride channel that is broken down before it reaches the cell surface, so there is no working channel. Now the consequences cascade. Without that channel, chloride ions are not secreted out of the cell. And because water follows ions by osmosis, just like in the kidney and the guard cell, water does not follow the chloride out either. So the mucus lining the lungs and pancreas dehydrates and becomes thick and sticky. That thick mucus traps bacteria, causing chronic lung infections, and blocks the pancreatic ducts, causing poor digestion. Two points for the exam, cystic fibrosis is recessive, so carriers make enough working protein from their one normal allele, and crucially, the thick mucus is the consequence, never the cause."
+      }
+    },
+    {
+      "id": "concept-pku-hd",
+      "type": "concept",
+      "heading": "PKU and Huntington's: two mechanisms",
+      "body": "PKU is a missing enzyme; Huntington's is a toxic protein. That difference drives everything else about them.",
+      "bullets": [
+        {
+          "text": "PKU: the PAH enzyme is missing, so phenylalanine builds up and damages the developing brain."
+        },
+        {
+          "text": "PKU is recessive and is managed by a low-phenylalanine diet caught by newborn screening."
+        },
+        {
+          "text": "Huntington's: a CAG repeat makes a toxic protein, so it is dominant and currently untreatable."
+        }
+      ],
+      "secondary": "PKU prevents the consequence without curing the gene. Huntington's is dominant because the toxic protein harms cells regardless of the normal allele.",
+      "callout": "Missing enzyme can be bypassed. A toxic protein cannot be ignored.",
+      "durationInFrames": 2190,
+      "caption": "PKU: missing enzyme, manageable by diet. Huntington's: toxic protein, dominant.",
+      "voiceover": {
+        "text": "Now two more diseases that show how the mechanism shapes everything. First, P K U, phenylketonuria. Here the mutation means the enzyme that normally breaks down the amino acid phenylalanine is missing, so phenylalanine builds up to toxic levels and damages the developing brain. P K U is recessive, and here is the beautiful part, it is managed by a low-phenylalanine diet, and a newborn heel-prick screen catches it within days, before any brain damage occurs. So we prevent the consequence without ever curing the gene. Now contrast Huntington's disease. Its mutation, an expanded C A G repeat, does not remove a useful protein, it creates a brand new toxic one that slowly kills brain cells. And that is exactly why Huntington's is dominant, the toxic protein harms cells regardless of the normal copy, so one bad copy is enough. A missing enzyme you can bypass with diet, a toxic protein you cannot."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Disease",
+          "Protein change",
+          "Inheritance"
+        ],
+        "rows": [
+          [
+            "Cystic fibrosis",
+            "No chloride channel",
+            "Recessive"
+          ],
+          [
+            "PKU",
+            "Missing enzyme",
+            "Recessive"
+          ],
+          [
+            "Huntington's",
+            "Toxic protein",
+            "Dominant"
+          ],
+          [
+            "Type 1 diabetes",
+            "Beta cells destroyed",
+            "Polygenic"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Trace the CFTR pathway",
+      "question": "Describe the complete pathway from a CFTR gene mutation to lung symptoms in cystic fibrosis.",
+      "coachNote": "Start at the gene; do not start at the mucus.",
+      "steps": [
+        "The CFTR gene mutation produces a misfolded protein that is degraded, so no functional chloride channel forms.",
+        "Chloride ions are therefore not secreted across the epithelial cell membrane.",
+        "Because water follows ions by osmosis, water is not drawn out onto the airway surface.",
+        "The airway mucus dehydrates and becomes thick and sticky.",
+        "Thick mucus traps bacteria, causing repeated lung infections and progressive lung damage ✓"
+      ],
+      "durationInFrames": 2160,
+      "caption": "Gene to protein to no chloride to dehydrated mucus to lung infection.",
+      "voiceover": {
+        "text": "Let's trace the cystic fibrosis pathway in full, the classic four-mark question, and the golden rule is to start at the gene, not at the mucus. Step one, the C F T R gene mutation produces a misfolded protein, which the cell destroys, so no functional chloride channel reaches the membrane. Step two, with no channel, chloride ions are not secreted across the epithelial cell membrane. Step three, because water always follows ions by osmosis, water is not drawn out onto the airway surface either. Step four, so the mucus lining the airway dehydrates and becomes thick and sticky. And step five, that thick mucus traps bacteria, causing repeated lung infections and progressive lung damage over time. Notice the logic flows in one direction, gene, protein, no chloride, no water, thick mucus, infection. If you start your answer at thick mucus, you have reversed cause and effect and lost the framework."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Why dominant, why recessive?",
+      "question": "Huntington's is dominant but PKU is recessive. Explain how the protein change in each disease produces its inheritance pattern, and why diet manages PKU but not Huntington's.",
+      "coachNote": "Connect the protein effect to how many working copies you need.",
+      "steps": [
+        "PKU is loss of function: one working PAH allele still makes enough enzyme, so carriers are fine, hence recessive.",
+        "Huntington's is gain of toxic function: the mutant protein harms cells even with a normal allele present, hence dominant.",
+        "PKU's problem is a build-up of phenylalanine, which a low-phenylalanine diet directly prevents.",
+        "Huntington's problem is an internally produced toxic protein, which diet cannot remove.",
+        "Answer: protein effect sets the inheritance, and only PKU's cause can be bypassed by diet ✓"
+      ],
+      "durationInFrames": 2385,
+      "caption": "Loss of function is recessive; toxic gain of function is dominant.",
+      "voiceover": {
+        "text": "Now a compare question that links mechanism to inheritance, a real band-five-to-six skill. Huntington's is dominant, P K U is recessive, so explain how the protein change in each produces that pattern. P K U is a loss of function, the enzyme is missing. But a person with one working allele still makes enough enzyme to cope, so a single faulty copy causes no disease, which is exactly why it is recessive, you need two faulty copies. Huntington's is the opposite, a gain of toxic function. The mutant protein actively harms brain cells even when a normal allele is present, so one faulty copy is enough, which makes it dominant. The treatment difference follows directly. P K U's problem is a build-up of phenylalanine from the diet, so a low-phenylalanine diet directly prevents it. Huntington's problem is a toxic protein the body makes internally, and no diet can remove that. So the protein effect sets the inheritance, and only P K U's cause can be bypassed."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: thinking genetic means you will definitely get it. Recessive diseases need two copies, and many conditions have incomplete penetrance.",
+      "secondary": "Trap 2: saying cystic fibrosis is caused by thick mucus. The cause is the CFTR mutation; thick mucus is the consequence. Trap 3: thinking Huntington's affects you from birth. The mutation is present from birth, but symptoms emerge gradually in middle adulthood.",
+      "mistakeTag": "Where genetic-disease marks vanish",
+      "callout": "Genetic is not always inevitable. Mucus is the effect, not the cause.",
+      "durationInFrames": 2040,
+      "caption": "Genetic isn't always inevitable; mucus is the effect; Huntington's onset is delayed.",
+      "voiceover": {
+        "text": "Three traps that cost marks in genetic disease questions. Trap one, thinking that if a disease is genetic, you will definitely get it. That is only true for high-penetrance dominant conditions like Huntington's. Recessive diseases like cystic fibrosis and P K U need two mutated copies, so carriers are unaffected, and many conditions have incomplete penetrance. Trap two, saying cystic fibrosis is caused by thick mucus. We have hammered this, the cause is the C F T R mutation and the missing chloride channel, the thick mucus is the downstream consequence. Always begin at the gene. Trap three, thinking Huntington's affects you from birth because the mutation is there from birth. The mutation is present from conception, but the toxic protein accumulates slowly, so symptoms typically emerge only in middle adulthood. The gene is present from birth, the disease emerges over decades."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Two parents are both carriers for cystic fibrosis but have no symptoms. Explain at the protein level why carriers are healthy, and why their child can still be affected.",
+      "pausePrompt": "Pause and think about how many working alleles each has.",
+      "answerSteps": [
+        "Cystic fibrosis is autosomal recessive, so it needs two mutated CFTR alleles to appear.",
+        "A carrier has one mutated allele and one normal allele.",
+        "The single normal allele makes enough functional CFTR chloride channels, so the carrier is healthy.",
+        "If the child inherits the mutated allele from each parent, it has no working CFTR and is affected.",
+        "Answer: one normal allele is enough for a carrier; two mutated alleles cause the disease ✓"
+      ],
+      "durationInFrames": 2205,
+      "caption": "One normal allele protects carriers; two mutated alleles cause cystic fibrosis.",
+      "voiceover": {
+        "text": "Quick check, and this finally answers our opening puzzle. Two parents are both carriers for cystic fibrosis but have no symptoms. Explain at the protein level why carriers are healthy, and why their child can still be affected. Pause and think about how many working alleles each person has. Right, let's check it. Cystic fibrosis is recessive, so it only appears when a person has two mutated C F T R alleles. A carrier has one mutated allele and one normal allele, and that single normal allele still makes enough functional chloride channels to keep the airways working, so the carrier has no symptoms. But if the child inherits the mutated allele from each parent, it ends up with two faulty copies and no working C F T R, so the child is affected. So the answer, one normal allele is enough to protect a carrier, but two mutated alleles together cause the disease."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Every genetic disease follows gene to protein to physiological consequence.",
+        "Loss of function tends to be recessive; toxic gain of function tends to be dominant.",
+        "Cystic fibrosis: CFTR mutation, no chloride channel, dehydrated thick mucus.",
+        "PKU is a missing enzyme managed by diet; Huntington's is a toxic protein that is not.",
+        "Genetic does not mean inevitable: penetrance and inheritance pattern both matter."
+      ],
+      "finalPrompt": "Explaining a genetic disease? Name the gene, the protein change, and the consequence.",
+      "durationInFrames": 1875,
+      "caption": "Five takeaways: the framework, inheritance logic, the four diseases, penetrance.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, every genetic disease follows the same path, gene, to altered protein, to physiological consequence. Second, the inheritance logic, a loss of function tends to be recessive, while a toxic gain of function tends to be dominant. Third, cystic fibrosis in one line, a C F T R mutation removes the chloride channel, so the mucus dehydrates and thickens. Fourth, P K U is a missing enzyme that you can manage with diet, whereas Huntington's is a toxic protein that you cannot. And fifth, the misconception to retire, genetic does not mean inevitable, because penetrance and inheritance pattern both matter. Whenever you explain a genetic disease, name the gene, the protein change, and the consequence. Next lesson, environmental diseases. See you there."
+      }
+    }
+  ]
+}

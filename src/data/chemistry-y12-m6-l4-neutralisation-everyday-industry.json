@@ -1,0 +1,227 @@
+{
+  "title": "Neutralisation in Everyday Life and Industry",
+  "subtitle": "The same reaction, from your stomach to a smokestack",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6: Acid/Base Reactions",
+  "syllabusDotPoints": [
+    "investigate applications of neutralisation reactions in everyday life and industrial processes"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "CH12-13",
+    "CH11/12-2",
+    "CH11/12-5",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What is an acid and what is a base?",
+  "lessonIntent": "Students can write and explain neutralisation equations across real contexts: antacids, fertilisers, flue gas desulfurisation and wastewater treatment.",
+  "examSkill": "Write and balance industrial neutralisation equations; explain diprotic vs monoprotic mole ratios; for each context name the agent, give the equation, and state the consequence.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, neutralisation in everyday life and industry. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Neutralisation in Everyday Life and Industry (Year 12 Chemistry, Module 6, Lesson 4)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The smog that changed the law",
+      "body": "In 1952, London's Great Smog killed thousands in days. Coal SO₂ dissolved in fog to make sulfuric acid.",
+      "callout": "How does the chemistry that fixes heartburn also stop disasters?",
+      "image": "londonSmogScrubber",
+      "durationInFrames": 660,
+      "caption": "Acid SO₂ caused the 1952 London smog; the same neutralisation fixes it.",
+      "voiceover": {
+        "text": "OK, here's a disaster with chemistry at its heart. In nineteen fifty-two, a thick smog settled over London for days. Coal fires had filled the air with sulfur dioxide, which dissolved in the fog to make sulfuric acid, an acid mist with a pH as low as one-point-six, more acidic than stomach acid, settling into people's lungs. Thousands died. The fix the government mandated was a neutralisation reaction, scrubbing the sulfur dioxide with a base before it ever left the chimney. And that's the theme today. The very same acid plus base chemistry that settles your heartburn, at a tiny scale, runs around the clock in power stations and fertiliser plants at a planetary scale."
+      }
+    },
+    {
+      "id": "concept-antacids",
+      "type": "concept",
+      "heading": "Antacids: two routes to relief",
+      "body": "All antacids neutralise stomach HCl, but carbonates and hydroxides do it by different patterns.",
+      "bullets": [
+        {"text": "Carbonate: CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂. The CO₂ is the burp."},
+        {"text": "Hydroxide: Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O. No carbonate, so no gas."},
+        {"text": "Hydroxide: Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O. Salt and water only."}
+      ],
+      "secondary": "Only carbonate antacids release CO₂. Mg(OH)₂ and Al(OH)₃ have no carbonate ion, so they can't form any.",
+      "callout": "See a hydroxide antacid making CO₂? It can't; there is no carbon.",
+      "durationInFrames": 1140,
+      "caption": "CaCO₃ gives CO₂; Mg(OH)₂ and Al(OH)₃ give only salt + water.",
+      "voiceover": {
+        "text": "Let's start in your stomach. It sits at pH one-and-a-half to three-and-a-half thanks to hydrochloric acid, and when there's too much, you reach for an antacid. There are two routes. The carbonate route, like calcium carbonate, reacts as calcium carbonate plus two HCl gives calcium chloride plus water plus carbon dioxide, and that carbon dioxide is the burp. The hydroxide route, like magnesium hydroxide, reacts as magnesium hydroxide plus two HCl gives magnesium chloride plus two water, no gas at all. Aluminium hydroxide is the same idea, giving aluminium chloride and water. Here's the exam point. Only the carbonate antacids release carbon dioxide. The hydroxides contain no carbonate ion, so there's simply no carbon available to make a gas."
+      }
+    },
+    {
+      "id": "concept-fertiliser",
+      "type": "concept",
+      "heading": "Fertilisers: ammonia meets acid",
+      "body": "Haber-process ammonia is neutralised into solid fertiliser salts, and the acid's proticity sets the ratio.",
+      "bullets": [
+        {"text": "Ammonium sulfate: 2NH₃ + H₂SO₄ → (NH₄)₂SO₄."},
+        {"text": "Ammonium nitrate: NH₃ + HNO₃ → NH₄NO₃."},
+        {"text": "Ammonia is the base, accepting one proton each time to become NH₄⁺."}
+      ],
+      "secondary": "Sulfuric acid is diprotic, so it donates two protons and needs two NH₃. Nitric acid is monoprotic, so one NH₃ is enough.",
+      "callout": "Two NH₃ for H₂SO₄ is about proticity, not about being stronger.",
+      "durationInFrames": 1140,
+      "caption": "2NH₃ + H₂SO₄ → (NH₄)₂SO₄; NH₃ + HNO₃ → NH₄NO₃.",
+      "voiceover": {
+        "text": "Now to fertiliser, where acid-base chemistry feeds the world. The Haber process makes ammonia, but ammonia gas isn't a practical fertiliser, so it's neutralised into solid salts. With sulfuric acid you get ammonium sulfate, written two ammonia plus sulfuric acid gives ammonium sulfate. With nitric acid you get ammonium nitrate, just ammonia plus nitric acid gives ammonium nitrate. In both, ammonia is the Brønsted-Lowry base, accepting a proton to become ammonium. The reason you need two ammonias for sulfuric acid is that sulfuric acid is diprotic, it donates two protons, and each one needs its own ammonia to catch it. Nitric acid is monoprotic, one proton, so one ammonia. Notice that's about how many protons, not about which acid is stronger."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Antacid: a base that neutralises excess stomach HCl, like Mg(OH)₂ or CaCO₃."},
+        {"text": "Agricultural liming: adding CaCO₃ or Ca(OH)₂ to raise acidic soil pH."},
+        {"text": "Monoprotic acid: donates one proton, like HCl and HNO₃."},
+        {"text": "Diprotic acid: donates two protons, like H₂SO₄ and H₂CO₃."}
+      ],
+      "callout": "Proticity counts ionisable protons; it sets how much base you need.",
+      "durationInFrames": 1020,
+      "caption": "Antacid, agricultural liming, monoprotic acid, diprotic acid.",
+      "voiceover": {
+        "text": "Quick vocabulary. An antacid is a base that neutralises the excess hydrochloric acid in your stomach, like magnesium hydroxide or calcium carbonate. Agricultural liming is adding calcium carbonate or calcium hydroxide to acidic soil to raise its pH back toward the sweet spot of about six to seven-and-a-half for crops. A monoprotic acid donates just one proton per molecule, like hydrochloric acid and nitric acid. A diprotic acid donates two, like sulfuric acid and carbonic acid. That property, called proticity, is what tells you how many moles of base you need. One ionisable proton needs one mole of hydroxide, two protons needs two. Keep proticity separate from strength in your head, because they answer different questions."
+      }
+    },
+    {
+      "id": "concept-fgd",
+      "type": "concept",
+      "heading": "Cleaning gases and water",
+      "body": "Flue gas desulfurisation and wastewater treatment both neutralise acid at the source.",
+      "bullets": [
+        {"text": "Scrubbing: Ca(OH)₂ + SO₂ → CaSO₃ + H₂O, removing 90 to 99 percent of SO₂."},
+        {"text": "SO₂ acts as the acidic oxide; the calcium hydroxide is the base."},
+        {"text": "Wastewater: raising pH precipitates metals, Fe³⁺ + 3OH⁻ → Fe(OH)₃."}
+      ],
+      "secondary": "Effluent must reach pH 6.5 to 8.5 before discharge. A full answer names the agent, gives the equation, and states the effect on the ecosystem.",
+      "callout": "Use SO₂, not SO₃; the salt formed in scrubbing is CaSO₃.",
+      "durationInFrames": 1200,
+      "caption": "FGD: Ca(OH)₂ + SO₂ → CaSO₃ + H₂O; wastewater: Fe³⁺ + 3OH⁻ → Fe(OH)₃.",
+      "voiceover": {
+        "text": "Now the industrial clean-up, and this is back to the London smog. Coal contains sulfur, which burns to sulfur dioxide, an acidic gas. In flue gas desulfurisation, you scrub it with calcium hydroxide before it escapes, written calcium hydroxide plus sulfur dioxide gives calcium sulfite plus water, and modern systems strip out ninety to ninety-nine percent of it. Here the sulfur dioxide behaves as an acidic oxide and the calcium hydroxide is the base, and the salt is calcium sulfite, C-a-S-O-three. Watch the gas, it's SO two, not SO three. The same idea cleans water. Acidic factory effluent is neutralised with a base, and as the pH rises, dissolved toxic metals fall out as solids, like iron three plus picking up hydroxide to form iron three hydroxide. Effluent has to reach pH six-and-a-half to eight-and-a-half before it's legal to discharge. For full marks, always name the agent, give the equation, and state the consequence for the ecosystem."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "burn", "label": "S in coal burns → SO₂"},
+          {"id": "scrub", "label": "Scrub with Ca(OH)₂"},
+          {"id": "salt", "label": "CaSO₃ + H₂O collected"},
+          {"id": "clean", "label": "Clean gas released"}
+        ],
+        "edges": [
+          {"from": "burn", "to": "scrub"},
+          {"from": "scrub", "to": "salt"},
+          {"from": "scrub", "to": "clean"}
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Three antacid equations",
+      "question": "Write balanced equations for CaCO₃, Mg(OH)₂ and Al(OH)₃ each reacting with HCl. Which make CO₂?",
+      "coachNote": "Build the salt from charges, then balance. Only carbonates give CO₂.",
+      "steps": [
+        "CaCO₃ is a carbonate → salt + water + CO₂: CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂",
+        "Mg(OH)₂ is a hydroxide → salt + water: Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O",
+        "Al(OH)₃ is a hydroxide, Al³⁺ needs 3 Cl⁻: Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O",
+        "CO₂ requires a carbonate ion to decompose from H₂CO₃",
+        "Answer: only CaCO₃ makes CO₂; the two hydroxides give salt + water only ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Only CaCO₃ + HCl makes CO₂; Mg(OH)₂ and Al(OH)₃ give salt + water.",
+      "voiceover": {
+        "text": "Let's write the three antacid equations. First, calcium carbonate is a carbonate, so the pattern is salt plus water plus carbon dioxide. Pairing calcium with chloride and balancing gives calcium carbonate plus two HCl gives calcium chloride plus water plus carbon dioxide. Second, magnesium hydroxide is a hydroxide, so just salt plus water, giving magnesium hydroxide plus two HCl gives magnesium chloride plus two water. Third, aluminium hydroxide, also a hydroxide, but aluminium is three plus so it needs three chlorides, giving aluminium hydroxide plus three HCl gives aluminium chloride plus three water. Now the question, which make carbon dioxide? Only the calcium carbonate, because making carbon dioxide needs a carbonate ion to form carbonic acid that then breaks down. The two hydroxides have no carbon, so no gas."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Industrial equations and ratios",
+      "question": "Write equations for ammonium sulfate, ammonium nitrate, and flue gas scrubbing. Why 2 NH₃ for H₂SO₄?",
+      "coachNote": "Proticity sets the ratio. SO₂ is the acid in scrubbing.",
+      "steps": [
+        "Ammonium sulfate: H₂SO₄ donates 2 H⁺, so 2NH₃ + H₂SO₄ → (NH₄)₂SO₄",
+        "Ammonium nitrate: HNO₃ donates 1 H⁺, so NH₃ + HNO₃ → NH₄NO₃",
+        "Scrubbing: SO₂ is the acidic oxide → Ca(OH)₂ + SO₂ → CaSO₃ + H₂O",
+        "H₂SO₄ is diprotic; each proton needs one NH₃ to accept it",
+        "Answer: 2 NH₃ are needed because H₂SO₄ donates two protons, not because it's stronger ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "2NH₃+H₂SO₄→(NH₄)₂SO₄; NH₃+HNO₃→NH₄NO₃; Ca(OH)₂+SO₂→CaSO₃+H₂O.",
+      "voiceover": {
+        "text": "Now three industrial equations. Ammonium sulfate, where sulfuric acid donates two protons, so two ammonia plus sulfuric acid gives ammonium sulfate. Ammonium nitrate, where nitric acid donates only one proton, so one ammonia plus nitric acid gives ammonium nitrate. And the scrubbing reaction, where sulfur dioxide is the acidic oxide, so calcium hydroxide plus sulfur dioxide gives calcium sulfite plus water. The classic question is why two ammonias for sulfuric acid. The answer is proticity. Sulfuric acid is diprotic, it has two ionisable protons, and ammonia accepts one proton at a time, so you need two ammonias, one for each proton. A student who says it's because sulfuric acid is stronger has confused strength with proticity. Both these acids are strong, but only sulfuric is diprotic."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: writing CO₂ for Mg(OH)₂ or Al(OH)₃ with HCl. Hydroxides have no carbonate, so no CO₂.",
+      "secondary": "Trap 2: using 1 NH₃ for H₂SO₄, giving NH₄HSO₄. Diprotic acid needs 2 NH₃ for (NH₄)₂SO₄. Trap 3: in wastewater answers, naming the agent but skipping the equation and the environmental consequence.",
+      "mistakeTag": "Where application marks slip",
+      "callout": "No carbonate, no CO₂; diprotic needs 2 NH₃; always state the consequence.",
+      "durationInFrames": 1230,
+      "caption": "Hydroxides give no CO₂; H₂SO₄ needs 2 NH₃; answer agent + equation + consequence.",
+      "voiceover": {
+        "text": "Three traps. Trap one, writing carbon dioxide as a product when magnesium or aluminium hydroxide reacts with acid. They're hydroxides, with no carbonate ion, so carbon dioxide is impossible. Only carbonates and hydrogen carbonates produce it. Trap two, using one ammonia for sulfuric acid and writing ammonium hydrogen sulfate. That's only the first proton neutralised. With enough ammonia, both protons go, and the product is ammonium sulfate from two ammonias. Trap three, the application essay trap. In a wastewater or pollution question, students name the neutralising agent and stop. The marks are split three ways, the agent, the balanced equation, and the environmental consequence, usually something like, untreated acidic discharge lowers the waterway pH and kills aquatic life. The consequence is often worth the most, so never leave it out."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A mining company adds Ca(OH)₂ to acidic wastewater containing Fe³⁺. What two things happen, and why?",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Ca(OH)₂ is a base, so it reacts with H⁺ and raises the pH toward neutral",
+        "As pH rises, [OH⁻] increases in the solution",
+        "Fe³⁺ then precipitates as an insoluble hydroxide: Fe³⁺ + 3OH⁻ → Fe(OH)₃↓",
+        "The solid Fe(OH)₃ can be filtered out before discharge",
+        "Answer: pH rises by neutralisation, and Fe³⁺ drops out as Fe(OH)₃ ✓"
+      ],
+      "durationInFrames": 1110,
+      "caption": "Ca(OH)₂ raises pH; rising OH⁻ precipitates Fe³⁺ as Fe(OH)₃.",
+      "voiceover": {
+        "text": "Quick check. A mining company adds calcium hydroxide to acidic wastewater that contains iron three plus ions. What two things happen, and why? Pause and work it through. Right, let's check it. First, calcium hydroxide is a base, so it reacts with the hydrogen ions and raises the pH back toward neutral, that's the neutralisation. Second, as the pH climbs, the concentration of hydroxide in the solution rises, and the iron three plus can no longer stay dissolved. It precipitates as insoluble iron three hydroxide, written iron three plus plus three hydroxide gives iron three hydroxide as a solid. That solid can then be filtered out before the water is discharged. So the two things are, the pH rises, and the toxic metal drops out as a hydroxide. That orange-red sludge near mine sites is exactly this precipitate."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Carbonate antacids give CO₂; hydroxide antacids give only salt + water.",
+        "2NH₃ + H₂SO₄ → (NH₄)₂SO₄ and NH₃ + HNO₃ → NH₄NO₃.",
+        "Proticity, not strength, sets the mole ratio of base needed.",
+        "Flue gas scrubbing: Ca(OH)₂ + SO₂ → CaSO₃ + H₂O.",
+        "Application answers need the agent, the equation, and the consequence."
+      ],
+      "finalPrompt": "Industrial question? Name the agent, write the equation, state the consequence.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: antacid CO₂ rule, fertiliser equations, proticity, FGD, three-part answers.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, carbonate antacids release carbon dioxide, while hydroxide antacids give only salt and water. Second, the two fertiliser equations, two ammonia plus sulfuric acid gives ammonium sulfate, and ammonia plus nitric acid gives ammonium nitrate. Third, it's proticity, the number of donatable protons, not acid strength, that sets how much base you need. Fourth, flue gas desulfurisation scrubs sulfur dioxide with calcium hydroxide to give calcium sulfite and water. And fifth, in any application question, give three things, the neutralising agent, the balanced equation, and the environmental or practical consequence. Next lesson, we draw the critical line between strong and weak acids. See you there."
+      }
+    }
+  ]
+}

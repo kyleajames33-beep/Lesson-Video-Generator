@@ -1,0 +1,199 @@
+{
+  "title": "Mutagens",
+  "subtitle": "How genetic damage is made more likely",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 2",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6 — Genetic Change",
+  "syllabusDotPoints": [
+    "explain how a range of mutagens operate, including but not limited to electromagnetic radiation sources, chemicals and naturally occurring mutagens (ACSBL082)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-13",
+    "BIO11/12-4",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does mutation introduce new alleles into a population?",
+  "lessonIntent": "Students can distinguish a mutagen from a mutation and explain how UV, ionising radiation, chemicals and natural sources increase mutation risk.",
+  "examSkill": "Match a mutagen to its DNA mechanism and explain why exposure raises risk rather than guaranteeing a mutation.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, mutagens, and how they damage DNA. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Mutagens — How Genetic Damage Is Increased (Year 12 Biology, Module 6, Lesson 2)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A dose that raised the odds",
+      "body": "After the atomic bombings, survivors carried higher cancer rates. But not everyone exposed got cancer, even at the same dose.",
+      "callout": "If radiation is a mutagen, why didn't every exposed cell mutate?",
+      "image": "bioM6L2RadiationDna",
+      "durationInFrames": 690,
+      "caption": "Ionising radiation raises mutation risk, but DNA repair corrects most damage.",
+      "voiceover": {
+        "text": "Since nineteen fifty, scientists have tracked around one hundred and twenty thousand survivors of Hiroshima and Nagasaki. The data are stark. A single dose of one gray of ionising radiation pushed up cancer rates by forty two percent, and the mutation rate passed to their children rose by seventeen percent. But here's the detail that matters for biology. Not everyone exposed to the same dose developed cancer, not even close. That tells you something important. The radiation didn't instantly become a mutation on contact. It raised the probability of DNA damage, and then the cell's repair systems fixed most of it before it became permanent. So today we draw a sharp line between a mutagen, the agent that increases risk, and a mutation, the lasting change that sometimes results."
+      }
+    },
+    {
+      "id": "concept-vs-mutation",
+      "type": "concept",
+      "heading": "A mutagen causes risk; a mutation is the change",
+      "body": "A mutagen is any agent that raises the mutation rate. A mutation is the lasting DNA sequence change that survives if damage is not repaired and then gets copied.",
+      "bullets": [
+        {"text": "Mutagen: damages DNA or disrupts replication, raising the chance of a change."},
+        {"text": "Mutation: the change itself, only if repair fails and the damage is replicated."},
+        {"text": "Exposure is a risk factor, never a guarantee."}
+      ],
+      "secondary": "Whether UV-damaged skin DNA becomes a mutation depends on the dose, the duration, and whether repair fixes it before the cell divides.",
+      "callout": "Mutagen raises the odds. Mutation is the outcome.",
+      "durationInFrames": 1080,
+      "caption": "A mutagen increases mutation risk; the mutation is the lasting copied change.",
+      "voiceover": {
+        "text": "Let's get the central distinction crystal clear, because the exam tests it constantly. A mutagen is any agent that increases the rate of mutation. It might physically damage DNA, alter a base, interfere with accurate base pairing, or insert foreign genetic material. A mutation, by contrast, is the lasting DNA sequence change itself, and it only exists if that damage is not repaired and then gets copied into the next generation of cells. So a mutagen is the cause of risk, and a mutation is the outcome that sometimes follows. Think about sunlight on skin. The UV can damage skin-cell DNA, but whether that becomes a real mutation depends on how much damage there is, how long the exposure lasts, and crucially whether the repair systems catch it before the cell divides. Exposure is a risk factor, it is never a guarantee."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Mutagen: an agent that increases the rate of mutation by damaging DNA or disrupting replication."},
+        {"text": "UV radiation: can cause abnormal bonding between neighbouring bases, distorting the DNA."},
+        {"text": "Ionising radiation: high-energy radiation that removes electrons and can break DNA strands."},
+        {"text": "Chemical mutagen: a chemical that alters bases, causes mispairing or disrupts replication."}
+      ],
+      "callout": "Different mutagens, different damage mechanisms.",
+      "durationInFrames": 960,
+      "caption": "Mutagen, UV radiation, ionising radiation, chemical mutagen.",
+      "voiceover": {
+        "text": "Let's pin down the four terms you'll be marked on. A mutagen is an agent that increases the rate of mutation, by damaging DNA or disrupting replication. UV radiation, the kind in sunlight, can cause abnormal bonds to form between neighbouring bases, especially pyrimidines, which distorts the DNA molecule. Ionising radiation is higher energy, things like X-rays and gamma rays, and it carries enough energy to knock electrons off atoms and break one or both DNA strands. And a chemical mutagen is a chemical that alters a base, causes mispairing, or disrupts the replication machinery. The thread tying them together is that they all raise the chance of a sequence change, but they each do it through a different mechanism, and that mechanism is exactly what a good answer names."
+      }
+    },
+    {
+      "id": "concept-radiation",
+      "type": "concept",
+      "heading": "Radiation mutagens: UV versus ionising",
+      "body": "UV and ionising radiation are both physical mutagens, but they damage DNA in different ways and at different severities.",
+      "bullets": [
+        {"text": "UV from sunlight: abnormal bonding between adjacent bases, distorting the helix."},
+        {"text": "Ionising radiation: X-rays and gamma rays, energetic enough to break DNA strands."},
+        {"text": "Ionising damage is generally more severe and larger-scale than UV."}
+      ],
+      "secondary": "You don't need full molecular detail for every type. You do need the comparison: UV distorts base pairing, ionising radiation breaks strands.",
+      "callout": "UV distorts; ionising breaks.",
+      "durationInFrames": 1020,
+      "caption": "UV causes base-bonding distortion; ionising radiation breaks DNA strands.",
+      "voiceover": {
+        "text": "Let's compare the two radiation mutagens, because the exam loves to contrast them. UV radiation, the type in everyday sunlight, mainly works by causing abnormal bonds to form between neighbouring bases, particularly thymine bases sitting next to each other. That distorts the shape of the DNA and can jam up replication. Ionising radiation is a different beast. X-rays, gamma rays, and some radioactive emissions carry so much energy that they can strip electrons clean off atoms, and that lets them break one or even both strands of the DNA backbone. So at HSC depth you don't need every molecular detail, but you absolutely need the comparison. UV distorts base pairing and warps the helix, while ionising radiation produces more severe, larger-scale damage like strand breaks. Both raise mutation risk, but through clearly different mechanisms."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Mutagen",
+          "Example source",
+          "Main DNA effect"
+        ],
+        "rows": [
+          [
+            "UV radiation",
+            "Sunlight",
+            "Abnormal base bonding, distortion"
+          ],
+          [
+            "Ionising radiation",
+            "X-rays, gamma rays",
+            "Strand breaks, severe damage"
+          ],
+          [
+            "Chemical mutagen",
+            "Base-modifying compounds",
+            "Mispairing or faulty replication"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-natural",
+      "type": "concept",
+      "heading": "Natural does not mean harmless",
+      "body": "Some mutagens are entirely natural, and they can still damage DNA. The relevant issue is mechanism and exposure, not the source.",
+      "bullets": [
+        {"text": "Background radiation from rocks, soil and cosmic rays is naturally ionising."},
+        {"text": "Some viruses insert their genetic material into host DNA, an insertion effect."},
+        {"text": "Natural sources can be mutagenic; artificial does not mean more dangerous."}
+      ],
+      "secondary": "Students assume natural is safe and artificial is dangerous. That's poor biology. What matters is how the agent damages DNA and how much exposure occurs.",
+      "callout": "Judge mutagens by mechanism and dose, not by label.",
+      "durationInFrames": 1020,
+      "caption": "Natural mutagens like background radiation and some viruses also damage DNA.",
+      "voiceover": {
+        "text": "Now an idea students often get wrong. Not every mutagen is artificial. Plenty of them are completely natural. Background radiation, for instance, comes from rocks, soil, and cosmic rays, and it's low-level ionising radiation that's been around far longer than humans. Certain viruses are mutagenic too, because their genetic material can insert itself right into the host's DNA, and that insertion can interrupt a gene or scramble how it's regulated. Here's the trap to avoid. People assume natural means harmless and artificial means dangerous, but that's just poor biology. The thing that actually determines risk is the mechanism, how the agent damages DNA, and the exposure, how much and for how long. A natural source can absolutely cause mutations, and a label like natural tells you nothing about safety."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The big traps",
+      "body": "Trap 1: treating a mutagen and a mutation as the same thing. A mutagen is the agent; a mutation is the lasting change.",
+      "secondary": "Trap 2: assuming exposure guarantees a mutation. Repair, dose, duration and whether the DNA is copied all decide the outcome. Trap 3: assuming natural sources are automatically harmless. Background radiation and some viruses are natural and still mutagenic.",
+      "mistakeTag": "Where mutagen marks vanish",
+      "callout": "Agent versus outcome; risk versus guarantee.",
+      "durationInFrames": 1020,
+      "caption": "Mutagen is not mutation; exposure is risk not guarantee; natural is not harmless.",
+      "voiceover": {
+        "text": "Three traps that lose marks. Trap one, the most common, treating a mutagen and a mutation as if they're the same word. They are not. A mutagen is the agent that raises the chance of damage, and a mutation is the lasting sequence change that remains if that damage isn't repaired and is then copied. Calling UV a mutation, instead of a mutagen, is an instant lost mark. Trap two, assuming that exposure to a mutagen guarantees a mutation. It doesn't. DNA repair, the dose, the duration, and whether the damaged DNA actually gets replicated all decide whether anything permanent results. And trap three, the natural-is-safe assumption again. Background radiation and certain viruses are entirely natural and still mutagenic. So keep agent separate from outcome, and risk separate from guarantee."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A claim states: 'Sunlight causes mutation directly, so every UV-exposed skin cell is mutated.' Identify what is wrong and give a corrected explanation.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "UV is a mutagen, not a mutation, so it raises risk rather than guaranteeing a change.",
+        "UV can damage DNA, for example by causing abnormal bonding between neighbouring bases.",
+        "Not every exposed cell mutates, because DNA repair can correct the damage first.",
+        "A lasting mutation only exists if the damage is not repaired and the sequence is then copied.",
+        "Answer: UV raises mutation risk; it does not guarantee that every exposed cell is mutated."
+      ],
+      "durationInFrames": 1080,
+      "caption": "UV is a mutagen; repair means exposure does not guarantee a mutation.",
+      "voiceover": {
+        "text": "Quick check. A claim says, sunlight causes mutation directly, so every UV-exposed skin cell is mutated. Pause and reason through what's wrong before I do. Right, let's take it apart. The first problem is the word directly. UV is a mutagen, not a mutation, so it raises the risk of a change rather than guaranteeing one. UV can certainly damage DNA, for example by causing abnormal bonds between neighbouring bases that distort the helix. But not every exposed cell ends up mutated, because the cell's repair systems can fix that damage before it ever becomes permanent. A lasting mutation only exists if the damage isn't repaired and the altered sequence is then copied during replication. So a clean answer is, UV exposure increases mutation risk, but because repair often succeeds, it does not guarantee that every exposed cell is mutated."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A mutagen is an agent that raises mutation rate; a mutation is the lasting copied change.",
+        "Exposure is a risk factor, never a guarantee, because repair can fix the damage.",
+        "UV distorts base bonding; ionising radiation breaks DNA strands.",
+        "Chemical mutagens cause mispairing or disrupt replication.",
+        "Natural sources like background radiation and some viruses are still mutagenic."
+      ],
+      "finalPrompt": "Asked about a mutagen? Name the mechanism, then say risk, not guarantee.",
+      "durationInFrames": 1020,
+      "caption": "Five takeaways: mutagen vs mutation, risk not guarantee, mechanisms, natural still risky.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, a mutagen is an agent that raises the rate of mutation, while a mutation is the lasting sequence change that gets copied. Second, exposure to a mutagen is a risk factor, never a guarantee, because repair can fix the damage before it becomes permanent. Third, on mechanisms, UV distorts base bonding and warps the helix, while ionising radiation carries enough energy to break DNA strands. Fourth, chemical mutagens work by causing mispairing or disrupting the replication machinery. And fifth, natural sources like background radiation and certain viruses are still genuinely mutagenic, so natural does not mean harmless. Whenever you're asked about a mutagen, name the mechanism, then say risk, not guarantee. See you next lesson."
+      }
+    }
+  ]
+}

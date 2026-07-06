@@ -1,0 +1,221 @@
+{
+  "title": "Large-Scale Population Genetics Data",
+  "subtitle": "Disease, conservation and human evolution from big genomic data",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 5",
+  "lesson": "Lesson 18",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 5 — Heredity",
+  "syllabusDotPoints": [
+    "investigate the use of data analysis from a large-scale collaborative project to identify trends, patterns and relationships (ACSBL064, ACSBL073)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-12",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Can population genetic patterns be predicted with any accuracy?",
+  "lessonIntent": "Students can explain how large-scale genomic data supports inference in conservation, disease and human evolution, and apply Hardy-Weinberg to estimate allele and genotype frequencies.",
+  "examSkill": "State the strength and the limits of a large-scale data conclusion, and calculate allele and genotype frequencies under Hardy-Weinberg equilibrium.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, large-scale population genetics data. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Large-Scale Population Genetics Data (Year 12 Biology, Module 5, Lesson 18)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Half a million genomes",
+      "body": "UK Biobank gathered genomic and health data from 500,000 people, revealing disease links no single hospital could ever find alone.",
+      "callout": "What can a dataset that big show, and what can it still never promise?",
+      "image": "bioM5L18PopulationGenetics",
+      "durationInFrames": 1795,
+      "caption": "UK Biobank's 500,000-participant dataset found 100+ new disease loci, showing the power and limits of scale.",
+      "voiceover": {
+        "text": "In 2006, a project called UK Biobank began enrolling half a million people, collecting their genomic data alongside detailed health records. By 2023 that single resource had fed into over six thousand published studies, and helped identify more than a hundred new genetic locations linked to diseases like heart disease, type two diabetes, and depression. No individual hospital, working alone, could ever have found those links. So here's the tension we'll explore today. Bigger datasets clearly reveal patterns that small studies miss. But does more data mean we can predict everything with certainty? It does not, and understanding why is the whole point of the lesson. We'll see how large-scale data powers conservation, disease, and human evolution research, while always carrying uncertainty, and we'll learn one key calculation along the way."
+      }
+    },
+    {
+      "id": "concept-bigdata",
+      "type": "concept",
+      "heading": "Scale strengthens inference",
+      "body": "Population-scale data detects patterns across places, time periods and lineages that small studies cannot.",
+      "bullets": [
+        {
+          "text": "Large datasets reveal allele distribution trends and disease-linked changes."
+        },
+        {
+          "text": "They can detect bottlenecks and shared variants across populations."
+        },
+        {
+          "text": "They improve the strength of inference, but never reach absolute certainty."
+        }
+      ],
+      "secondary": "This is the single idea the whole lesson hangs on: more data makes conclusions stronger, but a conclusion stays an inference, never a guarantee.",
+      "callout": "More data, stronger inference, still not certainty.",
+      "durationInFrames": 1836,
+      "caption": "Population-scale data improves pattern detection and inference strength, but not to certainty.",
+      "voiceover": {
+        "text": "Let's start with the core logic of big data in genetics. When you pool data from huge numbers of individuals, across many places, time periods and lineages, you can detect patterns that a small study would completely miss. Large datasets can reveal trends in how alleles are distributed, spot disease-linked changes, detect population bottlenecks, and find variants shared between groups. All of that gets sharper as the dataset grows. But here is the line you must hold onto for every part of this lesson. More data improves the strength of your inference, it makes conclusions more reliable, but it never converts an inference into absolute certainty. A trend across half a million people is powerful evidence, but it's still evidence about a pattern, not a guarantee about any one outcome. Stronger inference, never certainty."
+      }
+    },
+    {
+      "id": "concept-conservation",
+      "type": "concept",
+      "heading": "Conservation: protecting diversity",
+      "body": "Conservation genetics uses population data to detect lost diversity, isolation and past bottlenecks in threatened species.",
+      "bullets": [
+        {
+          "text": "It detects reduced genetic diversity and signs of past bottlenecks."
+        },
+        {
+          "text": "Low diversity reduces a population's ability to respond to disease or change."
+        },
+        {
+          "text": "It guides breeding programs, translocations and conservation priorities."
+        }
+      ],
+      "secondary": "Be careful with the claim: genetic diversity improves adaptive capacity, it does not guarantee survival. Survival still depends on many ecological factors.",
+      "callout": "Diversity boosts adaptive capacity; it does not guarantee survival.",
+      "durationInFrames": 1809,
+      "caption": "Conservation genetics detects bottlenecks and low diversity to guide management, not guarantee survival.",
+      "voiceover": {
+        "text": "First application, conservation genetics. When a species is threatened, population genetic data can reveal whether it has lost genetic diversity, become isolated, or suffered a bottleneck in the past, which is a sharp crash in population size that strips out alleles. Why does that matter? Because low genetic diversity reduces a population's ability to respond to new diseases or a changing environment, since there are fewer alleles to draw on. So this data directly guides conservation, informing captive breeding programs, decisions to move individuals between populations, and which populations to prioritise. But watch your wording carefully here. Genetic diversity improves a population's adaptive capacity, its potential to cope with change. It does not guarantee survival, because survival still depends on plenty of ecological factors like habitat, food, and predators. Don't overstate it."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Large-scale collaborative project: one combining data from many researchers, sites or populations."
+        },
+        {
+          "text": "Bottleneck: a sharp drop in population size that reduces genetic diversity."
+        },
+        {
+          "text": "Genetic diversity: the variety of alleles present within a population."
+        },
+        {
+          "text": "Inference: a conclusion drawn from evidence that may still carry uncertainty."
+        }
+      ],
+      "callout": "An inference is evidence-based, but never certainty.",
+      "durationInFrames": 1687,
+      "caption": "Large-scale collaborative project, bottleneck, genetic diversity, inference.",
+      "voiceover": {
+        "text": "Let's pin down the words. A large-scale collaborative project is one that combines data from many researchers, sites, or populations, which is what makes population-scale conclusions possible. A bottleneck is a sharp reduction in population size that decreases genetic diversity, because so many alleles are lost when numbers crash. Genetic diversity is simply the variety of alleles present within a population, and more is generally better for adaptability. And an inference is a conclusion drawn from evidence, one that may still contain uncertainty. That last word is the theme of the lesson. Everything these projects produce is an inference, an evidence-based conclusion, not a certainty. Hold that, because the exam rewards students who state both the strength of the evidence and its limits."
+      }
+    },
+    {
+      "id": "concept-disease-evolution",
+      "type": "concept",
+      "heading": "Disease and human evolution",
+      "body": "The same scale of data tracks disease-linked variants across populations and infers human ancestry and migration.",
+      "bullets": [
+        {
+          "text": "Disease studies compare carrier frequencies and variant distribution between groups."
+        },
+        {
+          "text": "Evolution studies compare markers to infer shared ancestry and divergence."
+        },
+        {
+          "text": "More shared markers suggest a more recent common ancestry."
+        }
+      ],
+      "secondary": "Both remain inferences. Disease data can't predict one individual's outcome, and ancestry data can't give a perfect, final history without revision.",
+      "callout": "Population trends, not individual certainties or final histories.",
+      "durationInFrames": 1768,
+      "caption": "Big data tracks disease-variant distribution and infers ancestry; both stay inferences.",
+      "voiceover": {
+        "text": "Two more applications, and they share the same logic. First, disease inheritance studies. With huge samples, scientists can compare how often disease-linked variants occur across different populations, comparing carrier frequencies and tracking variant distribution. That supports recognising variants and inferring inheritance trends. But it cannot guarantee one specific person's outcome, because phenotype depends on other genes, the environment, and chance. Second, human evolution. By comparing genetic markers across populations, researchers infer shared ancestry, divergence, and migration patterns. The general rule is that more shared markers suggest a more recent common ancestry. But again, these are inferences, not a perfect one-line story of human history, and they get revised as new data arrives. So in both cases, the data reveals population trends, not individual certainties, and not final, unchangeable histories."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "A Hardy-Weinberg calculation",
+      "question": "In a population of 1000 individuals in Hardy-Weinberg equilibrium, 160 show the recessive phenotype (aa). Find: (a) the frequency of allele a; (b) the frequency of allele A; (c) the expected number of heterozygotes.",
+      "coachNote": "q² is the recessive phenotype frequency; p + q = 1; heterozygotes = 2pq.",
+      "steps": [
+        "(a) q² = 160 ÷ 1000 = 0.16, so q = √0.16 = 0.4.",
+        "(b) p = 1 − q = 1 − 0.4 = 0.6.",
+        "(c) Heterozygote frequency = 2pq = 2 × 0.6 × 0.4 = 0.48.",
+        "Expected heterozygotes = 0.48 × 1000 = 480 individuals.",
+        "Answer: a = 0.4, A = 0.6, and 480 heterozygotes ✓"
+      ],
+      "durationInFrames": 2429,
+      "caption": "q² = 0.16 → q = 0.4, p = 0.6, 2pq = 0.48, so 480 heterozygotes in 1000.",
+      "voiceover": {
+        "text": "Let's do the one calculation this topic asks for, a Hardy-Weinberg problem. In a population of a thousand individuals at equilibrium, one hundred and sixty show the recessive phenotype, genotype little a little a. We want the allele frequencies and the number of heterozygotes. Start with part a. The recessive phenotype frequency is q squared, so q squared equals one hundred and sixty divided by one thousand, which is zero point one six. Take the square root, and q, the frequency of allele little a, is zero point four. Part b is easy, because p plus q equals one, so p, the frequency of big A, is one minus zero point four, which is zero point six. Now part c, the heterozygotes. Heterozygote frequency is two p q, that's two times zero point six times zero point four, which is zero point four eight. Multiply by the thousand individuals, and you get four hundred and eighty heterozygotes. So allele a is zero point four, allele A is zero point six, and there are four hundred and eighty carriers."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking the Human Genome Project sequenced everyone's genome. It produced one composite reference from a few donors, not the genome of any single person.",
+      "secondary": "Trap 2: assuming huge datasets remove all uncertainty. More data strengthens inference and improves pattern detection, but it never removes sampling assumptions, method limitations, or uncertainty about future outcomes. Strong answers state both the strength and the limits.",
+      "mistakeTag": "Where big-data marks vanish",
+      "callout": "The reference genome is a composite; big data is not certainty.",
+      "durationInFrames": 1903,
+      "caption": "The HGP made a composite reference; large data strengthens inference but keeps uncertainty.",
+      "voiceover": {
+        "text": "Two traps to avoid. Trap one, thinking the Human Genome Project sequenced the genomes of all humans. It did not. It produced a single reference genome, a composite built from a small number of donors. It represents no individual person, and every real genome differs from it at millions of positions. The reference is a starting map, not a universal template. Trap two is the big-picture one for this whole lesson. Students assume that a huge dataset removes all uncertainty. It doesn't. More data does strengthen inference, improve pattern detection, and allow broader comparison, all genuinely valuable. But it never removes the underlying sampling assumptions, the limitations of the methods, or the uncertainty about future outcomes. So a strong exam answer always states both sides, the strength the scale provides, and the limits that remain. Evidence-based inferences, not certainties."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A large international study finds a strong population-level link between a genetic marker and a disorder. Explain why this improves inference but still cannot tell you whether one specific person will develop the disorder.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The large sample makes the population-level trend statistically stronger and more reliable.",
+        "But the result is a trend across a group, not a rule for every individual.",
+        "An individual's phenotype also depends on other genes, the environment and chance.",
+        "Population data improves inference without guaranteeing any single outcome.",
+        "Answer: stronger group inference, but individual outcome stays uncertain due to other factors ✓"
+      ],
+      "durationInFrames": 2132,
+      "caption": "Big data strengthens the population trend, but individual outcome depends on more than one marker.",
+      "voiceover": {
+        "text": "Quick check, and it gets to the heart of the lesson. A large international study finds a strong population-level link between a genetic marker and a disorder. Explain why this improves our inference, but still cannot tell you whether one specific person will develop the disorder. Pause and reason it through. Okay. On the strength side, because the sample is so large, the population-level trend is statistically robust, much more reliable than a small study could ever be. So our inference about the population genuinely improves. But here's the limit. That result is a trend across a whole group, not a rule that applies to every individual within it. Any single person's phenotype also depends on their other genes, their environment, and an element of chance. So the data sharpens what we can say about the population, while the outcome for one specific person remains uncertain. Strength and limits, both stated, that's the band six answer."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Large-scale data detects patterns across populations that small studies miss.",
+        "Conservation genetics finds bottlenecks and low diversity to guide management.",
+        "Disease and evolution studies infer variant trends and ancestry across groups.",
+        "Hardy-Weinberg: recessive phenotype = q², p + q = 1, heterozygotes = 2pq.",
+        "More data strengthens inference but never removes uncertainty; state both."
+      ],
+      "finalPrompt": "Big-data question? State the strength the scale gives, then the limits that remain. Conclusions are inferences, not certainties.",
+      "durationInFrames": 1795,
+      "caption": "Five takeaways: scale, conservation, disease and evolution, Hardy-Weinberg, the limits.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, large-scale data detects patterns across populations, places and lineages that small studies simply miss. Second, conservation genetics uses it to find bottlenecks and low diversity, guiding breeding and conservation, though diversity improves adaptive capacity rather than guaranteeing survival. Third, disease and human evolution studies infer variant trends and shared ancestry across groups, but only as inferences. Fourth, the one calculation, Hardy-Weinberg, where the recessive phenotype frequency is q squared, p plus q equals one, and heterozygotes are two p q. And fifth, the big theme, more data strengthens inference but never removes uncertainty, so always state both the strength and the limits. On any big-data question, give the power the scale provides, then the limits that remain. See you next lesson."
+      }
+    }
+  ]
+}

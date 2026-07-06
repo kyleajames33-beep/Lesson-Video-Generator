@@ -1,0 +1,246 @@
+{
+  "title": "Esters",
+  "subtitle": "Naming, esterification, and maximising yield",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 15",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "investigate the production, in a school laboratory, of simple esters",
+    "investigate the structural formulae, properties and functional group including: esters"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": [
+    "CH12-14",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What are the properties of organic acids and bases?",
+  "lessonIntent": "Students can name esters as alkyl alkanoates, write reversible esterification equations with the correct catalyst and conditions, and apply Le Chatelier's principle to raise the yield.",
+  "examSkill": "Identify the acid and alcohol halves of an ester, write esterification with a reversible arrow and concentrated sulfuric acid catalyst, and justify reflux and yield-raising steps.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, esters, the molecules behind fruit flavours. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Esters (Year 12 Chemistry, Module 7, Lesson 15)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Pineapple and avocado, same reaction",
+      "body": "A chemist makes pineapple flavour by heating an acid with an alcohol. The very same reaction once built the fat in the avocado she had for breakfast.",
+      "callout": "Fruity flavours and dietary fats share one functional group. Which?",
+      "image": "m7l15HookFruitEsters",
+      "durationInFrames": 1597,
+      "caption": "Fruit flavours and fats are both esters, made by the same reaction.",
+      "voiceover": {
+        "text": "OK, here's a connection you might not expect. A food chemist makes artificial pineapple flavour by warming a carboxylic acid with an alcohol and a drop of acid catalyst. Out comes a clear liquid with a powerful fruity smell. And the very same type of reaction, esterification, is what built the fat in the avocado she ate this morning. A volatile flavour and a solid fat, from one reaction. The thing they share is the ester group. Today you'll learn to name esters, to write the reaction that makes them, and to handle the catch that makes this reaction tricky in the lab. It never quite finishes, so we have to coax the yield up."
+      }
+    },
+    {
+      "id": "concept-structure",
+      "type": "concept",
+      "heading": "Cut at the single-bond oxygen",
+      "body": "An ester is built from an acid half and an alcohol half, joined by the ester linkage -COO-. Naming reflects both halves.",
+      "image": "m7l15EsterLinkage",
+      "bullets": [
+        {
+          "text": "The ester group is -COO-, with no O-H bond on either oxygen.",
+          "at": 8
+        },
+        {
+          "text": "Cut at the single-bond oxygen: the carbonyl side is the acid half.",
+          "at": 17
+        },
+        {
+          "text": "Name as alkyl alkanoate: the alcohol part first, the acid part second.",
+          "at": 26
+        },
+        {
+          "text": "So ethanol plus ethanoic acid gives ethyl ethanoate.",
+          "at": 34
+        }
+      ],
+      "secondary": "The alkanoate half must always contain the C=O; the alkyl half comes from the alcohol.",
+      "callout": "Alcohol part first, acid part second. Alkyl alkanoate.",
+      "durationInFrames": 1908,
+      "caption": "Esters are named alkyl alkanoate: alcohol half first, acid half second.",
+      "voiceover": {
+        "text": "Let's get the structure and naming right, because esters trip people up on word order. An ester is built from two halves, an acid half and an alcohol half, joined by the ester linkage, written C-O-O. Notice there's no oxygen-hydrogen bond anywhere in that group. Both oxygens are bonded only to carbon. To name an ester, picture cutting it at the single-bond oxygen. The side that still carries the carbonyl, the carbon double bonded to oxygen, is the acid half, the alkanoate. The other side, the carbon chain that came from the alcohol, is the alkyl half. Then you name it alkyl alkanoate, and here's the rule that matters. The alcohol part is always said first, the acid part second. So ethanol reacting with ethanoic acid gives ethyl ethanoate, not the other way around. Alcohol first, every time."
+      }
+    },
+    {
+      "id": "concept-imf",
+      "type": "concept",
+      "heading": "Volatile by design",
+      "body": "With no O-H bond, esters cannot donate hydrogen bonds, so they are more volatile than the acids and alcohols that make them.",
+      "bullets": [
+        {
+          "text": "Polar -COO- gives dipole-dipole forces between ester molecules.",
+          "at": 8
+        },
+        {
+          "text": "No O-H, so esters cannot donate hydrogen bonds to each other.",
+          "at": 16
+        },
+        {
+          "text": "So esters boil below the parent acid and alcohol of similar size.",
+          "at": 24
+        },
+        {
+          "text": "Low boiling point means volatile, which is why we smell them.",
+          "at": 31
+        }
+      ],
+      "callout": "No H-bond donation means lower boiling point and easy evaporation.",
+      "durationInFrames": 1813,
+      "caption": "Esters have dipole-dipole forces only, so they are volatile and fragrant.",
+      "voiceover": {
+        "text": "Now their physical properties, which explain the fragrance. The ester group is polar, so ester molecules attract each other with dipole-dipole forces. But, just like aldehydes and ketones, esters have no oxygen-hydrogen bond, so they cannot donate a hydrogen bond to another ester molecule. The two oxygens can accept hydrogen bonds from water, which gives short esters some solubility, but ester to ester, there's no H-bond donation. So an ester boils noticeably lower than the carboxylic acid and the alcohol that made it, because those can hydrogen bond and the ester can't. A lower boiling point means more volatile, and that's the whole point. The molecules escape into the air easily, reach your nose, and you smell pineapple or banana. Nature uses esters as scent signals precisely because they're so volatile."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Esterification and its reverse",
+      "bullets": [
+        {
+          "text": "Esterification: acid plus alcohol gives ester plus water, reversible.",
+          "at": 8
+        },
+        {
+          "text": "Catalyst is concentrated sulfuric acid; heat under reflux.",
+          "at": 16
+        },
+        {
+          "text": "Always write a reversible arrow; yield is well below 100 percent.",
+          "at": 25
+        },
+        {
+          "text": "Saponification: ester plus NaOH gives a carboxylate salt plus alcohol, one-way.",
+          "at": 34
+        }
+      ],
+      "callout": "Esterification is reversible; base hydrolysis runs to completion.",
+      "durationInFrames": 1948,
+      "caption": "Esterification is reversible; saponification with NaOH is irreversible.",
+      "voiceover": {
+        "text": "Here are the two reactions you must know. First, esterification, the forward direction. A carboxylic acid reacts with an alcohol to give an ester plus water. The catalyst is concentrated sulfuric acid, and you heat the mixture under reflux. Two things are non-negotiable in the equation. You write a reversible arrow, because this reaction reaches equilibrium and never goes to completion, and you put the sulfuric acid above the arrow as a catalyst, not in as a reactant. The yield sits well below one hundred percent. Now the reverse-style reaction, saponification. If you treat an ester with sodium hydroxide instead, you get a carboxylate salt and the alcohol, and this one goes to completion with a single arrow, because the salt product can't re-form the ester under basic conditions. So esterification is the reversible one, base hydrolysis is the one-way one."
+      }
+    },
+    {
+      "id": "concept-yield",
+      "type": "concept",
+      "heading": "Pushing the equilibrium right",
+      "body": "Because esterification is reversible, we use Le Chatelier's principle to raise the yield, and reflux to stop volatile reactants escaping.",
+      "bullets": [
+        {
+          "text": "Use an excess of one reactant to push the equilibrium toward the ester.",
+          "at": 9
+        },
+        {
+          "text": "Remove water with concentrated sulfuric acid acting as a dehydrating agent.",
+          "at": 18
+        },
+        {
+          "text": "Or distil the ester off as it forms to drive the reaction forward.",
+          "at": 26
+        },
+        {
+          "text": "Reflux keeps volatile reactants in the flask so equilibrium is reached.",
+          "at": 34
+        }
+      ],
+      "callout": "Excess reactant, remove a product, and reflux to retain the volatiles.",
+      "durationInFrames": 1935,
+      "caption": "Raise ester yield with excess reactant, water removal, or distillation.",
+      "voiceover": {
+        "text": "Since esterification only reaches equilibrium, the practical question is how to get more ester out, and this is pure Le Chatelier's principle from Module 5. You have three levers. First, use an excess of one reactant, usually the cheaper alcohol, which pushes the equilibrium toward the products. Second, remove a product. The concentrated sulfuric acid does double duty here, acting as a dehydrating agent that soaks up the water as it forms, dragging the equilibrium right. Third, distil the ester off as it's made, because removing it continuously means the system keeps trying to replace it. And why reflux rather than an open flask? Because both the alcohol and the ester are volatile and would simply evaporate away before reacting. The reflux condenser cools the rising vapours and returns them, so the mixture stays together long enough to reach equilibrium."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Make propyl ethanoate",
+      "question": "Write the equation for the formation of propyl ethanoate from the correct alcohol and carboxylic acid. Name the catalyst and explain why reflux is used.",
+      "coachNote": "Decode the name first: alkyl part from the alcohol, alkanoate part from the acid. Then write a reversible arrow.",
+      "steps": [
+        "Decode the name: propyl is from propan-1-ol; ethanoate is from ethanoic acid.",
+        "Reactants: ethanoic acid (CH3COOH) and propan-1-ol (CH3CH2CH2OH).",
+        "Equation with a reversible arrow: CH3COOH + CH3CH2CH2OH gives CH3COOCH2CH2CH3 + H2O.",
+        "Catalyst: concentrated sulfuric acid, written above the arrow, not as a reactant.",
+        "Reflux is used because esterification is slow and reversible; heat speeds it while the condenser stops volatile reactants and product escaping.",
+        "Answer: ester is propyl ethanoate; reversible arrow; conc. sulfuric acid catalyst; reflux retains the volatiles."
+      ],
+      "durationInFrames": 1894,
+      "caption": "Propyl ethanoate from ethanoic acid and propan-1-ol; reversible; conc. H2SO4; reflux.",
+      "voiceover": {
+        "text": "Let's make propyl ethanoate, a classic exam question. Step one, decode the name, because the name tells you the reactants. Propyl comes from the alcohol, propan-1-ol. Ethanoate comes from the acid, ethanoic acid. So the reactants are ethanoic acid and propan-1-ol. Step two, write the equation, and crucially, use a reversible arrow. Ethanoic acid plus propan-1-ol gives propyl ethanoate plus water. Step three, the catalyst is concentrated sulfuric acid, and you write it above the arrow, never as a reactant, because it isn't consumed. Now the reasoning marks. Why reflux? Esterification is slow and reversible, so heating speeds it up, and the reflux condenser cools the rising vapours and returns the volatile alcohol and ester to the flask, so they stay in the mixture long enough to reach equilibrium and form product. That's the full band-six answer."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Excess alcohol drives it to completion\"",
+      "body": "Students think adding excess alcohol or writing a single arrow makes esterification go to completion. Neither is true.",
+      "secondary": "Esterification is an equilibrium. Excess alcohol shifts the position toward more ester, but all four species remain present. Only a single arrow is wrong; it must always be reversible. And it never reaches 100 percent yield.",
+      "callout": "Excess reactant shifts the equilibrium, but never empties it.",
+      "mistakeTag": "Esterification stays an equilibrium",
+      "durationInFrames": 1881,
+      "caption": "Excess alcohol shifts the equilibrium but does not give 100 percent yield.",
+      "voiceover": {
+        "text": "Here's the trap. Students learn that excess alcohol increases the yield, then jump to the conclusion that it drives the reaction to completion, and they write a single arrow. Both moves are wrong. Esterification is an equilibrium, full stop. Adding excess alcohol does shift the position toward the ester, giving you more product, but it does not empty the reactants. At equilibrium all four species are still present, the acid, the alcohol, the ester, and the water. So the yield is always less than one hundred percent, no matter how much excess you add. And the arrow must always be reversible. Writing a single arrow tells the marker you think it goes to completion, which loses the mark. Shift the equilibrium, yes. Eliminate the reverse reaction, no. Only saponification, the base reaction, actually goes to completion."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "Name the ester from methanol and propanoic acid, write the reversible equation, and state one change that would increase its yield.",
+      "pausePrompt": "Pause and name the alcohol half first.",
+      "answerSteps": [
+        "Alcohol is methanol, so the alkyl part is methyl; acid is propanoic, so alkanoate is propanoate.",
+        "Name: methyl propanoate (alcohol part first).",
+        "Equation: CH3CH2COOH + CH3OH reversibly gives CH3CH2COOCH3 + H2O.",
+        "Catalyst is concentrated sulfuric acid, under reflux.",
+        "To raise yield: use excess methanol, or remove water with the conc. sulfuric acid, or distil off the ester."
+      ],
+      "durationInFrames": 1989,
+      "caption": "Methyl propanoate; reversible equation; raise yield by excess reactant or water removal.",
+      "voiceover": {
+        "text": "Your turn. Name the ester formed from methanol and propanoic acid, write the reversible equation, and state one way to increase the yield. Pause now and remember to name the alcohol half first. Right, let's check. The alcohol is methanol, so the alkyl part is methyl. The acid is propanoic acid, so the alkanoate part is propanoate. Putting the alcohol part first gives methyl propanoate. The equation is propanoic acid plus methanol, with a reversible arrow, giving methyl propanoate plus water, catalysed by concentrated sulfuric acid under reflux. And to increase the yield, you could use an excess of methanol to push the equilibrium right, or let the sulfuric acid remove water as it forms, or distil the ester off as it's produced. Any one of those is a valid Le Chatelier answer. The key habits are alcohol part first and a reversible arrow."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Esterification question? Reversible arrow, sulfuric acid catalyst, reflux, then a Le Chatelier step for yield.",
+      "points": [
+        "Esters have the -COO- group and no O-H, so they are volatile and fragrant.",
+        "Name esters as alkyl alkanoate: the alcohol part first, the acid part second.",
+        "Esterification is reversible: conc. sulfuric acid catalyst, heat under reflux.",
+        "Raise yield with excess reactant, water removal, or distilling off the ester.",
+        "Saponification with NaOH is irreversible and produces a carboxylate salt."
+      ],
+      "durationInFrames": 1840,
+      "caption": "Esters: alkyl alkanoate naming, reversible esterification, Le Chatelier for yield.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, esters carry the ester group with no oxygen-hydrogen bond, so they can't donate hydrogen bonds, which makes them volatile and gives them their fruity smells. Second, name them alkyl alkanoate, with the alcohol part first and the acid part second, like ethyl ethanoate. Third, esterification is reversible, using concentrated sulfuric acid as the catalyst, heated under reflux, and you always draw a reversible arrow. Fourth, because it's an equilibrium, you raise the yield using Le Chatelier, with excess reactant, by removing water, or by distilling off the ester. And fifth, saponification, the reaction with sodium hydroxide, is irreversible and gives a carboxylate salt. So for any esterification question, reach for a reversible arrow, the sulfuric acid catalyst, reflux, and a yield-raising step. See you next lesson."
+      }
+    }
+  ]
+}

@@ -1,0 +1,5025 @@
+{
+  "title": "The Mole Concept, Part B",
+  "subtitle": "Worked examples and the mistakes to avoid",
+  "lesson": "Lesson 1B",
+  "lessonIntent": "Students can apply N = n × Nₐ in either direction, identify N-vs-n errors, and answer a transfer question independently.",
+  "examSkill": "Substitute correctly in N = n × Nₐ, recognise unit cancellations, and avoid the two canonical N/n errors.",
+  "productionNotes": "Part B of a 2-part split. Opens with a brief recap of Part A, then dives into the worked examples and practice scenes. Assumes student has watched Part A.",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "explore the concept of the mole and relate this to Avogadro's constant to describe, calculate and manipulate numbers of particles, chemical amounts and masses"
+  ],
+  "productionRole": "reference",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 111,
+      "caption": "The Mole Concept, Part B (Year 11 Chemistry, Module 2)",
+      "voiceover": {
+        "text": "The Mole Concept. Part B.",
+        "audioFile": "public/audio/Chemistry-Y11-M2-L1B/title.8caa7fefccfd.mp3"
+      },
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 163,
+          "timestampMs": 82,
+          "confidence": null
+        },
+        {
+          "text": " Mole",
+          "startMs": 221,
+          "endMs": 430,
+          "timestampMs": 326,
+          "confidence": null
+        },
+        {
+          "text": " Concept.",
+          "startMs": 476,
+          "endMs": 1080,
+          "timestampMs": 778,
+          "confidence": null
+        },
+        {
+          "text": " Part",
+          "startMs": 1196,
+          "endMs": 1498,
+          "timestampMs": 1347,
+          "confidence": null
+        },
+        {
+          "text": " B.",
+          "startMs": 1556,
+          "endMs": 2183,
+          "timestampMs": 1870,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "recap",
+      "type": "concept",
+      "heading": "Where we left off",
+      "body": "Quick recap from Part A: a mole is 6.022 × 10²³ particles. The formula N = n × Nₐ links the count to the moles. Know any two, you can find the third.",
+      "bullets": [
+        {
+          "text": "One mole = 6.022 × 10²³ particles (Avogadro's number).",
+          "at": 4
+        },
+        {
+          "text": "Capital N: count of particles. Lowercase n: moles.",
+          "at": 9.36
+        },
+        {
+          "text": "Formula: N = n × Nₐ. Rearrange to find any of the three.",
+          "at": 15.77
+        }
+      ],
+      "callout": "Now let's use it.",
+      "durationInFrames": 780,
+      "caption": "Quick recap of Part A: one mole = Avogadro's number, formula N = n × Nₐ.",
+      "revealDelays": {
+        "heading": 29,
+        "bulletsStart": 107,
+        "callout": 698,
+        "diagram": 88,
+        "body": 88,
+        "secondary": 330
+      },
+      "voiceover": {
+        "text": "Welcome back. Quick recap from Part A. A mole is six-point-zero-two-two times ten to the twenty-three particles — Avogadro's number. Capital N is the count of particles, lowercase n is the amount in moles, and they're linked by the formula N equals n times Avogadro's. Know any two, find the third. Right — now let's actually use it.",
+        "audioFile": "public/audio/Chemistry-Y11-M2-L1B/recap.33cac1b89d84.mp3"
+      },
+      "recapSeed": "N = n × Nₐ links count, moles, and Avogadro.",
+      "syllabusDotPointIndex": 1,
+      "captions": [
+        {
+          "text": "Welcome",
+          "startMs": 0,
+          "endMs": 418,
+          "timestampMs": 209,
+          "confidence": null
+        },
+        {
+          "text": " back.",
+          "startMs": 441,
+          "endMs": 801,
+          "timestampMs": 621,
+          "confidence": null
+        },
+        {
+          "text": " Quick",
+          "startMs": 1312,
+          "endMs": 1567,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " recap",
+          "startMs": 1649,
+          "endMs": 2055,
+          "timestampMs": 1852,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 2148,
+          "endMs": 2322,
+          "timestampMs": 2235,
+          "confidence": null
+        },
+        {
+          "text": " Part",
+          "startMs": 2380,
+          "endMs": 2670,
+          "timestampMs": 2525,
+          "confidence": null
+        },
+        {
+          "text": " A.",
+          "startMs": 2705,
+          "endMs": 2972,
+          "timestampMs": 2839,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 3413,
+          "endMs": 3483,
+          "timestampMs": 3448,
+          "confidence": null
+        },
+        {
+          "text": " mole",
+          "startMs": 3564,
+          "endMs": 3866,
+          "timestampMs": 3715,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 3924,
+          "endMs": 4040,
+          "timestampMs": 3982,
+          "confidence": null
+        },
+        {
+          "text": " six-point-zero-two-two",
+          "startMs": 4110,
+          "endMs": 5561,
+          "timestampMs": 4836,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 5642,
+          "endMs": 5944,
+          "timestampMs": 5793,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 6002,
+          "endMs": 6188,
+          "timestampMs": 6095,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 6258,
+          "endMs": 6327,
+          "timestampMs": 6293,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6397,
+          "endMs": 6467,
+          "timestampMs": 6432,
+          "confidence": null
+        },
+        {
+          "text": " twenty-three",
+          "startMs": 6513,
+          "endMs": 7047,
+          "timestampMs": 6780,
+          "confidence": null
+        },
+        {
+          "text": " particles",
+          "startMs": 7094,
+          "endMs": 7581,
+          "timestampMs": 7338,
+          "confidence": null
+        },
+        {
+          "text": " Avogadro's",
+          "startMs": 8115,
+          "endMs": 8684,
+          "timestampMs": 8400,
+          "confidence": null
+        },
+        {
+          "text": " number.",
+          "startMs": 8731,
+          "endMs": 9079,
+          "timestampMs": 8905,
+          "confidence": null
+        },
+        {
+          "text": " Capital",
+          "startMs": 9358,
+          "endMs": 9764,
+          "timestampMs": 9561,
+          "confidence": null
+        },
+        {
+          "text": " N",
+          "startMs": 9834,
+          "endMs": 9985,
+          "timestampMs": 9910,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 10066,
+          "endMs": 10159,
+          "timestampMs": 10113,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10205,
+          "endMs": 10275,
+          "timestampMs": 10240,
+          "confidence": null
+        },
+        {
+          "text": " count",
+          "startMs": 10321,
+          "endMs": 10565,
+          "timestampMs": 10443,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 10600,
+          "endMs": 10646,
+          "timestampMs": 10623,
+          "confidence": null
+        },
+        {
+          "text": " particles,",
+          "startMs": 10704,
+          "endMs": 11413,
+          "timestampMs": 11059,
+          "confidence": null
+        },
+        {
+          "text": " lowercase",
+          "startMs": 11854,
+          "endMs": 12469,
+          "timestampMs": 12162,
+          "confidence": null
+        },
+        {
+          "text": " n",
+          "startMs": 12492,
+          "endMs": 12527,
+          "timestampMs": 12510,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 12968,
+          "endMs": 13154,
+          "timestampMs": 13061,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13201,
+          "endMs": 13270,
+          "timestampMs": 13236,
+          "confidence": null
+        },
+        {
+          "text": " amount",
+          "startMs": 13305,
+          "endMs": 13584,
+          "timestampMs": 13445,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 13642,
+          "endMs": 13711,
+          "timestampMs": 13677,
+          "confidence": null
+        },
+        {
+          "text": " moles,",
+          "startMs": 13781,
+          "endMs": 14338,
+          "timestampMs": 14060,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 14455,
+          "endMs": 14605,
+          "timestampMs": 14530,
+          "confidence": null
+        },
+        {
+          "text": " they're",
+          "startMs": 14640,
+          "endMs": 14814,
+          "timestampMs": 14727,
+          "confidence": null
+        },
+        {
+          "text": " linked",
+          "startMs": 14849,
+          "endMs": 15174,
+          "timestampMs": 15012,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 15418,
+          "endMs": 15569,
+          "timestampMs": 15494,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15616,
+          "endMs": 15685,
+          "timestampMs": 15651,
+          "confidence": null
+        },
+        {
+          "text": " formula",
+          "startMs": 15766,
+          "endMs": 16219,
+          "timestampMs": 15993,
+          "confidence": null
+        },
+        {
+          "text": " N",
+          "startMs": 16335,
+          "endMs": 16579,
+          "timestampMs": 16457,
+          "confidence": null
+        },
+        {
+          "text": " equals",
+          "startMs": 16962,
+          "endMs": 17345,
+          "timestampMs": 17154,
+          "confidence": null
+        },
+        {
+          "text": " n",
+          "startMs": 17438,
+          "endMs": 17589,
+          "timestampMs": 17514,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 17659,
+          "endMs": 18007,
+          "timestampMs": 17833,
+          "confidence": null
+        },
+        {
+          "text": " Avogadro's.",
+          "startMs": 18077,
+          "endMs": 18982,
+          "timestampMs": 18530,
+          "confidence": null
+        },
+        {
+          "text": " Know",
+          "startMs": 20283,
+          "endMs": 20515,
+          "timestampMs": 20399,
+          "confidence": null
+        },
+        {
+          "text": " any",
+          "startMs": 20550,
+          "endMs": 20666,
+          "timestampMs": 20608,
+          "confidence": null
+        },
+        {
+          "text": " two,",
+          "startMs": 20712,
+          "endMs": 21095,
+          "timestampMs": 20904,
+          "confidence": null
+        },
+        {
+          "text": " find",
+          "startMs": 21270,
+          "endMs": 21548,
+          "timestampMs": 21409,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21595,
+          "endMs": 21664,
+          "timestampMs": 21630,
+          "confidence": null
+        },
+        {
+          "text": " third.",
+          "startMs": 21711,
+          "endMs": 22117,
+          "timestampMs": 21914,
+          "confidence": null
+        },
+        {
+          "text": " Right",
+          "startMs": 22291,
+          "endMs": 22570,
+          "timestampMs": 22431,
+          "confidence": null
+        },
+        {
+          "text": " now",
+          "startMs": 23104,
+          "endMs": 23208,
+          "timestampMs": 23156,
+          "confidence": null
+        },
+        {
+          "text": " let's",
+          "startMs": 23255,
+          "endMs": 23429,
+          "timestampMs": 23342,
+          "confidence": null
+        },
+        {
+          "text": " actually",
+          "startMs": 23452,
+          "endMs": 23754,
+          "timestampMs": 23603,
+          "confidence": null
+        },
+        {
+          "text": " use",
+          "startMs": 23812,
+          "endMs": 23998,
+          "timestampMs": 23905,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 24033,
+          "endMs": 24474,
+          "timestampMs": 24254,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "worked-example-1",
+      "type": "workedExample",
+      "heading": "Finding N, number of particles",
+      "question": "How many atoms are in 2.5 mol of carbon?",
+      "coachNote": "Target: N. So multiply by Nₐ.",
+      "unitCancel": {
+        "left": "mol",
+        "right": "mol⁻¹",
+        "result": "answer is atoms, not mol"
+      },
+      "steps": [
+        "Known: n = 2.5 mol, Nₐ = 6.022 × 10²³ mol⁻¹",
+        "Find: N = ? (number of carbon atoms)",
+        "Formula: N = n × Nₐ",
+        "Substitute: N = 2.5 × 6.022 × 10²³",
+        "Answer: N = 1.506 × 10²⁴ = 1.5e24 atoms. (mol cancels with mol⁻¹)."
+      ],
+      "durationInFrames": 1901,
+      "caption": "N = 2.5 × 6.022 × 10²³ = 1.506 × 10²⁴ atoms.",
+      "voiceover": {
+        "text": "Alright — let's work through our first example together. The question reads: how many atoms are in two-point-five moles of carbon? So how do we attack this? The first move I always make — and it honestly wins half the marks — is figure out what we've been given. We've got n, the moles, equal to two-point-five. And we know Avogadro's number, which is the constant six-point-zero-two-two times ten to the twenty-three per mole. Now what are we asked for? We want N — the number of atoms. So we need the formula that links them: N equals n times Avogadro's number. From here, it's pure substitution. We plug in our n value of two-point-five, multiply by Avogadro's, and the calculator gives us one-point-five times ten to the twenty-four atoms. Quick sanity check: that's about one-and-a-half times Avogadro's number — exactly what you'd expect from one-and-a-half moles. And notice how the moles cancel with the per mole on Avogadro — leaving just a count of atoms, no units. That's how you know the setup was right.",
+        "audioFile": "public/audio/Chemistry-Y11-M2-L1B/worked-example-1.d7cb5505ca5d.mp3"
+      },
+      "revealDelays": {
+        "heading": 74,
+        "diagram": 186,
+        "coachNote": 186,
+        "stepsStart": 223,
+        "stepInterval": 321,
+        "stepAts": [
+          223,
+          543,
+          922,
+          1185,
+          1505
+        ]
+      },
+      "recapSeed": "Multiply by Nₐ to convert moles → number of particles.",
+      "confidenceCheck": "Calculate the number of particles in a given chemical amount.",
+      "syllabusDotPointIndex": 1,
+      "captions": [
+        {
+          "text": "Alright",
+          "startMs": 0,
+          "endMs": 313,
+          "timestampMs": 157,
+          "confidence": null
+        },
+        {
+          "text": " let's",
+          "startMs": 464,
+          "endMs": 650,
+          "timestampMs": 557,
+          "confidence": null
+        },
+        {
+          "text": " work",
+          "startMs": 697,
+          "endMs": 859,
+          "timestampMs": 778,
+          "confidence": null
+        },
+        {
+          "text": " through",
+          "startMs": 894,
+          "endMs": 1068,
+          "timestampMs": 981,
+          "confidence": null
+        },
+        {
+          "text": " our",
+          "startMs": 1091,
+          "endMs": 1184,
+          "timestampMs": 1138,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 1265,
+          "endMs": 1521,
+          "timestampMs": 1393,
+          "confidence": null
+        },
+        {
+          "text": " example",
+          "startMs": 1579,
+          "endMs": 1985,
+          "timestampMs": 1782,
+          "confidence": null
+        },
+        {
+          "text": " together.",
+          "startMs": 2020,
+          "endMs": 2426,
+          "timestampMs": 2223,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 2508,
+          "endMs": 2635,
+          "timestampMs": 2572,
+          "confidence": null
+        },
+        {
+          "text": " question",
+          "startMs": 2682,
+          "endMs": 3019,
+          "timestampMs": 2851,
+          "confidence": null
+        },
+        {
+          "text": " reads:",
+          "startMs": 3088,
+          "endMs": 3413,
+          "timestampMs": 3250,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 3587,
+          "endMs": 3762,
+          "timestampMs": 3675,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 3820,
+          "endMs": 3982,
+          "timestampMs": 3901,
+          "confidence": null
+        },
+        {
+          "text": " atoms",
+          "startMs": 4029,
+          "endMs": 4272,
+          "timestampMs": 4151,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 4296,
+          "endMs": 4377,
+          "timestampMs": 4337,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 4412,
+          "endMs": 4458,
+          "timestampMs": 4435,
+          "confidence": null
+        },
+        {
+          "text": " two-point-five",
+          "startMs": 4516,
+          "endMs": 5283,
+          "timestampMs": 4900,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 5341,
+          "endMs": 5584,
+          "timestampMs": 5463,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 5631,
+          "endMs": 5689,
+          "timestampMs": 5660,
+          "confidence": null
+        },
+        {
+          "text": " carbon?",
+          "startMs": 5759,
+          "endMs": 6293,
+          "timestampMs": 6026,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 6676,
+          "endMs": 6815,
+          "timestampMs": 6746,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 6885,
+          "endMs": 7012,
+          "timestampMs": 6948,
+          "confidence": null
+        },
+        {
+          "text": " do",
+          "startMs": 7047,
+          "endMs": 7105,
+          "timestampMs": 7076,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 7152,
+          "endMs": 7210,
+          "timestampMs": 7181,
+          "confidence": null
+        },
+        {
+          "text": " attack",
+          "startMs": 7245,
+          "endMs": 7500,
+          "timestampMs": 7373,
+          "confidence": null
+        },
+        {
+          "text": " this?",
+          "startMs": 7570,
+          "endMs": 7988,
+          "timestampMs": 7779,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 8499,
+          "endMs": 8626,
+          "timestampMs": 8563,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 8708,
+          "endMs": 8986,
+          "timestampMs": 8847,
+          "confidence": null
+        },
+        {
+          "text": " move",
+          "startMs": 9056,
+          "endMs": 9300,
+          "timestampMs": 9178,
+          "confidence": null
+        },
+        {
+          "text": " I",
+          "startMs": 9334,
+          "endMs": 9369,
+          "timestampMs": 9352,
+          "confidence": null
+        },
+        {
+          "text": " always",
+          "startMs": 9439,
+          "endMs": 9694,
+          "timestampMs": 9567,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 9764,
+          "endMs": 10124,
+          "timestampMs": 9944,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10217,
+          "endMs": 10403,
+          "timestampMs": 10310,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 10461,
+          "endMs": 10530,
+          "timestampMs": 10496,
+          "confidence": null
+        },
+        {
+          "text": " honestly",
+          "startMs": 10588,
+          "endMs": 10960,
+          "timestampMs": 10774,
+          "confidence": null
+        },
+        {
+          "text": " wins",
+          "startMs": 11006,
+          "endMs": 11192,
+          "timestampMs": 11099,
+          "confidence": null
+        },
+        {
+          "text": " half",
+          "startMs": 11250,
+          "endMs": 11436,
+          "timestampMs": 11343,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11482,
+          "endMs": 11552,
+          "timestampMs": 11517,
+          "confidence": null
+        },
+        {
+          "text": " marks",
+          "startMs": 11587,
+          "endMs": 11993,
+          "timestampMs": 11790,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 12469,
+          "endMs": 12608,
+          "timestampMs": 12539,
+          "confidence": null
+        },
+        {
+          "text": " figure",
+          "startMs": 12725,
+          "endMs": 13073,
+          "timestampMs": 12899,
+          "confidence": null
+        },
+        {
+          "text": " out",
+          "startMs": 13119,
+          "endMs": 13317,
+          "timestampMs": 13218,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 13491,
+          "endMs": 13723,
+          "timestampMs": 13607,
+          "confidence": null
+        },
+        {
+          "text": " we've",
+          "startMs": 13781,
+          "endMs": 13967,
+          "timestampMs": 13874,
+          "confidence": null
+        },
+        {
+          "text": " been",
+          "startMs": 13990,
+          "endMs": 14118,
+          "timestampMs": 14054,
+          "confidence": null
+        },
+        {
+          "text": " given.",
+          "startMs": 14153,
+          "endMs": 14559,
+          "timestampMs": 14356,
+          "confidence": null
+        },
+        {
+          "text": " We've",
+          "startMs": 15000,
+          "endMs": 15197,
+          "timestampMs": 15099,
+          "confidence": null
+        },
+        {
+          "text": " got",
+          "startMs": 15221,
+          "endMs": 15325,
+          "timestampMs": 15273,
+          "confidence": null
+        },
+        {
+          "text": " n,",
+          "startMs": 15383,
+          "endMs": 15674,
+          "timestampMs": 15529,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15848,
+          "endMs": 15964,
+          "timestampMs": 15906,
+          "confidence": null
+        },
+        {
+          "text": " moles,",
+          "startMs": 16022,
+          "endMs": 16660,
+          "timestampMs": 16341,
+          "confidence": null
+        },
+        {
+          "text": " equal",
+          "startMs": 16904,
+          "endMs": 17287,
+          "timestampMs": 17096,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 17380,
+          "endMs": 17473,
+          "timestampMs": 17426,
+          "confidence": null
+        },
+        {
+          "text": " two-point-five.",
+          "startMs": 17543,
+          "endMs": 18657,
+          "timestampMs": 18100,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 19098,
+          "endMs": 19226,
+          "timestampMs": 19162,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 19273,
+          "endMs": 19342,
+          "timestampMs": 19307,
+          "confidence": null
+        },
+        {
+          "text": " know",
+          "startMs": 19400,
+          "endMs": 19609,
+          "timestampMs": 19505,
+          "confidence": null
+        },
+        {
+          "text": " Avogadro's",
+          "startMs": 19702,
+          "endMs": 20248,
+          "timestampMs": 19975,
+          "confidence": null
+        },
+        {
+          "text": " number,",
+          "startMs": 20294,
+          "endMs": 20770,
+          "timestampMs": 20532,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 21211,
+          "endMs": 21409,
+          "timestampMs": 21310,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 21444,
+          "endMs": 21513,
+          "timestampMs": 21479,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21548,
+          "endMs": 21618,
+          "timestampMs": 21583,
+          "confidence": null
+        },
+        {
+          "text": " constant",
+          "startMs": 21664,
+          "endMs": 22082,
+          "timestampMs": 21873,
+          "confidence": null
+        },
+        {
+          "text": " six-point-zero-two-two",
+          "startMs": 22140,
+          "endMs": 23220,
+          "timestampMs": 22680,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 23266,
+          "endMs": 23510,
+          "timestampMs": 23388,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 23580,
+          "endMs": 23940,
+          "timestampMs": 23760,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 24056,
+          "endMs": 24172,
+          "timestampMs": 24114,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24242,
+          "endMs": 24311,
+          "timestampMs": 24277,
+          "confidence": null
+        },
+        {
+          "text": " twenty-three",
+          "startMs": 24358,
+          "endMs": 24938,
+          "timestampMs": 24648,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 24985,
+          "endMs": 25112,
+          "timestampMs": 25048,
+          "confidence": null
+        },
+        {
+          "text": " mole.",
+          "startMs": 25159,
+          "endMs": 25588,
+          "timestampMs": 25374,
+          "confidence": null
+        },
+        {
+          "text": " Now",
+          "startMs": 26030,
+          "endMs": 26157,
+          "timestampMs": 26094,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 26215,
+          "endMs": 26366,
+          "timestampMs": 26291,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 26390,
+          "endMs": 26459,
+          "timestampMs": 26425,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 26482,
+          "endMs": 26540,
+          "timestampMs": 26511,
+          "confidence": null
+        },
+        {
+          "text": " asked",
+          "startMs": 26587,
+          "endMs": 26796,
+          "timestampMs": 26691,
+          "confidence": null
+        },
+        {
+          "text": " for?",
+          "startMs": 26842,
+          "endMs": 27179,
+          "timestampMs": 27011,
+          "confidence": null
+        },
+        {
+          "text": " We",
+          "startMs": 27562,
+          "endMs": 27690,
+          "timestampMs": 27626,
+          "confidence": null
+        },
+        {
+          "text": " want",
+          "startMs": 27736,
+          "endMs": 27899,
+          "timestampMs": 27818,
+          "confidence": null
+        },
+        {
+          "text": " N",
+          "startMs": 27968,
+          "endMs": 28143,
+          "timestampMs": 28056,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 28537,
+          "endMs": 28642,
+          "timestampMs": 28590,
+          "confidence": null
+        },
+        {
+          "text": " number",
+          "startMs": 28688,
+          "endMs": 28909,
+          "timestampMs": 28798,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 28955,
+          "endMs": 29002,
+          "timestampMs": 28978,
+          "confidence": null
+        },
+        {
+          "text": " atoms.",
+          "startMs": 29060,
+          "endMs": 29687,
+          "timestampMs": 29374,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 30070,
+          "endMs": 30209,
+          "timestampMs": 30140,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 30267,
+          "endMs": 30349,
+          "timestampMs": 30308,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 30418,
+          "endMs": 30592,
+          "timestampMs": 30505,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 30627,
+          "endMs": 30697,
+          "timestampMs": 30662,
+          "confidence": null
+        },
+        {
+          "text": " formula",
+          "startMs": 30743,
+          "endMs": 31080,
+          "timestampMs": 30911,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 31126,
+          "endMs": 31231,
+          "timestampMs": 31179,
+          "confidence": null
+        },
+        {
+          "text": " links",
+          "startMs": 31277,
+          "endMs": 31498,
+          "timestampMs": 31388,
+          "confidence": null
+        },
+        {
+          "text": " them:",
+          "startMs": 31544,
+          "endMs": 31811,
+          "timestampMs": 31678,
+          "confidence": null
+        },
+        {
+          "text": " N",
+          "startMs": 32020,
+          "endMs": 32345,
+          "timestampMs": 32183,
+          "confidence": null
+        },
+        {
+          "text": " equals",
+          "startMs": 32520,
+          "endMs": 32938,
+          "timestampMs": 32729,
+          "confidence": null
+        },
+        {
+          "text": " n",
+          "startMs": 33030,
+          "endMs": 33181,
+          "timestampMs": 33106,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 33251,
+          "endMs": 33564,
+          "timestampMs": 33408,
+          "confidence": null
+        },
+        {
+          "text": " Avogadro's",
+          "startMs": 33623,
+          "endMs": 34168,
+          "timestampMs": 33896,
+          "confidence": null
+        },
+        {
+          "text": " number.",
+          "startMs": 34226,
+          "endMs": 34702,
+          "timestampMs": 34464,
+          "confidence": null
+        },
+        {
+          "text": " From",
+          "startMs": 35027,
+          "endMs": 35201,
+          "timestampMs": 35114,
+          "confidence": null
+        },
+        {
+          "text": " here,",
+          "startMs": 35271,
+          "endMs": 35503,
+          "timestampMs": 35387,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 35527,
+          "endMs": 35643,
+          "timestampMs": 35585,
+          "confidence": null
+        },
+        {
+          "text": " pure",
+          "startMs": 35712,
+          "endMs": 36026,
+          "timestampMs": 35869,
+          "confidence": null
+        },
+        {
+          "text": " substitution.",
+          "startMs": 36061,
+          "endMs": 36897,
+          "timestampMs": 36479,
+          "confidence": null
+        },
+        {
+          "text": " We",
+          "startMs": 37140,
+          "endMs": 37268,
+          "timestampMs": 37204,
+          "confidence": null
+        },
+        {
+          "text": " plug",
+          "startMs": 37315,
+          "endMs": 37512,
+          "timestampMs": 37414,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 37570,
+          "endMs": 37628,
+          "timestampMs": 37599,
+          "confidence": null
+        },
+        {
+          "text": " our",
+          "startMs": 37686,
+          "endMs": 37825,
+          "timestampMs": 37756,
+          "confidence": null
+        },
+        {
+          "text": " n",
+          "startMs": 37849,
+          "endMs": 37918,
+          "timestampMs": 37884,
+          "confidence": null
+        },
+        {
+          "text": " value",
+          "startMs": 37999,
+          "endMs": 38301,
+          "timestampMs": 38150,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 38325,
+          "endMs": 38383,
+          "timestampMs": 38354,
+          "confidence": null
+        },
+        {
+          "text": " two-point-five,",
+          "startMs": 38441,
+          "endMs": 39346,
+          "timestampMs": 38894,
+          "confidence": null
+        },
+        {
+          "text": " multiply",
+          "startMs": 39520,
+          "endMs": 40066,
+          "timestampMs": 39793,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 40136,
+          "endMs": 40229,
+          "timestampMs": 40183,
+          "confidence": null
+        },
+        {
+          "text": " Avogadro's,",
+          "startMs": 40298,
+          "endMs": 41378,
+          "timestampMs": 40838,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 41622,
+          "endMs": 41761,
+          "timestampMs": 41692,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 41796,
+          "endMs": 41866,
+          "timestampMs": 41831,
+          "confidence": null
+        },
+        {
+          "text": " calculator",
+          "startMs": 41924,
+          "endMs": 42469,
+          "timestampMs": 42197,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 42516,
+          "endMs": 42690,
+          "timestampMs": 42603,
+          "confidence": null
+        },
+        {
+          "text": " us",
+          "startMs": 42725,
+          "endMs": 42818,
+          "timestampMs": 42772,
+          "confidence": null
+        },
+        {
+          "text": " one-point-five",
+          "startMs": 42899,
+          "endMs": 43688,
+          "timestampMs": 43294,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 43723,
+          "endMs": 44002,
+          "timestampMs": 43863,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 44072,
+          "endMs": 44397,
+          "timestampMs": 44235,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 44478,
+          "endMs": 44559,
+          "timestampMs": 44519,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 44617,
+          "endMs": 44687,
+          "timestampMs": 44652,
+          "confidence": null
+        },
+        {
+          "text": " twenty-four",
+          "startMs": 44734,
+          "endMs": 45210,
+          "timestampMs": 44972,
+          "confidence": null
+        },
+        {
+          "text": " atoms.",
+          "startMs": 45279,
+          "endMs": 45802,
+          "timestampMs": 45541,
+          "confidence": null
+        },
+        {
+          "text": " Quick",
+          "startMs": 46313,
+          "endMs": 46533,
+          "timestampMs": 46423,
+          "confidence": null
+        },
+        {
+          "text": " sanity",
+          "startMs": 46580,
+          "endMs": 46905,
+          "timestampMs": 46743,
+          "confidence": null
+        },
+        {
+          "text": " check:",
+          "startMs": 46963,
+          "endMs": 47346,
+          "timestampMs": 47155,
+          "confidence": null
+        },
+        {
+          "text": " that's",
+          "startMs": 47787,
+          "endMs": 47984,
+          "timestampMs": 47886,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 48008,
+          "endMs": 48205,
+          "timestampMs": 48107,
+          "confidence": null
+        },
+        {
+          "text": " one-and-a-half",
+          "startMs": 48263,
+          "endMs": 48762,
+          "timestampMs": 48513,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 48820,
+          "endMs": 49157,
+          "timestampMs": 48989,
+          "confidence": null
+        },
+        {
+          "text": " Avogadro's",
+          "startMs": 49227,
+          "endMs": 49784,
+          "timestampMs": 49506,
+          "confidence": null
+        },
+        {
+          "text": " number",
+          "startMs": 49830,
+          "endMs": 50074,
+          "timestampMs": 49952,
+          "confidence": null
+        },
+        {
+          "text": " exactly",
+          "startMs": 50364,
+          "endMs": 50968,
+          "timestampMs": 50666,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 51015,
+          "endMs": 51142,
+          "timestampMs": 51079,
+          "confidence": null
+        },
+        {
+          "text": " you'd",
+          "startMs": 51177,
+          "endMs": 51293,
+          "timestampMs": 51235,
+          "confidence": null
+        },
+        {
+          "text": " expect",
+          "startMs": 51328,
+          "endMs": 51665,
+          "timestampMs": 51497,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 51700,
+          "endMs": 51839,
+          "timestampMs": 51770,
+          "confidence": null
+        },
+        {
+          "text": " one-and-a-half",
+          "startMs": 51909,
+          "endMs": 52431,
+          "timestampMs": 52170,
+          "confidence": null
+        },
+        {
+          "text": " moles.",
+          "startMs": 52512,
+          "endMs": 53104,
+          "timestampMs": 52808,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 53430,
+          "endMs": 53580,
+          "timestampMs": 53505,
+          "confidence": null
+        },
+        {
+          "text": " notice",
+          "startMs": 53650,
+          "endMs": 53929,
+          "timestampMs": 53790,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 53964,
+          "endMs": 54045,
+          "timestampMs": 54005,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 54103,
+          "endMs": 54173,
+          "timestampMs": 54138,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 54219,
+          "endMs": 54474,
+          "timestampMs": 54347,
+          "confidence": null
+        },
+        {
+          "text": " cancel",
+          "startMs": 54544,
+          "endMs": 54858,
+          "timestampMs": 54701,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 54904,
+          "endMs": 55020,
+          "timestampMs": 54962,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 55055,
+          "endMs": 55125,
+          "timestampMs": 55090,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 55171,
+          "endMs": 55392,
+          "timestampMs": 55282,
+          "confidence": null
+        },
+        {
+          "text": " mole",
+          "startMs": 55461,
+          "endMs": 55705,
+          "timestampMs": 55583,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 55728,
+          "endMs": 55786,
+          "timestampMs": 55757,
+          "confidence": null
+        },
+        {
+          "text": " Avogadro",
+          "startMs": 55833,
+          "endMs": 56448,
+          "timestampMs": 56141,
+          "confidence": null
+        },
+        {
+          "text": " leaving",
+          "startMs": 56889,
+          "endMs": 57168,
+          "timestampMs": 57029,
+          "confidence": null
+        },
+        {
+          "text": " just",
+          "startMs": 57226,
+          "endMs": 57412,
+          "timestampMs": 57319,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 57447,
+          "endMs": 57470,
+          "timestampMs": 57459,
+          "confidence": null
+        },
+        {
+          "text": " count",
+          "startMs": 57539,
+          "endMs": 57760,
+          "timestampMs": 57650,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 57806,
+          "endMs": 57853,
+          "timestampMs": 57829,
+          "confidence": null
+        },
+        {
+          "text": " atoms,",
+          "startMs": 57911,
+          "endMs": 58375,
+          "timestampMs": 58143,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 58584,
+          "endMs": 58782,
+          "timestampMs": 58683,
+          "confidence": null
+        },
+        {
+          "text": " units.",
+          "startMs": 58898,
+          "endMs": 59443,
+          "timestampMs": 59171,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 59954,
+          "endMs": 60175,
+          "timestampMs": 60064,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 60221,
+          "endMs": 60303,
+          "timestampMs": 60262,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 60349,
+          "endMs": 60419,
+          "timestampMs": 60384,
+          "confidence": null
+        },
+        {
+          "text": " know",
+          "startMs": 60477,
+          "endMs": 60593,
+          "timestampMs": 60535,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 60639,
+          "endMs": 60709,
+          "timestampMs": 60674,
+          "confidence": null
+        },
+        {
+          "text": " setup",
+          "startMs": 60755,
+          "endMs": 60999,
+          "timestampMs": 60877,
+          "confidence": null
+        },
+        {
+          "text": " was",
+          "startMs": 61046,
+          "endMs": 61150,
+          "timestampMs": 61098,
+          "confidence": null
+        },
+        {
+          "text": " right.",
+          "startMs": 61220,
+          "endMs": 61858,
+          "timestampMs": 61539,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Finding n, amount in moles",
+      "question": "A sample contains 3.01 × 10²⁴ molecules of water. How many moles is this?",
+      "coachNote": "Target: n. So divide by Nₐ.",
+      "unitCancel": {
+        "left": "particles",
+        "right": "particles mol⁻¹",
+        "result": "answer is mol"
+      },
+      "steps": [
+        "Known: N = 3.01 × 10²⁴, Nₐ = 6.022 × 10²³ mol⁻¹",
+        "Find: n = ? (amount in moles)",
+        "Rearrange: n = N ÷ Nₐ",
+        "Substitute: n = 3.01 × 10²⁴ ÷ 6.022 × 10²³",
+        "n = 5.0 mol ✓ (particles ÷ particles mol⁻¹ = mol)"
+      ],
+      "durationInFrames": 1338,
+      "caption": "Rearrange to n = N ÷ Nₐ when you need the amount in moles.",
+      "voiceover": {
+        "text": "Now let's flip the problem. The question reads: a sample contains three-point-zero-one times ten to the twenty-four molecules of water. How many moles is this? OK, so what's different here? Last time we knew n and wanted N. This time we know N and we want n. Same formula still applies — N equals n times Avogadro's — we just rearrange it. n equals N divided by Avogadro's number. Substitute the numbers in, and you get exactly five-point-zero moles. Quick unit check: particles divided by particles per mole leaves moles. That's exactly what we wanted. So the same formula works both directions — you just rearrange depending on what you're chasing.",
+        "audioFile": "public/audio/Chemistry-Y11-M2-L1B/worked-example-2.148c555801c3.mp3"
+      },
+      "revealDelays": {
+        "heading": 52,
+        "diagram": 129,
+        "coachNote": 129,
+        "stepsStart": 155,
+        "stepInterval": 222,
+        "stepAts": [
+          155,
+          377,
+          669,
+          770,
+          1041
+        ]
+      },
+      "captions": [
+        {
+          "text": "Now",
+          "startMs": 0,
+          "endMs": 186,
+          "timestampMs": 93,
+          "confidence": null
+        },
+        {
+          "text": " let's",
+          "startMs": 244,
+          "endMs": 418,
+          "timestampMs": 331,
+          "confidence": null
+        },
+        {
+          "text": " flip",
+          "startMs": 453,
+          "endMs": 650,
+          "timestampMs": 552,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 708,
+          "endMs": 778,
+          "timestampMs": 743,
+          "confidence": null
+        },
+        {
+          "text": " problem.",
+          "startMs": 813,
+          "endMs": 1207,
+          "timestampMs": 1010,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 1277,
+          "endMs": 1405,
+          "timestampMs": 1341,
+          "confidence": null
+        },
+        {
+          "text": " question",
+          "startMs": 1451,
+          "endMs": 1776,
+          "timestampMs": 1614,
+          "confidence": null
+        },
+        {
+          "text": " reads:",
+          "startMs": 1846,
+          "endMs": 2322,
+          "timestampMs": 2084,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2647,
+          "endMs": 2705,
+          "timestampMs": 2676,
+          "confidence": null
+        },
+        {
+          "text": " sample",
+          "startMs": 2798,
+          "endMs": 3193,
+          "timestampMs": 2996,
+          "confidence": null
+        },
+        {
+          "text": " contains",
+          "startMs": 3228,
+          "endMs": 3564,
+          "timestampMs": 3396,
+          "confidence": null
+        },
+        {
+          "text": " three-point-zero-one",
+          "startMs": 3634,
+          "endMs": 4818,
+          "timestampMs": 4226,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 4865,
+          "endMs": 5201,
+          "timestampMs": 5033,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 5271,
+          "endMs": 5584,
+          "timestampMs": 5428,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 5666,
+          "endMs": 5747,
+          "timestampMs": 5707,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5817,
+          "endMs": 5886,
+          "timestampMs": 5852,
+          "confidence": null
+        },
+        {
+          "text": " twenty-four",
+          "startMs": 5944,
+          "endMs": 6606,
+          "timestampMs": 6275,
+          "confidence": null
+        },
+        {
+          "text": " molecules",
+          "startMs": 6676,
+          "endMs": 7163,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 7198,
+          "endMs": 7268,
+          "timestampMs": 7233,
+          "confidence": null
+        },
+        {
+          "text": " water.",
+          "startMs": 7349,
+          "endMs": 7825,
+          "timestampMs": 7587,
+          "confidence": null
+        },
+        {
+          "text": " How",
+          "startMs": 8208,
+          "endMs": 8348,
+          "timestampMs": 8278,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 8382,
+          "endMs": 8534,
+          "timestampMs": 8458,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 8580,
+          "endMs": 8812,
+          "timestampMs": 8696,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 8871,
+          "endMs": 8963,
+          "timestampMs": 8917,
+          "confidence": null
+        },
+        {
+          "text": " this?",
+          "startMs": 9021,
+          "endMs": 9474,
+          "timestampMs": 9248,
+          "confidence": null
+        },
+        {
+          "text": " OK,",
+          "startMs": 9857,
+          "endMs": 10252,
+          "timestampMs": 10055,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 10299,
+          "endMs": 10380,
+          "timestampMs": 10340,
+          "confidence": null
+        },
+        {
+          "text": " what's",
+          "startMs": 10426,
+          "endMs": 10600,
+          "timestampMs": 10513,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 10647,
+          "endMs": 10902,
+          "timestampMs": 10775,
+          "confidence": null
+        },
+        {
+          "text": " here?",
+          "startMs": 10937,
+          "endMs": 11227,
+          "timestampMs": 11082,
+          "confidence": null
+        },
+        {
+          "text": " Last",
+          "startMs": 11401,
+          "endMs": 11622,
+          "timestampMs": 11512,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 11657,
+          "endMs": 11819,
+          "timestampMs": 11738,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 11843,
+          "endMs": 11901,
+          "timestampMs": 11872,
+          "confidence": null
+        },
+        {
+          "text": " knew",
+          "startMs": 11947,
+          "endMs": 12086,
+          "timestampMs": 12017,
+          "confidence": null
+        },
+        {
+          "text": " n",
+          "startMs": 12133,
+          "endMs": 12203,
+          "timestampMs": 12168,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 12284,
+          "endMs": 12354,
+          "timestampMs": 12319,
+          "confidence": null
+        },
+        {
+          "text": " wanted",
+          "startMs": 12400,
+          "endMs": 12690,
+          "timestampMs": 12545,
+          "confidence": null
+        },
+        {
+          "text": " N.",
+          "startMs": 12760,
+          "endMs": 12992,
+          "timestampMs": 12876,
+          "confidence": null
+        },
+        {
+          "text": " This",
+          "startMs": 13108,
+          "endMs": 13294,
+          "timestampMs": 13201,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 13340,
+          "endMs": 13515,
+          "timestampMs": 13428,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 13549,
+          "endMs": 13607,
+          "timestampMs": 13578,
+          "confidence": null
+        },
+        {
+          "text": " know",
+          "startMs": 13642,
+          "endMs": 13782,
+          "timestampMs": 13712,
+          "confidence": null
+        },
+        {
+          "text": " N",
+          "startMs": 13851,
+          "endMs": 13967,
+          "timestampMs": 13909,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 14002,
+          "endMs": 14072,
+          "timestampMs": 14037,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 14107,
+          "endMs": 14176,
+          "timestampMs": 14142,
+          "confidence": null
+        },
+        {
+          "text": " want",
+          "startMs": 14234,
+          "endMs": 14443,
+          "timestampMs": 14339,
+          "confidence": null
+        },
+        {
+          "text": " n.",
+          "startMs": 14478,
+          "endMs": 14710,
+          "timestampMs": 14594,
+          "confidence": null
+        },
+        {
+          "text": " Same",
+          "startMs": 14919,
+          "endMs": 15210,
+          "timestampMs": 15065,
+          "confidence": null
+        },
+        {
+          "text": " formula",
+          "startMs": 15256,
+          "endMs": 15593,
+          "timestampMs": 15425,
+          "confidence": null
+        },
+        {
+          "text": " still",
+          "startMs": 15639,
+          "endMs": 15802,
+          "timestampMs": 15721,
+          "confidence": null
+        },
+        {
+          "text": " applies",
+          "startMs": 15837,
+          "endMs": 16243,
+          "timestampMs": 16040,
+          "confidence": null
+        },
+        {
+          "text": " N",
+          "startMs": 17833,
+          "endMs": 18042,
+          "timestampMs": 17938,
+          "confidence": null
+        },
+        {
+          "text": " equals",
+          "startMs": 18484,
+          "endMs": 18878,
+          "timestampMs": 18681,
+          "confidence": null
+        },
+        {
+          "text": " n",
+          "startMs": 18948,
+          "endMs": 18983,
+          "timestampMs": 18966,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 19064,
+          "endMs": 19354,
+          "timestampMs": 19209,
+          "confidence": null
+        },
+        {
+          "text": " Avogadro's",
+          "startMs": 19412,
+          "endMs": 20016,
+          "timestampMs": 19714,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 21932,
+          "endMs": 22025,
+          "timestampMs": 21978,
+          "confidence": null
+        },
+        {
+          "text": " just",
+          "startMs": 22083,
+          "endMs": 22222,
+          "timestampMs": 22153,
+          "confidence": null
+        },
+        {
+          "text": " rearrange",
+          "startMs": 22292,
+          "endMs": 22814,
+          "timestampMs": 22553,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 22849,
+          "endMs": 23011,
+          "timestampMs": 22930,
+          "confidence": null
+        },
+        {
+          "text": " n",
+          "startMs": 23453,
+          "endMs": 23604,
+          "timestampMs": 23529,
+          "confidence": null
+        },
+        {
+          "text": " equals",
+          "startMs": 23685,
+          "endMs": 23987,
+          "timestampMs": 23836,
+          "confidence": null
+        },
+        {
+          "text": " N",
+          "startMs": 24056,
+          "endMs": 24091,
+          "timestampMs": 24074,
+          "confidence": null
+        },
+        {
+          "text": " divided",
+          "startMs": 24126,
+          "endMs": 24428,
+          "timestampMs": 24277,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 24451,
+          "endMs": 24544,
+          "timestampMs": 24498,
+          "confidence": null
+        },
+        {
+          "text": " Avogadro's",
+          "startMs": 24602,
+          "endMs": 25171,
+          "timestampMs": 24886,
+          "confidence": null
+        },
+        {
+          "text": " number.",
+          "startMs": 25217,
+          "endMs": 25519,
+          "timestampMs": 25368,
+          "confidence": null
+        },
+        {
+          "text": " Substitute",
+          "startMs": 25670,
+          "endMs": 26228,
+          "timestampMs": 25949,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 26251,
+          "endMs": 26321,
+          "timestampMs": 26286,
+          "confidence": null
+        },
+        {
+          "text": " numbers",
+          "startMs": 26355,
+          "endMs": 26599,
+          "timestampMs": 26477,
+          "confidence": null
+        },
+        {
+          "text": " in,",
+          "startMs": 26669,
+          "endMs": 26947,
+          "timestampMs": 26808,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 27122,
+          "endMs": 27261,
+          "timestampMs": 27191,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 27307,
+          "endMs": 27377,
+          "timestampMs": 27342,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 27447,
+          "endMs": 27540,
+          "timestampMs": 27493,
+          "confidence": null
+        },
+        {
+          "text": " exactly",
+          "startMs": 27586,
+          "endMs": 28085,
+          "timestampMs": 27836,
+          "confidence": null
+        },
+        {
+          "text": " five-point-zero",
+          "startMs": 28167,
+          "endMs": 29142,
+          "timestampMs": 28655,
+          "confidence": null
+        },
+        {
+          "text": " moles.",
+          "startMs": 29223,
+          "endMs": 29850,
+          "timestampMs": 29537,
+          "confidence": null
+        },
+        {
+          "text": " Quick",
+          "startMs": 30361,
+          "endMs": 30581,
+          "timestampMs": 30471,
+          "confidence": null
+        },
+        {
+          "text": " unit",
+          "startMs": 30651,
+          "endMs": 30837,
+          "timestampMs": 30744,
+          "confidence": null
+        },
+        {
+          "text": " check:",
+          "startMs": 30883,
+          "endMs": 31255,
+          "timestampMs": 31069,
+          "confidence": null
+        },
+        {
+          "text": " particles",
+          "startMs": 31371,
+          "endMs": 31835,
+          "timestampMs": 31603,
+          "confidence": null
+        },
+        {
+          "text": " divided",
+          "startMs": 31882,
+          "endMs": 32218,
+          "timestampMs": 32050,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 32242,
+          "endMs": 32346,
+          "timestampMs": 32294,
+          "confidence": null
+        },
+        {
+          "text": " particles",
+          "startMs": 32427,
+          "endMs": 32869,
+          "timestampMs": 32648,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 32950,
+          "endMs": 33240,
+          "timestampMs": 33095,
+          "confidence": null
+        },
+        {
+          "text": " mole",
+          "startMs": 33565,
+          "endMs": 34111,
+          "timestampMs": 33838,
+          "confidence": null
+        },
+        {
+          "text": " leaves",
+          "startMs": 34262,
+          "endMs": 34552,
+          "timestampMs": 34407,
+          "confidence": null
+        },
+        {
+          "text": " moles.",
+          "startMs": 34610,
+          "endMs": 35191,
+          "timestampMs": 34901,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 36305,
+          "endMs": 36526,
+          "timestampMs": 36416,
+          "confidence": null
+        },
+        {
+          "text": " exactly",
+          "startMs": 36572,
+          "endMs": 36944,
+          "timestampMs": 36758,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 36978,
+          "endMs": 37071,
+          "timestampMs": 37025,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 37106,
+          "endMs": 37187,
+          "timestampMs": 37147,
+          "confidence": null
+        },
+        {
+          "text": " wanted.",
+          "startMs": 37222,
+          "endMs": 37675,
+          "timestampMs": 37448,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 37849,
+          "endMs": 37977,
+          "timestampMs": 37913,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 38035,
+          "endMs": 38116,
+          "timestampMs": 38076,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 38174,
+          "endMs": 38418,
+          "timestampMs": 38296,
+          "confidence": null
+        },
+        {
+          "text": " formula",
+          "startMs": 38488,
+          "endMs": 38871,
+          "timestampMs": 38680,
+          "confidence": null
+        },
+        {
+          "text": " works",
+          "startMs": 38929,
+          "endMs": 39173,
+          "timestampMs": 39051,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 39266,
+          "endMs": 39544,
+          "timestampMs": 39405,
+          "confidence": null
+        },
+        {
+          "text": " directions",
+          "startMs": 39591,
+          "endMs": 40171,
+          "timestampMs": 39881,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 40531,
+          "endMs": 40612,
+          "timestampMs": 40572,
+          "confidence": null
+        },
+        {
+          "text": " just",
+          "startMs": 40694,
+          "endMs": 40856,
+          "timestampMs": 40775,
+          "confidence": null
+        },
+        {
+          "text": " rearrange",
+          "startMs": 40926,
+          "endMs": 41483,
+          "timestampMs": 41204,
+          "confidence": null
+        },
+        {
+          "text": " depending",
+          "startMs": 41506,
+          "endMs": 41820,
+          "timestampMs": 41663,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 41866,
+          "endMs": 41936,
+          "timestampMs": 41901,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 41982,
+          "endMs": 42122,
+          "timestampMs": 42052,
+          "confidence": null
+        },
+        {
+          "text": " you're",
+          "startMs": 42157,
+          "endMs": 42296,
+          "timestampMs": 42227,
+          "confidence": null
+        },
+        {
+          "text": " chasing.",
+          "startMs": 42319,
+          "endMs": 43097,
+          "timestampMs": 42708,
+          "confidence": null
+        }
+      ],
+      "recapSeed": "Divide by Nₐ to convert particles → moles.",
+      "confidenceCheck": "Calculate the chemical amount given a number of particles.",
+      "syllabusDotPointIndex": 1
+    },
+    {
+      "id": "misconception-mistakes",
+      "type": "misconception",
+      "heading": "Two mistakes to fix right now",
+      "body": "Mistake 1: swapping N and n. Always label which quantity you are finding before you substitute.",
+      "secondary": "Mistake 2: dropping units. Nₐ is mol⁻¹. Write units at every step, confirm they cancel to what you expect.",
+      "mistakeTag": "Exam marks live here",
+      "callout": "The units tell you if the setup is wrong.",
+      "diagram": {
+        "type": "massComparison"
+      },
+      "durationInFrames": 1263,
+      "caption": "Always label N or n before substituting, and write units at every step.",
+      "voiceover": {
+        "text": "So let's talk about two mistakes that'll cost you marks — fix them now and you save yourself in the exam. The first one: confusing capital N with lowercase n. We just talked about this — capital N is a raw count, no units. Lowercase n is in moles. Before you substitute anything, write down which quantity you're solving for. Literally just label it. Now the second mistake: dropping the units of Avogadro's number. It's measured in moles to the minus one — basically per mole. When you multiply moles by that, the units cancel beautifully and leave you with a pure count. But if you don't track them, you won't notice when something's off. So write units at every single step — they're your safety net.",
+        "audioFile": "public/audio/Chemistry-Y11-M2-L1B/misconception-mistakes.3f66cb292610.mp3"
+      },
+      "revealDelays": {
+        "heading": 25,
+        "diagram": 146,
+        "mistakeTag": 156,
+        "wrongCard": 244,
+        "rightCard": 692,
+        "callout": 998
+      },
+      "recapSeed": "Always label N vs n, and track units to mol⁻¹.",
+      "confidenceCheck": "Identify which quantity (N or n) a question is asking for.",
+      "syllabusDotPointIndex": 1,
+      "captions": [
+        {
+          "text": "So",
+          "startMs": 0,
+          "endMs": 163,
+          "timestampMs": 82,
+          "confidence": null
+        },
+        {
+          "text": " let's",
+          "startMs": 221,
+          "endMs": 383,
+          "timestampMs": 302,
+          "confidence": null
+        },
+        {
+          "text": " talk",
+          "startMs": 430,
+          "endMs": 592,
+          "timestampMs": 511,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 627,
+          "endMs": 801,
+          "timestampMs": 714,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 836,
+          "endMs": 975,
+          "timestampMs": 906,
+          "confidence": null
+        },
+        {
+          "text": " mistakes",
+          "startMs": 1045,
+          "endMs": 1416,
+          "timestampMs": 1231,
+          "confidence": null
+        },
+        {
+          "text": " that'll",
+          "startMs": 1440,
+          "endMs": 1649,
+          "timestampMs": 1545,
+          "confidence": null
+        },
+        {
+          "text": " cost",
+          "startMs": 1683,
+          "endMs": 1881,
+          "timestampMs": 1782,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 1939,
+          "endMs": 2009,
+          "timestampMs": 1974,
+          "confidence": null
+        },
+        {
+          "text": " marks",
+          "startMs": 2055,
+          "endMs": 2392,
+          "timestampMs": 2224,
+          "confidence": null
+        },
+        {
+          "text": " fix",
+          "startMs": 3158,
+          "endMs": 3402,
+          "timestampMs": 3280,
+          "confidence": null
+        },
+        {
+          "text": " them",
+          "startMs": 3483,
+          "endMs": 3599,
+          "timestampMs": 3541,
+          "confidence": null
+        },
+        {
+          "text": " now",
+          "startMs": 3646,
+          "endMs": 3843,
+          "timestampMs": 3745,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 3959,
+          "endMs": 4098,
+          "timestampMs": 4029,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 4145,
+          "endMs": 4214,
+          "timestampMs": 4180,
+          "confidence": null
+        },
+        {
+          "text": " save",
+          "startMs": 4284,
+          "endMs": 4505,
+          "timestampMs": 4395,
+          "confidence": null
+        },
+        {
+          "text": " yourself",
+          "startMs": 4528,
+          "endMs": 4865,
+          "timestampMs": 4697,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 4946,
+          "endMs": 5050,
+          "timestampMs": 4998,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5085,
+          "endMs": 5166,
+          "timestampMs": 5126,
+          "confidence": null
+        },
+        {
+          "text": " exam.",
+          "startMs": 5201,
+          "endMs": 5747,
+          "timestampMs": 5474,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 6351,
+          "endMs": 6478,
+          "timestampMs": 6415,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 6536,
+          "endMs": 6780,
+          "timestampMs": 6658,
+          "confidence": null
+        },
+        {
+          "text": " one:",
+          "startMs": 6838,
+          "endMs": 7036,
+          "timestampMs": 6937,
+          "confidence": null
+        },
+        {
+          "text": " confusing",
+          "startMs": 7070,
+          "endMs": 7570,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " capital",
+          "startMs": 7628,
+          "endMs": 7953,
+          "timestampMs": 7791,
+          "confidence": null
+        },
+        {
+          "text": " N",
+          "startMs": 8011,
+          "endMs": 8127,
+          "timestampMs": 8069,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 8197,
+          "endMs": 8313,
+          "timestampMs": 8255,
+          "confidence": null
+        },
+        {
+          "text": " lowercase",
+          "startMs": 8371,
+          "endMs": 8917,
+          "timestampMs": 8644,
+          "confidence": null
+        },
+        {
+          "text": " n.",
+          "startMs": 8940,
+          "endMs": 9265,
+          "timestampMs": 9103,
+          "confidence": null
+        },
+        {
+          "text": " We",
+          "startMs": 9439,
+          "endMs": 9555,
+          "timestampMs": 9497,
+          "confidence": null
+        },
+        {
+          "text": " just",
+          "startMs": 9602,
+          "endMs": 9741,
+          "timestampMs": 9672,
+          "confidence": null
+        },
+        {
+          "text": " talked",
+          "startMs": 9764,
+          "endMs": 9985,
+          "timestampMs": 9875,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 10008,
+          "endMs": 10205,
+          "timestampMs": 10107,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 10240,
+          "endMs": 10449,
+          "timestampMs": 10345,
+          "confidence": null
+        },
+        {
+          "text": " capital",
+          "startMs": 11007,
+          "endMs": 11413,
+          "timestampMs": 11210,
+          "confidence": null
+        },
+        {
+          "text": " N",
+          "startMs": 11483,
+          "endMs": 11633,
+          "timestampMs": 11558,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 11726,
+          "endMs": 11831,
+          "timestampMs": 11779,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 11866,
+          "endMs": 11900,
+          "timestampMs": 11883,
+          "confidence": null
+        },
+        {
+          "text": " raw",
+          "startMs": 11970,
+          "endMs": 12156,
+          "timestampMs": 12063,
+          "confidence": null
+        },
+        {
+          "text": " count,",
+          "startMs": 12237,
+          "endMs": 12667,
+          "timestampMs": 12452,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 12876,
+          "endMs": 13073,
+          "timestampMs": 12974,
+          "confidence": null
+        },
+        {
+          "text": " units.",
+          "startMs": 13189,
+          "endMs": 13746,
+          "timestampMs": 13468,
+          "confidence": null
+        },
+        {
+          "text": " Lowercase",
+          "startMs": 14072,
+          "endMs": 14698,
+          "timestampMs": 14385,
+          "confidence": null
+        },
+        {
+          "text": " n",
+          "startMs": 14722,
+          "endMs": 14896,
+          "timestampMs": 14809,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 14989,
+          "endMs": 15151,
+          "timestampMs": 15070,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 15198,
+          "endMs": 15267,
+          "timestampMs": 15233,
+          "confidence": null
+        },
+        {
+          "text": " moles.",
+          "startMs": 15337,
+          "endMs": 15918,
+          "timestampMs": 15628,
+          "confidence": null
+        },
+        {
+          "text": " Before",
+          "startMs": 16161,
+          "endMs": 16475,
+          "timestampMs": 16318,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 16510,
+          "endMs": 16579,
+          "timestampMs": 16545,
+          "confidence": null
+        },
+        {
+          "text": " substitute",
+          "startMs": 16672,
+          "endMs": 17311,
+          "timestampMs": 16992,
+          "confidence": null
+        },
+        {
+          "text": " anything,",
+          "startMs": 17357,
+          "endMs": 18007,
+          "timestampMs": 17682,
+          "confidence": null
+        },
+        {
+          "text": " write",
+          "startMs": 18216,
+          "endMs": 18507,
+          "timestampMs": 18362,
+          "confidence": null
+        },
+        {
+          "text": " down",
+          "startMs": 18541,
+          "endMs": 18739,
+          "timestampMs": 18640,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 18808,
+          "endMs": 19017,
+          "timestampMs": 18913,
+          "confidence": null
+        },
+        {
+          "text": " quantity",
+          "startMs": 19087,
+          "endMs": 19482,
+          "timestampMs": 19285,
+          "confidence": null
+        },
+        {
+          "text": " you're",
+          "startMs": 19517,
+          "endMs": 19656,
+          "timestampMs": 19587,
+          "confidence": null
+        },
+        {
+          "text": " solving",
+          "startMs": 19679,
+          "endMs": 20004,
+          "timestampMs": 19842,
+          "confidence": null
+        },
+        {
+          "text": " for.",
+          "startMs": 20074,
+          "endMs": 20434,
+          "timestampMs": 20254,
+          "confidence": null
+        },
+        {
+          "text": " Literally",
+          "startMs": 20875,
+          "endMs": 21293,
+          "timestampMs": 21084,
+          "confidence": null
+        },
+        {
+          "text": " just",
+          "startMs": 21339,
+          "endMs": 21502,
+          "timestampMs": 21420,
+          "confidence": null
+        },
+        {
+          "text": " label",
+          "startMs": 21560,
+          "endMs": 21827,
+          "timestampMs": 21694,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 21897,
+          "endMs": 22082,
+          "timestampMs": 21990,
+          "confidence": null
+        },
+        {
+          "text": " Now",
+          "startMs": 22466,
+          "endMs": 22582,
+          "timestampMs": 22524,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22628,
+          "endMs": 22698,
+          "timestampMs": 22663,
+          "confidence": null
+        },
+        {
+          "text": " second",
+          "startMs": 22756,
+          "endMs": 23023,
+          "timestampMs": 22890,
+          "confidence": null
+        },
+        {
+          "text": " mistake:",
+          "startMs": 23058,
+          "endMs": 23487,
+          "timestampMs": 23273,
+          "confidence": null
+        },
+        {
+          "text": " dropping",
+          "startMs": 23580,
+          "endMs": 23940,
+          "timestampMs": 23760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 23975,
+          "endMs": 24044,
+          "timestampMs": 24010,
+          "confidence": null
+        },
+        {
+          "text": " units",
+          "startMs": 24103,
+          "endMs": 24335,
+          "timestampMs": 24219,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 24370,
+          "endMs": 24416,
+          "timestampMs": 24393,
+          "confidence": null
+        },
+        {
+          "text": " Avogadro's",
+          "startMs": 24474,
+          "endMs": 25043,
+          "timestampMs": 24758,
+          "confidence": null
+        },
+        {
+          "text": " number.",
+          "startMs": 25101,
+          "endMs": 25508,
+          "timestampMs": 25304,
+          "confidence": null
+        },
+        {
+          "text": " It's",
+          "startMs": 25786,
+          "endMs": 25960,
+          "timestampMs": 25873,
+          "confidence": null
+        },
+        {
+          "text": " measured",
+          "startMs": 26018,
+          "endMs": 26262,
+          "timestampMs": 26140,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 26285,
+          "endMs": 26332,
+          "timestampMs": 26309,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 26402,
+          "endMs": 26703,
+          "timestampMs": 26553,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 26750,
+          "endMs": 26808,
+          "timestampMs": 26779,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 26866,
+          "endMs": 26936,
+          "timestampMs": 26901,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 26982,
+          "endMs": 27296,
+          "timestampMs": 27139,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 27388,
+          "endMs": 27574,
+          "timestampMs": 27481,
+          "confidence": null
+        },
+        {
+          "text": " basically",
+          "startMs": 27818,
+          "endMs": 28329,
+          "timestampMs": 28074,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 28387,
+          "endMs": 28596,
+          "timestampMs": 28492,
+          "confidence": null
+        },
+        {
+          "text": " mole.",
+          "startMs": 28712,
+          "endMs": 29130,
+          "timestampMs": 28921,
+          "confidence": null
+        },
+        {
+          "text": " When",
+          "startMs": 29513,
+          "endMs": 29664,
+          "timestampMs": 29589,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 29699,
+          "endMs": 29768,
+          "timestampMs": 29734,
+          "confidence": null
+        },
+        {
+          "text": " multiply",
+          "startMs": 29838,
+          "endMs": 30268,
+          "timestampMs": 30053,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 30361,
+          "endMs": 30604,
+          "timestampMs": 30483,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 30651,
+          "endMs": 30767,
+          "timestampMs": 30709,
+          "confidence": null
+        },
+        {
+          "text": " that,",
+          "startMs": 30813,
+          "endMs": 31046,
+          "timestampMs": 30929,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 31069,
+          "endMs": 31138,
+          "timestampMs": 31104,
+          "confidence": null
+        },
+        {
+          "text": " units",
+          "startMs": 31208,
+          "endMs": 31429,
+          "timestampMs": 31319,
+          "confidence": null
+        },
+        {
+          "text": " cancel",
+          "startMs": 31487,
+          "endMs": 31847,
+          "timestampMs": 31667,
+          "confidence": null
+        },
+        {
+          "text": " beautifully",
+          "startMs": 31916,
+          "endMs": 32357,
+          "timestampMs": 32136,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 32392,
+          "endMs": 32462,
+          "timestampMs": 32427,
+          "confidence": null
+        },
+        {
+          "text": " leave",
+          "startMs": 32508,
+          "endMs": 32706,
+          "timestampMs": 32607,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 32741,
+          "endMs": 32810,
+          "timestampMs": 32776,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 32845,
+          "endMs": 32961,
+          "timestampMs": 32903,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 32996,
+          "endMs": 33031,
+          "timestampMs": 33014,
+          "confidence": null
+        },
+        {
+          "text": " pure",
+          "startMs": 33089,
+          "endMs": 33356,
+          "timestampMs": 33223,
+          "confidence": null
+        },
+        {
+          "text": " count.",
+          "startMs": 33414,
+          "endMs": 33890,
+          "timestampMs": 33652,
+          "confidence": null
+        },
+        {
+          "text": " But",
+          "startMs": 34273,
+          "endMs": 34401,
+          "timestampMs": 34337,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 34424,
+          "endMs": 34471,
+          "timestampMs": 34448,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 34505,
+          "endMs": 34575,
+          "timestampMs": 34540,
+          "confidence": null
+        },
+        {
+          "text": " don't",
+          "startMs": 34621,
+          "endMs": 34796,
+          "timestampMs": 34709,
+          "confidence": null
+        },
+        {
+          "text": " track",
+          "startMs": 34819,
+          "endMs": 35051,
+          "timestampMs": 34935,
+          "confidence": null
+        },
+        {
+          "text": " them,",
+          "startMs": 35132,
+          "endMs": 35283,
+          "timestampMs": 35207,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 35306,
+          "endMs": 35376,
+          "timestampMs": 35341,
+          "confidence": null
+        },
+        {
+          "text": " won't",
+          "startMs": 35423,
+          "endMs": 35597,
+          "timestampMs": 35510,
+          "confidence": null
+        },
+        {
+          "text": " notice",
+          "startMs": 35643,
+          "endMs": 35899,
+          "timestampMs": 35771,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 35922,
+          "endMs": 36038,
+          "timestampMs": 35980,
+          "confidence": null
+        },
+        {
+          "text": " something's",
+          "startMs": 36096,
+          "endMs": 36444,
+          "timestampMs": 36270,
+          "confidence": null
+        },
+        {
+          "text": " off.",
+          "startMs": 36502,
+          "endMs": 36816,
+          "timestampMs": 36659,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 36967,
+          "endMs": 37106,
+          "timestampMs": 37037,
+          "confidence": null
+        },
+        {
+          "text": " write",
+          "startMs": 37164,
+          "endMs": 37419,
+          "timestampMs": 37292,
+          "confidence": null
+        },
+        {
+          "text": " units",
+          "startMs": 37501,
+          "endMs": 37756,
+          "timestampMs": 37629,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 37791,
+          "endMs": 37861,
+          "timestampMs": 37826,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 37919,
+          "endMs": 38151,
+          "timestampMs": 38035,
+          "confidence": null
+        },
+        {
+          "text": " single",
+          "startMs": 38197,
+          "endMs": 38464,
+          "timestampMs": 38331,
+          "confidence": null
+        },
+        {
+          "text": " step",
+          "startMs": 38499,
+          "endMs": 38778,
+          "timestampMs": 38639,
+          "confidence": null
+        },
+        {
+          "text": " they're",
+          "startMs": 39393,
+          "endMs": 39602,
+          "timestampMs": 39498,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 39637,
+          "endMs": 39741,
+          "timestampMs": 39689,
+          "confidence": null
+        },
+        {
+          "text": " safety",
+          "startMs": 39799,
+          "endMs": 40159,
+          "timestampMs": 39979,
+          "confidence": null
+        },
+        {
+          "text": " net.",
+          "startMs": 40217,
+          "endMs": 40589,
+          "timestampMs": 40403,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A sample contains 0.75 mol of NaCl. How many formula units does it contain?",
+      "pausePrompt": "Pause: are you finding N or n?",
+      "answerSteps": [
+        "n = 0.75 mol, Nₐ = 6.022 × 10²³ mol⁻¹",
+        "N = n × Nₐ = 0.75 × 6.022 × 10²³",
+        "N = 4.52 × 10²³ formula units"
+      ],
+      "durationInFrames": 1008,
+      "caption": "N = 0.75 × 6.022 × 10²³ = 4.52 × 10²³ formula units.",
+      "voiceover": {
+        "text": "OK, time for you to try one. The question: a sample contains zero-point-seven-five moles of sodium chloride. How many formula units does it contain? Pause now, work it out, then come back when you're ready. So — we've got n equals zero-point-seven-five moles, and Avogadro's number is the usual constant. We want N, so the formula's N equals n times Avogadro's. Substitute the numbers in, and you get about four-point-five-two times ten to the twenty-three formula units. If you got that — you're set for this topic.",
+        "audioFile": "public/audio/Chemistry-Y11-M2-L1B/quick-check.4f6576ffc623.mp3"
+      },
+      "revealDelays": {
+        "pauseBadge": 29,
+        "heading": 48,
+        "diagram": 96,
+        "pausePrompt": 283,
+        "answerStart": 529
+      },
+      "captions": [
+        {
+          "text": "OK,",
+          "startMs": 0,
+          "endMs": 406,
+          "timestampMs": 203,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 453,
+          "endMs": 673,
+          "timestampMs": 563,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 697,
+          "endMs": 766,
+          "timestampMs": 732,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 789,
+          "endMs": 859,
+          "timestampMs": 824,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 894,
+          "endMs": 940,
+          "timestampMs": 917,
+          "confidence": null
+        },
+        {
+          "text": " try",
+          "startMs": 987,
+          "endMs": 1184,
+          "timestampMs": 1086,
+          "confidence": null
+        },
+        {
+          "text": " one.",
+          "startMs": 1254,
+          "endMs": 1498,
+          "timestampMs": 1376,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 1579,
+          "endMs": 1695,
+          "timestampMs": 1637,
+          "confidence": null
+        },
+        {
+          "text": " question:",
+          "startMs": 1753,
+          "endMs": 2276,
+          "timestampMs": 2015,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 2717,
+          "endMs": 2775,
+          "timestampMs": 2746,
+          "confidence": null
+        },
+        {
+          "text": " sample",
+          "startMs": 2891,
+          "endMs": 3274,
+          "timestampMs": 3083,
+          "confidence": null
+        },
+        {
+          "text": " contains",
+          "startMs": 3309,
+          "endMs": 3715,
+          "timestampMs": 3512,
+          "confidence": null
+        },
+        {
+          "text": " zero-point-seven-five",
+          "startMs": 3750,
+          "endMs": 5062,
+          "timestampMs": 4406,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 5132,
+          "endMs": 5526,
+          "timestampMs": 5329,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 5573,
+          "endMs": 5642,
+          "timestampMs": 5608,
+          "confidence": null
+        },
+        {
+          "text": " sodium",
+          "startMs": 5724,
+          "endMs": 6107,
+          "timestampMs": 5916,
+          "confidence": null
+        },
+        {
+          "text": " chloride.",
+          "startMs": 6153,
+          "endMs": 6722,
+          "timestampMs": 6438,
+          "confidence": null
+        },
+        {
+          "text": " How",
+          "startMs": 7163,
+          "endMs": 7303,
+          "timestampMs": 7233,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 7349,
+          "endMs": 7500,
+          "timestampMs": 7425,
+          "confidence": null
+        },
+        {
+          "text": " formula",
+          "startMs": 7570,
+          "endMs": 7941,
+          "timestampMs": 7756,
+          "confidence": null
+        },
+        {
+          "text": " units",
+          "startMs": 8022,
+          "endMs": 8301,
+          "timestampMs": 8162,
+          "confidence": null
+        },
+        {
+          "text": " does",
+          "startMs": 8348,
+          "endMs": 8475,
+          "timestampMs": 8412,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 8522,
+          "endMs": 8580,
+          "timestampMs": 8551,
+          "confidence": null
+        },
+        {
+          "text": " contain?",
+          "startMs": 8615,
+          "endMs": 9160,
+          "timestampMs": 8888,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 9439,
+          "endMs": 9764,
+          "timestampMs": 9602,
+          "confidence": null
+        },
+        {
+          "text": " now,",
+          "startMs": 9810,
+          "endMs": 10101,
+          "timestampMs": 9956,
+          "confidence": null
+        },
+        {
+          "text": " work",
+          "startMs": 10182,
+          "endMs": 10414,
+          "timestampMs": 10298,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 10460,
+          "endMs": 10530,
+          "timestampMs": 10495,
+          "confidence": null
+        },
+        {
+          "text": " out,",
+          "startMs": 10577,
+          "endMs": 10867,
+          "timestampMs": 10722,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 10948,
+          "endMs": 11122,
+          "timestampMs": 11035,
+          "confidence": null
+        },
+        {
+          "text": " come",
+          "startMs": 11192,
+          "endMs": 11378,
+          "timestampMs": 11285,
+          "confidence": null
+        },
+        {
+          "text": " back",
+          "startMs": 11412,
+          "endMs": 11575,
+          "timestampMs": 11494,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 11621,
+          "endMs": 11738,
+          "timestampMs": 11680,
+          "confidence": null
+        },
+        {
+          "text": " you're",
+          "startMs": 11772,
+          "endMs": 11912,
+          "timestampMs": 11842,
+          "confidence": null
+        },
+        {
+          "text": " ready.",
+          "startMs": 11935,
+          "endMs": 12295,
+          "timestampMs": 12115,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 12991,
+          "endMs": 13200,
+          "timestampMs": 13096,
+          "confidence": null
+        },
+        {
+          "text": " we've",
+          "startMs": 13537,
+          "endMs": 13711,
+          "timestampMs": 13624,
+          "confidence": null
+        },
+        {
+          "text": " got",
+          "startMs": 13734,
+          "endMs": 13839,
+          "timestampMs": 13787,
+          "confidence": null
+        },
+        {
+          "text": " n",
+          "startMs": 13897,
+          "endMs": 14013,
+          "timestampMs": 13955,
+          "confidence": null
+        },
+        {
+          "text": " equals",
+          "startMs": 14094,
+          "endMs": 14454,
+          "timestampMs": 14274,
+          "confidence": null
+        },
+        {
+          "text": " zero-point-seven-five",
+          "startMs": 14501,
+          "endMs": 15836,
+          "timestampMs": 15169,
+          "confidence": null
+        },
+        {
+          "text": " moles,",
+          "startMs": 15905,
+          "endMs": 16567,
+          "timestampMs": 16236,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16718,
+          "endMs": 16858,
+          "timestampMs": 16788,
+          "confidence": null
+        },
+        {
+          "text": " Avogadro's",
+          "startMs": 16892,
+          "endMs": 17450,
+          "timestampMs": 17171,
+          "confidence": null
+        },
+        {
+          "text": " number",
+          "startMs": 17508,
+          "endMs": 17810,
+          "timestampMs": 17659,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 17868,
+          "endMs": 17937,
+          "timestampMs": 17903,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17984,
+          "endMs": 18053,
+          "timestampMs": 18019,
+          "confidence": null
+        },
+        {
+          "text": " usual",
+          "startMs": 18123,
+          "endMs": 18367,
+          "timestampMs": 18245,
+          "confidence": null
+        },
+        {
+          "text": " constant.",
+          "startMs": 18436,
+          "endMs": 18959,
+          "timestampMs": 18697,
+          "confidence": null
+        },
+        {
+          "text": " We",
+          "startMs": 19168,
+          "endMs": 19296,
+          "timestampMs": 19232,
+          "confidence": null
+        },
+        {
+          "text": " want",
+          "startMs": 19342,
+          "endMs": 19528,
+          "timestampMs": 19435,
+          "confidence": null
+        },
+        {
+          "text": " N,",
+          "startMs": 19597,
+          "endMs": 19876,
+          "timestampMs": 19737,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 19923,
+          "endMs": 20050,
+          "timestampMs": 19987,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20097,
+          "endMs": 20166,
+          "timestampMs": 20132,
+          "confidence": null
+        },
+        {
+          "text": " formula's",
+          "startMs": 20248,
+          "endMs": 20735,
+          "timestampMs": 20492,
+          "confidence": null
+        },
+        {
+          "text": " N",
+          "startMs": 20863,
+          "endMs": 21037,
+          "timestampMs": 20950,
+          "confidence": null
+        },
+        {
+          "text": " equals",
+          "startMs": 21211,
+          "endMs": 21560,
+          "timestampMs": 21386,
+          "confidence": null
+        },
+        {
+          "text": " n",
+          "startMs": 21629,
+          "endMs": 21838,
+          "timestampMs": 21734,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 21908,
+          "endMs": 22210,
+          "timestampMs": 22059,
+          "confidence": null
+        },
+        {
+          "text": " Avogadro's.",
+          "startMs": 22245,
+          "endMs": 23069,
+          "timestampMs": 22657,
+          "confidence": null
+        },
+        {
+          "text": " Substitute",
+          "startMs": 23313,
+          "endMs": 23823,
+          "timestampMs": 23568,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 23847,
+          "endMs": 23916,
+          "timestampMs": 23882,
+          "confidence": null
+        },
+        {
+          "text": " numbers",
+          "startMs": 23951,
+          "endMs": 24207,
+          "timestampMs": 24079,
+          "confidence": null
+        },
+        {
+          "text": " in,",
+          "startMs": 24276,
+          "endMs": 24578,
+          "timestampMs": 24427,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 24822,
+          "endMs": 24961,
+          "timestampMs": 24892,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 24996,
+          "endMs": 25065,
+          "timestampMs": 25031,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 25123,
+          "endMs": 25228,
+          "timestampMs": 25176,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 25263,
+          "endMs": 25507,
+          "timestampMs": 25385,
+          "confidence": null
+        },
+        {
+          "text": " four-point-five-two",
+          "startMs": 25623,
+          "endMs": 26842,
+          "timestampMs": 26233,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 26923,
+          "endMs": 27225,
+          "timestampMs": 27074,
+          "confidence": null
+        },
+        {
+          "text": " ten",
+          "startMs": 27283,
+          "endMs": 27504,
+          "timestampMs": 27394,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 27573,
+          "endMs": 27643,
+          "timestampMs": 27608,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 27701,
+          "endMs": 27771,
+          "timestampMs": 27736,
+          "confidence": null
+        },
+        {
+          "text": " twenty-three",
+          "startMs": 27817,
+          "endMs": 28339,
+          "timestampMs": 28078,
+          "confidence": null
+        },
+        {
+          "text": " formula",
+          "startMs": 28421,
+          "endMs": 28850,
+          "timestampMs": 28636,
+          "confidence": null
+        },
+        {
+          "text": " units.",
+          "startMs": 28932,
+          "endMs": 29338,
+          "timestampMs": 29135,
+          "confidence": null
+        },
+        {
+          "text": " If",
+          "startMs": 29547,
+          "endMs": 29651,
+          "timestampMs": 29599,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 29686,
+          "endMs": 29756,
+          "timestampMs": 29721,
+          "confidence": null
+        },
+        {
+          "text": " got",
+          "startMs": 29849,
+          "endMs": 30000,
+          "timestampMs": 29925,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 30046,
+          "endMs": 30267,
+          "timestampMs": 30157,
+          "confidence": null
+        },
+        {
+          "text": " you're",
+          "startMs": 30615,
+          "endMs": 30789,
+          "timestampMs": 30702,
+          "confidence": null
+        },
+        {
+          "text": " set",
+          "startMs": 30824,
+          "endMs": 31021,
+          "timestampMs": 30923,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 31079,
+          "endMs": 31161,
+          "timestampMs": 31120,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 31196,
+          "endMs": 31335,
+          "timestampMs": 31266,
+          "confidence": null
+        },
+        {
+          "text": " topic.",
+          "startMs": 31393,
+          "endMs": 32089,
+          "timestampMs": 31741,
+          "confidence": null
+        }
+      ],
+      "recapSeed": "0.75 mol × Nₐ = 4.52 × 10²³ formula units.",
+      "syllabusDotPointIndex": 1
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "The Mole Concept, Key Ideas",
+      "finalPrompt": "Before every question: N or n?",
+      "points": [
+        "The mole is a counting unit: 1 mol = 6.022 × 10²³ particles (Avogadro's number, Nₐ).",
+        "Capital N = number of particles (no units). Lowercase n = amount in moles.",
+        "Formula: N = n × Nₐ. Know any two, rearrange to find the third.",
+        "Units always cancel: mol × mol⁻¹ gives a dimensionless particle count.",
+        "Nₐ was defined using carbon-12 so molar mass (g/mol) equals atomic mass from the periodic table."
+      ],
+      "durationInFrames": 1356,
+      "caption": "1 mol = 6.022 × 10²³. Use N = n × Nₐ. Units always cancel.",
+      "voiceover": {
+        "text": "OK, let's lock in what we've covered. Five things to take away. First, the mole is just a counting unit — one mole equals Avogadro's number of particles. Next, don't confuse capital N with lowercase n. Capital N is the count of particles, no units. Lowercase n is the amount in moles. The formula that links them is N equals n times Avogadro's, and you can rearrange it to find any of the three quantities. The units always cancel beautifully — moles times moles to the minus one leaves you with a pure count. And the reason the whole system works: Avogadro's number was defined using carbon-twelve, so the molar mass in grams per mole equals the atomic mass straight off the periodic table. That's the foundation the rest of the module builds on.",
+        "audioFile": "public/audio/Chemistry-Y11-M2-L1B/summary.144c2cc7dd7d.mp3"
+      },
+      "revealDelays": {
+        "heading": 111,
+        "diagram": 157,
+        "takeawaysStart": 157,
+        "takeawayInterval": 224,
+        "finalPrompt": 1114,
+        "takeawayAts": [
+          111,
+          275,
+          498,
+          714,
+          1051
+        ]
+      },
+      "captions": [
+        {
+          "text": "OK,",
+          "startMs": 0,
+          "endMs": 360,
+          "timestampMs": 180,
+          "confidence": null
+        },
+        {
+          "text": " let's",
+          "startMs": 406,
+          "endMs": 557,
+          "timestampMs": 482,
+          "confidence": null
+        },
+        {
+          "text": " lock",
+          "startMs": 604,
+          "endMs": 743,
+          "timestampMs": 674,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 801,
+          "endMs": 859,
+          "timestampMs": 830,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 894,
+          "endMs": 998,
+          "timestampMs": 946,
+          "confidence": null
+        },
+        {
+          "text": " we've",
+          "startMs": 1033,
+          "endMs": 1184,
+          "timestampMs": 1108,
+          "confidence": null
+        },
+        {
+          "text": " covered.",
+          "startMs": 1207,
+          "endMs": 1579,
+          "timestampMs": 1393,
+          "confidence": null
+        },
+        {
+          "text": " Five",
+          "startMs": 1788,
+          "endMs": 2067,
+          "timestampMs": 1928,
+          "confidence": null
+        },
+        {
+          "text": " things",
+          "startMs": 2101,
+          "endMs": 2299,
+          "timestampMs": 2200,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 2334,
+          "endMs": 2392,
+          "timestampMs": 2363,
+          "confidence": null
+        },
+        {
+          "text": " take",
+          "startMs": 2450,
+          "endMs": 2635,
+          "timestampMs": 2543,
+          "confidence": null
+        },
+        {
+          "text": " away.",
+          "startMs": 2670,
+          "endMs": 2984,
+          "timestampMs": 2827,
+          "confidence": null
+        },
+        {
+          "text": " First,",
+          "startMs": 3193,
+          "endMs": 3553,
+          "timestampMs": 3373,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3576,
+          "endMs": 3657,
+          "timestampMs": 3617,
+          "confidence": null
+        },
+        {
+          "text": " mole",
+          "startMs": 3704,
+          "endMs": 3936,
+          "timestampMs": 3820,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 3959,
+          "endMs": 4005,
+          "timestampMs": 3982,
+          "confidence": null
+        },
+        {
+          "text": " just",
+          "startMs": 4052,
+          "endMs": 4214,
+          "timestampMs": 4133,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4249,
+          "endMs": 4272,
+          "timestampMs": 4261,
+          "confidence": null
+        },
+        {
+          "text": " counting",
+          "startMs": 4331,
+          "endMs": 4679,
+          "timestampMs": 4505,
+          "confidence": null
+        },
+        {
+          "text": " unit",
+          "startMs": 4748,
+          "endMs": 4923,
+          "timestampMs": 4836,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 5387,
+          "endMs": 5584,
+          "timestampMs": 5486,
+          "confidence": null
+        },
+        {
+          "text": " mole",
+          "startMs": 5631,
+          "endMs": 5875,
+          "timestampMs": 5753,
+          "confidence": null
+        },
+        {
+          "text": " equals",
+          "startMs": 5898,
+          "endMs": 6130,
+          "timestampMs": 6014,
+          "confidence": null
+        },
+        {
+          "text": " Avogadro's",
+          "startMs": 6200,
+          "endMs": 6769,
+          "timestampMs": 6485,
+          "confidence": null
+        },
+        {
+          "text": " number",
+          "startMs": 6827,
+          "endMs": 7024,
+          "timestampMs": 6926,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 7070,
+          "endMs": 7117,
+          "timestampMs": 7094,
+          "confidence": null
+        },
+        {
+          "text": " particles.",
+          "startMs": 7175,
+          "endMs": 7837,
+          "timestampMs": 7506,
+          "confidence": null
+        },
+        {
+          "text": " Next,",
+          "startMs": 8220,
+          "endMs": 8557,
+          "timestampMs": 8389,
+          "confidence": null
+        },
+        {
+          "text": " don't",
+          "startMs": 8592,
+          "endMs": 8789,
+          "timestampMs": 8691,
+          "confidence": null
+        },
+        {
+          "text": " confuse",
+          "startMs": 8824,
+          "endMs": 9137,
+          "timestampMs": 8981,
+          "confidence": null
+        },
+        {
+          "text": " capital",
+          "startMs": 9172,
+          "endMs": 9462,
+          "timestampMs": 9317,
+          "confidence": null
+        },
+        {
+          "text": " N",
+          "startMs": 9532,
+          "endMs": 9579,
+          "timestampMs": 9556,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 9613,
+          "endMs": 9718,
+          "timestampMs": 9666,
+          "confidence": null
+        },
+        {
+          "text": " lowercase",
+          "startMs": 9776,
+          "endMs": 10368,
+          "timestampMs": 10072,
+          "confidence": null
+        },
+        {
+          "text": " n.",
+          "startMs": 10391,
+          "endMs": 10728,
+          "timestampMs": 10560,
+          "confidence": null
+        },
+        {
+          "text": " Capital",
+          "startMs": 11007,
+          "endMs": 11378,
+          "timestampMs": 11192,
+          "confidence": null
+        },
+        {
+          "text": " N",
+          "startMs": 11459,
+          "endMs": 11506,
+          "timestampMs": 11483,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 11564,
+          "endMs": 11622,
+          "timestampMs": 11593,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11668,
+          "endMs": 11738,
+          "timestampMs": 11703,
+          "confidence": null
+        },
+        {
+          "text": " count",
+          "startMs": 11808,
+          "endMs": 12086,
+          "timestampMs": 11947,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 12133,
+          "endMs": 12191,
+          "timestampMs": 12162,
+          "confidence": null
+        },
+        {
+          "text": " particles,",
+          "startMs": 12249,
+          "endMs": 12806,
+          "timestampMs": 12528,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 12922,
+          "endMs": 13131,
+          "timestampMs": 13027,
+          "confidence": null
+        },
+        {
+          "text": " units.",
+          "startMs": 13247,
+          "endMs": 13735,
+          "timestampMs": 13491,
+          "confidence": null
+        },
+        {
+          "text": " Lowercase",
+          "startMs": 14118,
+          "endMs": 14757,
+          "timestampMs": 14438,
+          "confidence": null
+        },
+        {
+          "text": " n",
+          "startMs": 14780,
+          "endMs": 14815,
+          "timestampMs": 14798,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 14861,
+          "endMs": 14931,
+          "timestampMs": 14896,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14966,
+          "endMs": 15035,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " amount",
+          "startMs": 15070,
+          "endMs": 15314,
+          "timestampMs": 15192,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 15372,
+          "endMs": 15453,
+          "timestampMs": 15413,
+          "confidence": null
+        },
+        {
+          "text": " moles.",
+          "startMs": 15523,
+          "endMs": 16080,
+          "timestampMs": 15801,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 16405,
+          "endMs": 16521,
+          "timestampMs": 16463,
+          "confidence": null
+        },
+        {
+          "text": " formula",
+          "startMs": 16603,
+          "endMs": 16986,
+          "timestampMs": 16795,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 17032,
+          "endMs": 17148,
+          "timestampMs": 17090,
+          "confidence": null
+        },
+        {
+          "text": " links",
+          "startMs": 17241,
+          "endMs": 17520,
+          "timestampMs": 17380,
+          "confidence": null
+        },
+        {
+          "text": " them",
+          "startMs": 17566,
+          "endMs": 17706,
+          "timestampMs": 17636,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 17798,
+          "endMs": 17973,
+          "timestampMs": 17886,
+          "confidence": null
+        },
+        {
+          "text": " N",
+          "startMs": 18123,
+          "endMs": 18298,
+          "timestampMs": 18211,
+          "confidence": null
+        },
+        {
+          "text": " equals",
+          "startMs": 18356,
+          "endMs": 18681,
+          "timestampMs": 18519,
+          "confidence": null
+        },
+        {
+          "text": " n",
+          "startMs": 18774,
+          "endMs": 18925,
+          "timestampMs": 18850,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 18994,
+          "endMs": 19284,
+          "timestampMs": 19139,
+          "confidence": null
+        },
+        {
+          "text": " Avogadro's,",
+          "startMs": 19343,
+          "endMs": 20004,
+          "timestampMs": 19674,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 20039,
+          "endMs": 20155,
+          "timestampMs": 20097,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 20202,
+          "endMs": 20271,
+          "timestampMs": 20237,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 20318,
+          "endMs": 20434,
+          "timestampMs": 20376,
+          "confidence": null
+        },
+        {
+          "text": " rearrange",
+          "startMs": 20515,
+          "endMs": 21038,
+          "timestampMs": 20777,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 21072,
+          "endMs": 21142,
+          "timestampMs": 21107,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 21177,
+          "endMs": 21235,
+          "timestampMs": 21206,
+          "confidence": null
+        },
+        {
+          "text": " find",
+          "startMs": 21305,
+          "endMs": 21514,
+          "timestampMs": 21410,
+          "confidence": null
+        },
+        {
+          "text": " any",
+          "startMs": 21641,
+          "endMs": 21908,
+          "timestampMs": 21775,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 21966,
+          "endMs": 22024,
+          "timestampMs": 21995,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22071,
+          "endMs": 22140,
+          "timestampMs": 22106,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 22198,
+          "endMs": 22419,
+          "timestampMs": 22309,
+          "confidence": null
+        },
+        {
+          "text": " quantities.",
+          "startMs": 22466,
+          "endMs": 23104,
+          "timestampMs": 22785,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 23615,
+          "endMs": 23731,
+          "timestampMs": 23673,
+          "confidence": null
+        },
+        {
+          "text": " units",
+          "startMs": 23812,
+          "endMs": 24068,
+          "timestampMs": 23940,
+          "confidence": null
+        },
+        {
+          "text": " always",
+          "startMs": 24137,
+          "endMs": 24497,
+          "timestampMs": 24317,
+          "confidence": null
+        },
+        {
+          "text": " cancel",
+          "startMs": 24555,
+          "endMs": 24892,
+          "timestampMs": 24724,
+          "confidence": null
+        },
+        {
+          "text": " beautifully",
+          "startMs": 24950,
+          "endMs": 25438,
+          "timestampMs": 25194,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 25740,
+          "endMs": 26146,
+          "timestampMs": 25943,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 26216,
+          "endMs": 26622,
+          "timestampMs": 26419,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 26703,
+          "endMs": 27017,
+          "timestampMs": 26860,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 27063,
+          "endMs": 27121,
+          "timestampMs": 27092,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 27179,
+          "endMs": 27249,
+          "timestampMs": 27214,
+          "confidence": null
+        },
+        {
+          "text": " minus",
+          "startMs": 27295,
+          "endMs": 27644,
+          "timestampMs": 27470,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 27725,
+          "endMs": 27922,
+          "timestampMs": 27824,
+          "confidence": null
+        },
+        {
+          "text": " leaves",
+          "startMs": 27969,
+          "endMs": 28236,
+          "timestampMs": 28103,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 28294,
+          "endMs": 28398,
+          "timestampMs": 28346,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 28514,
+          "endMs": 28677,
+          "timestampMs": 28596,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 28700,
+          "endMs": 28735,
+          "timestampMs": 28718,
+          "confidence": null
+        },
+        {
+          "text": " pure",
+          "startMs": 28793,
+          "endMs": 29083,
+          "timestampMs": 28938,
+          "confidence": null
+        },
+        {
+          "text": " count.",
+          "startMs": 29153,
+          "endMs": 29617,
+          "timestampMs": 29385,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 30058,
+          "endMs": 30186,
+          "timestampMs": 30122,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 30233,
+          "endMs": 30302,
+          "timestampMs": 30268,
+          "confidence": null
+        },
+        {
+          "text": " reason",
+          "startMs": 30384,
+          "endMs": 30651,
+          "timestampMs": 30518,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 30697,
+          "endMs": 30767,
+          "timestampMs": 30732,
+          "confidence": null
+        },
+        {
+          "text": " whole",
+          "startMs": 30801,
+          "endMs": 30964,
+          "timestampMs": 30883,
+          "confidence": null
+        },
+        {
+          "text": " system",
+          "startMs": 30999,
+          "endMs": 31312,
+          "timestampMs": 31156,
+          "confidence": null
+        },
+        {
+          "text": " works:",
+          "startMs": 31382,
+          "endMs": 31951,
+          "timestampMs": 31667,
+          "confidence": null
+        },
+        {
+          "text": " Avogadro's",
+          "startMs": 32125,
+          "endMs": 32694,
+          "timestampMs": 32410,
+          "confidence": null
+        },
+        {
+          "text": " number",
+          "startMs": 32740,
+          "endMs": 33019,
+          "timestampMs": 32880,
+          "confidence": null
+        },
+        {
+          "text": " was",
+          "startMs": 33065,
+          "endMs": 33170,
+          "timestampMs": 33118,
+          "confidence": null
+        },
+        {
+          "text": " defined",
+          "startMs": 33216,
+          "endMs": 33553,
+          "timestampMs": 33385,
+          "confidence": null
+        },
+        {
+          "text": " using",
+          "startMs": 33634,
+          "endMs": 33832,
+          "timestampMs": 33733,
+          "confidence": null
+        },
+        {
+          "text": " carbon-twelve,",
+          "startMs": 33901,
+          "endMs": 34888,
+          "timestampMs": 34395,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 35213,
+          "endMs": 35341,
+          "timestampMs": 35277,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 35399,
+          "endMs": 35469,
+          "timestampMs": 35434,
+          "confidence": null
+        },
+        {
+          "text": " molar",
+          "startMs": 35538,
+          "endMs": 35863,
+          "timestampMs": 35701,
+          "confidence": null
+        },
+        {
+          "text": " mass",
+          "startMs": 35898,
+          "endMs": 36096,
+          "timestampMs": 35997,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 36142,
+          "endMs": 36200,
+          "timestampMs": 36171,
+          "confidence": null
+        },
+        {
+          "text": " grams",
+          "startMs": 36270,
+          "endMs": 36606,
+          "timestampMs": 36438,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 36676,
+          "endMs": 36815,
+          "timestampMs": 36746,
+          "confidence": null
+        },
+        {
+          "text": " mole",
+          "startMs": 36873,
+          "endMs": 37303,
+          "timestampMs": 37088,
+          "confidence": null
+        },
+        {
+          "text": " equals",
+          "startMs": 37512,
+          "endMs": 37860,
+          "timestampMs": 37686,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 37895,
+          "endMs": 37965,
+          "timestampMs": 37930,
+          "confidence": null
+        },
+        {
+          "text": " atomic",
+          "startMs": 38011,
+          "endMs": 38406,
+          "timestampMs": 38209,
+          "confidence": null
+        },
+        {
+          "text": " mass",
+          "startMs": 38487,
+          "endMs": 38719,
+          "timestampMs": 38603,
+          "confidence": null
+        },
+        {
+          "text": " straight",
+          "startMs": 38778,
+          "endMs": 39103,
+          "timestampMs": 38941,
+          "confidence": null
+        },
+        {
+          "text": " off",
+          "startMs": 39137,
+          "endMs": 39254,
+          "timestampMs": 39195,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 39300,
+          "endMs": 39370,
+          "timestampMs": 39335,
+          "confidence": null
+        },
+        {
+          "text": " periodic",
+          "startMs": 39428,
+          "endMs": 39939,
+          "timestampMs": 39683,
+          "confidence": null
+        },
+        {
+          "text": " table.",
+          "startMs": 39997,
+          "endMs": 40484,
+          "timestampMs": 40241,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 40995,
+          "endMs": 41274,
+          "timestampMs": 41135,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 41320,
+          "endMs": 41390,
+          "timestampMs": 41355,
+          "confidence": null
+        },
+        {
+          "text": " foundation",
+          "startMs": 41448,
+          "endMs": 41935,
+          "timestampMs": 41692,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 41970,
+          "endMs": 42040,
+          "timestampMs": 42005,
+          "confidence": null
+        },
+        {
+          "text": " rest",
+          "startMs": 42086,
+          "endMs": 42284,
+          "timestampMs": 42185,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 42330,
+          "endMs": 42388,
+          "timestampMs": 42359,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 42435,
+          "endMs": 42504,
+          "timestampMs": 42470,
+          "confidence": null
+        },
+        {
+          "text": " module",
+          "startMs": 42551,
+          "endMs": 42853,
+          "timestampMs": 42702,
+          "confidence": null
+        },
+        {
+          "text": " builds",
+          "startMs": 42899,
+          "endMs": 43166,
+          "timestampMs": 43033,
+          "confidence": null
+        },
+        {
+          "text": " on.",
+          "startMs": 43224,
+          "endMs": 43700,
+          "timestampMs": 43462,
+          "confidence": null
+        }
+      ],
+      "recapSeed": "The mole bridges atoms to grams via Nₐ and the periodic table.",
+      "confidenceCheck": "Solve problems using the mole concept and Avogadro's constant.",
+      "syllabusDotPointIndex": 1
+    }
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": [
+    "CH11-9",
+    "CH11/12-4",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "How are measurements made in chemistry?",
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today: the mole concept in action, solving real HSC questions. Let's go.",
+    "audioFile": "public/audio/Chemistry-Y11-M2-L1B/intro.95b0644c2d24.mp3"
+  }
+}

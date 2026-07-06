@@ -1,0 +1,222 @@
+{
+  "title": "pH of Weak Acids: Ka, Kb and ICE Tables",
+  "subtitle": "Solving the equilibrium to find [H⁺]",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 9",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6: Acid/Base Reactions",
+  "syllabusDotPoints": [
+    "calculate pH, pOH, hydrogen ion concentration ([H⁺]) and hydroxide ion concentration ([OH⁻]) for a range of solutions (ACSCH102)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "CH12-13",
+    "CH11/12-2",
+    "CH11/12-5",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "What is the role of water in solutions of acids and bases?",
+  "lessonIntent": "Students can set up and solve ICE tables for weak acids and bases, check the simplifying assumption, and find Ka from pH.",
+  "examSkill": "Build the ICE table, apply Ka = x²/(c−x) with the x ≪ c approximation, verify the 5% rule, and use Kb = Kw/Ka and pH = 14 − pOH for bases.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the pH of weak acids, with Ka, Kb, and ICE tables. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "pH of Weak Acids: Ka, Kb and ICE Tables (Year 12 Chemistry, Module 6, Lesson 9)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two painkillers, two Ka values",
+      "body": "Aspirin has a Ka of 3.0 × 10⁻⁴; ibuprofen's is 1.3 × 10⁻⁵, ten times smaller.",
+      "callout": "Same dose, same fluid. Which releases more H⁺, and how do you find out?",
+      "image": "aspirinIbuprofenKa",
+      "durationInFrames": 660,
+      "caption": "Different Ka values mean different [H⁺]; only an ICE table reveals how much.",
+      "voiceover": {
+        "text": "OK, here's a question with a real pharmaceutical answer. Aspirin and ibuprofen are both weak acids, but aspirin has an acidity constant, Ka, of three times ten to the minus four, while ibuprofen's is ten times smaller. Dissolve the same dose of each in the same volume of stomach fluid, and which one releases more hydrogen ions? The answer matters for how each drug behaves in your body. But here's the catch, with a weak acid you can't just say hydrogen ion concentration equals the acid concentration, because most of it stays un-ionised. The amount that ionises depends on both Ka and concentration at once. So you need a proper method to solve the equilibrium, and that method is the ICE table."
+      }
+    },
+    {
+      "id": "concept-ice",
+      "type": "concept",
+      "heading": "Why weak acids need an ICE table",
+      "body": "A weak acid sits at equilibrium, so you track Initial, Change and Equilibrium concentrations.",
+      "bullets": [
+        {"text": "Initial: the acid at c, with H⁺ and A⁻ both starting at zero."},
+        {"text": "Change: the acid loses x, while H⁺ and A⁻ each gain x."},
+        {"text": "Equilibrium: acid is (c − x), and H⁺ and A⁻ are each x."}
+      ],
+      "secondary": "Substitute into Ka = [H⁺][A⁻]/[HA] to get Ka = x²/(c − x), then solve for x, which is [H⁺].",
+      "callout": "Treating a weak acid as strong can overstate [H⁺] by 100 times.",
+      "durationInFrames": 1170,
+      "caption": "ICE rows: c/0/0 → −x/+x/+x → (c−x)/x/x; Ka = x²/(c−x).",
+      "voiceover": {
+        "text": "Let's see why a weak acid needs more than a one-liner. With a strong acid, ionisation is complete, so hydrogen ion concentration just equals the acid concentration. With a weak acid, most molecules stay intact, so we have to solve the equilibrium, and the tidy way to do that is an ICE table. ICE stands for Initial, Change, and Equilibrium. In the initial row, the acid is at its concentration c, and both hydrogen ion and the conjugate base start at zero. In the change row, the acid loses some amount x, while hydrogen ion and the conjugate base each gain x. In the equilibrium row, the acid is c minus x, and the two products are each x. Now substitute into the Ka expression, hydrogen ion times conjugate base over the acid, which gives Ka equals x squared over c minus x. Solve that for x, and x is your hydrogen ion concentration. Skip this and treat a weak acid as strong, and you can overstate the hydrogen ions by a factor of a hundred."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": ["", "[HA]", "[H⁺]", "[A⁻]"],
+        "rows": [
+          ["Initial", "c", "0", "0"],
+          ["Change", "−x", "+x", "+x"],
+          ["Equilibrium", "c − x", "x", "x"]
+        ]
+      }
+    },
+    {
+      "id": "concept-assumption",
+      "type": "concept",
+      "heading": "The shortcut, and when it breaks",
+      "body": "If very little ionises, c − x is almost c, which turns the algebra into a simple square root.",
+      "bullets": [
+        {"text": "Assume x ≪ c, so Ka ≈ x²/c, giving x = √(Ka × c)."},
+        {"text": "It's valid when Ka ÷ c is below 0.0025, meaning under 5% ionises."},
+        {"text": "If it fails, solve the full quadratic and take the positive root."}
+      ],
+      "secondary": "Always check the assumption AFTER using it: work out x ÷ c × 100, and if it's 5% or more, redo it with the quadratic.",
+      "callout": "Check the 5% rule every time; writing 'valid' without checking loses marks.",
+      "durationInFrames": 1170,
+      "caption": "x = √(Ka × c) when Ka/c < 0.0025; otherwise use the quadratic.",
+      "voiceover": {
+        "text": "Solving x squared over c minus x exactly needs the quadratic formula, but there's a shortcut that works most of the time. If only a little acid ionises, then c minus x is almost the same as c, so Ka becomes roughly x squared over c, and x is just the square root of Ka times c. One clean step. The shortcut is valid when Ka divided by c is below nought-point-zero-zero-two-five, which is the same as saying less than five percent of the acid ionises. If that fails, you solve the full quadratic, x squared plus Ka x minus Ka c equals zero, taking the positive root. The discipline that earns marks, always check the assumption after you use it, not before. Calculate x, then work out x over c times a hundred. If that's five percent or more, the shortcut wasn't valid, so go back and use the quadratic. Writing assumption valid without actually checking is a methodology error."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The terms you need",
+      "bullets": [
+        {"text": "Ka: the acid constant, [H⁺][A⁻]/[HA]; bigger Ka means a stronger acid."},
+        {"text": "Kb: the base constant, [BH⁺][OH⁻]/[B]."},
+        {"text": "ICE table: tracks Initial, Change and Equilibrium concentrations."},
+        {"text": "Conjugate link: Ka × Kb = Kw = 1.0 × 10⁻¹⁴ at 25 °C."}
+      ],
+      "callout": "Ka × Kb = Kw only for a genuine conjugate pair, not any acid and base.",
+      "durationInFrames": 1020,
+      "caption": "Ka, Kb, ICE table, and Ka × Kb = Kw for a conjugate pair.",
+      "voiceover": {
+        "text": "Quick vocabulary. Ka is the acid dissociation constant, hydrogen ion times conjugate base over the un-ionised acid, and a bigger Ka means a stronger acid. Kb is the base dissociation constant, the protonated base times hydroxide over the base. The ICE table, as we said, tracks Initial, Change, and Equilibrium concentrations. And there's a beautiful link for a conjugate pair, Ka times Kb equals Kw, which is one times ten to the minus fourteen at twenty-five degrees. So if you know the Ka of an acid, you instantly get the Kb of its conjugate base by dividing Kw by Ka. One warning, that relationship only holds for a true conjugate pair, the acid and its own conjugate base, not for any random acid and base you happen to pick."
+      }
+    },
+    {
+      "id": "concept-base",
+      "type": "concept",
+      "heading": "Weak bases run the same way",
+      "body": "A weak base uses an identical ICE table, just with OH⁻ and Kb, then converts through pOH.",
+      "bullets": [
+        {"text": "B + H₂O ⇌ BH⁺ + OH⁻, with Kb = [BH⁺][OH⁻]/[B]."},
+        {"text": "If Kb/c < 0.0025, then [OH⁻] = √(Kb × c)."},
+        {"text": "Finish via pOH = −log[OH⁻], then pH = 14 − pOH."}
+      ],
+      "secondary": "For a conjugate base like acetate, get Kb from Kw ÷ Ka first. Acetate's Kb is 5.6 × 10⁻¹⁰, so its solution is only mildly basic.",
+      "callout": "Never write pH = −log[OH⁻]; that gives an acidic answer for a base.",
+      "durationInFrames": 1140,
+      "caption": "Weak base: [OH⁻] = √(Kb × c), then pOH, then pH = 14 − pOH.",
+      "voiceover": {
+        "text": "Weak bases work exactly the same way, with three small swaps. The equilibrium is base plus water in balance with the protonated base plus hydroxide, and the constant is Kb. If Kb over c is below nought-point-zero-zero-two-five, then hydroxide concentration is the square root of Kb times c. The only extra step is the finish, because you've found hydroxide, not hydronium, so take pOH as minus the log of hydroxide, then convert with pH equals fourteen minus pOH. If your base is a conjugate base, like the acetate ion, first get its Kb from Kw divided by the parent acid's Ka. For acetate that's about five-point-six times ten to the minus ten, which is tiny, so a sodium acetate solution comes out only mildly basic. And the recurring trap, never write pH equals minus the log of hydroxide directly, because that hands you an acidic number for a base."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "pH of a weak acid",
+      "question": "Find the pH of 0.250 mol L⁻¹ acetic acid (CH₃COOH, Ka = 1.8 × 10⁻⁵) at 25 °C, with an assumption check.",
+      "coachNote": "Pre-check Ka/c, use the square root, then verify under 5%.",
+      "steps": [
+        "Check: Ka ÷ c = 1.8 × 10⁻⁵ ÷ 0.250 = 7.2 × 10⁻⁵, well below 0.0025, so the shortcut is OK",
+        "x = √(Ka × c) = √(1.8 × 10⁻⁵ × 0.250) = √(4.5 × 10⁻⁶) = 2.12 × 10⁻³ mol L⁻¹",
+        "Verify ionisation = (2.12 × 10⁻³ ÷ 0.250) × 100 = 0.85%, under 5%, valid",
+        "pH = −log(2.12 × 10⁻³) = 2.67",
+        "Answer: pH = 2.67 (far above the wrong 'strong acid' value of 0.60) ✓"
+      ],
+      "durationInFrames": 1350,
+      "caption": "x = √(Ka × c) = 2.12 × 10⁻³ mol L⁻¹; pH = 2.67.",
+      "voiceover": {
+        "text": "Let's calculate one. Find the pH of nought-point-two-five molar acetic acid, with a Ka of one-point-eight times ten to the minus five. Step one, pre-check, Ka over c is one-point-eight times ten to the minus five over nought-point-two-five, about seven times ten to the minus five, which is well below nought-point-zero-zero-two-five, so the shortcut should be fine. Step two, x equals the square root of Ka times c, the square root of one-point-eight times ten to the minus five times nought-point-two-five, which is the square root of four-point-five times ten to the minus six, giving two-point-one-two times ten to the minus three. Step three, verify, that's nought-point-eight-five percent ionised, comfortably under five, so the assumption holds. Step four, pH is minus the log of two-point-one-two times ten to the minus three, which is two-point-six-seven. Notice if you'd wrongly treated it as a strong acid, you'd have got pH nought-point-six. Treating weak as strong is a huge error."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Conjugate base, and Ka from pH",
+      "question": "(a) Find Kb of acetate, then pH of 0.250 mol L⁻¹ sodium acetate. (b) A 0.100 mol L⁻¹ weak acid reads pH 2.87; find Ka.",
+      "coachNote": "Use Kb = Kw/Ka, then the base route. For Ka, use [H⁺]²/(c − [H⁺]).",
+      "steps": [
+        "(a) Kb(CH₃COO⁻) = Kw ÷ Ka = (1.0 × 10⁻¹⁴) ÷ (1.8 × 10⁻⁵) = 5.6 × 10⁻¹⁰",
+        "[OH⁻] = √(5.6 × 10⁻¹⁰ × 0.250) = 1.18 × 10⁻⁵; pOH = 4.93; pH = 14 − 4.93 = 9.07",
+        "(b) [H⁺] = 10^(−2.87) = 1.35 × 10⁻³ mol L⁻¹",
+        "Ka = [H⁺]² ÷ (c − [H⁺]) = (1.35 × 10⁻³)² ÷ (0.100 − 1.35 × 10⁻³)",
+        "Answer: (a) pH 9.07 (basic salt); (b) Ka ≈ 1.8 × 10⁻⁵ ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "Acetate Kb = 5.6×10⁻¹⁰ → NaOAc pH 9.07; from pH 2.87, Ka ≈ 1.8×10⁻⁵.",
+      "voiceover": {
+        "text": "Now two related moves. Part a, the conjugate base. The acetate ion's Kb is Kw divided by the acid's Ka, one times ten to the minus fourteen over one-point-eight times ten to the minus five, which is five-point-six times ten to the minus ten. Then run the base route, hydroxide is the square root of Kb times c, about one-point-one-eight times ten to the minus five, the pOH is four-point-nine-three, and pH is fourteen minus that, nine-point-zero-seven. So sodium acetate is basic, exactly what salt hydrolysis predicted. Part b, going backwards from a measured pH. A nought-point-one molar weak acid reads pH two-point-eight-seven, so hydrogen ion is ten to the minus two-point-eight-seven, which is one-point-three-five times ten to the minus three. Then Ka is hydrogen ion squared over c minus hydrogen ion. Use c minus hydrogen ion in the denominator, not just c. That returns Ka of about one-point-eight times ten to the minus five, which is acetic acid."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: using [H⁺] = c for a weak acid. It's only partly ionised, so solve the ICE table.",
+      "secondary": "Trap 2: skipping the 5% check, or only checking before. Verify x ÷ c after, and use the quadratic if it's 5% or more. Trap 3: claiming pH = pKa for any weak acid. That only holds at the half-equivalence point of a titration, where [A⁻] = [HA].",
+      "mistakeTag": "Where weak-acid marks slip",
+      "callout": "Solve the equilibrium; check 5% after; pH = pKa only at half-equivalence.",
+      "durationInFrames": 1230,
+      "caption": "Don't treat weak as strong; verify the 5% rule; pH = pKa only at half-equivalence.",
+      "voiceover": {
+        "text": "Three traps. Trap one, using hydrogen ion equals concentration for a weak acid. It's only partly ionised, so you must solve the ICE table, or you'll overstate the acidity wildly. Trap two, skipping the five percent check, or only checking it beforehand. The honest way is to calculate x, then verify x over c times a hundred is under five percent, and if it isn't, use the quadratic. A common case is a dilute solution, where even a smallish Ka can fail the rule. Trap three, claiming pH equals pKa for any weak acid solution. That's only true at one special spot, the half-equivalence point of a titration, where the conjugate base concentration equals the acid concentration. For a plain weak acid solution, the pH is well below pKa, so don't confuse the two."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Find the pH of 0.100 mol L⁻¹ acetic acid (Ka = 1.8 × 10⁻⁵) at 25 °C.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Check: Ka ÷ c = 1.8 × 10⁻⁵ ÷ 0.100 = 1.8 × 10⁻⁴, below 0.0025, so use the square root",
+        "x = √(Ka × c) = √(1.8 × 10⁻⁵ × 0.100) = √(1.8 × 10⁻⁶) = 1.34 × 10⁻³ mol L⁻¹",
+        "Verify: (1.34 × 10⁻³ ÷ 0.100) × 100 = 1.3%, under 5%, valid",
+        "pH = −log(1.34 × 10⁻³) = 2.87",
+        "Answer: pH = 2.87 (not 1.0, which would treat it as strong) ✓"
+      ],
+      "durationInFrames": 1110,
+      "caption": "0.100 M acetic acid: x = 1.34 × 10⁻³, so pH = 2.87.",
+      "voiceover": {
+        "text": "Quick check, the classic one. Find the pH of nought-point-one molar acetic acid, Ka one-point-eight times ten to the minus five. Pause and work it through. Right, let's check it. Step one, Ka over c is one-point-eight times ten to the minus four, below the threshold, so the square root shortcut is fine. Step two, x is the square root of Ka times c, the square root of one-point-eight times ten to the minus six, which is one-point-three-four times ten to the minus three. Step three, verify, that's one-point-three percent ionised, well under five, so it's valid. Step four, pH is minus the log of one-point-three-four times ten to the minus three, which is two-point-eight-seven. If you'd wrongly treated it as strong, you'd have said pH one. The gap between two-point-eight-seven and one is the whole reason weak acids get their own method."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Weak acids need an ICE table: Ka = x²/(c − x), where x = [H⁺].",
+        "Shortcut x = √(Ka × c) is valid when Ka/c < 0.0025 (under 5% ionised).",
+        "Always verify the 5% rule after; use the quadratic if it fails.",
+        "Weak bases: [OH⁻] = √(Kb × c), then pH = 14 − pOH; Kb = Kw/Ka.",
+        "From a measured pH: Ka = [H⁺]²/(c − [H⁺])."
+      ],
+      "finalPrompt": "Weak acid? Build the ICE table, solve for x, then check 5%.",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: ICE table, the square-root shortcut, the 5% check, the base route, Ka from pH.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, weak acids need an ICE table, giving Ka equals x squared over c minus x, where x is the hydrogen ion concentration. Second, the shortcut, x equals the square root of Ka times c, is valid when Ka over c is below nought-point-zero-zero-two-five, meaning under five percent ionises. Third, always verify that five percent rule after calculating, and switch to the quadratic if it fails. Fourth, weak bases run the same way with Kb, giving hydroxide as the square root of Kb times c, then pH equals fourteen minus pOH, and you get Kb from Kw over Ka. And fifth, to find Ka from a measured pH, use hydrogen ion squared over c minus hydrogen ion. Next lesson, we compare the enthalpy of neutralisation for strong and weak acids, tying these ideas back to energy. See you there."
+      }
+    }
+  ]
+}

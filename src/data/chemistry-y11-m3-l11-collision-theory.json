@@ -1,0 +1,273 @@
+{
+  "title": "Collision Theory & Reaction Rate",
+  "subtitle": "Why only some collisions cause reactions",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 11",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 3: Reactive Chemistry",
+  "syllabusDotPoints": [
+    "Investigate the factors that affect the rate of reactions",
+    "Explain the relationship between collision theory and reaction rate"
+  ],
+  "lessonIntent": "Students can explain collision theory, identify activation energy and enthalpy change on an energy profile, and predict how temperature affects reaction rate.",
+  "examSkill": "Interpret energy profile diagrams, identify Ea and ΔH, and explain why only a fraction of collisions lead to reaction.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson subjects/chemistry/year11/module3/lesson11.html. Real-world anchor: glow stick brightness vs temperature. Worked example: read energy profile diagram. Misconception: higher T means more product. Uses energyProfile diagram. Sets up L12 (factors affecting rate).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Collision Theory and Reaction Rate. Year 11 Chemistry, Module 3.",
+      "voiceover": {
+        "text": "Collision Theory and Reaction Rate. Year eleven Chemistry, Module three.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L11/title.6a25eb9c02f8.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why does a glow stick glow brighter in hot water?",
+      "body": "A glow stick contains two chemicals separated by a glass vial. When you bend it, the vial breaks and the chemicals mix. The reaction produces light. Dip it in hot water and it glows fiercely. Dip it in ice water and it fades to a dim glow. But here is the key: the total light produced is the same. Temperature changes the rate, not the total amount.",
+      "bullets": [
+        {
+          "text": "Glow stick: two chemicals mix and produce light.",
+          "at": 4
+        },
+        {
+          "text": "Hot water = fierce glow. Ice water = dim glow.",
+          "at": 10
+        },
+        {
+          "text": "Total light produced is the same in both cases.",
+          "at": 17
+        },
+        {
+          "text": "Temperature changes the rate, not the total yield.",
+          "at": 24
+        },
+        {
+          "text": "That is collision theory in action.",
+          "at": 31
+        }
+      ],
+      "callout": "Temperature changes rate. It does not change the total product formed.",
+      "image": "l11HookGlowStick",
+      "durationInFrames": 1260,
+      "caption": "Hotter glow stick glows brighter but burns out faster - same total light.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "bulletsStart": 90,
+        "callout": 1020,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Why does a glow stick glow brighter in hot water? A glow stick contains two chemicals separated by a glass vial. When you bend it, the vial breaks and the chemicals mix. The reaction produces light. Dip it in hot water and it glows fiercely. Dip it in ice water and it fades to a dim glow. But here is the key: the total light produced is the same. Temperature changes the rate, not the total amount. That is collision theory in action.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L11/hook.65e9c38e10d5.mp3"
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Not every collision causes a reaction",
+      "body": "Think of billiard balls on a table. They collide constantly. But only collisions with enough energy and the right angle will pocket a ball. In chemistry, molecules behave the same way. They collide billions of times per second. But only a tiny fraction of those collisions have what it takes to react.",
+      "bullets": [
+        {
+          "text": "Molecules collide billions of times per second.",
+          "at": 4
+        },
+        {
+          "text": "Most collisions bounce apart unchanged.",
+          "at": 11
+        },
+        {
+          "text": "Effective collision needs two things: sufficient energy and correct orientation.",
+          "at": 18
+        },
+        {
+          "text": "Activation energy (Ea) is the minimum energy required.",
+          "at": 27
+        }
+      ],
+      "callout": "Rate depends on the frequency of effective collisions.",
+      "image": "l11ConceptBilliards",
+      "durationInFrames": 1440,
+      "caption": "Billions of collisions occur, but only effective ones produce products.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1200,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Think of billiard balls on a table. They collide constantly. But only collisions with enough energy and the right angle will pocket a ball. In chemistry, molecules behave the same way. They collide billions of times per second. But only a tiny fraction have what it takes to react. An effective collision needs two things: sufficient energy and correct orientation. Activation energy is the minimum energy required. Rate depends on the frequency of effective collisions.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L11/concept.9927b5cdeeee.mp3"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Activation energy and enthalpy change",
+      "body": "Every reaction has an energy profile. Reactants climb an energy hill - the activation energy barrier - reach a transition state, then roll down to products. The height of the hill is Ea. The net vertical drop is delta H.",
+      "bullets": [
+        {
+          "text": "Activation energy (Ea): minimum energy needed to start the reaction.",
+          "at": 4
+        },
+        {
+          "text": "Transition state: the peak of the energy hill - bonds half-broken, half-formed.",
+          "at": 11
+        },
+        {
+          "text": "Enthalpy change (ΔH): energy difference between products and reactants.",
+          "at": 20
+        },
+        {
+          "text": "Exothermic: products are lower than reactants. ΔH is negative.",
+          "at": 28
+        },
+        {
+          "text": "Endothermic: products are higher than reactants. ΔH is positive.",
+          "at": 36
+        }
+      ],
+      "callout": "Ea controls the rate. ΔH controls the heat released or absorbed.",
+      "diagram": {
+        "type": "energyProfile",
+        "exothermic": true,
+        "ea": 80,
+        "deltaH": -120,
+        "showCatalyst": false,
+        "delay": 0
+      },
+      "durationInFrames": 1560,
+      "caption": "Energy profile: Ea is the barrier height, ΔH is the net energy change.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1320,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Every reaction has an energy profile. Reactants climb an energy hill - the activation energy barrier - reach a transition state, then roll down to products. The height of the hill is Ea. The net vertical drop is delta H. Activation energy is the minimum energy needed to start the reaction. The transition state is the peak - bonds half-broken, half-formed. Enthalpy change is the energy difference between products and reactants. Exothermic means products are lower than reactants, so delta H is negative. Endothermic means products are higher, so delta H is positive. Ea controls the rate. Delta H controls the heat released or absorbed.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L11/definition.fdb48736d705.mp3"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Reading an energy profile diagram",
+      "question": "The energy profile for a reaction shows reactants at 200 kJ/mol, a transition state at 320 kJ/mol, and products at 260 kJ/mol. Calculate Ea and ΔH, classify the reaction as exothermic or endothermic, and explain what would happen to the rate if a catalyst were added.",
+      "coachNote": "Target: Ea = transition state minus reactants. ΔH = products minus reactants.",
+      "unitCancel": {
+        "left": "kJ/mol",
+        "right": "kJ/mol",
+        "result": "kJ/mol"
+      },
+      "steps": [
+        "Known: reactants = 200 kJ/mol. Transition state = 320 kJ/mol. Products = 260 kJ/mol.",
+        "Find: Ea, ΔH, classification, and catalyst effect.",
+        "Formula: Ea = energy of transition state - energy of reactants.",
+        "Substitute: Ea = 320 - 200 = 120 kJ/mol.",
+        "Formula: ΔH = energy of products - energy of reactants.",
+        "Substitute: ΔH = 260 - 200 = +60 kJ/mol.",
+        "Classification: ΔH > 0 → endothermic reaction.",
+        "Catalyst effect: lowers Ea by providing an alternative pathway. Rate increases.",
+        "Answer: Ea = 120 kJ/mol. ΔH = +60 kJ/mol. Endothermic. Catalyst speeds up rate."
+      ],
+      "image": "l11WorkedExampleEnergyProfile",
+      "durationInFrames": 1560,
+      "caption": "Ea = 120 kJ/mol. ΔH = +60 kJ/mol. Endothermic. Catalyst lowers Ea.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 110
+      },
+      "voiceover": {
+        "text": "Reading an energy profile. Reactants at two hundred, transition state at three hundred twenty, products at two hundred sixty kilojoules per mole. Target: find Ea, delta H, classify, and explain catalyst effect. Ea equals transition state minus reactants: three hundred twenty minus two hundred equals one hundred twenty kilojoules per mole. Delta H equals products minus reactants: two hundred sixty minus two hundred equals plus sixty. Positive delta H means endothermic. A catalyst lowers Ea by providing an alternative pathway, so rate increases. Answer: Ea one hundred twenty, delta H plus sixty, endothermic, catalyst speeds rate.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L11/worked-example.076cb5e7ef78.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Higher temperature means more product?",
+      "body": "Students often think: \"If I heat the reaction, I will get more product.\" That is the wrong instinct. Higher temperature increases the rate by giving more molecules enough energy to overcome Ea. But at equilibrium, the yield is determined by delta H and the equilibrium constant - not by temperature alone. For an exothermic reaction, higher temperature actually shifts equilibrium toward reactants, giving less product. The correct rule: temperature affects how fast, not how much.",
+      "callout": "Temperature affects rate. Equilibrium determines yield.",
+      "mistakeTag": "Temperature = yield trap",
+      "image": "l11MisconceptionTemperature",
+      "durationInFrames": 1350,
+      "caption": "Higher T speeds rate but can reduce yield for exothermic reactions.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here is the trap. Students think if they heat the reaction they get more product. Wrong. Higher temperature increases rate by giving more molecules enough energy to overcome Ea. But at equilibrium, yield is determined by delta H and the equilibrium constant. For an exothermic reaction, higher temperature shifts equilibrium toward reactants, giving less product. The correct rule: temperature affects how fast, not how much.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L11/misconception.b60d332ad0a3.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "For a reaction with Ea = 75 kJ/mol and ΔH = -90 kJ/mol, state whether the reaction is exothermic or endothermic, explain what would happen to the rate if Ea were lowered by a catalyst, and state whether increasing temperature would increase the equilibrium yield.",
+      "pausePrompt": "Pause: check the sign of ΔH before the answer plays.",
+      "answerSteps": [
+        "Known: Ea = 75 kJ/mol. ΔH = -90 kJ/mol.",
+        "Exothermic or endothermic: ΔH = -90 kJ/mol < 0 → exothermic.",
+        "Catalyst effect: lowers Ea → more molecules have sufficient energy → rate increases.",
+        "Temperature and yield: exothermic reaction → higher T shifts equilibrium left → yield decreases.",
+        "Answer: exothermic. Catalyst increases rate. Higher T decreases equilibrium yield."
+      ],
+      "image": "l11QuickCheckEnergyProfile",
+      "durationInFrames": 1440,
+      "caption": "ΔH negative = exothermic. Catalyst increases rate. Higher T decreases yield.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 540,
+        "answerInterval": 100
+      },
+      "voiceover": {
+        "text": "Time for you to try one. Ea is seventy-five kilojoules per mole. Delta H is minus ninety. State whether exothermic or endothermic, explain catalyst effect on rate, and state whether increasing temperature increases equilibrium yield. Pause now. Right - delta H is negative, so exothermic. A catalyst lowers Ea, so more molecules have sufficient energy and rate increases. For an exothermic reaction, higher temperature shifts equilibrium toward reactants, so yield decreases. Answer: exothermic, catalyst increases rate, higher temperature decreases yield.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L11/quick-check.ec57ce106530.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Does the collision have enough energy and the right orientation?",
+      "image": "l11SummaryCollisionTheory",
+      "points": [
+        "Effective collisions need sufficient energy AND correct orientation.",
+        "Activation energy (Ea) is the minimum energy barrier for reaction.",
+        "Ea controls the rate. ΔH controls heat released or absorbed.",
+        "A catalyst lowers Ea, increasing rate without changing ΔH.",
+        "Temperature affects rate. For exothermic reactions, higher T can decrease yield."
+      ],
+      "durationInFrames": 1260,
+      "caption": "Five takeaways and one decision rule for collision theory.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 110,
+        "finalPrompt": 720,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Let's pull it together with five takeaways. First, effective collisions need both sufficient energy and correct orientation. Second, activation energy is the minimum energy barrier a collision has to clear. Third, Ea controls the rate, while delta H controls the heat released or absorbed. Fourth, a catalyst lowers Ea, which increases the rate without changing delta H at all. And fifth, temperature affects the rate, though for an exothermic reaction a higher temperature can actually decrease the yield. So the decision rule is, does the collision have enough energy and the right orientation?"
+      }
+    }
+  ]
+}

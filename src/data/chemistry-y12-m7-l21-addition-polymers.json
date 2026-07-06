@@ -1,0 +1,245 @@
+{
+  "title": "Addition Polymers",
+  "subtitle": "The double bond opens and the chain grows",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 21",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7: Organic Chemistry",
+  "syllabusDotPoints": [
+    "model and compare the structure, properties and uses of addition polymers of ethylene and related monomers"
+  ],
+  "moduleLessonCount": 23,
+  "nesaOutcomes": [
+    "CH12-14",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
+  "inquiryQuestion": "What are the properties and uses of polymers?",
+  "lessonIntent": "Students can describe addition polymerisation, draw repeat units and monomers, and explain how chain branching and side groups control polymer properties.",
+  "examSkill": "Convert between monomer and repeat unit with correct notation, and link structure such as branching or a C-F sheath to physical properties and uses.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, addition polymers, where one double bond builds a chain. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Addition Polymers (Year 12 Chemistry, Module 7, Lesson 21)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One gas, a thousand products",
+      "body": "Ethene is a colourless gas that drifts away in seconds. Join thousands of them, with no atoms added, and you get polyethylene: from cling film to milk crates.",
+      "callout": "What happens to the C=C double bond when the monomers join up?",
+      "image": "m7l21HookPolyethylene",
+      "durationInFrames": 1597,
+      "caption": "Thousands of ethene molecules link into polyethylene with no atoms lost.",
+      "voiceover": {
+        "text": "OK, here's something to sit with. Ethene is a colourless gas, a single small molecule that just drifts away. But link thousands of ethene molecules together, end to end, with no atoms added and none removed, and you get polyethylene, one of the most useful materials on Earth. Depending on how the chains are arranged, the same starting molecule gives you cling film thin enough to see through, or a milk crate tough enough to stand on. Today you'll learn how that linking happens, and the central question is this. What happens to the carbon-carbon double bond when the monomers join? Does it stay, or does it disappear? The answer shapes everything about the polymer."
+      }
+    },
+    {
+      "id": "concept-mechanism",
+      "type": "concept",
+      "heading": "The pi bond opens",
+      "body": "In addition polymerisation, the C=C double bond of each monomer opens, and the freed electrons form new single bonds linking the monomers into a chain.",
+      "image": "m7l21AdditionMechanism",
+      "bullets": [
+        {
+          "text": "Each monomer must contain a C=C double bond.",
+          "at": 8
+        },
+        {
+          "text": "The pi bond opens; each carbon forms a new single bond to the next monomer.",
+          "at": 16
+        },
+        {
+          "text": "No atoms are added or removed, so there is no by-product.",
+          "at": 25
+        },
+        {
+          "text": "The repeat unit has only single bonds; the C=C is gone.",
+          "at": 33
+        }
+      ],
+      "secondary": "Ethene gives the repeat unit shown as a CH2-CH2 unit in brackets with subscript n.",
+      "callout": "Addition: the double bond opens, no by-product forms.",
+      "durationInFrames": 2150,
+      "caption": "Addition polymerisation: the C=C opens to single bonds, with no by-product.",
+      "voiceover": {
+        "text": "Let's get the mechanism clear, because it's the heart of the lesson. Addition polymerisation needs monomers that contain a carbon-carbon double bond, like ethene. That double bond is made of two parts, a strong sigma bond and a weaker pi bond. In the reaction, the pi bond of each monomer opens up, and the electrons that were in it form new single bonds to the neighbouring monomers. Link enough of them and you have a long chain. The crucial feature is that no atoms are added and none are removed. Every atom of every monomer ends up in the polymer, so there is no by-product at all. And notice what's left. In the polymer chain, the double bonds are gone. The repeat unit has only single bonds. So if you ever draw a repeat unit with a double bond still in it, you've made a mistake, because that pi bond was consumed to build the chain."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Repeat unit notation",
+      "bullets": [
+        {
+          "text": "Draw two backbone carbons with single bonds, inside square brackets.",
+          "at": 8
+        },
+        {
+          "text": "Add open bonds extending from both bracket ends for chain continuation.",
+          "at": 16
+        },
+        {
+          "text": "Write subscript n outside the closing bracket.",
+          "at": 24
+        },
+        {
+          "text": "To find the monomer, put the C=C back and cap the open bonds with H.",
+          "at": 33
+        }
+      ],
+      "callout": "Brackets, open bonds, and subscript n: all three are required.",
+      "durationInFrames": 1989,
+      "caption": "Repeat unit notation: square brackets, open bonds, and subscript n.",
+      "voiceover": {
+        "text": "Now the notation, because the exam is strict about it. To draw a repeat unit, you take the two backbone carbons, now joined by a single bond, and you write them inside square brackets. Then you add open bonds, short lines extending out from both ends of the bracket, to show that the chain continues in both directions. And finally you write a subscript n just outside the closing bracket, meaning the unit repeats many times. All three of those are required. Brackets, open bonds, and the n. Leave any one out and it's marked as incomplete. And the reverse skill is just as common. To find the monomer from a repeat unit, you put the carbon-carbon double bond back between the two backbone carbons, then cap the open bonds with hydrogen atoms so every carbon has four bonds. That regenerates the original alkene."
+      }
+    },
+    {
+      "id": "concept-properties",
+      "type": "concept",
+      "heading": "Branching and side groups set properties",
+      "body": "Polyethylene comes in two forms from the same monomer. The difference is chain branching, which changes how closely the chains pack.",
+      "bullets": [
+        {
+          "text": "HDPE: linear chains pack closely, so strong dispersion forces, rigid, denser.",
+          "at": 9
+        },
+        {
+          "text": "LDPE: branched chains pack poorly, so weaker forces, flexible, less dense.",
+          "at": 18
+        },
+        {
+          "text": "Side groups matter too: a polar C-Cl in PVC raises the melting point.",
+          "at": 27
+        },
+        {
+          "text": "PTFE's strong C-F bonds make it inert and non-stick.",
+          "at": 35
+        }
+      ],
+      "callout": "Closer packing means stronger dispersion forces, so a rigid, denser polymer.",
+      "durationInFrames": 1854,
+      "caption": "Linear HDPE packs closely and is rigid; branched LDPE packs loosely and bends.",
+      "voiceover": {
+        "text": "Now properties, and here's the elegant part. Polyethylene comes in two very different forms, even though both are made from the exact same monomer, ethene. The difference is chain branching. High-density polyethylene, HDPE, has linear, unbranched chains that pack closely together. Close packing means more contact area, so stronger dispersion forces, which makes HDPE rigid, denser, and higher melting, good for milk crates and pipes. Low-density polyethylene, LDPE, has branched chains that can't pack closely, so the dispersion forces are weaker and the material is flexible and less dense, perfect for cling film and bags. Side groups change things too. In PVC, the polar carbon-chlorine bonds add dipole forces and raise the melting point. And in PTFE, the very strong carbon-fluorine bonds make it chemically inert and non-stick. Structure sets the properties, every time."
+      }
+    },
+    {
+      "id": "concept-thermo",
+      "type": "concept",
+      "heading": "Thermoplastic, and why it persists",
+      "body": "Most addition polymers are thermoplastics, and their unreactive carbon backbone is exactly why they linger in the environment.",
+      "bullets": [
+        {
+          "text": "Thermoplastics soften and remould on heating; chains are held by IMFs only.",
+          "at": 9
+        },
+        {
+          "text": "So they can be melted and recycled.",
+          "at": 17
+        },
+        {
+          "text": "The C-C backbone is non-polar and inert, so microbes cannot break it.",
+          "at": 25
+        },
+        {
+          "text": "They fragment by UV and abrasion into persistent microplastics.",
+          "at": 33
+        }
+      ],
+      "callout": "An inert C-C backbone means recyclable, but non-biodegradable.",
+      "durationInFrames": 1813,
+      "caption": "Addition polymers are recyclable thermoplastics but non-biodegradable.",
+      "voiceover": {
+        "text": "Two more ideas that round out the topic, one practical, one environmental. Most addition polymers are thermoplastics, which means they soften and can be remoulded when heated, then harden again on cooling. That's because the chains are held together only by intermolecular forces, which loosen with heat and reform on cooling. The upshot is that thermoplastics can be melted down and recycled. But the same carbon backbone that makes them so useful is also why they're an environmental problem. The carbon-carbon backbone is non-polar and chemically inert, so microorganisms simply don't have the enzymes to break it down. Instead of biodegrading, the plastic slowly fragments under ultraviolet light and physical abrasion into ever smaller pieces, the microplastics now found everywhere from deep ocean sediment to human blood. Recyclable, yes. Biodegradable, no."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Monomer and repeat unit of PVC",
+      "question": "Chloroethene is CH2=CHCl. Draw its repeat unit with correct notation, and explain why PVC has a higher melting point than polyethylene.",
+      "coachNote": "Open the C=C to single bonds, bracket one unit with open bonds and subscript n, then reason from intermolecular forces.",
+      "steps": [
+        "Open the C=C: the two backbone carbons become single-bonded.",
+        "Repeat unit: a CH2-CHCl unit, in square brackets, with open bonds and subscript n.",
+        "Notation check: brackets present, open bonds at both ends, subscript n outside.",
+        "PVC has polar C-Cl bonds, giving dipole-dipole forces between chains.",
+        "Polyethylene is non-polar with dispersion forces only, which are weaker.",
+        "Answer: the extra dipole-dipole attraction in PVC raises its melting point above polyethylene."
+      ],
+      "durationInFrames": 1935,
+      "caption": "PVC repeat unit is a CH2-CHCl unit; polar C-Cl bonds raise its melting point.",
+      "voiceover": {
+        "text": "Let's work an example covering both skills, the drawing and the reasoning. Chloroethene is C-H-2 double bond C-H-Cl. First, the repeat unit. Open the carbon-carbon double bond so the two backbone carbons become single-bonded. The repeat unit is a C-H-2 group joined to a C-H-Cl group, drawn inside square brackets, with open bonds extending from both ends, and a subscript n outside. Run the notation check, brackets, open bonds, and the n, all present. Now the reasoning part. Why does PVC melt higher than polyethylene? PVC carries polar carbon-chlorine bonds, so as well as dispersion forces, its chains attract through dipole-dipole forces. Polyethylene is completely non-polar, so it only has the weaker dispersion forces. That extra dipole-dipole attraction in PVC means more energy is needed to separate the chains, so its melting point is higher. Structure, then forces, then property."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"The double bond stays in the polymer\"",
+      "body": "Students draw the repeat unit of an addition polymer with the C=C still present. It is not there.",
+      "secondary": "The pi bond of the C=C is consumed to form the new single bonds that link the monomers. The backbone of an addition polymer is entirely single-bonded. A repeat unit with a C=C in it cannot have come from addition polymerisation.",
+      "callout": "The C=C is used up making the chain, so the repeat unit has only single bonds.",
+      "mistakeTag": "No C=C in an addition polymer backbone",
+      "durationInFrames": 1921,
+      "caption": "The C=C is consumed in polymerisation; the repeat unit has only single bonds.",
+      "voiceover": {
+        "text": "Here's the most common addition-polymer mistake. Students draw the repeat unit and leave the carbon-carbon double bond sitting inside it, as if the monomer just got copied. But think about what the reaction actually does. The whole point of addition polymerisation is that the pi bond of the double bond opens and its electrons are used to form the new single bonds that join the monomers into a chain. So that double bond is consumed. It's gone. The backbone of an addition polymer is entirely single-bonded. A quick self-check you can always apply. If you see a carbon-carbon double bond inside a polymer repeat unit, it cannot have come from addition polymerisation, because that bond would have been used up. Draw the monomer with the double bond, draw the polymer with single bonds only. Keep those two pictures separate."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "Identify the monomer of the polymer with repeat unit shown as a CH2-CH(CH3) unit, name it, and state the polymerisation type.",
+      "pausePrompt": "Pause and put the double bond back before the answer plays.",
+      "answerSteps": [
+        "The repeat unit has two backbone carbons: a CH2 and a CH bearing a CH3 group.",
+        "Put the C=C back between the two backbone carbons.",
+        "Cap any open bonds with hydrogen so each carbon has four bonds.",
+        "Monomer: CH2=CHCH3, which is propene.",
+        "The polymer is polypropylene, made by addition polymerisation, with no by-product."
+      ],
+      "durationInFrames": 1867,
+      "caption": "Repeat unit CH2-CH(CH3) comes from propene by addition polymerisation.",
+      "voiceover": {
+        "text": "Your turn. You're given a polymer whose repeat unit is a C-H-2 group joined to a C-H carrying a methyl group. Identify the monomer, name it, and state the type of polymerisation. Pause now, and remember to put the double bond back. Let's check. The repeat unit has two backbone carbons, one is a C-H-2, the other is a C-H bearing a methyl side group. To get the monomer, you reinsert the carbon-carbon double bond between those two backbone carbons, then cap any open bonds with hydrogen so each carbon has four bonds. That gives you C-H-2 double bond C-H-C-H-3, which is propene. So the polymer is polypropylene, and it's made by addition polymerisation, with no by-product, because the double bond simply opened to link the monomers. Reverse the mechanism and the monomer falls out."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Addition polymer? The C=C opens, no by-product, and the backbone is all single bonds.",
+      "points": [
+        "Addition polymerisation: the C=C of each monomer opens to link them, with no by-product.",
+        "The repeat unit has only single bonds; notation needs brackets, open bonds, and subscript n.",
+        "HDPE has linear chains and packs closely; LDPE is branched, so it is flexible and less dense.",
+        "Side groups change properties: polar C-Cl in PVC, inert C-F in PTFE.",
+        "Addition polymers are recyclable thermoplastics but non-biodegradable, due to the inert C-C backbone."
+      ],
+      "durationInFrames": 1935,
+      "caption": "The C=C opens, the backbone is single-bonded, and structure sets every property.",
+      "voiceover": {
+        "text": "Let's lock it in. Five takeaways. First, addition polymerisation works by opening the carbon-carbon double bond of each monomer to link them, and crucially, no by-product is formed. Second, the repeat unit has only single bonds, and the notation needs all three of brackets, open bonds, and a subscript n. Third, structure controls properties. Linear HDPE packs closely and is rigid and dense, while branched LDPE packs loosely and is flexible and less dense, both from the same ethene monomer. Fourth, side groups matter too, with polar carbon-chlorine bonds raising PVC's melting point and strong carbon-fluorine bonds making PTFE inert and non-stick. And fifth, addition polymers are recyclable thermoplastics, but non-biodegradable, because their carbon backbone is inert. So for any addition polymer, the double bond opens, no by-product forms, and the backbone is all single bonds. See you next lesson."
+      }
+    }
+  ]
+}

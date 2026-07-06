@@ -1,0 +1,280 @@
+{
+  "title": "Physical and Chemical Responses in Animals",
+  "subtitle": "The body's barriers and its inflammatory alarm",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 9",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "analyse responses to the presence of pathogens by assessing the physical and chemical changes that occur in the host animal's cells and tissues (ACSBL119, ACSBL120, ACSBL121, ACSBL122)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How does a plant or animal respond to infection?",
+  "lessonIntent": "Students can list first-line physical and chemical barriers, explain the four cardinal signs of inflammation with their causes, and sequence the inflammatory cascade.",
+  "examSkill": "Analyse the physical and chemical changes in host tissues during a non-specific response, including inflammation and fever.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, the animal body's physical and chemical responses. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Physical and Chemical Responses in Animals (Year 12 Biology, Module 7, Lesson 9)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One molecule, three reactions",
+      "body": "In 1924, injecting a single chemical, histamine, produced redness, swelling, and warmth within seconds.",
+      "callout": "How does one molecule trigger all three at once?",
+      "image": "bioM7L9Inflammation",
+      "durationInFrames": 1505,
+      "caption": "A single histamine injection produces redness, swelling, and warmth within seconds.",
+      "voiceover": {
+        "text": "In nineteen twenty-four, two researchers in London, Thomas Lewis and Ronald Grant, injected a single chemical, histamine, just under the skin, and they watched. Within seconds, three things happened, a red flare spread out, a raised swelling formed, and the area grew warm. One injection, one molecule, and yet three distinct responses appearing almost instantly. Those happen to be three of the four classic signs of inflammation, redness, swelling, and heat. So how does a single molecule trigger all three at once, and what does each one actually accomplish for the body? That's where we're going. But first, the barriers that stop most pathogens before any of this is even needed."
+      }
+    },
+    {
+      "id": "concept-barriers",
+      "type": "concept",
+      "heading": "First line: the barriers",
+      "body": "Most pathogens never get past the body's physical and chemical barriers, so the immune response is a fallback.",
+      "bullets": [
+        {
+          "text": "Skin: tough, keratinised, slightly acidic, and constantly shedding microbes."
+        },
+        {
+          "text": "Mucous membranes and cilia: trap pathogens and sweep them out."
+        },
+        {
+          "text": "Chemical barriers: stomach acid, lysozyme in tears and saliva, and sebum."
+        }
+      ],
+      "secondary": "The normal microbiome out-competes pathogens for nutrients and space. The physical barrier is the most important defence; everything else is a fallback.",
+      "callout": "Keep them out, and nothing else has to fire.",
+      "durationInFrames": 2050,
+      "caption": "Skin, mucous membranes, cilia, and chemical barriers block most pathogens at the surface.",
+      "voiceover": {
+        "text": "Just like a plant, your body's first line is non-specific barriers, and most pathogens never get past them. Start with the physical ones. Your skin is tough, keratinised, and multilayered, it's slightly acidic, and it sheds about a million dead cells an hour, carrying surface microbes away with them. Your mucous membranes line the respiratory and digestive tracts, trapping pathogens in mucus, and cilia beat constantly to sweep that mucus toward the exits, the so-called mucociliary escalator. Then the chemical barriers. Stomach acid sits at a pH around one point five, destroying most ingested pathogens. Lysozyme, an enzyme in your tears and saliva, breaks down bacterial cell walls. And sebum makes the skin surface inhospitable. There's even your normal microbiome, the helpful bacteria that out-compete pathogens for nutrients and space. The key principle, the physical barrier is your most important defence, and everything else is a fallback for when it's breached."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The terms you need",
+      "bullets": [
+        {
+          "text": "Inflammation: a local non-specific response that boosts blood flow and immune activity."
+        },
+        {
+          "text": "Histamine: a mediator from mast cells causing vasodilation and leaky capillaries."
+        },
+        {
+          "text": "Cytokine: a signalling protein that coordinates immune responses, including fever."
+        },
+        {
+          "text": "Fever: a raised body-temperature set point that can slow pathogen growth."
+        }
+      ],
+      "callout": "Histamine opens the vessels; cytokines coordinate the response.",
+      "durationInFrames": 1630,
+      "caption": "Inflammation, histamine, cytokine, fever.",
+      "voiceover": {
+        "text": "Four terms before we go deeper. Inflammation is a local, non-specific response that increases blood flow and immune activity at the site of infection or damage, and it's an active defence, not just a symptom. Histamine is a chemical mediator released by mast cells, and it causes two key things, vasodilation, the widening of blood vessels, and increased capillary permeability, making them leaky. A cytokine is a signalling protein that helps coordinate the immune response, including triggering fever and recruiting cells. And fever is an increase in the body's temperature set point, which can slow pathogen growth and support immune activity. The simple way to hold these together, histamine opens up the blood vessels, while cytokines coordinate the wider response."
+      }
+    },
+    {
+      "id": "concept-signs",
+      "type": "concept",
+      "heading": "Inflammation: four cardinal signs",
+      "body": "When a pathogen breaches the barriers, inflammation begins within seconds, and each sign has a specific cause.",
+      "bullets": [
+        {
+          "text": "Redness and heat: vasodilation increases blood flow to the area."
+        },
+        {
+          "text": "Swelling: leaky capillaries let plasma seep into the tissue."
+        },
+        {
+          "text": "Pain: prostaglandins and bradykinin stimulate pain receptors."
+        }
+      ],
+      "secondary": "The purpose is to deliver immune cells and antibodies to the site, contain the pathogen, and begin repair. Each sign is a side effect of a useful change.",
+      "callout": "Each sign is the visible cost of a defensive change.",
+      "durationInFrames": 1965,
+      "caption": "Redness, heat, swelling, and pain each have a specific cellular cause and purpose.",
+      "voiceover": {
+        "text": "When a pathogen breaches the barriers and enters tissue, the inflammatory response begins within seconds, and the four cardinal signs each have a specific cause. Redness and heat go together, both are caused by vasodilation, the widening of blood vessels, which increases blood flow to the area, and that increased flow delivers immune cells faster and speeds up reactions. Swelling, or oedema, is caused by increased capillary permeability, the vessels become leaky and plasma seeps into the tissue, which brings antibodies to the site. And pain is caused by prostaglandins and bradykinin stimulating pain receptors called nociceptors, which signals damage and makes you rest the area. So the overall purpose is to deliver immune cells and antibodies to the infection site, contain the pathogen, and begin repair. Every one of those four signs is really just the visible cost of a genuinely useful defensive change."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Sign",
+          "Cause",
+          "Purpose"
+        ],
+        "rows": [
+          [
+            "Redness, heat",
+            "Vasodilation",
+            "More blood, faster cells"
+          ],
+          [
+            "Swelling",
+            "Leaky capillaries",
+            "Brings antibodies in"
+          ],
+          [
+            "Pain",
+            "Prostaglandins, bradykinin",
+            "Signals damage, limits use"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-cascade",
+      "type": "concept",
+      "heading": "The inflammatory cascade",
+      "body": "Inflammation unfolds in a precise order, triggered by chemical signals from damaged and infected cells.",
+      "bullets": [
+        {
+          "text": "A pathogen breaches the barrier and enters the tissue."
+        },
+        {
+          "text": "Mast cells release histamine, causing vasodilation and leaky capillaries."
+        },
+        {
+          "text": "Neutrophils migrate in along a chemical gradient and begin phagocytosis."
+        }
+      ],
+      "secondary": "Pus is a mix of dead neutrophils, destroyed pathogen, and fluid. Its presence is a sign the immune system actively engaged, not that it failed.",
+      "callout": "Signal, dilate, recruit, destroy.",
+      "durationInFrames": 1940,
+      "caption": "Pathogen entry triggers histamine, vasodilation, neutrophil migration, then destruction.",
+      "voiceover": {
+        "text": "Inflammation doesn't just happen all at once, it unfolds in a precise sequence, triggered by chemical signals. Let's walk the cascade. First, a pathogen breaches the barrier and enters the tissue. Second, mast cells at the site release histamine, and damaged cells release prostaglandins and bradykinin. Third, the histamine causes vasodilation, so the vessels widen, giving redness and warmth, and it increases capillary permeability, so plasma leaks out, giving swelling. Fourth, neutrophils, the first-responder white blood cells, migrate to the site, drawn along a chemical gradient by molecules called chemokines, and they begin phagocytosis, engulfing the pathogen. Finally, the pathogen is destroyed and tissue repair begins. And one detail the exam likes, pus is a mixture of dead neutrophils, destroyed pathogen material, and leaked fluid. Its presence is a sign the immune system actively engaged and fought, not a sign that it failed."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "enter",
+            "label": "Enter"
+          },
+          {
+            "id": "histamine",
+            "label": "Histamine"
+          },
+          {
+            "id": "dilate",
+            "label": "Dilate"
+          },
+          {
+            "id": "recruit",
+            "label": "Recruit"
+          }
+        ],
+        "edges": [
+          {
+            "from": "enter",
+            "to": "histamine"
+          },
+          {
+            "from": "histamine",
+            "to": "dilate"
+          },
+          {
+            "from": "dilate",
+            "to": "recruit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Explain a splinter wound",
+      "question": "A splinter pierces the skin and introduces bacteria. The area soon becomes red, swollen, warm, and painful. Explain each change in terms of its cellular cause.",
+      "coachNote": "Pair each visible sign with the specific mechanism that produces it.",
+      "steps": [
+        "The splinter breaches the skin barrier, so mast cells at the site release histamine.",
+        "Redness and warmth: histamine causes vasodilation, widening vessels and increasing blood flow.",
+        "Swelling: histamine increases capillary permeability, so plasma leaks into the tissue.",
+        "Pain: prostaglandins and bradykinin stimulate nociceptors, signalling the damage.",
+        "Outcome: neutrophils migrate in and phagocytose the bacteria, then repair begins."
+      ],
+      "durationInFrames": 2105,
+      "caption": "Histamine drives redness, warmth and swelling; prostaglandins drive pain.",
+      "voiceover": {
+        "text": "Let's apply the cascade to a everyday scenario, the kind the HSC uses. A splinter pierces the skin and pushes bacteria in, and soon the area becomes red, swollen, warm, and painful. Explain each change by its cellular cause. Start at the trigger. The splinter breaches the skin barrier, so mast cells at the site release histamine. Now take the signs one by one. The redness and warmth are caused by histamine triggering vasodilation, which widens the blood vessels and increases blood flow to the area. The swelling is caused by histamine increasing capillary permeability, so plasma leaks out into the tissue. And the pain is caused by prostaglandins and bradykinin stimulating the nociceptors, the pain receptors, signalling that there's damage. Finally, the outcome, neutrophils migrate into the site along the chemical gradient and phagocytose the bacteria, and then tissue repair begins. Every sign tied to its specific mechanism, that's exactly what earns full marks."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking inflammation is just an unhelpful symptom. It is an active defence that delivers cells and antibodies to the site.",
+      "secondary": "Trap 2: thinking fever is always harmful and should be suppressed immediately. Moderate fever is defensive, it slows pathogen growth and boosts immune activity. Only very high or prolonged fever is dangerous.",
+      "mistakeTag": "Where non-specific-response marks vanish",
+      "callout": "Inflammation defends; moderate fever helps.",
+      "durationInFrames": 1980,
+      "caption": "Inflammation is an active defence; moderate fever is protective, not just harmful.",
+      "voiceover": {
+        "text": "Two traps to clear before we finish. Trap one, treating inflammation as nothing more than an annoying symptom of infection. It's far more than that, it's an active, organised defence. It increases blood flow, makes capillaries permeable, and recruits immune cells to the site of infection or damage, all of which help contain and clear the pathogen. The redness and swelling are signs the defence is working. Trap two, assuming fever is always harmful and should be knocked down the instant it appears. That's an oversimplification. A moderate fever is actually defensive, it slows the growth of many pathogens and improves the activity of your immune cells. Now, a very high or prolonged fever is genuinely dangerous and needs medical attention, but the existence of a moderate fever isn't a failure of homeostasis, it's part of the response. So don't write that fever is simply bad."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "After a cut becomes infected, the wound swells and leaks clear fluid, and pus later forms. Explain what causes the swelling and what the pus indicates.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Mast cells release histamine, which increases capillary permeability at the site.",
+        "Plasma then leaks out of the leaky capillaries into the surrounding tissue.",
+        "That accumulation of plasma in the tissue is the swelling, or oedema.",
+        "Pus is a mix of dead neutrophils, destroyed pathogen, and fluid.",
+        "Answer: leaky capillaries cause the swelling, and pus shows the immune system actively engaged."
+      ],
+      "durationInFrames": 1980,
+      "caption": "Leaky capillaries cause swelling; pus shows the immune response engaged.",
+      "voiceover": {
+        "text": "Quick check. After a cut becomes infected, the wound swells and leaks clear fluid, and then pus forms later. Explain what causes the swelling, and what the pus indicates. Pause and reason it through. Okay. The swelling traces back to histamine. Mast cells at the site release histamine, which increases capillary permeability, making the vessels leaky. Plasma then seeps out of those leaky capillaries into the surrounding tissue, and that accumulation of fluid in the tissue is exactly what we call swelling, or oedema. Now the pus. Pus is a mixture of dead neutrophils, destroyed pathogen material, and leaked fluid. So its presence isn't a bad sign at all, it indicates that the immune system actively engaged, neutrophils migrated to the site and died fighting the infection. So the answer is, leaky capillaries cause the swelling, and the pus shows the immune response was actively working."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "First-line barriers, physical and chemical, stop most pathogens before any response.",
+        "Inflammation has four cardinal signs: redness, heat, swelling, and pain.",
+        "Histamine drives vasodilation and leaky capillaries; prostaglandins drive pain.",
+        "The cascade runs: entry, histamine, vasodilation, neutrophil recruitment, destruction.",
+        "Inflammation and moderate fever are active defences, not just symptoms."
+      ],
+      "finalPrompt": "Analysing a non-specific response? Tie each visible change to its mediator.",
+      "durationInFrames": 1735,
+      "caption": "Five takeaways: barriers, four signs, mediators, the cascade, active defence.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, the first-line barriers, both physical and chemical, stop most pathogens before any immune response is needed. Second, inflammation has four cardinal signs, redness, heat, swelling, and pain. Third, histamine drives the vasodilation and the leaky capillaries, giving you redness, warmth, and swelling, while prostaglandins and bradykinin drive the pain. Fourth, the inflammatory cascade runs in order, pathogen entry, histamine release, vasodilation, neutrophil recruitment, and pathogen destruction. And fifth, both inflammation and a moderate fever are active defences, not just unpleasant symptoms. Whenever you analyse a non-specific response, tie each visible change back to the specific mediator that causes it. Next lesson, the cells of the innate immune system, the mobile army that does the engulfing. See you there."
+      }
+    }
+  ]
+}

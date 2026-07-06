@@ -1,0 +1,192 @@
+{
+  "title": "Recombinant DNA Technology and Transgenic Organisms",
+  "subtitle": "Cut, join, insert, express: the toolchain behind manufactured insulin",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 16",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6 — Genetic Change",
+  "syllabusDotPoints": [
+    "describe techniques and applications used in recombinant DNA technology, for example: the development of transgenic organisms in agricultural and medical applications (ACSBL087)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "BIO12-13",
+    "BIO11/12-4",
+    "BIO11/12-5",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "Does artificial manipulation of DNA have the potential to change populations forever?",
+  "lessonIntent": "Students can describe the recombinant DNA toolchain and explain how it produces a transgenic organism for agricultural and medical use.",
+  "examSkill": "Sequence the four steps of recombinant DNA technology and explain why the same restriction enzyme must cut donor and vector.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, recombinant DNA and transgenic organisms. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Recombinant DNA Technology and Transgenic Organisms (Year 12 Biology, Module 6, Lesson 16)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "How bacteria make human insulin",
+      "body": "Before 1982, insulin came from 8,000 animal pancreases per pound. Then bacteria were taught to make the human protein.",
+      "callout": "Take a gene out of one organism, and a completely different one makes its protein.",
+      "image": "bioM6L16RecombinantInsulin",
+      "durationInFrames": 870,
+      "caption": "Humulin frames recombinant DNA: a human gene expressed in bacteria.",
+      "voiceover": {
+        "text": "On the twenty-eighth of October 1982, the FDA approved Humulin, the first recombinant human protein medicine. Before that, insulin was extracted from animals, roughly eight thousand pig or cow pancreases for a single pound of it. Genentech and Eli Lilly instead inserted the human insulin gene into bacterial plasmids, and the bacteria produced human-sequence insulin at scale. Today, about ninety-five percent of the insulin used by one point five million Australians comes from that same basic toolchain. So the question for today is, how do you take a gene out of one organism and get a completely different organism to make its protein?"
+      }
+    },
+    {
+      "id": "concept-toolchain",
+      "type": "concept",
+      "heading": "Recombinant DNA is a toolchain",
+      "body": "Recombinant DNA technology is not one event. It is a sequence of four steps using specific tools.",
+      "bullets": [
+        {"text": "Step 1: cut the chosen DNA and the vector with restriction enzymes."},
+        {"text": "Step 2: join them with DNA ligase to form recombinant DNA."},
+        {"text": "Step 3: insert the recombinant vector into a host cell."},
+        {"text": "Step 4: the host copies or expresses the gene, making a protein or transgenic organism."}
+      ],
+      "secondary": "This is more direct than selective breeding, which only reshuffles alleles that are already present. Here, a chosen piece of DNA is added.",
+      "callout": "Cut, join, insert, express, in that order.",
+      "durationInFrames": 990,
+      "caption": "The recombinant DNA toolchain: cut, join, insert, then copy or express.",
+      "voiceover": {
+        "text": "Let's lay out the method, because recombinant DNA is not a single event, it's a toolchain of four steps, each with its own tool. Step one, cut, you use restriction enzymes to cut out the chosen DNA fragment and to cut open the vector. Step two, join, you use DNA ligase to stitch the fragment into the vector, forming what we call recombinant DNA. Step three, insert, you put that recombinant vector into a host cell. And step four, express, the host cell copies or expresses the gene, producing a useful protein, or a transgenic organism with a new trait. And notice how this differs from selective breeding, which only reshuffles alleles already present, here a deliberately chosen piece of DNA is actually added. Cut, join, insert, express, in that order."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {"id": "cut", "label": "1. Cut (restriction enzymes)"},
+          {"id": "join", "label": "2. Join (DNA ligase)"},
+          {"id": "insert", "label": "3. Insert into host"},
+          {"id": "express", "label": "4. Host copies / expresses"}
+        ],
+        "edges": [
+          {"from": "cut", "to": "join"},
+          {"from": "join", "to": "insert"},
+          {"from": "insert", "to": "express"}
+        ]
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Recombinant DNA: DNA formed by combining genetic material from different sources."},
+        {"text": "Restriction enzyme: an enzyme that cuts DNA at a specific recognition sequence."},
+        {"text": "DNA ligase: an enzyme that joins DNA fragments together."},
+        {"text": "Vector: a carrier, such as a plasmid, used to move DNA into a host cell."},
+        {"text": "Transgenic organism: an organism containing inserted DNA from another source."}
+      ],
+      "callout": "Restriction enzymes cut; ligase joins; the vector carries.",
+      "durationInFrames": 930,
+      "caption": "Recombinant DNA, restriction enzyme, DNA ligase, vector, transgenic organism.",
+      "voiceover": {
+        "text": "Five terms, and they map straight onto the toolchain. Recombinant DNA is DNA formed by combining genetic material from different sources, the product you're building. A restriction enzyme is an enzyme that cuts DNA at a specific recognition sequence, your molecular scissors. DNA ligase is the enzyme that joins DNA fragments together, the molecular glue. A vector is a carrier, usually a plasmid, used to move DNA into a host cell, the delivery vehicle. And a transgenic organism is one that contains inserted DNA from another source, the end result when the gene is expressed in a living thing. The pairing to remember, restriction enzymes cut, ligase joins, and the vector carries."
+      }
+    },
+    {
+      "id": "concept-transgenic",
+      "type": "concept",
+      "heading": "What makes an organism transgenic",
+      "body": "A transgenic organism carries inserted DNA from another source and may express a new trait.",
+      "bullets": [
+        {"text": "It contains DNA directly introduced from another organism or source."},
+        {"text": "That new DNA can give it a trait it could not inherit naturally."},
+        {"text": "This differs from selective breeding, where only existing alleles are reshuffled."}
+      ],
+      "secondary": "Agricultural example: transgenic crops engineered for traits such as pest resistance. Medical example: insulin and other proteins produced in host cells.",
+      "callout": "New DNA added, not just old alleles rearranged.",
+      "durationInFrames": 900,
+      "caption": "A transgenic organism carries directly inserted DNA, unlike a selectively bred one.",
+      "voiceover": {
+        "text": "So what exactly makes an organism transgenic? It carries DNA that was directly inserted from another organism or source, and it may then express a new trait because of it. The key contrast is with selective breeding. A selectively bred organism only ever inherits a reshuffle of alleles that the species already had, nothing genuinely new is added. A transgenic organism has had new DNA directly introduced, giving it a trait it could not have inherited by normal reproduction at all. And the same method serves two big areas. In agriculture, transgenic crops are engineered for traits such as pest resistance. In medicine, host cells are engineered to produce proteins like insulin. New DNA added, not just old alleles rearranged."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Make bacteria produce human insulin",
+      "question": "Describe how recombinant DNA technology is used to produce human insulin in bacteria. Include the roles of restriction enzymes, the plasmid, DNA ligase and the host cell.",
+      "coachNote": "Sequence the four steps and make the role of each tool explicit, including why the same enzyme is used twice.",
+      "steps": [
+        "Cut the human insulin gene out of human DNA using a restriction enzyme.",
+        "Cut the bacterial plasmid with the same restriction enzyme, so both have complementary sticky ends.",
+        "Join the insulin gene into the plasmid with DNA ligase, forming recombinant DNA.",
+        "Insert the recombinant plasmid into a host cell, E. coli, which multiplies.",
+        "Answer: the bacteria express the gene and produce human insulin, which is then extracted and purified."
+      ],
+      "durationInFrames": 1140,
+      "caption": "Cut the gene and plasmid with the same enzyme, ligate, transform E. coli, then express and purify insulin.",
+      "voiceover": {
+        "text": "Let's describe the classic case, making human insulin in bacteria. First, cut the human insulin gene out of human DNA using a restriction enzyme. Second, and this is the step people skip, cut the bacterial plasmid with the same restriction enzyme, so that both the gene and the plasmid end up with complementary sticky ends that can pair. Third, join the insulin gene into the plasmid using DNA ligase, sealing it to form recombinant DNA. Fourth, insert that recombinant plasmid into a host cell, typically E. coli, which then multiplies rapidly. And finally, the bacteria express the gene and produce human insulin, which is harvested and purified for medical use. The thing to stress in an exam is why the same enzyme is used twice, it's the only way to get matching sticky ends."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The sticky-ends trap",
+      "body": "Trap: thinking any restriction enzyme can join two pieces of DNA from different sources.",
+      "secondary": "Restriction enzymes cut at specific recognition sequences and leave characteristic sticky ends. Successful ligation needs both the donor fragment and the vector cut with the same enzyme, so they have complementary sticky ends that base-pair before DNA ligase seals the join.",
+      "mistakeTag": "Why mismatched cuts will not ligate",
+      "callout": "Same enzyme both sides, or the ends will not pair.",
+      "durationInFrames": 900,
+      "caption": "Donor and vector must be cut with the same enzyme to give complementary sticky ends.",
+      "voiceover": {
+        "text": "Here's the trap that quietly loses marks. Thinking that any restriction enzyme can be used to join two pieces of DNA from different sources. It can't. Restriction enzymes cut at specific recognition sequences, and each one leaves a characteristic sticky end, a short single-stranded overhang. For ligation to work, both the donor fragment and the vector have to be cut with the same restriction enzyme, so that they end up with complementary sticky ends that can base-pair with each other. Only then can DNA ligase come in and seal the join. If you cut them with different enzymes, the ends don't match, and they simply won't fit together. So the rule is, same enzyme on both sides, or the ends will never pair."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A student cuts the target gene with one restriction enzyme and the plasmid with a different one, then adds DNA ligase. The gene will not insert. Why, and what is the fix?",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "Each restriction enzyme cuts at its own recognition sequence and leaves its own sticky-end shape.",
+        "Cutting the gene and plasmid with different enzymes gives non-complementary sticky ends.",
+        "The ends cannot base-pair, so DNA ligase has nothing aligned to seal.",
+        "Fix: cut both the gene and the plasmid with the same restriction enzyme.",
+        "Answer: mismatched sticky ends prevent insertion; use the same enzyme on both so the ends are complementary."
+      ],
+      "durationInFrames": 960,
+      "caption": "Different enzymes give non-complementary ends; use the same enzyme on gene and plasmid.",
+      "voiceover": {
+        "text": "Quick check. A student cuts the target gene with one restriction enzyme, and the plasmid with a different one, then adds DNA ligase, and the gene simply won't insert. Why, and what's the fix? Pause and reason it through. Okay. Each restriction enzyme cuts at its own specific recognition sequence and leaves its own particular sticky-end shape. So cutting the gene with one enzyme and the plasmid with a different enzyme gives you two sets of sticky ends that don't match. Because the ends aren't complementary, they can't base-pair, and DNA ligase has nothing properly aligned to seal together. The fix is straightforward, cut both the gene and the plasmid with the same restriction enzyme. Then the sticky ends are complementary, they pair up, and ligase can do its job."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Recombinant DNA is a four-step toolchain: cut, join, insert, express.",
+        "Restriction enzymes cut, DNA ligase joins, a vector carries the DNA in.",
+        "A transgenic organism has new DNA directly inserted, not just alleles reshuffled.",
+        "The same enzyme must cut donor and vector for complementary sticky ends.",
+        "The method serves both agriculture (pest-resistant crops) and medicine (insulin)."
+      ],
+      "finalPrompt": "Describing recombinant DNA? Cut, join, insert, express, and stress the matching sticky ends.",
+      "durationInFrames": 870,
+      "caption": "Five takeaways: four-step toolchain, the tools, transgenic definition, sticky-ends rule, agriculture and medicine.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, recombinant DNA is a four-step toolchain, cut, join, insert, express. Second, restriction enzymes cut, DNA ligase joins, and a vector carries the DNA into the host. Third, a transgenic organism has new DNA directly inserted, not just existing alleles reshuffled like in selective breeding. Fourth, the same restriction enzyme must cut both the donor and the vector, so the sticky ends are complementary. And fifth, this one method serves both agriculture, with pest-resistant crops, and medicine, with proteins like insulin. Whenever you describe recombinant DNA, walk through cut, join, insert, express, and stress those matching sticky ends. See you next lesson."
+      }
+    }
+  ]
+}

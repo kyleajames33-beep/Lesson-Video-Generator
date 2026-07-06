@@ -1,0 +1,237 @@
+{
+  "title": "Drug Synthesis and Green Chemistry",
+  "subtitle": "When good yield still means a bad process",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 8",
+  "lesson": "Lesson 15",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 8: Applying Chemical Ideas",
+  "syllabusDotPoints": [
+    "evaluate the factors that need to be considered when designing a chemical synthesis process, including but not limited to: availability of reagents, reaction conditions, yield and purity, industrial uses, environmental, social and economic issues",
+    "assess the sustainability of a chemical synthesis using atom economy and other green chemistry principles"
+  ],
+  "moduleLessonCount": 16,
+  "nesaOutcomes": ["CH12-15", "CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-7"],
+  "inquiryQuestion": "What are the implications for society of chemical synthesis and design?",
+  "lessonIntent": "Students can describe the aspirin synthesis, calculate atom economy and E-factor, and evaluate a route's sustainability beyond yield alone.",
+  "examSkill": "Compute atom economy and E-factor, and judge a synthesis using both metrics rather than equating high yield with green chemistry.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, drug synthesis and green chemistry. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Drug Synthesis and Green Chemistry (Year 12 Chemistry, Module 8, Lesson 15)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Can good yield still be bad chemistry?",
+      "body": "Pfizer redesigned its Zoloft synthesis to use 200 kg less solvent per kg of product and cut waste by 60%. Same molecule, far cleaner process.",
+      "image": "aspirinSynthesisFlask",
+      "callout": "An 85% yield can still hide a mountain of waste.",
+      "durationInFrames": 690,
+      "caption": "Pfizer's greener Zoloft route cut waste 60% while making the same molecule.",
+      "voiceover": {
+        "text": "OK, here's a question that catches a lot of students. Can a reaction have a great yield and still be bad chemistry? In 2002, Pfizer won a US Environmental Protection Agency award for redesigning the synthesis of its antidepressant Zoloft. The new route made exactly the same molecule, same structure, same activity, but it used two hundred kilograms less solvent per kilogram of product, eliminated four hazardous steps, and cut waste by sixty percent. The product didn't change at all, only the process did. So picture a student who synthesises aspirin, gets an eighty-five percent yield, and declares success. But their process generated a mountain of solvent waste. How can good yield still be environmentally poor, and what numbers actually measure that? That's today."
+      }
+    },
+    {
+      "id": "concept-aspirin-synth",
+      "type": "concept",
+      "heading": "Synthesising aspirin",
+      "body": "Aspirin, acetylsalicylic acid, is made from salicylic acid and acetic anhydride. It's an esterification-style acetylation.",
+      "bullets": [
+        {"text": "Salicylic acid plus acetic anhydride gives aspirin plus ethanoic acid."},
+        {"text": "Conditions: an acid catalyst and gentle heating."},
+        {"text": "The product is isolated by crystallisation and filtration."}
+      ],
+      "secondary": "This is the -OH to -OCOCH3 acetylation from Lesson 11, now run as a reaction. Product quality depends on conditions, isolation, and drying, not just the equation.",
+      "callout": "Salicylic acid plus acetic anhydride, with an acid catalyst.",
+      "durationInFrames": 990,
+      "caption": "Aspirin: salicylic acid plus acetic anhydride, acid-catalysed esterification.",
+      "voiceover": {
+        "text": "Let's start with the reaction you need to know, the synthesis of aspirin. Aspirin is acetylsalicylic acid, and it's made from salicylic acid and acetic anhydride. The reaction is an esterification-style acetylation, and the products are aspirin plus ethanoic acid. The conditions are an acid catalyst, often phosphoric or sulfuric acid, with gentle heating, and then the product is isolated by crystallisation and filtration. Notice this is exactly the O-H to O-C-O-C-H-three acetylation we met back in Lesson 11, but now we're running it as an actual reaction. And here's an important practical point, the synthesis is more than one equation. Product quality depends on the reaction conditions, the isolation, the crystallisation, and the drying, just as much as on the chemistry on paper."
+      }
+    },
+    {
+      "id": "concept-development",
+      "type": "concept",
+      "heading": "From discovery to approval",
+      "body": "Making the molecule is only the start. A candidate must pass a long sequence of testing and regulatory stages.",
+      "bullets": [
+        {"text": "Discovery then preclinical: find a candidate, test in the lab and models."},
+        {"text": "Phase I, II, III: human safety, then early efficacy, then broad confirmation."},
+        {"text": "Regulatory approval: only then can the drug be supplied."}
+      ],
+      "secondary": "A good molecule alone is not enough. Pharmaceutical chemistry connects synthesis with safety, efficacy, and regulation before a drug reaches patients.",
+      "callout": "Synthesis is step one of a very long road.",
+      "durationInFrames": 990,
+      "caption": "Discovery, preclinical, Phase I to III, then regulatory approval.",
+      "voiceover": {
+        "text": "Before the green chemistry, a quick reality check, because making a molecule is only the start of the story. A successful drug must pass a long sequence of testing and regulatory stages, in a fixed order. First discovery, identifying a promising candidate. Then preclinical testing, in the lab and in models, to check activity and safety before any human trials. Then the clinical trials, Phase one tests initial human safety, Phase two tests early efficacy in target patients, and Phase three confirms it works safely at larger scale. And finally regulatory approval, which is what actually allows the drug to be supplied. The big-picture point is that a good molecule alone is not enough. Pharmaceutical chemistry connects synthesis with safety, efficacy, and regulation, and all of those stages stand between a successful reaction and a medicine on the shelf."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Green chemistry vocabulary",
+      "bullets": [
+        {"text": "Green chemistry: designing to prevent waste and hazard from the start."},
+        {"text": "Atom economy: percentage of product-side mass in the desired product."},
+        {"text": "E-factor: mass of waste divided by mass of product; lower is better."},
+        {"text": "Catalysis: using a catalyst to boost rate and selectivity without being consumed."}
+      ],
+      "callout": "Atom economy and E-factor measure different things.",
+      "durationInFrames": 990,
+      "caption": "Green chemistry, atom economy, E-factor, and catalysis.",
+      "voiceover": {
+        "text": "Quick vocabulary for green chemistry. Green chemistry is a design philosophy, it's about preventing waste and hazard from the start, rather than cleaning up problems afterwards. Atom economy is the percentage of the product-side mass that ends up in the desired product, so it tells you how well the reaction directs atoms into the molecule you actually want. E-factor is the mass of waste divided by the mass of product, and a lower E-factor means less waste per unit of product. And catalysis means using a catalyst to improve rate and selectivity without the catalyst being consumed overall. The key thing to hold onto, atom economy and E-factor measure different things, and you'll often need both to judge a route, which is exactly what the next part shows."
+      }
+    },
+    {
+      "id": "concept-metrics",
+      "type": "concept",
+      "heading": "Atom economy and E-factor",
+      "body": "Green-chemistry evaluation needs numbers, not impressions. Two measures capture different aspects of waste.",
+      "bullets": [
+        {"text": "Atom economy equals MW of desired product over total MW of all products, times 100."},
+        {"text": "Higher atom economy means more atoms reach the wanted product."},
+        {"text": "E-factor equals mass of waste over mass of product; lower means less waste."}
+      ],
+      "secondary": "They're related but not identical. Atom economy is about how reaction atoms are distributed; E-factor is about the practical mass of waste, including solvents.",
+      "callout": "Atom economy is theoretical; E-factor is the real waste burden.",
+      "durationInFrames": 1020,
+      "caption": "Atom economy: product over all products; E-factor: waste over product.",
+      "voiceover": {
+        "text": "Now the two metrics in detail, because green chemistry needs numbers, not just impressions. The first is atom economy. It equals the molar mass of the desired product, divided by the total molar mass of all the products, times one hundred percent. A higher atom economy means a larger fraction of the atoms end up in the product you actually want, rather than in by-products. The second is E-factor, which equals the mass of waste divided by the mass of product. A lower E-factor means less waste is generated per unit of product. Now here's why you need both. They're related, but they are not identical. Atom economy is theoretical, it's about how the reaction's atoms are distributed among the products. E-factor is practical, it reflects the actual mass of waste generated, including solvents and washings, which atom economy completely ignores."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Atom economy of aspirin",
+      "question": "Aspirin synthesis: salicylic acid + acetic anhydride gives aspirin (MW 180) + ethanoic acid (MW 60). Calculate the atom economy.",
+      "coachNote": "Atom economy uses product-side molar masses: desired product over all products.",
+      "steps": [
+        "Identify products: aspirin (desired, MW 180) and ethanoic acid (by-product, MW 60).",
+        "Total MW of all products = 180 + 60 = 240.",
+        "Atom economy = (180 / 240) times 100.",
+        "Atom economy = 75%.",
+        "Answer: 75%, so 25% of product-side mass is the ethanoic acid by-product."
+      ],
+      "durationInFrames": 1230,
+      "caption": "Atom economy = 180 / 240 times 100 = 75% for aspirin synthesis.",
+      "voiceover": {
+        "text": "Let's calculate atom economy for the aspirin synthesis. The reaction gives aspirin, the desired product, with molar mass one hundred and eighty, plus ethanoic acid, the by-product, with molar mass sixty. Step one, identify the products, aspirin at one eighty and ethanoic acid at sixty. Step two, the total molar mass of all products is one eighty plus sixty, which is two hundred and forty. Step three, atom economy is the desired product over the total, so one eighty over two forty, times one hundred. Step four, that works out to seventy-five percent. So step five, the answer, the atom economy is seventy-five percent, which means twenty-five percent of the product-side mass leaves as the ethanoic acid by-product. It doesn't reach the ideal of one hundred percent, although the ethanoic acid does have commercial value and can be recovered, which softens the picture."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "E-factor of a route",
+      "question": "A synthesis produces 4.0 g of product and 10.0 g of waste. Calculate the E-factor, and say what it means.",
+      "coachNote": "E-factor is purely a mass ratio: waste over product.",
+      "steps": [
+        "E-factor = mass of waste / mass of product.",
+        "E-factor = 10.0 / 4.0.",
+        "E-factor = 2.5.",
+        "Interpretation: 2.5 g of waste per 1 g of product.",
+        "Answer: E-factor 2.5, a moderate waste burden; lower would be greener."
+      ],
+      "durationInFrames": 1140,
+      "caption": "E-factor = 10.0 / 4.0 = 2.5, so 2.5 g waste per gram of product.",
+      "voiceover": {
+        "text": "Now an E-factor calculation, which is even simpler. A synthesis produces four grams of product and ten grams of waste. Calculate the E-factor and say what it means. Step one, E-factor is the mass of waste divided by the mass of product. Step two, substitute, ten over four. Step three, that's two point five. Step four, the interpretation, two point five grams of waste are produced for every one gram of product. So step five, the answer, the E-factor is two point five, which is a moderate waste burden, and a lower value would mean a greener process. Notice E-factor is purely a mass ratio, it doesn't care about molar masses at all, it just measures the real waste against the real product. That's exactly why it complements atom economy."
+      }
+    },
+    {
+      "id": "concept-catalysts",
+      "type": "concept",
+      "heading": "Catalysts compared across routes",
+      "body": "A catalyst improves rate and selectivity without being consumed. It doesn't appear in the atom economy formula, yet it transforms the practical waste.",
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          {"label": "Route A", "value": 2.0},
+          {"label": "Route B", "value": 4.0},
+          {"label": "Route C", "value": 1.0}
+        ],
+        "unit": "E-factor",
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Routes A and C share 74% atom economy, but C wastes far less."},
+        {"text": "Route C has the lowest E-factor, so it's the greenest overall."},
+        {"text": "One metric isn't enough, you compare atom economy and E-factor together."}
+      ],
+      "secondary": "In Pfizer's redesign, a catalytic palladium step replaced a stoichiometric reagent and cut metal waste by 85%. The catalyst was recovered and reused, not consumed.",
+      "callout": "Lowest E-factor wins, even at equal atom economy.",
+      "durationInFrames": 1110,
+      "caption": "Routes A, B, C E-factors: Route C lowest, so greenest overall.",
+      "voiceover": {
+        "text": "Finally, catalysts, and how we compare whole routes. A catalyst improves rate and selectivity without being consumed, and crucially, it does not appear in the atom economy formula at all, yet it can transform the practical waste of a process. Look at three routes by their E-factor, where lower is better. Routes A and C actually share the same atom economy, seventy-four percent, but their E-factors are very different. Route B is the worst at four. Route A is two. And Route C is just one, the lowest, so Route C is the greenest overall. The lesson here, one metric alone isn't enough, you have to read atom economy and E-factor together, because two routes can look equal on atoms yet differ hugely on real waste. In Pfizer's redesign, swapping a stoichiometric reagent for a catalytic palladium step cut metal waste by eighty-five percent, and the catalyst was recovered and reused, not consumed."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The trap that costs Band 6",
+      "body": "The classic error: high yield means green synthesis.",
+      "secondary": "Not necessarily. A route can give a great yield yet still produce huge solvent waste or rely on hazardous reagents. Always check atom economy and E-factor, and remember a catalyst improves sustainability without changing the atom economy formula.",
+      "mistakeTag": "Where green-chemistry marks vanish",
+      "callout": "Yield is not sustainability. Check the waste metrics.",
+      "durationInFrames": 870,
+      "caption": "High yield does not mean green; check atom economy and E-factor.",
+      "voiceover": {
+        "text": "Here's the trap that costs the top band, and it's the heart of this lesson. Students write that a high yield means a green synthesis. Not necessarily, and it loses marks. A route can give a great yield and still produce an enormous amount of waste, or rely on hazardous solvents and reagents. Yield only tells you how much product you got relative to the theoretical maximum, it says nothing about the waste generated alongside it. So always check the green-chemistry metrics, the atom economy and the E-factor, before you call a route sustainable. And one more point examiners reward, a catalyst improves sustainability without changing the atom economy formula, because it isn't consumed and doesn't appear as a product. Yield is not sustainability. Judge the waste, not just the product."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Route X has atom economy 80% and E-factor 1.0. Route Y has atom economy 65% and E-factor 3.0. Which is more sustainable, and why?",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Atom economy: 80% beats 65%, so X directs more atoms into the product.",
+        "E-factor: 1.0 beats 3.0, so X generates far less waste per gram.",
+        "Both metrics favour Route X.",
+        "Route X is more efficient in atoms and cleaner in practice.",
+        "Answer: Route X, it wins on both atom economy and E-factor."
+      ],
+      "durationInFrames": 960,
+      "caption": "Route X wins on both: higher atom economy and lower E-factor.",
+      "voiceover": {
+        "text": "Quick check, comparing two routes. Route X has atom economy eighty percent and E-factor one point zero. Route Y has atom economy sixty-five percent and E-factor three point zero. Which is more sustainable, and why? Pause and work it through. Right, let's check it. Step one, atom economy, eighty percent beats sixty-five, so Route X directs more of its atoms into the desired product. Step two, E-factor, one point zero beats three point zero, so Route X generates far less waste per gram of product. Step three, both metrics favour Route X. Step four, that means X is more efficient in its atom use and cleaner in actual practice. So the answer, Route X is more sustainable, because it wins on both atom economy and E-factor. When both metrics point the same way, the conclusion is easy. When they disagree, you have to weigh them, which is the harder exam case."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Aspirin: salicylic acid plus acetic anhydride, acid-catalysed esterification.",
+        "Drug development: discovery, preclinical, Phase I to III, then approval.",
+        "Atom economy: MW of product over total product MW, times 100.",
+        "E-factor: mass of waste over mass of product; lower is greener.",
+        "High yield does not mean green; check both metrics."
+      ],
+      "finalPrompt": "Judging a synthesis? Yield isn't enough, evaluate atom economy and E-factor.",
+      "durationInFrames": 1020,
+      "caption": "Five takeaways: aspirin synthesis, development, atom economy, E-factor, the trap.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, aspirin is made from salicylic acid and acetic anhydride in an acid-catalysed esterification, giving aspirin plus ethanoic acid. Second, drug development runs in order, discovery, preclinical, then Phase one, two, and three trials, and finally regulatory approval. Third, atom economy is the molar mass of the desired product over the total product molar mass, times one hundred, and aspirin's is seventy-five percent. Fourth, E-factor is the mass of waste over the mass of product, and a lower value is greener. And fifth, the big one, high yield does not mean green, so always check both metrics. When you judge a synthesis, yield isn't enough, you evaluate the atom economy and the E-factor together. One lesson to go, polymers. See you there."
+      }
+    }
+  ]
+}

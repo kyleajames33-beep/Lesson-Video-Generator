@@ -1,0 +1,245 @@
+{
+  "title": "Vaccination — Active and Passive Immunity",
+  "subtitle": "Four kinds of immunity, and how vaccines protect a whole population",
+  "subject": "Biology",
+  "yearLevel": "Year 12",
+  "module": "Module 7",
+  "lesson": "Lesson 14",
+  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 7 — Infectious Disease",
+  "syllabusDotPoints": [
+    "investigate procedures that can be employed to prevent the spread of disease, including but not limited to: pharmaceuticals, genetic engineering and vaccination (ACSBL124)"
+  ],
+  "moduleLessonCount": 21,
+  "nesaOutcomes": [
+    "BIO12-14",
+    "BIO11/12-4",
+    "BIO11/12-6",
+    "BIO11/12-7"
+  ],
+  "inquiryQuestion": "How can the spread of infectious diseases be controlled?",
+  "lessonIntent": "Students can classify immunity as natural or artificial and active or passive, explain herd immunity using R0, and distinguish control, elimination and eradication.",
+  "examSkill": "Classify a scenario of immunity on both axes, and calculate or interpret a herd immunity threshold from R0.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, vaccination, active and passive immunity. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Vaccination — Active and Passive Immunity (Year 12 Biology, Module 7, Lesson 14)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "From 58,000 cases to 61",
+      "body": "In 1952 the US had 58,000 polio cases. By 1965, after Salk's vaccine, just 61. How does a syringe do that?",
+      "callout": "How does a vaccination program dismantle a disease?",
+      "image": "bioM7L14PolioDecline",
+      "durationInFrames": 1680,
+      "caption": "US polio cases collapsed after the 1955 Salk vaccine rollout.",
+      "voiceover": {
+        "text": "OK, look at these numbers. In nineteen fifty-two, the United States recorded fifty-eight thousand cases of polio, a disease that paralysed children by the thousands every year. Then, on the twelfth of April, nineteen fifty-five, Jonas Salk's polio vaccine was announced, after the largest medical trial in history, nearly two million children. By nineteen fifty-seven, cases had dropped to five thousand six hundred. By nineteen sixty-five, just sixty-one. A disease that terrified a generation of parents was being dismantled by a syringe. Last lesson you learned how a vaccine triggers a primary response and builds memory cells. Today we go wider, the different kinds of immunity a person can have, and how vaccinating enough people protects even those who were never vaccinated at all."
+      }
+    },
+    {
+      "id": "concept-active-passive",
+      "type": "concept",
+      "heading": "Active versus passive",
+      "body": "There are two fundamentally different ways to have antibodies: make them yourself, or receive them ready-made.",
+      "bullets": [
+        {
+          "text": "Active immunity: your own immune system responds and forms memory. Slow to start, but long-lasting."
+        },
+        {
+          "text": "Passive immunity: pre-formed antibodies are transferred in. Immediate, but no memory and temporary."
+        },
+        {
+          "text": "The trade-off is speed versus durability, fast and fleeting, or slow and lasting."
+        }
+      ],
+      "secondary": "Active immunity relies on the primary response from Lesson 13. Passive immunity skips all of that, you simply borrow someone else's antibodies.",
+      "callout": "Make your own and remember, or borrow and forget.",
+      "durationInFrames": 1885,
+      "caption": "Active immunity: own response, memory, lasting. Passive: borrowed antibodies, immediate, temporary.",
+      "voiceover": {
+        "text": "So there are two fundamentally different ways to have protective antibodies in your blood. The first is active immunity. This is where your own immune system meets an antigen and mounts a response, exactly the primary response you studied last lesson, and crucially it forms memory cells. Active immunity is slow to get started, but it lasts a long time, sometimes for life. The second is passive immunity. Here you don't make the antibodies at all, you receive them ready-made from another source. Passive immunity is instant, the antibodies are working the moment they arrive, but here's the catch, your own immune system never gets activated, so no memory cells form, and the protection fades as those borrowed antibodies break down. So the whole contrast is speed versus durability. Active is slow but lasting. Passive is immediate but temporary."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The four boxes",
+      "bullets": [
+        {
+          "text": "Natural active: immunity from actually catching and recovering from an infection."
+        },
+        {
+          "text": "Artificial active: immunity from a vaccine, antigen given deliberately to build memory."
+        },
+        {
+          "text": "Natural passive: maternal antibodies crossing the placenta or in breast milk to a baby."
+        },
+        {
+          "text": "Artificial passive: injected pre-formed antibodies, like antivenom or immunoglobulin."
+        }
+      ],
+      "callout": "Two axes: natural or artificial, crossed with active or passive.",
+      "durationInFrames": 1965,
+      "caption": "Natural active, artificial active, natural passive, artificial passive.",
+      "voiceover": {
+        "text": "Now we cross active and passive with a second axis, natural versus artificial, and that gives us four boxes you need to know. Natural active immunity is when you catch an infection, recover, and your own body builds memory, the hard way. Artificial active immunity is when you get a vaccine, the antigen is given to you deliberately, but your own immune system still does the work and forms the memory. Natural passive immunity is when a baby receives antibodies from its mother, across the placenta before birth and in breast milk afterwards, immediate protection while the baby's own system matures. And artificial passive immunity is when pre-formed antibodies are injected into you, like antivenom after a snakebite, or immunoglobulin after exposure to a disease. So, two axes, natural or artificial, crossed with active or passive, and any real scenario lands in exactly one box."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "",
+          "Active (you make it)",
+          "Passive (you receive it)"
+        ],
+        "rows": [
+          [
+            "Natural",
+            "Infection then recovery",
+            "Maternal antibodies (placenta, milk)"
+          ],
+          [
+            "Artificial",
+            "Vaccination",
+            "Antivenom, immunoglobulin"
+          ],
+          [
+            "Memory?",
+            "Yes, long-lasting",
+            "No, temporary"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concept-herd",
+      "type": "concept",
+      "heading": "Herd immunity protects the vulnerable",
+      "body": "When enough people are immune, transmission chains break, and even the unvaccinated are protected indirectly.",
+      "bullets": [
+        {
+          "text": "It is a population threshold, not everyone being immune. Enough immune people starve the pathogen of hosts."
+        },
+        {
+          "text": "The threshold is 1 minus 1 over R nought, so a higher R nought needs a higher threshold."
+        },
+        {
+          "text": "It protects those who cannot be vaccinated: newborns, the immunocompromised, and non-responders."
+        }
+      ],
+      "secondary": "Measles, with an R nought around 12 to 18, needs about 95 percent coverage. Polio, with an R nought of 5 to 7, needs about 80 to 85 percent.",
+      "callout": "Higher R nought, higher wall of immunity needed.",
+      "durationInFrames": 2300,
+      "caption": "Herd immunity: threshold = 1 minus 1/R0; measles ~95%, polio ~80 to 85%.",
+      "voiceover": {
+        "text": "Here's the idea that makes vaccination so powerful at the population level, herd immunity. When a high enough proportion of a population is immune, the pathogen simply can't find enough susceptible people to keep spreading, so the transmission chains break. And the beautiful part, that protects even the people who aren't immune, because the disease can't reach them. So herd immunity is a population threshold, it does not mean everyone is immune. How high does that threshold sit? It depends on how contagious the disease is, captured by the basic reproduction number, R nought. The threshold equals one minus one over R nought. So the more contagious a disease, the higher the wall of immunity you need. Measles is ferociously contagious, R nought around twelve to eighteen, so it needs roughly ninety-five percent coverage. Polio, with an R nought of five to seven, needs about eighty to eighty-five percent. And the whole point is to protect those who can't be vaccinated, newborns, the immunocompromised, and people whose vaccines didn't take."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Calculate the threshold",
+      "question": "A disease has a basic reproduction number R0 of 5. Calculate the herd immunity threshold. Then explain why measles, with R0 around 16, needs a higher threshold.",
+      "coachNote": "Use threshold = 1 minus 1/R0, then compare the two values.",
+      "steps": [
+        "Threshold = 1 minus 1/R0 = 1 minus 1/5 = 1 minus 0.2 = 0.8.",
+        "So about 80 percent of the population must be immune to break sustained transmission.",
+        "For measles, threshold = 1 minus 1/16 = 1 minus 0.0625, which is about 0.94, or 94 percent.",
+        "A higher R0 means each case infects more people, so a larger fraction must be immune to stop spread.",
+        "Answer: 80 percent for R0 = 5; measles needs about 94 percent because it is far more contagious ✓"
+      ],
+      "durationInFrames": 2140,
+      "caption": "Herd immunity threshold from R0: 80% at R0 = 5, ~94% for measles.",
+      "voiceover": {
+        "text": "Let's actually calculate one, because this is an exam favourite. A disease has a basic reproduction number, R nought, of five. Find the herd immunity threshold. We use threshold equals one minus one over R nought. So that's one minus one over five, which is one minus zero point two, giving zero point eight. In other words, about eighty percent of the population needs to be immune to break sustained transmission. Now compare measles, with an R nought of around sixteen. Threshold equals one minus one over sixteen, that's one minus zero point zero six, which comes out to about zero point nine four, or ninety-four percent. Why is measles higher? Because a higher R nought means each infected person infects many more people, so you need a larger fraction immune to stop the spread. The answer, eighty percent when R nought is five, and about ninety-four percent for measles, simply because measles is so much more contagious."
+      }
+    },
+    {
+      "id": "concept-control",
+      "type": "concept",
+      "heading": "Control, elimination, eradication",
+      "body": "These three words are not interchangeable. They describe increasing levels of victory over a disease.",
+      "bullets": [
+        {
+          "text": "Control: incidence reduced to an acceptable level, but the disease is still present."
+        },
+        {
+          "text": "Elimination: zero cases in a defined area, but the pathogen still exists elsewhere."
+        },
+        {
+          "text": "Eradication: permanent global zero. Only smallpox has ever been eradicated, in 1980."
+        }
+      ],
+      "secondary": "Eradication is hard because of animal reservoirs, rapid antigenic variation, and long asymptomatic spread. Elimination is fragile, importation can restart an outbreak if coverage slips.",
+      "callout": "Reduced, locally zero, or globally gone for good.",
+      "durationInFrames": 2140,
+      "caption": "Control (still present), elimination (locally zero), eradication (global zero, only smallpox).",
+      "voiceover": {
+        "text": "Finally, three words that examiners love to test, because students mix them up, control, elimination, and eradication. Control means you've reduced the incidence of a disease to an acceptable level, but it's still around, like seasonal flu. Elimination is stronger, it means zero cases in a defined area, a country or region, but the pathogen still exists elsewhere in the world. Australia, for instance, has eliminated measles. And eradication is the ultimate goal, permanent global zero, the pathogen wiped out everywhere. Only one human disease has ever been eradicated, smallpox, declared gone in nineteen eighty. Why is eradication so rare? Because some diseases hide in animal reservoirs, some change their antigens too fast for vaccines to keep up, and some spread silently before symptoms appear. And elimination is fragile, if vaccination coverage slips below the herd immunity threshold, a single imported case can spark a new outbreak. That's why we keep vaccinating even when a disease seems gone."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking passive immunity gives long-term protection because antibodies are present. It doesn't, there's no memory.",
+      "secondary": "Trap 2: thinking herd immunity means everyone is immune. It's a threshold, not universal immunity, and once a country eliminates a disease, vaccination still cannot stop, because importation can restart transmission whenever coverage drops.",
+      "mistakeTag": "Passive immunity and herd immunity",
+      "callout": "Passive means no memory; herd immunity is a threshold, not everyone.",
+      "durationInFrames": 1830,
+      "caption": "Passive immunity lacks memory; herd immunity is a population threshold.",
+      "voiceover": {
+        "text": "Two traps that cost marks. Trap one, thinking passive immunity gives long-term protection just because there are antibodies present. It doesn't. With passive immunity your own lymphocytes are never activated, so no memory cells form, and once those borrowed antibodies break down, the protection is simply gone. Immediate, yes, lasting, no. Trap two, thinking herd immunity means every single person is immune. It doesn't. It's a population threshold, the point where enough people are immune that transmission chains can't sustain themselves. Plenty of susceptible people exist below that threshold, they're just protected indirectly. And a related trap, assuming that once a country eliminates a disease it can stop vaccinating. It can't. As long as the pathogen exists anywhere in the world, an imported case can reignite an outbreak the moment coverage drops below the threshold."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A newborn baby is protected against measles for a few months without ever being vaccinated, then loses that protection. Classify this immunity on both axes and explain why it fades.",
+      "pausePrompt": "Pause and reason it through.",
+      "answerSteps": [
+        "The antibodies came from the mother, transferred naturally across the placenta and in breast milk.",
+        "They were pre-formed and received, not made by the baby, so this is passive immunity.",
+        "On both axes, this is natural passive immunity.",
+        "It fades because the baby's own immune system was never activated, so no memory cells formed.",
+        "Answer: natural passive immunity; it fades as the borrowed maternal antibodies are broken down ✓"
+      ],
+      "durationInFrames": 1990,
+      "caption": "Maternal protection is natural passive immunity, and it fades with no memory.",
+      "voiceover": {
+        "text": "Quick check. A newborn baby is protected against measles for the first few months of life, even though it has never been vaccinated, and then that protection fades away. Classify this immunity on both axes, and explain why it fades. Pause and reason it through. Right, work it through. Where did the antibodies come from? The mother, transferred naturally across the placenta before birth and in breast milk afterwards. Were they made by the baby, or received ready-made? Received, so this is passive immunity. Put both axes together and it's natural passive immunity. And why does it fade? Because the baby's own immune system was never activated by an antigen, so no memory cells were ever formed. The protection lasts exactly as long as those borrowed maternal antibodies survive, and as they break down, the protection goes with them. Natural passive immunity, temporary by its very nature."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Active immunity: your own response, forms memory, slow but lasting. Passive: borrowed antibodies, immediate but temporary.",
+        "Four boxes: natural active (infection), artificial active (vaccine), natural passive (maternal), artificial passive (antivenom).",
+        "Herd immunity threshold = 1 minus 1/R0; higher R0 needs higher coverage (measles ~95%).",
+        "Herd immunity protects those who cannot be vaccinated by breaking transmission chains.",
+        "Control (still present) < elimination (locally zero) < eradication (global zero, only smallpox)."
+      ],
+      "finalPrompt": "Classifying immunity? Ask two questions: natural or artificial, and active or passive.",
+      "durationInFrames": 1965,
+      "caption": "Five takeaways: active vs passive, the four boxes, herd immunity, and three levels of control.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, active immunity is your own response, it forms memory, and it's slow but lasting, while passive immunity is borrowed antibodies, immediate but temporary. Second, the four boxes, natural active is infection, artificial active is a vaccine, natural passive is maternal antibodies, and artificial passive is something like antivenom. Third, the herd immunity threshold equals one minus one over R nought, so a more contagious disease needs higher coverage, measles around ninety-five percent. Fourth, herd immunity protects the people who can't be vaccinated by breaking transmission chains. And fifth, the three levels of victory, control where the disease is still present, elimination where it's locally zero, and eradication where it's globally gone, which so far means only smallpox. Whenever you classify immunity, ask two questions, natural or artificial, and active or passive. See you next lesson."
+      }
+    }
+  ]
+}

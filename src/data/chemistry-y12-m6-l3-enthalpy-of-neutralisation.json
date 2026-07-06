@@ -1,0 +1,198 @@
+{
+  "title": "Enthalpy of Neutralisation",
+  "subtitle": "Measuring the heat when acid meets base",
+  "subject": "Chemistry",
+  "yearLevel": "Year 12",
+  "module": "Module 6",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 6: Acid/Base Reactions",
+  "syllabusDotPoints": [
+    "conduct a practical investigation to measure the enthalpy of neutralisation (ACSCH093)"
+  ],
+  "moduleLessonCount": 19,
+  "nesaOutcomes": [
+    "CH12-13",
+    "CH11/12-2",
+    "CH11/12-5",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "What is an acid and what is a base?",
+  "lessonIntent": "Students can measure and calculate the molar enthalpy of neutralisation from calorimetry data and explain why strong and weak combinations differ.",
+  "examSkill": "Use q = mcΔT with total mass, find n(H₂O) from the limiting reagent, then ΔHn = −q/n; explain why weak species give a less negative value and why heat loss lowers the result.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, the enthalpy of neutralisation. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Enthalpy of Neutralisation (Year 12 Chemistry, Module 6, Lesson 3)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The same number, every time",
+      "body": "In 1883, Thomsen mixed strong acids with strong bases and measured 57 kilojoules per mole of water, every single time.",
+      "callout": "Why is the heat identical, no matter which strong acid or base?",
+      "image": "neutralisationHeatBenchmark",
+      "durationInFrames": 660,
+      "caption": "Strong acid plus strong base always releases about 57 kJ per mole of water.",
+      "voiceover": {
+        "text": "OK, here's a result that puzzled chemists for a decade. Back in eighteen eighty-three, Julius Thomsen carefully measured the heat released when strong acids neutralise strong bases. And he got the same number every single time, about fifty-seven kilojoules per mole of water formed, no matter which strong acid or which strong base he picked. Hydrochloric with sodium hydroxide, nitric with potassium hydroxide, all of them, the same. Why on earth would the heat be identical? And then, when chemists tried a weak acid, the number dropped. Today you'll measure this yourself, calculate it, and explain both of those facts."
+      }
+    },
+    {
+      "id": "concept-why",
+      "type": "concept",
+      "heading": "Why strong plus strong is always 57",
+      "body": "When both are strong, every neutralisation is really the same reaction at the ionic level.",
+      "bullets": [
+        {"text": "Strong acids arrive fully ionised, supplying H⁺. Strong bases supply OH⁻."},
+        {"text": "The only reaction is H⁺ + OH⁻ → H₂O, releasing about 57 kJ per mole."},
+        {"text": "The spectator ions, like Na⁺ and Cl⁻, do nothing and absorb no energy."}
+      ],
+      "secondary": "Because the actual reaction is identical every time, the heat per mole of water is identical: ΔHn ≈ −57 kJ mol⁻¹.",
+      "callout": "Same net ionic equation means the same heat, every time.",
+      "durationInFrames": 1110,
+      "caption": "Strong + strong is always H⁺ + OH⁻ → H₂O, so ΔHn ≈ −57 kJ mol⁻¹.",
+      "voiceover": {
+        "text": "Here's why that constant number appears. When both the acid and the base are strong, they're already fully split into ions before anything mixes. The strong acid has handed over all its hydrogen ions, the strong base has released all its hydroxide. So when you pour them together, the only reaction that actually happens is hydrogen ion plus hydroxide ion forms water. Everything else, the sodium, the chloride, the potassium, just floats there as spectator ions, doing nothing and absorbing no energy. And since the real chemistry is the same identical reaction every time, forming the same oxygen hydrogen bond, it releases the same heat, about fifty-seven kilojoules per mole of water. That's why Thomsen kept getting one number."
+      },
+      "diagram": {
+        "type": "calorimeter"
+      }
+    },
+    {
+      "id": "concept-weak",
+      "type": "concept",
+      "heading": "Why weak acids give less heat",
+      "body": "A weak acid is barely ionised before the reaction, so some heat is spent finishing the job.",
+      "bullets": [
+        {"text": "Acetic acid is only about one percent ionised before any base is added."},
+        {"text": "As OH⁻ removes H⁺, the equilibrium shifts right, ionising more acid."},
+        {"text": "That extra ionisation is endothermic, so it eats into the heat released."}
+      ],
+      "secondary": "Net heat = (heat from H⁺ + OH⁻ → H₂O) − (energy to finish ionising the weak acid), so |ΔHn| comes out below 57.",
+      "callout": "Less heat isn't 'less acidic'; it's energy spent completing ionisation.",
+      "durationInFrames": 1170,
+      "caption": "Weak acid: partial ionisation costs energy, so |ΔHn| < 57 kJ mol⁻¹.",
+      "voiceover": {
+        "text": "Now why does a weak acid release less heat? Take acetic acid. At normal concentrations only about one percent of it is actually ionised before you add any base, so most of it is sitting there as whole, un-ionised molecules. When you add the strong base, the hydroxide grabs the few hydrogen ions available, which pulls the acetic acid equilibrium further to the right, forcing more of it to ionise. But breaking that oxygen hydrogen bond to ionise is endothermic, it costs energy. And that energy comes straight out of the heat the water-forming step releases. So the net heat measured is the fifty-seven minus the cost of finishing the ionisation, which lands the answer below fifty-seven. For a full-marks answer, say all three parts, partially ionised, endothermic ionisation step, reduced net heat. Don't just say it's less acidic, that explains nothing."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words and formulas you need",
+      "bullets": [
+        {"text": "Enthalpy of neutralisation, ΔHn: heat released per mole of water formed."},
+        {"text": "q = mcΔT, where m is the total mass and c is 4.18 J g⁻¹ °C⁻¹."},
+        {"text": "n(H₂O) equals the moles of the limiting reagent, found from n = cV."},
+        {"text": "ΔHn = −q ÷ n(H₂O), then divide by 1000 for kilojoules."}
+      ],
+      "callout": "The mass in q = mcΔT is acid plus base combined, not just one of them.",
+      "durationInFrames": 1020,
+      "caption": "ΔHn, q = mcΔT (total mass, c = 4.18), n(H₂O) = limiting reagent, ΔHn = −q/n.",
+      "voiceover": {
+        "text": "Let's set out the tools. The molar enthalpy of neutralisation, written delta H sub n, is the heat released per mole of water formed. To get the heat, use q equals m c delta T, where m is the total mass of solution, c is the specific heat capacity, four-point-one-eight joules per gram per degree, and delta T is the temperature rise. Crucial point, the mass is the acid and base combined, since all the heat warms the whole mixture, not just one part. Then the moles of water formed equal the moles of the limiting reagent, which you get from n equals c times V. Finally, delta H sub n equals minus q divided by the moles of water, and divide by a thousand to land in kilojoules. The minus sign just records that the reaction is exothermic."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "ΔHn from data",
+      "question": "50.0 mL of 1.00 mol L⁻¹ HCl mixes with 50.0 mL of 1.00 mol L⁻¹ NaOH. T rises 21.5 → 28.0 °C. Find ΔHn.",
+      "coachNote": "Equal moles, so neither is in excess. Use the total volume for mass.",
+      "steps": [
+        "Total mass = (50.0 + 50.0) × 1.00 = 100.0 g; ΔT = 28.0 − 21.5 = 6.5 °C",
+        "q = mcΔT = 100.0 × 4.18 × 6.5 = 2717 J",
+        "n(HCl) = n(NaOH) = 1.00 × 0.0500 = 0.0500 mol, so n(H₂O) = 0.0500 mol",
+        "ΔHn = −q ÷ n = −2717 ÷ 0.0500 = −54 340 J mol⁻¹",
+        "Answer: ΔHn = −54.3 kJ mol⁻¹ (a bit above −57 due to heat loss) ✓"
+      ],
+      "durationInFrames": 1350,
+      "caption": "q = 2717 J, n = 0.0500 mol, ΔHn = −54.3 kJ mol⁻¹.",
+      "voiceover": {
+        "text": "Let's calculate one. Fifty millilitres of one molar hydrochloric acid mixes with fifty millilitres of one molar sodium hydroxide, and the temperature climbs from twenty-one-point-five to twenty-eight degrees. Find delta H sub n. Step one, the total mass is the combined volume, a hundred millilitres, times one gram per millilitre, so a hundred grams, and the temperature rise is six-point-five degrees. Step two, q equals m c delta T, a hundred times four-point-one-eight times six-point-five, which is two thousand seven hundred and seventeen joules. Step three, both reactants give nought-point-zero-five moles, equal amounts, so the moles of water formed is also nought-point-zero-five. Step four, delta H sub n is minus q over n, minus two-seven-one-seven over nought-point-zero-five, which is minus fifty-four-point-three kilojoules per mole. Notice it's a little less negative than fifty-seven, exactly what heat loss to the surroundings would do."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Unequal volumes",
+      "question": "30.0 mL of 2.00 mol L⁻¹ HNO₃ mixes with 50.0 mL of 1.00 mol L⁻¹ NaOH. T rises 20.0 → 26.4 °C. Find ΔHn.",
+      "coachNote": "Volumes and concentrations differ, so find the limiting reagent first.",
+      "steps": [
+        "n(H⁺) = 2.00 × 0.0300 = 0.0600 mol; n(OH⁻) = 1.00 × 0.0500 = 0.0500 mol",
+        "OH⁻ is limiting (0.0500 < 0.0600), so n(H₂O) = 0.0500 mol",
+        "Total mass = (30.0 + 50.0) × 1.00 = 80.0 g; ΔT = 26.4 − 20.0 = 6.4 °C",
+        "q = mcΔT = 80.0 × 4.18 × 6.4 = 2140 J",
+        "ΔHn = −2140 ÷ 0.0500 = −42 800 J mol⁻¹ = −42.8 kJ mol⁻¹ ✓"
+      ],
+      "durationInFrames": 1410,
+      "caption": "OH⁻ limiting → n = 0.0500 mol; q = 2140 J; ΔHn = −42.8 kJ mol⁻¹.",
+      "voiceover": {
+        "text": "Now one where the volumes don't match, so the limiting reagent matters. Thirty millilitres of two molar nitric acid mixes with fifty millilitres of one molar sodium hydroxide, and the temperature rises from twenty to twenty-six-point-four degrees. Step one, count the moles. Hydrogen ions are two times nought-point-zero-three, that's nought-point-zero-six moles. Hydroxide is one times nought-point-zero-five, that's nought-point-zero-five moles. Step two, hydroxide is smaller, so it's limiting, and the moles of water formed is nought-point-zero-five, not nought-point-zero-six. Step three, the total mass is eighty grams and the rise is six-point-four degrees. Step four, q is eighty times four-point-one-eight times six-point-four, which is two thousand one hundred and forty joules. Step five, delta H sub n is minus twenty-one-forty over nought-point-zero-five, giving minus forty-two-point-eight kilojoules per mole. Always check which reactant runs out first."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: using −57 kJ mol⁻¹ for every neutralisation. It only holds for strong acid with strong base.",
+      "secondary": "Trap 2: using only the acid's mass in q = mcΔT. Use the combined mass, because all the heat warms the whole mixture. Trap 3: expecting the experimental value to beat −57. Heat loss always makes it less negative, never more.",
+      "mistakeTag": "Where neutralisation marks slip",
+      "callout": "−57 is strong-only; use total mass; experiment lands above −57.",
+      "durationInFrames": 1230,
+      "caption": "−57 is strong+strong only; total mass in q=mcΔT; heat loss makes ΔHn less negative.",
+      "voiceover": {
+        "text": "Three traps. Trap one, slapping minus fifty-seven kilojoules per mole on every neutralisation. That value is only for strong acid with strong base. The moment a weak acid or weak base is involved, the magnitude drops below fifty-seven, because energy goes into ionisation. Trap two, putting only the acid's mass into q equals m c delta T. The heat warms the entire mixture, so you must use the combined mass of acid plus base. Using half the mass halves your q. Trap three, expecting your experiment to come out more negative than fifty-seven. It won't. Heat always leaks out of a foam cup, so the measured temperature rise is a little low, which makes your delta H sub n less negative than the true value. If you ever calculate something past fifty-seven, like minus fifty-nine, check your working, because a systematic error can't do that."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "40.0 mL of 0.500 mol L⁻¹ H₂SO₄ mixes with 60.0 mL of 0.500 mol L⁻¹ NaOH. How many moles of water form?",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "H₂SO₄ is diprotic: n(H⁺) = 2 × 0.500 × 0.0400 = 0.0400 mol",
+        "n(OH⁻) = 0.500 × 0.0600 = 0.0300 mol",
+        "Compare: OH⁻ (0.0300) is less than H⁺ (0.0400), so OH⁻ is limiting",
+        "Water formed matches the limiting reagent's reacted protons",
+        "Answer: n(H₂O) = 0.0300 mol ✓"
+      ],
+      "durationInFrames": 1110,
+      "caption": "Diprotic acid gives 0.0400 mol H⁺, but OH⁻ limits, so n(H₂O) = 0.0300 mol.",
+      "voiceover": {
+        "text": "Quick check, and this one hides two traps. Forty millilitres of nought-point-five molar sulfuric acid mixes with sixty millilitres of nought-point-five molar sodium hydroxide. How many moles of water form? Pause and work it through. Right, let's check it. First trap, sulfuric acid is diprotic, so each mole gives two moles of hydrogen ions. That's two times nought-point-five times nought-point-zero-four, which is nought-point-zero-four moles of hydrogen ions. The hydroxide is nought-point-five times nought-point-zero-six, which is nought-point-zero-three moles. Second trap, even though there's a bigger volume of base, the hydroxide moles, nought-point-zero-three, are fewer than the hydrogen ion moles, nought-point-zero-four, so hydroxide is limiting. The water formed matches the limiting reagent, so the answer is nought-point-zero-three moles of water. Count the diprotic protons, then find the limiting one."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Strong + strong is always H⁺ + OH⁻ → H₂O, so ΔHn ≈ −57 kJ mol⁻¹.",
+        "Weak acid or base gives |ΔHn| < 57 because ionisation consumes energy.",
+        "q = mcΔT with the total mass and c = 4.18 J g⁻¹ °C⁻¹.",
+        "n(H₂O) is the limiting reagent's moles; then ΔHn = −q ÷ n.",
+        "Heat loss makes the experimental value less negative, never more."
+      ],
+      "finalPrompt": "Before −57: are BOTH the acid and the base strong?",
+      "durationInFrames": 1140,
+      "caption": "Five takeaways: −57 for strong+strong, weak gives less, q=mcΔT total mass, ΔHn=−q/n, heat loss lowers it.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, strong acid with strong base is always the same reaction, hydrogen ion plus hydroxide gives water, so delta H sub n is about minus fifty-seven kilojoules per mole. Second, if the acid or base is weak, the magnitude is less than fifty-seven, because energy is spent finishing the ionisation. Third, calculate the heat with q equals m c delta T, using the total combined mass and a specific heat of four-point-one-eight. Fourth, the moles of water equal the moles of the limiting reagent, then delta H sub n is minus q over that. And fifth, heat loss from the calorimeter always makes your measured value less negative than the truth, never more. Next lesson, we put neutralisation to work in everyday life and industry. See you there."
+      }
+    }
+  ]
+}

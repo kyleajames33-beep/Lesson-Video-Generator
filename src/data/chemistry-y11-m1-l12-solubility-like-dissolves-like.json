@@ -1,0 +1,216 @@
+{
+  "title": "Solubility and Like-Dissolves-Like",
+  "subtitle": "Why polarity decides what dissolves in what",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 12",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 1: Properties and Structure of Matter",
+  "syllabusDotPoints": [
+    "explore the similarities and differences between the nature of intermolecular and intramolecular bonds and the strength of the forces associated with each, in order to explain the solubility of substances in solvents"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-7"],
+  "inquiryQuestion": "What binds atoms together in elements and compounds?",
+  "lessonIntent": "Students can predict and explain solubility using the like-dissolves-like rule and the energy balance of breaking and forming intermolecular forces.",
+  "examSkill": "Decide if solute and solvent have compatible intermolecular forces, then justify solubility with the energy balance, naming ion–dipole or hydrogen bonding where relevant.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Chemistry. Today, solubility, why like dissolves like. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Solubility and Like-Dissolves-Like (Year 11 Chemistry, Module 1, Lesson 12)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Salt loves water, wax loves oil",
+      "body": "Salt dissolves in water but not oil. Wax dissolves in oil but not water. There's one rule behind both.",
+      "callout": "Polarity is the matchmaker for what dissolves.",
+      "durationInFrames": 690,
+      "caption": "Salt dissolves in water, wax dissolves in oil; polarity explains both.",
+      "voiceover": {
+        "text": "OK, think about your kitchen for a second. Table salt dissolves easily in water, but drop it in oil and nothing happens. Candle wax is the opposite, it dissolves happily in oil but refuses to mix with water. So what's going on? It turns out there's a single rule sitting behind both of these, and it's all about polarity. The salt and the water are a match because their forces are compatible. The wax and the oil are a match for the same reason. By the end of today, you'll be able to look at any solute and solvent and predict whether they'll mix, just from how polar they are."
+      }
+    },
+    {
+      "id": "concept-energy",
+      "type": "concept",
+      "heading": "Dissolving is an energy balance",
+      "body": "To dissolve, you break solute–solute forces, break solvent–solvent forces, then form new solute–solvent forces.",
+      "image": "l12DissolvingEnergyBalance",
+      "bullets": [
+        {"text": "Break the solute's own forces, which costs energy."},
+        {"text": "Break some of the solvent's forces, which also costs energy."},
+        {"text": "Form new solute–solvent forces, which releases energy."}
+      ],
+      "secondary": "Dissolving is favourable when the energy released in the third step compensates for the energy spent in the first two.",
+      "callout": "Dissolving works when the new forces pay back the broken ones.",
+      "durationInFrames": 1140,
+      "caption": "Dissolving: break solute forces, break solvent forces, form solute–solvent forces.",
+      "voiceover": {
+        "text": "Let's get to the real reason things dissolve, and it's an energy story in three parts. First, you have to pull the solute particles apart, breaking the forces holding them together, and that costs energy. Second, you have to push the solvent molecules aside to make room, breaking some of their forces too, which also costs energy. Third, and this is the payoff, new forces form between the solute and the solvent, and that releases energy. So the whole thing is a balance sheet. Dissolving happens when the energy released in that third step is enough to pay back what you spent in the first two. And the key to whether it pays back is whether the new solute to solvent forces are the same type as the ones you broke. That's the deep version of like dissolves like."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {"text": "Solute: the substance being dissolved, like the salt."},
+        {"text": "Solvent: the substance doing the dissolving, like the water."},
+        {"text": "Hydrophilic: water-loving, dissolves well in water (polar or ionic)."},
+        {"text": "Hydrophobic: water-fearing, won't dissolve in water (non-polar)."}
+      ],
+      "callout": "Hydrophilic mixes with water; hydrophobic avoids it.",
+      "durationInFrames": 960,
+      "caption": "Solute, solvent, hydrophilic, hydrophobic.",
+      "voiceover": {
+        "text": "Quick vocabulary so the rest of the lesson reads cleanly. The solute is the thing being dissolved, that's the salt. The solvent is the thing doing the dissolving, that's the water. Then two words that come up constantly. Hydrophilic literally means water-loving, and it describes substances that dissolve well in water, the polar and ionic ones. Hydrophobic means water-fearing, and it describes the non-polar substances that just won't dissolve in water, like oils and waxes. Keep those four straight, and you can describe almost any solubility situation precisely."
+      }
+    },
+    {
+      "id": "concept-rule",
+      "type": "concept",
+      "heading": "Like dissolves like",
+      "body": "Polar and ionic solutes dissolve in polar solvents. Non-polar solutes dissolve in non-polar solvents.",
+      "diagram": {
+        "type": "venn",
+        "leftLabel": "Polar / ionic",
+        "rightLabel": "Non-polar",
+        "overlapLabel": "Like dissolves like",
+        "delay": 18
+      },
+      "bullets": [
+        {"text": "Ionic in water: ion–dipole forces hold the ions in solution."},
+        {"text": "Polar in water: hydrogen bonds or dipole forces do the job."},
+        {"text": "Non-polar in non-polar: dispersion forces match dispersion forces."}
+      ],
+      "secondary": "A non-polar solute in water fails because only weak dispersion is offered to replace strong hydrogen bonds.",
+      "callout": "Match the force types, and it dissolves.",
+      "durationInFrames": 1140,
+      "caption": "Like dissolves like: matching force types let a solute dissolve.",
+      "voiceover": {
+        "text": "Here's the rule in its everyday form, like dissolves like. If the solute and the solvent have the same kind of intermolecular forces, they'll usually mix. Let's run the cases. An ionic solid like salt dissolves in water because the ions can form ion to dipole forces with the polar water molecules, and those are strong enough to pay back the energy of breaking the lattice. A polar molecule like ethanol dissolves in water because it can form hydrogen bonds or dipole forces with the water. And a non-polar substance like iodine dissolves in a non-polar solvent like hexane, because dispersion forces on both sides match up. Now the failure case. Drop a non-polar solute into water and it can only offer weak dispersion forces, which can't pay back the strong hydrogen bonds you'd have to break in the water. No payback, no dissolving."
+      }
+    },
+    {
+      "id": "concept-water",
+      "type": "concept",
+      "heading": "Water, the exceptional solvent",
+      "body": "Water dissolves ionic compounds because its dipoles can grip ions and pull them out of the lattice.",
+      "image": "l12HydrationOfIons",
+      "bullets": [
+        {"text": "Oxygen is highly electronegative, so water has a strong permanent dipole."},
+        {"text": "The δ⁻ oxygen points at cations; the δ⁺ hydrogens point at anions."},
+        {"text": "Ion–dipole forces overcome the lattice, surrounding each ion in a hydration shell."}
+      ],
+      "secondary": "If the lattice is too strong, like BaSO₄ or AgCl, hydration can't compensate, so the compound stays insoluble.",
+      "callout": "Water's dipoles wrap each ion in a hydration shell.",
+      "durationInFrames": 1170,
+      "caption": "Water hydrates ions: δ⁻O grips cations, δ⁺H grips anions, ions leave the lattice.",
+      "voiceover": {
+        "text": "Water deserves its own moment, because it's the standout solvent in chemistry and biology. Why is it so good? Two reasons. The oxygen atom is strongly electronegative, so water carries a big permanent dipole, with a clear negative end and positive ends. And each water molecule can hydrogen bond to several others. Now watch what happens when salt meets water. The negative oxygen end of the water points straight at the sodium cations, and the positive hydrogen ends point at the chloride anions. Those ion to dipole forces tug the ions right out of the lattice, and each freed ion ends up wrapped in a shell of water molecules, what we call a hydration shell. One caution though. If a lattice is extremely strong, like barium sulfate or silver chloride, even water's grip isn't enough to pay it back, so those compounds stay stubbornly insoluble."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Why oil and water don't mix",
+      "question": "Explain why oil does not dissolve in water, using the like-dissolves-like rule and the energy balance.",
+      "coachNote": "Compare the force types, then weigh the energy.",
+      "steps": [
+        "Water is polar with strong hydrogen bonds between its molecules",
+        "Oil is non-polar, so it offers only weak dispersion forces",
+        "To mix, water's hydrogen bonds must be broken, costing a lot of energy",
+        "The weak oil–water dispersion forces release too little energy to pay that back",
+        "Answer: the energy balance is unfavourable, so oil and water stay separate ✓"
+      ],
+      "durationInFrames": 1290,
+      "caption": "Oil offers only dispersion; it can't pay back water's broken H-bonds, so they don't mix.",
+      "voiceover": {
+        "text": "Let's turn the rule into a full-mark answer. Explain why oil doesn't dissolve in water. Step one, describe the water. Water is polar and its molecules grip each other with strong hydrogen bonds. Step two, describe the oil. Oil is non-polar, so the only force it can offer is weak dispersion. Step three, think about the cost. To slot oil into water, you'd have to break a lot of those strong hydrogen bonds, and that costs a lot of energy. Step four, think about the payback. The dispersion forces that would form between oil and water are weak, so they release far too little energy to cover that cost. So the full answer, the energy balance is unfavourable, the new forces can't pay back the broken ones, and the two simply stay separate. Notice the answer never just says they don't mix. It explains the energy reason."
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "What holds Na⁺ in solution",
+      "question": "When NaCl dissolves in water, which interaction stabilises the Na⁺ ion, and how are the water molecules oriented?",
+      "coachNote": "Name the force, then describe the orientation.",
+      "steps": [
+        "Na⁺ is a cation, so it attracts the negative end of polar water",
+        "The interaction is an ion–dipole force, not a covalent bond",
+        "The δ⁻ oxygen of each water molecule points toward the Na⁺ ion",
+        "Several waters surround the ion, forming a hydration shell",
+        "Answer: ion–dipole forces, with δ⁻ oxygen oriented toward Na⁺ ✓"
+      ],
+      "durationInFrames": 1260,
+      "caption": "Ion–dipole forces stabilise Na⁺; δ⁻ oxygen points toward the cation.",
+      "voiceover": {
+        "text": "Here's a question that traps a lot of students. When salt dissolves, what actually holds a sodium ion in solution, and how are the waters arranged around it? Step one, sodium is a positive ion, a cation, so it's going to attract the negative part of any polar molecule nearby. Step two, name the force properly. It's an ion to dipole force, the attraction between a full ionic charge and a molecular dipole. It is not a covalent bond, and it's not just dispersion. Step three, the orientation. Because the oxygen end of water is the negative end, the oxygen atoms point straight at the sodium ion. Step four, several water molecules do this at once, forming a hydration shell around the ion. So the answer is ion to dipole forces, with the negative oxygen of water oriented toward the sodium. Getting the force named correctly is what separates a band six answer from a vague one."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Three traps",
+      "body": "Trap 1: saying salt dissolves because of dispersion or covalent bonds. It's ion–dipole forces.",
+      "secondary": "Trap 2: assuming everything dissolves in water. Strong lattices like AgCl stay insoluble. Trap 3: forgetting that dissolving costs energy too, not just releases it.",
+      "mistakeTag": "Where solubility marks vanish",
+      "callout": "Name ion–dipole for ionic; not everything dissolves; account for the energy cost.",
+      "durationInFrames": 1200,
+      "caption": "Salt dissolves via ion–dipole; not all dissolves; dissolving has an energy cost.",
+      "voiceover": {
+        "text": "Three traps to dodge. Trap one, naming the wrong force for an ionic solid in water. Students often write dispersion forces, or even covalent bonding, but the correct answer is ion to dipole forces, the pull between the full ionic charge and the water dipole. Get the name right. Trap two, assuming everything dissolves in water if you stir hard enough. It doesn't. Compounds with very strong lattices, like silver chloride or barium sulfate, stay insoluble because hydration can't pay back the lattice energy. Trap three, treating dissolving as only releasing energy. Remember, you spend energy breaking the solute's forces and the solvent's forces first. Dissolving is favourable only when the new forces release enough to cover that spending."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Predict whether sucrose (a polar molecule with many –OH groups) dissolves in water, and explain using like-dissolves-like.",
+      "pausePrompt": "Pause and work it through.",
+      "answerSteps": [
+        "Sucrose is polar and carries many –OH groups, so it can hydrogen bond",
+        "Water is polar and also hydrogen bonds, so the force types match",
+        "New sucrose–water hydrogen bonds form, releasing energy",
+        "That energy compensates for breaking sucrose–sucrose and water–water forces",
+        "Answer: yes, sucrose is soluble in water (like dissolves like) ✓"
+      ],
+      "durationInFrames": 1170,
+      "caption": "Sucrose hydrogen bonds with water, so it dissolves; like dissolves like.",
+      "voiceover": {
+        "text": "Quick check to put it all together. Predict whether sucrose, which is table sugar, dissolves in water, and explain it. The clue is that sucrose is polar and has lots of O H groups. Pause and work it through. Right, let's check it. Step one, those O H groups mean sucrose can form hydrogen bonds. Step two, water is also polar and loves to hydrogen bond, so the force types match perfectly. Step three, when sucrose meets water, new hydrogen bonds form between them, releasing energy. Step four, that released energy pays back the cost of pulling sucrose molecules apart and pushing water molecules aside. So yes, sucrose dissolves readily in water, a textbook case of like dissolves like, polar with polar."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Dissolving is an energy balance: break two sets of forces, form one new set.",
+        "Like dissolves like: polar with polar, non-polar with non-polar.",
+        "Ionic compounds dissolve in water via ion–dipole forces.",
+        "Water is exceptional: strong dipole, hydrogen bonding, hydration shells.",
+        "Strong lattices like AgCl stay insoluble; hydration can't pay them back."
+      ],
+      "finalPrompt": "Predicting solubility? Ask whether the force types match.",
+      "durationInFrames": 1110,
+      "caption": "Five takeaways: energy balance, like-dissolves-like, ion–dipole, water, insolubility.",
+      "voiceover": {
+        "text": "Let's lock it in. Five things to take away. First, dissolving is an energy balance, you break the solute's forces and the solvent's forces, then form new solute to solvent forces, and it only works if the new forces pay back the broken ones. Second, like dissolves like, polar mixes with polar, non-polar mixes with non-polar. Third, ionic compounds dissolve in water through ion to dipole forces. Fourth, water is the exceptional solvent because of its strong dipole, its hydrogen bonding, and the hydration shells it forms around ions. And fifth, some compounds with very strong lattices, like silver chloride, just stay insoluble, because hydration can't pay back the lattice energy. Whenever you predict solubility, ask one question, do the force types match? See you next lesson."
+      }
+    }
+  ]
+}

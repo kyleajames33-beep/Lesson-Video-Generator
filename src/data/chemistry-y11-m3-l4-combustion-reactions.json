@@ -1,0 +1,307 @@
+{
+  "title": "Combustion Reactions",
+  "subtitle": "Why complete burning is safe and incomplete burning kills",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 3: Reactive Chemistry",
+  "syllabusDotPoints": [
+    "Conduct investigations to predict and identify the products of combustion reactions",
+    "Investigate complete and incomplete combustion of hydrocarbons and write balanced chemical equations"
+  ],
+  "lessonIntent": "Students can write balanced equations for complete and incomplete combustion of a hydrocarbon and explain why CO is dangerous at far lower concentrations than CO₂.",
+  "examSkill": "Predict the products of complete or incomplete combustion based on oxygen availability, balance the resulting hydrocarbon equation, and justify the toxicology of CO using haemoglobin affinity.",
+  "productionRole": "production",
+  "productionNotes": "Mirrors site lesson `subjects/chemistry/year11/module3/lesson04.html`. Real-world anchor: Bushfire chemistry — fire front (complete) vs smouldering zone (incomplete + CO). Worked example: balance complete combustion of butane (C4H10). Misconception: 'incomplete is safer because less CO2' (it's actually more dangerous — CO is toxic at 200x haemoglobin affinity).",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Combustion Reactions — Year 11 Chemistry, Module 3.",
+      "voiceover": {
+        "text": "Combustion Reactions. Year eleven Chemistry, Module three.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L4/title.8e64a0100799.mp3"
+      }
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why is the smoke deadlier than the fire?",
+      "body": "In a bushfire, the active flame front is hot, bright, and bursting with airflow. The smouldering zone behind it — slow, dark, low-oxygen — is what kills firefighters. Same fuel. Same chemistry. Different oxygen supply. The product changes from harmless CO₂ to toxic carbon monoxide.",
+      "callout": "Oxygen supply decides whether combustion is safe or fatal.",
+      "image": "l4HookBushfire",
+      "durationInFrames": 1170,
+      "caption": "Complete combustion gives CO₂. Incomplete combustion gives CO — 200× more dangerous.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "callout": 780,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Here's a question worth its place in HSC. Why is the smoke deadlier than the flames in a bushfire? At the active fire front you have hot, oxygen-rich combustion, but behind it, the smouldering zone is slow, dark, and low on oxygen, and that's what kills firefighters. It's the same fuel and the same chemistry, just a different oxygen supply, and that one difference changes the product from harmless carbon dioxide to toxic carbon monoxide. So today's lesson is about how to predict which products you get and how to balance the equation."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Two pathways depending on oxygen",
+      "body": "Combustion is the reaction of a fuel with oxygen, releasing energy. For a hydrocarbon, the products depend entirely on whether enough oxygen is present to fully oxidise every carbon atom.",
+      "bullets": [
+        {
+          "text": "Complete combustion: enough O₂ → CO₂ + H₂O.",
+          "at": 4
+        },
+        {
+          "text": "Incomplete combustion: limited O₂ → CO and/or C (soot) + H₂O.",
+          "at": 11
+        },
+        {
+          "text": "Complete burns clean and blue. Incomplete burns yellow with smoke.",
+          "at": 19
+        },
+        {
+          "text": "Both release water — only the carbon product changes.",
+          "at": 26
+        }
+      ],
+      "callout": "Enough O₂ → CO₂. Limited O₂ → CO and/or C.",
+      "durationInFrames": 1260,
+      "caption": "Same fuel. Different oxygen. Different carbon product.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1020,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Combustion is the reaction of a fuel with oxygen, releasing energy. For a hydrocarbon, the products depend entirely on whether oxygen is plentiful or limited. Complete combustion — enough oxygen — gives carbon dioxide and water. Incomplete combustion — limited oxygen — gives carbon monoxide and sometimes soot, plus water. The visual cue: complete combustion burns clean and blue, like a Bunsen burner with the air valve open. Incomplete combustion burns yellow with smoke, like a candle. Water is produced either way; only the carbon product changes.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L4/concept.fc45f979cdb2.mp3"
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Why CO kills at low concentrations",
+      "body": "Carbon monoxide isn't toxic the way most pollutants are. It's not corrosive or irritating. The threat is silent — it binds haemoglobin and starves your tissues of oxygen.",
+      "bullets": [
+        {
+          "text": "CO binds haemoglobin with ~200× the affinity of O₂.",
+          "at": 4
+        },
+        {
+          "text": "Even small amounts of CO occupy O₂ binding sites.",
+          "at": 10
+        },
+        {
+          "text": "Result: tissue hypoxia — oxygen can't reach cells.",
+          "at": 17
+        },
+        {
+          "text": "CO₂ only suffocates by displacing air at very high concentrations.",
+          "at": 24
+        }
+      ],
+      "callout": "CO is dangerous at low concentrations. CO₂ only at high.",
+      "image": "l4DefinitionCOHaemoglobin",
+      "durationInFrames": 1200,
+      "caption": "CO binds haemoglobin 200× tighter than O₂. That's why it kills first.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "Why is carbon monoxide so deadly. CO isn't corrosive or irritating like most pollutants — the threat is silent. It binds haemoglobin in your blood with about two hundred times the affinity of oxygen. Even small concentrations of CO occupy the binding sites that should be carrying oxygen. The result is tissue hypoxia — oxygen can't reach your cells. By contrast, carbon dioxide only causes harm at very high concentrations, by displacing oxygen from the air. CO is dangerous at low concentrations. CO two only at very high.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L4/definition.23012fdbbd33.mp3"
+      }
+    },
+    {
+      "id": "marginalia-flame-colour",
+      "type": "marginalia",
+      "heading": "Read the flame, read the chemistry",
+      "body": "A Bunsen burner with the air valve open burns blue — complete combustion. Closed valve, yellow smoky flame — incomplete. The yellow glow is hot soot particles incandescing. Think of flame colour like a status light: blue means \"clean\", yellow means \"warning\".",
+      "callout": "Yellow flame = incomplete combustion = CO and soot.",
+      "notes": [
+        {
+          "text": "blue = complete",
+          "position": "top-right"
+        },
+        {
+          "text": "yellow = incomplete",
+          "position": "mid-right"
+        },
+        {
+          "text": "soot = unburned C",
+          "position": "bottom-right"
+        }
+      ],
+      "image": "l4MarginaliaBunsenFlames",
+      "durationInFrames": 1170,
+      "caption": "Bunsen valve open → blue → complete. Valve closed → yellow → incomplete.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "callout": 780,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "A way to read combustion in real time. Open the air valve on a Bunsen burner and the flame burns blue. That's complete combustion — plenty of oxygen, full oxidation to carbon dioxide. Close the valve and the flame goes yellow and smoky. That's incomplete combustion. The yellow glow is hot soot particles incandescing — unburned carbon. Think of flame colour like a status light: blue means clean, yellow means warning. But unlike a status light, the warning here is toxic CO already in the air.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L4/marginalia-flame-colour.8a9829381bff.mp3"
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Balancing complete combustion of butane",
+      "question": "Butane (C₄H₁₀) is burned in plentiful air. Write the balanced equation for complete combustion, including state symbols.",
+      "coachNote": "Target: complete combustion of a hydrocarbon. Balance C, then H, then O — clear fractions last.",
+      "unitCancel": {
+        "left": "atoms in",
+        "right": "atoms out",
+        "result": "balanced"
+      },
+      "steps": [
+        "Known: C₄H₁₀(g) + O₂(g) — complete combustion → CO₂ + H₂O.",
+        "Find: balanced equation with state symbols.",
+        "Formula unbalanced: C₄H₁₀(g) + O₂(g) → CO₂(g) + H₂O(g).",
+        "Balance C: 4 carbons on left → 4CO₂ on right.",
+        "Balance H: 10 hydrogens on left → 5H₂O on right.",
+        "Balance O: right has 4×2 + 5 = 13 oxygens. Need 13/2 O₂ on left.",
+        "Substitute fraction: C₄H₁₀(g) + 13/2 O₂(g) → 4CO₂(g) + 5H₂O(g).",
+        "Answer = 2C₄H₁₀(g) + 13O₂(g) → 8CO₂(g) + 10H₂O(g). Check: 8C, 20H, 26O each side ✓."
+      ],
+      "image": "l4WorkedButane",
+      "durationInFrames": 1620,
+      "caption": "2C₄H₁₀(g) + 13O₂(g) → 8CO₂(g) + 10H₂O(g). Balance C, then H, then O.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 130
+      },
+      "voiceover": {
+        "text": "Butane burned in plentiful air. Target: balanced equation for complete combustion. The order is always carbon, then hydrogen, then oxygen, then clear fractions. Unbalanced equation: C four H ten plus O two gives CO two plus H two O. Balance carbon — four on the left, so four CO two on the right. Balance hydrogen — ten on the left, so five H two O on the right. Now count oxygen on the right: four times two plus five, that's thirteen. So we need thirteen-over-two O two on the left. Multiply everything by two to clear the fraction. Final answer: two C four H ten plus thirteen O two gives eight CO two plus ten H two O.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L4/worked-example.1fa684227d6a.mp3"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Incomplete is safer — it makes less CO₂\"",
+      "body": "Students often think: \"Incomplete combustion is better for the environment, since it makes less carbon dioxide.\" That's the wrong instinct, and dangerously so. Incomplete combustion actually produces toxic carbon monoxide and particulate soot — both deadly. Complete combustion produces only CO₂ and water — non-toxic. Instead of less CO₂ being a win, it's a warning sign that something more harmful is being made. The goal is always complete combustion for safety and efficiency.",
+      "callout": "Less CO₂ = more CO. Less CO₂ is the warning, not the win.",
+      "mistakeTag": "Less CO₂ = safer",
+      "image": "l4MisconceptionLessCO2",
+      "durationInFrames": 1260,
+      "caption": "Less CO₂ from a flame means more CO. CO is the killer, not CO₂.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 90,
+        "callout": 900,
+        "diagram": 90
+      },
+      "voiceover": {
+        "text": "The trap. Students often think: incomplete combustion is better for the environment because it makes less carbon dioxide. That's the wrong instinct, and dangerously so. Incomplete combustion actually produces toxic carbon monoxide and particulate soot — both deadly to humans and a major air pollutant. Complete combustion produces only CO two and water — non-toxic. Instead of less CO two being a win, it's a warning that something more harmful is being made in its place. The fix: the goal is always complete combustion. For safety, for air quality, for efficiency.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L4/misconception.b4db42abd7f0.mp3"
+      }
+    },
+    {
+      "id": "lab-footage",
+      "type": "labFootage",
+      "heading": "Candle vs Bunsen burner",
+      "body": "A candle's yellow flame is glowing soot — incomplete combustion. A Bunsen burner with its air valve open burns blue — complete combustion. Same molecule (a hydrocarbon wax vs methane), different air supply, different products.",
+      "image": "l4LabFootageFlames",
+      "annotations": [
+        {
+          "text": "yellow = soot glowing",
+          "position": "top-left"
+        },
+        {
+          "text": "incomplete combustion",
+          "position": "top-right"
+        },
+        {
+          "text": "blue = clean burn",
+          "position": "bottom-left"
+        },
+        {
+          "text": "complete combustion",
+          "position": "bottom-right"
+        }
+      ],
+      "durationInFrames": 960,
+      "caption": "Yellow candle flame = incomplete. Blue Bunsen flame = complete.",
+      "revealDelays": {
+        "heading": 15,
+        "body": 60,
+        "visual": 24
+      },
+      "voiceover": {
+        "text": "Two flames, two pathways. A candle burns yellow because hot, unburned soot particles glow as they rise — incomplete combustion. A Bunsen burner with its air valve open burns blue — clean, complete combustion of methane. Same family of molecule, different air supply, different products. Open the valve to give a candle flame more air and you can shift it toward blue — proof that oxygen supply controls the pathway.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L4/lab-footage.1e38f9c7eb70.mp3"
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn",
+      "question": "A poorly-vented gas heater burns methane (CH₄). Write the balanced equation for incomplete combustion producing carbon monoxide as the carbon product. Then state the safety risk in one sentence.",
+      "pausePrompt": "Pause: balance for CO, not CO₂. Then explain the danger.",
+      "answerSteps": [
+        "Known: CH₄(g) + O₂(g) — limited oxygen → CO + H₂O.",
+        "Unbalanced: CH₄(g) + O₂(g) → CO(g) + H₂O(g).",
+        "Balance C: 1 = 1 already ✓. Balance H: 4 on left → 2H₂O on right.",
+        "Balance O: right has 1+2 = 3 oxygens. Need 3/2 O₂ on left → multiply all by 2.",
+        "Answer = 2CH₄(g) + 3O₂(g) → 2CO(g) + 4H₂O(g). Risk: CO binds haemoglobin and causes hypoxia at low concentrations."
+      ],
+      "image": "l4QuickCheckMethane",
+      "durationInFrames": 1620,
+      "caption": "2CH₄(g) + 3O₂(g) → 2CO(g) + 4H₂O(g). Risk: CO poisoning.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 540,
+        "answerInterval": 100
+      },
+      "voiceover": {
+        "text": "Your turn. A poorly-vented gas heater burns methane. Write the balanced equation for incomplete combustion producing carbon monoxide. Pause now and try before the answer plays. Limited oxygen, so the carbon product is CO not CO two. Unbalanced: CH four plus O two gives CO plus H two O. Carbon balances. Hydrogen: four on the left, so two H two O on the right. Oxygen on the right: one plus two equals three. Need three-over-two O two on the left. Double everything. Final answer: two CH four plus three O two gives two CO plus four H two O. Risk: CO binds haemoglobin with two hundred times the affinity of oxygen — fatal in a poorly vented room.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L4/quick-check.217756cc0bd2.mp3"
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Summary",
+      "finalPrompt": "Ask: is the oxygen supply enough? If yes — CO₂. If not — CO and/or C.",
+      "image": "l4SummaryBadges",
+      "points": [
+        "Combustion: fuel + O₂ → products + energy. Products depend on oxygen supply.",
+        "Complete combustion: enough O₂ → CO₂ + H₂O. Burns blue.",
+        "Incomplete combustion: limited O₂ → CO and/or C (soot) + H₂O. Burns yellow.",
+        "CO is fatal at low concentrations because it binds haemoglobin ~200× tighter than O₂.",
+        "Balance hydrocarbons: C first, then H, then O. Clear any fractions last."
+      ],
+      "durationInFrames": 1320,
+      "caption": "Two pathways, one decision. The oxygen supply chooses.",
+      "revealDelays": {
+        "heading": 18,
+        "takeawaysStart": 60,
+        "takeawayInterval": 130,
+        "finalPrompt": 900,
+        "diagram": 40
+      },
+      "voiceover": {
+        "text": "Five things to remember. Combustion is fuel plus oxygen, releasing energy — products depend on oxygen supply. Complete combustion: enough O two, products are CO two and water, flame burns blue. Incomplete combustion: limited O two, products are CO and sometimes soot, flame burns yellow. Carbon monoxide is fatal at low concentrations because it binds haemoglobin two hundred times tighter than oxygen. To balance a hydrocarbon: carbon first, then hydrogen, then oxygen, clear fractions last. Decision rule: ask if the oxygen supply is enough. If yes, CO two. If not, CO and soot.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L4/summary.2a2d395a39b9.mp3"
+      }
+    }
+  ]
+}
