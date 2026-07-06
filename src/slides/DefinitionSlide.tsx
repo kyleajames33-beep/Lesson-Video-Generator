@@ -224,7 +224,9 @@ const UnitTable = ({
 }: {
 	diagram: {type: 'table'; headers: string[]; rows: string[][]};
 	delay: number;
-}) => (
+}) => {
+	const theme = useAccent();
+	return (
 	<aside
 		style={{
 			position: 'absolute',
@@ -242,15 +244,15 @@ const UnitTable = ({
 				padding: '30px 34px 34px',
 				background: TOK.bgLift,
 				border: `1px solid ${TOK.rule}`,
-				boxShadow: `0 0 70px ${TOK.chem1}18`,
+				boxShadow: `0 0 70px ${theme.accent}18`,
 			}}
 		>
-			<AmbientBorderPulse delay={150} color={TOK.chem1} opacity={0.14} />
+			<AmbientBorderPulse delay={150} color={theme.accent} opacity={0.14} />
 			<div
 				style={{
 					fontFamily: FONT_MONO,
 					fontSize: 18,
-					color: TOK.chem2,
+					color: theme.accent2,
 					letterSpacing: '0.18em',
 					textTransform: 'uppercase',
 					marginBottom: 22,
@@ -306,7 +308,8 @@ const UnitTable = ({
 			))}
 		</FadeUp>
 	</aside>
-);
+	);
+};
 
 // ─── Hero with circle + annotation ──────────────────────────────────────
 
@@ -436,6 +439,7 @@ const ScientificSub = ({text, delay}: {text: string; delay: number}) => {
 
 
 const MathText = ({text}: {text: string}) => {
+	const theme = useAccent();
 	const pieces = text.split(/(mol⁻¹|mol|g\/mol|g)/g).filter(Boolean);
 
 	return (
@@ -444,7 +448,7 @@ const MathText = ({text}: {text: string}) => {
 				<span
 					key={`${piece}-${index}`}
 					style={{
-						color: ['mol', 'mol⁻¹', 'g/mol'].includes(piece) ? TOK.chem2 : undefined,
+						color: ['mol', 'mol⁻¹', 'g/mol'].includes(piece) ? theme.accent2 : undefined,
 					}}
 				>
 					{piece}
