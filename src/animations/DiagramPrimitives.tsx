@@ -497,7 +497,10 @@ export const DataChart = ({
 		const gap = data.length > 1 ? (chartW - barWidth * data.length) / (data.length - 1) : 0;
 
 		return (
-			<svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} aria-hidden>
+			// overflow:visible — the first and last bar's label is centred on its
+			// bar, so it extends past the viewBox and was being clipped by the SVG
+			// viewport (e.g. "Group B attached" rendering as "Group B attache").
+			<svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} style={{overflow: 'visible'}} aria-hidden>
 				{/* Axes */}
 				<g opacity={axisEased}>
 					<line
