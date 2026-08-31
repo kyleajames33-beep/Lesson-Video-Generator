@@ -322,6 +322,10 @@ export type WorkedExampleScene = SceneBase & {
   coachNote?: string;
   unitCancel?: UnitCancelConfig;
   steps: string[];
+  /** Optional coded diagram, rendered beside the question as the visual the
+   *  steps work from (e.g. the Punnett grid a step says it is "filling in").
+   *  Additive: WorkedExampleSlide renders it only when present. */
+  diagram?: DiagramConfig;
   image?: string;
 };
 
@@ -339,6 +343,9 @@ export type SummaryScene = SceneBase & {
   heading: string;
   finalPrompt?: string;
   points: string[];
+  /** Optional coded diagram, rendered as a compact reference table beside the
+   *  takeaway list. Additive: SummarySlide renders it only when present. */
+  diagram?: DiagramConfig;
   image?: string;
 };
 

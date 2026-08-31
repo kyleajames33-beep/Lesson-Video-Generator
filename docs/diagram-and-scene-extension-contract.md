@@ -36,7 +36,9 @@ case 'reactionArrow': return <ReactionArrowDiagram {...diagram} />;
 
 (`{...diagram}` also passes `type`; your `Props` simply ignores it — fine. Only pass explicit props if you need to rename, like the `barChart`/`punnettSquare` cases.) The switch has `default: return null` (line 77), so a mistyped/unregistered `type` renders **silently blank** — there is no error. Registration is mandatory.
 
-**(d) Authoring in JSON:** a diagram only appears on scenes that carry a `diagram` field. Today that is the **`TextScene` types** — `hook | concept | definition | formula | misconception` (`types.ts:268-280`). The slide renders it via `<DiagramRenderer diagram={scene.diagram} />` (`ConceptSlide.tsx:298-307`). Example scene:
+**(d) Authoring in JSON:** a diagram only appears on scenes that carry a `diagram` field *and* whose slide renders one. Today the hosts are the **`TextScene` types** — `hook | concept | definition | formula | misconception` — plus **`workedExample`** and **`summary`**. The slide renders it via `<DiagramRenderer diagram={scene.diagram} />` (`ConceptSlide.tsx`). On `workedExample` and `summary` the diagram goes in a side slot and is scaled to fit by `src/slides/shared/diagramFit.ts`; wrap it in `className="diagram-compact"` so a table's cell chrome shrinks to suit.
+
+Authoring a `diagram` on any other scene type is now a **validation error** (`scripts/validate-lesson.mjs`, `diagramHostSceneTypes`) rather than a silent blank — seven lessons shipped exactly that way. If you add a diagram to a new slide, add its scene type to that set too. Example scene:
 
 ```json
 { "id": "c1", "type": "concept", "durationInFrames": 300, "caption": "…",

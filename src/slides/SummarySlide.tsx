@@ -12,10 +12,19 @@ import {AmbientBorderPulse, AmbientGlow} from '../animations/AmbientMotion';
 import {StampInTitle} from '../animations/MotionPrimitives';
 import {SlideFrame} from './shared/SlideFrame';
 import {MathText} from './shared/MathText';
+import {DiagramRenderer} from './diagrams/DiagramRenderer';
+import {diagramSlotScale} from './shared/diagramFit';
 import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
 import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
+
+// The takeaway list occupies the left column down to roughly y=790; below it,
+// left of the FinalRuleCard, is the widest free band on the slide. A diagram is
+// authored to that full width and scaled down to fit the remaining height.
+const DIAGRAM_SLOT_TOP = 800;
+const DIAGRAM_SLOT_WIDTH = 1080;
+const DIAGRAM_SLOT_HEIGHT = 180;
 
 type SummarySlideProps = {
 	scene: SummaryScene;
@@ -27,6 +36,9 @@ type SummarySlideProps = {
 export const SummarySlide = ({scene, lesson, sceneIndex, totalScenes}: SummarySlideProps) => {
 	const rd = scene.revealDelays ?? {};
 	const takeaways = scene.points.map(toTakeaway);
+	const diagramScale = scene.diagram
+		? diagramSlotScale(scene.diagram, DIAGRAM_SLOT_WIDTH, DIAGRAM_SLOT_HEIGHT)
+		: 1;
 
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
@@ -85,7 +97,7 @@ export const SummarySlide = ({scene, lesson, sceneIndex, totalScenes}: SummarySl
 			</div>
 
 			{scene.image && ASSETS[scene.image as AssetName] && (
-				<FadeUp delay={rd.diagram ?? 40} durationFrames={16} dy={18}>
+				<FadeUp delay={rd.image ?? rd.diagram ?? 40} durationFrames={16} dy={18}>
 					<img
 						src={ASSETS[scene.image as AssetName]}
 						alt=""
@@ -100,6 +112,24 @@ export const SummarySlide = ({scene, lesson, sceneIndex, totalScenes}: SummarySl
 							filter: 'drop-shadow(0 12px 24px rgba(0,0,0,0.12))',
 						}}
 					/>
+				</FadeUp>
+			)}
+			{scene.diagram && (
+				<FadeUp delay={rd.diagram ?? 40} durationFrames={16} dy={18}>
+					<div
+						className="diagram-compact"
+						style={{
+							position: 'absolute',
+							left: 64,
+							top: DIAGRAM_SLOT_TOP,
+							width: DIAGRAM_SLOT_WIDTH,
+							transform: `scale(${diagramScale})`,
+							transformOrigin: 'top left',
+							color: TOK.ink,
+						}}
+					>
+						<DiagramRenderer diagram={scene.diagram} />
+					</div>
 				</FadeUp>
 			)}
 			{scene.finalPrompt ? (
