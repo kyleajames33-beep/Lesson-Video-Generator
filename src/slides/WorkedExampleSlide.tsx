@@ -13,6 +13,8 @@ import {DeltaMathText} from '../animations/FormulaBuild';
 import {StampInTitle} from '../animations/MotionPrimitives';
 import {AmbientBorderPulse, AmbientGlow} from '../animations/AmbientMotion';
 import {MathText} from './shared/MathText';
+import {DiagramRenderer} from './diagrams/DiagramRenderer';
+import {diagramSlotScale} from './shared/diagramFit';
 import {calculationStepLabel, getCalculationStepKind} from './shared/calculationSteps';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
@@ -29,11 +31,29 @@ type WorkedExampleSlideProps = {
 
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
 
+// The header band spans y=142 (header top) to y=470 (steps top). A diagram is
+// authored at 620px wide and scaled down to fit the band, leaving a margin so
+// it never touches the first step.
+const DIAGRAM_SLOT_WIDTH = 620;
+const DIAGRAM_SLOT_HEIGHT = 300;
+// Header content box: 1920 minus the 64px gutters.
+const HEADER_WIDTH = 1792;
+const DIAGRAM_TEXT_GAP = 40;
+
 export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: WorkedExampleSlideProps) => {
 	const rd = scene.revealDelays ?? {};
 	const n = scene.steps.length;
 	const stepsStart = rd.stepsStart ?? 116;
 	const stepInterval = rd.stepInterval ?? 86;
+	const diagramScale = scene.diagram
+		? diagramSlotScale(scene.diagram, DIAGRAM_SLOT_WIDTH, DIAGRAM_SLOT_HEIGHT)
+		: 1;
+	// The diagram is scaled to fit its slot, so how much room it actually takes
+	// varies per scene. Derive the text width from the scaled width rather than
+	// assuming the full slot, or a small diagram needlessly cramps the question.
+	const textMaxWidth = scene.diagram
+		? HEADER_WIDTH - DIAGRAM_SLOT_WIDTH * diagramScale - DIAGRAM_TEXT_GAP
+		: undefined;
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
 			<SlideChrome lesson={lesson} topic="WORKED EXAMPLE" sceneType="workedExample" sceneIndex={sceneIndex} totalScenes={totalScenes} />
@@ -41,7 +61,7 @@ export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: Wor
 			<div style={{position: 'absolute', top: 142, left: 64, right: 64}}>
 				<Eyebrow color={TOK.inkDim}>PROBLEM · {scene.heading.toUpperCase()}</Eyebrow>
 			{scene.image && ASSETS[scene.image as AssetName] && (
-				<FadeUp delay={rd.diagram ?? 30} durationFrames={16} dy={16}>
+				<FadeUp delay={rd.image ?? rd.diagram ?? 30} durationFrames={16} dy={16}>
 					<img
 						src={ASSETS[scene.image as AssetName]}
 						alt=""
@@ -57,6 +77,26 @@ export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: Wor
 					/>
 				</FadeUp>
 			)}
+			{scene.diagram && (
+				<FadeUp delay={rd.diagram ?? 30} durationFrames={16} dy={16}>
+					<div
+						className="diagram-compact"
+						style={{
+							position: 'absolute',
+							right: 0,
+							top: 0,
+							width: DIAGRAM_SLOT_WIDTH,
+							display: 'flex',
+							justifyContent: 'flex-end',
+							transform: `scale(${diagramScale})`,
+							transformOrigin: 'top right',
+							color: TOK.ink,
+						}}
+					>
+						<DiagramRenderer diagram={scene.diagram} />
+					</div>
+				</FadeUp>
+			)}
 				<FadeUp delay={rd.heading ?? 18} durationFrames={14} dy={18}>
 					<StampInTitle delay={18} color={TOK.ink} underlineColor={TOK.amber}>
 						<div
@@ -66,7 +106,7 @@ export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: Wor
 								fontWeight: 700,
 								lineHeight: 1.3,
 								letterSpacing: '-0.015em',
-								maxWidth: scene.image ? 1430 : 1700,
+								maxWidth: textMaxWidth ?? (scene.image ? 1430 : 1700),
 								color: TOK.ink,
 							}}
 						>
@@ -86,6 +126,7 @@ export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: Wor
 								fontStyle: 'italic',
 								fontWeight: TYPE.body.fontWeight,
 								color: TOK.inkDim,
+								maxWidth: textMaxWidth,
 							}}
 						>
 							<span style={{fontFamily: FONT_MONO, fontStyle: 'normal', fontSize: 22}}>→</span>

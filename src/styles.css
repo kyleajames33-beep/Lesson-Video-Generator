@@ -1007,6 +1007,25 @@
   letter-spacing: 0.5px;
 }
 
+/* Compact variant for a diagram sitting in a slide's side slot rather than
+   filling ConceptSlide's stage — trims cell chrome so a reference table fits
+   beside a worked example's steps or a summary's takeaways at readable size.
+   Metrics here are mirrored by src/slides/shared/diagramFit.ts. */
+.diagram-compact .table-reveal,
+.diagram-compact .table-row {
+  gap: 10px;
+}
+
+.diagram-compact .table-cell {
+  min-height: 48px;
+  padding: 10px 14px;
+  font-size: 24px;
+}
+
+.diagram-compact .header-cell {
+  font-size: 20px;
+}
+
 .before-after-diagram {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 5px minmax(0, 1fr);
