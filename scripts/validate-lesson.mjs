@@ -60,6 +60,25 @@ const supportedDiagramTypes = new Set([
   'circuit3d',
 ]);
 
+// Scene types whose slide actually renders <DiagramRenderer>. Authoring a
+// `diagram` on any other scene type is silently dropped at render time —
+// DiagramRenderer's `default: return null` means an unrenderable diagram
+// produces a blank, not an error — so it must fail validation instead.
+// Keep in sync with the slides listed in src/LessonVideo.tsx.
+const diagramHostSceneTypes = new Set([
+  'hook',
+  'concept',
+  'definition',
+  'formula',
+  'misconception',
+  'workedExample',
+  'summary',
+]);
+
+// Scene types where a diagram is the norm rather than the exception, and a
+// missing one is worth surfacing as an authoring gap.
+const diagramExpectedSceneTypes = new Set(['concept']);
+
 const isObject = (value) => value !== null && typeof value === 'object' && !Array.isArray(value);
 const isNonEmptyString = (value) => typeof value === 'string' && value.trim().length > 0;
 const isPositiveInteger = (value) => Number.isInteger(value) && value > 0;
@@ -130,8 +149,26 @@ const validateUnitCancel = (unitCancel, errors, pathLabel) => {
   }
 };
 
-const validateDiagram = (diagram, errors, pathLabel) => {
-  if (diagram === undefined) return;
+const validateDiagram = (scene, errors, warnings, pathLabel) => {
+  const {diagram} = scene;
+
+  if (diagram === undefined) {
+    if (diagramExpectedSceneTypes.has(scene.type)) {
+      warnings.push(`${pathLabel}: no "diagram" — a coded visual is expected on this scene type`);
+    }
+    return;
+  }
+
+  // Check the host before the payload. A valid diagram type on a slide that
+  // never renders one is exactly as invisible as an unknown type.
+  if (!diagramHostSceneTypes.has(scene.type)) {
+    errors.push(
+      `${pathLabel}: scene type "${scene.type}" does not render a diagram, so this "diagram" would never appear ` +
+        `(hosts: ${[...diagramHostSceneTypes].join(', ')})`
+    );
+    return;
+  }
+
   if (!isObject(diagram)) {
     errors.push(`${pathLabel}: "diagram" must be an object`);
     return;
@@ -193,10 +230,11 @@ const validateScene = (scene, index, errors, warnings, fps) => {
     }
   }
 
+  validateDiagram(scene, errors, warnings, pathLabel);
+
   if (['hook', 'concept', 'definition', 'formula', 'misconception'].includes(scene.type)) {
     requireString(scene, 'heading', errors, pathLabel);
     requireBodyOrBullets(scene, errors, pathLabel);
-    validateDiagram(scene.diagram, errors, pathLabel);
   }
 
   if (['hook', 'concept', 'definition', 'formula', 'misconception'].includes(scene.type)) {
