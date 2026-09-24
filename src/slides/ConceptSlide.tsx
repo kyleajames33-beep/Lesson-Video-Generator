@@ -321,7 +321,7 @@ const ConceptDiagram = ({scene}: {scene: TextScene}) => {
 // types keep the original conservative sizing.
 const FULL_SIZE_DIAGRAMS = new Set([
 	'gasVolumeComparison', 'massBreakdown', 'concentrationCompare', 'titrationSetup',
-	'limitingExcess', 'errorDartboard', 'calorimeter', 'bondEnergy', 'hessCycle',
+	'limitingExcess', 'reactionRun', 'coefficientDivide', 'errorDartboard', 'calorimeter', 'bondEnergy', 'hessCycle',
 	'entropyDisorder', 'gibbsSpontaneity', 'reductionPotentialLadder', 'isotopeAtoms',
 	'aufbauStaircase', 'latticeVsElectronSea', 'lineGraph',
 	'punnettSquare', 'pedigree', 'dnaHelix', 'transcriptionStrand', 'chromosomeMutation',

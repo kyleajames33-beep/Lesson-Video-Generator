@@ -39,6 +39,8 @@ const supportedDiagramTypes = new Set([
   'concentrationCompare',
   'titrationSetup',
   'limitingExcess',
+  'reactionRun',
+  'coefficientDivide',
   'errorDartboard',
   'calorimeter',
   'bondEnergy',
