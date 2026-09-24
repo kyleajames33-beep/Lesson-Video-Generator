@@ -77,6 +77,7 @@ export const LessonVideo = ({lesson}: LessonVideoProps) => {
   const items: React.ReactNode[] = [];
 
   const theme = themeFor(lesson.subject);
+  const neutral = Boolean(lesson.syllabusNeutral);
 
   // Collect all "you should now be able to" objectives. They render once
   // up-front in the intro stinger — pulling them out of per-scene
@@ -140,12 +141,14 @@ export const LessonVideo = ({lesson}: LessonVideoProps) => {
           <IntroVoiceover src={lesson.introVoiceover?.audioFile} />
           <IntroStinger
             subjectLabel={lesson.subject}
-            yearLabel={lesson.yearLevel}
-            moduleLabel={lesson.module}
+            yearLabel={neutral ? undefined : lesson.yearLevel}
+            moduleLabel={neutral ? undefined : lesson.module}
             objectives={objectives}
-            nesaOutcomes={lesson.nesaOutcomes}
-            inquiryQuestion={lesson.inquiryQuestion}
-            syllabusDotPoints={lesson.syllabusDotPoints}
+            nesaOutcomes={neutral ? undefined : lesson.nesaOutcomes}
+            inquiryQuestion={neutral ? undefined : lesson.inquiryQuestion}
+            syllabusDotPoints={neutral ? undefined : lesson.syllabusDotPoints}
+            todayTitle={neutral ? lesson.title : undefined}
+            todaySubtitle={neutral ? lesson.subtitle : undefined}
           />
         </Series.Sequence>
         <Series.Sequence durationInFrames={lessonRawDuration}>

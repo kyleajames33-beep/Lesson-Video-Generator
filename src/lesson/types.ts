@@ -390,6 +390,14 @@ export type LessonData = {
   lesson: string;
   syllabusVersion?: string;
   syllabusModule?: string;
+  /**
+   * Hide every syllabus-version label on screen (module, year, "L3 of 19",
+   * NESA codes, dot points, inquiry question). For lessons taught under both
+   * the 2017 and the 2025 syllabus, where those labels differ between the two;
+   * the YouTube/site title carries the context instead. Composition IDs and
+   * audio paths still come from year/module/lesson and are unaffected.
+   */
+  syllabusNeutral?: boolean;
   syllabusDotPoints?: string[];
   /**
    * NESA outcome codes addressed by this lesson, e.g. ["CH11-9",

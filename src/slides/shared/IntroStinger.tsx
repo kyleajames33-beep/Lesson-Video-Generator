@@ -29,6 +29,12 @@ type IntroStingerProps = {
 	inquiryQuestion?: string;
 	/** The actual NESA content statements this lesson addresses. */
 	syllabusDotPoints?: string[];
+	/**
+	 * Syllabus-neutral lessons: the lesson's own title/subtitle, shown in
+	 * place of the syllabus panels so the intro isn't left empty.
+	 */
+	todayTitle?: string;
+	todaySubtitle?: string;
 };
 
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
@@ -41,6 +47,8 @@ export const IntroStinger = ({
 	nesaOutcomes,
 	inquiryQuestion,
 	syllabusDotPoints,
+	todayTitle,
+	todaySubtitle,
 }: IntroStingerProps) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
@@ -153,7 +161,15 @@ export const IntroStinger = ({
 			</div>
 
 			{/* Phase 2 — Lesson plan content */}
-			<div style={{position: 'absolute', top: 170, left: 120, right: 120}}>
+			<div
+				style={
+					todayTitle
+						? // Neutral lessons have only the title panel (+ objectives): centre it
+							// in the space below the shrunk wordmark instead of top-aligning.
+							{position: 'absolute', top: 240, bottom: 140, left: 120, right: 120, display: 'flex', flexDirection: 'column', justifyContent: 'center'}
+						: {position: 'absolute', top: 170, left: 120, right: 120}
+				}
+			>
 				{/* NESA chips */}
 				{nesaOutcomes && nesaOutcomes.length > 0 ? (
 					<div
@@ -183,6 +199,49 @@ export const IntroStinger = ({
 								NESA · {code}
 							</span>
 						))}
+					</div>
+				) : null}
+
+				{/* Today's lesson — syllabus-neutral replacement for the syllabus panels */}
+				{todayTitle ? (
+					<div
+						style={{
+							opacity: inquiryOpacity,
+							transform: `translateY(${inquiryDy}px)`,
+							marginBottom: 38,
+						}}
+					>
+						<div
+							style={{
+								fontFamily: FONT_MONO,
+								fontSize: 13,
+								letterSpacing: '0.22em',
+								color: TOK.inkMute,
+								textTransform: 'uppercase',
+								fontWeight: 600,
+								marginBottom: 14,
+							}}
+						>
+							◆ Today
+						</div>
+						<div
+							style={{
+								fontFamily: FONT_DISPLAY,
+								fontSize: todayTitle.length > 36 ? 88 : 112,
+								fontWeight: 820,
+								lineHeight: 1,
+								letterSpacing: '-0.04em',
+								color: TOK.ink,
+								maxWidth: 1500,
+							}}
+						>
+							{todayTitle}
+						</div>
+						{todaySubtitle ? (
+							<div style={{marginTop: 22, fontFamily: FONT_DISPLAY, fontSize: 38, fontWeight: 500, lineHeight: 1.3, color: TOK.inkDim, maxWidth: 1400}}>
+								{todaySubtitle}
+							</div>
+						) : null}
 					</div>
 				) : null}
 

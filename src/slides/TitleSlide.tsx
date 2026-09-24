@@ -44,7 +44,9 @@ export const TitleSlide = ({lesson, scene, sceneIndex, totalScenes}: TitleSlideP
 					transform: 'translateY(-48%)',
 				}}
 			>
-				<Eyebrow color={theme.accent2}>{lesson.lesson} · {lesson.subject} · {lesson.yearLevel}</Eyebrow>
+				<Eyebrow color={theme.accent2}>
+					{lesson.syllabusNeutral ? `HSC · ${lesson.subject}` : `${lesson.lesson} · ${lesson.subject} · ${lesson.yearLevel}`}
+				</Eyebrow>
 
 				<div
 					style={{

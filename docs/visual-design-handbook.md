@@ -183,6 +183,10 @@ Picked by what the cut means ([src/transitions/pickTransition.ts](../src/transit
 
 A transition overlay must reach opacity 0 at progress 1 and must not clip the entering scene at progress 1 — Remotion keeps the presentation mounted for the rest of the scene. (Both bugs shipped: a glowing circle that sat top-right on every scene after a `morphCut`, and a white wedge left in the corner after a `shapeWipe`.)
 
+### Syllabus-neutral lessons (`"syllabusNeutral": true`)
+
+Set on every Biology lesson (2026-09-24): most are taught under both the 2017 and 2025 syllabuses, where year, module, lesson number and NESA codes differ. With the flag on, nothing on screen names a syllabus version: the top chrome reads `BIOLOGY … HSC`, the bottom syllabus chip and title-card year are dropped, and the intro stinger shows the lesson title + subtitle instead of NESA codes, dot points and the inquiry question. The YouTube/site title carries the year/module context. Composition IDs and audio paths are unchanged. See `docs/biology-syllabus-crossover.md`.
+
 ### Hook / question scenes
 
 Hook scenes should leave one clear thought in the student's head before the lesson begins. Use the Claude canvas hook pattern: a large question, one small symbolic visual, and one handwritten annotation if it clarifies the visual.

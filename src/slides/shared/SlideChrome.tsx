@@ -57,7 +57,10 @@ export const SlideChrome = ({
 	const lessonPositionLabel = lesson.moduleLessonCount
 		? `L${lessonCode} OF ${lesson.moduleLessonCount}`
 		: null;
-	const yearLabel = lessonPositionLabel
+	const neutral = Boolean(lesson.syllabusNeutral);
+	const yearLabel = neutral
+		? 'HSC'
+		: lessonPositionLabel
 		? `${lessonPositionLabel} · HSC · ${lesson.yearLevel.toUpperCase()}`
 		: `HSC · ${lesson.yearLevel.toUpperCase()}`;
 	// Syllabus reference for the bottom-left chip. Prefer an explicit `dot`
@@ -66,7 +69,7 @@ export const SlideChrome = ({
 	// number (e.g. "M6"). Never a hardcoded value.
 	const moduleNumber = (lesson.module.match(/\d+/) ?? [])[0];
 	const syllabusRef = dot ?? lesson.nesaOutcomes?.[0] ?? (moduleNumber ? `M${moduleNumber}` : null);
-	const dotLabel = syllabusRef ? `SYLLABUS · ${syllabusRef}` : null;
+	const dotLabel = syllabusRef && !neutral ? `SYLLABUS · ${syllabusRef}` : null;
 	const counter =
 		sceneIndex && totalScenes
 			? `${String(sceneIndex).padStart(4, '0')} / ${String(totalScenes).padStart(4, '0')}`
@@ -96,8 +99,12 @@ export const SlideChrome = ({
 					<div style={{display: 'flex', alignItems: 'center', gap: 16}}>
 						<span style={{width: 10, height: 10, background: accentColor, borderRadius: 2}} />
 						<span style={{color: TOK.ink, fontWeight: 600}}>{subject}</span>
-						<span style={{color: TOK.rule}}>/</span>
-						<span>{moduleLabel}</span>
+						{neutral ? null : (
+							<>
+								<span style={{color: TOK.rule}}>/</span>
+								<span>{moduleLabel}</span>
+							</>
+						)}
 					</div>
 					<div>{yearLabel}</div>
 				</div>
@@ -122,7 +129,7 @@ export const SlideChrome = ({
 						transform: `translateY(${translateY}px)`,
 					}}
 				>
-					<div>{dotLabel ?? <span style={{opacity: 0.4}}>{lesson.lesson.toUpperCase()}</span>}</div>
+					<div>{dotLabel ?? (neutral ? null : <span style={{opacity: 0.4}}>{lesson.lesson.toUpperCase()}</span>)}</div>
 					{topic ? <div style={{color: TOK.inkDim}}>{topic}</div> : <div />}
 					<div>{counter ?? <span style={{opacity: 0.4}}>·</span>}</div>
 				</div>
