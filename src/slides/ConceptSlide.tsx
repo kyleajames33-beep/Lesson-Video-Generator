@@ -251,7 +251,12 @@ const VisualStage = ({scene}: {scene: TextScene}) => {
 			)}
 
 			{/* P0.5 — MarginNote on bar chart */}
-			{scene.diagram?.type === 'barChart' && (
+			{/* The "huge!" note was written for the Avogadro scale chart (M2 L1/L1A)
+			    and is positioned at its tallest bar. It used to show on every
+			    concept bar chart in the catalogue (18 scenes), labelling melanoma
+			    survival or SA:V data "huge!". */}
+			{scene.diagram?.type === 'barChart' &&
+				scene.diagram.bars.some((bar) => bar.label.includes('Avogadro')) && (
 				<MarginNote
 					text="huge!"
 					x={660}

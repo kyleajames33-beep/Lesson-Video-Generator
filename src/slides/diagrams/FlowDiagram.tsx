@@ -54,6 +54,11 @@ export const FlowDiagram = ({nodes, edges, delay = 0}: Props) => {
 	nodes.forEach((n) => layers[depth[n.id]].push(n));
 	const widest = Math.max(...layers.map((l) => l.length));
 
+	// Single-column chains get "01, 02…" step numbers beside the label, which
+	// take width the label can't use (without this, labels overflowed their box).
+	const showStepNumbers = widest === 1 && layerCount >= 3;
+	const labelInset = showStepNumbers ? 80 : 32;
+
 	// Each layer shares the width between its own nodes, so a single root
 	// isn't squeezed to the width of a 4-wide leaf row.
 	const widthOf = (layerSize: number) => Math.min(500, (W - GAP_X * (layerSize - 1)) / layerSize);
@@ -68,7 +73,7 @@ export const FlowDiagram = ({nodes, edges, delay = 0}: Props) => {
 		const w = widthOf(layer.length);
 		for (let f = cap; f > 16; f -= 1) {
 			const longest = Math.max(...layer.map((n) => Math.max(...n.label.split(/\s+/).map((word) => word.length))));
-			if (longest * f * 0.5 <= w - 24) return f;
+			if (longest * f * 0.5 <= w - labelInset + 8) return f;
 		}
 		return 16;
 	};
@@ -78,7 +83,7 @@ export const FlowDiagram = ({nodes, edges, delay = 0}: Props) => {
 	for (let cap = 34; cap >= 16; cap -= 2) {
 		fonts = layers.map((layer) => layerFont(layer, cap));
 		heights = layers.map((layer, li) => {
-			const lines = Math.max(...layer.map((n) => linesFor(n.label, nodeWOf[n.id] - 32, fonts[li])));
+			const lines = Math.max(...layer.map((n) => linesFor(n.label, nodeWOf[n.id] - labelInset, fonts[li])));
 			return lines * fonts[li] * 1.18 + 28;
 		});
 		const content = heights.reduce((a, h) => a + h, 0);
@@ -101,7 +106,6 @@ export const FlowDiagram = ({nodes, edges, delay = 0}: Props) => {
 	});
 
 	const appearAt = (id: string) => delay + depth[id] * 16 + (pos[id]?.order ?? 0) * 3;
-	const showStepNumbers = widest === 1 && layerCount >= 3;
 
 	return (
 		<div style={{position: 'relative', width: W, height: H, fontFamily: FONT_DISPLAY}}>

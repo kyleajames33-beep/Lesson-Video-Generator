@@ -73,20 +73,28 @@
         "text": "Let's start with the main ingredient, the phospholipid. Each one has a phosphate head that's hydrophilic, meaning it's attracted to water, and two long fatty acid tails that are hydrophobic, meaning they avoid water. Now put millions of them in the watery environment of a cell. The tails hide from water by pointing inward, toward each other, while the heads face outward into the fluid on both sides, the tissue fluid outside and the cytoplasm inside. The result is a phospholipid bilayer, two molecules thick. That hydrophobic core in the middle is the key to selectivity. Small nonpolar molecules like oxygen and carbon dioxide dissolve through it easily. But ions, which are charged, and large polar molecules like glucose are repelled by the oily core, so they can't cross on their own."
       },
       "diagram": {
-        "type": "explode",
-        "parts": [
-          {
-            "label": "Phosphate head (hydrophilic)"
-          },
-          {
-            "label": "Glycerol"
-          },
-          {
-            "label": "Fatty acid tail (hydrophobic)"
-          },
-          {
-            "label": "Fatty acid tail (hydrophobic)"
-          }
+        "type": "table",
+        "headers": [
+          "Part",
+          "Water",
+          "Where it sits"
+        ],
+        "rows": [
+          [
+            "Phosphate head",
+            "Hydrophilic: attracted to water",
+            "Faces the watery fluid on each side"
+          ],
+          [
+            "Glycerol",
+            "Links the head to the tails",
+            "Just inside the head layer"
+          ],
+          [
+            "Two fatty acid tails",
+            "Hydrophobic: repelled by water",
+            "Point inward, forming the core"
+          ]
         ]
       },
       "revealDelays": {

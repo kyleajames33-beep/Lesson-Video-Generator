@@ -181,7 +181,7 @@ const WorkedStep = ({
 				style={{
 					position: 'relative',
 					display: 'grid',
-					gridTemplateColumns: '120px minmax(0, 1fr) 64px',
+					gridTemplateColumns: '156px minmax(0, 1fr) 64px',
 					gap: 32,
 					alignItems: isFinal ? 'start' : 'center',
 					minHeight: isFinal ? (unitCancel ? 154 : 78) : 78,

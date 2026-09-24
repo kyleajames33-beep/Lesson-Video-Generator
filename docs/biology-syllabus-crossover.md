@@ -2,6 +2,15 @@
 
 Prepared 2026-09-24. Scope: all 84 Biology lesson JSONs in `src/data/biology-y12-m{5..8}-*.json`. That is the 80 lessons plus 4 lessons that were split into A/B parts (M8 L13, L17, L18, L19). Each one is classified against the new NESA syllabus. The goal is to find content taught under **both** syllabuses so that audio and image credits go only on lessons that stay useful after the changeover.
 
+## Status (updated 2026-09-24, after the crossover build)
+
+- **All 30 PARTIAL lessons have been edited to serve both syllabuses** (kept shared content, added the missing 2025 points below, dropped only 2017 framing or what didn't fit ~10.5 min). Each file now lists verbatim 2017 + 2025 dot points and `"syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)"`. Several inaccurate facts were corrected on the way.
+- **M8 L12 trimmed** 12.0 → 10.0 min; **M8 L14** rewritten around melanoma immunotherapy (12.1 → 10.1); **M8 L20** rewritten around nephron + dialysis (12.5 → 8.7).
+- **22 new Year 11 lessons built** for the three 2025 focus areas (IDs `Biology-Y11-M1..M3-L*`: M1 = Cells as the basis of life, M2 = Cells to systems, M3 = Evolution and ecosystems). They also cover the matching 2017 Year 11 Module 1–4 points.
+- All Biology lessons are `syllabusNeutral` (no year/module labels on screen or in caption text).
+- Voicing order and commands: [biology-voiceover-runbook.md](biology-voiceover-runbook.md). New hook-image prompts: `image-prompts-bio-crossover-2025.md`.
+- Year 12 gaps listed below (epigenetics, diagnostics, bioinformatics, invasive/keystone species, etc.) are **not built yet**.
+
 ## Sources (primary, verified)
 
 All new-syllabus content below was read from the official NESA Digital Curriculum on 2026-09-24. The text was taken from the page data embedded in each focus-area page. A plain-text copy is saved at `.agents/syllabi/biology-11-12-2025-syllabus-content.txt`. NESA publishes no single Word or PDF of the full syllabus; only a JS "custom download" exists.

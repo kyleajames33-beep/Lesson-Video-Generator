@@ -340,7 +340,7 @@ const AnswerStep = ({
 				style={{
 					position: 'relative',
 					display: 'grid',
-					gridTemplateColumns: '128px minmax(0, 1fr) 64px',
+					gridTemplateColumns: '156px minmax(0, 1fr) 64px',
 					gap: 30,
 					alignItems: 'center',
 					minHeight: isFinal ? Math.min(98, fontSize * 2.6) : Math.min(82, fontSize * 2.2),
