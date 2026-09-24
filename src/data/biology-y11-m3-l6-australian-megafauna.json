@@ -1,0 +1,397 @@
+{
+  "title": "Australian Megafauna, Monotremes and Marsupials",
+  "subtitle": "Aboriginal evidence of giant animals, and how isolation and adaptation shaped Australia's mammals",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 6",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Describe examples from Aboriginal palaeontological evidence that demonstrate the existence of Australian megafauna",
+    "Evaluate the role of isolation and adaptation in the evolution of Australian monotremes and marsupials",
+    "analyse palaeontological and geological evidence that can be used to provide evidence for past changes in ecosystems, including but not limited to: Aboriginal rock paintings, rock structure and formation, ice core drilling",
+    "analyse how an accumulation of microevolutionary changes can drive evolutionary changes and speciation over time, for example: evolution of the horse, evolution of the platypus (ACSBL034, ACSBL093)"
+  ],
+  "moduleLessonCount": 9,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-05",
+    "BI-11WS-07"
+  ],
+  "inquiryQuestion": "How do selection pressures within an ecosystem influence evolutionary change?",
+  "lessonIntent": "Students can describe Aboriginal palaeontological evidence for Australian megafauna, judge its strengths and limits, and evaluate how isolation and adaptation shaped Australian monotremes and marsupials.",
+  "examSkill": "Describe named evidence for megafauna, then evaluate isolation and adaptation by giving evidence for each, stating its limits and reaching a clear judgement.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, Australian megafauna, monotremes and marsupials. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Australian Megafauna, Monotremes and Marsupials"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A painting of a bird nobody alive has seen",
+      "body": "On Jawoyn Country in Arnhem Land, a rock painting shows a huge bird that is now extinct.",
+      "callout": "What can Aboriginal evidence tell us about animals that no longer exist?",
+      "image": "bioY11M3L6Megafauna",
+      "caption": "A painting in western Arnhem Land may show Genyornis, a giant bird extinct for over 40,000 years.",
+      "voiceover": {
+        "text": "Picture a rock shelter high on the Arnhem Land plateau, on Jawoyn Country. On the wall is an old red ochre painting of a very large, flightless bird. At first glance you might think emu, but researchers working with the Jawoyn Association have argued that its shape matches something else, a giant bird called Genyornis newtoni, which went extinct more than forty thousand years ago. If they're right, whoever painted it was looking at a living Genyornis. So here's our question for today. How can Aboriginal evidence show us animals that no longer exist, and how much weight can that evidence actually carry? We'll meet Australia's megafauna, weigh up the evidence, and then zoom out to ask why this continent ended up so full of monotremes and marsupials in the first place."
+      },
+      "durationInFrames": 1799
+    },
+    {
+      "id": "concept-megafauna",
+      "type": "concept",
+      "heading": "Meet the megafauna",
+      "body": "Megafauna were very large animals, and most of Australia's were gone by about 40,000 years ago.",
+      "bullets": [
+        {
+          "text": "Megafauna: animals heavier than about 45 kg."
+        },
+        {
+          "text": "Most Australian megafauna disappeared by about 40,000 years ago."
+        },
+        {
+          "text": "Aboriginal people were already living in Australia by then."
+        }
+      ],
+      "secondary": "The cause is still debated. Hunting, changed fire patterns and a drying climate have all been proposed, possibly acting together.",
+      "callout": "People and megafauna shared this continent.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Animal",
+          "What it was",
+          "Size clue"
+        ],
+        "rows": [
+          [
+            "Diprotodon",
+            "Wombat relative, largest marsupial ever",
+            "Rhinoceros sized"
+          ],
+          [
+            "Thylacoleo",
+            "Marsupial lion, a predator",
+            "Around 100 kg"
+          ],
+          [
+            "Procoptodon",
+            "Giant short-faced kangaroo",
+            "About 2 m tall"
+          ],
+          [
+            "Genyornis",
+            "Giant flightless bird",
+            "Far heavier than an emu"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Diprotodon, Thylacoleo, Procoptodon and Genyornis: megafauna that overlapped with people.",
+      "voiceover": {
+        "text": "So what counts as megafauna? The usual cut off is animals heavier than about forty five kilograms, and Australia had some spectacular ones. Diprotodon was a relative of the wombat, roughly the size of a rhinoceros, and it's the largest marsupial that has ever lived. Thylacoleo, the marsupial lion, was a powerful predator with slicing cheek teeth. Procoptodon was a short faced kangaroo standing about two metres tall. And Genyornis was a flightless bird far heavier than any emu. Here's the key point for today. Most of these animals had disappeared by about forty thousand years ago, and Aboriginal people were already living across Australia by then. Exactly why they vanished is still debated. Hunting, changes in fire patterns and a drying climate have all been proposed, and they may well have acted together."
+      },
+      "durationInFrames": 1826
+    },
+    {
+      "id": "concept-evidence",
+      "type": "concept",
+      "heading": "Aboriginal palaeontological evidence",
+      "body": "Rock art and archaeological sites both suggest that people and megafauna lived at the same time.",
+      "bullets": [
+        {
+          "text": "Rock art interpreted as extinct megafauna, like Genyornis in Arnhem Land and Thylacoleo in the Kimberley."
+        },
+        {
+          "text": "Sites like Cuddie Springs, NSW, with stone tools in the same layers as megafauna bones."
+        },
+        {
+          "text": "Thylacine rock art on the mainland, showing art can record animals accurately."
+        }
+      ],
+      "secondary": "Each line of evidence has limits, so the conclusion is strongest when they agree.",
+      "callout": "One painting suggests. Several lines of evidence convince.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Evidence",
+          "What it suggests",
+          "Limitation"
+        ],
+        "rows": [
+          [
+            "Megafauna rock art",
+            "People saw these animals alive",
+            "Hard to date; identification is interpretation"
+          ],
+          [
+            "Tools with megafauna bones",
+            "People and megafauna overlapped",
+            "Bones may have shifted between layers"
+          ],
+          [
+            "Thylacine rock art",
+            "Art records real animals accurately",
+            "Not megafauna; supports reliability"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Rock art and shared sediment layers suggest overlap; each has dating or interpretation limits.",
+      "voiceover": {
+        "text": "Alright, so what does the Aboriginal evidence actually look like? First, there's rock art. As well as the possible Genyornis in Arnhem Land, a painting in the Kimberley has been interpreted as Thylacoleo, the marsupial lion. Second, there are archaeological sites like Cuddie Springs in New South Wales, where stone tools turn up in the same sediment layers as the bones of megafauna, suggesting people and those animals overlapped. Third, and this one matters for judging reliability, rock art in Arnhem Land shows thylacines, with their striped backs, even though thylacines died out on the mainland around three thousand years ago. That tells us the artists recorded real animals accurately. Now, every line of evidence has limits. Paintings are hard to date, and identifying an animal from a painting is interpretation. Bones can also shift between layers. So the conclusion is strongest when the different lines agree."
+      },
+      "durationInFrames": 2004
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Megafauna: very large animals, usually heavier than about 45 kg."
+        },
+        {
+          "text": "Palaeontological evidence: evidence of past life, such as fossils, traces and records of extinct species."
+        },
+        {
+          "text": "Monotreme: an egg-laying mammal, such as the platypus and echidnas."
+        },
+        {
+          "text": "Marsupial: a mammal born at a very early stage that develops attached to a teat, usually in a pouch."
+        }
+      ],
+      "callout": "Monotremes lay eggs; marsupials give birth to tiny young.",
+      "caption": "Megafauna, palaeontological evidence, monotreme, marsupial.",
+      "voiceover": {
+        "text": "Let's pin down four terms before we go further. Megafauna means very large animals, usually heavier than about forty five kilograms. Palaeontological evidence is any evidence of past life, so fossils, traces, and records of species that are now extinct, and that's why rock art showing extinct animals counts. A monotreme is an egg laying mammal. Today there are only two kinds left, the platypus and the echidnas, and they're found only in Australia and New Guinea. A marsupial is a mammal whose young is born at a very early stage and then develops attached to a teat, usually inside a pouch. Kangaroos, koalas, wombats and possums are all marsupials. Keep those last two straight. Monotremes lay eggs, marsupials give birth to tiny young."
+      },
+      "durationInFrames": 1690
+    },
+    {
+      "id": "concept-isolation",
+      "type": "concept",
+      "heading": "Isolation: Australia drifts alone",
+      "body": "Once Australia split from Antarctica, its mammals evolved in isolation from most other continents.",
+      "bullets": [
+        {
+          "text": "Australia was part of Gondwana, linked through Antarctica to South America."
+        },
+        {
+          "text": "Marsupials reached Australia by that route before the continents separated."
+        },
+        {
+          "text": "Australia split from Antarctica roughly 45 to 35 million years ago and drifted north."
+        },
+        {
+          "text": "With few placental competitors, marsupials radiated into many niches."
+        }
+      ],
+      "secondary": "Think of a lifeboat cut loose: whoever is aboard must fill every job. The analogy breaks because a few groups, like bats, rodents and later dingoes, did arrive.",
+      "callout": "Isolation cut off gene flow and kept most placental mammals out.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "a",
+            "label": "Gondwana links Australia, Antarctica, South America"
+          },
+          {
+            "id": "b",
+            "label": "Marsupials arrive via Antarctica"
+          },
+          {
+            "id": "c",
+            "label": "Australia separates and drifts north"
+          },
+          {
+            "id": "d",
+            "label": "Few placental competitors"
+          },
+          {
+            "id": "e",
+            "label": "Adaptive radiation into many niches"
+          }
+        ],
+        "edges": [
+          {
+            "from": "a",
+            "to": "b"
+          },
+          {
+            "from": "b",
+            "to": "c"
+          },
+          {
+            "from": "c",
+            "to": "d"
+          },
+          {
+            "from": "d",
+            "to": "e"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Separation from Gondwana isolated Australia's marsupials, which then radiated into many niches.",
+      "voiceover": {
+        "text": "Now let's zoom out. Why is Australia so full of marsupials? Start with isolation. Australia was once part of Gondwana, connected through Antarctica to South America, and marsupial fossils found in both of those places trace the route their ancestors took into Australia. Then, roughly forty five to thirty five million years ago, Australia split from Antarctica and drifted north on its own. That cut off gene flow, and it kept most placental mammals out. Here's an analogy. Think of a lifeboat cut loose from a ship. Whoever happened to be aboard is who you've got, and they have to fill every job on board. In the same way, marsupials radiated into grazers, browsers, burrowers and predators. Where the analogy breaks is that a few passengers did get aboard, like bats that could fly in, rodents from Asia, and eventually dingoes."
+      },
+      "durationInFrames": 1922
+    },
+    {
+      "id": "concept-adaptation",
+      "type": "concept",
+      "heading": "Adaptation: surviving a drying continent",
+      "body": "As Australia drifted north it became drier, with poorer soils and more fire, and selection favoured new traits.",
+      "bullets": [
+        {
+          "text": "Red kangaroos hop using elastic tendons, travelling far on little energy."
+        },
+        {
+          "text": "Kangaroos can pause embryo development until conditions improve."
+        },
+        {
+          "text": "Koalas digest tough, toxic eucalypt leaves few other mammals can use."
+        },
+        {
+          "text": "The platypus finds prey underwater using electroreceptors in its bill."
+        }
+      ],
+      "secondary": "Platypus relatives show gradual change: Steropodon lived about 100 million years ago, and Obdurodon had adult teeth that modern platypuses lack.",
+      "callout": "Isolation set the stage; the environment selected the traits.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Species",
+          "Adaptation",
+          "Type",
+          "Advantage"
+        ],
+        "rows": [
+          [
+            "Red kangaroo",
+            "Hopping with elastic tendons",
+            "Structural",
+            "Cheap travel to patchy food and water"
+          ],
+          [
+            "Red kangaroo",
+            "Embryonic diapause",
+            "Physiological",
+            "Breeding matched to rainfall"
+          ],
+          [
+            "Koala",
+            "Digests eucalypt leaves",
+            "Physiological",
+            "Uses a food few others can"
+          ],
+          [
+            "Platypus",
+            "Electroreceptors in bill",
+            "Structural",
+            "Finds prey with eyes closed"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Aridity, poor soils and fire selected traits like hopping, diapause and eucalypt digestion.",
+      "voiceover": {
+        "text": "Isolation explains who was on the lifeboat, but it doesn't explain what they became. That's adaptation. As Australia drifted north it became much drier, with nutrient poor soils and more frequent fire, and those conditions acted as selective pressures. Red kangaroos hop using stretchy, elastic tendons that store energy, so they can travel long distances between patchy food and water cheaply. Kangaroos can also pause the development of an embryo until conditions improve, which matches breeding to rainfall. Koalas digest tough, toxic eucalypt leaves that few other mammals can use. And the platypus, a monotreme, hunts underwater with its eyes closed, using electroreceptors in its bill. The platypus line also shows change over time. Steropodon lived about a hundred million years ago, and a later relative, Obdurodon, still had teeth as an adult, which modern platypuses lack."
+      },
+      "durationInFrames": 1867
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "An evaluate question",
+      "question": "Evaluate the role of isolation and adaptation in the evolution of Australian marsupials and monotremes. (5 marks)",
+      "coachNote": "Evaluate means judge. Give evidence for each factor, state a limit, then make a judgement.",
+      "steps": [
+        "Isolation: Australia separated from Antarctica about 45 to 35 million years ago, cutting gene flow and keeping most placental mammals out.",
+        "Evidence: marsupial fossils in South America and Antarctica trace the route; Australian marsupials then radiated into many niches.",
+        "Adaptation: aridity, poor soils and fire selected traits such as hopping, diapause and eucalypt digestion.",
+        "Limit: isolation did not create these groups. Opossums live in South America, and monotreme fossils occur in Patagonia.",
+        "Judgement: isolation reduced competition and preserved these groups; adaptation to a drying continent produced their diversity ✓"
+      ],
+      "caption": "Isolation set the stage and preserved lineages; adaptation produced the diversity.",
+      "voiceover": {
+        "text": "Let's build a five mark evaluate answer. The coach note is the key, evaluate means judge, so you need evidence for each factor, a limit, and then a clear judgement. Step one, isolation. Australia separated from Antarctica around forty five to thirty five million years ago, which cut off gene flow and kept most placental mammals out. Step two, the evidence. Marsupial fossils in South America and Antarctica trace the route in, and once isolated, Australian marsupials radiated into many niches. Step three, adaptation. Aridity, poor soils and fire selected traits like hopping, diapause and eucalypt digestion. Step four is the limit, and this is what lifts the answer. Isolation didn't create these groups, because opossums still live in South America and monotreme fossils have been found in Patagonia. So the judgement is that isolation set the stage and preserved these lineages, while adaptation produced their diversity."
+      },
+      "durationInFrames": 2004
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: saying marsupials evolved in Australia because it was isolated. Marsupials arrived from elsewhere; isolation shaped how they diversified and helped them persist.",
+      "secondary": "Trap 2: treating one painting as proof. Rock art is consistent with people seeing megafauna, but identification is interpretation and dating is hard. Look for agreement between several lines of evidence.",
+      "mistakeTag": "Where evolution answers lose marks",
+      "callout": "Isolation shapes lineages; it doesn't create them. One source suggests, several confirm.",
+      "caption": "Isolation shaped marsupials but didn't create them; one painting is evidence, not proof.",
+      "voiceover": {
+        "text": "Two traps that show up in marking every year. Trap one is writing that marsupials evolved in Australia because Australia was isolated. That gets the cause backwards. Marsupial ancestors arrived from elsewhere, through South America and Antarctica, and you can still find marsupials in the Americas today. What isolation did was shape how they diversified and help them persist without much placental competition. Trap two is about evidence. A single painting that looks like Genyornis does not prove people saw Genyornis. It's consistent with that idea, but the identification is an interpretation and the painting is hard to date. So the question to ask yourself on the day is, do several independent lines of evidence point the same way? Rock art, dated sediment layers and fossils together make a strong case. One of them alone only makes a suggestion."
+      },
+      "durationInFrames": 1895
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Most monotreme fossils are Australian, but a platypus-like fossil tooth about 61 million years old was found in Patagonia, South America. What does this suggest about the role of isolation?",
+      "pausePrompt": "Pause and decide: did isolation create monotremes, or preserve them?",
+      "answerSteps": [
+        "The Patagonian fossil shows monotremes once lived beyond Australia, across Gondwana.",
+        "They later disappeared from South America but survived in Australia and New Guinea.",
+        "So isolation did not create monotremes; it helped preserve them.",
+        "Answer: isolation explains where monotremes survived, not where they originated ✓"
+      ],
+      "caption": "The Patagonian fossil shows isolation preserved monotremes rather than creating them.",
+      "voiceover": {
+        "text": "Quick check, and this one's about new evidence. Most monotreme fossils come from Australia, but a platypus like fossil tooth, about sixty one million years old, was found in Patagonia in South America. What does that suggest about the role of isolation? Pause and decide, did isolation create monotremes, or preserve them? Right, let's reason it out. The Patagonian tooth tells us monotremes once lived beyond Australia, spread across the old Gondwanan landmass. Later they disappeared from South America, but they survived in Australia and New Guinea. So isolation can't be the reason monotremes exist. It's a better explanation for why they're still here. The strongest answer says isolation explains where monotremes survived, not where they first evolved. That's exactly the kind of limit that earns the top marks in an evaluate question."
+      },
+      "durationInFrames": 1813
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Megafauna like Diprotodon, Thylacoleo and Genyornis mostly vanished by about 40,000 years ago.",
+        "Aboriginal rock art and sites like Cuddie Springs suggest people lived alongside megafauna.",
+        "Evidence is strongest when rock art, dated layers and fossils agree.",
+        "Isolation cut gene flow and kept most placentals out, preserving marsupials and monotremes.",
+        "Adaptation to aridity, poor soils and fire produced traits like hopping and diapause."
+      ],
+      "finalPrompt": "For any evaluate question: evidence for each factor, a limit, then a clear judgement.",
+      "caption": "Megafauna, Aboriginal evidence, isolation, adaptation, and how to evaluate.",
+      "voiceover": {
+        "text": "Let's lock it in. First, megafauna like Diprotodon, Thylacoleo and Genyornis mostly disappeared by around forty thousand years ago. Second, Aboriginal evidence, including rock art in Arnhem Land and the Kimberley and sites like Cuddie Springs, suggests people lived alongside these animals. Third, that evidence is strongest when rock art, dated sediment layers and fossils all agree, because each one alone has limits. Fourth, isolation from Gondwana cut off gene flow and kept most placental mammals out, which preserved Australia's marsupials and monotremes. And fifth, adaptation to aridity, poor soils and fire produced traits like hopping, diapause and eucalypt digestion. For any evaluate question, give evidence for each factor, name a limit, and finish with a clear judgement. See you next lesson."
+      },
+      "durationInFrames": 1663
+    }
+  ]
+}

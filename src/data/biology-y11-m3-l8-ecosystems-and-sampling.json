@@ -1,0 +1,437 @@
+{
+  "title": "Ecosystems and Sampling",
+  "subtitle": "Abiotic and biotic factors, quadrats, transects and mark-release-recapture",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 8",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Compare abiotic data from a variety of aquatic and terrestrial ecosystems",
+    "Explain how abiotic and biotic factors influence the abundance, distribution and diversity of species in an ecosystem",
+    "Compare sampling techniques to estimate distribution and abundance of organisms",
+    "Conduct a practical investigation to examine the distribution and abundance of a plant or animal using belt transect, line transect or quadrat sampling techniques",
+    "Conduct a practical investigation to model the mark-release-recapture method and estimate abundance of mobile organisms",
+    "Evaluate the validity, reliability and accuracy of ecological sampling data when drawing conclusions about ecosystem dynamics",
+    "investigate and determine relationships between biotic and abiotic factors in an ecosystem, including: the impact of abiotic factors (ACSBL021, ACSBL022, ACSBL025), measuring populations of organisms using sampling techniques (ACSBL003, ACSBL015)"
+  ],
+  "moduleLessonCount": 9,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-02",
+    "BI-11WS-03",
+    "BI-11WS-04",
+    "BI-11WS-05",
+    "BI-11WS-06"
+  ],
+  "inquiryQuestion": "What effect can one species have on the other species in a community?",
+  "lessonIntent": "Students can compare abiotic factors across ecosystems, choose between quadrat, transect and mark-release-recapture sampling, calculate population estimates, and evaluate the validity, reliability and accuracy of sampling data.",
+  "examSkill": "Select a sampling technique for a given organism, calculate an estimate using quadrat density or the Lincoln index, and evaluate the data by naming a specific source of error and its effect.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, ecosystems and how ecologists sample them. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Ecosystems and Sampling"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "How many skinks live in this creek bank?",
+      "body": "You can't count every organism, so ecologists sample part of a habitat and estimate the rest.",
+      "callout": "When does a small sample tell you the truth about the whole?",
+      "image": "bioY11M3L8QuadratSampling",
+      "caption": "Ecologists sample part of an ecosystem to estimate the whole.",
+      "voiceover": {
+        "text": "Imagine you've been asked how many lizards live along a creek bank, or how many wildflowers are growing in a paddock. You can't possibly find and count every single one. So ecologists do what a cook does with a pot of soup. They taste a spoonful and judge the whole pot. That works beautifully if the soup has been stirred, so every spoonful is typical. It fails if all the salt has sunk to the bottom. Sampling works exactly the same way. Today we'll look at what shapes an ecosystem, three ways to sample it, and the question examiners love. When does a small sample tell you the truth, and when does it mislead you?"
+      },
+      "durationInFrames": 1567
+    },
+    {
+      "id": "concept-factors",
+      "type": "concept",
+      "heading": "Abiotic factors differ between ecosystems",
+      "body": "Abiotic factors are non-living conditions; biotic factors are the living things and their interactions.",
+      "bullets": [
+        {
+          "text": "Abiotic: temperature, light, water, oxygen, pH, salinity, soil type."
+        },
+        {
+          "text": "Biotic: food, predators, competitors, parasites and disease."
+        },
+        {
+          "text": "Aquatic and terrestrial ecosystems differ most in oxygen, light, water and temperature."
+        }
+      ],
+      "secondary": "Measure them with a thermometer or data logger, light meter, pH probe, dissolved oxygen meter and salinity meter.",
+      "callout": "Water buffers temperature but holds far less oxygen than air.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Factor",
+          "Aquatic",
+          "Terrestrial"
+        ],
+        "rows": [
+          [
+            "Temperature",
+            "Changes slowly; water buffers it",
+            "Swings widely between day and night"
+          ],
+          [
+            "Oxygen",
+            "Limited; less dissolves in warm water",
+            "Plentiful in air, about 21%"
+          ],
+          [
+            "Light",
+            "Fades quickly with depth and murky water",
+            "High, but reduced by canopy shade"
+          ],
+          [
+            "Water",
+            "Always present; salinity matters",
+            "Often limiting; soil moisture matters"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Aquatic and terrestrial ecosystems differ in temperature stability, oxygen, light and water.",
+      "voiceover": {
+        "text": "Let's start with what makes up an ecosystem. Abiotic factors are the non living conditions, so things like temperature, light, water, oxygen, pH, salinity and soil type. Biotic factors are the living parts, food, predators, competitors, parasites and disease. The syllabus wants you to compare abiotic data between aquatic and terrestrial ecosystems, so here are the big contrasts. Water changes temperature slowly, so aquatic temperatures are stable, while on land they can swing widely between day and night. Oxygen goes the other way. Air is about twenty one percent oxygen, but water holds far less, and even less when it's warm. Light fades quickly with depth, especially in murky water. And on land, water itself is often the limiting factor, while in water, salinity matters more."
+      },
+      "durationInFrames": 1717
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Distribution: where a species is found in an ecosystem."
+        },
+        {
+          "text": "Abundance: how many individuals of a species are present."
+        },
+        {
+          "text": "Diversity: the number of different species, and how evenly individuals are spread among them."
+        },
+        {
+          "text": "Sampling: measuring part of a population or area to estimate the whole."
+        }
+      ],
+      "callout": "Distribution is where; abundance is how many.",
+      "caption": "Distribution, abundance, diversity, sampling.",
+      "voiceover": {
+        "text": "Four words that get mixed up constantly. Distribution is where a species is found, for example only on the upper part of a rocky shore, or only near a creek. Abundance is how many individuals are present, which you might report as a count, a density per square metre, or percentage cover. Diversity is the number of different species in an area, along with how evenly the individuals are spread among them. And sampling means measuring part of a population or an area, then using it to estimate the whole. The quick way to keep the first two apart is that distribution answers where, and abundance answers how many. They often need different techniques."
+      },
+      "durationInFrames": 1554
+    },
+    {
+      "id": "concept-influence",
+      "type": "concept",
+      "heading": "How factors shape distribution and abundance",
+      "body": "Abiotic factors often set the limits a species can tolerate; biotic factors decide who succeeds within them.",
+      "bullets": [
+        {
+          "text": "On a rocky shore, heat and drying out limit how high organisms can live."
+        },
+        {
+          "text": "Lower down, competition and predation become stronger."
+        },
+        {
+          "text": "So species form bands, or zones, along the environmental gradient."
+        }
+      ],
+      "secondary": "A gradient like this is exactly where a transect is the right sampling tool.",
+      "callout": "Abiotic sets the limits; biotic decides the winners.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "a",
+            "label": "High shore: heat and drying out"
+          },
+          {
+            "id": "b",
+            "label": "Only tolerant species survive"
+          },
+          {
+            "id": "c",
+            "label": "Low shore: more competition and predation"
+          },
+          {
+            "id": "d",
+            "label": "Zones of species along the gradient"
+          }
+        ],
+        "edges": [
+          {
+            "from": "a",
+            "to": "b"
+          },
+          {
+            "from": "b",
+            "to": "d"
+          },
+          {
+            "from": "c",
+            "to": "d"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "On a rocky shore, abiotic stress sets upper limits and biotic pressure shapes lower zones.",
+      "voiceover": {
+        "text": "So how do these factors actually shape where species live and how many there are? A rocky shore is the classic example. Near the top of the shore, organisms are exposed to air for hours at low tide, so heat and drying out are serious abiotic stresses. Only tolerant species survive there. Further down, conditions are gentler, so more species crowd in, and competition for space and predation become stronger. The result is a pattern of bands, or zones, running down the shore. As a general rule, abiotic factors often set the limits a species can tolerate, and biotic factors decide who succeeds within those limits. And notice what kind of pattern this is. It's a change along a gradient, which tells you exactly which sampling tool to reach for."
+      },
+      "durationInFrames": 1772
+    },
+    {
+      "id": "concept-quadrats",
+      "type": "concept",
+      "heading": "Quadrats and transects",
+      "body": "Quadrats estimate abundance; transects show how distribution changes along a gradient.",
+      "bullets": [
+        {
+          "text": "Quadrat: a square frame placed randomly to count or estimate percentage cover."
+        },
+        {
+          "text": "Line transect: record species touching a line at set intervals across a gradient."
+        },
+        {
+          "text": "Belt transect: place quadrats along the line to measure distribution and abundance."
+        }
+      ],
+      "secondary": "Population estimate = mean number per quadrat × (total area ÷ quadrat area).",
+      "callout": "Random quadrats for how many; transects for where along a gradient.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Technique",
+          "Best for",
+          "Measures"
+        ],
+        "rows": [
+          [
+            "Random quadrats",
+            "Plants, slow or fixed animals",
+            "Abundance, density, % cover"
+          ],
+          [
+            "Line transect",
+            "Change along a gradient",
+            "Distribution"
+          ],
+          [
+            "Belt transect",
+            "Gradient, in more detail",
+            "Distribution and abundance"
+          ],
+          [
+            "Mark-release-recapture",
+            "Mobile animals",
+            "Abundance"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Random quadrats estimate abundance; line and belt transects capture distribution along a gradient.",
+      "voiceover": {
+        "text": "Now the tools. A quadrat is a square frame, often one metre by one metre, that you place randomly in the study area. Inside it, you count the individuals, or estimate percentage cover for things like grass that are hard to count. Quadrats are ideal for plants and for animals that don't move much, like snails or barnacles. To scale up, take the mean number per quadrat and multiply by how many quadrats would fit into the total area. A line transect is a tape laid across a gradient, say from the water's edge up a bank, and you record every species touching the line at set intervals. That shows distribution. A belt transect combines the two, with quadrats placed at intervals along the line, so you get distribution and abundance together."
+      },
+      "durationInFrames": 1799
+    },
+    {
+      "id": "concept-mrr",
+      "type": "concept",
+      "heading": "Mark-release-recapture",
+      "body": "For mobile animals, the fraction of marked animals in a second sample estimates the whole population.",
+      "bullets": [
+        {
+          "text": "Capture a sample, mark them harmlessly (M), and release them."
+        },
+        {
+          "text": "Later, capture a second sample (C) and count the marked ones (R)."
+        },
+        {
+          "text": "Lincoln index: N = (M × C) ÷ R."
+        }
+      ],
+      "secondary": "Assumptions: marks aren't lost and don't affect survival or behaviour; marked animals mix fully; no births, deaths or migration between samples.",
+      "callout": "The marked fraction of the sample equals the marked fraction of the population.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "a",
+            "label": "Capture and mark M animals"
+          },
+          {
+            "id": "b",
+            "label": "Release and allow mixing"
+          },
+          {
+            "id": "c",
+            "label": "Recapture C animals"
+          },
+          {
+            "id": "d",
+            "label": "Count marked recaptures R"
+          },
+          {
+            "id": "e",
+            "label": "N = (M × C) ÷ R"
+          }
+        ],
+        "edges": [
+          {
+            "from": "a",
+            "to": "b"
+          },
+          {
+            "from": "b",
+            "to": "c"
+          },
+          {
+            "from": "c",
+            "to": "d"
+          },
+          {
+            "from": "d",
+            "to": "e"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Lincoln index: N = (M × C) ÷ R, valid only if its assumptions hold.",
+      "voiceover": {
+        "text": "Quadrats are useless for animals that run away, so for mobile animals we use mark release recapture. First, capture a sample and mark every animal in a way that doesn't harm it, say a small dab of non toxic paint. Call that number M. Release them and give them time to mix back into the population. Later, capture a second sample, call it C, and count how many of those are already marked. That's R. The logic is a proportion. The fraction of marked animals in your second sample should match the fraction of marked animals in the whole population. Rearranging gives the Lincoln index, N equals M times C, divided by R. It only works if the assumptions hold. Marks mustn't wear off or change behaviour, marked animals must mix fully, and there should be no births, deaths or migration between the two samples."
+      },
+      "durationInFrames": 1976
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "A Lincoln index estimate",
+      "question": "An ecologist captured 60 eastern water skinks along a creek, marked each with a small dot of non-toxic paint, and released them. One week later, 45 skinks were captured, and 9 of these were marked. Estimate the population size.",
+      "coachNote": "Target: population size N. Identify M, C and R, then use N = (M × C) ÷ R.",
+      "unitCancel": {
+        "left": "M × C (skinks × skinks)",
+        "right": "R (skinks)",
+        "result": "N (skinks)"
+      },
+      "steps": [
+        "Known: M = 60 marked; C = 45 in second sample; R = 9 marked recaptures.",
+        "Formula: N = (M × C) ÷ R.",
+        "Substitute: N = (60 × 45) ÷ 9 = 2700 ÷ 9.",
+        "Check the logic: 9 of 45 is one fifth marked, so 60 is one fifth of the population.",
+        "Answer: N ≈ 300 skinks ✓"
+      ],
+      "caption": "N = (60 × 45) ÷ 9 = 300 skinks.",
+      "voiceover": {
+        "text": "Let's run the numbers. An ecologist captures sixty eastern water skinks along a creek, marks each with a small dot of non toxic paint, and releases them. A week later, forty five skinks are captured, and nine of them are marked. Estimate the population. The coach note says, identify M, C and R first. M is the sixty marked in the first sample. C is the forty five caught the second time. And R is the nine marked recaptures. The formula is N equals M times C, divided by R. So that's sixty times forty five, which is two thousand seven hundred, divided by nine, giving three hundred skinks. Now check that it makes sense. Nine out of forty five is one fifth, so one fifth of the population is marked. If sixty skinks are one fifth, the whole population is five times sixty, which is three hundred."
+      },
+      "durationInFrames": 2017
+    },
+    {
+      "id": "concept-validity",
+      "type": "concept",
+      "heading": "Validity, reliability and accuracy",
+      "body": "Sampling data can only support a conclusion if the method is valid, repeatable and close to the true value.",
+      "bullets": [
+        {
+          "text": "Validity: the method measures what it claims, with random placement and assumptions met."
+        },
+        {
+          "text": "Reliability: repeating the sampling gives consistent results, so use many quadrats or repeat surveys."
+        },
+        {
+          "text": "Accuracy: the estimate is close to the true value; larger samples help."
+        }
+      ],
+      "secondary": "Biased placement is a systematic error that shifts every result the same way. Too few samples gives random error that scatters results.",
+      "callout": "Random placement fights bias; more samples fight scatter.",
+      "diagram": {
+        "type": "errorDartboard"
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Validity, reliability, accuracy; systematic versus random error in sampling.",
+      "voiceover": {
+        "text": "Here's the part the syllabus asks you to evaluate. Validity means the method actually measures what it claims to. Quadrats must be placed randomly, the quadrat size must suit the organism, and for mark release recapture the assumptions must be met. Reliability means that if you repeat the sampling, you get consistent results, which is why you use many quadrats or repeat the survey on different days. Accuracy means how close your estimate is to the true value, and larger samples generally get you closer. The dartboards show the two kinds of error. If you place quadrats where the plants look thickest, that's a systematic error, every result is pushed the same way, so you overestimate no matter how many times you repeat it. Using only two or three quadrats gives random error, results scattered around the true value. Random placement fights bias, and more samples fight scatter."
+      },
+      "durationInFrames": 2017
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: repeating a biased method and calling it accurate. If quadrats are placed where plants are thickest, every repeat agrees, but all overestimate. Reliable is not the same as valid.",
+      "secondary": "Trap 2: forgetting what a broken assumption does. If paint wears off, R is too small, so N = (M × C) ÷ R is an overestimate. If marked animals become trap-shy, it also overestimates.",
+      "mistakeTag": "Where sampling marks vanish",
+      "callout": "Always say which way the error pushes the estimate.",
+      "caption": "Consistent is not the same as valid; lost marks make R too small and N too big.",
+      "voiceover": {
+        "text": "Two traps. Trap one is thinking that consistent results must be correct. Say a student always drops their quadrats where the plants look thickest. Every repeat agrees, so the data looks reliable, but every result overestimates. Reliability is not the same as validity, and repeating a biased method just repeats the bias. Trap two is vague evaluation of mark release recapture. Don't just write that marks could wear off. Say what it does to the numbers. If marks wear off, some marked animals get counted as unmarked, so R is too small. R is on the bottom of the fraction, so the estimate of N comes out too big. The same happens if marked animals learn to avoid traps. So your discriminator on the day is this. Which variable does the error change, and does that push the estimate up or down?"
+      },
+      "durationInFrames": 1935
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Eight 1 m² quadrats were placed randomly in a 400 m² paddock. The counts of a native daisy were 3, 5, 2, 4, 6, 3, 4 and 5. Estimate the population, and suggest one way to improve the reliability of the estimate.",
+      "pausePrompt": "Pause: find the mean per quadrat, then scale up.",
+      "answerSteps": [
+        "Total = 3 + 5 + 2 + 4 + 6 + 3 + 4 + 5 = 32 daisies.",
+        "Mean = 32 ÷ 8 = 4 daisies per m².",
+        "Scale up: 4 per m² × 400 m² = 1600 daisies.",
+        "Improve reliability: use more randomly placed quadrats, or repeat the survey, and compare results ✓"
+      ],
+      "caption": "Mean 4 per m² × 400 m² ≈ 1600 daisies; more quadrats improve reliability.",
+      "voiceover": {
+        "text": "Quick check, and this time it's quadrats. Eight quadrats, each one square metre, are placed randomly in a four hundred square metre paddock. The daisy counts are three, five, two, four, six, three, four and five. Estimate the population, and suggest one way to improve reliability. Pause, find the mean per quadrat, then scale up. OK, let's check. Add the counts and you get thirty two daisies. Divide by eight quadrats, and the mean is four daisies per square metre. The paddock is four hundred square metres, so four times four hundred gives an estimate of about one thousand six hundred daisies. For reliability, use more randomly placed quadrats, or repeat the survey, and check the results are consistent."
+      },
+      "durationInFrames": 1622
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Abiotic factors are non-living; aquatic systems have stable temperature but less oxygen and light.",
+        "Distribution is where a species lives; abundance is how many there are.",
+        "Random quadrats estimate abundance; line and belt transects follow a gradient.",
+        "Mark-release-recapture: N = (M × C) ÷ R, valid only if its assumptions hold.",
+        "Evaluate by naming the error and which way it pushes the estimate."
+      ],
+      "finalPrompt": "Before choosing a method: does the organism move, and am I measuring where it lives or how many there are?",
+      "caption": "Factors, distribution versus abundance, quadrats and transects, Lincoln index, evaluating error.",
+      "voiceover": {
+        "text": "Let's lock it in. First, abiotic factors are the non living conditions, and compared with land, aquatic ecosystems have more stable temperatures but much less oxygen and light at depth. Second, distribution is where a species lives, and abundance is how many there are. Third, random quadrats estimate abundance, while line and belt transects follow a change along a gradient. Fourth, for mobile animals, mark release recapture gives N equals M times C divided by R, and it's only valid if the assumptions hold. And fifth, when you evaluate sampling, name the specific error and say which way it pushes the estimate. Before you choose a method in any question, ask yourself two things. Does this organism move, and am I measuring where it lives, or how many there are? See you next lesson."
+      },
+      "durationInFrames": 1826
+    }
+  ]
+}
