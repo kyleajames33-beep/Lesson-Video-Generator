@@ -94,7 +94,12 @@ const LIMIT = limitArg ? Number(limitArg.split('=')[1]) : null;
 // a canary, or whole modules: --lesson=Chemistry-Y12-M5,Chemistry-Y12-M6.
 // Bypasses tier/flagged filters — matches exactly what you name.
 const LESSONS = lessonArg ? lessonArg.split('=')[1].toLowerCase().split(',').map((s) => s.trim()).filter(Boolean) : null;
-const matchesLesson = (cid) => LESSONS && LESSONS.some((s) => cid.toLowerCase().includes(s));
+// A name must not run on into more digits: "biology-y12-m6-l1" means L1 only,
+// not L10–L19 (plain substring matching voiced ten extra lessons). Module
+// prefixes like "biology-y12-m5" still select the whole module.
+const escapeRe = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const matchesLesson = (cid) =>
+  LESSONS && LESSONS.some((s) => new RegExp(`${escapeRe(s)}(?![0-9])`).test(cid.toLowerCase()));
 
 // Length guard: scenes longer than this are voiced via the sentence-splitting
 // chunked path (prosody resets per chunk = far lower stutter risk). 800 sits
