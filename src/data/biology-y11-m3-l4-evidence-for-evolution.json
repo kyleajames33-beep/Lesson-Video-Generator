@@ -1,0 +1,362 @@
+{
+  "title": "Evidence for Evolution",
+  "subtitle": "Fossils and dating, comparative anatomy, biochemistry and biogeography",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Analyse information on how transitional fossils, fossil assemblages and relative dating have provided palaeontological and geological evidence for past changes in life forms",
+    "Conduct a scientific investigation to infer evolutionary relationships between species using DNA and amino acid sequences",
+    "Evaluate comparative anatomy, genetic phylogeny, biogeography and biochemistry as evidence for the theory of evolution by natural selection",
+    "investigate, using secondary sources, evidence in support of Darwin and Wallace’s Theory of Evolution by Natural Selection, including but not limited to: biochemical evidence, comparative anatomy, comparative embryology and biogeography (ACSBL089); techniques used to date fossils and the evidence produced"
+  ],
+  "moduleLessonCount": 9,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-03",
+    "BI-11WS-04",
+    "BI-11WS-05",
+    "BI-11WS-06"
+  ],
+  "inquiryQuestion": "What is the evidence that supports the Theory of Evolution by Natural Selection?",
+  "lessonIntent": "Students can explain how fossils, relative dating, comparative anatomy, biochemistry and biogeography support evolution, infer relationships from amino acid sequence data, and evaluate the strengths and limits of each line of evidence.",
+  "examSkill": "Count sequence differences to rank relatedness, order fossils by relative dating, and evaluate a line of evidence by stating a strength and a limitation.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, the evidence for evolution, from fossils to DNA. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Evidence for Evolution"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A fossil that arrived right on cue",
+      "body": "In 1861, two years after Darwin published On the Origin of Species, quarry workers in Germany found Archaeopteryx: feathers and wings like a bird, but teeth, clawed fingers and a long bony tail like a reptile.",
+      "callout": "What would you expect to find if birds evolved from reptiles?",
+      "image": "bioY11M3L4Archaeopteryx",
+      "durationInFrames": 1746,
+      "caption": "Archaeopteryx combined bird features with reptile features, about 150 million years ago.",
+      "voiceover": {
+        "text": "In 1859, Darwin published On the Origin of Species, and one of the loudest objections was simple. If species really change into new ones, where are the in between forms? Just two years later, in 1861, workers in a limestone quarry in Germany split open a slab and found Archaeopteryx. It had feathers and wings, like a bird. But it also had teeth, clawed fingers, and a long bony tail, like a reptile. It's about a hundred and fifty million years old. That's exactly the kind of fossil you'd predict if birds evolved from reptilian ancestors. But one fossil isn't enough to convince anyone on its own. Today we'll look at five independent lines of evidence, and see why, together, they make such a strong case for evolution."
+      }
+    },
+    {
+      "id": "concept-fossils",
+      "type": "concept",
+      "heading": "Transitional fossils and assemblages",
+      "body": "Fossils record which organisms lived, and when, in the past.",
+      "bullets": [
+        {
+          "text": "Transitional fossils show features of an ancestral group and a descendant group."
+        },
+        {
+          "text": "Archaeopteryx links reptiles and birds; Tiktaalik links fish and four-limbed animals."
+        },
+        {
+          "text": "A fossil assemblage is the group of fossils found together in one rock layer."
+        },
+        {
+          "text": "Changing assemblages from layer to layer show life forms changing over time."
+        }
+      ],
+      "secondary": "Limitation: fossilisation is rare. It favours hard parts and certain environments, so the fossil record has gaps.",
+      "callout": "The record is real but incomplete.",
+      "durationInFrames": 1773,
+      "caption": "Transitional fossils bridge groups; assemblages show whole communities changing through layers.",
+      "voiceover": {
+        "text": "So let's start with fossils. A transitional fossil shows a mix of features from an ancestral group and a descendant group. Archaeopteryx links reptiles and birds. Tiktaalik, around three hundred and seventy five million years old, links fish and four limbed animals, since it had gills and scales but also a neck and sturdy fins with wrist like bones. Then there are fossil assemblages, meaning all the fossils found together in one rock layer. An assemblage is like a snapshot of a whole community, and when you compare assemblages from layer to layer, you can watch life forms appear, change and disappear over time. The limitation is that fossilisation is rare. It mostly preserves hard parts, and only in the right conditions, so the fossil record will always have gaps."
+      }
+    },
+    {
+      "id": "concept-dating",
+      "type": "concept",
+      "heading": "Relative and absolute dating",
+      "body": "Dating places fossils in order, and sometimes gives an age in years.",
+      "bullets": [
+        {
+          "text": "Law of superposition: in undisturbed sedimentary rock, lower layers are older."
+        },
+        {
+          "text": "Index fossils: widespread, short-lived species that match layers of the same age across sites."
+        },
+        {
+          "text": "Relative dating gives order only, not an age in years."
+        },
+        {
+          "text": "Radiometric dating uses radioactive decay to give an absolute age."
+        }
+      ],
+      "secondary": "Carbon-14 dates remains up to about 50 000 years old. Older fossils are dated by measuring isotopes in volcanic layers above and below them.",
+      "callout": "Relative is order. Absolute is years.",
+      "durationInFrames": 1719,
+      "caption": "Superposition and index fossils give relative order; radiometric dating gives years.",
+      "voiceover": {
+        "text": "Now, how do we know how old a fossil is? The first tool is relative dating. The law of superposition says that in undisturbed sedimentary rock, lower layers were laid down first, so they're older. Index fossils help too. These are species that were widespread but only lived for a short time, so finding the same index fossil at two sites tells you those layers are about the same age. Relative dating gives you order, older or younger, but not an age in years. For that you need absolute dating, which uses radioactive decay. Carbon fourteen works for remains up to roughly fifty thousand years old. For much older fossils, scientists date volcanic layers above and below the fossil, which brackets its age between the two."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Rock layer",
+          "Fossils found",
+          "Relative age"
+        ],
+        "rows": [
+          [
+            "Top layer",
+            "Mammal teeth",
+            "Youngest"
+          ],
+          [
+            "Middle layer",
+            "Reptile bones, index fossil X",
+            "Middle"
+          ],
+          [
+            "Bottom layer",
+            "Fish and trilobites",
+            "Oldest"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Transitional fossil: a fossil with features of both an ancestral and a descendant group."
+        },
+        {
+          "text": "Fossil assemblage: all the fossils found together in one rock layer."
+        },
+        {
+          "text": "Relative dating: ordering rocks and fossils from oldest to youngest."
+        },
+        {
+          "text": "Vestigial structure: a reduced structure with little or no function, inherited from ancestors."
+        }
+      ],
+      "callout": "Each term names a different kind of clue.",
+      "durationInFrames": 1678,
+      "caption": "Transitional fossil, fossil assemblage, relative dating, vestigial structure.",
+      "voiceover": {
+        "text": "Let's pin the terms before we go further. A transitional fossil is a fossil with features of both an ancestral group and a descendant group, like Archaeopteryx. A fossil assemblage is all the fossils found together in a single rock layer, which gives you a snapshot of a past community. Relative dating means placing rocks and fossils in order from oldest to youngest, without giving an age in years. And a vestigial structure is a reduced structure with little or no function, inherited from ancestors that did use it. That last one belongs to comparative anatomy, which is up next. Notice that each term names a different kind of clue, and a strong exam answer uses the right term for the right clue."
+      }
+    },
+    {
+      "id": "concept-anatomy",
+      "type": "concept",
+      "heading": "Comparative anatomy and embryology",
+      "body": "Shared body plans point to shared ancestry.",
+      "bullets": [
+        {
+          "text": "Homologous structures: the pentadactyl limb of humans, bats, whales and cats has the same bones."
+        },
+        {
+          "text": "Vestigial structures: whales keep small pelvic bones; humans keep a tailbone."
+        },
+        {
+          "text": "Embryology: early vertebrate embryos all have pharyngeal pouches and a tail."
+        }
+      ],
+      "secondary": "Limitation: similar structures can also come from convergent evolution, so anatomy alone can mislead about relationships.",
+      "callout": "Same bones, different jobs means common ancestry.",
+      "durationInFrames": 1814,
+      "caption": "Homologous limbs, vestigial structures and similar embryos point to common ancestry.",
+      "voiceover": {
+        "text": "Next, comparative anatomy. The classic example is the pentadactyl limb, the five fingered limb. A human arm, a bat wing, a whale flipper and a cat's leg do completely different jobs, yet they're built from the same set of bones in the same arrangement. There's no engineering reason for that, but it makes perfect sense if they were all inherited from a common ancestor. Vestigial structures tell the same story. Whales still have small pelvic bones, even though they have no back legs, and humans still have a tailbone. Embryos add another layer. Early vertebrate embryos, from fish to humans, all have pharyngeal pouches and a tail. The limitation here is convergence. As we saw with the thylacine, similar anatomy can evolve independently, so anatomy on its own can mislead you about relationships."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Animal",
+          "Limb function",
+          "Bone plan"
+        ],
+        "rows": [
+          [
+            "Human",
+            "Grasping",
+            "Humerus, radius, ulna, carpals, digits"
+          ],
+          [
+            "Bat",
+            "Flying",
+            "Humerus, radius, ulna, carpals, digits"
+          ],
+          [
+            "Cat",
+            "Walking",
+            "Humerus, radius, ulna, carpals, digits"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-biochem",
+      "type": "concept",
+      "heading": "Biochemical evidence and genetic phylogeny",
+      "body": "All life shares the same molecular machinery.",
+      "bullets": [
+        {
+          "text": "All organisms use DNA, the same genetic code, and ATP."
+        },
+        {
+          "text": "Closely related species have more similar DNA and amino acid sequences."
+        },
+        {
+          "text": "Humans and chimpanzees share about 98.8% of their DNA sequence."
+        },
+        {
+          "text": "Genetic phylogeny builds trees from sequence differences."
+        }
+      ],
+      "secondary": "Strength: sequences can be counted objectively and are not fooled by convergence. Limitation: results depend on which genes are compared.",
+      "callout": "Fewer differences, more recent common ancestor.",
+      "durationInFrames": 1800,
+      "caption": "Shared DNA, genetic code and ATP support common descent; fewer sequence differences mean closer relatives.",
+      "voiceover": {
+        "text": "So what about biochemistry? First, the big picture. Every known organism uses DNA, the same genetic code, and ATP as its energy currency. That's hard to explain unless all life shares a common origin. Then there's the detail. Mutations build up in DNA over time, so the longer two lineages have been separate, the more differences they collect. That means closely related species have more similar DNA and amino acid sequences. Humans and chimpanzees, for example, share around ninety eight point eight percent of their DNA sequence. When you use those sequence differences to build a tree, that's genetic phylogeny. The big strength is that sequences can be counted objectively, and they aren't fooled by convergence. The limitation is that different genes can give slightly different trees, so scientists compare many genes."
+      }
+    },
+    {
+      "id": "concept-biogeography",
+      "type": "concept",
+      "heading": "Biogeography",
+      "body": "Where species live reflects where their ancestors lived and how continents moved.",
+      "bullets": [
+        {
+          "text": "Australia split from Gondwana and stayed isolated, so marsupials and monotremes diversified here."
+        },
+        {
+          "text": "Southern beech trees live in South America, Australia and New Zealand, with fossils in Antarctica."
+        },
+        {
+          "text": "Galápagos species most resemble South American species, not species from similar islands elsewhere."
+        }
+      ],
+      "secondary": "Biogeography makes sense only if species descend from ancestors in particular places, then spread and diverge.",
+      "callout": "Distribution follows ancestry, not just climate.",
+      "durationInFrames": 1760,
+      "caption": "Species distributions reflect ancestry, continental drift and isolation.",
+      "voiceover": {
+        "text": "The last line of evidence is biogeography, the study of where species live. Here's the key idea. Species are found where their ancestors lived, and where those ancestors could spread, not simply wherever the climate suits them. Australia is the standout case. After it split away from the rest of Gondwana and drifted into isolation, marsupials and monotremes diversified here with little competition from placental mammals. Southern beech trees tell a similar story. They grow in South America, Australia and New Zealand, and their fossils have been found in Antarctica, which fits a shared Gondwanan origin. And Darwin himself noticed that Galápagos species most resemble species from nearby South America, rather than species on islands with similar conditions elsewhere. That only makes sense if they descended from mainland ancestors."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Inferring relationships from sequences",
+      "question": "A 10 amino acid section of the same protein was sequenced in three species. P: G D V E K G K K I F. Q: G D V A K G K K I F. R: G D A A K G R K I Y. Which two species are most closely related? Justify using the data.",
+      "coachNote": "Line the sequences up and count differences position by position for each pair.",
+      "steps": [
+        "P and Q differ only at position 4 (E vs A): 1 difference.",
+        "P and R differ at positions 3, 4, 7 and 10: 4 differences.",
+        "Q and R differ at positions 3, 7 and 10: 3 differences.",
+        "Fewest differences means the most recent common ancestor.",
+        "Answer: P and Q are most closely related (1 difference); R diverged earliest ✓"
+      ],
+      "durationInFrames": 1855,
+      "caption": "P and Q differ at one position, so they share the most recent common ancestor.",
+      "voiceover": {
+        "text": "Let's do the kind of sequence analysis the syllabus asks for. We've got a ten amino acid section of the same protein in three species, P, Q and R. The method is to line them up and count differences, position by position, for every pair. P and Q differ at only one position, position four, where P has E and Q has A. So that's one difference. P and R differ at positions three, four, seven and ten, which is four differences. And Q and R differ at positions three, seven and ten, three differences. The rule is that fewer differences means a more recent common ancestor. So P and Q are the most closely related, with just one difference, and R split off earliest. Always quote the actual counts, because the numbers are your evidence."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Pair",
+          "Positions that differ",
+          "Differences"
+        ],
+        "rows": [
+          [
+            "P and Q",
+            "4",
+            "1"
+          ],
+          [
+            "P and R",
+            "3, 4, 7, 10",
+            "4"
+          ],
+          [
+            "Q and R",
+            "3, 7, 10",
+            "3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: assuming similar-looking structures always mean close relatives. Convergence produces look-alikes in unrelated groups, so check with homology or DNA.",
+      "secondary": "Trap 2: saying relative dating gives a fossil's age. It only gives order: older or younger than another layer. An age in years needs radiometric dating.",
+      "mistakeTag": "Where evidence marks vanish",
+      "callout": "Looks can lie. Order is not age.",
+      "durationInFrames": 1746,
+      "caption": "Similarity can be convergent; relative dating gives order, not age in years.",
+      "voiceover": {
+        "text": "Two traps with this evidence. Trap one is assuming that anything that looks similar must be closely related. We've already met the counterexample, the thylacine and the wolf. Convergence produces look alikes in unrelated groups, so when you use anatomy, check whether the structures are homologous, meaning built on the same underlying plan, and where possible back it up with DNA. Trap two is about dating. Students often write that relative dating showed a fossil was a certain number of years old. It can't do that. Relative dating only tells you the order, whether one layer or fossil is older or younger than another. If you want an age in years, you need radiometric dating. So keep the two words straight, relative means order, and absolute means years."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Early scientists debated whether the thylacine was related to wolves because of its skull. Which line of evidence best settles the question, and why is it more reliable here than comparative anatomy?",
+      "pausePrompt": "Pause and pick your evidence.",
+      "answerSteps": [
+        "The skull similarity could come from convergent evolution, so anatomy is unreliable here.",
+        "DNA sequences are not shaped by the predator lifestyle in the same way, and differences can be counted.",
+        "Sequencing of thylacine DNA from museum specimens places it firmly among marsupials.",
+        "Answer: biochemical (DNA) evidence, because it is objective and not misled by convergence ✓"
+      ],
+      "durationInFrames": 1719,
+      "caption": "DNA evidence settles relationships that convergent anatomy can hide.",
+      "voiceover": {
+        "text": "Quick check. Early scientists debated whether the thylacine might be related to wolves, because its skull looks so similar. Which line of evidence best settles that question, and why is it more reliable here than comparative anatomy? Pause and pick your evidence. OK, the problem with anatomy is that the skull similarity could be the result of convergent evolution, both animals being shaped by a predator lifestyle. So anatomy alone can't decide it. DNA evidence can. Sequence differences build up with time since two lineages split, and they can be counted objectively. In fact, thylacine DNA has been sequenced from museum specimens, and it places the thylacine firmly among the Australian marsupials. So the answer is biochemical evidence, because it's objective and isn't misled by convergence."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Transitional fossils and changing assemblages record past changes in life forms.",
+        "Relative dating orders layers by superposition and index fossils; radiometric dating gives years.",
+        "Homologous and vestigial structures, and similar embryos, point to common ancestry.",
+        "Fewer DNA or amino acid differences mean a more recent common ancestor.",
+        "Biogeography shows species live where their ancestors could spread, like marsupials in isolated Australia."
+      ],
+      "finalPrompt": "Evaluating evidence: state what it shows, one strength, one limitation, and how other evidence backs it up.",
+      "durationInFrames": 1841,
+      "caption": "Five takeaways: fossils, dating, anatomy, biochemistry, biogeography.",
+      "voiceover": {
+        "text": "Let's lock it in. First, transitional fossils like Archaeopteryx and Tiktaalik, and changing fossil assemblages, record past changes in life forms, even though the record has gaps. Second, relative dating uses superposition and index fossils to put layers in order, and radiometric dating is what gives an age in years. Third, homologous structures, vestigial structures and similar embryos all point to common ancestry, but watch out for convergence. Fourth, in biochemical evidence, fewer DNA or amino acid differences mean a more recent common ancestor, and that's how genetic phylogenies are built. And fifth, biogeography shows species living where their ancestors could spread, like marsupials in isolated Australia. The real power is that these independent lines of evidence all agree. When you evaluate one, give a strength, a limitation, and how the others back it up."
+      }
+    }
+  ]
+}

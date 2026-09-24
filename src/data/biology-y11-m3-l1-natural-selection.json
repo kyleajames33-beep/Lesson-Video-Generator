@@ -1,0 +1,408 @@
+{
+  "title": "Natural Selection",
+  "subtitle": "Variation, inheritance and the selection pressures that shape populations",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Discuss the role of genetic variation, inheritance and selective pressures in contributing to the process of evolution by natural selection",
+    "Use examples to demonstrate how abiotic and biotic factors exert selective pressures on populations",
+    "Explain how human-induced changes may function as selective pressures",
+    "Conduct a practical investigation to model the processes involved in natural selection",
+    "Discuss the validity of various models that demonstrate natural selection",
+    "predict the effects of selection pressures on organisms in ecosystems, including: biotic factors, abiotic factors (ACSBL026, ACSBL090)"
+  ],
+  "moduleLessonCount": 9,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-03",
+    "BI-11WS-05",
+    "BI-11WS-06",
+    "BI-11WS-07"
+  ],
+  "inquiryQuestion": "How do environmental pressures promote a change in species diversity and abundance?",
+  "lessonIntent": "Students can explain evolution by natural selection using variation, inheritance, selection pressure and differential survival, and classify selection pressures as abiotic, biotic or human-induced with examples.",
+  "examSkill": "Write a sequenced natural selection explanation: variation exists, a named selection pressure acts, favoured individuals survive and reproduce more, alleles are inherited, allele frequency changes over generations.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, natural selection, the process that drives evolution. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Natural Selection"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The moths that turned black",
+      "body": "Around Manchester, a rare dark form of the peppered moth became the common form within about fifty years of industrial soot blackening the trees.",
+      "callout": "No single moth changed colour. So what changed?",
+      "image": "bioY11M3L1PepperedMoths",
+      "durationInFrames": 1869,
+      "caption": "Soot darkened the trees, and the dark peppered moth went from rare to common in about fifty years.",
+      "voiceover": {
+        "text": "Picture England in the early eighteen hundreds. Most peppered moths are pale and speckled, and they rest on tree trunks covered in pale lichen, where they're almost invisible to birds. A dark form existed, but it was rare. Then the Industrial Revolution arrived, and soot from coal fires killed the lichen and blackened the bark around cities like Manchester. Within about fifty years, the dark form had gone from a curiosity to roughly ninety eight percent of the moths in that area. And here's the twist. When clean air laws cut the soot in the twentieth century, the pale form came back. Now, not one of those moths changed its own colour. So what actually changed? The answer is natural selection, and today we'll build the explanation step by step, the way markers want to see it."
+      }
+    },
+    {
+      "id": "concept-ingredients",
+      "type": "concept",
+      "heading": "Four ingredients of natural selection",
+      "body": "Natural selection happens whenever these conditions are met in a population.",
+      "bullets": [
+        {
+          "text": "Variation: individuals differ, and some differences are genetic."
+        },
+        {
+          "text": "Selection pressure: an environmental factor affects who survives."
+        },
+        {
+          "text": "Differential survival and reproduction: better suited individuals leave more offspring."
+        },
+        {
+          "text": "Inheritance: favoured alleles pass on, so their frequency rises."
+        }
+      ],
+      "secondary": "The variation comes first. Mutation and sexual reproduction create it at random, before any pressure appears. The environment only selects from what is already there.",
+      "callout": "The environment selects. It does not create the variation.",
+      "durationInFrames": 1910,
+      "caption": "Variation, selection pressure, differential survival and reproduction, inheritance.",
+      "voiceover": {
+        "text": "So let's lay out the machinery. Natural selection needs four things, and if you can name all four in order you've got the backbone of almost every evolution answer. First, variation. Individuals in a population differ, and at least some of those differences are genetic, so they come from different alleles. Second, a selection pressure, which is any factor in the environment that affects which individuals survive. Third, differential survival and reproduction, meaning the individuals best suited to that pressure live longer and leave more offspring. And fourth, inheritance, because those offspring carry the favoured alleles, so the frequency of those alleles rises in the next generation. Repeat that over many generations and the population changes. One crucial detail, the variation comes first. Mutation and sexual reproduction produce it at random, and the environment only selects from what's already there."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "v",
+            "label": "Genetic variation already exists"
+          },
+          {
+            "id": "p",
+            "label": "Selection pressure acts"
+          },
+          {
+            "id": "s",
+            "label": "Suited individuals survive and reproduce more"
+          },
+          {
+            "id": "i",
+            "label": "Favoured alleles are inherited"
+          },
+          {
+            "id": "f",
+            "label": "Allele frequency changes over generations"
+          }
+        ],
+        "edges": [
+          {
+            "from": "v",
+            "to": "p"
+          },
+          {
+            "from": "p",
+            "to": "s"
+          },
+          {
+            "from": "s",
+            "to": "i"
+          },
+          {
+            "from": "i",
+            "to": "f"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-pressures",
+      "type": "concept",
+      "heading": "Abiotic and biotic pressures",
+      "body": "Selection pressures can be non-living or living parts of the environment.",
+      "bullets": [
+        {
+          "text": "Abiotic: temperature, water, light, salinity, soil nutrients."
+        },
+        {
+          "text": "Biotic: predators, prey, competitors, disease, parasites."
+        },
+        {
+          "text": "Drought on a Galápagos island left only large, hard seeds, favouring finches with deeper beaks."
+        },
+        {
+          "text": "Where cane toads spread, black snakes with relatively smaller heads were favoured."
+        }
+      ],
+      "secondary": "In 1977 a drought on Daphne Major killed most medium ground finches. Survivors had deeper beaks on average, and so did their offspring.",
+      "callout": "Name the pressure, then say who it favours.",
+      "durationInFrames": 1937,
+      "caption": "Abiotic pressures are non-living factors; biotic pressures come from other organisms.",
+      "voiceover": {
+        "text": "Now, selection pressures come in two broad kinds. Abiotic pressures are the nonliving parts of the environment, things like temperature, water, light, salinity and soil nutrients. Biotic pressures come from other living things, so predators, prey, competitors, disease and parasites. Here's an abiotic example. In 1977, a severe drought hit the Galápagos island of Daphne Major. The small soft seeds ran out, leaving mostly large hard seeds, and most of the medium ground finches died. The survivors had deeper beaks on average, able to crack those tough seeds, and their offspring inherited deeper beaks too. For a biotic example, look at Australia. Cane toads are toxic, and a snake that swallows a big one can die. Where toads have spread, red bellied black snakes with relatively smaller heads were favoured, because they physically can't swallow a toad large enough to kill them."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Pressure",
+          "Type",
+          "Favoured variant"
+        ],
+        "rows": [
+          [
+            "Drought, hard seeds",
+            "Abiotic",
+            "Deeper finch beaks"
+          ],
+          [
+            "Toxic cane toads",
+            "Biotic",
+            "Smaller snake heads"
+          ],
+          [
+            "Soot on bark",
+            "Human-induced",
+            "Dark moths"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Selection pressure: an environmental factor that affects the survival or reproduction of individuals."
+        },
+        {
+          "text": "Fitness: an individual's ability to survive and reproduce in a given environment."
+        },
+        {
+          "text": "Natural selection: individuals with favourable heritable traits survive and reproduce more."
+        },
+        {
+          "text": "Evolution: a change in allele frequency in a population over generations."
+        }
+      ],
+      "callout": "Individuals are selected. Populations evolve.",
+      "durationInFrames": 1691,
+      "caption": "Selection pressure, fitness, natural selection, evolution.",
+      "voiceover": {
+        "text": "Alright, let's pin down four terms. A selection pressure is any environmental factor that affects the survival or reproduction of individuals. Fitness is an individual's ability to survive and reproduce in a particular environment, and notice that's about leaving offspring, not about being strong or fast. Natural selection is the process where individuals with favourable heritable traits survive and reproduce more than others. And evolution, at this level, is a change in allele frequency in a population over generations. Put those together and you get the most useful sentence in this topic. Individuals are selected, but populations evolve. A single moth can't evolve during its lifetime, but the moth population can, as the proportion of dark alleles shifts from one generation to the next."
+      }
+    },
+    {
+      "id": "concept-human",
+      "type": "concept",
+      "heading": "Human-induced selection pressures",
+      "body": "Human activity changes environments quickly, so it can act as a strong selection pressure.",
+      "bullets": [
+        {
+          "text": "Pollution: soot favoured dark peppered moths near industrial cities."
+        },
+        {
+          "text": "Harvesting: heavy fishing favoured cod that mature earlier at smaller sizes."
+        },
+        {
+          "text": "Introduced species: cane toads, released in 1935, now pressure native predators."
+        },
+        {
+          "text": "Chemicals: antibiotics and pesticides favour resistant variants."
+        }
+      ],
+      "secondary": "Human-induced pressures often act faster and more strongly than natural ones, which is why evolution can be measured within decades.",
+      "callout": "Humans change the environment, and the environment does the selecting.",
+      "durationInFrames": 1855,
+      "caption": "Pollution, harvesting, introduced species and chemicals all act as human-induced pressures.",
+      "voiceover": {
+        "text": "Here's the thing, humans are now one of the biggest sources of selection pressure on the planet. Pollution is the moth story, where soot made pale moths easy targets and favoured the dark form. Harvesting works too. Heavy fishing of Atlantic cod removed the largest fish, so cod that matured earlier, at smaller sizes, left more offspring, and the population shifted that way. Introduced species count as well. Cane toads were released in Queensland in 1935, so the pressure they put on snakes is really a human induced pressure. And then there are chemicals, antibiotics and pesticides, which favour resistant variants, and that gets a whole lesson of its own. What makes these pressures special is speed. Humans change environments quickly and strongly, which is why we can actually measure evolution happening within a few decades."
+      },
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "Before soot",
+        "afterLabel": "After soot",
+        "beforeContent": "Pale bark, pale moths camouflaged, dark moths eaten",
+        "afterContent": "Dark bark, dark moths camouflaged, pale moths eaten"
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Explaining the peppered moth",
+      "question": "Explain, in terms of natural selection, why the dark form of the peppered moth became more common near Manchester during the 1800s.",
+      "coachNote": "Hit all four ingredients in order, and name the selection pressure.",
+      "steps": [
+        "Variation: the population already contained pale and dark moths, controlled by different alleles.",
+        "Selection pressure: soot darkened the bark, so pale moths were more visible to predatory birds.",
+        "Differential survival: dark moths were eaten less, so they survived and reproduced more.",
+        "Inheritance: offspring inherited the dark allele, so its frequency increased each generation.",
+        "Answer: over many generations the population evolved, with dark moths becoming the common form ✓"
+      ],
+      "durationInFrames": 1923,
+      "caption": "Variation, pressure, differential survival and inheritance explain the rise of dark moths.",
+      "voiceover": {
+        "text": "Let's turn the hook into a full exam answer. The question says, explain in terms of natural selection why the dark form became more common near Manchester. So we hit all four ingredients, in order. Step one is variation. The population already contained both pale and dark moths, and colour was controlled by different alleles. Step two, name the pressure. Soot darkened the bark, so pale moths stood out and were picked off by birds, which is predation, and it was caused by human pollution. Step three, differential survival. Dark moths were eaten less often, so they survived longer and reproduced more. Step four, inheritance. Their offspring inherited the dark allele, so the frequency of that allele rose each generation. And the conclusion, over many generations the population evolved, until dark moths were the common form. That's a full mark structure."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Generations after soot",
+        "yLabel": "Frequency of dark allele",
+        "series": [
+          {
+            "label": "Dark allele",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0.05
+              ],
+              [
+                0.2,
+                0.12
+              ],
+              [
+                0.4,
+                0.3
+              ],
+              [
+                0.6,
+                0.58
+              ],
+              [
+                0.8,
+                0.8
+              ],
+              [
+                1,
+                0.9
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "concept-models",
+      "type": "concept",
+      "heading": "Modelling natural selection",
+      "body": "A classroom model uses coloured paper dots on a patterned background, with students as predators.",
+      "bullets": [
+        {
+          "text": "Scatter equal numbers of each colour, then 'predators' pick dots for a set time."
+        },
+        {
+          "text": "Survivors reproduce: add one copy of each survivor, then repeat."
+        },
+        {
+          "text": "Track the proportion of each colour over several rounds."
+        }
+      ],
+      "secondary": "Valid for showing differential survival. Limited because there is no real inheritance or new mutation, predators know the game, and samples are small.",
+      "callout": "A model is valid for what it tests, not for everything.",
+      "durationInFrames": 1950,
+      "caption": "Paper dot models show differential survival well, but simplify inheritance and mutation.",
+      "voiceover": {
+        "text": "OK, you'll be expected to model natural selection in a practical, and then judge how good that model is. A common version uses coloured paper dots scattered on a patterned background, with students acting as predators. You start with equal numbers of each colour, and each predator picks up dots with forceps for a set time. The survivors then reproduce, so you add one extra copy of each surviving dot, and you run another round. Over several rounds, you track the proportion of each colour, and the camouflaged colour usually rises. So how valid is it? It's a fair model of differential survival, because the pressure really does favour one variant. But it has limits. There's no real inheritance or new mutation, the predators know what they're looking for, and the samples are small. Doing several trials and pooling class data improves reliability."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Model part",
+          "Represents",
+          "Limitation"
+        ],
+        "rows": [
+          [
+            "Coloured dots",
+            "Variation in a population",
+            "Colours fixed, no mutation"
+          ],
+          [
+            "Students with forceps",
+            "Predators",
+            "Predators know the goal"
+          ],
+          [
+            "Adding copies",
+            "Reproduction and inheritance",
+            "No real genes or alleles"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: 'The moths turned dark because they needed camouflage.' Organisms do not produce useful variations on demand. The dark allele already existed before the soot arrived.",
+      "secondary": "Trap 2: 'Each moth adapted to the soot.' An individual's genes do not change during its life. The population changed, because the proportion of dark moths in each generation increased.",
+      "mistakeTag": "Where evolution marks vanish",
+      "callout": "No need, no trying. Just variation plus selection.",
+      "durationInFrames": 1882,
+      "caption": "Variation is random and comes first; populations evolve, not individuals.",
+      "voiceover": {
+        "text": "Two traps that cost marks every year. Trap one is the language of need. Students write that the moths turned dark because they needed camouflage, as if the environment asked for a new trait and the moths delivered it. That's wrong. Mutations are random with respect to what an organism needs, and the dark allele was already in the population before the soot turned up. The environment simply changed which variant did better. Trap two is saying each moth adapted to the soot. An individual's genes don't change during its lifetime, so a pale moth can't turn into a dark one. What changed was the population, because each new generation had a higher proportion of dark moths than the one before. So avoid words like need, try and decide, and talk about variation, survival and allele frequency instead."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "When myxoma virus was released to control rabbits in Australia in 1950, it killed over 99% of infected rabbits. Within a few decades, far fewer infected rabbits died. Explain the change in the rabbit population using natural selection.",
+      "pausePrompt": "Pause and write the four steps.",
+      "answerSteps": [
+        "Variation: a few rabbits carried alleles giving some resistance to the virus.",
+        "Pressure: the virus, introduced by humans, killed most susceptible rabbits.",
+        "Resistant rabbits survived and reproduced more, passing on resistance alleles.",
+        "Answer: resistance alleles increased in frequency over generations, so fewer infected rabbits died ✓"
+      ],
+      "durationInFrames": 1923,
+      "caption": "Myxomatosis selected for resistant rabbits, so resistance alleles became more common.",
+      "voiceover": {
+        "text": "Quick check, and this one's an Australian classic. In 1950, myxoma virus was released to control rabbits, and at first it killed over ninety nine percent of the rabbits it infected. Within a few decades, far fewer infected rabbits were dying. Explain that change using natural selection. Pause and write the four steps. OK, here's the answer. Variation first, a small number of rabbits already carried alleles that gave them some resistance to the virus. The selection pressure was the virus itself, a biotic pressure introduced by humans, and it killed most of the susceptible rabbits. The resistant ones survived and reproduced more, passing those resistance alleles to their offspring. So resistance alleles increased in frequency over generations. For the full picture, the virus also evolved to become less deadly, but the rabbit side of the story is pure natural selection."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Natural selection needs variation, a selection pressure, differential survival and reproduction, and inheritance.",
+        "Variation arises randomly first; the environment only selects from it.",
+        "Pressures can be abiotic, biotic or human-induced, and human ones often act fast.",
+        "Individuals are selected, but populations evolve as allele frequencies change.",
+        "Models like paper dots show differential survival but simplify inheritance."
+      ],
+      "finalPrompt": "Every explanation: variation, named pressure, survival and reproduction, inheritance, allele frequency change.",
+      "durationInFrames": 1719,
+      "caption": "Five takeaways: the four ingredients, random variation, pressure types, populations evolve, models.",
+      "voiceover": {
+        "text": "Let's lock it in with five takeaways. First, natural selection needs four ingredients, variation, a selection pressure, differential survival and reproduction, and inheritance. Second, the variation comes first and arises at random, the environment only selects from what's already there. Third, selection pressures can be abiotic, like drought, biotic, like predators or toxic prey, or human induced, like pollution, harvesting and introduced species, and the human ones often act remarkably fast. Fourth, individuals are selected, but it's populations that evolve, as allele frequencies change over generations. And fifth, classroom models like the paper dot hunt are good at showing differential survival, but they simplify inheritance and mutation, so always state their limits. Next lesson, we'll look at the adaptations that natural selection produces. See you there."
+      }
+    }
+  ]
+}

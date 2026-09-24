@@ -1,0 +1,431 @@
+{
+  "title": "Adaptations",
+  "subtitle": "Structural, physiological and behavioural adaptations in Australian environments",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 2",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Use plant and animal examples to explain how structural, physiological and behavioural adaptations shaped by evolution enable survival in their environment",
+    "Conduct a practical investigation to examine structural adaptations for water balance in Australian plants",
+    "Use examples to explain behavioural adaptations used by ectotherms and endotherms to survive in the Australian environment",
+    "Analyse data to compare how the external environment and body temperature are related in endotherms and ectotherms",
+    "Explain physiological adaptations of aquatic animals to regulate water and salt balance",
+    "conduct practical investigations, individually or in teams, or use secondary sources to examine the adaptations of organisms that increase their ability to survive in their environment, including: structural adaptations, physiological adaptations, behavioural adaptations"
+  ],
+  "moduleLessonCount": 9,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-03",
+    "BI-11WS-04",
+    "BI-11WS-05",
+    "BI-11WS-07"
+  ],
+  "inquiryQuestion": "How do adaptations increase the organism’s ability to survive?",
+  "lessonIntent": "Students can classify adaptations as structural, physiological or behavioural, compare ectotherms and endotherms using temperature data, and explain water and salt balance in aquatic animals and water conservation in Australian plants.",
+  "examSkill": "Classify an adaptation by type, link it to a specific survival advantage in its environment, and interpret body versus environmental temperature data for ectotherms and endotherms.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, adaptations, and how Australian organisms survive heat, drought and salt. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Adaptations"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A lizard that drinks through its skin",
+      "body": "The thorny devil lives in Australia's arid interior. Tiny grooves between its scales draw water from damp sand or dew across its body to its mouth.",
+      "callout": "How does a desert lizard drink without a puddle?",
+      "image": "bioY11M3L2ThornyDevil",
+      "durationInFrames": 1746,
+      "caption": "Grooves between the thorny devil's scales carry water to its mouth by capillary action.",
+      "voiceover": {
+        "text": "Meet the thorny devil, a small spiky lizard from the dry heart of Australia. Rain is rare where it lives, and there are almost never puddles to drink from. So how does it get water? Between its scales are tiny grooves, and they act like a network of fine straws. When the lizard touches dew, or presses its belly into damp sand, water is drawn along those grooves by capillary action, all the way to the corners of its mouth, where it can swallow it. That's an adaptation, a heritable feature, shaped by natural selection, that helps an organism survive in its environment. Today we'll sort adaptations into three types, and then look at how Australian animals and plants handle the big three challenges, heat, drought and salt."
+      }
+    },
+    {
+      "id": "concept-types",
+      "type": "concept",
+      "heading": "Three types of adaptation",
+      "body": "Adaptations are sorted by what they involve: body form, body function or behaviour.",
+      "bullets": [
+        {
+          "text": "Structural: a physical feature, like the thorny devil's skin grooves."
+        },
+        {
+          "text": "Physiological: an internal process, like hopping mice making very concentrated urine."
+        },
+        {
+          "text": "Behavioural: an action, like bilbies sheltering in burrows by day."
+        }
+      ],
+      "secondary": "All three are inherited and shaped by natural selection over many generations. Many survival problems are solved by all three types working together.",
+      "callout": "Ask yourself: is it a shape, a process or an action?",
+      "durationInFrames": 1841,
+      "caption": "Structural is body form, physiological is body function, behavioural is what the organism does.",
+      "voiceover": {
+        "text": "So there are three types of adaptation, and the quickest way to classify one is to ask, is it a shape, a process, or an action? Structural adaptations are physical features of the body, like the grooves in the thorny devil's skin, or the long ears of a bilby that help shed heat. Physiological adaptations are internal processes, the chemistry and functioning of the body. The spinifex hopping mouse is a great example, because its kidneys make extremely concentrated urine, so it loses very little water. Behavioural adaptations are things the organism does, like bilbies and hopping mice sheltering in cool burrows during the day and coming out at night. All three are inherited, and all three were shaped by natural selection. And in real organisms, they usually work together on the same survival problem."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Type",
+          "Involves",
+          "Australian example"
+        ],
+        "rows": [
+          [
+            "Structural",
+            "Body form",
+            "Thorny devil skin grooves"
+          ],
+          [
+            "Physiological",
+            "Internal process",
+            "Hopping mouse concentrated urine"
+          ],
+          [
+            "Behavioural",
+            "Actions",
+            "Bilby shelters in burrow by day"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-thermo",
+      "type": "concept",
+      "heading": "Ectotherms and endotherms",
+      "body": "Animals differ in where their body heat comes from.",
+      "bullets": [
+        {
+          "text": "Ectotherms gain heat mainly from the environment, so body temperature tracks surroundings."
+        },
+        {
+          "text": "Endotherms generate heat by metabolism and hold body temperature fairly constant."
+        },
+        {
+          "text": "Endothermy costs far more energy, so endotherms need much more food."
+        }
+      ],
+      "secondary": "On a graph of body temperature against environmental temperature, an ectotherm follows a rising diagonal, while an endotherm stays nearly flat.",
+      "callout": "Ectotherm line rises; endotherm line stays flat.",
+      "durationInFrames": 1800,
+      "caption": "Ectotherm body temperature follows the environment; endotherm body temperature stays nearly constant.",
+      "voiceover": {
+        "text": "Now for temperature. Animals fall into two broad groups, depending on where their body heat comes from. Ectotherms, like lizards, snakes and most fish, get their heat mainly from the environment, so their body temperature tends to follow their surroundings. Endotherms, like mammals and birds, generate heat internally through metabolism, and they keep their body temperature fairly constant whatever the weather. That constancy comes at a price, though. Endothermy uses a lot of energy, so an endotherm needs far more food than an ectotherm of the same size. Look at the graph. With environmental temperature on the horizontal axis and body temperature on the vertical, the ectotherm line climbs on a diagonal, while the endotherm line stays almost flat. Being able to read that graph is exactly what the data questions test."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Environmental temperature",
+        "yLabel": "Body temperature",
+        "series": [
+          {
+            "label": "Endotherm",
+            "color": "chem1",
+            "points": [
+              [
+                0,
+                0.72
+              ],
+              [
+                0.25,
+                0.73
+              ],
+              [
+                0.5,
+                0.73
+              ],
+              [
+                0.75,
+                0.74
+              ],
+              [
+                1,
+                0.76
+              ]
+            ]
+          },
+          {
+            "label": "Ectotherm",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0.12
+              ],
+              [
+                0.25,
+                0.32
+              ],
+              [
+                0.5,
+                0.52
+              ],
+              [
+                0.75,
+                0.72
+              ],
+              [
+                1,
+                0.9
+              ]
+            ]
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-behaviour",
+      "type": "concept",
+      "heading": "Beating the Australian heat",
+      "body": "Both groups use behaviour to manage heat, in different ways.",
+      "bullets": [
+        {
+          "text": "Ectotherms: bask in morning sun, then shuttle into shade or burrows at midday."
+        },
+        {
+          "text": "Lizards angle their bodies toward or away from the sun to control heat gain."
+        },
+        {
+          "text": "Red kangaroos rest in shade and lick their forearms for evaporative cooling."
+        },
+        {
+          "text": "Many desert mammals are nocturnal, active only in the cool of night."
+        }
+      ],
+      "secondary": "Behaviour lets ectotherms keep a fairly stable body temperature during the day, and it saves endotherms water they would otherwise lose by sweating or panting.",
+      "callout": "Behaviour is the cheapest way to control temperature.",
+      "durationInFrames": 1882,
+      "caption": "Basking, shuttling, shade seeking, forearm licking and nocturnal activity manage heat.",
+      "voiceover": {
+        "text": "So how does behaviour help in the Australian heat? For ectotherms, it's their main tool. A dragon lizard basks in the morning sun to warm up quickly, and once it's warm enough, it shuttles between sun and shade, or retreats to a burrow in the hottest part of the day. Lizards can even angle their bodies, side on to the sun to soak up heat, or pointed toward it to catch less. Endotherms use behaviour too. Red kangaroos rest in the shade through the heat of the day, and they lick their forearms, where blood vessels sit close to the skin, so evaporating saliva cools the blood. Lots of desert mammals, like hopping mice, are simply nocturnal. Behaviour is the cheapest option of all, because it saves the water an endotherm would otherwise lose by sweating or panting."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Adaptation: an inherited feature that improves survival and reproduction in a particular environment."
+        },
+        {
+          "text": "Ectotherm: an animal whose body heat comes mainly from its environment."
+        },
+        {
+          "text": "Endotherm: an animal that generates body heat by metabolism."
+        },
+        {
+          "text": "Osmoregulation: control of water and salt balance in the body."
+        }
+      ],
+      "callout": "An adaptation is inherited, not learned in one lifetime.",
+      "durationInFrames": 1569,
+      "caption": "Adaptation, ectotherm, endotherm, osmoregulation.",
+      "voiceover": {
+        "text": "Let's pin the key terms. An adaptation is an inherited feature that improves an organism's survival and reproduction in a particular environment. The word inherited matters, because it's what separates an adaptation from something an individual picks up during its life. An ectotherm is an animal whose body heat comes mainly from its environment. An endotherm is an animal that generates its own body heat through metabolism. And osmoregulation is the control of water and salt balance inside the body, which is our next challenge. You'll notice we're avoiding the terms cold blooded and warm blooded. They're misleading, and we'll see exactly why in a moment, so stick with ectotherm and endotherm in your answers."
+      }
+    },
+    {
+      "id": "concept-aquatic",
+      "type": "concept",
+      "heading": "Water and salt in aquatic animals",
+      "body": "Bony fish face opposite problems in the sea and in fresh water.",
+      "bullets": [
+        {
+          "text": "Marine fish lose water by osmosis, so they drink seawater."
+        },
+        {
+          "text": "Gill cells actively pump out excess salt; urine is small in volume."
+        },
+        {
+          "text": "Freshwater fish gain water by osmosis, so they rarely drink."
+        },
+        {
+          "text": "They make large volumes of dilute urine and actively absorb salt at the gills."
+        }
+      ],
+      "secondary": "Sharks take another route. They keep urea in their blood so their body fluids are slightly saltier than seawater, and a rectal gland removes excess salt.",
+      "callout": "Water follows salt, so fish must fight osmosis.",
+      "durationInFrames": 1855,
+      "caption": "Marine fish drink and excrete salt; freshwater fish avoid drinking and excrete dilute urine.",
+      "voiceover": {
+        "text": "Now to water and salt, where the key idea is simple, water moves by osmosis toward the saltier side. A marine bony fish has body fluids less salty than the seawater around it, so it constantly loses water across its gills. To compensate, it drinks seawater, then special cells in its gills actively pump the excess salt back out, and it makes only a small volume of urine. A freshwater fish has the opposite problem. Its body fluids are saltier than the water, so water floods in. It barely drinks, it makes large volumes of very dilute urine, and its gills actively absorb salt from the water. Sharks do something different again. They hold urea in their blood, so their body fluids are slightly saltier than seawater, and a rectal gland gets rid of excess salt."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Marine bony fish",
+          "Freshwater bony fish"
+        ],
+        "rows": [
+          [
+            "Water by osmosis",
+            "Lost",
+            "Gained"
+          ],
+          [
+            "Drinking",
+            "Drinks a lot",
+            "Rarely drinks"
+          ],
+          [
+            "Urine",
+            "Small volume",
+            "Large volume, dilute"
+          ],
+          [
+            "Gill salt transport",
+            "Pumps salt out",
+            "Absorbs salt in"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-plants",
+      "type": "concept",
+      "heading": "Australian plants and water loss",
+      "body": "Many Australian plants are sclerophylls, with hard leaves built to save water.",
+      "bullets": [
+        {
+          "text": "Thick waxy cuticle reduces evaporation from the leaf surface."
+        },
+        {
+          "text": "Sunken stomata in hairy pits, as in Banksia, trap humid air."
+        },
+        {
+          "text": "Eucalypt leaves hang vertically, avoiding the harsh midday sun."
+        },
+        {
+          "text": "Reduced leaves: she-oaks have tiny scale leaves on green branchlets."
+        }
+      ],
+      "secondary": "Practical: compare leaf cross-sections under a microscope, or count stomata using clear nail polish impressions, for an Australian native and a plant from a wetter habitat.",
+      "callout": "Less surface, fewer exposed stomata, less water lost.",
+      "durationInFrames": 1882,
+      "caption": "Thick cuticles, sunken stomata, vertical leaves and reduced leaves save water.",
+      "voiceover": {
+        "text": "Plants can't walk into the shade, so they rely heavily on structural adaptations. Many Australian plants are sclerophylls, meaning hard leaved. They have a thick waxy cuticle, which cuts evaporation from the leaf surface. In Banksia, the stomata sit sunken in small pits lined with hairs, which trap a layer of humid air and slow water loss. Eucalypt leaves often hang vertically, so they catch the gentle morning and afternoon sun but avoid the full blast at midday. And some plants have almost done away with leaves, like she oaks, where tiny scale leaves ring green branchlets that do the photosynthesis. You'll investigate this practically. You can compare leaf cross sections under a microscope, or paint clear nail polish on leaves, peel it off, and count the stomata, comparing a native with a plant from a wetter habitat."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Reading temperature data",
+      "question": "Animal A and animal B were kept at three air temperatures. Body temperatures (°C): at 10 °C air, A = 11, B = 36; at 20 °C air, A = 21, B = 36; at 30 °C air, A = 30, B = 37. Identify the ectotherm and justify your answer.",
+      "coachNote": "Compare how much each body temperature changes as air temperature changes.",
+      "steps": [
+        "Air temperature rises by 20 °C, from 10 to 30 °C.",
+        "Animal A's body temperature rises by 19 °C, from 11 to 30 °C, tracking the air.",
+        "Animal B's body temperature rises by only 1 °C, staying near 36 to 37 °C.",
+        "A's body heat comes from the environment; B generates and regulates its own heat.",
+        "Answer: A is the ectotherm; B is an endotherm ✓"
+      ],
+      "durationInFrames": 1869,
+      "caption": "Body temperature tracking air temperature identifies the ectotherm.",
+      "voiceover": {
+        "text": "Let's analyse some data, the way the syllabus wants. Two animals, A and B, are kept at three air temperatures, ten, twenty and thirty degrees. Animal A's body temperatures are eleven, twenty one and thirty degrees. Animal B's are thirty six, thirty six and thirty seven. Which one is the ectotherm? The trick is to compare the change, not just the values. Across the experiment, air temperature rises by twenty degrees. Animal A's body temperature rises by nineteen degrees, so it's tracking the air almost exactly. Animal B's rises by just one degree, staying close to thirty six or thirty seven the whole time. So A is getting its heat from the environment, and B is generating and regulating its own. That makes A the ectotherm and B the endotherm. Always quote the numbers in your justification."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Air (°C)",
+          "Animal A (°C)",
+          "Animal B (°C)"
+        ],
+        "rows": [
+          [
+            "10",
+            "11",
+            "36"
+          ],
+          [
+            "20",
+            "21",
+            "36"
+          ],
+          [
+            "30",
+            "30",
+            "37"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: calling ectotherms 'cold-blooded'. A basking desert lizard can run a body temperature as high as a mammal's, or higher. The difference is the heat source, not the temperature.",
+      "secondary": "Trap 2: calling a change within one lifetime an adaptation. A plant wilting or a person getting a tan is a response. An adaptation is an inherited trait shaped by selection over generations.",
+      "mistakeTag": "Where adaptation marks vanish",
+      "callout": "Heat source, not body temperature. Inherited, not acquired.",
+      "durationInFrames": 1705,
+      "caption": "Ectotherms are not necessarily cold; adaptations are inherited, not acquired in one lifetime.",
+      "voiceover": {
+        "text": "Two traps to avoid. Trap one is calling ectotherms cold blooded. A desert lizard that's been basking can have a body temperature as high as a mammal's, sometimes higher. What makes it an ectotherm is where the heat comes from, the environment, not how warm its body happens to be. So write about heat source, not blood temperature. Trap two is calling any change in one lifetime an adaptation. A plant wilting on a hot afternoon, or a person getting a tan, is a response by that individual. An adaptation, in the evolutionary sense, is an inherited trait that became common because natural selection favoured it over many generations. The ability to tan is inherited, sure, but the tan itself isn't passed to your children."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Classify each adaptation as structural, physiological or behavioural: (a) eucalypt leaves hanging vertically; (b) gill cells in a marine fish pumping out salt; (c) a red kangaroo licking its forearms on a hot day.",
+      "pausePrompt": "Pause and classify all three.",
+      "answerSteps": [
+        "(a) Vertical leaves are a physical feature of the plant, so structural.",
+        "(b) Pumping salt is an internal process of the body, so physiological.",
+        "(c) Licking is an action the kangaroo performs, so behavioural.",
+        "Answer: (a) structural, (b) physiological, (c) behavioural ✓"
+      ],
+      "durationInFrames": 1773,
+      "caption": "Vertical leaves: structural. Salt pumping: physiological. Forearm licking: behavioural.",
+      "voiceover": {
+        "text": "Quick check. Classify each of these adaptations as structural, physiological or behavioural. First, eucalypt leaves hanging vertically. Second, gill cells in a marine fish pumping out salt. Third, a red kangaroo licking its forearms on a hot day. Pause and classify all three. Right, let's use the shape, process, action test. Vertical leaves are a physical feature of the plant, a shape, so that's structural. Pumping salt out through the gills is an internal process happening inside the fish's cells, so that's physiological. And licking the forearms is something the kangaroo does, an action, so that's behavioural. Notice the kangaroo example has a physiological payoff, evaporative cooling of the blood, but the adaptation itself is the behaviour of licking. Classify by what the organism is doing, not by the result."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Adaptations are inherited and can be structural, physiological or behavioural.",
+        "Ectotherm body temperature tracks the environment; endotherm body temperature stays nearly flat.",
+        "Australian animals use basking, shade, burrows, forearm licking and nocturnal activity to manage heat.",
+        "Marine fish drink and excrete salt; freshwater fish avoid drinking and make dilute urine.",
+        "Australian plants save water with thick cuticles, sunken stomata, vertical and reduced leaves."
+      ],
+      "finalPrompt": "For any adaptation: name the type, name the environmental problem, explain how the feature solves it.",
+      "durationInFrames": 1760,
+      "caption": "Five takeaways: three types, temperature graphs, heat behaviour, osmoregulation, plant water saving.",
+      "voiceover": {
+        "text": "Let's lock it in. First, adaptations are inherited features, and they come in three types, structural, physiological and behavioural, so ask whether it's a shape, a process or an action. Second, on a temperature graph, an ectotherm's body temperature tracks the environment, while an endotherm's stays nearly flat. Third, Australian animals manage heat with behaviour, like basking and shuttling in lizards, and shade seeking, forearm licking and nocturnal activity in mammals. Fourth, marine bony fish drink seawater and pump out salt, while freshwater fish barely drink and make lots of dilute urine. And fifth, Australian plants save water with thick cuticles, sunken stomata, vertical leaves and reduced leaves. For any adaptation question, name the type, name the problem, and explain how the feature solves it. See you next lesson."
+      }
+    }
+  ]
+}
