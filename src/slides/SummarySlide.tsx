@@ -16,6 +16,7 @@ import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
 import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
+import {AssetImg} from './shared/AssetImg';
 
 type SummarySlideProps = {
 	scene: SummaryScene;
@@ -86,7 +87,7 @@ export const SummarySlide = ({scene, lesson, sceneIndex, totalScenes}: SummarySl
 
 			{scene.image && ASSETS[scene.image as AssetName] && (
 				<FadeUp delay={rd.diagram ?? 40} durationFrames={16} dy={18}>
-					<img
+					<AssetImg
 						src={ASSETS[scene.image as AssetName]}
 						alt=""
 						style={{
@@ -229,7 +230,7 @@ const FinalRuleCard = ({text, delay}: {text: string; delay: number}) => {
 						fontWeight: 800,
 						lineHeight: 1.05,
 						letterSpacing: '-0.035em',
-						color: TOK.amber,
+						color: TOK.amberInk,
 					}}
 				>
 					{text}

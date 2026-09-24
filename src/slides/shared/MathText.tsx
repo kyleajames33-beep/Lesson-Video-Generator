@@ -14,7 +14,20 @@ type MathTextProps = {
 	isFinal?: boolean;
 	/** When true, operators render in inkMute instead of inkDim. */
 	muted?: boolean;
+	/**
+	 * P1.5 — numbers that are new in this step (not present in the previous
+	 * step) get an amber highlight whose strength is `deltaStrength` (0–1).
+	 * The slide animates the strength up and back down so "what changed"
+	 * flashes, then settles to normal ink.
+	 */
+	newNumbers?: ReadonlySet<string>;
+	deltaStrength?: number;
 };
+
+// Numbers incl. decimals, signs and ×10ⁿ scientific notation.
+export const NUMBER_RE = /(−?\d+(?:\.\d+)?(?:\s*×\s*10[⁻⁰¹²³⁴⁵⁶⁷⁸⁹]+)?)/g;
+
+export const numbersIn = (text: string): Set<string> => new Set(text.match(NUMBER_RE) ?? []);
 
 // Split rule: capture concept tokens, operators, and compound phrases.
 // Order matters — longer patterns first so e.g. "Nₐ" doesn't get split
@@ -41,7 +54,7 @@ export const colorForPiece = (piece: string, isFinal = false, muted = false): st
 		return CONCEPT_PALETTE.particles.color;
 	}
 	// N (count of particles)
-	if (piece === 'N') return isFinal ? TOK.amber : CONCEPT_PALETTE.N.color;
+	if (piece === 'N') return isFinal ? TOK.amberInk : CONCEPT_PALETTE.N.color;
 	// n (amount in moles)
 	if (piece === 'n') return CONCEPT_PALETTE.n.color;
 	// Compound phrases — keep canonical concept color of the dominant token
@@ -52,16 +65,44 @@ export const colorForPiece = (piece: string, isFinal = false, muted = false): st
 	return undefined;
 };
 
-export const MathText = ({text, isFinal = false, muted = false}: MathTextProps) => {
+export const MathText = ({text, isFinal = false, muted = false, newNumbers, deltaStrength = 0}: MathTextProps) => {
 	const pieces = text.split(MATH_RE).filter(Boolean);
+	const highlight = newNumbers && newNumbers.size > 0 && deltaStrength > 0.01;
 
 	return (
 		<>
-			{pieces.map((piece, index) => (
-				<span key={`${piece}-${index}`} style={{color: colorForPiece(piece, isFinal, muted)}}>
-					{piece}
-				</span>
-			))}
+			{pieces.map((piece, index) => {
+				const color = colorForPiece(piece, isFinal, muted);
+				if (!highlight || color !== undefined) {
+					return (
+						<span key={`${piece}-${index}`} style={{color}}>
+							{piece}
+						</span>
+					);
+				}
+				// Plain run: split out numbers and flag the new ones.
+				return (
+					<span key={`${piece}-${index}`}>
+						{piece.split(NUMBER_RE).filter(Boolean).map((part, j) =>
+							newNumbers.has(part) ? (
+								<span
+									key={j}
+									style={{
+										borderRadius: 4,
+										boxShadow: `0 0 0 3px rgba(240,168,48,${0.28 * deltaStrength})`,
+										background: `rgba(240,168,48,${0.28 * deltaStrength})`,
+										color: deltaStrength > 0.5 ? TOK.amberInk : undefined,
+									}}
+								>
+									{part}
+								</span>
+							) : (
+								<span key={j}>{part}</span>
+							),
+						)}
+					</span>
+				);
+			})}
 		</>
 	);
 };

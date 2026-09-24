@@ -172,7 +172,7 @@ export const IntroStinger = ({
 									fontFamily: FONT_MONO,
 									fontSize: 14,
 									letterSpacing: '0.18em',
-									color: TOK.amber,
+									color: TOK.amberInk,
 									textTransform: 'uppercase',
 									fontWeight: 700,
 									padding: '6px 14px',
@@ -273,7 +273,7 @@ export const IntroStinger = ({
 											style={{
 												fontFamily: FONT_MONO,
 												fontSize: 22,
-												color: TOK.amber,
+												color: TOK.amberInk,
 												lineHeight: 1,
 												paddingTop: 4,
 											}}

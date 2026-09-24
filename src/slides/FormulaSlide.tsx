@@ -14,6 +14,7 @@ import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
 import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
+import {AssetImg} from './shared/AssetImg';
 
 type FormulaSlideProps = {
 	scene: TextScene;
@@ -86,7 +87,7 @@ export const FormulaSlide = ({scene, lesson, sceneIndex, totalScenes}: FormulaSl
 			>
 				{scene.image && ASSETS[scene.image as AssetName] && (
 					<FadeUp delay={rd.diagram ?? 90} durationFrames={16} dy={18}>
-						<img
+						<AssetImg
 							src={ASSETS[scene.image as AssetName]}
 							alt=""
 							style={{
@@ -125,7 +126,7 @@ export const FormulaSlide = ({scene, lesson, sceneIndex, totalScenes}: FormulaSl
 			) : scene.callout ? (
 				<div style={{position: 'absolute', bottom: 154, left: 64, right: 64, textAlign: 'center'}}>
 					<FadeUp delay={rd.callout ?? 216} durationFrames={14} dy={18}>
-						<div style={{fontSize: 30, color: TOK.amber, fontStyle: 'italic', fontWeight: 600}}>
+						<div style={{fontSize: 30, color: TOK.amberInk, fontStyle: 'italic', fontWeight: 600}}>
 							→ {scene.callout}
 						</div>
 					</FadeUp>
@@ -238,8 +239,8 @@ const FormulaNotes = ({secondary, delay}: {secondary: string; delay: number}) =>
 							padding: '20px 22px',
 							borderRadius: 10,
 							border: `1px solid ${TOK.rule}`,
-							background: 'rgba(15,22,20,0.72)',
-							color: index === notes.length - 1 ? TOK.amber : TOK.inkDim,
+							background: TOK.card,
+							color: index === notes.length - 1 ? TOK.amberInk : TOK.inkDim,
 							fontSize: 21,
 							lineHeight: 1.28,
 						}}
@@ -278,8 +279,8 @@ const UnitSafetyCheck = ({
 						padding: '22px 28px',
 						borderRadius: 12,
 						border: `1px dashed ${TOK.amberDim}`,
-						background: 'rgba(15,22,20,0.78)',
-						boxShadow: '0 24px 80px rgba(0,0,0,0.28)',
+						background: TOK.card,
+						boxShadow: TOK.cardShadow,
 						position: 'relative',
 						display: 'grid',
 						gridTemplateColumns: 'auto minmax(0, 1fr)',
@@ -299,7 +300,7 @@ const UnitSafetyCheck = ({
 								fontFamily: FONT_MONO,
 								fontSize: 15,
 								letterSpacing: '0.16em',
-								color: TOK.amber,
+								color: TOK.amberInk,
 								marginBottom: 8,
 								textTransform: 'uppercase',
 							}}

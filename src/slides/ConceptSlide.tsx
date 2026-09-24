@@ -5,7 +5,7 @@
 // primitives yet. Diagrams remain existing DiagramRenderer output, wrapped in
 // a dark stage so we can migrate slide-by-slide before diagram-by-diagram.
 
-import {Img, interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
+import {interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
 import type {CSSProperties} from 'react';
 import type {LessonData, TextScene} from '../lesson/types';
 import {ASSETS, type AssetName} from '../assets';
@@ -21,6 +21,7 @@ import {Eyebrow} from './shared/Eyebrow';
 import {ConceptText} from './shared/ConceptText';
 import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
+import {AssetImg} from './shared/AssetImg';
 
 type ConceptSlideProps = {
 	scene: TextScene;
@@ -40,6 +41,9 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 	// Prevents the empty grey "visual stage" box from sitting next to the
 	// content (e.g. recap scene in L1B).
 	const hasVisual = Boolean(scene.image || scene.diagram);
+	// Text-only concepts get the full width and larger type instead of
+	// leaving the right half of the frame empty.
+	const wide = !hasVisual;
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
 			<SlideChrome lesson={lesson} topic="CORE IDEA" sceneType="concept" sceneIndex={sceneIndex} totalScenes={totalScenes} />
@@ -67,7 +71,7 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 							<h1
 								style={{
 									margin: 0,
-									maxWidth: 910,
+									maxWidth: wide ? 1500 : 910,
 									fontSize: fitHeadingSize(scene.heading),
 									fontWeight: 800,
 									lineHeight: 1.02,
@@ -80,7 +84,7 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 						</StampInTitle>
 					</FadeUp>
 
-					<div style={{marginTop: 44, maxWidth: 900}}>
+					<div style={{marginTop: 44, maxWidth: wide ? 1400 : 900}}>
 						<div
 							style={{
 								height: 1,
@@ -94,12 +98,12 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 								startFrame={bulletStart}
 								endFrame={bulletEnd}
 								markerColor={theme.accent}
-								fontSize={TYPE.bodyLarge.fontSize}
+								fontSize={wide ? 42 : TYPE.bodyLarge.fontSize}
 							/>
 						) : (
 							<div
 								style={{
-									fontSize: TYPE.bodyLarge.fontSize,
+									fontSize: wide ? 42 : TYPE.bodyLarge.fontSize,
 									lineHeight: TYPE.bodyLarge.lineHeight,
 									fontWeight: TYPE.bodyLarge.fontWeight,
 									color: TOK.ink,
@@ -117,8 +121,8 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 								<p
 									style={{
 										margin: '26px 0 0',
-										maxWidth: 860,
-										fontSize: 25,
+										maxWidth: wide ? 1300 : 860,
+										fontSize: wide ? 30 : 25,
 										lineHeight: 1.42,
 										color: TOK.inkDim,
 									}}
@@ -139,7 +143,7 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 											fontSize: 28,
 											fontWeight: 600,
 											fontStyle: 'italic',
-											color: TOK.amber,
+											color: TOK.amberInk,
 											letterSpacing: '-0.01em',
 										}}
 									>
@@ -181,8 +185,8 @@ const VisualStage = ({scene}: {scene: TextScene}) => {
 				borderRadius: 18,
 				border: `1px solid ${TOK.rule}`,
 				background:
-					`linear-gradient(135deg, ${TOK.bgLift} 0%, rgba(${theme.cardTint},0.56) 55%, ${TOK.bg} 100%)`,
-				boxShadow: `0 34px 120px rgba(0,0,0,0.34), inset 0 0 0 1px rgba(232,239,233,0.025)`,
+					`linear-gradient(160deg, ${TOK.bgLift} 0%, ${theme.soft} 100%)`,
+				boxShadow: TOK.cardShadow,
 				overflow: 'hidden',
 			}}
 		>
@@ -204,7 +208,7 @@ const VisualStage = ({scene}: {scene: TextScene}) => {
 				style={{
 					position: 'absolute',
 					inset: 26,
-					border: `1px dashed rgba(232,239,233,0.08)`,
+					border: '1px dashed rgba(0,0,0,0.07)',
 					borderRadius: 14,
 					transform: `translateY(${driftY}px)`,
 					willChange: 'transform',
@@ -280,14 +284,14 @@ const ConceptAssetImage = ({name}: {name: string}) => {
 	const floatX = Math.cos(t * Math.PI * 0.16) * 2;
 
 	return (
-		<Img
+		<AssetImg
 			src={src}
 			alt=""
 			style={{
 				maxWidth: '88%',
 				maxHeight: '88%',
 				objectFit: 'contain',
-				filter: 'drop-shadow(0 28px 54px rgba(0,0,0,0.45))',
+				filter: TOK.imageShadow,
 				transform: `translate(${floatX}px, ${floatY}px) scale(${zoom})`,
 				willChange: 'transform',
 			}}
@@ -316,6 +320,7 @@ const FULL_SIZE_DIAGRAMS = new Set([
 	'entropyDisorder', 'gibbsSpontaneity', 'reductionPotentialLadder', 'isotopeAtoms',
 	'aufbauStaircase', 'latticeVsElectronSea', 'lineGraph',
 	'punnettSquare', 'pedigree', 'dnaHelix', 'transcriptionStrand', 'chromosomeMutation',
+	'flow', 'venn', 'table',
 ]);
 
 const diagramWrapStyle = (type: string): CSSProperties => {

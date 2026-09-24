@@ -108,7 +108,9 @@ Shipped in [src/animations/DiagramPrimitives.tsx](../src/animations/DiagramPrimi
 
 These appear in **only one** reference but are strong moves that fit the dark/cinematic + doodled brand direction.
 
-### P1.1 — Iris-wipe scene transition
+### P1.1 — Iris-wipe scene transition **— DONE 2026-09-24**
+
+Shipped as the `iris` kind in [src/transitions/cinematicTransitions.tsx](../src/transitions/cinematicTransitions.tsx); used out of every title/hook scene by [pickTransition.ts](../src/transitions/pickTransition.ts).
 
 **Status**: existing `cinematicTransitions.tsx` and `crashZoom.tsx` cover other transition styles. No iris.
 **Spec**: circular SVG mask centred on a focal point, expands from `r=0` to `r=screen-diagonal` over 600ms, `easeInOutCubic`. Next scene revealed inside.
@@ -140,7 +142,9 @@ These appear in **only one** reference but are strong moves that fit the dark/ci
 **Source**: Science Ready #7.
 **Build target**: new `<ChapterRibbon current total labels>` baked into `Chrome` component.
 
-### P1.5 — Equation step-builder with active-term highlight
+### P1.5 — Equation step-builder with active-term highlight **— DONE 2026-09-24**
+
+Shipped in `MathText` (`newNumbers` / `deltaStrength`) + `WorkedExampleSlide`: numbers that are new versus the previous step flash an amber highlight for ~600ms after the step lands, then settle. Compares number *sets*, not token positions (the earlier unused `DeltaMathText` attempt marked every token after an insertion as changed).
 
 **Status**: existing `FormulaBuild.tsx` token-by-token reveal. Doesn't yet highlight the *changed* term per step.
 **Spec**: when a new step appears below the previous, the changed term renders in amber for 600ms then fades to ink color. Terms that didn't change render at neutral color immediately.
@@ -148,7 +152,9 @@ These appear in **only one** reference but are strong moves that fit the dark/ci
 **Source**: Science Ready #4, Atomi #8.
 **Build target**: extend `FormulaBuild.tsx` with `highlightDelta` prop. Update `WorkedExampleSlide.tsx` to use it.
 
-### P1.6 — Stuttered low-fps motion (the Vox 12fps look) *(added Round 2)*
+### P1.6 — Stuttered low-fps motion (the Vox 12fps look) *(added Round 2)* **— DEFERRED 2026-09-24**
+
+Deferred: a flavour accent with no lesson asking for it; per the handbook workflow, build it when a real lesson needs it.
 
 **Status**: missing. Remotion renders at the composition fps (currently 30); this primitive forces certain elements to render at 12fps for an intentionally hand-rendered feel.
 **Spec**: a wrapper component `<StutterFrame fps={12}>` that quantises `useCurrentFrame()` for its children — `Math.floor(frame / (compositionFps / fps)) * (compositionFps / fps)`. Children's animations only update on the stuttered frames.
@@ -156,7 +162,9 @@ These appear in **only one** reference but are strong moves that fit the dark/ci
 **Source**: Vox house style (composition built at 12fps, rendered at 24).
 **Build target**: new `<StutterFrame>` HOC in `src/animations/MotionPrimitives.tsx`. Document explicitly that body text and voiceover-synced reveals must NOT use it.
 
-### P1.7 — Stuttered staggered lower-third (named pill) *(added Round 2)*
+### P1.7 — Stuttered staggered lower-third (named pill) *(added Round 2)* **— DEFERRED 2026-09-24**
+
+Deferred: needs a new lesson-JSON field to say *which* entity to name and when, so it's a content-schema change, not a drop-in.
 
 **Status**: existing `Chrome` component shows top/bottom rows but no per-segment pill. P1.4 chapter ribbon is full-width; this is a different element — a transient pill that names *who/what* is on screen.
 **Spec**: rounded-rect pill (corner-radius 6, padding 8/16) slides up from below screen edge with text appearing character-by-character at ~60ms/char (Vox stutter). Background `bgLift` `#0f1614`, 1px stroke `rule`, mono-font label `#e8efe9`. Persists 3-5s, then slides back down.
@@ -164,7 +172,9 @@ These appear in **only one** reference but are strong moves that fit the dark/ci
 **Source**: Vox (lower-third "as if being eaten"), Science Ready #1 (lower-third syllabus tag).
 **Build target**: new `<NamedPill text durationFrames>` primitive in `src/slides/shared/`.
 
-### P1.8 — Camera-blur cinematic transition *(added Round 2)*
+### P1.8 — Camera-blur cinematic transition *(added Round 2)* **— DONE 2026-09-24**
+
+Shipped as the `cameraBlur` kind; the default transition inside an explanation (see [pickTransition.ts](../src/transitions/pickTransition.ts)).
 
 **Status**: existing `cinematicTransitions.tsx` and `crashZoom.tsx` cover other styles. No camera-blur transition.
 **Spec**: outgoing scene scales `1 → 1.06` with simultaneous `filter: blur(0 → 8px)` over 350ms; incoming scene starts at `scale 1.06, blur 8px` and lands on `scale 1, blur 0` over the next 350ms. Total 700ms cross-fade. Subtle backward camera-track feel.
@@ -172,7 +182,9 @@ These appear in **only one** reference but are strong moves that fit the dark/ci
 **Source**: Vox (3D camera track + blur, "as if camera is moving in and out of focus").
 **Build target**: new `<CameraBlur>` presentation in `src/transitions/`.
 
-### P1.9 — Color-coded atom legend system
+### P1.9 — Color-coded atom legend system **— DEFERRED 2026-09-24**
+
+Deferred: `Molecule3DDiagram` already colours atoms; a shared `ATOM_COLORS` map is worth doing when the next molecular diagram is built, not before.
 
 **Status**: missing. Diagrams currently colour atoms ad-hoc.
 **Spec**: enforce `C=ink`, `H=light-grey-stroke`, `O=red-orange #e07a3a`, `N=#3a8ad9` (matches subject-token bio), `Cl=chem2 emerald` etc., as a single `ATOM_COLORS` map. Bond lines stroke-on as `stroke-dashoffset` animations.

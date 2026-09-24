@@ -11,13 +11,14 @@ import {FadeUp} from '../animations/FadeUp';
 import {ScribbleMark, ScribbleStar, ScribbleUnderline} from '../animations/DoodlePrimitives';
 import {AmbientBorderPulse, AmbientGlow} from '../animations/AmbientMotion';
 import {MathText} from './shared/MathText';
-import {calculationStepLabel, getCalculationStepKind} from './shared/calculationSteps';
+import {calculationStepLabel, fitStepFontSize, getCalculationStepKind} from './shared/calculationSteps';
 import {StampInTitle} from '../animations/MotionPrimitives';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
 import {FONT_HAND, FONT_MONO, TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
+import {AssetImg} from './shared/AssetImg';
 
 type QuickCheckSlideProps = {
 	scene: QuickCheckScene;
@@ -61,7 +62,7 @@ export const QuickCheckSlide = ({scene, lesson, sceneIndex, totalScenes}: QuickC
 
 				{scene.image && ASSETS[scene.image as AssetName] && (
 					<FadeUp delay={rd.diagram ?? 30} durationFrames={16} dy={16}>
-						<img
+						<AssetImg
 							src={ASSETS[scene.image as AssetName]}
 							alt=""
 							style={{
@@ -156,7 +157,7 @@ const PauseBadge = () => (
 			position: 'relative',
 			fontFamily: FONT_HAND,
 			fontSize: 96,
-			color: TOK.amber,
+			color: TOK.amberInk,
 			fontWeight: 700,
 			lineHeight: 1,
 		}}
@@ -250,7 +251,7 @@ const PauseCountdown = ({
 						color: TOK.ink,
 					}}
 				>
-					<div style={{fontFamily: FONT_MONO, fontSize: 56, fontWeight: 700, lineHeight: 1, color: TOK.amber}}>{remainSec}</div>
+					<div style={{fontFamily: FONT_MONO, fontSize: 56, fontWeight: 700, lineHeight: 1, color: TOK.amberInk}}>{remainSec}</div>
 					<div style={{fontFamily: FONT_MONO, fontSize: 14, color: TOK.inkDim, letterSpacing: '0.18em', marginTop: 6}}>SECONDS</div>
 				</div>
 			</div>
@@ -287,6 +288,8 @@ const PauseInstruction = ({opacity}: {opacity: number}) => (
 
 const AnswerBoard = ({steps, startDelay}: {steps: string[]; startDelay: number}) => {
 	const n = steps.length;
+	// Board starts at y=540; the bottom chrome row starts ~y=960.
+	const fontSize = fitStepFontSize(steps, {base: 38, width: 1300, height: 410, rowPad: 20, gap: 22, finalBoost: 6});
 
 	return (
 		<div
@@ -309,6 +312,7 @@ const AnswerBoard = ({steps, startDelay}: {steps: string[]; startDelay: number})
 						label={calculationStepLabel[kind] ?? `Step ${index + 1}`}
 						delay={delay}
 						isFinal={isFinal}
+						fontSize={fontSize}
 					/>
 				);
 			})}
@@ -321,11 +325,13 @@ const AnswerStep = ({
 	label,
 	delay,
 	isFinal,
+	fontSize,
 }: {
 	step: string;
 	label: string;
 	delay: number;
 	isFinal: boolean;
+	fontSize: number;
 }) => {
 	const theme = useAccent();
 	return (
@@ -337,7 +343,7 @@ const AnswerStep = ({
 					gridTemplateColumns: '128px minmax(0, 1fr) 64px',
 					gap: 30,
 					alignItems: 'center',
-					minHeight: isFinal ? 98 : 82,
+					minHeight: isFinal ? Math.min(98, fontSize * 2.6) : Math.min(82, fontSize * 2.2),
 					padding: '10px 16px 10px 0',
 					borderBottom: `1px solid ${isFinal ? 'transparent' : TOK.rule}`,
 				}}
@@ -364,10 +370,10 @@ const AnswerStep = ({
 				<div
 					style={{
 						fontFamily: FONT_MONO,
-						fontSize: isFinal ? 44 : 38,
+						fontSize: isFinal ? fontSize + 6 : fontSize,
 						fontWeight: isFinal ? 760 : 600,
 						lineHeight: 1.2,
-						color: isFinal ? TOK.amber : TOK.ink,
+						color: isFinal ? TOK.amberInk : TOK.ink,
 						letterSpacing: '-0.035em',
 					}}
 				>

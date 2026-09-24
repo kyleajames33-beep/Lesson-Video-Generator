@@ -62,7 +62,7 @@ export const EndCardSlide = ({scene, lesson, sceneIndex, totalScenes}: EndCardSl
 							}}
 						>
 							{scene.partLabel}
-							<span style={{color: TOK.amber}}>.</span>
+							<span style={{color: TOK.amberInk}}>.</span>
 						</h1>
 					</StampInTitle>
 				</FadeUp>
@@ -142,7 +142,7 @@ export const EndCardSlide = ({scene, lesson, sceneIndex, totalScenes}: EndCardSl
 								padding: '24px 60px 26px',
 								borderRadius: 14,
 								border: `2px solid ${TOK.amber}`,
-								background: 'linear-gradient(135deg, rgba(240,168,48,0.18), rgba(15,22,20,0.7))',
+								background: 'linear-gradient(135deg, rgba(240,168,48,0.18), rgba(255,255,255,0.94))',
 								boxShadow: '0 32px 100px rgba(240,168,48,0.20)',
 							}}
 						>
@@ -167,7 +167,7 @@ export const EndCardSlide = ({scene, lesson, sceneIndex, totalScenes}: EndCardSl
 									transform: 'translateX(-50%) rotate(-2deg)',
 									fontFamily: FONT_HAND,
 									fontSize: 32,
-									color: TOK.amber,
+									color: TOK.amberInk,
 									whiteSpace: 'nowrap',
 								}}
 							>

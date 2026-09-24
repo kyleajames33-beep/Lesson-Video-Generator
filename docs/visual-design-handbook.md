@@ -23,15 +23,23 @@ The JSON specifies which scenes appear in what order. `LessonVideo.tsx` switches
 
 ## Visual direction (current standard)
 
-Dark, cinematic, hand-drawn — Atomi/Antidote/Kurzgesagt school. Source-of-truth: the JSX reference files at project root (`system.jsx`, `doodles.jsx`, `scenes.jsx`, `scenes-v2.jsx`, `animated-scenes-v3.jsx`).
+**Light, editorial, hand-drawn** — Atomi/Kurzgesagt-school motion on a paper-white stage. (The project started dark/cinematic; the code moved to light and this doc was updated to match on 2026-09-24. The JSX files in `docs/design-canvas-reference/` still show the old dark palette — use them for *motion and layout* reference only, not colour.)
 
-**Tokens** — see `system.jsx`:
-- Background `#0a0f0d` (near-black, faint green tint)
-- Surface `#0f1614`
-- Chemistry primary `#1f8a6f` (emerald), light `#6fd9b8`, deep fill `#0d3a2f`
-- Universal accent `#f0a830` (amber) — reserved for the single most important thing on screen
-- Subjects: bio `#3a8ad9`, phys `#e07a3a`, math `#9b6dd9`
-- Ink: `#e8efe9` / `#8a9590` / `#4a554f` (primary/secondary/tertiary)
+**Tokens** — source of truth is [src/styles/tokens.ts](../src/styles/tokens.ts):
+- Stage `TOK.bg` `#f7f7f5` (warm off-white) with a soft vignette; lift `#ffffff`
+- Cards/panels: `TOK.card` (white 94%) + `TOK.cardBorder` hairline + `TOK.cardShadow` (low, soft). **Never a dark translucent fill** — every `rgba(15,22,20,…)` card from the dark era rendered dark ink on near-black.
+- Images: `filter: TOK.imageShadow` (the old 0.4–0.45 black drop-shadows were built for a dark stage)
+- Subjects (accent / accent2 / soft tint), resolved per lesson via `useAccent()` — never hard-code a subject hue in a shared component:
+  - Chemistry `#0d6b52` / `#148a6f` / `#e8f5f0`
+  - Biology `#1f6fb2` / `#3a8ad9` / `#e9f2fb`
+  - Physics `#c2410c` / `#e07a3a` / `#fdf0e8`
+  - Maths `#6d28d9` / `#9b6dd9` / `#f2ebfb`
+- Universal accent **amber** — reserved for the single most important thing on screen:
+  - `TOK.amber` `#f0a830` for strokes, doodles, underlines, fills, rules
+  - `TOK.amberInk` `#b86e0a` for **text**. Raw amber text is 1.9:1 on the stage (fails at any size); amberInk is 3.7:1 (fine for the large/bold type amber is used on)
+- Ink: `#1a1a1a` / `#5a5a5a` / `#828282` (primary / secondary / tertiary-labels)
+
+**Fonts** are self-hosted in `public/fonts/` and loaded by [src/styles/fonts.ts](../src/styles/fonts.ts) with `delayRender`, so no frame renders before they're ready and renders never depend on fonts.googleapis.com.
 
 **Type scale** (1080p frame):
 - Hero — 220px, weight 800, letter-spacing -0.04em
@@ -40,7 +48,7 @@ Dark, cinematic, hand-drawn — Atomi/Antidote/Kurzgesagt school. Source-of-trut
 - Body — 28px (never below 24)
 - Mono — 22px, letter-spacing 0.15em — used for chrome, labels, units, timecodes
 
-**Fonts**: `Inter Tight` for display, `JetBrains Mono` for mono, `Caveat` / `Kalam` for handwritten margin annotations.
+**Fonts**: `Inter Tight` for display, `JetBrains Mono` for mono, `Caveat` / `Kalam` for handwritten margin annotations. All are variable fonts except Kalam, so in-between weights (760, 820…) render true.
 
 ## The six motion principles
 
@@ -116,9 +124,9 @@ Avoid building "for the catalog". Build for a real lesson, then promote.
 - **Motion primitives:** [src/animations/MotionPrimitives.tsx](../src/animations/MotionPrimitives.tsx) — `<NumberTicker>` (P0.4), `OdometerText`, `TypewriterText`, `WordReveal`, `KenBurns`, `CameraFrame`, etc.
 - **Diagram primitives:** [src/animations/DiagramPrimitives.tsx](../src/animations/DiagramPrimitives.tsx) — `<DataChart>` (P0.7), `DrawPath`, `SpringNumber`, `PulseBeacon`, `HighlightBox`, `PhaseReveal`, etc.
 - **Ambient motion primitive:** [src/animations/AmbientMotion.tsx](../src/animations/AmbientMotion.tsx) — `AmbientGlow`, `AmbientBreathe`, `AmbientBorderPulse` for subtle hold-state motion after primary reveals.
-- **Slide shell:** [src/slides/shared/SlideFrame.tsx](../src/slides/shared/SlideFrame.tsx) (dark stage with optional vignette) and [src/slides/shared/SlideChrome.tsx](../src/slides/shared/SlideChrome.tsx) (top/bottom chrome rows). New gold-standard slides use these instead of the legacy `SlideLayout`.
-- **Slide components:** `src/slides/*.tsx` — all core lesson slides are now on the new dark system. Keep any future slide on `SlideFrame` / `SlideChrome`; do not reintroduce legacy `SlideLayout` unless deliberately building a compatibility view.
-- **Slide shell:** [src/slides/shared/SlideFrame.tsx](../src/slides/shared/SlideFrame.tsx) (dark stage with optional vignette) and [src/slides/shared/SlideChrome.tsx](../src/slides/shared/SlideChrome.tsx) (top/bottom chrome rows). New gold-standard slides use these instead of the legacy `SlideLayout`.
+- **Slide shell:** [src/slides/shared/SlideFrame.tsx](../src/slides/shared/SlideFrame.tsx) (light stage with optional vignette) and [src/slides/shared/SlideChrome.tsx](../src/slides/shared/SlideChrome.tsx) (top/bottom chrome rows). New gold-standard slides use these instead of the legacy `SlideLayout`.
+- **Slide components:** `src/slides/*.tsx` — all core lesson slides are on the light system. Keep any future slide on `SlideFrame` / `SlideChrome`; do not reintroduce legacy `SlideLayout` unless deliberately building a compatibility view.
+- **Slide shell:** [src/slides/shared/SlideFrame.tsx](../src/slides/shared/SlideFrame.tsx) (light stage with optional vignette) and [src/slides/shared/SlideChrome.tsx](../src/slides/shared/SlideChrome.tsx) (top/bottom chrome rows). New gold-standard slides use these instead of the legacy `SlideLayout`.
 
 ## Companion docs
 
@@ -151,15 +159,29 @@ Avoid building "for the catalog". Build for a real lesson, then promote.
 
 This pattern works for both `top` and `bottom` — the inner content flows normally, only the FadeUp wraps the children with animation. Same fix applies if using `position: fixed` children.
 
-### Legacy diagrams during slide migration
+### Diagrams inside the concept visual stage
 
-Existing `DiagramRenderer` diagrams can be reused temporarily during Phase 3, but they must sit inside the new dark visual stage rather than controlling the slide shell. The acceptable migration pattern is:
+`DiagramRenderer` output sits inside the concept slide's white visual stage (inner box ≈ 744×554). Diagrams in `FULL_SIZE_DIAGRAMS` get the whole box — design new coded diagrams for that size.
 
-- `SlideFrame` + `SlideChrome` own the page background and chrome.
-- The old diagram renders inside a bounded dark panel with a subtle border/glow.
-- If a diagram leaks a large white panel or old light-theme card, do not patch around it in the slide; re-skin that specific diagram component next.
+- Use `useAccent()` for colour; never hard-code indigo/emerald. (`flow`, `venn` and `table` were rebuilt on 2026-09-24 for exactly this.)
+- Lay text out in HTML (wraps) rather than SVG `<text>` (doesn't wrap), and **fit the font to the data**: long labels and many rows shrink, short ones grow. The table used to hard-code two CSS columns; 90 of the 102 tables have 3–4 columns and rendered scrambled.
+- Branching data (trees, fan-outs) must lay out as branches — 8 of the 49 flows are trees.
 
-This keeps the slide migration moving while preventing light-theme panels from breaking visual coherence.
+### Images
+
+Always render lesson images with `<AssetImg>` (src/slides/shared/AssetImg.tsx), never `<img>` or Remotion `<Img>` directly:
+- a plain `<img>` isn't awaited by Remotion, so a frame can render before the image decodes;
+- Remotion's `<Img>` cancels the **whole render** if one file is missing (`public/assets/` isn't in git). `AssetImg` logs a warning and draws a subject-tinted placeholder in the same slot. `npm run audit:production` remains the gate for missing assets.
+
+### Transitions
+
+Picked by what the cut means ([src/transitions/pickTransition.ts](../src/transitions/pickTransition.ts)), in the subject accent — not rotated through a pool:
+- out of title/hook → **iris** (zooming into the idea)
+- into a misconception → **crash zoom** (the "wait — trap" beat)
+- into quick check / summary / end card → **shape wipe** (chapter punctuation)
+- everything else → **camera blur** (one continuous camera move)
+
+A transition overlay must reach opacity 0 at progress 1 and must not clip the entering scene at progress 1 — Remotion keeps the presentation mounted for the rest of the scene. (Both bugs shipped: a glowing circle that sat top-right on every scene after a `morphCut`, and a white wedge left in the corner after a `shapeWipe`.)
 
 ### Hook / question scenes
 
@@ -168,6 +190,7 @@ Hook scenes should leave one clear thought in the student's head before the less
 Rules:
 - Long hook questions own the lower two-thirds of the frame. Move the visual into the upper-right, shrink it if needed, and never let it crowd or sit behind the question text.
 - If the body text is longer than ~100 characters, reduce hero type before wrapping into four lines. A three-line hook at 70-76px usually reads better than a crowded 88px block.
+- When the scene has a `heading` (all 228 hooks do), the **heading is the hero** (h1–h4 by length) and the body is a 40px supporting line in `inkDim`. Never the reverse — it used to be a 56px heading over an 88px dimmed body.
 - The atom/visual is secondary. It can pulse slowly for life, but it must not compete with the question.
 - Use annotation only when it names the visual (`↑ one atom`, `↑ a counting word`). If the annotation line crosses major text, move the visual, not the text.
 
@@ -181,7 +204,7 @@ Rules:
 - Use handwritten annotation only when it names a real symbol or reading shortcut (`↑ symbol: mol`). If there is no useful annotation, leave it out.
 - Body text sits below a single rule line. Highlight exactly one numeric definition or key phrase.
 - Place callouts above the caption bar; don't wrap absolutely positioned callouts directly in `FadeUp` because the transform creates the wrong containing block.
-- If a definition scene includes a table diagram, render it as a compact right-side dark translator table. Do not ignore structured diagram data just because the hero definition already reads well.
+- If a definition scene includes a table diagram, render it as a compact right-side translator table. Do not ignore structured diagram data just because the hero definition already reads well.
 
 ### Formula/equation scenes
 
@@ -190,7 +213,7 @@ Formula slides follow the Claude canvas `FormulaAnimated` pattern: the equation 
 Rules:
 - Use amber for the single active/safety term. In the mole lesson, `Nₐ` owns amber because Avogadro's number is the new constant.
 - Put units and safety checks below the formula, not inside the formula line. The equation should stay visually clean.
-- Do not reuse old light-theme `UnitCancel` panels inside new formula slides. If unit cancellation is needed before the shared component is re-themed, create an inline dark safety-check block for that slide.
+- Do not reuse old light-theme `UnitCancel` panels inside new formula slides. If unit cancellation is needed before the shared component is re-themed, create an inline safety-check card (`TOK.card`) for that slide.
 
 ### Worked-example scenes
 
@@ -258,7 +281,7 @@ These are the new primitives built in Phase 2. Each must earn its keep; use them
 **`<HighlightWipe>` (P0.3)** — `src/animations/AttentionPrimitives.tsx`
 - Use for *recall* emphasis on a previously-introduced phrase (e.g. "remember **protons**?").
 - Animates `clip-path` inset left-to-right over 400ms. The element underneath stays put.
-- Default: amber at 22% opacity. Increase opacity only if the background is very dark.
+- Default: amber at 22% opacity.
 - Do not use on first reveal — that is `FadeUp`'s job. Reserve `HighlightWipe` for re-focusing attention.
 
 **`<NumberTicker>` (P0.4)** — `src/animations/MotionPrimitives.tsx`

@@ -66,7 +66,7 @@ export const MnemonicSlide = ({scene, lesson, sceneIndex, totalScenes}: Mnemonic
 					padding: '60px 72px 68px',
 					borderRadius: 18,
 					border: `2px dashed ${TOK.amber}`,
-					background: 'linear-gradient(135deg, rgba(240,168,48,0.10), rgba(15,22,20,0.78))',
+					background: 'linear-gradient(135deg, rgba(240,168,48,0.10), rgba(255,255,255,0.94))',
 					boxShadow: '0 38px 130px rgba(240,168,48,0.18)',
 				}}
 			>
@@ -164,11 +164,11 @@ export const MnemonicSlide = ({scene, lesson, sceneIndex, totalScenes}: Mnemonic
 							gap: 12,
 							padding: '8px 22px',
 							borderRadius: 999,
-							background: 'rgba(15,22,20,0.7)',
-							border: `1px solid rgba(255,255,255,0.08)`,
+							background: TOK.card,
+							border: `1px solid ${TOK.cardBorder}`,
 							fontFamily: FONT_HAND,
 							fontSize: 26,
-							color: TOK.amber,
+							color: TOK.amberInk,
 						}}
 					>
 						📸 screenshot this

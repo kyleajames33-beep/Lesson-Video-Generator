@@ -1,4 +1,5 @@
 import {ASSETS, type AssetName} from '../../assets';
+import {AssetImg} from './AssetImg';
 
 // Maps legacy icon names (used in slides) to asset keys
 const ICON_TO_ASSET: Record<string, AssetName> = {
@@ -33,7 +34,7 @@ export const SpriteIcon = ({name, className}: SpriteIconProps) => {
 	if (!assetKey) return null;
 
 	return (
-		<img
+		<AssetImg
 			src={ASSETS[assetKey]}
 			alt={name}
 			className={`sprite-icon${className ? ` ${className}` : ''}`}

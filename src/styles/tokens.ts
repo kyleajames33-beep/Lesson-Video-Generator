@@ -8,10 +8,17 @@ export const TOK = {
 	bgLift: '#ffffff',
 	rule: 'rgba(0,0,0,0.08)',
 
+	// Surfaces (light theme). Cards/panels sit on the stage as white paper with a
+	// hairline border and a soft, low shadow — never a dark translucent fill.
+	card: 'rgba(255,255,255,0.94)',
+	cardBorder: 'rgba(0,0,0,0.08)',
+	cardShadow: '0 18px 48px rgba(24,28,26,0.08), 0 2px 6px rgba(24,28,26,0.04)',
+	imageShadow: 'drop-shadow(0 18px 32px rgba(24,28,26,0.16))',
+
 	// Ink
 	ink: '#1a1a1a',
 	inkDim: '#5a5a5a',
-	inkMute: '#9a9a9a',
+	inkMute: '#828282', // was #9a9a9a (2.6:1) — too faint for 11–15px mono labels
 
 	// Subject — Chemistry (deep teal-green). accent / accent2 / soft tint.
 	chem1: '#0d6b52',
@@ -41,6 +48,10 @@ export const TOK = {
 	// Universal accent — reserved for the single most important thing on screen
 	amber: '#f0a830',
 	amberDim: '#7a5418',
+	// Amber for TEXT on the light stage. Raw amber is 1.9:1 on #f7f7f5 (unreadable);
+	// this is 3.7:1 — fine for the large/bold type amber is used on. Keep raw
+	// `amber` for strokes, doodles, fills and underlines.
+	amberInk: '#b86e0a',
 } as const;
 
 export const FONT_DISPLAY = '"Inter Tight", -apple-system, system-ui, sans-serif';

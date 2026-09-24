@@ -9,16 +9,16 @@ import type {LessonData, WorkedExampleScene} from '../lesson/types';
 import {ASSETS, type AssetName} from '../assets';
 import {FadeUp} from '../animations/FadeUp';
 import {ScribbleMark} from '../animations/DoodlePrimitives';
-import {DeltaMathText} from '../animations/FormulaBuild';
 import {StampInTitle} from '../animations/MotionPrimitives';
 import {AmbientBorderPulse, AmbientGlow} from '../animations/AmbientMotion';
-import {MathText} from './shared/MathText';
-import {calculationStepLabel, getCalculationStepKind} from './shared/calculationSteps';
+import {MathText, numbersIn} from './shared/MathText';
+import {calculationStepLabel, fitStepFontSize, getCalculationStepKind} from './shared/calculationSteps';
 import {SlideFrame} from './shared/SlideFrame';
 import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
 import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
+import {AssetImg} from './shared/AssetImg';
 
 type WorkedExampleSlideProps = {
 	scene: WorkedExampleScene;
@@ -32,6 +32,16 @@ const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as c
 export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: WorkedExampleSlideProps) => {
 	const rd = scene.revealDelays ?? {};
 	const n = scene.steps.length;
+	// Steps start at y=470; the bottom chrome row starts ~y=960.
+	const stepFontSize = fitStepFontSize(scene.steps, {
+		base: TYPE.math.fontSize,
+		width: 1500,
+		height: 480,
+		rowPad: 24,
+		gap: 18,
+		finalBoost: TYPE.mathFinal.fontSize - TYPE.math.fontSize,
+		finalMinHeight: scene.unitCancel ? 154 : 0,
+	});
 	const stepsStart = rd.stepsStart ?? 116;
 	const stepInterval = rd.stepInterval ?? 86;
 	return (
@@ -42,7 +52,7 @@ export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: Wor
 				<Eyebrow color={TOK.inkDim}>PROBLEM · {scene.heading.toUpperCase()}</Eyebrow>
 			{scene.image && ASSETS[scene.image as AssetName] && (
 				<FadeUp delay={rd.diagram ?? 30} durationFrames={16} dy={16}>
-					<img
+					<AssetImg
 						src={ASSETS[scene.image as AssetName]}
 						alt=""
 						style={{
@@ -126,6 +136,8 @@ export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: Wor
 							delay={delay}
 							index={index}
 							isFinal={isFinal}
+							fontSize={stepFontSize}
+							newNumbers={index > 0 && !isFinal ? newNumbersSince(scene.steps[index - 1], step) : undefined}
 							unitCancel={isFinal ? scene.unitCancel : undefined}
 						/>
 					);
@@ -137,15 +149,17 @@ export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: Wor
 
 const WorkedStep = ({
 	step,
-	prevRest,
 	label,
 	delay,
 	index,
 	isFinal,
+	fontSize,
+	newNumbers,
 	unitCancel,
 }: {
+	fontSize: number;
+	newNumbers?: ReadonlySet<string>;
 	step: string;
-	prevRest?: string;
 	label: string;
 	delay: number;
 	index: number;
@@ -153,7 +167,13 @@ const WorkedStep = ({
 	unitCancel?: {left: string; right: string; result: string};
 }) => {
 	const theme = useAccent();
+	const frame = useCurrentFrame();
 	const {prefix, rest} = splitStep(step);
+	// P1.5 — new numbers flash ~600ms once the step has landed, then settle.
+	const deltaStrength = interpolate(frame - delay, [10, 16, 34, 46], [0, 1, 1, 0], {
+		extrapolateLeft: 'clamp',
+		extrapolateRight: 'clamp',
+	});
 
 	return (
 		<FadeUp delay={delay} durationFrames={16} dy={24}>
@@ -164,7 +184,7 @@ const WorkedStep = ({
 					gridTemplateColumns: '120px minmax(0, 1fr) 64px',
 					gap: 32,
 					alignItems: isFinal ? 'start' : 'center',
-					minHeight: isFinal ? 154 : 78,
+					minHeight: isFinal ? (unitCancel ? 154 : 78) : 78,
 					padding: '12px 18px 12px 0',
 					borderBottom: `1px solid ${index < 4 ? TOK.rule : 'transparent'}`,
 				}}
@@ -191,16 +211,16 @@ const WorkedStep = ({
 				<div
 					style={{
 						fontFamily: FONT_MONO,
-						fontSize: isFinal ? TYPE.mathFinal.fontSize : TYPE.math.fontSize,
+						fontSize: isFinal ? fontSize + (TYPE.mathFinal.fontSize - TYPE.math.fontSize) : fontSize,
 						fontWeight: isFinal ? TYPE.mathFinal.fontWeight : TYPE.math.fontWeight,
 						lineHeight: 1.2,
-						color: isFinal ? TOK.amber : TOK.ink,
+						color: isFinal ? TOK.amberInk : TOK.ink,
 						letterSpacing: '-0.035em',
 						whiteSpace: 'normal',
 					}}
 				>
 					{prefix ? <span style={{color: TOK.inkDim}}>{prefix}: </span> : null}
-					<MathText text={rest} isFinal={isFinal} />
+					<MathText text={rest} isFinal={isFinal} newNumbers={newNumbers} deltaStrength={deltaStrength} />
 					{unitCancel ? (
 						<InlineUnitCheck
 							left={unitCancel.left}
@@ -230,6 +250,11 @@ const WorkedStep = ({
 	);
 };
 
+const newNumbersSince = (prev: string, step: string) => {
+	const before = numbersIn(prev);
+	return new Set([...numbersIn(step)].filter((n) => !before.has(n)));
+};
+
 const InlineUnitCheck = ({
 	left,
 	right,
@@ -255,7 +280,7 @@ const InlineUnitCheck = ({
 					padding: '16px 20px',
 					borderRadius: 10,
 					border: `1px dashed ${theme.accent2}`,
-					background: 'rgba(15,22,20,0.7)',
+					background: TOK.card,
 					display: 'grid',
 					gridTemplateColumns: 'auto minmax(0, 1fr)',
 					alignItems: 'center',
