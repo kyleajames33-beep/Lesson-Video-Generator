@@ -1,26 +1,29 @@
 {
   "title": "Microbial Testing",
-  "subtitle": "Counting an enemy you cannot see",
+  "subtitle": "Counting microbes, and testing what kills them",
   "subject": "Biology",
   "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 7",
   "lesson": "Lesson 5",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
   "syllabusModule": "Module 7 — Infectious Disease",
   "syllabusDotPoints": [
-    "design and conduct a practical investigation relating to the microbial testing of water or food samples"
+    "design and conduct a practical investigation relating to the microbial testing of water or food samples",
+    "Conduct a laboratory experiment to assess the effect of antimicrobial treatment on the growth of microorganisms found in food or water",
+    "Conduct a scientific investigation to determine the effect of temperature on the viability of a non pathogenic E. coli"
   ],
   "moduleLessonCount": 21,
   "nesaOutcomes": [
     "BIO12-14",
+    "BI-12-02",
     "BIO11/12-2",
     "BIO11/12-3",
     "BIO11/12-4"
   ],
   "inquiryQuestion": "How are diseases transmitted?",
-  "lessonIntent": "Students can outline the serial dilution and plate count method, calculate CFU per mL, and identify the variables and controls that make a microbial test valid and reliable.",
-  "examSkill": "Calculate CFU per mL from a plate count, and evaluate the validity and reliability of a microbial testing design.",
+  "lessonIntent": "Students can outline the serial dilution and plate count method, calculate CFU per mL, and design a valid, reliable experiment to test the effect of an antimicrobial treatment or of temperature on microbial growth.",
+  "examSkill": "Calculate CFU per mL and percentage reduction from plate counts, and identify the variables, controls and safety steps in an antimicrobial or temperature investigation.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -28,7 +31,7 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, microbial testing of water and food. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, microbial testing and antimicrobial treatments. Let's get into it."
   },
   "scenes": [
     {
@@ -44,10 +47,10 @@
       "body": "Water full of E. coli looks, smells, and tastes identical to clean water. The only way to know is to test.",
       "callout": "How do you detect an enemy you cannot see?",
       "image": "bioM7L5AgarColonies",
-      "durationInFrames": 1600,
+      "durationInFrames": 1327,
       "caption": "Contaminated water is indistinguishable from safe water, so microbial testing is essential.",
       "voiceover": {
-        "text": "Here's a sobering fact. Water carrying dangerous levels of E. coli, Salmonella, or Cryptosporidium looks, smells, and tastes completely identical to perfectly safe water. The World Health Organization estimates that contaminated water causes around four hundred and eighty-five thousand diarrhoeal deaths every single year, and roughly two point two billion people lack safely managed drinking water. Unlike chemical pollution, microbial contamination is invisible. You can't see it, you can't taste it, and you certainly can't guess your way to safety. The only way to know whether water or food is contaminated is to test directly for the organisms themselves. So how do scientists detect, and actually count, an enemy they can't see? That's the technique we're building today."
+        "text": "Here's a sobering fact. Water carrying dangerous levels of E. coli, Salmonella or Cryptosporidium looks, smells and tastes exactly like perfectly safe water. The World Health Organization estimates contaminated drinking water causes around half a million diarrhoeal deaths every year. You can't see microbial contamination, and you certainly can't guess your way to safety. The only way to know is to test for the organisms directly, and then to test whether a treatment like chlorine or heat actually kills them. So how do scientists count an enemy they can't see? That's what we're building today."
       }
     },
     {
@@ -57,7 +60,7 @@
       "body": "Testing measures whether a sample carries harmful microbes, and at what concentration. E. coli is the key signal.",
       "bullets": [
         {
-          "text": "Safe drinking water means fewer than 1 colony forming unit of E. coli per 100 mL."
+          "text": "Safe drinking water: no E. coli detected in a 100 mL sample."
         },
         {
           "text": "E. coli signals faecal contamination, so other pathogens may be present too."
@@ -68,10 +71,10 @@
       ],
       "secondary": "E. coli is an indicator organism. It may not itself cause disease, but its presence reliably flags a sewage or animal-waste contamination event.",
       "callout": "One easy-to-count bug that warns of all the rest.",
-      "durationInFrames": 1820,
+      "durationInFrames": 1409,
       "caption": "Microbial testing measures harmful microbes; E. coli is the faecal indicator organism.",
       "voiceover": {
-        "text": "So why test, and why is E. coli always the star? Microbial testing determines whether a sample contains harmful microorganisms, and crucially, at what concentration. In Australia, water is considered safe to drink if it contains fewer than one colony forming unit of E. coli per one hundred millilitres. Now here's the clever bit. E. coli itself may not always cause disease, but it lives in the gut, so finding it in water signals faecal contamination, which means other, more dangerous pathogens like Salmonella or Cryptosporidium could well be present too. That's why we call it an indicator organism, it's a warning flag for the whole group. And it's chosen for a practical reason as well, it's easy to culture and easy to count. So one convenient bug warns you about all the rest."
+        "text": "So why test, and why is E. coli always the star? Microbial testing tells you whether a sample contains harmful microorganisms, and at what concentration. Australian drinking water guidelines say E. coli shouldn't be detected at all in a hundred millilitre sample. Here's the clever bit. E. coli lives in the gut, so finding it in water signals faecal contamination, which means more dangerous pathogens could be present too. That's why we call it an indicator organism, a warning flag for the whole group. And it's chosen for a practical reason as well, it's easy to culture and easy to count."
       },
       "diagram": {
         "type": "table",
@@ -84,12 +87,12 @@
           [
             "Drinking water",
             "E. coli",
-            "Under 1 CFU per 100 mL"
+            "None detected in 100 mL"
           ],
           [
             "Recreational water",
-            "Enterococci, E. coli",
-            "Pools: 0 CFU per 100 mL"
+            "Enterococci",
+            "Low counts per 100 mL"
           ],
           [
             "Food safety",
@@ -114,14 +117,17 @@
           "text": "Aseptic technique: methods that prevent contamination of samples and plates."
         },
         {
-          "text": "Negative control: a sample expected to show no growth, to detect contamination."
+          "text": "Antimicrobial treatment: anything that kills or inhibits microbes, e.g. chlorine, heat."
+        },
+        {
+          "text": "Viability: the ability of cells to survive and reproduce to form colonies."
         }
       ],
       "callout": "Dilute to count; one CFU is one visible colony.",
-      "durationInFrames": 1710,
-      "caption": "Serial dilution, colony forming unit, aseptic technique, negative control.",
+      "durationInFrames": 1489,
+      "caption": "Serial dilution, colony forming unit, aseptic technique, antimicrobial treatment, viability.",
       "voiceover": {
-        "text": "Four terms before the method. Serial dilution is the stepwise dilution of a sample, diluting again and again, until the colonies become few enough to count. A colony forming unit, or CFU, is a viable cell, or a small cluster of cells, that grows into one visible colony on the agar, and that's an important subtlety, one colony doesn't necessarily mean exactly one original cell. Aseptic technique is the set of methods that prevent contamination of your samples, plates, and cultures, things like sterile equipment and not talking over open plates. And a negative control is a sample you expect to show no growth at all, used to check that nothing has contaminated your medium. Hold onto these, because the whole protocol is built on them."
+        "text": "Five terms before the method. Serial dilution is diluting a sample again and again until the colonies become few enough to count. A colony forming unit, or CFU, is a viable cell, or a small cluster of cells, that grows into one visible colony on the agar. Aseptic technique is the set of methods that stop contamination, like sterile equipment and keeping plates closed. An antimicrobial treatment is anything that kills or slows the growth of microbes, such as chlorine, vinegar, an antiseptic or heat. And viability is whether cells can still survive and reproduce, which on a plate means whether they can still form a colony."
       }
     },
     {
@@ -142,10 +148,10 @@
       ],
       "secondary": "Dilution is needed because a concentrated sample gives confluent, uncountable growth. Plates are inverted so condensation does not drip onto colonies.",
       "callout": "Too many to count? Dilute until you can.",
-      "durationInFrames": 2010,
+      "durationInFrames": 1746,
       "caption": "Collect, serially dilute tenfold, plate, incubate inverted, and count 30 to 300.",
       "voiceover": {
-        "text": "Now the core technique, the serial dilution and plate count. First, you collect a measured volume of water, or a weighed food sample, using aseptic technique throughout to avoid contaminating it. Second, you serially dilute. You transfer one millilitre of sample into nine millilitres of sterile water, which gives a one-in-ten dilution, and then you repeat that to get a hundredfold, a thousandfold, and so on. Why bother? Because a heavily contaminated sample would grow into one confluent, uncountable smear. Diluting it spreads the colonies out until you can actually count them, and the sweet spot is a plate with between thirty and three hundred colonies. Third, you spread a measured amount onto nutrient agar, then incubate the plates upside down, so that condensation doesn't drip down onto your colonies and ruin the count. Finally, you count the plate that falls in that thirty to three hundred range."
+        "text": "Now the core technique, the serial dilution and plate count. First, you collect a measured volume of water, or a weighed food sample, using aseptic technique throughout. Second, you serially dilute. One millilitre of sample into nine millilitres of sterile water gives a one in ten dilution, and repeating that gives a hundredfold, then a thousandfold. Why bother? Because a heavily contaminated sample grows into one confluent, uncountable smear. Diluting spreads the colonies out, and the sweet spot is a plate with thirty to three hundred colonies. Third, you spread a measured amount onto nutrient agar, tape the lid, and incubate the plates upside down, so condensation doesn't drip onto your colonies. Finally, you count the plate that falls in that thirty to three hundred range."
       },
       "diagram": {
         "type": "flow",
@@ -201,92 +207,164 @@
         "Express in standard form: 1.56 × 10 to the 6 CFU per mL.",
         "Answer: the original sample held about 1.56 million bacteria per mL."
       ],
-      "durationInFrames": 2210,
+      "durationInFrames": 1854,
       "caption": "156 ÷ (0.1 × 10⁻³) = 1.56 × 10⁶ CFU per mL.",
       "voiceover": {
-        "text": "Let's do the calculation the HSC will ask for, the CFU per millilitre. A plate was inoculated with nought point one millilitres of a thousandfold dilution, that's ten to the minus three, and it shows one hundred and fifty-six colonies. Find the concentration in the original sample. Start with the formula. CFU per millilitre equals the colony count divided by the volume plated times the dilution factor. Now substitute. That's one hundred and fifty-six divided by nought point one times ten to the minus three, which is one hundred and fifty-six divided by nought point zero zero zero one. Do the division, and you get one million, five hundred and sixty thousand CFU per millilitre. Written in standard form, that's one point five six times ten to the six. So the original sample contained roughly one point five six million bacteria per millilitre. Notice how the units fall out, colonies divided by millilitres leaves CFU per millilitre, which is exactly what you want."
+        "text": "Let's do the calculation the exam will ask for. A plate was inoculated with nought point one millilitres of a thousandfold dilution, that's ten to the minus three, and it shows one hundred and fifty six colonies. Find the concentration in the original sample. The formula is CFU per millilitre equals the colony count, divided by the volume plated times the dilution factor. Substituting, that's one hundred and fifty six divided by nought point one times ten to the minus three, which is one hundred and fifty six divided by nought point zero zero zero one. That gives one million, five hundred and sixty thousand CFU per millilitre, or one point five six times ten to the six in standard form. Notice how the units fall out, colonies over millilitres leaves CFU per millilitre."
       }
     },
     {
       "id": "concept-design",
       "type": "concept",
-      "heading": "Making the test trustworthy",
-      "body": "A strong investigation names its variables, justifies its controls, and maximises validity and reliability.",
+      "heading": "Testing an antimicrobial treatment",
+      "body": "Plate counts become an experiment when you compare growth with and without a treatment.",
       "bullets": [
         {
-          "text": "Independent variable: the water source. Dependent variable: the colony count."
+          "text": "Independent variable: the treatment, e.g. chlorine concentration or a vinegar wash."
         },
         {
-          "text": "Controlled: volume plated, agar type, incubation temperature and time."
+          "text": "Dependent variable: surviving CFU per mL, or zone of inhibition around a disc."
         },
         {
-          "text": "Negative control gives zero colonies; positive control confirms growth works."
+          "text": "Controls: untreated sample for comparison; sterile water plate should grow nothing."
+        },
+        {
+          "text": "Keep constant: contact time, volume plated, agar, incubation temperature and time."
         }
       ],
-      "secondary": "Validity means it measures what it claims. Reliability means consistent, repeatable results. Use at least three replicates per dilution and average them.",
-      "callout": "Controls catch contamination; replicates buy reliability.",
-      "durationInFrames": 2130,
-      "caption": "Identify variables and controls, and use replicates, to maximise validity and reliability.",
+      "secondary": "Run at least three replicates per treatment and average them. Keep plates sealed, incubate below body temperature, and autoclave or bleach used plates.",
+      "callout": "Compare treated with untreated, and change only one thing.",
+      "durationInFrames": 2286,
+      "caption": "Antimicrobial experiment: treatment is the IV, surviving CFU per mL or inhibition zone is the DV, with untreated and sterile controls.",
       "voiceover": {
-        "text": "Knowing the method isn't enough, the exam wants you to design a trustworthy test. A strong investigation does three things, it names its variables, it justifies its controls, and it's built to maximise both validity and reliability. So suppose you're comparing tap water with creek water. Your independent variable is the water source, the thing you deliberately change. Your dependent variable is the colony count in CFU per millilitre. And your controlled variables are everything kept constant, the volume plated, the agar type, and the incubation temperature and time. Then the controls. A negative control, sterile water only, should grow zero colonies, and if it doesn't, you know your equipment was contaminated. A positive control, a known culture, confirms the medium actually supports growth. Finally, remember the difference. Validity means the test measures what it claims to measure. Reliability means consistent, repeatable results, which is why you run at least three replicates per dilution and average them."
+        "text": "Alright, counting is only half the story, because the new question is whether a treatment actually works. Say you want to know whether chlorine reduces the bacteria in creek water, or whether a vinegar wash reduces bacteria on lettuce. Your independent variable is the treatment, for example the chlorine concentration. Your dependent variable is the number of surviving bacteria, measured as CFU per millilitre after treatment. Another way to measure it is disc diffusion, where a paper disc soaked in the antimicrobial sits on a plate spread with bacteria, and you measure the clear zone of inhibition around it. Then the controls. An untreated sample gives you the baseline to compare against, and a sterile water plate should grow nothing, so any growth there means contamination. Keep the contact time, volume plated, agar, and incubation conditions the same, and run at least three replicates. For safety, keep plates taped shut, incubate below body temperature so you don't favour human pathogens, and autoclave or bleach used plates."
       },
       "diagram": {
         "type": "table",
         "headers": [
-          "Term",
-          "Meaning",
-          "How to maximise"
+          "Variable",
+          "In this experiment"
         ],
         "rows": [
           [
-            "Validity",
-            "Measures what it claims",
-            "Correct controls, aseptic"
+            "Independent",
+            "Treatment (e.g. chlorine concentration)"
           ],
           [
-            "Reliability",
-            "Consistent, repeatable",
-            "Replicates, standard volumes"
+            "Dependent",
+            "Surviving CFU per mL, or inhibition zone"
           ],
           [
-            "Accuracy",
-            "Close to true value",
-            "Count 30 to 300, calibrate"
+            "Controlled",
+            "Contact time, volume, agar, incubation"
+          ],
+          [
+            "Controls",
+            "Untreated baseline; sterile negative"
           ]
         ]
       }
+    },
+    {
+      "id": "concept-temperature",
+      "type": "concept",
+      "heading": "Temperature and E. coli viability",
+      "body": "Heat is an antimicrobial treatment too, and you can measure its effect with the same plate count.",
+      "bullets": [
+        {
+          "text": "Use a non-pathogenic school strain of E. coli, never an environmental sample."
+        },
+        {
+          "text": "Hold samples at a range of temperatures for a fixed time, then plate and count."
+        },
+        {
+          "text": "Viable counts stay high at moderate temperatures, then crash as heat denatures proteins."
+        }
+      ],
+      "callout": "Same count, new variable: temperature.",
+      "caption": "Heat-treat non-pathogenic E. coli at different temperatures, then plate and count survivors.",
+      "voiceover": {
+        "text": "So, heat works the same way, and there's a classic investigation for it. You take a broth culture of a non pathogenic E. coli strain, the kind supplied for school labs, and hold equal samples in water baths at a range of temperatures, say twenty, forty, sixty and eighty degrees, all for the same ten minutes. Then you dilute, plate and count, exactly as before. Here temperature is the independent variable and viable CFU per millilitre is the dependent variable. What you typically see is a count that stays high at moderate temperatures, then crashes once you get to around sixty degrees, because heat denatures the enzymes and other proteins the cells need to survive. That's the biology behind cooking food thoroughly and pasteurising milk."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Temperature for 10 minutes (20 to 80 °C)",
+        "yLabel": "Viable E. coli (CFU per mL)",
+        "series": [
+          {
+            "label": "Surviving cells",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0.9
+              ],
+              [
+                0.33,
+                0.88
+              ],
+              [
+                0.5,
+                0.62
+              ],
+              [
+                0.67,
+                0.08
+              ],
+              [
+                0.83,
+                0.02
+              ],
+              [
+                1,
+                0.0
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 0.67,
+            "label": "about 60 °C"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "durationInFrames": 1733
     },
     {
       "id": "misconception",
       "type": "misconception",
       "heading": "Two traps",
       "body": "Trap 1: thinking one CFU always equals exactly one bacterial cell. A clump of cells can grow into a single colony.",
-      "secondary": "Trap 2: skipping serial dilution. A concentrated sample grows into confluent, uncountable growth, so dilution is what makes counting possible. And used plates must never be reopened, they are autoclaved or bleached before disposal.",
-      "mistakeTag": "Where microbial-testing marks vanish",
-      "callout": "One colony can be many cells; always dilute first.",
-      "durationInFrames": 1860,
-      "caption": "One CFU may be several cells; serial dilution is essential; decontaminate plates.",
+      "secondary": "Trap 2: claiming a treatment works without an untreated control. Without a baseline, a low count proves nothing, because the sample may have been clean to begin with.",
+      "mistakeTag": "Where microbial testing marks vanish",
+      "callout": "One colony can be many cells; no baseline, no conclusion.",
+      "durationInFrames": 1395,
+      "caption": "One CFU may be several cells; an antimicrobial test needs an untreated control.",
       "voiceover": {
-        "text": "Two traps to clear before we finish. Trap one, assuming that one colony forming unit always equals exactly one bacterial cell. It doesn't necessarily. If several cells are clumped together when they land on the agar, they can grow into a single colony, which is precisely why we say colony forming unit rather than cell. Trap two, skipping serial dilution because it seems like a hassle. If you plate a concentrated sample directly, it grows into one confluent, uncountable smear, and your result is meaningless. Dilution is the whole reason you can count at all. And one safety point that's non-negotiable, once a plate has been incubated, you never reopen it. Used cultures are treated as potentially pathogenic and must be autoclaved or soaked in bleach before disposal. Get those right and your method answers stay solid."
+        "text": "Two traps to clear before we finish. Trap one, assuming one colony forming unit always equals exactly one bacterial cell. If several cells are clumped together when they land on the agar, they grow into a single colony, which is precisely why we say colony forming unit rather than cell. Trap two, claiming a treatment works without an untreated control. If your chlorinated sample shows few colonies, that proves nothing on its own, because the water might have been fairly clean to begin with. You need the untreated baseline, from the same sample, to show the treatment made the difference."
       }
     },
     {
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "A student plates undiluted creek water and gets a confluent lawn of growth that cannot be counted. Their negative control plate, however, shows several colonies. Identify the two problems and how to fix each.",
+      "question": "Untreated creek water: 0.1 mL of the 10⁻² dilution gives 180 colonies. After chlorination: 0.1 mL of the 10⁻¹ dilution gives 36 colonies. Calculate CFU per mL before and after, and the percentage reduction.",
       "pausePrompt": "Pause and reason it through.",
       "answerSteps": [
-        "Problem 1: the sample was too concentrated, so growth was confluent and uncountable.",
-        "Fix 1: perform serial dilution and count a plate with 30 to 300 colonies.",
-        "Problem 2: the negative control grew colonies, which signals contamination of equipment or medium.",
-        "Fix 2: repeat using sterile equipment and proper aseptic technique throughout.",
-        "Answer: dilute the sample, and re-run aseptically so the negative control reads zero."
+        "Before: 180 ÷ (0.1 × 10⁻²) = 180 ÷ 0.001 = 1.8 × 10⁵ CFU per mL.",
+        "After: 36 ÷ (0.1 × 10⁻¹) = 36 ÷ 0.01 = 3.6 × 10³ CFU per mL.",
+        "Reduction = (180,000 − 3,600) ÷ 180,000 × 100 = 98%.",
+        "Both plates fall in the 30 to 300 range, so both counts are reliable.",
+        "Answer: chlorination reduced viable bacteria by 98% ✓"
       ],
-      "durationInFrames": 2090,
-      "caption": "Too concentrated, so dilute; contaminated control, so repeat aseptically.",
+      "durationInFrames": 1921,
+      "caption": "1.8 × 10⁵ to 3.6 × 10³ CFU per mL is a 98% reduction.",
       "voiceover": {
-        "text": "Quick check. A student plates undiluted creek water and gets a confluent lawn of growth that simply can't be counted. And on top of that, their negative control plate shows several colonies. Identify the two problems, and how to fix each. Pause and reason it through. Okay, two separate issues here. Problem one, the sample was far too concentrated, which is why the growth came out as an uncountable lawn. The fix is to perform serial dilution, then count a plate that falls in the thirty to three hundred range. Problem two, the negative control grew colonies, and that should never happen, because a negative control is sterile water and should read zero. Growth there tells you the equipment or medium was contaminated. The fix is to repeat the whole thing using sterile equipment and proper aseptic technique. So the answer is, dilute the sample, and re-run aseptically so that negative control reads zero."
+        "text": "Quick check. Untreated creek water, nought point one millilitres of the ten to the minus two dilution, gives one hundred and eighty colonies. After chlorination, nought point one millilitres of the ten to the minus one dilution gives thirty six colonies. Calculate the CFU per millilitre before and after, and the percentage reduction. Pause and work it through. Okay. Before, one hundred and eighty divided by nought point zero zero one is one point eight times ten to the five. After, thirty six divided by nought point zero one is three thousand six hundred. The reduction is the difference, divided by the starting count, times a hundred, which comes to ninety eight percent. And notice both plates sit in the thirty to three hundred range, so both counts are trustworthy. Chlorination cut the viable bacteria by ninety eight percent."
       }
     },
     {
@@ -294,17 +372,17 @@
       "type": "summary",
       "heading": "Lock it in",
       "points": [
-        "Microbial contamination is invisible; testing is the only way to detect it.",
-        "E. coli is the indicator of faecal contamination, easy to culture and count.",
+        "Microbial contamination is invisible; E. coli is the indicator of faecal contamination.",
         "Serial dilution makes colonies countable; aim for 30 to 300 per plate.",
         "CFU per mL = colony count ÷ (volume plated × dilution factor).",
-        "Validity is measuring the right thing; reliability comes from replicates."
+        "To test an antimicrobial, compare treated with untreated samples and change one variable.",
+        "Heat kills E. coli by denaturing proteins; viability crashes at high temperatures."
       ],
-      "finalPrompt": "Evaluating a microbial test? Check variables, controls, and the dilution maths.",
-      "durationInFrames": 1870,
-      "caption": "Five takeaways: invisible contamination, the indicator, dilution, the formula, design.",
+      "finalPrompt": "Evaluating a microbial experiment? Check the variables, the controls, the replicates and the dilution maths.",
+      "durationInFrames": 1584,
+      "caption": "Five takeaways: the indicator, dilution, the formula, antimicrobial design, temperature.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, microbial contamination is invisible, so testing is the only reliable way to detect it. Second, E. coli is the indicator organism for faecal contamination, chosen because it's easy to culture and easy to count, and its presence warns that other pathogens may be there. Third, serial dilution is what makes colonies countable, and you aim for a plate with thirty to three hundred. Fourth, the key formula, CFU per millilitre equals the colony count divided by the volume plated times the dilution factor. And fifth, validity is measuring the right thing, while reliability comes from running replicates and averaging. Whenever you evaluate a microbial test, check the variables, the controls, and the dilution maths. Next lesson, we turn to disease in agriculture, starting with plants. See you there."
+        "text": "Let's lock it in. First, microbial contamination is invisible, and E. coli is the indicator organism for faecal contamination. Second, serial dilution is what makes colonies countable, and you aim for a plate with thirty to three hundred. Third, CFU per millilitre equals the colony count divided by the volume plated times the dilution factor. Fourth, to test an antimicrobial treatment, you compare treated samples against an untreated baseline, changing only one variable and running replicates. And fifth, heat kills E. coli by denaturing its proteins, so viable counts crash at high temperatures. Whenever you evaluate a microbial experiment, check the variables, the controls, the replicates, and the dilution maths. See you next lesson."
       }
     }
   ]

@@ -1,26 +1,31 @@
 {
-  "title": "Environmental Management and Pandemic Control",
-  "subtitle": "One Health, the R number, and the strategic choices that shaped COVID outcomes",
+  "title": "Controlling Epidemics: Environmental Management and Quarantine",
+  "subtitle": "One Health, the R number, surveillance, and epidemics in Australian ecosystems",
   "subject": "Biology",
   "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 7",
   "lesson": "Lesson 21",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
   "syllabusModule": "Module 7 — Infectious Disease",
   "syllabusDotPoints": [
-    "investigate and evaluate environmental management and quarantine methods used to control an epidemic or pandemic"
+    "investigate and evaluate environmental management and quarantine methods used to control an epidemic or pandemic",
+    "Use examples to evaluate environmental management and quarantine methods used to control and prevent an epidemic in plants or animals in Australian ecosystems",
+    "Assess surveillance methods used in the management of disease",
+    "Interpret data and information to outline causes of error, information bias, measurement bias and limitations in data relating to a disease during an epidemic or pandemic"
   ],
   "moduleLessonCount": 21,
   "nesaOutcomes": [
     "BIO12-14",
+    "BI-12-02",
+    "BI-12-03",
     "BIO11/12-4",
     "BIO11/12-5",
     "BIO11/12-7"
   ],
   "inquiryQuestion": "How can the spread of infectious diseases be controlled?",
-  "lessonIntent": "Students can explain environmental management and One Health, interpret the effective reproduction number R, and compare elimination and mitigation pandemic strategies.",
-  "examSkill": "Explain how layered interventions push R below 1, and compare elimination and mitigation strategies.",
+  "lessonIntent": "Students can explain One Health and the effective reproduction number R, compare elimination and mitigation, assess surveillance and data bias during a pandemic, and evaluate quarantine and environmental management of epidemics in Australian plants and animals.",
+  "examSkill": "Evaluate environmental management and quarantine methods using a named Australian plant or animal epidemic, and identify sources of bias in pandemic data.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -28,26 +33,26 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, environmental management and pandemic control. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, controlling epidemics in people, plants and animals. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 105,
-      "caption": "Environmental Management and Pandemic Control (Year 12 Biology, Module 7, Lesson 21)"
+      "caption": "Controlling Epidemics: Environmental Management and Quarantine (Year 12 Biology, Module 7, Lesson 21)"
     },
     {
       "id": "hook",
       "type": "hook",
-      "heading": "28, 5, and 700",
-      "body": "By December 2020: Australia 28 COVID deaths per million, New Zealand 5, Sweden 700. Same virus, three strategies.",
+      "heading": "35, 5 and 800",
+      "body": "By the end of 2020: Australia about 35 reported COVID deaths per million, New Zealand about 5, Sweden over 800. Same virus, different strategies.",
       "callout": "Same pathogen, wildly different outcomes. The difference was policy.",
       "image": "bioM7L21PandemicStrategies",
-      "durationInFrames": 1940,
-      "caption": "By December 2020, COVID death rates diverged sharply with national strategy.",
+      "durationInFrames": 1449,
+      "caption": "By the end of 2020, reported COVID death rates diverged sharply with national strategy.",
       "voiceover": {
-        "text": "OK, three numbers to start. By December twenty twenty, the World Health Organization's data showed Australia had recorded about twenty-eight COVID deaths per million people. New Zealand, just five per million. And Sweden, which chose a very different path, seven hundred per million. Sit with that for a second. Same virus, same year, and yet Sweden's death rate was more than a hundred times New Zealand's. This was not luck, and it was not random. It was policy. Australia and New Zealand chose to eliminate the virus, closing borders and locking down hard and early. Sweden chose mitigation, keeping society largely open and accepting ongoing spread. Every one of those numbers was a point on the same underlying curve, the transmission curve. Today we unpack the biology behind those choices, the R number, and the idea of managing disease at its environmental source."
+        "text": "OK, three numbers to start. By the end of twenty twenty, Australia had reported about thirty five COVID deaths per million people. New Zealand, about five per million. And Sweden, which chose a very different path, over eight hundred per million. Same virus, same year, wildly different outcomes. Australia and New Zealand closed borders and locked down hard to eliminate the virus, while Sweden kept society largely open and tried to slow the spread. Today we unpack the biology behind those choices, ask how far we can trust numbers like these, and then apply the same thinking to epidemics in Australian plants and animals."
       }
     },
     {
@@ -66,12 +71,12 @@
           "text": "Spillover drivers include habitat destruction, intensive agriculture, climate change and wildlife trade."
         }
       ],
-      "secondary": "Strategies include habitat protection, water treatment, vector control from Lesson 17, waste management and farm biosecurity. Preventing spillover is more upstream than waiting to treat human cases.",
+      "secondary": "Strategies include habitat protection, water treatment, vector control, waste management and farm biosecurity. Preventing spillover is more upstream than waiting to treat cases.",
       "callout": "The cheapest pandemic to fight is the one that never spills over.",
-      "durationInFrames": 2030,
+      "durationInFrames": 1503,
       "caption": "One Health prevents disease at the source; most emerging infections are zoonoses.",
       "voiceover": {
-        "text": "Let's start upstream, with environmental management, which is about preventing disease before anyone is infected at all. The key framework here is One Health, and the idea is simple but profound, human health, animal health, and ecosystem health are completely inseparable. Why does this matter for pandemics? Because around seventy-five percent of emerging infectious diseases are zoonoses, meaning they spill over into humans from animals, COVID, HIV, Ebola, all began this way. And what drives that spillover? Habitat destruction that forces wildlife into contact with people, intensive agriculture, climate change expanding where vectors can live, and the wildlife trade. So environmental management means protecting habitat, treating water, vector control of the kind you saw last lesson, managing waste, and farm biosecurity. The whole point is that stopping a pathogen before it ever spills over is far more powerful, and far cheaper, than treating human cases after an outbreak has begun."
+        "text": "Let's start upstream, with environmental management, which aims to prevent disease before anyone is infected. The key framework is One Health, the idea that human, animal and ecosystem health are inseparable. That matters because around seventy five percent of emerging infectious diseases are zoonoses, spilling over into humans from animals, like HIV and Ebola. What drives spillover? Habitat destruction that pushes wildlife into contact with people, intensive agriculture, climate change expanding where vectors live, and the wildlife trade. So environmental management means protecting habitat, treating water, controlling vectors, managing waste and practising farm biosecurity. Stopping a pathogen before it spills over is far cheaper than treating an outbreak."
       },
       "diagram": {
         "type": "table",
@@ -108,20 +113,20 @@
           "text": "Zoonosis: an infectious disease that can spread from animals to humans."
         },
         {
-          "text": "One Health: a framework linking human, animal and ecosystem health in disease prevention."
-        },
-        {
-          "text": "Effective reproduction number R: the average number of new infections caused by one case under current conditions."
+          "text": "Effective reproduction number R: average new infections caused by one case under current conditions."
         },
         {
           "text": "Elimination and mitigation: driving local transmission to zero, versus reducing harm while accepting some spread."
+        },
+        {
+          "text": "Surveillance: ongoing, systematic collection of disease data to guide action."
         }
       ],
       "callout": "R above 1 grows, R equals 1 holds steady, R below 1 declines.",
-      "durationInFrames": 1940,
-      "caption": "Zoonosis, One Health, effective reproduction number R, elimination and mitigation.",
+      "durationInFrames": 1543,
+      "caption": "Zoonosis, effective reproduction number R, elimination and mitigation, surveillance.",
       "voiceover": {
-        "text": "Let's pin down the words. A zoonosis is an infectious disease that can spread from animals to humans, the source of most new pandemics. One Health is the framework we just met, linking human, animal and ecosystem health. The big quantitative idea is the effective reproduction number, written as R, the average number of new infections caused by one case under current real-world conditions, including immunity and the interventions in place. It's the cousin of the R nought from herd immunity, but R nought assumes no immunity and no interventions, while R reflects the situation right now. And the rule for R is the heartbeat of this topic, above one it grows, at one it holds steady, below one it shrinks. Finally, elimination means driving local transmission to zero, while mitigation means reducing harm while accepting some spread continues. Two very different goals."
+        "text": "Let's pin down the words. A zoonosis is an infectious disease that can spread from animals to humans. The effective reproduction number, R, is the average number of new infections caused by one case under current conditions, including immunity and whatever interventions are in place. That's different from R nought, which assumes no immunity and no interventions. And the rule is simple, above one an outbreak grows, at one it holds steady, below one it shrinks. Elimination means driving local transmission to zero, while mitigation means reducing harm while accepting some spread. And surveillance is the ongoing, systematic collection of disease data, so that authorities know what to do and when."
       }
     },
     {
@@ -140,12 +145,12 @@
           "text": "Once R is held below 1, the outbreak declines generation by generation."
         }
       ],
-      "secondary": "This is the biology behind lockdowns: reducing contacts directly lowers R. The debate is about social and economic cost, not about whether the mechanism works.",
+      "secondary": "This is the biology behind lockdowns: reducing contacts directly lowers R. The debate is about cost, not mechanism.",
       "callout": "Stack the measures; the reductions multiply.",
-      "durationInFrames": 2180,
+      "durationInFrames": 1233,
       "caption": "Layered non-pharmaceutical interventions multiply to push R below 1.",
       "voiceover": {
-        "text": "So how do you actually control R? This is the most important practical idea in the lesson, layering. No single measure has to do the whole job on its own. Each non-pharmaceutical intervention, things like physical distancing, masks, better ventilation, and testing and tracing, reduces R by some fraction. And crucially, their effects multiply together. So even if no single measure can get R below one by itself, stacking several of them can. And once you've pushed R below one and held it there, the outbreak shrinks, generation after generation, until it fades out. This, by the way, is the biological logic behind lockdowns, which build on the contact-reduction idea from Lesson fifteen. Reducing the number of contacts each person has directly reduces R, and the evidence across many countries shows it works. The genuine debate about lockdowns is about their social and economic cost, and proportionality, it's not really about whether the underlying mechanism works, because biologically, it clearly does."
+        "text": "So how do you control R? The key idea is layering. Each non pharmaceutical intervention, like physical distancing, masks, ventilation, and testing and tracing, cuts transmission by some fraction, and their effects multiply together. So even if no single measure can get R below one, stacking several can. Once R is held below one, the outbreak shrinks generation by generation. That's the biology behind lockdowns, because fewer contacts means fewer chances to transmit. The genuine debate is about their social and economic cost, not whether the mechanism works."
       }
     },
     {
@@ -161,10 +166,10 @@
         "Three measures alone leave R at about 1.05, so the outbreak is still barely growing.",
         "Answer: layered measures cut R from 2.5 to about 1.05, close but not yet below 1, so one more measure is needed ✓"
       ],
-      "durationInFrames": 2220,
+      "durationInFrames": 1665,
       "caption": "Layered reductions multiply: 2.5 falls to about 1.05, just short of control.",
       "voiceover": {
-        "text": "Let's calculate how layering works, because it's a great exam skill. An outbreak starts with R at two point five. Distancing cuts transmission by thirty percent, masks by another twenty percent, and ventilation by another twenty-five percent. Show whether these layered measures bring R below one. The key is that the reductions multiply. Start with two point five. After distancing, leaving seventy percent, that's two point five times zero point seven, giving one point seven five. After masks, leaving eighty percent, that's times zero point eight, giving one point four. After ventilation, leaving seventy-five percent, times zero point seven five, giving one point zero five. So three measures bring R from two point five down to about one point zero five, impressively close, but still just above one, so the outbreak is barely growing. The answer is, layered measures cut R dramatically, but here you'd need one more measure, or vaccination, to push it below one. That's why real responses stack so many layers."
+        "text": "Let's calculate it. An outbreak starts with R at two point five. Distancing cuts transmission by thirty percent, masks by another twenty percent, and ventilation by another twenty five percent. Do these bring R below one? The reductions multiply. After distancing, seventy percent remains, so two point five times zero point seven gives one point seven five. After masks, times zero point eight gives one point four. After ventilation, times zero point seven five gives one point zero five. So three measures take R from two point five down to about one point zero five, close, but still just above one, so the outbreak is still slowly growing. You'd need one more layer, or vaccination, to push it below one."
       }
     },
     {
@@ -183,51 +188,151 @@
           "text": "Both aim to keep R below 1; they differ in how far they push and what cost they accept."
         }
       ],
-      "secondary": "Elimination worked early in COVID, but high-R variants like Omicron, with an R nought of 8 to 15, made it nearly impossible to sustain without socially intolerable restrictions.",
+      "secondary": "Elimination worked early in COVID, but highly contagious variants like Omicron made it nearly impossible to sustain without severe restrictions.",
       "callout": "Push to zero, or hold the line and protect the vulnerable.",
-      "durationInFrames": 2075,
+      "durationInFrames": 1435,
       "caption": "Elimination drives transmission to zero; mitigation accepts some spread and protects the vulnerable.",
       "voiceover": {
-        "text": "Now the strategic choice that produced those opening numbers, elimination versus mitigation. The elimination strategy aims to drive local transmission all the way to zero, using hard borders, lockdowns, and aggressive testing and tracing, that was Australia and New Zealand. The mitigation strategy instead accepts some transmission, and focuses on protecting the vulnerable and stopping hospitals being overwhelmed, that was Sweden. Here's the unifying point, both strategies are trying to keep R below one, they just differ in how hard they push and what costs they accept. And there's a crucial twist over time. Elimination worked well early in COVID, when the virus was less contagious. But as more contagious variants emerged, especially Omicron, with an R nought around eight to fifteen, elimination became almost impossible to sustain, because the restriction needed to hold R below one became socially and economically intolerable. The biology of the variant changed what strategy was even possible."
+        "text": "Now the strategic choice behind those opening numbers. Elimination aims to drive local transmission to zero, using hard borders, quarantine, lockdowns and aggressive testing and tracing, which was Australia and New Zealand in twenty twenty. Mitigation accepts some transmission, and focuses on protecting the vulnerable and keeping hospitals from being overwhelmed, which was Sweden. Both are trying to control R, they just differ in how hard they push and what costs they accept. And there's a twist over time. Elimination worked early on, but once far more contagious variants like Omicron arrived, holding R below one needed restrictions so severe they became unsustainable."
       },
       "diagram": {
         "type": "table",
         "headers": [
           "Strategy",
           "Goal",
-          "COVID example (Dec 2020)"
+          "COVID example (end of 2020)"
         ],
         "rows": [
           [
             "Elimination",
             "Local transmission to zero",
-            "New Zealand, 5 deaths per million"
+            "New Zealand, about 5 deaths per million"
           ],
           [
             "Elimination",
             "Borders, hotel quarantine",
-            "Australia, 28 deaths per million"
+            "Australia, about 35 deaths per million"
           ],
           [
             "Mitigation",
             "Accept spread, protect hospitals",
-            "Sweden, 700 deaths per million"
+            "Sweden, over 800 deaths per million"
           ]
         ]
       }
+    },
+    {
+      "id": "concept-surveillance",
+      "type": "concept",
+      "heading": "Surveillance, and trusting the data",
+      "body": "Every pandemic decision rests on surveillance data, and every data set has limitations.",
+      "bullets": [
+        {
+          "text": "Surveillance methods: notifiable case reports, testing, wastewater monitoring, genomic sequencing."
+        },
+        {
+          "text": "Measurement bias: countries counted COVID deaths using different definitions."
+        },
+        {
+          "text": "Information bias: case numbers depend on who gets tested, so mild cases are missed."
+        },
+        {
+          "text": "Limitations: reporting delays and changing testing rates distort trends."
+        }
+      ],
+      "secondary": "Excess mortality, total deaths compared with the number expected, avoids some of these biases because it does not depend on testing or death certificates naming COVID.",
+      "callout": "Before comparing numbers, ask how they were collected.",
+      "caption": "Surveillance data during a pandemic carry measurement bias, information bias and reporting limitations.",
+      "voiceover": {
+        "text": "Alright, so how much can we trust those opening numbers? They come from surveillance. During COVID, that meant compulsory reporting of positive tests, mass testing, wastewater monitoring, which picks up virus shed by a whole community, and genomic sequencing to track new variants. Each method is useful, but the data have limits. There's measurement bias, because countries counted COVID deaths using different definitions, some only counting people who tested positive, others including probable cases. There's information bias, because case numbers depend on who gets tested, so when testing is limited to people with symptoms, mild and silent cases are missed. And there are reporting delays, and testing rates that change over time. One way around this is excess mortality, comparing total deaths with the number normally expected, which doesn't depend on testing at all."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Problem",
+          "COVID example"
+        ],
+        "rows": [
+          [
+            "Measurement bias",
+            "Different definitions of a COVID death"
+          ],
+          [
+            "Information bias",
+            "Only symptomatic people tested"
+          ],
+          [
+            "Limitation",
+            "Reporting delays, changing test rates"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "durationInFrames": 1854
+    },
+    {
+      "id": "concept-ecosystems",
+      "type": "concept",
+      "heading": "Epidemics in Australian plants and animals",
+      "body": "The same tools, environmental management and quarantine, are used against epidemics in native species.",
+      "bullets": [
+        {
+          "text": "Phytophthora dieback: a soil-borne water mould killing native plants in south-west WA."
+        },
+        {
+          "text": "Dieback control: boot and vehicle hygiene, closing tracks in wet weather, phosphite spraying."
+        },
+        {
+          "text": "Devil facial tumour disease: a contagious cancer spread by biting between Tasmanian devils."
+        },
+        {
+          "text": "Devil control: disease-free insurance populations in captivity and on Maria Island."
+        }
+      ],
+      "callout": "Slow the spread, protect what's left, and accept what can't be eradicated.",
+      "caption": "Phytophthora dieback and devil facial tumour disease are managed by hygiene, access quarantine, phosphite and insurance populations.",
+      "voiceover": {
+        "text": "Now let's apply this to epidemics in Australian ecosystems. First, a plant example, Phytophthora dieback. It's caused by Phytophthora cinnamomi, a water mould that lives in soil and rots the roots of susceptible native plants, and it has devastated parts of south west Western Australia. Its spores move in water and in soil stuck to boots and tyres, so management is about hygiene and quarantine. Walkers clean their boots at hygiene stations, vehicles are washed down, and some tracks close in wet weather. Susceptible plants can also be sprayed with phosphite, which boosts their defences. Evaluate it, though. These methods slow the spread, but they can't eradicate the mould from infested soil, and phosphite needs repeating every few years. Now an animal example, devil facial tumour disease, a contagious cancer passed between Tasmanian devils when they bite. Removing sick devils from the wild didn't stop it, so the key response has been quarantine in reverse. Disease free insurance populations were set up in captivity and on Maria Island. They've protected the species, but they're small, so genetic diversity is limited, and on Maria Island the devils have preyed on seabird colonies."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Epidemic",
+          "Methods",
+          "Evaluation"
+        ],
+        "rows": [
+          [
+            "Phytophthora dieback (plants)",
+            "Hygiene, track closures, phosphite",
+            "Slows spread; cannot eradicate"
+          ],
+          [
+            "Devil facial tumour disease (animals)",
+            "Insurance populations, removal trials",
+            "Species protected; low genetic diversity"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "durationInFrames": 2623
     },
     {
       "id": "misconception",
       "type": "misconception",
       "heading": "Two traps",
       "body": "Trap 1: thinking an R just above 1 means the outbreak is basically stable. Any sustained R above 1 means cases grow over generations.",
-      "secondary": "Trap 2: thinking lockdowns had no biological basis. Reducing contacts directly lowers R, which is well established; the real debate is about cost, not mechanism. And remember, R reflects current conditions, while R nought assumes none.",
-      "mistakeTag": "What R above 1 means, and the basis of lockdowns",
-      "callout": "Above 1 still grows; lockdowns work biologically, the debate is cost.",
-      "durationInFrames": 2030,
-      "caption": "Any R above 1 grows; lockdowns reduce R by cutting contacts.",
+      "secondary": "Trap 2: comparing raw case or death counts between countries as if they were measured the same way. Testing rates and death definitions differ, so check for bias first.",
+      "mistakeTag": "What R above 1 means, and trusting the data",
+      "callout": "Above 1 still grows; different counting means different numbers.",
+      "durationInFrames": 1503,
+      "caption": "Any R above 1 grows; pandemic data from different countries carry different biases.",
       "voiceover": {
-        "text": "Two traps to finish. Trap one, thinking that an R value just slightly above one, say one point one, means the outbreak is basically stable. It is not stable. Any sustained R above one means cases grow, generation after generation, and exponential growth from one point one still gets you to a crisis, it just takes a little longer. Keeping R below one is the whole game. Trap two, claiming that lockdowns had no biological justification, that they were purely political. That's wrong. Transmission requires contact between an infectious person and a susceptible one, so reducing contacts per day directly and reliably reduces R, that mechanism is well established. The legitimate debate about lockdowns is about their economic and social cost, not about whether they biologically work. And one quick reminder, R reflects current real conditions, while R nought assumes no immunity and no interventions, don't mix the two up."
+        "text": "Two traps to finish. Trap one, thinking an R just above one, say one point one, means the outbreak is basically stable. It isn't. Any sustained R above one means cases grow, generation after generation, and growth from one point one still reaches a crisis, it just takes longer. Trap two, comparing raw case or death numbers between countries as if they were measured the same way. Countries tested at different rates and defined COVID deaths differently, so a lower number might partly reflect less testing. Before you compare, ask how the data were collected, and look for measures like excess mortality that avoid some of the bias."
       }
     },
     {
@@ -238,15 +343,15 @@
       "pausePrompt": "Pause and reason it through.",
       "answerSteps": [
         "Elimination requires holding the effective R below 1 to keep driving cases toward zero.",
-        "Omicron had a very high R0, around 8 to 15, meaning each case could infect many more people.",
+        "Omicron was far more contagious, with a much higher R0, so each case could infect many more people.",
         "To force such a high R below 1 needs either near-total immunity or extremely severe restrictions.",
         "Those restrictions became socially and economically unsustainable, so R could not be held below 1.",
         "Answer: Omicron's high R0 made the restrictions needed to keep R below 1 intolerable, so elimination failed ✓"
       ],
-      "durationInFrames": 2165,
+      "durationInFrames": 1651,
       "caption": "A high-R0 variant makes the restrictions needed for elimination unsustainable.",
       "voiceover": {
-        "text": "Quick check, and it ties the whole lesson together. Australia held very low COVID deaths through twenty twenty with an elimination strategy, but abandoned it once the Omicron variant arrived. Using R and R nought, explain why a more contagious variant made elimination unsustainable. Pause and reason it through. Right. Elimination depends on holding the effective R below one, so cases keep being driven toward zero. Now Omicron had a very high R nought, around eight to fifteen, which means each infected person could infect many more people. To force an R that high below one, you'd need either near-total immunity, or restrictions so severe they're effectively a permanent lockdown. And those restrictions became socially and economically unsustainable, so R could no longer be held below one. So the answer is, Omicron's high R nought meant the restrictions required to keep R below one became intolerable, and that's what made elimination fail. The biology of the variant dictated the strategy."
+        "text": "Quick check. Australia held very low COVID deaths through twenty twenty with an elimination strategy, but abandoned it once Omicron arrived. Using R and R nought, explain why a more contagious variant made elimination unsustainable. Pause and reason it through. Right. Elimination depends on holding the effective R below one, so cases keep falling toward zero. Omicron was far more contagious, with a much higher R nought, so each case could infect many more people. Forcing an R that high below one would need either very high immunity, or restrictions so severe they're effectively a permanent lockdown. Those restrictions weren't socially or economically sustainable, so R couldn't be held below one. The biology of the variant dictated the strategy."
       }
     },
     {
@@ -255,16 +360,16 @@
       "heading": "Lock it in",
       "points": [
         "Environmental management prevents disease at the source; One Health links human, animal and ecosystem health.",
-        "About 75 percent of emerging infections are zoonoses driven by habitat loss, agriculture and wildlife trade.",
-        "R above 1 grows, R equals 1 holds, R below 1 declines; the goal is to hold R below 1.",
-        "Layered interventions multiply, pushing R below 1 when no single measure can.",
-        "Elimination drives transmission to zero; mitigation accepts spread; high-R variants can make elimination unsustainable."
+        "R above 1 grows, R below 1 declines; layered interventions multiply to push R below 1.",
+        "Elimination drives transmission to zero; mitigation accepts spread; high-R variants can make elimination unsustainable.",
+        "Surveillance data carry measurement bias, information bias and reporting delays, so compare with care.",
+        "Phytophthora dieback and devil facial tumour disease show quarantine and hygiene can slow, but rarely eradicate, epidemics in native species."
       ],
-      "finalPrompt": "Evaluating a pandemic response? Ask how each measure changes R, and what cost it carries.",
-      "durationInFrames": 2100,
-      "caption": "Five takeaways: One Health, zoonoses, the R rule, layering, and the two strategies.",
+      "finalPrompt": "Evaluating a control method? Ask what it changes, how well the data show it worked, and what it costs.",
+      "durationInFrames": 1800,
+      "caption": "Five takeaways: One Health, R and layering, the two strategies, data bias, and epidemics in native species.",
       "voiceover": {
-        "text": "Let's lock it in, and wrap up the module. Five things to take away. First, environmental management prevents disease at the source, and the One Health framework links human, animal and ecosystem health together. Second, around seventy-five percent of emerging infections are zoonoses, driven by habitat loss, intensive agriculture, and the wildlife trade. Third, the R rule, R above one grows, R equals one holds steady, R below one declines, and the whole goal is to hold R below one. Fourth, layered interventions multiply together, so stacking them can push R below one even when no single measure could. And fifth, elimination drives transmission to zero while mitigation accepts some spread, and a high-R variant can make elimination unsustainable. Whenever you evaluate a pandemic response, ask two things, how does each measure change R, and what cost does it carry. That's the end of Module seven. Well done, and see you in the next module."
+        "text": "Let's lock it in. First, environmental management prevents disease at the source, and One Health links human, animal and ecosystem health. Second, R above one grows, R below one declines, and layered interventions multiply to push R below one. Third, elimination drives transmission to zero while mitigation accepts some spread, and a highly contagious variant can make elimination unsustainable. Fourth, surveillance data carry measurement bias, information bias and reporting delays, so compare numbers with care. And fifth, Phytophthora dieback and devil facial tumour disease show that hygiene, quarantine and insurance populations can slow an epidemic in native species, but rarely eradicate it. Whenever you evaluate a control method, ask what it changes, how well the data show it worked, and what it costs. Well done, and see you next lesson."
       }
     }
   ]

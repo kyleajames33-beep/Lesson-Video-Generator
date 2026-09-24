@@ -1,26 +1,29 @@
 {
-  "title": "Malaria and Dengue — Global Case Study",
+  "title": "Malaria and Dengue: Biotechnology Against Mosquito-borne Disease",
   "subtitle": "Same mosquito delivery, completely different biology",
   "subject": "Biology",
   "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 7",
   "lesson": "Lesson 18",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
   "syllabusModule": "Module 7 — Infectious Disease",
   "syllabusDotPoints": [
-    "investigate and analyse the wide range of interrelated factors involved in limiting local, regional and global spread of a named infectious disease"
+    "investigate and analyse the wide range of interrelated factors involved in limiting local, regional and global spread of a named infectious disease",
+    "interpret data relating to the incidence and prevalence of infectious disease in populations, for example: Malaria or Dengue Fever in South East Asia",
+    "Conduct a secondary-source investigation to evaluate the use of biotechnologies on the prevalence of mosquito-borne diseases"
   ],
   "moduleLessonCount": 21,
   "nesaOutcomes": [
     "BIO12-14",
+    "BI-12-04",
     "BIO11/12-4",
     "BIO11/12-5",
     "BIO11/12-7"
   ],
   "inquiryQuestion": "How can the spread of infectious diseases be controlled?",
-  "lessonIntent": "Students can describe the Plasmodium life cycle and dengue serotype biology, explain antibody-dependent enhancement, and compare malaria and dengue control.",
-  "examSkill": "Identify intervention points in the Plasmodium life cycle and explain why dengue is so hard to vaccinate against.",
+  "lessonIntent": "Students can describe the Plasmodium life cycle and dengue serotype biology, and evaluate biotechnologies such as Wolbachia, malaria vaccines and gene drives using evidence on the prevalence of mosquito-borne disease.",
+  "examSkill": "Evaluate a biotechnology against a mosquito-borne disease using incidence and prevalence evidence, and explain why dengue is hard to vaccinate against.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -28,26 +31,26 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, malaria and dengue, a global case study. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, malaria, dengue and the biotechnologies fighting them. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 105,
-      "caption": "Malaria and Dengue — Global Case Study (Year 12 Biology, Module 7, Lesson 18)"
+      "caption": "Malaria and Dengue: Biotechnology Against Mosquito-borne Disease (Year 12 Biology, Module 7, Lesson 18)"
     },
     {
       "id": "hook",
       "type": "hook",
-      "heading": "A child every two minutes",
-      "body": "In 2022 malaria caused 247 million cases and 619,000 deaths. We have nets, drugs, even a vaccine. Why isn't it gone?",
+      "heading": "Hundreds of thousands of deaths a year",
+      "body": "In 2021 malaria caused about 247 million cases and 619,000 deaths. We have nets, drugs, even vaccines. Why isn't it gone?",
       "callout": "Why is a parasite that needs a mosquito so impossible to eradicate?",
       "image": "bioM7L18MalariaBurden",
-      "durationInFrames": 1870,
+      "durationInFrames": 1584,
       "caption": "Malaria still kills hundreds of thousands a year despite every available tool.",
       "voiceover": {
-        "text": "OK, here's a sobering set of numbers. The World Health Organization's twenty twenty-two malaria report counted two hundred and forty-seven million cases, and six hundred and nineteen thousand deaths, ninety-six percent of them in Africa, and most of those in children under five. Put another way, malaria kills a child roughly every two minutes. And here's what's maddening, we are not helpless against it. We have insecticide-treated bed nets, we have effective antimalarial drugs, and after thirty years of development we even have a working vaccine. Yet the parasite keeps killing. So why has malaria, a parasite that literally cannot complete its life cycle without a mosquito, been so impossible to wipe out? Today we use malaria and dengue as a case study, two diseases delivered by the same kind of insect, but with completely different biology underneath."
+        "text": "OK, here's a sobering set of numbers. The World Health Organization estimated that in twenty twenty one, malaria caused about two hundred and forty seven million cases and six hundred and nineteen thousand deaths, most of them young children in Africa. And we're not helpless against it. We have insecticide treated bed nets, effective antimalarial drugs, and after decades of work, vaccines. Yet the parasite keeps killing. Meanwhile dengue, spread by a different mosquito, is surging across South East Asia and beyond. Today we use malaria and dengue as a case study, two diseases delivered by mosquitoes but with completely different biology, and we'll evaluate the biotechnologies being used to bring their numbers down."
       }
     },
     {
@@ -68,10 +71,10 @@
       ],
       "secondary": "Because Plasmodium is a complex eukaryote, antibiotics and antivirals do not touch it. Antimalarial drugs target parasite-specific processes.",
       "callout": "A multi-stage life cycle means multiple places to attack it.",
-      "durationInFrames": 2425,
+      "durationInFrames": 1881,
       "caption": "Malaria is caused by the eukaryotic parasite Plasmodium, with mosquito, liver and blood stages.",
       "voiceover": {
-        "text": "Let's start with malaria, and the first thing to get right is what causes it. Malaria is not a virus, and it's not a bacterium. It's caused by Plasmodium, a eukaryotic parasite, a single-celled organism far more complex than a bacterium. It's spread by female Anopheles mosquitoes, which tend to bite at night, and the deadliest species is Plasmodium falciparum. Now the key to understanding malaria is its life cycle, which runs in stages. The mosquito injects the parasite, it travels first to the liver, where it multiplies silently with no symptoms, and then it bursts into the blood, where it invades red blood cells and causes the cyclical fever, anaemia and organ damage. And here's why the life cycle matters so much, each stage is a separate point where you can attack it. Bed nets target the mosquito stage, antimalarial drugs target the blood stage, and vaccines aim at the parasite as it heads for the liver. Because Plasmodium is a eukaryote, by the way, antibiotics and antivirals do nothing, you need drugs designed for the parasite itself."
+        "text": "Let's start with malaria, and the first thing to get right is what causes it. Malaria isn't a virus or a bacterium. It's caused by Plasmodium, a single celled eukaryotic parasite. It's spread by female Anopheles mosquitoes, which tend to bite at night, and the deadliest species is Plasmodium falciparum. The key is its life cycle. The mosquito injects the parasite, which travels first to the liver, where it multiplies silently, and then it bursts into the blood, invading red blood cells and causing the cycles of fever, anaemia and organ damage. Each stage is a separate point of attack. Bed nets target the mosquito, antimalarial drugs target the blood stage, and vaccines aim at the parasite as it heads for the liver. And because Plasmodium is a eukaryote, antibiotics and antivirals do nothing against it."
       },
       "diagram": {
         "type": "flow",
@@ -124,14 +127,14 @@
           "text": "Antibody-dependent enhancement: where antibodies from one dengue serotype worsen infection by another."
         },
         {
-          "text": "Vector competence: how able a mosquito is to carry and transmit a particular pathogen."
+          "text": "Wolbachia: a natural bacterium that reduces a mosquito's ability to transmit dengue."
         }
       ],
       "callout": "Four dengue serotypes, and immunity to one is not immunity to all.",
-      "durationInFrames": 1900,
-      "caption": "Plasmodium, serotype, antibody-dependent enhancement, vector competence.",
+      "durationInFrames": 1463,
+      "caption": "Plasmodium, serotype, antibody-dependent enhancement, Wolbachia.",
       "voiceover": {
-        "text": "Let's pin down the key terms, especially the ones for dengue, which are trickier. Plasmodium is the eukaryotic parasite that causes malaria, with those mosquito, liver and blood stages we just covered. A serotype is a distinct variant of a pathogen, and this matters enormously for dengue, because dengue virus comes in four serotypes, labelled DENV one through four. Then there's antibody-dependent enhancement, often shortened to ADE, which is a genuinely counterintuitive effect where antibodies left over from one dengue serotype actually make a later infection by a different serotype worse, not better. We'll dig into that next. And vector competence just means how capable a mosquito is of carrying and transmitting a particular pathogen, the term you met with Wolbachia last lesson. The big idea to hold onto, with dengue, immunity to one serotype is not immunity to all."
+        "text": "Let's pin down the key terms. Plasmodium is the eukaryotic parasite that causes malaria, with those mosquito, liver and blood stages. A serotype is a distinct variant of a pathogen, and dengue virus comes in four serotypes, labelled DENV one through four. Antibody dependent enhancement, or ADE, is a counterintuitive effect where antibodies left over from one dengue serotype make a later infection by a different serotype worse, not better. And Wolbachia is a natural bacterium that, when established in Aedes mosquitoes, reduces their ability to transmit dengue. The big idea to hold onto, with dengue, immunity to one serotype is not immunity to all."
       }
     },
     {
@@ -152,10 +155,10 @@
       ],
       "secondary": "This is the vaccine paradox: a dengue vaccine must protect against all four serotypes equally, or it can prime ADE, which is exactly what harmed seronegative children given Dengvaxia.",
       "callout": "The second dengue infection can be the dangerous one.",
-      "durationInFrames": 2315,
+      "durationInFrames": 1813,
       "caption": "Dengue has four serotypes; a second infection can trigger ADE and severe disease.",
       "voiceover": {
-        "text": "Now dengue, which behaves completely differently. Dengue is caused by a virus, and it's spread by a different mosquito, Aedes aegypti, an urban, daytime biter that breeds in tiny pools of water, like a bottle cap or a plant pot. Here's the strange part. There are four serotypes of dengue, and when you catch one, you get lifelong immunity to that serotype, but only that one. You're still fully susceptible to the other three. And it gets worse. If you later catch a different serotype, the leftover antibodies from your first infection can actually bind the new virus without neutralising it, and instead help it infect your cells, that's antibody-dependent enhancement, and it can cause severe, life-threatening dengue. So here's the vaccine paradox. A dengue vaccine has to protect against all four serotypes equally well, because if it only primes a partial response, it can set someone up for ADE. That's exactly what went wrong with the Dengvaxia vaccine, which harmed children who had never had dengue before, the seronegative ones."
+        "text": "Now dengue, which behaves completely differently. Dengue is caused by a virus, spread by Aedes aegypti, an urban, daytime biter that breeds in tiny pools of water, like a bottle cap or a plant pot. There are four serotypes, and catching one gives you lifelong immunity to that serotype only. You're still susceptible to the other three. And it gets worse. If you later catch a different serotype, the leftover antibodies can bind the new virus without neutralising it, and actually help it infect your cells. That's antibody dependent enhancement, and it can cause severe, life threatening dengue. So a dengue vaccine has to protect against all four serotypes, or it risks setting someone up for ADE, which is what happened with the Dengvaxia vaccine in children who'd never had dengue."
       }
     },
     {
@@ -171,11 +174,63 @@
         "Instead they help the virus enter immune cells, the ADE effect, amplifying the infection.",
         "Answer: the vaccine mimicked a first infection, so a later serotype triggered ADE and severe dengue ✓"
       ],
-      "durationInFrames": 2395,
+      "durationInFrames": 1921,
       "caption": "Vaccinating dengue-naive children can prime ADE on a later infection.",
       "voiceover": {
-        "text": "Let's reason through the dengue vaccine paradox properly, because it's a beautiful, if grim, application of immunology. A child who has never had dengue is given the vaccine, then later catches dengue, and develops severe disease. Explain why vaccinating dengue-naive children can backfire. Step one, remember dengue has four serotypes, and immunity to one does not protect against the others. Step two, in a child who's never had dengue, the vaccine acts a bit like a first exposure, priming antibodies, but if those antibodies don't fully neutralise all four serotypes, that's a problem. Step three, when a real infection with a different serotype arrives, those primed antibodies bind the virus, but they can't neutralise it. Step four, instead of helping, they actually escort the virus into immune cells, that's antibody-dependent enhancement, and it amplifies the infection dramatically. So the answer is, the vaccine mimicked a first infection, which then set the child up for ADE when a different serotype came along, producing severe dengue. That's why Dengvaxia is now only given to people with confirmed prior dengue."
+        "text": "Let's reason through the dengue vaccine paradox properly. A child who has never had dengue is given the vaccine, then later catches dengue and develops severe disease. Why can vaccinating dengue naive children backfire? Step one, dengue has four serotypes, and immunity to one doesn't protect against the others. Step two, in a child who's never had dengue, the vaccine acts a bit like a first infection, priming antibodies that may not fully neutralise every serotype. Step three, when a real infection arrives, those antibodies bind the virus but can't neutralise it. Step four, they actually help the virus into immune cells, which is antibody dependent enhancement, and it amplifies the infection. So the vaccine mimicked a first infection, setting the child up for severe dengue. That's why Dengvaxia is now only recommended for people with confirmed past dengue."
       }
+    },
+    {
+      "id": "concept-biotech",
+      "type": "concept",
+      "heading": "Evaluating biotechnologies",
+      "body": "The test of a biotechnology is whether it measurably lowers the incidence or prevalence of disease.",
+      "bullets": [
+        {
+          "text": "Wolbachia mosquitoes: in a Yogyakarta trial, dengue cases fell by about 77 percent."
+        },
+        {
+          "text": "Malaria vaccines: RTS,S and R21 are recommended by WHO; they reduce but do not stop malaria."
+        },
+        {
+          "text": "Gene drives: collapsed caged Anopheles populations in the lab, but no wild release yet."
+        }
+      ],
+      "secondary": "Strong evidence comes from randomised trials that compare treated and untreated areas or groups, not from before-and-after counts alone.",
+      "callout": "Judge it by the data: did cases actually fall?",
+      "caption": "Wolbachia cut dengue in a randomised trial; malaria vaccines give partial protection; gene drives are still experimental.",
+      "voiceover": {
+        "text": "So, how do we evaluate the biotechnologies aimed at these diseases? The test is always the data. Did incidence or prevalence actually fall? Start with Wolbachia. Mosquitoes carrying it were released across parts of Yogyakarta, in Indonesia, in a randomised trial, and dengue cases in treated areas fell by about seventy seven percent compared with untreated areas, with far fewer hospital admissions. Similar releases in Townsville were followed by local dengue transmission almost disappearing. For malaria, the vaccines RTS,S and R21 are now recommended by the World Health Organization for young children. They reduce cases and severe malaria, but they don't give complete protection, so they're used alongside nets and drugs. And gene drives have collapsed caged populations of malaria mosquitoes in the lab, but haven't been released into the wild, so their real effect on prevalence is still unknown."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Biotechnology",
+          "Disease",
+          "Evidence so far"
+        ],
+        "rows": [
+          [
+            "Wolbachia mosquitoes",
+            "Dengue",
+            "About 77% fewer cases in an RCT"
+          ],
+          [
+            "RTS,S and R21 vaccines",
+            "Malaria",
+            "Partial protection in children"
+          ],
+          [
+            "Gene drive",
+            "Malaria",
+            "Lab cages only; not yet released"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "durationInFrames": 1935
     },
     {
       "id": "misconception",
@@ -185,29 +240,29 @@
       "secondary": "Trap 2: thinking one dengue infection makes you immune to all dengue. It only protects against that one serotype, and a second infection with another serotype can be more severe via ADE.",
       "mistakeTag": "What malaria is, and dengue immunity",
       "callout": "Malaria is a parasite, not a microbe; dengue immunity is serotype-specific.",
-      "durationInFrames": 2075,
+      "durationInFrames": 1395,
       "caption": "Malaria is a eukaryotic parasite; dengue immunity is serotype-specific.",
       "voiceover": {
-        "text": "Two traps that cost marks. Trap one, writing that malaria is caused by a virus, or a bacterium. It is neither. Malaria is caused by Plasmodium, a eukaryotic parasite, and that distinction has a real consequence, antibiotics don't work on it because it's not a bacterium, and antivirals don't work on it because it's not a virus. You need antimalarial drugs designed for the parasite's own machinery. Trap two, thinking that catching dengue once makes you immune to dengue forever. It doesn't. You only become immune to the specific serotype you caught, and you're still fully vulnerable to the other three. And the dangerous part, a second infection with a different serotype can actually be more severe than the first, because of antibody-dependent enhancement. So prior dengue is not simply protection, it can be a risk factor. Get both of those straight and you'll avoid the most common errors in this case study."
+        "text": "Two traps that cost marks. Trap one, writing that malaria is caused by a virus or a bacterium. It's neither. Malaria is caused by Plasmodium, a eukaryotic parasite, so antibiotics don't work on it, and neither do antivirals. You need antimalarial drugs that target the parasite's own machinery. Trap two, thinking that catching dengue once makes you immune to dengue forever. You only become immune to the serotype you caught, and a second infection with a different serotype can be more severe, because of antibody dependent enhancement. So prior dengue isn't simply protection, it can actually be a risk factor."
       }
     },
     {
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "A new antimalarial drug targets the liver stage of Plasmodium. Explain why hitting the liver stage is strategically valuable, even though that stage causes no symptoms.",
+      "question": "In a trial, dengue incidence in Wolbachia release areas was compared with nearby areas with no releases, allocated at random. Explain why this design gives stronger evidence than simply comparing a city's dengue cases before and after release.",
       "pausePrompt": "Pause and reason it through.",
       "answerSteps": [
-        "The liver stage comes before the blood stage, where all the symptoms and damage occur.",
-        "Killing the parasite in the liver stops it ever reaching the blood, preventing illness entirely.",
-        "It is also a numerical bottleneck, with fewer parasites present than later in the blood.",
-        "So intervening early prevents disease rather than just treating it once symptoms appear.",
-        "Answer: the liver stage is an early, low-number bottleneck, so clearing it prevents the blood stage and symptoms ✓"
+        "Dengue incidence naturally rises and falls from year to year, with weather and serotype changes.",
+        "A before-and-after comparison can't separate the effect of Wolbachia from these other changes.",
+        "Untreated control areas experience the same weather, season and serotypes at the same time.",
+        "Random allocation of areas reduces selection bias, so the groups are comparable.",
+        "Answer: a randomised, controlled comparison isolates Wolbachia as the cause of the lower incidence ✓"
       ],
-      "durationInFrames": 2275,
-      "caption": "The silent liver stage is an early bottleneck, ideal for prevention.",
+      "durationInFrames": 1719,
+      "caption": "Random allocation and concurrent controls isolate the effect of Wolbachia on dengue incidence.",
       "voiceover": {
-        "text": "Quick check. A new antimalarial drug targets the liver stage of Plasmodium. Explain why hitting the liver stage is strategically valuable, even though that stage causes no symptoms at all. Pause and reason it through. Right. Think about the sequence. The liver stage comes before the blood stage, and it's the blood stage that causes all the fever, anaemia and damage. So if you kill the parasite while it's still in the liver, it never reaches the blood, and the person never gets sick, you've prevented the disease, not just treated it. There's a second advantage too. The liver stage is a numerical bottleneck, there are far fewer parasites present in the liver than there will be once they've multiplied in the blood, so it's an easier target to clear completely. So the answer is, the liver stage is an early, low-number bottleneck, and clearing it there prevents the blood stage and the symptoms entirely. Prevention beats treatment, and the silent stage is the smart place to strike."
+        "text": "Quick check. In a trial, dengue incidence in Wolbachia release areas was compared with nearby areas that had no releases, with the areas allocated at random. Explain why this gives stronger evidence than just comparing a city's dengue cases before and after release. Pause and reason it through. Right. Dengue naturally rises and falls from year to year, with the weather and with which serotypes are circulating. A before and after comparison can't separate the effect of Wolbachia from those changes. But untreated control areas go through the same weather, season and serotypes at the same time. And allocating areas at random reduces selection bias, so the groups are comparable. So the randomised, controlled comparison isolates Wolbachia as the cause of the lower incidence."
       }
     },
     {
@@ -217,15 +272,15 @@
       "points": [
         "Malaria is caused by Plasmodium, a eukaryotic parasite spread by night-biting Anopheles mosquitoes.",
         "Its life cycle (mosquito, liver, blood) gives multiple intervention points: nets, drugs, vaccines.",
-        "Dengue is a virus with four serotypes, spread by the daytime urban mosquito Aedes aegypti.",
-        "Immunity to one dengue serotype is not immunity to all; a second can trigger ADE and severe disease.",
-        "Antibiotics and antivirals do not treat malaria; dengue's serotypes make vaccination uniquely hard."
+        "Dengue is a virus with four serotypes spread by Aedes aegypti; a second serotype can trigger ADE.",
+        "Wolbachia mosquitoes cut dengue incidence in a randomised trial; malaria vaccines give partial protection.",
+        "Evaluate a biotechnology by the data: did incidence or prevalence fall compared with a control?"
       ],
-      "finalPrompt": "Analysing a vector disease? Name the pathogen type, the vector, and the life-cycle intervention points.",
-      "durationInFrames": 1775,
-      "caption": "Five takeaways: Plasmodium, life-cycle targets, dengue serotypes, ADE, and treatment.",
+      "finalPrompt": "Evaluating a biotechnology for a mosquito-borne disease? Name the pathogen and vector, then check the incidence data against a control.",
+      "durationInFrames": 1449,
+      "caption": "Five takeaways: Plasmodium, life-cycle targets, dengue serotypes and ADE, biotechnologies, and evidence.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, malaria is caused by Plasmodium, a eukaryotic parasite spread by night-biting Anopheles mosquitoes. Second, its life cycle, mosquito, then liver, then blood, gives multiple intervention points, bed nets, drugs, and vaccines each hit a different stage. Third, dengue is a virus with four serotypes, spread by the daytime urban mosquito Aedes aegypti. Fourth, immunity to one dengue serotype is not immunity to all, and a second infection with a different serotype can trigger antibody-dependent enhancement and severe disease. And fifth, antibiotics and antivirals don't treat malaria because it's a parasite, while dengue's four serotypes make vaccination uniquely hard. Whenever you analyse a vector-borne disease, name the pathogen type, name the vector, and find the life-cycle intervention points. See you next lesson."
+        "text": "Let's lock it in. First, malaria is caused by Plasmodium, a eukaryotic parasite spread by night biting Anopheles mosquitoes. Second, its life cycle, mosquito, then liver, then blood, gives multiple points of attack for nets, drugs and vaccines. Third, dengue is a virus with four serotypes, spread by Aedes aegypti, and a second infection with a different serotype can trigger antibody dependent enhancement. Fourth, Wolbachia mosquitoes cut dengue incidence in a randomised trial, while malaria vaccines give real but partial protection. And fifth, evaluate any biotechnology by the data, asking whether incidence or prevalence actually fell compared with a control. See you next lesson."
       }
     }
   ]
