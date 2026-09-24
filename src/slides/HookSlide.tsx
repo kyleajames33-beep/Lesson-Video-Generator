@@ -24,6 +24,7 @@ import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
 import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
+import {AssetImg} from './shared/AssetImg';
 
 type HookSlideProps = {
 	scene: TextScene;
@@ -48,7 +49,7 @@ export const HookSlide = ({scene, lesson, sceneIndex, totalScenes}: HookSlidePro
 
 			{scene.image && ASSETS[scene.image as AssetName] ? (
 				<FadeUp delay={rd.glyph ?? 12} durationFrames={18} dy={16}>
-					<img
+					<AssetImg
 						src={ASSETS[scene.image as AssetName]}
 						alt=""
 						style={{
@@ -106,10 +107,10 @@ export const HookSlide = ({scene, lesson, sceneIndex, totalScenes}: HookSlidePro
 							<FadeUp delay={rd.heading ?? 6} durationFrames={14} dy={16}>
 								<h1
 									style={{
-										margin: '6px 0 18px',
-										fontSize: 56,
-										fontWeight: 800,
-										lineHeight: 1.05,
+										margin: '6px 0 22px',
+										fontSize: fitHookHeadingSize(scene.heading),
+										fontWeight: 820,
+										lineHeight: 1.02,
 										letterSpacing: '-0.025em',
 										color: TOK.ink,
 										maxWidth: 1700,
@@ -121,11 +122,14 @@ export const HookSlide = ({scene, lesson, sceneIndex, totalScenes}: HookSlidePro
 						) : null}
 						<div
 							style={{
-								fontSize: fitHookQuestionSize(scene.body),
-								fontWeight: 700,
-								lineHeight: 1.1,
-								letterSpacing: '-0.02em',
-								maxWidth: isLongHook ? 1780 : 1500,
+								// With a heading, the heading is the hero and the body is the
+								// supporting line (it used to be the other way round: a 56px
+								// heading over an 88px dimmed body).
+								fontSize: scene.heading ? 40 : fitHookQuestionSize(scene.body),
+								fontWeight: scene.heading ? 500 : 700,
+								lineHeight: scene.heading ? 1.32 : 1.1,
+								letterSpacing: scene.heading ? '-0.01em' : '-0.02em',
+								maxWidth: scene.heading ? 1500 : isLongHook ? 1780 : 1500,
 								color: scene.heading ? TOK.inkDim : undefined,
 							}}
 						>
@@ -335,7 +339,7 @@ const HeroQuestion = ({
 				<span
 					style={{
 						position: 'relative',
-						color: TOK.amber,
+						color: TOK.amberInk,
 						fontStyle: 'italic',
 						display: 'inline-block',
 					}}
@@ -357,6 +361,12 @@ const HeroQuestion = ({
 			</>
 		</FadeUp>
 	);
+};
+
+const fitHookHeadingSize = (text: string) => {
+	if (text.length > 64) return TYPE.h4.fontSize;
+	if (text.length > 44) return TYPE.h3.fontSize;
+	return TYPE.h1.fontSize;
 };
 
 const fitHookQuestionSize = (text: string) => {

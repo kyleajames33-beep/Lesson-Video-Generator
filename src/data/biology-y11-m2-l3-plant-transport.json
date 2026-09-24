@@ -1,0 +1,410 @@
+{
+  "title": "Plant Transport",
+  "subtitle": "Xylem and phloem, the cohesion-tension theory, transpiration and translocation",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Use a variety of sources to compare the structures and functions of xylem and phloem in the plant transport system",
+    "Use the translocation theory to explain the movement of nutrients through phloem tissue",
+    "Use the cohesion-tension theory to explain how osmotic pressure, transpiration stream and the cohesion of water molecules control the movement of water and dissolved minerals through the xylem",
+    "Explain how light, temperature, wind and humidity affect the rate of transpiration in plants",
+    "Conduct a practical investigation to demonstrate the effect of an environmental factor on the rate of transpiration",
+    "interpret a range of secondary-sourced information to evaluate processes, claims and conclusions that have led scientists to develop hypotheses, theories and models about the structure and function of plants, including but not limited to: (ACSBL034) transpiration-cohesion-tension theory",
+    "compare the structures and function of transport systems in animals and plants, including but not limited to: (ACSBL033) vascular systems in plants and animals",
+    "investigate the function of structures in a plant, including but not limited to: tracing the development and movement of the products of photosynthesis (ACSBL059, ACSBL060)"
+  ],
+  "moduleLessonCount": 6,
+  "nesaOutcomes": [
+    "BI-11-02",
+    "BI-11WS-02",
+    "BI-11WS-04",
+    "BI-11WS-05"
+  ],
+  "inquiryQuestion": "How does the composition of the transport medium change as it moves around an organism?",
+  "lessonIntent": "Students can compare xylem and phloem, explain water movement with the cohesion-tension theory and sugar movement with the pressure flow model of translocation, and predict how light, temperature, wind and humidity change transpiration.",
+  "examSkill": "Explain water or sugar movement as a cause-and-effect chain, and calculate and compare transpiration rates from potometer data.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, plant transport, and how water climbs a hundred metres with no pump. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Plant Transport"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Lifting water 100 metres with no pump",
+      "body": "A suction pump at the top of a pipe can only lift water about 10 metres. Tasmania's tallest mountain ash trees lift it about 100 metres, every day.",
+      "callout": "How does a tree pull water higher than any suction pump can?",
+      "image": "bioY11M2L3MountainAsh",
+      "durationInFrames": 1912,
+      "caption": "Mountain ash reach about 100 m, ten times the limit of a suction pump.",
+      "voiceover": {
+        "text": "Here's a physics problem hiding in a forest. If you put a suction pump at the top of a long pipe and try to lift water, you hit a limit at about ten metres, because above that the water column just can't be held up by air pressure. Now head to southern Tasmania, where the tallest mountain ash trees stand about one hundred metres high, among the tallest flowering plants on Earth. Every day, water travels from their roots right up to leaves at the very top, and there's no pump, no heart and no muscle anywhere in the tree. So how does a plant pull water ten times higher than a suction pump can manage? Today we'll compare xylem and phloem, explain water movement with the cohesion tension theory, and see how sugars get moved around the plant too."
+      }
+    },
+    {
+      "id": "concept-vascular",
+      "type": "concept",
+      "heading": "Xylem and phloem compared",
+      "body": "Plants have two transport tissues, grouped together in vascular bundles in roots, stems and leaf veins.",
+      "bullets": [
+        {
+          "text": "Xylem: dead, hollow vessels with lignin-thickened walls carrying water and minerals up."
+        },
+        {
+          "text": "Phloem: living sieve tube cells with sieve plates, supported by companion cells."
+        },
+        {
+          "text": "Phloem carries sugars, mainly sucrose, and amino acids both up and down."
+        }
+      ],
+      "secondary": "Under the microscope, xylem sits towards the inside of each bundle in a stem and phloem towards the outside; in a young root they sit in the central core.",
+      "callout": "Xylem is dead pipes going up; phloem is living tubes going both ways.",
+      "durationInFrames": 2035,
+      "caption": "Xylem: dead, lignified, water up. Phloem: living, sieve plates, sugars both ways.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Xylem",
+          "Phloem"
+        ],
+        "rows": [
+          [
+            "Cells",
+            "Dead, hollow vessels",
+            "Living sieve tubes + companion cells"
+          ],
+          [
+            "Walls",
+            "Thickened with lignin",
+            "Thin cellulose, sieve plates"
+          ],
+          [
+            "Carries",
+            "Water, mineral ions",
+            "Sucrose, amino acids, hormones"
+          ],
+          [
+            "Direction",
+            "Up, roots to leaves",
+            "Both ways, source to sink"
+          ],
+          [
+            "Energy",
+            "Passive",
+            "Active loading needs ATP"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "So a plant has two transport tissues, and they sit side by side in vascular bundles running through the roots, the stem and every vein in a leaf. Xylem carries water and dissolved mineral ions, and it only goes one way, up from the roots to the leaves. Its vessels are dead, hollow tubes, with the end walls broken down and the side walls thickened with lignin, which makes them strong enough not to collapse under tension. Phloem is completely different. Its sieve tube cells are alive, joined end to end by perforated sieve plates, and each one has a companion cell beside it, packed with mitochondria. Phloem carries sugars, mainly sucrose, along with amino acids and hormones, and it can move them either up or down the plant. So the short version is that xylem is dead pipes going up, while phloem is living tubes going both ways."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Transpiration: evaporation of water from leaves, mostly out through the stomata."
+        },
+        {
+          "text": "Cohesion: attraction between water molecules, from hydrogen bonding."
+        },
+        {
+          "text": "Adhesion: attraction between water molecules and the xylem walls."
+        },
+        {
+          "text": "Translocation: movement of sugars and other nutrients through the phloem."
+        }
+      ],
+      "callout": "Transpiration and cohesion move xylem; translocation moves phloem.",
+      "durationInFrames": 1625,
+      "caption": "Transpiration, cohesion, adhesion, translocation.",
+      "voiceover": {
+        "text": "Before we explain the mechanisms, let's get four terms exact. Transpiration is the evaporation of water from the leaves, with most of that water vapour escaping out through the stomata. Cohesion is the attraction between water molecules themselves, which comes from hydrogen bonding, so water molecules tend to stick together in a continuous chain. Adhesion is the attraction between water molecules and the walls of the xylem, which helps the column cling on rather than slip back down. And translocation is the movement of sugars and other nutrients through the phloem. Keep the pairing straight in your head, because examiners test it constantly. Transpiration, cohesion and adhesion all belong to the xylem story, while translocation belongs to the phloem."
+      }
+    },
+    {
+      "id": "concept-cohesion-tension",
+      "type": "concept",
+      "heading": "The cohesion-tension theory",
+      "body": "Water is pulled up the xylem as one continuous column, driven by evaporation from the leaves.",
+      "bullets": [
+        {
+          "text": "Roots: mineral ions are actively absorbed, so water follows by osmosis into root hairs."
+        },
+        {
+          "text": "Leaves: water evaporates and diffuses out through stomata, creating tension in the xylem."
+        },
+        {
+          "text": "Stem: cohesion holds the column together, so the whole chain is pulled up."
+        }
+      ],
+      "secondary": "Dissolved mineral ions travel up in this transpiration stream. The pull comes from the top, and the energy comes from the sun evaporating water, not from the plant's ATP.",
+      "callout": "The pull comes from the top: evaporation creates tension, cohesion transmits it.",
+      "durationInFrames": 2035,
+      "caption": "Evaporation creates tension; cohesion pulls a continuous water column up the xylem.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "soil",
+            "label": "Soil water enters root hairs by osmosis"
+          },
+          {
+            "id": "root",
+            "label": "Root xylem"
+          },
+          {
+            "id": "stem",
+            "label": "Stem xylem: cohesive water column"
+          },
+          {
+            "id": "leaf",
+            "label": "Leaf: evaporation from mesophyll"
+          },
+          {
+            "id": "air",
+            "label": "Water vapour diffuses out of stomata"
+          }
+        ],
+        "edges": [
+          {
+            "from": "soil",
+            "to": "root"
+          },
+          {
+            "from": "root",
+            "to": "stem"
+          },
+          {
+            "from": "stem",
+            "to": "leaf"
+          },
+          {
+            "from": "leaf",
+            "to": "air"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "OK, here's how the tree beats the pump. Start in the leaf. Water evaporates from the wet walls of the mesophyll cells into the air spaces, then diffuses out through the stomata. That loss pulls on the water in the nearest xylem, putting the whole column under tension, a bit like sucking on a very long straw. Now, a pump fails at ten metres, so why doesn't the tree's column snap? Because of cohesion. Water molecules are hydrogen bonded to each other, so as one leaves at the top it drags the next one up behind it, all the way down to the roots, and adhesion to the narrow xylem walls helps hold the chain in place. At the bottom, root cells actively absorb mineral ions, which makes their contents more concentrated, so water follows by osmosis from the soil. The minerals simply ride along in this transpiration stream."
+      }
+    },
+    {
+      "id": "concept-translocation",
+      "type": "concept",
+      "heading": "Translocation: from source to sink",
+      "body": "Sugars flow through the phloem by mass flow, from a source that makes or releases them to a sink that uses or stores them.",
+      "bullets": [
+        {
+          "text": "Source, like a leaf: companion cells actively load sucrose into the sieve tubes."
+        },
+        {
+          "text": "Water enters by osmosis from nearby xylem, raising the pressure there."
+        },
+        {
+          "text": "Sink, like a root or fruit: sucrose is unloaded, water leaves, pressure falls."
+        }
+      ],
+      "secondary": "Sap flows from high pressure at the source to low pressure at the sink. A storage root can be a sink in summer and a source in spring, which is why phloem runs both ways.",
+      "callout": "Load at the source, unload at the sink, and pressure drives the flow.",
+      "durationInFrames": 2062,
+      "caption": "Pressure flow: sucrose loading raises pressure at the source; sap flows to the sink.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "load",
+            "label": "Source: sucrose actively loaded"
+          },
+          {
+            "id": "water",
+            "label": "Water enters by osmosis"
+          },
+          {
+            "id": "pressure",
+            "label": "High pressure pushes sap along"
+          },
+          {
+            "id": "unload",
+            "label": "Sink: sucrose unloaded, used or stored"
+          }
+        ],
+        "edges": [
+          {
+            "from": "load",
+            "to": "water"
+          },
+          {
+            "from": "water",
+            "to": "pressure"
+          },
+          {
+            "from": "pressure",
+            "to": "unload"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "Now for the phloem, which uses a different trick. The best supported explanation of translocation is the pressure flow model, and it runs from a source to a sink. A source is any part that makes or releases sugar, like a leaf in sunlight. There, companion cells use ATP to actively load sucrose into the sieve tubes. That makes the sap very concentrated, so water moves in from the nearby xylem by osmosis, and the pressure inside the sieve tube rises. At the other end is a sink, like a growing root, a fruit or a storage organ, where sucrose is unloaded and used or stored. Water follows it out, so the pressure there drops. The sap then flows from high pressure to low pressure, carrying its sugars with it. And because a potato or a carrot root can switch from sink to source, phloem flow can run in either direction."
+      }
+    },
+    {
+      "id": "concept-factors",
+      "type": "concept",
+      "heading": "What speeds up transpiration?",
+      "body": "Transpiration is evaporation plus diffusion, so anything that speeds either one up increases the rate.",
+      "bullets": [
+        {
+          "text": "Light: stomata open, so more water vapour escapes."
+        },
+        {
+          "text": "Higher temperature: faster evaporation and faster diffusion."
+        },
+        {
+          "text": "Wind: blows away humid air near the leaf, steepening the gradient."
+        },
+        {
+          "text": "Higher humidity: less gradient between leaf and air, so a slower rate."
+        }
+      ],
+      "secondary": "Humidity is the one factor that slows transpiration as it increases. Each explanation should name the gradient or the stomata.",
+      "callout": "Every factor works through the gradient, the stomata, or the speed of molecules.",
+      "durationInFrames": 1884,
+      "caption": "Light, heat and wind speed transpiration up; humidity slows it down.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Factor increases",
+          "Rate",
+          "Because"
+        ],
+        "rows": [
+          [
+            "Light intensity",
+            "Increases",
+            "Stomata open wider"
+          ],
+          [
+            "Temperature",
+            "Increases",
+            "Faster evaporation and diffusion"
+          ],
+          [
+            "Wind speed",
+            "Increases",
+            "Humid air removed, steeper gradient"
+          ],
+          [
+            "Humidity",
+            "Decreases",
+            "Smaller gradient, leaf to air"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "So what changes the rate of transpiration? Think of it as evaporation followed by diffusion, and all four factors fall into place. Light first. In light the stomata open for photosynthesis, which lets more water vapour escape. A higher temperature gives water molecules more kinetic energy, so they evaporate and diffuse faster. Wind works in a less obvious way. On a still day, a thin layer of humid air sits right against the leaf, but wind blows that layer away, keeping the concentration gradient steep. And humidity is the odd one out. The more water vapour already in the air, the smaller the difference between the inside of the leaf and the outside, so transpiration slows down. When you write these up, always name the mechanism, whether that's the stomata, the gradient or the speed of the molecules."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Reading a potometer",
+      "question": "A leafy shoot is set up in a bubble potometer. In still air the bubble moves 18 mm in 6 minutes. With a fan blowing on the leaves it moves 45 mm in 6 minutes. Calculate both rates, compare them and explain the difference.",
+      "coachNote": "Rate = distance ÷ time. Then explain the change with the concentration gradient.",
+      "steps": [
+        "Still air: 18 mm ÷ 6 min = 3.0 mm per minute.",
+        "Fan: 45 mm ÷ 6 min = 7.5 mm per minute.",
+        "Comparison: 7.5 ÷ 3.0 = 2.5, so the rate is 2.5 times faster with the fan.",
+        "Wind removes the humid layer around the leaf, keeping the water vapour gradient steep.",
+        "Answer: 3.0 and 7.5 mm per minute; wind increased water uptake 2.5 times ✓"
+      ],
+      "durationInFrames": 2226,
+      "caption": "Still air 3.0 mm per min, fan 7.5 mm per min: wind increases the rate 2.5 times.",
+      "voiceover": {
+        "text": "Let's work through a potometer result. A leafy shoot is sealed into a potometer, which is a water filled tube with a small air bubble that moves as the shoot draws water up. In still air, the bubble travels eighteen millimetres in six minutes. With a fan blowing on the leaves, it travels forty five millimetres in the same six minutes. First, the rates. Eighteen divided by six gives three millimetres per minute in still air, and forty five divided by six gives seven point five millimetres per minute with the fan. To compare, divide one by the other, and seven point five over three is two point five, so the rate is two and a half times faster in wind. The explanation is the gradient, because the fan strips away the humid air around each leaf. One more detail examiners like. A potometer measures water uptake, which is close to transpiration, but not identical, since the plant also uses a little water."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: 'Roots push water up the tree.' Root pressure is small. The main force is the pull from transpiration at the top, transmitted down the column by cohesion.",
+      "secondary": "Trap 2: 'Phloem only carries sugar down.' Translocation goes from source to sink, which can be up or down. A growing shoot tip or fruit is a sink above the leaves that feed it.",
+      "mistakeTag": "Where plant transport marks vanish",
+      "callout": "Xylem is pulled from the top; phloem flows source to sink, either way.",
+      "durationInFrames": 2007,
+      "caption": "Water is pulled, not pushed; phloem runs from source to sink in either direction.",
+      "voiceover": {
+        "text": "Two traps to clear up. Trap one is the idea that roots push water up the tree. Roots can generate a small root pressure, and you sometimes see it as droplets on grass leaves early in the morning, but it's nowhere near enough to lift water a hundred metres. The main driving force is the pull from transpiration at the top, passed all the way down by cohesion. So in an exam, say the water is pulled, not pushed. Trap two is thinking phloem only carries sugar downwards. Translocation always runs from a source to a sink, and that can be in either direction. A growing shoot tip, a flower or a ripening fruit sits above many of the leaves that feed it, so sugar has to move up to reach it. Ask yourself where the source is and where the sink is, and the direction follows."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A ring of bark, including the phloem, is removed from around a tree trunk, but the xylem is left intact. Predict what happens above the ring, below the ring, and to the leaves over the next few weeks.",
+      "pausePrompt": "Pause and trace which tissue has been cut.",
+      "answerSteps": [
+        "The phloem is cut, so sugars from the leaves can't pass the ring.",
+        "Above the ring, sugars build up and the bark swells.",
+        "Below the ring, the roots receive no sugar, so they eventually starve and die.",
+        "The xylem is intact, so the leaves keep receiving water and don't wilt at first.",
+        "Answer: swelling above, starving roots below, leaves fine at first until the roots fail ✓"
+      ],
+      "durationInFrames": 1966,
+      "caption": "Ringing cuts phloem: sugar builds up above, roots starve below, xylem still supplies water.",
+      "voiceover": {
+        "text": "Quick check, and it's a classic experiment. A complete ring of bark, including the phloem, is stripped from around a tree trunk, but the xylem underneath is left untouched. Predict what happens above the ring, below the ring, and to the leaves over the following weeks. Pause and trace which tissue has actually been cut. OK, the phloem is gone, so sugars made in the leaves can't get past the ring on their way down. They build up above the cut, and the bark there often swells. Below the ring, the roots are a sink that no longer receives any sugar, so over time they run out of energy and die. But the xylem is still intact, so water keeps flowing up and the leaves stay green at first. They only wilt later, once the roots have died and can't take up water anymore."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Xylem: dead, lignified vessels carrying water and minerals up, passively.",
+        "Phloem: living sieve tubes and companion cells carrying sucrose from source to sink.",
+        "Cohesion-tension: transpiration pulls; hydrogen bonding keeps the column continuous.",
+        "Translocation: active loading at the source raises pressure, and sap flows to the sink.",
+        "Light, heat and wind increase transpiration; humidity decreases it."
+      ],
+      "finalPrompt": "For any transport question: which tissue, which direction, and what creates the difference that drives the flow?",
+      "durationInFrames": 1611,
+      "caption": "Five takeaways: xylem, phloem, cohesion-tension, pressure flow, transpiration factors.",
+      "voiceover": {
+        "text": "Let's lock it in. First, xylem is made of dead vessels with lignified walls, and it carries water and minerals upwards without the plant spending any ATP. Second, phloem is living sieve tubes supported by companion cells, and it carries sucrose from source to sink. Third, the cohesion tension theory says transpiration at the leaves creates a pull, and hydrogen bonding between water molecules keeps the whole column together all the way from the roots. Fourth, in translocation, sucrose is actively loaded at the source, water follows by osmosis, and the pressure pushes sap towards the sink. And fifth, light, higher temperature and wind all speed transpiration up, while higher humidity slows it down. See you next lesson."
+      }
+    }
+  ]
+}

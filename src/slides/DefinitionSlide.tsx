@@ -29,6 +29,7 @@ import {Eyebrow} from './shared/Eyebrow';
 import {ConceptText} from './shared/ConceptText';
 import {FONT_HAND, FONT_MONO, TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
+import {AssetImg} from './shared/AssetImg';
 
 type DefinitionSlideProps = {
 	scene: TextScene;
@@ -175,7 +176,7 @@ export const DefinitionSlide = ({scene, lesson, sceneIndex, totalScenes}: Defini
 				<UnitTable diagram={scene.diagram} delay={rd.unitTable ?? 84} />
 			) : scene.image && ASSETS[scene.image as AssetName] ? (
 				<FadeUp delay={rd.unitTable ?? 84} durationFrames={16} dy={22}>
-					<img
+					<AssetImg
 						src={ASSETS[scene.image as AssetName]}
 						alt=""
 						style={{
@@ -199,7 +200,7 @@ export const DefinitionSlide = ({scene, lesson, sceneIndex, totalScenes}: Defini
 							style={{
 								fontSize: 28,
 								fontStyle: 'italic',
-								color: TOK.amber,
+								color: TOK.amberInk,
 								fontWeight: 500,
 								letterSpacing: '-0.01em',
 							}}
@@ -294,7 +295,7 @@ const UnitTable = ({
 								fontFamily: FONT_MONO,
 								fontSize: 34,
 								fontWeight: 700,
-								color: TOK.amber,
+								color: TOK.amberInk,
 								letterSpacing: '-0.03em',
 							}}
 						>
@@ -372,7 +373,7 @@ const HeroWithCircle = ({
 							marginLeft: 60,
 							fontFamily: FONT_HAND,
 							fontSize: 48,
-							color: TOK.amber,
+							color: TOK.amberInk,
 							fontWeight: 600,
 							transform: 'rotate(-6deg)',
 							whiteSpace: 'nowrap',
@@ -608,7 +609,7 @@ const DefinitionListLayout = ({
 
 			{scene.image && ASSETS[scene.image as AssetName] ? (
 				<FadeUp delay={rd.diagram ?? 90} durationFrames={16} dy={22}>
-					<img
+					<AssetImg
 						src={ASSETS[scene.image as AssetName]}
 						alt=""
 						style={{
@@ -631,7 +632,7 @@ const DefinitionListLayout = ({
 							style={{
 								fontSize: 28,
 								fontStyle: 'italic',
-								color: TOK.amber,
+								color: TOK.amberInk,
 								fontWeight: 500,
 								letterSpacing: '-0.01em',
 							}}

@@ -1,27 +1,30 @@
 {
-  "title": "Treatment and Management of Non-infectious Diseases",
-  "subtitle": "Prevention levels, and evaluating treatments by effectiveness, cost and access",
+  "title": "Preventing and Managing Non-infectious Disease",
+  "subtitle": "Prevention levels, evaluating a prevention campaign, and judging treatments by effectiveness, cost and access",
   "subject": "Biology",
+  "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 8",
   "lesson": "Lesson 15",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
   "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
   "syllabusDotPoints": [
-    "investigate the treatment, management, and possible future directions for further research of a non-infectious disease, evaluating the effectiveness of methods used",
-    "evaluate the effectiveness, cost and accessibility of treatment and management strategies for non-infectious diseases"
+    "use secondary sources to evaluate the effectiveness of current disease-prevention methods and develop strategies for the prevention of a non-infectious disease, including but not limited to: educational programs and campaigns",
+    "investigate the treatment/management, and possible future directions for further research, of a non-infectious disease using an example from one of the non-infectious diseases categories listed above",
+    "Conduct a secondary-source investigation to evaluate the effectiveness of a campaign to prevent a non-infectious disease"
   ],
   "moduleLessonCount": 21,
   "nesaOutcomes": [
     "BIO12-15",
+    "BI-12-02",
     "BIO11/12-4",
     "BIO11/12-5",
     "BIO11/12-6",
     "BIO11/12-7"
   ],
-  "inquiryQuestion": "Why are epidemiological studies used?",
-  "lessonIntent": "Students can classify prevention as primary, secondary or tertiary and evaluate a treatment by weighing its effectiveness against its cost, accessibility and fit for the individual patient.",
-  "examSkill": "Evaluate a treatment by balancing effectiveness, cost and accessibility, and explain why the most effective option is not always the most appropriate for a given patient.",
+  "inquiryQuestion": "How can non-infectious diseases be prevented?",
+  "lessonIntent": "Students can classify prevention as primary, secondary or tertiary, evaluate the effectiveness of a prevention campaign such as SunSmart using secondary data, and evaluate a treatment by weighing effectiveness, cost and accessibility.",
+  "examSkill": "Evaluate a named prevention campaign against clear criteria and evidence, and explain why the most effective treatment is not always the most appropriate for a given patient.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -29,26 +32,26 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, managing disease, and judging which treatment is actually the right one. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, preventing and managing non-infectious disease. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 105,
-      "caption": "Treatment and Management of Non-infectious Diseases (Year 12 Biology, Module 8, Lesson 15)"
+      "caption": "Preventing and Managing Non-infectious Disease"
     },
     {
       "id": "hook",
       "type": "hook",
-      "heading": "A drug that worked for 74 years before we knew why",
-      "body": "Aspirin was sold from 1897, but nobody understood how it worked until 1971. It still helped patients the whole time.",
-      "callout": "What makes a treatment good, beyond just working?",
-      "image": "bioM8L15TreatmentEquity",
-      "durationInFrames": 1422,
-      "caption": "Aspirin: discovered 1897, mechanism found by Vane in 1971; low-dose aspirin cuts cardiovascular events by about 25%.",
+      "heading": "Slip, slop, slap",
+      "body": "In 1981 a cartoon seagull told Australians to slip on a shirt, slop on sunscreen and slap on a hat. Did it actually prevent cancer?",
+      "callout": "How do you prove a campaign prevented a disease?",
+      "image": "bioM8L15SunSmartCampaign",
+      "durationInFrames": 1517,
+      "caption": "Slip Slop Slap launched in 1981; melanoma rates in younger Australians have since fallen.",
       "voiceover": {
-        "text": "In 1897, Felix Hoffmann at Bayer made aspirin, and for the next seventy four years doctors prescribed it for pain and fever without anyone knowing how it actually worked. It was only in 1971 that John Vane discovered the mechanism, that aspirin blocks enzymes called C O X one and C O X two and cuts the production of prostaglandins, work that won him a Nobel Prize. And once we understood the mechanism, a brand new use appeared, because low-dose aspirin turned out to reduce cardiovascular events by about twenty five percent in high-risk patients. So here's the deeper question for this lesson. A treatment can clearly work, but what actually makes it a good treatment, the right treatment, for a particular person. Because the most powerful therapy on paper isn't always the one you should give. Today we'll sort out how to prevent disease at different stages, and how to weigh up effectiveness against cost and access."
+        "text": "In nineteen eighty one, a cartoon seagull named Sid appeared on Australian television, singing that everyone should slip on a shirt, slop on sunscreen and slap on a hat. It became one of the best known health campaigns in the world, and it grew into the SunSmart program. Australia has one of the highest skin cancer rates on Earth, so the stakes were high. Decades later, melanoma rates in younger Australians have been falling. But here's the tricky part. How do you prove a campaign caused that, rather than something else? That's the skill for today, evaluating prevention, alongside how we judge the treatments used once disease has developed."
       }
     },
     {
@@ -69,10 +72,10 @@
       ],
       "secondary": "The key is timing relative to the disease. Primary acts before any disease exists, secondary acts when the disease is present but silent, and tertiary acts once symptoms and damage have begun.",
       "callout": "Before it starts, catch it early, limit the damage.",
-      "durationInFrames": 1476,
+      "durationInFrames": 1705,
       "caption": "Primary prevention acts before disease, secondary detects it early, tertiary manages established disease.",
       "voiceover": {
-        "text": "Let's start with prevention, because the exam loves to test the three levels, and students mix them up constantly. The trick is to think about timing relative to the disease. Primary prevention happens before any disease exists at all, and its job is to stop it ever developing. Vaccination, healthy eating, smoking cessation, public health campaigns, those are all primary. Secondary prevention happens once the disease is present but still silent, before symptoms show, and its job is early detection through screening. Mammograms, bowel cancer screening, blood pressure checks, those catch disease early when it's most treatable. And tertiary prevention happens after the disease is established and causing damage, and its job is to manage it, prevent complications, and improve quality of life. Cardiac rehabilitation after a heart attack, or structured diabetes education, those are tertiary. So just ask yourself, is this acting before the disease, catching it early, or managing it once it's here. Before it starts, catch it early, limit the damage."
+        "text": "Let's start with the three levels of prevention, because students mix them up constantly. The trick is timing relative to the disease. Primary prevention happens before any disease exists, and its job is to stop it developing. Vaccination, healthy eating, quitting smoking and campaigns like SunSmart are all primary. Secondary prevention happens once the disease is present but still silent, and its job is early detection through screening, like mammograms, bowel cancer screening and skin checks. Tertiary prevention happens after the disease is established, and its job is to manage it, prevent complications and improve quality of life, like cardiac rehabilitation after a heart attack. So ask yourself, is this acting before the disease, catching it early, or managing it once it's here?"
       },
       "diagram": {
         "type": "flow",
@@ -109,16 +112,10 @@
       "id": "definition",
       "type": "definition",
       "heading": "The words you need",
-      "body": "Five terms frame how we prevent and judge treatments, so lock them in before we evaluate anything.",
+      "body": "Three more terms frame how we judge prevention and treatment.",
       "bullets": [
         {
-          "text": "Primary prevention: reducing risk factors before any disease develops."
-        },
-        {
-          "text": "Secondary prevention: early detection and treatment before disease progresses."
-        },
-        {
-          "text": "Tertiary prevention: managing established disease to prevent complications."
+          "text": "Health promotion campaign: a coordinated program using media and education to change behaviour."
         },
         {
           "text": "Social determinants of health: non-medical factors like income, education and housing."
@@ -127,18 +124,102 @@
           "text": "Cost-effectiveness: the health outcome gained for each dollar spent."
         }
       ],
-      "callout": "Prevent, detect, manage, plus the social factors and the dollars.",
-      "durationInFrames": 1176,
-      "caption": "Primary, secondary and tertiary prevention, social determinants of health, cost-effectiveness.",
+      "callout": "Change behaviour, mind the social factors, count the dollars.",
+      "durationInFrames": 1085,
+      "caption": "Health promotion campaign, social determinants of health, cost-effectiveness.",
       "voiceover": {
-        "text": "Let's pin down five terms you'll use all lesson. Primary prevention is reducing exposure to risk factors before any disease develops, like vaccination or dietary change. Secondary prevention is early detection and treatment before the disease progresses, which is what screening programmes do. Tertiary prevention is managing an established disease to prevent complications and reduce disability, like cardiac rehabilitation. Social determinants of health are the non-medical factors that strongly shape disease risk and outcomes, things like income, education, housing, and access to healthcare. And cost-effectiveness is the health outcome gained per dollar spent, which is how public health decides where to put limited money. Keep the three prevention levels clearly separated, because slotting an example into the wrong level is one of the easiest marks to lose in this whole topic."
+        "text": "Three more terms before we evaluate anything. A health promotion campaign is a coordinated program that uses media, education and often policy to change people's behaviour and reduce a risk factor. Social determinants of health are the non medical factors, like income, education, housing and access to healthcare, that strongly shape disease risk and outcomes. And cost effectiveness is the health outcome gained for each dollar spent, which is how governments decide where to put limited money."
       }
+    },
+    {
+      "id": "concept-campaign",
+      "type": "concept",
+      "heading": "How to evaluate a prevention campaign",
+      "body": "A campaign works only if it changes behaviour and that change lowers disease, so evaluate each link in the chain.",
+      "bullets": [
+        {
+          "text": "Reach and awareness: did the target audience see and remember the message?"
+        },
+        {
+          "text": "Behaviour change: did people actually change, e.g. less sunburn, more hats and sunscreen?"
+        },
+        {
+          "text": "Health outcomes: did incidence or mortality fall, allowing for time lags?"
+        },
+        {
+          "text": "Attribution and cost: could other factors explain it, and was it worth the money?"
+        }
+      ],
+      "secondary": "Cancers can take decades to develop after exposure, so outcome data lag behind behaviour change. Screening changes can also raise recorded incidence even when true risk falls.",
+      "callout": "Awareness, behaviour, outcome, then ask: was it really the campaign?",
+      "caption": "Evaluate a campaign on reach, behaviour change, health outcomes, attribution and cost.",
+      "voiceover": {
+        "text": "So how do you evaluate a campaign? Think of it as a chain, and test every link. First, reach and awareness. Did the target audience actually see the message and remember it? Second, behaviour change. Awareness is worthless unless people change what they do, so look for survey data, like fewer people getting sunburnt, and more wearing hats and sunscreen. Third, health outcomes. Did the incidence or mortality of the disease actually fall? Be careful, because cancers can take decades to develop, so outcome data lag well behind behaviour. Fourth, attribution and cost. Could something else explain the change, like new laws, better screening or an ageing population? And was the result worth the money spent? A strong evaluation checks all four links, using data, before reaching a judgement."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "reach",
+            "label": "Reach"
+          },
+          {
+            "id": "behave",
+            "label": "Behaviour"
+          },
+          {
+            "id": "outcome",
+            "label": "Outcome"
+          },
+          {
+            "id": "attr",
+            "label": "Attribution and cost"
+          }
+        ],
+        "edges": [
+          {
+            "from": "reach",
+            "to": "behave"
+          },
+          {
+            "from": "behave",
+            "to": "outcome"
+          },
+          {
+            "from": "outcome",
+            "to": "attr"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "durationInFrames": 1787
+    },
+    {
+      "id": "worked-example-campaign",
+      "type": "workedExample",
+      "heading": "Evaluate SunSmart",
+      "question": "Using secondary sources, evaluate the effectiveness of the SunSmart (Slip Slop Slap) campaign in preventing skin cancer in Australia.",
+      "coachNote": "Work through the chain: reach, behaviour, outcome, then attribution and cost, and finish with a clear judgement.",
+      "steps": [
+        "Reach: very high; the slogan is recognised by most Australians and is taught in schools.",
+        "Behaviour: surveys since the 1980s show more hat, shade and sunscreen use and less sunburn.",
+        "Outcome: melanoma incidence in younger Australians has fallen since the 1990s, while older age groups, exposed before the campaign, still rise.",
+        "Attribution: other measures helped too, like shade in schools and solarium bans, so the campaign is one part of a wider strategy.",
+        "Judgement: highly effective as part of a combined strategy, with falling rates in the generations who grew up with it ✓"
+      ],
+      "caption": "SunSmart: high reach, better sun protection, falling melanoma in younger Australians; effective as part of a wider strategy.",
+      "voiceover": {
+        "text": "Let's evaluate SunSmart, using the chain. Reach first. It's extremely high, because the slogan is known by most Australians and sun safety is built into schools, with no hat, no play rules. Behaviour next. Surveys since the nineteen eighties show more people using hats, shade and sunscreen, and fewer getting sunburnt. Now the outcome. Melanoma incidence in younger Australians, the generations who grew up with the campaign, has been falling since the nineteen nineties, while rates in older people, who were exposed before it began, have kept rising. That pattern is exactly what you'd expect if the campaign worked, given the long lag. But attribution matters. Other measures helped as well, like shade in schools and bans on commercial solariums, so the campaign is one part of a wider strategy. So the judgement is that SunSmart has been highly effective, as part of a combined approach, and economic studies suggest it saves more than it costs."
+      },
+      "durationInFrames": 2151
     },
     {
       "id": "concept-evaluate",
       "type": "concept",
       "heading": "How to evaluate a treatment",
-      "body": "Evaluating a treatment means weighing three things together, how well it works, what it costs, and who can actually get it.",
+      "body": "Once disease has developed, evaluating a treatment means weighing how well it works, what it costs, and who can actually get it.",
       "bullets": [
         {
           "text": "Effectiveness: how much it reduces the disease, backed by the strength of the evidence."
@@ -147,15 +228,15 @@
           "text": "Cost: the price before and after subsidies like the PBS and Medicare."
         },
         {
-          "text": "Accessibility: whether geography, money, time and health literacy let patients reach it."
+          "text": "Accessibility: geography, income, time and health literacy decide who can use it."
         }
       ],
-      "secondary": "These pull against each other. Gene therapy can be effective yet cost over a million dollars and only exist at trial sites, while a statin costs a few dollars a month on the PBS and is available everywhere. Evaluate means a balanced judgement, never just a list.",
+      "secondary": "These pull against each other, and unequal access is called health inequity. The most effective treatment on paper is not always the most appropriate for a real patient.",
       "callout": "Effectiveness, cost, access. Weigh all three, don't just list.",
-      "durationInFrames": 1584,
+      "durationInFrames": 1921,
       "caption": "Evaluate a treatment by balancing effectiveness, cost and accessibility, not by listing features.",
       "voiceover": {
-        "text": "Now the heart of this lesson, how you actually evaluate a treatment, because the syllabus uses that word, evaluate, and it means a balanced judgement, not a shopping list. There are three things you weigh together. First, effectiveness, how much the treatment reduces the disease, and how strong the evidence behind it is. A statin reducing major cardiovascular events by twenty five to thirty five percent in large randomised trials is strong, well-evidenced effectiveness. Second, cost, and crucially the cost before and after subsidies. Imatinib, a targeted cancer drug, costs around forty thousand dollars a year at full price, but only about forty dollars a month once it's listed on the Pharmaceutical Benefits Scheme. Third, accessibility, whether patients can actually get it, which depends on geography, money, time, and health literacy. And here's the thing, these three pull against each other. Gene therapy can be highly effective and yet cost over a million dollars and only exist at a handful of trial sites. So when you evaluate, you weigh all three together and reach a judgement."
+        "text": "Now to treatment, once a non infectious disease has developed. To evaluate a treatment, you weigh three things together. First, effectiveness, how much it reduces the disease and how strong the evidence is. Statins, for example, cut major heart attacks and strokes by about a quarter in large randomised trials. Second, cost, before and after subsidies. In Australia, the Pharmaceutical Benefits Scheme subsidises approved medicines, so a drug costing tens of thousands of dollars a year can cost a patient a small co payment, and Medicare covers hospital care. Third, accessibility, which is never purely financial. People in rural and remote areas have less access to specialists and rehabilitation, and income and health literacy shape who gets treated, which is called health inequity. These three pull against each other, so the most effective treatment isn't always the most appropriate."
       },
       "diagram": {
         "type": "table",
@@ -167,49 +248,25 @@
         "rows": [
           [
             "Statin (CVD)",
-            "Cuts events 25–35%",
-            "A few $/month, PBS, everywhere"
+            "Cuts major events by about a quarter",
+            "Cheap on the PBS, widely available"
           ],
           [
             "Metformin (T2D)",
-            "Lowers HbA1c 1–2%",
-            "About $6/month, very accessible"
+            "Lowers blood glucose",
+            "Cheap on the PBS, very accessible"
           ],
           [
-            "CABG (severe CVD)",
-            "Strong for multi-vessel",
-            "$30–50k, Medicare, rural gaps"
+            "Bypass surgery (severe CVD)",
+            "Strong for severe blockages",
+            "Costly, Medicare, rural gaps"
           ],
           [
             "Gene therapy",
-            "Promising, experimental",
-            "Over $1M, trial sites only"
+            "Promising, often experimental",
+            "Very costly, few sites"
           ]
         ]
-      }
-    },
-    {
-      "id": "concept-lifestyle-equity",
-      "type": "concept",
-      "heading": "Lifestyle is treatment, and access isn't equal",
-      "body": "For a newly diagnosed patient, lifestyle change is a first-line treatment, but social factors decide who can sustain it.",
-      "bullets": [
-        {
-          "text": "Lifestyle change is treatment, not just prevention, for early type 2 diabetes."
-        },
-        {
-          "text": "The PBS subsidises medicines and Medicare covers hospital care, lowering cost barriers."
-        },
-        {
-          "text": "Geography, income and health literacy still create unequal access, called health inequity."
-        }
-      ],
-      "secondary": "This is why the most effective treatment is not always the most appropriate one. A treatment a patient cannot afford, reach, or maintain will not work in practice, so patient circumstances matter as much as biology.",
-      "callout": "The best treatment is the effective one a patient can actually sustain.",
-      "durationInFrames": 1782,
-      "caption": "Lifestyle change is first-line treatment for early T2D; subsidies help, but social determinants still limit access.",
-      "voiceover": {
-        "text": "Two ideas that earn the higher bands. First, lifestyle change is genuinely a treatment, not merely prevention. For someone already diagnosed with early type 2 diabetes, the guidelines recommend lifestyle intervention as the first-line treatment, before any drug, because diet, exercise and weight loss directly attack the insulin resistance driving the disease. Saying lifestyle only prevents disease, and forgetting that it treats it, is a classic lost mark. Second, access is not equal. In Australia, the Pharmaceutical Benefits Scheme subsidises approved medicines, so a drug that would cost forty thousand dollars a year might cost a patient just a few dollars a month, and Medicare covers hospital care like bypass surgery. That removes a lot of the financial barrier. But, and this is the key point, accessibility is never purely financial. People in rural and remote areas have far less access to specialists and to cardiac rehabilitation, and health literacy and income still shape who actually gets treated. That inequality is called health inequity. And it's exactly why the most effective treatment on paper is not always the most appropriate one for a real patient, because a treatment you can't afford, reach, or keep up will not work."
       }
     },
     {
@@ -221,28 +278,29 @@
       "steps": [
         "His diabetes is early-stage, so guidelines recommend lifestyle intervention as first-line treatment, not a drug.",
         "Diet, exercise and 5 to 10 percent weight loss directly reduce his insulin resistance, the root driver.",
-        "If lifestyle alone doesn't reach the target HbA1c after a few months, add metformin, about $6 to $31 a month on the PBS.",
-        "His long hours make sustaining lifestyle hard, so Medicare-funded dietitian and diabetes-educator support improves adherence.",
+        "If lifestyle alone doesn't reach his target after a few months, add metformin, which is cheap on the PBS.",
+        "His long hours make lifestyle change hard to sustain, so Medicare-funded dietitian and diabetes-educator support improves adherence.",
         "Answer: lifestyle first, then metformin if needed; the best treatment is the effective one Marcus can actually maintain ✓"
       ],
-      "durationInFrames": 1908,
+      "durationInFrames": 2165,
       "caption": "Early T2D: lifestyle first-line, then metformin; the appropriate choice fits the patient, not just the biology.",
       "voiceover": {
-        "text": "Let's apply all of this to a real patient. Marcus is forty eight, with early-stage type 2 diabetes, a fasting glucose of eight point two, well above the normal five point five. He's overweight, and he works long hours with little time to cook or exercise. What's the best treatment, and why isn't it just the strongest drug available? Step one, match the treatment to the stage. His diabetes is early, so the Australian guidelines recommend lifestyle intervention as the first-line treatment, ahead of any medication. Step two, the mechanism. Diet, exercise, and losing five to ten percent of body weight directly reduce his insulin resistance, which is the root driver, so this isn't a soft option, it's targeting the cause. Step three, escalate only if needed. If lifestyle alone doesn't bring his HbA1c to target after three to six months, you add metformin, which costs him roughly six to thirty one dollars a month on the PBS. Step four, the human reality. His long hours make lifestyle the hardest part to sustain, so Medicare-funded dietitian and diabetes-educator support is built in to help him stick with it. So the answer is lifestyle first, then metformin if required. The best treatment for Marcus is the effective one he can actually keep up."
-      }
+        "text": "Let's apply this to a patient. Marcus is forty eight, with early type 2 diabetes and a fasting glucose of eight point two. He's overweight, and works long hours with little time to cook or exercise. What treatment fits best, and why isn't it just the strongest drug? Step one, match the treatment to the stage. His diabetes is early, so Australian guidelines recommend lifestyle change as the first line treatment. Step two, the mechanism. Diet, exercise and losing five to ten percent of body weight directly reduce his insulin resistance, so this targets the cause. Step three, escalate only if needed. If lifestyle alone doesn't reach his target within a few months, add metformin, which is cheap on the PBS. Step four, the human reality. His long hours make lifestyle change hard to sustain, so Medicare funded dietitian support helps him stick with it. The best treatment is the effective one he can actually keep up."
+      },
+      "image": "bioM8L15TreatmentEquity"
     },
     {
       "id": "misconception",
       "type": "misconception",
       "heading": "Three traps",
       "body": "Trap 1: assuming the most biologically effective treatment is always the most appropriate. Cost, access and patient circumstances decide appropriateness too.",
-      "secondary": "Trap 2: filing lifestyle change as prevention only. For an already-diagnosed patient it is a genuine first-line treatment. Trap 3: thinking metformin restores the pancreas. It lowers glucose by reducing the liver's output and improving insulin sensitivity, so stopping it lets glucose rise again, because it manages rather than cures.",
+      "secondary": "Trap 2: judging a campaign by awareness alone. Knowing a slogan is not the same as changing behaviour or lowering disease. Trap 3: thinking metformin restores the pancreas. It lowers glucose by reducing the liver's output and improving insulin sensitivity, so it manages rather than cures.",
       "mistakeTag": "Where management marks vanish",
-      "callout": "Effective is not always appropriate, lifestyle treats, metformin manages.",
-      "durationInFrames": 1452,
-      "caption": "Most effective is not most appropriate; lifestyle is treatment; metformin manages, it does not cure.",
+      "callout": "Effective is not always appropriate, awareness is not outcome, metformin manages.",
+      "durationInFrames": 1597,
+      "caption": "Most effective is not most appropriate; awareness is not outcome; metformin manages, it does not cure.",
       "voiceover": {
-        "text": "Three traps that quietly cost marks every year. Trap one, the big one for this topic, assuming the most biologically effective treatment is automatically the most appropriate. It isn't. Bypass surgery may be the most effective option for severe heart disease, but for a frail elderly patient the surgical risk can outweigh the benefit, making medication the appropriate choice. Appropriateness weighs effectiveness against cost, access, side effects, and the individual patient. Trap two, filing lifestyle change purely under prevention. For a patient who already has type 2 diabetes, diet and exercise are a genuine first-line treatment, attacking the disease mechanism directly, so don't demote them to mere prevention. Trap three, thinking metformin somehow repairs the pancreas. It does not. Metformin lowers blood glucose by reducing the liver's glucose output and improving insulin sensitivity, so if you stop taking it, the glucose simply rises again. It manages the disease, it doesn't cure it. Nail those three and management questions become easy marks."
+        "text": "Three traps that quietly cost marks. Trap one, assuming the most biologically effective treatment is automatically the most appropriate. Bypass surgery may be the most effective option for severe heart disease, but for a frail elderly patient the surgical risk can outweigh the benefit. Appropriateness weighs effectiveness against cost, access, side effects and the individual. Trap two, judging a campaign by awareness alone. Everyone knowing the slogan doesn't prove anything unless behaviour changed and disease rates fell. Trap three, thinking metformin repairs the pancreas. It lowers blood glucose by reducing the liver's glucose output and improving insulin sensitivity, so if you stop taking it, glucose rises again. It manages the disease, it doesn't cure it."
       }
     },
     {
@@ -258,10 +316,10 @@
         "(d) A sunscreen campaign reduces a risk factor before disease, so it is primary prevention.",
         "Answer: (a) primary, (b) secondary, (c) tertiary, (d) primary ✓"
       ],
-      "durationInFrames": 1500,
+      "durationInFrames": 1625,
       "caption": "(a) primary, (b) secondary, (c) tertiary, (d) primary.",
       "voiceover": {
-        "text": "Quick check, and this is a guaranteed exam skill, sorting examples into the three prevention levels. Classify each one. Part a, an influenza vaccination. Part b, a mammogram screening a woman with no symptoms. Part c, a cardiac rehabilitation program after a heart attack. Part d, a public campaign promoting sunscreen. Pause and sort them. Right, let's go, asking each time, is this acting before the disease, catching it early, or managing it once it's here. Part a, vaccination stops the disease before it ever develops, so that's primary prevention. Part b, a mammogram in someone with no symptoms is looking to detect disease early, before it shows itself, so that's secondary prevention. Part c, cardiac rehab comes after a heart attack and manages the established disease to prevent further complications, so that's tertiary prevention. And part d, a sunscreen campaign reduces a risk factor, ultraviolet exposure, before any disease, so that's primary again. Primary, secondary, tertiary, primary. Get the timing right and these are free marks."
+        "text": "Quick check, sorting examples into the three prevention levels. Part a, an influenza vaccination. Part b, a mammogram screening a woman with no symptoms. Part c, a cardiac rehabilitation program after a heart attack. Part d, a public campaign promoting sunscreen. Pause and sort them. Right, ask each time whether it acts before the disease, catches it early, or manages it once it's here. Part a, vaccination stops disease before it develops, so it's primary. Part b, a mammogram in someone with no symptoms detects disease early, so it's secondary. Part c, cardiac rehab manages established disease, so it's tertiary. And part d, a sunscreen campaign reduces a risk factor before any disease, so it's primary again."
       }
     },
     {
@@ -270,16 +328,16 @@
       "heading": "Lock it in",
       "points": [
         "Primary prevention acts before disease, secondary detects it early, tertiary manages it once established.",
-        "Evaluate a treatment by weighing effectiveness, cost and accessibility together.",
-        "The PBS subsidises medicines and Medicare covers hospital care, but access is still unequal.",
-        "Lifestyle change is a first-line treatment for early type 2 diabetes, not just prevention.",
+        "Evaluate a campaign along the chain: reach, behaviour change, health outcomes, then attribution and cost.",
+        "SunSmart has been highly effective as part of a wider strategy, with falling melanoma in younger Australians.",
+        "Evaluate a treatment by weighing effectiveness, cost and accessibility; access in Australia is still unequal.",
         "The most effective treatment is not always the most appropriate one for a given patient."
       ],
-      "finalPrompt": "Evaluating a treatment? Weigh how well it works against what it costs and whether the patient can actually get and sustain it.",
-      "durationInFrames": 1332,
-      "caption": "Five takeaways: prevention levels, the three evaluation criteria, subsidies and equity, lifestyle, appropriateness.",
+      "finalPrompt": "Evaluating prevention or treatment? Ask what changed, what the data show, what it costs, and who it reaches.",
+      "durationInFrames": 1557,
+      "caption": "Five takeaways: prevention levels, the campaign chain, SunSmart, treatment criteria, appropriateness.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, the three levels of prevention, primary acts before the disease, secondary detects it early through screening, and tertiary manages it once it's established. Second, you evaluate any treatment by weighing three things together, its effectiveness, its cost, and its accessibility, never just listing features. Third, in Australia the Pharmaceutical Benefits Scheme subsidises medicines and Medicare covers hospital care, but access still isn't equal, because geography, income, and health literacy create health inequity. Fourth, lifestyle change is a genuine first-line treatment for early type 2 diabetes, not merely prevention. And fifth, the most effective treatment on paper is not always the most appropriate one for a particular patient. So whenever you evaluate a treatment, weigh how well it works against what it costs and whether the patient can actually get it and keep it up. See you next lesson."
+        "text": "Let's lock it in. First, primary prevention acts before disease, secondary detects it early, and tertiary manages it once it's established. Second, evaluate a campaign along the chain, reach, behaviour change and health outcomes, then ask whether something else could explain the result, and whether it was worth the cost. Third, SunSmart has been highly effective as part of a wider strategy, with melanoma falling in the younger Australians who grew up with it. Fourth, evaluate a treatment by weighing effectiveness, cost and accessibility, remembering that access in Australia is still unequal. And fifth, the most effective treatment is not always the most appropriate for a particular patient. See you next lesson."
       }
     }
   ]

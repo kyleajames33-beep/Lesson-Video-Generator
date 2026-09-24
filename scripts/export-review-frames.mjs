@@ -20,7 +20,11 @@ import process from 'node:process';
 import {spawnSync} from 'node:child_process';
 import {getCompositionId} from './lesson-utils.mjs';
 
+// Mirror src/lesson/timing.ts. The intro stinger plays before scene 1, so
+// scene start frames are offset by it (without this every review frame landed
+// 270 frames early — often in the previous scene).
 const TRANSITION_FRAMES = 24;
+const INTRO_STINGER_FRAMES = 270;
 
 const REVIEW_SCENE_TYPES = [
   'title', 'hook', 'concept', 'definition', 'formula',
@@ -53,6 +57,11 @@ const renderFrame = (compositionId, frame, outputFile) => {
       '1',
       '--image-format',
       'png',
+      // Cloud/CI sandboxes that can't download Remotion's own headless shell
+      // can point at a preinstalled Chromium.
+      ...(process.env.REMOTION_BROWSER_EXECUTABLE
+        ? ['--browser-executable', process.env.REMOTION_BROWSER_EXECUTABLE]
+        : []),
     ],
     {stdio: 'inherit', shell: true},
   );
@@ -77,7 +86,7 @@ const exportReviewFrames = (jsonPath) => {
 
   // Calculate cumulative start frame for each scene
   const sceneMeta = [];
-  let cumulative = 0;
+  let cumulative = INTRO_STINGER_FRAMES;
   for (const scene of lesson.scenes) {
     sceneMeta.push({scene, start: cumulative});
     cumulative += scene.durationInFrames - TRANSITION_FRAMES;

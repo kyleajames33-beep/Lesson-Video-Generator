@@ -24,6 +24,7 @@ import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
 import {FONT_HAND, TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
+import {AssetImg} from './shared/AssetImg';
 
 type MarginaliaSlideProps = {
 	scene: MarginaliaScene;
@@ -62,8 +63,8 @@ export const MarginaliaSlide = ({scene, lesson, sceneIndex, totalScenes}: Margin
 						borderRadius: 18,
 						border: `1px solid ${TOK.rule}`,
 						background:
-							`linear-gradient(135deg, ${TOK.bgLift} 0%, rgba(${theme.cardTint},0.48) 55%, ${TOK.bg} 100%)`,
-						boxShadow: `0 34px 120px rgba(0,0,0,0.34), inset 0 0 0 1px rgba(232,239,233,0.025)`,
+							`linear-gradient(160deg, ${TOK.bgLift} 0%, ${theme.soft} 100%)`,
+						boxShadow: TOK.cardShadow,
 						overflow: 'hidden',
 					}}
 				>
@@ -83,7 +84,7 @@ export const MarginaliaSlide = ({scene, lesson, sceneIndex, totalScenes}: Margin
 						style={{
 							position: 'absolute',
 							inset: 26,
-							border: `1px dashed rgba(232,239,233,0.08)`,
+							border: '1px dashed rgba(0,0,0,0.07)',
 							borderRadius: 14,
 						}}
 					/>
@@ -145,7 +146,7 @@ export const MarginaliaSlide = ({scene, lesson, sceneIndex, totalScenes}: Margin
 										height: '100%',
 									}}
 								>
-									<img
+									<AssetImg
 										src={ASSETS[scene.image as AssetName]}
 										alt=""
 										style={{
@@ -217,7 +218,7 @@ export const MarginaliaSlide = ({scene, lesson, sceneIndex, totalScenes}: Margin
 							style={{
 								fontSize: 28,
 								fontStyle: 'italic',
-								color: TOK.amber,
+								color: TOK.amberInk,
 								fontWeight: 500,
 								letterSpacing: '-0.01em',
 							}}

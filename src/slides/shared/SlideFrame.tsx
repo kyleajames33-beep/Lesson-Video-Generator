@@ -1,4 +1,4 @@
-// SlideFrame — the dark cinematic 1920×1080 stage shared by gold-standard slides.
+// SlideFrame — the light 1920×1080 stage shared by gold-standard slides.
 // See docs/visual-design-handbook.md for tokens and motion principles.
 
 import type {CSSProperties, ReactNode} from 'react';
@@ -8,7 +8,7 @@ import {SceneProgress} from './SceneProgress';
 
 type SlideFrameProps = {
 	children: ReactNode;
-	/** Override the stage background. Defaults to TOK.bg (#0a0f0d). */
+	/** Override the stage background. Defaults to TOK.bg (#f7f7f5). */
 	background?: string;
 	/** Apply a subtle vignette to focus attention on centre. Default: true. */
 	vignette?: boolean;

@@ -1,0 +1,309 @@
+{
+  "title": "First Nations Knowledge of Adaptations",
+  "subtitle": "How Aboriginal and Torres Strait Islander Peoples use the adaptations of local plants and animals",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Explain how Aboriginal and Torres Strait Islander Peoples use the adaptations of local plants and animals for specific purposes",
+    "conduct practical investigations, individually or in teams, or use secondary sources to examine the adaptations of organisms that increase their ability to survive in their environment, including: structural adaptations, physiological adaptations, behavioural adaptations"
+  ],
+  "moduleLessonCount": 9,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-05",
+    "BI-11WS-07"
+  ],
+  "inquiryQuestion": "How do adaptations increase the organism's ability to survive?",
+  "lessonIntent": "Students can explain how Aboriginal and Torres Strait Islander Peoples use named adaptations of local plants and animals, linking each adaptation's survival function to the property that makes it useful.",
+  "examSkill": "Name the people, organism and adaptation, state the adaptation's survival function, then link the resulting property to a specific purpose.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, First Nations knowledge of plant and animal adaptations. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "First Nations Knowledge of Adaptations"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A fishing hook grown by a plant",
+      "body": "In north Queensland rainforest, a climbing palm's hooked spines became fishing hooks.",
+      "callout": "Why would a feature that helps a plant climb also make a good fishing hook?",
+      "image": "bioY11M3L7LawyerCane",
+      "caption": "Lawyer cane's climbing hooks, used by Kuku Yalanji people to make fishing hooks.",
+      "voiceover": {
+        "text": "Walk into the rainforest of far north Queensland and sooner or later you'll get snagged by lawyer cane, which some people call wait a while. It's a climbing palm, and its long, whip like stems are lined with sharp, backward pointing hooks. For the plant, those hooks are a structural adaptation. They grab onto other trees, so the palm can climb towards the light without building a thick trunk of its own. Kuku Yalanji people have used these same spikes to make fishing hooks. Think about that for a second. The feature that natural selection shaped for climbing is exactly the feature that holds a fish. Today we're looking at how Aboriginal and Torres Strait Islander Peoples use the adaptations of local plants and animals for specific purposes, and how to explain that link clearly in an exam answer."
+      },
+      "durationInFrames": 1895
+    },
+    {
+      "id": "concept-logic",
+      "type": "concept",
+      "heading": "Adaptation, property, purpose",
+      "body": "Every use in this lesson follows the same chain, from why a feature evolved to what it is used for.",
+      "bullets": [
+        {
+          "text": "An adaptation exists because it helped the organism survive or reproduce."
+        },
+        {
+          "text": "That feature gives a useful property: sharp, hooked, sticky, buoyant or predictable."
+        },
+        {
+          "text": "Knowledge built over many generations links the property to a specific purpose."
+        }
+      ],
+      "secondary": "This knowledge belongs to particular peoples and their Country. Name the people and place when you can, and treat it as knowledge shared on their terms.",
+      "callout": "Adaptation, then property, then purpose.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "a",
+            "label": "Selective pressure"
+          },
+          {
+            "id": "b",
+            "label": "Adaptation evolves"
+          },
+          {
+            "id": "c",
+            "label": "Useful property"
+          },
+          {
+            "id": "d",
+            "label": "Specific purpose"
+          }
+        ],
+        "edges": [
+          {
+            "from": "a",
+            "to": "b"
+          },
+          {
+            "from": "b",
+            "to": "c"
+          },
+          {
+            "from": "c",
+            "to": "d"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Selective pressure, adaptation, useful property, specific purpose.",
+      "voiceover": {
+        "text": "So here's the logic that sits under every example today. An adaptation exists because, over many generations, it helped an organism survive or reproduce in its environment. That same feature then gives the material a useful property. It might be sharp, hooked, sticky, buoyant, or, in the case of animal behaviour, predictable. Aboriginal and Torres Strait Islander Peoples have built up knowledge of those properties through careful observation, testing and refinement over many generations, and applied it to a specific purpose. One more thing before we start. This knowledge belongs to particular peoples and their Country. It isn't one single body of Aboriginal knowledge, so in your answers, name the people and the place whenever you can. That's both more respectful and more accurate, and markers notice it."
+      },
+      "durationInFrames": 1745
+    },
+    {
+      "id": "concept-plants",
+      "type": "concept",
+      "heading": "Structural adaptations in plants",
+      "body": "Plant structures that evolved for climbing or seed dispersal give hooks and flotation.",
+      "bullets": [
+        {
+          "text": "Lawyer cane: recurved hooks for climbing, used by Kuku Yalanji people as fishing hooks."
+        },
+        {
+          "text": "Jirrbal people of the Tully River used its spines to cut meat, saw soft timber and extract grubs."
+        },
+        {
+          "text": "Pandanus: light, fibrous fruit segments that float, an adaptation for dispersal by sea."
+        }
+      ],
+      "secondary": "The syllabus names pandanus for flotation. The biology behind it is buoyancy that evolved to carry seeds along coastlines.",
+      "callout": "The hook evolved to climb; the float evolved to disperse.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Plant",
+          "Adaptation",
+          "Survival function",
+          "Use"
+        ],
+        "rows": [
+          [
+            "Lawyer cane",
+            "Recurved hooks on stems",
+            "Climbing towards light",
+            "Fishing hooks, cutting, extracting grubs"
+          ],
+          [
+            "Pandanus",
+            "Buoyant, fibrous fruit segments",
+            "Seed dispersal by sea",
+            "Flotation"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Lawyer cane hooks and buoyant pandanus fruit: structures shaped by selection, then put to use.",
+      "voiceover": {
+        "text": "Let's start with plants. Back to lawyer cane. Its recurved hooks are a structural adaptation for climbing, and Kuku Yalanji people used them as fishing hooks. Further south, Jirrbal people of the Tully River region used the same spines to cut and prepare meat, to saw through soft timber, and to pull moth grubs out of their tunnels in trees. Notice how every one of those uses depends on the hook being sharp and pointing backwards. Now pandanus, a tough coastal plant of northern Australia and the Torres Strait. Its fruit breaks into segments that are light, fibrous and buoyant, and that's an adaptation for dispersal, because the seeds can float along the coast on ocean currents and still germinate. The syllabus names pandanus for flotation, and buoyancy is the property that makes that work. In both cases, the feature evolved for the plant, and people put it to a new purpose."
+      },
+      "durationInFrames": 2072
+    },
+    {
+      "id": "concept-physio-behaviour",
+      "type": "concept",
+      "heading": "Physiological and behavioural adaptations",
+      "body": "Uses can depend on what an organism makes, or on how it predictably behaves.",
+      "bullets": [
+        {
+          "text": "Spinifex makes a sticky resin; Indjalandji-Dhidhanu people used it to fix spearheads and seal water vessels."
+        },
+        {
+          "text": "Kooyang, the short-finned eel, migrates downstream each year to breed in the Coral Sea."
+        },
+        {
+          "text": "Gunditjmara people built channels, weirs and woven traps at Budj Bim to catch and hold eels."
+        }
+      ],
+      "secondary": "The Budj Bim system is at least 6,600 years old and was listed as a World Heritage site in 2019.",
+      "callout": "A chemical product or a predictable behaviour can be just as useful as a structure.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Organism",
+          "Adaptation",
+          "Type",
+          "Use"
+        ],
+        "rows": [
+          [
+            "Spinifex",
+            "Produces resin",
+            "Physiological",
+            "Adhesive for spearheads, sealing vessels"
+          ],
+          [
+            "Kooyang eel",
+            "Seasonal migration",
+            "Behavioural",
+            "Eel traps and aquaculture at Budj Bim"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Spinifex resin and kooyang migration: physiological and behavioural adaptations put to use.",
+      "voiceover": {
+        "text": "Adaptations aren't only structures. Spinifex, the spiky grass that covers huge areas of inland Australia, produces a sticky resin, which is a physiological adaptation because it's a chemical the plant makes. Indjalandji Dhidhanu people of the Camooweal region in northwest Queensland used that resin as a strong adhesive to fix spearheads and seal water vessels, and today they're partnering with the University of Queensland on spinifex based materials. Now a behavioural example. Kooyang, the short finned eel, migrates downstream every year to breed far out in the Coral Sea. Gunditjmara people in western Victoria used that predictable migration. At Budj Bim they built stone channels, weirs and woven traps to catch and hold eels. That system is at least six thousand six hundred years old, and in twenty nineteen it became a World Heritage site. The knowledge of when and where the eels move is what made it work."
+      },
+      "durationInFrames": 2031
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Structural adaptation: a physical feature, like a hooked spine or serrated tooth."
+        },
+        {
+          "text": "Physiological adaptation: an internal or chemical process, like producing resin."
+        },
+        {
+          "text": "Behavioural adaptation: something an organism does, like a seasonal migration."
+        },
+        {
+          "text": "Traditional ecological knowledge: knowledge of Country built and tested over generations and held by particular communities."
+        }
+      ],
+      "callout": "Classify the adaptation before you explain the use.",
+      "caption": "Structural, physiological, behavioural, traditional ecological knowledge.",
+      "voiceover": {
+        "text": "Let's lock down the vocabulary. A structural adaptation is a physical feature of the body, like a hooked spine or a serrated tooth. A physiological adaptation is an internal or chemical process, like a plant producing resin, or an animal controlling its water balance. A behavioural adaptation is something the organism does, like a seasonal migration. And traditional ecological knowledge means knowledge of Country that has been built up, tested and refined over many generations, and is held by particular communities. That last term matters, because it frames this knowledge as what it is, a long running body of observation and testing, rather than a list of clever tricks. On the day, a good habit is to classify the adaptation first, then explain the use. It stops you drifting into a description of a tool without the biology."
+      },
+      "durationInFrames": 1881
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "An explain question",
+      "question": "Explain how Aboriginal and Torres Strait Islander Peoples have used an adaptation of a local animal for a specific purpose. (4 marks)",
+      "coachNote": "Name the people and organism, give the adaptation and its survival function, then link the property to the use.",
+      "steps": [
+        "People and organism: the Meriam people of Mer in the Torres Strait, and peoples of western Cape York, used shark teeth.",
+        "Adaptation: sharks have hard, sharp teeth, often serrated, replaced throughout life. A structural adaptation.",
+        "Survival function: these teeth let sharks grip and cut through the flesh of prey.",
+        "Link: the same sharp, cutting edge made shark teeth ideal blades, set into wood with resin to make knives ✓"
+      ],
+      "caption": "Shark teeth evolved to cut prey; the Meriam people set them in wood as knives.",
+      "voiceover": {
+        "text": "Let's write a four mark answer. The coach note gives the structure. Name the people and the organism, give the adaptation and its survival function, then link the property to the use. Step one, the people and organism. The Meriam people of Mer, in the eastern Torres Strait, and peoples of western Cape York, made knives from shark teeth. Step two, the adaptation. Sharks have hard, sharp teeth, often with serrated edges, and they're replaced throughout the shark's life. That's a structural adaptation. Step three, why it evolved. Those teeth let a shark grip and cut through the flesh of its prey, so they improve its feeding and survival. Step four is the link, and it's the mark most students miss. The same sharp cutting edge made shark teeth ideal blades, so they were fixed into a length of wood with resin to make a knife."
+      },
+      "durationInFrames": 1990
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: describing the tool but never the adaptation. 'They used shark teeth as knives' earns little until you say why the teeth are sharp and what that does for the shark.",
+      "secondary": "Trap 2: writing about 'Aboriginal people' as one group. There are hundreds of distinct peoples, each with knowledge of their own Country. Name the people and place wherever you can.",
+      "mistakeTag": "Where these answers lose marks",
+      "callout": "Always ask: what does this feature do for the organism, and which people use it?",
+      "caption": "Explain the adaptation's function, and name the specific people and place.",
+      "voiceover": {
+        "text": "Two traps. Trap one is describing the tool and never the biology. A sentence like they used shark teeth as knives is true, but on its own it's a history answer, not a biology answer. The marks come from explaining the adaptation, why the teeth are sharp and what that does for the shark, and then linking that property to the use. Trap two is writing about Aboriginal people as though they were one group with one set of practices. There are hundreds of distinct Aboriginal and Torres Strait Islander peoples, each with knowledge tied to their own Country, and the plants and animals differ from place to place. So your discriminator on the day is two questions. What does this feature do for the organism? And which people, on which Country, use it? If you can answer both, your answer is accurate and respectful."
+      },
+      "durationInFrames": 1976
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Stingrays have a sharp barb on the tail, often with backward-facing serrations. Many coastal Aboriginal and Torres Strait Islander groups used these barbs as spear tips. Classify the adaptation and explain why it suits this use.",
+      "pausePrompt": "Pause: what does the barb do for the stingray?",
+      "answerSteps": [
+        "The barb is a physical feature, so it is a structural adaptation.",
+        "Survival function: it defends the stingray against predators, piercing and lodging in an attacker.",
+        "Property: a sharp point with backward serrations penetrates and resists being pulled out.",
+        "Answer: structural; the defensive point and serrations make an effective spear tip that holds in prey ✓"
+      ],
+      "caption": "A defensive, backward-serrated barb makes an effective spear tip.",
+      "voiceover": {
+        "text": "Quick check, with a new organism. Stingrays have a sharp barb on the tail, often with backward facing serrations, and many coastal Aboriginal and Torres Strait Islander groups used these barbs as spear tips. Classify the adaptation, and explain why it suits the use. Pause and ask yourself, what does the barb do for the stingray? Alright, let's work through it. The barb is a physical part of the body, so it's a structural adaptation. Its survival function is defence. When a predator attacks, the stingray drives the barb in, and the backward serrations make it hard to pull out. Now the link. A sharp point that penetrates easily and resists being pulled out is exactly what you want at the tip of a spear, because it holds in the prey. Adaptation, property, purpose, the same chain as every other example."
+      },
+      "durationInFrames": 1922
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Every use follows one chain: adaptation, useful property, specific purpose.",
+        "Structural: lawyer cane hooks as fishing hooks; shark teeth as knives; pandanus for flotation.",
+        "Physiological: spinifex resin as an adhesive, used by Indjalandji-Dhidhanu people.",
+        "Behavioural: Gunditjmara eel traps at Budj Bim use the kooyang's seasonal migration.",
+        "Name the people and Country; this knowledge belongs to particular communities."
+      ],
+      "finalPrompt": "For every example: what does the feature do for the organism, and how does that property serve the purpose?",
+      "caption": "Adaptation, property, purpose, with the people and place named.",
+      "voiceover": {
+        "text": "Let's lock it in. First, every example follows one chain, an adaptation that helped the organism survive, the useful property it gives, and the specific purpose people put it to. Second, structural examples include lawyer cane hooks used as fishing hooks, shark teeth used as knives, and pandanus used for flotation. Third, a physiological example is spinifex resin, used by Indjalandji Dhidhanu people as a strong adhesive. Fourth, a behavioural example is the Gunditjmara eel traps at Budj Bim, which rely on the kooyang's seasonal migration. And fifth, name the people and Country whenever you can, because this knowledge belongs to particular communities. For every example you write, ask two things. What does this feature do for the organism, and how does that property serve the purpose? See you next lesson."
+      },
+      "durationInFrames": 1786
+    }
+  ]
+}

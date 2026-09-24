@@ -1,5 +1,8 @@
 # HSCScience video catalogue — build status
 
+
+> **Crossover build (2026-09-24):** NESA has replaced both syllabuses (Biology 11–12 (2025): Y11 from 2027, Y12 from 2027 T4; Chemistry 11–12 (2025): Y11 from 2028, Y12 from 2028 T4). Biology: 30 partial lessons edited to serve both, 22 new Year 11 lessons added (catalogue now **255**). See `docs/biology-syllabus-crossover.md`, `docs/chemistry-syllabus-crossover.md` and `docs/biology-voiceover-runbook.md`.
+
 Whole-catalogue snapshot after the parallel-agent build push. Companion to
 docs/module-2-build-status.md (M2 specifics) and docs/lesson-build-checklist.md.
 

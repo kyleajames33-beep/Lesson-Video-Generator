@@ -1,14 +1,17 @@
 {
   "title": "Predicting Population Genetic Patterns",
-  "subtitle": "Strengths, limits and a synthesis of the whole module",
+  "subtitle": "Personalised genetic risk: what it can predict, and what it can't",
   "subject": "Biology",
+  "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 5",
   "lesson": "Lesson 19",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
-  "syllabusModule": "Module 5 — Heredity",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
+  "syllabusModule": "Module 5 Heredity (2017) + Heredity and Biotechnology (2025)",
   "syllabusDotPoints": [
-    "evaluate the use of data analysis from large-scale projects to identify trends, patterns and relationships, including their strengths and limitations (ACSBL064, ACSBL073)"
+    "investigate the use of data analysis from a large-scale collaborative project to identify trends, patterns and relationships, for example: population genetics studies used to determine the inheritance of a disease or disorder (ACSBL064, ACSBL073)",
+    "Discuss the risks and benefits of using biotechnologies to provide personalised information about the risk of developing, and management of, a non-infectious disease",
+    "Assess potential limitations and constraints of SNP testing and databases in diagnostic medicine"
   ],
   "moduleLessonCount": 19,
   "nesaOutcomes": [
@@ -16,11 +19,13 @@
     "BIO11/12-4",
     "BIO11/12-5",
     "BIO11/12-6",
-    "BIO11/12-7"
+    "BIO11/12-7",
+    "BI-12-01",
+    "BI-12-04"
   ],
   "inquiryQuestion": "Can population genetic patterns be predicted with any accuracy?",
-  "lessonIntent": "Students can judge what population genetics predicts reliably versus uncertainly, connect the whole Module 5 logic chain, and write conclusions that are precise and cautious.",
-  "examSkill": "Match claim strength to evidence strength: state reliable population-level trends while flagging the uncertainty in any individual prediction.",
+  "lessonIntent": "Students can explain why population genetic data predicts group trends better than individual outcomes, describe how single gene tests and polygenic risk scores give personalised risk information for non-infectious diseases, and discuss the benefits and risks of that information.",
+  "examSkill": "Discuss a personalised genetic test by giving benefits for risk and management, risks for the individual and family, and a conclusion that keeps probability separate from certainty.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -28,75 +33,99 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, predicting population genetic patterns, and a synthesis of the whole module. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, personalised genetic risk, and what population genetics can really predict. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 105,
-      "caption": "Predicting Population Genetic Patterns (Year 12 Biology, Module 5, Lesson 19)"
+      "caption": "Predicting Population Genetic Patterns"
     },
     {
       "id": "hook",
       "type": "hook",
-      "heading": "Who owns your grandparent's DNA?",
-      "body": "A company enrolled 96% of Iceland's adults in a genome database, until the courts ruled it breached the privacy of relatives who never consented.",
-      "callout": "Where does the right to scientific progress end and privacy begin?",
+      "heading": "Your risk, in the mail",
+      "body": "Spit in a tube, post it off, and an app reports your genetic risk for diseases like breast cancer and heart disease.",
+      "callout": "What can a genetic risk result really tell you, and who else does it affect?",
       "image": "bioM5L19GeneticPrivacy",
-      "durationInFrames": 1948,
-      "caption": "The deCODE case showed the same genetic inference that powers databases also creates privacy rights.",
+      "caption": "Personalised genetic risk tests are widely available, and every result also says something about relatives.",
       "voiceover": {
-        "text": "Between 1996 and 2003, a company called deCODE Genetics enrolled ninety-six percent of all adults in Iceland into a single genome database, and then sold access to a pharmaceutical company for two hundred million dollars. They used opt-out consent, meaning you were in unless you actively removed yourself. Then, in 2003, Iceland's Supreme Court ruled the database breached the privacy of the relatives of deceased participants, people who had never agreed to anything, but whose genetic information could be inferred from their ancestors. Think about what that means. Your own DNA can reveal things about a grandparent who's no longer alive. So who actually owns genetic data, and where does the right to scientific progress end and the right to privacy begin? That tension frames our final lesson, where we ask what population genetics can really predict, and pull the whole module together."
-      }
+        "text": "OK, here's something anyone can do today. Order a genetic test online, spit into a tube, post it off, and a few weeks later an app tells you your genetic risk for conditions like breast cancer, heart disease or Alzheimer's disease. Millions of people have done exactly that. But that result isn't only about you. You share about half your DNA with each parent, each brother or sister, and each child, so your result says something about them too, and they never agreed to be tested. So what can personalised genetic information really tell you about a disease that isn't infectious, like cancer or heart disease? What are the benefits, and what are the risks? That's today's question, and it rests on the most important rule in population genetics. Genetic risk is not genetic destiny."
+      },
+      "durationInFrames": 1665
     },
     {
       "id": "concept-trends",
       "type": "concept",
       "heading": "Trends predict better than individuals",
-      "body": "Population genetics predicts trends across groups far more reliably than the exact outcome for any one person.",
+      "body": "Population genetic data predicts patterns across groups far more reliably than the outcome for any one person.",
       "bullets": [
         {
-          "text": "Strongest predictions: risk patterns in groups and families."
+          "text": "Reliable: risk patterns in groups and families, and allele frequency trends."
         },
         {
-          "text": "Also reliable: broad relatedness trends and allele distribution trends."
+          "text": "Uncertain: whether one particular person will develop a disease."
         },
         {
-          "text": "These rest on many samples, stated in probability and frequency language."
+          "text": "Environment, other genes and chance all shape an individual's outcome."
         }
       ],
-      "secondary": "The governing rule: population-level evidence supports population-level conclusions. Match the scope of your claim to the scope of your data.",
-      "callout": "Population-level evidence, population-level conclusions.",
-      "durationInFrames": 1813,
-      "caption": "Population genetics reliably predicts group trends; match claim scope to data scope.",
+      "secondary": "A risk variant raises the probability of a disease. It doesn't guarantee it. Match the scope of your claim to the scope of your data.",
+      "callout": "Higher probability is not a certain outcome.",
+      "caption": "Population data predicts group trends reliably; individual outcomes stay probabilistic.",
       "voiceover": {
-        "text": "Let's start with what population genetics is actually good at. Its real strength is predicting trends across groups, not pinning down the exact outcome for one individual. So the strongest, most reliable predictions are things like risk patterns within groups or families, broad relatedness trends between populations, and trends in how alleles are distributed. All of these are population-level statements, and they rest on large numbers of samples, expressed in the language of probability and frequency. And that points to the single rule that governs this whole topic. Population-level evidence supports population-level conclusions. In other words, match the scope of your claim to the scope of your data. If your evidence is about a population, keep your conclusion about the population, and you'll stay on solid ground. Scale your claim to your evidence."
-      }
+        "text": "Let's start with what population genetics is actually good at. Its real strength is predicting trends across groups. Things like how much more common a disease is in families that carry a certain variant, or how allele frequencies differ between populations. Those predictions rest on data from thousands of people, so they're reliable. What it's much less good at is predicting what will happen to one particular person. That's because an individual's outcome also depends on their environment, their lifestyle, their other genes and plain chance, and none of those are fixed by one variant. So a risk variant raises the probability of a disease, but it doesn't guarantee it. The rule that follows is simple. Population level evidence supports population level conclusions, so match the scope of your claim to the scope of your data."
+      },
+      "durationInFrames": 1677
     },
     {
-      "id": "concept-limits",
+      "id": "concept-personalised",
       "type": "concept",
-      "heading": "Probability is not certainty",
-      "body": "A genotype can raise the risk of a trait without ever guaranteeing it, so individual outcomes stay uncertain.",
+      "heading": "Two kinds of personalised risk test",
+      "body": "Biotechnology gives personalised risk information in two main ways, with very different strengths.",
       "bullets": [
         {
-          "text": "A risk variant increases probability; it does not force an outcome."
+          "text": "Single gene tests: sequence genes like BRCA1, BRCA2 or LDLR for high impact variants."
         },
         {
-          "text": "Environment, gene interactions, mutation and chance all add uncertainty."
+          "text": "Polygenic risk scores: combine hundreds of SNPs, each with a tiny effect, into one estimate."
         },
         {
-          "text": "A population trend never forces one exact result for one person."
+          "text": "Both are used to guide management: screening, medication, lifestyle or surgery."
         }
       ],
-      "secondary": "The phrase to live by: higher probability is not the same as a certain outcome. Genetic risk is not genetic destiny.",
-      "callout": "Higher probability is not a guaranteed outcome.",
-      "durationInFrames": 1827,
-      "caption": "Genotype raises risk probabilistically; environment, interactions and chance keep outcomes uncertain.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "",
+          "Single gene test",
+          "Polygenic risk score"
+        ],
+        "rows": [
+          [
+            "Example",
+            "BRCA1 and breast cancer",
+            "Heart disease, type 2 diabetes"
+          ],
+          [
+            "Effect of result",
+            "Large change in risk",
+            "Small to moderate shift"
+          ],
+          [
+            "Typical management",
+            "MRI screening, surgery, drugs",
+            "Lifestyle, earlier checks"
+          ]
+        ]
+      },
+      "callout": "Big effect from one gene, or small effects from many SNPs.",
+      "caption": "Single gene tests find high impact variants; polygenic scores add up many small SNP effects.",
       "voiceover": {
-        "text": "Now the flip side, the limits. Even with brilliant data, you cannot turn a probability into a certainty for one person. A genotype can raise the risk of a trait without ever guaranteeing it. Why? Because the actual outcome also depends on the environment, on interactions with other genes, on new mutations, and on plain chance. None of those are fixed by the genotype alone. So a population trend, however strong, never forces one exact result for one specific individual. The phrase I want you to carry into every answer is this, higher probability is not the same as a certain outcome. Or, put more memorably, genetic risk is not genetic destiny. Carrying a risk variant tilts the odds, it does not seal your fate. Keep probability and certainty firmly separate in your writing."
-      }
+        "text": "So how does biotechnology actually give someone personalised risk information? There are two main kinds of test. The first is a single gene test, where genes like BRCA1 and BRCA2 for breast and ovarian cancer, or LDLR for inherited high cholesterol, are sequenced to look for variants with a big effect. Carrying one of those can change your risk enormously. The second is a polygenic risk score. That combines hundreds or even thousands of SNPs, each with a tiny effect on its own, into a single estimate of risk for a common disease like heart disease or type 2 diabetes. Those scores usually shift risk only a little. And either way, the point is management. The result can guide earlier or more frequent screening, medication, lifestyle changes, and in some cases preventive surgery."
+      },
+      "durationInFrames": 1641
     },
     {
       "id": "definition",
@@ -104,180 +133,141 @@
       "heading": "The words you need",
       "bullets": [
         {
-          "text": "Risk pattern: a trend in the relative likelihood of a condition in a group."
+          "text": "Non infectious disease: a disease not caused by a pathogen, like cancer or heart disease."
         },
         {
-          "text": "Allele distribution: how allele frequencies are spread across populations."
+          "text": "Personalised risk information: an estimate of one person's disease risk from their own DNA."
         },
         {
-          "text": "Prediction: a scientifically supported expectation based on evidence and assumptions."
+          "text": "Polygenic risk score: a combined risk estimate from many SNPs of small effect."
         },
         {
-          "text": "Uncertainty: the limit on how exact a conclusion can be, even with strong evidence."
+          "text": "Genetic counselling: expert support to understand a genetic test and its implications."
+        },
+        {
+          "text": "Uncertainty: the limit on how exact a prediction can be, even with strong evidence."
         }
       ],
-      "callout": "A prediction rests on assumptions; uncertainty is always part of it.",
-      "durationInFrames": 1638,
-      "caption": "Risk pattern, allele distribution, prediction, uncertainty.",
+      "callout": "A risk estimate is a probability, never a diagnosis.",
+      "caption": "Non infectious disease, personalised risk information, polygenic risk score, genetic counselling, uncertainty.",
       "voiceover": {
-        "text": "Let's pin down the words. A risk pattern is a trend showing the relative likelihood of an inherited condition or variant across a population or group, so it's about groups, not individuals. Allele distribution is how allele frequencies are spread across a population, or between populations. A prediction is a scientifically supported expectation, but notice it's based on both evidence and assumptions, so it's only as good as those assumptions. And uncertainty is the limit on how exact or complete a conclusion can be, even when the evidence is strong. That fourth word is the heart of this lesson. Strong evidence reduces uncertainty, but it never eliminates it, because predictions always rest on assumptions about the future that could change."
-      }
+        "text": "Let's pin down the words. A non infectious disease is one that isn't caused by a pathogen, like cancer, heart disease or type 2 diabetes. Personalised risk information is an estimate of one person's risk of a disease, based on their own DNA. A polygenic risk score is a combined estimate built from many SNPs, each with a small effect. Genetic counselling is expert support that helps someone understand a genetic test before and after they take it, including what it means for their family. And uncertainty is the limit on how exact any prediction can be, even when the evidence is strong. That last word is the heart of this lesson. Strong evidence reduces uncertainty, but it never removes it."
+      },
+      "durationInFrames": 1497
     },
     {
-      "id": "concept-chain",
+      "id": "concept-benefits-risks",
       "type": "concept",
-      "heading": "The whole Module 5 chain",
-      "body": "Module 5 is one connected logic chain, where each stage depends on the one before it.",
+      "heading": "Benefits and risks of knowing",
+      "body": "Personalised genetic information can save lives, but it can also mislead, worry or expose people.",
       "bullets": [
         {
-          "text": "Reproduction gives continuity, passing DNA between generations."
+          "text": "Benefit: early prevention, like cholesterol lowering drugs for familial hypercholesterolaemia, and early testing of relatives."
         },
         {
-          "text": "Cell processes like meiosis and mutation generate variation."
+          "text": "Risk: false reassurance from limited tests, or anxiety from uncertain results."
         },
         {
-          "text": "Gene expression turns DNA into proteins and phenotype, then inheritance patterns predict it."
+          "text": "Risk: privacy, family disclosure and possible discrimination, for example by insurers."
         }
       ],
-      "secondary": "Reproduction, then variation, then expression, then inheritance and population prediction. Every stage builds directly on the previous one.",
-      "callout": "One chain: continuity to variation to expression to prediction.",
-      "durationInFrames": 1881,
-      "caption": "Module 5 logic chain: reproduction → variation → gene expression → inheritance patterns.",
-      "voiceover": {
-        "text": "Now let's zoom out and connect the entire module, because Module 5 is really one logic chain, not a pile of separate topics. It starts with reproduction and the continuity of species, which is how DNA gets passed from one generation to the next. Then come the cell processes, replication, mitosis and especially meiosis, along with mutation, which together create genetic variation. That variation then feeds into gene expression, where DNA is transcribed and translated into proteins, and proteins produce the phenotype, the trait. And finally, inheritance patterns, Punnett squares, pedigrees, and population data, let us predict how those traits are passed on and distributed. The crucial thing is that each stage depends on the one before it. No reproduction, no continuity. No meiosis, no variation. No gene expression, no phenotype to inherit. It's a single connected story."
-      },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "repro",
-            "label": "Reproduction"
-          },
-          {
-            "id": "var",
-            "label": "Variation"
-          },
-          {
-            "id": "expr",
-            "label": "Expression"
-          },
-          {
-            "id": "inherit",
-            "label": "Inheritance"
-          }
+        "type": "table",
+        "headers": [
+          "Benefits",
+          "Risks"
         ],
-        "edges": [
-          {
-            "from": "repro",
-            "to": "var"
-          },
-          {
-            "from": "var",
-            "to": "expr"
-          },
-          {
-            "from": "expr",
-            "to": "inherit"
-          }
+        "rows": [
+          [
+            "Earlier screening and prevention",
+            "False reassurance or false alarm"
+          ],
+          [
+            "Relatives can be tested",
+            "Anxiety and uncertain results"
+          ],
+          [
+            "Treatment matched to risk",
+            "Privacy and discrimination"
+          ]
         ]
       },
-      "revealDelays": {
-        "diagram": 6
-      }
+      "callout": "The value of a result depends on what you can do with it.",
+      "caption": "Benefits: prevention, family testing, matched treatment. Risks: misleading results, anxiety, privacy.",
+      "voiceover": {
+        "text": "Now the discussion the syllabus asks for, benefits and risks. The biggest benefit is targeted prevention. Take familial hypercholesterolaemia, which affects about one in two hundred and fifty people and causes very high cholesterol from birth. A genetic diagnosis means treatment with cholesterol lowering drugs can start early, long before a heart attack. A second benefit is that relatives can be tested and managed early too. But there are real risks. A consumer test that checks only a few variants can give false reassurance, while a variant of uncertain meaning can cause anxiety for nothing. Results can also reveal things about family members who never consented, and there are concerns about privacy and genetic discrimination, for example by insurers. So the value of a result depends on what you can actually do with it, and that's why genetic counselling matters."
+      },
+      "durationInFrames": 1725
     },
     {
       "id": "worked-example",
       "type": "workedExample",
-      "heading": "Strong conclusion or overclaim?",
-      "question": "Classify each as a strong Module 5 conclusion or an overclaim: (a) this variant increases risk in the sampled population; (b) this variant guarantees the phenotype in every future case; (c) these two populations show stronger relatedness based on the available markers.",
-      "coachNote": "Check: is the claim population-level and cautious, or does it promise certainty?",
+      "heading": "Discuss a BRCA test",
+      "question": "A 30 year old woman's mother developed breast cancer at 40. She is considering a BRCA1 and BRCA2 test. Discuss the benefits and risks of this personalised information.",
+      "coachNote": "Discuss means both sides. Cover risk and management for her, effects on family, and the limits of the result.",
       "steps": [
-        "(a) 'Increases risk in the sampled population' is population-level and uses cautious language → strong.",
-        "(b) 'Guarantees the phenotype in every future case' promises certainty for individuals → overclaim.",
-        "(c) 'Stronger relatedness based on the available markers' is qualified by the evidence → strong.",
-        "Decision rule: population-level plus cautious wording is strong; any 'guarantees' or 'every' is an overclaim.",
-        "Answer: (a) strong, (b) overclaim, (c) strong ✓"
+        "Benefit: a harmful BRCA variant raises lifetime breast cancer risk to roughly 70%, so she could start earlier MRI screening or consider preventive options.",
+        "Benefit: her relatives could then be tested for the same family variant.",
+        "Risk: a positive result can cause anxiety, and reveals information about relatives who didn't consent.",
+        "Risk: a negative result doesn't mean zero risk, and some results are variants of uncertain significance.",
+        "Conclusion: valuable when paired with genetic counselling, as long as it's read as risk, not certainty."
       ],
-      "durationInFrames": 1989,
-      "caption": "(a) strong, (b) overclaim, (c) strong — judged by scope and cautious wording.",
+      "caption": "A BRCA test can guide screening and family testing, but results are risks, not certainties.",
       "voiceover": {
-        "text": "Let's practise the skill this whole module is building toward, judging a claim. For each statement, ask, is it a population-level, cautiously worded conclusion, or does it overclaim certainty? Part a, this variant increases risk in the sampled population. That's population-level, and it says increases risk, not guarantees, with the data scope stated, so that's a strong conclusion. Part b, this variant guarantees the phenotype in every future case. The words guarantees and every promise certainty for all individuals, which the evidence can never support, so that's an overclaim. Part c, these two populations show stronger relatedness based on the available markers. It's qualified by based on the available markers, keeping the claim matched to the evidence, so that's strong. The decision rule is clean. Population-level plus cautious wording is strong. Any guarantees, or any every, is an overclaim. Precise and cautious at the same time."
-      }
-    },
-    {
-      "id": "concept-bridge",
-      "type": "concept",
-      "heading": "The bridge to Module 6",
-      "body": "Module 5 is how heredity works and how patterns are inferred; Module 6 is how those patterns can be changed.",
-      "bullets": [
-        {
-          "text": "Module 5: inheritance, variation and predicting genetic patterns."
-        },
-        {
-          "text": "Module 6: how mutation and biotechnology can alter those patterns."
-        },
-        {
-          "text": "The shift is from inferring patterns to modifying and manipulating them."
-        }
-      ],
-      "secondary": "It's a controlled handoff, not a content jump. The same DNA, variation and inheritance ideas carry forward, now under human intervention.",
-      "callout": "From inferring patterns to modifying them.",
-      "durationInFrames": 1678,
-      "caption": "Module 5 infers heredity patterns; Module 6 modifies them via mutation and biotechnology.",
-      "voiceover": {
-        "text": "Finally, let's set up where this goes next. Module 5 has been about two things, how heredity actually works, and how we infer the patterns it produces. Module 6 picks up the same thread and asks a new question, how can mutation, biotechnology and human intervention change those patterns? So the shift is from inferring patterns to actively modifying and manipulating them. And this is a deliberate, controlled handoff, not a jump to unrelated content. Every idea you've built here, DNA, variation, gene expression, inheritance, carries straight forward into Module 6, just now with humans stepping in to alter the genetics. So everything you've learned about heredity becomes the foundation for understanding genetic technologies. Module 6 extends this chain rather than replacing it."
-      }
+        "text": "Let's work through a discuss question. A thirty year old woman's mother developed breast cancer at forty, and she's considering a BRCA one and BRCA two test. Discuss the benefits and risks. Discuss means both sides, so let's build it. The first benefit is management. If she carries a harmful BRCA one variant, her lifetime risk of breast cancer is roughly seventy percent, so she could start MRI screening earlier and consider preventive options. The second benefit is for her family, because relatives could then be tested for that exact variant. Now the risks. A positive result can cause real anxiety, and it reveals information about relatives who never agreed to it. And a negative result doesn't mean zero risk, since she still has the ordinary risk every woman has, and some results come back as variants of uncertain significance. So the conclusion is that the test is valuable when it comes with genetic counselling, as long as it's read as a risk, not a certainty."
+      },
+      "durationInFrames": 2037
     },
     {
       "id": "misconception",
       "type": "misconception",
       "heading": "Two traps",
-      "body": "Trap 1: thinking a disease-associated variant means you will definitely get the disease. Most variants raise risk probabilistically, not absolutely.",
-      "secondary": "Trap 2: turning a strong trend into certainty. BRCA1 mutations carry roughly a 70% lifetime breast cancer risk, not 100%. Environment, lifestyle, other genes and chance all matter. Genetic risk is not genetic destiny, so keep your wording precise and cautious.",
-      "mistakeTag": "Where synthesis marks vanish",
-      "callout": "Risk variant is not a sentence; trends are not certainties.",
-      "durationInFrames": 1692,
-      "caption": "A risk variant raises probability, not certainty; BRCA1 is ~70% lifetime risk, not 100%.",
+      "body": "Trap 1: 'I carry the variant, so I will get the disease.' Most variants raise risk. Even BRCA1 gives roughly a 70% lifetime breast cancer risk, not 100%.",
+      "secondary": "Trap 2: 'My test was clear, so I'm safe.' A test only reads the variants it checks, and most cancers and heart disease happen in people with no high risk variant at all.",
+      "mistakeTag": "Where risk marks vanish",
+      "callout": "Positive isn't destiny; negative isn't immunity.",
+      "caption": "A risk variant raises probability, not certainty; a clear test only covers the variants it read.",
       "voiceover": {
-        "text": "Two traps to close on. Trap one, thinking that carrying a disease-associated gene variant means you will definitely develop that disease. That's wrong for almost every variant. Most disease-associated variants raise your risk probabilistically, they shift the odds, they do not determine the outcome. Trap two is the same error dressed up, turning a strong trend into a certainty. The clearest example is BRCA1. A BRCA1 mutation confers roughly a seventy percent lifetime risk of breast cancer, high, but not one hundred percent. Whether the disease develops still depends on environment, lifestyle, other genes, and chance. So the message of the whole module lands here, genetic risk is not genetic destiny. In your answers, be precise about the trend, and cautious about the individual."
-      }
+        "text": "Two traps that cost marks. Trap one, thinking that carrying a disease variant means you'll definitely get the disease. For almost every variant that's wrong. Even BRCA one, one of the strongest risk variants known, gives roughly a seventy percent lifetime risk of breast cancer, which is high, but it isn't one hundred percent. Environment, other genes and chance still matter. Trap two is the mirror image. Thinking that a clear test means you're safe. A test only reads the variants it checks, and most cases of cancer and heart disease actually happen in people who carry no high risk variant at all. So a positive result isn't destiny, and a negative result isn't immunity. Keep your wording precise about the trend, and cautious about the person."
+      },
+      "durationInFrames": 1569
     },
     {
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "A study reports that a gene variant is linked to higher risk of a disorder across a large population. A student writes: 'Therefore anyone with this variant will get the disorder.' Rewrite the conclusion so it is both precise and cautious.",
-      "pausePrompt": "Pause and reword it yourself.",
+      "question": "A company's report says: 'Your polygenic risk score is in the top 10%. You will develop heart disease.' Rewrite this so it is accurate, and suggest one sensible use of the result.",
+      "pausePrompt": "Pause and rewrite it yourself.",
       "answerSteps": [
-        "The original turns a population risk trend into individual certainty, which is an overclaim.",
-        "Keep the conclusion population-level, matching the scope of the evidence.",
-        "Use probability language: increases the risk, is more likely, in this population.",
-        "Acknowledge that environment, other genes and chance affect the individual outcome.",
-        "Answer: 'This variant is associated with increased risk in this population, but it does not guarantee the disorder in any individual.' ✓"
+        "The original turns a probability into a certainty, which is an overclaim.",
+        "Use probability language: a higher than average estimated risk, compared with the reference population.",
+        "Note that lifestyle, other genes and chance also affect the outcome, and scores are less accurate for some ancestries.",
+        "Use: earlier cholesterol and blood pressure checks and lifestyle changes, discussed with a doctor.",
+        "Answer: 'Your estimated risk is higher than average, but this doesn't mean you will develop heart disease.' ✓"
       ],
-      "durationInFrames": 2150,
-      "caption": "Reword to a population-level, probability-based claim that avoids individual certainty.",
+      "caption": "Rewrite as a higher estimated risk, not a certainty, and use it to guide earlier checks.",
       "voiceover": {
-        "text": "Quick check, and it's the exact skill the exam tests. A study reports that a gene variant is linked to higher risk of a disorder across a large population. A student writes, therefore anyone with this variant will get the disorder. Rewrite that conclusion so it's both precise and cautious. Pause and reword it yourself. Okay. First, spot the error, the student has turned a population-level risk trend into a guarantee about every individual, which is a clear overclaim. To fix it, keep the conclusion at the population level, matching the scope of the evidence, and use probability language, words like increases the risk, or more likely, or in this population. Then acknowledge that the individual outcome also depends on environment, other genes and chance. So a strong version reads, this variant is associated with increased risk in this population, but it does not guarantee the disorder in any individual. Precise about the trend, cautious about the person."
-      }
+        "text": "Quick check. A company's report says, your polygenic risk score is in the top ten percent, you will develop heart disease. Rewrite that so it's accurate, and suggest one sensible use of the result. Pause and rewrite it yourself. OK. First, spot the error. The report turns a probability into a certainty, which is a clear overclaim. To fix it, use probability language, like your estimated risk is higher than average, compared with the population the score was built from. Then add that lifestyle, other genes and chance also affect the outcome, and that these scores are less accurate for people whose ancestry wasn't well represented in the original data. As for a sensible use, it could prompt earlier cholesterol and blood pressure checks and some lifestyle changes, talked through with a doctor. So a good version reads, your estimated risk is higher than average, but this doesn't mean you will develop heart disease."
+      },
+      "durationInFrames": 1893
     },
     {
       "id": "summary",
       "type": "summary",
       "heading": "Lock it in",
       "points": [
-        "Population genetics predicts group trends reliably, individual outcomes only with uncertainty.",
-        "A risk variant raises probability; higher probability is not a certain outcome.",
-        "Module 5 is one chain: reproduction → variation → gene expression → inheritance.",
-        "Strong answers are precise and cautious: match claim strength to evidence strength.",
-        "Module 6 extends this by modifying patterns through mutation and biotechnology."
+        "Population data predicts group trends reliably, individual outcomes only as probabilities.",
+        "Single gene tests find high impact variants; polygenic scores add up many small SNP effects.",
+        "Benefits: targeted screening and prevention, and testing of relatives.",
+        "Risks: false reassurance, anxiety, uncertain results, privacy and discrimination.",
+        "Genetic risk is not genetic destiny: positive isn't certain, negative isn't zero."
       ],
-      "finalPrompt": "Writing a conclusion? Make it population-level and probability-based, and never turn a trend into a guarantee.",
-      "durationInFrames": 1921,
-      "caption": "Five takeaways: trends vs individuals, probability, the chain, wording, the Module 6 bridge.",
+      "finalPrompt": "Discussing a genetic test? Give a benefit for managing risk, a risk for the person or family, then keep probability separate from certainty.",
+      "caption": "Five takeaways: trends versus individuals, two kinds of test, benefits, risks, risk isn't destiny.",
       "voiceover": {
-        "text": "Let's lock it in, and wrap up Module 5. Five things to take away. First, population genetics predicts group trends reliably, but individual outcomes only ever come with uncertainty. Second, a risk variant raises probability, and higher probability is never the same as a certain outcome. Third, the whole module is one logic chain, reproduction, then variation, then gene expression, then inheritance and prediction, each stage built on the last. Fourth, strong answers are precise and cautious at the same time, matching the strength of the claim to the strength of the evidence. And fifth, Module 6 extends all of this, asking how mutation and biotechnology can modify these inherited patterns. So whenever you write a conclusion, keep it population-level and probability-based, and never turn a trend into a guarantee. That's Module 5. Well done, and see you in Module 6."
-      }
+        "text": "Let's lock it in. Five things to take away. First, population genetic data predicts group trends reliably, but individual outcomes only ever as probabilities. Second, single gene tests look for high impact variants like those in BRCA1, while polygenic risk scores add up the small effects of many SNPs. Third, the benefits are targeted screening and prevention, and the chance to test relatives early. Fourth, the risks include false reassurance, anxiety, results of uncertain meaning, and concerns about privacy and discrimination. And fifth, genetic risk is not genetic destiny, so a positive result isn't certain and a negative one isn't zero. When you discuss any genetic test, give a benefit for managing risk, a risk for the person or their family, and keep probability separate from certainty."
+      },
+      "durationInFrames": 1569
     }
   ]
 }

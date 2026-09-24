@@ -1,0 +1,339 @@
+{
+  "title": "Gas Exchange",
+  "subtitle": "How alveoli and capillaries make gas exchange efficient, and how leaves, stems and roots exchange gases",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 6",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Use models to demonstrate how the organisation of alveoli and capillaries in the lungs allows for efficient gas exchange",
+    "Conduct a practical investigation to explain the functions of gas exchange, water and nutrient transport in microscopic leaf, stem and root structures",
+    "investigate the gas exchange structures in animals and plants (ACSBL032, ACSBL056) through the collection of primary and secondary data and information, for example: microscopic structures: alveoli in mammals and leaf structure in plants",
+    "investigate the exchange of gases between the internal and external environments of plants and animals"
+  ],
+  "moduleLessonCount": 6,
+  "nesaOutcomes": [
+    "BI-11-02",
+    "BI-11WS-04",
+    "BI-11WS-06",
+    "BI-11WS-07"
+  ],
+  "inquiryQuestion": "How does the composition of the transport medium change as it moves around an organism?",
+  "lessonIntent": "Students can explain how the surface area, thinness, moisture, blood supply and ventilation of alveoli make gas exchange efficient, apply the diffusion relationship to predict changes in rate, and compare gas exchange in leaves, stems and roots.",
+  "examSkill": "Link each structural feature of an exchange surface to surface area, diffusion distance or concentration gradient, and predict how a change in one of these alters the rate of diffusion.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, gas exchange, in your alveoli and in the leaves of a plant. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Gas Exchange"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A huge surface folded into your chest",
+      "body": "Your lungs hold hundreds of millions of alveoli. Spread flat, their surface is often estimated at around 70 square metres, a large room's floor packed inside your ribs.",
+      "callout": "Why does gas exchange need such an enormous surface?",
+      "image": "bioY11M2L6AlveoliCluster",
+      "durationInFrames": 2103,
+      "caption": "Hundreds of millions of alveoli give a surface of roughly 70 m² inside the chest.",
+      "voiceover": {
+        "text": "Take a breath and think about where that air is going. At the end of your airways are hundreds of millions of tiny air sacs called alveoli, with one well known study counting an average of around four hundred and eighty million in an adult. Each one is smaller than a grain of sand, but if you could unfold them all and lay them flat, their combined surface is often estimated at around seventy square metres. That's the floor of a large room, folded up and packed inside your ribs. And the barrier between the air and your blood is thinner than a single sheet of tissue paper, by a long way. So why does your body go to such extremes just to swap two gases? Today we'll see how alveoli and capillaries are organised for efficient gas exchange, and then look at how plants manage the same job with no lungs at all."
+      }
+    },
+    {
+      "id": "concept-pathway",
+      "type": "concept",
+      "heading": "The path to the alveoli",
+      "body": "Air is ventilated through a branching tree of airways that ends in clusters of alveoli, each wrapped in capillaries.",
+      "bullets": [
+        {
+          "text": "Trachea, bronchi and bronchioles branch again and again, like an upside-down tree."
+        },
+        {
+          "text": "Each bronchiole ends in clusters of alveoli."
+        },
+        {
+          "text": "Every alveolus is wrapped in a dense network of capillaries."
+        }
+      ],
+      "secondary": "A bunch of grapes is a useful model: the stems are bronchioles and the grapes are alveoli. Where it breaks: real alveoli are thin-walled and covered in capillaries, not solid.",
+      "callout": "Branching turns one windpipe into hundreds of millions of tiny sacs.",
+      "durationInFrames": 1994,
+      "caption": "Trachea, bronchi, bronchioles, alveoli: branching multiplies the surface area.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "trachea",
+            "label": "Trachea"
+          },
+          {
+            "id": "bronchi",
+            "label": "Bronchi"
+          },
+          {
+            "id": "bronchioles",
+            "label": "Bronchioles"
+          },
+          {
+            "id": "alveoli",
+            "label": "Alveoli"
+          },
+          {
+            "id": "capillaries",
+            "label": "Capillary network (blood)"
+          }
+        ],
+        "edges": [
+          {
+            "from": "trachea",
+            "to": "bronchi"
+          },
+          {
+            "from": "bronchi",
+            "to": "bronchioles"
+          },
+          {
+            "from": "bronchioles",
+            "to": "alveoli"
+          },
+          {
+            "from": "alveoli",
+            "to": "capillaries"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "So how does air get to those alveoli? It comes in through the trachea, your windpipe, which splits into two bronchi, one for each lung. The bronchi keep branching into smaller and smaller bronchioles, over and over, like an upside down tree, and each of the finest bronchioles ends in a cluster of alveoli. Then every single alveolus is wrapped in a dense mesh of capillaries, so air and blood end up side by side across a huge area. A bunch of grapes is the classic model here, where the stems are the bronchioles and the grapes are the alveoli. It's a good model for the branching and the clustering. But here's where it breaks down. Grapes are solid, while real alveoli are hollow, with walls just one cell thick and blood flowing all over their surface, and that's the part that makes exchange so fast."
+      }
+    },
+    {
+      "id": "concept-alveoli",
+      "type": "concept",
+      "heading": "Why alveoli work so well",
+      "body": "The rate of diffusion depends on surface area, the concentration gradient and the diffusion distance.",
+      "bullets": [
+        {
+          "text": "Huge surface area from hundreds of millions of alveoli."
+        },
+        {
+          "text": "Tiny diffusion distance: alveolus wall and capillary wall are each one cell thick."
+        },
+        {
+          "text": "Moist lining, so oxygen can dissolve before it diffuses."
+        },
+        {
+          "text": "Steep gradient kept by ventilation and constant blood flow."
+        }
+      ],
+      "secondary": "Rate of diffusion ∝ (surface area × concentration difference) ÷ diffusion distance. Every feature of the alveolus improves one of these three terms.",
+      "callout": "More area, steeper gradient, shorter distance: faster diffusion.",
+      "durationInFrames": 1925,
+      "caption": "Rate ∝ surface area × concentration difference ÷ distance; alveoli maximise all three.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Improves",
+          "Effect"
+        ],
+        "rows": [
+          [
+            "Millions of alveoli",
+            "Surface area",
+            "More gas crosses at once"
+          ],
+          [
+            "Walls one cell thick",
+            "Distance",
+            "Shorter path, faster diffusion"
+          ],
+          [
+            "Moist lining",
+            "Dissolving",
+            "Gases dissolve, then diffuse"
+          ],
+          [
+            "Dense capillaries",
+            "Gradient",
+            "Blood carries O₂ away"
+          ],
+          [
+            "Breathing",
+            "Gradient",
+            "Fresh air keeps O₂ high"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "Now, why is this arrangement so efficient? Gas exchange happens by diffusion, and the rate of diffusion depends on three things. It goes up with surface area and with the concentration difference, and it goes down as the diffusion distance gets longer. Every feature of an alveolus improves one of those three. Hundreds of millions of alveoli give an enormous surface area. The alveolus wall and the capillary wall are each just one flattened cell thick, so the distance oxygen travels is less than a micrometre. The lining is moist, because oxygen has to dissolve before it can diffuse across a membrane. And the gradient is kept steep from both sides. Breathing keeps bringing in fresh air rich in oxygen, while blood flowing through the capillaries carries oxygen away as soon as it arrives, so the concentration difference never evens out."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Gas exchange: diffusion of oxygen and carbon dioxide across a respiratory surface."
+        },
+        {
+          "text": "Ventilation: bulk movement of air in and out of the lungs by breathing."
+        },
+        {
+          "text": "Concentration gradient: a difference in concentration between two regions."
+        },
+        {
+          "text": "Stoma: a pore in a leaf's epidermis, opened and closed by two guard cells."
+        }
+      ],
+      "callout": "Ventilation moves air; gas exchange is diffusion.",
+      "durationInFrames": 1871,
+      "caption": "Gas exchange, ventilation, concentration gradient, stoma.",
+      "voiceover": {
+        "text": "Let's lock down four terms. Gas exchange is the diffusion of oxygen and carbon dioxide across a respiratory surface, whether that's an alveolus or the inside of a leaf. Ventilation is different. It's the bulk movement of air in and out of the lungs, driven by breathing muscles, and its job is to keep the gradient steep, not to push gas across the membrane. A concentration gradient is simply a difference in concentration between two regions, and substances diffuse down it, from high to low, without any energy from the cell. And a stoma, plural stomata, is a pore in the epidermis of a leaf, with a pair of guard cells that open and close it. So remember the key split. Breathing and ventilation move air around, but the gases themselves cross the membranes only by diffusion."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Predicting a change in diffusion rate",
+      "question": "In a lung disease, damaged alveolar walls reduce the total surface area to half its normal value, and fluid doubles the diffusion distance. Assuming the concentration difference is unchanged, by what factor does the rate of oxygen diffusion change?",
+      "coachNote": "Rate ∝ (area × concentration difference) ÷ distance. Change one term at a time.",
+      "steps": [
+        "Rate ∝ (surface area × concentration difference) ÷ diffusion distance.",
+        "Halving the surface area halves the rate: × ½.",
+        "Doubling the distance halves the rate again: × ½.",
+        "Combined: ½ × ½ = ¼ of the normal rate.",
+        "Answer: oxygen diffuses at one quarter of the normal rate, so the person is short of breath ✓"
+      ],
+      "durationInFrames": 2062,
+      "caption": "Half the area and double the distance: ½ × ½ = ¼ of the normal rate.",
+      "voiceover": {
+        "text": "Let's put that relationship to work. In a lung disease, damaged alveolar walls cut the total surface area to half its normal value, and fluid in the lungs doubles the diffusion distance. If the concentration difference stays the same, by what factor does the rate of oxygen diffusion change? Start with the relationship, where the rate is proportional to surface area times concentration difference, divided by the diffusion distance. Now change one term at a time. Halving the surface area halves the rate, so multiply by a half. Doubling the distance is on the bottom of the fraction, so that halves the rate again, and it's another factor of a half. Put them together and a half times a half is one quarter. So oxygen now diffuses into the blood at only a quarter of the normal rate, which is why the person feels short of breath, even when they're resting."
+      }
+    },
+    {
+      "id": "concept-plants",
+      "type": "concept",
+      "heading": "Gas exchange in plants",
+      "body": "Plants have no ventilation system. Gases diffuse through pores and air spaces, and no living cell is far from air.",
+      "bullets": [
+        {
+          "text": "Leaves: stomata, mostly on the lower surface, open onto air spaces in the spongy mesophyll."
+        },
+        {
+          "text": "Stems: woody stems exchange gases through lenticels, loosely packed patches in the bark."
+        },
+        {
+          "text": "Roots: oxygen diffuses in from air spaces in the soil, through root hairs."
+        }
+      ],
+      "secondary": "In daylight, leaves take in CO₂ and release O₂ because photosynthesis outpaces respiration. At night, and always in roots, they take in O₂ and release CO₂.",
+      "callout": "Plants rely on diffusion alone, so every living cell stays close to air.",
+      "durationInFrames": 2076,
+      "caption": "Leaves use stomata and air spaces, stems use lenticels, roots use soil air.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Part",
+          "Structure",
+          "Gases in daylight"
+        ],
+        "rows": [
+          [
+            "Leaf",
+            "Stomata, spongy mesophyll air spaces",
+            "CO₂ in, O₂ out"
+          ],
+          [
+            "Woody stem",
+            "Lenticels in bark",
+            "O₂ in, CO₂ out"
+          ],
+          [
+            "Root",
+            "Root hairs, soil air spaces",
+            "O₂ in, CO₂ out"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "So how do plants exchange gases without lungs? They have no ventilation system at all, so everything happens by diffusion, and plants are built so that no living cell is far from air. In a leaf, stomata, mostly on the lower surface in many plants, open into air spaces inside the spongy mesophyll. Carbon dioxide diffuses in through them and reaches the moist walls of the mesophyll cells, and oxygen diffuses out the same way. Under a microscope, you can see those air spaces clearly in a leaf cross section. Woody stems are covered in bark, which gases can't easily cross, so they have lenticels, small patches of loosely packed cells that let air through. And roots take in oxygen from air spaces between soil particles, which is why plants in waterlogged soil can suffocate. Remember that stems and roots don't photosynthesise, so they're always taking in oxygen and releasing carbon dioxide."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: 'Breathing pushes oxygen into the blood.' Ventilation only moves air into the alveoli. Oxygen crosses into the blood by diffusion, down its concentration gradient.",
+      "secondary": "Trap 2: 'We breathe in oxygen and breathe out carbon dioxide.' Exhaled air still contains about 16% oxygen, compared with about 21% in inhaled air. Only a fraction of the oxygen is taken up on each breath.",
+      "mistakeTag": "Where gas exchange marks vanish",
+      "callout": "Ventilation keeps the gradient steep; diffusion does the crossing.",
+      "durationInFrames": 1953,
+      "caption": "Ventilation is not diffusion; exhaled air still contains about 16% oxygen.",
+      "voiceover": {
+        "text": "Two traps that come up a lot. Trap one is saying that breathing pushes oxygen into the blood. It doesn't. Ventilation is bulk flow, and it only carries air as far as the alveoli. From there, oxygen crosses into the blood by diffusion, moving down its concentration gradient without any push at all. What breathing really does is keep that gradient steep, by constantly replacing the air in the alveoli. So if a question asks how oxygen enters the blood, the answer is diffusion. Trap two is the idea that we breathe in oxygen and breathe out carbon dioxide, as if we swap one for the other completely. Inhaled air is about twenty one percent oxygen, and exhaled air still has about sixteen percent. We only absorb a fraction of the oxygen in each breath, which is exactly why rescue breathing can work."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A leaf has most of its stomata on the lower surface and loosely packed spongy mesophyll cells with large air spaces. Explain how these two features help gas exchange for photosynthesis.",
+      "pausePrompt": "Pause and link each feature to diffusion.",
+      "answerSteps": [
+        "Stomata let carbon dioxide diffuse into the leaf and oxygen diffuse out.",
+        "Being on the shaded lower surface reduces water loss while still allowing gas exchange.",
+        "Air spaces give a large internal surface area of moist cell walls.",
+        "They also shorten the diffusion distance from air to each mesophyll cell.",
+        "Answer: stomata give entry points, and air spaces give large area and short distances for CO₂ to reach chloroplasts ✓"
+      ],
+      "durationInFrames": 1980,
+      "caption": "Stomata let gases in and out; air spaces give large area and short diffusion distances.",
+      "voiceover": {
+        "text": "Quick check. A leaf has most of its stomata on the lower surface, and its spongy mesophyll cells are loosely packed, with large air spaces between them. Explain how these two features help gas exchange for photosynthesis. Pause and link each feature to diffusion. OK, first the stomata. They're the entry and exit points, letting carbon dioxide diffuse into the leaf and oxygen diffuse out. Having most of them on the shaded lower surface cuts down on water loss, while still allowing plenty of gas exchange. Now the air spaces. They expose a huge area of moist cell walls to the air inside the leaf, which is the plant's version of the alveolar surface. They also mean each mesophyll cell is only a short distance from air, so carbon dioxide can reach the chloroplasts quickly. It's the same three ideas we used for the lungs."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Airways branch from trachea to bronchioles, ending in alveoli wrapped in capillaries.",
+        "Diffusion rate ∝ surface area × concentration difference ÷ diffusion distance.",
+        "Alveoli: huge area, one cell thick walls, moist lining, steep gradient from ventilation and blood flow.",
+        "Ventilation moves air; gas exchange itself is always diffusion.",
+        "Plants exchange gases by diffusion through stomata, lenticels and root hairs."
+      ],
+      "finalPrompt": "For any exchange surface: which feature improves area, which shortens distance, and what keeps the gradient steep?",
+      "durationInFrames": 1734,
+      "caption": "Five takeaways: the airway tree, the diffusion rule, alveoli, ventilation, plants.",
+      "voiceover": {
+        "text": "Let's lock it in. First, the airways branch from the trachea through the bronchi and bronchioles, ending in clusters of alveoli, each wrapped in capillaries. Second, the rate of diffusion goes up with surface area and concentration difference, and down with diffusion distance. Third, alveoli maximise all three, with a huge surface area, walls one cell thick, a moist lining, and a steep gradient kept up by breathing and blood flow. Fourth, ventilation just moves air in and out, while the gases themselves always cross by diffusion. And fifth, plants have no ventilation, so they exchange gases by diffusion through stomata in leaves, lenticels in woody stems, and root hairs in the soil. That wraps up this series on how cells build systems. See you next lesson."
+      }
+    }
+  ]
+}

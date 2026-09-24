@@ -1,0 +1,507 @@
+{
+  "title": "Patterns of Evolution",
+  "subtitle": "Convergent and divergent evolution, gradualism, punctuated equilibrium and phylogenetic trees",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Use examples to explain convergent and divergent evolution",
+    "Use phylogenetic trees to compare the gradualism model with the punctuated equilibrium model of evolution",
+    "Analyse how evolution causes species diversity",
+    "explain, using examples, how Darwin and Wallace’s Theory of Evolution by Natural Selection accounts for: convergent evolution, divergent evolution",
+    "explain how punctuated equilibrium is different from the gradual process of natural selection"
+  ],
+  "moduleLessonCount": 9,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-04",
+    "BI-11WS-05",
+    "BI-11WS-07"
+  ],
+  "inquiryQuestion": "What is the relationship between evolution and biodiversity?",
+  "lessonIntent": "Students can distinguish convergent from divergent evolution with examples, read relatedness from a phylogenetic tree, and compare gradualism with punctuated equilibrium using tree shapes.",
+  "examSkill": "Identify convergent or divergent evolution from a scenario, use the most recent common ancestor to judge relatedness on a phylogenetic tree, and contrast the tempo of gradualism and punctuated equilibrium.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, patterns of evolution and how to read a phylogenetic tree. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Patterns of Evolution"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two skulls, two very different families",
+      "body": "The skull of the thylacine, or Tasmanian tiger, looks strikingly like a wolf's. Yet the thylacine is a marsupial, more closely related to a kangaroo than to any wolf.",
+      "callout": "How can distant relatives end up looking like twins?",
+      "image": "bioY11M3L3ThylacineWolf",
+      "durationInFrames": 1787,
+      "caption": "Thylacine and wolf skulls look alike, but the thylacine is a marsupial related to kangaroos.",
+      "voiceover": {
+        "text": "Put a thylacine skull next to a wolf skull and ask a room full of people to tell them apart. Plenty will get it wrong. The long snout, the big canine teeth, the overall shape, they're remarkably similar. The thylacine, often called the Tasmanian tiger, was a meat eating predator in Australia, and the last known one died in a Hobart zoo in 1936. But here's the surprise. The thylacine was a marsupial, which makes it more closely related to a kangaroo than to any wolf. Their lineages split well over a hundred million years ago. So how do such distant relatives end up looking almost like twins? Today we'll see how evolution can push lineages together or pull them apart, and how to read the family trees that show it."
+      }
+    },
+    {
+      "id": "concept-convergent",
+      "type": "concept",
+      "heading": "Convergent evolution",
+      "body": "Unrelated species evolve similar features because they face similar selection pressures.",
+      "bullets": [
+        {
+          "text": "Thylacine and wolf: both evolved as large running predators."
+        },
+        {
+          "text": "Sugar glider and flying squirrel: both glide between trees on skin membranes."
+        },
+        {
+          "text": "Bird, bat and insect wings: flight evolved separately in each group."
+        }
+      ],
+      "secondary": "Similar features produced by convergence are analogous structures. They do the same job but did not come from a shared ancestral structure.",
+      "callout": "Similar environment, similar solution, different ancestry.",
+      "durationInFrames": 1773,
+      "caption": "Convergent evolution produces analogous structures in unrelated species.",
+      "voiceover": {
+        "text": "So the thylacine story is convergent evolution. Convergent evolution happens when unrelated species evolve similar features because they face similar selection pressures. The thylacine and the wolf both evolved as large predators chasing prey across open country, so natural selection favoured similar skulls, teeth and body shapes in both lineages, completely independently. Australia has another classic pair. The sugar glider, a marsupial, and the flying squirrel of North America, a placental mammal, both glide between trees on a flap of skin stretched between their limbs. And wings are the big example, because birds, bats and insects each evolved flight separately. Features like these are called analogous structures. They do the same job, but they didn't come from the same structure in a shared ancestor. Similar environment, similar solution, different ancestry."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Marsupial",
+          "Placental",
+          "Shared pressure"
+        ],
+        "rows": [
+          [
+            "Thylacine",
+            "Wolf",
+            "Chasing prey in open country"
+          ],
+          [
+            "Sugar glider",
+            "Flying squirrel",
+            "Moving between trees"
+          ],
+          [
+            "Marsupial mole",
+            "Golden mole",
+            "Burrowing in sand or soil"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-divergent",
+      "type": "concept",
+      "heading": "Divergent evolution",
+      "body": "Related species become more different as populations adapt to different environments.",
+      "bullets": [
+        {
+          "text": "A common ancestor spreads into different habitats with different pressures."
+        },
+        {
+          "text": "Galápagos finches: beak shapes diverged to suit seeds, insects or cactus."
+        },
+        {
+          "text": "Rapid divergence into many niches is called adaptive radiation."
+        }
+      ],
+      "secondary": "Divergence produces homologous structures: the same underlying structure, inherited from a common ancestor, modified for different jobs. Divergence is how evolution generates species diversity.",
+      "callout": "One ancestor, many environments, many species.",
+      "durationInFrames": 1814,
+      "caption": "Divergent evolution produces homologous structures and increases species diversity.",
+      "voiceover": {
+        "text": "Now flip it around. Divergent evolution is when related species become more and more different, because their populations adapt to different environments. It starts with a common ancestor whose populations spread into different habitats, each with its own selection pressures. Darwin's finches on the Galápagos are the textbook case. An ancestral finch arrived from South America, and on different islands and food sources, beaks diverged, deep and strong for cracking seeds, thin and pointed for picking insects, long for probing cactus flowers. When one lineage diverges quickly into lots of niches like that, we call it adaptive radiation, and the marsupials of Australia are another great example. Divergence produces homologous structures, the same underlying structure inherited from a common ancestor but modified for different jobs. And this is how evolution generates species diversity."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "a",
+            "label": "Ancestral finch"
+          },
+          {
+            "id": "g",
+            "label": "Deep beak: seeds"
+          },
+          {
+            "id": "w",
+            "label": "Thin beak: insects"
+          },
+          {
+            "id": "c",
+            "label": "Long beak: cactus"
+          }
+        ],
+        "edges": [
+          {
+            "from": "a",
+            "to": "g"
+          },
+          {
+            "from": "a",
+            "to": "w"
+          },
+          {
+            "from": "a",
+            "to": "c"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Convergent evolution: unrelated species evolve similar traits under similar pressures."
+        },
+        {
+          "text": "Divergent evolution: related species become different under different pressures."
+        },
+        {
+          "text": "Analogous structures: similar function, different evolutionary origin."
+        },
+        {
+          "text": "Homologous structures: same evolutionary origin, possibly different functions."
+        }
+      ],
+      "callout": "Analogous goes with convergent. Homologous goes with divergent.",
+      "durationInFrames": 1773,
+      "caption": "Convergent, divergent, analogous, homologous.",
+      "voiceover": {
+        "text": "OK, let's pin the four words, because they come as two matched pairs. Convergent evolution is when unrelated species evolve similar traits because they face similar pressures. Divergent evolution is when related species become different because they face different pressures. Analogous structures have a similar function but a different evolutionary origin, like a bird wing and an insect wing. Homologous structures share the same evolutionary origin, even if they now have very different functions, like the bones in your arm and the bones in a whale's flipper. So here's a quick way to keep them straight. Analogous goes with convergent, and homologous goes with divergent. If a question shows you similar looking features, your first job is to decide whether the similarity comes from shared ancestry or from shared pressures."
+      }
+    },
+    {
+      "id": "concept-trees",
+      "type": "concept",
+      "heading": "Reading a phylogenetic tree",
+      "body": "A phylogenetic tree is a hypothesis about evolutionary relationships.",
+      "bullets": [
+        {
+          "text": "The root is the common ancestor of every species on the tree."
+        },
+        {
+          "text": "Each branch point, or node, is a common ancestor where lineages split."
+        },
+        {
+          "text": "Species sharing a more recent common ancestor are more closely related."
+        },
+        {
+          "text": "Rotating branches around a node does not change any relationship."
+        }
+      ],
+      "secondary": "Read relationships by tracing back to where lineages meet, not by how close the tips sit on the page.",
+      "callout": "Trace back to the most recent common ancestor.",
+      "durationInFrames": 1910,
+      "caption": "Relatedness depends on the most recent common ancestor, not on tip position.",
+      "voiceover": {
+        "text": "So how do you read a phylogenetic tree? Think of it as a hypothesis about who's related to whom. At the base is the root, which represents the common ancestor of every species on the tree. Moving up, each branch point is called a node, and every node represents a common ancestor, the point where one lineage split into two. The species at the tips are the ones we're comparing. Here's the rule that answers almost every question. Two species are more closely related if they share a more recent common ancestor, so you trace back from each tip until their lineages meet. And one trap to watch for, you can rotate the branches around any node like a mobile, and the relationships don't change at all. So never judge relatedness by how close two tips sit on the page."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "root",
+            "label": "Root: common ancestor of all"
+          },
+          {
+            "id": "n1",
+            "label": "Node: ancestor of A and B"
+          },
+          {
+            "id": "n2",
+            "label": "Node: ancestor of C and D"
+          },
+          {
+            "id": "a",
+            "label": "Species A"
+          },
+          {
+            "id": "b",
+            "label": "Species B"
+          },
+          {
+            "id": "c",
+            "label": "Species C"
+          },
+          {
+            "id": "d",
+            "label": "Species D"
+          }
+        ],
+        "edges": [
+          {
+            "from": "root",
+            "to": "n1"
+          },
+          {
+            "from": "root",
+            "to": "n2"
+          },
+          {
+            "from": "n1",
+            "to": "a"
+          },
+          {
+            "from": "n1",
+            "to": "b"
+          },
+          {
+            "from": "n2",
+            "to": "c"
+          },
+          {
+            "from": "n2",
+            "to": "d"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-tempo",
+      "type": "concept",
+      "heading": "Gradualism versus punctuated equilibrium",
+      "body": "The two models disagree about the pace of evolutionary change.",
+      "bullets": [
+        {
+          "text": "Gradualism: small changes accumulate slowly and steadily over long periods."
+        },
+        {
+          "text": "Punctuated equilibrium: long periods of little change, broken by rapid bursts, often at speciation."
+        },
+        {
+          "text": "On a tree, gradualism shows slanted, steadily diverging branches."
+        },
+        {
+          "text": "Punctuated equilibrium shows branches that split sharply, then run straight."
+        }
+      ],
+      "secondary": "Punctuated equilibrium was proposed by Eldredge and Gould in 1972 to explain fossils that stay unchanged for millions of years, then shift quickly. Rapid means thousands of years, not overnight.",
+      "callout": "Same mechanism, different tempo.",
+      "durationInFrames": 1882,
+      "caption": "Gradualism is slow and steady; punctuated equilibrium is stasis broken by rapid change.",
+      "voiceover": {
+        "text": "Now, how fast does evolution happen? There are two models. Gradualism, the view Darwin favoured, says small changes accumulate slowly and steadily over long periods of time. Punctuated equilibrium, proposed by Eldredge and Gould in 1972, says species often stay almost unchanged for long periods, called stasis, and that stasis is broken by short bursts of rapid change, usually linked to speciation. The two models show up clearly on trees drawn against time. A gradualism tree has slanted branches that drift apart steadily. A punctuated tree has branches that split sharply sideways, then run straight up with no change. Both still rely on natural selection, so it's the same mechanism with a different tempo. Oh, and the horse lineage, once drawn as a single gradual line, turns out to be a branching bush, with bursts and long pauses."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Time",
+        "yLabel": "Amount of change in a trait",
+        "series": [
+          {
+            "label": "Gradualism",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0.1
+              ],
+              [
+                0.25,
+                0.3
+              ],
+              [
+                0.5,
+                0.5
+              ],
+              [
+                0.75,
+                0.7
+              ],
+              [
+                1,
+                0.9
+              ]
+            ]
+          },
+          {
+            "label": "Punctuated equilibrium",
+            "color": "chem1",
+            "points": [
+              [
+                0,
+                0.1
+              ],
+              [
+                0.3,
+                0.11
+              ],
+              [
+                0.35,
+                0.48
+              ],
+              [
+                0.68,
+                0.5
+              ],
+              [
+                0.73,
+                0.88
+              ],
+              [
+                1,
+                0.9
+              ]
+            ]
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Who is the thylacine's closer relative?",
+      "question": "Use the tree to decide whether the thylacine is more closely related to the kangaroo or to the wolf. Then explain why the thylacine and wolf look so similar.",
+      "coachNote": "Find the most recent common ancestor for each pair, then name the type of evolution.",
+      "steps": [
+        "Thylacine and kangaroo meet at the marsupial ancestor node.",
+        "Thylacine and wolf only meet at the root, a much older ancestor.",
+        "A more recent common ancestor means a closer relationship, so the kangaroo is closer.",
+        "Their similar skulls came from similar predator pressures in unrelated lineages.",
+        "Answer: closer to the kangaroo; the likeness to the wolf is convergent evolution ✓"
+      ],
+      "durationInFrames": 1869,
+      "caption": "Thylacine and kangaroo share a more recent ancestor; the wolf likeness is convergence.",
+      "voiceover": {
+        "text": "Let's use a tree to settle the hook. On screen, the root splits into a marsupial ancestor and a placental ancestor. The marsupial branch leads to the thylacine and the kangaroo, and the placental branch leads to the wolf and the mouse. The question is, is the thylacine more closely related to the kangaroo or to the wolf? Trace back. The thylacine and the kangaroo meet at the marsupial ancestor node. The thylacine and the wolf only meet way back at the root, a much older ancestor. Since a more recent common ancestor means a closer relationship, the thylacine is closer to the kangaroo. So why does it look like a wolf? Because both lineages faced similar pressures as large predators, and selection favoured similar skulls independently. That's convergent evolution, and the tree is what proves it."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "root",
+            "label": "Mammal ancestor"
+          },
+          {
+            "id": "m",
+            "label": "Marsupial ancestor"
+          },
+          {
+            "id": "p",
+            "label": "Placental ancestor"
+          },
+          {
+            "id": "t",
+            "label": "Thylacine"
+          },
+          {
+            "id": "k",
+            "label": "Kangaroo"
+          },
+          {
+            "id": "w",
+            "label": "Wolf"
+          },
+          {
+            "id": "mo",
+            "label": "Mouse"
+          }
+        ],
+        "edges": [
+          {
+            "from": "root",
+            "to": "m"
+          },
+          {
+            "from": "root",
+            "to": "p"
+          },
+          {
+            "from": "m",
+            "to": "t"
+          },
+          {
+            "from": "m",
+            "to": "k"
+          },
+          {
+            "from": "p",
+            "to": "w"
+          },
+          {
+            "from": "p",
+            "to": "mo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: reading a tree as a ladder, as in 'humans evolved from chimpanzees'. Living species at the tips are cousins. They share a common ancestor; neither is the ancestor of the other.",
+      "secondary": "Trap 2: thinking punctuated equilibrium means change happens overnight. 'Rapid' is geological: thousands to tens of thousands of years, fast only compared with millions of years of stasis.",
+      "mistakeTag": "Where tree marks vanish",
+      "callout": "Tips are cousins, not ancestors. Rapid is geological.",
+      "durationInFrames": 1828,
+      "caption": "Living species share ancestors rather than descending from each other; rapid means geologically rapid.",
+      "voiceover": {
+        "text": "Two traps that show up constantly. Trap one is reading a tree like a ladder. You'll hear people say humans evolved from chimpanzees, but look at where the tips sit. Every living species at a tip has been evolving for exactly the same amount of time. Humans and chimpanzees are cousins, sharing a common ancestor that was neither a human nor a chimpanzee. Trap two is about punctuated equilibrium. Rapid does not mean overnight, and it doesn't mean one generation. It's rapid in geological terms, which can still be thousands or tens of thousands of years. It only looks sudden because it's squeezed between millions of years of stasis, and in the rock layers that can look like an instant. So in your answers, say geologically rapid, and describe living species as sharing ancestors."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A bat's wing and a bird's wing both allow flight, and both contain the same set of forelimb bones as a human arm. As wings, are they homologous or analogous? As forelimbs?",
+      "pausePrompt": "Pause and decide both parts.",
+      "answerSteps": [
+        "Flight evolved separately in bats and birds; their common ancestor had no wings.",
+        "So as wings, they are analogous, a result of convergent evolution.",
+        "The forelimb bones were inherited from a shared four-limbed ancestor.",
+        "Answer: analogous as wings, homologous as forelimbs ✓"
+      ],
+      "durationInFrames": 1760,
+      "caption": "As wings, bat and bird wings are analogous; as forelimbs, they are homologous.",
+      "voiceover": {
+        "text": "Quick check, and this one catches a lot of people. A bat's wing and a bird's wing both let the animal fly, and both contain the same set of forelimb bones you have in your arm. As wings, are they homologous or analogous? And as forelimbs? Pause and decide both parts. OK, let's reason it out. The common ancestor of bats and birds didn't have wings, so flight evolved separately in each lineage. That means, as wings, they're analogous, the product of convergent evolution. But the bones inside them were inherited from a shared ancestor with four limbs, the same ancestor that gave you your arm bones. So as forelimbs, they're homologous. The answer depends on the level you're comparing at, and markers love a response that spots both."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Convergent evolution: unrelated species, similar pressures, analogous structures.",
+        "Divergent evolution: related species, different pressures, homologous structures, more species diversity.",
+        "On a tree, the more recent the common ancestor, the closer the relationship.",
+        "Gradualism is slow, steady change; punctuated equilibrium is stasis broken by geologically rapid bursts.",
+        "Tips are cousins, not ancestors, and rotating branches changes nothing."
+      ],
+      "finalPrompt": "Similar features? Check the tree: shared recent ancestor means homology, separate lineages mean convergence.",
+      "durationInFrames": 1746,
+      "caption": "Five takeaways: convergent, divergent, reading trees, tempo, tree traps.",
+      "voiceover": {
+        "text": "Let's lock it in. First, convergent evolution is unrelated species evolving similar features under similar pressures, giving analogous structures, like the thylacine and the wolf. Second, divergent evolution is related species becoming different under different pressures, giving homologous structures, and it's how species diversity builds up, like the Galápagos finches. Third, on a phylogenetic tree, trace back to where lineages meet, and the more recent the common ancestor, the closer the relationship. Fourth, gradualism means slow and steady change, while punctuated equilibrium means long stasis broken by geologically rapid bursts, and you can see the difference in the shape of the branches. And fifth, the tips are cousins, not ancestors, and rotating branches changes nothing. Next time, we'll look at the evidence that backs all of this up."
+      }
+    }
+  ]
+}

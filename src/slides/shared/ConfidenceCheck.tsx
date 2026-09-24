@@ -55,7 +55,7 @@ export const ConfidenceCheck = ({text, appearAtFrame}: ConfidenceCheckProps) => 
 			<div
 				style={{
 					padding: '12px 18px 14px',
-					background: 'rgba(15,22,20,0.78)',
+					background: TOK.card,
 					border: `1px solid ${theme.accent2}75`,
 					borderLeft: `4px solid ${theme.accent2}`,
 					borderRadius: 6,

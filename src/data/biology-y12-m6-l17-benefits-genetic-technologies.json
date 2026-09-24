@@ -1,25 +1,29 @@
 {
-  "title": "Benefits of Genetic Technologies — Agricultural, Medical and Industrial Uses",
-  "subtitle": "Benefit for whom, in which domain, compared with what",
+  "title": "Benefits of Genetic Technologies: Agriculture, Medicine and Conservation",
+  "subtitle": "Benefit for whom, in which domain, compared with what, with Australian examples",
   "subject": "Biology",
+  "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 6",
   "lesson": "Lesson 17",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
-  "syllabusModule": "Module 6 — Genetic Change",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
+  "syllabusModule": "Module 6 Genetic Change (2017) + Biotechnology (2025)",
   "syllabusDotPoints": [
-    "evaluate the benefits of using genetic technologies in agricultural, medical and industrial applications (ACSBL086)"
+    "evaluate the benefits of using genetic technologies in agricultural, medical and industrial applications (ACSBL086)",
+    "Use examples to explain how biotechnology is currently used in Australian research, agriculture, biodiversity conservation and health",
+    "Use an example to account for the use of bioinformatics to inform decisions about the conservation of an Australian species"
   ],
   "moduleLessonCount": 19,
   "nesaOutcomes": [
     "BIO12-13",
+    "BI-12-04",
     "BIO11/12-4",
     "BIO11/12-5",
     "BIO11/12-7"
   ],
   "inquiryQuestion": "Does artificial manipulation of DNA have the potential to change populations forever?",
-  "lessonIntent": "Students can evaluate benefits of genetic technologies by domain, specifying for whom and against what alternative, while still naming biodiversity trade-offs.",
-  "examSkill": "Evaluate a genetic technology's benefit by naming the domain, the beneficiary, the comparison point and any biodiversity trade-off.",
+  "lessonIntent": "Students can evaluate benefits of genetic technologies in agriculture, medicine and conservation using Australian examples (Bt cotton, recombinant insulin, Tasmanian devil genetic management), specifying beneficiary, comparison and trade-offs.",
+  "examSkill": "Evaluate a genetic technology's benefit by naming the domain, the beneficiary, the comparison point and any biodiversity trade-off, using an Australian example.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -27,26 +31,26 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, the benefits of genetic technologies. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, the benefits of genetic technologies. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 105,
-      "caption": "Benefits of Genetic Technologies — Agricultural, Medical and Industrial Uses (Year 12 Biology, Module 6, Lesson 17)"
+      "caption": "Benefits of Genetic Technologies: Agriculture, Medicine and Conservation"
     },
     {
       "id": "hook",
       "type": "hook",
       "heading": "What separates a benefit from a line we should not cross?",
-      "body": "Insulin and drought-resistant crops are widely supported. Editing human embryos led to a prison sentence.",
+      "body": "Insulin, pest-resistant cotton and genetic rescue of endangered species are widely supported. Editing human embryos led to a prison sentence.",
       "callout": "The same toolkit produces celebrated cures and condemned experiments.",
       "image": "bioM6L17BenefitsDomains",
-      "durationInFrames": 900,
+      "durationInFrames": 1389,
       "caption": "The He Jiankui case frames how benefit depends on domain, beneficiary and comparison.",
       "voiceover": {
-        "text": "In November 2018, He Jiankui announced that he had used CRISPR to edit the CCR5 gene in human embryos, aiming to make the resulting children resistant to HIV. Two girls, called Lulu and Nana, were born with heritable edits. He was sentenced to three years in prison in China in 2019, and the World Health Organisation convened a commission in response. Yet insulin for diabetics and drought-resistant crops also come from genetic technologies, and most people strongly support those. So what principle separates a celebrated benefit from a line we shouldn't cross? Today we evaluate benefits properly, by domain."
+        "text": "In November 2018, He Jiankui announced that he had used CRISPR to edit the CCR5 gene in human embryos, aiming to make the resulting children resistant to HIV. Two girls, called Lulu and Nana, were born with heritable edits. He was sentenced to three years in prison in China in 2019, and the World Health Organisation set up an expert committee in response. Yet insulin for diabetics, pest resistant crops and genetic rescue of endangered animals also come from genetic technologies, and most people strongly support those. So what principle separates a celebrated benefit from a line we shouldn't cross? Today we evaluate benefits properly, by domain."
       }
     },
     {
@@ -55,24 +59,46 @@
       "heading": "Benefit is always specific",
       "body": "Calling a technology beneficial is not enough. You have to say in which domain, for whom, and against what.",
       "bullets": [
-        {"text": "Domain: is the benefit agricultural, medical or industrial?"},
-        {"text": "For whom: which group actually gains from it?"},
-        {"text": "Compared with what: what alternative is it being judged against?"}
+        {
+          "text": "Domain: is the benefit agricultural, medical or for conservation?"
+        },
+        {
+          "text": "For whom: which group actually gains from it?"
+        },
+        {
+          "text": "Compared with what: what alternative is it being judged against?"
+        }
       ],
       "secondary": "Generic claims such as it helps people are too vague to earn HSC marks. A real evaluation pins down domain, beneficiary and comparison.",
       "callout": "Domain, beneficiary, comparison: name all three.",
-      "durationInFrames": 930,
+      "durationInFrames": 1376,
       "caption": "Benefit must specify the domain, the beneficiary and the comparison point.",
       "voiceover": {
-        "text": "Let's start with the move that lifts every benefit answer. Calling a technology beneficial, on its own, earns almost nothing, because it's too vague. A real evaluation specifies three things. First, the domain, is this an agricultural benefit, a medical one, or an industrial one. Second, for whom, which group actually gains, the farmer, the patient, the manufacturer, the public. And third, compared with what, what alternative is the technology being judged against, because a benefit only means anything relative to some baseline. Generic claims like it helps people simply won't score. So pin down all three, domain, beneficiary, and comparison point, every time."
+        "text": "Let's start with the move that lifts every benefit answer. Calling a technology beneficial, on its own, earns almost nothing, because it's too vague. A real evaluation specifies three things. First, the domain, is this an agricultural benefit, a medical one, or a benefit for conservation. Second, for whom, which group actually gains, the farmer, the patient, a threatened species, the public. And third, compared with what, what alternative is the technology being judged against, because a benefit only means anything relative to some baseline. Generic claims like it helps people simply won't score. So pin down all three, domain, beneficiary, and comparison point, every time."
       },
       "diagram": {
         "type": "table",
-        "headers": ["Domain", "Typical benefit", "Watch for"],
+        "headers": [
+          "Domain",
+          "Typical benefit",
+          "Watch for"
+        ],
         "rows": [
-          ["Agricultural", "Yield, resistance, nutrition", "Strong biodiversity trade-offs"],
-          ["Medical", "Controlled protein production", "Access, cost, consent"],
-          ["Industrial", "Enzymes, biomanufacturing", "Scale and process control"]
+          [
+            "Agricultural",
+            "Yield, pest resistance, less spraying",
+            "Biodiversity trade-offs"
+          ],
+          [
+            "Medical",
+            "Safe, reliable protein production",
+            "Access, cost, consent"
+          ],
+          [
+            "Conservation",
+            "Genetic diversity of threatened species",
+            "Small populations, limited data"
+          ]
         ]
       }
     },
@@ -81,35 +107,119 @@
       "type": "definition",
       "heading": "The words you need",
       "bullets": [
-        {"text": "Agricultural application: using genetic technologies to influence crop or livestock performance."},
-        {"text": "Medical application: using genetic technologies to produce medicines or support treatment."},
-        {"text": "Industrial application: using biological systems or products in large-scale manufacturing."},
-        {"text": "Biological manufacturing: using cells or organisms to produce useful compounds at scale."},
-        {"text": "Biodiversity trade-off: a gain in one area linked to a possible cost in diversity or resilience."}
+        {
+          "text": "Agricultural application: using genetic technologies to influence crop or livestock performance."
+        },
+        {
+          "text": "Medical application: using genetic technologies to produce medicines or support treatment."
+        },
+        {
+          "text": "Conservation application: using genetic technologies to protect threatened species and their diversity."
+        },
+        {
+          "text": "Bioinformatics: using computers to store and analyse large sets of DNA sequence data."
+        },
+        {
+          "text": "Biodiversity trade-off: a gain in one area linked to a possible cost in diversity or resilience."
+        }
       ],
       "callout": "Three domains, one recurring trade-off: biodiversity.",
-      "durationInFrames": 930,
-      "caption": "Agricultural, medical and industrial applications, biological manufacturing, biodiversity trade-off.",
+      "durationInFrames": 1500,
+      "caption": "Agricultural, medical and conservation applications, bioinformatics, biodiversity trade-off.",
       "voiceover": {
-        "text": "Five terms to frame the domains. An agricultural application uses genetic technologies to influence crop or livestock performance and management, things like yield and resistance. A medical application uses them to produce medicines, support treatment or improve diagnosis. An industrial application uses biological systems or products in manufacturing and large-scale production. Biological manufacturing, more specifically, is using cells or organisms to produce useful compounds at scale, the engine behind both medical and industrial uses. And a biodiversity trade-off is a situation where a gain in one area is linked to a possible cost in diversity or resilience. So, three domains, and one recurring trade-off you keep coming back to, biodiversity."
+        "text": "Five terms to frame the domains. An agricultural application uses genetic technologies to influence crop or livestock performance, things like yield and pest resistance. A medical application uses them to produce medicines, support treatment or improve diagnosis. A conservation application uses them to protect threatened species, especially their genetic diversity. Bioinformatics is the use of computers to store and analyse huge amounts of DNA sequence data, and it's the tool that makes a lot of modern conservation possible. And a biodiversity trade off is a situation where a gain in one area is linked to a possible cost in diversity or resilience. So, three domains, and one recurring trade off you keep coming back to, biodiversity."
       }
     },
     {
       "id": "concept-three-domains",
       "type": "concept",
-      "heading": "Benefits across the three domains",
-      "body": "Each domain delivers benefits through the same underlying logic, controlled biological production.",
+      "heading": "Australian benefits in agriculture and medicine",
+      "body": "Genetic technologies already deliver measurable benefits in Australian farms and hospitals.",
       "bullets": [
-        {"text": "Agricultural: improved yield, resistance traits and nutritional modification."},
-        {"text": "Medical: controlled production of useful proteins, like insulin, and targeted treatment."},
-        {"text": "Industrial: enzyme production and biological manufacturing at scale."}
+        {
+          "text": "Agricultural: Bt cotton carries a bacterial gene that kills caterpillar pests, sharply cutting insecticide spraying."
+        },
+        {
+          "text": "Medical: recombinant bacteria or yeast make human insulin, a reliable supply for people with diabetes."
+        },
+        {
+          "text": "The older framing also lists industrial uses, like enzymes made by engineered microbes."
+        }
       ],
-      "secondary": "Medicine and industry follow the same idea: once a biological system can be directed to make a useful product, it becomes part of a manufacturing process, not just a research tool.",
+      "secondary": "The shared logic is controlled biological production: once a living system can be directed to make a useful product reliably, it becomes part of farming or manufacturing, not just a research tool.",
       "callout": "Direct a biological system to make a product, and you have an industry.",
-      "durationInFrames": 900,
-      "caption": "Agricultural, medical and industrial benefits all flow from controlled biological production.",
+      "durationInFrames": 1786,
+      "caption": "Bt cotton and recombinant insulin show agricultural and medical benefits of genetic technology.",
       "voiceover": {
-        "text": "Now the benefits in each domain, and notice the shared logic running through them. Agricultural benefits include improved yield, resistance traits like pest or disease resistance, and nutritional modification, such as boosting a crop's vitamin content. Medical benefits centre on the controlled production of useful proteins, insulin being the headline example we met last lesson, plus more targeted treatment support. Industrial benefits include enzyme production and biological manufacturing at scale. And here's the unifying idea, medicine and industry follow the same logic, once you can direct a biological system to make a useful product reliably, it stops being just a research tool and becomes part of a real manufacturing process. Direct a living system to make a product, and you've built an industry."
+        "text": "Now some Australian benefits, starting with farms and hospitals. In agriculture, most of Australia's cotton is Bt cotton, carrying a gene from the bacterium Bacillus thuringiensis that makes a protein toxic to caterpillar pests. The benefit, for cotton growers, compared with conventional cotton, is far less insecticide spraying, which also means less harm to other insects and to farm workers. In medicine, the headline example is insulin. Recombinant bacteria or yeast carrying the human insulin gene now make it in huge tanks, giving people with diabetes a reliable, human identical supply, compared with the older insulin extracted from pig and cow pancreases. And you may also see industrial uses, like enzymes for detergents and food processing made by engineered microbes. They follow the same logic, direct a living system to make a product reliably, and you've built an industry."
+      }
+    },
+    {
+      "id": "concept-conservation",
+      "type": "concept",
+      "heading": "Conservation: bioinformatics and the Tasmanian devil",
+      "body": "Genetic data helps conservation managers decide which animals to breed, to protect a threatened species' genetic diversity.",
+      "bullets": [
+        {
+          "text": "Devil facial tumour disease, first seen in 1996, has wiped out most of the wild population."
+        },
+        {
+          "text": "Devils already had low genetic diversity, which makes them more vulnerable."
+        },
+        {
+          "text": "DNA data from each animal is used to choose breeding pairs that keep as much diversity as possible."
+        }
+      ],
+      "secondary": "The Save the Tasmanian Devil Program keeps an insurance population in captivity and on predator-free sites. Bioinformatics compares the DNA of individuals to measure how related they are, so managers can avoid inbreeding.",
+      "callout": "Bioinformatics turns DNA data into breeding decisions.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "sample",
+            "label": "Sample devil DNA"
+          },
+          {
+            "id": "seq",
+            "label": "Sequence and compare"
+          },
+          {
+            "id": "rel",
+            "label": "Measure relatedness"
+          },
+          {
+            "id": "pair",
+            "label": "Choose breeding pairs"
+          },
+          {
+            "id": "div",
+            "label": "Diversity kept"
+          }
+        ],
+        "edges": [
+          {
+            "from": "sample",
+            "to": "seq"
+          },
+          {
+            "from": "seq",
+            "to": "rel"
+          },
+          {
+            "from": "rel",
+            "to": "pair"
+          },
+          {
+            "from": "pair",
+            "to": "div"
+          }
+        ]
+      },
+      "durationInFrames": 1836,
+      "caption": "Genetic data guides Tasmanian devil breeding to keep genetic diversity in the insurance population.",
+      "recapSeed": "Bioinformatics guides devil breeding to protect genetic diversity.",
+      "voiceover": {
+        "text": "The third domain is conservation, and the Australian example to know is the Tasmanian devil. Since devil facial tumour disease was first seen in nineteen ninety six, this contagious cancer has wiped out most of the wild population. And devils were already low in genetic diversity, which leaves them less able to adapt. So the Save the Tasmanian Devil Program set up an insurance population of healthy devils, kept in captivity and on sites free of the disease. Here's where genetic technology comes in. Researchers sample each animal's DNA, and bioinformatics tools compare those sequences to work out how closely the animals are related. Managers then choose breeding pairs that keep as much genetic diversity as possible and avoid inbreeding. The beneficiary is the species itself, and the comparison is breeding without genetic data, where hidden relatedness could quietly shrink the gene pool."
       }
     },
     {
@@ -118,23 +228,29 @@
       "heading": "Benefit does not cancel the trade-off",
       "body": "Agricultural biotech carries the strongest biodiversity trade-offs, and a benefit does not erase them.",
       "bullets": [
-        {"text": "Reliance on a few successful genotypes reduces genetic diversity."},
-        {"text": "Lower diversity reduces resilience to disease and environmental change."},
-        {"text": "The benefit and the trade-off both exist; name both."}
+        {
+          "text": "Reliance on a few successful genotypes reduces genetic diversity."
+        },
+        {
+          "text": "Lower diversity reduces resilience to disease and environmental change."
+        },
+        {
+          "text": "The benefit and the trade-off both exist; name both."
+        }
       ],
       "secondary": "The strongest HSC judgement states the benefit, names the biodiversity risk, and ends with conditional, balanced language, rather than letting the benefit silence the cost.",
       "callout": "A real gain and a real cost can sit side by side.",
-      "durationInFrames": 870,
+      "durationInFrames": 1488,
       "caption": "Agricultural benefits coexist with biodiversity trade-offs; a strong answer names both.",
       "voiceover": {
-        "text": "Now the balance, because a benefit does not cancel a trade-off. Agricultural biotechnology delivers genuine benefits, but it also carries the strongest biodiversity trade-offs of the three domains. Reliance on a narrow range of successful genotypes reduces genetic diversity in the crop, and lower diversity reduces resilience to disease and to environmental change, exactly as we saw back in the biodiversity lesson. The point is that the benefit and the trade-off both genuinely exist, so a strong answer names both. The highest-scoring HSC judgement states the benefit clearly, names the biodiversity risk explicitly, and then ends with conditional, balanced language, rather than letting an impressive benefit quietly silence a real cost."
+        "text": "Now the balance, because a benefit does not cancel a trade off. Agricultural biotechnology delivers genuine benefits, but it also carries the strongest biodiversity trade offs of the three domains. Reliance on a narrow range of successful genotypes reduces genetic diversity in the crop, and lower diversity reduces resilience to disease and to environmental change, exactly as we saw back in the biodiversity lesson. The point is that the benefit and the trade off both genuinely exist, so a strong answer names both. The highest scoring HSC judgement states the benefit clearly, names the biodiversity risk explicitly, and then ends with conditional, balanced language, rather than letting an impressive benefit quietly silence a real cost."
       }
     },
     {
       "id": "worked-example",
       "type": "workedExample",
-      "heading": "Evaluate a benefit properly",
-      "question": "Evaluate the benefit of a transgenic pest-resistant crop. Specify the domain, the beneficiary and the comparison, then weigh in any biodiversity trade-off.",
+      "heading": "Evaluate a benefit properly: Bt cotton",
+      "question": "Evaluate the benefit of Bt cotton, a transgenic pest-resistant crop grown in Australia. Specify the domain, the beneficiary and the comparison, then weigh in any biodiversity trade-off.",
       "coachNote": "Specify domain, beneficiary and comparison, then add the biodiversity trade-off before concluding.",
       "steps": [
         "Domain: agricultural, since it changes crop performance in the field.",
@@ -143,10 +259,10 @@
         "Biodiversity trade-off: heavy reliance on this one genotype lowers genetic diversity and resilience at the crop level.",
         "Answer: a real agricultural benefit for farmers versus the old variety, justified provided genetic diversity is monitored, because the trade-off is not erased."
       ],
-      "durationInFrames": 1140,
+      "durationInFrames": 1736,
       "caption": "A pest-resistant crop benefits farmers but carries a crop-level biodiversity trade-off.",
       "voiceover": {
-        "text": "Let's evaluate one benefit properly, a transgenic pest-resistant crop. First the domain, it's agricultural, because it changes how the crop performs in the field. Then the beneficiary and the comparison, farmers gain higher yield and use less insecticide, compared with the non-resistant variety they'd otherwise grow. There's a wider benefit too, less insecticide can mean lower costs and some reduced environmental harm. But now the trade-off, heavy reliance on this single successful genotype lowers genetic diversity and resilience at the crop level. So the full evaluation is, this is a real agricultural benefit for farmers, measured against the old variety, and it's justified provided that genetic diversity is monitored, because that biodiversity trade-off is not erased by the benefit. Domain, beneficiary, comparison, trade-off, then a conditional verdict."
+        "text": "Let's evaluate one benefit properly, using Bt cotton, a transgenic pest resistant crop. First the domain, it's agricultural, because it changes how the crop performs in the field. Then the beneficiary and the comparison, farmers gain higher yield and use less insecticide, compared with the non resistant variety they'd otherwise grow. There's a wider benefit too, less insecticide can mean lower costs and some reduced environmental harm. But now the trade off, heavy reliance on this single successful genotype lowers genetic diversity and resilience at the crop level. So the full evaluation is, this is a real agricultural benefit for farmers, measured against the old variety, and it's justified provided that genetic diversity is monitored, because that biodiversity trade off is not erased by the benefit. Domain, beneficiary, comparison, trade off, then a conditional verdict."
       }
     },
     {
@@ -157,10 +273,10 @@
       "secondary": "The effects of GM crops depend on the specific modification, regulatory assessment, ecological context and economic conditions. Some deliver clear benefits; others raise concerns about biodiversity, seed ownership or unintended ecological impacts. Safety is assessed case by case, not as a blanket category.",
       "mistakeTag": "Why blanket verdicts fail",
       "callout": "Case by case, never all GM is good or all GM is bad.",
-      "durationInFrames": 930,
+      "durationInFrames": 1525,
       "caption": "GM crop effects depend on the specific case; safety is assessed case by case.",
       "voiceover": {
-        "text": "Here's the trap to avoid. Thinking that all genetically modified crops benefit farmers and are automatically safe for consumers, a blanket verdict in either direction. The reality is that the effects of GM crops depend on the specific modification, on regulatory assessment, on the ecological context, and on economic conditions. Some modifications deliver clear agronomic benefits. Others raise genuine concerns about biodiversity, about corporate seed ownership, or about unintended ecological impacts. And safety is assessed case by case, on each individual product, not handed out as a blanket category. So never write all GM is good, or all GM is bad. The marks live in the case-by-case judgement, naming the specific modification and its specific context."
+        "text": "Here's the trap to avoid. Thinking that all genetically modified crops benefit farmers and are automatically safe for consumers, a blanket verdict in either direction. The reality is that the effects of GM crops depend on the specific modification, on regulatory assessment, on the ecological context, and on economic conditions. Some modifications deliver clear agronomic benefits. Others raise genuine concerns about biodiversity, about corporate seed ownership, or about unintended ecological impacts. And safety is assessed case by case, on each individual product, not handed out as a blanket category. So never write all GM is good, or all GM is bad. The marks live in the case by case judgement, naming the specific modification and its specific context."
       }
     },
     {
@@ -176,10 +292,10 @@
         "It then names the biodiversity trade-off and stays conditional.",
         "Answer: e.g. transgenic crops benefit farmers through higher yield versus older varieties, but reduce crop genetic diversity, so the benefit holds only with diversity monitoring."
       ],
-      "durationInFrames": 990,
+      "durationInFrames": 1784,
       "caption": "A vague production claim becomes a domain, beneficiary, comparison and trade-off judgement.",
       "voiceover": {
-        "text": "Quick check. A student writes, genetic technologies are beneficial because they increase food production. Using the domain, beneficiary and comparison framework, explain why that's weak, and rewrite it. Pause and reason it through. Right. The claim does name a domain, agricultural, but it stops there, there's no beneficiary, no comparison point, and no trade-off. It also quietly equates production with benefit, ignoring the biodiversity cost we keep flagging. A stronger version specifies who actually gains and against what alternative, then names the biodiversity trade-off, and stays conditional. Something like, transgenic crops benefit farmers through higher yield compared with older varieties, but they reduce crop genetic diversity, so the benefit holds only where that diversity is monitored. Now it has a domain, a beneficiary, a comparison, a trade-off, and a conditional verdict."
+        "text": "Quick check. A student writes, genetic technologies are beneficial because they increase food production. Using the domain, beneficiary and comparison framework, explain why that's weak, and rewrite it. Pause and reason it through. Right. The claim does name a domain, agricultural, but it stops there, there's no beneficiary, no comparison point, and no trade off. It also quietly equates production with benefit, ignoring the biodiversity cost we keep flagging. A stronger version specifies who actually gains and against what alternative, then names the biodiversity trade off, and stays conditional. Something like, transgenic crops benefit farmers through higher yield compared with older varieties, but they reduce crop genetic diversity, so the benefit holds only where that diversity is monitored. Now it has a domain, a beneficiary, a comparison, a trade off, and a conditional verdict."
       }
     },
     {
@@ -188,16 +304,16 @@
       "heading": "Lock it in",
       "points": [
         "State benefit as domain, for whom, and compared with what.",
-        "Agricultural, medical and industrial benefits all stem from controlled biological production.",
-        "Agricultural biotech carries the strongest biodiversity trade-offs.",
-        "A benefit does not cancel a trade-off; name both.",
+        "Agriculture: Bt cotton cuts insecticide spraying; medicine: recombinant insulin.",
+        "Conservation: bioinformatics guides Tasmanian devil breeding to keep diversity.",
+        "A benefit does not cancel a biodiversity trade-off; name both.",
         "Safety and benefit are judged case by case, never as a blanket."
       ],
       "finalPrompt": "Evaluating a benefit? Name domain, beneficiary, comparison, then the biodiversity trade-off.",
-      "durationInFrames": 870,
-      "caption": "Five takeaways: specify benefit, shared logic, agricultural trade-offs, name both, case by case.",
+      "durationInFrames": 1451,
+      "caption": "Five takeaways: specify benefit, Bt cotton and insulin, devil conservation, name trade-offs, case by case.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, always state a benefit as a domain, for whom, and compared with what. Second, agricultural, medical and industrial benefits all flow from the same logic, controlled biological production. Third, agricultural biotechnology carries the strongest biodiversity trade-offs of the three. Fourth, a benefit does not cancel a trade-off, so name both, the gain and the cost. And fifth, safety and benefit are judged case by case, never as a blanket verdict. Whenever you evaluate a benefit, name the domain, the beneficiary, the comparison, and then the biodiversity trade-off. See you next lesson."
+        "text": "Let's lock it in. Five things to take away. First, always state a benefit as a domain, for whom, and compared with what. Second, in agriculture Bt cotton cuts insecticide spraying, and in medicine recombinant organisms make human insulin. Third, in conservation, bioinformatics uses DNA data to guide Tasmanian devil breeding so the species keeps its genetic diversity. Fourth, a benefit does not cancel a trade off, so name both, the gain and the cost. And fifth, safety and benefit are judged case by case, never as a blanket verdict. Whenever you evaluate a benefit, name the domain, the beneficiary, the comparison, and then the biodiversity trade off. See you next lesson."
       }
     }
   ]

@@ -16,7 +16,6 @@
 //   120  third annotation fades up + arrow draws (if present)
 //   150  callout or body reveals (if present)
 
-import {Img} from 'remotion';
 import type {LessonData, LabFootageScene} from '../lesson/types';
 import {ASSETS, type AssetName} from '../assets';
 import {FadeUp} from '../animations/FadeUp';
@@ -26,6 +25,7 @@ import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
 import {FONT_HAND, TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
+import {AssetImg} from './shared/AssetImg';
 
 type LabFootageSlideProps = {
 	scene: LabFootageScene;
@@ -110,8 +110,8 @@ export const LabFootageSlide = ({scene, lesson, sceneIndex, totalScenes}: LabFoo
 						borderRadius: 18,
 						border: `1px solid ${TOK.rule}`,
 						background:
-							`linear-gradient(135deg, ${TOK.bgLift} 0%, rgba(${theme.cardTint},0.48) 55%, ${TOK.bg} 100%)`,
-						boxShadow: `0 34px 120px rgba(0,0,0,0.34), inset 0 0 0 1px rgba(232,239,233,0.025)`,
+							`linear-gradient(160deg, ${TOK.bgLift} 0%, ${theme.soft} 100%)`,
+						boxShadow: TOK.cardShadow,
 						overflow: 'hidden',
 						display: 'flex',
 						alignItems: 'center',
@@ -133,21 +133,21 @@ export const LabFootageSlide = ({scene, lesson, sceneIndex, totalScenes}: LabFoo
 						style={{
 							position: 'absolute',
 							inset: 26,
-							border: `1px dashed rgba(232,239,233,0.08)`,
+							border: '1px dashed rgba(0,0,0,0.07)',
 							borderRadius: 14,
 						}}
 					/>
 
 					{src ? (
 						<FadeUp delay={36} durationFrames={14} dy={10}>
-							<Img
+							<AssetImg
 								src={src}
 								alt=""
 								style={{
 									maxWidth: '82%',
 									maxHeight: '82%',
 									objectFit: 'contain',
-									filter: 'drop-shadow(0 28px 54px rgba(0,0,0,0.45))',
+									filter: TOK.imageShadow,
 								}}
 							/>
 						</FadeUp>

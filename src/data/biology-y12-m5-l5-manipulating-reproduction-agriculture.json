@@ -1,25 +1,33 @@
 {
   "title": "Manipulating Reproduction in Agriculture",
-  "subtitle": "Selective breeding, AI and embryo transfer, and the price of control",
+  "subtitle": "Artificial pollination, reproductive technologies and heritable change",
   "subject": "Biology",
+  "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 5",
   "lesson": "Lesson 5",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
-  "syllabusModule": "Module 5 — Heredity",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
+  "syllabusModule": "Module 5 Heredity and Module 6 Genetic Change (2017) + Biotechnology and Biodiversity (2025)",
   "syllabusDotPoints": [
-    "evaluate the effect on biodiversity of using selective breeding and reproductive technologies to manipulate reproduction in agriculture"
+    "evaluate the impact of scientific knowledge on the manipulation of plant and animal reproduction in agriculture (ACSBL074)",
+    "compare the processes and outcomes of reproductive technologies, including but not limited to: artificial insemination, artificial pollination",
+    "Account for the use of artificial pollination in Australian agriculture, including its methods and outcomes",
+    "Compare germline genetic changes in reproductive and genetic engineering biotechnologies",
+    "Explain impacts of monoculture, pesticide use, land clearing and habitat loss on the health of ecosystems"
   ],
   "moduleLessonCount": 19,
   "nesaOutcomes": [
     "BIO12-12",
+    "BIO12-13",
     "BIO11/12-4",
     "BIO11/12-6",
-    "BIO11/12-7"
+    "BIO11/12-7",
+    "BI-12-04",
+    "BI-12-03"
   ],
   "inquiryQuestion": "How does reproduction ensure the continuity of a species?",
-  "lessonIntent": "Students can describe how reproductive technologies manipulate inherited traits and evaluate their benefits against gene-pool and welfare costs.",
-  "examSkill": "Evaluate a reproductive technology by weighing productivity gains against narrowed gene pool and welfare concerns.",
+  "lessonIntent": "Students can describe the methods and outcomes of artificial pollination in Australian agriculture, explain how reproductive technologies such as artificial insemination change what is inherited, and compare those germline changes with genetic engineering.",
+  "examSkill": "Compare a reproductive technology with a genetic engineering technology by what each changes in the germline, and evaluate either one by weighing productivity against gene pool and monoculture costs.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -27,75 +35,159 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome back to HSC Biology. Today, how humans deliberately manipulate reproduction in agriculture, and the trade-offs that come with it. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, how we control reproduction in agriculture, from pollination to the germline. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 110,
-      "caption": "Manipulating Reproduction in Agriculture (Year 12 Biology, Module 5, Lesson 5)"
+      "caption": "Manipulating Reproduction in Agriculture"
     },
     {
       "id": "hook",
       "type": "hook",
-      "heading": "277 tries for one sheep",
-      "body": "In 1997, Dolly the sheep became the first mammal cloned from an adult cell. It took 277 attempts, and she lived only half a normal lifespan.",
-      "callout": "How far should we go in controlling reproduction?",
-      "image": "bioM5L5DollyCloning",
-      "durationInFrames": 1872,
-      "caption": "Dolly the cloned sheep sits at the extreme end of reproductive manipulation technologies.",
+      "heading": "An orchard that can't pollinate itself",
+      "body": "Most almond varieties grown along the Murray need pollen from a different variety, so growers bring in beehives by the truckload every late winter.",
+      "callout": "What happens to a harvest when humans have to control pollination?",
+      "image": "bioM5L5AlmondPollination",
+      "caption": "Australian almonds depend on managed pollination, which is why the 2022 Varroa mite detection alarmed growers.",
       "voiceover": {
-        "text": "In nineteen ninety seven, a team at the Roslin Institute in Scotland produced Dolly, the first mammal ever cloned from an adult body cell. It was not easy. The technique, called somatic cell nuclear transfer, took two hundred and seventy seven attempts before one live lamb resulted. And Dolly lived only about six and a half years, roughly half the normal lifespan for a sheep. Dolly sits at the extreme end of a whole spectrum of reproductive technologies that humans use in agriculture. At the other end is selective breeding, which we have been doing for thousands of years, and in between sit artificial insemination, embryo transfer, and controlled pollination. Today we look at how each one works, and then the question that really matters for the exam, what does all this control cost us in biodiversity."
-      }
+        "text": "OK, picture an almond orchard along the Murray River in late winter. Every tree is covered in blossom, and yet most of those flowers won't become almonds on their own, because the main almond varieties grown here can't fertilise themselves. They need pollen from a different variety. So every season, growers truck in huge numbers of beehives and park them between the rows, and the bees do the work humans have arranged for them. That's why the arrival of the Varroa mite in New South Wales in twenty twenty two worried the whole industry so much. Humans have been steering plant and animal reproduction for thousands of years, but modern agriculture does it with real precision. Today we'll look at how artificial pollination actually works in Australia, how technologies like artificial insemination control which gametes meet, and how all of that compares with genetic engineering."
+      },
+      "durationInFrames": 1785
     },
     {
-      "id": "concept-selective",
+      "id": "concept-control",
       "type": "concept",
-      "heading": "Selective breeding shifts the alleles",
-      "body": "Choosing parents with desired traits makes those alleles more common over generations.",
+      "heading": "Controlling which gametes meet",
+      "body": "Reproductive technologies choose which parents contribute gametes, so the next generation inherits the alleles humans prefer.",
       "bullets": [
         {
-          "text": "Breeders deliberately choose parent organisms that show the traits they want."
+          "text": "Selective breeding: only individuals with desired traits are allowed to reproduce."
         },
         {
-          "text": "Over generations, the alleles for those traits become more common in the population."
+          "text": "Artificial insemination: semen from one chosen male fertilises many females."
         },
         {
-          "text": "It accumulates favourable traits, but cannot create a perfect organism."
+          "text": "Embryo transfer: embryos from one elite female develop in surrogate mothers."
         }
       ],
-      "secondary": "There is a hidden cost. Repeatedly selecting from a few parents shrinks the gene pool, the total variety of alleles in the population.",
-      "callout": "Selection concentrates the alleles you want, and quietly loses the rest.",
-      "durationInFrames": 1956,
-      "caption": "Selective breeding raises desired alleles over generations, but narrows the gene pool.",
+      "secondary": "None of these alter DNA. They change which existing alleles are passed on, and how often.",
+      "callout": "Choose the parents, and you choose the alleles.",
+      "caption": "Selective breeding, artificial insemination and embryo transfer control which gametes combine.",
       "voiceover": {
-        "text": "Let's start with the oldest technique, selective breeding. The idea is simple. Breeders deliberately choose the parent organisms that show the traits they want, higher milk yield in cattle, say, or larger grain in wheat, and breed only from those. Over many generations, the alleles responsible for those desirable traits become more and more common in the population. So selective breeding accumulates favourable traits. But notice what it cannot do, it cannot create a perfect organism, it can only work with the alleles already present. And there is a hidden cost that the exam wants you to spot. By repeatedly selecting from just a few favoured parents, breeders shrink the gene pool, which is the total variety of alleles in the population. You concentrate the alleles you want, but you quietly lose a lot of the others, and that lost variation matters later."
-      }
+        "text": "So let's start with the big idea that links every technique in this lesson. Humans control reproduction by choosing which individuals get to contribute gametes. The oldest version is selective breeding, where only animals or plants with the traits you want, like high milk yield or large grain, are allowed to reproduce. Artificial insemination takes that further in animals. Semen is collected from one chosen male and used to fertilise many females, with no natural mating at all, so a single prized bull can father thousands of calves. And embryo transfer does something similar on the female side, with embryos from one elite cow placed into surrogate mothers, so she produces far more offspring than she naturally could. Here's the key point for later. None of these methods change the DNA itself. They change which existing alleles get passed on, and how often."
+      },
+      "durationInFrames": 1761
     },
     {
-      "id": "concept-animal-tech",
+      "id": "concept-pollination-methods",
       "type": "concept",
-      "heading": "Spreading elite genetics in animals",
-      "body": "Three technologies give breeders more control over which animals reproduce and how widely.",
+      "heading": "How artificial pollination works",
+      "body": "Artificial pollination means humans, not chance, decide which pollen reaches which stigma.",
       "bullets": [
         {
-          "text": "Controlled mating: choosing exactly which animals breed together."
+          "text": "Hand pollination: remove the anthers, bag the flower, brush on chosen pollen, rebag."
         },
         {
-          "text": "Artificial insemination: spreading one elite male's genetics to many females without mating."
+          "text": "Managed pollinators: hired honeybee hives placed in orchards at flowering."
         },
         {
-          "text": "Embryo transfer: embryos from one elite female implanted into surrogates for more offspring."
+          "text": "Mechanical application: collected pollen dusted or blown onto open flowers."
         }
       ],
-      "secondary": "Each technology amplifies the genetics of a few prized individuals across a herd, which is powerful, but it also concentrates the same alleles in many animals.",
-      "callout": "Powerful reach for a few individuals, and the same genes everywhere.",
-      "durationInFrames": 2010,
-      "caption": "Controlled mating, artificial insemination and embryo transfer amplify elite genetics.",
+      "secondary": "Removing the anthers is called emasculation. It stops the flower pollinating itself, so the breeder knows exactly who both parents are.",
+      "callout": "Emasculate, bag, transfer, rebag: that's a controlled cross.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "a",
+            "label": "Remove anthers"
+          },
+          {
+            "id": "b",
+            "label": "Bag flower"
+          },
+          {
+            "id": "c",
+            "label": "Brush on chosen pollen"
+          },
+          {
+            "id": "d",
+            "label": "Rebag and label"
+          }
+        ],
+        "edges": [
+          {
+            "from": "a",
+            "to": "b"
+          },
+          {
+            "from": "b",
+            "to": "c"
+          },
+          {
+            "from": "c",
+            "to": "d"
+          }
+        ]
+      },
+      "caption": "Hand pollination, managed pollinators and mechanical pollen application all control fertilisation.",
       "voiceover": {
-        "text": "Beyond simple selection, there are three reproductive technologies that give breeders far more control over animals. The first is controlled mating, which just means deciding exactly which animals breed together, rather than letting them mate at random. The second is artificial insemination, where semen from one elite male is collected and used to fertilise many females, without any direct mating. That lets a single prized bull father thousands of calves across the country. The third is embryo transfer, where embryos from one elite female are collected and implanted into surrogate mothers, so that one valuable cow can produce far more offspring than she ever could naturally. Each of these amplifies the genetics of a handful of prized individuals right across a herd. That is enormously powerful for productivity, but hold onto the flip side, it also concentrates the very same alleles into a huge number of animals."
-      }
+        "text": "Now, artificial pollination simply means that humans, rather than wind or chance, decide which pollen reaches which stigma. The most precise method is hand pollination, which is how plant breeders make a controlled cross. First they remove the anthers from the flower that will be the female parent, before it can release its own pollen. That step is called emasculation, and it stops the flower pollinating itself. Then they cover it with a bag, so no stray pollen gets in. Next they collect pollen from the chosen male parent and brush it onto the stigma, and finally they rebag and label the flower. At a larger scale, growers use managed pollinators, hiring hives and placing them in orchards at flowering, just like the almond growers. And some orchards use mechanical application, where collected pollen is dusted or blown onto the open flowers."
+      },
+      "durationInFrames": 1749
+    },
+    {
+      "id": "concept-pollination-outcomes",
+      "type": "concept",
+      "heading": "Artificial pollination in Australia",
+      "body": "Controlled pollination raises fruit set and makes new varieties possible, but it concentrates risk.",
+      "bullets": [
+        {
+          "text": "Almonds: managed honeybee hives carry pollen between compatible varieties."
+        },
+        {
+          "text": "Custard apples: growers hand pollinate for better fruit set and shape."
+        },
+        {
+          "text": "Plant breeding: controlled crosses combine traits into new varieties."
+        }
+      ],
+      "secondary": "The costs are labour, heavy reliance on a single pollinator species, and a narrower genetic base when a few varieties dominate.",
+      "callout": "Reliable harvests, built on a narrow base.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Method",
+          "Outcome",
+          "Risk"
+        ],
+        "rows": [
+          [
+            "Managed hives",
+            "Reliable almond fruit set",
+            "Depends on one bee species"
+          ],
+          [
+            "Hand pollination",
+            "Better custard apple fruit",
+            "Labour intensive"
+          ],
+          [
+            "Controlled crosses",
+            "New, uniform varieties",
+            "Narrower genetic base"
+          ]
+        ]
+      },
+      "caption": "Australian examples: almonds with managed hives, hand pollinated custard apples, controlled crosses in breeding.",
+      "voiceover": {
+        "text": "So what does artificial pollination actually achieve in Australian agriculture? Let's take three examples. In almond orchards, managed honeybee hives carry pollen between compatible varieties, which gives a reliable fruit set across the whole orchard. In Queensland, custard apple growers often hand pollinate their flowers, because natural pollination is poor, and hand pollination gives more fruit and better shaped fruit. And in plant breeding programs, controlled crosses let breeders combine traits, like disease resistance from one variety and yield from another, into new, uniform varieties. Those are real outcomes, more food and more predictable harvests. But notice the costs. Hand pollination is labour intensive. Managed pollination leans heavily on a single species, the European honeybee, which is exactly why Varroa is such a threat. And when a few uniform varieties dominate, the genetic base of the crop gets narrower."
+      },
+      "durationInFrames": 1713
     },
     {
       "id": "definition",
@@ -103,124 +195,150 @@
       "heading": "The words you need",
       "bullets": [
         {
-          "text": "Selective breeding: choosing parents with desired traits so those traits appear more in offspring."
+          "text": "Artificial pollination: humans control the transfer of pollen to a chosen stigma."
         },
         {
-          "text": "Controlled mating: managing which animals reproduce together to influence inherited traits."
+          "text": "Emasculation: removing a flower's anthers so it cannot self pollinate."
         },
         {
-          "text": "Artificial insemination: introducing semen into the female tract without natural mating."
+          "text": "Artificial insemination: placing collected semen in the female tract without mating."
         },
         {
-          "text": "Embryo transfer: placing an embryo from one female into another for development."
+          "text": "Germline: the cells that make gametes, so changes here are inherited."
         },
         {
-          "text": "Controlled pollination: deliberately transferring pollen between selected plants."
-        },
-        {
-          "text": "Gene pool: the total variety of alleles present in a population."
+          "text": "Monoculture: one crop variety grown over a large area."
         }
       ],
-      "callout": "Every technique narrows one thing in common: the gene pool.",
-      "durationInFrames": 1668,
-      "caption": "Selective breeding, controlled mating, AI, embryo transfer, controlled pollination, gene pool.",
+      "callout": "Germline changes are the ones the next generation inherits.",
+      "caption": "Artificial pollination, emasculation, artificial insemination, germline, monoculture.",
       "voiceover": {
-        "text": "Let's lock down the vocabulary, because precise terms earn marks here. Selective breeding is choosing parents with desired characteristics so those traits appear more often in offspring. Controlled mating is managing which animals reproduce together to influence inherited traits. Artificial insemination is introducing semen into the female reproductive tract without natural mating. Embryo transfer is placing an embryo from one female into another female for development. Controlled pollination is deliberately transferring pollen between selected plants to control inheritance. And the gene pool is the total variety of alleles present in a population. Keep that last one front of mind, because it is the thread running through every one of these techniques. They all, in different ways, tend to narrow the gene pool."
-      }
+        "text": "Let's pin down the vocabulary, because precise terms earn marks here. Artificial pollination is when humans control the transfer of pollen to a chosen stigma. Emasculation is removing a flower's anthers so that it can't pollinate itself. Artificial insemination is placing collected semen into the female reproductive tract without natural mating. The germline is the set of cells that go on to make gametes, the eggs and sperm, which means any change in the germline gets passed to the next generation. And a monoculture is a single crop variety grown over a large area. Keep germline front of mind, because the next scene is all about it."
+      },
+      "durationInFrames": 1329
     },
     {
-      "id": "concept-pollination",
+      "id": "concept-germline",
       "type": "concept",
-      "heading": "Controlled pollination in plants",
-      "body": "Breeders block unwanted pollen and transfer chosen pollen to direct which traits combine.",
+      "heading": "Two ways to change the germline",
+      "body": "Reproductive technologies reshuffle existing alleles; genetic engineering changes the DNA sequence itself.",
       "bullets": [
         {
-          "text": "Prevent unwanted pollen reaching the plant, then transfer pollen from chosen parents."
+          "text": "Reproductive technologies choose which gametes combine, so no new alleles appear."
         },
         {
-          "text": "This directs inheritance, combining specific desirable plant traits."
+          "text": "Genetic engineering alters or inserts DNA, sometimes from another species."
         },
         {
-          "text": "It produces uniform, high-performing crops."
+          "text": "Both are heritable when the germline, a zygote or an early embryo is changed."
         }
       ],
-      "secondary": "The risk is the same one we keep meeting. Over-reliance on a narrow genetic base makes a whole crop vulnerable to a single disease or environmental stress.",
-      "callout": "Uniform, high-yield crops, built on a dangerously narrow base.",
-      "durationInFrames": 1710,
-      "caption": "Controlled pollination directs plant inheritance for uniform crops, narrowing the genetic base.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "",
+          "Reproductive technology",
+          "Genetic engineering"
+        ],
+        "rows": [
+          [
+            "Examples",
+            "Artificial insemination, pollination",
+            "Transgenic crops, gene editing"
+          ],
+          [
+            "What changes",
+            "Which alleles combine",
+            "The DNA sequence"
+          ],
+          [
+            "New alleles?",
+            "No",
+            "Yes, can add or alter genes"
+          ],
+          [
+            "Species limit",
+            "Same or closely related species",
+            "Can cross species"
+          ]
+        ]
+      },
+      "callout": "Reshuffling alleles versus rewriting DNA.",
+      "caption": "Reproductive technologies change allele combinations; genetic engineering changes the DNA sequence.",
       "voiceover": {
-        "text": "The plant equivalent is controlled pollination, and it is the precise version of the pollination we met two lessons ago. Breeders first prevent unwanted pollen from reaching the plant, often by covering the flowers, and then they deliberately transfer pollen from chosen parent plants. That lets them direct inheritance, combining specific desirable traits, like disease resistance from one variety with high yield from another. The result is uniform, high performing crops, every plant much the same and reliably productive. But you can already hear the risk, because it is the banana problem again. Over reliance on a narrow genetic base makes the whole crop vulnerable, so that a single disease or environmental stress can sweep through a globally similar crop with nothing to stop it."
-      }
+        "text": "Here's the comparison the newer syllabus asks for directly, and it sharpens the older one too. Both reproductive technologies and genetic engineering can change what's inherited, but in very different ways. Reproductive technologies like artificial insemination and artificial pollination work by choosing which gametes combine. The offspring's germline is still just a new combination of the parents' existing alleles, so no new alleles are created, and the parents have to be the same or closely related species. Genetic engineering is different in kind. It directly alters the DNA sequence, or inserts a new gene, sometimes one taken from a completely different species. If that change is made in germ cells, in a zygote or in a very early embryo, every cell of the organism carries it, including the ones that make gametes, so it's inherited too. So the shorthand is reshuffling existing alleles, versus rewriting the DNA."
+      },
+      "durationInFrames": 1809
     },
     {
       "id": "worked-example",
       "type": "workedExample",
-      "heading": "Evaluate a breeding programme",
-      "question": "A dairy farmer uses artificial insemination from one champion bull across the entire herd for several generations. Evaluate this strategy, giving one major benefit and one major long-term risk.",
-      "coachNote": "Evaluate means weigh both sides, then make a judgement. Anchor it to the gene pool.",
+      "heading": "Compare the germline changes",
+      "question": "Compare the germline changes produced by (a) artificial insemination of a dairy herd with semen from one elite bull and (b) Bt cotton, which carries a gene from the bacterium Bacillus thuringiensis.",
+      "coachNote": "Compare means similarities and differences. Ask what each one changes in the DNA that offspring inherit.",
       "steps": [
-        "Benefit: the bull's high-milk-yield alleles spread rapidly through the whole herd, raising productivity.",
-        "It is also efficient, one bull fathers thousands of calves without direct mating.",
-        "Risk: the herd's gene pool narrows sharply, since most animals now share the same paternal alleles.",
-        "Shared alleles mean shared weaknesses, so one disease could affect many animals, plus welfare concerns.",
-        "Judgement: strong short-term productivity gains, but reduced biodiversity makes the herd less resilient long-term."
+        "(a) AI: calves inherit a normal mix of the bull's and cows' alleles. No DNA is altered.",
+        "Over generations the herd's allele frequencies shift toward the bull's alleles; no new alleles appear.",
+        "(b) Bt cotton: a bacterial gene was inserted into the cotton genome, so the plant makes an insecticidal protein.",
+        "The inserted gene is in the germline, so it passes through the seed to later generations.",
+        "Similarity: both changes are inherited. Difference: AI reshuffles existing alleles; Bt cotton carries new DNA from another species."
       ],
-      "durationInFrames": 2286,
-      "caption": "AI from one bull: fast productivity gains, but a narrowed gene pool and shared vulnerability.",
+      "caption": "AI shifts allele frequencies without altering DNA; Bt cotton carries an inherited gene from a bacterium.",
       "voiceover": {
-        "text": "Let's do an evaluate question, because this whole lesson is built for them, and evaluate means weigh both sides then make a judgement. A dairy farmer uses artificial insemination from one champion bull across the entire herd, for several generations. Evaluate it. Start with a benefit. The bull's high milk yield alleles spread rapidly through the whole herd, so productivity climbs fast, and it is efficient, one bull fathers thousands of calves with no direct mating. Now the long term risk, and this is where you anchor to the gene pool. Because most animals now share the same paternal alleles, the herd's gene pool narrows sharply. And shared alleles mean shared weaknesses, so a single disease could affect many animals at once, on top of welfare concerns about such intensive breeding. So the judgement, you get strong short term productivity gains, but at the cost of reduced biodiversity, which leaves the herd less resilient in the long run. That balanced structure is exactly what earns the marks."
-      }
+        "text": "Let's do a compare question, and remember that compare means you need similarities and differences. Part a, a dairy herd is artificially inseminated with semen from one elite bull. The calves inherit a perfectly ordinary mix of the bull's alleles and their mothers' alleles, and nothing in the DNA has been altered. What changes is the population. Over several generations, the herd's allele frequencies shift toward the bull's alleles, but no new alleles appear. Part b, Bt cotton, which is grown across most of Australia's cotton area. A gene from the soil bacterium Bacillus thuringiensis was inserted into the cotton genome, so the plant makes a protein that kills certain caterpillars. That inserted gene is in the germline, so it's passed through the seed to later generations. Now pull it together. The similarity is that both changes are inherited. The difference is that insemination reshuffles existing alleles, while Bt cotton carries brand new DNA from another species."
+      },
+      "durationInFrames": 1929
     },
     {
       "id": "misconception",
       "type": "misconception",
-      "heading": "The no-downside trap",
-      "body": "Trap: thinking selective breeding is purely beneficial with no health consequences. Intensive selection narrows the gene pool and raises homozygosity.",
-      "secondary": "That can accidentally fix harmful recessive alleles. Real examples include breathing problems in flat-faced dog breeds and hip dysplasia in some pedigree dogs. Genetic diversity is sacrificed for trait consistency, so an evaluate answer must always name a cost, not just benefits.",
+      "heading": "Two traps",
+      "body": "Trap 1: calling an artificially inseminated calf genetically modified. AI chooses the parents; it does not alter any DNA.",
+      "secondary": "Trap 2: assuming controlled reproduction has no downside. Uniform varieties and elite sires narrow the gene pool, and large monocultures let one pest or disease spread fast, support fewer native species, and depend on a single pollinator.",
       "mistakeTag": "Where evaluation marks vanish",
-      "callout": "Consistency is bought with diversity, and sometimes with health.",
-      "durationInFrames": 1956,
-      "caption": "Intensive selective breeding fixes harmful recessives and sacrifices diversity for consistency.",
+      "callout": "AI is not GM, and uniform is not the same as safe.",
+      "caption": "Artificial insemination is not genetic modification; uniform monocultures narrow the gene pool and weaken ecosystems.",
       "voiceover": {
-        "text": "Here is the trap, and it is the difference between a band four and a band six answer. Thinking that selective breeding is purely beneficial, with no real downside. That is wrong. Intensive selective breeding narrows the gene pool and increases homozygosity, which just means more individuals carry two copies of the same alleles. And that has a nasty side effect, it can accidentally fix harmful recessive alleles in the population, alleles that would normally stay hidden. The real world examples are well known, breathing problems in flat faced dog breeds like pugs, and hip dysplasia in some pedigree dogs. In every case, genetic diversity has been sacrificed for trait consistency. So when an exam asks you to evaluate a reproductive technology, you must name a cost, not just list benefits. Productive now, the phrase keeps coming back, can still mean vulnerable later."
-      }
+        "text": "Two traps that cost marks. Trap one, calling an artificially inseminated calf genetically modified. It isn't. Insemination only chooses who the parents are, and the calf's DNA is an ordinary combination of theirs. Genetic modification means the DNA itself has been changed. Trap two is thinking that controlled reproduction has no downside. Uniform crop varieties and a handful of elite sires narrow the gene pool, and that has consequences for the whole ecosystem, not just the farm. In a large monoculture, one pest or disease can spread quickly through plants that are all genetically alike. A single crop also supports far fewer native species than a varied landscape, and it can leave a whole industry depending on just one pollinator. So when you evaluate any of these technologies, always name a cost as well as a benefit."
+      },
+      "durationInFrames": 1689
     },
     {
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "A wheat breeder produces a uniform, high-yield variety using controlled pollination and grows it across a huge region. Explain one benefit for food security and one risk, referring to the gene pool.",
-      "pausePrompt": "Pause and reason it through.",
+      "question": "A grower plants thousands of hectares of almonds using just two varieties, pollinated by hired honeybee hives. Explain one benefit of this system and two risks.",
+      "pausePrompt": "Pause and find one benefit and two risks.",
       "answerSteps": [
-        "Benefit: a uniform, high-yield variety raises and stabilises food production, supporting food security.",
-        "Controlled pollination combines desirable traits like yield and quality reliably across the crop.",
-        "Risk: the crop has a very narrow gene pool, so almost no genetic variation.",
-        "If a new disease can infect that genotype, it could devastate the whole region's crop at once.",
-        "Answer: higher yield aids food security, but a narrow gene pool creates shared, large-scale vulnerability."
+        "Benefit: managed pollination between compatible varieties gives a reliable, high fruit set.",
+        "Risk 1: the whole harvest depends on one pollinator, so a pest like Varroa could cut pollination.",
+        "Risk 2: two varieties over a huge area is a monoculture with a narrow gene pool.",
+        "A disease able to infect those varieties could spread through the whole orchard, and native species lose habitat.",
+        "Answer: reliable yield, but heavy dependence on honeybees and a narrow, vulnerable genetic base."
       ],
-      "durationInFrames": 2214,
-      "caption": "Uniform high-yield wheat aids food security but a narrow gene pool risks region-wide loss.",
+      "caption": "Managed pollination gives reliable yield, but relies on one pollinator and creates a vulnerable monoculture.",
       "voiceover": {
-        "text": "Quick check, and it pulls the benefit and the risk together. A wheat breeder produces a uniform, high yield variety using controlled pollination, then grows it across a huge region. Explain one benefit for food security and one risk, referring to the gene pool. Pause and reason it through. Right. The benefit first. A uniform, high yield variety raises and stabilises food production, which genuinely supports food security, more reliable food for more people. Controlled pollination is what lets the breeder combine desirable traits like high yield and good quality reliably across the whole crop. Now the risk, anchored to the gene pool. That crop has a very narrow gene pool, almost no genetic variation between plants. So if a new disease can infect that one genotype, it could devastate the entire region's crop at once, with no resistant plants to survive. So the balanced answer, higher yield aids food security, but the narrow gene pool creates a shared, large scale vulnerability."
-      }
+        "text": "Quick check. A grower plants thousands of hectares of almonds using just two varieties, pollinated by hired honeybee hives. Explain one benefit of this system and two risks. Pause and find one benefit and two risks. Alright, the benefit first. Placing hives between two compatible varieties gives reliable pollination, so the fruit set is high and predictable. Now the risks. The first is dependence on a single pollinator. If a pest like Varroa weakens the hive supply, pollination drops and so does the harvest. The second is the monoculture itself. Two varieties over a huge area means a very narrow gene pool, so a disease that can infect those varieties could sweep through the whole orchard, and the native plants and animals that used that land lose their habitat. So the balanced answer is reliable yield, but a heavy reliance on honeybees and a narrow, vulnerable genetic base."
+      },
+      "durationInFrames": 1821
     },
     {
       "id": "summary",
       "type": "summary",
       "heading": "Lock it in",
       "points": [
-        "Selective breeding makes desired alleles more common, but narrows the gene pool.",
-        "Artificial insemination and embryo transfer spread a few individuals' genetics widely.",
-        "Controlled pollination directs plant inheritance for uniform, high-yield crops.",
-        "The shared cost is reduced biodiversity, shared disease vulnerability and welfare concerns.",
-        "To evaluate, always weigh the productivity benefit against the gene-pool cost."
+        "Reproductive technologies control which gametes meet; they don't alter DNA.",
+        "Artificial pollination: hand pollination, managed hives or mechanical pollen application.",
+        "In Australia it secures almond and custard apple crops and makes new varieties possible.",
+        "Genetic engineering changes the DNA sequence; both kinds of change can be inherited.",
+        "Always weigh the productivity gain against gene pool and monoculture costs."
       ],
-      "finalPrompt": "Evaluating a technology? Name a benefit, name a gene-pool cost, then make a clear judgement.",
-      "durationInFrames": 1836,
-      "caption": "Five takeaways: selective breeding, animal and plant technologies, the costs, how to evaluate.",
+      "finalPrompt": "Ask of any technology: is it reshuffling existing alleles, or rewriting the DNA? Then name a benefit and a cost.",
+      "caption": "Five takeaways: gamete control, pollination methods, Australian outcomes, germline comparison, evaluating costs.",
       "voiceover": {
-        "text": "Let's lock it in. Five takeaways. First, selective breeding makes desired alleles more common over generations, but it narrows the gene pool. Second, artificial insemination and embryo transfer spread the genetics of a few elite individuals very widely through a herd. Third, controlled pollination directs plant inheritance to produce uniform, high yield crops. Fourth, the cost shared by all of these is reduced biodiversity, which brings shared disease vulnerability and animal welfare concerns. And fifth, to evaluate any of these technologies, always weigh the productivity benefit against the gene pool cost, then make a clear judgement. So the formula for an evaluate question, name a benefit, name a gene pool cost, and commit to a verdict. Next lesson, we move from IQ one into IQ two, and start unpacking the structure of DNA itself."
-      }
+        "text": "Let's lock it in. Five things to take away. First, reproductive technologies like selective breeding, artificial insemination and embryo transfer control which gametes meet, but they don't alter the DNA. Second, artificial pollination can be done by hand, with emasculation and bagging, by managed hives, or by applying collected pollen mechanically. Third, in Australia it secures crops like almonds and custard apples, and it's how breeders build new varieties. Fourth, genetic engineering is different, because it changes the DNA sequence itself, although both kinds of change can be inherited. And fifth, whenever you evaluate one of these technologies, weigh the productivity gain against the cost to the gene pool and the ecosystem. So the question to ask every time is, is this reshuffling existing alleles, or rewriting the DNA?"
+      },
+      "durationInFrames": 1593
     }
   ]
 }

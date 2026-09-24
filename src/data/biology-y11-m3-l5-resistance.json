@@ -1,0 +1,421 @@
+{
+  "title": "Resistance: Evolution in Action",
+  "subtitle": "Antibiotic-resistant bacteria and DDT-resistant mosquitoes as natural selection",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 5",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Conduct a secondary-source investigation to analyse how human-induced pressures can drive the emergence of antibiotic-resistant strains of bacteria and Dichloro-Diphenyl-Trichloroethane (DDT)-resistant mosquitoes",
+    "Explain how human-induced changes may function as selective pressures",
+    "explain modern-day examples that demonstrate evolutionary change, for example: the cane toad, antibiotic-resistant strains of bacteria"
+  ],
+  "moduleLessonCount": 9,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-04",
+    "BI-11WS-05",
+    "BI-11WS-06",
+    "BI-11WS-07"
+  ],
+  "inquiryQuestion": "What is the evidence that supports the Theory of Evolution by Natural Selection?",
+  "lessonIntent": "Students can explain the emergence of antibiotic-resistant bacteria and DDT-resistant mosquitoes as natural selection driven by human-induced pressures, compare the two cases, and analyse resistance data from secondary sources.",
+  "examSkill": "Explain resistance as natural selection with a named human-induced pressure, interpret a resistance-over-time graph, and avoid saying organisms 'become immune' or 'develop resistance' in response to exposure.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, antibiotic and insecticide resistance, evolution you can watch happen. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Resistance: Evolution in Action"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two years from new drug to resistance",
+      "body": "Methicillin was introduced in 1959 to treat penicillin-resistant Staphylococcus aureus. By 1961, methicillin-resistant strains, now called MRSA, had already been reported.",
+      "callout": "How can bacteria outpace a brand new drug so quickly?",
+      "image": "bioY11M3L5AntibioticPlate",
+      "durationInFrames": 1760,
+      "caption": "MRSA was reported in 1961, only two years after methicillin was introduced.",
+      "voiceover": {
+        "text": "When penicillin became widely available in the 1940s, it felt like a miracle. Infections that used to kill people could suddenly be cured in days. But within just a few years, many hospital strains of Staphylococcus aureus were no longer affected by it. So a new antibiotic, methicillin, was introduced in 1959, designed specifically to get around that problem. By 1961, only two years later, doctors had already reported strains resistant to methicillin as well. Today we call them MRSA, and they're still a serious problem in hospitals worldwide. So how can bacteria outpace a brand new drug that quickly? The answer isn't that bacteria are clever. It's natural selection, running at high speed, and today we'll see how the same process made mosquitoes resistant to the insecticide DDT."
+      }
+    },
+    {
+      "id": "concept-bacteria",
+      "type": "concept",
+      "heading": "How antibiotic resistance evolves",
+      "body": "Antibiotic resistance follows the same steps as any natural selection.",
+      "bullets": [
+        {
+          "text": "Variation: a few bacteria carry a resistance allele, from random mutation or a gene gained from another bacterium."
+        },
+        {
+          "text": "Pressure: an antibiotic kills the susceptible bacteria."
+        },
+        {
+          "text": "The resistant survivors reproduce by binary fission, with little competition."
+        },
+        {
+          "text": "Resistant bacteria soon make up most of the population, forming a resistant strain."
+        }
+      ],
+      "secondary": "Bacteria can also pass resistance genes to each other on plasmids, a process called horizontal gene transfer, so resistance can spread between different species.",
+      "callout": "The antibiotic selects resistance. It does not cause it.",
+      "durationInFrames": 1869,
+      "caption": "Antibiotics kill susceptible bacteria, leaving resistant variants to multiply.",
+      "voiceover": {
+        "text": "So let's run antibiotic resistance through our natural selection steps. First, variation. In a huge population of bacteria, a few individuals happen to carry an allele that makes them resistant. That allele came from a random mutation, or from a gene picked up from another bacterium. Next comes the selection pressure, the antibiotic, which kills the susceptible bacteria. The resistant ones survive, and now they have space and nutrients with very little competition, so they reproduce rapidly by binary fission, passing the resistance allele to every daughter cell. Before long, resistant bacteria make up most of the population, and we have a resistant strain. There's an extra twist with bacteria. They can pass resistance genes to each other on small loops of DNA called plasmids, which is horizontal gene transfer, so resistance can even jump between species."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "v",
+            "label": "Mostly susceptible, a few resistant"
+          },
+          {
+            "id": "a",
+            "label": "Antibiotic kills susceptible bacteria"
+          },
+          {
+            "id": "s",
+            "label": "Resistant survivors multiply"
+          },
+          {
+            "id": "r",
+            "label": "Population is now a resistant strain"
+          }
+        ],
+        "edges": [
+          {
+            "from": "v",
+            "to": "a"
+          },
+          {
+            "from": "a",
+            "to": "s"
+          },
+          {
+            "from": "s",
+            "to": "r"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-drivers",
+      "type": "concept",
+      "heading": "Human pressures that speed it up",
+      "body": "Every use of an antibiotic is a selection event, so how we use them matters.",
+      "bullets": [
+        {
+          "text": "Prescribing antibiotics for viral infections, where they cannot help."
+        },
+        {
+          "text": "Routine use in livestock, exposing huge bacterial populations."
+        },
+        {
+          "text": "Heavy use in hospitals, where resistant strains can spread between patients."
+        }
+      ],
+      "secondary": "Bacteria evolve quickly because populations are enormous and some divide as often as every 20 minutes in ideal conditions, so many generations pass in days.",
+      "callout": "More use means more selection.",
+      "durationInFrames": 1882,
+      "caption": "Unnecessary prescriptions, livestock use and hospital use all increase selection for resistance.",
+      "voiceover": {
+        "text": "Now, this is a human induced selection pressure, and the way we use antibiotics decides how strong that pressure is. Every dose is a selection event. Prescribing antibiotics for viral infections, like colds and flu, doesn't touch the virus at all, but it still selects for resistance among the bacteria living in your body. Routine use in livestock exposes enormous bacterial populations to antibiotics, and heavy use in hospitals creates places where resistant strains can build up and pass between vulnerable patients. And bacteria respond fast, for two reasons. Their populations are enormous, so rare resistant variants are almost always present somewhere. And some bacteria can divide as often as every twenty minutes in ideal conditions, so dozens of generations can pass in a single day. That's why we can watch this evolution happen within a human lifetime."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Human action",
+          "Why it adds pressure"
+        ],
+        "rows": [
+          [
+            "Antibiotics for a virus",
+            "No benefit, but selects body bacteria"
+          ],
+          [
+            "Routine livestock use",
+            "Exposes vast bacterial populations"
+          ],
+          [
+            "Heavy hospital use",
+            "Resistant strains build up and spread"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Antibiotic: a substance that kills or stops the growth of bacteria, not viruses."
+        },
+        {
+          "text": "Resistance: an inherited ability to survive a dose that kills most of the population."
+        },
+        {
+          "text": "Resistant strain: a population in which most individuals carry resistance."
+        },
+        {
+          "text": "Horizontal gene transfer: passing genes between organisms other than parent to offspring."
+        }
+      ],
+      "callout": "Resistance belongs to the microbe, not the patient.",
+      "durationInFrames": 1732,
+      "caption": "Antibiotic, resistance, resistant strain, horizontal gene transfer.",
+      "voiceover": {
+        "text": "Alright, the key terms. An antibiotic is a substance that kills bacteria or stops them growing. It has no effect on viruses, which is why it's pointless for a cold. Resistance is an inherited ability to survive a dose that kills most of the population, and the word inherited is doing important work there. A resistant strain is a population of bacteria in which most individuals now carry that resistance. And horizontal gene transfer is the passing of genes between organisms by any route other than from parent to offspring, such as bacteria swapping plasmids. One more point on language, resistance belongs to the microbe, not to the patient. People don't become resistant to antibiotics, the bacteria inside them do, and that's a sentence markers look for."
+      }
+    },
+    {
+      "id": "concept-ddt",
+      "type": "concept",
+      "heading": "DDT-resistant mosquitoes",
+      "body": "The same process defeated a global effort to wipe out malaria.",
+      "bullets": [
+        {
+          "text": "From 1955, the WHO malaria eradication campaign relied on spraying DDT inside homes."
+        },
+        {
+          "text": "DDT kills mosquitoes by disrupting sodium channels in their nerves."
+        },
+        {
+          "text": "Resistant mosquitoes had altered sodium channels or enzymes that break DDT down."
+        },
+        {
+          "text": "Resistance spread, and the eradication programme was abandoned in 1969."
+        }
+      ],
+      "secondary": "Mosquitoes can only pass resistance from parent to offspring, and each generation takes weeks, so resistance built up over years rather than days.",
+      "callout": "Same selection, slower generations.",
+      "durationInFrames": 1828,
+      "caption": "DDT spraying selected for resistant mosquitoes, contributing to the end of the malaria eradication campaign.",
+      "voiceover": {
+        "text": "Now let's move from bacteria to insects. DDT is an insecticide that kills mosquitoes by disrupting the sodium channels in their nerve cells. In 1955, the World Health Organization launched a campaign to eradicate malaria, and it relied heavily on spraying DDT on the inside walls of homes, where mosquitoes rest after feeding. At first it worked brilliantly. But some mosquitoes carried mutations that changed the shape of their sodium channels, so DDT couldn't bind as well, and others made more of the enzymes that break DDT down. Those mosquitoes survived and bred. Resistant populations spread across many regions, and by 1969 the global eradication programme had been abandoned. Notice the difference in speed, though. Mosquitoes only pass resistance from parent to offspring, and a generation takes weeks, so it built up over years."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Years of DDT spraying",
+        "yLabel": "Proportion of resistant mosquitoes",
+        "series": [
+          {
+            "label": "Resistant mosquitoes",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0.03
+              ],
+              [
+                0.2,
+                0.06
+              ],
+              [
+                0.4,
+                0.18
+              ],
+              [
+                0.6,
+                0.5
+              ],
+              [
+                0.8,
+                0.8
+              ],
+              [
+                1,
+                0.9
+              ]
+            ]
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-compare",
+      "type": "concept",
+      "heading": "Comparing the two cases",
+      "body": "Both are natural selection driven by a human-made chemical.",
+      "bullets": [
+        {
+          "text": "Same pattern: random variation, chemical pressure, survival, inheritance."
+        },
+        {
+          "text": "Bacteria gain variation by mutation and horizontal gene transfer."
+        },
+        {
+          "text": "Mosquitoes gain variation by mutation and sexual reproduction."
+        },
+        {
+          "text": "Bacteria evolve in days; mosquitoes take years."
+        }
+      ],
+      "secondary": "For a secondary-source investigation, use reliable sources such as WHO reports and peer-reviewed studies, check dates and sample sizes, and compare several sources before concluding.",
+      "callout": "Compare the pressure, the variation and the speed.",
+      "durationInFrames": 1746,
+      "caption": "Bacteria and mosquitoes follow the same selection pattern, at very different speeds.",
+      "voiceover": {
+        "text": "So how do the two cases compare? The pattern is identical. There's random variation, a human made chemical acts as the selection pressure, resistant individuals survive and reproduce, and resistance is inherited. The differences are in the details. Bacteria get their variation from mutation, plus horizontal gene transfer, while mosquitoes get theirs from mutation, reshuffled by sexual reproduction. And the speed is completely different, days for bacteria, years for mosquitoes, because of generation time and population size. You'll research this as a secondary source investigation, so a word on method. Use reliable sources, like World Health Organization reports and peer reviewed studies. Check when the data were collected and how large the samples were, and compare several sources before you draw a conclusion. A single website isn't evidence."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Bacteria",
+          "Mosquitoes"
+        ],
+        "rows": [
+          [
+            "Pressure",
+            "Antibiotics",
+            "DDT"
+          ],
+          [
+            "Source of variation",
+            "Mutation, gene transfer",
+            "Mutation, sexual reproduction"
+          ],
+          [
+            "Generation time",
+            "Minutes to hours",
+            "Weeks"
+          ],
+          [
+            "Resistance emerges in",
+            "Days to years",
+            "Years"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Analysing resistance data",
+      "question": "In a village sprayed with DDT every year, the percentage of mosquitoes surviving a standard DDT test dose was: Year 0, 2%. Year 1, 5%. Year 2, 15%. Year 3, 40%. Year 4, 70%. Year 5, 85%. Describe the trend and explain it using natural selection.",
+      "coachNote": "Describe with numbers first, then explain the shape of the curve.",
+      "steps": [
+        "Trend: survival rose from 2% to 85% over five years, slowly at first, then rapidly.",
+        "Year 0: a few mosquitoes already carried resistance alleles.",
+        "Each spraying killed susceptible mosquitoes, so resistant ones bred more.",
+        "Early on, few parents were resistant; as their share grew, the rise sped up.",
+        "Answer: DDT selected for resistance alleles, which increased in frequency each generation ✓"
+      ],
+      "durationInFrames": 1855,
+      "caption": "Resistance rose from 2% to 85% as DDT selected for resistant mosquitoes.",
+      "voiceover": {
+        "text": "Let's analyse some data the way an exam would. In a village sprayed with DDT every year, the percentage of mosquitoes surviving a standard test dose was two percent in year zero, then five, fifteen, forty, seventy, and finally eighty five percent in year five. Describe the trend and explain it. Always describe with numbers first. Survival rose from two percent to eighty five percent over five years, slowly at first and then rapidly. Now explain. In year zero, a few mosquitoes already carried resistance alleles. Each spraying killed the susceptible ones, so resistant mosquitoes survived and bred more. And the shape of the curve makes sense too. Early on, very few parents were resistant, so the rise was slow, but as their share grew, each generation had more resistant parents, and the increase sped up."
+      },
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          {
+            "label": "Year 0",
+            "value": 2
+          },
+          {
+            "label": "Year 1",
+            "value": 5
+          },
+          {
+            "label": "Year 2",
+            "value": 15
+          },
+          {
+            "label": "Year 3",
+            "value": 40
+          },
+          {
+            "label": "Year 4",
+            "value": 70
+          },
+          {
+            "label": "Year 5",
+            "value": 85
+          }
+        ],
+        "unit": "%"
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: 'The bacteria became immune' or 'the mosquitoes developed resistance to survive'. Individuals do not change in response to the chemical. The resistant variants already existed and were selected.",
+      "secondary": "Trap 2: 'The patient became resistant to the antibiotic'. People do not become resistant. The bacterial population inside them changes.",
+      "mistakeTag": "Where resistance marks vanish",
+      "callout": "Selected, not developed. The microbe, not the patient.",
+      "durationInFrames": 1787,
+      "caption": "Resistant variants already exist and are selected; resistance belongs to the microbe.",
+      "voiceover": {
+        "text": "Two traps that lose marks all the time. Trap one is saying the bacteria became immune, or the mosquitoes developed resistance in order to survive. Both suggest that individuals change in response to the chemical, and that's not what happens. Immunity is something your immune system does, it isn't a property of bacteria. And an individual mosquito can't decide to become resistant. The resistant variants were already in the population, by chance, before the chemical arrived, and the chemical simply selected them. Trap two is writing that the patient became resistant to the antibiotic. People don't become resistant. It's the bacterial population inside them that changes. So use the language of selection. Say resistant variants were selected, and their allele frequency increased, and you'll be writing it the way markers want."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A person with a cold, which is caused by a virus, takes antibiotics left over from an earlier illness. Explain how this could contribute to antibiotic resistance, even though the cold virus is unaffected.",
+      "pausePrompt": "Pause and explain the link.",
+      "answerSteps": [
+        "The antibiotic has no effect on the cold virus.",
+        "It still acts on the many bacteria living in the person's body.",
+        "Susceptible bacteria die, while any resistant bacteria survive and multiply.",
+        "Answer: the dose selects for resistant bacteria, which can spread or share resistance genes ✓"
+      ],
+      "durationInFrames": 1787,
+      "caption": "Unneeded antibiotics still select for resistance in the bacteria that live in the body.",
+      "voiceover": {
+        "text": "Quick check. Someone with a cold, which is caused by a virus, takes some antibiotics left over from an earlier illness. Explain how that could contribute to antibiotic resistance, even though the cold virus isn't affected at all. Pause and explain the link. OK, here's the reasoning. The antibiotic does nothing to the cold virus, so there's no benefit. But your body is home to huge numbers of bacteria, on your skin and in your gut, and the antibiotic still acts on them. The susceptible bacteria die, while any resistant ones survive and multiply with less competition. So that unnecessary dose has applied a selection pressure, raising the proportion of resistant bacteria. Those bacteria can spread to other people, or pass resistance genes to other bacteria, including ones that cause disease."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Antibiotic resistance is natural selection: antibiotics kill susceptible bacteria, leaving resistant ones to multiply.",
+        "Human use of antibiotics in medicine, livestock and hospitals is a strong selection pressure.",
+        "DDT selected for mosquitoes with altered sodium channels or detox enzymes.",
+        "Bacteria evolve resistance faster: short generations, huge populations, horizontal gene transfer.",
+        "Resistant variants are selected, not developed, and resistance belongs to the microbe."
+      ],
+      "finalPrompt": "Every resistance answer: pre-existing variation, named human-induced pressure, survival and reproduction, allele frequency rises.",
+      "durationInFrames": 1800,
+      "caption": "Five takeaways: bacteria, human pressures, DDT, speed, selection language.",
+      "voiceover": {
+        "text": "Let's lock it in. First, antibiotic resistance is natural selection. The antibiotic kills the susceptible bacteria, and the resistant ones survive and multiply. Second, humans are the source of that pressure, through antibiotic use in medicine, in livestock and in hospitals, and unnecessary use only adds to it. Third, DDT did the same thing to mosquitoes, selecting for individuals with altered sodium channels or extra enzymes that break DDT down, which helped end the malaria eradication campaign. Fourth, bacteria evolve resistance much faster than mosquitoes, thanks to short generations, huge populations and horizontal gene transfer. And fifth, get the language right. Resistant variants are selected, not developed, and resistance belongs to the microbe, not the patient. These are evolution happening in real time, and they're the perfect modern examples for your answers."
+      }
+    }
+  ]
+}

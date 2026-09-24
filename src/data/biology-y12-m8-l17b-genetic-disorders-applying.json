@@ -1,65 +1,71 @@
 {
   "title": "Genetic Disorders, Part B",
-  "subtitle": "A pedigree worked example, gene therapy, and the exam traps",
+  "subtitle": "A pedigree worked example, two gene therapies, and their ethical and legal implications",
   "subject": "Biology",
+  "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 8",
   "lesson": "Lesson 17B",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
-  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
+  "syllabusModule": "Module 8 Non-infectious Disease and Disorders (2017) + Heredity and Biotechnology (2025)",
   "syllabusDotPoints": [
-    "investigate the causes and effects of genetic disorders in humans, including chromosomal and single-gene disorders",
-    "use secondary sources to evaluate the effectiveness of current disease-prevention methods, including genetic screening and emerging gene technologies"
+    "investigate the causes and effects of non-infectious diseases in humans, including but not limited to: genetic diseases",
+    "use secondary sources to evaluate the effectiveness of current disease-prevention methods and develop strategies for the prevention of a non-infectious disease, including but not limited to: genetic engineering",
+    "Use Punnett squares to solve inheritance problems, including autosomal dominant/recessive, codominance, incomplete dominance, multiple alleles and sex-linked",
+    "Outline the method and outcome of 2 selected gene therapies used to reduce the impact of genetic conditions",
+    "Assess the ethical and legal implications of using gene therapies in health care"
   ],
   "moduleLessonCount": 21,
   "nesaOutcomes": [
     "BIO12-15",
+    "BI-12-01",
+    "BI-12-04",
     "BIO11/12-4",
     "BIO11/12-5",
     "BIO11/12-6",
     "BIO11/12-7"
   ],
   "inquiryQuestion": "How can non-infectious diseases be prevented?",
-  "lessonIntent": "Students can classify a genetic disorder as chromosomal or single-gene, explain non-disjunction and Mendelian inheritance, and evaluate genetic screening and gene therapy as prevention strategies.",
-  "examSkill": "Classify a genetic disorder and its inheritance pattern, calculate offspring risk, and distinguish a screening test from a diagnostic one.",
+  "lessonIntent": "Students can solve carrier and X-linked probability problems, outline the method and outcome of two gene therapies (Luxturna and Casgevy), and assess the ethical and legal implications of gene therapy in health care.",
+  "examSkill": "Calculate conditional carrier probability, outline a named gene therapy's method and outcome, and assess ethical and legal issues with balanced, specific points.",
   "productionRole": "production",
-  "productionNotes": "Part B of a 2-part split of L17. Opens with a brief recap of Part A, then the carrier-probability worked example, gene therapy and CRISPR, misconception, quick-check and summary. Assumes the student has watched Part A.",
+  "productionNotes": "Part B of a 2-part split of L17. Opens with a brief recap of Part A, then the carrier-probability worked example, gene therapy basics, two gene therapies (Luxturna for RPE65 retinal dystrophy / LCA, Casgevy for sickle cell disease), ethical and legal implications, misconception, quick-check and summary. Assumes the student has watched Part A.",
   "fps": 30,
   "width": 1920,
   "height": 1080,
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, genetic disorders, continued. Let's go."
+    "text": "Welcome back to HSC Biology. Today, genetic disorders, continued. Let's go."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 105,
-      "caption": "Genetic Disorders, Part B (Year 12 Biology, Module 8, Lesson 17B)"
+      "caption": "Genetic Disorders, Part B"
     },
     {
       "id": "recap",
       "type": "concept",
       "heading": "Where we left off",
-      "body": "Quick recap from Part A. Genetic disorders come in three kinds. Non-disjunction changes chromosome number. Single genes follow dominant and recessive patterns through a family. Screening flags risk; diagnosis confirms it.",
+      "body": "Quick recap from Part A. Genetic disorders come in three kinds. Non-disjunction changes chromosome number. Single genes follow dominant and recessive patterns. Biotechnology diagnoses them, and screening flags risk while diagnosis confirms.",
       "bullets": [
         {
           "text": "Three categories: single-gene, chromosomal, and multifactorial.",
           "at": 5
         },
         {
-          "text": "Single-gene disorders follow dominant or recessive inheritance.",
+          "text": "Single-gene disorders follow dominant, recessive or X-linked inheritance.",
           "at": 11
         },
         {
-          "text": "Screening flags risk; a diagnostic test confirms the disorder.",
+          "text": "Protein and DNA tests diagnose them; screening flags risk, diagnosis confirms.",
           "at": 16
         }
       ],
       "callout": "Now we work a real pedigree.",
-      "durationInFrames": 780,
+      "durationInFrames": 1078,
       "caption": "Quick recap of Part A before we continue.",
       "revealDelays": {
         "heading": 29,
@@ -68,7 +74,7 @@
         "callout": 698
       },
       "voiceover": {
-        "text": "Welcome back. Quick recap from Part A. Genetic disorders fall into three kinds, and non-disjunction is what changes chromosome number when cells divide. Single-gene disorders follow dominant and recessive patterns that you can trace through a family, and screening is about flagging risk while a diagnostic test is what actually confirms a disorder. Right, with the inheritance rules fresh, let's work through a real pedigree question."
+        "text": "Welcome back. Quick recap from Part A. Genetic disorders fall into three kinds, and non disjunction is what changes chromosome number when cells divide. Single gene disorders follow dominant, recessive and X linked patterns that you can trace through a family. And biotechnology diagnoses them, with protein tests and DNA tests, where screening flags risk and a diagnostic test confirms. Right, with the inheritance rules fresh, let's work through a real pedigree question, and then see how two gene therapies actually work."
       },
       "recapSeed": "Where we left off"
     },
@@ -85,7 +91,7 @@
         "Of those three unaffected outcomes, two are carriers (Aa), so the chance is 2 out of 3.",
         "Answer: there is a 2/3, about 67%, probability that Priya is a carrier ✓"
       ],
-      "durationInFrames": 1764,
+      "durationInFrames": 2494,
       "caption": "Given she is unaffected, Priya has a 2/3 chance of being a carrier (1 AA : 2 Aa among unaffected).",
       "voiceover": {
         "text": "Let's do a genetics calculation, because conditional probability trips students up every year. Both of Priya's parents are unaffected carriers of cystic fibrosis, which is autosomal recessive. Priya herself is unaffected. What's the probability she's a carrier? Step one, write the cross. Each carrier parent is big A little a, so the cross is big A little a, times big A little a. Step two, the standard offspring ratio. That cross gives one big A big A, to two big A little a, to one little a little a, where little a little a would be affected. Step three, and this is the crucial move, we're told Priya is unaffected. So she cannot be little a little a. That removes the affected quarter entirely, leaving only the unaffected outcomes, one big A big A and two big A little a. Step four, count the carriers among what's left. Of those three unaffected possibilities, two are carriers, the big A little a ones. So the probability is two out of three, about sixty seven percent. The trick was conditioning on the information that she's unaffected, not just reading twenty five or fifty percent straight off the square."
@@ -94,39 +100,213 @@
     {
       "id": "concept-gene-therapy",
       "type": "concept",
-      "heading": "Gene therapy, CRISPR and ethics",
-      "body": "Gene therapy targets the genetic root cause, but it remains experimental for most disorders and raises serious ethical questions.",
+      "heading": "Gene therapy: three choices",
+      "body": "Every gene therapy can be described by three choices: which cells, where the change happens, and what is done to the gene.",
       "bullets": [
         {
-          "text": "Viral vectors deliver a working gene copy into cells, as in approved therapies for inherited blindness."
+          "text": "Somatic or germline: approved therapies change body cells only, so they are not inherited."
         },
         {
-          "text": "CRISPR-Cas9 cuts and edits DNA at a precise site; Casgevy was the first approved in 2023."
+          "text": "In vivo or ex vivo: inside the body, or on cells removed, changed and returned."
         },
         {
-          "text": "Somatic editing affects only the patient; germline editing is heritable and banned in most countries."
+          "text": "Add or edit: deliver a working copy with a viral vector, or edit DNA with CRISPR."
         }
       ],
-      "secondary": "The limits are real. Off-target edits, delivery to the right organ, and cost all constrain it, with Casgevy around 3.5 million dollars per patient. Ethics covers access equity, genetic discrimination, and reproductive choice.",
-      "callout": "Powerful, but experimental, costly and ethically loaded.",
-      "durationInFrames": 1854,
-      "caption": "Gene therapy and CRISPR target the root cause but remain limited; germline editing is banned in most countries.",
+      "secondary": "A viral vector is a virus with its disease-causing genes removed, used to carry a working gene into cells.",
+      "callout": "Somatic, in vivo or ex vivo, add or edit: use these words to describe any gene therapy.",
+      "durationInFrames": 1811,
+      "caption": "Describe a gene therapy by cells (somatic), location (in vivo or ex vivo) and method (add or edit).",
       "voiceover": {
-        "text": "Finally, can we fix the gene itself? That's gene therapy, which delivers a functional version of a gene into a patient's cells to address the root cause. There are two main approaches. The first uses viral vectors, modified harmless viruses that carry a working gene copy into cells, and there are already approved examples, like Luxturna for an inherited form of blindness. The second is CRISPR Cas nine, molecular scissors guided by a short RNA to cut DNA at a precise spot, then either disable a gene or correct a mutation. In twenty twenty three, Casgevy became the first approved CRISPR therapy, for sickle cell disease. But here's the reality check the exam wants. CRISPR is approved for only a couple of conditions, because off-target edits, getting the machinery into the right organ, and cost all remain huge obstacles, with Casgevy running around three and a half million dollars per patient. There's also a vital distinction, somatic editing changes only the treated individual, while germline editing changes eggs, sperm or embryos and is therefore heritable, which is banned in most countries. And the ethics matter too, access equity, genetic discrimination by insurers or employers, and reproductive autonomy. Powerful technology, but nowhere near a universal cure yet."
+        "text": "Now, can we fix the gene itself? That's gene therapy, and any gene therapy can be described by three choices. First, which cells. Somatic gene therapy changes only body cells, so it isn't inherited, while germline therapy would change eggs, sperm or embryos, so it would be. Every approved gene therapy is somatic. Second, where the change happens. In vivo means inside the body, delivering the therapy straight to the tissue, while ex vivo means removing cells, changing them in the lab, and returning them. Third, what's done to the gene. You can add a working copy, usually carried by a viral vector, a virus with its disease causing genes removed. Or you can edit the existing DNA with a tool like CRISPR. Keep those three pairs in mind, because they're exactly how you outline the method of a gene therapy."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Choice",
+          "Option 1",
+          "Option 2"
+        ],
+        "rows": [
+          [
+            "Which cells",
+            "Somatic (not inherited)",
+            "Germline (inherited)"
+          ],
+          [
+            "Where",
+            "In vivo (in the body)",
+            "Ex vivo (cells removed)"
+          ],
+          [
+            "What",
+            "Add a working gene",
+            "Edit the existing gene"
+          ]
+        ]
+      },
+      "recapSeed": "Gene therapies: somatic, in vivo or ex vivo, add or edit."
+    },
+    {
+      "id": "therapy-luxturna",
+      "type": "concept",
+      "heading": "Gene therapy 1: Luxturna for inherited blindness",
+      "body": "Luxturna treats inherited retinal dystrophy, including some Leber congenital amaurosis, caused by two faulty RPE65 genes.",
+      "bullets": [
+        {
+          "text": "Cause: without RPE65, retinal cells cannot recycle the light-sensitive molecule, so vision fails."
+        },
+        {
+          "text": "Method: an AAV vector carrying working RPE65 is injected under the retina of each eye."
+        },
+        {
+          "text": "Outcome: treated patients navigated an obstacle course in much dimmer light; controls did not improve."
+        }
+      ],
+      "secondary": "This is somatic, in vivo gene addition. It improves vision but does not restore normal sight, and it only works while enough retinal cells survive.",
+      "callout": "Somatic, in vivo, adds a gene.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "dx",
+            "label": "DNA test finds two faulty RPE65"
+          },
+          {
+            "id": "vec",
+            "label": "AAV vector with working RPE65"
+          },
+          {
+            "id": "inj",
+            "label": "Injected under the retina"
+          },
+          {
+            "id": "enz",
+            "label": "Retinal cells make RPE65"
+          },
+          {
+            "id": "out",
+            "label": "Better vision in dim light"
+          }
+        ],
+        "edges": [
+          {
+            "from": "dx",
+            "to": "vec"
+          },
+          {
+            "from": "vec",
+            "to": "inj"
+          },
+          {
+            "from": "inj",
+            "to": "enz"
+          },
+          {
+            "from": "enz",
+            "to": "out"
+          }
+        ]
+      },
+      "durationInFrames": 2208,
+      "caption": "Luxturna: an AAV vector adds working RPE65 to retinal cells, improving vision in dim light.",
+      "voiceover": {
+        "text": "The first gene therapy is Luxturna, for an inherited retinal dystrophy that includes some cases of Leber congenital amaurosis. It's caused by two faulty copies of a gene called R P E sixty five. Without that enzyme, cells at the back of the retina can't recycle the light sensitive molecule the eye needs, so vision fades, often from childhood. Here's the method. First, a DNA test has to confirm two faulty R P E sixty five genes, which links straight back to diagnosis in Part A. Then, in surgery, a harmless adeno associated virus carrying a working R P E sixty five gene is injected under the retina of each eye. The retinal cells take up the gene and start making the enzyme. And the outcome, in the main trial, treated patients could find their way through an obstacle course in much dimmer light than before, while the untreated control group didn't improve. It doesn't give normal sight, but it's a real gain. So Luxturna is somatic, in vivo, and adds a gene."
+      }
+    },
+    {
+      "id": "therapy-casgevy",
+      "type": "concept",
+      "heading": "Gene therapy 2: Casgevy for sickle cell disease",
+      "body": "Casgevy edits a patient's own blood stem cells outside the body so their red blood cells make fetal haemoglobin again.",
+      "bullets": [
+        {
+          "text": "Cause: a base substitution in the beta globin gene makes red blood cells sickle."
+        },
+        {
+          "text": "Method: stem cells are removed, CRISPR disables the BCL11A switch, and cells are returned after chemotherapy."
+        },
+        {
+          "text": "Outcome: in trials, over 90% of patients had no severe pain crises for at least a year."
+        }
+      ],
+      "secondary": "Fetal haemoglobin does not sickle, so switching it back on reduces sickling. The chemotherapy needed to clear the bone marrow carries serious risks, including infertility.",
+      "callout": "Somatic, ex vivo, edits a gene.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Luxturna",
+          "Casgevy"
+        ],
+        "rows": [
+          [
+            "Condition",
+            "RPE65 retinal dystrophy",
+            "Sickle cell disease"
+          ],
+          [
+            "Where",
+            "In vivo, under the retina",
+            "Ex vivo, blood stem cells"
+          ],
+          [
+            "What",
+            "Adds working RPE65",
+            "CRISPR edit of BCL11A switch"
+          ],
+          [
+            "Outcome",
+            "Better vision in dim light",
+            "Far fewer pain crises"
+          ]
+        ]
+      },
+      "durationInFrames": 1985,
+      "caption": "Casgevy: ex vivo CRISPR editing of blood stem cells restores fetal haemoglobin and prevents crises.",
+      "voiceover": {
+        "text": "The second is Casgevy, for sickle cell disease, and it works in almost the opposite way. Sickle cell is caused by a base substitution in the beta globin gene, which makes red blood cells bend into a sickle shape, block small blood vessels, and cause severe pain crises. Here's the method. Doctors collect the patient's blood stem cells, and in the lab they use CRISPR to disable a genetic switch called B C L eleven A, which normally turns off fetal haemoglobin after birth. The patient then has strong chemotherapy to clear the bone marrow, and the edited cells are infused back. Their red blood cells now make fetal haemoglobin, which doesn't sickle. The outcome, in the trials, more than ninety percent of patients had no severe pain crises for at least a year. So Casgevy is somatic, ex vivo, and edits a gene. That contrast with Luxturna is exactly what a compare question wants."
+      }
+    },
+    {
+      "id": "concept-ethics-legal",
+      "type": "concept",
+      "heading": "Ethical and legal implications",
+      "body": "Gene therapies raise questions about access, consent and risk, and they are tightly regulated.",
+      "bullets": [
+        {
+          "text": "Access and equity: these one-off treatments cost from about US$850,000 to over US$2 million."
+        },
+        {
+          "text": "Consent and risk: patients, often children, must weigh unknown long-term effects."
+        },
+        {
+          "text": "Law in Australia: the TGA approves gene therapies and the Gene Technology Regulator licenses work with GMOs."
+        },
+        {
+          "text": "Heritable changes to the human genome are illegal in Australia."
+        }
+      ],
+      "secondary": "Somatic therapy changes one patient. Germline editing would change every descendant, who cannot consent, which is why the law draws the line there.",
+      "callout": "Who can access it, who consents, and where the law draws the line.",
+      "durationInFrames": 1923,
+      "caption": "Gene therapy raises cost, consent and risk issues; in Australia heritable human genome editing is illegal.",
+      "voiceover": {
+        "text": "Now the ethical and legal side, which the exam asks you to assess. Start with access and equity. These are one off treatments, but Luxturna costs about eight hundred and fifty thousand US dollars for both eyes, and Casgevy over two million. So who pays, and who misses out, especially since sickle cell disease is most common in lower income countries? Next, consent and risk. Many patients are children, so parents decide for them, and nobody yet knows the effects over a whole lifetime. Casgevy's chemotherapy, for example, can cause infertility. Then the law. In Australia, the Therapeutic Goods Administration has to approve a gene therapy before it can be used, and the Gene Technology Regulator licenses work with genetically modified organisms, which includes viral vectors. And making heritable changes to the human genome is illegal here, because a germline change would affect every descendant, none of whom can consent."
       }
     },
     {
       "id": "misconception",
       "type": "misconception",
       "heading": "Three traps",
-      "body": "Trap 1: claiming CRISPR can now cure any genetic disease. It is approved for only a couple of conditions, and delivery, off-target edits and cost still limit it.",
-      "secondary": "Trap 2: assuming chromosomal abnormalities are always inherited. Most trisomies are de novo, arising from non-disjunction in a parent with a normal karyotype. Trap 3: thinking carriers of a recessive condition are partly affected. One working allele usually makes enough protein, so carriers are typically symptom-free.",
+      "body": "Trap 1: claiming CRISPR can now cure any genetic disease. Approved gene therapies cover only a handful of conditions, and delivery, off-target edits and cost still limit them.",
+      "secondary": "Trap 2: assuming chromosomal abnormalities are always inherited. Most trisomies are de novo, arising from non-disjunction in a parent with a normal karyotype. Trap 3: thinking gene therapy is passed to the patient's children. Approved therapies are somatic, so a treated parent can still pass on the faulty allele.",
       "mistakeTag": "Where genetics marks vanish",
-      "callout": "CRISPR is not a cure-all, chromosomal is often de novo, carriers are unaffected.",
-      "durationInFrames": 1602,
-      "caption": "CRISPR is not a universal cure; most chromosomal disorders are de novo; carriers are usually unaffected.",
+      "callout": "Not a cure-all, often de novo, and somatic changes are not inherited.",
+      "durationInFrames": 1736,
+      "caption": "Gene therapy is not a cure-all; most trisomies are de novo; somatic therapy is not inherited.",
       "voiceover": {
-        "text": "Three traps that quietly cost marks every year. Trap one, the headline-driven one, claiming CRISPR can now cure any genetic disease. It can't. As of now it's approved for only a couple of conditions, both affecting blood cells, and delivering the machinery to other organs, off-target edits, and a multi-million-dollar price tag all remain major barriers. Calling CRISPR a current widespread treatment is simply wrong in an exam. Trap two, assuming chromosomal abnormalities are always inherited from a parent. The vast majority of trisomies, like trisomy twenty one, are de novo, arising from non-disjunction in the parent's gametes, while the parent's own karyotype is completely normal. Only the rarer translocation form of Down syndrome can be inherited from a carrier parent. Trap three, thinking carriers of a recessive condition are partly affected. They almost never are. A carrier has one faulty allele and one working one, and that single working copy usually makes enough protein, so the carrier is symptom-free. Only someone with two faulty copies develops the disease. Nail those three and genetics questions become easy marks."
+        "text": "Three traps that quietly cost marks. Trap one, claiming CRISPR can now cure any genetic disease. It can't. Approved gene therapies cover only a handful of conditions, and getting the therapy into the right cells, avoiding off target edits, and the enormous cost all remain major barriers. Trap two, assuming chromosomal abnormalities are always inherited from a parent. Most trisomies, like trisomy twenty one, are de novo, arising from non disjunction in a parent's gametes, while the parent's own karyotype is completely normal. Trap three, thinking gene therapy fixes the problem for the patient's children too. Approved therapies are somatic, so a person successfully treated with Casgevy still carries the faulty allele in their eggs or sperm, and can still pass it on. Not a cure all, often de novo, and somatic means not inherited."
       }
     },
     {
@@ -142,10 +322,10 @@
         "(b) Daughters are XᴴXᴴ or XᴴXʰ, and one of those two is a carrier, so the chance a daughter is a carrier is 1/2.",
         "Answer: (a) a son is affected with probability 1/2, (b) a daughter is a carrier with probability 1/2 ✓"
       ],
-      "durationInFrames": 2142,
+      "durationInFrames": 2367,
       "caption": "Carrier mother × unaffected father: sons affected 1/2, daughters carriers 1/2.",
       "voiceover": {
-        "text": "Quick check, and this is a guaranteed pedigree skill, an X-linked cross. A mother is an unaffected carrier of haemophilia A, which is X-linked recessive. The father is unaffected. What's the probability that, a, a son is affected, and b, a daughter is a carrier? Pause and draw the cross. Right, let's set it up. The mother carries one normal and one faulty X, so she's big X H, big X little h. The father is unaffected, so he's big X H, Y. Now the four equally likely children. From the mother's two X's and the father's X and Y, you get big X H big X H, big X H big X little h, big X H Y, and big X little h Y. Part a, the sons. Sons get the father's Y, paired with one of the mother's X's, so a son is either big X H Y, unaffected, or big X little h Y, affected. One of the two, so the chance a son is affected is one half. Part b, the daughters. Daughters get the father's big X H plus one of the mother's X's, so a daughter is either big X H big X H, completely normal, or big X H big X little h, a carrier. One of the two, so the chance a daughter is a carrier is one half. Set up the parental genotypes carefully and these are guaranteed marks."
+        "text": "Quick check, an X linked cross. A mother is an unaffected carrier of haemophilia A, which is X linked recessive. The father is unaffected. What's the probability that, a, a son is affected, and b, a daughter is a carrier? Pause and draw the cross. Right, let's set it up. The mother has one normal and one faulty X, so she's big X H, big X little h. The father is unaffected, so he's big X H, Y. The four equally likely children are big X H big X H, big X H big X little h, big X H Y, and big X little h Y. Part a, the sons. A son gets the father's Y and one of the mother's X chromosomes, so he's either big X H Y, unaffected, or big X little h Y, affected. That's one in two. Part b, the daughters. A daughter gets the father's big X H plus one of the mother's X chromosomes, so she's either completely normal, or big X H big X little h, a carrier. Again one in two."
       }
     },
     {
@@ -153,17 +333,17 @@
       "type": "summary",
       "heading": "Lock it in",
       "points": [
-        "Genetic disorders are chromosomal, single-gene, or multifactorial, and many are de novo, not inherited.",
-        "Non-disjunction in meiosis causes trisomy, like Down syndrome, or monosomy, like Turner syndrome.",
-        "Inheritance is autosomal recessive (CF, 25%), autosomal dominant (Huntington's, 50%), or X-linked recessive (haemophilia).",
-        "Screening tests like NIPT flag risk; diagnostic tests like amniocentesis confirm.",
-        "Gene therapy and CRISPR target the root cause but stay experimental, costly and ethically complex."
+        "Condition on the information given: an unaffected child of two carriers is a carrier with probability 2/3.",
+        "Describe gene therapies as somatic or germline, in vivo or ex vivo, add or edit.",
+        "Luxturna: an AAV vector adds working RPE65 under the retina, improving vision in dim light.",
+        "Casgevy: blood stem cells edited ex vivo with CRISPR restore fetal haemoglobin, preventing pain crises.",
+        "Ethics and law: cost, consent and long-term risk; heritable human editing is illegal in Australia."
       ],
-      "finalPrompt": "Given a genetic disorder? Ask: chromosomal or single-gene, what inheritance pattern, and is this test screening or diagnostic?",
-      "durationInFrames": 1500,
-      "caption": "Five takeaways: the categories, non-disjunction, inheritance patterns, screening vs diagnosis, and gene editing.",
+      "finalPrompt": "Gene therapy question? Name it, then say somatic, in vivo or ex vivo, add or edit, and the outcome.",
+      "durationInFrames": 1823,
+      "caption": "Five takeaways: conditional probability, the three choices, Luxturna, Casgevy, ethics and law.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, genetic disorders come in three categories, chromosomal, single-gene, and multifactorial, and many arise as de novo mutations rather than being inherited. Second, non-disjunction during meiosis causes either trisomy, like Down syndrome with an extra chromosome twenty one, or monosomy, like Turner syndrome with a single X. Third, the inheritance patterns, autosomal recessive like cystic fibrosis with a twenty five percent risk from two carriers, autosomal dominant like Huntington's with a fifty percent risk, and X-linked recessive like haemophilia, which mainly affects males. Fourth, screening tests like N I P T flag who's at risk, while diagnostic tests like amniocentesis confirm it definitively. And fifth, gene therapy and CRISPR can target the root cause, but they remain experimental, expensive, and ethically loaded, and germline editing is banned in most countries. So whenever you meet a genetic disorder, ask, is it chromosomal or single-gene, what's the inheritance pattern, and is this test screening or diagnostic. See you next lesson."
+        "text": "Let's lock it in. Five things to take away. First, in genetics problems, condition on the information you're given, so an unaffected child of two carriers is a carrier with a probability of two thirds. Second, describe any gene therapy with three pairs of words, somatic or germline, in vivo or ex vivo, add or edit. Third, Luxturna uses a viral vector to add a working R P E sixty five gene under the retina, improving vision in dim light. Fourth, Casgevy edits blood stem cells outside the body with CRISPR, so they make fetal haemoglobin and pain crises largely stop. And fifth, the ethics and law, cost and access, consent and long term risk, and in Australia heritable human genome editing is illegal. Whenever you meet a gene therapy, name it, classify it, and give its outcome. See you next lesson."
       }
     }
   ]

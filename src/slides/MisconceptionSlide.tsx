@@ -7,7 +7,7 @@
 import type {LessonData, TextScene} from '../lesson/types';
 import {ASSETS, type AssetName} from '../assets';
 import {FadeUp} from '../animations/FadeUp';
-import {ScribbleBox, ScribbleMark, ScribbleUnderline} from '../animations/DoodlePrimitives';
+import {ScribbleBox, ScribbleMark} from '../animations/DoodlePrimitives';
 import {AmbientBorderPulse, AmbientGlow} from '../animations/AmbientMotion';
 import {StampInTitle} from '../animations/MotionPrimitives';
 import {SlideFrame} from './shared/SlideFrame';
@@ -16,6 +16,7 @@ import {Eyebrow} from './shared/Eyebrow';
 import {ConceptText} from './shared/ConceptText';
 import {FONT_HAND, FONT_MONO, TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
+import {AssetImg} from './shared/AssetImg';
 
 type MisconceptionSlideProps = {
 	scene: TextScene;
@@ -71,7 +72,7 @@ export const MisconceptionSlide = ({scene, lesson, sceneIndex, totalScenes}: Mis
 
 			{scene.image && ASSETS[scene.image as AssetName] && (
 				<FadeUp delay={rd.diagram ?? 30} durationFrames={16} dy={14}>
-					<img
+					<AssetImg
 						src={ASSETS[scene.image as AssetName]}
 						alt=""
 						style={{
@@ -130,28 +131,20 @@ export const MisconceptionSlide = ({scene, lesson, sceneIndex, totalScenes}: Mis
 								margin: '0 auto',
 								padding: '24px 36px',
 								borderRadius: 12,
-								border: `1px solid ${TOK.rule}`,
-								background: 'rgba(15,22,20,0.78)',
-								color: TOK.amber,
+								border: `1px solid ${TOK.cardBorder}`,
+								// Amber left rule instead of a scribble underline: the scribble
+								// sat on the text's mid-line and read as a strikethrough.
+								borderLeft: `6px solid ${TOK.amber}`,
+								background: TOK.card,
+								color: TOK.ink,
 								fontSize: 34,
 								fontWeight: 700,
 								fontStyle: 'italic',
 								letterSpacing: '-0.012em',
-								boxShadow: '0 24px 80px rgba(0,0,0,0.26)',
+								boxShadow: TOK.cardShadow,
 							}}
 						>
-							→ {scene.callout}
-							<div style={{position: 'absolute', left: 38, right: 38, bottom: 8, pointerEvents: 'none'}}>
-								<ScribbleUnderline
-									width={Math.min(860, Math.max(320, scene.callout.length * 18))}
-									color={TOK.amber}
-									strokeWidth={4}
-									seed={19}
-									strokes={2}
-									delay={168}
-									durationFrames={16}
-								/>
-							</div>
+							{scene.callout}
 						</div>
 					</FadeUp>
 				</div>
@@ -184,12 +177,12 @@ const MistakeCard = ({
 					minHeight: 360,
 					padding: '32px 34px',
 					borderRadius: 14,
-					border: `1px solid ${tone === 'wrong' ? 'rgba(224,122,58,0.34)' : 'rgba(111,217,184,0.34)'}`,
+					border: `1px solid ${tone === 'wrong' ? 'rgba(224,122,58,0.34)' : `${theme.accent2}55`}`,
 					background:
 						tone === 'wrong'
-							? 'linear-gradient(135deg, rgba(224,122,58,0.13), rgba(15,22,20,0.76))'
-							: 'linear-gradient(135deg, rgba(31,138,111,0.18), rgba(15,22,20,0.76))',
-					boxShadow: '0 26px 90px rgba(0,0,0,0.28)',
+							? 'linear-gradient(135deg, rgba(224,122,58,0.10), rgba(255,255,255,0.96) 70%)'
+							: `linear-gradient(135deg, ${theme.soft}, rgba(255,255,255,0.96) 70%)`,
+					boxShadow: TOK.cardShadow,
 					overflow: 'hidden',
 				}}
 			>

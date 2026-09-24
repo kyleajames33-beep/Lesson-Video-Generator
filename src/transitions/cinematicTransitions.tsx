@@ -6,7 +6,8 @@ type TransitionKind =
 	| 'morphCut'
 	| 'zoomThrough'
 	| 'colorFlash'
-	| 'elasticPull';
+	| 'elasticPull'
+	| 'cameraBlur';
 
 type CinematicTransitionProps = {
 	accent?: string;
@@ -28,11 +29,13 @@ const flashOpacity = (progress: number, strength = 0.78) =>
 
 const shapeWipeStyle = (progress: number, entering: boolean) => {
 	const eased = easeOut(progress);
-	const cover = entering ? eased * 115 : 100;
+	// Must reach >118 so the slanted edge (cover − 18) clears the bottom-right
+	// corner: at 115 a white wedge stayed clipped for the rest of the scene.
+	const cover = entering ? eased * 122 : 100;
 	const exitScale = entering ? 1 : 1 + progress * 0.035;
 
 	return {
-		clipPath: entering
+		clipPath: entering && progress < 1
 			? `polygon(0 0, ${cover}% 0, ${Math.max(0, cover - 18)}% 100%, 0 100%)`
 			: 'inset(0 0 0 0)',
 		opacity: entering ? 1 : 1 - progress * 0.28,
@@ -101,6 +104,22 @@ const elasticPullStyle = (progress: number, entering: boolean) => {
 	};
 };
 
+// P1.8 — camera-blur. Outgoing scene pushes in and defocuses; incoming scene
+// lands from the same push + blur. Reads as one continuous camera move, so it
+// is the default for transitions *inside* an explanation.
+const cameraBlurStyle = (progress: number, entering: boolean) => {
+	const eased = entering ? easeOut(progress) : easeIn(progress);
+	const scale = entering ? 1.06 - eased * 0.06 : 1 + eased * 0.06;
+	const blur = entering ? (1 - eased) * 8 : eased * 8;
+
+	return {
+		opacity: entering ? clamp((progress - 0.2) / 0.6) : 1 - clamp((progress - 0.2) / 0.6),
+		filter: blur > 0.05 ? `blur(${blur.toFixed(2)}px)` : undefined,
+		transform: `scale(${scale})`,
+		transformOrigin: 'center',
+	};
+};
+
 const getSceneStyle = (kind: TransitionKind, progress: number, entering: boolean) => {
 	switch (kind) {
 		case 'shapeWipe':
@@ -115,6 +134,8 @@ const getSceneStyle = (kind: TransitionKind, progress: number, entering: boolean
 			return colorFlashStyle(progress, entering);
 		case 'elasticPull':
 			return elasticPullStyle(progress, entering);
+		case 'cameraBlur':
+			return cameraBlurStyle(progress, entering);
 		default:
 			return {};
 	}
@@ -129,8 +150,15 @@ const TransitionOverlay = ({
 	kind: TransitionKind;
 	progress: number;
 }) => {
+	if (kind === 'cameraBlur') {
+		return null;
+	}
+
 	if (kind === 'shapeWipe') {
-		const width = easeOut(progress) * 135;
+		// Band must finish fully off-frame (its trailing bottom corner is
+		// width − 36): at 135 a 1% accent sliver stayed on the next scene.
+		if (progress >= 1) return null;
+		const width = easeOut(progress) * 140;
 		return (
 			<div
 				style={{
@@ -151,7 +179,7 @@ const TransitionOverlay = ({
 					...baseLayer,
 					background: accent,
 					clipPath: `circle(${easeOut(progress) * 118}% at 50% 50%)`,
-					opacity: flashOpacity(progress, 0.5),
+					opacity: flashOpacity(progress, 0.22),
 					pointerEvents: 'none',
 				}}
 			/>
@@ -172,7 +200,7 @@ const TransitionOverlay = ({
 					border: `3px solid ${accent}`,
 					background: 'rgba(255,255,255,0.34)',
 					boxShadow: `0 0 52px ${accent}`,
-					opacity: 0.32 + flashOpacity(progress, 0.28),
+					opacity: flashOpacity(progress, 0.5),
 					transform: `scale(${scale})`,
 					pointerEvents: 'none',
 				}}
@@ -244,6 +272,8 @@ export const cinematicTransition = (
 		props,
 	};
 };
+
+export type {TransitionKind};
 
 export const transitionKinds: TransitionKind[] = [
 	'shapeWipe',

@@ -1,25 +1,29 @@
 {
-  "title": "Disease in Agriculture — Animals",
+  "title": "Animal Disease and Australian Biosecurity",
   "subtitle": "Why the dead animals are the smaller bill",
   "subject": "Biology",
+  "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 7",
   "lesson": "Lesson 7",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
   "syllabusModule": "Module 7 — Infectious Disease",
   "syllabusDotPoints": [
-    "assess the causes and effects of diseases on agricultural production, including animal diseases"
+    "assess the causes and effects of diseases on agricultural production, including but not limited to: animal diseases",
+    "investigate procedures that can be employed to prevent the spread of disease, including but not limited to: quarantine",
+    "Explain procedures employed in Australia to limit transmission of infectious diseases in animals and plants"
   ],
   "moduleLessonCount": 21,
   "nesaOutcomes": [
     "BIO12-14",
+    "BI-12-03",
     "BIO11/12-4",
     "BIO11/12-5",
     "BIO11/12-7"
   ],
   "inquiryQuestion": "How are diseases transmitted?",
-  "lessonIntent": "Students can name major livestock diseases by pathogen type, separate direct from indirect economic effects, and explain why disease-free status drives biosecurity.",
-  "examSkill": "Assess the effects of an animal disease on production, distinguishing direct from indirect costs and justifying biosecurity.",
+  "lessonIntent": "Students can name major livestock diseases by pathogen type, separate direct from indirect effects, and explain the pre-border, border and post-border procedures Australia uses to limit transmission of disease in animals and plants.",
+  "examSkill": "Explain how named Australian biosecurity procedures limit disease transmission, and assess the direct and indirect effects of an animal disease outbreak.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -27,26 +31,26 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, disease in animal agriculture. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, animal disease and Australian biosecurity. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 105,
-      "caption": "Disease in Agriculture — Animals (Year 12 Biology, Module 7, Lesson 7)"
+      "caption": "Animal Disease and Australian Biosecurity"
     },
     {
       "id": "hook",
       "type": "hook",
       "heading": "An 8 billion pound disease",
-      "body": "In 2001 foot-and-mouth disease hit UK livestock. 6 million animals were culled. The total cost dwarfed their value.",
+      "body": "In 2001 foot-and-mouth disease hit UK livestock. Millions of animals were culled, and the total cost dwarfed their value.",
       "callout": "Why is biosecurity so relentless at the border?",
       "image": "bioM7L7CattleBiosecurity",
-      "durationInFrames": 1615,
+      "durationInFrames": 1449,
       "caption": "The 2001 UK foot-and-mouth outbreak cost about 8 billion pounds, far more than the culled animals.",
       "voiceover": {
-        "text": "In two thousand and one, foot-and-mouth disease spread through livestock across the United Kingdom. The response was staggering, over six million animals were culled, the countryside was closed, and export markets were suspended. The final bill exceeded eight billion pounds, far more than the value of the animals themselves. Now contrast that with Australia, which has been free of foot-and-mouth since eighteen seventy-two. A government estimate put the cost of a single outbreak here at fifty-two billion dollars over ten years. And our quarantine service intercepts more than a hundred thousand prohibited items at the border every year. So why is biosecurity so relentless? Because the dead animals, it turns out, are often the smallest part of the bill."
+        "text": "In two thousand and one, foot and mouth disease tore through livestock across the United Kingdom. Over six million animals were culled, the countryside was closed to visitors, and export markets were shut. The final bill came to around eight billion pounds, far more than the animals themselves were worth. Australia has been free of foot and mouth since eighteen seventy two, and government estimates put the cost of a large outbreak here in the tens of billions of dollars. So how does Australia keep diseases like this out, and stop them spreading if they do arrive? That's the biosecurity system we're unpacking today."
       }
     },
     {
@@ -65,26 +69,32 @@
           "text": "For Australia, lost export markets usually exceed the cost of the animals."
         }
       ],
-      "secondary": "In the 2001 UK outbreak, the direct agricultural loss was about 2.7 billion pounds, but the total cost, including lost tourism and trade, reached around 8 billion.",
+      "secondary": "In the 2001 UK outbreak, lost tourism and trade pushed the total cost far beyond the value of the animals culled.",
       "callout": "Split every cost: direct, then indirect.",
-      "durationInFrames": 2115,
+      "durationInFrames": 1530,
       "caption": "Direct costs are animals and treatment; indirect costs are trade bans and lost markets.",
       "voiceover": {
-        "text": "Here's the framework the exam wants, and it's all about splitting the cost in two. Animal disease reduces production through direct effects and indirect effects. The direct effects are the obvious ones, animals dying, sick animals producing less milk or gaining weight more slowly, and the costs of treatment and culling. But the indirect effects are usually bigger, especially for an exporter. These are export bans, where importing countries shut their doors the moment a notifiable disease is detected, movement restrictions that stop animals being sold or transported, lost consumer confidence even for unaffected produce, and the cost of the government's emergency response. And here's the key insight for Australia, the indirect effects, particularly lost export markets, almost always exceed the direct cost of the animals. The UK outbreak proves it, the direct agricultural loss was about two point seven billion pounds, but the total cost, with lost tourism and trade disruption, reached around eight billion."
+        "text": "Here's the framework for assessing the effects, and it's about splitting the cost in two. The direct effects are the obvious ones, animals dying, sick animals producing less milk, meat or wool, and the costs of treatment and culling. The indirect effects are usually bigger, especially for an exporter. Importing countries shut their doors the moment a notifiable disease is detected, movement restrictions stop animals being sold or transported, and consumer confidence drops even for unaffected produce. For Australia, which exports a large share of its beef and lamb, lost market access almost always outweighs the direct cost of the animals. That's exactly why so much effort goes into prevention."
       },
       "diagram": {
-        "type": "barChart",
-        "bars": [
-          {
-            "label": "Direct loss",
-            "value": 2.7,
-            "color": "amber"
-          },
-          {
-            "label": "Total cost",
-            "value": 8,
-            "color": "bio"
-          }
+        "type": "table",
+        "headers": [
+          "Direct effects",
+          "Indirect effects"
+        ],
+        "rows": [
+          [
+            "Animal deaths",
+            "Export bans"
+          ],
+          [
+            "Lower milk, meat, wool output",
+            "Movement restrictions"
+          ],
+          [
+            "Treatment and culling costs",
+            "Lost consumer confidence"
+          ]
         ]
       }
     },
@@ -94,23 +104,23 @@
       "heading": "The terms you need",
       "bullets": [
         {
+          "text": "Biosecurity: measures that stop pests and diseases entering, establishing and spreading."
+        },
+        {
           "text": "Notifiable disease: one that must be reported to authorities by law."
         },
         {
-          "text": "Disease-free status: official recognition a country is free of a given pathogen."
+          "text": "Quarantine: isolating animals, plants or goods that may carry disease."
         },
         {
-          "text": "Culling: the destruction of infected or at-risk animals to control spread."
-        },
-        {
-          "text": "Export market access: the right to sell into markets that require disease-free status."
+          "text": "Traceability: tracking where animals have been, so an outbreak can be traced fast."
         }
       ],
-      "callout": "Disease-free status is an economic asset, not just a label.",
-      "durationInFrames": 1695,
-      "caption": "Notifiable disease, disease-free status, culling, export market access.",
+      "callout": "Keep it out, find it fast, stop it spreading.",
+      "durationInFrames": 1435,
+      "caption": "Biosecurity, notifiable disease, quarantine, traceability.",
       "voiceover": {
-        "text": "Four terms underpin this whole lesson. A notifiable disease is one that, by law, must be reported to authorities, because of its economic or public health significance, foot-and-mouth is the prime example. Disease-free status is the official recognition that a country is free of a particular pathogen, and this is genuinely an economic asset, not just a label. Culling is the destruction of infected and at-risk animals to control the spread of a disease, and it's one strategy among several. And export market access is the ability to sell agricultural products into overseas markets that require disease-free status, like Japan and South Korea. Hold onto that idea that disease-free status is an asset, because it explains everything about why Australia guards its borders so fiercely."
+        "text": "Four terms underpin this lesson. Biosecurity is the whole set of measures that stop pests and diseases entering a country, establishing, and spreading. A notifiable disease is one that, by law, must be reported to authorities, and foot and mouth is the prime example. Quarantine means isolating animals, plants or goods that might carry disease until they're shown to be safe. And traceability is the ability to track where animals have been and which animals they've mixed with, so that an outbreak can be traced and contained quickly. Put simply, biosecurity is about keeping disease out, finding it fast, and stopping it spreading."
       }
     },
     {
@@ -123,18 +133,18 @@
           "text": "Foot-and-mouth: a virus in cloven-hoofed animals, highly contagious."
         },
         {
-          "text": "Bovine tuberculosis: a bacterium in cattle, controlled by test and cull."
+          "text": "Bovine tuberculosis: a bacterium in cattle, eradicated here by test and cull."
         },
         {
-          "text": "Avian influenza: a virus in poultry, with near 100 percent mortality."
+          "text": "Avian influenza: a virus in birds; highly pathogenic strains kill most of a flock."
         }
       ],
-      "secondary": "Hydatid disease is caused by a tapeworm, and bovine viral diarrhoea by a Pestivirus. The pathogen type shapes whether you vaccinate, test and cull, or simply cull.",
+      "secondary": "Hydatid disease is caused by a tapeworm cycling between dogs and sheep. The pathogen type shapes whether you vaccinate, test and cull, or break the life cycle.",
       "callout": "Name it, then state its type and impact.",
-      "durationInFrames": 1995,
-      "caption": "Foot-and-mouth, bovine TB, avian influenza, hydatid, and BVD span all pathogen types.",
+      "durationInFrames": 1746,
+      "caption": "Foot-and-mouth, bovine TB, avian influenza and hydatid disease span different pathogen types.",
       "voiceover": {
-        "text": "The exam wants you to name livestock diseases, with their pathogen type and main impact, so let's run the key ones. Foot-and-mouth disease is caused by a virus, it affects all cloven-hoofed animals like cattle, pigs, and sheep, and it's extremely contagious, spreading by contact, aerosol, and contaminated vehicles, and the biggest threat is the export ban, not the animals. Bovine tuberculosis is caused by a bacterium, it affects cattle and deer, and it's controlled by test-and-cull programs. Avian influenza is a virus of poultry, and the highly pathogenic strains cause near one hundred percent mortality in a flock. Two more worth knowing, hydatid disease is caused by a tapeworm, a macroorganism, forming cysts in the organs of sheep and cattle, and bovine viral diarrhoea is caused by a Pestivirus. And notice, the pathogen type shapes the response, whether you vaccinate, test and cull, or simply cull."
+        "text": "You'll need to name livestock diseases with their pathogen type, so let's run the key ones. Foot and mouth disease is caused by a virus that affects cloven hoofed animals like cattle, pigs and sheep, and it's extremely contagious, spreading by contact, in the air, and on vehicles, clothing and animal products. Bovine tuberculosis is caused by a bacterium, and was eradicated from Australian cattle through test and cull programs. Avian influenza is a virus of birds, and highly pathogenic strains can kill almost an entire poultry flock. And hydatid disease is caused by a tapeworm, a macroorganism, forming cysts in the organs of sheep and cattle. Notice that the pathogen type shapes the response, whether you vaccinate, test and cull, or break a life cycle."
       },
       "diagram": {
         "type": "table",
@@ -170,77 +180,105 @@
     {
       "id": "concept-biosecurity",
       "type": "concept",
-      "heading": "Disease-free status as an asset",
-      "body": "Australia's freedom from key diseases is a competitive advantage that commands market premiums.",
+      "heading": "Australia's biosecurity layers",
+      "body": "Australia limits transmission in animals and plants at three layers: before the border, at the border, and after it.",
       "bullets": [
         {
-          "text": "Disease-free status lets Australian produce command higher prices in premium markets."
+          "text": "Pre-border: import risk assessments, permits and overseas checks."
         },
         {
-          "text": "Maintaining it needs surveillance, border biosecurity, and rapid response."
+          "text": "Border: inspection, detector dogs, X-ray screening and quarantine of imports."
         },
         {
-          "text": "Geography alone is not enough; active biosecurity does the real work."
+          "text": "Post-border: surveillance, reporting, traceability, movement controls and zoning."
         }
       ],
-      "secondary": "Livestock traceability, the National Livestock Identification System, lets authorities trace and contain an outbreak fast, protecting that disease-free status.",
-      "callout": "Prevention is exponentially cheaper than eradication.",
-      "durationInFrames": 2170,
-      "caption": "Disease-free status is a market advantage maintained by active biosecurity, not geography.",
+      "secondary": "Plants get the same treatment: fruit fly and other pest zones restrict moving produce between regions, and exotic plant pests must be reported.",
+      "callout": "Keep it out, find it fast, stop it spreading.",
+      "durationInFrames": 1881,
+      "caption": "Pre-border, border and post-border biosecurity limit transmission in animals and plants.",
       "voiceover": {
-        "text": "Let's pull the economics together around one idea, disease-free status as an asset. Australia's freedom from diseases like foot-and-mouth and mad cow disease is a genuine competitive advantage, because it lets our produce command price premiums in demanding markets like Japan, South Korea, and China. Australian beef often sells for more precisely because of its disease status. But that status doesn't maintain itself. It requires constant surveillance, strict biosecurity at the borders, rapid response capability, and extensive livestock identification and movement controls. And here's a misconception worth killing now, geography alone is not enough. Yes, being an island gives a passive barrier, but foot-and-mouth can be introduced through contaminated meat carried by a traveller, and the virus can even drift several kilometres in aerosol form. So the protection comes from active biosecurity, and tools like the National Livestock Identification System, which lets authorities trace and contain an outbreak fast. The whole logic is that prevention is exponentially cheaper than eradication."
+        "text": "So what does Australia actually do? Think of biosecurity as three layers. Before the border, imports are risk assessed, so some products need permits or treatment overseas, and some are banned outright. At the border, travellers and cargo are inspected, using declarations, detector dogs and X ray screening, and risky animals, plants and goods are quarantined, treated or destroyed. After the border, the focus is surveillance and control. Vets and farmers must report notifiable diseases, northern Australia is monitored closely because it's nearest to our neighbours, and the National Livestock Identification System tags cattle, sheep and goats so their movements can be traced. Plants get the same logic, with pest free zones that restrict moving fruit between regions to stop fruit fly. And on farms, biosecurity plans mean isolating new stock, controlling visitors and cleaning vehicles."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Layer",
+          "Animal example",
+          "Plant example"
+        ],
+        "rows": [
+          [
+            "Pre-border",
+            "Import permits for animal products",
+            "Import conditions on seeds and nursery stock"
+          ],
+          [
+            "Border",
+            "Detector dogs find meat in luggage",
+            "Inspection of fruit and plant material"
+          ],
+          [
+            "Post-border",
+            "NLIS tags trace livestock",
+            "Pest-free zones limit fruit movement"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
       }
     },
     {
       "id": "worked-example",
       "type": "workedExample",
-      "heading": "Assess an FMD outbreak",
-      "question": "A single case of foot-and-mouth disease is detected in Australian cattle. Assess the likely economic effects, distinguishing direct from indirect, and explain why the indirect effects dominate.",
-      "coachNote": "List direct costs, then indirect, then weigh them for an export economy.",
+      "heading": "Respond to an FMD detection",
+      "question": "Foot-and-mouth disease is confirmed in Australian cattle. Explain the procedures that would limit its transmission, and assess the likely economic effects.",
+      "coachNote": "Name each procedure and link it to how it breaks transmission, then split effects into direct and indirect.",
       "steps": [
-        "Direct effects: culling infected and at-risk animals, plus disposal, decontamination, and lost productivity.",
-        "Indirect effects: immediate export bans, movement restrictions on all livestock, and lost consumer confidence.",
-        "For Australia, exports are a huge share of livestock value, so losing market access dwarfs the animal losses.",
-        "Disease-free status, an economic asset, is lost the moment FMD is confirmed, removing premium pricing.",
-        "Conclusion: indirect effects dominate because lost export access far exceeds the cost of the culled animals."
+        "Report and stop: the case is notified, and a national livestock standstill halts all susceptible animal movements.",
+        "Contain: quarantine zones around infected farms; NLIS traces animals that moved on or off those farms.",
+        "Eliminate: infected and exposed animals are culled and farms decontaminated; vaccination may be used to limit spread.",
+        "Effects: direct costs are culling and lost production; indirect costs are export bans and lost disease-free status.",
+        "Conclusion: fast tracing and movement controls limit spread, but indirect trade losses would still dominate the cost."
       ],
-      "durationInFrames": 2280,
-      "caption": "Direct culling costs are dwarfed by indirect export bans for an export economy.",
+      "durationInFrames": 1935,
+      "caption": "Notify, standstill, quarantine zones, trace, cull and decontaminate; trade losses still dominate.",
       "voiceover": {
-        "text": "Let's assess a foot-and-mouth outbreak, the way an extended-response question asks. A single case is detected in Australian cattle. Assess the likely economic effects, separate direct from indirect, and explain why the indirect ones dominate. Start with the direct effects. You'd cull the infected and at-risk animals, then pay for disposal, decontamination, and the lost productivity of those animals. Real costs, but contained. Now the indirect effects. The moment foot-and-mouth is confirmed, importing countries impose immediate export bans, movement restrictions lock down all livestock across the country, and consumer confidence drops even for produce that's perfectly safe. Here's the reasoning that earns the marks. For Australia, exports make up a huge share of livestock value, so losing market access dwarfs the cost of the animals. And the disease-free status itself, that economic asset we talked about, vanishes the instant foot-and-mouth is confirmed, taking premium pricing with it. So the conclusion is clear, the indirect effects dominate, because lost export access vastly exceeds the cost of the culled animals."
+        "text": "Let's apply this to a foot and mouth detection in Australian cattle. First, the case is reported, because it's notifiable, and a national livestock standstill stops all susceptible animals moving, which cuts off the main route for spread. Next, containment. Quarantine zones are set up around infected farms, and the livestock identification system traces every animal that moved on or off those farms recently, so exposed herds can be found fast. Then elimination. Infected and exposed animals are culled, farms are decontaminated, and vaccination may be used to slow spread. Now the effects. The direct costs are the culled animals and lost production. The indirect costs are bigger, because export markets close and our disease free status disappears overnight. So the conclusion is that fast tracing and movement controls limit transmission, but the trade losses would still dominate the bill."
       }
     },
     {
       "id": "misconception",
       "type": "misconception",
       "heading": "Two traps",
-      "body": "Trap 1: thinking the main cost of animal disease is the lost or treated animals. For an exporter, lost markets are almost always larger.",
-      "secondary": "Trap 2: thinking culling is always the best response. Culling suits highly contagious diseases with no vaccine, but vaccination, test-and-remove, or managing infected animals can be better. The right strategy depends on the pathogen and the economics.",
-      "mistakeTag": "Where animal-disease marks vanish",
-      "callout": "Lost markets beat lost animals; culling isn't always right.",
-      "durationInFrames": 2060,
-      "caption": "Lost markets usually exceed animal losses; culling is not always the best response.",
+      "body": "Trap 1: thinking the main cost of animal disease is the animals themselves. For an exporter, lost markets are almost always larger.",
+      "secondary": "Trap 2: thinking Australia is protected simply by being an island. Diseases arrive in luggage, cargo, animals and on the wind, so active biosecurity does the real work.",
+      "mistakeTag": "Where biosecurity marks vanish",
+      "callout": "Lost markets beat lost animals; geography alone won't save you.",
+      "durationInFrames": 1584,
+      "caption": "Lost markets usually exceed animal losses; active biosecurity, not geography, protects Australia.",
       "voiceover": {
-        "text": "Two traps to finish. Trap one, assuming the main economic damage from animal disease is the cost of the animals that die or get culled. For an export-dependent nation like Australia, that's almost never the biggest cost. The loss of export markets is. Remember the UK, where the direct loss was two point seven billion pounds, but the total cost topped eight billion once you added lost tourism and trade. And a single foot-and-mouth detection here would trigger export bans worth far more than the animals. Trap two, assuming culling is always the best response. It isn't. Culling suits highly contagious diseases with no vaccine, like foot-and-mouth, where you need to eliminate susceptible animals fast. But for other diseases, vaccination, like for Newcastle disease, test-and-remove, like for bovine TB, or carefully managing infected animals can be far more appropriate. The right strategy depends on the pathogen, the vaccine availability, and the economics."
+        "text": "Two traps to finish. Trap one, assuming the main damage from an animal disease is the animals that die or get culled. For an export dependent country like Australia, the bigger cost is almost always lost markets, and a single foot and mouth detection would trigger export bans worth far more than the animals. Trap two, assuming Australia is safe simply because it's an island. Geography helps, but diseases arrive in contaminated meat in a traveller's luggage, in cargo, in imported animals and plant material, and some pests can even be blown in on the wind from neighbouring countries. So the real protection comes from active biosecurity, meaning border screening, surveillance and fast response."
       }
     },
     {
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "Two countries get the same poultry disease. One is a major exporter, the other only sells domestically. Explain why the disease is likely to cost the exporter far more, even with identical animal losses.",
+      "question": "Foot-and-mouth disease is a livestock disease, yet Australian airports screen passengers' luggage for pork and beef products. Explain how this procedure limits transmission.",
       "pausePrompt": "Pause and reason it through.",
       "answerSteps": [
-        "Both countries face the same direct costs: animal deaths, culling, and treatment.",
-        "The exporter also faces large indirect costs that the domestic-only seller largely avoids.",
-        "Importing countries impose export bans, so the exporter loses market access immediately.",
-        "The exporter also loses its disease-free status, which removes premium pricing.",
-        "Answer: identical direct costs, but the exporter's indirect losses, especially lost exports, dominate."
+        "The FMD virus can survive in raw, chilled, frozen and cured meat products.",
+        "Contaminated meat brought in by a traveller could be fed to pigs, infecting them.",
+        "Infected pigs release large amounts of virus, spreading it to cattle and sheep.",
+        "Screening with declarations, detector dogs and X-rays removes this entry route at the border; banning swill feeding blocks the next step.",
+        "Answer: the procedure stops the virus entering in food, breaking transmission before it reaches livestock ✓"
       ],
-      "durationInFrames": 2060,
-      "caption": "Same direct costs, but the exporter loses market access and disease-free status.",
+      "durationInFrames": 1746,
+      "caption": "Luggage screening stops FMD entering in meat products before it can reach livestock.",
       "voiceover": {
-        "text": "Quick check. Two countries get the same poultry disease. One is a major exporter, the other only sells domestically. Explain why the disease is likely to cost the exporter far more, even with identical animal losses. Pause and reason it through. Okay, here's the logic. Both countries face the same direct costs, the animal deaths, the culling, and the treatment, those are identical by assumption. But the exporter faces a whole layer of indirect costs that the domestic-only seller largely avoids. The moment the disease is confirmed, importing countries impose export bans, so the exporter loses market access right away. And the exporter also loses its disease-free status, which strips away the premium pricing its produce used to command. The domestic seller has no export markets to lose in the first place. So the answer is, the direct costs are identical, but the exporter's indirect losses, especially lost exports, are what dominate."
+        "text": "Quick check. Foot and mouth is a livestock disease, yet airports screen passengers' luggage for pork and beef products. Explain how this procedure limits transmission. Pause and reason it through. Okay, here's the logic. The foot and mouth virus can survive in raw, frozen and cured meat. If contaminated meat slipped through and was fed to pigs, they'd be infected, and infected pigs pump out huge amounts of virus that can spread to cattle and sheep. So screening luggage, using declarations, detector dogs and X rays, removes that entry route at the border, and Australia's ban on feeding food scraps to pigs blocks the next step. The answer is that the procedure stops the virus entering in food, breaking the chain before it ever reaches livestock."
       }
     },
     {
@@ -251,14 +289,14 @@
         "Animal disease has direct effects, animals and treatment, and indirect effects, trade and markets.",
         "For an exporter like Australia, indirect effects usually dominate.",
         "Know key diseases by type: FMD and avian flu are viral, bovine TB bacterial, hydatid a tapeworm.",
-        "Disease-free status is an economic asset that commands market premiums.",
-        "Active biosecurity, not geography, maintains that status; prevention beats eradication."
+        "Biosecurity works in layers: pre-border, border and post-border, for animals and plants.",
+        "Reporting, standstills, quarantine zones and NLIS tracing limit spread once a disease arrives."
       ],
-      "finalPrompt": "Assessing animal disease? Split direct and indirect, then weigh exports.",
-      "durationInFrames": 1805,
-      "caption": "Five takeaways: direct vs indirect, exporter impact, diseases, status, biosecurity.",
+      "finalPrompt": "Explaining a biosecurity procedure? Name it, then say exactly which transmission route it breaks.",
+      "durationInFrames": 1679,
+      "caption": "Five takeaways: direct vs indirect, exporter impact, diseases by type, biosecurity layers, outbreak response.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, animal disease has direct effects, the animals and their treatment, and indirect effects, the trade bans and lost markets. Second, for an export-dependent nation like Australia, the indirect effects usually dominate. Third, know the key diseases by pathogen type, foot-and-mouth and avian influenza are viral, bovine TB is bacterial, and hydatid disease is caused by a tapeworm. Fourth, disease-free status is a genuine economic asset that commands market premiums. And fifth, it's active biosecurity, not geography, that maintains that status, because prevention is far cheaper than eradication. Whenever you assess an animal disease, split the effects into direct and indirect, then weigh the impact on exports. Next lesson, we move inside the organism, to how plants defend themselves against pathogens. See you there."
+        "text": "Let's lock it in. First, animal disease has direct effects, the animals and their treatment, and indirect effects, the trade bans and lost markets. Second, for an export dependent nation like Australia, the indirect effects usually dominate. Third, know the key diseases by pathogen type, foot and mouth and avian influenza are viral, bovine TB is bacterial, and hydatid disease is caused by a tapeworm. Fourth, Australian biosecurity works in layers, before the border, at the border and after it, for animals and plants alike. And fifth, once a disease arrives, reporting, movement standstills, quarantine zones and livestock tracing limit its spread. Whenever you explain a procedure, name it, then say exactly which transmission route it breaks. See you next lesson."
       }
     }
   ]

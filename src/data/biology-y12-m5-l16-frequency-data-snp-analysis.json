@@ -1,14 +1,17 @@
 {
   "title": "Frequency Data and SNP Analysis",
-  "subtitle": "Reading population genetic data without overclaiming",
+  "subtitle": "SNPs in populations, disease association and the limits of SNP testing",
   "subject": "Biology",
+  "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 5",
   "lesson": "Lesson 16",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
-  "syllabusModule": "Module 5 — Heredity",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
+  "syllabusModule": "Module 5 Heredity (2017) + Heredity (2025)",
   "syllabusDotPoints": [
-    "investigate the use of technologies to determine inheritance patterns in a population, including frequency data and SNP analysis (ACSBL064, ACSBL085)"
+    "collect, record and present data to represent frequencies of characteristics in a population, in order to identify trends, patterns, relationships and limitations in data, for example: examining frequency data, analysing single nucleotide polymorphism (SNP)",
+    "Conduct a secondary-source investigation on single nucleotide polymorphisms (SNPs) in populations and their association with a genetic disease",
+    "Assess potential limitations and constraints of SNP testing and databases in diagnostic medicine"
   ],
   "moduleLessonCount": 19,
   "nesaOutcomes": [
@@ -16,11 +19,12 @@
     "BIO11/12-4",
     "BIO11/12-5",
     "BIO11/12-6",
-    "BIO11/12-7"
+    "BIO11/12-7",
+    "BI-12-01"
   ],
   "inquiryQuestion": "Can population genetic patterns be predicted with any accuracy?",
-  "lessonIntent": "Students can interpret frequency data with cautious language, explain what a SNP is, and judge what SNP and frequency evidence can and cannot conclude.",
-  "examSkill": "State a trend, compare groups with frequency language, then qualify the claim with a limitation, keeping conclusions proportional to the evidence.",
+  "lessonIntent": "Students can explain what a SNP is, calculate and compare allele frequencies in a case and control sample, explain what a SNP and disease association does and does not show, and assess the limits of SNP testing and databases in diagnosis.",
+  "examSkill": "Calculate allele frequencies from genotype counts, compare groups with cautious frequency language, then qualify the conclusion with a limitation of SNP testing or the database.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -28,108 +32,111 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, frequency data and SNP analysis. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, SNPs, frequency data and what a genetic test can really tell you. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 105,
-      "caption": "Frequency Data and SNP Analysis (Year 12 Biology, Module 5, Lesson 16)"
+      "caption": "Frequency Data and SNP Analysis"
     },
     {
       "id": "hook",
       "type": "hook",
-      "heading": "When data is used to harm",
-      "body": "The Tuskegee study tracked disease in 399 men for decades without treating them, and it reshaped research ethics forever.",
-      "callout": "What do scientists owe the people whose data they collect?",
+      "heading": "One letter, one disease",
+      "body": "Sickle cell disease comes from a single base change in the haemoglobin gene: an A replaced by a T.",
+      "callout": "If one letter can cause a disease, can one letter predict your health?",
       "image": "bioM5L16SnpComparison",
-      "durationInFrames": 1735,
-      "caption": "Tuskegee led to the Belmont Report and its principles: autonomy, beneficence and justice.",
+      "caption": "Sickle cell disease is caused by one base substitution in the beta globin gene, a single nucleotide difference.",
       "voiceover": {
-        "text": "From 1932 to 1972, the US Public Health Service ran a study that tracked the progression of syphilis in three hundred and ninety-nine Black men, and deliberately never treated them, even after penicillin became a standard cure in 1947. When the Tuskegee study was finally exposed, the outrage reshaped research forever, producing the Belmont Report and its three core principles, autonomy, beneficence, and justice. We open with this because today is about population genetic data, comparing how common traits and alleles are across groups. That kind of data is powerful, and it can be misused. So as we learn to read frequency data and SNP analysis, keep two questions running, what can this evidence actually tell us, and what do we owe the people it comes from."
-      }
+        "text": "Alright, here's a remarkable fact. Sickle cell disease, which affects millions of people worldwide, comes down to a single letter in the DNA. In the gene for the beta chain of haemoglobin, one A has been replaced by a T. That swaps one amino acid in the protein, and it's enough to make red blood cells collapse into a sickle shape when oxygen is low. A single base difference like that, found at a particular position in the genome, is called a single nucleotide polymorphism, or SNP. Your genome contains millions of them. So here's the question for today. If one letter can cause a disease, can reading a handful of letters predict your health? We'll look at what SNPs are, how scientists link them to disease using frequency data, and why a SNP test result needs to be read very carefully."
+      },
+      "durationInFrames": 1749
     },
     {
-      "id": "concept-frequency",
+      "id": "concept-snp",
       "type": "concept",
-      "heading": "Frequency is a group pattern",
-      "body": "Frequency tells you how common a trait or allele is in a sample, describing the group, not any single individual.",
+      "heading": "SNPs: one base, many comparisons",
+      "body": "A SNP is a position in the genome where individuals differ by a single base.",
       "bullets": [
         {
-          "text": "Frequency is just a proportion: 60 out of 100 is 60%."
+          "text": "At a SNP position, one person might carry an A where another carries a G."
         },
         {
-          "text": "It describes a pattern across a group, not every individual in it."
+          "text": "Millions of SNPs are scattered through the genome, mostly in noncoding DNA."
         },
         {
-          "text": "Different populations can show different observed frequencies."
+          "text": "Each version is an allele, so SNPs have frequencies in a population."
         }
       ],
-      "secondary": "Because it's only a sample, use cautious language. Say 'more common' or 'in this sample', never 'proves' or 'always'.",
-      "callout": "Frequency describes the group; one individual can still differ.",
-      "durationInFrames": 1897,
-      "caption": "Frequency is a proportion describing a group; report it with cautious language.",
+      "secondary": "Most SNPs have no effect at all. A few change a protein or its regulation, and some sit close to a gene that does.",
+      "callout": "A SNP is one letter that varies between people.",
+      "diagram": {
+        "type": "dnaHelix"
+      },
+      "caption": "SNPs are common single base differences; each version is an allele with a population frequency.",
       "voiceover": {
-        "text": "Let's start with what frequency actually means. The frequency of a trait is simply how common it is in your sample, expressed as a proportion. If sixty out of a hundred people have attached earlobes, the frequency is sixty percent. But here's the point that matters for marks. A frequency describes a pattern across a whole group, it does not tell you about any single individual. So a sixty percent frequency doesn't mean any one person is sixty percent anything, it means most of the group has the trait. And different populations will naturally show different observed frequencies. Because you're working from a sample, your language has to stay cautious. Say more common, or higher frequency, or in this sample. Never say it proves something, or that it's always true. That careful wording is exactly what examiners look for."
-      }
+        "text": "So what exactly is a SNP? It's a single position in the genome where people differ by one base. At that spot, one person might carry an A, while another carries a G. SNPs are everywhere, there are millions of them scattered through the genome, and most sit in noncoding DNA where they make no difference at all. A few land inside a gene and change the protein, like the sickle cell SNP, and some sit close to a gene and affect how strongly it's expressed. Here's the part that links to frequency data. Each version of a SNP is an allele, so just like any other allele, it has a frequency in a population. That means we can count it, compare it between groups, and look for patterns, and that's exactly how SNPs get linked to disease."
+      },
+      "durationInFrames": 1701
     },
     {
-      "id": "concept-quality",
+      "id": "concept-association",
       "type": "concept",
-      "heading": "The numbers are only as good as the sample",
-      "body": "Strong conclusions need large, representative samples with consistent definitions, not just big-looking numbers.",
+      "heading": "Linking a SNP to a disease",
+      "body": "Scientists compare how common a SNP allele is in people with a disease and in people without it.",
       "bullets": [
         {
-          "text": "Name the limitations: small sample size, single location, observer bias."
+          "text": "Cases: a sample of people who have the disease."
         },
         {
-          "text": "A one-generation snapshot can't show change over time."
+          "text": "Controls: a similar sample of people who don't."
         },
         {
-          "text": "A difference in a table is not automatically meaningful for the species."
+          "text": "An allele much more common in cases is associated with the disease."
         }
       ],
-      "secondary": "This is the skill the exam rewards: spotting why a dataset might not represent the wider population before you trust the trend.",
-      "callout": "A bigger or biased sample is not the same as a better one.",
-      "durationInFrames": 1816,
-      "caption": "Conclusion strength depends on sample size, representativeness and consistent definitions.",
+      "secondary": "Studies that scan hundreds of thousands of SNPs at once like this are called genome wide association studies.",
+      "callout": "Association means 'found together more often', not 'causes'.",
+      "caption": "Case and control comparisons reveal SNP alleles associated with a disease.",
       "voiceover": {
-        "text": "Now, a frequency is only as trustworthy as the data behind it. Strong conclusions need large, representative samples, with everyone measuring the trait the same way. So whenever you interpret data, you should be ready to name the limitations. The big ones are small sample size, because a handful of people may not represent the wider population. Sampling from a single location or one subgroup, which can skew the result. Observer bias, where the person collecting data influences it. And a one-generation snapshot, which can't reveal anything about change over time. The deeper idea is this, a difference showing up in a data table does not automatically mean a real, biologically meaningful difference for the whole species. The sample might just be too small, or unrepresentative. Spotting that is the skill being tested."
-      }
+        "text": "Now, how do scientists actually link a SNP to a disease? The classic design compares two groups. The cases are a sample of people who have the disease, and the controls are a similar sample of people who don't. Researchers read the same SNP positions in everyone, then calculate how common each allele is in each group. If one allele turns up much more often in the cases than the controls, that allele is said to be associated with the disease. Scale that up to hundreds of thousands of SNPs across thousands of people, and you've got a genome wide association study. But hold onto that word, associated. It means the allele and the disease are found together more often than chance would suggest. It doesn't, on its own, mean the SNP causes the disease."
+      },
+      "durationInFrames": 1665
     },
     {
       "id": "worked-example",
       "type": "workedExample",
-      "heading": "Read the table",
-      "question": "Group A has 18 attached and 42 free earlobes; Group B has 30 attached and 30 free. State the frequency of attached earlobes in each group, compare them, and give one limitation.",
-      "coachNote": "Frequency = attached ÷ total, as a percentage. Each group totals 60.",
+      "heading": "Case versus control frequency",
+      "question": "A study genotypes 500 people with a disease and 500 without it at one SNP. Cases carry 300 copies of the T allele; controls carry 150. Calculate the T allele frequency in each group, compare them, and give one limitation.",
+      "coachNote": "Each person has two copies of every autosomal SNP, so 500 people carry 1000 alleles.",
       "steps": [
-        "Group A: 18 attached out of 60 total, so 18 ÷ 60 = 30%.",
-        "Group B: 30 attached out of 60 total, so 30 ÷ 60 = 50%.",
-        "Compare with frequency language: attached earlobes are more common in Group B in this sample.",
-        "Limitation: 60 people from two school groups is a small, single-location sample.",
-        "Answer: A = 30%, B = 50%; more common in B; small, unrepresentative sample ✓"
+        "Total alleles in each group: 500 people × 2 = 1000 alleles.",
+        "Cases: 300 ÷ 1000 = 0.30, so 30%.",
+        "Controls: 150 ÷ 1000 = 0.15, so 15%.",
+        "In this sample the T allele is twice as common in cases as in controls, so it is associated with the disease.",
+        "Limitation: association is not causation; T may simply sit near the real causal variant, and results may not apply to other ancestries."
       ],
-      "durationInFrames": 1924,
-      "caption": "Group A 30%, Group B 50% attached; more common in B; small single-location sample.",
-      "voiceover": {
-        "text": "Let's read a real table. Group A has eighteen people with attached earlobes and forty-two with free earlobes. Group B has thirty attached and thirty free. First, the frequencies. Each group totals sixty people. For Group A, eighteen attached out of sixty is thirty percent. For Group B, thirty out of sixty is fifty percent. Now compare them, and notice the careful language, attached earlobes are more common in Group B in this sample. I'm not saying they're always more common, just in this data. And finally, the part students forget, a limitation. Sixty people drawn from two school groups is a small sample from a single location, so it may not represent the wider population. That three-part structure, state the frequency, compare with cautious language, then give a limitation, is exactly how to score full marks on a data question."
-      },
       "diagram": {
         "type": "barChart",
         "bars": [
           {
-            "label": "Group A attached",
+            "label": "Cases",
             "value": 30
           },
           {
-            "label": "Group B attached",
-            "value": 50
+            "label": "Controls",
+            "value": 15
           }
         ],
-        "unit": "% with attached earlobes (this sample)"
-      }
+        "unit": "% T allele frequency (this sample)"
+      },
+      "caption": "T allele: 30% in cases, 15% in controls; associated with disease, but association is not causation.",
+      "voiceover": {
+        "text": "Let's work through a data question. A study genotypes five hundred people with a disease and five hundred without it, at one SNP. The cases carry three hundred copies of the T allele, and the controls carry one hundred and fifty. Find the T allele frequency in each group, compare them, and give a limitation. Here's the trap to avoid first. Every person has two copies of each autosomal SNP, so five hundred people carry a thousand alleles, not five hundred. For the cases, three hundred out of a thousand is zero point three, or thirty percent. For the controls, one hundred and fifty out of a thousand is fifteen percent. Now compare, with careful language. In this sample, the T allele is twice as common in cases as in controls, so it's associated with the disease. And the limitation, association isn't causation. The T allele might simply sit near the real causal variant, and the result may not hold in people of a different ancestry."
+      },
+      "durationInFrames": 2037
     },
     {
       "id": "definition",
@@ -137,123 +144,104 @@
       "heading": "The words you need",
       "bullets": [
         {
-          "text": "Frequency data: how common a characteristic or allele is in a sample."
+          "text": "SNP: a single nucleotide polymorphism, a one base difference at a genome position."
         },
         {
-          "text": "Bias: a systematic problem that makes a sample unrepresentative."
+          "text": "Allele frequency: copies of one allele divided by all alleles at that position."
         },
         {
-          "text": "SNP: a single nucleotide polymorphism, a one-base difference at a DNA position."
+          "text": "Association: an allele found with a disease more often than chance predicts."
         },
         {
-          "text": "Marker: a DNA feature used to compare individuals, populations or species."
+          "text": "SNP test: reading a chosen set of SNP positions, often on a DNA chip."
+        },
+        {
+          "text": "Genetic database: a stored collection of sequences or variants used for comparison."
         }
       ],
-      "callout": "A SNP is one base; a marker is anything you compare by.",
-      "durationInFrames": 1735,
-      "caption": "Frequency data, bias, SNP, marker.",
+      "callout": "Allele frequency counts alleles, not people.",
+      "caption": "SNP, allele frequency, association, SNP test, genetic database.",
       "voiceover": {
-        "text": "Let's pin down the words. Frequency data is information about how common a characteristic or an allele is within a sample or population. Bias is a systematic problem in how data is collected that makes the sample unrepresentative, like only sampling one location. A SNP, spelled S N P, is a single nucleotide polymorphism, which just means a position in the DNA where individuals differ by a single base, one person has an A, say, and another has a G. And a marker is any DNA feature you use to compare individuals, populations, or species. So the relationship is simple, a SNP is one specific kind of marker, a single-base one, and a marker is the more general idea of anything you line up and compare by."
-      }
-    },
-    {
-      "id": "concept-snp",
-      "type": "concept",
-      "heading": "SNPs: one base, many comparisons",
-      "body": "A SNP is a single-base difference in the DNA, and because SNPs are common, they make handy comparison markers.",
-      "bullets": [
-        {
-          "text": "At a SNP position, individuals differ by just one base, like A versus G."
-        },
-        {
-          "text": "SNPs are scattered all through the genome, so there are many to compare."
-        },
-        {
-          "text": "Comparing SNPs shows similarity or difference within and between populations."
-        }
-      ],
-      "secondary": "Each person has an almost unique SNP profile, which is why SNPs are used in forensic identification and in mapping disease-associated regions.",
-      "callout": "Many SNP positions, lined up, become a comparison tool.",
-      "durationInFrames": 1924,
-      "caption": "SNPs are common single-base differences used as markers for comparison and identification.",
-      "voiceover": {
-        "text": "Now let's get concrete about SNPs. A SNP is a single position in the DNA where people differ by exactly one base. At that spot, one person might carry an A while another carries a G. On its own that sounds tiny, but here's why it's useful. SNPs are scattered right across the genome, so there are millions of these positions available to compare. Line up the same SNP positions across many individuals, and you can measure how similar or different they are, both within a population and between populations. Because everyone's particular combination of SNPs is almost unique, except for identical twins, SNPs are powerful in forensic identification, matching crime-scene DNA to a person. And by comparing SNP frequencies between people who have a disease and people who don't, scientists can map regions of the genome associated with that disease."
-      }
+        "text": "Let's pin down the words. A SNP, a single nucleotide polymorphism, is a one base difference at a particular position in the genome. Allele frequency is the number of copies of one allele, divided by all the alleles at that position in the sample, so remember you're counting alleles, not people. Association means an allele is found together with a disease more often than chance would predict. A SNP test reads a chosen set of SNP positions in a person's DNA, often using a DNA chip that checks hundreds of thousands of positions at once. And a genetic database is a stored collection of sequences or variants, used to compare a person's result against what's already known. Those last two are where the limits of testing live, so let's look at them."
+      },
+      "durationInFrames": 1629
     },
     {
       "id": "concept-limits",
       "type": "concept",
-      "heading": "What one SNP cannot do",
-      "body": "A single SNP is only one marker, so it can suggest relatedness but cannot prove overall similarity or separation.",
+      "heading": "The limits of SNP testing",
+      "body": "A SNP test only reads the positions it was designed to read, and interprets them against databases with gaps.",
       "bullets": [
         {
-          "text": "SNPs can compare genomes and support inferences about relatedness."
+          "text": "It reads selected positions, so a negative result doesn't rule a disease out."
         },
         {
-          "text": "One SNP cannot describe a whole genome or prove complete separation."
+          "text": "Most associated SNPs raise risk only slightly; environment and other genes matter."
         },
         {
-          "text": "More positions and bigger samples give stronger conclusions."
+          "text": "Databases mostly hold data from people of European ancestry, so accuracy varies."
+        },
+        {
+          "text": "Rare variants are the ones chips misread most, and some variants have uncertain meaning."
         }
       ],
-      "secondary": "Conclusion quality scales with the number of SNP positions compared, the number of individuals, and how representative they are. Keep the claim proportional to the evidence.",
-      "callout": "One marker is a hint; many markers are evidence.",
-      "durationInFrames": 1762,
-      "caption": "One SNP is a single marker; strong conclusions need many positions and large samples.",
+      "secondary": "For example, some consumer tests check only three BRCA variants, while more than a thousand harmful BRCA variants are known.",
+      "callout": "A SNP test reads a sample of the genome, not the whole story.",
+      "caption": "SNP tests read chosen positions, most effects are small, databases are skewed, and rare variants are error prone.",
       "voiceover": {
-        "text": "But here's the crucial limit, and it's a favourite exam point. A single SNP is just one marker, one position out of millions. So while SNPs as a set are powerful, you cannot lean a big conclusion on a single one. One SNP can hint at relatedness, but it cannot describe a whole genome, and it cannot prove that two populations are completely related, or completely separate. After all, two groups might differ at one SNP but match at thousands of others. So the quality of any conclusion scales with three things, the number of SNP positions you compared, the number of individuals, and how representative they were. More positions and bigger, fairer samples give stronger conclusions. The golden rule is to keep your claim proportional to the evidence."
-      }
+        "text": "This is where the newer syllabus wants you to assess, so let's be precise about the limits. First, a SNP test only reads the positions it was designed to read. Some consumer tests check just three variants in the BRCA genes, while more than a thousand harmful BRCA variants are known, so a clear result doesn't rule out risk at all. Second, most disease associated SNPs raise risk only slightly, because common diseases also depend on many other genes and on the environment. Third, the databases used to interpret results are built mostly from people of European ancestry, so predictions tend to be less accurate for everyone else. And fourth, chips are least reliable for exactly the rare variants that matter most, and plenty of variants have no known meaning yet. They're called variants of uncertain significance. So a SNP test reads a sample of the genome, not the whole story."
+      },
+      "durationInFrames": 1857
     },
     {
       "id": "misconception",
       "type": "misconception",
       "heading": "Two traps",
-      "body": "Trap 1: concluding from one SNP that two populations are completely unrelated. One marker cannot carry that weight.",
-      "secondary": "Trap 2: assuming a change in allele frequency always means natural selection. Frequencies also shift through genetic drift, mutation and gene flow. In small populations, drift alone causes large random changes, so claiming selection needs evidence of differential survival or reproduction.",
-      "mistakeTag": "Where data-interpretation marks vanish",
-      "callout": "One SNP proves little; frequency change is not always selection.",
-      "durationInFrames": 1762,
-      "caption": "Don't overclaim from one SNP; frequency change can be drift, mutation or gene flow.",
+      "body": "Trap 1: 'The allele is more common in patients, so it causes the disease.' Association shows the allele and disease occur together, not that one causes the other.",
+      "secondary": "Trap 2: 'My SNP test was negative, so I'm not at risk.' The test only checked selected positions against incomplete databases. A negative result lowers uncertainty for those variants only.",
+      "mistakeTag": "Where SNP marks vanish",
+      "callout": "Associated is not causal, and negative is not all clear.",
+      "caption": "Association is not causation; a negative SNP test only covers the variants it read.",
       "voiceover": {
-        "text": "Two traps that cost marks. Trap one, concluding from a single SNP that two populations are completely unrelated, or completely the same. One marker simply cannot carry that weight, you need many positions before you draw a conclusion about overall relatedness. Trap two is a classic. Students see a change in allele frequency over time and immediately write natural selection. But that's an overclaim. Allele frequencies can change through several mechanisms, natural selection, yes, but also genetic drift, mutation, and gene flow. In a small population especially, genetic drift can cause big random swings in frequency with no selective pressure at all. So to actually conclude natural selection, you need extra evidence that some individuals survived or reproduced more because of the trait. Frequency change alone is not enough."
-      }
+        "text": "Two traps to avoid. Trap one, reading an association as a cause. A student sees that an allele is more common in patients and writes that it causes the disease. That's an overclaim. The allele might sit right next to the real causal variant and simply be inherited along with it, or the two groups might differ in ancestry. To show cause, you need extra evidence, like finding the variant changes how a protein works. Trap two is about individual results. Someone gets a negative SNP test and concludes they're not at risk. But the test only checked selected positions, against databases that are incomplete. A negative result tells you about those particular variants, and nothing about the ones that weren't read. So associated isn't causal, and negative isn't an all clear."
+      },
+      "durationInFrames": 1629
     },
     {
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "A study of 12 beetles finds a dark-colour allele at 70% one year and 45% the next, and concludes natural selection caused it. Give two reasons this conclusion is weak.",
-      "pausePrompt": "Pause and reason it through.",
+      "question": "A SNP associated with type 2 diabetes was found in a study of 20,000 people of European ancestry. A clinic in Australia plans to use it alone to diagnose diabetes risk in all its patients. Give two limitations.",
+      "pausePrompt": "Pause and find two limitations.",
       "answerSteps": [
-        "The sample is only 12 beetles, far too small to represent the population reliably.",
-        "In such a small group, genetic drift can cause large random frequency swings.",
-        "A frequency change can also come from mutation or gene flow, not just selection.",
-        "No evidence of differential survival or reproduction has been given.",
-        "Answer: tiny sample plus no survival evidence means selection is an overclaim ✓"
+        "One SNP captures only a small part of risk; type 2 diabetes depends on many genes plus diet and exercise.",
+        "The association came from one ancestry group, so it may be weaker or absent in patients of other ancestries.",
+        "The SNP may only be a marker near the real causal variant, not the cause itself.",
+        "Answer: a single, possibly non causal SNP from one ancestry group can't reliably diagnose risk for everyone."
       ],
-      "durationInFrames": 2045,
-      "caption": "A 12-beetle frequency swing is weak evidence: small sample, drift, no survival data.",
+      "caption": "One SNP from one ancestry group cannot diagnose a complex disease's risk for a whole clinic.",
       "voiceover": {
-        "text": "Quick check. A study of just twelve beetles finds a dark-colour allele at seventy percent one year and forty-five percent the next, and the researchers conclude that natural selection caused the change. Give two reasons this conclusion is weak. Pause and reason it through. Okay, there are several good reasons, you only need two. First, the sample is tiny, only twelve beetles, which is far too few to represent the wider population reliably. Second, and connected to that, in such a small group genetic drift can produce large random swings in frequency all on its own, with no selection involved. Third, a frequency change could equally come from mutation or gene flow. And fourth, they've given no evidence that dark beetles actually survived or reproduced more. So between the tiny sample and the missing survival evidence, calling it natural selection is an overclaim. Keep the conclusion proportional to the evidence."
-      }
+        "text": "Quick check. A SNP associated with type 2 diabetes was found in a study of twenty thousand people of European ancestry. A clinic in Australia plans to use that SNP alone to diagnose diabetes risk in all its patients. Give two limitations. Pause and find two limitations. OK, there are three strong ones, and you only need two. First, a single SNP captures only a small slice of the risk, because type 2 diabetes depends on many genes, plus diet, exercise and body weight. Second, the association was found in one ancestry group, and an Australian clinic sees patients of many ancestries, so the link may be weaker, or even absent, for some of them. Third, the SNP might only be a marker sitting near the real causal variant, rather than the cause itself. So one possibly non causal SNP, from one ancestry group, can't reliably diagnose risk for everyone."
+      },
+      "durationInFrames": 1845
     },
     {
       "id": "summary",
       "type": "summary",
       "heading": "Lock it in",
       "points": [
-        "Frequency is a group pattern, reported with cautious language like 'in this sample'.",
-        "Conclusions are only as strong as the sample size and representativeness.",
-        "A SNP is a one-base difference used as a comparison marker across the genome.",
-        "One SNP cannot prove overall relatedness; more positions and people are stronger.",
-        "A frequency change is not automatically natural selection; drift and others count too."
+        "A SNP is a single base difference; each version is an allele with a frequency.",
+        "Allele frequency = copies of the allele ÷ total alleles (2 per person).",
+        "An allele more common in cases than controls is associated with the disease, not proven causal.",
+        "SNP tests read selected positions, so a negative result is not an all clear.",
+        "Databases are skewed toward European ancestry, and rare variants are misread most."
       ],
-      "finalPrompt": "Data question? State the trend, compare with frequency language, then qualify it with a limitation.",
-      "durationInFrames": 1911,
-      "caption": "Five takeaways: frequency, sample quality, SNPs, their limits, and frequency change.",
+      "finalPrompt": "SNP data question? Calculate the frequencies, compare them with cautious language, then name a limitation of the test or the database.",
+      "caption": "Five takeaways: SNPs, allele frequency, association, test limits, database limits.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, a frequency is a group pattern, so report it with cautious language, like more common, or in this sample. Second, your conclusions are only ever as strong as your sample size and how representative it is. Third, a SNP is a single-base difference in the DNA, used as a comparison marker, and there are millions of them across the genome. Fourth, one SNP on its own cannot prove overall relatedness or separation, you need many positions and many individuals for a strong conclusion. And fifth, a change in allele frequency is not automatically natural selection, because genetic drift, mutation, and gene flow can all shift frequencies too. So on any data question, state the trend, compare it using frequency language, then qualify it with a limitation. See you next lesson."
-      }
+        "text": "Let's lock it in. Five things to take away. First, a SNP is a single base difference in the genome, and each version is an allele with its own frequency in a population. Second, allele frequency is the copies of that allele divided by the total alleles, and remember there are two per person. Third, when an allele is more common in cases than in controls, it's associated with the disease, but that alone doesn't prove it's the cause. Fourth, SNP tests only read selected positions, so a negative result is never an all clear. And fifth, the databases behind the tests are skewed toward people of European ancestry, and rare variants are the ones most often misread. So on any SNP data question, calculate the frequencies, compare them with cautious language, then name a limitation of the test or the database."
+      },
+      "durationInFrames": 1749
     }
   ]
 }

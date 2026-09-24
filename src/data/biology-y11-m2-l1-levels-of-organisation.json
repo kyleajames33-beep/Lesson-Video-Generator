@@ -1,0 +1,429 @@
+{
+  "title": "Levels of Organisation",
+  "subtitle": "Unicellular, colonial and multicellular life, surface area to volume ratio, and the hierarchy from organelles to systems",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Compare the characteristics and structures of cells in unicellular, colonial and multicellular organisms",
+    "Explain the effect of the surface-area-to-volume ratio on the rate of movement of materials into and out of a cell",
+    "Conduct a laboratory experiment to predict the effect of the surface-area-to-volume ratio on the rate of movement of materials into and out of a cell",
+    "Explain the hierarchical organisation of organelles, cells, tissues, organs and systems in organisms",
+    "Describe the organ systems required for nutrient, water, gas and waste management in animals",
+    "compare the differences between unicellular, colonial and multicellular organisms by: investigating structures at the level of the cell and organelle; relating structure of cells and cell specialisation to function",
+    "justify the hierarchical structural organisation of organelles, cells, tissues, organs, systems and organisms (ACSBL054)",
+    "relating the exchange of materials across membranes to the surface-area-to-volume ratio, concentration gradients and characteristics of the materials being exchanged (ACSBL047)"
+  ],
+  "moduleLessonCount": 6,
+  "nesaOutcomes": [
+    "BI-11-02",
+    "BI-11WS-02",
+    "BI-11WS-04",
+    "BI-11WS-06"
+  ],
+  "inquiryQuestion": "How are cells arranged in a multicellular organism?",
+  "lessonIntent": "Students can compare unicellular, colonial and multicellular organisms, calculate surface area to volume ratios and use them to predict exchange rates, and justify the hierarchy from organelle to organism.",
+  "examSkill": "Calculate SA:V for model cells, link a smaller ratio to slower exchange per unit volume, and justify each level of organisation with a named plant or animal example.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, how single cells build whole organisms, from colonies to organ systems. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Levels of Organisation"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One organism, or a crowd of cells?",
+      "body": "Volvox is a green sphere of hundreds to thousands of flagellated cells that swim together towards light. Only a few of its cells can reproduce.",
+      "callout": "Where does a colony end and a multicellular organism begin?",
+      "image": "bioY11M2L1VolvoxColony",
+      "durationInFrames": 1912,
+      "caption": "Volvox: a colony of flagellated cells with the first hints of a division of labour.",
+      "voiceover": {
+        "text": "Alright, picture a tiny green ball rolling slowly through pond water, just big enough to see with your naked eye. That's Volvox, and it's built from hundreds to thousands of small cells, each with a pair of flagella, all beating together so the whole sphere swims towards the light. Here's the strange part. Most of those cells can't reproduce at all, so only a handful of specialised cells inside the sphere go on to make new colonies. So is Volvox one organism, or a crowd of single cells that happen to live together? That question sits right on the boundary between colonial and multicellular life. Today we'll sort out unicellular, colonial and multicellular organisms, work out why no cell can simply grow huge, and build the hierarchy that runs from a single organelle all the way up to organ systems."
+      }
+    },
+    {
+      "id": "concept-types",
+      "type": "concept",
+      "heading": "Unicellular, colonial, multicellular",
+      "body": "Organisms differ in how many cells they have, how specialised those cells are, and whether each cell could survive alone.",
+      "bullets": [
+        {
+          "text": "Unicellular: one cell carries out every life process, like Paramecium or a bacterium."
+        },
+        {
+          "text": "Colonial: many similar cells joined together, with little specialisation."
+        },
+        {
+          "text": "Multicellular: many specialised cells that depend on each other to survive."
+        }
+      ],
+      "secondary": "The test for any organism: are the cells specialised, and could one survive if it were separated from the rest?",
+      "callout": "More specialisation means more interdependence.",
+      "durationInFrames": 1843,
+      "caption": "Unicellular does everything in one cell; colonial cells cooperate; multicellular cells specialise and depend on each other.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Unicellular",
+          "Colonial",
+          "Multicellular"
+        ],
+        "rows": [
+          [
+            "Number of cells",
+            "One",
+            "Many, similar",
+            "Many, varied"
+          ],
+          [
+            "Specialisation",
+            "None",
+            "Little",
+            "High"
+          ],
+          [
+            "Cells survive alone?",
+            "Yes",
+            "Often",
+            "No"
+          ],
+          [
+            "Example",
+            "Paramecium",
+            "Volvox",
+            "Human, eucalypt"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "So let's line up the three types. A unicellular organism is just one cell, and that one cell has to do everything, from taking in food to getting rid of wastes and reproducing, like Paramecium or any bacterium. A colonial organism is a group of similar cells joined together, cooperating, but with very little specialisation, so in many colonies a single cell can survive if it's separated from the group. Volvox sits at the advanced end of this range, because it already has a few reproductive cells set apart. Then there's multicellular, like you or a eucalyptus tree. Here the cells are highly specialised, with muscle cells, nerve cells and root hair cells each doing one job very well. The catch is that none of them can survive alone, so specialisation always comes with interdependence."
+      }
+    },
+    {
+      "id": "concept-sav",
+      "type": "concept",
+      "heading": "Why cells stay small",
+      "body": "As a cell grows, its volume increases faster than its surface area, so its SA:V ratio falls.",
+      "bullets": [
+        {
+          "text": "Everything enters and leaves a cell across its surface membrane."
+        },
+        {
+          "text": "Demand for materials depends on volume; supply depends on surface area."
+        },
+        {
+          "text": "Double the side of a cube and the SA:V ratio halves."
+        }
+      ],
+      "secondary": "Cells meet this limit by staying small, dividing, or changing shape, like the flattened red blood cell or the long thin root hair.",
+      "callout": "Volume grows as the cube, surface only as the square.",
+      "durationInFrames": 1966,
+      "caption": "Larger cells have a smaller SA:V ratio, so exchange per unit volume is slower.",
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          {
+            "label": "1 cm cube",
+            "value": 6
+          },
+          {
+            "label": "2 cm cube",
+            "value": 3
+          },
+          {
+            "label": "4 cm cube",
+            "value": 1.5
+          }
+        ],
+        "unit": "SA:V (cm⁻¹)"
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "Now, why can't a single cell just keep growing? It comes down to the surface area to volume ratio. Every molecule of oxygen or glucose that a cell uses has to come in across its membrane, and every waste molecule has to leave the same way. The volume of the cell sets how much it needs, while the surface area sets how fast it can exchange. The problem is that as a cell grows, volume goes up with the cube of its length, but surface area only goes up with the square. So if you double the side of a cube, the ratio halves, and the centre of the cell also ends up further from the edge. That's why cells stay small, divide before they get too big, or change their shape, like a flattened red blood cell or a long thin root hair."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "The agar cube experiment",
+      "question": "Agar cubes with sides of 1 cm, 2 cm and 4 cm contain an indicator that changes colour when acid enters. They are placed in acid at the same time. Calculate the SA:V ratio of each cube and predict which cube changes colour completely first.",
+      "coachNote": "SA = 6 × side², V = side³. Then compare the ratios, not the raw areas.",
+      "steps": [
+        "Surface area = 6 × side²: 6, 24 and 96 cm².",
+        "Volume = side³: 1, 8 and 64 cm³.",
+        "SA:V = 6 : 1, 3 : 1 and 1.5 : 1, halving each time the side doubles.",
+        "Acid diffuses in at the same rate in every cube, but the 1 cm cube has the shortest distance to its centre (0.5 cm).",
+        "Answer: the 1 cm cube changes colour completely first, because it has the largest SA:V ratio ✓"
+      ],
+      "durationInFrames": 2117,
+      "caption": "SA:V ratios of 6, 3 and 1.5: the smallest cube is fully penetrated first.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Side (cm)",
+          "SA (cm²)",
+          "V (cm³)",
+          "SA:V"
+        ],
+        "rows": [
+          [
+            "1",
+            "6",
+            "1",
+            "6 : 1"
+          ],
+          [
+            "2",
+            "24",
+            "8",
+            "3 : 1"
+          ],
+          [
+            "4",
+            "96",
+            "64",
+            "1.5 : 1"
+          ]
+        ]
+      },
+      "voiceover": {
+        "text": "Let's run the classic practical. We've got agar cubes with sides of one, two and four centimetres, each containing an indicator that changes colour when acid gets in, and they all go into the acid at the same moment. First, surface area. A cube has six faces, so it's six times the side squared, which gives six, twenty four and ninety six square centimetres. Next, volume is the side cubed, so one, eight and sixty four cubic centimetres. Now divide. The ratios come out as six to one, three to one and one point five to one, so the ratio halves every time the side doubles. Here's the key idea for your prediction. Acid diffuses inwards at roughly the same speed in every cube, but the smallest cube only needs it to travel half a centimetre to reach the centre. So the one centimetre cube changes colour completely first, because it has the largest ratio."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Cell differentiation: unspecialised cells becoming specialised for a particular function."
+        },
+        {
+          "text": "Tissue: a group of similar specialised cells working together for one function."
+        },
+        {
+          "text": "Organ: several different tissues working together for a shared function."
+        },
+        {
+          "text": "Organ system: a group of organs working together for a major body function."
+        }
+      ],
+      "callout": "Cells make tissues, tissues make organs, organs make systems.",
+      "durationInFrames": 1830,
+      "caption": "Differentiation, tissue, organ, organ system.",
+      "voiceover": {
+        "text": "Let's pin down the four terms you'll use in every answer about organisation. Cell differentiation is the process where unspecialised cells become specialised for a particular job, switching on the genes that give them the right shape and organelles. A tissue is a group of similar specialised cells working together for one function, like cardiac muscle tissue contracting as one. An organ is made of several different tissues working together for a shared function, so the heart has muscle tissue, nervous tissue and connective tissue all in one structure. And an organ system is a group of organs that work together to carry out a major function for the whole body, like the circulatory system moving blood everywhere. Notice how each definition is built from the one before it, which is exactly the point."
+      }
+    },
+    {
+      "id": "concept-hierarchy",
+      "type": "concept",
+      "heading": "From organelle to organism",
+      "body": "Each level is built from the level below and can do things that no lower level can do alone.",
+      "bullets": [
+        {
+          "text": "Animal: mitochondrion, cardiac muscle cell, cardiac muscle, heart, circulatory system."
+        },
+        {
+          "text": "Plant: chloroplast, palisade cell, mesophyll tissue, leaf, shoot system."
+        },
+        {
+          "text": "Specialisation makes each level efficient but dependent on the others."
+        }
+      ],
+      "secondary": "To justify the hierarchy, explain what each new level adds: a heart can pump, but a single muscle cell cannot.",
+      "callout": "Each level adds a function the level below can't manage alone.",
+      "durationInFrames": 1816,
+      "caption": "Organelle, cell, tissue, organ, system, organism: each level adds new function.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "organelle",
+            "label": "Organelle (mitochondrion)"
+          },
+          {
+            "id": "cell",
+            "label": "Cell (cardiac muscle cell)"
+          },
+          {
+            "id": "tissue",
+            "label": "Tissue (cardiac muscle)"
+          },
+          {
+            "id": "organ",
+            "label": "Organ (heart)"
+          },
+          {
+            "id": "system",
+            "label": "System (circulatory)"
+          },
+          {
+            "id": "organism",
+            "label": "Organism (human)"
+          }
+        ],
+        "edges": [
+          {
+            "from": "organelle",
+            "to": "cell"
+          },
+          {
+            "from": "cell",
+            "to": "tissue"
+          },
+          {
+            "from": "tissue",
+            "to": "organ"
+          },
+          {
+            "from": "organ",
+            "to": "system"
+          },
+          {
+            "from": "system",
+            "to": "organism"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "OK, let's climb the hierarchy with a real example. In an animal, start with a mitochondrion, the organelle that releases energy for contraction. Cardiac muscle cells are packed with them, those cells join into cardiac muscle tissue, and that tissue, with nerves and connective tissue, forms the heart. The heart, blood vessels and blood make up the circulatory system, which keeps the whole organism alive. Plants follow the same pattern, running from the chloroplast to the palisade cell, then mesophyll tissue, the leaf, and finally the shoot system. Now, if a question asks you to justify the hierarchy, don't just list the levels. Explain what each new level can do that the one below can't, because a single muscle cell can contract, but only a whole heart can pump blood around a body."
+      }
+    },
+    {
+      "id": "concept-systems",
+      "type": "concept",
+      "heading": "Systems that supply every cell",
+      "body": "In a large animal most cells are far from the outside world, so organ systems bring in materials and carry wastes away.",
+      "bullets": [
+        {
+          "text": "Digestive system: breaks food down and absorbs nutrients and water."
+        },
+        {
+          "text": "Respiratory system: exchanges oxygen and carbon dioxide with the air."
+        },
+        {
+          "text": "Circulatory system: carries everything between the other systems and every cell."
+        },
+        {
+          "text": "Excretory system: the kidneys remove urea and balance water and salts."
+        }
+      ],
+      "secondary": "These are the answer to the SA:V problem at the scale of a whole body. Each one adds a huge exchange surface, and the blood links them together.",
+      "callout": "Big bodies solve the SA:V problem with specialised exchange systems.",
+      "durationInFrames": 1898,
+      "caption": "Digestive, respiratory, circulatory and excretory systems manage nutrients, water, gases and wastes.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Need",
+          "System",
+          "Exchange surface"
+        ],
+        "rows": [
+          [
+            "Nutrients and water",
+            "Digestive",
+            "Villi of small intestine"
+          ],
+          [
+            "Oxygen in, carbon dioxide out",
+            "Respiratory",
+            "Alveoli"
+          ],
+          [
+            "Transport between all of these",
+            "Circulatory",
+            "Capillaries"
+          ],
+          [
+            "Nitrogenous waste, water balance",
+            "Excretory",
+            "Nephrons"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "So here's how it all connects back to surface area. A large animal has a tiny surface area compared with its enormous volume, and most of its cells are buried deep inside, nowhere near the outside world. That's the same problem an oversized cell has, just at the scale of a whole body. The fix is a set of organ systems, each with its own specialised exchange surface. The digestive system breaks food down and absorbs nutrients and water through the villi of the small intestine. The respiratory system swaps oxygen and carbon dioxide across the alveoli. The excretory system, mainly the kidneys, removes urea and balances water and salts. And the circulatory system ties them all together, carrying materials between every system and every single cell. We'll look at each of these in the rest of this series."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: thinking bigger organisms have bigger cells. An elephant's cells are about the same size as a mouse's; the elephant just has far more of them.",
+      "secondary": "Trap 2: saying a large cell has a larger SA:V ratio because its surface area is bigger. Its surface area is bigger, but its volume is bigger by even more, so the ratio is smaller.",
+      "mistakeTag": "Where organisation marks vanish",
+      "callout": "Bigger organisms have more cells, not bigger ones; bigger cells have smaller ratios.",
+      "durationInFrames": 1871,
+      "caption": "Organisms grow by adding cells; a bigger cell has a smaller SA:V ratio.",
+      "voiceover": {
+        "text": "Two traps that come up again and again. Trap one is thinking that bigger organisms are made of bigger cells. They're not. Most cells in an elephant are about the same size as the matching cells in a mouse, because every cell faces the same surface area to volume limit, so the elephant simply has far more cells. That's the whole reason multicellular life can get large at all. Trap two is a wording slip in calculations. Students write that a large cell has a larger ratio because its surface area is bigger. Yes, its surface area is bigger in absolute terms, but its volume has grown by even more, so the ratio is smaller. Always ask yourself whether the question wants the raw surface area or the ratio, because examiners love to test exactly that difference."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A red blood cell is a flattened biconcave disc rather than a sphere of the same volume. Use SA:V to explain why this shape suits its job of picking up oxygen in the lungs.",
+      "pausePrompt": "Pause and link the shape to the ratio.",
+      "answerSteps": [
+        "Flattening a cell increases its surface area without changing its volume.",
+        "So the biconcave disc has a larger SA:V ratio than a sphere of the same volume.",
+        "No part of the cell is far from the membrane, so the diffusion distance is short.",
+        "Answer: a larger SA:V ratio and short diffusion distance let oxygen enter and leave faster ✓"
+      ],
+      "durationInFrames": 1925,
+      "caption": "Biconcave shape: larger SA:V and shorter diffusion distance, so faster oxygen exchange.",
+      "voiceover": {
+        "text": "Quick check. A red blood cell is shaped like a flattened disc that's dimpled in on both sides, rather than a round sphere of the same volume. Using surface area to volume ratio, explain why that shape suits its job of picking up oxygen in the lungs. Pause and link the shape to the ratio. OK, here's the reasoning. Flattening a cell spreads the same volume out over more membrane, so the surface area goes up while the volume stays the same. That means the disc has a larger surface area to volume ratio than a sphere would. On top of that, no part of the cell's contents is very far from the membrane, so the diffusion distance for oxygen is short. Put those together and oxygen can move in quickly at the lungs, and back out quickly at the tissues."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Unicellular, colonial and multicellular differ in cell number, specialisation and interdependence.",
+        "As a cell grows its SA:V ratio falls, so exchange per unit volume slows.",
+        "For a cube, SA = 6 × side² and V = side³; doubling the side halves the ratio.",
+        "Organelles, cells, tissues, organs and systems each add a function the level below lacks.",
+        "Digestive, respiratory, circulatory and excretory systems solve the SA:V problem for a whole body."
+      ],
+      "finalPrompt": "For any exchange question: compare the ratio, not the raw area, and name the exchange surface involved.",
+      "durationInFrames": 1693,
+      "caption": "Five takeaways: three organisation types, SA:V, the cube calculation, the hierarchy, the systems.",
+      "voiceover": {
+        "text": "Let's lock it in with five takeaways. First, unicellular, colonial and multicellular organisms differ in how many cells they have, how specialised those cells are, and whether each cell can survive on its own. Second, as a cell grows its surface area to volume ratio falls, so it exchanges materials more slowly for its size. Third, for a cube the surface area is six times the side squared and the volume is the side cubed, and doubling the side halves the ratio. Fourth, the hierarchy runs from organelle to cell, tissue, organ and system, and each level adds something the level below can't do alone. And fifth, large animals solve the ratio problem with digestive, respiratory, circulatory and excretory systems. See you next lesson."
+      }
+    }
+  ]
+}

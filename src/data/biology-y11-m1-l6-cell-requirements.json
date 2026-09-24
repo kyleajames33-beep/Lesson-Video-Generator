@@ -1,0 +1,375 @@
+{
+  "title": "What Cells Need",
+  "subtitle": "Glucose, oxygen, carbon dioxide, water, ions and amino acids, and the wastes cells remove",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 6",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Relate carbon dioxide, oxygen, water, ions, amino acids and glucose to cell requirements",
+    "Relate the movement of glucose, oxygen, carbon dioxide, salts and wastes across membranes to concentration gradients and the characteristics of the materials being exchanged",
+    "investigate cell requirements, including but not limited to: suitable forms of energy, including light energy and chemical energy in complex molecules (ACSBL044)",
+    "investigate cell requirements, including but not limited to: matter, including gases, simple nutrients and ions",
+    "investigate cell requirements, including but not limited to: removal of wastes (ACSBL044)"
+  ],
+  "moduleLessonCount": 7,
+  "nesaOutcomes": [
+    "BI-11-01",
+    "BI-11WS-05",
+    "BI-11WS-07"
+  ],
+  "inquiryQuestion": "What do cells need to take in, and what must they remove, to stay alive?",
+  "lessonIntent": "Students can relate carbon dioxide, oxygen, water, ions, amino acids and glucose to cell requirements, identify the wastes cells produce, and explain how light and chemical energy supply cells.",
+  "examSkill": "Explain why a named substance is required by a cell by linking it to a specific process, and predict how a cell’s inputs and outputs change with conditions.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, what every cell needs, and what it has to get rid of. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "What Cells Need"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Minutes without oxygen",
+      "body": "Brain cells begin to die within minutes without oxygen, yet for some bacteria, oxygen is a poison.",
+      "callout": "What does a cell actually need, and why?",
+      "image": "bioY11M1L6CellInputsOutputs",
+      "durationInFrames": 1871,
+      "caption": "Brain cells die within minutes without oxygen, but some bacteria are poisoned by it.",
+      "voiceover": {
+        "text": "If blood flow to your brain stops, brain cells begin to die within about four to six minutes, because they've run out of oxygen. That's why every second counts in CPR. But in the mud at the bottom of a swamp, there are bacteria for which oxygen is a poison, and they live their whole lives without it. So oxygen isn't a universal requirement at all. What, then, does a cell really need, and why? It turns out every cell works from the same basic shopping list. A source of energy, raw materials to build with, water to do everything in, and a way to get rid of wastes. Today we'll work through the syllabus list, carbon dioxide, oxygen, water, ions, amino acids and glucose, and link each one to the job it does in the cell."
+      }
+    },
+    {
+      "id": "concept-energy",
+      "type": "concept",
+      "heading": "Energy: light or chemical",
+      "body": "Every cell needs energy, and it arrives in one of two forms.",
+      "bullets": [
+        {
+          "text": "Light energy: captured by chloroplasts in photosynthesis."
+        },
+        {
+          "text": "Chemical energy: stored in complex molecules like glucose."
+        },
+        {
+          "text": "Respiration releases the chemical energy as ATP, the cell's energy currency."
+        }
+      ],
+      "callout": "Plants capture light, but every cell runs on ATP.",
+      "durationInFrames": 1830,
+      "caption": "Light is captured in glucose; respiration releases it as ATP for every cell.",
+      "voiceover": {
+        "text": "Let's start with energy, because nothing else happens without it. Energy reaches cells in two forms. Plants and algae capture light energy in their chloroplasts, and use it in photosynthesis to build glucose. That locks the energy away as chemical energy, stored in the bonds of a complex molecule. Animals and fungi can't use light, so they get chemical energy by eating complex molecules made by other organisms. Here's the part that unites every cell, though. Glucose can't power cell work directly. In respiration, the cell releases the energy in glucose and uses it to make ATP, which is the energy currency every cell spends. ATP powers active transport, protein building, muscle contraction and cell division. So even a plant cell in full sunlight depends on respiration for most of the ATP it spends."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "l",
+            "label": "Light energy"
+          },
+          {
+            "id": "p",
+            "label": "Photosynthesis in chloroplasts"
+          },
+          {
+            "id": "g",
+            "label": "Glucose: stored chemical energy"
+          },
+          {
+            "id": "r",
+            "label": "Respiration in cytoplasm and mitochondria"
+          },
+          {
+            "id": "a",
+            "label": "ATP powers cell work"
+          }
+        ],
+        "edges": [
+          {
+            "from": "l",
+            "to": "p"
+          },
+          {
+            "from": "p",
+            "to": "g"
+          },
+          {
+            "from": "g",
+            "to": "r"
+          },
+          {
+            "from": "r",
+            "to": "a"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-gases",
+      "type": "concept",
+      "heading": "Glucose, oxygen and carbon dioxide",
+      "body": "These three are linked through respiration and photosynthesis.",
+      "bullets": [
+        {
+          "text": "Glucose: the fuel for respiration, and a building block for starch and cellulose."
+        },
+        {
+          "text": "Oxygen: needed for aerobic respiration, which yields far more ATP."
+        },
+        {
+          "text": "Carbon dioxide: a raw material for photosynthesis, and a waste of respiration."
+        }
+      ],
+      "secondary": "Respiration: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy (ATP). Photosynthesis runs the reverse, powered by light.",
+      "callout": "One process's waste is the other's raw material.",
+      "durationInFrames": 1912,
+      "caption": "Glucose is fuel, oxygen allows aerobic respiration, carbon dioxide is both input and waste.",
+      "voiceover": {
+        "text": "Now three of the syllabus substances, which belong together. Glucose is the fuel for respiration, and in plants it's also a building block, joined into long chains to make starch for storage and cellulose for cell walls. Oxygen is needed for aerobic respiration, which releases far more ATP from each glucose than respiration without oxygen, about thirty ATP compared with just two. Carbon dioxide is interesting, because it's both a requirement and a waste. In a photosynthesising cell, it's a raw material, the source of every carbon atom in the glucose being built. But in any respiring cell, carbon dioxide is a waste that must be removed, partly because it forms an acid in solution. Look at the table, and you'll see the two processes are near mirror images, with the outputs of one being the inputs of the other."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Process",
+          "Inputs",
+          "Outputs"
+        ],
+        "rows": [
+          [
+            "Aerobic respiration",
+            "Glucose + oxygen",
+            "Carbon dioxide + water + ATP"
+          ],
+          [
+            "Photosynthesis",
+            "Carbon dioxide + water + light",
+            "Glucose + oxygen"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-water-ions-aa",
+      "type": "concept",
+      "heading": "Water, ions and amino acids",
+      "body": "The remaining requirements build the cell and keep it running.",
+      "bullets": [
+        {
+          "text": "Water: the solvent for reactions, a reactant, and it keeps plant cells turgid."
+        },
+        {
+          "text": "Ions: specific roles, such as Na⁺ and K⁺ in nerve impulses and Mg²⁺ in chlorophyll."
+        },
+        {
+          "text": "Amino acids: joined to make proteins such as enzymes, channels and hormones."
+        }
+      ],
+      "callout": "Plants make their own amino acids using nitrate from the soil.",
+      "durationInFrames": 1939,
+      "caption": "Water is the solvent, ions have specific jobs, amino acids build proteins.",
+      "voiceover": {
+        "text": "Next, water, ions and amino acids. Water makes up most of a cell's mass, and it's the solvent that almost every reaction happens in. It's also a reactant, used up in photosynthesis and when large molecules are broken down in digestion, and in plant cells it keeps the vacuole full and the cell turgid. Ions are needed in small amounts, but for very specific jobs. Sodium and potassium ions create the gradients behind nerve impulses, and calcium ions trigger muscle contraction. Magnesium sits at the centre of every chlorophyll molecule, iron is part of haemoglobin, and phosphate is built into ATP, DNA and phospholipids. Finally, amino acids are the building blocks of proteins, so every enzyme, channel and hormone depends on them. Animals get amino acids from food, while plants make their own, using nitrate their roots take up by active transport."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Requirement",
+          "Example role in the cell"
+        ],
+        "rows": [
+          [
+            "Water",
+            "Solvent; reactant in photosynthesis and digestion; turgor"
+          ],
+          [
+            "Sodium and potassium ions",
+            "Nerve impulses; membrane gradients"
+          ],
+          [
+            "Calcium ions",
+            "Muscle contraction; bones and teeth"
+          ],
+          [
+            "Magnesium ions",
+            "Part of every chlorophyll molecule"
+          ],
+          [
+            "Iron ions",
+            "Part of haemoglobin, which carries oxygen"
+          ],
+          [
+            "Phosphate ions",
+            "Part of ATP, DNA and phospholipids"
+          ],
+          [
+            "Amino acids",
+            "Built into proteins: enzymes, channels, hormones"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-wastes",
+      "type": "concept",
+      "heading": "Removing wastes",
+      "body": "Cell reactions make products that become toxic if they build up, so they must be removed.",
+      "bullets": [
+        {
+          "text": "Carbon dioxide from respiration diffuses out of cells."
+        },
+        {
+          "text": "Breaking down excess amino acids releases ammonia, which is very toxic."
+        },
+        {
+          "text": "Mammals convert ammonia to urea in the liver; the kidneys excrete it."
+        }
+      ],
+      "callout": "A waste is anything the cell makes but must remove.",
+      "durationInFrames": 1898,
+      "caption": "Wastes: CO₂ from respiration, and ammonia from amino acids, converted to urea.",
+      "voiceover": {
+        "text": "Every cell also produces wastes, products of its reactions that become harmful if they build up. The biggest is carbon dioxide from respiration, which diffuses out of cells and is carried in the blood to the lungs. Another comes from protein. Animals can't store spare amino acids, so the liver breaks them down, and the part containing nitrogen is removed as ammonia, which is highly toxic even at low concentrations. So mammals convert ammonia into urea in the liver, which is far less toxic, and the kidneys then filter it out of the blood and excrete it in urine. Excess water and ions count as wastes too, once there's more than the body needs. And in a photosynthesising cell, the oxygen it releases is actually a waste product of photosynthesis, even though some of it gets used in respiration."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "aa",
+            "label": "Excess amino acids"
+          },
+          {
+            "id": "d",
+            "label": "Broken down in the liver"
+          },
+          {
+            "id": "n",
+            "label": "Ammonia (very toxic)"
+          },
+          {
+            "id": "u",
+            "label": "Urea (far less toxic)"
+          },
+          {
+            "id": "k",
+            "label": "Excreted by the kidneys in urine"
+          }
+        ],
+        "edges": [
+          {
+            "from": "aa",
+            "to": "d"
+          },
+          {
+            "from": "d",
+            "to": "n"
+          },
+          {
+            "from": "n",
+            "to": "u"
+          },
+          {
+            "from": "u",
+            "to": "k"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Same cell, day and night",
+      "question": "A leaf mesophyll cell exchanges gases with the air spaces inside the leaf. Predict the net exchange of O₂ and CO₂ in bright light and in darkness, and explain each.",
+      "coachNote": "Respiration runs all the time; photosynthesis runs only in light.",
+      "steps": [
+        "Respiration runs day and night: it uses O₂ and releases CO₂.",
+        "In bright light, photosynthesis also runs, much faster than respiration.",
+        "So in bright light the net result is CO₂ taken in and O₂ released.",
+        "In darkness only respiration runs, so O₂ is taken in and CO₂ released.",
+        "Answer: light: net CO₂ in, O₂ out. Dark: net O₂ in, CO₂ out ✓"
+      ],
+      "durationInFrames": 2048,
+      "caption": "Whether a gas is a requirement or a waste depends on the conditions.",
+      "voiceover": {
+        "text": "Let's put this together with a question that catches a lot of students. A leaf mesophyll cell exchanges gases with the air spaces inside a leaf. Predict the net exchange of oxygen and carbon dioxide in bright light, and then in darkness. The key fact is that respiration runs all the time, day and night, using oxygen and releasing carbon dioxide, while photosynthesis only runs in the light. So in bright light, both processes are happening, but photosynthesis is running much faster than respiration. The cell uses more carbon dioxide than it makes, and makes more oxygen than it uses, so the net result is carbon dioxide in and oxygen out. In darkness, photosynthesis stops, leaving only respiration. Now the cell takes in oxygen and releases carbon dioxide, just like an animal cell. Same cell, same gases, but whether each is a requirement or a waste depends on the conditions."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: 'Plants photosynthesise, animals respire.' Wrong. Every living plant cell respires; photosynthesis is extra.",
+      "secondary": "Trap 2: 'Glucose gives the cell energy directly.' Glucose stores energy; respiration must release it as ATP before the cell can use it.",
+      "mistakeTag": "Where requirement marks vanish",
+      "callout": "All living cells respire; ATP is the usable energy.",
+      "durationInFrames": 1843,
+      "caption": "Plant cells respire too; glucose is the substrate, ATP is the usable energy.",
+      "voiceover": {
+        "text": "Two traps. The first is the idea that plants photosynthesise while animals respire, as if each has one process. Every living plant cell respires, root, stem and leaf, day and night. Photosynthesis is an extra process that only happens in cells with chloroplasts, and only in the light. So when a question asks what a root cell needs, oxygen is on the list, which is why waterlogged soil can kill plants. The second trap is saying that glucose gives the cell energy, as if the cell can spend glucose directly. It can't. Glucose is a store of chemical energy, and respiration has to release that energy and capture it in ATP before the cell can use it. So in an exam, name the link. Glucose is needed as the substrate for respiration, which produces ATP."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "During a sprint, a muscle cell runs short of oxygen but still has glucose. Explain what happens to its ATP supply. Then explain why, once rested, it still needs amino acids.",
+      "pausePrompt": "Pause. Which process needs oxygen, and what are proteins for?",
+      "answerSteps": [
+        "Without enough O₂, aerobic respiration cannot keep up, so the cell relies on anaerobic respiration.",
+        "Anaerobic respiration makes only 2 ATP per glucose (about 30 aerobically) and produces lactic acid.",
+        "So the ATP supply falls sharply and the muscle soon tires.",
+        "Amino acids are still needed to build and repair proteins, such as contractile proteins and enzymes.",
+        "Answer: far less ATP, plus lactic acid; amino acids keep rebuilding proteins ✓"
+      ],
+      "durationInFrames": 1802,
+      "caption": "Without oxygen: 2 ATP per glucose instead of about 30. Amino acids keep rebuilding proteins.",
+      "voiceover": {
+        "text": "Quick check. During a sprint, a muscle cell runs short of oxygen, although it still has plenty of glucose. Explain what happens to its ATP supply. Then explain why, once it's rested, the cell still needs amino acids. Pause, and think about which process needs oxygen, and what proteins are for. OK, without enough oxygen, aerobic respiration can't keep up, so the cell relies on anaerobic respiration. That makes only two ATP per glucose, compared with about thirty aerobically, and it produces lactic acid. So the ATP supply drops sharply, and the muscle tires quickly. Now the amino acids. Even at rest, the cell has to build and repair proteins, like the contractile proteins that make muscle shorten, and all of its enzymes. Every one of those is assembled from amino acids."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Energy arrives as light (captured by chloroplasts) or as chemical energy in glucose; respiration turns it into ATP.",
+        "Glucose is respiratory fuel; O₂ allows aerobic respiration; CO₂ is a photosynthesis input and a respiration waste.",
+        "Water is the solvent and a reactant; ions have specific jobs like nerve impulses and chlorophyll.",
+        "Amino acids build proteins; plants make them using nitrate.",
+        "Wastes include CO₂, and ammonia, which mammals convert to urea."
+      ],
+      "finalPrompt": "For any substance: which process uses it or makes it? That's why the cell needs it, or removes it.",
+      "durationInFrames": 1666,
+      "caption": "Five takeaways: energy, the three gases and glucose, water and ions, amino acids, wastes.",
+      "voiceover": {
+        "text": "Let's lock it in. First, energy arrives as light, captured by chloroplasts, or as chemical energy in glucose, and respiration turns that into ATP. Second, glucose is the fuel for respiration, oxygen allows aerobic respiration with its much bigger ATP yield, and carbon dioxide is both a raw material for photosynthesis and a waste of respiration. Third, water is the solvent and a reactant, and ions have specific jobs, like nerve impulses and building chlorophyll. Fourth, amino acids build proteins, and plants make their own using nitrate. And fifth, cells must remove wastes, especially carbon dioxide and ammonia, which mammals turn into urea. Next lesson, the enzymes that make all these reactions fast enough to keep a cell alive. See you then."
+      }
+    }
+  ]
+}

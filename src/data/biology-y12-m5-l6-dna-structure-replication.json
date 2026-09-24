@@ -2,24 +2,29 @@
   "title": "DNA Structure and DNA Replication",
   "subtitle": "How one molecule both stores and copies the code of life",
   "subject": "Biology",
+  "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 5",
   "lesson": "Lesson 6",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
-  "syllabusModule": "Module 5 — Heredity",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
+  "syllabusModule": "Module 5 Heredity (2017) + Cells as the basis of life (2025)",
   "syllabusDotPoints": [
-    "model the process of DNA replication, including the role of complementary base pairing and the semiconservative nature of replication"
+    "DNA replication using the Watson and Crick DNA model, including nucleotide composition, pairing and bonding (ACSBL076, ACSBL077)",
+    "Use the deoxyribonucleic acid (DNA) double helix model to demonstrate the structure of DNA, including nucleotide composition, complementary base pairing and hydrogen bonding",
+    "Conduct a practical investigation to model the process of DNA replication, demonstrating the role of complementary bases, the replication fork with leading and lagging strands, and the enzymes of helicase, primase, DNA polymerases and ligase",
+    "Assess the use of models to demonstrate DNA replication"
   ],
   "moduleLessonCount": 19,
   "nesaOutcomes": [
     "BIO12-12",
     "BIO11/12-4",
     "BIO11/12-5",
-    "BIO11/12-7"
+    "BIO11/12-7",
+    "BI-11-01"
   ],
-  "inquiryQuestion": "Why is it important for genetic material to be replicated exactly?",
-  "lessonIntent": "Students can describe DNA structure and explain how complementary base pairing makes semiconservative replication accurate.",
-  "examSkill": "Use complementary base pairing to predict a new DNA strand and explain why replication is semiconservative.",
+  "inquiryQuestion": "How important is it for genetic material to be replicated exactly?",
+  "lessonIntent": "Students can describe DNA structure, explain semiconservative replication, and name the roles of helicase, primase, DNA polymerases and ligase at a replication fork with leading and lagging strands.",
+  "examSkill": "Use complementary base pairing to predict a new strand, explain semiconservative replication, and explain why the lagging strand is made in fragments that ligase joins.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -27,14 +32,14 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome back to HSC Biology. We are now in Inquiry Question two. Today, the structure of DNA and how it copies itself. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, the structure of DNA and how it copies itself. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 110,
-      "caption": "DNA Structure and DNA Replication (Year 12 Biology, Module 5, Lesson 6)"
+      "caption": "DNA Structure and DNA Replication"
     },
     {
       "id": "hook",
@@ -43,10 +48,10 @@
       "body": "When Watson and Crick saw the double helix in 1953, the way it could copy itself was suddenly obvious.",
       "callout": "How can one molecule both store information and copy it perfectly?",
       "image": "bioM5L6DoubleHelix",
-      "durationInFrames": 1740,
-      "caption": "The 1953 double helix and the 1958 Meselson-Stahl experiment established the molecular basis of heredity.",
+      "durationInFrames": 1433,
+      "caption": "The 1953 double helix and the 1958 Meselson and Stahl experiment explained how DNA stores and copies information.",
       "voiceover": {
-        "text": "On the twenty fifth of April, nineteen fifty three, Watson and Crick published the structure of DNA, the famous double helix, built using Rosalind Franklin's X ray data, the image known as Photo fifty one. And the moment they saw the structure, something clicked, because the shape itself hinted at how DNA could be copied. Five years later, in nineteen fifty eight, Meselson and Stahl confirmed exactly how that copying works, by growing bacteria in heavy nitrogen and tracking the strands. Together, these two discoveries, the structure and the copying mechanism, established the molecular basis of heredity. Today we are going to see the same thing they saw, how the structure of DNA explains both how it stores information and how it copies that information almost perfectly."
+        "text": "On the twenty fifth of April, nineteen fifty three, Watson and Crick published the structure of DNA, the famous double helix, built partly on Rosalind Franklin's X ray image known as Photo fifty one. And the moment they saw the structure, something clicked, because the shape itself hinted at how DNA could be copied. Five years later, Meselson and Stahl confirmed how that copying works, by growing bacteria on heavy nitrogen and tracking the strands. So today we'll see what they saw, how the structure of DNA explains both how it stores information and how a team of enzymes copies it almost perfectly."
       }
     },
     {
@@ -56,21 +61,21 @@
       "body": "DNA is a double helix of repeating nucleotides, and the base sequence is the information.",
       "bullets": [
         {
-          "text": "A nucleotide is a sugar, a phosphate group and a nitrogenous base."
+          "text": "A nucleotide is a deoxyribose sugar, a phosphate group and a nitrogenous base."
         },
         {
-          "text": "Nucleotides link into two strands forming a sugar-phosphate backbone, twisted into a double helix."
+          "text": "Nucleotides link into two strands with a sugar-phosphate backbone, twisted into a double helix."
         },
         {
-          "text": "The specific sequence of bases is what stores the hereditary information."
+          "text": "The sequence of the four bases (A, T, C, G) stores the hereditary information."
         }
       ],
       "secondary": "There are four bases. The order they sit in along the strand is the genetic code, the same way letters in order make words.",
       "callout": "Same building blocks every time; the order of bases is the message.",
-      "durationInFrames": 1848,
+      "durationInFrames": 1655,
       "caption": "Nucleotides build a double-helix backbone; the base sequence stores the information.",
       "voiceover": {
-        "text": "Let's start with what DNA is actually made of. The building block is the nucleotide, and every nucleotide has three parts, a sugar, a phosphate group, and a nitrogenous base. Those nucleotides link together into long strands, with the sugars and phosphates forming a backbone, the sugar phosphate backbone, and two of those strands twist around each other into the famous double helix. Now here is the key idea. The building blocks themselves are pretty repetitive, the same sugar and phosphate over and over. So where is the information? It is in the bases. There are four of them, and the specific sequence, the order they appear in along the strand, is what stores the hereditary information. It works just like letters, the same twenty six letters spell every different word depending on their order."
+        "text": "Let's start with what DNA is actually made of. The building block is the nucleotide, and every nucleotide has three parts, a sugar called deoxyribose, a phosphate group, and a nitrogenous base. Nucleotides link together into long strands, with the sugars and phosphates forming the sugar phosphate backbone, and two of those strands twist around each other into the double helix. Now here's the key idea. The backbone is repetitive, the same sugar and phosphate over and over, so the information has to be in the bases. There are four of them, adenine, thymine, cytosine and guanine, and their order along the strand is the message, just like the same twenty six letters spell every word depending on their order."
       },
       "diagram": {
         "type": "dnaHelix"
@@ -89,18 +94,18 @@
           "text": "A pairs with T, and C pairs with G. No other pairings fit."
         },
         {
-          "text": "The pairs are held together by hydrogen bonds between the strands."
+          "text": "Hydrogen bonds hold the pairs together: two for A-T, three for C-G."
         },
         {
-          "text": "So each strand is a template: it dictates the exact sequence of the other."
+          "text": "The strands are antiparallel, and each strand is a template for the other."
         }
       ],
       "secondary": "This single rule is why DNA can both store and copy information. Structure explains both jobs at once, which is what made the discovery so powerful.",
       "callout": "One base, one partner. That rule makes accurate copying possible.",
-      "durationInFrames": 1926,
+      "durationInFrames": 1564,
       "caption": "A-T and C-G pairing by hydrogen bonds lets each strand template the other.",
       "voiceover": {
-        "text": "Now the rule that makes everything work, complementary base pairing. Each base can only pair with one specific partner. Adenine always pairs with thymine, that is A with T. And cytosine always pairs with guanine, C with G. No other combinations physically fit. Those pairs are held together by hydrogen bonds stretching across between the two strands, weak individually, but there are millions of them. And here is why this is so beautiful. Because each base has only one possible partner, each strand automatically dictates the sequence of the other. If you know one strand, you know the other. So each strand acts as a template. This one simple rule is what lets DNA do two jobs with the same structure, store the information in the sequence, and copy it accurately by pairing. That is what Watson and Crick saw immediately."
+        "text": "Now the rule that makes everything work, complementary base pairing. Adenine always pairs with thymine, and cytosine always pairs with guanine, because no other combinations physically fit. The pairs are held together by hydrogen bonds across the middle of the helix, two between A and T, and three between C and G. Each one is weak, but there are millions of them. One more structural detail you'll need soon. The two strands run in opposite directions, which we call antiparallel. And here's why the pairing rule is so powerful. Because each base has only one possible partner, each strand dictates the sequence of the other, so either strand can act as a template."
       }
     },
     {
@@ -121,42 +126,93 @@
       ],
       "secondary": "This is why it is called semiconservative, half of each new molecule is conserved from the original. It is not two brand-new molecules, and no original strand is discarded.",
       "callout": "Each new DNA molecule keeps one original strand. That is semiconservative.",
-      "durationInFrames": 1956,
+      "durationInFrames": 1538,
       "caption": "Strands separate and each templates a new strand: each product keeps one original strand.",
       "voiceover": {
-        "text": "So how does the copying actually happen? It is a process called semiconservative replication, and the name tells you the answer. First, the two original strands unzip and separate, the hydrogen bonds between the pairs break. Then each old strand acts as a template, and a brand new complementary strand is built against it, following the pairing rule, A with T, C with G. The result is two complete DNA molecules, and here is the crucial detail, each one contains one original strand and one newly made strand. That is why we call it semiconservative, because half of each new molecule, one strand, is conserved from the original. Get the wording exactly right, because the exam tests it. It is not two completely brand new molecules, and no original strand is thrown away. Each product keeps one old strand and one new one."
+        "text": "So how does the copying actually happen? It's called semiconservative replication, and the name tells you the answer. First, the two original strands unzip and separate as the hydrogen bonds between the bases break. Then each old strand acts as a template, and a brand new complementary strand is built against it, following A with T and C with G. The result is two DNA molecules, and here's the crucial detail, each one contains one original strand and one new strand. Half of each molecule is conserved, which is exactly what semiconservative means. Get the wording right, because it's not two brand new molecules, and no original strand is thrown away."
       }
     },
     {
-      "id": "definition",
+      "id": "definition-enzymes",
       "type": "definition",
-      "heading": "The words you need",
+      "heading": "The replication enzymes",
+      "body": "Four enzymes work together at the replication fork.",
       "bullets": [
         {
-          "text": "Nucleotide: the building block of DNA, a sugar, a phosphate and a nitrogenous base."
+          "text": "Helicase: unwinds the helix and breaks the hydrogen bonds, opening a replication fork."
         },
         {
-          "text": "Double helix: the twisted-ladder structure formed by two DNA strands."
+          "text": "Primase: lays down a short RNA primer, giving DNA polymerase a starting point."
         },
         {
-          "text": "Complementary base pairing: A pairs with T, and C pairs with G."
+          "text": "DNA polymerases: add complementary nucleotides, building only in the 5′ to 3′ direction, and proofread."
         },
         {
-          "text": "Hydrogen bonds: the weak bonds between paired bases that hold the strands together."
-        },
-        {
-          "text": "Semiconservative replication: each new molecule has one original and one new strand."
-        },
-        {
-          "text": "Template strand: an original strand used to guide a new complementary strand."
+          "text": "Ligase: joins DNA fragments by sealing gaps in the sugar-phosphate backbone."
         }
       ],
-      "callout": "These six terms describe one elegant idea: structure enables copying.",
-      "durationInFrames": 1806,
-      "caption": "Nucleotide, double helix, complementary pairing, hydrogen bonds, semiconservative, template strand.",
+      "callout": "Unzip, prime, build, seal.",
+      "caption": "Helicase unzips, primase primes, DNA polymerases build and proofread, ligase seals.",
       "voiceover": {
-        "text": "Let's pin down the vocabulary, because precision really matters in this topic. A nucleotide is the building block of DNA, made of a sugar, a phosphate group, and a nitrogenous base. The double helix is the twisted ladder structure formed by two DNA strands. Complementary base pairing is the rule that adenine pairs with thymine, and cytosine pairs with guanine. Hydrogen bonds are the weak bonds between those paired bases that hold the two strands together. Semiconservative replication describes how each new DNA molecule ends up with one original strand and one newly synthesised strand. And a template strand is an original strand used to guide the formation of a new complementary strand. Six terms, but they all describe one elegant idea, the structure of DNA is what makes accurate copying possible."
-      }
+        "text": "OK, so who actually does the copying? Four enzymes, and you need to know each one's job. Helicase goes first. It unwinds the double helix and breaks the hydrogen bonds between the bases, opening up a Y shaped region called the replication fork. Next comes primase. DNA polymerase can't start a strand from nothing, it can only add on to an existing end, so primase lays down a short RNA primer to give it a starting point. Then the DNA polymerases do the main building, adding complementary nucleotides one at a time. They can only build in one direction, called five prime to three prime, and they proofread as they go, which is a big part of why copying is so accurate. Another DNA polymerase later swaps the RNA primers for DNA. Finally, ligase joins neighbouring pieces of DNA by sealing the gaps in the sugar phosphate backbone. So the order is unzip, prime, build, and seal."
+      },
+      "durationInFrames": 2138
+    },
+    {
+      "id": "concept-leading-lagging",
+      "type": "concept",
+      "heading": "Leading and lagging strands",
+      "body": "Because the strands are antiparallel and polymerase only builds 5′ to 3′, the two new strands are made differently.",
+      "bullets": [
+        {
+          "text": "Leading strand: built continuously towards the fork, from one primer."
+        },
+        {
+          "text": "Lagging strand: built away from the fork in short Okazaki fragments, each with its own primer."
+        },
+        {
+          "text": "Ligase joins the Okazaki fragments into one continuous strand."
+        }
+      ],
+      "callout": "Same direction of building, 5′ to 3′, on both strands. Only the lagging strand is made in pieces.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "",
+          "Leading strand",
+          "Lagging strand"
+        ],
+        "rows": [
+          [
+            "Direction vs fork",
+            "Towards the fork",
+            "Away from the fork"
+          ],
+          [
+            "Synthesis",
+            "Continuous",
+            "In Okazaki fragments"
+          ],
+          [
+            "Primers needed",
+            "One",
+            "One per fragment"
+          ],
+          [
+            "Ligase needed",
+            "Very little",
+            "To join every fragment"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Leading strand is continuous; lagging strand is made in Okazaki fragments joined by ligase.",
+      "voiceover": {
+        "text": "Now here's where the antiparallel strands really matter. As helicase opens the fork, DNA polymerase can only build in the five prime to three prime direction, and the two templates point opposite ways. On one template, building in that direction means following the fork as it opens, so the new strand is made continuously from a single primer. That's the leading strand. On the other template, building five prime to three prime means working away from the fork. So the cell makes it in short pieces called Okazaki fragments, each one needing its own primer, and ligase then joins them into one continuous strand. That's the lagging strand. When you model this in class with paper strips or beads, use it to judge the model. Does it show the strands running in opposite directions, and the fragments on the lagging side? Many simple models don't, and that's a limitation worth writing about."
+      },
+      "durationInFrames": 2073
     },
     {
       "id": "worked-example",
@@ -171,43 +227,43 @@
         "After replication, the template and its new partner form one molecule; the other original strand templates the second molecule.",
         "Answer: new strand T-A-G-C-C-T, and each molecule has one original plus one new strand."
       ],
-      "durationInFrames": 2136,
+      "durationInFrames": 1773,
       "caption": "Template A-T-C-G-G-A gives new strand T-A-G-C-C-T; each molecule keeps one original strand.",
       "voiceover": {
-        "text": "Let's apply the pairing rule, because this is a guaranteed exam skill. A DNA template strand reads A, T, C, G, G, A. Write the new complementary strand. We just go base by base and apply the rule. A pairs with T, so the first new base is T. T pairs with A, giving A. C pairs with G, giving G. G pairs with C, giving C. The next G also gives C. And the final A gives T. So reading along, the new complementary strand is T, A, G, C, C, T. Now the second part of the question, what does each molecule contain after replication. The template strand and the new strand we just built pair up to form one of the two molecules, and the other original strand templates the second molecule. So each of the two daughter molecules contains one original strand and one new strand, which is exactly what semiconservative means."
+        "text": "Let's apply the pairing rule, because this is a guaranteed exam skill. A DNA template strand reads A, T, C, G, G, A. Write the new complementary strand. We just go base by base. A pairs with T, so the first new base is T. T gives A, C gives G, and G gives C. The next G also gives C, and the final A gives T. So reading along, the new strand is T, A, G, C, C, T. Now the second part, what does each molecule contain after replication? The template and the strand we just built form one molecule, and the other original strand templates the second molecule. So each daughter molecule contains one original strand and one new strand, which is exactly what semiconservative means."
       }
     },
     {
       "id": "misconception",
       "type": "misconception",
-      "heading": "Two structure traps",
-      "body": "Trap 1: thinking DNA and RNA have the same structure and bases. DNA is double-stranded with deoxyribose and uses A, T, G, C; RNA is single-stranded with ribose and uses uracil instead of thymine.",
-      "secondary": "Trap 2: thinking the two strands of DNA are identical. They are complementary and antiparallel, running in opposite directions, not identical. Each strand is the template for producing the other, which is the whole basis of copying.",
-      "mistakeTag": "Where DNA-structure marks vanish",
-      "callout": "Complementary, not identical; DNA is not the same as RNA.",
-      "durationInFrames": 1890,
-      "caption": "DNA differs from RNA in strands, sugar and bases; the two DNA strands are complementary, not identical.",
+      "heading": "Two replication traps",
+      "body": "Trap 1: thinking DNA polymerase builds the lagging strand 3′ to 5′. It always builds 5′ to 3′; the lagging strand is simply made in fragments, working away from the fork.",
+      "secondary": "Trap 2: thinking the two strands of DNA are identical. They are complementary and antiparallel, running in opposite directions. Each strand is the template for producing the other.",
+      "mistakeTag": "Where replication marks vanish",
+      "callout": "Always 5′ to 3′. Complementary, not identical.",
+      "durationInFrames": 1668,
+      "caption": "DNA polymerase always builds 5′ to 3′; the two DNA strands are complementary, not identical.",
       "voiceover": {
-        "text": "Two traps on DNA structure. Trap one, thinking DNA and RNA have the same structure and the same bases. They do not. DNA is double stranded, it uses the sugar deoxyribose, and its bases are A, T, G and C. RNA is single stranded, it uses the sugar ribose, and crucially it replaces thymine with uracil. Those differences are not trivia, they relate directly to their different jobs, and we will use them next time. Trap two, and this one is sneaky, thinking the two strands of DNA are identical. They are not identical, they are complementary, and they are antiparallel, meaning they run in opposite directions. Each strand is the template for producing the other, which is the entire basis of copying. So lock these in, complementary not identical, and DNA is not the same as RNA."
+        "text": "Two traps on replication. Trap one, thinking DNA polymerase builds the lagging strand backwards, three prime to five prime. It doesn't. DNA polymerase always builds five prime to three prime, on both strands. The lagging strand is only different because building in that direction takes it away from the fork, so it has to be made in fragments that ligase joins up afterwards. Trap two, and this one's sneaky, thinking the two strands of DNA are identical. They're not. They're complementary, and they're antiparallel, meaning they run in opposite directions. Each strand is the template for producing the other, which is the whole basis of copying. So lock these in, always five prime to three prime, and complementary rather than identical."
       }
     },
     {
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "Explain how complementary base pairing and semiconservative replication together ensure that hereditary information is preserved accurately in daughter cells.",
+      "question": "Explain how complementary base pairing, semiconservative replication and the action of DNA polymerase together ensure that hereditary information is copied accurately.",
       "pausePrompt": "Pause and reason it through.",
       "answerSteps": [
         "Complementary pairing means each base has only one partner, so each strand fixes the sequence of the other.",
-        "When strands separate, each one templates an exact new partner strand by following A-T and C-G.",
-        "Semiconservative replication keeps one original strand in each new molecule as a faithful reference.",
-        "Together they make each daughter molecule a faithful copy of the original sequence.",
-        "Answer: the pairing rule guarantees accuracy, and keeping an original strand preserves the information."
+        "Helicase separates the strands, and each one templates a new partner strand following A-T and C-G.",
+        "DNA polymerase adds only the matching nucleotide and proofreads, correcting most errors.",
+        "Semiconservative replication keeps one original strand in each new molecule.",
+        "Answer: pairing sets the sequence, proofreading keeps it accurate, and each copy keeps an original strand."
       ],
-      "durationInFrames": 2172,
-      "caption": "Pairing fixes each new strand's sequence; keeping an original strand preserves the information.",
+      "durationInFrames": 1890,
+      "caption": "Pairing sets the sequence, polymerase proofreads, and each new molecule keeps an original strand.",
       "voiceover": {
-        "text": "Quick check, and this is almost word for word a band six exam question. Explain how complementary base pairing and semiconservative replication together ensure hereditary information is preserved accurately in daughter cells. Pause and reason it through. Right, build it in steps. First, complementary base pairing means each base has only one possible partner, A with T, C with G, so each strand completely fixes the sequence of the other. Second, when the two strands separate, each one acts as a template, and a new partner strand is built against it following that same rule, so the new strand has to match exactly. Third, because replication is semiconservative, each new molecule keeps one original strand, a faithful reference copy from the parent. Put those together and every daughter molecule ends up a faithful copy of the original sequence. So the answer, the pairing rule guarantees the accuracy of each new strand, and conserving an original strand preserves the information."
+        "text": "Quick check, and this is close to a band six exam question. Explain how complementary base pairing, semiconservative replication and DNA polymerase together ensure hereditary information is copied accurately. Pause and reason it through. Right, build it in steps. First, complementary base pairing means each base has only one possible partner, so each strand completely fixes the sequence of the other. Second, once helicase separates the strands, each one acts as a template, and a new strand is built against it following that same rule. Third, DNA polymerase adds only the matching nucleotide and proofreads as it goes, so most mistakes are fixed on the spot. And fourth, because replication is semiconservative, each new molecule keeps one original strand from the parent. Put those together and every daughter molecule ends up a faithful copy of the original sequence."
       }
     },
     {
@@ -216,16 +272,16 @@
       "heading": "Lock it in",
       "points": [
         "DNA is a double helix of nucleotides, and the base sequence stores the information.",
-        "Complementary base pairing: A with T, C with G, held by hydrogen bonds.",
-        "Each strand is a template that fixes the sequence of the other.",
+        "A pairs with T and C with G, held by hydrogen bonds; the strands are antiparallel.",
         "Replication is semiconservative: each new molecule has one original and one new strand.",
-        "DNA is complementary not identical, and differs from RNA in strands, sugar and bases."
+        "Helicase unzips, primase primes, DNA polymerases build 5′ to 3′ and proofread, ligase seals.",
+        "The leading strand is continuous; the lagging strand is made in Okazaki fragments."
       ],
-      "finalPrompt": "Predicting a strand? Apply A-T and C-G base by base, then remember each molecule keeps one original strand.",
-      "durationInFrames": 1986,
-      "caption": "Five takeaways: structure, pairing, templating, semiconservative replication, DNA vs RNA.",
+      "finalPrompt": "Replication question? Pair A-T and C-G base by base, keep one original strand, and remember polymerase only builds 5′ to 3′.",
+      "durationInFrames": 1551,
+      "caption": "Five takeaways: structure, pairing, semiconservative replication, the enzymes, leading and lagging strands.",
       "voiceover": {
-        "text": "Let's lock it in. Five takeaways. First, DNA is a double helix built from nucleotides, and it is the sequence of bases that stores the information. Second, complementary base pairing means adenine pairs with thymine, and cytosine with guanine, held together by hydrogen bonds. Third, because of that rule, each strand is a template that completely fixes the sequence of the other. Fourth, replication is semiconservative, so each new molecule ends up with one original strand and one new strand, never thrown away, never two brand new ones. And fifth, remember the two strands are complementary not identical, and DNA differs from RNA in its strands, its sugar, and its bases. When you predict a strand, apply the pairing rule base by base, then recall that each molecule keeps one original strand. Next lesson, mitosis, the cell division that copies these molecules into new cells."
+        "text": "Let's lock it in. Five takeaways. First, DNA is a double helix built from nucleotides, and the sequence of bases stores the information. Second, adenine pairs with thymine and cytosine with guanine, held by hydrogen bonds, and the two strands are antiparallel. Third, replication is semiconservative, so each new molecule has one original strand and one new strand. Fourth, the enzymes. Helicase unzips, primase primes, DNA polymerases build five prime to three prime and proofread, and ligase seals. And fifth, the leading strand is made continuously, while the lagging strand is made in Okazaki fragments. Next, we'll use these copied chromosomes in mitosis, the division that shares them out between new cells."
       }
     }
   ]

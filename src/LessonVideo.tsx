@@ -26,9 +26,11 @@ import type {LessonData, SceneData} from './lesson/types';
 import {AccentContext, themeFor} from './styles/theme';
 import {TRANSITION_FRAMES, INTRO_STINGER_FRAMES} from './lesson/timing';
 import type {TransitionPresentation} from '@remotion/transitions';
-import {cinematicTransition, transitionKinds} from './transitions/cinematicTransitions';
+import {cinematicTransition} from './transitions/cinematicTransitions';
+import {pickTransition} from './transitions/pickTransition';
 import {crashZoom} from './transitions/crashZoom';
 import './styles.css';
+import './styles/fonts';
 
 export const VIDEO_WIDTH = 1920;
 export const VIDEO_HEIGHT = 1080;
@@ -74,7 +76,8 @@ const renderSlide = (scene: SceneData, lesson: LessonData, sceneIndex: number, t
 export const LessonVideo = ({lesson}: LessonVideoProps) => {
   const items: React.ReactNode[] = [];
 
-  const TRANSITION_POOL_SIZE = transitionKinds.length + 1; // +1 for crashZoom slot
+  const theme = themeFor(lesson.subject);
+  const neutral = Boolean(lesson.syllabusNeutral);
 
   // Collect all "you should now be able to" objectives. They render once
   // up-front in the intro stinger — pulling them out of per-scene
@@ -87,13 +90,12 @@ export const LessonVideo = ({lesson}: LessonVideoProps) => {
     const sceneIndex = index + 1;
     const totalScenes = lesson.scenes.length;
     if (index > 0) {
-      const slot = (index - 1) % TRANSITION_POOL_SIZE;
-      const useCrashZoom = slot === TRANSITION_POOL_SIZE - 1;
-      const kind = transitionKinds[slot % transitionKinds.length];
+      const choice = pickTransition(lesson.scenes[index - 1], scene);
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const presentation: TransitionPresentation<any> = useCrashZoom
-        ? crashZoom()
-        : cinematicTransition({accent: index % 2 === 0 ? '#6bdcff' : '#0098cc', kind});
+      const presentation: TransitionPresentation<any> =
+        choice === 'crashZoom'
+          ? crashZoom({color: theme.soft})
+          : cinematicTransition({accent: theme.accent2, kind: choice});
 
       items.push(
         <TransitionSeries.Transition
@@ -139,12 +141,14 @@ export const LessonVideo = ({lesson}: LessonVideoProps) => {
           <IntroVoiceover src={lesson.introVoiceover?.audioFile} />
           <IntroStinger
             subjectLabel={lesson.subject}
-            yearLabel={lesson.yearLevel}
-            moduleLabel={lesson.module}
+            yearLabel={neutral ? undefined : lesson.yearLevel}
+            moduleLabel={neutral ? undefined : lesson.module}
             objectives={objectives}
-            nesaOutcomes={lesson.nesaOutcomes}
-            inquiryQuestion={lesson.inquiryQuestion}
-            syllabusDotPoints={lesson.syllabusDotPoints}
+            nesaOutcomes={neutral ? undefined : lesson.nesaOutcomes}
+            inquiryQuestion={neutral ? undefined : lesson.inquiryQuestion}
+            syllabusDotPoints={neutral ? undefined : lesson.syllabusDotPoints}
+            todayTitle={neutral ? lesson.title : undefined}
+            todaySubtitle={neutral ? lesson.subtitle : undefined}
           />
         </Series.Sequence>
         <Series.Sequence durationInFrames={lessonRawDuration}>

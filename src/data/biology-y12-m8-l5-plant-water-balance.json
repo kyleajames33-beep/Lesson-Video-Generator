@@ -1,25 +1,32 @@
 {
   "title": "Plant Water Balance",
-  "subtitle": "Stomata, xerophytes and osmoregulation in other organisms",
+  "subtitle": "Transpiration, cohesion-tension, stomata and Australian plant adaptations",
   "subject": "Biology",
+  "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 8",
   "lesson": "Lesson 5",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
-  "syllabusModule": "Module 8 — Non-infectious Disease and Disorders",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
+  "syllabusModule": "Module 8 Non-infectious Disease and Disorders (2017) + Cells to systems and Evolution and ecosystems (2025)",
   "syllabusDotPoints": [
-    "investigate the mechanisms used by plants and other organisms to maintain water balance within tolerance limits, including stomatal control and osmoregulation (ACSBL101, ACSBL110, ACSBL111)"
+    "mechanisms in plants that allow water balance to be maintained (ACSBL115)",
+    "Use the cohesion-tension theory to explain how osmotic pressure, transpiration stream and the cohesion of water molecules control the movement of water and dissolved minerals through the xylem",
+    "Explain how light, temperature, wind and humidity affect the rate of transpiration in plants",
+    "Conduct a practical investigation to demonstrate the effect of an environmental factor on the rate of transpiration",
+    "Conduct a practical investigation to examine structural adaptations for water balance in Australian plants"
   ],
   "moduleLessonCount": 21,
   "nesaOutcomes": [
     "BIO12-15",
     "BIO11/12-4",
     "BIO11/12-5",
-    "BIO11/12-7"
+    "BIO11/12-7",
+    "BI-11-02",
+    "BI-11-03"
   ],
   "inquiryQuestion": "How is an organism's internal environment maintained in response to a changing external environment?",
-  "lessonIntent": "Students can explain stomatal control and xerophytic adaptations, and compare osmoregulation in marine and freshwater fish.",
-  "examSkill": "Explain a plant or animal water-balance adaptation by its mechanism, always linking the structural feature or hormone to the physical effect on water movement.",
+  "lessonIntent": "Students can explain water movement with the cohesion-tension theory, explain how light, temperature, wind and humidity affect transpiration, describe stomatal control, and link Australian plant structures to reduced water loss.",
+  "examSkill": "Explain a transpiration factor or a water-saving adaptation by its mechanism, always linking it to the water vapour gradient, stomata or surface area, and calculate a transpiration rate from potometer data.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -27,50 +34,181 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, plant water balance. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, transpiration and plant water balance. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 105,
-      "caption": "Plant Water Balance (Year 12 Biology, Module 8, Lesson 5)"
+      "caption": "Plant Water Balance"
     },
     {
       "id": "hook",
       "type": "hook",
-      "heading": "Homeostasis with no nervous system",
-      "body": "A desert plant holds its internal water steady through a 40 degree day using a single chemical signal. No brain, no blood, no nerves.",
-      "callout": "Regulation is universal, not just an animal thing.",
+      "heading": "A hundred metres, no pump",
+      "body": "Centurion, a mountain ash in Tasmania, stands close to 100 metres tall. Every leaf at the top still gets water from the soil.",
+      "callout": "How does water climb a tree with no heart and no pump?",
       "image": "bioM8L5DesertPlant",
-      "durationInFrames": 2040,
-      "caption": "CSIRO found arid-zone plants hold leaf water potential steady using the hormone ABA.",
+      "durationInFrames": 1420,
+      "caption": "Tall trees such as Tasmania's mountain ash lift water about 100 metres without a pump.",
       "voiceover": {
-        "text": "In a 2019 CSIRO survey of the Great Victoria Desert, researchers measured arid-zone Australian plants holding their leaf water potential almost perfectly steady, within about zero point two megapascals, right across a forty degree daily temperature swing. And they did it with a single chemical signal, a hormone called A B A, which jumps about ten-fold the moment water stress begins. Now stop and think about what these plants do not have, no nervous system, no blood, no brain, no hypothalamus running a feedback loop. And yet here is homeostasis, the same self-correcting stability we saw in humans, achieved with just one chemical messenger and no neural coordination at all. That tells us something important, homeostatic regulation is a universal feature of life, not an animal-only trick. Today we see how plants do it, and how water balance works in fish too."
+        "text": "In southern Tasmania there's a mountain ash called Centurion, and it stands close to one hundred metres tall, one of the tallest flowering plants on Earth. Every leaf at the very top still needs water from the soil, and the tree lifts it all that way without a heart, without muscles and without any pump. At the same time, plants in dry parts of Australia have to hang on to every drop they have. So today we'll answer two questions. How does water actually move up a plant, and how do plants, especially Australian ones, control how much of it they lose?"
       }
+    },
+    {
+      "id": "concept-cohesion-tension",
+      "type": "concept",
+      "heading": "The cohesion-tension theory",
+      "body": "Evaporation from the leaves pulls a continuous column of water up the xylem.",
+      "bullets": [
+        {
+          "text": "Roots take up mineral ions, so water enters root cells by osmosis."
+        },
+        {
+          "text": "Water evaporates from leaf cells and diffuses out through the stomata: transpiration."
+        },
+        {
+          "text": "This creates tension that pulls water up the xylem, carrying dissolved minerals."
+        },
+        {
+          "text": "Cohesion (hydrogen bonds between water molecules) keeps the column unbroken."
+        }
+      ],
+      "callout": "Water is pulled from the top, not pushed from the bottom.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "s",
+            "label": "Soil water"
+          },
+          {
+            "id": "r",
+            "label": "Root hairs (osmosis)"
+          },
+          {
+            "id": "x",
+            "label": "Xylem (cohesion)"
+          },
+          {
+            "id": "l",
+            "label": "Leaf cells"
+          },
+          {
+            "id": "a",
+            "label": "Evaporates out of stomata"
+          }
+        ],
+        "edges": [
+          {
+            "from": "s",
+            "to": "r"
+          },
+          {
+            "from": "r",
+            "to": "x"
+          },
+          {
+            "from": "x",
+            "to": "l"
+          },
+          {
+            "from": "l",
+            "to": "a"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Transpiration pulls a cohesive column of water and minerals up the xylem from the roots.",
+      "voiceover": {
+        "text": "OK, so how does water climb a tree? The accepted explanation is the cohesion tension theory, and it works from the top down. Inside the leaf, water evaporates from the moist cell walls and diffuses out through the stomata. That loss of water vapour is called transpiration. As water leaves, it pulls on the water behind it, creating a tension, a kind of suction, in the xylem vessels. That pull can travel all the way down because of cohesion. Water molecules are held to each other by hydrogen bonds, so the column in the xylem doesn't break, and they also cling to the xylem walls. At the bottom, the roots take up mineral ions, which makes water enter the root cells by osmosis. The result is a continuous transpiration stream from soil to leaf, carrying dissolved minerals up with the water."
+      },
+      "durationInFrames": 1929
+    },
+    {
+      "id": "concept-transpiration-factors",
+      "type": "concept",
+      "heading": "What speeds up transpiration?",
+      "body": "Transpiration depends on how open the stomata are and how steep the water vapour gradient is.",
+      "bullets": [
+        {
+          "text": "Light: stomata open in light, so transpiration increases."
+        },
+        {
+          "text": "Temperature: warmer water evaporates and diffuses faster."
+        },
+        {
+          "text": "Wind: carries humid air away from the leaf, steepening the gradient."
+        },
+        {
+          "text": "Humidity: moist air makes the gradient shallower, so transpiration slows."
+        }
+      ],
+      "callout": "Three factors speed it up. High humidity slows it down.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Factor",
+          "Effect on rate",
+          "Why"
+        ],
+        "rows": [
+          [
+            "More light",
+            "Increases",
+            "Stomata open wider"
+          ],
+          [
+            "Higher temperature",
+            "Increases",
+            "Faster evaporation and diffusion"
+          ],
+          [
+            "More wind",
+            "Increases",
+            "Humid air blown away"
+          ],
+          [
+            "Higher humidity",
+            "Decreases",
+            "Smaller vapour gradient"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Light, heat and wind increase transpiration; high humidity decreases it.",
+      "voiceover": {
+        "text": "Now, the rate of transpiration isn't fixed. It depends on two things, how open the stomata are, and how steep the gradient of water vapour is between the inside of the leaf and the air outside. Light increases the rate, because stomata open in the light to let carbon dioxide in for photosynthesis. A higher temperature increases it too, because water evaporates and diffuses faster, and warm air can hold more water vapour. Wind increases the rate by blowing away the layer of humid air that builds up around the leaf, which keeps the gradient steep. Humidity works the other way. When the air is already moist, the gradient is shallow, so transpiration slows down. So in an exam answer, always link the factor to either the stomata or the gradient."
+      },
+      "durationInFrames": 1799
     },
     {
       "id": "concept-stomata",
       "type": "concept",
-      "heading": "Stomatal control by guard cells",
+      "heading": "Stomata: the plant's control valves",
       "body": "Guard cells open and close the leaf pores by pumping potassium ions, which moves water and changes their turgor.",
       "bullets": [
         {
-          "text": "To open: guard cells pump potassium in, water follows by osmosis, turgor rises and the pore opens."
+          "text": "To open: guard cells take up potassium ions, water follows by osmosis, turgor rises and the pore opens."
         },
         {
-          "text": "To close in drought: the hormone ABA triggers potassium out, water leaves, turgor falls and the pore shuts."
+          "text": "To close in drought: the hormone ABA makes potassium ions leave, water follows, and the pore shuts."
         },
         {
-          "text": "The active step is potassium transport; water movement is always passive osmosis."
+          "text": "Water always moves by osmosis; the plant controls it by moving ions."
         }
       ],
       "secondary": "Closing stomata saves water but also blocks carbon dioxide entry for photosynthesis, the central trade-off plants must manage.",
-      "callout": "Pump potassium, water follows, turgor changes, the pore moves.",
-      "durationInFrames": 2280,
-      "caption": "Guard cells move potassium; water follows by osmosis to open or close the stoma.",
+      "callout": "Move the ions, water follows, the pore opens or shuts.",
+      "durationInFrames": 1916,
+      "caption": "Guard cells move potassium ions; water follows by osmosis to open or close the stoma.",
       "voiceover": {
-        "text": "So how does a plant regulate water loss? Through the stomata, the microscopic pores on the leaf surface, controlled by paired guard cells. Here is the mechanism, and the detail matters. To open a stoma, the guard cells actively pump potassium ions into themselves. Water then follows those ions in by osmosis, the guard cells swell, their turgor pressure rises, and they bow apart so the pore opens. To close the stoma in drought, the hormone A B A is released, which triggers potassium to leave the guard cells. Water follows it out by osmosis, turgor falls, the guard cells go limp, and the pore shuts. The single most important point for the exam, the active step is the potassium transport, and the water movement is always passive osmosis following the ions. And notice the trade-off at the heart of it, closing the stomata saves water, but it also shuts out the carbon dioxide the plant needs for photosynthesis."
+        "text": "So how does a plant control its water loss from moment to moment? Through the stomata, controlled by a pair of guard cells around each pore. To open a stoma, the guard cells take up potassium ions, using energy from A T P. Water follows those ions in by osmosis, the guard cells swell with higher turgor, and they bow apart to open the pore. When the plant is short of water, it makes a hormone called A B A, which causes potassium ions to leave the guard cells. Water follows them out, the guard cells go limp, and the pore closes. Notice the plant never pumps water directly. It moves ions, and water follows by osmosis. And there's a trade off, because closing the stomata saves water but also shuts out the carbon dioxide the plant needs for photosynthesis."
       }
     },
     {
@@ -79,129 +217,88 @@
       "heading": "The words you need",
       "bullets": [
         {
-          "text": "Transpiration: the evaporation of water vapour from leaf surfaces through the stomata."
+          "text": "Transpiration: loss of water vapour from the leaves, mainly through the stomata."
         },
         {
-          "text": "Guard cell: a paired cell that changes turgor to open or close a stoma."
+          "text": "Transpiration stream: the continuous flow of water and minerals from roots to leaves in the xylem."
+        },
+        {
+          "text": "Cohesion: attraction between water molecules due to hydrogen bonding."
+        },
+        {
+          "text": "Guard cells: paired cells that change turgor to open or close a stoma."
         },
         {
           "text": "Xerophyte: a plant structurally adapted to survive in dry environments."
-        },
-        {
-          "text": "Osmoregulator vs osmoconformer: one holds internal osmolarity constant, the other lets it match the surroundings."
         }
       ],
-      "callout": "Osmoregulators hold steady. Osmoconformers go with the water.",
-      "durationInFrames": 1845,
-      "caption": "Transpiration, guard cell, xerophyte, osmoregulator vs osmoconformer.",
+      "callout": "Transpiration is the loss. The transpiration stream is the flow it drives.",
+      "durationInFrames": 1447,
+      "caption": "Transpiration, transpiration stream, cohesion, guard cells and xerophyte.",
       "voiceover": {
-        "text": "Let's pin down the key terms. Transpiration is the evaporation of water vapour from leaf surfaces through the stomata, and it is what drives water up the plant. A guard cell is one of the paired cells flanking a stoma, which changes its turgor pressure to open or close that pore. A xerophyte is a plant structurally adapted to survive in dry environments, think thick cuticles and sunken stomata. And then a pair of terms for animals in water, an osmoregulator actively holds its internal osmolarity constant regardless of the surroundings, like a fish or a mammal, whereas an osmoconformer simply lets its body fluids match the concentration of the surrounding water, like most marine invertebrates. So osmoregulators hold steady against the environment, osmoconformers go along with it."
+        "text": "Let's pin down the key terms. Transpiration is the loss of water vapour from the leaves, mainly through the stomata. The transpiration stream is the continuous flow of water and dissolved minerals from the roots up to the leaves through the xylem, the flow that transpiration drives. Cohesion is the attraction between water molecules, caused by hydrogen bonding, and it's what keeps the water column in one piece. Guard cells are the paired cells that change their turgor to open or close a stoma. And a xerophyte is a plant that's structurally adapted to survive in dry environments, which is where we're heading next."
       }
     },
     {
       "id": "concept-xerophyte",
       "type": "concept",
-      "heading": "Xerophytic adaptations",
-      "body": "Xerophytes carry permanent structural features that passively reduce water loss at all times, easing the load on active control.",
+      "heading": "Australian plants built for dry country",
+      "body": "Many Australian plants have permanent structures that reduce water loss by cutting the gradient, the heat load or the surface area.",
       "bullets": [
         {
-          "text": "A thick waxy cuticle blocks water loss through the leaf surface itself."
+          "text": "Eucalypts: leaves hang vertically and have a thick waxy cuticle, reducing midday heating and evaporation."
         },
         {
-          "text": "Sunken or rolled stomata trap humid air, reducing the diffusion gradient for water out."
+          "text": "Banksias: stomata sunken in hairy pits that trap humid air, reducing the gradient."
         },
         {
-          "text": "Hairs (trichomes) and small, pale leaves cut surface area and reflect heat."
+          "text": "Spinifex: leaves roll up, enclosing the stomata and cutting exposed surface area."
         }
       ],
-      "secondary": "Always link the feature to the mechanism. Saying small leaves reduce water loss is weak; small leaves reduce surface area for transpiration is the mark.",
+      "secondary": "In the lab, examine leaf cross sections or epidermal peels under a microscope and link each structure to its effect on water loss.",
       "callout": "Name the feature, then the physical reason it cuts water loss.",
-      "durationInFrames": 2070,
-      "caption": "Xerophyte features passively reduce water loss; always state the mechanism.",
+      "durationInFrames": 1929,
+      "caption": "Eucalypts, banksias and spinifex show structural adaptations that reduce water loss.",
       "voiceover": {
-        "text": "Now structural adaptations, the features of xerophytes, plants built for dry places. Unlike stomatal control, which is an active response, these are permanent structures that passively reduce water loss all the time, easing the load on the active mechanisms. A thick waxy cuticle blocks water from escaping through the leaf surface itself. Sunken or rolled stomata trap a pocket of humid air right next to the pore, which reduces the diffusion gradient, so less water vapour leaves. Hairs, called trichomes, do the same thing while also reflecting sunlight, and small, pale leaves cut the surface area and absorb less heat. Here is the exam technique that separates the bands. Always link the feature to the mechanism. Saying small leaves reduce water loss earns very little. Saying small leaves reduce the surface area available for transpiration, that is the mark. Feature, then the physical reason."
+        "text": "Now let's look at Australian plants, because the syllabus asks you to examine them. Many have permanent structures that cut water loss all the time, not just when stomata close. Adult eucalyptus leaves often hang vertically, edge on to the midday sun, so they absorb less heat, and a thick waxy cuticle stops water escaping through the leaf surface. Many banksias have their stomata sunken in pits lined with hairs. Those pits trap a pocket of humid air, so the water vapour gradient is smaller and less water leaves. And spinifex, the grass of the desert, rolls its leaves inwards, enclosing the stomata and cutting the surface exposed to dry air. In the lab you'd look at leaf sections under a microscope, and the exam technique is the same. Name the feature, then give the physical reason it reduces water loss."
       }
     },
     {
       "id": "worked-example",
       "type": "workedExample",
-      "heading": "Stomatal closure in drought",
-      "question": "Describe how a plant closes its stomata when it is water-stressed. Name the hormone, the role of potassium and turgor, and the trade-off involved.",
-      "coachNote": "Lead with the active ion step, then let water follow.",
+      "heading": "Measuring transpiration with a potometer",
+      "question": "In a bubble potometer, the air bubble moved 24 mm in 10 minutes in still air, and 60 mm in 10 minutes with a fan blowing on the leaves. Calculate each rate and explain the difference.",
+      "coachNote": "Rate = distance ÷ time. Then link wind to the water vapour gradient.",
       "steps": [
-        "The plant detects water stress and releases the hormone ABA to the guard cells.",
-        "ABA triggers potassium ions to move out of the guard cells (the active step).",
-        "Water follows the potassium out by osmosis, so guard cell turgor falls.",
-        "The flaccid guard cells close the stoma, reducing transpiration and saving water.",
-        "Trade-off: the closed stoma also blocks carbon dioxide entry, slowing photosynthesis ✓"
+        "Still air: rate = 24 mm ÷ 10 min = 2.4 mm/min.",
+        "With fan: rate = 60 mm ÷ 10 min = 6.0 mm/min.",
+        "The fan increased the rate 2.5 times (6.0 ÷ 2.4).",
+        "Wind removes the humid air around the leaf, steepening the water vapour gradient, so more water is lost and taken up.",
+        "Answer: 2.4 mm/min vs 6.0 mm/min; wind increases transpiration ✓"
       ],
-      "durationInFrames": 2160,
-      "caption": "Drought: ABA, potassium out, turgor falls, stoma closes; CO2 entry is the cost.",
+      "durationInFrames": 1942,
+      "caption": "Still air 2.4 mm/min, with fan 6.0 mm/min: wind increases transpiration.",
       "voiceover": {
-        "text": "Let's work through stomatal closure in drought, a very common four-mark question. First, the plant detects water stress, and releases the hormone A B A to the guard cells. A B A triggers the key event, potassium ions move out of the guard cells, and remember, that ion movement is the active step. Water then follows the potassium out of the cells by osmosis, so the guard cells lose turgor pressure and go flaccid. The limp guard cells close the stoma, which reduces transpiration and conserves water. So far so good, but the question asks for the trade-off, and that is where the marks are. By closing the stoma, the plant also blocks carbon dioxide from entering the leaf, which slows photosynthesis. So the plant is constantly balancing two competing needs, keeping water in, versus letting carbon dioxide in, and A B A tips that balance toward survival in a drought."
-      }
-    },
-    {
-      "id": "worked-example-2",
-      "type": "workedExample",
-      "heading": "Marine versus freshwater fish",
-      "question": "Compare osmoregulation in a marine fish and a freshwater fish. For each, give the direction of water movement, the response, and the urine produced.",
-      "coachNote": "Start from whether the surrounding water is more or less concentrated than the fish's blood.",
-      "steps": [
-        "Marine fish: seawater is more concentrated than its blood, so water is lost by osmosis.",
-        "It drinks seawater to replace the loss and actively excretes excess salt at the gills; urine is small and concentrated.",
-        "Freshwater fish: the water is more dilute than its blood, so water moves in by osmosis.",
-        "It never drinks, absorbs ions at the gills, and produces large volumes of dilute urine to dump the excess water.",
-        "Both use negative feedback to hold blood osmolarity steady ✓"
-      ],
-      "durationInFrames": 2160,
-      "caption": "Marine fish lose water and drink; freshwater fish gain water and never drink.",
-      "voiceover": {
-        "text": "Now osmoregulation in fish, and the whole comparison flows from one question, is the surrounding water more or less concentrated than the fish's blood? Take the marine fish first. Seawater is more concentrated than its blood, so water is constantly pulled out of the fish by osmosis. To survive, the marine fish drinks seawater to replace that lost water, and then actively excretes the excess salt through its gills. Its urine is small in volume and concentrated. Now the freshwater fish, which faces the exact opposite problem. The surrounding water is more dilute than its blood, so water floods into the fish by osmosis. So the freshwater fish never drinks, instead it absorbs ions back in at the gills, and it produces large volumes of very dilute urine to dump all that excess water. Both fish are using negative feedback to hold their blood osmolarity steady, they just face opposite challenges."
+        "text": "Let's work through a practical, because you may run this one yourself. A bubble potometer measures how fast a leafy shoot takes up water, which tracks transpiration closely, since most of the water taken up is lost from the leaves. In still air, the bubble moves twenty four millimetres in ten minutes. With a fan blowing on the leaves, it moves sixty millimetres in ten minutes. Rate is distance divided by time, so in still air that's two point four millimetres per minute, and with the fan it's six point zero millimetres per minute, two and a half times faster. Why? The wind removes the humid air around the leaf, keeping the water vapour gradient steep, so more water evaporates and more is drawn up. For a fair test, only the wind should change, with light, temperature and humidity kept the same."
       },
-      "diagram": {
-        "type": "table",
-        "headers": [
-          "Feature",
-          "Marine fish",
-          "Freshwater fish"
-        ],
-        "rows": [
-          [
-            "Surrounding water",
-            "More concentrated",
-            "More dilute"
-          ],
-          [
-            "Water moves",
-            "Out, by osmosis",
-            "In, by osmosis"
-          ],
-          [
-            "Drinking",
-            "Drinks seawater",
-            "Never drinks"
-          ],
-          [
-            "Urine",
-            "Small, concentrated",
-            "Large, dilute"
-          ]
-        ]
+      "unitCancel": {
+        "left": "mm",
+        "right": "min",
+        "result": "mm/min"
       }
     },
     {
       "id": "misconception",
       "type": "misconception",
       "heading": "Three traps",
-      "body": "Trap 1: writing that guard cells pump water to open stomata. They pump potassium ions, and water follows by osmosis.",
-      "secondary": "Trap 2: saying stomata close in the dark because the plant is sleeping. Without light there is no ATP for the potassium pumps, so guard cells cannot stay turgid. Trap 3: thinking freshwater fish drink lots of water. They never drink, osmosis already floods them; it is marine fish that drink seawater.",
-      "mistakeTag": "Where plant and fish marks vanish",
-      "callout": "Guard cells pump ions, not water. Freshwater fish never drink. Marine fish do.",
-      "durationInFrames": 2295,
-      "caption": "Guard cells pump ions (not water); freshwater fish never drink; marine fish do.",
+      "body": "Trap 1: writing that guard cells pump water to open stomata. They take up potassium ions, and water follows by osmosis.",
+      "secondary": "Trap 2: saying roots push water up the tree. The main force is the pull from transpiration at the leaves. Trap 3: saying humid air speeds up transpiration. High humidity makes the vapour gradient smaller, so transpiration slows.",
+      "mistakeTag": "Where plant water marks vanish",
+      "callout": "Ions move, water follows. Pulled from the top. Humidity slows it.",
+      "durationInFrames": 1577,
+      "caption": "Guard cells move ions, not water; water is pulled up by transpiration; humidity slows transpiration.",
       "voiceover": {
-        "text": "Three traps, and they map neatly onto earlier ideas. Trap one, writing that guard cells pump water to open the stomata. They do not. Guard cells actively pump potassium ions into themselves, and water follows by osmosis, exactly the same logic as the kidney tubule in Lesson Four, the active step is ion transport, water is passive. Trap two, saying stomata close in the dark because the plant is sleeping. There is no sleeping involved. In the dark, there is no light to make A T P, so the potassium pumps cannot run, the guard cells cannot stay swollen, and the stomata close. It is a direct mechanism, not a rest cycle. Trap three, thinking freshwater fish drink large amounts of water. They never drink, osmosis already drives water into them constantly, so they actually produce huge volumes of dilute urine to get rid of it. It is the marine fish, losing water to concentrated seawater, that has to drink."
+        "text": "Three traps. Trap one, writing that guard cells pump water to open the stomata. They don't. Guard cells take up potassium ions, and water follows by osmosis, so the ion movement is what the plant controls. Trap two, saying the roots push water up the tree. Roots do take in water by osmosis, but the main force lifting water up the xylem is the pull created by transpiration at the leaves, which is the whole point of the cohesion tension theory. Trap three, getting humidity backwards. Humid air doesn't speed transpiration up. It makes the water vapour gradient smaller, so transpiration slows down, which is why plants lose less water on a muggy day."
       }
     },
     {
@@ -217,10 +314,10 @@
         "Wind cannot strip that trapped humid air away as easily, so loss stays lower.",
         "Answer: the sunken-stomata leaf loses water more slowly, by reducing the diffusion gradient ✓"
       ],
-      "durationInFrames": 2130,
+      "durationInFrames": 1812,
       "caption": "Sunken stomata trap humid air, reducing the water-vapour gradient.",
       "voiceover": {
-        "text": "Quick check. Two leaves are identical except one has sunken stomata. On a hot, dry, windy day, which loses water more slowly, and what is the mechanism? Pause and think about the diffusion gradient. Right, let's check it. Transpiration depends on the gradient of water vapour between the moist interior of the leaf and the drier air outside, the steeper the gradient, the faster water leaves. Sunken stomata sit at the bottom of little pits, and those pits trap a pocket of humid air right at the pore. That humid pocket reduces the steepness of the diffusion gradient, so water vapour leaves more slowly. And because the air is trapped down in the pit, the wind cannot strip it away as easily, which matters on a windy day. So the leaf with sunken stomata loses water more slowly, by reducing the water vapour diffusion gradient at the pore."
+        "text": "Quick check. Two leaves are identical except one has sunken stomata. On a hot, dry, windy day, which loses water more slowly, and what's the mechanism? Pause and think about the diffusion gradient. Right, let's check it. Transpiration depends on the gradient of water vapour between the moist inside of the leaf and the drier air outside, and the steeper the gradient, the faster water leaves. Sunken stomata sit at the bottom of little pits, and those pits trap a pocket of humid air right at the pore, which makes the gradient less steep. And because that air is tucked down in the pit, the wind can't strip it away as easily. So the leaf with sunken stomata loses water more slowly, because it reduces the water vapour gradient at the pore."
       }
     },
     {
@@ -228,17 +325,17 @@
       "type": "summary",
       "heading": "Lock it in",
       "points": [
-        "Guard cells open and close stomata by pumping potassium; water follows by osmosis.",
-        "ABA triggers stomatal closure in drought, trading water saving against carbon dioxide entry.",
-        "Xerophytic features passively reduce water loss; always state the mechanism.",
-        "Marine fish lose water and drink seawater; freshwater fish gain water and never drink.",
-        "Homeostasis is universal, working in plants and fish without a nervous system."
+        "Cohesion-tension: transpiration pulls a cohesive column of water and minerals up the xylem.",
+        "Light, temperature and wind increase transpiration; high humidity decreases it.",
+        "Guard cells move potassium ions and water follows by osmosis; ABA closes stomata in drought.",
+        "Eucalypts, banksias and spinifex have structures that reduce heat load, the vapour gradient or surface area.",
+        "A potometer measures water uptake as a stand-in for the rate of transpiration."
       ],
-      "finalPrompt": "Explaining any water adaptation? Name the feature or hormone, then the effect on water movement.",
-      "durationInFrames": 1860,
-      "caption": "Five takeaways: stomatal control, ABA, xerophytes, fish osmoregulation, universality.",
+      "finalPrompt": "Explaining any water adaptation or factor? Name it, then link it to the stomata, the vapour gradient or the surface area.",
+      "durationInFrames": 1694,
+      "caption": "Five takeaways: cohesion-tension, transpiration factors, stomata, Australian adaptations, the potometer.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, guard cells open and close the stomata by pumping potassium ions, and water always follows by osmosis. Second, in drought the hormone A B A triggers stomatal closure, trading off water saving against the loss of carbon dioxide for photosynthesis. Third, xerophytic features passively reduce water loss, and you must always state the mechanism, not just the feature. Fourth, the fish comparison, marine fish lose water and so they drink seawater, freshwater fish gain water and so they never drink. And fifth, the big idea, homeostasis is universal, working in plants and fish without any nervous system at all. Whenever you explain a water adaptation, name the feature or hormone, then the effect on water movement. See you next lesson."
+        "text": "Let's lock it in. Five takeaways. First, the cohesion tension theory. Transpiration at the leaves pulls a cohesive column of water and minerals up the xylem. Second, light, temperature and wind all increase the rate of transpiration, while high humidity decreases it. Third, guard cells control the stomata by moving potassium ions, water follows by osmosis, and A B A closes them in a drought. Fourth, Australian plants like eucalypts, banksias and spinifex have structures that cut their heat load, the vapour gradient or their exposed surface area. And fifth, a potometer measures water uptake, which we use to estimate the rate of transpiration. Whenever you explain a factor or an adaptation, link it to the stomata, the gradient or the surface area."
       }
     }
   ]

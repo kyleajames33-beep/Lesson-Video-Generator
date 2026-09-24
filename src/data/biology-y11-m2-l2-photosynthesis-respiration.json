@@ -1,0 +1,388 @@
+{
+  "title": "Photosynthesis and Respiration",
+  "subtitle": "What plants need, what they make, and the conditions that limit photosynthesis",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 2",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Describe the nutrient, water and gas requirements of plants for photosynthesis and respiration",
+    "Discuss the conditions required for photosynthesis",
+    "Conduct a practical investigation to predict how changes in conditions affect photosynthesis",
+    "investigate the biochemical processes of photosynthesis, cell respiration and the removal of cellular products and wastes in eukaryotic cells (ACSBL049, ACSBL050, ACSBL052, ACSBL053)",
+    "compare the nutrient and gas requirements of autotrophs and heterotrophs"
+  ],
+  "moduleLessonCount": 6,
+  "nesaOutcomes": [
+    "BI-11-02",
+    "BI-11WS-01",
+    "BI-11WS-02",
+    "BI-11WS-05"
+  ],
+  "inquiryQuestion": "What is the difference in nutrient and gas requirements between autotrophs and heterotrophs?",
+  "lessonIntent": "Students can write word and balanced equations for photosynthesis and aerobic respiration, describe a plant's nutrient, water and gas requirements, and explain how light, carbon dioxide and temperature limit the rate of photosynthesis.",
+  "examSkill": "State both balanced equations with conditions, identify the limiting factor from a rate graph, and design a fair test of one condition on photosynthesis.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, photosynthesis and respiration, and what a plant really needs to grow. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Photosynthesis and Respiration"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Where did 74 kilograms of tree come from?",
+      "body": "In the 1600s, Jan van Helmont grew a willow in a weighed pot of soil for five years. The tree gained about 74 kg; the soil lost only about 57 g.",
+      "callout": "If not from the soil, where does a plant's mass come from?",
+      "image": "bioY11M2L2WillowPot",
+      "durationInFrames": 1884,
+      "caption": "Van Helmont's willow gained about 74 kg while the soil lost about 57 g.",
+      "voiceover": {
+        "text": "In the sixteen hundreds, a Flemish scientist called Jan van Helmont planted a small willow in a pot of carefully dried and weighed soil, and for five years he gave it nothing but water. When he finally pulled the tree out, it had gained about seventy four kilograms. Then he dried and weighed the soil again, and it had lost only about fifty seven grams. So where did all that tree come from? Van Helmont decided it must have come from the water. He was partly right, but he missed the biggest ingredient of all, which is carbon dioxide from the air. Today we'll work out exactly what a plant takes in and gives out, write the equations for photosynthesis and respiration, and see which conditions control how fast a plant can build itself out of thin air."
+      }
+    },
+    {
+      "id": "concept-photosynthesis",
+      "type": "concept",
+      "heading": "Photosynthesis: building glucose",
+      "body": "In chloroplasts, light energy absorbed by chlorophyll is used to make glucose from carbon dioxide and water, releasing oxygen.",
+      "bullets": [
+        {
+          "text": "Word: carbon dioxide + water → glucose + oxygen (light, chlorophyll)."
+        },
+        {
+          "text": "Balanced: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂"
+        },
+        {
+          "text": "Carbon dioxide enters through stomata; water arrives from the roots in xylem."
+        }
+      ],
+      "secondary": "Plants also need mineral ions from the soil: nitrate to make amino acids and chlorophyll, magnesium for chlorophyll, and phosphate for ATP and DNA.",
+      "callout": "Most of a plant's dry mass is carbon taken from the air.",
+      "durationInFrames": 2007,
+      "caption": "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂, driven by light energy absorbed by chlorophyll.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "co2",
+            "label": "Carbon dioxide (air, via stomata)"
+          },
+          {
+            "id": "water",
+            "label": "Water (roots, via xylem)"
+          },
+          {
+            "id": "chloroplast",
+            "label": "Chloroplast + light energy"
+          },
+          {
+            "id": "glucose",
+            "label": "Glucose (used or stored as starch)"
+          },
+          {
+            "id": "oxygen",
+            "label": "Oxygen (released or used)"
+          }
+        ],
+        "edges": [
+          {
+            "from": "co2",
+            "to": "chloroplast"
+          },
+          {
+            "from": "water",
+            "to": "chloroplast"
+          },
+          {
+            "from": "chloroplast",
+            "to": "glucose"
+          },
+          {
+            "from": "chloroplast",
+            "to": "oxygen"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "So let's start with photosynthesis, which happens in the chloroplasts. Chlorophyll absorbs light energy, and the plant uses that energy to turn carbon dioxide and water into glucose, releasing oxygen as a by product. As a word equation, that's carbon dioxide plus water gives glucose plus oxygen, with light and chlorophyll written over the arrow. Balanced, it's six C O two plus six H two O gives C six H twelve O six plus six O two. Now think about where the reactants come from. Carbon dioxide diffuses in from the air through the stomata, and water travels up from the roots in the xylem. But glucose alone can't build a whole plant, so it also needs mineral ions from the soil. Nitrate is used to make amino acids and chlorophyll, magnesium sits at the centre of every chlorophyll molecule, and phosphate goes into ATP and DNA."
+      }
+    },
+    {
+      "id": "concept-respiration",
+      "type": "concept",
+      "heading": "Respiration: releasing energy",
+      "body": "Aerobic respiration in the mitochondria breaks glucose down with oxygen to release energy as ATP, in every living cell, all the time.",
+      "bullets": [
+        {
+          "text": "Word: glucose + oxygen → carbon dioxide + water + energy (ATP)."
+        },
+        {
+          "text": "Balanced: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O"
+        },
+        {
+          "text": "Plants respire day and night, in leaves, stems and roots."
+        }
+      ],
+      "secondary": "Autotrophs make their own glucose; heterotrophs, like animals and fungi, must take in ready-made organic food. Both respire it.",
+      "callout": "Photosynthesis stores energy; respiration releases it.",
+      "durationInFrames": 1980,
+      "caption": "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy, in every living cell.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Photosynthesis",
+          "Aerobic respiration"
+        ],
+        "rows": [
+          [
+            "Where",
+            "Chloroplasts",
+            "Cytosol and mitochondria"
+          ],
+          [
+            "Which cells",
+            "Green cells, in light",
+            "All living cells, always"
+          ],
+          [
+            "Reactants",
+            "CO₂ + H₂O",
+            "Glucose + O₂"
+          ],
+          [
+            "Products",
+            "Glucose + O₂",
+            "CO₂ + H₂O + ATP"
+          ],
+          [
+            "Energy",
+            "Light stored as chemical",
+            "Chemical released as ATP"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "Now flip it around. Aerobic respiration starts in the cytosol and finishes in the mitochondria, and it breaks glucose down using oxygen to release the energy stored in its bonds, which the cell captures as ATP. The word equation is glucose plus oxygen gives carbon dioxide plus water plus energy. Balanced, it's C six H twelve O six plus six O two gives six C O two plus six H two O. Notice it's the exact reverse of photosynthesis, so the products of one are the reactants of the other. Here's the part students often miss. Plants respire too, in every living cell, whether that's a leaf, a stem or a root, and they do it day and night. That's the real difference between autotrophs and heterotrophs. Both respire, but autotrophs make their own glucose, while heterotrophs like us have to eat ready made food."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Autotroph: an organism that makes its own organic food from inorganic substances."
+        },
+        {
+          "text": "Heterotroph: an organism that obtains organic food by consuming other organisms."
+        },
+        {
+          "text": "Limiting factor: the condition in shortest supply, which sets the rate."
+        },
+        {
+          "text": "Compensation point: the light intensity where photosynthesis equals respiration."
+        }
+      ],
+      "callout": "At the compensation point there's no net gas exchange.",
+      "durationInFrames": 1816,
+      "caption": "Autotroph, heterotroph, limiting factor, compensation point.",
+      "voiceover": {
+        "text": "Let's lock in four terms. An autotroph makes its own organic food from simple inorganic substances, and for plants that means using light energy to build glucose from carbon dioxide and water. A heterotroph can't do that, so it gets its organic food by eating other organisms or their remains, which covers animals and fungi. A limiting factor is whichever condition is in shortest supply, because that condition sets the overall rate, no matter how much of everything else there is. And the compensation point is the light intensity where the rate of photosynthesis exactly equals the rate of respiration. At that point the plant takes in as much oxygen as it gives out, so there's no net gas exchange with the air. Above it, the plant is a net producer of oxygen."
+      }
+    },
+    {
+      "id": "concept-conditions",
+      "type": "concept",
+      "heading": "Conditions that limit photosynthesis",
+      "body": "The rate of photosynthesis depends on light intensity, carbon dioxide concentration, temperature and water supply.",
+      "bullets": [
+        {
+          "text": "Light and carbon dioxide: more increases the rate, until another factor limits it."
+        },
+        {
+          "text": "Temperature: enzymes speed up to an optimum, then denature and the rate falls."
+        },
+        {
+          "text": "Water shortage: stomata close, so carbon dioxide can't get in."
+        }
+      ],
+      "secondary": "On a rate graph, a rising line means the factor on the x axis is limiting. A plateau means something else is now limiting.",
+      "callout": "Rising line: that factor limits. Plateau: something else does.",
+      "durationInFrames": 1884,
+      "caption": "Raising CO₂ lifts the plateau, so CO₂ was limiting at high light.",
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Light intensity",
+        "yLabel": "Rate of photosynthesis",
+        "series": [
+          {
+            "label": "High CO₂",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0.02
+              ],
+              [
+                0.2,
+                0.35
+              ],
+              [
+                0.4,
+                0.62
+              ],
+              [
+                0.6,
+                0.8
+              ],
+              [
+                0.8,
+                0.86
+              ],
+              [
+                1,
+                0.87
+              ]
+            ]
+          },
+          {
+            "label": "Low CO₂",
+            "color": "chem1",
+            "points": [
+              [
+                0,
+                0.02
+              ],
+              [
+                0.2,
+                0.33
+              ],
+              [
+                0.4,
+                0.46
+              ],
+              [
+                0.6,
+                0.5
+              ],
+              [
+                0.8,
+                0.51
+              ],
+              [
+                1,
+                0.51
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 0.2,
+            "label": "light limiting"
+          },
+          {
+            "x": 0.8,
+            "label": "CO₂ limiting"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "Alright, what controls how fast photosynthesis goes? Four conditions matter most. Light intensity and carbon dioxide concentration are the raw supplies, so increasing either one speeds things up, but only until something else runs short. Temperature works differently, because photosynthesis is driven by enzymes. Warming a plant speeds those enzymes up towards an optimum, but go too hot and they denature, so the rate drops sharply. Water matters too, although not mainly as a reactant. When a plant runs short of water it closes its stomata, which cuts off the carbon dioxide supply. Now look at the graph. At low light both lines climb together, so light is the limiting factor there. At high light the lower line flattens out, but adding more carbon dioxide lifts the plateau, which tells you carbon dioxide was limiting at that point."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Designing a fair photosynthesis test",
+      "question": "A student places a piece of the pondweed Elodea in water containing sodium hydrogencarbonate and counts the oxygen bubbles released per minute with a lamp at 10, 20, 30 and 40 cm. Identify the variables, predict the result and suggest one improvement.",
+      "coachNote": "Name the independent, dependent and controlled variables, then link the trend to a limiting factor.",
+      "steps": [
+        "Independent variable: light intensity, changed by moving the lamp.",
+        "Dependent variable: rate of photosynthesis, measured as bubbles of oxygen per minute.",
+        "Controlled: temperature (a heat shield or water bath), CO₂ supply, the same piece of pondweed, time to adjust at each distance.",
+        "Prediction: the bubble rate falls as the lamp moves further away, because light intensity is limiting.",
+        "Improvement: collect the gas in a syringe or measuring cylinder and measure its volume, because bubbles vary in size ✓"
+      ],
+      "durationInFrames": 2198,
+      "caption": "IV light intensity, DV oxygen output; control temperature and CO₂; measure gas volume, not bubbles.",
+      "voiceover": {
+        "text": "Let's plan the classic practical. A piece of pondweed sits in water with sodium hydrogencarbonate dissolved in it, and a student counts the oxygen bubbles it gives off each minute with a lamp at ten, twenty, thirty and forty centimetres. First, the independent variable is light intensity, which the student changes by moving the lamp. The dependent variable is the rate of photosynthesis, measured here as bubbles of oxygen per minute. Now the controlled variables, and this is where the marks are. Lamps give off heat, so temperature has to be controlled with a heat shield or a water bath. The hydrogencarbonate keeps the carbon dioxide supply the same, and you use the same piece of pondweed, giving it time to adjust at each distance. The prediction is that the bubble rate falls as the lamp moves away, because light is limiting. And one improvement is to collect the gas and measure its volume, since bubbles aren't all the same size."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: 'Plants photosynthesise, animals respire.' Plants respire in every living cell, all day and all night. In light, photosynthesis is usually faster, so the plant's net gas exchange hides its respiration.",
+      "secondary": "Trap 2: 'Plants get their food from the soil.' Soil supplies water and mineral ions, but not glucose. The carbon in a plant's glucose comes from carbon dioxide in the air.",
+      "mistakeTag": "Where photosynthesis marks vanish",
+      "callout": "Plants respire all the time; their carbon comes from the air.",
+      "durationInFrames": 1994,
+      "caption": "Plants respire day and night; soil gives minerals and water, not food.",
+      "voiceover": {
+        "text": "Two traps worth fixing right now. Trap one is the idea that plants photosynthesise while animals respire, as if plants swap one process for the other. Plants respire in every living cell, all day and all night, because every cell needs ATP. What changes in the light is the balance. When the light is bright, photosynthesis usually runs faster than respiration, so the plant gives out more oxygen than it uses, and that net result hides the respiration underneath. In the dark, respiration is all that's left, so the plant takes in oxygen and releases carbon dioxide. Trap two is saying plants get their food from the soil. The soil gives water and mineral ions, but it doesn't give glucose. The carbon in every sugar, and most of a plant's dry mass, comes from carbon dioxide in the air, which is exactly what van Helmont missed."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Hydrogencarbonate indicator is red at normal CO₂ levels, purple when CO₂ falls and yellow when CO₂ rises. A leaf is sealed in a tube of indicator and left in bright light; a second tube is kept in the dark. Predict and explain each colour.",
+      "pausePrompt": "Pause and decide which process wins in each tube.",
+      "answerSteps": [
+        "Bright light: photosynthesis is faster than respiration, so the leaf takes in more CO₂ than it releases.",
+        "CO₂ in the tube falls, so the indicator turns purple.",
+        "Dark: no photosynthesis, but respiration continues and releases CO₂.",
+        "Answer: bright light turns purple, dark turns yellow, showing the leaf respires in both ✓"
+      ],
+      "durationInFrames": 1925,
+      "caption": "Light: net CO₂ uptake, purple. Dark: respiration only, yellow.",
+      "voiceover": {
+        "text": "Quick check. Hydrogencarbonate indicator is red at normal carbon dioxide levels, turns purple when carbon dioxide falls, and turns yellow when carbon dioxide rises. A leaf is sealed in a tube of indicator and left in bright light, while a second leaf in an identical tube is kept in the dark. Predict each colour and explain it. Pause and decide which process wins in each tube. Right, in bright light the leaf is photosynthesising faster than it respires, so it takes in more carbon dioxide than it gives out. The carbon dioxide level in the tube drops, and the indicator turns purple. In the dark there's no photosynthesis at all, but respiration keeps going, so carbon dioxide builds up and the indicator turns yellow. And the dark tube is the proof that the leaf was respiring in the light as well."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Photosynthesis: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂, using light absorbed by chlorophyll.",
+        "Respiration: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy, in all living cells, always.",
+        "Plants need CO₂ via stomata, water via xylem, and nitrate, magnesium and phosphate ions.",
+        "Light, CO₂ and temperature limit the rate; the scarcest factor sets it.",
+        "In a practical, control temperature and CO₂ when testing light intensity."
+      ],
+      "finalPrompt": "On any rate graph, ask: is the line still rising, and if it has levelled off, what is now in short supply?",
+      "durationInFrames": 1625,
+      "caption": "Five takeaways: two equations, plant requirements, limiting factors, fair testing.",
+      "voiceover": {
+        "text": "Let's lock it in. First, photosynthesis turns six carbon dioxide and six water into glucose and six oxygen, using light energy absorbed by chlorophyll. Second, aerobic respiration is the reverse, breaking glucose down with oxygen to release energy as ATP, and it runs in every living cell, all the time, plants included. Third, a plant needs carbon dioxide through its stomata, water through its xylem, and mineral ions like nitrate, magnesium and phosphate from the soil. Fourth, light, carbon dioxide and temperature all limit the rate of photosynthesis, and whichever is scarcest sets the pace. And fifth, when you test one condition in a practical, control the others, especially the heat coming off your lamp. See you next lesson."
+      }
+    }
+  ]
+}

@@ -1,25 +1,31 @@
 {
-  "title": "Disease in Agriculture — Plants",
-  "subtitle": "When one fungus outruns a continent",
+  "title": "Infectious Disease in Plants",
+  "subtitle": "Myrtle rust, Panama disease and the cost of a monoculture",
   "subject": "Biology",
+  "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 7",
   "lesson": "Lesson 6",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
   "syllabusModule": "Module 7 — Infectious Disease",
   "syllabusDotPoints": [
-    "assess the causes and effects of diseases on agricultural production, including plant diseases"
+    "assess the causes and effects of diseases on agricultural production, including but not limited to: plant diseases",
+    "classifying different pathogens that cause disease in plants and animals (ACSBL117)",
+    "Use examples to assess the effects of infectious diseases on plants",
+    "Conduct a scientific investigation to evaluate the effect of Panama disease on bananas",
+    "Explain the physical and chemical changes of a plant in response to the presence of pathogens"
   ],
   "moduleLessonCount": 21,
   "nesaOutcomes": [
     "BIO12-14",
+    "BI-12-03",
     "BIO11/12-4",
     "BIO11/12-5",
     "BIO11/12-7"
   ],
   "inquiryQuestion": "How are diseases transmitted?",
-  "lessonIntent": "Students can classify plant pathogens by type, assess both the economic and ecological effects of plant disease, and justify biosecurity as prevention.",
-  "examSkill": "Assess the causes and effects of a plant disease, separating economic from ecological consequences, and argue why prevention beats cure.",
+  "lessonIntent": "Students can classify plant pathogens by type, assess the economic and ecological effects of plant disease using myrtle rust and Panama disease on bananas, and explain why low genetic diversity and biosecurity matter.",
+  "examSkill": "Assess the causes and effects of a named plant disease, separating economic from ecological effects, and link a crop's genetic diversity to its vulnerability.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -27,26 +33,26 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, disease in agriculture, starting with plants. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, infectious disease in plants. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 105,
-      "caption": "Disease in Agriculture — Plants (Year 12 Biology, Module 7, Lesson 6)"
+      "caption": "Infectious Disease in Plants"
     },
     {
       "id": "hook",
       "type": "hook",
       "heading": "One nursery, then a whole continent",
-      "body": "In 2010 myrtle rust appeared at one NSW nursery. Within three years it had reached every Australian state.",
+      "body": "In 2010 myrtle rust was found at one NSW nursery. It has since spread across much of Australia, into hundreds of native species.",
       "callout": "How does one microscopic fungus outrun a continent?",
       "image": "bioM7L6MyrtleRust",
-      "durationInFrames": 1505,
-      "caption": "Myrtle rust spread from one nursery to every Australian state within three years.",
+      "durationInFrames": 1355,
+      "caption": "Myrtle rust spread from one NSW nursery to hundreds of native species across Australia.",
       "voiceover": {
-        "text": "In April twenty-ten, a single plant nursery in Gosford, New South Wales received a plant infected with myrtle rust, a fungus called Austropuccinia psidii. Within three years, that fungus had spread to every Australian state, infecting more than three hundred and fifty species in the myrtle family, eucalyptus, paperbark, bottlebrush, and tea tree, plants that had evolved for sixty-five million years with no exposure to it whatsoever. Today it threatens fourteen federally listed species, with an estimated horticultural impact in the hundreds of millions, and there's still no fully effective fungicide. So how does one microscopic fungus outrun an entire continent? And what does plant disease really cost? Let's dig in."
+        "text": "In April twenty ten, myrtle rust, a fungus called Austropuccinia psidii, was detected at a plant nursery on the Central Coast of New South Wales. Within about a year it had reached Queensland and Victoria, and it has since turned up in Tasmania, the Northern Territory and Western Australia. It now infects hundreds of native species in the myrtle family, including eucalypts, paperbarks, bottlebrushes and tea trees, and there's no cure. So how does one microscopic fungus spread across a continent? And what does plant disease really cost, on farms and in the bush? Let's dig in."
       }
     },
     {
@@ -56,21 +62,21 @@
       "body": "Plant disease does far more than dent yields, so you must assess both economic and ecological effects.",
       "bullets": [
         {
-          "text": "It causes roughly 10 to 16 percent of global crop losses every year."
+          "text": "Plant pathogens cause roughly 10 to 16 percent of global crop losses every year."
         },
         {
-          "text": "It threatens Australia's agricultural economy, worth over 60 billion dollars."
+          "text": "They threaten Australian farm production and export markets worth billions."
         },
         {
-          "text": "It devastates native ecosystems, cascading into lost habitat and biodiversity."
+          "text": "They devastate native ecosystems, cascading into lost habitat and biodiversity."
         }
       ],
       "secondary": "Losing a dominant native species, as myrtle rust does to the myrtle family, alters soil chemistry, changes water cycles, and removes habitat for dependent animals.",
       "callout": "Always assess two things: the cause and the effects.",
-      "durationInFrames": 2145,
+      "durationInFrames": 1679,
       "caption": "Plant disease causes economic loss and ecological devastation, not just lower yield.",
       "voiceover": {
-        "text": "Let's start with the scale, because the exam wants you to assess both causes and effects. Plant diseases caused by pathogens are responsible for roughly ten to sixteen percent of global crop losses every year, which is hundreds of billions of dollars and a direct threat to food security for billions of people. In Australia, where agriculture contributes over sixty billion dollars to the economy, plant disease is one of the most significant ongoing threats to production and to our export markets. But here's the part students forget, the effects go well beyond the farm. Plant diseases can devastate native ecosystems. When you lose a dominant native species, like what myrtle rust is doing to the myrtle family, it cascades, you lose habitat for dependent animals, soil chemistry shifts, water cycles change, and biodiversity drops. So whenever you assess a plant disease, address both the cause, which is the pathogen, and the effects, which are economic and ecological."
+        "text": "Let's start with the scale, because the exam wants you to assess both causes and effects. Plant pathogens are responsible for roughly ten to sixteen percent of global crop losses every year, which is a direct threat to food security. In Australia, plant disease is one of the biggest ongoing threats to farm production and to our export markets. But here's the part students forget, the effects go well beyond the farm. When a disease removes a dominant native species, like myrtle rust is doing in the myrtle family, it cascades. Animals lose habitat and food, and biodiversity drops. So whenever you assess a plant disease, address the cause, which is the pathogen, and the effects, which are economic and ecological."
       }
     },
     {
@@ -79,23 +85,23 @@
       "heading": "The terms you need",
       "bullets": [
         {
-          "text": "Plant pathogen: an agent, microbe, virus, or nematode, that causes plant disease."
+          "text": "Plant pathogen: a fungus, bacterium, virus or nematode that causes plant disease."
         },
         {
           "text": "Biosecurity: measures that prevent the introduction and spread of pests and diseases."
         },
         {
-          "text": "Crop loss: a reduction in yield, quality, or market value caused by disease."
+          "text": "Host resistance: a variety's ability to reduce infection or damage."
         },
         {
-          "text": "Host resistance: a variety's ability to reduce infection or damage."
+          "text": "Monoculture: a large area planted with a single crop, often a single genetic variety."
         }
       ],
       "callout": "Biosecurity keeps the pathogen out; resistance limits the damage.",
-      "durationInFrames": 1790,
-      "caption": "Plant pathogen, biosecurity, crop loss, host resistance.",
+      "durationInFrames": 1463,
+      "caption": "Plant pathogen, biosecurity, host resistance, monoculture.",
       "voiceover": {
-        "text": "Four terms before we go on. A plant pathogen is any agent that causes disease in plants, whether that's a microbe, a virus, or a nematode worm. Biosecurity is the set of measures used to prevent the introduction and spread of pests and diseases, and in Australia it's a national priority, enforced right at the border. Crop loss is a reduction in yield, quality, or market value caused by disease or other stress, and notice it isn't only about quantity, damaged produce can be unsaleable even if there's plenty of it. And host resistance is the ability of a particular plant variety to reduce the infection or damage a pathogen causes. So in short, biosecurity tries to keep the pathogen out, while host resistance limits the damage when it does get in."
+        "text": "Four terms before we go on. A plant pathogen is any agent that causes disease in plants, whether that's a fungus, a bacterium, a virus or a nematode worm. Biosecurity is the set of measures that prevent pests and diseases entering and spreading, and in Australia it starts right at the border. Host resistance is the ability of a plant variety to reduce the infection or damage a pathogen causes. And a monoculture is a large area planted with just one crop, often a single genetic variety. Keep that last one in mind, because genetic diversity is what decides how badly a disease can hit."
       }
     },
     {
@@ -105,21 +111,21 @@
       "body": "Plant pathogens span four main groups, and each causes characteristic damage by a different mechanism.",
       "bullets": [
         {
-          "text": "Fungal: hyphae and enzymes, spread by airborne spores, like wheat stem rust."
+          "text": "Fungal: hyphae and enzymes, spread by spores, like myrtle rust and Panama disease."
         },
         {
-          "text": "Bacterial: enter via wounds and stomata, spread by water and tools, like fire blight."
+          "text": "Bacterial: enter via wounds and stomata, spread by water and tools, like crown gall."
         },
         {
           "text": "Viral: replicate inside cells, spread by insect vectors, no cure once infected."
         }
       ],
-      "secondary": "Nematodes are soil roundworms that cause root galling, like root-knot nematode, costing an estimated 80 billion dollars globally each year.",
+      "secondary": "Nematodes are soil roundworms that feed on roots; root-knot nematodes cause galls that stunt the plant.",
       "callout": "Same pathogen families as animals, different species.",
-      "durationInFrames": 2280,
+      "durationInFrames": 1692,
       "caption": "Fungal, bacterial, viral, and nematode pathogens each damage plants differently.",
       "voiceover": {
-        "text": "You already met the pathogen types back in lesson two, so let's see how they play out in plants. There are four main groups. Fungal pathogens push hyphae into plant tissue and release enzymes that break down cell walls, and they spread mainly as airborne spores, wheat stem rust and myrtle rust are the classic examples, and a bad rust season can wipe out an entire crop. Bacterial pathogens enter through wounds, stomata, or insect feeding sites, then produce toxins and block vascular tissue, and they spread via water, insects, and contaminated tools, like fire blight in apples and pears. Viral pathogens replicate inside plant cells and hijack their function, they spread mostly by insect vectors like aphids, and crucially, once a plant is infected with a virus, there is no cure, examples are tobacco mosaic virus and banana bunchy top virus. And the fourth group, nematodes, are soil-dwelling roundworms that cause root galling, like root-knot nematode, which alone costs an estimated eighty billion dollars worldwide every year."
+        "text": "Now the pathogen types, and how they play out in plants. Fungal pathogens push hyphae into plant tissue and release enzymes that break down cell walls, and they mostly spread as spores in air, water or soil, like wheat stem rust, myrtle rust and Panama disease. Bacterial pathogens enter through wounds or stomata, then produce toxins or block the plant's vascular tissue, spreading via water, insects and contaminated tools, like crown gall. Viral pathogens replicate inside plant cells, spread mostly by insect vectors like aphids, and once a plant is infected there's no cure, banana bunchy top virus is an Australian example. And nematodes are soil roundworms that feed on roots, with root knot nematodes causing galls that stunt the whole plant."
       },
       "diagram": {
         "type": "table",
@@ -131,18 +137,18 @@
         "rows": [
           [
             "Fungal",
-            "Airborne spores",
-            "Wheat stem rust, myrtle rust"
+            "Spores in air, water, soil",
+            "Myrtle rust, Panama disease"
           ],
           [
             "Bacterial",
             "Water, insects, tools",
-            "Fire blight, crown gall"
+            "Crown gall"
           ],
           [
             "Viral",
             "Insect vectors",
-            "TMV, banana bunchy top"
+            "Banana bunchy top"
           ],
           [
             "Nematode",
@@ -168,12 +174,12 @@
           "text": "Many of Australia's worst plant diseases were introduced, not native."
         }
       ],
-      "secondary": "A single fire blight detection can trigger export bans on Australian apples, while crown gall can persist in vineyard soils for decades, preventing replanting.",
+      "secondary": "Australia is free of some major plant diseases, such as fire blight of apples, and keeping them out protects both crops and export access.",
       "callout": "Prevention is far cheaper than cure.",
-      "durationInFrames": 2090,
+      "durationInFrames": 1746,
       "caption": "Plant disease causes economic losses and ecological damage; prevention beats cure.",
       "voiceover": {
-        "text": "Now let's trace the chain from symptom to real-world cost. On the economic side, you get reduced yield, fewer harvestable units per hectare, and reduced quality, where produce drops to a lower grade or becomes unsaleable. Then there are control costs, fungicides, resistant varieties, quarantine, and replanting, and Australian grape growers alone spend over a hundred million dollars a year just controlling downy mildew. And the big one for an exporter, lost market access, where a single fire blight detection can trigger bans on Australian apple exports. On the ecological side, you can lose a dominant native species, the pathogen can persist in soil for years, blocking replanting, and habitats get altered. And here's the policy punchline, many of Australia's most damaging plant diseases, myrtle rust, banana bunchy top, fire blight, were introduced from elsewhere. That's exactly why biosecurity exists, because preventing a pathogen's entry is exponentially cheaper than managing it once it's established."
+        "text": "Now let's trace the chain from symptom to real world cost. On the economic side, you get reduced yield and reduced quality, where produce drops a grade or becomes unsaleable. Then there are control costs, like fungicides, resistant varieties, quarantine and replanting. And for an exporter, there's market access, because Australia is free of some major diseases, like fire blight of apples, and a detection could close overseas markets. On the ecological side, you can lose a dominant native species, pathogens can persist in soil for years, and habitats get altered. Here's the policy punchline. Many of Australia's most damaging plant diseases, like myrtle rust and banana bunchy top, were introduced from elsewhere, so preventing entry is far cheaper than managing a pathogen once it's established."
       },
       "diagram": {
         "type": "flow",
@@ -212,55 +218,120 @@
       }
     },
     {
+      "id": "concept-panama",
+      "type": "concept",
+      "heading": "Panama disease: a fungus in the xylem",
+      "body": "Panama disease is Fusarium wilt of bananas, caused by the soil fungus Fusarium oxysporum f. sp. cubense.",
+      "bullets": [
+        {
+          "text": "Cause: a soil fungus that enters through the roots and grows in the xylem."
+        },
+        {
+          "text": "Effect: xylem blocked, so leaves yellow and wilt and the plant dies."
+        },
+        {
+          "text": "Spores survive in soil for decades, spread by soil, water, boots and machinery."
+        },
+        {
+          "text": "Cavendish plants are clones, so a whole plantation shares the same susceptibility."
+        }
+      ],
+      "secondary": "The plant responds physically and chemically, plugging its xylem with tyloses and gums and making antifungal compounds, but in susceptible varieties this response is too slow.",
+      "callout": "No genetic variation, no plants that survive.",
+      "caption": "Fusarium wilt enters roots, blocks xylem and persists in soil; clonal Cavendish crops share one susceptibility.",
+      "voiceover": {
+        "text": "OK, now the example the new syllabus names, Panama disease of bananas, also called Fusarium wilt. It's caused by a soil fungus, Fusarium oxysporum, which enters through the roots and grows up inside the xylem. As it spreads, the xylem gets blocked, so water can't reach the leaves, and the plant yellows, wilts and eventually dies. The plant does respond, physically plugging its own xylem with growths called tyloses and gums, and chemically making antifungal compounds, but in susceptible varieties that response is too slow. Worse, the fungus leaves tough spores that survive in soil for decades, moving on muddy boots, machinery and water. And here's the biodiversity link. Almost every banana we eat is a Cavendish, and Cavendish plants are grown from suckers, so they're clones. A plantation has essentially no genetic variation, so if one plant is susceptible, they all are. There's history here too, because an earlier strain wiped out the Gros Michel banana in the twentieth century, and Cavendish replaced it."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "soil",
+            "label": "Spores in soil"
+          },
+          {
+            "id": "root",
+            "label": "Enter roots"
+          },
+          {
+            "id": "xylem",
+            "label": "Block xylem"
+          },
+          {
+            "id": "wilt",
+            "label": "Wilt and die"
+          }
+        ],
+        "edges": [
+          {
+            "from": "soil",
+            "to": "root"
+          },
+          {
+            "from": "root",
+            "to": "xylem"
+          },
+          {
+            "from": "xylem",
+            "to": "wilt"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "durationInFrames": 2273
+    },
+    {
       "id": "worked-example",
       "type": "workedExample",
-      "heading": "Assess myrtle rust",
-      "question": "Myrtle rust is an introduced fungus with no cure that infects the new growth of native myrtle-family plants. Assess its causes and effects, and justify Australia's biosecurity response.",
-      "coachNote": "Separate cause from effects, then split effects into economic and ecological.",
+      "heading": "Assess Panama disease TR4",
+      "question": "Panama disease Tropical Race 4 (TR4) infects Cavendish bananas and has no cure. It was found in the Northern Territory in 1997 and in Queensland's main growing region, Tully, in 2015. Assess its effects and evaluate how Australia manages it.",
+      "coachNote": "Name the cause, split the effects into economic and ecological, then judge the management against the evidence.",
       "steps": [
-        "Cause: a fungal pathogen, spread by wind-dispersed spores and movement of infected plant material.",
-        "Economic effects: losses to the nursery and bush-food industries, plus ongoing research and control costs.",
-        "Ecological effects: critically endangered native species and loss of dominant myrtle-family trees in ecosystems.",
-        "Why it spread so fast: Australian hosts had no co-evolutionary exposure, so they had no natural resistance.",
-        "Biosecurity justified: with no cure, preventing entry and further spread is far cheaper than managing it."
+        "Cause: a soil fungus spread by contaminated soil, water, footwear, machinery and planting material.",
+        "Economic: infected plants destroyed, land unusable for Cavendish for decades, farm biosecurity costs.",
+        "Genetic and ecological: clonal Cavendish monoculture has no variation for resistance, so whole crops are exposed.",
+        "Management: quarantine infected farms, wash down vehicles and boots, plant disease-free plantlets, breed or engineer resistant bananas.",
+        "Evaluate: containment has slowed its spread, but with no cure, long-term security needs genetic resistance."
       ],
-      "durationInFrames": 2290,
-      "caption": "Fungal cause, economic and ecological effects, and biosecurity as the only cheap defence.",
+      "durationInFrames": 2097,
+      "caption": "TR4: soil-borne cause, economic and genetic effects, biosecurity slows it, resistance is the long-term fix.",
       "voiceover": {
-        "text": "Let's assess myrtle rust properly, the way an extended-response question demands. It's an introduced fungus, with no cure, that infects the new growth of native myrtle-family plants. First, the cause. It's a fungal pathogen, and it spreads by wind-dispersed spores and by the movement of infected plant material. Next, the effects, and you must split these. The economic effects include losses to the nursery industry, which is worth over nine hundred million dollars, losses to the bush-food industry, and ongoing research and management costs. The ecological effects are arguably worse, two native species, scrub turpentine and the penda, are now critically endangered as a direct result, and you can lose dominant myrtle-family trees across whole ecosystems. Now, why did it spread so fast? Because Australian hosts had zero co-evolutionary exposure to this pathogen, so they had no natural resistance built up. And that justifies the biosecurity response, because with no cure available, preventing entry and limiting further spread is far cheaper than trying to manage it after the fact."
+        "text": "Let's assess Panama disease properly, the way an extended response demands. The strain that attacks Cavendish is called Tropical Race 4, or TR4. It was found in the Northern Territory in 1997, and in 2015 it reached Tully, in Queensland's main banana growing region. First, the cause, a soil fungus spread by anything that moves soil, including water, footwear, machinery and infected planting material. Next, the effects. Economically, infected plants have to be destroyed, the land can't grow Cavendish again for decades, and every farm carries extra biosecurity costs. Genetically and ecologically, a clonal monoculture has no variation for resistance, so whole crops are exposed at once. For management, infected farms are quarantined, vehicles and boots are washed down, growers plant disease free plantlets, and researchers are breeding and genetically engineering resistant bananas. So, evaluate. Strict containment has slowed its spread, but with no cure, the long term answer is genetic resistance."
       }
     },
     {
       "id": "misconception",
       "type": "misconception",
       "heading": "Two traps",
-      "body": "Trap 1: thinking plant viruses can be cured with sprays. Once a plant has a virus, there is no cure; control is prevention only.",
-      "secondary": "Trap 2: thinking introduced pathogens are dangerous simply because they are foreign. The real reason is that native hosts have had no co-evolutionary exposure, so they carry no resistance. Origin is not the danger, absence of shared history is.",
-      "mistakeTag": "Where plant-disease marks vanish",
+      "body": "Trap 1: thinking every plant disease can be cured with a spray. Plant viruses, and fungi hiding in the xylem and soil, cannot; control is prevention.",
+      "secondary": "Trap 2: thinking introduced pathogens are dangerous simply because they are foreign. The real reason is that native hosts have had no shared evolutionary history with them, so they carry no resistance.",
+      "mistakeTag": "Where plant disease marks vanish",
       "callout": "No cure for plant viruses; the danger is no shared history.",
-      "durationInFrames": 1980,
-      "caption": "Plant viruses cannot be cured; introduced pathogens are dangerous due to no co-evolution.",
+      "durationInFrames": 1719,
+      "caption": "Not every plant disease can be sprayed away; introduced pathogens are dangerous due to no co-evolution.",
       "voiceover": {
-        "text": "Two traps to clear up. Trap one, thinking a plant virus can be cured with the right spray. It can't. Unlike bacterial diseases, which can sometimes be managed with bactericides, or fungal diseases, which respond to fungicides, a plant viral infection has no cure once it's established. Management relies entirely on prevention, controlling insect vectors, using certified virus-free planting material, and destroying infected plants. That's why virus-free certification matters so much for bananas and grapevines. Trap two, assuming introduced pathogens are dangerous simply because they're foreign. That's not the real reason. They're dangerous because the native host plants have had no co-evolutionary exposure to them, so they carry no built-in resistance. In the pathogen's home range, hosts and pathogen have balanced each other over thousands of generations. So the danger isn't the pathogen's origin, it's the absence of a shared evolutionary history in the host population."
+        "text": "Two traps to clear up. Trap one, thinking a plant disease can always be cured with the right spray. Plant viruses can't be cured at all, because they replicate inside the plant's own cells. And some fungi, like the one behind Panama disease, sit inside the xylem and survive in soil for decades, out of reach of sprays. For these, management is prevention, controlling vectors, using certified disease free planting material, and destroying infected plants. Trap two, assuming introduced pathogens are dangerous simply because they're foreign. They're dangerous because native hosts have had no shared evolutionary history with them, so they carry no built in resistance. So the danger isn't the pathogen's origin, it's the missing history, and low genetic diversity makes it worse."
       }
     },
     {
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "A grapevine shows mosaic mottling from a viral infection. A farmer asks which spray will cure it. Explain your answer, and state how the disease should be managed instead.",
+      "question": "A banana grower asks why Panama disease TR4 could destroy an entire Cavendish plantation, when a wild banana population might survive it. Explain, using genetic diversity.",
       "pausePrompt": "Pause and reason it through.",
       "answerSteps": [
-        "No spray can cure a viral infection once the plant is infected; viruses replicate inside the plant's own cells.",
-        "Fungicides and bactericides target fungal and bacterial structures, which a virus does not have.",
-        "So management must be preventive, not curative.",
-        "Control the insect vectors, use certified virus-free planting material, and remove infected plants.",
-        "Answer: there is no curative spray; manage by prevention and removing infected plants."
+        "Cavendish bananas are propagated vegetatively, so every plant in a plantation is a genetic clone.",
+        "Clones share the same alleles, so if one plant is susceptible to TR4, all of them are.",
+        "A wild population reproduces sexually, so it carries genetic variation.",
+        "Some wild individuals may carry alleles for resistance, survive and reproduce.",
+        "Answer: low genetic diversity leaves no resistant individuals, so the whole monoculture is vulnerable ✓"
       ],
-      "durationInFrames": 1965,
-      "caption": "No spray cures a plant virus; manage by vector control and removing infected plants.",
+      "durationInFrames": 1503,
+      "caption": "Clonal Cavendish share one susceptibility; a genetically diverse population may include resistant survivors.",
       "voiceover": {
-        "text": "Quick check. A grapevine shows mosaic mottling from a viral infection, and the farmer asks which spray will cure it. Explain your answer, and say how the disease should be managed instead. Pause and reason it through. Right. The honest answer is that no spray can cure a viral infection once the plant is infected, because the virus replicates inside the plant's own cells, and there's nothing external to target. Fungicides and bactericides work by attacking fungal or bacterial structures, but a virus simply doesn't have those structures. So management has to be preventive rather than curative. That means controlling the insect vectors that carry the virus, using certified virus-free planting material in the first place, and removing and destroying any infected plants to stop further spread. So the answer is, there's no curative spray, you manage it by prevention and by removing infected plants."
+        "text": "Quick check. A banana grower asks why Panama disease could destroy an entire Cavendish plantation, when a wild banana population might survive it. Explain, using genetic diversity. Pause and reason it through. Right. Cavendish bananas are grown from suckers, so every plant in the plantation is a genetic clone, sharing the same alleles. If one plant is susceptible to TR4, they all are. A wild population reproduces sexually, so it carries genetic variation, and some individuals may carry alleles that give resistance. Those individuals survive and reproduce, so the population persists. So the answer is, low genetic diversity leaves no resistant individuals, which makes the whole monoculture vulnerable."
       }
     },
     {
@@ -269,16 +340,16 @@
       "heading": "Lock it in",
       "points": [
         "Plant disease causes 10 to 16 percent of global crop losses, plus ecological damage.",
-        "Four pathogen types: fungal, bacterial, viral, and nematode.",
+        "Four plant pathogen types: fungal, bacterial, viral and nematode.",
         "Assess effects in two halves: economic and ecological.",
-        "Plant viral infections have no cure; control is prevention only.",
-        "Introduced pathogens are dangerous because hosts have no co-evolved resistance."
+        "Panama disease is a soil fungus that blocks banana xylem; clonal Cavendish crops have no resistance.",
+        "Introduced pathogens are dangerous because hosts have no co-evolved resistance; biosecurity keeps them out."
       ],
-      "finalPrompt": "Assessing a plant disease? Name the cause, then split effects into economic and ecological.",
-      "durationInFrames": 1735,
-      "caption": "Five takeaways: scale, four types, two effect halves, no viral cure, co-evolution.",
+      "finalPrompt": "Assessing a plant disease? Name the cause, split the effects into economic and ecological, and check the host's genetic diversity.",
+      "durationInFrames": 1597,
+      "caption": "Five takeaways: scale, four types, two effect halves, Panama disease, co-evolution and biosecurity.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, plant disease causes roughly ten to sixteen percent of global crop losses each year, plus serious ecological damage beyond the farm. Second, there are four main plant pathogen types, fungal, bacterial, viral, and nematode. Third, when you assess the effects, always split them into two halves, economic and ecological. Fourth, plant viral infections have no cure once established, so control is purely preventive, vector control and virus-free planting material. And fifth, introduced pathogens are so dangerous because native hosts have had no co-evolutionary exposure, and therefore no built-in resistance. Whenever you assess a plant disease, name the cause first, then split the effects into economic and ecological. Next lesson, the same questions for animal agriculture. See you there."
+        "text": "Let's lock it in. First, plant disease causes roughly ten to sixteen percent of global crop losses each year, plus serious ecological damage beyond the farm. Second, there are four main plant pathogen types, fungal, bacterial, viral and nematode. Third, when you assess the effects, split them into economic and ecological. Fourth, Panama disease is a soil fungus that blocks banana xylem and lasts in soil for decades, and clonal Cavendish crops have no genetic variation to resist it. And fifth, introduced pathogens are so dangerous because native hosts have no shared evolutionary history with them, which is why biosecurity focuses on keeping them out. Next lesson, the same questions for animals. See you there."
       }
     }
   ]

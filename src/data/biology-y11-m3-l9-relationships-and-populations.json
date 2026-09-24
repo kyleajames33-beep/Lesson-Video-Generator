@@ -1,0 +1,473 @@
+{
+  "title": "Relationships and Populations",
+  "subtitle": "Predation, competition, symbiosis, allelopathy and carrying capacity",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 9",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Use examples to determine relationships between organisms, including predation, competition, mutualism, commensalism, allelopathy and parasitism",
+    "Analyse data on the impact of predator–prey relationships and competition on populations",
+    "Explain how the carrying capacity of a selected ecosystem is affected by biotic and abiotic factors",
+    "investigate and determine relationships between biotic and abiotic factors in an ecosystem, including: the impact of biotic factors, including predation, competition and symbiotic relationships (ACSBL024)",
+    "predicting consequences for populations in ecosystems due to predation, competition, symbiosis and disease (ACSBL019, ACSBL020)"
+  ],
+  "moduleLessonCount": 9,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-04",
+    "BI-11WS-05",
+    "BI-11WS-06",
+    "BI-11WS-07"
+  ],
+  "inquiryQuestion": "What effect can one species have on the other species in a community?",
+  "lessonIntent": "Students can classify relationships between organisms using named examples, analyse predator-prey and competition data, and explain how biotic and abiotic factors set the carrying capacity of an ecosystem.",
+  "examSkill": "Classify a relationship by its effect on each species, describe and explain trends and time lags in population data, and link changes in carrying capacity to named biotic and abiotic factors.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, relationships between organisms and what limits populations. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Relationships and Populations"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A boom and bust that repeats every ten years",
+      "body": "Fur-trade records show hares and lynx rising and crashing in a repeating cycle.",
+      "callout": "Do predators control their prey, or does the prey control the predators?",
+      "image": "bioY11M3L9LynxHare",
+      "caption": "Hudson's Bay Company records show linked cycles in snowshoe hares and lynx.",
+      "voiceover": {
+        "text": "For decades, the Hudson's Bay Company in Canada kept records of how many animal pelts trappers brought in each year. When ecologists plotted those numbers, something striking appeared. Snowshoe hares boomed and crashed in a cycle roughly every ten years, and the Canada lynx, which hunts them, rose and fell in the same rhythm, just slightly behind. So which way does the control run? Do the lynx drive the hare crashes, or do the hares drive the lynx? That's the kind of question you'll be asked to answer from data. Today we'll sort out the six relationships between organisms the syllabus names, analyse predator prey and competition data, and finish with carrying capacity, the ceiling that every population eventually runs into."
+      },
+      "durationInFrames": 1649
+    },
+    {
+      "id": "concept-predation-competition",
+      "type": "concept",
+      "heading": "Predation and competition",
+      "body": "In predation one species gains and one loses; in competition both lose.",
+      "bullets": [
+        {
+          "text": "Predation (+/−): a predator kills and eats prey, like a dingo hunting a kangaroo."
+        },
+        {
+          "text": "Competition (−/−): species use the same limited resource, like food, space or light."
+        },
+        {
+          "text": "Noisy miners aggressively drive small woodland birds out of their territory."
+        }
+      ],
+      "secondary": "In Gause's experiments, two Paramecium species each thrived alone, but together one drove the other out. This is competitive exclusion.",
+      "callout": "Competition costs both sides, even the winner.",
+      "caption": "Predation is +/−; competition is −/−, and can exclude one species entirely.",
+      "voiceover": {
+        "text": "Let's start with the two relationships that most directly limit populations. In predation, one organism, the predator, kills and eats another, the prey. So the predator benefits and the prey loses, which we write as plus minus. A dingo hunting a kangaroo is a local example. In competition, two organisms need the same limited resource, like food, space, water or light, and both are worse off, so it's minus minus. Competition can be within a species, or between different species. An Australian example is the noisy miner, a native honeyeater that aggressively drives smaller woodland birds out of its territory. The classic experiment is Gause's work with two species of Paramecium. Grown separately, each population thrived. Grown together on the same food, one species steadily drove the other out. That outcome is called competitive exclusion, and it's a common exam data set."
+      },
+      "durationInFrames": 1935
+    },
+    {
+      "id": "concept-symbiosis",
+      "type": "concept",
+      "heading": "Symbiosis and allelopathy",
+      "body": "Classify every relationship by its effect on each species: benefit (+), harm (−) or no effect (0).",
+      "bullets": [
+        {
+          "text": "Mutualism (+/+): coral polyps shelter algae that feed them sugars."
+        },
+        {
+          "text": "Commensalism (+/0): a staghorn fern grows high on a tree to reach light."
+        },
+        {
+          "text": "Parasitism (+/−): a paralysis tick feeds on a bandicoot's blood."
+        },
+        {
+          "text": "Allelopathy: a plant releases chemicals that inhibit other plants."
+        }
+      ],
+      "secondary": "Black walnut trees release juglone, which stunts nearby plants. Some eucalypts are studied for similar effects from their leaf litter.",
+      "callout": "Ask what happens to each species: +, − or 0.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Relationship",
+          "Effect",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Mutualism",
+            "+ / +",
+            "Coral and zooxanthellae"
+          ],
+          [
+            "Commensalism",
+            "+ / 0",
+            "Staghorn fern on a tree"
+          ],
+          [
+            "Parasitism",
+            "+ / −",
+            "Paralysis tick on a bandicoot"
+          ],
+          [
+            "Allelopathy",
+            "chemical harm to neighbours",
+            "Black walnut and juglone"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Mutualism +/+, commensalism +/0, parasitism +/−, allelopathy is chemical inhibition.",
+      "voiceover": {
+        "text": "The next three are forms of symbiosis, meaning two species living in close association, and the trick is to judge the effect on each one. In mutualism, both benefit. Reef building corals house tiny algae called zooxanthellae, which photosynthesise and pass sugars to the coral, while the coral gives them shelter and nutrients. In commensalism, one benefits and the other is basically unaffected, like a staghorn fern growing high on a rainforest tree to reach light. In parasitism, the parasite benefits and the host is harmed, like a paralysis tick feeding on a bandicoot's blood. Then there's allelopathy. That's when a plant releases chemicals from its roots, leaves or litter that inhibit the germination or growth of nearby plants. Black walnut trees release a compound called juglone that stunts plants around them. It works like chemical competition, clearing space without fighting over the resource directly."
+      },
+      "durationInFrames": 1976
+    },
+    {
+      "id": "concept-predator-prey",
+      "type": "concept",
+      "heading": "Reading predator-prey data",
+      "body": "Predator numbers follow prey numbers, peaking slightly later.",
+      "bullets": [
+        {
+          "text": "Prey increase, so predators have more food and increase."
+        },
+        {
+          "text": "More predators eat more prey, so prey numbers fall."
+        },
+        {
+          "text": "With less food, predators decline, and prey recover."
+        }
+      ],
+      "secondary": "Field experiments on hares suggest food supply and predation together drive the cycle, not predators alone.",
+      "callout": "Look for the lag: the predator peak comes after the prey peak.",
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Time (years)",
+        "yLabel": "Population size",
+        "series": [
+          {
+            "label": "Snowshoe hare (prey)",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0.35
+              ],
+              [
+                0.06,
+                0.7
+              ],
+              [
+                0.12,
+                0.9
+              ],
+              [
+                0.2,
+                0.45
+              ],
+              [
+                0.28,
+                0.15
+              ],
+              [
+                0.36,
+                0.4
+              ],
+              [
+                0.45,
+                0.9
+              ],
+              [
+                0.53,
+                0.45
+              ],
+              [
+                0.61,
+                0.15
+              ],
+              [
+                0.69,
+                0.4
+              ],
+              [
+                0.78,
+                0.9
+              ],
+              [
+                0.86,
+                0.45
+              ],
+              [
+                0.94,
+                0.15
+              ],
+              [
+                1,
+                0.3
+              ]
+            ]
+          },
+          {
+            "label": "Lynx (predator)",
+            "color": "amber",
+            "points": [
+              [
+                0,
+                0.12
+              ],
+              [
+                0.08,
+                0.22
+              ],
+              [
+                0.17,
+                0.5
+              ],
+              [
+                0.25,
+                0.3
+              ],
+              [
+                0.33,
+                0.12
+              ],
+              [
+                0.42,
+                0.22
+              ],
+              [
+                0.5,
+                0.5
+              ],
+              [
+                0.58,
+                0.3
+              ],
+              [
+                0.66,
+                0.12
+              ],
+              [
+                0.75,
+                0.22
+              ],
+              [
+                0.83,
+                0.5
+              ],
+              [
+                0.91,
+                0.3
+              ],
+              [
+                1,
+                0.14
+              ]
+            ]
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Predator peaks lag prey peaks; the populations cycle together.",
+      "voiceover": {
+        "text": "Now let's read the graph, because this shape comes up all the time. The green line is the hare, the prey, and the amber line is the lynx, the predator. Walk through one cycle. When hares increase, lynx have more food, so more lynx survive and breed, and their numbers rise. But more lynx eat more hares, so the hare population falls. With less food, lynx numbers then fall too, and with fewer predators the hares recover. Notice the most important feature. The predator peak always comes a little after the prey peak. That lag happens because predators take time to reproduce in response to extra food. One caution for evaluation. Field experiments on snowshoe hares suggest that food supply and predation together drive the cycle, so don't claim the predator is the only cause."
+      },
+      "durationInFrames": 1840
+    },
+    {
+      "id": "concept-carrying-capacity",
+      "type": "concept",
+      "heading": "Carrying capacity",
+      "body": "A population grows until limiting factors hold it near the maximum the environment can support.",
+      "bullets": [
+        {
+          "text": "Biotic limits: food, predators, competitors, disease."
+        },
+        {
+          "text": "Abiotic limits: water, rainfall, temperature, space, nutrients."
+        },
+        {
+          "text": "Red kangaroos in arid rangelands: numbers track rainfall and the pasture it grows."
+        }
+      ],
+      "secondary": "In the arid zone, K rises after good rain and falls in drought. Where dingoes are rare, kangaroo densities are much higher, so predation also lowers K.",
+      "callout": "Carrying capacity moves when the environment changes.",
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Time",
+        "yLabel": "Population size",
+        "series": [
+          {
+            "label": "Population",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0.05
+              ],
+              [
+                0.12,
+                0.08
+              ],
+              [
+                0.25,
+                0.2
+              ],
+              [
+                0.38,
+                0.5
+              ],
+              [
+                0.5,
+                0.72
+              ],
+              [
+                0.62,
+                0.8
+              ],
+              [
+                0.74,
+                0.78
+              ],
+              [
+                0.86,
+                0.81
+              ],
+              [
+                1,
+                0.79
+              ]
+            ]
+          }
+        ],
+        "hLines": [
+          {
+            "y": 0.8,
+            "label": "Carrying capacity (K)"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "caption": "Growth levels off at carrying capacity, K, set by biotic and abiotic limiting factors.",
+      "voiceover": {
+        "text": "So what stops a population growing forever? That's carrying capacity, the largest population an environment can support over time, often written as K. On the graph, the population grows slowly, then rapidly, and then levels off, bobbing around the dashed line as limiting factors kick in. Those limits can be biotic, like food, predators, competitors and disease, or abiotic, like water, rainfall, temperature, space and soil nutrients. The syllabus asks you to explain K for a selected ecosystem, so here's one. In Australia's arid rangelands, red kangaroo numbers track rainfall, because rain grows the pasture they eat. After good rain, K rises. In drought, it falls, and populations crash. Biotic factors matter too. Where dingoes are rare, kangaroo densities are much higher, so predation lowers K, and competition with livestock and rabbits for pasture lowers it further."
+      },
+      "durationInFrames": 1867
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Symbiosis: a close, long-term association between two species."
+        },
+        {
+          "text": "Allelopathy: a plant releasing chemicals that inhibit nearby plants."
+        },
+        {
+          "text": "Carrying capacity (K): the largest population an environment can sustain over time."
+        },
+        {
+          "text": "Limiting factor: a biotic or abiotic factor that restricts population growth."
+        }
+      ],
+      "callout": "K is set by limiting factors, so it changes when they change.",
+      "caption": "Symbiosis, allelopathy, carrying capacity, limiting factor.",
+      "voiceover": {
+        "text": "Let's pin the key terms. Symbiosis is a close, long term association between two species, and it includes mutualism, commensalism and parasitism. Allelopathy is when a plant releases chemicals that inhibit the germination or growth of nearby plants. Carrying capacity, K, is the largest population an environment can sustain over time, given the resources available. And a limiting factor is any biotic or abiotic factor that restricts population growth, like the amount of pasture, the number of predators, or how much it rains. Those last two are linked. Carrying capacity isn't a fixed property of a species. It's set by the limiting factors in a particular place at a particular time, so when those factors change, K changes with them. That's the idea examiners are testing when they ask about drought, fire or a new predator."
+      },
+      "durationInFrames": 1854
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Analysing predator-prey data",
+      "question": "Hypothetical survey data: prey (thousands) in years 1 to 6 were 20, 45, 70, 40, 15, 20. Predators (hundreds) were 2, 3, 5, 7, 4, 2. Describe the relationship and explain it. Predict the trend in year 7.",
+      "coachNote": "Describe first with data (peaks and lag), then explain the mechanism, then predict.",
+      "steps": [
+        "Describe: prey peak at 70 000 in year 3; predators peak at 700 in year 4, one year later.",
+        "Explain the rise: more prey means more food, so predator survival and breeding increase.",
+        "Explain the fall: more predators eat more prey, so prey fall from year 3 to year 5; predators then decline.",
+        "Predict: with predators low in year 6, prey should keep increasing in year 7.",
+        "Answer: predator numbers follow prey with a one-year lag, a predator-prey cycle ✓"
+      ],
+      "caption": "Predators peak a year after prey; with few predators, prey rise again.",
+      "voiceover": {
+        "text": "Let's analyse a data set. This is hypothetical survey data. Prey numbers, in thousands, over six years were twenty, forty five, seventy, forty, fifteen and twenty. Predators, in hundreds, were two, three, five, seven, four and two. Describe, explain, and predict year seven. The coach note gives the order, describe with data first, then explain, then predict. So, describe. Prey peak at seventy thousand in year three, and predators peak at seven hundred in year four, one year later. Now explain the rise. More prey means more food, so more predators survive and breed. Then the fall. More predators eat more prey, so prey drop from year three to year five, and with less food, the predators decline too. Finally, predict. Predators are low in year six, so prey should keep increasing in year seven. Always quote the actual numbers and years when you describe."
+      },
+      "durationInFrames": 1976
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: saying predators and prey peak at the same time, or that predators wipe prey out. Predators peak after prey, and falling prey numbers cause predators to decline before prey disappear.",
+      "secondary": "Trap 2: treating carrying capacity as a fixed number for a species. K belongs to a place and a time. Drought, fire, a new predator or a competitor can all lower it.",
+      "mistakeTag": "Where population marks vanish",
+      "callout": "Predators lag prey; K changes with the environment.",
+      "caption": "Predator peaks lag prey peaks; carrying capacity changes with conditions.",
+      "voiceover": {
+        "text": "Two traps. Trap one is describing predator prey data as though both populations peak together, or as though predators simply wipe the prey out. Look at any real data set and the predator peak comes after the prey peak. And long before the prey disappear, falling prey numbers starve the predators, so predator numbers drop and the prey recover. That's why the cycle repeats instead of ending. Trap two is treating carrying capacity as a fixed number for a species, as if red kangaroos simply have a K. They don't. K belongs to a particular environment at a particular time. A drought, a bushfire, a new predator or a new competitor can all lower it, and a run of good seasons can raise it. So the question to ask on the day is simple. What limiting factor has changed here, and which way does that push K?"
+      },
+      "durationInFrames": 2004
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Classify each relationship: (a) cattle egrets eat insects disturbed by grazing cattle; (b) a shrub's roots release chemicals that stop nearby seeds germinating; (c) bees collect nectar and pollinate flowers; (d) two seabird species compete for the same limited nesting ledges.",
+      "pausePrompt": "Pause: for each pair, is the effect +, − or 0?",
+      "answerSteps": [
+        "(a) Egrets benefit; cattle are unaffected: commensalism (+/0).",
+        "(b) Chemicals inhibit other plants: allelopathy.",
+        "(c) Bees get food; flowers get pollinated: mutualism (+/+).",
+        "(d) Both are limited by the shared nesting space: competition (−/−) ✓"
+      ],
+      "caption": "Commensalism, allelopathy, mutualism, competition.",
+      "voiceover": {
+        "text": "Quick check, four new scenarios. A, cattle egrets follow grazing cattle and eat the insects they disturb. B, a shrub's roots release chemicals that stop nearby seeds from germinating. C, bees collect nectar from flowers and pollinate them. And D, two seabird species compete for the same limited nesting ledges on a cliff. Classify each one. Pause, and for each pair ask whether the effect is plus, minus or zero. OK, let's check. In A, the egrets benefit and the cattle are basically unaffected, so that's commensalism. In B, a plant is chemically inhibiting its neighbours, which is allelopathy. In C, the bees get food and the flowers get pollinated, so both benefit, and that's mutualism. And in D, both species are held back by the shared nesting space, so that's competition, minus minus."
+      },
+      "durationInFrames": 1826
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Predation is +/−; competition is −/− and can cause competitive exclusion.",
+        "Mutualism +/+, commensalism +/0, parasitism +/−; allelopathy is chemical inhibition.",
+        "Predator numbers follow prey numbers with a time lag, forming a cycle.",
+        "Carrying capacity is the largest population an environment can sustain over time.",
+        "K is set by biotic and abiotic limiting factors, so it changes when they change."
+      ],
+      "finalPrompt": "For any relationship: what happens to each species? For any population graph: describe with data, explain the mechanism, then predict.",
+      "caption": "Six relationships, predator-prey lag, and a carrying capacity that moves.",
+      "voiceover": {
+        "text": "Let's lock it in. First, predation is plus minus, and competition is minus minus, and strong competition can push one species out entirely. Second, mutualism is plus plus, commensalism is plus zero, parasitism is plus minus, and allelopathy is a plant inhibiting its neighbours with chemicals. Third, predator numbers follow prey numbers with a time lag, which produces a repeating cycle. Fourth, carrying capacity is the largest population an environment can sustain over time. And fifth, K is set by biotic and abiotic limiting factors, so it changes when they change, like red kangaroos after rain or drought. For any relationship question, ask what happens to each species. For any population graph, describe it with data, explain the mechanism, and then predict. See you next lesson."
+      },
+      "durationInFrames": 1717
+    }
+  ]
+}

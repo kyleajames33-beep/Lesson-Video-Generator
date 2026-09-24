@@ -1,0 +1,417 @@
+{
+  "title": "Passive Transport",
+  "subtitle": "Diffusion, osmosis, facilitated diffusion, tonicity and surface area to volume ratio",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Explain the processes of simple diffusion, osmosis and facilitated diffusion",
+    "Conduct practical investigations to demonstrate the processes of diffusion and osmosis",
+    "Predict the effects of hypertonic, hypotonic and isotonic solutions on animal and plant cells",
+    "Relate the movement of glucose, oxygen, carbon dioxide, salts and wastes across membranes to concentration gradients and the characteristics of the materials being exchanged",
+    "investigate the way in which materials can move into and out of cells, including but not limited to: conducting a practical investigation modelling diffusion and osmosis (ACSBL046)",
+    "investigate the way in which materials can move into and out of cells, including but not limited to: relating the exchange of materials across membranes to the surface-area-to-volume ratio, concentration gradients and characteristics of the materials being exchanged (ACSBL047)"
+  ],
+  "moduleLessonCount": 7,
+  "nesaOutcomes": [
+    "BI-11-01",
+    "BI-11WS-03",
+    "BI-11WS-04",
+    "BI-11WS-05"
+  ],
+  "inquiryQuestion": "How do substances move into and out of cells without the cell using energy?",
+  "lessonIntent": "Students can explain simple diffusion, facilitated diffusion and osmosis, predict the effects of hypertonic, hypotonic and isotonic solutions on plant and animal cells, and relate exchange efficiency to surface area to volume ratio.",
+  "examSkill": "Predict the direction of water movement from solute concentrations, describe the outcome for a plant or animal cell, and calculate and interpret surface area to volume ratios.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, diffusion, osmosis, and why cells stay small. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Passive Transport"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why hospitals never inject pure water",
+      "body": "Put a red blood cell in pure water and it swells and bursts. Put it in very salty water and it shrivels.",
+      "callout": "Nothing is pumping the water. So what is moving it?",
+      "image": "bioY11M1L4RedBloodCells",
+      "durationInFrames": 1516,
+      "caption": "Red blood cells burst in pure water and shrivel in salty water, with no pump involved.",
+      "voiceover": {
+        "text": "You never inject pure water into someone's bloodstream. Drip bags contain saline, which is water with just under one percent salt, because if red blood cells meet pure water, they swell up and burst. Put them in very salty water instead, and they do the opposite, shrivelling up like tiny raisins. Now, nothing is pumping that water in or out, and the cell isn't spending any energy on it. So what's actually moving the water? The answer is osmosis, one of three kinds of passive transport, alongside simple diffusion and facilitated diffusion. Today we'll explain all three, predict their effects on plant and animal cells, and see why cell size matters."
+      }
+    },
+    {
+      "id": "concept-diffusion",
+      "type": "concept",
+      "heading": "Simple diffusion: down the gradient",
+      "body": "Diffusion is the net movement of particles from a region of higher concentration to a region of lower concentration.",
+      "bullets": [
+        {
+          "text": "Particles move randomly; the net flow runs down the concentration gradient."
+        },
+        {
+          "text": "No energy from the cell is needed, so it is passive."
+        },
+        {
+          "text": "Small nonpolar molecules like O₂ and CO₂ diffuse straight through the bilayer."
+        }
+      ],
+      "callout": "Steeper gradient, warmer, bigger area, shorter distance: faster diffusion.",
+      "durationInFrames": 1543,
+      "caption": "Diffusion is net movement down a concentration gradient, with no ATP.",
+      "voiceover": {
+        "text": "Let's start with simple diffusion. Diffusion is the net movement of particles from a region of higher concentration to a region of lower concentration. The particles themselves move randomly in every direction, but because there are more of them on the crowded side, more move away from there than toward it. That difference in concentration is the concentration gradient, and diffusion always runs down it. It's passive, meaning the cell spends no ATP, because the particles' own kinetic energy does the work. In cells, simple diffusion carries small nonpolar molecules straight through the bilayer. Oxygen diffuses in because respiration keeps using it up, and carbon dioxide diffuses out because respiration keeps making it."
+      },
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "Start",
+        "beforeContent": "Particles crowded on one side: a steep concentration gradient",
+        "afterLabel": "Equilibrium",
+        "afterContent": "Particles evenly spread: still moving, but no net movement"
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-facilitated",
+      "type": "concept",
+      "heading": "Facilitated diffusion: passive, with help",
+      "body": "Facilitated diffusion moves substances down their gradient through channel or carrier proteins.",
+      "bullets": [
+        {
+          "text": "Channel proteins: pores for specific ions, and aquaporins for water."
+        },
+        {
+          "text": "Carrier proteins: bind a molecule like glucose, change shape, release it."
+        },
+        {
+          "text": "Still passive: down the gradient, no ATP."
+        }
+      ],
+      "callout": "A protein being involved does not mean energy is involved.",
+      "durationInFrames": 1543,
+      "caption": "Facilitated diffusion uses channels or carriers but is still passive.",
+      "voiceover": {
+        "text": "Now, what about substances the bilayer blocks, like glucose and ions? They cross by facilitated diffusion, which is still diffusion, just with a protein helping. There are two kinds of helper. Channel proteins are pores that let specific ions through, and a special set of channels called aquaporins lets water through quickly. Carrier proteins work differently. A glucose carrier binds a glucose molecule, changes shape, and releases it on the other side. The crucial point is that facilitated diffusion is still passive. The substance moves down its concentration gradient, and no ATP is used. And because a membrane has a limited number of carriers, facilitated diffusion levels off once every carrier is busy."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Simple diffusion",
+          "Facilitated diffusion"
+        ],
+        "rows": [
+          [
+            "Route",
+            "Through the bilayer",
+            "Through channel or carrier proteins"
+          ],
+          [
+            "Examples",
+            "O₂, CO₂",
+            "Glucose, ions, water"
+          ],
+          [
+            "Direction",
+            "Down the gradient",
+            "Down the gradient"
+          ],
+          [
+            "ATP needed",
+            "No",
+            "No"
+          ],
+          [
+            "At high concentration",
+            "Keeps rising",
+            "Levels off when proteins are all busy"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-osmosis",
+      "type": "concept",
+      "heading": "Osmosis: the diffusion of water",
+      "body": "Osmosis is the net movement of water across a selectively permeable membrane, from lower solute concentration to higher solute concentration.",
+      "bullets": [
+        {
+          "text": "Water moves toward the side with more dissolved solute."
+        },
+        {
+          "text": "The membrane lets water through but blocks the solute."
+        },
+        {
+          "text": "Tonicity compares the solution outside with the cell's cytoplasm."
+        }
+      ],
+      "callout": "Water follows solute.",
+      "durationInFrames": 1502,
+      "caption": "Osmosis: water moves across a selectively permeable membrane toward higher solute concentration.",
+      "voiceover": {
+        "text": "So, osmosis. Osmosis is the net movement of water across a selectively permeable membrane, from a region of lower solute concentration to a region of higher solute concentration. The membrane is essential here. It lets water through, partly directly and mostly through aquaporins, but it blocks the solute, like sugar or salt. Because the solute can't move to even out the difference, the water moves instead. So here's a quick way to remember the direction. Water follows solute. Wherever more is dissolved, water will move toward it. And to describe the solution around a cell, we use the word tonicity, which compares the solute concentration outside with the cytoplasm inside."
+      }
+    },
+    {
+      "id": "concept-tonicity",
+      "type": "concept",
+      "heading": "Hypotonic, isotonic, hypertonic",
+      "body": "The same solution affects plant and animal cells differently, because only plant cells have a wall.",
+      "bullets": [
+        {
+          "text": "Hypotonic outside: water enters. Animal cells may burst; plant cells go turgid."
+        },
+        {
+          "text": "Isotonic: no net water movement. Animal cells normal; plant cells flaccid."
+        },
+        {
+          "text": "Hypertonic outside: water leaves. Animal cells shrivel; plant cells plasmolyse."
+        }
+      ],
+      "callout": "The cell wall stops a plant cell from bursting.",
+      "durationInFrames": 1830,
+      "caption": "Hypotonic: lysis or turgor. Isotonic: normal or flaccid. Hypertonic: crenation or plasmolysis.",
+      "voiceover": {
+        "text": "Now we can make predictions. The name always describes the solution outside, compared with the cell. In a hypotonic solution, the outside has less solute, so water enters. An animal cell swells and may burst, which is called lysis. A plant cell also takes in water, but its wall pushes back, so it becomes firm, or turgid, rather than bursting. In an isotonic solution, there's no net movement of water. An animal cell keeps its normal shape, while a plant cell goes flaccid, or limp, which is why plants wilt. In a hypertonic solution, the outside has more solute, so water leaves. An animal cell shrivels, which for red blood cells is called crenation. A plant cell loses water from its vacuole, and the membrane pulls away from the wall, which is called plasmolysis."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Solution outside",
+          "Water movement",
+          "Animal cell",
+          "Plant cell"
+        ],
+        "rows": [
+          [
+            "Hypotonic (less solute)",
+            "Into the cell",
+            "Swells, may burst (lysis)",
+            "Turgid; wall stops bursting"
+          ],
+          [
+            "Isotonic (equal solute)",
+            "No net movement",
+            "Normal shape",
+            "Flaccid"
+          ],
+          [
+            "Hypertonic (more solute)",
+            "Out of the cell",
+            "Shrivels (crenation)",
+            "Plasmolysed"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-practical",
+      "type": "concept",
+      "heading": "Practical: osmosis in potato",
+      "body": "Potato cylinders were soaked in sucrose solutions and their percentage change in mass recorded.",
+      "bullets": [
+        {
+          "text": "Independent variable: sucrose concentration. Dependent: % change in mass."
+        },
+        {
+          "text": "Controlled: same potato, cylinder size, time and temperature."
+        },
+        {
+          "text": "Where the line crosses zero, the solution is isotonic with the cells."
+        }
+      ],
+      "callout": "Zero change in mass means no net osmosis.",
+      "durationInFrames": 1966,
+      "caption": "Potato cylinders gain mass in hypotonic and lose it in hypertonic sucrose; isotonic ≈ 0.33 mol/L.",
+      "voiceover": {
+        "text": "The syllabus asks you to demonstrate diffusion and osmosis practically. For diffusion, a common set up is a bag of dialysis tubing holding starch and glucose, sitting in iodine, where the small molecules cross but starch can't. For osmosis, the classic experiment uses potato. You cut equal cylinders from the same potato, weigh them, and soak them in a range of sucrose solutions for about a day, then blot and reweigh them. Use percentage change in mass, because the cylinders won't start at exactly the same mass. Now read the graph. In pure water the cylinders gain about twenty percent, because the water is hypotonic. In the strongest solution they lose mass, because it's hypertonic. And where the line crosses zero, at around a third of a mole per litre, there's no net osmosis, so that solution is roughly isotonic with the potato cells."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Sucrose concentration (0 to 0.6 mol/L)",
+        "yLabel": "% change in mass",
+        "series": [
+          {
+            "label": "Potato cylinders",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0.978
+              ],
+              [
+                0.333,
+                0.622
+              ],
+              [
+                0.667,
+                0.356
+              ],
+              [
+                1,
+                0.089
+              ]
+            ]
+          }
+        ],
+        "hLines": [
+          {
+            "y": 0.444,
+            "label": "No change in mass"
+          }
+        ],
+        "markers": [
+          {
+            "x": 0.556,
+            "label": "Isotonic ≈ 0.33 mol/L"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-sav",
+      "type": "concept",
+      "heading": "Why cells stay small",
+      "body": "As a cell grows, its volume increases faster than its surface area, so each part of the cytoplasm gets less membrane to supply it.",
+      "bullets": [
+        {
+          "text": "Surface area supplies materials; volume uses them."
+        },
+        {
+          "text": "Doubling the side of a cube halves its SA:V ratio."
+        },
+        {
+          "text": "Cells that exchange a lot are flattened, folded or covered in microvilli."
+        }
+      ],
+      "callout": "Small, flat or folded cells exchange fastest.",
+      "durationInFrames": 1857,
+      "caption": "SA:V falls as cells grow: 6:1, 3:1, 2:1 for 1, 2 and 3 cm cubes.",
+      "voiceover": {
+        "text": "So why are cells so small? It comes down to the surface area to volume ratio. The surface area, the membrane, is where materials get in and out, while the volume is the cytoplasm that uses those materials and makes wastes. As a cell grows, its volume increases faster than its surface area. Picture cubes. A one centimetre cube has a ratio of six to one. Double the side to two centimetres and the ratio halves, to three to one, and at three centimetres it's down to two to one. So in a bigger cell, every bit of cytoplasm gets less membrane to supply it, and diffusion can't keep up. That's why cells that exchange a lot are flattened or folded, like the cells lining your small intestine, which are covered in tiny folds called microvilli."
+      },
+      "diagram": {
+        "type": "barChart",
+        "bars": [
+          {
+            "label": "1 cm cube",
+            "value": 6
+          },
+          {
+            "label": "2 cm cube",
+            "value": 3
+          },
+          {
+            "label": "3 cm cube",
+            "value": 2
+          }
+        ],
+        "unit": "SA:V"
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Surface area to volume ratio",
+      "question": "Model two cells as cubes. Cell A has sides of 10 µm and cell B has sides of 20 µm. Calculate the SA:V ratio of each, and state which exchanges materials more efficiently.",
+      "coachNote": "For a cube, SA = 6 × side² and volume = side³. Then divide SA by volume.",
+      "unitCancel": {
+        "left": "µm²",
+        "right": "µm³",
+        "result": "µm⁻¹ (ratio : 1)"
+      },
+      "steps": [
+        "Cell A: SA = 6 × 10² = 600 µm²; V = 10³ = 1000 µm³.",
+        "Cell A: SA:V = 600 ÷ 1000 = 0.6 : 1.",
+        "Cell B: SA = 6 × 20² = 2400 µm²; V = 20³ = 8000 µm³.",
+        "Cell B: SA:V = 2400 ÷ 8000 = 0.3 : 1.",
+        "Answer: cell A (0.6 : 1) has twice the ratio of cell B (0.3 : 1), so it exchanges more efficiently ✓"
+      ],
+      "durationInFrames": 1898,
+      "caption": "Doubling the side halves SA:V: 0.6 : 1 versus 0.3 : 1.",
+      "voiceover": {
+        "text": "Let's calculate it, modelling two cells as cubes. Cell A has sides of ten micrometres, and cell B has sides of twenty micrometres. Which one exchanges materials more efficiently? For a cube, surface area is six times the side squared, and volume is the side cubed. For cell A, the surface area is six times one hundred, which is six hundred square micrometres, and the volume is ten cubed, one thousand cubic micrometres. Divide, and the ratio is zero point six to one. For cell B, the surface area is six times four hundred, two thousand four hundred, and the volume is twenty cubed, eight thousand. Divide again, and you get zero point three to one. So doubling the side halved the ratio, and cell A, with twice as much membrane per unit of volume, exchanges materials more efficiently."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: 'Water moves toward the more dilute side.' Backwards. Water moves toward the higher solute concentration.",
+      "secondary": "Trap 2: 'Diffusion stops at equilibrium.' The particles keep moving; only the net movement stops.",
+      "mistakeTag": "Where transport marks vanish",
+      "callout": "Water follows solute; at equilibrium, movement continues but net flow is zero.",
+      "durationInFrames": 1625,
+      "caption": "Water moves toward more solute; equilibrium means no net movement, not no movement.",
+      "voiceover": {
+        "text": "Two traps to watch for. Trap one is getting osmosis backwards. Students see the word concentration and assume water moves toward the dilute side. It's the opposite. Water moves toward the side with the higher solute concentration, because that's where there's less free water. Trap two is saying that diffusion stops once the concentrations are equal. The particles don't stop moving at all. They keep moving randomly, but now just as many cross one way as the other, so the net movement is zero, which is called dynamic equilibrium. So in an exam, always use the word net when you describe diffusion or osmosis. Net movement from high to low is correct, but saying the movement stops is wrong."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A lettuce leaf is placed in concentrated salt water, and a sample of red blood cells is placed in distilled water. Predict what happens to the cells in each case, and name the process.",
+      "pausePrompt": "Pause. Where is the solute concentration higher in each case?",
+      "answerSteps": [
+        "Salt water is hypertonic to the lettuce cells, so water leaves them by osmosis.",
+        "The lettuce cells plasmolyse and the leaf goes limp.",
+        "Distilled water is hypotonic to red blood cells, so water enters them by osmosis.",
+        "Red blood cells have no wall, so they swell and burst (lysis).",
+        "Answer: lettuce cells plasmolyse; red blood cells lyse. Both by osmosis ✓"
+      ],
+      "durationInFrames": 1748,
+      "caption": "Hypertonic salt water plasmolyses lettuce; hypotonic distilled water lyses red blood cells.",
+      "voiceover": {
+        "text": "Quick check. A lettuce leaf is dropped into concentrated salt water, and a sample of red blood cells is placed in distilled water. Predict what happens to the cells in each case, and name the process. Pause, and ask where the solute concentration is higher each time. OK, the lettuce first. The salt water has a higher solute concentration than the cytoplasm, so it's hypertonic, and water leaves the cells by osmosis. The vacuoles shrink, the membranes pull away from the walls, and the cells plasmolyse, so the leaf goes limp. Now the red blood cells. Distilled water has no solute at all, so it's hypotonic, and water moves into the cells by osmosis. With no cell wall to push back, they swell and burst, which is lysis."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Diffusion: net movement down a concentration gradient, no ATP; O₂ and CO₂ cross the bilayer directly.",
+        "Facilitated diffusion uses channel or carrier proteins, but is still passive.",
+        "Osmosis: water moves across a selectively permeable membrane toward higher solute concentration.",
+        "Hypotonic: animal cells burst, plant cells turgid. Hypertonic: animal cells shrivel, plant cells plasmolyse.",
+        "As cells grow, SA:V falls, so exchange becomes less efficient."
+      ],
+      "finalPrompt": "For any osmosis question: where is the solute higher? Water moves there.",
+      "durationInFrames": 1611,
+      "caption": "Five takeaways: diffusion, facilitated diffusion, osmosis, tonicity, SA:V.",
+      "voiceover": {
+        "text": "Let's lock it in. First, diffusion is the net movement of particles down a concentration gradient, with no ATP, and small nonpolar molecules like oxygen and carbon dioxide cross the bilayer directly. Second, facilitated diffusion uses channel or carrier proteins, but it's still passive. Third, osmosis is the net movement of water across a selectively permeable membrane toward the higher solute concentration. Fourth, in a hypotonic solution animal cells burst and plant cells become turgid, while in a hypertonic solution animal cells shrivel and plant cells plasmolyse. And fifth, as a cell grows its surface area to volume ratio falls, so exchange gets less efficient. Next lesson, how a cell moves things against the gradient. See you then."
+      }
+    }
+  ]
+}

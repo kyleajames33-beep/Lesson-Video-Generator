@@ -1,14 +1,19 @@
 {
   "title": "Large-Scale Population Genetics Data",
-  "subtitle": "Disease, conservation and human evolution from big genomic data",
+  "subtitle": "Genetic databases, bioinformatics and modelling for disease and conservation",
   "subject": "Biology",
+  "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 5",
   "lesson": "Lesson 18",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
-  "syllabusModule": "Module 5 — Heredity",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
+  "syllabusModule": "Module 5 Heredity (2017) + Biotechnology and Biodiversity (2025)",
   "syllabusDotPoints": [
-    "investigate the use of data analysis from a large-scale collaborative project to identify trends, patterns and relationships (ACSBL064, ACSBL073)"
+    "investigate the use of data analysis from a large-scale collaborative project to identify trends, patterns and relationships, for example: the use of population genetics data in conservation management, population genetics studies used to determine the inheritance of a disease or disorder (ACSBL064, ACSBL073)",
+    "Assess the use of genetic databases for the analysis of the prevalence of a genetic disease",
+    "Assess the role of data and modelling in developing and using biotechnology",
+    "Explain how the founder effect and bottlenecks result in genetic drift",
+    "Analyse data on the effect of reduced genetic diversity on the survival of Tasmanian devil populations"
   ],
   "moduleLessonCount": 19,
   "nesaOutcomes": [
@@ -16,11 +21,13 @@
     "BIO11/12-4",
     "BIO11/12-5",
     "BIO11/12-6",
-    "BIO11/12-7"
+    "BIO11/12-7",
+    "BI-12-04",
+    "BI-12-03"
   ],
   "inquiryQuestion": "Can population genetic patterns be predicted with any accuracy?",
-  "lessonIntent": "Students can explain how large-scale genomic data supports inference in conservation, disease and human evolution, and apply Hardy-Weinberg to estimate allele and genotype frequencies.",
-  "examSkill": "State the strength and the limits of a large-scale data conclusion, and calculate allele and genotype frequencies under Hardy-Weinberg equilibrium.",
+  "lessonIntent": "Students can explain how shared genetic databases such as GenBank and EMBL are built and used, model the prevalence of cystic fibrosis carriers with the Hardy Weinberg equation, assess what databases can and cannot show about prevalence, and explain how population genetic data guides Tasmanian devil conservation.",
+  "examSkill": "Use population data to calculate allele and carrier frequencies, then assess a genetic database or data set by stating its strength and its limits.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -28,75 +35,86 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, large-scale population genetics data. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, genetic databases and what population data can tell us. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 105,
-      "caption": "Large-Scale Population Genetics Data (Year 12 Biology, Module 5, Lesson 18)"
+      "caption": "Large-Scale Population Genetics Data"
     },
     {
       "id": "hook",
       "type": "hook",
-      "heading": "Half a million genomes",
-      "body": "UK Biobank gathered genomic and health data from 500,000 people, revealing disease links no single hospital could ever find alone.",
-      "callout": "What can a dataset that big show, and what can it still never promise?",
+      "heading": "A cancer that spreads by biting",
+      "body": "Since the 1990s, devil facial tumour disease has spread between Tasmanian devils as living tumour cells, passed on when they bite.",
+      "callout": "Why can't a devil's immune system reject another devil's tumour?",
       "image": "bioM5L18PopulationGenetics",
-      "durationInFrames": 1795,
-      "caption": "UK Biobank's 500,000-participant dataset found 100+ new disease loci, showing the power and limits of scale.",
+      "caption": "Devil facial tumour disease spreads as living cancer cells; low genetic diversity is thought to be part of why.",
       "voiceover": {
-        "text": "In 2006, a project called UK Biobank began enrolling half a million people, collecting their genomic data alongside detailed health records. By 2023 that single resource had fed into over six thousand published studies, and helped identify more than a hundred new genetic locations linked to diseases like heart disease, type two diabetes, and depression. No individual hospital, working alone, could ever have found those links. So here's the tension we'll explore today. Bigger datasets clearly reveal patterns that small studies miss. But does more data mean we can predict everything with certainty? It does not, and understanding why is the whole point of the lesson. We'll see how large-scale data powers conservation, disease, and human evolution research, while always carrying uncertainty, and we'll learn one key calculation along the way."
-      }
+        "text": "In the mid nineteen nineties, wildlife researchers in Tasmania started seeing something they'd never seen before. Devils with huge tumours on their faces. It turned out to be a contagious cancer. Living tumour cells pass from one devil to another when they bite each other during fights and feeding. Now, normally an immune system would reject cells from another animal as foreign. So why doesn't a devil reject another devil's tumour? Part of the answer lies in their genes. Devils have very little genetic diversity, especially in their immune genes, so the tumour doesn't look foreign enough. And the only way we know that is by comparing DNA from many animals. Today we'll see how shared genetic databases and population data are used, for human disease like cystic fibrosis and for conservation, and what that data can and can't tell us."
+      },
+      "durationInFrames": 1737
     },
     {
-      "id": "concept-bigdata",
+      "id": "concept-databases",
       "type": "concept",
-      "heading": "Scale strengthens inference",
-      "body": "Population-scale data detects patterns across places, time periods and lineages that small studies cannot.",
+      "heading": "Genetic databases: a shared library of DNA",
+      "body": "Scientists around the world submit DNA sequences to public databases, so everyone can compare against them.",
       "bullets": [
         {
-          "text": "Large datasets reveal allele distribution trends and disease-linked changes."
+          "text": "GenBank, run by the NCBI in the United States, stores submitted DNA sequences."
         },
         {
-          "text": "They can detect bottlenecks and shared variants across populations."
+          "text": "The EMBL Nucleotide Sequence Database in Europe and DDBJ in Japan share data with it daily."
         },
         {
-          "text": "They improve the strength of inference, but never reach absolute certainty."
+          "text": "Bioinformatics tools like BLAST search a new sequence against millions of stored ones."
         }
       ],
-      "secondary": "This is the single idea the whole lesson hangs on: more data makes conclusions stronger, but a conclusion stays an inference, never a guarantee.",
-      "callout": "More data, stronger inference, still not certainty.",
-      "durationInFrames": 1836,
-      "caption": "Population-scale data improves pattern detection and inference strength, but not to certainty.",
+      "secondary": "Because it combines data from thousands of labs, this is itself a large scale collaborative project. No single lab could build it.",
+      "callout": "Many labs submit; everyone can search.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "a",
+            "label": "Labs sequence DNA"
+          },
+          {
+            "id": "b",
+            "label": "Submit to GenBank or EMBL"
+          },
+          {
+            "id": "c",
+            "label": "Shared daily"
+          },
+          {
+            "id": "d",
+            "label": "Search and compare"
+          }
+        ],
+        "edges": [
+          {
+            "from": "a",
+            "to": "b"
+          },
+          {
+            "from": "b",
+            "to": "c"
+          },
+          {
+            "from": "c",
+            "to": "d"
+          }
+        ]
+      },
+      "caption": "GenBank, EMBL and DDBJ share submitted sequences daily; tools like BLAST search them.",
       "voiceover": {
-        "text": "Let's start with the core logic of big data in genetics. When you pool data from huge numbers of individuals, across many places, time periods and lineages, you can detect patterns that a small study would completely miss. Large datasets can reveal trends in how alleles are distributed, spot disease-linked changes, detect population bottlenecks, and find variants shared between groups. All of that gets sharper as the dataset grows. But here is the line you must hold onto for every part of this lesson. More data improves the strength of your inference, it makes conclusions more reliable, but it never converts an inference into absolute certainty. A trend across half a million people is powerful evidence, but it's still evidence about a pattern, not a guarantee about any one outcome. Stronger inference, never certainty."
-      }
-    },
-    {
-      "id": "concept-conservation",
-      "type": "concept",
-      "heading": "Conservation: protecting diversity",
-      "body": "Conservation genetics uses population data to detect lost diversity, isolation and past bottlenecks in threatened species.",
-      "bullets": [
-        {
-          "text": "It detects reduced genetic diversity and signs of past bottlenecks."
-        },
-        {
-          "text": "Low diversity reduces a population's ability to respond to disease or change."
-        },
-        {
-          "text": "It guides breeding programs, translocations and conservation priorities."
-        }
-      ],
-      "secondary": "Be careful with the claim: genetic diversity improves adaptive capacity, it does not guarantee survival. Survival still depends on many ecological factors.",
-      "callout": "Diversity boosts adaptive capacity; it does not guarantee survival.",
-      "durationInFrames": 1809,
-      "caption": "Conservation genetics detects bottlenecks and low diversity to guide management, not guarantee survival.",
-      "voiceover": {
-        "text": "First application, conservation genetics. When a species is threatened, population genetic data can reveal whether it has lost genetic diversity, become isolated, or suffered a bottleneck in the past, which is a sharp crash in population size that strips out alleles. Why does that matter? Because low genetic diversity reduces a population's ability to respond to new diseases or a changing environment, since there are fewer alleles to draw on. So this data directly guides conservation, informing captive breeding programs, decisions to move individuals between populations, and which populations to prioritise. But watch your wording carefully here. Genetic diversity improves a population's adaptive capacity, its potential to cope with change. It does not guarantee survival, because survival still depends on plenty of ecological factors like habitat, food, and predators. Don't overstate it."
-      }
+        "text": "So let's start with where all this data lives. When scientists sequence a piece of DNA, they usually submit it to a public database. The best known is GenBank, run by the National Center for Biotechnology Information in the United States. Europe has the EMBL Nucleotide Sequence Database, and Japan has DDBJ, and the three of them exchange their data every day, so a sequence submitted to one turns up in all of them. Then bioinformatics tools do the searching. A tool called BLAST, for example, takes a new sequence and compares it against millions of stored ones in seconds, to find the closest matches. Here's the bigger point. Because it combines data from thousands of labs around the world, this is a genuinely large scale collaborative project in itself. No single lab could ever build it."
+      },
+      "durationInFrames": 1689
     },
     {
       "id": "definition",
@@ -104,118 +122,189 @@
       "heading": "The words you need",
       "bullets": [
         {
-          "text": "Large-scale collaborative project: one combining data from many researchers, sites or populations."
+          "text": "Genetic database: a searchable, shared store of DNA sequences or variants."
         },
         {
-          "text": "Bottleneck: a sharp drop in population size that reduces genetic diversity."
+          "text": "Bioinformatics: using computing to store, compare and analyse biological data."
         },
         {
-          "text": "Genetic diversity: the variety of alleles present within a population."
+          "text": "Prevalence: the proportion of a population with a condition at a given time."
         },
         {
-          "text": "Inference: a conclusion drawn from evidence that may still carry uncertainty."
+          "text": "Bottleneck: a sharp fall in population size that reduces genetic diversity."
+        },
+        {
+          "text": "Model: a simplified representation, like an equation, used to make predictions."
         }
       ],
-      "callout": "An inference is evidence-based, but never certainty.",
-      "durationInFrames": 1687,
-      "caption": "Large-scale collaborative project, bottleneck, genetic diversity, inference.",
+      "callout": "A database stores data; a model makes predictions from it.",
+      "caption": "Genetic database, bioinformatics, prevalence, bottleneck, model.",
       "voiceover": {
-        "text": "Let's pin down the words. A large-scale collaborative project is one that combines data from many researchers, sites, or populations, which is what makes population-scale conclusions possible. A bottleneck is a sharp reduction in population size that decreases genetic diversity, because so many alleles are lost when numbers crash. Genetic diversity is simply the variety of alleles present within a population, and more is generally better for adaptability. And an inference is a conclusion drawn from evidence, one that may still contain uncertainty. That last word is the theme of the lesson. Everything these projects produce is an inference, an evidence-based conclusion, not a certainty. Hold that, because the exam rewards students who state both the strength of the evidence and its limits."
-      }
-    },
-    {
-      "id": "concept-disease-evolution",
-      "type": "concept",
-      "heading": "Disease and human evolution",
-      "body": "The same scale of data tracks disease-linked variants across populations and infers human ancestry and migration.",
-      "bullets": [
-        {
-          "text": "Disease studies compare carrier frequencies and variant distribution between groups."
-        },
-        {
-          "text": "Evolution studies compare markers to infer shared ancestry and divergence."
-        },
-        {
-          "text": "More shared markers suggest a more recent common ancestry."
-        }
-      ],
-      "secondary": "Both remain inferences. Disease data can't predict one individual's outcome, and ancestry data can't give a perfect, final history without revision.",
-      "callout": "Population trends, not individual certainties or final histories.",
-      "durationInFrames": 1768,
-      "caption": "Big data tracks disease-variant distribution and infers ancestry; both stay inferences.",
-      "voiceover": {
-        "text": "Two more applications, and they share the same logic. First, disease inheritance studies. With huge samples, scientists can compare how often disease-linked variants occur across different populations, comparing carrier frequencies and tracking variant distribution. That supports recognising variants and inferring inheritance trends. But it cannot guarantee one specific person's outcome, because phenotype depends on other genes, the environment, and chance. Second, human evolution. By comparing genetic markers across populations, researchers infer shared ancestry, divergence, and migration patterns. The general rule is that more shared markers suggest a more recent common ancestry. But again, these are inferences, not a perfect one-line story of human history, and they get revised as new data arrives. So in both cases, the data reveals population trends, not individual certainties, and not final, unchangeable histories."
-      }
+        "text": "Let's pin down the words. A genetic database is a searchable, shared store of DNA sequences or genetic variants. Bioinformatics is the use of computing to store, compare and analyse biological data like those sequences. Prevalence is the proportion of a population that has a condition at a given time, so for a genetic disease, how common it actually is. A bottleneck is a sharp fall in population size that reduces genetic diversity, because many alleles are lost along with the individuals. And a model is a simplified representation, such as an equation, that we use to make predictions. Notice the difference between the first and the last. A database stores data, while a model uses data to predict something. Let's use a model now."
+      },
+      "durationInFrames": 1545
     },
     {
       "id": "worked-example",
       "type": "workedExample",
-      "heading": "A Hardy-Weinberg calculation",
-      "question": "In a population of 1000 individuals in Hardy-Weinberg equilibrium, 160 show the recessive phenotype (aa). Find: (a) the frequency of allele a; (b) the frequency of allele A; (c) the expected number of heterozygotes.",
-      "coachNote": "q² is the recessive phenotype frequency; p + q = 1; heterozygotes = 2pq.",
+      "heading": "Modelling cystic fibrosis carriers",
+      "question": "About 1 in 2,500 Australian babies is born with cystic fibrosis, an autosomal recessive condition. Using the Hardy Weinberg equation, estimate the frequency of the CF allele and the proportion of people who are carriers.",
+      "coachNote": "Affected babies are homozygous recessive, so their frequency is q². Carriers are heterozygotes, 2pq.",
       "steps": [
-        "(a) q² = 160 ÷ 1000 = 0.16, so q = √0.16 = 0.4.",
-        "(b) p = 1 − q = 1 − 0.4 = 0.6.",
-        "(c) Heterozygote frequency = 2pq = 2 × 0.6 × 0.4 = 0.48.",
-        "Expected heterozygotes = 0.48 × 1000 = 480 individuals.",
-        "Answer: a = 0.4, A = 0.6, and 480 heterozygotes ✓"
+        "q² = 1 ÷ 2500 = 0.0004, so q = √0.0004 = 0.02.",
+        "p = 1 − q = 1 − 0.02 = 0.98.",
+        "Carriers = 2pq = 2 × 0.98 × 0.02 = 0.0392.",
+        "0.0392 is about 1 in 25 people.",
+        "Answer: CF allele frequency ≈ 0.02; about 1 in 25 people are carriers, most of whom don't know it ✓"
       ],
-      "durationInFrames": 2429,
-      "caption": "q² = 0.16 → q = 0.4, p = 0.6, 2pq = 0.48, so 480 heterozygotes in 1000.",
+      "caption": "q² = 1/2500 gives q = 0.02, p = 0.98, 2pq ≈ 0.039, about 1 in 25 people carry a CF allele.",
       "voiceover": {
-        "text": "Let's do the one calculation this topic asks for, a Hardy-Weinberg problem. In a population of a thousand individuals at equilibrium, one hundred and sixty show the recessive phenotype, genotype little a little a. We want the allele frequencies and the number of heterozygotes. Start with part a. The recessive phenotype frequency is q squared, so q squared equals one hundred and sixty divided by one thousand, which is zero point one six. Take the square root, and q, the frequency of allele little a, is zero point four. Part b is easy, because p plus q equals one, so p, the frequency of big A, is one minus zero point four, which is zero point six. Now part c, the heterozygotes. Heterozygote frequency is two p q, that's two times zero point six times zero point four, which is zero point four eight. Multiply by the thousand individuals, and you get four hundred and eighty heterozygotes. So allele a is zero point four, allele A is zero point six, and there are four hundred and eighty carriers."
-      }
+        "text": "Let's use population data and a model together. About one in two thousand five hundred Australian babies is born with cystic fibrosis, which is autosomal recessive. Using the Hardy Weinberg equation, we'll estimate the frequency of the CF allele, and the proportion of carriers. Affected babies have two copies of the recessive allele, so their frequency is q squared. That means q squared equals one divided by two thousand five hundred, which is zero point zero zero zero four. Take the square root, and q, the CF allele frequency, is zero point zero two. Since p plus q equals one, p is zero point nine eight. Carriers are the heterozygotes, two p q, so that's two times zero point nine eight times zero point zero two, which is zero point zero three nine two. That's roughly one person in every twenty five. And that matches what CF organisations report, which tells us the model is a good fit, even though most carriers have no idea."
+      },
+      "durationInFrames": 2025
+    },
+    {
+      "id": "concept-model-limits",
+      "type": "concept",
+      "heading": "A model rests on assumptions",
+      "body": "The Hardy Weinberg model assumes an ideal population, so its predictions are estimates, not facts.",
+      "bullets": [
+        {
+          "text": "It assumes a large population with random mating."
+        },
+        {
+          "text": "It assumes no selection, migration or new mutations change the allele frequencies."
+        },
+        {
+          "text": "Real populations only roughly meet these, so treat the answer as an estimate."
+        }
+      ],
+      "secondary": "Modelling is still powerful. It turns one easily measured number, how many babies are affected, into one that's hard to measure, how many people are carriers.",
+      "callout": "Good models predict well; they never predict perfectly.",
+      "caption": "Hardy Weinberg assumes an ideal population, so carrier estimates are useful approximations.",
+      "voiceover": {
+        "text": "Now, the newer syllabus asks you to assess the role of data and modelling, so let's be honest about the model. The Hardy Weinberg equation assumes an ideal population. It has to be large, mating has to be random, and nothing can be changing the allele frequencies, so no selection, no migration in or out, and no new mutations. Real populations only roughly meet those conditions. Australia's population, for instance, is a mix of many ancestries, and the CF allele is much more common in some of them than in others. So the carrier figure is an estimate, not a fact. But look at what the model achieved. It took a number that's easy to measure, how many babies are born with CF, and turned it into one that's very hard to measure, how many healthy people are carriers. That's exactly why modelling matters in biotechnology."
+      },
+      "durationInFrames": 1797
+    },
+    {
+      "id": "concept-assess-database",
+      "type": "concept",
+      "heading": "Can a database measure prevalence?",
+      "body": "Sequence databases are excellent for identifying variants, but they are not a random sample of people.",
+      "bullets": [
+        {
+          "text": "Strength: the CFTR gene and thousands of its variants can be looked up and compared across populations."
+        },
+        {
+          "text": "Limit: labs submit the sequences they study, so disease variants are overrepresented."
+        },
+        {
+          "text": "Limit: entries can be duplicated or mislabelled, and well studied populations dominate."
+        }
+      ],
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Good for",
+          "Not good for"
+        ],
+        "rows": [
+          [
+            "Finding the CFTR sequence",
+            "Counting how many people have CF"
+          ],
+          [
+            "Identifying and comparing variants",
+            "A random sample of a population"
+          ],
+          [
+            "Designing tests for common variants",
+            "Groups that are rarely sequenced"
+          ]
+        ]
+      },
+      "callout": "Great for what a variant is; poor for how common it is.",
+      "caption": "Databases identify and compare CFTR variants well but aren't a random sample, so they can't directly give prevalence.",
+      "voiceover": {
+        "text": "So here's the assess question. Can GenBank or the EMBL database tell us the prevalence of cystic fibrosis? Let's weigh it up. On the strength side, the full CFTR gene sequence and thousands of its variants are stored there, so researchers can look them up, compare them, and design tests for the common ones, like F508del, which accounts for roughly seven in ten CF alleles worldwide. And because sequences come from many countries, variants can be compared between populations. But here's the limit. These databases hold sequences that labs chose to submit, and labs studying CF tend to sequence people who have it. So disease variants are heavily overrepresented, and simply counting entries would wildly overestimate prevalence. Entries can also be duplicated or mislabelled, and well studied populations dominate. So sequence databases are great for what a variant is, but poor for how common it is. Prevalence needs population data, like newborn screening results."
+      },
+      "durationInFrames": 1893
+    },
+    {
+      "id": "concept-conservation",
+      "type": "concept",
+      "heading": "Conservation: the Tasmanian devil",
+      "body": "Population genetic data showed devils had lost diversity through past bottlenecks, and now guides how they are bred and released.",
+      "bullets": [
+        {
+          "text": "Past population crashes and isolation on Tasmania left devils with low genetic diversity."
+        },
+        {
+          "text": "Low diversity in immune genes may help the facial tumour avoid rejection."
+        },
+        {
+          "text": "The insurance population is bred using genetic data to keep as much diversity as possible."
+        }
+      ],
+      "secondary": "Diversity improves a population's capacity to adapt. It doesn't guarantee survival, which still depends on habitat, disease and other ecological factors.",
+      "callout": "Diversity boosts adaptive capacity; it doesn't guarantee survival.",
+      "caption": "Genetic data revealed devils' low diversity and now guides breeding to conserve what remains.",
+      "voiceover": {
+        "text": "Now back to the devils, because this is population genetics data in conservation. Comparing DNA across many devils showed that the species has very low genetic diversity, the signature of past bottlenecks, when the population crashed, and of long isolation on Tasmania. That matters for two reasons. First, low diversity in immune genes may be part of why the facial tumour isn't rejected. Second, a population with fewer alleles has less raw material to adapt to any new threat. So conservation managers set up an insurance population of disease free devils, and they use genetic data to choose which animals breed, so that as much of the remaining diversity as possible is kept. But watch your wording. Genetic diversity improves a population's capacity to adapt. It doesn't guarantee survival, which still depends on habitat, disease and plenty of other ecological factors."
+      },
+      "durationInFrames": 1737
     },
     {
       "id": "misconception",
       "type": "misconception",
       "heading": "Two traps",
-      "body": "Trap 1: thinking the Human Genome Project sequenced everyone's genome. It produced one composite reference from a few donors, not the genome of any single person.",
-      "secondary": "Trap 2: assuming huge datasets remove all uncertainty. More data strengthens inference and improves pattern detection, but it never removes sampling assumptions, method limitations, or uncertainty about future outcomes. Strong answers state both the strength and the limits.",
-      "mistakeTag": "Where big-data marks vanish",
-      "callout": "The reference genome is a composite; big data is not certainty.",
-      "durationInFrames": 1903,
-      "caption": "The HGP made a composite reference; large data strengthens inference but keeps uncertainty.",
+      "body": "Trap 1: thinking the reference genome is 'the' human genome. The Human Genome Project built one composite reference from a few donors, and every real person differs from it at millions of positions.",
+      "secondary": "Trap 2: assuming a huge dataset removes all uncertainty. Scale strengthens inference, but a database that isn't a random sample stays biased however big it gets, and every model rests on assumptions.",
+      "mistakeTag": "Where big data marks vanish",
+      "callout": "Bigger isn't unbiased, and a reference isn't a real person.",
+      "caption": "The reference genome is a composite; big datasets strengthen inference but keep bias and assumptions.",
       "voiceover": {
-        "text": "Two traps to avoid. Trap one, thinking the Human Genome Project sequenced the genomes of all humans. It did not. It produced a single reference genome, a composite built from a small number of donors. It represents no individual person, and every real genome differs from it at millions of positions. The reference is a starting map, not a universal template. Trap two is the big-picture one for this whole lesson. Students assume that a huge dataset removes all uncertainty. It doesn't. More data does strengthen inference, improve pattern detection, and allow broader comparison, all genuinely valuable. But it never removes the underlying sampling assumptions, the limitations of the methods, or the uncertainty about future outcomes. So a strong exam answer always states both sides, the strength the scale provides, and the limits that remain. Evidence-based inferences, not certainties."
-      }
+        "text": "Two traps to avoid. Trap one, thinking the reference genome is the human genome, as if there were one correct version. The Human Genome Project produced a single composite reference, built from the DNA of a small number of donors. It represents no one person, and every real genome differs from it at millions of positions. It's a starting map, not a template everyone should match. Trap two, assuming that a huge dataset removes all uncertainty. It doesn't. More data does strengthen inference and helps you detect patterns, but if the data isn't a random sample, it stays biased no matter how big it gets. And every model you run on it rests on assumptions. So a strong answer always states both sides, the strength that scale provides, and the limits that remain."
+      },
+      "durationInFrames": 1641
     },
     {
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "A large international study finds a strong population-level link between a genetic marker and a disorder. Explain why this improves inference but still cannot tell you whether one specific person will develop the disorder.",
-      "pausePrompt": "Pause and reason it through.",
+      "question": "A student counts how many CFTR sequences in GenBank carry F508del, and uses that proportion as the prevalence of CF in Australia. Assess this method.",
+      "pausePrompt": "Pause and assess it: one strength, then the limits.",
       "answerSteps": [
-        "The large sample makes the population-level trend statistically stronger and more reliable.",
-        "But the result is a trend across a group, not a rule for every individual.",
-        "An individual's phenotype also depends on other genes, the environment and chance.",
-        "Population data improves inference without guaranteeing any single outcome.",
-        "Answer: stronger group inference, but individual outcome stays uncertain due to other factors ✓"
+        "Strength: GenBank does store many CFTR sequences, so F508del can be identified and compared.",
+        "Limit: labs mostly submit sequences from people with CF, so F508del is overrepresented.",
+        "Limit: entries come from many countries, not a random sample of Australians, and some are duplicates.",
+        "Better: use population data such as newborn screening results, and model carriers with Hardy Weinberg.",
+        "Answer: useful for identifying the variant, but invalid as a measure of Australian prevalence ✓"
       ],
-      "durationInFrames": 2132,
-      "caption": "Big data strengthens the population trend, but individual outcome depends on more than one marker.",
+      "caption": "Counting GenBank entries overestimates prevalence; use screening data and modelling instead.",
       "voiceover": {
-        "text": "Quick check, and it gets to the heart of the lesson. A large international study finds a strong population-level link between a genetic marker and a disorder. Explain why this improves our inference, but still cannot tell you whether one specific person will develop the disorder. Pause and reason it through. Okay. On the strength side, because the sample is so large, the population-level trend is statistically robust, much more reliable than a small study could ever be. So our inference about the population genuinely improves. But here's the limit. That result is a trend across a whole group, not a rule that applies to every individual within it. Any single person's phenotype also depends on their other genes, their environment, and an element of chance. So the data sharpens what we can say about the population, while the outcome for one specific person remains uncertain. Strength and limits, both stated, that's the band six answer."
-      }
+        "text": "Quick check. A student counts how many CFTR sequences in GenBank carry the F508del variant, and uses that proportion as the prevalence of cystic fibrosis in Australia. Assess this method. Pause and assess it, one strength, then the limits. Right. The strength is real, GenBank does hold many CFTR sequences, so the student can identify F508del and compare it with other variants. But the method has serious problems. Labs mostly submit sequences from people who actually have CF, so the variant will be heavily overrepresented. On top of that, the entries come from many countries, not a random sample of Australians, and some are duplicates. A better approach would use population data, like newborn screening results, and then model the carriers with Hardy Weinberg. So the verdict is, it's useful for identifying the variant, but invalid as a measure of prevalence in Australia."
+      },
+      "durationInFrames": 1761
     },
     {
       "id": "summary",
       "type": "summary",
       "heading": "Lock it in",
       "points": [
-        "Large-scale data detects patterns across populations that small studies miss.",
-        "Conservation genetics finds bottlenecks and low diversity to guide management.",
-        "Disease and evolution studies infer variant trends and ancestry across groups.",
-        "Hardy-Weinberg: recessive phenotype = q², p + q = 1, heterozygotes = 2pq.",
-        "More data strengthens inference but never removes uncertainty; state both."
+        "GenBank, EMBL and DDBJ share submitted sequences; bioinformatics tools search them.",
+        "Hardy Weinberg: affected = q², p + q = 1, carriers = 2pq (CF ≈ 1 in 25).",
+        "Models rest on assumptions, so their predictions are estimates.",
+        "Sequence databases identify variants well but aren't a random sample, so can't give prevalence.",
+        "Devil data showed bottlenecks and low diversity, and now guides breeding to keep diversity."
       ],
-      "finalPrompt": "Big-data question? State the strength the scale gives, then the limits that remain. Conclusions are inferences, not certainties.",
-      "durationInFrames": 1795,
-      "caption": "Five takeaways: scale, conservation, disease and evolution, Hardy-Weinberg, the limits.",
+      "finalPrompt": "Data or database question? State what the scale lets you see, then the bias or assumption that limits it.",
+      "caption": "Five takeaways: shared databases, Hardy Weinberg, model assumptions, database limits, devil conservation.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, large-scale data detects patterns across populations, places and lineages that small studies simply miss. Second, conservation genetics uses it to find bottlenecks and low diversity, guiding breeding and conservation, though diversity improves adaptive capacity rather than guaranteeing survival. Third, disease and human evolution studies infer variant trends and shared ancestry across groups, but only as inferences. Fourth, the one calculation, Hardy-Weinberg, where the recessive phenotype frequency is q squared, p plus q equals one, and heterozygotes are two p q. And fifth, the big theme, more data strengthens inference but never removes uncertainty, so always state both the strength and the limits. On any big-data question, give the power the scale provides, then the limits that remain. See you next lesson."
-      }
+        "text": "Let's lock it in. Five things to take away. First, GenBank, the EMBL database and DDBJ share submitted DNA sequences every day, and bioinformatics tools like BLAST search them. Second, Hardy Weinberg lets you model a population, with affected individuals as q squared, p plus q equal to one, and carriers as two p q, which for cystic fibrosis is about one in twenty five. Third, every model rests on assumptions, so its predictions are estimates. Fourth, sequence databases are excellent for identifying and comparing variants, but they're not a random sample of people, so they can't give you prevalence directly. And fifth, population data revealed the Tasmanian devil's bottlenecks and low diversity, and it now guides breeding to keep what diversity is left. So on any data question, state what the scale lets you see, then the bias or assumption that limits it."
+      },
+      "durationInFrames": 1773
     }
   ]
 }

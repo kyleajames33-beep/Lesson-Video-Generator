@@ -1,6 +1,7 @@
 import {spring, interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
 import {ASSETS, type AssetName} from '../../assets';
 import {KenBurns} from '../../animations/MotionPrimitives';
+import {AssetImg} from './AssetImg';
 
 type Props = {name: string; delay?: number};
 
@@ -20,7 +21,7 @@ export const SceneAssetImage = ({name, delay = 26}: Props) => {
 	return (
 		<div className="scene-asset-image-wrap" style={{transform: `scale(${scale})`, opacity}}>
 			<KenBurns delay={delay}>
-				<img src={src} alt="" className="scene-asset-image" />
+				<AssetImg src={src} alt="" className="scene-asset-image" />
 			</KenBurns>
 		</div>
 	);

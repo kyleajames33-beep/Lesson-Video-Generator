@@ -3,7 +3,7 @@
 // Pattern: docs/design-canvas-reference/scenes.jsx SceneTitle.
 // Big topic, module context, one drawn accent. Confident and spacious.
 
-import {Img, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import type {LessonData, TitleScene} from '../lesson/types';
 import {ASSETS, type AssetName} from '../assets';
 import {FadeUp} from '../animations/FadeUp';
@@ -14,6 +14,7 @@ import {SlideChrome} from './shared/SlideChrome';
 import {Eyebrow} from './shared/Eyebrow';
 import {TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
+import {AssetImg} from './shared/AssetImg';
 
 type TitleSlideProps = {
 	lesson: LessonData;
@@ -43,7 +44,9 @@ export const TitleSlide = ({lesson, scene, sceneIndex, totalScenes}: TitleSlideP
 					transform: 'translateY(-48%)',
 				}}
 			>
-				<Eyebrow color={theme.accent2}>{lesson.lesson} · {lesson.subject} · {lesson.yearLevel}</Eyebrow>
+				<Eyebrow color={theme.accent2}>
+					{lesson.syllabusNeutral ? `HSC · ${lesson.subject}` : `${lesson.lesson} · ${lesson.subject} · ${lesson.yearLevel}`}
+				</Eyebrow>
 
 				<div
 					style={{
@@ -126,7 +129,7 @@ const TitleHero = ({src}: {src: string}) => {
 				pointerEvents: 'none',
 			}}
 		>
-			<Img
+			<AssetImg
 				src={src}
 				alt=""
 				style={{
@@ -134,7 +137,7 @@ const TitleHero = ({src}: {src: string}) => {
 					maxHeight: '100%',
 					objectFit: 'contain',
 					transform: `scale(${scale}) translateY(${driftY}px)`,
-					filter: 'drop-shadow(0 24px 48px rgba(0,0,0,0.42))',
+					filter: TOK.imageShadow,
 					willChange: 'transform',
 				}}
 			/>

@@ -2,24 +2,31 @@
   "title": "Biodiversity Change Caused by Genetic Techniques",
   "subtitle": "Why one technique can help and harm life's variety at once",
   "subject": "Biology",
+  "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 6",
   "lesson": "Lesson 11",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
-  "syllabusModule": "Module 6 — Genetic Change",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
+  "syllabusModule": "Module 6 Genetic Change (2017) + Biodiversity and Biotechnology (2025)",
   "syllabusDotPoints": [
-    "evaluate the effect on biodiversity of using biotechnology in agriculture"
+    "evaluate the effect on biodiversity of using biotechnology in agriculture",
+    "evaluating the changes to the Earth’s biodiversity due to genetic techniques",
+    "Explain the importance of genetic diversity in a species, species diversity and ecosystem diversity for ecosystem health, and the continuity of life in a changing environment",
+    "Explain impacts of monoculture, pesticide use, land clearing and habitat loss on the health of ecosystems",
+    "Evaluate the release of a genetically modified organism into the wild and predict the impacts on natural populations"
   ],
   "moduleLessonCount": 19,
   "nesaOutcomes": [
     "BIO12-13",
+    "BI-12-03",
+    "BI-12-04",
     "BIO11/12-4",
     "BIO11/12-5",
     "BIO11/12-7"
   ],
   "inquiryQuestion": "Does artificial manipulation of DNA have the potential to change populations forever?",
-  "lessonIntent": "Students can evaluate the biodiversity effects of biotechnology separately at the genetic, species and ecosystem levels using balanced, conditional language.",
-  "examSkill": "Evaluate a biotechnology's biodiversity effect by naming the level affected and stating whether diversity is increased, maintained or reduced.",
+  "lessonIntent": "Students can evaluate the biodiversity effects of biotechnology at the genetic, species and ecosystem levels, explain monoculture risk with the Cavendish banana, and predict the impacts of releasing a GMO into the wild.",
+  "examSkill": "Evaluate a biotechnology's biodiversity effect by naming the level affected, stating the direction of change, and predicting how a released GMO could affect natural populations.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -27,26 +34,26 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, how genetic techniques change biodiversity. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, how genetic techniques change biodiversity. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 105,
-      "caption": "Biodiversity Change Caused by Genetic Techniques (Year 12 Biology, Module 6, Lesson 11)"
+      "caption": "Biodiversity Change Caused by Genetic Techniques"
     },
     {
       "id": "hook",
       "type": "hook",
       "heading": "Can biotechnology reverse extinction?",
-      "body": "By 2018 only two northern white rhinos were left, both female. The only path to offspring runs through banked cells.",
+      "body": "In 2018 the last male northern white rhino died, leaving two females. Any future calf depends on stored eggs, frozen sperm and a surrogate.",
       "callout": "The same toolkit can rescue a species or quietly narrow its diversity.",
       "image": "bioM6L11FrozenZooRhino",
-      "durationInFrames": 870,
+      "durationInFrames": 1860,
       "caption": "The northern white rhino case frames biotechnology's double-edged effect on biodiversity.",
       "voiceover": {
-        "text": "By 2018, the northern white rhinoceros was functionally extinct in the wild, with only two females left alive, Najin and Fatu. The San Diego Zoo's Frozen Zoo, running since 1976, holds banked cells from more than ten thousand species. In 2021, Hildebrandt and colleagues described the only realistic path to new rhino offspring, making synthetic gametes from those banked skin cells. So here's the tension for today. The very same genetic techniques that might rescue a species can also, in farming, quietly narrow the variety of life. By the end you'll be able to judge those effects properly, at three different levels."
+        "text": "In twenty eighteen, a rhino named Sudan died in Kenya. He was the last male northern white rhinoceros, which left just two animals of that subspecies alive, both female, Najin and her daughter Fatu. With no males left, the only path to a new calf now runs through technology, eggs collected from the females, sperm frozen years earlier, and an embryo carried by a surrogate from the closely related southern white rhino. Cell banks like the San Diego Frozen Zoo, which has stored living cells since the nineteen seventies, now hold samples from more than a thousand species for exactly this kind of rescue. So here's the tension for today. The very same genetic techniques that might rescue a species can also, in farming, quietly narrow the variety of life. By the end you'll be able to judge those effects properly, at three different levels."
       }
     },
     {
@@ -55,24 +62,46 @@
       "heading": "Biodiversity lives at three levels",
       "body": "Biodiversity is not just a species count. You have to check genetic, species and ecosystem diversity separately.",
       "bullets": [
-        {"text": "Genetic level: the variety of alleles within a population or species."},
-        {"text": "Species level: the variety of species present in a habitat."},
-        {"text": "Ecosystem level: the variety of habitats, communities and interactions."}
+        {
+          "text": "Genetic level: the variety of alleles within a population or species."
+        },
+        {
+          "text": "Species level: the variety of species present in a habitat."
+        },
+        {
+          "text": "Ecosystem level: the variety of habitats, communities and interactions."
+        }
       ],
-      "secondary": "A technique can help one level while harming another, which is exactly why a single yes or no answer is too simple.",
+      "secondary": "Each level matters for ecosystem health. Genetic diversity lets a species adapt to a changing environment, and species and ecosystem diversity keep food webs stable. A technique can help one level while harming another.",
       "callout": "Always ask which level, then ask increased, maintained, or reduced.",
-      "durationInFrames": 990,
+      "durationInFrames": 1786,
       "caption": "Biodiversity operates at genetic, species and ecosystem levels, judged separately.",
       "voiceover": {
-        "text": "First, a framework that stops you giving shallow answers. Biodiversity is not just the number of species in an area, it actually works at three levels, and you have to look at each one. The genetic level is the variety of alleles within a population, the raw variation a species has to draw on. The species level is the variety of different species sharing a habitat. And the ecosystem level is the variety of habitats, communities and the interactions between them. The reason this matters is that a single technique can push these in opposite directions, helping at one level while harming another. So instead of asking is this good or bad, you ask, which level is affected, and is diversity being increased, maintained, or reduced."
+        "text": "First, a framework that stops you giving shallow answers. Biodiversity is not just the number of species in an area, it works at three levels, and you have to look at each one. The genetic level is the variety of alleles within a population, the raw variation a species needs to adapt when the environment changes. The species level is the variety of different species sharing a habitat. And the ecosystem level is the variety of habitats, communities and the interactions between them. All three feed into ecosystem health and the continuity of life. The reason this framework matters is that a single technique can push these levels in opposite directions, helping one while harming another. So instead of asking is this good or bad, you ask, which level is affected, and is diversity being increased, maintained, or reduced."
       },
       "diagram": {
         "type": "table",
-        "headers": ["Level", "What varies", "Question to ask"],
+        "headers": [
+          "Level",
+          "What varies",
+          "Question to ask"
+        ],
         "rows": [
-          ["Genetic", "Alleles within a species", "More or fewer alleles?"],
-          ["Species", "Species in a habitat", "Species supported or lost?"],
-          ["Ecosystem", "Habitats and interactions", "More stable or altered?"]
+          [
+            "Genetic",
+            "Alleles within a species",
+            "More or fewer alleles?"
+          ],
+          [
+            "Species",
+            "Species in a habitat",
+            "Species supported or lost?"
+          ],
+          [
+            "Ecosystem",
+            "Habitats and interactions",
+            "More stable or altered?"
+          ]
         ]
       }
     },
@@ -81,16 +110,24 @@
       "type": "definition",
       "heading": "The words you need",
       "bullets": [
-        {"text": "Biodiversity: the variety of life at genetic, species and ecosystem levels."},
-        {"text": "Genetic diversity: variation in alleles within a population or species."},
-        {"text": "Monoculture: large-scale growing of one genetically similar crop type."},
-        {"text": "Conservation genetics: using genetic tools to manage and protect populations."}
+        {
+          "text": "Biodiversity: the variety of life at genetic, species and ecosystem levels."
+        },
+        {
+          "text": "Genetic diversity: variation in alleles within a population or species."
+        },
+        {
+          "text": "Monoculture: large-scale growing of one genetically similar crop type."
+        },
+        {
+          "text": "Conservation genetics: using genetic tools to manage and protect populations."
+        }
       ],
       "callout": "Monoculture narrows variation; conservation genetics tries to protect it.",
-      "durationInFrames": 870,
+      "durationInFrames": 1339,
       "caption": "Biodiversity, genetic diversity, monoculture, conservation genetics.",
       "voiceover": {
-        "text": "Let's pin down four terms. Biodiversity is the variety of life, measured at those genetic, species and ecosystem levels. Genetic diversity, more narrowly, is the variation in alleles within a population or species, and it's the one most people forget. Monoculture is the large-scale growing of a single genetically similar crop type, prized for efficiency but thin on variation. And conservation genetics is the use of genetic information and tools to help manage and protect populations, for example spotting inbreeding before it becomes fatal. Keep monoculture and conservation genetics in mind, because they're the negative and the positive faces of this topic."
+        "text": "Let's pin down four terms. Biodiversity is the variety of life, measured at those genetic, species and ecosystem levels. Genetic diversity, more narrowly, is the variation in alleles within a population or species, and it's the one most people forget. Monoculture is the large scale growing of a single genetically similar crop type, prized for efficiency but thin on variation. And conservation genetics is the use of genetic information and tools to help manage and protect populations, for example spotting inbreeding before it becomes fatal. Keep monoculture and conservation genetics in mind, because they're the negative and the positive faces of this topic."
       }
     },
     {
@@ -99,16 +136,22 @@
       "heading": "How biotech can reduce biodiversity",
       "body": "When a few successful varieties dominate, genetic diversity drops and the whole crop becomes fragile.",
       "bullets": [
-        {"text": "Reliance on a few elite varieties lowers genetic diversity in the crop."},
-        {"text": "Low variation means low resilience to a new disease or climate shift."},
-        {"text": "Effects can spill over to non-target species and interactions."}
+        {
+          "text": "Reliance on a few elite varieties lowers genetic diversity in the crop."
+        },
+        {
+          "text": "Low variation means low resilience to a new disease or climate shift."
+        },
+        {
+          "text": "Cavendish bananas are clones, so Panama disease can threaten every plant."
+        }
       ],
-      "secondary": "A crop built on one dominant genotype is efficient until a disease finds it, then the missing variation becomes a resilience problem, not a strength.",
+      "secondary": "Gros Michel bananas were largely wiped out by an earlier strain of Panama disease last century. The newer strain, Tropical Race 4, was found in north Queensland in 2015.",
       "callout": "High productivity is not the same thing as high biodiversity.",
-      "durationInFrames": 960,
-      "caption": "Uniformity from a few dominant genotypes lowers genetic diversity and resilience.",
+      "durationInFrames": 1761,
+      "caption": "Monoculture lowers genetic diversity and resilience, as Panama disease in Cavendish bananas shows.",
       "voiceover": {
-        "text": "Now the negative side. The clearest way biotechnology can reduce biodiversity is by pushing uniformity. If farmers everywhere plant the same few high-performing varieties, the genetic diversity inside that crop falls, because rare alleles simply stop being grown. And low variation means low resilience. A crop built on one dominant genotype looks brilliantly efficient right up until a new disease or a climate shift comes along, and then there's no genetic backup to fall back on. The same uniformity can ripple outwards too, affecting non-target species and the ecological interactions around the field. This is the big exam point, raising productivity is not the same as raising biodiversity, and a strong answer never confuses the two."
+        "text": "Now the negative side. The clearest way biotechnology can reduce biodiversity is by pushing uniformity, the monoculture problem. If farmers everywhere plant the same few high performing varieties, the genetic diversity inside that crop falls, because rare alleles simply stop being grown. And low variation means low resilience. The textbook case is the banana. Almost every banana in Australian shops is a Cavendish, and because Cavendish plants are grown from cuttings, they're essentially clones. That's a problem, because a soil fungus causing Panama disease has already wiped out an earlier variety, Gros Michel, and a newer strain called Tropical Race four was detected in north Queensland in twenty fifteen. With no genetic variation, there's no resistant plant to fall back on. So the big exam point is that raising productivity is not the same as raising biodiversity."
       },
       "diagram": {
         "type": "beforeAfter",
@@ -125,16 +168,72 @@
       "heading": "How biotech can support biodiversity",
       "body": "Genetic tools also work for conservation, finding at-risk populations and guiding breeding.",
       "bullets": [
-        {"text": "Genetic analysis identifies low-diversity or at-risk populations."},
-        {"text": "Breeding management can reduce inbreeding and protect rare lines."},
-        {"text": "Better genetic data leads to better conservation decisions."}
+        {
+          "text": "Genetic analysis identifies low-diversity or at-risk populations."
+        },
+        {
+          "text": "Breeding management can reduce inbreeding and protect rare lines."
+        },
+        {
+          "text": "Better genetic data leads to better conservation decisions."
+        }
       ],
       "secondary": "Tools like the banked rhino cells preserve alleles that would otherwise vanish, even though any living population they restore would still start out small.",
       "callout": "The same technology that narrows a crop can rescue a wild population.",
-      "durationInFrames": 870,
+      "durationInFrames": 1525,
       "caption": "Conservation genetics identifies at-risk populations and guides breeding to protect diversity.",
       "voiceover": {
         "text": "But biotechnology is not only a threat to biodiversity, and a balanced answer says so. Conservation genetics uses the very same kind of tools for protection. Genetic analysis can identify populations that are at risk or already low in diversity, which is information you simply cannot get by eye. Breeding programs can then use that data to reduce inbreeding and protect rare genetic lines. And better genetic data feeds into better conservation decisions overall. Think back to the rhino, those banked cells preserve alleles that would otherwise be gone forever. The honest caveat is that any living population restored from a handful of individuals still starts out with very low diversity, so even the rescue has a cost."
+      }
+    },
+    {
+      "id": "concept-gmo-release",
+      "type": "concept",
+      "heading": "Predicting the impact of a GMO released into the wild",
+      "body": "Once a genetically modified organism can breed outside the farm, its transgene can enter natural populations.",
+      "bullets": [
+        {
+          "text": "Gene flow: pollen or offspring can carry a transgene into wild relatives."
+        },
+        {
+          "text": "If the transgene gives an advantage in the wild, its frequency can rise."
+        },
+        {
+          "text": "Non-target species and food webs can be affected, an ecosystem-level change."
+        }
+      ],
+      "secondary": "Some GMOs are designed to prevent this. AquAdvantage salmon, a fast-growing GM fish, are raised as sterile females in land-based tanks so they cannot breed with wild salmon.",
+      "callout": "Can it breed out there, and would the new gene help it? Those two answers drive the prediction.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Prediction question",
+          "If yes, then"
+        ],
+        "rows": [
+          [
+            "Can it breed with wild relatives?",
+            "Gene flow into wild gene pools"
+          ],
+          [
+            "Does the transgene help it survive in the wild?",
+            "Transgene frequency may rise"
+          ],
+          [
+            "Does it affect other species?",
+            "Food webs and communities altered"
+          ],
+          [
+            "Is it sterile or contained?",
+            "Spread is much less likely"
+          ]
+        ]
+      },
+      "durationInFrames": 2084,
+      "caption": "A released GMO affects wild populations through gene flow, selection and effects on other species.",
+      "recapSeed": "Predict GMO release by asking about gene flow, advantage and containment.",
+      "voiceover": {
+        "text": "Now a question you need to be able to predict, what happens if a genetically modified organism is released into the wild. The first mechanism is gene flow. If the GMO can breed with wild relatives, pollen or offspring can carry the transgene into a natural gene pool. The second is selection. If that transgene gives an advantage out in the wild, say resistance to a pest, natural selection can push its frequency up over generations. If it gives no advantage, it may stay rare or disappear. The third is effects on other species, like insects that feed on the plant or predators that depend on them, which is an ecosystem level change. That's why some GMOs are designed not to escape. AquAdvantage salmon, a fast growing modified fish, are raised as sterile females in tanks on land, so they can't breed with wild salmon. So to predict an impact, ask, can it breed out there, and would the new gene help it."
       }
     },
     {
@@ -150,7 +249,7 @@
         "Decision rule: identify the level (genetic, species, ecosystem) before stating the direction of change.",
         "Answer: (a) genetic, reduced; (b) species, maintained; (c) ecosystem, altered."
       ],
-      "durationInFrames": 1140,
+      "durationInFrames": 1699,
       "caption": "(a) genetic, reduced; (b) species, maintained; (c) ecosystem, altered.",
       "voiceover": {
         "text": "Let's practise the skill that earns marks, naming the level. Part a, every farm in a region switches to one elite wheat genotype. That attacks variation within the species, so it's the genetic level, and diversity is reduced. Part b, conservation genetics rescues a threatened frog species from extinction. That changes the number of species present, so it's the species level, and diversity is maintained, arguably increased compared with letting it die out. Part c, that same wheat switch changes which insects and birds live around the fields. That's about communities and interactions, so it's the ecosystem level, and the honest word is altered, because it could go either way. Notice the method, name the level first, then state the direction. That structure alone lifts a vague answer into a precise one."
@@ -164,10 +263,10 @@
       "secondary": "Trap 2: assuming more productivity means more biodiversity. A bumper monoculture can have less genetic diversity. Trap 3: giving an absolute verdict. Real outcomes are usually mixed, so use conditional language and name the level.",
       "mistakeTag": "Where biodiversity marks vanish",
       "callout": "Three levels, not one; productivity is not diversity; judge case by case.",
-      "durationInFrames": 1050,
+      "durationInFrames": 1525,
       "caption": "Biodiversity is three levels; productivity is not diversity; verdicts must be conditional.",
       "voiceover": {
-        "text": "Three traps that cost marks every year. Trap one, thinking biodiversity just means the number of different species in an area. It does not, it also includes the genetic variety within a species and the variety of whole ecosystems, and losing genetic diversity can doom a species even while the species count still looks fine. Trap two, assuming that more productivity means more biodiversity. A record-breaking monoculture can actually carry less genetic diversity than the patchwork it replaced. Trap three, the slogan answer, biotechnology always helps, or biotechnology always harms. Real outcomes are mixed, so the strongest responses use conditional language, may increase or may reduce, and they always name which level of biodiversity they're talking about."
+        "text": "Three traps that cost marks every year. Trap one, thinking biodiversity just means the number of different species in an area. It does not, it also includes the genetic variety within a species and the variety of whole ecosystems, and losing genetic diversity can doom a species even while the species count still looks fine. Trap two, assuming that more productivity means more biodiversity. A record breaking monoculture can actually carry less genetic diversity than the patchwork it replaced. Trap three, the slogan answer, biotechnology always helps, or biotechnology always harms. Real outcomes are mixed, so the strongest responses use conditional language, may increase or may reduce, and they always name which level of biodiversity they're talking about."
       }
     },
     {
@@ -183,10 +282,10 @@
         "A better answer names the level: genetic diversity is reduced even though yield rose.",
         "Answer: the crop thriving raises productivity, not biodiversity; genetic diversity is reduced."
       ],
-      "durationInFrames": 1020,
+      "durationInFrames": 1660,
       "caption": "A thriving high-yield monoculture raises productivity but reduces genetic diversity.",
       "voiceover": {
-        "text": "Quick check. A new genetically modified crop doubles yield, and within ten years it has replaced most of the traditional local varieties. A student writes, this clearly increases biodiversity because the crop is thriving. What's wrong with that, and what's the better evaluation? Pause and reason it through. Right, here's the problem. The student has fallen straight into the productivity trap, treating a healthy, high-yielding crop as if that meant more biodiversity. But replacing many traditional varieties with one dominant variety reduces genetic diversity in the crop, and that lower variation reduces resilience to future disease or climate change. The better answer names the level explicitly, genetic diversity has been reduced, even though yield went up. Thriving is about productivity, not about variety."
+        "text": "Quick check. A new genetically modified crop doubles yield, and within ten years it has replaced most of the traditional local varieties. A student writes, this clearly increases biodiversity because the crop is thriving. What's wrong with that, and what's the better evaluation? Pause and reason it through. Right, here's the problem. The student has fallen straight into the productivity trap, treating a healthy, high yielding crop as if that meant more biodiversity. But replacing many traditional varieties with one dominant variety reduces genetic diversity in the crop, and that lower variation reduces resilience to future disease or climate change. The better answer names the level explicitly, genetic diversity has been reduced, even though yield went up. Thriving is about productivity, not about variety."
       }
     },
     {
@@ -195,16 +294,16 @@
       "heading": "Lock it in",
       "points": [
         "Biodiversity has three levels: genetic, species and ecosystem.",
-        "Biotech can reduce diversity through uniformity and monoculture.",
+        "Monoculture lowers genetic diversity and resilience, as Cavendish bananas show.",
         "Biotech can support diversity through conservation genetics.",
-        "Productivity is not biodiversity; never equate the two.",
+        "A released GMO can spread by gene flow if the transgene helps it survive.",
         "Strong evaluations name the level and use conditional language."
       ],
       "finalPrompt": "Evaluating a biotech effect? Name the level, then say increased, maintained or reduced.",
-      "durationInFrames": 930,
-      "caption": "Five takeaways: three levels, monoculture risk, conservation benefit, productivity trap, conditional language.",
+      "durationInFrames": 1451,
+      "caption": "Five takeaways: three levels, monoculture risk, conservation benefit, GMO release, conditional language.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, biodiversity operates at three levels, genetic, species and ecosystem, and you check each one. Second, biotechnology can reduce diversity by pushing uniformity, the monoculture problem. Third, it can also support diversity through conservation genetics. Fourth, productivity is never the same as biodiversity, so don't equate a big yield with more variety. And fifth, the strongest evaluations name the level affected and use conditional language. Whenever you evaluate a biotech effect, just name the level, then say increased, maintained, or reduced. See you next lesson."
+        "text": "Let's lock it in. Five things to take away. First, biodiversity operates at three levels, genetic, species and ecosystem, and you check each one. Second, biotechnology can reduce diversity by pushing uniformity, and the clonal Cavendish banana facing Panama disease is the example to quote. Third, it can also support diversity through conservation genetics. Fourth, a GMO released into the wild can spread its transgene by gene flow, and it's most likely to spread if that gene helps it survive. And fifth, the strongest evaluations name the level affected and use conditional language. Whenever you evaluate a biotech effect, name the level, then say increased, maintained, or reduced. See you next lesson."
       }
     }
   ]

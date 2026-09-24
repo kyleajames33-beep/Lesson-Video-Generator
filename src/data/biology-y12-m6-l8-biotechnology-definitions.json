@@ -1,24 +1,29 @@
 {
   "title": "Biotechnology",
-  "subtitle": "Definitions, scope and historical trajectory",
+  "subtitle": "Biological knowledge, genetic engineering and bioinformatics, and how Australia uses them",
   "subject": "Biology",
+  "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 6",
   "lesson": "Lesson 8",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
-  "syllabusModule": "Module 6 — Genetic Change",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
+  "syllabusModule": "Module 6 Genetic Change (2017) + Biotechnology (2025)",
   "syllabusDotPoints": [
-    "investigate the uses and applications of biotechnology (past, present and future) (ACSBL087)"
+    "investigate the uses and applications of biotechnology (past, present and future), including: researching future directions of the use of biotechnology (ACSBL087)",
+    "Discuss the roles of biological knowledge, genetic engineering and bioinformatics techniques used in biotechnology",
+    "Use examples to explain how biotechnology is currently used in Australian research, agriculture, biodiversity conservation and health",
+    "Assess the role of data and modelling in developing and using biotechnology"
   ],
   "moduleLessonCount": 19,
   "nesaOutcomes": [
     "BIO12-13",
     "BIO11/12-5",
-    "BIO11/12-7"
+    "BIO11/12-7",
+    "BI-12-04"
   ],
   "inquiryQuestion": "How do genetic techniques affect Earth's biodiversity?",
-  "lessonIntent": "Students can define biotechnology broadly and classify examples as traditional or modern across agriculture, medicine and industry.",
-  "examSkill": "Classify a biotechnology example as traditional or modern and place it in the correct sector.",
+  "lessonIntent": "Students can define biotechnology broadly, explain the separate roles of biological knowledge, genetic engineering and bioinformatics using recombinant insulin, and give current Australian examples in research, agriculture, conservation and health.",
+  "examSkill": "Identify the role that biological knowledge, genetic engineering and bioinformatics each play in a biotechnology, and support it with a specific Australian example.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -26,178 +31,273 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, what biotechnology really means. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, what biotechnology is, and the three tools it runs on. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 105,
-      "caption": "Biotechnology — Definitions, Scope and Historical Trajectory (Year 12 Biology, Module 6, Lesson 8)"
+      "caption": "Biotechnology"
     },
     {
       "id": "hook",
       "type": "hook",
-      "heading": "9,000 years before we understood it",
-      "body": "Humans used yeast for bread and beer for millennia before anyone knew a living organism was doing the work.",
-      "callout": "Has biotechnology changed, or just our understanding of what we were doing?",
+      "heading": "From cow pancreas to bacteria",
+      "body": "For sixty years, people with diabetes injected insulin extracted from cattle and pig pancreases. In 1982, bacteria started making human insulin instead.",
+      "callout": "What had to be known, built and computed before a bacterium could make a human hormone?",
       "image": "bioM6L8FermentationScope",
-      "durationInFrames": 690,
-      "caption": "Fermentation is ancient biotechnology, unified with modern tools by definition.",
+      "caption": "Insulin moved from animal extraction in the 1920s to recombinant human insulin made by microbes in 1982.",
       "voiceover": {
-        "text": "In eighteen fifty seven, Louis Pasteur proved something people had relied on for thousands of years without understanding it. He showed that baker's yeast converts glucose into ethanol and carbon dioxide, the first scientific proof that fermentation is driven by a living organism, not a simple chemical reaction. But here's the striking part. Humans had been using yeast for bread and beer for around nine thousand years before Pasteur explained the mechanism. And today, that very same organism runs in three hundred thousand litre industrial fermenters, making bioethanol, beer, bread, and even pharmaceuticals. So the question that frames this lesson is genuinely interesting, has biotechnology actually changed over time, or has our understanding of what we were doing all along changed?"
-      }
+        "text": "In the early nineteen twenties, researchers in Toronto showed that insulin extracted from a pancreas could keep people with type one diabetes alive. For the next sixty years, that insulin came from the pancreases of cattle and pigs, collected from abattoirs by the tonne. Then in nineteen eighty two, something remarkable was approved. Human insulin, made not by a human, but by bacteria carrying the human insulin gene, grown in huge steel fermentation tanks. Today most insulin is made by engineered microbes. So what had to happen first? Scientists had to understand insulin, they had to move a human gene into a microbe, and they had to handle a lot of sequence data. Those three things, biological knowledge, genetic engineering and bioinformatics, are what modern biotechnology runs on, and that's today's lesson."
+      },
+      "durationInFrames": 1629
     },
     {
       "id": "concept-definition",
       "type": "concept",
-      "heading": "Using biological systems for human purposes",
-      "body": "Biotechnology is the deliberate use of living organisms, cells or biological processes to make products or solve problems.",
+      "heading": "Using living systems for human purposes",
+      "body": "Biotechnology is the use of living organisms, cells or biological processes to make products or solve problems.",
       "bullets": [
-        {"text": "The definition must be broad enough to include both old and new methods."},
-        {"text": "Fermentation and selective breeding are biotechnology, just like gene editing."},
-        {"text": "The field is unified by using biological systems, not by looking modern."}
+        {
+          "text": "Past: fermentation and selective breeding used organisms without understanding DNA."
+        },
+        {
+          "text": "Present: genetic engineering and sequencing act on DNA directly."
+        },
+        {
+          "text": "Future: gene editing, gene therapy and computer designed proteins."
+        }
       ],
-      "secondary": "Insulin production is a strong bridge example: traditional medicine used animal insulin, while modern biotechnology uses engineered microorganisms to make human insulin.",
-      "callout": "Defined by biology used, not by how futuristic it looks.",
-      "durationInFrames": 1020,
-      "caption": "Biotechnology uses biological systems for human purposes, old and new.",
+      "secondary": "The field is defined by using biological systems, not by how modern it looks. Brewing and gene editing both count.",
+      "callout": "Defined by the biology used, not by how futuristic it looks.",
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "Traditional biotechnology",
+        "afterLabel": "Modern biotechnology",
+        "beforeContent": "Fermentation and selective breeding, using metabolism and inheritance without changing DNA.",
+        "afterContent": "Genetic engineering, sequencing and bioinformatics, acting on DNA directly.",
+        "delay": 18
+      },
+      "caption": "Biotechnology uses living systems for human purposes, from fermentation to gene editing.",
       "voiceover": {
-        "text": "Let's get the definition right, because a narrow definition is where students lose marks. Biotechnology is the deliberate use of living organisms, cells, or biological processes to make products or to solve problems, in agriculture, medicine, and industry. The key is that this definition has to be broad enough to cover both the old and the new. Selective breeding, fermentation, and microbial processing are all biotechnology, just as much as recombinant DNA, gene editing, and advanced genetic screening. The whole field is unified by one thing, the use of biological knowledge and systems, not by whether the technology happens to look modern. A great bridge example is insulin. Traditional medicine relied on animal-derived insulin, whereas modern biotechnology uses engineered microorganisms to produce human insulin more precisely and consistently. Same field, same goal, different level of control."
-      }
+        "text": "So let's get the definition right, because a narrow one costs marks. Biotechnology is the use of living organisms, cells or biological processes to make products or to solve problems. That definition is deliberately broad. In the past, humans used fermentation for bread and beer, and selective breeding for crops and livestock, without knowing anything about DNA, and those still count as biotechnology. In the present, genetic engineering and DNA sequencing let us act on DNA directly. And the future is already arriving, with gene editing, gene therapy and proteins designed on computers. What ties it all together is the use of biological systems, not how modern the technology looks. Now let's zoom in on the modern toolkit, because it rests on three distinct roles."
+      },
+      "durationInFrames": 1545
+    },
+    {
+      "id": "concept-three-roles",
+      "type": "concept",
+      "heading": "Three roles in modern biotechnology",
+      "body": "Modern biotechnology combines biological knowledge, genetic engineering and bioinformatics. Each does a different job.",
+      "bullets": [
+        {
+          "text": "Biological knowledge: understanding what a gene or protein does, and why it matters."
+        },
+        {
+          "text": "Genetic engineering: physically changing DNA, like inserting a gene into a microbe."
+        },
+        {
+          "text": "Bioinformatics: using computing to store, search and analyse sequence data."
+        }
+      ],
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Role",
+          "Its job in making insulin"
+        ],
+        "rows": [
+          [
+            "Biological knowledge",
+            "Insulin's structure, and that type 1 diabetes lacks it"
+          ],
+          [
+            "Genetic engineering",
+            "Insert the human insulin gene into bacteria or yeast"
+          ],
+          [
+            "Bioinformatics",
+            "Store, search and check the gene and protein sequences"
+          ]
+        ]
+      },
+      "callout": "Know it, change it, compute it.",
+      "caption": "Biological knowledge explains, genetic engineering changes DNA, bioinformatics handles the data.",
+      "voiceover": {
+        "text": "Here's the framework the newer syllabus wants you to discuss. Modern biotechnology combines three roles, and each one does a different job. First, biological knowledge. You have to understand what a gene or protein does before you can use it. For insulin, that meant knowing its structure, and knowing that people with type one diabetes can't make it. Second, genetic engineering, which physically changes DNA. For insulin, the human insulin gene was inserted into bacteria, and later yeast, so the microbes would make the human protein. Third, bioinformatics, the use of computing to store, search and analyse biological data. Gene and protein sequences are stored in databases, and software checks that the product matches the human sequence exactly. So a simple way to remember it is, know it, change it, compute it."
+      },
+      "durationInFrames": 1629
     },
     {
       "id": "definition",
       "type": "definition",
       "heading": "The words you need",
       "bullets": [
-        {"text": "Biotechnology: use of living organisms, cells or processes to make products or solve problems."},
-        {"text": "Traditional biotechnology: longstanding methods like fermentation, domestication and selective breeding."},
-        {"text": "Modern biotechnology: technologies involving genetic analysis or manipulation, like recombinant DNA and gene editing."},
-        {"text": "Fermentation: using microorganisms to make products like bread, yoghurt, cheese and alcohol."},
-        {"text": "Recombinant DNA: DNA formed by combining genetic material from different sources."},
-        {"text": "Precision breeding: targeted use of genetic knowledge to influence inheritance outcomes."}
+        {
+          "text": "Biotechnology: using living organisms, cells or biological processes to make products or solve problems."
+        },
+        {
+          "text": "Genetic engineering: directly altering an organism's DNA, often by adding a gene."
+        },
+        {
+          "text": "Recombinant DNA: DNA formed by joining genetic material from different sources."
+        },
+        {
+          "text": "Bioinformatics: using computing to store, compare and analyse biological data."
+        },
+        {
+          "text": "Model: a simplified representation, often computer based, used to make predictions."
+        }
       ],
-      "callout": "Traditional and modern are both biotechnology.",
-      "durationInFrames": 1140,
-      "caption": "Biotechnology, traditional, modern, fermentation, recombinant DNA, precision breeding.",
+      "callout": "Genetic engineering is one tool within biotechnology, not the whole field.",
+      "caption": "Biotechnology, genetic engineering, recombinant DNA, bioinformatics, model.",
       "voiceover": {
-        "text": "Let's pin down the vocabulary, six terms. Biotechnology is the use of living organisms, cells, or processes to make products or solve problems. Traditional biotechnology refers to the longstanding methods, fermentation, domestication, and selective breeding, that humans used for millennia. Modern biotechnology refers to contemporary technologies that involve genetic analysis or manipulation, such as recombinant DNA, cloning, and gene editing. Fermentation specifically is the use of microorganisms to produce things like bread, yoghurt, cheese, and alcohol. Recombinant DNA is DNA formed by combining genetic material from different sources. And precision breeding is the targeted use of genetic knowledge or technology to influence inheritance outcomes more directly than traditional selection alone. The big idea binding all of these, both traditional and modern approaches genuinely count as biotechnology."
-      }
-    },
-    {
-      "id": "concept-traditional",
-      "type": "concept",
-      "heading": "Traditional biotechnology came first",
-      "body": "Traditional biotechnology existed long before DNA was understood, and it is still biotechnology.",
-      "bullets": [
-        {"text": "Fermentation: yeast in bread and alcohol, bacteria in yoghurt and cheese."},
-        {"text": "Selective breeding: choosing organisms with desired traits to reproduce."},
-        {"text": "Domestication: long-term shaping of species for food, fibre and labour."}
-      ],
-      "secondary": "Traditional biotechnology uses organism metabolism and inheritance without DNA editing. The syllabus asks about past, present and future, so the old methods count.",
-      "callout": "Low-tech is still biotech.",
-      "durationInFrames": 990,
-      "caption": "Fermentation, selective breeding and domestication are traditional biotechnology.",
-      "voiceover": {
-        "text": "Let's look at what biotechnology looked like before molecular tools existed, because traditional methods are genuinely part of the field. Fermentation is the obvious one, yeast used in bread and alcohol production, and bacteria used in yoghurt and cheese, all exploiting an organism's metabolism without any DNA editing at all. Selective breeding is another, deliberately choosing organisms with desired traits to reproduce, common in crops and livestock, and it changes populations over generations using ordinary inheritance. And domestication, the long-term shaping of species for food, fibre, and labour, is biological systems deliberately directed toward human goals over thousands of years. The point to hold on to is that traditional biotechnology is still biotechnology, even without modern molecular tools. And it matters because the syllabus explicitly asks you to consider past, present, and future uses, so the old methods absolutely count."
+        "text": "Let's pin down the vocabulary. Biotechnology is using living organisms, cells or biological processes to make products or solve problems. Genetic engineering is directly altering an organism's DNA, very often by adding a gene from somewhere else. Recombinant DNA is the DNA that results, formed by joining genetic material from different sources, like a human gene joined into a bacterial plasmid. Bioinformatics is the use of computing to store, compare and analyse biological data. And a model is a simplified representation, often run on a computer, that we use to make predictions. Notice how they nest. Genetic engineering is one tool inside biotechnology, not the whole field."
       },
-      "diagram": {
-        "type": "beforeAfter",
-        "beforeLabel": "Traditional biotechnology",
-        "afterLabel": "Modern biotechnology",
-        "beforeContent": "Fermentation, selective breeding and domestication, using metabolism and inheritance without DNA editing.",
-        "afterContent": "Recombinant DNA, cloning, profiling and gene editing, adding direct genetic analysis and manipulation.",
-        "delay": 18
-      }
+      "durationInFrames": 1329
     },
     {
-      "id": "concept-modern",
+      "id": "concept-data-modelling",
       "type": "concept",
-      "heading": "Modern biotechnology extends control",
-      "body": "Modern biotechnology adds direct genetic analysis and manipulation, increasing precision while staying in the same field.",
+      "heading": "Data and modelling drive the field",
+      "body": "Bioinformatics turns huge amounts of sequence data into predictions that guide what gets built.",
       "bullets": [
-        {"text": "Methods: recombinant DNA, cloning, DNA profiling, genetic markers, gene editing."},
-        {"text": "Agriculture: marker-assisted selection and engineered crop traits."},
-        {"text": "Medicine and industry: biopharmaceuticals like insulin, plus enzymes in manufacturing."}
+        {
+          "text": "Databases let researchers find a gene's sequence instead of working it out from scratch."
+        },
+        {
+          "text": "Computer models now predict a protein's 3D shape from its amino acid sequence."
+        },
+        {
+          "text": "Models also forecast outcomes, like how a GM crop's genes might spread."
+        }
       ],
-      "secondary": "Modern methods increase precision, speed or scope, but they remain part of the same broad field. They have not replaced traditional biotechnology.",
-      "callout": "Same field, more precision.",
-      "durationInFrames": 990,
-      "caption": "Modern biotechnology adds genetic manipulation across sectors.",
+      "secondary": "Models are only as good as their data and assumptions, so predictions still need testing in the lab and the field.",
+      "callout": "Models save time, but they still need testing.",
+      "caption": "Databases and computer models guide biotechnology, but predictions must still be tested.",
       "voiceover": {
-        "text": "Now let's see how modern biotechnology extends the field. Modern methods analyse, transfer, copy, or alter DNA far more directly than traditional ones. The examples to know include recombinant DNA technology, cloning, DNA profiling, the use of genetic markers, and gene editing. Across the sectors, in agriculture you get marker-assisted selection and engineered crop traits, in medicine you get biopharmaceutical production like recombinant insulin, plus genetic testing, and in industry you get microorganisms and enzymes used in manufacturing. These technologies increase precision, speed, or scope. But here's the key framing, they remain part of the same broad field of biotechnology, and they have not replaced traditional methods, we still ferment bread and selectively breed livestock. Modern biotechnology is an extension of older biological problem-solving, not a separate thing entirely."
-      }
+        "text": "Now, the role of data and modelling has exploded, so it's worth its own scene. Shared databases mean a researcher can look up a gene's sequence in seconds, instead of working it out from scratch. Computer models have gone even further. Programs can now predict the three dimensional shape of a protein from its amino acid sequence alone, which used to take years of lab work for each protein. That helps scientists design drugs and engineered proteins much faster. Models are also used to forecast outcomes, like how genes from a genetically modified crop might spread into nearby plants. But here's the balanced view. A model is only as good as its data and its assumptions, so its predictions still have to be tested in the lab and in the field. Models save time, they don't replace evidence."
+      },
+      "durationInFrames": 1701
+    },
+    {
+      "id": "concept-australia",
+      "type": "concept",
+      "heading": "Biotechnology in Australia today",
+      "body": "Australian examples show all three roles at work across research, agriculture, conservation and health.",
+      "bullets": [
+        {
+          "text": "Research and health: the HPV vaccine grew from University of Queensland research."
+        },
+        {
+          "text": "Agriculture: most Australian cotton carries Bt genes, cutting insecticide spraying."
+        },
+        {
+          "text": "Conservation: the koala genome, sequenced in 2018, guides disease and breeding decisions."
+        }
+      ],
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Area",
+          "Example",
+          "Main role"
+        ],
+        "rows": [
+          [
+            "Research and health",
+            "HPV vaccine (Gardasil)",
+            "Genetic engineering"
+          ],
+          [
+            "Agriculture",
+            "Bt cotton",
+            "Genetic engineering"
+          ],
+          [
+            "Conservation",
+            "Koala genome",
+            "Bioinformatics"
+          ]
+        ]
+      },
+      "callout": "Name the example, then name the role it relies on.",
+      "caption": "HPV vaccine, Bt cotton and the koala genome show biotechnology across Australian sectors.",
+      "voiceover": {
+        "text": "Let's make it Australian, because the syllabus asks for current examples. In research and health, Ian Frazer and Jian Zhou at the University of Queensland developed the technology behind the HPV vaccine, which protects against the virus that causes most cervical cancers. The vaccine is made by engineered yeast that produce a harmless viral protein. In agriculture, most Australian cotton is genetically modified to carry genes from the bacterium Bacillus thuringiensis, so the plants make their own insecticide, and farmers spray far less. And in conservation, an Australian led team sequenced the koala genome in twenty eighteen. That data is used to understand koala diseases like chlamydia and a koala retrovirus, and to help manage genetic diversity in wild populations. So in an exam, name the example, then name the role it relies on."
+      },
+      "durationInFrames": 1653
     },
     {
       "id": "worked-example",
       "type": "workedExample",
-      "heading": "Traditional or modern?",
-      "question": "Classify each: (a) brewing beer using yeast; (b) selectively breeding sheep for finer wool; (c) inserting a human gene into bacteria to make insulin; (d) using enzymes from microbes in an industrial process.",
-      "coachNote": "Ask: does it use metabolism or simple inheritance (traditional), or direct genetic manipulation (modern)?",
+      "heading": "Identify the roles",
+      "question": "For Bt cotton, identify how biological knowledge, genetic engineering and bioinformatics each contributed.",
+      "coachNote": "Match each step to one role: understanding, changing DNA, or handling data.",
       "steps": [
-        "(a) Brewing with yeast uses metabolism, so traditional biotechnology.",
-        "(b) Selecting sheep over generations uses inheritance, so traditional biotechnology.",
-        "(c) Inserting a gene into bacteria is direct genetic manipulation, so modern biotechnology.",
-        "(d) Industrial enzymes from microbes is a modern industrial biotechnology application.",
-        "Answer: (a) traditional, (b) traditional, (c) modern, (d) modern."
+        "Biological knowledge: a soil bacterium makes Cry proteins that are toxic to certain caterpillars but not to people.",
+        "Genetic engineering: the Cry gene was inserted into the cotton genome, so the plant makes the protein itself.",
+        "Bioinformatics: gene sequences were stored and compared to design and check the inserted gene.",
+        "Data and modelling also guide resistance management, predicting how fast pests could adapt.",
+        "Answer: know the toxin, insert its gene, analyse the sequence data ✓"
       ],
-      "durationInFrames": 1050,
-      "caption": "(a) traditional, (b) traditional, (c) modern, (d) modern.",
+      "caption": "Bt cotton: knowledge of the toxin, genetic engineering to insert it, bioinformatics to handle the sequences.",
       "voiceover": {
-        "text": "Let's classify four examples as traditional or modern. The test is, does it use ordinary metabolism or inheritance, which is traditional, or does it use direct genetic manipulation, which is modern. Part a, brewing beer using yeast. That's the yeast's metabolism doing the work, no DNA editing, so traditional biotechnology. Part b, selectively breeding sheep for finer wool. That's choosing traits over generations using inheritance, so traditional. Part c, inserting a human gene into bacteria to make insulin. That's directly manipulating the genetic material, recombinant DNA, so this one is modern biotechnology. Part d, using enzymes from microbes in an industrial process, that's a modern industrial application of biological systems. So the answers are traditional, traditional, modern, modern, and the deciding question each time is whether genes are being directly manipulated."
-      }
+        "text": "Let's apply the three roles to one technology, Bt cotton. The method is to match each step to one role, understanding, changing DNA, or handling data. Biological knowledge came first. Scientists knew that a soil bacterium, Bacillus thuringiensis, makes Cry proteins that are toxic to certain caterpillars, but not to people or most other animals. Genetic engineering came next. The gene for a Cry protein was inserted into the cotton genome, so the plant makes the protein in its own leaves. And bioinformatics tied it together, because the gene sequences were stored and compared to design the inserted gene and check that it was correct. Data and modelling keep mattering after release too, because models predict how quickly pests could evolve resistance, which shapes how farmers plant the crop. So the answer in short is, know the toxin, insert its gene, analyse the sequence data."
+      },
+      "durationInFrames": 1785
     },
     {
       "id": "misconception",
       "type": "misconception",
-      "heading": "The big trap",
-      "body": "Trap 1: defining biotechnology as only modern gene editing or recombinant DNA. That excludes thousands of years of fermentation and breeding.",
-      "secondary": "Trap 2: assuming modern biotechnology has replaced traditional methods. We still ferment and selectively breed today. Trap 3: assuming a narrow definition is harmless. It distorts any later evaluation of biotechnology's history and impact.",
+      "heading": "Two traps",
+      "body": "Trap 1: defining biotechnology as only genetic engineering. Fermentation and selective breeding are biotechnology too, and genetic engineering is just one tool within it.",
+      "secondary": "Trap 2: treating bioinformatics as 'just computers'. It depends on biological knowledge to ask the right questions, and its predictions still have to be tested in living systems.",
       "mistakeTag": "Where biotechnology marks vanish",
-      "callout": "Define the whole field before judging it.",
-      "durationInFrames": 960,
-      "caption": "Biotechnology is not only gene editing; traditional methods still count.",
+      "callout": "Biotechnology is bigger than genetic engineering; bioinformatics is still biology.",
+      "caption": "Genetic engineering is one tool in biotechnology; bioinformatics still relies on biology and testing.",
       "voiceover": {
-        "text": "Three traps to avoid. Trap one, the big one, defining biotechnology as only modern gene editing or recombinant DNA. That definition wrongly excludes thousands of years of fermentation, selective breeding, and domestication, all of which are genuinely biotechnology. Trap two, assuming modern biotechnology has completely replaced traditional methods. It hasn't, we still ferment bread and beer and still selectively breed crops and livestock every single day. And trap three, the subtle one, assuming a narrow definition is harmless. It isn't, because if you define biotechnology too narrowly, you'll distort every later evaluation of its history, its biodiversity impact, and its social effects. So always define the whole field first, traditional and modern together, before you start judging any of it."
-      }
+        "text": "Two traps to avoid. Trap one, defining biotechnology as only genetic engineering. That's too narrow. Fermentation and selective breeding are biotechnology as well, and genetic engineering is just one tool inside the field. If your definition leaves out thousands of years of brewing and breeding, every later evaluation you write will be skewed. Trap two is newer, treating bioinformatics as if it were just computers. It isn't. Bioinformatics only works because biological knowledge tells it what questions to ask, like which gene to search for, or what a protein needs to do. And its predictions still have to be tested in real cells, plants and animals. So biotechnology is bigger than genetic engineering, and bioinformatics is still biology."
+      },
+      "durationInFrames": 1461
     },
     {
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "Why is insulin production a useful case study for showing the scope of biotechnology? Identify the sector and the traditional-to-modern shift.",
+      "question": "Using recombinant human insulin, explain why it shows the shift from past to present biotechnology, and name the role each step relies on.",
       "pausePrompt": "Pause and reason it through.",
       "answerSteps": [
-        "It clearly shows biotechnology in the medicine sector.",
-        "It demonstrates biological systems being used to make a medically important product.",
-        "Traditional medicine sourced insulin from animals, a longstanding biological method.",
-        "Modern biotechnology uses engineered microorganisms to make human insulin more precisely.",
-        "Answer: insulin bridges traditional and modern biotechnology, showing the field's full scope."
+        "Past: insulin was extracted from cattle and pig pancreases, using animals without changing DNA.",
+        "Present: the human insulin gene is inserted into bacteria or yeast, which is genetic engineering.",
+        "That relied on biological knowledge of insulin's structure and role in diabetes.",
+        "Bioinformatics stores and checks the gene and protein sequences.",
+        "Answer: it moved from using animals to engineering microbes, drawing on all three roles ✓"
       ],
-      "durationInFrames": 1050,
-      "caption": "Insulin bridges traditional animal sourcing and modern engineered production.",
+      "caption": "Insulin moved from animal extraction to engineered microbes, using knowledge, engineering and bioinformatics.",
       "voiceover": {
-        "text": "Quick check. Why is insulin production a useful case study for showing the scope of biotechnology? Identify the sector and the traditional-to-modern shift. Pause and reason it through. Right. First, the sector, insulin clearly shows biotechnology being used in medicine. Second, it demonstrates the core idea, using biological systems to make a medically important product. Now the shift, which is what makes it such a strong example. Traditional medicine sourced insulin from animals, by extracting it from animal pancreases, a longstanding biological method. Modern biotechnology, by contrast, uses engineered microorganisms, bacteria carrying the human insulin gene, to produce human insulin far more precisely and consistently. So insulin bridges traditional and modern biotechnology in one story, which is exactly why it illustrates the full scope of the field so well."
-      }
+        "text": "Quick check. Using recombinant human insulin, explain why it shows the shift from past to present biotechnology, and name the role each step relies on. Pause and reason it through. Right. In the past, insulin was extracted from the pancreases of cattle and pigs, so it used animals as a source, without changing any DNA. In the present, the human insulin gene is inserted into bacteria or yeast, which then make human insulin, and that's genetic engineering. But that step depended on biological knowledge first, understanding insulin's structure and its role in diabetes. And bioinformatics is what stores and checks the gene and protein sequences, so the product matches human insulin exactly. So insulin moved from using animals to engineering microbes, and it draws on all three roles along the way."
+      },
+      "durationInFrames": 1617
     },
     {
       "id": "summary",
       "type": "summary",
       "heading": "Lock it in",
       "points": [
-        "Biotechnology is using living systems and biological processes for human purposes.",
-        "It spans traditional methods like fermentation and selective breeding.",
-        "And modern molecular tools like recombinant DNA, cloning and gene editing.",
-        "It is used across agriculture, medicine and industry.",
-        "Define the whole field, past to present, before evaluating it."
+        "Biotechnology is using living systems for human purposes, past, present and future.",
+        "Modern biotechnology combines biological knowledge, genetic engineering and bioinformatics.",
+        "Data and modelling speed up design, but predictions still need testing.",
+        "Australian examples: HPV vaccine, Bt cotton and the koala genome.",
+        "Genetic engineering is one tool within biotechnology, not the whole field."
       ],
-      "finalPrompt": "Classifying a biotechnology? Ask: metabolism and inheritance, or direct genetic manipulation?",
-      "durationInFrames": 1020,
-      "caption": "Five takeaways: definition, traditional, modern, three sectors, define before judging.",
+      "finalPrompt": "For any biotechnology, ask: what knowledge did it need, what DNA did it change, and what data did it use?",
+      "caption": "Five takeaways: the definition, three roles, data and modelling, Australian examples, the big trap.",
       "voiceover": {
-        "text": "Let's lock it in. Five takeaways. First, biotechnology is the use of living systems and biological processes for human purposes. Second, it spans traditional methods, like fermentation, domestication, and selective breeding. Third, it also spans modern molecular tools, like recombinant DNA, cloning, and gene editing. Fourth, it's used right across three sectors, agriculture, medicine, and industry. And fifth, the headline, define the whole field, from past to present, before you evaluate any of it, because a narrow definition distorts everything that follows. So when you classify a biotechnology, ask whether it uses ordinary metabolism and inheritance, or direct genetic manipulation. See you next lesson."
-      }
+        "text": "Let's lock it in. Five takeaways. First, biotechnology is the use of living systems for human purposes, and it covers the past, the present and the future. Second, modern biotechnology combines three roles, biological knowledge, genetic engineering and bioinformatics. Third, data and modelling speed up design enormously, but their predictions still need testing. Fourth, you've got three Australian examples ready to use, the HPV vaccine, Bt cotton and the koala genome. And fifth, genetic engineering is one tool within biotechnology, not the whole field. So for any biotechnology, ask what knowledge it needed, what DNA it changed, and what data it used."
+      },
+      "durationInFrames": 1269
     }
   ]
 }
