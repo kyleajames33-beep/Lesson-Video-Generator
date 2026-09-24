@@ -1,0 +1,342 @@
+{
+  "title": "Digestion",
+  "subtitle": "Mechanical, physical and chemical digestion, absorption and elimination in the human digestive system",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Use a variety of sources to describe how the processes of mechanical, physical and chemical digestion, absorption and elimination in the human digestive system enable cellular functions",
+    "Describe the organ systems required for nutrient, water, gas and waste management in animals",
+    "trace the digestion of foods in a mammalian digestive system, including: physical digestion; chemical digestion; absorption of nutrients, minerals and water; elimination of solid waste"
+  ],
+  "moduleLessonCount": 6,
+  "nesaOutcomes": [
+    "BI-11-02",
+    "BI-11WS-04",
+    "BI-11WS-05",
+    "BI-11WS-07"
+  ],
+  "inquiryQuestion": "What is the difference in nutrient and gas requirements between autotrophs and heterotrophs?",
+  "lessonIntent": "Students can distinguish mechanical, physical and chemical digestion, trace a carbohydrate, protein and fat from mouth to bloodstream, and explain how absorption and elimination supply cells with what they need.",
+  "examSkill": "Trace a named food through the digestive system, naming the organ, the process, the enzyme and the product at each step, and link the absorbed products to a cellular function.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, digestion, and how a meal becomes molecules your cells can use. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Digestion"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A window into the stomach",
+      "body": "In 1822, a musket wound left Alexis St. Martin with a permanent opening into his stomach. Doctor William Beaumont used it to watch digestion happen.",
+      "callout": "Is digestion just grinding, or is it chemistry?",
+      "image": "bioY11M2L4BeaumontVial",
+      "durationInFrames": 1953,
+      "caption": "Beaumont showed gastric juice digests food even in a warm glass vial outside the body.",
+      "voiceover": {
+        "text": "In 1822, a young fur trader named Alexis Saint Martin was accidentally shot in the side with a musket at close range. He survived, but the wound healed with a permanent opening leading straight into his stomach. His doctor, an army surgeon called William Beaumont, realised this was a chance nobody had ever had. Over the next several years he lowered pieces of food on silk threads into the stomach and pulled them out to see how far they'd broken down. Then he tried something clever. He drew out some of the stomach juice, put it in a glass vial with food, and kept it warm, and the food still broke down, completely outside the body. So is digestion just grinding food up, or is it chemistry? The answer is both, and today we'll trace a meal from your mouth to your cells."
+      }
+    },
+    {
+      "id": "concept-three-types",
+      "type": "concept",
+      "heading": "Three kinds of digestion",
+      "body": "Digestion breaks large, insoluble food into small, soluble molecules that can be absorbed.",
+      "bullets": [
+        {
+          "text": "Mechanical: physical force breaks food into smaller pieces, like chewing and stomach churning."
+        },
+        {
+          "text": "Physical: food changes form without bonds breaking, like bile emulsifying fat into droplets."
+        },
+        {
+          "text": "Chemical: enzymes hydrolyse large molecules into small ones by breaking bonds."
+        }
+      ],
+      "secondary": "Mechanical and physical digestion don't make new molecules. Their job is to increase surface area so enzymes can work faster.",
+      "callout": "Mechanical and physical make pieces; only chemical makes new molecules.",
+      "durationInFrames": 1953,
+      "caption": "Mechanical and physical digestion raise surface area; chemical digestion breaks bonds.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Type",
+          "What happens",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Mechanical",
+            "Force breaks food into pieces",
+            "Teeth chewing, stomach churning"
+          ],
+          [
+            "Physical",
+            "Form changes, no bonds broken",
+            "Bile emulsifies fat"
+          ],
+          [
+            "Chemical",
+            "Enzymes break bonds",
+            "Amylase: starch to maltose"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "So what does digestion actually have to achieve? Food arrives as large, insoluble molecules, and your cells can only use small, soluble ones that can cross the gut wall. Mechanical digestion is the brute force part, where your teeth cut and grind, and the muscular stomach wall churns everything into a paste. Physical digestion changes the form of the food without breaking any chemical bonds, and the key example is bile, which breaks fat into tiny droplets. You'll find some textbooks lump mechanical and physical together, so if a question uses both words, give an example of each. Then chemical digestion is where enzymes actually break bonds, splitting big molecules into small ones by hydrolysis. Here's the big idea linking them. Mechanical and physical digestion don't create any new molecules, but they massively increase surface area, so the enzymes can work much faster."
+      }
+    },
+    {
+      "id": "concept-chemical",
+      "type": "concept",
+      "heading": "Chemical digestion, organ by organ",
+      "body": "Each enzyme works on one type of food molecule, in a particular part of the gut, at its own optimum pH.",
+      "bullets": [
+        {
+          "text": "Mouth: salivary amylase starts breaking starch into maltose."
+        },
+        {
+          "text": "Stomach: pepsin breaks proteins into polypeptides, helped by hydrochloric acid."
+        },
+        {
+          "text": "Small intestine: pancreatic enzymes and enzymes on the villi finish the job."
+        }
+      ],
+      "secondary": "Pancreatic juice also neutralises stomach acid, because intestinal enzymes work best at a slightly alkaline pH.",
+      "callout": "Carbohydrates to sugars, proteins to amino acids, fats to fatty acids and glycerol.",
+      "durationInFrames": 1830,
+      "caption": "Amylase, pepsin, trypsin, lipase and brush-border enzymes each digest one food type.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Where",
+          "Enzyme",
+          "Substrate → product"
+        ],
+        "rows": [
+          [
+            "Mouth",
+            "Salivary amylase",
+            "Starch → maltose"
+          ],
+          [
+            "Stomach",
+            "Pepsin",
+            "Protein → polypeptides"
+          ],
+          [
+            "Small intestine",
+            "Pancreatic amylase",
+            "Starch → maltose"
+          ],
+          [
+            "Small intestine",
+            "Trypsin",
+            "Polypeptides → peptides"
+          ],
+          [
+            "Small intestine",
+            "Lipase",
+            "Fats → fatty acids + glycerol"
+          ],
+          [
+            "Small intestine wall",
+            "Maltase, peptidases",
+            "→ glucose, amino acids"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "Let's follow the enzymes down the gut. In the mouth, salivary amylase gets started on starch, breaking it into the sugar maltose. In the stomach, hydrochloric acid gives a very acidic environment, which kills many microbes and suits the enzyme pepsin, which breaks proteins into shorter polypeptides. The real finishing work happens in the small intestine. The pancreas releases more amylase for starch, trypsin to keep cutting proteins, and lipase to split fats into fatty acids and glycerol. Its juice also contains hydrogencarbonate, which neutralises the stomach acid, because these enzymes work best at a slightly alkaline pH. Finally, enzymes built into the membranes of the cells lining the villi, like maltase and peptidases, finish the last step, so what's left is glucose, amino acids, fatty acids and glycerol, all small enough to absorb."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Hydrolysis: breaking a large molecule into smaller ones by adding water."
+        },
+        {
+          "text": "Emulsification: breaking fat into tiny droplets to increase surface area."
+        },
+        {
+          "text": "Absorption: movement of digested molecules from the gut into the blood or lymph."
+        },
+        {
+          "text": "Elimination: removing undigested food from the body as faeces."
+        }
+      ],
+      "callout": "Emulsification is physical; hydrolysis is chemical.",
+      "durationInFrames": 1871,
+      "caption": "Hydrolysis, emulsification, absorption, elimination.",
+      "voiceover": {
+        "text": "Let's get four terms exactly right. Hydrolysis is the reaction every digestive enzyme carries out, breaking a large molecule into smaller ones by adding water across the bond. Emulsification is what bile does to fat, breaking big globules into tiny droplets so there's far more surface area for lipase to attack. That's a physical change, not a chemical one, and it's the example to use for physical digestion. Absorption is the movement of digested molecules out of the gut and into the blood or the lymph, which mostly happens across the villi of the small intestine. And elimination is the removal of undigested material from the body as faeces, through the anus. You'll also see it called egestion. Notice that elimination deals with food that never entered your cells at all, which matters for our misconception later."
+      }
+    },
+    {
+      "id": "concept-absorption",
+      "type": "concept",
+      "heading": "Absorption and elimination",
+      "body": "The small intestine absorbs most nutrients; the large intestine reclaims water and ions before faeces are eliminated.",
+      "bullets": [
+        {
+          "text": "Villi and microvilli give the small intestine an enormous surface area."
+        },
+        {
+          "text": "Glucose and amino acids enter capillaries and travel to the liver."
+        },
+        {
+          "text": "Fatty acids and glycerol are rebuilt into fats and enter lacteals."
+        },
+        {
+          "text": "The large intestine absorbs remaining water and ions, then faeces leave the body."
+        }
+      ],
+      "secondary": "Absorption is what enables cellular functions: glucose fuels respiration, amino acids build proteins, and fatty acids build membranes.",
+      "callout": "Digestion makes molecules small; absorption gets them to the cells.",
+      "durationInFrames": 2062,
+      "caption": "Villi absorb glucose and amino acids into blood and fats into lacteals; the colon reclaims water.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "mouth",
+            "label": "Mouth: chewing, amylase"
+          },
+          {
+            "id": "stomach",
+            "label": "Stomach: churning, pepsin, acid"
+          },
+          {
+            "id": "small",
+            "label": "Small intestine: digestion finished, nutrients absorbed"
+          },
+          {
+            "id": "large",
+            "label": "Large intestine: water and ions absorbed"
+          },
+          {
+            "id": "rectum",
+            "label": "Rectum and anus: faeces eliminated"
+          }
+        ],
+        "edges": [
+          {
+            "from": "mouth",
+            "to": "stomach"
+          },
+          {
+            "from": "stomach",
+            "to": "small"
+          },
+          {
+            "from": "small",
+            "to": "large"
+          },
+          {
+            "from": "large",
+            "to": "rectum"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "Now, digestion is pointless unless the products get into the body, and that's absorption. The small intestine is lined with millions of finger shaped villi, and the cells on each villus carry their own tiny microvilli, which together give an enormous surface area. Glucose and amino acids cross into the blood capillaries inside each villus, by facilitated diffusion and active transport, and head straight to the liver. Fatty acids and glycerol take a different route, because they're rebuilt into fats and pass into a lymph vessel called a lacteal. By the time the leftovers reach the large intestine, most of the water has already gone, and the large intestine reclaims most of the rest along with ions like sodium. What remains is faeces, stored in the rectum and eliminated through the anus. And here's the link to cells. Glucose fuels respiration, amino acids build proteins, and fatty acids help build membranes."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Tracing a cheese sandwich",
+      "question": "Trace the starch in the bread and the fat in the cheese of a cheese sandwich, from the mouth to the body's cells. Name the type of digestion, the enzyme and the product at each stage.",
+      "coachNote": "For each nutrient: where, what process, which enzyme, what product, then where it's absorbed.",
+      "steps": [
+        "Mouth: teeth break the bread up (mechanical); salivary amylase starts starch → maltose (chemical).",
+        "Stomach: churning mixes the food (mechanical); fat is not yet digested.",
+        "Small intestine: bile emulsifies the fat (physical); lipase breaks it into fatty acids + glycerol (chemical).",
+        "Small intestine: pancreatic amylase and maltase finish starch → maltose → glucose.",
+        "Answer: glucose is absorbed into blood capillaries, fatty acids and glycerol into lacteals, then carried to cells ✓"
+      ],
+      "durationInFrames": 1939,
+      "caption": "Starch: amylase and maltase to glucose, into blood. Fat: bile then lipase, into lacteals.",
+      "voiceover": {
+        "text": "Let's trace a cheese sandwich, following the starch in the bread and the fat in the cheese. In the mouth, your teeth break the bread into small pieces, which is mechanical digestion, and salivary amylase starts turning starch into maltose, which is chemical. In the stomach, the muscular walls churn everything together, but notice that the fat hasn't been digested yet. The action really starts in the small intestine. Bile from the liver emulsifies the fat into tiny droplets, which is physical digestion, and then lipase from the pancreas breaks those fats into fatty acids and glycerol. Meanwhile, pancreatic amylase finishes breaking starch into maltose, and maltase on the villi splits maltose into glucose. Finally, absorption. Glucose goes into the blood capillaries of the villi, while fatty acids and glycerol end up in the lacteals, and both eventually reach the body's cells."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: 'Bile is an enzyme that digests fat.' Bile contains no digestive enzymes. It emulsifies fat, which is physical digestion, so that lipase can do the chemical digestion.",
+      "secondary": "Trap 2: 'Passing faeces is excretion.' Excretion removes wastes made by metabolism inside cells, like urea and carbon dioxide. Faeces are mostly food that never entered cells, so removing them is elimination.",
+      "mistakeTag": "Where digestion marks vanish",
+      "callout": "Bile emulsifies, lipase digests; faeces are eliminated, urea is excreted.",
+      "durationInFrames": 2021,
+      "caption": "Bile is not an enzyme; elimination is not excretion.",
+      "voiceover": {
+        "text": "Two traps that cost marks every year. Trap one is calling bile an enzyme. It isn't. Bile is made in the liver and stored in the gall bladder, and it contains bile salts that emulsify fat, but no digestive enzymes at all. So bile does the physical digestion, splitting fat into droplets, and then lipase does the chemical digestion. If you write that bile breaks fat into fatty acids, you've just lost the mark. Trap two is mixing up elimination and excretion. Excretion is the removal of wastes that were made by metabolism inside your cells, like urea from the liver or carbon dioxide from respiration. Faeces are mostly made of food that was never absorbed, plus bacteria, so it never took part in cell metabolism. That makes removing faeces elimination, not excretion. The question to ask yourself is whether the substance was ever made inside a cell."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A gallstone blocks the duct that carries bile into the small intestine. Predict what happens to the digestion of fat, and what you would expect to see in the person's faeces.",
+      "pausePrompt": "Pause and follow the fat without bile.",
+      "answerSteps": [
+        "Without bile, fat is not emulsified into small droplets.",
+        "Lipase has far less surface area to act on, so fat digestion is much slower.",
+        "Less fat is broken into fatty acids and glycerol, so less is absorbed.",
+        "Answer: undigested fat passes through, so the faeces become pale, greasy and fatty ✓"
+      ],
+      "durationInFrames": 1939,
+      "caption": "No bile: no emulsification, less surface area for lipase, fatty faeces.",
+      "voiceover": {
+        "text": "Quick check. Suppose a gallstone blocks the duct that carries bile into the small intestine. Predict what happens to the digestion of fat, and what you'd expect to see in the person's faeces. Pause and follow the fat without any bile. OK, here's the chain. With no bile reaching the small intestine, the fat isn't emulsified, so it stays in large globules. Lipase can still be released by the pancreas, but it can only work on the surface of each globule, so it has far less surface area to act on and fat digestion slows right down. That means less fat is broken into fatty acids and glycerol, and less gets absorbed across the villi. The undigested fat keeps travelling through the gut, so the faeces end up pale, greasy and fatty. That's a neat real example of why physical digestion matters."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Mechanical and physical digestion increase surface area; chemical digestion breaks bonds.",
+        "Amylase: starch to maltose. Pepsin and trypsin: proteins to peptides. Lipase: fats to fatty acids and glycerol.",
+        "Bile emulsifies fat but is not an enzyme.",
+        "Villi absorb glucose and amino acids into blood, and fats into lacteals.",
+        "The large intestine reclaims water; faeces are eliminated, not excreted."
+      ],
+      "finalPrompt": "For any food: which organ, which type of digestion, which enzyme, which product, and where is it absorbed?",
+      "durationInFrames": 1598,
+      "caption": "Five takeaways: three digestion types, the enzymes, bile, absorption, elimination.",
+      "voiceover": {
+        "text": "Let's lock it in. First, mechanical and physical digestion break food into smaller pieces and droplets to increase surface area, while chemical digestion uses enzymes to actually break bonds. Second, know your enzymes, with amylase turning starch into maltose, pepsin and trypsin breaking proteins into peptides, and lipase splitting fats into fatty acids and glycerol. Third, bile emulsifies fat, but it is not an enzyme. Fourth, the villi of the small intestine absorb glucose and amino acids into the blood, and fats into the lacteals, so those molecules can reach every cell. And fifth, the large intestine reclaims water and ions, and what's left is eliminated as faeces, which is elimination, not excretion. See you next lesson."
+      }
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "title": "Blood and Circulation",
+  "subtitle": "Blood components, the structure of arteries, capillaries and veins, and how blood changes as it moves around the body",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 5",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Explain the relationship between the structure of plasma, red blood cells, white blood cells and platelets and their function within blood",
+    "Use models to demonstrate the relationship between the structure and function of arteries, capillaries and veins",
+    "Account for changes in the concentration of gases, nutrients and wastes in blood as it travels through the lungs, liver, small intestine, large intestine, kidneys and muscles organs in mammals",
+    "compare the changes in the composition of the transport medium as it moves around an organism",
+    "investigate transport systems in animals and plants by comparing structures and components using physical and digital models, including but not limited to: (ACSBL032, ACSBL058, ACSBL059, ACSBL060) microscopic samples of blood, the cardiovascular system and plant vascular systems"
+  ],
+  "moduleLessonCount": 6,
+  "nesaOutcomes": [
+    "BI-11-02",
+    "BI-11WS-04",
+    "BI-11WS-05",
+    "BI-11WS-06"
+  ],
+  "inquiryQuestion": "How does the composition of the transport medium change as it moves around an organism?",
+  "lessonIntent": "Students can relate the structure of each blood component and each vessel type to its function, and account for changes in gases, nutrients and wastes as blood passes through the lungs, liver, small intestine, large intestine, kidneys and muscles.",
+  "examSkill": "Compare blood entering and leaving a named organ, stating which substances rise or fall and the organ process that causes each change.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, blood, the vessels that carry it, and how it changes around the body. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Blood and Circulation"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same blood, different fluid",
+      "body": "At rest, your heart pumps about 5 litres of blood a minute, roughly your whole blood volume. Yet samples taken from two vessels at the same moment can be very different.",
+      "callout": "What does each organ add to the blood, and what does it take away?",
+      "image": "bioY11M2L5BloodCircuit",
+      "durationInFrames": 1994,
+      "caption": "Blood circulates about once a minute at rest, but every organ changes its composition.",
+      "voiceover": {
+        "text": "Here's something that surprises people. At rest, your heart pumps about five litres of blood every minute, which is roughly all the blood in your body, so your blood makes something like a full lap every minute or so. You'd think that means it's all basically the same. But take two samples at exactly the same moment, one from the vein leaving your intestines after lunch and one from the vein leaving your kidneys, and you've got two noticeably different fluids. One is loaded with glucose and amino acids, while the other has had most of its urea stripped out. Every organ the blood passes through adds some things and removes others. So today we'll look at what blood is made of, how the three types of vessel are built for their jobs, and then track exactly how blood changes as it moves around the body."
+      }
+    },
+    {
+      "id": "concept-components",
+      "type": "concept",
+      "heading": "What blood is made of",
+      "body": "Blood is a liquid plasma carrying three kinds of cells or cell fragments, each built for its job.",
+      "bullets": [
+        {
+          "text": "Plasma: mostly water, carrying dissolved nutrients, wastes, hormones, ions and heat."
+        },
+        {
+          "text": "Red blood cells: biconcave, no nucleus, packed with haemoglobin to carry oxygen."
+        },
+        {
+          "text": "White blood cells: have a nucleus; they engulf pathogens or make antibodies."
+        },
+        {
+          "text": "Platelets: cell fragments that trigger clotting at a wound."
+        }
+      ],
+      "secondary": "Plasma is about 55% of blood by volume. Most carbon dioxide travels in plasma as hydrogencarbonate ions, not attached to red blood cells.",
+      "callout": "Every component's structure explains its job.",
+      "durationInFrames": 1857,
+      "caption": "Plasma transports; red cells carry oxygen; white cells defend; platelets clot.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Component",
+          "Key structure",
+          "Function"
+        ],
+        "rows": [
+          [
+            "Plasma",
+            "About 90% water",
+            "Carries dissolved substances and heat"
+          ],
+          [
+            "Red blood cell",
+            "Biconcave, no nucleus, haemoglobin",
+            "Carries oxygen"
+          ],
+          [
+            "White blood cell",
+            "Nucleus, can change shape",
+            "Defends against pathogens"
+          ],
+          [
+            "Platelet",
+            "Small cell fragment",
+            "Starts blood clotting"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "So what is blood actually made of? About fifty five percent is plasma, a pale yellow liquid that's around ninety percent water. Plasma is the transport medium itself, carrying glucose, amino acids, urea, hormones, ions and heat, and it even carries most of the carbon dioxide, as hydrogencarbonate ions. Red blood cells are the ones to know well. They're biconcave discs, which gives them a large surface area, and in mammals they have no nucleus, which leaves more room for haemoglobin, the protein that binds oxygen. White blood cells are larger, fewer and they do have a nucleus. Some can change shape to squeeze out of vessels and engulf pathogens, while others make antibodies. And platelets aren't whole cells at all, just small cell fragments that stick together and trigger clotting when a vessel is damaged."
+      }
+    },
+    {
+      "id": "concept-vessels",
+      "type": "concept",
+      "heading": "Arteries, capillaries and veins",
+      "body": "Each type of vessel is built for the pressure it carries and the job it does.",
+      "bullets": [
+        {
+          "text": "Arteries: thick, elastic, muscular walls to withstand high pressure from the heart."
+        },
+        {
+          "text": "Capillaries: walls one cell thick, so substances exchange with the tissues."
+        },
+        {
+          "text": "Veins: thin walls, a wide lumen and valves to return low pressure blood to the heart."
+        }
+      ],
+      "secondary": "Model it with tubing: a thick-walled tube springs back after squeezing like an artery, a thin one collapses like a vein, and a one-way flap shows how valves stop backflow.",
+      "callout": "Arteries handle pressure, capillaries exchange, veins return.",
+      "durationInFrames": 1953,
+      "caption": "Arteries: thick and elastic. Capillaries: one cell thick. Veins: thin walls and valves.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Artery",
+          "Capillary",
+          "Vein"
+        ],
+        "rows": [
+          [
+            "Direction",
+            "Away from heart",
+            "Through tissues",
+            "Towards heart"
+          ],
+          [
+            "Wall",
+            "Thick, elastic, muscular",
+            "One cell thick",
+            "Thin, less muscle"
+          ],
+          [
+            "Lumen",
+            "Narrow",
+            "Just fits a red cell",
+            "Wide"
+          ],
+          [
+            "Pressure",
+            "High, pulsing",
+            "Falling",
+            "Low"
+          ],
+          [
+            "Valves",
+            "No",
+            "No",
+            "Yes"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "Now the plumbing. Arteries carry blood away from the heart at high pressure, surging with every beat, so they have thick walls with elastic fibres and smooth muscle. The elastic stretches with each pulse and recoils between beats, which keeps the blood moving smoothly. Capillaries are where the real work happens. Their walls are just one cell thick, and they're so narrow that red blood cells pass through in single file, which gives a tiny diffusion distance for exchange with the tissues. By the time blood reaches the veins, most of that pressure is gone. So veins have thinner walls and a wide lumen, and they rely on valves to stop blood flowing backwards, helped by nearby skeletal muscles squeezing them. You can model this with tubing, where a thick tube springs back after you squeeze it, but a thin one just collapses."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Haemoglobin: the iron-containing protein in red blood cells that binds oxygen."
+        },
+        {
+          "text": "Hepatic portal vein: carries blood from the intestines straight to the liver."
+        },
+        {
+          "text": "Deamination: the liver removing the nitrogen group from excess amino acids."
+        },
+        {
+          "text": "Urea: the nitrogenous waste made by deamination, removed by the kidneys."
+        }
+      ],
+      "callout": "Urea is made in the liver but removed by the kidneys.",
+      "durationInFrames": 1884,
+      "caption": "Haemoglobin, hepatic portal vein, deamination, urea.",
+      "voiceover": {
+        "text": "Four terms you'll need to explain the changes in blood. Haemoglobin is the protein inside red blood cells that binds oxygen, and each molecule contains iron, which is where the oxygen actually attaches. The hepatic portal vein is a special vessel that carries blood straight from the intestines to the liver, rather than back to the heart, so the liver gets the first look at everything absorbed from a meal. Deamination is what the liver does with excess amino acids. The body can't store them, so the liver strips off the nitrogen containing group and turns it into urea. And urea is that nitrogenous waste, which travels in the plasma to the kidneys to be removed in urine. So here's the detail students often get wrong. Urea is made in the liver, but it's removed by the kidneys."
+      }
+    },
+    {
+      "id": "concept-changes",
+      "type": "concept",
+      "heading": "How blood changes, organ by organ",
+      "body": "Blood leaving every organ except the lungs has less oxygen and more carbon dioxide. The other changes depend on the organ's job.",
+      "bullets": [
+        {
+          "text": "Lungs: oxygen rises and carbon dioxide falls."
+        },
+        {
+          "text": "Small intestine: glucose and amino acids rise after a meal."
+        },
+        {
+          "text": "Liver: excess glucose stored as glycogen; urea rises."
+        },
+        {
+          "text": "Kidneys: urea falls; water and salts are adjusted."
+        }
+      ],
+      "secondary": "Muscles use glucose and oxygen and release carbon dioxide and heat. The large intestine absorbs water and ions into the blood.",
+      "callout": "Every organ uses oxygen; only the lungs put it back.",
+      "durationInFrames": 1871,
+      "caption": "Every organ uses O₂ and adds CO₂; each also adds or removes something specific.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Organ",
+          "Rises in blood leaving",
+          "Falls in blood leaving"
+        ],
+        "rows": [
+          [
+            "Lungs",
+            "Oxygen",
+            "Carbon dioxide"
+          ],
+          [
+            "Small intestine",
+            "Glucose, amino acids",
+            "Oxygen"
+          ],
+          [
+            "Large intestine",
+            "Water, ions",
+            "Oxygen"
+          ],
+          [
+            "Liver",
+            "Urea",
+            "Excess glucose, amino acids, oxygen"
+          ],
+          [
+            "Kidneys",
+            "Carbon dioxide",
+            "Urea, excess water and salts, oxygen"
+          ],
+          [
+            "Muscles",
+            "Carbon dioxide, heat",
+            "Oxygen, glucose"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      },
+      "voiceover": {
+        "text": "OK, let's tour the body. Start with one rule that saves you marks. Every organ uses oxygen for respiration and adds carbon dioxide, so blood leaving any organ has less oxygen and more carbon dioxide, except in the lungs, where it's the reverse. Now the specific changes. Blood leaving the small intestine after a meal is rich in glucose and amino acids, and it heads straight to the liver. The large intestine adds water and ions like sodium. The liver stores excess glucose as glycogen, deaminates spare amino acids, and so adds urea to the blood. The kidneys then remove urea, along with excess water and salts, which is why the renal vein has the lowest urea concentration in the body. And working muscles use up glucose and oxygen, releasing carbon dioxide and a lot of heat."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Into and out of the liver",
+      "question": "An hour after a meal high in carbohydrate and protein, blood is sampled from the hepatic portal vein (entering the liver) and the hepatic vein (leaving the liver). Compare glucose, amino acids, urea and oxygen in the two samples and account for each difference.",
+      "coachNote": "Direction first: portal vein = in, hepatic vein = out. Then link each change to a liver process.",
+      "steps": [
+        "Glucose: higher entering; the liver stores the excess as glycogen, so it falls.",
+        "Amino acids: higher entering; the liver deaminates the excess, so they fall.",
+        "Urea: higher leaving, because deamination turns the nitrogen into urea.",
+        "Oxygen: lower leaving, carbon dioxide higher, because liver cells respire.",
+        "Answer: leaving blood has less glucose, amino acids and oxygen, and more urea and carbon dioxide ✓"
+      ],
+      "durationInFrames": 2062,
+      "caption": "Leaving the liver: less glucose, amino acids and O₂; more urea and CO₂.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Substance",
+          "Hepatic portal vein (in)",
+          "Hepatic vein (out)"
+        ],
+        "rows": [
+          [
+            "Glucose",
+            "High",
+            "Lower"
+          ],
+          [
+            "Amino acids",
+            "High",
+            "Lower"
+          ],
+          [
+            "Urea",
+            "Low",
+            "Higher"
+          ],
+          [
+            "Oxygen",
+            "Moderate",
+            "Lower"
+          ]
+        ]
+      },
+      "voiceover": {
+        "text": "Let's work through the organ examiners love most. An hour after a meal high in carbohydrate and protein, we sample blood from the hepatic portal vein, which is entering the liver, and from the hepatic vein, which is leaving it. Always get the direction sorted first. Now glucose. Blood coming in straight from the intestine is loaded with it, and the liver stores the excess as glycogen, so glucose is lower in the blood leaving. Amino acids follow the same pattern, since the liver deaminates the excess, so there are fewer on the way out. And that deamination is exactly why urea goes up, because the nitrogen stripped off those amino acids becomes urea. Finally, liver cells are very active and respire constantly, so the leaving blood has less oxygen and more carbon dioxide. Notice every change is tied to a specific liver process, which is what account for really means."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: 'Arteries carry oxygenated blood and veins carry deoxygenated blood.' Arteries are defined by direction: away from the heart. The pulmonary artery carries deoxygenated blood to the lungs; the pulmonary vein carries oxygenated blood back.",
+      "secondary": "Trap 2: 'Blood leaving the kidneys has more oxygen because it has been cleaned.' The kidneys remove urea, but kidney cells respire, so blood leaving them has less oxygen and more carbon dioxide.",
+      "mistakeTag": "Where circulation marks vanish",
+      "callout": "Arteries go away from the heart, whatever they carry.",
+      "durationInFrames": 1898,
+      "caption": "Arteries and veins are defined by direction, not oxygen; only the lungs add oxygen.",
+      "voiceover": {
+        "text": "Two traps to watch for. Trap one is defining arteries and veins by oxygen. Lots of students say arteries carry oxygenated blood and veins carry deoxygenated blood, and it's true most of the time, but that's not the definition. Arteries carry blood away from the heart, and veins carry it towards the heart. The pulmonary artery is the exception that proves it, since it carries deoxygenated blood from the heart to the lungs, while the pulmonary vein brings oxygenated blood back. Trap two is thinking that blood leaving the kidneys is somehow fresher in every way because it's been cleaned. The kidneys do remove urea, but kidney cells are working hard and respiring, so the blood leaving them has less oxygen and more carbon dioxide, just like every other organ. The only organ that adds oxygen is the lungs."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "During a sprint, compare the blood entering a leg muscle in its artery with the blood leaving in its vein. Name four substances or properties that change and explain each.",
+      "pausePrompt": "Pause and think about what a working muscle cell is doing.",
+      "answerSteps": [
+        "Oxygen falls: muscle cells use it rapidly for aerobic respiration.",
+        "Glucose falls: it is the fuel being respired.",
+        "Carbon dioxide rises: it is a product of respiration.",
+        "Temperature rises: respiration releases a lot of energy as heat.",
+        "Answer: less oxygen and glucose, more carbon dioxide and heat, all from respiration ✓"
+      ],
+      "durationInFrames": 1912,
+      "caption": "Working muscle: O₂ and glucose fall; CO₂ and temperature rise.",
+      "voiceover": {
+        "text": "Quick check. During a sprint, compare the blood entering a leg muscle through its artery with the blood leaving through its vein. Name four things that change and explain each one. Pause and think about what a working muscle cell is actually doing. Right, a sprinting muscle is respiring as fast as it possibly can, and that one process explains almost everything. Oxygen falls, because the muscle cells are pulling it out of the blood for aerobic respiration. Glucose falls too, because it's the fuel being respired. Carbon dioxide rises, since it's a product of respiration, and it's carried away mostly as hydrogencarbonate in the plasma. And the blood leaving is warmer, because respiration releases a lot of energy as heat, which the blood then carries away to the skin. So link every change back to the organ's main job."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Plasma transports; red cells carry oxygen on haemoglobin; white cells defend; platelets clot.",
+        "Arteries: thick, elastic walls. Capillaries: one cell thick. Veins: thin walls and valves.",
+        "Every organ except the lungs lowers oxygen and raises carbon dioxide in the blood.",
+        "Gut adds nutrients; liver stores glucose and makes urea; kidneys remove urea.",
+        "Account for each change by naming the organ process that causes it."
+      ],
+      "finalPrompt": "For any organ: what does it use, what does it add, and what does it remove from the blood?",
+      "durationInFrames": 1680,
+      "caption": "Five takeaways: components, vessels, the oxygen rule, organ changes, accounting for them.",
+      "voiceover": {
+        "text": "Let's lock it in. First, plasma is the transport medium, red blood cells carry oxygen on haemoglobin, white blood cells defend against pathogens, and platelets start clotting. Second, arteries have thick, elastic walls for high pressure, capillaries have walls just one cell thick for exchange, and veins have thin walls and valves to get low pressure blood back to the heart. Third, every organ except the lungs lowers oxygen and raises carbon dioxide in the blood passing through it. Fourth, the gut adds glucose, amino acids and water, the liver stores glucose and makes urea, and the kidneys remove urea, water and salts. And fifth, whenever you account for a change, name the specific organ process that causes it. See you next lesson."
+      }
+    }
+  ]
+}
