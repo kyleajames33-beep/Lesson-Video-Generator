@@ -1,0 +1,455 @@
+{
+  "title": "Cell Structure",
+  "subtitle": "Prokaryotic and eukaryotic cells, organelles, and plant versus animal cells",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Use a variety of sources to compare the cellular structures of eukaryotic and prokaryotic cells",
+    "Describe the structure and function of the capsule, cell wall, cell membrane, cytoplasm, nucleoid, plasmid, ribosomes, flagella and pili in prokaryotic cells",
+    "Describe the structure and function of the cell wall, cell membrane, cytoplasm, nucleus, mitochondria, chloroplast, endoplasmic reticulum, Golgi body, ribosomes, lysosomes and vacuoles in eukaryotic cells",
+    "Contrast the cell structure and organelles of plant and animal cells based on the function of the cell",
+    "investigate different cellular structures, including but not limited to: examining a variety of prokaryotic and eukaryotic cells (ACSBL032, ACSBL048)",
+    "investigate a variety of prokaryotic and eukaryotic cell structures, including but not limited to: comparing and contrasting different cell organelles and arrangements"
+  ],
+  "moduleLessonCount": 7,
+  "nesaOutcomes": [
+    "BI-11-01",
+    "BI-11WS-05",
+    "BI-11WS-07"
+  ],
+  "inquiryQuestion": "What distinguishes one cell from another?",
+  "lessonIntent": "Students can compare prokaryotic and eukaryotic cells, state the structure and function of each named organelle, and contrast plant and animal cells in terms of what each cell does.",
+  "examSkill": "Classify a cell as prokaryotic or eukaryotic, plant or animal, from its features, and justify which organelles a specialised cell would have in abundance by linking structure to function.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, cell structure, from bacteria to plant and animal cells. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Cell Structure"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two kinds of life, living in you",
+      "body": "Your body carries roughly as many bacterial cells as human cells, yet the two are built on completely different plans.",
+      "callout": "What actually separates a bacterium from one of your own cells?",
+      "image": "bioY11M1L1TwoCellPlans",
+      "durationInFrames": 1611,
+      "caption": "You carry about as many bacterial cells as human cells, built on two different plans.",
+      "voiceover": {
+        "text": "Here's a surprising number to start with. Your body is made of around thirty trillion of your own cells, and it carries roughly the same number of bacterial cells, mostly in your gut. But those two sets of cells are built on completely different plans. A typical bacterium is a few micrometres long, with its DNA lying loose in the cytoplasm. One of your cells is often ten times wider, and it's packed with compartments wrapped in membrane, each doing a separate job. So what really separates a bacterium from one of your own cells, and how does a cell's structure tell you what it does? That's today, prokaryotes and eukaryotes, their organelles, and plant versus animal cells."
+      }
+    },
+    {
+      "id": "concept-prok-euk",
+      "type": "concept",
+      "heading": "Prokaryotic versus eukaryotic",
+      "body": "Eukaryotic cells keep their DNA in a nucleus and have membrane bound organelles. Prokaryotic cells have neither.",
+      "bullets": [
+        {
+          "text": "Prokaryotes: bacteria and archaea; no nucleus, DNA sits in a nucleoid."
+        },
+        {
+          "text": "Eukaryotes: animals, plants, fungi and protists; DNA inside a nucleus."
+        },
+        {
+          "text": "Both have a cell membrane, cytoplasm, ribosomes and DNA."
+        }
+      ],
+      "callout": "The nucleus and membrane bound organelles are the dividing line.",
+      "durationInFrames": 1734,
+      "caption": "Prokaryotes lack a nucleus and membrane bound organelles; eukaryotes have both.",
+      "voiceover": {
+        "text": "So let's set up the big divide. Prokaryotes are the bacteria and the archaea, and their defining feature is that they have no nucleus. Their DNA sits in a region called the nucleoid, usually as one circular chromosome, and they have no membrane bound organelles at all. Eukaryotes are the animals, plants, fungi and protists. Their DNA is enclosed in a nucleus with a double membrane, split across several linear chromosomes, and their cytoplasm is divided into organelles wrapped in membrane. But don't overstate the difference. Both kinds of cell have a cell membrane, cytoplasm, DNA and ribosomes, although prokaryotic ribosomes are smaller. And size is a useful clue, since prokaryotes are a few micrometres long, while eukaryotic cells are usually ten to a hundred micrometres across."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Prokaryotic",
+          "Eukaryotic"
+        ],
+        "rows": [
+          [
+            "Nucleus",
+            "Absent (DNA in a nucleoid)",
+            "Present, double membrane"
+          ],
+          [
+            "Main DNA",
+            "One circular chromosome",
+            "Several linear chromosomes"
+          ],
+          [
+            "Membrane bound organelles",
+            "None",
+            "Many, e.g. mitochondria"
+          ],
+          [
+            "Ribosomes",
+            "Smaller (70S)",
+            "Larger (80S)"
+          ],
+          [
+            "Typical size",
+            "About 1 to 5 µm",
+            "About 10 to 100 µm"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-prokaryote",
+      "type": "concept",
+      "heading": "Inside a bacterium",
+      "body": "Each prokaryotic structure has one clear job.",
+      "bullets": [
+        {
+          "text": "Protection: capsule, cell wall and cell membrane."
+        },
+        {
+          "text": "Information: nucleoid, plasmids and ribosomes."
+        },
+        {
+          "text": "Movement and contact: flagella and pili."
+        }
+      ],
+      "callout": "Plasmids carry bonus genes, like antibiotic resistance.",
+      "durationInFrames": 2048,
+      "caption": "Capsule, wall, membrane, cytoplasm, nucleoid, plasmid, ribosomes, flagella, pili.",
+      "voiceover": {
+        "text": "Let's zoom into a bacterium, because the syllabus names nine structures, and it helps to sort them into three groups. First, protection. Many bacteria have a capsule, a sticky outer layer that stops the cell drying out, helps it cling to surfaces, and helps it avoid being engulfed by white blood cells. Under that, the rigid cell wall holds the cell's shape and stops it bursting, and the cell membrane controls what gets in and out. Second, information. The main circular chromosome sits in the nucleoid, while plasmids are small extra rings of DNA that often carry useful genes, like antibiotic resistance. Ribosomes use those genes to build proteins, out in the cytoplasm, where most of the cell's reactions happen. Finally, movement and contact. A flagellum spins like a propeller to drive the cell along, and pili are fine threads that attach to surfaces, or pass DNA to other bacteria."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Structure",
+          "Function"
+        ],
+        "rows": [
+          [
+            "Capsule",
+            "Sticky outer layer; protects and helps the cell stick to surfaces"
+          ],
+          [
+            "Cell wall",
+            "Rigid; keeps shape and stops the cell bursting"
+          ],
+          [
+            "Cell membrane",
+            "Controls what enters and leaves"
+          ],
+          [
+            "Cytoplasm",
+            "Site of most metabolic reactions"
+          ],
+          [
+            "Nucleoid",
+            "Region holding the main circular chromosome"
+          ],
+          [
+            "Plasmid",
+            "Small extra ring of DNA; can be shared"
+          ],
+          [
+            "Ribosomes",
+            "Build proteins"
+          ],
+          [
+            "Flagellum",
+            "Rotates to move the cell"
+          ],
+          [
+            "Pili",
+            "Attach to surfaces; transfer DNA"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-production-line",
+      "type": "concept",
+      "heading": "Eukaryotic organelles: a production line",
+      "body": "Several organelles work in sequence to make and export a protein.",
+      "bullets": [
+        {
+          "text": "Nucleus: holds the DNA; a gene is copied into mRNA."
+        },
+        {
+          "text": "Ribosomes on rough ER build the protein; the ER carries it."
+        },
+        {
+          "text": "Golgi body: modifies, packages and ships it in vesicles."
+        }
+      ],
+      "callout": "Nucleus, rough ER, Golgi, vesicle, membrane.",
+      "durationInFrames": 1830,
+      "caption": "Exported proteins travel nucleus → rough ER → Golgi → vesicle → membrane.",
+      "voiceover": {
+        "text": "Now to eukaryotic cells, and the neatest way to learn the organelles is to watch them cooperate. Picture a cell making a digestive enzyme for export. It starts in the nucleus, which has a double membrane with pores and holds the cell's DNA. The gene is copied into a messenger molecule called mRNA, which leaves through a pore. Ribosomes then build the protein, and many of them sit on the rough endoplasmic reticulum, a network of folded membranes that carries the new protein through the cell. The smooth ER, which has no ribosomes, makes lipids instead. Next, a vesicle takes the protein to the Golgi body, a stack of flattened sacs that modifies it, packages it and sorts it into new vesicles. Those vesicles fuse with the cell membrane and release the enzyme outside."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "nuc",
+            "label": "Nucleus: gene copied into mRNA"
+          },
+          {
+            "id": "rer",
+            "label": "Ribosomes on rough ER build the protein"
+          },
+          {
+            "id": "v1",
+            "label": "Transport vesicle"
+          },
+          {
+            "id": "gol",
+            "label": "Golgi body modifies and packages"
+          },
+          {
+            "id": "v2",
+            "label": "Secretory vesicle"
+          },
+          {
+            "id": "mem",
+            "label": "Cell membrane: protein released"
+          }
+        ],
+        "edges": [
+          {
+            "from": "nuc",
+            "to": "rer"
+          },
+          {
+            "from": "rer",
+            "to": "v1"
+          },
+          {
+            "from": "v1",
+            "to": "gol"
+          },
+          {
+            "from": "gol",
+            "to": "v2"
+          },
+          {
+            "from": "v2",
+            "to": "mem"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-organelles",
+      "type": "concept",
+      "heading": "Energy, storage and recycling",
+      "body": "The remaining organelles supply energy, store materials and break down waste.",
+      "bullets": [
+        {
+          "text": "Mitochondria: aerobic respiration releases energy as ATP."
+        },
+        {
+          "text": "Chloroplasts: photosynthesis captures light energy in glucose."
+        },
+        {
+          "text": "Lysosomes digest waste; vacuoles store water and solutes."
+        }
+      ],
+      "callout": "A busy cell packs in the organelle its job demands.",
+      "durationInFrames": 1912,
+      "caption": "Mitochondria make ATP, chloroplasts photosynthesise, lysosomes digest, vacuoles store.",
+      "voiceover": {
+        "text": "The rest of the organelles handle energy, storage and recycling. Mitochondria have a double membrane, with the inner one folded to give a huge surface area, and that's where aerobic respiration releases the energy in glucose as ATP. Chloroplasts, in the green parts of plants and in algae, also have a double membrane, with stacks of internal membranes called thylakoids that capture light for photosynthesis. Lysosomes are small sacs of digestive enzymes, found mostly in animal cells, that break down worn out organelles and anything the cell engulfs. Vacuoles store water, ions and wastes. In animal cells they're small and temporary, but most plant cells have one large central vacuole that keeps the cell firm, backed by a cellulose cell wall for support. The key idea is that a busy cell packs in more of whatever organelle its job demands."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Organelle",
+          "Structure",
+          "Function"
+        ],
+        "rows": [
+          [
+            "Mitochondrion",
+            "Double membrane; folded inner membrane",
+            "Aerobic respiration, makes ATP"
+          ],
+          [
+            "Chloroplast",
+            "Double membrane; stacks of thylakoids",
+            "Photosynthesis"
+          ],
+          [
+            "Lysosome",
+            "Membrane sac of digestive enzymes",
+            "Digests worn organelles and engulfed material"
+          ],
+          [
+            "Vacuole",
+            "Membrane sac of fluid",
+            "Stores water, ions, wastes; large and central in plants"
+          ],
+          [
+            "Cell wall (plants)",
+            "Cellulose layer outside the membrane",
+            "Support; stops the cell bursting"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Prokaryote: a cell with no nucleus and no membrane bound organelles."
+        },
+        {
+          "text": "Eukaryote: a cell with its DNA in a nucleus, and membrane bound organelles."
+        },
+        {
+          "text": "Organelle: a specialised structure inside a cell with a specific function."
+        },
+        {
+          "text": "Plasmid: a small circular DNA molecule, separate from the main chromosome."
+        }
+      ],
+      "callout": "Pro means before, karyon means kernel: before the nucleus.",
+      "durationInFrames": 1325,
+      "caption": "Prokaryote, eukaryote, organelle, plasmid.",
+      "voiceover": {
+        "text": "Let's pin down four terms you'll be asked to define. A prokaryote is a cell with no nucleus and no membrane bound organelles. The name helps, because pro means before and karyon means kernel, so it's a cell from before the nucleus. A eukaryote has a true nucleus, since eu means true, along with membrane bound organelles. An organelle is a specialised structure inside a cell with a particular function, and ribosomes count, even though they have no membrane. And a plasmid is a small circular DNA molecule, separate from the main chromosome, found mainly in bacteria."
+      }
+    },
+    {
+      "id": "concept-plant-animal",
+      "type": "concept",
+      "heading": "Plant versus animal cells",
+      "body": "Plant cells add a cell wall, chloroplasts and a large central vacuole, but only where the cell's job needs them.",
+      "bullets": [
+        {
+          "text": "Only plants: cellulose cell wall, chloroplasts, large central vacuole."
+        },
+        {
+          "text": "Mainly animals: centrioles, lysosomes, small temporary vacuoles."
+        },
+        {
+          "text": "Both: nucleus, mitochondria, ER, Golgi, ribosomes, membrane."
+        }
+      ],
+      "callout": "Contrast by function: a root hair cell has no chloroplasts.",
+      "durationInFrames": 1925,
+      "caption": "Plants add a wall, chloroplasts and a large vacuole; function decides which cells have them.",
+      "voiceover": {
+        "text": "OK, plant cells versus animal cells. Both are eukaryotic, so they share the core kit, a nucleus, mitochondria, ER, Golgi, ribosomes and a cell membrane. Plant cells then add a cellulose cell wall for support, chloroplasts for photosynthesis, and a large central vacuole that keeps the cell turgid. Animal cells lack all three, but they have centrioles, which help organise cell division, and they rely more on lysosomes. Now the syllabus wants you to contrast cells based on their function. Not every plant cell has chloroplasts. A palisade cell in a leaf is crammed with them, because its job is photosynthesis. A root hair cell lives in the dark, so it has none, but it has a long extension that increases its surface area for absorbing water and ions. So always ask what the cell does, and then predict its organelles."
+      },
+      "diagram": {
+        "type": "venn",
+        "leftLabel": "Plant: cell wall, chloroplasts, large vacuole",
+        "rightLabel": "Animal: centrioles, lysosomes, small vacuoles",
+        "overlapLabel": "Nucleus, mitochondria, ER, Golgi, ribosomes, membrane"
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Classifying cells from their features",
+      "question": "Cell A: 2 µm long, cell wall, no nucleus, plasmids. Cell B: 60 µm, nucleus, cell wall, large central vacuole, no chloroplasts, from a carrot root. Cell C: 100 µm long, nucleus, no cell wall, very many mitochondria, from heart muscle. Classify each cell and justify one feature of each.",
+      "coachNote": "Check the nucleus first, then the cell wall, then match the organelles to the cell's job.",
+      "steps": [
+        "Cell A has no nucleus and has plasmids, so it is prokaryotic, most likely a bacterium.",
+        "Cells B and C have a nucleus, so both are eukaryotic.",
+        "Cell B has a cellulose wall and a large central vacuole, so it is a plant cell; a root is in the dark, so it has no chloroplasts.",
+        "Cell C has no cell wall, so it is an animal cell; its many mitochondria supply ATP for constant contraction.",
+        "Answer: A prokaryote; B plant cell; C animal cell, each justified by structure and function ✓"
+      ],
+      "durationInFrames": 2048,
+      "caption": "Nucleus first, wall second, then match organelles to the job.",
+      "voiceover": {
+        "text": "Let's classify three cells, the way an exam question would present them. Cell A is two micrometres long, with a cell wall, no nucleus, and some plasmids. Cell B is sixty micrometres across, from a carrot root, with a nucleus, a cell wall, a large central vacuole and no chloroplasts. Cell C comes from heart muscle, with a nucleus, no cell wall and huge numbers of mitochondria. Always check the nucleus first. Cell A has none, and it carries plasmids, so it's prokaryotic, almost certainly a bacterium. Cells B and C both have a nucleus, so they're eukaryotic, and the cell wall splits them. Cell B has a wall and a large vacuole, so it's a plant cell, and it lacks chloroplasts because roots grow in the dark. Cell C has no wall, so it's an animal cell, and its mitochondria supply the ATP a heart needs to keep contracting."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: 'Plant cells have chloroplasts instead of mitochondria.' Wrong. Plant cells have both, and they respire day and night.",
+      "secondary": "Trap 2: 'Prokaryotes have no organelles.' They have ribosomes. What they lack is a nucleus and membrane bound organelles.",
+      "mistakeTag": "Where cell marks vanish",
+      "callout": "Plants photosynthesise and respire; prokaryotes still have ribosomes.",
+      "durationInFrames": 1625,
+      "caption": "Plant cells have mitochondria too; prokaryotes lack membrane bound organelles, not ribosomes.",
+      "voiceover": {
+        "text": "Two traps that cost marks every year. Trap one is the idea that plant cells have chloroplasts instead of mitochondria, as if photosynthesis replaces respiration. It doesn't. Every living plant cell respires, day and night, because it needs a constant supply of ATP. Photosynthesis makes the glucose, and the mitochondria release the energy stored in it. So a root cell, with no chloroplasts at all, still has plenty of mitochondria. Trap two is saying that prokaryotes have no organelles. That's too strong, because they have ribosomes, and they need them to make every protein. What they lack is a nucleus and any membrane bound organelles. So when you compare the two cell types, use that exact phrase, membrane bound."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Cells in the pancreas secrete large amounts of digestive enzymes, which are proteins. Predict three organelles that would be unusually abundant in these cells, and justify each.",
+      "pausePrompt": "Pause and trace the production line.",
+      "answerSteps": [
+        "Enzymes are proteins for export, so the cell needs many ribosomes on extensive rough ER.",
+        "A large Golgi body modifies the enzymes and packages them into vesicles.",
+        "Many secretory vesicles carry the enzymes to the membrane for release.",
+        "Plenty of mitochondria supply the ATP for protein synthesis and secretion.",
+        "Answer: any three of rough ER (with ribosomes), Golgi body, vesicles and mitochondria, each justified ✓"
+      ],
+      "durationInFrames": 1352,
+      "caption": "Secretory cells are rich in rough ER, Golgi, vesicles and mitochondria.",
+      "voiceover": {
+        "text": "Quick check. Cells in your pancreas secrete huge amounts of digestive enzymes, which are proteins. Predict three organelles that would be unusually abundant in these cells, and justify each one. Pause and trace the production line. OK, the proteins are for export, so the cell needs lots of ribosomes on extensive rough endoplasmic reticulum, which carries the new proteins away. Next, you'd expect a large Golgi body to modify them and package them into vesicles, and then many secretory vesicles moving toward the membrane. And making and exporting all that protein costs energy, so mitochondria would be plentiful too."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Prokaryotes have no nucleus or membrane bound organelles; eukaryotes have both.",
+        "In bacteria, capsule, wall and membrane protect; nucleoid, plasmids and ribosomes hold and use DNA; flagella and pili move and attach.",
+        "Exported proteins run nucleus, rough ER, Golgi, vesicle, membrane.",
+        "Plant cells add a cellulose wall, chloroplasts and a large vacuole; both plant and animal cells have mitochondria.",
+        "A cell's function predicts its organelles: root cells lack chloroplasts; secretory cells are rich in rough ER and Golgi."
+      ],
+      "finalPrompt": "Every cell question: nucleus or not, wall or not, then what does this cell do?",
+      "durationInFrames": 1543,
+      "caption": "Five takeaways: the divide, bacteria, the production line, plant vs animal, function.",
+      "voiceover": {
+        "text": "Let's lock it in. First, prokaryotes have no nucleus and no membrane bound organelles, while eukaryotes have both. Second, in a bacterium the capsule, wall and membrane protect the cell, the nucleoid, plasmids and ribosomes store and use its DNA, and flagella and pili handle movement and attachment. Third, exported proteins travel from the nucleus to the rough ER, then the Golgi, then a vesicle, and out through the membrane. Fourth, plant cells add a cellulose wall, chloroplasts and a large central vacuole, but both cell types have mitochondria. And fifth, a cell's function predicts its organelles. Next time, we'll meet the microscopes that let us see all of this. See you then."
+      }
+    }
+  ]
+}

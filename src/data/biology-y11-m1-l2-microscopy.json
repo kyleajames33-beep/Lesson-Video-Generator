@@ -1,0 +1,405 @@
+{
+  "title": "Microscopy",
+  "subtitle": "Light and electron microscopes, magnification, resolution and the wet mount",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 2",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Conduct a practical investigation to prepare a wet mount slide and identify the cytoplasm, cell wall and nucleus under a light microscope",
+    "Assess the impact of technological developments in microscopy on scientific understanding of cell structure and function",
+    "describe a range of technologies that are used to determine a cell’s structure and function",
+    "investigate a variety of prokaryotic and eukaryotic cell structures, including but not limited to: drawing scaled diagrams of a variety of cells (ACSBL035)"
+  ],
+  "moduleLessonCount": 7,
+  "nesaOutcomes": [
+    "BI-11-01",
+    "BI-11WS-03",
+    "BI-11WS-04",
+    "BI-11WS-06"
+  ],
+  "inquiryQuestion": "How have developments in microscopy changed our understanding of cells?",
+  "lessonIntent": "Students can distinguish magnification from resolution, compare light and electron microscopes, calculate actual size from an image, and describe how to prepare a wet mount slide.",
+  "examSkill": "Use actual size = image size ÷ magnification with correct unit conversions, and assess how a microscopy technology changed scientific understanding of cell structure.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, microscopy, and how we measure what we can't see. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Microscopy"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Hooke saw walls, not cells",
+      "body": "In 1665, Robert Hooke looked at cork and named the tiny empty boxes he saw cells. He could not see anything inside them.",
+      "callout": "How much of biology depends on how well we can see?",
+      "image": "bioY11M1L2HookeCork",
+      "durationInFrames": 1748,
+      "caption": "Hooke named cells in 1665, but his microscope couldn't show what was inside them.",
+      "voiceover": {
+        "text": "In 1665, Robert Hooke sliced a thin piece of cork, put it under his microscope, and saw rows of tiny empty boxes. He called them cells, because they reminded him of small rooms. But here's the catch. Cork is dead tissue, so Hooke was really looking at empty cell walls. He couldn't see a nucleus, let alone a mitochondrion. It took almost two hundred years of better lenses before scientists concluded that all living things are made of cells, and nearly three hundred before electron microscopes revealed the organelles from last lesson. So how much of what we know about cells depends on how well we can see? Almost all of it. Today we'll compare light and electron microscopes, calculate real sizes, and make a wet mount slide."
+      }
+    },
+    {
+      "id": "concept-mag-res",
+      "type": "concept",
+      "heading": "Magnification is not resolution",
+      "body": "Magnification makes an image bigger. Resolution decides how much detail it can show.",
+      "bullets": [
+        {
+          "text": "Magnification: how many times larger the image is than the real object."
+        },
+        {
+          "text": "Resolution: the smallest distance at which two points are still seen as separate."
+        },
+        {
+          "text": "Magnifying beyond the resolution limit only adds blur."
+        }
+      ],
+      "callout": "Bigger is not the same as clearer.",
+      "durationInFrames": 1789,
+      "caption": "Magnification is size; resolution is detail.",
+      "voiceover": {
+        "text": "Before we compare microscopes, we need two words that students constantly mix up. Magnification is how many times larger the image is than the real object. If a cell is twenty micrometres wide and its image is two millimetres wide, that's a magnification of one hundred times. Resolution is different. It's the smallest distance between two points at which you can still see them as two separate points, rather than one blurry blob, and it's what sets the level of detail. Think of zooming in on a small photo on your phone. You can make it as big as you like, but once you pass the detail the photo actually contains, you just get bigger pixels. Microscopes work the same way, and magnifying past the resolution limit is called empty magnification."
+      },
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "Low resolution",
+        "beforeContent": "Two close points blur into a single blob",
+        "afterLabel": "High resolution",
+        "afterContent": "The same two points are seen as separate"
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-light-vs-em",
+      "type": "concept",
+      "heading": "Light versus electron microscopes",
+      "body": "Light microscopes use light and glass lenses; electron microscopes use a beam of electrons focused by magnets.",
+      "bullets": [
+        {
+          "text": "Light: living cells in colour, but resolution only about 200 nm."
+        },
+        {
+          "text": "Electron: resolution below 1 nm, but specimens are dead, in a vacuum."
+        },
+        {
+          "text": "TEM shows internal detail; SEM shows 3D surfaces."
+        }
+      ],
+      "callout": "Shorter wavelength, finer resolution.",
+      "durationInFrames": 2035,
+      "caption": "Light: living, colour, about 200 nm. Electron: under 1 nm, dead specimens in a vacuum.",
+      "voiceover": {
+        "text": "Now the two families of microscope. A light microscope sends visible light through the specimen and bends it with glass lenses. It's cheap, it gives colour images, and it can show living cells moving and dividing. But its resolution is limited by the wavelength of light, to about two hundred nanometres, so it can show a nucleus or a chloroplast, but not the detail inside them. Electron microscopes use a beam of electrons focused by electromagnets. Electrons have a far shorter wavelength, so the best instruments resolve detail smaller than a nanometre. A transmission electron microscope, or TEM, fires electrons through an ultra thin slice, revealing internal structures like ribosomes. A scanning electron microscope, or SEM, bounces electrons off a coated surface to build a three dimensional image. The cost is that specimens must sit in a vacuum, so they're always dead, and the images are black and white."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Feature",
+          "Light",
+          "TEM",
+          "SEM"
+        ],
+        "rows": [
+          [
+            "Beam",
+            "Visible light",
+            "Electrons through a thin slice",
+            "Electrons off the surface"
+          ],
+          [
+            "Best resolution",
+            "About 200 nm",
+            "Below 1 nm",
+            "About 1 to 10 nm"
+          ],
+          [
+            "Specimen",
+            "Can be alive",
+            "Dead, in a vacuum",
+            "Dead, coated, in a vacuum"
+          ],
+          [
+            "Image",
+            "Colour, 2D",
+            "Black and white, internal detail",
+            "Black and white, 3D surface"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-history",
+      "type": "concept",
+      "heading": "How better microscopes changed biology",
+      "body": "Each jump in resolution revealed a new layer of cell structure.",
+      "bullets": [
+        {
+          "text": "Improved light microscopes led to cell theory in the 1830s."
+        },
+        {
+          "text": "Electron microscopes revealed organelle ultrastructure in the 1950s."
+        },
+        {
+          "text": "Fluorescence tracks proteins in living cells; cryo-EM maps single molecules."
+        }
+      ],
+      "callout": "New technology, new evidence, revised models.",
+      "durationInFrames": 1980,
+      "caption": "From Hooke to cryo-EM, better resolution kept revising the model of the cell.",
+      "voiceover": {
+        "text": "The syllabus asks you to assess how microscopy changed our understanding, so let's follow the timeline. Hooke's cork gave us the word cell. In the 1670s, Antonie van Leeuwenhoek ground tiny, powerful lenses and became the first person to see living bacteria. As light microscopes improved, Schleiden and Schwann concluded in the late 1830s that plants and animals are made of cells, which became cell theory. The electron microscope was built in the 1930s, and by the 1950s it had revealed structures no light microscope could resolve, like ribosomes, the endoplasmic reticulum, the folded inner membrane of mitochondria, and the layered structure of the cell membrane. Today, fluorescence microscopy follows tagged proteins in living cells, and cryo electron microscopy maps the shapes of single protein molecules. Notice the pattern. Each new technology produced new evidence, and the model of the cell had to be revised."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "h",
+            "label": "1665: Hooke names cells in cork"
+          },
+          {
+            "id": "l",
+            "label": "1670s: van Leeuwenhoek sees living microbes"
+          },
+          {
+            "id": "t",
+            "label": "1830s: cell theory"
+          },
+          {
+            "id": "e",
+            "label": "1930s: electron microscope built"
+          },
+          {
+            "id": "o",
+            "label": "1950s: ribosomes, ER, cristae resolved"
+          },
+          {
+            "id": "c",
+            "label": "2010s: cryo-EM maps protein molecules"
+          }
+        ],
+        "edges": [
+          {
+            "from": "h",
+            "to": "l"
+          },
+          {
+            "from": "l",
+            "to": "t"
+          },
+          {
+            "from": "t",
+            "to": "e"
+          },
+          {
+            "from": "e",
+            "to": "o"
+          },
+          {
+            "from": "o",
+            "to": "c"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "formula",
+      "type": "formula",
+      "heading": "Calculating actual size",
+      "body": "Magnification = image size ÷ actual size, so actual size = image size ÷ magnification.",
+      "secondary": "Units must match: 1 mm = 1000 µm and 1 µm = 1000 nm. Magnification has no units.",
+      "callout": "Actual size = image size ÷ magnification",
+      "unitCancel": {
+        "left": "image size (µm)",
+        "right": "magnification (no units)",
+        "result": "actual size (µm)"
+      },
+      "durationInFrames": 1693,
+      "caption": "Actual size = image size ÷ magnification; convert mm to µm first.",
+      "voiceover": {
+        "text": "Alright, the calculation. Everything comes from one relationship. Magnification equals image size divided by actual size. Rearranged, actual size equals image size divided by magnification, and that's the version you'll use most. A handy memory aid is a triangle, with image on top, and actual size and magnification underneath. Cover the one you want, and the triangle shows you the operation. The step students skip is units. Image sizes are usually measured with a ruler in millimetres, but cells are measured in micrometres, so convert first. One millimetre is a thousand micrometres, and one micrometre is a thousand nanometres. Magnification itself has no units, because it's just a number of times, so your answer comes out in whatever units you used for the image."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Finding the actual size of a cell",
+      "question": "In a micrograph with a magnification of ×1500, a cheek cell's image is 90 mm wide. Calculate the actual width of the cell in micrometres.",
+      "coachNote": "Target: actual size. Convert mm to µm first, then divide by the magnification.",
+      "unitCancel": {
+        "left": "90 000 µm",
+        "right": "÷ 1500",
+        "result": "60 µm"
+      },
+      "steps": [
+        "Known: image size = 90 mm; magnification = ×1500.",
+        "Convert: 90 mm × 1000 = 90 000 µm.",
+        "Formula: actual size = image size ÷ magnification.",
+        "Substitute: 90 000 µm ÷ 1500 = 60 µm.",
+        "Answer: the cell is 60 µm wide, a sensible size for an animal cell ✓"
+      ],
+      "durationInFrames": 1652,
+      "caption": "90 000 µm ÷ 1500 = 60 µm.",
+      "voiceover": {
+        "text": "Let's do one. In a micrograph with a magnification of fifteen hundred times, the image of a cheek cell measures ninety millimetres across. What's the actual width of the cell in micrometres? The target is actual size, so we'll divide image size by magnification. But first, fix the units. Ninety millimetres times a thousand gives ninety thousand micrometres. Now divide by the magnification. Ninety thousand micrometres divided by fifteen hundred gives sixty micrometres. So the cell is sixty micrometres wide. And always finish with a sanity check. Is sixty micrometres a sensible size? Yes, animal cells are typically ten to a hundred micrometres across, so this fits. If you'd got six hundred, or six hundredths, something went wrong with the units."
+      }
+    },
+    {
+      "id": "concept-wet-mount",
+      "type": "concept",
+      "heading": "Practical: making a wet mount",
+      "body": "A wet mount holds a thin specimen in a drop of liquid under a coverslip.",
+      "bullets": [
+        {
+          "text": "Peel a single layer of onion epidermis and lay it flat in a drop of water."
+        },
+        {
+          "text": "Add iodine stain, then lower the coverslip at an angle to avoid air bubbles."
+        },
+        {
+          "text": "Focus on low power first, then switch up and use only the fine focus."
+        }
+      ],
+      "callout": "Onion cells show the cell wall, cytoplasm and a stained nucleus.",
+      "durationInFrames": 2048,
+      "caption": "Thin layer, stain, coverslip at an angle, low power first.",
+      "voiceover": {
+        "text": "Now the practical the syllabus names, preparing a wet mount to identify the cytoplasm, cell wall and nucleus. Onion is the classic specimen. First, peel a single transparent layer of epidermis from the inside of an onion scale, because light has to pass through it. Lay it flat in a drop of water on a clean slide, and add a drop of iodine solution, which stains the nucleus so it stands out. Next, lower the coverslip at about forty five degrees using a mounted needle, so air is pushed out rather than trapped as bubbles. On the microscope, always start with the low power objective and the coarse focus, then switch to high power and use only the fine focus. You should see brick shaped cells, each outlined by a clear cell wall, with pale cytoplasm and a darker nucleus. And you won't see chloroplasts, because onion bulbs grow underground."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "p",
+            "label": "Peel a thin layer of onion epidermis"
+          },
+          {
+            "id": "d",
+            "label": "Lay it flat in a drop of water"
+          },
+          {
+            "id": "s",
+            "label": "Add a drop of iodine stain"
+          },
+          {
+            "id": "c",
+            "label": "Lower the coverslip at 45°"
+          },
+          {
+            "id": "l",
+            "label": "Focus on low power"
+          },
+          {
+            "id": "h",
+            "label": "High power, fine focus only"
+          },
+          {
+            "id": "i",
+            "label": "Identify wall, cytoplasm, nucleus"
+          }
+        ],
+        "edges": [
+          {
+            "from": "p",
+            "to": "d"
+          },
+          {
+            "from": "d",
+            "to": "s"
+          },
+          {
+            "from": "s",
+            "to": "c"
+          },
+          {
+            "from": "c",
+            "to": "l"
+          },
+          {
+            "from": "l",
+            "to": "h"
+          },
+          {
+            "from": "h",
+            "to": "i"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: 'Higher magnification always shows more detail.' No. Past the resolution limit you only get a bigger blur.",
+      "secondary": "Trap 2: dividing a size in millimetres by the magnification, then writing micrometres. Convert the image size first, then divide.",
+      "mistakeTag": "Where microscopy marks vanish",
+      "callout": "Resolution limits detail; convert units before you divide.",
+      "durationInFrames": 1762,
+      "caption": "Magnification without resolution is empty; convert to µm before dividing.",
+      "voiceover": {
+        "text": "Two traps to avoid. Trap one is thinking that higher magnification always means more detail. It doesn't. A light microscope can't separate anything closer together than about two hundred nanometres, so if you magnify past that, the image just gets bigger and blurrier. That's why ribosomes, around twenty to thirty nanometres across, can't be made out under any light microscope, however powerful the lenses. The question to ask yourself is, what's limiting me here, magnification or resolution? Trap two is a units slip. Students measure an image in millimetres, divide by the magnification, then write micrometres next to the answer, which makes it a thousand times too small. So convert the image size to micrometres first, and then divide, and the units in your answer will be right automatically."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A micrograph of a bacterium has a scale bar 20 mm long, labelled 5 µm. Calculate the magnification of the micrograph.",
+      "pausePrompt": "Pause. Same units top and bottom.",
+      "answerSteps": [
+        "Magnification = image size ÷ actual size.",
+        "Convert the scale bar: 20 mm × 1000 = 20 000 µm.",
+        "Magnification = 20 000 µm ÷ 5 µm = 4000.",
+        "Answer: ×4000, with no units; too high for useful light microscopy, so likely an electron micrograph ✓"
+      ],
+      "durationInFrames": 1652,
+      "caption": "20 000 µm ÷ 5 µm = ×4000.",
+      "voiceover": {
+        "text": "Quick check. A micrograph of a bacterium has a scale bar that's twenty millimetres long on the page, labelled five micrometres. What's the magnification? Pause, and remember to use the same units top and bottom. Right, the scale bar is just a tiny image of a known length, so magnification equals image size divided by actual size. The image size is twenty millimetres, which converts to twenty thousand micrometres, and the actual size is five micrometres. So twenty thousand divided by five gives four thousand, and the magnification is four thousand times. There are no units, because the micrometres cancel. And a magnification that high is beyond what a light microscope can usefully show, so it's almost certainly an electron micrograph."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Magnification is how many times bigger; resolution is the smallest gap still seen as two points.",
+        "Light microscopes: living cells, colour, about 200 nm. Electron microscopes: below 1 nm, dead specimens in a vacuum.",
+        "TEM shows internal ultrastructure; SEM shows 3D surfaces.",
+        "Actual size = image size ÷ magnification; convert mm to µm first.",
+        "Wet mount: thin layer, stain, coverslip at an angle, low power first."
+      ],
+      "finalPrompt": "Before any size question: what units, and am I finding image size, actual size or magnification?",
+      "durationInFrames": 1802,
+      "caption": "Five takeaways: magnification vs resolution, light vs electron, TEM vs SEM, the formula, the wet mount.",
+      "voiceover": {
+        "text": "Let's lock it in. First, magnification is how many times bigger the image is, while resolution is the smallest gap you can still see as two separate points, and resolution sets the detail. Second, light microscopes show living cells in colour, down to about two hundred nanometres, while electron microscopes resolve below a nanometre but need dead specimens in a vacuum. Third, a TEM shows internal ultrastructure and an SEM shows three dimensional surfaces. Fourth, actual size equals image size divided by magnification, and you convert millimetres to micrometres before dividing. And fifth, for a wet mount, use a thin layer, stain it, lower the coverslip at an angle, and focus on low power first. Next lesson, we'll see how better microscopes shaped our model of the cell membrane. See you then."
+      }
+    }
+  ]
+}

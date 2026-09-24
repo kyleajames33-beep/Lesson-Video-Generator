@@ -1,0 +1,365 @@
+{
+  "title": "Active and Bulk Transport",
+  "subtitle": "Active transport, endocytosis and exocytosis, and how each substance crosses the membrane",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 5",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Explain the processes of active transport, exocytosis and endocytosis",
+    "Relate the movement of glucose, oxygen, carbon dioxide, salts and wastes across membranes to concentration gradients and the characteristics of the materials being exchanged",
+    "investigate the way in which materials can move into and out of cells, including but not limited to: examining the roles of active transport, endocytosis and exocytosis (ACSBL046)",
+    "investigate the way in which materials can move into and out of cells, including but not limited to: relating the exchange of materials across membranes to the surface-area-to-volume ratio, concentration gradients and characteristics of the materials being exchanged (ACSBL047)"
+  ],
+  "moduleLessonCount": 7,
+  "nesaOutcomes": [
+    "BI-11-01",
+    "BI-11WS-05",
+    "BI-11WS-06"
+  ],
+  "inquiryQuestion": "How do cells move substances against a concentration gradient, or in bulk?",
+  "lessonIntent": "Students can explain active transport, endocytosis and exocytosis, distinguish them from passive transport, and relate how glucose, oxygen, carbon dioxide, salts and wastes cross membranes to their properties and gradients.",
+  "examSkill": "Classify a transport process from evidence (gradient direction, ATP dependence, protein or vesicle involvement) and justify the classification.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, active transport, endocytosis and exocytosis. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Active and Bulk Transport"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Uphill, all day, every day",
+      "body": "Your nerve cells keep potassium about 30 times more concentrated inside than outside, while diffusion constantly tries to undo it.",
+      "callout": "How does a cell push particles the wrong way?",
+      "image": "bioY11M1L5IonPump",
+      "durationInFrames": 1748,
+      "caption": "Nerve cells hold ion gradients that diffusion is always trying to erase.",
+      "voiceover": {
+        "text": "Inside each of your nerve cells, potassium ions are about thirty times more concentrated than in the fluid outside. Sodium is the reverse, far more concentrated outside than in. Diffusion is constantly trying to even those out, leaking potassium out and sodium in. And yet the gradients never disappear, because the cell keeps pushing the ions back, uphill, against their gradients. That's hard work, and a large share of your brain's energy budget goes into exactly this. So how does a cell move particles the wrong way, from low concentration to high? And how does it move something far too big for any protein, like a whole bacterium? Today, active transport, endocytosis and exocytosis, and then how each substance a cell exchanges finds its route across the membrane."
+      }
+    },
+    {
+      "id": "concept-active",
+      "type": "concept",
+      "heading": "Active transport: against the gradient",
+      "body": "Active transport moves substances from lower to higher concentration, using carrier proteins and energy from ATP.",
+      "bullets": [
+        {
+          "text": "Direction: against the concentration gradient."
+        },
+        {
+          "text": "Energy: ATP from respiration, so it stops if respiration stops."
+        },
+        {
+          "text": "Carrier proteins, often called pumps, are specific to what they move."
+        }
+      ],
+      "callout": "Against the gradient means ATP is needed.",
+      "durationInFrames": 1748,
+      "caption": "Active transport uses carrier proteins and ATP to move substances against their gradient.",
+      "voiceover": {
+        "text": "So, active transport. Active transport is the movement of a substance across a membrane from a region of lower concentration to a region of higher concentration, against its concentration gradient. Because that's moving uphill, it needs energy, and the energy comes from ATP made in respiration. The work is done by specific carrier proteins, usually called pumps. First, the particle binds to the pump on one side of the membrane. ATP then supplies energy, which makes the pump change shape, carrying the particle across and releasing it on the other side, before the pump resets. Because it relies on ATP, active transport has a telltale signature in experiments. If you stop respiration, with a poison or by removing oxygen, active transport stops too, while diffusion carries on regardless."
+      },
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "b",
+            "label": "Particle binds to the pump"
+          },
+          {
+            "id": "a",
+            "label": "ATP supplies energy"
+          },
+          {
+            "id": "s",
+            "label": "Pump changes shape"
+          },
+          {
+            "id": "r",
+            "label": "Particle released on the other side"
+          },
+          {
+            "id": "x",
+            "label": "Pump resets"
+          }
+        ],
+        "edges": [
+          {
+            "from": "b",
+            "to": "a"
+          },
+          {
+            "from": "a",
+            "to": "s"
+          },
+          {
+            "from": "s",
+            "to": "r"
+          },
+          {
+            "from": "r",
+            "to": "x"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-examples",
+      "type": "concept",
+      "heading": "Active transport in action",
+      "body": "Active transport lets cells collect and hold substances where diffusion never could.",
+      "bullets": [
+        {
+          "text": "Sodium potassium pump: 3 Na⁺ out and 2 K⁺ in for each ATP."
+        },
+        {
+          "text": "Root hair cells pump in mineral ions like nitrate from dilute soil water."
+        },
+        {
+          "text": "Gut lining cells absorb glucose even when little is left in the gut."
+        }
+      ],
+      "callout": "Cells that pump a lot are packed with mitochondria.",
+      "durationInFrames": 1898,
+      "caption": "The sodium potassium pump, nitrate uptake by roots and glucose uptake in the gut all use active transport.",
+      "voiceover": {
+        "text": "Let's see where cells actually use it. The famous example is the sodium potassium pump, found in every animal cell. For each ATP it uses, it pumps three sodium ions out and two potassium ions in, building the gradients from our hook, which nerve cells rely on to send signals. Plants use active transport too. Soil water is very dilute, yet root hair cells need mineral ions like nitrate to make amino acids, so they pump the ions in against the gradient, collecting them at concentrations far higher than in the soil. And in your small intestine, the cells lining the gut keep absorbing glucose even when very little is left, which only active transport can do. There's a structural clue here too. Cells that do lots of active transport are packed with mitochondria, because they're burning through ATP."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Example",
+          "Moves",
+          "Direction"
+        ],
+        "rows": [
+          [
+            "Sodium potassium pump",
+            "3 Na⁺ out, 2 K⁺ in",
+            "Both against their gradients"
+          ],
+          [
+            "Root hair cell",
+            "Nitrate and other mineral ions",
+            "Soil water into the root"
+          ],
+          [
+            "Small intestine lining",
+            "Glucose",
+            "From the gut into the cells"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-bulk",
+      "type": "concept",
+      "heading": "Endocytosis and exocytosis",
+      "body": "Bulk transport moves large particles or large volumes in vesicles, using ATP.",
+      "bullets": [
+        {
+          "text": "Endocytosis: the membrane folds in and pinches off a vesicle around material."
+        },
+        {
+          "text": "Phagocytosis takes in solids; pinocytosis takes in droplets of fluid."
+        },
+        {
+          "text": "Exocytosis: vesicles fuse with the membrane and release their contents outside."
+        }
+      ],
+      "callout": "Endo means in; exo means out.",
+      "durationInFrames": 1939,
+      "caption": "Endocytosis brings material in by vesicles; exocytosis releases it. Both use ATP.",
+      "voiceover": {
+        "text": "Some things are simply too big for any channel or pump, like a bacterium, or a large protein. For those, cells use bulk transport, moving material in vesicles, small sacs made of membrane. Endocytosis brings material in. The cell membrane folds inward around the material, then pinches off to form a vesicle inside the cell. Taking in solid particles is called phagocytosis, or cell eating, and that's how white blood cells engulf bacteria. Taking in droplets of fluid is called pinocytosis, or cell drinking. Exocytosis is the reverse. A vesicle moves to the membrane, fuses with it, and releases its contents outside. That's how the pancreas releases insulin and digestive enzymes, and how nerve cells release neurotransmitters. Both processes need ATP to move and reshape the membrane, and both only work because the membrane is fluid enough to fuse and pinch off."
+      },
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "Endocytosis (in)",
+        "beforeContent": "Membrane wraps around material and pinches off a vesicle inside the cell",
+        "afterLabel": "Exocytosis (out)",
+        "afterContent": "Vesicle fuses with the membrane and releases its contents outside"
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Active transport: movement against a concentration gradient, using a carrier protein and ATP."
+        },
+        {
+          "text": "Endocytosis: bulk uptake of material as the membrane folds inward to form a vesicle."
+        },
+        {
+          "text": "Exocytosis: bulk release of material when a vesicle fuses with the cell membrane."
+        },
+        {
+          "text": "Passive transport: movement down a concentration gradient with no ATP."
+        }
+      ],
+      "callout": "Against the gradient, or in vesicles, means energy.",
+      "durationInFrames": 1762,
+      "caption": "Active transport, endocytosis, exocytosis, passive transport.",
+      "voiceover": {
+        "text": "Let's pin these down. Active transport is the movement of a substance against its concentration gradient, using a carrier protein and energy from ATP. Endocytosis is the bulk uptake of material, where the cell membrane folds inward and encloses it in a vesicle. Exocytosis is the bulk release of material, where a vesicle fuses with the cell membrane and empties its contents outside. And for contrast, passive transport is any movement down a concentration gradient that uses no ATP, which covers simple diffusion, facilitated diffusion and osmosis. So here's a simple test for any process. If it moves a substance against its gradient, or packages material in vesicles, it needs energy. If it just lets things flow down their gradient, it's passive, whether or not a protein is involved."
+      }
+    },
+    {
+      "id": "concept-materials",
+      "type": "concept",
+      "heading": "Which route does each substance take?",
+      "body": "How a substance crosses depends on its size, its charge and polarity, and its concentration gradient.",
+      "bullets": [
+        {
+          "text": "Small and nonpolar: diffuse straight through the bilayer."
+        },
+        {
+          "text": "Large, polar or charged: need channels, carriers or pumps."
+        },
+        {
+          "text": "Too big for proteins: carried in vesicles."
+        }
+      ],
+      "callout": "Properties decide the route; the gradient decides the energy.",
+      "durationInFrames": 1898,
+      "caption": "O₂ and CO₂ diffuse; glucose and ions need proteins; very large materials use vesicles.",
+      "voiceover": {
+        "text": "The syllabus asks you to relate the movement of specific materials to their gradients and properties, so let's run the list. Oxygen and carbon dioxide are small and nonpolar, so they diffuse straight through the bilayer, oxygen in and carbon dioxide out, driven by gradients that respiration maintains. Glucose is large and polar, so it can't cross the bilayer. It moves by facilitated diffusion through carriers when the gradient points into the cell, and by active transport when the cell must collect it against the gradient, as in the gut. Salts dissolve into ions, which are charged, so they need channels to flow down their gradients and pumps to go against them. Finally, wastes. Urea is small and diffuses out of cells, often through transport proteins, while larger waste products can be packaged into vesicles and removed by exocytosis."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Substance",
+          "Properties",
+          "How it crosses"
+        ],
+        "rows": [
+          [
+            "Oxygen",
+            "Small, nonpolar",
+            "Simple diffusion, into respiring cells"
+          ],
+          [
+            "Carbon dioxide",
+            "Small, nonpolar",
+            "Simple diffusion, out of respiring cells"
+          ],
+          [
+            "Glucose",
+            "Large, polar",
+            "Facilitated diffusion; active transport against the gradient"
+          ],
+          [
+            "Salts (ions)",
+            "Charged",
+            "Channels down the gradient; pumps against it"
+          ],
+          [
+            "Wastes, e.g. urea",
+            "Small, polar",
+            "Diffusion, often via proteins; large wastes by exocytosis"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Classifying transport from evidence",
+      "question": "Root cells contain nitrate at 20 times the concentration of the surrounding soil water. When oxygen is removed from the soil, nitrate uptake stops, but water uptake continues. Identify how each substance enters the root cells and justify your answer.",
+      "coachNote": "Check two things: the direction of the gradient, and whether uptake depends on respiration.",
+      "steps": [
+        "Nitrate moves from low concentration (soil) to high (root): against its gradient.",
+        "Removing O₂ stops aerobic respiration, so ATP production falls.",
+        "Nitrate uptake stops when ATP falls, so it is active transport.",
+        "Water uptake continues without ATP, so it is passive: osmosis.",
+        "Answer: nitrate by active transport (against the gradient, needs ATP); water by osmosis ✓"
+      ],
+      "durationInFrames": 1843,
+      "caption": "Against the gradient and oxygen dependent: active transport. Continues without ATP: osmosis.",
+      "voiceover": {
+        "text": "Let's apply this to evidence, which is how exam questions usually test it. Root cells contain nitrate at twenty times the concentration of the surrounding soil water. When oxygen is removed from the soil, nitrate uptake stops, but water uptake carries on. How does each substance enter? First, look at the gradient. Nitrate is moving from the soil, where it's dilute, into the root, where it's concentrated, so it's already going against the gradient. Second, look at the oxygen result. Without oxygen, the root cells can't carry out aerobic respiration, so ATP production falls, and nitrate uptake stops at exactly that point. That tells us it depends on ATP, so nitrate enters by active transport. Water, on the other hand, keeps entering without respiration, so it needs no ATP, and it's moving passively, by osmosis."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The protein trap",
+      "body": "Trap: 'It uses a protein, so it must be active transport.' No. Facilitated diffusion also uses proteins, and it is passive.",
+      "secondary": "The real test is the gradient and the energy. Against the gradient with ATP is active. Down the gradient without ATP is passive, protein or not. Endocytosis and exocytosis also need ATP.",
+      "mistakeTag": "Where transport marks vanish",
+      "callout": "Ask: which way is the gradient, and is ATP used?",
+      "durationInFrames": 1666,
+      "caption": "A protein does not make a process active; the gradient and ATP do.",
+      "voiceover": {
+        "text": "Here's the trap that costs the most marks in this topic. Students see a protein involved, and they write active transport. But facilitated diffusion uses proteins too, both channels and carriers, and it's completely passive. So a protein on its own tells you nothing about energy. The real test is two questions. Which way is the substance moving compared with its gradient, and does the process use ATP? If it moves against the gradient and uses ATP, that's active transport. If it moves down the gradient without ATP, it's passive, whether or not a protein is involved. A related slip is thinking endocytosis and exocytosis are passive, because nothing is being pumped. They aren't, because reshaping the membrane into vesicles costs ATP."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A cell is treated with cyanide, which stops aerobic respiration. Predict the effect on (a) oxygen diffusion, (b) the sodium potassium pump and (c) a white blood cell engulfing bacteria.",
+      "pausePrompt": "Pause. Which of these need ATP?",
+      "answerSteps": [
+        "Cyanide stops aerobic respiration, so the cell's ATP supply collapses.",
+        "(a) O₂ diffusion is passive, so it can continue, although the gradient flattens as O₂ is no longer used.",
+        "(b) The sodium potassium pump needs ATP, so it stops and the ion gradients run down.",
+        "(c) Engulfing bacteria is phagocytosis, a type of endocytosis, which needs ATP, so it stops.",
+        "Answer: diffusion continues; active transport and bulk transport stop ✓"
+      ],
+      "durationInFrames": 1748,
+      "caption": "Without ATP, passive transport continues but pumps and vesicles stop.",
+      "voiceover": {
+        "text": "Quick check. A cell is treated with cyanide, a poison that stops aerobic respiration. Predict the effect on three things. Oxygen diffusing in, the sodium potassium pump, and a white blood cell engulfing bacteria. Pause, and ask which of them need ATP. OK, cyanide stops aerobic respiration, so the cell's ATP supply collapses. Oxygen diffusion is passive, so it doesn't need ATP and can still happen, although the cell stops using oxygen, so the gradient flattens and net flow slows. The sodium potassium pump needs ATP directly, so it stops, and the ion gradients slowly run down. And engulfing bacteria is phagocytosis, a type of endocytosis, which needs ATP to reshape the membrane, so that stops too. Passive processes carry on, while active and bulk transport shut down."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Active transport moves substances against their gradient, using carrier proteins and ATP.",
+        "Examples: the sodium potassium pump (3 Na⁺ out, 2 K⁺ in) and root hair cells taking up nitrate.",
+        "Endocytosis brings material in by vesicles; exocytosis releases it. Both need ATP.",
+        "O₂ and CO₂ diffuse; glucose and ions need proteins; very large materials move in vesicles.",
+        "Classify by evidence: gradient direction and ATP dependence, not whether a protein is present."
+      ],
+      "finalPrompt": "Which way is the gradient, and does the process stop when respiration stops?",
+      "durationInFrames": 1816,
+      "caption": "Five takeaways: active transport, examples, bulk transport, routes, classifying by evidence.",
+      "voiceover": {
+        "text": "Let's lock it in. First, active transport moves substances against their concentration gradient, using carrier proteins and ATP. Second, the classic examples are the sodium potassium pump, three sodium out and two potassium in, and root hair cells collecting nitrate from dilute soil water. Third, endocytosis brings material in by folding the membrane into vesicles, exocytosis releases it by fusing vesicles with the membrane, and both need ATP. Fourth, oxygen and carbon dioxide diffuse through the bilayer, glucose and ions need proteins, and very large materials travel in vesicles. And fifth, classify any process by the evidence, the gradient direction and whether it depends on ATP, not by whether a protein is present. Next time, exactly what a cell needs to take in, and what it must get rid of. See you then."
+      }
+    }
+  ]
+}

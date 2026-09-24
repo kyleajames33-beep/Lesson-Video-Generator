@@ -1,0 +1,526 @@
+{
+  "title": "Enzymes",
+  "subtitle": "How enzymes work, and how temperature, pH and substrate concentration affect them",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Explain the role of enzymes in cells",
+    "Use diagrams of the induced fit model and the lock and key model to explain the interaction between enzymes and specific substrates",
+    "Plan and conduct laboratory experiments to demonstrate the effect of temperature, pH and substrate concentration on the efficiency of a selected enzyme",
+    "Analyse graphs to explain the effect of temperature, pH and substrate concentration on enzyme activity",
+    "conduct a practical investigation to model the action of enzymes in cells (ACSBL050)",
+    "investigate the effects of the environment on enzyme activity through the collection of primary or secondary data (ACSBL050, ACSBL051)"
+  ],
+  "moduleLessonCount": 7,
+  "nesaOutcomes": [
+    "BI-11-01",
+    "BI-11WS-02",
+    "BI-11WS-03",
+    "BI-11WS-05"
+  ],
+  "inquiryQuestion": "How do enzymes control the chemical reactions in cells, and what affects how well they work?",
+  "lessonIntent": "Students can explain the role of enzymes, compare the lock and key and induced fit models, and analyse graphs showing the effects of temperature, pH and substrate concentration on enzyme activity.",
+  "examSkill": "Describe and explain the shape of an enzyme activity graph using active site, collisions, denaturation and saturation, and plan a valid enzyme experiment.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, enzymes, and the graphs that show how they work. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Enzymes"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "From 78 million years to milliseconds",
+      "body": "One reaction in your cells would take about 78 million years to get halfway on its own. Its enzyme does it in milliseconds.",
+      "callout": "How can one protein speed up a reaction that much?",
+      "image": "bioY11M1L7EnzymeActiveSite",
+      "durationInFrames": 1721,
+      "caption": "Enzymes can turn a reaction taking millions of years into one taking milliseconds.",
+      "voiceover": {
+        "text": "There's a reaction in your cells, part of making the building blocks of DNA and RNA, that would take around seventy eight million years to get halfway done on its own. With its enzyme, it happens in milliseconds. Without enzymes, the chemistry of life would be far too slow to keep you alive. Yet enzymes are just proteins, and they're surprisingly fussy. Heat them a little too much, or change the pH, and they stop working. So how can a single protein speed up a reaction that much, and why is it so sensitive to its conditions? Today we'll see how enzymes work, compare two models of how they bind their substrates, and learn to read the three graphs that appear in almost every enzyme question."
+      }
+    },
+    {
+      "id": "concept-role",
+      "type": "concept",
+      "heading": "Enzymes are biological catalysts",
+      "body": "Enzymes speed up reactions by lowering the activation energy, without being used up.",
+      "bullets": [
+        {
+          "text": "Most enzymes are globular proteins with a specific active site."
+        },
+        {
+          "text": "They lower activation energy, so reactions run fast at body temperature."
+        },
+        {
+          "text": "They are specific and reusable, so cells control reactions by controlling enzymes."
+        }
+      ],
+      "callout": "Lower activation energy, faster reaction, same products.",
+      "durationInFrames": 1789,
+      "caption": "Enzymes lower activation energy, speeding reactions without being used up.",
+      "voiceover": {
+        "text": "So, what exactly is an enzyme? An enzyme is a biological catalyst, a molecule that speeds up a chemical reaction without being used up. Almost all enzymes are globular proteins, folded into a precise three dimensional shape, and one small region of that shape, the active site, is where the reaction happens. Every reaction needs a certain amount of energy to get started, called the activation energy. Look at the graph. Without an enzyme, that energy barrier is high, so at body temperature very few molecules get over it. An enzyme lowers the activation energy, so the same reaction runs quickly at thirty seven degrees, and the products are exactly the same. Because each enzyme is specific to one reaction, a cell controls its chemistry by controlling which enzymes it makes."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Progress of reaction",
+        "yLabel": "Energy",
+        "series": [
+          {
+            "label": "Without enzyme",
+            "color": "amber",
+            "points": [
+              [
+                0,
+                0.35
+              ],
+              [
+                0.25,
+                0.4
+              ],
+              [
+                0.5,
+                0.9
+              ],
+              [
+                0.75,
+                0.2
+              ],
+              [
+                1,
+                0.15
+              ]
+            ]
+          },
+          {
+            "label": "With enzyme",
+            "color": "bio",
+            "dashed": true,
+            "points": [
+              [
+                0,
+                0.35
+              ],
+              [
+                0.25,
+                0.38
+              ],
+              [
+                0.5,
+                0.58
+              ],
+              [
+                0.75,
+                0.2
+              ],
+              [
+                1,
+                0.15
+              ]
+            ]
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-models",
+      "type": "concept",
+      "heading": "Lock and key versus induced fit",
+      "body": "Both models explain specificity: only a substrate that fits the active site can bind.",
+      "bullets": [
+        {
+          "text": "Lock and key: a rigid active site exactly matches the substrate."
+        },
+        {
+          "text": "Induced fit: a flexible active site moulds around the substrate as it binds."
+        },
+        {
+          "text": "Induced fit is the accepted model; the tighter fit strains bonds in the substrate."
+        }
+      ],
+      "callout": "Induced fit also explains how binding lowers activation energy.",
+      "durationInFrames": 1953,
+      "caption": "Lock and key: rigid active site. Induced fit: the active site changes shape to fit.",
+      "voiceover": {
+        "text": "Now, how does an enzyme bind its substrate? There are two models, and the syllabus wants you to compare them using diagrams. The older one is the lock and key model, proposed by Emil Fischer in 1894. The active site is a rigid shape that exactly matches the substrate, just as only one key fits a lock. The substrate binds to form an enzyme substrate complex, the reaction happens, and the products are released. In 1958, Daniel Koshland proposed the induced fit model. Here, the active site isn't a perfect match to begin with. As the substrate binds, the active site changes shape and moulds around it, a bit like a glove around a hand. That tighter fit puts strain on bonds in the substrate, which helps explain how the enzyme lowers the activation energy. Induced fit is the model biologists accept today."
+      },
+      "diagram": {
+        "type": "beforeAfter",
+        "beforeLabel": "Lock and key (1894)",
+        "beforeContent": "Rigid active site; the substrate fits exactly, like a key in a lock",
+        "afterLabel": "Induced fit (1958)",
+        "afterContent": "Flexible active site changes shape around the substrate for a tighter fit"
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Enzyme: a biological catalyst, usually a protein, that speeds up a reaction without being used up."
+        },
+        {
+          "text": "Active site: the region of an enzyme where the substrate binds and reacts."
+        },
+        {
+          "text": "Substrate: the molecule an enzyme acts on."
+        },
+        {
+          "text": "Denaturation: a change in an enzyme's shape, usually permanent, so the active site no longer fits the substrate."
+        }
+      ],
+      "callout": "Denatured means changed shape, not killed.",
+      "durationInFrames": 1352,
+      "caption": "Enzyme, active site, substrate, denaturation.",
+      "voiceover": {
+        "text": "Let's pin down four terms you'll use in every enzyme answer. An enzyme is a biological catalyst, usually a protein, that speeds up a reaction without being used up. The active site is the region of the enzyme where the substrate binds and the reaction takes place. The substrate is the molecule the enzyme acts on. And denaturation is a change in the enzyme's three dimensional shape, usually permanent, so the active site no longer fits its substrate. Notice the wording there. Enzymes aren't alive, so they can't be killed. A denatured enzyme hasn't died, it has changed shape."
+      }
+    },
+    {
+      "id": "concept-temperature",
+      "type": "concept",
+      "heading": "Effect of temperature",
+      "body": "Rate rises with temperature up to an optimum, then falls steeply as the enzyme denatures.",
+      "bullets": [
+        {
+          "text": "Rising temperature: more kinetic energy, more collisions, faster rate."
+        },
+        {
+          "text": "Optimum: the fastest rate, about 37 °C for most human enzymes."
+        },
+        {
+          "text": "Above the optimum: bonds holding the shape break and the enzyme denatures."
+        }
+      ],
+      "callout": "Cold slows enzymes down; heat denatures them.",
+      "durationInFrames": 1884,
+      "caption": "Gradual rise to an optimum near 37 °C, then a steep fall as the enzyme denatures.",
+      "voiceover": {
+        "text": "Now the three graphs, starting with temperature. Read it from left to right. At low temperatures the rate is slow, but not because the enzyme is damaged. The molecules simply have little kinetic energy, so the enzyme and substrate collide less often. As the temperature rises, they move faster and collide more frequently, so the rate increases. It peaks at the optimum temperature, which is about thirty seven degrees for most human enzymes. Then look how steeply it falls. Above the optimum, the extra energy breaks the hydrogen bonds and other weak bonds that hold the enzyme's shape together. The active site changes shape, the substrate no longer fits, and the enzyme is denatured. That's why the curve isn't symmetrical, with a gradual rise and a steep fall, and why cooling a denatured enzyme won't bring it back."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Temperature (0 to 70 °C)",
+        "yLabel": "Rate of reaction",
+        "series": [
+          {
+            "label": "Human enzyme",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0.04
+              ],
+              [
+                0.15,
+                0.12
+              ],
+              [
+                0.3,
+                0.3
+              ],
+              [
+                0.45,
+                0.6
+              ],
+              [
+                0.53,
+                0.82
+              ],
+              [
+                0.6,
+                0.68
+              ],
+              [
+                0.68,
+                0.3
+              ],
+              [
+                0.76,
+                0.06
+              ],
+              [
+                1,
+                0.02
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 0.53,
+            "label": "Optimum ≈ 37 °C"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-ph",
+      "type": "concept",
+      "heading": "Effect of pH",
+      "body": "Each enzyme works fastest at its optimum pH, and activity falls either side of it.",
+      "bullets": [
+        {
+          "text": "At the optimum pH, the active site has the right shape and charge."
+        },
+        {
+          "text": "Pepsin in the stomach works best near pH 2; salivary amylase near pH 7."
+        },
+        {
+          "text": "Away from the optimum, charges in the active site change; extremes denature it."
+        }
+      ],
+      "callout": "An enzyme's optimum pH matches where it works.",
+      "durationInFrames": 1625,
+      "caption": "Pepsin peaks near pH 2, salivary amylase near pH 7.",
+      "voiceover": {
+        "text": "Next, pH, and this graph is more symmetrical. Each enzyme has an optimum pH, where its active site has exactly the right shape and charge to bind its substrate, and either side of that the rate falls away. That's because hydrogen ions interact with charged parts of the enzyme. Change the pH and you change those charges, which disrupts the bonds holding the active site in shape, and at extremes the enzyme denatures. The really useful point is that each enzyme's optimum matches the place it works. Pepsin, which digests protein in the acidic stomach, works best at around pH two. Salivary amylase, which starts breaking down starch in your mouth, works best close to neutral, around pH seven."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "pH (0 to 14)",
+        "yLabel": "Rate of reaction",
+        "series": [
+          {
+            "label": "Pepsin (stomach)",
+            "color": "amber",
+            "points": [
+              [
+                0.02,
+                0.3
+              ],
+              [
+                0.07,
+                0.62
+              ],
+              [
+                0.14,
+                0.85
+              ],
+              [
+                0.22,
+                0.55
+              ],
+              [
+                0.3,
+                0.15
+              ],
+              [
+                0.38,
+                0.03
+              ],
+              [
+                0.5,
+                0.02
+              ]
+            ]
+          },
+          {
+            "label": "Salivary amylase (mouth)",
+            "color": "bio",
+            "points": [
+              [
+                0.3,
+                0.03
+              ],
+              [
+                0.4,
+                0.42
+              ],
+              [
+                0.5,
+                0.85
+              ],
+              [
+                0.6,
+                0.42
+              ],
+              [
+                0.7,
+                0.03
+              ]
+            ]
+          }
+        ],
+        "markers": [
+          {
+            "x": 0.14,
+            "label": "pH 2"
+          },
+          {
+            "x": 0.5,
+            "label": "pH 7"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-substrate",
+      "type": "concept",
+      "heading": "Effect of substrate concentration",
+      "body": "With a fixed amount of enzyme, the rate rises with substrate concentration, then levels off.",
+      "bullets": [
+        {
+          "text": "More substrate: more collisions with free active sites, faster rate."
+        },
+        {
+          "text": "The curve plateaus when every active site is occupied: saturation."
+        },
+        {
+          "text": "On the plateau, enzyme concentration is the limiting factor."
+        }
+      ],
+      "callout": "A plateau means the active sites are full, not that the enzyme has denatured.",
+      "durationInFrames": 1625,
+      "caption": "Rate rises, then plateaus when all active sites are saturated.",
+      "voiceover": {
+        "text": "The third graph is substrate concentration, with a fixed amount of enzyme. At first, adding substrate increases the rate almost in a straight line, because there are plenty of free active sites, so more substrate means more successful collisions. But then the curve bends and levels off into a plateau. At that point, every active site is busy at any moment. The enzymes are saturated, and they can't work any faster, however much extra substrate you add. So on the plateau, substrate is no longer the limiting factor. The enzyme concentration is, and if you added more enzyme, the plateau would rise. The plateau has nothing to do with denaturation. The enzymes are working perfectly, they're just all occupied."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Substrate concentration",
+        "yLabel": "Rate of reaction",
+        "series": [
+          {
+            "label": "Fixed amount of enzyme",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                0.12,
+                0.38
+              ],
+              [
+                0.25,
+                0.6
+              ],
+              [
+                0.45,
+                0.8
+              ],
+              [
+                0.7,
+                0.88
+              ],
+              [
+                1,
+                0.9
+              ]
+            ]
+          }
+        ],
+        "hLines": [
+          {
+            "y": 0.9,
+            "label": "Maximum rate: active sites saturated"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Planning an enzyme experiment",
+      "question": "Plan an experiment to test the effect of temperature on catalase, an enzyme that breaks down hydrogen peroxide into water and oxygen. Identify the variables, a control, and how you would measure the rate.",
+      "coachNote": "Change one thing, measure one thing, keep everything else the same.",
+      "steps": [
+        "Independent variable: temperature, using water baths at 10, 20, 30, 40, 50 and 60 °C.",
+        "Dependent variable: rate, as the volume of O₂ collected in a gas syringe over 60 seconds.",
+        "Controlled variables: volume and concentration of H₂O₂, mass of potato, pH.",
+        "Control: boiled potato should release almost no O₂, showing the enzyme is responsible.",
+        "Reliability: repeat three times at each temperature and average the results ✓"
+      ],
+      "durationInFrames": 1925,
+      "caption": "Temperature is the independent variable; O₂ volume per minute measures the rate.",
+      "voiceover": {
+        "text": "The syllabus asks you to plan enzyme experiments, so let's design one. We'll test the effect of temperature on catalase, an enzyme in potato and liver cells that breaks down hydrogen peroxide into water and oxygen. The independent variable, the one you change, is temperature. You might use water baths at ten, twenty, thirty, forty, fifty and sixty degrees. The dependent variable is the rate, and since oxygen is a product, you can measure the volume of oxygen collected in a gas syringe over sixty seconds. Everything else stays controlled, the same volume and concentration of hydrogen peroxide, the same mass of potato, and the same pH. Add a control too, using boiled potato, which should release almost no oxygen, showing the enzyme is responsible. Finally, repeat each temperature three times and average the results, which makes the data more reliable."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: 'High temperatures kill the enzyme.' Enzymes are not alive. They denature: the active site changes shape.",
+      "secondary": "Trap 2: 'Low temperatures denature enzymes.' No. Cold only slows collisions; activity returns when it warms up.",
+      "mistakeTag": "Where enzyme marks vanish",
+      "callout": "Hot: denatured, usually permanent. Cold: slowed, reversible.",
+      "durationInFrames": 1707,
+      "caption": "Enzymes denature, not die; cold slows them but does not denature them.",
+      "voiceover": {
+        "text": "Two traps that cost marks in almost every enzyme question. Trap one is writing that high temperatures kill the enzyme. Enzymes are proteins, not living things, so they can't die. What happens is denaturation. The bonds holding the shape break, the active site changes shape, and the substrate can no longer bind. Trap two is saying that cold temperatures denature enzymes. They don't. In the cold, the molecules move slowly, so collisions are less frequent and the rate drops, but the enzyme's shape is fine. Warm it back up, and its activity returns, which is exactly why we store food in the fridge. So the discriminator is simple. Above the optimum, the shape changes, usually for good. Below it, the molecules are just slowed down."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "The rate of an enzyme reaction rises as substrate concentration increases, then stays constant above a certain concentration. Explain the plateau, and predict the effect of doubling the enzyme concentration.",
+      "pausePrompt": "Pause. What is limiting the rate on the plateau?",
+      "answerSteps": [
+        "At low substrate concentration, more substrate means more collisions with free active sites, so the rate rises.",
+        "On the plateau, all active sites are occupied: the enzyme is saturated.",
+        "Enzyme concentration, not substrate, is now the limiting factor.",
+        "Doubling the enzyme doubles the active sites, so the maximum rate rises, roughly doubling.",
+        "Answer: plateau = saturation; more enzyme raises the plateau ✓"
+      ],
+      "durationInFrames": 1625,
+      "caption": "Plateau = saturated active sites; doubling enzyme roughly doubles the maximum rate.",
+      "voiceover": {
+        "text": "Quick check. The rate of an enzyme reaction rises as substrate concentration increases, then stays constant above a certain concentration. Explain the plateau, and predict what would happen if the enzyme concentration were doubled. Pause, and ask what's limiting the rate on the plateau. OK, at low substrate concentrations, adding substrate means more collisions with free active sites, so the rate rises. On the plateau, every active site is occupied, so the enzyme is saturated, and extra substrate can't help. That means the limiting factor is now the amount of enzyme. So if you double the enzyme concentration, you double the number of active sites, and the maximum rate rises, roughly doubling, as long as there's plenty of substrate."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Enzymes are protein catalysts that lower activation energy and are not used up.",
+        "Lock and key: rigid active site. Induced fit: the active site moulds around the substrate.",
+        "Temperature: rate rises to an optimum, then falls steeply as the enzyme denatures.",
+        "pH: each enzyme has an optimum pH; extremes change active site charges and denature it.",
+        "Substrate concentration: rate rises, then plateaus when active sites are saturated."
+      ],
+      "finalPrompt": "Reading any enzyme graph: is the rate limited by collisions, saturation or denaturation?",
+      "durationInFrames": 1652,
+      "caption": "Five takeaways: catalysts, two models, temperature, pH, substrate concentration.",
+      "voiceover": {
+        "text": "Let's lock it in. First, enzymes are protein catalysts that lower the activation energy of a reaction, and they aren't used up. Second, in the lock and key model the active site is rigid, while in the induced fit model it moulds around the substrate. Third, as temperature rises, the rate increases to an optimum, then falls steeply as the enzyme denatures. Fourth, each enzyme has an optimum pH, and extremes change the charges in the active site and denature it. And fifth, as substrate concentration rises, the rate climbs and then plateaus, because the active sites are saturated. For every enzyme graph, ask whether the rate is being limited by collisions, by saturation, or by denaturation. See you next time."
+      }
+    }
+  ]
+}

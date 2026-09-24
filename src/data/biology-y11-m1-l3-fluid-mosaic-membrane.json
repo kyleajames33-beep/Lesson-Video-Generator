@@ -1,0 +1,342 @@
+{
+  "title": "The Fluid Mosaic Model",
+  "subtitle": "How the cell membrane's structure controls what crosses it",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Biology 11–12 Syllabus (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Use the fluid mosaic model of the cell membrane to explain the structure and function of protein channels, phospholipids, peripheral proteins, integral proteins, cholesterol and glycoproteins",
+    "investigate a variety of prokaryotic and eukaryotic cell structures, including but not limited to: modelling the structure and function of the fluid mosaic model of the cell membrane (ACSBL045)"
+  ],
+  "moduleLessonCount": 7,
+  "nesaOutcomes": [
+    "BI-11-01",
+    "BI-11WS-05",
+    "BI-11WS-07"
+  ],
+  "inquiryQuestion": "How does the structure of the cell membrane control what enters and leaves a cell?",
+  "lessonIntent": "Students can use the fluid mosaic model to describe phospholipids, integral and peripheral proteins, protein channels, cholesterol and glycoproteins, and explain how each contributes to membrane function.",
+  "examSkill": "Draw and label the fluid mosaic model, explain why it is both fluid and a mosaic, and use it to predict which substances can cross the bilayer directly.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, the fluid mosaic model of the cell membrane. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "The Fluid Mosaic Model"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A wall two molecules thick",
+      "body": "The cell membrane is only about 7 to 10 nanometres thick, yet it decides what enters and leaves every cell.",
+      "callout": "How can something so thin be so selective?",
+      "image": "bioY11M1L3MembraneMosaic",
+      "durationInFrames": 1625,
+      "caption": "A membrane about 10 000 times thinner than paper controls everything that crosses it.",
+      "voiceover": {
+        "text": "Every cell you own is wrapped in a membrane only about seven to ten nanometres thick. You'd need to stack around ten thousand of them to match the thickness of a sheet of paper. And yet this incredibly thin layer decides what enters and leaves the cell, keeping sugars and ions in, keeping many toxins out, and letting oxygen slip straight through. It can even flow, bend, and reseal itself when it's punctured. So how can something so thin be so selective, and so tough? The answer lies in how it's built. In 1972, Singer and Nicolson proposed the fluid mosaic model, and it's still how biologists picture the membrane today. Let's build it, one piece at a time."
+      }
+    },
+    {
+      "id": "concept-phospholipids",
+      "type": "concept",
+      "heading": "Phospholipids form the bilayer",
+      "body": "Phospholipids have a hydrophilic head and two hydrophobic tails, so in water they form a double layer.",
+      "bullets": [
+        {
+          "text": "Hydrophilic phosphate heads face the watery fluid on each side."
+        },
+        {
+          "text": "Two hydrophobic fatty acid tails point inward, away from water."
+        },
+        {
+          "text": "The hydrophobic core blocks ions and large polar molecules."
+        }
+      ],
+      "callout": "Heads out, tails in.",
+      "durationInFrames": 1802,
+      "caption": "Phospholipids form a bilayer with a hydrophobic core that blocks ions and polar molecules.",
+      "voiceover": {
+        "text": "Let's start with the main ingredient, the phospholipid. Each one has a phosphate head that's hydrophilic, meaning it's attracted to water, and two long fatty acid tails that are hydrophobic, meaning they avoid water. Now put millions of them in the watery environment of a cell. The tails hide from water by pointing inward, toward each other, while the heads face outward into the fluid on both sides, the tissue fluid outside and the cytoplasm inside. The result is a phospholipid bilayer, two molecules thick. That hydrophobic core in the middle is the key to selectivity. Small nonpolar molecules like oxygen and carbon dioxide dissolve through it easily. But ions, which are charged, and large polar molecules like glucose are repelled by the oily core, so they can't cross on their own."
+      },
+      "diagram": {
+        "type": "explode",
+        "parts": [
+          {
+            "label": "Phosphate head (hydrophilic)"
+          },
+          {
+            "label": "Glycerol"
+          },
+          {
+            "label": "Fatty acid tail (hydrophobic)"
+          },
+          {
+            "label": "Fatty acid tail (hydrophobic)"
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-proteins",
+      "type": "concept",
+      "heading": "Proteins make the mosaic",
+      "body": "Proteins are scattered through the bilayer like tiles in a mosaic.",
+      "bullets": [
+        {
+          "text": "Integral proteins are embedded in the bilayer, often spanning it."
+        },
+        {
+          "text": "Protein channels are integral proteins with a water filled pore for specific ions."
+        },
+        {
+          "text": "Peripheral proteins sit on one surface, bound to lipids or other proteins."
+        }
+      ],
+      "callout": "Integral goes through; peripheral sits on the surface.",
+      "durationInFrames": 2035,
+      "caption": "Integral proteins span the bilayer; channels have a hydrophilic pore; peripheral proteins sit on the surface.",
+      "voiceover": {
+        "text": "Now the mosaic part. Scattered through the bilayer, like tiles in a mosaic, are proteins, and the syllabus wants you to tell three kinds apart. Integral proteins are embedded in the bilayer, and many span it completely, poking out on both sides. They're the membrane's gatekeepers, acting as carriers, pumps and receptors. A protein channel is a special integral protein with a narrow, water filled pore through its middle. The pore is lined with hydrophilic parts of the protein, so specific ions, or water molecules, can pass through without touching the oily core. Each channel is selective, so a potassium channel lets potassium ions through, but not sodium. Peripheral proteins don't enter the core at all. They sit on the inner or outer surface, attached to phospholipid heads or to integral proteins, and they often act as enzymes, relay signals, or anchor the membrane to the cell's internal skeleton."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Protein",
+          "Position",
+          "Function"
+        ],
+        "rows": [
+          [
+            "Integral",
+            "Embedded; often spans the bilayer",
+            "Carriers, pumps, receptors"
+          ],
+          [
+            "Protein channel",
+            "Integral, with a hydrophilic pore",
+            "Lets specific ions or water through"
+          ],
+          [
+            "Peripheral",
+            "Attached to one surface only",
+            "Enzymes, signalling, anchoring the cytoskeleton"
+          ]
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-fluid",
+      "type": "concept",
+      "heading": "Why it is fluid, and what cholesterol does",
+      "body": "The phospholipids and many proteins drift sideways constantly, so the membrane behaves like a thin oil film.",
+      "bullets": [
+        {
+          "text": "Molecules move sideways within each layer; nothing is rigidly fixed."
+        },
+        {
+          "text": "Cholesterol sits between phospholipids in animal cell membranes."
+        },
+        {
+          "text": "Cholesterol steadies fluidity: less runny when warm, less stiff when cold."
+        }
+      ],
+      "callout": "Cholesterol is the membrane's fluidity buffer.",
+      "durationInFrames": 1898,
+      "caption": "The bilayer is fluid; cholesterol keeps its fluidity steady across temperatures.",
+      "voiceover": {
+        "text": "So why call it fluid? Because the membrane isn't a rigid wall. The phospholipids are constantly jostling and drifting sideways within their layer, swapping places with their neighbours millions of times a second, and many proteins drift around too. The membrane behaves more like a film of oil than a sheet of plastic, which is why it can bend, change shape, and seal small holes by itself. But that fluidity has to be controlled, and in animal cells that's the job of cholesterol. Cholesterol molecules slot in between the phospholipid tails. When it's warm, they restrain the tails and stop the membrane getting too runny. When it's cold, they stop the tails packing tightly, so the membrane doesn't go stiff. Look at the graph. Without cholesterol, fluidity swings sharply with temperature, but with it, the change is much gentler."
+      },
+      "diagram": {
+        "type": "lineGraph",
+        "xLabel": "Temperature",
+        "yLabel": "Membrane fluidity",
+        "series": [
+          {
+            "label": "Without cholesterol",
+            "color": "amber",
+            "points": [
+              [
+                0,
+                0.08
+              ],
+              [
+                0.3,
+                0.14
+              ],
+              [
+                0.45,
+                0.45
+              ],
+              [
+                0.6,
+                0.8
+              ],
+              [
+                1,
+                0.95
+              ]
+            ]
+          },
+          {
+            "label": "With cholesterol",
+            "color": "bio",
+            "points": [
+              [
+                0,
+                0.3
+              ],
+              [
+                0.5,
+                0.5
+              ],
+              [
+                1,
+                0.7
+              ]
+            ]
+          }
+        ]
+      },
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-glycoproteins",
+      "type": "concept",
+      "heading": "Glycoproteins: the cell's ID badges",
+      "body": "Glycoproteins are proteins with carbohydrate chains attached, facing outward from the cell.",
+      "bullets": [
+        {
+          "text": "Carbohydrate chains project into the fluid outside the cell."
+        },
+        {
+          "text": "They act as markers for cell recognition, such as self versus non-self."
+        },
+        {
+          "text": "They also act as receptors and help cells stick together."
+        }
+      ],
+      "callout": "Carbohydrate chains face outside, never into the cytoplasm.",
+      "durationInFrames": 1693,
+      "caption": "Glycoproteins are outward facing markers and receptors.",
+      "voiceover": {
+        "text": "The last component is the glycoprotein, which is simply a protein with a chain of carbohydrate attached. The carbohydrate part always faces outward, into the fluid surrounding the cell, and that makes glycoproteins perfect identification markers. Your immune system reads the pattern of glycoproteins on a cell's surface to decide whether it's one of your own cells or something foreign. It's the same principle behind organ rejection, where the immune system recognises a donor organ's surface markers as foreign. Glycoproteins also act as receptors, binding specific signal molecules like hormones, and they help neighbouring cells stick together to form tissues. So if the integral proteins are the gatekeepers, the glycoproteins are the ID badges, and they're how a cell communicates with everything around it."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Phospholipid bilayer: two layers of phospholipids, tails inward, forming the membrane's core."
+        },
+        {
+          "text": "Integral protein: a protein embedded in, and often spanning, the bilayer."
+        },
+        {
+          "text": "Peripheral protein: a protein attached to one surface of the membrane only."
+        },
+        {
+          "text": "Fluid mosaic model: a fluid bilayer with a mosaic of proteins moving within it."
+        }
+      ],
+      "callout": "Fluid describes movement; mosaic describes the scattered proteins.",
+      "durationInFrames": 1666,
+      "caption": "Bilayer, integral protein, peripheral protein, fluid mosaic model.",
+      "voiceover": {
+        "text": "Let's lock down the key definitions. The phospholipid bilayer is the double layer of phospholipids, tails pointing inward, that forms the membrane's core. An integral protein is embedded in the bilayer, and it often spans it from one side to the other. A peripheral protein is attached to only one surface of the membrane, and it never passes into the core. And the fluid mosaic model describes the whole membrane as a fluid phospholipid bilayer, with a mosaic of proteins scattered through it and moving within it. When you define the model in an exam, explain both words. Fluid is about movement, because the components drift sideways. Mosaic is about pattern, because many different proteins are scattered through the bilayer like tiles."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Predicting what crosses the bilayer",
+      "question": "Using the fluid mosaic model, explain why oxygen crosses the membrane directly through the bilayer, but sodium ions (Na⁺) need a protein channel.",
+      "coachNote": "Ask two things about each substance: its size, and whether it is charged or polar.",
+      "steps": [
+        "The core of the bilayer is made of hydrophobic fatty acid tails.",
+        "O₂ is small and nonpolar, so it dissolves through the hydrophobic core.",
+        "Na⁺ is charged, so it is repelled by the hydrophobic core.",
+        "A protein channel provides a hydrophilic pore, so Na⁺ crosses without touching the core.",
+        "Answer: O₂ is small and nonpolar; Na⁺ is charged and needs a channel's hydrophilic pore ✓"
+      ],
+      "durationInFrames": 1871,
+      "caption": "Small nonpolar molecules cross the bilayer; ions need a channel.",
+      "voiceover": {
+        "text": "Let's use the model to explain something, which is exactly what the syllabus asks. Why does oxygen cross the membrane directly through the bilayer, while sodium ions need a protein channel? The approach is to ask two questions about each substance. How big is it, and is it charged or polar? Start with the structure. The core of the bilayer is made of hydrophobic fatty acid tails. Oxygen is a small, nonpolar molecule, so it dissolves straight through that oily core, with no help needed. A sodium ion, though, carries a positive charge, and charged particles are repelled by the hydrophobic core. So it needs a protein channel, whose hydrophilic pore gives it a path that avoids the core entirely. Notice how the answer links a structure to a function. That link is where the marks are."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps",
+      "body": "Trap 1: 'The membrane is a fixed, solid barrier.' No. Phospholipids and many proteins are constantly moving sideways.",
+      "secondary": "Trap 2: mixing up integral and peripheral proteins. Channels and carriers must cross the membrane, so they are always integral.",
+      "mistakeTag": "Where membrane marks vanish",
+      "callout": "Fluid means moving; if it carries things across, it is integral.",
+      "durationInFrames": 1775,
+      "caption": "The membrane is fluid, not fixed; transport proteins are always integral.",
+      "voiceover": {
+        "text": "Two traps worth avoiding. The first is picturing the membrane as a fixed, solid skin, because that's how it looks in a textbook diagram. In reality, it's constantly moving. Phospholipids swap places with their neighbours all the time, and many proteins drift through the bilayer like boats on a lake. If your answer describes the membrane as rigid, you've contradicted the very word fluid. The second trap is mixing up integral and peripheral proteins. Integral proteins are embedded in the bilayer, while peripheral proteins sit on one surface only. Here's a check you can use on the day. Channels and carriers have to reach from one side of the membrane to the other to do their job. So if a protein moves substances across the membrane, it must be integral."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Cholesterol is removed from an animal cell's membrane, and the cell is then warmed to 40 °C. Predict and explain the effect on the membrane.",
+      "pausePrompt": "Pause. What does cholesterol do when it's warm?",
+      "answerSteps": [
+        "When warm, cholesterol normally restrains the movement of phospholipid tails.",
+        "Without cholesterol, the phospholipids move more freely, so the membrane becomes too fluid.",
+        "A more fluid membrane is leakier, so ions and small molecules cross more easily.",
+        "Answer: the membrane becomes more fluid and more permeable, so the cell loses control of what crosses ✓"
+      ],
+      "durationInFrames": 1584,
+      "caption": "No cholesterol plus heat: a membrane that is too fluid and too leaky.",
+      "voiceover": {
+        "text": "Quick check. Cholesterol is removed from an animal cell's membrane, and the cell is then warmed to forty degrees. Predict the effect on the membrane, and explain it. Pause, and think about what cholesterol does when it's warm. OK, at higher temperatures, cholesterol normally restrains the phospholipid tails and holds the membrane together. Take it away, and the phospholipids move much more freely, so the membrane becomes too fluid. And a membrane that's too fluid is also leakier, because gaps open up between the phospholipids, so ions and small molecules cross more easily. So your prediction is that the membrane becomes more fluid and more permeable, and the cell starts losing control over what crosses it."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Phospholipids form a bilayer: hydrophilic heads out, hydrophobic tails in.",
+        "Integral proteins span the bilayer; channels give ions a hydrophilic pore; peripheral proteins sit on the surface.",
+        "Fluid: molecules drift sideways. Mosaic: proteins scattered like tiles.",
+        "Cholesterol steadies fluidity; glycoproteins are recognition markers and receptors.",
+        "Small nonpolar molecules cross the bilayer; ions and large polar molecules need proteins."
+      ],
+      "finalPrompt": "For any substance: small and nonpolar, or charged and polar? That decides how it crosses.",
+      "durationInFrames": 1625,
+      "caption": "Five takeaways: bilayer, proteins, fluid mosaic, cholesterol and glycoproteins, what crosses.",
+      "voiceover": {
+        "text": "Let's lock it in. First, phospholipids form a bilayer, with hydrophilic heads facing out and hydrophobic tails facing in. Second, integral proteins are embedded in the bilayer and often span it, protein channels give ions a hydrophilic pore, and peripheral proteins sit on the surface. Third, the model is fluid because the molecules drift sideways, and a mosaic because the proteins are scattered like tiles. Fourth, cholesterol keeps fluidity steady across temperatures, and glycoproteins act as recognition markers and receptors on the outside of the cell. And fifth, small nonpolar molecules slip straight through the bilayer, while ions and large polar molecules need a protein. Next lesson, we'll use this model to explain diffusion and osmosis. See you then."
+      }
+    }
+  ]
+}
