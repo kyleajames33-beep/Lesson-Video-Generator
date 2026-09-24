@@ -1,26 +1,28 @@
 {
-  "title": "Reproductive Technologies — Artificial Insemination and Artificial Pollination",
-  "subtitle": "Controlling which parents combine, without editing a single gene",
+  "title": "Artificial Pollination and Artificial Insemination",
+  "subtitle": "Controlling which parents combine, with Australian examples from wheat breeding to macadamia orchards",
   "subject": "Biology",
   "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 6",
   "lesson": "Lesson 14",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
-  "syllabusModule": "Module 6 — Genetic Change",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
+  "syllabusModule": "Module 6 Genetic Change (2017) + Biotechnology (2025)",
   "syllabusDotPoints": [
-    "compare the processes and outcomes of reproductive technologies, including but not limited to: artificial insemination and artificial pollination"
+    "compare the processes and outcomes of reproductive technologies, including but not limited to: artificial insemination and artificial pollination",
+    "Account for the use of artificial pollination in Australian agriculture, including its methods and outcomes"
   ],
   "moduleLessonCount": 19,
   "nesaOutcomes": [
     "BIO12-13",
+    "BI-12-04",
     "BIO11/12-4",
     "BIO11/12-5",
     "BIO11/12-7"
   ],
   "inquiryQuestion": "Does artificial manipulation of DNA have the potential to change populations forever?",
-  "lessonIntent": "Students can compare artificial insemination and artificial pollination by process and outcome, and explain that both control parental contribution without changing DNA sequence.",
-  "examSkill": "Compare two reproductive technologies across organisms involved, process, purpose and advantage.",
+  "lessonIntent": "Students can account for the methods and outcomes of artificial pollination in Australian agriculture, and compare it with artificial insemination, explaining that both control parental contribution without changing DNA sequence.",
+  "examSkill": "Describe the steps of a controlled cross and its outcome in an Australian crop, then compare artificial pollination and artificial insemination by organism, process, purpose and advantage.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -28,26 +30,26 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, artificial insemination and artificial pollination. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, artificial pollination and artificial insemination. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 105,
-      "caption": "Reproductive Technologies — Artificial Insemination and Artificial Pollination (Year 12 Biology, Module 6, Lesson 14)"
+      "caption": "Artificial Pollination and Artificial Insemination (Year 12 Biology, Module 6, Lesson 14)"
     },
     {
       "id": "hook",
       "type": "hook",
-      "heading": "Shaping the next generation without editing DNA",
-      "body": "A machine sorts 15 million sperm an hour by sex, producing 85% female calves, with DNA identical to natural fertilisation.",
-      "callout": "These tools choose which alleles combine, not what the alleles say.",
-      "image": "bioM6L14ReproTechCompare",
-      "durationInFrames": 870,
-      "caption": "Sperm sorting shows reproductive technology directing inheritance without DNA change.",
+      "heading": "What if the bees can't do the job?",
+      "body": "Varroa mite reached Australia in 2022. Many crops rely on bees to move pollen, so growers need other ways to pollinate.",
+      "callout": "When pollination matters this much, people start doing it on purpose.",
+      "image": "bioM6L14HandPollination",
+      "durationInFrames": 1687,
+      "caption": "Varroa mite's arrival shows why Australian agriculture relies on controlled and artificial pollination.",
       "voiceover": {
-        "text": "In 2019, a trial at Wambiana cattle station in Queensland used flow cytometry to sort sperm carrying an X chromosome from sperm carrying a Y, a machine that processes about fifteen million sperm an hour. They then used artificial insemination to produce around eighty-five percent female calves. Done industry-wide, that could prevent roughly one point five million male bobby calf deaths a year. And the key detail, no gene was edited, the calves' DNA sequences are identical to what natural fertilisation would have produced. So today's question is how a technology that never touches the genome can still shape which traits dominate the next generation."
+        "text": "In June twenty twenty two, a parasite called varroa mite was found in beehives at the Port of Newcastle. Varroa has devastated honeybee colonies around the world, and by late twenty twenty three Australia had given up trying to eradicate it. That's a serious problem for farmers, because crops like almonds, macadamias, apples and many vegetables depend on bees to carry pollen from flower to flower. So what do you do if you can't rely on insects to pollinate? You do it deliberately, which is called artificial pollination. Plant breeders already do it by hand to create new varieties, and growers are testing it as a backup in orchards. Today we'll look at how it's done in Australia, what it achieves, and how it compares with its animal equivalent, artificial insemination."
       }
     },
     {
@@ -56,16 +58,22 @@
       "heading": "Control reproduction, not sequence",
       "body": "Reproductive technologies decide which parents contribute gametes. They do not change any DNA sequence.",
       "bullets": [
-        {"text": "They make a desired trait combination more likely by choosing the parents."},
-        {"text": "The DNA sequence in the offspring is unchanged by the technique."},
-        {"text": "Meiosis and fertilisation variation still occur, so outcomes stay probabilistic."}
+        {
+          "text": "They make a desired trait combination more likely by choosing the parents."
+        },
+        {
+          "text": "The DNA sequence in the offspring is unchanged by the technique."
+        },
+        {
+          "text": "Meiosis and fertilisation variation still occur, so outcomes stay probabilistic."
+        }
       ],
-      "secondary": "Because variation from meiosis and fertilisation still happens, as we saw earlier in the module, these tools raise the probability of a desired result rather than guaranteeing it.",
+      "secondary": "Because variation from meiosis and fertilisation still happens, these tools raise the probability of a desired result rather than guaranteeing it.",
       "callout": "More likely is not the same as guaranteed.",
-      "durationInFrames": 900,
+      "durationInFrames": 1178,
       "caption": "Reproductive technologies choose parents and raise probability, without changing DNA.",
       "voiceover": {
-        "text": "Let's get the core idea straight first. Reproductive technologies decide which parents contribute gametes, and that's all, they do not change any DNA sequence. By choosing the parents carefully, they make a desired trait combination more likely to appear in the offspring. But the actual DNA passed on is exactly what those parents already carry. And crucially, the variation from meiosis and fertilisation, the shuffling we met earlier in this module, still happens every time. So these tools raise the probability of a desired outcome, they do not guarantee it. That word, probability, is what keeps catching people out, more likely is not the same as certain."
+        "text": "Let's get the core idea straight first. Reproductive technologies decide which parents contribute gametes, and that's all, they don't change any DNA sequence. By choosing the parents carefully, they make a desired trait combination more likely to appear in the offspring. But the DNA passed on is exactly what those parents already carry. And the variation from meiosis and fertilisation, the shuffling of alleles, still happens every time. So these tools raise the probability of a desired outcome, they don't guarantee it. More likely is not the same as certain."
       }
     },
     {
@@ -73,63 +81,217 @@
       "type": "definition",
       "heading": "The words you need",
       "bullets": [
-        {"text": "Artificial insemination: deliberately introducing semen into the female reproductive tract without natural mating."},
-        {"text": "Artificial pollination: deliberately transferring selected pollen to a stigma to control plant fertilisation."},
-        {"text": "Controlled breeding: managing which parents contribute gametes to offspring."},
-        {"text": "Trait control: raising the chance that selected inherited characteristics appear in offspring."}
+        {
+          "text": "Artificial pollination: deliberately transferring selected pollen to a stigma to control fertilisation."
+        },
+        {
+          "text": "Emasculation: removing a flower's anthers so it cannot pollinate itself."
+        },
+        {
+          "text": "Cross-pollination: pollen from one plant fertilises a flower on a different plant."
+        },
+        {
+          "text": "Artificial insemination: introducing selected semen into the female reproductive tract without mating."
+        }
       ],
-      "callout": "Insemination is the animal case; pollination is the plant case.",
-      "durationInFrames": 840,
-      "caption": "Artificial insemination, artificial pollination, controlled breeding, trait control.",
+      "callout": "Pollination is the plant case; insemination is the animal case.",
+      "durationInFrames": 1227,
+      "caption": "Artificial pollination, emasculation, cross-pollination, artificial insemination.",
       "voiceover": {
-        "text": "Four terms to anchor this. Artificial insemination is the deliberate introduction of semen into the female reproductive tract, without natural mating, the animal case. Artificial pollination is the deliberate transfer of selected pollen to a chosen stigma to control plant fertilisation, the plant case. Controlled breeding, more broadly, is managing which parents contribute gametes to the offspring. And trait control is raising the chance that selected inherited characteristics actually appear, the goal behind all of this. The simplest way to keep the two main terms apart, insemination is animals and semen, pollination is plants and pollen."
+        "text": "Four terms to anchor this. Artificial pollination is the deliberate transfer of selected pollen onto a chosen stigma, to control which plant fertilises which. Emasculation is removing a flower's anthers, the pollen producing parts, so the flower can't pollinate itself, which matters because many crops, wheat included, naturally self pollinate. Cross pollination is when pollen from one plant fertilises a flower on a different plant. And artificial insemination is the animal version, introducing selected semen into the female reproductive tract without natural mating. So pollination is plants and pollen, insemination is animals and semen."
+      }
+    },
+    {
+      "id": "concept-ap-method",
+      "type": "concept",
+      "heading": "The method: making a controlled cross",
+      "body": "Plant breeders make controlled crosses by hand so they know exactly which two parents produced each seed.",
+      "bullets": [
+        {
+          "text": "Choose two parent plants with the traits you want to combine."
+        },
+        {
+          "text": "Emasculate the female flower before its anthers release pollen, then bag it."
+        },
+        {
+          "text": "Dust pollen from the chosen male parent onto the stigma, re-bag and label it."
+        },
+        {
+          "text": "Collect and grow the seed; test the offspring for the combined traits."
+        }
+      ],
+      "secondary": "The bag keeps out stray pollen from wind or insects, so the only pollen that reaches the stigma is the pollen you chose.",
+      "callout": "Emasculate, bag, pollinate, re-bag: the bag is what makes the cross controlled.",
+      "diagram": {
+        "type": "flow",
+        "nodes": [
+          {
+            "id": "choose",
+            "label": "Choose parents"
+          },
+          {
+            "id": "emas",
+            "label": "Emasculate and bag"
+          },
+          {
+            "id": "poll",
+            "label": "Apply chosen pollen"
+          },
+          {
+            "id": "rebag",
+            "label": "Re-bag and label"
+          },
+          {
+            "id": "seed",
+            "label": "Grow and test seed"
+          }
+        ],
+        "edges": [
+          {
+            "from": "choose",
+            "to": "emas"
+          },
+          {
+            "from": "emas",
+            "to": "poll"
+          },
+          {
+            "from": "poll",
+            "to": "rebag"
+          },
+          {
+            "from": "rebag",
+            "to": "seed"
+          }
+        ]
+      },
+      "durationInFrames": 1786,
+      "caption": "A controlled cross: choose parents, emasculate and bag, apply chosen pollen, re-bag, grow and test.",
+      "recapSeed": "Emasculate, bag, pollinate, re-bag, grow and test.",
+      "voiceover": {
+        "text": "So how is artificial pollination actually done. The classic method is the controlled cross that plant breeders use. First, choose two parent plants with the traits you want to combine, say one with high yield and one with disease resistance. Second, take a flower on the female parent before its anthers have released any pollen, and carefully remove them, that's emasculation. Then cover the flower with a paper bag, so no stray pollen from wind or insects can reach it. Third, collect pollen from the chosen male parent and dust it onto the stigma, then put the bag straight back on and label it with both parents. And fourth, collect the seed, grow it, and test the offspring to find the plants that carry both traits. The bag is the key detail, because it's what makes the cross controlled."
+      }
+    },
+    {
+      "id": "concept-ap-australia",
+      "type": "concept",
+      "heading": "Artificial pollination in Australian agriculture",
+      "body": "Australian growers use artificial pollination both to breed new varieties and to improve fruit and nut set.",
+      "bullets": [
+        {
+          "text": "Wheat breeding: controlled crosses combine traits like yield, drought tolerance and rust resistance."
+        },
+        {
+          "text": "Macadamias: hand cross-pollination has raised nut set above self-pollination in orchard research."
+        },
+        {
+          "text": "Orchards facing varroa: applying pollen by hand or machine is being tested as a backup to bees."
+        }
+      ],
+      "secondary": "Wheat is naturally self-pollinating, so without emasculation a breeder would just get the mother plant's own seed. Macadamias, a native Australian crop, set more nuts when pollen comes from a different variety.",
+      "callout": "Outcomes: new varieties with combined traits, and better fruit and nut set.",
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Use",
+          "Method",
+          "Outcome"
+        ],
+        "rows": [
+          [
+            "Wheat breeding",
+            "Emasculate, bag, hand-pollinate",
+            "New varieties combining traits"
+          ],
+          [
+            "Macadamia orchards",
+            "Hand cross-pollination",
+            "More nuts set than self-pollination"
+          ],
+          [
+            "Varroa backup",
+            "Hand or machine pollen application",
+            "Crops set fruit with fewer bees"
+          ]
+        ]
+      },
+      "durationInFrames": 1798,
+      "caption": "In Australia, artificial pollination breeds new wheat varieties and improves nut and fruit set.",
+      "voiceover": {
+        "text": "Now the Australian examples, and the outcomes they deliver. The biggest use is in wheat breeding. Wheat naturally pollinates itself, so breeders emasculate and bag the flowers and hand pollinate them, to combine traits like high yield, drought tolerance and resistance to rust fungus. Most new wheat varieties grown here start with crosses like that. The outcome is new varieties suited to Australian conditions. A second example is the macadamia, a native Australian nut. Research in Australian orchards has found that hand cross pollination, using pollen from a different variety, produces more nuts than a flower's own pollen. And third, with varroa now here, growers are testing hand and machine pollen application as a backup, so crops can still set fruit if bee numbers fall. So the outcomes are new varieties with combined traits, and better fruit and nut set."
       }
     },
     {
       "id": "concept-process-outcome",
       "type": "concept",
-      "heading": "Same purpose, different system",
+      "heading": "Comparing with artificial insemination",
       "body": "AI and AP share one purpose, control parental contribution, but run in completely different biological systems.",
       "bullets": [
-        {"text": "AI: collect, store and test semen from a selected male, then introduce it at the right time."},
-        {"text": "AP: collect pollen from a selected donor plant and transfer it to a chosen stigma, excluding unwanted pollen."},
-        {"text": "Both increase the probability of desired traits; neither introduces new DNA."}
+        {
+          "text": "AI: collect, store and test semen from a selected male, then introduce it at the right time."
+        },
+        {
+          "text": "AP: collect pollen from a selected donor plant and transfer it to a chosen stigma, excluding unwanted pollen."
+        },
+        {
+          "text": "Both increase the probability of desired traits; neither introduces new DNA."
+        }
       ],
       "secondary": "AI lets a few valuable males breed widely and cuts animal transport; AP replaces uncontrolled wind or animal pollination with directed, planned crosses.",
       "callout": "Identical aim, opposite machinery: semen and timing versus pollen and stigma.",
-      "durationInFrames": 930,
+      "durationInFrames": 1265,
       "caption": "AI uses semen and timing; AP uses pollen and stigma; both raise trait probability.",
       "voiceover": {
-        "text": "Now the comparison the exam wants, same purpose, different system. Artificial insemination collects semen from a selected male, stores and tests it, then introduces it into the female's reproductive tract at the right point in her cycle. That lets a few genetically valuable males breed very widely, and it cuts the need to transport animals, all while improving breeding efficiency. Artificial pollination collects pollen from a selected donor plant and transfers it onto a chosen stigma, while excluding unwanted pollen. That allows planned crosses and far more predictable trait inheritance in the seeds, replacing uncontrolled wind or animal pollination with directed transfer. Both raise the probability of desired traits, and importantly, neither one introduces any new DNA. Identical aim, completely different machinery."
+        "text": "Now the comparison with artificial insemination, the animal equivalent. Artificial insemination collects semen from a selected male, stores and tests it, then introduces it into the female's reproductive tract at the right point in her cycle. That lets a few genetically valuable males breed very widely, and it cuts the need to transport animals. Artificial pollination moves selected pollen onto a chosen stigma while excluding other pollen, which allows planned crosses and more predictable inheritance in the seeds. Both raise the probability of desired traits, and neither one introduces any new DNA. Same aim, completely different machinery."
       },
       "diagram": {
         "type": "table",
-        "headers": ["Feature", "Artificial insemination", "Artificial pollination"],
+        "headers": [
+          "Feature",
+          "Artificial insemination",
+          "Artificial pollination"
+        ],
         "rows": [
-          ["Organisms", "Animals", "Plants"],
-          ["Material moved", "Selected semen", "Selected pollen"],
-          ["Method", "Introduce into tract, timed", "Transfer to stigma, exclude rest"],
-          ["Advantage", "Spread elite males widely", "Planned, predictable crosses"]
+          [
+            "Organisms",
+            "Animals",
+            "Plants"
+          ],
+          [
+            "Material moved",
+            "Selected semen",
+            "Selected pollen"
+          ],
+          [
+            "Method",
+            "Introduce into tract, timed",
+            "Transfer to stigma, exclude rest"
+          ],
+          [
+            "Advantage",
+            "Spread elite males widely",
+            "Planned, predictable crosses"
+          ]
         ]
       }
     },
     {
       "id": "worked-example",
       "type": "workedExample",
-      "heading": "Compare AI and AP",
-      "question": "Compare artificial insemination and artificial pollination. In your answer refer to the organisms involved, the process, the purpose, and one advantage of each.",
-      "coachNote": "A comparison needs a shared point plus a clear difference on each feature, not two separate descriptions.",
+      "heading": "Account for artificial pollination",
+      "question": "Account for the use of artificial pollination in Australian wheat breeding, including its method and outcome. Then state one similarity and one difference with artificial insemination.",
+      "coachNote": "Account for means give reasons: say why each step is done, then the outcome, then compare.",
       "steps": [
-        "Shared purpose: both control which parents contribute genetic material to raise the chance of desired traits.",
-        "Organisms and material: AI uses animals and selected semen; AP uses plants and selected pollen.",
-        "Process: AI introduces semen into the female tract at the right time; AP transfers chosen pollen to a stigma while excluding other pollen.",
-        "Advantages: AI lets one elite male sire many offspring; AP produces planned, more predictable hybrid crosses.",
-        "Answer: same controlling purpose, but AI acts in animals via semen and timing while AP acts in plants via pollen and stigma; neither changes DNA."
+        "Why: wheat self-pollinates, so breeders must control pollination to combine traits from two chosen parents.",
+        "Method: emasculate the female flower, bag it, dust on pollen from the chosen male parent, then re-bag and label.",
+        "Outcome: seed of known parentage; offspring are tested to select new varieties combining traits like yield and rust resistance.",
+        "Similarity with AI: both control which parents contribute gametes and neither changes DNA.",
+        "Difference: AP moves pollen to a stigma in plants; AI places semen in the female reproductive tract of animals."
       ],
-      "durationInFrames": 1110,
-      "caption": "AI and AP share a controlling purpose but differ in organism, material and method.",
+      "durationInFrames": 1960,
+      "caption": "Emasculate, bag, pollinate, re-bag; the outcome is new wheat varieties. Same purpose as AI, different system.",
       "voiceover": {
-        "text": "Let's build the comparison properly, because a good comparison links the two, it doesn't just describe them side by side. Start with the shared purpose, both technologies control which parents contribute genetic material, to raise the chance of desired traits in the offspring. Then the organisms and material, artificial insemination works in animals using selected semen, artificial pollination works in plants using selected pollen. Then the process, insemination introduces semen into the female reproductive tract at the right time, pollination transfers chosen pollen onto a stigma while excluding the rest. Then an advantage of each, insemination lets one elite male sire many offspring, pollination produces planned, more predictable crosses. So the full answer is, same controlling purpose, but one acts in animals through semen and timing and the other in plants through pollen and stigma, and crucially neither changes the DNA."
+        "text": "Let's build a full answer, because account for means you give reasons, not just steps. Start with why. Wheat pollinates itself, so if breeders want to combine traits from two chosen parents, they have to control pollination themselves. Then the method, with the reason for each step. Emasculate the female flower so it can't self pollinate, bag it so stray pollen can't get in, dust on pollen from the chosen male parent, then rebag and label it so the parentage is known. Then the outcome. The seed has known parents, and the offspring are grown and tested to select new varieties that combine traits like high yield and rust resistance. Finally the comparison. The similarity with artificial insemination is that both control which parents contribute gametes and neither changes the DNA. The difference is that pollination moves pollen onto a stigma in plants, while insemination places semen in the reproductive tract of animals."
       }
     },
     {
@@ -137,32 +299,32 @@
       "type": "misconception",
       "heading": "Two traps",
       "body": "Trap 1: thinking these technologies edit or improve the DNA. They only choose which existing alleles combine.",
-      "secondary": "Trap 2: assuming selective breeding produces only the desired traits. It raises the frequency of desired alleles but also raises genome-wide homozygosity, which can increase harmful recessive alleles, as seen in heritable health problems in many purebred dog breeds.",
+      "secondary": "Trap 2: assuming controlled breeding produces only the desired traits. Relying on a few parents raises homozygosity, which can bring harmful recessive alleles together, and it narrows genetic diversity in the crop or herd.",
       "mistakeTag": "Where reproductive technology gets oversold",
       "callout": "No new DNA, and more homozygosity can surface hidden problems.",
-      "durationInFrames": 990,
+      "durationInFrames": 1364,
       "caption": "These tools do not edit DNA; intense selection raises homozygosity and recessive risk.",
       "voiceover": {
-        "text": "Two traps to avoid. Trap one, thinking these technologies somehow edit or improve the DNA. They do not, they only choose which existing alleles get combined, the sequence itself is never altered. Trap two is subtler, assuming that selective breeding produces only the traits you want. It does raise the frequency of desired alleles, but it also raises homozygosity right across the genome, because you keep breeding from a narrow set of relatives. And higher homozygosity can bring harmful recessive alleles together, surfacing problems that were hidden before. The clearest real-world example is the heritable health problems that show up in many purebred dog breeds. So, no new DNA, and pushing selection hard can quietly unmask recessive disorders."
+        "text": "Two traps to avoid. Trap one, thinking these technologies somehow edit or improve the DNA. They don't. They only choose which existing alleles get combined, the sequence itself is never altered. Trap two is subtler, assuming that controlled breeding produces only the traits you want. It does raise the frequency of desired alleles, but if you keep breeding from a narrow set of parents, homozygosity rises across the genome. That can bring harmful recessive alleles together, surfacing problems that were hidden before, and it narrows the genetic diversity of the whole crop or herd. So, no new DNA, and pushing selection hard has a cost."
       }
     },
     {
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "A farmer uses artificial insemination from one champion bull across the whole herd for many years and is surprised when a recessive genetic disorder starts appearing. Explain why, given that AI does not change any DNA.",
+      "question": "A student tries to cross two wheat plants by dusting pollen from plant B onto the flowers of plant A, but skips emasculation and bagging. Most of the seeds grow into plants just like plant A. Explain why.",
       "pausePrompt": "Pause and reason it through.",
       "answerSteps": [
-        "AI does not change DNA; it just lets one male contribute to most offspring.",
-        "Using one bull widely means many calves share his alleles, including any recessive ones he carries.",
-        "Over generations this raises homozygosity, so two copies of the hidden recessive allele can pair up.",
-        "When a calf inherits two recessive copies, the disorder is expressed.",
-        "Answer: heavy reliance on one male raised homozygosity and brought a hidden recessive allele together, with no DNA change needed."
+        "Wheat is self-pollinating, so plant A's own anthers shed pollen onto its stigma.",
+        "Without emasculation, plant A's own pollen fertilised most of its flowers.",
+        "Without a bag, stray pollen could also reach the stigma, so the parentage is unknown.",
+        "So most seeds came from self-pollination, not the intended cross.",
+        "Answer: skipping emasculation and bagging let self-pollination win; the cross was not controlled."
       ],
-      "durationInFrames": 990,
-      "caption": "Overusing one sire raises homozygosity and pairs up a hidden recessive allele.",
+      "durationInFrames": 1747,
+      "caption": "Skipping emasculation and bagging lets wheat self-pollinate, so the cross fails.",
       "voiceover": {
-        "text": "Quick check. A farmer uses artificial insemination from one champion bull across the whole herd for years, and is then surprised when a recessive genetic disorder starts appearing. Explain why, given that artificial insemination does not change any DNA at all. Pause and reason it through. Okay. Artificial insemination doesn't alter DNA, it simply lets one male contribute to most of the offspring. But that's exactly the problem, using one bull so widely means a huge number of calves share his alleles, including any recessive ones he happens to carry. Over several generations this drives up homozygosity, so eventually two copies of that hidden recessive allele can pair up in the same calf. And when a calf inherits two recessive copies, the disorder finally gets expressed. So heavy reliance on one sire raised homozygosity and brought a hidden recessive allele together, no DNA change required."
+        "text": "Quick check. A student tries to cross two wheat plants by dusting pollen from plant B onto the flowers of plant A, but skips emasculation and bagging. Most of the seeds grow into plants just like plant A. Explain why. Pause and reason it through. Okay. Wheat is naturally self pollinating, so plant A's own anthers were already shedding pollen onto its own stigmas. Without emasculation, that self pollen got there first and fertilised most of the flowers. And without a bag, any stray pollen could reach the stigma too, so nobody can say for sure who the father of each seed was. So most of the seeds came from self pollination, not the cross the student intended. Emasculation and bagging are exactly what turn random pollination into a controlled cross."
       }
     },
     {
@@ -170,17 +332,17 @@
       "type": "summary",
       "heading": "Lock it in",
       "points": [
-        "AI and AP control which parents combine; they do not change DNA.",
+        "Artificial pollination and insemination control which parents combine; neither changes DNA.",
+        "A controlled cross: emasculate, bag, apply chosen pollen, re-bag, then grow and test.",
+        "In Australia, it breeds new wheat varieties and raises nut set in macadamias.",
         "AI: animals, semen, timed introduction; AP: plants, pollen, stigma transfer.",
-        "Both raise the probability of desired traits, not the certainty.",
-        "Same purpose, different biological system, is the comparison frame.",
-        "Intense selection raises homozygosity and can unmask recessive alleles."
+        "Heavy reliance on a few parents raises homozygosity and narrows diversity."
       ],
-      "finalPrompt": "Comparing reproductive technologies? Same purpose, then contrast organism, material and method.",
-      "durationInFrames": 870,
-      "caption": "Five takeaways: control not edit, AI vs AP systems, probability, comparison frame, homozygosity risk.",
+      "finalPrompt": "Artificial pollination question? Give the method with reasons, name an Australian outcome, then compare with AI.",
+      "durationInFrames": 1463,
+      "caption": "Five takeaways: control not edit, the controlled cross, Australian outcomes, AI vs AP, the diversity cost.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, artificial insemination and artificial pollination control which parents combine, they do not change DNA. Second, insemination means animals, semen and a timed introduction, pollination means plants, pollen and stigma transfer. Third, both raise the probability of desired traits, never the certainty, because meiosis still shuffles things. Fourth, the comparison frame is same purpose, different biological system. And fifth, pushing selection hard raises homozygosity and can unmask recessive alleles. Whenever you compare reproductive technologies, state the shared purpose first, then contrast the organism, the material and the method. See you next lesson."
+        "text": "Let's lock it in. Five things to take away. First, artificial pollination and artificial insemination control which parents combine, and neither changes the DNA. Second, a controlled cross means emasculate, bag, apply the chosen pollen, rebag and label, then grow and test the seed. Third, in Australia, artificial pollination is how new wheat varieties are bred, and hand cross pollination raises nut set in macadamias. Fourth, insemination means animals, semen and a timed introduction, while pollination means plants, pollen and a stigma. And fifth, relying on a few parents raises homozygosity and narrows diversity. For any pollination question, give the method with reasons, name an Australian outcome, then compare. See you next lesson."
       }
     }
   ]

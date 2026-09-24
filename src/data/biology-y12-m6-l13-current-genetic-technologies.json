@@ -1,26 +1,30 @@
 {
-  "title": "Current Genetic Technologies That Induce Genetic Change",
-  "subtitle": "Mapping the toolkit, from controlling reproduction to inserting DNA",
+  "title": "Germline Change: Reproductive and Genetic Engineering Technologies",
+  "subtitle": "Changing which alleles are passed on, versus changing the DNA that is passed on",
   "subject": "Biology",
   "syllabusNeutral": true,
   "yearLevel": "Year 12",
   "module": "Module 6",
   "lesson": "Lesson 13",
-  "syllabusVersion": "Biology Stage 6 Syllabus (2017)",
-  "syllabusModule": "Module 6 — Genetic Change",
+  "syllabusVersion": "Biology Stage 6 (2017) + Biology 11–12 (2025)",
+  "syllabusModule": "Module 6 Genetic Change (2017) + Biotechnology (2025)",
   "syllabusDotPoints": [
-    "investigate the uses and advantages of current genetic technologies that induce genetic change"
+    "investigate the uses and advantages of current genetic technologies that induce genetic change",
+    "distinguish between somatic mutations and germ-line mutations and their effect on an organism (ACSBL082, ACSBL083)",
+    "Compare germline genetic changes in reproductive and genetic engineering biotechnologies",
+    "Use examples to compare transgenic organisms and genetically modified organisms"
   ],
   "moduleLessonCount": 19,
   "nesaOutcomes": [
     "BIO12-13",
+    "BI-12-04",
     "BIO11/12-4",
     "BIO11/12-5",
     "BIO11/12-7"
   ],
   "inquiryQuestion": "Does artificial manipulation of DNA have the potential to change populations forever?",
-  "lessonIntent": "Students can map current genetic technologies by what they change and where they act, distinguishing reproductive control from DNA-level change.",
-  "examSkill": "Classify a named genetic technology by the biological level it acts on and state its main advantage.",
+  "lessonIntent": "Students can compare germline genetic change caused by reproductive technologies (which change allele combinations and frequencies) with genetic engineering (which changes the inherited DNA sequence), and distinguish both from somatic change.",
+  "examSkill": "Classify a technology as reproductive or genetic engineering, state whether it changes the germline, and explain how the change reaches the next generation.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -28,54 +32,70 @@
   "backgroundMusic": "audio/music/lofi-bed.mp3",
   "backgroundMusicVolume": 0.1,
   "introVoiceover": {
-    "text": "Welcome to HSC Science. This is HSC Biology. Today, mapping the current genetic technologies. Let's get into it."
+    "text": "Welcome back to HSC Biology. Today, germline change in reproductive and genetic engineering technologies. Let's get into it."
   },
   "scenes": [
     {
       "id": "title",
       "type": "title",
       "durationInFrames": 105,
-      "caption": "Current Genetic Technologies That Induce Genetic Change (Year 12 Biology, Module 6, Lesson 13)"
+      "caption": "Germline Change: Reproductive and Genetic Engineering Technologies (Year 12 Biology, Module 6, Lesson 13)"
     },
     {
       "id": "hook",
       "type": "hook",
-      "heading": "Controlling inheritance without editing DNA",
-      "body": "One elite cow can leave 30 to 40 calves a year. 80% of Australian Angus bulls trace back to just 10 founders.",
-      "callout": "You can reshape a population without touching a single base of DNA.",
+      "heading": "Two ways to change the next generation",
+      "body": "Artificial insemination lets one bull father thousands of calves. Bt cotton passes a bacterial gene to every seed. Only one of these changes a DNA sequence.",
+      "callout": "Both change what the next generation inherits, but in completely different ways.",
       "image": "bioM6L13TechnologyMap",
-      "durationInFrames": 840,
-      "caption": "Embryo transfer shows reproductive control reshaping a population without DNA editing.",
+      "durationInFrames": 1649,
+      "caption": "Artificial insemination and Bt cotton both change the germline, but only one changes a DNA sequence.",
       "voiceover": {
-        "text": "The International Embryo Technology Society reported that in 2021 alone, around one point two million cattle embryos were transferred worldwide. Using multiple ovulation and embryo transfer, a single elite cow can leave thirty to forty calves in a year, instead of the natural one. As a result, about eighty percent of Australian Angus bulls now trace back to just ten founder animals. And here's the striking part, none of this edits any DNA, it simply controls reproduction. So today we map the whole toolkit, and the first big idea is that you can reshape a population without touching a single base of DNA."
+        "text": "Here are two ways people are changing what gets passed to the next generation. On a dairy farm, artificial insemination lets one top bull father thousands of calves, so his alleles spread through the herd in a single generation. And in a cotton field, most of Australia's crop is genetically modified to carry genes from a soil bacterium, Bacillus thuringiensis, which make a protein that's toxic to caterpillar pests, and the seeds inherit those genes. Both of these change the germline, the genetic material passed on through reproduction. But they change it in completely different ways. One changes which alleles get passed on, and the other changes the DNA sequence itself. Today we'll compare them properly, and learn to say exactly what kind of change each technology makes."
       }
     },
     {
-      "id": "concept-two-families",
+      "id": "concept-germline",
       "type": "concept",
-      "heading": "Two families of technology",
-      "body": "Current genetic technologies fall into two families that must not be treated as interchangeable.",
+      "heading": "Germline change versus somatic change",
+      "body": "Whether a change is inherited depends on which cells carry it.",
       "bullets": [
-        {"text": "Reproductive technologies control which gametes combine, like artificial insemination and pollination."},
-        {"text": "DNA-level technologies copy, move or insert DNA directly, like gene cloning and recombinant DNA."},
-        {"text": "Reproductive control changes the combination; DNA technologies change the sequence."}
+        {
+          "text": "Germline change: in gametes, or the cells or embryo that make them, so it is inherited."
+        },
+        {
+          "text": "Somatic change: in body cells only, so it affects one individual and is not inherited."
+        },
+        {
+          "text": "Only germline change can alter a population over generations."
+        }
       ],
-      "secondary": "Each technology acts at a different biological level, so a careful answer says exactly where the change happens.",
-      "callout": "Combination versus sequence is the dividing line.",
-      "durationInFrames": 900,
-      "caption": "Reproductive technologies control gamete combination; DNA technologies change the sequence.",
-      "voiceover": {
-        "text": "Let's split the toolkit in two, and these two families are not interchangeable. The first family is reproductive technologies, which control which gametes combine, things like artificial insemination and artificial pollination. They decide the parents, but they don't rewrite any genes. The second family is DNA-level technologies, which copy, move or insert DNA directly, things like gene cloning and recombinant DNA. The clean way to hold the difference is this, reproductive control changes the combination of existing alleles, while DNA technologies change the actual sequence. Each one acts at a different biological level, so a careful answer always says exactly where the change is happening."
-      },
+      "callout": "Ask: will the next generation inherit it?",
       "diagram": {
         "type": "table",
-        "headers": ["Technology", "What it changes", "Why it is used"],
+        "headers": [
+          "Change",
+          "Cells affected",
+          "Inherited?"
+        ],
         "rows": [
-          ["Artificial insemination / pollination", "Which parents combine", "Deliberate trait combinations"],
-          ["Whole-organism cloning", "Preserves a whole genotype", "Copy an elite organism"],
-          ["Gene cloning", "Copies one DNA sequence", "Many copies for analysis or protein"],
-          ["Recombinant DNA / transgenics", "Inserts chosen DNA", "Add a trait not already present"]
+          [
+            "Germline",
+            "Gametes, early embryo",
+            "Yes"
+          ],
+          [
+            "Somatic",
+            "Body cells only",
+            "No"
+          ]
         ]
+      },
+      "durationInFrames": 1637,
+      "caption": "Germline changes are inherited; somatic changes affect only the individual.",
+      "recapSeed": "Germline change is inherited; somatic change is not.",
+      "voiceover": {
+        "text": "First, the key distinction for this whole lesson. A germline change is found in the gametes, the eggs or sperm, or in the cells or early embryo that will go on to make them. That means it gets inherited by offspring. A somatic change, on the other hand, is only in body cells, like skin, blood or muscle, so it affects that one individual and dies with them. That's why a gene therapy that fixes a patient's blood cells isn't passed to their children. And here's why it matters. Only germline change can alter a population over generations, which is exactly what reproductive and genetic engineering technologies set out to do. So for any technology, the first question is simple, will the next generation inherit this change."
       }
     },
     {
@@ -83,88 +103,163 @@
       "type": "definition",
       "heading": "The words you need",
       "bullets": [
-        {"text": "Genetic technology: a tool used to analyse, manipulate or direct inheritance and genetic change."},
-        {"text": "Reproductive technology: a tool that controls how gametes or reproductive material are brought together."},
-        {"text": "Gene cloning: making many identical copies of a selected DNA sequence."},
-        {"text": "Recombinant DNA: DNA formed by combining genetic material from different sources."},
-        {"text": "Transgenic organism: an organism carrying inserted DNA from another species or source."}
+        {
+          "text": "Germline: the gametes and the cells that give rise to them, the DNA passed to offspring."
+        },
+        {
+          "text": "Reproductive technology: a tool that controls how gametes or embryos are brought together."
+        },
+        {
+          "text": "Recombinant DNA: DNA formed by combining genetic material from different sources."
+        },
+        {
+          "text": "Transgenic organism: an organism carrying DNA from a different species."
+        },
+        {
+          "text": "Genetically modified organism: any organism whose DNA has been deliberately altered, transgenic or not."
+        }
       ],
-      "callout": "Gene cloning copies DNA; recombinant DNA inserts it. Different jobs.",
-      "durationInFrames": 930,
-      "caption": "Genetic technology, reproductive technology, gene cloning, recombinant DNA, transgenic organism.",
+      "callout": "Every transgenic organism is a GMO, but not every GMO is transgenic.",
+      "durationInFrames": 1612,
+      "caption": "Germline, reproductive technology, recombinant DNA, transgenic organism, GMO.",
       "voiceover": {
-        "text": "Five terms to map the field. A genetic technology is any tool used to analyse, manipulate or direct inheritance and genetic change, the broad umbrella. A reproductive technology, more specifically, controls how gametes or reproductive material are brought together. Gene cloning means making many identical copies of one selected DNA sequence, copying, not creating a whole creature. Recombinant DNA is DNA formed by combining genetic material from different sources, joining pieces that don't naturally occur together. And a transgenic organism is one that carries inserted DNA from another species or source. Keep gene cloning and recombinant DNA separate in your head, one copies a sequence, the other inserts a sequence."
+        "text": "Five terms to map the field. The germline is the gametes and the cells that give rise to them, so it's the DNA that actually gets passed to offspring. A reproductive technology controls how gametes or embryos are brought together, like artificial insemination, artificial pollination, or IVF and embryo transfer. Recombinant DNA is DNA formed by combining genetic material from different sources. A transgenic organism carries DNA from a different species, like Bt cotton with its bacterial genes. And a genetically modified organism, or GMO, is any organism whose DNA has been deliberately altered. That last pair is worth getting right. Every transgenic organism is a GMO, but a GMO made by editing its own genes, with nothing added from another species, is not transgenic."
+      }
+    },
+    {
+      "id": "concept-two-families",
+      "type": "concept",
+      "heading": "Two ways to change the germline",
+      "body": "Reproductive technologies change which alleles are passed on. Genetic engineering changes the sequence that is passed on.",
+      "bullets": [
+        {
+          "text": "Reproductive technologies choose the parents, so allele combinations and frequencies change."
+        },
+        {
+          "text": "Genetic engineering alters the DNA in a cell that becomes the whole organism, including its gametes."
+        },
+        {
+          "text": "Reproductive control changes the combination; genetic engineering changes the sequence."
+        }
+      ],
+      "secondary": "A transgene inserted into a single cell that then grows into a plant ends up in every cell, including the pollen and eggs, so it is inherited like any other gene.",
+      "callout": "Combination versus sequence is the dividing line.",
+      "durationInFrames": 1798,
+      "caption": "Reproductive technologies change allele combinations; genetic engineering changes the inherited sequence.",
+      "voiceover": {
+        "text": "So how does each family change the germline. Reproductive technologies choose the parents. Artificial insemination, artificial pollination, and IVF with embryo transfer all decide which gametes combine, and how many offspring a chosen parent leaves. No sequence changes, but the combination of alleles in each offspring changes, and across a herd or a crop the allele frequencies shift, sometimes very quickly. Whole organism cloning is the extreme case, copying one genotype exactly, with no new combination at all. Genetic engineering works differently. The DNA is altered in a single cell, which then grows into the whole organism, so the new sequence ends up in every cell, including the pollen, eggs or sperm. From then on it's inherited like any other gene. The clean way to hold it is this, reproductive control changes the combination, and genetic engineering changes the sequence."
+      },
+      "diagram": {
+        "type": "table",
+        "headers": [
+          "Technology",
+          "Germline change",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Artificial insemination or pollination",
+            "Which alleles combine; frequencies shift",
+            "One bull sires thousands of calves"
+          ],
+          [
+            "IVF and embryo transfer",
+            "More offspring from chosen parents",
+            "Elite cattle embryos"
+          ],
+          [
+            "Whole-organism cloning",
+            "Copies one genotype, no new combination",
+            "Cloned livestock"
+          ],
+          [
+            "Recombinant DNA",
+            "New sequence in every cell, inherited",
+            "Bt cotton"
+          ]
+        ]
       }
     },
     {
       "id": "concept-advantages",
       "type": "concept",
-      "heading": "Each tool has a distinct advantage",
-      "body": "These technologies are not rivals doing the same job. Each one solves a different problem.",
+      "heading": "Comparing the outcomes",
+      "body": "Both families change what the next generation inherits, but their advantages and risks differ.",
       "bullets": [
-        {"text": "Reproductive control allows deliberate trait combinations in offspring."},
-        {"text": "Gene cloning provides many copies for analysis and protein production."},
-        {"text": "Recombinant DNA introduces traits that are not already present."},
-        {"text": "Whole-organism cloning preserves a valuable elite genotype."}
+        {
+          "text": "Reproductive: fast spread of desirable alleles, but no new alleles and a narrower gene pool."
+        },
+        {
+          "text": "Genetic engineering: adds traits the species never had, but a transgene can spread by gene flow."
+        },
+        {
+          "text": "Human germline editing is illegal in Australia, because the change would be inherited."
+        }
       ],
-      "secondary": "Choosing the right tool starts with the goal: combine traits, copy a sequence, add a new trait, or preserve a whole genome.",
-      "callout": "Pick the tool from the goal, not the other way round.",
-      "durationInFrames": 870,
-      "caption": "Reproductive control, gene cloning, recombinant DNA and cloning each solve a different problem.",
+      "secondary": "GMOs in Australia are regulated by the Office of the Gene Technology Regulator. In 2018, He Jiankui's gene-edited twins showed why heritable human editing is so tightly restricted.",
+      "callout": "Same target, the next generation; different risks.",
+      "durationInFrames": 1860,
+      "caption": "Reproductive technologies spread existing alleles; genetic engineering adds new ones; both change inheritance.",
       "voiceover": {
-        "text": "Now why each tool exists, because they are not rivals doing the same job. Reproductive control, the artificial insemination and pollination family, lets you create deliberate trait combinations in the offspring by choosing the parents. Gene cloning provides many identical copies of a sequence, which you need for analysis and for manufacturing proteins. Recombinant DNA introduces traits that are not already present in the organism, genuinely new capabilities. And whole-organism cloning preserves a valuable elite genotype, copying the whole genome of a prized individual. So the way you choose is always from the goal first, do you want to combine traits, copy a sequence, add a new trait, or preserve an entire genome."
+        "text": "Now compare the outcomes, because both families have real advantages and real risks. Reproductive technologies spread desirable alleles fast, one elite bull can improve a whole herd in a generation. But they add no new alleles, and relying on a few top parents narrows the gene pool, which can bring hidden recessive disorders together. Genetic engineering can add a trait the species never had, like pest resistance in Bt cotton, which has sharply cut insecticide spraying on Australian cotton. But once a transgene is in the germline, it could spread to related plants by gene flow, which is why GMOs here are regulated by the Office of the Gene Technology Regulator. And for humans the line is firm. Making a heritable change to the human genome is illegal in Australia, and the gene edited twins announced by He Jiankui in twenty eighteen show exactly why."
+      },
+      "diagram": {
+        "type": "venn",
+        "leftLabel": "Reproductive technologies",
+        "rightLabel": "Genetic engineering",
+        "overlapLabel": "Change what offspring inherit"
       }
     },
     {
       "id": "worked-example",
       "type": "workedExample",
-      "heading": "Classify each technology",
-      "question": "For each goal, name the most suitable technology and the level it acts on: (a) cross two prize wheat plants to combine their traits; (b) make millions of copies of one human gene for study; (c) give a bacterium the human insulin gene so it makes insulin.",
-      "coachNote": "Decide first: is this reproductive control, copying a sequence, or inserting a sequence?",
+      "heading": "Is the germline changed, and how?",
+      "question": "For each case, state whether the germline is changed, and if so whether it is the allele combination or the DNA sequence: (a) one champion bull is used to inseminate a whole herd; (b) a Bt gene is inserted into a cotton cell, which is grown into a plant; (c) a patient's blood stem cells are edited with CRISPR to treat sickle cell disease.",
+      "coachNote": "Ask two questions: is it inherited, and does the sequence change or just the combination?",
       "steps": [
-        "(a) Combining traits by controlling which parents cross is reproductive control, so artificial pollination, acting at the level of gamete combination.",
-        "(b) Making many copies of one sequence is gene cloning, acting at the DNA-copying level, with no new trait added.",
-        "(c) Giving a bacterium a gene it did not have is recombinant DNA producing a transgenic organism, acting at the DNA-insertion level.",
-        "Decision rule: reproductive control changes the combination; gene cloning copies a sequence; recombinant DNA inserts a sequence.",
-        "Answer: (a) artificial pollination; (b) gene cloning; (c) recombinant DNA / transgenic."
+        "(a) Germline changed through reproduction: the calves inherit the bull's alleles, so allele combinations and herd frequencies change, but no sequence is altered.",
+        "(b) Germline changed through genetic engineering: the transgene is in every cell of the plant, including pollen and eggs, so the new sequence is inherited.",
+        "(c) Not a germline change: only somatic blood cells are edited, so the patient's children do not inherit it.",
+        "Decision rule: combination (reproductive), sequence (genetic engineering), or somatic (not inherited).",
+        "Answer: (a) germline, combination; (b) germline, sequence; (c) somatic, not inherited."
       ],
-      "durationInFrames": 1110,
-      "caption": "(a) artificial pollination; (b) gene cloning; (c) recombinant DNA / transgenic.",
+      "durationInFrames": 1811,
+      "caption": "(a) germline, combination; (b) germline, sequence; (c) somatic, not inherited.",
       "voiceover": {
-        "text": "Let's classify three goals. Part a, cross two prize wheat plants to combine their traits. That's controlling which parents contribute pollen, so it's reproductive control, specifically artificial pollination, acting at the level of gamete combination, no genes are rewritten. Part b, make millions of copies of one human gene for study. Copying a single sequence over and over is gene cloning, acting at the DNA-copying level, and again no new trait is added, you just want lots of the same piece. Part c, give a bacterium the human insulin gene so it produces insulin. Handing an organism a gene it never had is recombinant DNA, producing a transgenic organism, acting at the DNA-insertion level. The decision rule is clean, combination, copy, or insert."
+        "text": "Let's classify three cases. Part a, one champion bull is used to inseminate a whole herd. The calves inherit his alleles, so the germline of the herd has changed, but only through reproduction. The allele combinations and frequencies shift, and no sequence is altered. Part b, a Bt gene is inserted into a single cotton cell, which is then grown into a whole plant. The transgene ends up in every cell, including the pollen and eggs, so this is a germline change through genetic engineering, a new sequence that gets inherited. Part c, a patient's blood stem cells are edited with CRISPR to treat sickle cell disease. That's a trap. Only somatic blood cells are changed, so the patient's children won't inherit it, which makes it not a germline change at all. So the decision rule is combination, sequence, or somatic."
       }
     },
     {
       "id": "misconception",
       "type": "misconception",
       "heading": "Three distinctions to keep clear",
-      "body": "Trap 1: blurring reproductive control with DNA change. Choosing parents is not editing genes.",
-      "secondary": "Trap 2: treating gene cloning and recombinant DNA as the same thing. Copying a sequence is not inserting one. Trap 3: assuming a clone is identical in every way. Similar genotype does not guarantee identical phenotype, because environment and development still matter, which is why cloned cats can have different coat patterns.",
+      "body": "Trap 1: blurring reproductive control with DNA change. Choosing parents changes the combination, not the sequence.",
+      "secondary": "Trap 2: assuming all genetic engineering is inherited. Somatic gene therapy changes only the patient. Trap 3: thinking reproductive technologies cannot change a population. By shifting allele frequencies and narrowing the gene pool, they can change it quickly.",
       "mistakeTag": "Where the toolkit gets blurred",
-      "callout": "Combination versus sequence; copy versus insert; genotype versus phenotype.",
-      "durationInFrames": 1020,
-      "caption": "Keep three pairs distinct: reproductive vs DNA, cloning vs recombinant, genotype vs phenotype.",
+      "callout": "Combination versus sequence; germline versus somatic; reproduction can still reshape a population.",
+      "durationInFrames": 1649,
+      "caption": "Reproductive control is not DNA change; not all engineering is heritable; allele frequencies still shift.",
       "voiceover": {
-        "text": "Three distinctions that separate a clear answer from a muddled one. Trap one, blurring reproductive control with DNA change. Choosing which parents breed is not the same as editing their genes, the sequence is untouched. Trap two, treating gene cloning and recombinant DNA as if they're the same thing. Gene cloning copies an existing sequence, recombinant DNA inserts a sequence, copying is not inserting. Trap three, assuming a clone is identical in every way to its donor. A similar genotype does not guarantee an identical phenotype, because environment, development and even mitochondrial DNA still play a role. The classic example is cloned cats that end up with different coat-colour patterns from the donor, despite sharing nuclear DNA. Combination versus sequence, copy versus insert, genotype versus phenotype, keep those three pairs straight."
+        "text": "Three distinctions that separate a clear answer from a muddled one. Trap one, blurring reproductive control with DNA change. Choosing which parents breed changes the combination of alleles, but the sequence is untouched. Trap two, assuming that anything involving genetic engineering must be inherited. Somatic gene therapy edits a patient's body cells only, so it stops with that patient. Whether a change is heritable depends on which cells carry it, not on how clever the technique is. Trap three, thinking that because reproductive technologies don't alter DNA, they can't change a population. They absolutely can. Using a few elite parents shifts allele frequencies fast and narrows the gene pool, which is a genuine germline change at the population level. Combination versus sequence, germline versus somatic, keep those straight."
       }
     },
     {
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "A breeder uses embryo transfer to spread an elite cow's genes through a herd, while a lab inserts a jellyfish gene into a plant. A student says both are examples of genetic engineering of DNA. Where is the error?",
+      "question": "A breeder uses embryo transfer to spread an elite cow's genes through a herd, while a lab inserts a jellyfish gene into a plant. A student says both are genetic engineering because both change what offspring inherit. Where is the error?",
       "pausePrompt": "Pause and reason it through.",
       "answerSteps": [
-        "Embryo transfer is a reproductive technology; it controls which parents breed and does not change any DNA sequence.",
-        "Inserting a jellyfish gene is recombinant DNA, which produces a transgenic organism by changing the sequence.",
-        "Only the second one is genetic engineering of DNA; the first is reproductive control.",
-        "The error is grouping reproductive control with DNA-level change under one label.",
-        "Answer: embryo transfer changes the combination, not the sequence, so only the gene insertion engineers DNA."
+        "Both do change what the next generation inherits, so both affect the germline.",
+        "Embryo transfer is a reproductive technology: it controls which parents breed, but no DNA sequence changes.",
+        "Inserting a jellyfish gene is recombinant DNA: it creates a transgenic organism with a new, inherited sequence.",
+        "The error is treating any germline change as genetic engineering.",
+        "Answer: embryo transfer changes the combination; only the gene insertion changes the sequence."
       ],
-      "durationInFrames": 990,
+      "durationInFrames": 1772,
       "caption": "Embryo transfer is reproductive control; only the gene insertion engineers DNA.",
       "voiceover": {
-        "text": "Quick check. A breeder uses embryo transfer to spread an elite cow's genes through a herd, while in a lab someone inserts a jellyfish gene into a plant. A student says both are examples of genetic engineering of DNA. Where's the error? Pause and reason it through. Right, let's separate them. Embryo transfer is a reproductive technology, it controls which parents breed and how many offspring an elite animal leaves, but it does not change any DNA sequence at all. Inserting a jellyfish gene, on the other hand, is recombinant DNA, and it produces a transgenic organism by genuinely changing the sequence. So only the second one is genetic engineering of DNA. The error is lumping reproductive control together with DNA-level change under the same label. One changes the combination, the other changes the sequence."
+        "text": "Quick check. A breeder uses embryo transfer to spread an elite cow's genes through a herd, while in a lab someone inserts a jellyfish gene into a plant. A student says both are genetic engineering, because both change what the offspring inherit. Where's the error? Pause and reason it through. Right, the student is half right. Both do change what the next generation inherits, so both affect the germline. But embryo transfer is a reproductive technology. It controls which parents breed and how many offspring an elite animal leaves, and no DNA sequence changes. Inserting a jellyfish gene is recombinant DNA, which makes a transgenic organism with a new sequence that gets inherited. So the error is treating any germline change as genetic engineering. One changes the combination, the other changes the sequence."
       }
     },
     {
@@ -172,17 +267,17 @@
       "type": "summary",
       "heading": "Lock it in",
       "points": [
-        "Two families: reproductive technologies and DNA-level technologies.",
-        "Reproductive control changes the combination; DNA tools change the sequence.",
-        "Gene cloning copies a sequence; recombinant DNA inserts one.",
-        "Each tool has a distinct advantage; pick it from the goal.",
-        "Similar genotype does not guarantee identical phenotype."
+        "Germline change is inherited; somatic change affects only one individual.",
+        "Reproductive technologies change allele combinations and frequencies, not sequences.",
+        "Genetic engineering changes the sequence, and the transgene is inherited.",
+        "Every transgenic organism is a GMO, but not every GMO is transgenic.",
+        "Heritable human genome editing is illegal in Australia."
       ],
-      "finalPrompt": "Classifying a technology? Ask: combination, copy, or insert?",
-      "durationInFrames": 870,
-      "caption": "Five takeaways: two families, combination vs sequence, copy vs insert, distinct advantages, genotype vs phenotype.",
+      "finalPrompt": "Classifying a technology? Ask: inherited or not, and combination or sequence?",
+      "durationInFrames": 1463,
+      "caption": "Five takeaways: germline vs somatic, combination vs sequence, transgenic vs GMO, human germline limits.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, there are two families, reproductive technologies and DNA-level technologies. Second, reproductive control changes the combination of existing alleles, while DNA tools change the actual sequence. Third, gene cloning copies a sequence, recombinant DNA inserts one, don't blur them. Fourth, each tool has a distinct advantage, so you pick it from the goal, combine, copy, insert or preserve. And fifth, a similar genotype does not guarantee an identical phenotype, environment and development still matter. Whenever you classify a technology, just ask, is this combination, copy, or insert. See you next lesson."
+        "text": "Let's lock it in. Five things to take away. First, a germline change is inherited, while a somatic change affects only one individual. Second, reproductive technologies like artificial insemination, pollination and embryo transfer change allele combinations and frequencies, but not DNA sequences. Third, genetic engineering changes the sequence, and because the altered cell grows into the whole organism, the change is inherited. Fourth, every transgenic organism is a GMO, but not every GMO is transgenic. And fifth, making heritable changes to the human genome is illegal in Australia. Whenever you classify a technology, ask two things, is it inherited, and is it the combination or the sequence that changes. See you next lesson."
       }
     }
   ]
