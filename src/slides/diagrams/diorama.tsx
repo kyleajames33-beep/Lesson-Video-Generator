@@ -167,6 +167,18 @@ export const Molecule = ({
 	);
 };
 
+/**
+ * Hold-state life. Once a diagram's main animation has played, it must not sit
+ * frozen while the narration carries on (docs/diorama-system.md, rule 6).
+ * `idleBob` is a small deterministic per-item drift: particles jostle gently
+ * (which also reads as thermal motion); `idlePulse` is a 0..1 breathing value
+ * for the single highlight that matters.
+ */
+export const idleBob = (frame: number, i: number, amp = 2.2) =>
+	Math.sin(frame / 17 + i * 1.7) * amp + Math.sin(frame / 29 + i * 0.9) * amp * 0.45;
+export const idlePulse = (frame: number, periodFrames = 54) =>
+	0.5 + 0.5 * Math.sin((frame / periodFrames) * Math.PI * 2);
+
 /** Slot positions for up to ~14 molecules on a plinth top, packed front-to-back. */
 export const plinthSlots = (cx: number, cy: number, rx: number, n: number): {x: number; y: number}[] => {
 	const ry = rx * 0.34;

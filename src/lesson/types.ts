@@ -171,6 +171,15 @@ export type DiagramConfig =
   | {type: 'titrationSetup'}
   | {type: 'limitingExcess'}
   | {
+      /** A diorama-system diagram, looked up by `kind` in
+       *  src/slides/diagrams/dioramaKinds/. `props` are passed straight to the
+       *  component. See docs/diorama-system.md. */
+      type: 'diorama';
+      kind: string;
+      props?: Record<string, unknown>;
+      delay?: number;
+    }
+  | {
       type: 'reactionRun';
       /** Header, e.g. "2H₂ + O₂ → 2H₂O". Defaults to the H₂/O₂ reaction. */
       equation?: string;

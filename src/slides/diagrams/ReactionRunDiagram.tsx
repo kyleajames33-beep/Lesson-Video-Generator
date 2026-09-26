@@ -19,7 +19,7 @@
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../styles/tokens';
 import {useAccent} from '../../styles/theme';
-import {DioramaDefs, DioramaPlinth, Molecule, plinthSlots} from './diorama';
+import {DioramaDefs, DioramaPlinth, Molecule, idleBob, idlePulse, plinthSlots} from './diorama';
 
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
 
@@ -110,7 +110,7 @@ export const ReactionRunDiagram = ({
 						const t = k < events ? evT(k) : 0;
 						// Consumed molecules lift and fly toward the product plinth.
 						const tx = s.x + (xs[2] - s.x) * interpolate(t, [0, 1], [0, 0.55]);
-						const ty = s.y - Math.sin(t * Math.PI) * 60;
+						const ty = s.y - Math.sin(t * Math.PI) * 60 + idleBob(frame, j + i * 20) * (1 - t);
 						return (
 							<Molecule
 								key={j}
@@ -148,7 +148,7 @@ export const ReactionRunDiagram = ({
 						const k = Math.floor(i / product.coef);
 						const t = evT(k);
 						const pop = interpolate(t, [0.55, 0.8, 1], [0, 1.18, 1], clamp);
-						return <Molecule key={i} id={ID} atoms={product.atoms} x={s.x} y={s.y} r={14} scale={pop} opacity={pop > 0 ? 1 : 0} />;
+						return <Molecule key={i} id={ID} atoms={product.atoms} x={s.x} y={s.y + idleBob(frame, i + 50) * pop} r={14} scale={pop} opacity={pop > 0 ? 1 : 0} />;
 					})}
 				</DioramaPlinth>
 				{/* "+" and "→" between the plinths */}
@@ -192,7 +192,7 @@ export const ReactionRunDiagram = ({
 
 				{/* Stop marker at the moment the limiting reagent hits zero */}
 				<g opacity={done}>
-					<line x1={gx(events)} y1={GY0 - 6} x2={gx(events)} y2={GY1} stroke={TOK.amber} strokeWidth={2} strokeDasharray="6 6" />
+					<line x1={gx(events)} y1={GY0 - 6} x2={gx(events)} y2={GY1} stroke={TOK.amber} strokeWidth={2 + idlePulse(frame) * 1.5} strokeDasharray="6 6" />
 					<text x={gx(events) - 8} y={GY0 - 12} textAnchor="end" fill={TOK.amberInk} fontSize={15} fontWeight={800}>
 						{reactants[limitingIdx].label} runs out: reaction stops
 					</text>

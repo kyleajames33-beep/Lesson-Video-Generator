@@ -13,7 +13,7 @@
 
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../styles/tokens';
-import {DioramaDefs, DioramaPlinth, ELEMENT_COLORS, Molecule} from './diorama';
+import {DioramaDefs, DioramaPlinth, ELEMENT_COLORS, Molecule, idleBob} from './diorama';
 
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
 
@@ -120,7 +120,7 @@ export const CoefficientDivideDiagram = ({
 				const hasGhost = Math.abs(ratios[i] - r.moles) > 1e-9;
 				const ghostTop = BASE_Y - hOf(r.moles);
 				const ghostTopNow = BASE_Y - raw;
-				const crownY = top - 74 - (1 - Math.max(0, crown)) * 120;
+				const crownY = top - 74 - (1 - Math.max(0, crown)) * 120 + (frame > s3 + 30 ? idleBob(frame, 7, 1.6) : 0);
 				return (
 					<g key={r.label} opacity={fade(4 + i * 4)}>
 						<DioramaPlinth id={ID} cx={cx} cy={BASE_Y} rx={112}>
@@ -140,7 +140,7 @@ export const CoefficientDivideDiagram = ({
 								</g>
 							)}
 							{/* small model of the particle at the column's foot */}
-							<Molecule id={ID} atoms={r.atoms} x={cx + COL_W / 2 + 34} y={BASE_Y - 4} r={13} />
+							<Molecule id={ID} atoms={r.atoms} x={cx + COL_W / 2 + 34} y={BASE_Y - 4 + idleBob(frame, i)} r={13} />
 						</DioramaPlinth>
 
 						{/* value: raw moles stays at the ghost's top (dimmed) once the divided value appears */}
