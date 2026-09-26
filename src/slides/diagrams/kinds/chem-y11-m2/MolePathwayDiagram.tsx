@@ -188,7 +188,7 @@ export const MolePathwayDiagram = ({
 				const b = outBridge(k);
 				const cy = fork ? (k === 0 ? GY - 150 : GY + 118) : GY - 168;
 				const t: Target = k === 0 ? 'out' : 'out2';
-				return <Chip key={k} x={fork ? (k === 0 ? 540 : 548) : (b.x1 + b.x2) / 2 - 6} y={cy} text={outOps[k] ?? ''} color={chipColor(pOut[k], t, LANE.wanted)} on={pOut[k] > 0 && pOut[k] < 1} opacity={fade(bOuts[k] - 20)} strokeWidth={isTrap(t) ? 2.5 + pulse * 2 : 2.5} fontSize={fork ? 19 : 22} />;
+				return <Chip key={k} x={fork ? (k === 0 ? 540 : 516) : (b.x1 + b.x2) / 2 - 6} y={cy} text={outOps[k] ?? ''} color={chipColor(pOut[k], t, LANE.wanted)} on={pOut[k] > 0 && pOut[k] < 1} opacity={fade(bOuts[k] - 20)} strokeWidth={isTrap(t) ? 2.5 + pulse * 2 : 2.5} fontSize={fork ? 19 : 22} />;
 			})}
 
 			{/* Packet */}

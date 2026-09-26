@@ -95,7 +95,7 @@ export const EmpiricalBlocksDiagram = ({
 			<DioramaDefs id={ID} />
 
 			{/* LEFT: the big molecule */}
-			<g opacity={fade(bBig - 10, 16)}>
+			<g opacity={fade(0, 16)}>
 				<DioramaPlinth id={ID} cx={L.x} cy={L.y} rx={L.rx} />
 			</g>
 			{blockPos.map((b, i) => (
@@ -116,7 +116,7 @@ export const EmpiricalBlocksDiagram = ({
 			<text x={L.x} y={L.y - 218} textAnchor="middle" fill={TOK.inkDim} fontSize={22} fontWeight={800} opacity={fade(bSort + 40)}>{ratioText}</text>
 
 			{/* RIGHT: the compound that is a single block */}
-			<g opacity={fade(bSmall - 10, 16)}>
+			<g opacity={fade(6, 16)}>
 				<DioramaPlinth id={ID} cx={R.x} cy={R.y} rx={R.rx} />
 			</g>
 			{Array.from({length: small.n}, (_, bi) => (
