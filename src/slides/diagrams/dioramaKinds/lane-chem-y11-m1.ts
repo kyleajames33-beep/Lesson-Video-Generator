@@ -17,6 +17,7 @@ import {RouteChainDiagram} from '../kinds/chem-y11-m1/RouteChainDiagram';
 import {PolymerChainsDiagram} from '../kinds/chem-y11-m1/PolymerChainsDiagram';
 import {OrbitalBoxesDiagram} from '../kinds/chem-y11-m1/OrbitalBoxesDiagram';
 import {ModelTimelineDiagram} from '../kinds/chem-y11-m1/ModelTimelineDiagram';
+import {PolymerJoinDiagram} from '../kinds/chem-y11-m1/PolymerJoinDiagram';
 
 export const KINDS: DioramaKindMap = {
   chem11m1DecisionTree: DecisionTreeDiagram,
@@ -31,4 +32,5 @@ export const KINDS: DioramaKindMap = {
   chem11m1PolymerChains: PolymerChainsDiagram,
   chem11m1OrbitalBoxes: OrbitalBoxesDiagram,
   chem11m1ModelTimeline: ModelTimelineDiagram,
+  chem11m1PolymerJoin: PolymerJoinDiagram,
 };
