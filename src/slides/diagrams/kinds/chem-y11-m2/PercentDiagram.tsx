@@ -123,7 +123,7 @@ export const PercentDiagram = ({
 			<g key={k}>
 				<g opacity={fade(beat, 14)}>
 					<DioramaPlinth id={ID} cx={cx} cy={BASE + 8} rx={112} />
-					<ellipse cx={cx} cy={BASE + 2} rx={jw * 0.58} ry={9} fill="rgba(40,60,20,0.22)" />
+					<ellipse cx={cx} cy={BASE + 2} rx={jw * 0.58} ry={9} fill="rgba(30,30,30,0.18)" />
 					{/* product */}
 					<rect x={cx - jw / 2 + 5} y={fy} width={jw - 10} height={BASE - 6 - fy} rx={4} fill={PRODUCT} />
 					{fill > 0.01 && <ellipse cx={cx} cy={fy} rx={jw / 2 - 5} ry={6} fill="#e3d8f6" />}

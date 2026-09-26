@@ -153,7 +153,7 @@ export const Beaker = ({
 					<rect x={l + 3} y={ly} width={w - 6} height={Math.max(0, y - ly - 3)} />
 				</clipPath>
 			</defs>
-			<ellipse cx={x} cy={y + 2} rx={w * 0.55} ry={7} fill="rgba(40,60,20,0.22)" />
+			<ellipse cx={x} cy={y + 2} rx={w * 0.55} ry={7} fill="rgba(30,30,30,0.18)" />
 			{/* liquid */}
 			{level > 0.005 && (
 				<g>
