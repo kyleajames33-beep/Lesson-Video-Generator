@@ -102,6 +102,85 @@
       ],
       "secondary": "A compound's properties can't be predicted from its elements. You must measure or look them up.",
       "callout": "New bonds, new structure, new properties.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1NewSubstance",
+        "props": {
+          "title": "New bonds, new structure, new properties",
+          "species": [
+            {
+              "name": "Sodium",
+              "formula": "Na",
+              "model": "metal",
+              "atoms": [
+                "Na"
+              ],
+              "at": 30,
+              "tags": [
+                {
+                  "text": "soft metal",
+                  "at": 141
+                },
+                {
+                  "text": "violently reactive",
+                  "at": 187
+                }
+              ]
+            },
+            {
+              "name": "Chlorine",
+              "formula": "Cl₂",
+              "model": "diatomic",
+              "atoms": [
+                "Cl"
+              ],
+              "at": 205,
+              "tags": [
+                {
+                  "text": "green gas",
+                  "at": 225
+                },
+                {
+                  "text": "toxic",
+                  "at": 242
+                }
+              ]
+            },
+            {
+              "name": "Sodium chloride",
+              "formula": "NaCl",
+              "model": "ionic",
+              "atoms": [
+                "Na",
+                "Cl"
+              ],
+              "at": 270,
+              "tags": [
+                {
+                  "text": "safe table salt",
+                  "at": 360
+                },
+                {
+                  "text": "melts at 801 °C",
+                  "at": 427
+                }
+              ]
+            }
+          ],
+          "lost": [
+            {
+              "text": "reactive",
+              "from": 0,
+              "at": 485
+            },
+            {
+              "text": "toxic",
+              "from": 1,
+              "at": 541
+            }
+          ]
+        }
+      },
       "durationInFrames": 990,
       "caption": "Na + Cl₂ → NaCl: reactive metal + toxic gas → safe salt.",
       "voiceover": {

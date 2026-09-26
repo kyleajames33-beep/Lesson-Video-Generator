@@ -117,6 +117,40 @@
       ],
       "secondary": "Ar = (m₁ × f₁) + (m₂ × f₂) + ... It is a weighted average, never the simple mean of the masses.",
       "callout": "Ar = Σ (isotopic mass × fractional abundance).",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1WeightedAverage",
+        "props": {
+          "isotopes": [
+            {
+              "label": "³⁵Cl",
+              "mass": 34.969,
+              "percent": 75.77
+            },
+            {
+              "label": "³⁷Cl",
+              "mass": 36.966,
+              "percent": 24.23
+            }
+          ],
+          "arLabel": "Ar",
+          "axis": [
+            35,
+            37
+          ],
+          "beats": {
+            "percents": 11,
+            "fractions": 129,
+            "multiply": 174,
+            "add": 328,
+            "formula": 383,
+            "line": 528,
+            "crossMean": 575,
+            "pull": 682,
+            "closer": 764
+          }
+        }
+      },
       "durationInFrames": 1020,
       "caption": "Ar = (m₁ × f₁) + (m₂ × f₂) + ... using fractional abundances.",
       "voiceover": {

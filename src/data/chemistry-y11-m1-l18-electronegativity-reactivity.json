@@ -48,7 +48,6 @@
       "type": "concept",
       "heading": "The electronegativity trend",
       "body": "Electronegativity increases across a period and decreases down a group, peaking at fluorine.",
-      "image": "l18ElectronegativityTrend",
       "bullets": [
         {"text": "Across a period: Z_eff rises, so the pull on bonding electrons grows."},
         {"text": "Down a group: more shells and shielding weaken the pull."},
@@ -56,6 +55,85 @@
       ],
       "secondary": "Key values: F 4.0, O 3.4, Cl 3.2, N 3.0, C 2.6, H 2.2, Na 0.9. Noble gases get no value as they rarely bond.",
       "callout": "Top-right pulls hardest; bottom-left pulls least.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1TrendSkyline",
+        "props": {
+          "label": "Electronegativity",
+          "unit": "Pauling scale: about 0.7 to 4",
+          "unitAt": 144,
+          "elements": [
+            {
+              "symbol": "C",
+              "period": 2,
+              "group": 14,
+              "value": 2.6,
+              "at": 306
+            },
+            {
+              "symbol": "N",
+              "period": 2,
+              "group": 15,
+              "value": 3,
+              "at": 326
+            },
+            {
+              "symbol": "O",
+              "period": 2,
+              "group": 16,
+              "value": 3.4,
+              "at": 346
+            },
+            {
+              "symbol": "F",
+              "period": 2,
+              "group": 17,
+              "value": 4,
+              "at": 366
+            },
+            {
+              "symbol": "Cl",
+              "period": 3,
+              "group": 17,
+              "value": 3.2,
+              "at": 512
+            },
+            {
+              "symbol": "H",
+              "period": 1,
+              "group": 1,
+              "value": 2.2,
+              "at": 916
+            },
+            {
+              "symbol": "Na",
+              "period": 3,
+              "group": 1,
+              "value": 0.9,
+              "at": 942
+            }
+          ],
+          "highlight": "F",
+          "highlightAt": 700,
+          "arrows": {
+            "across": {
+              "text": "increases across",
+              "at": 384
+            },
+            "down": {
+              "text": "decreases down",
+              "at": 532
+            }
+          },
+          "noValue": {
+            "groups": [
+              18
+            ],
+            "text": "noble gases:\nno value",
+            "at": 960
+          }
+        }
+      },
       "durationInFrames": 1170,
       "caption": "Electronegativity rises across, falls down; F highest at 4.0.",
       "voiceover": {

@@ -98,6 +98,87 @@
       ],
       "secondary": "Diamond and graphite are both pure carbon, but the bonding pattern flips their hardness and conductivity completely.",
       "callout": "Same element, different network, opposite properties.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1NetworkSolids",
+        "props": {
+          "solids": [
+            {
+              "model": "diamond",
+              "name": "Diamond",
+              "sub": "each C bonded to 4",
+              "at": 10,
+              "subAt": 113,
+              "chips": [
+                {
+                  "text": "hardest",
+                  "at": 153,
+                  "flip": true
+                },
+                {
+                  "text": "non-conducting",
+                  "at": 249,
+                  "flip": true
+                },
+                {
+                  "text": "MP 3550 °C",
+                  "at": 177
+                }
+              ]
+            },
+            {
+              "model": "graphite",
+              "name": "Graphite",
+              "sub": "each C bonded to 3",
+              "at": 320,
+              "subAt": 384,
+              "electronsAt": 456,
+              "slideAt": 583,
+              "chips": [
+                {
+                  "text": "soft, slippery",
+                  "at": 623,
+                  "flip": true
+                },
+                {
+                  "text": "conducts within layers",
+                  "at": 512,
+                  "flip": true
+                }
+              ]
+            },
+            {
+              "model": "sio2",
+              "name": "Silicon dioxide",
+              "sub": "3D Si–O–Si network",
+              "at": 647,
+              "subAt": 679,
+              "chips": [
+                {
+                  "text": "MP 1713 °C",
+                  "at": 711
+                },
+                {
+                  "text": "very hard",
+                  "at": 743
+                },
+                {
+                  "text": "insoluble",
+                  "at": 767
+                }
+              ]
+            }
+          ],
+          "bracket": {
+            "from": 0,
+            "to": 1,
+            "title": "Both pure carbon",
+            "sub": "same element, opposite properties",
+            "at": 778,
+            "flipAt": 822
+          }
+        }
+      },
       "durationInFrames": 1020,
       "caption": "Diamond, graphite, and SiO₂ each illustrate network bonding.",
       "voiceover": {

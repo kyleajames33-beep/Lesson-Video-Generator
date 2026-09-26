@@ -48,7 +48,6 @@
       "type": "concept",
       "heading": "Dissolving is an energy balance",
       "body": "To dissolve, you break solute–solute forces, break solvent–solvent forces, then form new solute–solvent forces.",
-      "image": "l12DissolvingEnergyBalance",
       "bullets": [
         {"text": "Break the solute's own forces, which costs energy."},
         {"text": "Break some of the solvent's forces, which also costs energy."},
@@ -56,6 +55,34 @@
       ],
       "secondary": "Dissolving is favourable when the energy released in the third step compensates for the energy spent in the first two.",
       "callout": "Dissolving works when the new forces pay back the broken ones.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1EnergyBalance",
+        "props": {
+          "title": "Dissolving is an energy balance",
+          "costs": [
+            {
+              "label": "1. break solute–solute",
+              "sub": "costs energy",
+              "at": 65
+            },
+            {
+              "label": "2. break solvent–solvent",
+              "sub": "costs energy",
+              "at": 215
+            }
+          ],
+          "release": {
+            "label": "3. form solute–solvent",
+            "sub": "releases energy",
+            "at": 389
+          },
+          "verdict": "Pays back → it dissolves",
+          "verdictAt": 603,
+          "note": "It pays back when the new forces are the same type as those broken",
+          "noteAt": 777
+        }
+      },
       "durationInFrames": 1140,
       "caption": "Dissolving: break solute forces, break solvent forces, form solute–solvent forces.",
       "voiceover": {
@@ -109,7 +136,6 @@
       "type": "concept",
       "heading": "Water, the exceptional solvent",
       "body": "Water dissolves ionic compounds because its dipoles can grip ions and pull them out of the lattice.",
-      "image": "l12HydrationOfIons",
       "bullets": [
         {"text": "Oxygen is highly electronegative, so water has a strong permanent dipole."},
         {"text": "The δ⁻ oxygen points at cations; the δ⁺ hydrogens point at anions."},
@@ -117,6 +143,30 @@
       ],
       "secondary": "If the lattice is too strong, like BaSO₄ or AgCl, hydration can't compensate, so the compound stays insoluble.",
       "callout": "Water's dipoles wrap each ion in a hydration shell.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1Hydration",
+        "props": {
+          "title": "Water's dipoles wrap each ion",
+          "cation": {
+            "el": "Na",
+            "label": "Na⁺"
+          },
+          "anion": {
+            "el": "Cl",
+            "label": "Cl⁻"
+          },
+          "caution": "BaSO₄, AgCl: lattice too strong, so insoluble",
+          "beats": {
+            "dipole": 102,
+            "cation": 413,
+            "anion": 522,
+            "pull": 624,
+            "shell": 819,
+            "caution": 834
+          }
+        }
+      },
       "durationInFrames": 1170,
       "caption": "Water hydrates ions: δ⁻O grips cations, δ⁺H grips anions, ions leave the lattice.",
       "voiceover": {

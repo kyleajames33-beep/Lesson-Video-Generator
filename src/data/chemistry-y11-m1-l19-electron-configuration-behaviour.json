@@ -123,7 +123,6 @@
       "type": "concept",
       "heading": "Transition metals, variable charge",
       "body": "Because 3d and 4s energies are close, transition metals can lose different numbers of electrons.",
-      "image": "l19TransitionMetalIons",
       "bullets": [
         {"text": "The 3d and 4s subshells are close in energy, so several ions are possible."},
         {"text": "When forming ions, 4s electrons are removed before 3d."},
@@ -131,6 +130,40 @@
       ],
       "secondary": "Partly filled d subshells let electrons jump between d orbitals, absorbing visible light, which is why their compounds are coloured.",
       "callout": "Remove 4s before 3d when a transition metal forms an ion.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1OrbitalBoxes",
+        "props": {
+          "core": "[Ar]",
+          "dLabel": "3d",
+          "sLabel": "4s",
+          "stages": [
+            {
+              "label": "Fe",
+              "d": 6,
+              "s": 2,
+              "at": 0
+            },
+            {
+              "label": "Fe²⁺",
+              "d": 6,
+              "s": 0,
+              "at": 648
+            },
+            {
+              "label": "Fe³⁺",
+              "d": 5,
+              "s": 0,
+              "at": 750
+            }
+          ],
+          "rule": {
+            "text": "4s electrons are removed before 3d",
+            "at": 385
+          },
+          "focusAt": 567
+        }
+      },
       "durationInFrames": 1170,
       "caption": "Transition metals: 4s lost before 3d; Fe²⁺ = [Ar]3d⁶, Fe³⁺ = [Ar]3d⁵.",
       "voiceover": {

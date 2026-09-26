@@ -112,6 +112,71 @@
       ],
       "secondary": "Run the questions in order and the answer falls out. This is the framework examiners reward.",
       "callout": "Fixed? Breakable? Uniform? In that order, every time.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1DecisionTree",
+        "props": {
+          "title": "Fixed? Breakable? Uniform?",
+          "root": {
+            "q": "1. Is the composition fixed?",
+            "at": 110,
+            "branches": [
+              {
+                "label": "Yes",
+                "node": {
+                  "q": "2. Can it be broken\ndown chemically?",
+                  "at": 240,
+                  "branches": [
+                    {
+                      "label": "No",
+                      "node": {
+                        "leaf": "Element",
+                        "icon": "element",
+                        "at": 365
+                      }
+                    },
+                    {
+                      "label": "Yes",
+                      "node": {
+                        "leaf": "Compound",
+                        "icon": "compound",
+                        "at": 405
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "No: mixture",
+                "node": {
+                  "q": "3. Is the mixture\nuniform?",
+                  "at": 465,
+                  "branches": [
+                    {
+                      "label": "Yes",
+                      "node": {
+                        "leaf": "Homogeneous",
+                        "sub": "mixture",
+                        "icon": "homogeneous",
+                        "at": 585
+                      }
+                    },
+                    {
+                      "label": "No",
+                      "node": {
+                        "leaf": "Heterogeneous",
+                        "sub": "mixture",
+                        "icon": "heterogeneous",
+                        "at": 625
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
       "durationInFrames": 990,
       "caption": "Decision tree: fixed composition? chemically breakable? uniform?",
       "voiceover": {
