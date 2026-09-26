@@ -1,4 +1,26 @@
+// BeforeAfterDiagram — two states side by side in the diorama family.
+//
+// Each side is a painted placard standing on its own plinth: a coloured tab
+// with the label, then the content. Content written as "value — description"
+// gets the value large and the description below. Text is wrapped and sized to
+// fit the placard; nothing is ever cut off (the legacy version kept only the
+// first three lines, which dropped examples and melting points).
+//
+// The medallion between the placards says how the two relate: "→" when the
+// labels describe a change (before/after, start/equilibrium, atom/its ion,
+// predicted/observed), "vs" for a side-by-side comparison. (The legacy "≠" was
+// written for N vs n and read wrongly on every other scene.)
+//
+// Timing: the left placard lands with the card; the right one lands when the
+// narration names its label (else shortly after). In the hold the medallion
+// breathes and the placards sway very slightly on their posts.
+
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {FONT_DISPLAY, TOK} from '../../styles/tokens';
+import {useAccent} from '../../styles/theme';
+import {DioramaDefs, DioramaPlinth, idleBob, idlePulse} from './diorama';
+import {clamp, idHash, shade} from './kinds/restyle-generic/paint';
+import {buildStart, mentionOf, sceneTimingFor} from './kinds/restyle-generic/sceneSync';
 
 type Props = {
 	beforeLabel: string;
@@ -8,24 +30,31 @@ type Props = {
 	delay?: number;
 };
 
-const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
+// Rendered at ~0.85× (ConceptSlide's default wrapper), so text is sized up to
+// stay phone-legible.
+const W = 720;
+const H = 580;
+const CARD_W = 322;
+const CARD_TOP = 18;
+const CARD_BOTTOM = 432;
+const CXS = [176, 544];
+const PLINTH_Y = 482;
+const PLINTH_RX = 132;
+const PAD = 20;
+const CHAR_EM = 0.52;
 
-const splitPanelContent = (label: string, content: string) => {
+const splitPanelContent = (content: string) => {
 	const [rawValue, rawDescription] = content.split('—').map((part) => part.trim());
 	if (rawDescription) {
 		return {value: rawValue, description: rawDescription};
 	}
-
-	return content.length <= 18
-		? {value: content, description: ''}
-		: {value: '', description: content};
+	return content.length <= 18 ? {value: content, description: ''} : {value: '', description: content};
 };
 
 const wrapText = (text: string, maxChars: number) => {
 	const words = text.split(/\s+/).filter(Boolean);
 	const lines: string[] = [];
 	let current = '';
-
 	for (const word of words) {
 		const next = current ? `${current} ${word}` : word;
 		if (next.length > maxChars && current) {
@@ -35,9 +64,8 @@ const wrapText = (text: string, maxChars: number) => {
 			current = next;
 		}
 	}
-
 	if (current) lines.push(current);
-	return lines.slice(0, 3);
+	return lines;
 };
 
 const getBadge = (label: string) => {
@@ -45,105 +73,177 @@ const getBadge = (label: string) => {
 	if (normalized.includes('molar')) return 'g mol⁻¹';
 	if (normalized === 'mass' || normalized.includes('sample')) return 'g';
 	if (normalized.includes('moles') || normalized === 'n') return 'in mol';
-	if (normalized.includes('particles') || normalized === 'n (particles)' || normalized === 'n') return 'no units';
+	if (normalized.includes('particles') || normalized === 'n (particles)') return 'no units';
 	return '';
 };
 
-const labelFontSize = (label: string) => {
-	if (label.length > 18) return 30;
-	if (label.length > 12) return 34;
-	return 42;
+const CHANGE_WORDS = /\b(before|after|start|end|equilibrium|predicted|observed|its ion|then|now)\b/i;
+
+const charsFor = (size: number) => Math.floor((CARD_W - PAD * 2) / (size * CHAR_EM));
+
+/** Lay out one placard's text: largest sizes (within caps) that fit the card. */
+const layoutPanel = (label: string, content: string) => {
+	const {value, description} = splitPanelContent(content);
+	let labelSize = 30;
+	let labelLines = wrapText(label, charsFor(labelSize));
+	while (labelSize > 18 && labelLines.length > 2) {
+		labelSize -= 1;
+		labelLines = wrapText(label, charsFor(labelSize));
+	}
+	const tabH = labelLines.length * labelSize * 1.12 + 26;
+	let valueSize = value.length > 14 ? 34 : 44;
+	let valueLines = value ? wrapText(value, charsFor(valueSize)) : [];
+	while (valueSize > 22 && valueLines.length > 2) {
+		valueSize -= 2;
+		valueLines = wrapText(value, charsFor(valueSize));
+	}
+	const badge = getBadge(label);
+	const bodyTop = CARD_TOP + tabH + 22;
+	const bodyH = CARD_BOTTOM - bodyTop - 18 - (badge ? 44 : 0);
+	const valueH = valueLines.length ? valueLines.length * valueSize * 1.1 + 14 : 0;
+	let descSize = 30;
+	let descLines = wrapText(description, charsFor(descSize));
+	while (descSize > 17 && descLines.length * descSize * 1.28 > bodyH - valueH) {
+		descSize -= 1;
+		descLines = wrapText(description, charsFor(descSize));
+	}
+	const textH = valueH + descLines.length * descSize * 1.28;
+	return {labelSize, labelLines, tabH, valueSize, valueLines, descSize, descLines, badge, bodyTop: bodyTop + Math.max(0, (bodyH - textH) / 2)};
 };
 
-export const BeforeAfterDiagram = ({beforeLabel, afterLabel, beforeContent, afterContent, delay = 0}: Props) => {
+export const BeforeAfterDiagram = ({beforeLabel, afterLabel, beforeContent, afterContent, delay}: Props) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
+	const theme = useAccent();
 
-	const leftP  = spring({frame: frame - delay,      fps, config: {damping: 16, stiffness: 140, mass: 0.9}});
-	const rightP = spring({frame: frame - delay - 14, fps, config: {damping: 16, stiffness: 140, mass: 0.9}});
-	const neqP   = spring({frame: frame - delay - 22, fps, config: {damping: 14, stiffness: 160, mass: 0.8}});
+	const timing = sceneTimingFor('beforeAfter', [beforeLabel, afterLabel, beforeContent, afterContent]);
+	const start = buildStart(delay, timing);
+	// A side is "named" by its label or its content, whichever the narration reaches first.
+	const firstOf = (texts: string[], from: number) =>
+		texts
+			.map((t) => (timing ? mentionOf(timing, t, from) : undefined))
+			.reduce<ReturnType<typeof mentionOf>>((best, m) => (m && (!best || m.word < best.word) ? m : best), undefined);
+	const leftM = firstOf([beforeLabel, beforeContent], 0);
+	const rightM = firstOf([afterLabel, afterContent], (leftM?.word ?? -1) + 1);
+	const latest = timing ? Math.round(timing.durationInFrames * 0.6) : start + 14;
+	const rightAt = rightM ? Math.min(latest, Math.max(start + 14, rightM.frame - 10)) : start + 14;
 
-	const leftX  = interpolate(leftP,  [0, 1], [-80, 0], clamp);
-	const rightX = interpolate(rightP, [0, 1], [80,  0], clamp);
-	const neqOp  = interpolate(neqP,   [0, 1], [0,   1], clamp);
-	const neqScale = interpolate(neqP, [0, 0.5, 1], [0.4, 1.15, 1], clamp);
+	const isChange = CHANGE_WORDS.test(beforeLabel) || CHANGE_WORDS.test(afterLabel);
+	const colors = isChange ? ['#7d8b96', theme.accent] : [theme.accent2, theme.accent];
+	const ID = `ba-${idHash(beforeLabel + afterLabel)}`;
 
-	// Box dimensions
-	const boxX1 = 18, boxX2 = 372;
-	const boxY = 28, boxW = 310, boxH = 310;
-	const cx1 = boxX1 + boxW / 2;
-	const cx2 = boxX2 + boxW / 2;
-	const before = splitPanelContent(beforeLabel, beforeContent);
-	const after = splitPanelContent(afterLabel, afterContent);
-	const beforeLines = wrapText(before.description, 28);
-	const afterLines = wrapText(after.description, 28);
-	const beforeBadge = getBadge(beforeLabel);
-	const afterBadge = getBadge(afterLabel);
+	const leftP = spring({frame: frame - start, fps, config: {damping: 16, stiffness: 140, mass: 0.9}});
+	const rightP = spring({frame: frame - rightAt, fps, config: {damping: 16, stiffness: 140, mass: 0.9}});
+	const medP = spring({frame: frame - rightAt - 10, fps, config: {damping: 12, stiffness: 170, mass: 0.7}});
+	const holdOn = interpolate(frame, [rightAt + 40, rightAt + 70], [0, 1], clamp);
+
+	const panels = [
+		{label: beforeLabel, content: beforeContent, p: leftP, dir: -1},
+		{label: afterLabel, content: afterContent, p: rightP, dir: 1},
+	];
 
 	return (
-		<svg viewBox="0 0 700 380" className="diagram">
-			{/* Left box — N (particles) — amber */}
-			<g transform={`translate(${leftX}, 0)`}>
-				<rect x={boxX1} y={boxY} width={boxW} height={boxH} rx={16}
-					fill="#fef3c7" stroke="#f59e0b" strokeWidth="2.5" />
-				{/* Label */}
-				<text x={cx1} y={boxY + 54} textAnchor="middle" fontSize={labelFontSize(beforeLabel)} fontWeight="900" fill="#d97706">
-					{beforeLabel}
-				</text>
-				{/* Value */}
-				{before.value ? (
-					<text x={cx1} y={boxY + 152} textAnchor="middle" fontSize={before.value.length > 18 ? 28 : 36} fontWeight="800" fill="#92400e">
-						{before.value}
-					</text>
-				) : null}
-				{/* Description */}
-				<text x={cx1} y={before.value ? boxY + 205 : boxY + 138} textAnchor="middle" fontSize="22" fontWeight="650" fill="#a16207">
-					{beforeLines.map((line, index) => (
-						<tspan key={line} x={cx1} dy={index === 0 ? 0 : 30}>{line}</tspan>
-					))}
-				</text>
-				{/* Unit badge */}
-				<rect x={cx1 - 68} y={boxY + 244} width={136} height={36} rx={8}
-					fill="#fbbf24" opacity="0.35" />
-				<text x={cx1} y={boxY + 267} textAnchor="middle" fontSize="18" fontWeight="700" fill="#92400e">
-					{beforeBadge}
-				</text>
-			</g>
+		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${beforeLabel}: ${beforeContent}. ${isChange ? 'Changes to' : 'Compared with'} ${afterLabel}: ${afterContent}.`} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+			<DioramaDefs id={ID} />
+			<defs>
+				<linearGradient id={`${ID}-paper`} x1="0" x2="0.35" y1="0" y2="1">
+					<stop offset="0%" stopColor="#ffffff" />
+					<stop offset="100%" stopColor="#f1efe9" />
+				</linearGradient>
+				<linearGradient id={`${ID}-post`} x1="0" x2="1" y1="0" y2="0">
+					<stop offset="0%" stopColor="#a8a49c" />
+					<stop offset="100%" stopColor="#6f6b64" />
+				</linearGradient>
+				{colors.map((c, i) => (
+					<linearGradient key={i} id={`${ID}-tab-${i}`} x1="0" x2="0.5" y1="0" y2="1">
+						<stop offset="0%" stopColor={shade(c, 0.12)} />
+						<stop offset="100%" stopColor={shade(c, -0.08)} />
+					</linearGradient>
+				))}
+				<radialGradient id={`${ID}-medal`} cx="38%" cy="32%" r="70%" fx="32%" fy="26%">
+					<stop offset="0%" stopColor="#ffffff" />
+					<stop offset="26%" stopColor={shade(theme.accent2, 0.1)} />
+					<stop offset="100%" stopColor={shade(theme.accent, -0.12)} />
+				</radialGradient>
+			</defs>
 
-			{/* Centre ≠ symbol */}
-			<text
-				x={350} y={210} textAnchor="middle" fontSize="76" fontWeight="900" fill="#4f46e5"
-				opacity={neqOp}
-				transform={`scale(${neqScale}) translate(${350 * (1 - 1/neqScale)}, ${210 * (1 - 1/neqScale)})`}
+			{panels.map((panel, i) => {
+				const cx = CXS[i];
+				const L = layoutPanel(panel.label, panel.content);
+				const o = interpolate(panel.p, [0, 0.4], [0, 1], clamp);
+				const rise = interpolate(panel.p, [0, 1], [40, 0]);
+				const sway = idleBob(frame, i * 3, 1.1) * holdOn;
+				const x0 = cx - CARD_W / 2;
+				const tabColor = colors[i];
+				return (
+					<g key={i} opacity={o}>
+						<DioramaPlinth id={ID} cx={cx} cy={PLINTH_Y} rx={PLINTH_RX} />
+						<g transform={`translate(0, ${rise + sway})`}>
+							{/* metal stand posts into the stone */}
+							{[-0.3, 0.3].map((f) => (
+								<rect key={f} x={cx + f * CARD_W - 6} y={CARD_BOTTOM - 10} width={12} height={PLINTH_Y - CARD_BOTTOM + 14} rx={3} fill={`url(#${ID}-post)`} />
+							))}
+							<rect x={x0 + 6} y={CARD_TOP + 10} width={CARD_W} height={CARD_BOTTOM - CARD_TOP} rx={16} fill="rgba(58,40,18,0.14)" />
+							<rect x={x0} y={CARD_TOP} width={CARD_W} height={CARD_BOTTOM - CARD_TOP} rx={16} fill={`url(#${ID}-paper)`} stroke={shade(tabColor, 0.25)} strokeWidth={2} />
+							{/* label tab */}
+							<path
+								d={`M ${x0} ${CARD_TOP + 16} a 16 16 0 0 1 16 -16 h ${CARD_W - 32} a 16 16 0 0 1 16 16 v ${L.tabH - 16} h ${-CARD_W} Z`}
+								fill={`url(#${ID}-tab-${i})`}
+							/>
+							<rect x={x0} y={CARD_TOP + L.tabH} width={CARD_W} height={5} fill="rgba(0,0,0,0.08)" />
+							<text x={cx} y={CARD_TOP + 13 + L.labelSize * 0.92} textAnchor="middle" fill="#ffffff" fontSize={L.labelSize} fontWeight={800} letterSpacing="-0.01em">
+								{L.labelLines.map((line, k) => (
+									<tspan key={k} x={cx} dy={k === 0 ? 0 : L.labelSize * 1.12}>
+										{line}
+									</tspan>
+								))}
+							</text>
+							{/* value, then description */}
+							{L.valueLines.length ? (
+								<text x={cx} y={L.bodyTop + L.valueSize * 0.9} textAnchor="middle" fill={shade(tabColor, -0.12)} fontSize={L.valueSize} fontWeight={850} letterSpacing="-0.02em">
+									{L.valueLines.map((line, k) => (
+										<tspan key={k} x={cx} dy={k === 0 ? 0 : L.valueSize * 1.1}>
+											{line}
+										</tspan>
+									))}
+								</text>
+							) : null}
+							<text
+								x={cx}
+								y={L.bodyTop + (L.valueLines.length ? L.valueLines.length * L.valueSize * 1.1 + 14 : 0) + L.descSize * 0.95}
+								textAnchor="middle"
+								fill={TOK.ink}
+								fontSize={L.descSize}
+								fontWeight={560}
+							>
+								{L.descLines.map((line, k) => (
+									<tspan key={k} x={cx} dy={k === 0 ? 0 : L.descSize * 1.28}>
+										{line}
+									</tspan>
+								))}
+							</text>
+							{L.badge ? (
+								<g>
+									<rect x={cx - 64} y={CARD_BOTTOM - 54} width={128} height={34} rx={17} fill={`${tabColor}22`} />
+									<text x={cx} y={CARD_BOTTOM - 31} textAnchor="middle" fill={shade(tabColor, -0.15)} fontSize={18} fontWeight={700}>
+										{L.badge}
+									</text>
+								</g>
+							) : null}
+						</g>
+					</g>
+				);
+			})}
+
+			{/* relation medallion */}
+			<g
+				transform={`translate(${W / 2}, ${(CARD_TOP + CARD_BOTTOM) / 2}) scale(${interpolate(medP, [0, 1], [0.3, 1]) * (1 + 0.06 * idlePulse(frame, 64) * holdOn)})`}
+				opacity={interpolate(medP, [0, 0.4], [0, 1], clamp)}
 			>
-				≠
-			</text>
-
-			{/* Right box — n (moles) — indigo */}
-			<g transform={`translate(${rightX}, 0)`}>
-				<rect x={boxX2} y={boxY} width={boxW} height={boxH} rx={16}
-					fill="#ede9fe" stroke="#4f46e5" strokeWidth="2.5" />
-				{/* Label */}
-				<text x={cx2} y={boxY + 54} textAnchor="middle" fontSize={labelFontSize(afterLabel)} fontWeight="900" fill="#4338ca">
-					{afterLabel}
-				</text>
-				{/* Value */}
-				{after.value ? (
-					<text x={cx2} y={boxY + 148} textAnchor="middle" fontSize={after.value.length > 18 ? 28 : 50} fontWeight="900" fill="#3730a3">
-						{after.value}
-					</text>
-				) : null}
-				{/* Description */}
-				<text x={cx2} y={after.value ? boxY + 205 : boxY + 138} textAnchor="middle" fontSize="22" fontWeight="650" fill="#4338ca">
-					{afterLines.map((line, index) => (
-						<tspan key={line} x={cx2} dy={index === 0 ? 0 : 30}>{line}</tspan>
-					))}
-				</text>
-				{/* Unit badge */}
-				<rect x={cx2 - 52} y={boxY + 244} width={104} height={36} rx={8}
-					fill="#818cf8" opacity="0.3" />
-				<text x={cx2} y={boxY + 267} textAnchor="middle" fontSize="18" fontWeight="700" fill="#3730a3">
-					{afterBadge}
+				<circle r={33} fill="rgba(58,40,18,0.18)" cx={3} cy={5} />
+				<circle r={32} fill={`url(#${ID}-medal)`} stroke="#ffffff" strokeWidth={3} />
+				<text y={isChange ? 11 : 8} textAnchor="middle" fill="#ffffff" fontSize={isChange ? 34 : 24} fontWeight={850} style={{textShadow: '0 1px 1px rgba(0,0,0,0.25)'}}>
+					{isChange ? '→' : 'vs'}
 				</text>
 			</g>
 		</svg>
