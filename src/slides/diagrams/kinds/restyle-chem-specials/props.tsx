@@ -4,7 +4,7 @@
 // only add what those don't cover: glossy balls of any colour (for particles
 // that aren't CPK atoms: protons, electrons, dye, metal ions), a linear
 // three-atom molecule (CO₂), glassware shading, self-drawing strokes and a
-// word-proportional beat clock. Candidates for promotion into diorama.tsx.
+// triangle-wave clock for loops. Candidates for promotion into diorama.tsx.
 
 import type {ReactNode} from 'react';
 import {interpolate} from 'remotion';
@@ -96,15 +96,6 @@ export const drawProps = (progress: number) => ({
 export const ArrowHead = ({x, y, angleDeg, size = 12, fill, opacity = 1}: {x: number; y: number; angleDeg: number; size?: number; fill: string; opacity?: number}) => (
 	<path d={`M 0 0 L ${-size} ${-size * 0.6} L ${-size * 0.72} 0 L ${-size} ${size * 0.6} Z`} fill={fill} opacity={opacity} transform={`translate(${x},${y}) rotate(${angleDeg})`} />
 );
-
-/**
- * Word-proportional beat clock. The narration has no word timings in git, so
- * a beat is placed where its phrase falls in the voiceover: word `w` of
- * `total`, spread across the scene's spoken length (duration minus the
- * transition tail). Returns a frame relative to `start` (never below `min`).
- */
-export const beatAt = (w: number, total: number, durationInFrames: number, start: number, min = 0) =>
-	Math.max(min, Math.round((w / total) * (durationInFrames - 60)) - start);
 
 /** Triangle wave 0→1→0 with the given period (frames): for bounces and loops. */
 export const pingPong = (frame: number, period: number) => {
