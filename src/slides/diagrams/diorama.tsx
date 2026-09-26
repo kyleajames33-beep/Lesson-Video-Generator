@@ -1,7 +1,7 @@
 // Diorama primitives — the coded half of the "painted diorama" look.
 //
-// The painted props (docs/diorama-asset-brief-*.md) sit on a round soil-and-grass
-// plinth, lit from the top-left, seen from a 3/4 top-down camera. These SVG
+// Objects stand on a round stone display plinth (it was grass-and-soil until
+// review on 2026-09-26: the grass read as cartoony), lit from the top-left, seen from a 3/4 top-down camera. These SVG
 // pieces draw the same plinth and glossy "painted" atoms so coded diagrams
 // (which carry every label, number and moving part) read as one family with the
 // painted art. Everything is deterministic: no randomness, no external files.
@@ -11,7 +11,8 @@
 
 import type {ReactNode} from 'react';
 
-// Plinth palette, matched to the painted garden/tree tiles.
+// Legacy grass/soil palette (kept so existing references still compile; the
+// plinth itself now uses STONE below).
 export const DIO = {
 	grassLight: '#b5d86a',
 	grass: '#8dbb45',
@@ -21,6 +22,18 @@ export const DIO = {
 	soilDark: '#553620',
 	pebble: '#b89a74',
 	shadow: 'rgba(58,40,18,0.22)',
+} as const;
+
+// Stone plinth palette: a neutral display stand.
+export const STONE = {
+	topLight: '#e4e1db',
+	top: '#d3cfc7',
+	topEdge: '#bdb8ae',
+	sideLight: '#cfccc5',
+	side: '#b3afa7',
+	sideDark: '#8f8b83',
+	lip: '#a9a59d',
+	shadow: 'rgba(40,36,30,0.2)',
 } as const;
 
 // CPK-style element colours (H white, O red, Cl green, Na violet, …): the
@@ -73,52 +86,37 @@ export const DioramaDefs = ({id, elements = []}: {id: string; elements?: string[
 );
 
 /**
- * A round soil-and-grass plinth. (cx, cy) is the centre of the grass top;
- * children are drawn on top of it (so particles/bars "stand" on the grass).
+ * A round stone display plinth. (cx, cy) is the centre of the top face;
+ * children are drawn on top of it (so particles/bars "stand" on it).
  */
 export const DioramaPlinth = ({
 	id, cx, cy, rx, children,
 }: {id: string; cx: number; cy: number; rx: number; children?: ReactNode}) => {
 	const ry = rx * 0.34;
 	const depth = rx * 0.2;
-	// Deterministic grass tufts and pebbles around the rim.
-	const tufts = [-0.86, -0.55, -0.18, 0.24, 0.6, 0.9];
-	const pebbles = [-0.7, -0.35, 0.05, 0.42, 0.78];
 	return (
 		<g>
-			<ellipse cx={cx + rx * 0.06} cy={cy + depth + ry * 0.55} rx={rx * 1.04} ry={ry * 0.9} fill={DIO.shadow} filter={`url(#${id}-blur)`} />
+			<defs>
+				<radialGradient id={`${id}-stone-top`} cx="38%" cy="30%" r="80%">
+					<stop offset="0%" stopColor={STONE.topLight} />
+					<stop offset="70%" stopColor={STONE.top} />
+					<stop offset="100%" stopColor={STONE.topEdge} />
+				</radialGradient>
+				<linearGradient id={`${id}-stone-side`} x1="0" x2="1" y1="0" y2="0">
+					<stop offset="0%" stopColor={STONE.sideLight} />
+					<stop offset="40%" stopColor={STONE.side} />
+					<stop offset="100%" stopColor={STONE.sideDark} />
+				</linearGradient>
+			</defs>
+			<ellipse cx={cx + rx * 0.06} cy={cy + depth + ry * 0.55} rx={rx * 1.04} ry={ry * 0.9} fill={STONE.shadow} filter={`url(#${id}-blur)`} />
 			<path
 				d={`M ${cx - rx} ${cy} L ${cx - rx} ${cy + depth} A ${rx} ${ry} 0 0 0 ${cx + rx} ${cy + depth} L ${cx + rx} ${cy} Z`}
-				fill={`url(#${id}-soil)`}
+				fill={`url(#${id}-stone-side)`}
 			/>
-			{pebbles.map((p, i) => (
-				<ellipse
-					key={i}
-					cx={cx + p * rx}
-					cy={cy + depth * 0.55 + ry * Math.sqrt(1 - p * p)}
-					rx={rx * 0.028}
-					ry={rx * 0.016}
-					fill={DIO.pebble}
-					opacity={0.8}
-				/>
-			))}
-			<ellipse cx={cx} cy={cy} rx={rx} ry={ry} fill={`url(#${id}-grass)`} />
-			<ellipse cx={cx - rx * 0.12} cy={cy - ry * 0.18} rx={rx * 0.62} ry={ry * 0.48} fill="#ffffff" opacity={0.12} />
-			{tufts.map((t, i) => {
-				const x = cx + t * rx * 0.97;
-				const y = cy + ry * Math.sqrt(1 - t * t) * 0.97;
-				const h = rx * 0.07;
-				return (
-					<path
-						key={i}
-						d={`M ${x - h * 0.5} ${y} q ${h * 0.1} ${-h} ${-h * 0.2} ${-h * 1.2} M ${x} ${y} q 0 ${-h} ${h * 0.15} ${-h * 1.4} M ${x + h * 0.5} ${y} q ${h * 0.05} ${-h * 0.8} ${h * 0.4} ${-h}`}
-						stroke={DIO.grassDark}
-						strokeWidth={2}
-						strokeLinecap="round"
-						fill="none"
-					/>
-				);
-			})}
+			{/* bevel: a thin line where the top meets the side */}
+			<ellipse cx={cx} cy={cy + 1.5} rx={rx} ry={ry} fill={STONE.topEdge} />
+			<ellipse cx={cx} cy={cy} rx={rx} ry={ry} fill={`url(#${id}-stone-top)`} />
+			<ellipse cx={cx} cy={cy} rx={rx * 0.9} ry={ry * 0.9} fill="none" stroke="#ffffff" strokeOpacity={0.35} strokeWidth={1.5} />
 			{children}
 		</g>
 	);
@@ -151,7 +149,7 @@ export const Molecule = ({
 	const order = [...placed].sort((p, q) => p.dy - q.dy);
 	return (
 		<g opacity={opacity} transform={`translate(${x},${y}) scale(${scale})`}>
-			<ellipse cx={0} cy={r * 0.95} rx={r * 1.25} ry={r * 0.28} fill="rgba(40,60,20,0.25)" />
+			<ellipse cx={0} cy={r * 0.95} rx={r * 1.25} ry={r * 0.28} fill="rgba(40,36,30,0.25)" />
 			{order.map((p, i) => (
 				<circle
 					key={i}
