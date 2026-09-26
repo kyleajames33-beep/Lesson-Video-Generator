@@ -51,7 +51,7 @@ const INERT = new Set(['Pt', 'C', 'graphite']);
 const CX = [190, 570];
 const PLINTH_Y = 432;
 const B_TOP = 250, B_BOT = 420, B_HW = 90, LIQ = 292;
-const E_TOP = 150, E_BOT = 392, E_HW = 17;
+const E_TOP = 150, E_BOT = 364, E_HW = 17;
 const WIRE_Y = 74;
 
 export const GalvanicCellDiagram = ({leftMetal, leftIon, rightMetal, rightIon, delay = 0}: Props) => {
@@ -108,7 +108,7 @@ export const GalvanicCellDiagram = ({leftMetal, leftIon, rightMetal, rightIon, d
 						<rect x={cx - E_HW + 4} y={E_TOP + 6} width={5} height={E_BOT - E_TOP - 12} rx={2.5} fill="#ffffff" opacity={0.45} />
 						<text x={cx} y={E_TOP + 44} textAnchor="middle" fill={shade(mc, -0.6)} fontSize={21} fontWeight={900}>{metal}</text>
 					</g>
-					<text x={cx + (i === 0 ? -26 : 26)} y={LIQ + 76} textAnchor={i === 0 ? 'end' : 'start'} fill={shade(sc, -0.45)} fontSize={21} fontWeight={800}>{ions[i]}</text>
+					<text x={cx} y={B_BOT - 18} textAnchor="middle" fill={shade(sc, -0.45)} fontSize={21} fontWeight={800}>{ions[i]}</text>
 					{/* beaker glass */}
 					<path d={`M ${cx - B_HW} ${B_TOP} L ${cx - B_HW} ${B_BOT - 10} Q ${cx - B_HW} ${B_BOT} ${cx - B_HW + 10} ${B_BOT} L ${cx + B_HW - 10} ${B_BOT} Q ${cx + B_HW} ${B_BOT} ${cx + B_HW} ${B_BOT - 10} L ${cx + B_HW} ${B_TOP}`} fill={`url(#${ID}-glass)`} stroke={GLASS_EDGE} strokeWidth={3.5} strokeLinejoin="round" />
 					<path d={`M ${cx - B_HW + 10} ${B_TOP + 14} L ${cx - B_HW + 10} ${B_BOT - 18}`} stroke="#ffffff" strokeOpacity={0.8} strokeWidth={5} strokeLinecap="round" />
@@ -120,7 +120,7 @@ export const GalvanicCellDiagram = ({leftMetal, leftIon, rightMetal, rightIon, d
 					<text x={cx} y={488} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>{isAnode ? 'oxidation' : 'reduction'}</text>
 				</g>
 				{INERT.has(metal) ? (
-					<text x={cx + 6} y={E_TOP + 150} textAnchor="middle" fill={shade(mc, -0.62)} fontSize={16} fontWeight={800} opacity={fadeAt(frame, 110)} transform={`rotate(-90 ${cx + 6} ${E_TOP + 150})`}>
+					<text x={cx + 6} y={E_TOP + 136} textAnchor="middle" fill={shade(mc, -0.62)} fontSize={16} fontWeight={800} opacity={fadeAt(frame, 110)} transform={`rotate(-90 ${cx + 6} ${E_TOP + 136})`}>
 						inert: conducts only
 					</text>
 				) : null}

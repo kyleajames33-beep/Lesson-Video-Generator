@@ -28,7 +28,7 @@ const START = 62;
 const W = 760;
 
 const BX = 300; // burette + flask centre line
-const ROD_X = BX - 166; // retort-stand rod, well clear of the titre bracket
+const ROD_X = BX - 204; // retort-stand rod, well clear of the titre bracket
 const CLAMP_Y = 226; // clamp sits below the titre bracket
 const B_TOP = 44, B_BOT = 282, B_HW = 15;
 const LEVEL_0 = 66, LEVEL_1 = 170; // standard solution level before / at the endpoint
@@ -79,9 +79,9 @@ export const TitrationSetupDiagram = () => {
 			</defs>
 
 			<g opacity={fadeAt(frame, -START, 16)}>
-				<DioramaPlinth id={ID} cx={BX - 44} cy={PLINTH_Y} rx={172}>
+				<DioramaPlinth id={ID} cx={BX - 66} cy={PLINTH_Y} rx={180}>
 					{/* retort stand: foot, rod, boss and clamp arm */}
-					<ellipse cx={ROD_X + 6} cy={PLINTH_Y + 4} rx={46} ry={11} fill="#5e656a" />
+					<ellipse cx={ROD_X + 6} cy={PLINTH_Y + 4} rx={30} ry={9} fill="#5e656a" />
 					<rect x={ROD_X} y={30} width={11} height={PLINTH_Y - 24} rx={5} fill={`url(#${ID}-steel)`} />
 					<rect x={ROD_X - 6} y={CLAMP_Y - 6} width={23} height={20} rx={4} fill="#5e656a" />
 					<rect x={ROD_X + 16} y={CLAMP_Y} width={BX - ROD_X - 30} height={9} rx={4} fill={`url(#${ID}-steel)`} />
