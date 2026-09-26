@@ -103,7 +103,39 @@
         "audioFile": "public/audio/Chemistry-Y11-M4-L3/concept.3effca406076.mp3"
       },
       "diagram": {
-        "type": "calorimeter"
+        "type": "diorama",
+        "kind": "chem11m4Calorimetry",
+        "delay": 90,
+        "props": {
+          "mode": "neutralisation",
+          "beats": [
+            300,
+            630
+          ],
+          "cards": [
+            {
+              "at": 500,
+              "title": "m = total mass of solution",
+              "eq": "acid + base combined",
+              "key": true
+            },
+            {
+              "at": 760,
+              "title": "c = 4.18 J g⁻¹ °C⁻¹",
+              "eq": "dilute solution ≈ water"
+            },
+            {
+              "at": 890,
+              "title": "n = moles of water formed",
+              "eq": "c × V of limiting reactant"
+            },
+            {
+              "at": 1120,
+              "title": "ΔHn = −q ÷ n",
+              "eq": "negative: heat released"
+            }
+          ]
+        }
       }
     },
     {

@@ -14,6 +14,11 @@ import {ElectronTransferDiagram} from '../kinds/chem-y11-m3m4/ElectronTransferDi
 import {GalvanicCellDiorama} from '../kinds/chem-y11-m3m4/GalvanicCellDiorama';
 import {CollisionBoxDiagram} from '../kinds/chem-y11-m3m4/CollisionBoxDiagram';
 import {RateFactorsDiagram} from '../kinds/chem-y11-m3m4/RateFactorsDiagram';
+import {EnergyLadderDiagram} from '../kinds/chem-y11-m3m4/EnergyLadderDiagram';
+import {CalorimetryDiagram} from '../kinds/chem-y11-m3m4/CalorimetryDiagram';
+import {CatalystPathDiagram} from '../kinds/chem-y11-m3m4/CatalystPathDiagram';
+import {EquationStackDiagram} from '../kinds/chem-y11-m3m4/EquationStackDiagram';
+import {StatesEntropyDiagram} from '../kinds/chem-y11-m3m4/StatesEntropyDiagram';
 
 export const KINDS: DioramaKindMap = {
   chem11m3ChangeTest: ChangeTestDiagram,
@@ -25,4 +30,9 @@ export const KINDS: DioramaKindMap = {
   chem11m3GalvanicCell: GalvanicCellDiorama,
   chem11m3CollisionBox: CollisionBoxDiagram,
   chem11m3RateFactors: RateFactorsDiagram,
+  chem11m4EnergyLadder: EnergyLadderDiagram,
+  chem11m4Calorimetry: CalorimetryDiagram,
+  chem11m4CatalystPath: CatalystPathDiagram,
+  chem11m4EquationStack: EquationStackDiagram,
+  chem11m4StatesEntropy: StatesEntropyDiagram,
 };

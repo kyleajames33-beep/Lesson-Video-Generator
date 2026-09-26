@@ -102,7 +102,97 @@
         "audioFile": "public/audio/Chemistry-Y11-M4-L8/concept.ef97dac10722.mp3"
       },
       "diagram": {
-        "type": "hessCycle"
+        "type": "diorama",
+        "kind": "chem11m4EquationStack",
+        "delay": 90,
+        "props": {
+          "header": "Target: 2A → C",
+          "rows": [
+            {
+              "at": 20,
+              "tag": "(1)",
+              "lhs": [
+                "A"
+              ],
+              "rhs": [
+                "B"
+              ],
+              "dh": "ΔH₁",
+              "fadeAt": 240
+            },
+            {
+              "at": 30,
+              "tag": "(2)",
+              "lhs": [
+                "C"
+              ],
+              "rhs": [
+                "2B"
+              ],
+              "dh": "ΔH₂",
+              "fadeAt": 60
+            },
+            {
+              "at": 60,
+              "tag": "reverse (2)",
+              "lhs": [
+                "2B"
+              ],
+              "rhs": [
+                "C"
+              ],
+              "dh": "−ΔH₂",
+              "changed": true
+            },
+            {
+              "at": 240,
+              "tag": "(1) × 2",
+              "lhs": [
+                "2A"
+              ],
+              "rhs": [
+                "2B"
+              ],
+              "dh": "2ΔH₁",
+              "changed": true
+            },
+            {
+              "at": 450,
+              "tag": "add",
+              "sum": true,
+              "lhs": [
+                "2A",
+                "+",
+                {
+                  "t": "2B",
+                  "cancel": true
+                }
+              ],
+              "rhs": [
+                {
+                  "t": "2B",
+                  "cancel": true
+                },
+                "+",
+                "C"
+              ],
+              "dh": "2ΔH₁ − ΔH₂",
+              "cancelAt": 500
+            },
+            {
+              "at": 690,
+              "tag": "= target",
+              "lhs": [
+                "2A"
+              ],
+              "rhs": [
+                "C"
+              ],
+              "dh": "2ΔH₁ − ΔH₂",
+              "key": true
+            }
+          ]
+        }
       }
     },
     {
