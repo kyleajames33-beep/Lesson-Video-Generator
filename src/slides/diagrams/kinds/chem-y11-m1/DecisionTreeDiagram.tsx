@@ -156,7 +156,7 @@ const Icon = ({icon, cx, cy, rx, frame, seed}: {icon: TreeIcon; cx: number; cy: 
 			return (
 				<g>
 					<Molecule id={ID} atoms={['O', 'H', 'H']} x={w1.x} y={w1.y} r={r} />
-					<ellipse cx={o2.x + r * 0.5} cy={o2.y + r * 1.05} rx={r * 1.35} ry={r * 0.28} fill="rgba(40,60,20,0.25)" />
+					<ellipse cx={o2.x + r * 0.5} cy={o2.y + r * 1.05} rx={r * 1.35} ry={r * 0.28} fill="rgba(40,36,30,0.25)" />
 					{atom('H', h2[0].x, h2[0].y, r * 0.72, 'ha')}
 					{atom('O', o2.x, o2.y, r, 'o')}
 					{atom('H', h2[1].x, h2[1].y, r * 0.72, 'hb')}

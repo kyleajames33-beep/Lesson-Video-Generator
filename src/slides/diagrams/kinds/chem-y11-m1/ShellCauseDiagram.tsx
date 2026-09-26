@@ -147,7 +147,7 @@ export const ShellCauseDiagram = ({panels = DEFAULT_PANELS, pulseAt = 817, delay
 							const s = 0.6 + 0.4 * Math.min(1, pop);
 							return (
 								<g key={k}>
-									<ellipse cx={x} cy={PLINTH_Y - 2} rx={R * 0.62} ry={R * 0.13} fill="rgba(40,60,20,0.22)" opacity={Math.min(1, pop)} />
+									<ellipse cx={x} cy={PLINTH_Y - 2} rx={R * 0.62} ry={R * 0.13} fill="rgba(40,36,30,0.22)" opacity={Math.min(1, pop)} />
 									<g opacity={Math.min(1, pop * 1.5)} transform={`translate(${x},${y}) scale(${s}) translate(${-x},${-y})`}>
 										<circle cx={x} cy={y} r={R + 8} fill="#ffffff" opacity={0.55} />
 										{inner > 0 && shieldT > 0 && <circle cx={x} cy={y} r={inner} fill={TOK.inkMute} opacity={0.26 * shieldT} />}

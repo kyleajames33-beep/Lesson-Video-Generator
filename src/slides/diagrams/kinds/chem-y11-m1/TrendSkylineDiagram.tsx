@@ -1,7 +1,7 @@
 // TrendSkylineDiagram — a periodic trend as a "skyline" over the main-group block.
 //
 // The main-group block (groups 1, 2, 13–18 by default) is a slab of low tiles on
-// a grass-and-soil base, seen from a 3/4 camera (back rows recede up and to the
+// a stone base, seen from a 3/4 camera (back rows recede up and to the
 // left). A glossy column rises on the tile of each element the scene gives a
 // value for, at its true period/group position, with height ∝ value and the
 // value on top. Arrows name the direction of the trend across and down; the
@@ -18,7 +18,7 @@
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
-import {DIO, idleBob, idlePulse} from '../../diorama';
+import {idleBob, idlePulse, STONE} from '../../diorama';
 import {Arrow, Chip, clamp, fadeAt, popAt, shade} from './shared';
 
 export type SkylineElement = {symbol: string; period: number; group: number; value: number; at?: number};
@@ -63,7 +63,7 @@ const TD = 54; // screen depth of one tile row
 const SK = -44; // x shift per row towards the back (back rows sit further left)
 const YA = 262; // back edge of the slab
 const SLAB_W = 512; // screen width of the tile grid
-const THICK = 22; // slab (soil) thickness
+const THICK = 22; // slab thickness
 const CR = 19; // column radius
 const CAP = 7; // column cap ellipse ry
 const MAX_COL_H = 192;
@@ -135,15 +135,15 @@ export const TrendSkylineDiagram = ({
 	return (
 		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${label}: values as columns on the periodic table`} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<defs>
-				<linearGradient id={`${ID}-grass`} x1="0" x2="1" y1="0" y2="1">
-					<stop offset="0%" stopColor={DIO.grassLight} />
-					<stop offset="60%" stopColor={DIO.grass} />
-					<stop offset="100%" stopColor={DIO.grassDark} />
+				<linearGradient id={`${ID}-top`} x1="0" x2="1" y1="0" y2="1">
+					<stop offset="0%" stopColor={STONE.topLight} />
+					<stop offset="60%" stopColor={STONE.top} />
+					<stop offset="100%" stopColor={STONE.topEdge} />
 				</linearGradient>
-				<linearGradient id={`${ID}-soil`} x1="0" x2="1" y1="0" y2="0">
-					<stop offset="0%" stopColor={DIO.soilLight} />
-					<stop offset="55%" stopColor={DIO.soil} />
-					<stop offset="100%" stopColor={DIO.soilDark} />
+				<linearGradient id={`${ID}-side`} x1="0" x2="1" y1="0" y2="0">
+					<stop offset="0%" stopColor={STONE.sideLight} />
+					<stop offset="55%" stopColor={STONE.side} />
+					<stop offset="100%" stopColor={STONE.sideDark} />
 				</linearGradient>
 				<filter id={`${ID}-blur`} x="-30%" y="-30%" width="160%" height="160%">
 					<feGaussianBlur stdDeviation="7" />
@@ -171,9 +171,9 @@ export const TrendSkylineDiagram = ({
 				{unit}
 			</text>
 
-			{/* Slab: soft shadow, soil faces, grass top */}
+			{/* Slab: soft shadow, stone faces, stone top */}
 			<g opacity={fadeAt(frame, 0, 14)}>
-				<ellipse cx={(front.x + backR.x) / 2 + 20} cy={front.y + THICK + 6} rx={SLAB_W * 0.58} ry={26} fill={DIO.shadow} filter={`url(#${ID}-blur)`} />
+				<ellipse cx={(front.x + backR.x) / 2 + 20} cy={front.y + THICK + 6} rx={SLAB_W * 0.58} ry={26} fill={STONE.shadow} filter={`url(#${ID}-blur)`} />
 				<polygon
 					points={poly([
 						{x: front.x - pad, y: front.y + pad * 0.6},
@@ -181,7 +181,7 @@ export const TrendSkylineDiagram = ({
 						{x: frontR.x + pad, y: frontR.y + pad * 0.6 + THICK},
 						{x: front.x - pad, y: front.y + pad * 0.6 + THICK},
 					])}
-					fill={`url(#${ID}-soil)`}
+					fill={`url(#${ID}-side)`}
 				/>
 				<polygon
 					points={poly([
@@ -190,7 +190,7 @@ export const TrendSkylineDiagram = ({
 						{x: frontR.x + pad, y: frontR.y + pad * 0.6 + THICK},
 						{x: backR.x + pad, y: backR.y - pad * 0.6 + THICK},
 					])}
-					fill={DIO.soilDark}
+					fill={STONE.sideDark}
 				/>
 				<polygon
 					points={poly([
@@ -199,22 +199,8 @@ export const TrendSkylineDiagram = ({
 						{x: frontR.x + pad, y: frontR.y + pad * 0.6},
 						{x: front.x - pad, y: front.y + pad * 0.6},
 					])}
-					fill={`url(#${ID}-grass)`}
+					fill={`url(#${ID}-top)`}
 				/>
-				{[0.1, 0.3, 0.52, 0.74, 0.93].map((t, i) => {
-					const x = front.x - pad + (frontR.x - front.x + 2 * pad) * t;
-					const y = front.y + pad * 0.6;
-					return (
-						<path
-							key={i}
-							d={`M ${x - 3} ${y} q 1 -6 -1 -8 M ${x} ${y} q 0 -7 1.5 -10 M ${x + 3} ${y} q 0.5 -5 3 -7`}
-							stroke={DIO.grassDark}
-							strokeWidth={2}
-							strokeLinecap="round"
-							fill="none"
-						/>
-					);
-				})}
 
 				{/* Tiles */}
 				{Array.from({length: nR}, (_, r) =>

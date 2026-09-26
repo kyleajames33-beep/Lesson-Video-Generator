@@ -15,7 +15,7 @@
 import {interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
-import {DIO, DioramaDefs, DioramaPlinth, idleBob, idlePulse} from '../../diorama';
+import {DioramaDefs, DioramaPlinth, idleBob, idlePulse, STONE} from '../../diorama';
 import {Arrow, clamp, fadeAt, popAt} from './shared';
 
 export type CompassArrow = {
@@ -171,7 +171,7 @@ export const TrendCompassDiagram = ({
 						<g transform={`translate(${cx},${PLINTH_Y}) scale(${0.7 + 0.3 * Math.min(1, pop)}) translate(${-cx},${-PLINTH_Y})`}>
 							<DioramaPlinth id={ID} cx={cx} cy={PLINTH_Y} rx={Math.min(104, slot * 0.42)}>
 								{[-1, 1].map((s) => (
-									<rect key={s} x={cx + s * 64 - 5} y={BY + BH - 4} width={10} height={PLINTH_Y - BY - BH + 8} rx={3} fill={DIO.soil} stroke={DIO.soilDark} strokeWidth={1.5} />
+									<rect key={s} x={cx + s * 64 - 5} y={BY + BH - 4} width={10} height={PLINTH_Y - BY - BH + 8} rx={3} fill={STONE.side} stroke={STONE.sideDark} strokeWidth={1.5} />
 								))}
 								<rect x={bx0 + 4} y={BY + 6} width={BW} height={BH} rx={14} fill="rgba(40,50,40,0.14)" />
 								<rect x={bx0} y={BY} width={BW} height={BH} rx={14} fill={TOK.bgLift} stroke={TOK.cardBorder} strokeWidth={2} />

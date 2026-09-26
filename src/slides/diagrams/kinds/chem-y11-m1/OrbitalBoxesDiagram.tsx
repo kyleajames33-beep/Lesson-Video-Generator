@@ -14,7 +14,7 @@
 import {interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
-import {DIO, DioramaDefs, DioramaPlinth, idleBob, idlePulse} from '../../diorama';
+import {DioramaDefs, DioramaPlinth, idleBob, idlePulse, STONE} from '../../diorama';
 import {Arrow, Ball, GlossDefs, clamp, fadeAt, popAt} from './shared';
 
 export type OrbitalStage = {label: string; d: number; s: number; at?: number};
@@ -148,11 +148,11 @@ export const OrbitalBoxesDiagram = ({
 						<g transform={`translate(${x},${PLINTH_Y}) scale(${s}) translate(${-x},${-PLINTH_Y})`}>
 							<DioramaPlinth id={ID} cx={x} cy={PLINTH_Y} rx={Math.min(108, slotW * 0.43)}>
 								{[-1, 1].map((sd) => (
-									<rect key={sd} x={x + sd * 70 - 5} y={BOARD_Y1 - 4} width={10} height={PLINTH_Y - BOARD_Y1 + 6} rx={3} fill={DIO.soil} stroke={DIO.soilDark} strokeWidth={1.5} />
+									<rect key={sd} x={x + sd * 70 - 5} y={BOARD_Y1 - 4} width={10} height={PLINTH_Y - BOARD_Y1 + 6} rx={3} fill={STONE.side} stroke={STONE.sideDark} strokeWidth={1.5} />
 								))}
 								<rect x={x - 112 + 4} y={BOARD_Y0 + 6} width={224} height={BOARD_Y1 - BOARD_Y0} rx={14} fill="rgba(40,50,40,0.14)" />
 								<rect x={x - 112} y={BOARD_Y0} width={224} height={BOARD_Y1 - BOARD_Y0} rx={14} fill={TOK.bgLift} stroke={TOK.cardBorder} strokeWidth={2} />
-								{/* core badge on the grass */}
+								{/* core badge on the plinth */}
 								<Ball id={ID} name="core" color={CORE_COLOR} x={x} y={PLINTH_Y - 6 + (frame > at + 30 ? idleBob(frame, i, 1.2) : 0)} r={27} label={core} labelSize={17} />
 							</DioramaPlinth>
 

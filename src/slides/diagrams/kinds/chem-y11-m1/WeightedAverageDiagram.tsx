@@ -63,7 +63,7 @@ const decimals = (x: number) => {
 	const i = s.indexOf('.');
 	return i < 0 ? 0 : s.length - i - 1;
 };
-// A heap of n balls on a plinth top: hex-packed positions inside the grass
+// A heap of n balls on a plinth top: hex-packed positions inside the
 // ellipse, nearest the centre first, painted back to front.
 const heap = (cx: number, cy: number, rx: number, n: number, r: number) => {
 	const ry = rx * 0.34;
@@ -150,7 +150,7 @@ export const WeightedAverageDiagram = ({
 								const enter = popAt(frame, fps, 4 + k * 2 + i * 6);
 								return (
 									<g key={k} transform={`translate(${s.x},${s.y + idleBob(frame, k + i * 20, 1.6)}) scale(${Math.max(0, enter)})`}>
-										<ellipse cx={0} cy={atomR * 0.95} rx={atomR * 1.1} ry={atomR * 0.26} fill="rgba(40,60,20,0.22)" />
+										<ellipse cx={0} cy={atomR * 0.95} rx={atomR * 1.1} ry={atomR * 0.26} fill="rgba(40,36,30,0.22)" />
 										<Ball id={ID} name={`iso${i}`} color={atomColors[`iso${i}`]} x={0} y={0} r={atomR} />
 									</g>
 								);

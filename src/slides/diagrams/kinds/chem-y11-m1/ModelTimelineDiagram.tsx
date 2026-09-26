@@ -133,7 +133,7 @@ export const ModelTimelineDiagram = ({
 				{title}
 			</text>
 
-			{/* Timeline rail, running behind the plinths' soil bands */}
+			{/* Timeline rail, running behind the plinths' side bands */}
 			<g opacity={fadeAt(frame, 0)}>
 				<line x1={margin + 10} y1={PLINTH_Y + rx * 0.1} x2={W - margin - 10} y2={PLINTH_Y + rx * 0.1} stroke={shade(theme.accent, 0.3)} strokeWidth={6} strokeLinecap="round" opacity={0.55} />
 			</g>
@@ -167,7 +167,7 @@ export const ModelTimelineDiagram = ({
 				return (
 					<g key={m.name} opacity={Math.min(1, pop * 1.6)}>
 						<DioramaPlinth id={ID} cx={xs[i]} cy={PLINTH_Y} rx={rx}>
-							<ellipse cx={xs[i]} cy={PLINTH_Y - 2} rx={40} ry={10} fill="rgba(40,60,20,0.22)" />
+							<ellipse cx={xs[i]} cy={PLINTH_Y - 2} rx={40} ry={10} fill="rgba(40,36,30,0.22)" />
 						</DioramaPlinth>
 						<g opacity={dim} transform={`translate(0, ${rise + idleBob(frame, i, 2)})`}>
 							<g transform={`translate(${xs[i]},${MODEL_Y}) scale(1.22) translate(${-xs[i]},${-MODEL_Y})`}>
