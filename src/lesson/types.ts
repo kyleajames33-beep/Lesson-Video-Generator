@@ -88,6 +88,9 @@ export type UnitCancelConfig = {
   result: string;
 };
 
+/** Rendering style for coded diagrams. See docs/hand-drawn-style.md. */
+export type DiagramStyle = 'default' | 'handDrawn';
+
 export type DiagramConfig =
   | {type: 'bridge'}
   | {type: 'dozenMole'}
@@ -341,6 +344,12 @@ export type TextScene = SceneBase & {
   mistakeTag?: string;
   unitCancel?: UnitCancelConfig;
   diagram?: DiagramConfig;
+  /**
+   * Draw this scene's diagram in the hand-drawn stop-motion style (line boil,
+   * held drawings, paper grain) — or force the default look. Overrides the
+   * lesson-level `visualStyle`. See docs/hand-drawn-style.md.
+   */
+  diagramStyle?: DiagramStyle;
   image?: string;
 };
 
@@ -481,6 +490,12 @@ export type LessonData = {
   lessonIntent?: string;
   examSkill?: string;
   productionRole?: 'reference' | 'production';
+  /**
+   * Draw every concept-scene diagram in this lesson in the hand-drawn
+   * stop-motion style. A scene's own `diagramStyle` overrides it.
+   * Unset = 'default' (unchanged look). See docs/hand-drawn-style.md.
+   */
+  visualStyle?: DiagramStyle;
   fps: number;
   width: number;
   height: number;

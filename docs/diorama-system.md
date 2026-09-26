@@ -12,6 +12,14 @@ that change, with a crown on the answer). Shared primitives are in
 `src/slides/diagrams/diorama.tsx`: `DioramaDefs`, `DioramaPlinth`, `Molecule`,
 `plinthSlots`, `idleBob`, `idlePulse`, `DIO`, `ELEMENT_COLORS`.
 
+## Hand-drawn style
+
+Any coded diagram can also be drawn in a hand-drawn stop-motion style (line
+boil, held drawings, paper grain) with `"visualStyle": "handDrawn"` on the
+lesson or `"diagramStyle": "handDrawn"` on a concept scene, and the `hd…`
+kinds (lane `handdrawn`) are native hand-drawn clips. See
+`docs/hand-drawn-style.md`.
+
 ## Where diagrams render
 
 Only **`concept`** scenes render `scene.diagram` (`ConceptSlide`). Definition,

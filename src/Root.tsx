@@ -2,6 +2,7 @@ import {AbsoluteFill, Composition} from 'remotion';
 import {LessonVideo, VIDEO_FPS, VIDEO_HEIGHT, VIDEO_WIDTH} from './LessonVideo';
 import {AssetShowcase} from './AssetShowcase';
 import {ReferenceStyleGallery} from './ReferenceStyleGallery';
+import {HAND_DRAWN_CLIPS, HandDrawnClip, HandDrawnShowcase, showcaseDuration} from './dev/HandDrawnShowcase';
 import {lessons} from './data/lessonRegistry';
 import {getLessonDurationInFrames} from './lesson/timing';
 
@@ -18,6 +19,19 @@ export const Root = () => {
       <Composition id="Hi" component={Hi} durationInFrames={60} fps={VIDEO_FPS} width={VIDEO_WIDTH} height={VIDEO_HEIGHT} />
       <Composition id="AssetShowcase" component={AssetShowcase} durationInFrames={180} fps={VIDEO_FPS} width={VIDEO_WIDTH} height={VIDEO_HEIGHT} />
       <Composition id="ReferenceStyleGallery" component={ReferenceStyleGallery} durationInFrames={180} fps={VIDEO_FPS} width={VIDEO_WIDTH} height={VIDEO_HEIGHT} />
+      <Composition id="HandDrawnShowcase" component={HandDrawnShowcase} durationInFrames={showcaseDuration()} fps={VIDEO_FPS} width={VIDEO_WIDTH} height={VIDEO_HEIGHT} />
+      {HAND_DRAWN_CLIPS.map((clip) => (
+        <Composition
+          key={clip.kind}
+          id={`HandDrawn-${clip.kind}`}
+          component={HandDrawnClip}
+          durationInFrames={clip.frames}
+          fps={VIDEO_FPS}
+          width={VIDEO_WIDTH}
+          height={VIDEO_HEIGHT}
+          defaultProps={{kind: clip.kind}}
+        />
+      ))}
       {lessons.map(({id, data}) => (
         <Composition
           id={id}

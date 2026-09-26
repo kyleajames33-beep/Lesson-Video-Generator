@@ -15,6 +15,7 @@ import {KINDS as K_bio_y12_m5} from './lane-bio-y12-m5';
 import {KINDS as K_bio_y12_m6} from './lane-bio-y12-m6';
 import {KINDS as K_bio_y12_m7} from './lane-bio-y12-m7';
 import {KINDS as K_bio_y12_m8} from './lane-bio-y12-m8';
+import {KINDS as K_handdrawn} from './lane-handdrawn';
 
 const LANES: DioramaKindMap[] = [
 	K_core,
@@ -29,6 +30,7 @@ const LANES: DioramaKindMap[] = [
 	K_bio_y12_m6,
 	K_bio_y12_m7,
 	K_bio_y12_m8,
+	K_handdrawn,
 ];
 
 export const DIORAMA_KINDS: DioramaKindMap = Object.assign({}, ...LANES);
