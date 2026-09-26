@@ -18,8 +18,8 @@
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {FONT_DISPLAY, TOK} from '../../styles/tokens';
 import {useAccent} from '../../styles/theme';
-import {DioramaDefs, idleBob, idlePulse} from './diorama';
-import {clamp, idHash, shade, StonePlinth} from './kinds/restyle-generic/paint';
+import {DioramaDefs, DioramaPlinth, idleBob, idlePulse} from './diorama';
+import {clamp, idHash, shade} from './kinds/restyle-generic/paint';
 import {buildStart, mentionOf, sceneTimingFor} from './kinds/restyle-generic/sceneSync';
 
 type Props = {
@@ -177,7 +177,7 @@ export const BeforeAfterDiagram = ({beforeLabel, afterLabel, beforeContent, afte
 				const tabColor = colors[i];
 				return (
 					<g key={i} opacity={o}>
-						<StonePlinth id={ID} cx={cx} cy={PLINTH_Y} rx={PLINTH_RX} />
+						<DioramaPlinth id={ID} cx={cx} cy={PLINTH_Y} rx={PLINTH_RX} />
 						<g transform={`translate(0, ${rise + sway})`}>
 							{/* metal stand posts into the stone */}
 							{[-0.3, 0.3].map((f) => (

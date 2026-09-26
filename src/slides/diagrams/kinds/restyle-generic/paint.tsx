@@ -3,7 +3,10 @@
 // shared and lanes must not edit it.)
 
 import {Fragment} from 'react';
-import type {CSSProperties, ReactNode} from 'react';
+import type {CSSProperties} from 'react';
+import {STONE} from '../../diorama';
+
+export {STONE};
 
 export const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
 
@@ -57,55 +60,4 @@ export const idHash = (s: string) => {
 	let h = 5381;
 	for (let i = 0; i < s.length; i++) h = ((h * 33) ^ s.charCodeAt(i)) >>> 0;
 	return h.toString(36);
-};
-
-// Stone plinth palette: a neutral display stand. The grass plinth read as
-// cartoony in review, so the generic diagrams stand on stone instead.
-export const STONE = {
-	topLight: '#f6f5f2',
-	top: '#e6e4df',
-	topEdge: '#d2cfc8',
-	sideLight: '#cfccc5',
-	side: '#b3afa7',
-	sideDark: '#8f8b83',
-	lip: '#a9a59d',
-	shadow: 'rgba(40,36,30,0.2)',
-} as const;
-
-/**
- * A round stone display plinth, drop-in for DioramaPlinth (same props and
- * geometry: (cx, cy) is the centre of the top face; children stand on it).
- */
-export const StonePlinth = ({id, cx, cy, rx, children}: {id: string; cx: number; cy: number; rx: number; children?: ReactNode}) => {
-	const ry = rx * 0.34;
-	const depth = rx * 0.2;
-	return (
-		<g>
-			<defs>
-				<radialGradient id={`${id}-stone-top`} cx="38%" cy="30%" r="80%">
-					<stop offset="0%" stopColor={STONE.topLight} />
-					<stop offset="70%" stopColor={STONE.top} />
-					<stop offset="100%" stopColor={STONE.topEdge} />
-				</radialGradient>
-				<linearGradient id={`${id}-stone-side`} x1="0" x2="1" y1="0" y2="0">
-					<stop offset="0%" stopColor={STONE.sideLight} />
-					<stop offset="40%" stopColor={STONE.side} />
-					<stop offset="100%" stopColor={STONE.sideDark} />
-				</linearGradient>
-				<filter id={`${id}-stone-blur`} x="-30%" y="-30%" width="160%" height="160%">
-					<feGaussianBlur stdDeviation="6" />
-				</filter>
-			</defs>
-			<ellipse cx={cx + rx * 0.06} cy={cy + depth + ry * 0.55} rx={rx * 1.04} ry={ry * 0.9} fill={STONE.shadow} filter={`url(#${id}-stone-blur)`} />
-			<path
-				d={`M ${cx - rx} ${cy} L ${cx - rx} ${cy + depth} A ${rx} ${ry} 0 0 0 ${cx + rx} ${cy + depth} L ${cx + rx} ${cy} Z`}
-				fill={`url(#${id}-stone-side)`}
-			/>
-			{/* bevel: a thin lighter line where the top meets the side */}
-			<ellipse cx={cx} cy={cy + 1.5} rx={rx} ry={ry} fill={STONE.topEdge} />
-			<ellipse cx={cx} cy={cy} rx={rx} ry={ry} fill={`url(#${id}-stone-top)`} />
-			<ellipse cx={cx} cy={cy} rx={rx * 0.9} ry={ry * 0.9} fill="none" stroke="#ffffff" strokeOpacity={0.35} strokeWidth={1.5} />
-			{children}
-		</g>
-	);
 };

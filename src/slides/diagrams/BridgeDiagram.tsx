@@ -7,8 +7,8 @@
 import {Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {FONT_DISPLAY, TOK} from '../../styles/tokens';
 import {useAccent} from '../../styles/theme';
-import {DioramaDefs, Molecule, idleBob, idlePulse} from './diorama';
-import {PaintDefs, clamp, shade, StonePlinth} from './kinds/restyle-generic/paint';
+import {DioramaDefs, DioramaPlinth, Molecule, idleBob, idlePulse} from './diorama';
+import {PaintDefs, clamp, shade} from './kinds/restyle-generic/paint';
 
 const ID = 'bridge';
 const L = {x: 130, y: 300};
@@ -51,21 +51,21 @@ export const BridgeDiagram = () => {
 			</defs>
 
 			<g opacity={interpolate(leftP, [0, 0.4], [0, 1], clamp)} transform={`translate(${interpolate(leftP, [0, 1], [-60, 0])} 0)`}>
-				<StonePlinth id={ID} cx={L.x} cy={L.y} rx={96}>
+				<DioramaPlinth id={ID} cx={L.x} cy={L.y} rx={96}>
 					{[[-30, -10], [8, -16], [34, 4], [-8, 10]].map(([dx, dy], i) => (
 						<Molecule key={i} id={ID} atoms={['O', 'H', 'H']} x={L.x + dx} y={L.y + dy + idleBob(frame, i, 1.6)} r={12} />
 					))}
-				</StonePlinth>
+				</DioramaPlinth>
 				<text x={L.x} y={L.y + 86} textAnchor="middle" fill={TOK.ink} fontSize={26} fontWeight={800}>particles</text>
 				<text x={L.x} y={L.y + 110} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={650}>atoms</text>
 			</g>
 
 			<g opacity={interpolate(rightP, [0, 0.4], [0, 1], clamp)} transform={`translate(${interpolate(rightP, [0, 1], [60, 0])} 0)`}>
-				<StonePlinth id={ID} cx={R.x} cy={R.y} rx={96}>
+				<DioramaPlinth id={ID} cx={R.x} cy={R.y} rx={96}>
 					{/* a lab-scale heap: many particles piled */}
 					<ellipse cx={R.x} cy={R.y - 8} rx={56} ry={30} fill="#fbfaf7" stroke="#d8d5ce" strokeWidth={1.5} />
 					<ellipse cx={R.x - 12} cy={R.y - 20} rx={30} ry={12} fill="#ffffff" opacity={0.35} />
-				</StonePlinth>
+				</DioramaPlinth>
 				<text x={R.x} y={R.y + 86} textAnchor="middle" fill={TOK.ink} fontSize={26} fontWeight={800}>lab</text>
 				<text x={R.x} y={R.y + 110} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={650}>samples</text>
 			</g>
