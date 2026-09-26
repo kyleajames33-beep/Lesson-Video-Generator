@@ -96,7 +96,11 @@
         }
       ],
       "callout": "Track the electrons. They never disappear - they just move.",
-      "image": "l8ConceptElectronTransfer",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m3ElectronTransfer",
+        "delay": 90
+      },
       "durationInFrames": 1500,
       "caption": "Redox is the transfer of electrons from one species to another.",
       "revealDelays": {

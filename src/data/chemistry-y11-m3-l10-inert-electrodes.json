@@ -98,12 +98,94 @@
       ],
       "callout": "No solid metal? Use platinum or graphite.",
       "diagram": {
-        "type": "galvanicCell",
-        "leftMetal": "Pt",
-        "leftIon": "Fe²⁺/Fe³⁺",
-        "rightMetal": "Cu",
-        "rightIon": "Cu²⁺",
-        "delay": 0
+        "type": "diorama",
+        "kind": "chem11m3GalvanicCell",
+        "delay": 90,
+        "props": {
+          "left": {
+            "electrode": "Pt",
+            "electrodeEl": "Pt",
+            "role": "cathode",
+            "halfEq": "Fe³⁺ + e⁻ → Fe²⁺",
+            "ions": [
+              {
+                "el": "Fe3",
+                "label": "Fe³⁺"
+              },
+              {
+                "el": "Fe2",
+                "label": "Fe²⁺"
+              }
+            ],
+            "process": "convert",
+            "processIon": {
+              "el": "Fe3",
+              "label": "Fe³⁺"
+            },
+            "convertTo": {
+              "el": "Fe2",
+              "label": "Fe²⁺"
+            },
+            "inert": true
+          },
+          "right": {
+            "electrode": "Cu",
+            "electrodeEl": "Cu",
+            "role": "anode",
+            "halfEq": "Cu → Cu²⁺ + 2e⁻",
+            "ions": [
+              {
+                "el": "CuIon",
+                "label": "Cu²⁺"
+              }
+            ],
+            "process": "dissolve",
+            "processIon": {
+              "el": "CuIon",
+              "label": "Cu²⁺"
+            }
+          },
+          "flowAt": 120,
+          "rolesAt": [
+            160,
+            160
+          ],
+          "inertAt": [
+            714,
+            762
+          ],
+          "steps": [
+            {
+              "at": 0,
+              "text": "The electrode lets electrons pass through"
+            },
+            {
+              "at": 430,
+              "text": "Fe³⁺ and Fe²⁺ are both dissolved: no solid metal"
+            },
+            {
+              "at": 714,
+              "text": "Enter the inert electrode: platinum"
+            },
+            {
+              "at": 762,
+              "text": "Pt or graphite conducts electrons but does not react"
+            },
+            {
+              "at": 870,
+              "text": "Used when both species are aqueous or gaseous"
+            },
+            {
+              "at": 1014,
+              "text": "Fe³⁺/Fe²⁺ half-cell: a Pt electrode"
+            },
+            {
+              "at": 1218,
+              "text": "Electrons transfer at the Pt surface; Pt is unchanged",
+              "key": true
+            }
+          ]
+        }
       },
       "durationInFrames": 1620,
       "caption": "Inert electrodes conduct electrons without reacting themselves.",
