@@ -121,6 +121,44 @@
       "caption": "Validity tests the aim; reliability is consistency; accuracy is closeness to truth.",
       "voiceover": {
         "text": "Three quality words that students constantly mix up, and examiners constantly test. Validity asks, does the method actually test what the aim says, with the right variables controlled? Reliability asks, do repeated trials give consistent, close results? Accuracy asks, how close is the result to the true value? The trap is thinking reliable and valid mean the same thing. They don't. An experiment can be perfectly reliable, giving the same answer every time, yet completely invalid, because that answer is consistently wrong due to a flawed method. Reliable means repeatable. Valid means it genuinely tests the right thing. Keep those separate and you'll never lose those marks."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Targets",
+        "props": {
+          "header": {
+            "text": "Bullseye = true value · each dart = one repeat",
+            "beat": 46
+          },
+          "boards": [
+            {
+              "title": "RELIABLE",
+              "sub": "repeats agree",
+              "trapSub": "same wrong answer every time",
+              "spread": 11,
+              "offset": [
+                46,
+                -44
+              ],
+              "beat": 189
+            },
+            {
+              "title": "RELIABLE + ACCURATE",
+              "sub": "close to the true value",
+              "spread": 11,
+              "offset": [
+                0,
+                0
+              ],
+              "beat": 270
+            }
+          ],
+          "trap": {
+            "text": "Reliable ≠ valid: a flawed method repeats the same wrong answer",
+            "beat": 485,
+            "board": 0
+          }
+        }
       }
     },
     {

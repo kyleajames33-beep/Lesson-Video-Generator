@@ -48,7 +48,6 @@
       "type": "concept",
       "heading": "Two different percentages",
       "body": "Yield is about the product you got. Purity is about the sample you started with.",
-      "image": "l14YieldPurity",
       "bullets": [
         {"text": "Percentage yield: actual product ÷ theoretical product × 100."},
         {"text": "Percentage purity: pure substance ÷ total sample × 100."},
@@ -60,6 +59,42 @@
       "caption": "Yield = output efficiency; purity = input quality. Yield ≤ 100%.",
       "voiceover": {
         "text": "These two percentages sound similar but do completely different jobs. Percentage yield is about the product. It compares the amount you actually got to the maximum the theory predicted. Percentage purity is about the starting sample. It tells you what fraction of your impure material is the real substance. The timing is the key to keeping them apart. Purity is something you handle at the start, before any stoichiometry, to find the real reacting mass. Yield is something you calculate at the end, after you've measured your product. And one hard rule. Percentage yield can never go above one hundred percent. You cannot create more product than the theory allows, so if your answer exceeds a hundred, you've made a mistake somewhere."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Percent",
+        "props": {
+          "panels": [
+            {
+              "type": "purity",
+              "sample": 20,
+              "pure": 17,
+              "unit": "g",
+              "substance": "CaCO₃",
+              "sampleName": "sample",
+              "dp": 0,
+              "title": "PURITY",
+              "beat": 188,
+              "workBeat": 300
+            },
+            {
+              "type": "yield",
+              "theoretical": 8,
+              "actual": 6.4,
+              "unit": "g",
+              "substance": "SO₃",
+              "dp": 1,
+              "title": "YIELD",
+              "beat": 24,
+              "workBeat": 140
+            }
+          ],
+          "highlight": [
+            {"panel": 0, "beat": 437, "text": "at the start"},
+            {"panel": 1, "beat": 583, "text": "at the end"}
+          ],
+          "trap": {"text": "Yield can never go above 100%", "beat": 747, "panel": 1}
+        }
       }
     },
     {
@@ -95,6 +130,43 @@
       "caption": "% yield = actual ÷ theoretical; % purity = pure ÷ sample.",
       "voiceover": {
         "text": "Two formulas, kept apart. Percentage yield is the actual yield over the theoretical yield, times one hundred. Percentage purity is the mass of pure substance over the total sample mass, times one hundred. And rearranged, the pure mass equals the purity fraction times the sample mass. Here's how they fit into a bigger problem. If a question gives you an impure reactant, your very first move is to find the pure mass, using the purity. Then you do all the stoichiometry on that pure mass, never the impure sample mass. Purity comes off the top before any moles. Yield comes in at the very end, once you've compared what you got to what was possible."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Percent",
+        "props": {
+          "panels": [
+            {
+              "type": "purity",
+              "sample": 20,
+              "pure": 17,
+              "unit": "g",
+              "substance": "CaCO₃",
+              "sampleName": "sample",
+              "dp": 0,
+              "title": "PURITY",
+              "beat": 80,
+              "workBeat": 213,
+              "showFormula": true
+            },
+            {
+              "type": "yield",
+              "theoretical": 8,
+              "actual": 6.4,
+              "unit": "g",
+              "substance": "SO₃",
+              "dp": 1,
+              "title": "YIELD",
+              "beat": 20,
+              "workBeat": 110,
+              "showFormula": true
+            }
+          ],
+          "highlight": [
+            {"panel": 0, "beat": 389, "text": "First: find the pure mass"},
+            {"panel": 1, "beat": 756, "text": "Last: compare to theory"}
+          ]
+        }
       }
     },
     {

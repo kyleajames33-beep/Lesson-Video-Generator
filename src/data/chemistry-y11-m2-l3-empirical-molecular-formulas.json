@@ -579,7 +579,6 @@
       "type": "concept",
       "heading": "Empirical vs molecular",
       "body": "Empirical formula gives you the simplest whole-number ratio. Molecular formula gives you the actual count.",
-      "image": "l3EmpiricalVsMolecular",
       "bullets": [
         {
           "text": "Glucose: C₆H₁₂O₆. Six carbons, twelve hydrogens, six oxygens.",
@@ -1304,7 +1303,39 @@
           "timestampMs": 41512,
           "confidence": null
         }
-      ]
+      ],
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Empirical",
+        "delay": 151,
+        "props": {
+          "unit": {
+            "C": 1,
+            "H": 2,
+            "O": 1
+          },
+          "unitFormula": "CH₂O",
+          "big": {
+            "name": "glucose",
+            "formula": "C₆H₁₂O₆",
+            "n": 6
+          },
+          "small": {
+            "name": "formaldehyde",
+            "formula": "CH₂O",
+            "n": 1
+          },
+          "beats": {
+            "big": 207,
+            "sort": 355,
+            "small": 445,
+            "same": 595,
+            "times": 657,
+            "nBig": 832,
+            "nSmall": 904
+          }
+        }
+      }
     },
     {
       "id": "definition",

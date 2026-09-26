@@ -48,7 +48,6 @@
       "type": "concept",
       "heading": "Plan the route through moles",
       "body": "Every multi-step problem is a path from given to wanted, passing through moles.",
-      "image": "l19ExamStrategy",
       "bullets": [
         {"text": "Identify what you're given and what you're asked for."},
         {"text": "Pick the formula that turns your given into moles."},
@@ -60,6 +59,47 @@
       "caption": "Given → moles → ratio → wanted, planned before calculating.",
       "voiceover": {
         "text": "Here's the planning method that holds every long problem together. First, identify clearly what you're given and what you're being asked for. Second, pick the formula that turns your given quantity into moles. Mass uses molar mass. A gas uses molar volume. A solution uses concentration times volume. Particles use Avogadro's number. Third, cross the mole ratio from the balanced equation, then pick the formula that takes you out to the answer. And weave in the extras where the problem demands. If a reactant is impure, handle purity first. If yield is asked, compare at the end. The plan tells you the order, so you never lose the thread."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2MoleHub",
+        "props": {
+          "note": "given → moles → wanted",
+          "noteBeat": 34,
+          "spokes": [
+            {
+              "icon": "mass",
+              "label": "mass",
+              "into": "n = m ÷ M",
+              "out": "m = n × M",
+              "beat": 256
+            },
+            {
+              "icon": "gas",
+              "label": "gas volume",
+              "into": "n = V ÷ Vₘ",
+              "out": "V = n × Vₘ",
+              "beat": 294
+            },
+            {
+              "icon": "solution",
+              "label": "solution",
+              "into": "n = c × V",
+              "out": "c = n ÷ V",
+              "beat": 343
+            },
+            {
+              "icon": "particles",
+              "label": "particles",
+              "into": "n = N ÷ Nₐ",
+              "out": "N = n × Nₐ",
+              "beat": 400
+            }
+          ],
+          "centreChip": "× mole ratio",
+          "centreBeat": 439,
+          "outBeat": 500
+        }
       }
     },
     {

@@ -2479,7 +2479,6 @@
       "body": "One mole of carbon-12 atoms has a mass of exactly 12 grams.",
       "secondary": "This links atomic mass to real mass: molar mass in g/mol equals relative atomic mass from the periodic table.",
       "callout": "This is why the periodic table is useful.",
-      "image": "carbon12MolarMassBalance",
       "durationInFrames": 1443,
       "caption": "Nₐ was chosen so that 1 mol of carbon-12 has a mass of exactly 12 grams.",
       "voiceover": {
@@ -3303,7 +3302,48 @@
       ],
       "recapSeed": "1 mole of carbon-12 weighs exactly 12 g.",
       "confidenceCheck": "Relate the mole to Avogadro's constant via the carbon-12 standard.",
-      "syllabusDotPointIndex": 0
+      "syllabusDotPointIndex": 0,
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2MolarScale",
+        "delay": 168,
+        "props": {
+          "hero": {
+            "index": 1,
+            "text": "1 mol of carbon-12 atoms = exactly 12 g",
+            "beat": 180
+          },
+          "header": {
+            "text": "Molar mass in g mol⁻¹ = relative atomic mass",
+            "beat": 485
+          },
+          "elements": [
+            {
+              "sym": "H",
+              "name": "hydrogen",
+              "ar": "1",
+              "grams": "1 g",
+              "beat": 697
+            },
+            {
+              "sym": "C",
+              "name": "carbon-12",
+              "ar": "12",
+              "grams": "12 g",
+              "beat": 180,
+              "labelBeat": 851
+            },
+            {
+              "sym": "O",
+              "name": "oxygen",
+              "ar": "16",
+              "grams": "16 g",
+              "beat": 989
+            }
+          ],
+          "pulseBeat": 1112
+        }
+      }
     },
     {
       "id": "misconception-nvn",

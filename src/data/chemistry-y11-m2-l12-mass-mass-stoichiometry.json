@@ -96,6 +96,20 @@
       "caption": "Four steps: m→n (given), ×ratio, n→m (wanted).",
       "voiceover": {
         "text": "Here's the four-step method that solves every mass to mass problem. Step one, convert the mass of the given substance to moles, using its molar mass. Step two, apply the mole ratio, wanted over given, to get moles of the substance you want. Step three, convert those moles to a mass using the molar mass of the wanted substance. Step four, round sensibly and state the unit. The one detail that trips people up, you use the given substance's molar mass at step one, and the wanted substance's molar mass at step three. They're different substances, so they have different molar masses. Don't reuse the same number at both ends."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Pathway",
+        "props": {
+          "given": {"icon": "mass", "label": "mass", "sub": "of the given"},
+          "wanted": {"icon": "mass", "label": "mass", "sub": "of the wanted"},
+          "inOp": "÷ M(given)",
+          "ratioOp": "× wanted ÷ given",
+          "outOp": "× M(wanted)",
+          "trap": "Different substance each end, so a different M",
+          "trapOn": "out",
+          "beats": {"in": 40, "ratio": 172, "out": 325, "trap": 541}
+        }
       }
     },
     {
