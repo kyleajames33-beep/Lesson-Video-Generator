@@ -49,6 +49,14 @@ const contentOf = (d: AnyDiagram): unknown => {
 			return [d.leftLabel, d.rightLabel, d.overlapLabel];
 		case 'lineGraph':
 			return [d.xLabel, d.yLabel, d.series];
+		case 'punnettSquare':
+			return [d.top, d.left];
+		// Fixed teaching diagrams: one content key per type.
+		case 'pedigree':
+		case 'dnaHelix':
+		case 'transcriptionStrand':
+		case 'chromosomeMutation':
+			return d.type;
 		default:
 			return undefined;
 	}
@@ -71,7 +79,15 @@ const buildIndex = () => {
 			const content = contentOf(d);
 			if (content === undefined) continue;
 			const key = diagramKey(d.type, content);
-			if (map.has(key)) continue;
+			const rdPrev = map.get(key);
+			if (rdPrev) {
+				// Same diagram in several scenes (e.g. the fixed DNA helix): keep the
+				// latest card reveal, so the build is never hidden behind a card that
+				// hasn't appeared yet (at worst it waits a moment on an early card).
+				const r = (scene as {revealDelays?: Record<string, number>}).revealDelays?.diagram ?? CARD_REVEAL_DEFAULT;
+				rdPrev.reveal = Math.max(rdPrev.reveal, r);
+				continue;
+			}
 			const rd = (scene as {revealDelays?: Record<string, number>}).revealDelays ?? {};
 			const dur = scene.durationInFrames;
 			const raw = (scene.voiceover?.text ?? '').split(/\s+/).map(normWord).filter(Boolean);
