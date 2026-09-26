@@ -184,7 +184,12 @@ export const ChromosomeMutationDiagram = ({delay}: {delay?: number}) => {
 							const lift = b.arc ? b.arc * Math.sin(p * Math.PI) * 30 : 0;
 							return bandRect(b.label, x + s * SEG, y + lift, SEG - GAP, H * hf, b.key, o, b.changed ? glow : 0);
 						})}
-						<text x={x} y={y + H + 34} fill={TOK.inkDim} fontSize={16} fontWeight={650} opacity={noteO}>{v.note}</text>
+						<text x={x} y={y + H + 34} fill={TOK.inkDim} fontSize={16} fontWeight={650} opacity={noteO}>
+							{/* long notes wrap after "M–N" so they stay inside the card */}
+							{v.note.split(/(?<=M–N) /).map((line, li) => (
+								<tspan key={li} x={x} dy={li === 0 ? 0 : 19}>{line}</tspan>
+							))}
+						</text>
 					</g>
 				);
 			})}
