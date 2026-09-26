@@ -1,7 +1,7 @@
 // LineGraphDiagram — flexible coded line/curve graph for time-course and
 // titration-style visuals, in the diorama family.
 //
-// The plot sits on a painted board (lit top-left, soil lip underneath). Each
+// The plot sits on a painted board (lit top-left, stone lip underneath). Each
 // curve draws itself left→right behind a glossy marble "pen", starting when
 // the card is on screen and, where the narration names a series, when it is
 // named. Optional vertical markers (e.g. equivalence point) and horizontal
@@ -17,8 +17,8 @@
 
 import {interpolate, useCurrentFrame} from 'remotion';
 import {FONT_DISPLAY, TOK} from '../../styles/tokens';
-import {DIO, idlePulse} from './diorama';
-import {idHash, shade} from './kinds/restyle-generic/paint';
+import {idlePulse} from './diorama';
+import {STONE, idHash, shade} from './kinds/restyle-generic/paint';
 import {buildStart, itemEntryFrames, sceneTimingFor} from './kinds/restyle-generic/sceneSync';
 
 const clampOpts = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
@@ -161,10 +161,10 @@ export const LineGraphDiagram = ({xLabel, yLabel, series, markers = [], hLines =
 				))}
 			</defs>
 
-			{/* painted board with a soil lip */}
+			{/* painted board with a stone lip */}
 			<g opacity={axisOpacity}>
 				<rect x={X0 - 14 + 6} y={Y0 - 4 + 10} width={PW + 34} height={Y1 - Y0 + 18} rx={14} fill="rgba(58,40,18,0.14)" filter={`url(#${ID}-soft)`} />
-				<rect x={X0 - 14} y={Y0 - 4 + 6} width={PW + 34} height={Y1 - Y0 + 18} rx={14} fill={DIO.soil} />
+				<rect x={X0 - 14} y={Y0 - 4 + 6} width={PW + 34} height={Y1 - Y0 + 18} rx={14} fill={STONE.lip} />
 				<rect x={X0 - 14} y={Y0 - 4} width={PW + 34} height={Y1 - Y0 + 18} rx={14} fill={`url(#${ID}-board)`} stroke="rgba(0,0,0,0.06)" />
 			</g>
 

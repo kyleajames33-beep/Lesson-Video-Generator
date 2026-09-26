@@ -18,8 +18,8 @@
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {FONT_DISPLAY, TOK} from '../../styles/tokens';
 import {useAccent} from '../../styles/theme';
-import {DioramaDefs, DioramaPlinth, idleBob, idlePulse} from './diorama';
-import {clamp, idHash, shade} from './kinds/restyle-generic/paint';
+import {DioramaDefs, idleBob, idlePulse} from './diorama';
+import {clamp, idHash, shade, StonePlinth} from './kinds/restyle-generic/paint';
 import {buildStart, mentionOf, sceneTimingFor} from './kinds/restyle-generic/sceneSync';
 
 type Props = {
@@ -151,8 +151,8 @@ export const BeforeAfterDiagram = ({beforeLabel, afterLabel, beforeContent, afte
 					<stop offset="100%" stopColor="#f1efe9" />
 				</linearGradient>
 				<linearGradient id={`${ID}-post`} x1="0" x2="1" y1="0" y2="0">
-					<stop offset="0%" stopColor="#a47a4c" />
-					<stop offset="100%" stopColor="#6b4a2a" />
+					<stop offset="0%" stopColor="#a8a49c" />
+					<stop offset="100%" stopColor="#6f6b64" />
 				</linearGradient>
 				{colors.map((c, i) => (
 					<linearGradient key={i} id={`${ID}-tab-${i}`} x1="0" x2="0.5" y1="0" y2="1">
@@ -177,9 +177,9 @@ export const BeforeAfterDiagram = ({beforeLabel, afterLabel, beforeContent, afte
 				const tabColor = colors[i];
 				return (
 					<g key={i} opacity={o}>
-						<DioramaPlinth id={ID} cx={cx} cy={PLINTH_Y} rx={PLINTH_RX} />
+						<StonePlinth id={ID} cx={cx} cy={PLINTH_Y} rx={PLINTH_RX} />
 						<g transform={`translate(0, ${rise + sway})`}>
-							{/* posts into the grass */}
+							{/* metal stand posts into the stone */}
 							{[-0.3, 0.3].map((f) => (
 								<rect key={f} x={cx + f * CARD_W - 6} y={CARD_BOTTOM - 10} width={12} height={PLINTH_Y - CARD_BOTTOM + 14} rx={3} fill={`url(#${ID}-post)`} />
 							))}

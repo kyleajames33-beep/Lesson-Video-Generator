@@ -4,7 +4,7 @@
 // longest cell per row (the legacy two-column CSS grid broke 3–4 column tables).
 //
 // Diorama touch, deliberately restrained so reading always wins: header cells
-// are painted "plinth tabs" (lit top-left, soil lip underneath) and each row's
+// are painted "plinth tabs" (lit top-left, stone lip underneath) and each row's
 // key cell carries a small glossy marble. Every row has its slot from the
 // start (a faint ghost), and fills in when the narration names it (see
 // kinds/restyle-generic/sceneSync.ts); the row just named glows softly while

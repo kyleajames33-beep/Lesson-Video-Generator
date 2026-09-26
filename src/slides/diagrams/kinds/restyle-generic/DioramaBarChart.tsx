@@ -15,8 +15,8 @@
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {FONT_DISPLAY, TOK} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
-import {DioramaDefs, DioramaPlinth, idlePulse} from '../../diorama';
-import {PaintDefs, clamp, idHash, shade} from './paint';
+import {DioramaDefs, idlePulse} from '../../diorama';
+import {PaintDefs, clamp, idHash, shade, StonePlinth} from './paint';
 import {buildStart, itemEntryFrames, sceneTimingFor} from './sceneSync';
 
 type Bar = {label: string; value: number; color?: string};
@@ -112,7 +112,7 @@ export const DioramaBarChart = ({data, delay}: {data: Bar[]; delay?: number}) =>
 						<clipPath id={`${ID}-clip-${i}`}>
 							<rect x={cx - colW / 2} y={top} width={colW} height={Math.max(0, h)} />
 						</clipPath>
-						<DioramaPlinth id={ID} cx={cx} cy={BASE_Y} rx={rx}>
+						<StonePlinth id={ID} cx={cx} cy={BASE_Y} rx={rx}>
 							{h > 1 && (
 								<g>
 									{/* bottom rim first, so the column's foot reads as a rounded cylinder base */}
@@ -124,7 +124,7 @@ export const DioramaBarChart = ({data, delay}: {data: Bar[]; delay?: number}) =>
 									<ellipse cx={cx - colW * 0.12} cy={top - capRy * 0.15} rx={colW * 0.22} ry={capRy * 0.4} fill="#ffffff" opacity={glint} />
 								</g>
 							)}
-						</DioramaPlinth>
+						</StonePlinth>
 						<text x={cx} y={top - capRy - 12} textAnchor="middle" fill={TOK.ink} fontSize={slotW < 150 ? 26 : 30} fontWeight={800} opacity={valueO}>
 							{shown}
 						</text>

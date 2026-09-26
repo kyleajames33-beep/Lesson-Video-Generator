@@ -1,7 +1,7 @@
 // FlowDiagram — process chains and small trees in the diorama family, laid
 // out top-to-bottom in layers (depth = longest path from a root).
 //
-// Nodes are painted blocks standing on a soil lip, lit from the top-left;
+// Nodes are painted blocks standing on a stone lip, lit from the top-left;
 // chains get a glossy numbered marble per step. Edges draw on once their
 // source has landed, then a small glossy bead keeps travelling down each edge
 // during the hold, so the direction of the process stays visible and the
@@ -16,8 +16,8 @@
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {FONT_DISPLAY, TOK} from '../../styles/tokens';
 import {useAccent} from '../../styles/theme';
-import {DIO, idlePulse} from './diorama';
-import {clamp, marbleStyle, shade} from './kinds/restyle-generic/paint';
+import {idlePulse} from './diorama';
+import {STONE, clamp, marbleStyle, shade} from './kinds/restyle-generic/paint';
 import {buildStart, itemEntryFrames, sceneTimingFor} from './kinds/restyle-generic/sceneSync';
 
 type FlowNode = {id: string; label: string};
@@ -227,7 +227,7 @@ export const FlowDiagram = ({nodes, edges, delay}: Props) => {
 								borderRadius: 14,
 								background: `linear-gradient(160deg, #ffffff 0%, ${face} 55%, ${shade(isRoot ? theme.soft : '#f1f1ee', -0.03)} 100%)`,
 								border: `2px solid ${isRoot ? theme.accent : `${theme.accent}40`}`,
-								boxShadow: `inset 0 1px 0 rgba(255,255,255,0.9), 0 ${LIP}px 0 ${DIO.soil}, 0 ${LIP + 4}px 14px rgba(58,40,18,0.16), 0 0 0 ${glow * 4}px ${theme.accent2}33`,
+								boxShadow: `inset 0 1px 0 rgba(255,255,255,0.9), 0 ${LIP}px 0 ${STONE.lip}, 0 ${LIP + 4}px 14px rgba(58,40,18,0.16), 0 0 0 ${glow * 4}px ${theme.accent2}33`,
 								opacity: interpolate(s, [0, 0.5], [0, 1], clamp),
 								transform: `translateY(${interpolate(s, [0, 1], [14, 0])}px)`,
 							}}
