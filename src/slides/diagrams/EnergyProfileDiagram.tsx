@@ -1,6 +1,6 @@
 // EnergyProfileDiagram — an energy profile drawn TO SCALE from its props:
 // reactant level, a barrier Eₐ above it, and a product level ΔH away. Painted
-// as a grassy hill the reactants have to climb; a glossy ball rolls over it
+// as a stone hill (the diorama plinth's stone) the reactants have to climb; a glossy ball rolls over it
 // (and, with a catalyst, a second ball takes the lower path) for the hold.
 //
 // Fixes (v2): the old profile drew the peak at a fixed height whatever Eₐ was,
@@ -25,7 +25,7 @@
 
 import {interpolate, useCurrentFrame} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../styles/tokens';
-import {DioramaDefs, idlePulse} from './diorama';
+import {DioramaDefs, STONE, idlePulse} from './diorama';
 import {ArrowHead, Ball, BallDefs, clamp, drawProps, fadeAt} from './kinds/restyle-chem-specials/props';
 
 type Props = {
@@ -91,10 +91,10 @@ export const EnergyProfileDiagram = ({exothermic, ea, deltaH, showCatalyst = fal
 			<BallDefs id={ID} colors={{m: '#8e5bd6', c: CAT}} />
 			<defs>
 				<linearGradient id={`${ID}-hill`} x1="0" x2="0" y1="0" y2="1">
-					<stop offset="0%" stopColor="#b5d86a" />
-					<stop offset="40%" stopColor="#8dbb45" />
-					<stop offset="75%" stopColor="#9a6d3f" />
-					<stop offset="100%" stopColor="#7a5230" />
+					<stop offset="0%" stopColor={STONE.topLight} />
+					<stop offset="45%" stopColor={STONE.top} />
+					<stop offset="80%" stopColor={STONE.side} />
+					<stop offset="100%" stopColor={STONE.sideDark} />
 				</linearGradient>
 				<clipPath id={`${ID}-reveal`}>
 					<rect x={X0 - 2} y={0} width={(X1 - X0 + 4) * draw} height={AXIS_Y + 2} />
@@ -113,9 +113,9 @@ export const EnergyProfileDiagram = ({exothermic, ea, deltaH, showCatalyst = fal
 				<text x={(X0 + X1) / 2} y={AXIS_Y + 34} textAnchor="middle" fill={TOK.inkDim} fontSize={20} fontWeight={700}>reaction progress →</text>
 			</g>
 
-			{/* painted hill + profile line */}
+			{/* stone hill + profile line */}
 			<g clipPath={`url(#${ID}-reveal)`}>
-				<path d={hill} fill={`url(#${ID}-hill)`} opacity={0.55} />
+				<path d={hill} fill={`url(#${ID}-hill)`} opacity={0.8} />
 			</g>
 			<path d={main} fill="none" stroke={TOK.ink} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" {...drawProps(draw)} />
 			{showCatalyst ? (

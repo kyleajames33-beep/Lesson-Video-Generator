@@ -39,7 +39,7 @@ export const Ball = ({id, fill, edge, x, y, r, opacity = 1, scale = 1, shadow = 
 	id: string; fill: string; edge: string; x: number; y: number; r: number; opacity?: number; scale?: number; shadow?: boolean; children?: ReactNode;
 }) => (
 	<g opacity={opacity} transform={`translate(${x},${y}) scale(${scale})`}>
-		{shadow ? <ellipse cx={0} cy={r * 0.95} rx={r * 1.15} ry={r * 0.26} fill="rgba(40,60,20,0.22)" /> : null}
+		{shadow ? <ellipse cx={0} cy={r * 0.95} rx={r * 1.15} ry={r * 0.26} fill="rgba(40,36,30,0.22)" /> : null}
 		<circle r={r} fill={`url(#${id}-ball-${fill})`} stroke={shade(edge, -0.35)} strokeWidth={1} />
 		{children}
 	</g>

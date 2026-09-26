@@ -66,10 +66,10 @@ export const LatticeVsElectronSeaDiagram = () => {
 
 			<g opacity={fadeAt(frame, -START, 16)}>
 				<DioramaPlinth id={ID} cx={LX} cy={PLINTH_Y} rx={140}>
-					<ellipse cx={LX} cy={PLINTH_Y - 6} rx={90} ry={18} fill="rgba(40,60,20,0.22)" filter={`url(#${ID}-blur)`} />
+					<ellipse cx={LX} cy={PLINTH_Y - 6} rx={90} ry={18} fill="rgba(40,36,30,0.22)" filter={`url(#${ID}-blur)`} />
 				</DioramaPlinth>
 				<DioramaPlinth id={ID} cx={RX} cy={PLINTH_Y} rx={140}>
-					<ellipse cx={RX} cy={PLINTH_Y - 6} rx={100} ry={18} fill="rgba(40,60,20,0.22)" filter={`url(#${ID}-blur)`} />
+					<ellipse cx={RX} cy={PLINTH_Y - 6} rx={100} ry={18} fill="rgba(40,36,30,0.22)" filter={`url(#${ID}-blur)`} />
 				</DioramaPlinth>
 			</g>
 

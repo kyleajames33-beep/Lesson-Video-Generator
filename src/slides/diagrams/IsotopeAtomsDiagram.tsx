@@ -5,7 +5,7 @@
 //
 // Diorama restyle: each nucleus is a packed ball of glossy protons (red) and
 // neutrons (grey), painted back-to-front, floating over its own plinth with a
-// soft shadow on the grass; electrons circle on tilted orbits for the hold.
+// soft shadow on the stone; electrons circle on tilted orbits for the hold.
 //
 // Timing: Chem Y11 M1 L14 concept-isotopes reveals at the default frame 62.
 // Beat plan (frames after START = 62):
@@ -74,7 +74,7 @@ export const IsotopeAtomsDiagram = () => {
 		return (
 			<g>
 				<DioramaPlinth id={ID} cx={cx} cy={PLINTH_Y} rx={118}>
-					<ellipse cx={cx} cy={PLINTH_Y - 4} rx={46} ry={12} fill="rgba(40,60,20,0.25)" filter={`url(#${ID}-blur)`} />
+					<ellipse cx={cx} cy={PLINTH_Y - 4} rx={46} ry={12} fill="rgba(40,36,30,0.25)" filter={`url(#${ID}-blur)`} />
 				</DioramaPlinth>
 				{orbit(80, 28, -18, 2, 1.3, side)}
 				{nucleus.map((p) => {

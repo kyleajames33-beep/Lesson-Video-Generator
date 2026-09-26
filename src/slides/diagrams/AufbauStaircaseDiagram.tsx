@@ -8,7 +8,7 @@
 // lesson tells students to memorise.
 //
 // Diorama restyle: painted stone steps (colour = subshell type s / p / d)
-// standing on a grass-and-soil ground strip, a glossy electron that hops step
+// standing on a stone display slab (matching DioramaPlinth), a glossy electron that hops step
 // to step, and a breathing amber highlight on 4s-before-3d during the hold.
 //
 // Timing: Chem Y11 M1 L16 formula reveals at the default frame 62 (START).
@@ -22,7 +22,7 @@
 
 import {interpolate, useCurrentFrame} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../styles/tokens';
-import {DioramaDefs, idleBob, idlePulse} from './diorama';
+import {DioramaDefs, STONE, idleBob, idlePulse} from './diorama';
 import {Ball, BallDefs, clamp, fadeAt, shade} from './kinds/restyle-chem-specials/props';
 
 const ID = 'aufbau';
@@ -54,12 +54,25 @@ export const AufbauStaircaseDiagram = () => {
 		<svg viewBox={`0 0 ${W} 530`} role="img" aria-label="Aufbau filling order: 1s 2s 2p 3s 3p 4s 3d 4p 5s 4d 5p" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={ID} />
 			<BallDefs id={ID} colors={{e: '#f0a830'}} />
+			<defs>
+				<radialGradient id={`${ID}-slab-top`} cx="38%" cy="30%" r="80%">
+					<stop offset="0%" stopColor={STONE.topLight} />
+					<stop offset="70%" stopColor={STONE.top} />
+					<stop offset="100%" stopColor={STONE.topEdge} />
+				</radialGradient>
+				<linearGradient id={`${ID}-slab-side`} x1="0" x2="1" y1="0" y2="0">
+					<stop offset="0%" stopColor={STONE.sideLight} />
+					<stop offset="40%" stopColor={STONE.side} />
+					<stop offset="100%" stopColor={STONE.sideDark} />
+				</linearGradient>
+			</defs>
 
-			{/* ground strip */}
+			{/* stone ground slab */}
 			<g opacity={fadeAt(frame, -START, 16)}>
-				<ellipse cx={W / 2 + 10} cy={GROUND_Y + 44} rx={370} ry={20} fill="rgba(58,40,18,0.2)" filter={`url(#${ID}-blur)`} />
-				<path d={`M 30 ${GROUND_Y} L ${W - 30} ${GROUND_Y} L ${W - 30} ${GROUND_Y + 30} Q ${W / 2} ${GROUND_Y + 44} 30 ${GROUND_Y + 30} Z`} fill={`url(#${ID}-soil)`} />
-				<path d={`M 30 ${GROUND_Y} Q ${W / 2} ${GROUND_Y - 22} ${W - 30} ${GROUND_Y} Q ${W / 2} ${GROUND_Y + 12} 30 ${GROUND_Y} Z`} fill={`url(#${ID}-grass)`} />
+				<ellipse cx={W / 2 + 10} cy={GROUND_Y + 44} rx={370} ry={20} fill={STONE.shadow} filter={`url(#${ID}-blur)`} />
+				<path d={`M 30 ${GROUND_Y} L ${W - 30} ${GROUND_Y} L ${W - 30} ${GROUND_Y + 30} Q ${W / 2} ${GROUND_Y + 44} 30 ${GROUND_Y + 30} Z`} fill={`url(#${ID}-slab-side)`} />
+				<path d={`M 30 ${GROUND_Y + 1.5} Q ${W / 2} ${GROUND_Y - 20.5} ${W - 30} ${GROUND_Y + 1.5} Q ${W / 2} ${GROUND_Y + 13.5} 30 ${GROUND_Y + 1.5} Z`} fill={STONE.topEdge} />
+				<path d={`M 30 ${GROUND_Y} Q ${W / 2} ${GROUND_Y - 22} ${W - 30} ${GROUND_Y} Q ${W / 2} ${GROUND_Y + 12} 30 ${GROUND_Y} Z`} fill={`url(#${ID}-slab-top)`} />
 
 				{/* energy axis */}
 				<line x1={36} y1={GROUND_Y - 20} x2={36} y2={120} stroke={TOK.inkMute} strokeWidth={3} />

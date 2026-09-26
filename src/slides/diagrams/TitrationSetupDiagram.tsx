@@ -4,7 +4,7 @@
 // endpoint the pale pink stays: the tap closes and the volume delivered is
 // bracketed as the titre.
 //
-// Diorama restyle: retort stand, glass burette and flask on a soil-and-grass
+// Diorama restyle: retort stand, glass burette and flask on a stone display
 // plinth, a painted liquid with a swirl, graduations on the burette, labels
 // that separate the two volumes students mix up (titre = standard, from the
 // burette; aliquot = the unknown, in the flask).

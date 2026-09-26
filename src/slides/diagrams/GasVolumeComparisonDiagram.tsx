@@ -3,7 +3,7 @@
 // larger linear CO₂ molecules. Same particle COUNT, very different particle
 // size, identical volume, different mass (1 mol He = 4 g, 1 mol CO₂ = 44 g).
 //
-// Diorama restyle: glass flasks stand on soil-and-grass plinths, He atoms are
+// Diorama restyle: glass flasks stand on stone plinths, He atoms are
 // glossy pale-cyan balls and CO₂ is drawn LINEAR (O=C=O) from CPK atoms. The
 // particles never settle: they drift and tumble like a gas for the whole hold.
 //
