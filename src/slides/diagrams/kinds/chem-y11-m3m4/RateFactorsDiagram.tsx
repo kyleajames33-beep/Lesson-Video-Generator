@@ -100,7 +100,7 @@ export const RateFactorsDiagram = ({delay = 90, panels = [30, 270, 540, 780]}: R
 	};
 	// The lump is literally the eight small cubes stacked 2 × 2 × 2, so the
 	// split shows the same mass spread out.
-	const CS = 30, CD = CS * 0.45, CC = PW / 2 - 8, CB = 176;
+	const CS = 30, CD = CS * 0.45, CC = PW / 2 - 8, CB = 164;
 	const pieces = [1, 0].flatMap((j) => [0, 1].flatMap((k) => [0, 1].map((i) => {
 		const col = k * 2 + i;
 		const lump = {x: CC + (i - 0.5) * CS + j * CD, y: CB - k * CS - j * CD};
@@ -133,7 +133,7 @@ export const RateFactorsDiagram = ({delay = 90, panels = [30, 270, 540, 780]}: R
 			))}
 			{panel(2, t3, 'Surface area', (
 				<g>
-					<DioramaPlinth id={ID} cx={PW / 2} cy={172} rx={124}>
+					<DioramaPlinth id={ID} cx={PW / 2} cy={160} rx={112}>
 						{pieces.map((p) => cube(p.x, p.y, CS, p.key, split > 0.98 ? faceHi * (1 + idlePulse(frame)) : 0))}
 					</DioramaPlinth>
 					<text x={PW / 2} y={PH - 12} textAnchor="middle" fill={faceHi > 0 ? TOK.amberInk : TOK.inkDim} fontSize={18} fontWeight={800}>
