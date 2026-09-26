@@ -128,6 +128,110 @@
       ],
       "secondary": "Avoid 'it just gets bigger.' Examiners want the mechanism: nuclear charge, shielding, and shell count.",
       "callout": "Name the mechanism, then the size change.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1ShellCause",
+        "props": {
+          "panels": [
+            {
+              "title": "Across a period →",
+              "example": "example: Na → Cl (Period 3)",
+              "atoms": [
+                {
+                  "protons": 11,
+                  "shells": [
+                    2,
+                    8,
+                    1
+                  ],
+                  "r": 78,
+                  "at": 147
+                },
+                {
+                  "protons": 17,
+                  "shells": [
+                    2,
+                    8,
+                    7
+                  ],
+                  "r": 52,
+                  "at": 198,
+                  "fromR": 78
+                }
+              ],
+              "causes": [
+                {
+                  "text": "more protons",
+                  "at": 198
+                },
+                {
+                  "text": "same shell",
+                  "at": 240
+                },
+                {
+                  "text": "shielding similar",
+                  "at": 298
+                }
+              ],
+              "outerAt": 240,
+              "shieldAt": 298,
+              "contractAt": 382,
+              "radiusAt": 382,
+              "effect": {
+                "text": "radius decreases",
+                "at": 424
+              }
+            },
+            {
+              "title": "Down a group ↓",
+              "example": "example: Li → Na (Group 1)",
+              "atoms": [
+                {
+                  "protons": 3,
+                  "shells": [
+                    2,
+                    1
+                  ],
+                  "r": 62,
+                  "at": 449
+                },
+                {
+                  "protons": 11,
+                  "shells": [
+                    2,
+                    8,
+                    1
+                  ],
+                  "r": 78,
+                  "at": 533
+                }
+              ],
+              "causes": [
+                {
+                  "text": "extra shell",
+                  "at": 533
+                },
+                {
+                  "text": "further out",
+                  "at": 600
+                },
+                {
+                  "text": "more shielded",
+                  "at": 642
+                }
+              ],
+              "outerAt": 533,
+              "radiusAt": 600,
+              "shieldAt": 642,
+              "effect": {
+                "text": "radius increases",
+                "at": 683
+              }
+            }
+          ],
+          "pulseAt": 817
+        }
+      },
       "durationInFrames": 1020,
       "caption": "Full-mark answers link protons, shielding, and shells to the radius change.",
       "voiceover": {

@@ -102,6 +102,50 @@
       ],
       "secondary": "Graphite is the famous exception — one delocalised electron per carbon, within its layers, lets it conduct.",
       "callout": "No mobile charge carriers, no conductivity.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1ChargeCarriers",
+        "props": {
+          "title": "No mobile charge carriers, no conductivity",
+          "columns": [
+            {
+              "model": "metal",
+              "name": "Metal",
+              "carrier": "free delocalised e⁻",
+              "state": "solid ✓ · molten ✓",
+              "at": 128,
+              "stateAt": 263
+            },
+            {
+              "model": "ionic",
+              "name": "Ionic",
+              "carrier": "ions locked in lattice",
+              "carrierAfter": "ions free to move",
+              "state": "solid ✗",
+              "stateAfter": "molten / dissolved ✓",
+              "at": 286,
+              "stateAt": 350,
+              "mobileAt": 405
+            },
+            {
+              "model": "covalent",
+              "name": "Covalent",
+              "carrier": "no free e⁻ or ions",
+              "state": "doesn't conduct ✗",
+              "at": 548,
+              "stateAt": 635
+            }
+          ],
+          "exception": {
+            "title": "Exception: graphite",
+            "lines": [
+              "one delocalised electron per C",
+              "→ conducts within its layers"
+            ],
+            "at": 674
+          }
+        }
+      },
       "durationInFrames": 990,
       "caption": "Metals always conduct; ionic only molten/dissolved; covalent generally not.",
       "voiceover": {

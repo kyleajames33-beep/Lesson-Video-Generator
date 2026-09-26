@@ -107,6 +107,82 @@
       ],
       "secondary": "The mole ratio is the bridge. Skipping it is the single most common way students lose marks here.",
       "callout": "Mass → moles → ratio → moles → mass.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1RouteChain",
+        "props": {
+          "stations": [
+            {
+              "label": "mass of\nprecipitate",
+              "prop": "balance",
+              "at": 0
+            },
+            {
+              "label": "moles of\nprecipitate",
+              "prop": "units",
+              "at": 164
+            },
+            {
+              "label": "moles of\ntarget ion",
+              "prop": "ions",
+              "at": 285
+            },
+            {
+              "label": "mass of\ntarget ion",
+              "prop": "balanceIons",
+              "at": 6
+            }
+          ],
+          "links": [
+            {
+              "label": "÷ M",
+              "sub": "n = m ÷ M",
+              "at": 164
+            },
+            {
+              "label": "× mole ratio",
+              "sub": "balanced equation",
+              "at": 285,
+              "bridge": true
+            },
+            {
+              "label": "× M of ion",
+              "sub": "m = n × M",
+              "at": 421
+            }
+          ],
+          "shortcut": {
+            "label": "one-step shortcut",
+            "from": 0,
+            "to": 3,
+            "at": 24,
+            "strikeAt": 96
+          },
+          "captions": [
+            {
+              "text": "Never go straight from precipitate mass to ion mass",
+              "at": 30,
+              "tone": "warn"
+            },
+            {
+              "text": "Go through moles and the mole ratio",
+              "at": 134,
+              "tone": "plain"
+            },
+            {
+              "text": "Mass → moles → ratio → moles → mass",
+              "at": 534,
+              "tone": "key"
+            },
+            {
+              "text": "Ratio not 1 : 1? The shortcut gives a wrong answer",
+              "at": 782,
+              "tone": "warn"
+            }
+          ],
+          "walkAt": 534
+        }
+      },
       "durationInFrames": 990,
       "caption": "n = m ÷ M, apply the mole ratio, then m = n × M.",
       "voiceover": {

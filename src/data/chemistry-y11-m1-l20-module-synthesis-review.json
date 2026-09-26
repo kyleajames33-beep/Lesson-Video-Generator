@@ -105,6 +105,89 @@
       ],
       "secondary": "Across a period, rising Z_eff dominates. Down a group, extra shells and shielding dominate. One cause, three trends.",
       "callout": "Z_eff and shell count drive every trend.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1TrendCompass",
+        "props": {
+          "panels": [
+            {
+              "title": "Atomic radius",
+              "at": 49,
+              "arrows": [
+                {
+                  "dir": "across",
+                  "text": "decreases",
+                  "at": 62
+                },
+                {
+                  "dir": "down",
+                  "text": "increases",
+                  "at": 100
+                }
+              ]
+            },
+            {
+              "title": "Electronegativity",
+              "at": 136,
+              "arrows": [
+                {
+                  "dir": "across",
+                  "text": "increases",
+                  "at": 176
+                },
+                {
+                  "dir": "down",
+                  "text": "decreases",
+                  "at": 214
+                }
+              ]
+            },
+            {
+              "title": "Reactivity",
+              "at": 263,
+              "arrows": [
+                {
+                  "dir": "down",
+                  "side": "left",
+                  "tag": "metals",
+                  "text": "more reactive",
+                  "at": 311
+                },
+                {
+                  "dir": "up",
+                  "side": "right",
+                  "tag": "non-metals",
+                  "text": "more reactive",
+                  "at": 366
+                }
+              ]
+            }
+          ],
+          "causesAt": 445,
+          "causes": [
+            {
+              "explains": "across",
+              "factor": "effective nuclear charge, Z_eff",
+              "heading": "Across →",
+              "line": "rising Z_eff dominates",
+              "sub": "atoms shrink, pull electrons harder",
+              "at": 596
+            },
+            {
+              "explains": "vertical",
+              "factor": "number of occupied shells",
+              "heading": "Down ↓",
+              "line": "extra shells + shielding",
+              "sub": "atoms grow, hold electrons loosely",
+              "at": 723
+            }
+          ],
+          "banner": {
+            "text": "One cause, three trends",
+            "at": 865
+          }
+        }
+      },
       "durationInFrames": 1110,
       "caption": "Radius, electronegativity, and reactivity all trace to Z_eff and shell count.",
       "voiceover": {
