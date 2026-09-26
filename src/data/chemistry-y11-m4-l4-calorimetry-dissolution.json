@@ -103,7 +103,137 @@
         "audioFile": "public/audio/Chemistry-Y11-M4-L4/concept.d9c20703e2a4.mp3"
       },
       "diagram": {
-        "type": "calorimeter"
+        "type": "diorama",
+        "kind": "chem11m4EnergyLadder",
+        "delay": 90,
+        "props": {
+          "header": "Dissolving: a tug-of-war of two energies",
+          "panels": [
+            {
+              "title": "CaCl₂",
+              "levels": [
+                {
+                  "key": "s",
+                  "label": "CaCl₂(s)",
+                  "e": 0.4,
+                  "x": 0.3,
+                  "w": 112,
+                  "at": 40
+                },
+                {
+                  "key": "i",
+                  "label": "Ca²⁺ + 2Cl⁻",
+                  "e": 0.92,
+                  "x": 0.56,
+                  "w": 130,
+                  "at": 90
+                },
+                {
+                  "key": "a",
+                  "label": "(aq)",
+                  "sub": "hydrated ions",
+                  "e": 0.14,
+                  "x": 0.8,
+                  "w": 100,
+                  "at": 330
+                }
+              ],
+              "arrows": [
+                {
+                  "from": "s",
+                  "to": "i",
+                  "label": "lattice",
+                  "sub": "absorbs",
+                  "at": 110,
+                  "tone": "ink",
+                  "x": 0.3,
+                  "side": "left"
+                },
+                {
+                  "from": "i",
+                  "to": "a",
+                  "label": "hydration",
+                  "sub": "releases",
+                  "at": 330,
+                  "tone": "accent",
+                  "x": 0.82,
+                  "side": "left"
+                }
+              ],
+              "heat": {
+                "dir": "out",
+                "at": 740
+              },
+              "note": {
+                "text": "hydration wins → exothermic",
+                "at": 740,
+                "tone": "hot"
+              }
+            },
+            {
+              "title": "NH₄NO₃",
+              "levels": [
+                {
+                  "key": "s",
+                  "label": "NH₄NO₃(s)",
+                  "e": 0.4,
+                  "x": 0.3,
+                  "w": 112,
+                  "at": 40
+                },
+                {
+                  "key": "i",
+                  "label": "NH₄⁺ + NO₃⁻",
+                  "e": 0.92,
+                  "x": 0.44,
+                  "w": 130,
+                  "at": 90
+                },
+                {
+                  "key": "a",
+                  "label": "(aq)",
+                  "sub": "hydrated ions",
+                  "e": 0.6,
+                  "x": 0.8,
+                  "w": 100,
+                  "at": 330
+                }
+              ],
+              "arrows": [
+                {
+                  "from": "s",
+                  "to": "i",
+                  "label": "lattice",
+                  "sub": "absorbs",
+                  "at": 110,
+                  "tone": "ink",
+                  "x": 0.3,
+                  "side": "left"
+                },
+                {
+                  "from": "i",
+                  "to": "a",
+                  "label": "hydration",
+                  "sub": "releases",
+                  "at": 330,
+                  "tone": "accent",
+                  "x": 0.82,
+                  "side": "left",
+                  "labelE": 0.7
+                }
+              ],
+              "heat": {
+                "dir": "in",
+                "at": 920
+              },
+              "note": {
+                "text": "lattice wins → endothermic",
+                "at": 920,
+                "tone": "cold"
+              }
+            }
+          ]
+        }
       }
     },
     {

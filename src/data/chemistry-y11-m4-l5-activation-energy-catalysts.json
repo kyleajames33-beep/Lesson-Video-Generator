@@ -92,12 +92,17 @@
       ],
       "callout": "Lower Ea = faster reaction. Same start and finish = same ΔH.",
       "diagram": {
-        "type": "energyProfile",
-        "exothermic": true,
-        "ea": 75,
-        "deltaH": -100,
-        "showCatalyst": true,
-        "delay": 90
+        "type": "diorama",
+        "kind": "chem11m4CatalystPath",
+        "delay": 60,
+        "props": {
+          "beats": [
+            310,
+            450,
+            960,
+            1170
+          ]
+        }
       },
       "durationInFrames": 1444,
       "caption": "A catalyst lowers Ea via an alternative pathway; ΔH is unchanged.",
