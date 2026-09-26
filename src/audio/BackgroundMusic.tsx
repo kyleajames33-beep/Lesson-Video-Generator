@@ -12,6 +12,7 @@
 
 import {Audio} from '@remotion/media';
 import {staticFile, useVideoConfig, interpolate} from 'remotion';
+import {audioDisabled} from './audioDisabled';
 
 type BackgroundMusicProps = {
 	src?: string;
@@ -38,7 +39,7 @@ export const BackgroundMusic = ({
 	playForFrames,
 }: BackgroundMusicProps) => {
 	const {durationInFrames} = useVideoConfig();
-	if (!src) return null;
+	if (!src || audioDisabled()) return null;
 
 	const totalFrames = playForFrames ?? durationInFrames;
 

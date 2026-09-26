@@ -13,6 +13,7 @@
 
 import {Audio} from '@remotion/media';
 import {Sequence, staticFile} from 'remotion';
+import {audioDisabled} from './audioDisabled';
 
 type SfxProps = {
 	/** SFX pack file name (without .mp3 extension). */
@@ -26,6 +27,7 @@ type SfxProps = {
 };
 
 export const Sfx = ({name, at = 0, volume = 0.5, durationInFrames = 30}: SfxProps) => {
+	if (audioDisabled()) return null;
 	return (
 		<Sequence from={at} durationInFrames={durationInFrames}>
 			<Audio src={staticFile(`audio/sfx/${name}.mp3`)} volume={volume} />

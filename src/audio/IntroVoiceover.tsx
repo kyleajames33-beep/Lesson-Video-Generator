@@ -7,6 +7,7 @@
 // title scene begins.
 
 import {Audio, staticFile} from 'remotion';
+import {audioDisabled} from './audioDisabled';
 
 type IntroVoiceoverProps = {
 	src?: string;
@@ -15,6 +16,6 @@ type IntroVoiceoverProps = {
 const toStaticPath = (p: string) => p.replace(/^public[\\/]/, '').replace(/\\/g, '/');
 
 export const IntroVoiceover = ({src}: IntroVoiceoverProps) => {
-	if (!src) return null;
+	if (!src || audioDisabled()) return null;
 	return <Audio src={staticFile(toStaticPath(src))} volume={0.95} />;
 };
