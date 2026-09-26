@@ -88,7 +88,6 @@
       "type": "concept",
       "heading": "The models, in order",
       "body": "Four models, each replaced when an experiment showed something the model couldn't explain.",
-      "image": "l13AtomicModelTimeline",
       "bullets": [
         {"text": "Dalton (1803): the atom is a solid, indivisible sphere."},
         {"text": "Thomson (1904): plum pudding, electrons set in positive charge."},
@@ -97,6 +96,57 @@
       ],
       "secondary": "Each model fell when new evidence appeared: electrons broke Dalton, gold foil broke Thomson, and spectra broke Rutherford.",
       "callout": "Models change when the evidence outgrows them.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1ModelTimeline",
+        "props": {
+          "title": "Each model fell to new evidence",
+          "models": [
+            {
+              "name": "Dalton",
+              "year": "1803",
+              "summary": "solid sphere",
+              "model": "solid",
+              "at": 14
+            },
+            {
+              "name": "Thomson",
+              "year": "1904",
+              "summary": "plum pudding",
+              "model": "pudding",
+              "at": 243
+            },
+            {
+              "name": "Rutherford",
+              "year": "1911",
+              "summary": "tiny dense nucleus",
+              "model": "nuclear",
+              "at": 549
+            },
+            {
+              "name": "Bohr",
+              "year": "1913",
+              "summary": "energy-level shells",
+              "model": "shells",
+              "at": 823
+            }
+          ],
+          "evidence": [
+            {
+              "label": "electron, 1897",
+              "at": 152
+            },
+            {
+              "label": "gold foil",
+              "at": 449
+            },
+            {
+              "label": "spectra",
+              "at": 700
+            }
+          ]
+        }
+      },
       "durationInFrames": 1200,
       "caption": "Dalton → Thomson → Rutherford → Bohr, each revised by new evidence.",
       "voiceover": {

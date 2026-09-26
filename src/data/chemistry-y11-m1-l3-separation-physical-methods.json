@@ -105,6 +105,38 @@
       ],
       "secondary": "Many real mixtures need both in sequence. Filter out the insoluble part first, then crystallise the dissolved part.",
       "callout": "Undissolved? Filter. Dissolved? Crystallise.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1DecisionTree",
+        "props": {
+          "title": "Undissolved? Filter. Dissolved? Crystallise.",
+          "highlight": "Is the solid dissolved?",
+          "root": {
+            "q": "Is the solid dissolved?",
+            "at": 40,
+            "branches": [
+              {
+                "label": "No: undissolved",
+                "node": {
+                  "leaf": "Filtration",
+                  "sub": "by particle size",
+                  "icon": "filtration",
+                  "at": 150
+                }
+              },
+              {
+                "label": "Yes: dissolved",
+                "node": {
+                  "leaf": "Crystallisation",
+                  "sub": "by solubility change",
+                  "icon": "crystallisation",
+                  "at": 255
+                }
+              }
+            ]
+          }
+        }
+      },
       "durationInFrames": 960,
       "caption": "Undissolved → filtration; dissolved → crystallisation; often used in sequence.",
       "voiceover": {

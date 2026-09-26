@@ -37,7 +37,7 @@ export type DecisionTreeProps = {
 const ID = 'c11tree';
 const W = 760;
 const H = 530;
-const LEAF_Y = 404;
+const LEAF_Y_MAX = 404;
 
 const isLeaf = (n: TreeNode): n is TreeLeaf => (n as TreeLeaf).leaf !== undefined;
 
@@ -57,13 +57,13 @@ const Icon = ({icon, cx, cy, rx, frame, seed}: {icon: TreeIcon; cx: number; cy: 
 			// Two rows of single particles on the plinth top (local units, rx = 60).
 			const pts = [[-30, -15], [-10, -15], [10, -15], [30, -15], [-40, 1], [-20, 1], [0, 1], [20, 1], [40, 1]];
 			const kind = (k: number, x: number) =>
-				icon === 'element' ? 'A' : icon === 'homogeneous' ? (k % 2 ? 'B' : 'A') : x < 0 ? 'A' : x > 0 ? 'B' : k === 6 ? 'B' : 'A';
+				icon === 'element' ? 'A' : icon === 'homogeneous' ? (k % 2 ? 'B' : 'A') : x < 0 || (x === 0 && k !== 6) ? 'A' : 'B';
 			const gap = icon === 'element' ? 0.96 : 1.08; // pure solid packs tight; mixtures a touch looser
 			return (
 				<g>
 					{pts.map(([x, y], k) => {
 						const n = kind(k, x);
-						return <Ball key={k} id={ID} name={n} color={n === 'A' ? A : B} x={cx + x * s * gap} y={cy + y * s + bob(k)} r={9 * s} />;
+						return <Ball key={k} id={ID} name={n} color={n === 'A' ? A : B} x={cx + (x + (icon === 'heterogeneous' ? Math.sign(x || 1) * 5 : 0)) * s * gap} y={cy + y * s + bob(k)} r={9 * s} />;
 					})}
 				</g>
 			);
@@ -139,34 +139,52 @@ const Icon = ({icon, cx, cy, rx, frame, seed}: {icon: TreeIcon; cx: number; cy: 
 					<circle cx={0} cy={-30} r={4} fill="#e2b330" />
 				</g>
 			);
-		case 'hbond':
+		case 'hbond': {
+			// Two water molecules; the dotted H-bond runs from an H (δ+) of one to the O (δ−) of the other.
+			const r = 13 * s;
+			const d = 1.72 * r * 0.62;
+			const w1 = {x: cx - 26 * s, y: cy - 14 * s + bob(0)};
+			const w2 = {x: cx + 26 * s, y: cy - 24 * s + bob(1)};
+			const h1 = {x: w1.x + d * Math.sin((52 * Math.PI) / 180), y: w1.y - r * 0.2 + d * Math.cos((52 * Math.PI) / 180)};
+			// Second water is turned so its O faces the first molecule's H (Molecule only draws O-up).
+			const o2 = {x: w2.x - 8 * s, y: w2.y};
+			const hA = (52 * Math.PI) / 180;
+			const h2 = [-1, 1].map((sg) => ({x: o2.x + d * Math.cos(hA), y: o2.y + sg * d * Math.sin(hA)}));
+			const atom = (el: string, x: number, y: number, rr: number, k: string) => (
+				<circle key={k} cx={x} cy={y} r={rr} fill={`url(#${ID}-atom-${el})`} stroke={shade(el === 'O' ? '#e0433a' : '#f2f2ef', -0.35)} strokeWidth={1} />
+			);
 			return (
 				<g>
-					<Molecule id={ID} atoms={['O', 'H', 'H']} x={cx - 22 * s} y={cy - 16 * s + bob(0)} r={11 * s} />
-					<Molecule id={ID} atoms={['O', 'H', 'H']} x={cx + 26 * s} y={cy - 22 * s + bob(1)} r={11 * s} />
-					<line x1={cx - 12 * s} y1={cy - 8 * s} x2={cx + 18 * s} y2={cy - 24 * s} stroke={TOK.inkDim} strokeWidth={2.5} strokeDasharray="3 4" />
+					<Molecule id={ID} atoms={['O', 'H', 'H']} x={w1.x} y={w1.y} r={r} />
+					<ellipse cx={o2.x + r * 0.5} cy={o2.y + r * 1.05} rx={r * 1.35} ry={r * 0.28} fill="rgba(40,60,20,0.25)" />
+					{atom('H', h2[0].x, h2[0].y, r * 0.72, 'ha')}
+					{atom('O', o2.x, o2.y, r, 'o')}
+					{atom('H', h2[1].x, h2[1].y, r * 0.72, 'hb')}
+					<line x1={h1.x + r * 0.6} y1={h1.y} x2={o2.x - r * 1.05} y2={o2.y + r * 0.1} stroke={TOK.ink} strokeWidth={3} strokeDasharray="2 5" strokeLinecap="round" />
 				</g>
 			);
-		case 'dipole':
+		}
+		case 'dipole': {
+			// Two H–Cl molecules lined up δ+ … δ−.
+			const r = 13 * s;
 			return (
 				<g>
-					{[-1, 1].map((d, i) => (
-						<g key={d}>
-							<Molecule id={ID} atoms={['H', 'Cl']} x={cx + d * 24 * s} y={cy - 16 * s + bob(i)} r={11 * s} />
-						</g>
+					{[-1, 1].map((dd, i) => (
+						<Molecule key={dd} id={ID} atoms={['H', 'Cl']} x={cx + dd * 27 * s} y={cy - 16 * s + bob(i)} r={r} />
 					))}
-					<line x1={cx - 12 * s} y1={cy - 16 * s} x2={cx + 12 * s} y2={cy - 16 * s} stroke={TOK.inkDim} strokeWidth={2.5} strokeDasharray="3 4" />
-					<text x={cx - 44 * s} y={cy - 36 * s} fill={TOK.inkDim} fontSize={15} fontWeight={800}>δ+</text>
-					<text x={cx - 14 * s} y={cy - 36 * s} fill={TOK.inkDim} fontSize={15} fontWeight={800}>δ−</text>
+					<line x1={cx - 12 * s} y1={cy - 18 * s} x2={cx + 12 * s} y2={cy - 18 * s} stroke={TOK.ink} strokeWidth={3} strokeDasharray="2 5" strokeLinecap="round" />
+					<text x={cx - 40 * s} y={cy - 38 * s} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800}>δ+</text>
+					<text x={cx - 17 * s} y={cy - 38 * s} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800}>δ−</text>
 				</g>
 			);
+		}
 		case 'dispersion':
 			return (
 				<g>
 					{[-1, 1].map((d, i) => (
 						<g key={d}>
-							<ellipse cx={cx + d * 24 * s} cy={cy - 16 * s + bob(i)} rx={24 * s} ry={15 * s} fill="rgba(63,143,232,0.14)" />
-							<Molecule id={ID} atoms={['Cl', 'Cl']} x={cx + d * 24 * s} y={cy - 16 * s + bob(i)} r={10 * s} />
+							<ellipse cx={cx + d * 27 * s} cy={cy - 16 * s + bob(i)} rx={27 * s} ry={17 * s} fill="rgba(63,143,232,0.14)" />
+							<Molecule id={ID} atoms={['Cl', 'Cl']} x={cx + d * 27 * s} y={cy - 16 * s + bob(i)} r={12 * s} />
 						</g>
 					))}
 				</g>
@@ -184,9 +202,14 @@ export const DecisionTreeDiagram = ({title, root, highlight, delay = 62}: Decisi
 	const collect = (n: TreeNode) => (isLeaf(n) ? leaves.push(n) : n.branches.forEach((b) => collect(b.node)));
 	collect(root);
 	const nLeaves = leaves.length;
-	const margin = 20;
+	const margin = 12;
 	const slot = (W - margin * 2) / nLeaves;
 	const plinthRx = Math.min(80, slot * 0.43);
+	// Five-plus outcomes share the row, so their labels step down a size.
+	const leafFont = nLeaves >= 5 ? 18 : 22;
+	// Lift the plinth row just enough that the tallest label block fits the viewBox.
+	const labelBlock = Math.max(...leaves.map((l) => (l.leaf.split('\n').length - 1) * (leafFont + 2) + (l.sub ? l.sub.split('\n').length * 19 : 0)));
+	const LEAF_Y = Math.min(LEAF_Y_MAX, H - 12 - labelBlock - plinthRx * 0.54 - 26);
 
 	let qDepth = 0;
 	const measure = (n: TreeNode, d: number) => {
@@ -290,15 +313,16 @@ export const DecisionTreeDiagram = ({title, root, highlight, delay = 62}: Decisi
 							</DioramaPlinth>
 						</g>
 						{ls.map((l, k) => (
-							<text key={k} x={p.x} y={labelY + k * 24} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>
+							<text key={k} x={p.x} y={labelY + k * (leafFont + 2)} textAnchor="middle" fill={TOK.ink} fontSize={leafFont} fontWeight={800}>
 								{l}
 							</text>
 						))}
-						{leaf.sub && (
-							<text x={p.x} y={labelY + ls.length * 24} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>
-								{leaf.sub}
-							</text>
-						)}
+						{leaf.sub &&
+							lines(leaf.sub).map((l, k) => (
+								<text key={`s${k}`} x={p.x} y={labelY + ls.length * (leafFont + 2) + k * 19} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>
+									{l}
+								</text>
+							))}
 					</g>
 				);
 			})}
