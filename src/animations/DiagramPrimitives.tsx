@@ -2,6 +2,7 @@ import {Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remo
 import {useMemo, Children, cloneElement, isValidElement} from 'react';
 import type {CSSProperties, ReactNode, SVGProps} from 'react';
 import {TOK, FONT_MONO} from '../styles/tokens';
+import {DioramaBarChart} from '../slides/diagrams/kinds/restyle-generic/DioramaBarChart';
 
 // ─── MagnifyLens — animated glass overlay for SVG viewBox 0 0 700 430 ─────────
 
@@ -492,102 +493,10 @@ export const DataChart = ({
 	const tickCount = 4;
 	const ticks = Array.from({length: tickCount + 1}, (_, i) => (yMax / tickCount) * i);
 
+	// Bar charts use the diorama look: painted columns on plinths that grow as
+	// the narration names them (see kinds/restyle-generic/DioramaBarChart.tsx).
 	if (kind === 'bar') {
-		const barWidth = Math.min(48, (chartW / data.length) * 0.6);
-		const gap = data.length > 1 ? (chartW - barWidth * data.length) / (data.length - 1) : 0;
-
-		return (
-			<svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} aria-hidden>
-				{/* Axes */}
-				<g opacity={axisEased}>
-					<line
-						x1={padding.left}
-						y1={padding.top}
-						x2={padding.left}
-						y2={height - padding.bottom}
-						stroke={axisColor}
-						strokeWidth={2}
-					/>
-					<line
-						x1={padding.left}
-						y1={height - padding.bottom}
-						x2={width - padding.right}
-						y2={height - padding.bottom}
-						stroke={axisColor}
-						strokeWidth={2}
-					/>
-					{/* Y ticks */}
-					{ticks.map((t, i) => {
-						const ty = height - padding.bottom - (t / yMax) * chartH;
-						const tickOpacity = interpolate(
-							frame,
-							[delay + axisDurationFrames + i * 2, delay + axisDurationFrames + i * 2 + 6],
-							[0, 1],
-							clamp,
-						);
-						return (
-							<g key={`tick-${i}`}>
-								<line x1={padding.left - 5} y1={ty} x2={padding.left} y2={ty} stroke={axisColor} strokeWidth={1} opacity={tickOpacity} />
-								<text x={padding.left - 10} y={ty + 4} textAnchor="end" fill={labelColor} fontSize={12} fontFamily={FONT_MONO} opacity={tickOpacity}>
-									{Math.round(t)}
-								</text>
-							</g>
-						);
-					})}
-				</g>
-
-				{/* Bars */}
-				{data.map((d, i) => {
-					const bx = padding.left + i * (barWidth + gap) + (gap > 0 ? 0 : (chartW - barWidth) / 2);
-					const targetH = (d.value / yMax) * chartH;
-					const barDelay = delay + axisDurationFrames + i * barStaggerFrames;
-					const barProgress = interpolate(frame, [barDelay, barDelay + barDurationFrames], [0, 1], clamp);
-					const barEased = 1 - Math.pow(1 - barProgress, 3);
-					const bh = targetH * barEased;
-					const by = height - padding.bottom - bh;
-
-					const valueOpacity = interpolate(frame, [barDelay + barDurationFrames, barDelay + barDurationFrames + 6], [0, 1], clamp);
-
-					return (
-						<g key={d.label}>
-							<rect
-								x={bx}
-								y={by}
-								width={barWidth}
-								height={bh}
-								fill={d.color || color}
-								rx={3}
-								opacity={0.85}
-							/>
-							{showValues && (
-								<text
-									x={bx + barWidth / 2}
-									y={by - 8}
-									textAnchor="middle"
-									fill={labelColor}
-									fontSize={13}
-									fontFamily={FONT_MONO}
-									opacity={valueOpacity}
-								>
-									{d.value}
-								</text>
-							)}
-							<text
-								x={bx + barWidth / 2}
-								y={height - padding.bottom + 20}
-								textAnchor="middle"
-								fill={labelColor}
-								fontSize={12}
-								fontFamily={FONT_MONO}
-								opacity={axisEased}
-							>
-								{d.label}
-							</text>
-						</g>
-					);
-				})}
-			</svg>
-		);
+		return <DioramaBarChart data={data} delay={delay} />;
 	}
 
 	// Line chart
