@@ -1,7 +1,7 @@
 # Diorama diagram system
 
 The look approved on Chem Y11 M2 L13 (PR #3): diagrams that read as painted
-dioramas. Objects stand on round soil-and-grass plinths, atoms are glossy CPK
+dioramas. Objects stand on round stone display plinths (grass was dropped after review: it read as cartoony), atoms are glossy CPK
 balls, and graphs draw themselves in sync with the action. **Every label,
 number and moving part is coded SVG**, so it is always correct and can animate.
 Painted images, if used at all, never carry text.
@@ -65,7 +65,7 @@ your own `kinds/<lane>/` folder and say in the PR that it could be promoted.
    colours of meaning per diagram.
 5. **Colour.** Use `TOK` / `useAccent()`. **Amber is reserved for the single most
    important thing on screen** (the answer, the limiting reagent, the trap).
-   Element colours come from `ELEMENT_COLORS`. For the plinth, use `DioramaPlinth`.
+   Element colours come from `ELEMENT_COLORS`. For the plinth, use `DioramaPlinth` (stone); don't hand-draw grass, soil or tufts.
 6. **Never frozen.** Once the main animation ends the scene often has 20+ s of
    narration left. Keep gentle life going with `idleBob` (particles jostle) and
    `idlePulse` (the key highlight breathes). Don't add new information during
