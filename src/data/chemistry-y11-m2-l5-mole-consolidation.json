@@ -55,7 +55,6 @@
       "type": "concept",
       "heading": "n is the hub",
       "body": "Every mole problem passes through moles. n is the central currency that links mass, particles, and gas volume.",
-      "image": "l5MoleHub",
       "bullets": [
         {
           "text": "From particles: n = N ÷ Nₐ. From moles: N = n × Nₐ."
@@ -76,6 +75,37 @@
       "caption": "Moles sit at the centre. Every formula converts to or from n.",
       "voiceover": {
         "text": "OK, here's the big idea for today. Every mole problem in this unit passes through moles. n is the central currency. Think of it like changing money at an airport. You can't go directly from yen to pounds. You always change to a hub currency first. Same idea here. From particles to moles. n equals N over N A. Going the other way. N equals n times N A. From mass to moles. n equals m over capital M. Going back. m equals n times capital M. From the volume of a gas to moles. n equals V over V m. And the reverse. V equals n times V m. From an empirical formula to a molecular formula. Molecular formula equals empirical formula times n, where n is the actual molar mass divided by the empirical molar mass. Four pathways. One hub. So whenever you're stuck on a multi-step problem, ask two questions. First. What formula gets me to moles from what I have? Second. What formula gets me from moles to what I want? Find those two, chain them together, you're done."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2MoleHub",
+        "props": {
+          "spokes": [
+            {
+              "icon": "particles",
+              "label": "particles",
+              "into": "n = N ÷ Nₐ",
+              "out": "N = n × Nₐ",
+              "beat": 275
+            },
+            {
+              "icon": "mass",
+              "label": "mass",
+              "into": "n = m ÷ M",
+              "out": "m = n × M",
+              "beat": 413
+            },
+            {
+              "icon": "gas",
+              "label": "gas volume",
+              "into": "n = V ÷ Vₘ",
+              "out": "V = n × Vₘ",
+              "beat": 537
+            }
+          ],
+          "note": "Every conversion passes through n",
+          "noteBeat": 10
+        }
       }
     },
     {

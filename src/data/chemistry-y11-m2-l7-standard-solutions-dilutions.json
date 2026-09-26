@@ -48,7 +48,6 @@
       "type": "concept",
       "heading": "What dilution really does",
       "body": "Adding solvent spreads the same solute through a bigger volume. The moles of solute never change.",
-      "image": "l7DilutionConcept",
       "bullets": [
         {"text": "Dilution adds solvent, never more solute."},
         {"text": "The number of moles of solute stays exactly the same."},
@@ -60,6 +59,11 @@
       "caption": "Dilution keeps moles constant while volume rises, so concentration falls.",
       "voiceover": {
         "text": "Before the formulas, get the picture clear. When you dilute a solution, you add more solvent, usually water. You do not add any more solute. So the number of moles of solute sitting in the beaker never changes. All that changes is the volume they're spread through. More volume, same moles, so the concentration drops. And here's the neat part. Because the moles before equals the moles after, and moles is concentration times volume, you can write c one V one equals c two V two. That single line is the entire dilution equation, and it falls straight out of moles staying constant."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Dilution",
+        "props": {"beats": {"before": 0, "pour": 57, "same": 186, "drop": 443, "formula": 671}}
       }
     },
     {
@@ -95,6 +99,28 @@
       "caption": "c₁V₁ = c₂V₂. V₂ is the final volume, not the water added.",
       "voiceover": {
         "text": "Here's the equation. c one V one equals c two V two. The left side is the concentration and volume before you dilute. The right side is the concentration and volume after. Because both sides equal the same number of moles, you just rearrange to find whichever value is missing. One nice thing about this formula, the volumes can both stay in millilitres, as long as they're in the same unit on both sides. But here's the trap that catches everyone. V two is the final, total volume of the solution. It is not the amount of water you added. If you top a hundred millilitres up to five hundred, V two is five hundred, not four hundred."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Dilution",
+        "props": {
+          "v1": 100,
+          "v2": 500,
+          "unit": "mL",
+          "c1": 2,
+          "c1Dp": 0,
+          "c2Dp": 1,
+          "beats": {
+            "before": 36,
+            "pour": 125,
+            "same": 240,
+            "drop": 260,
+            "formula": 394,
+            "added": 540,
+            "trap": 752
+          },
+          "trap": "V₂ is the total 500 mL, not the 400 mL of water"
+        }
       }
     },
     {

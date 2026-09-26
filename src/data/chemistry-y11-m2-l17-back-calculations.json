@@ -121,6 +121,35 @@
       "caption": "n = c × titre → ratio → ÷ aliquot; keep full precision.",
       "voiceover": {
         "text": "Here's the method, with two warnings built in. Find the moles of the standard from its concentration times the titre. Apply the mole ratio to get the unknown's moles. Then divide by the unknown's aliquot volume for its concentration, and scale up to the whole flask if the question asks for a total. Warning one, watch the ratio. Diprotic acids and carbonates aren't one to one, so read the equation. Warning two, keep full precision. Carry every decimal through the intermediate steps, and only round at the very end. Rounding early in a two or three step calculation can throw your final answer off by enough to lose a mark."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Pathway",
+        "props": {
+          "given": {
+            "icon": "solution",
+            "label": "standard",
+            "sub": "c × titre"
+          },
+          "wanted": {
+            "icon": "solution",
+            "label": "unknown",
+            "sub": "concentration"
+          },
+          "inOp": "n = c × titre",
+          "ratioOp": "× mole ratio",
+          "outOp": "÷ aliquot V",
+          "molesGiven": "n(standard)",
+          "molesWanted": "n(unknown)",
+          "trap": "Keep full precision. Round only the final answer",
+          "trapOn": "none",
+          "beats": {
+            "in": 8,
+            "ratio": 113,
+            "out": 191,
+            "trap": 549
+          }
+        }
       }
     },
     {
