@@ -125,7 +125,7 @@ export const ChangeTestDiagram = ({delay = 90, beats = [300, 520, 570, 750, 1000
 			{/* Right: iron + oxygen → iron oxide */}
 			<g opacity={ramp(frame, 8)}>
 				<DioramaPlinth id={ID} cx={R} cy={PY} rx={RX}>
-					{/* rust bloom on the grass once the new substance exists */}
+					{/* rust bloom on the plinth once the new substance exists */}
 					<ellipse cx={R} cy={PY + 4} rx={136} ry={40} fill="#b5532b" opacity={0.22 * rust} />
 					{/* O₂ bonds (drawn only while the pairs are intact) */}
 					{[0, 1, 2].map((k) => (
