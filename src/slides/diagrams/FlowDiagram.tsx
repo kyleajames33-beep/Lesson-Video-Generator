@@ -1,24 +1,33 @@
-// FlowDiagram — process chains and small trees, laid out top-to-bottom in
-// layers (depth = longest path from a root). Nodes are rounded cards with
-// wrapped labels; edges draw on after their source node lands.
+// FlowDiagram — process chains and small trees in the diorama family, laid
+// out top-to-bottom in layers (depth = longest path from a root).
+//
+// Nodes are painted blocks standing on a stone lip, lit from the top-left;
+// chains get a glossy numbered marble per step. Edges draw on once their
+// source has landed, then a small glossy bead keeps travelling down each edge
+// during the hold, so the direction of the process stays visible and the
+// scene is never frozen. Nodes land when the narration names them (falling
+// back to a stagger when it doesn't; see kinds/restyle-generic/sceneSync.ts),
+// and never before the node that leads into them.
 //
 // Replaces the legacy version (fixed-size circles in a single row, hard-coded
 // indigo): labels up to ~30 chars overflowed the circles, 5–7 node chains were
 // squeezed into one line, and branching flows (8 lessons) drew over each other.
 
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {FONT_DISPLAY, FONT_MONO, TOK} from '../../styles/tokens';
+import {FONT_DISPLAY, TOK} from '../../styles/tokens';
 import {useAccent} from '../../styles/theme';
+import {idlePulse} from './diorama';
+import {STONE, clamp, marbleStyle, shade} from './kinds/restyle-generic/paint';
+import {buildStart, itemEntryFrames, sceneTimingFor} from './kinds/restyle-generic/sceneSync';
 
 type FlowNode = {id: string; label: string};
 type FlowEdge = {from: string; to: string};
 type Props = {nodes: FlowNode[]; edges: FlowEdge[]; delay?: number};
 
-const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
-
 // Sized to the concept VisualStage's inner box (~744×554).
 const W = 740;
-const MAX_H = 550;
+const MAX_H = 540;
+const LIP = 6;
 const GAP_X = 20;
 const CHAR_EM = 0.52; // Inter Tight 600, average glyph width
 
@@ -43,7 +52,7 @@ const layerOf = (nodes: FlowNode[], edges: FlowEdge[]) => {
 const linesFor = (text: string, widthPx: number, fontSize: number) =>
 	Math.max(1, Math.ceil(text.length / Math.max(6, Math.floor(widthPx / (fontSize * CHAR_EM)))));
 
-export const FlowDiagram = ({nodes, edges, delay = 0}: Props) => {
+export const FlowDiagram = ({nodes, edges, delay}: Props) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
@@ -105,88 +114,154 @@ export const FlowDiagram = ({nodes, edges, delay = 0}: Props) => {
 		});
 	});
 
-	const appearAt = (id: string) => delay + depth[id] * 16 + (pos[id]?.order ?? 0) * 3;
+	// Timing: order nodes by layer (the order they read in), sync each to the
+	// narration, then make sure no node lands before the node leading into it.
+	const timing = sceneTimingFor('flow', [nodes, edges]);
+	const start = buildStart(delay, timing);
+	const readOrder = [...nodes].sort((a, b) => pos[a.id].order - pos[b.id].order);
+	const synced = itemEntryFrames(readOrder.map((n) => n.label), {timing, start, stagger: 14});
+	const at: Record<string, number> = {};
+	readOrder.forEach((n, i) => (at[n.id] = synced[i]));
+	for (let pass = 0; pass < nodes.length; pass++) {
+		for (const {from, to} of edges) {
+			if (at[from] !== undefined && at[to] !== undefined && at[to] < at[from] + 12) at[to] = at[from] + 12;
+		}
+	}
+	const appearAt = (id: string) => at[id] ?? start;
+	// The node the narration is on: latest to land, glowing until the next lands.
+	const current = readOrder.reduce<string | null>((cur, n) => (frame >= appearAt(n.id) && (cur === null || appearAt(n.id) >= appearAt(cur)) ? n.id : cur), null);
+	const lastLanded = Math.max(...nodes.map((n) => appearAt(n.id)));
+	const glowFade = interpolate(frame, [lastLanded + 150, lastLanded + 190], [1, 0], clamp);
+
+	const edgeGeom = edges.map(({from, to}) => {
+		const a = pos[from];
+		const b = pos[to];
+		if (!a || !b) return null;
+		const x1 = a.x + a.w / 2;
+		const y1 = a.y + a.h + LIP;
+		const x2 = b.x + b.w / 2;
+		const y2 = b.y - 6;
+		const midY = (y1 + y2) / 2;
+		// Cubic Bézier: P0 (x1,y1), P1 (x1,midY), P2 (x2,midY), P3 (x2,y2).
+		const at = (t: number) => {
+			const u = 1 - t;
+			return {
+				x: u * u * u * x1 + 3 * u * u * t * x1 + 3 * u * t * t * x2 + t * t * t * x2,
+				y: u * u * u * y1 + 3 * u * u * t * midY + 3 * u * t * t * midY + t * t * t * y2,
+			};
+		};
+		return {from, to, d: `M${x1},${y1} C${x1},${midY} ${x2},${midY} ${x2},${y2}`, len: Math.hypot(x2 - x1, y2 - y1) * 1.25 + 10, at};
+	});
 
 	return (
-		<div style={{position: 'relative', width: W, height: H, fontFamily: FONT_DISPLAY}}>
-			<svg width={W} height={H} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
+		<div style={{position: 'relative', width: W, height: H + LIP, fontFamily: FONT_DISPLAY}}>
+			<svg width={W} height={H + LIP} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
 				<defs>
 					<marker id="flow-arrow" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto">
 						<path d="M0,0 L10,4 L0,8 z" fill={theme.accent2} />
 					</marker>
+					<radialGradient id="flow-bead" cx="38%" cy="32%" r="70%" fx="32%" fy="26%">
+						<stop offset="0%" stopColor="#ffffff" />
+						<stop offset="28%" stopColor={shade(theme.accent2, 0.1)} />
+						<stop offset="100%" stopColor={shade(theme.accent, -0.1)} />
+					</radialGradient>
 				</defs>
-				{edges.map(({from, to}, i) => {
-					const a = pos[from];
-					const b = pos[to];
-					if (!a || !b) return null;
-					const x1 = a.x + a.w / 2;
-					const y1 = a.y + a.h;
-					const x2 = b.x + b.w / 2;
-					const y2 = b.y - 6;
-					const midY = (y1 + y2) / 2;
-					const d = `M${x1},${y1} C${x1},${midY} ${x2},${midY} ${x2},${y2}`;
-					const len = Math.hypot(x2 - x1, y2 - y1) * 1.25 + 10;
-					const t = interpolate(frame, [appearAt(from) + 10, appearAt(from) + 26], [0, 1], clamp);
+				{edgeGeom.map((e, i) => {
+					if (!e) return null;
+					// The edge draws into its target as the target lands (never into an empty slot).
+					const t0 = Math.max(appearAt(e.from) + 10, appearAt(e.to) - 14);
+					const t = interpolate(frame, [t0, t0 + 16], [0, 1], clamp);
+					// Bead: one trip every 70 frames once the edge has drawn and its target
+					// has landed.
+					const beadStart = t0 + 30;
+					const cycle = 70;
+					const bt = frame > beadStart ? ((frame - beadStart + i * 13) % cycle) / cycle : -1;
+					const beadP = bt >= 0 ? e.at(bt) : null;
+					const beadO = bt >= 0 ? interpolate(bt, [0, 0.12, 0.85, 1], [0, 1, 1, 0], clamp) * interpolate(frame, [beadStart, beadStart + 20], [0, 1], clamp) : 0;
 					return (
-						<path
-							key={`${from}-${to}-${i}`}
-							d={d}
-							fill="none"
-							stroke={theme.accent2}
-							strokeWidth={3}
-							strokeLinecap="round"
-							strokeDasharray={len}
-							strokeDashoffset={(1 - t) * len}
-							markerEnd={t > 0.92 ? 'url(#flow-arrow)' : undefined}
-							opacity={0.85}
-						/>
+						<g key={`${e.from}-${e.to}-${i}`}>
+							<path
+								d={e.d}
+								fill="none"
+								stroke={theme.accent2}
+								strokeWidth={3}
+								strokeLinecap="round"
+								strokeDasharray={e.len}
+								strokeDashoffset={(1 - t) * e.len}
+								markerEnd={t > 0.92 ? 'url(#flow-arrow)' : undefined}
+								opacity={0.85}
+							/>
+							{beadP ? <circle cx={beadP.x} cy={beadP.y} r={5.5} fill="url(#flow-bead)" opacity={beadO} /> : null}
+						</g>
 					);
 				})}
 			</svg>
 
-			{nodes.map((node, i) => {
+			{nodes.map((node) => {
 				const p = pos[node.id];
 				const s = spring({frame: frame - appearAt(node.id), fps, config: {damping: 18, stiffness: 190, mass: 0.7}});
 				const isRoot = depth[node.id] === 0;
+				const glow = node.id === current ? glowFade * interpolate(frame - appearAt(node.id), [0, 12], [0, 1], clamp) : 0;
+				const ghost = interpolate(frame, [start, start + 14], [0, 0.4], clamp) * (1 - interpolate(s, [0, 0.5], [0, 1], clamp));
+				const marble = Math.max(18, Math.round(p.f * 0.9));
+				const face = isRoot ? theme.soft : '#ffffff';
 				return (
-					<div
-						key={node.id}
-						style={{
-							position: 'absolute',
-							left: p.x,
-							top: p.y,
-							width: p.w,
-							height: p.h,
-							display: 'flex',
-							alignItems: 'center',
-							justifyContent: 'center',
-							gap: 12,
-							padding: '0 18px',
-							borderRadius: 14,
-							background: isRoot ? theme.soft : TOK.card,
-							border: `2px solid ${isRoot ? theme.accent : `${theme.accent}40`}`,
-							boxShadow: TOK.cardShadow,
-							opacity: interpolate(s, [0, 0.5], [0, 1], clamp),
-							transform: `translateY(${interpolate(s, [0, 1], [14, 0])}px)`,
-						}}
-					>
-						{showStepNumbers ? (
-							<span style={{fontFamily: FONT_MONO, fontSize: p.f * 0.62, color: theme.accent, letterSpacing: '0.08em'}}>
-								{String(i + 1).padStart(2, '0')}
-							</span>
-						) : null}
-						<span
+					<div key={node.id}>
+						{/* ghost slot, so the shape of the process is there before the narration reaches it */}
+						<div
+							aria-hidden
+							style={{position: 'absolute', left: p.x, top: p.y, width: p.w, height: p.h, borderRadius: 14, border: `1.5px dashed ${theme.accent}55`, opacity: ghost}}
+						/>
+						<div
 							style={{
-								fontSize: p.f,
-								fontWeight: 650,
-								lineHeight: 1.18,
-								color: TOK.ink,
-								textAlign: 'center',
-								letterSpacing: '-0.01em',
+								position: 'absolute',
+								left: p.x,
+								top: p.y,
+								width: p.w,
+								height: p.h,
+								display: 'flex',
+								alignItems: 'center',
+								justifyContent: 'center',
+								gap: 12,
+								padding: '0 18px',
+								borderRadius: 14,
+								background: `linear-gradient(160deg, #ffffff 0%, ${face} 55%, ${shade(isRoot ? theme.soft : '#f1f1ee', -0.03)} 100%)`,
+								border: `2px solid ${isRoot ? theme.accent : `${theme.accent}40`}`,
+								boxShadow: `inset 0 1px 0 rgba(255,255,255,0.9), 0 ${LIP}px 0 ${STONE.lip}, 0 ${LIP + 4}px 14px rgba(58,40,18,0.16), 0 0 0 ${glow * 4}px ${theme.accent2}33`,
+								opacity: interpolate(s, [0, 0.5], [0, 1], clamp),
+								transform: `translateY(${interpolate(s, [0, 1], [14, 0])}px)`,
 							}}
 						>
-							{node.label}
-						</span>
+							{showStepNumbers ? (
+								<span
+									style={{
+										...marbleStyle(theme.accent2, marble),
+										display: 'flex',
+										alignItems: 'center',
+										justifyContent: 'center',
+										color: '#ffffff',
+										fontSize: marble * 0.56,
+										fontWeight: 800,
+										textShadow: '0 1px 1px rgba(0,0,0,0.3)',
+										transform: `scale(${1 + 0.07 * (node.id === current ? idlePulse(frame, 60) : 0)})`,
+									}}
+								>
+									{depth[node.id] + 1}
+								</span>
+							) : null}
+							<span
+								style={{
+									fontSize: p.f,
+									fontWeight: 650,
+									lineHeight: 1.18,
+									color: TOK.ink,
+									textAlign: 'center',
+									letterSpacing: '-0.01em',
+								}}
+							>
+								{node.label}
+							</span>
+						</div>
 					</div>
 				);
 			})}
