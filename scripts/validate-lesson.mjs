@@ -39,6 +39,9 @@ const supportedDiagramTypes = new Set([
   'concentrationCompare',
   'titrationSetup',
   'limitingExcess',
+  'reactionRun',
+  'coefficientDivide',
+  'diorama',
   'errorDartboard',
   'calorimeter',
   'bondEnergy',
@@ -130,6 +133,24 @@ const validateUnitCancel = (unitCancel, errors, pathLabel) => {
   }
 };
 
+// Diorama kind names, read from the lane registries (one `  kindName: Component,`
+// per line). Also rejects a kind registered by two lanes.
+let dioramaKindCache;
+const dioramaKinds = () => {
+  if (dioramaKindCache) return dioramaKindCache;
+  const dir = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'src', 'slides', 'diagrams', 'dioramaKinds');
+  const seen = new Map();
+  for (const file of readdirSync(dir).filter((f) => /^lane-.*\.ts$/.test(f))) {
+    const body = readFileSync(path.join(dir, file), 'utf8').split('export const KINDS')[1] ?? '';
+    for (const m of body.matchAll(/^\s+([A-Za-z][A-Za-z0-9_]*)\s*:\s*[A-Z][A-Za-z0-9_]*\s*,\s*$/gm)) {
+      if (seen.has(m[1])) throw new Error(`diorama kind "${m[1]}" is registered in both ${seen.get(m[1])} and ${file}`);
+      seen.set(m[1], file);
+    }
+  }
+  dioramaKindCache = new Set(seen.keys());
+  return dioramaKindCache;
+};
+
 const validateDiagram = (diagram, errors, pathLabel) => {
   if (diagram === undefined) return;
   if (!isObject(diagram)) {
@@ -137,6 +158,15 @@ const validateDiagram = (diagram, errors, pathLabel) => {
     return;
   }
 
+  if (diagram.type === 'diorama') {
+    const kinds = dioramaKinds();
+    if (typeof diagram.kind !== 'string' || !kinds.has(diagram.kind)) {
+      errors.push(`${pathLabel}: unknown diorama kind "${diagram.kind}" (registered: ${[...kinds].join(', ') || 'none'})`);
+    }
+    if (diagram.props !== undefined && !isObject(diagram.props)) {
+      errors.push(`${pathLabel}: diorama "props" must be an object`);
+    }
+  }
   if (!supportedDiagramTypes.has(diagram.type)) {
     errors.push(`${pathLabel}: unsupported diagram type "${diagram.type}"`);
   }

@@ -18,6 +18,9 @@ import {MassBreakdownDiagram} from './MassBreakdownDiagram';
 import {ConcentrationCompareDiagram} from './ConcentrationCompareDiagram';
 import {TitrationSetupDiagram} from './TitrationSetupDiagram';
 import {LimitingExcessDiagram} from './LimitingExcessDiagram';
+import {ReactionRunDiagram} from './ReactionRunDiagram';
+import {CoefficientDivideDiagram} from './CoefficientDivideDiagram';
+import {DIORAMA_KINDS} from './dioramaKinds';
 import {ErrorDartboardDiagram} from './ErrorDartboardDiagram';
 import {CalorimeterDiagram} from './CalorimeterDiagram';
 import {BondEnergyDiagram} from './BondEnergyDiagram';
@@ -59,6 +62,12 @@ export const DiagramRenderer = ({diagram}: {diagram: DiagramConfig}) => {
 		case 'concentrationCompare': return <ConcentrationCompareDiagram />;
 		case 'titrationSetup': return <TitrationSetupDiagram />;
 		case 'limitingExcess': return <LimitingExcessDiagram />;
+		case 'reactionRun':    return <ReactionRunDiagram {...diagram} />;
+		case 'coefficientDivide': return <CoefficientDivideDiagram {...diagram} />;
+		case 'diorama': {
+			const Kind = DIORAMA_KINDS[diagram.kind];
+			return Kind ? <Kind {...(diagram.props ?? {})} {...(diagram.delay !== undefined ? {delay: diagram.delay} : {})} /> : null;
+		}
 		case 'errorDartboard': return <ErrorDartboardDiagram />;
 		case 'calorimeter':    return <CalorimeterDiagram />;
 		case 'bondEnergy':     return <BondEnergyDiagram />;

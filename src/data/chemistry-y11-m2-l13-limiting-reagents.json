@@ -71,7 +71,7 @@
         "text": "Two roles in every reaction with set amounts. The limiting reagent is the one that runs out first, and it sets the maximum product you can make. The excess reagent is the one there's more than enough of, so some is left sitting there unreacted when the reaction stops. Here's the crucial point. Only the limiting reagent's moles decide the yield. The leftover excess does nothing. And you cannot tell which reactant is limiting just by looking at the masses, because the substances have different molar masses and the equation has different coefficients. You have to compare moles divided by coefficients. The smallest result is your limiting reagent."
       },
       "diagram": {
-        "type": "limitingExcess"
+        "type": "reactionRun"
       }
     },
     {
@@ -121,6 +121,9 @@
       "caption": "Moles ÷ coefficient for each reactant; smallest is limiting.",
       "voiceover": {
         "text": "Here's the reliable method for finding the limiting reagent. Step one, convert every reactant mass to moles. Step two, and this is the bit people skip, divide each mole value by its coefficient in the balanced equation. This corrects for the fact that some reactants are needed in bigger amounts than others. Step three, the smallest result is the limiting reagent. Don't just pick the one with fewer grams, or even fewer moles, because the coefficients change everything. Once you know which is limiting, you calculate the theoretical yield using only the limiting reagent's moles and its mole ratio to the product."
+      },
+      "diagram": {
+        "type": "coefficientDivide"
       }
     },
     {

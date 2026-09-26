@@ -170,6 +170,35 @@ export type DiagramConfig =
   | {type: 'concentrationCompare'}
   | {type: 'titrationSetup'}
   | {type: 'limitingExcess'}
+  | {
+      /** A diorama-system diagram, looked up by `kind` in
+       *  src/slides/diagrams/dioramaKinds/. `props` are passed straight to the
+       *  component. See docs/diorama-system.md. */
+      type: 'diorama';
+      kind: string;
+      props?: Record<string, unknown>;
+      delay?: number;
+    }
+  | {
+      type: 'reactionRun';
+      /** Header, e.g. "2H₂ + O₂ → 2H₂O". Defaults to the H₂/O₂ reaction. */
+      equation?: string;
+      /** Molecule counts on each reactant plinth; atoms are element symbols. */
+      reactants?: {label: string; atoms: string[]; coef: number; count: number}[];
+      product?: {label: string; atoms: string[]; coef: number};
+      delay?: number;
+      framesPerEvent?: number;
+    }
+  | {
+      type: 'coefficientDivide';
+      /** Header, e.g. "2Na + Cl₂ → 2NaCl". Defaults to the Na/Cl₂ reaction. */
+      equation?: string;
+      /** Moles as displayed in the working (3 s.f.); ratio = moles ÷ coef. */
+      reactants?: {label: string; moles: number; coef: number; atoms: string[]}[];
+      delay?: number;
+      /** Frames after delay for: raw moles, divide, crown. */
+      steps?: [number, number, number];
+    }
   | {type: 'errorDartboard'}
   | {type: 'calorimeter'}
   | {type: 'bondEnergy'}
