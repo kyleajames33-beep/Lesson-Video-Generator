@@ -1,6 +1,6 @@
 // EnergyLadderDiagram — energy-level dioramas for thermochemistry (Chem Y11 M4).
 //
-// Each panel has an energy axis and grassy "ledges" standing at their enthalpy
+// Each panel has an energy axis and stone "ledges" standing at their enthalpy
 // levels, with the species' molecules (glossy CPK balls) standing on them.
 // Vertical arrows draw themselves between levels (ΔH, bonds broken/formed,
 // lattice/hydration…), and wavy heat arrows flow out to (exothermic) or in from
@@ -15,7 +15,7 @@
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
-import {DioramaDefs, ELEMENT_COLORS, Molecule, idleBob, idlePulse} from '../../diorama';
+import {DioramaDefs, ELEMENT_COLORS, Molecule, STONE, idleBob, idlePulse} from '../../diorama';
 import {Ball, ExtraAtomDefs, clamp, ramp} from './shared';
 
 type Tone = 'ink' | 'accent' | 'amber' | 'hot' | 'cold';
@@ -85,6 +85,18 @@ export const EnergyLadderDiagram = ({delay = 90, header, headerAt = 0, panels, s
 		<svg viewBox={`0 0 ${W} 530`} role="img" aria-label={header ?? panels.map((p) => p.title).join(' / ')} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={ID} elements={cpk} />
 			<ExtraAtomDefs id={ID} elements={extra} />
+			<defs>
+				<radialGradient id={`${ID}-ledge-top`} cx="38%" cy="30%" r="80%">
+					<stop offset="0%" stopColor={STONE.topLight} />
+					<stop offset="70%" stopColor={STONE.top} />
+					<stop offset="100%" stopColor={STONE.topEdge} />
+				</radialGradient>
+				<linearGradient id={`${ID}-ledge-side`} x1="0" x2="1" y1="0" y2="0">
+					<stop offset="0%" stopColor={STONE.sideLight} />
+					<stop offset="40%" stopColor={STONE.side} />
+					<stop offset="100%" stopColor={STONE.sideDark} />
+				</linearGradient>
+			</defs>
 
 			{hasHeader && (
 				<text x={W / 2} y={36} textAnchor="middle" fill={TOK.ink} fontSize={27} fontWeight={800} opacity={ramp(frame, headerAt)}>
@@ -137,9 +149,10 @@ export const EnergyLadderDiagram = ({delay = 90, header, headerAt = 0, panels, s
 							const gap = Math.min(52, (w - 30) / Math.max(1, sp.length));
 							return (
 								<g key={l.key} opacity={Math.min(1, s * 1.6)} transform={`translate(0 ${(1 - s) * 16})`}>
-									<ellipse cx={cx + 4} cy={y + 16} rx={w / 2} ry={8} fill="rgba(58,40,18,0.18)" />
-									<path d={`M ${cx - w / 2} ${y} L ${cx - w / 2} ${y + 9} A ${w / 2} 9 0 0 0 ${cx + w / 2} ${y + 9} L ${cx + w / 2} ${y} Z`} fill={`url(#${ID}-soil)`} />
-									<ellipse cx={cx} cy={y} rx={w / 2} ry={9} fill={`url(#${ID}-grass)`} />
+									<ellipse cx={cx + 4} cy={y + 16} rx={w / 2} ry={8} fill={STONE.shadow} />
+									<path d={`M ${cx - w / 2} ${y} L ${cx - w / 2} ${y + 9} A ${w / 2} 9 0 0 0 ${cx + w / 2} ${y + 9} L ${cx + w / 2} ${y} Z`} fill={`url(#${ID}-ledge-side)`} />
+									<ellipse cx={cx} cy={y + 1.5} rx={w / 2} ry={9} fill={STONE.topEdge} />
+									<ellipse cx={cx} cy={y} rx={w / 2} ry={9} fill={`url(#${ID}-ledge-top)`} />
 									{sp.map((m, k) => {
 										const mx = cx + (k - (sp.length - 1) / 2) * gap;
 										const my = y - 14 + idleBob(frame, k + li * 5 + pi * 17, 1.4);

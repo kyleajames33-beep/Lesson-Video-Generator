@@ -15,7 +15,7 @@
 import {interpolate, useCurrentFrame} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
-import {DIO, DioramaDefs, idlePulse} from '../../diorama';
+import {DioramaDefs, STONE, idlePulse} from '../../diorama';
 import {Ball, ExtraAtomDefs, clamp, ramp} from './shared';
 
 export type CatalystPathProps = {
@@ -115,16 +115,16 @@ export const CatalystPathDiagram = ({delay = 60, beats = [310, 450, 960, 1170]}:
 			<ExtraAtomDefs id={ID} elements={['A']} />
 			<defs>
 				<linearGradient id={`${ID}-hill`} x1="0" x2="0" y1="0" y2="1">
-					<stop offset="0%" stopColor={DIO.grassLight} />
-					<stop offset="55%" stopColor={DIO.grass} />
-					<stop offset="100%" stopColor={DIO.grassDark} />
+					<stop offset="0%" stopColor={STONE.topLight} />
+					<stop offset="55%" stopColor={STONE.top} />
+					<stop offset="100%" stopColor={STONE.side} />
 				</linearGradient>
 				<clipPath id={`${ID}-hillclip`}>
 					<path d={`${pathFor(PEAK)} L ${GX1} 462 L ${GX0} 462 Z`} />
 				</clipPath>
 				<linearGradient id={`${ID}-rock`} x1="0" x2="0" y1="0" y2="1">
-					<stop offset="0%" stopColor={DIO.soilLight} />
-					<stop offset="100%" stopColor={DIO.soilDark} />
+					<stop offset="0%" stopColor={STONE.side} />
+					<stop offset="100%" stopColor={STONE.sideDark} />
 				</linearGradient>
 			</defs>
 
@@ -136,27 +136,27 @@ export const CatalystPathDiagram = ({delay = 60, beats = [310, 450, 960, 1170]}:
 				<text x={(GX0 + GX1) / 2} y={496} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>reaction progress →</text>
 			</g>
 
-			{/* the hill (uncatalysed profile) standing on a soil base */}
+			{/* the hill (uncatalysed profile) standing on a stone base */}
 			<g opacity={ramp(frame, 2)}>
 				<path d={`${pathFor(PEAK)} L ${GX1} 462 L ${GX0} 462 Z`} fill={`url(#${ID}-hill)`} />
 				<rect x={GX0} y={440} width={GX1 - GX0} height={22} fill={`url(#${ID}-rock)`} />
-				<path d={pathFor(PEAK)} fill="none" stroke={DIO.grassDark} strokeWidth={4} strokeDasharray={tunnel > 0 ? '9 7' : undefined} />
+				<path d={pathFor(PEAK)} fill="none" stroke={STONE.sideDark} strokeWidth={4} strokeDasharray={tunnel > 0 ? '9 7' : undefined} />
 			</g>
 
 			{/* the tunnel: the catalysed path through the hill */}
 			<g opacity={tunnel} clipPath={`url(#${ID}-hillclip)`}>
-				<path d={pathFor(PEAK_CAT, 0.2, 0.8)} fill="none" stroke="#3b2a1a" strokeWidth={44} transform="translate(0 -18)" opacity={0.9} />
-				<path d={pathFor(PEAK_CAT, 0.2, 0.8)} fill="none" stroke="#5a4028" strokeWidth={34} transform="translate(0 -18)" />
+				<path d={pathFor(PEAK_CAT, 0.2, 0.8)} fill="none" stroke="#4a4640" strokeWidth={44} transform="translate(0 -18)" opacity={0.9} />
+				<path d={pathFor(PEAK_CAT, 0.2, 0.8)} fill="none" stroke="#6d6860" strokeWidth={34} transform="translate(0 -18)" />
 			</g>
 			<g opacity={tunnel}>
 				<path d={pathFor(PEAK_CAT)} fill="none" stroke={theme.accent2} strokeWidth={5} />
-				<text x={peakX} y={PEAK_CAT + 120} textAnchor="middle" fill="#ffffff" fontSize={19} fontWeight={800}>catalysed path</text>
+				<text x={peakX} y={PEAK_CAT + 120} textAnchor="middle" fill={theme.accent} fontSize={19} fontWeight={800}>catalysed path</text>
 			</g>
 
 			{/* level labels */}
 			<g opacity={ramp(frame, 8)}>
-				<text x={xAt(0.08)} y={YR + 44} textAnchor="middle" fill="#ffffff" fontSize={18} fontWeight={800}>reactants</text>
-				<text x={xAt(0.9)} y={YP + 38} textAnchor="middle" fill="#ffffff" fontSize={18} fontWeight={800}>products</text>
+				<text x={xAt(0.08)} y={YR + 44} textAnchor="middle" fill={TOK.ink} fontSize={18} fontWeight={800}>reactants</text>
+				<text x={xAt(0.9)} y={YP + 38} textAnchor="middle" fill={TOK.ink} fontSize={18} fontWeight={800}>products</text>
 			</g>
 
 			{/* molecules trying to get over */}
