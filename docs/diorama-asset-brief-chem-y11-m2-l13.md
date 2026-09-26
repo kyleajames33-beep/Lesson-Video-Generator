@@ -2,7 +2,7 @@
 
 Pilot for the **painted diorama** look: the same style as the student-dashboard
 garden/tree tiles (Teaching-APP `lane/student-dashboard`). Each prop is a glossy,
-softly lit painted object sitting on a **round soil-and-grass plinth**, 3/4 top-down
+softly lit painted object sitting on a **round stone display plinth** (grass was dropped on review as cartoony), 3/4 top-down
 view, transparent background.
 
 This is a **hybrid** system: the painted props carry the look, and the **coded SVG
@@ -15,7 +15,7 @@ never contain text.
 |---|---|
 | Format | PNG with alpha (transparent background), sRGB |
 | Canvas | 1024 × 1024, object centred, plinth bottom edge ~8% above canvas bottom |
-| Plinth | Same round soil/grass disc as the garden tiles, same camera angle and light (key light top-left) |
+| Plinth | Round neutral stone display plinth matching `DioramaPlinth`; same camera angle and light (key light top-left) |
 | Text | **None.** No labels, letters, numbers, formulas or logos anywhere in the image |
 | Palette | Warm natural tones; lesson accent is chemistry teal `#0d6b52`, highlight amber `#f0a830` |
 | Location | `public/assets/diorama/<file-name>.png` |
