@@ -242,7 +242,7 @@ export const DissolveEnergyDiagram = ({
 				<text x={592} y={40} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800} letterSpacing="0.05em">ENERGY LEDGER</text>
 				<line x1={488} y1={ZY} x2={698} y2={ZY} stroke={TOK.inkMute} strokeWidth={2} />
 				<text x={488} y={ZY - 150} fill={TOK.inkDim} fontSize={16} fontWeight={800}>in (+)</text>
-				<text x={488} y={ZY + 172} fill={TOK.inkDim} fontSize={16} fontWeight={800}>out (−)</text>
+				<text x={488} y={ZY + 150} fill={TOK.inkDim} fontSize={16} fontWeight={800}>out (−)</text>
 				{bar(BX[0], latH, 'rgba(224,86,58,0.22)', HEAT)}
 				<text x={BX[0]} y={ZY - latH - 10} textAnchor="middle" fill={HEAT} fontSize={16} fontWeight={800}>lattice</text>
 			</g>

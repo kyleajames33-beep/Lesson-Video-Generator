@@ -178,34 +178,20 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L5/concept-temperature.e939afda0e01.mp3"
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Forward ΔH",
-          "Increase T",
-          "Effect on Keq"
-        ],
-        "rows": [
-          [
-            "Exothermic (ΔH < 0)",
-            "Shift left",
-            "Keq decreases"
-          ],
-          [
-            "Exothermic (ΔH < 0)",
-            "Decrease T → right",
-            "Keq increases"
-          ],
-          [
-            "Endothermic (ΔH > 0)",
-            "Shift right",
-            "Keq increases"
-          ],
-          [
-            "Endothermic (ΔH > 0)",
-            "Decrease T → left",
-            "Keq decreases"
-          ]
-        ]
+        "type": "diorama",
+        "kind": "chem12m5HeatShift",
+        "props": {
+          "beats": {
+            "exoIn": 142,
+            "exoHeat": 263,
+            "exoKeq": 399,
+            "endoIn": 436,
+            "endoHeat": 500,
+            "endoKeq": 557,
+            "rule": 648,
+            "onlyT": 799
+          }
+        }
       }
     },
     {
