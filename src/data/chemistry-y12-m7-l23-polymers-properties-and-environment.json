@@ -55,7 +55,6 @@
       "type": "concept",
       "heading": "Three structural dials",
       "body": "Three features of the chains control a polymer's bulk properties: chain length, branching, and cross-linking.",
-      "image": "m7l23ChainArchitectures",
       "bullets": [
         {
           "text": "Longer chains entangle more, raising melting point and strength.",
@@ -80,6 +79,84 @@
       "caption": "Chain length, branching, and cross-linking control polymer properties.",
       "voiceover": {
         "text": "Let's start with the controls. A polymer's structure at the molecular scale is the blueprint for everything you can measure at the macroscale, and there are three main dials. First, chain length. Longer chains entangle more with each other, so the material melts higher and is stronger, which is exactly how ultra-long polyethylene chains make bulletproof panels. Second, branching. Branches stop chains from packing closely together, which lowers the density and makes the material more flexible. Third, cross-linking, where covalent bonds tie neighbouring chains together into one giant network, making the material rigid and unable to melt. There's a bonus factor too. Polar side groups, like the chlorine in PVC, add dipole-dipole forces between chains and raise the melting point further. Length, branching, cross-linking, and side groups. Turn those dials and you tune the material."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1PolymerChains",
+        "props": {
+          "panels": [
+            {
+              "title": "1. Chain length",
+              "chip": "Longer → ↑ MP & strength",
+              "at": 286,
+              "chipAt": 470,
+              "forcesAt": 380,
+              "halves": [
+                {
+                  "kind": "short",
+                  "label": "short",
+                  "at": 286
+                },
+                {
+                  "kind": "long",
+                  "label": "long",
+                  "at": 311
+                }
+              ]
+            },
+            {
+              "title": "2. Branching",
+              "chip": "Branched → less dense, flexible",
+              "at": 622,
+              "chipAt": 740,
+              "halves": [
+                {
+                  "kind": "linear",
+                  "label": "linear",
+                  "at": 622
+                },
+                {
+                  "kind": "branched",
+                  "label": "branched",
+                  "at": 642
+                }
+              ]
+            },
+            {
+              "title": "3. Cross-linking",
+              "chip": "Rigid network: can’t melt",
+              "at": 850,
+              "chipAt": 1066,
+              "forcesAt": 870,
+              "halves": [
+                {
+                  "kind": "crosslinked",
+                  "label": "covalent cross-links",
+                  "at": 850
+                }
+              ]
+            },
+            {
+              "title": "4. Polar side groups",
+              "chip": "C–Cl dipoles → higher MP",
+              "at": 1162,
+              "chipAt": 1300,
+              "forcesAt": 1250,
+              "halves": [
+                {
+                  "kind": "pvc",
+                  "label": "PVC",
+                  "at": 1170
+                },
+                {
+                  "kind": "pe",
+                  "label": "polyethylene",
+                  "at": 1200
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     {
@@ -169,6 +246,24 @@
       "caption": "Inert C-C backbones persist and fragment into microplastics; ester/amide bonds hydrolyse.",
       "voiceover": {
         "text": "Now the environmental story, which is genuine band-six material. Most synthetic polymers are non-biodegradable, and the reason is chemical. The carbon-carbon backbone of an addition polymer is non-polar and inert, and microorganisms simply don't have the enzymes to cleave it. So instead of rotting away, the plastic just fragments under ultraviolet light and physical abrasion into smaller and smaller pieces, eventually microplastics, which have now been found in deep ocean sediment, Arctic ice, and even human blood. Condensation polymers fare a bit better, because their backbones contain ester or amide linkages that can be hydrolysed by acid, base, or enzymes, so they break down more readily, especially natural polyamides like proteins. And on recycling, the structure decides again. Thermoplastics can be melted and reformed, but cross-linked thermosets can't be recycled at all. The backbone you build in is the fate you get."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7PolymerFate",
+        "props": {
+          "mode": "environment",
+          "beats": {
+            "addition": 94,
+            "enzyme": 334,
+            "uv": 514,
+            "micro": 670,
+            "condensation": 862,
+            "water": 1000,
+            "thermoplastic": 1354,
+            "thermoset": 1450,
+            "verdict": 1522
+          }
+        }
       }
     },
     {

@@ -54,7 +54,6 @@
       "type": "concept",
       "heading": "The pi bond opens",
       "body": "In addition polymerisation, the C=C double bond of each monomer opens, and the freed electrons form new single bonds linking the monomers into a chain.",
-      "image": "m7l21AdditionMechanism",
       "bullets": [
         {
           "text": "Each monomer must contain a C=C double bond.",
@@ -79,6 +78,23 @@
       "caption": "Addition polymerisation: the C=C opens to single bonds, with no by-product.",
       "voiceover": {
         "text": "Let's get the mechanism clear, because it's the heart of the lesson. Addition polymerisation needs monomers that contain a carbon-carbon double bond, like ethene. That double bond is made of two parts, a strong sigma bond and a weaker pi bond. In the reaction, the pi bond of each monomer opens up, and the electrons that were in it form new single bonds to the neighbouring monomers. Link enough of them and you have a long chain. The crucial feature is that no atoms are added and none are removed. Every atom of every monomer ends up in the polymer, so there is no by-product at all. And notice what's left. In the polymer chain, the double bonds are gone. The repeat unit has only single bonds. So if you ever draw a repeat unit with a double bond still in it, you've made a mistake, because that pi bond was consumed to build the chain."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1PolymerJoin",
+        "props": {
+          "mode": "addition",
+          "title": "The π bond opens, the chain grows",
+          "monomers": 4,
+          "beats": {
+            "doubleBond": 202,
+            "open": 478,
+            "join": 598,
+            "count": 922,
+            "rGroup": 99999
+          },
+          "rGroups": []
+        }
       }
     },
     {
@@ -138,6 +154,20 @@
       "caption": "Linear HDPE packs closely and is rigid; branched LDPE packs loosely and bends.",
       "voiceover": {
         "text": "Now properties, and here's the elegant part. Polyethylene comes in two very different forms, even though both are made from the exact same monomer, ethene. The difference is chain branching. High-density polyethylene, HDPE, has linear, unbranched chains that pack closely together. Close packing means more contact area, so stronger dispersion forces, which makes HDPE rigid, denser, and higher melting, good for milk crates and pipes. Low-density polyethylene, LDPE, has branched chains that can't pack closely, so the dispersion forces are weaker and the material is flexible and less dense, perfect for cling film and bags. Side groups change things too. In PVC, the polar carbon-chlorine bonds add dipole forces and raise the melting point. And in PTFE, the very strong carbon-fluorine bonds make it chemically inert and non-stick. Structure sets the properties, every time."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7PolymerProps",
+        "props": {
+          "beats": {
+            "hdpe": 298,
+            "hdpeChip": 460,
+            "ldpe": 718,
+            "ldpeChip": 900,
+            "pvc": 1150,
+            "ptfe": 1330
+          }
+        }
       }
     },
     {
@@ -168,6 +198,24 @@
       "caption": "Addition polymers are recyclable thermoplastics but non-biodegradable.",
       "voiceover": {
         "text": "Two more ideas that round out the topic, one practical, one environmental. Most addition polymers are thermoplastics, which means they soften and can be remoulded when heated, then harden again on cooling. That's because the chains are held together only by intermolecular forces, which loosen with heat and reform on cooling. The upshot is that thermoplastics can be melted down and recycled. But the same carbon backbone that makes them so useful is also why they're an environmental problem. The carbon-carbon backbone is non-polar and chemically inert, so microorganisms simply don't have the enzymes to break it down. Instead of biodegrading, the plastic slowly fragments under ultraviolet light and physical abrasion into ever smaller pieces, the microplastics now found everywhere from deep ocean sediment to human blood. Recyclable, yes. Biodegradable, no."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7PolymerFate",
+        "props": {
+          "mode": "thermo",
+          "beats": {
+            "chains": 40,
+            "imf": 130,
+            "heat": 250,
+            "cool": 520,
+            "recycle": 634,
+            "enzyme": 1018,
+            "uv": 1186,
+            "micro": 1330,
+            "verdict": 1462
+          }
+        }
       }
     },
     {

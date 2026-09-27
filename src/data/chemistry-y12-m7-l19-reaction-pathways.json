@@ -55,7 +55,6 @@
       "type": "concept",
       "heading": "The reaction map",
       "body": "Every Module 7 reaction connects two functional groups. Lay them out as a map and a synthesis becomes a route between two points.",
-      "image": "m7l19ReactionMap",
       "bullets": [
         {
           "text": "Alcohol is the hub: most routes pass through it.",
@@ -79,6 +78,120 @@
       "caption": "The functional-group map: each arrow is one reaction with its own conditions.",
       "voiceover": {
         "text": "Here's the central idea. Every reaction you've met in this module connects one functional group to another. Lay them all out as a map, with functional groups as the points and reactions as the arrows between them, and suddenly a synthesis problem becomes a navigation problem. You just find a route from your starting point to your target. Look at the layout. The alcohol sits at the centre as a hub, because most routes pass through it. You can reach an alcohol from an alkene by hydration, adding water, or from a haloalkane by warming with aqueous sodium hydroxide. From the alcohol, you can oxidise up to an aldehyde and then to a carboxylic acid. And a carboxylic acid plus an alcohol gives an ester. Each arrow is exactly one step, and crucially, each arrow carries its own set of conditions. Learn the map, and you can plan any pathway."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7ReactionMap",
+        "props": {
+          "title": "The reaction map",
+          "nodes": [
+            {
+              "id": "alkene",
+              "label": "alkene",
+              "sub": "C=C",
+              "x": 110,
+              "y": 150,
+              "at": 238
+            },
+            {
+              "id": "halo",
+              "label": "haloalkane",
+              "sub": "C–X",
+              "x": 262,
+              "y": 300,
+              "at": 250
+            },
+            {
+              "id": "alcohol",
+              "label": "alcohol",
+              "sub": "–OH",
+              "x": 440,
+              "y": 300,
+              "at": 262,
+              "key": true
+            },
+            {
+              "id": "aldehyde",
+              "label": "aldehyde",
+              "sub": "–CHO",
+              "x": 575,
+              "y": 160,
+              "at": 274
+            },
+            {
+              "id": "acid",
+              "label": "carboxylic acid",
+              "sub": "–COOH",
+              "x": 668,
+              "y": 300,
+              "at": 286
+            },
+            {
+              "id": "ester",
+              "label": "ester",
+              "sub": "–COO–",
+              "x": 575,
+              "y": 440,
+              "at": 298
+            }
+          ],
+          "edges": [
+            {
+              "from": "alkene",
+              "to": "alcohol",
+              "label": "hydration",
+              "at": 922
+            },
+            {
+              "from": "halo",
+              "to": "alcohol",
+              "label": "NaOH(aq)",
+              "at": 1018
+            },
+            {
+              "from": "alcohol",
+              "to": "aldehyde",
+              "label": "[O]",
+              "at": 1186,
+              "labelDx": -18
+            },
+            {
+              "from": "aldehyde",
+              "to": "acid",
+              "label": "[O]",
+              "at": 1258,
+              "labelDx": 18
+            },
+            {
+              "from": "acid",
+              "to": "ester",
+              "label": "+ alcohol",
+              "at": 1402,
+              "labelDx": 48,
+              "labelDy": 22
+            },
+            {
+              "from": "alcohol",
+              "to": "ester",
+              "at": 1402,
+              "dashed": true
+            }
+          ],
+          "route": {
+            "path": [
+              "alkene",
+              "alcohol",
+              "aldehyde",
+              "acid"
+            ],
+            "at": 1470,
+            "framesPerStep": 50
+          },
+          "footer": {
+            "text": "A synthesis is the shortest valid route",
+            "at": 1630
+          }
+        }
       }
     },
     {
@@ -109,6 +222,107 @@
       "caption": "Conditions decide the product: distillation gives aldehyde, reflux gives acid.",
       "voiceover": {
         "text": "Now the part that actually earns or loses the marks, the conditions. In a pathway answer, naming the reagent isn't enough. You need the full conditions, because the same starting material can give different products depending on how you run it. A few key ones. Alkene to alcohol needs steam with a phosphoric acid catalyst at high pressure. Haloalkane to alcohol needs aqueous sodium hydroxide under reflux. And here's the famous one, the oxidation of a primary alcohol. If you use acidified dichromate and set up for distillation, you collect the aldehyde and stop there, because distillation removes the aldehyde as it forms before it can be oxidised further. But if you use excess dichromate and reflux instead, the aldehyde stays in the flask and gets oxidised all the way to the carboxylic acid. Same reagent, opposite product, decided purely by distillation versus reflux."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7ReactionRows",
+        "props": {
+          "title": "The conditions that earn the marks",
+          "rows": [
+            {
+              "stages": [
+                {
+                  "mol": "ethene",
+                  "name": "ethene",
+                  "at": 470
+                },
+                {
+                  "mol": "ethanol",
+                  "name": "ethanol",
+                  "at": 520
+                }
+              ],
+              "links": [
+                {
+                  "at": 490,
+                  "label": "steam, H₃PO₄ catalyst",
+                  "sub": "high pressure"
+                }
+              ]
+            },
+            {
+              "stages": [
+                {
+                  "mol": "chloroethane",
+                  "name": "chloroethane",
+                  "at": 626
+                },
+                {
+                  "mol": "ethanol",
+                  "name": "ethanol",
+                  "at": 676
+                }
+              ],
+              "links": [
+                {
+                  "at": 646,
+                  "label": "NaOH(aq)",
+                  "sub": "reflux"
+                }
+              ]
+            },
+            {
+              "stages": [
+                {
+                  "mol": "ethanol",
+                  "name": "ethanol (1°)",
+                  "at": 900
+                },
+                {
+                  "mol": "ethanal",
+                  "name": "ethanal",
+                  "at": 986,
+                  "key": true
+                }
+              ],
+              "links": [
+                {
+                  "at": 946,
+                  "label": "Cr₂O₇²⁻ / H⁺",
+                  "sub": "distillation",
+                  "key": true
+                }
+              ]
+            },
+            {
+              "stages": [
+                {
+                  "mol": "ethanol",
+                  "name": "ethanol (1°)",
+                  "at": 1300
+                },
+                {
+                  "mol": "ethanoicAcid",
+                  "name": "ethanoic acid",
+                  "at": 1370,
+                  "key": true
+                }
+              ],
+              "links": [
+                {
+                  "at": 1330,
+                  "label": "excess Cr₂O₇²⁻ / H⁺",
+                  "sub": "reflux",
+                  "key": true
+                }
+              ]
+            }
+          ],
+          "footer": {
+            "text": "Same reagent, opposite product: distil vs reflux",
+            "at": 1546
+          }
+        }
       }
     },
     {
@@ -168,6 +382,129 @@
       "caption": "Plan pathways: identify, trace the route, check, then write each step fully.",
       "voiceover": {
         "text": "So let's turn this into a repeatable method, because a pathway question is solved by algorithm, not by inspiration. Step one, identify the functional group you're starting with and the one you're aiming for. Just name them. Step two, trace the shortest valid route between those two points on the map, counting the arrows. Each arrow is one reaction step. Step three, check each step. Is there a dead end in the way? Does the oxidation need distillation or reflux? Is there a reversible arrow needed? Step four, write it out in full. For each step, give a balanced equation, the complete conditions, and the name of the intermediate you've just made. That last detail matters. The marker wants to see you know what's produced at each stage, not just at the end. Identify, route, check, write. The same four moves every time."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7ReactionMap",
+        "props": {
+          "title": "Identify, route, check, write",
+          "nodes": [
+            {
+              "id": "alkene",
+              "label": "alkene",
+              "sub": "C=C",
+              "x": 110,
+              "y": 140,
+              "at": 10
+            },
+            {
+              "id": "halo",
+              "label": "haloalkane",
+              "sub": "C–X",
+              "x": 262,
+              "y": 280,
+              "at": 16
+            },
+            {
+              "id": "alcohol",
+              "label": "alcohol",
+              "sub": "–OH",
+              "x": 440,
+              "y": 280,
+              "at": 22
+            },
+            {
+              "id": "aldehyde",
+              "label": "aldehyde",
+              "sub": "–CHO",
+              "x": 575,
+              "y": 140,
+              "at": 28
+            },
+            {
+              "id": "acid",
+              "label": "carboxylic acid",
+              "sub": "–COOH",
+              "x": 668,
+              "y": 280,
+              "at": 34
+            }
+          ],
+          "edges": [
+            {
+              "from": "alkene",
+              "to": "alcohol",
+              "label": "hydration",
+              "at": 40
+            },
+            {
+              "from": "halo",
+              "to": "alcohol",
+              "label": "NaOH(aq)",
+              "at": 46
+            },
+            {
+              "from": "alcohol",
+              "to": "aldehyde",
+              "label": "[O]",
+              "at": 52,
+              "labelDx": -18
+            },
+            {
+              "from": "aldehyde",
+              "to": "acid",
+              "label": "[O]",
+              "at": 58,
+              "labelDx": 18
+            }
+          ],
+          "rings": [
+            {
+              "node": "halo",
+              "text": "start",
+              "at": 190
+            },
+            {
+              "node": "acid",
+              "text": "target",
+              "at": 230
+            },
+            {
+              "node": "aldehyde",
+              "text": "check: reflux, don’t stop here",
+              "at": 862,
+              "textAbove": true
+            }
+          ],
+          "route": {
+            "path": [
+              "halo",
+              "alcohol",
+              "aldehyde",
+              "acid"
+            ],
+            "at": 550,
+            "framesPerStep": 60
+          },
+          "steps": [
+            {
+              "text": "identify",
+              "at": 166
+            },
+            {
+              "text": "route",
+              "at": 382
+            },
+            {
+              "text": "check",
+              "at": 658
+            },
+            {
+              "text": "write",
+              "at": 970
+            }
+          ]
+        }
       }
     },
     {

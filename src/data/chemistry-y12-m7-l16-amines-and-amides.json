@@ -55,7 +55,6 @@
       "type": "concept",
       "heading": "Count the groups on nitrogen",
       "body": "An amine is ammonia with one or more hydrogens replaced by carbon groups. You classify it by counting the carbon groups on the nitrogen itself.",
-      "image": "m7l16AmineVsAmide",
       "bullets": [
         {
           "text": "Primary amine: one carbon group on N, like ethylamine.",
@@ -80,6 +79,91 @@
       "caption": "Amine class = number of carbon groups on the nitrogen atom.",
       "voiceover": {
         "text": "Let's start with structure. An amine is just ammonia with one or more of its hydrogens swapped for carbon groups, and you classify it by counting how many carbon groups are attached to the nitrogen. One group makes it a primary amine, like ethylamine. Two groups, secondary. Three groups, tertiary. Now here's a critical point that trips students up. For amines, you count the groups on the nitrogen itself, which is different from alcohols, where you count carbons around the carbon that bears the hydroxyl. So propan-2-amine has its nitrogen group on a middle carbon, but the nitrogen still only carries one carbon group, so it's a primary amine. Locate the nitrogen first, count its groups, done. And whatever the class, the nitrogen keeps one lone pair of electrons, and that lone pair is the source of everything amines do."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7MolCompare",
+        "props": {
+          "items": [
+            {
+              "mol": "ethylamine",
+              "name": "ethylamine",
+              "sub": "primary (1°)",
+              "at": 358,
+              "highlight": [
+                2
+              ],
+              "highlightAt": 380,
+              "tag": {
+                "text": "1 carbon group on N",
+                "at": 380
+              },
+              "lonePair": {
+                "atom": 2,
+                "angle": -90,
+                "at": 1438
+              }
+            },
+            {
+              "mol": "dimethylamine",
+              "name": "N-methylmethanamine",
+              "sub": "secondary (2°)",
+              "at": 466,
+              "highlight": [
+                1
+              ],
+              "highlightAt": 480,
+              "tag": {
+                "text": "2 carbon groups on N",
+                "at": 480
+              },
+              "lonePair": {
+                "atom": 1,
+                "angle": -90,
+                "at": 1438
+              }
+            },
+            {
+              "mol": "trimethylamine",
+              "name": "N,N-dimethylmethanamine",
+              "sub": "tertiary (3°)",
+              "at": 502,
+              "highlight": [
+                1
+              ],
+              "highlightAt": 516,
+              "tag": {
+                "text": "3 carbon groups on N",
+                "at": 516
+              },
+              "lonePair": {
+                "atom": 1,
+                "angle": -90,
+                "at": 1438
+              }
+            },
+            {
+              "mol": "propan2amine",
+              "name": "propan-2-amine",
+              "sub": "still primary (1°)",
+              "at": 970,
+              "highlight": [
+                0
+              ],
+              "highlightAt": 990,
+              "tag": {
+                "text": "N on C2, but 1 group on N",
+                "at": 990,
+                "amber": true
+              },
+              "lonePair": {
+                "atom": 0,
+                "angle": -90,
+                "at": 1438
+              }
+            }
+          ]
+        }
       }
     },
     {
@@ -110,6 +194,43 @@
       "caption": "Amines hydrogen bond, but weaker than alcohols; tertiary amines cannot donate.",
       "voiceover": {
         "text": "Now boiling points, which the exam tests through comparisons. Primary and secondary amines have nitrogen-hydrogen bonds, so they can hydrogen bond to each other. But those hydrogen bonds are weaker than the ones alcohols form, and there's a precise reason. Nitrogen has an electronegativity around three, while oxygen is around three point five. The less electronegative nitrogen makes the N-H bond less polar, so its hydrogen is less positive and forms a weaker hydrogen bond. The consequence is that an amine boils below an alcohol of the same size. And tertiary amines are different again. They have no nitrogen-hydrogen bond at all, so they can't donate a hydrogen bond between their own molecules, which drops their boiling point below the primary amines. For a band-six answer, quote the electronegativity values and link them to H-bond strength."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7BpLadder",
+        "props": {
+          "title": "N–H bonds, but weaker than O–H",
+          "subtitle": "same-sized molecules, boiling point order",
+          "rungs": [
+            {
+              "name": "tertiary amine",
+              "mol": "trimethylamine",
+              "force": "no N–H: no H-bond donor",
+              "at": 1018
+            },
+            {
+              "name": "primary amine",
+              "mol": "propan1amine",
+              "force": "N–H H-bonds (N ≈ 3.0)",
+              "at": 106,
+              "key": true,
+              "note": {
+                "text": "weaker than O–H",
+                "at": 286
+              }
+            },
+            {
+              "name": "alcohol",
+              "mol": "propan1ol",
+              "force": "O–H H-bonds (O ≈ 3.5)",
+              "at": 286
+            }
+          ],
+          "footer": {
+            "text": "Less electronegative N → weaker H-bonds → lower boiling point",
+            "at": 910
+          }
+        }
       }
     },
     {
@@ -169,6 +290,21 @@
       "caption": "In an amide the N lone pair delocalises into the C=O, so it is not basic.",
       "voiceover": {
         "text": "Now the twist that defines the lesson. Put a carbonyl group directly next to the nitrogen and you get an amide, with the group carbon double-bond oxygen, then nitrogen. The nitrogen still has a lone pair, so you might expect it to be a base like an amine. But it isn't. The lone pair is delocalised into the carbonyl by resonance, spread into the carbon-oxygen system rather than sitting free on the nitrogen. And a lone pair that's tied up like that can't reach out to grab a proton, so amides are essentially neutral in water. That single structural change, adding the adjacent carbonyl, completely switches off the basicity. There's a bonus property too. Amides have both nitrogen-hydrogen donors and a strong carbonyl acceptor, so they form an extensive hydrogen-bond network and have the highest boiling points of all these families."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7AmideLonePair",
+        "props": {
+          "beats": {
+            "amide": 142,
+            "lonePair": 310,
+            "amine": 418,
+            "delocalise": 598,
+            "proton": 970,
+            "verdict": 1060,
+            "bonus": 1300
+          }
+        }
       }
     },
     {
