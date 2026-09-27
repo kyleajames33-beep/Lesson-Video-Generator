@@ -103,7 +103,37 @@
         "audioFile": "public/audio/Chemistry-Y11-M4-L2/concept.1bee8697091a.mp3"
       },
       "diagram": {
-        "type": "calorimeter"
+        "type": "diorama",
+        "kind": "chem11m4Calorimetry",
+        "delay": 90,
+        "props": {
+          "mode": "combustion",
+          "beats": [
+            650
+          ],
+          "note": {
+            "at": 650,
+            "text": "some heat escapes, so answers come out low"
+          },
+          "cards": [
+            {
+              "at": 20,
+              "title": "① Heat gained by the water",
+              "eq": "q = mcΔT"
+            },
+            {
+              "at": 140,
+              "title": "② Divide by moles of fuel",
+              "eq": "ΔHc = −q ÷ n"
+            },
+            {
+              "at": 1000,
+              "title": "Combustion releases heat",
+              "eq": "so ΔHc is negative",
+              "key": true
+            }
+          ]
+        }
       }
     },
     {

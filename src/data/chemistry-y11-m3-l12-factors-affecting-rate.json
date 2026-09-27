@@ -93,11 +93,9 @@
       ],
       "callout": "All four factors increase the frequency of effective collisions.",
       "diagram": {
-        "type": "boltzmannDistribution",
-        "temperatureLow": 1,
-        "temperatureHigh": 2,
-        "activationEnergy": 1.5,
-        "delay": 0
+        "type": "diorama",
+        "kind": "chem11m3RateFactors",
+        "delay": 90
       },
       "durationInFrames": 1440,
       "caption": "Higher temperature shifts the energy distribution: more molecules exceed Ea.",

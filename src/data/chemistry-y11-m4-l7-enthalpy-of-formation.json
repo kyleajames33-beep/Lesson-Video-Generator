@@ -103,10 +103,92 @@
         "audioFile": "public/audio/Chemistry-Y11-M4-L7/concept.37977f4397c9.mp3"
       },
       "diagram": {
-        "type": "energyProfile",
-        "exothermic": true,
-        "ea": 40,
-        "deltaH": -75
+        "type": "diorama",
+        "kind": "chem11m4EnergyLadder",
+        "delay": 90,
+        "props": {
+          "header": "ΔH°f: 1 mol of compound from its elements",
+          "headerAt": 50,
+          "panels": [
+            {
+              "zero": {
+                "e": 0.62,
+                "label": "0: elements in standard states",
+                "at": 366
+              },
+              "levels": [
+                {
+                  "key": "el",
+                  "label": "H₂(g) + ½O₂(g)",
+                  "sub": "elements",
+                  "e": 0.62,
+                  "x": 0.3,
+                  "w": 190,
+                  "species": [
+                    {
+                      "atoms": [
+                        "H",
+                        "H"
+                      ]
+                    },
+                    {
+                      "atoms": [
+                        "O",
+                        "O"
+                      ]
+                    }
+                  ],
+                  "at": 60
+                },
+                {
+                  "key": "c",
+                  "label": "H₂O(l)",
+                  "sub": "compound",
+                  "e": 0.2,
+                  "x": 0.7,
+                  "w": 150,
+                  "species": [
+                    {
+                      "atoms": [
+                        "O",
+                        "H",
+                        "H"
+                      ]
+                    }
+                  ],
+                  "at": 140
+                }
+              ],
+              "arrows": [
+                {
+                  "from": "el",
+                  "to": "c",
+                  "label": "ΔH°f",
+                  "sub": "25 °C, 1 atm",
+                  "at": 150,
+                  "tone": "accent",
+                  "x": 0.5,
+                  "side": "right"
+                }
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "at": 366,
+              "text": "Like sea level: a chosen reference height"
+            },
+            {
+              "at": 858,
+              "text": "O₂(g), H₂(g), C(graphite): ΔH°f = 0"
+            },
+            {
+              "at": 990,
+              "text": "Every compound is measured from this zero",
+              "key": true
+            }
+          ]
+        }
       }
     },
     {

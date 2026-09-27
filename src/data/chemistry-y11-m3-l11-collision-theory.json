@@ -96,7 +96,11 @@
         }
       ],
       "callout": "Rate depends on the frequency of effective collisions.",
-      "image": "l11ConceptBilliards",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m3CollisionBox",
+        "delay": 90
+      },
       "durationInFrames": 1440,
       "caption": "Billions of collisions occur, but only effective ones produce products.",
       "revealDelays": {
