@@ -1,6 +1,7 @@
 import React from 'react';
 import {Audio, Sequence, staticFile} from 'remotion';
 import type {SceneData} from '../lesson/types';
+import {audioDisabled} from './audioDisabled';
 
 type SceneVoiceoverProps = {
   scene: SceneData;
@@ -11,7 +12,7 @@ const toStaticFilePath = (audioFile: string) => audioFile.replace(/^public[\\/]/
 export const SceneVoiceover = ({scene}: SceneVoiceoverProps) => {
   const audioFile = scene.voiceover?.audioFile;
 
-  if (!audioFile) {
+  if (!audioFile || audioDisabled()) {
     return null;
   }
 
