@@ -191,7 +191,7 @@ const Panels = ({
 	const T_D = 2.2, T_END = 8, N = 480;
 	const specs: PanelSpec[] = [
 		{title: 'One line jumps', meaning: 'that species added or removed', events: [{t: T_D, type: 'add', dA: 0.5}]},
-		{title: 'All lines jump together', meaning: 'volume decreased (pressure up)', events: [{t: T_D, type: 'scale', factor: 1.6}]},
+		{title: 'All gas lines jump together', meaning: 'volume decreased (pressure up)', events: [{t: T_D, type: 'scale', factor: 1.6}]},
 		{title: 'Gradual drift, no jump', meaning: 'temperature changed: Keq changes', events: [{t: T_D, type: 'temp', kc: kc * 2.4, over: 2.2}], drift: true},
 		{title: 'Nothing changes', meaning: 'catalyst added at equilibrium', events: [], amber: true},
 	];

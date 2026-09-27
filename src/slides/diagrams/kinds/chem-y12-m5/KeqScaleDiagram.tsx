@@ -112,7 +112,10 @@ export const KeqScaleDiagram = ({
 				if (frame < r.at) return null;
 				const cin = ramp(frame, r.at + 8, 16);
 				const cx = cardX[i];
-				const molecules = r.mix.flatMap((m) => Array.from({length: m.n}, () => m.atoms));
+				// interleave the kinds so the mixture reads as a mixture
+				const molecules: string[][] = [];
+				const left = r.mix.map((m) => m.n);
+				while (left.some((n) => n > 0)) r.mix.forEach((m, q) => { if (left[q] > 0) { molecules.push(m.atoms); left[q]--; } });
 				const slots = plinthSlots(cx, CARD_Y + 170, 102, molecules.length);
 				const order = molecules.map((atoms, j) => ({atoms, j, s: slots[j]})).sort((a, b) => a.s.y - b.s.y);
 				const newest = reactions.filter((q) => frame >= q.at).length - 1 === i;

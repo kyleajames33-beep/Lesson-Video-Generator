@@ -110,7 +110,7 @@ export const SmallXDiagram = ({
 	const sumIn = ramp(frame, summaryAt, 14);
 
 	// Bin (the answer card drops into it)
-	const BINX = 716, BINY = 490;
+	const BINX = 722, BINY = 498;
 	const cardDrop = interpolate(frame, [binAt + 6, binAt + 34], [0, 1], clamp);
 
 	return (
