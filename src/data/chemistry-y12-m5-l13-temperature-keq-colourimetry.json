@@ -58,25 +58,22 @@
       "heading": "Heat as a reactant or product",
       "body": "Treat heat as part of the equation, then Le Chatelier tells you which way Keq moves with temperature.",
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Forward reaction",
-          "Increase T",
-          "Decrease T"
-        ],
-        "rows": [
-          [
-            "Exothermic (ΔH < 0)",
-            "Keq decreases",
-            "Keq increases"
-          ],
-          [
-            "Endothermic (ΔH > 0)",
-            "Keq increases",
-            "Keq decreases"
-          ]
-        ],
-        "delay": 20
+        "type": "diorama",
+        "kind": "chem12m5HeatShift",
+        "props": {
+          "beats": {
+            "exoIn": 104,
+            "exoHeat": 254,
+            "exoKeq": 476,
+            "endoIn": 508,
+            "endoHeat": 620,
+            "endoKeq": 667,
+            "rule": 754,
+            "onlyT": 793
+          },
+          "ruleText": "Heating → endothermic side; cooling does the opposite",
+          "onlyTText": "Temperature alone rewrites Keq"
+        }
       },
       "bullets": [
         {

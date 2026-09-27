@@ -114,7 +114,7 @@ export const QuadraticRootsDiagram = ({
 			{/* Row B: the quadratic formula */}
 			<g opacity={ramp(frame, formulaAt, 14)}>
 				<Rich x={W / 2 - 150} y={140} size={32} parts={P('x =')} anchor="end" />
-				{pm > 0 && <circle cx={W / 2 - 150 + 22 + kbW('−b ', 32) + kbW('±', 32) / 2} cy={118} r={22} fill={theme.accent} opacity={0.18 * pm} />}
+				{pm > 0 && <circle cx={W / 2 - 150 + 30 + kbW('−b ', 32) + kbW('±', 32) / 2} cy={118} r={22} fill={theme.accent} opacity={0.18 * pm} />}
 				<Frac x={W / 2 - 150 + 22 + (partsW(num, 32) + 16) / 2} y={129} size={32} num={num} den={den} />
 			</g>
 
