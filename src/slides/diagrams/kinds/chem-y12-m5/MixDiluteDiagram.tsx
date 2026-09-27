@@ -32,9 +32,9 @@ const H = 530;
 const ERR = '#c0392b';
 
 // Geometry
-const SA = {x: 104, base: 196};
-const SB = {x: 300, base: 196};
-const BIG = {x: 202, base: 468};
+const SA = {x: 126, base: 196};
+const SB = {x: 340, base: 196};
+const BIG = {x: 236, base: 468};
 const BW = 112;
 const SH = 104; // small beaker height
 const LIQ = 64; // 50 mL liquid height
@@ -95,7 +95,7 @@ export const MixDiluteDiagram = ({
 	});
 
 	// ── Card lines ──
-	const CX0 = 414;
+	const CX0 = 426;
 	const lineIn = (at: number) => ramp(frame, at, 14);
 	const sub = (t: string) => <tspan fontSize={15} dy={6}>{t}</tspan>;
 	const back = <tspan dy={-6} />;
@@ -179,20 +179,19 @@ export const MixDiluteDiagram = ({
 
 			{/* Legend */}
 			<g opacity={ramp(frame, 6)}>
-				{[a.ion, b.ion].map((ion, i) => (
-					<g key={i}>
-						<Ball id={ID} el={ion.el} x={26} y={446 + i * 30} r={R} label={ion.sign} labelSize={15} labelColor={ion.ink ?? '#ffffff'} />
-						<text x={44} y={452 + i * 30} fill={TOK.ink} fontSize={17} fontWeight={800}>{ion.label}</text>
+				{[a.ion, b.ion, a.counter, b.counter].map((ion, i) => (
+					<g key={i} opacity={i < 2 ? 1 : 0.8}>
+						<Ball id={ID} el={ion.el} x={26} y={424 + i * 28} r={i < 2 ? R : R - 2} label={ion.sign} labelSize={i < 2 ? 15 : 13} labelColor={ion.ink ?? '#ffffff'} />
+						<text x={44} y={430 + i * 28} fill={i < 2 ? TOK.ink : TOK.inkDim} fontSize={17} fontWeight={800}>{ion.label}</text>
 					</g>
 				))}
-				<text x={14} y={512} fill={TOK.inkDim} fontSize={15} fontWeight={700}>small: {a.counter.label}, {b.counter.label}</text>
 			</g>
 
 			{/* Halving note by the big beaker */}
 			<g opacity={ramp(frame, bt.halve, 16)}>
-				<text x={BIG.x + BW / 2 + 18} y={BIG.base - 118} fill={TOK.ink} fontSize={17} fontWeight={800}>same ions,</text>
-				<text x={BIG.x + BW / 2 + 18} y={BIG.base - 96} fill={TOK.ink} fontSize={17} fontWeight={800}>2 × volume:</text>
-				<text x={BIG.x + BW / 2 + 18} y={BIG.base - 66} fill={theme.accent} fontSize={17} fontWeight={800} opacity={1 - 0.4 * fiftyPulse}>c halves</text>
+				<text x={BIG.x + BW / 2 + 18} y={BIG.base - 118} fill={TOK.ink} fontSize={16} fontWeight={800}>same ions,</text>
+				<text x={BIG.x + BW / 2 + 18} y={BIG.base - 96} fill={TOK.ink} fontSize={16} fontWeight={800}>2 × volume:</text>
+				<text x={BIG.x + BW / 2 + 18} y={BIG.base - 66} fill={theme.accent} fontSize={16} fontWeight={800} opacity={1 - 0.4 * fiftyPulse}>c halves</text>
 			</g>
 
 			{/* Working card */}

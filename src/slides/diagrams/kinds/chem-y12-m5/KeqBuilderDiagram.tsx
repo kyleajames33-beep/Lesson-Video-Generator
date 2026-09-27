@@ -160,12 +160,14 @@ export const KeqBuilderDiagram = ({
 	const botVal = denFactors.reduce((a, v) => a * v, 1);
 	const answer = topVal / botVal;
 
-	const valParts = (i: number, color?: string): Part[] => {
+	// Each value run carries its species index in `c`-free form; opacity/drop are applied at render time.
+	const valParts = (i: number): (Part & {si: number})[] => {
 		const sp = species[i];
 		const c = sp.coef ?? 1;
-		return c > 1 ? [{t: `(${sp.val})`}, {t: String(c), pow: true, c: color}] : [{t: sp.val ?? ''}];
+		const col = sideCol(sp.side);
+		return c > 1 ? [{t: `(${sp.val})`, c: col, si: i}, {t: String(c), pow: true, si: i}] : [{t: sp.val ?? '', c: col, si: i}];
 	};
-	const joinX = (lists: Part[][]): Part[] => lists.flatMap((l, j) => (j === 0 ? l : [{t: ' × '}, ...l]));
+	const joinX = (lists: (Part & {si?: number})[][]): (Part & {si?: number})[] => lists.flatMap((l, j) => (j === 0 ? l : [{t: ' × ', si: l[0]?.si}, ...l]));
 
 	const SS = 30;
 	const SY = 394;
@@ -185,23 +187,6 @@ export const KeqBuilderDiagram = ({
 	const f1CX = r0 + eqW + w1 / 2;
 	const f2CX = r0 + eqW + w1 + eqW + w2 / 2;
 	const ansX = r0 + eqW * 3 + w1 + w2;
-
-	// Where each value lands inside fraction 1 (left edge of its text).
-	const valLanding = (i: number) => {
-		const inNum = numIdx.includes(i);
-		const idx = inNum ? numIdx : denIdx;
-		const parts = inNum ? f1Num : f1Den;
-		const rowW = partsW(parts, SS);
-		// find the part index where species i's value begins
-		let pi = 0;
-		for (const j of idx) {
-			if (j === i) break;
-			pi += valParts(j).length + 1;
-		}
-		const box = partBox(parts, SS, pi);
-		const x = (inNum ? f1CX : f1CX) - rowW / 2 + box.x;
-		return {x, base: inNum ? SY - SS * 0.36 : SY + SS * 1.02};
-	};
 
 	// ── Acids panel ──
 	const acidN = 6;
@@ -355,43 +340,31 @@ export const KeqBuilderDiagram = ({
 			{subst && (() => {
 				const d0 = subst.dropAt;
 				const f1In = ramp(frame, d0 - 6, 10);
-				const landed = (i: number) => ramp(frame, d0 + i * 8 + 22, 8);
 				const f2NumIn = ramp(frame, subst.squareAt, 14);
 				const f2DenAIn = ramp(frame, subst.bottomAt, 14) * (1 - ramp(frame, subst.bottomAt + 40, 12));
 				const f2DenBIn = ramp(frame, subst.bottomAt + 44, 12);
 				const ansIn = ramp(frame, subst.divideAt, 14);
-				// fraction 1 drawn statically once values land; values fly from the tags
-				const staticNum = f1Num.map((p) => ({...p, o: 1}));
 				return (
 					<g>
 						<text x={r0 + eqW / 2} y={SY + SS * 0.34} textAnchor="middle" fill={TOK.ink} fontSize={SS} fontWeight={800} opacity={f1In}>=</text>
 						<g opacity={f1In}>
 							<line x1={f1CX - w1 / 2} y1={SY} x2={f1CX + w1 / 2} y2={SY} stroke={TOK.ink} strokeWidth={2.5} strokeLinecap="round" />
 						</g>
-						{/* static fraction-1 pieces appear as each value lands (whole run once all landed) */}
+						{/* values drop into the brackets one by one, coloured like their tiles */}
 						{(() => {
-							const all = Math.min(...species.map((sp, i) => (sp.val && !excluded(sp) ? landed(i) : 1)));
+							const drop = (parts: (Part & {si?: number})[]) =>
+								parts.map((p) => {
+									if (p.si === undefined) return p;
+									const u = eramp(frame, d0 + p.si * 10, 18);
+									return {...p, o: u, dy: (1 - u) * -26};
+								});
 							return (
-								<g opacity={all}>
-									<Rich x={f1CX} y={SY - SS * 0.36} size={SS} parts={staticNum} />
-									<Rich x={f1CX} y={SY + SS * 1.02} size={SS} parts={f1Den} />
+								<g>
+									<Rich x={f1CX} y={SY - SS * 0.36} size={SS} parts={drop(f1Num)} />
+									<Rich x={f1CX} y={SY + SS * 1.02} size={SS} parts={drop(f1Den)} />
 								</g>
 							);
 						})()}
-						{species.map((sp, i) => {
-							if (!sp.val || excluded(sp)) return null;
-							const u = eramp(frame, d0 + i * 8, 24);
-							const all = Math.min(...species.map((q, j) => (q.val && !excluded(q) ? landed(j) : 1)));
-							if (u <= 0 || all >= 1) return null;
-							const dst = valLanding(i);
-							const lead = (sp.coef ?? 1) > 1 ? textW('(', SS) : 0;
-							const sx = tilePos[i].cx - textW(sp.val, 22) / 2;
-							const x = sx + (dst.x + lead - sx) * u;
-							const y = TAG_Y + (dst.base - TAG_Y) * u;
-							return (
-								<text key={`fly${i}`} x={x} y={y} fill={TOK.ink} fontSize={22 + (SS - 22) * u} fontWeight={800}>{sp.val}</text>
-							);
-						})}
 						<text x={r0 + eqW * 1.5 + w1} y={SY + SS * 0.34} textAnchor="middle" fill={TOK.ink} fontSize={SS} fontWeight={800} opacity={f2NumIn}>=</text>
 						<g>
 							<Rich x={f2CX} y={SY - SS * 0.36} size={SS} parts={f2Num} opacity={f2NumIn} />

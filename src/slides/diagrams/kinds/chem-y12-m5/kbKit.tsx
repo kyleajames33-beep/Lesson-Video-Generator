@@ -34,7 +34,7 @@ export const RED = '#d8453b';
 export const VIOLET = '#8a5cc9';
 
 /** One run of text. `sub` = subscript (e.g. "eq" in Keq), `pow` = raised power digit. */
-export type Part = {t: string; c?: string; sub?: boolean; pow?: boolean; o?: number; wt?: number};
+export type Part = {t: string; c?: string; sub?: boolean; pow?: boolean; o?: number; wt?: number; dy?: number};
 
 const SUB_K = 0.62;
 const POW_K = 0.6;
@@ -79,7 +79,7 @@ export const Rich = ({
 				const fs = p.sub ? size * SUB_K : p.pow ? size * POW_K : size;
 				const dy = p.sub ? size * 0.24 : p.pow ? -size * 0.42 : 0;
 				return (
-					<text key={i} x={px} y={y + dy} fill={p.c ?? fill} fontSize={fs} fontWeight={p.wt ?? weight} opacity={p.o ?? 1} style={{whiteSpace: 'pre'}}>
+					<text key={i} x={px} y={y + dy + (p.dy ?? 0)} fill={p.c ?? fill} fontSize={fs} fontWeight={p.wt ?? weight} opacity={p.o ?? 1} style={{whiteSpace: 'pre'}}>
 						{p.t}
 					</text>
 				);
