@@ -142,6 +142,108 @@
       "caption": "Retention time supports identity; extra peaks reveal impurities.",
       "voiceover": {
         "text": "When the HPLC run finishes, you get a chromatogram, basically a timeline of the mixture. Each peak marks a component leaving the column and hitting the detector. The retention time is how long that took, and under identical conditions, a known compound always comes off at its characteristic time. So if a peak in your unknown matches a standard's retention time, that supports its identity, strong evidence, though not absolute proof on its own. The number of peaks matters just as much. One clean major peak with nothing else suggests a pure substance. Extra peaks, even small ones, mean there's another component or an impurity, exactly like that heparin trace from the hook."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Curve",
+        "props": {
+          "xLabel": "retention time →",
+          "yLabel": "detector response",
+          "xMin": 0,
+          "xMax": 8,
+          "yMin": 0,
+          "yMax": 10.4,
+          "series": [
+            {
+              "gen": {"type": "peaks", "base": 6, "from": 0, "to": 8, "peaks": [{"t": 4.2, "h": 3.4, "w": 0.13}]},
+              "color": "mute",
+              "width": 4,
+              "beat": 30,
+              "dur": 170,
+              "label": "standard",
+              "labelAt": [0.25, 6.45]
+            },
+            {
+              "gen": {
+                "type": "peaks",
+                "base": 0.6,
+                "from": 0,
+                "to": 5.2,
+                "peaks": [{"t": 4.2, "h": 3.6, "w": 0.13}, {"t": 6.1, "h": 0.9, "w": 0.11}]
+              },
+              "color": "accent",
+              "width": 4.5,
+              "beat": 395,
+              "dur": 110,
+              "label": "your sample",
+              "labelAt": [0.25, 1.05]
+            },
+            {
+              "gen": {
+                "type": "peaks",
+                "base": 0.6,
+                "from": 5.2,
+                "to": 8,
+                "peaks": [{"t": 4.2, "h": 3.6, "w": 0.13}, {"t": 6.1, "h": 0.9, "w": 0.11}]
+              },
+              "color": "accent",
+              "width": 4.5,
+              "beat": 745,
+              "dur": 70
+            }
+          ],
+          "penSeries": 2,
+          "refs": [{"axis": "x", "value": 4.2, "label": "same retention time", "beat": 470, "labelPos": 10.1}],
+          "notes": [
+            {
+              "x": 4.45,
+              "y": 8.6,
+              "text": "a component reaches the detector",
+              "anchor": "start",
+              "beat": 90,
+              "size": 16,
+              "color": "ink"
+            },
+            {
+              "x": 2.1,
+              "y": 7.1,
+              "text": "retention time",
+              "anchor": "middle",
+              "beat": 198,
+              "size": 17,
+              "color": "accent"
+            },
+            {
+              "x": 4.75,
+              "y": 3.4,
+              "text": "supports identity",
+              "sub": "same conditions only · not proof",
+              "anchor": "start",
+              "beat": 529,
+              "size": 17,
+              "color": "ink",
+              "mark": "tick"
+            },
+            {
+              "x": 4.45,
+              "y": 7.3,
+              "text": "one clean peak: pure",
+              "anchor": "start",
+              "beat": 681,
+              "size": 16,
+              "color": "mute"
+            },
+            {
+              "x": 6.1,
+              "y": 2.2,
+              "text": "extra peak: impurity",
+              "anchor": "middle",
+              "beat": 785,
+              "size": 18,
+              "color": "amber"
+            }
+          ]
+        }
       }
     },
     {

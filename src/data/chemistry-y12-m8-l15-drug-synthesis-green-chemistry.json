@@ -61,6 +61,11 @@
       "caption": "Aspirin: salicylic acid plus acetic anhydride, acid-catalysed esterification.",
       "voiceover": {
         "text": "Let's start with the reaction you need to know, the synthesis of aspirin. Aspirin is acetylsalicylic acid, and it's made from salicylic acid and acetic anhydride. The reaction is an esterification-style acetylation, and the products are aspirin plus ethanoic acid. The conditions are an acid catalyst, often phosphoric or sulfuric acid, with gentle heating, and then the product is isolated by crystallisation and filtration. Notice this is exactly the O-H to O-C-O-C-H-three acetylation we met back in Lesson 11, but now we're running it as an actual reaction. And here's an important practical point, the synthesis is more than one equation. Product quality depends on the reaction conditions, the isolation, the crystallisation, and the drying, just as much as on the chemistry on paper."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Skeletal",
+        "props": {"mode": "reaction", "beats": [94, 132, 208, 254, 308, 346, 400, 438]}
       }
     },
     {
@@ -79,6 +84,26 @@
       "caption": "Discovery, preclinical, Phase I to III, then regulatory approval.",
       "voiceover": {
         "text": "Before the green chemistry, a quick reality check, because making a molecule is only the start of the story. A successful drug must pass a long sequence of testing and regulatory stages, in a fixed order. First discovery, identifying a promising candidate. Then preclinical testing, in the lab and in models, to check activity and safety before any human trials. Then the clinical trials, Phase one tests initial human safety, Phase two tests early efficacy in target patients, and Phase three confirms it works safely at larger scale. And finally regulatory approval, which is what actually allows the drug to be supplied. The big-picture point is that a good molecule alone is not enough. Pharmaceutical chemistry connects synthesis with safety, efficacy, and regulation, and all of those stages stand between a successful reaction and a medicine on the shelf."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Steps",
+        "props": {
+          "layout": "row",
+          "stages": [
+            {"label": "Discovery", "sub": "a candidate", "icon": "discovery", "beat": 194},
+            {"label": "Preclinical", "sub": "lab, models", "icon": "preclinical", "beat": 235},
+            {"label": "Phase I", "sub": "safety", "icon": "people", "iconCount": 2, "beat": 385},
+            {"label": "Phase II", "sub": "efficacy", "icon": "people", "iconCount": 4, "beat": 426},
+            {"label": "Phase III", "sub": "large scale", "icon": "people", "iconCount": 7, "beat": 488},
+            {"label": "Approval", "sub": "can be supplied", "icon": "approved", "beat": 556}
+          ],
+          "note": {
+            "text": "A good molecule alone is not enough",
+            "sub": "synthesis, then safety, efficacy and regulation",
+            "beat": 652
+          }
+        }
       }
     },
     {

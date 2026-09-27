@@ -49,20 +49,23 @@
       "heading": "The big idea, the analyst's way",
       "body": "Turn the target ion into a pure insoluble solid of known formula, weigh it dry, and walk the moles back.",
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {"id": "dissolve", "label": "Dissolve"},
-          {"id": "precip", "label": "Precipitate"},
-          {"id": "filter", "label": "Filter"},
-          {"id": "dry", "label": "Dry"},
-          {"id": "weigh", "label": "Weigh"}
-        ],
-        "edges": [
-          {"from": "dissolve", "to": "precip"},
-          {"from": "precip", "to": "filter"},
-          {"from": "filter", "to": "dry"},
-          {"from": "dry", "to": "weigh"}
-        ]
+        "type": "diorama",
+        "kind": "chem12m8Steps",
+        "props": {
+          "layout": "row",
+          "stages": [
+            {"label": "Dissolve", "sub": "sample fully", "icon": "dissolve", "beat": 327},
+            {"label": "Precipitate", "sub": "agent in excess", "icon": "precipitate", "beat": 365},
+            {"label": "Filter", "sub": "ashless paper", "icon": "filter", "beat": 479},
+            {"label": "Dry", "sub": "to constant mass", "icon": "dry", "beat": 574},
+            {"label": "Weigh", "sub": "the pure solid", "icon": "weigh", "beat": 726}
+          ],
+          "note": {
+            "text": "mass → moles → ratio → analyte mass → %",
+            "sub": "any incomplete step and the mass is wrong",
+            "beat": 754
+          }
+        }
       },
       "bullets": [
         {"text": "Dissolve, then add a precipitating agent in excess for complete precipitation."},
@@ -110,6 +113,24 @@
       "caption": "Mass → moles (precipitate) → mole ratio → analyte mass → percentage.",
       "voiceover": {
         "text": "Good news, no new formula. You're chaining tools you already have. Start with the mass of the dried precipitate, and convert it to moles using n equals m over capital M, where capital M is the molar mass of the precipitate. Then apply the mole ratio from the balanced equation to turn precipitate moles into analyte moles. Convert those to a mass with m equals n times M. And if the question wants it, divide by the original sample mass and times by one hundred for the percentage. One warning that costs marks every year. When you find moles of the precipitate, use the molar mass of the precipitate, not the analyte. Mixing those two up wrecks everything downstream."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Steps",
+        "props": {
+          "layout": "stairs",
+          "stages": [
+            {"label": "Mass of the dried precipitate", "formula": "m(precipitate)", "beat": 39},
+            {"label": "Moles of precipitate", "formula": "n = m ÷ M(precipitate)", "beat": 113},
+            {"label": "Mole ratio from the balanced equation", "formula": "n(analyte) = n(ppt) × ratio", "beat": 294},
+            {"label": "Mass of analyte", "formula": "m = n × M(analyte)", "beat": 417},
+            {"label": "Percentage of the sample", "formula": "% = m ÷ m(sample) × 100", "beat": 557}
+          ],
+          "highlight": 1,
+          "highlightBeat": 700,
+          "highlightTag": "not the analyte's M",
+          "note": {"text": "Right molar mass, right ratio, then percentage", "beat": 800}
+        }
       }
     },
     {

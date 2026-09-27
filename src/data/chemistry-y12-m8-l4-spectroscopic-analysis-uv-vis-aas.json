@@ -59,6 +59,11 @@
       "caption": "Beer-Lambert: A = εcl, so c = A ÷ (εl). Keep the path length.",
       "voiceover": {
         "text": "Start with UV-Vis. The instrument isolates one wavelength, sends it through your solution, and measures how much light gets absorbed. Coloured species absorb visible light selectively, and the more absorbing particles there are, the more light disappears. That relationship is the Beer-Lambert law, A equals epsilon c l. A is the absorbance, with no units. Epsilon is the molar absorptivity, a constant for that species at that wavelength. c is the concentration, and l is the path length the light travels through the sample, in centimetres. To find an unknown concentration, rearrange to c equals A over epsilon l. And the classic slip is dropping the l. The full law is A equals epsilon c l, not just epsilon c."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Spectro",
+        "props": {"mode": "uvvis", "beats": [30, 190, 305, 365, 425, 537, 580, 740, 820]}
       }
     },
     {
@@ -67,14 +72,101 @@
       "heading": "The calibration curve",
       "body": "Build a line from standards of known concentration, then read the unknown off it by interpolation.",
       "diagram": {
-        "type": "barChart",
-        "bars": [
-          {"label": "0.50", "value": 0.08},
-          {"label": "1.00", "value": 0.16},
-          {"label": "1.50", "value": 0.24},
-          {"label": "2.00", "value": 0.32}
-        ],
-        "unit": "absorbance"
+        "type": "diorama",
+        "kind": "chem12m8Curve",
+        "props": {
+          "xLabel": "concentration of standard →",
+          "yLabel": "absorbance",
+          "xMin": 0,
+          "xMax": 2.6,
+          "yMin": 0,
+          "yMax": 0.4,
+          "xTicks": [
+            {"value": 0.5, "label": "0.50"},
+            {"value": 1, "label": "1.00"},
+            {"value": 1.5, "label": "1.50"},
+            {"value": 2, "label": "2.00"}
+          ],
+          "yTicks": [
+            {"value": 0, "label": "0"},
+            {"value": 0.08, "label": "0.08"},
+            {"value": 0.16, "label": "0.16"},
+            {"value": 0.24, "label": "0.24"},
+            {"value": 0.32, "label": "0.32"}
+          ],
+          "cuvettes": {
+            "color": "#6a3fb5",
+            "title": "standards of known concentration, one wavelength",
+            "items": [
+              {"label": "0.50", "strength": 0.25, "beat": 181},
+              {"label": "1.00", "strength": 0.45, "beat": 196},
+              {"label": "1.50", "strength": 0.65, "beat": 211},
+              {"label": "2.00", "strength": 0.85, "beat": 226},
+              {"label": "unknown", "strength": 0.55, "beat": 558, "unknown": true}
+            ]
+          },
+          "points": [
+            {"x": 0.5, "y": 0.08, "beat": 250},
+            {"x": 1, "y": 0.16, "beat": 280},
+            {"x": 1.5, "y": 0.24, "beat": 310},
+            {"x": 2, "y": 0.32, "beat": 340}
+          ],
+          "series": [
+            {
+              "gen": {"type": "line", "slope": 0.16, "from": 0, "to": 2},
+              "color": "accent",
+              "beat": 495,
+              "dur": 60,
+              "label": "straight line through origin",
+              "labelAt": [0.08, 0.27],
+              "labelAnchor": "start"
+            },
+            {
+              "points": [[2, 0.32], [2.15, 0.3413], [2.3, 0.3572], [2.45, 0.3677], [2.6, 0.3728]],
+              "color": "mute",
+              "dash": "6 8",
+              "width": 3.5,
+              "beat": 952,
+              "dur": 30
+            }
+          ],
+          "bands": [
+            {
+              "axis": "x",
+              "from": 0.5,
+              "to": 2,
+              "color": "accent",
+              "label": "calibrated range",
+              "labelPos": 0.375,
+              "beat": 764,
+              "mark": "tick",
+              "markBeat": 790
+            }
+          ],
+          "readoffs": [
+            {
+              "x": 1.25,
+              "y": 0.2,
+              "beat": 585,
+              "yLabel": "unknown's absorbance",
+              "xLabel": "its concentration",
+              "color": "amber"
+            }
+          ],
+          "notes": [
+            {
+              "x": 2.1,
+              "y": 0.24,
+              "text": "never extrapolate",
+              "anchor": "start",
+              "beat": 871,
+              "size": 16,
+              "color": "ink",
+              "mark": "cross"
+            },
+            {"x": 2.3, "y": 0.395, "text": "may curve", "anchor": "middle", "beat": 960, "size": 15, "color": "mute"}
+          ]
+        }
       },
       "bullets": [
         {"text": "Measure absorbance for several standards at one wavelength."},
@@ -123,6 +215,11 @@
       "caption": "AAS atomises the sample; ground-state atoms absorb the lamp's wavelength.",
       "voiceover": {
         "text": "Now AAS, the trace-metal specialist. The clever part is that each element absorbs light at its own characteristic wavelengths, which makes the method extremely specific. Here's the sequence. The sample is fed into a flame or a graphite furnace, where it's atomised, broken down into free, ground-state atoms. Then a hollow cathode lamp, matched to your target metal, shines that element's exact wavelength through the atomised sample. If those atoms are present, they absorb some of the light, and the drop in signal tells you the concentration against calibration standards. And here is the mark students throw away. AAS does not detect ions in solution. It measures ground-state atoms, produced after atomisation. Say atoms, not ions."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Spectro",
+        "props": {"mode": "aas", "beats": [210, 300, 410, 612, 690, 830]}
       }
     },
     {
@@ -141,6 +238,51 @@
       "caption": "Coloured species → UV-Vis; trace metals → AAS, but mind matrix effects.",
       "voiceover": {
         "text": "So when do you reach for which? Match the technique to the sample. If the target is a coloured species, or a metal you can develop a colour with, UV-Vis or colourimetry is simple, fast, and cheap. If the question is how much of this particular metal, even at very low concentration, AAS wins, because it's sensitive and element-specific. But AAS isn't magic, and the exam wants you to know its limits. It usually measures one element per run, because each element needs its own lamp. It suffers matrix effects, where other substances in the sample interfere, so a high calcium and magnesium background can suppress a lead reading. And the instrument is costlier than wet chemistry. The fix for matrix effects is to matrix-match your standards to the sample. Always name a limitation when you evaluate AAS."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Cards",
+        "props": {
+          "cards": [
+            {
+              "icons": [{"name": "cuvette", "color": "#2f5fd0"}],
+              "title": "UV-Vis",
+              "lines": ["coloured species", "simple, fast, cheap"]
+            },
+            {
+              "icons": [{"name": "aasFlame", "label": "Pb"}],
+              "title": "AAS",
+              "lines": ["trace metals: Pb, Cd", "sensitive,", "element-specific"]
+            },
+            {
+              "icons": [{"name": "lamp", "label": "Pb"}, {"name": "lamp", "label": "Cd"}],
+              "title": "One per run",
+              "lines": ["each element needs", "its own lamp"]
+            },
+            {
+              "icons": [
+                {
+                  "name": "ionBeaker",
+                  "ions": [
+                    {"label": "Ca", "color": "#c9ced4", "n": 4, "ink": "#1a1a1a"},
+                    {"label": "Mg", "color": "#e3e6ea", "n": 3, "ink": "#1a1a1a"},
+                    {"label": "Pb", "color": "#56606b", "n": 1}
+                  ]
+                }
+              ],
+              "title": "Matrix effects",
+              "lines": ["high Ca, Mg can", "suppress Pb reading"],
+              "tag": "fix: matrix-match",
+              "tagAt": 855
+            }
+          ],
+          "footer": {
+            "text": "No technique is universally best: justify the choice.",
+            "sub": "AAS also costs more than wet chemistry",
+            "amber": true
+          },
+          "beats": [49, 235, 506, 615, 870]
+        }
       }
     },
     {

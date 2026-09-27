@@ -60,6 +60,35 @@
       "caption": "Physical, chemical, and biological parameters, read together.",
       "voiceover": {
         "text": "So let's define it properly, because the exam rewards the phrase. Water quality is assessed using physical, chemical, and biological parameters. The physical ones are things like temperature and turbidity, which is the cloudiness from suspended particles. The chemical ones include pH, dissolved oxygen, total dissolved solids, and conductivity. And the biological one you need is coliform bacteria, which flags faecal contamination. The crucial idea is that no single parameter gives the full answer. Water can be crystal-clear but full of dissolved ions, or sit at a perfect neutral pH while being dangerously low on oxygen. You only get a real judgement by reading the measurements together."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Cards",
+        "props": {
+          "cards": [
+            {
+              "icons": [{"name": "thermometer"}, {"name": "turbidJar"}],
+              "title": "Physical",
+              "lines": ["temperature", "turbidity (cloudiness)"]
+            },
+            {
+              "icons": [{"name": "phMeter"}, {"name": "doMeter"}],
+              "title": "Chemical",
+              "lines": ["pH, dissolved O₂", "TDS, conductivity"]
+            },
+            {
+              "icons": [{"name": "petri"}],
+              "title": "Biological",
+              "lines": ["coliform bacteria", "faecal contamination"]
+            }
+          ],
+          "footer": {
+            "text": "Read them together, never alone.",
+            "sub": "clear water can hide ions; neutral pH can still be low in oxygen",
+            "amber": true
+          },
+          "beats": [140, 287, 397, 516]
+        }
       }
     },
     {
@@ -106,6 +135,37 @@
       "caption": "Probes for fast field work; Winkler titration for DO; BOD over 5 days.",
       "voiceover": {
         "text": "A parameter is only useful if you can measure it reliably, so let's match tools to jobs. Temperature is a probe or thermometer. Turbidity uses a turbidity meter. pH is a meter or an indicator. Dissolved oxygen you can read fast with an electronic DO meter, or measure classically with a Winkler titration, which is a redox method, you fix the oxygen, release iodine, and titrate it. BOD, biological oxygen demand, is the drop in dissolved oxygen after incubating the sample for five days at twenty degrees in the dark. And conductivity and TDS use a probe. The method you choose depends on the question, field monitoring wants fast probes, while formal compliance testing may demand careful lab methods."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Cards",
+        "props": {
+          "cards": [
+            {
+              "icons": [{"name": "thermometer"}, {"name": "turbidJar"}],
+              "title": "Physical",
+              "lines": ["thermometer,", "turbidity meter"]
+            },
+            {"icons": [{"name": "phMeter"}], "title": "pH", "lines": ["meter or", "indicator"]},
+            {
+              "icons": [{"name": "doMeter"}, {"name": "burette", "color": "rgba(196,128,40,0.6)"}],
+              "title": "Dissolved O₂",
+              "lines": ["DO meter, or", "Winkler titration", "redox, via iodine"]
+            },
+            {
+              "icons": [{"name": "bodBottle"}],
+              "title": "BOD",
+              "lines": ["fall in DO", "5 days at 20 °C", "in the dark"]
+            },
+            {
+              "icons": [{"name": "condProbe", "label": "TDS"}],
+              "title": "Conductivity",
+              "lines": ["and TDS:", "a probe"]
+            }
+          ],
+          "footer": {"text": "Field: fast probes. Compliance: lab methods.", "amber": true},
+          "beats": [92, 186, 245, 517, 712, 771]
+        }
       }
     },
     {
@@ -124,7 +184,8 @@
       "caption": "The ADWG sets limits; judge measured values against the right standard.",
       "voiceover": {
         "text": "Here's the step students skip. A measurement on its own decides nothing. Water-quality data only become meaningful when you compare them against a standard, an acceptable range for the intended use. In Australia, the Australian Drinking Water Guidelines, the ADWG, set acceptable limits for chemical, physical, and microbiological parameters in drinking water. Those limits protect human health, and they also manage aesthetic things like taste, odour, and appearance. For environmental monitoring, the acceptable ranges can differ depending on the ecosystem and how the water is used. So a value that's perfectly fine in one context might be alarming in another. When a question mentions standards, don't just define them, explain that they let you decide whether a measured value is acceptable or a problem."
-      }
+      },
+      "diagram": {"type": "diorama", "kind": "chem12m8Standard", "props": {"beats": [82, 193, 296, 359, 485, 628, 738]}}
     },
     {
       "id": "worked-example",

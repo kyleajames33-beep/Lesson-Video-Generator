@@ -61,6 +61,11 @@
       "caption": "A weak acid drug sits in equilibrium: HA unionised, A minus ionised.",
       "voiceover": {
         "text": "Let's build the chemistry. Many drug molecules are not locked into a single form in the body. Instead, they sit in equilibrium between a protonated form and a deprotonated form, and the surrounding pH shifts that balance. Take a weak acid. It can exist as H-A, the neutral acid, or as A minus, its conjugate base. The equilibrium is H-A in balance with hydrogen ion plus A minus. The crucial point is that these two forms differ in charge. The unionised form, H-A, is less polar, so it crosses lipid membranes more easily. The ionised form, A minus, is more polar, so it's more soluble in water but worse at crossing membranes. So in drug chemistry, ionised versus unionised is not just a naming detail, it directly controls solubility, membrane permeability, and where the drug ends up."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Ionisation",
+        "props": {"mode": "forms", "beats": [205, 454, 496, 593, 725]}
       }
     },
     {
@@ -79,7 +84,8 @@
       "caption": "pH = pKa + log([A minus]/[HA]); pH below pKa favours unionised HA.",
       "voiceover": {
         "text": "Now the key equation, Henderson-Hasselbalch. It links the pH, the pKa, and the ratio of the two forms for a weak acid. The equation is, pH equals pKa plus the log of the ratio of A minus over H-A. You can use it as a full calculation, but there's also a fast rule that prevents most errors. If the pH is below the pKa, then H-A, the unionised acid form, is favoured. If the pH is above the pKa, then A minus, the ionised form, is favoured. And when the pH exactly equals the pKa, the ratio is one to one, equal amounts of each. Now hold onto the direction, because this is where people slip. For a weak acid, a higher pH favours losing the proton, so it favours the ionised form A minus. Higher pH does not mean more protonation. It means more deprotonation."
-      }
+      },
+      "diagram": {"type": "diorama", "kind": "chem12m8Ionisation", "props": {"mode": "hh", "beats": [331, 431, 532, 653, 727]}}
     },
     {
       "id": "concept-aspirin",
@@ -87,13 +93,17 @@
       "heading": "Aspirin in the stomach and intestine",
       "body": "Same molecule, two environments, two behaviours. Aspirin's pKa is 3.5.",
       "diagram": {
-        "type": "table",
-        "headers": ["Location", "pH", "Form favoured"],
-        "rows": [
-          ["Stomach", "1 to 2", "Mostly HA, unionised"],
-          ["Small intestine", "6 to 7", "Mostly A minus, ionised"]
-        ],
-        "delay": 18
+        "type": "diorama",
+        "kind": "chem12m8Ionisation",
+        "props": {
+          "mode": "compare",
+          "beats": [119, 304, 408, 609, 765],
+          "pKa": 3.5,
+          "stomachRange": [1, 2],
+          "intestineRange": [6, 7],
+          "stomachPH": 2,
+          "intestinePH": 6
+        }
       },
       "bullets": [
         {"text": "Stomach pH 1 to 2 is below pKa, so mostly unionised HA."},
@@ -160,6 +170,17 @@
       "caption": "Salt forms fix solubility; lower pKa and higher Ka both mean a stronger acid.",
       "voiceover": {
         "text": "Two practical ideas to finish the chemistry. First, salt forms. Aspirin's free acid dissolves at only about three grams per litre, but its sodium salt dissolves at over five hundred. That's a hundred-and-sixty-fold jump in solubility, and it lets you formulate a fast-dissolving or effervescent tablet for acute pain. Salt forms like morphine sulfate are chosen exactly for that, to boost aqueous solubility and ease formulation, not to improve membrane crossing, which still depends on the unionised form. Second, ranking acid strength. A larger Ka means a stronger acid, and a smaller pKa means a stronger acid. The two move in opposite directions, because pKa is the negative log of Ka. So if you're handed pKa values, the lowest pKa is the strongest acid, every time."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Ionisation",
+        "props": {
+          "mode": "salts",
+          "beats": [26, 111, 181, 329, 555, 586, 702, 790],
+          "acidSolubility": 3,
+          "saltSolubility": 500,
+          "foldLabel": "160-fold"
+        }
       }
     },
     {

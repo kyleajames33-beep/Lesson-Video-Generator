@@ -18,7 +18,7 @@ import {interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
 import {DioramaDefs, DioramaPlinth, idleBob, idlePulse} from '../../diorama';
-import {Mark, clamp, pop, ramp, textW} from './shared';
+import {Flask, Mark, clamp, pop, ramp, textW} from './shared';
 
 type Pt = [number, number];
 type TitrationGen = {type: 'titration'; weak?: boolean; pKa?: number; ca: number; va: number; cb: number; vmax: number};
@@ -66,6 +66,9 @@ export type CurveNote = {x: number; y: number; text: string; sub?: string; beat:
 export type CurveTick = {value: number; label: string};
 export type CurveCuvettes = {items: {label: string; strength: number; beat: number; unknown?: boolean}[]; color: string; title?: string};
 
+/** A flask on a plinth whose liquid takes an indicator band's colour at the live pH of a series' pen. */
+export type CurveFlask = {x: number; y: number; stages: {beat: number; series: number; band: number}[]; label?: string};
+
 export type CurveProps = {
 	delay?: number;
 	title?: string;
@@ -87,6 +90,7 @@ export type CurveProps = {
 	cuvettes?: CurveCuvettes;
 	/** Index into `series` whose pen keeps a gently pulsing dot at its end during the hold. */
 	penSeries?: number;
+	flask?: CurveFlask;
 };
 
 const ID = 'c12m8curve';
@@ -164,6 +168,7 @@ export const CurveDiagram = ({
 	notes = [],
 	cuvettes,
 	penSeries,
+	flask,
 }: CurveProps) => {
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
@@ -178,6 +183,32 @@ export const CurveDiagram = ({
 	const gx = (x: number) => GX0 + ((x - xMin) / (xMax - xMin)) * (GX1 - GX0);
 	const gy = (y: number) => GY1 - ((y - yMin) / (yMax - yMin)) * (GY1 - GY0);
 	const axesIn = ramp(frame, 0, 14);
+
+	const penY = (s: CurveSeries) => {
+		const pts = seriesPoints(s);
+		if (!pts.length) return undefined;
+		const p = interpolate(frame, [s.beat, s.beat + (s.dur ?? 90)], [0, 1], clamp);
+		const xPen = pts[0][0] + (pts[pts.length - 1][0] - pts[0][0]) * p;
+		let y = pts[0][1];
+		for (const q of pts) if (q[0] <= xPen) y = q[1];
+		return y;
+	};
+	const mix = (a: string, b: string, t: number) => {
+		const pa = parseInt(a.slice(1), 16), pb = parseInt(b.slice(1), 16);
+		const ch = (sh: number) => Math.round(((pa >> sh) & 255) * (1 - t) + ((pb >> sh) & 255) * t);
+		return `rgb(${ch(16)},${ch(8)},${ch(0)})`;
+	};
+	const flaskColor = (() => {
+		if (!flask) return undefined;
+		const st = [...flask.stages].reverse().find((q) => frame >= q.beat);
+		if (!st) return undefined;
+		const b = bands[st.band], sr = series[st.series];
+		if (!b?.colors || !sr) return undefined;
+		const y = penY(sr);
+		if (y === undefined) return undefined;
+		const t = Math.max(0, Math.min(1, (y - b.from) / (b.to - b.from)));
+		return mix(b.colors[0], b.colors[1], t);
+	})();
 
 	const drawSeries = (s: CurveSeries, i: number) => {
 		const pts = seriesPoints(s);
@@ -409,6 +440,22 @@ export const CurveDiagram = ({
 					</g>
 				);
 			})}
+
+			{/* Indicator flask */}
+			{flask && (
+				<g opacity={ramp(frame, flask.stages[0]?.beat ?? 0, 14)}>
+					<DioramaPlinth id={`${ID}-fl`} cx={flask.x} cy={flask.y} rx={54}>
+						<g transform={`translate(0,${idleBob(frame, 5, 0.8)})`}>
+							<Flask cx={flask.x} baseY={flask.y + 4} w={58} h={66} level={0.55} liquid={flaskColor ?? 'rgba(210,225,235,0.6)'} />
+						</g>
+					</DioramaPlinth>
+					{flask.label && (
+						<text x={flask.x + 64} y={flask.y - 20} fill={TOK.inkDim} fontSize={15} fontWeight={700}>
+							{flask.label}
+						</text>
+					)}
+				</g>
+			)}
 
 			{/* Notes */}
 			{notes.map((n, i) => {

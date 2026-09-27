@@ -96,6 +96,33 @@
       "caption": "Rule of Five: MW under 500, log P under 5, donors under 5, acceptors under 10.",
       "voiceover": {
         "text": "Now a handy tool, Lipinski's Rule of Five, which medicinal chemists use to estimate whether a new molecule is likely to be suitable for oral delivery. There are four limits. The molecular mass should be below five hundred daltons, because very large molecules are often poorly absorbed. The log P should be below five, because excessive lipophilicity hurts useful drug behaviour. There should be fewer than five hydrogen-bond donors, and fewer than ten hydrogen-bond acceptors, because too many of either can reduce membrane passage. Now the critical caveat, and it's an exam favourite. These are guides for likely oral absorption, not guarantees. A molecule can satisfy all four limits and still fail as an oral drug, because metabolism, formulation, and many other factors still matter. So treat the Rule of Five as a useful filter, not a promise."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Cards",
+        "props": {
+          "header": "Four limits for likely oral absorption",
+          "cards": [
+            {
+              "icons": [{"name": "balance", "load": "molecule", "value": "< 500"}],
+              "title": "Mass < 500 Da",
+              "lines": ["molecular mass"]
+            },
+            {"icons": [{"name": "oilWater"}], "title": "log P < 5", "lines": ["not too lipophilic"]},
+            {"icons": [{"name": "hbond", "role": "donor"}], "title": "Donors < 5", "lines": ["H-bond donors"]},
+            {
+              "icons": [{"name": "hbond", "role": "acceptor"}],
+              "title": "Acceptors < 10",
+              "lines": ["H-bond acceptors"]
+            }
+          ],
+          "footer": {
+            "text": "A guide, not a guarantee",
+            "sub": "a molecule can pass all four and still fail: metabolism, formulation",
+            "amber": true
+          },
+          "beats": [161, 282, 381, 438, 608]
+        }
       }
     },
     {

@@ -61,6 +61,11 @@
       "caption": "A chiral centre is a carbon bonded to four different groups.",
       "voiceover": {
         "text": "Let's define chirality properly. A molecule is chiral if it cannot be superimposed on its own mirror image, a bit like your left and right hands. In this course, the key structural clue is a chiral centre, which is usually a carbon atom bonded to four different groups. Here's why that matters. When a carbon has four different substituents, there are two genuinely different ways to arrange them in three-dimensional space. Those two arrangements are mirror images of each other, but they are not identical, you can't rotate one to land exactly on the other. That gives you a pair of enantiomers. And the crucial idea is that chirality is about three-dimensional arrangement, not molecular formula. Two molecules can have the same formula and the same functional groups, yet still be different because their 3D shapes differ."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Chirality",
+        "props": {"mode": "mirror", "beats": [191, 260, 371, 468, 510, 544, 634, 718]}
       }
     },
     {
@@ -96,6 +101,11 @@
       "caption": "Structural isomers differ in connectivity; enantiomers differ only in 3D arrangement.",
       "voiceover": {
         "text": "It's really important not to confuse enantiomers with other kinds of isomers, because the source of the difference isn't the same. Structural isomers differ in connectivity, that is, in which atoms are bonded to which, so they have genuinely different bonding arrangements. Geometric isomers differ in their arrangement around a restricted bond, the classic cis and trans, or E and Z, around a double bond. Enantiomers are different again. They share the same connectivity, and they differ only in their non-superimposable mirror-image three-dimensional arrangement. So enantiomers usually have the same molecular formula, the same connectivity, and many of the same physical properties, and their only difference is how they occupy space. A common slip is to call enantiomers structural isomers with a chiral centre. They're not, because structural isomers differ in connectivity, and enantiomers do not."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Chirality",
+        "props": {"mode": "compare", "beats": [95, 151, 241, 325, 402, 451, 535]}
       }
     },
     {
@@ -114,6 +124,11 @@
       "caption": "Chiral receptors distinguish enantiomers, so biological effects can differ.",
       "voiceover": {
         "text": "So if enantiomers are so similar, why would they ever behave differently as medicines? Here's the answer. Enantiomers do have very similar physical properties, but only in a non-chiral environment. Biological environments are not non-chiral. Enzymes, receptors, and many biomolecules are themselves chiral structures, they have a definite handedness. That means a chiral binding site can favour one mirror-image arrangement over the other, the same way a glove fits one hand but not the other. So one enantiomer may bind well to its target and produce a therapeutic effect, while the other binds weakly, does nothing, or even produces harmful effects. This is the deep reason chirality matters so much in medicine. Same atoms does not mean same biological outcome, because the body's molecular machinery is handed, and it can tell left from right."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Chirality",
+        "props": {"mode": "receptor", "beats": [153, 204, 328, 431, 504, 599, 687]}
       }
     },
     {
@@ -122,12 +137,9 @@
       "heading": "The thalidomide case",
       "body": "Thalidomide is studied because failing to appreciate stereochemistry had devastating consequences.",
       "diagram": {
-        "type": "beforeAfter",
-        "beforeLabel": "R-enantiomer",
-        "afterLabel": "S-enantiomer",
-        "beforeContent": "Sedative, the intended therapeutic effect.",
-        "afterContent": "Teratogenic, caused severe birth defects.",
-        "delay": 18
+        "type": "diorama",
+        "kind": "chem12m8Chirality",
+        "props": {"mode": "racemic", "beats": [91, 155, 198, 240, 340, 362, 390, 690, 718, 868, 885]}
       },
       "bullets": [
         {"text": "R-enantiomer: associated with the sedative effect."},
@@ -158,6 +170,11 @@
       "caption": "Polarimetry: pure enantiomer rotates light, racemic mix gives zero net rotation.",
       "voiceover": {
         "text": "Finally, how do chemists actually detect chirality in the lab? The named technique is polarimetry, which detects optical activity by measuring how much a sample rotates plane-polarised light as it passes through. A pure enantiomer rotates that light by a definite amount. A racemic mixture, the fifty-fifty blend, shows zero net rotation, because the two opposite rotations cancel each other out. Now here's the subtlety that makes a good exam point. That zero reading does not mean the sample is chemically pure. A racemic mixture gives the same zero result as a genuinely achiral compound. So polarimetry is experimental evidence of optical activity, it is not structural identification, it doesn't draw the molecule for you. The proper workflow is, recognise chirality structurally by finding the chiral centre, then measure optical activity by polarimetry, and then, if safety demands enantiopure product, separate and confirm with chiral H-P-L-C."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Chirality",
+        "props": {"mode": "polarimeter", "beats": [42, 123, 163, 230, 277, 331, 445, 498, 586]}
       }
     },
     {

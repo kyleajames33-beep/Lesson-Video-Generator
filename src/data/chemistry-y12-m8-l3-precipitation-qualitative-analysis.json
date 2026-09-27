@@ -60,6 +60,33 @@
       "caption": "Qualitative = which ion is present; it gives identity, not amount.",
       "voiceover": {
         "text": "First, get the framing right, because the exam tests it directly. Qualitative analysis answers what is in this sample, not how much. A positive test gives you evidence for identity, where the observation matches a known pattern for one specific ion. Compare that to quantitative analysis, which we did with titration and gravimetry, where you're after an amount. Two important habits. First, a single test rarely proves an identity on its own, so you stack consistent results to build confidence. And second, qualitative tells you nothing about concentration. A white precipitate with silver nitrate says chloride might be here, but whether it's a trace or a flood, you can't say without measuring."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Cards",
+        "props": {
+          "cards": [
+            {
+              "ask": "What is it?",
+              "icons": [{"name": "testTube", "label": "+ AgNO₃"}],
+              "title": "Qualitative",
+              "lines": ["identity", "Cl⁻ may be present"]
+            },
+            {
+              "ask": "How much?",
+              "icons": [{"name": "burette"}, {"name": "balance", "load": "crucible"}],
+              "title": "Quantitative",
+              "lines": ["amount", "titration, gravimetry"]
+            },
+            {
+              "icons": [{"name": "evidenceStack"}],
+              "title": "Build the case",
+              "lines": ["one test rarely", "proves it"]
+            }
+          ],
+          "footer": {"text": "Identity, not amount, and never from a single test.", "amber": true},
+          "beats": [47, 345, 498, 669]
+        }
       }
     },
     {
@@ -78,7 +105,8 @@
       "caption": "Strip spectators: Ag⁺ + Cl⁻ → AgCl(s); Ba²⁺ + SO₄²⁻ → BaSO₄(s).",
       "voiceover": {
         "text": "These tests make far more sense written at the ionic level, because the net ionic equation shows the actual chemistry, not just the labels on the bottles. Take the chloride test. Silver nitrate plus sodium chloride. Write everything that's dissolved as separate ions, and you'll see sodium and nitrate sitting unchanged on both sides. Those are spectators, and you cross them out. What's left is the net ionic equation, silver ion plus chloride ion gives solid silver chloride. Same logic for sulfate, barium ion plus sulfate ion gives solid barium sulfate. The rule is simple. Only the species that actually change chemically survive into the net ionic equation."
-      }
+      },
+      "diagram": {"type": "diorama", "kind": "chem12m8NetIonic", "props": {"beats": [190, 280, 370, 470, 520, 670, 790]}}
     },
     {
       "id": "definition",
@@ -86,13 +114,9 @@
       "heading": "The anion tests",
       "body": "Three workhorse anion tests. Two give a white precipitate; carbonate gives a gas.",
       "diagram": {
-        "type": "table",
-        "headers": ["Anion", "Reagent", "Observation"],
-        "rows": [
-          ["Cl⁻", "AgNO₃", "White AgCl"],
-          ["SO₄²⁻", "BaCl₂", "White BaSO₄"],
-          ["CO₃²⁻", "dilute acid", "CO₂ fizz"]
-        ]
+        "type": "diorama",
+        "kind": "chem12m8TubeTests",
+        "props": {"mode": "anion", "beats": [80, 150, 220, 290, 375, 430, 740, 790, 850]}
       },
       "bullets": [
         {"text": "Chloride: add AgNO₃, get a white precipitate of AgCl."},
@@ -123,6 +147,11 @@
       "caption": "With NaOH: Fe²⁺ green, Fe³⁺ red-brown, Cu²⁺ pale blue, NH₄⁺ ammonia.",
       "voiceover": {
         "text": "For the positive ions, the cations, your main tool is sodium hydroxide, and you read the colour of the precipitate. Iron two gives a green precipitate. Iron three gives a red-brown one. Copper two gives a pale blue precipitate of copper hydroxide. And ammonium is the odd one out, it gives no coloured solid, but warm it with sodium hydroxide and you get pungent ammonia gas. Calcium you'd test with sodium carbonate, giving a white precipitate. The real power comes from combining tests. A blue-green flame plus a pale blue precipitate with sodium hydroxide together make a very strong case for copper, much stronger than either one alone."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8TubeTests",
+        "props": {"mode": "cation", "beats": [150, 180, 205, 240, 265, 300, 365, 490, 600, 660, 745, 800, 870]}
       }
     },
     {
@@ -141,6 +170,11 @@
       "caption": "Flame colours give a fast clue; sodium yellow can mask the rest.",
       "voiceover": {
         "text": "Flame tests are the quick first clue. Dip a clean nichrome wire in the sample, hold it in the flame, and excited metal ions release light at characteristic wavelengths as their electrons fall back down, you met that emission idea in Year 11. Lithium is crimson, sodium yellow, potassium lilac. Calcium is brick red, barium pale green, copper blue-green. But here's the limitation you must state. Sodium's bright yellow flame is so strong it can mask the weaker colours of other ions, and contamination is everywhere. So a flame test is supporting evidence, a fast pointer, never definitive proof on its own."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8FlameTests",
+        "props": {"beats": [100, 360, 390, 410, 430, 465, 495, 590, 665, 800]}
       }
     },
     {
