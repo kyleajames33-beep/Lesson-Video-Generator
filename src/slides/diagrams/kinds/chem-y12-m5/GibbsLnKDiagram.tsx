@@ -67,10 +67,10 @@ export const GibbsLnKDiagram = ({
 	);
 
 	const plinth = (cx: number, major: string, minor: string, o: number, k: number) => {
-		const slots = plinthSlots(cx, 452, 76, 7);
+		const slots = plinthSlots(cx, 462, 76, 7);
 		return (
 			<g opacity={o}>
-				<DioramaPlinth id={`c12m5lnk${k}`} cx={cx} cy={452} rx={76}>
+				<DioramaPlinth id={`c12m5lnk${k}`} cx={cx} cy={462} rx={76}>
 					{slots
 						.map((s, j) => ({s, j}))
 						.sort((a, b) => a.s.y - b.s.y)
@@ -128,8 +128,8 @@ export const GibbsLnKDiagram = ({
 			{/* Mixtures */}
 			{plinth(112, 'A', 'B', smallIn, 0)}
 			{plinth(648, 'B', 'A', bigIn, 1)}
-			<text x={112} y={522} textAnchor="middle" fill={A} fontSize={17} fontWeight={800} opacity={smallIn}>reactants win</text>
-			<text x={648} y={522} textAnchor="middle" fill={VIOLET} fontSize={17} fontWeight={800} opacity={bigIn}>products win</text>
+			<text x={112} y={525} textAnchor="middle" fill={A} fontSize={17} fontWeight={800} opacity={smallIn}>reactants win</text>
+			<text x={648} y={525} textAnchor="middle" fill={VIOLET} fontSize={17} fontWeight={800} opacity={bigIn}>products win</text>
 
 			{/* Notes */}
 			<Rich x={W / 2} y={448} size={21} parts={P('answer in J: ÷ 1000 for kJ', TOK.ink)} opacity={ramp(frame, joulesAt, 14)} />

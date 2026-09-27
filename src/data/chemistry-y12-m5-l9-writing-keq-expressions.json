@@ -189,6 +189,78 @@
             "both": 319,
             "reactants": 412
           },
+          "reactions": [
+            {
+              "eq": "N₂ + O₂ ⇌ 2NO",
+              "logK": -30,
+              "value": "10⁻³⁰",
+              "mix": [
+                {
+                  "atoms": [
+                    "N",
+                    "N"
+                  ],
+                  "n": 3
+                },
+                {
+                  "atoms": [
+                    "O",
+                    "O"
+                  ],
+                  "n": 3
+                }
+              ],
+              "label": "almost all reactants",
+              "at": 586
+            },
+            {
+              "eq": "H₂ + I₂ ⇌ 2HI",
+              "logK": 1.732,
+              "value": "54",
+              "mix": [
+                {
+                  "atoms": [
+                    "H",
+                    "H"
+                  ],
+                  "n": 1
+                },
+                {
+                  "atoms": [
+                    "I",
+                    "I"
+                  ],
+                  "n": 1
+                },
+                {
+                  "atoms": [
+                    "I",
+                    "H"
+                  ],
+                  "n": 7
+                }
+              ],
+              "label": "both present",
+              "at": 710
+            },
+            {
+              "eq": "2NO + O₂ ⇌ 2NO₂",
+              "logK": 12,
+              "value": "10¹²",
+              "mix": [
+                {
+                  "atoms": [
+                    "N",
+                    "O",
+                    "O"
+                  ],
+                  "n": 6
+                }
+              ],
+              "label": "almost all product",
+              "at": 791
+            }
+          ],
           "cautionAt": 884
         }
       }
