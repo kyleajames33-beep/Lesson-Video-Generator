@@ -42,7 +42,7 @@ const W = 760;
 const CX0 = 86, CX1 = 334, CBOT = 440, CTOP = 150;
 const H0 = 250; // gas height at V = 1
 const V_SMALL = 0.384;
-const GATHER = 26, EMERGE = 30, MOVE = 26;
+const GATHER = 36, EMERGE = 30, MOVE = 26;
 
 // Species: 4 N₂, 11 H₂, 5 NH₃, plus 2 NH₃ that exist only in the shifted state.
 type Mol = {kind: GasKind; grp: 'R' | 'P' | null};
@@ -151,7 +151,7 @@ export const PressureDiagram = ({delay = 62, beats = {}, chips = []}: PressurePr
 		const t = (frame - e.at - GATHER + 6) / 18;
 		if (t < 0 || t > 1) return null;
 		const p = toXY(M.u, M.v);
-		return <circle key={e.at} cx={p.x} cy={p.y} r={10 + 26 * t} fill="none" stroke={TOK.amber} strokeWidth={3} opacity={1 - t} />;
+		return <circle key={e.at} cx={p.x} cy={p.y} r={12 + 34 * t} fill="none" stroke={TOK.amber} strokeWidth={4} opacity={1 - t} />;
 	});
 
 	// ── gauge ──
@@ -232,6 +232,13 @@ export const PressureDiagram = ({delay = 62, beats = {}, chips = []}: PressurePr
 			<g opacity={interpolate(frame, [b.expand - 8, b.expand, b.expand + MOVE, b.expand + MOVE + 10], [0, 1, 1, 0], clamp)}>
 				<Arrow x1={CX1 + 32} y1={pistonY + 10} x2={CX1 + 32} y2={pistonY - 50} color={TOK.inkDim} w={4} />
 			</g>
+
+			{/* what the shift did */}
+			{shifts.map((e) => (
+				<Tag key={e.at} x={(CX0 + CX1) / 2} y={CTOP - 30} anchor="middle" size={18} color={TOK.inkMute} ink={TOK.ink}
+					text={e.to === 'P' ? 'N₂ + 3H₂ → 2NH₃: 4 molecules become 2' : '2NH₃ → N₂ + 3H₂: 2 molecules become 4'}
+					opacity={interpolate(frame, [e.at, e.at + 10, e.at + GATHER + 80, e.at + GATHER + 96], [0, 1, 1, 0], clamp)} />
+			))}
 
 			{/* equation */}
 			<g opacity={ramp(frame, 0, 14)}>

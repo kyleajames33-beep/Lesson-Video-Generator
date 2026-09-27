@@ -47,16 +47,17 @@ export const partBox = (parts: Part[], size: number, i: number) => {
 	return {x, w: partW(parts[i], size)};
 };
 
-/** Parse a compact string: `_{eq}` = subscript, `^{2}` = raised power. */
+/** Parse a compact string: `_{eq}` = subscript, `^{2}` = raised power, `*{..}` = amber, `!{..}` = red. */
 export const P = (s: string, c?: string): Part[] => {
 	const out: Part[] = [];
-	const re = /(_\{[^}]*\}|\^\{[^}]*\})/g;
+	const re = /(_\{[^}]*\}|\^\{[^}]*\}|\*\{[^}]*\}|!\{[^}]*\})/g;
 	let last = 0;
 	let m: RegExpExecArray | null;
 	while ((m = re.exec(s))) {
 		if (m.index > last) out.push({t: s.slice(last, m.index), c});
 		const body = m[0].slice(2, -1);
-		out.push(m[0][0] === '_' ? {t: body, sub: true, c} : {t: body, pow: true, c});
+		const k = m[0][0];
+		out.push(k === '_' ? {t: body, sub: true, c} : k === '^' ? {t: body, pow: true, c} : k === '*' ? {t: body, c: TOK.amberInk, wt: 900} : {t: body, c: RED, wt: 900});
 		last = m.index + m[0].length;
 	}
 	if (last < s.length) out.push({t: s.slice(last), c});
