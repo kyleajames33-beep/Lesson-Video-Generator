@@ -133,6 +133,63 @@
       "voiceover": {
         "text": "In nineteen twenty-three, Brønsted in Copenhagen and Lowry in London published the same fix on the same idea, independently, without ever contacting each other. Their model defines an acid as a proton donor and a base as a proton acceptor, in any reaction, in any medium. So picture what physically happens, a single hydrogen nucleus detaches from one species and bonds to another. Watch how this rescues ammonia. When ammonia dissolves, water donates a proton to it, so here water is the acid and ammonia is the base. The hydroxide you measure is simply what the water molecule became after giving its proton away. Ammonia is basic not because it holds hydroxide, but because it accepts a proton. And notice water can swing both ways, donating to ammonia, accepting from hydrochloric acid. We call that amphiprotic.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L1/concept-bronsted.049ea914af95.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6ProtonHop",
+        "props": {
+          "title": "Ammonia accepts a proton from water",
+          "rows": [
+            {
+              "species": [
+                {
+                  "label": "NH₃",
+                  "after": "NH₄⁺",
+                  "core": "N",
+                  "h": 3,
+                  "afterCharge": "+"
+                },
+                {
+                  "label": "H₂O",
+                  "after": "OH⁻",
+                  "core": "O",
+                  "h": 2,
+                  "afterCharge": "−"
+                }
+              ],
+              "donor": 1,
+              "equation": [
+                "NH₃",
+                "+",
+                "H₂O",
+                "⇌",
+                "NH₄⁺",
+                "+",
+                "OH⁻"
+              ],
+              "at": 0,
+              "rolesAt": 500,
+              "hopAt": 540,
+              "roles": {
+                "donor": "proton donor",
+                "acceptor": "proton acceptor",
+                "donorAfter": "water acted as the ACID",
+                "acceptorAfter": "ammonia acted as the BASE"
+              }
+            }
+          ],
+          "notes": [
+            {
+              "text": "The OH⁻ is what the water became: it came from the water.",
+              "at": 686,
+              "amber": true
+            },
+            {
+              "text": "Water donates to NH₃ but accepts from HCl: amphiprotic.",
+              "at": 950
+            }
+          ]
+        }
       }
     },
     {
@@ -184,6 +241,73 @@
       "voiceover": {
         "text": "Now let's read pairs straight off an equation. Take acetic acid reacting with water, giving hydronium and the acetate ion. When acetic acid donates its proton, it becomes acetate, so acetic acid and acetate are conjugate pair one, differing by one H⁺. When water accepts a proton, it becomes hydronium, so water and hydronium are pair two. Always one species from the left, one from the right, never two on the same side. There's also a lovely strength rule, a strong acid gives up its proton so eagerly that the leftover conjugate base barely wants it back, so a strong acid has a very weak conjugate base. One trap to flag now, the conjugate base of sulfuric acid is hydrogen sulfate, written H-S-O-four-minus, not the sulfate ion. You only remove one proton at a time.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L1/concept-conjugate.c33d2ae0c02b.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6ProtonHop",
+        "props": {
+          "rows": [
+            {
+              "species": [
+                {
+                  "label": "CH₃COOH",
+                  "after": "CH₃COO⁻",
+                  "core": "C",
+                  "coreText": "CH₃COO",
+                  "h": 1,
+                  "afterCharge": "−"
+                },
+                {
+                  "label": "H₂O",
+                  "after": "H₃O⁺",
+                  "core": "O",
+                  "h": 2,
+                  "afterCharge": "+"
+                }
+              ],
+              "donor": 0,
+              "equation": [
+                {
+                  "t": "CH₃COOH",
+                  "pair": 1
+                },
+                "+",
+                {
+                  "t": "H₂O",
+                  "pair": 2
+                },
+                "⇌",
+                {
+                  "t": "H₃O⁺",
+                  "pair": 2
+                },
+                "+",
+                {
+                  "t": "CH₃COO⁻",
+                  "pair": 1
+                }
+              ],
+              "at": 0,
+              "rolesAt": 40,
+              "hopAt": 104,
+              "pairsAt": [
+                150,
+                290
+              ]
+            }
+          ],
+          "pairLabels": [
+            "pair 1",
+            "pair 2"
+          ],
+          "notes": [
+            {
+              "text": "Conjugate base of H₂SO₄ is HSO₄⁻, not SO₄²⁻.",
+              "at": 780,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {

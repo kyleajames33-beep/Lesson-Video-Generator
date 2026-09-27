@@ -194,6 +194,60 @@
       "voiceover": {
         "text": "Polyprotic acids deserve a closer look, because they donate their protons in separate steps. Take phosphoric acid. Its first Ka is seven-point-five times ten to the minus three. The second is six-point-two times ten to the minus eight, and the third is four-point-eight times ten to the minus thirteen. Each step is about a hundred thousand times weaker than the one before. The reason is electrostatic. Once the first proton leaves, you're trying to pull a positive hydrogen ion away from an ion that's now negatively charged, and the next time it's even more negative. That attraction makes each successive proton harder to remove. The practical payoff for the exam, when you calculate the pH of a polyprotic acid, you only use Ka one. The later ionisations contribute almost no extra hydrogen ion. And remember, each step is its own separate equilibrium with its own Ka, so you never lump them into a single expression.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L12/concept-polyprotic.c6379c82f132.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6ProtonLadder",
+        "props": {
+          "species": [
+            {
+              "label": "H₃PO₄",
+              "core": "P",
+              "coreText": "PO₄",
+              "h": 3
+            },
+            {
+              "label": "H₂PO₄⁻",
+              "core": "P",
+              "coreText": "PO₄",
+              "h": 2,
+              "charge": "−"
+            },
+            {
+              "label": "HPO₄²⁻",
+              "core": "P",
+              "coreText": "PO₄",
+              "h": 1,
+              "charge": "2−"
+            },
+            {
+              "label": "PO₄³⁻",
+              "core": "P",
+              "coreText": "PO₄",
+              "h": 0,
+              "charge": "3−"
+            }
+          ],
+          "at": 0,
+          "stepsAt": [
+            37,
+            127,
+            200
+          ],
+          "ka": [
+            "Ka₁ = 7.5 × 10⁻³",
+            "Ka₂ = 6.2 × 10⁻⁸",
+            "Ka₃ = 4.8 × 10⁻¹³"
+          ],
+          "kaAt": 37,
+          "kaNote": "Each step is about 10⁵ times weaker than the last",
+          "kaNoteAt": 261,
+          "kaHighlight": {
+            "index": 0,
+            "at": 708,
+            "text": "use Ka₁ for pH"
+          }
+        }
       }
     },
     {

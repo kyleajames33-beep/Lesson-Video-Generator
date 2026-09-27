@@ -143,6 +143,28 @@
       "voiceover": {
         "text": "Two steps trip people up constantly, so let's be explicit about both. For a weak acid, the quick estimate is x equals the square root of Ka times the concentration. But that shortcut only holds if the acid barely ionises. So after you get x, check that x divided by the concentration is under five percent. If it comes out at five percent or more, like it does for hydrofluoric acid, the shortcut isn't valid, and you have to solve the full quadratic instead. The second step is in mixing problems. When acid and base are mixed and one is left over, the concentration of that excess is its moles divided by the total volume. And the total volume is always the acid volume plus the base volume added together. Using just one of them, say the acid volume on its own, is the single most common mixing mistake, and for a fifty plus fifty mix it throws your pH out by nought-point-three of a unit.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L11/concept-weak-and-mixing.f72eb65f2098.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6FivePercent",
+        "props": {
+          "cases": [
+            {
+              "name": "HF",
+              "Ka": 0.00068,
+              "c": 0.1,
+              "at": 22,
+              "checkAt": 194,
+              "fixAt": 292
+            }
+          ],
+          "mixing": {
+            "va": 50,
+            "vb": 50,
+            "at": 464,
+            "wrongAt": 747
+          }
+        }
       }
     },
     {
