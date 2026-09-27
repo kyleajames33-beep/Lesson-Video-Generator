@@ -5,7 +5,30 @@
 
 import type {ReactNode} from 'react';
 import {TOK} from '../../../../styles/tokens';
-import {shade, textW} from './shared';
+import {shade} from './shared';
+
+/** Width estimate for bold display type (tuned for Inter Tight 800). */
+export const kbW = (t: string, size: number) =>
+	[...t].reduce((a, ch) => {
+		let w = 0.58;
+		if (/[₀-₉⁰-⁹⁺⁻₊₋]/.test(ch)) w = 0.44;
+		else if (ch === ' ') w = 0.27;
+		else if (/[MW]/.test(ch)) w = 0.9;
+		else if (/[I]/.test(ch)) w = 0.3;
+		else if (/[A-Z]/.test(ch)) w = 0.7;
+		else if (/[mw]/.test(ch)) w = 0.86;
+		else if (/[ijl]/.test(ch)) w = 0.27;
+		else if (/[frt]/.test(ch)) w = 0.38;
+		else if (/[a-z]/.test(ch)) w = 0.57;
+		else if (/[0-9]/.test(ch)) w = ch === '1' ? 0.45 : 0.6;
+		else if (/[()[\]]/.test(ch)) w = 0.34;
+		else if (/[.,:;]/.test(ch)) w = 0.28;
+		else if (/[×+=−<>±÷]/.test(ch)) w = 0.62;
+		else if (/[⇌→⟶≈]/.test(ch)) w = 1.0;
+		else if (ch === '√' || ch === '∛') w = 0.62;
+		return a + w;
+	}, 0) * size;
+const textW = kbW;
 
 export const RED = '#d8453b';
 export const VIOLET = '#8a5cc9';

@@ -20,8 +20,8 @@ import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
 import {DioramaPlinth, idleBob, idlePulse} from '../../diorama';
-import {AtomDefs, Ball, clamp, eramp, ramp, textW} from './shared';
-import {Frac, P, Panel, RED, Rich, Strike, VIOLET, fracW, partBox, partsW, sig, sigMid, type Part} from './kbKit';
+import {AtomDefs, Ball, clamp, eramp, ramp} from './shared';
+import {P, Panel, RED, Rich, Strike, VIOLET, fracW, kbW as textW, partBox, partsW, sig, sigMid, type Part} from './kbKit';
 
 export type KbSpecies = {f: string; state: string; coef?: number; side: 'r' | 'p'; val?: string};
 export type KeqBuilderProps = {
@@ -40,7 +40,7 @@ export type KeqBuilderProps = {
 	tray?: {at: number; x?: number; y?: number; w?: number; h?: number; items?: {f: string; state: string; reason: string; at: number}[]};
 	pulses?: {at: number; side: 'p' | 'r'}[];
 	subst?: {valuesAt: number; dropAt: number; trapAt?: number; squareAt: number; bottomAt: number; divideAt: number; unitsAt?: number; sig?: number};
-	acids?: {at: number; notAt?: number; strongAt?: number; weakAt?: number; notText?: string};
+	acids?: {at: number; notAt?: number; strongAt?: number; weakAt?: number};
 	notes?: {at: number; text: string; y?: number; amber?: boolean}[];
 };
 
@@ -50,7 +50,7 @@ const TS = 42; // tile formula size
 const TILE_Y = 12;
 const TILE_H = 88;
 const PLY = TILE_Y + TILE_H + 6;
-const TAG_Y = 190;
+const TAG_Y = 172;
 const ES = 52; // expression size
 
 const DEFAULT_SPECIES: KbSpecies[] = [
@@ -175,7 +175,7 @@ export const KeqBuilderDiagram = ({
 	const f2Num: Part[] = [{t: topStr}];
 	const f2DenA = joinX(denIdx.map((i) => [{t: (species[i].coef ?? 1) > 1 ? sigMid(pw(species[i]), nsig) : species[i].val ?? ''}]));
 	const f2DenB: Part[] = [{t: sigMid(botVal, nsig)}];
-	const eqW = textW(' = ', SS);
+	const eqW = SS * 1.3;
 	const w1 = fracW(f1Num, f1Den, SS);
 	const w2 = Math.max(fracW(f2Num, f2DenA, SS), fracW(f2Num, f2DenB, SS));
 	const ansStr = sig(answer, nsig);
@@ -205,7 +205,7 @@ export const KeqBuilderDiagram = ({
 
 	// ── Acids panel ──
 	const acidN = 6;
-	const acidPl = [{cx: 190, strong: false}, {cx: 570, strong: true}];
+	const acidPl = [{cx: 168, strong: false}, {cx: 592, strong: true}];
 	const ACY = 440;
 	const molPos = (j: number) => {
 		const row = j < 3 ? 0 : 1;
@@ -331,7 +331,7 @@ export const KeqBuilderDiagram = ({
 
 			{/* ── Rules panels ── */}
 			{rules && (() => {
-				const ry = rules.y ?? 322;
+				const ry = rules.y ?? 310;
 				const stay = rules.stay ?? ['(g)  gases', '(aq)  dissolved species'];
 				const out = rules.out ?? ['(s)  pure solids', '(l)  pure liquids,', '      incl. water as solvent'];
 				const h = 46 + Math.max(stay.length, out.length) * 32;
@@ -364,7 +364,7 @@ export const KeqBuilderDiagram = ({
 				const staticNum = f1Num.map((p) => ({...p, o: 1}));
 				return (
 					<g>
-						<text x={r0} y={SY + SS * 0.34} fill={TOK.ink} fontSize={SS} fontWeight={800} opacity={f1In}> =</text>
+						<text x={r0 + eqW / 2} y={SY + SS * 0.34} textAnchor="middle" fill={TOK.ink} fontSize={SS} fontWeight={800} opacity={f1In}>=</text>
 						<g opacity={f1In}>
 							<line x1={f1CX - w1 / 2} y1={SY} x2={f1CX + w1 / 2} y2={SY} stroke={TOK.ink} strokeWidth={2.5} strokeLinecap="round" />
 						</g>
@@ -392,7 +392,7 @@ export const KeqBuilderDiagram = ({
 								<text key={`fly${i}`} x={x} y={y} fill={TOK.ink} fontSize={22 + (SS - 22) * u} fontWeight={800}>{sp.val}</text>
 							);
 						})}
-						<text x={r0 + eqW + w1} y={SY + SS * 0.34} fill={TOK.ink} fontSize={SS} fontWeight={800} opacity={f2NumIn}> =</text>
+						<text x={r0 + eqW * 1.5 + w1} y={SY + SS * 0.34} textAnchor="middle" fill={TOK.ink} fontSize={SS} fontWeight={800} opacity={f2NumIn}>=</text>
 						<g>
 							<Rich x={f2CX} y={SY - SS * 0.36} size={SS} parts={f2Num} opacity={f2NumIn} />
 							<line x1={f2CX - w2 / 2} y1={SY} x2={f2CX + w2 / 2} y2={SY} stroke={TOK.ink} strokeWidth={2.5} strokeLinecap="round" opacity={f2NumIn} />
@@ -400,7 +400,7 @@ export const KeqBuilderDiagram = ({
 							<Rich x={f2CX} y={SY + SS * 1.02} size={SS} parts={f2DenB} opacity={f2DenBIn} />
 						</g>
 						<g opacity={ansIn}>
-							<text x={ansX - eqW} y={SY + SS * 0.34} fill={TOK.ink} fontSize={SS} fontWeight={800}> =</text>
+							<text x={ansX - eqW / 2} y={SY + SS * 0.34} textAnchor="middle" fill={TOK.ink} fontSize={SS} fontWeight={800}>=</text>
 							<rect x={ansX - 10} y={SY - 32} width={ansW + 20} height={56} rx={12} fill="#fff7e8" stroke={TOK.amber} strokeWidth={2 + idlePulse(frame) * 1.5} />
 							<text x={ansX} y={SY + 40 * 0.34} fill={TOK.amberInk} fontSize={40} fontWeight={900}>{ansStr}</text>
 						</g>
@@ -482,13 +482,14 @@ export const KeqBuilderDiagram = ({
 							);
 						})}
 						{acids.notAt !== undefined && (() => {
-							const txt = acids.notText ?? 'Ka is not pH, and not [H⁺]';
-							const parts = P(txt.replace(/^Ka/, 'K_{a}'), TOK.amberInk);
-							const w = partsW(parts, 20) + 30;
+							const l1 = P('K_{a} is not pH,', TOK.amberInk);
+							const l2 = P('and not [H⁺]', TOK.amberInk);
+							const w = Math.max(partsW(l1, 20), partsW(l2, 20)) + 28;
 							return (
 								<g opacity={ramp(frame, acids.notAt, 14)}>
-									<rect x={W / 2 - w / 2} y={ACY - 70} width={w} height={40} rx={20} fill="#fff7e8" stroke={TOK.amber} strokeWidth={2 + idlePulse(frame) * 1.2} />
-									<Rich x={W / 2} y={ACY - 43} size={20} parts={parts} />
+									<rect x={W / 2 - w / 2} y={ACY - 36} width={w} height={70} rx={16} fill="#fff7e8" stroke={TOK.amber} strokeWidth={2 + idlePulse(frame) * 1.2} />
+									<Rich x={W / 2} y={ACY - 8} size={20} parts={l1} />
+									<Rich x={W / 2} y={ACY + 20} size={20} parts={l2} />
 								</g>
 							);
 						})()}
@@ -498,7 +499,7 @@ export const KeqBuilderDiagram = ({
 
 			{/* ── Notes ── */}
 			{notes.map((n, j) => (
-				<text key={j} x={W / 2} y={n.y ?? 488 + j * 32} textAnchor="middle" fill={n.amber ? TOK.amberInk : TOK.inkDim} fontSize={21} fontWeight={800} opacity={ramp(frame, n.at, 14)}>
+				<text key={j} x={W / 2} y={n.y ?? 492 + j * 30} textAnchor="middle" fill={n.amber ? TOK.amberInk : TOK.inkDim} fontSize={21} fontWeight={800} opacity={ramp(frame, n.at, 14)}>
 					{n.text}
 				</text>
 			))}

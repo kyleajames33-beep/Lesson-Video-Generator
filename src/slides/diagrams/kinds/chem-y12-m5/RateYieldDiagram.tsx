@@ -116,7 +116,6 @@ export const RateYieldDiagram = ({
 		{at: b.high, text: 'High T: fast, but low yield'},
 		{at: b.compromise, text: 'The compromise sits in between'},
 		{at: b.room, text: `At ${roomLabel}: ${keqText}, nearly all would convert…`},
-		{at: b.zero, text: '…but the rate is essentially zero'},
 	];
 	const cap = beatCaption(frame, caps);
 	const onRoom = frame >= b.room;
@@ -160,8 +159,9 @@ export const RateYieldDiagram = ({
 			</g>
 
 			{/* captions */}
-			<text x={W / 2} y={392} textAnchor="middle" fill={cap.index >= 3 ? TOK.ink : TOK.inkDim} fontSize={21} fontWeight={800} opacity={cap.opacity}>{cap.text}</text>
-			<Tag x={W / 2} y={440} text={pressureText} color={theme.accent} ink={theme.accent} size={18} anchor="middle" opacity={ramp(frame, b.pressure, 14) * (1 - 0.6 * ramp(frame, b.room, 14))} />
+			<text x={W / 2} y={392} textAnchor="middle" fill={TOK.ink} fontSize={21} fontWeight={800} opacity={cap.opacity}>{cap.text}</text>
+			<Tag x={W / 2} y={440} text={pressureText} color={theme.accent} ink={theme.accent} size={18} anchor="middle" opacity={ramp(frame, b.pressure, 14) * (1 - ramp(frame, b.room, 14))} />
+			<text x={W / 2} y={443} textAnchor="middle" fill={TOK.ink} fontSize={21} fontWeight={800} opacity={ramp(frame, b.zero, 14)}>…but the rate is essentially zero</text>
 			<g opacity={ramp(frame, b.punch, 16)}>
 				<Tag x={W / 2} y={494} text="Thermodynamically perfect, kinetically useless" color={TOK.amber} ink={TOK.amberInk} size={21} anchor="middle" strokeWidth={2 + pulse * 1.5} />
 			</g>
