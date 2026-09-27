@@ -76,34 +76,15 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L1/concept-two-states.e8ed1dbefc49.mp3"
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Feature",
-          "Static",
-          "Dynamic"
-        ],
-        "rows": [
-          [
-            "Reaction type",
-            "Irreversible, complete",
-            "Reversible (⇌)"
-          ],
-          [
-            "Forward rate",
-            "Zero",
-            "Non-zero"
-          ],
-          [
-            "Reverse rate",
-            "Zero",
-            "Equal to forward"
-          ],
-          [
-            "Molecular activity",
-            "None",
-            "Continuous"
-          ]
-        ]
+        "type": "diorama",
+        "kind": "chem12m5StaticDynamic",
+        "props": {
+          "burnAt": 70,
+          "zeroAt": 269,
+          "dynamicAt": 578,
+          "equalAt": 748,
+          "calmAt": 917
+        }
       }
     },
     {
@@ -157,88 +138,14 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L1/concept-conditions.f67d5822ccf0.mp3"
       },
       "diagram": {
-        "type": "lineGraph",
-        "xLabel": "Time",
-        "yLabel": "Concentration",
-        "series": [
-          {
-            "label": "Reactants",
-            "color": "chem1",
-            "points": [
-              [
-                0,
-                0.9
-              ],
-              [
-                0.12,
-                0.7
-              ],
-              [
-                0.28,
-                0.55
-              ],
-              [
-                0.45,
-                0.46
-              ],
-              [
-                0.65,
-                0.415
-              ],
-              [
-                0.82,
-                0.4
-              ],
-              [
-                1,
-                0.4
-              ]
-            ]
-          },
-          {
-            "label": "Products",
-            "color": "bio",
-            "points": [
-              [
-                0,
-                0.05
-              ],
-              [
-                0.12,
-                0.24
-              ],
-              [
-                0.28,
-                0.38
-              ],
-              [
-                0.45,
-                0.47
-              ],
-              [
-                0.65,
-                0.51
-              ],
-              [
-                0.82,
-                0.52
-              ],
-              [
-                1,
-                0.52
-              ]
-            ]
-          }
-        ],
-        "markers": [
-          {
-            "x": 0.66,
-            "label": "constant from here"
-          }
-        ]
-      },
-      "revealDelays": {
-        "diagram": 6
+        "type": "diorama",
+        "kind": "chem12m5Bottle",
+        "props": {
+          "reversibleAt": 105,
+          "closedAt": 212,
+          "openAt": 669,
+          "flatAt": 880
+        }
       }
     },
     {

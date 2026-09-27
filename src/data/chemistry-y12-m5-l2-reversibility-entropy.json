@@ -77,7 +77,14 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L2/concept-spectrum.f7f58eaa1ea8.mp3"
       },
       "diagram": {
-        "type": "gibbsSpontaneity"
+        "type": "diorama",
+        "kind": "chem12m5GibbsSpectrum",
+        "props": {
+          "bigAt": 190,
+          "smallAt": 454,
+          "zeroAt": 745,
+          "mixAt": 1000
+        }
       }
     },
     {
@@ -129,6 +136,17 @@
       "voiceover": {
         "text": "Here's a result that surprises a lot of students. A reaction can absorb heat and still happen on its own. Look again at Gibbs free energy equals enthalpy minus temperature times entropy. For the Gibbs free energy change to come out negative even when the enthalpy change is positive, the temperature times entropy term just has to be bigger than the enthalpy term. Take an instant cold pack, ammonium nitrate dissolving in water. Its enthalpy change is positive, plus twenty-five-point-seven, which is why the pack goes cold. But as the solid breaks into ions spreading through the water, the entropy increase is large and positive, so the overall Gibbs free energy change is negative and it dissolves spontaneously. Same story for calcium carbonate decomposing in a lime kiln. Its enthalpy change is strongly positive, but making carbon dioxide gas creates a big entropy increase, so once you push the temperature above about eight hundred and forty degrees, the temperature times entropy term wins and it becomes spontaneous. The rule to write down, an endothermic reaction is spontaneous only if entropy increases and the temperature is high enough.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L2/concept-entropy-driven.99700ad1db33.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5EntropyPays",
+        "props": {
+          "ruleAt": 69,
+          "packAt": 317,
+          "kilnAt": 634,
+          "crossAt": 819,
+          "finalAt": 917
+        }
       }
     },
     {

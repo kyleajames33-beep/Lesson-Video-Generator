@@ -74,6 +74,48 @@
       "voiceover": {
         "text": "Let's start with the easy case, where the question hands you every equilibrium concentration. This is just direct substitution, and the only real skill is being disciplined about it. Always write the Keq expression first, before you reach for the numbers. From Lesson nine, products over reactants, each concentration raised to its coefficient. Take sulfur dioxide reacting with oxygen to make sulfur trioxide. At equilibrium, sulfur dioxide is nought-point-two, oxygen is nought-point-one, and sulfur trioxide is nought-point-three-five. So Keq is sulfur trioxide squared, over sulfur dioxide squared times oxygen. The trap here is squaring a whole bracket instead of each concentration on its own, so apply the power to each one separately. Sulfur trioxide squared is nought-point-one-two-two-five. The bottom is nought-point-zero-four times nought-point-one. Divide, and Keq comes out at thirty-point-six. Notice it has no units, which is exactly what we expect for this reaction.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L10/concept-substitution.96d298d6a2c5.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5KeqBuilder",
+        "props": {
+          "species": [
+            {
+              "f": "SO₂",
+              "state": "g",
+              "coef": 2,
+              "side": "r",
+              "val": "0.200"
+            },
+            {
+              "f": "O₂",
+              "state": "g",
+              "coef": 1,
+              "side": "r",
+              "val": "0.100"
+            },
+            {
+              "f": "SO₃",
+              "state": "g",
+              "coef": 2,
+              "side": "p",
+              "val": "0.350"
+            }
+          ],
+          "productsAt": 180,
+          "reactantsAt": 215,
+          "powersAt": 262,
+          "subst": {
+            "valuesAt": 426,
+            "dropAt": 531,
+            "trapAt": 621,
+            "squareAt": 793,
+            "bottomAt": 831,
+            "divideAt": 876,
+            "unitsAt": 951,
+            "sig": 3
+          }
+        }
       }
     },
     {

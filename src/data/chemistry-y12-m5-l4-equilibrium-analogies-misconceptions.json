@@ -76,29 +76,52 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L4/concept-escalator.e4b5e032ad6e.mp3"
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Description level",
-          "What you see"
-        ],
-        "rows": [
-          [
-            "Macroscopic",
-            "Concentrations constant, looks frozen"
+        "type": "diorama",
+        "kind": "chem12m5Exchange",
+        "props": {
+          "equation": "Floor 1 (reactants) ⇌ Floor 2 (products)",
+          "left": {
+            "label": "Floor 1",
+            "el": "A"
+          },
+          "right": {
+            "label": "Floor 2",
+            "el": "B"
+          },
+          "left0": 8,
+          "right0": 6,
+          "startAtEq": true,
+          "hopEvery": 22,
+          "startAt": 20,
+          "graph": "conc",
+          "graphFrames": 820,
+          "meterLabels": [
+            "up · 50 per min",
+            "down · 50 per min"
           ],
-          [
-            "Microscopic",
-            "Both reactions running at equal rates"
+          "countLabels": [
+            "Floor 1: 200 people",
+            "Floor 2: 150 people"
           ],
-          [
-            "Common error B",
-            "Says concentrations are equal (wrong)"
+          "seriesLabels": [
+            "Floor 1: 200",
+            "Floor 2: 150"
           ],
-          [
-            "Common error C",
-            "Says reaction has stopped (wrong)"
+          "captions": [
+            {
+              "at": 260,
+              "text": "50 up and 50 down every minute: equal rates"
+            },
+            {
+              "at": 470,
+              "text": "Up escalator = forward rate, down = reverse rate"
+            },
+            {
+              "at": 760,
+              "text": "Numbers constant, but not equal: 200 vs 150"
+            }
           ]
-        ]
+        }
       }
     },
     {

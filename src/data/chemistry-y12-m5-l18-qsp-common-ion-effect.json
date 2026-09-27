@@ -57,30 +57,57 @@
       "heading": "Qsp versus Ksp: the decision rule",
       "body": "Qsp uses the current ion concentrations in the same expression as Ksp. Comparing them tells you what happens.",
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Comparison",
-          "State",
-          "What happens"
-        ],
-        "rows": [
-          [
-            "Qsp < Ksp",
-            "Unsaturated",
-            "No precipitate; more can dissolve"
-          ],
-          [
-            "Qsp = Ksp",
-            "Saturated",
-            "At equilibrium; on the edge"
-          ],
-          [
-            "Qsp > Ksp",
-            "Supersaturated",
-            "Precipitate forms (shifts left)"
+        "type": "diorama",
+        "kind": "chem12m5QGauge",
+        "props": {
+          "mode": "qsp",
+          "steps": [
+            {
+              "at": 0,
+              "set": [
+                2
+              ],
+              "captionAt": 20,
+              "caption": "Same expression as Ksp, with the ion concentrations right now"
+            },
+            {
+              "at": 328,
+              "caption": "Qsp < Ksp: unsaturated, no precipitate"
+            },
+            {
+              "at": 430,
+              "add": [
+                3
+              ],
+              "captionAt": 463,
+              "caption": "Qsp = Ksp: saturated, right on the edge"
+            },
+            {
+              "at": 560,
+              "add": [
+                3
+              ],
+              "captionAt": 591,
+              "caption": "Qsp > Ksp: supersaturated"
+            },
+            {
+              "at": 700,
+              "runAt": 722,
+              "runLen": 60,
+              "captionAt": 740,
+              "caption": "A precipitate forms until Qsp falls back to Ksp"
+            },
+            {
+              "at": 823,
+              "caption": "A small Qsp means unsaturated, not precipitating"
+            },
+            {
+              "at": 936,
+              "caption": "Only Qsp > Ksp precipitates",
+              "emph": true
+            }
           ]
-        ],
-        "delay": 20
+        }
       },
       "bullets": [
         {

@@ -76,34 +76,58 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L9/concept-rules.ab9230ec4417.mp3"
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Species",
-          "In Keq?",
-          "Why"
-        ],
-        "rows": [
-          [
-            "Gas (g)",
-            "Yes",
-            "Concentration varies"
+        "type": "diorama",
+        "kind": "chem12m5KeqBuilder",
+        "props": {
+          "species": [
+            {
+              "f": "N₂",
+              "state": "g",
+              "coef": 1,
+              "side": "r"
+            },
+            {
+              "f": "H₂",
+              "state": "g",
+              "coef": 3,
+              "side": "r"
+            },
+            {
+              "f": "NH₃",
+              "state": "g",
+              "coef": 2,
+              "side": "p"
+            }
           ],
-          [
-            "Aqueous (aq)",
-            "Yes",
-            "Concentration varies"
+          "amberPowers": true,
+          "productsAt": 105,
+          "reactantsAt": 150,
+          "powersAt": 199,
+          "rules": {
+            "at": 323,
+            "stayAt": 460
+          },
+          "pulses": [
+            {
+              "at": 649,
+              "side": "p"
+            },
+            {
+              "at": 700,
+              "side": "r"
+            }
           ],
-          [
-            "Pure solid (s)",
-            "No",
-            "Activity = 1"
-          ],
-          [
-            "Pure liquid / solvent water (l)",
-            "No",
-            "Activity = 1"
+          "notes": [
+            {
+              "at": 743,
+              "text": "Coefficients must match the equation exactly as written"
+            },
+            {
+              "at": 852,
+              "text": "Halve the equation → every power halves → value square-rooted"
+            }
           ]
-        ]
+        }
       }
     },
     {

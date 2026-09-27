@@ -76,22 +76,20 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L7/concept-tradeoff.c38db3850f86.mp3"
       },
       "diagram": {
-        "type": "barChart",
-        "bars": [
-          {
-            "label": "200°C yield",
-            "value": 38
-          },
-          {
-            "label": "400°C yield",
-            "value": 25
-          },
-          {
-            "label": "550°C yield",
-            "value": 12
+        "type": "diorama",
+        "kind": "chem12m5RateYield",
+        "props": {
+          "beats": {
+            "curves": 20,
+            "low": 142,
+            "high": 324,
+            "compromise": 439,
+            "pressure": 513,
+            "room": 797,
+            "zero": 945,
+            "punch": 990
           }
-        ],
-        "unit": "% NH₃"
+        }
       }
     },
     {

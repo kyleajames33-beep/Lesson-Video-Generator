@@ -74,6 +74,62 @@
       "voiceover": {
         "text": "Here's the good news. You already know how to calculate Q, because it's the same expression as Keq, letter for letter. Products over reactants, each concentration raised to its coefficient. The only difference is which concentrations you put in. Keq uses the values at equilibrium. Q uses the values right now, at whatever instant you're looking at, equilibrium or not. So Keq is really just the special value Q takes when the system has settled. Two quick anchor points. If you start with pure reactants and no products, the numerator is zero, so Q is zero. And if you somehow start with pure products and no reactants, the denominator is zero, so Q shoots off to infinity. One exam habit to build, only drop numbers straight into Keq when the question literally says equilibrium concentrations. Any other time, what you're calculating is Q, and you should call it Q.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L12/concept-define.8b5e5bf26c92.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5QGauge",
+        "props": {
+          "steps": [
+            {
+              "at": 0,
+              "set": [
+                9,
+                3
+              ],
+              "captionAt": 40,
+              "caption": "Same expression as Keq: products over reactants"
+            },
+            {
+              "at": 279,
+              "runAt": 292,
+              "runLen": 96,
+              "caption": "Q uses the concentrations right now"
+            },
+            {
+              "at": 388,
+              "caption": "Once settled, Q = Keq: Keq is just Q at equilibrium",
+              "emph": true
+            },
+            {
+              "at": 526,
+              "set": [
+                12,
+                0
+              ],
+              "caption": "Pure reactants: numerator is zero, so Q = 0"
+            },
+            {
+              "at": 610,
+              "runAt": 622,
+              "runLen": 130,
+              "caption": "The reaction runs and Q climbs to Keq"
+            },
+            {
+              "at": 772,
+              "set": [
+                0,
+                12
+              ],
+              "caption": "Pure products: denominator is zero, so Q → ∞"
+            },
+            {
+              "at": 880,
+              "runAt": 892,
+              "runLen": 130,
+              "caption": "Either way, Q heads to Keq"
+            }
+          ]
+        }
       }
     },
     {
@@ -82,23 +138,74 @@
       "heading": "The three-way rule",
       "body": "Comparing Q with Keq gives one of three answers, and each one fixes the direction of the shift.",
       "diagram": {
-        "type": "barChart",
-        "bars": [
-          {
-            "label": "Q < Keq → right",
-            "value": 1
-          },
-          {
-            "label": "Q = Keq → none",
-            "value": 2
-          },
-          {
-            "label": "Q > Keq → left",
-            "value": 3
-          }
-        ],
-        "unit": "",
-        "delay": 20
+        "type": "diorama",
+        "kind": "chem12m5QGauge",
+        "props": {
+          "homeAt": 677,
+          "steps": [
+            {
+              "at": 0,
+              "set": [
+                9,
+                3
+              ]
+            },
+            {
+              "at": 68,
+              "runAt": 96,
+              "runLen": 120,
+              "caption": "Q < Keq: too few products, so it shifts right"
+            },
+            {
+              "at": 282,
+              "set": [
+                4,
+                8
+              ],
+              "caption": "Q = Keq: already at equilibrium, no net shift"
+            },
+            {
+              "at": 405,
+              "set": [
+                1,
+                11
+              ],
+              "runAt": 432,
+              "runLen": 130,
+              "caption": "Q > Keq: too many products, so it shifts left"
+            },
+            {
+              "at": 677,
+              "caption": "The reaction always moves Q toward Keq",
+              "emph": true
+            },
+            {
+              "at": 759,
+              "set": [
+                10,
+                2
+              ],
+              "runAt": 772,
+              "runLen": 62,
+              "caption": "Q too low: it climbs by making products"
+            },
+            {
+              "at": 841,
+              "set": [
+                1,
+                11
+              ],
+              "runAt": 856,
+              "runLen": 80,
+              "caption": "Q too high: it drops by using products up"
+            },
+            {
+              "at": 1005,
+              "caption": "The shift is just Q finding its way home to Keq",
+              "emph": true
+            }
+          ]
+        }
       },
       "bullets": [
         {
@@ -143,6 +250,68 @@
       "voiceover": {
         "text": "Here's where Q earns its place, it explains why Le Chatelier's principle works at all. Back when you first met equilibrium, you learned that adding a reactant shifts the system right. But why? Because the moment you add reactant, the denominator of Q gets bigger, so Q instantly drops below Keq. And we just said a system with Q below Keq shifts right. So it does, until Q climbs back to Keq. Same logic in reverse for adding a product, the numerator grows, Q jumps above Keq, and the system shifts left to bring it back down. So Le Chatelier's principle is really the headline, and Q is the mechanism printed underneath. Le Chatelier tells you what happens. Q tells you exactly why. Disturbing a concentration is just knocking Q off Keq, and the shift you observe is the system answering back.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L12/concept-lcp.641c5adac5f9.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5QGauge",
+        "props": {
+          "steps": [
+            {
+              "at": 0,
+              "set": [
+                4,
+                8
+              ],
+              "caption": "At equilibrium: Q = Keq",
+              "captionAt": 20
+            },
+            {
+              "at": 250,
+              "add": [
+                6,
+                0
+              ],
+              "highlight": "den",
+              "highlightText": "↑ grows",
+              "caption": "Add a reactant: the denominator grows"
+            },
+            {
+              "at": 303,
+              "highlight": "den",
+              "highlightText": "↑ grows",
+              "runAt": 330,
+              "runLen": 110,
+              "caption": "Q drops below Keq, so it shifts right"
+            },
+            {
+              "at": 455,
+              "caption": "… until Q climbs back to Keq"
+            },
+            {
+              "at": 539,
+              "add": [
+                0,
+                6
+              ],
+              "highlight": "num",
+              "highlightText": "↑ grows",
+              "caption": "Add a product: the numerator grows"
+            },
+            {
+              "at": 590,
+              "highlight": "num",
+              "highlightText": "↑ grows",
+              "runAt": 620,
+              "runLen": 100,
+              "caption": "Q jumps above Keq, so it shifts left"
+            },
+            {
+              "at": 805,
+              "caption": "LCP says what happens; Q says why",
+              "emph": true
+            }
+          ]
+        }
       }
     },
     {

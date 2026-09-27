@@ -98,6 +98,70 @@
       "voiceover": {
         "text": "Now the second leak. Most ICE problems start with pure reactants, products at zero, so the reaction can only go forwards. But sometimes the question gives you starting amounts of products as well, and then you genuinely don't know which way it will move. So you calculate the reaction quotient, Q, using those initial concentrations. It's the exact same expression as Keq, just with current values instead of equilibrium ones, and we'll go deeper on Q next lesson. Compare it to Keq. If Q is less than Keq, there aren't enough products yet, so the reaction shifts right. If Q is greater than Keq, there's too much product, so it shifts left. And if they're equal, you're already at equilibrium and nothing changes. Only once you know the direction do you write the Change row, so the minus and plus signs point the right way. The trap is assuming it always goes right just because products are sitting there. It doesn't. Q versus Keq is the only thing that decides.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L11/concept-direction.fa0a50a31296.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5QGauge",
+        "props": {
+          "showQAt": 239,
+          "change": {
+            "at": 474,
+            "leftAt": 576,
+            "emphAt": 734
+          },
+          "steps": [
+            {
+              "at": 0,
+              "set": [
+                7,
+                5
+              ],
+              "captionAt": 30,
+              "caption": "Products present at the start: which way will it go?"
+            },
+            {
+              "at": 239,
+              "caption": "Calculate Q from the starting concentrations"
+            },
+            {
+              "at": 449,
+              "caption": "Compare Q with Keq"
+            },
+            {
+              "at": 474,
+              "runAt": 492,
+              "runLen": 70,
+              "caption": "Q < Keq: shifts right"
+            },
+            {
+              "at": 576,
+              "set": [
+                1,
+                11
+              ],
+              "runAt": 594,
+              "runLen": 64,
+              "caption": "Q > Keq: shifts left"
+            },
+            {
+              "at": 671,
+              "set": [
+                4,
+                8
+              ],
+              "caption": "Q = Keq: already at equilibrium, no change"
+            },
+            {
+              "at": 734,
+              "caption": "Direction first, then the Change-row signs"
+            },
+            {
+              "at": 874,
+              "caption": "Q versus Keq decides, not what is in the flask",
+              "emph": true
+            }
+          ]
+        }
       }
     },
     {

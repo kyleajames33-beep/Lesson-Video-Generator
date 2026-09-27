@@ -74,6 +74,54 @@
       "voiceover": {
         "text": "Let's start with Ka, the acid dissociation constant. Take a weak acid, HA, dissolving and partly splitting into hydrogen ions and the conjugate base, A minus. That's an equilibrium, so it has an equilibrium constant, and we call it Ka. Following the usual rules, it's products over reactants, hydrogen ion times A minus, all over HA. And just like any Keq involving water as the solvent, the water is left out. The key interpretation, a larger Ka means the dissociation lies further to the right, more of the acid has broken into ions, so it's a stronger acid. One thing to be really careful about, Ka is not the same as pH, and it's not the same as the hydrogen ion concentration. It's the equilibrium constant for the splitting. A strong acid has a Ka far bigger than one, essentially fully dissociated. A weak acid has a Ka far smaller than one, mostly staying intact.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L14/concept-ka.680f811481ed.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5KeqBuilder",
+        "props": {
+          "species": [
+            {
+              "f": "HA",
+              "state": "aq",
+              "coef": 1,
+              "side": "r"
+            },
+            {
+              "f": "H⁺",
+              "state": "aq",
+              "coef": 1,
+              "side": "p"
+            },
+            {
+              "f": "A⁻",
+              "state": "aq",
+              "coef": 1,
+              "side": "p"
+            }
+          ],
+          "k": "K_{a}",
+          "exprX": 270,
+          "productsAt": 232,
+          "reactantsAt": 262,
+          "powersAt": 300,
+          "tray": {
+            "at": 413,
+            "items": [
+              {
+                "f": "H₂O",
+                "state": "l",
+                "reason": "the solvent",
+                "at": 420
+              }
+            ]
+          },
+          "acids": {
+            "at": 448,
+            "notAt": 636,
+            "strongAt": 852,
+            "weakAt": 942
+          }
+        }
       }
     },
     {
