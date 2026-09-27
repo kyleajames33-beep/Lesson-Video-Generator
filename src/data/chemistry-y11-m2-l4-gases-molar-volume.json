@@ -3797,6 +3797,47 @@
         "bulletsStart": 448,
         "secondary": 914,
         "callout": 1270
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Triangle",
+        "delay": 195,
+        "props": {
+          "top": {
+            "sym": "V",
+            "unit": "L"
+          },
+          "left": {
+            "sym": "n",
+            "unit": "mol"
+          },
+          "right": {
+            "sym": "Vₘ",
+            "unit": "L mol⁻¹"
+          },
+          "finds": [
+            {
+              "find": "top",
+              "beat": 247
+            },
+            {
+              "find": "left",
+              "beat": 351
+            },
+            {
+              "find": "right",
+              "beat": 443
+            }
+          ],
+          "convert": {
+            "text": "500 mL ÷ 1000 = 0.5 L",
+            "beat": 1040
+          },
+          "trap": {
+            "text": "Gases only: 1 mol of liquid water is about 18 mL",
+            "beat": 1140
+          }
+        }
       }
     },
     {

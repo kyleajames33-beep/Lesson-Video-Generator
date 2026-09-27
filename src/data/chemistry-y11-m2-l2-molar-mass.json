@@ -1201,7 +1201,6 @@
         }
       ],
       "callout": "One mole has a predictable mass.",
-      "image": "l2ConceptPeriodicTable",
       "durationInFrames": 1336,
       "caption": "Molar mass equals relative atomic mass from the periodic table, measured in grams per mole.",
       "revealDelays": {
@@ -1953,7 +1952,42 @@
           "timestampMs": 42661,
           "confidence": null
         }
-      ]
+      ],
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2MolarScale",
+        "delay": 155,
+        "props": {
+          "header": {
+            "text": "Molar mass in g mol⁻¹ = relative atomic mass",
+            "beat": 97
+          },
+          "elements": [
+            {
+              "sym": "H",
+              "name": "hydrogen",
+              "ar": "1.008",
+              "grams": "1.008 g",
+              "beat": 345
+            },
+            {
+              "sym": "C",
+              "name": "carbon",
+              "ar": "12.01",
+              "grams": "12.01 g",
+              "beat": 615
+            },
+            {
+              "sym": "O",
+              "name": "oxygen",
+              "ar": "16.00",
+              "grams": "16.00 g",
+              "beat": 687
+            }
+          ],
+          "pulseBeat": 775
+        }
+      }
     },
     {
       "id": "definition",

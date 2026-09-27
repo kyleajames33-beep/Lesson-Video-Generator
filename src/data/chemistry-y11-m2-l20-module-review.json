@@ -48,7 +48,6 @@
       "type": "concept",
       "heading": "The mole is the hub",
       "body": "The mole is the bridge between particles you can't see and quantities you can measure.",
-      "image": "l20MoleHub",
       "bullets": [
         {"text": "One mole is 6.022 × 10²³ particles, Avogadro's constant."},
         {"text": "Every quantity — mass, volume, concentration — connects through moles."},
@@ -60,6 +59,45 @@
       "caption": "The mole connects mass, volume, concentration, and particle count.",
       "voiceover": {
         "text": "Start with the idea that holds the whole module together. The mole is the hub. It's the bridge between the particles you can't see and the quantities you can actually measure on a bench. One mole is six-point-zero-two-two times ten to the twenty-three particles, Avogadro's constant. And every measurable quantity connects through it. A mass converts to moles, a gas volume converts to moles, a solution's concentration and volume give moles, and a particle count gives moles. So the strategy for any problem in this module is the same. Get to moles from whatever you're given, then move from moles to whatever you want. Moles are the universal currency."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2MoleHub",
+        "props": {
+          "note": "1 mol = 6.022 × 10²³ particles",
+          "noteBeat": 256,
+          "spokes": [
+            {
+              "icon": "mass",
+              "label": "mass",
+              "into": "n = m ÷ M",
+              "out": "m = n × M",
+              "beat": 434
+            },
+            {
+              "icon": "gas",
+              "label": "gas volume",
+              "into": "n = V ÷ Vₘ",
+              "out": "V = n × Vₘ",
+              "beat": 481
+            },
+            {
+              "icon": "solution",
+              "label": "solution",
+              "into": "n = c × V",
+              "out": "c = n ÷ V",
+              "beat": 537
+            },
+            {
+              "icon": "particles",
+              "label": "particles",
+              "into": "n = N ÷ Nₐ",
+              "out": "N = n × Nₐ",
+              "beat": 612
+            }
+          ],
+          "outBeat": 836
+        }
       }
     },
     {
@@ -95,6 +133,19 @@
       "caption": "Mole ratio from coefficients; limiting reagent; percentage yield.",
       "voiceover": {
         "text": "Once you can get to moles, stoichiometry connects different substances. Three ideas recur in every reaction question. First, the mole ratio, which comes from the coefficients in the balanced equation, never the subscripts. It carries you from moles of one substance to moles of another. Second, the limiting reagent. Whenever you're given amounts of two reactants, you find which one runs out first by dividing each by its coefficient, and the smallest result limits the reaction. Third, percentage yield, comparing what you actually made to the theoretical maximum, always at or below a hundred percent. Mole ratio, limiting reagent, percentage yield. Those three handle the reaction side of the module."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "reactionRun",
+        "props": {
+          "equation": "2H₂ + O₂ → 2H₂O",
+          "reactants": [
+            {"label": "H₂", "atoms": ["H", "H"], "coef": 2, "count": 6},
+            {"label": "O₂", "atoms": ["O", "O"], "coef": 1, "count": 5}
+          ],
+          "product": {"label": "H₂O", "atoms": ["O", "H", "H"], "coef": 2},
+          "framesPerEvent": 130
+        }
       }
     },
     {

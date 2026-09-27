@@ -48,7 +48,6 @@
       "type": "concept",
       "heading": "Coefficients, not subscripts",
       "body": "The mole ratio comes from the coefficients in front of each formula, never the subscripts inside.",
-      "image": "l11MoleRatioRecipe",
       "bullets": [
         {"text": "A coefficient is the big number in front: it means moles."},
         {"text": "A subscript is the small number inside a formula: it means atoms."},
@@ -60,6 +59,33 @@
       "caption": "Mole ratio = coefficients (the big numbers in front), not subscripts.",
       "voiceover": {
         "text": "Here's the single most important distinction in this topic. The mole ratio comes from the coefficients, the big numbers written in front of each formula. It never comes from the subscripts, the small numbers inside a formula. A coefficient tells you how many moles of that substance take part. A subscript tells you how many atoms are inside one formula unit. Completely different jobs. Take two H two plus O two gives two H two O. The coefficients are two, one, and two. So the ratio of hydrogen gas to water is two to two, which simplifies to one to one. The little twos inside the formulas don't enter the ratio at all."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2CoefSub",
+        "props": {
+          "species": [
+            {"parts": [["H", "₂"]], "coef": 2, "atoms": ["H", "H"], "side": "left"},
+            {"parts": [["O", "₂"]], "coef": 1, "atoms": ["O", "O"], "side": "left"},
+            {
+              "parts": [["H", "₂"], ["O", ""]],
+              "coef": 2,
+              "atoms": ["O", "H", "H"],
+              "side": "right"
+            }
+          ],
+          "ratio": [0, 2],
+          "beats": {
+            "coef": 19,
+            "sub": 164,
+            "coefLabel": 272,
+            "subLabel": 380,
+            "molecules": 516,
+            "counts": 624,
+            "ratio": 687,
+            "dim": 850
+          }
+        }
       }
     },
     {
@@ -95,6 +121,18 @@
       "caption": "Moles known × (wanted coefficient ÷ known coefficient) = moles wanted.",
       "voiceover": {
         "text": "Here's the method that turns a mole ratio into an answer. Three steps. Start with the moles of the substance you're given. Multiply by the mole ratio, written as the coefficient of what you want, over the coefficient of what you know. That gives you the moles of the substance you want. The key to never getting it upside down, the ratio is always wanted over known. The thing you're solving for goes on top. So if you want product and you know reactant, it's product coefficient over reactant coefficient. Get that orientation right and you'll never flip the ratio."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Ratio",
+        "props": {
+          "equation": "2HCl + Ca(OH)₂ → CaCl₂ + 2H₂O",
+          "known": {"label": "Ca(OH)₂", "coef": 1, "moles": 0.3},
+          "wanted": {"label": "HCl", "coef": 2},
+          "crate": 0.1,
+          "dp": 1,
+          "beats": {"known": 63, "ratio": 149, "wanted": 341, "onTop": 581}
+        }
       }
     },
     {

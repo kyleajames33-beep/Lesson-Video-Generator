@@ -121,6 +121,39 @@
       "caption": "n = cV for the standard → mole ratio → unknown concentration.",
       "voiceover": {
         "text": "Here's the pathway, and it's all tools you already have. First, average your concordant titres to get an accurate volume. Second, find the moles of the standard solution using n equals c times V. Third, apply the mole ratio from the balanced equation to get the moles of the unknown. Fourth, divide those moles by the volume of the unknown to get its concentration. The one place students lose marks is the mole ratio. Do not assume it's one to one. A diprotic acid like sulfuric acid reacts with twice as much base, so the ratio is two to one. Always read it off the balanced equation."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Pathway",
+        "props": {
+          "given": {
+            "icon": "solution",
+            "label": "standard",
+            "sub": "c × average titre"
+          },
+          "wanted": {
+            "icon": "solution",
+            "label": "unknown",
+            "sub": "concentration"
+          },
+          "inOp": "n = c × V",
+          "ratioOp": "× mole ratio",
+          "outOp": "÷ V(unknown)",
+          "molesGiven": "n(standard)",
+          "molesWanted": "n(unknown)",
+          "piles": [
+            6,
+            3
+          ],
+          "trap": "Not always 1 : 1. H₂SO₄ reacts with 2 NaOH",
+          "trapOn": "ratio",
+          "beats": {
+            "in": 117,
+            "ratio": 243,
+            "out": 387,
+            "trap": 512
+          }
+        }
       }
     },
     {

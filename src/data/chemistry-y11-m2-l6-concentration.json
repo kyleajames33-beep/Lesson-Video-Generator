@@ -121,6 +121,46 @@
       "caption": "c = n ÷ V. Rearrange for n or V. Volume always in litres.",
       "voiceover": {
         "text": "Here's the formula that does all the work. c equals n over V. Concentration equals the moles of solute, divided by the volume of solution in litres. Like the formulas before it, it rearranges three ways. To find concentration, divide moles by litres. To find the moles, multiply concentration by litres. To find the volume, divide moles by concentration. There's one rule that trips up more students than anything else in this topic. The volume has to be in litres. Almost every question gives you millilitres to test whether you remember. Five hundred millilitres is nought-point-five litres. Convert first, then substitute."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Triangle",
+        "props": {
+          "top": {
+            "sym": "n",
+            "unit": "mol"
+          },
+          "left": {
+            "sym": "c",
+            "unit": "mol L⁻¹"
+          },
+          "right": {
+            "sym": "V",
+            "unit": "L"
+          },
+          "finds": [
+            {
+              "find": "left",
+              "beat": 280
+            },
+            {
+              "find": "top",
+              "beat": 347
+            },
+            {
+              "find": "right",
+              "beat": 423
+            }
+          ],
+          "trap": {
+            "text": "Volume must be in litres",
+            "beat": 499
+          },
+          "convert": {
+            "text": "500 mL ÷ 1000 = 0.5 L",
+            "beat": 803
+          }
+        }
       }
     },
     {

@@ -95,6 +95,26 @@
       "caption": "Mass → moles (precipitate) → mole ratio → analyte amount.",
       "voiceover": {
         "text": "Good news, no new formula. You're chaining the tools you already have. Start with the mass of the dried precipitate, and convert it to moles using n equals m over capital M, where capital M is the molar mass of the precipitate. Then apply the mole ratio from the balanced reaction to turn moles of precipitate into moles of the ion you wanted. Finally, convert those moles to whatever the question asks, a mass or a concentration. One warning that costs marks. When you find moles of the precipitate, use the molar mass of the precipitate, not the molar mass of the analyte. Mixing those two up is the classic error here."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Pathway",
+        "props": {
+          "given": {"icon": "precipitate", "label": "precipitate", "sub": "dried mass"},
+          "wanted": [
+            {"icon": "mass", "label": "analyte mass", "sub": "in g"},
+            {"icon": "solution", "label": "concentration", "sub": "of the analyte"}
+          ],
+          "inOp": "÷ M(precipitate)",
+          "ratioOp": "× mole ratio",
+          "outOp": ["× M(analyte)", "÷ V"],
+          "molesGiven": "n(ppt)",
+          "molesWanted": "n(analyte)",
+          "piles": [4, 4],
+          "trap": "Use M of the precipitate, not the analyte",
+          "trapOn": "in",
+          "beats": {"in": 41, "ratio": 298, "out": [478, 530], "trap": 598}
+        }
       }
     },
     {

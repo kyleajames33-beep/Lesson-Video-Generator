@@ -494,7 +494,44 @@
           "timestampMs": 24254,
           "confidence": null
         }
-      ]
+      ],
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Triangle",
+        "delay": 88,
+        "props": {
+          "top": {
+            "sym": "N",
+            "unit": "particles"
+          },
+          "left": {
+            "sym": "n",
+            "unit": "mol"
+          },
+          "right": {
+            "sym": "Nₐ",
+            "unit": "mol⁻¹"
+          },
+          "finds": [
+            {
+              "find": "top",
+              "beat": 402
+            },
+            {
+              "find": "left",
+              "beat": 520
+            },
+            {
+              "find": "right",
+              "beat": 580
+            }
+          ],
+          "convert": {
+            "text": "Nₐ = 6.022 × 10²³ mol⁻¹",
+            "beat": 14
+          }
+        }
+      }
     },
     {
       "id": "worked-example-1",

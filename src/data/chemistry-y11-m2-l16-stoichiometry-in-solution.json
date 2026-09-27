@@ -95,6 +95,23 @@
       "caption": "n = cV in, mole ratio across, mass or concentration out.",
       "voiceover": {
         "text": "Here's the pathway. Get onto the bridge by converting each given solution to moles with n equals c times V. Cross the bridge with the mole ratio. Then choose your exit ramp based on what the question wants. If it asks for the mass of a precipitate, exit by multiplying by the molar mass. If it asks for the concentration of a product in the mixture, exit by dividing by the total combined volume. Same bridge, two possible exits. The skill is reading which one the question is asking for, then taking that ramp."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Pathway",
+        "props": {
+          "given": {"icon": "solution", "label": "solution", "sub": "c and V given"},
+          "wanted": [
+            {"icon": "precipitate", "label": "precipitate", "sub": "mass in g"},
+            {"icon": "solution", "label": "concentration", "sub": "of the mixture"}
+          ],
+          "inOp": "n = c × V",
+          "ratioOp": "× mole ratio",
+          "outOp": ["× M", "÷ total V"],
+          "trap": "Concentration exit: divide by the total volume",
+          "trapOn": "out2",
+          "beats": {"in": 20, "ratio": 142, "out": [326, 489], "trap": 694}
+        }
       }
     },
     {

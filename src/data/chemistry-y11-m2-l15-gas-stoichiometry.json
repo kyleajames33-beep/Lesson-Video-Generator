@@ -95,6 +95,20 @@
       "caption": "n = V ÷ Vₘ in, mole ratio across, V = n × Vₘ out.",
       "voiceover": {
         "text": "Here's the extended method. It's the same four steps, but at any end that's a gas, you use molar volume instead of molar mass. If a gas is given, start by converting its volume to moles, n equals V over molar volume. Then apply the mole ratio across the bridge, just like always. If a gas is wanted, finish by converting moles to volume, V equals n times molar volume. Two reminders. The volume has to be in litres, and the molar volume you choose has to match the conditions the question states. Get the conditions right and the rest is the method you already own."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Pathway",
+        "props": {
+          "given": {"icon": "gas", "label": "gas volume", "sub": "given"},
+          "wanted": {"icon": "gas", "label": "gas volume", "sub": "wanted"},
+          "inOp": "n = V ÷ Vₘ",
+          "ratioOp": "× mole ratio",
+          "outOp": "V = n × Vₘ",
+          "trap": "V in litres, and Vₘ to match the conditions",
+          "trapOn": "none",
+          "beats": {"in": 155, "ratio": 318, "out": 418, "trap": 572}
+        }
       }
     },
     {
