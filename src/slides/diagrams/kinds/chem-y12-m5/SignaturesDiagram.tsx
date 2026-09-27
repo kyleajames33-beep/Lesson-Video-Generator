@@ -148,12 +148,12 @@ const Single = ({
 			{/* disturbance */}
 			<g opacity={ramp(frame, b.disturb, 10)}>
 				<line x1={gx(iD)} y1={GY0 - 4} x2={gx(iD)} y2={GY1} stroke={TOK.inkMute} strokeWidth={1.5} strokeDasharray="3 5" />
-				<text x={gx(iD) - 8} y={gy(sim.A[iD]) - 12} textAnchor="end" fill={theme.accent} fontSize={17} fontWeight={800}>add reactant</text>
+				<text x={gx(iD) - 8} y={gy(sim.A[iD]) + 26} textAnchor="end" fill={theme.accent} fontSize={17} fontWeight={800}>add reactant</text>
 			</g>
 			<g opacity={ramp(frame, b.relevel, 14)}>
 				<line x1={eqX2} y1={GY0 - 4} x2={eqX2} y2={GY1} stroke={theme.accent} strokeWidth={2} strokeDasharray="7 6" />
-				<text x={eqX2 + 6} y={GY0 + 14} fill={theme.accent} fontSize={16} fontWeight={800}>new</text>
-				<text x={eqX2 + 6} y={GY0 + 33} fill={theme.accent} fontSize={16} fontWeight={800}>levels</text>
+				<text x={eqX2 + 6} y={GY1 - 30} fill={theme.accent} fontSize={16} fontWeight={800}>new</text>
+				<text x={eqX2 + 6} y={GY1 - 11} fill={theme.accent} fontSize={16} fontWeight={800}>levels</text>
 			</g>
 
 			{/* flask on a plinth */}
