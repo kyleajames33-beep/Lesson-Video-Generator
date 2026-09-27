@@ -202,7 +202,7 @@ export const LeachingDiagram = ({
 							))}
 							{Array.from({length: n}, (_, i) => {
 								const q = particle(pn, i);
-								return <Ball key={i} id={ID} el="Toxin" x={q.x} y={q.y + (q.inSeed < 0.5 ? idleBob(frame, i, 0.6) : 0)} r={6.5} opacity={q.op} />;
+								return <Ball key={i} id={ID} el="Toxin" x={q.x} y={q.y + (q.inSeed < 0.5 ? idleBob(frame, i, 0.6) : 0)} r={8} opacity={q.op} />;
 							})}
 							{/* glass walls, with an inlet/outlet gap for running water */}
 							{pn === 0 ? (
