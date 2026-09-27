@@ -148,7 +148,62 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m5HaberLoop",
-        "props": {}
+        "props": {
+          "cards": [
+            {
+              "at": 47,
+              "title": "400–500 °C",
+              "lines": [
+                {
+                  "at": 90,
+                  "text": "Colder gives a better yield, but far too slow"
+                },
+                {
+                  "at": 227,
+                  "text": "Iron catalyst inactive below about 300 °C"
+                }
+              ]
+            },
+            {
+              "at": 427,
+              "title": "150–300 atm",
+              "lines": [
+                {
+                  "at": 470,
+                  "text": "Helps both yield and rate"
+                },
+                {
+                  "at": 651,
+                  "text": "Limit is engineering cost, not chemistry"
+                }
+              ]
+            },
+            {
+              "at": 708,
+              "title": "Iron catalyst",
+              "lines": [
+                {
+                  "at": 730,
+                  "text": "Lifts the rate, so a moderate T is enough"
+                },
+                {
+                  "at": 814,
+                  "text": "Does nothing to the yield"
+                }
+              ]
+            },
+            {
+              "at": 845,
+              "title": "Recycling",
+              "lines": [
+                {
+                  "at": 932,
+                  "text": "15% per pass → over 95% overall"
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     {

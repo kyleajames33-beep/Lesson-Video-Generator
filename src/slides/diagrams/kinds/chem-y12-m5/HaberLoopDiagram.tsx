@@ -29,16 +29,17 @@ export type HaberLoopProps = {
 const ID = 'c12m5hb';
 const W = 760;
 // plant geometry
-const R_X0 = 132, R_X1 = 228, R_Y0 = 148, R_Y1 = 372;
-const S_X0 = 298, S_X1 = 362, S_Y0 = 196, S_Y1 = 346;
-const JX = 60, FEED_Y = 346, LOOP_Y = 82;
+const R_X0 = 112, R_X1 = 232, R_Y0 = 118, R_Y1 = 414;
+const S_X0 = 282, S_X1 = 342, S_Y0 = 222, S_Y1 = 414;
+const SC = (S_X0 + S_X1) / 2;
+const JX = 52, FEED_Y = 380, LOOP_Y = 62, PIPE_X = 256;
 
-const P_FEED: [number, number][] = [[6, FEED_Y], [JX, FEED_Y]];
+const P_FEED: [number, number][] = [[4, FEED_Y], [JX, FEED_Y]];
 const P_MAIN: [number, number][] = [
-	[JX, FEED_Y], [R_X0 + 20, FEED_Y], [180, FEED_Y - 8], [180, R_Y0 + 22], [R_X1 + 10, R_Y0 + 22], [268, R_Y0 + 22], [268, 226], [S_X0 + 18, 226], [330, 250],
+	[JX, FEED_Y], [R_X0 + 24, FEED_Y], [172, FEED_Y - 8], [172, R_Y0 + 26], [R_X1 + 8, R_Y0 + 26], [PIPE_X, R_Y0 + 26], [PIPE_X, 252], [S_X0 + 14, 252], [SC, 276],
 ];
-const P_LOOP: [number, number][] = [[330, 250], [338, S_Y0 + 6], [338, LOOP_Y], [JX, LOOP_Y], [JX, FEED_Y]];
-const P_OUT: [number, number][] = [[330, 250], [330, 318], [S_X1 + 4, 318], [400, 318]];
+const P_LOOP: [number, number][] = [[SC, 276], [SC + 6, S_Y0 + 6], [SC + 6, LOOP_Y], [JX, LOOP_Y], [JX, FEED_Y]];
+const P_OUT: [number, number][] = [[SC, 276], [SC, 352], [S_X1 + 4, 352], [404, 352]];
 
 const len = (p: [number, number][]) => p.slice(1).reduce((s, q, i) => s + Math.hypot(q[0] - p[i][0], q[1] - p[i][1]), 0);
 // arc-length resample so particles move at constant speed
@@ -102,7 +103,7 @@ export const HaberLoopDiagram = ({delay = 62, cards = DEFAULT_CARDS}: HaberLoopP
 			const s = u / T_MAIN;
 			const [x, y] = polyAt(RM, s);
 			// converted molecules change to NH₃ on the top catalyst bed
-			const isNH3 = conv && y < R_Y0 + 60 && x >= 179;
+			const isNH3 = conv && y < R_Y0 + 70 && x >= 171;
 			return {x, y, kind: isNH3 ? 'NH3' : kind, op: 1};
 		}
 		const v = u - T_MAIN;
@@ -140,13 +141,13 @@ export const HaberLoopDiagram = ({delay = 62, cards = DEFAULT_CARDS}: HaberLoopP
 	const fe = colorOf('Fe');
 
 	// ── cards ──
-	const CX = 414, CW = 338;
-	let cy = 30;
+	const CX = 414, CW = 342;
+	let cy = 14;
 	const laid = cards.map((c) => {
-		const ls = c.lines.map((l) => ({...l, rows: wrap(l.text, 17, CW - 44)}));
-		const h = 44 + ls.reduce((s, l) => s + l.rows.length * 22 + 4, 0) + 8;
+		const ls = c.lines.map((l) => ({...l, rows: wrap(l.text, 17, CW - 36)}));
+		const h = 38 + ls.reduce((s, l) => s + l.rows.length * 21 + 3, 0) + 8;
 		const y = cy;
-		cy += h + 10;
+		cy += h + 8;
 		return {...c, ls, h, y};
 	});
 
@@ -169,14 +170,14 @@ export const HaberLoopDiagram = ({delay = 62, cards = DEFAULT_CARDS}: HaberLoopP
 			</defs>
 
 			<g opacity={ramp(frame, 0, 16)}>
-				<DioramaPlinth id={`${ID}r`} cx={180} cy={392} rx={84} />
-				<DioramaPlinth id={`${ID}s`} cx={330} cy={392} rx={56} />
+				<DioramaPlinth id={`${ID}r`} cx={(R_X0 + R_X1) / 2} cy={R_Y1 + 4} rx={92} />
+				<DioramaPlinth id={`${ID}s`} cx={SC} cy={S_Y1 + 4} rx={56} />
 
 				{/* pipes: recycle loop (behind), feed, main, out */}
 				{pipe(P_LOOP, rec)}
 				{pipe(P_FEED)}
 				{pipe([[JX, FEED_Y], [R_X0, FEED_Y]])}
-				{pipe([[R_X1, R_Y0 + 22], [268, R_Y0 + 22], [268, 226], [S_X0, 226]])}
+				{pipe([[R_X1, R_Y0 + 26], [PIPE_X, R_Y0 + 26], [PIPE_X, 252], [S_X0, 252]])}
 				{pipe(P_OUT.slice(1))}
 
 				{/* reactor */}
@@ -185,41 +186,41 @@ export const HaberLoopDiagram = ({delay = 62, cards = DEFAULT_CARDS}: HaberLoopP
 				<rect x={R_X0 + 12} y={R_Y0 + 14} width={R_X1 - R_X0 - 24} height={R_Y1 - R_Y0 - 28} rx={18} fill="rgba(255,255,255,0.55)" />
 				{/* catalyst beds */}
 				{[0, 1, 2].map((i) => {
-					const y = R_Y0 + 70 + i * 62;
+					const y = R_Y0 + 76 + i * 84;
 					return (
 						<g key={i}>
 							<rect x={R_X0 + 16} y={y} width={R_X1 - R_X0 - 32} height={16} rx={4} fill={shade(fe, -0.1)} />
-							{Array.from({length: 6}, (_, j) => (
-								<circle key={j} cx={R_X0 + 26 + j * 12} cy={y + 8} r={3.2} fill={shade(fe, 0.25 + 0.2 * cat * Math.sin(frame / 6 + j + i * 2))} />
+							{Array.from({length: 8}, (_, j) => (
+								<circle key={j} cx={R_X0 + 26 + j * 10} cy={y + 8} r={3.2} fill={shade(fe, 0.25 + 0.2 * cat * Math.sin(frame / 6 + j + i * 2))} />
 							))}
 						</g>
 					);
 				})}
 				{/* separator */}
 				<rect x={S_X0} y={S_Y0} width={S_X1 - S_X0} height={S_Y1 - S_Y0} rx={20} fill={`url(#${ID}-steel)`} stroke="#7c8188" strokeWidth={2} />
-				<rect x={S_X0 + 9} y={S_Y1 - 50} width={S_X1 - S_X0 - 18} height={38} rx={10} fill="rgba(138,92,201,0.25)" />
+				<rect x={S_X0 + 9} y={S_Y1 - 76} width={S_X1 - S_X0 - 18} height={62} rx={10} fill="rgba(138,92,201,0.25)" />
 			</g>
 
 			{/* flowing molecules */}
 			<g opacity={ramp(frame, 8, 16)}>
-				{parts.map((p, k) => (p.op > 0.02 ? <GasMolecule key={k} id={ID} kind={p.kind as 'N2' | 'H2' | 'NH3'} x={p.x} y={p.y} s={0.72} opacity={p.op} /> : null))}
+				{parts.map((p, k) => (p.op > 0.02 ? <GasMolecule key={k} id={ID} kind={p.kind as 'N2' | 'H2' | 'NH3'} x={p.x} y={p.y} s={0.85} opacity={p.op} /> : null))}
 			</g>
 
 			{/* gauge on the reactor */}
 			<g opacity={ramp(frame, 0, 16)}>
-				<circle cx={R_X0 - 4} cy={R_Y0 + 44} r={22} fill="#8d9299" />
-				<circle cx={R_X0 - 4} cy={R_Y0 + 44} r={18} fill="#ffffff" />
-				<line x1={R_X0 - 4} y1={R_Y0 + 44} x2={R_X0 - 4 + Math.cos(needleA) * 14} y2={R_Y0 + 44 + Math.sin(needleA) * 14} stroke="#c0392b" strokeWidth={3} strokeLinecap="round" />
-				<circle cx={R_X0 - 4} cy={R_Y0 + 44} r={3} fill={TOK.ink} />
+				<circle cx={R_X0 - 4} cy={R_Y0 + 60} r={22} fill="#8d9299" />
+				<circle cx={R_X0 - 4} cy={R_Y0 + 60} r={18} fill="#ffffff" />
+				<line x1={R_X0 - 4} y1={R_Y0 + 60} x2={R_X0 - 4 + Math.cos(needleA) * 14} y2={R_Y0 + 60 + Math.sin(needleA) * 14} stroke="#c0392b" strokeWidth={3} strokeLinecap="round" />
+				<circle cx={R_X0 - 4} cy={R_Y0 + 60} r={3} fill={TOK.ink} />
 			</g>
 
 			{/* plant labels */}
 			<g opacity={ramp(frame, 10, 16)}>
-				<text x={180} y={454} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>reactor</text>
-				<text x={330} y={454} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>separator</text>
-				<text x={8} y={FEED_Y + 34} fill={TOK.inkDim} fontSize={16} fontWeight={800}>N₂ + H₂ in</text>
-				<text x={398} y={300} textAnchor="end" fill={shade('#8a5cc9', -0.1)} fontSize={16} fontWeight={800}>NH₃ out</text>
-				<text x={200} y={LOOP_Y - 18} textAnchor="middle" fill={rec > 0 ? TOK.amberInk : TOK.inkDim} fontSize={16} fontWeight={800}>unreacted N₂ + H₂ recycled</text>
+				<text x={(R_X0 + R_X1) / 2} y={R_Y1 + 70} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>reactor</text>
+				<text x={SC} y={R_Y1 + 70} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>separator</text>
+				<text x={4} y={FEED_Y + 32} fill={TOK.inkDim} fontSize={16} fontWeight={800}>N₂ + H₂ in</text>
+				<text x={404} y={378} textAnchor="end" fill={shade('#8a5cc9', -0.1)} fontSize={16} fontWeight={800}>NH₃ out</text>
+				<text x={196} y={LOOP_Y - 16} textAnchor="middle" fill={rec > 0 ? TOK.amberInk : TOK.inkDim} fontSize={16} fontWeight={800}>unreacted N₂ + H₂ recycled</text>
 			</g>
 
 			{/* condition cards */}
@@ -230,16 +231,16 @@ export const HaberLoopDiagram = ({delay = 62, cards = DEFAULT_CARDS}: HaberLoopP
 					<g key={i} opacity={on} transform={`translate(0 ${(1 - on) * 10})`}>
 						<rect x={CX} y={c.y} width={CW} height={c.h} rx={14} fill="#ffffff" stroke={isRec ? TOK.amber : TOK.rule} strokeWidth={isRec ? 2.5 : 2} />
 						<rect x={CX} y={c.y + 12} width={5} height={c.h - 24} rx={2.5} fill={isRec ? TOK.amber : theme.accent} />
-						<text x={CX + 20} y={c.y + 30} fill={isRec ? TOK.amberInk : theme.accent} fontSize={21} fontWeight={800}>{c.title}</text>
+						<text x={CX + 18} y={c.y + 27} fill={isRec ? TOK.amberInk : theme.accent} fontSize={20} fontWeight={800}>{c.title}</text>
 						{(() => {
-							let ly = c.y + 58;
+							let ly = c.y + 52;
 							return c.ls.map((l, j) => {
 								const y0 = ly;
-								ly += l.rows.length * 22 + 4;
+								ly += l.rows.length * 21 + 3;
 								return (
 									<g key={j} opacity={ramp(frame, l.at, 12)}>
 										{l.rows.map((r, q) => (
-											<text key={q} x={CX + 20} y={y0 + q * 22} fill={TOK.ink} fontSize={17} fontWeight={700}>{r}</text>
+											<text key={q} x={CX + 18} y={y0 + q * 21} fill={TOK.ink} fontSize={17} fontWeight={700}>{r}</text>
 										))}
 									</g>
 								);
