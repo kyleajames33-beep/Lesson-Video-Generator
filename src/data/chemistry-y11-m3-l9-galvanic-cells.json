@@ -97,12 +97,49 @@
       ],
       "callout": "Remove any one part and the cell stops producing current.",
       "diagram": {
-        "type": "galvanicCell",
-        "leftMetal": "Zn",
-        "leftIon": "Zn²⁺",
-        "rightMetal": "Cu",
-        "rightIon": "Cu²⁺",
-        "delay": 0
+        "type": "diorama",
+        "kind": "chem11m3GalvanicCell",
+        "delay": 90,
+        "props": {
+          "flowAt": 440,
+          "rolesAt": [
+            440,
+            560
+          ],
+          "parts": [
+            440,
+            560,
+            500,
+            690
+          ],
+          "steps": [
+            {
+              "at": 0,
+              "text": "Four parts make one closed loop"
+            },
+            {
+              "at": 440,
+              "text": "Anode: oxidation releases electrons"
+            },
+            {
+              "at": 500,
+              "text": "Electrons travel through the wire, doing work"
+            },
+            {
+              "at": 560,
+              "text": "Cathode: reduction uses up the electrons"
+            },
+            {
+              "at": 690,
+              "text": "Salt bridge: ions keep both solutions neutral"
+            },
+            {
+              "at": 1060,
+              "text": "Remove any part and the current stops",
+              "key": true
+            }
+          ]
+        }
       },
       "durationInFrames": 1440,
       "caption": "Four components: anode, cathode, external wire, salt bridge.",
