@@ -104,29 +104,23 @@ const Population = ({
 // ─────────────────────────────────────────────────────────────── forms
 const FormsMode = ({frame, beats, id}: {frame: number; beats: number[]; id: string}) => {
 	const [tEq, tTags, tCross, tBlock, tSum] = beats;
-	const PCX = 380, PCY = 362;
-	const BW = 480, BH = 212;
+	const PCX = 380, PCY = 368;
+	const BW = 500, BH = 236;
 	const x0 = PCX - BW / 2 + 22; // left wall (ball centre limit adds r)
 	const memL = 358, memR = 402;
 	const x1 = PCX + BW / 2 - 22;
-	const r = 20;
-	const yTop = PCY - BH * 0.86 + 30, yBot = PCY - 30;
+	const r = 23;
+	const yTop = PCY - BH * 0.86 + 32, yBot = PCY - 30;
 
-	const yAt = (k: number, t: number, lo = yTop, hi = yBot) => lo + tri(hash(k, 3) * 2 + t * (0.004 + hash(k, 5) * 0.003)) * (hi - lo);
+	// Evenly spread phases (k / n) so molecules don't bunch; speeds differ slightly.
+	const fx = (k: number, n: number, t: number, salt: number) => tri((k / n) * 2 + hash(k, salt) * 0.25 + t * 0.0062 * (1 + 0.08 * (hash(k, salt + 1) - 0.5)));
+	const fy = (k: number, n: number, t: number, salt: number) => tri((((k * 3 + 1) % n) / n) * 2 + 0.25 + hash(k, salt) * 0.2 + t * 0.0047 * (1 + 0.08 * (hash(k, salt + 2) - 0.5)));
+	const yAt = (k: number, t: number, salt: number) => yTop + fy(k, 4, t, salt) * (yBot - yTop);
 	// A⁻ roam the whole left compartment, so they keep hitting the membrane.
-	const aPos = (k: number, t: number) => ({
-		x: x0 + r + tri(hash(k, 11) * 2 + t * (0.006 + hash(k, 13) * 0.003)) * (memL - r - (x0 + r)),
-		y: yAt(k + 20, t),
-	});
+	const aPos = (k: number, t: number) => ({x: x0 + r + fx(k, 4, t, 11) * (memL - r - (x0 + r)), y: yAt(k, t, 3)});
 	// HA roam the left (kept clear of the membrane) until they cross.
-	const haLeft = (k: number, t: number) => ({
-		x: x0 + r + tri(hash(k, 17) * 2 + t * (0.005 + hash(k, 19) * 0.003)) * (300 - (x0 + r)),
-		y: yAt(k, t),
-	});
-	const haRight = (k: number, t: number) => ({
-		x: memR + r + 6 + tri(hash(k, 23) * 2 + t * (0.004 + hash(k, 29) * 0.002)) * (x1 - r - (memR + r + 6)),
-		y: yAt(k + 40, t),
-	});
+	const haLeft = (k: number, t: number) => ({x: x0 + r + fx((k + 2) % 4, 4, t, 17) * (300 - (x0 + r)), y: yAt((k + 1) % 4, t, 7)});
+	const haRight = (k: number, t: number) => ({x: memR + r + 6 + fx(k, 4, t, 23) * (x1 - r - (memR + r + 6)), y: yAt((k + 2) % 4, t, 29)});
 	const NHA = 4, NA = 4;
 	const crossLen = 56;
 	const haPos = (k: number) => {
@@ -176,8 +170,8 @@ const FormsMode = ({frame, beats, id}: {frame: number; beats: number[]; id: stri
 				<text x={540} y={86} textAnchor="middle" fill={INK_A} fontSize={18} fontWeight={800}>ionised, more polar</text>
 			</g>
 			<g opacity={enter}>
-				<text x={250} y={140} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={700}>water</text>
-				<Pill x={W / 2} y={126} text="lipid membrane" color="#b7892e" textColor="#8a6414" size={17} />
+				<text x={250} y={120} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={700}>water</text>
+				<Pill x={W / 2} y={114} text="lipid membrane" color="#b7892e" textColor="#8a6414" size={17} />
 			</g>
 
 			<DioramaPlinth id={id} cx={PCX} cy={PCY} rx={280}>
@@ -511,15 +505,15 @@ const HoclMode = ({frame, beats, id, pKa, lowerPH, higherPH}: {frame: number; be
 
 			{/* legend with the key fact */}
 			<g opacity={ramp(frame, tTag, 16)}>
-				<Molecule id={id} atoms={['O', 'H', 'Cl']} x={96} y={128} r={12} />
-				<text x={124} y={137} fill={TOK.ink} fontSize={20} fontWeight={800}>HOCl</text>
-				<Pill x={296} y={130} text="more effective disinfectant" color={TOK.amber} textColor={TOK.amberInk} size={17} strokeWidth={2 + idlePulse(frame) * 1.5} />
+				<Molecule id={id} atoms={['O', 'H', 'Cl']} x={58} y={128} r={12} />
+				<text x={84} y={137} fill={TOK.ink} fontSize={20} fontWeight={800}>HOCl</text>
+				<Pill x={290} y={130} text="more effective disinfectant" color={TOK.amber} textColor={TOK.amberInk} size={17} strokeWidth={2 + idlePulse(frame) * 1.5} />
 			</g>
 			<g opacity={ramp(frame, tRise, 16)}>
-				<Molecule id={id} atoms={['O', 'Cl']} x={490} y={128} r={12} />
-				<text x={505} y={120} fill={TOK.ink} fontSize={17} fontWeight={800}>−</text>
-				<text x={520} y={137} fill={TOK.ink} fontSize={20} fontWeight={800}>OCl⁻</text>
-				<text x={574} y={137} fill={TOK.inkDim} fontSize={17} fontWeight={700}>weaker disinfectant</text>
+				<Molecule id={id} atoms={['O', 'Cl']} x={470} y={128} r={12} />
+				<text x={485} y={120} fill={TOK.ink} fontSize={17} fontWeight={800}>−</text>
+				<text x={500} y={137} fill={TOK.ink} fontSize={20} fontWeight={800}>OCl⁻</text>
+				<text x={554} y={137} fill={TOK.inkDim} fontSize={17} fontWeight={700}>weaker disinfectant</text>
 			</g>
 
 			<g opacity={ramp(frame, tHigh, 16)}>

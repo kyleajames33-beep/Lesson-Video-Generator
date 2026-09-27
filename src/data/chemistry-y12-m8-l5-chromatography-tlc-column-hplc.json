@@ -60,6 +60,11 @@
       "caption": "Differential affinity for the stationary and mobile phases separates components.",
       "voiceover": {
         "text": "So let's get the core idea, and there's a phrase the exam wants. Chromatography separates a mixture by differential affinity for two phases. Every method has a stationary phase that stays put, and a mobile phase that moves. As the mobile phase carries the mixture along, each component splits between the two phases in its own way. A component strongly attracted to the stationary phase clings and moves slowly. A component that prefers the mobile phase travels fast. The key point is that this separation isn't random, it reflects real chemistry, polarity, intermolecular forces, solubility. So the speed a component moves at is actually telling you about its structure."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Separation",
+        "props": {"mode": "principle", "beats": [110, 190, 250, 300, 470, 570, 740]}
       }
     },
     {
@@ -78,6 +83,11 @@
       "caption": "Rf = compound distance ÷ solvent-front distance, between 0 and 1.",
       "voiceover": {
         "text": "The simplest version is thin-layer chromatography, TLC. The stationary phase is a thin coat of silica on a plate, and the mobile phase is a solvent creeping up by capillary action. You spot your mixture near the bottom, and as the solvent rises, the components travel different distances. To put a number on it, you calculate the Rf value, the distance the compound travelled divided by the distance the solvent front travelled. Rf has no units, and because the compound can't outrun the solvent, it always lands between zero and one. Two things to remember. If a supposedly pure sample gives more than one spot, it's not pure. And on silica, which is polar, a polar compound sticks hard and gives a low Rf."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Separation",
+        "props": {"mode": "tlc", "beats": [20, 130, 215, 280, 430, 450, 545, 575, 750, 850]}
       }
     },
     {
@@ -164,6 +174,14 @@
               "labelAt": [0.25, 6.45]
             },
             {
+              "points": [[0.05, 5.45], [4.2, 5.45]],
+              "color": "accent",
+              "width": 3,
+              "dash": "8 6",
+              "beat": 198,
+              "dur": 40
+            },
+            {
               "gen": {
                 "type": "peaks",
                 "base": 0.6,
@@ -192,7 +210,7 @@
               "dur": 70
             }
           ],
-          "penSeries": 2,
+          "penSeries": 3,
           "refs": [{"axis": "x", "value": 4.2, "label": "same retention time", "beat": 470, "labelPos": 10.1}],
           "notes": [
             {
@@ -206,7 +224,7 @@
             },
             {
               "x": 2.1,
-              "y": 7.1,
+              "y": 4.85,
               "text": "retention time",
               "anchor": "middle",
               "beat": 198,
@@ -215,7 +233,7 @@
             },
             {
               "x": 4.75,
-              "y": 3.4,
+              "y": 4.3,
               "text": "supports identity",
               "sub": "same conditions only · not proof",
               "anchor": "start",

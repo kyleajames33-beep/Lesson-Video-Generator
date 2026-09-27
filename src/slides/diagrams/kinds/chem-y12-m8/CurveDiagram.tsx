@@ -272,7 +272,6 @@ export const CurveDiagram = ({
 			{/* Standards (and the unknown) as cuvettes on a stone plinth */}
 			{cuvettes && (
 				<g opacity={ramp(frame, 0, 14)}>
-					<DioramaPlinth id={ID} cx={W / 2} cy={(title ? 58 : 16) + 104} rx={300} />
 					{cuvettes.items.map((c, i) => {
 						const n = cuvettes.items.length;
 						const cx = W / 2 + (i - (n - 1) / 2) * (480 / Math.max(1, n - 1));
@@ -280,7 +279,9 @@ export const CurveDiagram = ({
 						const s = pop(frame, fps, c.beat);
 						const bob = idleBob(frame, i, 1.2) * ramp(frame, c.beat + 20, 20);
 						return (
-							<g key={i} transform={`translate(${cx},${base + bob}) scale(${Math.max(0.001, s)})`}>
+							<g key={i}>
+							<DioramaPlinth id={`${ID}-cv${i}`} cx={cx} cy={base - 2} rx={38} />
+							<g transform={`translate(${cx},${base + bob}) scale(${Math.max(0.001, s)})`}>
 								<rect x={-17} y={-78} width={34} height={78} rx={4} fill="#ffffff" fillOpacity={0.5} stroke="rgba(70,90,110,0.6)" strokeWidth={2.5} />
 								<rect x={-14} y={-60} width={28} height={57} rx={2} fill={cuvettes.color} opacity={0.08 + 0.82 * c.strength} />
 								<rect x={-12} y={-72} width={5} height={60} rx={2.5} fill="#ffffff" opacity={0.55} />
@@ -288,10 +289,11 @@ export const CurveDiagram = ({
 									{c.label}
 								</text>
 							</g>
+							</g>
 						);
 					})}
 					{cuvettes.title && (
-						<text x={W / 2} y={(title ? 58 : 16) + 150} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>
+						<text x={W / 2} y={(title ? 58 : 16) + 146} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>
 							{cuvettes.title}
 						</text>
 					)}

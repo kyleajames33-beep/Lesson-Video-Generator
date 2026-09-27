@@ -61,6 +61,11 @@
       "caption": "Like dissolves like: polar drugs suit plasma, non-polar suit membranes.",
       "voiceover": {
         "text": "Let's start with the governing principle, like dissolves like. Drug solubility is a balancing act, because the body has two very different environments. Blood plasma is aqueous, watery and polar, but cell membranes are largely lipid, oily and non-polar. So the same molecule can behave very differently depending on where it is. Polar functional groups and the ability to hydrogen bond usually improve solubility in water, the groups we met in Lesson 11, like hydroxyl and carboxylic acid. Less polar, hydrocarbon-rich regions favour interaction with lipid environments instead. So a polar drug suits the aqueous plasma, while a non-polar drug suits the lipid membranes. And that's exactly why medicinal chemistry is usually a compromise, not a single ideal property. A good drug has to dissolve well enough in plasma and still cross lipid membranes."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Delivery",
+        "props": {"mode": "like", "beats": [111, 161, 317, 501, 685, 792]}
       }
     },
     {
@@ -141,6 +146,11 @@
       "caption": "First-pass metabolism in the liver cuts oral bioavailability before circulation.",
       "voiceover": {
         "text": "Let's look closely at first-pass metabolism, because it explains our hook. Even if a drug is well absorbed from the gut, it doesn't go straight to the body. An orally absorbed drug reaches the liver before it reaches general circulation. If a lot of the drug is metabolised there, then much less unchanged active drug makes it out to the rest of the body, and that lowers oral bioavailability. Sometimes chemists turn this to their advantage with a prodrug, which is given in an inactive form and then converted to the active drug in the body, codeine converting to morphine is the named example. But when first-pass metabolism is heavy and unavoidable, as with that angina drug, swallowing the medicine simply delivers too little. That's the whole reason the route of administration is a chemistry-driven decision, not just a matter of convenience."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Delivery",
+        "props": {"mode": "firstpass", "beats": [24, 141, 224, 390, 424, 611], "prodrug": "codeine", "activeDrug": "morphine"}
       }
     },
     {

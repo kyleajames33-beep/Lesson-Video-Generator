@@ -51,21 +51,9 @@
       "heading": "The treatment train",
       "body": "Drinking water treatment works because different stages solve different chemical problems. It's a multi-barrier system, not one magic step.",
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {"id": "coag", "label": "Coagulation"},
-          {"id": "floc", "label": "Flocculation"},
-          {"id": "sed", "label": "Sedimentation"},
-          {"id": "filt", "label": "Filtration"},
-          {"id": "dis", "label": "Disinfection"}
-        ],
-        "edges": [
-          {"from": "coag", "to": "floc"},
-          {"from": "floc", "to": "sed"},
-          {"from": "sed", "to": "filt"},
-          {"from": "filt", "to": "dis"}
-        ],
-        "delay": 18
+        "type": "diorama",
+        "kind": "chem12m8Treatment",
+        "props": {"mode": "train", "beats": [154, 244, 327, 417, 475, 516, 590, 853]}
       },
       "bullets": [
         {"text": "Coagulation and flocculation: destabilise and clump fine particles."},
@@ -96,6 +84,11 @@
       "caption": "Al3+ hydrolyses to Al(OH)3 colloid, which adsorbs suspended particles.",
       "voiceover": {
         "text": "Let's get into the chemistry of coagulation, because it's a classic exam target. Many suspended particles in raw water are just too small and too stable to settle on their own. Alum fixes that. Alum is aluminium sulfate, and in water it provides aluminium three plus ions. Those ions hydrolyse, aluminium three plus plus three water molecules gives a gelatinous aluminium hydroxide colloid plus three hydrogen ions. That aluminium hydroxide colloid is the workhorse, it adsorbs the suspended particles onto its surface and destabilises them. Then flocculation, gentle mixing, lets those destabilised particles collide and grow into larger flocs. And sedimentation lets gravity settle the flocs out. One thing to be careful about, coagulation is about removing particles, it is not mainly about killing microbes. That's a separate job for disinfection later."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Treatment",
+        "props": {"mode": "coag", "beats": [47, 208, 308, 331, 461, 598, 706, 767]}
       }
     },
     {
@@ -114,6 +107,11 @@
       "caption": "Filtration removes fine particles; activated carbon removes organics before chlorination.",
       "voiceover": {
         "text": "Sedimentation removes a lot, but not everything, so filtration acts as the next barrier for the smaller particles left behind. The water passes through layers of sand and gravel, which trap the remaining particulate matter. Activated carbon can also be used, because its enormous surface area adsorbs dissolved organic compounds, the ones that affect taste, odour, and treatment performance. And here's why that matters chemically, and it's easy to miss. Dissolved organic matter isn't just an aesthetic problem. It can react later with chlorine to form disinfection by-products. So by removing the organic matter now, before the disinfection stage, you lower the chance of those unwanted by-products forming downstream. Good particle and organic removal before chlorination is genuinely a chemistry decision, not just a polishing step."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Treatment",
+        "props": {"mode": "filter", "beats": [94, 204, 459, 518, 591]}
       }
     },
     {

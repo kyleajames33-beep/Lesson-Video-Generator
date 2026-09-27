@@ -61,7 +61,6 @@ export const TetraModel = ({
 						<g key="c">
 							{centreGlow > 0 && <circle cx={cx} cy={cy} r={cr + 9} fill="none" stroke="#f0a830" strokeWidth={5} opacity={centreGlow} />}
 							<circle cx={cx} cy={cy} r={cr} fill={`url(#${id}-g-C)`} stroke={shade(centreColor, -0.3)} strokeWidth={1} />
-							<text x={cx} y={cy + cr * 0.36} textAnchor="middle" fontSize={cr * 0.95} fontWeight={800} fill="#ffffff">C</text>
 						</g>
 					);
 				}
@@ -85,6 +84,7 @@ export const TetraModel = ({
 					</g>
 				);
 			})}
+			<text x={cx} y={cy + cr * 0.34} textAnchor="middle" fontSize={Math.max(15, cr * 0.95)} fontWeight={800} fill="#ffffff" stroke="#3b3b3b" strokeWidth={2} paintOrder="stroke">C</text>
 		</g>
 	);
 };

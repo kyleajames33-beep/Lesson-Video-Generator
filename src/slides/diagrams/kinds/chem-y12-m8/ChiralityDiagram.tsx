@@ -51,10 +51,10 @@ const beatsFor = (mode: NonNullable<ChiralityProps['mode']>, beats?: number[]) =
 	DEFAULT_BEATS[mode].map((v, i) => (beats && typeof beats[i] === 'number' ? beats[i] : v));
 
 const ALANINE: TetraGroup[] = [
-	{label: 'H', name: 'H', color: '#f2f2ef', r: 0.22, ink: TOK.ink},
-	{label: 'COOH', name: 'acid', color: '#e0433a', r: 0.36},
-	{label: 'NH₂', name: 'amine', color: '#3f6fd8', r: 0.32},
-	{label: 'CH₃', name: 'methyl', color: '#6b6b6b', r: 0.32},
+	{label: 'H', name: 'H', color: '#f2f2ef', r: 0.2, ink: TOK.ink},
+	{label: 'COOH', name: 'acid', color: '#e0433a', r: 0.31},
+	{label: 'NH₂', name: 'amine', color: '#3f6fd8', r: 0.28},
+	{label: 'CH₃', name: 'methyl', color: '#6b6b6b', r: 0.28},
 ];
 const GLOSS = {C: '#3b3b3b', H: '#f2f2ef', acid: '#e0433a', amine: '#3f6fd8', methyl: '#6b6b6b', red: '#e0433a', blue: '#3f6fd8', green: '#4fbf4a', R: '#148a6f', S: RED, grey: '#9a9a9a'};
 
@@ -77,7 +77,7 @@ const MirrorMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) 
 	const ID = 'c12m8chir-mir';
 	const [tCentre, tFour, tTwo, tMirror, tNotId, tRot, tEnan, tArr] = b;
 	const AZ: [number, number, number] = [-10, 110, 230];
-	const LX = 196, RX = 564, CY = 238, R = 82, PL_Y = 356;
+	const LX = 190, RX = 570, CY = 236, R = 104, PL_Y = 378;
 	const w = 12 * Math.sin(frame / 55);
 	const pulse = idlePulse(frame);
 	const glow = ramp(frame, tCentre, 14) * (0.65 + 0.35 * pulse);
@@ -115,16 +115,16 @@ const MirrorMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) 
 				]}
 			/>
 			<g opacity={Math.min(1, enter * 1.3)}>
-				<DioramaPlinth id={`${ID}-l`} cx={LX} cy={PL_Y} rx={118} />
+				<DioramaPlinth id={`${ID}-l`} cx={LX} cy={PL_Y} rx={124} />
 			</g>
 			<g opacity={emerge}>
-				<DioramaPlinth id={`${ID}-r`} cx={RX} cy={PL_Y} rx={118} />
+				<DioramaPlinth id={`${ID}-r`} cx={RX} cy={PL_Y} rx={124} />
 			</g>
 			{/* mirror plane */}
 			<g opacity={ramp(frame, tTwo, 20)}>
-				<path d={`M ${W / 2 - 16} 92 L ${W / 2 + 16} 78 L ${W / 2 + 16} 420 L ${W / 2 - 16} 434 Z`} fill="rgba(170,205,230,0.42)" stroke="rgba(90,130,160,0.6)" strokeWidth={2} />
+				<path d={`M ${W / 2 - 18} 90 L ${W / 2 + 18} 74 L ${W / 2 + 18} 440 L ${W / 2 - 18} 456 Z`} fill="rgba(170,205,230,0.42)" stroke="rgba(90,130,160,0.6)" strokeWidth={2} />
 				<path d={`M ${W / 2 - 6} 110 L ${W / 2 + 4} 106 L ${W / 2 + 4} 300 L ${W / 2 - 6} 304 Z`} fill="#ffffff" opacity={0.5} />
-				<text x={W / 2} y={456} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={800} letterSpacing="0.08em">MIRROR</text>
+				<text x={W / 2} y={478} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={800} letterSpacing="0.08em">MIRROR</text>
 			</g>
 			{/* original */}
 			<g opacity={Math.min(1, enter * 1.3)} transform={`translate(0,${idleBob(frame, 0, 1.4)})`}>
@@ -144,18 +144,18 @@ const MirrorMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) 
 					return <Mark key={i} x={g2.x + dx} y={g2.y - 26} ok={ok} size={15} opacity={marksOn} color={ok ? TOK.chem2 : RED} />;
 				})}
 			<g opacity={marksOn}>
-				<text x={LX} y={PL_Y + 86} textAnchor="middle" fill={RED} fontSize={19} fontWeight={800}>not superimposable</text>
+				<text x={LX} y={PL_Y + 96} textAnchor="middle" fill={RED} fontSize={19} fontWeight={800}>not superimposable</text>
 			</g>
 			{/* chiral centre tag */}
 			<g opacity={ramp(frame, tCentre, 14)}>
-				<line x1={92} y1={132} x2={LX - 26} y2={CY - 18} stroke={TOK.amber} strokeWidth={2.5} />
-				<text x={70} y={104} textAnchor="middle" fill={TOK.amberInk} fontSize={20} fontWeight={800}>chiral</text>
-				<text x={70} y={126} textAnchor="middle" fill={TOK.amberInk} fontSize={20} fontWeight={800}>centre</text>
+				<line x1={84} y1={136} x2={LX - 34} y2={CY - 22} stroke={TOK.amber} strokeWidth={2.5} />
+				<text x={62} y={102} textAnchor="middle" fill={TOK.amberInk} fontSize={20} fontWeight={800}>chiral</text>
+				<text x={62} y={124} textAnchor="middle" fill={TOK.amberInk} fontSize={20} fontWeight={800}>centre</text>
 			</g>
 			{/* enantiomer bracket */}
 			<g opacity={ramp(frame, tEnan + 60, 16)}>
-				<path d={`M ${LX - 90} 478 L ${LX - 90} 492 L ${RX + 90} 492 L ${RX + 90} 478`} fill="none" stroke={TOK.inkDim} strokeWidth={2.5} />
-				<text x={W / 2} y={518} textAnchor="middle" fill={TOK.ink} fontSize={20} fontWeight={800}>enantiomers: non-superimposable mirror images</text>
+				<path d={`M ${LX - 90} 486 L ${LX - 90} 498 L ${RX + 90} 498 L ${RX + 90} 486`} fill="none" stroke={TOK.inkDim} strokeWidth={2.5} />
+				<text x={W / 2} y={524} textAnchor="middle" fill={TOK.ink} fontSize={20} fontWeight={800}>enantiomers: non-superimposable mirror images</text>
 			</g>
 		</g>
 	);
@@ -199,6 +199,7 @@ const CompareMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]})
 						<text x={40} y={r.y - 8} fill={isE && call > 0 ? TOK.amberInk : TOK.ink} fontSize={24} fontWeight={800}>{r.title}</text>
 						<text x={40} y={r.y + 20} fill={TOK.inkDim} fontSize={17} fontWeight={700}>{r.sub}</text>
 						{isE && <text x={40} y={r.y + 42} fill={TOK.inkDim} fontSize={17} fontWeight={700}>mirror-image 3D</text>}
+						{isE && <text x={40} y={r.y + 20} fill={theme.accent} fontSize={17} fontWeight={800} opacity={sameConn}>same connectivity,</text>}
 					</g>
 				);
 			})}
@@ -216,14 +217,14 @@ const CompareMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]})
 					);
 				})()}
 				<g opacity={ramp(frame, tWhich, 14)}>
-					<Pill x={(XA + XB) / 2} y={40} text="both C₄H₁₀" size={16} color={theme.accent} fill={theme.soft} />
+					<text x={40} y={126} fill={theme.accent} fontSize={17} fontWeight={800}>both C₄H₁₀</text>
 					<text x={(XA + XB) / 2} y={96} textAnchor="middle" fill={theme.accent} fontSize={30} fontWeight={800}>≠</text>
 				</g>
 			</g>
 			{/* geometric: cis vs trans but-2-ene */}
 			<g opacity={rowIn(tGeo)}>
 				{(() => {
-					const a = place(cis, XA, 214), c = place(trans, XB, 218);
+					const a = place(cis, XA, 214), c = place(trans, XB, 206);
 					return (
 						<>
 							<SkelDots mol={cis} x={a.x} y={a.y} s={S} />
@@ -238,12 +239,9 @@ const CompareMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]})
 			</g>
 			{/* enantiomers */}
 			<g opacity={rowIn(tEnan)}>
-				<TetraModel id={ID} cx={XA} cy={350} R={46} groups={ALANINE} az={[-10, 110, 230]} rot={w} />
+				<TetraModel id={ID} cx={XA} cy={352} R={54} groups={ALANINE} az={[-10, 110, 230]} rot={w} />
 				<line x1={(XA + XB) / 2} y1={306} x2={(XA + XB) / 2} y2={410} stroke="rgba(90,130,160,0.7)" strokeWidth={3} strokeDasharray="7 6" />
-				<TetraModel id={ID} cx={XB} cy={350} R={46} groups={ALANINE} az={[-10, 110, 230]} rot={w} mirror />
-				<g opacity={sameConn}>
-					<Pill x={(XA + XB) / 2} y={306} text="same connectivity" size={15} color={theme.accent} fill={theme.soft} />
-				</g>
+				<TetraModel id={ID} cx={XB} cy={352} R={54} groups={ALANINE} az={[-10, 110, 230]} rot={w} mirror />
 			</g>
 			{/* callout */}
 			<g opacity={call}>
@@ -387,7 +385,7 @@ const RacemicMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]})
 				<DioramaPlinth id={`${ID}-a`} cx={FX} cy={FB} rx={88} />
 				<Flask cx={FX} baseY={FB - 4} w={122} h={140} level={0.62} liquid="rgba(150,200,235,0.3)">
 					{mixTokens.map((t, i) => (
-						<Token key={i} id={ID} x={FX + t.x + idleBob(frame, i, 1.5)} y={FB - 50 + t.y + idleBob(frame, i + 9, 1.5)} r={13} s={t.s} />
+						<Token key={i} id={ID} x={FX + t.x + idleBob(frame, i, 1.5)} y={FB - 50 + t.y + idleBob(frame, i + 9, 1.5)} r={15} s={t.s} />
 					))}
 				</Flask>
 				<text x={FX} y={32} textAnchor="middle" fill={TOK.ink} fontSize={20} fontWeight={800}>racemic mixture</text>
@@ -410,7 +408,7 @@ const RacemicMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]})
 				<DioramaPlinth id={`${ID}-b`} cx={110} cy={452} rx={74} />
 				<Flask cx={110} baseY={448} w={96} h={112} level={0.6} liquid="rgba(150,200,235,0.3)">
 					{[0, 1, 2].map((i) => (
-						<Token key={i} id={ID} x={92 + i * 18 + idleBob(frame, i + 20, 1.2)} y={420 - (i % 2) * 14} r={11} s="R" opacity={1 - enterBody * 0.6} />
+						<Token key={i} id={ID} x={88 + i * 22 + idleBob(frame, i + 20, 1.2)} y={420 - (i % 2) * 16} r={13} s="R" opacity={1 - enterBody * 0.6} />
 					))}
 				</Flask>
 				<text x={110} y={320} textAnchor="middle" fill={theme.accent} fontSize={18} fontWeight={800}>pure R</text>
@@ -507,7 +505,7 @@ const PolarimeterMode = ({frame, fps, b}: {frame: number; fps: number; b: number
 				<ellipse cx={490} cy={BEAM} rx={8} ry={26} fill="rgba(170,205,230,0.5)" stroke="rgba(70,90,110,0.6)" strokeWidth={2} />
 				{state !== 'none' && tubeTokens.map((t, i) => {
 					const k = tokenKind(i);
-					return <Ball key={i} id={ID} name={k === 'A' ? 'grey' : k} color={k === 'S' ? RED : k === 'R' ? '#148a6f' : '#9a9a9a'} x={t.x + idleBob(frame, i, 1.2)} y={t.y + idleBob(frame, i + 7, 1.2)} r={10} label={k === 'A' ? '' : k} labelSize={12} />;
+					return <Ball key={i} id={ID} name={k === 'A' ? 'grey' : k} color={k === 'S' ? RED : k === 'R' ? '#148a6f' : '#9a9a9a'} x={t.x + idleBob(frame, i, 1.2)} y={t.y + idleBob(frame, i + 7, 1.2)} r={12} label={k === 'A' ? '' : k} labelSize={15} />;
 				})}
 				<rect x={352} y={BEAM + 26} width={12} height={28} fill="#8f8b83" />
 				<rect x={456} y={BEAM + 26} width={12} height={28} fill="#8f8b83" />

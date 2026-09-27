@@ -147,7 +147,7 @@ const UvVis = ({frame, b}: {frame: number; b: number[]}) => {
 				<line x1={cx0} y1={92} x2={cx1} y2={92} stroke={TOK.amber} strokeWidth={3} />
 				<line x1={cx0} y1={84} x2={cx0} y2={100} stroke={TOK.amber} strokeWidth={3} />
 				<line x1={cx1} y1={84} x2={cx1} y2={100} stroke={TOK.amber} strokeWidth={3} />
-				<text x={CUV} y={78} textAnchor="middle" fill={TOK.amberInk} fontSize={26} fontWeight={800} fontStyle="italic">l</text>
+				<text x={CUV} y={78} textAnchor="middle" fill={TOK.amberInk} fontSize={26} fontWeight={800}>l</text>
 			</g>
 
 			{/* instrument labels */}
@@ -168,14 +168,14 @@ const UvVis = ({frame, b}: {frame: number; b: number[]}) => {
 				<text x={60} y={346} fill={TOK.inkDim} fontSize={16} fontWeight={800} letterSpacing="0.08em" opacity={g(tLaw)}>BEER–LAMBERT LAW</text>
 				<text x={80} y={416} textAnchor="middle" fill={TOK.ink} fontSize={60} fontWeight={800} opacity={g(tLaw)}>A</text>
 				<text x={134} y={416} textAnchor="middle" fill={TOK.ink} fontSize={60} fontWeight={800} opacity={g(tLaw)}>=</text>
-				<text x={184} y={416} textAnchor="middle" fill={TOK.ink} fontSize={60} fontWeight={800} opacity={g(tLaw + 16)} fontStyle="italic">ε</text>
-				<text x={224} y={416} textAnchor="middle" fill={TOK.ink} fontSize={60} fontWeight={800} opacity={g(tLaw + 26)} fontStyle="italic">c</text>
-				<text x={258} y={416} textAnchor="middle" fill={lOn > 0.5 ? TOK.amberInk : TOK.ink} fontSize={60} fontWeight={800} opacity={g(tLaw + 36)} fontStyle="italic">l</text>
+				<text x={184} y={416} textAnchor="middle" fill={TOK.ink} fontSize={60} fontWeight={800} opacity={g(tLaw + 16)}>ε</text>
+				<text x={224} y={416} textAnchor="middle" fill={TOK.ink} fontSize={60} fontWeight={800} opacity={g(tLaw + 26)}>c</text>
+				<text x={258} y={416} textAnchor="middle" fill={lOn > 0.5 ? TOK.amberInk : TOK.ink} fontSize={60} fontWeight={800} opacity={g(tLaw + 36)}>l</text>
 				<rect x={240} y={424} width={36} height={5} rx={2.5} fill={TOK.amber} opacity={lOn * (0.6 + 0.4 * pulse)} />
 			</g>
 			{rows.map((r, i) => (
 				<g key={r.sym} opacity={ramp(frame, r.t, 12)}>
-					<text x={346} y={350 + i * 38} textAnchor="middle" fill={r.key ? TOK.amberInk : TOK.ink} fontSize={25} fontWeight={800} fontStyle={r.sym === 'A' ? 'normal' : 'italic'}>{r.sym}</text>
+					<text x={346} y={350 + i * 38} textAnchor="middle" fill={r.key ? TOK.amberInk : TOK.ink} fontSize={25} fontWeight={800}>{r.sym}</text>
 					<text x={374} y={350 + i * 38} fill={r.key ? TOK.amberInk : TOK.ink} fontSize={20} fontWeight={r.key ? 800 : 700}>{r.text}</text>
 				</g>
 			))}
@@ -221,7 +221,7 @@ const Aas = ({frame, b, ion, atom}: {frame: number; b: number[]; ion: string; at
 		[tLamp, 'Lamp shines that element’s exact wavelength'],
 		[tAbs, 'The atoms absorb some: the signal drops'],
 		[tSignal, 'Signal drop → concentration, via standards'],
-		[tKey, 'AAS measures atoms, not ions'],
+		[tKey, 'AAS does not detect ions in solution'],
 	]);
 
 	// Sample tube path (beaker → burner) and droplets moving along it
@@ -246,7 +246,7 @@ const Aas = ({frame, b, ion, atom}: {frame: number; b: number[]; ion: string; at
 			<DioramaDefs id={ID} />
 			<BurnerDefs id={ID} />
 			<GlossDefs id={ID} colors={{ion: '#6a7fa0', atom: '#9aa3ad'}} />
-			<text x={W / 2} y={34} textAnchor="middle" fill={cap.text.startsWith('AAS measures') ? TOK.amberInk : TOK.inkDim} fontSize={21} fontWeight={800} opacity={cap.op}>{cap.text}</text>
+			<text x={W / 2} y={34} textAnchor="middle" fill={TOK.inkDim} fontSize={21} fontWeight={800} opacity={cap.op}>{cap.text}</text>
 
 			{/* hollow cathode lamp */}
 			<DioramaPlinth id={ID} cx={LAMP} cy={PY} rx={74}>
@@ -270,6 +270,8 @@ const Aas = ({frame, b, ion, atom}: {frame: number; b: number[]; ion: string; at
 
 			{/* detector */}
 			<DioramaPlinth id={ID} cx={DET} cy={PY} rx={74}>
+				<rect x={DET - 5} y={200} width={10} height={PY - 200} fill="#7c8288" />
+				<ellipse cx={DET} cy={PY} rx={22} ry={6} fill="#5d6268" />
 				<rect x={DET - 46} y={108} width={92} height={96} rx={10} fill="#3d4650" stroke="#2a3138" strokeWidth={2} />
 				<rect x={DET - 46} y={BY - 10} width={6} height={20} fill="#1c2227" />
 				<rect x={DET - 22} y={118} width={52} height={76} rx={4} fill="#dfe9e4" />
@@ -304,8 +306,8 @@ const Aas = ({frame, b, ion, atom}: {frame: number; b: number[]; ion: string; at
 			<g opacity={ramp(frame, 0, 14)}>
 				<text x={LAMP} y={318} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>hollow cathode</text>
 				<text x={LAMP} y={338} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>lamp</text>
-				<text x={FL + 20} y={318} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>flame atomiser</text>
-				<text x={FL + 20} y={338} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>(or graphite furnace)</text>
+				<text x={FL + 30} y={318} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>flame atomiser</text>
+				<text x={FL + 30} y={338} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>(or graphite furnace)</text>
 				<text x={DET} y={318} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>detector</text>
 				<text x={DET} y={338} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>signal</text>
 				<text x={160} y={522} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>sample solution</text>

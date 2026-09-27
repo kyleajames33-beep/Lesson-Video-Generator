@@ -592,6 +592,8 @@ const ManagementMode = ({id, frame, b, accent}: ModeArgs) => {
 				<text x={62} y={rowB + 44} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>Sewage</text>
 				<Arrow x1={x0B} y1={rowB} x2={LX - 6} y2={rowB} color="rgba(79,151,198,0.45)" width={14} head={20} />
 			</g>
+			{dotsFor('A').map((d) => <Dot key={`a${d.k}`} x={d.x} y={rowA + Math.sin(d.k) * 3} r={5.5} color={NUT} opacity={d.op * ramp(frame, 0)} />)}
+			{dotsFor('B').map((d) => <Dot key={`b${d.k}`} x={d.x} y={rowB + Math.sin(d.k) * 3} r={5.5} color={NUT} opacity={d.op * ramp(frame, 0)} />)}
 			{/* buffer strip */}
 			<g opacity={ramp(frame, tBuf, 16)}>
 				<rect x={buffX - 4} y={rowA - 30} width={40} height={60} rx={10} fill="#d9ead0" />
@@ -625,8 +627,6 @@ const ManagementMode = ({id, frame, b, accent}: ModeArgs) => {
 				<text x={plantX + 90} y={rowB - 64} textAnchor="middle" fill={TOK.ink} fontSize={18} fontWeight={800}>Sewage upgrade + wetlands</text>
 				<text x={plantX + 90} y={rowB - 44} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>remove phosphate before discharge</text>
 			</g>
-			{dotsFor('A').map((d) => <Dot key={`a${d.k}`} x={d.x} y={rowA + Math.sin(d.k) * 3} r={5.5} color={NUT} opacity={d.op * ramp(frame, 0)} />)}
-			{dotsFor('B').map((d) => <Dot key={`b${d.k}`} x={d.x} y={rowB + Math.sin(d.k) * 3} r={5.5} color={NUT} opacity={d.op * ramp(frame, 0)} />)}
 
 			<DioramaPlinth id={id} cx={LX + LW / 2} cy={LY + LH - 4} rx={118} />
 			<Tank id={`${id}-lake`} x={LX} y={LY} w={LW} h={LH} murk={0.35}>
