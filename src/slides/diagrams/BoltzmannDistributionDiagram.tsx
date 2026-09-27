@@ -1,4 +1,29 @@
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+// BoltzmannDistributionDiagram — Maxwell-Boltzmann distributions of molecular
+// kinetic energy at a lower and a higher temperature, with the activation
+// energy marked. The shaded tails past Eₐ are the molecules energetic enough
+// to react: the hotter tail (amber, the key point) is clearly bigger.
+//
+// Fix (v2): the curves are now normalised. f(E) = 2·√(E/π)·T^(−3/2)·e^(−E/T),
+// so both enclose the SAME area (same number of molecules): the hotter curve
+// peaks LOWER and further right and spreads out. The old unnormalised curve
+// drew the hot curve taller everywhere, which is the classic exam mistake.
+// The shaded areas were also the whole curve, not the tail past Eₐ.
+//
+// Diorama restyle: painted gradient fills, self-drawing curves, and a gentle
+// breathing highlight on the hot tail and the Eₐ line for the hold.
+//
+// Props are unchanged. Timing: `delay` is now a floor under the card reveal:
+// the build starts at max(delay, 90).
+// Beat plan (frames after the start):
+//   0     axes
+//   20    lower-T curve draws; 60 higher-T curve draws
+//   110   Eₐ line; 150 the tails past Eₐ fill in
+//   200   "more molecules have E ≥ Eₐ" label
+
+import {interpolate, useCurrentFrame} from 'remotion';
+import {TOK, FONT_DISPLAY} from '../../styles/tokens';
+import {idlePulse} from './diorama';
+import {ArrowHead, clamp, drawProps, fadeAt} from './kinds/restyle-chem-specials/props';
 
 type Props = {
 	temperatureLow: number;
@@ -7,132 +32,99 @@ type Props = {
 	delay?: number;
 };
 
-const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
+const ID = 'mb';
+const W = 760;
+const PX = 100, PY = 70, PW = 600, PH = 320;
+const LOW = '#2f9e84';
+const HIGH = '#3f6fd8';
 
-// Simplified Maxwell-Boltzmann energy distribution: f(E) ∝ sqrt(E) * exp(-E/T)
-const maxwellBoltzmann = (E: number, T: number) => {
-	if (E <= 0) return 0;
-	return Math.sqrt(E) * Math.exp(-E / T);
-};
-
-const generateCurve = (T: number, eMax: number, steps = 120) => {
-	const points: {x: number; y: number}[] = [];
-	for (let i = 0; i <= steps; i++) {
-		const E = (i / steps) * eMax;
-		const y = maxwellBoltzmann(E, T);
-		points.push({x: E, y});
-	}
-	return points;
-};
-
-const buildPath = (points: {x: number; y: number}[], xScale: number, yScale: number, xOffset: number, yOffset: number, height: number) => {
-	if (points.length === 0) return '';
-	let d = `M ${xOffset + points[0].x * xScale} ${yOffset + height - points[0].y * yScale}`;
-	for (let i = 1; i < points.length; i++) {
-		d += ` L ${xOffset + points[i].x * xScale} ${yOffset + height - points[i].y * yScale}`;
-	}
-	return d;
-};
-
-const buildAreaPath = (points: {x: number; y: number}[], xScale: number, yScale: number, xOffset: number, yOffset: number, height: number) => {
-	if (points.length === 0) return '';
-	let d = `M ${xOffset + points[0].x * xScale} ${yOffset + height}`;
-	for (let i = 0; i < points.length; i++) {
-		d += ` L ${xOffset + points[i].x * xScale} ${yOffset + height - points[i].y * yScale}`;
-	}
-	d += ` L ${xOffset + points[points.length - 1].x * xScale} ${yOffset + height} Z`;
-	return d;
-};
+// Normalised Maxwell-Boltzmann energy distribution (k = 1 units).
+const mb = (E: number, T: number) => (E <= 0 ? 0 : 2 * Math.sqrt(E / Math.PI) * Math.pow(T, -1.5) * Math.exp(-E / T));
 
 export const BoltzmannDistributionDiagram = ({temperatureLow, temperatureHigh, activationEnergy, delay = 0}: Props) => {
-	const frame = useCurrentFrame();
-	const {fps} = useVideoConfig();
+	const start = Math.max(delay, 90);
+	const frame = useCurrentFrame() - start;
+	const pulse = idlePulse(frame + start);
 
-	const axisP = spring({frame: frame - delay, fps, config: {damping: 18, stiffness: 120, mass: 1}});
-	const curveP = spring({frame: frame - delay - 15, fps, config: {damping: 16, stiffness: 100, mass: 0.9}});
-	const labelOpacity = interpolate(frame, [delay + 50, delay + 70], [0, 1], clamp);
-	const eaLineP = spring({frame: frame - delay - 40, fps, config: {damping: 16, stiffness: 100, mass: 0.9}});
+	const eMax = Math.max(activationEnergy * 2.2, temperatureHigh * 3);
+	const steps = 160;
+	const yMax = Math.max(mb(temperatureLow / 2, temperatureLow), mb(temperatureHigh / 2, temperatureHigh)) * 1.12;
+	const xOf = (E: number) => PX + (E / eMax) * PW;
+	const yOf = (v: number) => PY + PH - (v / yMax) * PH;
+	const curve = (T: number) => Array.from({length: steps + 1}, (_, i) => (i / steps) * eMax).map((E, i) => `${i ? 'L' : 'M'} ${xOf(E).toFixed(1)} ${yOf(mb(E, T)).toFixed(1)}`).join(' ');
+	const tail = (T: number) => {
+		const pts = Array.from({length: 81}, (_, i) => activationEnergy + (i / 80) * (eMax - activationEnergy));
+		return `M ${xOf(activationEnergy)} ${yOf(0)} ${pts.map((E) => `L ${xOf(E).toFixed(1)} ${yOf(mb(E, T)).toFixed(1)}`).join(' ')} L ${xOf(eMax)} ${yOf(0)} Z`;
+	};
 
-	// Plot area
-	const plotX = 80;
-	const plotY = 60;
-	const plotW = 540;
-	const plotH = 280;
-
-	// Energy range: 0 to ~3x the higher temperature for nice spread
-	const eMax = Math.max(activationEnergy * 2.5, temperatureHigh * 3);
-
-	// Generate curves
-	const lowTPoints = generateCurve(temperatureLow, eMax);
-	const highTPoints = generateCurve(temperatureHigh, eMax);
-
-	// Find max Y for scaling
-	const allY = [...lowTPoints.map(p => p.y), ...highTPoints.map(p => p.y)];
-	const maxY = Math.max(...allY) * 1.15;
-
-	const xScale = plotW / eMax;
-	const yScale = plotH / maxY;
-
-	// Build paths
-	const lowTPath = buildPath(lowTPoints, xScale, yScale, plotX, plotY, plotH);
-	const highTPath = buildPath(highTPoints, xScale, yScale, plotX, plotY, plotH);
-	const lowTArea = buildAreaPath(lowTPoints, xScale, yScale, plotX, plotY, plotH);
-	const highTArea = buildAreaPath(highTPoints, xScale, yScale, plotX, plotY, plotH);
-
-	// Ea line position
-	const eaX = plotX + activationEnergy * xScale;
-
-	// Animate path draw
-	const pathLength = 1200;
-	const drawLow = interpolate(curveP, [0, 1], [0, pathLength], clamp);
-	const drawHigh = interpolate(curveP, [0, 1], [0, pathLength], clamp);
+	const drawLow = interpolate(frame, [20, 70], [0, 1], clamp);
+	const drawHigh = interpolate(frame, [60, 110], [0, 1], clamp);
+	const eaIn = fadeAt(frame, 110, 14);
+	const tails = fadeAt(frame, 150, 20);
+	const note = fadeAt(frame, 200, 16);
+	const xEa = xOf(activationEnergy);
 
 	return (
-		<svg viewBox="0 0 700 430" className="diagram">
-			{/* Axes */}
-			<g opacity={axisP}>
-				<line x1={plotX} y1={plotY + plotH} x2={plotX + plotW} y2={plotY + plotH} stroke="rgba(226,232,240,0.4)" strokeWidth="2.5" />
-				<line x1={plotX} y1={plotY + plotH} x2={plotX} y2={plotY} stroke="rgba(226,232,240,0.4)" strokeWidth="2.5" />
-				<text x={plotX + plotW / 2} y={plotY + plotH + 40} textAnchor="middle" fontSize="14" fontWeight="600" fill="#94a3b8">Kinetic energy</text>
-				<text x={30} y={plotY + plotH / 2} textAnchor="middle" fontSize="14" fontWeight="600" fill="#94a3b8" transform={`rotate(-90, 30, ${plotY + plotH / 2})`}>Fraction of molecules</text>
+		<svg viewBox={`0 0 ${W} 500`} role="img" aria-label="Maxwell-Boltzmann distribution at two temperatures: more molecules exceed the activation energy at the higher temperature" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+			<defs>
+				<linearGradient id={`${ID}-low`} x1="0" x2="0" y1="0" y2="1">
+					<stop offset="0%" stopColor={LOW} stopOpacity={0.45} />
+					<stop offset="100%" stopColor={LOW} stopOpacity={0.12} />
+				</linearGradient>
+				<linearGradient id={`${ID}-high`} x1="0" x2="0" y1="0" y2="1">
+					<stop offset="0%" stopColor={TOK.amber} stopOpacity={0.75} />
+					<stop offset="100%" stopColor={TOK.amber} stopOpacity={0.3} />
+				</linearGradient>
+				<filter id={`${ID}-soft`} x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="3" /></filter>
+			</defs>
+
+			{/* painted backing card */}
+			<rect x={PX - 20} y={PY - 30} width={PW + 40} height={PH + 50} rx={18} fill="#ffffff" opacity={0.65} />
+
+			{/* axes */}
+			<g opacity={fadeAt(frame, -start, 16)}>
+				<line x1={PX} y1={PY + PH} x2={PX + PW + 10} y2={PY + PH} stroke={TOK.inkMute} strokeWidth={3} />
+				<line x1={PX} y1={PY + PH} x2={PX} y2={PY - 14} stroke={TOK.inkMute} strokeWidth={3} />
+				<ArrowHead x={PX + PW + 20} y={PY + PH} angleDeg={0} size={14} fill={TOK.inkMute} />
+				<ArrowHead x={PX} y={PY - 22} angleDeg={-90} size={14} fill={TOK.inkMute} />
+				<text x={PX + PW / 2} y={PY + PH + 36} textAnchor="middle" fill={TOK.inkDim} fontSize={21} fontWeight={700}>kinetic energy →</text>
+				<text x={PX - 26} y={PY + PH / 2} textAnchor="middle" fill={TOK.inkDim} fontSize={21} fontWeight={700} transform={`rotate(-90 ${PX - 26} ${PY + PH / 2})`}>number of molecules</text>
 			</g>
 
-			{/* Low T area (under curve, past Ea) */}
-			<g opacity={curveP}>
-				<path d={lowTArea} fill="rgba(107, 220, 255, 0.12)" stroke="none" />
+			{/* tails past Eₐ (behind the curve lines) */}
+			<g opacity={tails}>
+				<path d={tail(temperatureHigh)} fill={`url(#${ID}-high)`} opacity={0.8 + pulse * 0.2} />
+				<path d={tail(temperatureLow)} fill={`url(#${ID}-low)`} />
 			</g>
 
-			{/* High T area (under curve, past Ea) */}
-			<g opacity={curveP}>
-				<path d={highTArea} fill="rgba(245, 158, 11, 0.10)" stroke="none" />
+			{/* soft painted shadow under each curve, then the curves */}
+			<path d={curve(temperatureLow)} fill="none" stroke={LOW} strokeWidth={9} opacity={0.18} filter={`url(#${ID}-soft)`} {...drawProps(drawLow)} />
+			<path d={curve(temperatureLow)} fill="none" stroke={LOW} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" {...drawProps(drawLow)} />
+			<path d={curve(temperatureHigh)} fill="none" stroke={HIGH} strokeWidth={9} opacity={0.18} filter={`url(#${ID}-soft)`} {...drawProps(drawHigh)} />
+			<path d={curve(temperatureHigh)} fill="none" stroke={HIGH} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" {...drawProps(drawHigh)} />
+
+			{/* legend (top right, clear of the peaks and the Eₐ line) */}
+			<g opacity={fadeAt(frame, 60)}>
+				<line x1={560} y1={PY + 8} x2={596} y2={PY + 8} stroke={LOW} strokeWidth={5} strokeLinecap="round" />
+				<text x={606} y={PY + 15} fill={LOW} fontSize={21} fontWeight={850}>lower T</text>
+			</g>
+			<g opacity={fadeAt(frame, 100)}>
+				<line x1={560} y1={PY + 40} x2={596} y2={PY + 40} stroke={HIGH} strokeWidth={5} strokeLinecap="round" />
+				<text x={606} y={PY + 47} fill={HIGH} fontSize={21} fontWeight={850}>higher T</text>
 			</g>
 
-			{/* Low T curve */}
-			<path d={lowTPath} fill="none" stroke="#6bdcff" strokeWidth="3" strokeLinecap="round"
-				strokeDasharray={pathLength} strokeDashoffset={pathLength - drawLow} />
-
-			{/* High T curve */}
-			<path d={highTPath} fill="none" stroke="#f59e0b" strokeWidth="3" strokeLinecap="round"
-				strokeDasharray={pathLength} strokeDashoffset={pathLength - drawHigh} />
-
-			{/* Ea line */}
-			<g opacity={eaLineP}>
-				<line x1={eaX} y1={plotY} x2={eaX} y2={plotY + plotH} stroke="#ef4444" strokeWidth="2" strokeDasharray="6,4" />
-				<text x={eaX} y={plotY - 10} textAnchor="middle" fontSize="13" fontWeight="700" fill="#ef4444">Eₐ</text>
+			{/* Eₐ line */}
+			<g opacity={eaIn}>
+				<line x1={xEa} y1={PY - 6} x2={xEa} y2={PY + PH} stroke={TOK.ink} strokeWidth={3 + pulse} strokeDasharray="9 7" />
+				<text x={xEa} y={PY - 14} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={850}>Eₐ</text>
 			</g>
 
-			{/* Labels */}
-			<g opacity={labelOpacity}>
-				<text x={plotX + plotW * 0.25} y={plotY + plotH * 0.35} textAnchor="middle" fontSize="13" fontWeight="600" fill="#6bdcff">
-					Lower temperature
-				</text>
-				<text x={plotX + plotW * 0.55} y={plotY + plotH * 0.55} textAnchor="middle" fontSize="13" fontWeight="600" fill="#f59e0b">
-					Higher temperature
-				</text>
-				<text x={eaX + 8} y={plotY + plotH - 20} textAnchor="start" fontSize="12" fontWeight="600" fill="#ef4444">
-					Molecules with E ≥ Eₐ can react
-				</text>
+			<g opacity={note}>
+				<rect x={xEa + 18} y={PY + 84} width={250} height={64} rx={12} fill="#fff8e8" stroke={TOK.amber} strokeWidth={2.5} />
+				<text x={xEa + 143} y={PY + 110} textAnchor="middle" fill={TOK.amberInk} fontSize={19} fontWeight={850}>higher T: more molecules</text>
+				<text x={xEa + 143} y={PY + 134} textAnchor="middle" fill={TOK.amberInk} fontSize={19} fontWeight={850}>have E ≥ Eₐ</text>
 			</g>
+			<text x={W / 2} y={490} textAnchor="middle" fill={TOK.inkDim} fontSize={19} fontWeight={700} opacity={note}>same number of molecules: the hotter curve is flatter and wider</text>
 		</svg>
 	);
 };
