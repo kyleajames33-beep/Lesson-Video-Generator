@@ -171,9 +171,9 @@ export const StepsDiagram = ({
 	const margin = 18;
 	const pitch = (W - 2 * margin) / n;
 	const rx = Math.min(78, pitch / 2 - 8);
-	const plinthY = titleH + (note ? 232 : 262);
+	const plinthY = titleH + (note ? 292 : 312);
 	const cxOf = (i: number) => margin + pitch * (i + 0.5);
-	const iconScale = Math.min(1.1, rx / 60);
+	const iconScale = Math.min(1.5, rx / 47);
 	const ti = Math.min(n - 1, travelT);
 	const k = Math.floor(ti), f = ti - k;
 	const markX = cxOf(k) + (cxOf(Math.min(n - 1, k + 1)) - cxOf(k)) * f;

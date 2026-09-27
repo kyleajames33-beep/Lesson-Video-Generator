@@ -341,7 +341,7 @@ const DialsMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) =
 			<GlossDefs id={ID} colors={GLOSS} />
 			{panels.map((p, i) => {
 				const o = ramp(frame, p.t, 16);
-				const fo = ramp(frame, 4 + i * 8, 16);
+				const fo = ramp(frame, 4 + i * 8, 16) * (0.6 + 0.4 * ramp(frame, tFour + i * 6, 14));
 				const g = ease(ramp(frame, p.t + 10, 50));
 				const val = i === 3 ? 0.2 + 0.35 * g + 0.38 * ease(ramp(frame, tKev, 40)) : 0.2 + 0.7 * g;
 				const ix = p.x + 18, iy = p.y + 64; // illustration box origin (220 × 120)
