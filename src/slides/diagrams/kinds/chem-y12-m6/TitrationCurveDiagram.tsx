@@ -124,7 +124,7 @@ export const TitrationCurveDiagram = ({
 							{vEnd > 0 && <path d={d} fill="none" stroke={c} strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" />}
 							<g opacity={done}>
 								<line x1={px(vEq)} y1={oy + ph} x2={px(vEq)} y2={py(ep)} stroke={c} strokeWidth={1.5} strokeDasharray="4 4" />
-								<circle cx={px(vEq)} cy={py(ep)} r={7} fill="#ffffff" stroke={c} strokeWidth={3} />
+								<circle cx={px(vEq)} cy={py(ep)} r={7 + idlePulse(frame + i * 13) * 1.5} fill="#ffffff" stroke={c} strokeWidth={3} />
 								{s.epLabel && (
 									<text x={px(vEq) + 12} y={py(ep) + (ep > 7.5 ? 22 : ep < 6.5 ? -10 : 24)} fill={c} fontSize={16} fontWeight={800}>{s.epLabel.replace('{pH}', ep.toFixed(2))}</text>
 								)}

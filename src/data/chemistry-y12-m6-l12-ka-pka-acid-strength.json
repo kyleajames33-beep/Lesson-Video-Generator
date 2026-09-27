@@ -75,6 +75,36 @@
       "voiceover": {
         "text": "So let's define it. Ka is just the equilibrium constant for an acid ionising in water. For a weak acid splitting into hydrogen ion and its conjugate base, Ka equals the hydrogen ion concentration times the conjugate base concentration, divided by the undissociated acid. A large Ka means the equilibrium lies well to the right, most of the acid has ionised, so it's a relatively strong acid. A small Ka means most molecules stay intact, so it's weak. The crucial thing is that Ka depends only on the identity of the acid and the temperature. It does not depend on concentration. That's exactly why Ka is the right tool for comparing acid strengths, while pH is not. pH depends on both Ka and concentration, so two different acids can actually show the same pH at different concentrations. To rank strength fairly, you always use Ka.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L12/concept-ka.0ae38c805886.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6IonCrowd",
+        "props": {
+          "panels": [
+            {
+              "title": "0.10 mol L⁻¹ CH₃COOH",
+              "c": 0.1,
+              "Ka": 0.000018,
+              "showKa": true,
+              "pHdp": 2,
+              "at": 0,
+              "splitAt": 100
+            },
+            {
+              "title": "0.0039 mol L⁻¹ HF",
+              "c": 0.0039,
+              "Ka": 0.00068,
+              "showKa": true,
+              "pHdp": 2,
+              "at": 400,
+              "splitAt": 460
+            }
+          ],
+          "compare": {
+            "text": "Same pH, different Ka: only Ka ranks strength",
+            "at": 771
+          }
+        }
       }
     },
     {

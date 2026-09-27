@@ -246,6 +246,33 @@
       "voiceover": {
         "text": "Here's how you prove all this in the lab, and it's the prescribed investigation. You take a calibrated pH probe and measure equal-concentration solutions. Nought-point-one molar hydrochloric acid reads pH one-point-zero, which means the hydrogen ion concentration is the full nought-point-one molar, every molecule ionised. Nought-point-one molar acetic acid reads pH two-point-nine, which works out to only about nought-point-zero-zero-one-three molar hydrogen ions, just over one percent ionised. That gap of one-point-nine pH units means there's roughly seventy-nine times more hydrogen ion in the hydrochloric acid at the same concentration. Now the wording the markers want. Don't just say hydrochloric is more acidic. Say at equal concentration it gives a higher hydrogen ion concentration because it ionises completely, while acetic acid ionises only partially. That phrasing names the actual concept.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L5/concept-practical.1e023e1c987f.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6IonCrowd",
+        "props": {
+          "panels": [
+            {
+              "title": "0.1 mol L⁻¹ HCl",
+              "c": 0.1,
+              "strong": true,
+              "pH": 1,
+              "at": 65,
+              "splitAt": 149
+            },
+            {
+              "title": "0.1 mol L⁻¹ CH₃COOH",
+              "c": 0.1,
+              "pH": 2.9,
+              "at": 290,
+              "splitAt": 325
+            }
+          ],
+          "compare": {
+            "text": "{dpH} pH units apart: about {ratio}× more H⁺ in the HCl",
+            "at": 509
+          }
+        }
       }
     },
     {
