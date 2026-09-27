@@ -285,7 +285,7 @@
                 "atoms": "c1:C@0,0 c2:C@1.25,0 c3:C@2.5,0 hr:H@0,-1.8 br:Br@1.25,-1.8",
                 "bonds": "c1=c2 c2-c3 hr-br"
               },
-              "eq": "CH₂=CHCH₃ + HBr",
+              "eq": "propene + HBr",
               "labels": [
                 {
                   "t": "2 H",
@@ -312,10 +312,10 @@
               },
               "eq": [
                 {
-                  "t": "→ "
+                  "t": "propene + HBr → "
                 },
                 {
-                  "t": "CH₃CHBrCH₃",
+                  "t": "2-bromopropane",
                   "c": "accent"
                 },
                 {
@@ -348,13 +348,6 @@
                   "dy": -0.75,
                   "c": "amber",
                   "at": 544
-                },
-                {
-                  "t": "2-bromopropane",
-                  "x": 1.25,
-                  "y": 2.1,
-                  "c": "accent",
-                  "at": 600
                 }
               ]
             }
