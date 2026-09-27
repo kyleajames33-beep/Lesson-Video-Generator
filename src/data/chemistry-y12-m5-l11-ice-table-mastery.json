@@ -73,6 +73,22 @@
       "voiceover": {
         "text": "Let's start with the shortcut that saves you from algebra, the small-x assumption. The idea is simple. If the equilibrium constant is tiny compared with your starting concentration, then almost no reaction happens, so x is so small that subtracting it from the initial concentration barely changes anything. The test is a clean one. Take Keq, divide by the initial concentration, times a hundred. If that's under five percent, you're allowed to treat the quantity initial minus x as just the initial value, and the maths collapses to something easy. But there's a catch students forget. After you solve, you must go back and check that x divided by the initial, times a hundred, really is under five percent. If it isn't, the assumption was never valid, so you bin that answer and solve the full quadratic. Pre-check before, post-check after. The assumption is a tool, not an excuse to drop x just because Keq looks small.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L11/concept-assumption.ba9b94391fd4.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5SmallX",
+        "props": {
+          "barAt": 45,
+          "sliceAt": 229,
+          "preAt": 292,
+          "preReadAt": 405,
+          "approxAt": 462,
+          "postAt": 632,
+          "postReadAt": 680,
+          "failAt": 794,
+          "binAt": 865,
+          "summaryAt": 922
+        }
       }
     },
     {

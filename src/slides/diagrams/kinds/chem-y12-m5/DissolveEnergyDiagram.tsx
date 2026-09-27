@@ -69,7 +69,7 @@ export const DissolveEnergyDiagram = ({
 
 	// ── Lattice on the plinth ──
 	const PC = {x: 250, y: 330, rx: 212};
-	const cols = 4, rows = 3, colW = 44, rowH = 29;
+	const cols = 4, rows = 3, colW = 40, rowH = 28;
 	const L0 = {x: PC.x - ((cols - 1) * colW) / 2 - 9, y: PC.y - 60};
 	const CAT_R = 13, AN_R = 18;
 	const cells = Array.from({length: rows * cols}, (_, k) => {
@@ -79,8 +79,8 @@ export const DissolveEnergyDiagram = ({
 	const catCell = cells.find((q) => q.r === rows - 1 && q.c === 1)!; // front row, cation
 	const anCell = cells.find((q) => q.r === rows - 1 && q.c === 2)!; // front row, anion
 	const pull = eramp(frame, b.pull, 70);
-	const catEnd = {x: PC.x - 132, y: PC.y + 18};
-	const anEnd = {x: PC.x + 134, y: PC.y + 18};
+	const catEnd = {x: PC.x - 150, y: PC.y + 20};
+	const anEnd = {x: PC.x + 154, y: PC.y + 20};
 	const catPos = {x: catCell.x + (catEnd.x - catCell.x) * pull, y: catCell.y + (catEnd.y - catCell.y) * pull - Math.sin(Math.PI * pull) * 30 + idleBob(frame, 1, 1.2) * pull};
 	const anPos = {x: anCell.x + (anEnd.x - anCell.x) * pull, y: anCell.y + (anEnd.y - anCell.y) * pull - Math.sin(Math.PI * pull) * 30 + idleBob(frame, 2, 1.2) * pull};
 

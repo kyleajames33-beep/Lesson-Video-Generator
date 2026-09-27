@@ -141,9 +141,8 @@ const Single = ({
 			{/* crossing: equal concentrations only */}
 			<g opacity={ramp(frame, b.cross, 14)}>
 				<circle cx={gx(iCross)} cy={gy(sim.A[iCross])} r={10 + pulse * 1.5} fill="none" stroke={TOK.inkDim} strokeWidth={2.5} />
-				<line x1={gx(iCross) + 10} y1={gy(sim.A[iCross]) + 8} x2={gx(iCross) + 34} y2={gy(sim.A[iCross]) + 40} stroke={TOK.inkDim} strokeWidth={2} />
-				<text x={gx(iCross) + 38} y={gy(sim.A[iCross]) + 54} fill={TOK.inkDim} fontSize={17} fontWeight={800}>crossing = equal</text>
-				<text x={gx(iCross) + 38} y={gy(sim.A[iCross]) + 74} fill={TOK.inkDim} fontSize={17} fontWeight={800}>concentrations only</text>
+				<line x1={gx(iCross)} y1={gy(sim.A[iCross]) + 11} x2={gx(iCross)} y2={GY1 + 22} stroke={TOK.inkDim} strokeWidth={2} strokeDasharray="3 4" />
+				<text x={gx(iCross) - 6} y={GY1 + 40} fill={TOK.inkDim} fontSize={17} fontWeight={800}>crossing = equal concentrations only</text>
 			</g>
 
 			{/* disturbance */}
@@ -168,8 +167,8 @@ const Single = ({
 			</g>
 
 			{/* caption + Keq chip */}
-			<text x={W / 2} y={392} textAnchor="middle" fill={TOK.ink} fontSize={20} fontWeight={800} opacity={cap.opacity}>{cap.text}</text>
-			<Tag x={W / 2} y={446} text="Keq unchanged: temperature unchanged" color={theme.accent} ink={theme.accent} size={18} anchor="middle" opacity={ramp(frame, b.keq, 14)} />
+			<text x={W / 2} y={404} textAnchor="middle" fill={TOK.ink} fontSize={20} fontWeight={800} opacity={cap.opacity}>{cap.text}</text>
+			<Tag x={W / 2} y={456} text="Keq unchanged: temperature unchanged" color={theme.accent} ink={theme.accent} size={18} anchor="middle" opacity={ramp(frame, b.keq, 14)} />
 		</svg>
 	);
 };
