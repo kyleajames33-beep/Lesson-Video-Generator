@@ -73,6 +73,37 @@
       "voiceover": {
         "text": "Let's set the baseline, building on lesson three. For a strong acid with a strong base, both arrive completely ionised, so no energy is needed to make ions. The only thing that happens on mixing is hydrogen ion plus hydroxide forms water, and that releases about fifty-seven kilojoules per mole. So minus fifty-seven is actually the maximum heat you can get per mole of water, the pure energy of forming that oxygen-hydrogen bond. Here's the key consequence. Bringing in any weak species can only make the enthalpy more positive, that is, less exothermic, never more negative than fifty-seven. So if you ever measure something past fifty-seven, like minus fifty-nine, suspect a systematic error. And a habit to lock in, more negative means more exothermic, so minus fifty-two releases less heat than minus fifty-seven, even though fifty-two is the smaller number.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L10/concept-baseline.9b77315f4086.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6HeatLedger",
+        "props": {
+          "floor": {
+            "value": 57,
+            "label": "beyond −57: not possible for neutralisation",
+            "at": 334
+          },
+          "markers": [
+            {
+              "value": 57,
+              "label": "strong acid + strong base",
+              "at": 164,
+              "tone": "accent"
+            },
+            {
+              "value": 59,
+              "label": "past −57? suspect a systematic error",
+              "at": 704,
+              "tone": "amber"
+            },
+            {
+              "value": 52,
+              "label": "less exothermic: releases less heat",
+              "at": 820,
+              "tone": "blue"
+            }
+          ]
+        }
       }
     },
     {
@@ -98,6 +129,39 @@
       "voiceover": {
         "text": "Now the mechanism, which is what a band six answer needs. With hydrochloric acid, the hydrogen ions are already free, so the moment you add base, hydrogen ion plus hydroxide makes water and you get the full fifty-seven. With acetic acid, almost all of it is sitting there as whole molecules, only about a percent ionised. So when hydroxide comes in and grabs the few free hydrogen ions, it pulls the acetic acid equilibrium to the right, forcing more of it to ionise, acetic acid to hydrogen ion plus acetate. But breaking that oxygen-hydrogen bond to ionise is endothermic, it absorbs heat. So the net heat measured is the fifty-seven from forming water, minus the energy spent ionising. Crucially, this is thermodynamic, not kinetic. The reaction still goes fully to completion. The smaller temperature rise isn't a slow or incomplete reaction, it's energy diverted into ionisation. And you can measure that cost, it's just the difference between the two enthalpies.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L10/concept-mechanism.19783ce9bdaf.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6HeatLedger",
+        "props": {
+          "steps": [
+            {
+              "label": "H⁺ + OH⁻ → H₂O",
+              "sub": "forming water",
+              "kind": "release",
+              "value": 57.3,
+              "at": 60
+            },
+            {
+              "label": "ionising CH₃COOH",
+              "sub": "endothermic",
+              "kind": "cost",
+              "value": 2.1,
+              "at": 589
+            },
+            {
+              "label": "measured ΔHn",
+              "sub": "CH₃COOH + NaOH",
+              "kind": "net",
+              "value": 55.2,
+              "at": 675
+            }
+          ],
+          "formula": {
+            "text": "ΔH(ionisation) = −55.2 − (−57.3) = +2.1 kJ mol⁻¹",
+            "at": 988
+          }
+        }
       }
     },
     {

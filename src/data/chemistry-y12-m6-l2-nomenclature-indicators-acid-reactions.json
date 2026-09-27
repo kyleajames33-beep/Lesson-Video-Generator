@@ -128,11 +128,85 @@
         "audioFile": "public/audio/Chemistry-Y12-M6-L2/concept-indicators.b0f9a0c08ee2.mp3"
       },
       "diagram": {
-        "type": "beforeAfter",
-        "beforeLabel": "Acidic: high H⁺",
-        "afterLabel": "Basic: low H⁺",
-        "beforeContent": "Equilibrium shifts LEFT → HIn form → acid colour",
-        "afterContent": "Equilibrium shifts RIGHT → In⁻ form → base colour"
+        "type": "diorama",
+        "kind": "chem12m6Indicator",
+        "props": {
+          "indicators": [
+            {
+              "name": "Methyl orange",
+              "acidColor": "#d7263d",
+              "baseColor": "#f2c418",
+              "lo": 3,
+              "hi": 4.5,
+              "rangeText": "≈ 3–4.5"
+            },
+            {
+              "name": "Bromothymol blue",
+              "acidColor": "#e8cf2a",
+              "midColor": "#4aa84f",
+              "baseColor": "#2d63c8",
+              "lo": 6,
+              "hi": 7.5,
+              "rangeText": "≈ 6–7.5"
+            },
+            {
+              "name": "Phenolphthalein",
+              "acidColor": "#f3f1f4",
+              "baseColor": "#e0368f",
+              "lo": 8.3,
+              "hi": 10,
+              "rangeText": "8.3–10"
+            }
+          ],
+          "sweep": [
+            {
+              "pH": 7,
+              "at": 0
+            },
+            {
+              "pH": 7,
+              "at": 260
+            },
+            {
+              "pH": 1.5,
+              "at": 310
+            },
+            {
+              "pH": 1.5,
+              "at": 500
+            },
+            {
+              "pH": 12.5,
+              "at": 560
+            },
+            {
+              "pH": 12.5,
+              "at": 700
+            },
+            {
+              "pH": 1.5,
+              "at": 745
+            },
+            {
+              "pH": 12.5,
+              "at": 990
+            },
+            {
+              "pH": 7,
+              "at": 1020
+            }
+          ],
+          "rangeAt": [
+            759,
+            851,
+            934
+          ],
+          "flag": {
+            "index": 2,
+            "at": 1030,
+            "text": "colourless at pH 7"
+          }
+        }
       }
     },
     {

@@ -75,7 +75,20 @@
         "audioFile": "public/audio/Chemistry-Y12-M6-L3/concept-why.a37538726c3f.mp3"
       },
       "diagram": {
-        "type": "calorimeter"
+        "type": "diorama",
+        "kind": "chem12m6NetIonic",
+        "props": {
+          "ionsAt": 0,
+          "mixAt": 319,
+          "spectatorAt": 495,
+          "equationAt": 672,
+          "others": [
+            {
+              "text": "HNO₃ + KOH, HCl + NaOH …: the same H⁺ + OH⁻ → H₂O every time",
+              "at": 740
+            }
+          ]
+        }
       }
     },
     {
@@ -101,6 +114,38 @@
       "voiceover": {
         "text": "Now why does a weak acid release less heat? Take acetic acid. At normal concentrations only about one percent of it is actually ionised before you add any base, so most of it is sitting there as whole, un-ionised molecules. When you add the strong base, the hydroxide grabs the few hydrogen ions available, which pulls the acetic acid equilibrium further to the right, forcing more of it to ionise. But breaking that oxygen hydrogen bond to ionise is endothermic, it costs energy. And that energy comes straight out of the heat the water-forming step releases. So the net heat measured is the fifty-seven minus the cost of finishing the ionisation, which lands the answer below fifty-seven. For a full-marks answer, say all three parts, partially ionised, endothermic ionisation step, reduced net heat. Don't just say it's less acidic, that explains nothing.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L3/concept-weak.4df076a4c792.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6HeatLedger",
+        "props": {
+          "numbers": false,
+          "steps": [
+            {
+              "label": "H⁺ + OH⁻ → H₂O",
+              "sub": "forming water",
+              "kind": "release",
+              "value": 57,
+              "at": 300
+            },
+            {
+              "label": "ionising CH₃COOH",
+              "sub": "endothermic cost",
+              "kind": "cost",
+              "value": 7,
+              "valueText": "cost",
+              "at": 495
+            },
+            {
+              "label": "net heat measured",
+              "sub": "less than 57",
+              "kind": "net",
+              "value": 50,
+              "valueText": "< 57",
+              "at": 698
+            }
+          ]
+        }
       }
     },
     {

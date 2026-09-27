@@ -12,6 +12,10 @@ import {RouteStepsDiagram} from '../kinds/chem-y12-m6/RouteStepsDiagram';
 import {FivePercentDiagram} from '../kinds/chem-y12-m6/FivePercentDiagram';
 import {BufferDiagram} from '../kinds/chem-y12-m6/BufferDiagram';
 import {TitrationCurveDiagram} from '../kinds/chem-y12-m6/TitrationCurveDiagram';
+import {ConductometricDiagram} from '../kinds/chem-y12-m6/ConductometricDiagram';
+import {IndicatorDiagram} from '../kinds/chem-y12-m6/IndicatorDiagram';
+import {HeatLedgerDiagram} from '../kinds/chem-y12-m6/HeatLedgerDiagram';
+import {NetIonicDiagram} from '../kinds/chem-y12-m6/NetIonicDiagram';
 
 export const KINDS: DioramaKindMap = {
   chem12m6ProtonHop: ProtonHopDiagram,
@@ -21,4 +25,8 @@ export const KINDS: DioramaKindMap = {
   chem12m6FivePercent: FivePercentDiagram,
   chem12m6Buffer: BufferDiagram,
   chem12m6TitrationCurve: TitrationCurveDiagram,
+  chem12m6Conductometric: ConductometricDiagram,
+  chem12m6Indicator: IndicatorDiagram,
+  chem12m6HeatLedger: HeatLedgerDiagram,
+  chem12m6NetIonic: NetIonicDiagram,
 };
