@@ -62,7 +62,7 @@ export const MixDiluteDiagram = ({
 
 	// ── Pour ──
 	const pour = eramp(frame, bt.pour, 80);
-	const tilt = interpolate(frame, [bt.pour - 10, bt.pour + 10, bt.pour + 80, bt.pour + 100], [0, 28, 28, 0], clamp);
+	const tilt = interpolate(frame, [bt.pour - 10, bt.pour + 12, bt.pour + 78, bt.pour + 100], [0, 24, 24, 0], clamp);
 	const smallLevel = (LIQ / SH) * (1 - pour);
 	const bigLiq = (LIQ * (a.v + b.v)) / Math.max(a.v, b.v);
 	const bigLevel = (bigLiq / BH) * pour;
@@ -129,7 +129,7 @@ export const MixDiluteDiagram = ({
 						<text x={S.x} y={40} textAnchor="middle" fill={TOK.ink} fontSize={19} fontWeight={800}>{s.name}</text>
 						<text x={S.x} y={62} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={800}>{s.v} mL</text>
 						<DioramaPlinth id={ID} cx={S.x} cy={S.base + 4} rx={78}>
-							<g transform={`rotate(${rot} ${pivot} ${S.base - SH})`}>
+							<g transform={`rotate(${rot} ${pivot} ${S.base})`}>
 								<Beaker cx={S.x} baseY={S.base} w={BW} h={SH} level={smallLevel} />
 							</g>
 						</DioramaPlinth>
@@ -143,8 +143,11 @@ export const MixDiluteDiagram = ({
 			{/* Pour streams */}
 			{[0, 1].map((si) => {
 				const S = si === 0 ? SA : SB;
-				const lipX = si === 0 ? S.x + BW / 2 + 4 : S.x - BW / 2 - 4;
-				const lipY = S.base - SH + 6;
+				const th = (24 * Math.PI) / 180;
+				// lip corner after tipping about the inner base corner
+				const lipX0 = si === 0 ? S.x + BW / 2 : S.x - BW / 2;
+				const lipX = lipX0 + (si === 0 ? 1 : -1) * Math.sin(th) * SH;
+				const lipY = S.base - Math.cos(th) * SH + 4;
 				const op = interpolate(frame, [bt.pour + 6, bt.pour + 16, bt.pour + 70, bt.pour + 84], [0, 0.75, 0.75, 0], clamp);
 				const endX = BIG.x + (si === 0 ? -18 : 18);
 				return (
@@ -173,6 +176,17 @@ export const MixDiluteDiagram = ({
 				.map(({p, x, y}, i) => (
 					<Ball key={p.key} id={ID} el={p.ion.el} x={x + idleBob(frame, i, 0.8)} y={y} r={p.main ? R : R - 2} label={p.ion.sign} labelSize={p.main ? 15 : 13} labelColor={p.ion.ink ?? '#ffffff'} opacity={ramp(frame, 2 + i, 10) * (p.main ? 1 : 0.8)} />
 				))}
+
+			{/* Legend */}
+			<g opacity={ramp(frame, 6)}>
+				{[a.ion, b.ion].map((ion, i) => (
+					<g key={i}>
+						<Ball id={ID} el={ion.el} x={26} y={446 + i * 30} r={R} label={ion.sign} labelSize={15} labelColor={ion.ink ?? '#ffffff'} />
+						<text x={44} y={452 + i * 30} fill={TOK.ink} fontSize={17} fontWeight={800}>{ion.label}</text>
+					</g>
+				))}
+				<text x={14} y={512} fill={TOK.inkDim} fontSize={15} fontWeight={700}>small: {a.counter.label}, {b.counter.label}</text>
+			</g>
 
 			{/* Halving note by the big beaker */}
 			<g opacity={ramp(frame, bt.halve, 16)}>
