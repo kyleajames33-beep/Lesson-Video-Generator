@@ -14,9 +14,9 @@
 import {useCurrentFrame} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
-import {DioramaPlinth, idleBob, idlePulse} from '../../diorama';
+import {DioramaPlinth, idlePulse} from '../../diorama';
 import {Beaker, bounce, eramp, hash01, ramp} from './shared';
-import {CBall, ColorBallDefs, P, RED, Rich, Strike, kbW, partsW} from './kbKit';
+import {CBall, ColorBallDefs, P, RED, Rich, Strike, partsW} from './kbKit';
 
 export type KspIon = {label: string; color: string; ink?: string; r?: number};
 export type KspStage = {at: number; name: string; cation: KspIon; anion: KspIon; ratio: number; caption?: string};
@@ -125,7 +125,7 @@ export const KspDissolveDiagram = ({
 
 			{/* Beaker on its plinth */}
 			<g opacity={ramp(frame, 0, 14)}>
-				<DioramaPlinth id="c12m5ksp" cx={BCX} cy={BASE + 6} rx={166}>
+				<DioramaPlinth id="c12m5ksp" cx={BCX} cy={BASE + 6} rx={150}>
 					<Beaker cx={BCX} baseY={BASE} w={BW} h={BH} level={0.8}>
 						{stages.map((st, k) => {
 							const inO = k === 0 ? 1 : ramp(frame, st.at, 20);
@@ -134,7 +134,8 @@ export const KspDissolveDiagram = ({
 						})}
 					</Beaker>
 				</DioramaPlinth>
-				<text x={BCX} y={BASE - BH - 14} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={800} letterSpacing="0.06em">SATURATED SOLUTION</text>
+				<text x={BCX} y={BASE - BH - 38} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={800} letterSpacing="0.06em">SATURATED SOLUTION</text>
+				<text x={BCX} y={BASE - BH - 14} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>ions leave and rejoin the crystal</text>
 				{stages.map((st, k) => {
 					const o = (k === 0 ? 1 : ramp(frame, st.at, 16)) * (k + 1 < stages.length ? 1 - ramp(frame, stages[k + 1].at - 12, 12) : 1);
 					return (
@@ -145,9 +146,6 @@ export const KspDissolveDiagram = ({
 					);
 				})}
 			</g>
-			<text x={BCX} y={BASE - BH * 0.8 + 18} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800} opacity={ramp(frame, 10, 14) * 0.9}>
-				ions leave and rejoin
-			</text>
 
 			{/* Right-hand lines */}
 			{lines.map((l, i) => {
@@ -182,4 +180,3 @@ export const KspDissolveDiagram = ({
 	);
 };
 
-export const kspTextWidth = kbW;

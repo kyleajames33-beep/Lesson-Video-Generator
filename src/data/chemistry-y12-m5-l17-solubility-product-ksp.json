@@ -57,30 +57,157 @@
       "heading": "Ksp is Keq for a dissolving solid",
       "body": "For a saturated solution, Ksp is the product of the ion concentrations, each raised to its coefficient. The solid is left out.",
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Formula type",
-          "Example",
-          "Ksp in terms of s"
-        ],
-        "rows": [
-          [
-            "AB (1:1)",
-            "AgCl",
-            "Ksp = s²"
+        "type": "diorama",
+        "kind": "chem12m5KspDissolve",
+        "props": {
+          "stages": [
+            {
+              "at": 0,
+              "name": "MX(s)",
+              "cation": {
+                "label": "+",
+                "color": "#2f9e8f"
+              },
+              "anion": {
+                "label": "−",
+                "color": "#8a5cc9"
+              },
+              "ratio": 1,
+              "caption": "ions in a 1 : 1 ratio"
+            },
+            {
+              "at": 700,
+              "name": "CaF₂(s)",
+              "cation": {
+                "label": "2+",
+                "color": "#3a9a55",
+                "r": 13
+              },
+              "anion": {
+                "label": "−",
+                "color": "#e0cf4a",
+                "ink": "#3a3a3a",
+                "r": 12
+              },
+              "ratio": 2,
+              "caption": "each CaF₂ → 1 Ca²⁺ + 2 F⁻"
+            }
           ],
-          [
-            "AB₂ or A₂B (1:2)",
-            "CaF₂",
-            "Ksp = 4s³"
-          ],
-          [
-            "AB₃ or A₃B (1:3)",
-            "Fe(OH)₃",
-            "Ksp = 27s⁴"
+          "lines": [
+            {
+              "at": 156,
+              "out": 690,
+              "y": 72,
+              "t": "MX(s) ⇌ M⁺(aq) + X⁻(aq)",
+              "size": 26
+            },
+            {
+              "at": 200,
+              "out": 690,
+              "y": 106,
+              "x": 432,
+              "t": "solid: left out",
+              "size": 18,
+              "color": "#5a5a5a"
+            },
+            {
+              "at": 276,
+              "out": 690,
+              "y": 172,
+              "t": "K_{sp} = [M⁺][X⁻]",
+              "size": 38,
+              "box": "accent"
+            },
+            {
+              "at": 300,
+              "out": 690,
+              "y": 222,
+              "t": "no denominator",
+              "size": 20,
+              "color": "#5a5a5a"
+            },
+            {
+              "at": 700,
+              "y": 72,
+              "t": "CaF₂(s) ⇌ Ca²⁺(aq) + 2F⁻(aq)",
+              "size": 23
+            },
+            {
+              "at": 740,
+              "y": 124,
+              "t": "[Ca²⁺] = s      [F⁻] = *{2}s",
+              "size": 27
+            },
+            {
+              "at": 833,
+              "y": 178,
+              "t": "K_{sp} = [Ca²⁺][F⁻]*{^{2}}",
+              "size": 28
+            },
+            {
+              "at": 870,
+              "y": 212,
+              "t": "the 2 multiplies s and becomes the power",
+              "size": 17,
+              "color": "#5a5a5a"
+            },
+            {
+              "at": 935,
+              "y": 262,
+              "t": "= s × (2s)^{2} = *{4s³}",
+              "size": 30,
+              "box": "amber"
+            },
+            {
+              "at": 599,
+              "y": 330,
+              "x": 386,
+              "anchor": "start",
+              "t": "AgCl  (1:1)",
+              "size": 22
+            },
+            {
+              "at": 599,
+              "y": 330,
+              "x": 736,
+              "anchor": "end",
+              "t": "K_{sp} = s^{2}",
+              "size": 22
+            },
+            {
+              "at": 935,
+              "y": 372,
+              "x": 386,
+              "anchor": "start",
+              "t": "CaF₂  (1:2)",
+              "size": 22
+            },
+            {
+              "at": 935,
+              "y": 372,
+              "x": 736,
+              "anchor": "end",
+              "t": "K_{sp} = 4s^{3}",
+              "size": 22
+            },
+            {
+              "at": 1017,
+              "y": 414,
+              "x": 386,
+              "anchor": "start",
+              "t": "Fe(OH)₃  (1:3)",
+              "size": 22
+            },
+            {
+              "at": 1017,
+              "y": 414,
+              "x": 736,
+              "anchor": "end",
+              "t": "K_{sp} = 27s^{4}",
+              "size": 22
+            }
           ]
-        ],
-        "delay": 20
+        }
       },
       "bullets": [
         {
@@ -125,6 +252,115 @@
       "voiceover": {
         "text": "Now let's go the other way, from a given Ksp to the actual molar solubility. Set it up like an ICE problem. The solid dissolves, and you let the molar solubility be s. Then write each ion concentration in terms of s, using the stoichiometry. The cation is s, and the anion is its coefficient times s. Substitute into the Ksp expression and solve for s. For silver chloride, Ksp equals s squared, so s is just the square root of Ksp, clean. For calcium fluoride, fluoride is two s, so Ksp equals s times the quantity two s squared, which is four s cubed, and s is the cube root of Ksp over four. Here's where students lose marks, and it's worth burning in. You must put the coefficient inside the bracket before you square. For calcium fluoride that's two s, all squared, which is four s squared, not just two s squared. Forget that factor and your answer is wrong by a noticeable amount. Coefficient inside the bracket, then apply the power.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L17/concept-solubility.40b1fc8e974f.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5KspDissolve",
+        "props": {
+          "stages": [
+            {
+              "at": 0,
+              "name": "AgCl(s)",
+              "cation": {
+                "label": "+",
+                "color": "#c9ccd2",
+                "ink": "#3a3f47",
+                "r": 12
+              },
+              "anion": {
+                "label": "−",
+                "color": "#4fbf4a",
+                "r": 14
+              },
+              "ratio": 1,
+              "caption": "AgCl → Ag⁺ + Cl⁻  (1 : 1)"
+            },
+            {
+              "at": 482,
+              "name": "CaF₂(s)",
+              "cation": {
+                "label": "2+",
+                "color": "#3a9a55",
+                "r": 13
+              },
+              "anion": {
+                "label": "−",
+                "color": "#e0cf4a",
+                "ink": "#3a3a3a",
+                "r": 12
+              },
+              "ratio": 2,
+              "caption": "each CaF₂ → 1 Ca²⁺ + 2 F⁻"
+            }
+          ],
+          "lines": [
+            {
+              "at": 49,
+              "y": 58,
+              "t": "molar solubility = s",
+              "size": 26
+            },
+            {
+              "at": 240,
+              "y": 98,
+              "t": "[cation] = s     [anion] = coefficient × s",
+              "size": 19,
+              "color": "#5a5a5a"
+            },
+            {
+              "at": 374,
+              "y": 154,
+              "t": "AgCl:  K_{sp} = s × s = s^{2}",
+              "size": 26
+            },
+            {
+              "at": 420,
+              "y": 200,
+              "t": "s = √K_{sp}",
+              "size": 28,
+              "box": "accent"
+            },
+            {
+              "at": 482,
+              "y": 262,
+              "t": "CaF₂:  K_{sp} = s(2s)^{2} = 4s^{3}",
+              "size": 26
+            },
+            {
+              "at": 580,
+              "y": 308,
+              "t": "s = ∛(K_{sp} ÷ 4)",
+              "size": 28,
+              "box": "accent"
+            },
+            {
+              "at": 750,
+              "y": 372,
+              "t": "coefficient inside the bracket, then square",
+              "size": 19,
+              "color": "#5a5a5a"
+            },
+            {
+              "at": 821,
+              "y": 428,
+              "x": 470,
+              "t": "(2s)^{2} = *{4s²}",
+              "size": 30,
+              "box": "amber",
+              "mark": "✓"
+            },
+            {
+              "at": 860,
+              "y": 428,
+              "x": 672,
+              "t": "2s^{2}",
+              "size": 30,
+              "color": "#5a5a5a",
+              "mark": "✗",
+              "strikeAt": 888
+            }
+          ]
+        }
       }
     },
     {
