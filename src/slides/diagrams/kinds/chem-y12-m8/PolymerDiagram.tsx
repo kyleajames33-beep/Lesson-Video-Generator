@@ -73,6 +73,7 @@ const TypesMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) =
 		return ((monoA + (chainA - monoA) * join) * Math.PI) / 180;
 	};
 	const addIn = ramp(frame, tAdd - 30, 16);
+	const headIn = ramp(frame, 0, 16);
 
 	// Condensation: diacid – diamine – diacid
 	const CY = 382;
@@ -96,8 +97,10 @@ const TypesMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) =
 			<DioramaDefs id={ID} elements={['O', 'H']} />
 			<GlossDefs id={ID} colors={GLOSS} />
 			{/* ADDITION */}
+			<text x={28} y={36} fill={TOK.ink} fontSize={24} fontWeight={800} opacity={headIn}>Addition</text>
+			<text x={28} y={276} fill={TOK.ink} fontSize={24} fontWeight={800} opacity={headIn}>Condensation</text>
+			<line x1={24} y1={236} x2={W - 24} y2={236} stroke={TOK.rule} strokeWidth={2} opacity={headIn} />
 			<g opacity={addIn}>
-				<text x={28} y={36} fill={TOK.ink} fontSize={24} fontWeight={800}>Addition</text>
 				<text x={150} y={36} fill={TOK.inkDim} fontSize={18} fontWeight={700}>alkene monomers join across the C=C</text>
 				{/* C–C bonds */}
 				{carbons.map((c, k) => {
@@ -148,10 +151,8 @@ const TypesMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) =
 					<text x={610} y={AY + 74} fill={theme.accent} fontSize={18} fontWeight={800}>no by-product</text>
 				</g>
 			</g>
-			<line x1={24} y1={236} x2={W - 24} y2={236} stroke={TOK.rule} strokeWidth={2} opacity={condIn} />
 			{/* CONDENSATION */}
 			<g opacity={condIn}>
-				<text x={28} y={276} fill={TOK.ink} fontSize={24} fontWeight={800}>Condensation</text>
 				<text x={206} y={276} fill={TOK.inkDim} fontSize={18} fontWeight={700} opacity={bi}>bifunctional monomers: two reactive groups</text>
 				{blocks.map((bk, i) => {
 					const x = bk.x0 + (bk.x1 - bk.x0) * link;
@@ -339,15 +340,17 @@ const DialsMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) =
 		<g>
 			<GlossDefs id={ID} colors={GLOSS} />
 			{panels.map((p, i) => {
-				const o = ramp(frame, i === 0 ? Math.min(tFour, p.t) : p.t, 16);
+				const o = ramp(frame, p.t, 16);
+				const fo = ramp(frame, 4 + i * 8, 16);
 				const g = ease(ramp(frame, p.t + 10, 50));
 				const val = i === 3 ? 0.2 + 0.35 * g + 0.38 * ease(ramp(frame, tKev, 40)) : 0.2 + 0.7 * g;
 				const ix = p.x + 18, iy = p.y + 64; // illustration box origin (220 × 120)
 				return (
-					<g key={i} opacity={o}>
+					<g key={i} opacity={fo}>
 						<rect x={p.x} y={p.y} width={PW} height={PH} rx={18} fill="#ffffff" fillOpacity={0.7} stroke={i === 3 && frame > tKev ? TOK.amber : TOK.cardBorder} strokeWidth={i === 3 && frame > tKev ? 2 + pulse * 1.5 : 1.5} />
 						<text x={p.x + 18} y={p.y + 34} fill={TOK.ink} fontSize={20} fontWeight={800}>{p.title}</text>
 						<Dial x={p.x + PW - 58} y={p.y + 120} value={val} label={p.dial} amber={i === 3 && frame > tKev} />
+						<g opacity={o}>
 						<text x={p.x + 18} y={p.y + PH - 38} fill={TOK.ink} fontSize={17} fontWeight={800}>
 							{i === 3 ? (
 								<>
@@ -410,6 +413,7 @@ const DialsMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) =
 								})}
 							</g>
 						)}
+						</g>
 					</g>
 				);
 			})}

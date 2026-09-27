@@ -109,8 +109,8 @@ const FormsMode = ({frame, beats, id}: {frame: number; beats: number[]; id: stri
 	const x0 = PCX - BW / 2 + 22; // left wall (ball centre limit adds r)
 	const memL = 358, memR = 402;
 	const x1 = PCX + BW / 2 - 22;
-	const r = 23;
-	const yTop = PCY - BH * 0.86 + 32, yBot = PCY - 30;
+	const r = 21;
+	const yTop = PCY - BH * 0.86 + 22, yBot = PCY - 24;
 
 	// Six horizontal lanes: A⁻ on lanes 0, 2, 4 and HA on 1, 3, 5, so molecules of
 	// one kind never overlap (lane spacing > one diameter once the HA have crossed).
@@ -482,7 +482,7 @@ const HoclMode = ({frame, beats, id, pKa, lowerPH, higherPH}: {frame: number; be
 							{st > 0 && (
 								<g opacity={st}>
 									<Molecule id={id} atoms={['O', 'Cl']} x={x} y={y} r={12} scale={sc} />
-									<text x={x + 15} y={y - 8} fill={TOK.ink} fontSize={17} fontWeight={800}>−</text>
+									<text x={x + 13} y={y - 6} fill={TOK.ink} fontSize={21} fontWeight={900}>−</text>
 								</g>
 							)}
 							{st > 0 && st < 1 && <circle cx={x - 8} cy={y - st * 24} r={6} fill={`url(#${id}-atom-H)`} opacity={1 - st} />}
@@ -512,7 +512,7 @@ const HoclMode = ({frame, beats, id, pKa, lowerPH, higherPH}: {frame: number; be
 			</g>
 			<g opacity={ramp(frame, tRise, 16)}>
 				<Molecule id={id} atoms={['O', 'Cl']} x={470} y={128} r={12} />
-				<text x={485} y={120} fill={TOK.ink} fontSize={17} fontWeight={800}>−</text>
+				<text x={483} y={122} fill={TOK.ink} fontSize={21} fontWeight={900}>−</text>
 				<text x={500} y={137} fill={TOK.ink} fontSize={20} fontWeight={800}>OCl⁻</text>
 				<text x={554} y={137} fill={TOK.inkDim} fontSize={17} fontWeight={700}>weaker disinfectant</text>
 			</g>

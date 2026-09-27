@@ -39,8 +39,9 @@ const W = 760;
 const H = 530;
 
 const DEFAULT_BEATS: Record<NonNullable<SkeletalProps['mode']>, number[]> = {
-	// byFunction, analgesic, antibiotic, antiviral, antacid, localAnaes, byStructure, trio, different
-	gallery: [210, 255, 285, 322, 329, 374, 457, 614, 718],
+	// byFunction, analgesic, antibiotic, antiviral, antacid, localAnaes, byStructure, trio, different,
+	// functionHeader ("what it does"), structureHeader ("structural features": empty plinths)
+	gallery: [210, 255, 285, 322, 329, 374, 457, 614, 718, 90, 150],
 	// [ring, g2, g3, behaviour] × aspirin, paracetamol, ibuprofen
 	read: [247, 270, 300, 315, 404, 427, 449, 464, 532, 554, 591, 614],
 	// start, kept, pharmacophore, onlyOH, convert, result, irritation, cutsBothWays
@@ -67,7 +68,7 @@ const Gallery = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) => 
 	const theme = useAccent();
 	const [tFn, ...rest] = b;
 	const tClasses = rest.slice(0, 5);
-	const [tStruct, tTrio, tDiff] = rest.slice(5);
+	const [tStruct, tTrio, tDiff, tFnHead, tStHead] = rest.slice(5);
 	const ID = 'c12m8skel-gal';
 	const classes = ['analgesic', 'antibiotic', 'antiviral', 'antacid', 'local anaesthetic'];
 	const size = 18;
@@ -95,7 +96,7 @@ const Gallery = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) => 
 	return (
 		<g>
 			<DioramaDefs id={ID} />
-			<text x={W / 2} y={30} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={800} letterSpacing="0.12em" opacity={ramp(frame, tFn - 30, 16)}>
+			<text x={W / 2} y={30} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={800} letterSpacing="0.12em" opacity={ramp(frame, Math.min(tFnHead, tFn), 16)}>
 				BY FUNCTION
 			</text>
 			{classes.map((c, i) => {
@@ -111,7 +112,7 @@ const Gallery = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) => 
 			})}
 
 			{/* divider: by structure */}
-			<g opacity={ramp(frame, tStruct, 16)}>
+			<g opacity={ramp(frame, Math.min(tStHead, tStruct), 16)}>
 				<line x1={40} y1={112} x2={W / 2 - 92} y2={112} stroke={TOK.rule} strokeWidth={2} />
 				<line x1={W / 2 + 92} y1={112} x2={W - 40} y2={112} stroke={TOK.rule} strokeWidth={2} />
 				<text x={W / 2} y={118} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={800} letterSpacing="0.12em">BY STRUCTURE</text>
@@ -124,8 +125,10 @@ const Gallery = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) => 
 				const bob = idleBob(frame, i, 1.6);
 				return (
 					<g key={m.name}>
-						<g opacity={Math.min(1, enter * 1.3)}>
+						<g opacity={Math.min(1, pop(frame, fps, Math.min(tStHead, tStruct) + 6 + i * 8) * 1.3)}>
 							<DioramaPlinth id={`${ID}-${i}`} cx={xs[i]} cy={PL_Y} rx={92} />
+						</g>
+						<g opacity={Math.min(1, enter * 1.3)}>
 							<text x={xs[i]} y={PL_Y + 84} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>{m.name}</text>
 						</g>
 						<g opacity={Math.min(1, enter * 1.3)} transform={`translate(0,${(1 - Math.min(enter, 1)) * 30 + bob})`}>

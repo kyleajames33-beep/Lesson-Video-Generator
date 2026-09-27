@@ -185,7 +185,7 @@ const TrainMode = ({id, frame, fps, b, accent}: ModeArgs) => {
 						{isDis && (
 							<g opacity={ramp(frame, tDis - 10, 14)}>
 								<rect x={cx + 11} y={surf - 44} width={18} height={24} rx={4} fill="#e6eef3" stroke="#8d949b" strokeWidth={1.5} />
-								<text x={cx - 6} y={surf - 26} textAnchor="end" fill={TOK.ink} fontSize={16} fontWeight={800}>Cl₂</text>
+								<text x={cx - 6} y={surf - 26} textAnchor="end" fill={TOK.ink} fontSize={16} fontWeight={800}>chlorine</text>
 							</g>
 						)}
 						{i === 0 && (
