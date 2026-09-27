@@ -48,7 +48,6 @@
       "type": "concept",
       "heading": "Addition polymerisation",
       "body": "Alkene monomers with a C=C double bond open up and join into a long chain, losing no atoms at all.",
-      "image": "l11AdditionPolymerisation",
       "bullets": [
         {"text": "Each C=C double bond opens and forms new single bonds to its neighbours."},
         {"text": "No small molecule is released, so atom economy is one hundred percent."},
@@ -56,6 +55,42 @@
       ],
       "secondary": "Ethene gives polyethylene, propene gives polypropylene, vinyl chloride gives PVC, and styrene gives polystyrene.",
       "callout": "Open the double bond, join the chain, lose nothing.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1PolymerJoin",
+        "props": {
+          "mode": "addition",
+          "title": "Open the C=C, join the chain, lose nothing",
+          "monomers": 4,
+          "beats": {
+            "doubleBond": 120,
+            "open": 211,
+            "join": 245,
+            "count": 591,
+            "rGroup": 782
+          },
+          "rGroups": [
+            {
+              "r": "H",
+              "polymer": "polyethylene",
+              "monomer": "ethene",
+              "at": 881
+            },
+            {
+              "r": "Cl",
+              "polymer": "PVC",
+              "monomer": "vinyl chloride",
+              "at": 914
+            },
+            {
+              "r": "CH₃",
+              "polymer": "polypropylene",
+              "monomer": "propene",
+              "at": 955
+            }
+          ]
+        }
+      },
       "durationInFrames": 1140,
       "caption": "Addition polymerisation: C=C monomers join with no byproduct, 100% atom economy.",
       "voiceover": {
@@ -67,7 +102,6 @@
       "type": "concept",
       "heading": "Condensation polymerisation",
       "body": "Monomers with two reactive groups join while releasing a small molecule, usually water, at every link.",
-      "image": "l11CondensationPolymerisation",
       "bullets": [
         {"text": "Each monomer needs two reactive ends, so it can join on both sides."},
         {"text": "A small molecule, usually water, is released at every new linkage."},
@@ -75,6 +109,24 @@
       ],
       "secondary": "PET polyester comes from a diol plus a diacid. Nylon comes from a diamine plus a diacid. Both lose water at each junction.",
       "callout": "Two reactive ends, plus a small molecule lost at every link.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1PolymerJoin",
+        "props": {
+          "mode": "condensation",
+          "title": "Join two reactive ends, lose H₂O",
+          "monomers": 4,
+          "beats": {
+            "ends": 88,
+            "link": 388,
+            "esterLabel": 560,
+            "nylon": 777,
+            "headline": 936
+          },
+          "nylonNote": "Nylon: diamine + diacid → amide links, also losing H₂O",
+          "headline": "Addition loses nothing; condensation loses H₂O at every link"
+        }
+      },
       "durationInFrames": 1170,
       "caption": "Condensation polymerisation: bifunctional monomers join, releasing H₂O at each link.",
       "voiceover": {
@@ -110,6 +162,84 @@
       ],
       "secondary": "Polar groups, like the C–Cl in PVC, add dipole forces between chains, so PVC is stiffer than dispersion-only polyethylene.",
       "callout": "Chain length, branching, and forces between chains set the properties.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1PolymerChains",
+        "props": {
+          "panels": [
+            {
+              "title": "1. Chain length",
+              "chip": "Longer → ↑ MP & strength",
+              "at": 245,
+              "forcesAt": 330,
+              "chipAt": 395,
+              "halves": [
+                {
+                  "kind": "short",
+                  "label": "short",
+                  "at": 245
+                },
+                {
+                  "kind": "long",
+                  "label": "long",
+                  "at": 270
+                }
+              ]
+            },
+            {
+              "title": "2. Branching",
+              "chip": "Branched → less dense, flexible",
+              "at": 453,
+              "chipAt": 545,
+              "halves": [
+                {
+                  "kind": "linear",
+                  "label": "linear",
+                  "at": 453
+                },
+                {
+                  "kind": "branched",
+                  "label": "branched",
+                  "at": 470
+                }
+              ]
+            },
+            {
+              "title": "3. Cross-linking",
+              "chip": "Rigid, heat-resistant (bakelite)",
+              "at": 661,
+              "forcesAt": 677,
+              "chipAt": 777,
+              "halves": [
+                {
+                  "kind": "crosslinked",
+                  "label": "covalent cross-links",
+                  "at": 661
+                }
+              ]
+            },
+            {
+              "title": "4. Polarity",
+              "chip": "C–Cl dipoles → PVC stiffer",
+              "at": 819,
+              "forcesAt": 910,
+              "chipAt": 960,
+              "halves": [
+                {
+                  "kind": "pvc",
+                  "label": "PVC",
+                  "at": 830
+                },
+                {
+                  "kind": "pe",
+                  "label": "polyethylene",
+                  "at": 860
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1170,
       "caption": "Chain length, branching, cross-linking, and polarity between chains set the properties.",
       "voiceover": {

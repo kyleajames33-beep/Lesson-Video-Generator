@@ -99,6 +99,55 @@
       ],
       "secondary": "Higher total IMF means higher boiling point. But a very large non-polar molecule can outrank a small hydrogen-bonded one.",
       "callout": "H-bonding? Polar? Size? In that order.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1DecisionTree",
+        "props": {
+          "title": "H-bonding? Polar? Size?",
+          "root": {
+            "q": "1. Is H bonded directly\nto N, O or F?",
+            "at": 100,
+            "branches": [
+              {
+                "label": "Yes",
+                "node": {
+                  "leaf": "Hydrogen\nbonding",
+                  "sub": "the strongest IMF",
+                  "icon": "hbond",
+                  "at": 195
+                }
+              },
+              {
+                "label": "No",
+                "node": {
+                  "q": "2. Is the molecule\npolar?",
+                  "at": 262,
+                  "branches": [
+                    {
+                      "label": "Yes",
+                      "node": {
+                        "leaf": "Dipole–dipole",
+                        "sub": "plus dispersion",
+                        "icon": "dipole",
+                        "at": 345
+                      }
+                    },
+                    {
+                      "label": "No",
+                      "node": {
+                        "leaf": "Dispersion\nonly",
+                        "sub": "compare electron\ncount and shape",
+                        "icon": "dispersion",
+                        "at": 450
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
       "durationInFrames": 1020,
       "caption": "Predict BP: check H-bonding, then polarity, then size.",
       "voiceover": {

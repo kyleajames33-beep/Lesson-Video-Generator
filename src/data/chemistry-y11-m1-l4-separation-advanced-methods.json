@@ -98,6 +98,60 @@
       ],
       "secondary": "Chromatography also identifies components, by comparing each spot's Rf to known standards run in the same system.",
       "callout": "Name the property that differs, then pick the technique.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1DecisionTree",
+        "props": {
+          "title": "Name the property that differs",
+          "highlight": "Which physical property\ndiffers?",
+          "root": {
+            "q": "Which physical property\ndiffers?",
+            "at": 70,
+            "branches": [
+              {
+                "node": {
+                  "leaf": "Filtration",
+                  "sub": "particle size",
+                  "icon": "filtration",
+                  "at": 170
+                }
+              },
+              {
+                "node": {
+                  "leaf": "Crystallisation",
+                  "sub": "solubility change\nwith temperature",
+                  "icon": "crystallisation",
+                  "at": 250
+                }
+              },
+              {
+                "node": {
+                  "leaf": "Simple\ndistillation",
+                  "sub": "boiling point,\nlarge gap",
+                  "icon": "distillation",
+                  "at": 345
+                }
+              },
+              {
+                "node": {
+                  "leaf": "Fractional\ndistillation",
+                  "sub": "boiling point,\nclose",
+                  "icon": "fractional",
+                  "at": 435
+                }
+              },
+              {
+                "node": {
+                  "leaf": "Chromato-\ngraphy",
+                  "sub": "phase affinity",
+                  "icon": "chromatography",
+                  "at": 600
+                }
+              }
+            ]
+          }
+        }
+      },
       "durationInFrames": 990,
       "caption": "Match technique to the differentiating property; chromatography also identifies.",
       "voiceover": {
