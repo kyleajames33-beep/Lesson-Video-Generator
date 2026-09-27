@@ -12,8 +12,8 @@
 import {spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
-import {DioramaPlinth, Molecule, idleBob, idlePulse, plinthSlots} from '../../diorama';
-import {AtomDefs, eramp, ramp, sup} from './shared';
+import {DioramaPlinth, Molecule, idleBob, idlePulse} from '../../diorama';
+import {AtomDefs, eramp, hash01, ramp, sup} from './shared';
 import {P, Rich, VIOLET, kbW} from './kbKit';
 
 export type KeqScaleReaction = {
@@ -116,8 +116,20 @@ export const KeqScaleDiagram = ({
 				const molecules: string[][] = [];
 				const left = r.mix.map((m) => m.n);
 				while (left.some((n) => n > 0)) r.mix.forEach((m, q) => { if (left[q] > 0) { molecules.push(m.atoms); left[q]--; } });
-				const slots = plinthSlots(cx, CARD_Y + 170, 102, molecules.length);
-				const order = molecules.map((atoms, j) => ({atoms, j, s: slots[j]})).sort((a, b) => a.s.y - b.s.y);
+				const n = molecules.length;
+				const rows = n <= 4 ? 1 : n <= 8 ? 2 : 3;
+				const per = Math.ceil(n / rows);
+				const slots = molecules.map((_, j) => {
+					const row = Math.floor(j / per);
+					const cnt = Math.min(per, n - row * per);
+					const k = j - row * per;
+					const span = 2 * 102 * (rows === 3 && row === 1 ? 0.72 : 0.6);
+					const dy = rows === 1 ? 0 : (row - (rows - 1) / 2) * (rows === 3 ? 15 : 22);
+					return {x: cx + (cnt === 1 ? 0 : -span / 2 + (span * k) / (cnt - 1)) + (row % 2 ? 10 : -6), y: CARD_Y + 170 + dy};
+				});
+				// deterministic shuffle of slots so the kinds are spread across the plinth
+				const perm = molecules.map((_, j) => j).sort((a, b) => hash01(a * 7 + i * 31 + 3) - hash01(b * 7 + i * 31 + 3));
+				const order = molecules.map((atoms, j) => ({atoms, j, s: slots[perm[j]]})).sort((a, b) => a.s.y - b.s.y);
 				const newest = reactions.filter((q) => frame >= q.at).length - 1 === i;
 				const pulse = newest ? idlePulse(frame, 40) : 0;
 				return (
@@ -137,7 +149,7 @@ export const KeqScaleDiagram = ({
 							<Rich x={cx} y={CARD_Y + 68} size={26} parts={P(`K_{eq} ≈ ${r.value}`)} />
 							<DioramaPlinth id={`${ID}p${i}`} cx={cx} cy={CARD_Y + 170} rx={102}>
 								{order.map(({atoms, j, s}) => (
-									<Molecule key={j} id={ID} atoms={atoms} x={s.x} y={s.y - 10 + idleBob(frame, j + i * 20, 1.3)} r={atoms.length === 3 ? 12.5 : 14} />
+									<Molecule key={j} id={ID} atoms={atoms} x={s.x} y={s.y - 10 + idleBob(frame, j + i * 20, 1.3)} r={atoms.length === 3 ? 11.5 : 12.5} />
 								))}
 							</DioramaPlinth>
 							<text x={cx} y={CARD_Y + 236} textAnchor="middle" fill={TOK.inkDim} fontSize={19} fontWeight={800}>{r.label}</text>

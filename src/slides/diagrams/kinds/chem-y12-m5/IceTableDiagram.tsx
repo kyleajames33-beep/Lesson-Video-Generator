@@ -89,7 +89,9 @@ export const IceTableDiagram = ({
 	const RH = compact ? 46 : 70;
 	const rowY = (r: number) => HY + HH + RH * r; // top of row r
 	const CS = compact ? 27 : 32; // cell size
-	const tableBottom = rowY(allRows.length);
+	// the extra "values" row (square solve) grows the table only when it arrives
+	const grow = sq ? eramp(frame, square!.finalAt - 12, 14) : 1;
+	const tableBottom = rowY(allRows.length - (sq ? 1 : 0)) + (sq ? RH * grow : 0);
 
 	const firstP = species.findIndex((s) => s.side === 'p');
 	const eqParts: Part[] = species.flatMap((sp, j) => {
@@ -112,7 +114,7 @@ export const IceTableDiagram = ({
 	const pulse = idlePulse(frame);
 
 	// Solve panel geometry
-	const SY1 = tableBottom + 56;
+	const SY1 = rowY(allRows.length) + 56;
 	const SY2 = SY1 + 92;
 	const SS = 30;
 
