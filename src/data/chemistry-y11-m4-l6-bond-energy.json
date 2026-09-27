@@ -103,7 +103,136 @@
         "audioFile": "public/audio/Chemistry-Y11-M4-L6/concept.37622530c8fc.mp3"
       },
       "diagram": {
-        "type": "bondEnergy"
+        "type": "diorama",
+        "kind": "chem11m4EnergyLadder",
+        "delay": 90,
+        "props": {
+          "header": "H₂ + Cl₂ → 2HCl",
+          "panels": [
+            {
+              "levels": [
+                {
+                  "key": "r",
+                  "label": "H₂ + Cl₂",
+                  "e": 0.28,
+                  "x": 0.27,
+                  "w": 190,
+                  "species": [
+                    {
+                      "atoms": [
+                        "H",
+                        "H"
+                      ]
+                    },
+                    {
+                      "atoms": [
+                        "Cl",
+                        "Cl"
+                      ]
+                    }
+                  ],
+                  "at": 40
+                },
+                {
+                  "key": "a",
+                  "label": "2H + 2Cl",
+                  "sub": "separate atoms",
+                  "e": 0.95,
+                  "x": 0.5,
+                  "w": 230,
+                  "species": [
+                    {
+                      "atoms": [
+                        "H"
+                      ]
+                    },
+                    {
+                      "atoms": [
+                        "H"
+                      ]
+                    },
+                    {
+                      "atoms": [
+                        "Cl"
+                      ]
+                    },
+                    {
+                      "atoms": [
+                        "Cl"
+                      ]
+                    }
+                  ],
+                  "at": 350
+                },
+                {
+                  "key": "p",
+                  "label": "2HCl",
+                  "e": 0.1,
+                  "x": 0.66,
+                  "w": 180,
+                  "species": [
+                    {
+                      "atoms": [
+                        "H",
+                        "Cl"
+                      ]
+                    },
+                    {
+                      "atoms": [
+                        "H",
+                        "Cl"
+                      ]
+                    }
+                  ],
+                  "at": 460
+                }
+              ],
+              "arrows": [
+                {
+                  "from": "r",
+                  "to": "a",
+                  "label": "bonds broken",
+                  "sub": "energy absorbed",
+                  "at": 354,
+                  "tone": "cold",
+                  "x": 0.2,
+                  "side": "right"
+                },
+                {
+                  "from": "a",
+                  "to": "p",
+                  "label": "bonds formed",
+                  "sub": "energy released",
+                  "at": 462,
+                  "tone": "hot",
+                  "x": 0.8,
+                  "side": "left"
+                },
+                {
+                  "from": "r",
+                  "to": "p",
+                  "label": "ΔH < 0",
+                  "at": 560,
+                  "tone": "amber",
+                  "x": 0.93,
+                  "side": "left",
+                  "key": true
+                }
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "at": 560,
+              "text": "ΔH = Σ(bonds broken) − Σ(bonds formed)"
+            },
+            {
+              "at": 834,
+              "text": "Forming released more than breaking cost → exothermic",
+              "key": true
+            }
+          ]
+        }
       }
     },
     {

@@ -103,10 +103,104 @@
         "audioFile": "public/audio/Chemistry-Y11-M4-L1/concept.0e6f5fa82fe2.mp3"
       },
       "diagram": {
-        "type": "energyProfile",
-        "exothermic": true,
-        "ea": 50,
-        "deltaH": -100
+        "type": "diorama",
+        "kind": "chem11m4EnergyLadder",
+        "delay": 90,
+        "props": {
+          "header": "ΔH = H(products) − H(reactants)",
+          "headerAt": 650,
+          "panels": [
+            {
+              "title": "Exothermic",
+              "levels": [
+                {
+                  "key": "r",
+                  "label": "reactants",
+                  "e": 0.72,
+                  "x": 0.42,
+                  "w": 150,
+                  "at": 40
+                },
+                {
+                  "key": "p",
+                  "label": "products",
+                  "e": 0.26,
+                  "x": 0.42,
+                  "w": 150,
+                  "at": 50
+                }
+              ],
+              "arrows": [
+                {
+                  "from": "r",
+                  "to": "p",
+                  "label": "ΔH < 0",
+                  "sub": "negative",
+                  "at": 820,
+                  "tone": "hot",
+                  "x": 0.75
+                }
+              ],
+              "heat": {
+                "dir": "out",
+                "at": 820,
+                "label": "heat out"
+              }
+            },
+            {
+              "title": "Endothermic",
+              "levels": [
+                {
+                  "key": "r",
+                  "label": "reactants",
+                  "e": 0.26,
+                  "x": 0.42,
+                  "w": 150,
+                  "at": 60
+                },
+                {
+                  "key": "p",
+                  "label": "products",
+                  "e": 0.72,
+                  "x": 0.42,
+                  "w": 150,
+                  "at": 70
+                }
+              ],
+              "arrows": [
+                {
+                  "from": "r",
+                  "to": "p",
+                  "label": "ΔH > 0",
+                  "sub": "positive",
+                  "at": 1040,
+                  "tone": "cold",
+                  "x": 0.75
+                }
+              ],
+              "heat": {
+                "dir": "in",
+                "at": 1040,
+                "label": "heat in"
+              }
+            }
+          ],
+          "steps": [
+            {
+              "at": 820,
+              "text": "Products lower: energy released"
+            },
+            {
+              "at": 1040,
+              "text": "Products higher: energy absorbed"
+            },
+            {
+              "at": 1240,
+              "text": "The sign describes the system: the reaction itself",
+              "key": true
+            }
+          ]
+        }
       }
     },
     {
@@ -169,6 +263,62 @@
         }
       ],
       "callout": "Scale ΔH with the coefficients. Reverse flips its sign.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m4EquationStack",
+        "delay": 90,
+        "props": {
+          "header": "ΔH is per mole of the equation as written",
+          "rows": [
+            {
+              "at": 30,
+              "tag": "as written",
+              "lhs": [
+                "A"
+              ],
+              "rhs": [
+                "B"
+              ],
+              "dh": "ΔH"
+            },
+            {
+              "at": 400,
+              "tag": "double it",
+              "lhs": [
+                "2A"
+              ],
+              "rhs": [
+                "2B"
+              ],
+              "dh": "2ΔH",
+              "changed": true
+            },
+            {
+              "at": 500,
+              "tag": "reverse it",
+              "lhs": [
+                "B"
+              ],
+              "rhs": [
+                "A"
+              ],
+              "dh": "−ΔH",
+              "changed": true,
+              "key": true
+            }
+          ],
+          "rules": [
+            {
+              "at": 650,
+              "text": "Exothermic forward → endothermic in reverse, same size"
+            },
+            {
+              "at": 770,
+              "text": "Always quote ΔH with its unit: kJ mol⁻¹"
+            }
+          ]
+        }
+      },
       "durationInFrames": 1170,
       "caption": "ΔH scales with the equation and flips sign when the equation reverses.",
       "revealDelays": {

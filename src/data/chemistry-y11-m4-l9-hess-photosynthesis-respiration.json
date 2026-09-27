@@ -102,7 +102,81 @@
         "audioFile": "public/audio/Chemistry-Y11-M4-L9/concept.5b0b54f1ec64.mp3"
       },
       "diagram": {
-        "type": "hessCycle"
+        "type": "diorama",
+        "kind": "chem11m4EnergyLadder",
+        "delay": 90,
+        "props": {
+          "panels": [
+            {
+              "levels": [
+                {
+                  "key": "g",
+                  "label": "C₆H₁₂O₆ + 6O₂",
+                  "sub": "glucose + oxygen",
+                  "e": 0.84,
+                  "x": 0.5,
+                  "w": 260,
+                  "at": 40
+                },
+                {
+                  "key": "c",
+                  "label": "6CO₂ + 6H₂O",
+                  "sub": "carbon dioxide + water",
+                  "e": 0.14,
+                  "x": 0.5,
+                  "w": 260,
+                  "at": 50
+                }
+              ],
+              "arrows": [
+                {
+                  "from": "g",
+                  "to": "c",
+                  "label": "respiration",
+                  "sub": "ΔH negative",
+                  "at": 246,
+                  "tone": "hot",
+                  "x": 0.2,
+                  "side": "right"
+                },
+                {
+                  "from": "c",
+                  "to": "g",
+                  "label": "photosynthesis",
+                  "sub": "ΔH positive",
+                  "at": 366,
+                  "tone": "cold",
+                  "x": 0.8,
+                  "side": "left"
+                }
+              ],
+              "heat": {
+                "dir": "in",
+                "at": 858,
+                "label": "sunlight"
+              }
+            }
+          ],
+          "steps": [
+            {
+              "at": 246,
+              "text": "Respiration breaks glucose down: exothermic"
+            },
+            {
+              "at": 366,
+              "text": "Photosynthesis builds it up: endothermic"
+            },
+            {
+              "at": 480,
+              "text": "Same magnitude, opposite sign",
+              "key": true
+            },
+            {
+              "at": 858,
+              "text": "Sunlight supplies the energy respiration releases"
+            }
+          ]
+        }
       }
     },
     {
