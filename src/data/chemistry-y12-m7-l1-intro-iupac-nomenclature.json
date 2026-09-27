@@ -56,6 +56,90 @@
       ],
       "secondary": "The misconception to drop: organic does not mean from living things. It means carbon based, and most are made industrially.",
       "callout": "Tetravalency is the reason organic structures are so diverse.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "layout": "grid",
+          "cols": 2,
+          "panels": [
+            {
+              "mol": {
+                "atoms": "c:C@0,0"
+              },
+              "at": 20,
+              "build": 6,
+              "name": "methane",
+              "formula": true,
+              "highlights": [
+                {
+                  "atoms": [
+                    "c"
+                  ],
+                  "at": 141,
+                  "c": "amber"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "4 bonds on every C",
+                  "at": 141,
+                  "c": "amber"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 c4:C@3,0",
+                "bonds": "c1-c2 c2-c3 c3-c4"
+              },
+              "at": 250,
+              "name": "butane",
+              "formula": true,
+              "tags": [
+                {
+                  "t": "straight chain",
+                  "at": 275,
+                  "c": "accent"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 m:C@1,-1",
+                "bonds": "c1-c2 c2-c3 c2-m"
+              },
+              "at": 285,
+              "name": "2-methylpropane",
+              "formula": true,
+              "tags": [
+                {
+                  "t": "branched chain",
+                  "at": 296,
+                  "c": "accent"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@1,1 c4:C@0,1",
+                "bonds": "c1-c2 c2-c3 c3-c4 c4-c1"
+              },
+              "at": 310,
+              "name": "cyclobutane",
+              "formula": true,
+              "tags": [
+                {
+                  "t": "ring",
+                  "at": 317,
+                  "c": "accent"
+                }
+              ]
+            }
+          ],
+          "uniform": false
+        }
+      },
       "durationInFrames": 1020,
       "caption": "Carbon's four bonds give organic chemistry its endless structural variety.",
       "voiceover": {
@@ -84,7 +168,6 @@
       "type": "concept",
       "heading": "Three families, three formulas",
       "body": "The general formula tells you how saturated a hydrocarbon is, and the suffix tells you which family it belongs to.",
-      "image": "m7L1HydrocarbonFamilies",
       "bullets": [
         {"text": "Alkanes: CnH2n+2, only single bonds, suffix -ane (ethane)."},
         {"text": "Alkenes: CnH2n, one C=C double bond, suffix -ene (ethene)."},
@@ -92,6 +175,127 @@
       ],
       "secondary": "Each double bond removes two hydrogens; a triple bond removes four. That is why the general formulas step down by two.",
       "callout": "Count carbons, then check the H count against the right formula.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "panels": [
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.2,0",
+                "bonds": "c1-c2"
+              },
+              "at": 38,
+              "name": [
+                {
+                  "t": "eth"
+                },
+                {
+                  "t": "ane",
+                  "c": "accent"
+                }
+              ],
+              "sub": [
+                {
+                  "t": "CₙH₂ₙ₊₂",
+                  "c": "accent",
+                  "at": 90
+                }
+              ],
+              "formula": 150,
+              "tags": [
+                {
+                  "t": "single bonds only",
+                  "at": 120,
+                  "c": "dim"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.2,0",
+                "bonds": "c1=c2"
+              },
+              "at": 209,
+              "name": [
+                {
+                  "t": "eth"
+                },
+                {
+                  "t": "ene",
+                  "c": "accent"
+                }
+              ],
+              "sub": [
+                {
+                  "t": "CₙH₂ₙ",
+                  "c": "accent",
+                  "at": 260
+                }
+              ],
+              "formula": 320,
+              "highlights": [
+                {
+                  "atoms": [
+                    "c1",
+                    "c2"
+                  ],
+                  "at": 240,
+                  "c": "accent"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "2 fewer H",
+                  "at": 665,
+                  "c": "amber"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.2,0",
+                "bonds": "c1#c2"
+              },
+              "at": 373,
+              "name": [
+                {
+                  "t": "eth"
+                },
+                {
+                  "t": "yne",
+                  "c": "accent"
+                }
+              ],
+              "sub": [
+                {
+                  "t": "CₙH₂ₙ₋₂",
+                  "c": "accent",
+                  "at": 430
+                }
+              ],
+              "formula": 490,
+              "highlights": [
+                {
+                  "atoms": [
+                    "c1",
+                    "c2"
+                  ],
+                  "at": 400,
+                  "c": "accent"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "4 fewer H",
+                  "at": 751,
+                  "c": "amber"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1050,
       "caption": "Alkanes CnH2n+2, alkenes CnH2n, alkynes CnH2n-2.",
       "voiceover": {
@@ -196,8 +400,8 @@
               ],
               "tags": [
                 {
-                  "t": "from the right: C=C at 4, so ✗",
-                  "at": 780,
+                  "t": "not 2-methylpent-4-ene",
+                  "at": 889,
                   "c": "dim"
                 }
               ]
@@ -223,6 +427,35 @@
       ],
       "secondary": "Always give both the shape name and the bond angle. Stating only one of the two loses a mark.",
       "callout": "More bonds between two carbons pulls the shape flatter, then straighter.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Shapes3D",
+        "props": {
+          "models": [
+            {
+              "preset": "methane",
+              "name": "methane, CH₄",
+              "shape": "tetrahedral",
+              "at": 40,
+              "angleAt": 121
+            },
+            {
+              "preset": "ethene",
+              "name": "ethene, C₂H₄",
+              "shape": "trigonal planar",
+              "at": 259,
+              "angleAt": 330
+            },
+            {
+              "preset": "ethyne",
+              "name": "ethyne, C₂H₂",
+              "shape": "linear",
+              "at": 468,
+              "angleAt": 520
+            }
+          ]
+        }
+      },
       "durationInFrames": 1020,
       "caption": "Single: tetrahedral 109.5. Double: trigonal planar 120. Triple: linear 180.",
       "voiceover": {

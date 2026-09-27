@@ -55,6 +55,91 @@
       ],
       "secondary": "Contrast with substitution: there, two products form and one group replaces another. If the product has more atoms than either reactant, it is addition.",
       "callout": "The pi bond breaks; the sigma bond stays.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Reaction",
+        "props": {
+          "stages": [
+            {
+              "at": 20,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.3,0 b1:Br@0,-1.9 b2:Br@1.3,-1.9",
+                "bonds": "c1=c2 b1-b2"
+              },
+              "eq": "CH₂=CH₂ + Br₂",
+              "bondTags": [
+                {
+                  "a": "c1",
+                  "b": "c2",
+                  "t": "σ + π",
+                  "side": 1,
+                  "c": "accent"
+                }
+              ]
+            },
+            {
+              "at": 168,
+              "len": 60,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.3,0 b1:Br@0,-1 b2:Br@1.3,-1",
+                "bonds": "c1-c2 c1-b1 c2-b2"
+              },
+              "eq": [
+                {
+                  "t": "π bond broken, "
+                },
+                {
+                  "t": "σ bond stays",
+                  "c": "accent"
+                }
+              ],
+              "bondTags": [
+                {
+                  "a": "c1",
+                  "b": "c2",
+                  "t": "σ",
+                  "side": 1,
+                  "c": "accent"
+                }
+              ],
+              "highlights": [
+                {
+                  "atoms": [
+                    "b1",
+                    "c1"
+                  ],
+                  "c": "amber",
+                  "at": 485
+                },
+                {
+                  "atoms": [
+                    "b2",
+                    "c2"
+                  ],
+                  "c": "amber",
+                  "at": 485
+                }
+              ],
+              "labels": [
+                {
+                  "t": "each C gains one new single bond",
+                  "x": 0.65,
+                  "y": -1.9,
+                  "c": "amber",
+                  "at": 485
+                },
+                {
+                  "t": "2 reactants → 1 product",
+                  "x": 0.65,
+                  "y": 1.45,
+                  "c": "ink",
+                  "at": 390
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 990,
       "caption": "Addition opens the pi bond: two reactants, one product, nothing lost.",
       "voiceover": {
@@ -90,6 +175,87 @@
       ],
       "secondary": "For hydrogenation you must state both the catalyst and the temperature. Hydrogen gas alone does not react with an alkene at room temperature.",
       "callout": "Ni catalyst plus heat for H2; no catalyst, room temperature for Br2.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Reaction",
+        "props": {
+          "rows": [
+            {
+              "cond": {
+                "t": "Ni catalyst + heat",
+                "at": 104
+              },
+              "stages": [
+                {
+                  "at": 0,
+                  "mol": {
+                    "atoms": "c1:C@0,0 c2:C@1.3,0 r1:H@0,-1.5 r2:H@1.3,-1.5",
+                    "bonds": "c1=c2 r1-r2"
+                  },
+                  "eq": "CH₂=CH₂ + H₂"
+                },
+                {
+                  "at": 180,
+                  "len": 50,
+                  "mol": {
+                    "atoms": "c1:C@0,0 c2:C@1.3,0 r1:H@0,-0.66 r2:H@1.3,-0.66",
+                    "bonds": "c1-c2 c1-r1 c2-r2"
+                  },
+                  "eq": [
+                    {
+                      "t": "CH₂=CH₂ + H₂ → "
+                    },
+                    {
+                      "t": "CH₃CH₃",
+                      "c": "accent"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "cond": {
+                "t": "room temp, no catalyst",
+                "at": 656
+              },
+              "tube": {
+                "from": "#d9822b",
+                "to": "#edf2f4",
+                "at": 913,
+                "label": "bromine water"
+              },
+              "stages": [
+                {
+                  "at": 633,
+                  "mol": {
+                    "atoms": "c1:C@0,0 c2:C@1.3,0 b1:Br@0,-1.9 b2:Br@1.3,-1.9",
+                    "bonds": "c1=c2 b1-b2"
+                  },
+                  "eq": "CH₂=CH₂ + Br₂"
+                },
+                {
+                  "at": 700,
+                  "len": 50,
+                  "mol": {
+                    "atoms": "c1:C@0,0 c2:C@1.3,0 b1:Br@0,-1 b2:Br@1.3,-1",
+                    "bonds": "c1-c2 c1-b1 c2-b2"
+                  },
+                  "eq": [
+                    {
+                      "t": "CH₂=CH₂ + Br₂ → "
+                    },
+                    {
+                      "t": "CH₂BrCH₂Br",
+                      "c": "accent"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "layout": "cols"
+        }
+      },
       "durationInFrames": 1050,
       "caption": "Hydrogenation needs Ni + heat; halogenation needs no catalyst and decolourises Br2.",
       "voiceover": {
@@ -101,7 +267,6 @@
       "type": "concept",
       "heading": "Markovnikov's rule",
       "body": "For an unsymmetrical alkene plus HX or water, two products are possible. Markovnikov tells you which dominates.",
-      "image": "m7L6Markovnikov",
       "bullets": [
         {"text": "Count the H atoms on each carbon of the C=C."},
         {"text": "H adds to the carbon that already has more H atoms."},
@@ -109,6 +274,93 @@
       ],
       "secondary": "The memory aid: the rich get richer, the H-rich carbon gains the extra H. The more substituted carbocation is more stable, so that pathway is faster.",
       "callout": "More H gets the H; the other carbon gets the X or OH.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Reaction",
+        "props": {
+          "stages": [
+            {
+              "at": 20,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.25,0 c3:C@2.5,0 hr:H@0,-1.8 br:Br@1.25,-1.8",
+                "bonds": "c1=c2 c2-c3 hr-br"
+              },
+              "eq": "CH₂=CHCH₃ + HBr",
+              "labels": [
+                {
+                  "t": "2 H",
+                  "atom": "c1",
+                  "dy": 1.3,
+                  "c": "accent",
+                  "at": 345
+                },
+                {
+                  "t": "1 H",
+                  "atom": "c2",
+                  "dy": 1.3,
+                  "c": "accent",
+                  "at": 360
+                }
+              ]
+            },
+            {
+              "at": 441,
+              "len": 60,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.25,0 c3:C@2.5,0 hr:H@0,-0.66 br:Br@1.25,-1",
+                "bonds": "c1-c2 c2-c3 c1-hr c2-br"
+              },
+              "eq": [
+                {
+                  "t": "→ "
+                },
+                {
+                  "t": "CH₃CHBrCH₃",
+                  "c": "accent"
+                },
+                {
+                  "t": " (major)"
+                }
+              ],
+              "highlights": [
+                {
+                  "atoms": [
+                    "hr",
+                    "c1"
+                  ],
+                  "c": "accent",
+                  "label": "H to the C with more H",
+                  "side": "below"
+                },
+                {
+                  "atoms": [
+                    "br",
+                    "c2"
+                  ],
+                  "c": "amber",
+                  "at": 544
+                }
+              ],
+              "labels": [
+                {
+                  "t": "Br to the other C",
+                  "atom": "br",
+                  "dy": -0.75,
+                  "c": "amber",
+                  "at": 544
+                },
+                {
+                  "t": "2-bromopropane",
+                  "x": 1.25,
+                  "y": 2.1,
+                  "c": "accent",
+                  "at": 600
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1080,
       "caption": "Markovnikov: H to the carbon with more H; X or OH to the more substituted carbon.",
       "voiceover": {
@@ -127,6 +379,97 @@
       ],
       "secondary": "The most commonly omitted condition is pressure. The reaction is reversible, so high pressure drives the equilibrium toward the alcohol.",
       "callout": "Catalyst, high temperature, and high pressure: all three or lose marks.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Reaction",
+        "props": {
+          "rows": [
+            {
+              "cond": {
+                "t": "steam · H₃PO₄ · 300 °C · high pressure",
+                "at": 108
+              },
+              "stages": [
+                {
+                  "at": 0,
+                  "mol": {
+                    "atoms": "c1:C@0,0 c2:C@1.3,0 o:O@1.3,-1.9 w1:H@1.87,-2.23 w2:H@0.73,-2.23",
+                    "bonds": "c1=c2 o-w1 o-w2"
+                  },
+                  "eq": "ethene + H₂O"
+                },
+                {
+                  "at": 293,
+                  "len": 50,
+                  "mol": {
+                    "atoms": "c1:C@0,0 c2:C@1.3,0 o:O@1.3,-1 w1:H@1.87,-1.33 w2:H@0,-0.66",
+                    "bonds": "c1-c2 c2-o o-w1 c1-w2"
+                  },
+                  "eq": [
+                    {
+                      "t": "ethene + H₂O → "
+                    },
+                    {
+                      "t": "ethanol",
+                      "c": "accent"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "stages": [
+                {
+                  "at": 420,
+                  "mol": {
+                    "atoms": "c1:C@0,0 c2:C@1.25,0 c3:C@2.5,0 o:O@1.25,-1.9 w1:H@1.82,-2.23 w2:H@0.68,-2.23",
+                    "bonds": "c1=c2 c2-c3 o-w1 o-w2"
+                  },
+                  "eq": "propene + H₂O"
+                },
+                {
+                  "at": 471,
+                  "len": 50,
+                  "mol": {
+                    "atoms": "c1:C@0,0 c2:C@1.25,0 c3:C@2.5,0 o:O@1.25,-1 w1:H@1.82,-1.33 w2:H@0,-0.66",
+                    "bonds": "c1-c2 c2-c3 c2-o o-w1 c1-w2"
+                  },
+                  "eq": [
+                    {
+                      "t": "propene + H₂O → "
+                    },
+                    {
+                      "t": "propan-2-ol",
+                      "c": "accent"
+                    }
+                  ],
+                  "highlights": [
+                    {
+                      "atoms": [
+                        "o",
+                        "c2"
+                      ],
+                      "c": "amber",
+                      "at": 480
+                    }
+                  ],
+                  "labels": [
+                    {
+                      "t": "OH on the middle C (Markovnikov)",
+                      "x": 1.25,
+                      "y": 1.35,
+                      "c": "amber",
+                      "at": 480,
+                      "size": 17
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "layout": "cols"
+        }
+      },
       "durationInFrames": 1080,
       "caption": "Hydration: steam, H3PO4, ~300C, high pressure -> ethanol (Markovnikov).",
       "voiceover": {

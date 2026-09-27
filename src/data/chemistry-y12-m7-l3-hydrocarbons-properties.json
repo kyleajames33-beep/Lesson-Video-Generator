@@ -87,6 +87,97 @@
       ],
       "secondary": "Non-polar does not mean no forces. Dispersion forces are weak per contact, but they add up fast as molecules get bigger.",
       "callout": "Boiling breaks forces between molecules, never the covalent bonds.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "layout": "column",
+          "bars": {
+            "min": -200,
+            "max": 150
+          },
+          "panels": [
+            {
+              "mol": {
+                "atoms": "c1:C@0,0"
+              },
+              "at": 20,
+              "name": "methane",
+              "formula": true,
+              "tags": [
+                {
+                  "t": "10 electrons",
+                  "at": 539,
+                  "c": "dim"
+                }
+              ],
+              "bar": {
+                "value": -162,
+                "text": "b.p. −162 °C",
+                "at": 798
+              }
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 c4:C@3,0 c5:C@4,0",
+                "bonds": "c1-c2 c2-c3 c3-c4 c4-c5"
+              },
+              "at": 40,
+              "name": "pentane",
+              "formula": true,
+              "tags": [
+                {
+                  "t": "42 electrons",
+                  "at": 545,
+                  "c": "dim"
+                }
+              ],
+              "bar": {
+                "value": 36,
+                "text": "b.p. 36 °C",
+                "at": 810
+              }
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 c4:C@3,0 c5:C@4,0 c6:C@5,0 c7:C@6,0 c8:C@7,0",
+                "bonds": "c1-c2 c2-c3 c3-c4 c4-c5 c5-c6 c6-c7 c7-c8"
+              },
+              "at": 60,
+              "name": "octane",
+              "formula": true,
+              "highlights": [
+                {
+                  "atoms": [
+                    "c1",
+                    "c2",
+                    "c3",
+                    "c4",
+                    "c5",
+                    "c6",
+                    "c7",
+                    "c8"
+                  ],
+                  "at": 509,
+                  "c": "accent"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "66 electrons",
+                  "at": 551,
+                  "c": "amber"
+                }
+              ],
+              "bar": {
+                "value": 126,
+                "text": "b.p. 126 °C",
+                "at": 822
+              }
+            }
+          ]
+        }
+      },
       "durationInFrames": 1110,
       "caption": "Longer chain, more electrons, larger surface area, stronger dispersion forces, higher BP.",
       "voiceover": {
@@ -117,7 +208,6 @@
       "type": "concept",
       "heading": "Branching lowers boiling point",
       "body": "Same formula, same mass, different shape. A compact branched isomer boils lower than its straight-chain twin.",
-      "image": "m7L3BranchingSurfaceArea",
       "bullets": [
         {"text": "Pentane (straight) boils at 36; 2-methylbutane at 28; 2,2-dimethylpropane at 10."},
         {"text": "Branching makes the molecule compact, reducing contact surface area."},
@@ -125,6 +215,74 @@
       ],
       "secondary": "Never explain this with bond strength. The covalent bonds are identical in isomers; only the shape, and so the surface contact, changes.",
       "callout": "Compact shape, less surface, weaker dispersion, lower BP.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "bars": {
+            "min": 0,
+            "max": 40
+          },
+          "panels": [
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 c4:C@3,0 c5:C@4,0",
+                "bonds": "c1-c2 c2-c3 c3-c4 c4-c5"
+              },
+              "at": 82,
+              "name": "pentane",
+              "formula": true,
+              "bar": {
+                "value": 36,
+                "text": "36 °C",
+                "at": 153
+              },
+              "tags": [
+                {
+                  "t": "long, lots of contact",
+                  "at": 420,
+                  "c": "accent"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 c4:C@3,0 m:C@1,-1",
+                "bonds": "c1-c2 c2-c3 c3-c4 c2-m"
+              },
+              "at": 120,
+              "name": "2-methylbutane",
+              "bar": {
+                "value": 28,
+                "text": "28 °C",
+                "at": 209
+              },
+              "formula": true
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 m1:C@1,-1 m2:C@1,1",
+                "bonds": "c1-c2 c2-c3 c2-m1 c2-m2"
+              },
+              "at": 160,
+              "name": "2,2-dimethylpropane",
+              "bar": {
+                "value": 10,
+                "text": "10 °C",
+                "at": 250
+              },
+              "tags": [
+                {
+                  "t": "compact, least contact",
+                  "at": 512,
+                  "c": "amber"
+                }
+              ],
+              "formula": true
+            }
+          ]
+        }
+      },
       "durationInFrames": 1050,
       "caption": "Branching reduces surface contact, so branched isomers boil lower.",
       "voiceover": {

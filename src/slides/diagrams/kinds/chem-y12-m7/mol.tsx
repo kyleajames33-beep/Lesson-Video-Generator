@@ -311,8 +311,8 @@ export const Chip = ({
 
 /** A long, low stone stage (the standard plinth squashed), for molecules to stand over. */
 export const StageSlab = ({id, cx, cy, rx, children}: {id: string; cx: number; cy: number; rx: number; children?: ReactNode}) => {
-	const ry = Math.min(rx * 0.16, 26);
-	const depth = Math.min(rx * 0.07, 12);
+	const ry = Math.min(rx * 0.14, 18);
+	const depth = Math.min(rx * 0.06, 10);
 	return (
 		<g>
 			<defs>
@@ -326,6 +326,9 @@ export const StageSlab = ({id, cx, cy, rx, children}: {id: string; cx: number; c
 					<stop offset="40%" stopColor="#b3afa7" />
 					<stop offset="100%" stopColor="#8f8b83" />
 				</linearGradient>
+				<filter id={`${id}-soft`} x="-40%" y="-40%" width="180%" height="180%">
+					<feGaussianBlur stdDeviation="5" />
+				</filter>
 			</defs>
 			<ellipse cx={cx + rx * 0.05} cy={cy + depth + ry * 0.6} rx={rx * 1.03} ry={ry * 0.95} fill="rgba(40,36,30,0.2)" filter={`url(#${id}-soft)`} />
 			<path d={`M ${cx - rx} ${cy} L ${cx - rx} ${cy + depth} A ${rx} ${ry} 0 0 0 ${cx + rx} ${cy + depth} L ${cx + rx} ${cy} Z`} fill={`url(#${id}-slab-side)`} />

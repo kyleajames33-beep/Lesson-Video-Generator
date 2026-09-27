@@ -73,6 +73,113 @@
       ],
       "secondary": "This classification is not just a label. It decides what oxidation products an alcohol can form, which matters in later lessons.",
       "callout": "Count carbon neighbours of the key atom, nothing else.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "panels": [
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 o:O@2,0",
+                "bonds": "c1-c2 c2-o"
+              },
+              "at": 30,
+              "name": "ethanol",
+              "highlights": [
+                {
+                  "atoms": [
+                    "c2"
+                  ],
+                  "at": 120,
+                  "c": "amber"
+                },
+                {
+                  "atoms": [
+                    "c1"
+                  ],
+                  "at": 287,
+                  "c": "accent",
+                  "join": false
+                }
+              ],
+              "tags": [
+                {
+                  "t": "1 C neighbour: primary",
+                  "at": 287,
+                  "c": "accent"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 o:O@1,-1",
+                "bonds": "c1-c2 c2-c3 c2-o"
+              },
+              "at": 300,
+              "name": "propan-2-ol",
+              "highlights": [
+                {
+                  "atoms": [
+                    "c2"
+                  ],
+                  "at": 318,
+                  "c": "amber"
+                },
+                {
+                  "atoms": [
+                    "c1",
+                    "c3"
+                  ],
+                  "at": 334,
+                  "c": "accent",
+                  "join": false
+                }
+              ],
+              "tags": [
+                {
+                  "t": "2 C neighbours: secondary",
+                  "at": 334,
+                  "c": "accent"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 c4:C@1,1 o:O@1,-1",
+                "bonds": "c1-c2 c2-c3 c2-c4 c2-o"
+              },
+              "at": 345,
+              "name": "2-methylpropan-2-ol",
+              "highlights": [
+                {
+                  "atoms": [
+                    "c2"
+                  ],
+                  "at": 360,
+                  "c": "amber"
+                },
+                {
+                  "atoms": [
+                    "c1",
+                    "c3",
+                    "c4"
+                  ],
+                  "at": 374,
+                  "c": "accent",
+                  "join": false
+                }
+              ],
+              "tags": [
+                {
+                  "t": "3 C neighbours: tertiary",
+                  "at": 374,
+                  "c": "accent"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1020,
       "caption": "1, 2 or 3 carbon neighbours on the C-OH carbon gives primary, secondary, tertiary.",
       "voiceover": {
@@ -84,7 +191,6 @@
       "type": "concept",
       "heading": "Reading the carbonyl",
       "body": "Aldehyde, ketone and carboxylic acid all contain a C=O. What sits next to it decides which class you have.",
-      "image": "m7L2FunctionalGroups",
       "bullets": [
         {"text": "Hydrogen on the carbonyl carbon, at the chain end: aldehyde (-al)."},
         {"text": "Two carbon neighbours on the carbonyl carbon: ketone (-one)."},
@@ -92,6 +198,139 @@
       ],
       "secondary": "Propanal and propanone are both C3H6O, but one is an aldehyde and one a ketone. This five second check stops the most common mix-up.",
       "callout": "Check what is bonded to the C=O carbon before you name it.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "panels": [
+            {
+              "mol": {
+                "atoms": "c3:C@0,0 c2:C@1,0 c1:C@2,0 o:O@2.5,-0.87",
+                "bonds": "c3-c2 c2-c1 c1=o"
+              },
+              "at": 40,
+              "name": [
+                {
+                  "t": "propan"
+                },
+                {
+                  "t": "al",
+                  "c": "accent"
+                }
+              ],
+              "formula": 621,
+              "highlights": [
+                {
+                  "atoms": [
+                    "c1",
+                    "o"
+                  ],
+                  "at": 73,
+                  "c": "amber"
+                },
+                {
+                  "atoms": [
+                    "c1h0"
+                  ],
+                  "at": 133,
+                  "c": "accent"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "H on C=O: aldehyde",
+                  "at": 133,
+                  "c": "accent"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 o:O@1,-1",
+                "bonds": "c1-c2 c2-c3 c2=o"
+              },
+              "at": 300,
+              "name": [
+                {
+                  "t": "propan"
+                },
+                {
+                  "t": "one",
+                  "c": "accent"
+                }
+              ],
+              "formula": 621,
+              "highlights": [
+                {
+                  "atoms": [
+                    "c2",
+                    "o"
+                  ],
+                  "at": 310,
+                  "c": "amber"
+                },
+                {
+                  "atoms": [
+                    "c1",
+                    "c3"
+                  ],
+                  "at": 321,
+                  "c": "accent",
+                  "join": false
+                }
+              ],
+              "tags": [
+                {
+                  "t": "2 C on C=O: ketone",
+                  "at": 321,
+                  "c": "accent"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c3:C@0,0 c2:C@1,0 c1:C@2,0 o1:O@2.5,-0.87 o2:O@2.5,0.87",
+                "bonds": "c3-c2 c2-c1 c1=o1 c1-o2"
+              },
+              "at": 420,
+              "name": [
+                {
+                  "t": "propan"
+                },
+                {
+                  "t": "oic acid",
+                  "c": "accent"
+                }
+              ],
+              "highlights": [
+                {
+                  "atoms": [
+                    "c1",
+                    "o1"
+                  ],
+                  "at": 430,
+                  "c": "amber"
+                },
+                {
+                  "atoms": [
+                    "o2",
+                    "o2h0"
+                  ],
+                  "at": 441,
+                  "c": "accent"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "OH on C=O: acid",
+                  "at": 441,
+                  "c": "accent"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1050,
       "caption": "Aldehyde: H on C=O. Ketone: two carbons. Acid: -OH on C=O.",
       "voiceover": {
@@ -110,6 +349,102 @@
       ],
       "secondary": "CH3COOCH2CH3 is ethyl ethanoate, never ethanoate ethyl. The alkyl always comes first.",
       "callout": "Alcohol first, then acid: alkyl alkanoate.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "title": [
+            {
+              "t": "alkyl",
+              "c": "second"
+            },
+            {
+              "t": " "
+            },
+            {
+              "t": "alkanoate",
+              "c": "accent"
+            }
+          ],
+          "titleAt": 155,
+          "maxUnit": 96,
+          "panels": [
+            {
+              "mol": {
+                "atoms": "a2:C@0,0 a1:C@1,0 od:O@1,-1 os:O@2,0 e1:C@3,0 e2:C@4,0",
+                "bonds": "a2-a1 a1=od a1-os os-e1 e1-e2"
+              },
+              "at": 20,
+              "build": 4,
+              "highlights": [
+                {
+                  "atoms": [
+                    "e1",
+                    "e2"
+                  ],
+                  "at": 209,
+                  "c": "second"
+                },
+                {
+                  "atoms": [
+                    "a2",
+                    "a1",
+                    "os"
+                  ],
+                  "at": 387,
+                  "c": "accent"
+                },
+                {
+                  "atoms": [
+                    "a1",
+                    "od"
+                  ],
+                  "at": 387,
+                  "c": "accent"
+                }
+              ],
+              "name": [
+                {
+                  "t": "ethyl",
+                  "c": "second",
+                  "at": 650
+                },
+                {
+                  "t": " "
+                },
+                {
+                  "t": "ethanoate",
+                  "c": "accent",
+                  "at": 650
+                }
+              ],
+              "sub": [
+                {
+                  "t": "CH₃COOCH₂CH₃",
+                  "at": 549
+                }
+              ],
+              "tags": [
+                {
+                  "t": "alkyl ← the alcohol",
+                  "at": 209,
+                  "c": "second"
+                },
+                {
+                  "t": "alkanoate ← the acid",
+                  "at": 387,
+                  "c": "accent"
+                },
+                {
+                  "t": "never “ethanoate ethyl”",
+                  "at": 751,
+                  "c": "amber"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1020,
       "caption": "Ester = alkyl alkanoate; the alkyl (from the alcohol) is written first.",
       "voiceover": {
@@ -128,6 +463,182 @@
       ],
       "secondary": "If two drawings give the same IUPAC name, they are the same compound, not two isomers.",
       "callout": "Ask what changed: the skeleton, the position, or the group itself.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "captions": [
+            {
+              "t": [
+                {
+                  "t": "Chain isomers",
+                  "c": "accent"
+                },
+                {
+                  "t": ": new skeleton"
+                }
+              ],
+              "at": 149,
+              "until": 310
+            },
+            {
+              "t": [
+                {
+                  "t": "Position isomers",
+                  "c": "accent"
+                },
+                {
+                  "t": ": group moves"
+                }
+              ],
+              "at": 320,
+              "until": 600
+            },
+            {
+              "t": [
+                {
+                  "t": "Functional group isomers",
+                  "c": "accent"
+                },
+                {
+                  "t": ": new group"
+                }
+              ],
+              "at": 613
+            }
+          ],
+          "maxUnit": 70,
+          "panels": [
+            {
+              "cell": 0,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 c4:C@3,0",
+                "bonds": "c1-c2 c2-c3 c3-c4"
+              },
+              "at": 150,
+              "until": 310,
+              "name": "butane",
+              "formula": true
+            },
+            {
+              "cell": 1,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 m:C@1,-1",
+                "bonds": "c1-c2 c2-c3 c2-m"
+              },
+              "at": 247,
+              "until": 310,
+              "name": "2-methylpropane",
+              "formula": true,
+              "highlights": [
+                {
+                  "atoms": [
+                    "m"
+                  ],
+                  "at": 262,
+                  "c": "amber"
+                }
+              ]
+            },
+            {
+              "cell": 0,
+              "mol": {
+                "atoms": "o:O@0,-1 c1:C@0,0 c2:C@1,0 c3:C@2,0",
+                "bonds": "o-c1 c1-c2 c2-c3"
+              },
+              "at": 330,
+              "until": 600,
+              "name": "propan-1-ol",
+              "formula": true,
+              "highlights": [
+                {
+                  "atoms": [
+                    "o",
+                    "oh0"
+                  ],
+                  "at": 420,
+                  "c": "amber"
+                }
+              ]
+            },
+            {
+              "cell": 1,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 o:O@1,-1",
+                "bonds": "c1-c2 c2-c3 c2-o"
+              },
+              "at": 466,
+              "until": 600,
+              "name": "propan-2-ol",
+              "formula": true,
+              "highlights": [
+                {
+                  "atoms": [
+                    "o",
+                    "oh0"
+                  ],
+                  "at": 480,
+                  "c": "amber"
+                }
+              ]
+            },
+            {
+              "cell": 0,
+              "mol": {
+                "atoms": "c3:C@0,0 c2:C@1,0 c1:C@2,0 o:O@2.5,-0.87",
+                "bonds": "c3-c2 c2-c1 c1=o"
+              },
+              "at": 620,
+              "name": "propanal",
+              "formula": true,
+              "tags": [
+                {
+                  "t": "aldehyde",
+                  "at": 718,
+                  "c": "accent"
+                }
+              ],
+              "highlights": [
+                {
+                  "atoms": [
+                    "c1",
+                    "o"
+                  ],
+                  "at": 718,
+                  "c": "amber"
+                }
+              ]
+            },
+            {
+              "cell": 1,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 o:O@1,-1",
+                "bonds": "c1-c2 c2-c3 c2=o"
+              },
+              "at": 718,
+              "name": "propanone",
+              "formula": true,
+              "tags": [
+                {
+                  "t": "ketone",
+                  "at": 730,
+                  "c": "accent"
+                }
+              ],
+              "highlights": [
+                {
+                  "atoms": [
+                    "c2",
+                    "o"
+                  ],
+                  "at": 730,
+                  "c": "amber"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1110,
       "caption": "Chain, position and functional group isomers.",
       "voiceover": {

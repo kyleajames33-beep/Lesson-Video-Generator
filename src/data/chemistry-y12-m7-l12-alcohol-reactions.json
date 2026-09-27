@@ -73,6 +73,91 @@
       ],
       "secondary": "Hydration uses dilute acid and high pressure to add water; dehydration uses concentrated acid and heat to remove it. The acid concentration sets the direction.",
       "callout": "Concentrated acid removes water; dilute acid adds it.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Reaction",
+        "props": {
+          "cond": {
+            "t": "concentrated H₂SO₄, heat to ~170 °C",
+            "at": 350
+          },
+          "stages": [
+            {
+              "at": 20,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.3,0 o:O@1.3,-1 hb:H@0,-0.66",
+                "bonds": "c1-c2 c2-o c1-hb"
+              },
+              "eq": "ethanol",
+              "highlights": [
+                {
+                  "atoms": [
+                    "o",
+                    "oh0"
+                  ],
+                  "c": "amber",
+                  "at": 63
+                },
+                {
+                  "atoms": [
+                    "hb"
+                  ],
+                  "c": "amber",
+                  "at": 80
+                }
+              ],
+              "labels": [
+                {
+                  "t": "–OH + H from the next C",
+                  "x": 0.65,
+                  "y": 1.35,
+                  "c": "amber",
+                  "at": 80
+                }
+              ]
+            },
+            {
+              "at": 200,
+              "len": 70,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.3,0 o:O@0.65,-2.1 hb:H@0.08,-2.43",
+                "bonds": "c1=c2 o-hb",
+                "h": {
+                  "o": [
+                    30
+                  ]
+                }
+              },
+              "eq": [
+                {
+                  "t": "ethanol → "
+                },
+                {
+                  "t": "ethene",
+                  "c": "accent"
+                },
+                {
+                  "t": " + H₂O"
+                }
+              ],
+              "labels": [
+                {
+                  "t": "C=C reforms",
+                  "x": 0.65,
+                  "y": 1.35,
+                  "c": "accent"
+                },
+                {
+                  "t": "H₂O",
+                  "x": 1.5,
+                  "y": -2.0,
+                  "c": "dim"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1080,
       "caption": "Dehydration: conc. H2SO4, ~170C, removes water to form an alkene.",
       "voiceover": {
@@ -91,6 +176,86 @@
       ],
       "secondary": "This is the reverse of the haloalkane substitution in Lesson 10. The H2O product is what distinguishes it from adding HX across an alkene.",
       "callout": "Swap -OH for X, and never forget the water.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Reaction",
+        "props": {
+          "cond": {
+            "t": "heat under reflux",
+            "at": 196
+          },
+          "stages": [
+            {
+              "at": 20,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.2,0 o:O@2.2,0 hx:H@2.2,-1.7 br:Br@3.2,-1.7",
+                "bonds": "c1-c2 c2-o hx-br"
+              },
+              "eq": "ethanol + HBr",
+              "highlights": [
+                {
+                  "atoms": [
+                    "o",
+                    "oh0"
+                  ],
+                  "c": "accent",
+                  "at": 29
+                }
+              ]
+            },
+            {
+              "at": 196,
+              "len": 70,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.2,0 br:Br@2.25,0 o:O@3.5,-1.4 hx:H@2.93,-1.73",
+                "bonds": "c1-c2 c2-br o-hx",
+                "h": {
+                  "o": [
+                    30
+                  ]
+                }
+              },
+              "eq": [
+                {
+                  "t": "→ "
+                },
+                {
+                  "t": "bromoethane",
+                  "c": "accent"
+                },
+                {
+                  "t": " + "
+                },
+                {
+                  "t": "H₂O",
+                  "c": "amber"
+                }
+              ],
+              "highlights": [
+                {
+                  "atoms": [
+                    "o",
+                    "hx",
+                    "oh0"
+                  ],
+                  "c": "amber",
+                  "at": 489
+                }
+              ],
+              "labels": [
+                {
+                  "t": "water: always a product",
+                  "x": 3.5,
+                  "y": -2.35,
+                  "c": "amber",
+                  "at": 489,
+                  "size": 18
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1050,
       "caption": "R-OH + HX -> R-X + H2O; reactivity HI > HBr > HCl.",
       "voiceover": {
@@ -102,16 +267,6 @@
       "type": "concept",
       "heading": "Oxidation: class decides everything",
       "body": "Oxidation removes hydrogens from the C-OH carbon. If there is no H to remove, there is no reaction.",
-      "diagram": {
-        "type": "table",
-        "headers": ["Alcohol", "Equipment", "Product", "Colour"],
-        "rows": [
-          ["Primary", "Distillation", "Aldehyde", "Orange to green"],
-          ["Primary", "Reflux", "Carboxylic acid", "Orange to green"],
-          ["Secondary", "Reflux", "Ketone", "Orange to green"],
-          ["Tertiary", "Any", "No reaction", "Stays orange"]
-        ]
-      },
       "bullets": [
         {"text": "Primary (2 H on C-OH): aldehyde by distillation, then carboxylic acid by reflux."},
         {"text": "Secondary (1 H): ketone, which cannot oxidise further."},
@@ -119,6 +274,133 @@
       ],
       "secondary": "Distillation removes the aldehyde as it forms, before further oxidation; reflux keeps it in to push through to the acid. Oxidant: acidified K2Cr2O7.",
       "callout": "No H on the C-OH carbon means no oxidation.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "panels": [
+            {
+              "mol": {
+                "atoms": "o:O@0,-1 c1:C@0,0 c2:C@1,0 c3:C@2,0",
+                "bonds": "o-c1 c1-c2 c2-c3",
+                "h": {
+                  "c1": [
+                    180,
+                    270
+                  ]
+                }
+              },
+              "at": 30,
+              "name": "primary",
+              "highlights": [
+                {
+                  "atoms": [
+                    "c1"
+                  ],
+                  "at": 198,
+                  "c": "accent"
+                },
+                {
+                  "atoms": [
+                    "c1h0",
+                    "c1h1"
+                  ],
+                  "at": 284,
+                  "c": "amber",
+                  "join": false
+                }
+              ],
+              "tags": [
+                {
+                  "t": "2 H on C–OH",
+                  "at": 284,
+                  "c": "amber"
+                },
+                {
+                  "t": "→ aldehyde → acid",
+                  "at": 391,
+                  "c": "accent"
+                },
+                {
+                  "t": "distil: aldehyde",
+                  "at": 730,
+                  "c": "dim"
+                },
+                {
+                  "t": "reflux: acid",
+                  "at": 760,
+                  "c": "dim"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 o:O@1,-1",
+                "bonds": "c1-c2 c2-c3 c2-o"
+              },
+              "at": 40,
+              "name": "secondary",
+              "highlights": [
+                {
+                  "atoms": [
+                    "c2"
+                  ],
+                  "at": 205,
+                  "c": "accent"
+                },
+                {
+                  "atoms": [
+                    "c2h0"
+                  ],
+                  "at": 437,
+                  "c": "amber"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "1 H on C–OH",
+                  "at": 437,
+                  "c": "amber"
+                },
+                {
+                  "t": "→ ketone, stops",
+                  "at": 460,
+                  "c": "accent"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 c4:C@1,1 o:O@1,-1",
+                "bonds": "c1-c2 c2-c3 c2-c4 c2-o"
+              },
+              "at": 50,
+              "name": "tertiary",
+              "highlights": [
+                {
+                  "atoms": [
+                    "c2"
+                  ],
+                  "at": 212,
+                  "c": "accent"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "0 H on C–OH",
+                  "at": 544,
+                  "c": "amber"
+                },
+                {
+                  "t": "no reaction",
+                  "at": 570,
+                  "c": "amber"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1110,
       "caption": "Primary -> aldehyde/acid, secondary -> ketone, tertiary -> no reaction (stays orange).",
       "voiceover": {
@@ -137,6 +419,110 @@
       ],
       "secondary": "To pin down the product, also use the conditions (distillation vs reflux) and a second test, like Tollens' for an aldehyde. Note: acidified KMnO4 goes purple to colourless, never orange.",
       "callout": "Green confirms a primary or secondary alcohol; orange means tertiary.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "captions": [
+            {
+              "t": [
+                {
+                  "t": "acidified K₂Cr₂O₇: "
+                },
+                {
+                  "t": "orange",
+                  "c": "amber"
+                }
+              ],
+              "at": 0,
+              "until": 338
+            },
+            {
+              "t": [
+                {
+                  "t": "Green confirms the "
+                },
+                {
+                  "t": "class",
+                  "c": "accent"
+                },
+                {
+                  "t": ", not the product"
+                }
+              ],
+              "at": 338
+            }
+          ],
+          "panels": [
+            {
+              "mol": {
+                "atoms": "o:O@0,-1 c1:C@0,0 c2:C@1,0 c3:C@2,0",
+                "bonds": "o-c1 c1-c2 c2-c3",
+                "h": {
+                  "c1": [
+                    180,
+                    270
+                  ]
+                }
+              },
+              "at": 20,
+              "name": "primary",
+              "tube": {
+                "from": "#e8871e",
+                "to": "#3f9a4a",
+                "at": 82
+              },
+              "tags": [
+                {
+                  "t": "orange → green",
+                  "at": 100,
+                  "c": "accent"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 o:O@1,-1",
+                "bonds": "c1-c2 c2-c3 c2-o"
+              },
+              "at": 30,
+              "name": "secondary",
+              "tube": {
+                "from": "#e8871e",
+                "to": "#3f9a4a",
+                "at": 82
+              },
+              "tags": [
+                {
+                  "t": "orange → green",
+                  "at": 100,
+                  "c": "accent"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 c4:C@1,1 o:O@1,-1",
+                "bonds": "c1-c2 c2-c3 c2-c4 c2-o"
+              },
+              "at": 40,
+              "name": "tertiary",
+              "tube": {
+                "from": "#e8871e",
+                "to": "#e8871e",
+                "at": 82
+              },
+              "tags": [
+                {
+                  "t": "stays orange",
+                  "at": 210,
+                  "c": "amber"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1050,
       "caption": "Orange to green = oxidised (1 or 2); stays orange = tertiary; KMnO4 goes purple to colourless.",
       "voiceover": {

@@ -39,6 +39,8 @@ export type Stage = {
 };
 export type Row = {
 	stages: Stage[];
+	/** Conditions chip that stays up once it appears (e.g. "Ni catalyst, heat"). */
+	cond?: {t: string; at: number; c?: Color};
 	tube?: {from: string; to: string; at: number; label?: string};
 };
 export type ReactionMorphProps = {
@@ -47,6 +49,9 @@ export type ReactionMorphProps = {
 	/** Single-row shorthand. */
 	stages?: Stage[];
 	tube?: Row['tube'];
+	cond?: Row['cond'];
+	/** "rows" stacks reactions; "cols" puts them side by side (bigger molecules for two short reactions). */
+	layout?: 'rows' | 'cols';
 	maxUnit?: number;
 	delay?: number;
 };
@@ -57,7 +62,7 @@ const H = 530;
 const ease = Easing.inOut(Easing.cubic);
 const bondKey = (a: string, b: string) => (a < b ? `${a}|${b}` : `${b}|${a}`);
 
-export const ReactionMorphDiagram = ({title, rows: rowsProp, stages, tube, maxUnit = 104, delay = 62}: ReactionMorphProps) => {
+export const ReactionMorphDiagram = ({title, rows: rowsProp, stages, tube, cond, layout = 'rows', maxUnit = 104, delay = 62}: ReactionMorphProps) => {
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
@@ -65,17 +70,21 @@ export const ReactionMorphDiagram = ({title, rows: rowsProp, stages, tube, maxUn
 		c === 'amber' ? TOK.amber : c === 'accent' ? theme.accent : c === 'second' ? SECOND : c === 'dim' ? TOK.inkDim : c === 'ink' ? TOK.ink : fallback;
 	const inkOf = (c: Color | undefined, fallback: string = TOK.ink) => (c === 'amber' ? TOK.amberInk : colorOf(c, fallback));
 
-	const rows: Row[] = rowsProp ?? [{stages: stages ?? [], tube}];
+	const rows: Row[] = rowsProp ?? [{stages: stages ?? [], tube, cond}];
 	const top = title ? 50 : 4;
-	const rowH = (H - top) / rows.length;
-	const EQ_H = 40;
+	const cols = layout === 'cols';
+	const paneW = cols ? W / rows.length : W;
+	const rowH = cols ? H - top : (H - top) / rows.length;
+	// Rows with a conditions chip get an extra line under the equation.
+	const hasCond = rows.some((r) => r.cond || r.stages.some((s) => s.cond));
+	const EQ_H = hasCond ? 74 : 40;
 	const SLAB = 30;
-	const tubeW = rows.some((r) => r.tube) ? 120 : 0;
+	const tubeW = rows.some((r) => r.tube) ? (cols ? 110 : 120) : 0;
 
 	const built = rows.map((r) => r.stages.map((s) => buildMol(s.mol)));
 	// One scale for every row and stage, so nothing jumps between beats.
 	const boxes = built.map((ms) => bboxOf(ms.flatMap((m) => m.atoms)));
-	const areaW = W - 40 - tubeW;
+	const areaW = paneW - (cols ? 20 : 40) - tubeW;
 	const areaH = rowH - EQ_H - SLAB - 12;
 	const u = Math.min(maxUnit, ...boxes.map((b) => Math.min(areaW / Math.max(b.w, 0.5), areaH / Math.max(b.h, 0.5))));
 
@@ -86,8 +95,10 @@ export const ReactionMorphDiagram = ({title, rows: rowsProp, stages, tube, maxUn
 			{rows.map((row, ri) => {
 				const mols = built[ri];
 				const box = boxes[ri];
-				const y0 = top + ri * rowH;
-				const mcx = 20 + areaW / 2;
+				const y0 = cols ? top : top + ri * rowH;
+				const x0 = cols ? ri * paneW : 0;
+				const mcx = x0 + (cols ? 10 : 20) + areaW / 2;
+				const eqX = x0 + paneW / 2;
 				const mcy = y0 + EQ_H + 6 + areaH / 2;
 				const bob = idleBob(frame, ri + 3, 1.4);
 				const px = (x: number) => mcx + (x - box.cx) * u;
@@ -161,15 +172,18 @@ export const ReactionMorphDiagram = ({title, rows: rowsProp, stages, tube, maxUn
 
 				return (
 					<g key={ri}>
+						{cols && ri > 0 && <line x1={x0} y1={top + 20} x2={x0} y2={H - 30} stroke={TOK.rule} strokeWidth={2} opacity={fadeAt(frame, st[0].at - 6, 12)} />}
 						{/* Equation / caption for each stage (cross-fades) */}
 						{st.map((s, i) =>
 							s.eq ? (
 								<g key={`eq${i}`} opacity={vis(i)}>
-									<PartsText x={mcx} y={y0 + 28} parts={toParts(s.eq)} frame={frame} size={23} accent={theme.accent} />
+									<PartsText x={eqX} y={y0 + 28} parts={toParts(s.eq)} frame={frame} size={cols ? 21 : 23} accent={theme.accent} />
 								</g>
 							) : null,
 						)}
-						<StageSlab id={`${ID}${ri}`} cx={mcx} cy={mcy + (box.h * u) / 2 + SLAB * 0.45} rx={Math.min(areaW / 2, (box.w * u) / 2 + 30)} />
+						<g opacity={fadeAt(frame, st[0].at - 6, 12)}>
+							<StageSlab id={`${ID}${ri}`} cx={mcx} cy={mcy + (box.h * u) / 2 + SLAB * 0.45} rx={Math.min(areaW / 2, (box.w * u) / 2 + 30)} />
+						</g>
 
 						{/* Halos behind the molecules */}
 						{st.map((s, i) =>
@@ -218,14 +232,15 @@ export const ReactionMorphDiagram = ({title, rows: rowsProp, stages, tube, maxUn
 									const gx = pts.reduce((sum, q) => sum + q.x, 0) / pts.length;
 									const above = (h.side ?? 'above') === 'above';
 									const gy = above ? Math.min(...pts.map((q) => q.y)) - u * 0.95 : Math.max(...pts.map((q) => q.y)) + u * 1.05;
-									return <Chip key={`c${hk}`} x={Math.max(90, Math.min(W - 90 - tubeW, gx))} y={gy} text={h.label} color={inkOf(h.c ?? 'amber', TOK.amberInk)} size={16} opacity={h.at !== undefined ? fadeAt(frame, h.at + 4, 12) : 1} />;
+									return <Chip key={`c${hk}`} x={Math.max(x0 + 90, Math.min(x0 + paneW - 90 - tubeW, gx))} y={gy} text={h.label} color={inkOf(h.c ?? 'amber', TOK.amberInk)} size={16} opacity={h.at !== undefined ? fadeAt(frame, h.at + 4, 12) : 1} />;
 								})}
-								{s.cond && <Chip x={mcx} y={y0 + EQ_H + 16} text={s.cond} color={theme.accent} size={16} />}
+								{s.cond && <Chip x={eqX} y={y0 + 56} text={s.cond} color={theme.accent} size={16} />}
 							</g>
 						))}
 
+						{row.cond && <Chip x={eqX} y={y0 + 56} text={row.cond.t} color={inkOf(row.cond.c, theme.accent)} size={16} opacity={fadeAt(frame, row.cond.at, 12)} />}
 						{row.tube && (
-							<Tube x={W - tubeW / 2} y={mcy + (box.h * u) / 2 + 4} h={Math.min(150, areaH * 0.85)} w={38} from={row.tube.from} to={row.tube.to} t={tubeT} label={row.tube.label} />
+							<Tube x={x0 + paneW - 58} y={mcy + (box.h * u) / 2 + 4} h={Math.min(150, areaH * 0.85)} w={38} from={row.tube.from} to={row.tube.to} t={tubeT} label={row.tube.label} />
 						)}
 					</g>
 				);

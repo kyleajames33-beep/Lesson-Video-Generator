@@ -92,6 +92,70 @@
       ],
       "secondary": "Within a primary alcohol series, BP still rises with chain length, because dispersion forces add to the hydrogen bonding as the chain grows.",
       "callout": "Hydrogen bonding, not just dispersion, lifts alcohol boiling points.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "bars": {
+            "min": -100,
+            "max": 100
+          },
+          "panels": [
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0",
+                "bonds": "c1-c2"
+              },
+              "at": 40,
+              "name": "ethane",
+              "formula": true,
+              "bar": {
+                "value": -89,
+                "text": "b.p. −89 °C",
+                "at": 87
+              },
+              "tags": [
+                {
+                  "t": "dispersion only",
+                  "at": 256,
+                  "c": "dim"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 o:O@2,0",
+                "bonds": "c1-c2 c2-o"
+              },
+              "at": 110,
+              "name": "ethanol",
+              "formula": true,
+              "bar": {
+                "value": 78,
+                "text": "b.p. 78 °C",
+                "at": 129
+              },
+              "highlights": [
+                {
+                  "atoms": [
+                    "o",
+                    "oh0"
+                  ],
+                  "at": 256,
+                  "c": "amber"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "hydrogen bonding",
+                  "at": 256,
+                  "c": "amber"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1050,
       "caption": "Ethanol (78C) boils far above ethane (-89C) because alcohols hydrogen bond.",
       "voiceover": {
@@ -110,6 +174,116 @@
       ],
       "secondary": "Butan-1-ol (118C) > butan-2-ol (100C) > 2-methylpropan-2-ol (83C), all C4H10O. State both reasons: equal H-bonding, and dispersion set by shape.",
       "callout": "Same H-bonding; branching decides the dispersion difference.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "bars": {
+            "min": 0,
+            "max": 130
+          },
+          "panels": [
+            {
+              "mol": {
+                "atoms": "o:O@0,-1 c1:C@0,0 c2:C@1,0 c3:C@2,0 c4:C@3,0",
+                "bonds": "o-c1 c1-c2 c2-c3 c3-c4"
+              },
+              "at": 90,
+              "name": "butan-1-ol",
+              "formula": true,
+              "bar": {
+                "value": 118,
+                "text": "118 °C",
+                "at": 146
+              },
+              "highlights": [
+                {
+                  "atoms": [
+                    "o",
+                    "oh0"
+                  ],
+                  "at": 333,
+                  "c": "accent"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "primary",
+                  "at": 146,
+                  "c": "dim"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 c4:C@3,0 o:O@1,-1",
+                "bonds": "c1-c2 c2-c3 c3-c4 c2-o"
+              },
+              "at": 170,
+              "name": "butan-2-ol",
+              "formula": true,
+              "bar": {
+                "value": 100,
+                "text": "100 °C",
+                "at": 194
+              },
+              "highlights": [
+                {
+                  "atoms": [
+                    "o",
+                    "oh0"
+                  ],
+                  "at": 340,
+                  "c": "accent"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "secondary",
+                  "at": 194,
+                  "c": "dim"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 c4:C@1,1 o:O@1,-1",
+                "bonds": "c1-c2 c2-c3 c2-c4 c2-o"
+              },
+              "at": 205,
+              "name": "2-methylpropan-2-ol",
+              "formula": true,
+              "bar": {
+                "value": 83,
+                "text": "83 °C",
+                "at": 229
+              },
+              "highlights": [
+                {
+                  "atoms": [
+                    "o",
+                    "oh0"
+                  ],
+                  "at": 347,
+                  "c": "accent"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "tertiary",
+                  "at": 229,
+                  "c": "dim"
+                },
+                {
+                  "t": "most compact",
+                  "at": 548,
+                  "c": "amber"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1050,
       "caption": "For C4H10O isomers: butan-1-ol > butan-2-ol > 2-methylpropan-2-ol.",
       "voiceover": {
@@ -128,6 +302,135 @@
       ],
       "secondary": "Solubility falls gradually with chain length; there is no sharp cut-off. Branched alcohols are a little more soluble than their straight-chain isomers.",
       "callout": "Short chain, the -OH wins; long chain, the chain wins.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "layout": "column",
+          "panels": [
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 o:O@1,0",
+                "bonds": "c1-o"
+              },
+              "at": 20,
+              "name": "methanol",
+              "highlights": [
+                {
+                  "atoms": [
+                    "o",
+                    "oh0"
+                  ],
+                  "at": 24,
+                  "c": "accent"
+                },
+                {
+                  "atoms": [
+                    "c1"
+                  ],
+                  "at": 141,
+                  "c": "second"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "fully miscible",
+                  "at": 289,
+                  "c": "accent"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 o:O@3,0",
+                "bonds": "c1-c2 c2-c3 c3-o"
+              },
+              "at": 40,
+              "name": "propan-1-ol",
+              "highlights": [
+                {
+                  "atoms": [
+                    "o",
+                    "oh0"
+                  ],
+                  "at": 44,
+                  "c": "accent"
+                },
+                {
+                  "atoms": [
+                    "c1",
+                    "c2",
+                    "c3"
+                  ],
+                  "at": 141,
+                  "c": "second"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "fully miscible",
+                  "at": 300,
+                  "c": "accent"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 c4:C@3,0 c5:C@4,0 o:O@5,0",
+                "bonds": "c1-c2 c2-c3 c3-c4 c4-c5 c5-o"
+              },
+              "at": 60,
+              "name": "pentan-1-ol",
+              "highlights": [
+                {
+                  "atoms": [
+                    "o",
+                    "oh0"
+                  ],
+                  "at": 64,
+                  "c": "accent"
+                },
+                {
+                  "atoms": [
+                    "c1",
+                    "c2",
+                    "c3",
+                    "c4",
+                    "c5"
+                  ],
+                  "at": 141,
+                  "c": "second"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "≈ insoluble",
+                  "at": 577,
+                  "c": "amber"
+                }
+              ]
+            }
+          ],
+          "captions": [
+            {
+              "t": [
+                {
+                  "t": "polar –OH",
+                  "c": "accent"
+                },
+                {
+                  "t": " vs "
+                },
+                {
+                  "t": "non-polar chain",
+                  "c": "second"
+                }
+              ],
+              "at": 141
+            }
+          ]
+        }
+      },
       "durationInFrames": 1050,
       "caption": "Solubility falls with chain length as the non-polar chain overwhelms the -OH.",
       "voiceover": {
