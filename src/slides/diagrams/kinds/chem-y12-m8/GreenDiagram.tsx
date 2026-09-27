@@ -80,6 +80,7 @@ const MetricsMode = ({frame, beats, id, accent, fps}: {frame: number; beats: num
 				<Fraction x={160} y={96} num="M(desired product)" den="M(all products)" size={18} />
 				<text x={262} y={103} fill={TOK.ink} fontSize={18} fontWeight={700}>× 100%</text>
 			</g>
+			<g transform="translate(0,-16)">
 			<DioramaPlinth id={`${id}a`} cx={195} cy={338} rx={150}>
 				<g opacity={ramp(frame, 0, 16)}>
 					{start.map((s, i) => {
@@ -90,7 +91,8 @@ const MetricsMode = ({frame, beats, id, accent, fps}: {frame: number; beats: num
 					})}
 				</g>
 			</DioramaPlinth>
-			<g opacity={ramp(frame, tSplit + 30, 14)}>
+			</g>
+			<g opacity={ramp(frame, tSplit + 30, 14)} transform="translate(0,-16)">
 				<text x={138} y={240} textAnchor="middle" fill={accent} fontSize={17} fontWeight={800}>desired product</text>
 				<text x={268} y={252} textAnchor="middle" fill={GREY_INK} fontSize={17} fontWeight={800}>by-product</text>
 			</g>
@@ -115,6 +117,7 @@ const MetricsMode = ({frame, beats, id, accent, fps}: {frame: number; beats: num
 				<text x={570} y={40} textAnchor="middle" fill={TOK.ink} fontSize={25} fontWeight={800}>E-factor</text>
 				<Fraction x={570} y={96} num="mass of waste" den="mass of product" size={18} />
 			</g>
+			<g transform="translate(0,-16)">
 			<DioramaPlinth id={`${id}b`} cx={570} cy={338} rx={150}>
 				<g opacity={ramp(frame, tE, 16)}>
 					<Crate x={484} y={352} size={58} color={accent} />
@@ -134,9 +137,10 @@ const MetricsMode = ({frame, beats, id, accent, fps}: {frame: number; beats: num
 			</DioramaPlinth>
 			<g opacity={ramp(frame, tE + 20, 14)}>
 				<text x={484} y={262} textAnchor="middle" fill={accent} fontSize={17} fontWeight={800}>product</text>
-				<text x={574} y={286} textAnchor="middle" fill={GREY_INK} fontSize={17} fontWeight={800}>waste</text>
+				<text x={574} y={276} textAnchor="middle" fill={GREY_INK} fontSize={17} fontWeight={800}>waste</text>
 			</g>
-			<g opacity={ramp(frame, tSolv, 16)}>
+			</g>
+			<g opacity={ramp(frame, tSolv, 16)} transform="translate(0,-16)">
 				<rect x={606} y={266} width={114} height={98} rx={14} fill="none" stroke={TOK.amber} strokeWidth={2.5 + idlePulse(frame) * 1.5} strokeDasharray="7 5" />
 				<text x={640} y={226} textAnchor="middle" fill={TOK.amberInk} fontSize={17} fontWeight={800}>+ solvents, washings</text>
 				<text x={640} y={248} textAnchor="middle" fill={TOK.amberInk} fontSize={16} fontWeight={700}>(atom economy ignores)</text>
@@ -173,9 +177,9 @@ const RoutesMode = ({frame, beats, id, accent, routes, footer}: {frame: number; 
 			</g>
 			<g opacity={ramp(frame, tIn, 16)}>
 				<Crate x={214} y={108} size={22} color={accent} />
-				<text x={234} y={104} fill={accent} fontSize={17} fontWeight={800}>1 unit of product</text>
+				<text x={240} y={104} fill={accent} fontSize={17} fontWeight={800}>1 unit of product</text>
 				<Crate x={444} y={108} size={22} color={GREY} />
-				<text x={464} y={104} fill={GREY_INK} fontSize={17} fontWeight={800}>1 unit of waste</text>
+				<text x={470} y={104} fill={GREY_INK} fontSize={17} fontWeight={800}>1 unit of waste</text>
 			</g>
 			<g opacity={ramp(frame, tBoth, 16)}>
 				<text x={W / 2} y={140} textAnchor="middle" fill={TOK.ink} fontSize={18} fontWeight={800}>Same atom economy, very different waste</text>

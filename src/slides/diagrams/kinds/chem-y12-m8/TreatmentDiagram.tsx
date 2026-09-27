@@ -151,7 +151,7 @@ const TrainMode = ({id, frame, fps, b, accent}: ModeArgs) => {
 								}
 								if (i === 1) {
 									// clumps grow: gather into 3 flocs
-									const f = {x: cx + [-26, 24, -4][k % 3] + idleBob(frame, k % 3, 3), y: [surf + 34, surf + 50, bot - 26][k % 3] + idleBob(frame, (k % 3) + 4, 3)};
+									const f = {x: cx + [-24, 26, -32][k % 3] + idleBob(frame, k % 3, 3), y: [surf + 32, surf + 46, bot - 18][k % 3] + idleBob(frame, (k % 3) + 4, 3)};
 									const a = (k / 14) * Math.PI * 6;
 									x = w.x + (f.x + Math.cos(a) * 9 - w.x) * p; y = w.y + (f.y + Math.sin(a) * 7 - w.y) * p; r = 3.6 + p * 0.6;
 								}
@@ -371,10 +371,13 @@ const FilterMode = ({id, frame, b, accent}: ModeArgs) => {
 	const first = ramp(frame, tFirst, 16);
 	// falling items: particles (trapped in sand/gravel from tSand) and organics (caught by carbon from tCarbon)
 	const items: {x: number; y: number; kind: 'p' | 'o'; op: number}[] = [];
-	const add = (kind: 'p' | 'o', n: number, start: number, gap: number, seed: number) => {
-		for (let k = 0; k < n; k++) {
+	// Endless trickle: each item lives ~420 frames (trapped ones fade slowly), so the bed stays at a steady fill.
+	const add = (kind: 'p' | 'o', start: number, gap: number, seed: number) => {
+		const kNow = Math.floor((frame - start) / gap);
+		for (let k = Math.max(0, kNow - Math.ceil(420 / gap)); k <= kNow; k++) {
 			const emit = start + k * gap;
 			if (frame < emit) continue;
+			const age = frame - emit;
 			const x = X0 + 18 + hash01(seed + k * 7) * (X1 - X0 - 36);
 			const speed = 1.5;
 			let y = TOP + 22 + (frame - emit) * speed;
@@ -382,10 +385,10 @@ const FilterMode = ({id, frame, b, accent}: ModeArgs) => {
 			const arriveCarbon = emit + (yCarbon - TOP - 22) / speed;
 			if (kind === 'p') {
 				const stop = ySand + 6 + hash01(seed + k * 3) * (yGravel - ySand + 30);
-				y = Math.min(y, stop);
+				if (y >= stop) { y = stop + idleBob(frame, k, 0.8); op = 1 - ramp(age, 340, 70); }
 			} else if (arriveCarbon > tCarbon) {
 				const stop = yCarbon + 8 + hash01(seed + k * 3) * (ySand - yCarbon - 18);
-				y = Math.min(y, stop);
+				if (y >= stop) { y = stop + idleBob(frame, k, 0.8); op = 1 - ramp(age, 340, 70); }
 			} else if (y > BASE - 16) {
 				op = 1 - ramp(y, BASE - 16, 20);
 				y = Math.min(y, BASE - 6);
@@ -393,8 +396,8 @@ const FilterMode = ({id, frame, b, accent}: ModeArgs) => {
 			items.push({x: x + (y < yCarbon ? Math.sin(frame / 14 + k) * 3 : 0), y, kind, op});
 		}
 	};
-	add('p', 22, 0, 13, 3);
-	add('o', 20, 20, 16, 11);
+	add('p', 0, 13, 3);
+	add('o', 20, 16, 11);
 	const clip = `${id}-col`;
 	return (
 		<>

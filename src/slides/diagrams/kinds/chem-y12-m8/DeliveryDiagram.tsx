@@ -164,10 +164,11 @@ const FirstPassMode = ({frame, beats, id, accent, prodrug, activeDrug}: {frame: 
 	const [tDose, tLiver, tMetab, tBio, tPro, tPair] = beats;
 	const GREY = '#9c9890';
 
+	const LRX = 82, LRY = 44; // circulation loop
 	// Path gut → liver → circulation loop entry (polyline), lengths in px.
 	const pts = [
-		{x: GUT, y: 250}, {x: GUT + 60, y: 262}, {x: LIV - 88, y: 262}, {x: LIV, y: 252},
-		{x: LIV + 88, y: 262}, {x: CIRC - 72, y: 262},
+		{x: GUT, y: 250}, {x: GUT + 76, y: 262}, {x: LIV - 100, y: 262}, {x: LIV, y: 252},
+		{x: LIV + 100, y: 262}, {x: CIRC - LRX, y: 252},
 	];
 	const segLen = pts.slice(1).map((p, i) => Math.hypot(p.x - pts[i].x, p.y - pts[i].y));
 	const total = segLen.reduce((a, b) => a + b, 0);
@@ -185,7 +186,6 @@ const FirstPassMode = ({frame, beats, id, accent, prodrug, activeDrug}: {frame: 
 	const liverD = segLen[0] + segLen[1] + segLen[2];
 	const speed = 2.4;
 	const period = 16;
-	const LRX = 72, LRY = 40; // circulation loop
 
 	const particles = [];
 	const nSpawn = Math.max(0, Math.floor((frame - tLiver) / period) + 1);
@@ -212,20 +212,20 @@ const FirstPassMode = ({frame, beats, id, accent, prodrug, activeDrug}: {frame: 
 			// one lap of the circulation loop, then fade
 			const a = Math.PI + (d - total) / 70;
 			x = CIRC + LRX * Math.cos(a);
-			y = 256 + LRY * Math.sin(a);
+			y = 252 + LRY * Math.sin(a);
 			op = 1 - Math.max(0, (a - Math.PI - 5.4) / 1.2);
 			if (op <= 0) continue;
 		}
 		const inLiver = d > liverD - 40 && d <= liverD + 10 && !survives ? (d - (liverD - 40)) / 50 : 0;
 		particles.push(
 			<g key={k} opacity={op}>
-				<circle cx={x} cy={y} r={7} fill={`url(#${id}-g-${col === GREY || inLiver > 0.5 ? 'grey' : 'drug'})`} stroke="#ffffff" strokeWidth={1} />
+				<circle cx={x} cy={y} r={8} fill={`url(#${id}-g-${col === GREY || inLiver > 0.5 ? 'grey' : 'drug'})`} stroke="#ffffff" strokeWidth={1} />
 			</g>,
 		);
 	}
 
 	const dropT = ease(ramp(frame, tDose, 30));
-	const doseY = 88 + dropT * 150;
+	const doseY = 84 + dropT * 170;
 	const doseOp = 1 - ramp(frame, tDose + 30, 14);
 	const liverGlow = frame >= tLiver ? 0.55 + 0.45 * idlePulse(frame) : 0;
 
@@ -247,26 +247,31 @@ const FirstPassMode = ({frame, beats, id, accent, prodrug, activeDrug}: {frame: 
 			</g>
 
 			{/* Plinths + organs */}
-			<DioramaPlinth id={`${id}g`} cx={GUT} cy={PY} rx={96}>
+			<g transform="translate(0,12)">
+			<DioramaPlinth id={`${id}g`} cx={GUT} cy={PY} rx={100}>
+				<g transform={`translate(${GUT},262) scale(1.25) translate(${-GUT},-262)`}>
 				<path
 					d={`M ${GUT - 52} 206 C ${GUT - 80} 226 ${GUT - 10} 234 ${GUT - 30} 250 C ${GUT - 60} 270 ${GUT + 20} 282 ${GUT} 262 C ${GUT - 16} 244 ${GUT + 60} 232 ${GUT + 40} 256 C ${GUT + 24} 276 ${GUT + 70} 286 ${GUT + 62} 262`}
 					fill="none" stroke="#e7a3a0" strokeWidth={16} strokeLinecap="round" />
 				<path
 					d={`M ${GUT - 52} 206 C ${GUT - 80} 226 ${GUT - 10} 234 ${GUT - 30} 250 C ${GUT - 60} 270 ${GUT + 20} 282 ${GUT} 262 C ${GUT - 16} 244 ${GUT + 60} 232 ${GUT + 40} 256 C ${GUT + 24} 276 ${GUT + 70} 286 ${GUT + 62} 262`}
 					fill="none" stroke="#f6d0cd" strokeWidth={5} strokeLinecap="round" opacity={0.8} />
+				</g>
 			</DioramaPlinth>
-			<DioramaPlinth id={`${id}l`} cx={LIV} cy={PY} rx={96}>
+			<DioramaPlinth id={`${id}l`} cx={LIV} cy={PY} rx={100}>
+				<g transform={`translate(${LIV},262) scale(1.2) translate(${-LIV},-262)`}>
 				<path
 					d={`M ${LIV - 82} 250 C ${LIV - 90} 214 ${LIV - 30} 204 ${LIV + 10} 212 C ${LIV + 50} 218 ${LIV + 90} 214 ${LIV + 84} 236 C ${LIV + 78} 258 ${LIV + 30} 262 ${LIV - 4} 284 C ${LIV - 30} 300 ${LIV - 74} 284 ${LIV - 82} 250 Z`}
 					fill={`url(#${id}-g-liver)`} stroke={frame >= tLiver ? TOK.amber : '#5e2219'} strokeWidth={frame >= tLiver ? 3 + liverGlow * 2 : 1.5} />
+				</g>
 			</DioramaPlinth>
-			<DioramaPlinth id={`${id}c`} cx={CIRC} cy={PY} rx={96}>
-				<ellipse cx={CIRC} cy={256} rx={LRX} ry={LRY} fill="none" stroke="#b8322a" strokeWidth={13} opacity={0.9} />
-				<ellipse cx={CIRC} cy={256} rx={LRX} ry={LRY} fill="none" stroke="#e7766c" strokeWidth={4} opacity={0.7} />
+			<DioramaPlinth id={`${id}c`} cx={CIRC} cy={PY} rx={100}>
+				<ellipse cx={CIRC} cy={252} rx={LRX} ry={LRY} fill="none" stroke="#b8322a" strokeWidth={13} opacity={0.9} />
+				<ellipse cx={CIRC} cy={252} rx={LRX} ry={LRY} fill="none" stroke="#e7766c" strokeWidth={4} opacity={0.7} />
 			</DioramaPlinth>
 			{/* vessels */}
-			<path d={`M ${GUT + 62} 262 L ${LIV - 84} 262`} stroke="#c9564c" strokeWidth={12} strokeLinecap="round" opacity={0.35} />
-			<path d={`M ${LIV + 84} 262 L ${CIRC - LRX} 262`} stroke="#c9564c" strokeWidth={12} strokeLinecap="round" opacity={0.35} />
+			<path d={`M ${GUT + 76} 262 L ${LIV - 100} 262`} stroke="#c9564c" strokeWidth={12} strokeLinecap="round" opacity={0.35} />
+			<path d={`M ${LIV + 100} 262 L ${CIRC - LRX} 256`} stroke="#c9564c" strokeWidth={12} strokeLinecap="round" opacity={0.35} />
 
 			{/* drug in the gut after the dose dissolves */}
 			<g opacity={ramp(frame, tDose + 30, 16) * (1 - ramp(frame, tLiver + 40, 30))}>
@@ -275,29 +280,30 @@ const FirstPassMode = ({frame, beats, id, accent, prodrug, activeDrug}: {frame: 
 				))}
 			</g>
 			{particles}
+			</g>
 
 			{/* Station labels */}
 			<g opacity={ramp(frame, 0, 16)}>
-				<text x={GUT} y={372} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>Gut</text>
-				<text x={LIV} y={372} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>Liver</text>
-				<text x={CIRC} y={372} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>General circulation</text>
+				<text x={GUT} y={384} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>Gut</text>
+				<text x={LIV} y={384} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>Liver</text>
+				<text x={CIRC} y={384} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>General circulation</text>
 			</g>
 			<g opacity={ramp(frame, tLiver, 14)}>
-				<text x={GUT} y={396} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>absorbed</text>
+				<text x={GUT} y={406} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>absorbed</text>
 			</g>
 			<g opacity={ramp(frame, tMetab, 14)}>
-				<text x={LIV} y={396} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>a large fraction</text>
-				<text x={LIV} y={416} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>metabolised</text>
+				<text x={LIV} y={406} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>a large fraction</text>
+				<text x={LIV} y={425} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>metabolised</text>
 			</g>
 			<g opacity={ramp(frame, tBio, 14)}>
-				<text x={CIRC} y={396} textAnchor="middle" fill={accent} fontSize={17} fontWeight={800}>less active drug</text>
-				<text x={CIRC} y={416} textAnchor="middle" fill={accent} fontSize={17} fontWeight={800}>lower oral bioavailability</text>
+				<text x={CIRC} y={406} textAnchor="middle" fill={accent} fontSize={17} fontWeight={800}>less active drug</text>
+				<text x={CIRC} y={425} textAnchor="middle" fill={accent} fontSize={17} fontWeight={800}>lower oral bioavailability</text>
 			</g>
 
 			{/* Prodrug strip */}
 			<g opacity={ramp(frame, tPro, 16)}>
-				<rect x={40} y={440} width={680} height={82} rx={16} fill="#ffffff" stroke={TOK.cardBorder} strokeWidth={2} />
-				<text x={W / 2} y={470} textAnchor="middle" fill={TOK.ink} fontSize={19} fontWeight={800}>Prodrug: given inactive, activated in the body</text>
+				<rect x={40} y={442} width={680} height={80} rx={16} fill="#ffffff" stroke={TOK.cardBorder} strokeWidth={2} />
+				<text x={W / 2} y={472} textAnchor="middle" fill={TOK.ink} fontSize={19} fontWeight={800}>Prodrug: given inactive, activated in the body</text>
 			</g>
 			<g opacity={ramp(frame, tPair, 16)}>
 				<circle cx={250} cy={500} r={10} fill={`url(#${id}-g-grey)`} stroke="#77736b" />

@@ -112,19 +112,20 @@ const FormsMode = ({frame, beats, id}: {frame: number; beats: number[]; id: stri
 	const r = 23;
 	const yTop = PCY - BH * 0.86 + 32, yBot = PCY - 30;
 
-	// Evenly spread phases (k / n) so molecules don't bunch; speeds differ slightly.
-	const fx = (k: number, n: number, t: number, salt: number) => tri((k / n) * 2 + hash(k, salt) * 0.25 + t * 0.0062 * (1 + 0.08 * (hash(k, salt + 1) - 0.5)));
-	const fy = (k: number, n: number, t: number, salt: number) => tri((((k * 3 + 1) % n) / n) * 2 + 0.25 + hash(k, salt) * 0.2 + t * 0.0047 * (1 + 0.08 * (hash(k, salt + 2) - 0.5)));
-	const yAt = (k: number, t: number, salt: number) => yTop + fy(k, 4, t, salt) * (yBot - yTop);
+	// Six horizontal lanes: A⁻ on lanes 0, 2, 4 and HA on 1, 3, 5, so molecules of
+	// one kind never overlap (lane spacing > one diameter once the HA have crossed).
+	const lane = (i: number) => yTop + (i * (yBot - yTop)) / 5;
+	const fx = (k: number, t: number, salt: number) => tri(hash(k, salt) * 2 + t * (0.0058 + hash(k, salt + 1) * 0.0022));
+	const wob = (k: number, t: number) => Math.sin(t / 23 + k * 2.1) * 3;
 	// A⁻ roam the whole left compartment, so they keep hitting the membrane.
-	const aPos = (k: number, t: number) => ({x: x0 + r + fx(k, 4, t, 11) * (memL - r - (x0 + r)), y: yAt(k, t, 3)});
+	const aPos = (k: number, t: number) => ({x: x0 + r + fx(k, t, 11) * (memL - r - (x0 + r)), y: lane(k * 2) + wob(k, t)});
 	// HA roam the left (kept clear of the membrane) until they cross.
-	const haLeft = (k: number, t: number) => ({x: x0 + r + fx((k + 2) % 4, 4, t, 17) * (300 - (x0 + r)), y: yAt((k + 1) % 4, t, 7)});
-	const haRight = (k: number, t: number) => ({x: memR + r + 6 + fx(k, 4, t, 23) * (x1 - r - (memR + r + 6)), y: yAt((k + 2) % 4, t, 29)});
-	const NHA = 4, NA = 4;
+	const haLeft = (k: number, t: number) => ({x: x0 + r + fx(k, t, 17) * (300 - (x0 + r)), y: lane(k * 2 + 1) + wob(k + 3, t)});
+	const haRight = (k: number, t: number) => ({x: memR + r + 6 + fx(k, t, 23) * (x1 - r - (memR + r + 6)), y: lane(k * 2 + 1) + wob(k + 6, t)});
+	const NHA = 3, NA = 3;
 	const crossLen = 56;
 	const haPos = (k: number) => {
-		const T = tCross + k * 40;
+		const T = tCross + k * 45;
 		if (frame < T) return haLeft(k, frame);
 		const p0 = haLeft(k, T);
 		const p2 = haRight(k, T + crossLen);
@@ -182,14 +183,14 @@ const FormsMode = ({frame, beats, id}: {frame: number; beats: number[]; id: stri
 						{bumps.map((b, k) => (
 							<circle key={k} cx={memL - 2} cy={b.y} r={10 + 8 * b.o} fill="none" stroke={INK_A} strokeWidth={2.5} opacity={b.o * 0.8} />
 						))}
-						{Array.from({length: NA}, (_, k) => {
-							const p = aPos(k, frame);
-							return <AcidParticle key={`a${k}`} id={id} x={p.x} y={p.y} r={r} s={1} />;
-						})}
-						{Array.from({length: NHA}, (_, k) => {
-							const p = haPos(k);
-							return <AcidParticle key={`h${k}`} id={id} x={p.x} y={p.y} r={r} s={0} />;
-						})}
+						{[
+							...Array.from({length: NA}, (_, k) => ({key: `a${k}`, s: 1, ...aPos(k, frame)})),
+							...Array.from({length: NHA}, (_, k) => ({key: `h${k}`, s: 0, ...haPos(k)})),
+						]
+							.sort((p, q) => p.y - q.y)
+							.map((p) => (
+								<AcidParticle key={p.key} id={id} x={p.x} y={p.y} r={r} s={p.s} />
+							))}
 					</Beaker>
 				</g>
 			</DioramaPlinth>

@@ -57,9 +57,9 @@ const Principle = ({frame, b}: {frame: number; b: number[]}) => {
 	const [tPhrase, tStat, tMob, tCarry, tSlow, tFast, tChem] = b;
 	const tStop = tChem + 60;
 	const pulse = idlePulse(frame);
-	const X0 = 50, X1 = 710, TOP = 206, BOT = 334;
+	const X0 = 50, X1 = 710, TOP = 166, BOT = 334;
 	const BEAD_Y = 318;
-	const MOB0 = 222, MOB1 = 286;
+	const MOB0 = 186, MOB1 = 284;
 
 	// Time each particle has been carried (frozen after tStop).
 	const tRun = Math.max(0, Math.min(frame, tStop) - tCarry);
@@ -110,16 +110,17 @@ const Principle = ({frame, b}: {frame: number; b: number[]}) => {
 			</g>
 
 			{/* supports */}
-			<DioramaPlinth id={ID} cx={150} cy={352} rx={74} />
-			<DioramaPlinth id={ID} cx={610} cy={352} rx={74} />
+			<DioramaPlinth id={ID} cx={150} cy={338} rx={74} />
+			<DioramaPlinth id={ID} cx={610} cy={338} rx={74} />
 
 			{/* channel: mobile phase liquid over a bed of fixed beads */}
 			<rect x={X0} y={TOP} width={X1 - X0} height={BOT - TOP} rx={8} fill="rgba(150,200,235,0.28)" />
 			{/* flow chevrons */}
 			<g opacity={flowOn * 0.7}>
-				{Array.from({length: 9}, (_, i) => {
-					const x = X0 + 20 + ((i * 76 + Math.max(0, frame - tMob) * 1.2) % (X1 - X0 - 40));
-					return <path key={i} d={`M ${x} ${MOB0 + 12} l 12 12 l -12 12`} fill="none" stroke="#6aa6d6" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />;
+				{Array.from({length: 8}, (_, i) => {
+					const span = X1 - X0 - 40;
+					const x = X0 + 20 + ((i * (span / 8) + Math.max(0, frame - tMob) * 1.2) % span);
+					return <path key={i} d={`M ${x} ${MOB0 + 4} l 12 12 l -12 12`} fill="none" stroke="#6aa6d6" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />;
 				})}
 			</g>
 			{Array.from({length: 33}, (_, i) => (
@@ -133,6 +134,8 @@ const Principle = ({frame, b}: {frame: number; b: number[]}) => {
 				))}
 			<rect x={X0} y={TOP} width={X1 - X0} height={BOT - TOP} rx={8} fill="none" stroke="rgba(70,90,110,0.55)" strokeWidth={3} />
 			<rect x={X0 + 10} y={TOP + 6} width={X1 - X0 - 20} height={4} rx={2} fill="#ffffff" opacity={0.6} />
+
+			<text x={X0} y={TOP - 14} fill={TOK.inkDim} fontSize={19} fontWeight={800} opacity={ramp(frame, 0, 14) * (1 - ramp(frame, tMob - 16, 14))}>a two-component mixture</text>
 
 			{/* phase labels */}
 			<g opacity={ramp(frame, tMob, 14)}>
@@ -167,10 +170,10 @@ const Tlc = ({frame, b, frontCm, fastCm, slowCm}: {frame: number; b: number[]; f
 	const ID = 'c12m8septlc';
 	const [tPlate, tSolvent, tSpot, tRise, tMeasure, tFormula, tCalc, tUnits, tPure, tPolar] = b;
 	const pulse = idlePulse(frame);
-	const S = 26; // viewBox units per cm
-	const CX = 150, BASE = 440;
+	const S = 30; // viewBox units per cm
+	const CX = 150, BASE = 452;
 	const PW = 80;
-	const plateBot = 432;
+	const plateBot = BASE - 8;
 	const baseY = plateBot - S; // pencil baseline 1 cm above the bottom
 	const plateTop = baseY - (frontCm + 1) * S;
 	const poolY = plateBot - 10;
@@ -194,11 +197,11 @@ const Tlc = ({frame, b, frontCm, fastCm, slowCm}: {frame: number; b: number[]; f
 	const phase1Labels = 1 - ramp(frame, tMeasure - 6, 14);
 
 	const RX = CX + PW / 2 + 22; // ruler x
-	const label = (y: number, text: string, sub: string | undefined, t: number, tx = 300) => (
+	const label = (y: number, text: string, sub: string | undefined, t: number, ty = y, tx = 300) => (
 		<g opacity={ramp(frame, t, 14) * phase1Labels}>
-			<line x1={CX + PW / 2 + 6} y1={y} x2={tx - 10} y2={y} stroke={TOK.inkMute} strokeWidth={1.8} />
-			<text x={tx} y={y + 6} fill={TOK.ink} fontSize={19} fontWeight={800}>{text}</text>
-			{sub && <text x={tx} y={y + 28} fill={TOK.inkDim} fontSize={16} fontWeight={700}>{sub}</text>}
+			<path d={`M ${CX + PW / 2 + 6} ${y} L ${tx - 34} ${y} L ${tx - 10} ${ty}`} fill="none" stroke={TOK.inkMute} strokeWidth={1.8} />
+			<text x={tx} y={ty + 6} fill={TOK.ink} fontSize={19} fontWeight={800}>{text}</text>
+			{sub && <text x={tx} y={ty + 28} fill={TOK.inkDim} fontSize={16} fontWeight={700}>{sub}</text>}
 		</g>
 	);
 
@@ -210,8 +213,8 @@ const Tlc = ({frame, b, frontCm, fastCm, slowCm}: {frame: number; b: number[]; f
 			<DioramaPlinth id={ID} cx={CX} cy={BASE} rx={116}>
 				{/* chamber (beaker + lid) with the solvent pool */}
 				<g opacity={chamber}>
-					<Beaker cx={CX} baseY={BASE} w={156} h={300} level={0.06} liquid="rgba(150,200,235,0.45)" />
-					<rect x={CX - 90} y={BASE - 308} width={180} height={9} rx={3} fill="rgba(200,215,228,0.85)" stroke="rgba(70,90,110,0.5)" strokeWidth={1.5} />
+					<Beaker cx={CX} baseY={BASE} w={156} h={350} level={0.05} liquid="rgba(150,200,235,0.45)" />
+					<rect x={CX - 90} y={BASE - 358} width={180} height={9} rx={3} fill="rgba(200,215,228,0.85)" stroke="rgba(70,90,110,0.5)" strokeWidth={1.5} />
 				</g>
 				{/* plate */}
 				<g opacity={ramp(frame, tPlate, 14)}>
@@ -234,9 +237,9 @@ const Tlc = ({frame, b, frontCm, fastCm, slowCm}: {frame: number; b: number[]; f
 
 			{/* phase-1 labels */}
 			{label(plateTop + 50, 'silica plate', 'stationary phase', tPlate)}
-			{label(poolY, 'solvent', 'mobile phase', tSolvent)}
-			{label(baseY - 44, 'rises by capillary action', undefined, tRise)}
-			{label(baseY + 0.1, 'pencil baseline + spot', undefined, tSpot)}
+			{label(poolY + 4, 'solvent', 'mobile phase', tSolvent, poolY + 26)}
+			{label(baseY - 90, 'rises by capillary action', undefined, tRise)}
+			{label(baseY, 'pencil baseline + spot', undefined, tSpot, baseY - 12)}
 
 			{/* ruler + measured distances */}
 			<g opacity={measure}>
@@ -259,30 +262,30 @@ const Tlc = ({frame, b, frontCm, fastCm, slowCm}: {frame: number; b: number[]; f
 
 			{/* Rf panel */}
 			<g opacity={ramp(frame, tFormula, 14)}>
-				<rect x={352} y={150} width={390} height={98} rx={16} fill="rgba(240,168,48,0.07)" stroke={TOK.amber} strokeWidth={2.5 + pulse * 1.5} />
-				<text x={376} y={208} fill={TOK.amberInk} fontSize={30} fontWeight={800}>R<tspan fontSize={20} dy={6}>f</tspan><tspan dy={-6}> =</tspan></text>
-				<text x={588} y={188} textAnchor="middle" fill={TOK.ink} fontSize={20} fontWeight={800}>compound distance</text>
-				<line x1={466} y1={200} x2={712} y2={200} stroke={TOK.ink} strokeWidth={2.5} />
-				<text x={588} y={228} textAnchor="middle" fill={TOK.ink} fontSize={20} fontWeight={800}>solvent front distance</text>
+				<rect x={352} y={110} width={390} height={98} rx={16} fill="rgba(240,168,48,0.07)" stroke={TOK.amber} strokeWidth={2.5 + pulse * 1.5} />
+				<text x={376} y={168} fill={TOK.amberInk} fontSize={30} fontWeight={800}>R<tspan fontSize={20} dy={6}>f</tspan><tspan dy={-6}> =</tspan></text>
+				<text x={588} y={148} textAnchor="middle" fill={TOK.ink} fontSize={20} fontWeight={800}>compound distance</text>
+				<line x1={466} y1={160} x2={712} y2={160} stroke={TOK.ink} strokeWidth={2.5} />
+				<text x={588} y={188} textAnchor="middle" fill={TOK.ink} fontSize={20} fontWeight={800}>solvent front distance</text>
 			</g>
 			<g opacity={ramp(frame, tCalc, 14)}>
-				<Ball id={ID} name="blue" color={BLUE} x={380} y={290} r={9} />
-				<text x={400} y={298} fill={TOK.ink} fontSize={24} fontWeight={800}>{fmt(fastCm)} ÷ {fmt(frontCm)} = {fmt2(rfFast)}</text>
+				<Ball id={ID} name="blue" color={BLUE} x={380} y={250} r={9} />
+				<text x={400} y={258} fill={TOK.ink} fontSize={24} fontWeight={800}>{fmt(fastCm)} ÷ {fmt(frontCm)} = {fmt2(rfFast)}</text>
 			</g>
 			<g opacity={ramp(frame, tCalc + 20, 14)}>
-				<Ball id={ID} name="red" color={RED} x={380} y={334} r={9} />
-				<text x={400} y={342} fill={TOK.ink} fontSize={24} fontWeight={800}>{fmt(slowCm)} ÷ {fmt(frontCm)} = {fmt2(rfSlow)}</text>
+				<Ball id={ID} name="red" color={RED} x={380} y={294} r={9} />
+				<text x={400} y={302} fill={TOK.ink} fontSize={24} fontWeight={800}>{fmt(slowCm)} ÷ {fmt(frontCm)} = {fmt2(rfSlow)}</text>
 			</g>
 			<g opacity={ramp(frame, tUnits, 14)}>
-				<text x={372} y={388} fill={TOK.inkDim} fontSize={19} fontWeight={700}>No units; always between 0 and 1</text>
+				<text x={372} y={348} fill={TOK.inkDim} fontSize={19} fontWeight={700}>No units; always between 0 and 1</text>
 			</g>
 			<g opacity={ramp(frame, tPure, 14)}>
-				<text x={372} y={428} fill={TOK.inkDim} fontSize={18} fontWeight={700}>A “pure” sample with 2 spots is not pure</text>
+				<text x={372} y={388} fill={TOK.inkDim} fontSize={18} fontWeight={700}>A “pure” sample with 2 spots is not pure</text>
 			</g>
 			<g opacity={ramp(frame, tPolar, 14)} transform={`translate(0 ${idleBob(frame, 3, 0.8)})`}>
-				<Ball id={ID} name="red" color={RED} x={380} y={474} r={9} />
-				<text x={400} y={481} fill={TOK.ink} fontSize={19} fontWeight={800}>Polar compound sticks to polar silica</text>
-				<text x={400} y={505} fill={RED} fontSize={19} fontWeight={800}>→ low Rf</text>
+				<Ball id={ID} name="red" color={RED} x={380} y={434} r={9} />
+				<text x={400} y={441} fill={TOK.ink} fontSize={19} fontWeight={800}>Polar compound sticks to polar silica</text>
+				<text x={400} y={465} fill={RED} fontSize={19} fontWeight={800}>→ low Rf</text>
 			</g>
 		</svg>
 	);

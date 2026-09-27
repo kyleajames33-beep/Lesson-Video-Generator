@@ -50,7 +50,7 @@ export const TetraModel = ({
 		return {g, i, ...p};
 	});
 	const sorted = [...items, {g: null, i: -1, sx: 0, sy: 0, depth: 0}].sort((a, b) => a.depth - b.depth);
-	const cr = R * 0.3;
+	const cr = R * 0.25;
 	return (
 		<g opacity={opacity}>
 			{/* soft ground shadow */}

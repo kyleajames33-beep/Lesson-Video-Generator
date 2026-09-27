@@ -87,7 +87,10 @@ const MirrorMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) 
 	const back = ease(ramp(frame, tEnan + 30, 34));
 	const move = out * (1 - back);
 	const spin = move;
-	const rot2 = spin * (240 + 2 * w);
+	// turn that brings the image's COOH onto the original's (H stays on the axis):
+	// mirrored azimuth is 180 − φ, so it needs 2φ − 180 (+2w for the idle turn).
+	const target = (((2 * AZ[0] - 180) % 360) + 360) % 360;
+	const rot2 = spin * (target + 2 * w);
 	const gx = RX + (LX - RX) * move;
 	const gy = CY - Math.sin(Math.PI * Math.min(1, out + back)) * 26 * (out < 1 ? 1 : 0) - (out >= 1 && back > 0 ? Math.sin(Math.PI * back) * 26 : 0);
 	const marksOn = ramp(frame, tRot + 50, 10) * (1 - ramp(frame, tEnan + 26, 8));
@@ -185,7 +188,7 @@ const CompareMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]})
 	const rowIn = (t: number) => ramp(frame, t, 14);
 	const sameConn = ramp(frame, tSame, 14);
 	const call = ramp(frame, tCall, 16);
-	const place = (m: ReturnType<typeof butane>, cx: number, cy: number) => centreOn(m, S, 17, cx, cy);
+	const place = (m: ReturnType<typeof butane>, cx: number, cy: number, s = S) => centreOn(m, s, 17, cx, cy);
 	const bu = butane(), mp = methylpropane(), cis = but2ene(true), trans = but2ene(false);
 	return (
 		<g>
@@ -197,9 +200,8 @@ const CompareMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]})
 					<g key={r.title} opacity={o} transform={`translate(${(1 - o) * -14},0)`}>
 						<rect x={16} y={r.y - 62} width={W - 32} height={124} rx={18} fill="#ffffff" fillOpacity={0.7} stroke={isE && call > 0 ? TOK.amber : TOK.cardBorder} strokeWidth={isE && call > 0 ? 2.5 + pulse * 1.5 * call : 1.5} />
 						<text x={40} y={r.y - 8} fill={isE && call > 0 ? TOK.amberInk : TOK.ink} fontSize={24} fontWeight={800}>{r.title}</text>
-						<text x={40} y={r.y + 20} fill={TOK.inkDim} fontSize={17} fontWeight={700}>{r.sub}</text>
+						<text x={40} y={r.y + 20} fill={isE && sameConn > 0.5 ? theme.accent : TOK.inkDim} fontSize={17} fontWeight={isE && sameConn > 0.5 ? 800 : 700}>{r.sub}</text>
 						{isE && <text x={40} y={r.y + 42} fill={TOK.inkDim} fontSize={17} fontWeight={700}>mirror-image 3D</text>}
-						{isE && <text x={40} y={r.y + 20} fill={theme.accent} fontSize={17} fontWeight={800} opacity={sameConn}>same connectivity,</text>}
 					</g>
 				);
 			})}
@@ -224,24 +226,24 @@ const CompareMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]})
 			{/* geometric: cis vs trans but-2-ene */}
 			<g opacity={rowIn(tGeo)}>
 				{(() => {
-					const a = place(cis, XA, 214), c = place(trans, XB, 206);
+					const a = place(cis, XA, 218, 40), c = place(trans, XB, 214, 40);
 					return (
 						<>
-							<SkelDots mol={cis} x={a.x} y={a.y} s={S} />
-							<SkelDots mol={trans} x={c.x} y={c.y} s={S} />
+							<SkelDots mol={cis} x={a.x} y={a.y} s={40} />
+							<SkelDots mol={trans} x={c.x} y={c.y} s={40} />
 						</>
 					);
 				})()}
 				<g opacity={ramp(frame, tCis, 14)}>
-					<text x={XA} y={266} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>cis-but-2-ene</text>
-					<text x={XB} y={266} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>trans-but-2-ene</text>
+					<text x={XA} y={272} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>cis-but-2-ene</text>
+					<text x={XB} y={272} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>trans-but-2-ene</text>
 				</g>
 			</g>
 			{/* enantiomers */}
 			<g opacity={rowIn(tEnan)}>
-				<TetraModel id={ID} cx={XA} cy={352} R={54} groups={ALANINE} az={[-10, 110, 230]} rot={w} />
+				<TetraModel id={ID} cx={XA} cy={362} R={50} groups={ALANINE} az={[-10, 110, 230]} rot={w} />
 				<line x1={(XA + XB) / 2} y1={306} x2={(XA + XB) / 2} y2={410} stroke="rgba(90,130,160,0.7)" strokeWidth={3} strokeDasharray="7 6" />
-				<TetraModel id={ID} cx={XB} cy={352} R={54} groups={ALANINE} az={[-10, 110, 230]} rot={w} mirror />
+				<TetraModel id={ID} cx={XB} cy={362} R={50} groups={ALANINE} az={[-10, 110, 230]} rot={w} mirror />
 			</g>
 			{/* callout */}
 			<g opacity={call}>
