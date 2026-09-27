@@ -91,8 +91,8 @@ export const ProtonHopDiagram = ({title, rows = DEFAULT_ROWS, notes = [], pairLa
 		const R = compact ? 30 : 50;
 		const rH = compact ? 12 : 19;
 		const off = title ? 30 : 0;
-		const plinthY = compact ? y0 + rowH * 0.5 : 212 + off;
-		const rx = compact ? 118 : 150;
+		const plinthY = compact ? y0 + 108 : 212 + off;
+		const rx = compact ? 96 : 150;
 		const xs = [205, 555];
 		const at = row.at ?? 0;
 		const rolesAt = row.rolesAt ?? at + 40;
@@ -180,14 +180,14 @@ export const ProtonHopDiagram = ({title, rows = DEFAULT_ROWS, notes = [], pairLa
 			const x0 = donorCore.x + fromSlot.dx, y0 = donorCore.y + fromSlot.dy;
 			const x1 = accC.x + toSlot.dx, y1 = accC.y + toSlot.dy;
 			const x = x0 + (x1 - x0) * t;
-			const y = y0 + (y1 - y0) * t - Math.sin(t * Math.PI) * (compact ? 60 : 62);
+			const y = y0 + (y1 - y0) * t - Math.sin(t * Math.PI) * (compact ? 38 : 62);
 			return <Proton key={k} id={ID} x={x} y={y} r={rH} glow={1} />;
 		});
 		// A faint dashed track shows the path once the first proton has flown.
 		const track = (() => {
 			const accC = coreCenters(acc)[0];
 			const x0 = donorCore.x, x1 = accC.x;
-			const yTop = Math.min(donorCore.y, accC.y) - R - (compact ? 60 : 62);
+			const yTop = Math.min(donorCore.y, accC.y) - R - (compact ? 38 : 62);
 			return `M ${x0} ${donorCore.y - R} Q ${(x0 + x1) / 2} ${yTop - 20} ${x1} ${accC.y - R}`;
 		})();
 
@@ -197,12 +197,12 @@ export const ProtonHopDiagram = ({title, rows = DEFAULT_ROWS, notes = [], pairLa
 			if (!afterHop) return isDonor ? roles.donor ?? 'ACID · proton donor' : roles.acceptor ?? 'BASE · proton acceptor';
 			return isDonor ? roles.donorAfter ?? 'conjugate base' : roles.acceptorAfter ?? 'conjugate acid';
 		};
-		const labelY = compact ? plinthY + rx * 0.54 + 24 : plinthY + 114;
+		const labelY = compact ? plinthY + 74 : plinthY + 114;
 
 		// Equation chips with conjugate-pair brackets.
 		const eq = row.equation ?? [];
 		const eqSize = compact ? 22 : 28;
-		const eqY = compact ? y0 + 22 : labelY + 76;
+		const eqY = compact ? y0 + 14 : labelY + 76;
 		const widths = eq.map((term) => (typeof term === 'string' ? textWidth(term, eqSize) + 16 : textWidth(term.t, eqSize) + 26));
 		const totalW = widths.reduce((s, w) => s + w, 0);
 		let cursor = W / 2 - totalW / 2;
@@ -272,7 +272,7 @@ export const ProtonHopDiagram = ({title, rows = DEFAULT_ROWS, notes = [], pairLa
 					const isDonor = si === row.donor;
 					const c = isDonor ? theme.accent : BLUE;
 					const aft = fadeAt(frame, hopAt + HOP_LEN * nAcc + 4, 10);
-					const y = labelY + (compact ? 28 : 33);
+					const y = labelY + (compact ? 24 : 33);
 					return (
 						<g key={si}>
 							<Pill x={xs[si]} y={y} text={roleTxt(si, false)} color={c} size={compact ? 14 : 16} opacity={fadeAt(frame, rolesAt, 10) * (1 - aft)} />

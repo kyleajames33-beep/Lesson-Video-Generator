@@ -16,6 +16,8 @@ import {ConductometricDiagram} from '../kinds/chem-y12-m6/ConductometricDiagram'
 import {IndicatorDiagram} from '../kinds/chem-y12-m6/IndicatorDiagram';
 import {HeatLedgerDiagram} from '../kinds/chem-y12-m6/HeatLedgerDiagram';
 import {NetIonicDiagram} from '../kinds/chem-y12-m6/NetIonicDiagram';
+import {FizzBeakersDiagram} from '../kinds/chem-y12-m6/FizzBeakersDiagram';
+import {SorterDiagram} from '../kinds/chem-y12-m6/SorterDiagram';
 
 export const KINDS: DioramaKindMap = {
   chem12m6ProtonHop: ProtonHopDiagram,
@@ -29,4 +31,6 @@ export const KINDS: DioramaKindMap = {
   chem12m6Indicator: IndicatorDiagram,
   chem12m6HeatLedger: HeatLedgerDiagram,
   chem12m6NetIonic: NetIonicDiagram,
+  chem12m6FizzBeakers: FizzBeakersDiagram,
+  chem12m6Sorter: SorterDiagram,
 };
