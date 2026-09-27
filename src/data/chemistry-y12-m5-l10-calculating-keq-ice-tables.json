@@ -125,34 +125,79 @@
       "heading": "The ICE table: Initial, Change, Equilibrium",
       "body": "Three rows track every species as the reaction settles. The Change row is where marks are won or lost.",
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Row",
-          "N₂",
-          "3H₂",
-          "2NH₃"
-        ],
-        "rows": [
-          [
-            "Initial",
-            "1.00",
-            "3.00",
-            "0"
+        "type": "diorama",
+        "kind": "chem12m5IceTable",
+        "props": {
+          "species": [
+            {
+              "f": "N₂",
+              "coef": 1,
+              "side": "r"
+            },
+            {
+              "f": "H₂",
+              "coef": 3,
+              "side": "r"
+            },
+            {
+              "f": "NH₃",
+              "coef": 2,
+              "side": "p"
+            }
           ],
-          [
-            "Change",
-            "−x",
-            "−3x",
-            "+2x"
+          "rows": [
+            {
+              "label": "I",
+              "name": "Initial",
+              "labelAt": 134,
+              "cells": [
+                "1.00",
+                "3.00",
+                "0"
+              ],
+              "cellsAt": 150,
+              "step": 16
+            },
+            {
+              "label": "C",
+              "name": "Change",
+              "labelAt": 227,
+              "cells": [
+                "−x",
+                "−3x",
+                "+2x"
+              ],
+              "cellsAt": 595,
+              "step": 34
+            },
+            {
+              "label": "E",
+              "name": "Equilibrium",
+              "labelAt": 333,
+              "hint": "= I + C",
+              "hintAt": 371,
+              "cells": [
+                "1.00 − x",
+                "3.00 − 3x",
+                "2x"
+              ],
+              "cellsAt": 740,
+              "step": 14
+            }
           ],
-          [
-            "Equilibrium",
-            "1.00 − x",
-            "3.00 − 3x",
-            "2x"
-          ]
-        ],
-        "delay": 20
+          "changeRow": 1,
+          "ratioAt": 701,
+          "trap": {
+            "at": 776,
+            "strikeAt": 901,
+            "cells": [
+              "−x",
+              "−x",
+              "+x"
+            ]
+          },
+          "positiveAt": 951
+        }
       },
       "bullets": [
         {
@@ -197,6 +242,80 @@
       "voiceover": {
         "text": "Let's flip the problem around. Now you're given Keq and the initial concentrations, and you have to find the equilibrium concentrations. Take hydrogen plus iodine making hydrogen iodide, with Keq fifty-four-point-three, both reactants starting at nought-point-one. Set x as the drop in each reactant, so hydrogen iodide rises by two x. Watch that, two x, not x, because the coefficient is two. Substitute the equilibrium row into Keq, and you get four x squared over the quantity nought-point-one minus x, all squared, equals fifty-four-point-three. Now here's a lovely shortcut. Both sides are perfect squares, so instead of grinding through the quadratic formula, just square-root both sides. That gives two x over nought-point-one minus x equals the square root of fifty-four-point-three, about seven-point-four. Solve that simple linear equation and x is nought-point-zero-seven-nine. So hydrogen and iodine each end at nought-point-zero-two-one, and hydrogen iodide at two x, nought-point-one-six. Always check for that perfect-square pattern first, it can save you a lot of algebra.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L10/concept-forward.c600cd71986e.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5IceTable",
+        "props": {
+          "compact": true,
+          "species": [
+            {
+              "f": "H₂",
+              "coef": 1,
+              "side": "r"
+            },
+            {
+              "f": "I₂",
+              "coef": 1,
+              "side": "r"
+            },
+            {
+              "f": "HI",
+              "coef": 2,
+              "side": "p"
+            }
+          ],
+          "rows": [
+            {
+              "label": "I",
+              "name": "Initial",
+              "labelAt": 98,
+              "cells": [
+                "0.100",
+                "0.100",
+                "0"
+              ],
+              "cellsAt": 167,
+              "step": 10
+            },
+            {
+              "label": "C",
+              "name": "Change",
+              "labelAt": 201,
+              "cells": [
+                "−x",
+                "−x",
+                "+2x"
+              ],
+              "cellsAt": 220,
+              "step": 18
+            },
+            {
+              "label": "E",
+              "name": "Equilibrium",
+              "labelAt": 380,
+              "cells": [
+                "0.100 − x",
+                "0.100 − x",
+                "2x"
+              ],
+              "cellsAt": 392,
+              "step": 14
+            }
+          ],
+          "changeRow": 1,
+          "ratioAt": 305,
+          "ratioPill": false,
+          "square": {
+            "keq": 54.3,
+            "init": 0.1,
+            "subAt": 420,
+            "rootAt": 684,
+            "rootValAt": 780,
+            "xAt": 835,
+            "finalAt": 870
+          }
+        }
       }
     },
     {

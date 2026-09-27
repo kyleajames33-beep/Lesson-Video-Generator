@@ -32,7 +32,7 @@ export type IceTableProps = {
 	ratioPill?: boolean;
 	trap?: {at: number; strikeAt: number; cells: string[]};
 	positiveAt?: number;
-	square?: {keq: number; init: number; subAt: number; rootAt: number; rootValAt: number; xAt: number; finalAt: number};
+	square?: {keq: number; init: string; subAt: number; rootAt: number; rootValAt: number; xAt: number; finalAt: number};
 	/** Compact layout (shorter rows) to leave room for the solve panel. */
 	compact?: boolean;
 };
@@ -68,10 +68,10 @@ export const IceTableDiagram = ({
 	const sq = square
 		? (() => {
 				const s = Math.sqrt(square.keq);
-				const x = (square.init * s) / (2 + s);
-				const dp = (String(square.init).split('.')[1] ?? '').length || 3;
-				const initStr = square.init.toFixed(dp);
-				return {s, x, sStr: sig(s, 3), xStr: sig(x, 3), initStr, rStr: (square.init - x).toFixed(dp), pStr: (2 * x).toFixed(dp)};
+				const a = Number(square.init);
+				const x = (a * s) / (2 + s);
+				const dp = (square.init.split('.')[1] ?? '').length;
+				return {s, x, sStr: sig(s, 3), xStr: sig(x, 3), initStr: square.init, rStr: (a - x).toFixed(dp), pStr: (2 * x).toFixed(dp)};
 			})()
 		: undefined;
 	const allRows: IceRow[] = sq

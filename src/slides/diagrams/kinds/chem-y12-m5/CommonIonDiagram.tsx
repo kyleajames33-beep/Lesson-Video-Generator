@@ -115,7 +115,7 @@ export const CommonIonDiagram = ({
 			const d = ease(ramp(frame, ion.born, 26));
 			const sx = BX - 40 + hash01(seed + 9) * 80;
 			x = sx + (sw.x - sx) * d;
-			y = BASE - BHT - 40 + (sw.y - (BASE - BHT - 40)) * d;
+			y = BASE - BHT + 14 + (sw.y - (BASE - BHT + 14)) * d;
 		}
 		// Dynamic exchange: dock on the crystal, sit, leave again (stops once precipitation starts).
 		if (ion.dock !== undefined && (ion.ppt === undefined || frame < ion.ppt - 40)) {
@@ -176,10 +176,6 @@ export const CommonIonDiagram = ({
 							))}
 					</Beaker>
 				</DioramaPlinth>
-				<g opacity={ramp(frame, bt.ppt + 60, 16)}>
-					<line x1={BX + 50} y1={BASE - 40} x2={BX + 96} y2={BASE - 62} stroke={TOK.inkMute} strokeWidth={2} />
-					<text x={BX + 100} y={BASE - 60} fill={TOK.ink} fontSize={17} fontWeight={800}>{salt}(s) grows</text>
-				</g>
 			</g>
 
 			{/* Right panel */}

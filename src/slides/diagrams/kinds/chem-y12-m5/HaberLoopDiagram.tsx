@@ -89,7 +89,7 @@ export const HaberLoopDiagram = ({delay = 62, cards = DEFAULT_CARDS}: HaberLoopP
 	const [cT, cP, cC, cR] = [cards[0]?.at ?? 1e9, cards[1]?.at ?? 1e9, cards[2]?.at ?? 1e9, cards[3]?.at ?? 1e9];
 
 	// ── particles: each cycles main path → (loop | out + feed) ──
-	const N = 18;
+	const N = 24;
 	const CYCLE = T_MAIN + T_LOOP;
 	const t = frame + 400;
 	const parts = Array.from({length: N}, (_, k) => {

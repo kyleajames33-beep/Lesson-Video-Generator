@@ -356,7 +356,7 @@ export const KeqBuilderDiagram = ({
 								parts.map((p) => {
 									if (p.si === undefined) return p;
 									const u = eramp(frame, d0 + p.si * 10, 18);
-									return {...p, o: u, dy: (1 - u) * -26};
+									return {...p, o: u, dy: (1 - u) * -10};
 								});
 							return (
 								<g>
