@@ -13,6 +13,7 @@ import {FadeUp} from '../animations/FadeUp';
 import {LeaderLineCallout} from '../animations/AttentionPrimitives';
 import {MarginNote} from '../animations/DoodlePrimitives';
 import {DiagramRenderer} from './diagrams/DiagramRenderer';
+import {HandDrawnStage, resolveDiagramStyle} from '../animations/HandDrawn';
 import {StampInTitle} from '../animations/MotionPrimitives';
 import {BulletReveal} from '../animations/BulletReveal';
 import {SlideFrame} from './shared/SlideFrame';
@@ -158,7 +159,7 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 
 				{hasVisual ? (
 					<FadeUp delay={rd.diagram ?? 62} durationFrames={18} dy={24}>
-						<VisualStage scene={scene} />
+						<VisualStage scene={scene} lesson={lesson} />
 					</FadeUp>
 				) : null}
 			</div>
@@ -166,7 +167,7 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 	);
 };
 
-const VisualStage = ({scene}: {scene: TextScene}) => {
+const VisualStage = ({scene, lesson}: {scene: TextScene; lesson: LessonData}) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
@@ -223,7 +224,7 @@ const VisualStage = ({scene}: {scene: TextScene}) => {
 					justifyContent: 'center',
 				}}
 			>
-				{scene.image ? <ConceptAssetImage name={scene.image} /> : <ConceptDiagram scene={scene} />}
+				{scene.image ? <ConceptAssetImage name={scene.image} /> : <ConceptDiagram scene={scene} lesson={lesson} />}
 			</div>
 
 			{/* P0.2 — Leader-line callout on water molecule */}
@@ -304,14 +305,19 @@ const ConceptAssetImage = ({name}: {name: string}) => {
 	);
 };
 
-const ConceptDiagram = ({scene}: {scene: TextScene}) => {
+const ConceptDiagram = ({scene, lesson}: {scene: TextScene; lesson: LessonData}) => {
 	if (!scene.diagram) {
 		return null;
 	}
 
+	const diagram = <DiagramRenderer diagram={scene.diagram} />;
 	return (
 		<div style={diagramWrapStyle(scene.diagram.type)}>
-			<DiagramRenderer diagram={scene.diagram} />
+			{resolveDiagramStyle(lesson.visualStyle, scene.diagramStyle) === 'handDrawn' ? (
+				<HandDrawnStage id={`hd-${scene.id}`}>{diagram}</HandDrawnStage>
+			) : (
+				diagram
+			)}
 		</div>
 	);
 };

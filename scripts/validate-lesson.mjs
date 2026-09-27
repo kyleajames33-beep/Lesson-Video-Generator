@@ -151,6 +151,10 @@ const dioramaKinds = () => {
   return dioramaKindCache;
 };
 
+// Diagram rendering styles (lesson `visualStyle`, scene `diagramStyle`).
+// See docs/hand-drawn-style.md.
+const DIAGRAM_STYLES = new Set(['default', 'handDrawn']);
+
 const validateDiagram = (diagram, errors, pathLabel) => {
   if (diagram === undefined) return;
   if (!isObject(diagram)) {
@@ -227,6 +231,9 @@ const validateScene = (scene, index, errors, warnings, fps) => {
     requireString(scene, 'heading', errors, pathLabel);
     requireBodyOrBullets(scene, errors, pathLabel);
     validateDiagram(scene.diagram, errors, pathLabel);
+    if (scene.diagramStyle !== undefined && !DIAGRAM_STYLES.has(scene.diagramStyle)) {
+      errors.push(`${pathLabel}: "diagramStyle" must be one of: ${[...DIAGRAM_STYLES].join(', ')}`);
+    }
   }
 
   if (['hook', 'concept', 'definition', 'formula', 'misconception'].includes(scene.type)) {
@@ -376,6 +383,9 @@ const validateLesson = (lesson, filePath) => {
   }
 
   if (!isPositiveInteger(lesson.fps)) errors.push('"fps" must be a positive integer');
+  if (lesson.visualStyle !== undefined && !DIAGRAM_STYLES.has(lesson.visualStyle)) {
+    errors.push(`"visualStyle" must be one of: ${[...DIAGRAM_STYLES].join(', ')}`);
+  }
   if (!isPositiveInteger(lesson.width)) errors.push('"width" must be a positive integer');
   if (!isPositiveInteger(lesson.height)) errors.push('"height" must be a positive integer');
 
