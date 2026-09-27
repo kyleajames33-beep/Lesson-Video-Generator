@@ -10,6 +10,7 @@ import {KINDS as K_chem_y11_m3m4} from './lane-chem-y11-m3m4';
 import {KINDS as K_chem_y12_m5} from './lane-chem-y12-m5';
 import {KINDS as K_chem_y12_m6} from './lane-chem-y12-m6';
 import {KINDS as K_chem_y12_m7} from './lane-chem-y12-m7';
+import {KINDS as K_chem_y12_m7b} from './lane-chem-y12-m7b';
 import {KINDS as K_chem_y12_m8} from './lane-chem-y12-m8';
 import {KINDS as K_bio_y12_m5} from './lane-bio-y12-m5';
 import {KINDS as K_bio_y12_m6} from './lane-bio-y12-m6';
@@ -25,6 +26,7 @@ const LANES: DioramaKindMap[] = [
 	K_chem_y12_m5,
 	K_chem_y12_m6,
 	K_chem_y12_m7,
+	K_chem_y12_m7b,
 	K_chem_y12_m8,
 	K_bio_y12_m5,
 	K_bio_y12_m6,
