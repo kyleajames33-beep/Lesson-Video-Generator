@@ -73,7 +73,7 @@ const Single = ({
 	const theme = useAccent();
 	const b = {draw: 150, flat: 326, cross: 446, disturb: 786, relevel: 886, keq: 946, ...beats};
 	const T_D = 4.6, T_END = 9.2, N = 920;
-	const sim = simulate({A0: 1, B0: 0, kc, kf: 1.1, tEnd: T_END, n: N, events: [{t: T_D, type: 'add', dA: 0.4}]});
+	const sim = simulate({A0: 1, B0: 0, kc, kf: 0.5, tEnd: T_END, n: N, events: [{t: T_D, type: 'add', dA: 0.4}]});
 	const iD = Math.round((T_D / T_END) * N);
 	const iEq1 = flatAfter(sim, 0, 0.0004);
 	const iEq2 = flatAfter(sim, iD + 1, 0.0004);
@@ -104,9 +104,9 @@ const Single = ({
 
 	// flask: balls follow the pen
 	const A = sim.A[Math.max(0, pen)], B = sim.B[Math.max(0, pen)];
-	const nA = frame < b.draw ? 10 : Math.round(A * 10), nB = frame < b.draw ? 0 : Math.round(B * 10);
+	const nA = frame < b.draw ? 8 : Math.round(A * 8), nB = frame < b.draw ? 0 : Math.round(B * 8);
 	const PCX = 636, PCY = 300;
-	const slots = plinthSlots(PCX, PCY - 6, 104, 24).map((s, i) => ({...s, k: hash01(i * 7 + 3)})).sort((p, q) => p.k - q.k);
+	const slots = plinthSlots(PCX, PCY - 6, 108, 20).map((s, i) => ({...s, k: hash01(i * 7 + 3)})).sort((p, q) => p.k - q.k);
 	const balls = [
 		...Array.from({length: nA}, (_, i) => ({el: 'A', i})),
 		...Array.from({length: nB}, (_, i) => ({el: 'B', i: i + 12})),
@@ -132,8 +132,10 @@ const Single = ({
 			<g opacity={drawIn}>
 				<path d={path(sim.A)} fill="none" stroke={theme.accent} strokeWidth={4.5} strokeLinecap="round" strokeLinejoin="round" />
 				<path d={path(sim.B)} fill="none" stroke={PRODUCT} strokeWidth={4.5} strokeLinecap="round" strokeLinejoin="round" />
-				<text x={gx(40)} y={gy(sim.A[40]) - 14} fill={theme.accent} fontSize={17} fontWeight={800}>{labels[0]}</text>
-				<text x={gx(40)} y={gy(sim.B[40]) + 30} fill={PRODUCT} fontSize={17} fontWeight={800} opacity={ramp(frame, b.draw + 60, 12)}>{labels[1]}</text>
+				<line x1={GX0 + 20} y1={24} x2={GX0 + 48} y2={24} stroke={theme.accent} strokeWidth={4.5} strokeLinecap="round" />
+				<text x={GX0 + 56} y={30} fill={theme.accent} fontSize={17} fontWeight={800}>{labels[0]}</text>
+				<line x1={GX0 + 160} y1={24} x2={GX0 + 188} y2={24} stroke={PRODUCT} strokeWidth={4.5} strokeLinecap="round" />
+				<text x={GX0 + 196} y={30} fill={PRODUCT} fontSize={17} fontWeight={800}>{labels[1]}</text>
 			</g>
 
 			{/* crossing: equal concentrations only */}
@@ -159,16 +161,10 @@ const Single = ({
 			<g opacity={ramp(frame, 4, 14)}>
 				<DioramaPlinth id={ID} cx={PCX} cy={PCY} rx={104}>
 					{balls.map((q, j) => (
-						<Ball key={`${q.el}${q.i}`} id={ID} el={q.el} x={q.s.x} y={q.s.y + idleBob(frame, j, 1.6)} r={q.el === 'A' ? 13 : 10} shadow />
+						<Ball key={`${q.el}${q.i}`} id={ID} el={q.el} x={q.s.x} y={q.s.y + idleBob(frame, j, 1.6)} r={q.el === 'A' ? 11 : 8.5} shadow />
 					))}
 				</DioramaPlinth>
 				<text x={PCX} y={PCY + 70} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800}>the flask</text>
-				<g transform={`translate(${PCX - 92} ${PCY - 70})`}>
-					<Ball id={ID} el="A" x={8} y={-4} r={8} />
-					<text x={22} y={2} fill={theme.accent} fontSize={16} fontWeight={800}>{labels[0]}</text>
-					<Ball id={ID} el="B" x={108} y={-4} r={7} />
-					<text x={120} y={2} fill={PRODUCT} fontSize={16} fontWeight={800}>{labels[1]}</text>
-				</g>
 			</g>
 
 			{/* caption + Keq chip */}
@@ -200,7 +196,7 @@ const Panels = ({
 		{title: 'Gradual drift, no jump', meaning: 'temperature changed: Keq changes', events: [{t: T_D, type: 'temp', kc: kc * 2.4, over: 2.2}], drift: true},
 		{title: 'Nothing changes', meaning: 'catalyst added at equilibrium', events: [], amber: true},
 	];
-	const sims: SimResult[] = specs.map((s) => simulate({A0: eq0.A, B0: eq0.B, kc, kf: 1.3, tEnd: T_END, n: N, events: s.events}));
+	const sims: SimResult[] = specs.map((s) => simulate({A0: eq0.A, B0: eq0.B, kc, kf: 0.8, tEnd: T_END, n: N, events: s.events}));
 	let yMax = 0;
 	sims.forEach((r) => r.A.forEach((v, i) => (yMax = Math.max(yMax, v, r.B[i]))));
 	yMax *= 1.1;
@@ -234,7 +230,8 @@ const Panels = ({
 					return pts.join(' ');
 				};
 				const col = s.amber ? TOK.amber : TOK.rule;
-				const iEq = s.events.length ? flatAfter(r, iD + 1, 0.0006) : iD;
+				const from = s.drift ? Math.round(((T_D + 2.2) / T_END) * N) : iD + 1;
+				const iEq = s.events.length ? flatAfter(r, from, 0.0006) : iD;
 				return (
 					<g key={k} opacity={inn} transform={`translate(0 ${(1 - inn) * 8})`}>
 						<rect x={ox} y={oy} width={PW} height={PH} rx={14} fill="#ffffff" stroke={col} strokeWidth={s.amber ? 2.5 + pulse : 2} />
