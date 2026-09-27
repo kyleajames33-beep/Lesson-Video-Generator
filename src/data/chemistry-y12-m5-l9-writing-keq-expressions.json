@@ -181,29 +181,16 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L9/concept-magnitude.1d04018e7401.mp3"
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Keq value",
-          "Position",
-          "Mixture"
-        ],
-        "rows": [
-          [
-            "> 10³",
-            "Products favoured",
-            "Almost all products"
-          ],
-          [
-            "~1 (10⁻¹ to 10³)",
-            "Intermediate",
-            "Both present"
-          ],
-          [
-            "< 10⁻³",
-            "Reactants favoured",
-            "Almost all reactants"
-          ]
-        ]
+        "type": "diorama",
+        "kind": "chem12m5KeqScale",
+        "props": {
+          "bandsAt": {
+            "products": 121,
+            "both": 319,
+            "reactants": 412
+          },
+          "cautionAt": 884
+        }
       }
     },
     {

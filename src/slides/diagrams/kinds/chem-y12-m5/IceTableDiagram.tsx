@@ -238,6 +238,7 @@ export const IceTableDiagram = ({
 				);
 				const xParts = P(`x = ${sq.xStr}`);
 				const xW = partsW(xParts, 32);
+				const xCX = LX + w2 + 4 + r2aW + partsW(r2b, SS) + 40 + xW / 2;
 				return (
 					<g>
 						{tag(SY1, 'E row', in1)}
@@ -254,9 +255,10 @@ export const IceTableDiagram = ({
 							<Rich x={LX + w2 + 4 + r2aW} y={SY2 + SS * 0.34} size={SS} parts={r2b} anchor="start" opacity={in2b} />
 						</g>
 						<g opacity={in3}>
-							<rect x={560 - xW / 2 - 16} y={SY2 - 30} width={xW + 32} height={50} rx={12} fill="#ffffff" stroke={theme.accent} strokeWidth={2.5} />
-							<Rich x={560} y={SY2 + 32 * 0.34 - 4} size={32} parts={xParts} />
-							<text x={560} y={SY2 + 48} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={800}>solve the linear equation</text>
+							<text x={xCX - xW / 2 - 30} y={SY2 + 10} textAnchor="middle" fill={TOK.inkDim} fontSize={26} fontWeight={800}>→</text>
+							<rect x={xCX - xW / 2 - 14} y={SY2 - 30} width={xW + 28} height={50} rx={12} fill="#ffffff" stroke={theme.accent} strokeWidth={2.5} />
+							<Rich x={xCX} y={SY2 + 32 * 0.34 - 4} size={32} parts={xParts} />
+							<text x={xCX} y={SY2 + 48} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={800}>solve the linear equation</text>
 						</g>
 					</g>
 				);

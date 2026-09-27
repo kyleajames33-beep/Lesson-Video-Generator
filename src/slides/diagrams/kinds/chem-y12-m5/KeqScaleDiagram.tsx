@@ -67,7 +67,7 @@ export const KeqScaleDiagram = ({
 		{x0: x3, x1: AX1, fill: VIOLET, at: bandsAt.products, lines: ['products', 'favoured'], lx: (x3 + AX1) / 2},
 	];
 	const ticks: {v: number; t: string}[] = [];
-	for (let v = Math.ceil(min / 10) * 10; v <= max; v += 10) if (v !== 0) ticks.push({v, t: `10${sup(v)}`});
+	for (let v = Math.ceil(min / 10) * 10; v <= max - 3; v += 10) if (v !== 0) ticks.push({v, t: `10${sup(v)}`});
 	ticks.push({v: -3, t: '10⁻³'}, {v: 0, t: '1'}, {v: 3, t: '10³'});
 	if (!ticks.some((t) => t.v === max)) ticks.push({v: max, t: `10${sup(max)}`});
 
@@ -113,7 +113,7 @@ export const KeqScaleDiagram = ({
 				const cin = ramp(frame, r.at + 8, 16);
 				const cx = cardX[i];
 				const molecules = r.mix.flatMap((m) => Array.from({length: m.n}, () => m.atoms));
-				const slots = plinthSlots(cx, CARD_Y + 170, 96, molecules.length);
+				const slots = plinthSlots(cx, CARD_Y + 170, 102, molecules.length);
 				const order = molecules.map((atoms, j) => ({atoms, j, s: slots[j]})).sort((a, b) => a.s.y - b.s.y);
 				const newest = reactions.filter((q) => frame >= q.at).length - 1 === i;
 				const pulse = newest ? idlePulse(frame, 40) : 0;
@@ -132,9 +132,9 @@ export const KeqScaleDiagram = ({
 							<rect x={cx - CARD_W / 2} y={CARD_Y} width={CARD_W} height={CARD_H} rx={16} fill="#ffffff" stroke="rgba(0,0,0,0.1)" strokeWidth={2} />
 							<text x={cx} y={CARD_Y + 32} textAnchor="middle" fill={TOK.ink} fontSize={Math.min(22, (CARD_W - 20) / (kbW(r.eq, 1) || 1))} fontWeight={800}>{r.eq}</text>
 							<Rich x={cx} y={CARD_Y + 68} size={26} parts={P(`K_{eq} ≈ ${r.value}`)} />
-							<DioramaPlinth id={`${ID}p${i}`} cx={cx} cy={CARD_Y + 170} rx={96}>
+							<DioramaPlinth id={`${ID}p${i}`} cx={cx} cy={CARD_Y + 170} rx={102}>
 								{order.map(({atoms, j, s}) => (
-									<Molecule key={j} id={ID} atoms={atoms} x={s.x} y={s.y - 10 + idleBob(frame, j + i * 20, 1.3)} r={atoms.length === 3 ? 11 : 12} />
+									<Molecule key={j} id={ID} atoms={atoms} x={s.x} y={s.y - 10 + idleBob(frame, j + i * 20, 1.3)} r={atoms.length === 3 ? 12.5 : 14} />
 								))}
 							</DioramaPlinth>
 							<text x={cx} y={CARD_Y + 236} textAnchor="middle" fill={TOK.inkDim} fontSize={19} fontWeight={800}>{r.label}</text>
