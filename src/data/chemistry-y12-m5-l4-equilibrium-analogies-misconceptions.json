@@ -175,31 +175,45 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L4/concept-graphs.0b297967135b.mp3"
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "r",
-            "label": "Reactant curve falls"
+        "type": "diorama",
+        "kind": "chem12m5Signatures",
+        "props": {
+          "mode": "single",
+          "labels": [
+            "reactant",
+            "product"
+          ],
+          "beats": {
+            "draw": 160,
+            "flat": 326,
+            "cross": 446,
+            "disturb": 786,
+            "relevel": 886,
+            "keq": 946
           },
-          {
-            "id": "p",
-            "label": "Product curve rises"
-          },
-          {
-            "id": "eq",
-            "label": "All curves flatten = equilibrium"
-          }
-        ],
-        "edges": [
-          {
-            "from": "r",
-            "to": "eq"
-          },
-          {
-            "from": "p",
-            "to": "eq"
-          }
-        ]
+          "captions": [
+            {
+              "at": 160,
+              "text": "Reactant falls, product rises, then both level off"
+            },
+            {
+              "at": 326,
+              "text": "Equilibrium = where ALL curves go flat"
+            },
+            {
+              "at": 446,
+              "text": "Not where they cross"
+            },
+            {
+              "at": 786,
+              "text": "Add reactant: its curve spikes straight up"
+            },
+            {
+              "at": 886,
+              "text": "Then it re-levels at new constant values"
+            }
+          ]
+        }
       }
     },
     {

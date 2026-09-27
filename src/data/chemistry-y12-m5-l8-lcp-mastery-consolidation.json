@@ -157,29 +157,18 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L8/concept-graphs.6ccfffb32509.mp3"
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Graph signature",
-          "Disturbance"
-        ],
-        "rows": [
-          [
-            "One line jumps",
-            "That species added/removed"
+        "type": "diorama",
+        "kind": "chem12m5Signatures",
+        "props": {
+          "mode": "panels",
+          "panelBeats": [
+            215,
+            335,
+            462,
+            667
           ],
-          [
-            "All gas lines jump together",
-            "Volume decreased (pressure up)"
-          ],
-          [
-            "Gradual drift, no jump",
-            "Temperature change (Keq changes)"
-          ],
-          [
-            "No change at all",
-            "Catalyst added at equilibrium"
-          ]
-        ]
+          "bothAt": 950
+        }
       }
     },
     {

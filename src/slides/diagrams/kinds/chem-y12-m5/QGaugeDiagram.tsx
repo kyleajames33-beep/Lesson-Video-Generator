@@ -305,7 +305,7 @@ export const QGaugeDiagram = ({
 	};
 	const drawIons = () => {
 		const out: ReactElement[] = [];
-		const items: {key: string; el: string; x: number; y: number; label: string; ink?: string; op: number}[] = [];
+		const items: {key: string; el: string; x: number; y: number; label?: string; ink?: string; op: number; solid: boolean}[] = [];
 		parts.forEach((p, gi) => {
 			if (p.epoch !== curEpoch) return;
 			const pr = presence(p);
@@ -330,11 +330,12 @@ export const QGaugeDiagram = ({
 					x = gx + (ps.x + lx - gx) * v;
 					y = gy + (ps.y - gy) * v;
 				}
-				items.push({key: `${gi}-${side}`, el: ion.el, x, y, label: side === 0 ? '+' : '−', ink: ion.ink, op: pr});
+				const solid = lk !== undefined && frame >= lk + 10;
+				items.push({key: `${gi}-${side}`, el: ion.el, x, y, label: solid ? undefined : side === 0 ? '+' : '−', ink: ion.ink, op: pr, solid});
 			});
 		});
 		items.sort((a, b) => a.y - b.y).forEach((it) => {
-			out.push(<Ball key={it.key} id={ID} el={it.el} x={it.x} y={it.y} r={14} label={it.label} labelSize={18} labelColor={it.ink ?? '#ffffff'} opacity={it.op} />);
+			out.push(<Ball key={it.key} id={ID} el={it.el} x={it.x} y={it.y} r={it.solid ? 12 : 14} label={it.label} labelSize={18} labelColor={it.ink ?? '#ffffff'} opacity={it.op} />);
 		});
 		return out;
 	};
