@@ -147,12 +147,12 @@ export const KaKbDiagram = ({
 	const endL = {x: PX - HALF * Math.cos(ang), y: PY + HALF * Math.sin(ang)};
 	const endR = {x: PX + HALF * Math.cos(ang), y: PY - HALF * Math.sin(ang)};
 	const weight = (x: number, y: number, s: number, label: string, color: string) => {
-		const w = 76 * s, h = 58 * s;
+		const w = 86 * s, h = 64 * s;
 		return (
 			<g transform={`translate(${x} ${y}) rotate(${(-ang * 180) / Math.PI})`}>
 				<rect x={-w / 2} y={-h - 6} width={w} height={h} rx={10 * s} fill="#ffffff" stroke={color} strokeWidth={3} />
 				<rect x={-w / 2} y={-h - 6} width={w} height={8 * s} rx={4 * s} fill={color} opacity={0.85} />
-				<Rich x={0} y={-h / 2 + 4 + 10 * s} size={28 * s} parts={P(label, color)} />
+				<Rich x={0} y={-h / 2 + 5 + 11 * s} size={32 * s} parts={P(label, color)} />
 			</g>
 		);
 	};
@@ -197,7 +197,8 @@ export const KaKbDiagram = ({
 				<DioramaPlinth id="c12m5kk" cx={PX} cy={466} rx={118}>
 					<path d={`M ${PX - 34} 468 L ${PX + 34} 468 L ${PX} ${PY + 4} Z`} fill="#bdb8ae" stroke="#8f8b83" strokeWidth={2} />
 				</DioramaPlinth>
-				<Rich x={PX} y={512} size={19} parts={P('K_{a} × K_{b} = K_{w}', TOK.amberInk)} opacity={0.8 + 0.2 * (frame > pinnedAt ? pulse : 0)} />
+				<rect x={PX - 78} y={490} width={156} height={32} rx={16} fill="#ffffff" stroke={TOK.amber} strokeWidth={2 + (frame > pinnedAt ? pulse * 1.5 : 0)} />
+				<Rich x={PX} y={513} size={20} parts={P('K_{a} × K_{b} = K_{w}', TOK.amberInk)} />
 				{/* beam */}
 				<line x1={endL.x} y1={endL.y} x2={endR.x} y2={endR.y} stroke="#8f8b83" strokeWidth={10} strokeLinecap="round" />
 				<line x1={endL.x} y1={endL.y - 2} x2={endR.x} y2={endR.y - 2} stroke="#d3cfc7" strokeWidth={4} strokeLinecap="round" />

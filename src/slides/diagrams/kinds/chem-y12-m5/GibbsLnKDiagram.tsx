@@ -97,8 +97,7 @@ export const GibbsLnKDiagram = ({
 				<Rich x={W / 2} y={48} size={36} parts={eq} />
 			</g>
 			<g opacity={ramp(frame, constantsAt, 14)}>
-				<Rich x={W / 2 - partsW(kelv, 19) / 2} y={90} size={19} parts={consts} fill={TOK.inkDim} />
-				<Rich x={W / 2 + partsW(consts, 19) / 2 - partsW(kelv, 19) / 2} y={90} size={19} parts={kelv} anchor="start" fill={TOK.inkDim} opacity={ramp(frame, kelvinAt, 14)} />
+				<Rich x={W / 2} y={90} size={19} parts={[...consts, ...kelv.map((p) => ({...p, o: ramp(frame, kelvinAt, 14)}))]} fill={TOK.inkDim} />
 			</g>
 
 			{/* Graph */}

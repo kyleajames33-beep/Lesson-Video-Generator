@@ -152,7 +152,15 @@ export const ColourimetryDiagram = ({delay = 62, beats = {}}: ColourimetryProps)
 				return <circle key={i} cx={x} cy={y} r={7} fill={mixCol(c)} stroke="#ffffff" strokeWidth={2.5} />;
 			})}
 			<line x1={gx(0)} y1={gy(0)} x2={gx(0) + (gx(0.95) - gx(0)) * lineDraw} y2={gy(0) + (gy(K * 0.95) - gy(0)) * lineDraw} stroke={theme.accent} strokeWidth={3.5} strokeLinecap="round" opacity={lineDraw > 0 ? 1 : 0} />
-			<text x={gx(0.95) - 4} y={gy(K * 0.95) + 26} textAnchor="end" fill={theme.accent} fontSize={16} fontWeight={800} opacity={ramp(frame, b.line + 30, 12)}>calibration line</text>
+			{(() => {
+				const ang = (Math.atan2(gy(K * 0.9) - gy(0), gx(0.9) - gx(0)) * 180) / Math.PI;
+				const cx = gx(0.74), cy = gy(K * 0.74);
+				return (
+					<text x={cx} y={cy} textAnchor="middle" fill={theme.accent} fontSize={16} fontWeight={800} opacity={ramp(frame, b.line + 30, 12)} transform={`rotate(${ang} ${cx} ${cy}) translate(0 24)`}>
+						calibration line
+					</text>
+				);
+			})()}
 
 			{/* read the mixture: across then down */}
 			<g opacity={across > 0 ? 1 : 0}>

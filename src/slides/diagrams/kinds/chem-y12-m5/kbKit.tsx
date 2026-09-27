@@ -63,28 +63,25 @@ export const P = (s: string, c?: string): Part[] => {
 	return out;
 };
 
-/** A run of rich text. Anchor 'middle' centres on x; returns nothing fancy, just SVG. */
+/** A run of rich text: one <text> with tspans, so the browser does the layout. */
 export const Rich = ({
 	x, y, size, parts, anchor = 'middle', fill = TOK.ink, opacity = 1, weight = 800,
 }: {x: number; y: number; size: number; parts: Part[]; anchor?: 'start' | 'middle' | 'end'; fill?: string; opacity?: number; weight?: number}) => {
-	const W = partsW(parts, size);
-	const x0 = anchor === 'middle' ? x - W / 2 : anchor === 'end' ? x - W : x;
-	let cx = x0;
+	let prev = 0;
 	return (
-		<g opacity={opacity}>
+		<text x={x} y={y} textAnchor={anchor} fontSize={size} fontWeight={weight} fill={fill} opacity={opacity} style={{whiteSpace: 'pre'}}>
 			{parts.map((p, i) => {
-				const w = partW(p, size);
-				const px = cx;
-				cx += w;
 				const fs = p.sub ? size * SUB_K : p.pow ? size * POW_K : size;
-				const dy = p.sub ? size * 0.24 : p.pow ? -size * 0.42 : 0;
+				const shift = (p.sub ? size * 0.24 : p.pow ? -size * 0.42 : 0) + (p.dy ?? 0);
+				const dy = shift - prev;
+				prev = shift;
 				return (
-					<text key={i} x={px} y={y + dy + (p.dy ?? 0)} fill={p.c ?? fill} fontSize={fs} fontWeight={p.wt ?? weight} opacity={p.o ?? 1} style={{whiteSpace: 'pre'}}>
+					<tspan key={i} dy={dy || undefined} dx={p.pow ? size * 0.04 : undefined} fontSize={fs} fill={p.c ?? fill} fontWeight={p.wt ?? weight} fillOpacity={p.o ?? 1}>
 						{p.t}
-					</text>
+					</tspan>
 				);
 			})}
-		</g>
+		</text>
 	);
 };
 
