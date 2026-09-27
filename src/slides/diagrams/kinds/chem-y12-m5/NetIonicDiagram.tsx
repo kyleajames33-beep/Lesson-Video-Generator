@@ -73,7 +73,7 @@ export const NetIonicDiagram = ({
 
 	const Y1 = 70;
 	const YI = ionic.length > 1 ? [150, 186] : [160];
-	const Y3 = 270;
+	const Y3 = 292;
 	const L1 = layout(molecular, FS);
 	const LI = ionic.map((line) => layout(line, FS));
 	const flatIonic = ionic.flat();
