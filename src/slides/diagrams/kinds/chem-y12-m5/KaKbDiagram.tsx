@@ -128,7 +128,7 @@ export const KaKbDiagram = ({
 	const R2S = 32;
 	const r2W = partsW(r2, R2S), r2vW = partsW(r2v, R2S);
 	const r2x = W / 2 - (r2W + r2vW) / 2;
-	const R2Y = 196;
+	const R2Y = 210;
 	const kwIn = ramp(frame, kwAt, 14);
 	const kwvIn = ramp(frame, kwValueAt, 14);
 
@@ -142,8 +142,8 @@ export const KaKbDiagram = ({
 	const tilt = spring({frame: frame - tiltAt, fps, config: {damping: 8, stiffness: 60, mass: 1}});
 	const rock = frame > tiltAt + 60 ? Math.sin((frame - tiltAt) / 38) * 1.4 : 0;
 	const ang = (11 * tilt + rock * tilt) * (Math.PI / 180); // left end down
-	const kaS = 1 + 0.35 * tilt + rock * 0.012;
-	const kbS = 1 - 0.35 * tilt - rock * 0.012;
+	const kaS = 1 + 0.3 * tilt + rock * 0.012;
+	const kbS = 1 - 0.25 * tilt - rock * 0.012;
 	const endL = {x: PX - HALF * Math.cos(ang), y: PY + HALF * Math.sin(ang)};
 	const endR = {x: PX + HALF * Math.cos(ang), y: PY - HALF * Math.sin(ang)};
 	const weight = (x: number, y: number, s: number, label: string, color: string) => {
@@ -188,8 +188,8 @@ export const KaKbDiagram = ({
 
 			{/* Row 3 */}
 			<g opacity={ramp(frame, kbFromKwAt, 14)}>
-				<rect x={W / 2 - r3W / 2} y={234} width={r3W} height={46} rx={23} fill={theme.soft} stroke={A} strokeWidth={2} />
-				<Rich x={W / 2} y={266} size={28} parts={r3} />
+				<rect x={W / 2 - r3W / 2} y={246} width={r3W} height={46} rx={23} fill={theme.soft} stroke={A} strokeWidth={2} />
+				<Rich x={W / 2} y={278} size={28} parts={r3} />
 			</g>
 
 			{/* Seesaw */}
@@ -207,8 +207,8 @@ export const KaKbDiagram = ({
 				<g opacity={lab}>
 					<text x={endL.x + 22} y={endL.y + 36} textAnchor="middle" fill={A} fontSize={19} fontWeight={800}>stronger acid</text>
 					<text x={endL.x + 22} y={endL.y + 58} textAnchor="middle" fill={A} fontSize={19} fontWeight={800}>(bigger Ka)</text>
-					<text x={endR.x - 30} y={endR.y + 36} textAnchor="middle" fill={VIOLET} fontSize={19} fontWeight={800}>weaker conjugate</text>
-					<text x={endR.x - 30} y={endR.y + 58} textAnchor="middle" fill={VIOLET} fontSize={19} fontWeight={800}>base (smaller Kb)</text>
+					<text x={endR.x + 6} y={endR.y + 46} textAnchor="middle" fill={VIOLET} fontSize={19} fontWeight={800}>weaker conjugate</text>
+					<text x={endR.x + 6} y={endR.y + 68} textAnchor="middle" fill={VIOLET} fontSize={19} fontWeight={800}>base (smaller Kb)</text>
 				</g>
 			</g>
 		</svg>

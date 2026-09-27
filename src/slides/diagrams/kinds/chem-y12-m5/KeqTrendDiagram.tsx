@@ -14,7 +14,7 @@ import {interpolate, useCurrentFrame} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
 import {idlePulse} from '../../diorama';
-import {clamp, ramp} from './shared';
+import {clamp, ramp, textW} from './shared';
 import {Arrow, Axes, PRODUCT, Tag, polyPath} from './lcKit';
 
 export type KeqTrendProps = {
@@ -62,16 +62,18 @@ export const KeqTrendDiagram = ({delay = 62, beats = {}}: KeqTrendProps) => {
 		const ext = interpolate(frame, [b.extend, b.extend + 40], [0, 1], clamp);
 		return (
 			<g opacity={ramp(frame, rising ? 0 : 20, 14)}>
-				<rect x={ox} y={8} width={360} height={330} rx={16} fill="#ffffff" stroke={TOK.rule} strokeWidth={2} />
+				<rect x={ox} y={8} width={360} height={346} rx={16} fill="#ffffff" stroke={TOK.rule} strokeWidth={2} />
 				<text x={ox + 18} y={40} fill={color} fontSize={21} fontWeight={800}>{rising ? 'Keq rises as T rises' : 'Keq falls as T rises'}</text>
 				<text x={ox + 18} y={62} fill={TOK.inkDim} fontSize={16} fontWeight={700} opacity={ramp(frame, lineAt + 40, 14)}>
 					{rising ? 'so heat is a reactant' : 'so heat is a product'}
 				</text>
-				<Axes x0={X0} y0={Y0 + 10} x1={X1} y1={Y1} xLabel="temperature" yLabel="Keq" size={16} />
+				<Axes x0={X0} y0={Y0 + 10} x1={X1} y1={Y1} yLabel="Keq" size={16} />
+				<text x={X1} y={Y1 + 22} textAnchor="end" fill={TOK.inkDim} fontSize={16} fontWeight={700} opacity={ramp(frame, 0, 12) * (1 - ramp(frame, b.extend, 12))}>temperature</text>
+				<text x={X1} y={Y1 - 10} textAnchor="end" fill={TOK.inkDim} fontSize={16} fontWeight={700} opacity={ramp(frame, b.extend, 12)}>T</text>
 				{/* data range bracket */}
 				<g opacity={ramp(frame, b.extend, 14)}>
-					<path d={`M ${gx(DATA_T[0])} ${Y1 + 30} l 0 -6 L ${gx(DATA_T[3])} ${Y1 + 24} l 0 6`} fill="none" stroke={TOK.inkMute} strokeWidth={2} />
-					<text x={(gx(DATA_T[0]) + gx(DATA_T[3])) / 2} y={Y1 + 48} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={800}>data range</text>
+					<path d={`M ${gx(DATA_T[0])} ${Y1 + 8} l 0 6 L ${gx(DATA_T[3])} ${Y1 + 14} l 0 -6`} fill="none" stroke={TOK.inkMute} strokeWidth={2} />
+					<text x={(gx(DATA_T[0]) + gx(DATA_T[3])) / 2} y={Y1 + 32} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={800}>data range</text>
 				</g>
 				<path d={polyPath(lineInRange, draw)} fill="none" stroke={color} strokeWidth={4} strokeLinecap="round" />
 				{ext > 0 && <path d={polyPath(lineExt, ext)} fill="none" stroke={color} strokeWidth={3.5} strokeDasharray="8 7" strokeLinecap="round" />}
@@ -80,15 +82,18 @@ export const KeqTrendDiagram = ({delay = 62, beats = {}}: KeqTrendProps) => {
 				))}
 				<g opacity={ramp(frame, b.extend + 36, 12)}>
 					<circle cx={gx(T_PRED)} cy={gy(fn(T_PRED))} r={9 + pulse * 1.5} fill="#ffffff" stroke={color} strokeWidth={3} />
-					<text x={gx(T_PRED) - 4} y={gy(fn(T_PRED)) + (rising ? 32 : -18)} textAnchor="end" fill={color} fontSize={16} fontWeight={800}>predicted</text>
+					<text x={rising ? gx(T_PRED) - 16 : gx(T_PRED) - 6} y={gy(fn(T_PRED)) + (rising ? 6 : 32)} textAnchor="end" fill={color} fontSize={16} fontWeight={800}>predicted</text>
 				</g>
-				<Tag x={ox + 180} y={308} text={rising ? '→ forward endothermic' : '→ forward exothermic'} color={color} ink={color} size={19} anchor="middle" opacity={ramp(frame, verdictAt, 14)} />
+				<Tag x={ox + 180} y={326} text={rising ? '→ forward endothermic' : '→ forward exothermic'} color={color} ink={color} size={19} anchor="middle" opacity={ramp(frame, verdictAt, 14)} />
 			</g>
 		);
 	};
 
 	const steps = ['1  Keq direction', '2  sign of ΔH', '3  predict outside range'];
-	const stepX = [22, 238, 454];
+	const stepW = steps.map((t) => textW(t, 17) + 24);
+	const GAP = 44;
+	const total = stepW.reduce((a, c) => a + c, 0) + GAP * 2;
+	const stepX = stepW.map((_, i) => (W - total) / 2 + stepW.slice(0, i).reduce((a, c) => a + c, 0) + GAP * i);
 
 	return (
 		<svg viewBox={`0 0 ${W} 530`} role="img" aria-label="Two Keq-versus-temperature plots: Keq rising with temperature means the forward reaction is endothermic; Keq falling means exothermic; the trend is extended beyond the data to predict Keq; a large Keq means products are favoured, not that the reaction is fast" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
@@ -98,15 +103,15 @@ export const KeqTrendDiagram = ({delay = 62, beats = {}}: KeqTrendProps) => {
 			{/* the three marks */}
 			{steps.map((s, i) => (
 				<g key={i} opacity={ramp(frame, b.steps + i * 18, 12)}>
-					<Tag x={stepX[i]} y={372} text={s} color={TOK.inkMute} ink={TOK.ink} size={17} />
-					{i < 2 && <Arrow x1={stepX[i + 1] - 26} y1={372} x2={stepX[i + 1] - 6} y2={372} color={TOK.inkMute} w={2.5} head={8} />}
+					<Tag x={stepX[i]} y={386} text={s} color={TOK.inkMute} ink={TOK.ink} size={17} />
+					{i < 2 && <Arrow x1={stepX[i] + stepW[i] + 8} y1={386} x2={stepX[i + 1] - 8} y2={386} color={TOK.inkMute} w={2.5} head={8} />}
 				</g>
 			))}
 
 			{/* caution */}
 			<g opacity={ramp(frame, b.caution, 16)}>
-				<Tag x={W / 2} y={440} text="Big Keq = products favoured, NOT a fast reaction" color={TOK.amber} ink={TOK.amberInk} size={20} anchor="middle" strokeWidth={2 + pulse * 1.2} />
-				<text x={W / 2} y={486} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={700}>position and rate are different questions</text>
+				<Tag x={W / 2} y={448} text="Big Keq = products favoured, NOT a fast reaction" color={TOK.amber} ink={TOK.amberInk} size={20} anchor="middle" strokeWidth={2 + pulse * 1.2} />
+				<text x={W / 2} y={494} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={700}>position and rate are different questions</text>
 			</g>
 		</svg>
 	);
