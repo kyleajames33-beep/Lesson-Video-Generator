@@ -111,6 +111,100 @@
       ],
       "secondary": "A double or triple bond outranks a branch when you choose the numbering direction. Give the multiple bond the lowest locant.",
       "callout": "Longest chain first; a branch can never sit in the parent name.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "maxUnit": 84,
+          "panels": [
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 c4:C@3,0 c5:C@4,0 m:C@3,-1",
+                "bonds": "c1=c2 c2-c3 c3-c4 c4-c5 c4-m"
+              },
+              "at": 0,
+              "build": 4,
+              "highlights": [
+                {
+                  "atoms": [
+                    "c1",
+                    "c2",
+                    "c3",
+                    "c4",
+                    "c5"
+                  ],
+                  "at": 20,
+                  "c": "accent",
+                  "label": "longest chain: 5 C → pent",
+                  "side": "below"
+                },
+                {
+                  "atoms": [
+                    "m"
+                  ],
+                  "at": 362,
+                  "c": "second",
+                  "label": "branch: methyl on C4"
+                },
+                {
+                  "atoms": [
+                    "c1",
+                    "c2"
+                  ],
+                  "at": 673,
+                  "c": "amber",
+                  "label": "C=C outranks the branch: gets 1"
+                }
+              ],
+              "numbering": {
+                "atoms": [
+                  "c1",
+                  "c2",
+                  "c3",
+                  "c4",
+                  "c5"
+                ],
+                "at": 170,
+                "step": 12
+              },
+              "name": [
+                {
+                  "t": "4-",
+                  "at": 362,
+                  "c": "second"
+                },
+                {
+                  "t": "methyl",
+                  "at": 362,
+                  "c": "second"
+                },
+                {
+                  "t": "pent",
+                  "at": 98,
+                  "c": "accent"
+                },
+                {
+                  "t": "-1-",
+                  "at": 521,
+                  "c": "amber"
+                },
+                {
+                  "t": "ene",
+                  "at": 521,
+                  "c": "amber"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "from the right: C=C at 4, so ✗",
+                  "at": 780,
+                  "c": "dim"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1140,
       "caption": "Longest chain, lowest locants, alphabetical substituents, bond locant before the suffix.",
       "voiceover": {
