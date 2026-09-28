@@ -72,6 +72,53 @@
       "caption": "A gene is a DNA sequence coding for a product, usually a polypeptide, not a trait itself.",
       "voiceover": {
         "text": "Let's start by being precise about what a gene actually is, because the wording matters in the exam. A gene is a section of DNA whose base sequence codes for a functional product, and that product is usually a polypeptide, a chain that folds into a protein. As we have seen throughout this module, it is the order of the bases along the DNA that carries the hereditary information. Now here is the subtle but important point. A gene codes for a product, it is not itself a trait. So a gene does not directly equal brown eyes, or tallness. It codes for a polypeptide, and that polypeptide, often working with many others and the environment, contributes to the observable feature. So say it carefully, a gene codes for a product, usually a polypeptide, not for a trait directly."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Pathway",
+        "props": {
+          "stations": [
+            {
+              "label": "Gene",
+              "sub": "a section of DNA",
+              "icon": "dna",
+              "at": 194
+            },
+            {
+              "label": "Polypeptide",
+              "sub": "the coded product",
+              "icon": "protein",
+              "at": 398
+            },
+            {
+              "label": "Trait",
+              "sub": "observable feature",
+              "icon": "trait",
+              "at": 950
+            }
+          ],
+          "shortcut": {
+            "text": "a gene is not the trait itself",
+            "at": 970
+          },
+          "inputs": [
+            {
+              "to": 2,
+              "text": "many other polypeptides",
+              "at": 1122
+            },
+            {
+              "to": 2,
+              "text": "the environment",
+              "at": 1310
+            }
+          ],
+          "highlight": 1,
+          "rule": {
+            "text": "a gene codes for a product, usually a polypeptide",
+            "at": 1538
+          }
+        }
       }
     },
     {

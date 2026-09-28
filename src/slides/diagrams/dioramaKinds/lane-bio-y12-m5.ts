@@ -16,6 +16,11 @@ import {ReadsDiagram} from '../kinds/bio-y12-m5/ReadsDiagram';
 import {GroupFreqDiagram} from '../kinds/bio-y12-m5/GroupFreqDiagram';
 import {ProbeStripDiagram} from '../kinds/bio-y12-m5/ProbeStripDiagram';
 import {TranslationDiagram} from '../kinds/bio-y12-m5/TranslationDiagram';
+import {PathwayDiagram} from '../kinds/bio-y12-m5/PathwayDiagram';
+import {FoldDiagram} from '../kinds/bio-y12-m5/FoldDiagram';
+import {GxEDiagram} from '../kinds/bio-y12-m5/GxEDiagram';
+import {CrossDiagram} from '../kinds/bio-y12-m5/CrossDiagram';
+import {HeterozygoteDiagram} from '../kinds/bio-y12-m5/HeterozygoteDiagram';
 
 export const KINDS: DioramaKindMap = {
   bio12m5Mitosis: MitosisDiagram,
@@ -29,4 +34,9 @@ export const KINDS: DioramaKindMap = {
   bio12m5GroupFreq: GroupFreqDiagram,
   bio12m5ProbeStrip: ProbeStripDiagram,
   bio12m5Translation: TranslationDiagram,
+  bio12m5Pathway: PathwayDiagram,
+  bio12m5Fold: FoldDiagram,
+  bio12m5GxE: GxEDiagram,
+  bio12m5Cross: CrossDiagram,
+  bio12m5Heterozygote: HeterozygoteDiagram,
 };
