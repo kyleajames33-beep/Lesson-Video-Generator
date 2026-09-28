@@ -5,6 +5,8 @@
 // See docs/diorama-system.md.
 
 import type {DioramaKindMap} from './types';
+import {SorterDiagram} from '../kinds/bio-y12-m7/SorterDiagram';
 
 export const KINDS: DioramaKindMap = {
+  bio12m7Sorter: SorterDiagram,
 };
