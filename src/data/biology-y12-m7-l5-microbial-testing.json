@@ -154,39 +154,29 @@
         "text": "Now the core technique, the serial dilution and plate count. First, you collect a measured volume of water, or a weighed food sample, using aseptic technique throughout. Second, you serially dilute. One millilitre of sample into nine millilitres of sterile water gives a one in ten dilution, and repeating that gives a hundredfold, then a thousandfold. Why bother? Because a heavily contaminated sample grows into one confluent, uncountable smear. Diluting spreads the colonies out, and the sweet spot is a plate with thirty to three hundred colonies. Third, you spread a measured amount onto nutrient agar, tape the lid, and incubate the plates upside down, so condensation doesn't drip onto your colonies. Finally, you count the plate that falls in that thirty to three hundred range."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "collect",
-            "label": "Collect"
+        "type": "diorama",
+        "kind": "bio12m7Dilution",
+        "props": {
+          "countable": 45,
+          "labels": {
+            "sample": "sample",
+            "water": "each tube: 9 mL sterile water",
+            "confluent": "confluent, uncountable",
+            "tooMany": "too many to count",
+            "window": "30 to 300: count this one"
           },
-          {
-            "id": "dilute",
-            "label": "Dilute"
-          },
-          {
-            "id": "plate",
-            "label": "Plate"
-          },
-          {
-            "id": "count",
-            "label": "Count"
+          "beats": {
+            "collect": 58,
+            "dilute": 262,
+            "t1": 454,
+            "t2": 562,
+            "t3": 598,
+            "confluent": 730,
+            "window": 922,
+            "invert": 1174,
+            "count": 1294
           }
-        ],
-        "edges": [
-          {
-            "from": "collect",
-            "to": "dilute"
-          },
-          {
-            "from": "dilute",
-            "to": "plate"
-          },
-          {
-            "from": "plate",
-            "to": "count"
-          }
-        ]
+        }
       }
     },
     {
@@ -317,7 +307,7 @@
               ],
               [
                 1,
-                0.0
+                0
               ]
             ]
           }

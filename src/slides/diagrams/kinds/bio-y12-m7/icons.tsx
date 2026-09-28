@@ -235,7 +235,7 @@ const draw = (id: string, name: IconName, frame: number, o: IconOpts): ReactNode
 						Array.from({length: n}, (_, k) => {
 							const r = Math.sqrt(hash01(k * 3 + 1)) * 0.9;
 							const a = hash01(k * 7 + 2) * Math.PI * 2;
-							return <circle key={k} cx={Math.cos(a) * r * 35} cy={Math.sin(a) * r * 12.5} r={n > 150 ? 1.1 : 1.8} fill="#fbf8ee" stroke="#c8b98a" strokeWidth={0.4} />;
+							return <circle key={k} cx={Math.cos(a) * r * 35} cy={Math.sin(a) * r * 12.5} r={n > 150 ? 1.1 : 2.2} fill="#fbf8ee" stroke="#c8b98a" strokeWidth={0.4} />;
 						})}
 					<ellipse cx={0} cy={-2} rx={40} ry={15} fill="none" stroke="#ffffff" strokeOpacity={0.6} strokeWidth={1.5} />
 				</g>
