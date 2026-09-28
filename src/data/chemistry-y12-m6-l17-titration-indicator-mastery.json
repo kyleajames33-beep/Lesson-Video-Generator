@@ -74,6 +74,77 @@
       "voiceover": {
         "text": "Let's work the right answer and catch the wrong ones against it. The equivalence point is the midpoint of the steep jump, at twenty-five millilitres, and its pH is halfway up the jump, about nine-point-five. Since that's above seven, the indicator must be phenolphthalein, whose range is eight-point-three to ten. And the pKa is the pH at the half-equivalence point, twelve-point-five millilitres, which reads four-point-seven-four. Now the errors. One student put the equivalence point at pH seven, which is only true for strong with strong, and that pushed them to bromothymol blue, the wrong indicator. See how those two mistakes are linked, a wrong equivalence point forces a wrong indicator. Another student read the equivalence point correctly but picked methyl orange, which changes far too early, and called the pKa seven, confusing it with the middle of the pH scale. And a third thought the pKa was just the starting pH. Three different misconceptions, all avoidable.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L17/concept-students.d619912b0573.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6TitrationCurve",
+        "props": {
+          "series": [
+            {
+              "type": "WA-SB",
+              "label": "weak acid + NaOH",
+              "at": 0,
+              "dur": 100
+            }
+          ],
+          "jumpRead": {
+            "lo": 7.5,
+            "hi": 11.5,
+            "at": 60
+          },
+          "markers": {
+            "epAt": 110,
+            "halfAt": 294,
+            "pKaAt": 330
+          },
+          "bands": [
+            {
+              "lo": 8.3,
+              "hi": 10,
+              "label": "phenolphthalein",
+              "color": "#e0368f",
+              "at": 190
+            },
+            {
+              "lo": 6,
+              "hi": 7.6,
+              "label": "bromothymol blue",
+              "color": "#2d63c8",
+              "at": 536,
+              "wrong": true
+            },
+            {
+              "lo": 3.1,
+              "hi": 4.4,
+              "label": "methyl orange",
+              "color": "#e8a21a",
+              "at": 710,
+              "wrong": true
+            }
+          ],
+          "wrongPins": [
+            {
+              "v": 25,
+              "pH": 7,
+              "label": "EP at pH 7?",
+              "at": 419,
+              "anchor": "end"
+            },
+            {
+              "v": 12.5,
+              "pH": 7,
+              "label": "pKa = 7?",
+              "at": 820,
+              "anchor": "end"
+            },
+            {
+              "v": 0,
+              "pH": 2.87,
+              "label": "pKa = start pH?",
+              "at": 917
+            }
+          ]
+        }
       }
     },
     {

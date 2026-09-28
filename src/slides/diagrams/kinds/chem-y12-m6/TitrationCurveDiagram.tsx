@@ -31,6 +31,12 @@ export type TitrationCurveProps = {
 	/** Burette + flask beside a single curve. */
 	apparatus?: boolean;
 	markers?: {epAt?: number; halfAt?: number; pKaAt?: number; bufferAt?: number};
+	/** Read the EP pH as "halfway up the jump" between lo and hi (the lesson's reading), instead of the computed value. */
+	jumpRead?: {lo: number; hi: number; at: number};
+	/** Indicator colour-change bands; `wrong` ones are crossed out in amber. */
+	bands?: {lo: number; hi: number; label: string; color: string; at: number; wrong?: boolean}[];
+	/** Wrong answers pinned on the graph (volume, pH) and crossed out. */
+	wrongPins?: {v: number; pH: number; label: string; at: number; anchor?: 'start' | 'end'}[];
 	/** Show computed EP dots/labels on each curve once drawn. */
 	epDots?: boolean;
 	/** Small multiples: one panel per series (2 × 2 for four). */
@@ -39,6 +45,7 @@ export type TitrationCurveProps = {
 };
 
 const ID = 'c12m6tc';
+const GOOD = '#2f9a5a';
 const W = 760;
 const H = 530;
 const COLORS = (accent: string) => [accent, BLUE, '#8e5bd6', '#8a8f99'];
@@ -57,7 +64,7 @@ export const curvePH = (type: CurveType, V: number, ca: number, va: number, cb: 
 };
 
 export const TitrationCurveDiagram = ({
-	series, ca = 0.1, va = 25, cb = 0.1, pKa = 4.74, pKb = 4.75, vMax = 50, apparatus = false, markers = {}, epDots = false, grid = false, delay = 62,
+	series, ca = 0.1, va = 25, cb = 0.1, pKa = 4.74, pKb = 4.75, vMax = 50, apparatus = false, markers = {}, epDots = false, grid = false, jumpRead, bands = [], wrongPins = [], delay = 62,
 }: TitrationCurveProps) => {
 	const frame = useCurrentFrame() - delay;
 	const theme = useAccent();
@@ -65,7 +72,7 @@ export const TitrationCurveDiagram = ({
 	const vEq = (ca * va) / cb;
 	const cols = COLORS(theme.accent);
 
-	const GX0 = apparatus ? 272 : 74, GX1 = apparatus ? 700 : 600, GY0 = 30, GY1 = 440;
+	const GX0 = apparatus ? 272 : 74, GX1 = apparatus ? 700 : bands.length ? 566 : 600, GY0 = 30, GY1 = 440;
 	const gx = (v: number) => GX0 + (v / vMax) * (GX1 - GX0);
 	const gy = (p: number) => GY1 - (p / 14) * (GY1 - GY0);
 
@@ -203,13 +210,13 @@ export const TitrationCurveDiagram = ({
 			{/* Reading markers (single curve) */}
 			{single && markers.epAt !== undefined && (() => {
 				const t = ease(frame, markers.epAt, markers.epAt + 20);
-				const ep = epPH(single);
+				const ep = jumpRead ? (jumpRead.lo + jumpRead.hi) / 2 : epPH(single);
 				return (
 					<g opacity={t}>
 						<line x1={gx(vEq)} y1={GY1} x2={gx(vEq)} y2={GY1 - (GY1 - gy(ep)) * t} stroke={TOK.amber} strokeWidth={3} strokeDasharray="7 6" />
 						<circle cx={gx(vEq)} cy={gy(ep)} r={8 + idlePulse(frame) * 2} fill="#ffffff" stroke={TOK.amber} strokeWidth={3.5} />
 						<text x={gx(vEq) + 14} y={gy(ep) + 34} fill={TOK.amberInk} fontSize={18} fontWeight={800}>equivalence: {vEq.toFixed(2)} mL</text>
-						<text x={gx(vEq) + 14} y={gy(ep) + 56} fill={TOK.amberInk} fontSize={16} fontWeight={800}>middle of the jump</text>
+						<text x={gx(vEq) + 14} y={gy(ep) + 56} fill={TOK.amberInk} fontSize={16} fontWeight={800}>{jumpRead ? `halfway up the jump: pH ≈ ${ep.toFixed(1)}` : 'middle of the jump'}</text>
 					</g>
 				);
 			})()}
@@ -228,6 +235,50 @@ export const TitrationCurveDiagram = ({
 					</g>
 				);
 			})()}
+
+			{/* The jump, bracketed where the lesson reads it */}
+			{single && jumpRead && (() => {
+				const t = ease(frame, jumpRead.at, jumpRead.at + 20);
+				const x = gx(vEq) - 16;
+				return (
+					<g opacity={t}>
+						<path d={`M ${x + 6} ${gy(jumpRead.lo)} L ${x} ${gy(jumpRead.lo)} L ${x} ${gy(jumpRead.hi)} L ${x + 6} ${gy(jumpRead.hi)}`} fill="none" stroke={TOK.inkDim} strokeWidth={2.5} />
+						<text x={x - 6} y={gy(jumpRead.hi) + 6} textAnchor="end" fill={TOK.inkDim} fontSize={16} fontWeight={800}>{jumpRead.hi}</text>
+						<text x={x - 6} y={gy(jumpRead.lo) + 6} textAnchor="end" fill={TOK.inkDim} fontSize={16} fontWeight={800}>{jumpRead.lo}</text>
+					</g>
+				);
+			})()}
+
+			{/* Indicator bands */}
+			{bands.map((b, i) => {
+				const t = fadeAt(frame, b.at, 14);
+				if (t <= 0) return null;
+				const y0 = gy(b.hi), y1 = gy(b.lo);
+				return (
+					<g key={`band${i}`} opacity={t}>
+						<rect x={GX0} y={y0} width={GX1 - GX0} height={y1 - y0} fill={b.color} opacity={0.2} />
+						<rect x={GX1 + 4} y={y0} width={8} height={y1 - y0} rx={3} fill={b.color} />
+						<text x={GX1 + 18} y={(y0 + y1) / 2 + 6} fill={b.wrong ? TOK.amberInk : TOK.ink} fontSize={16} fontWeight={800}>{b.label}</text>
+						{b.wrong && <line x1={GX1 + 16} y1={(y0 + y1) / 2} x2={GX1 + 18 + b.label.length * 8.6} y2={(y0 + y1) / 2} stroke={TOK.amberInk} strokeWidth={2.5} />}
+						{!b.wrong && <text x={GX1 + 18} y={(y0 + y1) / 2 + 26} fill={GOOD} fontSize={16} fontWeight={800}>✓ brackets the jump</text>}
+					</g>
+				);
+			})}
+
+			{/* Wrong answers, crossed out */}
+			{wrongPins.map((w, i) => {
+				const t = ease(frame, w.at, w.at + 16);
+				if (t <= 0) return null;
+				const x = gx(w.v), y = gy(w.pH);
+				const end = w.anchor === 'end';
+				return (
+					<g key={`w${i}`} opacity={t}>
+						<circle cx={x} cy={y} r={13} fill="#ffffff" stroke={TOK.amber} strokeWidth={3 + idlePulse(frame + i * 15)} />
+						<path d={`M ${x - 5} ${y - 5} L ${x + 5} ${y + 5} M ${x + 5} ${y - 5} L ${x - 5} ${y + 5}`} stroke={TOK.amberInk} strokeWidth={3} strokeLinecap="round" />
+						<text x={end ? x - 20 : x + 20} y={y + 6} textAnchor={end ? 'end' : 'start'} fill={TOK.amberInk} fontSize={17} fontWeight={800}>{w.label}</text>
+					</g>
+				);
+			})}
 
 			{/* Burette dripping into a flask, with a live pH readout */}
 			{single && apparatus && (() => {
