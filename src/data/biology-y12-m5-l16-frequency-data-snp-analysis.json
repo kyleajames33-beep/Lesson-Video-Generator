@@ -73,7 +73,35 @@
       "secondary": "Most SNPs have no effect at all. A few change a protein or its regulation, and some sit close to a gene that does.",
       "callout": "A SNP is one letter that varies between people.",
       "diagram": {
-        "type": "dnaHelix"
+        "type": "diorama",
+        "kind": "bio12m5Reads",
+        "props": {
+          "mode": "snp",
+          "rows": [
+            "TCAGGTACCTGAA",
+            "TCAGGTGCCTGAA",
+            "TCAGGTACCTGAA",
+            "TCAGGTACCTGAA",
+            "TCAGGTGCCTGAA",
+            "TCAGGTACCTGAA",
+            "TCAGGTACCTGAA",
+            "TCAGGTACCTGAA"
+          ],
+          "people": [
+            "person 1",
+            "person 2",
+            "person 3",
+            "person 4"
+          ],
+          "at": {
+            "differ": 194,
+            "many": 386,
+            "noncoding": 518,
+            "gene": 710,
+            "allele": 1058,
+            "frequency": 1358
+          }
+        }
       },
       "caption": "SNPs are common single base differences; each version is an allele with a population frequency.",
       "voiceover": {
@@ -103,7 +131,36 @@
       "voiceover": {
         "text": "Now, how do scientists actually link a SNP to a disease? The classic design compares two groups. The cases are a sample of people who have the disease, and the controls are a similar sample of people who don't. Researchers read the same SNP positions in everyone, then calculate how common each allele is in each group. If one allele turns up much more often in the cases than the controls, that allele is said to be associated with the disease. Scale that up to hundreds of thousands of SNPs across thousands of people, and you've got a genome wide association study. But hold onto that word, associated. It means the allele and the disease are found together more often than chance would suggest. It doesn't, on its own, mean the SNP causes the disease."
       },
-      "durationInFrames": 1665
+      "durationInFrames": 1665,
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5GroupFreq",
+        "props": {
+          "allele": "T",
+          "groups": [
+            {
+              "label": "Cases",
+              "sub": "have the disease",
+              "people": 10,
+              "hits": 6
+            },
+            {
+              "label": "Controls",
+              "sub": "don't have it",
+              "people": 10,
+              "hits": 3
+            }
+          ],
+          "at": {
+            "groups": 146,
+            "second": 290,
+            "read": 410,
+            "count": 518,
+            "tag": 674,
+            "rule": 1310
+          }
+        }
+      }
     },
     {
       "id": "worked-example",
@@ -191,7 +248,37 @@
       "voiceover": {
         "text": "This is where the newer syllabus wants you to assess, so let's be precise about the limits. First, a SNP test only reads the positions it was designed to read. Some consumer tests check just three variants in the BRCA genes, while more than a thousand harmful BRCA variants are known, so a clear result doesn't rule out risk at all. Second, most disease associated SNPs raise risk only slightly, because common diseases also depend on many other genes and on the environment. Third, the databases used to interpret results are built mostly from people of European ancestry, so predictions tend to be less accurate for everyone else. And fourth, chips are least reliable for exactly the rare variants that matter most, and plenty of variants have no known meaning yet. They're called variants of uncertain significance. So a SNP test reads a sample of the genome, not the whole story."
       },
-      "durationInFrames": 1857
+      "durationInFrames": 1857,
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5ProbeStrip",
+        "props": {
+          "gene": "BRCA1 and BRCA2",
+          "probes": 3,
+          "known": "more than 1,000 known harmful variants",
+          "limits": [
+            {
+              "text": "most associated SNPs raise risk only slightly",
+              "at": 662
+            },
+            {
+              "text": "databases: mostly European ancestry",
+              "at": 926
+            },
+            {
+              "text": "rare variants: the ones chips misread most",
+              "at": 1238
+            }
+          ],
+          "at": {
+            "reads": 182,
+            "probes": 338,
+            "known": 434,
+            "clear": 590,
+            "rule": 1646
+          }
+        }
+      }
     },
     {
       "id": "misconception",

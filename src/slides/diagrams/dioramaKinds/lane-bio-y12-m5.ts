@@ -10,6 +10,12 @@ import {MeiosisDiagram} from '../kinds/bio-y12-m5/MeiosisDiagram';
 import {PloidyDiagram} from '../kinds/bio-y12-m5/PloidyDiagram';
 import {ReshuffleDiagram} from '../kinds/bio-y12-m5/ReshuffleDiagram';
 import {CellCycleDiagram} from '../kinds/bio-y12-m5/CellCycleDiagram';
+import {DnaDiagram} from '../kinds/bio-y12-m5/DnaDiagram';
+import {ForkDiagram} from '../kinds/bio-y12-m5/ForkDiagram';
+import {ReadsDiagram} from '../kinds/bio-y12-m5/ReadsDiagram';
+import {GroupFreqDiagram} from '../kinds/bio-y12-m5/GroupFreqDiagram';
+import {ProbeStripDiagram} from '../kinds/bio-y12-m5/ProbeStripDiagram';
+import {TranslationDiagram} from '../kinds/bio-y12-m5/TranslationDiagram';
 
 export const KINDS: DioramaKindMap = {
   bio12m5Mitosis: MitosisDiagram,
@@ -17,4 +23,10 @@ export const KINDS: DioramaKindMap = {
   bio12m5Ploidy: PloidyDiagram,
   bio12m5Reshuffle: ReshuffleDiagram,
   bio12m5CellCycle: CellCycleDiagram,
+  bio12m5Dna: DnaDiagram,
+  bio12m5Fork: ForkDiagram,
+  bio12m5Reads: ReadsDiagram,
+  bio12m5GroupFreq: GroupFreqDiagram,
+  bio12m5ProbeStrip: ProbeStripDiagram,
+  bio12m5Translation: TranslationDiagram,
 };

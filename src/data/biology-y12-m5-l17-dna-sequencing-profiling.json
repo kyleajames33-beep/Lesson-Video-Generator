@@ -73,7 +73,45 @@
       "secondary": "A chromosome is never read end to end in one pass. It is broken up, read in pieces, and put back together by software.",
       "callout": "Sequencing tells you the letters, in order.",
       "diagram": {
-        "type": "dnaHelix"
+        "type": "diorama",
+        "kind": "bio12m5Reads",
+        "props": {
+          "mode": "assemble",
+          "reference": "ATGGCTAGCTTAGGCATC",
+          "rows": [
+            "ATGGCTAGCATAGGCATC"
+          ],
+          "fragments": [
+            [
+              0,
+              6
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              8,
+              13
+            ],
+            [
+              11,
+              17
+            ]
+          ],
+          "at": {
+            "read": 74,
+            "variant": 494,
+            "fragments": 794,
+            "simultaneous": 902,
+            "overlap": 1034,
+            "assemble": 1070
+          }
+        }
       },
       "caption": "DNA sequencing reads the exact base order from millions of short fragments assembled by computer.",
       "voiceover": {
@@ -100,47 +138,33 @@
       "secondary": "Most of the variants found are harmless. The skill is finding the one that fits the symptoms and the family history.",
       "callout": "The sequencer reads; the software interprets.",
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "a",
-            "label": "Short reads"
-          },
-          {
-            "id": "b",
-            "label": "Align to reference"
-          },
-          {
-            "id": "c",
-            "label": "List variants"
-          },
-          {
-            "id": "d",
-            "label": "Check databases"
-          },
-          {
-            "id": "e",
-            "label": "Diagnosis"
+        "type": "diorama",
+        "kind": "bio12m5Reads",
+        "props": {
+          "mode": "align",
+          "reference": "GCTTAGCCATGACGTTAC",
+          "rows": [
+            "0:GCTTGGCC",
+            "2:TTGGCCAC",
+            "3:TGGCCACG",
+            "6:CCACGACG",
+            "9:CGACGATA",
+            "10:GACGATAC"
+          ],
+          "verdicts": [
+            "harmless",
+            "harmless",
+            "known harmful"
+          ],
+          "at": {
+            "align": 326,
+            "flag": 518,
+            "variants": 650,
+            "database": 758,
+            "harmless": 1082,
+            "interpret": 1466
           }
-        ],
-        "edges": [
-          {
-            "from": "a",
-            "to": "b"
-          },
-          {
-            "from": "b",
-            "to": "c"
-          },
-          {
-            "from": "c",
-            "to": "d"
-          },
-          {
-            "from": "d",
-            "to": "e"
-          }
-        ]
+        }
       },
       "caption": "Bioinformatics aligns reads, lists variants and checks them against databases to reach a diagnosis.",
       "voiceover": {
