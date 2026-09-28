@@ -95,6 +95,54 @@
       "caption": "A cochlear implant's electrode array stimulates the auditory nerve directly but gives far fewer channels than natural hearing.",
       "voiceover": {
         "text": "Now the third technology, the one for when the hair cells are simply gone, the cochlear implant. Instead of amplifying sound for hair cells, it bypasses them completely and stimulates the auditory nerve directly. Here's how. An external processor worn behind the ear has a microphone that captures sound, and a speech processor that splits it into frequency bands and codes it into electrical signals. A coil transmits those coded signals across the intact skin by radio waves to an internal receiver implanted under the skin, so no wires pierce the body. The receiver then sends precisely timed pulses to an electrode array threaded into the cochlea, and each electrode, sitting at its tonotopic position, directly depolarises the auditory nerve fibres there, skipping the dead hair cells entirely. One absolute requirement, the auditory nerve must be intact, because if there are no working nerve fibres, there's nothing for the electrodes to stimulate. But here is the most important point in this whole lesson, and the most penalised error in exams. A cochlear implant does not restore normal hearing. It gives only twelve to twenty two channels, against the roughly three and a half thousand hair cell positions of a natural cochlea, so the sound is different, often described as robotic, and music is genuinely difficult. That's why we say it provides access to sound, and why implanting children early, during the critical period for language, produces the best outcomes."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8EarRoute",
+        "props": {
+          "sections": {
+            "outer": {
+              "label": "Outer ear",
+              "at": 0
+            },
+            "middle": {
+              "label": "Middle ear",
+              "at": 0
+            },
+            "cochlea": {
+              "label": "Cochlea",
+              "sub": "hair cells gone",
+              "at": 0
+            },
+            "nerve": {
+              "label": "Auditory nerve",
+              "at": 0
+            }
+          },
+          "deadHairCellsAt": 0,
+          "routes": [
+            {
+              "kind": "implant",
+              "at": 264,
+              "label": "Cochlear implant: skips the hair cells"
+            }
+          ],
+          "notes": [
+            {
+              "text": "Needs an intact auditory nerve",
+              "at": 1099
+            },
+            {
+              "text": "Access to sound, not normal hearing",
+              "at": 1460,
+              "amber": true
+            },
+            {
+              "text": "12 to 22 channels vs about 3,500 hair cell positions",
+              "at": 1531
+            }
+          ]
+        }
       }
     },
     {
