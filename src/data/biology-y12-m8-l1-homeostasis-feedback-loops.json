@@ -74,47 +74,52 @@
         "text": "So let's build the universal template first, the stimulus-response model. It has five components, and the order matters enormously in the exam. It starts with a stimulus, which is any change that pushes a variable outside its tolerance range, like body temperature climbing above thirty seven degrees. That change is picked up by a receptor, a specialised structure that detects one specific variable. Thermoreceptors detect temperature, osmoreceptors detect blood concentration, chemoreceptors detect carbon dioxide. The receptor sends a signal to a control centre, often the hypothalamus or a gland, which processes it and decides on the response. The control centre then activates an effector, a muscle or organ or gland that physically acts. And the effector produces the response, which opposes the original stimulus and nudges the variable back toward its set point. Stimulus, receptor, control centre, effector, response. A good answer names every one, with its specific role."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "s",
-            "label": "Stimulus"
+        "type": "diorama",
+        "kind": "bio12m8FeedbackLoop",
+        "props": {
+          "variable": {
+            "label": "body temperature",
+            "highLabel": "above 37 °C"
           },
-          {
-            "id": "r",
-            "label": "Receptor"
-          },
-          {
-            "id": "c",
-            "label": "Control"
-          },
-          {
-            "id": "e",
-            "label": "Effector"
-          },
-          {
-            "id": "resp",
-            "label": "Response"
+          "stations": [
+            {
+              "role": "Stimulus",
+              "label": "Change",
+              "sub": "temperature rises",
+              "at": 214
+            },
+            {
+              "role": "Receptor",
+              "label": "Thermoreceptors",
+              "sub": "detect it",
+              "at": 538
+            },
+            {
+              "role": "Control centre",
+              "label": "Hypothalamus",
+              "sub": "decides",
+              "at": 910
+            },
+            {
+              "role": "Effector",
+              "label": "Muscle, organ\nor gland",
+              "sub": "acts",
+              "at": 1150
+            },
+            {
+              "role": "Response",
+              "label": "Opposes the\nstimulus",
+              "sub": "back to set point",
+              "at": 1330
+            }
+          ],
+          "pushAt": 214,
+          "returnAt": 1340,
+          "loop": {
+            "label": "the response opposes the stimulus: negative feedback",
+            "at": 1474
           }
-        ],
-        "edges": [
-          {
-            "from": "s",
-            "to": "r"
-          },
-          {
-            "from": "r",
-            "to": "c"
-          },
-          {
-            "from": "c",
-            "to": "e"
-          },
-          {
-            "from": "e",
-            "to": "resp"
-          }
-        ]
+        }
       }
     },
     {

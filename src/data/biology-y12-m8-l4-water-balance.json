@@ -164,47 +164,57 @@
         "text": "Now let's watch the team in action with A D H. It starts when your blood becomes too concentrated, maybe from sweating, salty food or not drinking. Osmoreceptors in the hypothalamus detect that change, and the hypothalamus sends signals down its nerve fibres to the posterior pituitary, which releases A D H into the blood. A D H travels to the kidneys, where it acts on the last parts of the nephron, the distal tubule and especially the collecting duct. It makes the cells there add aquaporins to their walls, so more water moves out of the filtrate and back into the blood. As the blood becomes less concentrated, the osmoreceptors stop firing as strongly, and A D H release drops. That's negative feedback. So high A D H gives you a small volume of concentrated urine, and low A D H gives you lots of dilute urine."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "o",
-            "label": "Blood too concentrated"
+        "type": "diorama",
+        "kind": "bio12m8FeedbackLoop",
+        "delay": 6,
+        "props": {
+          "variable": {
+            "label": "blood concentration",
+            "highLabel": "too concentrated"
           },
-          {
-            "id": "r",
-            "label": "Hypothalamus osmoreceptors"
+          "stations": [
+            {
+              "role": "Stimulus",
+              "label": "Blood too\nconcentrated",
+              "at": 174
+            },
+            {
+              "role": "Receptor",
+              "label": "Osmoreceptors",
+              "sub": "in hypothalamus",
+              "at": 318
+            },
+            {
+              "role": "Gland",
+              "label": "Posterior\npituitary",
+              "sub": "releases ADH",
+              "at": 534
+            },
+            {
+              "role": "Effector",
+              "label": "Kidney",
+              "sub": "adds aquaporins",
+              "at": 1026
+            },
+            {
+              "role": "Response",
+              "label": "More water\nreabsorbed",
+              "at": 1110
+            }
+          ],
+          "pushAt": 174,
+          "returnAt": 1278,
+          "loop": {
+            "label": "ADH release drops: negative feedback",
+            "at": 1458
           },
-          {
-            "id": "p",
-            "label": "Posterior pituitary releases ADH"
-          },
-          {
-            "id": "d",
-            "label": "Kidney tubules add aquaporins"
-          },
-          {
-            "id": "w",
-            "label": "More water reabsorbed"
-          }
-        ],
-        "edges": [
-          {
-            "from": "o",
-            "to": "r"
-          },
-          {
-            "from": "r",
-            "to": "p"
-          },
-          {
-            "from": "p",
-            "to": "d"
-          },
-          {
-            "from": "d",
-            "to": "w"
-          }
-        ]
+          "notes": [
+            {
+              "text": "More ADH, more aquaporins, more water saved",
+              "at": 1494
+            }
+          ]
+        }
       },
       "revealDelays": {
         "diagram": 6
