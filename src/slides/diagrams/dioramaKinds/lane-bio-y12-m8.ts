@@ -5,6 +5,8 @@
 // See docs/diorama-system.md.
 
 import type {DioramaKindMap} from './types';
+import {EyeRaysDiagram} from '../kinds/bio-y12-m8/EyeRaysDiagram';
 
 export const KINDS: DioramaKindMap = {
+  bio12m8EyeRays: EyeRaysDiagram,
 };

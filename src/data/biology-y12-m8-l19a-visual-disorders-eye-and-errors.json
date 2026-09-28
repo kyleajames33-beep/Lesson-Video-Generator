@@ -77,47 +77,50 @@
         "text": "So let's follow light through the eye, because every disorder and every correction is about where the light comes to a focus. Light first hits the cornea, the clear curved front surface, and here's a number worth knowing, the cornea provides about seventy percent of the eye's total focusing power, with a fixed curvature it can't change. The remaining thirty percent comes from the crystalline lens, which is flexible and can change shape. The light then has to be focused precisely onto the fovea, the tiny central spot of the retina packed with cone cells, which gives our sharpest, most detailed colour vision. Now the clever bit, accommodation, which is how the lens fine-tunes focus for different distances. For a near object, the ciliary muscles around the lens contract, the tension on the lens relaxes, and the elastic lens bulges into a more convex shape, bending light more steeply to keep it focused on the retina. For a distant object, those muscles relax and the lens flattens. Finally, the focused image becomes electrical signals that travel down the optic nerve to the visual cortex at the back of the brain. So, cornea bends most, lens fine-tunes by changing shape."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "cornea",
-            "label": "Cornea"
-          },
-          {
-            "id": "lens",
-            "label": "Lens"
-          },
-          {
-            "id": "retina",
-            "label": "Retina"
-          },
-          {
-            "id": "nerve",
-            "label": "Optic nerve"
-          },
-          {
-            "id": "cortex",
-            "label": "Cortex"
-          }
-        ],
-        "edges": [
-          {
-            "from": "cornea",
-            "to": "lens"
-          },
-          {
-            "from": "lens",
-            "to": "retina"
-          },
-          {
-            "from": "retina",
-            "to": "nerve"
-          },
-          {
-            "from": "nerve",
-            "to": "cortex"
-          }
-        ]
+        "type": "diorama",
+        "kind": "bio12m8EyeRays",
+        "delay": 6,
+        "props": {
+          "panels": [
+            {
+              "title": "Cornea bends most, the lens fine-tunes",
+              "at": 60,
+              "near": {
+                "at": 1018,
+                "accommodateAt": 1150,
+                "farAt": 1360
+              },
+              "marks": [
+                {
+                  "part": "cornea",
+                  "text": "cornea ≈70%",
+                  "at": 362
+                },
+                {
+                  "part": "lens",
+                  "text": "lens ≈30%",
+                  "at": 502
+                },
+                {
+                  "part": "fovea",
+                  "text": "fovea",
+                  "at": 721,
+                  "amber": true
+                },
+                {
+                  "part": "ciliary",
+                  "text": "ciliary muscles",
+                  "at": 1150
+                },
+                {
+                  "part": "nerve",
+                  "text": "optic nerve\n→ visual cortex",
+                  "at": 1553
+                }
+              ]
+            }
+          ]
+        }
       },
       "revealDelays": {
         "diagram": 6
@@ -176,29 +179,30 @@
         "text": "Now the three ways focusing goes wrong, and they all come down to a mismatch between the eye's focusing power and its length. First, myopia, short-sightedness. The eyeball is too long, or the cornea too steeply curved, so parallel light from distant objects converges too early and comes to a focus in front of the retina, leaving distant things blurred. Near vision, though, is fine, because light from close objects is more spread out and focuses further back, right on the retina. Second, hyperopia, long-sightedness. Now the eyeball is too short, or the cornea too flat, so light would focus behind the retina, and it's near objects that blur the most, because they demand the most focusing effort. Third, astigmatism. Here the cornea is unevenly curved, shaped more like a rugby ball than a soccer ball, so light entering along different axes focuses at different points, and there's no single focal point, blurring vision at every distance. And then there's presbyopia, which is different again, because it's not a length mismatch at all. It's a lens that's stiffened with age and can no longer change shape to accommodate, which is exactly why someone with perfect vision their whole life suddenly needs reading glasses in their forties."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Disorder",
-          "Anatomical cause",
-          "Focal point"
-        ],
-        "rows": [
-          [
-            "Myopia",
-            "Eye too long / cornea too steep",
-            "In front of retina"
-          ],
-          [
-            "Hyperopia",
-            "Eye too short / cornea too flat",
-            "Behind the retina"
-          ],
-          [
-            "Astigmatism",
-            "Uneven corneal curvature",
-            "Multiple points"
+        "type": "diorama",
+        "kind": "bio12m8EyeRays",
+        "props": {
+          "panels": [
+            {
+              "title": "Myopia",
+              "sub": "eye too long",
+              "eye": "long",
+              "at": 150
+            },
+            {
+              "title": "Hyperopia",
+              "sub": "eye too short",
+              "eye": "short",
+              "at": 668
+            },
+            {
+              "title": "Astigmatism",
+              "sub": "unevenly curved cornea",
+              "astig": true,
+              "at": 984
+            }
           ]
-        ]
+        }
       }
     },
     {
@@ -223,6 +227,38 @@
       "caption": "Concave corrects myopia, convex corrects hyperopia and presbyopia, cylindrical corrects astigmatism.",
       "voiceover": {
         "text": "So how do lenses fix these? The principle is simple, each lens bends light the opposite way to the error, so the focal point lands back on the retina. For myopia, where the focus falls in front of the retina, you use a concave, or diverging, lens. It spreads the light out a little before it enters the eye, which pushes the focal point backwards onto the retina. For hyperopia, where the focus falls behind the retina, you use a convex, or converging, lens, which brings the light together sooner, pulling the focal point forwards onto the retina. For astigmatism, you need a cylindrical, sometimes called toric, lens, which has different curvatures along different axes to compensate for the uneven cornea. Here's a memory hook that saves marks, myopia uses concave, hyperopia uses convex, and students mix these up constantly. And one more, reading glasses for presbyopia are convex as well, because they supply the extra convergence that the stiffened lens can no longer produce for near objects. So, myopia concave, hyperopia convex, astigmatism cylindrical."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8EyeRays",
+        "props": {
+          "panels": [
+            {
+              "title": "Myopia",
+              "sub": "eye too long",
+              "eye": "long",
+              "fix": "glasses",
+              "at": 150,
+              "fixAt": 400
+            },
+            {
+              "title": "Hyperopia",
+              "sub": "eye too short",
+              "eye": "short",
+              "fix": "glasses",
+              "at": 520,
+              "fixAt": 640
+            },
+            {
+              "title": "Astigmatism",
+              "sub": "uneven cornea",
+              "astig": true,
+              "fix": "cylindrical",
+              "at": 790,
+              "fixAt": 860
+            }
+          ]
+        }
       }
     },
     {
