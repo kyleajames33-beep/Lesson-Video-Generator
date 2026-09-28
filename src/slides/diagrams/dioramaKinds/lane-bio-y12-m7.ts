@@ -6,7 +6,9 @@
 
 import type {DioramaKindMap} from './types';
 import {SorterDiagram} from '../kinds/bio-y12-m7/SorterDiagram';
+import {CompareDiagram} from '../kinds/bio-y12-m7/CompareDiagram';
 
 export const KINDS: DioramaKindMap = {
   bio12m7Sorter: SorterDiagram,
+  bio12m7Compare: CompareDiagram,
 };

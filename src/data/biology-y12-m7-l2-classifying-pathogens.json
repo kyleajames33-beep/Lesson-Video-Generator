@@ -153,34 +153,131 @@
         "text": "Now to a distinction the HSC tests almost every year, viroids versus prions. Both are non-cellular, and both break the rules you'd expect, but they are completely different agents. A viroid is a tiny ring of single-stranded RNA, with no protein coat at all. It's the smallest known pathogen, and it infects plants only, like potato spindle tuber viroid. A prion is the mirror image, it's a misfolded protein with no nucleic acid whatsoever, and it infects animals only, like mad cow disease. Compare that to a virus, which has both nucleic acid and a protein coat. A viroid drops the coat, a prion drops the nucleic acid. So the trap is treating a viroid as a small virus, or lumping prions and viroids together. They share only one thing, neither is a cell."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Feature",
-          "Viroid",
-          "Prion"
-        ],
-        "rows": [
-          [
-            "Made of",
-            "Circular RNA only",
-            "Misfolded protein only"
+        "type": "diorama",
+        "kind": "bio12m7Compare",
+        "props": {
+          "columns": [
+            {
+              "name": "Viroid",
+              "icon": "viroid",
+              "at": 310
+            },
+            {
+              "name": "Virus",
+              "sub": "for comparison",
+              "icon": "virus",
+              "at": 994
+            },
+            {
+              "name": "Prion",
+              "icon": "prion",
+              "at": 694
+            }
           ],
-          [
-            "Nucleic acid?",
-            "Yes, RNA",
-            "None"
+          "rowLabels": [
+            {
+              "text": "Made of",
+              "at": 310
+            },
+            {
+              "text": "Nucleic acid?",
+              "at": 310
+            },
+            {
+              "text": "Protein?",
+              "at": 310
+            },
+            {
+              "text": "Infects",
+              "at": 610
+            },
+            {
+              "text": "Example",
+              "at": 610
+            }
           ],
-          [
-            "Infects",
-            "Plants only",
-            "Animals only"
+          "rows": [
+            [
+              {
+                "text": "circular RNA",
+                "at": 330
+              },
+              {
+                "text": "nucleic acid + protein coat",
+                "at": 1010
+              },
+              {
+                "text": "misfolded protein",
+                "at": 714
+              }
+            ],
+            [
+              {
+                "text": "RNA",
+                "ok": true,
+                "at": 350
+              },
+              {
+                "ok": true,
+                "at": 1030
+              },
+              {
+                "ok": false,
+                "at": 838
+              }
+            ],
+            [
+              {
+                "text": "no coat",
+                "ok": false,
+                "at": 442
+              },
+              {
+                "text": "coat",
+                "ok": true,
+                "at": 1050
+              },
+              {
+                "text": "protein only",
+                "ok": true,
+                "at": 860
+              }
+            ],
+            [
+              {
+                "text": "plants only",
+                "at": 610
+              },
+              {},
+              {
+                "text": "animals only",
+                "at": 922
+              }
+            ],
+            [
+              {
+                "text": "potato spindle tuber viroid",
+                "at": 630
+              },
+              {},
+              {
+                "text": "mad cow disease",
+                "at": 940
+              }
+            ]
           ],
-          [
-            "Example",
-            "PSTVd",
-            "BSE, CJD"
+          "footer": [
+            {
+              "text": "A viroid drops the coat; a prion drops the nucleic acid",
+              "at": 1162,
+              "amber": true
+            },
+            {
+              "text": "They share only one thing: neither is a cell",
+              "at": 1558
+            }
           ]
-        ]
+        }
       }
     },
     {
@@ -207,39 +304,86 @@
         "text": "We just saw the types, so now, how do they actually get in? A pathogen that can't breach a host can't cause disease, so each type has evolved specific tools. Bacteria use fimbriae and pili, hair-like projections that grip onto host cell receptors, and many wear a capsule, a slimy coat that resists being engulfed by immune cells. Viruses rely on surface proteins, like the spike protein of SARS-CoV-2, which lock onto specific receptor molecules, and that's what decides exactly which cells a virus can infect. Fungi secrete keratinases, enzymes that digest the keratin in your skin, nails, and hair, and they spread as airborne spores you can inhale straight into the lungs. And helminths use hooks and suckers to anchor in the gut, while some larvae burrow directly through bare skin. In every case, the structure follows the job of getting in."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "attach",
-            "label": "Attach"
-          },
-          {
-            "id": "evade",
-            "label": "Evade"
-          },
-          {
-            "id": "enter",
-            "label": "Enter"
-          },
-          {
-            "id": "spread",
-            "label": "Spread"
-          }
-        ],
-        "edges": [
-          {
-            "from": "attach",
-            "to": "evade"
-          },
-          {
-            "from": "evade",
-            "to": "enter"
-          },
-          {
-            "from": "enter",
-            "to": "spread"
-          }
-        ]
+        "type": "diorama",
+        "kind": "bio12m7Compare",
+        "props": {
+          "columns": [
+            {
+              "name": "Bacteria",
+              "icon": "bacterium",
+              "iconOpts": {
+                "pili": true,
+                "capsule": true
+              },
+              "at": 322,
+              "lines": [
+                {
+                  "text": "fimbriae and pili grip receptors",
+                  "at": 340
+                },
+                {
+                  "text": "capsule resists being engulfed",
+                  "at": 538
+                }
+              ]
+            },
+            {
+              "name": "Viruses",
+              "icon": "virus",
+              "at": 670,
+              "lines": [
+                {
+                  "text": "surface proteins, e.g. spike",
+                  "at": 690
+                },
+                {
+                  "text": "lock onto specific receptors",
+                  "at": 838
+                }
+              ]
+            },
+            {
+              "name": "Fungi",
+              "icon": "fungus",
+              "at": 1042,
+              "lines": [
+                {
+                  "text": "keratinases digest skin, nails, hair",
+                  "at": 1060
+                },
+                {
+                  "text": "airborne spores",
+                  "at": 1258
+                }
+              ]
+            },
+            {
+              "name": "Helminths",
+              "icon": "worm",
+              "iconOpts": {
+                "hooks": true
+              },
+              "at": 1378,
+              "lines": [
+                {
+                  "text": "hooks and suckers anchor in gut",
+                  "at": 1396
+                },
+                {
+                  "text": "some larvae burrow through skin",
+                  "at": 1534
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "text": "Structure follows the job of getting in",
+              "at": 1642,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {

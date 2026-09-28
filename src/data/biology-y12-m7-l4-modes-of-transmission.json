@@ -74,29 +74,96 @@
         "text": "Every infectious disease has the same problem, it must get from one host to another, or it dies out. There are three main ways it does this. The first is direct contact, where the pathogen passes straight from one host to another with nothing in between. That covers skin-to-skin spread like tinea, large respiratory droplets in close conversation, sexual contact, and blood-to-blood transmission. The second is indirect contact, where the pathogen travels via an intermediate, a contaminated object called a fomite, or food, water, soil, or fine airborne particles. The third is vector transmission, where a living organism, usually an arthropod like a mosquito or tick, carries the pathogen between hosts. One subtle point the exam loves, large droplets over five micrometres fall quickly and need close contact, so they're direct, but the tiny droplet nuclei under five micrometres linger in the air and travel further, so they count as indirect."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Mode",
-          "How it spreads",
-          "Example"
-        ],
-        "rows": [
-          [
-            "Direct",
-            "Host to host, nothing between",
-            "Tinea, HIV, influenza droplets"
+        "type": "diorama",
+        "kind": "bio12m7Sorter",
+        "props": {
+          "bins": [
+            {
+              "title": "Direct",
+              "sub": "host to host, nothing between"
+            },
+            {
+              "title": "Indirect",
+              "sub": "via an intermediate",
+              "tone": "grey"
+            },
+            {
+              "title": "Vector",
+              "sub": "a living carrier",
+              "tone": "warm"
+            }
           ],
-          [
-            "Indirect",
-            "Fomite, water, food, airborne",
-            "Cholera, TB, salmonella"
+          "items": [
+            {
+              "text": "skin to skin (tinea)",
+              "bin": 0,
+              "at": 514,
+              "icon": "person"
+            },
+            {
+              "text": "large droplets",
+              "bin": 0,
+              "at": 586
+            },
+            {
+              "text": "sexual contact",
+              "bin": 0,
+              "at": 658
+            },
+            {
+              "text": "blood to blood",
+              "bin": 0,
+              "at": 694,
+              "icon": "rbc"
+            },
+            {
+              "text": "fomite",
+              "bin": 1,
+              "at": 946,
+              "icon": "fomite"
+            },
+            {
+              "text": "food, water",
+              "bin": 1,
+              "at": 958,
+              "icon": "drop"
+            },
+            {
+              "text": "soil",
+              "bin": 1,
+              "at": 994
+            },
+            {
+              "text": "fine airborne particles",
+              "bin": 1,
+              "at": 1018,
+              "icon": "air"
+            },
+            {
+              "text": "mosquito",
+              "bin": 2,
+              "at": 1222,
+              "icon": "mosquito"
+            },
+            {
+              "text": "tick",
+              "bin": 2,
+              "at": 1240,
+              "icon": "tick"
+            }
           ],
-          [
-            "Vector",
-            "Living carrier organism",
-            "Malaria, dengue, Lyme"
+          "footer": [
+            {
+              "text": "Droplets over 5 µm fall fast, need close contact: direct",
+              "at": 1318
+            },
+            {
+              "text": "Droplet nuclei under 5 µm linger and travel: indirect",
+              "at": 1594,
+              "amber": true
+            }
           ]
-        ]
+        }
       }
     },
     {
@@ -146,6 +213,91 @@
       "caption": "Control measures only work when matched to the actual transmission route.",
       "voiceover": {
         "text": "Here's why getting the mode right has real consequences, because the control measure has to match the route. Take cholera. It's spread by contaminated water, an indirect route, so the controls are water treatment and sanitation, exactly what John Snow figured out. Take malaria. It's vector-borne, carried by mosquitoes, so the controls are bed nets, insecticides, and draining breeding sites, and isolating patients does almost nothing. Take tuberculosis. It spreads as tiny airborne droplet nuclei under five micrometres, which means ventilation and proper masks matter, but scrubbing surfaces is irrelevant because it isn't on surfaces. And most real diseases actually have a primary route and a secondary one, so a comprehensive strategy considers both. The takeaway is blunt, misidentify the route and your intervention is wasted effort."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Compare",
+        "props": {
+          "title": "The control has to match the route",
+          "columns": [
+            {
+              "name": "Cholera",
+              "sub": "waterborne",
+              "icon": "drop",
+              "at": 166,
+              "lines": [
+                {
+                  "text": "water treatment",
+                  "ok": true,
+                  "at": 346
+                },
+                {
+                  "text": "sanitation",
+                  "ok": true,
+                  "at": 382
+                }
+              ]
+            },
+            {
+              "name": "Malaria",
+              "sub": "vector-borne",
+              "icon": "mosquito",
+              "at": 466,
+              "lines": [
+                {
+                  "text": "bed nets",
+                  "ok": true,
+                  "at": 622
+                },
+                {
+                  "text": "insecticides",
+                  "ok": true,
+                  "at": 646
+                },
+                {
+                  "text": "drain breeding sites",
+                  "ok": true,
+                  "at": 670
+                },
+                {
+                  "text": "isolating patients",
+                  "ok": false,
+                  "at": 718
+                }
+              ]
+            },
+            {
+              "name": "Tuberculosis",
+              "sub": "airborne, under 5 µm",
+              "icon": "air",
+              "at": 778,
+              "lines": [
+                {
+                  "text": "ventilation",
+                  "ok": true,
+                  "at": 946
+                },
+                {
+                  "text": "proper masks",
+                  "ok": true,
+                  "at": 970
+                },
+                {
+                  "text": "scrubbing surfaces",
+                  "ok": false,
+                  "at": 1018
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "text": "Misidentify the route and the intervention is wasted",
+              "at": 1414,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {
