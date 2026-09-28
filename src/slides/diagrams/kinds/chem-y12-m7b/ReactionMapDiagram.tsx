@@ -166,7 +166,7 @@ export const ReactionMapDiagram = ({title = '', nodes = [], edges = [], route, r
 				</g>
 			)}
 			{route && frame >= route.at && (
-				<text x={W - 16} y={title ? 70 : 30} textAnchor="end" fill={TOK.amberInk} fontSize={20} fontWeight={800}>
+				<text x={16} y={title ? 70 : 30} textAnchor="start" fill={TOK.amberInk} fontSize={20} fontWeight={800}>
 					steps: {stepsDone}
 				</text>
 			)}
