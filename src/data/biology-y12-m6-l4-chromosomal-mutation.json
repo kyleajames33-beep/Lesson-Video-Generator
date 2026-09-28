@@ -65,6 +65,28 @@
       "caption": "Chromosomal mutations restructure whole segments, affecting many genes.",
       "voiceover": {
         "text": "Let's set the big distinction. Back in the last lesson, point mutations changed one base, or a few bases, inside a single gene. A chromosomal mutation operates at a completely different scale. It's a structural change to whole chromosome segments, and sometimes to chromosome number itself, rather than to a single base. So when a segment is lost, copied, reversed, or relocated, you're not touching one codon, you're affecting many genes at once. Multiple genes can be removed together, duplicated together, interrupted at the break points, or suddenly placed beside brand new regulatory regions. That's exactly why chromosomal mutations usually have broader effects than a substitution or a small insertion inside one gene. It's the same fundamental kind of DNA change, but operating across a far larger stretch of the genome, and that scale is what drives the bigger consequences."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6Chromosomes",
+        "props": {
+          "mode": "scale",
+          "genes": "ABCDEFGH",
+          "segment": [
+            3,
+            5
+          ],
+          "pointGene": 2,
+          "beats": {
+            "point": 0,
+            "chrom": 100,
+            "lift": 311
+          },
+          "footer": {
+            "text": "Many genes in one segment, so the effects are broader",
+            "at": 610
+          }
+        }
       }
     },
     {
@@ -127,6 +149,23 @@
       "caption": "Chromosome number changes affect every gene on the chromosome.",
       "voiceover": {
         "text": "There's one more class of large-scale mutation to know, and it's about chromosome number rather than internal structure. Sometimes, during meiosis, chromosomes fail to separate properly, that's non-disjunction, and the result is a gamete with an abnormal number of chromosomes. If that gamete is fertilised, the offspring gains or loses a whole chromosome, which alters the copy number of every single gene sitting on it. Trisomy twenty one, the cause of Down syndrome, is the standard example, an extra copy of chromosome twenty one in every cell. At HSC survey level, you don't need every numerical disorder, you just need to recognise that whole-chromosome changes have major effects because so many genes are involved at once. And that reinforces the unifying principle of the whole lesson, the larger the genomic region affected, the more widespread the possible consequences."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6Chromosomes",
+        "props": {
+          "mode": "number",
+          "chromosome": "21",
+          "beats": {
+            "separate": 116,
+            "fertilise": 212,
+            "tag": 383
+          },
+          "footer": {
+            "text": "A whole extra chromosome changes the copy number of every gene on it",
+            "at": 534
+          }
+        }
       }
     },
     {
