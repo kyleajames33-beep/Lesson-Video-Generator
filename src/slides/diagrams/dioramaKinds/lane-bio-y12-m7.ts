@@ -11,6 +11,9 @@ import {ResponseDiagram} from '../kinds/bio-y12-m7/ResponseDiagram';
 import {EpiCurveDiagram} from '../kinds/bio-y12-m7/EpiCurveDiagram';
 import {StepsDiagram} from '../kinds/bio-y12-m7/StepsDiagram';
 import {SelectionDiagram} from '../kinds/bio-y12-m7/SelectionDiagram';
+import {AntigenDiagram} from '../kinds/bio-y12-m7/AntigenDiagram';
+import {AntibodyDiagram} from '../kinds/bio-y12-m7/AntibodyDiagram';
+import {ClonalDiagram} from '../kinds/bio-y12-m7/ClonalDiagram';
 
 export const KINDS: DioramaKindMap = {
   bio12m7Sorter: SorterDiagram,
@@ -19,4 +22,7 @@ export const KINDS: DioramaKindMap = {
   bio12m7EpiCurve: EpiCurveDiagram,
   bio12m7Steps: StepsDiagram,
   bio12m7Selection: SelectionDiagram,
+  bio12m7Antigen: AntigenDiagram,
+  bio12m7Antibody: AntibodyDiagram,
+  bio12m7Clonal: ClonalDiagram,
 };

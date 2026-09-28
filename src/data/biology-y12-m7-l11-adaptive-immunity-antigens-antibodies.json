@@ -72,6 +72,27 @@
       "caption": "An antigen is a recognised molecule; the epitope is the precise region an antibody binds.",
       "voiceover": {
         "text": "Let's start with what the adaptive system actually recognises. An antigen is any molecule the adaptive immune system recognises as foreign, triggering a specific response. Most antigens are proteins or polysaccharides on a pathogen's surface, like the spike protein of a coronavirus. But here's the precise bit. An antibody doesn't bind the whole antigen, it binds just one small region of it, and that region is the epitope. So one antigen can carry many epitopes, each stimulating a different B cell clone. There's also a crucial distinction your immune system makes. It tolerates self-antigens, the normal molecules on your own cells, but attacks non-self antigens, the foreign ones. That self versus non-self recognition is the basis of immune specificity, letting the system target a pathogen while leaving your own cells alone."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Antigen",
+        "props": {
+          "labels": {
+            "antigen": "antigen",
+            "epitope": "epitope: the exact spot bound",
+            "clones": "each epitope: a different B cell clone",
+            "self": "self-antigens",
+            "nonself": "non-self antigens"
+          },
+          "beats": {
+            "antigen": 58,
+            "epitope": 742,
+            "bind": 800,
+            "clones": 922,
+            "self": 1102,
+            "nonself": 1234
+          }
+        }
       }
     },
     {
@@ -121,6 +142,30 @@
       "caption": "The variable region binds one epitope; antibodies neutralise, opsonise, activate complement, agglutinate.",
       "voiceover": {
         "text": "Now the antibody itself. Every antibody has the same basic Y-shape, but a unique antigen-binding site that matches exactly one epitope. The tips of the Y are the variable region, the unique binding site that gives each antibody its specificity. The stem is the constant region, which sets the antibody's class and effector functions. And each antibody has two identical binding sites, one on each arm. So what do antibodies do? Four things. Neutralisation, binding a pathogen to block it from attaching to host cells. Opsonisation, coating a pathogen to mark it for phagocytosis. Complement activation, where antibody-antigen complexes trigger the complement cascade and a membrane attack complex. And agglutination, clumping pathogens together, since each antibody has two binding sites, making them easier to engulf. The key point, antibodies mark or block pathogens, they don't kill them directly."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Antibody",
+        "props": {
+          "mode": "structure",
+          "labels": {
+            "variable": "variable region: the unique binding site",
+            "constant": "constant region: sets class and effector functions",
+            "two": "two identical binding sites",
+            "verdict": "Antibodies mark and block; they don’t kill directly"
+          },
+          "beats": {
+            "y": 34,
+            "variable": 226,
+            "constant": 454,
+            "two": 670,
+            "t1": 850,
+            "t2": 994,
+            "t3": 1102,
+            "t4": 1294,
+            "verdict": 1486
+          }
+        }
       }
     },
     {
@@ -147,39 +192,23 @@
         "text": "So how does the body find that one matching cell Burnet described? Through clonal selection and expansion. Your body holds millions of different naive B cells, each carrying a unique receptor that binds only one specific antigen, and almost all have never met their antigen. Now an antigen arrives, often presented on a dendritic cell from the innate system, as we saw last lesson. It binds the one B cell whose receptor matches, and that's the selection step. That B cell also needs a co-stimulatory signal from a T helper cell that recognised the same antigen. With both signals, clonal expansion begins, the selected B cell divides rapidly into two fates, plasma cells, the short-lived antibody factories, and memory B cells, the long-lived reserve. And one key consequence, because B cells need that T helper signal, HIV, which destroys T helper cells, eventually cripples the whole antibody response."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "many",
-            "label": "Many"
+        "type": "diorama",
+        "kind": "bio12m7Clonal",
+        "props": {
+          "labels": {
+            "footer": "HIV destroys T helper cells, so this second signal is lost"
           },
-          {
-            "id": "select",
-            "label": "Select"
-          },
-          {
-            "id": "expand",
-            "label": "Expand"
-          },
-          {
-            "id": "memory",
-            "label": "Memory"
+          "beats": {
+            "naive": 178,
+            "antigen": 502,
+            "bind": 718,
+            "helper": 958,
+            "expand": 1150,
+            "plasma": 1294,
+            "memory": 1390,
+            "footer": 1618
           }
-        ],
-        "edges": [
-          {
-            "from": "many",
-            "to": "select"
-          },
-          {
-            "from": "select",
-            "to": "expand"
-          },
-          {
-            "from": "expand",
-            "to": "memory"
-          }
-        ]
+        }
       }
     },
     {

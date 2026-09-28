@@ -13,7 +13,8 @@ import {PAL, shade} from './shared';
 export type IconName =
 	| 'virus' | 'bacterium' | 'fungus' | 'protozoan' | 'worm' | 'tick' | 'prion' | 'viroid'
 	| 'mosquito' | 'person' | 'sickPerson' | 'cell' | 'plant' | 'drop' | 'air' | 'dish'
-	| 'syringe' | 'liver' | 'rbc' | 'pill' | 'fomite' | 'net' | 'spray' | 'fan' | 'mask' | 'sheep' | 'fly' | 'globe' | 'none';
+	| 'syringe' | 'liver' | 'rbc' | 'pill' | 'fomite' | 'net' | 'spray' | 'fan' | 'mask' | 'sheep' | 'fly' | 'globe'
+	| 'tcell' | 'helperT' | 'bcell' | 'plasma' | 'memory' | 'macrophage' | 'dendritic' | 'neutrophil' | 'nk' | 'mast' | 'complement' | 'interferon' | 'none';
 
 export type IconOpts = {
 	/** bacterium: draw pili / fimbriae. */
@@ -30,6 +31,8 @@ export type IconOpts = {
 	globe?: 'some' | 'regionZero' | 'none';
 	/** fly: sterile (radiation badge). */
 	sterile?: boolean;
+	/** bcell: receptor tip colour (which epitope it fits). */
+	rec?: string;
 	/** overall tint override (PAL key). */
 	tone?: keyof typeof PAL;
 };
@@ -48,17 +51,18 @@ export const hash01 = (n: number) => {
 const draw = (id: string, name: IconName, frame: number, o: IconOpts): ReactNode => {
 	switch (name) {
 		case 'virus': {
+			const vt = o.tone ?? 'virus';
 			const spikes = Array.from({length: 12}, (_, k) => (k / 12) * Math.PI * 2 + frame / 240);
 			return (
 				<g>
 					<Shadow rx={28} y={34} />
 					{spikes.map((a, k) => (
 						<g key={k}>
-							<line x1={Math.cos(a) * 20} y1={Math.sin(a) * 20} x2={Math.cos(a) * 31} y2={Math.sin(a) * 31} stroke={edge('virus', -0.2)} strokeWidth={3} />
-							<circle cx={Math.cos(a) * 32} cy={Math.sin(a) * 32} r={4.2} fill={g(id, 'virus')} stroke={edge('virus')} strokeWidth={0.8} />
+							<line x1={Math.cos(a) * 20} y1={Math.sin(a) * 20} x2={Math.cos(a) * 31} y2={Math.sin(a) * 31} stroke={edge(vt, -0.2)} strokeWidth={3} />
+							<circle cx={Math.cos(a) * 32} cy={Math.sin(a) * 32} r={4.2} fill={g(id, vt)} stroke={edge(vt)} strokeWidth={0.8} />
 						</g>
 					))}
-					<circle r={23} fill={g(id, 'virus')} stroke={edge('virus')} strokeWidth={1} />
+					<circle r={23} fill={g(id, vt)} stroke={edge(vt)} strokeWidth={1} />
 				</g>
 			);
 		}
@@ -360,6 +364,116 @@ const draw = (id: string, name: IconName, frame: number, o: IconOpts): ReactNode
 				</g>
 			);
 		}
+		case 'tcell':
+		case 'helperT':
+		case 'nk':
+		case 'memory': {
+			const tone = name === 'helperT' ? 'helper' : name === 'nk' ? 'nk' : name === 'memory' ? 'bcell' : 'immune';
+			return (
+				<g>
+					<Shadow rx={28} y={32} />
+					{Array.from({length: 10}, (_, k) => {
+						const a = (k / 10) * Math.PI * 2 + frame / 300;
+						return <line key={k} x1={Math.cos(a) * 26} y1={Math.sin(a) * 26} x2={Math.cos(a) * 32} y2={Math.sin(a) * 32} stroke={edge(tone, -0.2)} strokeWidth={3} strokeLinecap="round" />;
+					})}
+					<circle r={27} fill={g(id, tone)} stroke={edge(tone)} strokeWidth={1} />
+					<circle cx={3} cy={2} r={15} fill={shade(PAL[tone], -0.22)} opacity={0.55} />
+					{name === 'nk' && [[-14, -12], [14, -10], [-10, 14], [16, 12]].map(([x, y], k) => <circle key={k} cx={x} cy={y} r={3} fill={PAL.granule} />)}
+				</g>
+			);
+		}
+		case 'bcell':
+		case 'plasma': {
+			const tone = 'bcell';
+			return (
+				<g>
+					<Shadow rx={28} y={32} />
+					{name === 'bcell' &&
+						Array.from({length: 8}, (_, k) => {
+							const a = (k / 8) * Math.PI * 2 + frame / 300;
+							return (
+								<g key={k} transform={`translate(${Math.cos(a) * 27},${Math.sin(a) * 27}) rotate(${(a * 180) / Math.PI + 90})`}>
+									<path d="M 0 0 L 0 -6 M 0 -6 L -4 -11 M 0 -6 L 4 -11" stroke={PAL.antibody} strokeWidth={2.2} strokeLinecap="round" fill="none" />
+									{o.rec && <circle cx={0} cy={-11} r={3.2} fill={o.rec} />}
+								</g>
+							);
+						})}
+					{name === 'plasma' ? (
+						<g>
+							<ellipse rx={32} ry={24} fill={g(id, tone)} stroke={edge(tone)} strokeWidth={1} />
+							{[-10, -2, 6].map((y) => <path key={y} d={`M -20 ${y} q 12 -5 24 0 t 14 0`} stroke={shade(PAL.bcell, -0.25)} strokeWidth={1.8} fill="none" opacity={0.7} />)}
+							<circle cx={-14} cy={4} r={9} fill={shade(PAL.bcell, -0.25)} opacity={0.6} />
+						</g>
+					) : (
+						<g>
+							<circle r={26} fill={g(id, tone)} stroke={edge(tone)} strokeWidth={1} />
+							<circle cx={3} cy={2} r={14} fill={shade(PAL.bcell, -0.22)} opacity={0.55} />
+						</g>
+					)}
+				</g>
+			);
+		}
+		case 'macrophage': {
+			const w = Math.sin(frame / 25) * 3;
+			return (
+				<g>
+					<Shadow rx={40} y={32} />
+					<path d={`M -40 2 C -44 -18 -26 -30 -10 -26 C 2 -40 22 -34 26 -20 C 44 -18 46 4 36 12 C 40 28 18 34 6 26 C -8 36 -30 30 -32 18 C ${-46 + w} 16 -44 8 -40 2 Z`} fill={g(id, 'macro')} stroke={edge('macro')} strokeWidth={1} />
+					<ellipse cx={2} cy={0} rx={13} ry={10} fill={shade(PAL.macro, -0.25)} opacity={0.6} />
+					{[[-20, -10], [22, 8], [-12, 16]].map(([x, y], k) => <circle key={k} cx={x} cy={y} r={4} fill={shade(PAL.macro, -0.35)} opacity={0.5} />)}
+				</g>
+			);
+		}
+		case 'dendritic':
+			return (
+				<g>
+					<Shadow rx={36} y={32} />
+					{Array.from({length: 7}, (_, k) => {
+						const a = (k / 7) * Math.PI * 2 + Math.sin(frame / 30 + k) * 0.08;
+						const L = 34 + (k % 3) * 5;
+						return <path key={k} d={`M ${Math.cos(a) * 12} ${Math.sin(a) * 12} Q ${Math.cos(a + 0.3) * L * 0.6} ${Math.sin(a + 0.3) * L * 0.6} ${Math.cos(a) * L} ${Math.sin(a) * L}`} stroke={PAL.dendritic} strokeWidth={7} strokeLinecap="round" fill="none" />;
+					})}
+					<circle r={18} fill={g(id, 'dendritic')} stroke={edge('dendritic')} strokeWidth={1} />
+					<circle cx={2} cy={2} r={8} fill={shade(PAL.dendritic, -0.25)} opacity={0.6} />
+				</g>
+			);
+		case 'neutrophil':
+			return (
+				<g>
+					<Shadow rx={28} y={32} />
+					<circle r={27} fill={g(id, 'neutro')} stroke={edge('neutro')} strokeWidth={1} />
+					{[[-9, -5], [0, 6], [10, -4]].map(([x, y], k) => <ellipse key={k} cx={x} cy={y} rx={7} ry={6} fill={PAL.granule} opacity={0.6} />)}
+					<path d="M -9 -5 L 0 6 L 10 -4" stroke={PAL.granule} strokeWidth={3} opacity={0.6} fill="none" />
+				</g>
+			);
+		case 'mast':
+			return (
+				<g>
+					<Shadow rx={28} y={32} />
+					<circle r={27} fill={g(id, 'mast')} stroke={edge('mast')} strokeWidth={1} />
+					{Array.from({length: 16}, (_, k) => <circle key={k} cx={Math.cos(k * 2.4) * (8 + (k % 4) * 4)} cy={Math.sin(k * 2.4) * (8 + (k % 4) * 4)} r={2.6} fill={PAL.granule} opacity={0.75} />)}
+				</g>
+			);
+		case 'complement':
+			// soluble proteins: a ring pore (membrane attack complex) of small balls
+			return (
+				<g transform={`rotate(${frame / 4})`}>
+					<Shadow rx={24} y={30} />
+					{Array.from({length: 10}, (_, k) => {
+						const a = (k / 10) * Math.PI * 2;
+						return <circle key={k} cx={Math.cos(a) * 18} cy={Math.sin(a) * 18} r={7} fill={g(id, 'protein')} stroke={edge('protein')} strokeWidth={0.8} />;
+					})}
+				</g>
+			);
+		case 'interferon':
+			return (
+				<g>
+					<Shadow rx={24} y={30} />
+					{[[-12, -8], [10, -12], [0, 10], [16, 8], [-16, 12]].map(([x, y], k) => (
+						<circle key={k} cx={x + Math.sin(frame / 15 + k) * 2} cy={y} r={6} fill={g(id, 'helper')} stroke={edge('helper')} strokeWidth={0.8} />
+					))}
+				</g>
+			);
 		default:
 			return null;
 	}

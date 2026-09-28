@@ -151,6 +151,83 @@
       "caption": "Innate components: neutrophils, macrophages, dendritic cells, NK cells, complement, interferons.",
       "voiceover": {
         "text": "Let's name the components, because the exam asks you to describe their roles. On the cellular side, neutrophils are the first phagocytes to arrive at an infection, they're short-lived, and they're the most abundant white blood cell in your blood. Macrophages are long-lived phagocytes that patrol the tissues, engulfing pathogens and releasing cytokines, and they present antigens to T cells, bridging to the adaptive system. Dendritic cells are sentinels that engulf and process antigens, then migrate to the lymph nodes to activate T cells, so they're the key link between innate and adaptive. Natural killer cells kill virus-infected and cancerous host cells. And mast cells release histamine to start inflammation. On the soluble side, you have the complement system, a set of blood proteins that opsonise pathogens and form a membrane attack complex to punch holes in them, and interferons, which are released by virus-infected cells to warn their neighbours to prepare antiviral defences."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Sorter",
+        "props": {
+          "bins": [
+            {
+              "title": "Phagocytes",
+              "sub": "engulf pathogens"
+            },
+            {
+              "title": "Killers, signallers",
+              "sub": "NK cells kill; mast cells signal",
+              "tone": "grey"
+            },
+            {
+              "title": "Soluble chemicals",
+              "sub": "tag, punch holes, warn",
+              "tone": "warm"
+            }
+          ],
+          "items": [
+            {
+              "text": "neutrophils",
+              "bin": 0,
+              "at": 130,
+              "icon": "neutrophil"
+            },
+            {
+              "text": "macrophages",
+              "bin": 0,
+              "at": 466,
+              "icon": "macrophage"
+            },
+            {
+              "text": "dendritic cells",
+              "bin": 0,
+              "at": 778,
+              "icon": "dendritic"
+            },
+            {
+              "text": "NK cells",
+              "bin": 1,
+              "at": 1126,
+              "icon": "nk"
+            },
+            {
+              "text": "mast cells",
+              "bin": 1,
+              "at": 1258,
+              "icon": "mast"
+            },
+            {
+              "text": "complement",
+              "bin": 2,
+              "at": 1426,
+              "icon": "complement"
+            },
+            {
+              "text": "interferons",
+              "bin": 2,
+              "at": 1690,
+              "icon": "interferon"
+            }
+          ],
+          "footer": [
+            {
+              "text": "Neutrophils: first to arrive, short-lived, most abundant white cell",
+              "at": 300
+            },
+            {
+              "text": "Macrophages and dendritic cells present antigen to T cells",
+              "at": 778,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {
