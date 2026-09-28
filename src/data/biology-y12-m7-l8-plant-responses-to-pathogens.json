@@ -205,6 +205,31 @@
       "caption": "Salicylic acid signals systemic acquired resistance, priming the whole plant broadly.",
       "voiceover": {
         "text": "The hypersensitive response contains a pathogen locally, but it also releases a signal, and that signal does something bigger. This is systemic acquired resistance. After a localised infection triggers the hypersensitive response, signalling molecules, mainly salicylic acid, travel through the phloem to the uninfected parts of the plant. In those distant tissues, salicylic acid switches on pathogenesis-related genes, producing defensive PR proteins that prime the plant against future infection. So the entire plant becomes more resistant, not just the original site. Now, the exam loves to compare this with animal immunity. Systemic acquired resistance is analogous to immunological memory, but the mechanism is completely different. It's broad-spectrum, meaning it isn't specific to one pathogen, whereas animal memory is highly specific. And it lasts only days to weeks, not a lifetime. So it's a useful analogy, but don't call them the same thing."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Plant",
+        "props": {
+          "mode": "sar",
+          "labels": {
+            "lesion": "local infection: HR lesion",
+            "signal": "salicylic acid travels in the phloem",
+            "whole": "One local hit, whole-plant readiness",
+            "compare": "like animal immune memory, but different:",
+            "broad": "broad-spectrum, not specific",
+            "short": "lasts days to weeks"
+          },
+          "beats": {
+            "lesion": 0,
+            "signal": 358,
+            "phloem": 418,
+            "pr": 610,
+            "whole": 802,
+            "compare": 1090,
+            "broad": 1234,
+            "short": 1474
+          }
+        }
       }
     },
     {
