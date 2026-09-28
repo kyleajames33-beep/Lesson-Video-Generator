@@ -15,6 +15,7 @@ import {DataPanelsDiagram} from '../kinds/bio-y12-m8/DataPanelsDiagram';
 import {NonDisjunctionDiagram} from '../kinds/bio-y12-m8/NonDisjunctionDiagram';
 import {InheritanceDiagram} from '../kinds/bio-y12-m8/InheritanceDiagram';
 import {GuardCellsDiagram} from '../kinds/bio-y12-m8/GuardCellsDiagram';
+import {CFTRDiagram} from '../kinds/bio-y12-m8/CFTRDiagram';
 
 export const KINDS: DioramaKindMap = {
   bio12m8EyeRays: EyeRaysDiagram,
@@ -27,4 +28,5 @@ export const KINDS: DioramaKindMap = {
   bio12m8NonDisjunction: NonDisjunctionDiagram,
   bio12m8Inheritance: InheritanceDiagram,
   bio12m8GuardCells: GuardCellsDiagram,
+  bio12m8CFTR: CFTRDiagram,
 };
