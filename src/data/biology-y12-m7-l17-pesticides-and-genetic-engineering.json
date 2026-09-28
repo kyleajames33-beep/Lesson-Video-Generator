@@ -77,6 +77,59 @@
       "caption": "Pesticides kill insect vectors; heavy use selects for resistant mosquitoes.",
       "voiceover": {
         "text": "Let's start with the oldest tool, chemical pesticides. Many serious diseases, like malaria and dengue, reach humans through an insect vector, usually a mosquito. So one obvious strategy is to break that link by killing the insect. Pesticides attack the insect's nervous system, its growth or its gut, which is how DDT, the pyrethroids and the bacterial Bt toxin work. A great example is the pyrethroid treated bed net, a frontline defence against malaria mosquitoes. But here's the catch. Heavy spraying is a human induced selection pressure. A few mosquitoes already carry mutations that let them survive, and spraying kills the rest, so the survivors breed and resistance spreads. That's how DDT resistant mosquitoes emerged, the same logic as antibiotic resistant bacteria. DDT is the cautionary tale, because it also builds up in food chains, and today it's banned or restricted almost everywhere."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Selection",
+        "props": {
+          "organism": "mosquito",
+          "drug": "spray",
+          "legend": "resistance mutation",
+          "captions": [
+            {
+              "text": "Kill the vector, break the link",
+              "at": 310
+            },
+            {
+              "text": "Attack nerves, growth or gut",
+              "at": 454
+            },
+            {
+              "text": "Pyrethroid-treated bed nets",
+              "at": 766
+            },
+            {
+              "text": "A few already carry resistance",
+              "at": 1018
+            },
+            {
+              "text": "Spraying kills the rest",
+              "at": 1150
+            },
+            {
+              "text": "Survivors breed: resistance spreads",
+              "at": 1222,
+              "amber": true
+            }
+          ],
+          "beats": {
+            "pop": 310,
+            "mutants": 1018,
+            "drug": 1150,
+            "survive": 1210,
+            "reproduce": 1240
+          },
+          "footer": [
+            {
+              "text": "Same logic as antibiotic-resistant bacteria",
+              "at": 1378
+            },
+            {
+              "text": "DDT also builds up in food chains: now banned or restricted",
+              "at": 1546
+            }
+          ]
+        }
       }
     },
     {

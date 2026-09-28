@@ -329,39 +329,57 @@
         "text": "So was Fleming right? Absolutely, and resistance is one of the clearest examples of natural selection you can see in a human lifetime. Here's the crucial idea. The antibiotic does not create resistance. Within any large bacterial population, rare resistant variants already exist, thrown up by random mutation before the antibiotic ever shows up. When you apply the antibiotic, it kills off the susceptible bacteria, but the resistant ones survive, and now they have the whole place to themselves, so they reproduce, and the next generation is mostly resistant. The drug acted as the selection pressure, it selected for resistance, it didn't cause the mutation. And it gets worse, because bacteria can swap resistance genes directly, on little rings of DNA called plasmids, through horizontal gene transfer. A resistance gene can jump from one species to a completely different species in a matter of hours, far faster than mutation alone."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "n1",
-            "label": "Mutation"
+        "type": "diorama",
+        "kind": "bio12m7Selection",
+        "props": {
+          "organism": "bacterium",
+          "drug": "antibiotic",
+          "legend": "resistant variant (random mutation)",
+          "captions": [
+            {
+              "text": "A large bacterial population",
+              "at": 0
+            },
+            {
+              "text": "Rare resistant variants already exist",
+              "at": 406
+            },
+            {
+              "text": "Antibiotic kills the susceptible ones",
+              "at": 598
+            },
+            {
+              "text": "Resistant survivors reproduce",
+              "at": 910
+            },
+            {
+              "text": "The drug selects; it doesn’t create",
+              "at": 1078,
+              "amber": true
+            },
+            {
+              "text": "Plasmids pass resistance between species",
+              "at": 1426
+            }
+          ],
+          "hgt": {
+            "text": "plasmid"
           },
-          {
-            "id": "n2",
-            "label": "Exposure"
+          "beats": {
+            "pop": 0,
+            "mutants": 406,
+            "drug": 598,
+            "survive": 754,
+            "reproduce": 910,
+            "hgt": 1500
           },
-          {
-            "id": "n3",
-            "label": "Survive"
-          },
-          {
-            "id": "n4",
-            "label": "Spread"
-          }
-        ],
-        "edges": [
-          {
-            "from": "n1",
-            "to": "n2"
-          },
-          {
-            "from": "n2",
-            "to": "n3"
-          },
-          {
-            "from": "n3",
-            "to": "n4"
-          }
-        ]
+          "footer": [
+            {
+              "text": "Horizontal gene transfer: another species in hours",
+              "at": 1606
+            }
+          ]
+        }
       }
     },
     {
