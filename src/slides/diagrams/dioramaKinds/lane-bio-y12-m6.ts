@@ -5,6 +5,8 @@
 // See docs/diorama-system.md.
 
 import type {DioramaKindMap} from './types';
+import {CodonsDiagram} from '../kinds/bio-y12-m6/CodonsDiagram';
 
 export const KINDS: DioramaKindMap = {
+  bio12m6Codons: CodonsDiagram,
 };

@@ -102,6 +102,62 @@
       "caption": "Coding mutations can alter the protein, but not all are severe.",
       "voiceover": {
         "text": "The second dimension is functional location, where in the genome the mutation sits. Mutations in coding DNA can change codons, and therefore alter the amino acid sequence of a protein. That can affect how the protein folds, the shape of its active site, its ability to transport or bind, or its structural stability. This logic builds directly on the point-mutation lesson, a codon change leads to an amino acid change leads to a protein change. But here's the balance you need to strike. Not every coding mutation is severe. A coding-region mutation might be silent, missense, nonsense or frameshift, and the actual protein consequence depends on exactly what changed and where. So coding DNA is genuinely important, but it is not the whole story, which brings us to the part students most often get wrong, non-coding DNA."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6Codons",
+        "props": {
+          "rows": [
+            {
+              "label": "Codon change → amino acid change",
+              "seq": "GAG",
+              "op": {
+                "type": "sub",
+                "pos": 1,
+                "base": "T"
+              },
+              "at": 40,
+              "opAt": 350,
+              "chain": true
+            },
+            {
+              "label": "Lands on a synonym codon",
+              "seq": "GAA",
+              "op": {
+                "type": "sub",
+                "pos": 2,
+                "base": "G"
+              },
+              "at": 556,
+              "opAt": 572,
+              "chain": true
+            },
+            {
+              "label": "Becomes a stop codon",
+              "seq": "GAA",
+              "op": {
+                "type": "sub",
+                "pos": 0,
+                "base": "T"
+              },
+              "at": 578,
+              "opAt": 596,
+              "chain": true
+            },
+            {
+              "label": "One base added",
+              "seq": "ATGCCGAAG",
+              "op": {
+                "type": "ins",
+                "pos": 4,
+                "base": "A"
+              },
+              "at": 592,
+              "opAt": 612,
+              "chain": true
+            }
+          ]
+        }
       }
     },
     {
