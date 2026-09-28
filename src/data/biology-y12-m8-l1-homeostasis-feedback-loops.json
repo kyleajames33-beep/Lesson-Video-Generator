@@ -171,34 +171,30 @@
         "text": "So why is negative feedback the mechanism of homeostasis, and positive feedback is not? It comes down to one feature, self-limiting. With negative feedback, as the variable returns toward normal, the stimulus shrinks, so the response also weakens. The system settles into a stable oscillation around the set point, it corrects itself. Positive feedback does the reverse. As the variable moves, the response gets stronger, which moves the variable even further, so the loop reinforces itself and runs to completion. The classic example is childbirth. Cervical stretch triggers the hormone oxytocin, oxytocin intensifies the contractions, the contractions stretch the cervix even more, and round it goes. Crucially, that loop only stops when an outside event happens, the baby is delivered. So positive feedback is a perfectly normal, healthy mechanism, in childbirth, in blood clotting, in nerve impulses. It just is not how the body holds a variable steady."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Feature",
-          "Negative feedback",
-          "Positive feedback"
-        ],
-        "rows": [
-          [
-            "Response direction",
-            "Opposes stimulus",
-            "Amplifies stimulus"
-          ],
-          [
-            "Effect on variable",
-            "Returns to set point",
-            "Driven further away"
-          ],
-          [
-            "Self-limiting?",
-            "Yes",
-            "No"
-          ],
-          [
-            "Role",
-            "Maintains homeostasis",
-            "Drives a process to completion"
-          ]
-        ]
+        "type": "diorama",
+        "kind": "bio12m8FeedbackCurves",
+        "props": {
+          "negative": {
+            "title": "Negative feedback: self-limiting",
+            "at": 190,
+            "doneAt": 454,
+            "label": "stable oscillation around the set point"
+          },
+          "positive": {
+            "title": "Positive feedback: reinforces itself",
+            "at": 562,
+            "stopAt": 1342,
+            "stopLabel": "baby delivered: loop stops",
+            "loop": {
+              "steps": [
+                "cervical stretch",
+                "oxytocin",
+                "stronger contractions"
+              ],
+              "at": 946
+            }
+          }
+        }
       }
     },
     {
