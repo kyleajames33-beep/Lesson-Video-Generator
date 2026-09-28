@@ -8,9 +8,11 @@ import type {DioramaKindMap} from './types';
 import {CodonsDiagram} from '../kinds/bio-y12-m6/CodonsDiagram';
 import {AlleleJobsDiagram} from '../kinds/bio-y12-m6/AlleleJobsDiagram';
 import {GenePoolDiagram} from '../kinds/bio-y12-m6/GenePoolDiagram';
+import {DnaDamageDiagram} from '../kinds/bio-y12-m6/DnaDamageDiagram';
 
 export const KINDS: DioramaKindMap = {
   bio12m6Codons: CodonsDiagram,
   bio12m6AlleleJobs: AlleleJobsDiagram,
   bio12m6GenePool: GenePoolDiagram,
+  bio12m6DnaDamage: DnaDamageDiagram,
 };
