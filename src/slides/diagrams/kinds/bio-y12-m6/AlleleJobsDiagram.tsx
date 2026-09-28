@@ -15,6 +15,7 @@
 // says which process adds genuinely new DNA. Verdict chips and captions come
 // from the scene's own text.
 
+import type {ReactNode} from 'react';
 import {interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
@@ -93,7 +94,7 @@ export const AlleleJobsDiagram = ({panels, arrows = false, footer, delay = 62}: 
 				const t = ease(frame, act, act + 40);
 				const bob = (k: number) => idleBob(frame, k + i * 17, 1.4);
 				const ry = rx * 0.34;
-				let body: JSX.Element | null = null;
+				let body: ReactNode = null;
 				let note: {text: string; x: number; y: number; o: number} | null = null;
 
 				if (p.action === 'mutate') {
