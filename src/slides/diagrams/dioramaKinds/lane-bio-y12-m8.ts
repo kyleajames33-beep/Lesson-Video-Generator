@@ -21,6 +21,7 @@ import {AnaphylaxisDiagram} from '../kinds/bio-y12-m8/AnaphylaxisDiagram';
 import {FanDiagram} from '../kinds/bio-y12-m8/FanDiagram';
 import {DoseLatencyDiagram} from '../kinds/bio-y12-m8/DoseLatencyDiagram';
 import {ThymusDiagram} from '../kinds/bio-y12-m8/ThymusDiagram';
+import {PancreasLiverDiagram} from '../kinds/bio-y12-m8/PancreasLiverDiagram';
 
 export const KINDS: DioramaKindMap = {
   bio12m8EyeRays: EyeRaysDiagram,
@@ -39,4 +40,5 @@ export const KINDS: DioramaKindMap = {
   bio12m8Fan: FanDiagram,
   bio12m8DoseLatency: DoseLatencyDiagram,
   bio12m8Thymus: ThymusDiagram,
+  bio12m8PancreasLiver: PancreasLiverDiagram,
 };
