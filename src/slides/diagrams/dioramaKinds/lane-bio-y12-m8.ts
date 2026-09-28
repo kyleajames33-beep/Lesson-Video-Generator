@@ -10,6 +10,7 @@ import {EarRouteDiagram} from '../kinds/bio-y12-m8/EarRouteDiagram';
 import {FeedbackLoopDiagram} from '../kinds/bio-y12-m8/FeedbackLoopDiagram';
 import {FeedbackCurvesDiagram} from '../kinds/bio-y12-m8/FeedbackCurvesDiagram';
 import {TwoHitDiagram} from '../kinds/bio-y12-m8/TwoHitDiagram';
+import {MembraneDiagram} from '../kinds/bio-y12-m8/MembraneDiagram';
 
 export const KINDS: DioramaKindMap = {
   bio12m8EyeRays: EyeRaysDiagram,
@@ -17,4 +18,5 @@ export const KINDS: DioramaKindMap = {
   bio12m8FeedbackLoop: FeedbackLoopDiagram,
   bio12m8FeedbackCurves: FeedbackCurvesDiagram,
   bio12m8TwoHit: TwoHitDiagram,
+  bio12m8Membrane: MembraneDiagram,
 };

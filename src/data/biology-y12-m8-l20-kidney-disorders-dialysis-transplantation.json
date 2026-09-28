@@ -82,55 +82,81 @@
         "text": "Let's go inside the kidney's working unit, the nephron. Each kidney holds about a million of them, and each one removes waste in three steps. Step one is glomerular filtration. Blood arrives at the glomerulus, a tight knot of capillaries, under high pressure. That pressure forces water and small molecules, like glucose, amino acids, urea and ions, out of the blood and into a cup shaped structure around it called Bowman's capsule. Blood cells and large proteins are too big to pass through, so they stay in the blood. The fluid collected in the capsule is now called filtrate, and here's the catch. Filtration sorts by size, not by usefulness, so the filtrate holds wastes, but also lots of things the body can't afford to lose."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "glom",
-            "label": "Glomerulus"
-          },
-          {
-            "id": "bc",
-            "label": "Bowman's capsule"
-          },
-          {
-            "id": "pct",
-            "label": "Proximal tubule"
-          },
-          {
-            "id": "loop",
-            "label": "Loop of Henle"
-          },
-          {
-            "id": "dct",
-            "label": "Distal tubule"
-          },
-          {
-            "id": "duct",
-            "label": "Collecting duct"
-          }
-        ],
-        "edges": [
-          {
-            "from": "glom",
-            "to": "bc"
-          },
-          {
-            "from": "bc",
-            "to": "pct"
-          },
-          {
-            "from": "pct",
-            "to": "loop"
-          },
-          {
-            "from": "loop",
-            "to": "dct"
-          },
-          {
-            "from": "dct",
-            "to": "duct"
-          }
-        ]
+        "type": "diorama",
+        "kind": "bio12m8Membrane",
+        "delay": 6,
+        "props": {
+          "mode": "filtration",
+          "topLabel": "Blood in the glomerulus",
+          "bottomLabel": "Filtrate in Bowman's capsule",
+          "species": [
+            {
+              "key": "water",
+              "label": "water",
+              "color": "blue",
+              "size": "small",
+              "behaviour": "cross",
+              "at": 534
+            },
+            {
+              "key": "glucose",
+              "label": "glucose",
+              "color": "green",
+              "size": "small",
+              "behaviour": "cross",
+              "at": 560
+            },
+            {
+              "key": "aa",
+              "label": "amino acids",
+              "color": "violet",
+              "size": "small",
+              "behaviour": "cross",
+              "at": 580
+            },
+            {
+              "key": "urea",
+              "label": "urea",
+              "color": "teal",
+              "size": "small",
+              "behaviour": "cross",
+              "at": 600
+            },
+            {
+              "key": "ions",
+              "label": "ions",
+              "color": "slate",
+              "size": "small",
+              "behaviour": "cross",
+              "at": 620
+            },
+            {
+              "key": "cells",
+              "label": "blood cells",
+              "color": "red",
+              "size": "large",
+              "behaviour": "stay",
+              "at": 858
+            },
+            {
+              "key": "prot",
+              "label": "large proteins",
+              "color": "#e0a33a",
+              "size": "large",
+              "behaviour": "stay",
+              "at": 880
+            }
+          ],
+          "crossAt": 560,
+          "pressureAt": 474,
+          "notes": [
+            {
+              "text": "Filtration sorts by size, not by usefulness",
+              "at": 1254,
+              "amber": true
+            }
+          ]
+        }
       },
       "revealDelays": {
         "diagram": 6
@@ -244,6 +270,53 @@
       "caption": "Dialysis removes wastes by diffusion across a semi-permeable membrane; counter-current flow keeps the gradient steep.",
       "voiceover": {
         "text": "Now the technology. Dialysis relies on one principle you already know, diffusion across a semi permeable membrane. In haemodialysis, the patient's blood is pumped along one side of a membrane inside a machine, while a fluid called dialysate flows along the other side. Urea is high in the blood and absent from fresh dialysate, so it diffuses down its concentration gradient, out of the blood and into the dialysate, which is then thrown away. The dialysate is made with normal blood levels of glucose and ions, so useful substances don't diffuse out, and proteins and cells are too big to cross. And the dialysate flows the opposite way to the blood, called counter current flow, which keeps the gradient steep along the whole membrane. A typical patient does this about three times a week, for around four hours each time."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8Membrane",
+        "props": {
+          "mode": "dialysis",
+          "topLabel": "Blood",
+          "bottomLabel": "Dialysate",
+          "species": [
+            {
+              "key": "urea",
+              "label": "urea",
+              "color": "teal",
+              "size": "small",
+              "behaviour": "cross",
+              "count": 10,
+              "at": 454
+            },
+            {
+              "key": "gi",
+              "label": "glucose",
+              "color": "violet",
+              "size": "small",
+              "behaviour": "balanced",
+              "count": 3,
+              "at": 838
+            },
+            {
+              "key": "cells",
+              "label": "cells, proteins",
+              "color": "red",
+              "size": "large",
+              "behaviour": "stay",
+              "count": 3,
+              "at": 1054
+            }
+          ],
+          "crossAt": 480,
+          "counterAt": 1210,
+          "graphAt": 1282,
+          "notes": [
+            {
+              "text": "About three times a week, around four hours each",
+              "at": 1498
+            }
+          ]
+        }
       }
     },
     {
