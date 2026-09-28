@@ -72,6 +72,28 @@
       "caption": "Active immunity: own response, memory, lasting. Passive: borrowed antibodies, immediate, temporary.",
       "voiceover": {
         "text": "So there are two fundamentally different ways to have protective antibodies in your blood. The first is active immunity. This is where your own immune system meets an antigen and mounts a response, exactly the primary response you studied last lesson, and crucially it forms memory cells. Active immunity is slow to get started, but it lasts a long time, sometimes for life. The second is passive immunity. Here you don't make the antibodies at all, you receive them ready-made from another source. Passive immunity is instant, the antibodies are working the moment they arrive, but here's the catch, your own immune system never gets activated, so no memory cells form, and the protection fades as those borrowed antibodies break down. So the whole contrast is speed versus durability. Active is slow but lasting. Passive is immediate but temporary."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Response",
+        "props": {
+          "mode": "activePassive",
+          "labels": {
+            "curve1": "active: your own response",
+            "curve2": "passive: borrowed antibodies",
+            "memory": "memory cells: active only",
+            "verdict": "Active is slow but lasting. Passive is immediate but temporary."
+          },
+          "beats": {
+            "exp1": 118,
+            "draw1": 140,
+            "draw1End": 700,
+            "memory": 466,
+            "draw2": 874,
+            "draw2End": 1340,
+            "verdict": 1486
+          }
+        }
       }
     },
     {

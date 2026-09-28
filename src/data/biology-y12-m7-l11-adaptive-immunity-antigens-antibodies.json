@@ -206,81 +206,37 @@
         "text": "Finally, the payoff, the difference between your first and second exposure, explained entirely by memory B cells. The primary response is your first meeting with an antigen. It takes seven to fourteen days to peak, the level is relatively low, and because it's slow, you may become ill while your body catches up. The secondary response is any later exposure to the same antigen. Now it peaks in just one to three days, because the memory B cells activate immediately, the peak is much higher and longer-lasting, and the infection is usually cleared before symptoms even appear. Picture antibody level against time, and the primary is a slow, small bump while the secondary is a sharp, towering peak. This is exactly the basis of vaccination, the memory cells made safely the first time drive that rapid second response."
       },
       "diagram": {
-        "type": "lineGraph",
-        "xLabel": "Time",
-        "yLabel": "Antibody level",
-        "series": [
-          {
-            "label": "1st exposure",
-            "color": "chem1",
-            "points": [
-              [
-                0,
-                0.02
-              ],
-              [
-                0.12,
-                0.05
-              ],
-              [
-                0.22,
-                0.28
-              ],
-              [
-                0.32,
-                0.34
-              ],
-              [
-                0.42,
-                0.22
-              ],
-              [
-                0.5,
-                0.12
-              ],
-              [
-                0.6,
-                0.08
-              ]
-            ]
+        "type": "diorama",
+        "kind": "bio12m7Response",
+        "props": {
+          "mode": "both",
+          "labels": {
+            "exp1": "1st exposure",
+            "exp2": "2nd exposure",
+            "lag1": "7–14 days to peak",
+            "lag2": "1–3 days",
+            "ratio": "much higher",
+            "ill": "may fall ill",
+            "well": "cleared before symptoms",
+            "memory": "memory B cells",
+            "verdict": "This is the basis of vaccination"
           },
-          {
-            "label": "2nd exposure",
-            "color": "bio",
-            "points": [
-              [
-                0.6,
-                0.08
-              ],
-              [
-                0.66,
-                0.4
-              ],
-              [
-                0.72,
-                0.85
-              ],
-              [
-                0.8,
-                0.92
-              ],
-              [
-                0.9,
-                0.8
-              ],
-              [
-                1,
-                0.7
-              ]
-            ]
+          "beats": {
+            "exp1": 154,
+            "draw1": 170,
+            "draw1End": 470,
+            "lag1": 286,
+            "ill": 478,
+            "memory": 520,
+            "exp2": 598,
+            "draw2": 620,
+            "draw2End": 900,
+            "lag2": 778,
+            "ratio": 922,
+            "well": 1066,
+            "verdict": 1426
           }
-        ],
-        "markers": [
-          {
-            "x": 0.6,
-            "label": "2nd exposure"
-          }
-        ]
+        }
       }
     },
     {
