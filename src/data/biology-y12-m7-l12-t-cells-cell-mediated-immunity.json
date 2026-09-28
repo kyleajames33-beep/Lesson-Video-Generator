@@ -156,29 +156,58 @@
         "text": "Let's walk through how a cytotoxic T cell finds and kills its target, because this is a favourite exam question. When a virus infects a cell, that cell loads little fragments of the viral proteins onto its M H C class one molecules. So the infected cell is basically waving a flag that says, I'm compromised, look inside me. A patrolling cytotoxic T cell with the matching receptor reads that flag. But recognition alone is not enough. It also needs a go signal, the cytokine interleukin two, from a helper T cell. With both, the cytotoxic T cell multiplies into a clone of identical killers. Then it kills, and the mechanism is precise. Perforin punches holes in the target's membrane, and granzymes slip through and trigger apoptosis, programmed cell death. The infected cell dies from the inside, and the virus factory shuts down at the source, something antibodies could never reach."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Stage",
-          "What happens"
-        ],
-        "rows": [
-          [
-            "1. Display",
-            "Infected cell shows viral peptide on MHC class I"
+        "type": "diorama",
+        "kind": "bio12m7TKill",
+        "props": {
+          "captions": [
+            {
+              "text": "A virus infects a body cell",
+              "at": 190
+            },
+            {
+              "text": "It flags itself: viral peptide on MHC class I",
+              "at": 430
+            },
+            {
+              "text": "A matching cytotoxic T cell reads the flag",
+              "at": 682
+            },
+            {
+              "text": "Go signal: IL-2 from a helper T cell",
+              "at": 826
+            },
+            {
+              "text": "It clones into identical killers",
+              "at": 1138
+            },
+            {
+              "text": "Perforin punches pores",
+              "at": 1318
+            },
+            {
+              "text": "Granzymes trigger apoptosis",
+              "at": 1426
+            },
+            {
+              "text": "The virus factory shuts down",
+              "at": 1666,
+              "amber": true
+            }
           ],
-          [
-            "2. Recognise",
-            "Cytotoxic T cell binds it and gets a helper IL-2 signal"
-          ],
-          [
-            "3. Expand",
-            "It clones into an army of identical killers"
-          ],
-          [
-            "4. Kill",
-            "Perforin forms pores; granzymes trigger apoptosis"
-          ]
-        ]
+          "beats": {
+            "cell": 190,
+            "mhc": 430,
+            "flag": 538,
+            "tc": 682,
+            "helper": 826,
+            "il2": 982,
+            "clone": 1138,
+            "perforin": 1318,
+            "granzyme": 1426,
+            "apoptosis": 1570,
+            "done": 1666
+          }
+        }
       }
     },
     {
@@ -203,6 +232,57 @@
       "caption": "Helper T cells coordinate B cells, cytotoxic T cells and macrophages via cytokines.",
       "voiceover": {
         "text": "Now the helper T cell, the one HIV destroys, which is the cell that ties everything together. It's switched on when its receptor binds antigen displayed on M H C class two, on professional antigen-presenting cells like dendritic cells and macrophages. Once active, it does not kill anyone. Instead it releases cytokines, and those are the command signals for the whole immune system. They give B cells the extra co-stimulatory signal they need to make high-quality antibodies. They drive the cytotoxic T cells to multiply, using interleukin two. And they crank up macrophages and call in innate cells too. So the helper T cell sits at the centre, coordinating both arms at once. That is exactly why HIV is so devastating. It does not destroy your killers or your antibody-makers. It just removes the coordinator, and the whole orchestra has lost its conductor. The musicians are still there, but nobody is telling them when to play."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Hub",
+        "props": {
+          "centre": {
+            "name": "helper T cell",
+            "icon": "helperT",
+            "at": 166,
+            "sub": "kills nothing: releases cytokines",
+            "subAt": 490
+          },
+          "source": {
+            "name": "dendritic cell",
+            "icon": "dendritic",
+            "at": 310,
+            "label": "antigen on MHC class II"
+          },
+          "spokes": [
+            {
+              "name": "B cells",
+              "icon": "bcell",
+              "label": "second signal: better antibodies",
+              "at": 730
+            },
+            {
+              "name": "cytotoxic T",
+              "icon": "tcell",
+              "label": "IL-2: multiply",
+              "at": 946
+            },
+            {
+              "name": "macrophages",
+              "icon": "macrophage",
+              "label": "cranked up",
+              "at": 1066
+            },
+            {
+              "name": "innate cells",
+              "icon": "neutrophil",
+              "label": "called in",
+              "at": 1114
+            }
+          ],
+          "knockout": {
+            "at": 1390,
+            "text": "HIV destroys the helper T cell",
+            "idleAt": 1582,
+            "idleText": "The others are still there, but nothing switches them on"
+          }
+        }
       }
     },
     {
