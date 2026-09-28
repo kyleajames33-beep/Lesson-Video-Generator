@@ -148,39 +148,58 @@
         "text": "Now to the most counterintuitive plant defence, the hypersensitive response. When a pathogen breaks through the outer barriers and starts infecting living cells, the plant does something that sounds self-destructive, it deliberately kills its own cells around the infection point. Here's the sequence. First, R-proteins inside the cell detect molecules from the pathogen, which triggers the defence cascade. Second, there's a burst of reactive oxygen species, which directly damages the pathogen and acts as a local signal. Third, the infected and surrounding cells undergo rapid programmed death, forming a visible dead patch called a necrotic lesion. And fourth, the surviving neighbours reinforce their walls with callose and lignin, sealing the zone off. Why does killing cells help? Because most plant pathogens are biotrophs, they need living host cells to survive. By creating a zone of dead, nutrient-poor tissue, the plant starves them. So a visible necrotic lesion is actually evidence the response worked, the pathogen has been contained."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "detect",
-            "label": "Detect"
-          },
-          {
-            "id": "ros",
-            "label": "ROS"
-          },
-          {
-            "id": "die",
-            "label": "Die"
-          },
-          {
-            "id": "seal",
-            "label": "Seal"
+        "type": "diorama",
+        "kind": "bio12m7LeafHR",
+        "props": {
+          "notes": [
+            {
+              "text": "A pathogen breaks in and infects living cells",
+              "at": 60
+            },
+            {
+              "text": "The plant kills its own cells around the infection",
+              "at": 322
+            },
+            {
+              "text": "R-proteins detect pathogen molecules",
+              "at": 478
+            },
+            {
+              "text": "A burst of reactive oxygen species: damages the pathogen, signals locally",
+              "at": 670
+            },
+            {
+              "text": "Infected and surrounding cells die: a necrotic lesion",
+              "at": 910
+            },
+            {
+              "text": "Surviving neighbours reinforce walls with callose and lignin",
+              "at": 1150
+            },
+            {
+              "text": "Most plant pathogens are biotrophs: they need living cells",
+              "at": 1450
+            },
+            {
+              "text": "Dead, nutrient-poor tissue starves them",
+              "at": 1678
+            },
+            {
+              "text": "A visible lesion means the pathogen is contained",
+              "at": 1882,
+              "amber": true
+            }
+          ],
+          "beats": {
+            "cells": 0,
+            "invade": 60,
+            "detect": 478,
+            "ros": 670,
+            "die": 910,
+            "seal": 1150,
+            "starve": 1678
           }
-        ],
-        "edges": [
-          {
-            "from": "detect",
-            "to": "ros"
-          },
-          {
-            "from": "ros",
-            "to": "die"
-          },
-          {
-            "from": "die",
-            "to": "seal"
-          }
-        ]
+        }
       }
     },
     {
