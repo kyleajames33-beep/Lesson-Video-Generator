@@ -220,7 +220,7 @@ export const StepsDiagram = ({
 								{s.tokens && tokenName &&
 									plinthSlots(cx, plinthY - 6, rx * 0.95, s.tokens.count).map((p, j) => {
 										const tp = pop(frame, fps, s.beat + 6 + j * 5);
-										const r = Math.min(17, rx * 0.26);
+										const r = Math.min(24, rx * 0.3);
 										const bob = idleBob(frame, j + i * 7, 1.6);
 										return s.tokens!.pair ? (
 											<g key={j} transform={`translate(${p.x},${p.y - r + bob}) scale(${tp})`}>

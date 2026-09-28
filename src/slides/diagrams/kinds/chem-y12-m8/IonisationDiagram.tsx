@@ -495,6 +495,10 @@ const HoclMode = ({frame, beats, id, pKa, lowerPH, higherPH}: {frame: number; be
 
 	return (
 		<g>
+			<g opacity={ramp(frame, 0, 16) * (1 - ramp(frame, tEq1 - 16, 16))}>
+				<text x={W / 2} y={60} textAnchor="middle" fill={TOK.ink} fontSize={26} fontWeight={800}>Not how much chlorine,</text>
+				<text x={W / 2} y={94} textAnchor="middle" fill={TOK.inkDim} fontSize={26} fontWeight={800}>but which species is present?</text>
+			</g>
 			<g opacity={ramp(frame, tEq1, 16)}>
 				<text x={W / 2} y={40} textAnchor="middle" fill={TOK.ink} fontSize={26} fontWeight={800}>Cl₂ + H₂O → HOCl + HCl</text>
 			</g>

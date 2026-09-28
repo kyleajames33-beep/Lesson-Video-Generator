@@ -293,7 +293,7 @@ export const CurveDiagram = ({
 						);
 					})}
 					{cuvettes.title && (
-						<text x={W / 2} y={(title ? 58 : 16) + 146} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>
+						<text x={W / 2} y={(title ? 58 : 16) + 162} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>
 							{cuvettes.title}
 						</text>
 					)}
