@@ -154,12 +154,51 @@
         "text": "Now the negative side. The clearest way biotechnology can reduce biodiversity is by pushing uniformity, the monoculture problem. If farmers everywhere plant the same few high performing varieties, the genetic diversity inside that crop falls, because rare alleles simply stop being grown. And low variation means low resilience. The textbook case is the banana. Almost every banana in Australian shops is a Cavendish, and because Cavendish plants are grown from cuttings, they're essentially clones. That's a problem, because a soil fungus causing Panama disease has already wiped out an earlier variety, Gros Michel, and a newer strain called Tropical Race four was detected in north Queensland in twenty fifteen. With no genetic variation, there's no resistant plant to fall back on. So the big exam point is that raising productivity is not the same as raising biodiversity."
       },
       "diagram": {
-        "type": "beforeAfter",
-        "beforeLabel": "Diverse varieties",
-        "afterLabel": "Single genotype",
-        "beforeContent": "Many alleles present, so some plants survive a new disease.",
-        "afterContent": "One genotype dominates, so one disease can hit the whole crop.",
-        "delay": 18
+        "type": "diorama",
+        "kind": "bio12m6Crop",
+        "props": {
+          "fields": [
+            {
+              "title": "Diverse varieties",
+              "genotypes": [
+                0,
+                1,
+                2,
+                1,
+                0,
+                2,
+                2,
+                0,
+                1
+              ],
+              "at": 110
+            },
+            {
+              "title": "Single genotype",
+              "genotypes": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "at": 366
+            }
+          ],
+          "susceptible": 0,
+          "disease": {
+            "label": "Panama disease: a soil fungus",
+            "at": 966
+          },
+          "footer": {
+            "text": "No genetic variation: no resistant plant to fall back on",
+            "at": 1244
+          }
+        }
       }
     },
     {
