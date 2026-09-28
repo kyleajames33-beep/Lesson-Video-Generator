@@ -184,39 +184,36 @@
         "text": "Now the other side, allergy, which is a Type one hypersensitivity. An allergy is an exaggerated immune response to a normally harmless substance, an allergen. And here's the key feature, it takes two stages, two separate encounters. Stage one is sensitisation, the first exposure. The allergen is taken up and processed, helper T cells push B cells to make I g E antibodies specific to that allergen, and crucially that I g E goes and binds to the surface of mast cells in your tissues. And here's the thing, no symptoms happen at all during this first exposure. You feel completely fine, but you are now sensitised, your mast cells are loaded. Stage two is re-exposure. The same allergen comes back, and it physically cross-links two neighbouring I g E molecules sitting on a mast cell. That cross-linking is the trigger, and it causes the mast cell to degranulate, dumping out pre-made chemicals, the most important being histamine. Histamine then causes vasodilation and redness, leaky vessels and swelling, mucus secretion, and contraction of smooth muscle giving bronchoconstriction and gut cramps. So first exposure primes you silently, and the second exposure fires within minutes."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "allergen",
-            "label": "Allergen"
-          },
-          {
-            "id": "ige",
-            "label": "IgE made"
-          },
-          {
-            "id": "mast",
-            "label": "Coats mast cell"
-          },
-          {
-            "id": "degran",
-            "label": "Histamine"
-          }
-        ],
-        "edges": [
-          {
-            "from": "allergen",
-            "to": "ige"
-          },
-          {
-            "from": "ige",
-            "to": "mast"
-          },
-          {
-            "from": "mast",
-            "to": "degran"
-          }
-        ]
+        "type": "diorama",
+        "kind": "bio12m8MastCell",
+        "delay": 6,
+        "props": {
+          "stage1At": 319,
+          "igeAt": 442,
+          "dockAt": 653,
+          "calmAt": 776,
+          "stage2At": 978,
+          "crossAt": 1083,
+          "degranAt": 1294,
+          "effects": [
+            {
+              "text": "vasodilation, redness",
+              "at": 1382
+            },
+            {
+              "text": "leaky vessels, swelling",
+              "at": 1410
+            },
+            {
+              "text": "mucus secretion",
+              "at": 1440
+            },
+            {
+              "text": "bronchoconstriction",
+              "at": 1470
+            }
+          ]
+        }
       },
       "revealDelays": {
         "diagram": 6
