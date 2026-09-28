@@ -72,6 +72,75 @@
       "caption": "Skin, mucous membranes, cilia, and chemical barriers block most pathogens at the surface.",
       "voiceover": {
         "text": "Just like a plant, your body's first line is non-specific barriers, and most pathogens never get past them. Start with the physical ones. Your skin is tough, keratinised, and multilayered, it's slightly acidic, and it sheds about a million dead cells an hour, carrying surface microbes away with them. Your mucous membranes line the respiratory and digestive tracts, trapping pathogens in mucus, and cilia beat constantly to sweep that mucus toward the exits, the so-called mucociliary escalator. Then the chemical barriers. Stomach acid sits at a pH around one point five, destroying most ingested pathogens. Lysozyme, an enzyme in your tears and saliva, breaks down bacterial cell walls. And sebum makes the skin surface inhospitable. There's even your normal microbiome, the helpful bacteria that out-compete pathogens for nutrients and space. The key principle, the physical barrier is your most important defence, and everything else is a fallback for when it's breached."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Sorter",
+        "props": {
+          "bins": [
+            {
+              "title": "Physical",
+              "sub": "block and sweep out"
+            },
+            {
+              "title": "Chemical",
+              "sub": "destroy or deter",
+              "tone": "warm"
+            },
+            {
+              "title": "Living",
+              "sub": "out-compete pathogens",
+              "tone": "grey"
+            }
+          ],
+          "items": [
+            {
+              "text": "skin: keratinised, sheds",
+              "bin": 0,
+              "at": 238,
+              "icon": "person"
+            },
+            {
+              "text": "mucous membranes",
+              "bin": 0,
+              "at": 574
+            },
+            {
+              "text": "cilia sweep mucus out",
+              "bin": 0,
+              "at": 730
+            },
+            {
+              "text": "stomach acid, pH ≈ 1.5",
+              "bin": 1,
+              "at": 958,
+              "icon": "drop"
+            },
+            {
+              "text": "lysozyme: tears, saliva",
+              "bin": 1,
+              "at": 1126
+            },
+            {
+              "text": "sebum on the skin",
+              "bin": 1,
+              "at": 1294
+            },
+            {
+              "text": "normal microbiome",
+              "bin": 2,
+              "at": 1414,
+              "icon": "bacterium"
+            }
+          ],
+          "footer": [
+            {
+              "text": "The physical barrier is the most important defence; the rest are fallbacks",
+              "at": 1666,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {

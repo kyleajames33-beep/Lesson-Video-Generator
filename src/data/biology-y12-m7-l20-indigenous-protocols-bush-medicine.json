@@ -102,39 +102,47 @@
         "text": "So how does it work? Tea tree oil is distilled from the leaves, and its main active compound is terpinen four ol. These oily compounds dissolve into the lipid membranes of microbes, making them leaky, so ions and other cell contents spill out, and the cell's respiration is disrupted until it dies. Because it attacks the membrane, rather than one specific enzyme, it works against a broad range of microbes, many bacteria, including the resistant Staphylococcus called MRSA, and fungi like the ones behind tinea and thrush. That fits the traditional uses on wounds and skin. Modern trials back some of this up. A five percent tea tree gel reduced acne about as well as a standard treatment, working more slowly but with fewer side effects, and stronger solutions improved tinea of the feet. One vital safety point, it's used on the skin, and it's toxic if swallowed."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "leaf",
-            "label": "Leaves distilled"
+        "type": "diorama",
+        "kind": "bio12m7Membrane",
+        "props": {
+          "labels": {
+            "source": "Melaleuca alternifolia leaves, distilled",
+            "oil": "terpinen-4-ol",
+            "insert": "dissolves into the lipid membrane",
+            "leak": "membrane leaks: ions and contents spill out",
+            "die": "respiration disrupted: the cell dies"
           },
-          {
-            "id": "t4",
-            "label": "Terpinen-4-ol"
-          },
-          {
-            "id": "mem",
-            "label": "Membrane leaks"
-          },
-          {
-            "id": "die",
-            "label": "Microbe dies"
+          "range": [
+            {
+              "text": "bacteria, incl. MRSA",
+              "icon": "bacterium",
+              "at": 874
+            },
+            {
+              "text": "fungi: tinea, thrush",
+              "icon": "fungus",
+              "at": 958
+            }
+          ],
+          "footer": [
+            {
+              "text": "Trial: 5% gel treated acne about as well as standard, slower, fewer side effects",
+              "at": 1198
+            },
+            {
+              "text": "Used on the skin: toxic if swallowed",
+              "at": 1714,
+              "amber": true
+            }
+          ],
+          "beats": {
+            "source": 46,
+            "oil": 166,
+            "insert": 238,
+            "leak": 370,
+            "die": 502
           }
-        ],
-        "edges": [
-          {
-            "from": "leaf",
-            "to": "t4"
-          },
-          {
-            "from": "t4",
-            "to": "mem"
-          },
-          {
-            "from": "mem",
-            "to": "die"
-          }
-        ]
+        }
       },
       "revealDelays": {
         "diagram": 6
