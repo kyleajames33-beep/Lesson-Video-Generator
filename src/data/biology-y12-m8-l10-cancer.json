@@ -72,6 +72,35 @@
       "caption": "Checkpoints control the cell cycle; cancer disables them through multiple mutations.",
       "voiceover": {
         "text": "So let's build the foundation, the cell cycle, the ordered sequence a cell goes through to divide. Critically, the cycle has checkpoints, control points the cell must pass before it can proceed. These checkpoints halt division if conditions are not right, for example if there are no growth signals to divide, or if the D N A is damaged and needs repair. Cancer is what happens when mutations disable this control system. And here is the single most important idea, cancer is not caused by one mutation, it requires the accumulation of several driver mutations, typically four to eight, in a single cell lineage over time. Each mutation gives that cell line a small growth advantage, and selection enriches for the cells with the most. This multi-hit requirement is exactly why cancer takes years, even decades, to develop, and why it becomes much more common as we age."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8MultiHit",
+        "props": {
+          "cycleAt": 10,
+          "checkpoints": [
+            {
+              "label": "growth signals?",
+              "at": 190
+            },
+            {
+              "label": "DNA undamaged?",
+              "at": 250
+            }
+          ],
+          "haltAt": 346,
+          "lineageAt": 682,
+          "hits": 4,
+          "hitGap": 150,
+          "lineageLabel": "One lineage gathers driver mutations (typically 4 to 8)",
+          "uncontrolledLabel": "control lost",
+          "notes": [
+            {
+              "text": "Many hits over years: why cancer is more common with age",
+              "at": 1450
+            }
+          ]
+        }
       }
     },
     {
