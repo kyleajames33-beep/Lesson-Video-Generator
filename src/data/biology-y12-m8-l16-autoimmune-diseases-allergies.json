@@ -75,6 +75,40 @@
       "caption": "Self-tolerance comes from clonal deletion; it breaks via molecular mimicry, faulty T-regs, hidden antigens or genetics.",
       "voiceover": {
         "text": "So let's start with the rule book, self-tolerance. Self-tolerance is the immune system's ability to tell your own cells, self, apart from invaders, non-self. The main way the body achieves it is clonal deletion, where developing T cells that react strongly against your own proteins are destroyed in the thymus before they're ever released. So how does this break down and cause autoimmune disease? There are a few routes. One is molecular mimicry, where a pathogen happens to carry an antigen that looks like one of your own, so the antibodies made against the pathogen accidentally attack your own tissue too. Another is faulty regulatory T cells, which normally keep self-reactive cells in check, so if they fail, those rogue clones multiply. A third is exposure of hidden antigens, where damage releases proteins the immune system has never seen and treats as foreign. And genetics plays a role too, because certain H L A gene variants raise the risk, which is why these diseases cluster in families. Now the single most important point for the exam. In autoimmune disease the immune system is not weak. It is overactive and pointed at the wrong target."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8Thymus",
+        "props": {
+          "streamAt": 100,
+          "deletionAt": 341,
+          "routesTitle": "How tolerance breaks",
+          "routes": [
+            {
+              "text": "molecular mimicry",
+              "at": 561
+            },
+            {
+              "text": "faulty regulatory T cells",
+              "at": 841
+            },
+            {
+              "text": "hidden antigens exposed",
+              "at": 1052
+            },
+            {
+              "text": "HLA gene variants raise risk",
+              "at": 1262
+            }
+          ],
+          "notes": [
+            {
+              "text": "Autoimmunity is overactive, not weak: aimed at the wrong target",
+              "at": 1578,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {
