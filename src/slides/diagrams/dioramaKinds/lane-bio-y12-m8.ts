@@ -18,6 +18,7 @@ import {GuardCellsDiagram} from '../kinds/bio-y12-m8/GuardCellsDiagram';
 import {CFTRDiagram} from '../kinds/bio-y12-m8/CFTRDiagram';
 import {MastCellDiagram} from '../kinds/bio-y12-m8/MastCellDiagram';
 import {AnaphylaxisDiagram} from '../kinds/bio-y12-m8/AnaphylaxisDiagram';
+import {FanDiagram} from '../kinds/bio-y12-m8/FanDiagram';
 
 export const KINDS: DioramaKindMap = {
   bio12m8EyeRays: EyeRaysDiagram,
@@ -33,4 +34,5 @@ export const KINDS: DioramaKindMap = {
   bio12m8CFTR: CFTRDiagram,
   bio12m8MastCell: MastCellDiagram,
   bio12m8Anaphylaxis: AnaphylaxisDiagram,
+  bio12m8Fan: FanDiagram,
 };
