@@ -232,7 +232,7 @@ const FirstPassMode = ({frame, beats, id, accent, prodrug, activeDrug}: {frame: 
 	return (
 		<g>
 			{/* swallowed dose */}
-			<g opacity={ramp(frame, 0, 14)}>
+			<g opacity={ramp(frame, 0, 14) * doseOp}>
 				<text x={GUT} y={40} textAnchor="middle" fill={TOK.ink} fontSize={20} fontWeight={800}>swallowed dose</text>
 			</g>
 			<g opacity={doseOp} transform={`translate(${GUT}, ${doseY}) rotate(${-20 + dropT * 40})`}>

@@ -117,7 +117,7 @@ const MetricsMode = ({frame, beats, id, accent, fps}: {frame: number; beats: num
 				<text x={570} y={40} textAnchor="middle" fill={TOK.ink} fontSize={25} fontWeight={800}>E-factor</text>
 				<Fraction x={570} y={96} num="mass of waste" den="mass of product" size={18} />
 			</g>
-			<g transform="translate(0,-16)">
+			<g transform="translate(0,-16)" opacity={ramp(frame, tE, 16)}>
 			<DioramaPlinth id={`${id}b`} cx={570} cy={338} rx={150}>
 				<g opacity={ramp(frame, tE, 16)}>
 					<Crate x={484} y={352} size={58} color={accent} />
@@ -198,7 +198,7 @@ const RoutesMode = ({frame, beats, id, accent, routes, footer}: {frame: number; 
 							</g>
 						)}
 						<DioramaPlinth id={`${id}${i}`} cx={cx} cy={PCY} rx={100}>
-							<g opacity={ramp(frame, tIn, 14)}>
+							<g opacity={ramp(frame, 0, 14)}>
 								<Crate x={cx - 32} y={PCY + 6} size={S} color={accent} />
 							</g>
 							{Array.from({length: r.eFactor}, (_, j) => {
@@ -210,7 +210,7 @@ const RoutesMode = ({frame, beats, id, accent, routes, footer}: {frame: number; 
 								);
 							})}
 						</DioramaPlinth>
-						<g opacity={ramp(frame, tIn, 14)}>
+						<g opacity={ramp(frame, 0, 14)}>
 							<text x={cx} y={456} textAnchor="middle" fill={isBest && frame >= tBest ? TOK.amberInk : TOK.ink} fontSize={23} fontWeight={800}>{r.label}</text>
 						</g>
 						<g opacity={ramp(frame, sb, 14)}>
