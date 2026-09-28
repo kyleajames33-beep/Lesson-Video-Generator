@@ -157,24 +157,51 @@
         "text": "Now the definition everything hinges on. At the population level, evolution is simply a change in allele frequency over generations, that's it, no more mysterious than that. Allele frequency, again, is the proportion of an allele in the gene pool. So picture an allele that gives its carriers a fitness advantage, maybe a beak shape that handles the available seeds better. Those carriers survive and reproduce more, so they leave more offspring, and each of those offspring carries copies of that allele. Generation after generation, the proportion of that allele in the gene pool rises, and that rise is evolution. This is the crucial link, an individual advantage becomes a population-level change, through the mechanism of shifting allele frequency."
       },
       "diagram": {
-        "type": "lineGraph",
-        "xLabel": "Generations",
-        "yLabel": "Allele frequency",
-        "series": [
-          {
-            "label": "Favoured allele",
-            "color": "bio",
-            "points": [[0, 0.1], [0.2, 0.18], [0.4, 0.34], [0.6, 0.55], [0.8, 0.74], [1, 0.85]]
+        "type": "diorama",
+        "kind": "bio12m6GenePool",
+        "delay": 6,
+        "props": {
+          "mode": "select",
+          "points": [
+            [
+              0,
+              0.1
+            ],
+            [
+              0.2,
+              0.18
+            ],
+            [
+              0.4,
+              0.34
+            ],
+            [
+              0.6,
+              0.55
+            ],
+            [
+              0.8,
+              0.74
+            ],
+            [
+              1,
+              0.85
+            ]
+          ],
+          "size": 20,
+          "startAt": 280,
+          "framesPerGen": 80,
+          "marker": {
+            "x": 0.6,
+            "label": "advantage takes hold"
           },
-          {
-            "label": "Alternative allele",
-            "color": "chem1",
-            "points": [[0, 0.9], [0.2, 0.82], [0.4, 0.66], [0.6, 0.45], [0.8, 0.26], [1, 0.15]]
+          "xLabel": "Generations",
+          "yLabel": "Allele frequency",
+          "footer": {
+            "text": "That rise in allele frequency is evolution",
+            "at": 677
           }
-        ],
-        "markers": [
-          {"x": 0.6, "label": "advantage takes hold"}
-        ]
+        }
       },
       "revealDelays": {
         "diagram": 6

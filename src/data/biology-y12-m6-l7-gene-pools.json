@@ -65,6 +65,33 @@
       "caption": "A gene pool is the total set of alleles in a population.",
       "voiceover": {
         "text": "Let's start with what a gene pool actually is, because it's a population-level idea, and that framing matters. A gene pool is the total set of alleles present across a whole population. So when biologists say a process changes the gene pool, they mean it changes which alleles are present, or how frequent each one is, within that population. This is different from looking at one organism's genotype. Evolution and long-term genetic change are tracked at population scale, across generations, not by examining a single individual. And the three processes we're about to compare, mutation, gene flow, and genetic drift, are all population-level in their consequences, even though some of them begin with an event in just one cell or one individual. So keep your eye on the population, not the individual."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6GenePool",
+        "props": {
+          "mode": "pool",
+          "individuals": [
+            "AA",
+            "Aa",
+            "Aa",
+            "aa",
+            "AA",
+            "Aa",
+            "Aa",
+            "AA",
+            "Aa",
+            "aa"
+          ],
+          "populationAt": 40,
+          "poolAt": 90,
+          "percentAt": 300,
+          "organismAt": 395,
+          "footer": {
+            "text": "Evolution is tracked at population scale, over generations",
+            "at": 496
+          }
+        }
       }
     },
     {
@@ -173,6 +200,35 @@
       "caption": "Drift is strongest in small populations; founder effects and bottlenecks.",
       "voiceover": {
         "text": "Now let's see when genetic drift really takes over, because it's all about population size. In a large population, chance events tend to average out, one unlucky death here is balanced by a lucky survival there, so allele frequencies stay relatively stable. But in a small population, chance has far more power, it can shift allele frequencies sharply from one generation to the next. That's why founder effects and bottlenecks are such important examples of drift. In a founder effect, a small group colonises a new area, and the particular alleles those few founders happen to carry can become unusually common, even if they're not advantageous in any way. A bottleneck is similar, a sharp crash leaves only a few survivors carrying a limited sample of alleles. And the key reminder, drift is random, it is not adaptation, so a common allele isn't automatically the best one."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6GenePool",
+        "props": {
+          "mode": "drift",
+          "populations": [
+            {
+              "label": "Large population",
+              "size": 40,
+              "seed": 7,
+              "at": 20
+            },
+            {
+              "label": "Small population",
+              "size": 8,
+              "seed": 57,
+              "at": 195
+            }
+          ],
+          "p0": 0.5,
+          "generations": 10,
+          "startAt": 225,
+          "framesPerGen": 30,
+          "footer": {
+            "text": "Founder effects and bottlenecks: few individuals, strong drift",
+            "at": 425
+          }
+        }
       }
     },
     {
