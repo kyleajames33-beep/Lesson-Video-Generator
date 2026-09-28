@@ -55,7 +55,6 @@
       "type": "concept",
       "heading": "The carboxyl group and its dimer",
       "body": "The carboxyl group, written -COOH, is a carbonyl and a hydroxyl on the same carbon. Together they let two molecules lock into a dimer.",
-      "image": "m7l14EthanoicAcidDimer",
       "bullets": [
         {
           "text": "The -COOH group has both a C=O acceptor and an O-H donor.",
@@ -80,6 +79,23 @@
       "caption": "Two carboxyl groups lock into a dimer held by two simultaneous H-bonds.",
       "voiceover": {
         "text": "Let's look at the carboxyl group, written C-O-O-H. It's a carbonyl, a carbon double bonded to oxygen, plus a hydroxyl, an oxygen-hydrogen, both on the same carbon. That combination is special, because it gives each molecule both a hydrogen bond donor, the O-H, and a hydrogen bond acceptor, the carbonyl oxygen. So two carboxylic acid molecules can swing around to face each other and form two hydrogen bonds at the same time, locking into a pair we call a dimer. Here's why that matters for boiling point. To vaporise the acid, you have to break both of those hydrogen bonds in the pair together, and that takes a lot of energy. Near the boiling point the molecules effectively leave the surface as pairs, behaving like a unit of roughly double the mass. One caution, though. Each molecule has only one O-H. The carbonyl oxygen has no hydrogen of its own."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7AcidDimer",
+        "props": {
+          "beats": {
+            "carbonyl": 58,
+            "hydroxyl": 142,
+            "donor": 394,
+            "acceptor": 502,
+            "swing": 622,
+            "dimer": 886,
+            "boil": 1066,
+            "pairs": 1390,
+            "oneOH": 1522
+          }
+        }
       }
     },
     {
@@ -110,6 +126,20 @@
       "caption": "Carboxylic acids are weak, but resonance makes them stronger than alcohols.",
       "voiceover": {
         "text": "Now their acidity, and there's a subtlety here worth getting right. Carboxylic acids are weak acids. They only partially ionise in water, sitting at equilibrium with their ions, and for ethanoic acid the acid constant is about ten to the minus five, so only around one percent of molecules are ionised at any moment. So weak, yes. But they are by far the strongest acids in organic chemistry, much stronger than alcohols, and the reason is resonance. When a carboxylic acid loses its proton, the negative charge on the carboxylate ion doesn't sit on one oxygen. It spreads evenly across both oxygens. That delocalised, more stable conjugate base is less eager to grab the proton back, so the equilibrium sits further toward ionisation. An alcohol's conjugate base puts all the charge on a single oxygen with no resonance, so the alcohol is a far weaker acid."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7PartialIonise",
+        "props": {
+          "beats": {
+            "molecules": 10,
+            "ionise": 300,
+            "percent": 478,
+            "resonance": 814,
+            "alkoxide": 1426,
+            "verdict": 1500
+          }
+        }
       }
     },
     {
@@ -169,6 +199,62 @@
       "caption": "Acid strength: carboxylic acid is greater than phenol, greater than alcohol.",
       "voiceover": {
         "text": "Let's place carboxylic acids on the wider strength scale, because the exam often asks you to rank them against phenols and alcohols. The ranking is carboxylic acid, then phenol, then alcohol, from strongest to weakest, and you can reason it from structure rather than memorise it. A carboxylic acid has a pKa around five. Its conjugate base shares the charge over two equivalent oxygens, the most stable case. Phenol has a pKa around ten. Its conjugate base spreads charge into the benzene ring, so it's partly stabilised but less so. An alcohol has a pKa around sixteen. Its conjugate base traps all the charge on one oxygen with no resonance, the least stable, so it's the weakest acid. Remember, lower pKa means stronger acid. The pattern is simple. The more a conjugate base can spread out its negative charge, the stronger the parent acid."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7PkaLadder",
+        "props": {
+          "title": "Spread the charge, strengthen the acid",
+          "min": 0,
+          "max": 18,
+          "tickEvery": 2,
+          "markers": [
+            {
+              "name": "carboxylic acid",
+              "pKa": 5,
+              "mol": "ethanoate",
+              "bond": 52,
+              "glow": [
+                2,
+                3
+              ],
+              "sub": "charge over two O",
+              "key": true,
+              "at": 550
+            },
+            {
+              "name": "phenol",
+              "pKa": 10,
+              "mol": "phenoxide",
+              "bond": 34,
+              "glow": [
+                6,
+                1,
+                3,
+                5
+              ],
+              "sub": "charge into the ring",
+              "at": 754
+            },
+            {
+              "name": "alcohol",
+              "pKa": 16,
+              "mol": "ethoxide",
+              "bond": 52,
+              "glow": [
+                2
+              ],
+              "sub": "charge on one O",
+              "at": 1030
+            }
+          ],
+          "notes": [
+            {
+              "text": "each shown as its conjugate base (after losing H⁺)",
+              "at": 202
+            }
+          ]
+        }
       }
     },
     {

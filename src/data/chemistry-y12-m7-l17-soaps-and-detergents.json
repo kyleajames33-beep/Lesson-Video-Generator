@@ -55,7 +55,6 @@
       "type": "concept",
       "heading": "A molecule with two faces",
       "body": "Soap is the sodium salt of a long fatty acid. It has a non-polar tail and an ionic head, so it is amphipathic.",
-      "image": "m7l17Micelle",
       "bullets": [
         {
           "text": "Hydrophobic tail: a long hydrocarbon chain that mixes with grease.",
@@ -80,6 +79,20 @@
       "caption": "Soap is amphipathic: a non-polar tail and an ionic head in one molecule.",
       "voiceover": {
         "text": "Let's look at the molecule. Soap is the sodium or potassium salt of a long-chain fatty acid, something like sodium stearate. And the molecule has two completely different ends. One end is a long hydrocarbon chain, non-polar, which we call the hydrophobic tail. It hates water but mixes happily with grease, because like dissolves like. The other end is the ionic carboxylate group, with its sodium ion, and we call it the hydrophilic head. It loves water and dissolves readily. Having both an oil-loving end and a water-loving end in the same molecule is described by one word, amphipathic, and that's the structural feature behind all of soap's cleaning power. When you drop soap into water, the molecules organise themselves. The tails huddle inward away from water, and the heads face outward into the water, forming a tiny sphere called a micelle."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Soap",
+        "props": {
+          "mode": "structure",
+          "beats": {
+            "tail": 430,
+            "head": 680,
+            "amphipathic": 1114,
+            "micelle": 1282,
+            "micelleLabel": 1560
+          }
+        }
       }
     },
     {
@@ -139,6 +152,20 @@
       "caption": "Soap emulsifies grease into charged micelles that rinse away without recombining.",
       "voiceover": {
         "text": "Now the cleaning mechanism, and there's one word the marker is looking for. Soap doesn't dissolve grease, it emulsifies it. Here's how. The hydrophobic tails are attracted to the grease and embed themselves in it, while the ionic heads point outward into the water. When you scrub, the agitation lifts the grease off the surface as a droplet completely wrapped in soap molecules, with grease inside and charged heads outside. That wrapped droplet is a micelle, and the grease inside it is emulsified, meaning suspended as tiny droplets, not actually dissolved. There's a clever final touch. Every droplet's surface carries the same negative charge from the carboxylate heads, so the droplets repel each other and can't merge back together or redeposit on the plate. Then the water simply rinses them away. So the key word is emulsified, not dissolved."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Soap",
+        "props": {
+          "mode": "clean",
+          "beats": {
+            "embed": 310,
+            "scrub": 466,
+            "emulsified": 994,
+            "repel": 1150,
+            "rinse": 1474
+          }
+        }
       }
     },
     {
@@ -169,6 +196,21 @@
       "caption": "Soap forms scum with Ca2+/Mg2+; detergent sulfonate heads stay soluble.",
       "voiceover": {
         "text": "Soap has one big weakness, and it's hard water. Hard water contains dissolved calcium and magnesium ions, picked up from limestone. When soap meets those ions, the carboxylate heads bind to them and form an insoluble precipitate, the grey calcium and magnesium scum you see as a bathtub ring. That scum is useless for cleaning, so soap gets wasted, and you need more of it. This is exactly the problem synthetic detergents were invented to solve. A detergent has the same amphipathic design, a long tail and a charged head, but the head group is different, typically a sulfonate instead of a carboxylate. The crucial difference is that the calcium and magnesium salts of a sulfonate head stay soluble. So detergents don't form scum, and they keep cleaning effectively even in hard water. Same mechanism, smarter head group."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Soap",
+        "props": {
+          "mode": "hardwater",
+          "beats": {
+            "ions": 94,
+            "scum": 358,
+            "detergent": 778,
+            "sulfonate": 1114,
+            "soluble": 1342,
+            "verdict": 1534
+          }
+        }
       }
     },
     {

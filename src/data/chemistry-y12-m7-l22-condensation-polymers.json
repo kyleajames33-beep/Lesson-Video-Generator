@@ -54,7 +54,6 @@
       "type": "concept",
       "heading": "Bifunctional monomers, water released",
       "body": "Condensation polymerisation joins monomers that each have two reactive groups, releasing a small molecule, usually water, at every bond formed.",
-      "image": "m7l22PetFormation",
       "bullets": [
         {
           "text": "Each monomer is bifunctional: two reactive groups, one at each end.",
@@ -79,6 +78,24 @@
       "caption": "Condensation: bifunctional monomers join and release water at each linkage.",
       "voiceover": {
         "text": "Let's get the mechanism. Condensation polymerisation needs a different kind of monomer from addition. Instead of a double bond, each monomer must be bifunctional, meaning it has two reactive groups, one at each end. When a reactive group on one monomer meets a reactive group on another, they join to form a linkage, and as they do, a small molecule is eliminated, almost always water. For example, a hydroxyl group from one monomer and a carboxyl group from another combine, water leaves, and an ester linkage forms. Why does having two groups per monomer matter so much? Because it lets the chain grow from both ends, so the molecule keeps extending indefinitely. And the name tells you the key feature. Condensation refers to that small molecule being condensed out, eliminated, at every single bond that forms. That's the signature of this whole family."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m1PolymerJoin",
+        "props": {
+          "mode": "condensation",
+          "title": "Two reactive ends, water released",
+          "monomers": 4,
+          "beats": {
+            "ends": 298,
+            "link": 754,
+            "esterLabel": 946,
+            "nylon": 1162,
+            "headline": 1378
+          },
+          "nylonNote": "Two reactive groups per monomer: the chain grows from both ends",
+          "headline": "Condensation: a small molecule leaves at every link"
+        }
       }
     },
     {
@@ -138,6 +155,19 @@
       "caption": "PET repeat unit has two ester linkages; the benzene ring makes it rigid.",
       "voiceover": {
         "text": "Let's read the PET repeat unit closely, because there's a detail markers look for. PET comes from two monomers, so its repeat unit has two parts. The diol, ethylene glycol, contributes the oxygen-carbon-carbon-oxygen portion. The diacid, terephthalic acid, contributes the carbonyl-benzene ring-carbonyl portion. Now the key point. Because the diacid has a carboxyl group at each end, there are two ester linkages in every repeat unit, one at each end of that benzene-containing block, not one. Students routinely draw only one and lose a mark. And the benzene ring isn't just decoration. Its rigid, flat structure stiffens the whole chain, which is why PET has a high melting point around two hundred and sixty degrees, good tensile strength, and works both as a bottle and as a clothing fibre. So count two ester linkages, and credit the ring for the rigidity."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7PetRepeat",
+        "props": {
+          "beats": {
+            "unit": 10,
+            "diol": 250,
+            "diacid": 346,
+            "links": 646,
+            "ring": 982
+          }
+        }
       }
     },
     {
@@ -168,6 +198,21 @@
       "caption": "Ester and amide linkages can hydrolyse; the C-C backbone of addition polymers cannot.",
       "voiceover": {
         "text": "Here's a difference between the two polymer families that has real environmental weight. Addition polymers, from the last lesson, have a backbone made entirely of carbon-carbon bonds. Those bonds are non-polar and chemically inert, so water can't attack them, which is exactly why polyethylene persists for centuries. Condensation polymers are built differently. Their backbones contain ester or amide linkages, the same bonds we've been hydrolysing all module. And those bonds can be broken by water under the right conditions, by acid, by base, or by enzymes. So condensation polymers are generally more degradable than addition polymers. This is most striking with polyamides. Proteins, which are natural polyamides, are broken down rapidly by enzymes called proteases, and even tough nylon will slowly hydrolyse, whereas polyethylene just fragments. The linkage in the backbone decides the fate."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7PolymerFate",
+        "props": {
+          "mode": "hydrolysis",
+          "beats": {
+            "addition": 214,
+            "condensation": 598,
+            "water": 802,
+            "degradable": 1030,
+            "protein": 1306,
+            "fragments": 1438
+          }
+        }
       }
     },
     {

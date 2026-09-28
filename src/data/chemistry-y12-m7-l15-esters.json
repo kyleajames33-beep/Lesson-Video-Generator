@@ -55,7 +55,6 @@
       "type": "concept",
       "heading": "Cut at the single-bond oxygen",
       "body": "An ester is built from an acid half and an alcohol half, joined by the ester linkage -COO-. Naming reflects both halves.",
-      "image": "m7l15EsterLinkage",
       "bullets": [
         {
           "text": "The ester group is -COO-, with no O-H bond on either oxygen.",
@@ -80,6 +79,43 @@
       "caption": "Esters are named alkyl alkanoate: alcohol half first, acid half second.",
       "voiceover": {
         "text": "Let's get the structure and naming right, because esters trip people up on word order. An ester is built from two halves, an acid half and an alcohol half, joined by the ester linkage, written C-O-O. Notice there's no oxygen-hydrogen bond anywhere in that group. Both oxygens are bonded only to carbon. To name an ester, picture cutting it at the single-bond oxygen. The side that still carries the carbonyl, the carbon double bonded to oxygen, is the acid half, the alkanoate. The other side, the carbon chain that came from the alcohol, is the alkyl half. Then you name it alkyl alkanoate, and here's the rule that matters. The alcohol part is always said first, the acid part second. So ethanol reacting with ethanoic acid gives ethyl ethanoate, not the other way around. Alcohol first, every time."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7MolCompare",
+        "props": {
+          "title": "Cut at the single-bond oxygen",
+          "items": [
+            {
+              "mol": "ethylEthanoate",
+              "name": "",
+              "at": 178,
+              "highlight": [
+                2,
+                3
+              ],
+              "highlightAt": 394,
+              "tag": {
+                "text": "–COO–: no O–H on either oxygen",
+                "at": 394
+              },
+              "cut": {
+                "bond": 3,
+                "at": 622,
+                "left": "ethanoate",
+                "leftSub": "acid half (keeps the C=O)",
+                "leftAt": 820,
+                "right": "ethyl",
+                "rightSub": "alcohol half",
+                "rightAt": 1078
+              }
+            }
+          ],
+          "footer": {
+            "text": "Alcohol part first: ethyl ethanoate",
+            "at": 1294
+          }
+        }
       }
     },
     {
@@ -110,6 +146,43 @@
       "caption": "Esters have dipole-dipole forces only, so they are volatile and fragrant.",
       "voiceover": {
         "text": "Now their physical properties, which explain the fragrance. The ester group is polar, so ester molecules attract each other with dipole-dipole forces. But, just like aldehydes and ketones, esters have no oxygen-hydrogen bond, so they cannot donate a hydrogen bond to another ester molecule. The two oxygens can accept hydrogen bonds from water, which gives short esters some solubility, but ester to ester, there's no H-bond donation. So an ester boils noticeably lower than the carboxylic acid and the alcohol that made it, because those can hydrogen bond and the ester can't. A lower boiling point means more volatile, and that's the whole point. The molecules escape into the air easily, reach your nose, and you smell pineapple or banana. Nature uses esters as scent signals precisely because they're so volatile."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7BpLadder",
+        "props": {
+          "title": "Volatile by design",
+          "subtitle": "same-sized molecules, boiling point order",
+          "rungs": [
+            {
+              "name": "ester",
+              "mol": "methylMethanoate",
+              "force": "dipole–dipole",
+              "at": 178,
+              "key": true,
+              "note": {
+                "text": "no O–H: can’t donate",
+                "at": 358
+              }
+            },
+            {
+              "name": "alcohol",
+              "mol": "propan1ol",
+              "force": "H-bonds",
+              "at": 778
+            },
+            {
+              "name": "carboxylic acid",
+              "mol": "ethanoicAcid",
+              "force": "H-bonded pairs",
+              "at": 808
+            }
+          ],
+          "footer": {
+            "text": "Lowest boiling point = most volatile = we smell it",
+            "at": 1102
+          }
+        }
       }
     },
     {
@@ -169,6 +242,19 @@
       "caption": "Raise ester yield with excess reactant, water removal, or distillation.",
       "voiceover": {
         "text": "Since esterification only reaches equilibrium, the practical question is how to get more ester out, and this is pure Le Chatelier's principle from Module 5. You have three levers. First, use an excess of one reactant, usually the cheaper alcohol, which pushes the equilibrium toward the products. Second, remove a product. The concentrated sulfuric acid does double duty here, acting as a dehydrating agent that soaks up the water as it forms, dragging the equilibrium right. Third, distil the ester off as it's made, because removing it continuously means the system keeps trying to replace it. And why reflux rather than an open flask? Because both the alcohol and the ester are volatile and would simply evaporate away before reacting. The reflux condenser cools the rising vapours and returns them, so the mixture stays together long enough to reach equilibrium."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7EsterLevers",
+        "props": {
+          "beats": {
+            "equation": 10,
+            "excess": 322,
+            "water": 600,
+            "distil": 862,
+            "reflux": 1102
+          }
+        }
       }
     },
     {

@@ -55,7 +55,6 @@
       "type": "concept",
       "heading": "Every reaction, one map",
       "body": "By now you have built every Module 7 reaction. Assembled into one map, the connections between functional groups become obvious.",
-      "image": "m7l20ReactionMap",
       "bullets": [
         {
           "text": "Hydrocarbons feed in: alkenes add, alkanes substitute.",
@@ -79,6 +78,147 @@
       "caption": "The master map: hydrocarbons in, alcohol as hub, oxidation up to ester.",
       "voiceover": {
         "text": "Let's start by assembling everything into one map, because by lesson twenty you've built every reaction individually. Put the functional groups as points and the reactions as arrows, and the whole module fits on one page. The hydrocarbons feed in from the left. Alkenes react by addition, so they can become haloalkanes or alcohols. Alkanes react by substitution to give haloalkanes. The alcohol sits in the middle as the great hub, the bridge between the hydrocarbons and the oxygen-containing families. From the alcohol, oxidation climbs the ladder, alcohol to aldehyde to carboxylic acid, and then the acid plus an alcohol gives an ester. Once you can see the map, any pathway question becomes navigation. Find your start, find your target, trace the shortest route, count the arrows, and then the real work begins, adding the correct conditions to each step."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7ReactionMap",
+        "props": {
+          "title": "Every reaction, one map",
+          "nodes": [
+            {
+              "id": "alkene",
+              "label": "alkene",
+              "sub": "C=C",
+              "x": 110,
+              "y": 150,
+              "at": 166
+            },
+            {
+              "id": "alkane",
+              "label": "alkane",
+              "sub": "C–C only",
+              "x": 110,
+              "y": 420,
+              "at": 176
+            },
+            {
+              "id": "halo",
+              "label": "haloalkane",
+              "sub": "C–X",
+              "x": 262,
+              "y": 300,
+              "at": 186
+            },
+            {
+              "id": "alcohol",
+              "label": "alcohol",
+              "sub": "–OH",
+              "x": 440,
+              "y": 300,
+              "at": 196,
+              "key": true
+            },
+            {
+              "id": "aldehyde",
+              "label": "aldehyde",
+              "sub": "–CHO",
+              "x": 575,
+              "y": 160,
+              "at": 206
+            },
+            {
+              "id": "acid",
+              "label": "carboxylic acid",
+              "sub": "–COOH",
+              "x": 668,
+              "y": 300,
+              "at": 216
+            },
+            {
+              "id": "ester",
+              "label": "ester",
+              "sub": "–COO–",
+              "x": 575,
+              "y": 440,
+              "at": 226
+            }
+          ],
+          "edges": [
+            {
+              "from": "alkene",
+              "to": "halo",
+              "label": "+ HX",
+              "at": 454,
+              "labelDx": -30,
+              "labelDy": 14
+            },
+            {
+              "from": "alkene",
+              "to": "alcohol",
+              "label": "+ H₂O",
+              "at": 470,
+              "labelDx": 26,
+              "labelDy": -12
+            },
+            {
+              "from": "alkane",
+              "to": "halo",
+              "label": "+ X₂, UV",
+              "at": 586,
+              "labelDx": -44,
+              "labelDy": 0
+            },
+            {
+              "from": "halo",
+              "to": "alcohol",
+              "label": "NaOH(aq)",
+              "at": 700
+            },
+            {
+              "from": "alcohol",
+              "to": "aldehyde",
+              "label": "[O]",
+              "at": 934,
+              "labelDx": -18
+            },
+            {
+              "from": "aldehyde",
+              "to": "acid",
+              "label": "[O]",
+              "at": 980,
+              "labelDx": 18
+            },
+            {
+              "from": "acid",
+              "to": "ester",
+              "label": "+ alcohol",
+              "at": 1090,
+              "labelDx": 48,
+              "labelDy": 22
+            },
+            {
+              "from": "alcohol",
+              "to": "ester",
+              "at": 1090,
+              "dashed": true
+            }
+          ],
+          "route": {
+            "path": [
+              "alkane",
+              "halo",
+              "alcohol",
+              "aldehyde",
+              "acid"
+            ],
+            "at": 1378,
+            "framesPerStep": 45
+          },
+          "footer": {
+            "text": "Then add the conditions to every arrow",
+            "at": 1534
+          }
+        }
       }
     },
     {
@@ -138,6 +278,90 @@
       "caption": "Distillation removes the product as it forms; reflux retains the volatiles.",
       "voiceover": {
         "text": "Let's go deeper on the single most tested distinction, where the technique itself is the answer. Acidified dichromate oxidises a primary alcohol, but what you collect depends entirely on the apparatus. Set up for distillation, and you collect the aldehyde, because the volatile aldehyde boils off and leaves the mixture before the oxidising agent can take it any further. Set up for reflux with excess oxidant, and you get the carboxylic acid, because the aldehyde stays in the flask and keeps reacting. So it's worth being crystal clear on what each technique does. Reflux means heating a mixture with a vertical condenser, so rising vapours cool and drip back, keeping volatile reactants in the flask. Distillation means deliberately boiling a volatile product out and collecting it elsewhere. Same dichromate, opposite outcomes, decided by the glassware. State the technique every time."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7ReactionRows",
+        "props": {
+          "title": "Same reagent, different glassware",
+          "rows": [
+            {
+              "tag": {
+                "text": "DISTILLATION",
+                "at": 310
+              },
+              "stages": [
+                {
+                  "mol": "ethanol",
+                  "name": "ethanol (1°)",
+                  "at": 130
+                },
+                {
+                  "mol": "ethanal",
+                  "name": "ethanal: collected",
+                  "at": 340,
+                  "key": true
+                },
+                {
+                  "mol": "ethanoicAcid",
+                  "name": "",
+                  "at": 99999
+                }
+              ],
+              "links": [
+                {
+                  "at": 320,
+                  "label": "Cr₂O₇²⁻ / H⁺"
+                },
+                {
+                  "at": 538,
+                  "label": "[O]",
+                  "blocked": "boiled off first"
+                }
+              ]
+            },
+            {
+              "tag": {
+                "text": "REFLUX",
+                "at": 646
+              },
+              "stages": [
+                {
+                  "mol": "ethanol",
+                  "name": "ethanol (1°)",
+                  "at": 646
+                },
+                {
+                  "mol": "ethanal",
+                  "name": "ethanal: stays in",
+                  "at": 700
+                },
+                {
+                  "mol": "ethanoicAcid",
+                  "name": "ethanoic acid",
+                  "at": 898,
+                  "key": true
+                }
+              ],
+              "links": [
+                {
+                  "at": 680,
+                  "label": "excess Cr₂O₇²⁻ / H⁺"
+                },
+                {
+                  "at": 870,
+                  "label": "[O]",
+                  "sub": "drips back, reacts on",
+                  "key": true
+                }
+              ]
+            }
+          ],
+          "footer": {
+            "text": "State the technique: it decides the product",
+            "at": 1462
+          }
+        }
       }
     },
     {

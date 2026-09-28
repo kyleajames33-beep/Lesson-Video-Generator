@@ -55,7 +55,6 @@
       "type": "concept",
       "heading": "The carbonyl in two positions",
       "body": "Both families are built around the carbonyl group. What differs is where it sits and what the carbonyl carbon is bonded to.",
-      "image": "m7l13CarbonylComparison",
       "bullets": [
         {
           "text": "Aldehyde: terminal C=O, written R-CHO, with a hydrogen on the carbonyl carbon.",
@@ -80,6 +79,48 @@
       "caption": "Aldehyde = terminal C=O with an H; ketone = internal C=O, no H.",
       "voiceover": {
         "text": "Let's get the structure clear, because everything flows from it. Both families have the carbonyl group, a carbon double bonded to oxygen. In an aldehyde, the carbonyl sits at the end of the chain, and we write it R-C-H-O. The key feature is that the carbonyl carbon also carries a hydrogen. In a ketone, the carbonyl sits inside the chain, written R-C-O-R prime, so the carbonyl carbon is bonded to two carbon groups and has no hydrogen at all. Naming follows the position. Aldehydes take the suffix -al, like propanal, and ketones take the suffix -one, like propanone. Here's the striking part. Propanal and propanone are both C3H6O. Identical formula, identical mass, and yet they react completely differently, purely because one has that hydrogen on the carbonyl carbon and the other doesn't."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7MolCompare",
+        "props": {
+          "title": "Same C=O, different position",
+          "items": [
+            {
+              "mol": "propanal",
+              "name": "propanal",
+              "sub": "aldehyde · C₃H₆O",
+              "at": 118,
+              "highlight": [
+                4
+              ],
+              "highlightAt": 238,
+              "tag": {
+                "text": "H on the carbonyl C",
+                "at": 238,
+                "amber": true
+              }
+            },
+            {
+              "mol": "propanone",
+              "name": "propanone",
+              "sub": "ketone · C₃H₆O",
+              "at": 418,
+              "highlight": [
+                1
+              ],
+              "highlightAt": 538,
+              "tag": {
+                "text": "no H on the carbonyl C",
+                "at": 538
+              }
+            }
+          ],
+          "footer": {
+            "text": "Both C₃H₆O: isomers that react differently",
+            "at": 928
+          }
+        }
       }
     },
     {
@@ -110,6 +151,49 @@
       "caption": "Aldehydes and ketones: dipole-dipole forces, but no H-bond donation.",
       "voiceover": {
         "text": "Now their physical properties, which the exam loves to test through boiling points. The carbonyl bond is strongly polar, so these molecules attract each other with permanent dipole-dipole forces. That makes them boil higher than alkanes of similar size. But here's the limitation. An aldehyde or ketone has no oxygen-hydrogen bond, so it cannot donate a hydrogen bond to another molecule of itself. The oxygen can still accept a hydrogen bond from water, which is why short ones dissolve, but molecule to molecule, there's no H-bond donation. That places them in the middle of the boiling point ladder. Alkanes sit lowest with dispersion only, then aldehydes and ketones with dipole-dipole, then alcohols which can hydrogen bond, and carboxylic acids highest of all. If you can reason from forces rather than memorise the order, you can rank any set."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7BpLadder",
+        "props": {
+          "title": "Stuck in the middle",
+          "subtitle": "similar-sized molecules, boiling point order",
+          "rungs": [
+            {
+              "name": "alkane",
+              "mol": "butane",
+              "force": "dispersion only",
+              "at": 322
+            },
+            {
+              "name": "aldehyde / ketone",
+              "mol": "propanal",
+              "force": "dipole–dipole",
+              "at": 106,
+              "key": true,
+              "note": {
+                "text": "no O–H: can’t donate",
+                "at": 514
+              }
+            },
+            {
+              "name": "alcohol",
+              "mol": "propan1ol",
+              "force": "H-bonds",
+              "at": 1258
+            },
+            {
+              "name": "carboxylic acid",
+              "mol": "ethanoicAcid",
+              "force": "H-bonded pairs",
+              "at": 1342
+            }
+          ],
+          "footer": {
+            "text": "Dipole–dipole, but no H-bond donation between molecules",
+            "at": 1420
+          }
+        }
       }
     },
     {
@@ -169,6 +253,89 @@
       "caption": "Ketones resist oxidation because the carbonyl carbon has no H to remove.",
       "voiceover": {
         "text": "Let's make the oxidation logic airtight, because it explains the test results and it's a guaranteed exam point. To oxidise a carbonyl compound, an oxidising agent has to remove the hydrogen attached to the carbonyl carbon. An aldehyde has exactly one hydrogen sitting there, so it readily oxidises up to a carboxylic acid. A ketone has two carbon groups on its carbonyl carbon and no hydrogen, so there is simply nothing for the oxidising agent to take. That's why ketones don't react with Tollens', Fehling's, or dichromate under normal conditions. Notice this is a structural argument, not a rule to memorise. And it links straight back to alcohols. A primary alcohol oxidises to an aldehyde and onward to an acid, but a secondary alcohol oxidises to a ketone and stops dead. The ketone is the end of the line."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7ReactionRows",
+        "props": {
+          "title": "Oxidation needs an H on the carbonyl carbon",
+          "rows": [
+            {
+              "stages": [
+                {
+                  "mol": "propan1olUp",
+                  "name": "propan-1-ol (1°)",
+                  "at": 1174
+                },
+                {
+                  "mol": "propanal",
+                  "name": "propanal",
+                  "at": 40,
+                  "highlight": [
+                    4
+                  ],
+                  "highlightAt": 370
+                },
+                {
+                  "mol": "propanoicAcid",
+                  "name": "propanoic acid",
+                  "at": 530
+                }
+              ],
+              "links": [
+                {
+                  "at": 1200,
+                  "label": "[O]"
+                },
+                {
+                  "at": 500,
+                  "label": "[O]",
+                  "sub": "H taken"
+                }
+              ]
+            },
+            {
+              "stages": [
+                {
+                  "mol": "propan2ol",
+                  "name": "propan-2-ol (2°)",
+                  "at": 1402
+                },
+                {
+                  "mol": "propanone",
+                  "name": "propanone",
+                  "at": 574,
+                  "highlight": [
+                    1
+                  ],
+                  "highlightAt": 620,
+                  "key": true
+                },
+                {
+                  "mol": "propanone",
+                  "name": "",
+                  "at": 99999
+                }
+              ],
+              "links": [
+                {
+                  "at": 1428,
+                  "label": "[O]"
+                },
+                {
+                  "at": 650,
+                  "label": "[O]",
+                  "blocked": "no H to remove",
+                  "key": true
+                }
+              ]
+            }
+          ],
+          "footer": {
+            "text": "The ketone is the end of the line",
+            "at": 1520
+          }
+        }
       }
     },
     {
