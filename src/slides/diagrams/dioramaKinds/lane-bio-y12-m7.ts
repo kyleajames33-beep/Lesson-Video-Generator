@@ -24,6 +24,7 @@ import {PlantDiagram} from '../kinds/bio-y12-m7/PlantDiagram';
 import {LeafHRDiagram} from '../kinds/bio-y12-m7/LeafHRDiagram';
 import {HerdDiagram} from '../kinds/bio-y12-m7/HerdDiagram';
 import {ChainDiagram} from '../kinds/bio-y12-m7/ChainDiagram';
+import {RStackDiagram} from '../kinds/bio-y12-m7/RStackDiagram';
 
 export const KINDS: DioramaKindMap = {
   bio12m7Sorter: SorterDiagram,
@@ -45,4 +46,5 @@ export const KINDS: DioramaKindMap = {
   bio12m7LeafHR: LeafHRDiagram,
   bio12m7Herd: HerdDiagram,
   bio12m7Chain: ChainDiagram,
+  bio12m7RStack: RStackDiagram,
 };
