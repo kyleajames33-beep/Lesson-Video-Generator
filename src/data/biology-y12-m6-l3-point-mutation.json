@@ -230,6 +230,59 @@
       "caption": "Point mutation effect depends on both the type and the position.",
       "voiceover": {
         "text": "Here's the nuance that separates a top answer. You cannot simply rank point mutations as always harmless or always severe, because the effect depends on two things together, the type and the position. On the smaller end, a silent substitution, or a change sitting in a less critical region of the protein, may barely matter. On the larger end, a nonsense mutation that ends the protein early, a frameshift near the start of the gene, or a missense change right in the active site, can be devastating. Position is genuinely important. A change near the end of a gene affects fewer amino acids than one near the start, and a swapped amino acid matters far more if it sits in the active site or disrupts folding. And the logic chain you should be able to recite is, DNA change leads to codon change, leads to amino acid change, leads to protein structure change, leads to a possible phenotype change."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6Gene",
+        "props": {
+          "mode": "position",
+          "length": 24,
+          "rows": [
+            {
+              "label": "Silent change",
+              "type": "none",
+              "pos": 9,
+              "at": 138,
+              "tag": "no amino acid changes"
+            },
+            {
+              "label": "Frameshift near the start",
+              "type": "shift",
+              "pos": 2,
+              "at": 345,
+              "tag": "most of the chain changes"
+            },
+            {
+              "label": "Frameshift near the end",
+              "type": "shift",
+              "pos": 21,
+              "at": 505,
+              "tag": "only the last few change"
+            },
+            {
+              "label": "Missense in the active site",
+              "type": "missense",
+              "pos": 12,
+              "site": [
+                10,
+                14
+              ],
+              "at": 672,
+              "tag": "one change, where it matters"
+            }
+          ],
+          "chain": {
+            "items": [
+              "DNA",
+              "codon",
+              "amino acid",
+              "protein",
+              "phenotype"
+            ],
+            "at": 775,
+            "step": 22
+          }
+        }
       }
     },
     {

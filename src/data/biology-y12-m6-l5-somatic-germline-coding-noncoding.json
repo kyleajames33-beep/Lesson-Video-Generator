@@ -204,29 +204,21 @@
         "text": "Now the idea examiners love to test. Non-coding DNA does not normally determine amino acid sequence directly, but that absolutely does not make it irrelevant. Some non-coding regions do critical regulatory work, they help control when a gene is switched on, where in the body it's expressed, how much transcript gets made, and how the RNA is processed. So a mutation in a promoter, an enhancer, or a splice site can genuinely change the phenotype, not by altering the protein sequence, but by altering gene expression. A splice-site mutation, for instance, can cause exon skipping and produce an abnormal protein even though the coding sequence itself wasn't touched. The careful HSC position is balanced, yes, some non-coding mutations have little effect, but it is simply wrong to claim that non-coding DNA is always biologically unimportant."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "DNA region",
-          "How a mutation matters",
-          "Main consequence"
-        ],
-        "rows": [
-          [
-            "Coding DNA",
-            "Codon sequence changes",
-            "Different or shortened protein"
-          ],
-          [
-            "Non-coding regulatory DNA",
-            "Switches or controls altered",
-            "Changed timing, amount or location of expression"
-          ],
-          [
-            "Other non-coding DNA",
-            "May have little effect",
-            "Ranges from neutral to significant"
-          ]
-        ]
+        "type": "diorama",
+        "kind": "bio12m6Gene",
+        "props": {
+          "mode": "regions",
+          "beats": {
+            "gene": 20,
+            "normal": 120,
+            "promoter": 360,
+            "splice": 555
+          },
+          "footer": {
+            "text": "No amino acid change can still mean a phenotype change",
+            "at": 718
+          }
+        }
       }
     },
     {
