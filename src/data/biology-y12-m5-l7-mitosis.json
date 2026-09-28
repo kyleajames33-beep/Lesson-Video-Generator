@@ -76,47 +76,19 @@
       ],
       "callout": "Copy first, in S. Divide later, in M.",
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "g1",
-            "label": "G1: grow"
-          },
-          {
-            "id": "s",
-            "label": "S: copy DNA"
-          },
-          {
-            "id": "g2",
-            "label": "G2: prepare"
-          },
-          {
-            "id": "m",
-            "label": "Mitosis"
-          },
-          {
-            "id": "c",
-            "label": "Cytokinesis"
+        "type": "diorama",
+        "kind": "bio12m5CellCycle",
+        "props": {
+          "at": {
+            "interphase": 274,
+            "g1": 334,
+            "s": 598,
+            "g2": 1054,
+            "m": 1414,
+            "rule": 1618
           }
-        ],
-        "edges": [
-          {
-            "from": "g1",
-            "to": "s"
-          },
-          {
-            "from": "s",
-            "to": "g2"
-          },
-          {
-            "from": "g2",
-            "to": "m"
-          },
-          {
-            "from": "m",
-            "to": "c"
-          }
-        ]
+        },
+        "delay": 6
       },
       "revealDelays": {
         "diagram": 6
@@ -157,47 +129,18 @@
         "text": "Now the division itself. Mitosis runs in four stages, and you need them in order. In prophase, the chromosomes, already copied into sister chromatids, condense and become visible, and the nuclear membrane breaks down. In metaphase, the chromosomes line up along the equator of the cell, attached to spindle fibres. Anaphase is the dramatic one, where the sister chromatids are pulled apart to opposite poles of the cell. And in telophase, a new nuclear membrane forms around each set of chromosomes. Then cytokinesis finishes the job by dividing the cytoplasm. In animal cells the membrane pinches inwards to form a cleavage furrow, while plant cells build a cell plate that becomes the new cell wall. The outcome is two daughter cells, each with the same chromosome number as the parent."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "p",
-            "label": "Prophase"
-          },
-          {
-            "id": "m",
-            "label": "Metaphase"
-          },
-          {
-            "id": "a",
-            "label": "Anaphase"
-          },
-          {
-            "id": "t",
-            "label": "Telophase"
-          },
-          {
-            "id": "c",
-            "label": "Cytokinesis"
+        "type": "diorama",
+        "kind": "bio12m5Mitosis",
+        "props": {
+          "at": {
+            "prophase": 122,
+            "metaphase": 350,
+            "anaphase": 530,
+            "telophase": 770,
+            "cytokinesis": 914,
+            "result": 1346
           }
-        ],
-        "edges": [
-          {
-            "from": "p",
-            "to": "m"
-          },
-          {
-            "from": "m",
-            "to": "a"
-          },
-          {
-            "from": "a",
-            "to": "t"
-          },
-          {
-            "from": "t",
-            "to": "c"
-          }
-        ]
+        }
       }
     },
     {
