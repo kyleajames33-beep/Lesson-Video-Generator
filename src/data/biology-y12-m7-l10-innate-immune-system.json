@@ -254,39 +254,26 @@
         "text": "Now the innate system's primary weapon against bacteria and fungi, phagocytosis, step by step. Step one, chemotaxis, the phagocyte follows a chemical gradient, the chemokines, toward the pathogen. Step two, adherence, the phagocyte's pattern recognition receptors bind the pathogen's surface. Step three, ingestion, the phagocyte extends arm-like pseudopods that wrap around and engulf the pathogen, sealing it inside a bubble called a phagosome. Step four, digestion, a lysosome fuses with the phagosome, and its enzymes, plus reactive oxygen species, destroy the pathogen. And step five, the one that matters for what comes next, presentation, the phagocyte displays fragments of the pathogen, its antigens, on MHC molecules on its surface, which activates T cells. That fifth step is where innate immunity hands off to adaptive. And remember opsonisation, coating the pathogen with complement or antibody dramatically speeds up step two, the adherence."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "find",
-            "label": "Find"
+        "type": "diorama",
+        "kind": "bio12m7Phago",
+        "props": {
+          "labels": {
+            "mhc": "antigen on MHC: activates T cells",
+            "opson": "opsonisation: a coated pathogen is bound far faster"
           },
-          {
-            "id": "bind",
-            "label": "Bind"
-          },
-          {
-            "id": "engulf",
-            "label": "Engulf"
-          },
-          {
-            "id": "present",
-            "label": "Present"
+          "beats": {
+            "s1": 118,
+            "s2": 286,
+            "s3": 454,
+            "seal": 700,
+            "s4": 742,
+            "fuse": 790,
+            "s5": 982,
+            "mhc": 1060,
+            "tcell": 1234,
+            "opson": 1498
           }
-        ],
-        "edges": [
-          {
-            "from": "find",
-            "to": "bind"
-          },
-          {
-            "from": "bind",
-            "to": "engulf"
-          },
-          {
-            "from": "engulf",
-            "to": "present"
-          }
-        ]
+        }
       }
     },
     {

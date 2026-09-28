@@ -17,6 +17,7 @@ import {ClonalDiagram} from '../kinds/bio-y12-m7/ClonalDiagram';
 import {TKillDiagram} from '../kinds/bio-y12-m7/TKillDiagram';
 import {HubDiagram} from '../kinds/bio-y12-m7/HubDiagram';
 import {InflammationDiagram} from '../kinds/bio-y12-m7/InflammationDiagram';
+import {PhagoDiagram} from '../kinds/bio-y12-m7/PhagoDiagram';
 
 export const KINDS: DioramaKindMap = {
   bio12m7Sorter: SorterDiagram,
@@ -31,4 +32,5 @@ export const KINDS: DioramaKindMap = {
   bio12m7TKill: TKillDiagram,
   bio12m7Hub: HubDiagram,
   bio12m7Inflammation: InflammationDiagram,
+  bio12m7Phago: PhagoDiagram,
 };
