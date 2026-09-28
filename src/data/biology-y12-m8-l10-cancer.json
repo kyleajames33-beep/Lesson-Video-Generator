@@ -123,34 +123,51 @@
         "text": "Now the two ways a cell loses control, and they follow opposite genetic logic, a favourite exam point. Oncogenes act by gain of function, and they are dominant, meaning just one mutated copy is enough to drive excessive division, because that copy is now jammed in the on position. Tumour suppressors act by loss of function, and they are recessive, meaning both copies must be inactivated before the brake is gone, since one working copy can still apply it. This explains inherited cancer risk beautifully. If you inherit one already-faulty tumour suppressor copy, every cell starts with one brake already gone, so it only takes one more hit to lose control, which is why inherited cancer syndromes usually involve tumour suppressors. One more precision point, an oncogene problem is constant on-signalling, not overproduction, a RAS protein locked in its active state drives division whether or not growth signals are present."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Feature",
-          "Oncogene",
-          "Tumour suppressor"
-        ],
-        "rows": [
-          [
-            "Normal role",
-            "Promotes division",
-            "Brakes division"
+        "type": "diorama",
+        "kind": "bio12m8TwoHit",
+        "props": {
+          "panels": [
+            {
+              "title": "Oncogene",
+              "type": "oncogene",
+              "at": 154,
+              "hits": [
+                {
+                  "copy": 0,
+                  "at": 290,
+                  "label": "1 hit"
+                }
+              ],
+              "lostLabel": "one copy is enough: jammed ON"
+            },
+            {
+              "title": "Tumour suppressor",
+              "type": "suppressor",
+              "at": 526,
+              "hits": [
+                {
+                  "copy": 0,
+                  "at": 600,
+                  "label": "hit 1"
+                },
+                {
+                  "copy": 1,
+                  "at": 680,
+                  "label": "hit 2"
+                }
+              ],
+              "heldLabel": "one working copy still brakes",
+              "lostLabel": "both copies lost: brake gone"
+            }
           ],
-          [
-            "Mutation type",
-            "Gain of function",
-            "Loss of function"
-          ],
-          [
-            "Genetic logic",
-            "Dominant (one hit)",
-            "Recessive (two hits)"
-          ],
-          [
-            "Example",
-            "RAS",
-            "p53"
+          "notes": [
+            {
+              "text": "Inherit one faulty suppressor copy: only one more hit needed",
+              "at": 1198,
+              "amber": true
+            }
           ]
-        ]
+        }
       }
     },
     {

@@ -161,6 +161,34 @@
       "caption": "Stadium-crowd analogy for the two-hit hypothesis; note what it omits.",
       "voiceover": {
         "text": "The second analogy is for the two hit hypothesis in cancer. Picture a stadium gate with two crowd controllers, your two tumour suppressor alleles, keeping order. With both present, the gate holds. A first hit, which a person might inherit, removes one controller, but the gate is still held. Then a second hit, later in a single cell, removes the other controller, and the crowd surges through uncontrolled. That's loss of both tumour suppressor copies, and it explains why inheriting one faulty copy, like a BRCA mutation, raises cancer risk so much. Where does it break down? It captures tumour suppressors and the inherited head start, but it ignores oncogenes, the need for several mutations, and how cancers spread."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8TwoHit",
+        "props": {
+          "panels": [
+            {
+              "title": "Two controllers = two tumour suppressor copies",
+              "type": "suppressor",
+              "at": 70,
+              "copyLabel": "controller",
+              "hits": [
+                {
+                  "copy": 0,
+                  "at": 330,
+                  "label": "1st hit: inherited"
+                },
+                {
+                  "copy": 1,
+                  "at": 534,
+                  "label": "2nd hit: one cell"
+                }
+              ],
+              "heldLabel": "the gate holds",
+              "lostLabel": "crowd surges through: uncontrolled"
+            }
+          ]
+        }
       }
     },
     {
