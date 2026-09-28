@@ -65,6 +65,32 @@
       "caption": "Somatic mutations affect the individual; germ-line mutations can be inherited.",
       "voiceover": {
         "text": "The first dimension of significance is inheritability, and it comes down to which cell lineage carries the mutation. A somatic mutation occurs in a body cell, so it can affect the tissues of that individual, but it is not normally inherited through sexual reproduction. A germ-line mutation, by contrast, occurs in a gamete, or in the cell line that produces gametes, so it can be passed on to offspring. And that's the crucial difference, only germ-line mutations can enter the population gene pool and affect future generations. Now don't dismiss somatic mutations as unimportant, they can be extremely serious for the individual, many cancers begin with somatic mutations, and a somatic change early in development can spread through a whole tissue. But in standard inheritance terms, a somatic mutation stays with you, while a germ-line mutation reaches into the future."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6Lineage",
+        "props": {
+          "panels": [
+            {
+              "kind": "somatic",
+              "title": "Somatic",
+              "at": 55,
+              "changeAt": 75,
+              "passAt": 190,
+              "tag": "Stays with the individual",
+              "tagAt": 219
+            },
+            {
+              "kind": "germline",
+              "title": "Germ line",
+              "at": 250,
+              "changeAt": 270,
+              "passAt": 380,
+              "tag": "Can be inherited",
+              "tagAt": 419
+            }
+          ]
+        }
       }
     },
     {

@@ -72,24 +72,30 @@
       ],
       "callout": "Ask: will the next generation inherit it?",
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Change",
-          "Cells affected",
-          "Inherited?"
-        ],
-        "rows": [
-          [
-            "Germline",
-            "Gametes, early embryo",
-            "Yes"
-          ],
-          [
-            "Somatic",
-            "Body cells only",
-            "No"
+        "type": "diorama",
+        "kind": "bio12m6Lineage",
+        "props": {
+          "panels": [
+            {
+              "kind": "germline",
+              "title": "Germline change",
+              "at": 30,
+              "changeAt": 60,
+              "passAt": 320,
+              "tag": "Inherited",
+              "tagAt": 382
+            },
+            {
+              "kind": "somatic",
+              "title": "Somatic change",
+              "at": 425,
+              "changeAt": 450,
+              "passAt": 660,
+              "tag": "Not inherited",
+              "tagAt": 718
+            }
           ]
-        ]
+        }
       },
       "durationInFrames": 1637,
       "caption": "Germline changes are inherited; somatic changes affect only the individual.",
