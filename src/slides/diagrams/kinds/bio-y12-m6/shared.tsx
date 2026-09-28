@@ -5,6 +5,8 @@
 // diorama.tsx if other biology lanes want them.
 
 import type {ReactNode} from 'react';
+import {TOK} from '../../../../styles/tokens';
+import {popAt as popAtC, textWidth as textWidthC} from '../chem-y12-m6/shared';
 import {STONE} from '../../diorama';
 
 export {clamp, fadeAt, popAt, ease, shade, mix, GlossDefs, Ball, Pill, textWidth, Arrow, hash01} from '../chem-y12-m6/shared';
@@ -144,3 +146,31 @@ const shadeHex = (hex: string, amt: number) => {
 	const ch = (v: number) => Math.max(0, Math.min(255, Math.round(v + amt * 255)));
 	return `#${((1 << 24) | (ch((n >> 16) & 255) << 16) | (ch((n >> 8) & 255) << 8) | ch(n & 255)).toString(16).slice(1)}`;
 };
+
+/** A row of step chips; the current step (by frame) is outlined in the accent. */
+export const StepChips = ({steps, frame, fps, accent}: {steps: {label: string; tool?: string; at: number}[]; frame: number; fps: number; accent: string}) => {
+	const anyTool = steps.some((s) => s.tool);
+	const ws = steps.map((s) => Math.max(textWidthC(s.label, 17), s.tool ? textWidthC(s.tool, 15) : 0) + 24);
+	const gap = 12;
+	const total = ws.reduce((a, b) => a + b, 0) + gap * (ws.length - 1);
+	let x = 760 / 2 - total / 2;
+	return (
+		<g>
+			{steps.map((s, i) => {
+				const cx = x + ws[i] / 2;
+				x += ws[i] + gap;
+				const on = frame >= s.at;
+				const current = on && (i === steps.length - 1 || frame < steps[i + 1].at);
+				const p = Math.min(1, popAtC(frame, fps, s.at));
+				return (
+					<g key={i} opacity={0.35 + 0.65 * p}>
+						<rect x={cx - ws[i] / 2} y={14} width={ws[i]} height={anyTool ? 54 : 34} rx={12} fill={on ? '#ffffff' : '#f1f3f6'} stroke={current ? accent : TOK.inkMute} strokeWidth={current ? 3 : 1.5} />
+						<text x={cx} y={37} textAnchor="middle" fill={on ? accent : TOK.inkDim} fontSize={17} fontWeight={800}>{s.label}</text>
+						{s.tool && <text x={cx} y={58} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>{s.tool}</text>}
+					</g>
+				);
+			})}
+		</g>
+	);
+};
+

@@ -14,6 +14,7 @@ import {LineageDiagram} from '../kinds/bio-y12-m6/LineageDiagram';
 import {GeneDiagram} from '../kinds/bio-y12-m6/GeneDiagram';
 import {RecombinantDiagram} from '../kinds/bio-y12-m6/RecombinantDiagram';
 import {CloningDiagram} from '../kinds/bio-y12-m6/CloningDiagram';
+import {CrossDiagram} from '../kinds/bio-y12-m6/CrossDiagram';
 
 export const KINDS: DioramaKindMap = {
   bio12m6Codons: CodonsDiagram,
@@ -25,4 +26,5 @@ export const KINDS: DioramaKindMap = {
   bio12m6Gene: GeneDiagram,
   bio12m6Recombinant: RecombinantDiagram,
   bio12m6Cloning: CloningDiagram,
+  bio12m6Cross: CrossDiagram,
 };

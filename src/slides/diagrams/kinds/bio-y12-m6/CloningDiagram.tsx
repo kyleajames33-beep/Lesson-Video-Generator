@@ -14,7 +14,7 @@ import {interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
 import {DioramaDefs, DioramaPlinth, idleBob, idlePulse} from '../../diorama';
-import {AMBER, BLUE, GlossDefs, ROSE, clamp, ease, fadeAt, popAt, textWidth} from './shared';
+import {AMBER, BLUE, GlossDefs, ROSE, StepChips, clamp, ease, fadeAt, popAt, textWidth} from './shared';
 
 export type CloningProps = {
 	mode: 'scnt' | 'compare';
@@ -48,32 +48,6 @@ const Sheep = ({x, y, o}: {x: number; y: number; o: number}) => (
 		<circle cx={-84} cy={-21} r={2.5} fill="#fff" />
 	</g>
 );
-
-const Chips = ({steps, frame, fps, accent}: {steps: {label: string; tool?: string; at: number}[]; frame: number; fps: number; accent: string}) => {
-	const anyTool = steps.some((s) => s.tool);
-	const ws = steps.map((s) => Math.max(textWidth(s.label, 17), s.tool ? textWidth(s.tool, 15) : 0) + 24);
-	const gap = 12;
-	const total = ws.reduce((a, b) => a + b, 0) + gap * (ws.length - 1);
-	let x = W / 2 - total / 2;
-	return (
-		<g>
-			{steps.map((s, i) => {
-				const cx = x + ws[i] / 2;
-				x += ws[i] + gap;
-				const on = frame >= s.at;
-				const current = on && (i === steps.length - 1 || frame < steps[i + 1].at);
-				const p = Math.min(1, popAt(frame, fps, s.at));
-				return (
-					<g key={i} opacity={0.35 + 0.65 * p}>
-						<rect x={cx - ws[i] / 2} y={14} width={ws[i]} height={anyTool ? 54 : 34} rx={12} fill={on ? '#ffffff' : '#f1f3f6'} stroke={current ? accent : TOK.inkMute} strokeWidth={current ? 3 : 1.5} />
-						<text x={cx} y={37} textAnchor="middle" fill={on ? accent : TOK.inkDim} fontSize={17} fontWeight={800}>{s.label}</text>
-						{s.tool && <text x={cx} y={58} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>{s.tool}</text>}
-					</g>
-				);
-			})}
-		</g>
-	);
-};
 
 export const CloningDiagram = ({mode, steps = [], panels = [], footer, delay = 62}: CloningProps) => {
 	const frame = useCurrentFrame() - delay;
@@ -180,7 +154,7 @@ export const CloningDiagram = ({mode, steps = [], panels = [], footer, delay = 6
 	return (
 		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Somatic cell nuclear transfer" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			{defs}
-			<Chips steps={steps} frame={frame} fps={fps} accent={theme.accent} />
+			<StepChips steps={steps} frame={frame} fps={fps} accent={theme.accent} />
 			<g opacity={1 - 0.65 * fadeAt(frame, s4 + 40, 20)}>
 				<DioramaPlinth id={`${ID}ep`} cx={EX} cy={EY + ER + 18} rx={126} />
 			</g>
