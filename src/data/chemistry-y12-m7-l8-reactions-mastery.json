@@ -75,6 +75,83 @@
       ],
       "secondary": "To find an alkyne precursor from a geminal dihalide, strip both halogens off the shared carbon and reform the triple bond to its neighbour.",
       "callout": "Adjacent carbons means alkene; same carbon means alkyne.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Molecules",
+        "props": {
+          "panels": [
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 x1:Cl@0,-1 x2:Cl@1,-1",
+                "bonds": "c1-c2 c2-c3 c1-x1 c2-x2"
+              },
+              "at": 30,
+              "name": "1,2-dichloropropane",
+              "highlights": [
+                {
+                  "atoms": [
+                    "x1",
+                    "c1"
+                  ],
+                  "at": 60,
+                  "c": "accent"
+                },
+                {
+                  "atoms": [
+                    "x2",
+                    "c2"
+                  ],
+                  "at": 60,
+                  "c": "accent"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "vicinal: adjacent C",
+                  "at": 60,
+                  "c": "accent"
+                },
+                {
+                  "t": "from propene + Cl₂",
+                  "at": 511,
+                  "c": "dim"
+                }
+              ]
+            },
+            {
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1,0 c3:C@2,0 x1:Br@1,-1 x2:Br@1,1",
+                "bonds": "c1-c2 c2-c3 c2-x1 c2-x2"
+              },
+              "at": 268,
+              "name": "2,2-dibromopropane",
+              "highlights": [
+                {
+                  "atoms": [
+                    "x1",
+                    "c2",
+                    "x2"
+                  ],
+                  "at": 290,
+                  "c": "amber"
+                }
+              ],
+              "tags": [
+                {
+                  "t": "geminal: same C",
+                  "at": 290,
+                  "c": "amber"
+                },
+                {
+                  "t": "from propyne + 2 HBr",
+                  "at": 558,
+                  "c": "dim"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1050,
       "caption": "Vicinal (adjacent, from alkene); geminal (same carbon, from alkyne).",
       "voiceover": {
@@ -127,6 +204,124 @@
       ],
       "secondary": "A secondary or tertiary alcohol points to Markovnikov hydration of an alkene. Locate the C=C position that puts the OH where it is.",
       "callout": "Group on the product, atoms added, then rebuild the starting material.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Reaction",
+        "props": {
+          "cond": {
+            "t": "forward: steam, H₃PO₄, 300 °C, high pressure",
+            "at": 420
+          },
+          "stages": [
+            {
+              "at": 20,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.25,0 c3:C@2.5,0 o:O@1.25,-1 hb:H@0,0.66",
+                "bonds": "c1-c2 c2-c3 c2-o c1-hb"
+              },
+              "eq": [
+                {
+                  "t": "Given: "
+                },
+                {
+                  "t": "propan-2-ol",
+                  "c": "accent"
+                }
+              ],
+              "highlights": [
+                {
+                  "atoms": [
+                    "o",
+                    "oh0"
+                  ],
+                  "c": "accent",
+                  "label": "alcohol group",
+                  "at": 119
+                }
+              ]
+            },
+            {
+              "at": 241,
+              "len": 20,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.25,0 c3:C@2.5,0 o:O@1.25,-1 hb:H@0,0.66",
+                "bonds": "c1-c2 c2-c3 c2-o c1-hb"
+              },
+              "eq": [
+                {
+                  "t": "What was added? "
+                },
+                {
+                  "t": "H and OH = H₂O",
+                  "c": "amber"
+                }
+              ],
+              "highlights": [
+                {
+                  "atoms": [
+                    "o",
+                    "oh0"
+                  ],
+                  "c": "amber"
+                },
+                {
+                  "atoms": [
+                    "hb"
+                  ],
+                  "c": "amber"
+                }
+              ]
+            },
+            {
+              "at": 364,
+              "len": 70,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.25,0 c3:C@2.5,0 o:O@3.9,-1.2 hb:H@3.33,-0.87",
+                "bonds": "c1=c2 c2-c3 o-hb",
+                "h": {
+                  "c2": [
+                    270
+                  ],
+                  "o": [
+                    30
+                  ]
+                }
+              },
+              "eq": [
+                {
+                  "t": "Remove H₂O, reform C=C: "
+                },
+                {
+                  "t": "propene",
+                  "c": "accent"
+                }
+              ],
+              "labels": [
+                {
+                  "t": "propene",
+                  "x": 1.25,
+                  "y": 1.35,
+                  "c": "accent"
+                },
+                {
+                  "t": "H₂O",
+                  "x": 3.9,
+                  "y": -0.1,
+                  "c": "dim"
+                },
+                {
+                  "t": "2° alcohol ← Markovnikov hydration",
+                  "x": 1.7,
+                  "y": -1.3,
+                  "c": "amber",
+                  "at": 559,
+                  "size": 18
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1020,
       "caption": "Reverse synthesis: group, atoms added, reform the multiple bond, state conditions.",
       "voiceover": {

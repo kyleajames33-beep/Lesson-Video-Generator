@@ -56,6 +56,35 @@
       ],
       "secondary": "Always pair the shape name with the bond angle. The HSC awards a mark for each, so give both.",
       "callout": "More bonds between carbons means a flatter, then straighter shape.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Shapes3D",
+        "props": {
+          "models": [
+            {
+              "preset": "ethane",
+              "name": "ethane, C₂H₆",
+              "shape": "tetrahedral",
+              "at": 150,
+              "angleAt": 226
+            },
+            {
+              "preset": "ethene",
+              "name": "ethene, C₂H₄",
+              "shape": "trigonal planar",
+              "at": 354,
+              "angleAt": 420
+            },
+            {
+              "preset": "ethyne",
+              "name": "ethyne, C₂H₂",
+              "shape": "linear",
+              "at": 548,
+              "angleAt": 600
+            }
+          ]
+        }
+      },
       "durationInFrames": 990,
       "caption": "Single tetrahedral 109.5; double trigonal planar 120; triple linear 180.",
       "voiceover": {
@@ -93,6 +122,111 @@
       ],
       "secondary": "The pi bond also locks the double bond against rotation, so the two carbons and their attached atoms stay fixed in one plane.",
       "callout": "Pi bond present, the molecule adds; pi bond absent, it resists.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Reaction",
+        "props": {
+          "rows": [
+            {
+              "stages": [
+                {
+                  "at": 20,
+                  "mol": {
+                    "atoms": "c1:C@0,0 c2:C@1.3,0 b1:Br@0,-1.9 b2:Br@1.3,-1.9",
+                    "bonds": "c1=c2 b1-b2"
+                  },
+                  "eq": [
+                    {
+                      "t": "Alkene: π bond",
+                      "c": "accent"
+                    }
+                  ],
+                  "highlights": [
+                    {
+                      "atoms": [
+                        "c1",
+                        "c2"
+                      ],
+                      "c": "amber",
+                      "at": 108
+                    }
+                  ]
+                },
+                {
+                  "at": 333,
+                  "len": 50,
+                  "mol": {
+                    "atoms": "c1:C@0,0 c2:C@1.3,0 b1:Br@0,-1 b2:Br@1.3,-1",
+                    "bonds": "c1-c2 c1-b1 c2-b2"
+                  },
+                  "eq": [
+                    {
+                      "t": "Alkene: "
+                    },
+                    {
+                      "t": "adds",
+                      "c": "accent"
+                    }
+                  ],
+                  "labels": [
+                    {
+                      "t": "addition",
+                      "x": 0.65,
+                      "y": 1.4,
+                      "c": "accent"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "stages": [
+                {
+                  "at": 429,
+                  "mol": {
+                    "atoms": "c1:C@0,0 c2:C@1.3,0 b1:Br@0,-1.9 b2:Br@1.3,-1.9",
+                    "bonds": "c1-c2 b1-b2"
+                  },
+                  "eq": [
+                    {
+                      "t": "Alkane: σ bonds only",
+                      "c": "second"
+                    }
+                  ]
+                },
+                {
+                  "at": 572,
+                  "len": 20,
+                  "mol": {
+                    "atoms": "c1:C@0,0 c2:C@1.3,0 b1:Br@0,-1.9 b2:Br@1.3,-1.9",
+                    "bonds": "c1-c2 b1-b2"
+                  },
+                  "eq": [
+                    {
+                      "t": "Alkane: "
+                    },
+                    {
+                      "t": "no addition",
+                      "c": "second"
+                    }
+                  ],
+                  "labels": [
+                    {
+                      "t": "substitution only, with UV",
+                      "x": 0.65,
+                      "y": 1.4,
+                      "c": "second",
+                      "at": 627,
+                      "size": 18
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "layout": "cols"
+        }
+      },
       "durationInFrames": 1020,
       "caption": "A pi bond enables addition; without one, alkanes only substitute under UV.",
       "voiceover": {

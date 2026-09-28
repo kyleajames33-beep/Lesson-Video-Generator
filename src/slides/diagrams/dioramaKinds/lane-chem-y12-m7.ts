@@ -5,6 +5,12 @@
 // See docs/diorama-system.md.
 
 import type {DioramaKindMap} from './types';
+import {MoleculePanelsDiagram} from '../kinds/chem-y12-m7/MoleculePanelsDiagram';
+import {ReactionMorphDiagram} from '../kinds/chem-y12-m7/ReactionMorphDiagram';
+import {Shapes3DDiagram} from '../kinds/chem-y12-m7/Shapes3DDiagram';
 
 export const KINDS: DioramaKindMap = {
+  chem12m7Molecules: MoleculePanelsDiagram,
+  chem12m7Reaction: ReactionMorphDiagram,
+  chem12m7Shapes3D: Shapes3DDiagram,
 };
