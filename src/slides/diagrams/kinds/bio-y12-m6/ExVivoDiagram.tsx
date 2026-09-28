@@ -109,16 +109,18 @@ export const ExVivoDiagram = ({steps, beats, editLabel, outcome, footer, delay =
 				let y: number;
 				if (!settled && back > 0) {
 					const p = arc(Math.max(0, Math.min(1, back * 1.15 - k * 0.07)), false);
-					x = p.x + dx * 0.6;
-					y = p.y + dy * 0.6;
+					const f = 1 - 0.4 * Math.sin(Math.max(0, Math.min(1, back * 1.15 - k * 0.07)) * Math.PI);
+					x = p.x + dx * f;
+					y = p.y + 4 + dy * f;
 				} else if (settled) {
 					x = BX + dx;
 					y = PY - 14 + dy;
 				} else {
 					const t = Math.max(0, Math.min(1, go * 1.15 - k * 0.07));
 					const a = arc(t, true);
-					x = a.x + dx * (t < 1 ? 0.6 : 1);
-					y = a.y + dy * (t < 1 ? 0.6 : 1);
+					const f = 1 - 0.4 * Math.sin(t * Math.PI);
+					x = a.x + dx * f;
+					y = a.y + 4 + dy * f;
 					if (t >= 1) {
 						x = LX + dx;
 						y = PY - 14 + dy;
@@ -138,7 +140,7 @@ export const ExVivoDiagram = ({steps, beats, editLabel, outcome, footer, delay =
 					</g>
 				);
 			})}
-			<text x={LX} y={PY - 76} textAnchor="middle" fill={TOK.amberInk} fontSize={16} fontWeight={800} opacity={fadeAt(frame, b.edit + 30) * (1 - fadeAt(frame, b.infuse, 14))}>
+			<text x={LX} y={PY - 100} textAnchor="middle" fill={TOK.amberInk} fontSize={16} fontWeight={800} opacity={fadeAt(frame, b.edit + 30) * (1 - fadeAt(frame, b.infuse, 14))}>
 				{editLabel}
 			</text>
 			<text x={BX} y={PY + 96} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700} opacity={clear * (1 - fadeAt(frame, b.infuse + 40, 14))}>
