@@ -90,7 +90,7 @@ export const IndicatorDiagram = ({indicators, sweep, generic = false, equationAt
 		const cx = 380, baseY = 300;
 		const liquid = colorAt(ind, f);
 		const ratio = f / (1 - f);
-		const ratioText = ratio >= 1 ? `1 : ${ratio >= 9.5 ? ratio.toFixed(0) : ratio.toFixed(1)}` : `${(1 / ratio) >= 9.5 ? (1 / ratio).toFixed(0) : (1 / ratio).toFixed(1)} : 1`;
+		const ratioText = Math.abs(ratio - 1) < 0.05 ? '1 : 1' : ratio >= 1 ? `1 : ${ratio >= 9.5 ? ratio.toFixed(0) : ratio.toFixed(1)}` : `${(1 / ratio) >= 9.5 ? (1 / ratio).toFixed(0) : (1 / ratio).toFixed(1)} : 1`;
 		return (
 			<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Indicator equilibrium: colour follows pH" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 				<DioramaDefs id={ID} />

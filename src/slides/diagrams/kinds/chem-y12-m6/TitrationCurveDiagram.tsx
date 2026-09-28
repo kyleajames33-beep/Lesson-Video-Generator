@@ -170,7 +170,7 @@ export const TitrationCurveDiagram = ({
 			{single && markers.bufferAt !== undefined && (
 				<g opacity={fadeAt(frame, markers.bufferAt, 16)}>
 					<rect x={gx(vEq * 0.2)} y={gy(halfPH + 1.25)} width={gx(vEq * 0.8) - gx(vEq * 0.2)} height={gy(halfPH - 1.25) - gy(halfPH + 1.25)} rx={10} fill={theme.accent} opacity={0.1 + 0.05 * idlePulse(frame)} />
-					<text x={gx(vEq * 0.5)} y={gy(halfPH - 1.25) + 22} textAnchor="middle" fill={theme.accent} fontSize={17} fontWeight={800}>buffer region: pH barely moves</text>
+					<text x={gx(vEq * 0.2) + 4} y={gy(halfPH + 1.25) - 10} fill={theme.accent} fontSize={17} fontWeight={800}>buffer region</text>
 				</g>
 			)}
 
