@@ -134,6 +134,37 @@
       "caption": "Gene cloning copies one sequence efficiently; effectiveness is judged against the goal.",
       "voiceover": {
         "text": "Now gene cloning, and how we judge effectiveness. The process is, you insert a target DNA fragment into a vector, usually a plasmid, then put that vector into a host cell, and the host replicates over and over to make many identical copies of your sequence. This is efficient and scalable, and it sits at the heart of recombinant DNA work, DNA analysis and protein manufacture. Now the assessment part, effectiveness always depends on the goal. Whole-organism cloning is biologically significant but limited by low efficiency and phenotype variation. Gene cloning is usually more effective for practical biotechnology, because the target is specific and genuinely achievable. The honest summary is that neither is perfect copying, so judge each one against what it was actually trying to do."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6Recombinant",
+        "props": {
+          "steps": [
+            {
+              "label": "Into a vector",
+              "tool": "e.g. a plasmid",
+              "at": 12
+            },
+            {
+              "label": "Into a host cell",
+              "at": 96
+            },
+            {
+              "label": "Host replicates",
+              "at": 158
+            }
+          ],
+          "actions": [
+            "join",
+            "insert",
+            "copy"
+          ],
+          "geneLabel": "target DNA",
+          "footer": {
+            "text": "Efficient and scalable: judge it against the goal",
+            "at": 555
+          }
+        }
       }
     },
     {

@@ -69,18 +69,44 @@
         "text": "Let's lay out the method, because recombinant DNA is not a single event, it's a toolchain of four steps, each with its own tool. Step one, cut, you use restriction enzymes to cut out the chosen DNA fragment and to cut open the vector. Step two, join, you use DNA ligase to stitch the fragment into the vector, forming what we call recombinant DNA. Step three, insert, you put that recombinant vector into a host cell. And step four, express, the host cell copies or expresses the gene, producing a useful protein, or a transgenic organism with a new trait. And notice how this differs from selective breeding, which only reshuffles alleles already present, here a deliberately chosen piece of DNA is actually added. Cut, join, insert, express, in that order."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {"id": "cut", "label": "1. Cut (restriction enzymes)"},
-          {"id": "join", "label": "2. Join (DNA ligase)"},
-          {"id": "insert", "label": "3. Insert into host"},
-          {"id": "express", "label": "4. Host copies / expresses"}
-        ],
-        "edges": [
-          {"from": "cut", "to": "join"},
-          {"from": "join", "to": "insert"},
-          {"from": "insert", "to": "express"}
-        ]
+        "type": "diorama",
+        "kind": "bio12m6Recombinant",
+        "props": {
+          "steps": [
+            {
+              "label": "1 · Cut",
+              "tool": "restriction enzymes",
+              "at": 108
+            },
+            {
+              "label": "2 · Join",
+              "tool": "DNA ligase",
+              "at": 252
+            },
+            {
+              "label": "3 · Insert",
+              "tool": "into a host cell",
+              "at": 398
+            },
+            {
+              "label": "4 · Express",
+              "tool": "copy or express",
+              "at": 484
+            }
+          ],
+          "actions": [
+            "cut",
+            "join",
+            "insert",
+            "express"
+          ],
+          "geneLabel": "chosen gene",
+          "productLabel": "protein",
+          "footer": {
+            "text": "A chosen piece of DNA is added, not just reshuffled",
+            "at": 656
+          }
+        }
       }
     },
     {
@@ -117,6 +143,48 @@
       "caption": "A transgenic organism carries directly inserted DNA, unlike a selectively bred one.",
       "voiceover": {
         "text": "So what exactly makes an organism transgenic? It carries DNA that was directly inserted from another organism or source, and it may then express a new trait because of it. The key contrast is with selective breeding. A selectively bred organism only ever inherits a reshuffle of alleles that the species already had, nothing genuinely new is added. A transgenic organism has had new DNA directly introduced, giving it a trait it could not have inherited by normal reproduction at all. And the same method serves two big areas. In agriculture, transgenic crops are engineered for traits such as pest resistance. In medicine, host cells are engineered to produce proteins like insulin. New DNA added, not just old alleles rearranged."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6AlleleJobs",
+        "props": {
+          "panels": [
+            {
+              "title": "Selective breeding",
+              "action": "shuffle",
+              "genotype": "AaBb",
+              "at": 140,
+              "actAt": 170,
+              "caption": [
+                "Only reshuffles alleles",
+                "the species already has"
+              ],
+              "verdict": {
+                "text": "Nothing new added",
+                "at": 300
+              }
+            },
+            {
+              "title": "Transgenic organism",
+              "action": "insert",
+              "at": 340,
+              "actAt": 365,
+              "caption": [
+                "DNA inserted from",
+                "another organism or source"
+              ],
+              "verdict": {
+                "text": "New DNA, new trait",
+                "amber": true,
+                "at": 420
+              }
+            }
+          ],
+          "footer": {
+            "text": "Pest-resistant crops · insulin made in host cells",
+            "at": 570
+          }
+        }
       }
     },
     {
