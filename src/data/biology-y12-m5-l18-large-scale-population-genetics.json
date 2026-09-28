@@ -253,7 +253,22 @@
       "voiceover": {
         "text": "Now back to the devils, because this is population genetics data in conservation. Comparing DNA across many devils showed that the species has very low genetic diversity, the signature of past bottlenecks, when the population crashed, and of long isolation on Tasmania. That matters for two reasons. First, low diversity in immune genes may be part of why the facial tumour isn't rejected. Second, a population with fewer alleles has less raw material to adapt to any new threat. So conservation managers set up an insurance population of disease free devils, and they use genetic data to choose which animals breed, so that as much of the remaining diversity as possible is kept. But watch your wording. Genetic diversity improves a population's capacity to adapt. It doesn't guarantee survival, which still depends on habitat, disease and plenty of other ecological factors."
       },
-      "durationInFrames": 1737
+      "durationInFrames": 1737,
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Population",
+        "props": {
+          "mode": "bottleneck",
+          "at": {
+            "diverse": 0,
+            "crash": 270,
+            "regrow": 386,
+            "immune": 506,
+            "insurance": 950,
+            "rule": 1358
+          }
+        }
+      }
     },
     {
       "id": "misconception",

@@ -113,6 +113,22 @@
       "voiceover": {
         "text": "The first strategy is external fertilisation, and the salmon are a perfect example. Here the gametes meet outside the body, almost always in water. The big advantage is sheer quantity, animals release enormous numbers of gametes, and so potentially produce many offspring at once. The catch is that the success rate per gamete is low. Out in open water, most sperm never reach an egg, predators eat many of the eggs and young, and the whole thing only works in water, because gametes would simply dry out on land. It also relies on timing, which is why so many species spawn together in synchronised events, so the sperm and egg are actually in the water at the same moment before they drift apart. You see external fertilisation in fish, amphibians like frogs, and lots of marine invertebrates.",
         "audioFile": "public/audio/Biology-Y12-M5-L2/concept-external.fe6ccb26fa70.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Fertilise",
+        "props": {
+          "mode": "external",
+          "at": {
+            "outside": 134,
+            "many": 266,
+            "low": 518,
+            "miss": 662,
+            "water": 950,
+            "timing": 1046,
+            "examples": 1466
+          }
+        }
       }
     },
     {
@@ -140,11 +156,21 @@
         "audioFile": "public/audio/Biology-Y12-M5-L2/concept-internal.464e49cff61f.mp3"
       },
       "diagram": {
-        "type": "beforeAfter",
-        "beforeLabel": "External fertilisation",
-        "afterLabel": "Internal fertilisation",
-        "beforeContent": "Many gametes — low success, needs water",
-        "afterContent": "Fewer gametes — high protection, on land"
+        "type": "diorama",
+        "kind": "bio12m5Fertilise",
+        "props": {
+          "mode": "compare",
+          "at": {
+            "inside": 50,
+            "protection": 146,
+            "higher": 326,
+            "land": 434,
+            "cost": 662,
+            "examples": 902,
+            "trap": 998,
+            "birds": 1190
+          }
+        }
       }
     },
     {

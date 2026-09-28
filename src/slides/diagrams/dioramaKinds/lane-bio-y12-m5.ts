@@ -21,6 +21,17 @@ import {FoldDiagram} from '../kinds/bio-y12-m5/FoldDiagram';
 import {GxEDiagram} from '../kinds/bio-y12-m5/GxEDiagram';
 import {CrossDiagram} from '../kinds/bio-y12-m5/CrossDiagram';
 import {HeterozygoteDiagram} from '../kinds/bio-y12-m5/HeterozygoteDiagram';
+import {PopulationDiagram} from '../kinds/bio-y12-m5/PopulationDiagram';
+import {LineageDiagram} from '../kinds/bio-y12-m5/LineageDiagram';
+import {MicrobesDiagram} from '../kinds/bio-y12-m5/MicrobesDiagram';
+import {FlowerDiagram} from '../kinds/bio-y12-m5/FlowerDiagram';
+import {MammalDiagram} from '../kinds/bio-y12-m5/MammalDiagram';
+import {FertiliseDiagram} from '../kinds/bio-y12-m5/FertiliseDiagram';
+import {BreedingDiagram} from '../kinds/bio-y12-m5/BreedingDiagram';
+import {CellDnaDiagram} from '../kinds/bio-y12-m5/CellDnaDiagram';
+import {AllelePoolDiagram} from '../kinds/bio-y12-m5/AllelePoolDiagram';
+import {RiskArrayDiagram} from '../kinds/bio-y12-m5/RiskArrayDiagram';
+import {NucleusExportDiagram} from '../kinds/bio-y12-m5/NucleusExportDiagram';
 
 export const KINDS: DioramaKindMap = {
   bio12m5Mitosis: MitosisDiagram,
@@ -39,4 +50,15 @@ export const KINDS: DioramaKindMap = {
   bio12m5GxE: GxEDiagram,
   bio12m5Cross: CrossDiagram,
   bio12m5Heterozygote: HeterozygoteDiagram,
+  bio12m5Population: PopulationDiagram,
+  bio12m5Lineage: LineageDiagram,
+  bio12m5Microbes: MicrobesDiagram,
+  bio12m5Flower: FlowerDiagram,
+  bio12m5Mammal: MammalDiagram,
+  bio12m5Fertilise: FertiliseDiagram,
+  bio12m5Breeding: BreedingDiagram,
+  bio12m5CellDna: CellDnaDiagram,
+  bio12m5AllelePool: AllelePoolDiagram,
+  bio12m5RiskArray: RiskArrayDiagram,
+  bio12m5NucleusExport: NucleusExportDiagram,
 };

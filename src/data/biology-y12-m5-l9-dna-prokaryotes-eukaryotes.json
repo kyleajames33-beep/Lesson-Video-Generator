@@ -74,10 +74,20 @@
         "text": "Let's begin with the big picture, because it frames everything. Both prokaryotes and eukaryotes use exactly the same DNA chemistry, the same four bases, the same complementary pairing rules we learned earlier in this module. So the molecule itself is the same. What differs is how that DNA is arranged and where it is kept. In prokaryotes, like bacteria, there is usually one main circular DNA molecule, and it sits in a region of the cell called the nucleoid, which is not enclosed by any membrane. In eukaryotes, like our cells, the DNA is split across multiple linear chromosomes, and these are kept inside a membrane bound nucleus. So in the exam, reach for the precise terms, circular DNA and nucleoid for prokaryotes, linear chromosomes and nucleus for eukaryotes. Only the arrangement differs."
       },
       "diagram": {
-        "type": "venn",
-        "leftLabel": "Prokaryote: circular, nucleoid",
-        "rightLabel": "Eukaryote: linear, nucleus",
-        "overlapLabel": "Same DNA bases and pairing"
+        "type": "diorama",
+        "kind": "bio12m5CellDna",
+        "props": {
+          "mode": "compare",
+          "at": {
+            "same": 134,
+            "arranged": 518,
+            "circular": 674,
+            "nucleoid": 866,
+            "linear": 1082,
+            "nucleus": 1190,
+            "rule": 1478
+          }
+        }
       }
     },
     {
@@ -102,6 +112,22 @@
       "caption": "Prokaryotes have a circular chromosome plus separate plasmids that carry extra genes.",
       "voiceover": {
         "text": "Let's zoom in on prokaryotes, because they have a clever extra feature. The main DNA, as we said, is a single circular molecule sitting in the nucleoid. But many bacteria also carry plasmids, and these are the key to so much of biotechnology. A plasmid is a small circular DNA molecule that is completely separate from the main chromosome. Think of the main chromosome as the cell's core instruction manual, and plasmids as little extra booklets of optional information. Plasmids often carry extra genes, and a really important example is antibiotic resistance, which is how resistance can spread so quickly between bacteria. And because plasmids are small and separate from the main chromosome, scientists can use them as vectors, vehicles for carrying a chosen gene from one cell into another. Just be clear, a plasmid is not the main chromosome, it is the spare, transferable ring."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5CellDna",
+        "props": {
+          "mode": "prokaryote",
+          "at": {
+            "main": 170,
+            "plasmids": 314,
+            "small": 494,
+            "extra": 818,
+            "resistance": 1010,
+            "vector": 1346,
+            "rule": 1646
+          }
+        }
       }
     },
     {
@@ -126,6 +152,22 @@
       "caption": "Eukaryotic DNA forms chromatin with proteins and condenses into chromosomes for division.",
       "voiceover": {
         "text": "Now the eukaryotes, where the packaging problem is much bigger, because there is so much more DNA. Eukaryotes have multiple linear chromosomes, all kept inside the membrane bound nucleus. But for most of the cell's life, that DNA is not in tightly wound chromosome form. Instead, the DNA is wound around proteins to form a complex called chromatin, which is relatively less condensed, more like loosely spooled thread. Then, only when the cell is about to divide, that chromatin condenses tightly into the visible X shaped chromosomes you would see under a microscope. Why bother with all this packaging? Because it lets an enormous length of DNA, around two metres in each human cell, fit inside a microscopic nucleus, while still keeping the genes accessible when they are needed. It also enables the complex gene regulation that eukaryotes rely on."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5CellDna",
+        "props": {
+          "mode": "eukaryote",
+          "at": {
+            "linear": 158,
+            "wrap": 518,
+            "chromatin": 614,
+            "loose": 710,
+            "condense": 878,
+            "length": 1226,
+            "regulation": 1538
+          }
+        }
       }
     },
     {

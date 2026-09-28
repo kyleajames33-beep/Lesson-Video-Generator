@@ -77,7 +77,23 @@
       "voiceover": {
         "text": "Let's start with what population genetics is actually good at. Its real strength is predicting trends across groups. Things like how much more common a disease is in families that carry a certain variant, or how allele frequencies differ between populations. Those predictions rest on data from thousands of people, so they're reliable. What it's much less good at is predicting what will happen to one particular person. That's because an individual's outcome also depends on their environment, their lifestyle, their other genes and plain chance, and none of those are fixed by one variant. So a risk variant raises the probability of a disease, but it doesn't guarantee it. The rule that follows is simple. Population level evidence supports population level conclusions, so match the scope of your claim to the scope of your data."
       },
-      "durationInFrames": 1677
+      "durationInFrames": 1677,
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5RiskArray",
+        "props": {
+          "total": 10,
+          "affected": 7,
+          "at": {
+            "group": 0,
+            "trend": 98,
+            "one": 710,
+            "factors": 854,
+            "probability": 1118,
+            "rule": 1418
+          }
+        }
+      }
     },
     {
       "id": "concept-personalised",

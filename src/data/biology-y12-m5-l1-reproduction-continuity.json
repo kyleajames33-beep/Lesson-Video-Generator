@@ -74,6 +74,20 @@
       "voiceover": {
         "text": "Let's start with what continuity actually means, because students often get this slightly wrong. Continuity of a species is not about keeping any single organism alive, every individual dies eventually. It is about the genetic information surviving across generations. Reproduction is what makes that possible, and it does two jobs at once. First, it produces offspring. Second, and just as important for HSC, it transfers hereditary information, the DNA, from parent to offspring. So continuity depends on two linked conditions. The DNA has to be passed on, and the offspring that receive it have to be viable, meaning they survive long enough to reproduce themselves. Hold onto that framing, because the whole module builds on it. Meiosis, DNA replication, inheritance, they are all really answering one question, how does genetic information move forward through time?",
         "audioFile": "public/audio/Biology-Y12-M5-L1/concept-continuity.4086027e4933.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Lineage",
+        "props": {
+          "at": {
+            "parade": 242,
+            "ribbon": 338,
+            "offspring": 578,
+            "transfer": 698,
+            "viable": 1082,
+            "rule": 1502
+          }
+        }
       }
     },
     {
@@ -130,31 +144,19 @@
         "audioFile": "public/audio/Biology-Y12-M5-L1/concept-asexual.b2d78860a5df.mp3"
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "p",
-            "label": "1 parent"
-          },
-          {
-            "id": "d",
-            "label": "DNA copied"
-          },
-          {
-            "id": "o",
-            "label": "Clones"
+        "type": "diorama",
+        "kind": "bio12m5Population",
+        "props": {
+          "mode": "clone",
+          "at": {
+            "parent": 38,
+            "clones": 354,
+            "grow": 602,
+            "preserved": 746,
+            "pathogen": 974,
+            "mutation": 1586
           }
-        ],
-        "edges": [
-          {
-            "from": "p",
-            "to": "d"
-          },
-          {
-            "from": "d",
-            "to": "o"
-          }
-        ]
+        }
       }
     },
     {
@@ -182,10 +184,19 @@
         "audioFile": "public/audio/Biology-Y12-M5-L1/concept-sexual.f2cb48ef91bd.mp3"
       },
       "diagram": {
-        "type": "venn",
-        "leftLabel": "Parent A alleles",
-        "rightLabel": "Parent B alleles",
-        "overlapLabel": "New combinations in offspring"
+        "type": "diorama",
+        "kind": "bio12m5Population",
+        "props": {
+          "mode": "varied",
+          "at": {
+            "fuse": 254,
+            "varied": 578,
+            "shift": 782,
+            "some": 890,
+            "noguarantee": 1106,
+            "cost": 1382
+          }
+        }
       }
     },
     {
