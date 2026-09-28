@@ -74,29 +74,64 @@
         "text": "Let's build the central model of this whole topic, the chain of infection. For a pathogen to spread from one person to the next, a sequence of links all have to connect. First there's the agent, the pathogen itself. Then the reservoir, where it lives, maybe a person, an animal, or contaminated water. Then the portal of exit, how it leaves, like coughing or in faeces. Then the mode of transmission, how it travels, droplets, contact, or a vehicle like water. Then the portal of entry into the next person, the mouth, nose, or a wound. And finally a susceptible host, someone who isn't immune. Here's the powerful insight. You do not have to break all six links. Snap any single one, and the chain fails, transmission stops. Every public health strategy you'll meet works by breaking at least one link, and the best programs layer several together to break a few at once."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Link in the chain",
-          "How we break it"
-        ],
-        "rows": [
-          [
-            "Reservoir",
-            "Clean water, food safety, isolation"
+        "type": "diorama",
+        "kind": "bio12m7Chain",
+        "props": {
+          "links": [
+            {
+              "name": "agent",
+              "at": 334
+            },
+            {
+              "name": "reservoir",
+              "at": 430
+            },
+            {
+              "name": "portal of exit",
+              "at": 622
+            },
+            {
+              "name": "mode of transmission",
+              "at": 778
+            },
+            {
+              "name": "portal of entry",
+              "at": 958
+            },
+            {
+              "name": "susceptible host",
+              "at": 1150
+            }
           ],
-          [
-            "Mode of transmission",
-            "Handwashing, PPE, distancing, quarantine"
+          "snap": {
+            "index": 3,
+            "at": 1402,
+            "text": "One broken link stops it"
+          },
+          "breakers": [
+            {
+              "index": 1,
+              "text": "clean water, food safety",
+              "at": 1738
+            },
+            {
+              "index": 3,
+              "text": "handwashing, PPE, quarantine",
+              "at": 1760
+            },
+            {
+              "index": 5,
+              "text": "vaccination",
+              "at": 1782
+            }
           ],
-          [
-            "Portal of entry",
-            "PPE, safe food and water handling"
-          ],
-          [
-            "Susceptible host",
-            "Vaccination, chemoprophylaxis"
+          "footer": [
+            {
+              "text": "You don’t have to break all six",
+              "at": 1294
+            }
           ]
-        ]
+        }
       }
     },
     {
