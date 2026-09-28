@@ -72,6 +72,26 @@
       "caption": "Environmental diseases show exposure, dose-response, and latency.",
       "voiceover": {
         "text": "So what actually defines an environmental disease? There are three signatures, and naming them earns marks. First, exposure, an external agent is required, which means that if you remove the agent, you prevent the disease, exactly what the smoking statistics show. Second, a dose-response relationship, the more exposure you get, the more D N A damage occurs, and the higher your risk climbs, which is why doctors measure smoking in pack-years. Third, a latency period, there is a long gap, often years or decades, between the first exposure and the disease actually appearing. Why such a long delay? Because cancer requires multiple mutations to accumulate in a single cell lineage, one after another, and that takes time. It is the reason asbestos-related disease can take twenty to fifty years to show up. External agent, dose builds the risk, and the disease arrives years later."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8DoseLatency",
+        "props": {
+          "exposureAt": 130,
+          "doseAt": 430,
+          "doseDoneAt": 760,
+          "doseLabel": "exposure, e.g. pack-years →",
+          "latencyAt": 790,
+          "hitsAt": 1054,
+          "diseaseAt": 1200,
+          "spanLabel": "latency: years or decades",
+          "notes": [
+            {
+              "text": "Asbestos-related disease: 20 to 50 years",
+              "at": 1390
+            }
+          ]
+        }
       }
     },
     {
