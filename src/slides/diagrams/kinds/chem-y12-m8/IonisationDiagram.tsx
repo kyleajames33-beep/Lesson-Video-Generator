@@ -221,7 +221,7 @@ const HHMode = ({frame, beats, id}: {frame: number; beats: number[]; id: string}
 		[tAbove, tAbove + 60, -1, 1],
 		[tEqual, tEqual + 40, 1, 0],
 		[tDir, tDir + 24, 0, -2],
-		[tSweep, tSweep + 84, -2, 2],
+		[tSweep, tSweep + 60, -2, 2],
 	];
 	let off = -2;
 	for (const [a, b, from, to] of moves) {
@@ -272,7 +272,7 @@ const HHMode = ({frame, beats, id}: {frame: number; beats: number[]; id: string}
 				<circle cx={knobX} cy={AY} r={13} fill={`url(#${id}-g-knob)`} stroke="#3a3a3a" strokeWidth={1.5} />
 			</g>
 			{dirPhase && (
-				<Arrow x1={X(-2)} y1={AY - 50} x2={X(2)} y2={AY - 50} color={TOK.amber} width={4} head={14} progress={ramp(frame, tSweep, 84)} opacity={0.9} />
+				<Arrow x1={X(-2)} y1={AY - 50} x2={X(2)} y2={AY - 50} color={TOK.amber} width={4} head={14} progress={ramp(frame, tSweep, 60)} opacity={0.9} />
 			)}
 
 			<g opacity={statusIn}>
