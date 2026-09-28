@@ -65,6 +65,60 @@
       "caption": "Mutation makes new alleles; meiosis and fertilisation reshuffle existing ones.",
       "voiceover": {
         "text": "Let's set up the comparison that the whole lesson hangs on. Three processes generate genetic variation, but they each have a distinct job. Mutation creates genuinely new alleles, by changing the DNA sequence itself. Meiosis reshuffles the alleles that already exist, dealing them out into genetically different gametes. And fertilisation combines those gametes at random, producing new genotypes in the offspring. Notice the division of labour. Mutation is the only one supplying real novelty, brand new alleles. Meiosis and fertilisation, by contrast, spread and recombine what's already there. That's why, after the drought, the finch population could shift so fast, it was reshuffling and selecting existing variation, no new alleles required. So the line to hold on to is simple, a new combination of alleles is not the same thing as a new allele."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6AlleleJobs",
+        "props": {
+          "panels": [
+            {
+              "title": "Mutation",
+              "action": "mutate",
+              "at": 95,
+              "actAt": 120,
+              "caption": [
+                "Changes the DNA sequence"
+              ],
+              "verdict": {
+                "text": "Creates new alleles",
+                "amber": true
+              }
+            },
+            {
+              "title": "Meiosis",
+              "action": "shuffle",
+              "genotype": "AaBb",
+              "at": 180,
+              "actAt": 200,
+              "caption": [
+                "Deals existing alleles",
+                "into different gametes"
+              ],
+              "verdict": {
+                "text": "Reshuffles",
+                "at": 396
+              }
+            },
+            {
+              "title": "Fertilisation",
+              "action": "combine",
+              "genotype": "AaBb",
+              "at": 285,
+              "actAt": 305,
+              "caption": [
+                "Fuses gametes at random"
+              ],
+              "verdict": {
+                "text": "New genotypes",
+                "at": 410
+              }
+            }
+          ],
+          "footer": {
+            "text": "A new combination is not a new allele",
+            "at": 830
+          }
+        }
       }
     },
     {

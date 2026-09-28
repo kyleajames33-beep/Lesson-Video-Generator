@@ -104,29 +104,57 @@
         "text": "Let's lay the three processes side by side, because each changes the gene pool differently. Mutation adds genuinely new alleles, although on its own it usually changes population frequencies quite slowly. It's essential, though, because without it no new allele ever appears. Gene flow moves existing alleles between populations, when individuals migrate and then breed, and it often reduces the differences between populations by mixing their alleles. Crucially, gene flow transfers alleles, it does not create them. Genetic drift shifts allele frequencies purely by chance, the random sampling of who survives and reproduces, and in small populations it can sharply change frequencies and even reduce genetic diversity. And remember, drift is random, not adaptive, so an allele that becomes common by drift is not necessarily the best one. Add, move, randomise, three distinct mechanisms."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Process",
-          "Effect on gene pool",
-          "Key idea"
-        ],
-        "rows": [
-          [
-            "Mutation",
-            "Adds new alleles",
-            "Source of novelty"
+        "type": "diorama",
+        "kind": "bio12m6AlleleJobs",
+        "props": {
+          "panels": [
+            {
+              "title": "Mutation",
+              "action": "mutate",
+              "at": 40,
+              "actAt": 70,
+              "caption": [
+                "Adds new alleles"
+              ],
+              "verdict": {
+                "text": "Source of novelty",
+                "amber": true
+              }
+            },
+            {
+              "title": "Gene flow",
+              "action": "flow",
+              "at": 245,
+              "actAt": 275,
+              "caption": [
+                "Moves alleles between",
+                "populations"
+              ],
+              "verdict": {
+                "text": "Transfers, doesn’t create",
+                "at": 448
+              }
+            },
+            {
+              "title": "Genetic drift",
+              "action": "drift",
+              "at": 510,
+              "actAt": 560,
+              "caption": [
+                "Changes frequency",
+                "by chance"
+              ],
+              "verdict": {
+                "text": "Random, not adaptive",
+                "at": 756
+              }
+            }
           ],
-          [
-            "Gene flow",
-            "Moves alleles between populations",
-            "Transfers, does not create"
-          ],
-          [
-            "Genetic drift",
-            "Changes frequency by chance",
-            "Random, strongest in small populations"
-          ]
-        ]
+          "footer": {
+            "text": "Add, move, randomise",
+            "at": 895
+          }
+        }
       }
     },
     {
