@@ -50,7 +50,7 @@ export const NucleusExportDiagram = ({codons = ['AUG', 'GCU', 'UUC', 'AAA'], at 
 			{/* nucleus */}
 			<g opacity={fadeAt(frame, 0)}>
 				<circle cx={NX} cy={NY} r={NR} fill="#e7eef6" stroke="#9fb2c6" strokeWidth={5} strokeDasharray="60 10" />
-				<text x={NX} y={NY + NR + 34} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800}>nucleus</text>
+				<text x={NX - 100} y={NY - 132} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800}>nucleus</text>
 				{/* the DNA: master copy */}
 				{[0, 1].map((s) => (
 					<path key={s} d={`M ${NX - 110} ${NY - 60 + s * 10} C ${NX - 60} ${NY - 110 + s * 10}, ${NX - 20} ${NY - 10 + s * 10}, ${NX + 40} ${NY - 60 + s * 10} S ${NX + 90} ${NY - 20 + s * 10}, ${NX + 100} ${NY - 60 + s * 10}`} fill="none" stroke={theme.accent} strokeWidth={6} opacity={0.85} />
@@ -59,12 +59,12 @@ export const NucleusExportDiagram = ({codons = ['AUG', 'GCU', 'UUC', 'AAA'], at 
 				<text x={NX} y={NY - 94} textAnchor="middle" fill={theme.accent} fontSize={15} fontWeight={800}>gene</text>
 			</g>
 			<g opacity={fadeAt(frame, tStay)}>
-				<text x={NX} y={NY + 90} textAnchor="middle" fill={TOK.ink} fontSize={16} fontWeight={800}>DNA: the master copy stays here</text>
+				<text x={NX} y={NY + 50} textAnchor="middle" fill={TOK.ink} fontSize={16} fontWeight={800}>DNA: the master copy stays here</text>
 			</g>
 			{frame > tProt && <circle cx={NX} cy={NY} r={NR + 10 + idlePulse(frame) * 4} fill="none" stroke={TOK.amber} strokeWidth={3} opacity={fadeAt(frame, tProt)} />}
 			{/* ribosomes in the cytoplasm */}
 			<g opacity={fadeAt(frame, tOut)}>
-				<text x={590} y={40} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800}>cytoplasm</text>
+				<text x={730} y={420} textAnchor="end" fill={TOK.inkDim} fontSize={16} fontWeight={800}>cytoplasm</text>
 				{ribo.map((r, k) => (
 					<g key={k} opacity={k === 0 ? 1 : fadeAt(frame, tMany)}>
 						<ellipse cx={r.x} cy={r.y - 6} rx={30} ry={22} fill={`url(#${ID}-g-ribo)`} stroke="rgba(0,0,0,0.2)" />
@@ -89,7 +89,7 @@ export const NucleusExportDiagram = ({codons = ['AUG', 'GCU', 'UUC', 'AAA'], at 
 				);
 			})}
 			<g opacity={fadeAt(frame, tCopy)}>
-				<text x={NX + NR + 20} y={NY - 110} fill={TOK.amberInk} fontSize={16} fontWeight={800}>mRNA: a temporary, portable copy</text>
+				<text x={360} y={36} fill={TOK.amberInk} fontSize={16} fontWeight={800}>mRNA: a temporary, portable copy</text>
 			</g>
 			<g opacity={popAt(frame, fps, tMany + 60)}>
 				<Pill x={570} y={78} text="many copies → many proteins from one gene" color={theme.accent} fill={theme.soft} size={15} />
