@@ -112,7 +112,6 @@ export const PopulationDiagram = ({mode = 'clone', labels = {}, at = {}, delay =
 	if (mode === 'varied') {
 		const tFuse = at.fuse ?? 30, tVar = at.varied ?? 200, tShift = at.shift ?? 350, tSome = at.some ?? 450, tNo = at.noguarantee ?? 600, tCost = at.cost ?? 800;
 		const kids = variedShades(12, 3);
-		const survivors = kids.filter(tough).length;
 		return (
 			<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Sexual reproduction: varied offspring; when conditions change some survive" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 				<DioramaDefs id={ID} />
@@ -133,7 +132,7 @@ export const PopulationDiagram = ({mode = 'clone', labels = {}, at = {}, delay =
 					<Pill x={380} y={188} text="offspring genetically varied" color={theme.accent} fill={theme.soft} size={16} />
 				</g>
 				<g opacity={fadeAt(frame, tSome)}>
-					<text x={380} y={436} textAnchor="middle" fill={theme.accent} fontSize={18} fontWeight={800}>conditions change: {survivors} of {kids.length} already suited</text>
+					<text x={380} y={436} textAnchor="middle" fill={theme.accent} fontSize={18} fontWeight={800}>conditions change: some are already suited</text>
 				</g>
 				<text x={380} y={466} textAnchor="middle" fill={TOK.amberInk} fontSize={17} fontWeight={800} opacity={fadeAt(frame, tNo)}>raises the odds, no guarantee</text>
 				<text x={380} y={H - 12} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800} opacity={fadeAt(frame, tCost)}>cost: slower, needs a mate, more energy</text>
