@@ -73,6 +73,53 @@
       "voiceover": {
         "text": "Let's start in your stomach. It sits at pH one-and-a-half to three-and-a-half thanks to hydrochloric acid, and when there's too much, you reach for an antacid. There are two routes. The carbonate route, like calcium carbonate, reacts as calcium carbonate plus two HCl gives calcium chloride plus water plus carbon dioxide, and that carbon dioxide is the burp. The hydroxide route, like magnesium hydroxide, reacts as magnesium hydroxide plus two HCl gives magnesium chloride plus two water, no gas at all. Aluminium hydroxide is the same idea, giving aluminium chloride and water. Here's the exam point. Only the carbonate antacids release carbon dioxide. The hydroxides contain no carbonate ion, so there's simply no carbon available to make a gas.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L4/concept-antacids.965345f48484.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6FizzBeakers",
+        "props": {
+          "beakers": [
+            {
+              "title": "calcium carbonate",
+              "lines": [
+                "CaCO₃ + 2HCl →",
+                "CaCl₂ + H₂O + CO₂"
+              ],
+              "solid": "chip",
+              "gas": "CO₂",
+              "gasNote": "the burp",
+              "amber": true,
+              "at": 220,
+              "gasAt": 300
+            },
+            {
+              "title": "magnesium hydroxide",
+              "lines": [
+                "Mg(OH)₂ + 2HCl →",
+                "MgCl₂ + 2H₂O"
+              ],
+              "solid": "powder",
+              "gas": null,
+              "at": 474,
+              "gasAt": 520
+            },
+            {
+              "title": "aluminium hydroxide",
+              "lines": [
+                "Al(OH)₃ + 3HCl →",
+                "AlCl₃ + 3H₂O"
+              ],
+              "solid": "powder",
+              "gas": null,
+              "at": 683,
+              "gasAt": 720
+            }
+          ],
+          "footer": {
+            "text": "No carbonate ion, no carbon: a hydroxide can’t make CO₂",
+            "at": 819
+          }
+        }
       }
     },
     {
@@ -98,6 +145,94 @@
       "voiceover": {
         "text": "Now to fertiliser, where acid-base chemistry feeds the world. The Haber process makes ammonia, but ammonia gas isn't a practical fertiliser, so it's neutralised into solid salts. With sulfuric acid you get ammonium sulfate, written two ammonia plus sulfuric acid gives ammonium sulfate. With nitric acid you get ammonium nitrate, just ammonia plus nitric acid gives ammonium nitrate. In both, ammonia is the Brønsted-Lowry base, accepting a proton to become ammonium. The reason you need two ammonias for sulfuric acid is that sulfuric acid is diprotic, it donates two protons, and each one needs its own ammonia to catch it. Nitric acid is monoprotic, one proton, so one ammonia. Notice that's about how many protons, not about which acid is stronger.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L4/concept-fertiliser.425a72c40ab5.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6ProtonHop",
+        "props": {
+          "rows": [
+            {
+              "species": [
+                {
+                  "label": "H₂SO₄",
+                  "after": "SO₄²⁻",
+                  "core": "S",
+                  "coreText": "SO₄",
+                  "h": 2,
+                  "afterCharge": "2−"
+                },
+                {
+                  "label": "NH₃",
+                  "after": "NH₄⁺",
+                  "core": "N",
+                  "h": 3,
+                  "afterCharge": "+",
+                  "count": 2
+                }
+              ],
+              "donor": 0,
+              "equation": [
+                "2NH₃",
+                "+",
+                "H₂SO₄",
+                "→",
+                "(NH₄)₂SO₄"
+              ],
+              "at": 120,
+              "rolesAt": 150,
+              "hopAt": 189,
+              "roles": {
+                "donor": "diprotic: 2 H⁺",
+                "acceptor": "base: each takes 1 H⁺",
+                "donorAfter": "gave 2 H⁺",
+                "acceptorAfter": "two NH₄⁺"
+              }
+            },
+            {
+              "species": [
+                {
+                  "label": "HNO₃",
+                  "after": "NO₃⁻",
+                  "core": "N",
+                  "coreText": "NO₃",
+                  "h": 1,
+                  "afterCharge": "−"
+                },
+                {
+                  "label": "NH₃",
+                  "after": "NH₄⁺",
+                  "core": "N",
+                  "h": 3,
+                  "afterCharge": "+"
+                }
+              ],
+              "donor": 0,
+              "equation": [
+                "NH₃",
+                "+",
+                "HNO₃",
+                "→",
+                "NH₄NO₃"
+              ],
+              "at": 300,
+              "rolesAt": 320,
+              "hopAt": 340,
+              "roles": {
+                "donor": "monoprotic: 1 H⁺",
+                "acceptor": "base: takes 1 H⁺",
+                "donorAfter": "gave 1 H⁺",
+                "acceptorAfter": "one NH₄⁺"
+              }
+            }
+          ],
+          "notes": [
+            {
+              "text": "Two NH₃ for H₂SO₄ is about proton count, not strength",
+              "at": 921,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {

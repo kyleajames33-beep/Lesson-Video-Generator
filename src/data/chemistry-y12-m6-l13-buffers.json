@@ -76,6 +76,48 @@
       "voiceover": {
         "text": "Let's nail what a buffer actually is. A buffer is a weak acid and its conjugate base, present together in comparable amounts. The classic one is acetic acid alongside sodium acetate. Here's how it copes. When you add a bit of strong acid, the conjugate base mops up the extra hydrogen ions. When you add a bit of strong base, the weak acid mops up the hydroxide. Either way, the added species gets consumed before it can shift the pH much. Now three quick things a buffer is not. It is not necessarily neutral, the acetate buffer happily holds pH four-point-seven-four. It does not neutralise the added acid to nothing, it just resists the change. And it does not have unlimited capacity, every buffer can be exhausted if you push too hard.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L13/concept-what.e2ea5bc0210c.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6Buffer",
+        "props": {
+          "pKa": 4.74,
+          "acid": "CH₃COOH",
+          "base": "CH₃COO⁻",
+          "ha": 10,
+          "a": 10,
+          "water": true,
+          "events": [
+            {
+              "add": "H",
+              "n": 2,
+              "at": 211,
+              "water": true
+            },
+            {
+              "add": "OH",
+              "n": 2,
+              "at": 338,
+              "water": true
+            },
+            {
+              "add": "H",
+              "n": 12,
+              "at": 811,
+              "water": true
+            }
+          ],
+          "working": [
+            {
+              "text": "Not neutral, still a buffer: it holds pH 4.74",
+              "at": 616
+            },
+            {
+              "text": "Finite capacity: once the CH₃COO⁻ is used up, the pH falls",
+              "at": 900
+            }
+          ]
+        }
       }
     },
     {
@@ -84,12 +126,53 @@
       "heading": "The mechanism, both directions",
       "body": "Two equations carry the whole idea. The ratio of base to acid barely shifts, so the pH barely shifts.",
       "diagram": {
-        "type": "beforeAfter",
-        "beforeLabel": "Add acid (H⁺)",
-        "afterLabel": "Add base (OH⁻)",
-        "beforeContent": "CH₃COO⁻ + H⁺ → CH₃COOH. [A⁻] dips, [HA] rises, ratio barely moves.",
-        "afterContent": "CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O. [HA] dips, [A⁻] rises, ratio barely moves.",
-        "delay": 18
+        "type": "diorama",
+        "kind": "chem12m6Buffer",
+        "props": {
+          "pKa": 4.74,
+          "acid": "CH₃COOH",
+          "base": "CH₃COO⁻",
+          "ha": 10,
+          "a": 10,
+          "events": [
+            {
+              "add": "H",
+              "n": 2,
+              "at": 40
+            },
+            {
+              "add": "OH",
+              "n": 2,
+              "at": 150
+            }
+          ],
+          "working": [
+            {
+              "text": "CH₃COO⁻ + H⁺ → CH₃COOH",
+              "at": 40
+            },
+            {
+              "text": "CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O",
+              "at": 150
+            },
+            {
+              "text": "pH set by the ratio",
+              "at": 589
+            },
+            {
+              "text": "[CH₃COO⁻] ÷ [CH₃COOH]",
+              "at": 589
+            },
+            {
+              "text": "Dilute it: ratio same, pH same",
+              "at": 702
+            },
+            {
+              "text": "Resists, never prevents",
+              "at": 864
+            }
+          ]
+        }
       },
       "bullets": [
         {
@@ -180,6 +263,51 @@
       "voiceover": {
         "text": "Now the buffer NESA loves, the one in your blood. It runs on carbonic acid and bicarbonate. The pKa of carbonic acid is six-point-one-zero, and the body keeps the bicarbonate to carbonic acid ratio at about twenty to one. Plug that into Henderson-Hasselbalch, six-point-one plus the log of twenty, which is six-point-one plus one-point-three, giving pH seven-point-four-zero, right where it should be. When acid builds up, bicarbonate grabs the hydrogen ions to form carbonic acid, which breaks down into carbon dioxide and water, and you simply breathe the carbon dioxide out. When base is added, carbonic acid donates a proton to it. And because the carbon dioxide leaves through your lungs, this is an open system, which gives it far more capacity than any sealed beaker of buffer ever could.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L13/concept-blood.2808b67f94e4.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6Buffer",
+        "props": {
+          "pKa": 6.1,
+          "acid": "H₂CO₃",
+          "base": "HCO₃⁻",
+          "ha": 1,
+          "a": 20,
+          "openCO2": true,
+          "events": [
+            {
+              "add": "H",
+              "n": 1,
+              "at": 440
+            }
+          ],
+          "working": [
+            {
+              "text": "pKa = 6.10, ratio 20 : 1",
+              "at": 77
+            },
+            {
+              "text": "pH = 6.10 + log(20)",
+              "at": 245
+            },
+            {
+              "text": "= 6.10 + 1.30 = 7.40",
+              "at": 359
+            },
+            {
+              "text": "HCO₃⁻ + H⁺ → H₂CO₃",
+              "at": 440
+            },
+            {
+              "text": "H₂CO₃ → CO₂ + H₂O",
+              "at": 500
+            },
+            {
+              "text": "CO₂ breathed out: open system",
+              "at": 580
+            }
+          ]
+        }
       }
     },
     {

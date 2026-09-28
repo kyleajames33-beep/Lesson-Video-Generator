@@ -102,6 +102,99 @@
       "voiceover": {
         "text": "The good news is the lists are tiny. There are exactly six strong acids, hydrochloric, sulfuric on its first ionisation, nitric, perchloric, hydrobromic, and hydroiodic. There are exactly four strong bases, sodium, potassium, calcium, and barium hydroxide. If an acid or base isn't on those lists, treat it as weak, and that includes ammonia and hydrofluoric acid. Two things to flag. First, hydrofluoric acid is weak even though it's a hydrogen halide like hydrochloric, because the hydrogen fluorine bond is so short and strong that the proton won't leave easily. Second, calcium and barium hydroxide each release two hydroxides per formula unit, so their hydroxide concentration is twice the concentration of the base. And limewater's modest pH is down to low solubility, not weakness. Calcium hydroxide is genuinely strong.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L5/concept-lists.d7c2e239f1d7.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6Sorter",
+        "props": {
+          "bins": [
+            {
+              "title": "6 strong acids"
+            },
+            {
+              "title": "4 strong bases",
+              "tone": "blue"
+            },
+            {
+              "title": "weak: all the rest",
+              "tone": "grey"
+            }
+          ],
+          "items": [
+            {
+              "text": "HCl",
+              "bin": 0,
+              "at": 68
+            },
+            {
+              "text": "H₂SO₄ (1st H⁺)",
+              "bin": 0,
+              "at": 90
+            },
+            {
+              "text": "HNO₃",
+              "bin": 0,
+              "at": 116
+            },
+            {
+              "text": "HClO₄",
+              "bin": 0,
+              "at": 128
+            },
+            {
+              "text": "HBr",
+              "bin": 0,
+              "at": 137
+            },
+            {
+              "text": "HI",
+              "bin": 0,
+              "at": 150
+            },
+            {
+              "text": "NaOH",
+              "bin": 1,
+              "at": 215
+            },
+            {
+              "text": "KOH",
+              "bin": 1,
+              "at": 225
+            },
+            {
+              "text": "Ca(OH)₂",
+              "bin": 1,
+              "at": 237
+            },
+            {
+              "text": "Ba(OH)₂",
+              "bin": 1,
+              "at": 249
+            },
+            {
+              "text": "NH₃",
+              "bin": 2,
+              "at": 387
+            },
+            {
+              "text": "HF",
+              "bin": 2,
+              "at": 400,
+              "amber": true
+            }
+          ],
+          "footer": [
+            {
+              "text": "HF is weak: the short, strong H–F bond holds its proton",
+              "at": 473,
+              "amber": true
+            },
+            {
+              "text": "Ca(OH)₂ and Ba(OH)₂ give two OH⁻: [OH⁻] = 2 × c",
+              "at": 722
+            }
+          ]
+        }
       }
     },
     {
@@ -153,6 +246,33 @@
       "voiceover": {
         "text": "Here's how you prove all this in the lab, and it's the prescribed investigation. You take a calibrated pH probe and measure equal-concentration solutions. Nought-point-one molar hydrochloric acid reads pH one-point-zero, which means the hydrogen ion concentration is the full nought-point-one molar, every molecule ionised. Nought-point-one molar acetic acid reads pH two-point-nine, which works out to only about nought-point-zero-zero-one-three molar hydrogen ions, just over one percent ionised. That gap of one-point-nine pH units means there's roughly seventy-nine times more hydrogen ion in the hydrochloric acid at the same concentration. Now the wording the markers want. Don't just say hydrochloric is more acidic. Say at equal concentration it gives a higher hydrogen ion concentration because it ionises completely, while acetic acid ionises only partially. That phrasing names the actual concept.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L5/concept-practical.1e023e1c987f.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6IonCrowd",
+        "props": {
+          "panels": [
+            {
+              "title": "0.1 mol L⁻¹ HCl",
+              "c": 0.1,
+              "strong": true,
+              "pH": 1,
+              "at": 65,
+              "splitAt": 149
+            },
+            {
+              "title": "0.1 mol L⁻¹ CH₃COOH",
+              "c": 0.1,
+              "pH": 2.9,
+              "at": 290,
+              "splitAt": 325
+            }
+          ],
+          "compare": {
+            "text": "{dpH} pH units apart: about {ratio}× more H⁺ in the HCl",
+            "at": 509
+          }
+        }
       }
     },
     {

@@ -73,6 +73,43 @@
       "voiceover": {
         "text": "Let's nail the four errors. Error one, writing the equilibrium arrow for a strong acid, like hydrochloric acid in balance with its ions. Strong acids ionise completely, so they take a single forward arrow, and the wrong arrow loses the mark every time. Error two, treating dilute as a synonym for weak. Hydrochloric acid is strong at any concentration, so a dilute sample is a dilute strong acid, never a weak one. Error three, calculating a weak acid's pH as if hydrogen ion concentration equals the acid concentration. A weak acid is only partly ionised, so its hydrogen ion concentration is far lower, and you need a Ka method, which is the next lessons. Error four, naming only sodium hydroxide as a strong base. Potassium, calcium, and barium hydroxide are all strong too. Run those four as a checklist before you submit anything.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L6/concept-errors.500d99da0fc4.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6FixCards",
+        "props": {
+          "cards": [
+            {
+              "title": "ERROR 1 · THE ARROW",
+              "wrong": "HCl ⇌ H⁺ + Cl⁻",
+              "right": "HCl → H⁺ + Cl⁻\nstrong: one forward arrow",
+              "at": 0,
+              "fixAt": 122
+            },
+            {
+              "title": "ERROR 2 · DILUTE",
+              "wrong": "dilute means weak",
+              "right": "dilute HCl is still strong",
+              "at": 273,
+              "fixAt": 330
+            },
+            {
+              "title": "ERROR 3 · WEAK ACID pH",
+              "wrong": "weak acid: [H⁺] = c",
+              "right": "only partly ionised:\n[H⁺] far below c, use Ka",
+              "at": 492,
+              "fixAt": 560
+            },
+            {
+              "title": "ERROR 4 · STRONG BASES",
+              "wrong": "only NaOH is strong",
+              "right": "NaOH, KOH,\nCa(OH)₂, Ba(OH)₂",
+              "at": 809,
+              "fixAt": 850
+            }
+          ],
+          "checklistAt": 952
+        }
       }
     },
     {

@@ -76,34 +76,41 @@
         "audioFile": "public/audio/Chemistry-Y12-M6-L8/concept-scale.9441276d8f81.mp3"
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "pH",
-          "[H₃O⁺] (mol L⁻¹)",
-          "vs pH 7"
-        ],
-        "rows": [
-          [
-            "1",
-            "0.1",
-            "1,000,000× more"
+        "type": "diorama",
+        "kind": "chem12m6PhScale",
+        "props": {
+          "pins": [
+            {
+              "pH": 3,
+              "at": 250,
+              "tile": true
+            },
+            {
+              "pH": 4,
+              "at": 300,
+              "tile": true
+            },
+            {
+              "pH": 5,
+              "at": 380,
+              "tile": true
+            },
+            {
+              "pH": 6,
+              "at": 813
+            }
           ],
-          [
-            "3",
-            "0.001",
-            "10,000× more"
+          "hops": [
+            {
+              "from": 3,
+              "to": 6,
+              "at": 880,
+              "amber": true,
+              "note": "not 2×"
+            }
           ],
-          [
-            "7",
-            "10⁻⁷",
-            "1× neutral"
-          ],
-          [
-            "11",
-            "10⁻¹¹",
-            "0.0001×"
-          ]
-        ]
+          "acidicAt": 593
+        }
       }
     },
     {
@@ -155,6 +162,67 @@
       "voiceover": {
         "text": "Now the two routes. For a strong acid it's direct. The hydronium concentration just is the acid concentration, doubling for sulfuric acid, and then pH is minus the log of that. For a strong base there's one extra step, because you start with hydroxide, not hydronium. You find the hydroxide concentration, doubling for calcium or barium hydroxide, then take pOH as minus its log, and finally convert with pH equals fourteen minus pOH. Always sanity-check. An acid must come out below pH seven, a base above seven. If your base calculation gives something below seven, you almost certainly forgot the fourteen-minus-pOH step. And one category error to avoid, never use Ka for a strong acid. Ka is for weak acids only. A strong acid is fully ionised, so its hydronium concentration simply equals its concentration.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L8/concept-method.0ef2dd306f00.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6RouteSteps",
+        "props": {
+          "lanes": [
+            {
+              "title": "Strong acid: direct",
+              "tone": "acid",
+              "pH": 1.6,
+              "pHLabel": "pH 1.60",
+              "steps": [
+                {
+                  "text": "0.025 mol L⁻¹ HNO₃\nstrong, one H⁺",
+                  "at": 0
+                },
+                {
+                  "text": "[H₃O⁺] = c\n= 0.025 mol L⁻¹",
+                  "at": 26
+                },
+                {
+                  "text": "pH = −log(0.025)\n= 1.60",
+                  "at": 70
+                }
+              ]
+            },
+            {
+              "title": "Strong base: via pOH",
+              "tone": "base",
+              "pH": 11.9,
+              "pHLabel": "pH 11.90",
+              "steps": [
+                {
+                  "text": "0.0040 mol L⁻¹\nCa(OH)₂",
+                  "at": 189
+                },
+                {
+                  "text": "[OH⁻] = 2 × 0.0040\n= 0.0080 mol L⁻¹",
+                  "at": 306
+                },
+                {
+                  "text": "pOH = −log(0.0080)\n= 2.10",
+                  "at": 391
+                },
+                {
+                  "text": "pH = 14 − 2.10\n= 11.90",
+                  "at": 446
+                }
+              ]
+            }
+          ],
+          "trap": {
+            "pH": 2.1,
+            "at": 625,
+            "text": "Stopped at pOH? A base can’t read 2.10"
+          },
+          "note": {
+            "text": "Strong acid: [H₃O⁺] = c. Never use Ka for a strong acid.",
+            "at": 741
+          }
+        }
       }
     },
     {

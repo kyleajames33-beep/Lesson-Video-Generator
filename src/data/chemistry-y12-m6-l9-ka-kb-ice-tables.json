@@ -127,6 +127,29 @@
       "voiceover": {
         "text": "Solving x squared over c minus x exactly needs the quadratic formula, but there's a shortcut that works most of the time. If only a little acid ionises, then c minus x is almost the same as c, so Ka becomes roughly x squared over c, and x is just the square root of Ka times c. One clean step. The shortcut is valid when Ka divided by c is below nought-point-zero-zero-two-five, which is the same as saying less than five percent of the acid ionises. If that fails, you solve the full quadratic, x squared plus Ka x minus Ka c equals zero, taking the positive root. The discipline that earns marks, always check the assumption after you use it, not before. Calculate x, then work out x over c times a hundred. If that's five percent or more, the shortcut wasn't valid, so go back and use the quadratic. Writing assumption valid without actually checking is a methodology error.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L9/concept-assumption.f57fc4a273b8.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6FivePercent",
+        "props": {
+          "cases": [
+            {
+              "name": "CH₃COOH",
+              "Ka": 0.000018,
+              "c": 0.25,
+              "at": 60,
+              "checkAt": 300
+            },
+            {
+              "name": "HF",
+              "Ka": 0.00068,
+              "c": 0.1,
+              "at": 480,
+              "checkAt": 796,
+              "fixAt": 880
+            }
+          ]
+        }
       }
     },
     {
@@ -178,6 +201,65 @@
       "voiceover": {
         "text": "Weak bases work exactly the same way, with three small swaps. The equilibrium is base plus water in balance with the protonated base plus hydroxide, and the constant is Kb. If Kb over c is below nought-point-zero-zero-two-five, then hydroxide concentration is the square root of Kb times c. The only extra step is the finish, because you've found hydroxide, not hydronium, so take pOH as minus the log of hydroxide, then convert with pH equals fourteen minus pOH. If your base is a conjugate base, like the acetate ion, first get its Kb from Kw divided by the parent acid's Ka. For acetate that's about five-point-six times ten to the minus ten, which is tiny, so a sodium acetate solution comes out only mildly basic. And the recurring trap, never write pH equals minus the log of hydroxide directly, because that hands you an acidic number for a base.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L9/concept-base.a91cd56f0a9b.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6RouteSteps",
+        "props": {
+          "lanes": [
+            {
+              "title": "Weak base: B + H₂O ⇌ BH⁺ + OH⁻",
+              "tone": "base",
+              "steps": [
+                {
+                  "text": "Kb/c < 0.0025?\nthen shortcut",
+                  "at": 120
+                },
+                {
+                  "text": "[OH⁻] = √(Kb × c)",
+                  "at": 165
+                },
+                {
+                  "text": "pOH = −log[OH⁻]",
+                  "at": 397
+                },
+                {
+                  "text": "pH = 14 − pOH",
+                  "at": 455
+                }
+              ]
+            },
+            {
+              "title": "0.250 mol L⁻¹ sodium acetate",
+              "tone": "base",
+              "pH": 9.07,
+              "pHLabel": "pH 9.07",
+              "steps": [
+                {
+                  "text": "Kb = Kw ÷ Ka\n= 5.6 × 10⁻¹⁰",
+                  "at": 600
+                },
+                {
+                  "text": "[OH⁻] = √(Kb × 0.250)\n= 1.18 × 10⁻⁵",
+                  "at": 640
+                },
+                {
+                  "text": "pOH = 4.93",
+                  "at": 680
+                },
+                {
+                  "text": "pH = 14 − 4.93\n= 9.07",
+                  "at": 720
+                }
+              ]
+            }
+          ],
+          "trap": {
+            "pH": 4.93,
+            "at": 854,
+            "text": "pH = −log[OH⁻]? Acidic: wrong"
+          }
+        }
       }
     },
     {

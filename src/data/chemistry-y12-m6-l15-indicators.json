@@ -75,6 +75,79 @@
       "voiceover": {
         "text": "Let's start with what an indicator actually is. It's a weak acid, written HIn, where the acid form and its conjugate base have different colours. The equilibrium is HIn in balance with hydrogen ion plus In minus. Now apply Le Chatelier. In an acidic solution, all that hydrogen ion pushes the equilibrium left, so the HIn form dominates and you see the acid colour. In a basic solution, hydrogen ion is scarce, so the equilibrium shifts right, the In minus form takes over, and you see the base colour. The colour change isn't sudden, it happens gradually across a range of about the indicator's pKIn plus or minus one, which is roughly two pH units wide. The reason is that your eye only registers the switch once one form is about ten times more concentrated than the other, and a tenfold change in that ratio spans about one pH unit either side.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L15/concept-mechanism.fea2af482a09.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6Indicator",
+        "props": {
+          "indicators": [
+            {
+              "name": "HIn",
+              "acidColor": "#e8b923",
+              "baseColor": "#2d63c8",
+              "lo": 6,
+              "hi": 8,
+              "rangeText": "visible change: pKIn ± 1, about two pH units"
+            }
+          ],
+          "generic": true,
+          "sweep": [
+            {
+              "pH": 7,
+              "at": 0
+            },
+            {
+              "pH": 7,
+              "at": 180
+            },
+            {
+              "pH": 5,
+              "at": 230
+            },
+            {
+              "pH": 5,
+              "at": 330
+            },
+            {
+              "pH": 9,
+              "at": 390
+            },
+            {
+              "pH": 9,
+              "at": 480
+            },
+            {
+              "pH": 5,
+              "at": 540
+            },
+            {
+              "pH": 6,
+              "at": 600
+            },
+            {
+              "pH": 6,
+              "at": 650
+            },
+            {
+              "pH": 7,
+              "at": 690
+            },
+            {
+              "pH": 7,
+              "at": 720
+            },
+            {
+              "pH": 8,
+              "at": 760
+            },
+            {
+              "pH": 8,
+              "at": 2000
+            }
+          ],
+          "equationAt": 60,
+          "rangeAt": 560
+        }
       }
     },
     {

@@ -75,6 +75,68 @@
       "voiceover": {
         "text": "First, the reference. A standard solution is one whose concentration is precisely known, and to make one you need a primary standard. That's a substance you can weigh accurately and dissolve to give a reliably known concentration. The criteria are worth memorising. It must be high purity, stable in air, non-hygroscopic, meaning it doesn't soak up water vapour, and ideally high in molar mass, so a tiny weighing error barely matters. Two you'll use constantly. Anhydrous sodium carbonate, molar mass one hundred and six, standardises hydrochloric acid. And oxalic acid dihydrate, molar mass one hundred and twenty-six, standardises sodium hydroxide. Now the catch. Sodium hydroxide and hydrochloric acid cannot be primary standards. Sodium hydroxide absorbs carbon dioxide and water straight from the air, so its concentration drifts. And hydrochloric acid is a gas dissolved in water, so you can't pin its concentration down by weighing. Both must be standardised against a true primary standard before you rely on them.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L14/concept-standards.14be832865f7.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6Sorter",
+        "props": {
+          "criteria": [
+            {
+              "text": "high purity",
+              "at": 245
+            },
+            {
+              "text": "stable in air",
+              "at": 258
+            },
+            {
+              "text": "non-hygroscopic",
+              "at": 278
+            },
+            {
+              "text": "high molar mass",
+              "at": 344
+            }
+          ],
+          "bins": [
+            {
+              "title": "primary standard ✓"
+            },
+            {
+              "title": "not a primary standard ✗",
+              "tone": "grey"
+            }
+          ],
+          "items": [
+            {
+              "text": "Na₂CO₃ (M = 106.0): for HCl",
+              "bin": 0,
+              "at": 443
+            },
+            {
+              "text": "H₂C₂O₄·2H₂O (M = 126.1): for NaOH",
+              "bin": 0,
+              "at": 523
+            },
+            {
+              "text": "NaOH: absorbs CO₂ and H₂O",
+              "bin": 1,
+              "at": 688
+            },
+            {
+              "text": "HCl: a gas, can’t be weighed",
+              "bin": 1,
+              "at": 787
+            }
+          ],
+          "footer": [
+            {
+              "text": "NaOH and HCl must be standardised first",
+              "at": 840,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {

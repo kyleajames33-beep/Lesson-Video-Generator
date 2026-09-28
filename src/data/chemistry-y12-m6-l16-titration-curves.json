@@ -76,169 +76,38 @@
         "audioFile": "public/audio/Chemistry-Y12-M6-L16/concept-four-types.9e9cb35fe817.mp3"
       },
       "diagram": {
-        "type": "lineGraph",
-        "xLabel": "Volume of base added",
-        "yLabel": "pH",
-        "series": [
-          {
-            "label": "Strong acid–strong base",
-            "color": "chem1",
-            "points": [
-              [
-                0,
-                0.07
-              ],
-              [
-                0.22,
-                0.11
-              ],
-              [
-                0.4,
-                0.17
-              ],
-              [
-                0.47,
-                0.26
-              ],
-              [
-                0.5,
-                0.5
-              ],
-              [
-                0.53,
-                0.74
-              ],
-              [
-                0.6,
-                0.85
-              ],
-              [
-                0.8,
-                0.9
-              ],
-              [
-                1,
-                0.92
-              ]
-            ]
-          },
-          {
-            "label": "Weak acid–strong base",
-            "color": "bio",
-            "points": [
-              [
-                0,
-                0.2
-              ],
-              [
-                0.13,
-                0.3
-              ],
-              [
-                0.25,
-                0.36
-              ],
-              [
-                0.4,
-                0.43
-              ],
-              [
-                0.48,
-                0.52
-              ],
-              [
-                0.52,
-                0.68
-              ],
-              [
-                0.6,
-                0.8
-              ],
-              [
-                0.8,
-                0.87
-              ],
-              [
-                1,
-                0.89
-              ]
-            ]
-          },
-          {
-            "label": "Strong acid–weak base",
-            "color": "math",
-            "points": [
-              [
-                0,
-                0.07
-              ],
-              [
-                0.2,
-                0.13
-              ],
-              [
-                0.38,
-                0.22
-              ],
-              [
-                0.46,
-                0.3
-              ],
-              [
-                0.5,
-                0.4
-              ],
-              [
-                0.54,
-                0.55
-              ],
-              [
-                0.62,
-                0.66
-              ],
-              [
-                0.8,
-                0.73
-              ],
-              [
-                1,
-                0.76
-              ]
-            ]
-          },
-          {
-            "label": "Weak acid–weak base",
-            "color": "phys",
-            "points": [
-              [
-                0,
-                0.22
-              ],
-              [
-                0.25,
-                0.33
-              ],
-              [
-                0.5,
-                0.5
-              ],
-              [
-                0.75,
-                0.66
-              ],
-              [
-                1,
-                0.76
-              ]
-            ]
-          }
-        ],
-        "markers": [
-          {
-            "x": 0.5,
-            "label": "equivalence"
-          }
-        ]
+        "type": "diorama",
+        "kind": "chem12m6TitrationCurve",
+        "props": {
+          "series": [
+            {
+              "type": "SA-SB",
+              "label": "strong acid + strong base",
+              "at": 84,
+              "epLabel": "EP pH {pH}"
+            },
+            {
+              "type": "WA-SB",
+              "label": "weak acid + strong base",
+              "at": 298,
+              "epLabel": "EP pH {pH}"
+            },
+            {
+              "type": "SA-WB",
+              "label": "strong acid + weak base",
+              "at": 506,
+              "epLabel": "EP pH {pH}"
+            },
+            {
+              "type": "WA-WB",
+              "label": "weak acid + weak base",
+              "at": 699,
+              "epLabel": "no sharp jump"
+            }
+          ],
+          "grid": true
+        },
+        "delay": 6
       },
       "revealDelays": {
         "diagram": 6
@@ -267,6 +136,27 @@
       "voiceover": {
         "text": "Now how to actually read the points off a curve. The equivalence point is the middle of the steep, near-vertical jump, and you locate it on the volume axis, the horizontal one. That volume tells you how much titrant exactly neutralised the acid. Here's the elegant trick for a weak acid. Go to half that volume, the half-equivalence point, and read the pH there. That pH equals the pKa of the acid. Why? Because at the halfway mark, exactly half the acid has been converted to its conjugate base, so the acid and conjugate base concentrations are equal, and Henderson-Hasselbalch collapses to pH equals pKa. That whole flat buffer region sits around the half-equivalence point, where the pH barely moves. Two things to keep straight. The starting pH is not the equivalence point, and the pKa is neither pH seven nor the starting pH. It's specifically the pH at half the equivalence volume.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L16/concept-reading.c75425ec4910.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6TitrationCurve",
+        "props": {
+          "series": [
+            {
+              "type": "WA-SB",
+              "label": "CH₃COOH + NaOH",
+              "at": 0,
+              "dur": 130
+            }
+          ],
+          "apparatus": true,
+          "markers": {
+            "epAt": 150,
+            "halfAt": 288,
+            "pKaAt": 375,
+            "bufferAt": 648
+          }
+        }
       }
     },
     {

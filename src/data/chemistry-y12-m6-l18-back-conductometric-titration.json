@@ -191,51 +191,21 @@
         "audioFile": "public/audio/Chemistry-Y12-M6-L18/concept-conductometric.c91f30ea083f.mp3"
       },
       "diagram": {
-        "type": "lineGraph",
-        "xLabel": "Volume of titrant",
-        "yLabel": "Conductivity",
-        "series": [
-          {
-            "label": "Conductivity",
-            "color": "chem1",
-            "points": [
-              [
-                0,
-                0.85
-              ],
-              [
-                0.25,
-                0.5
-              ],
-              [
-                0.44,
-                0.24
-              ],
-              [
-                0.5,
-                0.15
-              ],
-              [
-                0.56,
-                0.24
-              ],
-              [
-                0.75,
-                0.5
-              ],
-              [
-                1,
-                0.78
-              ]
-            ]
+        "type": "diorama",
+        "kind": "chem12m6Conductometric",
+        "props": {
+          "barsAt": 131,
+          "beakerAt": 282,
+          "runAt": 438,
+          "epAt": 644,
+          "endAt": 800,
+          "minAt": 849,
+          "note": {
+            "text": "Reads ions, not colour:\nworks in cloudy or coloured samples",
+            "at": 957
           }
-        ],
-        "markers": [
-          {
-            "x": 0.5,
-            "label": "equivalence"
-          }
-        ]
+        },
+        "delay": 6
       },
       "revealDelays": {
         "diagram": 6

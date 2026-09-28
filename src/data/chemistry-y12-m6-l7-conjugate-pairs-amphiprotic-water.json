@@ -73,6 +73,51 @@
       "voiceover": {
         "text": "Let's deepen conjugate pairs from lesson one. When an acid donates its proton, what's left is its conjugate base, with one fewer hydrogen and one more negative charge. When a base accepts a proton, it becomes its conjugate acid, with one more hydrogen and one less negative charge. The pair always differs by exactly one proton and sits on opposite sides of the equation. There's also a strength rule, an inverse one, a strong acid gives up its proton so readily that the leftover conjugate base barely wants it back, so strong acid means very weak conjugate base. Quantitatively, Ka times Kb equals Kw for any conjugate pair. And the classic trap, remove only one proton at a time. The conjugate base of sulfuric acid is hydrogen sulfate, and only then does hydrogen sulfate's conjugate base become sulfate. Two separate pairs, never collapse them into one.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L7/concept-conjugate.adff97c8cb73.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6ProtonLadder",
+        "props": {
+          "species": [
+            {
+              "label": "H₂SO₄",
+              "core": "S",
+              "coreText": "SO₄",
+              "h": 2
+            },
+            {
+              "label": "HSO₄⁻",
+              "core": "S",
+              "coreText": "SO₄",
+              "h": 1,
+              "charge": "−"
+            },
+            {
+              "label": "SO₄²⁻",
+              "core": "S",
+              "coreText": "SO₄",
+              "h": 0,
+              "charge": "2−"
+            }
+          ],
+          "at": 0,
+          "stepsAt": [
+            60,
+            895
+          ],
+          "pairsAt": [
+            303,
+            935
+          ],
+          "kaAt": 643,
+          "kaNote": "For each pair: Ka × Kb = Kw",
+          "trap": {
+            "from": 0,
+            "to": 2,
+            "at": 969,
+            "text": "two protons apart: not a pair"
+          }
+        }
       }
     },
     {
@@ -100,39 +145,59 @@
         "audioFile": "public/audio/Chemistry-Y12-M6-L7/concept-amphiprotic.33ae1cdbd6f1.mp3"
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "h3",
-            "label": "H₃PO₄ (acid only)"
-          },
-          {
-            "id": "h2",
-            "label": "H₂PO₄⁻ (amphiprotic)"
-          },
-          {
-            "id": "h1",
-            "label": "HPO₄²⁻ (amphiprotic)"
-          },
-          {
-            "id": "po4",
-            "label": "PO₄³⁻ (base only)"
+        "type": "diorama",
+        "kind": "chem12m6ProtonLadder",
+        "props": {
+          "title": "The phosphate chain",
+          "species": [
+            {
+              "label": "H₃PO₄",
+              "core": "P",
+              "coreText": "PO₄",
+              "h": 3,
+              "role": "acid only"
+            },
+            {
+              "label": "H₂PO₄⁻",
+              "core": "P",
+              "coreText": "PO₄",
+              "h": 2,
+              "charge": "−",
+              "role": "amphiprotic"
+            },
+            {
+              "label": "HPO₄²⁻",
+              "core": "P",
+              "coreText": "PO₄",
+              "h": 1,
+              "charge": "2−",
+              "role": "amphiprotic"
+            },
+            {
+              "label": "PO₄³⁻",
+              "core": "P",
+              "coreText": "PO₄",
+              "h": 0,
+              "charge": "3−",
+              "role": "base only"
+            }
+          ],
+          "at": 0,
+          "stepsAt": [
+            40,
+            80,
+            120
+          ],
+          "rolesAt": 535,
+          "amberRole": "amphiprotic",
+          "focus": {
+            "index": 1,
+            "at": 784,
+            "leftAt": 867,
+            "rightText": "as an acid: lose H⁺ →",
+            "leftText": "← as a base: gain H⁺"
           }
-        ],
-        "edges": [
-          {
-            "from": "h3",
-            "to": "h2"
-          },
-          {
-            "from": "h2",
-            "to": "h1"
-          },
-          {
-            "from": "h1",
-            "to": "po4"
-          }
-        ]
+        }
       }
     },
     {
@@ -184,6 +249,66 @@
       "voiceover": {
         "text": "Now water's own party trick, and it confirms water is amphiprotic. In eighteen ninety-three, Kohlrausch purified water as far as he could and measured a tiny but real conductivity, which meant ions had to be present. The only source was water itself, ionising. We write it as two water in balance with hydronium and hydroxide, where one water donates a proton and acts as the acid, and the other accepts it and acts as the base, in the same reaction. The equilibrium constant is K-w, the product of hydronium and hydroxide concentrations, one times ten to the minus fourteen at twenty-five degrees. So in pure water each ion is ten to the minus seven molar, giving pH seven. And Kw rises with temperature, because the self-ionisation is endothermic. Take the negative log of Kw, and you get pH plus pOH equals fourteen at twenty-five degrees, the key to next lesson's base calculations. Remember, Kw applies in every aqueous solution, even concentrated acid.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L7/concept-water.06e2059d1c39.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6ProtonHop",
+        "props": {
+          "rows": [
+            {
+              "species": [
+                {
+                  "label": "H₂O",
+                  "after": "OH⁻",
+                  "core": "O",
+                  "h": 2,
+                  "afterCharge": "−"
+                },
+                {
+                  "label": "H₂O",
+                  "after": "H₃O⁺",
+                  "core": "O",
+                  "h": 2,
+                  "afterCharge": "+"
+                }
+              ],
+              "donor": 0,
+              "equation": [
+                "H₂O",
+                "+",
+                "H₂O",
+                "⇌",
+                "H₃O⁺",
+                "+",
+                "OH⁻"
+              ],
+              "at": 0,
+              "rolesAt": 250,
+              "hopAt": 290,
+              "roles": {
+                "donor": "this water: the acid",
+                "acceptor": "this water: the base",
+                "donorAfter": "donated H⁺: was the acid",
+                "acceptorAfter": "accepted H⁺: was the base"
+              }
+            }
+          ],
+          "notes": [
+            {
+              "text": "Kw = [H₃O⁺][OH⁻] = 1.0 × 10⁻¹⁴ at 25 °C",
+              "at": 481
+            },
+            {
+              "text": "Pure water: [H₃O⁺] = [OH⁻] = 1.0 × 10⁻⁷ mol L⁻¹, pH 7",
+              "at": 628
+            },
+            {
+              "text": "pH + pOH = 14 at 25 °C",
+              "at": 801,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {

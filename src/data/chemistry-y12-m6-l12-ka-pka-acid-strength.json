@@ -75,6 +75,36 @@
       "voiceover": {
         "text": "So let's define it. Ka is just the equilibrium constant for an acid ionising in water. For a weak acid splitting into hydrogen ion and its conjugate base, Ka equals the hydrogen ion concentration times the conjugate base concentration, divided by the undissociated acid. A large Ka means the equilibrium lies well to the right, most of the acid has ionised, so it's a relatively strong acid. A small Ka means most molecules stay intact, so it's weak. The crucial thing is that Ka depends only on the identity of the acid and the temperature. It does not depend on concentration. That's exactly why Ka is the right tool for comparing acid strengths, while pH is not. pH depends on both Ka and concentration, so two different acids can actually show the same pH at different concentrations. To rank strength fairly, you always use Ka.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L12/concept-ka.0ae38c805886.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6IonCrowd",
+        "props": {
+          "panels": [
+            {
+              "title": "0.10 mol L⁻¹ CH₃COOH",
+              "c": 0.1,
+              "Ka": 0.000018,
+              "showKa": true,
+              "pHdp": 2,
+              "at": 0,
+              "splitAt": 100
+            },
+            {
+              "title": "0.0039 mol L⁻¹ HF",
+              "c": 0.0039,
+              "Ka": 0.00068,
+              "showKa": true,
+              "pHdp": 2,
+              "at": 400,
+              "splitAt": 460
+            }
+          ],
+          "compare": {
+            "text": "Same pH, different Ka: only Ka ranks strength",
+            "at": 771
+          }
+        }
       }
     },
     {
@@ -194,6 +224,60 @@
       "voiceover": {
         "text": "Polyprotic acids deserve a closer look, because they donate their protons in separate steps. Take phosphoric acid. Its first Ka is seven-point-five times ten to the minus three. The second is six-point-two times ten to the minus eight, and the third is four-point-eight times ten to the minus thirteen. Each step is about a hundred thousand times weaker than the one before. The reason is electrostatic. Once the first proton leaves, you're trying to pull a positive hydrogen ion away from an ion that's now negatively charged, and the next time it's even more negative. That attraction makes each successive proton harder to remove. The practical payoff for the exam, when you calculate the pH of a polyprotic acid, you only use Ka one. The later ionisations contribute almost no extra hydrogen ion. And remember, each step is its own separate equilibrium with its own Ka, so you never lump them into a single expression.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L12/concept-polyprotic.c6379c82f132.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6ProtonLadder",
+        "props": {
+          "species": [
+            {
+              "label": "H₃PO₄",
+              "core": "P",
+              "coreText": "PO₄",
+              "h": 3
+            },
+            {
+              "label": "H₂PO₄⁻",
+              "core": "P",
+              "coreText": "PO₄",
+              "h": 2,
+              "charge": "−"
+            },
+            {
+              "label": "HPO₄²⁻",
+              "core": "P",
+              "coreText": "PO₄",
+              "h": 1,
+              "charge": "2−"
+            },
+            {
+              "label": "PO₄³⁻",
+              "core": "P",
+              "coreText": "PO₄",
+              "h": 0,
+              "charge": "3−"
+            }
+          ],
+          "at": 0,
+          "stepsAt": [
+            37,
+            127,
+            200
+          ],
+          "ka": [
+            "Ka₁ = 7.5 × 10⁻³",
+            "Ka₂ = 6.2 × 10⁻⁸",
+            "Ka₃ = 4.8 × 10⁻¹³"
+          ],
+          "kaAt": 37,
+          "kaNote": "Each step is about 10⁵ times weaker than the last",
+          "kaNoteAt": 261,
+          "kaHighlight": {
+            "index": 0,
+            "at": 708,
+            "text": "use Ka₁ for pH"
+          }
+        }
       }
     },
     {

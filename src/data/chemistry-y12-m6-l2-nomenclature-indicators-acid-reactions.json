@@ -75,6 +75,61 @@
       "voiceover": {
         "text": "Let's name acids systematically. The whole thing turns on one question, does the acid contain oxygen? If it doesn't, it's a binary acid, just hydrogen and one non-metal, and you name it hydro, then the element root, then ic acid. So HCl is hydrochloric acid, HBr is hydrobromic acid. If it does contain oxygen, it's an oxoacid, and you name it from the polyatomic ion it carries. An ion ending in ate gives an acid ending in ic, so sulfate gives sulfuric acid. An ion ending in ite gives an acid ending in ous, so sulfite gives sulfurous acid. The classic exam trap, never use hydro for an oxoacid. Sulfuric acid is never hydrosulfuric, because hydrosulfuric is the name for H two S, which has no oxygen.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L2/concept-naming.1f027483a3cd.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6Sorter",
+        "props": {
+          "question": {
+            "text": "Does the acid contain oxygen?",
+            "at": 42
+          },
+          "bins": [
+            {
+              "title": "No: binary acid",
+              "sub": "hydro- + root + -ic"
+            },
+            {
+              "title": "Yes: oxoacid",
+              "sub": "named from its ion",
+              "tone": "blue"
+            }
+          ],
+          "items": [
+            {
+              "text": "HCl → hydrochloric acid",
+              "bin": 0,
+              "at": 288
+            },
+            {
+              "text": "HBr → hydrobromic acid",
+              "bin": 0,
+              "at": 331
+            },
+            {
+              "text": "sulfate → sulfuric acid",
+              "bin": 1,
+              "at": 518
+            },
+            {
+              "text": "sulfite → sulfurous acid",
+              "bin": 1,
+              "at": 654
+            },
+            {
+              "text": "H₂S → hydrosulfuric acid",
+              "bin": 0,
+              "at": 875
+            }
+          ],
+          "footer": [
+            {
+              "text": "-ate → -ic, -ite → -ous; never hydro- for an oxoacid",
+              "at": 790,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {
@@ -128,11 +183,85 @@
         "audioFile": "public/audio/Chemistry-Y12-M6-L2/concept-indicators.b0f9a0c08ee2.mp3"
       },
       "diagram": {
-        "type": "beforeAfter",
-        "beforeLabel": "Acidic: high H⁺",
-        "afterLabel": "Basic: low H⁺",
-        "beforeContent": "Equilibrium shifts LEFT → HIn form → acid colour",
-        "afterContent": "Equilibrium shifts RIGHT → In⁻ form → base colour"
+        "type": "diorama",
+        "kind": "chem12m6Indicator",
+        "props": {
+          "indicators": [
+            {
+              "name": "Methyl orange",
+              "acidColor": "#d7263d",
+              "baseColor": "#f2c418",
+              "lo": 3,
+              "hi": 4.5,
+              "rangeText": "≈ 3–4.5"
+            },
+            {
+              "name": "Bromothymol blue",
+              "acidColor": "#e8cf2a",
+              "midColor": "#4aa84f",
+              "baseColor": "#2d63c8",
+              "lo": 6,
+              "hi": 7.5,
+              "rangeText": "≈ 6–7.5"
+            },
+            {
+              "name": "Phenolphthalein",
+              "acidColor": "#f3f1f4",
+              "baseColor": "#e0368f",
+              "lo": 8.3,
+              "hi": 10,
+              "rangeText": "8.3–10"
+            }
+          ],
+          "sweep": [
+            {
+              "pH": 7,
+              "at": 0
+            },
+            {
+              "pH": 7,
+              "at": 260
+            },
+            {
+              "pH": 1.5,
+              "at": 310
+            },
+            {
+              "pH": 1.5,
+              "at": 500
+            },
+            {
+              "pH": 12.5,
+              "at": 560
+            },
+            {
+              "pH": 12.5,
+              "at": 700
+            },
+            {
+              "pH": 1.5,
+              "at": 745
+            },
+            {
+              "pH": 12.5,
+              "at": 990
+            },
+            {
+              "pH": 7,
+              "at": 1020
+            }
+          ],
+          "rangeAt": [
+            759,
+            851,
+            934
+          ],
+          "flag": {
+            "index": 2,
+            "at": 1030,
+            "text": "colourless at pH 7"
+          }
+        }
       }
     },
     {
@@ -158,6 +287,55 @@
       "voiceover": {
         "text": "Acids react in three predictable patterns. One, acid plus base gives a salt and water, and the net ionic equation for a strong pair is just hydrogen ion plus hydroxide gives water. Two, acid plus a carbonate or hydrogen carbonate gives a salt, water, and carbon dioxide. The carbon dioxide appears because the carbonic acid that forms is unstable and instantly falls apart into water and CO two, which is the bubbling you see. All three products must be in your equation. Three, acid plus a reactive metal gives a salt and hydrogen gas, but only for metals above hydrogen in the activity series, so magnesium, aluminium, zinc and iron react, while copper and silver don't. To get the salt, pair the metal cation with the acid's anion and balance the charges before you balance the equation. And the gas is H two, never a lone H.",
         "audioFile": "public/audio/Chemistry-Y12-M6-L2/concept-patterns.474e7cee0f6f.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m6FizzBeakers",
+        "props": {
+          "beakers": [
+            {
+              "title": "acid + base",
+              "lines": [
+                "acid + base →",
+                "salt + water",
+                "H⁺ + OH⁻ → H₂O"
+              ],
+              "solid": "none",
+              "gas": null,
+              "at": 0,
+              "gasAt": 60
+            },
+            {
+              "title": "acid + carbonate",
+              "lines": [
+                "acid + carbonate →",
+                "salt + water + CO₂",
+                "H₂CO₃ → H₂O + CO₂"
+              ],
+              "solid": "chip",
+              "gas": "CO₂",
+              "at": 190,
+              "gasAt": 303
+            },
+            {
+              "title": "acid + reactive metal",
+              "lines": [
+                "acid + metal →",
+                "salt + H₂",
+                "Mg, Zn, Fe react; Cu, Ag don’t"
+              ],
+              "solid": "metal",
+              "solidLabel": "Mg",
+              "gas": "H₂",
+              "at": 567,
+              "gasAt": 600
+            }
+          ],
+          "footer": {
+            "text": "Carbonates give CO₂; reactive metals give H₂, never H",
+            "at": 982
+          }
+        }
       }
     },
     {
