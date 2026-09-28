@@ -76,22 +76,20 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L7/concept-tradeoff.c38db3850f86.mp3"
       },
       "diagram": {
-        "type": "barChart",
-        "bars": [
-          {
-            "label": "200°C yield",
-            "value": 38
-          },
-          {
-            "label": "400°C yield",
-            "value": 25
-          },
-          {
-            "label": "550°C yield",
-            "value": 12
+        "type": "diorama",
+        "kind": "chem12m5RateYield",
+        "props": {
+          "beats": {
+            "curves": 20,
+            "low": 142,
+            "high": 324,
+            "compromise": 439,
+            "pressure": 513,
+            "room": 797,
+            "zero": 945,
+            "punch": 990
           }
-        ],
-        "unit": "% NH₃"
+        }
       }
     },
     {
@@ -148,34 +146,64 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L7/concept-haber-conditions.c0707a46a471.mp3"
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Variable",
-          "Effect on yield",
-          "Effect on rate"
-        ],
-        "rows": [
-          [
-            "Low temperature",
-            "Increases",
-            "Decreases (too slow)"
-          ],
-          [
-            "High pressure",
-            "Increases",
-            "Increases"
-          ],
-          [
-            "Iron catalyst",
-            "No change",
-            "Increases"
-          ],
-          [
-            "Recycling",
-            "Raises overall conversion",
-            "—"
+        "type": "diorama",
+        "kind": "chem12m5HaberLoop",
+        "props": {
+          "cards": [
+            {
+              "at": 47,
+              "title": "400–500 °C",
+              "lines": [
+                {
+                  "at": 90,
+                  "text": "Colder gives a better yield, but far too slow"
+                },
+                {
+                  "at": 227,
+                  "text": "Iron catalyst inactive below about 300 °C"
+                }
+              ]
+            },
+            {
+              "at": 427,
+              "title": "150–300 atm",
+              "lines": [
+                {
+                  "at": 470,
+                  "text": "Helps both yield and rate"
+                },
+                {
+                  "at": 651,
+                  "text": "Limit is engineering cost, not chemistry"
+                }
+              ]
+            },
+            {
+              "at": 708,
+              "title": "Iron catalyst",
+              "lines": [
+                {
+                  "at": 730,
+                  "text": "Lifts the rate, so a moderate T is enough"
+                },
+                {
+                  "at": 814,
+                  "text": "Does nothing to the yield"
+                }
+              ]
+            },
+            {
+              "at": 845,
+              "title": "Recycling",
+              "lines": [
+                {
+                  "at": 932,
+                  "text": "15% per pass → over 95% overall"
+                }
+              ]
+            }
           ]
-        ]
+        }
       }
     },
     {

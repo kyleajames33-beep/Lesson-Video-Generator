@@ -60,12 +60,9 @@
       "heading": "Two competing energies",
       "body": "Dissolving means breaking the lattice apart, then surrounding the freed ions with water. One costs energy, the other releases it.",
       "diagram": {
-        "type": "beforeAfter",
-        "beforeLabel": "Lattice energy (in)",
-        "afterLabel": "Hydration energy (out)",
-        "beforeContent": "Breaking the ionic lattice: always endothermic, energy absorbed.",
-        "afterContent": "Water surrounding the ions: always exothermic, energy released.",
-        "delay": 20
+        "type": "diorama",
+        "kind": "chem12m5Dissolve",
+        "props": {}
       },
       "bullets": [
         {
@@ -110,6 +107,11 @@
       "voiceover": {
         "text": "Let's put real salts into the two camps. On the exothermic side, where hydration energy wins, sodium hydroxide releases about forty-four kilojoules per mole as it dissolves, and calcium chloride about eighty-one. Both get genuinely hot, which is why calcium chloride goes into reusable hand-warmers. On the endothermic side, where breaking the lattice dominates, ammonium nitrate absorbs about twenty-five-point-seven kilojoules per mole, and potassium nitrate about thirty-five. Both go cold, which is why ammonium nitrate is the classic instant cold pack. But here's the puzzle, if dissolving ammonium nitrate absorbs energy, why does it dissolve at all? The answer is entropy, straight from Module four. When the ordered lattice breaks and the ions scatter through the water, disorder increases enormously, so the temperature times entropy term is large and positive. That term outweighs the positive enthalpy change, making the overall Gibbs free energy change negative, so it dissolves spontaneously, while cooling the surroundings. Entropy pays the enthalpy bill.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L15/concept-exoendo.b49b2a28cd23.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5HotCold",
+        "props": {}
       }
     },
     {
@@ -135,6 +137,11 @@
       "voiceover": {
         "text": "Now one of the most elegant real-world uses of everything we've covered. Cycad seeds are a rich food source across northern Australia, but raw, they contain potent water-soluble toxins, cycasin and macrozamin, which cause serious illness. Aboriginal and Torres Strait Islander peoples developed detailed methods to make them safe to eat. The chemistry is a solubility equilibrium. When you soak the crushed seed, the toxin dissolves into the water, setting up an equilibrium between toxin in the seed and toxin in the water. If you used still water, that equilibrium would reach a balance and leaching would stop, with toxin still left in the seed. But the traditional method uses running water, often a flowing stream, or repeated changes of fresh water. By Le Chatelier, continuously carrying the dissolved toxin away keeps its concentration in the water near zero, so the system can never settle, and toxin keeps moving out of the seed. It's the same logic as removing a product to drive a reaction forward, applied for tens of thousands of years.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L15/concept-atsi.deb281e53da8.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5Leach",
+        "props": {}
       }
     },
     {

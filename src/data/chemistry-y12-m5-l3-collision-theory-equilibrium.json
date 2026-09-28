@@ -76,94 +76,40 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L3/concept-approach.62f343e6ffc2.mp3"
       },
       "diagram": {
-        "type": "lineGraph",
-        "xLabel": "Time",
-        "yLabel": "Reaction rate",
-        "series": [
-          {
-            "label": "Forward rate",
-            "color": "chem1",
-            "points": [
-              [
-                0,
-                0.92
-              ],
-              [
-                0.12,
-                0.72
-              ],
-              [
-                0.28,
-                0.56
-              ],
-              [
-                0.45,
-                0.45
-              ],
-              [
-                0.65,
-                0.385
-              ],
-              [
-                0.82,
-                0.36
-              ],
-              [
-                1,
-                0.35
-              ]
-            ]
+        "type": "diorama",
+        "kind": "chem12m5Exchange",
+        "props": {
+          "equation": "reactants ⇌ products",
+          "left": {
+            "label": "reactant",
+            "el": "A"
           },
-          {
-            "label": "Reverse rate",
-            "color": "bio",
-            "points": [
-              [
-                0,
-                0.02
-              ],
-              [
-                0.12,
-                0.16
-              ],
-              [
-                0.28,
-                0.26
-              ],
-              [
-                0.45,
-                0.31
-              ],
-              [
-                0.65,
-                0.34
-              ],
-              [
-                0.82,
-                0.348
-              ],
-              [
-                1,
-                0.35
-              ]
-            ]
-          }
-        ],
-        "hLines": [
-          {
-            "y": 0.35,
-            "label": "rates equal"
-          }
-        ],
-        "markers": [
-          {
-            "x": 0.66,
-            "label": "equilibrium"
-          }
-        ]
-      },
-      "revealDelays": {
-        "diagram": 6
+          "right": {
+            "label": "product",
+            "el": "B"
+          },
+          "left0": 14,
+          "keq": 1.8,
+          "hopEvery": 26,
+          "startAt": 340,
+          "graph": "rate",
+          "graphFrames": 560,
+          "markerLabel": "rates equal: equilibrium",
+          "captions": [
+            {
+              "at": 0,
+              "text": "Start: pure reactants. Forward rate high, reverse rate zero"
+            },
+            {
+              "at": 400,
+              "text": "Forward slows as reactants run down; reverse speeds up"
+            },
+            {
+              "at": 700,
+              "text": "Rates meet at a non-zero value: dynamic equilibrium"
+            }
+          ]
+        }
       }
     },
     {
@@ -217,11 +163,29 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L3/concept-catalyst.d47e57996820.mp3"
       },
       "diagram": {
-        "type": "energyProfile",
-        "exothermic": true,
-        "ea": 75,
-        "deltaH": -57,
-        "showCatalyst": true
+        "type": "diorama",
+        "kind": "chem12m5CatalystBoth",
+        "props": {
+          "meterMode": "ratio",
+          "beats": {
+            "path": 111,
+            "both": 163,
+            "rates": 313,
+            "ratio": 441,
+            "unchanged": 598,
+            "inset": 673
+          },
+          "notes": [
+            {
+              "at": 756,
+              "text": "Keq depends only on temperature"
+            },
+            {
+              "at": 823,
+              "text": "Iron catalyst in the Haber process: speed, not yield"
+            }
+          ]
+        }
       }
     },
     {

@@ -76,29 +76,55 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L5/concept-lcp.9e31aaae0416.mp3"
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Disturbance",
-          "Shifts equilibrium?"
-        ],
-        "rows": [
-          [
-            "Add/remove a species",
-            "Yes (position)"
+        "type": "diorama",
+        "kind": "chem12m5Exchange",
+        "props": {
+          "equation": "reactants ⇌ products",
+          "left": {
+            "label": "reactant",
+            "el": "A"
+          },
+          "right": {
+            "label": "product",
+            "el": "B"
+          },
+          "left0": 5,
+          "right0": 9,
+          "startAtEq": true,
+          "hopEvery": 16,
+          "startAt": 20,
+          "graph": "conc",
+          "graphFrames": 820,
+          "disturb": [
+            {
+              "at": 339,
+              "addLeft": 5,
+              "label": "reactant added"
+            }
           ],
-          [
-            "Change temperature",
-            "Yes (position AND Keq)"
+          "seriesLabels": [
+            "[reactant]",
+            "[product]"
           ],
-          [
-            "Change pressure/volume",
-            "Yes, if gas moles differ"
-          ],
-          [
-            "Add a catalyst",
-            "No shift"
+          "captions": [
+            {
+              "at": 0,
+              "text": "At equilibrium: amounts steady, both directions running"
+            },
+            {
+              "at": 339,
+              "text": "Add reactant: the system shifts forward"
+            },
+            {
+              "at": 430,
+              "text": "It uses up some of what was added, not all of it"
+            },
+            {
+              "at": 493,
+              "text": "New equilibrium: more reactant AND more product than before"
+            }
           ]
-        ]
+        }
       }
     },
     {
@@ -152,34 +178,20 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L5/concept-temperature.e939afda0e01.mp3"
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Forward ΔH",
-          "Increase T",
-          "Effect on Keq"
-        ],
-        "rows": [
-          [
-            "Exothermic (ΔH < 0)",
-            "Shift left",
-            "Keq decreases"
-          ],
-          [
-            "Exothermic (ΔH < 0)",
-            "Decrease T → right",
-            "Keq increases"
-          ],
-          [
-            "Endothermic (ΔH > 0)",
-            "Shift right",
-            "Keq increases"
-          ],
-          [
-            "Endothermic (ΔH > 0)",
-            "Decrease T → left",
-            "Keq decreases"
-          ]
-        ]
+        "type": "diorama",
+        "kind": "chem12m5HeatShift",
+        "props": {
+          "beats": {
+            "exoIn": 142,
+            "exoHeat": 263,
+            "exoKeq": 399,
+            "endoIn": 436,
+            "endoHeat": 500,
+            "endoKeq": 557,
+            "rule": 648,
+            "onlyT": 799
+          }
+        }
       }
     },
     {

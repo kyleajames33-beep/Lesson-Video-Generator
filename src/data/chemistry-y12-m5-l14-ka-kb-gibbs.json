@@ -74,6 +74,54 @@
       "voiceover": {
         "text": "Let's start with Ka, the acid dissociation constant. Take a weak acid, HA, dissolving and partly splitting into hydrogen ions and the conjugate base, A minus. That's an equilibrium, so it has an equilibrium constant, and we call it Ka. Following the usual rules, it's products over reactants, hydrogen ion times A minus, all over HA. And just like any Keq involving water as the solvent, the water is left out. The key interpretation, a larger Ka means the dissociation lies further to the right, more of the acid has broken into ions, so it's a stronger acid. One thing to be really careful about, Ka is not the same as pH, and it's not the same as the hydrogen ion concentration. It's the equilibrium constant for the splitting. A strong acid has a Ka far bigger than one, essentially fully dissociated. A weak acid has a Ka far smaller than one, mostly staying intact.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L14/concept-ka.680f811481ed.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5KeqBuilder",
+        "props": {
+          "species": [
+            {
+              "f": "HA",
+              "state": "aq",
+              "coef": 1,
+              "side": "r"
+            },
+            {
+              "f": "H⁺",
+              "state": "aq",
+              "coef": 1,
+              "side": "p"
+            },
+            {
+              "f": "A⁻",
+              "state": "aq",
+              "coef": 1,
+              "side": "p"
+            }
+          ],
+          "k": "K_{a}",
+          "exprX": 270,
+          "productsAt": 232,
+          "reactantsAt": 262,
+          "powersAt": 300,
+          "tray": {
+            "at": 413,
+            "items": [
+              {
+                "f": "H₂O",
+                "state": "l",
+                "reason": "the solvent",
+                "at": 420
+              }
+            ]
+          },
+          "acids": {
+            "at": 448,
+            "notAt": 636,
+            "strongAt": 852,
+            "weakAt": 942
+          }
+        }
       }
     },
     {
@@ -125,6 +173,23 @@
       "voiceover": {
         "text": "Now the most useful relationship in acid-base equilibrium, and where it comes from. Take a conjugate pair, an acid HA and its conjugate base A minus. Write the Ka expression for the acid, and the Kb expression for the base reacting with water. Now multiply them together. Watch what happens, the HA cancels, the A minus cancels, and you're left with just hydrogen ion times hydroxide, which is Kw. So Ka times Kb equals Kw, one-point-zero times ten to the minus fourteen at twenty-five degrees. That immediately gives you a way to find Kb without any new experiment, Kb is simply Kw divided by Ka. And it reveals a beautiful seesaw. The stronger the acid, the bigger its Ka, so the smaller its Kb must be to keep the product at Kw, which means a weaker conjugate base. Strong acid, weak conjugate base, every time, and their product is forever pinned at Kw.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L14/concept-kakb.7c05178848b6.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5KaKb",
+        "props": {
+          "kaAt": 142,
+          "kbAt": 207,
+          "multiplyAt": 265,
+          "cancelHAAt": 316,
+          "cancelAAt": 338,
+          "kwAt": 374,
+          "kwValueAt": 454,
+          "kbFromKwAt": 664,
+          "seesawAt": 715,
+          "tiltAt": 758,
+          "pinnedAt": 954
+        }
       }
     },
     {
@@ -133,7 +198,18 @@
       "heading": "Linking Keq to spontaneity",
       "body": "Gibbs free energy and the equilibrium constant are tied together by one equation, ΔG° = −RT ln Keq.",
       "diagram": {
-        "type": "gibbsSpontaneity"
+        "type": "diorama",
+        "kind": "chem12m5LnK",
+        "props": {
+          "eqAt": 110,
+          "constantsAt": 240,
+          "graphAt": 364,
+          "bigAt": 404,
+          "smallAt": 593,
+          "kelvinAt": 769,
+          "joulesAt": 867,
+          "notDgAt": 906
+        }
       },
       "bullets": [
         {

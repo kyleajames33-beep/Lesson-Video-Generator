@@ -76,29 +76,52 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L4/concept-escalator.e4b5e032ad6e.mp3"
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Description level",
-          "What you see"
-        ],
-        "rows": [
-          [
-            "Macroscopic",
-            "Concentrations constant, looks frozen"
+        "type": "diorama",
+        "kind": "chem12m5Exchange",
+        "props": {
+          "equation": "Floor 1 (reactants) ⇌ Floor 2 (products)",
+          "left": {
+            "label": "Floor 1",
+            "el": "A"
+          },
+          "right": {
+            "label": "Floor 2",
+            "el": "B"
+          },
+          "left0": 8,
+          "right0": 6,
+          "startAtEq": true,
+          "hopEvery": 22,
+          "startAt": 20,
+          "graph": "conc",
+          "graphFrames": 820,
+          "meterLabels": [
+            "up · 50 per min",
+            "down · 50 per min"
           ],
-          [
-            "Microscopic",
-            "Both reactions running at equal rates"
+          "countLabels": [
+            "Floor 1: 200 people",
+            "Floor 2: 150 people"
           ],
-          [
-            "Common error B",
-            "Says concentrations are equal (wrong)"
+          "seriesLabels": [
+            "Floor 1: 200",
+            "Floor 2: 150"
           ],
-          [
-            "Common error C",
-            "Says reaction has stopped (wrong)"
+          "captions": [
+            {
+              "at": 260,
+              "text": "50 up and 50 down every minute: equal rates"
+            },
+            {
+              "at": 470,
+              "text": "Up escalator = forward rate, down = reverse rate"
+            },
+            {
+              "at": 760,
+              "text": "Numbers constant, but not equal: 200 vs 150"
+            }
           ]
-        ]
+        }
       }
     },
     {
@@ -152,31 +175,45 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L4/concept-graphs.0b297967135b.mp3"
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "r",
-            "label": "Reactant curve falls"
+        "type": "diorama",
+        "kind": "chem12m5Signatures",
+        "props": {
+          "mode": "single",
+          "labels": [
+            "reactant",
+            "product"
+          ],
+          "beats": {
+            "draw": 160,
+            "flat": 326,
+            "cross": 446,
+            "disturb": 786,
+            "relevel": 886,
+            "keq": 946
           },
-          {
-            "id": "p",
-            "label": "Product curve rises"
-          },
-          {
-            "id": "eq",
-            "label": "All curves flatten = equilibrium"
-          }
-        ],
-        "edges": [
-          {
-            "from": "r",
-            "to": "eq"
-          },
-          {
-            "from": "p",
-            "to": "eq"
-          }
-        ]
+          "captions": [
+            {
+              "at": 160,
+              "text": "Reactant falls, product rises, then both level off"
+            },
+            {
+              "at": 326,
+              "text": "Equilibrium = where ALL curves go flat"
+            },
+            {
+              "at": 446,
+              "text": "Not where they cross"
+            },
+            {
+              "at": 786,
+              "text": "Add reactant: its curve spikes straight up"
+            },
+            {
+              "at": 886,
+              "text": "Then it re-levels at new constant values"
+            }
+          ]
+        }
       }
     },
     {

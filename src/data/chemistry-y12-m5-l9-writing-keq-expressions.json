@@ -76,34 +76,58 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L9/concept-rules.ab9230ec4417.mp3"
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Species",
-          "In Keq?",
-          "Why"
-        ],
-        "rows": [
-          [
-            "Gas (g)",
-            "Yes",
-            "Concentration varies"
+        "type": "diorama",
+        "kind": "chem12m5KeqBuilder",
+        "props": {
+          "species": [
+            {
+              "f": "N₂",
+              "state": "g",
+              "coef": 1,
+              "side": "r"
+            },
+            {
+              "f": "H₂",
+              "state": "g",
+              "coef": 3,
+              "side": "r"
+            },
+            {
+              "f": "NH₃",
+              "state": "g",
+              "coef": 2,
+              "side": "p"
+            }
           ],
-          [
-            "Aqueous (aq)",
-            "Yes",
-            "Concentration varies"
+          "amberPowers": true,
+          "productsAt": 105,
+          "reactantsAt": 150,
+          "powersAt": 199,
+          "rules": {
+            "at": 323,
+            "stayAt": 460
+          },
+          "pulses": [
+            {
+              "at": 649,
+              "side": "p"
+            },
+            {
+              "at": 700,
+              "side": "r"
+            }
           ],
-          [
-            "Pure solid (s)",
-            "No",
-            "Activity = 1"
-          ],
-          [
-            "Pure liquid / solvent water (l)",
-            "No",
-            "Activity = 1"
+          "notes": [
+            {
+              "at": 743,
+              "text": "Coefficients must match the equation exactly as written"
+            },
+            {
+              "at": 852,
+              "text": "Halve the equation → every power halves → value square-rooted"
+            }
           ]
-        ]
+        }
       }
     },
     {
@@ -157,29 +181,88 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L9/concept-magnitude.1d04018e7401.mp3"
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Keq value",
-          "Position",
-          "Mixture"
-        ],
-        "rows": [
-          [
-            "> 10³",
-            "Products favoured",
-            "Almost all products"
+        "type": "diorama",
+        "kind": "chem12m5KeqScale",
+        "props": {
+          "bandsAt": {
+            "products": 121,
+            "both": 319,
+            "reactants": 412
+          },
+          "reactions": [
+            {
+              "eq": "N₂ + O₂ ⇌ 2NO",
+              "logK": -30,
+              "value": "10⁻³⁰",
+              "mix": [
+                {
+                  "atoms": [
+                    "N",
+                    "N"
+                  ],
+                  "n": 3
+                },
+                {
+                  "atoms": [
+                    "O",
+                    "O"
+                  ],
+                  "n": 3
+                }
+              ],
+              "label": "almost all reactants",
+              "at": 586
+            },
+            {
+              "eq": "H₂ + I₂ ⇌ 2HI",
+              "logK": 1.732,
+              "value": "54",
+              "mix": [
+                {
+                  "atoms": [
+                    "H",
+                    "H"
+                  ],
+                  "n": 1
+                },
+                {
+                  "atoms": [
+                    "I",
+                    "I"
+                  ],
+                  "n": 1
+                },
+                {
+                  "atoms": [
+                    "I",
+                    "H"
+                  ],
+                  "n": 7
+                }
+              ],
+              "label": "both present",
+              "at": 710
+            },
+            {
+              "eq": "2NO + O₂ ⇌ 2NO₂",
+              "logK": 12,
+              "value": "10¹²",
+              "mix": [
+                {
+                  "atoms": [
+                    "N",
+                    "O",
+                    "O"
+                  ],
+                  "n": 6
+                }
+              ],
+              "label": "almost all product",
+              "at": 791
+            }
           ],
-          [
-            "~1 (10⁻¹ to 10³)",
-            "Intermediate",
-            "Both present"
-          ],
-          [
-            "< 10⁻³",
-            "Reactants favoured",
-            "Almost all reactants"
-          ]
-        ]
+          "cautionAt": 884
+        }
       }
     },
     {

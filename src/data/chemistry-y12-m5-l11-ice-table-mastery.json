@@ -73,6 +73,22 @@
       "voiceover": {
         "text": "Let's start with the shortcut that saves you from algebra, the small-x assumption. The idea is simple. If the equilibrium constant is tiny compared with your starting concentration, then almost no reaction happens, so x is so small that subtracting it from the initial concentration barely changes anything. The test is a clean one. Take Keq, divide by the initial concentration, times a hundred. If that's under five percent, you're allowed to treat the quantity initial minus x as just the initial value, and the maths collapses to something easy. But there's a catch students forget. After you solve, you must go back and check that x divided by the initial, times a hundred, really is under five percent. If it isn't, the assumption was never valid, so you bin that answer and solve the full quadratic. Pre-check before, post-check after. The assumption is a tool, not an excuse to drop x just because Keq looks small.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L11/concept-assumption.ba9b94391fd4.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5SmallX",
+        "props": {
+          "barAt": 45,
+          "sliceAt": 229,
+          "preAt": 292,
+          "preReadAt": 405,
+          "approxAt": 462,
+          "postAt": 632,
+          "postReadAt": 680,
+          "failAt": 794,
+          "binAt": 865,
+          "summaryAt": 922
+        }
       }
     },
     {
@@ -98,6 +114,70 @@
       "voiceover": {
         "text": "Now the second leak. Most ICE problems start with pure reactants, products at zero, so the reaction can only go forwards. But sometimes the question gives you starting amounts of products as well, and then you genuinely don't know which way it will move. So you calculate the reaction quotient, Q, using those initial concentrations. It's the exact same expression as Keq, just with current values instead of equilibrium ones, and we'll go deeper on Q next lesson. Compare it to Keq. If Q is less than Keq, there aren't enough products yet, so the reaction shifts right. If Q is greater than Keq, there's too much product, so it shifts left. And if they're equal, you're already at equilibrium and nothing changes. Only once you know the direction do you write the Change row, so the minus and plus signs point the right way. The trap is assuming it always goes right just because products are sitting there. It doesn't. Q versus Keq is the only thing that decides.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L11/concept-direction.fa0a50a31296.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5QGauge",
+        "props": {
+          "showQAt": 239,
+          "change": {
+            "at": 474,
+            "leftAt": 576,
+            "emphAt": 734
+          },
+          "steps": [
+            {
+              "at": 0,
+              "set": [
+                7,
+                5
+              ],
+              "captionAt": 30,
+              "caption": "Products present at the start: which way will it go?"
+            },
+            {
+              "at": 239,
+              "caption": "Calculate Q from the starting concentrations"
+            },
+            {
+              "at": 449,
+              "caption": "Compare Q with Keq"
+            },
+            {
+              "at": 474,
+              "runAt": 492,
+              "runLen": 70,
+              "caption": "Q < Keq: shifts right"
+            },
+            {
+              "at": 576,
+              "set": [
+                1,
+                11
+              ],
+              "runAt": 594,
+              "runLen": 64,
+              "caption": "Q > Keq: shifts left"
+            },
+            {
+              "at": 671,
+              "set": [
+                4,
+                8
+              ],
+              "caption": "Q = Keq: already at equilibrium, no change"
+            },
+            {
+              "at": 734,
+              "caption": "Direction first, then the Change-row signs"
+            },
+            {
+              "at": 874,
+              "caption": "Q versus Keq decides, not what is in the flask",
+              "emph": true
+            }
+          ]
+        }
       }
     },
     {
@@ -123,6 +203,19 @@
       "voiceover": {
         "text": "When the post-check fails, there's no avoiding it, you solve the quadratic. The process is mechanical once you've set it up. Substitute your equilibrium row into the Keq expression, then rearrange everything to the standard form, a x squared plus b x plus c equals zero. Then apply the quadratic formula, x equals minus b plus or minus the square root of b squared minus four a c, all over two a. That plus or minus gives you two answers, and here's the key judgement. One of them is always physically impossible, because it would make a concentration negative, and you can't have less than zero of a substance. So you keep the root that leaves every equilibrium concentration positive, and discard the other. Then, as always, verify, substitute your final concentrations back into Keq and check you recover the value you started with.",
         "audioFile": "public/audio/Chemistry-Y12-M5-L11/concept-quadratic.d4b25131a995.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m5Quadratic",
+        "props": {
+          "setupAt": 111,
+          "standardAt": 178,
+          "formulaAt": 298,
+          "rootsAt": 493,
+          "rejectAt": 591,
+          "keepAt": 771,
+          "checkAt": 883
+        }
       }
     },
     {

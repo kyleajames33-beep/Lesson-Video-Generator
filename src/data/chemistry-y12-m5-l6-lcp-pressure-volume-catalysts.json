@@ -77,18 +77,30 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L6/concept-pressure.2d8342d71dd3.mp3"
       },
       "diagram": {
-        "type": "barChart",
-        "bars": [
-          {
-            "label": "Left: N₂ + 3H₂",
-            "value": 4
+        "type": "diorama",
+        "kind": "chem12m5Pressure",
+        "props": {
+          "beats": {
+            "compress": 30,
+            "expand": 271,
+            "counts": 456,
+            "compress2": 500
           },
-          {
-            "label": "Right: 2NH₃",
-            "value": 2
-          }
-        ],
-        "unit": "mol gas"
+          "chips": [
+            {
+              "at": 619,
+              "text": "count only the gases"
+            },
+            {
+              "at": 759,
+              "text": "equal gas moles → no effect"
+            },
+            {
+              "at": 937,
+              "text": "Keq unchanged: only T changes Keq"
+            }
+          ]
+        }
       }
     },
     {
@@ -142,11 +154,29 @@
         "audioFile": "public/audio/Chemistry-Y12-M5-L6/concept-catalyst.96906c8654fa.mp3"
       },
       "diagram": {
-        "type": "energyProfile",
-        "exothermic": true,
-        "ea": 80,
-        "deltaH": -92,
-        "showCatalyst": true
+        "type": "diorama",
+        "kind": "chem12m5CatalystBoth",
+        "props": {
+          "meterMode": "equal",
+          "beats": {
+            "path": 80,
+            "both": 143,
+            "rates": 242,
+            "ratio": 397,
+            "unchanged": 531,
+            "inset": 658
+          },
+          "notes": [
+            {
+              "at": 714,
+              "text": "Iron catalyst makes 400–500 °C profitable"
+            },
+            {
+              "at": 848,
+              "text": "Only temperature and pressure change the yield"
+            }
+          ]
+        }
       }
     },
     {
