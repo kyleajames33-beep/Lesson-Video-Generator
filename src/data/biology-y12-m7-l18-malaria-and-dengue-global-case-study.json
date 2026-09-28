@@ -77,39 +77,63 @@
         "text": "Let's start with malaria, and the first thing to get right is what causes it. Malaria isn't a virus or a bacterium. It's caused by Plasmodium, a single celled eukaryotic parasite. It's spread by female Anopheles mosquitoes, which tend to bite at night, and the deadliest species is Plasmodium falciparum. The key is its life cycle. The mosquito injects the parasite, which travels first to the liver, where it multiplies silently, and then it bursts into the blood, invading red blood cells and causing the cycles of fever, anaemia and organ damage. Each stage is a separate point of attack. Bed nets target the mosquito, antimalarial drugs target the blood stage, and vaccines aim at the parasite as it heads for the liver. And because Plasmodium is a eukaryote, antibiotics and antivirals do nothing against it."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "n1",
-            "label": "Mosquito"
+        "type": "diorama",
+        "kind": "bio12m7Steps",
+        "props": {
+          "layout": "cycle",
+          "title": "Plasmodium: a single-celled eukaryotic parasite",
+          "steps": [
+            {
+              "name": "Mosquito",
+              "sub": "female Anopheles, bites at night",
+              "icon": "mosquito",
+              "at": 394,
+              "tags": [
+                {
+                  "text": "bed nets",
+                  "at": 1186
+                }
+              ]
+            },
+            {
+              "name": "Liver",
+              "sub": "multiplies silently",
+              "icon": "liver",
+              "at": 754,
+              "tags": [
+                {
+                  "text": "vaccines",
+                  "at": 1330
+                }
+              ]
+            },
+            {
+              "name": "Blood",
+              "sub": "red blood cells: fever, anaemia",
+              "icon": "rbc",
+              "at": 874,
+              "tags": [
+                {
+                  "text": "antimalarial drugs",
+                  "at": 1246
+                }
+              ]
+            }
+          ],
+          "traveller": {
+            "icon": "protozoan"
           },
-          {
-            "id": "n2",
-            "label": "Liver"
+          "loop": {
+            "at": 1090
           },
-          {
-            "id": "n3",
-            "label": "Blood"
-          },
-          {
-            "id": "n4",
-            "label": "Mosquito"
-          }
-        ],
-        "edges": [
-          {
-            "from": "n1",
-            "to": "n2"
-          },
-          {
-            "from": "n2",
-            "to": "n3"
-          },
-          {
-            "from": "n3",
-            "to": "n4"
-          }
-        ]
+          "footer": [
+            {
+              "text": "A eukaryote: antibiotics and antivirals do nothing",
+              "at": 1474,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {

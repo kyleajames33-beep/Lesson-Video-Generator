@@ -211,6 +211,73 @@
       "caption": "Control (still present), elimination (locally zero), eradication (global zero, only smallpox).",
       "voiceover": {
         "text": "Finally, three words that examiners love to test, because students mix them up, control, elimination, and eradication. Control means you've reduced the incidence of a disease to an acceptable level, but it's still around, like seasonal flu. Elimination is stronger, it means zero cases in a defined area, a country or region, but the pathogen still exists elsewhere in the world. Australia, for instance, has eliminated measles. And eradication is the ultimate goal, permanent global zero, the pathogen wiped out everywhere. Only one human disease has ever been eradicated, smallpox, declared gone in nineteen eighty. Why is eradication so rare? Because some diseases hide in animal reservoirs, some change their antigens too fast for vaccines to keep up, and some spread silently before symptoms appear. And elimination is fragile, if vaccination coverage slips below the herd immunity threshold, a single imported case can spark a new outbreak. That's why we keep vaccinating even when a disease seems gone."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Steps",
+        "props": {
+          "layout": "stairs",
+          "steps": [
+            {
+              "name": "Control",
+              "sub": "reduced to an acceptable level, still present",
+              "icon": "globe",
+              "iconOpts": {
+                "globe": "some"
+              },
+              "at": 142,
+              "tags": [
+                {
+                  "text": "e.g. seasonal flu",
+                  "at": 382
+                }
+              ]
+            },
+            {
+              "name": "Elimination",
+              "sub": "zero in a defined area, still exists elsewhere",
+              "icon": "globe",
+              "iconOpts": {
+                "globe": "regionZero"
+              },
+              "at": 406,
+              "tags": [
+                {
+                  "text": "e.g. measles, Australia",
+                  "at": 742
+                },
+                {
+                  "text": "fragile: an imported case",
+                  "at": 1474,
+                  "tone": "warm"
+                }
+              ]
+            },
+            {
+              "name": "Eradication",
+              "sub": "permanent global zero",
+              "icon": "globe",
+              "iconOpts": {
+                "globe": "none"
+              },
+              "at": 778,
+              "amber": true,
+              "tags": [
+                {
+                  "text": "only smallpox, 1980",
+                  "at": 1030,
+                  "tone": "amber"
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "text": "Hard: animal reservoirs, fast antigen change, silent spread",
+              "at": 1222
+            }
+          ]
+        }
       }
     },
     {

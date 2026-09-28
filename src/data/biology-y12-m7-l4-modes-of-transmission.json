@@ -324,79 +324,45 @@
         "text": "Now for a tool epidemiologists reach for constantly, the epidemic curve. You plot the number of new cases against the date their symptoms began, and the shape of that curve tells you the transmission pattern before any laboratory result comes back. There are three classic shapes. A point-source curve rises sharply to a single peak and then falls, with all the cases landing inside one incubation period, which points to a single shared exposure, like one contaminated meal at an event. A continuous common-source curve forms a sustained plateau rather than a peak, because the contamination keeps going, think a polluted water supply over weeks. And a propagated curve shows a series of waves, each one roughly an incubation period apart, and often each wave is bigger than the last, which is the signature of person-to-person spread, like flu moving through a school. So before any test, the curve already names the route."
       },
       "diagram": {
-        "type": "lineGraph",
-        "xLabel": "Day of symptom onset",
-        "yLabel": "New cases",
-        "series": [
-          {
-            "label": "Point source",
-            "color": "chem1",
-            "points": [
-              [
-                0,
-                0.05
-              ],
-              [
-                0.18,
-                0.85
-              ],
-              [
-                0.3,
-                0.6
-              ],
-              [
-                0.45,
-                0.3
-              ],
-              [
-                0.6,
-                0.12
-              ],
-              [
-                0.8,
-                0.04
-              ],
-              [
-                1,
-                0.02
-              ]
-            ]
-          },
-          {
-            "label": "Propagated",
-            "color": "bio",
-            "points": [
-              [
-                0,
-                0.05
-              ],
-              [
-                0.15,
-                0.25
-              ],
-              [
-                0.28,
-                0.12
-              ],
-              [
-                0.45,
-                0.5
-              ],
-              [
-                0.6,
-                0.28
-              ],
-              [
-                0.78,
-                0.85
-              ],
-              [
-                1,
-                0.5
-              ]
-            ]
+        "type": "diorama",
+        "kind": "bio12m7EpiCurve",
+        "props": {
+          "xLabel": "day of symptom onset →",
+          "panels": [
+            {
+              "shape": "point",
+              "name": "Point source",
+              "note": "one shared exposure, e.g. one contaminated meal",
+              "at": 490,
+              "drawEnd": 680,
+              "bracket": "one incubation period",
+              "bracketAt": 718,
+              "noteAt": 802
+            },
+            {
+              "shape": "continuous",
+              "name": "Continuous common source",
+              "note": "exposure keeps going, e.g. polluted water",
+              "at": 934,
+              "drawEnd": 1130,
+              "noteAt": 1162
+            },
+            {
+              "shape": "propagated",
+              "name": "Propagated",
+              "note": "person to person, e.g. flu in a school",
+              "at": 1246,
+              "drawEnd": 1440,
+              "bracket": "about one incubation period apart",
+              "bracketAt": 1354,
+              "noteAt": 1582
+            }
+          ],
+          "footer": {
+            "text": "The shape of the curve names the route",
+            "at": 1786
           }
-        ]
+        }
       }
     },
     {

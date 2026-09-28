@@ -157,39 +157,77 @@
         "text": "Pasteur showed microbes come from the air, but Robert Koch went further and proved that a specific microbe causes a specific disease. He laid out four criteria, and all four must be satisfied. Postulate one, association, the microbe must be found in every organism with the disease, and absent in healthy ones. Postulate two, isolation, you extract that microbe and grow it in pure culture, separate from the host and from anything else. Postulate three, causation, you take that pure culture and introduce it into a healthy host, and that host must develop the same disease. Postulate four, confirmation, you re-isolate the microbe from the newly infected host and confirm it's identical to the one you started with. And here's why you need all four. Postulate one on its own only shows correlation. Postulate three adds genuine causation. Postulate four adds reproducibility. Chained together, they rule out coincidence, contamination, and confounding factors."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "p1",
-            "label": "Found"
+        "type": "diorama",
+        "kind": "bio12m7Steps",
+        "props": {
+          "layout": "row",
+          "numbered": true,
+          "steps": [
+            {
+              "name": "Association",
+              "sub": "in every diseased host, absent in healthy ones",
+              "icon": "sickPerson",
+              "at": 334,
+              "tags": [
+                {
+                  "text": "correlation only",
+                  "at": 1534,
+                  "tone": "warm"
+                }
+              ]
+            },
+            {
+              "name": "Isolation",
+              "sub": "grown in pure culture",
+              "icon": "dish",
+              "iconOpts": {
+                "colonies": 40
+              },
+              "at": 562
+            },
+            {
+              "name": "Causation",
+              "sub": "pure culture into a healthy host: same disease",
+              "icon": "syringe",
+              "at": 814,
+              "tags": [
+                {
+                  "text": "causation",
+                  "at": 1594
+                }
+              ]
+            },
+            {
+              "name": "Confirmation",
+              "sub": "re-isolated, identical to the original",
+              "icon": "dish",
+              "iconOpts": {
+                "colonies": 40
+              },
+              "at": 1090,
+              "tags": [
+                {
+                  "text": "reproducibility",
+                  "at": 1654
+                }
+              ]
+            }
+          ],
+          "traveller": {
+            "icon": "bacterium"
           },
-          {
-            "id": "p2",
-            "label": "Isolate"
+          "loop": {
+            "text": "the same microbe",
+            "at": 1294
           },
-          {
-            "id": "p3",
-            "label": "Infect"
-          },
-          {
-            "id": "p4",
-            "label": "Re-isolate"
-          }
-        ],
-        "edges": [
-          {
-            "from": "p1",
-            "to": "p2"
-          },
-          {
-            "from": "p2",
-            "to": "p3"
-          },
-          {
-            "from": "p3",
-            "to": "p4"
-          }
-        ]
+          "footer": [
+            {
+              "text": "All four together rule out coincidence and contamination",
+              "at": 1714,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {

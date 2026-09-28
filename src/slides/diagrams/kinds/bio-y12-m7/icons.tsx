@@ -13,7 +13,7 @@ import {PAL, shade} from './shared';
 export type IconName =
 	| 'virus' | 'bacterium' | 'fungus' | 'protozoan' | 'worm' | 'tick' | 'prion' | 'viroid'
 	| 'mosquito' | 'person' | 'sickPerson' | 'cell' | 'plant' | 'drop' | 'air' | 'dish'
-	| 'syringe' | 'liver' | 'rbc' | 'pill' | 'fomite' | 'net' | 'spray' | 'fan' | 'mask' | 'sheep' | 'none';
+	| 'syringe' | 'liver' | 'rbc' | 'pill' | 'fomite' | 'net' | 'spray' | 'fan' | 'mask' | 'sheep' | 'fly' | 'globe' | 'none';
 
 export type IconOpts = {
 	/** bacterium: draw pili / fimbriae. */
@@ -26,6 +26,10 @@ export type IconOpts = {
 	colonies?: number;
 	/** dish: confluent lawn. */
 	lawn?: boolean;
+	/** globe: where cases are. */
+	globe?: 'some' | 'regionZero' | 'none';
+	/** fly: sterile (radiation badge). */
+	sterile?: boolean;
 	/** overall tint override (PAL key). */
 	tone?: keyof typeof PAL;
 };
@@ -320,6 +324,42 @@ const draw = (id: string, name: IconName, frame: number, o: IconOpts): ReactNode
 					<ellipse cx={30} cy={-8} rx={9} ry={11} fill="#4a4a4a" />
 				</g>
 			);
+		case 'fly': {
+			const flap = Math.sin(frame / 1.8) * 0.3 + 0.7;
+			return (
+				<g>
+					<Shadow rx={28} y={32} />
+					<ellipse cx={-10} cy={-16} rx={16} ry={8 * flap} fill="#dfe8ef" opacity={0.8} stroke="#9aa6b0" transform="rotate(-30 -10 -16)" />
+					<ellipse cx={10} cy={-16} rx={16} ry={8 * flap} fill="#dfe8ef" opacity={0.8} stroke="#9aa6b0" transform="rotate(30 10 -16)" />
+					{[-1, 1].map((s) => [-6, 2, 10].map((y, k) => <path key={`${s}${k}`} d={`M ${s * 8} ${y} l ${s * 12} 8 l ${s * 4} 12`} stroke={PAL.mosquito} strokeWidth={2} fill="none" />))}
+					<ellipse cx={0} cy={6} rx={11} ry={16} fill={g(id, 'mosquito')} />
+					<circle cx={0} cy={-12} r={9} fill={g(id, 'mosquito')} />
+					<circle cx={-5} cy={-14} r={3.5} fill="#b3261e" />
+					<circle cx={5} cy={-14} r={3.5} fill="#b3261e" />
+					{o.sterile && (
+						<g transform="translate(20,18)">
+							<circle r={10} fill="#ffe08a" stroke="#7a5418" strokeWidth={1.5} />
+							{[0, 120, 240].map((a) => <path key={a} d="M 0 0 L 7 -3 A 7.6 7.6 0 0 1 7 3 Z" fill="#1a1a1a" transform={`rotate(${a - 90})`} />)}
+							<circle r={1.8} fill="#1a1a1a" />
+						</g>
+					)}
+				</g>
+			);
+		}
+		case 'globe': {
+			const pts = [[-20, -12], [6, -20], [18, -4], [-8, 4], [10, 14], [-22, 10], [24, 8], [-2, -8], [-14, 20], [4, 24]];
+			const zeroRegion = (x: number, y: number) => x < 2 && y < 6;
+			const shown = o.globe === 'none' ? [] : pts.filter(([x, y], k) => (o.globe === 'regionZero' ? !zeroRegion(x, y) : k % 2 === 0));
+			return (
+				<g>
+					<Shadow rx={32} y={36} />
+					<circle r={32} fill={g(id, 'water')} stroke={edge('water')} strokeWidth={1} />
+					<path d="M -24 -16 C -14 -26 -2 -22 0 -12 C 2 -2 -12 2 -20 -2 C -28 -6 -28 -12 -24 -16 Z M 6 4 C 14 -2 26 2 26 12 C 24 22 12 26 6 18 C 2 12 2 8 6 4 Z M 8 -24 C 14 -26 20 -20 16 -14 C 12 -10 6 -16 8 -24 Z" fill={g(id, 'plant')} opacity={0.9} />
+					{o.globe === 'regionZero' && <path d="M -26 -18 C -14 -30 0 -24 2 -12 C 4 0 -12 6 -22 0 C -30 -6 -30 -12 -26 -18 Z" fill="none" stroke="#ffffff" strokeWidth={2.5} strokeDasharray="4 3" />}
+					{shown.map(([x, y], k) => <circle key={k} cx={x} cy={y} r={3.6} fill={PAL.stop} stroke="#ffffff" strokeWidth={1} opacity={0.75 + 0.25 * Math.sin(frame / 12 + k)} />)}
+				</g>
+			);
+		}
 		default:
 			return null;
 	}
