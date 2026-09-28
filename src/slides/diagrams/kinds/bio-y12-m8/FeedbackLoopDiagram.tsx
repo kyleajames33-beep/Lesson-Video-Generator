@@ -14,7 +14,7 @@ import {useCurrentFrame, useVideoConfig} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
 import {DioramaDefs, DioramaPlinth, idleBob, idlePulse} from '../../diorama';
-import {Arrow, COL, GlossDefs, Note, NoteLine, ease, fadeAt, mix, popAt} from './shared';
+import {Arrow, COL, GlossDefs, Note, NoteLine, ease, fadeAt, mix, popAt, textWidth} from './shared';
 
 type Station = {role: string; label: string; sub?: string; at: number};
 
@@ -153,7 +153,7 @@ export const FeedbackLoopDiagram = ({variable, stations, pushAt, returnAt, loop,
 						fill="none"
 					/>
 					<path d={`M ${xs[0] - 8} ${LOOP_Y - 16} L ${xs[0]} ${LOOP_Y - 28} L ${xs[0] + 8} ${LOOP_Y - 16} Z`} fill={theme.accent} />
-					<rect x={W / 2 - 200} y={LOOP_Y - 14} width={400} height={28} rx={14} fill="#ffffff" />
+					<rect x={W / 2 - textWidth(loop.label, 17) / 2 - 16} y={LOOP_Y - 14} width={textWidth(loop.label, 17) + 32} height={28} rx={14} fill="#ffffff" />
 					<text x={W / 2} y={LOOP_Y + 6} textAnchor="middle" fill={theme.accent} fontSize={17} fontWeight={800}>{loop.label}</text>
 				</g>
 			)}
