@@ -120,7 +120,7 @@ export const NonDisjunctionDiagram = ({pairAt, splitAt, extra, missing, notes = 
 						{cell(Z[i].x, Z[i].y, `z${i}`, o, fadeAt(frame, cfg.at + 50, 12))}
 						{/* normal gamete brings one copy */}
 						<g opacity={o}>
-							<text x={i === 0 ? Z[i].x + 50 : Z[i].x - 50} y={Z[i].y - 40} textAnchor={i === 0 ? 'start' : 'end'} fill={COL.teal} fontSize={15} fontWeight={800}>+1 normal gamete</text>
+							<text x={i === 0 ? Z[i].x + 50 : Z[i].x - 50} y={Z[i].y - 64} textAnchor={i === 0 ? "start" : "end"} fill={COL.teal} fontSize={15} fontWeight={800}>+1 normal gamete</text>
 						</g>
 						{badge(Z[i].x, Z[i].y, zCount[i], fadeAt(frame, cfg.at + 50, 10), true)}
 						<g opacity={fadeAt(frame, cfg.at + 50, 12)}>

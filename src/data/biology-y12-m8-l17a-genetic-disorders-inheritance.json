@@ -188,6 +188,35 @@
       "caption": "Inheritance is autosomal recessive (CF), autosomal dominant (Huntington's) or X-linked recessive (haemophilia).",
       "voiceover": {
         "text": "Now single gene disorders, where the inheritance pattern decides who's affected. It depends on whether the allele is dominant or recessive, and whether it's on an autosome or the X chromosome. First, autosomal recessive. Both copies must be faulty, so the parents are usually unaffected carriers, and two carriers have a twenty five percent chance of an affected child. Cystic fibrosis works this way. Second, autosomal dominant. One faulty copy is enough, so an affected person usually has an affected parent, and each child has a fifty percent risk. Huntington's disease is the example. Third, X linked recessive. Females have two X chromosomes, so one faulty copy is usually masked, but males have only one X, so a single faulty copy means they're affected. Haemophilia follows this pattern. And the mechanisms matter. In cystic fibrosis, a faulty CFTR gene means no working chloride channel, so mucus turns thick and sticky. In Huntington's, an expanded DNA repeat makes a toxic protein, and nearly everyone who inherits it develops the disease."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8Inheritance",
+        "props": {
+          "panels": [
+            {
+              "title": "Autosomal recessive",
+              "example": "e.g. cystic fibrosis",
+              "type": "AR",
+              "at": 310,
+              "resultAt": 550
+            },
+            {
+              "title": "Autosomal dominant",
+              "example": "e.g. Huntington's disease",
+              "type": "AD",
+              "at": 706,
+              "resultAt": 970
+            },
+            {
+              "title": "X-linked recessive",
+              "example": "e.g. haemophilia",
+              "type": "XR",
+              "at": 1066,
+              "resultAt": 1270
+            }
+          ]
+        }
       }
     },
     {

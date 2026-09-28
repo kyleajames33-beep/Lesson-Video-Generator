@@ -13,6 +13,7 @@ import {TwoHitDiagram} from '../kinds/bio-y12-m8/TwoHitDiagram';
 import {MembraneDiagram} from '../kinds/bio-y12-m8/MembraneDiagram';
 import {DataPanelsDiagram} from '../kinds/bio-y12-m8/DataPanelsDiagram';
 import {NonDisjunctionDiagram} from '../kinds/bio-y12-m8/NonDisjunctionDiagram';
+import {InheritanceDiagram} from '../kinds/bio-y12-m8/InheritanceDiagram';
 
 export const KINDS: DioramaKindMap = {
   bio12m8EyeRays: EyeRaysDiagram,
@@ -23,4 +24,5 @@ export const KINDS: DioramaKindMap = {
   bio12m8Membrane: MembraneDiagram,
   bio12m8DataPanels: DataPanelsDiagram,
   bio12m8NonDisjunction: NonDisjunctionDiagram,
+  bio12m8Inheritance: InheritanceDiagram,
 };
