@@ -29,7 +29,7 @@ export const KINDS: DioramaKindMap = {
   bio11m2Tract: TractDiagram,
   bio11m2Villi: VilliDiagram,
   bio11m2OrganTrack: OrganTrackDiagram,
-  bio11m2Vessels: VesselsDiagram,
+  bio11m2BloodVessels: VesselsDiagram,
   bio11m2Blood: BloodDiagram,
   bio11m2Alveolus: AlveolusDiagram,
   bio11m2Nephron: NephronDiagram,
