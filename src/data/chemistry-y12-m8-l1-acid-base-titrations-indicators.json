@@ -98,6 +98,30 @@
       "caption": "Titre to litres, n = cV, balanced-equation ratio, then c = n ÷ V.",
       "voiceover": {
         "text": "Here's the pathway, and it's the mole tools you already own. First, convert your average titre to litres. Second, find the moles of the standard using n equals c times V. Third, apply the mole ratio, straight from the balanced equation. And fourth, divide those moles by the volume of the unknown to get its concentration. Now, you might know the shortcut, c-one V-one equals c-two V-two. That only works when the reaction is one to one. The moment you hit a diprotic acid like sulfuric acid, one mole of acid needs two moles of base, and the shortcut quietly gives you the wrong answer. So read the ratio off the balanced equation every time."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Steps",
+        "props": {
+          "layout": "stairs",
+          "stages": [
+            {"label": "Average concordant titre, in litres", "formula": "V = titre ÷ 1000", "beat": 42},
+            {"label": "Moles of the standard", "formula": "n = c × V", "beat": 101},
+            {
+              "label": "Mole ratio from the balanced equation",
+              "formula": "n(unknown) = n(standard) × ratio",
+              "beat": 212
+            },
+            {"label": "Concentration of the unknown", "formula": "c = n ÷ V(aliquot)", "beat": 306}
+          ],
+          "highlight": 2,
+          "highlightBeat": 647,
+          "note": {
+            "text": "c₁V₁ = c₂V₂ only works for 1 : 1",
+            "sub": "H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O   is 1 : 2",
+            "beat": 527
+          }
+        }
       }
     },
     {
@@ -154,6 +178,116 @@
       "caption": "Pick the indicator whose range sits in the steep pH jump at equivalence.",
       "voiceover": {
         "text": "Last piece, and it's a genuine chemistry decision, not a guess. Picture the burette dripping base into acid. Nothing visible happens for ages, then one drop swings the whole flask to a permanent colour. You want your indicator to change colour right in that steep pH jump near equivalence. Which indicator depends on the pair. Methyl orange, around pH three to four, suits a strong acid with a weak base. Bromothymol blue, near neutral, suits strong acid with strong base. Phenolphthalein, up around pH eight to ten, suits a weak acid with a strong base. And here's the catch students fall for. The equivalence point is only at pH seven for strong with strong. Titrate a weak acid like ethanoic acid with sodium hydroxide and equivalence lands above seven, so phenolphthalein is the right call, not methyl orange."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Curve",
+        "props": {
+          "title": "Which indicator changes inside the jump?",
+          "xLabel": "volume of NaOH added →",
+          "yLabel": "pH",
+          "xMin": 0,
+          "xMax": 50,
+          "yMin": 0,
+          "yMax": 14,
+          "yTicks": [
+            {"value": 0, "label": "0"},
+            {"value": 2, "label": "2"},
+            {"value": 4, "label": "4"},
+            {"value": 6, "label": "6"},
+            {"value": 8, "label": "8"},
+            {"value": 10, "label": "10"},
+            {"value": 12, "label": "12"},
+            {"value": 14, "label": "14"}
+          ],
+          "series": [
+            {
+              "gen": {"type": "titration", "weak": false, "ca": 0.1, "va": 25, "cb": 0.1, "vmax": 50},
+              "color": "mute",
+              "width": 4,
+              "beat": 36,
+              "dur": 250,
+              "label": "strong acid + strong base",
+              "labelAt": [1, 1.9],
+              "labelAnchor": "start"
+            },
+            {
+              "gen": {"type": "titration", "weak": true, "pKa": 4.76, "ca": 0.1, "va": 25, "cb": 0.1, "vmax": 50},
+              "color": "accent",
+              "width": 5,
+              "beat": 857,
+              "dur": 95,
+              "label": "ethanoic acid + NaOH",
+              "labelAt": [3, 6.1],
+              "labelAnchor": "start"
+            }
+          ],
+          "penSeries": 1,
+          "refs": [
+            {"axis": "x", "value": 25, "label": "equivalence", "beat": 299, "labelPos": 13.3},
+            {"axis": "y", "value": 7, "label": "pH 7", "beat": 793, "labelPos": 0.8}
+          ],
+          "bands": [
+            {
+              "axis": "y",
+              "from": 3.1,
+              "to": 4.4,
+              "colors": ["#d9412b", "#f2c230"],
+              "label": "methyl orange",
+              "sub": "3.1–4.4",
+              "beat": 386,
+              "mark": "cross",
+              "markBeat": 1000
+            },
+            {
+              "axis": "y",
+              "from": 6,
+              "to": 7.6,
+              "colors": ["#f0d43a", "#2f6fd0"],
+              "label": "bromothymol blue",
+              "sub": "6.0–7.6",
+              "beat": 506
+            },
+            {
+              "axis": "y",
+              "from": 8.2,
+              "to": 10,
+              "colors": ["#ffffff", "#e0479e"],
+              "label": "phenolphthalein",
+              "sub": "8.2–10.0",
+              "beat": 586,
+              "highlightBeat": 984,
+              "mark": "tick",
+              "markBeat": 984
+            }
+          ],
+          "points": [{"x": 25, "y": 7, "beat": 793}, {"x": 25, "y": 8.73, "beat": 952}],
+          "notes": [
+            {
+              "x": 24,
+              "y": 7.55,
+              "text": "strong + strong: pH 7",
+              "anchor": "end",
+              "beat": 800,
+              "size": 16,
+              "color": "ink"
+            },
+            {
+              "x": 24,
+              "y": 10.6,
+              "text": "weak acid: above 7",
+              "anchor": "end",
+              "beat": 955,
+              "size": 17,
+              "color": "amber"
+            }
+          ],
+          "flask": {
+            "x": 190,
+            "y": 150,
+            "stages": [{"beat": 36, "series": 0, "band": 1}, {"beat": 857, "series": 1, "band": 2}]
+          }
+        }
       }
     },
     {

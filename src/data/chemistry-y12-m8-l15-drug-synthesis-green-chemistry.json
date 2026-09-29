@@ -61,6 +61,11 @@
       "caption": "Aspirin: salicylic acid plus acetic anhydride, acid-catalysed esterification.",
       "voiceover": {
         "text": "Let's start with the reaction you need to know, the synthesis of aspirin. Aspirin is acetylsalicylic acid, and it's made from salicylic acid and acetic anhydride. The reaction is an esterification-style acetylation, and the products are aspirin plus ethanoic acid. The conditions are an acid catalyst, often phosphoric or sulfuric acid, with gentle heating, and then the product is isolated by crystallisation and filtration. Notice this is exactly the O-H to O-C-O-C-H-three acetylation we met back in Lesson 11, but now we're running it as an actual reaction. And here's an important practical point, the synthesis is more than one equation. Product quality depends on the reaction conditions, the isolation, the crystallisation, and the drying, just as much as on the chemistry on paper."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Skeletal",
+        "props": {"mode": "reaction", "beats": [94, 132, 208, 254, 308, 346, 400, 438]}
       }
     },
     {
@@ -79,6 +84,26 @@
       "caption": "Discovery, preclinical, Phase I to III, then regulatory approval.",
       "voiceover": {
         "text": "Before the green chemistry, a quick reality check, because making a molecule is only the start of the story. A successful drug must pass a long sequence of testing and regulatory stages, in a fixed order. First discovery, identifying a promising candidate. Then preclinical testing, in the lab and in models, to check activity and safety before any human trials. Then the clinical trials, Phase one tests initial human safety, Phase two tests early efficacy in target patients, and Phase three confirms it works safely at larger scale. And finally regulatory approval, which is what actually allows the drug to be supplied. The big-picture point is that a good molecule alone is not enough. Pharmaceutical chemistry connects synthesis with safety, efficacy, and regulation, and all of those stages stand between a successful reaction and a medicine on the shelf."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Steps",
+        "props": {
+          "layout": "row",
+          "stages": [
+            {"label": "Discovery", "sub": "a candidate", "icon": "discovery", "beat": 194},
+            {"label": "Preclinical", "sub": "lab, models", "icon": "preclinical", "beat": 235},
+            {"label": "Phase I", "sub": "safety", "icon": "people", "iconCount": 2, "beat": 385},
+            {"label": "Phase II", "sub": "efficacy", "icon": "people", "iconCount": 4, "beat": 426},
+            {"label": "Phase III", "sub": "large scale", "icon": "people", "iconCount": 7, "beat": 488},
+            {"label": "Approval", "sub": "can be supplied", "icon": "approved", "beat": 556}
+          ],
+          "note": {
+            "text": "A good molecule alone is not enough",
+            "sub": "synthesis, then safety, efficacy and regulation",
+            "beat": 652
+          }
+        }
       }
     },
     {
@@ -114,6 +139,11 @@
       "caption": "Atom economy: product over all products; E-factor: waste over product.",
       "voiceover": {
         "text": "Now the two metrics in detail, because green chemistry needs numbers, not just impressions. The first is atom economy. It equals the molar mass of the desired product, divided by the total molar mass of all the products, times one hundred percent. A higher atom economy means a larger fraction of the atoms end up in the product you actually want, rather than in by-products. The second is E-factor, which equals the mass of waste divided by the mass of product. A lower E-factor means less waste is generated per unit of product. Now here's why you need both. They're related, but they are not identical. Atom economy is theoretical, it's about how the reaction's atoms are distributed among the products. E-factor is practical, it reflects the actual mass of waste generated, including solvents and washings, which atom economy completely ignores."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Green",
+        "props": {"mode": "metrics", "beats": [45, 80, 240, 400, 511, 594, 685, 789, 865]}
       }
     },
     {
@@ -160,14 +190,18 @@
       "heading": "Catalysts compared across routes",
       "body": "A catalyst improves rate and selectivity without being consumed. It doesn't appear in the atom economy formula, yet it transforms the practical waste.",
       "diagram": {
-        "type": "barChart",
-        "bars": [
-          {"label": "Route A", "value": 2.0},
-          {"label": "Route B", "value": 4.0},
-          {"label": "Route C", "value": 1.0}
-        ],
-        "unit": "E-factor",
-        "delay": 18
+        "type": "diorama",
+        "kind": "chem12m8Green",
+        "props": {
+          "mode": "routes",
+          "beats": [228, 305, 431, 480, 507, 540, 612, 829],
+          "routes": [
+            {"label": "Route A", "eFactor": 2, "atomEconomy": 74},
+            {"label": "Route B", "eFactor": 4},
+            {"label": "Route C", "eFactor": 1, "atomEconomy": 74}
+          ],
+          "footer": "Pfizer: catalytic palladium cut metal waste by 85%; catalyst recovered and reused"
+        }
       },
       "bullets": [
         {"text": "Routes A and C share 74% atom economy, but C wastes far less."},

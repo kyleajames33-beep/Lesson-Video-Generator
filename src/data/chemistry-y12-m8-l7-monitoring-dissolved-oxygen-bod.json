@@ -60,6 +60,11 @@
       "caption": "DO is oxygen available to aquatic life; low DO signals stress.",
       "voiceover": {
         "text": "Let's start with dissolved oxygen, DO. It's simply the concentration of oxygen gas dissolved in the water, and it's one of the most urgent parameters, because ecosystems can fail fast when it drops. Fish, many invertebrates, and aerobic microbes all depend on it. DO falls for a few reasons. Higher temperature, which you saw last lesson lowers oxygen solubility. Reduced mixing, so less oxygen gets in from the air. And increased biological consumption, when there's a lot of organic matter to decompose. That's why a low DO reading is such a useful warning, it tells you the system is already under chemical or biological stress."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8WaterBody",
+        "props": {"mode": "oxygen", "beats": [247, 391, 482, 581, 690]}
       }
     },
     {
@@ -68,18 +73,45 @@
       "heading": "The Winkler titration chain",
       "body": "Oxygen isn't titrated directly. It's trapped, turned into iodine, and that iodine is titrated.",
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {"id": "o2", "label": "O₂"},
-          {"id": "mno2", "label": "MnO₂"},
-          {"id": "i2", "label": "I₂"},
-          {"id": "titre", "label": "S₂O₃²⁻ titre"}
-        ],
-        "edges": [
-          {"from": "o2", "to": "mno2"},
-          {"from": "mno2", "to": "i2"},
-          {"from": "i2", "to": "titre"}
-        ]
+        "type": "diorama",
+        "kind": "chem12m8Steps",
+        "props": {
+          "layout": "row",
+          "stages": [
+            {
+              "label": "dissolved oxygen",
+              "tokens": {"text": "O₂", "count": 1, "color": "#e0433a", "pair": true},
+              "beat": 40
+            },
+            {
+              "label": "O₂ trapped",
+              "sub": "Mn²⁺ oxidised",
+              "via": "+ Mn²⁺",
+              "tokens": {"text": "MnO₂", "count": 2, "color": "#7a5436"},
+              "beat": 250
+            },
+            {
+              "label": "iodine released",
+              "sub": "I⁻ oxidised",
+              "via": "+ I⁻",
+              "tokens": {"text": "I₂", "count": 2, "color": "#8a3fa0", "pair": true},
+              "beat": 430
+            },
+            {
+              "label": "thiosulfate titre",
+              "sub": "titrates the I₂",
+              "via": "titrate",
+              "tokens": {"text": "S₂O₃²⁻", "count": 4, "color": "#e0b43a"},
+              "beat": 610
+            }
+          ],
+          "note": {
+            "text": "1 O₂ : 4 S₂O₃²⁻",
+            "sub": "thiosulfate titrates the iodine, never the oxygen",
+            "beat": 755,
+            "amber": true
+          }
+        }
       },
       "bullets": [
         {"text": "Dissolved O₂ oxidises Mn²⁺ to MnO₂, trapping the oxygen."},
@@ -129,7 +161,8 @@
       "caption": "BOD₅ = initial DO − final DO; <2 clean, 2 to 8 moderate, >8 heavy.",
       "voiceover": {
         "text": "Dissolved oxygen is a snapshot, but BOD is a forecast, and the difference matters. Biochemical oxygen demand, usually written BOD-five, is the amount of dissolved oxygen that microbes consume as they decompose organic matter over five days, at twenty degrees, in the dark. You calculate it simply, the initial dissolved oxygen minus the final dissolved oxygen after those five days. The thresholds are worth knowing. Under two milligrams per litre is clean water. Two to eight is moderate pollution. Above eight is heavy pollution and a serious ecological concern. And here's the wording that trips people, BOD measures oxygen consumed, not oxygen present. A high BOD means more pollution pressure, not more oxygen available."
-      }
+      },
+      "diagram": {"type": "diorama", "kind": "chem12m8Bod", "props": {"beats": [72, 258, 364, 409, 480, 524, 595, 648, 799]}}
     },
     {
       "id": "misconception",

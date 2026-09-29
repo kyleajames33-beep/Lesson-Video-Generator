@@ -51,12 +51,9 @@
       "heading": "Addition versus condensation",
       "body": "Not all polymers form the same way. The monomer and the reaction pathway decide the structure and any by-product.",
       "diagram": {
-        "type": "beforeAfter",
-        "beforeLabel": "Addition",
-        "afterLabel": "Condensation",
-        "beforeContent": "Alkene monomers join across the C=C. No by-product.",
-        "afterContent": "Bifunctional monomers react. A small molecule, water or HCl, is lost.",
-        "delay": 18
+        "type": "diorama",
+        "kind": "chem12m8Polymer",
+        "props": {"mode": "types", "beats": [249, 318, 349, 388, 450, 480, 558, 627, 681]}
       },
       "bullets": [
         {"text": "Addition: alkene monomers join across the double bond, no by-product."},
@@ -104,6 +101,11 @@
       "caption": "Addition: PE, PP, PVC, PS, PTFE. Condensation: nylon-6,6, PET, polycarbonate.",
       "voiceover": {
         "text": "Let's name the polymers you need, because the exam expects specific examples. On the addition side, you have polyethylene with its simple hydrocarbon backbone, polypropylene with a methyl side group, P-V-C which is chloro-substituted, polystyrene with a phenyl side group, and P-T-F-E which is fluorinated. They all form the same broad way, joining alkene monomers, but their side groups change how the chains pack and the intermolecular forces between them, which is why P-V-C is rigid and chemically resistant while P-T-F-E is extremely inert. On the condensation side, the named examples are nylon-six-six, a polyamide with amide links, P-E-T, a polyester with ester links, and polycarbonate. Notice the condensation polymers have polar functional groups built right into the backbone, the same amide and ester linkages we met back in functional groups, and that gives them stronger intermolecular forces than a simple hydrocarbon chain."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Polymer",
+        "props": {"mode": "named", "beats": [71, 112, 154, 181, 229, 332, 524, 578, 620, 661, 674]}
       }
     },
     {
@@ -122,6 +124,11 @@
       "caption": "Chain length, branching, cross-linking, and IMFs set polymer properties.",
       "voiceover": {
         "text": "Now the heart of the lesson, how structure controls properties, because this answers our Kevlar puzzle. Polymer properties are not random, the flexibility, tensile strength, melting point, and chemical resistance all depend on the structure of the chains and how strongly those chains interact. There are four dials. Longer chain length generally gives higher strength and a higher melting range, because there's more interaction between chains overall. Branching reduces how closely chains can pack together, so a branched polymer tends to be softer and more flexible. Cross-linking links chains into a rigid network, which gives thermosetting behaviour, the kind that can't be remelted. And stronger intermolecular forces, like the dense hydrogen bonding between the amide groups in nylon, and especially in Kevlar, give much higher tensile strength and thermal resistance. That hydrogen-bonding network is exactly why Kevlar is so strong, and why a non-polar polyethylene chain of the same length is so much weaker."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Polymer",
+        "props": {"mode": "dials", "beats": [245, 272, 400, 529, 644, 752]}
       }
     },
     {

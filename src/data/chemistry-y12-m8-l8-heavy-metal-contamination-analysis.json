@@ -60,6 +60,55 @@
       "caption": "Pb, Hg, Cd, As, Cr: toxic at low levels and environmentally persistent.",
       "voiceover": {
         "text": "Let's name the offenders. The heavy metals that matter most in our water are lead, mercury, cadmium, arsenic, and chromium. What unites them is a nasty combination, they're toxic even at low concentration, and they persist, they don't break down in the environment. Each has its signature harm. Lead causes neurological damage, especially in children. Mercury caused Minamata disease. Cadmium damages the kidneys. Arsenic brings chronic toxicity and long-term health risk. And chromium's toxicity depends on its chemical form. One myth to kill straight away. This isn't just an industrial problem. Lead leaches from old plumbing, and arsenic can come from natural geological groundwater. Natural does not mean safe."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Cards",
+        "props": {
+          "header": "Toxic at low concentration, and persistent",
+          "headerAt": 191,
+          "cards": [
+            {
+              "icons": [{"name": "elementTile", "label": "Pb"}],
+              "title": "Lead",
+              "lines": ["neurological", "damage", "(esp. children)"],
+              "linesAt": 380
+            },
+            {
+              "icons": [{"name": "elementTile", "label": "Hg"}],
+              "title": "Mercury",
+              "lines": ["Minamata", "disease"],
+              "linesAt": 442
+            },
+            {
+              "icons": [{"name": "elementTile", "label": "Cd"}],
+              "title": "Cadmium",
+              "lines": ["kidney", "damage"],
+              "linesAt": 478
+            },
+            {
+              "icons": [{"name": "elementTile", "label": "As"}],
+              "title": "Arsenic",
+              "lines": ["chronic", "toxicity"],
+              "linesAt": 514
+            },
+            {
+              "icons": [{"name": "elementTile", "label": "Cr"}],
+              "title": "Chromium",
+              "lines": ["toxicity depends", "on its form"],
+              "linesAt": 586
+            }
+          ],
+          "footer": {
+            "text": "Natural doesn't mean safe",
+            "amber": true,
+            "items": [
+              {"icon": {"name": "leadPipe"}, "label": "old plumbing: Pb"},
+              {"icon": {"name": "groundwater"}, "label": "groundwater: As"}
+            ]
+          },
+          "beats": [74, 83, 92, 101, 119, 740, 775, 805]
+        }
       }
     },
     {
@@ -78,6 +127,86 @@
       "caption": "AAS: standards, calibration curve, atomise unknown, read concentration.",
       "voiceover": {
         "text": "So how do we find a poison too dilute to see? This is where atomic absorption spectroscopy earns its place. You met how AAS works back in Lesson 4, so just the workflow here. You prepare standards of known metal concentration and build a calibration curve. You atomise the unknown water sample, and measure its absorbance at the characteristic wavelength for your target metal. Then you read its concentration off the calibration curve. AAS is the right tool for heavy metals for two reasons. It's sensitive, detecting down to the parts-per-billion range. And it's element-specific, targeting one metal at a time, and remember, it measures ground-state atoms after atomisation, not the hydrated ions in the water."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Curve",
+        "props": {
+          "xLabel": "metal concentration →",
+          "yLabel": "absorbance",
+          "xMin": 0,
+          "xMax": 5,
+          "yMin": 0,
+          "yMax": 1,
+          "cuvettes": {
+            "color": "#8a93a3",
+            "title": "metal standards of known concentration",
+            "items": [
+              {"label": "std 1", "strength": 0.08, "beat": 253},
+              {"label": "std 2", "strength": 0.08, "beat": 265},
+              {"label": "std 3", "strength": 0.08, "beat": 277},
+              {"label": "std 4", "strength": 0.08, "beat": 289},
+              {"label": "water", "strength": 0.08, "beat": 357, "unknown": true}
+            ]
+          },
+          "points": [
+            {"x": 1, "y": 0.2, "beat": 300},
+            {"x": 2, "y": 0.4, "beat": 312},
+            {"x": 3, "y": 0.6, "beat": 324},
+            {"x": 4, "y": 0.8, "beat": 336}
+          ],
+          "series": [
+            {
+              "gen": {"type": "line", "slope": 0.2, "from": 0, "to": 4},
+              "color": "accent",
+              "beat": 345,
+              "dur": 50,
+              "label": "calibration curve",
+              "labelAt": [4.1, 0.78]
+            }
+          ],
+          "readoffs": [
+            {
+              "x": 2.3,
+              "y": 0.46,
+              "beat": 409,
+              "yLabel": "sample's absorbance",
+              "xLabel": "its concentration",
+              "color": "amber"
+            }
+          ],
+          "notes": [
+            {
+              "x": 0.45,
+              "y": 0.96,
+              "text": "sensitive: ppb range",
+              "anchor": "start",
+              "beat": 732,
+              "size": 17,
+              "color": "ink",
+              "mark": "tick"
+            },
+            {
+              "x": 0.45,
+              "y": 0.84,
+              "text": "element-specific",
+              "anchor": "start",
+              "beat": 766,
+              "size": 17,
+              "color": "ink",
+              "mark": "tick"
+            },
+            {
+              "x": 0.45,
+              "y": 0.71,
+              "text": "atoms, not ions",
+              "anchor": "start",
+              "beat": 862,
+              "size": 18,
+              "color": "amber"
+            }
+          ]
+        }
       }
     },
     {
@@ -85,20 +214,7 @@
       "type": "concept",
       "heading": "Bioaccumulation and biomagnification",
       "body": "A low water concentration can still be deadly, because contaminants build up in bodies and up food chains.",
-      "diagram": {
-        "type": "flow",
-        "nodes": [
-          {"id": "water", "label": "Water (low)"},
-          {"id": "plankton", "label": "Plankton"},
-          {"id": "fish", "label": "Small fish"},
-          {"id": "predator", "label": "Predator (high)"}
-        ],
-        "edges": [
-          {"from": "water", "to": "plankton"},
-          {"from": "plankton", "to": "fish"},
-          {"from": "fish", "to": "predator"}
-        ]
-      },
+      "diagram": {"type": "diorama", "kind": "chem12m8FoodChain", "props": {"beats": [117, 285, 411, 512, 546, 605, 757, 807]}},
       "bullets": [
         {"text": "Bioaccumulation: build-up within one organism over its lifetime."},
         {"text": "Biomagnification: rising concentration at each higher trophic level."},
@@ -128,6 +244,40 @@
       "caption": "Precipitation, ion exchange, reverse osmosis, phytoremediation, by context.",
       "voiceover": {
         "text": "Once monitoring confirms a problem, the question becomes what do we actually do. There are four strategies, and the skill is matching them to the situation. Chemical precipitation converts dissolved metals into insoluble solids you can filter out, which uses the solubility chemistry from gravimetric analysis, and suits industrial wastewater. Ion exchange swaps contaminant ions for harmless ones on a resin, good for dissolved ions at low concentration. Reverse osmosis forces water through a selective membrane, very effective but energy-hungry, often used for drinking water. And phytoremediation uses plants to take up or stabilise contaminants, suited to long-term site management. No single method wins everywhere, it depends on concentration, water volume, infrastructure, and whether the source is ongoing."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Cards",
+        "props": {
+          "cards": [
+            {
+              "icons": [{"name": "precipTank"}],
+              "title": "Precipitation",
+              "lines": ["dissolved metal →", "solid, filtered out"],
+              "tag": "wastewater"
+            },
+            {
+              "icons": [{"name": "resinBeads"}],
+              "title": "Ion exchange",
+              "lines": ["swaps ions", "on a resin"],
+              "tag": "low-conc. ions"
+            },
+            {
+              "icons": [{"name": "roMembrane"}],
+              "title": "Reverse osmosis",
+              "lines": ["selective membrane", "energy-hungry"],
+              "tag": "drinking water"
+            },
+            {
+              "icons": [{"name": "plants"}],
+              "title": "Phytoremediation",
+              "lines": ["plants take up", "or stabilise"],
+              "tag": "long-term sites"
+            }
+          ],
+          "footer": {"text": "Match the method to concentration, volume and source.", "amber": true},
+          "beats": [177, 389, 547, 697, 829]
+        }
       }
     },
     {
