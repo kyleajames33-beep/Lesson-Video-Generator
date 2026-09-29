@@ -1,0 +1,344 @@
+{
+  "title": "Optimal Range & Tolerance Limits",
+  "subtitle": "Fine, stressed, or in danger",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 25",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Using a physiological condition discuss the optimal range for functioning and critical tolerance limit"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-02"
+  ],
+  "lessonIntent": "Students can use body temperature to discuss the optimal range, the tolerance range and the critical tolerance limits, and explain why enzymes set those limits.",
+  "examSkill": "Define the three zones with values (36.5–37.5 °C, a survivable fever near 40 °C, critical limits near 42 °C and 28 °C), explain them with enzymes and denaturation, and name a feedback response.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, optimal range and tolerance limits. Let's get into it."
+  },
+  "scenes": [
+    {
+      "durationInFrames": 105,
+      "id": "title",
+      "type": "title",
+      "caption": "Optimal Range & Tolerance Limits"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Three degrees from danger",
+      "body": "A fever of 39 °C makes you feel terrible, but you recover. A body temperature of 42 °C can be fatal.",
+      "callout": "Why is there a hard limit the body simply can't come back from?",
+      "image": "bioM8L2HeatwaveTwoAnimals",
+      "caption": "Homeostasis keeps a variable inside a safe band with a hard edge.",
+      "voiceover": {
+        "text": "A fever of thirty nine degrees makes you feel terrible, but you recover. A body temperature of forty two degrees can be fatal. Just three degrees separate unwell from life-threatening. So homeostasis isn't about holding a variable at one exact number. It's about keeping it inside a safe band. Inside a narrow range, your body works best. A little outside, it still copes. But past a critical limit, systems fail. Why is there a hard edge the body can't come back from?"
+      },
+      "durationInFrames": 1074
+    },
+    {
+      "id": "concept-zones",
+      "type": "concept",
+      "heading": "Best, coping, failing",
+      "body": "A physiological variable has a narrow optimal range, a wider tolerance range, and critical limits beyond which it fails.",
+      "bullets": [
+        {
+          "text": "Optimal: about 36.5 to 37.5 °C.",
+          "at": 3.2
+        },
+        {
+          "text": "Tolerance: copes, e.g. a 40 °C fever.",
+          "at": 17.9
+        },
+        {
+          "text": "Critical limits: about 42 °C and 28 °C.",
+          "at": 26.8
+        }
+      ],
+      "callout": "Optimal is where it works best. Tolerance is where it copes.",
+      "caption": "Body temperature: optimal range, tolerance range and critical limits.",
+      "voiceover": {
+        "text": "Let's put numbers on it, using body temperature. The optimal range is the narrow band where the body functions best, about thirty six and a half to thirty seven and a half degrees. Around that is the tolerance range, where the body still copes, but not at its best. A fever of around forty degrees sits here. You feel awful and function poorly, but you're in no immediate danger. Beyond that is the critical tolerance limit. Above about forty two degrees, or below about twenty eight degrees, which is severe hypothermia, functioning fails and survival is threatened. Past those limits, the negative feedback mechanisms can no longer bring the variable back."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Zones",
+        "props": {
+          "scale": {
+            "min": 24,
+            "max": 46,
+            "step": 2,
+            "unit": "°C",
+            "label": "body temperature"
+          },
+          "optimal": {
+            "from": 36.5,
+            "to": 37.5,
+            "label": "optimal",
+            "at": 34
+          },
+          "tolerance": {
+            "from": 28,
+            "to": 42,
+            "label": "copes",
+            "at": 302
+          },
+          "critical": {
+            "label": "critical tolerance limits: about 28 °C and 42 °C",
+            "failLabel": "fails",
+            "at": 699
+          },
+          "markers": [
+            {
+              "value": 37,
+              "label": "37 °C",
+              "at": 163
+            },
+            {
+              "value": 40,
+              "label": "fever 40 °C",
+              "at": 474
+            },
+            {
+              "value": 42,
+              "label": "42 °C",
+              "at": 774,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1422
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Optimal range: the narrow range of a physiological variable in which the body, and its enzymes, function best."
+        },
+        {
+          "text": "Tolerance range: the wider band a variable can move through while the body still copes, though not at its best."
+        },
+        {
+          "text": "Critical tolerance limit: the point beyond which a variable causes system failure and survival is threatened; feedback can no longer cope."
+        },
+        {
+          "text": "Physiological condition: an internal variable the body regulates, such as body temperature, blood glucose or blood pH."
+        },
+        {
+          "text": "Denaturation: the permanent loss of an enzyme's shape, and so its function, when conditions move too far from optimal."
+        }
+      ],
+      "callout": "Optimal, tolerance, critical limit: three different ideas.",
+      "caption": "Optimal range, tolerance range, critical tolerance limit, physiological condition, denaturation.",
+      "voiceover": {
+        "text": "Five terms. The optimal range is the narrow range of a variable in which the body, and its enzymes, function best. The tolerance range is the wider band a variable can move through while the body still copes, though not at its best. The critical tolerance limit is the point beyond which the variable causes system failure and survival is threatened, because feedback can no longer cope. A physiological condition is an internal variable the body regulates, like body temperature, blood glucose or blood p H. And denaturation is the permanent loss of an enzyme's shape, and so its function, when conditions move too far from optimal."
+      },
+      "durationInFrames": 1374
+    },
+    {
+      "id": "concept-enzymes",
+      "type": "concept",
+      "heading": "Enzymes set the limits",
+      "body": "Every cell process is catalysed by enzymes, and enzymes only work within a narrow set of conditions.",
+      "bullets": [
+        {
+          "text": "Near 37 °C: enzymes work at their best.",
+          "at": 10.7
+        },
+        {
+          "text": "In the tolerance range: slower, but recoverable.",
+          "at": 19.3
+        },
+        {
+          "text": "Past the limit: denatured, permanently.",
+          "at": 28.2
+        }
+      ],
+      "callout": "A slowed enzyme recovers. A denatured enzyme doesn't.",
+      "caption": "Enzyme activity peaks near the optimum and fails past the critical limit.",
+      "voiceover": {
+        "text": "So why do the limits exist? The reason is chemical. Every process in a cell is catalysed by enzymes, and enzymes only work well within a narrow range of conditions. Around thirty seven degrees, your enzymes work at peak efficiency, so every reaction runs at its normal rate. Move into the tolerance range and reactions slow down, which is why you function poorly with a fever. But that change can be reversed. Push past about forty two degrees, and enzymes denature. The bonds holding their shape break, the active site loses its shape, and the substrate can't bind. That damage is permanent. Cooling down doesn't rebuild them. So cell processes stop, and cells die."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Zones",
+        "props": {
+          "scale": {
+            "min": 24,
+            "max": 46,
+            "step": 2,
+            "unit": "°C",
+            "label": "body temperature"
+          },
+          "optimal": {
+            "from": 36.5,
+            "to": 37.5,
+            "label": "optimal",
+            "at": 0
+          },
+          "tolerance": {
+            "from": 28,
+            "to": 42,
+            "label": "copes",
+            "at": 0
+          },
+          "critical": {
+            "label": "past the limits: denaturation, cells die",
+            "failLabel": "fails",
+            "at": 784
+          },
+          "enzyme": {
+            "at": 152,
+            "label": "enzyme activity",
+            "note": "shape only, not measured data",
+            "optimum": 37,
+            "zeroAt": 43,
+            "denature": {
+              "label": "denatured: permanent",
+              "at": 784,
+              "value": 42
+            }
+          }
+        }
+      },
+      "durationInFrames": 1458
+    },
+    {
+      "id": "concept-other",
+      "type": "concept",
+      "heading": "Every variable has its own band",
+      "body": "The same three zones apply to other physiological conditions, because enzymes set every band.",
+      "bullets": [
+        {
+          "text": "Blood pH optimal: about 7.35 to 7.45.",
+          "at": 2.9
+        },
+        {
+          "text": "Critical limits near 6.8 and 7.8.",
+          "at": 10.7
+        },
+        {
+          "text": "For the exam, know one condition well.",
+          "at": 20.4
+        }
+      ],
+      "callout": "Transport, hormones and feedback all exist to keep variables in their bands.",
+      "caption": "Blood pH: the same optimal range and critical limits pattern.",
+      "voiceover": {
+        "text": "The same pattern shows up for other conditions. Blood p H has an optimal range of about seven point three five to seven point four five, a narrow band, and critical limits near six point eight and seven point eight. Beyond those, enzymes stop working and survival is threatened. Blood glucose has its own safe band too. For the exam, the syllabus asks you to discuss one condition, so know body temperature really well. But notice the big idea. Everything in this focus area, transport, hormones and feedback, exists to keep variables inside these narrow, enzyme-friendly bands."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Zones",
+        "props": {
+          "scale": {
+            "min": 6.6,
+            "max": 8,
+            "step": 0.2,
+            "unit": "pH",
+            "label": "blood pH"
+          },
+          "optimal": {
+            "from": 7.35,
+            "to": 7.45,
+            "label": "optimal",
+            "at": 67
+          },
+          "tolerance": {
+            "from": 6.8,
+            "to": 7.8,
+            "label": "copes",
+            "at": 217
+          },
+          "critical": {
+            "label": "critical limits: about 6.8 and 7.8",
+            "failLabel": "fails",
+            "at": 259
+          }
+        }
+      },
+      "durationInFrames": 1254
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Discuss body temperature",
+      "question": "Using body temperature, discuss the optimal range for functioning and the critical tolerance limit. Explain why the limits exist and name one negative-feedback response that keeps temperature in the safe band.",
+      "coachNote": "Values are marked: give numbers for every zone, then the enzyme reason, then the feedback.",
+      "steps": [
+        "Optimal range: about 36.5–37.5 °C, where enzymes work at peak efficiency.",
+        "Tolerance range: the body copes but works less well; a fever near 40 °C is survivable and reversible.",
+        "Critical limits: about 42 °C and 28 °C. Above 42 °C enzymes denature permanently, so cell processes stop and cells die.",
+        "Feedback: a rise is detected and the hypothalamus triggers sweating and vasodilation, returning temperature toward 37 °C.",
+        "Past the critical limit, feedback is overwhelmed (e.g. sweat can't evaporate in humid heat), so temperature keeps climbing ✓"
+      ],
+      "caption": "Zones with values, enzyme reason, feedback response.",
+      "voiceover": {
+        "text": "Here's a full discussion. Give numbers for every zone. The optimal range is about thirty six and a half to thirty seven and a half degrees, where enzymes work at peak efficiency. In the tolerance range the body copes but works less well. A fever near forty is survivable, and reversible. The critical limits are about forty two and twenty eight degrees. Above forty two, enzymes denature permanently, so cell processes stop and cells die. Then name a feedback response. A rise is detected, and the hypothalamus triggers sweating and vasodilation to bring temperature back. Finish with the link. Past the critical limit, feedback is overwhelmed, for example sweat can't evaporate in humid heat, so temperature keeps climbing."
+      },
+      "durationInFrames": 1506
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "A band, not a point",
+      "body": "Wrong: homeostasis keeps a variable at exactly one fixed value at all times.",
+      "secondary": "Right: homeostasis keeps a variable within a narrow optimal range, fluctuating slightly around a set point. The body tolerates moderate deviations, but only up to a critical tolerance limit, beyond which functioning fails.",
+      "mistakeTag": "Safe band, hard edge",
+      "callout": "Think band with edges, not a single number.",
+      "caption": "Homeostasis holds a variable within a range, up to critical limits.",
+      "voiceover": {
+        "text": "Here's the misconception to avoid. Homeostasis doesn't keep a variable at exactly one fixed value. Your temperature is always drifting slightly around its set point, and being corrected. It stays within a narrow optimal range. The body can even tolerate moderate deviations, like a fever. But only up to the critical tolerance limit, and beyond that, functioning fails. So picture a safe band with a hard edge, not a single number."
+      },
+      "durationInFrames": 942
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A fever of 40 °C and a core temperature of 43 °C are both outside the optimal range. Why is the second so much more dangerous?",
+      "pausePrompt": "Pause: is the difference just \"hotter is worse\", or something else?",
+      "answerSteps": [
+        "At 40 °C enzymes keep their shape; they just work more slowly, and feedback is still in control, so it is reversible.",
+        "Above about 42 °C enzymes denature: their active sites lose shape permanently, so cell processes stop and cells die.",
+        "Feedback is also overwhelmed at that point, so temperature keeps rising: a difference in kind, not just degree ✓"
+      ],
+      "caption": "Fever: slowed, reversible. Past the limit: denatured, permanent.",
+      "voiceover": {
+        "text": "Quick check. A fever of forty degrees and a core temperature of forty three degrees are both outside the optimal range. So why is the second one so much more dangerous? Pause, is it just that hotter is worse, or is it something else? Right. At forty degrees, enzymes keep their shape. They just work more slowly, and the feedback loop is still in control, so it's reversible. Above about forty two degrees, enzymes denature, their active sites lose their shape permanently, and cells die. And the feedback is overwhelmed at the same time. So it's a difference in kind, not just degree."
+      },
+      "durationInFrames": 1326
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Optimal range: the narrow band where the body works best, about 36.5–37.5 °C.",
+        "Tolerance range: the body copes but works less well, e.g. a 40 °C fever.",
+        "Critical tolerance limits: about 42 °C and 28 °C; beyond them, survival is threatened.",
+        "Enzymes set the limits: slowed enzymes recover, denatured enzymes don't.",
+        "Negative feedback keeps the variable in the band until it is overwhelmed."
+      ],
+      "finalPrompt": "Discussing a condition? Three zones, with numbers, then enzymes, then feedback.",
+      "caption": "Optimal range, tolerance range and critical limits for body temperature.",
+      "voiceover": {
+        "text": "Let's lock it in, and wrap up this focus area. The optimal range is the narrow band where the body works best, about thirty six and a half to thirty seven and a half degrees. In the tolerance range the body copes, but works less well, like with a forty degree fever. Beyond the critical limits, about forty two and twenty eight degrees, survival is threatened. Enzymes set those limits. Slowed enzymes recover, but denatured enzymes don't. And negative feedback keeps the variable inside the band, until it's overwhelmed. Three zones, with numbers, then enzymes, then feedback."
+      },
+      "durationInFrames": 1254
+    }
+  ]
+}

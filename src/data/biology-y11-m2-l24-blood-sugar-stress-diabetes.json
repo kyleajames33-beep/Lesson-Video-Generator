@@ -1,0 +1,432 @@
+{
+  "title": "Blood Sugar, Stress & Diabetes",
+  "subtitle": "Insulin, glucagon, adrenaline and cortisol",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 24",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Describe the function of the primary hormones that regulate blood sugar levels and the stress response",
+    "Conduct a secondary-source investigation to analyse the impact of diabetes on the body’s ability to maintain homeostasis",
+    "Analyse data on hormone levels and physiological processes to illustrate the role of an endocrine hormone in regulating a specific function"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-02"
+  ],
+  "lessonIntent": "Students can describe how insulin, glucagon, adrenaline and cortisol act, analyse glucose-tolerance data, and explain how diabetes disrupts glucose homeostasis.",
+  "examSkill": "Give every hormone a source and a direction of effect, quote the data's numbers when analysing, and locate the diabetes failure in the insulin response.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, blood sugar, stress and diabetes. Let's get into it."
+  },
+  "scenes": [
+    {
+      "durationInFrames": 105,
+      "id": "title",
+      "type": "title",
+      "caption": "Blood Sugar, Stress & Diabetes"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Where does the sugar go?",
+      "body": "After a sugary drink, blood glucose can climb sharply within minutes, yet it's back to normal within an hour or two.",
+      "callout": "What clears it so fast, and what goes wrong when it can't?",
+      "image": "bioM8L3RunnerGlucose",
+      "caption": "Hormones hold blood glucose steady.",
+      "voiceover": {
+        "text": "Every meal floods your blood with glucose, yet your blood sugar stays remarkably steady. After a sugary drink it can climb sharply within minutes, and still be back to normal within an hour or two. Two hormones from the pancreas push it up and down like a thermostat, and in an emergency, stress hormones take over. Today we'll describe those hormones, read some real glucose data, and look at what happens to homeostasis when this control fails, in diabetes."
+      },
+      "durationInFrames": 1038
+    },
+    {
+      "id": "concept-insulin-glucagon",
+      "type": "concept",
+      "heading": "Insulin and glucagon: a feedback pair",
+      "body": "Two opposing pancreatic hormones hold blood glucose near its set point.",
+      "bullets": [
+        {
+          "text": "Insulin lowers glucose: uptake and storage.",
+          "at": 7.1
+        },
+        {
+          "text": "Glucagon raises glucose: glycogen broken down.",
+          "at": 17.1
+        },
+        {
+          "text": "Pancreas senses; the liver acts.",
+          "at": 28.9
+        }
+      ],
+      "callout": "Each hormone opposes the change that triggered it.",
+      "caption": "The pancreas senses and signals; the liver stores or releases glucose.",
+      "voiceover": {
+        "text": "Blood glucose is controlled by the pancreas. Special cells in it detect the glucose level and release two opposing hormones. Insulin lowers blood glucose. When glucose is high, say after a meal, insulin makes body cells take up glucose, and makes the liver store the excess as glycogen. Glucagon raises blood glucose. When glucose is low, it makes the liver break glycogen down and release glucose. So the pancreas is the receptor and control centre, it senses and it signals. But the liver is the main effector, because it's what actually changes the glucose level. Each hormone opposes the change that triggered it, so together they're a negative feedback pair."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8PancreasLiver",
+        "props": {
+          "isletAt": 13,
+          "betaAt": 152,
+          "alphaAt": 452,
+          "rolesAt": 645,
+          "notLiverAt": 742,
+          "travelAt": 795,
+          "storeAt": 913,
+          "notes": [
+            {
+              "text": "pancreas senses and signals; the liver does the work",
+              "at": 1106,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1410
+    },
+    {
+      "id": "concept-stress",
+      "type": "concept",
+      "heading": "The stress hormones",
+      "body": "In an emergency, adrenaline and cortisol raise blood glucose to fuel action.",
+      "bullets": [
+        {
+          "text": "Adrenaline: fast, from the adrenal medulla.",
+          "at": 7.9
+        },
+        {
+          "text": "Cortisol: slower, from the adrenal cortex.",
+          "at": 20
+        },
+        {
+          "text": "Both raise heart rate and blood glucose.",
+          "at": 25.7
+        }
+      ],
+      "callout": "Same direction, different timescales.",
+      "caption": "Adrenaline acts fast; cortisol sustains the response.",
+      "voiceover": {
+        "text": "Now the stress response. The two main stress hormones both come from the adrenal glands, which sit on top of the kidneys. Adrenaline is the fast one, released by the adrenal medulla. It drives the immediate fight or flight response, raising heart rate and breathing rate, and raising blood glucose so energy is available right now. Cortisol is slower, released by the adrenal cortex. It keeps blood glucose raised during prolonged stress. Both prepare the body for action, and both raise blood glucose, just on different timescales."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Compare",
+        "props": {
+          "columns": [
+            {
+              "name": "Adrenaline",
+              "sub": "adrenal medulla",
+              "icon": "adrenal",
+              "at": 174,
+              "lines": [
+                {
+                  "text": "fast: fight or flight",
+                  "at": 313
+                },
+                {
+                  "text": "heart and breathing rate up",
+                  "at": 367
+                },
+                {
+                  "text": "blood glucose up now",
+                  "at": 442,
+                  "amber": true
+                }
+              ]
+            },
+            {
+              "name": "Cortisol",
+              "sub": "adrenal cortex",
+              "icon": "adrenal",
+              "at": 538,
+              "lines": [
+                {
+                  "text": "slower",
+                  "at": 538
+                },
+                {
+                  "text": "keeps glucose raised in prolonged stress",
+                  "at": 634,
+                  "amber": true
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "text": "both raise blood glucose, on different timescales",
+              "at": 827
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1134
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Insulin: a pancreatic hormone that lowers blood glucose by promoting uptake by cells and storage as glycogen in the liver."
+        },
+        {
+          "text": "Glucagon: a pancreatic hormone that raises blood glucose by making the liver break down glycogen and release glucose."
+        },
+        {
+          "text": "Adrenaline: a fast-acting stress hormone from the adrenal glands that prepares the body for fight or flight, including raising blood glucose."
+        },
+        {
+          "text": "Cortisol: a slower stress hormone from the adrenal cortex that sustains raised blood glucose during prolonged stress."
+        },
+        {
+          "text": "Diabetes mellitus: blood glucose is not properly controlled, due to a lack of insulin (Type 1) or a reduced response to insulin (Type 2)."
+        }
+      ],
+      "callout": "Insulin lowers. Glucagon, adrenaline and cortisol raise.",
+      "caption": "Insulin, glucagon, adrenaline, cortisol, diabetes mellitus.",
+      "voiceover": {
+        "text": "Five terms. Insulin is a pancreatic hormone that lowers blood glucose, by making cells take it up and the liver store it as glycogen. Glucagon is a pancreatic hormone that raises blood glucose, by making the liver break glycogen down and release glucose. Adrenaline is a fast-acting stress hormone from the adrenal glands, preparing the body for fight or flight, including raising blood glucose. Cortisol is a slower stress hormone from the adrenal cortex that keeps blood glucose raised during prolonged stress. And diabetes mellitus is when blood glucose isn't properly controlled, because of a lack of insulin, type one, or a reduced response to insulin, type two."
+      },
+      "durationInFrames": 1386
+    },
+    {
+      "id": "concept-diabetes",
+      "type": "concept",
+      "heading": "Diabetes: when control fails",
+      "body": "From reliable sources such as Diabetes Australia: in both types, glucose can't be taken up properly, so it builds up in the blood.",
+      "bullets": [
+        {
+          "text": "Type 1: little or no insulin made.",
+          "at": 4.3
+        },
+        {
+          "text": "Type 2: cells respond poorly to insulin.",
+          "at": 12.1
+        },
+        {
+          "text": "Glucose stays high: homeostasis is lost.",
+          "at": 29.6
+        }
+      ],
+      "callout": "Detection still works. The response that lowers glucose fails.",
+      "caption": "Type 1 and Type 2 diabetes both leave blood glucose high.",
+      "voiceover": {
+        "text": "Reliable sources, like Diabetes Australia and health departments, describe two main types. In type one diabetes, the immune system destroys the insulin-producing cells of the pancreas, so little or no insulin is made. In type two, the body still makes insulin, but the cells become resistant and respond poorly to it. Either way, glucose can't be taken up and stored properly, so it builds up in the blood. That's called hyperglycaemia. Because the insulin response can't act, blood glucose isn't returned to the set point after a meal, and homeostasis is lost. Excess glucose spills into the urine, drawing water with it, so people feel thirsty and urinate often. Over years, high glucose damages blood vessels, nerves, kidneys, eyes and the heart. Treatment restores the lost control, with insulin injections in type one, and diet, exercise and medication in type two."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Compare",
+        "props": {
+          "columns": [
+            {
+              "name": "Type 1",
+              "icon": "pancreas",
+              "at": 67,
+              "lines": [
+                {
+                  "text": "immune system destroys insulin-making cells",
+                  "at": 109
+                },
+                {
+                  "text": "little or no insulin",
+                  "ok": false,
+                  "at": 238
+                },
+                {
+                  "text": "treated with insulin injections",
+                  "at": 1363
+                }
+              ]
+            },
+            {
+              "name": "Type 2",
+              "icon": "cell",
+              "at": 302,
+              "lines": [
+                {
+                  "text": "insulin still made",
+                  "ok": true,
+                  "at": 356
+                },
+                {
+                  "text": "cells respond poorly",
+                  "ok": false,
+                  "at": 452
+                },
+                {
+                  "text": "diet, exercise, medication",
+                  "at": 1427
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "text": "both: glucose builds up in the blood (hyperglycaemia)",
+              "at": 688,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1782
+    },
+    {
+      "id": "concept-data",
+      "type": "concept",
+      "heading": "Reading a glucose-tolerance test",
+      "body": "Two people drink the same glucose dose. The data shows whose insulin is working.",
+      "bullets": [
+        {
+          "text": "A: 5 → 8 → back to 5 mmol/L.",
+          "at": 8.9
+        },
+        {
+          "text": "B: starts at 9, peaks at 16, still 14.",
+          "at": 23.6
+        },
+        {
+          "text": "The test measures the return, not the peak.",
+          "at": 42.5
+        }
+      ],
+      "callout": "Same dose, different response: the difference is insulin.",
+      "caption": "Glucose-tolerance test: Person A returns to 5 mmol/L; Person B stays high.",
+      "voiceover": {
+        "text": "Here's some data. In a glucose-tolerance test, two people drink the same glucose dose, and their blood glucose is measured over two hours. Person A starts at five millimoles per litre, rises to eight at thirty minutes, falls to six at sixty, and is back to five at one hundred and twenty minutes. That's insulin at work, returning glucose to the set point. Person B, who has untreated diabetes, starts at nine, already high, rises to fifteen, keeps rising to sixteen at sixty minutes, and is still at fourteen after two hours. The glucose never comes back. Since both got the same dose, the difference is in the response. The test is about whether glucose returns, not how high it goes."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Curves",
+        "props": {
+          "x": {
+            "label": "time after drink (min)",
+            "values": [
+              0,
+              30,
+              60,
+              120
+            ]
+          },
+          "y": {
+            "label": "blood glucose (mmol/L)",
+            "min": 0,
+            "max": 18,
+            "step": 3
+          },
+          "series": [
+            {
+              "label": "Person A",
+              "values": [
+                5,
+                8,
+                6,
+                5
+              ],
+              "at": 206,
+              "color": "accent"
+            },
+            {
+              "label": "Person B",
+              "values": [
+                9,
+                15,
+                16,
+                14
+              ],
+              "at": 645,
+              "color": "red"
+            }
+          ],
+          "footer": [
+            {
+              "text": "same dose: A returns to 5, B is still 14 at two hours",
+              "at": 1009,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1542
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Hormones and homeostasis",
+      "question": "Describe the function of the primary hormones that regulate blood glucose and the stress response, and analyse how diabetes affects the body's ability to maintain homeostasis.",
+      "coachNote": "Every hormone needs a source and a direction. Then locate exactly what diabetes breaks.",
+      "steps": [
+        "Insulin (pancreas) lowers glucose: cells take it up, the liver stores it as glycogen. Glucagon (pancreas) raises it: the liver breaks down glycogen.",
+        "Together they are a negative feedback pair around a set point.",
+        "Adrenaline (adrenal medulla) acts fast in fight or flight; cortisol (adrenal cortex) acts slowly in prolonged stress. Both raise blood glucose.",
+        "Diabetes: Type 1, little or no insulin made; Type 2, cells resistant to insulin. Either way glucose accumulates (hyperglycaemia).",
+        "Detection still works, but the lowering response fails, so glucose is not returned to the set point: homeostasis is lost ✓"
+      ],
+      "caption": "Sources, directions, and where diabetes breaks the loop.",
+      "voiceover": {
+        "text": "Here's a full answer. Give every hormone a source and a direction. Insulin, from the pancreas, lowers blood glucose, and glucagon, also from the pancreas, raises it. Together they're a negative feedback pair. Adrenaline, from the adrenal medulla, acts fast, and cortisol, from the adrenal cortex, acts slowly, and both raise blood glucose. Then the analysis. In type one, little or no insulin is made, and in type two, cells are resistant. The body still detects the rise, but the response that lowers glucose fails, so it isn't returned to the set point, and homeostasis is lost."
+      },
+      "durationInFrames": 1254
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps about diabetes",
+      "body": "Trap 1: diabetes is just from eating too much sugar, and insulin is a sugar. Insulin is a hormone, the signal that lowers glucose. Diabetes is the insulin signalling system failing; diet affects Type 2 risk.",
+      "secondary": "Trap 2: the pancreas is the effector. The pancreas is the receptor and control centre. The liver is the main effector, because it physically stores or releases glucose; muscle cells also take glucose up.",
+      "mistakeTag": "Signal, not sugar",
+      "callout": "Pancreas senses and signals. Liver does the work.",
+      "caption": "Insulin is a hormone; the liver is the main effector.",
+      "voiceover": {
+        "text": "Two traps. First, saying diabetes is just caused by eating too much sugar, or that insulin is a sugar. Insulin is a hormone, the signal that lowers blood glucose. Diabetes is that signalling system failing. In type one, the pancreas makes little or no insulin. In type two, cells respond poorly. Diet and lifestyle affect type two risk, but the disease is about the signal. Second, calling the pancreas the effector because it does something. The pancreas is the receptor and control centre. The liver is the main effector, because it actually stores or releases glucose. Muscle cells are effectors too, when they take glucose up."
+      },
+      "durationInFrames": 1362
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "It's been five hours since you ate, and your blood glucose is starting to fall below its set point. Which hormone is released, from where, and what does it make the liver do?",
+      "pausePrompt": "Pause: glucose is low. Which hormone raises it?",
+      "answerSteps": [
+        "Falling glucose is detected by the pancreas.",
+        "The pancreas releases glucagon.",
+        "Glucagon makes the liver break glycogen down and release glucose, so blood glucose rises back to the set point: negative feedback ✓"
+      ],
+      "caption": "Low glucose: pancreas releases glucagon; liver releases glucose.",
+      "voiceover": {
+        "text": "Quick check. It's been five hours since you last ate, and your blood glucose is starting to fall below its set point. Which hormone is released, from where, and what does it make the liver do? Pause, glucose is low, so which hormone raises it? Right. The pancreas detects the fall and releases glucagon. Glucagon makes the liver break its glycogen down and release glucose into the blood, so blood glucose rises back to the set point. The response opposed the change, so it's negative feedback."
+      },
+      "durationInFrames": 1122
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Insulin (pancreas) lowers blood glucose; glucagon (pancreas) raises it: a negative feedback pair.",
+        "The pancreas senses and signals; the liver is the main effector.",
+        "Adrenaline acts fast, cortisol acts slowly; both raise blood glucose under stress.",
+        "Type 1: little or no insulin. Type 2: cells respond poorly. Both leave glucose high.",
+        "A glucose-tolerance test shows insulin's role by whether glucose returns to the set point."
+      ],
+      "finalPrompt": "For any hormone, state its source and its direction. For any data, quote the numbers.",
+      "caption": "Blood-glucose and stress hormones, and diabetes.",
+      "voiceover": {
+        "text": "Let's lock it in. Insulin, from the pancreas, lowers blood glucose, and glucagon, also from the pancreas, raises it. They're a negative feedback pair. The pancreas senses and signals, and the liver is the main effector. Adrenaline acts fast and cortisol acts slowly, and both raise blood glucose under stress. In type one diabetes there's little or no insulin, and in type two the cells respond poorly, but both leave glucose high. And a glucose-tolerance test shows insulin's role by whether glucose comes back to the set point."
+      },
+      "durationInFrames": 1146
+    }
+  ]
+}

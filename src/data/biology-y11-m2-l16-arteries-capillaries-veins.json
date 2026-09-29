@@ -1,0 +1,388 @@
+{
+  "title": "Arteries, Capillaries & Veins",
+  "subtitle": "Three vessels, each built for its job",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 16",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Use models to demonstrate the relationship between the structure and function of arteries, capillaries and veins"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-02"
+  ],
+  "lessonIntent": "Students can link the structure of arteries, capillaries and veins to their functions, and use a model to demonstrate this while stating its limitations.",
+  "examSkill": "Give each vessel a structure-function link with its reason, use a model to show it, and name one thing the model cannot show.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, arteries, capillaries and veins. Let's get into it."
+  },
+  "scenes": [
+    {
+      "durationInFrames": 105,
+      "id": "title",
+      "type": "title",
+      "caption": "Arteries, Capillaries & Veins"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The most fragile vessel, in the most important place",
+      "body": "A capillary wall is just one cell thick, so thin that red blood cells squeeze through in single file.",
+      "callout": "Why build the weakest vessel exactly where exchange has to happen?",
+      "image": "bioY11M2L5BloodCircuit",
+      "caption": "Blood leaves the heart under high pressure but passes cells slowly.",
+      "voiceover": {
+        "text": "Blood leaves your heart under enough pressure to spurt across a room. Yet by the time it passes a single cell, it's moving slower than a snail. And the vessel it's in there, a capillary, has a wall just one cell thick, so thin that red blood cells squeeze through in single file. So why would your body build its most fragile vessel in exactly the place where exchange with cells has to happen? The answer is structure built for function, three vessel designs, each suited to its job."
+      },
+      "durationInFrames": 1158
+    },
+    {
+      "id": "concept-three-vessels",
+      "type": "concept",
+      "heading": "Three vessels, three jobs",
+      "body": "Each vessel's wall is built for the pressure and the task it handles.",
+      "bullets": [
+        {
+          "text": "Artery: thick, elastic wall for high pressure.",
+          "at": 2.1
+        },
+        {
+          "text": "Capillary: one cell thick for exchange.",
+          "at": 18.9
+        },
+        {
+          "text": "Vein: thin wall, wide lumen, valves.",
+          "at": 30.4
+        }
+      ],
+      "callout": "Delivery, exchange, return: the wall tells you which.",
+      "caption": "Artery, capillary and vein cross-sections.",
+      "voiceover": {
+        "text": "Here are the three, cut across. Arteries carry blood away from the heart at high pressure. They have thick, muscular and elastic walls and a narrow lumen, the space the blood flows through. The wall stretches with each heartbeat and then recoils, which smooths out the surges and keeps blood moving between beats. Capillaries are where exchange happens. The wall is only one cell thick, which gives a very short diffusion distance, and there are so many capillaries that the total surface area is huge. Veins bring blood back to the heart at low pressure. So they have thinner walls, a wide lumen, and valves that stop the blood flowing backwards."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Vessels",
+        "props": {
+          "mode": "sections",
+          "artery": {
+            "name": "Artery",
+            "at": 2,
+            "lines": [
+              {
+                "text": "thick muscular, elastic wall",
+                "at": 109
+              },
+              {
+                "text": "narrow lumen",
+                "at": 184
+              },
+              {
+                "text": "high pressure, away from heart",
+                "at": 292
+              }
+            ]
+          },
+          "capillary": {
+            "name": "Capillary",
+            "scaleNote": "drawn much larger than scale",
+            "at": 506,
+            "lines": [
+              {
+                "text": "wall one cell thick",
+                "at": 559
+              },
+              {
+                "text": "short diffusion distance",
+                "at": 667
+              },
+              {
+                "text": "site of exchange",
+                "at": 784,
+                "amber": true
+              }
+            ]
+          },
+          "vein": {
+            "name": "Vein",
+            "at": 849,
+            "lines": [
+              {
+                "text": "thin wall, wide lumen",
+                "at": 967
+              },
+              {
+                "text": "valves stop backflow",
+                "at": 1042
+              },
+              {
+                "text": "low pressure, back to heart",
+                "at": 1054
+              }
+            ]
+          }
+        }
+      },
+      "durationInFrames": 1422
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Artery: carries blood away from the heart, usually at high pressure; thick, muscular, elastic walls."
+        },
+        {
+          "text": "Capillary: the smallest vessel, one cell thick, where materials are exchanged with the tissues."
+        },
+        {
+          "text": "Vein: returns blood to the heart at low pressure; thinner walls, wide lumen, valves."
+        },
+        {
+          "text": "Lumen: the hollow central space of a vessel, through which blood flows."
+        },
+        {
+          "text": "Valve: a flap that stops blood flowing backwards, keeping it moving one way."
+        }
+      ],
+      "callout": "Arteries: away. Veins: back. Capillaries: exchange.",
+      "caption": "Artery, capillary, vein, lumen, valve.",
+      "voiceover": {
+        "text": "Five terms. An artery carries blood away from the heart, usually at high pressure, and has thick, muscular, elastic walls. A capillary is the smallest vessel, one cell thick, where materials are exchanged with the tissues. A vein returns blood to the heart at low pressure, with thinner walls, a wide lumen and valves. The lumen is the hollow space in the middle of a vessel, where the blood flows. And a valve is a flap that stops blood flowing backwards, so it keeps moving one way."
+      },
+      "durationInFrames": 1134
+    },
+    {
+      "id": "concept-valves",
+      "type": "concept",
+      "heading": "Why veins need valves",
+      "body": "By the time blood reaches the veins its pressure is low, so pressure alone can't stop it falling back.",
+      "bullets": [
+        {
+          "text": "Muscles squeeze veins and push blood on.",
+          "at": 18.2
+        },
+        {
+          "text": "Valves open for flow toward the heart.",
+          "at": 27.1
+        },
+        {
+          "text": "Backflow snaps the valves shut.",
+          "at": 35.7
+        }
+      ],
+      "callout": "Low pressure plus gravity is why veins need valves.",
+      "caption": "Muscle squeezes the vein; valves let blood move only toward the heart.",
+      "voiceover": {
+        "text": "Why do veins need valves, when arteries don't? In an artery, the pressure from the heart keeps blood moving one way. But by the time blood gets to the veins, the pressure is low, and in your legs it's working against gravity too. So here's the trick. When your skeletal muscles contract, they squeeze the veins running between them, pushing the blood along. Blood moving toward the heart pushes on the flaps, so the valves swing open. When the muscles relax, the blood starts to fall back, and that backflow pushes the valve flaps together, so they swing shut. Blood can only go one way, toward the heart. When leg valves weaken, blood pools and stretches the vein. That's a varicose vein."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Vessels",
+        "props": {
+          "mode": "valve",
+          "valve": {
+            "pumpAt": 474,
+            "closeAt": 1009,
+            "toHeart": "to the heart",
+            "labels": [
+              {
+                "text": "low pressure in veins",
+                "at": 270
+              },
+              {
+                "text": "muscles squeeze blood along",
+                "at": 474
+              },
+              {
+                "text": "valves open toward the heart",
+                "at": 752
+              },
+              {
+                "text": "backflow shuts the valves",
+                "at": 1009,
+                "amber": true
+              }
+            ]
+          }
+        }
+      },
+      "durationInFrames": 1554
+    },
+    {
+      "id": "concept-models",
+      "type": "concept",
+      "heading": "Modelling the vessels, and the limits",
+      "body": "A model makes the structure-function link easy to see, but every model simplifies.",
+      "bullets": [
+        {
+          "text": "Stiff rubber tube: an artery resists pressure.",
+          "at": 4.6
+        },
+        {
+          "text": "Paper flap in a soft tube: a vein valve.",
+          "at": 18.6
+        },
+        {
+          "text": "No material is one cell thick.",
+          "at": 27.5
+        }
+      ],
+      "callout": "Say what the model shows, and what it can't.",
+      "caption": "Everyday materials model the vessels, with clear limits.",
+      "voiceover": {
+        "text": "The syllabus asks you to use models, so here's a simple one. A thick, springy rubber tube stands in for an artery. Squeeze it and it resists, then springs back, like an elastic artery wall. A bundle of very fine tubing stands in for a capillary network, narrow and many. And a soft, floppy tube with a paper flap inside stands in for a vein, the flap letting flow one way and blocking it the other. But every model simplifies. No everyday material is one cell thick. Rubber isn't living elastic tissue, a paper flap is much stiffer than a real valve, and the model is static, so it can't show exchange actually happening. A model shows relationships, not the processes themselves."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Compare",
+        "props": {
+          "columns": [
+            {
+              "name": "Artery model",
+              "sub": "thick rubber tube",
+              "icon": "artery",
+              "at": 77,
+              "lines": [
+                {
+                  "text": "resists pressure, springs back",
+                  "ok": true,
+                  "at": 184
+                },
+                {
+                  "text": "not living elastic tissue",
+                  "ok": false,
+                  "at": 881
+                }
+              ]
+            },
+            {
+              "name": "Capillary model",
+              "sub": "fine tubing",
+              "icon": "capillary",
+              "at": 324,
+              "lines": [
+                {
+                  "text": "narrow and many",
+                  "ok": true,
+                  "at": 452
+                },
+                {
+                  "text": "not one cell thick",
+                  "ok": false,
+                  "at": 806,
+                  "amber": true
+                }
+              ]
+            },
+            {
+              "name": "Vein model",
+              "sub": "soft tube + paper flap",
+              "icon": "vein",
+              "at": 495,
+              "lines": [
+                {
+                  "text": "flap lets flow one way",
+                  "ok": true,
+                  "at": 645
+                },
+                {
+                  "text": "flap far stiffer than a valve",
+                  "ok": false,
+                  "at": 945
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "text": "static: it can't show exchange happening",
+              "at": 1052,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1554
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Structure, function, model",
+      "question": "Using a model, explain how the structure of an artery, a capillary and a vein each relates to its function, and state one limitation of the model.",
+      "coachNote": "One structure-function link per vessel, with the reason. Then one honest limitation.",
+      "steps": [
+        "Model: thick rubber tube = artery; fine porous tubing = capillaries; soft tube with a paper flap = vein.",
+        "Artery: thick elastic wall withstands high pressure and recoils between beats, keeping blood moving.",
+        "Capillary: wall one cell thick gives a short diffusion distance; huge numbers give a large surface area for exchange.",
+        "Vein: wide lumen for low-pressure return; valves close if blood falls back, so it only moves toward the heart.",
+        "Limitation: no material is one cell thick, and the static model can't show exchange or recoil happening ✓"
+      ],
+      "caption": "Each vessel's structure linked to its function, plus a model limitation.",
+      "voiceover": {
+        "text": "Here's how a full answer comes together. Start by assigning the model, rubber tube for the artery, fine porous tubing for the capillaries, and a soft tube with a paper flap for the vein. Then one link per vessel, with the reason. The artery's thick elastic wall withstands high pressure and recoils between beats, keeping the blood moving. The capillary's wall is one cell thick, giving a short diffusion distance, and there are so many of them that the surface area for exchange is huge. The vein has a wide lumen for low-pressure return, and valves that close if blood falls back. Then finish with a limitation. No material is one cell thick, and a static model can't show exchange or recoil actually happening."
+      },
+      "durationInFrames": 1578
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Arteries are about direction",
+      "body": "Wrong: arteries always carry oxygenated blood and veins always carry deoxygenated blood.",
+      "secondary": "Right: arteries carry blood away from the heart and veins carry it back. The pulmonary artery carries deoxygenated blood to the lungs, and the pulmonary vein carries oxygenated blood back to the heart.",
+      "mistakeTag": "The pulmonary exception",
+      "callout": "Define vessels by direction, never by oxygen.",
+      "caption": "Arteries: away from the heart. Veins: back to it.",
+      "voiceover": {
+        "text": "Here's the trap examiners love. Students write that arteries carry oxygenated blood and veins carry deoxygenated blood. That's not the definition. An artery carries blood away from the heart, and a vein carries it back to the heart, whatever gas the blood is carrying. The pulmonary artery is the proof. It carries deoxygenated blood from the heart to the lungs. And the pulmonary vein carries oxygenated blood from the lungs back to the heart. Define vessels by direction, never by oxygen."
+      },
+      "durationInFrames": 1062
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Which feature of a capillary most directly makes exchange with tissue cells efficient, and why doesn't a capillary need valves or a thick wall?",
+      "pausePrompt": "Pause: what is a capillary for?",
+      "answerSteps": [
+        "Its wall is one cell thick, giving a very short diffusion distance, so substances cross quickly.",
+        "It doesn't need a thick wall: its job is exchange, not withstanding high pressure like an artery.",
+        "It doesn't need valves: those are for low-pressure return in veins ✓"
+      ],
+      "caption": "One-cell-thick wall: short diffusion distance for exchange.",
+      "voiceover": {
+        "text": "Quick check. Which feature of a capillary most directly makes exchange with tissue cells efficient? And why doesn't a capillary need valves or a thick wall? Pause and think about what a capillary is for. Right. Its wall is one cell thick, which gives a very short diffusion distance, so oxygen, glucose and wastes cross quickly. It doesn't need a thick wall, because its job is exchange, not coping with high pressure like an artery. And it doesn't need valves, because those are for low-pressure return in veins."
+      },
+      "durationInFrames": 1146
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Arteries: thick, muscular, elastic walls and a narrow lumen for high-pressure delivery.",
+        "Capillaries: walls one cell thick for a short diffusion distance; the site of exchange.",
+        "Veins: thin walls, wide lumen and valves for low-pressure return.",
+        "Arteries go away from the heart, veins go back: the pulmonary vessels prove it.",
+        "A model shows structure-function links, but can't show the real thinness or the processes."
+      ],
+      "finalPrompt": "For any vessel feature, ask: what pressure, and what job?",
+      "caption": "Structure matched to function in every vessel.",
+      "voiceover": {
+        "text": "Let's lock it in. Arteries have thick, muscular, elastic walls and a narrow lumen for high-pressure delivery. Capillaries have walls one cell thick, a short diffusion distance, and they're the site of exchange. Veins have thin walls, a wide lumen and valves for low-pressure return. Arteries carry blood away from the heart and veins bring it back, and the pulmonary vessels prove that. And a model shows the structure-function link, but it can't show the real thinness, or the processes themselves. For any feature, ask what pressure, and what job."
+      },
+      "durationInFrames": 1170
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "title": "Feedback Systems",
+  "subtitle": "Stimulus, receptor, control centre, effector, response",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 21",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Describe the key components of a typical feedback system, including stimulus, receptor, control centre, effector and response"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-02"
+  ],
+  "lessonIntent": "Students can describe the five components of a feedback system, in order, and map a named example such as getting cold onto them.",
+  "examSkill": "Define the five components in causal order, then run one named example through all five with real structures, and close the loop.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, feedback systems. Let's get into it."
+  },
+  "scenes": [
+    {
+      "durationInFrames": 105,
+      "id": "title",
+      "type": "title",
+      "caption": "Feedback Systems"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A thermostat inside you",
+      "body": "A house thermostat and your own sweating are built from the same parts: something detects, something decides, something acts.",
+      "callout": "Learn the parts once, and you can read any example of homeostasis.",
+      "image": "bioM8L21IntegratedCare",
+      "caption": "Every living control system shares the same five parts.",
+      "voiceover": {
+        "text": "Your body temperature, your blood sugar and your water levels barely move, even as the day swings from a freezing morning to a sweltering afternoon. That stability comes from feedback systems, chains of detect, decide and respond, running silently inside you every second. And here's the thing. A house thermostat and your own sweating are built from exactly the same parts. Something detects a change, something decides, and something acts. Learn those parts once, and you can decode every example of homeostasis you'll ever meet."
+      },
+      "durationInFrames": 1110
+    },
+    {
+      "id": "concept-five",
+      "type": "concept",
+      "heading": "The five components",
+      "body": "Every feedback system is built from the same five parts, in the same order.",
+      "bullets": [
+        {
+          "text": "Stimulus and receptor: a change, detected.",
+          "at": 2.9
+        },
+        {
+          "text": "Control centre: compares with the set point.",
+          "at": 18.6
+        },
+        {
+          "text": "Effector and response: the correction.",
+          "at": 27.9
+        }
+      ],
+      "callout": "Stimulus, receptor, control centre, effector, response.",
+      "caption": "Getting cold, mapped onto the five components.",
+      "voiceover": {
+        "text": "Let's use getting cold as the example. The stimulus is a change that pushes a variable away from its set point. Here, your body temperature falls below about thirty seven degrees. The receptor detects that change. Temperature sensors in your skin and brain pick it up and send a message on. The control centre receives the message, compares it with the set point, and decides what to do. For temperature, that's the hypothalamus in the brain. The effector is the muscle or gland that carries out the action, here your skeletal muscles and the blood vessels in your skin. And the response is the action itself, shivering to make heat. The response reduces the original stimulus, which closes the loop. That's why it's called a feedback system."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Loop",
+        "props": {
+          "variable": {
+            "label": "body temperature",
+            "setLabel": "about 37 °C",
+            "direction": "fall",
+            "outLabel": "too cold"
+          },
+          "stations": [
+            {
+              "role": "Stimulus",
+              "label": "temperature falls",
+              "icon": "thermometer",
+              "at": 24
+            },
+            {
+              "role": "Receptor",
+              "label": "temperature sensors",
+              "icon": "skin",
+              "at": 281
+            },
+            {
+              "role": "Control centre",
+              "label": "hypothalamus",
+              "icon": "brain",
+              "hot": true,
+              "at": 495
+            },
+            {
+              "role": "Effector",
+              "label": "skeletal muscles, skin vessels",
+              "icon": "muscle",
+              "at": 774
+            },
+            {
+              "role": "Response",
+              "label": "shivering makes heat",
+              "icon": "person",
+              "at": 1020
+            }
+          ],
+          "pushAt": 184,
+          "returnAt": 1095,
+          "loop": {
+            "label": "response reduces the stimulus",
+            "at": 1202
+          }
+        }
+      },
+      "durationInFrames": 1614
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Homeostasis: keeping a stable internal environment despite changes outside the body."
+        },
+        {
+          "text": "Stimulus: a change in the internal or external environment that disturbs the set level, such as a drop in temperature."
+        },
+        {
+          "text": "Receptor: a structure that detects the stimulus and sends a message to the control centre."
+        },
+        {
+          "text": "Control centre: often the brain; it receives the message, compares it with the set point and decides the response."
+        },
+        {
+          "text": "Effector: a muscle or gland that carries out the response."
+        }
+      ],
+      "callout": "The response is the action the effector takes, and it reduces the stimulus.",
+      "caption": "Homeostasis, stimulus, receptor, control centre, effector.",
+      "voiceover": {
+        "text": "Let's lock in the terms. Homeostasis is keeping a stable internal environment, despite changes outside the body. A stimulus is a change, inside or outside the body, that disturbs the set level, like a drop in temperature. A receptor detects the stimulus and sends a message to the control centre. The control centre, often the brain, receives that message, compares it with the set point, and decides the response. And an effector is a muscle or gland that carries out the response."
+      },
+      "durationInFrames": 1074
+    },
+    {
+      "id": "concept-same-parts",
+      "type": "concept",
+      "heading": "Same parts, any example",
+      "body": "The five-part framework fits living and mechanical systems alike.",
+      "bullets": [
+        {
+          "text": "Thermostat: thermometer detects, heater acts.",
+          "at": 2.5
+        },
+        {
+          "text": "Blood sugar: the pancreas is the control centre.",
+          "at": 10.7
+        },
+        {
+          "text": "Insulin pump: sensor, computer, pump.",
+          "at": 14.6
+        }
+      ],
+      "callout": "Always five parts, always in the same order.",
+      "caption": "The same five components in a body, a thermostat and an insulin pump.",
+      "voiceover": {
+        "text": "The same parts show up everywhere. In a house thermostat, the thermometer is the receptor, a small computer is the control centre, and the heater is the effector. In your blood sugar control, the pancreas acts as the control centre. And modern insulin pumps for type one diabetes copy the body. A glucose sensor is the receptor, a small computer is the control centre, and the pump is the effector, delivering insulin as the response when blood sugar rises. Different machinery, same five parts, in the same order."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Compare",
+        "props": {
+          "columns": [
+            {
+              "name": "Getting cold",
+              "icon": "person",
+              "at": 0
+            },
+            {
+              "name": "Thermostat",
+              "icon": "thermometer",
+              "at": 13
+            },
+            {
+              "name": "Insulin pump",
+              "icon": "pancreas",
+              "at": 377
+            }
+          ],
+          "rowLabels": [
+            {
+              "text": "receptor",
+              "at": 45
+            },
+            {
+              "text": "control centre",
+              "at": 99
+            },
+            {
+              "text": "effector",
+              "at": 184
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "temperature sensors"
+              },
+              {
+                "text": "thermometer"
+              },
+              {
+                "text": "glucose sensor",
+                "amber": false
+              }
+            ],
+            [
+              {
+                "text": "hypothalamus"
+              },
+              {
+                "text": "computer"
+              },
+              {
+                "text": "computer"
+              }
+            ],
+            [
+              {
+                "text": "muscles, skin vessels"
+              },
+              {
+                "text": "heater"
+              },
+              {
+                "text": "pump (insulin)"
+              }
+            ]
+          ],
+          "footer": [
+            {
+              "text": "different machinery, same five parts",
+              "at": 784,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1146
+    },
+    {
+      "id": "concept-knockout",
+      "type": "concept",
+      "heading": "Why every part must connect",
+      "body": "Each component does a job no other can do, so removing any one breaks the system.",
+      "bullets": [
+        {
+          "text": "Receptors detect; effectors act.",
+          "at": 5.4
+        },
+        {
+          "text": "Only the control centre holds the set point.",
+          "at": 14.3
+        },
+        {
+          "text": "Without it, nothing is corrected.",
+          "at": 28.2
+        }
+      ],
+      "callout": "The control centre links detection to response.",
+      "caption": "Remove the control centre and the loop breaks.",
+      "voiceover": {
+        "text": "Why does a feedback system need all five parts? Imagine removing the control centre. The receptors would still detect the cold, and your muscles could still shiver. But nothing would connect them. The control centre is the only part that holds the set point, so it's the only part that knows what the temperature should be, and whether to warm up or cool down. Without it, the message from the receptors goes nowhere, the effectors sit idle, and nothing gets corrected. The body temperature just keeps falling. A feedback system isn't any single part, it's the connected chain."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Loop",
+        "props": {
+          "variable": {
+            "label": "body temperature",
+            "setLabel": "about 37 °C",
+            "direction": "fall",
+            "outLabel": "too cold"
+          },
+          "stations": [
+            {
+              "role": "Stimulus",
+              "label": "temperature falls",
+              "icon": "thermometer",
+              "at": 0
+            },
+            {
+              "role": "Receptor",
+              "label": "still detects",
+              "icon": "skin",
+              "at": 88
+            },
+            {
+              "role": "Control centre",
+              "label": "removed",
+              "icon": "brain",
+              "at": 4
+            },
+            {
+              "role": "Effector",
+              "label": "could shiver, but idle",
+              "icon": "muscle",
+              "at": 174
+            },
+            {
+              "role": "Response",
+              "label": "no correction",
+              "icon": "person",
+              "at": 784
+            }
+          ],
+          "pushAt": 0,
+          "returnAt": 100000,
+          "knockout": {
+            "index": 2,
+            "at": 34,
+            "text": "no set point, no correction"
+          }
+        }
+      },
+      "durationInFrames": 1266
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Describe a feedback system",
+      "question": "Describe the key components of a typical feedback system, and use a named example to show the role of each.",
+      "coachNote": "Define all five in causal order first, then run one example through all five with real structures.",
+      "steps": [
+        "Order: stimulus → receptor → control centre → effector → response. A change must be detected before it is judged, and judged before it is acted on.",
+        "Stimulus: body temperature falls below the set point of about 37 °C.",
+        "Receptor: temperature sensors in the skin and brain detect the fall. Control centre: the hypothalamus compares it with the set point and decides heat is needed.",
+        "Effectors: skeletal muscles and skin arterioles. Response: shivering generates heat; vasoconstriction reduces heat loss at the skin.",
+        "The response raises temperature back toward the set point, reducing the stimulus: the loop closes ✓"
+      ],
+      "caption": "Five components, one named example, loop closed.",
+      "voiceover": {
+        "text": "Here's a full answer. Start with the five components in order, and say why the order matters. A change has to be detected before it can be judged, and judged before it's acted on. Then the example, getting cold. The stimulus is body temperature falling below the set point of about thirty seven degrees. The receptors are temperature sensors in the skin and brain. The control centre is the hypothalamus, which compares the signal with the set point. The effectors are the skeletal muscles and the skin arterioles, and the response is shivering to make heat, plus vasoconstriction, narrowing skin blood vessels to keep heat in. Finish by closing the loop. The response raises temperature back toward the set point, which reduces the stimulus."
+      },
+      "durationInFrames": 1578
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps about feedback",
+      "body": "Trap 1: homeostasis keeps everything perfectly constant. It keeps each variable within a narrow range around a set point; values fluctuate slightly and are corrected.",
+      "secondary": "Trap 2: the receptor detects the response. The receptor detects the stimulus, the change in the variable. The loop closes because the response changes the variable, which the receptor then senses.",
+      "mistakeTag": "A range, and the right target",
+      "callout": "Dynamic balance, not a frozen value. Receptors detect the change.",
+      "caption": "Homeostasis is a range; receptors detect the stimulus.",
+      "voiceover": {
+        "text": "Two traps. First, thinking homeostasis keeps everything perfectly constant. It doesn't. It keeps each variable within a narrow range around a set point. The values are always drifting slightly and being corrected, so it's a dynamic balance, not a frozen value. Second, writing that the receptor detects the response. It doesn't. The receptor detects the stimulus, the change in the variable itself. The loop closes because the response changes the variable, and the receptor then senses that new value. It's not watching the effector."
+      },
+      "durationInFrames": 1098
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "On a hot summer day your body temperature rises above 37 °C. Map the five components of the feedback system that corrects it.",
+      "pausePrompt": "Pause: name all five, in order, with real structures.",
+      "answerSteps": [
+        "Stimulus: body temperature rises above the set point.",
+        "Receptor: temperature sensors in the skin and hypothalamus.",
+        "Control centre: the hypothalamus. Effectors: sweat glands and skin arterioles.",
+        "Response: sweating and vasodilation lose heat, so temperature falls back, reducing the stimulus ✓"
+      ],
+      "caption": "Hot day: sensors, hypothalamus, sweat glands and skin arterioles.",
+      "voiceover": {
+        "text": "Quick check. On a hot summer day, your body temperature rises above thirty seven degrees. Map the five components of the system that corrects it. Pause and name all five, in order, with real structures. Okay. The stimulus is temperature rising above the set point. The receptors are temperature sensors in your skin and hypothalamus. The control centre is the hypothalamus. The effectors are your sweat glands and your skin arterioles. And the response is sweating and vasodilation, which lose heat, so temperature falls back, reducing the stimulus."
+      },
+      "durationInFrames": 1146
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Five components, in order: stimulus, receptor, control centre, effector, response.",
+        "The receptor detects the stimulus; the control centre compares with the set point and decides.",
+        "The effector, a muscle or gland, carries out the response.",
+        "The response reduces the stimulus, which closes the loop.",
+        "Homeostasis holds a variable within a narrow range, not at one fixed value."
+      ],
+      "finalPrompt": "Any example: find the change, who detects it, who decides, who acts, and what they do.",
+      "caption": "Five components, one connected loop.",
+      "voiceover": {
+        "text": "Let's lock it in. A feedback system has five components, in order, stimulus, receptor, control centre, effector, response. The receptor detects the stimulus, and the control centre compares it with the set point and decides. The effector, a muscle or gland, carries out the response. The response reduces the stimulus, which closes the loop. And homeostasis holds each variable within a narrow range, not at one fixed value. Next lesson, we draw these as negative feedback loops."
+      },
+      "durationInFrames": 1014
+    }
+  ]
+}

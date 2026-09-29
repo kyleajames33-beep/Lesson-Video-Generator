@@ -1,0 +1,375 @@
+{
+  "title": "Human Digestion",
+  "subtitle": "Breaking food down so cells can use it",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 14",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Use a variety of sources to describe how the processes of mechanical, physical and chemical digestion, absorption and elimination in the human digestive system enable cellular functions"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-02"
+  ],
+  "lessonIntent": "Students can describe mechanical and chemical digestion, absorption and elimination in order along the tract, and link each to the cellular function it enables.",
+  "examSkill": "Follow one named nutrient through mechanical digestion, chemical digestion, absorption and elimination, and finish at the cell with respiration and ATP.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, human digestion. Let's get into it."
+  },
+  "scenes": [
+    {
+      "durationInFrames": 105,
+      "id": "title",
+      "type": "title",
+      "caption": "Human Digestion"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why destroy a steak to build a muscle?",
+      "body": "The protein in a steak and the protein in your muscles are both made of amino acids, yet you cannot use the steak's protein directly.",
+      "callout": "Food has to be taken apart before any cell can use it.",
+      "image": "bioY11M2L4BeaumontVial",
+      "caption": "Food molecules are too large to cross a cell membrane.",
+      "voiceover": {
+        "text": "Here's a strange thing. The protein in a steak and the protein in your own muscles are both built from amino acids. So why can't your body just use the steak's protein as it is? Because a protein, like a starch or a fat, is far too big to get across a cell membrane. Before any of your cells can use food, your body has to tear it apart, dissolve it and chemically dismantle it into small pieces. That's the job of the digestive system, a tube about five metres long, and every step along it exists to deliver usable raw materials to your cells."
+      },
+      "durationInFrames": 1350
+    },
+    {
+      "id": "concept-breakdown",
+      "type": "concept",
+      "heading": "Two kinds of breakdown, working together",
+      "body": "Cells run on small, soluble molecules, but food arrives as large, insoluble ones.",
+      "bullets": [
+        {
+          "text": "Mechanical: chewing and churning make smaller pieces.",
+          "at": 9.6
+        },
+        {
+          "text": "Chemical: enzymes split large molecules into small ones.",
+          "at": 23.2
+        },
+        {
+          "text": "More surface means faster enzyme action.",
+          "at": 36.1
+        }
+      ],
+      "callout": "Mechanical digestion makes surface. Chemical digestion makes molecules small enough to absorb.",
+      "caption": "Mechanical digestion increases surface area; chemical digestion uses enzymes.",
+      "voiceover": {
+        "text": "Your cells run on small, soluble molecules, like glucose, amino acids and fatty acids. But food arrives as big, insoluble lumps. So digestion happens in two ways. First, mechanical digestion, sometimes called physical digestion. Your teeth chew and your stomach churns, breaking food into smaller pieces without changing it chemically. The point is surface area. More pieces means more surface for enzymes to work on. Then chemical digestion. Enzymes break the large molecules into small ones. Amylase splits starch into sugars, and protease splits protein into amino acids. That's what actually makes the molecules small enough to cross a membrane. The two are partners. Mechanical digestion exposes more surface, so the enzymes work far faster than either could alone."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Breakdown",
+        "props": {
+          "food": {
+            "label": "large, insoluble food",
+            "at": 88
+          },
+          "mechanical": {
+            "label": "smaller pieces, more surface",
+            "arrow": "chew and churn",
+            "at": 302
+          },
+          "chemical": {
+            "label": "small, soluble molecules",
+            "arrow": "enzymes",
+            "at": 667
+          },
+          "examples": [
+            {
+              "text": "starch → sugars (amylase)",
+              "at": 752
+            },
+            {
+              "text": "protein → amino acids (protease)",
+              "at": 817
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1518
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Mechanical (physical) digestion: breaking food into smaller pieces by chewing and churning, which increases surface area for enzymes."
+        },
+        {
+          "text": "Chemical digestion: enzymes break large molecules into small, absorbable molecules, for example starch into glucose."
+        },
+        {
+          "text": "Absorption: digested nutrients pass from the small intestine into the blood or lymph."
+        },
+        {
+          "text": "Elimination: undigested material (faeces) is removed through the anus. It is not excretion."
+        },
+        {
+          "text": "Villi: finger-like projections lining the small intestine that hugely increase the surface area for absorption."
+        }
+      ],
+      "callout": "Elimination removes what never entered your cells. Excretion removes wastes your cells made.",
+      "caption": "Mechanical and chemical digestion, absorption, elimination, villi.",
+      "voiceover": {
+        "text": "Five terms. Mechanical, or physical, digestion is breaking food into smaller pieces by chewing and churning, which increases the surface area for enzymes. Chemical digestion is enzymes breaking large molecules into small, absorbable ones, like starch into glucose. Absorption is digested nutrients passing from the small intestine into the blood or lymph. Elimination is removing undigested material, faeces, through the anus. And careful, that's not excretion. Excretion removes wastes your cells made, like urea. And villi are the tiny finger-like projections lining the small intestine, which hugely increase its surface area for absorption."
+      },
+      "durationInFrames": 1206
+    },
+    {
+      "id": "concept-journey",
+      "type": "concept",
+      "heading": "The journey: mouth to anus",
+      "body": "The tract is one long tube. Each region adds its own job, in a fixed order.",
+      "bullets": [
+        {
+          "text": "Mouth and stomach start the breakdown.",
+          "at": 2.1
+        },
+        {
+          "text": "Small intestine: most digestion, nearly all absorption.",
+          "at": 15.4
+        },
+        {
+          "text": "Large intestine reabsorbs water; the anus eliminates.",
+          "at": 26.1
+        }
+      ],
+      "callout": "Most chemical digestion and nearly all absorption happen in the small intestine.",
+      "caption": "Mouth, oesophagus, stomach, small intestine, large intestine, anus.",
+      "voiceover": {
+        "text": "Now let's follow the food. It starts in the mouth, where chewing breaks it up and amylase in saliva begins digesting starch. The oesophagus carries it down to the stomach, which churns it with acid and a protease that starts on protein. In the small intestine, the liver adds bile and the pancreas adds more enzymes, and most chemical digestion is completed here. Nearly all absorption happens here too, across the villi. The large intestine reabsorbs water and salts from what's left. And finally, undigested material is eliminated through the anus. Because no single diagram shows the enzymes, the timing and the absorption all at once, it's worth cross-checking a few sources, a labelled diagram, an enzyme table and transit-time data."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Tract",
+        "props": {
+          "stations": [
+            {
+              "name": "Mouth",
+              "icon": "mouth",
+              "at": 2,
+              "chips": [
+                {
+                  "text": "chewing + amylase",
+                  "at": 120
+                }
+              ]
+            },
+            {
+              "name": "Oesophagus",
+              "icon": "oesophagus",
+              "at": 184,
+              "chips": [
+                {
+                  "text": "carries food down",
+                  "at": 204
+                }
+              ]
+            },
+            {
+              "name": "Stomach",
+              "icon": "stomach",
+              "at": 238,
+              "chips": [
+                {
+                  "text": "churning, acid, protease",
+                  "at": 270
+                }
+              ]
+            },
+            {
+              "name": "Small intestine",
+              "icon": "intestine",
+              "amber": true,
+              "at": 399,
+              "chips": [
+                {
+                  "text": "most digestion",
+                  "at": 559
+                },
+                {
+                  "text": "most absorption",
+                  "at": 624
+                }
+              ]
+            },
+            {
+              "name": "Large intestine",
+              "icon": "largeIntestine",
+              "at": 720,
+              "chips": [
+                {
+                  "text": "water + salts reabsorbed",
+                  "at": 752
+                }
+              ]
+            },
+            {
+              "name": "Anus",
+              "icon": "anus",
+              "at": 892,
+              "chips": [
+                {
+                  "text": "elimination",
+                  "at": 904
+                }
+              ]
+            }
+          ],
+          "accessory": [
+            {
+              "name": "Liver",
+              "icon": "liver",
+              "to": 3,
+              "label": "bile + enzymes",
+              "at": 442
+            },
+            {
+              "name": "Pancreas",
+              "icon": "pancreas",
+              "to": 3,
+              "label": "bile + enzymes",
+              "at": 495
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1542
+    },
+    {
+      "id": "concept-absorption",
+      "type": "concept",
+      "heading": "How digestion serves the cell",
+      "body": "Digestion only matters because of what happens next: absorption and delivery to cells.",
+      "bullets": [
+        {
+          "text": "Villi and microvilli give a huge surface area.",
+          "at": 7.5
+        },
+        {
+          "text": "Glucose and amino acids enter the blood.",
+          "at": 17.5
+        },
+        {
+          "text": "Glucose fuels respiration; amino acids build proteins.",
+          "at": 22.9
+        }
+      ],
+      "callout": "Digestion → absorption → cellular respiration and protein synthesis.",
+      "caption": "Villi absorb nutrients into the blood, which carries them to every cell.",
+      "voiceover": {
+        "text": "So what's the point of all that breaking down? It's absorption. The inner surface of the small intestine is folded into millions of villi, and each villus is covered in even tinier microvilli. That gives an enormous surface area, so the small molecules, glucose and amino acids, pass into the blood quickly and efficiently. The blood then carries them to every cell. At the cell, glucose is the fuel for cellular respiration, releasing A T P, and amino acids are assembled into the proteins the cell needs for its structures and enzymes. That's how digestion enables cellular function."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Villi",
+        "props": {
+          "lumenLabel": "inside the small intestine",
+          "villi": {
+            "label": "villi",
+            "at": 163
+          },
+          "microvilli": {
+            "label": "microvilli",
+            "at": 292
+          },
+          "absorb": {
+            "at": 377,
+            "molecules": [
+              "glucose",
+              "amino"
+            ]
+          },
+          "blood": {
+            "label": "to every cell",
+            "at": 538
+          }
+        }
+      },
+      "durationInFrames": 1266
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Follow the starch in your bread",
+      "question": "Describe how mechanical digestion, chemical digestion, absorption and elimination enable a muscle cell to function, using the starch in a slice of bread as your example.",
+      "coachNote": "Follow one nutrient the whole way, and finish at the cell, not at the gut wall.",
+      "steps": [
+        "Mechanical: teeth and tongue chew the bread and the stomach churns it, increasing the surface area exposed to enzymes.",
+        "Chemical: salivary amylase begins splitting starch into sugars; pancreatic enzymes in the small intestine finish the job, releasing glucose.",
+        "Absorption: glucose crosses the villi of the small intestine into the blood, which carries it to the muscle cell.",
+        "Elimination: undigested fibre passes to the large intestine, where water is reabsorbed, and leaves through the anus.",
+        "At the cell: glucose is the substrate for cellular respiration, releasing the ATP that powers contraction ✓"
+      ],
+      "caption": "Starch → glucose → absorbed → respiration and ATP in a muscle cell.",
+      "voiceover": {
+        "text": "Let's put it together with one nutrient, the starch in a slice of bread. Mechanical digestion first. Your teeth and tongue chew the bread, and your stomach churns it, which increases the surface area for enzymes. Chemical digestion next. Amylase in saliva starts splitting the starch into sugars, and pancreatic enzymes in the small intestine finish the job, releasing glucose. Then absorption. The glucose crosses the villi into the blood, which carries it to a muscle cell. The bread's fibre can't be digested, so it moves to the large intestine, where water is reabsorbed, and it's eliminated. And the finish, the part that earns the marks. In the muscle cell, glucose is used in cellular respiration, releasing the A T P that powers contraction."
+      },
+      "durationInFrames": 1578
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps about the gut",
+      "body": "Trap 1: food in your stomach is already inside your body, feeding your cells. The gut is a tube open at both ends. Nothing feeds a cell until it is digested and absorbed across the gut wall.",
+      "secondary": "Trap 2: stomach acid digests everything. The acid suits the protease pepsin and kills many pathogens, but it does not digest carbohydrate or fat. It even stops salivary amylase.",
+      "mistakeTag": "Digested is not absorbed",
+      "callout": "Only absorbed molecules reach your cells.",
+      "caption": "Food in the gut is still outside the tissues; acid does not digest everything.",
+      "voiceover": {
+        "text": "Two traps. First, thinking that food in your stomach is already inside your body. It isn't. The gut is a tube that's open at both ends, so food in it is technically still outside your tissues. Nothing feeds a cell until it's been digested and absorbed across the gut wall into the blood. Second, thinking stomach acid digests everything. It doesn't. The acid gives the right pH for the protein-digesting enzyme pepsin, and it kills a lot of swallowed microbes. But it doesn't digest carbohydrate or fat. In fact it stops salivary amylase working. Fat digestion doesn't really begin until bile and lipase act in the small intestine."
+      },
+      "durationInFrames": 1386
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "In coeliac disease the villi are flattened. People can eat a full diet, digest it normally, yet still become short of iron, calcium and vitamins. Which process has failed, and why?",
+      "pausePrompt": "Pause: which of the four processes still works, and which does not?",
+      "answerSteps": [
+        "Eating, mechanical digestion and chemical digestion all still work, so the small molecules are made.",
+        "Absorption has failed: flattened villi mean far less surface area for nutrients to cross into the blood.",
+        "Unabsorbed nutrients pass on and are eliminated, so cells miss out even though the food was digested ✓"
+      ],
+      "caption": "Coeliac disease: absorption fails because the villi lose surface area.",
+      "voiceover": {
+        "text": "Quick check. In coeliac disease, the villi get flattened. People can eat plenty, and digest it normally, yet still end up short of iron, calcium and vitamins. Which process has failed, and why? Pause and work out which process is left. Okay. Eating, mechanical digestion and chemical digestion all still work, so the small molecules are being made. What's failed is absorption. Flattened villi mean far less surface area, so far fewer nutrients cross into the blood. The unabsorbed nutrients just pass on and get eliminated. Digestion and absorption are separate jobs, and you need both."
+      },
+      "durationInFrames": 1242
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Food must be broken into small, soluble molecules before cells can use it.",
+        "Mechanical digestion increases surface area; chemical digestion uses enzymes.",
+        "Most digestion and nearly all absorption happen in the small intestine, across the villi.",
+        "The large intestine reabsorbs water; undigested waste is eliminated, not excreted.",
+        "Absorbed glucose fuels respiration (ATP); amino acids build proteins."
+      ],
+      "finalPrompt": "Describing digestion? Follow one nutrient, and finish at the cell.",
+      "caption": "Digestion, absorption and elimination serve the cell.",
+      "voiceover": {
+        "text": "Let's lock it in. Food has to be broken into small, soluble molecules before cells can use it. Mechanical digestion increases surface area, and chemical digestion uses enzymes to make the molecules small. Most digestion and nearly all absorption happen in the small intestine, across the villi. The large intestine reabsorbs water, and undigested waste is eliminated, not excreted. And at the cell, absorbed glucose fuels respiration, and amino acids build proteins. Whenever you describe digestion, follow one nutrient and finish at the cell."
+      },
+      "durationInFrames": 1098
+    }
+  ]
+}
