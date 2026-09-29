@@ -203,20 +203,19 @@
       "id": "worked-example-2",
       "type": "workedExample",
       "heading": "Two changes that fight",
-      "question": "Haber: N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ mol⁻¹. An engineer raises T from 450°C to 550°C and pressure from 200 to 300 atm at once. Predict each effect and whether they reinforce or oppose.",
+      "question": "Haber: N₂(g) + 3H₂(g) ⇌ 2NH₃(g), ΔH = −92 kJ mol⁻¹. Temperature is raised and the mixture is compressed. Predict each separate effect and explain whether Le Chatelier’s principle alone determines the net change in ammonia yield.",
       "coachNote": "Do temperature and pressure separately, then combine.",
       "steps": [
-        "Temperature: forward is exothermic, so raising T shifts left, less NH₃, and Keq decreases.",
-        "Pressure: left has 4 mol gas, right has 2, so raising P shifts right, more NH₃, Keq unchanged.",
-        "The two effects oppose each other on yield.",
-        "Temperature usually dominates yield, so the net effect is a slight left shift, less NH₃.",
-        "Answer: T shifts left, P shifts right; they oppose, net slightly left ✓"
+        "At fixed pressure, heating favours the endothermic reverse reaction: less NH₃; Keq decreases.",
+        "At fixed temperature, compression favours the side with fewer gas moles: more NH₃; Keq is unchanged.",
+        "The temperature and compression effects oppose each other.",
+        "Le Chatelier’s principle alone does not quantify which effect dominates.",
+        "Answer: opposing effects; quantitative equilibrium data are needed to determine the net yield change."
       ],
       "durationInFrames": 1410,
-      "caption": "Heating shifts left (Keq down); compressing shifts right; effects oppose, T usually wins.",
+      "caption": "Heating favours reactants; compression favours products. Qualitative rules alone do not determine the net yield change.",
       "voiceover": {
-        "text": "Now a tougher one, two changes at the same time. The Haber process, exothermic with an enthalpy change of minus ninety-two. An engineer simultaneously raises the temperature from four hundred and fifty to five hundred and fifty degrees, and the pressure from two hundred to three hundred atmospheres. Handle them separately first. Temperature, the forward reaction is exothermic, so raising the temperature shifts the equilibrium left, making less ammonia, and the equilibrium constant decreases. Pressure, the left has four moles of gas and the right has two, so raising the pressure shifts it right, making more ammonia, with the equilibrium constant unchanged. So the two effects oppose each other on yield, one pushing left, one pushing right. Which wins? In the Haber process the temperature effect on yield is usually the stronger one, so the net result is a slight shift left, a little less ammonia overall, even though the reaction is now faster. That tug of war is the heart of the industrial compromise.",
-        "audioFile": "public/audio/Chemistry-Y12-M5-L6/worked-example-2.461d347306de.mp3"
+        "text": "Now consider two changes together, heating the Haber mixture and compressing it. Handle each separately first. The forward reaction is exothermic, so heating favours the reverse reaction and lowers the equilibrium constant. Compression, at a fixed temperature, favours ammonia because the product side has fewer moles of gas. These effects oppose each other. Can we say which wins just by applying Le Chatelier's principle? No. It gives the direction of each separate effect, not their relative sizes. To determine the final ammonia yield we need quantitative equilibrium data for the new conditions. The correct conclusion here is opposing effects, with the net change undetermined by the qualitative rules alone."
       }
     },
     {
