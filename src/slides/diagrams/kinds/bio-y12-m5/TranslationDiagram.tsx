@@ -92,7 +92,7 @@ export const TranslationDiagram = ({mode = 'read', codons = [], mutate, steps = 
 	);
 
 	const ribosome = (pos: number, clamp = 1, o = 0.9) => {
-		const x = lerp(cx(0), cx(n - 1), n > 1 ? pos / (n - 1) : 0) - CW / 2;
+		const x = lerp(cx(0), cx(n - 1), n > 1 ? Math.min(n - 1, pos) / (n - 1) : 0) - CW / 2;
 		return (
 			<g opacity={o}>
 				<ellipse cx={x} cy={MY - 70 - (1 - clamp) * 80} rx={CW * 1.2} ry={86} fill={`url(#${ID}-g-ribo)`} stroke="rgba(0,0,0,0.18)" />
@@ -133,7 +133,7 @@ export const TranslationDiagram = ({mode = 'read', codons = [], mutate, steps = 
 						{frame >= stepAt(0) && (
 							<g>
 								<rect x={cx(reading) - CW / 2 + 2} y={MY - T / 2 - 8} width={CW - 4} height={T + 16} rx={9} fill="none" stroke={TOK.amber} strokeWidth={3 + idlePulse(frame, 30)} />
-								<text x={cx(reading)} y={MY + 60} textAnchor="middle" fill={TOK.amberInk} fontSize={16} fontWeight={800}>codon {reading + 1}</text>
+								<text x={cx(reading)} y={MY + 92} textAnchor="middle" fill={TOK.amberInk} fontSize={16} fontWeight={800}>codon {reading + 1}</text>
 							</g>
 						)}
 						{codons.map((_, i) => (

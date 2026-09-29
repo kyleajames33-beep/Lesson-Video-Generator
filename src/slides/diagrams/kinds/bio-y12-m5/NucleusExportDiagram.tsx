@@ -50,7 +50,7 @@ export const NucleusExportDiagram = ({codons = ['AUG', 'GCU', 'UUC', 'AAA'], at 
 			{/* nucleus */}
 			<g opacity={fadeAt(frame, 0)}>
 				<circle cx={NX} cy={NY} r={NR} fill="#e7eef6" stroke="#9fb2c6" strokeWidth={5} strokeDasharray="60 10" />
-				<text x={NX - 100} y={NY - 132} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800}>nucleus</text>
+				<text x={NX} y={NY - NR - 14} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800}>nucleus</text>
 				{/* the DNA: master copy */}
 				{[0, 1].map((s) => (
 					<path key={s} d={`M ${NX - 110} ${NY - 60 + s * 10} C ${NX - 60} ${NY - 110 + s * 10}, ${NX - 20} ${NY - 10 + s * 10}, ${NX + 40} ${NY - 60 + s * 10} S ${NX + 90} ${NY - 20 + s * 10}, ${NX + 100} ${NY - 60 + s * 10}`} fill="none" stroke={theme.accent} strokeWidth={6} opacity={0.85} />

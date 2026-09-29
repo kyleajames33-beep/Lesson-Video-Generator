@@ -113,7 +113,7 @@ export const CrossDiagram = ({p1, p2, order, pheno, keys, token = 'ball', bySex,
 			)}
 			{intro.map((c, k) => (
 				<g key={k} opacity={popAt(frame, fps, c.at)}>
-					<Pill x={380} y={28 + k * 30} text={c.text} color={theme.accent} fill={theme.soft} size={15} />
+					<Pill x={380} y={22 + k * 29} text={c.text} color={theme.accent} fill={theme.soft} size={15} />
 				</g>
 			))}
 

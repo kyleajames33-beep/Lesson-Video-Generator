@@ -61,8 +61,8 @@ export const CellDnaDiagram = ({mode = 'compare', at = {}, delay = 62}: CellDnaP
 						</g>
 						<ellipse cx={190} cy={234} rx={82} ry={52} fill="none" stroke={TOK.amberInk} strokeWidth={2} strokeDasharray="4 6" opacity={fadeAt(frame, tNuc)} />
 					</DioramaPlinth>
-					<text x={190} y={420} textAnchor="middle" fill={theme.accent} fontSize={16} fontWeight={800} opacity={fadeAt(frame, tCirc)}>one circular DNA molecule</text>
-					<text x={190} y={444} textAnchor="middle" fill={TOK.amberInk} fontSize={15} fontWeight={800} opacity={fadeAt(frame, tNuc)}>in the nucleoid: no membrane</text>
+					<text x={190} y={440} textAnchor="middle" fill={theme.accent} fontSize={16} fontWeight={800} opacity={fadeAt(frame, tCirc)}>one circular DNA molecule</text>
+					<text x={190} y={462} textAnchor="middle" fill={TOK.amberInk} fontSize={15} fontWeight={800} opacity={fadeAt(frame, tNuc)}>in the nucleoid: no membrane</text>
 				</g>
 				{/* eukaryote */}
 				<g opacity={fadeAt(frame, tLin - 30)}>
@@ -74,8 +74,8 @@ export const CellDnaDiagram = ({mode = 'compare', at = {}, delay = 62}: CellDnaP
 							<Chromosome key={k} id={ID} x={570 + (dx as number)} y={232 + (dy as number) + idleBob(frame, k, 1)} len={l as number} w={9} color={c as string} chromatids={1} angle={a as number} opacity={fadeAt(frame, tLin + k * 6)} />
 						))}
 					</DioramaPlinth>
-					<text x={570} y={420} textAnchor="middle" fill={theme.accent} fontSize={16} fontWeight={800} opacity={fadeAt(frame, tLin)}>several linear chromosomes</text>
-					<text x={570} y={444} textAnchor="middle" fill={TOK.amberInk} fontSize={15} fontWeight={800} opacity={fadeAt(frame, tMem)}>in a membrane-bound nucleus</text>
+					<text x={570} y={440} textAnchor="middle" fill={theme.accent} fontSize={16} fontWeight={800} opacity={fadeAt(frame, tLin)}>several linear chromosomes</text>
+					<text x={570} y={462} textAnchor="middle" fill={TOK.amberInk} fontSize={15} fontWeight={800} opacity={fadeAt(frame, tMem)}>in a membrane-bound nucleus</text>
 				</g>
 				<text x={380} y={H - 16} textAnchor="middle" fill={TOK.amberInk} fontSize={18} fontWeight={800} opacity={fadeAt(frame, tRule)}>only the arrangement differs; the molecule is the same</text>
 			</svg>

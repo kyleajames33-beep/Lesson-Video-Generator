@@ -36,7 +36,7 @@ const Person = ({x, y, color, frame, seed, s = 1}: {x: number; y: number; color:
 	</g>
 );
 
-export const RiskArrayDiagram = ({total = 10, affected = 7, group = 'carry a harmful BRCA1 variant', outcome = 'develop breast cancer over a lifetime', source = "this lesson's BRCA1 example: roughly 70%", at = {}, delay = 62}: RiskArrayProps) => {
+export const RiskArrayDiagram = ({total = 10, affected = 7, group = 'carry a harmful BRCA1 variant', outcome = 'develop breast cancer over a lifetime', source = "this lesson's BRCA1 example", at = {}, delay = 62}: RiskArrayProps) => {
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
@@ -67,7 +67,7 @@ export const RiskArrayDiagram = ({total = 10, affected = 7, group = 'carry a har
 				<rect x={380 - 260} y={342} width={520} height={24} rx={12} fill="#eeece7" />
 				<rect x={380 - 260} y={342} width={(520 * affected) / total} height={24} rx={12} fill={`url(#${ID}-r-pa)`} />
 				<text x={380} y={330} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>about {affected} in {total} {outcome}</text>
-				<text x={380} y={394} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={800}>{source} ({pct}%)</text>
+				<text x={380} y={394} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={800}>{source}: roughly {pct}%</text>
 			</g>
 			<g opacity={fadeAt(frame, tOne)}>
 				<text x={380} y={106} textAnchor="middle" fill={TOK.amberInk} fontSize={17} fontWeight={800}>reliable for the group · unknown for any one person</text>

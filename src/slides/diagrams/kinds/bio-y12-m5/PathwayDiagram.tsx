@@ -37,21 +37,15 @@ const PY = 316; // plinth top
 
 const Glyph = ({icon, x, y, frame, accent}: {icon: Icon; x: number; y: number; frame: number; accent: string}) => {
 	if (icon === 'dna') {
+		const rungs = Array.from({length: 7}, (_, k) => ({yy: y - 92 + k * 13, w: 22 * Math.cos(k * 0.8 + frame / 40)}));
 		return (
 			<g>
-				{Array.from({length: 7}, (_, k) => {
-					const yy = y - 66 + k * 20;
-					const gene = k >= 2 && k <= 4;
-					const w = 26 * Math.cos(k * 0.75 + frame / 40);
-					return (
-						<g key={k}>
-							<line x1={x - w} y1={yy} x2={x + w} y2={yy} stroke={gene ? accent : '#b7b1a6'} strokeWidth={5} strokeLinecap="round" />
-							<circle cx={x - w} cy={yy} r={5} fill="#8f8b83" />
-							<circle cx={x + w} cy={yy} r={5} fill="#8f8b83" />
-						</g>
-					);
-				})}
-				<rect x={x - 38} y={y - 32} width={76} height={50} rx={8} fill="none" stroke={accent} strokeWidth={2.5} strokeDasharray="5 4" />
+				<path d={rungs.map((r, k) => `${k ? 'L' : 'M'} ${x - r.w} ${r.yy}`).join(' ')} fill="none" stroke="#8f8b83" strokeWidth={4} strokeLinejoin="round" />
+				<path d={rungs.map((r, k) => `${k ? 'L' : 'M'} ${x + r.w} ${r.yy}`).join(' ')} fill="none" stroke="#8f8b83" strokeWidth={4} strokeLinejoin="round" />
+				{rungs.map((r, k) => (
+					<line key={k} x1={x - r.w} y1={r.yy} x2={x + r.w} y2={r.yy} stroke={k >= 2 && k <= 4 ? accent : '#b7b1a6'} strokeWidth={4} strokeLinecap="round" />
+				))}
+				<rect x={x - 32} y={y - 72} width={64} height={40} rx={8} fill="none" stroke={accent} strokeWidth={2.5} strokeDasharray="5 4" />
 			</g>
 		);
 	}
