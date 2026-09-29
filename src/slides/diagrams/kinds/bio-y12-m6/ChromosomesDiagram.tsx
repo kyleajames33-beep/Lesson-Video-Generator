@@ -390,12 +390,16 @@ export const ChromosomesDiagram = (props: ChromosomesProps) => {
 						<g key={idx} opacity={Math.min(1, p * 1.5)}>
 							<rect x={x + 3} y={y + 3} width={cell - 6} height={cell - 6} rx={12} fill={isPick ? '#fff6e6' : '#ffffff'} stroke={isPick ? AMBER : 'rgba(0,0,0,0.12)'} strokeWidth={isPick ? 2.5 + idlePulse(frame) : 1.5} />
 							<text x={x + cell / 2} y={y + cell / 2 + 6} textAnchor="middle" fontSize={17} fontWeight={800}>
-								{geno(e, s).map(([m, pa], j) => (
-									<tspan key={j}>
-										<tspan fill={BLUE}>{m}</tspan>
-										<tspan fill={ROSE}>{pa}</tspan>
-									</tspan>
-								))}
+								{geno(e, s).map(([m, pa], j) => {
+									// dominant allele written first (the usual notation); colour still shows which parent it came from
+									const pair = [{a: m, c: BLUE}, {a: pa, c: ROSE}].sort((u, v) => (u.a === v.a ? 0 : u.a === u.a.toUpperCase() ? -1 : 1));
+									return (
+										<tspan key={j}>
+											<tspan fill={pair[0].c}>{pair[0].a}</tspan>
+											<tspan fill={pair[1].c}>{pair[1].a}</tspan>
+										</tspan>
+									);
+								})}
 							</text>
 						</g>
 					);

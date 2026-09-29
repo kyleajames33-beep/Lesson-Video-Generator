@@ -93,7 +93,7 @@ export const CloningDiagram = ({mode, steps = [], panels = [], footer, delay = 6
 						</g>
 					</g>
 				)}
-				<line x1={W / 2} y1={70} x2={W / 2} y2={450} stroke={TOK.inkMute} strokeOpacity={0.35} strokeWidth={2} strokeDasharray="4 8" />
+				<line x1={W / 2} y1={70} x2={W / 2} y2={450} stroke={TOK.inkMute} strokeOpacity={0.35} strokeWidth={2} strokeDasharray="4 8" opacity={fadeAt(frame, pL?.at ?? 0)} />
 				{pR && (
 					<g opacity={fadeAt(frame, pR.at)}>
 						<text x={cxs[1]} y={44} textAnchor="middle" fill={theme.accent} fontSize={22} fontWeight={800}>{pR.title}</text>

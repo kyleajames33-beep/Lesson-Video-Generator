@@ -171,7 +171,7 @@ export const RecombinantDiagram = ({steps, actions = ['cut', 'join', 'insert', '
 			</g>
 
 			{/* tools at work */}
-			<Scissors x={G0 - 30} y={DY - 34} open={Math.abs(Math.sin(tCut * Math.PI * 2))} o={fadeAt(frame, at('cut') - 10) * (1 - fadeAt(frame, at('cut') + 40, 14))} />
+			<Scissors x={G0 - 30} y={DY + 2} open={Math.abs(Math.sin(tCut * Math.PI * 2))} o={fadeAt(frame, at('cut') - 10) * (1 - fadeAt(frame, at('cut') + 40, 14))} />
 			<Scissors x={PX - 26} y={PY - PR - 36} open={Math.abs(Math.sin(tCut * Math.PI * 2))} o={fadeAt(frame, at('cut') - 10) * (1 - fadeAt(frame, at('cut') + 40, 14))} />
 			{joined && tIns < 0.2 &&
 				[-106, -74].map((a, i) => {

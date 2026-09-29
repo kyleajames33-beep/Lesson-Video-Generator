@@ -363,7 +363,7 @@ export const GenePoolDiagram = (props: GenePoolProps) => {
 						<g key={i}>
 							<path d={d} fill="none" stroke={c} strokeWidth={i === 0 ? 5 : 4} strokeLinejoin="round" strokeLinecap="round" />
 							<circle cx={gx(tip[0])} cy={gy(tip[1])} r={6} fill={c} />
-							<text x={Math.min(gx(tip[0]) + 10, GX1 - 4)} y={gy(tip[1]) + (i === 0 ? -10 : 22)} fill={c} fontSize={16} fontWeight={800} textAnchor={gx(tip[0]) + 60 > GX1 ? 'end' : 'start'}>
+							<text x={Math.min(gx(tip[0]) + 10, GX1 - 4)} y={gy(tip[1]) + (i === 0 ? -10 : tip[1] < 0.3 ? -12 : 22)} fill={c} fontSize={16} fontWeight={800} textAnchor={gx(tip[0]) + 60 > GX1 ? 'end' : 'start'}>
 								{series === pts ? fav.toFixed(2) : (1 - fav).toFixed(2)}
 							</text>
 						</g>
