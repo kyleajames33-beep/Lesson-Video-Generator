@@ -1,0 +1,344 @@
+{
+  "title": "Prokaryotic Cell Structures",
+  "subtitle": "Capsule to pili, and what each one does",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Describe the structure and function of the capsule, cell wall, cell membrane, cytoplasm, nucleoid, plasmid, ribosomes, flagella and pili in prokaryotic cells"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "lessonIntent": "Students can describe the structure and function of the nine prokaryotic structures named in the syllabus, from the capsule to the pili.",
+  "examSkill": "Describe each named structure in the pattern \"structure X is …, which allows the cell to …\", working from the outside in.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, the structures of a prokaryotic cell, from capsule to pili. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Prokaryotic Cell Structures"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Resistance in hours",
+      "body": "Bacteria can pass antibiotic resistance to one another in hours. The structures that make it possible are on today’s list.",
+      "callout": "Know the structures, and you know how bacteria survive and spread.",
+      "image": "bioY11M3L5AntibioticPlate",
+      "durationInFrames": 1074,
+      "caption": "Plasmids and pili help bacteria share antibiotic resistance.",
+      "voiceover": {
+        "text": "A bacterium has no nucleus and no membrane bound organelles, yet it's one of the most successful life forms on Earth. And when bacteria become resistant to an antibiotic, they can often pass that resistance to each other within hours. The structures that make this possible, plasmids and pili, are on today's list. So knowing what each prokaryotic structure does is really knowing how bacteria survive, spread, and dodge our drugs. Let's work from the outside in."
+      }
+    },
+    {
+      "id": "concept-outer-layers",
+      "type": "concept",
+      "heading": "The outer layers",
+      "body": "A bacterium is protected and bounded by up to three layers, from the outside in.",
+      "bullets": [
+        {
+          "text": "Capsule: slimy outer layer; resists drying out, evades the immune system, sticks to surfaces. Not all bacteria have one."
+        },
+        {
+          "text": "Cell wall: peptidoglycan; gives shape and stops the cell bursting."
+        },
+        {
+          "text": "Cell membrane: partially permeable; controls entry and exit, and hosts respiration enzymes."
+        }
+      ],
+      "callout": "No mitochondria, so respiration enzymes sit on the cell membrane.",
+      "durationInFrames": 1310,
+      "caption": "Capsule, peptidoglycan wall and membrane protect and bound the cell.",
+      "voiceover": {
+        "text": "Start on the outside. Many bacteria have a capsule, a slimy protective layer outside the cell wall. It helps the cell resist drying out, evade the host's immune system, and stick to surfaces. Not every bacterium has one. Next, the cell wall, made of peptidoglycan. It's rigid, so it gives the cell its shape and stops it bursting. Under that is the cell membrane, a partially permeable phospholipid bilayer that controls what enters and leaves. And here's a detail worth marks. Because a bacterium has no mitochondria, its membrane also hosts the enzymes of respiration."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Cell",
+        "props": {
+          "type": "prokaryote",
+          "labels": [
+            {
+              "part": "capsule",
+              "text": "capsule",
+              "note": "protects; sticks to surfaces",
+              "at": 34
+            },
+            {
+              "part": "wall",
+              "text": "cell wall",
+              "note": "peptidoglycan: shape",
+              "at": 418
+            },
+            {
+              "part": "membrane",
+              "text": "cell membrane",
+              "note": "controls entry; respiration enzymes",
+              "at": 682,
+              "amber": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-inside",
+      "type": "concept",
+      "heading": "Inside: DNA, plasmids, ribosomes",
+      "body": "With no nucleus or organelles, a prokaryote runs its genetics and protein synthesis in the cytoplasm.",
+      "bullets": [
+        {
+          "text": "Cytoplasm: jelly-like fluid where reactions occur."
+        },
+        {
+          "text": "Nucleoid: the region holding the single circular chromosome, with no membrane."
+        },
+        {
+          "text": "Plasmid: a small separate ring of extra DNA, often antibiotic-resistance genes."
+        },
+        {
+          "text": "Ribosomes: 70S, smaller than eukaryotic 80S; the site of protein synthesis."
+        }
+      ],
+      "callout": "A plasmid is extra DNA, not a small copy of the chromosome.",
+      "durationInFrames": 1142,
+      "caption": "Cytoplasm, nucleoid, plasmids and 70S ribosomes: everything happens in the cytoplasm.",
+      "voiceover": {
+        "text": "Inside, everything happens in the cytoplasm, the jelly like fluid where reactions occur. The nucleoid is the region holding the single circular chromosome, with the cell's essential genes, and there's no membrane around it. Then there are plasmids, small separate rings of extra DNA. They often carry genes like antibiotic resistance, and they can be copied and passed between cells. And ribosomes are the site of protein synthesis. Prokaryotic ribosomes are seventy S, smaller than the eighty S ribosomes of eukaryotes."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Cell",
+        "props": {
+          "type": "prokaryote",
+          "labels": [
+            {
+              "part": "cytoplasm",
+              "text": "cytoplasm",
+              "note": "reactions happen here",
+              "at": 6
+            },
+            {
+              "part": "nucleoid",
+              "text": "nucleoid",
+              "note": "circular chromosome",
+              "at": 106
+            },
+            {
+              "part": "plasmid",
+              "text": "plasmid",
+              "note": "extra DNA ring",
+              "at": 382,
+              "amber": true
+            },
+            {
+              "part": "ribosome",
+              "text": "ribosomes",
+              "note": "70S: make proteins",
+              "at": 670
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-flagella-pili",
+      "type": "concept",
+      "heading": "Moving and connecting",
+      "body": "Two kinds of projection reach beyond the wall: one for movement, one for attachment and gene transfer.",
+      "bullets": [
+        {
+          "text": "Flagella: long whip-like tails that rotate to propel the cell, e.g. toward nutrients."
+        },
+        {
+          "text": "Pili: short hair-like projections that attach to surfaces and other cells."
+        },
+        {
+          "text": "Pili can transfer DNA, such as plasmids, between bacteria."
+        }
+      ],
+      "callout": "Plasmid + pilus: how resistance spreads fast.",
+      "durationInFrames": 1310,
+      "caption": "Flagella move the cell; pili attach and can pass a plasmid to a neighbour.",
+      "voiceover": {
+        "text": "Finally, the structures that stick out. Flagella are long, whip like tails that rotate to propel the cell, so it can move toward favourable conditions, like nutrients. Pili are short, hair like projections. They attach the cell to surfaces and to other cells, and they can transfer DNA between bacteria, including plasmids. So if a resistance gene sits on a plasmid, a pilus can pass a copy to a neighbour, even one of a different species. That spreads resistance far faster than reproduction alone. Both flagella and pili are optional. Not every prokaryote has them."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Cell",
+        "props": {
+          "layout": "pair",
+          "cells": [
+            {
+              "type": "prokaryote",
+              "title": "donor",
+              "size": "resistance gene on a plasmid"
+            },
+            {
+              "type": "prokaryote",
+              "title": "neighbour",
+              "hide": [
+                "plasmid"
+              ]
+            }
+          ],
+          "rows": [
+            {
+              "label": "Flagellum",
+              "cells": [
+                {
+                  "text": "rotates to propel the cell"
+                }
+              ],
+              "parts": [
+                "flagellum",
+                "flagellum"
+              ],
+              "at": 10
+            },
+            {
+              "label": "Pili",
+              "cells": [
+                {
+                  "text": "attach to surfaces and cells"
+                }
+              ],
+              "parts": [
+                "pili",
+                "pili"
+              ],
+              "at": 262
+            },
+            {
+              "label": "DNA transfer",
+              "cells": [
+                {
+                  "text": "a pilus passes a plasmid copy"
+                }
+              ],
+              "at": 490,
+              "amber": true
+            }
+          ],
+          "bridge": {
+            "at": 490,
+            "text": "plasmid copy"
+          }
+        }
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Capsule: a slimy layer outside the cell wall that protects the bacterium and helps it stick."
+        },
+        {
+          "text": "Nucleoid: the region where the single circular chromosome sits, not enclosed by a membrane."
+        },
+        {
+          "text": "Plasmid: a small, separate ring of DNA carrying extra genes that can be shared between cells."
+        },
+        {
+          "text": "Flagellum: a long whip-like tail that rotates to move the cell (plural flagella)."
+        },
+        {
+          "text": "Pili: short hair-like projections for attachment and DNA transfer (singular pilus)."
+        }
+      ],
+      "callout": "Outside in: capsule, wall, membrane, cytoplasm, then what projects out.",
+      "durationInFrames": 1230,
+      "caption": "Capsule, nucleoid, plasmid, flagellum, pili.",
+      "voiceover": {
+        "text": "Five terms. The capsule is a slimy layer outside the cell wall that protects the bacterium and helps it stick to surfaces. The nucleoid is the region where the single circular chromosome sits, with no membrane around it. A plasmid is a small, separate ring of DNA carrying extra genes, which can be shared between cells. A flagellum is a long whip like tail that rotates to move the cell. And pili are short hair like projections used for attachment and for transferring DNA. One of them is a pilus."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Describing all the structures",
+      "question": "Describe the structure and function of the capsule, cell wall, cell membrane, nucleoid, plasmid, ribosomes, flagella and pili in a prokaryotic cell. (7 marks)",
+      "coachNote": "Work from the outside in, one sentence each: \"X is …, which allows the cell to …\".",
+      "steps": [
+        "Capsule: a slimy outer layer, which protects the cell and helps it stick to surfaces. Cell wall: rigid peptidoglycan, which gives shape and stops bursting.",
+        "Cell membrane: a partially permeable bilayer, which controls entry and exit.",
+        "Nucleoid: the region holding the circular chromosome; plasmid: a small extra ring of DNA, e.g. resistance genes.",
+        "Ribosomes: small 70S structures, the site of protein synthesis.",
+        "Flagella: long rotating tails for movement; pili: short projections for attachment and DNA transfer ✓"
+      ],
+      "durationInFrames": 1380,
+      "caption": "Outside in, one sentence each, structure then function.",
+      "voiceover": {
+        "text": "Here's a seven mark describe question covering eight structures. The danger isn't getting one wrong, it's leaving one out. So pick an order you can check as you go, from the outside in, and use one sentence pattern every time. Structure X is this, which allows the cell to do that. The capsule is a slimy outer layer, which protects the cell and helps it stick. The cell wall is rigid peptidoglycan, which keeps its shape. Then the membrane, the nucleoid and plasmids, the ribosomes, and finally the flagella and pili. The fixed pattern shows you instantly what you've missed."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The plasmid trap",
+      "body": "Trap: 'A plasmid is just a smaller copy of the bacterium’s main chromosome.'",
+      "secondary": "The nucleoid holds the single main circular chromosome with the essential genes. A plasmid is a separate small ring of EXTRA DNA, often antibiotic-resistance genes, that can be copied and passed to other cells independently.",
+      "mistakeTag": "Extra DNA, not a copy",
+      "callout": "Essential genes: chromosome. Extra genes: plasmid.",
+      "durationInFrames": 1038,
+      "caption": "A plasmid carries extra genes; the chromosome carries the essential ones.",
+      "voiceover": {
+        "text": "Here's the trap. Thinking a plasmid is just a smaller copy of the main chromosome. It isn't. The nucleoid holds the single main circular chromosome, with the genes the cell needs to survive. A plasmid is a separate, small ring of extra DNA. It often carries bonus genes, like antibiotic resistance, and it can be copied and passed to other cells on its own. So, essential genes on the chromosome, extra genes on plasmids."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A bacterium with no plasmids is placed next to one whose plasmid carries an antibiotic-resistance gene. Later, both survive the antibiotic. Which two structures best explain this, and how?",
+      "pausePrompt": "Pause: where is the gene, and how could it move?",
+      "answerSteps": [
+        "The resistance gene sits on a plasmid, a small extra ring of DNA.",
+        "A pilus attaches the two cells and can transfer DNA between them.",
+        "A copy of the plasmid passes to the neighbour, which now carries the gene too.",
+        "Answer: the plasmid (carries the gene) and the pilus (transfers a copy) ✓"
+      ],
+      "durationInFrames": 1124,
+      "caption": "Plasmid carries the gene; a pilus passes a copy across.",
+      "voiceover": {
+        "text": "Quick check. A bacterium with no plasmids sits next to one whose plasmid carries an antibiotic resistance gene. Later, both survive the antibiotic. Which two structures best explain this, and how? Pause, and ask where the gene is, and how it could move. OK. The gene sits on a plasmid. A pilus attaches the two cells and can transfer DNA, so a copy of the plasmid passes to the neighbour. Now both cells carry the resistance gene."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Capsule protects and helps sticking; peptidoglycan wall gives shape; membrane controls entry and hosts respiration enzymes.",
+        "Cytoplasm is where reactions happen; the nucleoid holds the circular chromosome.",
+        "Plasmids carry extra genes such as antibiotic resistance; 70S ribosomes make proteins.",
+        "Flagella rotate to move the cell; pili attach and transfer DNA.",
+        "Capsule, flagella and pili are not found in every prokaryote."
+      ],
+      "finalPrompt": "Describing structures? Outside in, and \"X is …, which allows …\" for each.",
+      "durationInFrames": 1158,
+      "caption": "Nine prokaryotic structures, each with one job.",
+      "voiceover": {
+        "text": "Let's lock it in. The capsule protects the cell and helps it stick, the peptidoglycan wall gives it shape, and the membrane controls entry and hosts the respiration enzymes. The cytoplasm is where reactions happen, and the nucleoid holds the circular chromosome. Plasmids carry extra genes, like antibiotic resistance, and seventy S ribosomes make proteins. Flagella rotate to move the cell, and pili attach and transfer DNA. Work outside in, and give every structure its function. Next time, we get on the microscope ourselves."
+      }
+    }
+  ]
+}

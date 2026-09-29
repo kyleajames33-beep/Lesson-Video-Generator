@@ -1,0 +1,330 @@
+{
+  "title": "Exchange & Concentration Gradients",
+  "subtitle": "Which route, and which way?",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 11",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Relate the movement of glucose, oxygen, carbon dioxide, salts and wastes across membranes to concentration gradients and the characteristics of the materials being exchanged"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "lessonIntent": "Students can relate how glucose, oxygen, carbon dioxide, salts and wastes cross membranes to their concentration gradients and to their size, polarity and charge.",
+  "examSkill": "Apply the two-factor rule: characteristics decide the route; the gradient decides the direction and whether energy is needed.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, how real materials cross the membrane, and why. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Exchange & Concentration Gradients"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Three substances, three routes",
+      "body": "Oxygen slips through your membranes for free, glucose needs a protein, and some salts have to be pumped uphill.",
+      "callout": "Size, charge and the direction of the gradient decide the route.",
+      "image": "bioY11M2L6AlveoliCluster",
+      "durationInFrames": 1038,
+      "caption": "Oxygen, glucose and salts cross membranes by different routes.",
+      "voiceover": {
+        "text": "Oxygen slips through your cell membranes for free. Glucose needs a protein escort. And some salts have to be pumped uphill. So why do three substances your body needs every minute use three completely different routes? The answer is written in two things. The physical characteristics of each molecule, its size, polarity and charge, and the direction of its concentration gradient. Today we tie the whole transport toolkit to the real materials cells exchange."
+      }
+    },
+    {
+      "id": "concept-gases",
+      "type": "concept",
+      "heading": "Gases: oxygen and carbon dioxide",
+      "body": "O₂ and CO₂ are small and non-polar, so they dissolve in the lipid core and cross by simple diffusion.",
+      "bullets": [
+        {
+          "text": "A respiring cell uses O₂, so O₂ is low inside and diffuses in."
+        },
+        {
+          "text": "It makes CO₂, so CO₂ is high inside and diffuses out."
+        },
+        {
+          "text": "Steeper gradient, faster diffusion: blood flow keeps the gradients steep."
+        }
+      ],
+      "callout": "The cell’s activity sets the gradient; the gas just follows it.",
+      "durationInFrames": 1430,
+      "caption": "Respiration keeps O₂ low and CO₂ high inside, so O₂ diffuses in and CO₂ out.",
+      "voiceover": {
+        "text": "Start with the gases. Oxygen and carbon dioxide are small, non polar molecules, so they dissolve in the lipid core, and cross by simple diffusion, with no protein and no energy. But which way do they go? That's set by respiration. A respiring cell uses up oxygen, so oxygen is low inside, and it diffuses in from the blood. The same cell produces carbon dioxide, so carbon dioxide is high inside, and it diffuses out. The steeper the gradient, the faster the diffusion. That's why active cells need a constant blood supply, carrying carbon dioxide away and bringing fresh oxygen, to keep both gradients steep."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Exchange",
+        "props": {
+          "mode": "gradient",
+          "at": {
+            "o2": 466,
+            "co2": 682,
+            "flow": 1006
+          }
+        }
+      }
+    },
+    {
+      "id": "concept-glucose-salts",
+      "type": "concept",
+      "heading": "Glucose and salts need a protein",
+      "body": "Polar molecules and charged ions are repelled by the lipid core, so they use membrane proteins.",
+      "bullets": [
+        {
+          "text": "Glucose is large and polar: facilitated diffusion through a carrier, down its gradient."
+        },
+        {
+          "text": "Salts (ions such as Na⁺, Cl⁻) are charged: channels when moving down their gradient."
+        },
+        {
+          "text": "Against their gradient, ions need active transport and ATP, e.g. ion uptake in root or kidney cells."
+        }
+      ],
+      "callout": "The gradient decides whether energy is needed.",
+      "durationInFrames": 1598,
+      "caption": "Glucose uses a carrier; ions use channels, or pumps when going against the gradient.",
+      "voiceover": {
+        "text": "Now, why can't glucose and salts do the same? Oxygen crosses the bilayer freely, but glucose is a large, polar molecule, so the hydrophobic core repels it. It crosses by facilitated diffusion, through a carrier protein, down its gradient, for example into a respiring cell that's using it up. Salts are ions, like sodium and chloride, and they're charged, so they need proteins too. When they move down their gradient, they pass through protein channels, by facilitated diffusion. But when a cell has to move them against the gradient, like ion uptake in root or kidney cells, that's active transport, and it needs ATP. So the molecule's characteristics choose the route, and the gradient decides whether energy is needed."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Membrane",
+        "props": {
+          "routes": [
+            {
+              "via": "bilayer",
+              "particle": "o2",
+              "dir": "in",
+              "at": 46,
+              "label": "O₂: small, non-polar",
+              "sub": "simple diffusion"
+            },
+            {
+              "via": "channel",
+              "particle": "ion",
+              "dir": "in",
+              "at": 526,
+              "label": "ions: charged",
+              "sub": "channel, down"
+            },
+            {
+              "via": "carrier",
+              "particle": "glucose",
+              "dir": "in",
+              "at": 118,
+              "label": "glucose: large, polar",
+              "sub": "carrier, down"
+            },
+            {
+              "via": "pump",
+              "particle": "k",
+              "dir": "in",
+              "at": 970,
+              "label": "ions, against",
+              "sub": "active: ATP",
+              "amber": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-general-rule",
+      "type": "concept",
+      "heading": "Wastes out, and the general rule",
+      "body": "Wastes build up inside a cell, so they move out down their gradient.",
+      "bullets": [
+        {
+          "text": "CO₂ and urea are made by the cell, so they are higher inside and diffuse out."
+        },
+        {
+          "text": "Movement depends on (1) the direction of the gradient, set by the cell’s activity,"
+        },
+        {
+          "text": "and (2) the material: small non-polar diffuses freely; large polar and ions need proteins; against a gradient needs energy."
+        }
+      ],
+      "callout": "Characteristics choose the route; the gradient chooses the direction.",
+      "durationInFrames": 1298,
+      "caption": "Every exchange follows two factors: the gradient and the material’s characteristics.",
+      "voiceover": {
+        "text": "Finally, wastes. Carbon dioxide and urea are produced by the cell, so they're at a higher concentration inside than outside, and they diffuse out, down their gradient. Now we can state one rule for this whole dot point. A material's movement across a membrane depends on two things. First, the direction of its concentration gradient, which is set by the cell's activity. Second, its characteristics. Small non polar molecules diffuse freely. Large polar molecules and ions need proteins. And moving anything against its gradient needs energy. Gradient, and characteristics. That's the answer, every time."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Table",
+        "props": {
+          "headers": [
+            "Material",
+            "Characteristic",
+            "Route"
+          ],
+          "cols": [
+            0.27,
+            0.3,
+            0.43
+          ],
+          "rows": [
+            {
+              "cells": [
+                "O₂ and CO₂",
+                "small, non-polar",
+                "simple diffusion through the bilayer"
+              ],
+              "at": 20
+            },
+            {
+              "cells": [
+                "Glucose",
+                "large, polar",
+                "facilitated diffusion: carrier protein"
+              ],
+              "at": 50
+            },
+            {
+              "cells": [
+                "Salts (ions)",
+                "charged",
+                "channels (down); active transport (against)"
+              ],
+              "at": 80
+            },
+            {
+              "cells": [
+                "Wastes (CO₂, urea)",
+                "small, made inside",
+                "diffuse out, down the gradient"
+              ],
+              "at": 6,
+              "amber": true
+            }
+          ],
+          "footer": [
+            {
+              "text": "direction: set by the gradient",
+              "at": 538
+            },
+            {
+              "text": "route: set by size, polarity and charge",
+              "at": 706
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Non-polar molecule: no charged regions (e.g. O₂, CO₂); dissolves in the lipid core and diffuses through."
+        },
+        {
+          "text": "Polar molecule: uneven charge (e.g. glucose); repelled by the lipid core, so it needs a protein."
+        },
+        {
+          "text": "Ion: a charged particle (e.g. Na⁺, Cl⁻); uses channels or active transport."
+        },
+        {
+          "text": "Metabolic waste: a by-product of cell reactions (e.g. CO₂, urea) that leaves down its gradient."
+        },
+        {
+          "text": "Gradient direction: set by the cell’s activity, e.g. respiration keeps O₂ low and CO₂ high inside."
+        }
+      ],
+      "callout": "Characteristic → route. Gradient → direction.",
+      "durationInFrames": 1290,
+      "caption": "Non-polar, polar, ion, metabolic waste, gradient direction.",
+      "voiceover": {
+        "text": "Five terms. A non polar molecule has no charged regions, like oxygen or carbon dioxide, so it dissolves in the lipid core and diffuses straight through. A polar molecule has an uneven charge, like glucose, so the lipid core repels it, and it needs a protein. An ion is a charged particle, like sodium or chloride, and it uses channels or active transport. A metabolic waste is a by product of the cell's reactions, like carbon dioxide or urea, and it leaves down its gradient. And gradient direction is set by the cell's own activity."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Five substances, two factors",
+      "question": "Explain how the movement of oxygen, carbon dioxide, glucose, salts and wastes across the cell membrane is determined by concentration gradients and by the characteristics of the materials. (6 marks)",
+      "coachNote": "State the two-factor rule first, then apply it substance by substance.",
+      "steps": [
+        "Rule: characteristics decide the route; the gradient decides direction and whether energy is needed.",
+        "O₂ and CO₂: small and non-polar, so simple diffusion; respiration keeps O₂ low and CO₂ high inside, so O₂ in, CO₂ out.",
+        "Glucose: large and polar, so facilitated diffusion through a carrier, into cells that use it.",
+        "Salts: charged, so channels down the gradient, or active transport with ATP against it.",
+        "Wastes such as urea build up inside, so they diffuse out down their gradient ✓"
+      ],
+      "durationInFrames": 1332,
+      "caption": "Rule first, then each substance: characteristic, route, direction.",
+      "voiceover": {
+        "text": "Here's a six mark explain question covering five substances. The trap is re-explaining diffusion and active transport, and running out of room for the substances. So state the two factor rule first, characteristics decide the route, and the gradient decides the direction and whether energy is needed. Then apply it. Oxygen and carbon dioxide are small and non polar, so they diffuse, with respiration keeping oxygen low and carbon dioxide high inside. Glucose is large and polar, so it uses a carrier. Salts are charged, so channels, or pumps against the gradient. And wastes diffuse out."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The fixed-direction trap",
+      "body": "Trap: 'Oxygen always moves into cells and carbon dioxide always moves out, no matter what.'",
+      "secondary": "The direction depends on the gradient, which is set by the cell’s activity. In a respiring cell, O₂ is used up so it diffuses in, and CO₂ builds up so it diffuses out. The substance always moves down its gradient.",
+      "mistakeTag": "The gradient sets the direction",
+      "callout": "Change the cell’s activity and you change the gradient.",
+      "durationInFrames": 1182,
+      "caption": "Gas direction follows the gradient, which the cell’s activity creates.",
+      "voiceover": {
+        "text": "Here's the trap. Thinking oxygen always moves into cells, and carbon dioxide always moves out, no matter what. The direction depends on the gradient, and the gradient is set by what the cell is doing. In a respiring cell, oxygen is used up, so it diffuses in, and carbon dioxide builds up, so it diffuses out. The substance always moves down its gradient. It's the cell's metabolism that creates the gradient in the first place. So always say why the gradient points the way it does."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A root cell must take in nitrate ions even though they are more concentrated inside the cell than in the soil. Which process does it use, and why?",
+      "pausePrompt": "Pause: what is the ion’s charge, and which way is the gradient?",
+      "answerSteps": [
+        "Nitrate is an ion, so it is charged and cannot cross the lipid core; it needs a protein.",
+        "It must move from low (soil) to high (cell): against its gradient.",
+        "Moving against a gradient needs energy.",
+        "Answer: active transport, using a carrier protein and ATP ✓"
+      ],
+      "durationInFrames": 1256,
+      "caption": "Charged and against the gradient: active transport.",
+      "voiceover": {
+        "text": "Quick check. A root cell has to take in nitrate ions, even though they're already more concentrated inside the cell than in the soil. Which process does it use, and why? Pause, and think about the ion's charge, and which way the gradient runs. OK. Nitrate is an ion, so it's charged, and it needs a protein to cross. And it's moving from low in the soil to high in the cell, against its gradient. That takes energy, so it's active transport, using a carrier protein and ATP."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "O₂ and CO₂: small, non-polar, simple diffusion; respiration sets their gradients.",
+        "Glucose: large, polar, facilitated diffusion through a carrier.",
+        "Salts: charged; channels down the gradient, active transport against it.",
+        "Wastes such as CO₂ and urea are made inside, so they diffuse out.",
+        "Two factors: the gradient’s direction, and the material’s characteristics."
+      ],
+      "finalPrompt": "Any substance: what is it like, and which way does its gradient run?",
+      "durationInFrames": 1182,
+      "caption": "Characteristics choose the route; gradients choose the direction.",
+      "voiceover": {
+        "text": "Let's lock it in. Oxygen and carbon dioxide are small and non polar, so they diffuse, with respiration setting their gradients. Glucose is large and polar, so it uses a carrier. Salts are charged, so they use channels down the gradient, or active transport against it. Wastes like carbon dioxide and urea are made inside, so they diffuse out. For any substance, ask what it's like, and which way its gradient runs. Next time, the raw materials a cell needs, and what each one is for."
+      }
+    }
+  ]
+}

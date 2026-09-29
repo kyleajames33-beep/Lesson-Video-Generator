@@ -1,0 +1,425 @@
+{
+  "title": "Microscopy & Scientific Understanding",
+  "subtitle": "What we know is limited by what we can see",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 6",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Assess the impact of technological developments in microscopy on scientific understanding of cell structure and function"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "lessonIntent": "Students can assess how developments from the light microscope to the electron microscope changed scientific understanding of cell structure, weighing strengths against limitations.",
+  "examSkill": "Assess: name a development, give specific evidence of what it revealed, weigh a limitation, and end with a judgement.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, how better microscopes changed what we know about cells. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Microscopy & Scientific Understanding"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Invisible, not absent",
+      "body": "For centuries after cells were discovered, no one could see mitochondrial folds or ribosomes. They were there all along; no microscope could resolve them.",
+      "callout": "What scientists know has always depended on the best lens available.",
+      "image": "bioY11M1L2HookeCork",
+      "durationInFrames": 1122,
+      "caption": "Cell structures stayed hidden until microscopes could resolve them.",
+      "voiceover": {
+        "text": "Cells were first seen in the sixteen sixties. But for almost three hundred years after that, no one could see that mitochondria have folded inner membranes, or that cells are packed with ribosomes. Not because those structures weren't there, but because no microscope could resolve them. What scientists know about cells has always depended on the best lens available. So today we'll assess that link. How much of what we know about cells only became visible once the technology caught up?"
+      }
+    },
+    {
+      "id": "concept-light-microscope",
+      "type": "concept",
+      "heading": "From first lenses to the light microscope",
+      "body": "The first microscopes revealed that living things are made of cells at all.",
+      "bullets": [
+        {
+          "text": "1660s: Hooke saw and named \"cells\" in cork; van Leeuwenhoek saw living single-celled organisms."
+        },
+        {
+          "text": "The light microscope (~200 nm) made cell theory possible: nuclei, chloroplasts, whole cells."
+        },
+        {
+          "text": "Its resolution is limited by the wavelength of visible light: membranes, ribosomes and cristae stay invisible."
+        }
+      ],
+      "callout": "No lens, no cell theory.",
+      "durationInFrames": 1334,
+      "caption": "Light microscopes revealed cells, nuclei and chloroplasts, but hit a resolution limit.",
+      "voiceover": {
+        "text": "In the sixteen sixties, Robert Hooke used an early compound microscope to see, and name, cells in a slice of cork. Around the same time, Antonie van Leeuwenhoek observed living single celled organisms, which he called animalcules. As the light microscope improved, reaching a resolution of about two hundred nanometres, it made the cell theory possible. It showed that organisms are made of cells, and let scientists see nuclei, chloroplasts and whole cells. But its resolution is limited by the wavelength of visible light. So finer internal detail, membranes, ribosomes, and the cristae inside mitochondria, stayed invisible."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Steps",
+        "props": {
+          "layout": "stairs",
+          "steps": [
+            {
+              "name": "Hooke, 1660s",
+              "sub": "names \"cells\" in cork",
+              "at": 6
+            },
+            {
+              "name": "van Leeuwenhoek",
+              "sub": "living single cells",
+              "at": 238
+            },
+            {
+              "name": "Light microscope",
+              "sub": "~200 nm: nuclei, chloroplasts",
+              "at": 406
+            },
+            {
+              "name": "The limit",
+              "sub": "no membranes, ribosomes, cristae",
+              "at": 838,
+              "amber": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-resolution",
+      "type": "concept",
+      "heading": "Magnification is not resolution",
+      "body": "Resolution, not magnification, sets how much detail you can see.",
+      "bullets": [
+        {
+          "text": "Resolution: the smallest distance between two points still seen as separate."
+        },
+        {
+          "text": "Past the resolution limit, more magnification gives a bigger blur: empty magnification."
+        },
+        {
+          "text": "The electron microscope mattered because of its resolution, not just its power."
+        }
+      ],
+      "callout": "Bigger is not sharper.",
+      "durationInFrames": 1334,
+      "caption": "More magnification cannot separate two points closer than the resolution limit.",
+      "voiceover": {
+        "text": "Before we get to the electron microscope, one idea you must have straight. Resolution is the smallest distance between two points that a microscope can still show as separate. Imagine two points a hundred nanometres apart. Under a light microscope, which resolves about two hundred nanometres, they merge into one blur. Now crank up the magnification. You get a bigger blur, but still just one. That's called empty magnification. Only a tool with finer resolution, like the electron microscope, shows two separate points. So it was the electron microscope's resolution, not just its power, that changed biology."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Scale",
+        "props": {
+          "mode": "resolve",
+          "gapNm": 100,
+          "gapLabel": "two points 100 nm apart",
+          "panels": [
+            {
+              "name": "light microscope",
+              "resNm": 200,
+              "at": 298
+            },
+            {
+              "name": "light, more magnification",
+              "resNm": 200,
+              "zoom": 1.9,
+              "at": 562
+            },
+            {
+              "name": "electron microscope",
+              "resNm": 0.2,
+              "at": 814
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-electron-microscope",
+      "type": "concept",
+      "heading": "The electron microscope changes everything",
+      "body": "Using electrons instead of light gave about a thousand-fold jump in resolution.",
+      "bullets": [
+        {
+          "text": "Developed in the 1930s; resolves about 0.2 nm."
+        },
+        {
+          "text": "Revealed ultrastructure: membranes, ribosomes, cristae, ER and Golgi."
+        },
+        {
+          "text": "Confirmed prokaryotes lack internal membrane-bound organelles. TEM: internal detail; SEM: 3D surfaces."
+        }
+      ],
+      "callout": "The model of the cell went from a box with a nucleus to a compartmentalised structure.",
+      "durationInFrames": 1586,
+      "caption": "Each jump in resolution revealed finer structure; only the EM resolves ultrastructure.",
+      "voiceover": {
+        "text": "Here's every step on one scale, where each tick is ten times smaller than the last. The human eye resolves about a hundred micrometres, enough for the biggest cells. The light microscope, about two hundred nanometres, brings in cells, nuclei and mitochondria. The electron microscope, developed in the nineteen thirties, resolves about zero point two nanometres. That revealed the cell's ultrastructure, the membranes, ribosomes, the cristae of mitochondria, the ER and Golgi. It also confirmed that prokaryotes lack internal membrane bound organelles. There are two types. The transmission EM shows internal detail, and the scanning EM shows three dimensional surfaces. The model of the cell went from a simple box with a nucleus to a richly compartmentalised structure."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Scale",
+        "props": {
+          "mode": "ruler",
+          "fromNm": 0.1,
+          "toNm": 100000,
+          "items": [
+            {
+              "name": "animal cell",
+              "nm": 30000,
+              "icon": "cell",
+              "at": 10
+            },
+            {
+              "name": "nucleus",
+              "nm": 6000,
+              "icon": "nucleus",
+              "at": 30
+            },
+            {
+              "name": "mitochondrion",
+              "nm": 1000,
+              "icon": "mito",
+              "at": 50
+            },
+            {
+              "name": "ribosome",
+              "nm": 25,
+              "icon": "ribosome",
+              "at": 70
+            },
+            {
+              "name": "membrane",
+              "nm": 8,
+              "icon": "membrane",
+              "at": 90
+            }
+          ],
+          "limits": [
+            {
+              "name": "human eye",
+              "nm": 100000,
+              "label": "~100 µm",
+              "at": 142
+            },
+            {
+              "name": "light microscope",
+              "nm": 200,
+              "label": "~200 nm",
+              "at": 298
+            },
+            {
+              "name": "electron microscope",
+              "nm": 0.2,
+              "label": "~0.2 nm",
+              "at": 454,
+              "amber": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-weighing-up",
+      "type": "concept",
+      "heading": "Weighing it up",
+      "body": "Each technology has trade-offs, so a fair assessment weighs benefits against limitations.",
+      "bullets": [
+        {
+          "text": "Electron microscope: huge resolution, but specimens must be dead, dehydrated and in a vacuum; costly; black and white."
+        },
+        {
+          "text": "Light microscope: lower resolution, but shows living, moving, coloured cells cheaply."
+        },
+        {
+          "text": "Fluorescence and confocal microscopy now show specific molecules in living cells."
+        }
+      ],
+      "callout": "Each tool answers different questions.",
+      "durationInFrames": 1406,
+      "caption": "Resolution versus the ability to watch living cells: each microscope has trade-offs.",
+      "voiceover": {
+        "text": "So is the light microscope obsolete? No, and weighing this up is exactly what assess means. The electron microscope's resolution is enormous, but it comes at a cost. Specimens must be dead, dehydrated and viewed in a vacuum, so you can't watch living processes. The equipment is expensive and complex, and the images are black and white. The light microscope has lower resolution, but it lets you watch living, moving, coloured cells, cheaply. And newer technologies, fluorescence and confocal microscopy, now let scientists see specific molecules glowing inside living cells. So microscopy has had a major impact, but each tool answers different questions."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Table",
+        "props": {
+          "headers": [
+            "",
+            "Light microscope",
+            "Electron microscope"
+          ],
+          "cols": [
+            0.24,
+            0.36,
+            0.4
+          ],
+          "rows": [
+            {
+              "cells": [
+                "Resolution",
+                {
+                  "text": "about 200 nm",
+                  "ok": false
+                },
+                {
+                  "text": "about 0.2 nm",
+                  "ok": true,
+                  "amber": true
+                }
+              ],
+              "at": 166
+            },
+            {
+              "cells": [
+                "Specimens",
+                {
+                  "text": "living, moving cells",
+                  "ok": true
+                },
+                {
+                  "text": "dead, dehydrated, in a vacuum",
+                  "ok": false
+                }
+              ],
+              "at": 274
+            },
+            {
+              "cells": [
+                "Cost, image",
+                {
+                  "text": "cheap; colour",
+                  "ok": true
+                },
+                {
+                  "text": "expensive, complex; black and white",
+                  "ok": false
+                }
+              ],
+              "at": 478
+            }
+          ],
+          "footer": [
+            {
+              "text": "newer: fluorescence and confocal microscopy show molecules in living cells",
+              "at": 826
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Magnification: how many times larger an image appears than the real object."
+        },
+        {
+          "text": "Resolution: the smallest distance between two points a microscope can still show as separate."
+        },
+        {
+          "text": "Electron microscope: uses a beam of electrons, resolving about 0.2 nm."
+        },
+        {
+          "text": "TEM and SEM: transmission EM shows internal detail; scanning EM shows 3D surfaces."
+        },
+        {
+          "text": "Assess: make a judgement of value, weighing strengths and limitations."
+        }
+      ],
+      "callout": "Resolution is the real limit on detail.",
+      "durationInFrames": 1158,
+      "caption": "Magnification, resolution, electron microscope, TEM and SEM, assess.",
+      "voiceover": {
+        "text": "Five terms. Magnification is how many times larger an image appears than the real object. Resolution is the smallest distance between two points that a microscope can still show as separate, and it's the real limit on detail. An electron microscope uses a beam of electrons instead of light, and resolves to about zero point two nanometres. The transmission EM shows internal detail, and the scanning EM shows three dimensional surfaces. And assess means make a judgement of value, weighing up strengths and limitations."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Building an assess answer",
+      "question": "Assess the impact of technological developments in microscopy on scientific understanding of cell structure and function. (7 marks)",
+      "coachNote": "Assess needs a judgement, backed by specific evidence and at least one limitation.",
+      "steps": [
+        "Light microscope (~200 nm): revealed cells, nuclei and chloroplasts, making cell theory possible.",
+        "Its resolution limit hid membranes, ribosomes and cristae.",
+        "Electron microscope (~0.2 nm): revealed ultrastructure and confirmed prokaryotes lack membrane-bound organelles, changing the model of the cell.",
+        "Limitation: EM specimens are dead and in a vacuum, so living processes need light or fluorescence microscopy.",
+        "Judgement: the impact was major, because each gain in resolution changed the model of the cell ✓"
+      ],
+      "durationInFrames": 1200,
+      "caption": "Development, specific evidence, limitation, then a clear judgement.",
+      "voiceover": {
+        "text": "Here's how to build a seven mark assess answer. Assess needs a judgement, and the judgement needs evidence. Take each development in turn and say specifically what it revealed. The light microscope showed cells, nuclei and chloroplasts, which made cell theory possible, but it couldn't resolve membranes or ribosomes. The electron microscope revealed that ultrastructure, and confirmed prokaryotes lack membrane bound organelles. Then weigh a limitation. Electron microscope specimens are dead, so living processes still need light or fluorescence microscopy. Finish with a clear judgement."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The magnification trap",
+      "body": "Trap: 'A microscope with higher magnification always shows more detail.'",
+      "secondary": "Beyond a certain point, more magnification only gives empty magnification: a bigger but blurry image. Resolution sets how much detail you can see.",
+      "mistakeTag": "Bigger is not sharper",
+      "callout": "The electron microscope mattered because of its resolution.",
+      "durationInFrames": 906,
+      "caption": "Resolution, not magnification, limits detail.",
+      "voiceover": {
+        "text": "Here's the trap. Thinking that a microscope with higher magnification always shows more detail. It doesn't. Beyond a certain point, more magnification only produces empty magnification, a bigger image that's just as blurry. The limit on detail is resolution. That's why the electron microscope was such a breakthrough. It wasn't just more powerful, it could separate points about a thousand times closer together."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Which type of microscope would you need to (a) see the cristae inside a mitochondrion, and (b) watch a living cell divide? Justify each.",
+      "pausePrompt": "Pause: which needs resolution, and which needs a living specimen?",
+      "answerSteps": [
+        "(a) Cristae are far finer than 200 nm, so only the electron microscope can resolve them.",
+        "(b) Electron microscope specimens are dead and in a vacuum.",
+        "A light microscope shows living, moving cells, so it can follow division.",
+        "Answer: (a) electron microscope, for resolution; (b) light microscope, for living cells ✓"
+      ],
+      "durationInFrames": 1088,
+      "caption": "Fine detail needs the EM; living processes need the light microscope.",
+      "voiceover": {
+        "text": "Quick check. Which type of microscope would you need to, first, see the cristae inside a mitochondrion, and second, watch a living cell divide? Justify each. Pause, and ask which task needs resolution, and which needs a living specimen. OK. Cristae are far too fine for a light microscope, so you need the electron microscope's resolution. But electron microscope specimens are dead, so to watch a living cell divide, you'd use a light microscope."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Light microscopes (~200 nm) revealed cells, nuclei and chloroplasts, and made cell theory possible.",
+        "Resolution, not magnification, limits detail; past it you get empty magnification.",
+        "The electron microscope (~0.2 nm) revealed ultrastructure and changed the model of the cell.",
+        "Trade-off: EM needs dead specimens in a vacuum; light microscopes show living cells.",
+        "Assess = evidence, limitation, judgement."
+      ],
+      "finalPrompt": "Assess question? Name the development, what it revealed, its limit, then judge.",
+      "durationInFrames": 1194,
+      "caption": "Each jump in resolution changed our model of the cell, with trade-offs.",
+      "voiceover": {
+        "text": "Let's lock it in. Light microscopes, at about two hundred nanometres, revealed cells, nuclei and chloroplasts, and made cell theory possible. Resolution, not magnification, limits the detail you can see. The electron microscope, at about zero point two nanometres, revealed the cell's ultrastructure and changed our whole model of the cell. But it needs dead specimens in a vacuum, while light microscopes show living cells. In an assess question, give the evidence, a limitation, and then your judgement. Next time, the membrane itself, the fluid mosaic model."
+      }
+    }
+  ]
+}

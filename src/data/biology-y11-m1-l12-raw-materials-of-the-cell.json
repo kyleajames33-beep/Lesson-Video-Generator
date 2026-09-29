@@ -1,0 +1,311 @@
+{
+  "title": "Raw Materials of the Cell",
+  "subtitle": "What a cell needs, and what each one is for",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 12",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Relate carbon dioxide, oxygen, water, ions, amino acids and glucose to cell requirements"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "lessonIntent": "Students can relate carbon dioxide, oxygen, water, ions, amino acids and glucose to the specific requirement each meets, and say when each is an input or an output.",
+  "examSkill": "For each material, state what the cell requires it for, in the form \"the cell requires X in order to …\".",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, the six raw materials every cell trades in. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Raw Materials of the Cell"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Waste for one, food for another",
+      "body": "Carbon dioxide leaves your muscle as waste, but a leaf takes it in as a raw material.",
+      "callout": "Why does a cell need six different substances, and what does each one do?",
+      "image": "bioY11M1L6CellInputsOutputs",
+      "durationInFrames": 1110,
+      "caption": "The same molecule can be a waste for one cell and a raw material for another.",
+      "voiceover": {
+        "text": "A cell is a tiny chemical factory, and every factory needs raw materials delivered and products shipped out. Here's a twist. Carbon dioxide leaves your muscle cells as a waste, but a leaf cell takes it in as a raw material. So the same molecule can be an input or an output. Today, the six substances every cell trades with its surroundings, carbon dioxide, oxygen, water, ions, amino acids and glucose, and exactly what the cell needs each one for."
+      }
+    },
+    {
+      "id": "concept-energy",
+      "type": "concept",
+      "heading": "Materials for energy",
+      "body": "Three of the six materials are tied directly to releasing energy.",
+      "bullets": [
+        {
+          "text": "Glucose: the main fuel, broken down in cellular respiration to release energy."
+        },
+        {
+          "text": "Oxygen: the reactant that lets glucose be fully broken down in aerobic respiration."
+        },
+        {
+          "text": "Carbon dioxide: a waste of respiration, removed; but an input for photosynthesis in plants."
+        }
+      ],
+      "callout": "Same substance, input or output, depending on the reaction.",
+      "durationInFrames": 1514,
+      "caption": "Glucose and oxygen go in for respiration; carbon dioxide comes out.",
+      "voiceover": {
+        "text": "A cell's most urgent need is energy, and three of the six materials are tied directly to it. Glucose is the cell's main fuel. It's broken down in cellular respiration, releasing the energy stored in its chemical bonds. Oxygen is needed because it's the reactant that lets glucose be fully broken down in aerobic respiration, which releases the most energy. And carbon dioxide is the waste product of respiration, so it has to be removed. But in a plant cell, carbon dioxide is taken in, as a raw material for photosynthesis. That's today's key idea. The same substance can be an input or an output, depending on the cell and the reaction."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Exchange",
+        "props": {
+          "mode": "needs",
+          "cell": "animal",
+          "items": [
+            {
+              "mat": "glucose",
+              "dir": "in",
+              "target": "mito",
+              "tag": "fuel for respiration",
+              "at": 154
+            },
+            {
+              "mat": "o2",
+              "dir": "in",
+              "target": "mito",
+              "tag": "lets glucose be fully broken down",
+              "at": 394
+            },
+            {
+              "mat": "co2",
+              "dir": "out",
+              "target": "mito",
+              "tag": "waste of respiration",
+              "at": 670,
+              "amber": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-building",
+      "type": "concept",
+      "heading": "Materials for building and running",
+      "body": "Not everything is burned: some materials are built into the cell or keep it working.",
+      "bullets": [
+        {
+          "text": "Amino acids: building blocks joined into enzymes, membrane proteins and structural proteins."
+        },
+        {
+          "text": "Ions (Na⁺, K⁺, Ca²⁺, Cl⁻): nerve impulses, muscle contraction, enzyme activity, structure and water balance."
+        },
+        {
+          "text": "Without the right ions, enzymes fail and the cell cannot signal or hold its shape."
+        }
+      ],
+      "callout": "Energy materials power the cell; building materials make it.",
+      "durationInFrames": 1286,
+      "caption": "Amino acids build proteins; ions keep signals, enzymes and water balance working.",
+      "voiceover": {
+        "text": "Beyond energy, a cell has to build itself, and keep its reactions running. Amino acids are the building blocks of proteins. The cell joins them into chains at its ribosomes, making enzymes, membrane proteins and structural proteins. Ions, such as sodium, potassium, calcium and chloride, are needed for nerve impulses, muscle contraction, enzyme activity, and for maintaining the cell's structure and water balance. Without the right ion balance, enzymes fail, and the cell can't signal or hold its shape. That's why sports drinks contain electrolytes. Replacing water alone isn't enough after heavy sweating."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Exchange",
+        "props": {
+          "mode": "needs",
+          "cell": "animal",
+          "items": [
+            {
+              "mat": "amino",
+              "dir": "in",
+              "target": "ribo",
+              "tag": "building blocks of proteins",
+              "at": 94
+            },
+            {
+              "mat": "ion",
+              "dir": "in",
+              "target": "membrane",
+              "tag": "nerve signals, enzymes, water balance",
+              "at": 382,
+              "amber": true
+            }
+          ],
+          "footer": [
+            {
+              "text": "sports drinks: glucose for fuel, electrolytes for ion balance",
+              "at": 910
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-water",
+      "type": "concept",
+      "heading": "Water, behind every reaction",
+      "body": "Every other material has to dissolve and react in water.",
+      "bullets": [
+        {
+          "text": "Water is the solvent in which the cell’s chemicals dissolve and react."
+        },
+        {
+          "text": "It is also a reactant (in photosynthesis) and a product (of respiration)."
+        },
+        {
+          "text": "A respiring animal cell takes in glucose and O₂ and releases CO₂ and water; a photosynthesising plant cell takes CO₂ and water in."
+        }
+      ],
+      "callout": "Input or output depends on which reactions the cell is running.",
+      "durationInFrames": 1358,
+      "caption": "Water is solvent and reactant; a photosynthesising cell takes in CO₂ and water.",
+      "voiceover": {
+        "text": "Water is the most abundant requirement of all. It's the solvent in which all the cell's chemicals dissolve and react. It's also a reactant in some reactions, and a product in others. It's a reactant in photosynthesis, and a product of respiration. And that shows the central principle of this dot point. Whether a material is taken in or released depends on which reactions the cell is carrying out. A respiring animal cell takes in glucose and oxygen, and releases carbon dioxide and water. A photosynthesising plant cell does the reverse for carbon dioxide and water, taking them in."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Exchange",
+        "props": {
+          "mode": "needs",
+          "cell": "plant",
+          "items": [
+            {
+              "mat": "water",
+              "dir": "in",
+              "target": "cyto",
+              "tag": "solvent for every reaction",
+              "at": 58
+            },
+            {
+              "mat": "water",
+              "dir": "in",
+              "target": "chloro",
+              "tag": "reactant in photosynthesis",
+              "at": 346
+            },
+            {
+              "mat": "co2",
+              "dir": "in",
+              "target": "chloro",
+              "tag": "raw material for photosynthesis",
+              "at": 958,
+              "amber": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Raw material: a substance a cell takes in or produces and uses to build, react or release energy."
+        },
+        {
+          "text": "Glucose: a simple sugar, the cell’s main fuel, broken down in respiration."
+        },
+        {
+          "text": "Amino acid: the building block of proteins."
+        },
+        {
+          "text": "Ion: a charged mineral particle (e.g. Na⁺, K⁺, Ca²⁺, Cl⁻) needed for signals, enzymes and structure."
+        },
+        {
+          "text": "Reactant / product: a reactant is used up in a reaction; a product is made by it."
+        }
+      ],
+      "callout": "The same molecule can be a reactant in one cell and a product in another.",
+      "durationInFrames": 1146,
+      "caption": "Raw material, glucose, amino acid, ion, reactant and product.",
+      "voiceover": {
+        "text": "Five terms. A raw material is a substance a cell takes in, or produces, and uses to build structures, carry out reactions or release energy. Glucose is a simple sugar, the cell's main fuel, broken down in respiration. An amino acid is the building block of proteins. An ion is a charged mineral particle, like sodium, potassium, calcium or chloride, needed for nerve signals, enzymes and structure. And a reactant is used up in a reaction, while a product is made by it."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Six materials, six requirements",
+      "question": "Explain how carbon dioxide, oxygen, water, ions, amino acids and glucose each meet a specific requirement of a cell. (6 marks)",
+      "coachNote": "One sentence each: \"The cell requires X in order to …\".",
+      "steps": [
+        "Glucose: to fuel cellular respiration, releasing energy. Oxygen: to break glucose down fully in aerobic respiration.",
+        "Carbon dioxide: removed as a waste of respiration, and needed by plant cells for photosynthesis.",
+        "Water: as the solvent for all reactions, and as a reactant, e.g. in photosynthesis.",
+        "Amino acids: to build proteins such as enzymes. Ions: for nerve impulses, enzyme activity and water balance.",
+        "Answer: every material linked to a specific requirement, not just defined ✓"
+      ],
+      "durationInFrames": 1308,
+      "caption": "For each material: what the cell requires it for.",
+      "voiceover": {
+        "text": "Here's a six mark explain question. Explain how carbon dioxide, oxygen, water, ions, amino acids and glucose each meet a specific requirement of a cell. The usual failure is three materials explained well, and three just named. So fix a sentence frame. The cell requires X, in order to do Y. Glucose, to fuel respiration. Oxygen, to break glucose down fully. Carbon dioxide, as a waste to remove, or a raw material for photosynthesis. Water, as the solvent, and a reactant. Amino acids, to build proteins. And ions, for signals, enzymes and water balance."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The filler trap",
+      "body": "Trap: 'Cells only need glucose and oxygen; water and ions are just filler.'",
+      "secondary": "Water is the solvent for every reaction and a reactant in many; ions are essential for nerve impulses, enzyme activity and structure. A cell deprived of water or key ions stops working just as surely as one starved of fuel.",
+      "mistakeTag": "Every material has a job",
+      "callout": "No water or ions, no working cell.",
+      "durationInFrames": 1098,
+      "caption": "Water and ions are as essential as glucose and oxygen.",
+      "voiceover": {
+        "text": "Here's the trap. Thinking cells only really need glucose and oxygen, and that water and ions are just filler. That's wrong. Water is the solvent for every reaction in the cell, and a reactant in many of them. Ions are essential for nerve impulses, enzyme activity and the cell's structure. A cell deprived of water, or of key ions, stops working just as surely as one starved of fuel. So every one of the six materials has a job."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "For each cell, is carbon dioxide an input or an output, and why? (a) A working muscle cell. (b) A leaf cell photosynthesising in bright light.",
+      "pausePrompt": "Pause: which reaction is each cell running?",
+      "answerSteps": [
+        "(a) The muscle cell is respiring, which produces CO₂.",
+        "So in the muscle cell CO₂ is an output, a waste to be removed.",
+        "(b) The leaf cell is photosynthesising, which uses CO₂ as a raw material.",
+        "Answer: muscle cell, output; leaf cell in bright light, input ✓"
+      ],
+      "durationInFrames": 1124,
+      "caption": "Respiring muscle: CO₂ out. Photosynthesising leaf: CO₂ in.",
+      "voiceover": {
+        "text": "Quick check. For each cell, is carbon dioxide an input or an output, and why? First, a working muscle cell. Second, a leaf cell photosynthesising in bright light. Pause, and ask which reaction each cell is running. OK. The muscle cell is respiring, and respiration produces carbon dioxide, so it's an output, a waste to be removed. The leaf cell is photosynthesising, which uses carbon dioxide as a raw material, so for that cell it's an input."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Glucose: the main fuel for respiration. Oxygen: lets glucose be fully broken down.",
+        "Carbon dioxide: a waste of respiration; a raw material for photosynthesis.",
+        "Water: the solvent for all reactions, and a reactant or product.",
+        "Amino acids build proteins; ions run nerve signals, enzymes and water balance.",
+        "Input or output depends on which reactions the cell is carrying out."
+      ],
+      "finalPrompt": "For each material: the cell requires it in order to…",
+      "durationInFrames": 1182,
+      "caption": "Six raw materials, six requirements; input or output depends on the cell.",
+      "voiceover": {
+        "text": "Let's lock it in. Glucose is the main fuel for respiration, and oxygen lets glucose be fully broken down. Carbon dioxide is a waste of respiration, but a raw material for photosynthesis. Water is the solvent for every reaction, and a reactant or a product. Amino acids build proteins, and ions run nerve signals, enzymes and water balance. And whether a material goes in or out depends on the reactions the cell is running. Next time, what the cell does with glucose and oxygen, cellular respiration."
+      }
+    }
+  ]
+}

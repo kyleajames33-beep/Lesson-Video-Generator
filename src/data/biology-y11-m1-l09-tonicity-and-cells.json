@@ -1,0 +1,308 @@
+{
+  "title": "Tonicity & Cells",
+  "subtitle": "Predicting what osmosis does to a cell",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 9",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Predict the effects of hypertonic, hypotonic and isotonic solutions on animal and plant cells"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "lessonIntent": "Students can predict and explain the effects of hypotonic, isotonic and hypertonic solutions on animal and plant cells using the direction of osmosis.",
+  "examSkill": "Find which side has more solute, conclude which way water moves, then apply the cell type (walled or not).",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, predicting what happens to cells in different solutions. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Tonicity & Cells"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same osmosis, opposite outcomes",
+      "body": "A red blood cell in pure water bursts. A plant cell in the same water just gets firm.",
+      "callout": "Predict the direction of water, and you can predict the fate of any cell.",
+      "image": "bioY11M1L4RedBloodCells",
+      "durationInFrames": 1038,
+      "caption": "Red blood cells burst in pure water; plant cells turn firm. The wall makes the difference.",
+      "voiceover": {
+        "text": "Put a red blood cell in pure water, and it bursts. Put a plant cell in the same water, and it just gets firm. Same osmosis, opposite outcomes, and the difference is the cell wall. It's also why a wilted lettuce leaf goes crisp again in cold water, while a slug shrivels when salt is poured on it. Today you'll learn to predict exactly what happens to animal and plant cells in any solution."
+      }
+    },
+    {
+      "id": "concept-three-solutions",
+      "type": "concept",
+      "heading": "Three kinds of solution",
+      "body": "Tonicity compares the solute concentration outside the cell with inside, and that tells you which way water moves.",
+      "bullets": [
+        {
+          "text": "Hypotonic: less solute outside; water moves in; the cell swells."
+        },
+        {
+          "text": "Isotonic: equal solute; no net movement; the cell stays the same size."
+        },
+        {
+          "text": "Hypertonic: more solute outside; water moves out; the cell shrinks."
+        }
+      ],
+      "callout": "Water always moves toward the higher solute concentration.",
+      "durationInFrames": 1262,
+      "caption": "Hypotonic: water in. Isotonic: no net movement. Hypertonic: water out.",
+      "voiceover": {
+        "text": "Tonicity compares the solution outside a cell with the cell's own contents. A hypotonic solution has less solute than the cell, so more water. Water moves into the cell by osmosis, and it swells. An isotonic solution has the same solute concentration as the cell, so there's no net movement of water, and the cell stays the same size. A hypertonic solution has more solute than the cell, so less water. Water moves out, and the cell shrinks. One rule covers all three. Water always moves toward the higher solute concentration."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Tonicity",
+        "props": {
+          "cell": "generic",
+          "columns": [
+            {
+              "kind": "hypo",
+              "name": "hypotonic",
+              "sub": "less solute outside",
+              "result": "water in: swells",
+              "at": 94
+            },
+            {
+              "kind": "iso",
+              "name": "isotonic",
+              "sub": "equal solute",
+              "result": "no net movement",
+              "at": 358
+            },
+            {
+              "kind": "hyper",
+              "name": "hypertonic",
+              "sub": "more solute outside",
+              "result": "water out: shrinks",
+              "at": 658
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-animal-cells",
+      "type": "concept",
+      "heading": "Animal cells: no safety net",
+      "body": "An animal cell has only its membrane to contain it, so gaining or losing too much water is serious.",
+      "bullets": [
+        {
+          "text": "Hypotonic: water floods in and the cell bursts (lysis; haemolysis for red blood cells)."
+        },
+        {
+          "text": "Isotonic: the cell stays normal, the only safe environment."
+        },
+        {
+          "text": "Hypertonic: water leaves and the cell shrivels (crenation)."
+        }
+      ],
+      "callout": "This is why IV saline is isotonic, about 0.9% NaCl.",
+      "durationInFrames": 1334,
+      "caption": "Animal cells burst in hypotonic, stay normal in isotonic and crenate in hypertonic solutions.",
+      "voiceover": {
+        "text": "An animal cell has no wall, only its membrane. So in a hypotonic solution, water floods in, the cell swells, and with nothing to resist it, it bursts. That's lysis, or haemolysis for red blood cells. In an isotonic solution, water moves in and out equally, so the cell stays normal. That's the only safe environment for an animal cell. In a hypertonic solution, water leaves and the cell shrivels. That's called crenation. This is exactly why hospital drips use isotonic saline, about zero point nine percent sodium chloride. Pure water would burst your red blood cells."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Tonicity",
+        "props": {
+          "cell": "animal",
+          "columns": [
+            {
+              "kind": "hypo",
+              "name": "hypotonic",
+              "sub": "water moves in",
+              "result": "bursts: lysis",
+              "at": 82
+            },
+            {
+              "kind": "iso",
+              "name": "isotonic",
+              "sub": "no net movement",
+              "result": "normal",
+              "at": 394,
+              "amber": true
+            },
+            {
+              "kind": "hyper",
+              "name": "hypertonic",
+              "sub": "water moves out",
+              "result": "shrivels: crenation",
+              "at": 682
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-plant-cells",
+      "type": "concept",
+      "heading": "Plant cells: the wall changes everything",
+      "body": "A plant cell’s rigid wall resists swelling, so the same osmosis gives very different, non-fatal outcomes.",
+      "bullets": [
+        {
+          "text": "Hypotonic: water enters but the wall stops bursting; the cell is firm, turgid."
+        },
+        {
+          "text": "Isotonic: no net movement; the cell may lose some firmness, flaccid."
+        },
+        {
+          "text": "Hypertonic: water leaves; the membrane pulls away from the wall, plasmolysed."
+        }
+      ],
+      "callout": "Turgid is the healthy, supportive state for a plant cell.",
+      "durationInFrames": 1442,
+      "caption": "Plant cells: turgid in hypotonic, flaccid in isotonic, plasmolysed in hypertonic.",
+      "voiceover": {
+        "text": "Now the plant cell, and the wall changes every outcome. In a hypotonic solution, water enters, but the wall stops the cell bursting. The cell becomes firm and turgid, which is the ideal, supportive state for a plant cell. In an isotonic solution, there's no net movement, and the cell may become slightly flaccid, losing some of its firmness. In a hypertonic solution, water leaves, the vacuole shrinks, and the membrane pulls away from the wall. The cell is plasmolysed, and that's what makes a plant wilt. So to predict, find which side has more solute, decide which way water moves, then apply the cell type."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Tonicity",
+        "props": {
+          "cell": "plant",
+          "columns": [
+            {
+              "kind": "hypo",
+              "name": "hypotonic",
+              "sub": "water moves in",
+              "result": "turgid: firm",
+              "at": 82,
+              "amber": true
+            },
+            {
+              "kind": "iso",
+              "name": "isotonic",
+              "sub": "no net movement",
+              "result": "flaccid",
+              "at": 430
+            },
+            {
+              "kind": "hyper",
+              "name": "hypertonic",
+              "sub": "water moves out",
+              "result": "plasmolysed",
+              "at": 670
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Hypertonic: more solute than the cell; water leaves the cell."
+        },
+        {
+          "text": "Hypotonic: less solute than the cell; water enters the cell."
+        },
+        {
+          "text": "Isotonic: the same solute concentration as the cell; no net water movement."
+        },
+        {
+          "text": "Lysis / crenation: an animal cell bursting in hypotonic, or shrivelling in hypertonic, solution."
+        },
+        {
+          "text": "Turgid / plasmolysed: a plant cell firm in hypotonic, or with its membrane pulled from the wall in hypertonic, solution."
+        }
+      ],
+      "callout": "The \"tonic\" refers to solute, not water.",
+      "durationInFrames": 1170,
+      "caption": "Hypertonic, hypotonic, isotonic; lysis, crenation; turgid, plasmolysed.",
+      "voiceover": {
+        "text": "Let's pin down the terms. Hypertonic means more solute than the cell, so water leaves the cell. Hypotonic means less solute than the cell, so water enters. Isotonic means the same solute concentration, so there's no net water movement. Lysis is an animal cell bursting in a hypotonic solution, and crenation is it shrivelling in a hypertonic one. And a plant cell is turgid when it's firm in a hypotonic solution, and plasmolysed when its membrane pulls away from the wall in a hypertonic one."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Six predictions from one rule",
+      "question": "Predict the effects of hypertonic, hypotonic and isotonic solutions on animal cells and on plant cells. (6 marks)",
+      "coachNote": "Six cases: set up the rule once, then run it through each one.",
+      "steps": [
+        "Rule: water moves by osmosis toward the higher solute concentration.",
+        "Hypotonic: water enters. Animal cell swells and bursts (lysis); plant cell becomes turgid, as the wall resists bursting.",
+        "Isotonic: no net movement. Animal cell stays normal; plant cell may become flaccid.",
+        "Hypertonic: water leaves. Animal cell shrivels (crenation); plant cell plasmolyses as the membrane pulls from the wall.",
+        "Answer: six outcomes, each explained by the direction of water and the presence of a wall ✓"
+      ],
+      "durationInFrames": 1212,
+      "caption": "One rule, three solutions, two cell types: six explained predictions.",
+      "voiceover": {
+        "text": "Here's a six mark predict question. Predict the effects of hypertonic, hypotonic and isotonic solutions on animal cells and on plant cells. That's six cases, and missing one is the commonest way to lose a mark. So set up the rule once. Water moves toward the higher solute concentration. Then run it through. Hypotonic, water enters, the animal cell bursts, the plant cell becomes turgid. Isotonic, no net movement. Hypertonic, water leaves, the animal cell crenates, the plant cell plasmolyses. Every prediction comes with its reason."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The hypertonic trap",
+      "body": "Trap: 'A hypertonic solution has lots of water, so water floods into the cell.'",
+      "secondary": "Hypertonic means MORE SOLUTE, and so LESS water, than the cell. Water moves OUT of the cell into the hypertonic solution, and the cell shrinks. Tonicity describes solute concentration, not water.",
+      "mistakeTag": "Tonic means solute",
+      "callout": "Hyper = more solute outside = water out.",
+      "durationInFrames": 930,
+      "caption": "Hypertonic means more solute outside, so water leaves the cell.",
+      "voiceover": {
+        "text": "Here's the trap. Reading hypertonic as a solution with lots of water, so water floods into the cell. It's the opposite. Hypertonic means more solute than the cell, and therefore less water. So water moves out of the cell, into the hypertonic solution, and the cell shrinks. The tonic part of the word refers to solute concentration, not water. Hyper, more solute outside, water out."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A lettuce leaf is placed in concentrated salt water, and a sample of red blood cells is placed in distilled water. Predict what happens to the cells in each case.",
+      "pausePrompt": "Pause: where is the solute concentration higher in each case?",
+      "answerSteps": [
+        "Salt water is hypertonic to the lettuce cells, so water leaves them by osmosis.",
+        "The lettuce cells plasmolyse and the leaf goes limp.",
+        "Distilled water is hypotonic to red blood cells, so water enters them.",
+        "Answer: lettuce cells plasmolyse; red blood cells, with no wall, swell and burst (lysis) ✓"
+      ],
+      "durationInFrames": 1136,
+      "caption": "Lettuce in salt water plasmolyses; red blood cells in distilled water burst.",
+      "voiceover": {
+        "text": "Quick check. A lettuce leaf goes into concentrated salt water, and some red blood cells go into distilled water. Predict what happens to the cells in each case. Pause, and ask where the solute concentration is higher each time. OK. The salt water is hypertonic to the lettuce cells, so water leaves them, they plasmolyse, and the leaf goes limp. Distilled water is hypotonic to red blood cells, so water rushes in, and with no wall, they burst."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Water moves by osmosis toward the higher solute concentration.",
+        "Hypotonic: water in. Animal cell bursts (lysis); plant cell turgid.",
+        "Isotonic: no net movement. Animal cell normal; plant cell may be flaccid.",
+        "Hypertonic: water out. Animal cell crenates; plant cell plasmolyses.",
+        "The cell wall is why plant cells resist bursting."
+      ],
+      "finalPrompt": "Which side has more solute? Which way does water go? Wall or no wall?",
+      "durationInFrames": 1266,
+      "caption": "Solute, direction, wall: three questions predict any cell’s fate.",
+      "voiceover": {
+        "text": "Let's lock it in. Water moves by osmosis toward the higher solute concentration. In a hypotonic solution, water moves in, so an animal cell bursts, and a plant cell becomes turgid. In an isotonic solution there's no net movement, so an animal cell stays normal, and a plant cell may be flaccid. In a hypertonic solution, water moves out, so an animal cell crenates, and a plant cell plasmolyses. Ask three questions. Which side has more solute, which way does water go, and is there a wall? Next time, transport that costs energy."
+      }
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "title": "The Fluid Mosaic Membrane",
+  "subtitle": "How the membrane decides who passes",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Use the fluid mosaic model of the cell membrane to explain the structure and function of protein channels, phospholipids, peripheral proteins, integral proteins, cholesterol and glycoproteins"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "lessonIntent": "Students can use the fluid mosaic model to explain the structure and function of phospholipids, protein channels, integral and peripheral proteins, cholesterol and glycoproteins.",
+  "examSkill": "Link each membrane component’s structure to its function, and explain why the membrane is partially permeable.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, the fluid mosaic model of the cell membrane. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "The Fluid Mosaic Membrane"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Who gets through?",
+      "body": "Oxygen slips straight through a cell membrane, but a sodium ion needs a special protein doorway.",
+      "callout": "The membrane’s structure decides who passes.",
+      "image": "bioY11M1L3MembraneMosaic",
+      "durationInFrames": 1206,
+      "caption": "Oxygen crosses the membrane freely; a sodium ion needs a protein doorway.",
+      "voiceover": {
+        "text": "Here's a question. Why can oxygen slip straight through a cell membrane, while a sodium ion needs a special protein doorway? The answer is in the membrane's chemistry. Its core is water fearing, so it waves through small non polar molecules, but it blocks charged particles. And the membrane isn't a solid wall. It's a moving, jostling sea of lipids studded with proteins, like tiles drifting on a liquid floor. Today we meet each part of that fluid mosaic, and see how its structure gives it a job."
+      }
+    },
+    {
+      "id": "concept-bilayer",
+      "type": "concept",
+      "heading": "The phospholipid bilayer",
+      "body": "Each phospholipid has a water-loving head and two water-fearing tails, so in water they form a bilayer.",
+      "bullets": [
+        {
+          "text": "Hydrophilic phosphate heads face the water on both sides."
+        },
+        {
+          "text": "Hydrophobic fatty-acid tails point inward, forming a hydrophobic core."
+        },
+        {
+          "text": "Small non-polar molecules such as O₂ cross; ions and large polar molecules are blocked."
+        }
+      ],
+      "callout": "The hydrophobic core makes the membrane partially permeable.",
+      "durationInFrames": 1478,
+      "caption": "Heads out, tails in: the hydrophobic core lets O₂ through and blocks ions.",
+      "voiceover": {
+        "text": "The backbone of the membrane is the phospholipid. Each one has a hydrophilic, or water loving, phosphate head, and two hydrophobic, water fearing, fatty acid tails. Put them in water and they arrange themselves automatically into a bilayer. The heads face the watery surroundings on both sides, and the tails point inward, away from water, forming a hydrophobic core. That core is what makes the membrane choosy. Small non polar molecules, like oxygen and carbon dioxide, pass through it easily. But ions and large polar molecules are blocked. So the membrane is partially, or selectively, permeable. And it's fluid, because the phospholipids are constantly drifting sideways within their layer."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Membrane",
+        "props": {
+          "labels": [
+            {
+              "part": "head",
+              "text": "hydrophilic head",
+              "note": "faces the water",
+              "at": 82
+            },
+            {
+              "part": "tails",
+              "text": "hydrophobic tails",
+              "note": "point inward",
+              "at": 178
+            },
+            {
+              "part": "core",
+              "text": "hydrophobic core",
+              "at": 622,
+              "amber": true
+            },
+            {
+              "part": "drift",
+              "text": "fluid: lipids drift sideways",
+              "at": 1114
+            }
+          ],
+          "routes": [
+            {
+              "via": "bilayer",
+              "particle": "o2",
+              "dir": "in",
+              "at": 802
+            },
+            {
+              "via": "blocked",
+              "particle": "ion",
+              "dir": "in",
+              "at": 910,
+              "low": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-proteins",
+      "type": "concept",
+      "heading": "Proteins in the mosaic",
+      "body": "Proteins scattered through the bilayer do the jobs the lipid alone cannot.",
+      "bullets": [
+        {
+          "text": "Integral proteins span the bilayer; many are channels or carriers."
+        },
+        {
+          "text": "A protein channel is a water-filled pore for specific ions and polar molecules."
+        },
+        {
+          "text": "Peripheral proteins sit on one surface: support, signalling, enzymes."
+        },
+        {
+          "text": "Glycoproteins carry carbohydrate tags for cell recognition."
+        }
+      ],
+      "callout": "Glycoproteins are the cell’s identity tags.",
+      "durationInFrames": 1646,
+      "caption": "Integral proteins and channels span the bilayer; peripheral proteins sit on it; glycoproteins tag it.",
+      "voiceover": {
+        "text": "So if the core blocks ions, how do they ever cross? Through proteins. Integral proteins span the whole bilayer, and many of them act as channels or carriers that move ions and polar molecules across. A protein channel is a water filled pore that lets specific ions or polar molecules pass right through the hydrophobic core. Peripheral proteins don't span the membrane. They sit on one surface, where they support the membrane and help with signalling or enzyme activity. And glycoproteins are proteins with a carbohydrate chain attached. They work in cell recognition and signalling, like identity tags. In fact, your blood group comes down to the glycoproteins on your red blood cells. All these proteins, scattered through the lipid, are the mosaic."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Membrane",
+        "props": {
+          "show": [
+            {
+              "part": "integral",
+              "at": 74
+            },
+            {
+              "part": "channel",
+              "at": 350
+            },
+            {
+              "part": "peripheral",
+              "at": 590
+            },
+            {
+              "part": "glyco",
+              "at": 878
+            }
+          ],
+          "labels": [
+            {
+              "part": "integral",
+              "text": "integral protein",
+              "note": "spans the bilayer",
+              "at": 94
+            },
+            {
+              "part": "channel",
+              "text": "protein channel",
+              "note": "water-filled pore",
+              "at": 370
+            },
+            {
+              "part": "peripheral",
+              "text": "peripheral protein",
+              "note": "on one surface",
+              "at": 610
+            },
+            {
+              "part": "glyco",
+              "text": "glycoprotein",
+              "note": "recognition tag",
+              "at": 898,
+              "amber": true
+            }
+          ],
+          "routes": [
+            {
+              "via": "channel",
+              "particle": "ion",
+              "dir": "in",
+              "at": 390
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-cholesterol",
+      "type": "concept",
+      "heading": "Cholesterol and the whole model",
+      "body": "Cholesterol sits between the tails and keeps the membrane’s fluidity in a working range.",
+      "bullets": [
+        {
+          "text": "Cholesterol stops the membrane getting too fluid when warm or too rigid when cold."
+        },
+        {
+          "text": "The bilayer blocks most substances."
+        },
+        {
+          "text": "Proteins provide selective routes; glycoproteins handle recognition."
+        }
+      ],
+      "callout": "Structure and function fit at every level.",
+      "durationInFrames": 1502,
+      "caption": "Cholesterol regulates fluidity; together the parts make a partially permeable gatekeeper.",
+      "voiceover": {
+        "text": "If the membrane is fluid, what stops it falling apart, or going stiff? Cholesterol. Cholesterol molecules sit between the phospholipid tails, and they stabilise the membrane and regulate its fluidity. They keep it from becoming too fluid when it's warm, and too rigid when it's cold. Now put the whole model together. The phospholipid bilayer blocks most substances. The proteins provide selective routes in and out. And the glycoproteins handle recognition. That's why we call it a fluid mosaic. Fluid, because the parts move. Mosaic, because of the scattered pattern of different proteins. And it makes the membrane a partially permeable gatekeeper, with structure and function fitting together at every level."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Membrane",
+        "props": {
+          "show": [
+            {
+              "part": "integral",
+              "at": 0
+            },
+            {
+              "part": "channel",
+              "at": 0
+            },
+            {
+              "part": "peripheral",
+              "at": 0
+            },
+            {
+              "part": "glyco",
+              "at": 0
+            },
+            {
+              "part": "chol",
+              "at": 74
+            }
+          ],
+          "labels": [
+            {
+              "part": "chol",
+              "text": "cholesterol",
+              "note": "regulates fluidity",
+              "at": 94,
+              "amber": true
+            },
+            {
+              "part": "head",
+              "text": "phospholipids",
+              "at": 574
+            },
+            {
+              "part": "channel",
+              "text": "channel",
+              "at": 624
+            },
+            {
+              "part": "integral",
+              "text": "integral",
+              "at": 644
+            },
+            {
+              "part": "glyco",
+              "text": "glycoprotein",
+              "at": 704
+            },
+            {
+              "part": "peripheral",
+              "text": "peripheral",
+              "at": 664
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Phospholipid: a hydrophilic phosphate head with two hydrophobic fatty-acid tails."
+        },
+        {
+          "text": "Bilayer: two layers of phospholipids, tails pointing inward, heads facing the water."
+        },
+        {
+          "text": "Integral protein: a protein embedded through the bilayer; often a channel or carrier."
+        },
+        {
+          "text": "Peripheral protein: a protein attached to one surface; support and signalling roles."
+        },
+        {
+          "text": "Glycoprotein: a protein with a carbohydrate chain; cell recognition and signalling."
+        }
+      ],
+      "callout": "Fluid: the parts move. Mosaic: the scattered proteins.",
+      "durationInFrames": 1194,
+      "caption": "Phospholipid, bilayer, integral protein, peripheral protein, glycoprotein.",
+      "voiceover": {
+        "text": "Five terms to own. A phospholipid is a molecule with a hydrophilic phosphate head and two hydrophobic fatty acid tails. A bilayer is two layers of phospholipids, tails pointing inward and heads facing the water on both sides. An integral protein is embedded right through the bilayer, and is often a channel or carrier. A peripheral protein is attached to one surface of the membrane, with support and signalling roles. And a glycoprotein is a protein with a carbohydrate chain attached, used in cell recognition and signalling."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Explaining who crosses",
+      "question": "Using the fluid mosaic model, explain why oxygen crosses the membrane directly through the bilayer, but sodium ions (Na⁺) need a protein channel.",
+      "coachNote": "Ask two things about each substance: its size, and whether it is charged or polar.",
+      "steps": [
+        "The core of the bilayer is made of hydrophobic fatty-acid tails.",
+        "O₂ is small and non-polar, so it passes through the hydrophobic core.",
+        "Na⁺ is charged, so it is blocked by the hydrophobic core.",
+        "A protein channel provides a water-filled pore, so Na⁺ crosses without touching the core.",
+        "Answer: O₂ is small and non-polar; Na⁺ is charged and needs a channel’s water-filled pore ✓"
+      ],
+      "durationInFrames": 1404,
+      "caption": "Small and non-polar crosses the core; charged needs a channel.",
+      "voiceover": {
+        "text": "Let's explain the hook properly. Why does oxygen cross the membrane directly through the bilayer, while sodium ions need a protein channel? Ask two things about each substance, its size, and whether it's charged or polar. Start with the membrane. Its core is made of hydrophobic fatty acid tails. Oxygen is small and non polar, so it passes straight through that core. A sodium ion is charged, so the hydrophobic core blocks it. A protein channel gives it a water filled pore, so the ion crosses without ever touching the core. That's a full explanation, the membrane's structure, then each substance's properties."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The solid-wall trap",
+      "body": "Trap: 'The cell membrane is a solid, fixed sheet with proteins glued in place.'",
+      "secondary": "The membrane is fluid: phospholipids and many proteins drift sideways within the layer, like objects floating on a liquid. That movement is essential to how it works.",
+      "mistakeTag": "It is fluid, not fixed",
+      "callout": "Fluid means moving; mosaic means a scattered pattern of proteins.",
+      "durationInFrames": 1158,
+      "caption": "The membrane is fluid: its lipids and many proteins drift sideways.",
+      "voiceover": {
+        "text": "Here's the trap. Picturing the membrane as a solid, fixed sheet, with proteins glued in place. That's wrong. The membrane is fluid. Its phospholipids, and many of its proteins, drift sideways within the layer, like objects floating on a liquid. The word mosaic describes the scattered pattern of different proteins. And that movement isn't a side detail. It's essential to how the membrane works. So if an exam asks why the model is called fluid mosaic, give both halves, the movement, and the pattern."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Cholesterol is removed from an animal cell’s membrane, and the cell is then warmed. Predict and explain the effect on the membrane.",
+      "pausePrompt": "Pause: what does cholesterol do when it is warm?",
+      "answerSteps": [
+        "When warm, cholesterol normally stops the membrane becoming too fluid.",
+        "Without cholesterol, the phospholipids move more freely, so the membrane becomes too fluid.",
+        "A too-fluid membrane is leakier, so substances cross more easily.",
+        "Answer: the membrane becomes more fluid and less stable, so the cell loses control of what crosses ✓"
+      ],
+      "durationInFrames": 1124,
+      "caption": "No cholesterol when warm: the membrane gets too fluid and leaky.",
+      "voiceover": {
+        "text": "Quick check. Cholesterol is removed from an animal cell's membrane, and then the cell is warmed. Predict and explain the effect on the membrane. Pause, and think about what cholesterol does when it's warm. OK. When it's warm, cholesterol normally stops the membrane becoming too fluid. Take it away, and the phospholipids move more freely, so the membrane becomes too fluid and less stable. A membrane like that leaks, so the cell loses control over what crosses."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Phospholipids form a bilayer: hydrophilic heads out, hydrophobic tails in.",
+        "The hydrophobic core lets small non-polar molecules through and blocks ions, so the membrane is partially permeable.",
+        "Integral proteins span the bilayer; protein channels are water-filled pores; peripheral proteins sit on one surface.",
+        "Glycoproteins carry carbohydrate tags for recognition; cholesterol regulates fluidity.",
+        "Fluid: the parts move. Mosaic: the scattered proteins."
+      ],
+      "finalPrompt": "For any component: name its structure, then say what that structure lets it do.",
+      "durationInFrames": 1218,
+      "caption": "Bilayer, proteins, glycoproteins and cholesterol: structure explains function.",
+      "voiceover": {
+        "text": "Let's lock it in. Phospholipids form a bilayer, with hydrophilic heads out and hydrophobic tails in. That hydrophobic core lets small non polar molecules through and blocks ions, so the membrane is partially permeable. Integral proteins span the bilayer, protein channels are water filled pores, and peripheral proteins sit on one surface. Glycoproteins carry carbohydrate tags for recognition, and cholesterol regulates fluidity. For any component, name its structure, then say what that structure lets it do. Next time, how substances cross this membrane without the cell spending any energy."
+      }
+    }
+  ]
+}

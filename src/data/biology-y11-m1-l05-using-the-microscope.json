@@ -1,0 +1,336 @@
+{
+  "title": "Using the Microscope",
+  "subtitle": "Wet mounts, and how big a cell really is",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 5",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Conduct a practical investigation to prepare a wet mount slide and identify the cytoplasm, cell wall and nucleus under a light microscope",
+    "Conduct a practical investigation to calculate the size of a variety of specialised cells under the microscope using a mini-grid and the equation"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "lessonIntent": "Students can prepare a wet mount, identify the cytoplasm, cell wall and nucleus, and calculate a cell’s real size using a mini-grid and the magnification equation.",
+  "examSkill": "Decide whether a measured length is real (read off a stage grid) or magnified (read off an image) before choosing whether to divide by the magnification.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, we prepare a slide and measure real cells. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Using the Microscope"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "How big is it, really?",
+      "body": "A cell can fill the whole field of view, yet it is microscopic. A grid and a known magnification turn what you see into a real measurement.",
+      "callout": "Reading about a cell is one thing; measuring it is another.",
+      "image": "bioY11M1L2HookeCork",
+      "durationInFrames": 1014,
+      "caption": "A grid and the magnification equation turn an image into a real size.",
+      "voiceover": {
+        "text": "Under a microscope, a single cell can fill the whole field of view. But you know it's microscopic. So how big is it, really? With nothing more than a grid and a known magnification, you can turn what you see into an actual measurement in micrometres. Today you'll prepare a wet mount of onion skin, find the cytoplasm, cell wall and nucleus, and then work out how big those cells actually are."
+      }
+    },
+    {
+      "id": "concept-wet-mount",
+      "type": "concept",
+      "heading": "Preparing a wet mount",
+      "body": "A good wet mount keeps the specimen flat, hydrated and stained, with no trapped air bubbles.",
+      "bullets": [
+        {
+          "text": "Water on a clean slide; lay a thin layer of onion epidermis in it; add a drop of iodine to stain."
+        },
+        {
+          "text": "Lower the coverslip at an angle so air is pushed out; focus on low power first."
+        },
+        {
+          "text": "Cell wall: firm outer boundary. Cytoplasm: pale jelly. Nucleus: darker, stained, rounded."
+        }
+      ],
+      "callout": "A dark-edged circle is usually a trapped air bubble, not a cell.",
+      "durationInFrames": 1766,
+      "caption": "Water, thin specimen, stain, angled coverslip; then find the wall, cytoplasm and nucleus.",
+      "voiceover": {
+        "text": "Here's the method. Place a drop of water on a clean slide. Peel a thin layer of onion epidermis and lay it flat in the drop, because light has to pass through it. Add a drop of iodine to stain it. That adds contrast, so structures stand out. Then lower the coverslip from one edge, at about forty five degrees, so air is pushed out ahead of the liquid. Trapped bubbles are dark edged circles that beginners mistake for cells. Now focus on low power first, then high power. Under the light microscope, the cell wall is the firm outer boundary. The cytoplasm is the pale jelly filling each cell. And the nucleus is a darker, stained, rounded structure. Safety note, slides and coverslips are sharp glass, and iodine stains skin and clothes."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Scope",
+        "props": {
+          "mode": "mount",
+          "steps": {
+            "water": {
+              "text": "drop of water",
+              "at": 6
+            },
+            "specimen": {
+              "text": "thin onion layer",
+              "at": 106
+            },
+            "stain": {
+              "text": "iodine stain",
+              "at": 382
+            },
+            "coverslip": {
+              "text": "coverslip at ~45°",
+              "at": 526
+            },
+            "focus": {
+              "text": "focus: low power first",
+              "at": 910
+            }
+          },
+          "view": {
+            "at": 1036,
+            "labels": [
+              {
+                "part": "wall",
+                "text": "cell wall",
+                "at": 1066
+              },
+              {
+                "part": "cytoplasm",
+                "text": "cytoplasm",
+                "at": 1162
+              },
+              {
+                "part": "nucleus",
+                "text": "nucleus",
+                "at": 1282
+              },
+              {
+                "part": "bubble",
+                "text": "air bubble: not a cell",
+                "at": 1372,
+                "amber": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "concept-mini-grid",
+      "type": "concept",
+      "heading": "Measuring with a mini-grid",
+      "body": "A grid on the stage is magnified along with the cell, so reading the cell against it gives the real size straight away.",
+      "bullets": [
+        {
+          "text": "Count the squares the cell spans: 4 squares × 100 µm = 400 µm."
+        },
+        {
+          "text": "magnification = image size ÷ real size."
+        },
+        {
+          "text": "Forwards: at ×100 that 400 µm cell appears 40 000 µm, or 40 mm, wide."
+        }
+      ],
+      "callout": "The grid is magnified too: its reading is already real, so there is nothing to divide.",
+      "durationInFrames": 1574,
+      "caption": "Grid reading = real size; the equation converts between real size and image size.",
+      "voiceover": {
+        "text": "Now, how big is a cell? A mini grid lies on the stage beside the specimen. Its squares have a known size, here one hundred micrometres, and because the grid is magnified by exactly the same amount as the cell, it's a ruler marked in real micrometres. So just count the squares the cell spans. This one covers four squares, so its real size is four times one hundred, four hundred micrometres. There's nothing to divide. The magnification equation links the three quantities. Magnification equals image size divided by real size. Use it forwards as a check. At times one hundred, a four hundred micrometre cell appears forty thousand micrometres wide. That's forty millimetres across the field."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Scope",
+        "props": {
+          "mode": "grid",
+          "squareUm": 100,
+          "span": 4,
+          "mag": 100,
+          "at": {
+            "grid": 130,
+            "cell": 170,
+            "count": 526,
+            "real": 682,
+            "forward": 934,
+            "image": 1222
+          }
+        }
+      }
+    },
+    {
+      "id": "concept-cell-sizes",
+      "type": "concept",
+      "heading": "Specialised cells vary in size",
+      "body": "Cells are specialised for different jobs, and their sizes vary widely.",
+      "bullets": [
+        {
+          "text": "Red blood cell about 8 µm; cheek cell about 60 µm."
+        },
+        {
+          "text": "Onion epidermal cell 200–300 µm long; a nerve cell can be over a metre."
+        },
+        {
+          "text": "Measure several cells and use the mean to improve reliability."
+        }
+      ],
+      "callout": "State results with units and sensible significant figures.",
+      "durationInFrames": 1346,
+      "caption": "From 8 µm red blood cells to metre-long nerve cells: size relates to function.",
+      "voiceover": {
+        "text": "Are all cells the same size? Not even close, which is why the syllabus says measure a variety of specialised cells. A red blood cell is about eight micrometres across. A human cheek cell, about sixty. An onion epidermal cell can be two hundred to three hundred micrometres long. And a nerve cell can be over a metre long. Measuring several different cells shows that size relates to function. And measuring several cells of the same kind, then taking the mean, improves the reliability of your estimate. Always give the unit, and a sensible number of significant figures."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Scale",
+        "props": {
+          "mode": "ruler",
+          "fromNm": 1000,
+          "toNm": 1000000000.0,
+          "items": [
+            {
+              "name": "red blood cell",
+              "nm": 8000,
+              "icon": "rbc",
+              "size": "~8 µm",
+              "at": 202
+            },
+            {
+              "name": "cheek cell",
+              "nm": 60000,
+              "icon": "cell",
+              "size": "~60 µm",
+              "at": 310
+            },
+            {
+              "name": "onion cell",
+              "nm": 250000,
+              "icon": "cell",
+              "size": "200–300 µm",
+              "at": 382
+            },
+            {
+              "name": "nerve cell",
+              "nm": 1000000000.0,
+              "icon": "cell",
+              "size": "over 1 m",
+              "at": 550
+            }
+          ],
+          "footer": [
+            {
+              "text": "measure several cells, then take the mean",
+              "at": 790,
+              "amber": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Wet mount: a specimen in a drop of liquid under a coverslip, keeping it hydrated and clear."
+        },
+        {
+          "text": "Stain: a dye such as iodine or methylene blue that adds contrast."
+        },
+        {
+          "text": "Magnification: how many times larger the image is than the object (objective × eyepiece)."
+        },
+        {
+          "text": "Micrometre (µm): one-thousandth of a millimetre; 1 mm = 1000 µm."
+        },
+        {
+          "text": "Mini-grid: a grid of known square size on the stage, read in real micrometres."
+        }
+      ],
+      "callout": "magnification = image size ÷ real size",
+      "durationInFrames": 1242,
+      "caption": "Wet mount, stain, magnification, micrometre, mini-grid.",
+      "voiceover": {
+        "text": "Five terms. A wet mount is a slide where the specimen sits in a drop of liquid under a coverslip, keeping it hydrated and clear. A stain is a dye, like iodine or methylene blue, that adds contrast so structures stand out. Magnification is how many times larger the image is than the real object, and it's the objective lens times the eyepiece lens. A micrometre is one thousandth of a millimetre. And a mini grid is a grid of known square size on the stage, which reads in real micrometres."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Real size from a photomicrograph",
+      "question": "A cell measures 30 mm across on a photomicrograph taken at ×100. Calculate its real size in micrometres.",
+      "coachNote": "This length was read off a magnified image, so divide by the magnification.",
+      "steps": [
+        "Known: image size = 30 mm; magnification = ×100.",
+        "Convert: 30 mm × 1000 = 30 000 µm.",
+        "Formula: real size = image size ÷ magnification.",
+        "Substitute: 30 000 µm ÷ 100 = 300 µm.",
+        "Answer: 300 µm, plausible for a large plant cell ✓"
+      ],
+      "durationInFrames": 1152,
+      "caption": "Image measurement: convert to µm, then divide by the magnification.",
+      "voiceover": {
+        "text": "Here's the other direction. A cell measures thirty millimetres across on a photomicrograph taken at times one hundred. What's its real size? First decide what you measured. This length came off a magnified image, so this time you do divide. Convert first. Thirty millimetres is thirty thousand micrometres. Then real size equals image size divided by magnification. Thirty thousand divided by one hundred is three hundred micrometres. And sanity check it. Three hundred micrometres is plausible for a large plant cell."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The multiply trap",
+      "body": "Trap: 'To find the real size, multiply the image size by the magnification.'",
+      "secondary": "Divide. The image is the enlarged view, so real size = image size ÷ magnification. And never divide a stage-grid reading: it is already real. A cell answer below 1 µm usually means the magnification was applied twice.",
+      "mistakeTag": "Divide, and only once",
+      "callout": "Image measurement: divide. Grid reading: no division.",
+      "durationInFrames": 1122,
+      "caption": "Real size = image ÷ magnification; a stage-grid reading is already real.",
+      "voiceover": {
+        "text": "Two traps here. The first is multiplying the image size by the magnification to get the real size. The image is the enlarged view, and the real cell is smaller, so you divide. The second is the opposite mistake, dividing a stage grid reading by the magnification. That grid was already magnified along with the cell, so its reading is already real. If you get a cell smaller than one micrometre, smaller than most bacteria, you've probably applied the magnification twice."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Against a stage grid of 100 µm squares, a cheek cell spans two-fifths of one square. What is its real width? How wide would it appear at ×400?",
+      "pausePrompt": "Pause: is the grid reading real or magnified?",
+      "answerSteps": [
+        "The stage grid reads in real micrometres, so no division.",
+        "Real width = 0.4 × 100 µm = 40 µm.",
+        "Image = real × magnification = 40 µm × 400 = 16 000 µm.",
+        "Answer: 40 µm wide, appearing 16 mm across at ×400 ✓"
+      ],
+      "durationInFrames": 1124,
+      "caption": "Grid reading 40 µm is real; at ×400 it appears 16 mm wide.",
+      "voiceover": {
+        "text": "Quick check. Against a stage grid of one hundred micrometre squares, a cheek cell spans two fifths of one square. What's its real width, and how wide would it appear at times four hundred? Pause, and decide, is the grid reading real or magnified? OK. The stage grid reads in real micrometres, so no division. Zero point four times one hundred is forty micrometres. Then forwards, forty times four hundred is sixteen thousand micrometres, or sixteen millimetres."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Wet mount: water, thin specimen, stain, coverslip at an angle, low power first.",
+        "Wall: firm boundary; cytoplasm: pale jelly; nucleus: darker and stained.",
+        "A stage-grid reading is already the real size: no division.",
+        "magnification = image size ÷ real size; divide only a magnified image measurement.",
+        "Measure several specialised cells and take the mean; include units."
+      ],
+      "finalPrompt": "Before you divide: did this length come from a grid, or from an image?",
+      "durationInFrames": 1254,
+      "caption": "Prepare, identify, measure: grid readings are real, image readings get divided.",
+      "voiceover": {
+        "text": "Let's lock it in. For a wet mount, use water, a thin specimen, a stain, and a coverslip lowered at an angle, then focus on low power first. The cell wall is the firm boundary, the cytoplasm is pale, and the nucleus is darker and stained. A stage grid reading is already the real size. Magnification equals image size over real size, and you only divide a measurement from a magnified image. Before you divide, ask where the length came from. Next time, how better microscopes changed what we know about cells."
+      }
+    }
+  ]
+}
