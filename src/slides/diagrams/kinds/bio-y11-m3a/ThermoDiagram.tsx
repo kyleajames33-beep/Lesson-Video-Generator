@@ -124,7 +124,7 @@ export const ThermoDiagram = (props: ThermoProps) => {
 	const hi = 45;
 	const GX0 = 96;
 	const GX1 = 470;
-	const GY1 = 440 - Math.max(0, footer.length - 1) * 28;
+	const GY1 = 440 - footer.length * 30;
 	const GY0 = GY1 - (GX1 - GX0);
 	const gx = (v: number) => GX0 + ((v - lo) / (hi - lo)) * (GX1 - GX0);
 	const gy = (v: number) => GY1 - ((v - lo) / (hi - lo)) * (GY1 - GY0);

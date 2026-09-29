@@ -1,0 +1,369 @@
+{
+  "title": "Water Balance in Plants (Practical)",
+  "subtitle": "Measuring structural adaptations in Australian leaves",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 10",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Conduct a practical investigation to examine structural adaptations for water balance in Australian plants"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-02"
+  ],
+  "inquiryQuestion": "How do the structures of Australian plants reduce water loss?",
+  "lessonIntent": "Students can explain how leaf structures reduce water loss and carry out a fair investigation comparing percentage mass loss between leaves.",
+  "examSkill": "Explain each structure by its mechanism on water loss, process results as percentage mass lost, and name controlled variables and limitations.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is Biology. Today, a practical on how Australian leaves save water. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Water Balance in Plants (Practical)"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Closed pores, hungry plant",
+      "body": "A desert plant must keep its stomata closed to save water, but stomata are how it takes in the CO₂ it needs.",
+      "callout": "The answer is written into the leaf’s structure, and you can measure it.",
+      "image": "bioM8L5DesertPlant",
+      "caption": "Leaf structure balances saving water against taking in carbon dioxide.",
+      "voiceover": {
+        "text": "Here's a dilemma. A desert plant has to keep water in, so it would like its stomata closed. But stomata are also how carbon dioxide gets in for photosynthesis. Seal them completely and the plant starves. So how do Australian plants survive in hot, dry country? The answer is written into the structure of their leaves, and today you'll see how to measure it."
+      },
+      "durationInFrames": 780
+    },
+    {
+      "id": "concept-structures",
+      "type": "concept",
+      "heading": "Structures that keep water in",
+      "body": "Drought-adapted leaves cut water loss while still allowing some gas exchange.",
+      "bullets": [
+        {
+          "text": "Thick waxy cuticle waterproofs the surface."
+        },
+        {
+          "text": "Sunken stomata with hairs trap humid air."
+        },
+        {
+          "text": "Rolled, reduced or vertical leaves cut exposure."
+        }
+      ],
+      "callout": "Most water leaves through the stomata, not the cuticle.",
+      "caption": "Waxy cuticle, sunken hairy stomata, rolled or vertical leaves.",
+      "voiceover": {
+        "text": "Water leaves a plant mainly by transpiration, evaporating inside the leaf and diffusing out through the stomata. Compare a soft garden leaf with a tough sclerophyll leaf, like a eucalypt's. The sclerophyll has a thick waxy cuticle, which waterproofs the surface, so almost no water escapes except through the stomata. Many species, like Hakea and Banksia, have stomata sunk into pits, often lined with hairs. That traps a pocket of humid air over each pore, which lowers the gradient and slows diffusion out. Other features help too. Spinifex rolls its leaves inward, and many eucalypts hang their leaves vertically, edge-on to the midday sun, so the leaf stays cooler."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aLeaf",
+        "props": {
+          "mode": "section",
+          "panels": [
+            {
+              "title": "Soft leaf",
+              "sub": "thin cuticle, exposed stomata",
+              "kind": "soft",
+              "rate": 7,
+              "at": 111
+            },
+            {
+              "title": "Sclerophyll leaf",
+              "sub": "e.g. eucalypt, Hakea, Banksia",
+              "kind": "sclero",
+              "rate": 2,
+              "at": 182
+            }
+          ],
+          "vapourAt": 0,
+          "features": [
+            {
+              "text": "thick waxy cuticle",
+              "target": "cuticle",
+              "at": 263
+            },
+            {
+              "text": "sunken stomata",
+              "target": "stomata",
+              "at": 518
+            },
+            {
+              "text": "hairs trap humid air",
+              "target": "hairs",
+              "at": 599
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1230
+    },
+    {
+      "id": "concept-method",
+      "type": "concept",
+      "heading": "The investigation",
+      "body": "Weigh leaves of similar area at set intervals in identical conditions, and compare the percentage of mass lost.",
+      "bullets": [
+        {
+          "text": "Independent variable: the plant species."
+        },
+        {
+          "text": "Dependent variable: % of starting mass lost."
+        },
+        {
+          "text": "Controlled: leaf area, temperature, humidity, light, air movement, timing."
+        }
+      ],
+      "callout": "The slower-drying leaf has the better water-balance adaptations.",
+      "caption": "Eucalyptus 2.00 g → 1.88 g; privet 2.00 g → 1.40 g over an hour.",
+      "voiceover": {
+        "text": "So how do we show these features actually reduce water loss? Weigh leaves as they dry. Take leaves of similar surface area from two or more plants, say a eucalypt and a soft-leaved species. Record each leaf's starting mass on an electronic balance. Lay them in identical conditions, the same temperature, light and air movement, and re-weigh every ten minutes for an hour. Then calculate the percentage of starting mass lost. In one class, the eucalypt leaf went from two point zero zero grams to one point eight eight grams, and the soft privet leaf went from two point zero zero to one point four zero. The leaf that loses water more slowly has the more effective adaptations."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aLeaf",
+        "props": {
+          "mode": "graph",
+          "minutes": 60,
+          "yMax": 35,
+          "series": [
+            {
+              "label": "Privet (soft)",
+              "start": 2.0,
+              "end": 1.4,
+              "at": 853,
+              "tone": "soft"
+            },
+            {
+              "label": "Eucalyptus",
+              "start": 2.0,
+              "end": 1.88,
+              "at": 691,
+              "tone": "sclero"
+            }
+          ],
+          "footer": [
+            {
+              "text": "Slower loss = more effective adaptations",
+              "at": 1016,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1335
+    },
+    {
+      "id": "concept-valid",
+      "type": "concept",
+      "heading": "Valid and reliable",
+      "body": "Control every variable except leaf type, repeat and average, and state the limitations.",
+      "bullets": [
+        {
+          "text": "Validity: control area, temperature, humidity, light, air movement, time."
+        },
+        {
+          "text": "Reliability: several leaves of each type, repeat, average."
+        },
+        {
+          "text": "Limitation: detached leaves and cut edges behave differently."
+        }
+      ],
+      "callout": "Selection gives a compromise, not the minimum possible water loss.",
+      "caption": "Controlled variables for validity, repeats for reliability, and limitations.",
+      "voiceover": {
+        "text": "A result only supports a conclusion about adaptation if everything else has been controlled, and the test repeated. For validity, control everything except the leaf type. Same starting area, same temperature, humidity, light and air movement, same drying time. For reliability, use several leaves of each type, repeat the trials and average, because one leaf might be unusually thick or damaged. And name a limitation. Detached leaves lose their water supply, so their stomata close as they dry, and cut edges lose extra water. Sealing the cut stalk with petroleum jelly is a cheap improvement. And remember the trade-off. The same features that save water also restrict carbon dioxide getting in."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aGrid",
+        "props": {
+          "columns": [
+            {
+              "title": "Validity",
+              "at": 121
+            },
+            {
+              "title": "Reliability",
+              "tone": "grey",
+              "at": 335
+            },
+            {
+              "title": "Limitation",
+              "tone": "warm",
+              "at": 558
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "same starting\nleaf area",
+                "at": 202
+              },
+              {
+                "text": "several leaves\nof each type",
+                "at": 355
+              },
+              {
+                "text": "detached leaves:\nstomata close",
+                "at": 599
+              }
+            ],
+            [
+              {
+                "text": "same temperature,\nhumidity, light",
+                "at": 233
+              },
+              {
+                "text": "repeat the\ntrials",
+                "at": 416
+              },
+              {
+                "text": "cut edges lose\nextra water",
+                "at": 731
+              }
+            ],
+            [
+              {
+                "text": "same air movement\nand drying time",
+                "at": 304
+              },
+              {
+                "text": "average the\nresults",
+                "at": 446
+              },
+              {
+                "text": "improve: seal the\nstalk with jelly",
+                "at": 792,
+                "amber": true
+              }
+            ]
+          ],
+          "footer": [
+            {
+              "text": "Trade-off: saving water also limits CO₂ uptake",
+              "at": 904
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1245
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Transpiration: loss of water vapour from a plant, mainly through the stomata."
+        },
+        {
+          "text": "Stomata: pores, usually on the leaf underside, that let CO₂ in and water vapour out."
+        },
+        {
+          "text": "Cuticle: a waxy, waterproof layer covering the leaf surface."
+        },
+        {
+          "text": "Sclerophyll: a plant with hard, tough, often small leaves, such as a eucalypt."
+        },
+        {
+          "text": "Controlled variable: a factor kept the same so only the tested variable affects the result."
+        }
+      ],
+      "callout": "Stomata carry both water out and CO₂ in.",
+      "caption": "Transpiration, stomata, cuticle, sclerophyll, controlled variable.",
+      "voiceover": {
+        "text": "Five terms. Transpiration is the loss of water vapour from a plant, mainly through the stomata in its leaves. Stomata are tiny pores, usually on the underside of a leaf, that open to let carbon dioxide in and water vapour out. The cuticle is a waxy, waterproof layer covering the leaf surface that reduces water loss. A sclerophyll is a plant, like a eucalypt, with hard, tough, often small leaves, adapted to dry, low-nutrient Australian soils. And a controlled variable is a factor kept the same across all samples, so only the variable being tested can affect the result."
+      },
+      "durationInFrames": 1110
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Process the results",
+      "question": "Over an hour, a Eucalyptus leaf went from 2.00 g to 1.88 g, and a privet leaf from 2.00 g to 1.40 g. Calculate the percentage mass lost by each, and state which has the better water-balance adaptations.",
+      "coachNote": "Percentage lost = (start − end) ÷ start × 100.",
+      "steps": [
+        "Eucalyptus: 2.00 − 1.88 = 0.12 g lost.",
+        "0.12 ÷ 2.00 × 100 = 6%.",
+        "Privet: 2.00 − 1.40 = 0.60 g lost; 0.60 ÷ 2.00 × 100 = 30%.",
+        "The eucalypt lost a far smaller percentage, so it has the better adaptations.",
+        "Answer: Eucalyptus 6%, privet 30%; likely due to a thick waxy cuticle and sunken stomata."
+      ],
+      "unitCancel": {
+        "left": "g lost",
+        "right": "g at start",
+        "result": "a fraction, × 100 → %"
+      },
+      "caption": "Eucalyptus lost 6%, privet lost 30% of starting mass.",
+      "voiceover": {
+        "text": "Let's process the class results. The rule is percentage lost equals start minus end, divided by start, times one hundred. Eucalyptus first. Two point zero zero minus one point eight eight is zero point one two grams. Divide by two point zero zero and multiply by one hundred, and that's six percent. Now privet. Two point zero zero minus one point four zero is zero point six zero grams, which is thirty percent. The eucalypt lost a far smaller percentage of its mass, so it has the better water-balance adaptations, most likely its thick waxy cuticle and sunken stomata."
+      },
+      "durationInFrames": 1110
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Water leaks out evenly",
+      "body": "Wrong: a leaf loses water evenly all over its surface, so a wax coating makes little difference.",
+      "secondary": "Right: most water leaves through the stomata. A thick cuticle, sunken or fewer stomata and reduced surface area dramatically cut water loss.",
+      "mistakeTag": "Where the water goes",
+      "callout": "The cuticle funnels loss through the stomata, where it can be controlled.",
+      "caption": "Most water leaves through stomata; structures around them cut the loss.",
+      "voiceover": {
+        "text": "Here's the misconception to fix. Some students think a leaf loses water evenly over its whole surface, so a wax coating wouldn't make much difference. In fact, most water leaves through the stomata, not through the cuticle. A thick cuticle blocks the uncontrolled route through the surface, and funnels almost all loss through the stomata, where the plant can regulate it. Add sunken stomata and a smaller surface area, and water loss falls dramatically. That's why drought-adapted leaves stay firm far longer than soft ones."
+      },
+      "durationInFrames": 960
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Leaf A starts at 4.00 g and loses 0.40 g. Leaf B starts at 1.00 g and loses 0.25 g. Which is better protected, and why use percentage rather than grams?",
+      "pausePrompt": "Pause: which leaf lost more grams, and which lost a bigger share?",
+      "answerSteps": [
+        "A: 0.40 ÷ 4.00 × 100 = 10%.",
+        "B: 0.25 ÷ 1.00 × 100 = 25%.",
+        "By grams, A looks worse; by percentage, A is better protected.",
+        "Answer: percentage compares each leaf against its own starting mass, removing the effect of size."
+      ],
+      "caption": "Leaf A lost 10%, leaf B 25%: percentage removes the effect of leaf size.",
+      "voiceover": {
+        "text": "Quick check. Leaf A starts at four grams and loses zero point four grams. Leaf B starts at one gram and loses zero point two five grams. Which leaf is better protected? Pause and work it out. Leaf A lost ten percent of its mass, and leaf B lost twenty five percent. By raw grams, A looks worse, because it lost more. But by percentage, A is better protected. Percentage compares each leaf against its own starting mass, which removes the effect of leaf size. That's why the method uses it."
+      },
+      "durationInFrames": 1035
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Most water is lost by transpiration through the stomata.",
+        "Waxy cuticles, sunken hairy stomata and rolled or vertical leaves cut water loss.",
+        "Measure % of starting mass lost over time, in identical conditions.",
+        "Control variables for validity; repeat and average for reliability.",
+        "Saving water also limits CO₂ uptake: a compromise."
+      ],
+      "finalPrompt": "Name the structure, say how it slows water loss, and back it with % mass lost.",
+      "caption": "Leaf structures reduce water loss, and you can measure it.",
+      "voiceover": {
+        "text": "Let's lock it in. Most water leaves by transpiration through the stomata. Waxy cuticles, sunken hairy stomata and rolled or vertical leaves all cut that loss. To measure it, compare the percentage of starting mass lost over time, in identical conditions. Control variables for validity, and repeat and average for reliability. And remember the compromise. Every feature that saves water also limits carbon dioxide uptake. Next lesson, how animals control their body temperature."
+      },
+      "durationInFrames": 825
+    }
+  ]
+}

@@ -158,10 +158,13 @@ export const LimbsDiagram = ({beats, labels = {}, homologousText = 'Same bone pl
 					<DioramaPlinth id={`${ID}-pi`} cx={560} cy={plY} rx={140} />
 					{/* bird wing: feathers over the bones */}
 					<g transform={`translate(${80},${170 + idleBob(frame, 1, 2)})`}>
-						{Array.from({length: 9}, (_, k) => (
-							<path key={k} d={`M ${150 + k * 6} ${40 - k * 3} q ${20 + k * 4} ${60 + k * 12} ${-10 - k * 6} ${130 + k * 6}`} stroke="#8a7a66" strokeWidth={14} strokeLinecap="round" fill="none" opacity={0.55} />
-						))}
-						<path d="M 0 40 Q 120 -30 250 20 Q 200 170 60 190 Q 20 120 0 40 Z" fill="rgba(160,140,115,0.35)" stroke="#8a7a66" strokeWidth={2} />
+						{Array.from({length: 8}, (_, k) => {
+							const ang = 12 + k * 6;
+							const bx = 232 - k * 20;
+							const by = 24 + k * 3;
+							return <ellipse key={k} cx={bx + Math.cos((ang * Math.PI) / 180) * 50} cy={by + Math.sin((ang * Math.PI) / 180) * 50} rx={58} ry={11} transform={`rotate(${ang} ${bx + Math.cos((ang * Math.PI) / 180) * 50} ${by + Math.sin((ang * Math.PI) / 180) * 50})`} fill="#b7a78f" stroke="#8a7a66" strokeWidth={1.5} />;
+						})}
+						<path d="M 0 40 Q 120 -10 250 22 Q 150 70 20 64 Z" fill="#cbbca5" stroke="#8a7a66" strokeWidth={2} />
 						<line x1={0} y1={40} x2={70} y2={20} stroke="#efe6d2" strokeWidth={13} strokeLinecap="round" />
 						<line x1={0} y1={40} x2={70} y2={20} stroke={COL.humerus} strokeWidth={10} strokeLinecap="round" />
 						<line x1={72} y1={20} x2={160} y2={30} stroke={COL.forearm} strokeWidth={7} strokeLinecap="round" />

@@ -115,7 +115,7 @@ export const LeafDiagram = (props: LeafProps) => {
 		const panels = props.panels ?? [];
 		const pw = 300;
 		const xs = [40, W - 40 - pw];
-		const y = 110;
+		const y = 132;
 		const vapourOn = fadeAt(frame, props.vapourAt ?? 0, 20);
 		return (
 			<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Soft leaf and sclerophyll leaf cross-sections" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
@@ -133,26 +133,29 @@ export const LeafDiagram = (props: LeafProps) => {
 						<g transform={`translate(0, ${idleBob(frame, i, 1)})`}>
 							<Section x={xs[i]} y={y} w={pw} kind={p.kind} rate={p.rate} frame={frame} vapourOn={vapourOn} />
 						</g>
-						<Ledge x0={xs[i] - 14} x1={xs[i] + pw + 14} y={y + 290} />
+						<Ledge x0={xs[i] - 14} x1={xs[i] + pw + 14} y={y + 272} />
 					</g>
 				))}
 				{(props.features ?? []).map((f, i) => {
-					const sx = xs[1] + pw / 2;
-					const ty = f.target === 'cuticle' ? y + 6 : f.target === 'stomata' ? y + 190 : y + 200;
-					const tx = f.target === 'cuticle' ? sx : f.target === 'stomata' ? xs[1] + pw * 0.3 : xs[1] + pw * 0.72 + 22;
-					const lx = xs[1] + pw / 2 + 20;
-					const ly = 432 + i * 34;
+					const last = i === (props.features?.length ?? 0) - 1;
+					const pulse = last ? idlePulse(frame) : 0;
+					// cuticle: tag just above the leaf; stomata and hairs: tags in a row below the ledge
+					const below = f.target !== 'cuticle';
+					const tx = f.target === 'cuticle' ? xs[1] + pw * 0.5 : f.target === 'stomata' ? xs[1] + pw * 0.3 : xs[1] + pw * 0.72 + 22;
+					const ty = f.target === 'cuticle' ? y + 4 : f.target === 'stomata' ? y + 188 : y + 196;
+					const lx = f.target === 'cuticle' ? tx : f.target === 'stomata' ? 480 : 655;
+					const ly = f.target === 'cuticle' ? y - 20 : 480;
 					return (
 						<g key={i} opacity={fadeAt(frame, f.at)}>
-							<line x1={lx - 20 + (tx - lx) * 0.2} y1={ly - 12} x2={tx} y2={ty} stroke={TOK.amber} strokeWidth={2.5} />
+							<line x1={lx} y1={below ? ly - 14 : ly + 14} x2={tx} y2={ty} stroke={TOK.amber} strokeWidth={2.5} />
 							<circle cx={tx} cy={ty} r={5} fill={TOK.amber} />
-							<Tag x={lx - 20} y={ly} text={f.text} color={TOK.amberInk} fill="#fff6e6" size={15} strokeW={2 + (i === (props.features?.length ?? 0) - 1 ? idlePulse(frame) : 0)} />
+							<Tag x={lx} y={ly} text={f.text} color={TOK.amberInk} fill="#fff6e6" size={15} strokeW={2 + pulse} />
 						</g>
 					);
 				})}
 				<g opacity={vapourOn}>
-					<circle cx={60} cy={440} r={5} fill={PAL.vapour} />
-					<text x={72} y={446} fontSize={15} fontWeight={700} fill={TOK.inkDim}>
+					<circle cx={60} cy={480} r={5} fill={PAL.vapour} />
+					<text x={72} y={486} fontSize={15} fontWeight={700} fill={TOK.inkDim}>
 						water vapour leaving
 					</text>
 				</g>

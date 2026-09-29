@@ -1,0 +1,322 @@
+{
+  "title": "Water and Salt Balance in Aquatic Animals",
+  "subtitle": "Osmoregulation in fresh water and the sea",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 12",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Explain physiological adaptations of aquatic animals to regulate water and salt balance"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-06"
+  ],
+  "inquiryQuestion": "How do aquatic animals keep their water and salt in balance?",
+  "lessonIntent": "Students can predict the direction of water movement for freshwater and marine animals and explain the physiological adaptations that oppose it.",
+  "examSkill": "State the osmotic problem for each environment first, then tie each adaptation (drinking, urine, gill transport, salt glands) to the problem it solves.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is Biology. Today, how aquatic animals balance water and salt. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Water and Salt Balance in Aquatic Animals"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Drink the sea, or never drink",
+      "body": "A saltwater fish drinks the sea almost constantly. A freshwater fish doesn’t drink, and makes lots of dilute urine instead.",
+      "callout": "Same kind of animal. Why the opposite behaviour?",
+      "image": "bioM5L2SalmonSpawning",
+      "caption": "Marine fish drink seawater; freshwater fish do not.",
+      "voiceover": {
+        "text": "A saltwater fish drinks the sea almost constantly. A freshwater fish, surrounded by perfectly drinkable water, doesn't drink, and instead makes large volumes of dilute urine. And some fish, like salmon and barramundi, move between the two. Same kind of animal, completely opposite behaviour. Why? The answer is osmosis, and a set of physiological adaptations that fight it."
+      },
+      "durationInFrames": 780
+    },
+    {
+      "id": "concept-problem",
+      "type": "concept",
+      "heading": "The osmotic problem",
+      "body": "An aquatic animal’s body fluids rarely match the water around it, so osmosis pushes water in or pulls it out.",
+      "bullets": [
+        {
+          "text": "Freshwater fish: saltier inside, so water moves in and salts leak out."
+        },
+        {
+          "text": "Marine fish: less salty inside, so water moves out and salts move in."
+        },
+        {
+          "text": "The gills cannot be sealed, because they are needed for gas exchange."
+        }
+      ],
+      "callout": "Surrounded by water does not mean balanced water.",
+      "caption": "Freshwater fish gain water and lose salts; marine fish lose water and gain salts.",
+      "voiceover": {
+        "text": "Remember osmosis. Water moves across a membrane from the more dilute solution to the more concentrated one. A fish's gills are a huge, thin, permeable surface, needed for gas exchange, so the fish can't avoid osmosis. A freshwater fish has body fluids saltier than the water around it, so water constantly moves in by osmosis, and salts leak out. Its problem is too much water and too little salt. A marine fish has body fluids less salty than seawater, so water constantly moves out, and salts move in. It's surrounded by water, yet in constant danger of drying out. Opposite problems."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aOsmo",
+        "props": {
+          "beats": {
+            "tanks": 304,
+            "osmosis": 426
+          },
+          "footer": [
+            {
+              "text": "Opposite problems",
+              "at": 945,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1140
+    },
+    {
+      "id": "concept-solutions",
+      "type": "concept",
+      "heading": "Opposite fixes",
+      "body": "Each fish’s adaptations exactly reverse its osmotic threat.",
+      "bullets": [
+        {
+          "text": "Freshwater: no drinking, lots of dilute urine, gills pump salts in."
+        },
+        {
+          "text": "Marine: drinks seawater, little concentrated urine, gills pump salts out."
+        },
+        {
+          "text": "Pumping salt against its gradient uses ATP."
+        }
+      ],
+      "callout": "Active transport makes these physiological adaptations.",
+      "caption": "Drinking, urine and gill salt pumps work in opposite directions.",
+      "voiceover": {
+        "text": "Each fish's adaptations reverse its own threat. The freshwater fish is flooded with water and losing salt. So it doesn't drink. It produces large volumes of very dilute urine to dump the excess water. And its gills use active transport to pump salts in from the water, against the concentration gradient. The marine fish is losing water and overloaded with salt. So it drinks seawater constantly to replace the water. It makes small volumes of concentrated urine, to conserve water. And its gills use active transport to pump the excess salt out. Moving salt against its gradient takes energy, from ATP. That's why these are physiological adaptations, internal, energy-using processes."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aOsmo",
+        "props": {
+          "beats": {
+            "tanks": 0,
+            "osmosis": 0,
+            "drink": 111,
+            "urine": 152,
+            "pump": 284
+          },
+          "footer": [
+            {
+              "text": "Salt pumped against its gradient: uses ATP",
+              "at": 874,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1245
+    },
+    {
+      "id": "concept-glands",
+      "type": "concept",
+      "heading": "Salt glands",
+      "body": "Marine reptiles and seabirds remove salt with salt glands that secrete a fluid saltier than seawater.",
+      "bullets": [
+        {
+          "text": "Their kidneys cannot make urine saltier than seawater."
+        },
+        {
+          "text": "Salt glands near the eyes secrete very concentrated salt."
+        },
+        {
+          "text": "Marine mammals: very efficient kidneys."
+        }
+      ],
+      "callout": "Same problem as marine fish, a different organ.",
+      "caption": "Salt glands in turtles and seabirds secrete fluid saltier than seawater.",
+      "voiceover": {
+        "text": "Marine reptiles and seabirds face the marine fish's problem, but solve it with a different organ. A sea turtle or an albatross takes in lots of salt with its food and seawater. Its kidneys can't make urine saltier than seawater, so getting rid of the salt through urine would cost more water than it gained. Instead, it has salt glands, near the eyes in turtles and above the eyes in seabirds. They use active transport to secrete a fluid far saltier than seawater, as tears in turtles, or dripping from the nostrils in seabirds. Marine mammals, meanwhile, have highly efficient kidneys that make very concentrated urine."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aGrid",
+        "props": {
+          "columns": [
+            {
+              "title": "Marine fish",
+              "at": 0
+            },
+            {
+              "title": "Turtle, seabird",
+              "tone": "warm",
+              "at": 101
+            },
+            {
+              "title": "Marine mammal",
+              "tone": "grey",
+              "at": 894
+            }
+          ],
+          "rowLabels": [
+            {
+              "text": "Salt out\nthrough"
+            },
+            {
+              "text": "How"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "gills",
+                "at": 0
+              },
+              {
+                "text": "salt glands\nnear the eyes",
+                "at": 497,
+                "amber": true
+              },
+              {
+                "text": "kidneys",
+                "at": 894
+              }
+            ],
+            [
+              {
+                "text": "active transport\n(ATP)",
+                "at": 0
+              },
+              {
+                "text": "secrete fluid\nsaltier than seawater",
+                "at": 660
+              },
+              {
+                "text": "very concentrated\nurine",
+                "at": 935
+              }
+            ]
+          ],
+          "footer": [
+            {
+              "text": "Kidneys of reptiles and birds can’t beat seawater",
+              "at": 263
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1200
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Osmoregulation: control of water and salt balance in body fluids."
+        },
+        {
+          "text": "Hypertonic: higher solute concentration; water tends to move towards it."
+        },
+        {
+          "text": "Hypotonic: lower solute concentration; water tends to move away from it."
+        },
+        {
+          "text": "Active transport: moving substances against a concentration gradient, using ATP."
+        },
+        {
+          "text": "Salt gland: a gland in marine birds and reptiles that excretes excess salt."
+        }
+      ],
+      "callout": "Freshwater fish are hypertonic to their water; marine fish are hypotonic to theirs.",
+      "caption": "Osmoregulation, hypertonic, hypotonic, active transport, salt gland.",
+      "voiceover": {
+        "text": "Five terms. Osmoregulation is the control of water and salt balance in body fluids. A hypertonic solution has a higher solute concentration than another, so water tends to move towards it by osmosis. A hypotonic solution has a lower solute concentration, so water tends to move away from it. Active transport is the movement of substances against a concentration gradient, using energy from ATP. And a salt gland is a specialised gland in marine birds and reptiles that excretes excess salt. So a freshwater fish is hypertonic to its water, and a marine fish is hypotonic to seawater."
+      },
+      "durationInFrames": 1110
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "The barramundi switch",
+      "question": "Barramundi hatch in coastal salt water, move into fresh water to grow, and return to salt water to spawn. How must water movement, urine and gill salt transport change when a barramundi moves from fresh water to the sea?",
+      "coachNote": "Problem first for each water, then the response, then the cost.",
+      "steps": [
+        "In fresh water: water moves in; lots of dilute urine; gills pump salts in.",
+        "In the sea: water moves out; it drinks seawater; little concentrated urine.",
+        "Gill salt transport must reverse, to pump salts out.",
+        "The switch takes days and costs energy.",
+        "Answer: urine and gill transport reverse; a sudden move can kill a fish that would survive after acclimation."
+      ],
+      "caption": "Barramundi reverse their urine output and gill salt transport between fresh and salt water.",
+      "voiceover": {
+        "text": "Barramundi are euryhaline. They hatch in coastal salt water, move into fresh water to grow, and return to salt water to spawn. So what has to change when a barramundi moves from fresh water to the sea? In fresh water, water floods in, so it makes lots of dilute urine and its gills pump salts in. In the sea, water is drawn out, so it drinks seawater, makes a little concentrated urine, and its gills must reverse, to pump salts out. That switch isn't instant. It takes days of physiological adjustment and costs energy, which is why a sudden move between salinities can kill a fish that would survive after acclimation."
+      },
+      "durationInFrames": 1245
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Water all around",
+      "body": "Wrong: a fish living in water can never have a water problem, because it is surrounded by water.",
+      "secondary": "Right: living in water is exactly the problem. Salt concentrations differ across the gills, so osmosis constantly drives water in or out, and the fish must spend energy to control it.",
+      "mistakeTag": "Surrounded ≠ balanced",
+      "callout": "A marine fish is surrounded by water, and dehydrating.",
+      "caption": "Osmosis across the gills creates constant water problems for fish.",
+      "voiceover": {
+        "text": "Here's the misconception to fix. Some students think a fish can't have a water problem, because it's surrounded by water. But living in water is exactly the problem. The salt concentration inside the fish is different from the water outside, so osmosis constantly drives water in, or out, across the gills. A marine fish is surrounded by water, and dehydrating. A freshwater fish is at risk of being flooded. Either way, the fish has to spend energy to control it."
+      },
+      "durationInFrames": 900
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Account for the fact that a marine bony fish drinks seawater continuously while a freshwater fish does not drink.",
+      "pausePrompt": "Pause: which way does water move by osmosis in each?",
+      "answerSteps": [
+        "Marine fish: hypotonic to seawater, so water moves out across the gills.",
+        "Drinking is its only way to replace that water; its gills then pump the extra salt out.",
+        "Freshwater fish: hypertonic to its water, so water already floods in.",
+        "Answer: the marine fish drinks to replace water lost by osmosis; the freshwater fish must not, and removes excess water as dilute urine."
+      ],
+      "caption": "Marine fish drink to replace water lost by osmosis; freshwater fish already gain water.",
+      "voiceover": {
+        "text": "Quick check. Account for the fact that a marine bony fish drinks seawater continuously, while a freshwater fish doesn't drink. Pause, and decide which way water moves in each. Here's the answer. A marine fish is hypotonic to seawater, so water moves out across its gills. Drinking is its only way to replace that water, and its gills then pump the extra salt back out. A freshwater fish is hypertonic to its water, so water is already flooding in. It mustn't drink, and gets rid of the excess as dilute urine."
+      },
+      "durationInFrames": 1035
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Freshwater fish gain water and lose salt; marine fish lose water and gain salt.",
+        "Freshwater: no drinking, lots of dilute urine, gills pump salts in.",
+        "Marine: drinks seawater, little concentrated urine, gills pump salts out.",
+        "Marine reptiles and seabirds use salt glands.",
+        "Active transport uses ATP: these are physiological adaptations."
+      ],
+      "finalPrompt": "Problem first (water in or out?), then match each adaptation to it.",
+      "caption": "Opposite osmotic problems, opposite physiological adaptations.",
+      "voiceover": {
+        "text": "Let's lock it in. Freshwater fish gain water and lose salt, and marine fish lose water and gain salt. So freshwater fish don't drink, make lots of dilute urine, and pump salts in at the gills. Marine fish drink seawater, make a little concentrated urine, and pump salts out. Marine reptiles and seabirds use salt glands instead. And because moving salt against its gradient uses ATP, these are all physiological adaptations. See you next lesson."
+      },
+      "durationInFrames": 855
+    }
+  ]
+}

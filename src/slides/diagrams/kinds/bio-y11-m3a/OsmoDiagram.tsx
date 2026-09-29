@@ -102,7 +102,7 @@ export const OsmoDiagram = ({beats, titles = ['Freshwater fish', 'Marine fish'],
 							) : (
 								<Flow x1={gillX} y1={fy - 34} x2={gillX + 6} y2={fy - 86} color={WATER} frame={frame} />
 							)}
-							<Tag x={gillX - 30} y={fy - 104} text={p.fresh ? 'water in' : 'water out'} color={WATER} size={15} />
+							<Tag x={cx - 80} y={fy - 104} text={p.fresh ? 'water in' : 'water out'} color={WATER} size={15} />
 							{p.fresh ? (
 								<Flow x1={gillX - 6} y1={fy + 30} x2={gillX - 14} y2={fy + 70} color={SALT} frame={frame} w={3} />
 							) : (
@@ -143,7 +143,7 @@ export const OsmoDiagram = ({beats, titles = ['Freshwater fish', 'Marine fish'],
 								<text x={gillX - 2} y={fy + 5} textAnchor="middle" fontSize={12} fontWeight={800} fill={TOK.amberInk}>
 									ATP
 								</text>
-								<Tag x={cx - 10} y={ty + 26} text={p.fresh ? 'gills pump salts IN' : 'gills pump salts OUT'} color={TOK.amberInk} fill="#fff6e6" size={15} />
+								<Tag x={cx + 72} y={fy - 104} text={p.fresh ? 'gills pump salts IN' : 'gills pump salts OUT'} color={TOK.amberInk} fill="#fff6e6" size={15} />
 							</g>
 						)}
 					</g>

@@ -1,0 +1,361 @@
+{
+  "title": "Ectotherms and Endotherms",
+  "subtitle": "Behaviour, body heat and temperature data",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 11",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Use examples to explain behavioural adaptations used by ectotherms and endotherms to survive in the Australian environment",
+    "Analyse data to compare how the external environment and body temperature are related in endotherms and ectotherms"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-05"
+  ],
+  "inquiryQuestion": "How do ectotherms and endotherms manage body temperature in the Australian environment?",
+  "lessonIntent": "Students can explain behavioural thermoregulation in Australian ectotherms and endotherms and analyse body-temperature data to identify each.",
+  "examSkill": "Quote the range of body temperature across the same change in air temperature, then identify the strategy and its mechanism.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is Biology. Today, ectotherms and endotherms, and how to read their temperature data. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Ectotherms and Endotherms"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Heat from outside, heat from inside",
+      "body": "A lizard makes very little of its own heat, yet can warm its body to about 35 °C on a cold morning. A mammal burns food just to sit still.",
+      "callout": "Where does each animal’s body heat come from?",
+      "image": "bioM8L2HeatwaveTwoAnimals",
+      "caption": "Ectotherms gain heat from outside; endotherms make it inside.",
+      "voiceover": {
+        "text": "On a cold morning, you'll often see lizards lying flat on sunny rocks or roads. A lizard makes very little heat of its own, yet it can warm its body to about thirty five degrees. Meanwhile, a kangaroo doesn't need to bask at all, but it burns a lot of food just to stay warm while it rests. So where does each animal's body heat actually come from? That's the difference between an ectotherm and an endotherm."
+      },
+      "durationInFrames": 870
+    },
+    {
+      "id": "concept-ectotherm",
+      "type": "concept",
+      "heading": "Ectotherms use behaviour",
+      "body": "An ectotherm gains heat from its surroundings, so it uses behaviour to warm up and cool down.",
+      "bullets": [
+        {
+          "text": "Morning: bask, flatten, turn broadside to the sun."
+        },
+        {
+          "text": "Midday: retreat to shade or a burrow, turn head-on."
+        },
+        {
+          "text": "Many are active at dawn and dusk."
+        }
+      ],
+      "callout": "Behaviour keeps an ectotherm in its working range.",
+      "caption": "A bearded dragon basks in the morning and shelters at midday.",
+      "voiceover": {
+        "text": "An ectotherm gains most of its body heat from the external environment, so its body temperature rises and falls with its surroundings. Reptiles, fish and insects are ectotherms. An endotherm produces heat internally, through metabolism, and keeps a fairly stable body temperature. Mammals and birds are endotherms. Because an ectotherm can't make much heat, it relies on behaviour. A bearded dragon basks on warm rocks in the morning, flattening its body and turning broadside to the sun to catch more radiation. When it gets too hot at midday, it retreats to shade or a burrow, and turns head-on to the sun to reduce exposure. Behaviour keeps its body in a working range."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aThermo",
+        "props": {
+          "mode": "behaviour",
+          "beats": {
+            "morning": 528,
+            "warm": 630,
+            "midday": 762
+          },
+          "labels": {
+            "morning": "Morning: basks broadside to the sun",
+            "midday": "Midday: shade, head-on",
+            "gauge": "body temp"
+          },
+          "footer": []
+        }
+      },
+      "durationInFrames": 1260
+    },
+    {
+      "id": "concept-endotherm",
+      "type": "concept",
+      "heading": "Endotherms use behaviour too",
+      "body": "Endotherms make their own heat, and use behaviour to support heating and cooling.",
+      "bullets": [
+        {
+          "text": "Kangaroo: rests in shade, licks its forearms."
+        },
+        {
+          "text": "Koala: hugs cooler tree trunks."
+        },
+        {
+          "text": "Echidna: torpor saves energy when food is scarce."
+        }
+      ],
+      "callout": "Endotherms: more food, active in the cold. Ectotherms: less food, slow when cold.",
+      "caption": "Kangaroo shade and licking, koala trunk-hugging, echidna torpor.",
+      "voiceover": {
+        "text": "Endotherms use behaviour too, but to support their internal heating and cooling. A red kangaroo rests in shade through the heat of the day, and licks its forearms so evaporation cools its blood. Koalas have been recorded hugging tree trunks that are cooler than the air, to dump heat. Animals spread out to lose heat, or huddle to keep it. And some endotherms use torpor. The short-beaked echidna in cool regions drops its body temperature and metabolic rate for long periods, saving energy when food is scarce. There's an energy trade-off. Endotherms need far more food, but stay active in the cold. Ectotherms need much less food, but slow down when it's cold."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aGrid",
+        "props": {
+          "columns": [
+            {
+              "title": "Red kangaroo",
+              "at": 60
+            },
+            {
+              "title": "Koala",
+              "tone": "grey",
+              "at": 274
+            },
+            {
+              "title": "Echidna",
+              "tone": "warm",
+              "at": 599
+            }
+          ],
+          "rowLabels": [
+            {
+              "text": "Behaviour"
+            },
+            {
+              "text": "Effect"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "rests in shade;\nlicks forearms",
+                "at": 60
+              },
+              {
+                "text": "hugs cooler\ntree trunks",
+                "at": 274
+              },
+              {
+                "text": "torpor on\ncold days",
+                "at": 599
+              }
+            ],
+            [
+              {
+                "text": "evaporation\ncools the blood",
+                "at": 223
+              },
+              {
+                "text": "dumps heat\ninto the trunk",
+                "at": 406
+              },
+              {
+                "text": "saves energy when\nfood is scarce",
+                "at": 762,
+                "amber": true
+              }
+            ]
+          ],
+          "footer": [
+            {
+              "text": "Endotherms: more food, active in the cold",
+              "at": 823
+            },
+            {
+              "text": "Ectotherms: less food, slow when cold",
+              "at": 975
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1275
+    },
+    {
+      "id": "concept-data",
+      "type": "concept",
+      "heading": "Reading the data",
+      "body": "An ectotherm’s body temperature tracks the air; an endotherm’s stays nearly flat around 36–38 °C.",
+      "bullets": [
+        {
+          "text": "X: 12.0 → 41.0 °C, varies by 29.0 °C → ectotherm."
+        },
+        {
+          "text": "Y: 36.2 → 37.2 °C, varies by 1.0 °C → endotherm."
+        },
+        {
+          "text": "Quote the ranges, not just the shapes."
+        }
+      ],
+      "callout": "Steep line = ectotherm. Flat line = endotherm.",
+      "caption": "Across a 30 °C change in air, X varies by 29.0 °C and Y by 1.0 °C.",
+      "voiceover": {
+        "text": "Here's how you tell them apart from data. Plot body temperature against air temperature, using the same scale on both axes. These are typical values for two animals. As the air rises from ten to forty degrees, Animal X's body temperature rises from twelve to forty one. That's a change of twenty nine degrees, across a thirty degree change in air. It tracks the environment almost one for one, so X is the ectotherm. Animal Y only goes from thirty six point two to thirty seven point two, a change of just one degree. It stays near thirty seven whatever the air does, so Y is the endotherm. Quote the ranges, not just the shapes."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aThermo",
+        "props": {
+          "mode": "graph",
+          "air": [
+            10,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40
+          ],
+          "series": [
+            {
+              "label": "Animal X",
+              "values": [
+                12.0,
+                17.5,
+                23.0,
+                28.0,
+                33.0,
+                37.0,
+                41.0
+              ],
+              "at": 223,
+              "tone": "ecto"
+            },
+            {
+              "label": "Animal Y",
+              "values": [
+                36.2,
+                36.3,
+                36.4,
+                36.5,
+                36.6,
+                36.8,
+                37.2
+              ],
+              "at": 691,
+              "tone": "endo"
+            }
+          ],
+          "footer": [
+            {
+              "text": "Quote the range: 29.0 °C vs 1.0 °C",
+              "at": 1036,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1290
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Ectotherm: relies mainly on the environment for body heat, so body temperature varies."
+        },
+        {
+          "text": "Endotherm: generates body heat by metabolism and keeps a stable temperature."
+        },
+        {
+          "text": "Thermoregulation: keeping body temperature in a range where enzymes and cells work."
+        },
+        {
+          "text": "Basking: an ectotherm positions itself in the sun to absorb heat."
+        },
+        {
+          "text": "Torpor: a short-term, energy-saving drop in body temperature and activity."
+        }
+      ],
+      "callout": "Say ectotherm and endotherm, not cold- and warm-blooded.",
+      "caption": "Ectotherm, endotherm, thermoregulation, basking, torpor.",
+      "voiceover": {
+        "text": "Five terms. An ectotherm relies mainly on the external environment for body heat, so its body temperature varies with its surroundings. An endotherm generates body heat internally through metabolism, and keeps a stable body temperature. Thermoregulation is keeping body temperature within a range that allows enzymes and cells to function. Basking is a behaviour where an ectotherm positions itself in the sun to absorb heat. And torpor is a short-term, energy-saving drop in body temperature and activity, used by some endotherms to survive cold or food shortage."
+      },
+      "durationInFrames": 990
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Analyse the data",
+      "question": "At air temperatures of 5, 15, 25, 35 and 40 °C, Animal P recorded 6.5, 16.0, 26.5, 37.0 and 42.0 °C, and Animal Q recorded 36.9, 37.0, 37.1, 37.2 and 37.4 °C. Identify the ectotherm and the endotherm.",
+      "coachNote": "Common baseline first: the air changes by 35 °C. Then quote each range.",
+      "steps": [
+        "Air: 5 → 40 °C, a change of 35 °C.",
+        "P: 6.5 → 42.0 °C, a change of 35.5 °C, about 1 °C per 1 °C of air.",
+        "Q: 36.9 → 37.4 °C, a change of 0.5 °C, about 0.01 °C per 1 °C of air.",
+        "At 35 °C they are within 0.2 °C, but one point does not decide it.",
+        "Answer: P is the ectotherm; Q is the endotherm."
+      ],
+      "caption": "P varies by 35.5 °C and Q by 0.5 °C across a 35 °C change: P ectotherm, Q endotherm.",
+      "voiceover": {
+        "text": "Let's analyse a data set. Start with the common baseline. Air temperature runs from five to forty degrees, a change of thirty five. Animal P rises from six point five to forty two, a change of thirty five point five degrees, about one degree for every degree of air. Animal Q only goes from thirty six point nine to thirty seven point four, a change of half a degree. So P is the ectotherm, and Q is the endotherm. One trap. At thirty five degrees, the two are within point two of a degree. But a single point doesn't decide it. It's the relationship across the whole range that does."
+      },
+      "durationInFrames": 1245
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Cold-blooded\"",
+      "body": "Wrong: ectotherms are cold-blooded, so their blood is always cold.",
+      "secondary": "Right: a basking lizard can be hotter than a nearby mammal. Ectotherms get their warmth from outside, and their temperature varies with the environment.",
+      "mistakeTag": "Source of heat, not coldness",
+      "callout": "The difference is where the heat comes from.",
+      "caption": "Ectotherms are not always cold; their heat comes from outside.",
+      "voiceover": {
+        "text": "Here's the misconception to fix. People call ectotherms cold-blooded, as if their blood is always cold. But a basking lizard can be hotter than a mammal sitting next to it. In the data we just saw, Animal P reached forty two degrees. Ectotherms don't lack warmth. They get it from outside, and their temperature varies with the environment. The real difference is the source of heat, and whether temperature is held steady. So use the accurate terms, ectotherm and endotherm."
+      },
+      "durationInFrames": 900
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "An echidna in torpor lets its body temperature drop towards its surroundings. Explain how torpor helps it survive, and why it is still an endotherm.",
+      "pausePrompt": "Pause: what does torpor save, and how does the echidna warm up again?",
+      "answerSteps": [
+        "Keeping warm costs energy; heat loss is faster when the body is much warmer than the air.",
+        "In torpor, body temperature and metabolic rate drop, so less heat is lost and less energy used.",
+        "The echidna enters torpor under its own control, and rewarms by making heat internally.",
+        "Answer: torpor saves energy when food is scarce; rewarming from within makes it an endotherm."
+      ],
+      "caption": "Torpor saves energy; rewarming internally shows the echidna is still an endotherm.",
+      "voiceover": {
+        "text": "Quick check. An echidna in torpor lets its body temperature drop towards its surroundings. How does that help it survive, and why is it still an endotherm? Pause and think. Here's the answer. Keeping warm costs energy, and the warmer the body is compared with the air, the faster heat is lost. In torpor, body temperature and metabolic rate drop, so less heat is lost and less energy is used when food is scarce. And it's still an endotherm, because it enters torpor under its own control, and rewarms by generating heat internally, which no ectotherm can do."
+      },
+      "durationInFrames": 1110
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Ectotherms gain heat from outside; endotherms make it by metabolism.",
+        "Ectotherms bask broadside in the morning and shelter at midday.",
+        "Endotherms use shade, licking, huddling and torpor too.",
+        "Data: an ectotherm tracks air temperature; an endotherm stays near 37 °C.",
+        "Quote ranges from the data, not just line shapes."
+      ],
+      "finalPrompt": "Data question: same baseline, quote both ranges, then identify and explain.",
+      "caption": "Ectotherms track the environment; endotherms hold steady.",
+      "voiceover": {
+        "text": "Let's lock it in. Ectotherms gain heat from their surroundings, and endotherms make it through metabolism. Ectotherms like the bearded dragon bask broadside in the morning and shelter at midday. Endotherms use behaviour too, like shade, forearm licking, huddling and torpor. In data, an ectotherm's body temperature tracks the air, while an endotherm stays near thirty seven degrees. And always quote ranges from the data. Next lesson, how aquatic animals balance water and salt."
+      },
+      "durationInFrames": 840
+    }
+  ]
+}

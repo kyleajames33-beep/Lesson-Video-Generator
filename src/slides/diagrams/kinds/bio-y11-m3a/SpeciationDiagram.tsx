@@ -343,7 +343,7 @@ export const SpeciationDiagram = (props: SpeciationProps) => {
 						})}
 						<g opacity={fadeAt(frame, cv.alikeAt)}>
 							<path d={`M ${lx + 50} ${ty + 58} Q ${rootX} ${ty + 90} ${rx2 - 50} ${ty + 58}`} stroke={TOK.amber} strokeWidth={3 + idlePulse(frame) * 1.5} fill="none" strokeDasharray="6 6" />
-							<text x={rootX} y={ty + 110} textAnchor="middle" fontSize={16} fontWeight={800} fill={TOK.amberInk}>
+							<text x={rootX} y={ty + 80} textAnchor="middle" fontSize={14} fontWeight={800} fill={TOK.amberInk}>
 								{cv.alikeText}
 							</text>
 						</g>

@@ -34,8 +34,8 @@ const TYPE = {
 	B: {name: 'Behavioural', color: PAL.orange},
 } as const;
 const OX = 400;
-const OY = 440;
-const SC = 1.28;
+const OY = 410;
+const SC = 1.2;
 // anchor points in the kangaroo's own coordinates (feet at y = 0)
 const ANCHOR: Record<Part, [number, number]> = {
 	ears: [52, -262],

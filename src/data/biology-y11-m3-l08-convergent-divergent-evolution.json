@@ -1,0 +1,329 @@
+{
+  "title": "Convergent and Divergent Evolution",
+  "subtitle": "Alike but unrelated, related but different",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 8",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Use examples to explain convergent and divergent evolution"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03"
+  ],
+  "inquiryQuestion": "How can distantly related species look alike, and closely related species look different?",
+  "lessonIntent": "Students can explain convergent and divergent evolution with examples, and use analogous and homologous structures to tell which has occurred.",
+  "examSkill": "Name the relatedness, the selective pressures and the structure type (analogous or homologous), then state which pattern occurred.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is Biology. Today, convergent and divergent evolution. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Convergent and Divergent Evolution"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Look-alikes and relatives",
+      "body": "A dolphin’s flipper and a bat’s wing look nothing alike, yet share one bone pattern. A shark and a dolphin look almost identical, yet are barely related.",
+      "callout": "How can both be true?",
+      "image": "bioY11M3L3ThylacineWolf",
+      "caption": "Similar-looking species can be distant relatives; different-looking ones can be close.",
+      "voiceover": {
+        "text": "A dolphin's flipper and a bat's wing look nothing alike, and they do completely different jobs. Yet inside, they share the same bone pattern. Meanwhile, a shark and a dolphin look almost identical on the outside, yet one is a fish and the other is a mammal, and they're barely related. And the thylacine, a marsupial, has a skull so like a wolf's that people confuse them. How can all of this be true? Two patterns of evolution explain it."
+      },
+      "durationInFrames": 900
+    },
+    {
+      "id": "concept-two-directions",
+      "type": "concept",
+      "heading": "Two directions of change",
+      "body": "Divergence makes close relatives different. Convergence makes distant relatives alike.",
+      "bullets": [
+        {
+          "text": "Divergent: one ancestor, different environments → Darwin's finches."
+        },
+        {
+          "text": "Convergent: different ancestors, similar pressures → thylacine and grey wolf."
+        },
+        {
+          "text": "Convergent similarity is acquired separately, not inherited."
+        }
+      ],
+      "callout": "Alike does not mean related.",
+      "caption": "Divergent: Darwin's finches. Convergent: thylacine and grey wolf.",
+      "voiceover": {
+        "text": "Evolution can make species more alike, or more different. Divergent evolution is when related species, descended from a common ancestor, become increasingly different, because they adapt to different environments or roles. Darwin's finches are the example. One ancestor, many beak shapes for different foods. Convergent evolution is the opposite. Unrelated or distantly related species independently evolve similar traits, because they face similar selective pressures. The thylacine and the grey wolf last shared an ancestor more than one hundred million years ago. But both were selected as pursuit-hunting carnivores, so natural selection produced the same body plan twice. The similarity was acquired separately, not inherited."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aSpeciation",
+        "props": {
+          "mode": "patterns",
+          "divergent": {
+            "title": "Divergent",
+            "ancestor": "one ancestor",
+            "at": 30,
+            "tips": [
+              {
+                "label": "large seeds",
+                "beak": {
+                  "depth": 20,
+                  "length": 16
+                }
+              },
+              {
+                "label": "insects",
+                "beak": {
+                  "depth": 5,
+                  "length": 20
+                }
+              },
+              {
+                "label": "cactus",
+                "beak": {
+                  "depth": 8,
+                  "length": 26
+                }
+              }
+            ]
+          },
+          "convergent": {
+            "title": "Convergent",
+            "root": "ancestor over 100 million years ago",
+            "at": 385,
+            "left": {
+              "label": "Thylacine",
+              "group": "marsupial"
+            },
+            "right": {
+              "label": "Grey wolf",
+              "group": "placental"
+            },
+            "alikeAt": 833,
+            "alikeText": "similar form, evolved twice"
+          }
+        }
+      },
+      "durationInFrames": 1170
+    },
+    {
+      "id": "concept-structures",
+      "type": "concept",
+      "heading": "Homologous vs analogous",
+      "body": "Internal structure reveals history: a shared plan points to common ancestry; the same job on different plans points to independent evolution.",
+      "bullets": [
+        {
+          "text": "Homologous: same plan, different jobs → divergent evolution."
+        },
+        {
+          "text": "Human arm, whale flipper, bat wing share the pentadactyl limb."
+        },
+        {
+          "text": "Analogous: same job, different structure → convergent evolution."
+        }
+      ],
+      "callout": "Look at the plan, not the job.",
+      "caption": "Pentadactyl limbs are homologous; bird and insect wings are analogous.",
+      "voiceover": {
+        "text": "So how can you tell, from the animals themselves, which pattern happened? Look inside. A human arm, a whale flipper and a bat wing do different jobs, grasping, swimming and flying. Yet each has one upper bone, two forearm bones, a set of wrist bones, and five digits. Same plan, different jobs. These are homologous structures, inherited from a common ancestor, the signature of divergent evolution. Now compare a bird wing and an insect wing. Both fly. But the bird wing is built from bone and feathers, and the insect wing is a membrane with no bones at all. Same job, different structure and origin. These are analogous structures, the signature of convergent evolution."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aLimbs",
+        "props": {
+          "beats": {
+            "limbs": 80,
+            "humerus": 284,
+            "forearm": 314,
+            "wrist": 345,
+            "digits": 396,
+            "verdict": 467,
+            "analogousAt": 609,
+            "analogousVerdict": 945
+          },
+          "homologousText": "Homologous: same plan, different jobs → divergent",
+          "analogousText": "Analogous: same job, different origin → convergent"
+        }
+      },
+      "durationInFrames": 1290
+    },
+    {
+      "id": "concept-classify",
+      "type": "concept",
+      "heading": "Classify the examples",
+      "body": "Decide on relatedness and structure, not on appearance.",
+      "bullets": [
+        {
+          "text": "Shark fin and dolphin fin: analogous, convergent."
+        },
+        {
+          "text": "Horse and human forelimbs: homologous, divergent."
+        },
+        {
+          "text": "Sugar glider and flying squirrel membranes: analogous, convergent."
+        },
+        {
+          "text": "Cactus spine and oak leaf: homologous, divergent."
+        }
+      ],
+      "callout": "A cactus spine is a modified leaf.",
+      "caption": "Classifying pairs as analogous (convergent) or homologous (divergent).",
+      "voiceover": {
+        "text": "Let's classify four pairs. A shark's fin and a dolphin's fin. Fish and mammal, far apart, same job in water. Analogous, so convergent. A horse's forelimb and a human's. Same bone plan, different jobs. Homologous, so divergent. The gliding membrane of a sugar glider, a marsupial, and a North American flying squirrel, a placental. Same job, evolved separately. Analogous, convergent. And the tricky one. A cactus spine and an oak leaf. A cactus spine is a modified leaf, so it shares the leaf's origin even though it does a completely different job. Homologous, so divergent."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Sorter",
+        "props": {
+          "bins": [
+            {
+              "title": "Analogous",
+              "sub": "convergent evolution",
+              "tone": "warm"
+            },
+            {
+              "title": "Homologous",
+              "sub": "divergent evolution"
+            }
+          ],
+          "items": [
+            {
+              "text": "Shark fin / dolphin fin",
+              "bin": 0,
+              "at": 141
+            },
+            {
+              "text": "Horse / human forelimb",
+              "bin": 1,
+              "at": 284
+            },
+            {
+              "text": "Sugar glider / flying squirrel",
+              "bin": 0,
+              "at": 528
+            },
+            {
+              "text": "Cactus spine / oak leaf",
+              "bin": 1,
+              "at": 858,
+              "amber": true,
+              "icon": "plant"
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1065
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Convergent evolution: unrelated species independently evolve similar traits under similar pressures."
+        },
+        {
+          "text": "Divergent evolution: related species become increasingly different as they adapt to different environments."
+        },
+        {
+          "text": "Homologous structures: same basic plan from a common ancestor, possibly different functions."
+        },
+        {
+          "text": "Analogous structures: similar function, different structure and evolutionary origin."
+        },
+        {
+          "text": "Common ancestor: a species from which two or more later species descend."
+        }
+      ],
+      "callout": "Homologous → divergent. Analogous → convergent.",
+      "caption": "Convergent, divergent, homologous, analogous, common ancestor.",
+      "voiceover": {
+        "text": "Five terms. Convergent evolution is when unrelated species independently evolve similar traits, because they face similar selective pressures. Divergent evolution is when related species become increasingly different over time, as they adapt to different environments. Homologous structures share the same basic plan, inherited from a common ancestor, even if their functions differ. Analogous structures have a similar function but a different structure and evolutionary origin. And a common ancestor is a species from which two or more later species are descended. The pairing to remember, homologous goes with divergent, and analogous goes with convergent."
+      },
+      "durationInFrames": 1065
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Thylacine and grey wolf",
+      "question": "Analyse how two distantly related species can come to resemble one another closely, using the thylacine and the grey wolf.",
+      "coachNote": "Distance first, then the shared pressure, then analogous not homologous, then name the process.",
+      "steps": [
+        "Distance: marsupial vs placental; last common ancestor over 100 million years ago; the thylacine’s relatives are quolls and devils.",
+        "Shared pressure: both were pursuit-hunting carnivores taking similar prey.",
+        "That role demands similar features: long narrow skull, slicing teeth, a body built for running.",
+        "The resemblance is analogous: the thylacine kept marsupial features, including a pouch.",
+        "Answer: convergent evolution; appearance is an unreliable guide to relatedness."
+      ],
+      "caption": "Distant lineages, similar pressure, analogous resemblance: convergent evolution.",
+      "voiceover": {
+        "text": "Let's analyse the thylacine and the grey wolf. Start with the distance. The thylacine was a marsupial and the wolf is a placental, and their last common ancestor lived more than one hundred million years ago. The thylacine's closest relatives are quolls and Tasmanian devils. Next, the shared pressure. Both were selected as pursuit-hunting carnivores, and that role demands a long narrow skull, slicing teeth and a body built for running. Then, what the resemblance is. It's analogous, not homologous. Underneath, the thylacine kept marsupial features, including a pouch. So this is convergent evolution, and it shows that appearance is an unreliable guide to relatedness."
+      },
+      "durationInFrames": 1185
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Similar means related?",
+      "body": "Wrong: if two animals look similar, they must be closely related.",
+      "secondary": "Right: outward similarity can come from convergent evolution between unrelated species facing the same environment. Relatedness is shown by shared underlying structure, not surface resemblance.",
+      "mistakeTag": "Surface vs structure",
+      "callout": "A shark and a dolphin look alike but are very distantly related.",
+      "caption": "Surface similarity can be convergent; homology shows relatedness.",
+      "voiceover": {
+        "text": "Here's the misconception to fix. If two animals look similar, students assume they must be closely related. Not necessarily. Outward similarity can come from convergent evolution, when unrelated species face the same environment. A shark and a dolphin look alike because moving fast through water favours a streamlined body. But one is a fish and one is a mammal. Real relatedness is shown by shared underlying structure, homology, not by surface resemblance. That's why biologists use homologous structures, development and DNA to classify organisms, rather than appearance."
+      },
+      "durationInFrames": 990
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Are a bat’s wing and a bird’s wing homologous or analogous?",
+      "pausePrompt": "Pause: compare them as forelimbs, then compare them as wings.",
+      "answerSteps": [
+        "As forelimbs: both have an upper bone, two forearm bones, wrist bones and digits.",
+        "So as forelimbs they are homologous, from a common ancestor.",
+        "As wings: bats fly on skin stretched between long fingers; birds fly on feathers.",
+        "Answer: homologous as forelimbs, but analogous as wings. Flight evolved separately."
+      ],
+      "caption": "Bat and bird wings: homologous as forelimbs, analogous as wings.",
+      "voiceover": {
+        "text": "Quick check, and it's a tricky one. Are a bat's wing and a bird's wing homologous or analogous? Pause, and compare them first as forelimbs, then as wings. Here's the answer. As forelimbs, both have an upper bone, two forearm bones, wrist bones and digits, inherited from a common ancestor. So as forelimbs, they're homologous. But as wings, they're built differently. A bat flies on skin stretched between long fingers, and a bird flies on feathers. Flight evolved separately. So they're homologous as forelimbs, but analogous as wings."
+      },
+      "durationInFrames": 1050
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Divergent: related species become different under different pressures.",
+        "Convergent: unrelated species become alike under similar pressures.",
+        "Homologous structures (pentadactyl limb) signal divergence.",
+        "Analogous structures (bird and insect wings) signal convergence.",
+        "Relatedness comes from underlying structure, not appearance."
+      ],
+      "finalPrompt": "Check the plan, not the job: shared plan = homologous = divergent.",
+      "caption": "Homologous means divergent; analogous means convergent.",
+      "voiceover": {
+        "text": "Let's lock it in. Divergent evolution makes related species different, under different pressures, like Darwin's finches. Convergent evolution makes unrelated species alike, under similar pressures, like the thylacine and the wolf. Homologous structures, like the pentadactyl limb, signal divergence. Analogous structures, like bird and insect wings, signal convergence. And relatedness comes from underlying structure, not appearance. Next lesson, the three kinds of adaptation."
+      },
+      "durationInFrames": 720
+    }
+  ]
+}
