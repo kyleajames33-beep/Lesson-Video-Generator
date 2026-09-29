@@ -74,34 +74,66 @@
         "text": "So let's pin down the central distinction. An infectious disease is one caused by a pathogen, an organism or agent that enters a host and causes harm, and crucially, it can spread between hosts. COVID-19, malaria, tuberculosis, these are infectious. A non-infectious disease is different. It arises from genetic, lifestyle, or environmental factors, things like type 2 diabetes, coronary heart disease, or melanoma, and it cannot pass from one person to another. Here's the trap students fall into. They assume infectious means more serious, but that's not the line at all. Non-infectious diseases are actually the leading causes of death worldwide. The real distinction is about cause and transmission, so whenever you classify a condition, ask yourself one question, is there an invading organism."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Feature",
-          "Infectious",
-          "Non-infectious"
-        ],
-        "rows": [
-          [
-            "Cause",
-            "A pathogen",
-            "Genes, lifestyle, environment"
+        "type": "diorama",
+        "kind": "bio12m7Sorter",
+        "props": {
+          "bins": [
+            {
+              "title": "Infectious",
+              "sub": "a pathogen · spreads between hosts"
+            },
+            {
+              "title": "Non-infectious",
+              "sub": "genes, lifestyle, environment",
+              "tone": "grey"
+            }
           ],
-          [
-            "Transmissible?",
-            "Yes, between hosts",
-            "No"
+          "items": [
+            {
+              "text": "COVID-19",
+              "bin": 0,
+              "at": 358,
+              "icon": "virus"
+            },
+            {
+              "text": "malaria",
+              "bin": 0,
+              "at": 382,
+              "icon": "protozoan"
+            },
+            {
+              "text": "tuberculosis",
+              "bin": 0,
+              "at": 394,
+              "icon": "bacterium"
+            },
+            {
+              "text": "type 2 diabetes",
+              "bin": 1,
+              "at": 634
+            },
+            {
+              "text": "coronary heart disease",
+              "bin": 1,
+              "at": 670
+            },
+            {
+              "text": "melanoma",
+              "bin": 1,
+              "at": 718
+            }
           ],
-          [
-            "Example",
-            "COVID-19, malaria",
-            "Type 2 diabetes, melanoma"
+          "footer": [
+            {
+              "text": "Not about severity: non-infectious diseases are the leading causes of death",
+              "at": 1162
+            }
           ],
-          [
-            "Treatment",
-            "Targets the pathogen",
-            "Targets cause or symptoms"
-          ]
-        ]
+          "question": {
+            "text": "Is there an invading organism?",
+            "at": 1390
+          }
+        }
       }
     },
     {
@@ -153,29 +185,82 @@
         "text": "Now, are all pathogens the same kind of thing? Not at all. They sort into three groups, and the group you put a pathogen in decides how you can treat it. First, microorganisms, microscopic living cells, and that covers bacteria like tuberculosis, fungi like tinea, and protozoa like the malaria parasite. Second, macroorganisms, parasites large enough to see at some life stage, like tapeworms and other helminths, or lice and ticks. Third, non-cellular pathogens, things that are not living cells at all, and that's viruses, prions, which are just misfolded proteins, and viroids, which are tiny rings of RNA. Why does this matter so much? Because antibiotics only work on bacterial cells. They do absolutely nothing to a virus, a fungus, or a prion. So classification isn't trivia, it directly determines the cure."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Group",
-          "What it is",
-          "Examples"
-        ],
-        "rows": [
-          [
-            "Microorganisms",
-            "Living cells",
-            "Bacteria, fungi, protozoa"
+        "type": "diorama",
+        "kind": "bio12m7Sorter",
+        "props": {
+          "bins": [
+            {
+              "title": "Microorganisms",
+              "sub": "living cells"
+            },
+            {
+              "title": "Macroorganisms",
+              "sub": "visible parasites"
+            },
+            {
+              "title": "Non-cellular",
+              "sub": "not living cells",
+              "tone": "warm"
+            }
           ],
-          [
-            "Macroorganisms",
-            "Visible parasites",
-            "Tapeworms, lice, ticks"
+          "items": [
+            {
+              "text": "bacteria (TB)",
+              "bin": 0,
+              "at": 406,
+              "icon": "bacterium"
+            },
+            {
+              "text": "fungi (tinea)",
+              "bin": 0,
+              "at": 442,
+              "icon": "fungus"
+            },
+            {
+              "text": "protozoa (malaria)",
+              "bin": 0,
+              "at": 490,
+              "icon": "protozoan"
+            },
+            {
+              "text": "tapeworms",
+              "bin": 1,
+              "at": 694,
+              "icon": "worm"
+            },
+            {
+              "text": "lice and ticks",
+              "bin": 1,
+              "at": 754,
+              "icon": "tick"
+            },
+            {
+              "text": "viruses",
+              "bin": 2,
+              "at": 946,
+              "icon": "virus"
+            },
+            {
+              "text": "prions",
+              "bin": 2,
+              "at": 982,
+              "icon": "prion"
+            },
+            {
+              "text": "viroids",
+              "bin": 2,
+              "at": 1066,
+              "icon": "viroid"
+            }
           ],
-          [
-            "Non-cellular",
-            "Not living cells",
-            "Viruses, prions, viroids"
+          "footer": [
+            {
+              "text": "Antibiotics only work on bacterial cells: the group decides the cure",
+              "at": 1234,
+              "amber": true
+            }
           ]
-        ]
+        }
       }
     },
     {
@@ -200,6 +285,81 @@
       "caption": "Same pathogen types span both kingdoms; viroids are plant-only and prions animal-only.",
       "voiceover": {
         "text": "Here's a point the exam loves. The same pathogen types attack both plants and animals, the specific species just differs. A bacterium causes crown gall in a grapevine and tuberculosis in a human lung. A fungus causes wheat stem rust and athlete's foot. So the framework carries straight across both kingdoms. But there are two clean exceptions worth memorising. Viroids, those tiny RNA rings, infect plants only, like potato spindle tuber viroid. And prions, the misfolded proteins, infect animals only, like mad cow disease. Everything else, bacteria, viruses, fungi, protozoa, worms, can be found in both."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Sorter",
+        "props": {
+          "bins": [
+            {
+              "title": "Plants only",
+              "tone": "warm"
+            },
+            {
+              "title": "Both kingdoms"
+            },
+            {
+              "title": "Animals only",
+              "tone": "warm"
+            }
+          ],
+          "items": [
+            {
+              "text": "bacteria",
+              "bin": 1,
+              "at": 226,
+              "icon": "bacterium"
+            },
+            {
+              "text": "fungi",
+              "bin": 1,
+              "at": 394,
+              "icon": "fungus"
+            },
+            {
+              "text": "viroids (PSTVd)",
+              "bin": 0,
+              "at": 670,
+              "icon": "viroid",
+              "amber": true
+            },
+            {
+              "text": "prions (BSE)",
+              "bin": 2,
+              "at": 838,
+              "icon": "prion",
+              "amber": true
+            },
+            {
+              "text": "viruses",
+              "bin": 1,
+              "at": 970,
+              "icon": "virus"
+            },
+            {
+              "text": "protozoa",
+              "bin": 1,
+              "at": 994,
+              "icon": "protozoan"
+            },
+            {
+              "text": "worms",
+              "bin": 1,
+              "at": 1018,
+              "icon": "worm"
+            }
+          ],
+          "footer": [
+            {
+              "text": "Crown gall (grapevine) and TB (lung): both bacterial",
+              "at": 226
+            },
+            {
+              "text": "Same pathogen types; the species differs",
+              "at": 1060
+            }
+          ]
+        }
       }
     },
     {
@@ -226,34 +386,63 @@
         "text": "So we know what pathogens are. How do scientists actually track a disease as it spreads? The people who do this are epidemiologists, and they rely on two kinds of data. Primary data is what the investigator collects directly, things like swabbing patients, interviewing contacts in contact tracing, or running serology surveys to see who carries antibodies. Secondary data is collected by someone else and then reused, things like historical death records, government health databases, or published research from the WHO. The exam will often hand you a scenario and ask which type a given method is, so the question to ask yourself is simple, who actually collected it, you, or someone else? Real outbreak investigations combine both to piece together how the disease is moving."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Method",
-          "Type",
-          "What it reveals"
-        ],
-        "rows": [
-          [
-            "Contact tracing",
-            "Primary",
-            "Who infected whom"
+        "type": "diorama",
+        "kind": "chem12m6Sorter",
+        "props": {
+          "bins": [
+            {
+              "title": "Primary data",
+              "sub": "collected directly by the investigator"
+            },
+            {
+              "title": "Secondary data",
+              "sub": "collected by someone else, reused",
+              "tone": "grey"
+            }
           ],
-          [
-            "Serology survey",
-            "Primary",
-            "Who has been exposed"
+          "items": [
+            {
+              "text": "swabbing patients",
+              "bin": 0,
+              "at": 430
+            },
+            {
+              "text": "contact tracing",
+              "bin": 0,
+              "at": 490
+            },
+            {
+              "text": "serology surveys",
+              "bin": 0,
+              "at": 538
+            },
+            {
+              "text": "historical death records",
+              "bin": 1,
+              "at": 766
+            },
+            {
+              "text": "government health databases",
+              "bin": 1,
+              "at": 802
+            },
+            {
+              "text": "published research (WHO)",
+              "bin": 1,
+              "at": 850
+            }
           ],
-          [
-            "Historical records",
-            "Secondary",
-            "Patterns over time"
-          ],
-          [
-            "Published research",
-            "Secondary",
-            "Mechanism and risk factors"
+          "question": {
+            "text": "Who collected it? You, or someone else?",
+            "at": 1198
+          },
+          "footer": [
+            {
+              "text": "Real investigations combine both",
+              "at": 1294
+            }
           ]
-        ]
+        }
       }
     },
     {

@@ -151,6 +151,60 @@
       "caption": "Layered non-pharmaceutical interventions multiply to push R below 1.",
       "voiceover": {
         "text": "So how do you control R? The key idea is layering. Each non pharmaceutical intervention, like physical distancing, masks, ventilation, and testing and tracing, cuts transmission by some fraction, and their effects multiply together. So even if no single measure can get R below one, stacking several can. Once R is held below one, the outbreak shrinks generation by generation. That's the biology behind lockdowns, because fewer contacts means fewer chances to transmit. The genuine debate is about their social and economic cost, not whether the mechanism works."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7RStack",
+        "props": {
+          "r0": 2.6,
+          "measures": [
+            {
+              "name": "physical distancing",
+              "factor": 0.7,
+              "at": 130
+            },
+            {
+              "name": "masks",
+              "factor": 0.75,
+              "at": 154
+            },
+            {
+              "name": "ventilation",
+              "factor": 0.7,
+              "at": 178
+            },
+            {
+              "name": "testing and tracing",
+              "factor": 0.7,
+              "at": 202
+            }
+          ],
+          "cases": 7,
+          "generations": 5,
+          "labels": {
+            "multiply": "each cuts R by a fraction; the cuts multiply",
+            "below": "stacked: R below 1",
+            "tree": "R below 1: cases fall each generation"
+          },
+          "beats": {
+            "column": 58,
+            "multiply": 310,
+            "multiplyEnd": 478,
+            "below": 478,
+            "tree": 550,
+            "treeEnd": 680
+          },
+          "footer": [
+            {
+              "text": "Lockdowns: fewer contacts, fewer chances to transmit",
+              "at": 718
+            },
+            {
+              "text": "The debate is about cost, not whether the mechanism works",
+              "at": 922
+            }
+          ]
+        }
       }
     },
     {

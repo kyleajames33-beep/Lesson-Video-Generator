@@ -74,34 +74,95 @@
         "text": "Let's start with how antibiotics work, and the key phrase is selective toxicity. An antibiotic has to kill the bacterium without poisoning you, and it pulls that off by attacking structures and processes that bacteria have but your cells don't. So what are those bacteria-only targets? There's the peptidoglycan cell wall, which human cells completely lack, that's what penicillin attacks. There's the bacterial ribosome, the seventy S ribosome, which is different from our eighty S one. There's an enzyme called DNA gyrase, and there's the folate synthesis pathway, which bacteria run themselves but we don't. Because human cells don't have these, the drug damages the bacterium and mostly leaves us alone. One more distinction, some antibiotics are bactericidal, they kill bacteria outright, and others are bacteriostatic, they just stop bacteria growing so your immune system can finish the job."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Antibiotic target",
-          "In bacteria?",
-          "In human cells?"
-        ],
-        "rows": [
-          [
-            "Peptidoglycan cell wall",
-            "Yes",
-            "No"
+        "type": "diorama",
+        "kind": "bio12m7Compare",
+        "props": {
+          "title": "Selective toxicity: hit what bacteria have and we don’t",
+          "columns": [
+            {
+              "name": "Bacterium",
+              "icon": "bacterium",
+              "at": 82
+            },
+            {
+              "name": "Human cell",
+              "icon": "cell",
+              "at": 150
+            }
           ],
-          [
-            "70S ribosome",
-            "Yes",
-            "No (we have 80S)"
+          "rowLabels": [
+            {
+              "text": "Peptidoglycan cell wall",
+              "at": 562
+            },
+            {
+              "text": "Ribosome",
+              "at": 754
+            },
+            {
+              "text": "DNA gyrase",
+              "at": 982
+            },
+            {
+              "text": "Folate synthesis",
+              "at": 1054
+            }
           ],
-          [
-            "DNA gyrase",
-            "Yes",
-            "No"
+          "rows": [
+            [
+              {
+                "ok": true
+              },
+              {
+                "ok": false
+              }
+            ],
+            [
+              {
+                "text": "70S",
+                "ok": true
+              },
+              {
+                "text": "80S, not 70S",
+                "ok": false
+              }
+            ],
+            [
+              {
+                "ok": true
+              },
+              {
+                "ok": false
+              }
+            ],
+            [
+              {
+                "ok": true
+              },
+              {
+                "ok": false
+              }
+            ]
           ],
-          [
-            "Folate synthesis",
-            "Yes",
-            "No (we eat folate)"
+          "drug": {
+            "at": 1186,
+            "label": "antibiotic",
+            "hits": [
+              true,
+              false
+            ]
+          },
+          "footer": [
+            {
+              "text": "Bactericidal: kills bacteria outright",
+              "at": 1462
+            },
+            {
+              "text": "Bacteriostatic: stops growth; the immune system finishes the job",
+              "at": 1558
+            }
           ]
-        ]
+        }
       }
     },
     {
@@ -151,6 +212,97 @@
       "caption": "Antibiotics fail on viruses because viruses lack all the bacterial targets.",
       "voiceover": {
         "text": "Now the most clinically important point in this whole topic, and the one students get wrong most often. Antibiotics do absolutely nothing against viral infections. Taking antibiotics for a cold or the flu is pointless. And the reason is beautifully simple, the targets just aren't there. A virus has no cell wall, no seventy S ribosome, no DNA gyrase, and no folate pathway. It doesn't have any of the structures antibiotics attack, because a virus isn't a cell at all. Instead, a virus hijacks your own cell's machinery to copy itself, so there's simply nothing for the antibiotic to bind to. So how do we fight viruses? With antivirals, which target the few processes that are genuinely unique to the virus, usually the virus's own enzymes. And that's exactly why antivirals are so much harder to design than antibiotics, because the virus is using your machinery, there are very few virus-only targets you can safely hit."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Compare",
+        "props": {
+          "title": "The antibiotic targets just aren’t there",
+          "columns": [
+            {
+              "name": "Bacterium",
+              "icon": "bacterium",
+              "at": 154
+            },
+            {
+              "name": "Virus",
+              "sub": "not a cell",
+              "icon": "virus",
+              "at": 200,
+              "amber": true
+            }
+          ],
+          "rowLabels": [
+            {
+              "text": "Cell wall",
+              "at": 538
+            },
+            {
+              "text": "70S ribosome",
+              "at": 574
+            },
+            {
+              "text": "DNA gyrase",
+              "at": 622
+            },
+            {
+              "text": "Folate pathway",
+              "at": 670
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ok": true
+              },
+              {
+                "ok": false
+              }
+            ],
+            [
+              {
+                "ok": true
+              },
+              {
+                "ok": false
+              }
+            ],
+            [
+              {
+                "ok": true
+              },
+              {
+                "ok": false
+              }
+            ],
+            [
+              {
+                "ok": true
+              },
+              {
+                "ok": false
+              }
+            ]
+          ],
+          "drug": {
+            "at": 1000,
+            "label": "antibiotic",
+            "hits": [
+              true,
+              false
+            ]
+          },
+          "footer": [
+            {
+              "text": "Antivirals target the virus’s own enzymes instead",
+              "at": 1294
+            },
+            {
+              "text": "Few virus-only targets, so antivirals are harder to design",
+              "at": 1630
+            }
+          ]
+        }
       }
     },
     {
@@ -177,39 +329,57 @@
         "text": "So was Fleming right? Absolutely, and resistance is one of the clearest examples of natural selection you can see in a human lifetime. Here's the crucial idea. The antibiotic does not create resistance. Within any large bacterial population, rare resistant variants already exist, thrown up by random mutation before the antibiotic ever shows up. When you apply the antibiotic, it kills off the susceptible bacteria, but the resistant ones survive, and now they have the whole place to themselves, so they reproduce, and the next generation is mostly resistant. The drug acted as the selection pressure, it selected for resistance, it didn't cause the mutation. And it gets worse, because bacteria can swap resistance genes directly, on little rings of DNA called plasmids, through horizontal gene transfer. A resistance gene can jump from one species to a completely different species in a matter of hours, far faster than mutation alone."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "n1",
-            "label": "Mutation"
+        "type": "diorama",
+        "kind": "bio12m7Selection",
+        "props": {
+          "organism": "bacterium",
+          "drug": "antibiotic",
+          "legend": "resistant variant (random mutation)",
+          "captions": [
+            {
+              "text": "A large bacterial population",
+              "at": 0
+            },
+            {
+              "text": "Rare resistant variants already exist",
+              "at": 406
+            },
+            {
+              "text": "Antibiotic kills the susceptible ones",
+              "at": 598
+            },
+            {
+              "text": "Resistant survivors reproduce",
+              "at": 910
+            },
+            {
+              "text": "The drug selects; it doesn’t create",
+              "at": 1078,
+              "amber": true
+            },
+            {
+              "text": "Plasmids pass resistance between species",
+              "at": 1426
+            }
+          ],
+          "hgt": {
+            "text": "plasmid"
           },
-          {
-            "id": "n2",
-            "label": "Exposure"
+          "beats": {
+            "pop": 0,
+            "mutants": 406,
+            "drug": 598,
+            "survive": 754,
+            "reproduce": 910,
+            "hgt": 1500
           },
-          {
-            "id": "n3",
-            "label": "Survive"
-          },
-          {
-            "id": "n4",
-            "label": "Spread"
-          }
-        ],
-        "edges": [
-          {
-            "from": "n1",
-            "to": "n2"
-          },
-          {
-            "from": "n2",
-            "to": "n3"
-          },
-          {
-            "from": "n3",
-            "to": "n4"
-          }
-        ]
+          "footer": [
+            {
+              "text": "Horizontal gene transfer: another species in hours",
+              "at": 1606
+            }
+          ]
+        }
       }
     },
     {

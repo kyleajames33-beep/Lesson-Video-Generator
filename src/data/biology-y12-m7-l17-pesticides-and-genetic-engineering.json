@@ -77,6 +77,59 @@
       "caption": "Pesticides kill insect vectors; heavy use selects for resistant mosquitoes.",
       "voiceover": {
         "text": "Let's start with the oldest tool, chemical pesticides. Many serious diseases, like malaria and dengue, reach humans through an insect vector, usually a mosquito. So one obvious strategy is to break that link by killing the insect. Pesticides attack the insect's nervous system, its growth or its gut, which is how DDT, the pyrethroids and the bacterial Bt toxin work. A great example is the pyrethroid treated bed net, a frontline defence against malaria mosquitoes. But here's the catch. Heavy spraying is a human induced selection pressure. A few mosquitoes already carry mutations that let them survive, and spraying kills the rest, so the survivors breed and resistance spreads. That's how DDT resistant mosquitoes emerged, the same logic as antibiotic resistant bacteria. DDT is the cautionary tale, because it also builds up in food chains, and today it's banned or restricted almost everywhere."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Selection",
+        "props": {
+          "organism": "mosquito",
+          "drug": "spray",
+          "legend": "resistance mutation",
+          "captions": [
+            {
+              "text": "Kill the vector, break the link",
+              "at": 310
+            },
+            {
+              "text": "Attack nerves, growth or gut",
+              "at": 454
+            },
+            {
+              "text": "Pyrethroid-treated bed nets",
+              "at": 766
+            },
+            {
+              "text": "A few already carry resistance",
+              "at": 1018
+            },
+            {
+              "text": "Spraying kills the rest",
+              "at": 1150
+            },
+            {
+              "text": "Survivors breed: resistance spreads",
+              "at": 1222,
+              "amber": true
+            }
+          ],
+          "beats": {
+            "pop": 310,
+            "mutants": 1018,
+            "drug": 1150,
+            "survive": 1210,
+            "reproduce": 1240
+          },
+          "footer": [
+            {
+              "text": "Same logic as antibiotic-resistant bacteria",
+              "at": 1378
+            },
+            {
+              "text": "DDT also builds up in food chains: now banned or restricted",
+              "at": 1546
+            }
+          ]
+        }
       }
     },
     {
@@ -128,39 +181,72 @@
         "text": "So here's how the sterile insect technique works, the screwworm trick from the hook. First you mass rear the insect, millions of them. Then you sterilise the males, usually with radiation. Then you release them in overwhelming numbers, far more than the wild males. When a wild female mates, she's far more likely to pair with a sterile male, and that mating produces no offspring. Repeat that generation after generation, and the population collapses. It has three big advantages. It's species specific, because sterile males only compete for mates within their own species. It leaves no chemical residue. And resistance is very unlikely to evolve, because the only way to resist would be for females to recognise and avoid sterile males, and those males look and behave just like wild ones. There's almost nothing for selection to grab onto."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "n1",
-            "label": "Rear"
-          },
-          {
-            "id": "n2",
-            "label": "Sterilise"
-          },
-          {
-            "id": "n3",
-            "label": "Release"
-          },
-          {
-            "id": "n4",
-            "label": "Collapse"
-          }
-        ],
-        "edges": [
-          {
-            "from": "n1",
-            "to": "n2"
-          },
-          {
-            "from": "n2",
-            "to": "n3"
-          },
-          {
-            "from": "n3",
-            "to": "n4"
-          }
-        ]
+        "type": "diorama",
+        "kind": "bio12m7Steps",
+        "props": {
+          "layout": "row",
+          "steps": [
+            {
+              "name": "Rear",
+              "sub": "mass-rear millions",
+              "icon": "fly",
+              "at": 142
+            },
+            {
+              "name": "Sterilise",
+              "sub": "the males, usually by radiation",
+              "icon": "fly",
+              "iconOpts": {
+                "sterile": true
+              },
+              "at": 250
+            },
+            {
+              "name": "Release",
+              "sub": "far more than the wild males",
+              "icon": "fly",
+              "iconOpts": {
+                "sterile": true
+              },
+              "at": 346
+            },
+            {
+              "name": "Mate",
+              "sub": "wild female with a sterile male",
+              "icon": "fly",
+              "at": 502,
+              "tags": [
+                {
+                  "text": "no offspring",
+                  "at": 706,
+                  "tone": "warm"
+                }
+              ]
+            },
+            {
+              "name": "Collapse",
+              "sub": "generation after generation",
+              "bars": [
+                1,
+                0.55,
+                0.28,
+                0.1
+              ],
+              "at": 826,
+              "amber": true
+            }
+          ],
+          "footer": [
+            {
+              "text": "Species-specific, with no chemical residue",
+              "at": 934
+            },
+            {
+              "text": "Resistance very unlikely: sterile males look and act like wild ones",
+              "at": 1162
+            }
+          ]
+        }
       }
     },
     {

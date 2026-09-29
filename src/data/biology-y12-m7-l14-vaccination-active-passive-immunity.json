@@ -72,6 +72,28 @@
       "caption": "Active immunity: own response, memory, lasting. Passive: borrowed antibodies, immediate, temporary.",
       "voiceover": {
         "text": "So there are two fundamentally different ways to have protective antibodies in your blood. The first is active immunity. This is where your own immune system meets an antigen and mounts a response, exactly the primary response you studied last lesson, and crucially it forms memory cells. Active immunity is slow to get started, but it lasts a long time, sometimes for life. The second is passive immunity. Here you don't make the antibodies at all, you receive them ready-made from another source. Passive immunity is instant, the antibodies are working the moment they arrive, but here's the catch, your own immune system never gets activated, so no memory cells form, and the protection fades as those borrowed antibodies break down. So the whole contrast is speed versus durability. Active is slow but lasting. Passive is immediate but temporary."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Response",
+        "props": {
+          "mode": "activePassive",
+          "labels": {
+            "curve1": "active: your own response",
+            "curve2": "passive: borrowed antibodies",
+            "memory": "memory cells: active only",
+            "verdict": "Active is slow but lasting. Passive is immediate but temporary."
+          },
+          "beats": {
+            "exp1": 118,
+            "draw1": 140,
+            "draw1End": 700,
+            "memory": 466,
+            "draw2": 874,
+            "draw2End": 1340,
+            "verdict": 1486
+          }
+        }
       }
     },
     {
@@ -146,6 +168,50 @@
       "caption": "Herd immunity: threshold = 1 minus 1/R0; measles ~95%, polio ~80 to 85%.",
       "voiceover": {
         "text": "Here's the idea that makes vaccination so powerful at the population level, herd immunity. When a high enough proportion of a population is immune, the pathogen simply can't find enough susceptible people to keep spreading, so the transmission chains break. And the beautiful part, that protects even the people who aren't immune, because the disease can't reach them. So herd immunity is a population threshold, it does not mean everyone is immune. How high does that threshold sit? It depends on how contagious the disease is, captured by the basic reproduction number, R nought. The threshold equals one minus one over R nought. So the more contagious a disease, the higher the wall of immunity you need. Measles is ferociously contagious, R nought around twelve to eighteen, so it needs roughly ninety-five percent coverage. Polio, with an R nought of five to seven, needs about eighty to eighty-five percent. And the whole point is to protect those who can't be vaccinated, newborns, the immunocompromised, and people whose vaccines didn't take."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Herd",
+        "props": {
+          "rMax": 20,
+          "bands": [
+            {
+              "name": "measles",
+              "r0": [
+                12,
+                18
+              ],
+              "label": "R₀ 12–18, needs about 95% coverage",
+              "at": 1390
+            },
+            {
+              "name": "polio",
+              "r0": [
+                5,
+                7
+              ],
+              "label": "R₀ 5–7, needs about 80–85%",
+              "at": 1606
+            }
+          ],
+          "labels": {
+            "spread": "every route hits an immune person: the chain breaks",
+            "vulnerable": "not immune, but protected: newborns, the immunocompromised",
+            "threshold": "immune share needed",
+            "formula": "threshold = 1 − 1/R₀",
+            "wall": "Higher R₀, higher wall of immunity"
+          },
+          "beats": {
+            "pop": 142,
+            "spread": 406,
+            "protect": 470,
+            "vulnerable": 502,
+            "threshold": 742,
+            "curve": 1054,
+            "formula": 1150,
+            "wall": 1306
+          }
+        }
       }
     },
     {
@@ -189,6 +255,73 @@
       "caption": "Control (still present), elimination (locally zero), eradication (global zero, only smallpox).",
       "voiceover": {
         "text": "Finally, three words that examiners love to test, because students mix them up, control, elimination, and eradication. Control means you've reduced the incidence of a disease to an acceptable level, but it's still around, like seasonal flu. Elimination is stronger, it means zero cases in a defined area, a country or region, but the pathogen still exists elsewhere in the world. Australia, for instance, has eliminated measles. And eradication is the ultimate goal, permanent global zero, the pathogen wiped out everywhere. Only one human disease has ever been eradicated, smallpox, declared gone in nineteen eighty. Why is eradication so rare? Because some diseases hide in animal reservoirs, some change their antigens too fast for vaccines to keep up, and some spread silently before symptoms appear. And elimination is fragile, if vaccination coverage slips below the herd immunity threshold, a single imported case can spark a new outbreak. That's why we keep vaccinating even when a disease seems gone."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Steps",
+        "props": {
+          "layout": "stairs",
+          "steps": [
+            {
+              "name": "Control",
+              "sub": "reduced to an acceptable level, still present",
+              "icon": "globe",
+              "iconOpts": {
+                "globe": "some"
+              },
+              "at": 142,
+              "tags": [
+                {
+                  "text": "e.g. seasonal flu",
+                  "at": 382
+                }
+              ]
+            },
+            {
+              "name": "Elimination",
+              "sub": "zero in a defined area, still exists elsewhere",
+              "icon": "globe",
+              "iconOpts": {
+                "globe": "regionZero"
+              },
+              "at": 406,
+              "tags": [
+                {
+                  "text": "e.g. measles, Australia",
+                  "at": 742
+                },
+                {
+                  "text": "fragile: an imported case",
+                  "at": 1474,
+                  "tone": "warm"
+                }
+              ]
+            },
+            {
+              "name": "Eradication",
+              "sub": "permanent global zero",
+              "icon": "globe",
+              "iconOpts": {
+                "globe": "none"
+              },
+              "at": 778,
+              "amber": true,
+              "tags": [
+                {
+                  "text": "only smallpox, 1980",
+                  "at": 1030,
+                  "tone": "amber"
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "text": "Hard: animal reservoirs, fast antigen change, silent spread",
+              "at": 1222
+            }
+          ]
+        }
       }
     },
     {

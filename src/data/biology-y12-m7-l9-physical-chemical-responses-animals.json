@@ -72,6 +72,75 @@
       "caption": "Skin, mucous membranes, cilia, and chemical barriers block most pathogens at the surface.",
       "voiceover": {
         "text": "Just like a plant, your body's first line is non-specific barriers, and most pathogens never get past them. Start with the physical ones. Your skin is tough, keratinised, and multilayered, it's slightly acidic, and it sheds about a million dead cells an hour, carrying surface microbes away with them. Your mucous membranes line the respiratory and digestive tracts, trapping pathogens in mucus, and cilia beat constantly to sweep that mucus toward the exits, the so-called mucociliary escalator. Then the chemical barriers. Stomach acid sits at a pH around one point five, destroying most ingested pathogens. Lysozyme, an enzyme in your tears and saliva, breaks down bacterial cell walls. And sebum makes the skin surface inhospitable. There's even your normal microbiome, the helpful bacteria that out-compete pathogens for nutrients and space. The key principle, the physical barrier is your most important defence, and everything else is a fallback for when it's breached."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Sorter",
+        "props": {
+          "bins": [
+            {
+              "title": "Physical",
+              "sub": "block and sweep out"
+            },
+            {
+              "title": "Chemical",
+              "sub": "destroy or deter",
+              "tone": "warm"
+            },
+            {
+              "title": "Living",
+              "sub": "out-compete pathogens",
+              "tone": "grey"
+            }
+          ],
+          "items": [
+            {
+              "text": "skin: keratinised, sheds",
+              "bin": 0,
+              "at": 238,
+              "icon": "person"
+            },
+            {
+              "text": "mucous membranes",
+              "bin": 0,
+              "at": 574
+            },
+            {
+              "text": "cilia sweep mucus out",
+              "bin": 0,
+              "at": 730
+            },
+            {
+              "text": "stomach acid, pH ≈ 1.5",
+              "bin": 1,
+              "at": 958,
+              "icon": "drop"
+            },
+            {
+              "text": "lysozyme: tears, saliva",
+              "bin": 1,
+              "at": 1126
+            },
+            {
+              "text": "sebum on the skin",
+              "bin": 1,
+              "at": 1294
+            },
+            {
+              "text": "normal microbiome",
+              "bin": 2,
+              "at": 1414,
+              "icon": "bacterium"
+            }
+          ],
+          "footer": [
+            {
+              "text": "The physical barrier is the most important defence; the rest are fallbacks",
+              "at": 1666,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {
@@ -123,29 +192,42 @@
         "text": "When a pathogen breaches the barriers and enters tissue, the inflammatory response begins within seconds, and the four cardinal signs each have a specific cause. Redness and heat go together, both are caused by vasodilation, the widening of blood vessels, which increases blood flow to the area, and that increased flow delivers immune cells faster and speeds up reactions. Swelling, or oedema, is caused by increased capillary permeability, the vessels become leaky and plasma seeps into the tissue, which brings antibodies to the site. And pain is caused by prostaglandins and bradykinin stimulating pain receptors called nociceptors, which signals damage and makes you rest the area. So the overall purpose is to deliver immune cells and antibodies to the infection site, contain the pathogen, and begin repair. Every one of those four signs is really just the visible cost of a genuinely useful defensive change."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Sign",
-          "Cause",
-          "Purpose"
-        ],
-        "rows": [
-          [
-            "Redness, heat",
-            "Vasodilation",
-            "More blood, faster cells"
-          ],
-          [
-            "Swelling",
-            "Leaky capillaries",
-            "Brings antibodies in"
-          ],
-          [
-            "Pain",
-            "Prostaglandins, bradykinin",
-            "Signals damage, limits use"
+        "type": "diorama",
+        "kind": "bio12m7Inflammation",
+        "props": {
+          "beats": {
+            "enter": 0,
+            "histamine": 99999,
+            "dilate": 346,
+            "leak": 790,
+            "pain": 1090,
+            "recruit": 1234,
+            "engulf": 1420
+          },
+          "labels": [
+            {
+              "text": "Redness and heat: vasodilation, more blood flow",
+              "at": 346,
+              "anchor": "vessel"
+            },
+            {
+              "text": "Swelling: leaky capillaries, plasma seeps out",
+              "at": 790,
+              "anchor": "tissue"
+            },
+            {
+              "text": "Pain: prostaglandins and bradykinin on nociceptors",
+              "at": 1090,
+              "anchor": "nerve"
+            },
+            {
+              "text": "Each sign is the visible cost of a useful defensive change",
+              "at": 1582,
+              "anchor": "bottom",
+              "amber": true
+            }
           ]
-        ]
+        }
       }
     },
     {
@@ -172,39 +254,51 @@
         "text": "Inflammation doesn't just happen all at once, it unfolds in a precise sequence, triggered by chemical signals. Let's walk the cascade. First, a pathogen breaches the barrier and enters the tissue. Second, mast cells at the site release histamine, and damaged cells release prostaglandins and bradykinin. Third, the histamine causes vasodilation, so the vessels widen, giving redness and warmth, and it increases capillary permeability, so plasma leaks out, giving swelling. Fourth, neutrophils, the first-responder white blood cells, migrate to the site, drawn along a chemical gradient by molecules called chemokines, and they begin phagocytosis, engulfing the pathogen. Finally, the pathogen is destroyed and tissue repair begins. And one detail the exam likes, pus is a mixture of dead neutrophils, destroyed pathogen material, and leaked fluid. Its presence is a sign the immune system actively engaged and fought, not a sign that it failed."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "enter",
-            "label": "Enter"
+        "type": "diorama",
+        "kind": "bio12m7Inflammation",
+        "props": {
+          "beats": {
+            "enter": 214,
+            "histamine": 334,
+            "dilate": 634,
+            "leak": 742,
+            "recruit": 802,
+            "engulf": 1138,
+            "pain": 99999
           },
-          {
-            "id": "histamine",
-            "label": "Histamine"
-          },
-          {
-            "id": "dilate",
-            "label": "Dilate"
-          },
-          {
-            "id": "recruit",
-            "label": "Recruit"
-          }
-        ],
-        "edges": [
-          {
-            "from": "enter",
-            "to": "histamine"
-          },
-          {
-            "from": "histamine",
-            "to": "dilate"
-          },
-          {
-            "from": "dilate",
-            "to": "recruit"
-          }
-        ]
+          "labels": [
+            {
+              "text": "1 A pathogen gets into the tissue",
+              "at": 214,
+              "anchor": "breach"
+            },
+            {
+              "text": "2 Mast cells release histamine",
+              "at": 334,
+              "anchor": "mast"
+            },
+            {
+              "text": "3 Vessels widen and leak",
+              "at": 634,
+              "anchor": "vessel"
+            },
+            {
+              "text": "4 Neutrophils follow chemokines, then engulf",
+              "at": 1042,
+              "anchor": "neutrophil"
+            },
+            {
+              "text": "5 Pathogen destroyed; repair begins",
+              "at": 1138,
+              "anchor": "tissue"
+            },
+            {
+              "text": "Pus: dead neutrophils, destroyed pathogen, fluid. The defence engaged.",
+              "at": 1318,
+              "anchor": "bottom"
+            }
+          ]
+        }
       }
     },
     {

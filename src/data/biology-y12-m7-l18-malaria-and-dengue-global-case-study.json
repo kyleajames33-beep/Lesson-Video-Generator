@@ -77,39 +77,63 @@
         "text": "Let's start with malaria, and the first thing to get right is what causes it. Malaria isn't a virus or a bacterium. It's caused by Plasmodium, a single celled eukaryotic parasite. It's spread by female Anopheles mosquitoes, which tend to bite at night, and the deadliest species is Plasmodium falciparum. The key is its life cycle. The mosquito injects the parasite, which travels first to the liver, where it multiplies silently, and then it bursts into the blood, invading red blood cells and causing the cycles of fever, anaemia and organ damage. Each stage is a separate point of attack. Bed nets target the mosquito, antimalarial drugs target the blood stage, and vaccines aim at the parasite as it heads for the liver. And because Plasmodium is a eukaryote, antibiotics and antivirals do nothing against it."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "n1",
-            "label": "Mosquito"
+        "type": "diorama",
+        "kind": "bio12m7Steps",
+        "props": {
+          "layout": "cycle",
+          "title": "Plasmodium: a single-celled eukaryotic parasite",
+          "steps": [
+            {
+              "name": "Mosquito",
+              "sub": "female Anopheles, bites at night",
+              "icon": "mosquito",
+              "at": 394,
+              "tags": [
+                {
+                  "text": "bed nets",
+                  "at": 1186
+                }
+              ]
+            },
+            {
+              "name": "Liver",
+              "sub": "multiplies silently",
+              "icon": "liver",
+              "at": 754,
+              "tags": [
+                {
+                  "text": "vaccines",
+                  "at": 1330
+                }
+              ]
+            },
+            {
+              "name": "Blood",
+              "sub": "red blood cells: fever, anaemia",
+              "icon": "rbc",
+              "at": 874,
+              "tags": [
+                {
+                  "text": "antimalarial drugs",
+                  "at": 1246
+                }
+              ]
+            }
+          ],
+          "traveller": {
+            "icon": "protozoan"
           },
-          {
-            "id": "n2",
-            "label": "Liver"
+          "loop": {
+            "at": 1090
           },
-          {
-            "id": "n3",
-            "label": "Blood"
-          },
-          {
-            "id": "n4",
-            "label": "Mosquito"
-          }
-        ],
-        "edges": [
-          {
-            "from": "n1",
-            "to": "n2"
-          },
-          {
-            "from": "n2",
-            "to": "n3"
-          },
-          {
-            "from": "n3",
-            "to": "n4"
-          }
-        ]
+          "footer": [
+            {
+              "text": "A eukaryote: antibiotics and antivirals do nothing",
+              "at": 1474,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {
@@ -159,6 +183,35 @@
       "caption": "Dengue has four serotypes; a second infection can trigger ADE and severe disease.",
       "voiceover": {
         "text": "Now dengue, which behaves completely differently. Dengue is caused by a virus, spread by Aedes aegypti, an urban, daytime biter that breeds in tiny pools of water, like a bottle cap or a plant pot. There are four serotypes, and catching one gives you lifelong immunity to that serotype only. You're still susceptible to the other three. And it gets worse. If you later catch a different serotype, the leftover antibodies can bind the new virus without neutralising it, and actually help it infect your cells. That's antibody dependent enhancement, and it can cause severe, life threatening dengue. So a dengue vaccine has to protect against all four serotypes, or it risks setting someone up for ADE, which is what happened with the Dengvaxia vaccine in children who'd never had dengue."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Antibody",
+        "props": {
+          "mode": "ade",
+          "labels": {
+            "vector": "Aedes aegypti: urban, bites by day, breeds in tiny pools of water",
+            "serotypes": "dengue virus: four serotypes",
+            "first": "antibodies left by serotype 1: lifelong immunity to 1 only",
+            "others": "still susceptible to the other three",
+            "bind": "bound, not neutralised",
+            "severe": "antibody-dependent enhancement: severe dengue",
+            "vaccine": "A vaccine must protect against all four serotypes",
+            "note": "Dengvaxia harmed children who had never had dengue"
+          },
+          "beats": {
+            "vector": 106,
+            "serotypes": 382,
+            "first": 466,
+            "others": 610,
+            "second": 742,
+            "bind": 862,
+            "enter": 922,
+            "severe": 1006,
+            "vaccine": 1234,
+            "note": 1438
+          }
+        }
       }
     },
     {

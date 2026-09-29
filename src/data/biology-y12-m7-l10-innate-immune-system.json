@@ -151,6 +151,83 @@
       "caption": "Innate components: neutrophils, macrophages, dendritic cells, NK cells, complement, interferons.",
       "voiceover": {
         "text": "Let's name the components, because the exam asks you to describe their roles. On the cellular side, neutrophils are the first phagocytes to arrive at an infection, they're short-lived, and they're the most abundant white blood cell in your blood. Macrophages are long-lived phagocytes that patrol the tissues, engulfing pathogens and releasing cytokines, and they present antigens to T cells, bridging to the adaptive system. Dendritic cells are sentinels that engulf and process antigens, then migrate to the lymph nodes to activate T cells, so they're the key link between innate and adaptive. Natural killer cells kill virus-infected and cancerous host cells. And mast cells release histamine to start inflammation. On the soluble side, you have the complement system, a set of blood proteins that opsonise pathogens and form a membrane attack complex to punch holes in them, and interferons, which are released by virus-infected cells to warn their neighbours to prepare antiviral defences."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Sorter",
+        "props": {
+          "bins": [
+            {
+              "title": "Phagocytes",
+              "sub": "engulf pathogens"
+            },
+            {
+              "title": "Killers, signallers",
+              "sub": "NK cells kill; mast cells signal",
+              "tone": "grey"
+            },
+            {
+              "title": "Soluble chemicals",
+              "sub": "tag, punch holes, warn",
+              "tone": "warm"
+            }
+          ],
+          "items": [
+            {
+              "text": "neutrophils",
+              "bin": 0,
+              "at": 130,
+              "icon": "neutrophil"
+            },
+            {
+              "text": "macrophages",
+              "bin": 0,
+              "at": 466,
+              "icon": "macrophage"
+            },
+            {
+              "text": "dendritic cells",
+              "bin": 0,
+              "at": 778,
+              "icon": "dendritic"
+            },
+            {
+              "text": "NK cells",
+              "bin": 1,
+              "at": 1126,
+              "icon": "nk"
+            },
+            {
+              "text": "mast cells",
+              "bin": 1,
+              "at": 1258,
+              "icon": "mast"
+            },
+            {
+              "text": "complement",
+              "bin": 2,
+              "at": 1426,
+              "icon": "complement"
+            },
+            {
+              "text": "interferons",
+              "bin": 2,
+              "at": 1690,
+              "icon": "interferon"
+            }
+          ],
+          "footer": [
+            {
+              "text": "Neutrophils: first to arrive, short-lived, most abundant white cell",
+              "at": 300
+            },
+            {
+              "text": "Macrophages and dendritic cells present antigen to T cells",
+              "at": 778,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {
@@ -177,39 +254,26 @@
         "text": "Now the innate system's primary weapon against bacteria and fungi, phagocytosis, step by step. Step one, chemotaxis, the phagocyte follows a chemical gradient, the chemokines, toward the pathogen. Step two, adherence, the phagocyte's pattern recognition receptors bind the pathogen's surface. Step three, ingestion, the phagocyte extends arm-like pseudopods that wrap around and engulf the pathogen, sealing it inside a bubble called a phagosome. Step four, digestion, a lysosome fuses with the phagosome, and its enzymes, plus reactive oxygen species, destroy the pathogen. And step five, the one that matters for what comes next, presentation, the phagocyte displays fragments of the pathogen, its antigens, on MHC molecules on its surface, which activates T cells. That fifth step is where innate immunity hands off to adaptive. And remember opsonisation, coating the pathogen with complement or antibody dramatically speeds up step two, the adherence."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "find",
-            "label": "Find"
+        "type": "diorama",
+        "kind": "bio12m7Phago",
+        "props": {
+          "labels": {
+            "mhc": "antigen on MHC: activates T cells",
+            "opson": "opsonisation: a coated pathogen is bound far faster"
           },
-          {
-            "id": "bind",
-            "label": "Bind"
-          },
-          {
-            "id": "engulf",
-            "label": "Engulf"
-          },
-          {
-            "id": "present",
-            "label": "Present"
+          "beats": {
+            "s1": 118,
+            "s2": 286,
+            "s3": 454,
+            "seal": 700,
+            "s4": 742,
+            "fuse": 790,
+            "s5": 982,
+            "mhc": 1060,
+            "tcell": 1234,
+            "opson": 1498
           }
-        ],
-        "edges": [
-          {
-            "from": "find",
-            "to": "bind"
-          },
-          {
-            "from": "bind",
-            "to": "engulf"
-          },
-          {
-            "from": "engulf",
-            "to": "present"
-          }
-        ]
+        }
       }
     },
     {

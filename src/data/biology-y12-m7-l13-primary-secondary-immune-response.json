@@ -72,6 +72,32 @@
       "caption": "Primary response: 7 to 14 day lag, low antibody, IgM then IgG, memory cells formed.",
       "voiceover": {
         "text": "Let's start with the primary response, which is what happens the very first time your body meets a particular antigen. The key word here is slow. There's a lag of about seven to fourteen days, because your immune system has to find the one B cell whose receptor happens to match this antigen, and then clone it up into a working population. That's the clonal selection you covered back in Lesson eleven. During that lag the antibody level stays fairly low, and the first antibody you produce is IgM, before the response matures and switches to IgG. And because all of this is so slow, here's the consequence, you usually get sick before the response even peaks. But there's a payoff that lasts. At the end of the primary response, your body keeps a reserve of long-lived memory B cells and memory T cells. They don't do much right now, they just wait, sometimes for decades."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Response",
+        "props": {
+          "mode": "primary",
+          "title": "First meeting: slow and low",
+          "labels": {
+            "exp1": "first exposure",
+            "lag1": "lag of 7–14 days",
+            "igm": "IgM first",
+            "igg": "then IgG",
+            "ill": "ill before the peak",
+            "memory": "memory B and T cells wait"
+          },
+          "beats": {
+            "exp1": 82,
+            "lag1": 334,
+            "draw1": 450,
+            "draw1End": 1030,
+            "igg": 1102,
+            "iggEnd": 1560,
+            "ill": 1282,
+            "memory": 1654
+          }
+        }
       }
     },
     {
@@ -123,81 +149,38 @@
         "text": "Now the secondary response, and this is where the magic happens. When that same antigen turns up a second time, your memory cells are already there, already matched to it, and sitting in much larger numbers than the original naive cell. So the lag collapses, from a week or two, down to just one to three days. The antibody level shoots up, ten to a hundred times higher than the primary peak, and it's mostly the high-quality IgG straight away, not IgM. The result, the pathogen is usually wiped out before you ever notice a single symptom. And here's the thing to really hold onto. It's the exact same machinery as the primary response, B cells turning into plasma cells. The only difference is that it's pre-built. The whole reason the second response is so much better is simply that the memory cells were already waiting."
       },
       "diagram": {
-        "type": "lineGraph",
-        "xLabel": "Time",
-        "yLabel": "Antibody titre",
-        "series": [
-          {
-            "label": "1st exposure (primary)",
-            "color": "inkDim",
-            "points": [
-              [
-                0,
-                0.05
-              ],
-              [
-                0.1,
-                0.06
-              ],
-              [
-                0.2,
-                0.22
-              ],
-              [
-                0.3,
-                0.36
-              ],
-              [
-                0.4,
-                0.34
-              ],
-              [
-                0.5,
-                0.26
-              ],
-              [
-                0.6,
-                0.2
-              ]
-            ]
+        "type": "diorama",
+        "kind": "bio12m7Response",
+        "props": {
+          "mode": "both",
+          "yLabel": "Antibody titre",
+          "labels": {
+            "exp1": "primary",
+            "exp2": "same antigen again",
+            "lag1": "a week or two",
+            "lag2": "1–3 days",
+            "ratio": "10–100× higher",
+            "curve2": "mostly IgG",
+            "naive": "the one naive cell",
+            "memory": "memory cells, far more",
+            "well": "no symptoms",
+            "verdict": "Same machinery, pre-built: the memory cells were waiting"
           },
-          {
-            "label": "2nd exposure (secondary)",
-            "color": "bio",
-            "points": [
-              [
-                0.55,
-                0.2
-              ],
-              [
-                0.62,
-                0.55
-              ],
-              [
-                0.68,
-                0.92
-              ],
-              [
-                0.78,
-                0.95
-              ],
-              [
-                0.9,
-                0.85
-              ],
-              [
-                1,
-                0.78
-              ]
-            ]
+          "beats": {
+            "exp1": 0,
+            "draw1": 10,
+            "draw1End": 120,
+            "memory": 190,
+            "exp2": 154,
+            "draw2": 460,
+            "draw2End": 700,
+            "lag1": 442,
+            "lag2": 574,
+            "ratio": 682,
+            "well": 1018,
+            "verdict": 1600
           }
-        ],
-        "markers": [
-          {
-            "x": 0.58,
-            "label": "re-exposure"
-          }
-        ]
+        }
       }
     },
     {

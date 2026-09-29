@@ -243,39 +243,37 @@
         "text": "OK, now the example the new syllabus names, Panama disease of bananas, also called Fusarium wilt. It's caused by a soil fungus, Fusarium oxysporum, which enters through the roots and grows up inside the xylem. As it spreads, the xylem gets blocked, so water can't reach the leaves, and the plant yellows, wilts and eventually dies. The plant does respond, physically plugging its own xylem with growths called tyloses and gums, and chemically making antifungal compounds, but in susceptible varieties that response is too slow. Worse, the fungus leaves tough spores that survive in soil for decades, moving on muddy boots, machinery and water. And here's the biodiversity link. Almost every banana we eat is a Cavendish, and Cavendish plants are grown from suckers, so they're clones. A plantation has essentially no genetic variation, so if one plant is susceptible, they all are. There's history here too, because an earlier strain wiped out the Gros Michel banana in the twentieth century, and Cavendish replaced it."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "soil",
-            "label": "Spores in soil"
+        "type": "diorama",
+        "kind": "bio12m7Plant",
+        "props": {
+          "mode": "panama",
+          "labels": {
+            "fungus": "soil fungus: Fusarium oxysporum",
+            "xylem": "enters roots, grows up the xylem",
+            "block": "xylem blocked: no water to leaves",
+            "tyloses": "tyloses and gums plug it; antifungals made",
+            "late": "too slow",
+            "wilt": "leaves yellow, wilt and die",
+            "persist": "spores survive in soil for decades",
+            "clones": "Cavendish: grown from suckers, clones",
+            "noVar": "no genetic variation: all susceptible",
+            "history": "An earlier strain wiped out the Gros Michel banana"
           },
-          {
-            "id": "root",
-            "label": "Enter roots"
-          },
-          {
-            "id": "xylem",
-            "label": "Block xylem"
-          },
-          {
-            "id": "wilt",
-            "label": "Wilt and die"
+          "beats": {
+            "plant": 0,
+            "spores": 154,
+            "roots": 250,
+            "xylem": 310,
+            "block": 418,
+            "wilt": 574,
+            "tyloses": 778,
+            "late": 958,
+            "persist": 1066,
+            "clones": 1366,
+            "noVar": 1558,
+            "history": 1846
           }
-        ],
-        "edges": [
-          {
-            "from": "soil",
-            "to": "root"
-          },
-          {
-            "from": "root",
-            "to": "xylem"
-          },
-          {
-            "from": "xylem",
-            "to": "wilt"
-          }
-        ]
+        }
       },
       "revealDelays": {
         "diagram": 6
