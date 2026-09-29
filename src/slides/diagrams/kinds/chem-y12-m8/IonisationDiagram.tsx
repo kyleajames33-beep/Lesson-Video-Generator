@@ -481,6 +481,8 @@ const HoclMode = ({frame, beats, id, pKa, lowerPH, higherPH}: {frame: number; be
 							{st < 1 && <Molecule id={id} atoms={['O', 'H', 'Cl']} x={x} y={y} r={12} scale={sc} opacity={1 - st} />}
 							{st > 0 && (
 								<g opacity={st}>
+									{/* violet charge halo: the ionised form, same colour as A⁻ in the aspirin scenes */}
+									<ellipse cx={x} cy={y - 1} rx={25 * sc} ry={19 * sc} fill={A_COLOR} opacity={0.45} stroke={A_COLOR} strokeWidth={2} strokeOpacity={0.9} />
 									<Molecule id={id} atoms={['O', 'Cl']} x={x} y={y} r={12} scale={sc} />
 									<text x={x + 13} y={y - 6} fill={TOK.ink} fontSize={21} fontWeight={900}>−</text>
 								</g>
@@ -515,6 +517,7 @@ const HoclMode = ({frame, beats, id, pKa, lowerPH, higherPH}: {frame: number; be
 				<Pill x={290} y={130} text="more effective disinfectant" color={TOK.amber} textColor={TOK.amberInk} size={17} strokeWidth={2 + idlePulse(frame) * 1.5} />
 			</g>
 			<g opacity={ramp(frame, tRise, 16)}>
+				<ellipse cx={470} cy={127} rx={25} ry={19} fill={A_COLOR} opacity={0.45} stroke={A_COLOR} strokeWidth={2} strokeOpacity={0.9} />
 				<Molecule id={id} atoms={['O', 'Cl']} x={470} y={128} r={12} />
 				<text x={483} y={122} fill={TOK.ink} fontSize={21} fontWeight={900}>−</text>
 				<text x={500} y={137} fill={TOK.ink} fontSize={20} fontWeight={800}>OCl⁻</text>
@@ -537,7 +540,7 @@ const HoclMode = ({frame, beats, id, pKa, lowerPH, higherPH}: {frame: number; be
 				<text x={195} y={462} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>Mostly HOCl</text>
 			</g>
 			<g opacity={ramp(frame, tRise + 90, 14)}>
-				<text x={565} y={462} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>Mostly OCl⁻</text>
+				<text x={565} y={462} textAnchor="middle" fill={INK_A} fontSize={22} fontWeight={800}>Mostly OCl⁻</text>
 			</g>
 			<g opacity={ramp(frame, tVerdict, 16)}>
 				<Pill x={195} y={496} text="stronger disinfection" color={TOK.amber} textColor={TOK.amberInk} size={18} strokeWidth={2 + idlePulse(frame) * 1.5} />
