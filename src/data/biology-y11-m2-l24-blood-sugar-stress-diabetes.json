@@ -17,7 +17,7 @@
   "nesaOutcomes": [
     "BI-11-02"
   ],
-  "lessonIntent": "Students can describe how insulin, glucagon, adrenaline and cortisol act, analyse glucose-tolerance data, and explain how diabetes disrupts glucose homeostasis.",
+  "lessonIntent": "Students can describe how insulin, glucagon, adrenaline and cortisol act, analyse paired hormone-and-physiological-response data, and explain how diabetes disrupts glucose homeostasis.",
   "examSkill": "Give every hormone a source and a direction of effect, quote the data's numbers when analysing, and locate the diabetes failure in the insulin response.",
   "productionRole": "production",
   "fps": 30,
@@ -285,33 +285,30 @@
     {
       "id": "concept-data",
       "type": "concept",
-      "heading": "Reading a glucose-tolerance test",
-      "body": "Two people drink the same glucose dose. The data shows whose insulin is working.",
+      "heading": "Analyse hormone level with a physiological response",
+      "body": "Illustrative data track insulin level and blood-glucose response together after a glucose drink.",
       "bullets": [
         {
-          "text": "A: 5 → 8 → back to 5 mmol/L.",
-          "at": 8.9
+          "text": "Illustrative relative insulin level: 1 → 4 → 2 → 1 over 0, 30, 60 and 120 min."
         },
         {
-          "text": "B: starts at 9, peaks at 16, still 14.",
-          "at": 23.6
+          "text": "Illustrative relative glucose response: 1 → 1.6 → 1.2 → 1 over the same times."
         },
         {
-          "text": "The test measures the return, not the peak.",
-          "at": 42.5
+          "text": "Insulin rises before glucose returns toward baseline: analyse the relationship, not an unseen hormone."
         }
       ],
-      "callout": "Same dose, different response: the difference is insulin.",
-      "caption": "Glucose-tolerance test: Person A returns to 5 mmol/L; Person B stays high.",
+      "callout": "Illustrative data: hormone level and physiological response are both measured.",
+      "caption": "Illustrative paired data: insulin rises after glucose intake as blood glucose returns toward baseline.",
       "voiceover": {
-        "text": "Here's some data. In a glucose-tolerance test, two people drink the same glucose dose, and their blood glucose is measured over two hours. Person A starts at five millimoles per litre, rises to eight at thirty minutes, falls to six at sixty, and is back to five at one hundred and twenty minutes. That's insulin at work, returning glucose to the set point. Person B, who has untreated diabetes, starts at nine, already high, rises to fifteen, keeps rising to sixteen at sixty minutes, and is still at fourteen after two hours. The glucose never comes back. Since both got the same dose, the difference is in the response. The test is about whether glucose returns, not how high it goes."
+        "text": "To analyse endocrine regulation, measure the hormone as well as the physiological response. These are illustrative, not patient, data. Take baseline as one. After a glucose drink, relative insulin rises from one to four at thirty minutes, then falls to two at sixty and back toward one by two hours. Over the same times, relative blood glucose rises from one to one point six, then falls to one point two and back to one. The measured pattern is consistent with insulin helping return blood glucose toward baseline. Because both series are shown, you can analyse their relationship rather than inferring an unseen insulin response."
       },
       "diagram": {
         "type": "diorama",
         "kind": "bio11m2Curves",
         "props": {
           "x": {
-            "label": "time after drink (min)",
+            "label": "time after glucose drink (min)",
             "values": [
               0,
               30,
@@ -320,30 +317,30 @@
             ]
           },
           "y": {
-            "label": "blood glucose (mmol/L)",
+            "label": "relative level (baseline = 1)",
             "min": 0,
-            "max": 18,
-            "step": 3
+            "max": 4,
+            "step": 1
           },
           "series": [
             {
-              "label": "Person A",
+              "label": "insulin (illustrative)",
               "values": [
-                5,
-                8,
-                6,
-                5
+                1,
+                4,
+                2,
+                1
               ],
               "at": 206,
               "color": "accent"
             },
             {
-              "label": "Person B",
+              "label": "blood glucose (illustrative)",
               "values": [
-                9,
-                15,
-                16,
-                14
+                1,
+                1.6,
+                1.2,
+                1
               ],
               "at": 645,
               "color": "red"
@@ -351,7 +348,7 @@
           ],
           "footer": [
             {
-              "text": "same dose: A returns to 5, B is still 14 at two hours",
+              "text": "illustrative data — both hormone and physiological response measured",
               "at": 1009,
               "amber": true
             }
