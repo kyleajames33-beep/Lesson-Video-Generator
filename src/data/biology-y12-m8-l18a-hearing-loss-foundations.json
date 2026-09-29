@@ -77,47 +77,48 @@
         "text": "So let's follow sound through the ear, because every technology targets a specific point in this pathway. First, the outer ear, the visible flap and the canal, funnels sound waves inward and makes the eardrum vibrate at the same frequency as the sound. Second, the middle ear, which holds three tiny bones, the malleus, incus and stapes. They act as a lever system, amplifying the vibration and passing it to the cochlea, and importantly they match the vibration from air into the fluid-filled inner ear. Third, the inner ear, the cochlea, a coiled, fluid-filled structure, and this is where the magic happens. Vibrations create pressure waves that ripple along a membrane lined with hair cells, and when those hair cells bend, they fire off electrical impulses down the auditory nerve to the auditory cortex in the brain. Here's the single most important idea, the cochlea is the transducer, the part that converts mechanical vibration into electrical signals. And those hair cells are arranged tonotopically, meaning high frequencies are picked up at one end, the base, and low frequencies at the other, the apex, which is exactly how you distinguish pitch."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "outer",
-            "label": "Outer ear"
+        "type": "diorama",
+        "kind": "bio12m8EarRoute",
+        "delay": 6,
+        "props": {
+          "sections": {
+            "outer": {
+              "label": "Outer ear",
+              "sub": "eardrum vibrates",
+              "at": 143
+            },
+            "middle": {
+              "label": "Middle ear",
+              "sub": "bones amplify",
+              "at": 371
+            },
+            "cochlea": {
+              "label": "Cochlea",
+              "sub": "hair cells bend",
+              "at": 739
+            },
+            "nerve": {
+              "label": "Auditory nerve",
+              "sub": "to the brain",
+              "at": 1116
+            }
           },
-          {
-            "id": "middle",
-            "label": "Middle ear"
-          },
-          {
-            "id": "cochlea",
-            "label": "Cochlea"
-          },
-          {
-            "id": "nerve",
-            "label": "Auditory nerve"
-          },
-          {
-            "id": "brain",
-            "label": "Cortex"
-          }
-        ],
-        "edges": [
-          {
-            "from": "outer",
-            "to": "middle"
-          },
-          {
-            "from": "middle",
-            "to": "cochlea"
-          },
-          {
-            "from": "cochlea",
-            "to": "nerve"
-          },
-          {
-            "from": "nerve",
-            "to": "brain"
-          }
-        ]
+          "routes": [
+            {
+              "kind": "sound",
+              "at": 150
+            }
+          ],
+          "ossicleNamesAt": 458,
+          "tonotopicAt": 1422,
+          "notes": [
+            {
+              "text": "The cochlea is the transducer: vibration in, nerve impulses out",
+              "at": 1282,
+              "amber": true
+            }
+          ]
+        }
       },
       "revealDelays": {
         "diagram": 6
@@ -176,24 +177,58 @@
         "text": "Now the classification that decides everything, because identifying the type of hearing loss tells you which technology is appropriate. There are two categories, and the key question is where in the pathway the breakdown occurs. The first is conductive hearing loss, where the problem is in the outer or middle ear, so sound simply can't be conducted through to the cochlea. Think fluid in the middle ear, a perforated eardrum, earwax, or stiffened ossicles. The vital point is that the cochlea itself is intact and working, so if you can just get sound to it, transduction happens normally. The second is sensorineural hearing loss, where the damage is in the cochlear hair cells or the auditory nerve itself. Causes include loud noise, ageing, genetics, and certain infections. And here's the hard truth, mammalian hair cells do not regenerate, so this kind of loss is typically permanent. This distinction is the whole game. A cochlear implant only helps sensorineural loss, and only if the auditory nerve still works, because it needs working nerve fibres to stimulate. So always find where the break is before choosing the fix."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Type",
-          "Site of problem",
-          "Cochlea status"
-        ],
-        "rows": [
-          [
-            "Conductive",
-            "Outer or middle ear",
-            "Intact and working"
+        "type": "diorama",
+        "kind": "bio12m8EarRoute",
+        "props": {
+          "sections": {
+            "outer": {
+              "label": "Outer ear",
+              "at": 0
+            },
+            "middle": {
+              "label": "Middle ear",
+              "at": 0
+            },
+            "cochlea": {
+              "label": "Cochlea",
+              "at": 0
+            },
+            "nerve": {
+              "label": "Auditory nerve",
+              "at": 0
+            }
+          },
+          "routes": [
+            {
+              "kind": "sound",
+              "at": 20
+            }
           ],
-          [
-            "Sensorineural",
-            "Hair cells or nerve",
-            "Damaged, usually permanent"
+          "breaks": [
+            {
+              "where": "middle",
+              "label": "conductive: outer or middle ear",
+              "at": 253,
+              "until": 790
+            },
+            {
+              "where": "hairCells",
+              "label": "sensorineural: hair cells or nerve",
+              "at": 805
+            }
+          ],
+          "notes": [
+            {
+              "text": "Conductive: the cochlea is still intact and working",
+              "at": 639
+            },
+            {
+              "text": "Sensorineural: hair cells do not regenerate",
+              "at": 1120,
+              "amber": true
+            }
           ]
-        ]
+        }
       }
     },
     {
@@ -218,6 +253,49 @@
       "caption": "Hearing aids amplify for residual hair cells; bone conduction bypasses outer and middle ear but needs a working cochlea.",
       "voiceover": {
         "text": "Let's take the first two technologies together, because they share one requirement. A hearing aid is an external device that simply amplifies incoming sound before it reaches the ear. A microphone picks up sound, an amplifier boosts it, often boosting specific frequencies where the person's loss is worst, and a speaker delivers louder sound into the ear canal. But notice, that amplified sound still travels the normal pathway, vibrating the eardrum and reaching the cochlea, so a hearing aid only works if there are residual hair cells left to respond. The second is the bone-anchored hearing aid, which uses a completely different route, bone conduction. A titanium implant is fixed into the skull bone behind the ear, and the processor converts sound into vibrations that travel directly through the skull to the cochlea, completely bypassing the outer and middle ear. But here's the catch they share, bone conduction still needs a working cochlea, because the cochlea still has to do the transduction. So a hearing aid suits mild to moderate loss with residual hearing, and a bone conduction device suits conductive loss or single-sided deafness. Neither one helps profound sensorineural loss, because both still depend on a functioning cochlea downstream."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8EarRoute",
+        "props": {
+          "sections": {
+            "outer": {
+              "label": "Outer ear",
+              "at": 0
+            },
+            "middle": {
+              "label": "Middle ear",
+              "at": 0
+            },
+            "cochlea": {
+              "label": "Cochlea",
+              "at": 0
+            },
+            "nerve": {
+              "label": "Auditory nerve",
+              "at": 0
+            }
+          },
+          "routes": [
+            {
+              "kind": "aid",
+              "at": 43,
+              "label": "Hearing aid: microphone → amplifier → speaker"
+            },
+            {
+              "kind": "bone",
+              "at": 754,
+              "label": "Bone conduction: vibration through the skull"
+            }
+          ],
+          "notes": [
+            {
+              "text": "Both still need a working cochlea",
+              "at": 1193,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {

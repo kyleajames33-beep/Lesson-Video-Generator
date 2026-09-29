@@ -72,6 +72,35 @@
       "caption": "Checkpoints control the cell cycle; cancer disables them through multiple mutations.",
       "voiceover": {
         "text": "So let's build the foundation, the cell cycle, the ordered sequence a cell goes through to divide. Critically, the cycle has checkpoints, control points the cell must pass before it can proceed. These checkpoints halt division if conditions are not right, for example if there are no growth signals to divide, or if the D N A is damaged and needs repair. Cancer is what happens when mutations disable this control system. And here is the single most important idea, cancer is not caused by one mutation, it requires the accumulation of several driver mutations, typically four to eight, in a single cell lineage over time. Each mutation gives that cell line a small growth advantage, and selection enriches for the cells with the most. This multi-hit requirement is exactly why cancer takes years, even decades, to develop, and why it becomes much more common as we age."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8MultiHit",
+        "props": {
+          "cycleAt": 10,
+          "checkpoints": [
+            {
+              "label": "growth signals?",
+              "at": 190
+            },
+            {
+              "label": "DNA undamaged?",
+              "at": 250
+            }
+          ],
+          "haltAt": 346,
+          "lineageAt": 682,
+          "hits": 4,
+          "hitGap": 150,
+          "lineageLabel": "One lineage gathers driver mutations (typically 4 to 8)",
+          "uncontrolledLabel": "control lost",
+          "notes": [
+            {
+              "text": "Many hits over years: why cancer is more common with age",
+              "at": 1450
+            }
+          ]
+        }
       }
     },
     {
@@ -123,34 +152,51 @@
         "text": "Now the two ways a cell loses control, and they follow opposite genetic logic, a favourite exam point. Oncogenes act by gain of function, and they are dominant, meaning just one mutated copy is enough to drive excessive division, because that copy is now jammed in the on position. Tumour suppressors act by loss of function, and they are recessive, meaning both copies must be inactivated before the brake is gone, since one working copy can still apply it. This explains inherited cancer risk beautifully. If you inherit one already-faulty tumour suppressor copy, every cell starts with one brake already gone, so it only takes one more hit to lose control, which is why inherited cancer syndromes usually involve tumour suppressors. One more precision point, an oncogene problem is constant on-signalling, not overproduction, a RAS protein locked in its active state drives division whether or not growth signals are present."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Feature",
-          "Oncogene",
-          "Tumour suppressor"
-        ],
-        "rows": [
-          [
-            "Normal role",
-            "Promotes division",
-            "Brakes division"
+        "type": "diorama",
+        "kind": "bio12m8TwoHit",
+        "props": {
+          "panels": [
+            {
+              "title": "Oncogene",
+              "type": "oncogene",
+              "at": 154,
+              "hits": [
+                {
+                  "copy": 0,
+                  "at": 290,
+                  "label": "1 hit"
+                }
+              ],
+              "lostLabel": "one copy is enough: jammed ON"
+            },
+            {
+              "title": "Tumour suppressor",
+              "type": "suppressor",
+              "at": 526,
+              "hits": [
+                {
+                  "copy": 0,
+                  "at": 600,
+                  "label": "hit 1"
+                },
+                {
+                  "copy": 1,
+                  "at": 680,
+                  "label": "hit 2"
+                }
+              ],
+              "heldLabel": "one working copy still brakes",
+              "lostLabel": "both copies lost: brake gone"
+            }
           ],
-          [
-            "Mutation type",
-            "Gain of function",
-            "Loss of function"
-          ],
-          [
-            "Genetic logic",
-            "Dominant (one hit)",
-            "Recessive (two hits)"
-          ],
-          [
-            "Example",
-            "RAS",
-            "p53"
+          "notes": [
+            {
+              "text": "Inherit one faulty suppressor copy: only one more hit needed",
+              "at": 1198,
+              "amber": true
+            }
           ]
-        ]
+        }
       }
     },
     {
@@ -175,6 +221,64 @@
       "caption": "Three carcinogen types converge on mutation; metastasis makes cancer lethal.",
       "voiceover": {
         "text": "Now two final pieces, what causes the mutations, and what makes cancer lethal. Carcinogens come in three types, all converging on the same endpoint, mutation. Chemical carcinogens, like the compounds in tobacco smoke, form D N A adducts. Physical carcinogens, like U V radiation, cause thymine dimers, and asbestos causes inflammation. And biological carcinogens, like the virus H P V, interfere with the cell-cycle control proteins directly. All three end up activating oncogenes or inactivating tumour suppressors. Now the lethal part, the difference between benign and malignant. A benign tumour stays localised and does not spread. A malignant tumour invades surrounding tissue and can metastasise, spreading to distant organs. And here is the crucial idea, metastasis is what kills most cancer patients, and it is an active multi-step process, the cell needs extra mutations to detach, enter the bloodstream, survive the journey, and seed a brand new tumour elsewhere. It is spreading, not size, that does the damage."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8Fan",
+        "props": {
+          "direction": "converge",
+          "hub": {
+            "label": "Mutation",
+            "sub": "oncogenes activated,\ntumour suppressors inactivated",
+            "at": 742
+          },
+          "items": [
+            {
+              "label": "Chemical",
+              "sub": "tobacco smoke: DNA adducts",
+              "at": 238
+            },
+            {
+              "label": "Physical",
+              "sub": "UV: thymine dimers\nasbestos: inflammation",
+              "at": 394
+            },
+            {
+              "label": "Biological",
+              "sub": "HPV: disrupts cell-cycle\ncontrol proteins",
+              "at": 562
+            }
+          ],
+          "chain": {
+            "title": "Benign stays put; malignant invades and can metastasise",
+            "titleAt": 994,
+            "steps": [
+              {
+                "text": "detach",
+                "at": 1558
+              },
+              {
+                "text": "enter the bloodstream",
+                "at": 1600
+              },
+              {
+                "text": "survive the journey",
+                "at": 1640
+              },
+              {
+                "text": "seed a new tumour",
+                "at": 1680
+              }
+            ]
+          },
+          "notes": [
+            {
+              "text": "Spreading, not size, is what kills",
+              "at": 1318,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {

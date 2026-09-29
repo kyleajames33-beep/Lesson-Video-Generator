@@ -72,6 +72,26 @@
       "caption": "Environmental diseases show exposure, dose-response, and latency.",
       "voiceover": {
         "text": "So what actually defines an environmental disease? There are three signatures, and naming them earns marks. First, exposure, an external agent is required, which means that if you remove the agent, you prevent the disease, exactly what the smoking statistics show. Second, a dose-response relationship, the more exposure you get, the more D N A damage occurs, and the higher your risk climbs, which is why doctors measure smoking in pack-years. Third, a latency period, there is a long gap, often years or decades, between the first exposure and the disease actually appearing. Why such a long delay? Because cancer requires multiple mutations to accumulate in a single cell lineage, one after another, and that takes time. It is the reason asbestos-related disease can take twenty to fifty years to show up. External agent, dose builds the risk, and the disease arrives years later."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8DoseLatency",
+        "props": {
+          "exposureAt": 130,
+          "doseAt": 430,
+          "doseDoneAt": 760,
+          "doseLabel": "exposure, e.g. pack-years →",
+          "latencyAt": 790,
+          "hitsAt": 1054,
+          "diseaseAt": 1200,
+          "spanLabel": "latency: years or decades",
+          "notes": [
+            {
+              "text": "Asbestos-related disease: 20 to 50 years",
+              "at": 1390
+            }
+          ]
+        }
       }
     },
     {
@@ -121,6 +141,42 @@
       "caption": "Tobacco causes lung cancer, COPD, and CVD by three different mechanisms.",
       "voiceover": {
         "text": "Let's take tobacco first, because it is the most studied environmental carcinogen, and it actually causes three different diseases through three distinct mechanisms. Pathway one, lung cancer. The carcinogens in smoke form D N A adducts in the bronchial cells, which cause mutations in the genes that control the cell cycle, the tumour suppressors and oncogenes we will study next lesson, and that leads to uncontrolled cell division. Pathway two, C O P D, or emphysema. Here the chronic irritants in smoke trigger ongoing inflammation that physically destroys the delicate lung tissue, this is tissue destruction, not a D N A mutation. Pathway three, cardiovascular disease. Smoke damages the lining of blood vessels, and combined with nicotine and carbon monoxide, it accelerates atherosclerosis. The exam point across all three, name the actual mechanism. Writing that smoking damages the lungs is far too vague, you need adducts and mutations for cancer, inflammation and tissue destruction for C O P D."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8Fan",
+        "props": {
+          "direction": "diverge",
+          "hub": {
+            "label": "Tobacco smoke",
+            "sub": "three distinct mechanisms",
+            "at": 0
+          },
+          "items": [
+            {
+              "label": "Lung cancer",
+              "sub": "carcinogens form DNA adducts,\nmutating cell-cycle control genes",
+              "at": 214
+            },
+            {
+              "label": "COPD",
+              "sub": "chronic irritants inflame and\ndestroy lung tissue (no mutation)",
+              "at": 754
+            },
+            {
+              "label": "Cardiovascular disease",
+              "sub": "damaged vessel linings + nicotine\nand carbon monoxide: atherosclerosis",
+              "at": 1162
+            }
+          ],
+          "notes": [
+            {
+              "text": "Name the mechanism, not just that it harms the lungs",
+              "at": 1414,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {

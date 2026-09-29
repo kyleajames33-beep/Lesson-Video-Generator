@@ -75,6 +75,40 @@
       "caption": "Self-tolerance comes from clonal deletion; it breaks via molecular mimicry, faulty T-regs, hidden antigens or genetics.",
       "voiceover": {
         "text": "So let's start with the rule book, self-tolerance. Self-tolerance is the immune system's ability to tell your own cells, self, apart from invaders, non-self. The main way the body achieves it is clonal deletion, where developing T cells that react strongly against your own proteins are destroyed in the thymus before they're ever released. So how does this break down and cause autoimmune disease? There are a few routes. One is molecular mimicry, where a pathogen happens to carry an antigen that looks like one of your own, so the antibodies made against the pathogen accidentally attack your own tissue too. Another is faulty regulatory T cells, which normally keep self-reactive cells in check, so if they fail, those rogue clones multiply. A third is exposure of hidden antigens, where damage releases proteins the immune system has never seen and treats as foreign. And genetics plays a role too, because certain H L A gene variants raise the risk, which is why these diseases cluster in families. Now the single most important point for the exam. In autoimmune disease the immune system is not weak. It is overactive and pointed at the wrong target."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8Thymus",
+        "props": {
+          "streamAt": 100,
+          "deletionAt": 341,
+          "routesTitle": "How tolerance breaks",
+          "routes": [
+            {
+              "text": "molecular mimicry",
+              "at": 561
+            },
+            {
+              "text": "faulty regulatory T cells",
+              "at": 841
+            },
+            {
+              "text": "hidden antigens exposed",
+              "at": 1052
+            },
+            {
+              "text": "HLA gene variants raise risk",
+              "at": 1262
+            }
+          ],
+          "notes": [
+            {
+              "text": "Autoimmunity is overactive, not weak: aimed at the wrong target",
+              "at": 1578,
+              "amber": true
+            }
+          ]
+        }
       }
     },
     {
@@ -184,39 +218,36 @@
         "text": "Now the other side, allergy, which is a Type one hypersensitivity. An allergy is an exaggerated immune response to a normally harmless substance, an allergen. And here's the key feature, it takes two stages, two separate encounters. Stage one is sensitisation, the first exposure. The allergen is taken up and processed, helper T cells push B cells to make I g E antibodies specific to that allergen, and crucially that I g E goes and binds to the surface of mast cells in your tissues. And here's the thing, no symptoms happen at all during this first exposure. You feel completely fine, but you are now sensitised, your mast cells are loaded. Stage two is re-exposure. The same allergen comes back, and it physically cross-links two neighbouring I g E molecules sitting on a mast cell. That cross-linking is the trigger, and it causes the mast cell to degranulate, dumping out pre-made chemicals, the most important being histamine. Histamine then causes vasodilation and redness, leaky vessels and swelling, mucus secretion, and contraction of smooth muscle giving bronchoconstriction and gut cramps. So first exposure primes you silently, and the second exposure fires within minutes."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "allergen",
-            "label": "Allergen"
-          },
-          {
-            "id": "ige",
-            "label": "IgE made"
-          },
-          {
-            "id": "mast",
-            "label": "Coats mast cell"
-          },
-          {
-            "id": "degran",
-            "label": "Histamine"
-          }
-        ],
-        "edges": [
-          {
-            "from": "allergen",
-            "to": "ige"
-          },
-          {
-            "from": "ige",
-            "to": "mast"
-          },
-          {
-            "from": "mast",
-            "to": "degran"
-          }
-        ]
+        "type": "diorama",
+        "kind": "bio12m8MastCell",
+        "delay": 6,
+        "props": {
+          "stage1At": 319,
+          "igeAt": 442,
+          "dockAt": 653,
+          "calmAt": 776,
+          "stage2At": 978,
+          "crossAt": 1083,
+          "degranAt": 1294,
+          "effects": [
+            {
+              "text": "vasodilation, redness",
+              "at": 1382
+            },
+            {
+              "text": "leaky vessels, swelling",
+              "at": 1410
+            },
+            {
+              "text": "mucus secretion",
+              "at": 1440
+            },
+            {
+              "text": "bronchoconstriction",
+              "at": 1470
+            }
+          ]
+        }
       },
       "revealDelays": {
         "diagram": 6
@@ -244,6 +275,25 @@
       "caption": "Anaphylaxis is systemic degranulation causing shock and airway closure; adrenaline reverses it fast.",
       "voiceover": {
         "text": "Now the deadly extreme, anaphylaxis. It's the exact same mechanism we just described, but instead of firing at one spot like your nose, mast cells all over the body degranulate at the same time, so histamine floods everywhere at once. Two things make it lethal. First, the widespread vasodilation causes a sudden, dangerous drop in blood pressure, called anaphylactic shock, so organs aren't perfused. Second, fluid leaks into tissues causing the face, throat and tongue to swell, that's angioedema, and combined with severe bronchoconstriction, the airway closes and the person can't breathe. This can go from first symptom to collapse in five to ten minutes. The treatment is intramuscular adrenaline, and you need to know how it works. Adrenaline acts on alpha receptors to cause vasoconstriction, which reverses the vasodilation and restores blood pressure, and on beta receptors to cause bronchodilation, opening the airway, and to strengthen the heartbeat. That's why an EpiPen into the thigh is first-line and life-saving. And here's a key exam point, antihistamines and steroids are far too slow for the acute crisis, they only help prevent a second wave hours later. In anaphylaxis, adrenaline first, always."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8Anaphylaxis",
+        "props": {
+          "floodAt": 139,
+          "dilateAt": 402,
+          "swellAt": 507,
+          "constrictAt": 664,
+          "adrenalineAt": 883,
+          "alphaAt": 997,
+          "betaAt": 1128,
+          "notes": [
+            {
+              "text": "Antihistamines and steroids are too slow for the crisis",
+              "at": 1390
+            }
+          ]
+        }
       }
     },
     {

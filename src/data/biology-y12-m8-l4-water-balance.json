@@ -164,47 +164,57 @@
         "text": "Now let's watch the team in action with A D H. It starts when your blood becomes too concentrated, maybe from sweating, salty food or not drinking. Osmoreceptors in the hypothalamus detect that change, and the hypothalamus sends signals down its nerve fibres to the posterior pituitary, which releases A D H into the blood. A D H travels to the kidneys, where it acts on the last parts of the nephron, the distal tubule and especially the collecting duct. It makes the cells there add aquaporins to their walls, so more water moves out of the filtrate and back into the blood. As the blood becomes less concentrated, the osmoreceptors stop firing as strongly, and A D H release drops. That's negative feedback. So high A D H gives you a small volume of concentrated urine, and low A D H gives you lots of dilute urine."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "o",
-            "label": "Blood too concentrated"
+        "type": "diorama",
+        "kind": "bio12m8FeedbackLoop",
+        "delay": 6,
+        "props": {
+          "variable": {
+            "label": "blood concentration",
+            "highLabel": "too concentrated"
           },
-          {
-            "id": "r",
-            "label": "Hypothalamus osmoreceptors"
+          "stations": [
+            {
+              "role": "Stimulus",
+              "label": "Blood too\nconcentrated",
+              "at": 174
+            },
+            {
+              "role": "Receptor",
+              "label": "Osmoreceptors",
+              "sub": "in hypothalamus",
+              "at": 318
+            },
+            {
+              "role": "Gland",
+              "label": "Posterior\npituitary",
+              "sub": "releases ADH",
+              "at": 534
+            },
+            {
+              "role": "Effector",
+              "label": "Kidney",
+              "sub": "adds aquaporins",
+              "at": 1026
+            },
+            {
+              "role": "Response",
+              "label": "More water\nreabsorbed",
+              "at": 1110
+            }
+          ],
+          "pushAt": 174,
+          "returnAt": 1278,
+          "loop": {
+            "label": "ADH release drops: negative feedback",
+            "at": 1458
           },
-          {
-            "id": "p",
-            "label": "Posterior pituitary releases ADH"
-          },
-          {
-            "id": "d",
-            "label": "Kidney tubules add aquaporins"
-          },
-          {
-            "id": "w",
-            "label": "More water reabsorbed"
-          }
-        ],
-        "edges": [
-          {
-            "from": "o",
-            "to": "r"
-          },
-          {
-            "from": "r",
-            "to": "p"
-          },
-          {
-            "from": "p",
-            "to": "d"
-          },
-          {
-            "from": "d",
-            "to": "w"
-          }
-        ]
+          "notes": [
+            {
+              "text": "More ADH, more aquaporins, more water saved",
+              "at": 1494
+            }
+          ]
+        }
       },
       "revealDelays": {
         "diagram": 6
@@ -247,39 +257,67 @@
       ],
       "callout": "ADH and urine output move in opposite directions.",
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Time (min)",
-          "Blood concentration (mOsm/kg)",
-          "ADH (pg/mL)",
-          "Urine output (mL/min)"
-        ],
-        "rows": [
-          [
-            "0",
-            "290",
-            "2.5",
-            "1"
+        "type": "diorama",
+        "kind": "bio12m8DataPanels",
+        "delay": 6,
+        "props": {
+          "x": {
+            "label": "time (min)",
+            "values": [
+              0,
+              30,
+              60,
+              120
+            ]
+          },
+          "series": [
+            {
+              "label": "Blood concentration (mOsm/kg)",
+              "values": [
+                290,
+                285,
+                281,
+                287
+              ],
+              "at": 342
+            },
+            {
+              "label": "ADH (pg/mL)",
+              "values": [
+                2.5,
+                1,
+                0.5,
+                1.5
+              ],
+              "decimals": 1,
+              "at": 690,
+              "color": "red"
+            },
+            {
+              "label": "Urine output (mL/min)",
+              "values": [
+                1,
+                5,
+                12,
+                3
+              ],
+              "at": 930,
+              "color": "teal"
+            }
           ],
-          [
-            "30",
-            "285",
-            "1.0",
-            "5"
-          ],
-          [
-            "60",
-            "281",
-            "0.5",
-            "12"
-          ],
-          [
-            "120",
-            "287",
-            "1.5",
-            "3"
+          "link": {
+            "a": 1,
+            "b": 2,
+            "text": "ADH falls, urine output rises: an inverse relationship",
+            "at": 1194
+          },
+          "notes": [
+            {
+              "text": "By 120 min ADH and urine output head back toward normal: negative feedback",
+              "at": 1338
+            }
           ]
-        ]
+        }
       },
       "revealDelays": {
         "diagram": 6

@@ -74,47 +74,52 @@
         "text": "So let's build the universal template first, the stimulus-response model. It has five components, and the order matters enormously in the exam. It starts with a stimulus, which is any change that pushes a variable outside its tolerance range, like body temperature climbing above thirty seven degrees. That change is picked up by a receptor, a specialised structure that detects one specific variable. Thermoreceptors detect temperature, osmoreceptors detect blood concentration, chemoreceptors detect carbon dioxide. The receptor sends a signal to a control centre, often the hypothalamus or a gland, which processes it and decides on the response. The control centre then activates an effector, a muscle or organ or gland that physically acts. And the effector produces the response, which opposes the original stimulus and nudges the variable back toward its set point. Stimulus, receptor, control centre, effector, response. A good answer names every one, with its specific role."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "s",
-            "label": "Stimulus"
+        "type": "diorama",
+        "kind": "bio12m8FeedbackLoop",
+        "props": {
+          "variable": {
+            "label": "body temperature",
+            "highLabel": "above 37 °C"
           },
-          {
-            "id": "r",
-            "label": "Receptor"
-          },
-          {
-            "id": "c",
-            "label": "Control"
-          },
-          {
-            "id": "e",
-            "label": "Effector"
-          },
-          {
-            "id": "resp",
-            "label": "Response"
+          "stations": [
+            {
+              "role": "Stimulus",
+              "label": "Change",
+              "sub": "temperature rises",
+              "at": 214
+            },
+            {
+              "role": "Receptor",
+              "label": "Thermoreceptors",
+              "sub": "detect it",
+              "at": 538
+            },
+            {
+              "role": "Control centre",
+              "label": "Hypothalamus",
+              "sub": "decides",
+              "at": 910
+            },
+            {
+              "role": "Effector",
+              "label": "Muscle, organ\nor gland",
+              "sub": "acts",
+              "at": 1150
+            },
+            {
+              "role": "Response",
+              "label": "Opposes the\nstimulus",
+              "sub": "back to set point",
+              "at": 1330
+            }
+          ],
+          "pushAt": 214,
+          "returnAt": 1340,
+          "loop": {
+            "label": "the response opposes the stimulus: negative feedback",
+            "at": 1474
           }
-        ],
-        "edges": [
-          {
-            "from": "s",
-            "to": "r"
-          },
-          {
-            "from": "r",
-            "to": "c"
-          },
-          {
-            "from": "c",
-            "to": "e"
-          },
-          {
-            "from": "e",
-            "to": "resp"
-          }
-        ]
+        }
       }
     },
     {
@@ -166,34 +171,30 @@
         "text": "So why is negative feedback the mechanism of homeostasis, and positive feedback is not? It comes down to one feature, self-limiting. With negative feedback, as the variable returns toward normal, the stimulus shrinks, so the response also weakens. The system settles into a stable oscillation around the set point, it corrects itself. Positive feedback does the reverse. As the variable moves, the response gets stronger, which moves the variable even further, so the loop reinforces itself and runs to completion. The classic example is childbirth. Cervical stretch triggers the hormone oxytocin, oxytocin intensifies the contractions, the contractions stretch the cervix even more, and round it goes. Crucially, that loop only stops when an outside event happens, the baby is delivered. So positive feedback is a perfectly normal, healthy mechanism, in childbirth, in blood clotting, in nerve impulses. It just is not how the body holds a variable steady."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Feature",
-          "Negative feedback",
-          "Positive feedback"
-        ],
-        "rows": [
-          [
-            "Response direction",
-            "Opposes stimulus",
-            "Amplifies stimulus"
-          ],
-          [
-            "Effect on variable",
-            "Returns to set point",
-            "Driven further away"
-          ],
-          [
-            "Self-limiting?",
-            "Yes",
-            "No"
-          ],
-          [
-            "Role",
-            "Maintains homeostasis",
-            "Drives a process to completion"
-          ]
-        ]
+        "type": "diorama",
+        "kind": "bio12m8FeedbackCurves",
+        "props": {
+          "negative": {
+            "title": "Negative feedback: self-limiting",
+            "at": 190,
+            "doneAt": 454,
+            "label": "stable oscillation around the set point"
+          },
+          "positive": {
+            "title": "Positive feedback: reinforces itself",
+            "at": 562,
+            "stopAt": 1342,
+            "stopLabel": "baby delivered: loop stops",
+            "loop": {
+              "steps": [
+                "cervical stretch",
+                "oxytocin",
+                "stronger contractions"
+              ],
+              "at": 946
+            }
+          }
+        }
       }
     },
     {

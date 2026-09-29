@@ -5,6 +5,42 @@
 // See docs/diorama-system.md.
 
 import type {DioramaKindMap} from './types';
+import {EyeRaysDiagram} from '../kinds/bio-y12-m8/EyeRaysDiagram';
+import {EarRouteDiagram} from '../kinds/bio-y12-m8/EarRouteDiagram';
+import {FeedbackLoopDiagram} from '../kinds/bio-y12-m8/FeedbackLoopDiagram';
+import {FeedbackCurvesDiagram} from '../kinds/bio-y12-m8/FeedbackCurvesDiagram';
+import {TwoHitDiagram} from '../kinds/bio-y12-m8/TwoHitDiagram';
+import {MembraneDiagram} from '../kinds/bio-y12-m8/MembraneDiagram';
+import {DataPanelsDiagram} from '../kinds/bio-y12-m8/DataPanelsDiagram';
+import {NonDisjunctionDiagram} from '../kinds/bio-y12-m8/NonDisjunctionDiagram';
+import {InheritanceDiagram} from '../kinds/bio-y12-m8/InheritanceDiagram';
+import {GuardCellsDiagram} from '../kinds/bio-y12-m8/GuardCellsDiagram';
+import {CFTRDiagram} from '../kinds/bio-y12-m8/CFTRDiagram';
+import {MastCellDiagram} from '../kinds/bio-y12-m8/MastCellDiagram';
+import {AnaphylaxisDiagram} from '../kinds/bio-y12-m8/AnaphylaxisDiagram';
+import {FanDiagram} from '../kinds/bio-y12-m8/FanDiagram';
+import {DoseLatencyDiagram} from '../kinds/bio-y12-m8/DoseLatencyDiagram';
+import {ThymusDiagram} from '../kinds/bio-y12-m8/ThymusDiagram';
+import {PancreasLiverDiagram} from '../kinds/bio-y12-m8/PancreasLiverDiagram';
+import {MultiHitDiagram} from '../kinds/bio-y12-m8/MultiHitDiagram';
 
 export const KINDS: DioramaKindMap = {
+  bio12m8EyeRays: EyeRaysDiagram,
+  bio12m8EarRoute: EarRouteDiagram,
+  bio12m8FeedbackLoop: FeedbackLoopDiagram,
+  bio12m8FeedbackCurves: FeedbackCurvesDiagram,
+  bio12m8TwoHit: TwoHitDiagram,
+  bio12m8Membrane: MembraneDiagram,
+  bio12m8DataPanels: DataPanelsDiagram,
+  bio12m8NonDisjunction: NonDisjunctionDiagram,
+  bio12m8Inheritance: InheritanceDiagram,
+  bio12m8GuardCells: GuardCellsDiagram,
+  bio12m8CFTR: CFTRDiagram,
+  bio12m8MastCell: MastCellDiagram,
+  bio12m8Anaphylaxis: AnaphylaxisDiagram,
+  bio12m8Fan: FanDiagram,
+  bio12m8DoseLatency: DoseLatencyDiagram,
+  bio12m8Thymus: ThymusDiagram,
+  bio12m8PancreasLiver: PancreasLiverDiagram,
+  bio12m8MultiHit: MultiHitDiagram,
 };

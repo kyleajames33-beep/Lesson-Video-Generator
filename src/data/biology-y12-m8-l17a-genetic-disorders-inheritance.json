@@ -138,29 +138,32 @@
         "text": "Now let's read a karyotype, because that's how chromosomal disorders are seen. The chromosomes are photographed during cell division, then lined up as twenty three homologous pairs, from largest to smallest, with the sex chromosomes last. In a typical karyotype, every position has exactly two. So what goes wrong? In non disjunction, a pair fails to separate during meiosis, so one gamete ends up with two copies of that chromosome and the other gets none. If a gamete with two copies is fertilised, the embryo has three, which is trisomy, and on the karyotype you'd see three chromosomes at one position. Down syndrome is trisomy twenty one, written forty seven plus twenty one. If a gamete with no copy is fertilised, you get monosomy, a single chromosome where a pair should be, like Turner syndrome, forty five X. Klinefelter syndrome, forty seven X X Y, is an extra X in males. And the risk of trisomy twenty one climbs steeply with the mother's age, from about one in fifteen hundred at twenty to roughly one in a hundred at forty, because eggs sit paused in meiosis for decades."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Disorder",
-          "Chromosome change",
-          "Karyotype"
-        ],
-        "rows": [
-          [
-            "Down syndrome",
-            "Trisomy 21 (extra 21)",
-            "47, +21"
-          ],
-          [
-            "Turner syndrome",
-            "Monosomy X (one X)",
-            "45, X"
-          ],
-          [
-            "Klinefelter syndrome",
-            "Extra X in males",
-            "47, XXY"
+        "type": "diorama",
+        "kind": "bio12m8NonDisjunction",
+        "props": {
+          "pairAt": 214,
+          "splitAt": 526,
+          "extra": {
+            "at": 838,
+            "name": "trisomy",
+            "example": "Down syndrome: trisomy 21",
+            "karyotype": "47, +21",
+            "exampleAt": 1150
+          },
+          "missing": {
+            "at": 1294,
+            "name": "monosomy",
+            "example": "Turner syndrome: a single X",
+            "karyotype": "45, X",
+            "exampleAt": 1400
+          },
+          "notes": [
+            {
+              "text": "Klinefelter syndrome: 47, XXY, an extra X in males",
+              "at": 1594
+            }
           ]
-        ]
+        }
       }
     },
     {
@@ -185,6 +188,35 @@
       "caption": "Inheritance is autosomal recessive (CF), autosomal dominant (Huntington's) or X-linked recessive (haemophilia).",
       "voiceover": {
         "text": "Now single gene disorders, where the inheritance pattern decides who's affected. It depends on whether the allele is dominant or recessive, and whether it's on an autosome or the X chromosome. First, autosomal recessive. Both copies must be faulty, so the parents are usually unaffected carriers, and two carriers have a twenty five percent chance of an affected child. Cystic fibrosis works this way. Second, autosomal dominant. One faulty copy is enough, so an affected person usually has an affected parent, and each child has a fifty percent risk. Huntington's disease is the example. Third, X linked recessive. Females have two X chromosomes, so one faulty copy is usually masked, but males have only one X, so a single faulty copy means they're affected. Haemophilia follows this pattern. And the mechanisms matter. In cystic fibrosis, a faulty CFTR gene means no working chloride channel, so mucus turns thick and sticky. In Huntington's, an expanded DNA repeat makes a toxic protein, and nearly everyone who inherits it develops the disease."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8Inheritance",
+        "props": {
+          "panels": [
+            {
+              "title": "Autosomal recessive",
+              "example": "e.g. cystic fibrosis",
+              "type": "AR",
+              "at": 310,
+              "resultAt": 550
+            },
+            {
+              "title": "Autosomal dominant",
+              "example": "e.g. Huntington's disease",
+              "type": "AD",
+              "at": 706,
+              "resultAt": 970
+            },
+            {
+              "title": "X-linked recessive",
+              "example": "e.g. haemophilia",
+              "type": "XR",
+              "at": 1066,
+              "resultAt": 1270
+            }
+          ]
+        }
       }
     },
     {

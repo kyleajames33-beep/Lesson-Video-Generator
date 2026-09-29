@@ -121,6 +121,38 @@
       "caption": "CFTR mutation, no chloride channel, dehydrated mucus, lung and pancreas damage.",
       "voiceover": {
         "text": "Let's walk through cystic fibrosis step by step, because the order of cause and effect is exactly what gets marked. It begins with a mutation in the C F T R gene, which produces a misfolded chloride channel that is broken down before it reaches the cell surface, so there is no working channel. Now the consequences cascade. Without that channel, chloride ions are not secreted out of the cell. And because water follows ions by osmosis, just like in the kidney and the guard cell, water does not follow the chloride out either. So the mucus lining the lungs and pancreas dehydrates and becomes thick and sticky. That thick mucus traps bacteria, causing chronic lung infections, and blocks the pancreatic ducts, causing poor digestion. Two points for the exam, cystic fibrosis is recessive, so carriers make enough working protein from their one normal allele, and crucially, the thick mucus is the consequence, never the cause."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8CFTR",
+        "props": {
+          "mutationAt": 178,
+          "misfoldAt": 358,
+          "thickAt": 1162,
+          "bacteriaAt": 1270,
+          "chain": [
+            {
+              "text": "no working channel",
+              "at": 470
+            },
+            {
+              "text": "chloride not secreted",
+              "at": 634
+            },
+            {
+              "text": "water doesn't follow",
+              "at": 970
+            },
+            {
+              "text": "mucus dehydrates and thickens",
+              "at": 1162
+            },
+            {
+              "text": "lung infections, poor digestion",
+              "at": 1270
+            }
+          ]
+        }
       }
     },
     {
