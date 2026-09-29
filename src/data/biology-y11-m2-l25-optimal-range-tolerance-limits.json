@@ -15,8 +15,8 @@
   "nesaOutcomes": [
     "BI-11-02"
   ],
-  "lessonIntent": "Students can use body temperature to discuss the optimal range, the tolerance range and the critical tolerance limits, and explain why enzymes set those limits.",
-  "examSkill": "Define the three zones with values (36.5–37.5 °C, a survivable fever near 40 °C, critical limits near 42 °C and 28 °C), explain them with enzymes and denaturation, and name a feedback response.",
+  "lessonIntent": "Students can use body temperature to distinguish an optimal range from conditions where regulation is stressed or fails, while recognising that critical risk depends on duration, cause and individual factors rather than one universal temperature.",
+  "examSkill": "Use body temperature as a physiological example: give the normal optimal range, explain increasing risk outside it, distinguish fever from hyperthermia, and avoid presenting a single universal irreversible-enzyme or survival threshold.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -53,22 +53,19 @@
       "body": "A physiological variable has a narrow optimal range, a wider tolerance range, and critical limits beyond which it fails.",
       "bullets": [
         {
-          "text": "Optimal: about 36.5 to 37.5 °C.",
-          "at": 3.2
+          "text": "Optimal core range: roughly 36.5–37.5 °C for normal function."
         },
         {
-          "text": "Tolerance: copes, e.g. a 40 °C fever.",
-          "at": 17.9
+          "text": "Risk rises outside the optimal range; severe heat illness can occur around 40 °C, especially with hyperthermia."
         },
         {
-          "text": "Critical limits: about 42 °C and 28 °C.",
-          "at": 26.8
+          "text": "Critical tolerance is context-dependent: duration, cause, hydration, age and health all matter."
         }
       ],
-      "callout": "Optimal is where it works best. Tolerance is where it copes.",
-      "caption": "Body temperature: optimal range, tolerance range and critical limits.",
+      "callout": "There is no single universal temperature at which everyone crosses from 'safe' to irreversible damage.",
+      "caption": "Body temperature: a normal optimal range, with risk rising as regulation is overwhelmed; limits depend on context.",
       "voiceover": {
-        "text": "Let's put numbers on it, using body temperature. The optimal range is the narrow band where the body functions best, about thirty six and a half to thirty seven and a half degrees. Around that is the tolerance range, where the body still copes, but not at its best. A fever of around forty degrees sits here. You feel awful and function poorly, but you're in no immediate danger. Beyond that is the critical tolerance limit. Above about forty two degrees, or below about twenty eight degrees, which is severe hypothermia, functioning fails and survival is threatened. Past those limits, the negative feedback mechanisms can no longer bring the variable back."
+        "text": "Use body temperature to understand optimal range and tolerance, but do not draw a universal cliff at one number. Normal core temperature is commonly around thirty six and a half to thirty seven and a half degrees. Outside that range, physiological stress and risk increase. Severe heat illness can occur around forty degrees, particularly in hyperthermia, and risk depends strongly on duration, cause, hydration and individual factors. Fever and hyperthermia are also different processes: fever raises the regulated set point, while hyperthermia is uncontrolled heat gain or failed heat loss. A critical tolerance limit means regulation can no longer maintain safe function, not one identical temperature for every person."
       },
       "diagram": {
         "type": "diorama",
@@ -88,31 +85,26 @@
             "at": 34
           },
           "tolerance": {
-            "from": 28,
-            "to": 42,
-            "label": "copes",
+            "from": 34,
+            "to": 40,
+            "label": "increasing physiological stress",
             "at": 302
           },
           "critical": {
-            "label": "critical tolerance limits: about 28 °C and 42 °C",
-            "failLabel": "fails",
+            "label": "critical risk depends on duration, cause and individual factors",
+            "failLabel": "regulation may fail",
             "at": 699
           },
           "markers": [
             {
               "value": 37,
-              "label": "37 °C",
+              "label": "~37 °C normal",
               "at": 163
             },
             {
               "value": 40,
-              "label": "fever 40 °C",
-              "at": 474
-            },
-            {
-              "value": 42,
-              "label": "42 °C",
-              "at": 774,
+              "label": "~40 °C: severe heat illness can occur",
+              "at": 474,
               "amber": true
             }
           ]
@@ -155,22 +147,19 @@
       "body": "Every cell process is catalysed by enzymes, and enzymes only work within a narrow set of conditions.",
       "bullets": [
         {
-          "text": "Near 37 °C: enzymes work at their best.",
-          "at": 10.7
+          "text": "Temperature changes reaction rates and protein stability; effects differ among enzymes and tissues."
         },
         {
-          "text": "In the tolerance range: slower, but recoverable.",
-          "at": 19.3
+          "text": "A fever does not simply 'slow all enzymes'."
         },
         {
-          "text": "Past the limit: denatured, permanently.",
-          "at": 28.2
+          "text": "Sufficiently high temperature can damage proteins, membranes and organs, but there is no universal 42 °C denaturation boundary."
         }
       ],
-      "callout": "A slowed enzyme recovers. A denatured enzyme doesn't.",
-      "caption": "Enzyme activity peaks near the optimum and fails past the critical limit.",
+      "callout": "Use enzyme denaturation as one mechanism of heat injury, not as a fixed whole-body threshold.",
+      "caption": "Heat injury is multi-factorial; protein denaturation is one mechanism, not a universal 42 °C switch.",
       "voiceover": {
-        "text": "So why do the limits exist? The reason is chemical. Every process in a cell is catalysed by enzymes, and enzymes only work well within a narrow range of conditions. Around thirty seven degrees, your enzymes work at peak efficiency, so every reaction runs at its normal rate. Move into the tolerance range and reactions slow down, which is why you function poorly with a fever. But that change can be reversed. Push past about forty two degrees, and enzymes denature. The bonds holding their shape break, the active site loses its shape, and the substrate can't bind. That damage is permanent. Cooling down doesn't rebuild them. So cell processes stop, and cells die."
+        "text": "Enzymes help explain why temperature matters, but the whole-body story is more complicated than a single denaturation threshold. Temperature can change reaction rates, membrane function and protein stability, and different proteins and tissues have different tolerances. A fever does not simply slow every enzyme. At sufficiently high temperatures, proteins can lose structure and cells and organs can be damaged, but forty two degrees is not a universal point at which every human enzyme irreversibly denatures. Use denaturation as one mechanism contributing to heat injury, alongside broader cellular and organ dysfunction."
       },
       "diagram": {
         "type": "diorama",
@@ -196,20 +185,19 @@
             "at": 0
           },
           "critical": {
-            "label": "past the limits: denaturation, cells die",
+            "label": "high-temperature injury: no single universal threshold",
             "failLabel": "fails",
             "at": 784
           },
           "enzyme": {
             "at": 152,
             "label": "enzyme activity",
-            "note": "shape only, not measured data",
+            "note": "illustrative shape only; not a universal human-enzyme threshold",
             "optimum": 37,
-            "zeroAt": 43,
             "denature": {
-              "label": "denatured: permanent",
+              "label": "high heat can denature proteins",
               "at": 784,
-              "value": 42
+              "value": 41
             }
           }
         }
@@ -279,15 +267,15 @@
       "question": "Using body temperature, discuss the optimal range for functioning and the critical tolerance limit. Explain why the limits exist and name one negative-feedback response that keeps temperature in the safe band.",
       "coachNote": "Values are marked: give numbers for every zone, then the enzyme reason, then the feedback.",
       "steps": [
-        "Optimal range: about 36.5–37.5 °C, where enzymes work at peak efficiency.",
-        "Tolerance range: the body copes but works less well; a fever near 40 °C is survivable and reversible.",
-        "Critical limits: about 42 °C and 28 °C. Above 42 °C enzymes denature permanently, so cell processes stop and cells die.",
-        "Feedback: a rise is detected and the hypothalamus triggers sweating and vasodilation, returning temperature toward 37 °C.",
-        "Past the critical limit, feedback is overwhelmed (e.g. sweat can't evaporate in humid heat), so temperature keeps climbing ✓"
+        "Optimal range: normal core temperature is roughly 36.5–37.5 °C for most healthy adults.",
+        "Outside the optimal range, compensatory responses increase; risk depends on how far, how long and why temperature is altered.",
+        "Severe heat illness can occur around 40 °C in hyperthermia; do not use 42 °C as a universal irreversible-enzyme or survival boundary.",
+        "Feedback to rising temperature includes hypothalamic control of sweating and skin vasodilation.",
+        "Distinguish fever (regulated set-point change) from hyperthermia (uncontrolled heat gain/failed heat loss) ✓"
       ],
-      "caption": "Zones with values, enzyme reason, feedback response.",
+      "caption": "Use ranges and mechanisms with qualification; critical risk is context-dependent.",
       "voiceover": {
-        "text": "Here's a full discussion. Give numbers for every zone. The optimal range is about thirty six and a half to thirty seven and a half degrees, where enzymes work at peak efficiency. In the tolerance range the body copes but works less well. A fever near forty is survivable, and reversible. The critical limits are about forty two and twenty eight degrees. Above forty two, enzymes denature permanently, so cell processes stop and cells die. Then name a feedback response. A rise is detected, and the hypothalamus triggers sweating and vasodilation to bring temperature back. Finish with the link. Past the critical limit, feedback is overwhelmed, for example sweat can't evaporate in humid heat, so temperature keeps climbing."
+        "text": "A strong discussion gives the normal optimal range, then qualifies the limits. Core temperature is usually around thirty six and a half to thirty seven and a half degrees. As temperature moves outside that range, compensatory responses increase and risk depends on magnitude, duration, cause and individual factors. Severe heat illness can occur around forty degrees in hyperthermia, so do not reassure a student that forty is automatically safe, and do not present forty two as a universal irreversible enzyme threshold. Sweating and skin vasodilation are negative-feedback responses to overheating. Also distinguish fever, where the regulated set point changes, from hyperthermia, where heat balance fails."
       },
       "durationInFrames": 1506
     },
@@ -309,16 +297,17 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "A fever of 40 °C and a core temperature of 43 °C are both outside the optimal range. Why is the second so much more dangerous?",
-      "pausePrompt": "Pause: is the difference just \"hotter is worse\", or something else?",
+      "question": "Why is it unsafe to use 40 °C as 'no immediate danger' and 42 °C as a universal irreversible enzyme-damage boundary?",
+      "pausePrompt": "Pause: think about cause, duration and variation among people and proteins.",
       "answerSteps": [
-        "At 40 °C enzymes keep their shape; they just work more slowly, and feedback is still in control, so it is reversible.",
-        "Above about 42 °C enzymes denature: their active sites lose shape permanently, so cell processes stop and cells die.",
-        "Feedback is also overwhelmed at that point, so temperature keeps rising: a difference in kind, not just degree ✓"
+        "Severe heat illness can occur around 40 °C, especially in hyperthermia, so 40 °C is not automatically safe.",
+        "Risk depends on duration, cause, hydration and individual factors.",
+        "Different proteins and tissues have different thermal tolerances; 42 °C is not a universal whole-body denaturation switch.",
+        "Fever and hyperthermia also differ physiologically, so context matters ✓"
       ],
-      "caption": "Fever: slowed, reversible. Past the limit: denatured, permanent.",
+      "caption": "Temperature risk is continuous and context-dependent, not a universal 40/42 °C switch.",
       "voiceover": {
-        "text": "Quick check. A fever of forty degrees and a core temperature of forty three degrees are both outside the optimal range. So why is the second one so much more dangerous? Pause, is it just that hotter is worse, or is it something else? Right. At forty degrees, enzymes keep their shape. They just work more slowly, and the feedback loop is still in control, so it's reversible. Above about forty two degrees, enzymes denature, their active sites lose their shape permanently, and cells die. And the feedback is overwhelmed at the same time. So it's a difference in kind, not just degree."
+        "text": "Quick check. Why is it unsafe to say forty degrees means no immediate danger and forty two is a universal irreversible enzyme boundary? Severe heat illness can occur around forty degrees, especially in hyperthermia. Risk also depends on how long the temperature is elevated, why it is elevated, hydration and individual factors. Different proteins and tissues have different thermal tolerances, so there is no single temperature at which every enzyme irreversibly denatures. And fever is physiologically different from hyperthermia. The safe scientific answer is qualified, not a fixed two-number rule."
       },
       "durationInFrames": 1326
     },
