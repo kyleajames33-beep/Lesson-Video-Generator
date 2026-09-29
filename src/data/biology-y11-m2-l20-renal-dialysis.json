@@ -38,13 +38,13 @@
       "type": "hook",
       "heading": "A machine that knows what to keep",
       "body": "A dialysis machine removes urea from the blood, but the patient doesn't lose their glucose.",
-      "callout": "How can a machine that only uses diffusion keep the glucose and lose the urea?",
+      "callout": "How can a machine that removes solutes by diffusion keep the glucose and lose the urea?",
       "image": "bioM8L20DialysisMachine",
       "caption": "Dialysis does part of the kidney's job from outside the body.",
       "voiceover": {
-        "text": "When the kidneys fail, urea builds up in the blood, and without help a person would die within days. Renal dialysis is a machine that does part of the kidney's job from outside the body. Thousands of Australians rely on it, typically about four hours, three times a week. Kidney disease rates are especially high in some remote Aboriginal and Torres Strait Islander communities, where getting dialysis can mean travelling or moving far from home. Here's the puzzle. The machine removes urea, but the patient doesn't lose their glucose. How can a machine that only uses diffusion know what to keep?"
+        "text": "When the kidneys fail, urea builds up in the blood, and severe untreated kidney failure can be life-threatening. Renal dialysis is a machine that does part of the kidney's job from outside the body. Thousands of Australians rely on it, typically about four hours, three times a week. Kidney disease rates are especially high in some remote Aboriginal and Torres Strait Islander communities, where getting dialysis can mean travelling or moving far from home. Here's the puzzle. The machine removes urea, but the patient doesn't lose their glucose. How can a machine that removes solutes by diffusion know what to keep?"
       },
-      "durationInFrames": 1302
+      "durationInFrames": 1389
     },
     {
       "id": "concept-dialysis",
@@ -53,22 +53,19 @@
       "body": "Blood flows past a selectively permeable membrane, with a carefully designed fluid on the other side.",
       "bullets": [
         {
-          "text": "Dialysate has no urea, so urea diffuses out.",
-          "at": 11.8
+          "text": "Dialysate has no urea, so urea diffuses out."
         },
         {
-          "text": "Glucose and salts matched, so no net loss.",
-          "at": 20.7
+          "text": "Glucose matched; salt recipe corrects imbalances."
         },
         {
-          "text": "Cells and proteins are too big to cross.",
-          "at": 27.1
+          "text": "Cells and proteins are too big to cross."
         }
       ],
       "callout": "The dialysate's recipe decides what leaves the blood.",
       "caption": "Urea diffuses into the dialysate; matched substances stay balanced.",
       "voiceover": {
-        "text": "In haemodialysis, the patient's blood is pumped through tubes made of a selectively permeable membrane. On the other side flows a fluid called dialysate. The clever part is the dialysate's recipe. It contains no urea, so urea diffuses out of the blood, down its concentration gradient, and is carried away. But glucose and useful salts are matched to healthy blood levels, so there's no gradient for them, and there's no net loss. Blood cells and large proteins are too big to cross the membrane, so they stay in the blood, just like at the kidney. Excess water and salts are drawn off too, and the cleaned blood goes back to the patient."
+        "text": "In haemodialysis, the patient's blood is pumped through tubes made of a selectively permeable membrane. On the other side flows a fluid called dialysate. The clever part is the dialysate's recipe. It contains no urea, so urea diffuses out of the blood, down its concentration gradient, and is carried away. In this simplified model, dialysate glucose matches the desired blood level, limiting net glucose loss. Its salt composition is selected to correct imbalances, so excess ions can diffuse out. Blood cells and large proteins are too big to cross the membrane, so they stay in the blood, just like at the kidney. Excess salts diffuse according to their gradients. Excess water is removed mainly by pressure-driven ultrafiltration, and the cleaned blood goes back to the patient."
       },
       "diagram": {
         "type": "diorama",
@@ -117,7 +114,7 @@
           ]
         }
       },
-      "durationInFrames": 1434
+      "durationInFrames": 1710
     },
     {
       "id": "concept-compare",
@@ -126,22 +123,19 @@
       "body": "Dialysis copies the kidney's outcome, clean blood, using a simpler mechanism.",
       "bullets": [
         {
-          "text": "Both remove urea, keep cells and glucose.",
-          "at": 2.9
+          "text": "Both remove urea, keep cells and glucose."
         },
         {
-          "text": "Kidney: continuous. Dialysis: intermittent.",
-          "at": 17.9
+          "text": "Kidney: continuous. Dialysis: intermittent."
         },
         {
-          "text": "Only the kidney makes hormones.",
-          "at": 34.3
+          "text": "Only the kidney makes hormones."
         }
       ],
       "callout": "The kidney is a regulating organ. The machine is a filter.",
       "caption": "Similarities and differences between dialysis and the kidney.",
       "voiceover": {
-        "text": "So how close is the match? Similarities first. Both remove urea and excess water and salts. Both use a selectively permeable barrier, so both keep blood cells and proteins in the blood. And both keep glucose, the kidney by reabsorbing it, the machine by matching the dialysate. Now the differences. The kidney works continuously, correcting the blood minute by minute, whereas dialysis runs a few times a week, so wastes build up between sessions. The kidney uses active transport to reabsorb exactly what's needed, whereas dialysis relies on diffusion alone. And a healthy kidney also makes hormones, including ones that regulate blood pressure and stimulate red blood cell production. Dialysis does none of that."
+        "text": "So how close is the match? Similarities first. Both remove urea and excess water and salts. Both use a selectively permeable barrier, so both keep blood cells and proteins in the blood. And both keep glucose, the kidney by reabsorbing it, the machine by matching the dialysate. Now the differences. The kidney works continuously, correcting the blood minute by minute, whereas dialysis runs a few times a week, so wastes build up between sessions. The kidney uses active transport to reabsorb exactly what's needed, whereas dialysis uses solute diffusion and pressure-driven ultrafiltration of excess water. And a healthy kidney also makes hormones, including ones that regulate blood pressure and stimulate red blood cell production. Dialysis does none of that."
       },
       "diagram": {
         "type": "diorama",
@@ -219,7 +213,7 @@
                 "text": "continuous"
               },
               {
-                "text": "about 3 × a week"
+                "text": "intermittent; regimen varies"
               }
             ],
             [
@@ -227,7 +221,7 @@
                 "text": "active transport + diffusion"
               },
               {
-                "text": "diffusion only"
+                "text": "diffusion + ultrafiltration"
               }
             ],
             [
@@ -244,7 +238,7 @@
           ]
         }
       },
-      "durationInFrames": 1458
+      "durationInFrames": 1620
     },
     {
       "id": "definition",
@@ -377,17 +371,17 @@
       "question": "Compare the process of renal dialysis with the function of the kidney, identifying at least two similarities and two differences.",
       "coachNote": "Explain the dialysate first, then write every point as a comparison: \"both…\", \"whereas…\".",
       "steps": [
-        "Dialysis: blood passes a selectively permeable membrane; the dialysate has no urea (urea diffuses out) but matches healthy glucose and salt levels (no net loss).",
+        "Dialysis: blood passes a selectively permeable membrane; the dialysate has no urea (urea diffuses out) but matches the desired glucose level and adjusts salts to correct imbalances.",
         "Similarity 1: both remove urea and excess water and salts, and keep cells, proteins and glucose (kidney by reabsorption, machine by matched dialysate).",
         "Similarity 2: both pass blood across a selectively permeable barrier.",
-        "Differences: the kidney is continuous, whereas dialysis is about 4 hours, 3 times a week; the kidney uses active transport, whereas dialysis uses diffusion only.",
+        "Differences: the kidney is continuous, whereas a common dialysis regimen is about 4 hours, 3 times a week, but regimens vary; the kidney uses active transport, whereas dialysis uses diffusion for solutes and ultrafiltration for water.",
         "The kidney also makes hormones, whereas dialysis does not: it manages kidney failure but doesn't cure it ✓"
       ],
       "caption": "Two similarities, three differences, one judgement.",
       "voiceover": {
-        "text": "Let's build a comparison answer. First explain the mechanism. Blood passes a selectively permeable membrane, and the dialysate has no urea, so urea diffuses out, but it matches healthy glucose and salt levels, so those aren't lost. Then the similarities. Both remove urea and excess water and salts, and both keep cells, proteins and glucose. Both pass blood across a selectively permeable barrier. Then the differences, each one as a comparison. The kidney works continuously, whereas dialysis runs about four hours, three times a week. The kidney uses active transport, whereas dialysis relies on diffusion. And the kidney makes hormones, whereas dialysis doesn't. So dialysis manages kidney failure, but doesn't cure it."
+        "text": "Let's build a comparison answer. First explain the mechanism. Blood passes a selectively permeable membrane, and the dialysate has no urea, so urea diffuses out, but its glucose and salt recipe limits unwanted losses and corrects imbalances. Then the similarities. Both remove urea and excess water and salts, and both keep cells, proteins and glucose. Both pass blood across a selectively permeable barrier. Then the differences, each one as a comparison. The kidney works continuously, whereas a common haemodialysis regimen is about four hours, three times a week; regimens vary. The kidney uses active transport, whereas dialysis uses solute diffusion and pressure-driven ultrafiltration of water. And the kidney makes hormones, whereas dialysis doesn't. So dialysis manages kidney failure, but doesn't cure it."
       },
-      "durationInFrames": 1434
+      "durationInFrames": 1659
     },
     {
       "id": "misconception",
@@ -428,15 +422,15 @@
         "Dialysis passes blood across a selectively permeable membrane into dialysate.",
         "No urea in the dialysate, so urea diffuses out; matched glucose and salts, so no net loss.",
         "Similar to the kidney: removes urea and excess water and salts, keeps cells, proteins and glucose.",
-        "Different: intermittent, diffusion only, and no hormones.",
+        "Different: intermittent, diffusion + ultrafiltration, and no hormones.",
         "Judge sources by author, purpose, currency and agreement."
       ],
       "finalPrompt": "Comparing? Write \"both…\" for similarities and \"whereas…\" for differences.",
       "caption": "How dialysis works, how it compares, and how to judge the sources.",
       "voiceover": {
-        "text": "Let's lock it in. Dialysis passes blood across a selectively permeable membrane into a dialysate. There's no urea in the dialysate, so urea diffuses out, and glucose and salts are matched, so there's no net loss. Like the kidney, it removes urea and excess water and salts, and keeps cells, proteins and glucose. Unlike the kidney, it's intermittent, uses diffusion only, and makes no hormones. And in a secondary-source investigation, judge every source by who wrote it and why, how current it is, and whether independent sources agree."
+        "text": "Let's lock it in. Dialysis passes blood across a selectively permeable membrane into a dialysate. There's no urea in the dialysate, so urea diffuses out, and glucose and salts are matched, so there's no net loss. Like the kidney, it removes urea and excess water and salts, and keeps cells, proteins and glucose. Unlike the kidney, it's intermittent, uses diffusion for solutes and ultrafiltration for water, and makes no hormones. And in a secondary-source investigation, judge every source by who wrote it and why, how current it is, and whether independent sources agree."
       },
-      "durationInFrames": 1146
+      "durationInFrames": 1286
     }
   ]
 }

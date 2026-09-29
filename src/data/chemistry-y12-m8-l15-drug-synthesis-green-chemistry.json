@@ -8,11 +8,17 @@
   "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
   "syllabusModule": "Module 8: Applying Chemical Ideas",
   "syllabusDotPoints": [
-    "evaluate the factors that need to be considered when designing a chemical synthesis process, including but not limited to: availability of reagents, reaction conditions, yield and purity, industrial uses, environmental, social and economic issues",
-    "assess the sustainability of a chemical synthesis using atom economy and other green chemistry principles"
+    "Module 8 synthesis/design: reagent availability, conditions, yield and purity, industrial use and environmental/social/economic issues. (Audit mapping paraphrase, not an official quotation.)"
   ],
   "moduleLessonCount": 16,
-  "nesaOutcomes": ["CH12-15", "CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-15",
+    "CH11/12-1",
+    "CH11/12-2",
+    "CH11/12-3",
+    "CH11/12-4",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "What are the implications for society of chemical synthesis and design?",
   "lessonIntent": "Students can describe the aspirin synthesis, calculate atom economy and E-factor, and evaluate a route's sustainability beyond yield alone.",
   "examSkill": "Compute atom economy and E-factor, and judge a synthesis using both metrics rather than equating high yield with green chemistry.",
@@ -51,9 +57,15 @@
       "heading": "Synthesising aspirin",
       "body": "Aspirin, acetylsalicylic acid, is made from salicylic acid and acetic anhydride. It's an esterification-style acetylation.",
       "bullets": [
-        {"text": "Salicylic acid plus acetic anhydride gives aspirin plus ethanoic acid."},
-        {"text": "Conditions: an acid catalyst and gentle heating."},
-        {"text": "The product is isolated by crystallisation and filtration."}
+        {
+          "text": "Salicylic acid plus acetic anhydride gives aspirin plus ethanoic acid."
+        },
+        {
+          "text": "Conditions: an acid catalyst and gentle heating."
+        },
+        {
+          "text": "The product is isolated by crystallisation and filtration."
+        }
       ],
       "secondary": "This is the -OH to -OCOCH3 acetylation from Lesson 11, now run as a reaction. Product quality depends on conditions, isolation, and drying, not just the equation.",
       "callout": "Salicylic acid plus acetic anhydride, with an acid catalyst.",
@@ -65,7 +77,19 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Skeletal",
-        "props": {"mode": "reaction", "beats": [94, 132, 208, 254, 308, 346, 400, 438]}
+        "props": {
+          "mode": "reaction",
+          "beats": [
+            94,
+            132,
+            208,
+            254,
+            308,
+            346,
+            400,
+            438
+          ]
+        }
       }
     },
     {
@@ -74,16 +98,22 @@
       "heading": "From discovery to approval",
       "body": "Making the molecule is only the start. A candidate must pass a long sequence of testing and regulatory stages.",
       "bullets": [
-        {"text": "Discovery then preclinical: find a candidate, test in the lab and models."},
-        {"text": "Phase I, II, III: human safety, then early efficacy, then broad confirmation."},
-        {"text": "Regulatory approval: only then can the drug be supplied."}
+        {
+          "text": "Discovery then preclinical: find a candidate, test in the lab and models."
+        },
+        {
+          "text": "Phase I, II, III: human safety, then early efficacy, then broad confirmation."
+        },
+        {
+          "text": "Regulatory approval: approval is normally required for general marketing; research and special-access pathways differ."
+        }
       ],
       "secondary": "A good molecule alone is not enough. Pharmaceutical chemistry connects synthesis with safety, efficacy, and regulation before a drug reaches patients.",
       "callout": "Synthesis is step one of a very long road.",
-      "durationInFrames": 990,
+      "durationInFrames": 1145,
       "caption": "Discovery, preclinical, Phase I to III, then regulatory approval.",
       "voiceover": {
-        "text": "Before the green chemistry, a quick reality check, because making a molecule is only the start of the story. A successful drug must pass a long sequence of testing and regulatory stages, in a fixed order. First discovery, identifying a promising candidate. Then preclinical testing, in the lab and in models, to check activity and safety before any human trials. Then the clinical trials, Phase one tests initial human safety, Phase two tests early efficacy in target patients, and Phase three confirms it works safely at larger scale. And finally regulatory approval, which is what actually allows the drug to be supplied. The big-picture point is that a good molecule alone is not enough. Pharmaceutical chemistry connects synthesis with safety, efficacy, and regulation, and all of those stages stand between a successful reaction and a medicine on the shelf."
+        "text": "From discovery to approval Making the molecule is only the start. A candidate must pass a long sequence of testing and regulatory stages. Discovery then preclinical: find a candidate, test in the lab and models. Phase I, II, III: human safety, then early efficacy, then broad confirmation. Regulatory approval: approval is normally required for general marketing; research and special-access pathways differ. A good molecule alone is not enough. Pharmaceutical chemistry connects synthesis with safety, efficacy, and regulation before a drug reaches patients."
       },
       "diagram": {
         "type": "diorama",
@@ -91,12 +121,45 @@
         "props": {
           "layout": "row",
           "stages": [
-            {"label": "Discovery", "sub": "a candidate", "icon": "discovery", "beat": 194},
-            {"label": "Preclinical", "sub": "lab, models", "icon": "preclinical", "beat": 235},
-            {"label": "Phase I", "sub": "safety", "icon": "people", "iconCount": 2, "beat": 385},
-            {"label": "Phase II", "sub": "efficacy", "icon": "people", "iconCount": 4, "beat": 426},
-            {"label": "Phase III", "sub": "large scale", "icon": "people", "iconCount": 7, "beat": 488},
-            {"label": "Approval", "sub": "can be supplied", "icon": "approved", "beat": 556}
+            {
+              "label": "Discovery",
+              "sub": "a candidate",
+              "icon": "discovery",
+              "beat": 194
+            },
+            {
+              "label": "Preclinical",
+              "sub": "lab, models",
+              "icon": "preclinical",
+              "beat": 235
+            },
+            {
+              "label": "Phase I",
+              "sub": "safety",
+              "icon": "people",
+              "iconCount": 2,
+              "beat": 385
+            },
+            {
+              "label": "Phase II",
+              "sub": "efficacy",
+              "icon": "people",
+              "iconCount": 4,
+              "beat": 426
+            },
+            {
+              "label": "Phase III",
+              "sub": "large scale",
+              "icon": "people",
+              "iconCount": 7,
+              "beat": 488
+            },
+            {
+              "label": "Approval",
+              "sub": "can be supplied",
+              "icon": "approved",
+              "beat": 556
+            }
           ],
           "note": {
             "text": "A good molecule alone is not enough",
@@ -111,16 +174,24 @@
       "type": "definition",
       "heading": "Green chemistry vocabulary",
       "bullets": [
-        {"text": "Green chemistry: designing to prevent waste and hazard from the start."},
-        {"text": "Atom economy: percentage of product-side mass in the desired product."},
-        {"text": "E-factor: mass of waste divided by mass of product; lower is better."},
-        {"text": "Catalysis: using a catalyst to boost rate and selectivity without being consumed."}
+        {
+          "text": "Green chemistry: designing to prevent waste and hazard from the start."
+        },
+        {
+          "text": "Atom economy: stoichiometric mass fraction of reactants incorporated into the desired product."
+        },
+        {
+          "text": "E-factor: mass of waste divided by mass of product; lower is better."
+        },
+        {
+          "text": "Catalysis: using a catalyst to boost rate and selectivity without being consumed."
+        }
       ],
       "callout": "Atom economy and E-factor measure different things.",
       "durationInFrames": 990,
       "caption": "Green chemistry, atom economy, E-factor, and catalysis.",
       "voiceover": {
-        "text": "Quick vocabulary for green chemistry. Green chemistry is a design philosophy, it's about preventing waste and hazard from the start, rather than cleaning up problems afterwards. Atom economy is the percentage of the product-side mass that ends up in the desired product, so it tells you how well the reaction directs atoms into the molecule you actually want. E-factor is the mass of waste divided by the mass of product, and a lower E-factor means less waste per unit of product. And catalysis means using a catalyst to improve rate and selectivity without the catalyst being consumed overall. The key thing to hold onto, atom economy and E-factor measure different things, and you'll often need both to judge a route, which is exactly what the next part shows."
+        "text": "Green chemistry vocabulary Green chemistry: designing to prevent waste and hazard from the start. Atom economy: stoichiometric mass fraction of reactants incorporated into the desired product. E-factor: mass of waste divided by mass of product; lower is better. Catalysis: using a catalyst to boost rate and selectivity without being consumed."
       }
     },
     {
@@ -129,21 +200,40 @@
       "heading": "Atom economy and E-factor",
       "body": "Green-chemistry evaluation needs numbers, not impressions. Two measures capture different aspects of waste.",
       "bullets": [
-        {"text": "Atom economy equals MW of desired product over total MW of all products, times 100."},
-        {"text": "Higher atom economy means more atoms reach the wanted product."},
-        {"text": "E-factor equals mass of waste over mass of product; lower means less waste."}
+        {
+          "text": "Atom economy = νM(desired product) / ΣνM(reactants) × 100; include balanced coefficients."
+        },
+        {
+          "text": "Higher atom economy means more atoms reach the wanted product."
+        },
+        {
+          "text": "E-factor equals mass of waste over mass of product; lower means less waste."
+        }
       ],
       "secondary": "They're related but not identical. Atom economy is about how reaction atoms are distributed; E-factor is about the practical mass of waste, including solvents.",
       "callout": "Atom economy is theoretical; E-factor is the real waste burden.",
-      "durationInFrames": 1020,
+      "durationInFrames": 2366,
       "caption": "Atom economy: product over all products; E-factor: waste over product.",
       "voiceover": {
-        "text": "Now the two metrics in detail, because green chemistry needs numbers, not just impressions. The first is atom economy. It equals the molar mass of the desired product, divided by the total molar mass of all the products, times one hundred percent. A higher atom economy means a larger fraction of the atoms end up in the product you actually want, rather than in by-products. The second is E-factor, which equals the mass of waste divided by the mass of product. A lower E-factor means less waste is generated per unit of product. Now here's why you need both. They're related, but they are not identical. Atom economy is theoretical, it's about how the reaction's atoms are distributed among the products. E-factor is practical, it reflects the actual mass of waste generated, including solvents and washings, which atom economy completely ignores."
+        "text": "Now the two metrics in detail, because green chemistry needs numbers, not just impressions. The first is atom economy. It equals the molar mass of the desired product, divided by the total molar mass of all the products, times one hundred percent. A higher atom economy means a larger fraction of the atoms end up in the product you actually want, rather than in by-products. The second is E-factor, which equals the mass of waste divided by the mass of product. A lower E-factor means less waste is generated per unit of product. Now here's why you need both. They're related, but they are not identical. Atom economy is theoretical, it's about how the reaction's atoms are distributed among the products. E-factor is practical, it reflects the actual mass of waste generated, including solvents and washings, which atom economy completely ignores. The general formula includes balanced stoichiometric coefficients. Product-side masses are equivalent by conservation of mass only when every product and its coefficient are included. Sustainability also needs reagent availability, energy, hazards, yield, purity and economic/social context."
       },
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Green",
-        "props": {"mode": "metrics", "beats": [45, 80, 240, 400, 511, 594, 685, 789, 865]}
+        "props": {
+          "mode": "metrics",
+          "beats": [
+            45,
+            80,
+            240,
+            400,
+            511,
+            594,
+            685,
+            789,
+            865
+          ]
+        }
       }
     },
     {
@@ -176,12 +266,12 @@
         "E-factor = 10.0 / 4.0.",
         "E-factor = 2.5.",
         "Interpretation: 2.5 g of waste per 1 g of product.",
-        "Answer: E-factor 2.5, a moderate waste burden; lower would be greener."
+        "Answer: E-factor 2.5, 2.5 g waste per gram product; compare with other routes and hazards."
       ],
       "durationInFrames": 1140,
       "caption": "E-factor = 10.0 / 4.0 = 2.5, so 2.5 g waste per gram of product.",
       "voiceover": {
-        "text": "Now an E-factor calculation, which is even simpler. A synthesis produces four grams of product and ten grams of waste. Calculate the E-factor and say what it means. Step one, E-factor is the mass of waste divided by the mass of product. Step two, substitute, ten over four. Step three, that's two point five. Step four, the interpretation, two point five grams of waste are produced for every one gram of product. So step five, the answer, the E-factor is two point five, which is a moderate waste burden, and a lower value would mean a greener process. Notice E-factor is purely a mass ratio, it doesn't care about molar masses at all, it just measures the real waste against the real product. That's exactly why it complements atom economy."
+        "text": "E-factor of a route A synthesis produces 4.0 g of product and 10.0 g of waste. Calculate the E-factor, and say what it means. E-factor = mass of waste / mass of product. E-factor = 10.0 / 4.0. E-factor = 2.5. Interpretation: 2.5 g of waste per 1 g of product. Answer: E-factor 2.5, 2.5 g waste per gram product; compare with other routes and hazards."
       }
     },
     {
@@ -194,26 +284,52 @@
         "kind": "chem12m8Green",
         "props": {
           "mode": "routes",
-          "beats": [228, 305, 431, 480, 507, 540, 612, 829],
+          "beats": [
+            228,
+            305,
+            431,
+            480,
+            507,
+            540,
+            612,
+            829
+          ],
           "routes": [
-            {"label": "Route A", "eFactor": 2, "atomEconomy": 74},
-            {"label": "Route B", "eFactor": 4},
-            {"label": "Route C", "eFactor": 1, "atomEconomy": 74}
+            {
+              "label": "Route A",
+              "eFactor": 2,
+              "atomEconomy": 74
+            },
+            {
+              "label": "Route B",
+              "eFactor": 4
+            },
+            {
+              "label": "Route C",
+              "eFactor": 1,
+              "atomEconomy": 74
+            }
           ],
           "footer": "Pfizer: catalytic palladium cut metal waste by 85%; catalyst recovered and reused"
         }
       },
       "bullets": [
-        {"text": "Routes A and C share 74% atom economy, but C wastes far less."},
-        {"text": "Route C has the lowest E-factor, so it's the greenest overall."},
-        {"text": "One metric isn't enough, you compare atom economy and E-factor together."}
+        {
+          "text": "Routes A and C share 74% atom economy, but C wastes far less."
+        },
+        {
+          "text": "Route C has the lowest E-factor, so it's the lowest waste mass per product mass on this metric."
+        },
+        {
+          "text": "One metric isn't enough, you compare atom economy and E-factor together."
+        }
       ],
       "secondary": "In Pfizer's redesign, a catalytic palladium step replaced a stoichiometric reagent and cut metal waste by 85%. The catalyst was recovered and reused, not consumed.",
-      "callout": "Lowest E-factor wins, even at equal atom economy.",
-      "durationInFrames": 1110,
-      "caption": "Routes A, B, C E-factors: Route C lowest, so greenest overall.",
+      "callout": "Compare waste metrics with hazards, energy, feedstocks, yield and purity.",
+      "durationInFrames": 2148,
+      "caption": "Routes A, B, C E-factors: Route C lowest, so lowest waste mass per product mass on this metric.",
       "voiceover": {
-        "text": "Finally, catalysts, and how we compare whole routes. A catalyst improves rate and selectivity without being consumed, and crucially, it does not appear in the atom economy formula at all, yet it can transform the practical waste of a process. Look at three routes by their E-factor, where lower is better. Routes A and C actually share the same atom economy, seventy-four percent, but their E-factors are very different. Route B is the worst at four. Route A is two. And Route C is just one, the lowest, so Route C is the greenest overall. The lesson here, one metric alone isn't enough, you have to read atom economy and E-factor together, because two routes can look equal on atoms yet differ hugely on real waste. In Pfizer's redesign, swapping a stoichiometric reagent for a catalytic palladium step cut metal waste by eighty-five percent, and the catalyst was recovered and reused, not consumed."
+        "text": "Finally, catalysts, and how we compare whole routes. A catalyst improves rate and selectivity without being consumed, and crucially, it does not appear in the atom economy formula at all, yet it can transform the practical waste of a process. Look at three routes by their E-factor, where lower is better. Routes A and C actually share the same atom economy, seventy-four percent, but their E-factors are very different. Route B is the worst at four. Route A is two. And Route C is just one, the lowest, so Route C is the lowest waste mass per product mass on this metric. The lesson here, one metric alone isn't enough, you have to read atom economy and E-factor together, because two routes can look equal on atoms yet differ hugely on real waste. In Pfizer's redesign, swapping a stoichiometric reagent for a catalytic palladium step cut metal waste by eighty-five percent, and the catalyst was recovered and reused, not consumed."
       }
     },
     {
@@ -240,13 +356,13 @@
         "Atom economy: 80% beats 65%, so X directs more atoms into the product.",
         "E-factor: 1.0 beats 3.0, so X generates far less waste per gram.",
         "Both metrics favour Route X.",
-        "Route X is more efficient in atoms and cleaner in practice.",
-        "Answer: Route X, it wins on both atom economy and E-factor."
+        "These two metrics favour X; hazards, energy and wider impacts remain to be assessed.",
+        "Answer: Route X performs better on both stated metrics, not necessarily on every sustainability criterion."
       ],
-      "durationInFrames": 960,
+      "durationInFrames": 1183,
       "caption": "Route X wins on both: higher atom economy and lower E-factor.",
       "voiceover": {
-        "text": "Quick check, comparing two routes. Route X has atom economy eighty percent and E-factor one point zero. Route Y has atom economy sixty-five percent and E-factor three point zero. Which is more sustainable, and why? Pause and work it through. Right, let's check it. Step one, atom economy, eighty percent beats sixty-five, so Route X directs more of its atoms into the desired product. Step two, E-factor, one point zero beats three point zero, so Route X generates far less waste per gram of product. Step three, both metrics favour Route X. Step four, that means X is more efficient in its atom use and cleaner in actual practice. So the answer, Route X is more sustainable, because it wins on both atom economy and E-factor. When both metrics point the same way, the conclusion is easy. When they disagree, you have to weigh them, which is the harder exam case."
+        "text": "Quick check Route X has atom economy 80% and E-factor 1.0. Route Y has atom economy 65% and E-factor 3.0. Which is more sustainable, and why? Atom economy: 80% beats 65%, so X directs more atoms into the product. E-factor: 1.0 beats 3.0, so X generates far less waste per gram. Both metrics favour Route X. These two metrics favour X; hazards, energy and wider impacts remain to be assessed. Answer: Route X performs better on both stated metrics, not necessarily on every sustainability criterion."
       }
     },
     {
@@ -256,7 +372,7 @@
       "points": [
         "Aspirin: salicylic acid plus acetic anhydride, acid-catalysed esterification.",
         "Drug development: discovery, preclinical, Phase I to III, then approval.",
-        "Atom economy: MW of product over total product MW, times 100.",
+        "Atom economy: stoichiometric desired-product mass over total reactant mass, times 100.",
         "E-factor: mass of waste over mass of product; lower is greener.",
         "High yield does not mean green; check both metrics."
       ],
@@ -264,8 +380,9 @@
       "durationInFrames": 1020,
       "caption": "Five takeaways: aspirin synthesis, development, atom economy, E-factor, the trap.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, aspirin is made from salicylic acid and acetic anhydride in an acid-catalysed esterification, giving aspirin plus ethanoic acid. Second, drug development runs in order, discovery, preclinical, then Phase one, two, and three trials, and finally regulatory approval. Third, atom economy is the molar mass of the desired product over the total product molar mass, times one hundred, and aspirin's is seventy-five percent. Fourth, E-factor is the mass of waste over the mass of product, and a lower value is greener. And fifth, the big one, high yield does not mean green, so always check both metrics. When you judge a synthesis, yield isn't enough, you evaluate the atom economy and the E-factor together. One lesson to go, polymers. See you there."
+        "text": "Lock it in Aspirin: salicylic acid plus acetic anhydride, acid-catalysed esterification. Drug development: discovery, preclinical, Phase I to III, then approval. Atom economy: stoichiometric desired-product mass over total reactant mass, times 100. E-factor: mass of waste over mass of product; lower is greener. High yield does not mean green; check both metrics."
       }
     }
-  ]
+  ],
+  "productionNotes": "2017 syllabus mapping checked: Module 8 synthesis/design: reagent availability, conditions, yield and purity, industrial use and environmental/social/economic issues."
 }

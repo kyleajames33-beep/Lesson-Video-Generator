@@ -12,7 +12,12 @@
     "construct models, identify the functional group, and write structural and molecular formulae for homologous series of organic chemical compounds, up to C8 (ACSCH035)"
   ],
   "moduleLessonCount": 23,
-  "nesaOutcomes": ["CH12-14", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-14",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "How can hydrocarbons be classified based on their structure and reactivity?",
   "lessonIntent": "Students can describe the shape and bond angle at single, double and triple bonded carbons, and explain why the pi bond makes alkenes and alkynes reactive.",
   "examSkill": "State both shape and bond angle from the bond type, and explain reactivity by pointing to the exposed, weaker pi bond of a multiple bond.",
@@ -50,9 +55,15 @@
       "heading": "Shape from the bond type",
       "body": "Recall from Lesson 1: the bond type at a carbon fixes its shape and bond angle directly. You read it straight off the structure.",
       "bullets": [
-        {"text": "Single bonds only: tetrahedral, 109.5 degrees (ethane)."},
-        {"text": "Part of a C=C: trigonal planar, about 120 degrees (ethene is flat)."},
-        {"text": "Part of a C(triple)C: linear, 180 degrees (ethyne is a straight line)."}
+        {
+          "text": "Single bonds only: tetrahedral, 109.5 degrees (ethane)."
+        },
+        {
+          "text": "Part of a C=C: trigonal planar, about 120 degrees (ethene is flat)."
+        },
+        {
+          "text": "Part of a C(triple)C: linear, 180 degrees (ethyne is a straight line)."
+        }
       ],
       "secondary": "Always pair the shape name with the bond angle. The HSC awards a mark for each, so give both.",
       "callout": "More bonds between carbons means a flatter, then straighter shape.",
@@ -98,9 +109,15 @@
       "body": "A C=C double bond is not two identical bonds. It is one strong sigma bond plus one weaker, more exposed pi bond.",
       "image": "m7L4SigmaPiBond",
       "bullets": [
-        {"text": "Sigma bond: the strong framework bond lying directly along the C-C axis."},
-        {"text": "Pi bond: the weaker bond, sitting above and below that axis."},
-        {"text": "The pi bond is electron-rich and exposed, so it is easily attacked."}
+        {
+          "text": "Sigma bond: the strong framework bond lying directly along the C-C axis."
+        },
+        {
+          "text": "Pi bond: the weaker bond, sitting above and below that axis."
+        },
+        {
+          "text": "The pi bond is electron-rich and exposed, so it is easily attacked."
+        }
       ],
       "secondary": "A triple bond is one sigma plus two pi bonds. That second pi bond is why alkynes can add reagents in two separate steps.",
       "callout": "The pi bond is the reactive part; the sigma bond is the sturdy frame.",
@@ -116,9 +133,15 @@
       "heading": "Why the pi bond drives reactivity",
       "body": "The presence or absence of a pi bond is the single feature that splits alkene chemistry from alkane chemistry.",
       "bullets": [
-        {"text": "Alkenes have an exposed pi bond, so reagents add across the C=C (addition)."},
-        {"text": "Alkanes have only strong sigma bonds, so they resist most reagents."},
-        {"text": "Alkanes react only by substitution, and only with energy like UV light."}
+        {
+          "text": "Alkenes have an exposed pi bond, so reagents add across the C=C (addition)."
+        },
+        {
+          "text": "Alkanes have only strong sigma bonds, so they resist most reagents."
+        },
+        {
+          "text": "Alkanes undergo halogen substitution with initiation by UV or heat; they also combust and can crack."
+        }
       ],
       "secondary": "The pi bond also locks the double bond against rotation, so the two carbons and their attached atoms stay fixed in one plane.",
       "callout": "Pi bond present, the molecule adds; pi bond absent, it resists.",
@@ -227,10 +250,10 @@
           "layout": "cols"
         }
       },
-      "durationInFrames": 1020,
+      "durationInFrames": 1903,
       "caption": "A pi bond enables addition; without one, alkanes only substitute under UV.",
       "voiceover": {
-        "text": "So let's connect the bonding to the reactivity. The single most important structural feature in hydrocarbon chemistry is whether or not there's a pi bond. If a molecule has one, like an alkene, that exposed, electron-rich pi bond invites reagents to add across the double bond, breaking the pi bond and forming two new single bonds. That's an addition reaction, and it happens readily, often at room temperature. If a molecule has no pi bond, like an alkane, it only has strong sigma bonds, which are not exposed and not easily broken, so alkanes resist most reagents. They'll only react by substitution, swapping one atom for another, and only when you supply energy, such as ultraviolet light. One more consequence, the pi bond locks the double bond against rotation, so the carbons and everything attached to them stay fixed in a single plane."
+        "text": "So let's connect the bonding to the reactivity. The single most important structural feature in hydrocarbon chemistry is whether or not there's a pi bond. If a molecule has one, like an alkene, that exposed, electron-rich pi bond invites reagents to add across the double bond, breaking the pi bond and forming two new single bonds. That's an addition reaction, and it happens readily, often at room temperature. If a molecule has no pi bond, like an alkane, it only has strong sigma bonds, which are not exposed and not easily broken, so alkanes resist most reagents. They undergo substitution with halogens under suitable initiation, but can also undergo combustion and cracking under appropriate conditions. One more consequence, the pi bond locks the double bond against rotation, so the carbons and everything attached to them stay fixed in a single plane."
       }
     },
     {
@@ -239,9 +262,15 @@
       "heading": "The reaction families ahead",
       "body": "Bonding decides behaviour. Here is the map for the next few lessons, organised by what each class does.",
       "bullets": [
-        {"text": "Addition: alkenes and alkynes open a pi bond; two reactants make one product."},
-        {"text": "Substitution: alkanes swap one H for a halogen under UV; two products form."},
-        {"text": "Combustion: every hydrocarbon burns in oxygen to give CO2 and water."}
+        {
+          "text": "Addition: alkenes and alkynes open a pi bond; two reactants make one product."
+        },
+        {
+          "text": "Substitution: alkanes swap one H for a halogen under UV; two products form."
+        },
+        {
+          "text": "Combustion: every hydrocarbon burns in oxygen to give CO2 and water."
+        }
       ],
       "secondary": "Polymerisation is repeated addition: many alkene monomers open their double bonds and link into one long chain.",
       "callout": "Alkenes add, alkanes substitute, all hydrocarbons burn.",
@@ -334,10 +363,10 @@
         "Balance equations by changing coefficients, never subscripts."
       ],
       "finalPrompt": "Reactivity question? Find the pi bond and name it as the reactive site.",
-      "durationInFrames": 1140,
+      "durationInFrames": 1890,
       "caption": "Five takeaways: shapes, sigma vs pi, pi as reactive site, addition vs substitution, balancing.",
       "voiceover": {
-        "text": "Let's lock it in. Five takeaways. First, you read shape from the bond type, single bonds are tetrahedral at one hundred and nine point five, a double bond is trigonal planar at one hundred and twenty, and a triple bond is linear at one hundred and eighty. Second, a double bond is one strong sigma bond plus one weaker, exposed pi bond, not two identical bonds. Third, that pi bond is electron-rich and accessible, so it's the reactive site of the molecule. Fourth, if a pi bond is present the molecule undergoes addition, while alkanes, with no pi bond, can only substitute, and only with energy like ultraviolet light. And fifth, always balance equations by changing coefficients, never the subscripts. Next lesson we put this to work on the reactions themselves, combustion, substitution, addition, and polymerisation. See you next lesson."
+        "text": "Let's lock it in. Five takeaways. First, you read shape from the bond type, single bonds are tetrahedral at one hundred and nine point five, a double bond is trigonal planar at one hundred and twenty, and a triple bond is linear at one hundred and eighty. Second, a double bond is one strong sigma bond plus one weaker, exposed pi bond, not two identical bonds. Third, that pi bond is electron-rich and accessible, so it's the reactive site of the molecule. Fourth, if a pi bond is present the molecule undergoes addition, while alkanes resist many addition reagents but can undergo substitution, combustion or cracking under appropriate conditions. And fifth, always balance equations by changing coefficients, never the subscripts. Next lesson we put this to work on the reactions themselves, combustion, substitution, addition, and polymerisation. See you next lesson."
       }
     }
   ]

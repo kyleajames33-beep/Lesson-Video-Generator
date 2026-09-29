@@ -210,13 +210,13 @@ export const TitrationCurveDiagram = ({
 			{/* Reading markers (single curve) */}
 			{single && markers.epAt !== undefined && (() => {
 				const t = ease(frame, markers.epAt, markers.epAt + 20);
-				const ep = jumpRead ? (jumpRead.lo + jumpRead.hi) / 2 : epPH(single);
+				const ep = epPH(single);
 				return (
 					<g opacity={t}>
 						<line x1={gx(vEq)} y1={GY1} x2={gx(vEq)} y2={GY1 - (GY1 - gy(ep)) * t} stroke={TOK.amber} strokeWidth={3} strokeDasharray="7 6" />
 						<circle cx={gx(vEq)} cy={gy(ep)} r={8 + idlePulse(frame) * 2} fill="#ffffff" stroke={TOK.amber} strokeWidth={3.5} />
 						<text x={gx(vEq) + 14} y={gy(ep) + 34} fill={TOK.amberInk} fontSize={18} fontWeight={800}>equivalence: {vEq.toFixed(2)} mL</text>
-						<text x={gx(vEq) + 14} y={gy(ep) + 56} fill={TOK.amberInk} fontSize={16} fontWeight={800}>{jumpRead ? `halfway up the jump: pH ≈ ${ep.toFixed(1)}` : 'middle of the jump'}</text>
+						<text x={gx(vEq) + 14} y={gy(ep) + 56} fill={TOK.amberInk} fontSize={16} fontWeight={800}>{`pH at equivalence: ${ep.toFixed(2)}`}</text>
 					</g>
 				);
 			})()}

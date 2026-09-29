@@ -1,0 +1,2095 @@
+{
+  "scope": "Principal displayed concepts, worked examples and quick checks across 149 Chemistry lesson JSON files, with targeted narration follow-through; not rendered/audio certification.",
+  "findings": [
+    {
+      "id": "C01",
+      "lessons": [
+        "chemistry-y11-m1-l1"
+      ],
+      "priority": "correct",
+      "problem": "A fixed boiling point is incorrectly treated as definitive proof of purity.",
+      "source": "https://openstax.org/books/chemistry-2e/pages/11-4-colligative-properties",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C02",
+      "lessons": [
+        "chemistry-y11-m1-l3"
+      ],
+      "priority": "correct",
+      "problem": "NaCl recovery over-relies on cooling crystallisation; distillation instructions imply boiling the flask dry.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "worked-example",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C03",
+      "lessons": [
+        "chemistry-y11-m1-l4"
+      ],
+      "priority": "correct",
+      "problem": "Chromatographic Rf matching is treated as unique identification; ethanol distillation needs the azeotrope qualification.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "worked-example",
+        "worked-example-2"
+      ]
+    },
+    {
+      "id": "C04",
+      "lessons": [
+        "chemistry-y11-m1-l5"
+      ],
+      "priority": "correct",
+      "problem": "The proposed chromatography/distillation sequence does not explain recovery of iodine and sugar.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C05",
+      "lessons": [
+        "chemistry-y11-m1-l7"
+      ],
+      "priority": "correct",
+      "problem": "Charge-product comparison is stated as an exact fourfold actual attraction and a universal ranking rule.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "formula",
+        "worked-example",
+        "misconception",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C06",
+      "lessons": [
+        "chemistry-y11-m1-l8"
+      ],
+      "priority": "hold",
+      "problem": "Elemental tungsten is modelled as a small highly charged cation donating about six electrons.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C07",
+      "lessons": [
+        "chemistry-y11-m1-l9"
+      ],
+      "priority": "hold",
+      "problem": "CO₂ sublimation is called boiling and diamond is assigned an ordinary atmospheric melting point.",
+      "source": "https://openstax.org/books/chemistry-2e/pages/10-4-phase-diagrams",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "hook",
+        "concept",
+        "formula",
+        "worked-example"
+      ]
+    },
+    {
+      "id": "C08",
+      "lessons": [
+        "chemistry-y11-m1-l10"
+      ],
+      "priority": "correct",
+      "problem": "A universal IMF-strength ladder ignores size, polarizability and molecular shape.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept",
+        "worked-example",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C09",
+      "lessons": [
+        "chemistry-y11-m1-l12"
+      ],
+      "priority": "correct",
+      "problem": "Solubility is determined from enthalpy alone, omitting entropy and exceptions.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-energy",
+        "concept-water",
+        "worked-example",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C10",
+      "lessons": [
+        "chemistry-y11-m1-l14"
+      ],
+      "priority": "correct",
+      "problem": "Isotope chemistry is called identical and an approximate mass-number average is not distinguished from tabulated atomic weight.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-isotopes",
+        "worked-example"
+      ]
+    },
+    {
+      "id": "C11",
+      "lessons": [
+        "chemistry-y11-m1-l15"
+      ],
+      "priority": "correct",
+      "problem": "Main-group number is equated directly with valence-electron count despite the 1–18 group convention.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-ordering"
+      ]
+    },
+    {
+      "id": "C12",
+      "lessons": [
+        "chemistry-y11-m1-l17"
+      ],
+      "priority": "hold",
+      "problem": "The quick check incorrectly says Cl⁻ has more shells than Na and gives an unsupported mixed-radius order.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C13",
+      "lessons": [
+        "chemistry-y11-m2-l1",
+        "chemistry-y11-m2-l1a"
+      ],
+      "priority": "hold",
+      "problem": "The pre-2019 carbon-12 mole definition is presented as current.",
+      "source": "https://www.bipm.org/en/si-base-units/mole",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "definition",
+        "concept-scale",
+        "concept-carbon12",
+        "definition",
+        "concept-scale",
+        "concept-carbon12"
+      ]
+    },
+    {
+      "id": "C14",
+      "lessons": [
+        "chemistry-y11-m2-l2"
+      ],
+      "priority": "correct",
+      "problem": "Molar mass invokes the old mole definition; Ca(H₂PO₄)₂ rounding is inconsistent.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept",
+        "worked-example"
+      ]
+    },
+    {
+      "id": "C15",
+      "lessons": [
+        "chemistry-y11-m2-l4"
+      ],
+      "priority": "correct",
+      "problem": "Fixed-volume examples can imply changing temperature changes the moles in a sealed sample.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept",
+        "worked-example-2"
+      ]
+    },
+    {
+      "id": "C16",
+      "lessons": [
+        "chemistry-y11-m2-l8"
+      ],
+      "priority": "hold",
+      "problem": "WHO nitrate guideline is overstated tenfold; ppm/ppb omit density and basis qualifications.",
+      "source": "https://cdn.who.int/media/docs/default-source/wash-documents/water-safety-and-quality/chemical-fact-sheets-2022/nitrate-and-nitrite-fact-sheet-2022.pdf",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept",
+        "worked-example-2"
+      ]
+    },
+    {
+      "id": "C17",
+      "lessons": [
+        "chemistry-y11-m2-l10"
+      ],
+      "priority": "correct",
+      "problem": "Endpoint is conflated with equivalence point; worked result prematurely rounds four-significant-figure data.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept",
+        "worked-example"
+      ]
+    },
+    {
+      "id": "C18",
+      "lessons": [
+        "chemistry-y11-m2-l16"
+      ],
+      "priority": "hold",
+      "problem": "NaOH concentration is missing from a salt-yield calculation; carbonate limited-acid example ignores bicarbonate formation.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "worked-example-2",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C19",
+      "lessons": [
+        "chemistry-y11-m2-l17"
+      ],
+      "priority": "correct",
+      "problem": "Intermediate rounding is inconsistent with the worked final concentration; retain guard digits.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "worked-example"
+      ]
+    },
+    {
+      "id": "C20",
+      "lessons": [
+        "chemistry-y11-m3-cp1"
+      ],
+      "priority": "hold",
+      "problem": "CaSO₄ is universally labelled aqueous; bubbling is treated as a unique carbonate test.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "decision-tree",
+        "walkthrough-3"
+      ]
+    },
+    {
+      "id": "C21",
+      "lessons": [
+        "chemistry-y11-m3-cp3"
+      ],
+      "priority": "hold",
+      "problem": "Temperature is incorrectly said never to affect equilibrium yield.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "decision-tree",
+        "walkthrough-2",
+        "walkthrough-3",
+        "summary"
+      ]
+    },
+    {
+      "id": "C22",
+      "lessons": [
+        "chemistry-y11-m3-l2"
+      ],
+      "priority": "correct",
+      "problem": "Reactant count alone is used to classify synthesis, ignoring displacement and other multi-reactant reactions.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept"
+      ]
+    },
+    {
+      "id": "C23",
+      "lessons": [
+        "chemistry-y11-m3-l5"
+      ],
+      "priority": "correct",
+      "problem": "Reaction stoichiometry is used to guarantee a patient will not burp; limited-acid carbonate conditions are omitted.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C24",
+      "lessons": [
+        "chemistry-y11-m3-l12"
+      ],
+      "priority": "hold",
+      "problem": "Exact rate doubling is inferred without a rate law; final yield is declared unchanged without a limiting-reagent condition.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "worked-example",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C25",
+      "lessons": [
+        "chemistry-y11-m4-l3"
+      ],
+      "priority": "correct",
+      "problem": "The 1:1 neutralisation mole calculation is presented as a universal rule for polyprotic acids/bases.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept"
+      ]
+    },
+    {
+      "id": "C26",
+      "lessons": [
+        "chemistry-y11-m4-l4"
+      ],
+      "priority": "correct",
+      "problem": "Dissolution calorimetry swaps the sign of ΔT and omits the model behind using water mass rather than total solution.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "worked-example",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C27",
+      "lessons": [
+        "chemistry-y11-m4-l7"
+      ],
+      "priority": "correct",
+      "problem": "Standard-state pressure is given as 1 atm instead of current 100 kPa convention.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept"
+      ]
+    },
+    {
+      "id": "C28",
+      "lessons": [
+        "chemistry-y11-m4-l10"
+      ],
+      "priority": "correct",
+      "problem": "The ethyne hydrogenation Hess problem omits H₂ combustion enthalpy; the stated equations alone cannot yield the target.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C29",
+      "lessons": [
+        "chemistry-y11-m4-l13",
+        "chemistry-y11-m4-cp3"
+      ],
+      "priority": "correct",
+      "problem": "Standard ΔG° is confused with actual-composition spontaneity, and crossover-temperature approximations are unstated.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "walkthrough-3",
+        "quick-check",
+        "formula",
+        "worked-example",
+        "misconception",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C30",
+      "lessons": [
+        "chemistry-y12-m5-l4"
+      ],
+      "priority": "correct",
+      "problem": "An unstated K value is used to guarantee NH₃ outnumbers every reactant, without composition or temperature conditions.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "worked-example"
+      ]
+    },
+    {
+      "id": "C31",
+      "lessons": [
+        "chemistry-y12-m5-l7"
+      ],
+      "priority": "correct",
+      "problem": "The catalyst is called dead below a fixed temperature; a K value has no pressure/concentration convention stated.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-tradeoff",
+        "worked-example-2",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C32",
+      "lessons": [
+        "chemistry-y12-m5-l15"
+      ],
+      "priority": "correct",
+      "problem": "Leaching is said never to stop; a single cycad procedure is generalised without public attribution.",
+      "source": "https://www.anbg.gov.au/apu/plants/macrcomm.html",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C33",
+      "lessons": [
+        "chemistry-y12-m6-l13"
+      ],
+      "priority": "hold",
+      "problem": "Blood-buffer pKa is assigned to H₂CO₃ alone; acidaemia is conflated with acidosis; low ratio is assumed to mean raised CO₂.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK507807/",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-blood",
+        "quick-check",
+        "summary"
+      ]
+    },
+    {
+      "id": "C34",
+      "lessons": [
+        "chemistry-y12-m6-l15"
+      ],
+      "priority": "hold",
+      "problem": "Methyl orange 3.1–4.4 is said to bracket pH 5; exact EP bracketing is presented as the universal criterion.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "worked-example",
+        "summary"
+      ]
+    },
+    {
+      "id": "C35",
+      "lessons": [
+        "chemistry-y12-m6-l16",
+        "chemistry-y12-m6-l17"
+      ],
+      "priority": "hold",
+      "problem": "Equivalence pH is incorrectly calculated by arithmetically averaging the jump’s pH bounds.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-reading",
+        "worked-example",
+        "summary",
+        "concept-students",
+        "definition",
+        "worked-example",
+        "misconception",
+        "summary"
+      ]
+    },
+    {
+      "id": "C36",
+      "lessons": [
+        "chemistry-y12-m6-l18"
+      ],
+      "priority": "correct",
+      "problem": "Antacid assay omits other acid-reactive ingredients and dissolved CO₂ interference assumptions.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "worked-example",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C37",
+      "lessons": [
+        "chemistry-y12-m7-l1"
+      ],
+      "priority": "correct",
+      "problem": "General formulas omit ring/multiple-unsaturation limits; branches and multiple bonds have incorrect equal naming priority.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-general-formulas",
+        "formula-naming-rules",
+        "summary"
+      ]
+    },
+    {
+      "id": "C38",
+      "lessons": [
+        "chemistry-y12-m7-l2"
+      ],
+      "priority": "hold",
+      "problem": "An ester is described as a C–O–O peroxide linkage; methanol classification exception is omitted.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-alcohols-classification",
+        "worked-example"
+      ]
+    },
+    {
+      "id": "C39",
+      "lessons": [
+        "chemistry-y12-m7-l3"
+      ],
+      "priority": "correct",
+      "problem": "All C5+ alkanes are said to be liquids, ignoring higher solids and branched-isomer exceptions.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-alkane-reference"
+      ]
+    },
+    {
+      "id": "C40",
+      "lessons": [
+        "chemistry-y12-m7-l4"
+      ],
+      "priority": "correct",
+      "problem": "Alkanes are said to react only by substitution, contradicting combustion and cracking.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "formula-reactivity",
+        "summary"
+      ]
+    },
+    {
+      "id": "C41",
+      "lessons": [
+        "chemistry-y12-m7-l6",
+        "chemistry-y12-m7-l8"
+      ],
+      "priority": "correct",
+      "problem": "Industrial supported-phosphoric-acid ethene conditions are conflated with dilute sulfuric-acid laboratory hydration.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "definition",
+        "concept-hydration",
+        "worked-example",
+        "quick-check",
+        "concept-conditions",
+        "worked-example-2"
+      ]
+    },
+    {
+      "id": "C42",
+      "lessons": [
+        "chemistry-y12-m7-l7"
+      ],
+      "priority": "hold",
+      "problem": "Two arbitrary bromine-water portions are used to identify an alkyne without controlling sample amounts.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C43",
+      "lessons": [
+        "chemistry-y12-m7-l8"
+      ],
+      "priority": "correct",
+      "problem": "All alkyne hydration is said to give a ketone; ethyne gives ethanal under the described conditions.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-conditions",
+        "worked-example-2"
+      ]
+    },
+    {
+      "id": "C44",
+      "lessons": [
+        "chemistry-y12-m7-l9"
+      ],
+      "priority": "correct",
+      "problem": "Ethanol and ethane are called similar-mass controls; alcohol solubility has an absolute C5 cutoff and H-bonding is assumed identical.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-boiling-vs-alkane",
+        "concept-solubility",
+        "worked-example"
+      ]
+    },
+    {
+      "id": "C45",
+      "lessons": [
+        "chemistry-y12-m7-l10"
+      ],
+      "priority": "correct",
+      "problem": "Fermentation has a universal 35°C optimum and an absolute no-ethanol-with-oxygen rule; purified and raw product concentrations are compared.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4262006/",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "formula-fermentation",
+        "concept-comparison",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C46",
+      "lessons": [
+        "chemistry-y12-m7-l11"
+      ],
+      "priority": "correct",
+      "problem": "Fuel-bond breaking is implied to release energy; experimental enthalpy bias is described as inevitable.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "hook",
+        "concept-discrepancy",
+        "formula-trend",
+        "concept-biofuel",
+        "worked-example-2"
+      ]
+    },
+    {
+      "id": "C47",
+      "lessons": [
+        "chemistry-y12-m7-l12"
+      ],
+      "priority": "hold",
+      "problem": "Butan-1-ol is treated as the only primary C4 alcohol; ketones are declared impossible to oxidise under any conditions.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "definition",
+        "concept-substitution",
+        "formula-oxidation",
+        "worked-example",
+        "worked-example-2",
+        "summary"
+      ]
+    },
+    {
+      "id": "C48",
+      "lessons": [
+        "chemistry-y12-m7-l13"
+      ],
+      "priority": "hold",
+      "problem": "C4H8O is assumed to imply only carbonyl compounds and a positive Tollens result uniquely implies butanal.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-oxidation",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C49",
+      "lessons": [
+        "chemistry-y12-m7-l14"
+      ],
+      "priority": "correct",
+      "problem": "Dimer bonds must break simultaneously, ionisation is fixed at 1%, and Mg acid reaction is said not to fizz.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-structure",
+        "concept-weak-acid",
+        "worked-example"
+      ]
+    },
+    {
+      "id": "C50",
+      "lessons": [
+        "chemistry-y12-m7-l16",
+        "chemistry-y12-m7-l18"
+      ],
+      "priority": "correct",
+      "problem": "Amides cannot ever accept a proton and carboxylic acids are the strongest organic acid class; diagnostic candidate restrictions are missing.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-amide",
+        "quick-check",
+        "concept-pka",
+        "worked-example",
+        "misconception",
+        "quick-check",
+        "summary"
+      ]
+    },
+    {
+      "id": "C51",
+      "lessons": [
+        "chemistry-y12-m7-l21"
+      ],
+      "priority": "hold",
+      "problem": "Reverse-polymer method adds extra H and violates carbon valency; PVC/recycling generalisations require correction.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-mechanism",
+        "definition",
+        "concept-thermo",
+        "worked-example",
+        "misconception",
+        "quick-check",
+        "summary"
+      ]
+    },
+    {
+      "id": "C52",
+      "lessons": [
+        "chemistry-y12-m7-l22",
+        "chemistry-y12-m7-l23"
+      ],
+      "priority": "correct",
+      "problem": "Polyamides are assumed readily biodegradable, thermosets categorically unrecyclable, and finite-chain byproduct/end-group approximations are unstated.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-vs-addition",
+        "worked-example",
+        "concept-structure",
+        "concept-environment"
+      ]
+    },
+    {
+      "id": "C53",
+      "lessons": [
+        "chemistry-y12-m8-l1"
+      ],
+      "priority": "correct",
+      "problem": "Back-titration composition and CO₂ assumptions are missing; reported answers drop justified significant figures.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "worked-example",
+        "worked-example-2"
+      ]
+    },
+    {
+      "id": "C54",
+      "lessons": [
+        "chemistry-y12-m8-l3"
+      ],
+      "priority": "hold",
+      "problem": "Precipitate colour alone is treated as unique identification without interference controls or restricted candidates.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept",
+        "worked-example",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C55",
+      "lessons": [
+        "chemistry-y12-m8-l4"
+      ],
+      "priority": "correct",
+      "problem": "UV-visible spectroscopy is restricted to visibly coloured species; conventional AAS limits are generalised to all instruments.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept",
+        "summary"
+      ]
+    },
+    {
+      "id": "C56",
+      "lessons": [
+        "chemistry-y12-m8-l6"
+      ],
+      "priority": "correct",
+      "problem": "Total coliforms are equated with a specific faecal-contamination indicator.",
+      "source": "https://guidelines.nhmrc.gov.au/australian-drinking-water-guidelines/part-5/microorganisms/microbial-indicators/total-coliforms",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "definition",
+        "quick-check",
+        "summary"
+      ]
+    },
+    {
+      "id": "C57",
+      "lessons": [
+        "chemistry-y12-m8-l7"
+      ],
+      "priority": "correct",
+      "problem": "Unreferenced BOD bands are presented as universal pollution standards; the simple formula lacks assay assumptions.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-bod",
+        "quick-check",
+        "summary"
+      ]
+    },
+    {
+      "id": "C58",
+      "lessons": [
+        "chemistry-y12-m8-l8"
+      ],
+      "priority": "hold",
+      "problem": "Arsenic drinking-water guideline is ten times too high and arsenic biomagnification is incorrectly asserted.",
+      "source": "https://guidelines.nhmrc.gov.au/australian-drinking-water-guidelines/part-5/physical-chemical-characteristics/arsenic",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "hook",
+        "concept-biomag",
+        "worked-example"
+      ]
+    },
+    {
+      "id": "C59",
+      "lessons": [
+        "chemistry-y12-m8-l9"
+      ],
+      "priority": "hold",
+      "problem": "Invented observations of blooms/fish deaths are inferred from a three-site concentration table; living algae respiration is omitted.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-chain",
+        "concept-measuring",
+        "worked-example",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C60",
+      "lessons": [
+        "chemistry-y12-m8-l10"
+      ],
+      "priority": "correct",
+      "problem": "Chloramine residual is recommended as sufficient strong disinfection and a universal lower-DBP solution.",
+      "source": "https://guidelines.nhmrc.gov.au/australian-drinking-water-guidelines",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C61",
+      "lessons": [
+        "chemistry-y12-m8-l11"
+      ],
+      "priority": "hold",
+      "problem": "Carboxyl retention is treated as proof of analgesia and ester formation as proof of improved stomach safety.",
+      "source": "https://openstax.org/books/organic-chemistry/pages/15-chemistry-matters-aspirin-nsaids-and-cox-2-inhibitors",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "hook",
+        "concept-pharmacophore",
+        "worked-example",
+        "quick-check",
+        "summary"
+      ]
+    },
+    {
+      "id": "C62",
+      "lessons": [
+        "chemistry-y12-m8-l12"
+      ],
+      "priority": "correct",
+      "problem": "Drug pKa interpretations omit acid/base identity and confuse solubility with guaranteed absorption.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "hook",
+        "concept-salts",
+        "quick-check",
+        "summary"
+      ]
+    },
+    {
+      "id": "C63",
+      "lessons": [
+        "chemistry-y12-m8-l13"
+      ],
+      "priority": "hold",
+      "problem": "Thalidomide good-R/bad-S model omits in-vivo interconversion; zero optical rotation is treated as proof of a racemate.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/7702998/",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "hook",
+        "concept-thalidomide",
+        "quick-check",
+        "summary"
+      ]
+    },
+    {
+      "id": "C64",
+      "lessons": [
+        "chemistry-y12-m8-l14"
+      ],
+      "priority": "correct",
+      "problem": "Rule-of-Five cut-offs wrongly exclude boundary values; codeine is called wholly inactive; patch suitability is assumed.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/11259830/",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-lipinski",
+        "concept-firstpass",
+        "worked-example",
+        "summary"
+      ]
+    },
+    {
+      "id": "C65",
+      "lessons": [
+        "chemistry-y12-m8-l15"
+      ],
+      "priority": "correct",
+      "problem": "Atom-economy formula omits stoichiometric coefficients and E-factor alone is claimed to establish overall sustainability.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-development",
+        "definition",
+        "concept-metrics",
+        "worked-example-2",
+        "concept-catalysts",
+        "quick-check",
+        "summary"
+      ]
+    },
+    {
+      "id": "C66",
+      "lessons": [
+        "chemistry-y12-m8-l16"
+      ],
+      "priority": "correct",
+      "problem": "Charring before melting is treated as unique proof of a cross-linked thermoset.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C67",
+      "lessons": [
+        "chemistry-y12-m8-l11",
+        "chemistry-y12-m8-l12",
+        "chemistry-y12-m8-l13",
+        "chemistry-y12-m8-l14"
+      ],
+      "priority": "correct",
+      "problem": "Medicine-action/delivery metadata invents required 2017 syllabus statements; label enrichment and retain core spectroscopy coverage gap.",
+      "source": "https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "hook",
+        "concept-pharmacophore",
+        "worked-example",
+        "quick-check",
+        "summary",
+        "hook",
+        "concept-salts",
+        "quick-check",
+        "summary",
+        "hook",
+        "concept-thalidomide",
+        "quick-check",
+        "summary",
+        "concept-lipinski",
+        "concept-firstpass",
+        "worked-example",
+        "summary"
+      ]
+    },
+    {
+      "id": "C68",
+      "lessons": [
+        "chemistry-y11-m1-l2"
+      ],
+      "priority": "hold",
+      "problem": "A boiling plateau proves purity and CO₂ sublimation is called melting.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept",
+        "formula",
+        "worked-example",
+        "worked-example-2",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C69",
+      "lessons": [
+        "chemistry-y12-m5-l2"
+      ],
+      "priority": "hold",
+      "problem": "ΔG versus ΔG° is conflated; finite favourability is called fundamentally irreversible and glucose entropy is inferred without adequate data.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-spectrum",
+        "concept-entropy-driven",
+        "worked-example",
+        "worked-example-2",
+        "quick-check"
+      ]
+    },
+    {
+      "id": "C70",
+      "lessons": [
+        "chemistry-y11-m2-l3"
+      ],
+      "priority": "correct",
+      "problem": "Mass spectrometry is incorrectly described as direct elemental percentage-composition analysis.",
+      "source": "https://openstax.org/details/books/chemistry-2e",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "hook"
+      ]
+    },
+    {
+      "id": "C71",
+      "lessons": [
+        "chemistry-y12-m8-l9"
+      ],
+      "priority": "correct",
+      "problem": "Ion chromatography for nitrate/phosphate is falsely described as explicitly named in the 2017 syllabus.",
+      "source": "https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017",
+      "status": "Implemented in scripts; structural checks pass; narration/rendered review pending.",
+      "changedScenes": [
+        "concept-chain",
+        "concept-measuring",
+        "worked-example",
+        "quick-check"
+      ]
+    }
+  ],
+  "changedNarrationScenes": [
+    {
+      "lessonId": "chemistry-y11-m1-l9",
+      "sceneId": "hook",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l9",
+      "sceneId": "concept",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l9",
+      "sceneId": "formula",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l9",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l1",
+      "sceneId": "definition",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l1",
+      "sceneId": "concept-scale",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l1",
+      "sceneId": "concept-carbon12",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l1a",
+      "sceneId": "definition",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l1a",
+      "sceneId": "concept-scale",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l1a",
+      "sceneId": "concept-carbon12",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l15",
+      "sceneId": "concept-ordering",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l14",
+      "sceneId": "concept-isotopes",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l14",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l7",
+      "sceneId": "formula",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l7",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l7",
+      "sceneId": "misconception",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l7",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l3",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l3",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l12",
+      "sceneId": "concept-energy",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l12",
+      "sceneId": "concept-water",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l12",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l12",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l8",
+      "sceneId": "concept",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l8",
+      "sceneId": "worked-example-2",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m4-l7",
+      "sceneId": "concept",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m4-l3",
+      "sceneId": "concept",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m4-l13",
+      "sceneId": "formula",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m4-l13",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m4-l13",
+      "sceneId": "misconception",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m4-l13",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m4-cp3",
+      "sceneId": "walkthrough-3",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m4-cp3",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m3-l12",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m3-l12",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m3-cp3",
+      "sceneId": "decision-tree",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m3-cp3",
+      "sceneId": "walkthrough-2",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m3-cp3",
+      "sceneId": "walkthrough-3",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m3-cp3",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m3-l5",
+      "sceneId": "concept",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m3-l5",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l2",
+      "sceneId": "definition",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l2",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l2",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l5",
+      "sceneId": "concept-lists",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l5",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l5",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m5-l4",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m5-l6",
+      "sceneId": "concept-catalyst",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m5-l6",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m5-l7",
+      "sceneId": "concept-tradeoff",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m5-l7",
+      "sceneId": "worked-example-2",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m5-l7",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l1",
+      "sceneId": "concept-general-formulas",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l1",
+      "sceneId": "formula-naming-rules",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l1",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l4",
+      "sceneId": "formula-reactivity",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l4",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l12",
+      "sceneId": "definition",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l12",
+      "sceneId": "concept-substitution",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l12",
+      "sceneId": "formula-oxidation",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l12",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l12",
+      "sceneId": "worked-example-2",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l12",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l14",
+      "sceneId": "concept-structure",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l14",
+      "sceneId": "concept-weak-acid",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l14",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l18",
+      "sceneId": "concept-pka",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l18",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l18",
+      "sceneId": "misconception",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l18",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l18",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l21",
+      "sceneId": "concept-thermo",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l21",
+      "sceneId": "misconception",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l21",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l22",
+      "sceneId": "concept-vs-addition",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l22",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l23",
+      "sceneId": "concept-structure",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l23",
+      "sceneId": "concept-environment",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l7",
+      "sceneId": "concept-bod",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l7",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l7",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l11",
+      "sceneId": "hook",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l11",
+      "sceneId": "concept-pharmacophore",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l11",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l11",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l11",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l12",
+      "sceneId": "hook",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l12",
+      "sceneId": "concept-salts",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l12",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l12",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l13",
+      "sceneId": "hook",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l13",
+      "sceneId": "concept-thalidomide",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l13",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l13",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l14",
+      "sceneId": "concept-lipinski",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l14",
+      "sceneId": "concept-firstpass",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l14",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l14",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l15",
+      "sceneId": "concept-development",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l15",
+      "sceneId": "definition",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l15",
+      "sceneId": "concept-metrics",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l15",
+      "sceneId": "worked-example-2",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l15",
+      "sceneId": "concept-catalysts",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l15",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l15",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l16",
+      "sceneId": "concept-reading",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l16",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l16",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l17",
+      "sceneId": "concept-students",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l17",
+      "sceneId": "definition",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l17",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l17",
+      "sceneId": "misconception",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l17",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l6",
+      "sceneId": "definition",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l6",
+      "sceneId": "concept-hydration",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l6",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l6",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l8",
+      "sceneId": "concept-conditions",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l8",
+      "sceneId": "worked-example-2",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l11",
+      "sceneId": "hook",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l11",
+      "sceneId": "concept-discrepancy",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l11",
+      "sceneId": "formula-trend",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l11",
+      "sceneId": "concept-biofuel",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l11",
+      "sceneId": "worked-example-2",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l16",
+      "sceneId": "concept-amide",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l16",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l13",
+      "sceneId": "concept-blood",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l13",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l13",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l1",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l4",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l4",
+      "sceneId": "worked-example-2",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l5",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l8",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l10",
+      "sceneId": "concept",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l10",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l10",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l17",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l2",
+      "sceneId": "concept",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l2",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l4",
+      "sceneId": "concept",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l4",
+      "sceneId": "worked-example-2",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l10",
+      "sceneId": "concept",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l10",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l16",
+      "sceneId": "worked-example-2",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l16",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l17",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m3-cp1",
+      "sceneId": "decision-tree",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m3-cp1",
+      "sceneId": "walkthrough-3",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m3-l2",
+      "sceneId": "concept",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m4-l4",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m4-l4",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m4-l10",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m5-l15",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l15",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l15",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l18",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m6-l18",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l2",
+      "sceneId": "concept-alcohols-classification",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l2",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l3",
+      "sceneId": "concept-alkane-reference",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l7",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l9",
+      "sceneId": "concept-boiling-vs-alkane",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l9",
+      "sceneId": "concept-solubility",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l9",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l10",
+      "sceneId": "formula-fermentation",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l10",
+      "sceneId": "concept-comparison",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l10",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l13",
+      "sceneId": "concept-oxidation",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m7-l13",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l1",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l1",
+      "sceneId": "worked-example-2",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l3",
+      "sceneId": "concept",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l3",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l3",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l4",
+      "sceneId": "concept",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l4",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l6",
+      "sceneId": "definition",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l6",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l6",
+      "sceneId": "summary",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l8",
+      "sceneId": "hook",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l8",
+      "sceneId": "concept-biomag",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l8",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l9",
+      "sceneId": "concept-chain",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l9",
+      "sceneId": "concept-measuring",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l9",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l9",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l10",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m8-l16",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l2",
+      "sceneId": "concept",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l2",
+      "sceneId": "formula",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l2",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l2",
+      "sceneId": "worked-example-2",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m1-l2",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m5-l2",
+      "sceneId": "concept-spectrum",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m5-l2",
+      "sceneId": "concept-entropy-driven",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m5-l2",
+      "sceneId": "worked-example",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m5-l2",
+      "sceneId": "worked-example-2",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y12-m5-l2",
+      "sceneId": "quick-check",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    },
+    {
+      "lessonId": "chemistry-y11-m2-l3",
+      "sceneId": "hook",
+      "status": "regenerate audio, word captions and reveal alignment; rendered review pending"
+    }
+  ],
+  "completedUTC": "2026-09-29",
+  "baselineCommit": "b3796f22c311e30df3778732a9cd254cc5029a22"
+}

@@ -63,7 +63,7 @@
       "id": "definition",
       "type": "definition",
       "heading": "One mole = 6.022 × 10²³ particles",
-      "body": "One mole is the amount of substance containing exactly 6.022 × 10²³ elementary entities.",
+      "body": "One mole is the amount of substance containing exactly 6.02214076 × 10²³ elementary entities.",
       "secondary": "Those entities can be atoms, molecules, ions, or formula units — whatever you are counting.",
       "callout": "New counting word: mol.",
       "diagram": {
@@ -91,66 +91,59 @@
           ]
         ]
       },
-      "durationInFrames": 1174,
-      "caption": "One mole contains exactly 6.022 × 10²³ particles — this is Avogadro's number.",
+      "durationInFrames": 1209,
+      "caption": "One mole contains exactly 6.02214076 × 10²³ particles — this is Avogadro's number.",
       "voiceover": {
-        "text": "Alright, here's the actual definition you need to lock in. One mole is the amount of substance containing exactly six-point-zero-two-two times ten to the twenty-three particles. Those particles can be anything you're counting. Atoms, if you're dealing with an element. Molecules, if it's a compound. Or ions and formula units, depending on the substance. The number itself has a name: Avogadro's number. And its symbol is capital N with a little A subscript. You'll see that symbol everywhere in this module, so get comfortable with it now."
+        "text": "Alright, here's the actual definition you need to lock in. One mole is the amount of substance containing approximately six-point-zero-two-two times ten to the twenty-three particles. Those particles can be anything you're counting. Atoms, if you're dealing with an element. Molecules, if it's a compound. Or ions and formula units, depending on the substance. The number itself has a name: Avogadro's number. And its symbol is capital N with a little A subscript. You'll see that symbol everywhere in this module, so get comfortable with it now."
       }
     },
     {
       "id": "concept-scale",
       "type": "concept",
       "heading": "How big is 6.022 × 10²³?",
-      "body": "Avogadro's number of sand grains would cover all of Australia 100 metres deep.",
-      "secondary": "The number of stars in the observable universe (~10²³) is still 10× smaller than Nₐ.",
-      "callout": "Huge number. Practical shortcut.",
-      "diagram": {
-        "type": "barChart",
-        "bars": [
-          {
-            "label": "Big Bang",
-            "value": 18
-          },
-          {
-            "label": "Grass on Earth",
-            "value": 19
-          },
-          {
-            "label": "Stars in space",
-            "value": 23
-          },
-          {
-            "label": "Avogadro's Nₐ",
-            "value": 24
-          }
-        ],
-        "unit": "log₁₀ scale"
-      },
+      "body": "The mole is a very large counting unit. Specify the entities being counted.",
+      "secondary": "",
+      "callout": "A large count bridges particles and measurable quantities.",
       "durationInFrames": 1269,
-      "caption": "Avogadro's number sits above the number of stars in the observable universe.",
+      "caption": "A large count bridges particles and measurable quantities.",
       "voiceover": {
-        "text": "Now let's actually appreciate how big Avogadro's number is, because the digits don't really land until you picture them. If you had Avogadro's number of grains of sand, they'd cover the entire continent of Australia to a depth of one hundred metres. Compare that to the number of stars in the observable universe? About ten to the twenty-three, still ten times smaller. And the number of seconds since the Big Bang? Only four times ten to the seventeen. Avogadro's number is genuinely one of the largest numbers you'll meet anywhere in science."
-      }
+        "text": "How big is 6.022 × 10²³? The mole is a very large counting unit. Specify the entities being counted. 1 mol contains exactly 6.02214076 × 10²³ specified entities. Use rounded 6.022 × 10²³ in these school calculations. A dozen counts 12; a mole counts Nₐ entities. "
+      },
+      "bullets": [
+        {
+          "text": "1 mol contains exactly 6.02214076 × 10²³ specified entities."
+        },
+        {
+          "text": "Use rounded 6.022 × 10²³ in these school calculations."
+        },
+        {
+          "text": "A dozen counts 12; a mole counts Nₐ entities."
+        }
+      ]
     },
     {
       "id": "concept-carbon12",
       "type": "concept",
-      "heading": "Why 6.022 × 10²³ specifically?",
-      "body": "One mole of carbon-12 atoms has a mass of exactly 12 grams.",
+      "heading": "The current SI definition",
+      "body": "One mole contains exactly 6.02214076 × 10²³ specified entities.",
       "secondary": "This links atomic mass to real mass: molar mass in g/mol equals relative atomic mass from the periodic table.",
       "callout": "This is why the periodic table is useful.",
-      "diagram": {
-        "type": "balance",
-        "leftLabel": "1 mol C-12 atoms",
-        "rightLabel": "12.000 g",
-        "leftValue": 1,
-        "rightValue": 1
-      },
       "durationInFrames": 1593,
-      "caption": "Nₐ was chosen so that 1 mol of carbon-12 has a mass of exactly 12 grams.",
+      "caption": "Distinguish the current mole definition from the carbon-12 mass reference.",
       "voiceover": {
-        "text": "So a fair question, why this particular number? Why six-point-zero-two-two times ten to the twenty-three, and not say ten to the twenty-four? Well, it wasn't random. The mole was defined so that exactly one mole of carbon-twelve atoms weighs exactly twelve grams. That was a deliberate design choice, and it pays off massively. Because of it, the molar mass of any element in grams per mole equals its relative atomic mass straight from the periodic table. Take hydrogen, atomic mass one, so molar mass one gram per mole. Same logic for carbon: twelve on the table, twelve grams per mole. Same for oxygen: sixteen and sixteen. The pattern holds for every element. No conversion required."
-      }
+        "text": "Historically, the mole was defined using the number of atoms in twelve grams of carbon twelve. Since twenty nineteen, the SI definition fixes the count directly: one mole contains exactly six point zero two two one four zero seven six times ten to the twenty three specified entities. For school calculations, six point zero two two times ten to the twenty three is a rounded value. Specify what is counted: atoms, molecules, ions or formula units. Carbon twelve remains the reference for relative atomic mass, but is no longer the definition of the mole."
+      },
+      "bullets": [
+        {
+          "text": "Current SI definition fixes the particle count directly."
+        },
+        {
+          "text": "School calculations commonly round Nₐ to 6.022 × 10²³ mol⁻¹."
+        },
+        {
+          "text": "The 12 g carbon-12 definition is historical."
+        }
+      ]
     },
     {
       "id": "misconception-nvn",

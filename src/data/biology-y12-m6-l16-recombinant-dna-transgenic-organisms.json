@@ -41,13 +41,13 @@
       "id": "hook",
       "type": "hook",
       "heading": "How bacteria make human insulin",
-      "body": "Before 1982, insulin came from 8,000 animal pancreases per pound. Then bacteria were taught to make the human protein.",
+      "body": "Recombinant expression systems produce human-sequence insulin at scale.",
       "callout": "Take a gene out of one organism, and a completely different one makes its protein.",
       "image": "bioM6L16RecombinantInsulin",
-      "durationInFrames": 870,
-      "caption": "Humulin frames recombinant DNA: a human gene expressed in bacteria.",
+      "durationInFrames": 939,
+      "caption": "Engineered expression constructs support recombinant insulin production.",
       "voiceover": {
-        "text": "On the twenty-eighth of October 1982, the FDA approved Humulin, the first recombinant human protein medicine. Before that, insulin was extracted from animals, roughly eight thousand pig or cow pancreases for a single pound of it. Genentech and Eli Lilly instead inserted the human insulin gene into bacterial plasmids, and the bacteria produced human-sequence insulin at scale. Today, about ninety-five percent of the insulin used by one point five million Australians comes from that same basic toolchain. So the question for today is, how do you take a gene out of one organism and get a completely different organism to make its protein?"
+        "text": "Recombinant DNA allows host cells to produce useful proteins. Human-sequence insulin can be made using engineered expression constructs rather than extracted from animal tissues. In a bacterial system, the coding sequence must be intron-free and linked to appropriate expression controls. The protein may require processing and purification. Today we follow the logic of obtaining suitable DNA, assembling the construct, transferring it and producing the desired product."
       }
     },
     {
@@ -56,10 +56,18 @@
       "heading": "Recombinant DNA is a toolchain",
       "body": "Recombinant DNA technology is not one event. It is a sequence of four steps using specific tools.",
       "bullets": [
-        {"text": "Step 1: cut the chosen DNA and the vector with restriction enzymes."},
-        {"text": "Step 2: join them with DNA ligase to form recombinant DNA."},
-        {"text": "Step 3: insert the recombinant vector into a host cell."},
-        {"text": "Step 4: the host copies or expresses the gene, making a protein or transgenic organism."}
+        {
+          "text": "Step 1: cut the chosen DNA and the vector with restriction enzymes."
+        },
+        {
+          "text": "Step 2: join them with DNA ligase to form recombinant DNA."
+        },
+        {
+          "text": "Step 3: insert the recombinant vector into a host cell."
+        },
+        {
+          "text": "Step 4: the host copies or expresses the gene, making a protein or transgenic organism."
+        }
       ],
       "secondary": "This is more direct than selective breeding, which only reshuffles alleles that are already present. Here, a chosen piece of DNA is added.",
       "callout": "Cut, join, insert, express, in that order.",
@@ -114,11 +122,21 @@
       "type": "definition",
       "heading": "The words you need",
       "bullets": [
-        {"text": "Recombinant DNA: DNA formed by combining genetic material from different sources."},
-        {"text": "Restriction enzyme: an enzyme that cuts DNA at a specific recognition sequence."},
-        {"text": "DNA ligase: an enzyme that joins DNA fragments together."},
-        {"text": "Vector: a carrier, such as a plasmid, used to move DNA into a host cell."},
-        {"text": "Transgenic organism: an organism containing inserted DNA from another source."}
+        {
+          "text": "Recombinant DNA: DNA formed by combining genetic material from different sources."
+        },
+        {
+          "text": "Restriction enzyme: an enzyme that cuts DNA at a specific recognition sequence."
+        },
+        {
+          "text": "DNA ligase: an enzyme that joins DNA fragments together."
+        },
+        {
+          "text": "Vector: a carrier, such as a plasmid, used to move DNA into a host cell."
+        },
+        {
+          "text": "Transgenic organism: an organism containing inserted DNA from another source."
+        }
       ],
       "callout": "Restriction enzymes cut; ligase joins; the vector carries.",
       "durationInFrames": 930,
@@ -133,9 +151,15 @@
       "heading": "What makes an organism transgenic",
       "body": "A transgenic organism carries inserted DNA from another source and may express a new trait.",
       "bullets": [
-        {"text": "It contains DNA directly introduced from another organism or source."},
-        {"text": "That new DNA can give it a trait it could not inherit naturally."},
-        {"text": "This differs from selective breeding, where only existing alleles are reshuffled."}
+        {
+          "text": "It contains DNA directly introduced from another organism or source."
+        },
+        {
+          "text": "That new DNA can give it a trait it could not inherit naturally."
+        },
+        {
+          "text": "This differs from selective breeding, where only existing alleles are reshuffled."
+        }
       ],
       "secondary": "Agricultural example: transgenic crops engineered for traits such as pest resistance. Medical example: insulin and other proteins produced in host cells.",
       "callout": "New DNA added, not just old alleles rearranged.",
@@ -192,18 +216,18 @@
       "type": "workedExample",
       "heading": "Make bacteria produce human insulin",
       "question": "Describe how recombinant DNA technology is used to produce human insulin in bacteria. Include the roles of restriction enzymes, the plasmid, DNA ligase and the host cell.",
-      "coachNote": "Sequence the four steps and make the role of each tool explicit, including why the same enzyme is used twice.",
+      "coachNote": "Explain intron-free coding DNA, compatible ends, expression and product processing.",
       "steps": [
-        "Cut the human insulin gene out of human DNA using a restriction enzyme.",
-        "Cut the bacterial plasmid with the same restriction enzyme, so both have complementary sticky ends.",
-        "Join the insulin gene into the plasmid with DNA ligase, forming recombinant DNA.",
-        "Insert the recombinant plasmid into a host cell, E. coli, which multiplies.",
-        "Answer: the bacteria express the gene and produce human insulin, which is then extracted and purified."
+        "Obtain intron-free insulin coding DNA: synthetic DNA or cDNA from processed mRNA.",
+        "Prepare an expression plasmid with a bacterial promoter and compatible donor/vector ends.",
+        "DNA ligase seals the joined backbone, forming recombinant DNA.",
+        "Transform a suitable E. coli host, then grow and express the construct.",
+        "Process the expressed product as needed to make mature insulin; purify and test it."
       ],
-      "durationInFrames": 1140,
-      "caption": "Cut the gene and plasmid with the same enzyme, ligate, transform E. coli, then express and purify insulin.",
+      "durationInFrames": 1530,
+      "caption": "Intron-free coding sequence, compatible ends, expression, processing and purification.",
       "voiceover": {
-        "text": "Let's describe the classic case, making human insulin in bacteria. First, cut the human insulin gene out of human DNA using a restriction enzyme. Second, and this is the step people skip, cut the bacterial plasmid with the same restriction enzyme, so that both the gene and the plasmid end up with complementary sticky ends that can pair. Third, join the insulin gene into the plasmid using DNA ligase, sealing it to form recombinant DNA. Fourth, insert that recombinant plasmid into a host cell, typically E. coli, which then multiplies rapidly. And finally, the bacteria express the gene and produce human insulin, which is harvested and purified for medical use. The thing to stress in an exam is why the same enzyme is used twice, it's the only way to get matching sticky ends."
+        "text": "To produce insulin using bacteria, first obtain an intron-free insulin coding sequence, using synthetic DNA or complementary DNA from processed messenger RNA. A human genomic gene generally contains introns that E coli cannot splice. Prepare a plasmid expression vector with a bacterial promoter and compatible ends. Cutting donor and vector with the same restriction enzyme is one way to obtain compatible sticky ends, but different enzymes can also produce compatible ends. DNA ligase seals the joined DNA backbone. Introduce the plasmid into a suitable host, grow the cells and express the construct. The product may require processing to form mature insulin, followed by purification and quality testing. The exact production design varies."
       }
     },
     {
@@ -211,32 +235,30 @@
       "type": "misconception",
       "heading": "The sticky-ends trap",
       "body": "Trap: thinking any restriction enzyme can join two pieces of DNA from different sources.",
-      "secondary": "Restriction enzymes cut at specific recognition sequences and leave characteristic sticky ends. Successful ligation needs both the donor fragment and the vector cut with the same enzyme, so they have complementary sticky ends that base-pair before DNA ligase seals the join.",
-      "mistakeTag": "Why mismatched cuts will not ligate",
-      "callout": "Same enzyme both sides, or the ends will not pair.",
-      "durationInFrames": 900,
-      "caption": "Donor and vector must be cut with the same enzyme to give complementary sticky ends.",
+      "secondary": "Successful ligation requires compatible ends and suitable reaction conditions. Same-enzyme cuts are one option; different enzymes can give compatible ends, and blunt ends can be ligated.",
+      "mistakeTag": "Compatible ends are the criterion",
+      "callout": "Inspect the ends, not only the enzyme names.",
+      "durationInFrames": 939,
+      "caption": "Restriction enzymes cut; ligase seals compatible DNA ends.",
       "voiceover": {
-        "text": "Here's the trap that quietly loses marks. Thinking that any restriction enzyme can be used to join two pieces of DNA from different sources. It can't. Restriction enzymes cut at specific recognition sequences, and each one leaves a characteristic sticky end, a short single-stranded overhang. For ligation to work, both the donor fragment and the vector have to be cut with the same restriction enzyme, so that they end up with complementary sticky ends that can base-pair with each other. Only then can DNA ligase come in and seal the join. If you cut them with different enzymes, the ends don't match, and they simply won't fit together. So the rule is, same enzyme on both sides, or the ends will never pair."
+        "text": "Restriction enzymes cut DNA; DNA ligase joins its backbone. The requirement for a straightforward sticky-end ligation is compatible ends, not necessarily the same enzyme name. The same enzyme is a convenient way to generate complementary overhangs. Different enzymes can sometimes generate compatible overhangs too. Blunt-end ligation is also possible under suitable conditions. Always inspect the actual ends and the intended construct, including orientation and expression requirements."
       }
     },
     {
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "A student cuts the target gene with one restriction enzyme and the plasmid with a different one, then adds DNA ligase. The gene will not insert. Why, and what is the fix?",
-      "pausePrompt": "Pause and reason it through.",
+      "question": "A donor has a 5′-AATT overhang and a vector a 5′-GATC overhang. Why is direct sticky-end ligation unsuitable, and how could the ends be prepared?",
+      "pausePrompt": "Pause: inspect the sequences.",
       "answerSteps": [
-        "Each restriction enzyme cuts at its own recognition sequence and leaves its own sticky-end shape.",
-        "Cutting the gene and plasmid with different enzymes gives non-complementary sticky ends.",
-        "The ends cannot base-pair, so DNA ligase has nothing aligned to seal.",
-        "Fix: cut both the gene and the plasmid with the same restriction enzyme.",
-        "Answer: mismatched sticky ends prevent insertion; use the same enzyme on both so the ends are complementary."
+        "The actual overhang sequences are incompatible.",
+        "Prepare matching complementary ends using suitable cuts or a validated assembly method.",
+        "Same-enzyme cuts are one option; different enzymes can also produce compatible ends."
       ],
-      "durationInFrames": 960,
-      "caption": "Different enzymes give non-complementary ends; use the same enzyme on gene and plasmid.",
+      "durationInFrames": 990,
+      "caption": "Actual end compatibility determines whether sticky ends can pair.",
       "voiceover": {
-        "text": "Quick check. A student cuts the target gene with one restriction enzyme, and the plasmid with a different one, then adds DNA ligase, and the gene simply won't insert. Why, and what's the fix? Pause and reason it through. Okay. Each restriction enzyme cuts at its own specific recognition sequence and leaves its own particular sticky-end shape. So cutting the gene with one enzyme and the plasmid with a different enzyme gives you two sets of sticky ends that don't match. Because the ends aren't complementary, they can't base-pair, and DNA ligase has nothing properly aligned to seal together. The fix is straightforward, cut both the gene and the plasmid with the same restriction enzyme. Then the sticky ends are complementary, they pair up, and ligase can do its job."
+        "text": "Quick check. A donor has a five-prime A A T T overhang, while the vector has a five-prime G A T C overhang. Can they form the intended complementary sticky-end join directly? Pause. No: those overhangs are incompatible. Prepare donor and vector ends that match, using a suitable enzyme pair or another validated assembly method. Different enzyme names alone would not prove incompatibility; the actual overhang sequences are the evidence."
       }
     },
     {
@@ -247,14 +269,14 @@
         "Recombinant DNA is a four-step toolchain: cut, join, insert, express.",
         "Restriction enzymes cut, DNA ligase joins, a vector carries the DNA in.",
         "A transgenic organism has new DNA directly inserted, not just alleles reshuffled.",
-        "The same enzyme must cut donor and vector for complementary sticky ends.",
+        "Donor and vector need compatible ends; using the same enzyme is one way.",
         "The method serves both agriculture (pest-resistant crops) and medicine (insulin)."
       ],
       "finalPrompt": "Describing recombinant DNA? Cut, join, insert, express, and stress the matching sticky ends.",
-      "durationInFrames": 870,
+      "durationInFrames": 1479,
       "caption": "Five takeaways: four-step toolchain, the tools, transgenic definition, sticky-ends rule, agriculture and medicine.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, recombinant DNA is a four-step toolchain, cut, join, insert, express. Second, restriction enzymes cut, DNA ligase joins, and a vector carries the DNA into the host. Third, a transgenic organism has new DNA directly inserted, not just existing alleles reshuffled like in selective breeding. Fourth, the same restriction enzyme must cut both the donor and the vector, so the sticky ends are complementary. And fifth, this one method serves both agriculture, with pest-resistant crops, and medicine, with proteins like insulin. Whenever you describe recombinant DNA, walk through cut, join, insert, express, and stress those matching sticky ends. See you next lesson."
+        "text": "Let's lock it in. Five things to take away. First, recombinant DNA is a four-step toolchain, cut, join, insert, express. Second, restriction enzymes cut, DNA ligase joins, and a vector carries the DNA into the host. Third, a transgenic organism has new DNA directly inserted, not just existing alleles reshuffled like in selective breeding. Fourth, the donor and vector need compatible ends; same-enzyme cuts are one way to produce them. And fifth, this one method serves both agriculture, with pest-resistant crops, and medicine, with proteins like insulin. Whenever you describe recombinant DNA, walk through cut, join, insert, express, and stress those matching sticky ends. See you next lesson."
       }
     }
   ]

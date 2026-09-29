@@ -11,7 +11,12 @@
     "explore the similarities and differences between the nature of intermolecular and intramolecular bonds and the strength of the forces associated with each, in order to explain the:"
   ],
   "moduleLessonCount": 20,
-  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-5", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH11-8",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "What binds atoms together in elements and compounds?",
   "lessonIntent": "Students can identify the IMFs in a molecule and use them to predict and explain boiling-point trends.",
   "examSkill": "Name all IMFs present (dispersion is always there), identify the strongest, and rank boiling points, accounting for the size effect.",
@@ -50,24 +55,46 @@
       "body": "From weakest to strongest, three forces act between molecules, and dispersion is always present.",
       "diagram": {
         "type": "table",
-        "headers": ["Force", "Present in", "Strength"],
+        "headers": [
+          "Force",
+          "Present in",
+          "Strength"
+        ],
         "rows": [
-          ["Dispersion", "All molecules", "Weakest (grows with size)"],
-          ["Dipole–dipole", "Polar molecules only", "Moderate"],
-          ["Hydrogen bonding", "H bonded to N, O, or F", "Strongest"]
+          [
+            "Dispersion",
+            "All molecules",
+            "Weakest (grows with size)"
+          ],
+          [
+            "Dipole–dipole",
+            "Polar molecules only",
+            "Moderate"
+          ],
+          [
+            "Hydrogen bonding",
+            "H bonded to N, O, or F",
+            "Strongest"
+          ]
         ]
       },
       "bullets": [
-        {"text": "Dispersion: temporary dipoles from fluctuating electron clouds — in every molecule."},
-        {"text": "Dipole–dipole: permanent partial charges in polar molecules."},
-        {"text": "Hydrogen bonding: needs H on N, O, or F, plus an adjacent lone pair."}
+        {
+          "text": "Dispersion: temporary dipoles from fluctuating electron clouds — in every molecule."
+        },
+        {
+          "text": "Dipole–dipole: permanent partial charges in polar molecules."
+        },
+        {
+          "text": "Hydrogen bonding: needs H on N, O, or F, plus an adjacent lone pair."
+        }
       ],
       "secondary": "Dispersion never switches off. A polar molecule has dispersion plus dipole–dipole; an H-bonder can have all three.",
       "callout": "Dispersion is always there; stronger forces stack on top.",
-      "durationInFrames": 1170,
+      "durationInFrames": 1955,
       "caption": "Dispersion < dipole–dipole < hydrogen bonding; dispersion is universal.",
       "voiceover": {
-        "text": "There are three intermolecular forces, and you rank them weakest to strongest. First, dispersion forces, which come from temporary dipoles as the electron cloud constantly fluctuates. These are the weakest, but crucially they're present in every single molecule, polar or not. Second, dipole dipole forces, which come from the permanent partial charges in polar molecules. Third, and strongest, hydrogen bonding, which only forms when hydrogen is bonded to nitrogen, oxygen, or fluorine, with a lone pair on an adjacent molecule to accept it. Here's the key point students forget. Dispersion never switches off. A polar molecule has both dispersion and dipole dipole, and a hydrogen bonder can have all three acting at once."
+        "text": "There are three intermolecular forces, and you rank them weakest to strongest. First, dispersion forces, which come from temporary dipoles as the electron cloud constantly fluctuates. These are the weakest, but crucially they're present in every single molecule, polar or not. Second, dipole dipole forces, which come from the permanent partial charges in polar molecules. Third, and strongest, hydrogen bonding, which only forms when hydrogen is bonded to nitrogen, oxygen, or fluorine, with a lone pair on an adjacent molecule to accept it. Here's the key point students forget. Dispersion never switches off. A polar molecule has both dispersion and dipole dipole, and a hydrogen bonder can have all three acting at once. Force labels alone do not give a universal boiling-point ranking. Molecular size, polarizability and shape also matter; dispersion in a large molecule can be stronger than interactions in a small polar molecule."
       }
     },
     {
@@ -75,10 +102,18 @@
       "type": "definition",
       "heading": "What controls dispersion strength",
       "bullets": [
-        {"text": "Number of electrons: more electrons → more polarisable → stronger dispersion."},
-        {"text": "That's why I₂ > Br₂ > Cl₂ > F₂ in boiling point."},
-        {"text": "Molecular shape: straight chains contact along their full length."},
-        {"text": "n-pentane (BP 36°C) > neopentane (BP 9.5°C), same formula C₅H₁₂."}
+        {
+          "text": "Number of electrons: more electrons → more polarisable → stronger dispersion."
+        },
+        {
+          "text": "That's why I₂ > Br₂ > Cl₂ > F₂ in boiling point."
+        },
+        {
+          "text": "Molecular shape: straight chains contact along their full length."
+        },
+        {
+          "text": "n-pentane (BP 36°C) > neopentane (BP 9.5°C), same formula C₅H₁₂."
+        }
       ],
       "callout": "More electrons and more contact area mean stronger dispersion.",
       "durationInFrames": 1020,
@@ -93,9 +128,15 @@
       "heading": "The boiling-point prediction routine",
       "body": "Work through the molecule in a fixed order to find its strongest IMF, then rank.",
       "bullets": [
-        {"text": "Step 1: is H bonded directly to N, O, or F? → hydrogen bonding."},
-        {"text": "Step 2: is the molecule polar? → dipole–dipole (plus dispersion)."},
-        {"text": "Step 3: otherwise → dispersion only; compare electron count and shape."}
+        {
+          "text": "Step 1: is H bonded directly to N, O, or F? → hydrogen bonding."
+        },
+        {
+          "text": "Step 2: is the molecule polar? → dipole–dipole (plus dispersion)."
+        },
+        {
+          "text": "Step 3: otherwise → dispersion only; compare electron count and shape."
+        }
       ],
       "secondary": "Higher total IMF means higher boiling point. But a very large non-polar molecule can outrank a small hydrogen-bonded one.",
       "callout": "H-bonding? Polar? Size? In that order.",
@@ -164,13 +205,13 @@
         "Propane: no polar bonds, no N/O/F–H → dispersion only",
         "Chloromethane: polar C–Cl → dispersion + dipole–dipole",
         "Propan-1-ol: O–H bond → hydrogen bonding (strongest)",
-        "Order of strength: dispersion < dipole–dipole < hydrogen bonding",
+        "For these selected molecules, the boiling-point order is consistent with their total intermolecular interactions",
         "Answer: propane (−42°C) < chloromethane (−24°C) < propan-1-ol (97°C) ✓"
       ],
       "durationInFrames": 1350,
       "caption": "Propane < chloromethane < propan-1-ol, by strongest IMF.",
       "voiceover": {
-        "text": "Let's rank three molecules by boiling point. Propane, chloromethane, and propan-one-ol. Step one, propane has no polar bonds and no hydrogen on nitrogen, oxygen, or fluorine, so only dispersion forces act, the weakest. Step two, chloromethane has a polar carbon chlorine bond, so it has dipole dipole forces on top of dispersion, putting it in the middle. Step three, propan-one-ol has an oxygen hydrogen bond, so it can hydrogen bond, the strongest force. Step four, ranking the strongest force in each, dispersion is below dipole dipole, which is below hydrogen bonding. So the order from lowest to highest is propane at minus forty-two, chloromethane at minus twenty-four, then propan-one-ol way up at ninety-seven degrees. That jump to ninety-seven shows just how powerfully hydrogen bonding lifts a boiling point."
+        "text": "Rank three molecules Rank by boiling point: propane (C₃H₈, non-polar), chloromethane (CH₃Cl, polar), propan-1-ol (C₃H₇OH, has O–H). Justify. Propane: no polar bonds, no N/O/F–H → dispersion only Chloromethane: polar C–Cl → dispersion + dipole–dipole Propan-1-ol: O–H bond → hydrogen bonding (strongest) For these selected molecules, the boiling-point order is consistent with their total intermolecular interactions Answer: propane (−42°C) < chloromethane (−24°C) < propan-1-ol (97°C) ✓"
       }
     },
     {
@@ -216,13 +257,13 @@
         "CH₄: non-polar, no N/O/F–H → dispersion only (weakest)",
         "CH₃F: polar C–F, but H is on C not F → dispersion + dipole–dipole",
         "CH₃OH: O–H bond → hydrogen bonding (strongest)",
-        "Rank by strongest IMF in each",
+        "For these selected molecules, consider all forces plus size and shape",
         "Answer: CH₄ (−162°C) < CH₃F (−78°C) < CH₃OH (65°C) ✓"
       ],
       "durationInFrames": 1170,
       "caption": "CH₄ < CH₃F < CH₃OH, set by their strongest IMF.",
       "voiceover": {
-        "text": "Quick check. Predict the boiling point order, lowest to highest, for methane, fluoromethane, and methanol. Pause and work it through. Right, let's check it. Step one, methane is non-polar with no hydrogen on nitrogen, oxygen, or fluorine, so only dispersion forces act, the weakest. Step two, fluoromethane has a polar carbon fluorine bond, but watch out, the hydrogen is on carbon, not on fluorine, so there's no hydrogen bonding, just dispersion plus dipole dipole. Step three, methanol has an oxygen hydrogen bond, so it hydrogen bonds, the strongest force. Step four, ranking by strongest force gives methane lowest, then fluoromethane, then methanol. So the order is methane at minus one hundred and sixty-two, fluoromethane at minus seventy-eight, and methanol at sixty-five. The trap was assuming fluoromethane hydrogen bonds, but the hydrogen sits on carbon, so it can't."
+        "text": "Quick check Predict the BP order, lowest to highest: CH₄, CH₃F, CH₃OH. Justify each. CH₄: non-polar, no N/O/F–H → dispersion only (weakest) CH₃F: polar C–F, but H is on C not F → dispersion + dipole–dipole CH₃OH: O–H bond → hydrogen bonding (strongest) For these selected molecules, consider all forces plus size and shape Answer: CH₄ (−162°C) < CH₃F (−78°C) < CH₃OH (65°C) ✓"
       }
     },
     {

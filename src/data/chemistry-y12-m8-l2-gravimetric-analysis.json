@@ -8,10 +8,15 @@
   "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
   "syllabusModule": "Module 8: Applying Chemical Ideas",
   "syllabusDotPoints": [
-    "conduct investigations and/or process data involving the gravimetric analysis of a sample to determine the percentage by mass of an analyte"
+    "Module 8: qualitative inorganic ion analysis by flame tests, precipitation and complexation. (Audit mapping paraphrase, not an official quotation.)"
   ],
   "moduleLessonCount": 16,
-  "nesaOutcomes": ["CH12-15", "CH11/12-4", "CH11/12-6", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-15",
+    "CH11/12-4",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "How are the ions present in the environment identified and measured?",
   "lessonIntent": "Students can run the precipitate-to-analyte mole pathway, calculate percentage by mass, and state the direction each procedural error pushes the result.",
   "examSkill": "Convert precipitate mass to moles with its own molar mass, apply the mole ratio, find analyte mass and percentage, and link each error to whether the result is over- or underestimated.",
@@ -54,11 +59,36 @@
         "props": {
           "layout": "row",
           "stages": [
-            {"label": "Dissolve", "sub": "sample fully", "icon": "dissolve", "beat": 327},
-            {"label": "Precipitate", "sub": "agent in excess", "icon": "precipitate", "beat": 365},
-            {"label": "Filter", "sub": "ashless paper", "icon": "filter", "beat": 479},
-            {"label": "Dry", "sub": "to constant mass", "icon": "dry", "beat": 574},
-            {"label": "Weigh", "sub": "the pure solid", "icon": "weigh", "beat": 726}
+            {
+              "label": "Dissolve",
+              "sub": "sample fully",
+              "icon": "dissolve",
+              "beat": 327
+            },
+            {
+              "label": "Precipitate",
+              "sub": "agent in excess",
+              "icon": "precipitate",
+              "beat": 365
+            },
+            {
+              "label": "Filter",
+              "sub": "ashless paper",
+              "icon": "filter",
+              "beat": 479
+            },
+            {
+              "label": "Dry",
+              "sub": "to constant mass",
+              "icon": "dry",
+              "beat": 574
+            },
+            {
+              "label": "Weigh",
+              "sub": "the pure solid",
+              "icon": "weigh",
+              "beat": 726
+            }
           ],
           "note": {
             "text": "mass → moles → ratio → analyte mass → %",
@@ -68,9 +98,15 @@
         }
       },
       "bullets": [
-        {"text": "Dissolve, then add a precipitating agent in excess for complete precipitation."},
-        {"text": "Filter through ashless paper, then dry to constant mass."},
-        {"text": "Mass to moles, mole ratio, then analyte mass and percentage."}
+        {
+          "text": "Dissolve, then add a precipitating agent in excess for complete precipitation."
+        },
+        {
+          "text": "Filter through ashless paper, then dry to constant mass."
+        },
+        {
+          "text": "Mass to moles, mole ratio, then analyte mass and percentage."
+        }
       ],
       "secondary": "Drying to constant mass means re-heating and re-weighing until the reading stops changing. Trapped water is mass you didn't want.",
       "callout": "Weigh the dry solid, then walk the ratio backwards.",
@@ -85,10 +121,18 @@
       "type": "definition",
       "heading": "The words you need",
       "bullets": [
-        {"text": "Precipitating agent: the reagent added in excess to capture the target ion."},
-        {"text": "Quantitative filtration: separating the solid using ashless paper to avoid mass error."},
-        {"text": "Ignition: heating to constant mass, giving a stable compound of known formula."},
-        {"text": "Percentage composition: analyte mass ÷ sample mass, times 100."}
+        {
+          "text": "Precipitating agent: the reagent added in excess to capture the target ion."
+        },
+        {
+          "text": "Quantitative filtration: separating the solid using ashless paper to avoid mass error."
+        },
+        {
+          "text": "Ignition: heating to constant mass, giving a stable compound of known formula."
+        },
+        {
+          "text": "Percentage composition: analyte mass ÷ sample mass, times 100."
+        }
       ],
       "callout": "Excess agent, dried to constant mass, then weighed.",
       "durationInFrames": 960,
@@ -103,9 +147,15 @@
       "heading": "The calculation pathway",
       "body": "No new formula. Chain mass to moles of precipitate, the mole ratio, analyte mass, then percentage.",
       "bullets": [
-        {"text": "Precipitate mass → moles, using n = m ÷ M of the precipitate."},
-        {"text": "Apply the mole ratio: precipitate moles to analyte moles."},
-        {"text": "Analyte mass = n × M, then percentage of the sample."}
+        {
+          "text": "Precipitate mass → moles, using n = m ÷ M of the precipitate."
+        },
+        {
+          "text": "Apply the mole ratio: precipitate moles to analyte moles."
+        },
+        {
+          "text": "Analyte mass = n × M, then percentage of the sample."
+        }
       ],
       "secondary": "Use the molar mass of the precipitate to get its moles, not the molar mass of the analyte. That swap is the classic error.",
       "callout": "Right molar mass, right ratio, then percentage.",
@@ -120,16 +170,39 @@
         "props": {
           "layout": "stairs",
           "stages": [
-            {"label": "Mass of the dried precipitate", "formula": "m(precipitate)", "beat": 39},
-            {"label": "Moles of precipitate", "formula": "n = m ÷ M(precipitate)", "beat": 113},
-            {"label": "Mole ratio from the balanced equation", "formula": "n(analyte) = n(ppt) × ratio", "beat": 294},
-            {"label": "Mass of analyte", "formula": "m = n × M(analyte)", "beat": 417},
-            {"label": "Percentage of the sample", "formula": "% = m ÷ m(sample) × 100", "beat": 557}
+            {
+              "label": "Mass of the dried precipitate",
+              "formula": "m(precipitate)",
+              "beat": 39
+            },
+            {
+              "label": "Moles of precipitate",
+              "formula": "n = m ÷ M(precipitate)",
+              "beat": 113
+            },
+            {
+              "label": "Mole ratio from the balanced equation",
+              "formula": "n(analyte) = n(ppt) × ratio",
+              "beat": 294
+            },
+            {
+              "label": "Mass of analyte",
+              "formula": "m = n × M(analyte)",
+              "beat": 417
+            },
+            {
+              "label": "Percentage of the sample",
+              "formula": "% = m ÷ m(sample) × 100",
+              "beat": 557
+            }
           ],
           "highlight": 1,
           "highlightBeat": 700,
           "highlightTag": "not the analyte's M",
-          "note": {"text": "Right molar mass, right ratio, then percentage", "beat": 800}
+          "note": {
+            "text": "Right molar mass, right ratio, then percentage",
+            "beat": 800
+          }
         }
       }
     },
@@ -221,5 +294,6 @@
         "text": "Let's lock it in. Five things to take away. First, gravimetric analysis weighs a pure precipitate of known formula to find your analyte. Second, the method is dissolve, precipitate in excess, filter, dry to constant mass, and weigh. Third, convert the precipitate mass to moles using the precipitate's molar mass, not the analyte's. Fourth, apply the mole ratio, find the analyte mass, then the percentage of the original sample. And fifth, low mass underestimates the result, high mass overestimates it, so always state the direction of any error. Precipitate molar mass first, and name the direction. See you next lesson."
       }
     }
-  ]
+  ],
+  "productionNotes": "2017 syllabus mapping checked: Module 8: qualitative inorganic ion analysis by flame tests, precipitation and complexation."
 }

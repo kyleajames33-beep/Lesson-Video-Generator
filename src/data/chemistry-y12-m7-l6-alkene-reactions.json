@@ -11,7 +11,12 @@
     "investigate, write equations and construct models to represent the reactions of unsaturated hydrocarbons when added to a range of chemicals, including but not limited to:"
   ],
   "moduleLessonCount": 23,
-  "nesaOutcomes": ["CH12-14", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-14",
+    "CH11/12-5",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "What are the products of reactions of hydrocarbons and how do they react?",
   "lessonIntent": "Students can write equations with full conditions for the four alkene addition reactions and apply Markovnikov's rule to choose the major product.",
   "examSkill": "State the catalyst and conditions for each addition, and for HX or water on an unsymmetrical alkene, add H to the carbon with more H atoms.",
@@ -49,9 +54,15 @@
       "heading": "Why alkenes add",
       "body": "The C=C is one sigma bond plus an exposed pi bond. Addition breaks the pi bond and keeps the sigma frame.",
       "bullets": [
-        {"text": "The pi bond is electron-rich and exposed, so reagents add across the C=C."},
-        {"text": "Two reactants combine into one product, with nothing lost."},
-        {"text": "Each carbon of the former double bond gains one new single bond."}
+        {
+          "text": "The pi bond is electron-rich and exposed, so reagents add across the C=C."
+        },
+        {
+          "text": "Two reactants combine into one product, with nothing lost."
+        },
+        {
+          "text": "Each carbon of the former double bond gains one new single bond."
+        }
       ],
       "secondary": "Contrast with substitution: there, two products form and one group replaces another. If the product has more atoms than either reactant, it is addition.",
       "callout": "The pi bond breaks; the sigma bond stays.",
@@ -151,16 +162,24 @@
       "type": "definition",
       "heading": "The four addition reactions",
       "bullets": [
-        {"text": "Hydrogenation: alkene + H2 -> alkane. Ni catalyst, about 150 to 200 degrees."},
-        {"text": "Halogenation: alkene + X2 -> dihaloalkane. No catalyst, room temperature."},
-        {"text": "Hydrohalogenation: alkene + HX -> haloalkane. No catalyst, room temperature."},
-        {"text": "Hydration: alkene + H2O -> alcohol. H3PO4 catalyst, about 300 degrees, high pressure."}
+        {
+          "text": "Hydrogenation: alkene + H2 -> alkane. Ni catalyst, about 150 to 200 degrees."
+        },
+        {
+          "text": "Halogenation: alkene + X2 -> dihaloalkane. No catalyst, room temperature."
+        },
+        {
+          "text": "Hydrohalogenation: alkene + HX -> haloalkane. No catalyst, room temperature."
+        },
+        {
+          "text": "Hydration: alkene + H2O -> alcohol. H3PO4 catalyst, about 300 degrees, high pressure."
+        }
       ],
       "callout": "Same pattern, four reagents: H2, X2, HX, H2O.",
-      "durationInFrames": 1110,
+      "durationInFrames": 1852,
       "caption": "Hydrogenation, halogenation, hydrohalogenation, hydration: four reagents across the C=C.",
       "voiceover": {
-        "text": "Here are the four addition reactions, all adding across the double bond, just with different reagents and conditions. Hydrogenation adds hydrogen gas to give an alkane, and it needs a nickel catalyst, palladium or platinum also work, at about one hundred and fifty to two hundred degrees. Halogenation adds a halogen, bromine or chlorine, to give a dihaloalkane, with no catalyst, at room temperature. Hydrohalogenation adds a hydrogen halide, like H Br, to give a single haloalkane, again no catalyst, room temperature. And hydration adds water as steam to give an alcohol, and this one is fussy, it needs a phosphoric acid catalyst, about three hundred degrees, and high pressure, all three. Notice the reagents, hydrogen, halogen, hydrogen halide, and water. The conditions are what you really have to memorise, especially for hydration."
+        "text": "Here are the four addition reactions, all adding across the double bond, just with different reagents and conditions. Hydrogenation adds hydrogen gas to give an alkane, and it needs a nickel catalyst, palladium or platinum also work, at about one hundred and fifty to two hundred degrees. Halogenation adds a halogen, bromine or chlorine, to give a dihaloalkane, with no catalyst, at room temperature. Hydrohalogenation adds a hydrogen halide, like H Br, to give a single haloalkane, again no catalyst, room temperature. And hydration adds water as steam to give an alcohol, and this one is fussy, it needs a phosphoric acid catalyst, about three hundred degrees, and high pressure, all three. Notice the reagents, hydrogen, halogen, hydrogen halide, and water. State conditions for the particular process, rather than assuming industrial ethene settings apply to every alkene."
       }
     },
     {
@@ -169,9 +188,15 @@
       "heading": "Hydrogenation and halogenation",
       "body": "Two industrial workhorses: one makes margarine, the other is the test for unsaturation.",
       "bullets": [
-        {"text": "Hydrogenation: CH2=CH2 + H2 -> CH3CH3, over a Ni catalyst, heated."},
-        {"text": "The catalyst is heterogeneous and is not consumed, so it is not in the equation."},
-        {"text": "Halogenation: CH2=CH2 + Br2 -> CH2BrCH2Br, decolourising bromine water."}
+        {
+          "text": "Hydrogenation: CH2=CH2 + H2 -> CH3CH3, over a Ni catalyst, heated."
+        },
+        {
+          "text": "The catalyst is heterogeneous and is not consumed, so it is not in the equation."
+        },
+        {
+          "text": "Halogenation: CH2=CH2 + Br2 -> CH2BrCH2Br, decolourising bromine water."
+        }
       ],
       "secondary": "For hydrogenation you must state both the catalyst and the temperature. Hydrogen gas alone does not react with an alkene at room temperature.",
       "callout": "Ni catalyst plus heat for H2; no catalyst, room temperature for Br2.",
@@ -268,9 +293,15 @@
       "heading": "Markovnikov's rule",
       "body": "For an unsymmetrical alkene plus HX or water, two products are possible. Markovnikov tells you which dominates.",
       "bullets": [
-        {"text": "Count the H atoms on each carbon of the C=C."},
-        {"text": "H adds to the carbon that already has more H atoms."},
-        {"text": "X or OH adds to the other carbon, the more substituted one."}
+        {
+          "text": "Count the H atoms on each carbon of the C=C."
+        },
+        {
+          "text": "H adds to the carbon that already has more H atoms."
+        },
+        {
+          "text": "X or OH adds to the other carbon, the more substituted one."
+        }
       ],
       "secondary": "The memory aid: the rich get richer, the H-rich carbon gains the extra H. The more substituted carbocation is more stable, so that pathway is faster.",
       "callout": "More H gets the H; the other carbon gets the X or OH.",
@@ -366,9 +397,15 @@
       "heading": "Hydration: making ethanol",
       "body": "Hydration is the industrial route to ethanol, and it needs three conditions stated together.",
       "bullets": [
-        {"text": "Reagent water (steam); catalyst dilute H3PO4 or H2SO4."},
-        {"text": "About 300 degrees, and high pressure (around 65 atmospheres)."},
-        {"text": "CH2=CH2 + H2O -> CH3CH2OH; for unsymmetrical alkenes, Markovnikov applies."}
+        {
+          "text": "Reagent water (steam); industrial ethene catalyst H3PO4 supported on silica; laboratory acid hydration uses different conditions."
+        },
+        {
+          "text": "About 300 degrees, and high pressure (around 65 atmospheres)."
+        },
+        {
+          "text": "CH2=CH2 + H2O -> CH3CH2OH; for unsymmetrical alkenes, Markovnikov applies."
+        }
       ],
       "secondary": "The most commonly omitted condition is pressure. The reaction is reversible, so high pressure drives the equilibrium toward the alcohol.",
       "callout": "Catalyst, high temperature, and high pressure: all three or lose marks.",
@@ -466,7 +503,7 @@
       "durationInFrames": 1080,
       "caption": "Hydration: steam, H3PO4, ~300C, high pressure -> ethanol (Markovnikov).",
       "voiceover": {
-        "text": "Hydration is the industrial way to make ethanol, and it's the one students lose marks on. The reagent is water, as steam. The catalyst is phosphoric acid, or sulfuric acid. The temperature is about three hundred degrees, and crucially, the pressure is high, around sixty-five atmospheres. So ethene plus water gives ethanol. For an unsymmetrical alkene, Markovnikov applies, the oxygen hydrogen group goes to the more substituted carbon, so propene gives propan-two-ol, not propan-one-ol. The big exam point, you must state all three conditions together, catalyst, high temperature, and high pressure. The one people forget most often is pressure. The reaction is reversible, and high pressure pushes the equilibrium toward the alcohol side, which has fewer gas molecules. State only one or two conditions and you lose marks, even if the equation is perfect."
+        "text": "Hydration: making ethanol Hydration is the industrial route to ethanol, and it needs three conditions stated together. Reagent water (steam); industrial ethene catalyst H3PO4 supported on silica; laboratory acid hydration uses different conditions. About 300 degrees, and high pressure (around 65 atmospheres). CH2=CH2 + H2O -> CH3CH2OH; for unsymmetrical alkenes, Markovnikov applies. The most commonly omitted condition is pressure. The reaction is reversible, so high pressure drives the equilibrium toward the alcohol."
       }
     },
     {
@@ -480,12 +517,12 @@
         "(b) CH2=CH2 + Br2 -> CH2BrCH2Br; no catalyst, room temperature",
         "(c) But-1-ene: C1(=CH2) has 2H, C2 has 1H, so OH -> C2 (Markovnikov)",
         "(c) CH3CH2CH=CH2 + H2O -> CH3CH2CH(OH)CH3 (butan-2-ol)",
-        "(c) Conditions: H3PO4 catalyst, ~300C, high pressure ✓"
+        "(c) Conditions: acid-catalysed hydration under conditions appropriate to the alkene ✓"
       ],
       "durationInFrames": 1320,
       "caption": "(a) propane (Ni), (b) 1,2-dibromoethane, (c) butan-2-ol (H3PO4, 300C, high P).",
       "voiceover": {
-        "text": "Let's write three with full conditions. Part a, hydrogenation of propene. Propene plus hydrogen gives propane, over a nickel catalyst at about one hundred and fifty to two hundred degrees. Part b, halogenation of ethene. Ethene plus bromine gives one-comma-two-dibromoethane, no catalyst, room temperature. Part c, hydration of but-one-ene, and here Markovnikov matters. Carbon one, the C H two end, has two hydrogens, while carbon two has only one, so the oxygen hydrogen group adds to carbon two, the more substituted one. That gives butan-two-ol, not butan-one-ol. The equation is but-one-ene plus water gives butan-two-ol, with the conditions phosphoric acid catalyst, about three hundred degrees, and high pressure. Notice how each reaction has its own conditions, and you have to state them, especially that full set of three for hydration."
+        "text": "Equations with conditions Write equations and full conditions for: (a) propene + H2  (b) ethene + Br2  (c) but-1-ene + H2O. (a) CH3CH=CH2 + H2 -> CH3CH2CH3; Ni catalyst, ~150-200C (b) CH2=CH2 + Br2 -> CH2BrCH2Br; no catalyst, room temperature (c) But-1-ene: C1(=CH2) has 2H, C2 has 1H, so OH -> C2 (Markovnikov) (c) CH3CH2CH=CH2 + H2O -> CH3CH2CH(OH)CH3 (butan-2-ol) (c) Conditions: acid-catalysed hydration under conditions appropriate to the alkene ✓"
       }
     },
     {
@@ -525,19 +562,19 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "What is the major product when propene reacts with water industrially? Give conditions.",
+      "question": "What is the major product when propene undergoes aqueous acid-catalysed hydration? Give conditions.",
       "pausePrompt": "Pause and work it through.",
       "answerSteps": [
         "Propene CH3CH=CH2: C1(=CH2) has 2H, C2 has 1H",
         "Hydration with Markovnikov: OH adds to C2 (more substituted)",
         "Product: CH3CH(OH)CH3 = propan-2-ol",
-        "Conditions: H2O (steam), H3PO4 catalyst, ~300C, high pressure",
+        "Conditions: H2O (steam), acid-catalysed hydration under conditions appropriate to the alkene",
         "Answer: propan-2-ol, via Markovnikov hydration ✓"
       ],
       "durationInFrames": 1230,
       "caption": "propene + H2O -> propan-2-ol (H3PO4, ~300C, high pressure).",
       "voiceover": {
-        "text": "Quick check. What's the major product when propene reacts with water industrially, and what are the conditions? Pause and work it through. Right. Propene is C H three C H double bond C H two. Carbon one, the end C H two, has two hydrogens, and carbon two has one. This is hydration, so Markovnikov applies, and the oxygen hydrogen group adds to the more substituted carbon, carbon two. That gives C H three C H bracket O H, C H three, which is propan-two-ol, a secondary alcohol. The conditions are water as steam, a phosphoric acid catalyst, about three hundred degrees, and high pressure. So the major product is propan-two-ol. Notice it's the secondary alcohol, not propan-one-ol, because the oxygen hydrogen goes to the more substituted carbon, and remember to give all three conditions."
+        "text": "Quick check What is the major product when propene undergoes aqueous acid-catalysed hydration? Give conditions. Propene CH3CH=CH2: C1(=CH2) has 2H, C2 has 1H Hydration with Markovnikov: OH adds to C2 (more substituted) Product: CH3CH(OH)CH3 = propan-2-ol Conditions: H2O (steam), acid-catalysed hydration under conditions appropriate to the alkene Answer: propan-2-ol, via Markovnikov hydration ✓"
       }
     },
     {

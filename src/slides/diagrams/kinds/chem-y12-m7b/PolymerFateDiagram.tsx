@@ -188,13 +188,13 @@ export const PolymerFateDiagram = ({mode = 'thermo', title, beats = {}, delay = 
 						<Chip x={cx} y={82} text="heat: forces loosen, it softens and remoulds" color={TOK.amberInk} size={18} />
 					</g>
 					<g opacity={fadeAt(frame, b.cool, 10) * (1 - fadeAt(frame, b.enzyme - 10, 10))}>
-						<Chip x={cx} y={82} text={frame >= b.recycle ? 'thermoplastic: melt and recycle ✓' : 'cool: forces re-form, it hardens'} color={theme.accent} size={18} />
+						<Chip x={cx} y={82} text={frame >= b.recycle ? 'thermoplastic: often remouldable' : 'cool: forces re-form, it hardens'} color={theme.accent} size={18} />
 					</g>
 					{/* enzyme bounces off */}
 					<g opacity={en.on * (1 - fadeAt(frame, b.uv, 12))}>
 						<Enzyme x={en.x} y={en.y} color="#9bc27a" />
 						{en.hit && <Stop x={cx + 64} y={180} />}
-						<Chip x={cx} y={82} text="no microbe enzyme can cut the C–C backbone" color={STOP} size={18} />
+						<Chip x={cx} y={82} text="ordinary biodegradation is very slow" color={STOP} size={18} />
 					</g>
 					<g opacity={fadeAt(frame, b.uv, 12)}>
 						<Sun x={cx + 250} y={110} frame={frame} />
@@ -284,7 +284,7 @@ export const PolymerFateDiagram = ({mode = 'thermo', title, beats = {}, delay = 
 							<Enzyme x={en.x} y={en.y} color="#9bc27a" />
 							{en.hit && <Stop x={L + 30} y={200} />}
 						</g>
-						<text x={L} y={420} textAnchor="middle" fill={STOP} fontSize={17} fontWeight={800} opacity={fadeAt(frame, b.enzyme + 40, 12) * (1 - fadeAt(frame, b.uv, 10))}>microbes have no enzyme for C–C</text>
+						<text x={L} y={420} textAnchor="middle" fill={STOP} fontSize={17} fontWeight={800} opacity={fadeAt(frame, b.enzyme + 40, 12) * (1 - fadeAt(frame, b.uv, 10))}>C–C backbone usually persists</text>
 						<g opacity={fadeAt(frame, b.uv, 12)}>
 							<Sun x={L + 140} y={170} frame={frame} />
 							<text x={L} y={420} textAnchor="middle" fill={TOK.amberInk} fontSize={17} fontWeight={800}>{frame >= b.micro ? 'fragments → microplastics' : 'UV + abrasion: fragments'}</text>
@@ -297,10 +297,10 @@ export const PolymerFateDiagram = ({mode = 'thermo', title, beats = {}, delay = 
 						</g>
 						<text x={R} y={420} textAnchor="middle" fill={theme.accent} fontSize={17} fontWeight={800} opacity={fadeAt(frame, b.water + 110, 12)}>links hydrolyse: it breaks down</text>
 						<g opacity={fadeAt(frame, b.thermoplastic, 12)}>
-							<Chip x={200} y={470} text="thermoplastic: melt and recycle ✓" color={theme.accent} size={17} />
+							<Chip x={200} y={470} text="thermoplastic: often remouldable" color={theme.accent} size={17} />
 						</g>
 						<g opacity={fadeAt(frame, b.thermoset, 12)}>
-							<Chip x={560} y={470} text="cross-linked thermoset: can’t ✗" color={STOP} size={17} />
+							<Chip x={560} y={470} text="thermoset: cannot remelt" color={STOP} size={17} />
 						</g>
 					</>
 				)}

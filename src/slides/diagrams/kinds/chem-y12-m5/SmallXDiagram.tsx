@@ -3,7 +3,7 @@
 // Top: the initial concentration as a bar. x is a thin sliver cut from its
 // end; the bar that is left is barely shorter, so initial − x ≈ initial (only
 // because the sliver is tiny). Below, two gauges stand on plinths: the
-// PRE-CHECK (Keq ÷ [initial] × 100) before assuming and the POST-CHECK
+// PRE-CHECK (estimated x ÷ [initial] × 100) before assuming and the POST-CHECK
 // (x ÷ [initial] × 100) after solving, each with the 5 % line in amber. The
 // post-check needle first settles under 5 % (keep the answer), then shows the
 // other case: over 5 %, bin the answer and solve the quadratic.
@@ -114,7 +114,7 @@ export const SmallXDiagram = ({
 	const cardDrop = interpolate(frame, [binAt + 6, binAt + 34], [0, 1], clamp);
 
 	return (
-		<svg viewBox={`0 0 ${W} 530`} role="img" aria-label="Small-x assumption: x is a tiny sliver of the initial concentration, so initial minus x is about initial; check Keq over initial times 100 is under 5 percent before, and x over initial times 100 is under 5 percent after, otherwise solve the quadratic" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+		<svg viewBox={`0 0 ${W} 530`} role="img" aria-label="Small-x assumption: x is a tiny sliver of the initial concentration, so initial minus x is about initial; check estimated x over initial times 100 is under 5 percent before, and x over initial times 100 is under 5 percent after, otherwise solve the quadratic" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<defs>
 				<linearGradient id="c12m5sx-bar" x1="0" x2="0" y1="0" y2="1">
 					<stop offset="0%" stopColor={theme.accent2} />
@@ -144,7 +144,7 @@ export const SmallXDiagram = ({
 			</g>
 
 			{/* ── Gauges ── */}
-			<Gauge cx={190} v={preV} title="PRE-CHECK · BEFORE" formula="K_{eq} ÷ [initial] × 100 < 5 %?" at={preAt} k={0} />
+			<Gauge cx={190} v={preV} title="PRE-CHECK · BEFORE" formula="x_{est} ÷ [initial] × 100 < 5 %?" at={preAt} k={0} />
 			<Gauge cx={570} v={postV} title="POST-CHECK · AFTER" formula="x ÷ [initial] × 100 < 5 %?" at={postAt} k={1} />
 
 			{/* assume → solve arrow between the gauges */}
@@ -160,7 +160,7 @@ export const SmallXDiagram = ({
 			</g>
 
 			{/* outcomes */}
-			<text x={190} y={472} textAnchor="middle" fill={theme.accent} fontSize={20} fontWeight={800} opacity={preOk}>✓ under 5 %: x negligible</text>
+			<text x={190} y={472} textAnchor="middle" fill={theme.accent} fontSize={20} fontWeight={800} opacity={preOk}>✓ test estimated change</text>
 			<text x={570} y={472} textAnchor="middle" fill={theme.accent} fontSize={20} fontWeight={800} opacity={postOk}>✓ under 5 %: keep the answer</text>
 			<g opacity={failIn}>
 				<text x={404} y={498} fill={RED} fontSize={20} fontWeight={900}>✗ over 5 %: bin that answer</text>

@@ -11,7 +11,11 @@
     "solve stoichiometry problems involving solutions using concentration, volume and balanced equations"
   ],
   "moduleLessonCount": 20,
-  "nesaOutcomes": ["CH11-9", "CH11/12-4", "CH11/12-6"],
+  "nesaOutcomes": [
+    "CH11-9",
+    "CH11/12-4",
+    "CH11/12-6"
+  ],
   "inquiryQuestion": "What happens in chemical reactions?",
   "lessonIntent": "Students can solve reaction problems where reactants are solutions, using n = cV to enter and exit the mole bridge.",
   "examSkill": "Use n = cV to find moles of a solution, apply the mole ratio, then convert to mass, or back to concentration using the correct final volume.",
@@ -50,9 +54,15 @@
       "body": "When a reactant is a solution, you find its moles from concentration times volume.",
       "image": "l16SolutionStoich",
       "bullets": [
-        {"text": "Solution given: n = c × V, with volume in litres."},
-        {"text": "Cross the mole bridge with the balanced equation's ratio."},
-        {"text": "Finish as mass, or as a concentration using the final volume."}
+        {
+          "text": "Solution given: n = c × V, with volume in litres."
+        },
+        {
+          "text": "Cross the mole bridge with the balanced equation's ratio."
+        },
+        {
+          "text": "Finish as mass, or as a concentration using the final volume."
+        }
       ],
       "secondary": "If the question asks for a final concentration, use the total combined volume, not one reactant's volume.",
       "callout": "Moles in via n = cV; the ratio works the same as ever.",
@@ -67,10 +77,18 @@
       "type": "definition",
       "heading": "The tools you need",
       "bullets": [
-        {"text": "n = cV: moles from concentration and volume, in litres."},
-        {"text": "Mole ratio: the coefficient ratio from the balanced equation."},
-        {"text": "Final concentration: moles formed ÷ total mixed volume."},
-        {"text": "Units: mol L⁻¹ and litres, so convert mL by dividing by 1000."}
+        {
+          "text": "n = cV: moles from concentration and volume, in litres."
+        },
+        {
+          "text": "Mole ratio: the coefficient ratio from the balanced equation."
+        },
+        {
+          "text": "Final concentration: moles formed ÷ total mixed volume."
+        },
+        {
+          "text": "Units: mol L⁻¹ and litres, so convert mL by dividing by 1000."
+        }
       ],
       "callout": "Final concentration uses the combined volume of everything mixed.",
       "durationInFrames": 930,
@@ -85,9 +103,15 @@
       "heading": "The pathway",
       "body": "Solution to moles with n = cV, mole ratio across, then mass or concentration out.",
       "bullets": [
-        {"text": "Moles in: n = c × V for each solution given."},
-        {"text": "Apply the mole ratio across the bridge."},
-        {"text": "Out: × molar mass for mass, or ÷ total volume for concentration."}
+        {
+          "text": "Moles in: n = c × V for each solution given."
+        },
+        {
+          "text": "Apply the mole ratio across the bridge."
+        },
+        {
+          "text": "Out: × molar mass for mass, or ÷ total volume for concentration."
+        }
       ],
       "secondary": "For a precipitate mass, exit via molar mass. For a product concentration, exit via the combined volume.",
       "callout": "Pick the exit ramp the question is asking for.",
@@ -100,17 +124,40 @@
         "type": "diorama",
         "kind": "chem11m2Pathway",
         "props": {
-          "given": {"icon": "solution", "label": "solution", "sub": "c and V given"},
+          "given": {
+            "icon": "solution",
+            "label": "solution",
+            "sub": "c and V given"
+          },
           "wanted": [
-            {"icon": "precipitate", "label": "precipitate", "sub": "mass in g"},
-            {"icon": "solution", "label": "concentration", "sub": "of the mixture"}
+            {
+              "icon": "precipitate",
+              "label": "precipitate",
+              "sub": "mass in g"
+            },
+            {
+              "icon": "solution",
+              "label": "concentration",
+              "sub": "of the mixture"
+            }
           ],
           "inOp": "n = c × V",
           "ratioOp": "× mole ratio",
-          "outOp": ["× M", "÷ total V"],
+          "outOp": [
+            "× M",
+            "÷ total V"
+          ],
           "trap": "Concentration exit: divide by the total volume",
           "trapOn": "out2",
-          "beats": {"in": 20, "ratio": 142, "out": [326, 489], "trap": 694}
+          "beats": {
+            "in": 20,
+            "ratio": 142,
+            "out": [
+              326,
+              489
+            ],
+            "trap": 694
+          }
         }
       }
     },
@@ -137,7 +184,7 @@
       "id": "worked-example-2",
       "type": "workedExample",
       "heading": "Final concentration after mixing",
-      "question": "25.0 mL of 0.100 mol L⁻¹ HCl + 25.0 mL NaOH → NaCl in 50.0 mL total. Find c(NaCl). HCl + NaOH → NaCl + H₂O.",
+      "question": "25.0 mL of 0.100 mol L⁻¹ HCl + 25.0 mL of 0.200 mol/L NaOH (in excess) → NaCl in 50.0 mL total. Find c(NaCl). HCl + NaOH → NaCl + H₂O.",
       "coachNote": "Divide product moles by the TOTAL mixed volume.",
       "steps": [
         "n(HCl) = c × V = 0.100 × 0.0250 = 2.50 × 10⁻³ mol",
@@ -149,7 +196,7 @@
       "durationInFrames": 1500,
       "caption": "Use the combined 50.0 mL: c(NaCl) = 0.0500 mol L⁻¹.",
       "voiceover": {
-        "text": "Now the one that tests the total volume idea. Twenty-five millilitres of nought-point-one mole per litre hydrochloric acid is neutralised by twenty-five millilitres of sodium hydroxide, and the resulting salt solution occupies fifty millilitres in total. Find the concentration of the sodium chloride. Step one, moles of acid. Nought-point-one times nought-point-zero-two-five is two-point-five times ten to the minus three moles. Step two, the ratio of acid to salt is one to one, so the same moles of sodium chloride form. Step three, and here's the key, the salt is now spread through the combined volume. Twenty-five plus twenty-five is fifty millilitres, which is nought-point-zero-five litres. Step four, concentration equals moles over that total volume. Two-point-five times ten to the minus three, over nought-point-zero-five, is nought-point-zero-five moles per litre. If you'd divided by just twenty-five millilitres, you'd have doubled the answer. The product fills the whole mixture."
+        "text": "Final concentration after mixing 25.0 mL of 0.100 mol L⁻¹ HCl + 25.0 mL of 0.200 mol/L NaOH (in excess) → NaCl in 50.0 mL total. Find c(NaCl). HCl + NaOH → NaCl + H₂O. n(HCl) = c × V = 0.100 × 0.0250 = 2.50 × 10⁻³ mol Ratio HCl : NaCl = 1 : 1, so n(NaCl) = 2.50 × 10⁻³ mol Total volume = 25.0 + 25.0 = 50.0 mL = 0.0500 L c(NaCl) = n ÷ V(total) = 2.50 × 10⁻³ ÷ 0.0500 Answer: c(NaCl) = 0.0500 mol L⁻¹ ✓"
       }
     },
     {
@@ -170,19 +217,17 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "25.0 mL of 0.200 mol L⁻¹ Na₂CO₃ + 50.0 mL of 0.100 mol L⁻¹ HCl. Which is in excess? Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂.",
+      "question": "25.0 mL of 0.200 mol/L AgNO₃ is mixed with 50.0 mL of 0.150 mol/L NaCl. Which is in excess? Ag⁺ + Cl⁻ → AgCl(s).",
       "pausePrompt": "Pause and work it through.",
       "answerSteps": [
-        "n(Na₂CO₃) = 0.200 × 0.0250 = 5.00 × 10⁻³ mol",
-        "n(HCl) = 0.100 × 0.0500 = 5.00 × 10⁻³ mol",
-        "Need 2 HCl per Na₂CO₃: 5.00 × 10⁻³ Na₂CO₃ needs 1.00 × 10⁻² HCl",
-        "Only 5.00 × 10⁻³ HCl available → HCl limiting",
-        "Answer: Na₂CO₃ is in excess ✓"
+        "n(Ag⁺) = 0.200 × 0.0250 = 0.00500 mol.",
+        "n(Cl⁻) = 0.150 × 0.0500 = 0.00750 mol.",
+        "The ratio is 1:1, so Ag⁺ is limiting and NaCl is in excess."
       ],
       "durationInFrames": 1290,
-      "caption": "HCl is limiting (needs 2:1), so Na₂CO₃ is in excess.",
+      "caption": "A 1:1 precipitation reaction gives an unambiguous comparison.",
       "voiceover": {
-        "text": "Quick check, with a limiting-reagent twist. Twenty-five millilitres of nought-point-two mole per litre sodium carbonate is mixed with fifty millilitres of nought-point-one mole per litre hydrochloric acid. Which reactant is in excess? The reaction needs two acids per carbonate. Pause and work it through. Right, let's check it. Step one, moles of each. Sodium carbonate, nought-point-two times nought-point-zero-two-five is five times ten to the minus three. Hydrochloric acid, nought-point-one times nought-point-zero-five is also five times ten to the minus three. They look equal, but the ratio isn't one to one. Step two, the carbonate needs two acids each, so five times ten to the minus three moles of carbonate would need ten times ten to the minus three moles of acid. Step three, there's only five times ten to the minus three of acid, so the acid runs out first. The acid is limiting, which means the sodium carbonate is in excess. Equal moles, but the two to one ratio decides it."
+        "text": "Twenty five millilitres of zero point two zero zero molar silver nitrate is mixed with fifty millilitres of zero point one five zero molar sodium chloride. Which is in excess? Silver ion and chloride ion form silver chloride in a one-to-one ratio. Silver nitrate supplies five millimoles; sodium chloride supplies seven point five millimoles. Silver nitrate is limiting, so sodium chloride is in excess. This single precipitation reaction makes the limiting-reagent comparison unambiguous."
       }
     },
     {

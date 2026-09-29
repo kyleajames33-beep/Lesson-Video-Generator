@@ -8,11 +8,17 @@
   "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
   "syllabusModule": "Module 8: Applying Chemical Ideas",
   "syllabusDotPoints": [
-    "conduct qualitative investigations to test for the presence in organic molecules of the following functional groups: carboxylic acids, amines, amides",
-    "investigate the structure and action of named medicines in terms of their functional groups"
+    "Enrichment context for structure–property relationships; not a verbatim mandated medicine/drug-delivery dot point in the Chemistry Stage 6 Syllabus (2017)."
   ],
   "moduleLessonCount": 16,
-  "nesaOutcomes": ["CH12-15", "CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-15",
+    "CH11/12-1",
+    "CH11/12-2",
+    "CH11/12-3",
+    "CH11/12-4",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "How is information about the reactivity and structure of organic compounds obtained?",
   "lessonIntent": "Students can classify medicines by function and structure, identify the key functional groups in common drugs, and explain the pharmacophore concept.",
   "examSkill": "Identify functional groups in aspirin, paracetamol and ibuprofen, and link them to polarity, acidity and binding rather than assuming same use means same structure.",
@@ -36,13 +42,13 @@
       "id": "hook",
       "type": "hook",
       "heading": "One group change, a blockbuster drug",
-      "body": "In 1897, Bayer changed a single -OH group in salicylic acid into -OCOCH3. The result was aspirin, gentler on the stomach but just as effective.",
+      "body": "Acetylating the phenolic OH of salicylic acid makes aspirin. A small structural change can alter chemical and biological behaviour.",
       "image": "aspirinMolecule",
       "callout": "Same skeleton, one group swapped, a different drug.",
-      "durationInFrames": 690,
-      "caption": "Bayer swapped one functional group on salicylic acid in 1897 to create aspirin.",
+      "durationInFrames": 836,
+      "caption": "Salicylic acid acetylation creates an ester group in aspirin.",
       "voiceover": {
-        "text": "OK, here's a story that built a pharmaceutical empire. In 1897, a chemist at Bayer named Felix Hoffmann was looking for a gentler version of salicylic acid, because the existing drug wrecked his father's stomach. So he changed one functional group, converting an O-H group into an O-C-O-C-H-three group. That single change reduced the gastric irritation but kept the pain relief, and it turned aspirin into the world's first mass-market pharmaceutical. One functional group decision, on the same molecular skeleton, made all the difference. So today's question, what does that new group do that the old one didn't, and why does such a small structural change matter so much biologically? Let's learn to read drug molecules."
+        "text": "A small functional-group change can alter a medicine’s behaviour. Acetylating the phenolic hydroxyl group of salicylic acid makes the ester group of aspirin. The carboxyl group remains, but the biological action and risk profile cannot be inferred from that group alone. We will identify the groups, predict chemical properties and distinguish those predictions from evidence about biological effects."
       }
     },
     {
@@ -51,9 +57,15 @@
       "heading": "Two ways to classify a medicine",
       "body": "A medicine can be classified in more than one way. Chemists care about what it does biologically, but also about the structure that lets it do that job.",
       "bullets": [
-        {"text": "By function: analgesic, antibiotic, antiviral, antacid, local anaesthetic."},
-        {"text": "By structure: the functional groups and overall molecular framework."},
-        {"text": "Aspirin, ibuprofen and paracetamol are all analgesics, but differ structurally."}
+        {
+          "text": "By function: analgesic, antibiotic, antiviral, antacid, local anaesthetic."
+        },
+        {
+          "text": "By structure: the functional groups and overall molecular framework."
+        },
+        {
+          "text": "Aspirin, ibuprofen and paracetamol are all analgesics, but differ structurally."
+        }
       ],
       "secondary": "Functional categories group medicines by biological purpose. The same molecule can also be described structurally by its functional groups. Both lenses matter.",
       "callout": "Classification isn't only what it treats. It's also how it's built.",
@@ -65,7 +77,22 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Skeletal",
-        "props": {"mode": "gallery", "beats": [210, 255, 285, 322, 329, 374, 457, 614, 718, 90, 150]}
+        "props": {
+          "mode": "gallery",
+          "beats": [
+            210,
+            255,
+            285,
+            322,
+            329,
+            374,
+            457,
+            614,
+            718,
+            90,
+            150
+          ]
+        }
       }
     },
     {
@@ -75,21 +102,48 @@
       "body": "Functional groups are small substructures with big consequences. They control intermolecular forces, acid-base behaviour, reactivity, and binding.",
       "diagram": {
         "type": "table",
-        "headers": ["Group", "Chemical effect"],
+        "headers": [
+          "Group",
+          "Chemical effect"
+        ],
         "rows": [
-          ["-OH hydroxyl/phenol", "Raises polarity and H-bonding"],
-          ["-COOH carboxylic acid", "Acidic, increases polarity"],
-          ["-NH2 amine", "Basic, H-bonding"],
-          ["-COO- ester", "Polar, can hydrolyse"],
-          ["-CONH- amide", "Strongly polar, key for binding"],
-          ["Aromatic ring", "Hydrophobic, adds shape"]
+          [
+            "-OH hydroxyl/phenol",
+            "Raises polarity and H-bonding"
+          ],
+          [
+            "-COOH carboxylic acid",
+            "Acidic, increases polarity"
+          ],
+          [
+            "-NH2 amine",
+            "Basic, H-bonding"
+          ],
+          [
+            "-COO- ester",
+            "Polar, can hydrolyse"
+          ],
+          [
+            "-CONH- amide",
+            "Strongly polar, key for binding"
+          ],
+          [
+            "Aromatic ring",
+            "Hydrophobic, adds shape"
+          ]
         ],
         "delay": 18
       },
       "bullets": [
-        {"text": "Polar groups raise water solubility and binding potential."},
-        {"text": "Acidic and basic groups shift behaviour with pH."},
-        {"text": "Aromatic and hydrocarbon regions add hydrophobic character."}
+        {
+          "text": "Polar groups raise water solubility and binding potential."
+        },
+        {
+          "text": "Acidic and basic groups shift behaviour with pH."
+        },
+        {
+          "text": "Aromatic and hydrocarbon regions add hydrophobic character."
+        }
       ],
       "secondary": "If two painkillers carry different functional groups, they can differ in acidity, polarity, shape and binding strength. That's why equal masses don't mean equal effect.",
       "callout": "Each group is a lever on polarity, acidity, or binding.",
@@ -105,9 +159,15 @@
       "heading": "Reading the four key medicines",
       "body": "You don't memorise every atom. You learn to spot the functional groups and overall framework in structural and skeletal formulas.",
       "bullets": [
-        {"text": "Aspirin: aromatic ring, ester, carboxylic acid, so acidic and hydrolysable."},
-        {"text": "Paracetamol: aromatic ring, phenol, amide, so polar and H-bonding."},
-        {"text": "Ibuprofen: aromatic ring, carboxylic acid, branched hydrocarbon, mixed character."}
+        {
+          "text": "Aspirin: aromatic ring, ester, carboxylic acid, so acidic and hydrolysable."
+        },
+        {
+          "text": "Paracetamol: aromatic ring, phenol, amide, so polar and H-bonding."
+        },
+        {
+          "text": "Ibuprofen: aromatic ring, carboxylic acid, branched hydrocarbon, mixed character."
+        }
       ],
       "secondary": "Penicillin carries an amide-containing framework tied directly to its antibacterial action. Spot the groups first, then reason about behaviour.",
       "callout": "Recognise the groups, don't count every bond.",
@@ -119,7 +179,23 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Skeletal",
-        "props": {"mode": "read", "beats": [247, 270, 300, 315, 404, 427, 449, 464, 532, 554, 591, 614]}
+        "props": {
+          "mode": "read",
+          "beats": [
+            247,
+            270,
+            300,
+            315,
+            404,
+            427,
+            449,
+            464,
+            532,
+            554,
+            591,
+            614
+          ]
+        }
       }
     },
     {
@@ -127,10 +203,18 @@
       "type": "definition",
       "heading": "The words you need",
       "bullets": [
-        {"text": "Pharmacophore: the part of a molecule responsible for its biological activity."},
-        {"text": "SAR: structure-activity relationship, linking structure to biological effect."},
-        {"text": "Receptor binding: the drug fits a specific site, shape and groups must be complementary."},
-        {"text": "Analgesic: a pain-relieving drug, classified by mechanism."}
+        {
+          "text": "Pharmacophore: the part of a molecule responsible for its biological activity."
+        },
+        {
+          "text": "SAR: structure-activity relationship, linking structure to biological effect."
+        },
+        {
+          "text": "Receptor binding: the drug fits a specific site, shape and groups must be complementary."
+        },
+        {
+          "text": "Analgesic: a pain-relieving drug, classified by mechanism."
+        }
       ],
       "callout": "The pharmacophore is the part that must stay for the drug to work.",
       "durationInFrames": 960,
@@ -143,42 +227,43 @@
       "id": "concept-pharmacophore",
       "type": "concept",
       "heading": "The pharmacophore in action",
-      "body": "Back to Bayer in 1897. The chemists kept the -COOH pharmacophore, the part that inhibits COX enzymes, and only changed the irritating -OH group.",
+      "body": "Aspirin is formed by acetylating the phenolic OH of salicylic acid.",
       "bullets": [
-        {"text": "Keep the critical region: the -COOH stays, so pain relief survives."},
-        {"text": "Modify elsewhere: -OH becomes -OCOCH3, cutting stomach irritation."},
-        {"text": "A small change to the pharmacophore can alter potency or effect type."}
+        {
+          "text": "A carboxyl group remains; a new ester group forms."
+        },
+        {
+          "text": "Aspirin acetylates cyclooxygenase; biological action needs more than a COOH group."
+        },
+        {
+          "text": "Ester formation does not prove gastrointestinal safety."
+        }
       ],
-      "secondary": "One part of the molecule drives the effect. You can modify other parts, as long as you don't touch the critical region. That's why minor changes can matter so much.",
-      "callout": "Protect the pharmacophore; tune everything else.",
+      "secondary": "A pharmacophore describes a pattern of features needed for an interaction, not a guarantee that one retained group preserves all effects.",
+      "callout": "Structure–activity hypotheses require biological evidence.",
       "durationInFrames": 990,
-      "caption": "Aspirin kept the -COOH pharmacophore while changing the -OH to reduce irritation.",
+      "caption": "Structure–activity hypotheses require biological evidence.",
       "voiceover": {
-        "text": "Now let's see the pharmacophore concept in action, back at Bayer in 1897. When the chemists modified salicylic acid to make aspirin, they were careful about which part they changed. They kept the carboxylic acid group, the pharmacophore region that inhibits C-O-X enzymes and drives the pain relief. And they only changed the irritating O-H group, converting it to that O-C-O-C-H-three ester. The result, the analgesic activity was preserved, but the stomach irritation dropped. That's the pharmacophore concept exactly, one part of the molecule drives the biological effect, and you can modify other parts of the molecule without destroying it, as long as you don't touch the critical region. And it cuts both ways. A change that looks minor on paper can alter the geometry of the pharmacophore and shift the potency, or even the type of effect."
-      },
-      "diagram": {
-        "type": "diorama",
-        "kind": "chem12m8Skeletal",
-        "props": {"mode": "modify", "beats": [65, 155, 203, 292, 334, 375, 437, 698]}
+        "text": "The pharmacophore in action Aspirin is formed by acetylating the phenolic OH of salicylic acid. A carboxyl group remains; a new ester group forms. Aspirin acetylates cyclooxygenase; biological action needs more than a COOH group. Ester formation does not prove gastrointestinal safety. A pharmacophore describes a pattern of features needed for an interaction, not a guarantee that one retained group preserves all effects."
       }
     },
     {
       "id": "worked-example",
       "type": "workedExample",
       "heading": "Classify and predict from structure",
-      "question": "A molecule used to relieve pain and inflammation contains an aromatic ring, a carboxylic acid, and a branched hydrocarbon region. Classify it, name its groups, and predict two chemical properties.",
-      "coachNote": "Identify groups first, then translate each into a chemical property.",
+      "question": "Identify the functional-group change when salicylic acid is acetylated to aspirin. Can retaining COOH alone prove analgesic activity or stomach safety?",
+      "coachNote": "Describe the group change, then distinguish chemical inference from biological evidence.",
       "steps": [
-        "Function: relieves pain and inflammation, so it's an analgesic, specifically an NSAID.",
-        "Groups present: aromatic ring, carboxylic acid (-COOH), branched hydrocarbon.",
-        "The -COOH gives acidic behaviour and a polar region.",
-        "The hydrocarbon region adds non-polar, hydrophobic character.",
-        "Answer: this profile matches ibuprofen, acidic with mixed polar and non-polar character."
+        "Salicylic acid: carboxyl group and phenolic OH.",
+        "Acetylation converts phenolic OH to an ester; COOH remains.",
+        "Changed structure alters reactivity and biological action.",
+        "Aspirin acetylates cyclooxygenase; COOH alone does not guarantee analgesia.",
+        "Do not infer gastrointestinal safety from ester formation."
       ],
       "durationInFrames": 1320,
-      "caption": "Aromatic plus -COOH plus branched hydrocarbon means ibuprofen, acidic and mixed.",
+      "caption": "A functional-group change alters action; it does not prove safety or efficacy.",
       "voiceover": {
-        "text": "Let's do a structure-reading question, the kind the exam loves. A molecule used to relieve pain and inflammation contains an aromatic ring, a carboxylic acid, and a branched hydrocarbon region. Classify it, name its groups, and predict two chemical properties. Step one, the function. It relieves pain and inflammation, so it's an analgesic, and more specifically a non-steroidal anti-inflammatory, an N-SAID. Step two, name the groups, an aromatic ring, a carboxylic acid, and a branched hydrocarbon region. Step three, translate each group into a property. The carboxylic acid gives acidic behaviour and a polar region. Step four, the branched hydrocarbon region adds non-polar, hydrophobic character. So step five, the answer, this profile matches ibuprofen, an acidic molecule with mixed polar and non-polar character. Notice the method, you identify the groups first, then translate each one into a chemical property. That's the move every structure question rewards."
+        "text": "Salicylic acid contains a carboxyl group and a phenolic hydroxyl group. Acetylating that hydroxyl produces the ester group of aspirin while retaining the carboxyl group. This changes reactivity and biological action. Aspirin acetylates cyclooxygenase; retaining a carboxyl group alone does not guarantee analgesic activity. Nor does forming an ester prove the medicine is gentle on the stomach: aspirin still has important gastrointestinal risks. Chemistry can support a structure-property hypothesis, but biological safety and efficacy require evidence."
       }
     },
     {
@@ -199,19 +284,19 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "Aspirin contains both an ester and a carboxylic acid. Which group makes it mildly acidic, and what happens to that group in the basic small intestine at pH around 8?",
+      "question": "Aspirin contains both an ester and a carboxylic acid. Which group makes it mildly acidic, and what happens to that group in an illustrative intestinal environment at pH 8?",
       "pausePrompt": "Pause and reason it through.",
       "answerSteps": [
         "The carboxylic acid (-COOH) is responsible for the acidity.",
         "In a basic environment, the -COOH donates its proton.",
         "It forms the carboxylate anion, -COO minus.",
         "The ionised form is more water-soluble.",
-        "Answer: the -COOH ionises to -COO minus, raising water solubility for absorption."
+        "Answer: the -COOH ionises to -COO minus, generally increasing aqueous solubility; absorption also depends on permeability and other factors."
       ],
-      "durationInFrames": 1020,
+      "durationInFrames": 1132,
       "caption": "The -COOH ionises to -COO minus in the intestine, raising water solubility.",
       "voiceover": {
-        "text": "Quick check, linking a group to its behaviour. Aspirin contains both an ester and a carboxylic acid. Which group makes it mildly acidic, and what happens to that group in the basic environment of the small intestine, around pH eight? Pause and reason it through. Right, let's check it. Step one, the carboxylic acid group, C-O-O-H, is the one responsible for the acidity. Step two, in a basic environment, that group donates its proton. Step three, it forms the carboxylate anion, C-O-O minus. Step four, that ionised form is more water-soluble. So the answer, the carboxylic acid ionises to the carboxylate anion in the intestine, and that raises the water solubility, which helps absorption. We'll quantify this exact behaviour next lesson with the Henderson-Hasselbalch equation."
+        "text": "Quick check Aspirin contains both an ester and a carboxylic acid. Which group makes it mildly acidic, and what happens to that group in an illustrative intestinal environment at pH 8? The carboxylic acid (-COOH) is responsible for the acidity. In a basic environment, the -COOH donates its proton. It forms the carboxylate anion, -COO minus. The ionised form is more water-soluble. Answer: the -COOH ionises to -COO minus, generally increasing aqueous solubility; absorption also depends on permeability and other factors."
       }
     },
     {
@@ -222,15 +307,16 @@
         "Medicines classify by function and by chemical structure.",
         "Functional groups control polarity, acidity, reactivity, and binding.",
         "Aspirin: ester plus carboxylic acid; paracetamol: phenol plus amide.",
-        "The pharmacophore is the part that must stay for activity to remain.",
+        "A pharmacophore describes features supporting a particular biological interaction.",
         "Same therapeutic use does not mean same structure or mechanism."
       ],
       "finalPrompt": "Comparing two drugs? Identify the groups first, then reason about behaviour.",
       "durationInFrames": 1020,
       "caption": "Five takeaways: two classifications, groups, key structures, pharmacophore, the trap.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, medicines can be classified two ways, by biological function and by chemical structure. Second, functional groups are the levers, they control polarity, acidity, reactivity, and binding. Third, learn the key structures, aspirin carries an ester plus a carboxylic acid, while paracetamol carries a phenol plus an amide. Fourth, the pharmacophore is the part of the molecule that must be preserved for the activity to remain, which is why a tiny change can have a big effect. And fifth, the trap, same therapeutic use does not mean same structure or mechanism. So whenever you compare two drugs, identify the functional groups first, then reason about behaviour. Next lesson, we make this quantitative with acid-base chemistry and the Henderson-Hasselbalch equation. See you there."
+        "text": "Lock it in Medicines classify by function and by chemical structure. Functional groups control polarity, acidity, reactivity, and binding. Aspirin: ester plus carboxylic acid; paracetamol: phenol plus amide. A pharmacophore describes features supporting a particular biological interaction. Same therapeutic use does not mean same structure or mechanism."
       }
     }
-  ]
+  ],
+  "productionNotes": "Syllabus audit: medicine action, pharmacokinetics, chirality and delivery details are enrichment. Do not count these lessons as replacing the required organic-analysis spectroscopy coverage (IR, NMR and mass spectrometry)."
 }

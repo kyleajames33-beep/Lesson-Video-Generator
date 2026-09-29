@@ -11,7 +11,12 @@
     "classify the elements based on their properties and position in the periodic table through their physical and chemical properties"
   ],
   "moduleLessonCount": 20,
-  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-5", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH11-8",
+    "CH11/12-4",
+    "CH11/12-5",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "How do the properties of substances help us to classify and separate them?",
   "lessonIntent": "Students can explain why the table is ordered by atomic number and read an element's group, period, and key properties from its position.",
   "examSkill": "Use atomic number to place an element, then predict valence electrons, likely ion charge, and group behaviour from its position.",
@@ -50,16 +55,22 @@
       "body": "The modern table runs by increasing atomic number, so elements with the same valence electrons line up in groups.",
       "image": "l15PeriodicTableOrganisation",
       "bullets": [
-        {"text": "Order is increasing atomic number Z, not atomic mass."},
-        {"text": "Periods are rows; period number is the number of occupied shells."},
-        {"text": "Groups are columns; main-group number is the valence electron count."}
+        {
+          "text": "Order is increasing atomic number Z, not atomic mass."
+        },
+        {
+          "text": "Periods are rows; period number is the number of occupied shells."
+        },
+        {
+          "text": "Groups are columns; Groups 1–2 have 1–2 valence electrons; Groups 13–18 generally have 3–8, with helium having 2."
+        }
       ],
       "secondary": "Properties repeat because chemistry depends on valence electrons, and elements in a group share the same valence count.",
       "callout": "Same column means same valence electrons means similar chemistry.",
-      "durationInFrames": 1170,
+      "durationInFrames": 1865,
       "caption": "Order by atomic number; periods = shells, groups = valence electrons.",
       "voiceover": {
-        "text": "Let's get the layout right. The modern periodic table is ordered by increasing atomic number, the number of protons, not by mass. And the structure carries real meaning. The horizontal rows are called periods, and the period number tells you how many electron shells an element has occupied. The vertical columns are called groups, and for the main-group elements, the group number tells you how many valence electrons the atom has. Now here's why the whole thing repeats. Chemistry is driven by valence electrons. Elements stacked in the same column have the same number of valence electrons, so they behave in similar ways. Mendeleev actually spotted this repeating pattern before anyone understood electrons, which is why his table worked at all. He'd accidentally lined up the valence electrons."
+        "text": "Let's get the layout right. The modern periodic table is ordered by increasing atomic number, the number of protons, not by mass. And the structure carries real meaning. The horizontal rows are called periods, and the period number tells you how many electron shells an element has occupied. The vertical columns are called groups, and for main-group elements, groups one and two have one and two valence electrons; groups thirteen to eighteen generally have three to eight, with helium having two. Now here's why the whole thing repeats. Chemistry is driven by valence electrons. Elements stacked in the same column have the same number of valence electrons, so they behave in similar ways. Mendeleev actually spotted this repeating pattern before anyone understood electrons, which is why his table worked at all. He'd accidentally lined up the valence electrons."
       }
     },
     {
@@ -67,10 +78,18 @@
       "type": "definition",
       "heading": "The words you need",
       "bullets": [
-        {"text": "Period: a horizontal row; its number is the number of occupied shells."},
-        {"text": "Group: a vertical column; its number gives valence electrons (main group)."},
-        {"text": "Valence electrons: the outer-shell electrons that control bonding."},
-        {"text": "Block (s, p, d, f): the region named for the subshell being filled."}
+        {
+          "text": "Period: a horizontal row; its number is the number of occupied shells."
+        },
+        {
+          "text": "Group: a vertical column; its number gives valence electrons (main group)."
+        },
+        {
+          "text": "Valence electrons: the outer-shell electrons that control bonding."
+        },
+        {
+          "text": "Block (s, p, d, f): the region named for the subshell being filled."
+        }
       ],
       "callout": "Period counts shells; group counts valence electrons.",
       "durationInFrames": 960,
@@ -92,9 +111,15 @@
         "delay": 18
       },
       "bullets": [
-        {"text": "Metals on the left and d-block lose electrons to form cations."},
-        {"text": "Non-metals on the upper right gain electrons to form anions."},
-        {"text": "Metalloids sit on the staircase boundary between the two."}
+        {
+          "text": "Metals on the left and d-block lose electrons to form cations."
+        },
+        {
+          "text": "Non-metals on the upper right gain electrons to form anions."
+        },
+        {
+          "text": "Metalloids sit on the staircase boundary between the two."
+        }
       ],
       "secondary": "Metal reactivity increases down a group, while non-metal reactivity decreases down a group.",
       "callout": "Left side loses electrons; upper right gains them.",
@@ -111,12 +136,37 @@
       "body": "Each main group has a name and a signature behaviour set by its valence electron count.",
       "diagram": {
         "type": "table",
-        "headers": ["Group", "Name", "Valence e⁻", "Signature"],
+        "headers": [
+          "Group",
+          "Name",
+          "Valence e⁻",
+          "Signature"
+        ],
         "rows": [
-          ["1", "Alkali metals", "1", "Very reactive; react with water → H₂"],
-          ["2", "Alkaline earth", "2", "Reactive; form 2+ ions"],
-          ["17", "Halogens", "7", "Reactive non-metals; form 1− ions"],
-          ["18", "Noble gases", "8 (He: 2)", "Full shell; unreactive"]
+          [
+            "1",
+            "Alkali metals",
+            "1",
+            "Very reactive; react with water → H₂"
+          ],
+          [
+            "2",
+            "Alkaline earth",
+            "2",
+            "Reactive; form 2+ ions"
+          ],
+          [
+            "17",
+            "Halogens",
+            "7",
+            "Reactive non-metals; form 1− ions"
+          ],
+          [
+            "18",
+            "Noble gases",
+            "8 (He: 2)",
+            "Full shell; unreactive"
+          ]
         ],
         "delay": 18
       },

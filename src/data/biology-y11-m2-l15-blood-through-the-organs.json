@@ -395,16 +395,16 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "Two blood samples are taken moments apart. Both are low in oxygen. Sample A is high in urea; sample B is low in urea. Which organ has each sample just left?",
-      "pausePrompt": "Pause: oxygen can't tell them apart. What can?",
+      "question": "Matched entry–exit blood samples show urea rises across organ A and falls across organ B. Under controlled conditions, identify each from the candidates liver and kidney.",
+      "pausePrompt": "Pause: which organ produces urea and which removes it?",
       "answerSteps": [
-        "Both are low in O₂, so both have passed through respiring tissue; oxygen can't tell them apart.",
-        "Sample A, high urea: only the liver adds urea, so it has just left the liver (hepatic vein).",
-        "Sample B, low urea: the kidney removes urea, so it has just left the kidney (renal vein) ✓"
+        "A: liver; net urea production increases urea in outgoing blood.",
+        "B: kidney; net urea removal decreases urea in outgoing blood.",
+        "Use controlled entry–exit changes; absolute high/low urea alone is insufficient."
       ],
-      "caption": "High urea: just left the liver. Low urea: just left the kidney.",
+      "caption": "Paired entry–exit measurements support organ identification.",
       "voiceover": {
-        "text": "Quick check. Two blood samples are taken moments apart. Both are low in oxygen. Sample A is high in urea, and sample B is low in urea. Which organ has each one just left? Pause, and think about which substance can actually tell them apart. Okay. Low oxygen just tells you both have passed through respiring tissue, so it can't separate them. Urea can. Only the liver adds urea, so sample A has just left the liver. The kidney removes urea, so sample B has just left the kidney. Two ends of one pathway."
+        "text": "Quick check. Matched entry and exit blood samples are taken across two healthy organs, with blood flow and sampling conditions controlled. Urea concentration rises across organ A and falls across organ B. The candidate organs are liver and kidney. Which is which? Pause. A is the liver, which produces urea from amino-acid nitrogen. B is the kidney, which removes a net amount of urea into urine. Entry-to-exit changes support the identification. One isolated sample described as high or low in urea would not uniquely identify an organ."
       },
       "durationInFrames": 1218
     },

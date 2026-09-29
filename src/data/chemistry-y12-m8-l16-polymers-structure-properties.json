@@ -8,11 +8,17 @@
   "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
   "syllabusModule": "Module 8: Applying Chemical Ideas",
   "syllabusDotPoints": [
-    "model and compare the structure, properties and uses of addition polymers of ethylene and related monomers",
-    "model and compare the structure, properties and uses of condensation polymers"
+    "Revision of Module 7 polymer structure–property relationships; does not replace Module 8 organic-analysis spectroscopy. (Audit mapping paraphrase, not an official quotation.)"
   ],
   "moduleLessonCount": 16,
-  "nesaOutcomes": ["CH12-15", "CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-15",
+    "CH11/12-1",
+    "CH11/12-2",
+    "CH11/12-3",
+    "CH11/12-4",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "What are the properties and uses of polymers?",
   "lessonIntent": "Students can distinguish addition from condensation polymers and link chain length, branching, cross-linking and intermolecular forces to polymer properties.",
   "examSkill": "Explain polymer properties from structure, including LDPE versus HDPE, and avoid attributing differences to thickness alone.",
@@ -53,12 +59,31 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Polymer",
-        "props": {"mode": "types", "beats": [249, 318, 349, 388, 450, 480, 558, 627, 681]}
+        "props": {
+          "mode": "types",
+          "beats": [
+            249,
+            318,
+            349,
+            388,
+            450,
+            480,
+            558,
+            627,
+            681
+          ]
+        }
       },
       "bullets": [
-        {"text": "Addition: alkene monomers join across the double bond, no by-product."},
-        {"text": "Condensation: bifunctional monomers react and lose a small molecule."},
-        {"text": "The presence or absence of a by-product is the key distinction."}
+        {
+          "text": "Addition: alkene monomers join across the double bond, no by-product."
+        },
+        {
+          "text": "Condensation: bifunctional monomers react and lose a small molecule."
+        },
+        {
+          "text": "The presence or absence of a by-product is the key distinction."
+        }
       ],
       "secondary": "Polyethylene from ethene is the classic addition polymer. Nylon and polyester are condensation polymers, losing water or HCl as they form.",
       "callout": "By-product or no by-product? That's the test.",
@@ -73,10 +98,18 @@
       "type": "definition",
       "heading": "The words you need",
       "bullets": [
-        {"text": "Thermoplastic: softens on heating, can be remoulded; no permanent cross-links."},
-        {"text": "Thermosetting polymer: heavily cross-linked, decomposes rather than melts."},
-        {"text": "Cross-linking: covalent bonds between chains, raising stiffness and melting point."},
-        {"text": "Microplastics: fragments under 5 mm, persistent in ecosystems."}
+        {
+          "text": "Thermoplastic: softens on heating, can be remoulded; no permanent cross-links."
+        },
+        {
+          "text": "Thermosetting polymer: heavily cross-linked, decomposes rather than melts."
+        },
+        {
+          "text": "Cross-linking: covalent bonds between chains, raising stiffness and melting point."
+        },
+        {
+          "text": "Microplastics: fragments under 5 mm, persistent in ecosystems."
+        }
       ],
       "callout": "Cross-linking is what makes a thermoset permanent.",
       "durationInFrames": 990,
@@ -91,9 +124,15 @@
       "heading": "The named polymers",
       "body": "The course names several common polymers in each class. They share a formation style but differ in their groups.",
       "bullets": [
-        {"text": "Addition: polyethylene, polypropylene, PVC, polystyrene, PTFE."},
-        {"text": "Condensation: nylon-6,6 (polyamide), PET (polyester), polycarbonate."},
-        {"text": "Side groups change packing, intermolecular forces, and properties."}
+        {
+          "text": "Addition: polyethylene, polypropylene, PVC, polystyrene, PTFE."
+        },
+        {
+          "text": "Condensation: nylon-6,6 (polyamide), PET (polyester), polycarbonate."
+        },
+        {
+          "text": "Side groups change packing, intermolecular forces, and properties."
+        }
       ],
       "secondary": "PVC is chloro-substituted and chemically resistant. PTFE is fluorinated and very inert. Nylon-6,6 has amide links, the -CO-NH- bonds we met in functional groups.",
       "callout": "Same backbone style, different side groups, different behaviour.",
@@ -105,7 +144,22 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Polymer",
-        "props": {"mode": "named", "beats": [71, 112, 154, 181, 229, 332, 524, 578, 620, 661, 674]}
+        "props": {
+          "mode": "named",
+          "beats": [
+            71,
+            112,
+            154,
+            181,
+            229,
+            332,
+            524,
+            578,
+            620,
+            661,
+            674
+          ]
+        }
       }
     },
     {
@@ -114,9 +168,15 @@
       "heading": "Structure controls properties",
       "body": "Polymer properties aren't random. Flexibility, strength, and melting point all depend on chain structure and how strongly chains interact.",
       "bullets": [
-        {"text": "Longer chains give higher strength and a higher melting range."},
-        {"text": "Branching reduces close packing, so softer and more flexible."},
-        {"text": "Cross-linking gives a rigid network, thermoset, that cannot remelt."}
+        {
+          "text": "Longer chains give higher strength and a higher melting range."
+        },
+        {
+          "text": "Branching reduces close packing, so softer and more flexible."
+        },
+        {
+          "text": "Cross-linking gives a rigid network, thermoset, that cannot remelt."
+        }
       ],
       "secondary": "Stronger intermolecular forces, like the hydrogen bonding in nylon and Kevlar, give higher tensile strength and thermal resistance. That's Kevlar's secret.",
       "callout": "Chains, branching, cross-links, and forces, four dials.",
@@ -128,7 +188,17 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Polymer",
-        "props": {"mode": "dials", "beats": [245, 272, 400, 529, 644, 752]}
+        "props": {
+          "mode": "dials",
+          "beats": [
+            245,
+            272,
+            400,
+            529,
+            644,
+            752
+          ]
+        }
       }
     },
     {
@@ -168,7 +238,7 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "A polymer sample is rigid and chars instead of melting when heated, and cannot be remoulded. What structural feature explains this, and what class is it?",
+      "question": "A known cross-linked polymer sample is rigid, chars rather than melts, and cannot be remoulded. Explain the structure-property link and identify its class.",
       "pausePrompt": "Pause and reason it through.",
       "answerSteps": [
         "Not melting, and charring instead, points to a network that can't flow.",
@@ -177,10 +247,10 @@
         "Heat decomposes the network rather than melting it.",
         "Answer: permanent cross-linking, so it's a thermosetting polymer."
       ],
-      "durationInFrames": 960,
+      "durationInFrames": 2070,
       "caption": "Rigid, chars not melts, can't remould: cross-linked thermoset.",
       "voiceover": {
-        "text": "Quick check, classifying from behaviour. A polymer sample is rigid, and when heated it chars instead of melting, and it cannot be remoulded. What structural feature explains this, and what class is it? Pause and reason it through. Right, let's check it. Step one, the fact that it doesn't melt and chars instead points to a network structure that can't flow when heated. Step two, the fact that it cannot be remoulded tells us the chains are locked together permanently. Step three, that's the signature of permanent covalent cross-links between the chains, forming a rigid network. Step four, so heat decomposes the network rather than melting it. So the answer, the feature is permanent cross-linking, which means this is a thermosetting polymer, not a thermoplastic. A thermoplastic would have softened and flowed instead."
+        "text": "Quick check, classifying from behaviour. A polymer sample is rigid, and when heated it chars instead of melting, and it cannot be remoulded. What structural feature explains this, and what class is it? Pause and reason it through. Right, let's check it. Step one, the fact that it doesn't melt and chars instead points to a network structure that can't flow when heated. Step two, the fact that it cannot be remoulded tells us the chains are locked together permanently. Step three, that's the signature of permanent covalent cross-links between the chains, forming a rigid network. Step four, so heat decomposes the network rather than melting it. So the answer, the feature is permanent cross-linking, which means this is a thermosetting polymer, not a thermoplastic. A thermoplastic would have softened and flowed instead. The sample is specified to be cross-linked; charring alone is not unique proof because some uncross-linked polymers also decompose before melting."
       }
     },
     {
@@ -201,5 +271,6 @@
         "text": "Let's lock it in, and this closes out Module 8. Five things to take away. First, addition polymers form from alkene monomers with no by-product, while condensation polymers form by losing a small molecule like water or hydrogen chloride. Second, know the named examples, addition gives polyethylene, polypropylene, P-V-C, polystyrene, and P-T-F-E, while condensation gives nylon-six-six, P-E-T, and polycarbonate. Third, longer chains and stronger intermolecular forces raise strength, while branching reduces packing and raises flexibility. Fourth, cross-linking creates thermosets, which decompose rather than melt. And fifth, the trap, property differences come from structure and intermolecular forces, not just thickness. So in any polymer question, explain every property from the chain structure and the forces between chains. That's the whole module. Well done finishing Module 8."
       }
     }
-  ]
+  ],
+  "productionNotes": "2017 syllabus mapping checked: Revision of Module 7 polymer structure–property relationships; does not replace Module 8 organic-analysis spectroscopy."
 }

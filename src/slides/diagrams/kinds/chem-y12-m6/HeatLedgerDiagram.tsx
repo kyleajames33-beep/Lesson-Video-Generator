@@ -47,7 +47,7 @@ export const HeatLedgerDiagram = ({steps = [], markers, floor, formula, numbers 
 		const lo = 40, hi = 62;
 		const ky = (kj: number) => Y0 + ((kj - lo) / (hi - lo)) * (Y1 - Y0);
 		return (
-			<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Enthalpy of neutralisation scale with −57 kJ/mol as the maximum" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+			<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Enthalpy of neutralisation scale for comparing measured values" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 				<DioramaDefs id={ID} />
 				<g opacity={fadeAt(frame, 0, 14)}>
 					<rect x={x - 22} y={Y0 - 10} width={44} height={Y1 - Y0 + 60} rx={12} fill="#d3cfc7" stroke="#8f8b83" strokeWidth={2} />

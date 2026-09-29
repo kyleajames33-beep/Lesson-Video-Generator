@@ -75,38 +75,27 @@
       "body": "Every rate problem asks one of three questions. The key is to identify which factor is changing and explain the mechanism using collision theory.",
       "bullets": [
         {
-          "text": "Temperature ↑ → more molecules exceed Ea → rate ↑. Does NOT change total yield.",
-          "at": 4
+          "text": "Temperature ↑ → more molecules exceed Ea → rate ↑. Equilibrium yield can change with temperature; distinguish rate from extent."
         },
         {
-          "text": "Concentration ↑ → more particles per volume → collision frequency ↑ → rate ↑.",
-          "at": 13
+          "text": "Concentration ↑ → more particles per volume → collision frequency ↑ → rate ↑."
         },
         {
-          "text": "Surface area ↑ → more exposed reactant → more collision sites → rate ↑.",
-          "at": 21
+          "text": "Surface area ↑ → more exposed reactant → more collision sites → rate ↑."
         },
         {
-          "text": "Catalyst → lowers Ea → more molecules have sufficient energy → rate ↑. ΔH unchanged.",
-          "at": 29
+          "text": "Catalyst → lowers Ea → more molecules have sufficient energy → rate ↑. ΔH unchanged."
         },
         {
-          "text": "Energy profile: Ea is the barrier height. ΔH is the net energy change. Exo = products lower.",
-          "at": 38
+          "text": "Energy profile: Ea is the barrier height. ΔH is the net energy change. Exo = products lower."
         }
       ],
       "callout": "Name the factor. State the mechanism. Confirm ΔH and yield are unchanged.",
       "image": "cp3DecisionTree",
       "durationInFrames": 1680,
       "caption": "Five discriminators map every rate scenario to the correct factor and mechanism.",
-      "revealDelays": {
-        "heading": 15,
-        "callout": 1380,
-        "diagram": 90
-      },
       "voiceover": {
-        "text": "Every rate problem asks one of three questions. Higher temperature means more molecules exceed the activation energy, so rate increases. It does not change total yield. Higher concentration means more particles per unit volume, so collision frequency increases. Higher surface area means more exposed reactant, so more collision sites. A catalyst lowers the activation energy, so more molecules have sufficient energy. Enthalpy change is unchanged. On an energy profile, E a is the barrier height and delta H is the net energy change. Exothermic means products are lower than reactants. Name the factor. State the mechanism. Confirm delta H and yield are unchanged.",
-        "audioFile": "public/audio/Chemistry-Y11-M3-Checkpoint3/decision-tree.58f3cff23c83.mp3"
+        "text": "Every rate problem asks one of three questions. Higher temperature means more molecules exceed the activation energy, so rate increases. It changes rate; temperature can also change equilibrium yield. Higher concentration means more particles per unit volume, so collision frequency increases. Higher surface area means more exposed reactant, so more collision sites. A catalyst lowers the activation energy, so more molecules have sufficient energy. Enthalpy change is unchanged. On an energy profile, E a is the barrier height and delta H is the net energy change. Exothermic means products are lower than reactants. Name the factor. State the mechanism. A catalyst leaves delta H and equilibrium yield unchanged at fixed temperature; temperature and reactant amounts require separate yield analysis."
       }
     },
     {
@@ -151,7 +140,7 @@
       "id": "walkthrough-2",
       "type": "workedExample",
       "heading": "Walkthrough 2: Explain the Boltzmann distribution",
-      "question": "A Maxwell-Boltzmann distribution shows two curves at different temperatures. The higher-temperature curve is flatter and shifted to the right. Explain why this means the reaction rate is faster at higher temperature, and state whether the total product yield at equilibrium would change.",
+      "question": "Explain how higher temperature affects rate, and what additional information is needed to predict equilibrium yield.",
       "coachNote": "Target: higher T shifts distribution → more molecules past Ea → more effective collisions.",
       "unitCancel": {
         "left": "molecules",
@@ -159,28 +148,17 @@
         "result": "fraction with E ≥ Ea"
       },
       "steps": [
-        "Known: Higher T curve is flatter, shifted right. More area past Ea.",
-        "Find: Explain faster rate. State effect on equilibrium yield.",
-        "Mechanism: Higher T increases average kinetic energy of molecules.",
-        "Distribution shift: curve flattens and shifts right — some molecules lose energy, more gain energy.",
-        "Key result: area under curve past Ea increases → more molecules have sufficient energy to react.",
-        "Collision theory: more molecules with E ≥ Ea → more effective collisions per second → rate ↑.",
-        "Equilibrium yield: temperature affects rate, not equilibrium position for this reaction. Yield unchanged.",
-        "Answer: Higher T increases fraction with E ≥ Ea → more effective collisions → faster rate. Yield unchanged."
+        "Higher temperature increases the fraction with E ≥ Ea.",
+        "More effective collisions generally increase rate.",
+        "Temperature can also change K and equilibrium composition.",
+        "Heating favours the endothermic direction; need ΔH to predict yield direction.",
+        "A catalyst changes rate, not K at fixed temperature."
       ],
       "image": "cp3Walkthrough2Boltzmann",
       "durationInFrames": 1680,
-      "caption": "Higher T → flatter, right-shifted curve → more molecules past Ea → faster rate.",
-      "revealDelays": {
-        "heading": 15,
-        "question": 60,
-        "coachNote": 180,
-        "stepsStart": 240,
-        "stepInterval": 110
-      },
+      "caption": "Kinetics and equilibrium are separate questions.",
       "voiceover": {
-        "text": "Walkthrough two: explain the Boltzmann distribution. Two curves at different temperatures. The higher temperature curve is flatter and shifted right. Explain why rate is faster, and state whether equilibrium yield changes. Higher temperature increases average kinetic energy. The distribution flattens and shifts right. More molecules gain enough energy to exceed E a. The area under the curve past E a increases. More molecules have sufficient energy, so more effective collisions per second, so rate increases. Temperature affects how fast the reaction reaches equilibrium, but not the equilibrium position for this reaction. Yield is unchanged. Answer: higher temperature increases the fraction of molecules with energy greater than or equal to E a, giving more effective collisions and faster rate. Equilibrium yield unchanged.",
-        "audioFile": "public/audio/Chemistry-Y11-M3-Checkpoint3/walkthrough-2.07b1e915ddb1.mp3"
+        "text": "At a higher temperature, the Maxwell-Boltzmann energy distribution is broader and a larger fraction of particles have enough energy to react. That generally increases the rate. But a faster rate does not establish unchanged equilibrium yield. Temperature also affects the equilibrium constant: heating favours the endothermic direction. Without the reaction enthalpy, we cannot specify the direction of its equilibrium-yield change. A catalyst, by contrast, speeds both directions without changing the equilibrium constant at fixed temperature."
       }
     },
     {
@@ -200,23 +178,16 @@
         "Scenario A: MnO₂ added to H₂O₂ → rapid decomposition. Factor: catalyst.",
         "Mechanism A: MnO₂ lowers Ea → more H₂O₂ molecules have sufficient energy → rate ↑.",
         "Scenario B: Glow stick brighter in hot water. Factor: temperature.",
-        "Mechanism B: Higher T → more molecules exceed Ea → more effective collisions → rate ↑. Total light unchanged.",
+        "Mechanism B: Higher T → more molecules exceed Ea → more effective collisions → rate ↑. Total light depends on quantum yield, competing processes and conditions.",
         "Scenario C: Powdered zinc faster than ribbon. Factor: surface area.",
         "Mechanism C: Powder has more exposed Zn → more collision sites with HCl → rate ↑.",
         "Answer: A = catalyst lowers Ea. B = temperature increases molecules past Ea. C = surface area increases collision sites."
       ],
       "image": "cp3Walkthrough3Factors",
-      "durationInFrames": 1680,
+      "durationInFrames": 1980,
       "caption": "Catalyst lowers Ea. Temperature increases molecules past Ea. Surface area increases collision sites.",
-      "revealDelays": {
-        "heading": 15,
-        "question": 60,
-        "coachNote": 180,
-        "stepsStart": 240,
-        "stepInterval": 100
-      },
       "voiceover": {
-        "text": "Walkthrough three is about identifying the rate factor in each case. In scenario A, manganese dioxide is added to hydrogen peroxide and it decomposes rapidly, so the factor here is a catalyst, because the manganese dioxide lowers the activation energy and lets more peroxide molecules react, pushing the rate up. In scenario B, the glow stick burns brighter in hot water, so the factor is temperature, since a higher temperature pushes more molecules past E a and gives more effective collisions, though the total light produced stays the same. And in scenario C, powdered zinc reacts faster than ribbon with acid, so the factor is surface area, because the powder exposes far more zinc and so offers more collision sites. So A is a catalyst lowering E a, B is temperature pushing molecules past E a, and C is surface area adding collision sites."
+        "text": "Walkthrough three is about identifying the rate factor in each case. In scenario A, manganese dioxide is added to hydrogen peroxide and it decomposes rapidly, so the factor here is a catalyst, because the manganese dioxide lowers the activation energy and lets more peroxide molecules react, pushing the rate up. In scenario B, the glow stick burns brighter in hot water, so the factor is temperature, since a higher temperature pushes more molecules past E a and gives more effective collisions, but brightness alone does not establish an unchanged total light output. And in scenario C, powdered zinc reacts faster than ribbon with acid, so the factor is surface area, because the powder exposes far more zinc and so offers more collision sites. So A is a catalyst lowering E a, B is temperature pushing molecules past E a, and C is surface area adding collision sites."
       }
     },
     {
@@ -275,25 +246,17 @@
       "finalPrompt": "Does the collision have enough energy and the right orientation? Which factor increases effective collision frequency?",
       "image": "cp3SummaryClosing",
       "points": [
-        "Temperature ↑: more molecules exceed Ea → rate ↑. Yield unchanged.",
+        "Temperature ↑: more molecules exceed Ea → rate ↑. Equilibrium-yield change requires ΔH and conditions.",
         "Concentration ↑: more particles per volume → collision frequency ↑ → rate ↑.",
         "Surface area ↑: more exposed reactant → more collision sites → rate ↑.",
         "Catalyst: lowers Ea → more molecules have sufficient energy → rate ↑. ΔH unchanged.",
         "Energy profile: Ea = barrier height. ΔH = net energy change. Exo = products lower.",
         "Rate factors affect how fast. Equilibrium and limiting reactant determine how much."
       ],
-      "durationInFrames": 1440,
+      "durationInFrames": 1569,
       "caption": "Six takeaways and the ultimate rate decision rule.",
-      "revealDelays": {
-        "heading": 18,
-        "takeawaysStart": 60,
-        "takeawayInterval": 100,
-        "finalPrompt": 780,
-        "diagram": 40
-      },
       "voiceover": {
-        "text": "Six takeaways for checkpoint three. One: higher temperature means more molecules exceed E a, so rate increases. Yield unchanged. Two: higher concentration means more particles per volume, so collision frequency increases. Three: higher surface area means more exposed reactant, so more collision sites. Four: a catalyst lowers E a, so more molecules have sufficient energy. Delta H unchanged. Five: on an energy profile, E a is barrier height and delta H is net energy change. Exothermic means products are lower. Six: rate factors affect how fast. Equilibrium and limiting reactant determine how much. Decision rule: does the collision have enough energy and the right orientation? Which factor increases effective collision frequency?",
-        "audioFile": "public/audio/Chemistry-Y11-M3-Checkpoint3/summary.7c3ab3dafc72.mp3"
+        "text": "Six takeaways for checkpoint three. One: higher temperature means more molecules exceed E a, so rate increases. Equilibrium-yield change requires ΔH and conditions. Two: higher concentration means more particles per volume, so collision frequency increases. Three: higher surface area means more exposed reactant, so more collision sites. Four: a catalyst lowers E a, so more molecules have sufficient energy. Delta H unchanged. Five: on an energy profile, E a is barrier height and delta H is net energy change. Exothermic means products are lower. Six: rate factors affect how fast. Equilibrium and limiting reactant determine how much. Decision rule: does the collision have enough energy and the right orientation? Which factor increases effective collision frequency?"
       }
     }
   ]

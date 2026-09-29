@@ -44,9 +44,9 @@
       "image": "bioM8L3RunnerGlucose",
       "caption": "Hormones hold blood glucose steady.",
       "voiceover": {
-        "text": "Every meal floods your blood with glucose, yet your blood sugar stays remarkably steady. After a sugary drink it can climb sharply within minutes, and still be back to normal within an hour or two. Two hormones from the pancreas push it up and down like a thermostat, and in an emergency, stress hormones take over. Today we'll describe those hormones, read some real glucose data, and look at what happens to homeostasis when this control fails, in diabetes."
+        "text": "Every meal floods your blood with glucose, yet your blood sugar stays remarkably steady. After a sugary drink it can climb sharply within minutes, and still be back to normal within an hour or two. Two hormones from the pancreas push it up and down like a thermostat, and in an emergency, stress hormones take over. Today we'll describe those hormones, read illustrative glucose and insulin data, and look at what happens to homeostasis when this control fails, in diabetes."
       },
-      "durationInFrames": 1038
+      "durationInFrames": 1119
     },
     {
       "id": "concept-insulin-glucagon",
@@ -109,7 +109,7 @@
           "at": 20
         },
         {
-          "text": "Both raise heart rate and blood glucose.",
+          "text": "Both raise blood glucose; adrenaline also rapidly raises heart rate.",
           "at": 25.7
         }
       ],
@@ -286,25 +286,22 @@
       "id": "concept-data",
       "type": "concept",
       "heading": "Reading a glucose-tolerance test",
-      "body": "Two people drink the same glucose dose. The data shows whose insulin is working.",
+      "body": "Two people drink the same glucose dose. Illustrative glucose data shows recovery, but does not identify the cause alone.",
       "bullets": [
         {
-          "text": "A: 5 → 8 → back to 5 mmol/L.",
-          "at": 8.9
+          "text": "A: 5 → 8 → back to 5 mmol/L."
         },
         {
-          "text": "B: starts at 9, peaks at 16, still 14.",
-          "at": 23.6
+          "text": "B: starts at 9, peaks at 16, still 14."
         },
         {
-          "text": "The test measures the return, not the peak.",
-          "at": 42.5
+          "text": "Interpret fasting, peak and two-hour glucose together."
         }
       ],
-      "callout": "Same dose, different response: the difference is insulin.",
+      "callout": "Glucose data alone cannot distinguish insulin deficiency from resistance.",
       "caption": "Glucose-tolerance test: Person A returns to 5 mmol/L; Person B stays high.",
       "voiceover": {
-        "text": "Here's some data. In a glucose-tolerance test, two people drink the same glucose dose, and their blood glucose is measured over two hours. Person A starts at five millimoles per litre, rises to eight at thirty minutes, falls to six at sixty, and is back to five at one hundred and twenty minutes. That's insulin at work, returning glucose to the set point. Person B, who has untreated diabetes, starts at nine, already high, rises to fifteen, keeps rising to sixteen at sixty minutes, and is still at fourteen after two hours. The glucose never comes back. Since both got the same dose, the difference is in the response. The test is about whether glucose returns, not how high it goes."
+        "text": "Here's some data. In a glucose-tolerance test, two people drink the same glucose dose, and their blood glucose is measured over two hours. Person A starts at five millimoles per litre, rises to eight at thirty minutes, falls to six at sixty, and is back to five at one hundred and twenty minutes. That's insulin at work, returning glucose to the set point. Person B, who has untreated diabetes, starts at nine, already high, rises to fifteen, keeps rising to sixteen at sixty minutes, and is still at fourteen after two hours. Glucose remains elevated during the observed two hours. Since both got the same dose, the difference is in the response. Fasting, peak and two-hour values all matter. Glucose alone cannot distinguish deficient insulin secretion from insulin resistance."
       },
       "diagram": {
         "type": "diorama",
@@ -351,14 +348,77 @@
           ],
           "footer": [
             {
-              "text": "same dose: A returns to 5, B is still 14 at two hours",
+              "text": "Illustrative glucose data: compare with the next insulin graph",
               "at": 1009,
               "amber": true
             }
           ]
         }
       },
-      "durationInFrames": 1542
+      "durationInFrames": 1749
+    },
+    {
+      "id": "concept-hormone-data",
+      "type": "concept",
+      "heading": "Analyse insulin and glucose together",
+      "body": "Illustrative paired data for Person A; hormone and glucose values use different units.",
+      "bullets": [
+        {
+          "text": "At 0, 30, 60 and 120 min: insulin = 20, 80, 50 and 20 µU/mL."
+        },
+        {
+          "text": "Over the same times: glucose = 5, 8, 6 and 5 mmol/L."
+        },
+        {
+          "text": "Insulin rises as glucose rises; glucose then falls as uptake and storage increase."
+        }
+      ],
+      "callout": "A temporal association supports the model; it does not alone establish causation.",
+      "caption": "Illustrative insulin concentrations paired with the preceding glucose series.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Curves",
+        "props": {
+          "x": {
+            "label": "time after drink (min)",
+            "values": [
+              0,
+              30,
+              60,
+              120
+            ]
+          },
+          "y": {
+            "label": "insulin (µU/mL)",
+            "min": 0,
+            "max": 100,
+            "step": 20
+          },
+          "series": [
+            {
+              "label": "Person A",
+              "values": [
+                20,
+                80,
+                50,
+                20
+              ],
+              "at": 90,
+              "color": "accent"
+            }
+          ],
+          "footer": [
+            {
+              "text": "illustrative data; glucose uses a separate axis",
+              "at": 600
+            }
+          ]
+        }
+      },
+      "voiceover": {
+        "text": "Now add actual hormone concentrations to our illustrative dataset. For Person A, insulin is twenty, eighty, fifty and twenty micro units per millilitre at zero, thirty, sixty and one hundred and twenty minutes. At those same times, glucose is five, eight, six and five millimoles per litre. Compare the patterns, not the numerical sizes, because the units differ. Insulin rises when glucose rises. During the next ninety minutes, glucose falls as insulin promotes uptake and storage, and insulin returns towards baseline. This pattern supports the negative feedback model. It does not prove causation on its own, or diagnose the reason Person B remains high."
+      },
+      "durationInFrames": 1550
     },
     {
       "id": "worked-example",
@@ -371,13 +431,13 @@
         "Together they are a negative feedback pair around a set point.",
         "Adrenaline (adrenal medulla) acts fast in fight or flight; cortisol (adrenal cortex) acts slowly in prolonged stress. Both raise blood glucose.",
         "Diabetes: Type 1, little or no insulin made; Type 2, cells resistant to insulin. Either way glucose accumulates (hyperglycaemia).",
-        "Detection still works, but the lowering response fails, so glucose is not returned to the set point: homeostasis is lost ✓"
+        "Insulin secretion and/or responsiveness is impaired, so glucose is not returned to the set point: homeostasis is lost ✓"
       ],
       "caption": "Sources, directions, and where diabetes breaks the loop.",
       "voiceover": {
-        "text": "Here's a full answer. Give every hormone a source and a direction. Insulin, from the pancreas, lowers blood glucose, and glucagon, also from the pancreas, raises it. Together they're a negative feedback pair. Adrenaline, from the adrenal medulla, acts fast, and cortisol, from the adrenal cortex, acts slowly, and both raise blood glucose. Then the analysis. In type one, little or no insulin is made, and in type two, cells are resistant. The body still detects the rise, but the response that lowers glucose fails, so it isn't returned to the set point, and homeostasis is lost."
+        "text": "Here's a full answer. Give every hormone a source and a direction. Insulin, from the pancreas, lowers blood glucose, and glucagon, also from the pancreas, raises it. Together they're a negative feedback pair. Adrenaline, from the adrenal medulla, acts fast, and cortisol, from the adrenal cortex, acts slowly, and both raise blood glucose. Then the analysis. In type one, little or no insulin is made, and in type two, cells are resistant. Insulin secretion and/or tissue responsiveness is impaired, so it isn't returned to the set point, and homeostasis is lost."
       },
-      "durationInFrames": 1254
+      "durationInFrames": 1260
     },
     {
       "id": "misconception",
@@ -419,14 +479,15 @@
         "The pancreas senses and signals; the liver is the main effector.",
         "Adrenaline acts fast, cortisol acts slowly; both raise blood glucose under stress.",
         "Type 1: little or no insulin. Type 2: cells respond poorly. Both leave glucose high.",
-        "A glucose-tolerance test shows insulin's role by whether glucose returns to the set point."
+        "A glucose-tolerance test shows insulin's role by whether glucose returns to the set point.",
+        "Compare insulin and glucose over the same times using their own units; distinguish association from causation."
       ],
       "finalPrompt": "For any hormone, state its source and its direction. For any data, quote the numbers.",
       "caption": "Blood-glucose and stress hormones, and diabetes.",
       "voiceover": {
-        "text": "Let's lock it in. Insulin, from the pancreas, lowers blood glucose, and glucagon, also from the pancreas, raises it. They're a negative feedback pair. The pancreas senses and signals, and the liver is the main effector. Adrenaline acts fast and cortisol acts slowly, and both raise blood glucose under stress. In type one diabetes there's little or no insulin, and in type two the cells respond poorly, but both leave glucose high. And a glucose-tolerance test shows insulin's role by whether glucose comes back to the set point."
+        "text": "Let's lock it in. Insulin, from the pancreas, lowers blood glucose, and glucagon, also from the pancreas, raises it. They're a negative feedback pair. The pancreas senses and signals, and the liver is the main effector. Adrenaline acts fast and cortisol acts slowly, and both raise blood glucose under stress. In type one diabetes there's little or no insulin, and in type two the cells respond poorly, but both leave glucose high. And a glucose-tolerance test shows insulin's role by whether glucose comes back to the set point. Compare hormone and physiological data over the same times, using the correct units, and distinguish association from causation."
       },
-      "durationInFrames": 1146
+      "durationInFrames": 1453
     }
   ]
 }

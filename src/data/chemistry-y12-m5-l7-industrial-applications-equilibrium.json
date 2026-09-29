@@ -67,13 +67,12 @@
           "text": "Pressure is the lucky one: for the Haber process it improves both yield and rate."
         }
       ],
-      "secondary": "At 25°C the Haber Keq is about 6 × 10⁵, so nearly everything would convert, but the rate is essentially zero. Thermodynamically perfect, kinetically useless.",
+      "secondary": "At low temperature the Haber equilibrium strongly favours ammonia, so nearly everything would convert, but the rate is essentially zero. Thermodynamically perfect, kinetically useless.",
       "callout": "Best yield, worst rate; the compromise lives in between.",
       "durationInFrames": 1140,
       "caption": "Temperature trades rate against yield; pressure improves both for the Haber process.",
       "voiceover": {
-        "text": "Here's the idea that explains every industrial decision, the rate yield trade-off. For an exothermic reaction like the Haber process, temperature pulls rate and yield in opposite directions. Drop the temperature and the yield goes up, because the equilibrium constant is larger, but the rate crashes, because the molecules barely have the energy to react. Raise the temperature and the rate takes off, but the yield falls, because the equilibrium constant shrinks. So temperature is a genuine compromise, you can't win on both. Pressure, on the other hand, is the lucky variable for the Haber process, it improves the yield, by shifting toward fewer gas moles, and it improves the rate, by packing the molecules closer together. Here's the punchline that captures the whole dilemma. At room temperature the Haber equilibrium constant is about six times ten to the five, so almost everything would convert to ammonia, but the rate at room temperature is essentially zero. Thermodynamically perfect, kinetically useless.",
-        "audioFile": "public/audio/Chemistry-Y12-M5-L7/concept-tradeoff.c38db3850f86.mp3"
+        "text": "The rate–yield trade-off For an exothermic reaction, temperature pulls rate and yield in opposite directions. Low temperature: higher yield (larger Keq) but a painfully slow rate. High temperature: fast rate but lower yield (smaller Keq). Pressure is the lucky one: for the Haber process it improves both yield and rate. At low temperature the Haber equilibrium strongly favours ammonia, so nearly everything would convert, but the rate is essentially zero. Thermodynamically perfect, kinetically useless."
       },
       "diagram": {
         "type": "diorama",
@@ -233,17 +232,16 @@
       "question": "Explain why the Haber process (N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ mol⁻¹) uses 400–500°C, 150–300 atm, an iron catalyst, and recycling.",
       "coachNote": "Address all four conditions; missing one loses marks.",
       "steps": [
-        "Temperature: a compromise; lower T gives more yield but too slow a rate, and the catalyst is dead below ~300°C.",
+        "Temperature: a compromise; lower T gives more yield but too slow a rate, and the catalysed rate remains too low at sufficiently low temperatures.",
         "Pressure: 4 mol gas → 2 mol gas, so high P boosts yield and rate; the limit is engineering cost.",
-        "Iron catalyst: speeds both rates equally, giving an acceptable rate at moderate T; it does not change yield.",
+        "Iron catalyst: speeds both directions without changing K, giving an acceptable rate at moderate T; it does not change yield.",
         "Recycling: unreacted N₂ and H₂ are returned, lifting ~15% per pass to over 95% overall.",
         "Answer: each condition balances rate against yield for maximum profit ✓"
       ],
-      "durationInFrames": 1440,
+      "durationInFrames": 2700,
       "caption": "Haber: temperature compromise, pressure helps both, catalyst for rate, recycling for total yield.",
       "voiceover": {
-        "text": "Now the classic, justify every condition of the Haber process. Address all four, because missing one costs marks. Temperature, four hundred to five hundred degrees, is a compromise. A lower temperature would shift the exothermic reaction right for a better yield, but the rate would be far too slow, and on top of that the iron catalyst stops working below about three hundred degrees. So you accept a modest yield to get a workable rate. Pressure, one hundred and fifty to three hundred atmospheres. The left side has four moles of gas and the right has two, so high pressure shifts it right for more yield, and it also speeds the reaction by concentrating the gases. You'd push it even higher, except the vessels become too expensive and dangerous, so the limit is engineering cost, not chemistry. The iron catalyst speeds up both rates equally, giving an acceptable rate at that moderate temperature, but it does not change the yield, only the speed. And recycling, the unreacted nitrogen and hydrogen are separated off and returned to the reactor, which lifts that fifteen percent per pass to over ninety-five percent overall. Four conditions, each one balancing rate against yield to maximise profit.",
-        "audioFile": "public/audio/Chemistry-Y12-M5-L7/worked-example-2.e712cd63d89a.mp3"
+        "text": "Now the classic, justify every condition of the Haber process. Address all four, because missing one costs marks. Temperature, four hundred to five hundred degrees, is a compromise. A lower temperature would shift the exothermic reaction right for a better yield, but the rate would be far too slow, and on top of that the iron catalyst stops working below about three hundred degrees. So you accept a modest yield to get a workable rate. Pressure, one hundred and fifty to three hundred atmospheres. The left side has four moles of gas and the right has two, so high pressure shifts it right for more yield, and it also speeds the reaction by concentrating the gases. You'd push it even higher, except the vessels become too expensive and dangerous, so the limit is engineering cost, not chemistry. The iron catalyst speeds up both directions without changing K, giving an acceptable rate at that moderate temperature, but it does not change the yield, only the speed. And recycling, the unreacted nitrogen and hydrogen are separated off and returned to the reactor, which lifts that fifteen percent per pass to over ninety-five percent overall. Four conditions, each one balancing rate against yield to maximise profit."
       }
     },
     {
@@ -265,20 +263,19 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "At 25°C the Haber Keq is about 6 × 10⁵, yet plants run hot at 450°C. Why not run at 25°C for the far higher yield?",
+      "question": "At low temperature the Haber equilibrium strongly favours ammonia, yet plants run hot at 450°C. Why not run at 25°C for the far higher yield?",
       "pausePrompt": "Pause and reason it through.",
       "answerSteps": [
         "A large Keq means equilibrium would lie far toward ammonia, a high yield in principle.",
         "But Keq says nothing about rate; it's a thermodynamic quantity.",
-        "At 25°C the activation energy can't be overcome, so the rate is essentially zero.",
+        "At 25°C very few effective encounters cross the activation barrier, so the rate is essentially zero.",
         "Equilibrium would take an impractically long time to reach, even with a catalyst.",
         "Answer: the yield is great but the rate is hopeless, so you must run hot ✓"
       ],
-      "durationInFrames": 1200,
+      "durationInFrames": 1338,
       "caption": "Huge Keq at 25°C is useless because the rate is near zero — plants must run hot.",
       "voiceover": {
-        "text": "Quick check, and it's the heart of this lesson. At twenty-five degrees the Haber equilibrium constant is about six times ten to the five, which is enormous, yet real plants run hot at four hundred and fifty degrees. Why not just run at room temperature for that far higher yield? Pause and reason it through. Right, let's check it. That huge equilibrium constant does mean the equilibrium lies far toward ammonia, so in principle the yield would be excellent. But here's the catch, the equilibrium constant tells you nothing about rate, it's purely a thermodynamic quantity, about where the balance sits, not how fast you get there. At twenty-five degrees the molecules simply don't have enough energy to clear the activation barrier, so the rate is essentially zero, and equilibrium would take an impractically long time to reach, even with a catalyst. So the yield is wonderful but the rate is hopeless, and that's why you have to run the process hot. Thermodynamically favourable, kinetically inaccessible.",
-        "audioFile": "public/audio/Chemistry-Y12-M5-L7/quick-check.80d73710b2be.mp3"
+        "text": "Quick check At low temperature the Haber equilibrium strongly favours ammonia, yet plants run hot at 450°C. Why not run at 25°C for the far higher yield? A large Keq means equilibrium would lie far toward ammonia, a high yield in principle. But Keq says nothing about rate; it's a thermodynamic quantity. At 25°C very few effective encounters cross the activation barrier, so the rate is essentially zero. Equilibrium would take an impractically long time to reach, even with a catalyst. Answer: the yield is great but the rate is hopeless, so you must run hot ✓"
       }
     },
     {
