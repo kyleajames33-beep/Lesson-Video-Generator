@@ -1,0 +1,342 @@
+{
+  "title": "Cohesion-Tension in Xylem",
+  "subtitle": "How water is pulled to the top of a tree",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 9",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Use the cohesion-tension theory to explain how osmotic pressure, transpiration stream and the cohesion of water molecules control the movement of water and dissolved minerals through the xylem"
+  ],
+  "moduleLessonCount": 25,
+  "lessonIntent": "Students can use the cohesion-tension theory to explain how osmotic pressure, the transpiration stream and cohesion move water and dissolved minerals up the xylem.",
+  "examSkill": "Give a full causal account of each named mechanism in the order water travels, account for the minerals, and state that water is pulled from above, powered by evaporation.",
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, how a tree lifts water a hundred metres with no pump. Let's get into it."
+  },
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Cohesion-Tension in Xylem"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Higher than any suction pump",
+      "body": "A vacuum pump can only suck water about 10 metres up a pipe. A mountain ash lifts water more than ten times higher.",
+      "callout": "If suction can’t do it, what pulls water to the top of a 100-metre tree?",
+      "image": "bioY11M2L3MountainAsh",
+      "caption": "Mountain ash lift water about 100 m, ten times the limit of a suction pump.",
+      "voiceover": {
+        "text": "Here's a physics problem hiding in a forest. A vacuum pump at the top of a pipe can only suck water up about ten metres before it fails. But a mountain ash, one of the tallest trees on Earth, lifts water more than a hundred metres, from its roots to its highest leaves, every single day. There's no pump, no muscle and no motor anywhere in the tree. So what force is strong enough to pull water to the top?"
+      },
+      "durationInFrames": 1020
+    },
+    {
+      "id": "concept-tension",
+      "type": "concept",
+      "heading": "Tension: the pull from transpiration",
+      "body": "Water evaporating from the leaves creates a pull on the water in the xylem.",
+      "bullets": [
+        {
+          "text": "Transpiration: water evaporates from the leaf, mainly out through the stomata.",
+          "at": 2
+        },
+        {
+          "text": "Leaving molecules tug on those below, creating tension (negative pressure).",
+          "at": 8.8
+        },
+        {
+          "text": "The pull comes from the top; the sun’s energy does the lifting.",
+          "at": 19.6
+        },
+        {
+          "text": "The continuous flow from roots to leaves is the transpiration stream.",
+          "at": 28.8
+        }
+      ],
+      "callout": "Pulled from the top, not pushed from the bottom.",
+      "caption": "Evaporation from the leaf creates tension that pulls the water column up.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Column",
+        "props": {
+          "at": 0,
+          "vapour": 60,
+          "tension": 264,
+          "tags": [
+            {
+              "text": "transpiration: vapour out",
+              "at": 60,
+              "anchor": "vapour"
+            },
+            {
+              "text": "stoma",
+              "at": 100,
+              "anchor": "stoma"
+            },
+            {
+              "text": "tension: a pull",
+              "at": 264,
+              "anchor": "tension",
+              "tone": "amber"
+            },
+            {
+              "text": "transpiration stream",
+              "at": 864,
+              "anchor": "column"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Let's start at the top. Transpiration is the evaporation of water from the leaf, mostly as vapour diffusing out through the stomata. As water molecules leave, they tug on the molecules still attached below them. That creates a tension, a negative pressure, or simply a pull, in the xylem. So the driving force comes from the top, and the energy that actually does the lifting is the sun's energy, evaporating the water. The continuous flow this creates, all the way from the roots to the leaves, is called the transpiration stream. It's like sucking on a very long straw."
+      },
+      "durationInFrames": 1248,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-cohesion",
+      "type": "concept",
+      "heading": "Cohesion: why the column doesn’t break",
+      "body": "Hydrogen bonds hold water molecules together, so the column is pulled up as one.",
+      "bullets": [
+        {
+          "text": "Cohesion: attraction between water molecules, from hydrogen bonding.",
+          "at": 4.8
+        },
+        {
+          "text": "It keeps the xylem water as one continuous, unbroken column.",
+          "at": 11.2
+        },
+        {
+          "text": "So a pull at the top lifts the whole column, like a rope.",
+          "at": 17.2
+        },
+        {
+          "text": "Adhesion to the xylem walls also helps support the column.",
+          "at": 24.4
+        }
+      ],
+      "callout": "Cohesion transmits the pull all the way down.",
+      "caption": "Hydrogen bonds hold the water column together, so it moves up as one.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Column",
+        "props": {
+          "at": 0,
+          "vapour": 0,
+          "tension": 0,
+          "cohesion": 144,
+          "tags": [
+            {
+              "text": "hydrogen bonds: cohesion",
+              "at": 144,
+              "anchor": "cohesion",
+              "tone": "amber"
+            },
+            {
+              "text": "one unbroken column",
+              "at": 336,
+              "anchor": "column"
+            },
+            {
+              "text": "adhesion to the wall",
+              "at": 732,
+              "anchor": "tension"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "So why doesn't the water column simply snap under all that pull? Because of cohesion. Cohesion is the attraction between water molecules, and it comes from hydrogen bonding. In the narrow xylem vessels, cohesion holds the water together as one continuous, unbroken column. So when tension pulls at the top, the whole column moves up together, like pulling on a rope. Water molecules also stick to the xylem walls, which is called adhesion, and that helps support the column. But the key point is that cohesion transmits the pull from the leaves all the way down to the roots."
+      },
+      "durationInFrames": 1248,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-whole",
+      "type": "concept",
+      "heading": "Osmotic pressure and the whole theory",
+      "body": "Osmosis feeds water in at the root, cohesion holds the column, and transpiration pulls it up.",
+      "bullets": [
+        {
+          "text": "1. Osmotic pressure draws soil water into root hair cells (lower water potential inside).",
+          "at": 4
+        },
+        {
+          "text": "2. The water joins a continuous xylem column, held by cohesion.",
+          "at": 17.6
+        },
+        {
+          "text": "3. Transpiration creates the tension that pulls the stream upward.",
+          "at": 23.2
+        },
+        {
+          "text": "Dissolved minerals ride along in the transpiration stream.",
+          "at": 28.8
+        }
+      ],
+      "callout": "Osmosis in, cohesion holds, transpiration pulls.",
+      "caption": "Osmosis into the root hair, cohesion in the column, tension from transpiration; minerals ride along.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Column",
+        "props": {
+          "at": 0,
+          "vapour": 0,
+          "tension": 0,
+          "cohesion": 528,
+          "osmosis": 120,
+          "minerals": 864,
+          "tags": [
+            {
+              "text": "osmosis into root hair",
+              "at": 120,
+              "anchor": "roothair",
+              "tone": "amber"
+            },
+            {
+              "text": "cohesion holds the column",
+              "at": 528,
+              "anchor": "cohesion"
+            },
+            {
+              "text": "transpiration pulls",
+              "at": 696,
+              "anchor": "vapour"
+            },
+            {
+              "text": "minerals ride along",
+              "at": 864,
+              "anchor": "minerals"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Now let's put the whole theory together, from the bottom. One. Water enters the root hair cells by osmosis. Their cell sap has a lower water potential than the soil water, so water moves in, and this osmotic pressure supplies the column from below. Two. That water joins the continuous column in the xylem, held together by cohesion. Three. Transpiration from the leaves creates the tension that pulls the whole stream upward. And the dissolved mineral ions, taken up at the root, simply ride along in the transpiration stream. So if a plant stops transpiring, its mineral supply stalls too."
+      },
+      "durationInFrames": 1260,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for the cohesion-tension theory.",
+      "bullets": [
+        {
+          "text": "Transpiration: evaporation of water from the leaves, mainly through the stomata."
+        },
+        {
+          "text": "Transpiration stream: the continuous flow of water from roots to leaves through the xylem."
+        },
+        {
+          "text": "Cohesion: attraction between water molecules (hydrogen bonding) that keeps the column unbroken."
+        },
+        {
+          "text": "Tension: the negative pressure, or pull, created in the xylem as water evaporates."
+        },
+        {
+          "text": "Osmotic pressure: the pressure from osmosis that draws soil water into root hair cells."
+        }
+      ],
+      "callout": "Three named mechanisms: osmotic pressure, transpiration stream, cohesion.",
+      "caption": "Transpiration, transpiration stream, cohesion, tension, osmotic pressure.",
+      "voiceover": {
+        "text": "Let's lock in the terms. Transpiration is the evaporation of water from the leaves, mainly through the stomata. The transpiration stream is the continuous flow of water from the roots to the leaves through the xylem. Cohesion is the attraction between water molecules, from hydrogen bonding, that keeps the column unbroken. Tension is the negative pressure, or pull, created in the xylem as water evaporates. And osmotic pressure is the pressure from osmosis that draws water from the soil into the root hair cells."
+      },
+      "durationInFrames": 1068
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Explain it with all three mechanisms",
+      "question": "Use the cohesion-tension theory to explain how osmotic pressure, the transpiration stream and the cohesion of water molecules control the movement of water and dissolved minerals through the xylem.",
+      "coachNote": "Three named mechanisms, about two marks each. Take them in the order water travels.",
+      "steps": [
+        "Osmotic pressure: root hair sap has a lower water potential than soil water, so water enters by osmosis.",
+        "Cohesion: hydrogen bonds hold the xylem water as one unbroken column, so a pull at the top lifts it all.",
+        "Transpiration stream: evaporation from the leaves creates tension that draws the column up continuously.",
+        "Minerals: dissolved ions are carried up in the moving stream.",
+        "No pump: the energy comes from evaporation, ultimately the sun. Water is pulled, not pushed."
+      ],
+      "caption": "Osmosis in, cohesion holds, transpiration pulls; minerals ride the stream.",
+      "voiceover": {
+        "text": "Here's how to write the full answer. The question names three mechanisms, so give each one a real cause and effect, in the order the water travels. First, osmotic pressure. Root hair cell sap has a lower water potential than the soil water, so water moves in by osmosis. Second, cohesion. Hydrogen bonds hold the water as one unbroken column, so a pull at the top lifts the whole thing. Third, the transpiration stream. Evaporation from the leaves creates tension that draws the column up. Don't forget the minerals, which ride along in the stream. And finish by saying there's no pump. The water is pulled, not pushed."
+      },
+      "durationInFrames": 1356
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Do the roots pump water up?",
+      "body": "Wrong: water is pushed up the xylem from the roots, like water out of a pump.",
+      "secondary": "Right: water is mainly pulled up. Evaporation at the leaves creates tension, and cohesion drags the whole column up together. Root osmotic pressure helps water enter the root, but doesn’t lift it to the canopy.",
+      "mistakeTag": "Pulled, not pushed",
+      "callout": "The pull comes from the leaves.",
+      "caption": "Water is pulled up by transpiration, not pushed up by the roots.",
+      "voiceover": {
+        "text": "Here's the trap. Water is pushed up the xylem from the roots, like water out of a pump. That's backwards. Water is mainly pulled up. Evaporation at the leaves creates the tension, and cohesion drags the whole column up together. Osmotic pressure at the roots does help water get into the root in the first place, but it isn't what lifts the water to the top of a hundred-metre tree. So in an exam, say pulled, not pushed."
+      },
+      "durationInFrames": 996
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A student coats the underside of every leaf of a potted plant with petroleum jelly, sealing the stomata. Predict the effect on the movement of water and dissolved minerals through the xylem, using the cohesion-tension theory.",
+      "pausePrompt": "Pause: which part of the theory has been blocked?",
+      "answerSteps": [
+        "Sealing the stomata very nearly stops transpiration.",
+        "Without evaporation, no tension is created at the top of the xylem.",
+        "Cohesion still holds the column, but it only transmits a pull; it can’t create one.",
+        "Answer: water movement nearly stops, and mineral delivery stalls with it."
+      ],
+      "caption": "Sealed stomata stop transpiration, so there’s no tension and the stream stalls.",
+      "voiceover": {
+        "text": "Quick check. A student coats the underside of every leaf with petroleum jelly, sealing the stomata. Predict what happens to the movement of water and minerals in the xylem. Pause, and work out which part of the theory has been blocked. OK. Sealing the stomata very nearly stops transpiration. With no evaporation, there's no tension at the top of the xylem. Cohesion still holds the column together, but cohesion only passes a pull along, it can't create one. So water movement slows almost to a stop, and because the minerals travel in that stream, their delivery stalls too."
+      },
+      "durationInFrames": 1236
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Transpiration at the leaves creates tension, a pull, in the xylem.",
+        "Cohesion (hydrogen bonding) keeps the water column unbroken, so it moves as one.",
+        "Osmotic pressure draws soil water into root hair cells.",
+        "Dissolved minerals are carried up in the transpiration stream.",
+        "Water is pulled from above, powered by evaporation, not pushed by the roots."
+      ],
+      "finalPrompt": "Cohesion-tension question? Osmosis in, cohesion holds, transpiration pulls.",
+      "caption": "Tension, cohesion and osmotic pressure lift water and minerals up the xylem.",
+      "voiceover": {
+        "text": "Let's lock it in. Transpiration at the leaves creates tension, a pull, in the xylem. Cohesion, from hydrogen bonding, keeps the water column unbroken, so it moves up as one. Osmotic pressure draws soil water into the root hair cells. Dissolved minerals ride up in the transpiration stream. And the water is pulled from above, powered by evaporation, not pushed by the roots. Next lesson, what speeds transpiration up, and what slows it down."
+      },
+      "durationInFrames": 948
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "title": "Plant Requirements",
+  "subtitle": "Gases, water and minerals for photosynthesis and respiration",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Describe the nutrient, water and gas requirements of plants for photosynthesis and respiration"
+  ],
+  "moduleLessonCount": 25,
+  "lessonIntent": "Students can describe the gas, water and mineral nutrient requirements of plants and match each to photosynthesis, respiration or both.",
+  "examSkill": "Tag every requirement to the process it serves, justify why a plant needs both CO₂ and O₂, and explain a deficiency symptom from a missing ion.",
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, everything a plant has to take in, and why. Let's get into it."
+  },
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Plant Requirements"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Built out of thin air?",
+      "body": "Most of the carbon in a gum tree came from carbon dioxide in the air, not the soil. Yet a plant in dark, waterlogged soil still dies.",
+      "callout": "If plants make their own glucose, why do they also need oxygen?",
+      "image": "bioY11M2L2WillowPot",
+      "caption": "A plant’s carbon comes mostly from the air, but it needs much more than that.",
+      "voiceover": {
+        "text": "Here's something surprising. Almost all the carbon in a giant gum tree came from carbon dioxide gas in the air, not from the soil. So in a way, plants build themselves out of thin air. But that's not the whole story. Plants also need water, light, oxygen and minerals from the soil, and a plant sitting in dark, waterlogged soil will still die. So if plants make their own glucose, why do they need oxygen, the very gas they're famous for releasing?"
+      },
+      "durationInFrames": 1044
+    },
+    {
+      "id": "concept-gases",
+      "type": "concept",
+      "heading": "Gases: carbon dioxide and oxygen",
+      "body": "A plant runs photosynthesis and respiration together, so it needs both gases.",
+      "bullets": [
+        {
+          "text": "Carbon dioxide: the raw material for photosynthesis, the carbon in glucose.",
+          "at": 5.2
+        },
+        {
+          "text": "Oxygen: for respiration, which runs in every cell, day and night.",
+          "at": 11.6
+        },
+        {
+          "text": "Daylight: photosynthesis is faster, so leaves take in CO₂ and release O₂ overall.",
+          "at": 26.4
+        },
+        {
+          "text": "Dark: only respiration, so leaves take in O₂. Roots always need O₂.",
+          "at": 34
+        }
+      ],
+      "callout": "Two processes, so two gases.",
+      "caption": "Day: CO₂ in, O₂ out overall. Night: O₂ in, CO₂ out. Roots always take in O₂.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2PlantIO",
+        "props": {
+          "at": 0,
+          "phases": [
+            {
+              "at": 0,
+              "sky": "day",
+              "label": "daylight"
+            },
+            {
+              "at": 1020,
+              "sky": "night",
+              "label": "dark"
+            }
+          ],
+          "flows": [
+            {
+              "at": 156,
+              "where": "leaf",
+              "slot": 1,
+              "dir": "in",
+              "token": "co2",
+              "label": "photosynthesis",
+              "sky": "day"
+            },
+            {
+              "at": 792,
+              "where": "leaf",
+              "slot": 0,
+              "dir": "out",
+              "token": "o2",
+              "label": "released",
+              "sky": "day"
+            },
+            {
+              "at": 1020,
+              "where": "leaf",
+              "slot": 1,
+              "dir": "in",
+              "token": "o2",
+              "label": "respiration",
+              "sky": "night"
+            },
+            {
+              "at": 1020,
+              "where": "leaf",
+              "slot": 2,
+              "dir": "out",
+              "token": "co2",
+              "label": "released",
+              "sky": "night"
+            },
+            {
+              "at": 1272,
+              "where": "root",
+              "slot": 0,
+              "dir": "in",
+              "token": "o2",
+              "label": "roots respire"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "A plant runs two opposite processes at once, so it needs two gases. Carbon dioxide is the raw material for photosynthesis. It's where the carbon in glucose comes from. Oxygen is needed for respiration, which happens in every living cell, day and night, to release energy from glucose. Gases enter and leave mainly through the stomata of the leaves, and across the surface of the roots. In daylight, photosynthesis runs faster than respiration, so overall the leaf takes in carbon dioxide and gives out oxygen. In the dark, only respiration happens, so the leaf takes in oxygen and gives out carbon dioxide, just like an animal. And the roots can't photosynthesise, so they always need oxygen."
+      },
+      "durationInFrames": 1452,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-water",
+      "type": "concept",
+      "heading": "Water: much more than a reactant",
+      "body": "Water is absorbed by the roots and does four jobs in the plant.",
+      "bullets": [
+        {
+          "text": "A reactant in photosynthesis.",
+          "at": 12
+        },
+        {
+          "text": "The solvent and transport medium for minerals and sugars.",
+          "at": 14.4
+        },
+        {
+          "text": "Keeps cells turgid, which supports the plant.",
+          "at": 21.6
+        },
+        {
+          "text": "Cools the leaves as it evaporates (transpiration).",
+          "at": 30.8
+        }
+      ],
+      "callout": "Reactant, transporter, support and coolant.",
+      "caption": "Water: photosynthesis reactant, transport medium, turgor support, transpirational cooling.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2PlantIO",
+        "props": {
+          "at": 0,
+          "flows": [
+            {
+              "at": 24,
+              "where": "root",
+              "slot": 0,
+              "dir": "in",
+              "token": "water",
+              "label": "water in"
+            },
+            {
+              "at": 24,
+              "where": "root",
+              "slot": 1,
+              "dir": "in",
+              "token": "water"
+            },
+            {
+              "at": 108,
+              "where": "stem",
+              "dir": "in",
+              "token": "water"
+            },
+            {
+              "at": 840,
+              "where": "leaf",
+              "slot": 0,
+              "dir": "out",
+              "token": "vapour",
+              "label": "transpiration"
+            }
+          ],
+          "chipsTitle": {
+            "text": "Four uses of water",
+            "at": 360
+          },
+          "chips": [
+            {
+              "text": "reactant in photosynthesis",
+              "at": 360
+            },
+            {
+              "text": "dissolves and transports minerals and sugars",
+              "at": 432
+            },
+            {
+              "text": "keeps cells turgid for support",
+              "at": 648
+            },
+            {
+              "text": "cooling as it evaporates",
+              "at": 924
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Next, water. The roots absorb water from the soil, and it travels up the stem to the leaves. But water isn't just a raw material. It does four different jobs. First, it's a reactant in photosynthesis. Second, it's the solvent that dissolves minerals and sugars, and the medium that carries them around the plant. Third, it keeps cells turgid, or firm, which is what holds up soft stems and leaves. And fourth, water evaporating from the leaves, which is transpiration, cools the plant down. So water is a reactant, a transporter, a support and a coolant."
+      },
+      "durationInFrames": 1212,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-minerals",
+      "type": "concept",
+      "heading": "Mineral nutrients",
+      "body": "Glucose supplies carbon, hydrogen and oxygen. Other elements come from soil ions.",
+      "bullets": [
+        {
+          "text": "Nitrogen (nitrate): amino acids, proteins and DNA.",
+          "at": 18.4
+        },
+        {
+          "text": "Magnesium: chlorophyll.",
+          "at": 23.6
+        },
+        {
+          "text": "Phosphorus: DNA and ATP.",
+          "at": 26
+        },
+        {
+          "text": "Potassium: helps regulate the opening of stomata.",
+          "at": 28.8
+        }
+      ],
+      "callout": "Not in the equations, but still essential.",
+      "caption": "Nitrate, magnesium, phosphate and potassium, and what happens without magnesium.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Minerals",
+        "props": {
+          "leafAt": 0,
+          "ions": [
+            {
+              "ion": "NO₃⁻",
+              "name": "Nitrogen (as nitrate)",
+              "use": "amino acids, proteins, DNA",
+              "at": 552
+            },
+            {
+              "ion": "Mg²⁺",
+              "name": "Magnesium",
+              "use": "chlorophyll",
+              "at": 708
+            },
+            {
+              "ion": "PO₄³⁻",
+              "name": "Phosphorus (as phosphate)",
+              "use": "DNA and ATP",
+              "at": 780
+            },
+            {
+              "ion": "K⁺",
+              "name": "Potassium",
+              "use": "opening of stomata",
+              "at": 864
+            }
+          ],
+          "deficiency": {
+            "index": 1,
+            "at": 972,
+            "text": "no Mg: chlorosis"
+          }
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "If a plant makes glucose from carbon dioxide and water, why does it need anything from the soil? Because glucose only contains carbon, hydrogen and oxygen, and a plant has to build proteins, DNA and chlorophyll too. Those need other elements, taken up as mineral ions. Nitrogen, absorbed as nitrate, is needed to make amino acids, proteins and DNA. Magnesium is needed to make chlorophyll. Phosphorus is needed for DNA and ATP. And potassium helps regulate the opening of the stomata. These ions don't appear in either equation, but without them the machinery can't be built. A plant short of magnesium makes less chlorophyll, so its leaves turn yellow. That's called chlorosis."
+      },
+      "durationInFrames": 1404,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for plant requirements.",
+      "bullets": [
+        {
+          "text": "Autotroph: makes its own organic food (glucose) using an external energy source; plants use light."
+        },
+        {
+          "text": "Photosynthesis: uses light energy, carbon dioxide and water to make glucose and oxygen."
+        },
+        {
+          "text": "Respiration: in every living cell, uses glucose and oxygen to release energy, producing carbon dioxide and water."
+        },
+        {
+          "text": "Mineral nutrient: an inorganic ion (nitrate, magnesium) absorbed from the soil to build essential molecules."
+        },
+        {
+          "text": "Stomata: pores, mainly on the underside of leaves, through which gases enter and leave."
+        }
+      ],
+      "callout": "Photosynthesis makes glucose; respiration releases its energy.",
+      "caption": "Autotroph, photosynthesis, respiration, mineral nutrient, stomata.",
+      "voiceover": {
+        "text": "Let's pin down the terms. An autotroph makes its own organic food, glucose, using an outside energy source, and for plants that's light. Photosynthesis uses light energy, carbon dioxide and water to make glucose and oxygen. Respiration happens in every living cell, using glucose and oxygen to release energy, and producing carbon dioxide and water. A mineral nutrient is an inorganic ion, like nitrate or magnesium, absorbed from the soil to build essential molecules. And stomata are the pores, mostly on the underside of leaves, where gases get in and out."
+      },
+      "durationInFrames": 1152
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "The missing magnesium",
+      "question": "A hydroponic crop gets light, warmth, water, nitrate, phosphate and potassium, but no magnesium. After three weeks the older leaves are pale yellow and growth has slowed. Account for this result.",
+      "coachNote": "Account for means build one cause-and-effect chain that reaches both symptoms.",
+      "steps": [
+        "Magnesium is needed to build chlorophyll, the pigment that absorbs light for photosynthesis.",
+        "Without it, too little chlorophyll is made, so leaves turn pale yellow: chlorosis.",
+        "Older leaves yellow first, because the plant moves its magnesium to new growth.",
+        "Less chlorophyll means less light absorbed, so less photosynthesis and less glucose.",
+        "Less glucose means less energy from respiration and less material to build new cells, so growth slows."
+      ],
+      "caption": "No magnesium, so less chlorophyll: yellow leaves and less glucose for growth.",
+      "voiceover": {
+        "text": "Let's account for a real result. A hydroponic crop gets everything except magnesium. After three weeks, the older leaves are pale yellow, and growth has slowed. Account for means build one chain of cause and effect. Magnesium is needed to build chlorophyll. Without it, the plant can't make enough, so its leaves turn pale yellow, which is chlorosis. The older leaves go first, because the plant moves the magnesium it has into new growth. Less chlorophyll also means less light absorbed, so less photosynthesis and less glucose. And with less glucose, there's less energy from respiration and less material for building new cells, so growth slows."
+      },
+      "durationInFrames": 1332
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Plants don’t need oxygen?",
+      "body": "Wrong: plants only need carbon dioxide, not oxygen, because they \"breathe in CO₂\".",
+      "secondary": "Right: plant cells respire 24 hours a day and need oxygen, like animal cells. In daylight photosynthesis supplies more than enough; in the dark, and in the roots, plants must take oxygen in.",
+      "mistakeTag": "Plants respire too",
+      "callout": "Every living plant cell respires, day and night.",
+      "caption": "Plants need oxygen for respiration, especially in the dark and in their roots.",
+      "voiceover": {
+        "text": "Here's the big misconception. Plants only need carbon dioxide, because they breathe in carbon dioxide and breathe out oxygen. Not quite. Plant cells respire twenty four hours a day, and respiration needs oxygen, exactly as it does in your cells. During the day, photosynthesis makes more oxygen than the plant uses, so you don't notice. But in the dark, and in the roots, which never photosynthesise, the plant has to take oxygen in from its surroundings. A plant needs both gases."
+      },
+      "durationInFrames": 1032
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A pot plant is kept in waterlogged soil with plenty of light. After a week it wilts and begins to die, even though it has more than enough water. Explain why.",
+      "pausePrompt": "Pause: what do the roots need that waterlogged soil lacks?",
+      "answerSteps": [
+        "Waterlogged soil has its air spaces filled with water, so it is low in oxygen.",
+        "Root cells can’t photosynthesise, so they rely on oxygen from the soil to respire.",
+        "Without respiration, the root cells can’t release energy and begin to die.",
+        "Answer: dying roots can’t absorb water or minerals, so the plant wilts, despite the wet soil."
+      ],
+      "caption": "Waterlogged soil is low in oxygen, so roots can’t respire and the plant wilts.",
+      "voiceover": {
+        "text": "Quick check. A pot plant sits in waterlogged soil with plenty of light, and after a week it wilts and starts to die, even though it has more than enough water. Explain why. Pause, and think about what the roots need. OK. When soil is waterlogged, the air spaces fill with water, so there's very little oxygen. Root cells can't photosynthesise, so they depend on oxygen from the soil for respiration. Without it they can't release energy, and they start to die. And dying roots can't absorb water or minerals, so the plant wilts, even though it's standing in water."
+      },
+      "durationInFrames": 1260
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Carbon dioxide is needed for photosynthesis; oxygen for respiration, in every cell, day and night.",
+        "Daylight: CO₂ in, O₂ out overall. Dark: O₂ in, CO₂ out. Roots always need O₂.",
+        "Water: reactant, transport medium, turgor support and transpirational cooling.",
+        "Minerals: nitrate for proteins and DNA, magnesium for chlorophyll, phosphate for DNA and ATP, potassium for stomata.",
+        "Ions aren’t in the equations, but they build the machinery both processes need."
+      ],
+      "finalPrompt": "For every requirement, name the process it serves: photosynthesis, respiration, or both.",
+      "caption": "Both gases, four uses of water, and four mineral ions.",
+      "voiceover": {
+        "text": "Let's lock it in. A plant needs carbon dioxide for photosynthesis, and oxygen for respiration, which runs in every cell, day and night. In daylight the leaf takes in carbon dioxide and gives out oxygen overall. In the dark it's the reverse, and the roots always need oxygen. Water is a reactant, a transport medium, a support and a coolant. And the minerals are nitrate for proteins and DNA, magnesium for chlorophyll, phosphate for DNA and ATP, and potassium for the stomata. Next lesson, the conditions photosynthesis needs."
+      },
+      "durationInFrames": 1116
+    }
+  ]
+}

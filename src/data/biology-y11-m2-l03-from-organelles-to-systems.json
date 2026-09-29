@@ -1,0 +1,391 @@
+{
+  "title": "From Organelles to Systems",
+  "subtitle": "The hierarchy of organisation in organisms",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Explain the hierarchical organisation of organelles, cells, tissues, organs and systems in organisms"
+  ],
+  "moduleLessonCount": 25,
+  "lessonIntent": "Students can explain the hierarchy from organelle to organism, trace one example up every level, and state what each level can do that the level below cannot.",
+  "examSkill": "Trace one named example up every level and give the emergent function that justifies each step; distinguish tissue, organ and system by their criteria.",
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, how cells build tissues, organs and systems. Let's get into it."
+  },
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "From Organelles to Systems"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Where does a tissue become an organ?",
+      "body": "Your stomach contains muscle that churns, glands that secrete acid and a lining that protects. None of them is \"the stomach\" on its own.",
+      "callout": "Why does the body need so many levels?",
+      "image": "bioY11M2L4BeaumontVial",
+      "caption": "The stomach is several tissues working together as one organ.",
+      "voiceover": {
+        "text": "Think about your stomach. It's an organ, but look inside it and you find muscle that churns your food, glands that secrete acid, and a lining that protects the wall from that acid. None of those, on its own, is the stomach. So at what point does a tissue become an organ? And why does a body need so many levels at all? Today we'll build the ladder that connects a single mitochondrion to a beating heart."
+      },
+      "durationInFrames": 984
+    },
+    {
+      "id": "concept-ladder",
+      "type": "concept",
+      "heading": "The levels of organisation",
+      "body": "Organelles → cells → tissues → organs → systems → organism, each built from the level below.",
+      "bullets": [
+        {
+          "text": "Organelles make up a cell; many similar cells form a tissue.",
+          "at": 8.8
+        },
+        {
+          "text": "Different tissues form an organ; several organs form a system.",
+          "at": 16.4
+        },
+        {
+          "text": "Systems together make the whole organism.",
+          "at": 25.2
+        },
+        {
+          "text": "Systems and organisms exist only in multicellular life.",
+          "at": 28.8
+        }
+      ],
+      "callout": "Each level is assembled from the one below it.",
+      "caption": "Mitochondrion, cardiac muscle cell, cardiac muscle, heart, circulatory system, human.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Ladder",
+        "props": {
+          "example": "animal",
+          "levels": [
+            {
+              "level": "Organelle",
+              "name": "mitochondrion",
+              "at": 168
+            },
+            {
+              "level": "Cell",
+              "name": "cardiac muscle cell",
+              "at": 264
+            },
+            {
+              "level": "Tissue",
+              "name": "cardiac muscle",
+              "at": 384
+            },
+            {
+              "level": "Organ",
+              "name": "heart",
+              "at": 492
+            },
+            {
+              "level": "System",
+              "name": "circulatory system",
+              "at": 588
+            },
+            {
+              "level": "Organism",
+              "name": "human",
+              "at": 756
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Here's the ladder, smallest to largest, using one real example all the way up. It starts with an organelle, like a mitochondrion. Organelles make up a cell, here a cardiac muscle cell. Many similar cells together form a tissue, cardiac muscle. Different tissues together form an organ, the heart. Several organs, with the blood vessels and blood, form a system, the circulatory system. And all the systems together make the organism, you. Notice that systems and whole organisms only exist in multicellular life. Each level is assembled from the one below it."
+      },
+      "durationInFrames": 1164,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-emergent",
+      "type": "concept",
+      "heading": "Why each level exists",
+      "body": "Each level produces a function the level below cannot achieve on its own.",
+      "bullets": [
+        {
+          "text": "A single muscle cell can twitch; muscle tissue contracts as one.",
+          "at": 10.8
+        },
+        {
+          "text": "A patch of muscle can’t pump blood; the heart (muscle, nervous, connective and epithelial tissue) can.",
+          "at": 19.2
+        },
+        {
+          "text": "The heart alone can’t circulate blood; the circulatory system can.",
+          "at": 28
+        }
+      ],
+      "callout": "Division of labour, scaled up.",
+      "caption": "Twitch, contract as one, pump, circulate: each level adds a new function.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Ladder",
+        "props": {
+          "example": "animal",
+          "amber": 3,
+          "levels": [
+            {
+              "level": "Organelle",
+              "name": "mitochondrion",
+              "at": 0,
+              "adds": {
+                "text": "releases energy",
+                "at": 204
+              }
+            },
+            {
+              "level": "Cell",
+              "name": "cardiac muscle cell",
+              "at": 0,
+              "adds": {
+                "text": "can twitch",
+                "at": 324
+              }
+            },
+            {
+              "level": "Tissue",
+              "name": "cardiac muscle",
+              "at": 0,
+              "adds": {
+                "text": "contracts as one",
+                "at": 408
+              }
+            },
+            {
+              "level": "Organ",
+              "name": "heart",
+              "at": 0,
+              "adds": {
+                "text": "pumps blood",
+                "at": 576
+              }
+            },
+            {
+              "level": "System",
+              "name": "circulatory system",
+              "at": 0,
+              "adds": {
+                "text": "circulates blood",
+                "at": 840
+              }
+            },
+            {
+              "level": "Organism",
+              "name": "human",
+              "at": 0,
+              "adds": {
+                "text": "stays alive",
+                "at": 1092
+              }
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "So why bother with so many levels? Because each one can do something the level below can't. A mitochondrion lets a cell do specialised chemistry, releasing energy. A single cardiac muscle cell can twitch, but only a sheet of muscle tissue can contract as one with real force. A patch of muscle still can't pump blood. That needs the heart, an organ built from muscle, nervous, connective and epithelial tissue. And the heart alone can't get blood around the body. That needs the whole circulatory system of heart, vessels and blood. This is division of labour, scaled up."
+      },
+      "durationInFrames": 1236,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-plants",
+      "type": "concept",
+      "heading": "The same ladder in plants",
+      "body": "Plants are organised on exactly the same hierarchy, with their own structures at each level.",
+      "bullets": [
+        {
+          "text": "Chloroplast → palisade mesophyll cell → mesophyll tissue.",
+          "at": 3.2
+        },
+        {
+          "text": "Tissues form organs: leaf, stem and root.",
+          "at": 11.2
+        },
+        {
+          "text": "Organs form systems, like the shoot or transport system, and the whole plant.",
+          "at": 17.2
+        },
+        {
+          "text": "Xylem and phloem are tissues; a leaf is an organ.",
+          "at": 25.6
+        }
+      ],
+      "callout": "Name the level, and your explanation gets precise.",
+      "caption": "Chloroplast, palisade cell, mesophyll, leaf, shoot system, whole plant.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Ladder",
+        "props": {
+          "example": "plant",
+          "levels": [
+            {
+              "level": "Organelle",
+              "name": "chloroplast",
+              "at": 96
+            },
+            {
+              "level": "Cell",
+              "name": "palisade mesophyll cell",
+              "at": 168
+            },
+            {
+              "level": "Tissue",
+              "name": "mesophyll",
+              "at": 252
+            },
+            {
+              "level": "Organ",
+              "name": "leaf",
+              "at": 336
+            },
+            {
+              "level": "System",
+              "name": "shoot system",
+              "at": 516
+            },
+            {
+              "level": "Organism",
+              "name": "whole plant",
+              "at": 684
+            }
+          ],
+          "notes": [
+            {
+              "text": "Xylem and phloem are tissues. A leaf is an organ.",
+              "at": 768,
+              "amber": true
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Does the same ladder work for plants? Yes. Start with an organelle, the chloroplast. Chloroplasts sit inside a palisade mesophyll cell. Many of those cells form mesophyll tissue. Different tissues together make an organ, the leaf, and stems and roots are organs too. Organs work together as a system, like the shoot system or the transport system, and together they make the whole plant. This matters for the rest of this unit, because xylem and phloem are tissues, while a leaf and a root are organs. Name the right level, and your explanations get precise."
+      },
+      "durationInFrames": 1200,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for every hierarchy answer.",
+      "bullets": [
+        {
+          "text": "Organelle: a specialised structure within a cell that carries out a particular function (mitochondrion)."
+        },
+        {
+          "text": "Tissue: a group of similar cells working together to perform a shared function (muscle tissue)."
+        },
+        {
+          "text": "Organ: several tissue types working together to carry out a major function (the heart)."
+        },
+        {
+          "text": "System: a group of organs working together to perform a broad life function (circulatory system)."
+        },
+        {
+          "text": "Hierarchical organisation: levels where each is built from, and depends on, the level below."
+        }
+      ],
+      "callout": "Organ = several different tissue types, not one big tissue.",
+      "caption": "Organelle, tissue, organ, system, hierarchical organisation.",
+      "voiceover": {
+        "text": "Let's lock in the definitions. An organelle is a specialised structure within a cell that does a particular job, like a mitochondrion. A tissue is a group of similar cells working together on a shared function, like muscle tissue. An organ is several different tissue types working together to carry out a major function, like the heart. A system is a group of organs working together on a broad life function, like the circulatory system. And hierarchical organisation means an arrangement in levels, where each level is built from, and depends on, the one below."
+      },
+      "durationInFrames": 1200
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Distinguish tissue, organ and system",
+      "question": "Distinguish between a tissue, an organ and a system, using the heart and the circulatory system as your examples.",
+      "coachNote": "Distinguish means state the line between each pair. Find the criterion for each boundary.",
+      "steps": [
+        "Tissue vs organ: one cell type vs several tissue types. The line is the number of tissue types, not size.",
+        "Organ vs system: one structure vs several organs working on a broad life function.",
+        "Cardiac muscle is a tissue: cardiac muscle cells alone, contracting together.",
+        "The heart is an organ: cardiac muscle, nervous, connective and epithelial tissue in one pump.",
+        "The circulatory system: heart, blood vessels and blood transporting materials around the whole body."
+      ],
+      "caption": "Tissue: one cell type. Organ: several tissue types. System: several organs.",
+      "voiceover": {
+        "text": "Let's do an exam question. Distinguish between a tissue, an organ and a system, using the heart and the circulatory system. Distinguish means find the line between each pair. Tissue versus organ. A tissue is one type of cell, while an organ has several different tissue types, so the line is the number of tissue types, not the size. Organ versus system. An organ is one structure, while a system is several organs working on a broad life function. So cardiac muscle is a tissue. The heart is an organ, because it combines muscle, nervous, connective and epithelial tissue. And the heart, vessels and blood together form the circulatory system."
+      },
+      "durationInFrames": 1380
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Is an organ just a really big tissue?",
+      "body": "Wrong: an organ is just a large amount of one tissue, lots of the same cells grouped together.",
+      "secondary": "Right: a tissue is one cell type doing one job; an organ contains several different tissue types. The heart is muscle, nervous, connective and epithelial tissue combined.",
+      "mistakeTag": "Types, not size",
+      "callout": "Count the tissue types, not the cells.",
+      "caption": "An organ is several tissue types working together, not one enlarged tissue.",
+      "voiceover": {
+        "text": "Here's a common trap. Students describe an organ as just a really big tissue, lots of the same cells grouped together. That's not it. A tissue is one type of cell doing one job. An organ contains several different types of tissue working together. The heart isn't a giant lump of muscle. It's muscle tissue to contract, nervous tissue to set the rhythm, connective tissue to hold it together, and epithelium lining its chambers. So when you're deciding the level, count the tissue types, not the cells."
+      },
+      "durationInFrames": 1104
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Place each plant structure at its level of organisation: chloroplast, xylem, leaf, the transport system. Then justify why a leaf is an organ.",
+      "pausePrompt": "Pause: how many tissue types does a leaf contain?",
+      "answerSteps": [
+        "Chloroplast: organelle. Xylem: tissue. Leaf: organ. Transport system: system.",
+        "A leaf contains several tissue types: epidermis, mesophyll, xylem and phloem.",
+        "Answer: those tissues work together on a major function, photosynthesis, so the leaf is an organ."
+      ],
+      "caption": "Chloroplast organelle, xylem tissue, leaf organ, transport system.",
+      "voiceover": {
+        "text": "Quick check. Place each of these plant structures at its level. Chloroplast, xylem, leaf, and the transport system. Then justify why a leaf is an organ. Pause, and count the tissue types. OK. The chloroplast is an organelle. Xylem is a tissue. The leaf is an organ, and the transport system is a system. The leaf is an organ because it contains several different tissue types, the epidermis, the mesophyll, and the xylem and phloem in its veins, all working together on a major function, photosynthesis."
+      },
+      "durationInFrames": 1092
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Organelle → cell → tissue → organ → system → organism.",
+        "Each level is built from the level below it.",
+        "Tissue: similar cells. Organ: several tissue types. System: several organs.",
+        "Each level adds a function the level below cannot perform alone.",
+        "Plants follow the same ladder: chloroplast, palisade cell, mesophyll, leaf, shoot system, plant."
+      ],
+      "finalPrompt": "Hierarchy question? Trace one example up every level and say what each level adds.",
+      "caption": "The ladder, built from below, with a new function at every level.",
+      "voiceover": {
+        "text": "Let's lock it in. The ladder runs organelle, cell, tissue, organ, system, organism, and each level is built from the one below. A tissue is similar cells, an organ is several tissue types, and a system is several organs. Each level adds a function the level below can't manage alone. And plants follow the same ladder, from chloroplast to palisade cell, mesophyll, leaf, shoot system and the whole plant. Next lesson, we'll look at what a plant actually needs to take in."
+      },
+      "durationInFrames": 1044
+    }
+  ]
+}

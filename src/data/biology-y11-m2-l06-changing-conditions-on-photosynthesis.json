@@ -1,0 +1,400 @@
+{
+  "title": "Changing Conditions on Photosynthesis",
+  "subtitle": "Planning and predicting the pondweed practical",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 6",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Conduct a practical investigation to predict how changes in conditions affect photosynthesis"
+  ],
+  "moduleLessonCount": 25,
+  "lessonIntent": "Students can plan a fair test of one condition on the rate of photosynthesis in pondweed, and predict and justify the result using the limiting-factor model.",
+  "examSkill": "Justify oxygen output as the measure, name independent, dependent and controlled variables, control lamp heating, add repeats, and predict the curve shape from the model.",
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, testing photosynthesis with a sprig of pondweed. Let's get into it."
+  },
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Changing Conditions on Photosynthesis"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Counting bubbles",
+      "body": "Move a lamp closer to pondweed and the bubbles speed up. But double the brightness and the rate doesn’t double, and at some point more light does nothing.",
+      "callout": "How do you design an experiment that captures exactly when that happens?",
+      "image": "bubbles",
+      "caption": "Each bubble is oxygen from photosynthesis.",
+      "voiceover": {
+        "text": "Counting bubbles rising from a sprig of pondweed is one of the oldest experiments in biology. Each bubble is oxygen, the visible signature of photosynthesis happening right in front of you. Move a lamp closer, and the bubbles speed up. Move it away, and they slow down. But double the brightness and the rate doesn't double, and at some point more light does nothing at all. So how do you design an experiment that captures exactly when that happens?"
+      },
+      "durationInFrames": 1008
+    },
+    {
+      "id": "concept-measure",
+      "type": "concept",
+      "heading": "Measuring the rate with oxygen bubbles",
+      "body": "Oxygen is a product of photosynthesis, so the rate oxygen is released measures the rate of photosynthesis.",
+      "bullets": [
+        {
+          "text": "Pondweed (Elodea or Cabomba) in water with dissolved CO₂ from sodium hydrogen carbonate.",
+          "at": 8.8
+        },
+        {
+          "text": "A lamp supplies the light.",
+          "at": 18
+        },
+        {
+          "text": "Count bubbles per minute, or collect and measure the gas in a fixed time.",
+          "at": 24.4
+        }
+      ],
+      "callout": "Faster bubbles, faster photosynthesis.",
+      "caption": "Oxygen bubbles per minute from pondweed measure the rate of photosynthesis.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Pondweed",
+        "props": {
+          "at": 600,
+          "steps": [
+            {
+              "d": 0.7,
+              "at": 0
+            }
+          ],
+          "beakerLabel": "NaHCO₃ solution",
+          "tags": [
+            {
+              "text": "lamp: light source",
+              "at": 540,
+              "anchor": "lamp"
+            },
+            {
+              "text": "O₂ bubbles",
+              "at": 600,
+              "anchor": "bubbles"
+            },
+            {
+              "text": "the rate",
+              "at": 732,
+              "anchor": "meter",
+              "tone": "amber"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "First, how do we measure photosynthesis? Oxygen is a product, so the faster oxygen is released, the faster photosynthesis must be happening. A sprig of pondweed, like Elodea or Cabomba, sits in water that has carbon dioxide dissolved in it, usually from sodium hydrogen carbonate. A lamp supplies the light, and oxygen bubbles rise from the cut end of the stem. So you count the bubbles per minute, or better, collect the gas and measure its volume in a fixed time, because bubbles can vary in size. As conditions change, the bubble rate changes with them."
+      },
+      "durationInFrames": 1212,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-fair-test",
+      "type": "concept",
+      "heading": "Planning a fair test",
+      "body": "Change one condition, measure one outcome, and hold everything else constant.",
+      "bullets": [
+        {
+          "text": "Independent variable: light intensity, set by lamp distance d.",
+          "at": 3.6
+        },
+        {
+          "text": "Dependent variable: oxygen bubbles per minute.",
+          "at": 12.4
+        },
+        {
+          "text": "Controlled: temperature, CO₂ concentration, same pondweed, counting time.",
+          "at": 17.6
+        },
+        {
+          "text": "Lamp heating is a confounding variable: use a heat shield.",
+          "at": 24.8
+        },
+        {
+          "text": "Repeat each distance and average, for reliability.",
+          "at": 35.2
+        }
+      ],
+      "callout": "One change at a time, or you can’t tell what caused the effect.",
+      "caption": "IV lamp distance, DV bubbles per minute, controls held, heat shield for lamp heating.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Pondweed",
+        "props": {
+          "at": 0,
+          "steps": [
+            {
+              "d": 1,
+              "at": 0
+            },
+            {
+              "d": 0.85,
+              "at": 138
+            },
+            {
+              "d": 0.7,
+              "at": 188
+            },
+            {
+              "d": 0.55,
+              "at": 336
+            },
+            {
+              "d": 0.4,
+              "at": 386
+            }
+          ],
+          "shield": {
+            "at": 744
+          },
+          "beakerLabel": "NaHCO₃ solution",
+          "tags": [
+            {
+              "text": "independent: lamp distance d",
+              "at": 108,
+              "anchor": "lamp"
+            },
+            {
+              "text": "dependent: bubbles per minute",
+              "at": 372,
+              "anchor": "bubbles"
+            },
+            {
+              "text": "controlled: temperature, CO₂, same pondweed",
+              "at": 528,
+              "anchor": "beaker"
+            },
+            {
+              "text": "heat shield",
+              "at": 764,
+              "anchor": "shield",
+              "tone": "amber"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Now let's plan a fair test for light intensity. The independent variable is light intensity, and we change it by moving the lamp to at least five distances. Closer means brighter. The dependent variable is the rate of oxygen production, the bubbles per minute. Everything else is controlled, the temperature, the carbon dioxide concentration, the same pondweed and the same counting time. But there's a catch. A lamp close to the beaker also warms the water, so place a heat shield, like a tank of water, between them. And repeat each count and average, to make the results reliable."
+      },
+      "durationInFrames": 1248,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-predict",
+      "type": "concept",
+      "heading": "Predicting from the model",
+      "body": "Predict before measuring, using the limiting-factor model, so the data can test the model.",
+      "bullets": [
+        {
+          "text": "Light or CO₂: the rate rises, then plateaus when another factor limits.",
+          "at": 3.2
+        },
+        {
+          "text": "Temperature: the rate rises to an optimum, then falls as enzymes denature.",
+          "at": 13.6
+        },
+        {
+          "text": "Data that match the prediction support the model.",
+          "at": 20
+        },
+        {
+          "text": "Plot rate against 1/d² for a truer light intensity axis.",
+          "at": 28.8
+        }
+      ],
+      "callout": "A risky prediction, put to the test.",
+      "caption": "Predicted: rate rises then plateaus with light; measured points test the prediction.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2RateGraph",
+        "props": {
+          "mode": "plateau",
+          "xLabel": "light intensity (∝ 1/d²)",
+          "yLabel": "O₂ bubbles per minute",
+          "curves": [
+            {
+              "label": "prediction",
+              "at": 96,
+              "level": 0.72,
+              "dashed": true,
+              "labelX": 0.84
+            }
+          ],
+          "zones": [
+            {
+              "from": 0.45,
+              "to": 1,
+              "text": "another factor limiting",
+              "at": 156
+            }
+          ],
+          "points": [
+            {
+              "x": 0.08,
+              "y": 0.28,
+              "at": 600
+            },
+            {
+              "x": 0.18,
+              "y": 0.49,
+              "at": 612
+            },
+            {
+              "x": 0.32,
+              "y": 0.62,
+              "at": 624
+            },
+            {
+              "x": 0.5,
+              "y": 0.69,
+              "at": 636
+            },
+            {
+              "x": 0.7,
+              "y": 0.71,
+              "at": 648
+            },
+            {
+              "x": 0.9,
+              "y": 0.72,
+              "at": 660
+            }
+          ],
+          "notes": [
+            {
+              "text": "Measured points fit the prediction: they support the model",
+              "at": 680,
+              "amber": true
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "A good practical doesn't just observe, it predicts. Using the limiting-factor model, for light or carbon dioxide we predict the rate will rise, then level off into a plateau when another factor becomes limiting. For temperature, we'd predict a rise to an optimum, then a fall as the enzymes denature. Then we measure. If the data points follow the predicted curve, they support the model. If they don't, we check the method. One extra tip. Plot the rate against one over the distance squared, because that's proportional to the light intensity actually reaching the plant."
+      },
+      "durationInFrames": 1200,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for planning any practical.",
+      "bullets": [
+        {
+          "text": "Independent variable: the single factor deliberately changed (light intensity, via lamp distance)."
+        },
+        {
+          "text": "Dependent variable: the factor measured to see the effect (O₂ bubbles per minute)."
+        },
+        {
+          "text": "Controlled variable: kept constant so it can’t affect the result (temperature, CO₂, same pondweed)."
+        },
+        {
+          "text": "Prediction: the expected result, justified by a scientific model."
+        },
+        {
+          "text": "Reliability: consistency of results when repeated; improved by repeats and averaging."
+        }
+      ],
+      "callout": "Validity: only the independent variable changes.",
+      "caption": "Independent, dependent and controlled variables, prediction, reliability.",
+      "voiceover": {
+        "text": "Let's lock in the practical vocabulary. The independent variable is the one factor you deliberately change, here light intensity, set by the lamp distance. The dependent variable is what you measure to see the effect, the oxygen bubbles per minute. A controlled variable is kept constant so it can't affect the result, like temperature, carbon dioxide, and using the same pondweed. A prediction is the expected result, justified by a scientific model. And reliability is how consistent your results are when you repeat them, which you improve by repeating and averaging."
+      },
+      "durationInFrames": 1152
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Evaluate a student’s method",
+      "question": "A student counts pondweed bubbles once at each of five lamp distances and reports that photosynthesis rises as the lamp gets closer. Evaluate the reliability and validity, and recommend two improvements.",
+      "coachNote": "Reliability and validity are different. Judge each separately, then fix each weakness.",
+      "steps": [
+        "Reliability: each distance was counted once, so there are no repeats to average. Unreliable.",
+        "Validity: moving the lamp closer also warms the water, so light and temperature changed together.",
+        "Lamp heating is a confounding variable, so the rise can’t be pinned on light alone.",
+        "Improve reliability: repeat each count at least three times and average.",
+        "Improve validity: add a heat shield or water bath and check the temperature at each distance."
+      ],
+      "caption": "No repeats (unreliable) and lamp heating (invalid): repeat, and shield the heat.",
+      "voiceover": {
+        "text": "Let's evaluate a student's method. They counted bubbles once at each of five lamp distances, and reported that the rate rises as the lamp gets closer. Keep reliability and validity separate. Reliability first. Each distance was counted only once, so there's nothing to average, and no way to spot an odd result. So it's unreliable. Validity next. Moving the lamp closer also warms the water, so light and temperature changed together. That's a confounding variable. Two fixes. Repeat each count at least three times and average. And add a heat shield, checking the temperature at every distance."
+      },
+      "durationInFrames": 1224
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Change two things for a clearer result?",
+      "body": "Wrong: change two conditions at once, like light and temperature together, to get a clearer result.",
+      "secondary": "Right: only the independent variable may change. If two factors change at once, you can’t tell which one caused the effect, so the result isn’t valid.",
+      "mistakeTag": "One variable at a time",
+      "callout": "Two changes, zero conclusions.",
+      "caption": "Change only the independent variable; everything else stays controlled.",
+      "voiceover": {
+        "text": "Here's a tempting mistake. If you want a bigger, clearer effect, why not change two conditions at once, say more light and a warmer temperature together? Because then you can't tell which one caused the change. Was it the light, or the heat? The experiment is no longer valid. Only the independent variable is allowed to change, and everything else has to stay controlled. Two changes at once means zero conclusions."
+      },
+      "durationInFrames": 912
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A student investigates how carbon dioxide concentration affects the rate of photosynthesis in pondweed, using different concentrations of sodium hydrogen carbonate. Name the independent and dependent variables, two controlled variables, and predict the shape of the graph.",
+      "pausePrompt": "Pause: which one thing is being changed?",
+      "answerSteps": [
+        "Independent: CO₂ concentration (sodium hydrogen carbonate concentration).",
+        "Dependent: rate of oxygen production (bubbles per minute).",
+        "Controlled: e.g. light intensity (lamp distance) and water temperature.",
+        "Prediction: the rate rises, then plateaus once CO₂ is no longer limiting."
+      ],
+      "caption": "IV CO₂ concentration, DV bubbles per minute; the rate rises then plateaus.",
+      "voiceover": {
+        "text": "Quick check. A student investigates how carbon dioxide concentration affects the rate of photosynthesis, using different concentrations of sodium hydrogen carbonate. Name the independent and dependent variables, two controlled variables, and predict the shape of the graph. Pause, and decide what's being changed. OK. The independent variable is the carbon dioxide concentration. The dependent variable is the rate of oxygen production, the bubbles per minute. Controls include the light intensity, so a fixed lamp distance, and the water temperature. And the prediction is that the rate rises, then plateaus once carbon dioxide is no longer limiting."
+      },
+      "durationInFrames": 1212
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Oxygen is a product, so bubbles per minute measure the rate of photosynthesis.",
+        "Change one independent variable; measure one dependent variable; control the rest.",
+        "Lamp heating is a confounding variable: use a heat shield.",
+        "Repeat and average for reliability.",
+        "Predict from the model: light and CO₂ plateau; temperature peaks, then falls."
+      ],
+      "finalPrompt": "Planning a prac? Name the IV, DV and controls before you predict.",
+      "caption": "Measure O₂, control variables, shield the heat, repeat, and predict from the model.",
+      "voiceover": {
+        "text": "Let's lock it in. Oxygen is a product of photosynthesis, so bubbles per minute measure the rate. Change one independent variable, measure one dependent variable, and control everything else. Watch out for lamp heating, and use a heat shield. Repeat and average for reliability. And predict from the model, where light and carbon dioxide give a plateau, while temperature peaks and then falls. Next lesson, we move on to the plant's transport tissues."
+      },
+      "durationInFrames": 936
+    }
+  ]
+}

@@ -1,0 +1,397 @@
+{
+  "title": "Conditions for Photosynthesis",
+  "subtitle": "Limiting factors and the temperature optimum",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 5",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Discuss the conditions required for photosynthesis"
+  ],
+  "moduleLessonCount": 25,
+  "lessonIntent": "Students can discuss the conditions required for photosynthesis, identify the limiting factor from a graph or scenario, and explain why temperature has an optimum.",
+  "examSkill": "Name all five conditions, define a limiting factor before using it, explain a plateau, and contrast temperature’s optimum (enzymes denature) with light and CO₂.",
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, what photosynthesis needs, and what slows it down. Let's get into it."
+  },
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Conditions for Photosynthesis"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why doesn’t more light always help?",
+      "body": "On a bright day, adding more light to a crop barely changes its yield, but pumping extra carbon dioxide into a greenhouse does.",
+      "callout": "Why does turning up one condition sometimes do nothing at all?",
+      "image": "leaf",
+      "caption": "More light can do nothing, while more carbon dioxide helps.",
+      "voiceover": {
+        "text": "Here's a puzzle from farming. On a bright sunny day, adding even more light to a crop barely changes how fast it grows. But greenhouse growers pump extra carbon dioxide into their glasshouses, and the crop grows faster. So why does turning up one condition sometimes do nothing at all, while turning up another makes a real difference? The answer is an idea called the limiting factor, and it explains every greenhouse and crop yield on the planet."
+      },
+      "durationInFrames": 996
+    },
+    {
+      "id": "concept-conditions",
+      "type": "concept",
+      "heading": "The required conditions",
+      "body": "Photosynthesis needs light, carbon dioxide, water, chlorophyll and a suitable temperature, all at once.",
+      "bullets": [
+        {
+          "text": "Light: the energy source.",
+          "at": 3.6
+        },
+        {
+          "text": "Carbon dioxide and water: the raw materials.",
+          "at": 6
+        },
+        {
+          "text": "Chlorophyll: the pigment that absorbs the light.",
+          "at": 9.6
+        },
+        {
+          "text": "A suitable temperature, so the enzymes can work.",
+          "at": 12.8
+        },
+        {
+          "text": "Remove any one, and photosynthesis stops.",
+          "at": 24.8
+        }
+      ],
+      "callout": "All five together, or nothing.",
+      "caption": "Light, CO₂, water, chlorophyll and a suitable temperature; remove one and it stops.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Conditions",
+        "props": {
+          "leafAt": 0,
+          "inputs": [
+            {
+              "key": "light",
+              "label": "light",
+              "at": 108
+            },
+            {
+              "key": "co2",
+              "label": "carbon dioxide",
+              "at": 180
+            },
+            {
+              "key": "water",
+              "label": "water",
+              "at": 204
+            },
+            {
+              "key": "chlorophyll",
+              "label": "chlorophyll",
+              "at": 288
+            },
+            {
+              "key": "temp",
+              "label": "suitable temperature",
+              "at": 384
+            }
+          ],
+          "output": {
+            "at": 516,
+            "label": "glucose and oxygen"
+          },
+          "removals": [
+            {
+              "key": "light",
+              "at": 744,
+              "until": 792,
+              "text": "Night: no light"
+            },
+            {
+              "key": "co2",
+              "at": 792,
+              "until": 876,
+              "text": "Stomata closed: no CO₂"
+            },
+            {
+              "key": "chlorophyll",
+              "at": 876,
+              "until": 984,
+              "text": "White leaf patch: no chlorophyll"
+            },
+            {
+              "key": "temp",
+              "at": 984,
+              "until": 1092,
+              "text": "Too cold: enzymes too slow"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "So what does photosynthesis need to happen at all? Light, which is the energy source. Carbon dioxide and water, which are the raw materials. Chlorophyll, the green pigment that absorbs the light. And a suitable temperature, because the reactions are run by enzymes. When they're all there, the leaf makes glucose and releases oxygen. But take away any one, and it stops. No light at night. No carbon dioxide if the stomata close. No chlorophyll in a white patch of a leaf. And if it's too cold, the enzymes barely work. All five together, or nothing."
+      },
+      "durationInFrames": 1212,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-limiting",
+      "type": "concept",
+      "heading": "Limiting factors",
+      "body": "At any moment, photosynthesis runs only as fast as its scarcest condition allows.",
+      "bullets": [
+        {
+          "text": "Limiting factor: the condition in shortest supply, holding back the rate.",
+          "at": 4
+        },
+        {
+          "text": "Rising part: light is limiting, so more light means a faster rate.",
+          "at": 11.6
+        },
+        {
+          "text": "Plateau: light is plentiful; CO₂ or temperature now limits the rate.",
+          "at": 18.4
+        },
+        {
+          "text": "Raise the CO₂, and the plateau rises.",
+          "at": 30
+        }
+      ],
+      "callout": "Only the limiting factor controls the rate.",
+      "caption": "Rate rises while light limits, then plateaus when CO₂ or temperature limits.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2RateGraph",
+        "props": {
+          "mode": "plateau",
+          "xLabel": "light intensity",
+          "yLabel": "rate of photosynthesis",
+          "curves": [
+            {
+              "label": "normal CO₂",
+              "at": 276,
+              "level": 0.55,
+              "labelX": 0.86
+            },
+            {
+              "label": "higher CO₂",
+              "at": 900,
+              "level": 0.85,
+              "tone": "warm",
+              "dashed": true,
+              "labelX": 0.86
+            }
+          ],
+          "zones": [
+            {
+              "from": 0,
+              "to": 0.3,
+              "text": "light limiting",
+              "at": 348
+            },
+            {
+              "from": 0.45,
+              "to": 1,
+              "text": "CO₂ or temperature limiting",
+              "at": 552,
+              "tone": "amber"
+            }
+          ],
+          "tracer": {
+            "at": 348,
+            "to": 0.9
+          }
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "So if everything's present, what controls how fast it goes? The limiting factor, which is the condition in shortest supply at that moment. Look at rate against light intensity. At first the rate climbs, because light is the limiting factor, so more light means faster photosynthesis. But then the curve flattens into a plateau. Light is now plentiful, and something else, carbon dioxide or temperature, is holding the rate back. Adding more light does nothing. Now raise the carbon dioxide, and the whole plateau lifts. That's exactly why greenhouse growers add carbon dioxide."
+      },
+      "durationInFrames": 1176,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-temperature",
+      "type": "concept",
+      "heading": "Temperature has an optimum",
+      "body": "Photosynthesis is run by enzymes, so temperature speeds it up only to an optimum.",
+      "bullets": [
+        {
+          "text": "Too cold: the enzymes work too slowly.",
+          "at": 7.2
+        },
+        {
+          "text": "Rate rises to an optimum, about 25 to 35 °C for many plants.",
+          "at": 10.4
+        },
+        {
+          "text": "Above it, the enzymes denature and the rate falls steeply.",
+          "at": 18.4
+        },
+        {
+          "text": "So temperature peaks and falls; it doesn’t just plateau.",
+          "at": 26.4
+        }
+      ],
+      "callout": "Light and CO₂ plateau. Temperature peaks, then crashes.",
+      "caption": "Rate rises to an optimum near 25–35 °C, then falls steeply as enzymes denature.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2RateGraph",
+        "props": {
+          "mode": "optimum",
+          "xLabel": "temperature (°C)",
+          "yLabel": "rate of photosynthesis",
+          "xMax": 50,
+          "peak": 0.6,
+          "curves": [
+            {
+              "label": "",
+              "at": 84,
+              "level": 0.8
+            }
+          ],
+          "band": {
+            "from": 25,
+            "to": 35,
+            "text": "optimum",
+            "at": 312
+          },
+          "pointers": [
+            {
+              "x": 0.16,
+              "text": "enzymes too slow",
+              "at": 216,
+              "dy": -70
+            },
+            {
+              "x": 0.92,
+              "text": "enzymes denature",
+              "at": 552,
+              "tone": "warm",
+              "dy": -120
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Does temperature behave the same way? No. Photosynthesis is catalysed by enzymes, so temperature has a best value. When it's cold, the enzymes work too slowly. As it warms up, the rate rises to an optimum, around twenty five to thirty five degrees for many plants. But push past the optimum and the enzymes denature. Their active sites lose their shape, and the rate falls steeply. So the graph for temperature rises to a peak, then drops. Light and carbon dioxide can be raised forever and just stop helping, but too much heat actually makes photosynthesis slower."
+      },
+      "durationInFrames": 1224,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for discussing photosynthesis conditions.",
+      "bullets": [
+        {
+          "text": "Limiting factor: the single condition in shortest supply that is holding back the rate."
+        },
+        {
+          "text": "Light intensity: the amount of light energy reaching the leaf per unit time."
+        },
+        {
+          "text": "Chlorophyll: the green pigment in chloroplasts that absorbs light energy."
+        },
+        {
+          "text": "Optimum temperature: where the enzymes work fastest; above it they denature and the rate falls."
+        },
+        {
+          "text": "Plateau: where increasing one condition no longer raises the rate, because another factor limits."
+        }
+      ],
+      "callout": "A plateau means a different factor is now limiting.",
+      "caption": "Limiting factor, light intensity, chlorophyll, optimum temperature, plateau.",
+      "voiceover": {
+        "text": "Let's lock in the vocabulary. A limiting factor is the one condition in shortest supply that's holding back the rate. Light intensity is the amount of light energy reaching the leaf each second. Chlorophyll is the green pigment in chloroplasts that absorbs light energy. The optimum temperature is where the enzymes work fastest, and above it they denature and the rate falls. And a plateau is the flat part of a graph, where increasing one condition no longer raises the rate, because another factor is now limiting."
+      },
+      "durationInFrames": 1104
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Extra light or extra CO₂?",
+      "question": "Two identical pot plants stand in bright light on a warm day. One gets extra light; the other gets extra carbon dioxide. Predict which shows the greater increase in the rate of photosynthesis, and justify.",
+      "coachNote": "Work out which factor is limiting from the conditions given. Don’t assume it’s light.",
+      "steps": [
+        "Bright light and a warm day: light is high and temperature is near the optimum.",
+        "Air is only about 0.04% carbon dioxide, so CO₂ is in shortest supply: the limiting factor.",
+        "Prediction: the extra-CO₂ plant increases most; the extra-light plant barely changes.",
+        "Extra CO₂ supplies the raw material for glucose, so the rate rises.",
+        "The other plant is already on the light plateau. In dim light, the answer would reverse."
+      ],
+      "caption": "CO₂ is limiting in bright, warm conditions, so extra CO₂ raises the rate most.",
+      "voiceover": {
+        "text": "Let's predict a result. Two identical plants stand in bright light on a warm day. One gets extra light, the other gets extra carbon dioxide. Which speeds up more? First, find the limiting factor from the conditions. Light is already high, and it's warm, so temperature is near the optimum. But air is only about zero point zero four per cent carbon dioxide, so that's in shortest supply. So the plant given extra carbon dioxide speeds up the most, because it's getting more of its raw material. The plant given extra light barely changes, because it's already on the plateau. And in dim light, the answer would flip."
+      },
+      "durationInFrames": 1356
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "More of everything means more photosynthesis?",
+      "body": "Wrong: more light, more CO₂ and more heat always means more photosynthesis.",
+      "secondary": "Right: only the limiting factor controls the rate. Adding a factor that’s already plentiful does nothing, and past the optimum, extra heat denatures enzymes and lowers the rate.",
+      "mistakeTag": "Find the limiting factor",
+      "callout": "Top up only what’s in shortest supply.",
+      "caption": "Only the limiting factor controls the rate, and heat has an optimum.",
+      "voiceover": {
+        "text": "Here's the trap. More light, more carbon dioxide and more heat must always mean more photosynthesis, right? No. At any moment only the limiting factor controls the rate, so adding more of something that's already plentiful does nothing at all. And temperature is worse. Past the optimum, extra heat denatures the enzymes, so the rate actually drops. The smart move is always to find the factor in shortest supply, and top that one up."
+      },
+      "durationInFrames": 948
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A graph of photosynthesis rate against light intensity rises steeply, then plateaus. Identify the limiting factor on the rising part and at the plateau, and predict what happens to the plateau if CO₂ is increased.",
+      "pausePrompt": "Pause: what is scarce at each part of the curve?",
+      "answerSteps": [
+        "Rising part: light is the limiting factor.",
+        "Plateau: light is plentiful, so CO₂ or temperature is now limiting.",
+        "Answer: more CO₂ raises the plateau, if CO₂ was the limiting factor there."
+      ],
+      "caption": "Rising part: light limits. Plateau: CO₂ or temperature. More CO₂ lifts the plateau.",
+      "voiceover": {
+        "text": "Quick check. A graph of rate against light intensity rises steeply, then plateaus. What's the limiting factor on the rising part, and at the plateau? And what happens to the plateau if you add carbon dioxide? Pause, and ask what's scarce at each part of the curve. OK. On the rising part, light is limiting, because more light gives a faster rate. At the plateau, light is plentiful, so something else is limiting, carbon dioxide or temperature. So adding carbon dioxide raises the plateau, as long as carbon dioxide was the factor holding it back."
+      },
+      "durationInFrames": 1200
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Photosynthesis needs light, CO₂, water, chlorophyll and a suitable temperature.",
+        "The limiting factor is the condition in shortest supply; it alone sets the rate.",
+        "Light and CO₂ curves rise, then plateau when another factor limits.",
+        "Temperature rises to an optimum (about 25–35 °C), then falls as enzymes denature.",
+        "Increasing a factor that isn’t limiting has no effect."
+      ],
+      "finalPrompt": "Rate question? First ask: which condition is in shortest supply?",
+      "caption": "Five conditions, the limiting factor, plateaus and the temperature optimum.",
+      "voiceover": {
+        "text": "Let's lock it in. Photosynthesis needs light, carbon dioxide, water, chlorophyll and a suitable temperature. The limiting factor is the condition in shortest supply, and it alone sets the rate. Light and carbon dioxide curves rise, then plateau when another factor takes over. Temperature rises to an optimum, then falls as the enzymes denature. And increasing a factor that isn't limiting does nothing. Next lesson, we'll test this in a real practical."
+      },
+      "durationInFrames": 924
+    }
+  ]
+}
