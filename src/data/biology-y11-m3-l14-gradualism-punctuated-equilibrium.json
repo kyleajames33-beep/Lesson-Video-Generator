@@ -1,0 +1,368 @@
+{
+  "title": "Gradualism vs Punctuated Equilibrium",
+  "subtitle": "Two tempos of evolution, read straight off a phylogenetic tree",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 14",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Use phylogenetic trees to compare the gradualism model with the punctuated equilibrium model of evolution"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03"
+  ],
+  "lessonIntent": "Students can read a phylogenetic tree and compare the gradualism and punctuated equilibrium models, recognising that both rely on natural selection and common descent and differ only in the rate and timing of change.",
+  "examSkill": "Interpret the shape of a tree (sloping branches vs stasis broken by sudden splits) and justify which model it supports.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, gradualism versus punctuated equilibrium. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Gradualism vs punctuated equilibrium"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "image": "bioM5L13GalapagosFinches",
+      "heading": "Same animals, two different stories",
+      "body": "Two trees of the same group can look completely different: one with long diagonal branches, one with long straight lines and sudden splits.",
+      "callout": "Same animals, same DNA. So how fast did evolution actually happen?",
+      "caption": "Two tree shapes, two stories about the speed of evolution.",
+      "voiceover": {
+        "text": "Darwin pictured evolution as a slow, steady creep, tiny changes piling up over millions of years. But when palaeontologists read the rock record closely, they kept finding something odd. Long stretches where a species barely changed, then a sudden burst of new forms. So here's the puzzle. Two family trees of the same group can look completely different. One has long diagonal branches. The other has long straight lines and sudden splits. Same animals, same DNA, two different stories about how fast evolution happened. Which one's right? Let's read them."
+      },
+      "durationInFrames": 1170
+    },
+    {
+      "id": "concept-tempos",
+      "type": "concept",
+      "heading": "Two tempos, one mechanism",
+      "body": "Evolution by natural selection is not in dispute. The two models argue only about how change is spread out through time.",
+      "bullets": [
+        {
+          "text": "Gradualism: small, continuous changes accumulate steadily over long periods, through a smooth series of intermediate forms."
+        },
+        {
+          "text": "Punctuated equilibrium (Eldredge and Gould, 1972): long periods of stasis, interrupted by short, rapid bursts of change, usually at speciation."
+        },
+        {
+          "text": "Both accept variation, inheritance, selective pressures and common descent."
+        }
+      ],
+      "callout": "They disagree about rate and timing, not about mechanism.",
+      "caption": "Gradualism and punctuated equilibrium: same mechanism, different tempo.",
+      "voiceover": {
+        "text": "First, what's actually being argued about. Not whether evolution by natural selection happens. Both models accept it. Gradualism is the classical Darwinian picture. Small, continuous changes build up steadily over very long periods, so new species emerge through a smooth series of intermediate forms. Punctuated equilibrium, proposed by Eldredge and Gould in nineteen seventy-two, says the opposite tempo. Species stay largely unchanged for long periods, called stasis, broken by short, rapid bursts of change that usually happen at speciation. Both models share the same mechanism, variation, inheritance and selective pressures, and both accept common descent. They only disagree about rate and timing."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Panels",
+        "props": {
+          "title": "Same mechanism, different tempo",
+          "columns": [
+            {
+              "name": "Gradualism",
+              "sub": "the classical Darwinian picture",
+              "icon": "fishFossil",
+              "at": 151,
+              "lines": [
+                {
+                  "text": "small, continuous change",
+                  "at": 226
+                },
+                {
+                  "text": "steady, over long periods",
+                  "at": 263
+                },
+                {
+                  "text": "many intermediate forms",
+                  "at": 426
+                }
+              ]
+            },
+            {
+              "name": "Punctuated equilibrium",
+              "sub": "Eldredge and Gould, 1972",
+              "icon": "trilobite",
+              "at": 488,
+              "lines": [
+                {
+                  "text": "long periods of stasis",
+                  "at": 676
+                },
+                {
+                  "text": "short, rapid bursts",
+                  "at": 776
+                },
+                {
+                  "text": "change mostly at speciation",
+                  "at": 888
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "text": "Both: natural selection + common descent. They differ in rate and timing.",
+              "at": 926,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1320
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms carry this whole lesson.",
+      "bullets": [
+        {
+          "text": "Phylogenetic tree: a branching diagram of inferred evolutionary relationships; branch points are common ancestors."
+        },
+        {
+          "text": "Gradualism: evolution by small, continuous changes accumulating steadily over long periods."
+        },
+        {
+          "text": "Punctuated equilibrium: long periods of stasis, interrupted by short bursts of rapid change, often at speciation."
+        },
+        {
+          "text": "Stasis: a long period with little or no change in form. Speciation: a new species forming from an existing one."
+        }
+      ],
+      "callout": "Branch point = common ancestor.",
+      "caption": "Phylogenetic tree, gradualism, punctuated equilibrium, stasis, speciation.",
+      "voiceover": {
+        "text": "Let's pin down the words. A phylogenetic tree is a branching diagram showing inferred evolutionary relationships. Every branch point is a common ancestor. Gradualism is evolution by small, continuous changes, accumulating steadily over long periods. Punctuated equilibrium is long periods of stasis, broken by short bursts of rapid change, often at speciation. Stasis means a long period with little or no change in form. And speciation is the process by which a new species forms from an existing one. Keep one idea front and centre. Branch point means common ancestor."
+      },
+      "durationInFrames": 1170
+    },
+    {
+      "id": "concept-trees",
+      "type": "concept",
+      "heading": "Reading the models off a tree",
+      "body": "On these trees time runs up the page and sideways distance is change in form. The slope and the timing of the splits give the model away.",
+      "bullets": [
+        {
+          "text": "Gradualism: long sloping branches, because form changes a little all the time."
+        },
+        {
+          "text": "Punctuated equilibrium: branches run straight up (stasis), then jump sideways abruptly at a split (a rapid burst)."
+        },
+        {
+          "text": "Same branch points in both: the common ancestors do not change, only the tempo."
+        }
+      ],
+      "callout": "Steady diagonal: gradual. Long vertical, then a sharp jump: punctuated.",
+      "caption": "Sloping branches versus vertical stasis broken by sudden splits.",
+      "voiceover": {
+        "text": "So how would you tell the two apart on a diagram? On these trees, time runs up the page, and sideways distance means change in form. Watch the gradualism tree grow. Every branch slopes steadily, because form is changing a little all the time. That's steady change, with lots of intermediates. Now the punctuated tree, same ancestors, same four species at the top. But look at the shape. Branches run straight up, that's stasis, no change in form. Then, at a split, the branch jumps sideways in a short burst, rapid change at speciation, before running straight up again. And notice the nodes sit at the same points in both trees. Each node is a common ancestor. Only the tempo differs."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Tempo",
+        "props": {
+          "mode": "compare",
+          "beats": {
+            "axes": 113,
+            "gradual": 263,
+            "slope": 488,
+            "punctuated": 576,
+            "stasis": 838,
+            "burst": 988,
+            "nodes": 1188
+          },
+          "drawFrames": 150,
+          "notes": {
+            "gradual": "steady, sloping change",
+            "punctuated": "stasis, then sudden splits"
+          },
+          "footer": [
+            {
+              "text": "Same nodes, same species: only the tempo differs",
+              "at": 1400,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1558
+    },
+    {
+      "id": "concept-fossils",
+      "type": "concept",
+      "heading": "What the fossils say",
+      "body": "The fossil record does not crown a winner. Different lineages show different tempos.",
+      "bullets": [
+        {
+          "text": "Read as gradual: the horse family shows a broadly continuous trend in tooth height, limb length and toe reduction over tens of millions of years."
+        },
+        {
+          "text": "Read as punctuated: Devonian trilobites, and the bryozoan Metrarabdotos, stay unchanged for millions of years, then new species appear abruptly."
+        },
+        {
+          "text": "A gap is ambiguous: missing fossils to a gradualist, real stasis then a rapid burst to a punctuationist."
+        }
+      ],
+      "secondary": "A fine-grained record, like Riversleigh's roughly 25 million years of successive assemblages, is what lets the question be tested.",
+      "callout": "The models are not mutually exclusive.",
+      "caption": "Horses read as gradual; trilobites and bryozoans read as punctuated.",
+      "voiceover": {
+        "text": "So which model do the real fossils support? It depends on the group. The horse family is the textbook gradual case. A long fossil sequence shows a broadly continuous trend in tooth height, limb length and toe reduction, across tens of millions of years. Now punctuated. Eldredge based the model partly on Devonian trilobites, which stay unchanged through thick layers of rock, then are replaced abruptly. And Alan Cheetham measured a bryozoan called Metrarabdotos and found species unchanged for millions of years, with new ones appearing suddenly. Then there's the gap problem. A gradualist reads a gap as missing fossils. A punctuationist reads it as real stasis, then a burst too fast to leave many intermediates. So both models describe real history."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Panels",
+        "props": {
+          "title": "Different lineages, different tempos",
+          "columns": [
+            {
+              "name": "Read as gradual",
+              "sub": "the horse family",
+              "icon": "tooth",
+              "at": 100,
+              "lines": [
+                {
+                  "text": "tooth height",
+                  "at": 326
+                },
+                {
+                  "text": "limb length",
+                  "at": 350
+                },
+                {
+                  "text": "toe reduction",
+                  "at": 388
+                }
+              ]
+            },
+            {
+              "name": "Read as punctuated",
+              "sub": "trilobites, bryozoans",
+              "icon": "trilobite",
+              "at": 488,
+              "lines": [
+                {
+                  "text": "Devonian trilobites: unchanged, then replaced abruptly",
+                  "at": 588
+                },
+                {
+                  "text": "Metrarabdotos: stasis for millions of years",
+                  "at": 850
+                }
+              ]
+            },
+            {
+              "name": "A gap",
+              "sub": "two readings",
+              "icon": "rock",
+              "at": 1050,
+              "amber": true,
+              "lines": [
+                {
+                  "text": "gradual: fossils missing",
+                  "at": 1113
+                },
+                {
+                  "text": "punctuated: real stasis, fast burst",
+                  "at": 1213
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "text": "Not mutually exclusive: both describe real history",
+              "at": 1400,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1570
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Interpret the tree",
+      "question": "A tree shows lineages running as long unbranched vertical lines, interrupted by short intervals in which branching occurs. Interpret it and state which model it supports.",
+      "coachNote": "Say what the axes mean first, then read two features, then contrast.",
+      "steps": [
+        "Up = time; each line is a lineage; sideways shift = change in form; a branch point = speciation.",
+        "Long vertical lines: lineages persist without change for most of the time shown. That is stasis.",
+        "Short branching intervals: change is concentrated into brief episodes at the branch points.",
+        "Gradualism would show lineages drifting steadily sideways along their whole length; that is absent.",
+        "Answer: long stasis plus change at the splits is the signature of punctuated equilibrium ✓"
+      ],
+      "caption": "Stasis plus change at the splits: punctuated equilibrium.",
+      "voiceover": {
+        "text": "Let's interpret a tree, exam style. It shows long, unbranched vertical lines, broken by short intervals where branching happens. Which model does it support? Start with what the diagram means. Up is time, each line is a lineage, sideways shift is change in form, and a branch point is speciation. Now read the first feature. Long vertical lines mean lineages persisting without change for most of the time shown. That's stasis. Second feature. The short branching intervals mean change is concentrated into brief episodes, at the branch points. Then the contrast that proves it. Under gradualism, lineages would drift steadily sideways along their whole length, and that pattern is absent. So, long stasis plus change at the splits, that's punctuated equilibrium."
+      },
+      "durationInFrames": 1558
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Punctuated doesn't mean instant",
+      "body": "Wrong: punctuated equilibrium means evolution happens \"all at once\", and contradicts natural selection.",
+      "secondary": "Right: both models work through natural selection and common descent. A \"sudden\" burst still takes thousands of generations; it is only short compared with the long stasis around it.",
+      "mistakeTag": "Rate and timing, not mechanism",
+      "callout": "Sudden in rock-record terms is still thousands of generations.",
+      "caption": "Punctuated equilibrium still runs on natural selection.",
+      "voiceover": {
+        "text": "Here's the trap. Students write that punctuated equilibrium means evolution happens all at once, or that it contradicts natural selection. Both are wrong. Punctuated equilibrium works entirely through natural selection and common descent, exactly like gradualism. The difference is only rate and timing. And sudden is a relative word here. A burst that looks instant in the rock record still takes thousands of generations. It's just short compared with the long periods of stasis around it. So if you write that punctuated equilibrium has no natural selection, you've lost the mark."
+      },
+      "durationInFrames": 1183
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A shellfish species stays unchanged through a thick sequence of rock, then a new form appears abruptly in the layer above. Which model does this fit, and how might a gradualist read the same record?",
+      "pausePrompt": "Pause: what could the jump between layers be hiding?",
+      "answerSteps": [
+        "Unchanged through thick rock = stasis; an abrupt new form = a rapid burst.",
+        "That pattern fits punctuated equilibrium.",
+        "A gradualist could read the jump as a gap: intermediates that were never fossilised.",
+        "Answer: fits punctuated equilibrium, but a gap is ambiguous; a finer record would test it ✓"
+      ],
+      "caption": "Stasis then an abrupt change fits punctuated equilibrium; a gap is ambiguous.",
+      "voiceover": {
+        "text": "Quick check. A shellfish species stays unchanged through a thick sequence of rock. Then a new form appears abruptly in the layer above. Which model does this fit, and how might a gradualist read the same record? Pause, and think about what the jump could be hiding. OK. Unchanged through thick rock is stasis, and an abrupt new form is a rapid burst, so it fits punctuated equilibrium. But a gradualist could say the jump is a gap, intermediate forms that simply weren't fossilised. So the honest answer is, it fits punctuated equilibrium, but a gap is ambiguous, and a finer, more densely sampled record is what would settle it."
+      },
+      "durationInFrames": 1420
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Gradualism: slow, continuous change with many intermediate forms.",
+        "Punctuated equilibrium: long stasis broken by rapid bursts, usually at speciation.",
+        "On a tree: sloping branches = gradual; vertical then sudden split = punctuated.",
+        "Both use natural selection and common descent; they differ in rate and timing.",
+        "Different lineages fit different models; a fossil gap can be read either way."
+      ],
+      "finalPrompt": "Reading a tree: check the slope of the branches and when the change happens.",
+      "caption": "Five takeaways on the tempo of evolution.",
+      "voiceover": {
+        "text": "Let's lock it in. Gradualism is slow, continuous change, with many intermediate forms. Punctuated equilibrium is long stasis, broken by rapid bursts, usually at speciation. On a tree, sloping branches mean gradual, and vertical lines with sudden splits mean punctuated. Both models run on natural selection and common descent, they differ only in rate and timing. And different lineages fit different models, while a gap in the fossils can be read either way. When you meet a tree, check the slope of the branches, and when the change happens."
+      },
+      "durationInFrames": 1158
+    }
+  ]
+}

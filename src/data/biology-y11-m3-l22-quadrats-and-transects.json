@@ -1,0 +1,309 @@
+{
+  "title": "Sampling Techniques: Quadrats & Transects (Practical)",
+  "subtitle": "Estimating abundance and mapping distribution",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 22",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Compare sampling techniques to estimate distribution and abundance of organisms",
+    "Conduct a practical investigation to examine the distribution and abundance of a plant or animal using belt transect, line transect or quadrat sampling techniques"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-03",
+    "BI-11WS-04"
+  ],
+  "lessonIntent": "Students can choose between random quadrats, line transects and belt transects, calculate a population estimate or mean percentage cover from quadrat data, and explain how placement and sample size affect reliability.",
+  "examSkill": "Estimated total = mean per quadrat × (total area ÷ quadrat area); random quadrats for \"how many\", transects for \"how it changes along a gradient\".",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, quadrats and transects. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Quadrats and transects"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "image": "bioY11M3L8QuadratSampling",
+      "heading": "Where you sample decides the answer",
+      "body": "Place your quadrats only where the plants look thickest, and you will \"prove\" the field is full of them, and be completely wrong.",
+      "callout": "Why does where you sample decide whether your estimate is honest?",
+      "caption": "Sampling: count a representative slice, then scale up.",
+      "voiceover": {
+        "text": "You can't count every blade of grass in a paddock, or every limpet on a shore. So how do ecologists put real numbers on a population? They sample. Count a representative slice, then scale up. But here's the catch. Place your quadrats only where the plants look thickest, and you'll prove the field is full of them, and be completely wrong. So why does where you sample decide whether your estimate is honest? Let's find out, and pick the right technique for the question."
+      },
+      "durationInFrames": 1095
+    },
+    {
+      "id": "concept-techniques",
+      "type": "concept",
+      "heading": "Three techniques, three questions",
+      "body": "Random quadrats estimate overall abundance. Transects show how a community changes across a gradient.",
+      "bullets": [
+        {
+          "text": "Quadrat: a square of known area, placed at random and repeated; best for plants and slow or non-moving organisms."
+        },
+        {
+          "text": "Line transect: a tape across a gradient, recording what touches it; shows change along the gradient."
+        },
+        {
+          "text": "Belt transect: quadrats along the line; shows the change AND the abundance at each point."
+        }
+      ],
+      "callout": "How many? Random quadrats. How does it change? A transect.",
+      "caption": "Random quadrats, a line transect and a belt transect.",
+      "voiceover": {
+        "text": "Three techniques, and each one answers a different question. First, random quadrats. A quadrat is a square of known area. You place it at random, many times, and count what's inside. That's best for estimating the overall abundance of plants, or slow, non-moving organisms. Second, a line transect. Lay a tape across a gradient, say from a pond's edge up a bank, and record what touches the line. That shows how species change along the gradient. Third, a belt transect. Place quadrats along the line, so you get the change along the gradient and the abundance at each point. So choose by the question."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Sampling",
+        "props": {
+          "mode": "techniques",
+          "title": "Pick the technique for the question",
+          "beats": {
+            "t1": 50,
+            "t2": 488,
+            "t3": 888
+          },
+          "footer": [
+            {
+              "text": "How many? Random quadrats. How does it change? A transect.",
+              "at": 1188,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1345
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms, including the formula that scales a sample up.",
+      "bullets": [
+        {
+          "text": "Quadrat: a frame of known area within which organisms are counted."
+        },
+        {
+          "text": "Line transect: a tape laid across an area, recording only what touches it. Belt transect: quadrats placed along the line."
+        },
+        {
+          "text": "Random sampling: choosing sample positions by chance, for example random coordinates, so the sample is not biased."
+        },
+        {
+          "text": "Population estimate: total ≈ mean per quadrat × (total area ÷ quadrat area)."
+        }
+      ],
+      "callout": "Estimated total = mean × (total area ÷ quadrat area).",
+      "caption": "Quadrat, line transect, belt transect, random sampling, population estimate.",
+      "voiceover": {
+        "text": "Let's pin down the terms. A quadrat is a frame of known area, and you count the organisms inside it. A line transect is a tape laid across an area, recording only what touches it. A belt transect places quadrats along the line. Random sampling means choosing sample positions by chance, for example with random coordinates, so the sample isn't biased. And the population estimate uses this formula. Estimated total equals the mean per quadrat, times the total area divided by the quadrat area."
+      },
+      "durationInFrames": 1095
+    },
+    {
+      "id": "concept-estimate",
+      "type": "concept",
+      "heading": "From four counts to ten thousand",
+      "body": "Average the counts from random quadrats, then scale the mean up to the whole area.",
+      "bullets": [
+        {
+          "text": "A 2000 m² field; four random 1 m² quadrats contain 4, 6, 5 and 5 plants."
+        },
+        {
+          "text": "Mean per quadrat = (4 + 6 + 5 + 5) ÷ 4 = 5."
+        },
+        {
+          "text": "Total ≈ 5 × (2000 ÷ 1) = 10 000 plants."
+        }
+      ],
+      "callout": "The estimate is only as good as the sample.",
+      "caption": "Four quadrat counts scaled up to a population estimate.",
+      "voiceover": {
+        "text": "Let's turn a few counts into an estimate. Here's a field of two thousand square metres. Four quadrats, each one square metre, land at random coordinates. Count the plants in each. Four, six, five, and five. First, the mean per quadrat. Four plus six plus five plus five is twenty, divided by four quadrats, gives five. Then scale up. Five per square metre, times two thousand square metres divided by one, gives about ten thousand plants. Notice the estimate is only as good as the sample. Four quadrats is a small sample, so more quadrats would make it more reliable."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Sampling",
+        "props": {
+          "mode": "estimate",
+          "title": "Scale the mean up to the whole field",
+          "counts": [
+            4,
+            6,
+            5,
+            5
+          ],
+          "area": 2000,
+          "quadratArea": 1,
+          "unit": "m²",
+          "organism": "flower",
+          "beats": {
+            "plot": 50,
+            "quadrats": 138,
+            "mean": 388,
+            "total": 638
+          }
+        }
+      },
+      "durationInFrames": 1296
+    },
+    {
+      "id": "concept-transect",
+      "type": "concept",
+      "heading": "A belt transect down a rocky shore",
+      "body": "When the question is about position, a transect is the right tool.",
+      "bullets": [
+        {
+          "text": "High shore: limpets and small snails, which must survive long periods out of water."
+        },
+        {
+          "text": "Mid shore: barnacles such as Tesseropora rosea, filter-feeding when covered and clamped shut when exposed."
+        },
+        {
+          "text": "Low shore: mussels, anemones and algae, where submersion lasts longest."
+        }
+      ],
+      "secondary": "Random quadrats pooled into one mean would average this pattern away.",
+      "callout": "A transect keeps the position; a pooled mean throws it away.",
+      "caption": "Zones recorded by a belt transect from high to low tide.",
+      "voiceover": {
+        "text": "Now a transect in action, on a New South Wales rocky shore. Run a belt transect from the high-tide mark down to the low-tide mark, with quadrats along the line. High on the shore, you find limpets and small snails, animals that can survive a long time out of water. Through the mid shore, barnacles such as Tesseropora rosea, which filter-feed when covered and clamp shut when exposed. And low down, mussels, anemones and algae, where submersion lasts longest. The transect is the right tool because the question is about position. Random quadrats pooled into one mean would average this whole pattern away."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Sampling",
+        "props": {
+          "mode": "transect",
+          "title": "High tide to low tide",
+          "beats": {
+            "plot": 0,
+            "line": 88
+          },
+          "zones": [
+            {
+              "name": "limpets, small snails",
+              "icons": [
+                "limpet",
+                "snail"
+              ],
+              "at": 313
+            },
+            {
+              "name": "barnacles",
+              "icons": [
+                "barnacle",
+                "barnacle",
+                "barnacle"
+              ],
+              "at": 563
+            },
+            {
+              "name": "mussels, anemones, algae",
+              "icons": [
+                "mussel",
+                "anemone",
+                "algae"
+              ],
+              "at": 788
+            }
+          ],
+          "footer": [
+            {
+              "text": "The transect keeps the position",
+              "at": 926,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1333
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Percentage cover",
+      "question": "Four gridded quadrats on a dune give saltbush cover of 22%, 35%, 8% and 31%. Find the mean cover, and the area of saltbush in a 4000 m² study area.",
+      "coachNote": "No individuals to count, so use cover: average, then scale.",
+      "steps": [
+        "Each 1 m × 1 m quadrat has 100 squares; each square more than half filled counts as 1%.",
+        "Mean cover = (22 + 35 + 8 + 31) ÷ 4 = 96 ÷ 4 = 24%.",
+        "Area covered = 0.24 × 4000 m² = 960 m².",
+        "This says how much of the dune saltbush occupies, not how many plants there are.",
+        "Answer: mean cover 24%, about 960 m² of saltbush ✓"
+      ],
+      "caption": "Mean percentage cover, scaled to the study area.",
+      "voiceover": {
+        "text": "Some organisms, like grasses, mosses or shrubs that overlap, have no sensible individual to count. So you record percentage cover. A gridded quadrat is strung into a hundred squares, and each square more than half filled counts as one percent. Four quadrats on a dune give saltbush cover of twenty-two, thirty-five, eight and thirty-one percent. Add them, ninety-six, divide by four, a mean cover of twenty-four percent. Across a four thousand square metre study area, that's point two four times four thousand, nine hundred and sixty square metres of saltbush. But notice, that tells you how much of the dune it covers, not how many plants."
+      },
+      "durationInFrames": 1371
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Don't choose where the quadrats go",
+      "body": "Wrong: place quadrats where you can clearly see the organisms you are counting.",
+      "secondary": "Right: choosing where to sample biases the result, because it over-counts dense patches. Place quadrats randomly, for example with random coordinates. The only time you deliberately place samples in a pattern is along a transect, to study a gradient.",
+      "mistakeTag": "Random, and enough of them",
+      "callout": "Too few or biased samples give a misleading estimate.",
+      "caption": "Random placement and enough samples keep an estimate honest.",
+      "voiceover": {
+        "text": "Here's the trap from the hook. Placing quadrats where you can clearly see the organisms. That biases the result, because you over-count the dense patches. Quadrats must go at random, using random coordinates, so the sample fairly represents the whole area. The only time you place samples in a deliberate pattern is along a transect, to study a gradient. And take enough of them. Too few quadrats give an unreliable estimate, and patchy organisms need even more. Use a consistent quadrat size and counting rule, and run more than one transect."
+      },
+      "durationInFrames": 1183
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Five 1 m² quadrats give a mean of 8 plants each. The field is 500 m². Estimate the total population.",
+      "pausePrompt": "Pause: mean × (total area ÷ quadrat area).",
+      "answerSteps": [
+        "Mean per quadrat = 8.",
+        "Area ratio = 500 m² ÷ 1 m² = 500.",
+        "Total ≈ 8 × 500.",
+        "Answer: about 4000 plants ✓"
+      ],
+      "caption": "Mean times the area ratio gives the estimate.",
+      "voiceover": {
+        "text": "Quick check. Five quadrats, each one square metre, give a mean of eight plants. The field is five hundred square metres. Estimate the total population. Pause, and use the formula. OK. The mean per quadrat is eight. The area ratio is five hundred square metres divided by one square metre, which is five hundred. So the total is eight times five hundred, about four thousand plants. Not forty, and not eight, those are the classic slips."
+      },
+      "durationInFrames": 995
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Random quadrats estimate overall abundance of plants and slow-moving organisms.",
+        "Line transects show change along a gradient; belt transects add abundance at each point.",
+        "Estimated total = mean per quadrat × (total area ÷ quadrat area).",
+        "Use percentage cover when individuals cannot be counted.",
+        "Place quadrats randomly, take enough, keep the method consistent, and repeat transects."
+      ],
+      "finalPrompt": "Choose by the question: \"how many?\" or \"how does it change?\"",
+      "caption": "Five takeaways on quadrats and transects.",
+      "voiceover": {
+        "text": "Let's lock it in. Random quadrats estimate the overall abundance of plants and slow-moving organisms. Line transects show change along a gradient, and belt transects add the abundance at each point. The estimate is the mean per quadrat, times the total area divided by the quadrat area. Use percentage cover when individuals can't be counted. And place quadrats randomly, take enough of them, keep the method consistent, and repeat your transects. Choose by the question, how many, or how does it change?"
+      },
+      "durationInFrames": 1071
+    }
+  ]
+}

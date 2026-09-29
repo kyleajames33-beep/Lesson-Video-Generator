@@ -1,0 +1,362 @@
+{
+  "title": "Evidence from Fossils",
+  "subtitle": "Transitional fossils, fossil assemblages and relative dating",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 16",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Analyse information on how transitional fossils, fossil assemblages and relative dating have provided palaeontological and geological evidence for past changes in life forms"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03"
+  ],
+  "lessonIntent": "Students can analyse how transitional fossils, fossil assemblages and relative dating (superposition) provide evidence for past changes in life forms, and state what relative dating can and cannot establish.",
+  "examSkill": "Order fossils using superposition, explain what a transitional fossil or assemblage shows, and say that relative dating gives order, not age.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, evidence from fossils. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Evidence from fossils"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "image": "bioY11M3L4Archaeopteryx",
+      "heading": "Ordering history without a single date",
+      "body": "A palaeontologist has no machine to read a fossil's exact age, yet can say with confidence it is older than the fossil two layers above it.",
+      "callout": "How can you put the history of life in order without measuring one date?",
+      "caption": "Fossils in rock layers record the order of life's history.",
+      "voiceover": {
+        "text": "In eighteen sixty-one, quarry workers in Germany split a slab of limestone and found a creature with the feathers of a bird, and the teeth, claws and bony tail of a reptile. Archaeopteryx, a fossil caught mid-transition. Now here's a puzzle. A palaeontologist finds a fossil but has no machine to read its exact age. Yet they can say, with confidence, that it's older than the fossil two layers above it. How can you put the history of life in order without measuring a single date? That's today's lesson."
+      },
+      "durationInFrames": 1158
+    },
+    {
+      "id": "concept-transitional",
+      "type": "concept",
+      "heading": "Transitional fossils, caught mid-change",
+      "body": "If life forms have changed over time, we should find fossils with a blend of features from an ancestral group and its descendants. We do.",
+      "bullets": [
+        {
+          "text": "Archaeopteryx: feathers and a wishbone like a bird, but teeth, clawed fingers and a long bony tail like a reptile."
+        },
+        {
+          "text": "Tiktaalik sits between fish and four-legged animals; a sequence of fossil whales shows hind limbs lost as ancestors moved from land to sea."
+        },
+        {
+          "text": "Riversleigh in Queensland preserves Australian faunas across roughly 25 million years, including intermediate marsupial forms."
+        }
+      ],
+      "callout": "A mix of ancestral and derived features: the intermediate form evolution predicts.",
+      "caption": "Archaeopteryx shows bird and reptile features together.",
+      "voiceover": {
+        "text": "Start with transitional fossils. If life has changed over time, we should find fossils with a blend of features from an ancestral group and its descendants, and we do. Archaeopteryx is the classic. On the bird side, feathers and a wishbone. On the reptile side, teeth, clawed fingers and a long, bony tail. It's exactly the kind of intermediate form the theory of evolution predicts. There are others. Tiktaalik sits between fish and four-legged animals. A sequence of fossil whales shows hind limbs being lost as their ancestors moved from land to sea. And here in Australia, the Riversleigh deposits in Queensland preserve mammal, bird and reptile faunas across roughly twenty-five million years, including intermediate marsupial forms."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Panels",
+        "props": {
+          "title": "Archaeopteryx: a mix of features",
+          "columns": [
+            {
+              "name": "Bird-like",
+              "sub": "derived features",
+              "icon": "feather",
+              "at": 350,
+              "lines": [
+                {
+                  "text": "feathers",
+                  "ok": true,
+                  "at": 401
+                },
+                {
+                  "text": "a wishbone",
+                  "ok": true,
+                  "at": 426
+                }
+              ]
+            },
+            {
+              "name": "Reptile-like",
+              "sub": "ancestral features",
+              "icon": "tooth",
+              "at": 451,
+              "lines": [
+                {
+                  "text": "teeth",
+                  "ok": true,
+                  "at": 500
+                },
+                {
+                  "text": "clawed fingers",
+                  "ok": true,
+                  "at": 513
+                },
+                {
+                  "text": "a long, bony tail",
+                  "ok": true,
+                  "at": 576
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "text": "One fossil, both sets: the intermediate form evolution predicts",
+              "at": 601,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1508
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for reading the rock record.",
+      "bullets": [
+        {
+          "text": "Fossil: preserved remains, impression or trace of a once-living organism, usually in sedimentary rock."
+        },
+        {
+          "text": "Transitional fossil: shows features intermediate between an ancestral group and its descendants."
+        },
+        {
+          "text": "Fossil assemblage: the collection of different fossils found together in one rock layer."
+        },
+        {
+          "text": "Relative dating: working out the age ORDER of rocks and fossils, without a numerical age. Superposition: in undisturbed sedimentary rock, lower layers are older."
+        }
+      ],
+      "callout": "Relative dating gives order, not age.",
+      "caption": "Fossil, transitional fossil, assemblage, relative dating, superposition.",
+      "voiceover": {
+        "text": "Let's set up the words. A fossil is the preserved remains, impression or trace of a once-living organism, usually found in sedimentary rock. A transitional fossil shows features intermediate between an ancestral group and its descendants. A fossil assemblage is the whole collection of different fossils found together in one rock layer. Relative dating means working out the age order of rocks and fossils, without giving a numerical age. And superposition is the principle that, in undisturbed sedimentary rock, lower layers are older. Hold on to this one. Relative dating gives order, not age."
+      },
+      "durationInFrames": 1221
+    },
+    {
+      "id": "concept-superposition",
+      "type": "concept",
+      "heading": "Superposition: deeper is older",
+      "body": "Sediment settles from above, layer on layer, so in undisturbed rock the deeper you dig, the further back in time you go.",
+      "bullets": [
+        {
+          "text": "A fossil takes the age of the layer it was buried in."
+        },
+        {
+          "text": "Reading a sequence from the bottom up shows the order in which life forms appeared, changed and disappeared."
+        },
+        {
+          "text": "Index fossils, distinctive, widespread and short-lived, match layers of the same age in rocks far apart."
+        }
+      ],
+      "callout": "Read the rock from the bottom up.",
+      "caption": "Superposition puts fossils in order: the bottom layer is oldest.",
+      "voiceover": {
+        "text": "So how do we know which fossils are older? Sediment settles from above, layer on top of layer. A new layer can only form on one that's already there. So watch the rock build. In undisturbed rock, the deeper you dig, the further back in time you go. That's superposition. And a fossil takes the age of the layer it was buried in. So here, the shell in the bottom layer is oldest, then the fish, and the leaf at the top is youngest. Reading from the bottom up gives the order in which life forms appeared and changed. One more tool. Index fossils, which are distinctive, widespread and short-lived, let geologists match layers of the same age in rocks far apart."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Strata",
+        "props": {
+          "mode": "superposition",
+          "title": "Five undisturbed layers",
+          "layers": [
+            {
+              "name": "shell",
+              "fossils": [
+                "shell"
+              ],
+              "at": 313
+            },
+            {
+              "at": 333
+            },
+            {
+              "name": "fish",
+              "fossils": [
+                "fishFossil"
+              ],
+              "at": 353
+            },
+            {
+              "at": 373
+            },
+            {
+              "name": "leaf",
+              "fossils": [
+                "leafFossil"
+              ],
+              "at": 393
+            }
+          ],
+          "beats": {
+            "arrow": 401,
+            "read": 726
+          },
+          "readTitle": "oldest → youngest",
+          "footer": [
+            {
+              "text": "Order only: no ages in years",
+              "at": 988,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1570
+    },
+    {
+      "id": "concept-assemblage",
+      "type": "concept",
+      "heading": "Assemblages, and the gaps",
+      "body": "All the fossils in one layer, taken together, show a whole past community and its environment.",
+      "bullets": [
+        {
+          "text": "A layer rich in coral and shellfish points to a warm, shallow sea."
+        },
+        {
+          "text": "Comparing assemblages up a sequence shows whole communities changing, as at Ediacara in South Australia, where soft-bodied organisms lie beneath the first shelly animals."
+        },
+        {
+          "text": "The record is incomplete: fossilisation is rare and favours hard parts, so it is combined with dating, index fossils and molecular evidence."
+        }
+      ],
+      "callout": "A gap is missing preservation, not missing evolution.",
+      "caption": "Assemblages reconstruct past communities; the record has gaps.",
+      "voiceover": {
+        "text": "Now zoom out from one fossil to a whole layer. A fossil assemblage is every fossil found together in one layer, so it captures a whole community. A layer rich in coral and shellfish, for example, points to a warm, shallow sea. Compare assemblages up a sequence, and you see communities change. At Ediacara in the Flinders Ranges, an assemblage of soft-bodied organisms lies beneath the first shelly animals. Read by superposition, it's older, which is why the Ediacaran Period was defined there in two thousand and four. But be honest about the limits. Fossilisation is rare, and it favours hard-bodied organisms, so the record has gaps. That's why fossils are combined with other lines of evidence."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Strata",
+        "props": {
+          "mode": "assemblage",
+          "title": "Ediacara: two assemblages, in order",
+          "layers": [
+            {
+              "name": "older layer",
+              "fossils": [
+                "algae",
+                "algae",
+                "algae"
+              ],
+              "at": 588,
+              "tag": "soft-bodied organisms"
+            },
+            {
+              "name": "younger layer",
+              "fossils": [
+                "shell",
+                "trilobite",
+                "shell"
+              ],
+              "at": 751,
+              "tag": "first shelly animals",
+              "amber": true
+            }
+          ],
+          "footer": [
+            {
+              "text": "An assemblage shows a whole community",
+              "at": 226
+            },
+            {
+              "text": "The record has gaps: fossilisation is rare",
+              "at": 1113,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1508
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Order the strata",
+      "question": "Four undisturbed layers: Layer 1 (surface) modern fish; Layer 2 early amphibian; Layer 3 lobe-finned fish; Layer 4 (base) simple marine invertebrates. Order the fossils oldest to youngest and say what the sequence shows.",
+      "coachNote": "Deepest first: superposition, in undisturbed rock.",
+      "steps": [
+        "Principle: in undisturbed sedimentary rock, lower layers are older (superposition).",
+        "Oldest to youngest: simple marine invertebrates → lobe-finned fish → early amphibian → modern fish.",
+        "The sequence runs from simple marine life, to fish, to animals moving onto land.",
+        "Limit: this gives the order of appearance, not how many years ago each lived.",
+        "Answer: invertebrates, lobe-finned fish, amphibian, modern fish, showing life forms changing over time ✓"
+      ],
+      "caption": "Superposition orders the fossils from the base up.",
+      "voiceover": {
+        "text": "Let's order some strata. A cliff has four undisturbed layers. Layer one, at the surface, has modern fish. Layer two, an early amphibian. Layer three, a lobe-finned fish. And layer four, at the base, simple marine invertebrates. The principle is superposition. In undisturbed rock, lower layers are older. So start from the bottom. Oldest are the simple marine invertebrates, then the lobe-finned fish, then the early amphibian, and the youngest are the modern fish. What does it show? Life forms changing over time, from simple marine life, to fish, to animals moving onto land. And state the limit. This gives the order, not the number of years."
+      },
+      "durationInFrames": 1383
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two fossil traps",
+      "body": "Wrong: a transitional fossil is a \"half-and-half\" animal that was the direct ancestor of a living species, and gaps in the record disprove evolution.",
+      "secondary": "Right: a transitional fossil shows a mix of ancestral and derived features, the kind of intermediate evolution predicts, not necessarily a direct ancestor. Gaps reflect how rare fossilisation is.",
+      "mistakeTag": "Intermediate, not ancestor",
+      "callout": "And relative dating never gives an age in years.",
+      "caption": "Transitional fossils are intermediate forms, not necessarily ancestors.",
+      "voiceover": {
+        "text": "Two traps. First, calling a transitional fossil a half-and-half animal, the direct ancestor of something living today. A transitional fossil shows a mix of ancestral and derived features. It represents the kind of intermediate form evolution predicts, but it isn't necessarily a direct ancestor. Second, saying gaps in the fossil record disprove evolution. They don't. Gaps reflect how rarely fossilisation happens, especially for soft-bodied organisms. And a bonus trap. Relative dating never gives you an age in years. It gives you order."
+      },
+      "durationInFrames": 1071
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Explain what relative dating can establish about a fossil sequence, and what it cannot. Name one condition the method depends on.",
+      "pausePrompt": "Pause: order, or age? And what could disturb the layers?",
+      "answerSteps": [
+        "Can: the order in which the fossils formed, because a fossil takes the age of its layer.",
+        "Cannot: a numerical age in years; other (absolute) methods supply that.",
+        "Depends on the rock being undisturbed: folding, faulting or overturning can invert layers.",
+        "Answer: order yes, age no, and only in an undisturbed sequence ✓"
+      ],
+      "caption": "Relative dating: order, not age, in undisturbed rock.",
+      "voiceover": {
+        "text": "Quick check. Explain what relative dating can establish about a fossil sequence, and what it can't. Then name one condition the method depends on. Pause, and think, order, or age? Right. It can establish the order the fossils formed in, because each fossil takes the age of its layer. It can't give a numerical age in years, other, absolute methods supply that. And it depends on the rock being undisturbed. Folding, faulting or overturning can flip layers, so geologists check for that first. So, order yes, age no, and only in an undisturbed sequence."
+      },
+      "durationInFrames": 1221
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Transitional fossils, like Archaeopteryx, mix ancestral and derived features.",
+        "Superposition: in undisturbed sedimentary rock, lower layers are older.",
+        "Relative dating gives the order of life forms, not their age in years.",
+        "Assemblages reveal whole past communities; index fossils match same-age layers far apart.",
+        "The record has gaps because fossilisation is rare, so it is combined with other evidence."
+      ],
+      "finalPrompt": "Reading strata? Start at the bottom and say \"order, not age\".",
+      "caption": "Five takeaways on fossil evidence.",
+      "voiceover": {
+        "text": "Let's lock it in. Transitional fossils, like Archaeopteryx, mix ancestral and derived features. Superposition says that in undisturbed sedimentary rock, lower layers are older. Relative dating gives the order of life forms, not their age in years. Assemblages show whole past communities, and index fossils match layers of the same age far apart. And the record has gaps, because fossilisation is rare, so it's combined with other evidence. Reading strata? Start at the bottom, and say, order, not age."
+      },
+      "durationInFrames": 1033
+    }
+  ]
+}
