@@ -13,9 +13,11 @@
 //   chamber. Pencil baseline, mixture spot, solvent rises by capillary action,
 //   the spots travel different distances, the solvent front is marked. The
 //   chamber is removed and a ruler measures each distance; Rf = compound
-//   distance ÷ solvent front distance (amber), computed from the props:
-//   6.0 ÷ 8.0 = 0.75 and 2.0 ÷ 8.0 = 0.25. The polar compound on polar silica has
-//   the low Rf.
+//   distance ÷ solvent front distance (amber), computed from the props. The
+//   defaults are the lesson's own worked example (1.8 ÷ 6.0 = 0.30) for the
+//   polar spot, which has the low Rf on polar silica. The second spot is only
+//   measured if `fastCm` is given; otherwise it is labelled qualitatively
+//   (travels further, higher Rf) so no distance is invented.
 //
 // Beats (frames after `delay`):
 //   principle: [phrase, stationary, mobile, carried, slow one, fast one, chemistry]
@@ -31,7 +33,7 @@ export type SeparationProps = {
 	delay?: number;
 	mode?: 'principle' | 'tlc';
 	beats?: number[];
-	/** TLC: distances from the baseline, in cm. */
+	/** TLC: distances from the baseline, in cm. Omit fastCm to leave the second spot unmeasured. */
 	frontCm?: number;
 	fastCm?: number;
 	slowCm?: number;
@@ -45,7 +47,7 @@ const DEFAULT_BEATS = {
 	tlc: [20, 130, 215, 280, 430, 450, 545, 575, 750, 850],
 };
 
-export const SeparationDiagram = ({delay = 62, mode = 'principle', beats, frontCm = 8.0, fastCm = 6.0, slowCm = 2.0}: SeparationProps) => {
+export const SeparationDiagram = ({delay = 62, mode = 'principle', beats, frontCm = 6.0, fastCm, slowCm = 1.8}: SeparationProps) => {
 	const frame = useCurrentFrame() - delay;
 	const b = beats ?? DEFAULT_BEATS[mode];
 	return mode === 'tlc' ? <Tlc frame={frame} b={b} frontCm={frontCm} fastCm={fastCm} slowCm={slowCm} /> : <Principle frame={frame} b={b} />;
@@ -166,11 +168,11 @@ const Principle = ({frame, b}: {frame: number; b: number[]}) => {
 };
 
 // ─────────────────────────────────────────────────────────────────────
-const Tlc = ({frame, b, frontCm, fastCm, slowCm}: {frame: number; b: number[]; frontCm: number; fastCm: number; slowCm: number}) => {
+const Tlc = ({frame, b, frontCm, fastCm, slowCm}: {frame: number; b: number[]; frontCm: number; fastCm?: number; slowCm: number}) => {
 	const ID = 'c12m8septlc';
 	const [tPlate, tSolvent, tSpot, tRise, tMeasure, tFormula, tCalc, tUnits, tPure, tPolar] = b;
 	const pulse = idlePulse(frame);
-	const S = 30; // viewBox units per cm
+	const S = 240 / frontCm; // viewBox units per cm (plate height is fixed)
 	const CX = 150, BASE = 452;
 	const PW = 80;
 	const plateBot = BASE - 8;
@@ -178,7 +180,8 @@ const Tlc = ({frame, b, frontCm, fastCm, slowCm}: {frame: number; b: number[]; f
 	const plateTop = baseY - (frontCm + 1) * S;
 	const poolY = plateBot - 10;
 
-	const rfFast = fastCm / frontCm;
+	// Unmeasured second spot: drawn well above the polar one, never labelled with a number.
+	const rfFast = fastCm !== undefined ? fastCm / frontCm : Math.min(0.85, slowCm / frontCm + 0.45);
 	const rfSlow = slowCm / frontCm;
 	const fmt = (v: number) => v.toFixed(1);
 	const fmt2 = (v: number) => v.toFixed(2);
@@ -206,7 +209,7 @@ const Tlc = ({frame, b, frontCm, fastCm, slowCm}: {frame: number; b: number[]; f
 	);
 
 	return (
-		<svg viewBox={`0 0 ${W} 530`} role="img" aria-label={`TLC: silica plate in a solvent chamber; the solvent rises and the spots travel different distances. Rf = compound distance ÷ solvent front distance: ${fmt(fastCm)} ÷ ${fmt(frontCm)} = ${fmt2(rfFast)} and ${fmt(slowCm)} ÷ ${fmt(frontCm)} = ${fmt2(rfSlow)}; no units, between 0 and 1; the polar compound has the low Rf on polar silica`} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+		<svg viewBox={`0 0 ${W} 530`} role="img" aria-label={`TLC: silica plate in a solvent chamber; the solvent rises and the spots travel different distances. Rf = compound distance ÷ solvent front distance: ${fmt(slowCm)} ÷ ${fmt(frontCm)} = ${fmt2(rfSlow)} for the polar spot${fastCm !== undefined ? ` and ${fmt(fastCm)} ÷ ${fmt(frontCm)} = ${fmt2(rfFast)}` : '; the other spot travels further, a higher Rf'}; no units, between 0 and 1; the polar compound has the low Rf on polar silica`} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={ID} />
 			<GlossDefs id={ID} colors={{red: RED, blue: BLUE}} />
 
@@ -244,12 +247,12 @@ const Tlc = ({frame, b, frontCm, fastCm, slowCm}: {frame: number; b: number[]; f
 			{/* ruler + measured distances */}
 			<g opacity={measure}>
 				<rect x={RX} y={plateTop} width={26} height={baseY - plateTop + 12} rx={3} fill="#f3e6c4" stroke="#b69a5c" strokeWidth={1.5} />
-				{Array.from({length: Math.floor(frontCm) + 2}, (_, k) => (
+				{Array.from({length: Math.floor(frontCm) + 1}, (_, k) => (
 					<line key={k} x1={RX} y1={baseY - k * S} x2={RX + (k % 2 === 0 ? 14 : 9)} y2={baseY - k * S} stroke="#7a6436" strokeWidth={1.5} />
 				))}
 				{[
 					{y: baseY - frontCm * S, v: frontCm, c: TOK.ink},
-					{y: fastY, v: fastCm, c: BLUE},
+					...(fastCm !== undefined ? [{y: fastY, v: fastCm, c: BLUE}] : []),
 					{y: slowY, v: slowCm, c: RED},
 				].map((m, k) => (
 					<g key={k}>
@@ -269,12 +272,16 @@ const Tlc = ({frame, b, frontCm, fastCm, slowCm}: {frame: number; b: number[]; f
 				<text x={588} y={188} textAnchor="middle" fill={TOK.ink} fontSize={20} fontWeight={800}>solvent front distance</text>
 			</g>
 			<g opacity={ramp(frame, tCalc, 14)}>
-				<Ball id={ID} name="blue" color={BLUE} x={380} y={250} r={9} />
-				<text x={400} y={258} fill={TOK.ink} fontSize={24} fontWeight={800}>{fmt(fastCm)} ÷ {fmt(frontCm)} = {fmt2(rfFast)}</text>
+				<Ball id={ID} name="red" color={RED} x={380} y={250} r={9} />
+				<text x={400} y={258} fill={TOK.ink} fontSize={24} fontWeight={800}>{fmt(slowCm)} ÷ {fmt(frontCm)} = {fmt2(rfSlow)}</text>
 			</g>
 			<g opacity={ramp(frame, tCalc + 20, 14)}>
-				<Ball id={ID} name="red" color={RED} x={380} y={294} r={9} />
-				<text x={400} y={302} fill={TOK.ink} fontSize={24} fontWeight={800}>{fmt(slowCm)} ÷ {fmt(frontCm)} = {fmt2(rfSlow)}</text>
+				<Ball id={ID} name="blue" color={BLUE} x={380} y={294} r={9} />
+				{fastCm !== undefined ? (
+					<text x={400} y={302} fill={TOK.ink} fontSize={24} fontWeight={800}>{fmt(fastCm)} ÷ {fmt(frontCm)} = {fmt2(rfFast)}</text>
+				) : (
+					<text x={400} y={301} fill={TOK.ink} fontSize={20} fontWeight={800}>travels further → higher Rf</text>
+				)}
 			</g>
 			<g opacity={ramp(frame, tUnits, 14)}>
 				<text x={372} y={348} fill={TOK.inkDim} fontSize={19} fontWeight={700}>No units; always between 0 and 1</text>
