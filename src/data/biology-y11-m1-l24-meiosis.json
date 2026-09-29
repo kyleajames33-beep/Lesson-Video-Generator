@@ -1,0 +1,279 @@
+{
+  "title": "Meiosis",
+  "subtitle": "Halving the chromosome number, and the three sources of variation",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 24",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Describe the processes of crossing over, independent assortment and random segregation during meiosis",
+    "Conduct a practical investigation to model the named phases of meiosis and cytokinesis"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01",
+    "BI-11WS-02"
+  ],
+  "inquiryQuestion": "Why is every egg and every sperm genetically unique?",
+  "lessonIntent": "Students can describe how meiosis halves the chromosome number and how crossing over, independent assortment and random segregation create genetically different gametes, and model the phases of meiosis.",
+  "examSkill": "Name where each source of variation happens (prophase I, metaphase I, anaphase I and II) and calculate 2ⁿ gamete combinations.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, meiosis. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Meiosis"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same parents, different children",
+      "body": "Two siblings share the same parents, yet they are never identical (unless they are identical twins).",
+      "callout": "How does meiosis make every egg and sperm unique?",
+      "image": "bioM5L8NondisjunctionKaryotype",
+      "caption": "Meiosis makes gametes with half the chromosomes, and no two alike.",
+      "durationInFrames": 990,
+      "voiceover": {
+        "text": "Mitosis makes copies. Meiosis makes variety. Two siblings share exactly the same parents, yet unless they're identical twins, they're never genetically identical. The reason is hidden inside one special type of cell division. To make sperm and egg cells, meiosis halves the chromosome number, and along the way it shuffles the genes, so no two gametes are ever quite the same. Today we'll see how the number is halved, and where the three sources of that shuffling come from."
+      }
+    },
+    {
+      "id": "concept-halving",
+      "type": "concept",
+      "heading": "Two divisions, four cells, half the chromosomes",
+      "body": "DNA is replicated once, but the cell divides twice, giving four haploid cells.",
+      "bullets": [
+        {
+          "text": "Meiosis makes gametes: four daughter cells, each haploid (n)."
+        },
+        {
+          "text": "Meiosis I: homologous pairs separate."
+        },
+        {
+          "text": "Meiosis II: sister chromatids separate."
+        },
+        {
+          "text": "Halving means fertilisation restores the full number instead of doubling it."
+        }
+      ],
+      "callout": "One replication, two divisions.",
+      "caption": "A diploid cell (2n = 4) divides twice into four haploid cells (n = 2).",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Meiosis",
+        "delay": 30,
+        "props": {
+          "at": {
+            "pairing": 547,
+            "m1": 616,
+            "m2": 812,
+            "result": 928,
+            "once": 1008
+          }
+        }
+      },
+      "durationInFrames": 1232,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Meiosis is the division that makes gametes, and to do that it must halve the chromosome number. Here's a cell with two pairs of homologous chromosomes, one of each pair from each parent. Its DNA has already been replicated once, so every chromosome is two sister chromatids. In meiosis one, the homologous pairs line up together and then separate, so each new cell gets one chromosome from each pair. The number has halved. In meiosis two, the sister chromatids separate, much like mitosis. The result is four cells, each haploid. One replication, two divisions, and that's why the number halves."
+      }
+    },
+    {
+      "id": "concept-variation",
+      "type": "concept",
+      "heading": "Three sources of variation",
+      "body": "Crossing over, independent assortment and random segregation mix the chromosomes before the cells separate.",
+      "bullets": [
+        {
+          "text": "Crossing over (prophase I): homologous chromosomes swap equivalent segments."
+        },
+        {
+          "text": "Independent assortment (metaphase I): each pair lines up independently of the others."
+        },
+        {
+          "text": "Random segregation: which homologue (anaphase I), then which chromatid (anaphase II), goes to each gamete is chance."
+        }
+      ],
+      "callout": "New combinations of alleles, not new alleles.",
+      "caption": "Crossing over swaps segments; independent assortment lines pairs up at random.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Reshuffle",
+        "delay": 30,
+        "props": {
+          "at": {
+            "cross": 132,
+            "swap": 282,
+            "assort": 420,
+            "arrange2": 524,
+            "result": 778
+          },
+          "rule": "new combinations of alleles, not new alleles"
+        }
+      },
+      "durationInFrames": 1186,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "So why is each of the four cells different? Three processes shuffle the chromosomes. First, crossing over, in prophase one. The homologous chromosomes pair up closely and exchange equivalent segments, which creates new combinations of alleles on each chromosome. Second, independent assortment, in metaphase one. Each homologous pair lines up at the equator independently of the other pairs, so the chromosomes from each parent are mixed randomly between the gametes. Third, random segregation. Which chromosome of each pair goes to which cell in anaphase one, and then which chromatid in anaphase two, is left to chance."
+      }
+    },
+    {
+      "id": "concept-combined",
+      "type": "concept",
+      "heading": "Why it all adds up",
+      "body": "The processes combine, so one person can make an enormous number of genetically different gametes.",
+      "bullets": [
+        {
+          "text": "Independent assortment alone: 2ⁿ combinations for n pairs."
+        },
+        {
+          "text": "Humans, 23 pairs: 2²³ = 8,388,608 combinations."
+        },
+        {
+          "text": "Crossing over, then random fertilisation, multiply this further."
+        },
+        {
+          "text": "This variation is the raw material for natural selection."
+        }
+      ],
+      "callout": "Every gamete is unique.",
+      "caption": "With 23 pairs, independent assortment alone gives over 8 million combinations.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bAssortment",
+        "delay": 30,
+        "props": {
+          "at": {
+            "one": 51,
+            "two": 178,
+            "three": 224,
+            "human": 455,
+            "crossing": 697,
+            "fertilisation": 766,
+            "rule": 916
+          },
+          "rule": "Every gamete is unique"
+        }
+      },
+      "durationInFrames": 1221,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Now see how fast the variety grows. With one pair of chromosomes, there are two kinds of gamete. With two pairs, four. With three pairs, eight. Each extra pair doubles it, so it's two to the power of the number of pairs. Humans have twenty three pairs, so independent assortment alone gives two to the twenty three, more than eight million different combinations. Then crossing over multiplies that enormously, and random fertilisation, a random sperm meeting a random egg, multiplies it again. That's why every gamete is unique, and why this variation is the raw material for natural selection."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Meiosis: division producing four genetically different haploid gametes."
+        },
+        {
+          "text": "Homologous chromosomes: a matching pair, one from each parent, with the same genes in the same order."
+        },
+        {
+          "text": "Crossing over: exchange of segments between homologous chromosomes in prophase I."
+        },
+        {
+          "text": "Independent assortment: homologous pairs line up and separate independently, mixing maternal and paternal chromosomes."
+        },
+        {
+          "text": "Random segregation: random separation of homologues (anaphase I) and chromatids (anaphase II) into gametes."
+        }
+      ],
+      "callout": "Prophase I: crossing over. Metaphase I: assortment. Anaphase: segregation.",
+      "caption": "Meiosis, homologous chromosomes, crossing over, independent assortment, random segregation.",
+      "durationInFrames": 1094,
+      "voiceover": {
+        "text": "Here are the terms. Meiosis is the division that produces four genetically different gametes, each with half the parent's chromosome number. Homologous chromosomes are a matching pair, one from each parent, carrying the same genes in the same order. Crossing over is the exchange of segments between homologous chromosomes in prophase one. Independent assortment means the homologous pairs line up and separate independently, mixing maternal and paternal chromosomes. And random segregation is the random separation of homologues in anaphase one, and chromatids in anaphase two, into the gametes."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Model meiosis, phase by phase",
+      "question": "Using two colours of pipe cleaners for a maternal and a paternal homologous pair, model meiosis. State what happens in each named phase and where variation arises.",
+      "coachNote": "Meiosis I separates homologues; meiosis II separates chromatids. Mark the three sources of variation.",
+      "steps": [
+        "Prophase I: homologues pair up and swap a segment: crossing over.",
+        "Metaphase I: pairs line up at the equator, each independently: independent assortment.",
+        "Anaphase I, telophase I and cytokinesis: homologues separate (random segregation) into two cells.",
+        "Prophase II and metaphase II: chromosomes line up again in each cell.",
+        "Anaphase II, telophase II and cytokinesis: chromatids separate: four haploid, genetically different cells ✓"
+      ],
+      "caption": "Meiosis I separates homologues; meiosis II separates chromatids: four different haploid cells.",
+      "durationInFrames": 1278,
+      "voiceover": {
+        "text": "Here's the practical. Using two colours of pipe cleaners for a maternal and a paternal homologous pair, model meiosis, and show where the variation comes from. In prophase one, pair up the homologues and swap a segment. That's crossing over. In metaphase one, line the pairs up at the equator, each independently. That's independent assortment. In anaphase one and telophase one, then cytokinesis, the homologues separate into two cells, by random segregation. In prophase two and metaphase two, the chromosomes line up again in each cell. And in anaphase two, telophase two and cytokinesis, the chromatids separate, giving four haploid cells, all genetically different."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two meiosis traps",
+      "body": "Trap 1: 'Meiosis makes two identical cells, just with fewer chromosomes.' It makes FOUR cells, each haploid, and each genetically different. Identical cells come from mitosis.",
+      "secondary": "Trap 2: 'Homologous pairs always line up in the same fixed order.' No: each pair's orientation is random, which is exactly why independent assortment creates variety.",
+      "mistakeTag": "Four different cells",
+      "callout": "Meiosis: four haploid cells, all different.",
+      "caption": "Meiosis makes four different haploid cells, and pairs line up at random.",
+      "durationInFrames": 944,
+      "voiceover": {
+        "text": "Two traps. Trap one, saying meiosis makes two identical cells, just with fewer chromosomes. It makes four cells, each with half the chromosome number, and each genetically different, because of crossing over, independent assortment and random segregation. Identical daughter cells are what mitosis makes. Trap two, thinking the homologous pairs always line up in the same fixed order. They don't. Each pair's orientation is random, and that's exactly why independent assortment creates so much variety."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "An organism has a diploid number of 6 (three homologous pairs). How many chromosome combinations can its gametes have from independent assortment alone? Why is the real number of different gametes larger?",
+      "pausePrompt": "Pause: two choices per pair, how many pairs?",
+      "answerSteps": [
+        "2n = 6 means 3 homologous pairs.",
+        "Each pair can line up two ways: 2³ = 8 combinations.",
+        "Crossing over makes new combinations of alleles within chromosomes, so the real number of different gametes is far larger ✓"
+      ],
+      "caption": "Three pairs: 2³ = 8 combinations; crossing over adds far more.",
+      "durationInFrames": 1128,
+      "voiceover": {
+        "text": "Quick check. An organism has a diploid number of six, so three homologous pairs. How many chromosome combinations can its gametes have from independent assortment alone? And why is the real number of different gametes larger? Pause, and count the choices. OK. Two n equals six means three pairs, and each pair can line up two ways. So it's two to the power of three, which is eight combinations. But crossing over also creates new combinations of alleles within each chromosome, so the real number of different gametes is far larger."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Meiosis: one replication, two divisions, four haploid cells.",
+        "Meiosis I separates homologous pairs; meiosis II separates sister chromatids.",
+        "Crossing over (prophase I) swaps segments between homologues.",
+        "Independent assortment (metaphase I) and random segregation (anaphase I and II) mix chromosomes at random.",
+        "Together they make every gamete unique: the raw material for natural selection."
+      ],
+      "finalPrompt": "Meiosis question? Name the process, the phase, and what it mixes.",
+      "caption": "Five takeaways: halving, two divisions, and the three sources of variation.",
+      "durationInFrames": 875,
+      "voiceover": {
+        "text": "Let's lock it in. First, meiosis has one replication and two divisions, giving four haploid cells. Second, meiosis one separates the homologous pairs, and meiosis two separates the sister chromatids. Third, crossing over, in prophase one, swaps segments between homologues. Fourth, independent assortment and random segregation mix the chromosomes at random. And fifth, together they make every gamete unique. Next lesson, we weigh up why all of this matters."
+      }
+    }
+  ]
+}

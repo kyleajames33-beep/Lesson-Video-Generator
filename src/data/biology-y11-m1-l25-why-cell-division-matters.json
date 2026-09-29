@@ -1,0 +1,381 @@
+{
+  "title": "Why Cell Division Matters",
+  "subtitle": "Evaluating DNA replication, mitosis, meiosis and cytokinesis",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 25",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Evaluate the importance of DNA replication, mitosis, meiosis and cytokinesis in cell division"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "inquiryQuestion": "Which cell-division process matters most, or are they all indispensable?",
+  "lessonIntent": "Students can evaluate the importance of DNA replication, mitosis, meiosis and cytokinesis, linking each to its role and to the consequence of its failure, and reach a justified conclusion.",
+  "examSkill": "Evaluate: weigh each process against criteria, show how they depend on each other, and conclude with a justified judgement.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, why cell division matters. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Why Cell Division Matters"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "If one process stopped",
+      "body": "Imagine DNA replication, mitosis, meiosis or cytokinesis simply stopped. The organism could fail to grow, heal or reproduce, or develop cancer.",
+      "callout": "Which of the four is most important, or are they all indispensable?",
+      "image": "bioM8L10CellDivision",
+      "caption": "Four processes, and what happens when any one of them fails.",
+      "durationInFrames": 1013,
+      "voiceover": {
+        "text": "You've now met DNA replication, mitosis, meiosis and cytokinesis one at a time. So imagine one of them simply stopped working. No DNA replication, or no cytokinesis. The organism wouldn't just slow down. It might fail to grow, fail to heal, fail to reproduce, or develop cancer. So which of the four is the most important? Or are they all indispensable, for different reasons? This is an evaluate lesson. We'll weigh up each process, and reach a conclusion we can justify."
+      }
+    },
+    {
+      "id": "concept-replication-mitosis",
+      "type": "concept",
+      "heading": "Replication and mitosis",
+      "body": "Together they let an organism grow, repair itself and reproduce asexually without losing genetic information.",
+      "bullets": [
+        {
+          "text": "DNA replication: an exact copy of the genes before division, so every new cell has complete instructions."
+        },
+        {
+          "text": "Mitosis: genetically identical cells for growth, repair and replacement, and asexual reproduction."
+        },
+        {
+          "text": "If mitosis loses control: cancer. If it stops: no growth, no healing."
+        }
+      ],
+      "callout": "Accurate copies, identical cells: continuity.",
+      "caption": "Replication copies the genes exactly; mitosis makes identical cells for growth and repair.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bFourProcesses",
+        "delay": 30,
+        "props": {
+          "items": [
+            {
+              "key": "replication",
+              "name": "DNA replication",
+              "role": "an accurate, complete copy of the genes",
+              "at": 39,
+              "fail": "daughter cells get faulty instructions",
+              "failAt": 99999
+            },
+            {
+              "key": "mitosis",
+              "name": "Mitosis",
+              "role": "growth, repair, asexual reproduction",
+              "at": 501,
+              "fail": "out of control: a tumour forms",
+              "failAt": 99999
+            },
+            {
+              "key": "meiosis",
+              "name": "Meiosis",
+              "role": "gametes and genetic variation",
+              "at": 99999,
+              "fail": "no gametes, no new variation",
+              "failAt": 99999
+            },
+            {
+              "key": "cytokinesis",
+              "name": "Cytokinesis",
+              "role": "splits the cytoplasm: completes every division",
+              "at": 99999,
+              "fail": "one cell left with several nuclei",
+              "failAt": 99999
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1198,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Start with DNA replication and mitosis. DNA replication matters because it makes an exact copy of the genetic information before a cell divides, so every new cell gets a complete, accurate set of instructions. Without it, daughter cells would lack the information they need to function. Mitosis matters because it produces genetically identical cells. That's how an organism grows, by increasing its cell number, how it repairs and replaces damaged cells, and how some organisms reproduce asexually. If mitosis loses control, the result can be cancer. And if it stopped, wounds couldn't heal, and you couldn't grow."
+      }
+    },
+    {
+      "id": "concept-meiosis-cytokinesis",
+      "type": "concept",
+      "heading": "Meiosis and cytokinesis",
+      "body": "Meiosis creates the variation sexual reproduction needs; cytokinesis physically completes every division.",
+      "bullets": [
+        {
+          "text": "Meiosis: haploid gametes, plus variation from crossing over, independent assortment and random segregation."
+        },
+        {
+          "text": "That variation makes sexual reproduction possible and feeds natural selection."
+        },
+        {
+          "text": "Cytokinesis: divides the cytoplasm so each new nucleus ends up in its own cell."
+        }
+      ],
+      "callout": "Meiosis renews the species; cytokinesis finishes the job.",
+      "caption": "Meiosis makes varied gametes; cytokinesis completes both mitosis and meiosis.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bFourProcesses",
+        "delay": 30,
+        "props": {
+          "items": [
+            {
+              "key": "replication",
+              "name": "DNA replication",
+              "role": "an accurate, complete copy of the genes",
+              "at": 0,
+              "fail": "daughter cells get faulty instructions",
+              "failAt": 99999
+            },
+            {
+              "key": "mitosis",
+              "name": "Mitosis",
+              "role": "growth, repair, asexual reproduction",
+              "at": 8,
+              "fail": "out of control: a tumour forms",
+              "failAt": 99999
+            },
+            {
+              "key": "meiosis",
+              "name": "Meiosis",
+              "role": "gametes and genetic variation",
+              "at": 16,
+              "fail": "no gametes, no new variation",
+              "failAt": 99999
+            },
+            {
+              "key": "cytokinesis",
+              "name": "Cytokinesis",
+              "role": "splits the cytoplasm: completes every division",
+              "at": 455,
+              "fail": "one cell left with several nuclei",
+              "failAt": 99999
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1013,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Now meiosis and cytokinesis. Meiosis matters because it makes haploid gametes, and through crossing over, independent assortment and random segregation, it generates the genetic variation that makes sexual reproduction possible. That variation is also the raw material for evolution by natural selection. Cytokinesis matters because it divides the cytoplasm and physically completes every cell division, in mitosis and meiosis alike, so each new nucleus ends up in its own separate cell. Without it, a cell would be left holding several nuclei."
+      }
+    },
+    {
+      "id": "concept-judgement",
+      "type": "concept",
+      "heading": "Reaching a judgement",
+      "body": "The four processes depend on each other, so the strongest evaluation is that all four are essential.",
+      "bullets": [
+        {
+          "text": "Replication must come first, or no division could pass on a complete genome."
+        },
+        {
+          "text": "Cytokinesis completes both mitosis and meiosis."
+        },
+        {
+          "text": "Mitosis maintains the organism; meiosis renews the species."
+        },
+        {
+          "text": "Remove any one and growth, accuracy or reproduction fails."
+        }
+      ],
+      "callout": "All four are essential, for different reasons.",
+      "caption": "The processes are interdependent, and each failure is serious: all four are essential.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bFourProcesses",
+        "delay": 30,
+        "props": {
+          "items": [
+            {
+              "key": "replication",
+              "name": "DNA replication",
+              "role": "an accurate, complete copy of the genes",
+              "at": 0,
+              "fail": "daughter cells get faulty instructions",
+              "failAt": 674
+            },
+            {
+              "key": "mitosis",
+              "name": "Mitosis",
+              "role": "growth, repair, asexual reproduction",
+              "at": 6,
+              "fail": "out of control: a tumour forms",
+              "failAt": 766
+            },
+            {
+              "key": "meiosis",
+              "name": "Meiosis",
+              "role": "gametes and genetic variation",
+              "at": 12,
+              "fail": "no gametes, no new variation",
+              "failAt": 858
+            },
+            {
+              "key": "cytokinesis",
+              "name": "Cytokinesis",
+              "role": "splits the cytoplasm: completes every division",
+              "at": 18,
+              "fail": "one cell left with several nuclei",
+              "failAt": 951
+            }
+          ],
+          "links": [
+            {
+              "from": "replication",
+              "to": "mitosis",
+              "at": 212,
+              "label": "copy first"
+            },
+            {
+              "from": "replication",
+              "to": "meiosis",
+              "at": 293
+            },
+            {
+              "from": "cytokinesis",
+              "to": "meiosis",
+              "at": 408,
+              "label": "completes both"
+            },
+            {
+              "from": "cytokinesis",
+              "to": "mitosis",
+              "at": 418
+            }
+          ],
+          "verdict": {
+            "text": "All four are essential, each for a different reason; none can replace another",
+            "at": 1043
+          }
+        }
+      },
+      "durationInFrames": 1325,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "So which is most important? To evaluate, you weigh them up, and the key is that they depend on each other. DNA replication has to happen first, or neither mitosis nor meiosis could pass on a complete genome. Cytokinesis completes both kinds of division. Mitosis maintains the organism, while meiosis renews the species. And look what happens if any one fails. No replication, and daughter cells get faulty instructions. Mitosis out of control, and a tumour forms. No meiosis, no gametes and no new variation. No cytokinesis, and one cell holds several nuclei. So the justified conclusion is that all four are essential, and none can replace another."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Evaluate: weigh up importance or significance and reach a justified conclusion, using evidence."
+        },
+        {
+          "text": "Growth and repair: increasing cell number and replacing damaged cells (mitosis and cytokinesis)."
+        },
+        {
+          "text": "Genetic continuity: passing an accurate, complete copy of genetic information on."
+        },
+        {
+          "text": "Genetic variation: differences in genetic make-up, generated by meiosis and fertilisation."
+        },
+        {
+          "text": "Asexual reproduction: offspring from one parent by mitosis, genetically identical."
+        }
+      ],
+      "callout": "Describing lists; evaluating judges and concludes.",
+      "caption": "Evaluate, growth and repair, genetic continuity, genetic variation, asexual reproduction.",
+      "durationInFrames": 1105,
+      "voiceover": {
+        "text": "Here are the terms. Evaluate means to weigh up the importance or significance of something, and reach a justified conclusion using evidence. Growth and repair means increasing cell number and replacing damaged cells, which mitosis and cytokinesis achieve. Genetic continuity is passing an accurate, complete copy of the genetic information from one cell or generation to the next. Genetic variation is the difference in genetic make up between offspring, generated by meiosis and fertilisation. And asexual reproduction is producing offspring from one parent by mitosis, so they're genetically identical."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Build the evaluation",
+      "question": "Evaluate the importance of DNA replication, mitosis, meiosis and cytokinesis in cell division. (6 marks)",
+      "coachNote": "For each: its contribution and the cost of failure. Then show the links and conclude.",
+      "steps": [
+        "DNA replication: an accurate, complete copy before division; without it, cells get faulty instructions.",
+        "Mitosis: identical cells for growth, repair and asexual reproduction; out of control, it causes cancer.",
+        "Meiosis: haploid gametes and variation for sexual reproduction and natural selection.",
+        "Cytokinesis: completes every division; without it, one cell holds several nuclei.",
+        "Links: replication comes first for both divisions; cytokinesis completes both.",
+        "Judgement: all four are essential and not interchangeable ✓"
+      ],
+      "caption": "Contribution and failure for each process, then the links, then the judgement.",
+      "durationInFrames": 1302,
+      "voiceover": {
+        "text": "Here's how to build a six mark evaluation. For each process, give its contribution and the cost of failure. DNA replication gives an accurate, complete copy before division, and without it cells get faulty instructions. Mitosis makes identical cells for growth, repair and asexual reproduction, and out of control it causes cancer. Meiosis makes haploid gametes and the variation that sexual reproduction and natural selection depend on. Cytokinesis completes every division, and without it one cell holds several nuclei. Then show the links. Replication comes first for both divisions, and cytokinesis completes both. And finish with the judgement. All four are essential, and none is interchangeable."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two evaluation traps",
+      "body": "Trap 1: 'To evaluate, just list what each process does.' A list only describes. An evaluation weighs significance and reaches a justified conclusion.",
+      "secondary": "Trap 2: 'Cytokinesis is unimportant because the nucleus has already divided.' Without cytokinesis the new nuclei stay in one cell, so no new cells are actually made.",
+      "mistakeTag": "Evaluate means judge",
+      "callout": "Describe what each does, then judge, then justify.",
+      "caption": "Evaluating needs a judgement, and cytokinesis is what actually makes new cells.",
+      "durationInFrames": 921,
+      "voiceover": {
+        "text": "Two traps. Trap one, thinking that to evaluate, you just list what each process does. A list only describes. An evaluation weighs up significance and reaches a conclusion you justify with evidence, like arguing that all four are essential because each supports a different requirement of life. Trap two, dismissing cytokinesis because the nucleus has already divided. Without cytokinesis, the new nuclei stay inside one cell, so no new cells are actually made."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Match each failure to its consequence: (a) DNA replication fails; (b) mitosis loses control; (c) meiosis fails; (d) cytokinesis fails.",
+      "pausePrompt": "Pause: what does each process normally provide?",
+      "answerSteps": [
+        "(a) Daughter cells receive incomplete or faulty instructions.",
+        "(b) Cells divide uncontrollably and a tumour forms.",
+        "(c) No haploid gametes, so no sexual reproduction and no new variation.",
+        "(d) One cell is left holding several nuclei ✓"
+      ],
+      "caption": "Faulty instructions, a tumour, no gametes, several nuclei in one cell.",
+      "durationInFrames": 909,
+      "voiceover": {
+        "text": "Quick check. Match each failure to its consequence. A, DNA replication fails. B, mitosis loses control. C, meiosis fails. D, cytokinesis fails. Pause, and think about what each process normally provides. OK. A, the daughter cells get incomplete or faulty instructions. B, cells divide uncontrollably and a tumour forms. C, there are no haploid gametes, so no sexual reproduction and no new variation. And D, one cell is left holding several nuclei."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "DNA replication: an accurate, complete copy of the genes before any division.",
+        "Mitosis: identical cells for growth, repair and asexual reproduction.",
+        "Meiosis: haploid gametes and the variation that drives natural selection.",
+        "Cytokinesis: completes every division, so each nucleus gets its own cell.",
+        "They depend on each other: all four are essential, for different reasons."
+      ],
+      "finalPrompt": "Evaluate question? Contribution, cost of failure, links, then a justified judgement.",
+      "caption": "Five takeaways: four processes, their roles, and a justified conclusion.",
+      "durationInFrames": 852,
+      "voiceover": {
+        "text": "Let's lock it in. First, DNA replication gives an accurate, complete copy of the genes before any division. Second, mitosis makes identical cells for growth, repair and asexual reproduction. Third, meiosis makes haploid gametes and the variation that drives natural selection. Fourth, cytokinesis completes every division. And fifth, they depend on each other, so all four are essential. That wraps up cells as the basis of life."
+      }
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "title": "Enzymes: Biological Catalysts",
+  "subtitle": "What enzymes are, how they speed up reactions, and why cells depend on them",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 15",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Explain the role of enzymes in cells"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "inquiryQuestion": "How do cells make reactions fast enough to keep them alive?",
+  "lessonIntent": "Students can explain that enzymes are reusable, specific protein catalysts that lower activation energy, and justify why cells depend on them.",
+  "examSkill": "Identify the enzyme, substrate and products in a described reaction and explain enzyme action using active site and activation energy.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, enzymes, the cell's catalysts. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Enzymes: Biological Catalysts"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Liver in peroxide",
+      "body": "Hydrogen peroxide sits stable on a shelf for months. Drop in a piece of raw liver and it foams up in seconds.",
+      "callout": "What in the liver makes the same reaction happen so much faster?",
+      "image": "bioY11M1L7EnzymeActiveSite",
+      "caption": "Liver makes hydrogen peroxide break down in seconds instead of months.",
+      "durationInFrames": 1140,
+      "voiceover": {
+        "text": "A bottle of hydrogen peroxide can sit on a shelf for months, very slowly breaking down into water and oxygen. Drop in a piece of raw liver, and within seconds it erupts into foam. The liver hasn't added heat, or acid, or anything dramatic. So what's in the liver that makes the same reaction happen thousands of times faster? The answer is an enzyme, called catalase. Today we'll see what an enzyme is, how it speeds a reaction up without being used up, and why every cell depends on thousands of them."
+      }
+    },
+    {
+      "id": "concept-what",
+      "type": "concept",
+      "heading": "A reusable protein catalyst",
+      "body": "An enzyme binds its substrate at the active site, the reaction occurs, and the products are released while the enzyme stays unchanged.",
+      "bullets": [
+        {
+          "text": "Enzyme: a biological catalyst, usually a protein."
+        },
+        {
+          "text": "1. The substrate binds at the active site: the enzyme–substrate complex."
+        },
+        {
+          "text": "2. The reaction occurs. 3. The products are released."
+        },
+        {
+          "text": "The enzyme is unchanged and used again; the wrong shape does not fit."
+        }
+      ],
+      "callout": "Specific, and never used up.",
+      "caption": "Substrate binds at the active site, reacts, and leaves as products; the enzyme is reused.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bEnzyme",
+        "delay": 30,
+        "props": {
+          "mode": "cycle",
+          "at": {
+            "enzyme": 0,
+            "labels": 328,
+            "substrate": 189,
+            "bind": 432,
+            "react": 582,
+            "release": 628,
+            "again": 824,
+            "wrong": 1124,
+            "rule": 1216
+          },
+          "rule": "Specific to one substrate, and reused"
+        }
+      },
+      "durationInFrames": 1440,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "An enzyme is a biological catalyst, usually a protein, that speeds up a specific chemical reaction in a cell. The molecule it acts on is called its substrate. The enzyme has a precisely shaped pocket called the active site. First, the substrate binds at the active site, forming an enzyme substrate complex. Second, the reaction happens. Third, the products are released, and here's the key point. The enzyme comes out unchanged, so it can grab another substrate and do it all again, over and over. That's what makes it a catalyst. And because the active site has a particular shape, a molecule with the wrong shape doesn't fit, which is why each enzyme is specific to one substrate."
+      }
+    },
+    {
+      "id": "concept-activation",
+      "type": "concept",
+      "heading": "Lowering the barrier",
+      "body": "Enzymes speed up reactions by providing a pathway with a lower activation energy.",
+      "bullets": [
+        {
+          "text": "Activation energy: the minimum energy a reaction needs to start."
+        },
+        {
+          "text": "Without an enzyme the barrier is high, so few molecules react."
+        },
+        {
+          "text": "With an enzyme the barrier is lower, so far more react at 37 °C."
+        },
+        {
+          "text": "The products and the overall energy change stay the same."
+        }
+      ],
+      "callout": "Enzymes lower the barrier; they do not add heat.",
+      "caption": "An enzyme lowers the activation energy, so far more molecules react at body temperature.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bActivation",
+        "delay": 30,
+        "props": {
+          "at": {
+            "axes": 74,
+            "without": 247,
+            "eaHigh": 362,
+            "molecules": 455,
+            "withEnzyme": 639,
+            "eaLow": 755,
+            "same": 1032,
+            "rule": 1320
+          },
+          "rule": "Lower activation energy, faster reaction"
+        }
+      },
+      "durationInFrames": 1486,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "So how does an enzyme speed a reaction up? Every reaction needs a minimum push of energy to get started, called the activation energy. Look at the dashed curve, the reaction without an enzyme. The barrier is high, so at body temperature only a few molecules have enough energy to get over it, and the reaction is slow. The enzyme provides a different pathway with a lower barrier, a lower activation energy. Now far more of the molecules can react, so the rate rises enormously, even at a mild thirty seven degrees. Notice what doesn't change. The start and finish are at the same levels, so the enzyme doesn't change the products, and it doesn't add energy. It just lowers the barrier."
+      }
+    },
+    {
+      "id": "concept-why",
+      "type": "concept",
+      "heading": "Why cells depend on enzymes",
+      "body": "Specificity lets a cell control thousands of reactions independently, safely, at body temperature.",
+      "bullets": [
+        {
+          "text": "Each enzyme fits only its own substrate."
+        },
+        {
+          "text": "The cell can make more of one enzyme, or block another, to control each step."
+        },
+        {
+          "text": "Reactions run fast at body temperature, without harsh heat or acid."
+        }
+      ],
+      "callout": "Speed, reusability and specific control.",
+      "caption": "Each enzyme fits only its own substrate, so the cell can switch reactions on and off one by one.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bEnzyme",
+        "delay": 30,
+        "props": {
+          "mode": "specific",
+          "names": [
+            {
+              "enzyme": "protease",
+              "substrate": "protein"
+            },
+            {
+              "enzyme": "lipase",
+              "substrate": "fat"
+            },
+            {
+              "enzyme": "amylase",
+              "substrate": "starch"
+            }
+          ],
+          "at": {
+            "enzymes": 0,
+            "substrates": 155,
+            "match": 282,
+            "run": 501,
+            "off": 708,
+            "rule": 1228
+          },
+          "rule": "Speed, reusability, specific control"
+        }
+      },
+      "durationInFrames": 1417,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Why does a cell need thousands of different enzymes, rather than one that does everything? Specificity. Each enzyme's active site fits only its own substrate. For example, a protease acts on protein, a lipase on fats, and an amylase on starch. That means the cell can control each reaction on its own. It can make more of one enzyme to speed up that step, or block another to switch its reaction off, without touching the rest. Enzymes also let all this happen safely at body temperature. The strong heat or acid a chemist might use to force a reaction would destroy a cell. So cells depend on enzymes for three reasons, speed, reusability, and specific control."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Enzyme: a biological catalyst, usually a protein, that speeds up a specific reaction without being used up."
+        },
+        {
+          "text": "Catalyst: increases the rate of a reaction and is unchanged at the end."
+        },
+        {
+          "text": "Substrate: the specific reactant molecule an enzyme acts on."
+        },
+        {
+          "text": "Active site: the region of the enzyme, shaped to fit its substrate, where the reaction happens."
+        },
+        {
+          "text": "Activation energy: the minimum energy needed to start a reaction; enzymes lower it."
+        }
+      ],
+      "callout": "Enzymes are specific because of the shape of the active site.",
+      "caption": "Enzyme, catalyst, substrate, active site, activation energy.",
+      "durationInFrames": 1140,
+      "voiceover": {
+        "text": "Let's pin down five terms. An enzyme is a biological catalyst, usually a protein, that speeds up a specific reaction without being used up. A catalyst is any substance that increases the rate of a reaction and is unchanged at the end, so it can be reused. The substrate is the specific reactant molecule an enzyme acts on. The active site is the region of the enzyme, shaped to fit its substrate, where the reaction takes place. And activation energy is the minimum energy needed to start a reaction, which enzymes lower."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Map a real enzyme reaction",
+      "question": "Catalase breaks down hydrogen peroxide (H₂O₂) into water and oxygen. Identify the enzyme, the substrate and the products, and explain why a tiny amount of catalase can break down a large volume of hydrogen peroxide.",
+      "coachNote": "Name the parts first, then use \"catalyst\" to explain the amount.",
+      "steps": [
+        "Enzyme: catalase. Substrate: hydrogen peroxide (H₂O₂).",
+        "Products: water and oxygen.",
+        "Catalase is a catalyst, so it is not used up: it is released unchanged after each reaction.",
+        "Each catalase molecule binds H₂O₂, converts it and releases the products, many thousands of times a second.",
+        "So a tiny amount of enzyme can break down a large volume of substrate ✓"
+      ],
+      "caption": "Catalase is reused over and over, so a little enzyme breaks down a lot of hydrogen peroxide.",
+      "durationInFrames": 1325,
+      "voiceover": {
+        "text": "Let's map a real reaction. Catalase breaks down hydrogen peroxide into water and oxygen. Identify the enzyme, the substrate and the products, then explain why a tiny amount of catalase can break down a large volume of hydrogen peroxide. The enzyme is catalase. The substrate, the molecule it acts on, is hydrogen peroxide. The products are water and oxygen. Now the explanation. Catalase is a catalyst, so it isn't used up. After each reaction it's released unchanged, ready for the next substrate molecule, and it can do that many thousands of times every second. So a tiny amount of enzyme can get through a huge amount of substrate."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two enzyme traps",
+      "body": "Trap 1: 'An enzyme is used up in the reaction.' A catalyst is not consumed. The enzyme is released unchanged and catalyses the same reaction again and again.",
+      "secondary": "Trap 2: 'An enzyme changes the products.' It only lowers the activation energy. The reaction makes the same products with the same overall energy change, just much faster.",
+      "mistakeTag": "Catalyst means reusable",
+      "callout": "Same reaction, same products, lower barrier, enzyme reused.",
+      "caption": "Enzymes are not used up and do not change the products; they only lower the barrier.",
+      "durationInFrames": 1105,
+      "voiceover": {
+        "text": "Two traps. Trap one, saying the enzyme is used up, so the cell has to keep making more. A catalyst isn't consumed by the reaction. The enzyme is released unchanged after the product forms, and it catalyses the same reaction again and again. That's why a little enzyme goes a long way. Trap two, saying the enzyme changes the products, or supplies energy. It doesn't. It only lowers the activation energy. The same reaction makes the same products, with the same overall energy change. It just happens much faster."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Explain how an enzyme allows a reaction in a cell to happen quickly at 37 °C without raising the temperature.",
+      "pausePrompt": "Pause: what does the enzyme change, and what stays the same?",
+      "answerSteps": [
+        "The substrate binds at the enzyme's active site, forming an enzyme–substrate complex.",
+        "The enzyme provides an alternative pathway with a lower activation energy.",
+        "So far more molecules have enough energy to react at 37 °C, and the rate rises greatly.",
+        "The products are the same and the enzyme is released unchanged, so it can be reused ✓"
+      ],
+      "caption": "Lower activation energy means far more molecules react at 37 °C; the enzyme is reused.",
+      "durationInFrames": 1152,
+      "voiceover": {
+        "text": "Quick check. Explain how an enzyme lets a reaction in a cell happen quickly at thirty seven degrees, without raising the temperature. Pause, and decide what the enzyme changes and what stays the same. Right. The substrate binds at the enzyme's active site, forming an enzyme substrate complex. The enzyme provides an alternative pathway with a lower activation energy. That means far more molecules have enough energy to react at thirty seven degrees, so the rate rises dramatically. And the products are the same, while the enzyme is released unchanged and used again."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Enzymes are biological catalysts, usually proteins, that are not used up.",
+        "The substrate binds at the active site, forming an enzyme–substrate complex; products are released.",
+        "Enzymes lower the activation energy, so reactions are fast at body temperature.",
+        "Each enzyme is specific to its substrate because of the shape of its active site.",
+        "Cells depend on enzymes for speed, reusability and specific control."
+      ],
+      "finalPrompt": "Enzyme question? Name the substrate, the active site and the activation energy.",
+      "caption": "Five takeaways: catalyst, active site, activation energy, specificity, why cells need them.",
+      "durationInFrames": 1071,
+      "voiceover": {
+        "text": "Let's lock it in. First, enzymes are biological catalysts, usually proteins, and they're not used up. Second, the substrate binds at the active site, forming an enzyme substrate complex, and the products are released. Third, enzymes lower the activation energy, so reactions run fast at body temperature. Fourth, each enzyme is specific to its substrate because of the shape of its active site. And fifth, cells depend on enzymes for speed, reusability and control. Next lesson, the two models of how enzymes and substrates fit together."
+      }
+    }
+  ]
+}

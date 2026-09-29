@@ -1,0 +1,279 @@
+{
+  "title": "DNA in Prokaryotes vs Eukaryotes",
+  "subtitle": "Same molecule, different packaging",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 21",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Construct diagrams to compare the forms in which DNA exists in prokaryotic and eukaryotic cells"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "inquiryQuestion": "Why is DNA packaged so differently in bacteria and in our cells?",
+  "lessonIntent": "Students can construct labelled diagrams comparing DNA in prokaryotic cells (circular chromosome, nucleoid, plasmids) and eukaryotic cells (linear chromosomes, histones, nucleus), including what both share.",
+  "examSkill": "Construct and label comparison diagrams, then state differences and shared features.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, DNA in prokaryotes and eukaryotes. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "DNA in Prokaryotes vs Eukaryotes"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two metres in a nucleus",
+      "body": "A eukaryotic cell packs about 2 metres of DNA into a microscopic nucleus. A bacterium keeps its DNA as a single loop in the cytoplasm.",
+      "callout": "How does a eukaryote pack so much DNA, and why doesn't a bacterium have the same problem?",
+      "image": "bioM5L9PlasmidTransformation",
+      "caption": "The same four-letter code, packaged in two very different ways.",
+      "durationInFrames": 1094,
+      "voiceover": {
+        "text": "Same four letter code, same double helix, but packaged in two very different ways. A bacterium keeps its DNA as a loop, lying free in the cytoplasm. Your cells coil theirs into many linear chromosomes, wrapped around proteins and locked inside a nucleus, about two metres of it in every cell. So how does a eukaryotic cell pack such an enormous length into such a tiny space, and why doesn't a bacterium face the same problem? Today we'll draw the difference at the level of the DNA itself."
+      }
+    },
+    {
+      "id": "concept-prokaryote",
+      "type": "concept",
+      "heading": "DNA in prokaryotes",
+      "body": "One circular chromosome, free in the cytoplasm (the nucleoid), often with small circular plasmids.",
+      "bullets": [
+        {
+          "text": "A single circular chromosome in the nucleoid region: no nuclear membrane."
+        },
+        {
+          "text": "Plasmids: small extra circles of DNA, separate from the chromosome."
+        },
+        {
+          "text": "Plasmids can pass between cells and often carry genes such as antibiotic resistance."
+        },
+        {
+          "text": "Generally no histone packaging."
+        }
+      ],
+      "callout": "One loop, plus optional plasmids, and no nucleus.",
+      "caption": "A circular chromosome in the nucleoid, plus plasmids that can pass between cells.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5CellDna",
+        "delay": 30,
+        "props": {
+          "mode": "prokaryote",
+          "at": {
+            "main": 97,
+            "plasmids": 478,
+            "small": 558,
+            "extra": 755,
+            "resistance": 858,
+            "vector": 882,
+            "rule": 1032
+          }
+        }
+      },
+      "durationInFrames": 1209,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Start with a prokaryote, like a bacterium. Its DNA is mainly a single circular chromosome, one closed loop, lying free in the cytoplasm. The region where it sits is called the nucleoid, and it isn't surrounded by a membrane, because prokaryotes have no nucleus. Many prokaryotes also carry plasmids. These are small, extra circles of DNA, separate from the main chromosome. Plasmids can be passed between cells, and they often carry useful genes, such as genes for antibiotic resistance. Scientists also use plasmids to carry chosen genes into bacteria. And prokaryotic DNA generally isn't wound around histone proteins."
+      }
+    },
+    {
+      "id": "concept-eukaryote",
+      "type": "concept",
+      "heading": "DNA in eukaryotes",
+      "body": "Several linear chromosomes, wound around histone proteins, inside the membrane-bound nucleus.",
+      "bullets": [
+        {
+          "text": "Much more DNA, in several linear chromosomes (each has two ends)."
+        },
+        {
+          "text": "DNA is wound tightly around histone proteins to package it."
+        },
+        {
+          "text": "All enclosed in the membrane-bound nucleus."
+        }
+      ],
+      "callout": "Histones are how about 2 metres fits in a nucleus.",
+      "caption": "Linear chromosomes wound on histones, all inside the nucleus.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5CellDna",
+        "delay": 30,
+        "props": {
+          "mode": "eukaryote",
+          "at": {
+            "linear": 120,
+            "wrap": 489,
+            "chromatin": 755,
+            "loose": 605,
+            "condense": 789,
+            "length": 939,
+            "regulation": 99999
+          }
+        }
+      },
+      "durationInFrames": 1163,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Eukaryotic cells have far more DNA, so it's organised differently. It's split into several linear chromosomes, each one a long DNA molecule with two ends, and all of them are enclosed inside the membrane bound nucleus. Because the total length is enormous, the DNA is wound tightly around proteins called histones, which packages it compactly. For most of the cell's life it stays in this looser, wound form, called chromatin, and it condenses into visible chromosomes when the cell divides. That packaging is how about two metres of DNA fits inside a single nucleus."
+      }
+    },
+    {
+      "id": "concept-compare",
+      "type": "concept",
+      "heading": "Same molecule, different packaging",
+      "body": "Both are the same double helix; only the shape, number, packaging and location differ.",
+      "bullets": [
+        {
+          "text": "Both: double-stranded DNA, same nucleotides, same A–T and C–G pairing."
+        },
+        {
+          "text": "Prokaryote: one circular chromosome, in the nucleoid, plasmids, no histones."
+        },
+        {
+          "text": "Eukaryote: several linear chromosomes, in the nucleus, on histones, no plasmids (typically)."
+        }
+      ],
+      "callout": "Always state what they share, as well as the differences.",
+      "caption": "Circular in the nucleoid versus linear in the nucleus: the molecule itself is the same.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5CellDna",
+        "delay": 30,
+        "props": {
+          "mode": "compare",
+          "at": {
+            "same": 189,
+            "arranged": 466,
+            "circular": 558,
+            "nucleoid": 639,
+            "linear": 789,
+            "nucleus": 858,
+            "rule": 939
+          }
+        }
+      },
+      "durationInFrames": 1094,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Now compare them, the way an exam wants. Start with what's the same, because that's the mark students miss. Both are double stranded DNA, the same double helix, made of the same nucleotides, with the same A T and C G base pairing. What differs is the arrangement. A prokaryote has one circular chromosome, free in the cytoplasm in the nucleoid, often with plasmids, and generally no histones. A eukaryote has several linear chromosomes, wound on histones, inside a nucleus, and typically no plasmids. Same molecule, different packaging."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Chromosome: a single long DNA molecule (with proteins, in eukaryotes) carrying many genes."
+        },
+        {
+          "text": "Plasmid: a small extra circle of DNA in prokaryotes, separate from the chromosome."
+        },
+        {
+          "text": "Nucleoid: the region of a prokaryotic cell where the chromosome sits; not membrane-bound."
+        },
+        {
+          "text": "Histone: a protein around which eukaryotic DNA is wound."
+        },
+        {
+          "text": "Linear: having two ends, rather than forming a closed loop."
+        }
+      ],
+      "callout": "Circular vs linear; nucleoid vs nucleus; plasmids vs histones.",
+      "caption": "Chromosome, plasmid, nucleoid, histone, linear.",
+      "durationInFrames": 1025,
+      "voiceover": {
+        "text": "Here are the terms. A chromosome is a single long DNA molecule carrying many genes, and in eukaryotes it comes with proteins. A plasmid is a small extra circle of DNA in prokaryotes, separate from the main chromosome. The nucleoid is the region of a prokaryotic cell where the chromosome sits, and it isn't membrane bound. A histone is a protein that eukaryotic DNA is wound around. And linear means having two ends, like a line, rather than forming a closed loop."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Construct the two diagrams",
+      "question": "Construct labelled diagrams to compare the forms in which DNA exists in prokaryotic and eukaryotic cells.",
+      "coachNote": "Two labelled diagrams side by side, then differences and what they share.",
+      "steps": [
+        "Prokaryote: cell outline, no nucleus; label circular chromosome, nucleoid and plasmids.",
+        "Eukaryote: nucleus with membrane; label several linear chromosomes; add a close-up of DNA wound on histones.",
+        "Differences: circular vs linear; one vs several; nucleoid vs nucleus; plasmids vs none; no histones vs histones.",
+        "Shared: both double-stranded DNA with the same nucleotides and A–T, C–G pairing ✓"
+      ],
+      "caption": "Label each diagram, list the differences, then state what both share.",
+      "durationInFrames": 1221,
+      "voiceover": {
+        "text": "Here's how to answer, construct labelled diagrams to compare the forms of DNA in prokaryotic and eukaryotic cells. For the prokaryote, draw the cell outline with no nucleus, and label the circular chromosome, the nucleoid, and a plasmid or two. For the eukaryote, draw a nucleus with its membrane, label several linear chromosomes, and add a close up of DNA wound around histones. Underneath, list the differences, circular versus linear, one versus several, nucleoid versus nucleus, plasmids, and histones. And finish with what they share. Both are double stranded DNA, with the same nucleotides and the same base pairing."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two DNA-form traps",
+      "body": "Trap 1: 'Prokaryotic and eukaryotic DNA are chemically different.' They are the same molecule: a double helix of nucleotides with A–T and C–G pairing. Only the form and packaging differ.",
+      "secondary": "Trap 2: 'Prokaryotic DNA is inside a nucleus.' Prokaryotes have no nucleus. Their chromosome sits in the nucleoid, with no membrane around it.",
+      "mistakeTag": "Packaging, not chemistry",
+      "callout": "Same DNA; different shape, number, packaging and location.",
+      "caption": "The DNA molecule is the same in both; prokaryotes have a nucleoid, not a nucleus.",
+      "durationInFrames": 828,
+      "voiceover": {
+        "text": "Two traps. Trap one, saying prokaryotic and eukaryotic DNA are chemically different molecules. They're not. Both are a double helix of nucleotides with A T and C G pairing. What differs is only the form and the packaging. Trap two, putting prokaryotic DNA inside a nucleus. Prokaryotes don't have a nucleus at all. Their chromosome sits in the nucleoid region, with no membrane around it."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Prokaryotic only, eukaryotic only, or both? (a) Several linear chromosomes wound on histones. (b) One circular chromosome plus plasmids. (c) Enclosed inside a membrane-bound nucleus. (d) Double helix with A–T and C–G pairing.",
+      "pausePrompt": "Pause: sort each feature before the answer.",
+      "answerSteps": [
+        "(a) Eukaryotic only.",
+        "(b) Prokaryotic only.",
+        "(c) Eukaryotic only.",
+        "(d) Both: this is what the two forms share ✓"
+      ],
+      "caption": "(a) eukaryotic, (b) prokaryotic, (c) eukaryotic, (d) both.",
+      "durationInFrames": 840,
+      "voiceover": {
+        "text": "Quick check. Prokaryotic only, eukaryotic only, or both? A, several linear chromosomes wound on histones. B, one circular chromosome plus plasmids. C, enclosed inside a membrane bound nucleus. D, a double helix with A T and C G pairing. Pause, and sort them. OK. A is eukaryotic only. B is prokaryotic only. C is eukaryotic only. And D is both. That's what the two forms share."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Prokaryotes: one circular chromosome, free in the nucleoid, no nucleus.",
+        "Prokaryotes often have plasmids, which can pass between cells.",
+        "Eukaryotes: several linear chromosomes, wound on histones, inside the nucleus.",
+        "Histone packaging fits about 2 metres of DNA into a nucleus.",
+        "Both share the same double helix and A–T, C–G base pairing."
+      ],
+      "finalPrompt": "Compare question? Differences in shape, number, packaging and location, plus what they share.",
+      "caption": "Five takeaways: two forms of DNA and what they share.",
+      "durationInFrames": 990,
+      "voiceover": {
+        "text": "Let's lock it in. First, prokaryotes have one circular chromosome, free in the nucleoid, with no nucleus. Second, they often have plasmids, which can pass between cells. Third, eukaryotes have several linear chromosomes, wound on histones, inside the nucleus. Fourth, that packaging is how about two metres of DNA fits into a nucleus. And fifth, both share the same double helix and base pairing. Next lesson, the two kinds of cell that DNA is shared between, somatic and gametic."
+      }
+    }
+  ]
+}
