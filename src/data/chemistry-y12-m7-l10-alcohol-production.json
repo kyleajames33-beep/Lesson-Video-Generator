@@ -73,10 +73,72 @@
       ],
       "secondary": "300 degrees is a rate compromise, not a yield choice. The forward reaction is exothermic, so a lower temperature would give more ethanol but too slowly.",
       "callout": "High pressure for yield; high temperature for rate, not yield.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m7Reaction",
+        "props": {
+          "cond": {
+            "t": "H₃PO₄ catalyst · ~300 °C · ~65 atm",
+            "at": 20
+          },
+          "stages": [
+            {
+              "at": 20,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.3,0 o:O@1.3,-1.9 w1:H@1.87,-2.23 w2:H@0.73,-2.23",
+                "bonds": "c1=c2 o-w1 o-w2"
+              },
+              "eq": "CH₂=CH₂(g) + H₂O(g)",
+              "labels": [
+                {
+                  "t": "2 gas molecules",
+                  "x": 0.65,
+                  "y": 1.35,
+                  "c": "second",
+                  "at": 170
+                }
+              ]
+            },
+            {
+              "at": 258,
+              "len": 60,
+              "mol": {
+                "atoms": "c1:C@0,0 c2:C@1.3,0 o:O@1.3,-1 w1:H@1.87,-1.33 w2:H@0,-0.66",
+                "bonds": "c1-c2 c2-o o-w1 c1-w2"
+              },
+              "eq": [
+                {
+                  "t": "CH₂=CH₂(g) + H₂O(g) ⇌ "
+                },
+                {
+                  "t": "CH₃CH₂OH(g)",
+                  "c": "accent"
+                }
+              ],
+              "labels": [
+                {
+                  "t": "1 gas molecule",
+                  "x": 0.65,
+                  "y": 1.35,
+                  "c": "second"
+                },
+                {
+                  "t": "high pressure → fewer gas molecules → more ethanol",
+                  "x": 0.65,
+                  "y": -2.05,
+                  "c": "amber",
+                  "at": 381,
+                  "size": 18
+                }
+              ]
+            }
+          ]
+        }
+      },
       "durationInFrames": 1080,
       "caption": "Hydration: high pressure shifts equilibrium to ethanol; 300C is a rate compromise.",
       "voiceover": {
-        "text": "Let's look at hydration properly, as an equilibrium. Ethene plus water, reversible, with the conditions steam, a phosphoric acid catalyst, about three hundred degrees, and about sixty-five atmospheres of pressure. Now apply Le Chatelier. The left side has two moles of gas, ethene and steam, while the right side is effectively zero moles of gas because the ethanol condenses out. So increasing the pressure shifts the equilibrium toward the side with fewer gas moles, the ethanol side, raising the yield. That's why high pressure is used. The temperature is more subtle. The forward reaction is exothermic, so a lower temperature would actually give more ethanol, but it would be far too slow. Three hundred degrees is a rate compromise, fast enough to be practical, not the yield-maximising choice. And because conversion per pass is low, the unreacted ethene is separated and recycled, so overall yield stays high."
+        "text": "Let's look at hydration properly, as an equilibrium. Ethene plus water, reversible, with the conditions steam, a phosphoric acid catalyst, about three hundred degrees, and about sixty-five atmospheres of pressure. Now apply Le Chatelier. The left side has two moles of gas, ethene and steam, while the right side has just one, ethanol vapour, because at three hundred degrees the ethanol is a gas too. So increasing the pressure shifts the equilibrium toward the side with fewer gas moles, the ethanol side, raising the yield. That's why high pressure is used. The temperature is more subtle. The forward reaction is exothermic, so a lower temperature would actually give more ethanol, but it would be far too slow. Three hundred degrees is a rate compromise, fast enough to be practical, not the yield-maximising choice. And because conversion per pass is low, the unreacted ethene is separated and recycled, so overall yield stays high."
       }
     },
     {
@@ -295,7 +357,7 @@
       "coachNote": "Count gas moles, and recall the forward reaction is exothermic.",
       "steps": [
         "Equation: CH2=CH2 + H2O reversible CH3CH2OH",
-        "Left = 2 mol gas; right = effectively 0 mol gas (ethanol condenses)",
+        "Left = 2 mol gas; right = 1 mol gas (ethanol is a gas at 300C)",
         "High pressure shifts equilibrium to fewer gas moles -> more ethanol",
         "Forward reaction is exothermic, so a lower T would raise yield but is too slow",
         "Answer: pressure boosts yield; 300C is a rate-vs-yield compromise ✓"
@@ -303,7 +365,7 @@
       "durationInFrames": 1290,
       "caption": "High pressure raises yield; 300C trades some yield for an acceptable rate.",
       "voiceover": {
-        "text": "Now the Le Chatelier reasoning. Explain why high pressure helps the hydration of ethene, but why three hundred degrees is only a compromise. The equation is ethene plus water, reversible, gives ethanol. Step one, count the gas moles. The left side has two moles of gas, ethene and steam, while the right side is effectively zero, because the ethanol condenses to a liquid. Step two, increasing pressure shifts the equilibrium toward the side with fewer gas moles, the ethanol side, so high pressure raises the yield. Step three, the temperature. The forward reaction is exothermic, so by Le Chatelier a lower temperature would push the equilibrium toward more ethanol, raising the yield. Step four, but a low temperature also makes the reaction far too slow to be practical. So three hundred degrees is a compromise, sacrificing some yield to get an acceptable rate. Pressure is chosen for yield, temperature for rate."
+        "text": "Now the Le Chatelier reasoning. Explain why high pressure helps the hydration of ethene, but why three hundred degrees is only a compromise. The equation is ethene plus water, reversible, gives ethanol. Step one, count the gas moles. The left side has two moles of gas, ethene and steam, while the right side has only one, because at three hundred degrees the ethanol is a gas too. Step two, increasing pressure shifts the equilibrium toward the side with fewer gas moles, the ethanol side, so high pressure raises the yield. Step three, the temperature. The forward reaction is exothermic, so by Le Chatelier a lower temperature would push the equilibrium toward more ethanol, raising the yield. Step four, but a low temperature also makes the reaction far too slow to be practical. So three hundred degrees is a compromise, sacrificing some yield to get an acceptable rate. Pressure is chosen for yield, temperature for rate."
       }
     },
     {
