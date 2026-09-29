@@ -5,10 +5,10 @@
 // the optimal range, the tolerance range either side ("copes") and the zones
 // beyond the critical limits ("fails"); every boundary sits at its prop value.
 // Marker pins drop onto the scale at their values on their beats (e.g. 37,
-// a 40 °C fever, 42 °C). Optional `enzyme`: a curve of enzyme activity drawn
-// above the same axis: rising to a peak at the optimum, then falling steeply
-// to zero at the upper limit, where enzymes denature. It is a qualitative
-// shape (labelled as such), anchored to the scene's own values.
+// example temperature markers). Optional `enzyme`: a qualitative activity
+// curve. When `zeroAt` is supplied, the curve falls to zero there. When it is
+// omitted, the post-optimum curve declines without implying a universal
+// zero-activity or denaturation threshold.
 // Hold: the latest marker breathes; the curve's reading bead drifts.
 
 import {useCurrentFrame, useVideoConfig} from 'remotion';
@@ -23,7 +23,7 @@ export type ZonesProps = {
 	tolerance: {from: number; to: number; label: string; at: number};
 	critical: {label: string; failLabel: string; at: number};
 	markers?: {value: number; label: string; at: number; amber?: boolean}[];
-	enzyme?: {at: number; label: string; optimum: number; zeroAt: number; note?: string; denature?: {label: string; at: number; value: number}};
+	enzyme?: {at: number; label: string; optimum: number; zeroAt?: number; note?: string; denature?: {label: string; at: number; value: number}};
 	footer?: FootLine[];
 	delay?: number;
 };
@@ -50,7 +50,7 @@ export const ZonesDiagram = ({scale, optimal, tolerance, critical, markers = [],
 	const amb = mix('#ffffff', TOK.amber, 0.3);
 	const opt = mix('#ffffff', theme.accent, 0.42);
 
-	// enzyme curve (qualitative): smooth rise to the optimum, steep fall to zero at zeroAt
+	// enzyme curve (qualitative): rise to the optimum; optionally fall to zero at zeroAt
 	const curve = enzyme
 		? Array.from({length: 61}, (_, i) => {
 			const v = scale.min + ((scale.max - scale.min) * i) / 60;
@@ -58,10 +58,16 @@ export const ZonesDiagram = ({scale, optimal, tolerance, critical, markers = [],
 			if (v <= enzyme.optimum) {
 				const u = (v - scale.min) / (enzyme.optimum - scale.min);
 				a = 0.25 + 0.75 * Math.sin((u * Math.PI) / 2) ** 1.5;
-			} else if (v < enzyme.zeroAt) {
-				const u = (v - enzyme.optimum) / (enzyme.zeroAt - enzyme.optimum);
-				a = Math.cos((u * Math.PI) / 2) ** 0.8;
-			} else a = 0;
+			} else if (enzyme.zeroAt !== undefined) {
+				if (v < enzyme.zeroAt) {
+					const u = (v - enzyme.optimum) / (enzyme.zeroAt - enzyme.optimum);
+					a = Math.cos((u * Math.PI) / 2) ** 0.8;
+				} else a = 0;
+			} else {
+				// No asserted cutoff: show a qualitative decline that stays above zero.
+				const u = (v - enzyme.optimum) / Math.max(1e-9, scale.max - enzyme.optimum);
+				a = Math.max(0.3, 1 - 0.7 * u);
+			}
 			return {x: px(v), y: SY - BH - 40 - a * 210};
 		})
 		: [];
