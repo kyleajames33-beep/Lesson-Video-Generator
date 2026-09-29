@@ -18,7 +18,7 @@
     "BI-11WS-05"
   ],
   "lessonIntent": "Students can classify relationships between organisms by their effect on each partner (+, −, 0), and analyse predator–prey and competition data to explain how these interactions affect populations.",
-  "examSkill": "Assign +, − or 0 to each partner; on a predator–prey graph the curve that peaks later is the predator.",
+  "examSkill": "Classify interactions by their effect on each partner. For predator–prey data, describe the observed pattern and lag without treating a lag as proof of a universal rule or one-way causation.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -39,12 +39,12 @@
       "id": "hook",
       "type": "hook",
       "image": "bioY11M3L9LynxHare",
-      "heading": "Why does the predator lag behind?",
-      "body": "When prey numbers rise, predator numbers rise too, but always a little later, never at the same moment.",
-      "callout": "What does that lag tell you about who is controlling whom?",
-      "caption": "Predator and prey populations rise and fall, with a lag.",
+      "heading": "Why can a predator lag behind its prey?",
+      "body": "In some predator–prey datasets, predator abundance peaks after prey abundance. The timing is a pattern to explain, not a universal rule.",
+      "callout": "What hypotheses are consistent with the lag, and what would it not prove by itself?",
+      "caption": "Some predator–prey datasets show a lag; timing alone does not prove causal direction.",
       "voiceover": {
-        "text": "No organism lives alone. Every species is locked into relationships, eating and being eaten, competing, helping a partner, hitching a ride, or chemically poisoning a rival. And here's a pattern you can see in real data. When the number of prey rises, the number of predators rises too, but always a little later, never at the same moment. Why does the predator lag behind, and what does that lag tell you about who's controlling whom? Let's find out."
+        "text": "No organism lives alone. Species interact through predation, competition, mutualism, commensalism, allelopathy and parasitism. In some predator prey datasets, prey abundance rises first and predator abundance peaks later. That lag can be consistent with predators responding to food availability, but it is not a universal rule and it does not prove one-way causation by itself. Predator prey systems contain feedback, and weather, habitat and other species can matter too. So our job is to describe the pattern first, then make a cautious biological inference."
       },
       "durationInFrames": 1020
     },
@@ -173,23 +173,23 @@
       "id": "concept-cycle",
       "type": "concept",
       "heading": "Reading a predator–prey graph",
-      "body": "Predator and prey numbers rise and fall in a linked cycle, and the predator peak always comes after the prey peak.",
+      "body": "In the simple model shown here, predator and prey numbers cycle together and the predator peak occurs after the prey peak.",
       "bullets": [
         {
-          "text": "Plenty of prey → predators increase → heavy predation drives prey down → predators starve and decline → prey recover."
+          "text": "One possible mechanism in this model: more prey can support more predators; heavier predation can then reduce prey; predator numbers can later fall as food declines."
         },
         {
-          "text": "The predator lags because it increases only after food is plentiful, and declines only after prey have dropped."
+          "text": "The shown lag is consistent with a delayed predator response, but observed timing alone does not prove that prey is the only driver."
         },
         {
-          "text": "Real data: Canada lynx and snowshoe hare pelts cycle about every 9 to 10 years, the lynx peaking 1 to 2 years after the hare."
+          "text": "Historical lynx–hare fur-return records show linked cycles, but fur returns are an indirect measure and the relationship also reflects broader ecological factors."
         }
       ],
       "secondary": "Fur returns measure animals trapped and sold, not animals alive: say what was measured before what it shows.",
-      "callout": "The curve that peaks first is the prey.",
-      "caption": "A predator–prey cycle with the predator peak lagging.",
+      "callout": "Describe the pattern in the data; do not turn it into an 'always' rule.",
+      "caption": "Simple predator–prey model with a lag; lag is consistent with interaction, not proof of one-way causation.",
       "voiceover": {
-        "text": "Here's how predation plays out in numbers over time. Watch the prey climb. With plenty of prey, predators have lots of food, so predator numbers rise. Heavy predation then drives the prey down. Then the predators run short of food and decline. With fewer predators, the prey recover, and the cycle repeats. Notice the predator peak always comes after the prey peak. Predators only increase after food is plentiful, and only decline after the prey have dropped. The famous real record is Canada lynx and snowshoe hare pelts, which cycle about every nine to ten years, with the lynx peaking one to two years after the hare."
+        "text": "This diagram shows a simple predator prey model. Prey rise first, predator numbers rise later, prey then fall as predation and other limits act, and predator numbers can decline as food becomes scarcer. That sequence is biologically plausible and often useful for interpreting data. But do not say predator peaks always lag prey peaks. Real systems vary. And a lag alone is consistent with a prey-driven response; it does not prove that prey alone controls predators, because feedback and other environmental factors can shape both populations. Historical lynx and hare fur returns are a classic linked record, but remember that trapping returns are an indirect measure of population size."
       },
       "diagram": {
         "type": "diorama",
@@ -401,18 +401,18 @@
       "id": "worked-example",
       "type": "workedExample",
       "heading": "Classify and analyse",
-      "question": "(a) Classify: a remora riding a shark and eating its leftovers; a cuckoo laying its eggs in another bird's nest; a fungus and an alga forming a lichen. (b) Feral cats peak about 6 months after a mouse plague peaks. Which species is controlling which?",
-      "coachNote": "Assign +, − or 0 to each partner; then read the lag.",
+      "question": "(a) Classify: a remora riding a shark and eating leftovers; a cuckoo laying eggs in another bird's nest; a fungus and an alga forming a lichen. (b) Feral cat abundance peaks about 6 months after a mouse-plague peak. What does that pattern support, and what can it not prove by itself?",
+      "coachNote": "Assign +, − or 0 to each partner; then describe the lag and make a qualified inference.",
       "steps": [
         "Remora (+), shark (0): commensalism.",
-        "Cuckoo (+), host bird (−, it raises the cuckoo's young): parasitism.",
-        "Fungus (+) and alga (+): mutualism.",
-        "Cats peak after mice: predator–prey, and the lag shows the cats are following their food.",
-        "Answer: the mouse numbers are driving the cat numbers, not the other way round ✓"
+        "Cuckoo (+), host bird (−): parasitism.",
+        "Fungus (+) and alga/cyanobacterium (+): mutualism.",
+        "Cats peaking after mice is consistent with a delayed predator response to increased prey availability.",
+        "The lag alone does not prove mice are the sole driver or that causation is one-way; predator feedback and other factors may also matter ✓"
       ],
-      "caption": "Classify by +/−/0; the lagging curve is the predator following its food.",
+      "caption": "Classify by +/−/0; interpret a lag as evidence consistent with interaction, not proof of one-way causation.",
       "voiceover": {
-        "text": "Let's classify, then analyse. A remora rides on a shark and eats its leftovers. The remora benefits, the shark isn't affected, so that's commensalism. A cuckoo lays its eggs in another bird's nest, and the host raises the cuckoo's chicks at its own cost. Plus minus, parasitism. A fungus and an alga form a lichen, and both benefit. Mutualism. Now the data. Feral cats peak about six months after a mouse plague peaks. That's predator and prey, and the lag tells you the cats are following their food. So the mouse numbers are driving the cat numbers, not the other way round."
+        "text": "Let's classify, then analyse the data carefully. A remora benefits while the shark is little affected, so that's commensalism. A cuckoo benefits while the host pays a cost, so that's parasitism. In a lichen, the partners both benefit, so that's mutualism. Now suppose feral cat abundance peaks about six months after a mouse plague. The lag is consistent with cats responding to increased prey availability. But the timing alone does not prove that mice are the sole cause of cat abundance, or that influence only runs one way. Predation feeds back on prey, and other environmental factors can affect both."
       },
       "durationInFrames": 1320
     },
