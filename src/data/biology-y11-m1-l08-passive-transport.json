@@ -1,0 +1,300 @@
+{
+  "title": "Passive Transport",
+  "subtitle": "Diffusion, osmosis and facilitated diffusion",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 8",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Explain the processes of simple diffusion, osmosis and facilitated diffusion",
+    "Conduct practical investigations to demonstrate the processes of diffusion and osmosis"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "lessonIntent": "Students can explain simple diffusion, osmosis and facilitated diffusion as passive processes driven by concentration gradients, and describe practical demonstrations of diffusion and osmosis.",
+  "examSkill": "Classify a described movement as simple diffusion, osmosis or facilitated diffusion by its substance, route and gradient, and explain why none needs ATP.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, how substances cross membranes for free. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Passive Transport"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "It spreads on its own",
+      "body": "Drop food colouring into still water and it spreads with no stirring at all.",
+      "callout": "The same physics moves oxygen into your cells, for free.",
+      "image": "bioY11M1L3MembraneMosaic",
+      "durationInFrames": 1110,
+      "caption": "Particles spread from crowded to sparse regions without any energy input.",
+      "voiceover": {
+        "text": "Drop some food colouring into a glass of still water and watch. It spreads out on its own, no stirring needed. That same blind physics moves oxygen into every one of your cells, every second of your life, and it costs the cell nothing. Particles simply spread from where they're crowded to where they're sparse. Today, the three passive ways substances cross a membrane, simple diffusion, osmosis and facilitated diffusion, and how to show two of them on the bench."
+      }
+    },
+    {
+      "id": "concept-diffusion-osmosis",
+      "type": "concept",
+      "heading": "Simple diffusion and osmosis",
+      "body": "Random motion alone spreads particles from high to low concentration until they are even.",
+      "bullets": [
+        {
+          "text": "Simple diffusion: net movement from high to low concentration, down the gradient, until evenly spread."
+        },
+        {
+          "text": "O₂ and CO₂ diffuse straight through the bilayer."
+        },
+        {
+          "text": "Osmosis: net movement of water across a partially permeable membrane, from dilute (more water) to concentrated (less water)."
+        }
+      ],
+      "callout": "Both are passive: no energy from the cell.",
+      "durationInFrames": 1454,
+      "caption": "Diffusion evens out a gradient; osmosis moves water toward the concentrated side.",
+      "voiceover": {
+        "text": "Particles in liquids and gases are always moving randomly. Put more of them in one place, and that random motion alone produces a net movement from high concentration to low, down the concentration gradient, until they're evenly spread. That's simple diffusion. Small non polar molecules like oxygen and carbon dioxide diffuse straight through the bilayer. Osmosis is a special case, just for water. It's the net movement of water across a partially permeable membrane, from a region of higher water concentration, a dilute solution, to lower water concentration, a concentrated solution. The solute can't cross, so the water does. Both are passive. The cell spends no energy."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Chamber",
+        "props": {
+          "layout": "stack",
+          "panels": [
+            {
+              "kind": "diffusion",
+              "title": "simple diffusion",
+              "at": 154
+            },
+            {
+              "kind": "osmosis",
+              "title": "osmosis",
+              "at": 1006
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-facilitated",
+      "type": "concept",
+      "heading": "Facilitated diffusion",
+      "body": "Charged or large polar molecules cannot cross the lipid core, so they pass through specific proteins, still down their gradient.",
+      "bullets": [
+        {
+          "text": "Ions pass through channel proteins, water-filled pores."
+        },
+        {
+          "text": "Glucose binds a carrier protein, which changes shape and releases it on the other side."
+        },
+        {
+          "text": "Still passive: down the gradient, no ATP. Rate depends on how many transport proteins there are."
+        }
+      ],
+      "callout": "The protein is a route, not a pump.",
+      "durationInFrames": 1370,
+      "caption": "Channels and carriers give ions and glucose a passive route through the membrane.",
+      "voiceover": {
+        "text": "So how do ions and glucose cross passively, when the hydrophobic core blocks them? Through membrane proteins. That's facilitated diffusion. Oxygen still diffuses straight through the bilayer. But ions pass through channel proteins, water filled pores through the core. And a large polar molecule like glucose binds to a carrier protein, which changes shape and releases it on the other side. Here's the key point. Every one of these moves down the concentration gradient, from high to low, so no ATP is needed. The protein just provides a route. And the rate depends on how many transport proteins are available."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Membrane",
+        "props": {
+          "routes": [
+            {
+              "via": "bilayer",
+              "particle": "o2",
+              "dir": "in",
+              "at": 178,
+              "label": "simple diffusion"
+            },
+            {
+              "via": "channel",
+              "particle": "ion",
+              "dir": "in",
+              "at": 274,
+              "label": "channel protein"
+            },
+            {
+              "via": "carrier",
+              "particle": "glucose",
+              "dir": "in",
+              "at": 478,
+              "label": "carrier protein"
+            }
+          ],
+          "footer": [
+            {
+              "text": "all down the gradient, high → low: no ATP",
+              "at": 778,
+              "amber": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-demos",
+      "type": "concept",
+      "heading": "Showing it on the bench",
+      "body": "Both diffusion and osmosis can be shown directly; the observed change is the evidence.",
+      "bullets": [
+        {
+          "text": "Diffusion: a potassium permanganate crystal in still water spreads colour with no stirring."
+        },
+        {
+          "text": "Osmosis: Visking tubing of concentrated sugar solution in water gains mass."
+        },
+        {
+          "text": "Potato cylinders in concentrated sugar solution lose mass. Use controls and repeats."
+        }
+      ],
+      "callout": "Mass change before and after is the quantitative evidence for osmosis.",
+      "durationInFrames": 1334,
+      "caption": "Colour spreads by diffusion; Visking tubing gains mass and potato loses mass by osmosis.",
+      "voiceover": {
+        "text": "How do we actually see these processes? For diffusion, drop a crystal of potassium permanganate into still water. Over time the purple colour spreads outward, with no stirring. That's particles moving down a concentration gradient. For osmosis, fill Visking tubing, a partially permeable membrane, with concentrated sugar solution, and stand it in water. Water moves in by osmosis, and the tubing gains mass. Or put potato cylinders in concentrated sugar solution. Water moves out of the potato cells, and they lose mass. Measuring mass before and after gives quantitative evidence, and controls and repeats make it reliable."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Chamber",
+        "props": {
+          "layout": "row",
+          "panels": [
+            {
+              "kind": "crystal",
+              "title": "diffusion",
+              "at": 70,
+              "result": "colour spreads, no stirring"
+            },
+            {
+              "kind": "visking",
+              "title": "Visking tubing",
+              "at": 394,
+              "result": "water in: mass rises",
+              "amber": true
+            },
+            {
+              "kind": "potato",
+              "title": "potato in sugar",
+              "at": 718,
+              "result": "water out: mass falls"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Concentration gradient: a difference in concentration between two regions; particles move down it."
+        },
+        {
+          "text": "Simple diffusion: net movement of particles from high to low concentration, directly across the membrane."
+        },
+        {
+          "text": "Osmosis: net movement of water across a partially permeable membrane, from high to low water concentration."
+        },
+        {
+          "text": "Facilitated diffusion: passive diffusion of ions or large polar molecules through a channel or carrier."
+        },
+        {
+          "text": "Passive: needing no energy (ATP) from the cell."
+        }
+      ],
+      "callout": "Osmosis is about water only.",
+      "durationInFrames": 1182,
+      "caption": "Concentration gradient, simple diffusion, osmosis, facilitated diffusion, passive.",
+      "voiceover": {
+        "text": "Five terms. A concentration gradient is a difference in concentration between two regions, and particles move down it, from high to low. Simple diffusion is the net movement of particles from high to low concentration, directly across the membrane. Osmosis is the net movement of water across a partially permeable membrane, from high to low water concentration. Facilitated diffusion is the passive diffusion of ions or large polar molecules through a channel or carrier protein. And passive means needing no energy, no ATP, from the cell."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Classify the movement",
+      "question": "Classify each as simple diffusion, osmosis or facilitated diffusion: (a) CO₂ leaving a respiring cell; (b) water entering a root cell from soil water; (c) glucose entering a red blood cell through a carrier protein, down its gradient.",
+      "coachNote": "Ask three things: which substance, which route, and which way the gradient runs.",
+      "steps": [
+        "(a) CO₂ is small and non-polar, crossing the bilayer down its gradient: simple diffusion.",
+        "(b) Water crossing a partially permeable membrane: osmosis.",
+        "(c) Glucose through a carrier protein, down its gradient: facilitated diffusion.",
+        "All three move down a gradient, so none needs ATP.",
+        "Answer: (a) simple diffusion, (b) osmosis, (c) facilitated diffusion, all passive ✓"
+      ],
+      "durationInFrames": 1176,
+      "caption": "Substance, route, gradient: that decides the process.",
+      "voiceover": {
+        "text": "Let's classify three movements. Carbon dioxide leaving a respiring cell. Water entering a root cell from soil water. And glucose entering a red blood cell through a carrier protein, down its gradient. For each, ask which substance, which route, and which way the gradient runs. Carbon dioxide is small and non polar, and crosses the bilayer, so that's simple diffusion. Water crossing a partially permeable membrane is osmosis. Glucose going through a carrier, down its gradient, is facilitated diffusion. All three are passive."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The protein-means-energy trap",
+      "body": "Trap: 'Facilitated diffusion needs energy because it uses a protein.'",
+      "secondary": "Facilitated diffusion moves substances DOWN their gradient, so no ATP is needed. The protein only provides a route through the hydrophobic core; it does not pump. Active transport, against the gradient, is the one that costs energy.",
+      "mistakeTag": "Protein ≠ energy",
+      "callout": "Direction decides energy: down is free, against costs ATP.",
+      "durationInFrames": 990,
+      "caption": "Facilitated diffusion is passive: down the gradient, no ATP.",
+      "voiceover": {
+        "text": "Here's the trap. Thinking facilitated diffusion must need energy because it uses a protein. It doesn't. Facilitated diffusion still moves substances down their concentration gradient, so no ATP is needed. The protein simply gives the substance a route through the hydrophobic core. It doesn't pump anything. The process that costs energy is active transport, which moves substances against the gradient. So what decides energy isn't the protein, it's the direction."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Visking tubing filled with water is placed in a beaker of concentrated sugar solution. Predict the change in the tubing’s mass and explain it.",
+      "pausePrompt": "Pause: which side has more water?",
+      "answerSteps": [
+        "Inside the tubing: pure water, the higher water concentration.",
+        "Outside: concentrated sugar solution, the lower water concentration.",
+        "Net water movement is out of the tubing, from high to low water concentration: osmosis.",
+        "Answer: the tubing loses mass, because water leaves by osmosis ✓"
+      ],
+      "durationInFrames": 1124,
+      "caption": "Water inside, sugar outside: water leaves by osmosis, so mass falls.",
+      "voiceover": {
+        "text": "Quick check. Visking tubing is filled with water, then placed in a beaker of concentrated sugar solution. Predict what happens to the tubing's mass, and explain it. Pause, and ask which side has more water. OK. Inside the tubing is pure water, the higher water concentration. Outside is concentrated sugar solution, with less water. So water moves out of the tubing by osmosis, and the tubing loses mass. It's the reverse of the demonstration we just saw."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Simple diffusion: net movement from high to low concentration; O₂ and CO₂ cross the bilayer.",
+        "Osmosis: water across a partially permeable membrane, from dilute to concentrated.",
+        "Facilitated diffusion: ions and large polar molecules through channels or carriers, down the gradient.",
+        "All three are passive: no ATP.",
+        "Demonstrate: permanganate crystal (diffusion); Visking tubing or potato mass change (osmosis)."
+      ],
+      "finalPrompt": "Classifying transport? Substance, route, and direction of the gradient.",
+      "durationInFrames": 1218,
+      "caption": "Three passive processes, all down the gradient, all free.",
+      "voiceover": {
+        "text": "Let's lock it in. Simple diffusion is net movement from high to low concentration, and oxygen and carbon dioxide cross the bilayer this way. Osmosis is water crossing a partially permeable membrane, from dilute to concentrated. Facilitated diffusion moves ions and large polar molecules through channels or carriers, down their gradient. All three are passive, with no ATP. And you can show them with a permanganate crystal, and with the mass change of Visking tubing or potato. Next time, we use osmosis to predict what happens to real cells."
+      }
+    }
+  ]
+}

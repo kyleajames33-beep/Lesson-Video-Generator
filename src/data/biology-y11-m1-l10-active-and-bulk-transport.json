@@ -1,0 +1,365 @@
+{
+  "title": "Active & Bulk Transport",
+  "subtitle": "When a cell has to pay to move things",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 10",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Explain the processes of active transport, exocytosis and endocytosis"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "lessonIntent": "Students can explain active transport, endocytosis and exocytosis, and say what the ATP is spent on in each.",
+  "examSkill": "Contrast active with passive transport by direction and energy, and classify a described example.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, the transport that costs a cell energy. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Active & Bulk Transport"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Uphill, every second",
+      "body": "Your nerve cells pump sodium ions out, against the gradient, all the time. It takes a large share of your body’s ATP.",
+      "callout": "Why would a cell pay to move ions the wrong way?",
+      "image": "bioY11M1L5IonPump",
+      "durationInFrames": 1230,
+      "caption": "Cells spend ATP to move substances against their gradient.",
+      "voiceover": {
+        "text": "Your nerve cells are pumping sodium ions out, all the time, against their concentration gradient, from where there are few to where there are already many. That's uphill, and it's so expensive that a large share of all the ATP your body makes goes into this kind of pumping. Diffusion can't do it, because diffusion only ever goes downhill. So why would a cell pay to move ions the wrong way, and how does it take in something far too big for any channel? Today, active transport, endocytosis and exocytosis."
+      }
+    },
+    {
+      "id": "concept-active-transport",
+      "type": "concept",
+      "heading": "Active transport: pumping uphill",
+      "body": "To move a substance against its gradient, a cell uses a carrier protein and energy from ATP.",
+      "bullets": [
+        {
+          "text": "Movement against the concentration gradient, from low to high."
+        },
+        {
+          "text": "A carrier protein binds the substance; ATP → ADP + Pᵢ changes its shape; the substance is released on the other side."
+        },
+        {
+          "text": "It lets cells accumulate nutrients, e.g. mineral ions into root cells."
+        }
+      ],
+      "callout": "Against the gradient always needs energy.",
+      "durationInFrames": 1454,
+      "caption": "A carrier protein uses ATP to move ions from low to high concentration.",
+      "voiceover": {
+        "text": "Active transport is the movement of a substance across a membrane against its concentration gradient, from low concentration to high, using a carrier protein and energy from ATP. Here's how it works. The carrier protein, open to one side, binds the ion. Then ATP is broken down to ADP and phosphate, and that energy changes the carrier's shape. It opens to the other side, and releases the ion, where the ion is already more concentrated. Because it works against the gradient, active transport always needs energy. It's how a root cell can keep absorbing mineral ions, even when they're scarcer in the soil than in the cell."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Membrane",
+        "props": {
+          "routes": [
+            {
+              "via": "pump",
+              "particle": "k",
+              "dir": "in",
+              "at": 70,
+              "label": "active transport",
+              "sub": "low → high, uses ATP",
+              "high": 8,
+              "low": 2,
+              "amber": true,
+              "col": 14.5
+            }
+          ],
+          "labels": [
+            {
+              "part": "pump",
+              "text": "carrier protein: binds, changes shape, releases",
+              "at": 334
+            }
+          ],
+          "sides": {
+            "outside": "outside: K⁺ low",
+            "inside": "inside: K⁺ high"
+          }
+        }
+      }
+    },
+    {
+      "id": "concept-bulk",
+      "type": "concept",
+      "heading": "Bulk transport by vesicles",
+      "body": "Particles too large for any protein are carried in or out by the membrane itself.",
+      "bullets": [
+        {
+          "text": "Endocytosis: the membrane folds in around material and pinches off a vesicle (phagocytosis: solids; pinocytosis: liquids)."
+        },
+        {
+          "text": "Exocytosis: a vesicle moves to the membrane, fuses with it and releases its contents outside."
+        },
+        {
+          "text": "Both need energy to move and fuse the vesicles."
+        }
+      ],
+      "callout": "Endo = in. Exo = out.",
+      "durationInFrames": 1322,
+      "caption": "Endocytosis brings material in by vesicle; exocytosis sends it out.",
+      "voiceover": {
+        "text": "How does a cell take in something huge, like a whole bacterium? It wraps it in membrane. In endocytosis, the membrane folds inward around the material, then pinches off, forming a vesicle that carries it into the cell. Engulfing solids is called phagocytosis, which is how white blood cells eat pathogens, and taking in liquid is pinocytosis. Exocytosis is the reverse. A vesicle moves to the membrane, fuses with it, and releases its contents outside the cell, like a gland cell secreting a hormone. Both processes need energy, to move the vesicles and to fuse them."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Bulk",
+        "props": {
+          "panels": [
+            {
+              "kind": "endo",
+              "title": "endocytosis (in)",
+              "example": "e.g. a white blood cell engulfing a bacterium",
+              "at": 154,
+              "steps": [
+                {
+                  "text": "membrane folds in",
+                  "at": 174
+                },
+                {
+                  "text": "pinches off a vesicle",
+                  "at": 262
+                }
+              ]
+            },
+            {
+              "kind": "exo",
+              "title": "exocytosis (out)",
+              "example": "e.g. a gland cell secreting a hormone",
+              "at": 622,
+              "steps": [
+                {
+                  "text": "vesicle moves up",
+                  "at": 642
+                },
+                {
+                  "text": "fuses, releases contents",
+                  "at": 742
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-worth-it",
+      "type": "concept",
+      "heading": "Why it is worth the energy",
+      "body": "Energy buys abilities diffusion cannot provide.",
+      "bullets": [
+        {
+          "text": "Active transport: accumulate nutrients against the gradient."
+        },
+        {
+          "text": "Endocytosis: take in large particles or pathogens. Exocytosis: secrete proteins, hormones or wastes."
+        },
+        {
+          "text": "Cells doing lots of transport, like kidney, gut and nerve cells, have many mitochondria."
+        }
+      ],
+      "callout": "Structure (many mitochondria) supports function (active transport).",
+      "durationInFrames": 1334,
+      "caption": "Passive processes are free and downhill; active processes cost ATP.",
+      "voiceover": {
+        "text": "Let's put all five processes side by side. Simple diffusion and facilitated diffusion both go down the gradient, with no energy, one through the bilayer and one through proteins. Active transport goes against the gradient, through a carrier protein, and needs ATP. Endocytosis and exocytosis move material in vesicles, and also need ATP. So what does the energy buy? The ability to concentrate scarce nutrients, to take in big particles, and to secrete products. That's why cells that do a lot of transport, like kidney, gut and nerve cells, are packed with mitochondria to supply the ATP."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Table",
+        "props": {
+          "headers": [
+            "Process",
+            "Energy?",
+            "Direction",
+            "How it crosses"
+          ],
+          "cols": [
+            0.27,
+            0.17,
+            0.22,
+            0.34
+          ],
+          "size": 16,
+          "rows": [
+            {
+              "cells": [
+                "Simple diffusion",
+                {
+                  "text": "none",
+                  "ok": true
+                },
+                "down",
+                "through the bilayer"
+              ],
+              "at": 34
+            },
+            {
+              "cells": [
+                "Facilitated diffusion",
+                {
+                  "text": "none",
+                  "ok": true
+                },
+                "down",
+                "channel or carrier protein"
+              ],
+              "at": 70
+            },
+            {
+              "cells": [
+                "Active transport",
+                {
+                  "text": "ATP",
+                  "amber": true
+                },
+                {
+                  "text": "against",
+                  "amber": true
+                },
+                "carrier protein"
+              ],
+              "at": 286,
+              "amber": true
+            },
+            {
+              "cells": [
+                "Endo / exocytosis",
+                {
+                  "text": "ATP"
+                },
+                "in / out",
+                "vesicles"
+              ],
+              "at": 442
+            }
+          ],
+          "footer": [
+            {
+              "text": "lots of transport → lots of mitochondria",
+              "at": 1042
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Active transport: movement against the concentration gradient using a carrier protein and ATP."
+        },
+        {
+          "text": "ATP: the cell’s energy currency; its breakdown powers active transport and vesicle movement."
+        },
+        {
+          "text": "Endocytosis: bulk uptake by engulfing material in a vesicle formed from the membrane."
+        },
+        {
+          "text": "Exocytosis: bulk export, as a vesicle fuses with the membrane and releases its contents."
+        },
+        {
+          "text": "Vesicle: a small membrane-bound sac that carries material into, out of or within the cell."
+        }
+      ],
+      "callout": "Endo = in; exo = out; both cost ATP.",
+      "durationInFrames": 1158,
+      "caption": "Active transport, ATP, endocytosis, exocytosis, vesicle.",
+      "voiceover": {
+        "text": "Five terms. Active transport is the movement of a substance against its concentration gradient, using a carrier protein and ATP. ATP is the cell's energy currency, and breaking it down powers active transport and vesicle movement. Endocytosis is bulk uptake, engulfing material in a vesicle formed from the membrane. Exocytosis is bulk export, where a vesicle fuses with the membrane and releases its contents outside. And a vesicle is a small membrane bound sac that carries material into, out of, or around the cell."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Classifying transport from evidence",
+      "question": "Root cells contain mineral ions at a higher concentration than the soil water. When oxygen is removed from the soil, ion uptake stops but water uptake continues. Identify how each enters the root cells.",
+      "coachNote": "Check two things: the direction of the gradient, and whether uptake depends on respiration.",
+      "steps": [
+        "The ions move from low (soil) to high (root cell): against their gradient.",
+        "Removing O₂ stops aerobic respiration, so ATP supply falls.",
+        "Ion uptake stops when ATP falls, so it is active transport.",
+        "Water uptake continues without ATP, so it is passive: osmosis.",
+        "Answer: ions by active transport (against the gradient, needs ATP); water by osmosis ✓"
+      ],
+      "durationInFrames": 1272,
+      "caption": "Against the gradient and dependent on respiration: active transport.",
+      "voiceover": {
+        "text": "Let's read some evidence. Root cells contain mineral ions at a higher concentration than the soil water. When oxygen is removed from the soil, ion uptake stops, but water uptake carries on. How does each get in? Check two things, the direction of the gradient, and whether uptake depends on respiration. The ions move from low in the soil to high in the root, against their gradient. Without oxygen, respiration can't supply ATP, and ion uptake stops, so it's active transport. Water keeps moving without ATP, so it's passive. That's osmosis."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The same-protein trap",
+      "body": "Trap: 'Active transport and facilitated diffusion are the same, because both use proteins.'",
+      "secondary": "Both use membrane proteins, but the direction and energy differ. Facilitated diffusion is passive: down the gradient, no ATP. Active transport goes against the gradient and requires ATP.",
+      "mistakeTag": "Direction and energy decide",
+      "callout": "Down and free: facilitated. Against and ATP: active.",
+      "durationInFrames": 954,
+      "caption": "Facilitated diffusion and active transport both use proteins, but differ in direction and energy.",
+      "voiceover": {
+        "text": "Here's the trap. Lumping active transport and facilitated diffusion together, because both use proteins. The protein is the only thing they share. Facilitated diffusion is passive. It moves substances down their gradient, with no ATP. Active transport moves substances against their gradient, and it needs ATP to change the carrier's shape. So when you classify, look at direction and energy, not at whether a protein is involved."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A cell is treated with a poison that stops ATP production. Predict the effect on (a) oxygen diffusing in, (b) ions being pumped against their gradient, and (c) a white blood cell engulfing a bacterium.",
+      "pausePrompt": "Pause: which of these needs ATP?",
+      "answerSteps": [
+        "(a) Oxygen diffusion is passive, so it continues.",
+        "(b) Active transport needs ATP, so the pumping stops.",
+        "(c) Engulfing is endocytosis (phagocytosis), which needs ATP, so it stops.",
+        "Answer: diffusion continues; active and bulk transport stop ✓"
+      ],
+      "durationInFrames": 1172,
+      "caption": "No ATP: diffusion carries on; active transport and endocytosis stop.",
+      "voiceover": {
+        "text": "Quick check. A cell is treated with a poison that stops it making ATP. Predict the effect on oxygen diffusing in, on ions being pumped against their gradient, and on a white blood cell engulfing a bacterium. Pause, and sort them by which ones need ATP. OK. Oxygen diffusion is passive, so it carries on. Pumping ions against the gradient is active transport, so it stops. And engulfing a bacterium is endocytosis, which needs ATP too, so it stops as well."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Active transport: against the gradient, carrier protein, ATP changes its shape.",
+        "Endocytosis: the membrane folds in and pinches off a vesicle (phagocytosis, pinocytosis).",
+        "Exocytosis: a vesicle fuses with the membrane and releases its contents.",
+        "All three need ATP; passive processes do not.",
+        "Cells doing lots of transport have many mitochondria."
+      ],
+      "finalPrompt": "Classifying transport? Direction first, then energy.",
+      "durationInFrames": 1182,
+      "caption": "Active and bulk transport cost ATP; they do what diffusion cannot.",
+      "voiceover": {
+        "text": "Let's lock it in. Active transport moves a substance against its gradient, using a carrier protein whose shape is changed by ATP. In endocytosis, the membrane folds in and pinches off a vesicle. In exocytosis, a vesicle fuses with the membrane and releases its contents. All three need ATP, while the passive processes don't. And cells that do lots of transport are packed with mitochondria. When you classify, check direction first, then energy. Next time, we apply all of this to the real substances cells exchange."
+      }
+    }
+  ]
+}
