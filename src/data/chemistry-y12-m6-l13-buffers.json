@@ -244,70 +244,24 @@
       "id": "concept-blood",
       "type": "concept",
       "heading": "The blood buffer",
-      "body": "Blood uses carbonic acid and bicarbonate at a 20-to-1 ratio to hold pH at 7.40.",
+      "body": "The physiological buffer couples bicarbonate with dissolved CO₂ and carbonic acid.",
       "bullets": [
         {
-          "text": "H₂CO₃ / HCO₃⁻ with pKa 6.10 and a 20:1 ratio gives pH 7.40."
+          "text": "Use effective pKa ≈ 6.1 with dissolved CO₂ in the denominator."
         },
         {
-          "text": "Add H⁺: HCO₃⁻ + H⁺ → H₂CO₃ → CO₂ + H₂O, breathed out."
+          "text": "At pH 7.4, [HCO₃⁻]/[CO₂(aq)] ≈ 20."
         },
         {
-          "text": "Add OH⁻: H₂CO₃ + OH⁻ → HCO₃⁻ + H₂O."
+          "text": "Lungs regulate CO₂ and kidneys regulate bicarbonate."
         }
       ],
-      "secondary": "Because CO₂ is exhaled, the blood buffer is an open system, with capacity far beyond a sealed beaker.",
-      "callout": "20:1 bicarbonate to carbonic acid holds pH 7.40.",
+      "secondary": "The effective pKa is not the dissociation constant of isolated H₂CO₃ alone.",
+      "callout": "pH ≈ 6.1 + log([HCO₃⁻]/[CO₂(aq)]) in the physiological model.",
       "durationInFrames": 1050,
-      "caption": "Blood: H₂CO₃/HCO₃⁻, pKa 6.10, 20:1 → pH 7.40; CO₂ exhaled.",
+      "caption": "pH ≈ 6.1 + log([HCO₃⁻]/[CO₂(aq)]) in the physiological model.",
       "voiceover": {
-        "text": "Now the buffer NESA loves, the one in your blood. It runs on carbonic acid and bicarbonate. The pKa of carbonic acid is six-point-one-zero, and the body keeps the bicarbonate to carbonic acid ratio at about twenty to one. Plug that into Henderson-Hasselbalch, six-point-one plus the log of twenty, which is six-point-one plus one-point-three, giving pH seven-point-four-zero, right where it should be. When acid builds up, bicarbonate grabs the hydrogen ions to form carbonic acid, which breaks down into carbon dioxide and water, and you simply breathe the carbon dioxide out. When base is added, carbonic acid donates a proton to it. And because the carbon dioxide leaves through your lungs, this is an open system, which gives it far more capacity than any sealed beaker of buffer ever could.",
-        "audioFile": "public/audio/Chemistry-Y12-M6-L13/concept-blood.2808b67f94e4.mp3"
-      },
-      "diagram": {
-        "type": "diorama",
-        "kind": "chem12m6Buffer",
-        "props": {
-          "pKa": 6.1,
-          "acid": "H₂CO₃",
-          "base": "HCO₃⁻",
-          "ha": 1,
-          "a": 20,
-          "openCO2": true,
-          "events": [
-            {
-              "add": "H",
-              "n": 1,
-              "at": 440
-            }
-          ],
-          "working": [
-            {
-              "text": "pKa = 6.10, ratio 20 : 1",
-              "at": 77
-            },
-            {
-              "text": "pH = 6.10 + log(20)",
-              "at": 245
-            },
-            {
-              "text": "= 6.10 + 1.30 = 7.40",
-              "at": 359
-            },
-            {
-              "text": "HCO₃⁻ + H⁺ → H₂CO₃",
-              "at": 440
-            },
-            {
-              "text": "H₂CO₃ → CO₂ + H₂O",
-              "at": 500
-            },
-            {
-              "text": "CO₂ breathed out: open system",
-              "at": 580
-            }
-          ]
-        }
+        "text": "The physiological buffer couples bicarbonate with dissolved carbon dioxide and carbonic acid. Its effective p K a is about six point one when the denominator represents dissolved carbon dioxide. At blood p H seven point four, the bicarbonate to dissolved carbon dioxide ratio is about twenty. The lungs regulate carbon dioxide and the kidneys regulate bicarbonate. Do not use six point one as the dissociation constant of isolated carbonic acid alone."
       }
     },
     {
@@ -329,20 +283,17 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "Blood holds pH 7.40 using H₂CO₃/HCO₃⁻ (pKa = 6.10). (a) Confirm the required [HCO₃⁻]/[H₂CO₃] ratio. (b) If pH falls to 7.30, classify the condition.",
+      "question": "Using the physiological bicarbonate/CO₂ buffer with effective pKa 6.10, find the ratio at pH 7.40. What does arterial pH 7.30 establish?",
       "pausePrompt": "Pause and rearrange Henderson-Hasselbalch.",
       "answerSteps": [
-        "(a) 7.40 = 6.10 + log(ratio) → log(ratio) = 1.30",
-        "ratio = 10^1.30 = 20, so [HCO₃⁻]/[H₂CO₃] = 20:1 ✓",
-        "(b) pH 7.30 is below the normal range of 7.35–7.45",
-        "Below 7.35 is acidosis",
-        "A lower ratio (more H₂CO₃) means more dissolved CO₂"
+        "[HCO₃⁻]/[CO₂*] ≈ 10^(7.40−6.10) ≈ 20; CO₂* includes dissolved CO₂ and hydrated carbonic acid.",
+        "Arterial pH 7.30 is acidaemia; acidosis names a pH-lowering process.",
+        "A lower ratio can reflect lower bicarbonate, higher dissolved CO₂, or both."
       ],
-      "durationInFrames": 1290,
-      "caption": "Ratio = 10^1.30 = 20:1; pH 7.30 is acidosis (below 7.35).",
+      "durationInFrames": 1415,
+      "caption": "Use the effective CO₂ buffer convention and distinguish acidaemia from acidosis.",
       "voiceover": {
-        "text": "Quick check on the blood buffer. It holds pH seven-point-four-zero using carbonic acid and bicarbonate, with a pKa of six-point-one-zero. Part a, confirm the bicarbonate to carbonic acid ratio. Pause and rearrange Henderson-Hasselbalch. Right, let's check. Seven-point-four equals six-point-one plus the log of the ratio, so the log of the ratio is one-point-three. Take ten to the power one-point-three, and you get twenty. So the ratio is twenty to one, exactly as stated. Part b, suppose the pH drops to seven-point-three-zero. The normal range is seven-point-three-five to seven-point-four-five, and seven-point-three is below that, so this is acidosis. It corresponds to a lower ratio, meaning more dissolved carbon dioxide and carbonic acid in the blood. Rearranging the buffer equation is exactly how doctors connect blood pH to bicarbonate levels.",
-        "audioFile": "public/audio/Chemistry-Y12-M6-L13/quick-check.b2f6548a5dbb.mp3"
+        "text": "The physiological bicarbonate buffer uses dissolved carbon dioxide in equilibrium with carbonic acid and bicarbonate. Using an effective p K a of six point one, a p H of seven point four implies a bicarbonate-to-dissolved-carbon-dioxide ratio of ten to the one point three, or about twenty. This effective denominator is chiefly dissolved carbon dioxide, not only chemically hydrated carbonic acid. Arterial blood p H of seven point three zero is acidaemia. Acidosis is a process that tends to lower p H. A lower ratio may reflect lower bicarbonate, higher dissolved carbon dioxide, or both, so p H alone does not establish which changed."
       }
     },
     {
@@ -357,11 +308,10 @@
         "Blood: H₂CO₃/HCO₃⁻ at 20:1, pKa 6.10, holds pH 7.40."
       ],
       "finalPrompt": "Both HA and A⁻ present? It's a buffer, so use Henderson-Hasselbalch.",
-      "durationInFrames": 1140,
+      "durationInFrames": 2032,
       "caption": "Five takeaways: composition, mechanism, H-H, range, and the blood buffer.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, a buffer is a weak acid and its conjugate base present together in comparable amounts. Second, the mechanism runs both ways, the conjugate base consumes added hydrogen ions, and the weak acid consumes added hydroxide. Third, the pH comes from Henderson-Hasselbalch, the pKa plus the log of the base to acid ratio, and when those amounts are equal, the pH simply equals the pKa. Fourth, a buffer works best within about one pH unit of its pKa, and its capacity depends on how many moles of each component you have. And fifth, the blood buffer uses carbonic acid and bicarbonate at a twenty to one ratio with a pKa of six-point-one, holding your blood at seven-point-four-zero. Whenever you see both a weak acid and its conjugate base, it's a buffer, so reach for Henderson-Hasselbalch. See you in the next lesson.",
-        "audioFile": "public/audio/Chemistry-Y12-M6-L13/summary.1a06ecfd2263.mp3"
+        "text": "Let's lock it in. Five things to take away. First, a buffer is a weak acid and its conjugate base present together in comparable amounts. Second, the mechanism runs both ways, the conjugate base consumes added hydrogen ions, and the weak acid consumes added hydroxide. Third, the pH comes from Henderson-Hasselbalch, the pKa plus the log of the base to acid ratio, and when those amounts are equal, the pH simply equals the pKa. Fourth, a buffer works best within about one pH unit of its pKa, and its capacity depends on how many moles of each component you have. And fifth, the blood-buffer model uses bicarbonate and dissolved carbon dioxide at about a twenty-to-one ratio with an effective pKa of six-point-one, holding your blood at seven-point-four-zero. Whenever you see both a weak acid and its conjugate base, it's a buffer, so reach for Henderson-Hasselbalch. See you in the next lesson."
       }
     }
   ]

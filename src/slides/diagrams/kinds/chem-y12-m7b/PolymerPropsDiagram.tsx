@@ -142,7 +142,7 @@ export const PolymerPropsDiagram = ({title = 'Same monomer, different packing', 
 				<circle cx={L} cy={494 + idleBob(frame, 3, 1.2)} r={24 + pulse * 2} fill="none" stroke={TOK.amber} strokeWidth={3} strokeDasharray="5 4" />
 				<text x={L + 100} y={430} fill={TOK.ink} fontSize={19} fontWeight={800}>PVC</text>
 				<text x={L + 100} y={452} fill={TOK.inkDim} fontSize={15} fontWeight={800}>polar C–Cl:</text>
-				<text x={L + 100} y={471} fill={TOK.inkDim} fontSize={15} fontWeight={800}>higher MP</text>
+				<text x={L + 100} y={471} fill={TOK.inkDim} fontSize={15} fontWeight={800}>properties vary</text>
 			</g>
 			<g opacity={fadeAt(frame, b.ptfe, 12)}>
 				<Unit atoms={PTFE} bonds={[[0, 1], [0, 2], [0, 3], [1, 4], [1, 5]]} x={R - 96} y={446} frame={frame} seed={4} />

@@ -142,10 +142,10 @@
         }
       ],
       "callout": "The grid is magnified too: its reading is already real, so there is nothing to divide.",
-      "durationInFrames": 1574,
+      "durationInFrames": 1762,
       "caption": "Grid reading = real size; the equation converts between real size and image size.",
       "voiceover": {
-        "text": "Now, how big is a cell? A mini grid lies on the stage beside the specimen. Its squares have a known size, here one hundred micrometres, and because the grid is magnified by exactly the same amount as the cell, it's a ruler marked in real micrometres. So just count the squares the cell spans. This one covers four squares, so its real size is four times one hundred, four hundred micrometres. There's nothing to divide. The magnification equation links the three quantities. Magnification equals image size divided by real size. Use it forwards as a check. At times one hundred, a four hundred micrometre cell appears forty thousand micrometres wide. That's forty millimetres across the field."
+        "text": "Now, how big is a cell? A mini grid lies on the stage beside the specimen. Its squares have a known size, here one hundred micrometres, and because the grid is magnified by exactly the same amount as the cell, it's a ruler marked in real micrometres. So just count the squares the cell spans. This one covers four squares, so its real size is four times one hundred, four hundred micrometres. There's nothing to divide. The magnification equation links the three quantities. Magnification equals image size divided by real size. Use it forwards as a check. At times one hundred, a four hundred micrometre cell appears forty thousand micrometres wide. That is a forty millimetre image on a correctly scaled photomicrograph, not the physical diameter of the microscope field."
       },
       "diagram": {
         "type": "diorama",
@@ -165,6 +165,29 @@
           }
         }
       }
+    },
+    {
+      "id": "concept-field-of-view",
+      "type": "concept",
+      "heading": "Estimate size from the field of view",
+      "body": "Use a calibrated field-of-view diameter at the same objective setting.",
+      "bullets": [
+        {
+          "text": "Cell size ≈ field-of-view diameter ÷ number of cells across the diameter."
+        },
+        {
+          "text": "Example: 1.8 mm ÷ 6 cells = 0.30 mm = 300 µm."
+        },
+        {
+          "text": "Estimate along the same direction, include partial cells, and repeat across several cells."
+        }
+      ],
+      "callout": "The field-of-view diameter is already a real specimen distance.",
+      "caption": "A calibrated field of view gives an approximate cell size.",
+      "voiceover": {
+        "text": "There is another measurement method required by the new syllabus. Calibrate the diameter of the field of view at your objective setting, then estimate how many cells fit across that diameter. Cell size is approximately the field-of-view diameter divided by the number of cells across the view. If the diameter is one point eight millimetres and six cells fit across it, the mean cell size is zero point three millimetres, or three hundred micrometres. Do not divide that result by magnification again. Include partial cells, use the same direction for both lengths, and repeat because cells vary in size."
+      },
+      "durationInFrames": 1500
     },
     {
       "id": "concept-cell-sizes",
@@ -322,14 +345,15 @@
         "Wet mount: water, thin specimen, stain, coverslip at an angle, low power first.",
         "Wall: firm boundary; cytoplasm: pale jelly; nucleus: darker and stained.",
         "A stage-grid reading is already the real size: no division.",
+        "Field-of-view estimate: cell size ≈ calibrated diameter ÷ cells across the diameter.",
         "magnification = image size ÷ real size; divide only a magnified image measurement.",
         "Measure several specialised cells and take the mean; include units."
       ],
       "finalPrompt": "Before you divide: did this length come from a grid, or from an image?",
-      "durationInFrames": 1254,
+      "durationInFrames": 1518,
       "caption": "Prepare, identify, measure: grid readings are real, image readings get divided.",
       "voiceover": {
-        "text": "Let's lock it in. For a wet mount, use water, a thin specimen, a stain, and a coverslip lowered at an angle, then focus on low power first. The cell wall is the firm boundary, the cytoplasm is pale, and the nucleus is darker and stained. A stage grid reading is already the real size. Magnification equals image size over real size, and you only divide a measurement from a magnified image. Before you divide, ask where the length came from. Next time, how better microscopes changed what we know about cells."
+        "text": "Let's lock it in. For a wet mount, use water, a thin specimen, a stain, and a coverslip lowered at an angle, then focus on low power first. The cell wall is the firm boundary, the cytoplasm is pale, and the nucleus is darker and stained. A stage grid reading is already the real size. Magnification equals image size over real size, and you only divide a measurement from a magnified image. Before you divide, ask where the length came from. Next time, how better microscopes changed what we know about cells. You can also estimate cell size by dividing a calibrated field-of-view diameter by the number of cells across it."
       }
     }
   ]

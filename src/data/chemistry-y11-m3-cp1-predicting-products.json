@@ -75,41 +75,30 @@
       "body": "Every IQ1 problem asks the same underlying question: what reaction type is occurring, and what are the products? The key is to look for the discriminator — the one clue that tells you which pattern applies.",
       "bullets": [
         {
-          "text": "Two solutions mixed + solid forms → precipitation. Use solubility rules.",
-          "at": 4
+          "text": "Two solutions mixed + solid forms → precipitation. Use solubility rules."
         },
         {
-          "text": "Hydrocarbon + O₂ → CO₂ + H₂O → combustion. Check for limited O₂.",
-          "at": 13
+          "text": "Hydrocarbon + O₂ → CO₂ + H₂O → combustion. Check for limited O₂."
         },
         {
-          "text": "Acid + carbonate → salt + water + CO₂ gas. Bubbles = carbonate.",
-          "at": 22
+          "text": "Acid + carbonate → salt + water + CO₂ gas. CO₂ from sufficient acid supports carbonate; bubbles alone are not unique."
         },
         {
-          "text": "Acid + base → salt + water. No gas = neutralisation.",
-          "at": 30
+          "text": "Acid + base → salt + water. No gas = neutralisation."
         },
         {
-          "text": "One reactant → multiple products → decomposition. Two → one → synthesis.",
-          "at": 38
+          "text": "One reactant → multiple products → decomposition. Two → one → synthesis."
         },
         {
-          "text": "No new substance formed, recoverable by physical means → physical change.",
-          "at": 47
+          "text": "No new substance formed, recoverable by physical means → physical change."
         }
       ],
       "callout": "Do not memorise steps. Read the scenario and match the discriminator.",
       "image": "cp1DecisionTree",
       "durationInFrames": 1800,
       "caption": "Six discriminators map every IQ1 scenario to the correct reaction type and products.",
-      "revealDelays": {
-        "heading": 15,
-        "callout": 1500,
-        "diagram": 90
-      },
       "voiceover": {
-        "text": "Every IQ1 problem asks the same question, what reaction type is occurring, and what are the products? The trick is to look for the discriminator, the one clue that gives it away. If two solutions are mixed and a solid forms, that's precipitation, so reach for the solubility rules. If a hydrocarbon reacts with oxygen to give carbon dioxide and water, that's combustion, though you should check whether the oxygen is limited. If an acid meets a carbonate, you get salt, water, and carbon dioxide gas, so bubbles point to a carbonate, whereas an acid plus a base with no gas is just neutralisation, giving salt and water. And on the structure side, one reactant breaking into several products is decomposition, while two combining into one is synthesis. Finally, if no new substance forms and it's recoverable by physical means, it's a physical change. So don't memorise steps, just read the scenario and match the discriminator."
+        "text": "The IQ1 decision tree Every IQ1 problem asks the same underlying question: what reaction type is occurring, and what are the products? The key is to look for the discriminator — the one clue that tells you which pattern applies. Two solutions mixed + solid forms → precipitation. Use solubility rules. Hydrocarbon + O₂ → CO₂ + H₂O → combustion. Check for limited O₂. Acid + carbonate → salt + water + CO₂ gas. CO₂ from sufficient acid supports carbonate; bubbles alone are not unique. Acid + base → salt + water. No gas = neutralisation. One reactant → multiple products → decomposition. Two → one → synthesis. No new substance formed, recoverable by physical means → physical change."
       }
     },
     {
@@ -187,7 +176,7 @@
       "id": "walkthrough-3",
       "type": "workedExample",
       "heading": "Walkthrough 3: Acid-carbonate with gas test",
-      "question": "Dilute sulfuric acid is added to solid calcium carbonate. Bubbles of gas are observed. (a) Identify the reaction type and the gas. (b) Write the balanced equation with state symbols. (c) Describe a chemical test to confirm the identity of the gas.",
+      "question": "Excess dilute HCl is added to CaCO₃. Identify the gas, write the balanced equation with states, and give a confirming test.",
       "coachNote": "Target: acid + carbonate → salt + water + CO₂. Gas turns limewater milky.",
       "unitCancel": {
         "left": "moles CO₂",
@@ -195,27 +184,16 @@
         "result": "1:1 ratio"
       },
       "steps": [
-        "Known: H₂SO₄(aq) + CaCO₃(s) → bubbles of gas.",
-        "Find: reaction type, gas identity, balanced equation, chemical test.",
-        "Reaction type: acid-carbonate. Discriminator: bubbles from solid + acid = carbonate.",
-        "Gas: CO₂. Test: bubble through limewater → milky white precipitate of CaCO₃.",
-        "Formula: Acid + carbonate → salt + water + CO₂.",
-        "Substitute: H₂SO₄ + CaCO₃ → CaSO₄ + H₂O + CO₂. Already balanced.",
-        "Answer: Acid-carbonate. CO₂ gas. H₂SO₄(aq) + CaCO₃(s) → CaSO₄(aq) + H₂O(l) + CO₂(g). Test: limewater → milky = 1 positive test."
+        "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g).",
+        "Pass the gas through limewater: a white CaCO₃ precipitate supports CO₂ identification.",
+        "Bubbles alone are not unique evidence for a carbonate.",
+        "With H₂SO₄, sparingly soluble CaSO₄ can coat the solid and slow reaction."
       ],
       "image": "cp1Walkthrough3Carbonate",
       "durationInFrames": 1876,
-      "caption": "Bubbles + solid + acid = carbonate reaction. CO₂ turns limewater milky.",
-      "revealDelays": {
-        "heading": 15,
-        "question": 60,
-        "coachNote": 180,
-        "stepsStart": 240,
-        "stepInterval": 100
-      },
+      "caption": "Confirm CO₂ and choose appropriate product states.",
       "voiceover": {
-        "text": "Walkthrough three: acid-carbonate with gas test. Sulfuric acid added to solid calcium carbonate. Bubbles form. Identify the reaction type and gas, balance the equation, and describe a chemical test. Known: H two S O four aqueous plus Ca C O three solid. Bubbles. Reaction type: acid-carbonate. The discriminator is bubbles from a solid reacting with acid — that means carbonate. Gas is carbon dioxide. Test: bubble through limewater. It turns milky white. Balance: H two S O four plus Ca C O three produces Ca S O four plus H two O plus C O two. Already balanced. Answer: acid-carbonate reaction producing carbon dioxide. Equation: H two S O four aqueous plus Ca C O three solid produces Ca S O four aqueous plus H two O liquid plus C O two gas. Limewater test gives milky white precipitate.",
-        "audioFile": "public/audio/Chemistry-Y11-M3-Checkpoint1/walkthrough-3.13418d422abb.mp3"
+        "text": "Use hydrochloric acid with calcium carbonate for a clear acid-carbonate example. The balanced equation is calcium carbonate plus two hydrochloric acid, producing calcium chloride, water and carbon dioxide. Calcium chloride is aqueous in this setup. Confirm carbon dioxide by passing it through limewater, which forms a white calcium carbonate precipitate. Bubbles alone do not identify a carbonate because other reactions, such as a metal with acid, release other gases. Sulfuric acid can form sparingly soluble calcium sulfate on the surface and slow the reaction, so it is not an interchangeable example with every product aqueous."
       }
     },
     {

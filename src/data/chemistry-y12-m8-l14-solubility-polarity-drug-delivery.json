@@ -8,11 +8,17 @@
   "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
   "syllabusModule": "Module 8: Applying Chemical Ideas",
   "syllabusDotPoints": [
-    "investigate the structure and action of named medicines in terms of their functional groups",
-    "relate the polarity and solubility of a drug to its absorption and method of delivery"
+    "Enrichment context for structure–property relationships; not a verbatim mandated medicine/drug-delivery dot point in the Chemistry Stage 6 Syllabus (2017)."
   ],
   "moduleLessonCount": 16,
-  "nesaOutcomes": ["CH12-15", "CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-15",
+    "CH11/12-1",
+    "CH11/12-2",
+    "CH11/12-3",
+    "CH11/12-4",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "How is information about the reactivity and structure of organic compounds obtained?",
   "lessonIntent": "Students can apply like-dissolves-like and Lipinski's rule to drug solubility, and match a delivery route to a solubility or first-pass metabolism problem.",
   "examSkill": "Explain first-pass metabolism, and justify a delivery route from a drug's polarity and metabolism rather than convenience.",
@@ -51,9 +57,15 @@
       "heading": "Like dissolves like",
       "body": "Drug solubility is a balancing act. Blood plasma is watery, but cell membranes are largely lipid, so one molecule behaves differently in each.",
       "bullets": [
-        {"text": "Polar groups and hydrogen bonding improve solubility in water."},
-        {"text": "Non-polar, hydrocarbon-rich regions favour lipid environments."},
-        {"text": "Polar drugs suit aqueous plasma; non-polar drugs suit lipid membranes."}
+        {
+          "text": "Polar groups and hydrogen bonding improve solubility in water."
+        },
+        {
+          "text": "Non-polar, hydrocarbon-rich regions favour lipid environments."
+        },
+        {
+          "text": "Polar drugs suit aqueous plasma; non-polar drugs suit lipid membranes."
+        }
       ],
       "secondary": "This is why medicinal chemistry is usually a compromise, not one ideal property. A drug must dissolve in plasma and still cross lipid membranes.",
       "callout": "Polar likes water; non-polar likes lipid.",
@@ -65,7 +77,17 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Delivery",
-        "props": {"mode": "like", "beats": [111, 161, 317, 501, 685, 792]}
+        "props": {
+          "mode": "like",
+          "beats": [
+            111,
+            161,
+            317,
+            501,
+            685,
+            792
+          ]
+        }
       }
     },
     {
@@ -73,10 +95,18 @@
       "type": "definition",
       "heading": "The words you need",
       "bullets": [
-        {"text": "Partition coefficient, log P: drug concentration in oil versus water; high log P means more lipophilic."},
-        {"text": "Prodrug: an inactive precursor metabolised in the body to the active drug."},
-        {"text": "First-pass metabolism: breakdown in gut wall and liver before reaching circulation."},
-        {"text": "Bioavailability: the fraction of active drug that reaches systemic circulation."}
+        {
+          "text": "Partition coefficient, log P: drug concentration in oil versus water; high log P means more lipophilic."
+        },
+        {
+          "text": "Prodrug: an inactive precursor metabolised in the body to the active drug."
+        },
+        {
+          "text": "First-pass metabolism: breakdown in gut wall and liver before reaching circulation."
+        },
+        {
+          "text": "Bioavailability: the fraction of active drug that reaches systemic circulation."
+        }
       ],
       "callout": "First-pass metabolism is the silent thief of oral doses.",
       "durationInFrames": 990,
@@ -91,16 +121,22 @@
       "heading": "Lipinski's Rule of Five",
       "body": "Medicinal chemists use a quick heuristic to estimate whether a molecule is likely to work orally.",
       "bullets": [
-        {"text": "Molecular mass below 500 daltons."},
-        {"text": "Log P below 5, so not excessively lipophilic."},
-        {"text": "Fewer than 5 hydrogen-bond donors, fewer than 10 acceptors."}
+        {
+          "text": "Molecular mass ≤ 500 daltons."
+        },
+        {
+          "text": "Log P ≤ 5, so not excessively lipophilic."
+        },
+        {
+          "text": "No more than 5 hydrogen-bond donors and 10 acceptors."
+        }
       ],
       "secondary": "These are guides for likely oral absorption, not guarantees. Even a molecule that fits all four can still fail, because metabolism and formulation also matter.",
       "callout": "A guide for oral bioavailability, never a promise.",
-      "durationInFrames": 1020,
-      "caption": "Rule of Five: MW under 500, log P under 5, donors under 5, acceptors under 10.",
+      "durationInFrames": 1942,
+      "caption": "Rule of Five: MW ≤ 500, log P ≤ 5, donors ≤ 5, acceptors ≤ 10.",
       "voiceover": {
-        "text": "Now a handy tool, Lipinski's Rule of Five, which medicinal chemists use to estimate whether a new molecule is likely to be suitable for oral delivery. There are four limits. The molecular mass should be below five hundred daltons, because very large molecules are often poorly absorbed. The log P should be below five, because excessive lipophilicity hurts useful drug behaviour. There should be fewer than five hydrogen-bond donors, and fewer than ten hydrogen-bond acceptors, because too many of either can reduce membrane passage. Now the critical caveat, and it's an exam favourite. These are guides for likely oral absorption, not guarantees. A molecule can satisfy all four limits and still fail as an oral drug, because metabolism, formulation, and many other factors still matter. So treat the Rule of Five as a useful filter, not a promise."
+        "text": "Now a handy tool, Lipinski's Rule of Five, which medicinal chemists use to estimate whether a new molecule is likely to be suitable for oral delivery. There are four limits. The molecular mass should be no more than five hundred daltons, because very large molecules are often poorly absorbed. The log P should be no more than five, because excessive lipophilicity hurts useful drug behaviour. There should be no more than five hydrogen-bond donors, and no more than ten hydrogen-bond acceptors, because too many of either can reduce membrane passage. Now the critical caveat, and it's an exam favourite. These are guides for likely oral absorption, not guarantees. A molecule can satisfy all four limits and still fail as an oral drug, because metabolism, formulation, and many other factors still matter. So treat the Rule of Five as a useful filter, not a promise."
       },
       "diagram": {
         "type": "diorama",
@@ -109,16 +145,52 @@
           "header": "Four limits for likely oral absorption",
           "cards": [
             {
-              "icons": [{"name": "balance", "load": "molecule", "value": "< 500"}],
+              "icons": [
+                {
+                  "name": "balance",
+                  "load": "molecule",
+                  "value": "< 500"
+                }
+              ],
               "title": "Mass < 500 Da",
-              "lines": ["molecular mass"]
+              "lines": [
+                "molecular mass"
+              ]
             },
-            {"icons": [{"name": "oilWater"}], "title": "log P < 5", "lines": ["not too lipophilic"]},
-            {"icons": [{"name": "hbond", "role": "donor"}], "title": "Donors < 5", "lines": ["H-bond donors"]},
             {
-              "icons": [{"name": "hbond", "role": "acceptor"}],
+              "icons": [
+                {
+                  "name": "oilWater"
+                }
+              ],
+              "title": "log P < 5",
+              "lines": [
+                "not too lipophilic"
+              ]
+            },
+            {
+              "icons": [
+                {
+                  "name": "hbond",
+                  "role": "donor"
+                }
+              ],
+              "title": "Donors < 5",
+              "lines": [
+                "H-bond donors"
+              ]
+            },
+            {
+              "icons": [
+                {
+                  "name": "hbond",
+                  "role": "acceptor"
+                }
+              ],
               "title": "Acceptors < 10",
-              "lines": ["H-bond acceptors"]
+              "lines": [
+                "H-bond acceptors"
+              ]
             }
           ],
           "footer": {
@@ -126,7 +198,13 @@
             "sub": "a molecule can pass all four and still fail: metabolism, formulation",
             "amber": true
           },
-          "beats": [161, 282, 381, 438, 608]
+          "beats": [
+            161,
+            282,
+            381,
+            438,
+            608
+          ]
         }
       }
     },
@@ -136,21 +214,39 @@
       "heading": "Prodrugs and first-pass metabolism",
       "body": "Even if a drug is absorbed, the liver can convert or destroy a big fraction before it reaches the rest of the body.",
       "bullets": [
-        {"text": "An orally absorbed drug reaches the liver before general circulation."},
-        {"text": "Heavy first-pass metabolism leaves less active drug for the body."},
-        {"text": "A prodrug is given inactive, then activated in the body, e.g. codeine to morphine."}
+        {
+          "text": "An orally absorbed drug reaches the liver before general circulation."
+        },
+        {
+          "text": "Heavy first-pass metabolism leaves less active drug for the body."
+        },
+        {
+          "text": "Prodrugs undergo metabolic activation; codeine is partly converted to morphine but also has weaker intrinsic activity."
+        }
       ],
       "secondary": "If a heart medicine is heavily affected by first-pass metabolism, swallowing it may deliver too little. That's why the route of administration is a chemistry decision.",
       "callout": "The liver taxes every swallowed dose first.",
-      "durationInFrames": 1020,
+      "durationInFrames": 1235,
       "caption": "First-pass metabolism in the liver cuts oral bioavailability before circulation.",
       "voiceover": {
-        "text": "Let's look closely at first-pass metabolism, because it explains our hook. Even if a drug is well absorbed from the gut, it doesn't go straight to the body. An orally absorbed drug reaches the liver before it reaches general circulation. If a lot of the drug is metabolised there, then much less unchanged active drug makes it out to the rest of the body, and that lowers oral bioavailability. Sometimes chemists turn this to their advantage with a prodrug, which is given in an inactive form and then converted to the active drug in the body, codeine converting to morphine is the named example. But when first-pass metabolism is heavy and unavoidable, as with that angina drug, swallowing the medicine simply delivers too little. That's the whole reason the route of administration is a chemistry-driven decision, not just a matter of convenience."
+        "text": "Prodrugs and first-pass metabolism Even if a drug is absorbed, the liver can convert or destroy a big fraction before it reaches the rest of the body. An orally absorbed drug reaches the liver before general circulation. Heavy first-pass metabolism leaves less active drug for the body. Prodrugs undergo metabolic activation; codeine is partly converted to morphine but also has weaker intrinsic activity. If a heart medicine is heavily affected by first-pass metabolism, swallowing it may deliver too little. That's why the route of administration is a chemistry decision."
       },
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Delivery",
-        "props": {"mode": "firstpass", "beats": [24, 141, 224, 390, 424, 611], "prodrug": "codeine", "activeDrug": "morphine"}
+        "props": {
+          "mode": "firstpass",
+          "beats": [
+            24,
+            141,
+            224,
+            390,
+            424,
+            611
+          ],
+          "prodrug": "codeine",
+          "activeDrug": "morphine"
+        }
       }
     },
     {
@@ -160,19 +256,40 @@
       "body": "Delivery systems aren't interchangeable packaging. Each route suits particular solubility, stability, and bioavailability constraints.",
       "diagram": {
         "type": "table",
-        "headers": ["Route", "Chemistry requirement"],
+        "headers": [
+          "Route",
+          "Chemistry requirement"
+        ],
         "rows": [
-          ["Oral", "Dissolve and survive gut plus first-pass"],
-          ["Transdermal", "Cross lipid skin, bypasses first-pass"],
-          ["Intravenous", "Suit aqueous delivery, bypasses first-pass"],
-          ["Liposome", "Encapsulation for targeted transport"]
+          [
+            "Oral",
+            "Dissolve and survive gut plus first-pass"
+          ],
+          [
+            "Transdermal",
+            "Cross lipid skin, bypasses first-pass"
+          ],
+          [
+            "Intravenous",
+            "Suit aqueous delivery, bypasses first-pass"
+          ],
+          [
+            "Liposome",
+            "Encapsulation for targeted transport"
+          ]
         ],
         "delay": 18
       },
       "bullets": [
-        {"text": "Oral: convenient, but must survive digestion and first-pass."},
-        {"text": "Transdermal: steady delivery, but the drug must cross lipid skin."},
-        {"text": "Intravenous: immediate, bypasses first-pass entirely."}
+        {
+          "text": "Oral: convenient, but must survive digestion and first-pass."
+        },
+        {
+          "text": "Transdermal: steady delivery, but the drug must cross lipid skin."
+        },
+        {
+          "text": "Intravenous: immediate, bypasses first-pass entirely."
+        }
       ],
       "secondary": "A transdermal patch needs a drug that crosses skin, so it suits less polar molecules. A highly polar, ionised drug couldn't cross skin that way.",
       "callout": "Match the route to the molecule, not the other way round.",
@@ -186,19 +303,19 @@
       "id": "worked-example",
       "type": "workedExample",
       "heading": "Choose the delivery route",
-      "question": "A heart medicine is strongly affected by first-pass metabolism and needs a steady therapeutic concentration for hours. Compare an oral tablet with a transdermal patch and recommend a route.",
+      "question": "A heart medicine is strongly affected by first-pass metabolism and needs a steady therapeutic concentration for hours. Compare an oral tablet with a transdermal patch and recommend a route. Assume the drug and patch formulation have suitable skin permeability; consider that modified-release oral formulations also exist.",
       "coachNote": "Weigh first-pass loss and the need for steady delivery against each route's chemistry.",
       "steps": [
         "Oral tablet: heavy first-pass metabolism means much less active drug reaches circulation.",
-        "Oral tablet: a single dose also gives a sharp peak, not a steady level.",
+        "Oral tablet: an immediate-release dose may give peaks; modified-release formulations can reduce fluctuations.",
         "Transdermal patch: delivery through skin bypasses the liver's first-pass route.",
         "Transdermal patch: it also releases steadily over hours, holding a stable concentration.",
-        "Answer: recommend the transdermal patch, it avoids first-pass loss and gives steady delivery."
+        "Answer: consider a transdermal patch if the drug and formulation have suitable skin permeability, it avoids first-pass loss and gives steady delivery."
       ],
-      "durationInFrames": 1320,
+      "durationInFrames": 2533,
       "caption": "Transdermal patch: bypasses first-pass and gives steady delivery for hours.",
       "voiceover": {
-        "text": "Let's do an evaluate-style question, the kind worth five marks. A heart medicine is strongly affected by first-pass metabolism, and it needs a steady therapeutic concentration for hours. Compare an oral tablet with a transdermal patch and recommend a route. Step one, the oral tablet. Heavy first-pass metabolism means much less active drug reaches circulation, so the efficiency is poor. Step two, the oral tablet has a second problem, a single dose gives a sharp peak and then a trough, not a steady level. Step three, the transdermal patch. Delivering through the skin bypasses the gut and the liver's first-pass route, so far more active drug arrives. Step four, the patch also releases steadily over hours, holding a stable concentration. So step five, the recommendation, the transdermal patch, because it solves both problems at once, it avoids the first-pass loss and it provides the steady delivery the drug needs. An intravenous route would also bypass first-pass, but it's less practical for routine long-term dosing."
+        "text": "Let's do an evaluate-style question, the kind worth five marks. A heart medicine is strongly affected by first-pass metabolism, and it needs a steady therapeutic concentration for hours. Compare an oral tablet with a transdermal patch and recommend a route. Step one, the oral tablet. Heavy first-pass metabolism means much less active drug reaches circulation, so the efficiency is poor. Step two, the oral tablet has a second problem, a single dose gives a sharp peak and then a trough, not a steady level. Step three, the transdermal patch. Delivering through the skin bypasses the gut and the liver's first-pass route, so far more active drug arrives. Step four, the patch also releases steadily over hours, holding a stable concentration. So step five, the recommendation, the transdermal patch, because it solves both problems at once, it avoids the first-pass loss and it provides the steady delivery the drug needs. An intravenous route would also bypass first-pass, but it's less practical for routine long-term dosing. The patch recommendation depends on suitable skin permeability and formulation. Modified-release oral products can also reduce peaks, so route choice requires more than the simple comparison."
       }
     },
     {
@@ -242,15 +359,16 @@
         "Like dissolves like: polar suits plasma, non-polar suits membranes.",
         "Lipinski's Rule of Five guides oral bioavailability, it doesn't guarantee it.",
         "First-pass metabolism in the liver cuts oral bioavailability.",
-        "A prodrug is inactive until the body converts it, like codeine to morphine.",
+        "Metabolic activation can contribute to drug effects; codeine is partly converted to morphine.",
         "Match the delivery route to the drug's polarity and metabolism."
       ],
       "finalPrompt": "Delivery question? Justify the route from polarity and first-pass, not convenience.",
       "durationInFrames": 1020,
       "caption": "Five takeaways: like dissolves like, Rule of Five, first-pass, prodrugs, routes.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, like dissolves like, polar drugs suit the aqueous plasma, and non-polar drugs suit the lipid membranes, so most drugs are a compromise. Second, Lipinski's Rule of Five guides whether a molecule is likely orally absorbed, but it guarantees nothing. Third, first-pass metabolism in the liver cuts oral bioavailability, sometimes drastically. Fourth, a prodrug is given inactive and then converted by the body, with codeine to morphine as the named example. And fifth, you match the delivery route to the drug's polarity and metabolism, which is why a heavily metabolised drug goes transdermal or intravenous. So in any delivery question, justify the route from the chemistry, the polarity and the first-pass effect, not from convenience. Next lesson, drug synthesis and green chemistry. See you there."
+        "text": "Lock it in Like dissolves like: polar suits plasma, non-polar suits membranes. Lipinski's Rule of Five guides oral bioavailability, it doesn't guarantee it. First-pass metabolism in the liver cuts oral bioavailability. Metabolic activation can contribute to drug effects; codeine is partly converted to morphine. Match the delivery route to the drug's polarity and metabolism."
       }
     }
-  ]
+  ],
+  "productionNotes": "Syllabus audit: medicine action, pharmacokinetics, chirality and delivery details are enrichment. Do not count these lessons as replacing the required organic-analysis spectroscopy coverage (IR, NMR and mass spectrometry)."
 }

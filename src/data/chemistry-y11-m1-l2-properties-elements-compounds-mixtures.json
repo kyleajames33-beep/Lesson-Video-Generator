@@ -12,7 +12,11 @@
     "classify the elements based on their properties and position in the periodic table through their:"
   ],
   "moduleLessonCount": 20,
-  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH11-8",
+    "CH11/12-4",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "How do the properties of substances help us to classify and separate them?",
   "lessonIntent": "Students can use physical property data, especially the sharpness of melting and boiling, to classify an unknown as a pure substance or a mixture.",
   "examSkill": "Read heating-curve and property data to decide pure vs mixture, and explain why a compound's properties differ from its elements.",
@@ -48,29 +52,24 @@
       "id": "concept",
       "type": "concept",
       "heading": "The properties that characterise a substance",
-      "body": "A physical property can be measured without changing the substance's chemical identity.",
-      "diagram": {
-        "type": "table",
-        "headers": ["Property", "What it tells you"],
-        "rows": [
-          ["Melting / boiling point", "Sharp = pure; ranged = mixture"],
-          ["Density", "Characteristic identifier (g cm⁻³)"],
-          ["Solubility", "How much dissolves per volume"],
-          ["Conductivity", "Metals and ionic solutions conduct"],
-          ["Hardness", "Resistance to scratching"]
-        ]
-      },
+      "body": "Physical properties provide evidence for identity and purity at specified conditions.",
       "bullets": [
-        {"text": "Pure substances have fixed, characteristic property values."},
-        {"text": "Mixtures show variable or ranged values."},
-        {"text": "Matching values across two samples → likely the same substance."}
+        {
+          "text": "Characteristic values support identification, but a single measurement is not proof."
+        },
+        {
+          "text": "Mixtures often have ranges; azeotropes can have fixed boiling points."
+        },
+        {
+          "text": "Use multiple independent measurements and composition evidence."
+        }
       ],
-      "secondary": "No single property is conclusive alone. Confirm an identification with at least two independent properties.",
-      "callout": "Fixed values point to a pure substance.",
+      "secondary": "",
+      "callout": "Physical-property tests support, rather than prove, classification.",
       "durationInFrames": 1110,
-      "caption": "Physical properties: MP, BP, density, solubility, conductivity, hardness.",
+      "caption": "Physical-property tests support, rather than prove, classification.",
       "voiceover": {
-        "text": "Let's start with the toolkit. A physical property is something you can measure or observe without changing the chemical identity of the substance. Chemists use a standard set, melting point, boiling point, density, solubility, electrical conductivity, and hardness. Here's the key principle. Pure substances have fixed, characteristic values for these, the same every time. Mixtures show variable or ranged values. So if two samples share an identical melting point, boiling point, density, and solubility, they're almost certainly the same substance. One caution though, no single property is conclusive on its own, so you confirm an identification with at least two independent properties."
+        "text": "The properties that characterise a substance Physical properties provide evidence for identity and purity at specified conditions. Characteristic values support identification, but a single measurement is not proof. Mixtures often have ranges; azeotropes can have fixed boiling points. Use multiple independent measurements and composition evidence. "
       }
     },
     {
@@ -78,10 +77,18 @@
       "type": "definition",
       "heading": "Sharp versus gradual",
       "bullets": [
-        {"text": "Sharp melting point: a flat plateau at one fixed temperature → pure substance."},
-        {"text": "Melting range: a sloped curve over several degrees → mixture."},
-        {"text": "Pure water always boils at 100°C; pure iron melts at 1538°C."},
-        {"text": "Salt water boils above 100°C, and the value shifts with concentration."}
+        {
+          "text": "Sharp melting point: a flat plateau at one fixed temperature → pure substance."
+        },
+        {
+          "text": "Melting range: a sloped curve over several degrees → mixture."
+        },
+        {
+          "text": "Pure water always boils at 100°C; pure iron melts at 1538°C."
+        },
+        {
+          "text": "Salt water boils above 100°C, and the value shifts with concentration."
+        }
       ],
       "callout": "A flat plateau is the signature of purity.",
       "durationInFrames": 990,
@@ -96,9 +103,15 @@
       "heading": "A compound is a brand-new substance",
       "body": "When elements react, new bonds form a new substance with entirely new properties.",
       "bullets": [
-        {"text": "Sodium is a violently reactive metal."},
-        {"text": "Chlorine is a toxic gas."},
-        {"text": "Sodium chloride is safe table salt, melting at 801°C."}
+        {
+          "text": "Sodium is a violently reactive metal."
+        },
+        {
+          "text": "Chlorine is a toxic gas."
+        },
+        {
+          "text": "Sodium chloride is table salt with properties very different from its elements, melting at 801°C."
+        }
       ],
       "secondary": "A compound's properties can't be predicted from its elements. You must measure or look them up.",
       "callout": "New bonds, new structure, new properties.",
@@ -157,7 +170,7 @@
               "at": 270,
               "tags": [
                 {
-                  "text": "safe table salt",
+                  "text": "table salt with properties very different from its elements",
                   "at": 360
                 },
                 {
@@ -184,26 +197,25 @@
       "durationInFrames": 990,
       "caption": "Na + Cl₂ → NaCl: reactive metal + toxic gas → safe salt.",
       "voiceover": {
-        "text": "Here's an idea students get wrong constantly. A compound has completely different properties from the elements it's made of. Take sodium, a soft metal so reactive it explodes in water. And chlorine, a toxic green gas. React them together and you get sodium chloride, ordinary table salt, which is safe to eat and melts at eight hundred and one degrees. None of sodium's reactivity survives, and none of chlorine's toxicity survives, because new ionic bonds have formed a new substance with a new structure. So you can't predict a compound's properties from its elements. You have to measure them, or look them up."
+        "text": "A compound is a brand-new substance When elements react, new bonds form a new substance with entirely new properties. Sodium is a violently reactive metal. Chlorine is a toxic gas. Sodium chloride is table salt with properties very different from its elements, melting at 801°C. A compound's properties can't be predicted from its elements. You must measure or look them up."
       }
     },
     {
       "id": "worked-example",
       "type": "workedExample",
       "heading": "Three samples from melting data",
-      "question": "Classify each: A melts sharply at 327°C; B softens from 60°C, liquid by 80°C; C melts sharply at −78°C and sublimes.",
+      "question": "A melts sharply at 327°C; B softens from 60–80°C; C sublimes near −78.5°C at 1 atm. What classification evidence do these observations provide?",
       "coachNote": "Sharp transition = pure; melting over a range = mixture.",
       "steps": [
-        "A: sharp fixed MP at 327°C → pure substance",
-        "B: melts over a 20°C range (60–80°C) → mixture",
-        "C: sharp fixed transition at −78°C, sublimes → still pure",
-        "Subliming doesn't break purity — one fixed transition temperature",
-        "Answer: A pure, B mixture, C pure ✓"
+        "A is consistent with a pure substance, but one transition is not conclusive.",
+        "B is consistent with a mixture; structure and phase behaviour also matter.",
+        "C undergoes sublimation, not melting, at 1 atm.",
+        "Use other measurements and composition evidence before proving identity or purity."
       ],
       "durationInFrames": 1290,
-      "caption": "A and C have sharp transitions (pure); B melts over a range (mixture).",
+      "caption": "Distinguish a likely classification from conclusive evidence.",
       "voiceover": {
-        "text": "Let's classify three samples from their melting behaviour. Sample A melts sharply at three hundred and twenty-seven degrees, one precise temperature, so that's a pure substance. Sample B starts softening at sixty degrees and isn't fully liquid until eighty, so it melts over a twenty degree range, and that ranged behaviour is the signature of a mixture. Sample C melts sharply at minus seventy-eight degrees and sublimes, meaning it goes straight from solid to gas. Now don't let subliming throw you. It just means this substance skips the liquid phase, but the transition still happens at one fixed temperature, so C is still pure. Final answer, A is pure, B is a mixture, and C is pure."
+        "text": "Three samples from melting data A melts sharply at 327°C; B softens from 60–80°C; C sublimes near −78.5°C at 1 atm. What classification evidence do these observations provide? A is consistent with a pure substance, but one transition is not conclusive. B is consistent with a mixture; structure and phase behaviour also matter. C undergoes sublimation, not melting, at 1 atm. Use other measurements and composition evidence before proving identity or purity."
       }
     },
     {
@@ -214,7 +226,7 @@
       "coachNote": "A reaction makes a new substance, not a blend of the old ones.",
       "steps": [
         "2Na + Cl₂ → 2NaCl: electrons transfer, forming Na⁺ and Cl⁻ ions",
-        "The elements no longer exist as atoms — a new ionic lattice forms",
+        "The elements have formed ions in a new compound — a new ionic lattice forms",
         "Na's reactivity came from loose outer electrons, now locked in the lattice",
         "Cl⁻ is a chloride ion, not the toxic Cl₂ molecule",
         "Answer: new bonds → new structure → entirely new properties ✓"
@@ -222,7 +234,7 @@
       "durationInFrames": 1320,
       "caption": "Electron transfer forms an ionic lattice with brand-new properties.",
       "voiceover": {
-        "text": "Now let's explain why sodium chloride behaves nothing like sodium or chlorine. When the two react, the equation is two sodium plus chlorine gives two sodium chloride. Electrons transfer from each sodium atom to a chlorine atom, forming sodium ions and chloride ions. Step two, the elements no longer exist as separate atoms, because a new ionic lattice has formed, a completely different structure. Step three, sodium's violent reactivity came from its loose outer electrons, but those electrons are now locked away in the lattice as part of chloride ions. Step four, that chloride ion is not the toxic chlorine molecule, it's a stable anion. So the conclusion is, new bonds make a new structure, which gives entirely new properties. No trace of the original elements survives."
+        "text": "Why NaCl is so different Sodium explodes in water; chlorine is toxic; NaCl is safe and just dissolves. Explain the difference using bonding. 2Na + Cl₂ → 2NaCl: electrons transfer, forming Na⁺ and Cl⁻ ions The elements have formed ions in a new compound — a new ionic lattice forms Na's reactivity came from loose outer electrons, now locked in the lattice Cl⁻ is a chloride ion, not the toxic Cl₂ molecule Answer: new bonds → new structure → entirely new properties ✓"
       }
     },
     {
@@ -243,19 +255,17 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "A liquid is heated and stays at exactly 78°C until the whole sample boils away. What does this tell you?",
+      "question": "A liquid boils at a steady 78°C at fixed pressure. Does that prove purity?",
       "pausePrompt": "Pause and think it through.",
       "answerSteps": [
-        "Temperature holds at one fixed value while boiling → a flat plateau",
-        "A sharp, fixed boiling point is the signature of a pure substance",
-        "A mixture would boil over a range, not at one steady temperature",
-        "We can't name it from this alone — but it is pure",
-        "Answer: it is a pure substance ✓"
+        "A steady boiling point is consistent with a pure liquid.",
+        "An azeotropic mixture can also boil at a fixed temperature.",
+        "This observation alone neither proves purity nor establishes identity."
       ],
       "durationInFrames": 1110,
-      "caption": "A constant 78°C while boiling = a pure substance.",
+      "caption": "A boiling plateau alone does not prove purity.",
       "voiceover": {
-        "text": "Quick check. A liquid is heated, and its temperature stays at exactly seventy-eight degrees until the entire sample has boiled away. What does that tell you? Pause and think it through. Right, let's check it. Step one, the temperature holds at one fixed value the whole time it's boiling, which is a flat plateau. Step two, a sharp, fixed boiling point is the signature of a pure substance. Step three, a mixture would boil over a range, climbing as it goes, not sitting at one steady value. Step four, we can't name the actual substance from this alone, it might be ethanol, but we know for certain it's pure. The tempting wrong answer was to guess it's water because it boiled at one temperature, but water boils at one hundred, not seventy-eight."
+        "text": "Quick check A liquid boils at a steady 78°C at fixed pressure. Does that prove purity? A steady boiling point is consistent with a pure liquid. An azeotropic mixture can also boil at a fixed temperature. This observation alone neither proves purity nor establishes identity."
       }
     },
     {

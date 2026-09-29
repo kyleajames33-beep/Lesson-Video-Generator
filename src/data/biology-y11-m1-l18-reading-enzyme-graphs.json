@@ -61,7 +61,7 @@
           "text": "Optimum: the highest rate (about 37 °C for most human enzymes)."
         },
         {
-          "text": "Fall: heat breaks the bonds holding the shape; the active site is permanently changed."
+          "text": "Fall: heat breaks the bonds holding the shape; the active site is disrupted."
         }
       ],
       "callout": "Rise: collisions. Peak: optimum. Fall: denaturation.",
@@ -100,12 +100,9 @@
           "rule": "Rise: collisions. Peak: optimum. Fall: denaturation."
         }
       },
-      "durationInFrames": 1371,
-      "revealDelays": {
-        "diagram": 30
-      },
+      "durationInFrames": 1530,
       "voiceover": {
-        "text": "Start with temperature. As the temperature rises, the molecules move faster, so the enzyme and substrate collide more often, and the rate increases. The rate peaks at the optimum, the temperature where the enzyme works fastest. For this enzyme that's forty degrees, and for most human enzymes it's close to thirty seven. Then look how steeply it falls. Past the optimum, the heat breaks the bonds that hold the enzyme's shape. The active site is permanently distorted, the enzyme is denatured, and the rate falls to zero by sixty degrees. So there are three regions to explain, a rise from more collisions, a peak at the optimum, and a fall from denaturation."
+        "text": "Start with temperature. As the temperature rises, the molecules move faster, so the enzyme and substrate collide more often, and the rate increases. The rate peaks at the optimum, the temperature where the enzyme works fastest. For this enzyme that's forty degrees, and this is an illustrative curve, not a universal human-enzyme optimum. Then look how steeply it falls. Past the optimum, the heat breaks the bonds that hold the enzyme's shape. The active site is distorted, the enzyme is denatured, and the rate falls to zero by sixty degrees. So there are three regions to explain, a rise from more collisions, a peak at the optimum, and a fall from denaturation."
       }
     },
     {
@@ -121,10 +118,10 @@
           "text": "Pepsin (stomach) works best near pH 2; most cytoplasmic enzymes near pH 7."
         },
         {
-          "text": "Too acidic or too alkaline disrupts the bonds holding the active site's shape."
+          "text": "pH changes active-site ionisation; extreme pH may disrupt protein structure."
         }
       ],
-      "callout": "Peak: optimum pH. Both sides: the enzyme denatures.",
+      "callout": "Peak: optimum pH. Departures alter ionisation; extreme pH may denature.",
       "caption": "Pepsin peaks near pH 2; a cytoplasmic enzyme peaks near pH 7.",
       "diagram": {
         "type": "diorama",
@@ -165,15 +162,12 @@
             "draw": 293,
             "rule": 997
           },
-          "rule": "Peak: optimum pH. Both sides: denatured."
+          "rule": "pH alters ionisation; extreme pH may denature."
         }
       },
-      "durationInFrames": 1278,
-      "revealDelays": {
-        "diagram": 30
-      },
+      "durationInFrames": 1479,
       "voiceover": {
-        "text": "Next, pH. This graph is a bell shape. Activity is highest at the optimum pH and falls away on both sides. Each enzyme's optimum suits where it works. Pepsin, which digests protein in the acidic stomach, works best near pH two, while most enzymes in the cytoplasm prefer around pH seven. Move too far either side of the optimum, too acidic or too alkaline, and the pH disrupts the bonds that hold the active site's shape. The site is distorted, the substrate no longer fits, and the rate falls. So for pH, the peak is the optimum, and both sides are the enzyme denaturing."
+        "text": "Next, pH. This graph is a bell shape. Activity is highest at the optimum pH and falls away on both sides. Each enzyme's optimum suits where it works. Pepsin, which digests protein in the acidic stomach, works best near pH two, while most enzymes in the cytoplasm prefer around pH seven. Departures from the optimum can change the charge of active-site groups and interfere with binding or catalysis. These ionisation changes can be reversible. At extreme pH, protein structure can also be disrupted by denaturation. So for pH, the peak is the optimum, and the fall can reflect reversible changes in ionisation, with denaturation possible at extreme pH."
       }
     },
     {
@@ -243,7 +237,7 @@
           "text": "Optimum: the temperature or pH at which an enzyme works fastest."
         },
         {
-          "text": "Denaturation: a permanent change in an enzyme's shape, including its active site, so substrate no longer binds."
+          "text": "Denaturation: a disruption of an enzyme's structure, including its active site, so substrate no longer binds."
         },
         {
           "text": "Saturation: every active site is occupied, so more substrate cannot raise the rate."
@@ -255,11 +249,11 @@
           "text": "Plateau: a flat section of a graph where the value stops changing."
         }
       ],
-      "callout": "Temperature and pH falls: denaturation. Substrate plateau: saturation.",
+      "callout": "Temperature decline may involve denaturation; pH changes ionisation; substrate plateau indicates saturation.",
       "caption": "Optimum, denaturation, saturation, rate of reaction, plateau.",
-      "durationInFrames": 1082,
+      "durationInFrames": 1196,
       "voiceover": {
-        "text": "Here are the terms. The optimum is the temperature or pH at which an enzyme works fastest. Denaturation is a permanent change in an enzyme's shape, including its active site, so it can no longer bind its substrate. Saturation is when every active site is occupied, so adding more substrate can't raise the rate. The rate of reaction is how fast substrate is turned into product, usually plotted on the y axis. And a plateau is a flat section of a graph, where the value stops changing."
+        "text": "Here are the terms. The optimum is the temperature or pH at which an enzyme works fastest. Denaturation is a disruption of an enzyme's structure, including its active site, so it can no longer bind its substrate. Saturation is when every active site is occupied, so adding more substrate can't raise the rate. The rate of reaction is how fast substrate is turned into product, usually plotted on the y axis. And a plateau is a flat section of a graph, where the value stops changing."
       }
     },
     {
@@ -271,13 +265,13 @@
       "steps": [
         "0 to 40 °C: molecules move faster, so enzyme and substrate collide more often; more complexes form and the rate rises.",
         "40 °C: the optimum, where the rate is highest.",
-        "40 to 60 °C: heat breaks the bonds holding the enzyme's shape, so the active site is permanently changed.",
+        "40 to 60 °C: heat breaks the bonds holding the enzyme's shape, so the active site is disrupted.",
         "The enzyme is denatured: substrate can no longer bind, so the rate falls to zero by 60 °C ✓"
       ],
       "caption": "Rise: more collisions. 40 °C: optimum. 40–60 °C: denaturation, rate falls to zero.",
-      "durationInFrames": 1336,
+      "durationInFrames": 1479,
       "voiceover": {
-        "text": "Let's analyse a graph properly. An enzyme's rate rises from zero degrees to a peak at forty, then falls to zero by sixty. Explain what's happening in each region. Split it into three. From zero to forty, the molecules move faster, so the enzyme and substrate collide more often, more enzyme substrate complexes form, and the rate rises. At forty degrees the enzyme is at its optimum, so the rate is highest. From forty to sixty, the heat breaks the bonds that hold the enzyme's shape, so the active site is permanently changed. The enzyme is denatured, the substrate can no longer bind, and the rate falls to zero."
+        "text": "Let's analyse a graph properly. An enzyme's rate rises from zero degrees to a peak at forty, then falls to zero by sixty. Explain what's happening in each region. Split it into three. From zero to forty, the molecules move faster, so the enzyme and substrate collide more often, more enzyme substrate complexes form, and the rate rises. At forty degrees the enzyme is at its optimum, so the rate is highest. From forty to sixty, the heat breaks the bonds that hold the enzyme's shape, so the active site is disrupted. The enzyme is denatured, the substrate can no longer bind, and the rate falls to zero."
       }
     },
     {
@@ -289,9 +283,9 @@
       "mistakeTag": "Saturated is not denatured",
       "callout": "Only heat and extreme pH change the active site.",
       "caption": "A substrate plateau is saturation, and cold slows enzymes without denaturing them.",
-      "durationInFrames": 1094,
+      "durationInFrames": 1299,
       "voiceover": {
-        "text": "Two traps. Trap one, saying the substrate graph levels off because the enzyme has denatured. It hasn't. It plateaus because every active site is occupied, which is saturation. The enzyme is perfectly healthy, just working flat out. Only the temperature and pH graphs fall because of denaturation. Trap two, saying low temperatures denature enzymes. They don't. In the cold, the molecules move slowly, so there are fewer collisions and the rate is low, but the active site keeps its shape. Warm it back up, and the activity returns."
+        "text": "Two traps. Trap one, saying the substrate graph levels off because the enzyme has denatured. It hasn't. It plateaus because every active site is occupied, which is saturation. The enzyme is perfectly healthy, just working flat out. Temperature can cause denaturation; pH departures can reversibly change ionisation, with denaturation possible at extreme pH. Trap two, saying low temperatures denature enzymes. They don't. In the cold, the molecules move slowly, so there are fewer collisions and the rate is low, but the active site keeps its shape. Warm it back up, and the activity returns."
       }
     },
     {
@@ -302,13 +296,13 @@
       "pausePrompt": "Pause: which ending is denaturation, and which is saturation?",
       "answerSteps": [
         "(a) Temperature: past the optimum, heat denatures the enzyme.",
-        "(b) pH: either side of the optimum pH, the enzyme denatures.",
+        "(b) pH: departures from optimum alter ionisation; extreme pH may denature.",
         "(c) Substrate concentration: the plateau is saturation; the enzyme is undamaged ✓"
       ],
       "caption": "(a) temperature, (b) pH, (c) substrate concentration.",
-      "durationInFrames": 1105,
+      "durationInFrames": 1209,
       "voiceover": {
-        "text": "Quick check. Match each graph shape to its factor, and explain how it ends. A, it rises to a peak, then falls steeply to zero. B, a symmetrical bell shape around one value. C, it rises, then levels off. Pause, and decide which ending is denaturation and which is saturation. OK. A is temperature. Past the optimum, the heat denatures the enzyme. B is pH. Either side of the optimum pH, the enzyme denatures. And C is substrate concentration. The plateau is saturation, and the enzyme is completely undamaged."
+        "text": "Quick check. Match each graph shape to its factor, and explain how it ends. A, it rises to a peak, then falls steeply to zero. B, a symmetrical bell shape around one value. C, it rises, then levels off. Pause, and decide which ending is denaturation and which is saturation. OK. A is temperature. Past the optimum, the heat denatures the enzyme. B is pH. Departures alter ionisation; extreme pH may denature. And C is substrate concentration. The plateau is saturation, and the enzyme is completely undamaged."
       }
     },
     {
@@ -317,16 +311,16 @@
       "heading": "Lock it in",
       "points": [
         "Temperature: rises with more collisions, peaks at the optimum, then falls steeply as the enzyme denatures.",
-        "pH: a bell shape peaking at the optimum pH; both sides fall as the enzyme denatures.",
+        "pH: a bell shape peaking at the optimum pH; departures alter ionisation; extreme pH may denature.",
         "Substrate concentration: rises, then plateaus when the active sites are saturated.",
         "A plateau is saturation, not denaturation; only more enzyme raises it.",
         "Cold slows enzymes without denaturing them."
       ],
       "finalPrompt": "Any enzyme graph: is the rate limited by collisions, saturation or denaturation?",
       "caption": "Five takeaways: three curves and the reason behind every shape.",
-      "durationInFrames": 1152,
+      "durationInFrames": 1338,
       "voiceover": {
-        "text": "Let's lock it in. First, the temperature curve rises with more collisions, peaks at the optimum, then falls steeply as the enzyme denatures. Second, the pH curve is a bell shape, peaking at the optimum pH, with the enzyme denaturing on both sides. Third, the substrate curve rises, then plateaus when the active sites are saturated. Fourth, a plateau is saturation, not denaturation, and only more enzyme raises it. And fifth, cold slows enzymes down without denaturing them. For any enzyme graph, ask whether the rate is limited by collisions, saturation or denaturation."
+        "text": "Let's lock it in. First, the temperature curve rises with more collisions, peaks at the optimum, then falls steeply as the enzyme denatures. Second, the pH curve is a bell shape, peaking at the optimum pH, with ionisation changes reducing activity and denaturation possible at extreme pH. Third, the substrate curve rises, then plateaus when the active sites are saturated. Fourth, a plateau is saturation, not denaturation, and only more enzyme raises it. And fifth, cold slows enzymes down without denaturing them. For any enzyme graph, ask whether the rate is limited by collisions, saturation or denaturation."
       }
     }
   ]

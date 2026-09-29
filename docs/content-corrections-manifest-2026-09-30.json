@@ -1,0 +1,1585 @@
+{
+  "baseline": "b3796f22c311e30df3778732a9cd254cc5029a22",
+  "findings": [
+    {
+      "id": "A01",
+      "priority": "hold",
+      "lessons": [
+        "biology-y11-m2-l19"
+      ],
+      "scenes": [
+        "concept-design"
+      ],
+      "problem": "Hot-day water conservation is reversed: narration says less water is reclaimed on a hot day and more on a cold day.",
+      "correction": "For dehydration from sweating, explain increased ADH, increased collecting-duct water permeability and increased water reabsorption, producing less, more concentrated urine. Temperature alone does not determine ADH.",
+      "evidence": "https://openstax.org/books/anatomy-and-physiology-2e/pages/26-2-water-balance",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A02",
+      "priority": "hold",
+      "lessons": [
+        "biology-y11-m2-l19"
+      ],
+      "scenes": [
+        "concept-tubule",
+        "worked-example"
+      ],
+      "problem": "Urea is said not to be reabsorbed. This incorrectly treats excretion as meaning no tubular reabsorption.",
+      "correction": "Explain that some filtered urea is reabsorbed and recycled while net urea excretion removes nitrogenous waste. Revise the narration and corresponding diagrams/bullets.",
+      "evidence": "https://open.oregonstate.education/anatomy/chapter/25-3-physiology-of-urine-formation-overview/",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A03",
+      "priority": "hold",
+      "lessons": [
+        "biology-y11-m2-l20"
+      ],
+      "scenes": [
+        "concept-compare",
+        "worked-example"
+      ],
+      "problem": "Dialysis is said to rely on diffusion alone, although the same lesson describes removal of excess water.",
+      "correction": "Distinguish solute diffusion from pressure-driven ultrafiltration of water; describe routine treatment frequency as an example, since regimens vary.",
+      "evidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5056503/",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A04",
+      "priority": "hold",
+      "lessons": [
+        "biology-y11-m2-l12"
+      ],
+      "scenes": [
+        "concept-stem-root",
+        "worked-example"
+      ],
+      "problem": "The phloem is said to carry sugars, not water; absence of dye is overinterpreted as evidence of that claim.",
+      "correction": "Phloem transports sugars dissolved in water. The celery dye traces the xylem pathway in this setup; lack of phloem staining does not establish absence of water transport.",
+      "evidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2949042/",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A05",
+      "priority": "hold",
+      "lessons": [
+        "biology-y11-m2-l25"
+      ],
+      "scenes": [
+        "concept-zones",
+        "concept-enzymes",
+        "worked-example",
+        "quick-check"
+      ],
+      "problem": "40°C is described as posing no immediate danger; 42°C is presented as a universal irreversible enzyme-damage boundary. The lesson also claims fever simply slows all enzymes.",
+      "correction": "Remove reassurance and fixed survival/denaturation thresholds. Explain that risk depends on duration, cause and individual factors; distinguish fever from hyperthermia, and use clearly labelled illustrative tolerance ranges. Severe heat illness can occur around 40°C.",
+      "evidence": "https://www.cdc.gov/niosh/docs/2010-114/default.html",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A06",
+      "priority": "hold",
+      "lessons": [
+        "biology-y11-m1-l05"
+      ],
+      "scenes": [
+        "concept-mini-grid",
+        "worked-example",
+        "summary"
+      ],
+      "problem": "The mapped NESA content explicitly requires cell size = diameter of field of view / number of cells across it. The script teaches direct grid reading and image-size/magnification instead, without the specified equation.",
+      "correction": "Keep the useful existing methods, add a calibrated field-of-view calculation and a question using the NESA equation, and preserve the complete equation in syllabus metadata.",
+      "evidence": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+      "contentItem": "ci5c4a2e52",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A07",
+      "priority": "hold",
+      "lessons": [
+        "biology-y11-m2-l24"
+      ],
+      "scenes": [
+        "concept-data"
+      ],
+      "problem": "The lesson maps to analysis of hormone levels and physiological processes, but the data scene/diagram contains glucose only, with no measured hormone series.",
+      "correction": "Add labelled insulin or another endocrine-hormone time series alongside the physiological response; identify illustrative data as illustrative and analyse the relationship, not merely infer unseen insulin.",
+      "evidence": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa79a477bc",
+      "contentItem": "ci4e8bd96f",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A08",
+      "priority": "hold",
+      "lessons": [
+        "biology-y11-m2-l01"
+      ],
+      "scenes": [
+        "concept-colony",
+        "concept-multi",
+        "quick-check"
+      ],
+      "problem": "Volvox is presented as identical, independent cells without specialisation, and the colony/multicellular distinction is reduced to whether isolated cells die. Volvox carteri has differentiated somatic and reproductive cells; cultured multicellular-organism cells can survive independently under suitable conditions.",
+      "correction": "Choose a clearly defined colonial species/example, explain Volvox as an example on a complexity spectrum where appropriate, and replace the universal separation test with evidence of division of labour and interdependence.",
+      "evidence": "https://pubmed.ncbi.nlm.nih.gov/21680429/",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A09",
+      "priority": "correct",
+      "lessons": [
+        "biology-y11-m2-l03"
+      ],
+      "scenes": [
+        "worked-example"
+      ],
+      "problem": "A tissue is defined as one type of cell, yet the lesson itself calls xylem a tissue. Complex tissues contain multiple cell types.",
+      "correction": "Define a tissue as an organised group of cells working together on related functions; similar cells are common, but a single cell type is not a requirement.",
+      "evidence": "Internal contradiction with the xylem example in this same lesson.",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A10",
+      "priority": "correct",
+      "lessons": [
+        "biology-y11-m1-l07"
+      ],
+      "scenes": [
+        "concept-proteins"
+      ],
+      "problem": "All integral proteins are said to span the whole bilayer; that specifically describes transmembrane proteins.",
+      "correction": "Integral proteins are embedded in the membrane; many span it. Keep channels/carriers as transmembrane examples.",
+      "evidence": "https://openstax.org/books/concepts-biology/pages/3-4-the-cell-membrane",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A11",
+      "priority": "correct",
+      "lessons": [
+        "biology-y11-m1-l17",
+        "biology-y11-m1-l18"
+      ],
+      "scenes": [
+        "concept-factors",
+        "concept-ph",
+        "quick-check"
+      ],
+      "problem": "All activity loss either side of optimum pH is labelled denaturation. Changes in active-site ionisation can reduce activity without permanent unfolding.",
+      "correction": "Distinguish reversible pH effects on charge/binding from denaturation at sufficiently extreme conditions. Do not treat every point on the bell-shaped curve as destroyed enzyme.",
+      "evidence": "https://openstax.org/books/microbiology/pages/8-1-energy-matter-and-enzymes",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A12",
+      "priority": "hold",
+      "lessons": [
+        "biology-y11-m2-l05"
+      ],
+      "scenes": [
+        "worked-example"
+      ],
+      "problem": "Bright light and a warm day are treated as enough information to prove carbon dioxide is limiting. Water, species, leaf temperature, stomatal conductance and actual light-response data are unspecified.",
+      "correction": "Provide explicit controlled conditions and response data demonstrating a CO2-limited plateau, or make the answer conditional. Also qualify the claim that light and CO2 can increase forever without harm.",
+      "evidence": "The lesson's own limiting-factor rule allows multiple factors to cap rate; the question does not identify which one applies.",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A13",
+      "priority": "correct",
+      "lessons": [
+        "biology-y11-m2-l11"
+      ],
+      "scenes": [
+        "worked-example",
+        "concept-fair-test"
+      ],
+      "problem": "The potometer limitation is said to affect both readings equally so the comparison holds, without evidence. The text says time is controlled while comparing six-minute and five-minute trials.",
+      "correction": "Rate normalisation permits unequal observation times; say that explicitly. Water storage/use, leaks and changing conditions may bias treatments differently, so do not assert cancellation.",
+      "evidence": "Internal comparison: 18 mm/6 min and 40 mm/5 min.",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A14",
+      "priority": "hold",
+      "lessons": [
+        "biology-y11-m2-l15"
+      ],
+      "scenes": [
+        "quick-check"
+      ],
+      "problem": "Two isolated blood samples, low in oxygen and high/low in urea, are treated as uniquely identifying liver and kidney. Concentrations alone without paired entering/leaving samples or context do not establish the organs.",
+      "correction": "Supply paired arterial/venous changes through specified candidate organs, with other variables controlled. Ask about the change in urea rather than one absolute concentration.",
+      "evidence": "Underdetermined question: baseline urea, renal status, circulation location and comparative samples are unspecified.",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A15",
+      "priority": "correct",
+      "lessons": [
+        "biology-y11-m3-l03"
+      ],
+      "scenes": [
+        "concept-chemicals"
+      ],
+      "problem": "The antibiotic is said not to cause any mutation. This overstates the useful principle that mutations are not directed toward the organism's needs.",
+      "correction": "Say selection favours resistance variants; mutations are not purposeful. Some antibiotic exposures can increase mutation rates, and resistance can also spread by horizontal gene transfer.",
+      "evidence": "https://www.nature.com/articles/ncomms2607",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A16",
+      "priority": "hold",
+      "lessons": [
+        "biology-y11-m3-l05"
+      ],
+      "scenes": [
+        "concept-tested"
+      ],
+      "problem": "Dating a volcano and evidence of prior occupation are presented as proving continuous accurate oral transmission for tens of thousands of years. The original researchers frame this as a possibility, conditional on the traditions referring to those eruptions.",
+      "correction": "Preserve the value of Cultural Knowledge and the independently dated evidence, but present the continuity inference as a supported possibility, not an independently established fact. Attach primary/community source attribution to named traditions.",
+      "evidence": "https://pursuit.unimelb.edu.au/articles/victoria-s-volcanic-history-confirms-the-state-s-aboriginal-inhabitation-before-34-000-years",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": [
+        "https://pursuit.unimelb.edu.au/articles/victoria-s-volcanic-history-confirms-the-state-s-aboriginal-inhabitation-before-34-000-years"
+      ]
+    },
+    {
+      "id": "A17",
+      "priority": "review",
+      "lessons": [
+        "biology-y11-m3-l13"
+      ],
+      "scenes": [
+        "concept-plants",
+        "concept-animals",
+        "concept-calendar"
+      ],
+      "problem": "Specific Cultural Knowledge claims and named communities have no scene-level source trail. The examples cover Aboriginal Peoples but do not include a distinct Torres Strait Islander example.",
+      "correction": "Link authoritative community sources and primary supporting material. Consider adding a sourced Torres Strait Islander example for breadth; this is an alignment enhancement, not a claim that every NESA example is compulsory.",
+      "evidence": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fad715a0de",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": [
+        "https://anbg.gov.au/gardens/visiting/exploring/aboriginal-trail/",
+        "https://www.anbg.gov.au/apu/plants/macrcomm.html",
+        "https://www.budjbim.com.au/about-us/our-culture/",
+        "https://www.bom.gov.au/resources/indigenous-weather-knowledge/indigenous-culture-and-seasonal-knowledge"
+      ]
+    },
+    {
+      "id": "A18",
+      "priority": "correct",
+      "lessons": [
+        "biology-y11-m3-l23"
+      ],
+      "scenes": [
+        "concept-assumptions"
+      ],
+      "problem": "Incomplete mixing is said always to decrease marked recaptures and overestimate abundance. The direction depends on where/when the second sample is taken.",
+      "correction": "Explain that incomplete mixing biases the marked fraction either upward or downward. If sampling near release overrepresents marks, abundance is underestimated; underrepresentation reverses that direction.",
+      "evidence": "The lesson's correct N = MC/R formula determines the direction once sampling bias is specified.",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A19",
+      "priority": "correct",
+      "lessons": [
+        "biology-y11-m3-l24"
+      ],
+      "scenes": [
+        "hook",
+        "concept-cycle",
+        "worked-example"
+      ],
+      "problem": "Predator peaks are said always to lag prey peaks; a lag alone is then used to assert that prey drives predators, not the reverse.",
+      "correction": "Describe the pattern in the shown data/model, not a universal rule. A lag is consistent with a prey-driven response but does not prove one-way causation; feedback and other factors matter.",
+      "evidence": "The same lesson later acknowledges food-predation interaction; observed lag alone cannot establish causal direction.",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A20",
+      "priority": "review",
+      "lessons": [
+        "biology-y11-m3-l17"
+      ],
+      "scenes": [
+        "concept-tree",
+        "worked-example"
+      ],
+      "problem": "A numerical cytochrome-c table is called real without a sequence accession/source. Phylogenetic inference as a whole is said to assume a molecular clock, which is broader than the simple classroom distance ranking.",
+      "correction": "Source the exact aligned sequences/table or label them illustrative. State the equal-rate assumption for this simplified inference; general phylogenetic methods need not impose a strict molecular clock.",
+      "evidence": "Source/provenance absent from lesson JSON.",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A21",
+      "priority": "correct",
+      "lessons": [
+        "biology-y11-m3-l21"
+      ],
+      "scenes": [
+        "concept-measures"
+      ],
+      "problem": "Diversity is defined only as the number of species, which is species richness; evenness is omitted.",
+      "correction": "Distinguish richness from diversity including relative abundance/evenness, at an appropriate Year 11 level.",
+      "evidence": "https://openstax.org/books/biology-2e/pages/45-6-community-ecology",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A22",
+      "priority": "correct",
+      "lessons": [
+        "biology-y11-m1-l01"
+      ],
+      "scenes": [
+        "concept-how-we-know"
+      ],
+      "problem": "Lack of eukaryotic membrane-bound organelles is overextended to lack of internal membranes in all prokaryotes.",
+      "correction": "Retain the nucleus/organelle distinction; allow internal membranes such as cyanobacterial thylakoids, and label chromosome/size comparisons as typical rather than universal.",
+      "evidence": "https://openstax.org/books/microbiology/pages/8-6-photosynthesis",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A23",
+      "priority": "correct",
+      "lessons": [
+        "biology-y11-m1-l24"
+      ],
+      "scenes": [
+        "concept-combined",
+        "worked-example"
+      ],
+      "problem": "Every gamete is said to be unique, and all four products of every meiosis genetically different. These are expected sources of variation, not mathematical guarantees for every meiosis or comparison.",
+      "correction": "Say meiosis generally produces genetically varied haploid products through these mechanisms; avoid promising every gamete has a unique genotype.",
+      "evidence": "The 2^n combinations calculation counts possible chromosome combinations, not guaranteed distinct outputs of every division.",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A24",
+      "priority": "hold",
+      "lessons": [
+        "biology-y12-m6-l16"
+      ],
+      "scenes": [
+        "worked-example",
+        "misconception",
+        "quick-check",
+        "summary"
+      ],
+      "problem": "The same restriction enzyme is asserted to be the only way to generate ligatable ends. Different enzymes can generate compatible cohesive ends; blunt-end ligation also exists. The quiz does not supply actual cut-end sequences.",
+      "correction": "Teach compatible ends as the requirement, with use of the same enzyme as a simple method. Give actual incompatible overhangs for the quiz, and avoid claiming all restriction enzymes produce sticky ends.",
+      "evidence": "https://www.neb.com/en/tools-and-resources/selection-charts/compatible-cohesive-ends-and-generation-of-new-restriction-sites",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A25",
+      "priority": "hold",
+      "lessons": [
+        "biology-y12-m6-l16"
+      ],
+      "scenes": [
+        "worked-example"
+      ],
+      "problem": "The insulin example cuts the human gene straight from genomic DNA for expression in E. coli, omitting introns and expression design.",
+      "correction": "Use intron-free cDNA or a synthetic coding sequence with suitable regulatory sequences; distinguish the simplified cloning model from historical production of synthetic A/B-chain genes and later proinsulin methods.",
+      "evidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8152450/",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A26",
+      "priority": "hold",
+      "lessons": [
+        "chemistry-y12-m7-l21"
+      ],
+      "scenes": [
+        "concept-mechanism",
+        "misconception",
+        "summary"
+      ],
+      "problem": "Any C=C remaining in an addition-polymer repeat unit is called impossible. Addition polymerisation of dienes can retain unsaturation, as in polybutadiene.",
+      "correction": "Limit the rule to the single vinyl double bond consumed in the displayed monoalkene examples; do not generalise it to all addition polymers.",
+      "evidence": "https://openstax.org/books/organic-chemistry/pages/14-6-diene-polymers-natural-and-synthetic-rubbers",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A27",
+      "priority": "hold",
+      "lessons": [
+        "chemistry-y12-m6-l2"
+      ],
+      "scenes": [
+        "quick-check"
+      ],
+      "problem": "Phenolphthalein at high pH is explicitly said never to return to colourless. Alkaline fading is a documented reaction, with observed colour dependent on conditions and time.",
+      "correction": "Use a less strongly alkaline comparison, such as pH 10.5, or specify observation time/conditions and explain fading. Remove the universal denial.",
+      "evidence": "https://pubs.acs.org/doi/10.1021/ed066p725",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    },
+    {
+      "id": "A28",
+      "priority": "review",
+      "lessons": [
+        "biology-y11-m1-l15",
+        "biology-y11-m1-l16",
+        "biology-y11-m1-l17"
+      ],
+      "scenes": [
+        "concept-what",
+        "concept-lock-key",
+        "concept-fair-test"
+      ],
+      "problem": "Specificity is repeatedly reduced to exactly one substrate, and liver/potato catalase is given a fixed 37°C optimum without source or method dependence.",
+      "correction": "Explain specificity for particular substrates/reaction types; label the enzyme-temperature graph as illustrative and investigate the actual optimum for the chosen enzyme preparation.",
+      "evidence": "https://openstax.org/books/biology-2e/pages/6-5-enzymes",
+      "status": "Implemented in lesson content; structural checks pass; audio/alignment and rendered review still pending.",
+      "additionalSources": []
+    }
+  ],
+  "changedNarrationScenes": [
+    {
+      "lesson": "biology-y11-m2-l19",
+      "scene": "concept-filtration",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l19",
+      "scene": "concept-tubule",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l19",
+      "scene": "concept-design",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l19",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l19",
+      "scene": "misconception",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l20",
+      "scene": "hook",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l20",
+      "scene": "concept-dialysis",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l20",
+      "scene": "concept-compare",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l20",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l20",
+      "scene": "summary",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l12",
+      "scene": "concept-stem-root",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l12",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l03",
+      "scene": "concept-ladder",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l03",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l03",
+      "scene": "misconception",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l05",
+      "scene": "concept-mini-grid",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l05",
+      "scene": "concept-field-of-view",
+      "reason": "new scene",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l05",
+      "scene": "summary",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l25",
+      "scene": "hook",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l25",
+      "scene": "concept-zones",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l25",
+      "scene": "definition",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l25",
+      "scene": "concept-enzymes",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l25",
+      "scene": "concept-other",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l25",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l25",
+      "scene": "misconception",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l25",
+      "scene": "quick-check",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l25",
+      "scene": "summary",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l24",
+      "scene": "hook",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l24",
+      "scene": "concept-data",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l24",
+      "scene": "concept-hormone-data",
+      "reason": "new scene",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l24",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l24",
+      "scene": "summary",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l01",
+      "scene": "hook",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l01",
+      "scene": "concept-colony",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l01",
+      "scene": "concept-multi",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l01",
+      "scene": "definition",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l01",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l01",
+      "scene": "misconception",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l01",
+      "scene": "quick-check",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l01",
+      "scene": "summary",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l07",
+      "scene": "concept-proteins",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l17",
+      "scene": "concept-factors",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l17",
+      "scene": "concept-fair-test",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l17",
+      "scene": "concept-reliability",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l17",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l17",
+      "scene": "quick-check",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l18",
+      "scene": "concept-temperature",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l18",
+      "scene": "concept-ph",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l18",
+      "scene": "definition",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l18",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l18",
+      "scene": "quick-check",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l15",
+      "scene": "concept-what",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l16",
+      "scene": "concept-lock-key",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l16",
+      "scene": "quick-check",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l05",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l11",
+      "scene": "concept-fair-test",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l11",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m2-l15",
+      "scene": "quick-check",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l03",
+      "scene": "concept-chemicals",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l05",
+      "scene": "concept-tested",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l05",
+      "scene": "summary",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l23",
+      "scene": "concept-model",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l23",
+      "scene": "concept-assumptions",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l23",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l24",
+      "scene": "hook",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l24",
+      "scene": "concept-cycle",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l24",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l24",
+      "scene": "summary",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l17",
+      "scene": "concept-tree",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l17",
+      "scene": "concept-limits",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l17",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l17",
+      "scene": "summary",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l21",
+      "scene": "concept-measures",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l01",
+      "scene": "concept-dividing-line",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l01",
+      "scene": "concept-feature-by-feature",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l01",
+      "scene": "concept-how-we-know",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l01",
+      "scene": "summary",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l24",
+      "scene": "hook",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l24",
+      "scene": "concept-variation",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l24",
+      "scene": "concept-combined",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l24",
+      "scene": "definition",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l24",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l24",
+      "scene": "misconception",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m1-l24",
+      "scene": "summary",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y12-m6-l16",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y12-m6-l16",
+      "scene": "misconception",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y12-m6-l16",
+      "scene": "quick-check",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y12-m6-l16",
+      "scene": "summary",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "chemistry-y12-m7-l21",
+      "scene": "concept-mechanism",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "chemistry-y12-m7-l21",
+      "scene": "definition",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "chemistry-y12-m7-l21",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "chemistry-y12-m7-l21",
+      "scene": "misconception",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "chemistry-y12-m7-l21",
+      "scene": "summary",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "chemistry-y12-m6-l2",
+      "scene": "quick-check",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l13",
+      "scene": "hook",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l13",
+      "scene": "concept-plants",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l13",
+      "scene": "concept-animals",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l13",
+      "scene": "concept-calendar",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l13",
+      "scene": "worked-example",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l13",
+      "scene": "misconception",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l13",
+      "scene": "quick-check",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    },
+    {
+      "lesson": "biology-y11-m3-l13",
+      "scene": "summary",
+      "reason": "narration changed",
+      "status": "regenerate audio and alignment; review reveals and rendered frames"
+    }
+  ],
+  "timingNote": "Provisional reading-time estimates never shorten existing scenes. Changed audio links, captions and narration-derived reveal offsets are cleared. Diagram-specific frame beats remain provisional and must be realigned after final voice generation. No render/audio sign-off.",
+  "changedBiologyNarrationScenes": [
+    {
+      "lessonId": "biology-y11-m1-l24-meiosis",
+      "sceneId": "hook",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l24-meiosis",
+      "sceneId": "concept-variation",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l24-meiosis",
+      "sceneId": "concept-combined",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l24-meiosis",
+      "sceneId": "definition",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l24-meiosis",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l24-meiosis",
+      "sceneId": "misconception",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l24-meiosis",
+      "sceneId": "summary",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l05-conditions-for-photosynthesis",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l11-measuring-transpiration-rate",
+      "sceneId": "concept-fair-test",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l11-measuring-transpiration-rate",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l03-from-organelles-to-systems",
+      "sceneId": "concept-ladder",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l03-from-organelles-to-systems",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l03-from-organelles-to-systems",
+      "sceneId": "misconception",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l17-relationships-from-sequences",
+      "sceneId": "concept-tree",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l17-relationships-from-sequences",
+      "sceneId": "concept-limits",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l17-relationships-from-sequences",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l17-relationships-from-sequences",
+      "sceneId": "summary",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l19-the-nephron",
+      "sceneId": "concept-filtration",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l19-the-nephron",
+      "sceneId": "concept-tubule",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l19-the-nephron",
+      "sceneId": "concept-design",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l19-the-nephron",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l19-the-nephron",
+      "sceneId": "misconception",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l01-levels-of-cellular-organisation",
+      "sceneId": "hook",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l01-levels-of-cellular-organisation",
+      "sceneId": "concept-colony",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l01-levels-of-cellular-organisation",
+      "sceneId": "concept-multi",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l01-levels-of-cellular-organisation",
+      "sceneId": "definition",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l01-levels-of-cellular-organisation",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l01-levels-of-cellular-organisation",
+      "sceneId": "misconception",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l01-levels-of-cellular-organisation",
+      "sceneId": "quick-check",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l01-levels-of-cellular-organisation",
+      "sceneId": "summary",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l24-relationships-between-organisms",
+      "sceneId": "hook",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l24-relationships-between-organisms",
+      "sceneId": "concept-cycle",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l24-relationships-between-organisms",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l24-relationships-between-organisms",
+      "sceneId": "summary",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l20-renal-dialysis",
+      "sceneId": "hook",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l20-renal-dialysis",
+      "sceneId": "concept-dialysis",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l20-renal-dialysis",
+      "sceneId": "concept-compare",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l20-renal-dialysis",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l20-renal-dialysis",
+      "sceneId": "summary",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l23-mark-release-recapture",
+      "sceneId": "concept-model",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l23-mark-release-recapture",
+      "sceneId": "concept-assumptions",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l23-mark-release-recapture",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l25-optimal-range-tolerance-limits",
+      "sceneId": "hook",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l25-optimal-range-tolerance-limits",
+      "sceneId": "concept-zones",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l25-optimal-range-tolerance-limits",
+      "sceneId": "definition",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l25-optimal-range-tolerance-limits",
+      "sceneId": "concept-enzymes",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l25-optimal-range-tolerance-limits",
+      "sceneId": "concept-other",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l25-optimal-range-tolerance-limits",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l25-optimal-range-tolerance-limits",
+      "sceneId": "misconception",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l25-optimal-range-tolerance-limits",
+      "sceneId": "quick-check",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l25-optimal-range-tolerance-limits",
+      "sceneId": "summary",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l18-reading-enzyme-graphs",
+      "sceneId": "concept-temperature",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l18-reading-enzyme-graphs",
+      "sceneId": "concept-ph",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l18-reading-enzyme-graphs",
+      "sceneId": "definition",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l18-reading-enzyme-graphs",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l18-reading-enzyme-graphs",
+      "sceneId": "misconception",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l18-reading-enzyme-graphs",
+      "sceneId": "quick-check",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l18-reading-enzyme-graphs",
+      "sceneId": "summary",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l16-enzyme-models",
+      "sceneId": "hook",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l16-enzyme-models",
+      "sceneId": "concept-lock-key",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l16-enzyme-models",
+      "sceneId": "quick-check",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y12-m6-l16-recombinant-dna-transgenic-organisms",
+      "sceneId": "hook",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y12-m6-l16-recombinant-dna-transgenic-organisms",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y12-m6-l16-recombinant-dna-transgenic-organisms",
+      "sceneId": "misconception",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y12-m6-l16-recombinant-dna-transgenic-organisms",
+      "sceneId": "quick-check",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y12-m6-l16-recombinant-dna-transgenic-organisms",
+      "sceneId": "summary",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l21-what-shapes-a-community",
+      "sceneId": "concept-measures",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l24-blood-sugar-stress-diabetes",
+      "sceneId": "hook",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l24-blood-sugar-stress-diabetes",
+      "sceneId": "concept-data",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l24-blood-sugar-stress-diabetes",
+      "sceneId": "concept-hormone-data",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l24-blood-sugar-stress-diabetes",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l24-blood-sugar-stress-diabetes",
+      "sceneId": "summary",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l17-enzyme-activity-practical",
+      "sceneId": "concept-factors",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l17-enzyme-activity-practical",
+      "sceneId": "concept-fair-test",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l17-enzyme-activity-practical",
+      "sceneId": "concept-reliability",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l17-enzyme-activity-practical",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l17-enzyme-activity-practical",
+      "sceneId": "quick-check",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l05-using-the-microscope",
+      "sceneId": "concept-mini-grid",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l05-using-the-microscope",
+      "sceneId": "concept-field-of-view",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l05-using-the-microscope",
+      "sceneId": "summary",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l15-enzymes-biological-catalysts",
+      "sceneId": "concept-what",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l12-inside-leaf-stem-and-root",
+      "sceneId": "concept-stem-root",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l12-inside-leaf-stem-and-root",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l13-first-nations-use-of-adaptations",
+      "sceneId": "hook",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l13-first-nations-use-of-adaptations",
+      "sceneId": "concept-plants",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l13-first-nations-use-of-adaptations",
+      "sceneId": "concept-animals",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l13-first-nations-use-of-adaptations",
+      "sceneId": "concept-calendar",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l13-first-nations-use-of-adaptations",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l13-first-nations-use-of-adaptations",
+      "sceneId": "misconception",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l13-first-nations-use-of-adaptations",
+      "sceneId": "quick-check",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l13-first-nations-use-of-adaptations",
+      "sceneId": "summary",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l03-human-induced-pressures",
+      "sceneId": "concept-chemicals",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l01-prokaryotic-vs-eukaryotic-cells",
+      "sceneId": "concept-dividing-line",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l01-prokaryotic-vs-eukaryotic-cells",
+      "sceneId": "concept-feature-by-feature",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l01-prokaryotic-vs-eukaryotic-cells",
+      "sceneId": "concept-how-we-know",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l01-prokaryotic-vs-eukaryotic-cells",
+      "sceneId": "worked-example",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l01-prokaryotic-vs-eukaryotic-cells",
+      "sceneId": "summary",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m2-l15-blood-through-the-organs",
+      "sceneId": "quick-check",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m1-l07-fluid-mosaic-membrane",
+      "sceneId": "concept-proteins",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l05-megafauna-aboriginal-evidence",
+      "sceneId": "concept-tested",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    },
+    {
+      "lessonId": "biology-y11-m3-l05-megafauna-aboriginal-evidence",
+      "sceneId": "summary",
+      "status": "regenerate audio/captions and review reveal alignment before rendering"
+    }
+  ]
+}

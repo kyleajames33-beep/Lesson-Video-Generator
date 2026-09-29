@@ -8,11 +8,15 @@
   "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
   "syllabusModule": "Module 8: Applying Chemical Ideas",
   "syllabusDotPoints": [
-    "conduct qualitative investigations using flame tests, precipitation and complexation reactions to test for the presence of ions in aqueous solution",
-    "use precipitation and net ionic equations to identify ions present in a sample"
+    "Module 8: qualitative inorganic ion analysis by precipitation and complexation. (Audit mapping paraphrase, not an official quotation.)"
   ],
   "moduleLessonCount": 16,
-  "nesaOutcomes": ["CH12-15", "CH11/12-2", "CH11/12-4", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-15",
+    "CH11/12-2",
+    "CH11/12-4",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "How are the ions present in the environment identified and measured?",
   "lessonIntent": "Students can identify cations and anions from characteristic precipitates, gases and flame colours, write net ionic equations, and treat single tests as evidence rather than proof.",
   "examSkill": "Match each observation to its ion, write the net ionic equation by stripping spectators, and combine tests to build a defensible ion profile rather than over-claiming from one result.",
@@ -50,16 +54,22 @@
       "heading": "Qualitative versus quantitative",
       "body": "Qualitative analysis asks what is present. It gives evidence for identity, never an amount.",
       "bullets": [
-        {"text": "A positive test matches a known pattern for one specific ion."},
-        {"text": "It tells you identity, not concentration or mass."},
-        {"text": "One test rarely proves it; consistent tests build the case."}
+        {
+          "text": "A positive test matches a known pattern for one specific ion."
+        },
+        {
+          "text": "It tells you identity, not concentration or mass."
+        },
+        {
+          "text": "One test rarely proves it; consistent tests build the case."
+        }
       ],
       "secondary": "A white precipitate with silver nitrate says chloride may be present. It can't tell 0.001 from 1.0 mol L⁻¹ without measurement.",
       "callout": "Identity, not amount, and never from a single test.",
-      "durationInFrames": 1050,
+      "durationInFrames": 1736,
       "caption": "Qualitative = which ion is present; it gives identity, not amount.",
       "voiceover": {
-        "text": "First, get the framing right, because the exam tests it directly. Qualitative analysis answers what is in this sample, not how much. A positive test gives you evidence for identity, where the observation matches a known pattern for one specific ion. Compare that to quantitative analysis, which we did with titration and gravimetry, where you're after an amount. Two important habits. First, a single test rarely proves an identity on its own, so you stack consistent results to build confidence. And second, qualitative tells you nothing about concentration. A white precipitate with silver nitrate says chloride might be here, but whether it's a trace or a flood, you can't say without measuring."
+        "text": "First, get the framing right, because the exam tests it directly. Qualitative analysis answers what is in this sample, not how much. A positive test gives you evidence for identity, where the observation matches a known pattern for one specific ion. Compare that to quantitative analysis, which we did with titration and gravimetry, where you're after an amount. Two important habits. First, a single test rarely proves an identity on its own, so you stack consistent results to build confidence. And second, qualitative tells you nothing about concentration. A white precipitate with silver nitrate says chloride might be here, but whether it's a trace or a flood, you can't say without measuring. Use separate aliquots, appropriate acidification and confirmatory tests; a precipitate colour alone is not unique identification."
       },
       "diagram": {
         "type": "diorama",
@@ -68,24 +78,58 @@
           "cards": [
             {
               "ask": "What is it?",
-              "icons": [{"name": "testTube", "label": "+ AgNO₃"}],
+              "icons": [
+                {
+                  "name": "testTube",
+                  "label": "+ AgNO₃"
+                }
+              ],
               "title": "Qualitative",
-              "lines": ["identity", "Cl⁻ may be present"]
+              "lines": [
+                "identity",
+                "Cl⁻ may be present"
+              ]
             },
             {
               "ask": "How much?",
-              "icons": [{"name": "burette"}, {"name": "balance", "load": "crucible"}],
+              "icons": [
+                {
+                  "name": "burette"
+                },
+                {
+                  "name": "balance",
+                  "load": "crucible"
+                }
+              ],
               "title": "Quantitative",
-              "lines": ["amount", "titration, gravimetry"]
+              "lines": [
+                "amount",
+                "titration, gravimetry"
+              ]
             },
             {
-              "icons": [{"name": "evidenceStack"}],
+              "icons": [
+                {
+                  "name": "evidenceStack"
+                }
+              ],
               "title": "Build the case",
-              "lines": ["one test rarely", "proves it"]
+              "lines": [
+                "one test rarely",
+                "proves it"
+              ]
             }
           ],
-          "footer": {"text": "Identity, not amount, and never from a single test.", "amber": true},
-          "beats": [47, 345, 498, 669]
+          "footer": {
+            "text": "Identity, not amount, and never from a single test.",
+            "amber": true
+          },
+          "beats": [
+            47,
+            345,
+            498,
+            669
+          ]
         }
       }
     },
@@ -95,9 +139,15 @@
       "heading": "Net ionic equations",
       "body": "Write the full ionic equation, then strip out the spectator ions to show what actually changes.",
       "bullets": [
-        {"text": "Spectators appear identically on both sides; cross them out."},
-        {"text": "Chloride test: Ag⁺(aq) + Cl⁻(aq) → AgCl(s)."},
-        {"text": "Sulfate test: Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)."}
+        {
+          "text": "Spectators appear identically on both sides; cross them out."
+        },
+        {
+          "text": "Chloride test: Ag⁺(aq) + Cl⁻(aq) → AgCl(s)."
+        },
+        {
+          "text": "Sulfate test: Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)."
+        }
       ],
       "secondary": "Spectators like Na⁺ and NO₃⁻ take no part in the precipitation, so they don't belong in the net ionic equation.",
       "callout": "Only the species that change survive the cut.",
@@ -106,7 +156,21 @@
       "voiceover": {
         "text": "These tests make far more sense written at the ionic level, because the net ionic equation shows the actual chemistry, not just the labels on the bottles. Take the chloride test. Silver nitrate plus sodium chloride. Write everything that's dissolved as separate ions, and you'll see sodium and nitrate sitting unchanged on both sides. Those are spectators, and you cross them out. What's left is the net ionic equation, silver ion plus chloride ion gives solid silver chloride. Same logic for sulfate, barium ion plus sulfate ion gives solid barium sulfate. The rule is simple. Only the species that actually change chemically survive into the net ionic equation."
       },
-      "diagram": {"type": "diorama", "kind": "chem12m8NetIonic", "props": {"beats": [190, 280, 370, 470, 520, 670, 790]}}
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8NetIonic",
+        "props": {
+          "beats": [
+            190,
+            280,
+            370,
+            470,
+            520,
+            670,
+            790
+          ]
+        }
+      }
     },
     {
       "id": "definition",
@@ -116,12 +180,31 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8TubeTests",
-        "props": {"mode": "anion", "beats": [80, 150, 220, 290, 375, 430, 740, 790, 850]}
+        "props": {
+          "mode": "anion",
+          "beats": [
+            80,
+            150,
+            220,
+            290,
+            375,
+            430,
+            740,
+            790,
+            850
+          ]
+        }
       },
       "bullets": [
-        {"text": "Chloride: add AgNO₃, get a white precipitate of AgCl."},
-        {"text": "Sulfate: add BaCl₂, get a white precipitate of BaSO₄."},
-        {"text": "Carbonate: add dilute acid, get effervescence of CO₂."}
+        {
+          "text": "Chloride: add AgNO₃, get a white precipitate of AgCl."
+        },
+        {
+          "text": "Sulfate: add BaCl₂, get a white precipitate of BaSO₄."
+        },
+        {
+          "text": "Carbonate: add dilute acid, get effervescence of CO₂."
+        }
       ],
       "secondary": "Two white precipitates look alike, so the discriminator matters: BaSO₄ stays solid in acid, while BaCO₃ dissolves with fizzing.",
       "callout": "Not every test is a precipitate; carbonate fizzes.",
@@ -137,9 +220,15 @@
       "heading": "The cation tests",
       "body": "Add sodium hydroxide and read the colour of the precipitate that forms.",
       "bullets": [
-        {"text": "Fe²⁺ gives a green precipitate; Fe³⁺ gives red-brown."},
-        {"text": "Cu²⁺ gives a pale blue precipitate of Cu(OH)₂."},
-        {"text": "NH₄⁺ gives pungent ammonia gas when warmed."}
+        {
+          "text": "Fe²⁺ gives a green precipitate; Fe³⁺ gives red-brown."
+        },
+        {
+          "text": "Cu²⁺ gives a pale blue precipitate of Cu(OH)₂."
+        },
+        {
+          "text": "NH₄⁺ gives pungent ammonia gas when warmed."
+        }
       ],
       "secondary": "Ca²⁺ gives a white precipitate with sodium carbonate. Combining a flame colour with the precipitate colour makes the call much stronger.",
       "callout": "Colour of the hydroxide tells you the metal.",
@@ -151,7 +240,24 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8TubeTests",
-        "props": {"mode": "cation", "beats": [150, 180, 205, 240, 265, 300, 365, 490, 600, 660, 745, 800, 870]}
+        "props": {
+          "mode": "cation",
+          "beats": [
+            150,
+            180,
+            205,
+            240,
+            265,
+            300,
+            365,
+            490,
+            600,
+            660,
+            745,
+            800,
+            870
+          ]
+        }
       }
     },
     {
@@ -160,9 +266,15 @@
       "heading": "Flame tests as support",
       "body": "Excited metal ions emit characteristic colours, but treat the colour as supporting evidence only.",
       "bullets": [
-        {"text": "Li⁺ crimson, Na⁺ yellow, K⁺ lilac."},
-        {"text": "Ca²⁺ brick red, Ba²⁺ pale green, Cu²⁺ blue-green."},
-        {"text": "Use a clean nichrome wire to avoid carrying over colour."}
+        {
+          "text": "Li⁺ crimson, Na⁺ yellow, K⁺ lilac."
+        },
+        {
+          "text": "Ca²⁺ brick red, Ba²⁺ pale green, Cu²⁺ blue-green."
+        },
+        {
+          "text": "Use a clean nichrome wire to avoid carrying over colour."
+        }
       ],
       "secondary": "Sodium's bright yellow can swamp weaker colours, so a flame test alone is never definitive proof of identity.",
       "callout": "Fast clue, not final proof.",
@@ -174,26 +286,39 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8FlameTests",
-        "props": {"beats": [100, 360, 390, 410, 430, 465, 495, 590, 665, 800]}
+        "props": {
+          "beats": [
+            100,
+            360,
+            390,
+            410,
+            430,
+            465,
+            495,
+            590,
+            665,
+            800
+          ]
+        }
       }
     },
     {
       "id": "worked-example",
       "type": "workedExample",
       "heading": "Two tests, two ions",
-      "question": "A solution gives a white precipitate with AgNO₃ and a pale blue precipitate with NaOH. Identify the ions and write the net ionic equation for each positive test.",
+      "question": "Separate aliquots give (1) a white precipitate after dilute HNO₃ then AgNO₃, soluble in dilute NH₃; (2) a pale blue precipitate with NaOH. Identify the ions in the common-ion candidate set.",
       "coachNote": "Match each observation to its known pattern, then strip spectators.",
       "steps": [
-        "White precipitate with AgNO₃ → chloride present",
-        "Net ionic: Ag⁺(aq) + Cl⁻(aq) → AgCl(s)",
-        "Pale blue precipitate with NaOH → copper(II) present",
-        "Net ionic: Cu²⁺(aq) + 2OH⁻(aq) → Cu(OH)₂(s)",
-        "Answer: the ions are Cl⁻ and Cu²⁺ ✓"
+        "Acidify the halide aliquot with dilute HNO₃, then add AgNO₃.",
+        "White precipitate soluble in dilute NH₃ supports AgCl: Cl⁻.",
+        "Ag⁺(aq) + Cl⁻(aq) → AgCl(s).",
+        "Separate aliquot: pale blue Cu(OH)₂ supports Cu²⁺.",
+        "Cu²⁺(aq) + 2OH⁻(aq) → Cu(OH)₂(s)."
       ],
       "durationInFrames": 1350,
-      "caption": "White AgCl → Cl⁻; pale blue Cu(OH)₂ → Cu²⁺.",
+      "caption": "Use separate aliquots and remove interfering ions before identification.",
       "voiceover": {
-        "text": "Let's put it together. A solution gives a white precipitate with silver nitrate, and a pale blue precipitate with sodium hydroxide. Identify the ions and give the net ionic equation for each positive test. Step one, the white precipitate with silver nitrate. That matches chloride. Step two, the equation, silver ion plus chloride ion gives solid silver chloride, spectators stripped out. Step three, the pale blue precipitate with sodium hydroxide. That's the signature of copper two. Step four, its equation, copper two ion plus two hydroxide ions gives solid copper hydroxide. So the answer is chloride and copper two. Two independent observations, each matched to its pattern, each written as a clean net ionic equation."
+        "text": "Use separate sample aliquots. Acidify the halide-test aliquot with dilute nitric acid before adding silver nitrate. A white precipitate that dissolves in dilute ammonia supports chloride in the stated common-ion candidate set. Silver ions plus chloride ions form silver chloride solid. A separate aliquot gives a pale blue precipitate with sodium hydroxide, supporting copper two-plus. Copper ions plus two hydroxide ions form copper hydroxide. Acidification removes interfering carbonate or hydroxide, and using separate aliquots avoids introducing chloride into the chloride test."
       }
     },
     {
@@ -214,19 +339,18 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "A colourless solution gives a white precipitate with NaOH that is insoluble in excess, and a white precipitate with BaCl₂. Identify the cation and anion, with equations.",
+      "question": "Cation candidates: Mg²⁺, Al³⁺, Zn²⁺. A white NaOH precipitate is insoluble in excess. A separate acidified aliquot gives a white BaCl₂ precipitate persistent in dilute acid. Identify the ions.",
       "pausePrompt": "Pause and work it through.",
       "answerSteps": [
-        "White precipitate with NaOH, insoluble in excess → Mg²⁺",
-        "Mg²⁺(aq) + 2OH⁻(aq) → Mg(OH)₂(s)",
-        "White precipitate with BaCl₂ → SO₄²⁻",
-        "Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)",
-        "Answer: the ions are Mg²⁺ and SO₄²⁻ ✓"
+        "Within the stated candidates, insoluble white hydroxide supports Mg²⁺.",
+        "Mg²⁺(aq) + 2OH⁻(aq) → Mg(OH)₂(s).",
+        "Acid-persistent white barium precipitate supports SO₄²⁻.",
+        "Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)."
       ],
       "durationInFrames": 1230,
-      "caption": "Mg(OH)₂ white, insoluble in excess → Mg²⁺; BaSO₄ → SO₄²⁻.",
+      "caption": "State the candidate set and control carbonate interference.",
       "voiceover": {
-        "text": "Quick check. A colourless solution gives a white precipitate with sodium hydroxide that stays insoluble in excess, and a white precipitate with barium chloride. Identify the cation and anion, with equations. Pause and work it through. Right, let's check it. Step one, the white precipitate with sodium hydroxide, insoluble in excess, and colourless. That points to magnesium. Step two, its equation, magnesium ion plus two hydroxide ions gives solid magnesium hydroxide. Step three, the white precipitate with barium chloride is the sulfate test. Step four, barium ion plus sulfate ion gives solid barium sulfate. So the ions are magnesium and sulfate. Two tests, two ions, two clean equations."
+        "text": "The cation candidates are magnesium, aluminium and zinc only. A white hydroxide precipitate insoluble in excess sodium hydroxide identifies magnesium within that set. Magnesium two-plus plus two hydroxide gives solid magnesium hydroxide. In a separate aliquot, a white precipitate with barium chloride that persists after acidification supports sulfate. Barium two-plus plus sulfate forms barium sulfate. These observations are diagnostic within the stated candidate set and controlled test conditions, not a universal identification of every possible ion."
       }
     },
     {
@@ -247,5 +371,6 @@
         "text": "Let's lock it in. Five things to take away. First, qualitative analysis tells you which ions are present, never how much. Second, a net ionic equation keeps only the species that change, so strip the spectators. Third, the anion tests, chloride gives white silver chloride, sulfate gives white barium sulfate, and carbonate fizzes off carbon dioxide. Fourth, with sodium hydroxide, iron two is green, iron three is red-brown, and copper two is pale blue. And fifth, flame tests support your conclusion, but you combine several tests for a confident identification. Make your tests agree, and strip the spectators. See you next lesson."
       }
     }
-  ]
+  ],
+  "productionNotes": "2017 syllabus mapping checked: Module 8: qualitative inorganic ion analysis by precipitation and complexation."
 }

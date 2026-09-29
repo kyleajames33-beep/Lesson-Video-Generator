@@ -8,11 +8,15 @@
   "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
   "syllabusModule": "Module 8: Applying Chemical Ideas",
   "syllabusDotPoints": [
-    "conduct practical investigations to analyse the concentration of an unknown acid or base by titration",
-    "investigate the use of indicators and pH to determine the equivalence point of acid-base reactions"
+    "Revision of Module 6 acid–base titration methods; supports quantitative analysis but is not the required Module 8 precipitation-titration teaching. (Audit mapping paraphrase, not an official quotation.)"
   ],
   "moduleLessonCount": 16,
-  "nesaOutcomes": ["CH12-15", "CH11/12-4", "CH11/12-6", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-15",
+    "CH11/12-4",
+    "CH11/12-6",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "How are the ions present in the environment identified and measured?",
   "lessonIntent": "Students can average concordant titres, run the four-step mole pathway for any ratio, choose an indicator from the equivalence pH, and solve a back titration by subtracting the excess.",
   "examSkill": "Reject the rough titre; find moles of the standard with n = cV; apply the balanced-equation ratio; for a back titration, subtract excess from initial to get the amount that actually reacted.",
@@ -50,9 +54,15 @@
       "heading": "What a titration actually does",
       "body": "You react an unknown against a standard of known concentration, then let stoichiometry count the moles.",
       "bullets": [
-        {"text": "The standard goes in the burette; the measured aliquot sits in the flask."},
-        {"text": "An indicator flags the endpoint, when reaction is complete."},
-        {"text": "The first run is a rough titre; repeat for concordant results."}
+        {
+          "text": "The standard goes in the burette; the measured aliquot sits in the flask."
+        },
+        {
+          "text": "An indicator flags the endpoint, when reaction is complete."
+        },
+        {
+          "text": "The first run is a rough titre; repeat for concordant results."
+        }
       ],
       "secondary": "Concordant titres agree within 0.10 mL. You average only those, never the rough run, for an accurate volume.",
       "callout": "Precision lives in the concordant titres, not one reading.",
@@ -70,10 +80,18 @@
       "type": "definition",
       "heading": "The words the exam tests",
       "bullets": [
-        {"text": "Standard solution: a titrant of accurately known concentration."},
-        {"text": "Equivalence point: where acid and base have stoichiometrically reacted."},
-        {"text": "Endpoint: where the indicator changes colour; should match equivalence."},
-        {"text": "Primary standard: a pure, stable solid like Na₂CO₃ used to fix concentration."}
+        {
+          "text": "Standard solution: a titrant of accurately known concentration."
+        },
+        {
+          "text": "Equivalence point: where acid and base have stoichiometrically reacted."
+        },
+        {
+          "text": "Endpoint: where the indicator changes colour; should match equivalence."
+        },
+        {
+          "text": "Primary standard: a pure, stable solid like Na₂CO₃ used to fix concentration."
+        }
       ],
       "callout": "Endpoint is what you see; equivalence is what's true.",
       "durationInFrames": 960,
@@ -88,9 +106,15 @@
       "heading": "The four-step calculation",
       "body": "Convert the titre to litres, find moles of the standard, apply the real ratio, then divide by the unknown's volume.",
       "bullets": [
-        {"text": "Moles of the standard = c × V, using the average titre in litres."},
-        {"text": "Apply the mole ratio straight from the balanced equation."},
-        {"text": "Unknown concentration = its moles ÷ its aliquot volume."}
+        {
+          "text": "Moles of the standard = c × V, using the average titre in litres."
+        },
+        {
+          "text": "Apply the mole ratio straight from the balanced equation."
+        },
+        {
+          "text": "Unknown concentration = its moles ÷ its aliquot volume."
+        }
       ],
       "secondary": "The c₁V₁ = c₂V₂ shortcut only works for a 1:1 reaction. Diprotic H₂SO₄ needs twice as much base.",
       "callout": "Read the ratio off the equation, never assume one to one.",
@@ -105,14 +129,26 @@
         "props": {
           "layout": "stairs",
           "stages": [
-            {"label": "Average concordant titre, in litres", "formula": "V = titre ÷ 1000", "beat": 42},
-            {"label": "Moles of the standard", "formula": "n = c × V", "beat": 101},
+            {
+              "label": "Average concordant titre, in litres",
+              "formula": "V = titre ÷ 1000",
+              "beat": 42
+            },
+            {
+              "label": "Moles of the standard",
+              "formula": "n = c × V",
+              "beat": 101
+            },
             {
               "label": "Mole ratio from the balanced equation",
               "formula": "n(unknown) = n(standard) × ratio",
               "beat": 212
             },
-            {"label": "Concentration of the unknown", "formula": "c = n ÷ V(aliquot)", "beat": 306}
+            {
+              "label": "Concentration of the unknown",
+              "formula": "c = n ÷ V(aliquot)",
+              "beat": 306
+            }
           ],
           "highlight": 2,
           "highlightBeat": 647,
@@ -135,31 +171,31 @@
         "Ratio HCl : NaOH = 1 : 1, so n(NaOH) = 2.460 × 10⁻³ mol",
         "V(NaOH) = 25.00 ÷ 1000 = 0.02500 L",
         "c(NaOH) = n ÷ V = 2.460 × 10⁻³ ÷ 0.02500",
-        "Answer: c(NaOH) = 0.0984 mol L⁻¹ ✓"
+        "Answer: c(NaOH) = 0.09840 mol L⁻¹ ✓"
       ],
       "durationInFrames": 1410,
-      "caption": "24.60 mL of 0.1000 HCl gives c(NaOH) = 0.0984 mol L⁻¹.",
+      "caption": "24.60 mL of 0.1000 HCl gives c(NaOH) = 0.09840 mol L⁻¹.",
       "voiceover": {
-        "text": "Let's run a standard one. Twenty-four-point-six millilitres of nought-point-one mole per litre hydrochloric acid neutralises twenty-five millilitres of sodium hydroxide. Find the concentration of the base. Step one, moles of the acid we know. n equals c times V, so nought-point-one times nought-point-zero-two-four-six is two-point-four-six times ten to the minus three moles. Step two, the ratio. Hydrochloric acid and sodium hydroxide react one to one, so the base has the same moles. Step three, the base volume, twenty-five millilitres, is nought-point-zero-two-five litres. Step four, concentration equals moles over volume, which gives nought-point-zero-nine-eight-four moles per litre. Moles first, ratio second, then divide. That order never lets you down."
+        "text": "Concentration of an unknown base 24.60 mL of 0.1000 mol L⁻¹ HCl neutralises 25.00 mL of NaOH. Find c(NaOH). HCl + NaOH → NaCl + H₂O. n(HCl) = c × V = 0.1000 × 0.02460 = 2.460 × 10⁻³ mol Ratio HCl : NaOH = 1 : 1, so n(NaOH) = 2.460 × 10⁻³ mol V(NaOH) = 25.00 ÷ 1000 = 0.02500 L c(NaOH) = n ÷ V = 2.460 × 10⁻³ ÷ 0.02500 Answer: c(NaOH) = 0.09840 mol L⁻¹ ✓"
       }
     },
     {
       "id": "worked-example-2",
       "type": "workedExample",
       "heading": "Back titration of an antacid",
-      "question": "A tablet is treated with 50.00 mL of 0.2000 mol L⁻¹ HCl. The excess needs 18.40 mL of 0.1000 mol L⁻¹ NaOH. Find the mass of NaHCO₃. (M = 84.01)",
+      "question": "A tablet is treated with 50.00 mL of 0.2000 mol L⁻¹ HCl. The excess needs 18.40 mL of 0.1000 mol L⁻¹ NaOH. Find the mass of NaHCO₃. (M = 84.01) Assume NaHCO₃ is the only acid-reactive tablet ingredient, reaction is complete and dissolved CO₂ is removed before the back titration.",
       "coachNote": "Only the acid that reacted with the tablet counts. Subtract the excess first.",
       "steps": [
         "n(HCl initial) = 0.2000 × 0.05000 = 0.01000 mol",
         "n(NaOH) = 0.1000 × 0.01840 = 1.840 × 10⁻³ mol, so n(excess HCl) = 1.840 × 10⁻³ mol (1:1)",
         "n(HCl reacted) = 0.01000 − 1.840 × 10⁻³ = 8.160 × 10⁻³ mol",
         "NaHCO₃ : HCl = 1 : 1, so n(NaHCO₃) = 8.160 × 10⁻³ mol",
-        "m = nM = 8.160 × 10⁻³ × 84.01 = 0.685 g ✓"
+        "m = nM = 8.160 × 10⁻³ × 84.01 = 0.6855 g ✓"
       ],
-      "durationInFrames": 1560,
-      "caption": "Subtracting the excess gives 8.16 × 10⁻³ mol, or 0.685 g of NaHCO₃.",
+      "durationInFrames": 2585,
+      "caption": "Subtracting the excess gives 8.16 × 10⁻³ mol, or 0.6855 g of NaHCO₃.",
       "voiceover": {
-        "text": "Now the back titration, where the marks hide. A crushed antacid tablet is treated with fifty millilitres of nought-point-two mole per litre hydrochloric acid, a known excess. The tablet's base soaks up some of that acid, and whatever's left over needs eighteen-point-four millilitres of nought-point-one mole per litre sodium hydroxide. Find the mass of sodium bicarbonate. Step one, the total acid added. Nought-point-two times nought-point-zero-five is nought-point-zero-one moles. Step two, the leftover acid, found from the base titre. Nought-point-one times nought-point-zero-one-eight-four is one-point-eight-four times ten to the minus three moles, and since it's one to one, that's the excess hydrochloric acid. Step three, and this is the whole idea. The acid that actually reacted with the tablet is the total minus the excess, which gives eight-point-one-six times ten to the minus three moles. Step four, bicarbonate reacts one to one with acid, so that's the bicarbonate moles. Step five, mass equals moles times molar mass, nought-point-six-eight-five grams. The trap is thinking all the acid you added reacted. It didn't. You have to subtract the leftover."
+        "text": "Now the back titration, where the marks hide. A crushed antacid tablet is treated with fifty millilitres of nought-point-two mole per litre hydrochloric acid, a known excess. The tablet's base soaks up some of that acid, and whatever's left over needs eighteen-point-four millilitres of nought-point-one mole per litre sodium hydroxide. Find the mass of sodium bicarbonate. Step one, the total acid added. Nought-point-two times nought-point-zero-five is nought-point-zero-one moles. Step two, the leftover acid, found from the base titre. Nought-point-one times nought-point-zero-one-eight-four is one-point-eight-four times ten to the minus three moles, and since it's one to one, that's the excess hydrochloric acid. Step three, and this is the whole idea. The acid that actually reacted with the tablet is the total minus the excess, which gives eight-point-one-six times ten to the minus three moles. Step four, bicarbonate reacts one to one with acid, so that's the bicarbonate moles. Step five, mass equals moles times molar mass, nought-point-six-eight-five grams. The trap is thinking all the acid you added reacted. It didn't. You have to subtract the leftover. This assumes bicarbonate is the only acid-reactive ingredient and dissolved carbon dioxide is removed before titrating the remaining acid."
       }
     },
     {
@@ -168,9 +204,15 @@
       "heading": "Choosing the indicator",
       "body": "Match the indicator's transition range to the steep pH jump near equivalence, which depends on the acid-base pair.",
       "bullets": [
-        {"text": "Methyl orange, pH 3.1 to 4.4: strong acid with a weak base."},
-        {"text": "Bromothymol blue, pH 6.0 to 7.6: strong acid with a strong base."},
-        {"text": "Phenolphthalein, pH 8.2 to 10.0: weak acid with a strong base."}
+        {
+          "text": "Methyl orange, pH 3.1 to 4.4: strong acid with a weak base."
+        },
+        {
+          "text": "Bromothymol blue, pH 6.0 to 7.6: strong acid with a strong base."
+        },
+        {
+          "text": "Phenolphthalein, pH 8.2 to 10.0: weak acid with a strong base."
+        }
       ],
       "secondary": "Equivalence pH is only 7 for strong-strong. A weak acid with strong base ends above 7, so phenolphthalein fits.",
       "callout": "The indicator must change inside the steep jump.",
@@ -191,48 +233,108 @@
           "yMin": 0,
           "yMax": 14,
           "yTicks": [
-            {"value": 0, "label": "0"},
-            {"value": 2, "label": "2"},
-            {"value": 4, "label": "4"},
-            {"value": 6, "label": "6"},
-            {"value": 8, "label": "8"},
-            {"value": 10, "label": "10"},
-            {"value": 12, "label": "12"},
-            {"value": 14, "label": "14"}
+            {
+              "value": 0,
+              "label": "0"
+            },
+            {
+              "value": 2,
+              "label": "2"
+            },
+            {
+              "value": 4,
+              "label": "4"
+            },
+            {
+              "value": 6,
+              "label": "6"
+            },
+            {
+              "value": 8,
+              "label": "8"
+            },
+            {
+              "value": 10,
+              "label": "10"
+            },
+            {
+              "value": 12,
+              "label": "12"
+            },
+            {
+              "value": 14,
+              "label": "14"
+            }
           ],
           "series": [
             {
-              "gen": {"type": "titration", "weak": false, "ca": 0.1, "va": 25, "cb": 0.1, "vmax": 50},
+              "gen": {
+                "type": "titration",
+                "weak": false,
+                "ca": 0.1,
+                "va": 25,
+                "cb": 0.1,
+                "vmax": 50
+              },
               "color": "mute",
               "width": 4,
               "beat": 36,
               "dur": 250,
               "label": "strong acid + strong base",
-              "labelAt": [1, 1.9],
+              "labelAt": [
+                1,
+                1.9
+              ],
               "labelAnchor": "start"
             },
             {
-              "gen": {"type": "titration", "weak": true, "pKa": 4.76, "ca": 0.1, "va": 25, "cb": 0.1, "vmax": 50},
+              "gen": {
+                "type": "titration",
+                "weak": true,
+                "pKa": 4.76,
+                "ca": 0.1,
+                "va": 25,
+                "cb": 0.1,
+                "vmax": 50
+              },
               "color": "accent",
               "width": 5,
               "beat": 857,
               "dur": 95,
               "label": "ethanoic acid + NaOH",
-              "labelAt": [3, 6.1],
+              "labelAt": [
+                3,
+                6.1
+              ],
               "labelAnchor": "start"
             }
           ],
           "penSeries": 1,
           "refs": [
-            {"axis": "x", "value": 25, "label": "equivalence", "beat": 299, "labelPos": 13.3},
-            {"axis": "y", "value": 7, "label": "", "beat": 793, "labelPos": 0.8}
+            {
+              "axis": "x",
+              "value": 25,
+              "label": "equivalence",
+              "beat": 299,
+              "labelPos": 13.3
+            },
+            {
+              "axis": "y",
+              "value": 7,
+              "label": "",
+              "beat": 793,
+              "labelPos": 0.8
+            }
           ],
           "bands": [
             {
               "axis": "y",
               "from": 3.1,
               "to": 4.4,
-              "colors": ["#d9412b", "#f2c230"],
+              "colors": [
+                "#d9412b",
+                "#f2c230"
+              ],
               "label": "methyl orange",
               "sub": "3.1–4.4",
               "beat": 386,
@@ -243,7 +345,10 @@
               "axis": "y",
               "from": 6,
               "to": 7.6,
-              "colors": ["#f0d43a", "#2f6fd0"],
+              "colors": [
+                "#f0d43a",
+                "#2f6fd0"
+              ],
               "label": "bromothymol blue",
               "sub": "6.0–7.6",
               "beat": 506
@@ -252,7 +357,10 @@
               "axis": "y",
               "from": 8.2,
               "to": 10,
-              "colors": ["#ffffff", "#e0479e"],
+              "colors": [
+                "#ffffff",
+                "#e0479e"
+              ],
               "label": "phenolphthalein",
               "sub": "8.2–10.0",
               "beat": 586,
@@ -261,7 +369,18 @@
               "markBeat": 984
             }
           ],
-          "points": [{"x": 25, "y": 7, "beat": 793}, {"x": 25, "y": 8.73, "beat": 952}],
+          "points": [
+            {
+              "x": 25,
+              "y": 7,
+              "beat": 793
+            },
+            {
+              "x": 25,
+              "y": 8.73,
+              "beat": 952
+            }
+          ],
           "notes": [
             {
               "x": 26,
@@ -285,7 +404,18 @@
           "flask": {
             "x": 190,
             "y": 150,
-            "stages": [{"beat": 36, "series": 0, "band": 1}, {"beat": 857, "series": 1, "band": 2}]
+            "stages": [
+              {
+                "beat": 36,
+                "series": 0,
+                "band": 1
+              },
+              {
+                "beat": 857,
+                "series": 1,
+                "band": 2
+              }
+            ]
           }
         }
       }
@@ -341,5 +471,6 @@
         "text": "Let's lock it in. Five things to take away. First, titration finds an unknown concentration by reacting it with a standard of known concentration. Second, average only your concordant titres, never the rough first run. Third, run the four steps, titre to litres, n equals c V, the ratio from the balanced equation, then concentration is moles over volume. Fourth, choose the indicator whose transition range sits in the steep pH jump near equivalence, remembering that pH isn't always seven there. And fifth, for a back titration, subtract the measured excess to find how much actually reacted. Get the ratio right and check for an excess, and these calculations are very predictable. See you next lesson."
       }
     }
-  ]
+  ],
+  "productionNotes": "2017 syllabus mapping checked: Revision of Module 6 acid–base titration methods; supports quantitative analysis but is not the required Module 8 precipitation-titration teaching."
 }

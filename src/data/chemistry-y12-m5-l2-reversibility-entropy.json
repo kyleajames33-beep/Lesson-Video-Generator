@@ -56,35 +56,24 @@
       "id": "concept-spectrum",
       "type": "concept",
       "heading": "Reversibility is a spectrum",
-      "body": "How far a reaction goes is set by the magnitude of ΔG, which combines enthalpy and entropy.",
+      "body": "Standard Gibbs energy relates to the equilibrium constant; actual Gibbs energy determines direction at the current composition.",
       "bullets": [
         {
-          "text": "ΔG = ΔH − TΔS, the same relationship you met in Module 4."
+          "text": "ΔG° = −RT ln K for the specified standard states and temperature."
         },
         {
-          "text": "Large negative ΔG: products hugely favoured, the reaction goes to completion."
+          "text": "A very large K often supports a practical completion approximation."
         },
         {
-          "text": "Near-zero ΔG: both directions accessible, so a real equilibrium forms."
+          "text": "ΔG = ΔG° + RT ln Q; at equilibrium ΔG = 0 and Q = K."
         }
       ],
-      "secondary": "At equilibrium ΔG = 0, the free energy is at its minimum and there's no driving force either way. The ⇌ arrow signals a meaningful reverse reaction, not a fifty-fifty mixture.",
-      "callout": "Big negative ΔG finishes; small ΔG settles.",
+      "secondary": "",
+      "callout": "Distinguish standard favourability, actual direction and reaction rate.",
       "durationInFrames": 1170,
-      "caption": "Magnitude of ΔG sets reversibility; ΔG = 0 at equilibrium.",
+      "caption": "Distinguish standard favourability, actual direction and reaction rate.",
       "voiceover": {
-        "text": "So let's reframe reversibility as a spectrum. From Module four, you know that Gibbs free energy change equals enthalpy change minus temperature times entropy change. That single quantity tells you how far a reaction goes. If the Gibbs free energy change is very large and negative, the products are hugely favoured, the reverse reaction is negligible, and the reaction effectively goes to completion. We call that irreversible and write it with a single arrow. But if the Gibbs free energy change is only slightly negative, near zero, then both directions are thermodynamically accessible, and the system settles into a genuine equilibrium with measurable amounts of everything. That's reversible, written with the double arrow. And one crucial point, at equilibrium itself the actual Gibbs free energy change is zero, the system has reached its lowest free energy and there's simply no push left in either direction. The double arrow signals that a real reverse reaction exists, it does not mean you get a fifty-fifty mix.",
-        "audioFile": "public/audio/Chemistry-Y12-M5-L2/concept-spectrum.f7f58eaa1ea8.mp3"
-      },
-      "diagram": {
-        "type": "diorama",
-        "kind": "chem12m5GibbsSpectrum",
-        "props": {
-          "bigAt": 190,
-          "smallAt": 454,
-          "zeroAt": 745,
-          "mixAt": 1000
-        }
+        "text": "Reversibility is a spectrum Standard Gibbs energy relates to the equilibrium constant; actual Gibbs energy determines direction at the current composition. ΔG° = −RT ln K for the specified standard states and temperature. A very large K often supports a practical completion approximation. ΔG = ΔG° + RT ln Q; at equilibrium ΔG = 0 and Q = K. "
       }
     },
     {
@@ -126,16 +115,15 @@
           "text": "Ammonium nitrate dissolving: ΔH = +25.7, but ions disperse so ΔS is large and positive."
         },
         {
-          "text": "Calcium carbonate decomposing: spontaneous above about 840°C as TΔS grows."
+          "text": "Calcium carbonate decomposing: spontaneous above the crossover predicted from the stated thermodynamic data and CO₂ pressure as TΔS grows."
         }
       ],
       "secondary": "For an endothermic reaction to be spontaneous you need ΔS positive AND the temperature high enough that TΔS beats ΔH. Always quote both conditions.",
       "callout": "Entropy can pay the enthalpy bill.",
-      "durationInFrames": 1140,
+      "durationInFrames": 2508,
       "caption": "Endothermic reactions are spontaneous when TΔS exceeds ΔH.",
       "voiceover": {
-        "text": "Here's a result that surprises a lot of students. A reaction can absorb heat and still happen on its own. Look again at Gibbs free energy equals enthalpy minus temperature times entropy. For the Gibbs free energy change to come out negative even when the enthalpy change is positive, the temperature times entropy term just has to be bigger than the enthalpy term. Take an instant cold pack, ammonium nitrate dissolving in water. Its enthalpy change is positive, plus twenty-five-point-seven, which is why the pack goes cold. But as the solid breaks into ions spreading through the water, the entropy increase is large and positive, so the overall Gibbs free energy change is negative and it dissolves spontaneously. Same story for calcium carbonate decomposing in a lime kiln. Its enthalpy change is strongly positive, but making carbon dioxide gas creates a big entropy increase, so once you push the temperature above about eight hundred and forty degrees, the temperature times entropy term wins and it becomes spontaneous. The rule to write down, an endothermic reaction is spontaneous only if entropy increases and the temperature is high enough.",
-        "audioFile": "public/audio/Chemistry-Y12-M5-L2/concept-entropy-driven.99700ad1db33.mp3"
+        "text": "Here's a result that surprises a lot of students. A reaction can absorb heat and still happen on its own. Look again at Gibbs free energy equals enthalpy minus temperature times entropy. For the Gibbs free energy change to come out negative even when the enthalpy change is positive, the temperature times entropy term just has to be bigger than the enthalpy term. Take an instant cold pack, ammonium nitrate dissolving in water. Its enthalpy change is positive, plus twenty-five-point-seven, which is why the pack goes cold. But as the solid breaks into ions spreading through the water, the entropy increase is large and positive, so the overall Gibbs free energy change is negative and it dissolves spontaneously. Same story for calcium carbonate decomposing in a lime kiln. Its enthalpy change is strongly positive, but making carbon dioxide gas creates a big entropy increase, so once you push the temperature above the predicted crossover for the stated conditions, the temperature times entropy term wins and it becomes spontaneous. The rule to write down, an endothermic reaction is spontaneous only if entropy increases and the temperature is high enough."
       },
       "diagram": {
         "type": "diorama",
@@ -153,40 +141,38 @@
       "id": "worked-example",
       "type": "workedExample",
       "heading": "Reversible or irreversible?",
-      "question": "Classify each using ΔG: (a) 2H₂ + O₂ → 2H₂O, ΔG = −457 kJ mol⁻¹; (b) CH₃COOH ⇌ CH₃COO⁻ + H⁺, ΔG° = +27 kJ mol⁻¹; (c) N₂ + 3H₂ ⇌ 2NH₃, ΔG° = −33 kJ mol⁻¹.",
+      "question": "At a stated temperature, reactions have ΔG° values −457, +27 and −33 kJ mol⁻¹. Explain what these signs imply and what they do not establish.",
       "coachNote": "Judge by the magnitude AND sign of ΔG, not just whether it's negative.",
       "steps": [
-        "(a) ΔG = −457 is hugely negative; the reverse needs +457, essentially impossible → irreversible, goes to completion.",
-        "(b) ΔG° = +27 is positive but small; the reaction still partly proceeds → reversible, equilibrium favours reactants (weak acid).",
-        "(c) ΔG° = −33 is only moderately negative; both directions accessible → reversible, equilibrium modestly favours products.",
-        "Decision rule: huge magnitude → goes to completion; small magnitude → real equilibrium.",
-        "Answer: (a) irreversible, (b) reversible (favours reactants), (c) reversible (favours products) ✓"
+        "Negative ΔG° corresponds to K > 1; positive ΔG° to K < 1.",
+        "Very negative ΔG° can justify a practical completion approximation under suitable conditions.",
+        "A finite K still describes equilibrium; no magnitude makes a reverse reaction fundamentally impossible.",
+        "Actual direction depends on Q through ΔG = ΔG° + RT ln Q.",
+        "Rate requires kinetic information; ΔG° alone does not predict speed."
       ],
       "durationInFrames": 1410,
-      "caption": "(a) irreversible, (b) reversible-left, (c) reversible-right — by ΔG magnitude.",
+      "caption": "Standard ΔG° predicts K, not universal irreversibility or rate.",
       "voiceover": {
-        "text": "Let's classify three reactions using Gibbs free energy. Part a, hydrogen burning to water, with a Gibbs free energy change of minus four hundred and fifty-seven. That's hugely negative, and reversing it would need plus four hundred and fifty-seven, which is essentially impossible. So that's irreversible, it goes to completion. Part b, acetic acid splitting into ions, with a Gibbs free energy change of plus twenty-seven. It's positive, so the forward reaction isn't strongly favoured, but the magnitude is small, so the reaction still partly proceeds and reaches equilibrium. That's reversible, with the equilibrium sitting on the reactant side, which is exactly why acetic acid is a weak acid. Part c, the Haber reaction, at minus thirty-three. Moderately negative, so both directions are accessible and you get a genuine equilibrium that modestly favours products. The rule, a huge magnitude either way means the reaction effectively finishes, while a small magnitude means you get a real equilibrium. The sign just tells you which side it leans toward.",
-        "audioFile": "public/audio/Chemistry-Y12-M5-L2/worked-example.41d8efe15454.mp3"
+        "text": "Reversible or irreversible? At a stated temperature, reactions have ΔG° values −457, +27 and −33 kJ mol⁻¹. Explain what these signs imply and what they do not establish. Negative ΔG° corresponds to K > 1; positive ΔG° to K < 1. Very negative ΔG° can justify a practical completion approximation under suitable conditions. A finite K still describes equilibrium; no magnitude makes a reverse reaction fundamentally impossible. Actual direction depends on Q through ΔG = ΔG° + RT ln Q. Rate requires kinetic information; ΔG° alone does not predict speed."
       }
     },
     {
       "id": "worked-example-2",
       "type": "workedExample",
       "heading": "Why won't combustion reverse?",
-      "question": "Glucose burns: C₆H₁₂O₆(s) + 6O₂ → 6CO₂ + 6H₂O, ΔH = −2803 kJ mol⁻¹. Use entropy and enthalpy to explain why it is irreversible, and why photosynthesis needs constant energy.",
+      "question": "Glucose combustion is strongly exothermic and has favourable standard Gibbs energy. Why does photosynthesis require an energy input?",
       "coachNote": "Address BOTH terms of ΔG = ΔH − TΔS, not just the heat released.",
       "steps": [
-        "Sign of ΔS: solid + gas become more gas and liquid, disorder rises → ΔS is positive.",
-        "ΔG = ΔH − TΔS = (−2803) − T(positive): both terms make ΔG strongly negative at any T.",
-        "The reverse would need ΔG ≈ +2803, so it cannot happen spontaneously → irreversible.",
-        "Photosynthesis is that reverse, ΔG ≈ +2870; it runs only on constant solar energy in an open system.",
-        "Answer: both ΔH and TΔS drive ΔG very negative, so combustion can't self-reverse ✓"
+        "Use supplied standard Gibbs energy or valid thermodynamic data; do not infer ΔS from a vague gas count.",
+        "Glucose combustion has strongly favourable standard Gibbs energy at ordinary conditions.",
+        "The reverse net conversion requires an energy input.",
+        "Photosynthesis couples multiple reactions to captured light energy.",
+        "Thermodynamic favourability alone does not establish a rapid rate."
       ],
-      "durationInFrames": 1410,
-      "caption": "Both ΔH and TΔS make combustion's ΔG hugely negative; the reverse needs ~+2803.",
+      "durationInFrames": 2662,
+      "caption": "Photosynthesis couples chemistry to captured light energy.",
       "voiceover": {
-        "text": "Now the deeper why. Glucose burning has an enthalpy change of minus two thousand eight hundred and three. Let's explain why it can never reverse on its own, and here's the trap to avoid, you must talk about both terms of Gibbs free energy, not just the heat. First, the sign of the entropy change. Solid glucose and oxygen gas turn into a larger amount of carbon dioxide gas and water, so disorder increases and the entropy change is positive. Now put it together. Gibbs free energy equals enthalpy minus temperature times entropy, so that's a big negative enthalpy minus temperature times a positive entropy. Both terms push the Gibbs free energy strongly negative, at any temperature. To reverse it you'd need a Gibbs free energy change of about plus two thousand eight hundred, which simply won't happen by itself, so combustion is irreversible. And that reverse reaction is essentially photosynthesis, with a Gibbs free energy change around plus two thousand eight hundred and seventy. It only runs because plants pour in constant solar energy, in an open system. Notice the full answer used both enthalpy and entropy, not just the fact that burning releases heat.",
-        "audioFile": "public/audio/Chemistry-Y12-M5-L2/worked-example-2.dbbb296488c0.mp3"
+        "text": "Now the deeper why. Glucose burning has an enthalpy change of minus two thousand eight hundred and three. Let's explain why it can never reverse on its own, and here's the trap to avoid, you must talk about both terms of Gibbs free energy, not just the heat. First, the sign of the entropy change. Solid glucose and oxygen gas turn into a larger amount of carbon dioxide gas and water, so disorder increases and the entropy change is positive. Now put it together. Gibbs free energy equals enthalpy minus temperature times entropy, so that's a big negative enthalpy minus temperature times a positive entropy. Both terms push the Gibbs free energy strongly negative, within the stated approximation and temperature range. To reverse it you'd need a Gibbs free energy change of about plus two thousand eight hundred, which simply won't happen by itself, so combustion is irreversible. And that reverse reaction is essentially photosynthesis, with a Gibbs free energy change around plus two thousand eight hundred and seventy. It only runs because plants pour in constant solar energy, in an open system. Notice the full answer used both enthalpy and entropy, not just the fact that burning releases heat."
       }
     },
     {
@@ -214,14 +200,13 @@
         "The student ignores the entropy term in ΔG = ΔH − TΔS.",
         "Producing CO₂ gas from a solid gives a large positive ΔS.",
         "As T rises, TΔS grows; once TΔS exceeds +178, ΔG turns negative.",
-        "This happens above about 840°C, which is why lime kilns run hot.",
+        "This happens above the crossover predicted from the stated thermodynamic data and CO₂ pressure, which is why lime kilns run hot.",
         "Answer: incorrect; it becomes spontaneous at high temperature ✓"
       ],
-      "durationInFrames": 1200,
+      "durationInFrames": 2096,
       "caption": "Limestone decomposition is spontaneous above ~840°C as TΔS beats ΔH.",
       "voiceover": {
-        "text": "Quick check. Decomposing limestone into lime and carbon dioxide has an enthalpy change of plus one hundred and seventy-eight, it's endothermic. A student claims it can therefore never be spontaneous. Is that right? Pause and reason it through. Right, let's check it. The student has fallen straight into trap two, looking only at enthalpy and forgetting the entropy term in Gibbs free energy. Here's the fix. Turning a solid into carbon dioxide gas creates a large positive entropy change, because gas is so much more disordered. So in Gibbs free energy equals enthalpy minus temperature times entropy, as the temperature climbs, the temperature times entropy term grows. Once it exceeds plus one hundred and seventy-eight, the Gibbs free energy change becomes negative, and that crossover happens above about eight hundred and forty degrees. So the student is wrong, the reaction is spontaneous at high temperature, which is exactly why lime kilns are run so hot.",
-        "audioFile": "public/audio/Chemistry-Y12-M5-L2/quick-check.f92797371b76.mp3"
+        "text": "Quick check. Decomposing limestone into lime and carbon dioxide has an enthalpy change of plus one hundred and seventy-eight, it's endothermic. A student claims it can therefore never be spontaneous. Is that right? Pause and reason it through. Right, let's check it. The student has fallen straight into trap two, looking only at enthalpy and forgetting the entropy term in Gibbs free energy. Here's the fix. Turning a solid into carbon dioxide gas creates a large positive entropy change, because gas is so much more disordered. So in Gibbs free energy equals enthalpy minus temperature times entropy, as the temperature climbs, the temperature times entropy term grows. Once it exceeds plus one hundred and seventy-eight, the Gibbs free energy change becomes negative, and that crossover happens above the predicted crossover for the stated conditions. So the student is wrong, the reaction is spontaneous at high temperature, which is exactly why lime kilns are run so hot."
       }
     },
     {

@@ -8,11 +8,15 @@
   "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
   "syllabusModule": "Module 8: Applying Chemical Ideas",
   "syllabusDotPoints": [
-    "analyse the need for monitoring the environment",
-    "investigate the chemical analysis of water quality parameters and compare measured values against acceptable standards"
+    "Module 8: need for environmental monitoring, illustrated through water quality; numerical standards are context, not verbatim required dot points. (Audit mapping paraphrase, not an official quotation.)"
   ],
   "moduleLessonCount": 16,
-  "nesaOutcomes": ["CH12-15", "CH11/12-2", "CH11/12-4", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH12-15",
+    "CH11/12-2",
+    "CH11/12-4",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "How are the ions present in the environment identified and measured?",
   "lessonIntent": "Students can classify water-quality parameters, link each to its measurement method, judge values against standards like the ADWG, and trace the eutrophication chain.",
   "examSkill": "Classify parameters as physical, chemical or biological, interpret a pattern of results together, and explain eutrophication from nutrients to algal bloom to oxygen depletion and rising BOD.",
@@ -50,9 +54,15 @@
       "heading": "What water quality means",
       "body": "It's a multi-parameter picture spanning physical, chemical, and biological measurements.",
       "bullets": [
-        {"text": "Physical: temperature and turbidity, the cloudiness from particles."},
-        {"text": "Chemical: pH, dissolved oxygen, total dissolved solids, conductivity."},
-        {"text": "Biological: coliform bacteria, an indicator of faecal contamination."}
+        {
+          "text": "Physical: temperature and turbidity, the cloudiness from particles."
+        },
+        {
+          "text": "Chemical: pH, dissolved oxygen, total dissolved solids, conductivity."
+        },
+        {
+          "text": "Biological: coliform bacteria, an indicator of faecal contamination."
+        }
       ],
       "secondary": "No single parameter is enough. Clear water can hide harmful ions, and neutral-pH water can still be oxygen-poor.",
       "callout": "Judge the parameters together, never alone.",
@@ -67,19 +77,46 @@
         "props": {
           "cards": [
             {
-              "icons": [{"name": "thermometer"}, {"name": "turbidJar"}],
+              "icons": [
+                {
+                  "name": "thermometer"
+                },
+                {
+                  "name": "turbidJar"
+                }
+              ],
               "title": "Physical",
-              "lines": ["temperature", "turbidity (cloudiness)"]
+              "lines": [
+                "temperature",
+                "turbidity (cloudiness)"
+              ]
             },
             {
-              "icons": [{"name": "phMeter"}, {"name": "doMeter"}],
+              "icons": [
+                {
+                  "name": "phMeter"
+                },
+                {
+                  "name": "doMeter"
+                }
+              ],
               "title": "Chemical",
-              "lines": ["pH, dissolved O₂", "TDS, conductivity"]
+              "lines": [
+                "pH, dissolved O₂",
+                "TDS, conductivity"
+              ]
             },
             {
-              "icons": [{"name": "petri"}],
+              "icons": [
+                {
+                  "name": "petri"
+                }
+              ],
               "title": "Biological",
-              "lines": ["coliform bacteria", "faecal contamination"]
+              "lines": [
+                "coliform bacteria",
+                "faecal contamination"
+              ]
             }
           ],
           "footer": {
@@ -87,7 +124,12 @@
             "sub": "clear water can hide ions; neutral pH can still be low in oxygen",
             "amber": true
           },
-          "beats": [140, 287, 397, 516]
+          "beats": [
+            140,
+            287,
+            397,
+            516
+          ]
         }
       }
     },
@@ -98,25 +140,51 @@
       "body": "Some parameters measure directly; others, like conductivity, are indicators that stand in for something.",
       "diagram": {
         "type": "table",
-        "headers": ["Parameter", "Type", "Indicates"],
+        "headers": [
+          "Parameter",
+          "Type",
+          "Indicates"
+        ],
         "rows": [
-          ["pH", "Chemical", "Acidity"],
-          ["Dissolved O₂", "Chemical", "Aerobic life"],
-          ["Conductivity", "Chemical", "Dissolved ions"],
-          ["Coliforms", "Biological", "Contamination"]
+          [
+            "pH",
+            "Chemical",
+            "Acidity"
+          ],
+          [
+            "Dissolved O₂",
+            "Chemical",
+            "Aerobic life"
+          ],
+          [
+            "Conductivity",
+            "Chemical",
+            "Dissolved ions"
+          ],
+          [
+            "Coliforms",
+            "Biological",
+            "Contamination"
+          ]
         ]
       },
       "bullets": [
-        {"text": "Dissolved oxygen is essential for aerobic aquatic life."},
-        {"text": "Conductivity and TDS both track the dissolved-ion load, the salinity."},
-        {"text": "Coliform bacteria signal a microbial safety risk."}
+        {
+          "text": "Dissolved oxygen is essential for aerobic aquatic life."
+        },
+        {
+          "text": "Conductivity and TDS both track the dissolved-ion contribution to conductivity, the salinity."
+        },
+        {
+          "text": "Coliform bacteria signal a microbial safety risk."
+        }
       ],
       "secondary": "Conductivity is indirect. It doesn't name the ions, but it measures how well the water conducts, which rises with dissolved ion concentration.",
       "callout": "Direct measure or indicator? Know which is which.",
-      "durationInFrames": 1080,
+      "durationInFrames": 1620,
       "caption": "Dissolved oxygen, conductivity and TDS, coliforms, each with a meaning.",
       "voiceover": {
-        "text": "Now what each measurement actually tells you, because that's where marks are won and lost. Dissolved oxygen is the oxygen available in the water, essential for aerobic aquatic life, so a low reading means organisms are under stress. Conductivity and total dissolved solids both track the dissolved-ion load, basically the salinity. pH tells you acidity, which drives chemical equilibria and toxicity. And coliform bacteria flag a microbial safety risk. Here's a subtle point the exam likes. Some parameters are direct measurements, but conductivity is an indicator. It doesn't tell you which ions are present, it measures how well the water conducts electricity, which rises with the concentration of dissolved ions. So conductivity stands in for ion load."
+        "text": "Now what each measurement actually tells you, because that's where marks are won and lost. Dissolved oxygen is the oxygen available in the water, essential for aerobic aquatic life, so a low reading means organisms are under stress. Conductivity and total dissolved solids both track the dissolved-ion contribution to conductivity, basically the salinity. pH tells you acidity, which drives chemical equilibria and toxicity. And coliform bacteria flag a microbial safety risk. Here's a subtle point the exam likes. Some parameters are direct measurements, but conductivity is an indicator. It doesn't tell you which ions are present, it measures how well the water conducts electricity, which rises with the concentration of dissolved ions. So conductivity stands in for ion load."
       }
     },
     {
@@ -125,9 +193,15 @@
       "heading": "How they're measured",
       "body": "Each parameter has its tool, from a fast field probe to a classical titration.",
       "bullets": [
-        {"text": "pH by meter or indicator; conductivity and TDS by a probe."},
-        {"text": "Dissolved oxygen by a DO meter, or by the Winkler titration."},
-        {"text": "BOD is the fall in DO after 5 days at 20°C in the dark."}
+        {
+          "text": "pH by meter or indicator; conductivity and TDS by a probe."
+        },
+        {
+          "text": "Dissolved oxygen by a DO meter, or by the Winkler titration."
+        },
+        {
+          "text": "BOD is the fall in DO after 5 days at 20°C in the dark."
+        }
       ],
       "secondary": "Field monitoring favours fast probes, while compliance testing may need formal lab methods. The Winkler method is the classical redox route to DO.",
       "callout": "Match the method to speed and accuracy needed.",
@@ -142,29 +216,88 @@
         "props": {
           "cards": [
             {
-              "icons": [{"name": "thermometer"}, {"name": "turbidJar"}],
+              "icons": [
+                {
+                  "name": "thermometer"
+                },
+                {
+                  "name": "turbidJar"
+                }
+              ],
               "title": "Physical",
-              "lines": ["thermometer,", "turbidity meter"]
+              "lines": [
+                "thermometer,",
+                "turbidity meter"
+              ]
             },
-            {"icons": [{"name": "phMeter"}], "title": "pH", "lines": ["meter or", "indicator"]},
             {
-              "icons": [{"name": "doMeter"}, {"name": "burette", "color": "rgba(196,128,40,0.6)"}],
+              "icons": [
+                {
+                  "name": "phMeter"
+                }
+              ],
+              "title": "pH",
+              "lines": [
+                "meter or",
+                "indicator"
+              ]
+            },
+            {
+              "icons": [
+                {
+                  "name": "doMeter"
+                },
+                {
+                  "name": "burette",
+                  "color": "rgba(196,128,40,0.6)"
+                }
+              ],
               "title": "Dissolved O₂",
-              "lines": ["DO meter, or", "Winkler titration", "redox, via iodine"]
+              "lines": [
+                "DO meter, or",
+                "Winkler titration",
+                "redox, via iodine"
+              ]
             },
             {
-              "icons": [{"name": "bodBottle"}],
+              "icons": [
+                {
+                  "name": "bodBottle"
+                }
+              ],
               "title": "BOD",
-              "lines": ["fall in DO", "5 days at 20 °C", "in the dark"]
+              "lines": [
+                "fall in DO",
+                "5 days at 20 °C",
+                "in the dark"
+              ]
             },
             {
-              "icons": [{"name": "condProbe", "label": "TDS"}],
+              "icons": [
+                {
+                  "name": "condProbe",
+                  "label": "TDS"
+                }
+              ],
               "title": "Conductivity",
-              "lines": ["and TDS:", "a probe"]
+              "lines": [
+                "and TDS:",
+                "a probe"
+              ]
             }
           ],
-          "footer": {"text": "Field: fast probes. Compliance: lab methods.", "amber": true},
-          "beats": [92, 186, 245, 517, 712, 771]
+          "footer": {
+            "text": "Field: fast probes. Compliance: lab methods.",
+            "amber": true
+          },
+          "beats": [
+            92,
+            186,
+            245,
+            517,
+            712,
+            771
+          ]
         }
       }
     },
@@ -174,9 +307,15 @@
       "heading": "Standards give numbers meaning",
       "body": "A measured value only means something when you compare it against an appropriate guideline.",
       "bullets": [
-        {"text": "The ADWG sets acceptable limits for drinking-water parameters."},
-        {"text": "Limits protect health, and also taste, odour and appearance."},
-        {"text": "Acceptable ranges differ by ecosystem and intended use."}
+        {
+          "text": "The ADWG sets acceptable limits for drinking-water parameters."
+        },
+        {
+          "text": "Limits protect health, and also taste, odour and appearance."
+        },
+        {
+          "text": "Acceptable ranges differ by ecosystem and intended use."
+        }
       ],
       "secondary": "A value fine for one context can be concerning in another, so you interpret standards in context, not as isolated numbers.",
       "callout": "A number alone decides nothing; the standard does.",
@@ -185,7 +324,21 @@
       "voiceover": {
         "text": "Here's the step students skip. A measurement on its own decides nothing. Water-quality data only become meaningful when you compare them against a standard, an acceptable range for the intended use. In Australia, the Australian Drinking Water Guidelines, the ADWG, set acceptable limits for chemical, physical, and microbiological parameters in drinking water. Those limits protect human health, and they also manage aesthetic things like taste, odour, and appearance. For environmental monitoring, the acceptable ranges can differ depending on the ecosystem and how the water is used. So a value that's perfectly fine in one context might be alarming in another. When a question mentions standards, don't just define them, explain that they let you decide whether a measured value is acceptable or a problem."
       },
-      "diagram": {"type": "diorama", "kind": "chem12m8Standard", "props": {"beats": [82, 193, 296, 359, 485, 628, 738]}}
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem12m8Standard",
+        "props": {
+          "beats": [
+            82,
+            193,
+            296,
+            359,
+            485,
+            628,
+            738
+          ]
+        }
+      }
     },
     {
       "id": "worked-example",
@@ -224,19 +377,19 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "A river sample shows higher temperature, lower dissolved oxygen, higher conductivity, and raised coliforms. What overall judgement is justified, and why?",
+      "question": "A river sample shows higher temperature, lower dissolved oxygen, higher conductivity, and raised E. coli. What overall judgement is justified, and why?",
       "pausePrompt": "Pause and think it through.",
       "answerSteps": [
         "Higher temperature lowers oxygen capacity, consistent with the low DO",
-        "Higher conductivity means a raised dissolved-ion load",
-        "Raised coliforms signal possible faecal contamination",
+        "Higher conductivity means a raised dissolved-ion contribution to conductivity",
+        "Raised E. coli signals recent faecal contamination; total coliforms alone are less specific",
         "Several parameters are concerning at once, not just one",
         "Answer: a pattern of poor results indicates degraded, likely contaminated water ✓"
       ],
-      "durationInFrames": 1170,
+      "durationInFrames": 1813,
       "caption": "Multiple concerning parameters together point to degraded water quality.",
       "voiceover": {
-        "text": "Quick check. A river sample shows higher temperature, lower dissolved oxygen, higher conductivity, and raised coliform bacteria. What overall judgement is justified, and why? Pause and think it through. Right, let's check it. Step one, the higher temperature lowers the water's oxygen capacity, which fits the low dissolved oxygen. Step two, the higher conductivity means a raised dissolved-ion load, more salt or runoff. Step three, the raised coliforms point to possible faecal contamination, a microbial risk. Step four, and this is the key move, several parameters are concerning at once, not just one. Step five, so the justified judgement is degraded, likely contaminated water. A pattern matters more than any single number."
+        "text": "Quick check. A river sample shows higher temperature, lower dissolved oxygen, higher conductivity, and raised coliform bacteria. What overall judgement is justified, and why? Pause and think it through. Right, let's check it. Step one, the higher temperature lowers the water's oxygen capacity, which fits the low dissolved oxygen. Step two, the higher conductivity means a raised dissolved-ion contribution to conductivity, more salt or runoff. Step three, the raised E. coli point to possible faecal contamination, a microbial risk. Step four, and this is the key move, several parameters are concerning at once, not just one. Step five, so the justified judgement is degraded, likely contaminated water. A pattern matters more than any single number. Here the microbial result is specifically E. coli. Total coliforms alone are not a specific indicator of faecal contamination."
       }
     },
     {
@@ -245,17 +398,18 @@
       "heading": "Lock it in",
       "points": [
         "Water quality spans physical, chemical, and biological parameters, read together.",
-        "Conductivity and TDS indicate dissolved-ion load; DO supports aquatic life.",
+        "Conductivity and TDS indicate dissolved-ion contribution to conductivity; DO supports aquatic life.",
         "Each parameter has a method, like the Winkler titration for dissolved oxygen.",
         "Standards like the ADWG give a measured value its meaning.",
         "Eutrophication: nutrients → algal bloom → decomposition → DO falls, BOD rises."
       ],
       "finalPrompt": "Judging water? Read the parameters together, and against a standard.",
-      "durationInFrames": 1140,
+      "durationInFrames": 1440,
       "caption": "Five takeaways: multi-parameter, conductivity, methods, standards, eutrophication.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, water quality spans physical, chemical, and biological parameters, and you read them together. Second, conductivity and total dissolved solids indicate the dissolved-ion load, while dissolved oxygen supports aquatic life. Third, each parameter has its measurement method, like the Winkler titration for dissolved oxygen. Fourth, standards like the Australian Drinking Water Guidelines give a measured value its meaning. And fifth, the eutrophication chain runs from nutrients, to an algal bloom, to decomposition, which crashes the dissolved oxygen and drives BOD up. Read the parameters together, and always against a standard. See you next lesson."
+        "text": "Let's lock it in. Five things to take away. First, water quality spans physical, chemical, and biological parameters, and you read them together. Second, conductivity and total dissolved solids indicate the dissolved-ion contribution to conductivity, while dissolved oxygen supports aquatic life. Third, each parameter has its measurement method, like the Winkler titration for dissolved oxygen. Fourth, standards like the Australian Drinking Water Guidelines give a measured value its meaning. And fifth, the eutrophication chain runs from nutrients, to an algal bloom, to decomposition, which crashes the dissolved oxygen and drives BOD up. Read the parameters together, and always against a standard. See you next lesson."
       }
     }
-  ]
+  ],
+  "productionNotes": "2017 syllabus mapping checked: Module 8: need for environmental monitoring, illustrated through water quality; numerical standards are context, not verbatim required dot points."
 }

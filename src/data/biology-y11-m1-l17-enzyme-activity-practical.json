@@ -59,7 +59,7 @@
           "text": "Temperature: the rate rises to an optimum, then the enzyme denatures."
         },
         {
-          "text": "pH: each enzyme has an optimum pH; too acidic or alkaline denatures it."
+          "text": "pH: each enzyme has an optimum pH; departures change active-site ionisation; extreme pH may denature it."
         },
         {
           "text": "Substrate concentration: the rate rises until the enzyme is saturated."
@@ -82,12 +82,9 @@
           "rule": "Change one factor at a time"
         }
       },
-      "durationInFrames": 1186,
-      "revealDelays": {
-        "diagram": 30
-      },
+      "durationInFrames": 1363,
       "voiceover": {
-        "text": "Three conditions have a big effect on how efficiently an enzyme works. First, temperature. Raising it speeds the rate up to an optimum, but then high heat denatures the enzyme, permanently changing the shape of its active site, and activity collapses. Second, pH. Each enzyme has an optimum pH, and going too acidic or too alkaline also denatures it. Third, substrate concentration. More substrate raises the rate, until every active site is busy. That's called saturation, and after that, adding more substrate makes no difference. In a practical, you test one of these at a time."
+        "text": "Three conditions have a big effect on how efficiently an enzyme works. First, temperature. Raising it speeds the rate up to an optimum, but then high heat denatures the enzyme, disrupting the shape of its active site, and activity collapses. Second, pH. Each enzyme has an optimum pH, and departures can change active-site ionisation and activity, while extreme pH may denature it. Third, substrate concentration. More substrate raises the rate, until every active site is busy. That's called saturation, and after that, adding more substrate makes no difference. In a practical, you test one of these at a time."
       }
     },
     {
@@ -106,8 +103,8 @@
           "text": "Controlled: enzyme amount, H₂O₂ volume and concentration, time, pH."
         }
       ],
-      "callout": "Most oxygen at 37 °C; few bubbles at 10 °C and at 70 °C.",
-      "caption": "Catalase at 10, 37 and 70 °C: the most oxygen at 37 °C, little at 70 °C because it is denatured.",
+      "callout": "Illustrative results: most oxygen at 37 °C among these three tested conditions.",
+      "caption": "Catalase at 10, 37 and 70 °C: illustrative results at 10, 37 and 70 °C; the optimum needs more temperature points.",
       "diagram": {
         "type": "diorama",
         "kind": "bio11m1bPractical",
@@ -124,7 +121,7 @@
             },
             {
               "label": "37 °C",
-              "sub": "most bubbles",
+              "sub": "most in this example",
               "subAt": 835,
               "rate": 0.95,
               "at": 348,
@@ -157,12 +154,9 @@
           ]
         }
       },
-      "durationInFrames": 1544,
-      "revealDelays": {
-        "diagram": 30
-      },
+      "durationInFrames": 1968,
       "voiceover": {
-        "text": "Here's a typical plan, using the enzyme catalase, from liver or potato, which breaks hydrogen peroxide down into water and oxygen. To test temperature, you set up tubes in water baths, say at ten, thirty seven and seventy degrees. Temperature is the independent variable, the one thing you change. The dependent variable is what you measure, the rate of oxygen produced, as bubbles per minute, the volume of gas, or the height of the foam. At thirty seven degrees you get the most bubbles. At ten degrees there are only a few, and at seventy, few again, because the enzyme is denatured. Everything else is a controlled variable, kept the same, the amount of enzyme, the volume and concentration of hydrogen peroxide, the time, and the pH."
+        "text": "Here's a typical plan, using the enzyme catalase, from liver or potato, which breaks hydrogen peroxide down into water and oxygen. To test temperature, you set up tubes in water baths, say at ten, thirty seven and seventy degrees. Temperature is the independent variable, the one thing you change. The dependent variable is what you measure, the rate of oxygen produced, as bubbles per minute, the volume of gas, or the height of the foam. In this illustrative dataset, thirty seven degrees gives the most bubbles among the three temperatures tested. This does not establish a universal optimum for liver or potato catalase. At ten degrees there are only a few, and at seventy, few again, because the enzyme is denatured. Everything else is a controlled variable, kept the same, the amount of enzyme, the volume and concentration of hydrogen peroxide, the time, and the pH."
       }
     },
     {
@@ -224,12 +218,9 @@
           }
         }
       },
-      "durationInFrames": 1348,
-      "revealDelays": {
-        "diagram": 30
-      },
+      "durationInFrames": 1492,
       "voiceover": {
-        "text": "How do you know your results can be trusted? Validity means the experiment really tests what it claims to, so only the independent variable changes and everything else is controlled. Reliability means repeated trials give consistent results, so you run each temperature at least three times and average the readings, because a single reading could be a fluke. You also include a control, like a tube of boiled, denatured enzyme. If it produces no oxygen, you know the bubbles in the other tubes come from the active enzyme. And accuracy improves with better tools. A gas syringe measures the volume of oxygen far more accurately than counting bubbles by eye."
+        "text": "How do you know your results can be trusted? Validity means the experiment really tests what it claims to, so only the independent variable changes and everything else is controlled. Reliability means repeated trials give consistent results, so you run each temperature at least three times and average the readings, because a single reading could be a fluke. You also include a control, like a tube of boiled, denatured enzyme. If it produces no oxygen, the result supports active-enzyme involvement, but a no-enzyme control is also needed. And accuracy improves with better tools. A gas syringe measures the volume of oxygen far more accurately than counting bubbles by eye."
       }
     },
     {
@@ -267,7 +258,7 @@
       "question": "Plan a valid, reliable experiment to test the effect of temperature on the activity of catalase.",
       "coachNote": "Hypothesis, then IV, DV and CVs, then a numbered method with repeats, a control and safety.",
       "steps": [
-        "Hypothesis: the rate of oxygen production rises to an optimum near 37 °C, then falls as catalase denatures.",
+        "Hypothesis: the rate of oxygen production rises to an an optimum specific to the enzyme preparation, then falls as catalase denatures.",
         "IV: temperature, using water baths at 10, 20, 30, 37, 50 and 70 °C.",
         "DV: volume of oxygen collected in a gas syringe in 60 seconds.",
         "CV: same mass of liver or potato, same volume and concentration of H₂O₂, same pH and time.",
@@ -275,9 +266,9 @@
         "Safety: safety glasses (H₂O₂ is an irritant), heat-proof gloves, wash hands after handling tissue ✓"
       ],
       "caption": "A plan: hypothesis, variables, gas-syringe measurement, repeats, a control and safety.",
-      "durationInFrames": 1567,
+      "durationInFrames": 1775,
       "voiceover": {
-        "text": "Let's write a full plan to test the effect of temperature on catalase. Start with a hypothesis. The rate of oxygen production will rise to an optimum near thirty seven degrees, then fall as catalase denatures. The independent variable is temperature, with water baths at a range of temperatures. The dependent variable is the volume of oxygen collected in a gas syringe in sixty seconds. Control the mass of liver or potato, the volume and concentration of hydrogen peroxide, the pH and the time. Warm each tube in its bath before mixing, repeat three times at each temperature and average, and include a boiled enzyme control. Finally, safety. Wear safety glasses, because hydrogen peroxide is an irritant, use heat proof gloves, and wash your hands after handling the tissue."
+        "text": "Let's write a full plan to test the effect of temperature on catalase. Start with a hypothesis. The rate of oxygen production will rise to an an optimum specific to the enzyme preparation, then fall as catalase denatures. The independent variable is temperature, with water baths at a range of temperatures. The dependent variable is the volume of oxygen collected in a gas syringe in sixty seconds. Control the mass of liver or potato, the volume and concentration of hydrogen peroxide, the pH and the time. Warm each tube in its bath before mixing, repeat three times at each temperature and average, and include a boiled enzyme control. Finally, safety. Wear safety glasses, because hydrogen peroxide is an irritant, use heat proof gloves, and wash your hands after handling the tissue."
       }
     },
     {
@@ -302,13 +293,13 @@
       "pausePrompt": "Pause: what do you measure, and what does the boiled tube prove?",
       "answerSteps": [
         "(a) The rate of oxygen produced, for example the volume of gas per minute.",
-        "(b) It is a control: boiled catalase is denatured, so no oxygen shows that the oxygen elsewhere comes from the active enzyme.",
+        "(b) It is a control: boiled catalase is denatured, so a reduced rate supports active-enzyme involvement; include a no-enzyme control too.",
         "(c) Any two of: amount of enzyme, volume and concentration of H₂O₂, pH, time ✓"
       ],
       "caption": "DV: rate of oxygen; boiled enzyme is the control; control enzyme, H₂O₂, pH and time.",
-      "durationInFrames": 1336,
+      "durationInFrames": 1556,
       "voiceover": {
-        "text": "Quick check. In a catalase experiment on temperature, A, what's the dependent variable? B, why include a tube of boiled enzyme? And C, name two controlled variables. Pause, and think about what you measure, and what the boiled tube proves. Right. A, the dependent variable is the rate of oxygen produced, like the volume of gas per minute. B, the boiled tube is a control. Boiling denatures the catalase, so if that tube makes no oxygen, the oxygen in the other tubes must come from the active enzyme. And C, any two of the amount of enzyme, the volume and concentration of hydrogen peroxide, the pH, or the time."
+        "text": "Quick check. In a catalase experiment on temperature, A, what's the dependent variable? B, why include a tube of boiled enzyme? And C, name two controlled variables. Pause, and think about what you measure, and what the boiled tube proves. Right. A, the dependent variable is the rate of oxygen produced, like the volume of gas per minute. B, the boiled tube is a control. Boiling denatures the catalase, so if that tube makes no oxygen, the oxygen in the other tubes supports a contribution from active enzyme; also use a no-enzyme control. And C, any two of the amount of enzyme, the volume and concentration of hydrogen peroxide, the pH, or the time."
       }
     },
     {

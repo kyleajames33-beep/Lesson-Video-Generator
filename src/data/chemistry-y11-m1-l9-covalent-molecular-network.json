@@ -12,7 +12,11 @@
     "investigate the different chemical structures of atoms and elements, including but not limited to:"
   ],
   "moduleLessonCount": 20,
-  "nesaOutcomes": ["CH11-8", "CH11/12-5", "CH11/12-7"],
+  "nesaOutcomes": [
+    "CH11-8",
+    "CH11/12-5",
+    "CH11/12-7"
+  ],
   "inquiryQuestion": "What binds atoms together in elements and compounds?",
   "lessonIntent": "Students can distinguish covalent molecular from covalent network substances and explain melting points by identifying what breaks on melting.",
   "examSkill": "State whether IMFs or covalent bonds break on melting, and rank molecular boiling points by IMF strength.",
@@ -39,9 +43,9 @@
       "body": "CO₂ is a gas that turns solid at −78°C. SiO₂ is quartz, melting at 1713°C. Both are non-metals joined by covalent bonds.",
       "callout": "It's not the bonds — it's how they're arranged.",
       "durationInFrames": 660,
-      "caption": "CO₂ and SiO₂ are both covalent but melt 1800°C apart.",
+      "caption": "CO₂ sublimes at atmospheric pressure; SiO₂ melts at a much higher temperature.",
       "voiceover": {
-        "text": "OK, here's the classic comparison that this whole lesson rests on. Carbon dioxide is a gas at room temperature, and even when you cool it into dry ice, it's solid only below minus seventy-eight degrees. Silicon dioxide is quartz, a hard solid that doesn't melt until one thousand seven hundred and thirteen degrees. Both are made of non-metal atoms joined by covalent bonds, so why such a staggering difference, almost eighteen hundred degrees apart? The answer isn't the bonds themselves, it's how they're arranged, and that one idea, what actually breaks when something melts, unlocks every covalent property question."
+        "text": "Same bonds, wildly different solids CO₂ is a gas that turns solid at −78°C. SiO₂ is quartz, melting at 1713°C. Both are non-metals joined by covalent bonds."
       }
     },
     {
@@ -53,20 +57,26 @@
         "type": "beforeAfter",
         "beforeLabel": "Covalent molecular",
         "afterLabel": "Covalent network",
-        "beforeContent": "Discrete molecules. Melting breaks weak forces between them. Low MP (<300°C). e.g. CO₂, I₂.",
-        "afterContent": "One continuous 3D web of covalent bonds. Melting breaks the bonds themselves. Very high MP (>1000°C). e.g. diamond, SiO₂."
+        "beforeContent": "Discrete molecules. Typically low phase-transition temperatures; CO₂ sublimes at 1 atm.",
+        "afterContent": "One continuous 3D web of covalent bonds. Melting breaks the bonds themselves. High phase-transition temperatures; diamond has no ordinary MP at 1 atm."
       },
       "bullets": [
-        {"text": "Covalent molecular: melting breaks only the weak forces between molecules."},
-        {"text": "Covalent network: melting must break strong covalent bonds throughout."},
-        {"text": "Same atoms, but the structure decides how much energy melting needs."}
+        {
+          "text": "Covalent molecular: melting breaks only the weak forces between molecules."
+        },
+        {
+          "text": "Covalent network: melting must break strong covalent bonds throughout."
+        },
+        {
+          "text": "Same atoms, but the structure decides how much energy melting needs."
+        }
       ],
       "secondary": "The covalent bonds inside a molecule are strong. The forces between separate molecules are weak. That's the whole difference.",
       "callout": "Ask what breaks on melting, not what atoms are present.",
       "durationInFrames": 1170,
       "caption": "Molecular: break weak forces between molecules. Network: break covalent bonds.",
       "voiceover": {
-        "text": "Here's the single most important idea in covalent chemistry. Ask what actually breaks when the substance melts. In a covalent molecular substance, you have discrete, separate molecules, and melting only has to overcome the weak forces between those molecules. The strong covalent bonds inside each molecule stay completely intact, so very little energy is needed, and the melting point is low. In a covalent network solid, there are no separate molecules, the whole crystal is one continuous web of covalent bonds, so to melt it you have to break those strong covalent bonds themselves, which takes enormous energy and gives a very high melting point. Same kind of atoms, but the structure decides everything, so always ask what breaks, not which atoms are there."
+        "text": "The critical distinction What breaks on melting? IMFs in a molecular substance, but covalent bonds in a network solid. Covalent molecular: melting breaks only the weak forces between molecules. Covalent network: melting must break strong covalent bonds throughout. Same atoms, but the structure decides how much energy melting needs. The covalent bonds inside a molecule are strong. The forces between separate molecules are weak. That's the whole difference."
       }
     },
     {
@@ -74,10 +84,18 @@
       "type": "definition",
       "heading": "Boiling-point trends in molecular substances",
       "bullets": [
-        {"text": "Larger molecules: more electrons → stronger dispersion forces → higher BP."},
-        {"text": "I₂ (184°C) > Br₂ (59°C) > Cl₂ (−35°C) > F₂ (−188°C)."},
-        {"text": "Polar molecules add dipole–dipole forces on top of dispersion."},
-        {"text": "Hydrogen bonding (N–H, O–H, F–H) is strongest: H₂O 100°C vs H₂S −60°C."}
+        {
+          "text": "Larger molecules: more electrons → stronger dispersion forces → higher BP."
+        },
+        {
+          "text": "I₂ (184°C) > Br₂ (59°C) > Cl₂ (−35°C) > F₂ (−188°C)."
+        },
+        {
+          "text": "Polar molecules add dipole–dipole forces on top of dispersion."
+        },
+        {
+          "text": "Hydrogen bonding (N–H, O–H, F–H) is strongest: H₂O 100°C vs H₂S −60°C."
+        }
       ],
       "callout": "More electrons, or hydrogen bonding, lifts the boiling point.",
       "durationInFrames": 1050,
@@ -92,9 +110,15 @@
       "heading": "The network solids to know",
       "body": "Each network solid shows a different facet of network bonding.",
       "bullets": [
-        {"text": "Diamond: each C bonded to 4 others in 3D → hardest, MP 3550°C, non-conducting."},
-        {"text": "Graphite: each C bonded to 3, with a delocalised electron → conducts, soft."},
-        {"text": "Silicon dioxide (SiO₂): 3D Si–O–Si network → MP 1713°C, very hard, insoluble."}
+        {
+          "text": "Diamond: each C bonded to 4 others in 3D → hardest, no ordinary atmospheric-pressure melting point, non-conducting."
+        },
+        {
+          "text": "Graphite: each C bonded to 3, with a delocalised electron → conducts, soft."
+        },
+        {
+          "text": "Silicon dioxide (SiO₂): 3D Si–O–Si network → MP 1713°C, very hard, insoluble."
+        }
       ],
       "secondary": "Diamond and graphite are both pure carbon, but the bonding pattern flips their hardness and conductivity completely.",
       "callout": "Same element, different network, opposite properties.",
@@ -121,7 +145,7 @@
                   "flip": true
                 },
                 {
-                  "text": "MP 3550 °C",
+                  "text": "no MP at 1 atm",
                   "at": 177
                 }
               ]
@@ -179,29 +203,29 @@
           }
         }
       },
-      "durationInFrames": 1020,
+      "durationInFrames": 1042,
       "caption": "Diamond, graphite, and SiO₂ each illustrate network bonding.",
       "voiceover": {
-        "text": "Let's meet the network solids you need to know. Diamond, where each carbon is bonded to four others in a rigid three-dimensional tetrahedral web, making it the hardest natural substance, melting around three and a half thousand degrees, and non-conducting because every electron is locked in a bond. Graphite, also pure carbon, but here each carbon bonds to only three others in flat layers, leaving one delocalised electron per atom, so graphite conducts within its layers, and because the layers are held together only weakly, it's soft and slippery. And silicon dioxide, a continuous silicon oxygen network, melting at seventeen thirteen, very hard, and insoluble. Notice diamond and graphite are the same element, yet the bonding pattern flips their hardness and conductivity entirely."
+        "text": "The network solids to know Each network solid shows a different facet of network bonding. Diamond: each C bonded to 4 others in 3D → hardest, no ordinary atmospheric-pressure melting point, non-conducting. Graphite: each C bonded to 3, with a delocalised electron → conducts, soft. Silicon dioxide (SiO₂): 3D Si–O–Si network → MP 1713°C, very hard, insoluble. Diamond and graphite are both pure carbon, but the bonding pattern flips their hardness and conductivity completely."
       }
     },
     {
       "id": "worked-example",
       "type": "workedExample",
       "heading": "CO₂ versus SiO₂",
-      "question": "CO₂ boils at −78°C; SiO₂ melts at 1713°C. Both have a central atom bonded to oxygen. Explain the difference.",
-      "coachNote": "Identify the structure, then ask what breaks on melting.",
+      "question": "CO₂ sublimes near −78.5°C at 1 atm; SiO₂ melts at 1713°C. Both have a central atom bonded to oxygen. Explain the difference.",
+      "coachNote": "Distinguish CO₂ sublimation at 1 atm from SiO₂ melting, then compare structure.",
       "steps": [
         "CO₂: discrete O=C=O molecules → covalent molecular",
         "SiO₂: continuous Si–O–Si 3D network → covalent network",
-        "Melt CO₂: overcome only weak dispersion forces between molecules → very low MP",
+        "Sublime CO₂ at 1 atm: overcome only weak dispersion forces between molecules → low sublimation temperature at 1 atm",
         "Melt SiO₂: break strong Si–O covalent bonds throughout → very high MP",
-        "Answer: the structural type, not the atoms, drives the MP difference ✓"
+        "Answer: the structural type, not the atoms, drives the phase-transition difference ✓"
       ],
       "durationInFrames": 1350,
-      "caption": "CO₂ breaks weak forces; SiO₂ breaks covalent bonds — hence the MP gap.",
+      "caption": "CO₂ breaks weak forces; SiO₂ breaks covalent bonds — hence the phase-transition gap.",
       "voiceover": {
-        "text": "Let's explain the carbon dioxide versus silicon dioxide difference properly. Step one, identify each structure. Carbon dioxide is made of discrete molecules, each one an oxygen double bonded carbon double bonded oxygen, so it's covalent molecular. Silicon dioxide is a continuous three-dimensional network of silicon oxygen bonds, with no separate molecules, so it's covalent network. Step two, to melt carbon dioxide, you only need to overcome the weak dispersion forces between the molecules, the strong carbon oxygen bonds inside each molecule stay intact, so the melting point is very low, minus seventy-eight. Step three, to melt silicon dioxide, you have to break the strong silicon oxygen covalent bonds throughout the entire lattice, which takes enormous energy, giving a melting point of seventeen thirteen. So the difference comes from the structural type, molecular versus network, not from carbon versus silicon."
+        "text": "CO₂ versus SiO₂ CO₂ sublimes near −78.5°C at 1 atm; SiO₂ melts at 1713°C. Both have a central atom bonded to oxygen. Explain the difference. CO₂: discrete O=C=O molecules → covalent molecular SiO₂: continuous Si–O–Si 3D network → covalent network Sublime CO₂ at 1 atm: overcome only weak dispersion forces between molecules → low sublimation temperature at 1 atm Melt SiO₂: break strong Si–O covalent bonds throughout → very high MP Answer: the structural type, not the atoms, drives the phase-transition difference ✓"
       }
     },
     {
