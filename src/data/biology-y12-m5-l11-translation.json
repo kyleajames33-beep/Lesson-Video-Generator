@@ -73,6 +73,49 @@
       "caption": "The ribosome reads mRNA in codons in the cytoplasm; it interprets but does not create the code.",
       "voiceover": {
         "text": "So let's start with the ribosome itself. In lesson ten we copied the DNA message into messenger RNA during transcription. Now that mRNA leaves the nucleus and attaches to a ribosome out in the cytoplasm. The ribosome then slides along the mRNA and reads it in codons, which are three-base chunks, one at a time. That's the key job, breaking the message into readable units. And here's the distinction that earns marks. The ribosome does not write or create the genetic message, it only interprets a message that was already written during transcription. In an exam, always say the ribosome reads mRNA, never that it reads DNA, because the DNA stayed back in the nucleus. Translation is a cytoplasm event, so if you ever write that it happens in the nucleus, you've lost the mark."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Translation",
+        "props": {
+          "mode": "read",
+          "codons": [
+            {
+              "c": "AUG",
+              "aa": "Met"
+            },
+            {
+              "c": "GCU",
+              "aa": "Ala"
+            },
+            {
+              "c": "UUC",
+              "aa": "Phe"
+            },
+            {
+              "c": "AAA",
+              "aa": "Lys"
+            },
+            {
+              "c": "UGG",
+              "aa": "Trp"
+            }
+          ],
+          "steps": [
+            386,
+            452,
+            518,
+            584,
+            650
+          ],
+          "at": {
+            "exit": 206,
+            "attach": 254,
+            "dna": 1154,
+            "cytoplasm": 1346,
+            "rule": 1386
+          }
+        }
       }
     },
     {
@@ -97,6 +140,43 @@
       "caption": "tRNA carries a specific amino acid and an anticodon that pairs with the complementary mRNA codon.",
       "voiceover": {
         "text": "Now the ribosome can read the codons, but reading isn't enough. Something has to bring the right amino acid to each codon, and that something is transfer RNA, or tRNA. Picture each tRNA as a tiny delivery molecule. At one end it carries one specific amino acid, and at the other end it has an anticodon, its own three-base sequence. That anticodon is the part that pairs up with the matching codon on the mRNA. This is exactly why messenger RNA and transfer RNA have different jobs. The mRNA holds the coded instructions, while the tRNA physically carries the amino acid those instructions ask for. The trap that catches students every year is reversing these two. So lock it in, mRNA has codons, tRNA has anticodons and carries the amino acids."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Translation",
+        "props": {
+          "mode": "trna",
+          "codons": [
+            {
+              "c": "AUG",
+              "aa": "Met"
+            },
+            {
+              "c": "GCU",
+              "aa": "Ala"
+            },
+            {
+              "c": "UUC",
+              "aa": "Phe"
+            },
+            {
+              "c": "AAA",
+              "aa": "Lys"
+            },
+            {
+              "c": "UGG",
+              "aa": "Trp"
+            }
+          ],
+          "at": {
+            "trna": 242,
+            "aminoacid": 446,
+            "anticodon": 590,
+            "dock": 722,
+            "jobs": 950,
+            "rule": 1370
+          }
+        }
       }
     },
     {
@@ -146,6 +226,52 @@
       "caption": "Codon-anticodon pairing means the order of codons determines the order of amino acids.",
       "voiceover": {
         "text": "Here's where it comes together. At the ribosome, a tRNA anticodon pairs with its complementary mRNA codon, and that pairing locks the tRNA's amino acid into the correct position in the chain. Now think about the whole strand. Because each codon is read in order, the sequence of codons directly sets the sequence of amino acids. First codon, first amino acid, second codon, second amino acid, on down the line. And this is the big idea of the entire module, so hold onto it. The order of bases controls the order of amino acids, which controls how the protein folds, which eventually shows up as a trait. That's also why a single change in the mRNA can change which amino acid gets placed, and sometimes that changes the protein entirely."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Translation",
+        "props": {
+          "mode": "order",
+          "codons": [
+            {
+              "c": "AUG",
+              "aa": "Met"
+            },
+            {
+              "c": "GCU",
+              "aa": "Ala"
+            },
+            {
+              "c": "UUC",
+              "aa": "Phe"
+            },
+            {
+              "c": "AAA",
+              "aa": "Lys"
+            },
+            {
+              "c": "UGG",
+              "aa": "Trp"
+            }
+          ],
+          "mutate": {
+            "codon": 1,
+            "base": 1,
+            "to": "A",
+            "aa": "Asp"
+          },
+          "steps": [
+            50,
+            200,
+            602,
+            662,
+            734
+          ],
+          "at": {
+            "mutate": 1262,
+            "rule": 950
+          }
+        }
       }
     },
     {
@@ -189,6 +315,46 @@
       "caption": "The ribosome joins positioned amino acids with peptide bonds; repeating this is polypeptide elongation.",
       "voiceover": {
         "text": "So we've got the amino acids being positioned in order by codon-anticodon matching. Now they need to be joined together. Once two amino acids sit next to each other at the ribosome, the ribosome catalyses a peptide bond between them, linking them into a chain. Then it shifts along, the next tRNA comes in, the next amino acid is positioned, another peptide bond forms, and the chain gets longer. That repeating, lengthening process is called polypeptide elongation. And the reason this matters so much is that almost everything a cell does depends on it. Enzymes, structural proteins, transport proteins, signalling proteins, all of them only work if their amino acids are in the right order. Insulin is the classic example. It only functions as a hormone if translation builds exactly the right sequence, and if that sequence comes out wrong, the insulin may simply not work."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Translation",
+        "props": {
+          "mode": "elongate",
+          "codons": [
+            {
+              "c": "AUG",
+              "aa": "Met"
+            },
+            {
+              "c": "GCU",
+              "aa": "Ala"
+            },
+            {
+              "c": "UUC",
+              "aa": "Phe"
+            },
+            {
+              "c": "AAA",
+              "aa": "Lys"
+            },
+            {
+              "c": "UGG",
+              "aa": "Trp"
+            }
+          ],
+          "steps": [
+            20,
+            308,
+            610,
+            722,
+            870
+          ],
+          "at": {
+            "elongation": 830,
+            "rule": 1142
+          }
+        }
       }
     },
     {

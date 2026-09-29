@@ -76,31 +76,21 @@
         "audioFile": "public/audio/Biology-Y12-M5-L3/concept-plants.3779a310bc07.mp3"
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "p",
-            "label": "Pollination"
-          },
-          {
-            "id": "f",
-            "label": "Fertilisation"
-          },
-          {
-            "id": "s",
-            "label": "Seed"
+        "type": "diorama",
+        "kind": "bio12m5Flower",
+        "props": {
+          "mode": "pollination",
+          "at": {
+            "pollination": 134,
+            "anther": 242,
+            "stigma": 314,
+            "fertilisation": 422,
+            "ovule": 626,
+            "seed": 734,
+            "vegetative": 1166,
+            "runners": 1226
           }
-        ],
-        "edges": [
-          {
-            "from": "p",
-            "to": "f"
-          },
-          {
-            "from": "f",
-            "to": "s"
-          }
-        ]
+        }
       }
     },
     {
@@ -126,6 +116,19 @@
       "voiceover": {
         "text": "Now the microbes and fungi, where speed is everything. Fungi reproduce asexually in two main ways. Yeasts use budding, where a small bud grows off the parent cell and breaks away. Moulds release spores, and those spores are clever, because they let the fungus both survive harsh conditions and disperse widely on the wind, only growing into a new individual when they land somewhere suitable. Bacteria use binary fission. The single cell copies its chromosome, then splits straight down the middle into two daughter cells, no gametes and no fertilisation involved at all. Protists, the single celled eukaryotes, mostly do the same, using binary fission or budding. The common thread across all three groups is rapid asexual division, which lets a population explode in numbers whenever conditions are good.",
         "audioFile": "public/audio/Biology-Y12-M5-L3/concept-microbes.0f967aa9b8b1.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Microbes",
+        "props": {
+          "at": {
+            "budding": 146,
+            "spores": 302,
+            "fission": 734,
+            "protists": 1046,
+            "rule": 1394
+          }
+        }
       }
     },
     {
@@ -183,6 +186,21 @@
       "voiceover": {
         "text": "So with all these methods on the table, how do you decide which one wins? It is the same logic as lesson one, just applied more widely. Under stable, resource rich conditions, the fast asexual methods are excellent, because they let a population build numbers quickly without needing a mate. Under changing conditions, or when disease is spreading, the variation from sexual reproduction becomes the advantage, because some varied offspring may resist. And here is a subtle point examiners reward. Reproductive success does not mean producing the maximum number of offspring. It means producing enough offspring that survive to continue the species. Many plants actually hedge their bets, using both sexual and asexual routes. For the exam, the structure is always the same, name the method, then explain why it suits those specific conditions.",
         "audioFile": "public/audio/Biology-Y12-M5-L3/concept-environment.4d374b6d9d23.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Population",
+        "props": {
+          "mode": "compare",
+          "at": {
+            "stable": 266,
+            "change": 542,
+            "some": 734,
+            "enough": 1058,
+            "hedge": 1190,
+            "rule": 1406
+          }
+        }
       }
     },
     {

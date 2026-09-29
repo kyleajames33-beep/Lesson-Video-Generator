@@ -78,7 +78,24 @@
         "text": "Let's start with what DNA is actually made of. The building block is the nucleotide, and every nucleotide has three parts, a sugar called deoxyribose, a phosphate group, and a nitrogenous base. Nucleotides link together into long strands, with the sugars and phosphates forming the sugar phosphate backbone, and two of those strands twist around each other into the double helix. Now here's the key idea. The backbone is repetitive, the same sugar and phosphate over and over, so the information has to be in the bases. There are four of them, adenine, thymine, cytosine and guanine, and their order along the strand is the message, just like the same twenty six letters spell every word depending on their order."
       },
       "diagram": {
-        "type": "dnaHelix"
+        "type": "diorama",
+        "kind": "bio12m5Dna",
+        "props": {
+          "mode": "nucleotide",
+          "sequence": "ACTGGA",
+          "at": {
+            "parts": 214,
+            "sugar": 274,
+            "phosphate": 298,
+            "base": 346,
+            "link": 382,
+            "backbone": 526,
+            "twist": 622,
+            "info": 946,
+            "sequence": 1174
+          }
+        },
+        "delay": 6
       },
       "revealDelays": {
         "diagram": 6
@@ -106,6 +123,24 @@
       "caption": "A-T and C-G pairing by hydrogen bonds lets each strand template the other.",
       "voiceover": {
         "text": "Now the rule that makes everything work, complementary base pairing. Adenine always pairs with thymine, and cytosine always pairs with guanine, because no other combinations physically fit. The pairs are held together by hydrogen bonds across the middle of the helix, two between A and T, and three between C and G. Each one is weak, but there are millions of them. One more structural detail you'll need soon. The two strands run in opposite directions, which we call antiparallel. And here's why the pairing rule is so powerful. Because each base has only one possible partner, each strand dictates the sequence of the other, so either strand can act as a template."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Dna",
+        "props": {
+          "mode": "pairing",
+          "sequence": "ACTGGA",
+          "at": {
+            "at": 50,
+            "cg": 122,
+            "nofit": 194,
+            "hbonds": 326,
+            "two": 422,
+            "three": 494,
+            "anti": 878,
+            "template": 1234
+          }
+        }
       }
     },
     {
@@ -130,6 +165,21 @@
       "caption": "Strands separate and each templates a new strand: each product keeps one original strand.",
       "voiceover": {
         "text": "So how does the copying actually happen? It's called semiconservative replication, and the name tells you the answer. First, the two original strands unzip and separate as the hydrogen bonds between the bases break. Then each old strand acts as a template, and a brand new complementary strand is built against it, following A with T and C with G. The result is two DNA molecules, and here's the crucial detail, each one contains one original strand and one new strand. Half of each molecule is conserved, which is exactly what semiconservative means. Get the wording right, because it's not two brand new molecules, and no original strand is thrown away."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Dna",
+        "props": {
+          "mode": "replication",
+          "sequence": "ACTGGA",
+          "at": {
+            "unzip": 206,
+            "template": 422,
+            "build": 458,
+            "two": 686,
+            "rule": 818
+          }
+        }
       }
     },
     {
@@ -176,34 +226,22 @@
       ],
       "callout": "Same direction of building, 5′ to 3′, on both strands. Only the lagging strand is made in pieces.",
       "diagram": {
-        "type": "table",
-        "headers": [
-          "",
-          "Leading strand",
-          "Lagging strand"
-        ],
-        "rows": [
-          [
-            "Direction vs fork",
-            "Towards the fork",
-            "Away from the fork"
-          ],
-          [
-            "Synthesis",
-            "Continuous",
-            "In Okazaki fragments"
-          ],
-          [
-            "Primers needed",
-            "One",
-            "One per fragment"
-          ],
-          [
-            "Ligase needed",
-            "Very little",
-            "To join every fragment"
-          ]
-        ]
+        "type": "diorama",
+        "kind": "bio12m5Fork",
+        "props": {
+          "at": {
+            "fork": 94,
+            "direction": 226,
+            "opposite": 322,
+            "leading": 478,
+            "lagging": 874,
+            "fragments": 1030,
+            "primers": 1090,
+            "ligase": 1138,
+            "rule": 1450
+          }
+        },
+        "delay": 6
       },
       "revealDelays": {
         "diagram": 6

@@ -74,6 +74,20 @@
       "voiceover": {
         "text": "Let's start with what fertilisation actually achieves, because it is more than just sperm meets egg. Gametes are haploid, meaning each one carries only a single set of chromosomes. When a haploid sperm fuses with a haploid egg, the two single sets combine into a full double set. That fused cell is the zygote, and it is diploid, with two sets of chromosomes, one from each parent. So fertilisation restores the species chromosome number, putting it back to where a body cell sits. The sequence to lock in is short, haploid gametes, then fertilisation, then a diploid zygote. We saw last lesson that this halving and restoring keeps the chromosome number stable across generations, rather than doubling it every time, and meiosis is what does the halving.",
         "audioFile": "public/audio/Biology-Y12-M5-L2/concept-fertilisation.07b03799c40e.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Ploidy",
+        "props": {
+          "mode": "fertilise",
+          "at": {
+            "gametes": 146,
+            "fuse": 302,
+            "zygote": 566,
+            "rule": 758,
+            "sequence": 1010
+          }
+        }
       }
     },
     {
@@ -99,6 +113,22 @@
       "voiceover": {
         "text": "The first strategy is external fertilisation, and the salmon are a perfect example. Here the gametes meet outside the body, almost always in water. The big advantage is sheer quantity, animals release enormous numbers of gametes, and so potentially produce many offspring at once. The catch is that the success rate per gamete is low. Out in open water, most sperm never reach an egg, predators eat many of the eggs and young, and the whole thing only works in water, because gametes would simply dry out on land. It also relies on timing, which is why so many species spawn together in synchronised events, so the sperm and egg are actually in the water at the same moment before they drift apart. You see external fertilisation in fish, amphibians like frogs, and lots of marine invertebrates.",
         "audioFile": "public/audio/Biology-Y12-M5-L2/concept-external.fe6ccb26fa70.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Fertilise",
+        "props": {
+          "mode": "external",
+          "at": {
+            "outside": 134,
+            "many": 266,
+            "low": 518,
+            "miss": 662,
+            "water": 950,
+            "timing": 1046,
+            "examples": 1466
+          }
+        }
       }
     },
     {
@@ -126,11 +156,21 @@
         "audioFile": "public/audio/Biology-Y12-M5-L2/concept-internal.464e49cff61f.mp3"
       },
       "diagram": {
-        "type": "beforeAfter",
-        "beforeLabel": "External fertilisation",
-        "afterLabel": "Internal fertilisation",
-        "beforeContent": "Many gametes — low success, needs water",
-        "afterContent": "Fewer gametes — high protection, on land"
+        "type": "diorama",
+        "kind": "bio12m5Fertilise",
+        "props": {
+          "mode": "compare",
+          "at": {
+            "inside": 50,
+            "protection": 146,
+            "higher": 326,
+            "land": 434,
+            "cost": 662,
+            "examples": 902,
+            "trap": 998,
+            "birds": 1190
+          }
+        }
       }
     },
     {

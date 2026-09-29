@@ -117,7 +117,69 @@
         "audioFile": "public/audio/Biology-Y12-M5-L14/concept-autosomal.c2b77c82c938.mp3"
       },
       "diagram": {
-        "type": "pedigree"
+        "type": "diorama",
+        "kind": "bio12m5Cross",
+        "props": {
+          "p1": {
+            "label": "carrier",
+            "alleles": [
+              "A",
+              "a"
+            ]
+          },
+          "p2": {
+            "label": "carrier",
+            "alleles": [
+              "A",
+              "a"
+            ]
+          },
+          "order": [
+            "A",
+            "a"
+          ],
+          "pheno": {
+            "AA": "ok",
+            "Aa": "ok",
+            "aa": "aff"
+          },
+          "keys": [
+            {
+              "key": "ok",
+              "label": "unaffected",
+              "color": "white"
+            },
+            {
+              "key": "aff",
+              "label": "affected",
+              "color": "coral"
+            }
+          ],
+          "intro": [
+            {
+              "text": "autosomal: males and females affected equally",
+              "at": 262
+            },
+            {
+              "text": "dominant: shows in every generation",
+              "at": 478
+            },
+            {
+              "text": "recessive: carriers (Aa) can skip a generation",
+              "at": 778
+            }
+          ],
+          "at": {
+            "parents": 1066,
+            "gametes": 1096,
+            "fill": 1136,
+            "geno": 1198,
+            "phen": 1318,
+            "result": 1414
+          },
+          "result": "each child: {p:aff} chance of being affected (aa)"
+        },
+        "delay": 6
       },
       "revealDelays": {
         "diagram": 6
@@ -212,6 +274,76 @@
       "voiceover": {
         "text": "Now the sex-linked case, and this is where students lose marks if they rush. Most sex-linked genes you'll meet are on the X chromosome. Females are XX, but males are XY, which means males have only a single X for these genes. We call that hemizygous. Here's why it matters. A female needs two recessive alleles to show an X-linked recessive trait, but a male needs only one, because he's got nowhere to hide it. That's why conditions like haemophilia and red-green colour blindness show up far more often in males. And there's one golden rule for pedigrees, a father passes his sons a Y chromosome, not an X, so there is no direct father-to-son transmission of an X-linked trait. A carrier mother with an unaffected father gives each son a fifty percent chance of being affected, and each daughter a fifty percent chance of being a carrier.",
         "audioFile": "public/audio/Biology-Y12-M5-L14/concept-sexlinked.bc04b906b1a2.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Cross",
+        "props": {
+          "p1": {
+            "label": "carrier mother",
+            "alleles": [
+              "Xᴴ",
+              "Xʰ"
+            ]
+          },
+          "p2": {
+            "label": "father",
+            "alleles": [
+              "Xᴴ",
+              "Y"
+            ]
+          },
+          "order": [
+            "Xᴴ",
+            "Xʰ",
+            "Y"
+          ],
+          "token": "person",
+          "bySex": true,
+          "pheno": {
+            "XᴴXᴴ": "d-ok",
+            "XᴴXʰ": "d-carrier",
+            "XᴴY": "son-ok",
+            "XʰY": "son-aff"
+          },
+          "keys": [
+            {
+              "key": "d-ok",
+              "label": "unaffected daughter",
+              "color": "white"
+            },
+            {
+              "key": "d-carrier",
+              "label": "carrier daughter",
+              "color": "carrier"
+            },
+            {
+              "key": "son-ok",
+              "label": "unaffected son",
+              "color": "white"
+            },
+            {
+              "key": "son-aff",
+              "label": "affected son",
+              "color": "coral"
+            }
+          ],
+          "intro": [
+            {
+              "text": "females XX · males XY: one X (hemizygous)",
+              "at": 470
+            }
+          ],
+          "at": {
+            "parents": 218,
+            "gametes": 710,
+            "fill": 1058,
+            "yColumn": 1178,
+            "geno": 1382,
+            "phen": 1412,
+            "result": 1502
+          }
+        }
       }
     },
     {

@@ -74,6 +74,23 @@
       "caption": "When the heterozygote has its own phenotype, the ratio shifts from 3:1 to 1:2:1.",
       "voiceover": {
         "text": "Let's reframe what we learned last lesson. In simple Mendelian inheritance, the heterozygote looks exactly like the dominant homozygote, which is what gives you that three to one phenotype ratio. But that's not the only possibility. Sometimes the heterozygote has its own distinct appearance, and when that happens, the three to one ratio breaks down. In incomplete dominance, the heterozygote is intermediate, a blend, which gives a one to two to one phenotype ratio instead. In co-dominance, both allele products show up together in the heterozygote, again giving it a distinct phenotype. The key thing to hold onto is that the alleles still segregate normally in meiosis, exactly as before. The only thing that's different in these patterns is how the heterozygote gets expressed. So always read the heterozygote first, and the ratio follows from there."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Heterozygote",
+        "props": {
+          "mode": "compare",
+          "at": {
+            "simple": 26,
+            "simpleRatio": 230,
+            "het": 422,
+            "incomplete": 602,
+            "incompleteRatio": 734,
+            "codominance": 842,
+            "segregate": 1166,
+            "rule": 1442
+          }
+        }
       }
     },
     {
@@ -98,6 +115,79 @@
       "caption": "Incomplete dominance gives an intermediate heterozygote; genotype and phenotype ratios are both 1:2:1.",
       "voiceover": {
         "text": "Let's take incomplete dominance first. Here, neither allele is fully dominant over the other, so the heterozygote ends up somewhere in between the two homozygotes. The classic example is flower colour, a red flower crossed with a white flower gives pink offspring. Because the heterozygote has its own distinct look, the phenotype ratio matches the genotype ratio exactly, both one to two to one. Now here's the trap that catches people. Pink does not mean the red and white alleles have blended together permanently, like mixing paint. The alleles are completely intact and they still segregate cleanly in meiosis. The proof is in the next generation, cross two pink flowers together, and you get red, pink, and white offspring reappearing. If the alleles had truly merged, the red and white could never come back. So it's a blended phenotype, not blended inheritance."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Cross",
+        "props": {
+          "p1": {
+            "label": "pink",
+            "alleles": [
+              "Cᴿ",
+              "Cᵂ"
+            ]
+          },
+          "p2": {
+            "label": "pink",
+            "alleles": [
+              "Cᴿ",
+              "Cᵂ"
+            ]
+          },
+          "order": [
+            "Cᴿ",
+            "Cᵂ"
+          ],
+          "token": "flower",
+          "pheno": {
+            "CᴿCᴿ": "red",
+            "CᴿCᵂ": "pink",
+            "CᵂCᵂ": "white"
+          },
+          "keys": [
+            {
+              "key": "red",
+              "label": "red",
+              "color": "red"
+            },
+            {
+              "key": "pink",
+              "label": "pink",
+              "color": "pink"
+            },
+            {
+              "key": "white",
+              "label": "white",
+              "color": "white"
+            }
+          ],
+          "pre": {
+            "left": "red",
+            "right": "white",
+            "result": "all pink",
+            "leftKey": "red",
+            "rightKey": "white",
+            "resultKey": "pink",
+            "at": 314
+          },
+          "emphasise": {
+            "genotypes": [
+              "CᴿCᴿ",
+              "CᵂCᵂ"
+            ],
+            "text": "red and white come back",
+            "at": 1298
+          },
+          "at": {
+            "parents": 528,
+            "gametes": 558,
+            "fill": 588,
+            "geno": 638,
+            "phen": 668,
+            "result": 1574
+          },
+          "result": "blended phenotype, not blended alleles"
+        }
       }
     },
     {
@@ -186,6 +276,22 @@
       "caption": "Co-dominance expresses both allele products together; AB blood shows both A and B antigens.",
       "voiceover": {
         "text": "Now co-dominance, which is the one most often confused with incomplete dominance. In co-dominance, both alleles are expressed fully, and at the same time, in the heterozygote. Nothing is blended and nothing is hidden, you simply see both allele products together. The standard example is the AB blood type. A person with the A allele and the B allele has both the A antigen and the B antigen sitting on their red blood cells, side by side. They don't have some in-between, blended antigen, they have both, distinctly. So contrast the two patterns carefully. Incomplete dominance gives you an in-between phenotype, like pink. Co-dominance gives you both separate products at once, like the A and B antigens together. Different mechanisms, different results, and the exam loves testing whether you can tell them apart."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Heterozygote",
+        "props": {
+          "mode": "blood",
+          "at": {
+            "single": 98,
+            "ab": 482,
+            "antigens": 674,
+            "notBlend": 902,
+            "incomplete": 1058,
+            "codominance": 1166,
+            "rule": 1490
+          }
+        }
       }
     },
     {

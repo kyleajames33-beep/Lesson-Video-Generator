@@ -79,7 +79,22 @@
       "voiceover": {
         "text": "So let's start with the big idea that links every technique in this lesson. Humans control reproduction by choosing which individuals get to contribute gametes. The oldest version is selective breeding, where only animals or plants with the traits you want, like high milk yield or large grain, are allowed to reproduce. Artificial insemination takes that further in animals. Semen is collected from one chosen male and used to fertilise many females, with no natural mating at all, so a single prized bull can father thousands of calves. And embryo transfer does something similar on the female side, with embryos from one elite cow placed into surrogate mothers, so she produces far more offspring than she naturally could. Here's the key point for later. None of these methods change the DNA itself. They change which existing alleles get passed on, and how often."
       },
-      "durationInFrames": 1761
+      "durationInFrames": 1761,
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Breeding",
+        "props": {
+          "at": {
+            "choose": 146,
+            "selective": 278,
+            "ai": 554,
+            "many": 950,
+            "embryo": 998,
+            "surrogate": 1202,
+            "rule": 1418
+          }
+        }
+      }
     },
     {
       "id": "concept-pollination-methods",
@@ -100,39 +115,21 @@
       "secondary": "Removing the anthers is called emasculation. It stops the flower pollinating itself, so the breeder knows exactly who both parents are.",
       "callout": "Emasculate, bag, transfer, rebag: that's a controlled cross.",
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "a",
-            "label": "Remove anthers"
-          },
-          {
-            "id": "b",
-            "label": "Bag flower"
-          },
-          {
-            "id": "c",
-            "label": "Brush on chosen pollen"
-          },
-          {
-            "id": "d",
-            "label": "Rebag and label"
+        "type": "diorama",
+        "kind": "bio12m5Flower",
+        "props": {
+          "mode": "handcross",
+          "at": {
+            "hand": 206,
+            "remove": 362,
+            "emasculation": 638,
+            "bag": 758,
+            "brush": 970,
+            "rebag": 1106,
+            "hives": 1238,
+            "mech": 1478
           }
-        ],
-        "edges": [
-          {
-            "from": "a",
-            "to": "b"
-          },
-          {
-            "from": "b",
-            "to": "c"
-          },
-          {
-            "from": "c",
-            "to": "d"
-          }
-        ]
+        }
       },
       "caption": "Hand pollination, managed pollinators and mechanical pollen application all control fertilisation.",
       "voiceover": {

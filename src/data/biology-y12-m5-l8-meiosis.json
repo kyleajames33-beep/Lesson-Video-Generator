@@ -72,6 +72,21 @@
       "caption": "Meiosis halves a diploid cell to haploid gametes so fertilisation restores the number.",
       "voiceover": {
         "text": "Let's start with the core problem meiosis solves. Body cells are diploid, which means they carry two complete sets of chromosomes, arranged as homologous pairs, one chromosome of each pair inherited from each parent. Gametes, though, are haploid, carrying just a single set. Why does that matter? Think about fertilisation. When two gametes fuse, their chromosomes add together. If gametes were diploid, fusion would double the chromosome number every single generation, which would quickly be catastrophic. So meiosis steps in beforehand and halves the number, taking a diploid cell down to haploid gametes. Then, when fertilisation happens, the two haploid sets combine to restore the normal diploid number, rather than doubling it. So meiosis and fertilisation work as a pair, one halves, the other restores, and the chromosome number stays stable across generations."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Ploidy",
+        "props": {
+          "mode": "cycle",
+          "at": {
+            "meiosis": 62,
+            "gametes": 374,
+            "fuse": 518,
+            "doubling": 698,
+            "zygote": 1166,
+            "stable": 1478
+          }
+        }
       }
     },
     {
@@ -98,39 +113,17 @@
         "text": "Meiosis runs as two divisions, one after the other, and the distinction between them is heavily tested. Meiosis one is the reduction division, this is the one that actually halves the chromosome number, because here the homologous pairs are separated, one chromosome of each pair going to each new cell. Then meiosis two follows, and it looks much like mitosis, because here the sister chromatids separate. Starting from one diploid cell, the two divisions together produce four haploid cells. And here is the detail you must get right. The DNA is replicated only once, before meiosis begins, but then two divisions follow. That single replication followed by two divisions is exactly what gives you four cells, each with only half the original chromosome number. One replication, two divisions, four haploid cells."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "d",
-            "label": "Diploid cell"
-          },
-          {
-            "id": "m1",
-            "label": "Meiosis I"
-          },
-          {
-            "id": "m2",
-            "label": "Meiosis II"
-          },
-          {
-            "id": "g",
-            "label": "4 haploid"
+        "type": "diorama",
+        "kind": "bio12m5Meiosis",
+        "props": {
+          "at": {
+            "pairing": 74,
+            "m1": 362,
+            "m2": 686,
+            "result": 842,
+            "once": 1022
           }
-        ],
-        "edges": [
-          {
-            "from": "d",
-            "to": "m1"
-          },
-          {
-            "from": "m1",
-            "to": "m2"
-          },
-          {
-            "from": "m2",
-            "to": "g"
-          }
-        ]
+        }
       }
     },
     {
@@ -155,6 +148,20 @@
       "caption": "Crossing over and independent assortment generate new allele combinations in each gamete.",
       "voiceover": {
         "text": "Now the part that makes meiosis special, because it does not just halve the number, it also generates variation, and it does so by two processes. The first is crossing over, which happens in meiosis one. Homologous chromosomes line up together and physically exchange corresponding segments, which produces new combinations of alleles along the chromosomes. The second is independent assortment. When the homologous pairs line up before separating, they do so randomly, so different mixes of maternal and paternal chromosomes end up in different gametes. Both processes increase the variation between the gametes that are produced. And here is the trap that catches so many students. Crossing over creates new combinations of existing alleles, it does not create brand new alleles. New alleles only arise through mutation, which is a different process later in the module. So say it carefully, new combinations, not new alleles."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Reshuffle",
+        "props": {
+          "at": {
+            "cross": 278,
+            "swap": 446,
+            "assort": 626,
+            "arrange2": 782,
+            "result": 1202
+          },
+          "rule": "new combinations, not new alleles"
+        }
       }
     },
     {

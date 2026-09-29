@@ -74,6 +74,23 @@
       "caption": "Three mechanisms create new allele combinations; only mutation creates new alleles.",
       "voiceover": {
         "text": "So let's frame the whole lesson with one clean split. Genetic variation comes from two fundamentally different kinds of change. The first kind is reshuffling, taking alleles that already exist in the population and dealing them out in new combinations. Three mechanisms do this, crossing over, independent assortment, and random fertilisation. None of them invents a new allele, they just remix the existing ones. The second kind is changing the DNA sequence itself, and only one source does that, mutation. Mutation is the only way a genuinely new allele appears in the first place. Keep this split in your head for the rest of the lesson. Three mechanisms remix what's already there, and one mechanism writes something brand new into the DNA. Everything else is detail hanging off that frame."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5AllelePool",
+        "props": {
+          "mode": "two",
+          "at": {
+            "reshuffle": 218,
+            "crossing": 458,
+            "assortment": 482,
+            "fertilisation": 518,
+            "none": 542,
+            "mutation": 746,
+            "only": 890,
+            "rule": 1202
+          }
+        }
       }
     },
     {
@@ -98,6 +115,20 @@
       "caption": "Crossing over and independent assortment both make genetically varied gametes during meiosis.",
       "voiceover": {
         "text": "Let's zoom into meiosis, because it actually contains two of our reshuffling mechanisms. The first is crossing over. During meiosis, homologous chromosomes line up and physically swap matching segments with each other. That produces recombinant chromosomes, carrying a new combination of alleles along their length. The second is independent assortment. When the homologous pairs line up to be separated, each pair orients completely at random, so different gametes end up with different mixes of whole chromosomes. Here's the nice way to keep them apart. Crossing over reshuffles alleles along a single chromosome, while independent assortment reshuffles entire chromosomes between gametes. They work differently, but the result is the same, the gametes produced by one single person are almost all genetically different from one another."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Reshuffle",
+        "props": {
+          "at": {
+            "cross": 122,
+            "swap": 242,
+            "assort": 506,
+            "arrange2": 686,
+            "result": 1358
+          },
+          "rule": "same alleles, reshuffled: varied gametes"
+        }
       }
     },
     {
@@ -147,6 +178,20 @@
       "caption": "Random fertilisation combines already-varied gametes, so each zygote genotype is essentially unique.",
       "voiceover": {
         "text": "Now add the third reshuffling mechanism, random fertilisation, and the numbers explode. Remember, each parent is already producing a huge range of genetically different gametes thanks to crossing over and independent assortment. Random fertilisation means any one of those gametes can fuse with any one of the gametes from the other parent. So you take an already enormous variety of sperm, an already enormous variety of eggs, and you combine them completely at chance. The number of possible zygote genotypes becomes staggering. And this is exactly why ordinary siblings turn out similar but not identical. They're drawing alleles from the same two parents, so there's real resemblance, but meiotic shuffling plus random fertilisation makes each combination essentially unique. Identical twins are the exception, and they need a separate developmental event, not ordinary fertilisation."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5AllelePool",
+        "props": {
+          "mode": "fertilise",
+          "at": {
+            "varied": 158,
+            "any": 350,
+            "chance": 782,
+            "siblings": 986,
+            "twins": 1346
+          }
+        }
       }
     },
     {
@@ -171,6 +216,21 @@
       "caption": "Mutation changes DNA sequence to create new alleles; the other three only recombine existing ones.",
       "voiceover": {
         "text": "So where do new alleles actually come from in the first place? Only mutation. A mutation is a change in the DNA sequence itself, and that change can produce an allele the population has never had before. This is the crucial contrast. Meiosis and fertilisation are powerful, but they can only ever reshuffle alleles that already exist, they can't invent one. So if you ever see a genuinely new allele appear in a gene pool, it had to start life as a mutation. And here's the precise wording I want you to lock in for the exam. Mutation creates new alleles. Crossing over, independent assortment, and random fertilisation create new combinations of alleles. Get that distinction exactly right, and don't fall into calling every source of variation a mutation."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5AllelePool",
+        "props": {
+          "mode": "mutation",
+          "at": {
+            "only": 74,
+            "change": 146,
+            "newallele": 338,
+            "reshuffle": 530,
+            "start": 842,
+            "rule": 1094
+          }
+        }
       }
     },
     {

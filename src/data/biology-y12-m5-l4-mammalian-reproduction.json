@@ -74,6 +74,24 @@
       "voiceover": {
         "text": "Let's start with the two gametes, because their structures are a beautiful example of form fitting function. The sperm is built for one job, getting to the egg and delivering its DNA. It has a flagellum, a tail, to swim. It is packed with mitochondria to power that swimming. It carries an acrosome at the tip, full of digestive enzymes to break into the egg. And it holds a haploid nucleus. The egg is the opposite, built for supply. It is large and non motile, it does not move, it is also haploid, and it is loaded with nutrient rich cytoplasm to feed the early embryo before it can get nutrients any other way. Fertilisation itself normally happens in the oviduct, the tube leading from the ovary, and when sperm and egg fuse there, the diploid chromosome number is restored. But, as we said, that is only the start.",
         "audioFile": "public/audio/Biology-Y12-M5-L4/concept-gametes.c2e56e7164b7.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Mammal",
+        "props": {
+          "mode": "gametes",
+          "at": {
+            "flagellum": 350,
+            "mito": 458,
+            "acrosome": 554,
+            "nucleus": 758,
+            "egg": 782,
+            "nonmotile": 926,
+            "cytoplasm": 1106,
+            "oviduct": 1370,
+            "diploid": 1550
+          }
+        }
       }
     },
     {
@@ -101,39 +119,20 @@
         "audioFile": "public/audio/Biology-Y12-M5-L4/concept-implantation.4031201a8453.mp3"
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "z",
-            "label": "Zygote"
-          },
-          {
-            "id": "c",
-            "label": "Cleavage"
-          },
-          {
-            "id": "b",
-            "label": "Blastocyst"
-          },
-          {
-            "id": "i",
-            "label": "Implantation"
+        "type": "diorama",
+        "kind": "bio12m5Mammal",
+        "props": {
+          "mode": "journey",
+          "at": {
+            "zygote": 0,
+            "cleavage": 278,
+            "travel": 398,
+            "blastocyst": 650,
+            "implant": 794,
+            "endometrium": 890,
+            "key": 1082
           }
-        ],
-        "edges": [
-          {
-            "from": "z",
-            "to": "c"
-          },
-          {
-            "from": "c",
-            "to": "b"
-          },
-          {
-            "from": "b",
-            "to": "i"
-          }
-        ]
+        }
       }
     },
     {
@@ -159,6 +158,23 @@
       "voiceover": {
         "text": "Once the embryo is implanted, it needs a supply line, and that is the placenta. The placenta is an exchange organ. Oxygen and nutrients pass from the mother across to the fetus, and in the other direction, carbon dioxide and metabolic wastes pass from the fetus back to the mother. But here is the detail examiners always check. Maternal and fetal blood do not mix directly. The exchange happens across a thin barrier, by diffusion, which keeps the two blood supplies separate while still letting materials cross. The placenta also has a second job, an endocrine one, releasing hormones that help maintain the pregnancy. And while we are here, get the two developmental terms straight. The embryo is the early stage, when organs are forming. The fetus is the later stage, focused on growth and maturation.",
         "audioFile": "public/audio/Biology-Y12-M5-L4/concept-placenta.c454da3676eb.mp3"
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Mammal",
+        "props": {
+          "mode": "placenta",
+          "at": {
+            "exchange": 158,
+            "inward": 182,
+            "outward": 374,
+            "nomix": 674,
+            "barrier": 782,
+            "hormones": 1070,
+            "embryo": 1322,
+            "fetus": 1442
+          }
+        }
       }
     },
     {

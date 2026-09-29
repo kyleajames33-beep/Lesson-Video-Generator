@@ -98,6 +98,20 @@
       "caption": "Protein shape comes from amino acid sequence and determines function; one change can break it.",
       "voiceover": {
         "text": "Now why does that one amino acid in haemoglobin matter so much? Because a protein isn't just a string of amino acids, it's that string folded into a very specific three dimensional shape, and the shape is what does the job. So here's the chain of logic that runs through this whole module. Change the amino acid sequence, and you change the way the protein folds. Change the folding, and you change its shape. Change the shape, and you change its function. That's exactly why a single mutation can completely break a protein, like it does in sickle-cell. And it's the deeper reason that errors in transcription, translation, or the DNA itself actually matter biologically, because every one of them can shift the sequence, and the sequence sets the shape."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Fold",
+        "props": {
+          "at": {
+            "fold": 290,
+            "change": 566,
+            "refold": 722,
+            "shape": 632,
+            "fail": 878,
+            "rule": 1442
+          }
+        }
       }
     },
     {
@@ -149,39 +163,42 @@
         "text": "Now the single most important idea in this lesson, and the one that separates a band six answer. Genes do not turn into traits directly. There's a pathway, and you need to write all of it. It goes genotype, then protein, then biological effect, then phenotype. So the genotype sets which proteins get made and how well they function. Those proteins then carry out their jobs, producing some biological effect inside the cell or the body. And that effect is what we finally observe as the phenotype. The step almost everyone leaves out is the protein in the middle. So please, never write that genes directly become traits. Always route it through the protein, because the protein is the mechanism that links the gene to the trait."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "geno",
-            "label": "Genotype"
+        "type": "diorama",
+        "kind": "bio12m5Pathway",
+        "props": {
+          "stations": [
+            {
+              "label": "Genotype",
+              "icon": "dna",
+              "at": 442
+            },
+            {
+              "label": "Protein",
+              "icon": "protein",
+              "at": 462
+            },
+            {
+              "label": "Effect",
+              "icon": "effect",
+              "at": 490
+            },
+            {
+              "label": "Phenotype",
+              "icon": "trait",
+              "at": 514
+            }
+          ],
+          "highlight": 1,
+          "shortcut": {
+            "text": "genes become traits directly",
+            "at": 1066
           },
-          {
-            "id": "prot",
-            "label": "Protein"
-          },
-          {
-            "id": "effect",
-            "label": "Effect"
-          },
-          {
-            "id": "pheno",
-            "label": "Phenotype"
+          "rule": {
+            "text": "genotype → protein → effect → phenotype",
+            "at": 1198
           }
-        ],
-        "edges": [
-          {
-            "from": "geno",
-            "to": "prot"
-          },
-          {
-            "from": "prot",
-            "to": "effect"
-          },
-          {
-            "from": "effect",
-            "to": "pheno"
-          }
-        ]
+        },
+        "delay": 6
       },
       "revealDelays": {
         "diagram": 6
@@ -209,6 +226,21 @@
       "caption": "Phenotype = genotype and environment interacting; environment shapes expression, not the DNA.",
       "voiceover": {
         "text": "But here's the twist that makes this topic interesting. Phenotype is not decided by genes alone. The environment gets a vote too. Think of it this way, your genes set a potential, and the environment often decides how much of that potential actually shows up. Height is the textbook example. Your genes set a potential height, but your nutrition during the growing years decides whether you actually reach it. Two people with very similar genetic potential can end up at different adult heights if one was well nourished and the other wasn't. So phenotype is really the interaction of genotype and environment working together. And notice the careful wording, the environment influences how the trait is expressed, but it does not normally change the underlying DNA sequence. The genotype stays the same; what changes is the outcome."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5GxE",
+        "props": {
+          "at": {
+            "genes": 302,
+            "potential": 422,
+            "env": 626,
+            "grow": 758,
+            "interaction": 1094,
+            "dna": 1358,
+            "rule": 1466
+          }
+        }
       }
     },
     {
