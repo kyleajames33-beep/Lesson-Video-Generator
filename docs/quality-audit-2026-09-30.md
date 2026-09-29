@@ -6,7 +6,7 @@ Scope: static checks across the 308 current lesson JSON files; a focused content
 
 - M5 L6: the simultaneous heating/compression example no longer asserts that temperature normally wins and the net yield falls slightly. The separate effects oppose; Le Chatelier's qualitative rules alone do not quantify the final yield. The question now explicitly asks what the qualitative rules can establish.
 - M5 L11: corrected the small-x test in narration, bullets, metadata, caption, worked example and the coded diagram. The 5% check applies to the neglected concentration change, including its stoichiometric coefficient. Kc/initial < 5% is not a universal criterion. For the given PCl5 example, the approximate x is 0.143 M and x/0.500 is 28.6%; the exact result remains x ≈ 0.124 M. Removed an unsourced claim that 12% of HSC students earned seven marks.
-- M6 L2: replaced the generic nitric-acid/aluminium hydrogen example with dilute hydrochloric acid/aluminium. Nitric acid reactions depend on conditions and do not generally follow the simple acid/metal pattern.
+- M6 L2: replaced the generic nitric-acid/aluminium hydrogen example with dilute hydrochloric acid/aluminium. Nitric acid reactions depend on conditions and do not generally follow the simple acid/metal pattern. Also corrected the phenolphthalein quick-check identified as A27 in the independent audit: the high-pH universal claim was removed by using pH 10.5, and the affected narration link was cleared.
 - M6 L10: removed a universal −57 kJ/mol maximum, a universal positive ionisation cost, and an enthalpy-based ranking of Ka. Reworked narration, bullets, captions and examples consistently. Defined matched calorimetry assumptions, completed the unknown-acid experiment's volumes and mole basis, and labelled illustrative diagram data. ΔH alone cannot rank Ka because Gibbs energy also includes entropy.
 - M6 L9 hook: cleared a narration link whose filename hash did not match its text.
 - Cleared narration links in every rewritten scene; retained unaffected narration. A script edit must not silently reuse old audio.
@@ -25,13 +25,13 @@ Scope: static checks across the 308 current lesson JSON files; a focused content
 
 ## Audio queue for this batch
 
-18 scenes need generation or regeneration after this change:
+19 scenes need generation or regeneration after this change:
 
 | Lesson | Scenes |
 |---|---|
 | Chemistry-Y12-M5-L6 | worked-example-2 |
 | Chemistry-Y12-M5-L11 | hook, concept-assumption, worked-example, misconception, summary |
-| Chemistry-Y12-M6-L2 | worked-example-2 |
+| Chemistry-Y12-M6-L2 | worked-example-2, quick-check |
 | Chemistry-Y12-M6-L9 | hook |
 | Chemistry-Y12-M6-L10 | all ten narrated scenes |
 
