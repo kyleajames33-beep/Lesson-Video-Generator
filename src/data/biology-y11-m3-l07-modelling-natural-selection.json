@@ -1,0 +1,463 @@
+{
+  "title": "Modelling Natural Selection",
+  "subtitle": "Running a model, and judging its validity",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Conduct a practical investigation to model the processes involved in natural selection",
+    "Discuss the validity of various models that demonstrate natural selection"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-02"
+  ],
+  "inquiryQuestion": "How well can a simple model represent natural selection?",
+  "lessonIntent": "Students can run a predation model of natural selection, process its results as percentages, and discuss the validity of different models of natural selection.",
+  "examSkill": "Map each part of a model onto real natural selection, then judge validity against a specific claim, naming strengths and limitations.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is Biology. Today, we model natural selection, and ask how good the model is. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Modelling Natural Selection"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Never a random sample",
+      "body": "Scatter coloured paper dots on patterned fabric and hunt them for a few seconds. The survivors are never a random sample.",
+      "callout": "What does the game show, and what does it leave out?",
+      "image": "bioY11M3L1PepperedMoths",
+      "caption": "A dot-hunting game models selection by predation.",
+      "voiceover": {
+        "text": "Scatter coloured paper dots on a sheet of patterned fabric, then hunt them for a few seconds. The survivors are never a random sample. The dots that match the fabric are left behind. That simple game is a model of natural selection, a bit like peppered moths on tree bark. Today we'll run it, read its results, and then ask the harder question. What does the model leave out, and how much should we trust it?"
+      },
+      "durationInFrames": 855
+    },
+    {
+      "id": "concept-method",
+      "type": "concept",
+      "heading": "The predation model",
+      "body": "Coloured paper dots are the prey, patterned fabric is the habitat, and you are the predator.",
+      "bullets": [
+        {
+          "text": "Scatter 100 dots: 50 green, 50 red."
+        },
+        {
+          "text": "Hunt for a fixed time, then count survivors."
+        },
+        {
+          "text": "Survivors reproduce: add one dot of the same colour for each."
+        },
+        {
+          "text": "Repeat for several generations."
+        }
+      ],
+      "callout": "Independent variable: generations. Dependent: % camouflaged.",
+      "caption": "Hunt, count, let survivors reproduce, repeat.",
+      "voiceover": {
+        "text": "Here's the method. The habitat is a sheet of patterned green fabric. The prey are one hundred small paper dots, fifty green, which are camouflaged, and fifty red, which are easy to see. Scatter all the dots randomly. Then, as the predator, pick up dots one at a time for a fixed time, say fifteen seconds. You'll naturally grab the most visible ones first. Count how many of each colour survived. Then the survivors reproduce. For each dot left, add one new dot of the same colour. That's one generation. Repeat for several generations. Keep the hunting time, the background, the lighting and the hunter the same, so the test is fair."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aCamouflage",
+        "props": {
+          "habitat": "fabric",
+          "prey": "dot",
+          "predator": "forceps",
+          "legend": [
+            "green (camouflaged)",
+            "red (visible)"
+          ],
+          "chartLabel": "% green",
+          "showPct": false,
+          "generations": [
+            {
+              "camo": 12,
+              "visible": 12,
+              "at": 60
+            },
+            {
+              "camo": 16,
+              "visible": 8,
+              "at": 823
+            }
+          ],
+          "footer": [
+            {
+              "text": "Keep hunting time, background, lighting and hunter the same",
+              "at": 894
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1260
+    },
+    {
+      "id": "concept-results",
+      "type": "concept",
+      "heading": "What the results show",
+      "body": "The camouflaged colour rises generation after generation, mirroring a population shifting under a selective pressure.",
+      "bullets": [
+        {
+          "text": "Typical results: 50%, 67%, 80%, 89% green."
+        },
+        {
+          "text": "Dot colours = heritable variation; you = the selective pressure."
+        },
+        {
+          "text": "Rising green % = changing allele frequency."
+        }
+      ],
+      "callout": "The population changes. No dot changes colour.",
+      "caption": "Green rises 50%, 67%, 80%, 89% across four generations.",
+      "voiceover": {
+        "text": "So what do the results show? Typical results look like this. At generation one, half the population is green, fifty percent. Then sixty seven percent, then eighty, then eighty nine. Each generation, the visible red dots are removed faster than they're replaced, so the camouflaged colour comes to dominate. Now map it onto real biology. The two dot colours are heritable variation. You picking visible dots is predation, the selective pressure. Adding copies of the survivors is reproduction and inheritance. And the rising green percentage is a change in allele frequency. That's evolution. And notice, it's the population that changed. No dot changed colour."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aCamouflage",
+        "props": {
+          "habitat": "fabric",
+          "prey": "dot",
+          "predator": "forceps",
+          "legend": [
+            "green (camouflaged)",
+            "red (visible)"
+          ],
+          "chartLabel": "% of population that is green",
+          "generations": [
+            {
+              "camo": 12,
+              "visible": 12,
+              "at": 50
+            },
+            {
+              "camo": 16,
+              "visible": 8,
+              "at": 152
+            },
+            {
+              "camo": 16,
+              "visible": 4,
+              "at": 192
+            },
+            {
+              "camo": 16,
+              "visible": 2,
+              "at": 213
+            }
+          ],
+          "footer": [
+            {
+              "text": "dots = variation · you = pressure · copies = inheritance",
+              "at": 497
+            },
+            {
+              "text": "No dot changed colour: the population changed",
+              "at": 955,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1170
+    },
+    {
+      "id": "concept-validity",
+      "type": "concept",
+      "heading": "Judging the model's validity",
+      "body": "A model is judged by how faithfully it represents the real process, not by whether it gives the expected answer.",
+      "bullets": [
+        {
+          "text": "Strengths: variation, pressure, differential survival, inheritance, population change."
+        },
+        {
+          "text": "Limits: no mutation, a biased predator, simple reproduction, fixed environment, small numbers."
+        }
+      ],
+      "callout": "The right answer does not prove the assumptions are sound.",
+      "caption": "Strengths and limitations of the predation model.",
+      "voiceover": {
+        "text": "The model gave the expected result. But does that make it a valid model? Validity is about how well a model represents the real process, not whether it works. The strengths are real. It shows variation, a selective pressure, differential survival, inheritance, and a population-level change, all in one lesson. But it has limitations. There's no mutation, so no new variation can arise. The predator is you, and you know the aim of the experiment. Reproduction is just doubling, with no mating and no genes. The environment never changes. And small numbers over few generations make the results prone to chance. More generations and larger numbers would raise its validity."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aGrid",
+        "props": {
+          "columns": [
+            {
+              "title": "Strengths",
+              "at": 233
+            },
+            {
+              "title": "Limitations",
+              "tone": "warm",
+              "at": 446
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ok": true,
+                "text": "variation and\na selective pressure",
+                "at": 274
+              },
+              {
+                "ok": false,
+                "text": "no mutation",
+                "at": 487
+              }
+            ],
+            [
+              {
+                "ok": true,
+                "text": "differential\nsurvival",
+                "at": 335
+              },
+              {
+                "ok": false,
+                "text": "predator knows the aim",
+                "at": 579
+              }
+            ],
+            [
+              {
+                "ok": true,
+                "text": "inheritance",
+                "at": 355
+              },
+              {
+                "ok": false,
+                "text": "doubling: no mating,\nno genes",
+                "at": 701
+              }
+            ],
+            [
+              {
+                "ok": true,
+                "text": "population-level\nchange",
+                "at": 365
+              },
+              {
+                "ok": false,
+                "text": "fixed environment,\nsmall numbers",
+                "at": 802
+              }
+            ]
+          ],
+          "footer": [
+            {
+              "text": "More generations and larger numbers raise validity",
+              "at": 965,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1245
+    },
+    {
+      "id": "concept-models",
+      "type": "concept",
+      "heading": "Comparing models",
+      "body": "Different models of the same process can each be valid for a different part of it.",
+      "bullets": [
+        {
+          "text": "A, predation: best for seeing the mechanism act."
+        },
+        {
+          "text": "B, beads: best for allele frequency change."
+        },
+        {
+          "text": "C, simulation: best for long runs, chance and mutation."
+        }
+      ],
+      "callout": "Judge a model against the claim it supports.",
+      "caption": "Predation model, bead model and computer simulation are each valid for different claims.",
+      "voiceover": {
+        "text": "The syllabus says models, plural, so compare more than one. Model A is the predation model we just ran. It's most valid for seeing variation, a pressure and differential survival act in one place. Model B is a bead model. Beads of two colours stand for two alleles in a gene pool, and you remove a set proportion of one colour each generation. It's more valid for showing selection as a change in allele frequency, but less valid for showing why a variant is favoured, because you impose the rule. Model C is a computer simulation. It can run hundreds of generations, with mutation and chance, but you can't see the mechanism, only the output."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aGrid",
+        "props": {
+          "columns": [
+            {
+              "title": "A: Predation",
+              "at": 40
+            },
+            {
+              "title": "B: Beads",
+              "tone": "warm",
+              "at": 284
+            },
+            {
+              "title": "C: Simulation",
+              "tone": "grey",
+              "at": 853
+            }
+          ],
+          "rowLabels": [
+            {
+              "text": "Most valid\nfor"
+            },
+            {
+              "text": "Least valid\nfor"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "seeing variation,\npressure and\nsurvival act",
+                "at": 131
+              },
+              {
+                "text": "change in allele\nfrequency",
+                "at": 579
+              },
+              {
+                "text": "long runs, chance,\nmutation",
+                "at": 914
+              }
+            ],
+            [
+              {
+                "text": "mutation, real\nreproduction",
+                "at": 131
+              },
+              {
+                "text": "why a variant\nis favoured",
+                "at": 701
+              },
+              {
+                "text": "seeing the\nmechanism",
+                "at": 1016
+              }
+            ]
+          ],
+          "footer": [
+            {
+              "text": "Judge each model against a specific claim",
+              "at": 1016,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1290
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Model: a simplified representation used to understand or predict a system."
+        },
+        {
+          "text": "Validity of a model: how well it represents the real process it stands for."
+        },
+        {
+          "text": "Generation: one round of survival followed by the survivors reproducing."
+        },
+        {
+          "text": "Controlled variable: a factor kept constant so the test is fair."
+        },
+        {
+          "text": "Assumption: something a model takes to be true to stay simple."
+        }
+      ],
+      "callout": "Assumptions limit how far results can be trusted.",
+      "caption": "Model, validity, generation, controlled variable, assumption.",
+      "voiceover": {
+        "text": "Five terms. A model is a simplified representation of a system, used to understand, demonstrate or predict how it behaves. The validity of a model is how well it represents the real process it stands for. A generation is one round of survival followed by the survivors reproducing, so in our model, one hunt, then breeding. A controlled variable is a factor kept constant so the results are fair, like the hunting time. And an assumption is something a model takes to be true to keep it simple. Assumptions limit how far the results can be trusted."
+      },
+      "durationInFrames": 1095
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Process the results",
+      "question": "After generation 2, there are 40 green dots and 20 red dots. Calculate the percentage of the population that is camouflaged, and explain why percentage is better than raw count.",
+      "coachNote": "Divide green by the TOTAL, not by red.",
+      "steps": [
+        "Total = 40 + 20 = 60 dots.",
+        "% green = 40 ÷ 60 × 100 = 66.7%, about 67%.",
+        "The total changes each generation as survivors reproduce.",
+        "So raw green counts could rise even with no selection.",
+        "Answer: about 67% green; a rising percentage is the evidence that selection occurred."
+      ],
+      "caption": "40 ÷ 60 × 100 ≈ 67% green; percentages allow fair comparison across generations.",
+      "voiceover": {
+        "text": "Let's process a result. After generation two, there are forty green dots and twenty red. What percentage is camouflaged? Divide green by the total, not by red. The total is sixty, so forty divided by sixty, times one hundred, is sixty six point seven percent, about sixty seven. Why use a percentage instead of the raw count? Because the total population changes every generation as survivors reproduce. So the number of green dots could rise even with no selection at all. It's the rising proportion that shows selection has occurred. And keep the raw counts in your table too, so the percentage can be rechecked."
+      },
+      "durationInFrames": 1185
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "It worked, so it’s valid",
+      "body": "Wrong: if a model produces the \"right\" result, it must be a fully valid representation of the real process.",
+      "secondary": "Right: a model can give the expected outcome while being unrealistic in important ways, such as ignoring mutation, mating or environmental change. Evaluate its validity separately from its result.",
+      "mistakeTag": "Result ≠ validity",
+      "callout": "Say what the model is useful for, and where it breaks down.",
+      "caption": "A correct result does not verify a model’s assumptions.",
+      "voiceover": {
+        "text": "Here's the trap. Students think that if a model gives the right result, it must be a valid model. Not so. A model can give the expected outcome while being unrealistic in important ways. Our dot model gets the right trend, but it ignores mutation, mating and environmental change, and the predator knows the goal. Getting the right answer doesn't prove every assumption is sound. So evaluate validity separately from the result. The most useful sentence in this topic is, this model is useful for this, but it can't be trusted for that."
+      },
+      "durationInFrames": 1050
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Assess the validity of a bead model, in which coloured beads represent alleles drawn from a gene pool, as a demonstration of natural selection.",
+      "pausePrompt": "Pause: valid for which claim, and not valid for which?",
+      "answerSteps": [
+        "Beads = alleles; the container = the gene pool; it tracks allele frequency directly.",
+        "Strength: it measures the quantity that changes in evolution.",
+        "Limitation: the weighting is imposed by a rule, so no pressure can be seen acting.",
+        "Answer: valid for showing allele frequency change; not valid for showing why a variant is favoured."
+      ],
+      "caption": "Bead model: valid for allele frequency change, not for the cause of selection.",
+      "voiceover": {
+        "text": "Quick check. Assess the validity of a bead model, where coloured beads represent alleles drawn from a gene pool. Pause, and decide valid for what, and not valid for what. Here's the answer. Each bead is an allele, the container is the gene pool, and the model tracks allele frequency directly, which is exactly the quantity that changes in evolution. That's its strength. But the weighting is imposed by a rule, so no organism, environment or selective pressure is ever seen acting. So it's valid for showing allele frequency change, but not for showing why a variant is favoured."
+      },
+      "durationInFrames": 1110
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "The predation model: hunt, count, survivors reproduce, repeat.",
+        "Typical results: 50%, 67%, 80%, 89% camouflaged.",
+        "Colours = variation, predator = pressure, copies = inheritance, rising % = evolution.",
+        "Validity is how well a model represents reality, not whether it works.",
+        "Different models are valid for different claims."
+      ],
+      "finalPrompt": "Validity answer: what it shows well, what it leaves out, and a verdict for a specific claim.",
+      "caption": "Run the model, map it to reality, judge its validity.",
+      "voiceover": {
+        "text": "Let's lock it in. The predation model runs hunt, count, reproduce, repeat, and typical results rise from fifty to sixty seven, eighty, then eighty nine percent camouflaged. Each part maps to real biology, colours are variation, the predator is the pressure, copies are inheritance, and the rising percentage is evolution. Validity is how well a model represents reality, not whether it gives the expected answer. And different models are valid for different claims. Next lesson, convergent and divergent evolution."
+      },
+      "durationInFrames": 900
+    }
+  ]
+}

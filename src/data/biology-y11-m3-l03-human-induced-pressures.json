@@ -1,0 +1,424 @@
+{
+  "title": "Human-Induced Selective Pressures",
+  "subtitle": "When people become the selective force",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Explain how human-induced changes may function as selective pressures"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03"
+  ],
+  "inquiryQuestion": "How can human-induced changes act as selective pressures?",
+  "lessonIntent": "Students can explain how a human activity acts as a selective pressure, identify the trait selected, and distinguish artificial selection from natural selection.",
+  "examSkill": "Establish the pre-existing variation, show the human activity sorting the population, then carry the favoured allele across generations; never say the chemical caused resistance.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is Biology. Today, how humans have become a selective pressure. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Human-Induced Selective Pressures"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Keep the big ones",
+      "body": "Fishers who keep only the biggest cod have been left with cod that mature smaller. Antibiotics that once cured infections now fail.",
+      "callout": "How did people reshape these populations without meaning to?",
+      "image": "bioY11M3L5AntibioticPlate",
+      "caption": "Size-selective fishing and antibiotic use both act as selective pressures.",
+      "voiceover": {
+        "text": "Fishers who only keep the big fish should be left with a sea full of small ones. And that's what has happened to several cod populations, which now mature at a smaller size. Meanwhile, in hospitals, antibiotics that once cured infections are failing, because the bacteria have become resistant. In both cases, nobody set out to change a species. So how did simply harvesting the largest fish, or using a drug, reshape a whole population? Today, humans as a selective pressure."
+      },
+      "durationInFrames": 915
+    },
+    {
+      "id": "concept-humans",
+      "type": "concept",
+      "heading": "Same mechanism, new source",
+      "body": "Human activities supply new, often intense selective pressures, but the mechanism is still natural selection.",
+      "bullets": [
+        {
+          "text": "Chemicals, harvesting, pollution and habitat change can all select."
+        },
+        {
+          "text": "Variation, inheritance and differential reproduction are still required."
+        },
+        {
+          "text": "Strong human pressures can shift a population in a few generations."
+        }
+      ],
+      "callout": "Humans supply the pressure; natural selection does the rest.",
+      "caption": "Anthropogenic pressures work by the same mechanism, often faster.",
+      "voiceover": {
+        "text": "A human-induced selective pressure is any change caused by human activity that makes some heritable variants survive and reproduce more than others. That includes pesticides and antibiotics, harvesting, pollution, and changes to habitat. The word for caused by humans is anthropogenic. But here's the key point. Humans don't change how evolution works. Variation still has to exist first, the trait still has to be heritable, and differential reproduction still does the work. What's different is the speed. Human pressures, like blanket antibiotic use, can be extremely strong, so a population can shift in just a few generations."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8Fan",
+        "props": {
+          "direction": "diverge",
+          "hub": {
+            "label": "Human activity",
+            "sub": "anthropogenic",
+            "at": 0
+          },
+          "items": [
+            {
+              "label": "Pesticides and antibiotics",
+              "sub": "select for resistance",
+              "at": 162
+            },
+            {
+              "label": "Harvesting",
+              "sub": "removes one size or type",
+              "at": 213
+            },
+            {
+              "label": "Pollution",
+              "sub": "e.g. soot on tree bark",
+              "at": 223
+            },
+            {
+              "label": "Habitat change",
+              "sub": "changes who survives",
+              "at": 243
+            }
+          ],
+          "notes": [
+            {
+              "text": "Same mechanism, often much faster",
+              "at": 670,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1095
+    },
+    {
+      "id": "concept-chemicals",
+      "type": "concept",
+      "heading": "Chemicals select resistance",
+      "body": "An antibiotic, pesticide or herbicide removes susceptible individuals, leaving rare pre-existing resistant variants to reproduce.",
+      "bullets": [
+        {
+          "text": "A rare resistant variant exists before the chemical is used."
+        },
+        {
+          "text": "The chemical kills the susceptible majority."
+        },
+        {
+          "text": "Resistant survivors reproduce and take over."
+        }
+      ],
+      "callout": "The chemical selects resistance. It does not create it.",
+      "caption": "Resistance exists first; the chemical kills the rest; resistant cells repopulate.",
+      "voiceover": {
+        "text": "The clearest case is chemical resistance. Picture a large population of bacteria. Most are susceptible, but a rare few already carry a resistance allele, which arose earlier by chance mutation. Now the antibiotic is applied. It kills the susceptible cells, and the resistant ones survive. With their competitors gone, the resistant cells multiply, and soon the population is resistant. Notice what the drug did and didn't do. It didn't cause any mutation. It removed the susceptible cells, and revealed variation that was already there. The same logic applies to insecticides, like DDT and mosquitoes, and to herbicides and resistant weeds."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Selection",
+        "props": {
+          "organism": "bacterium",
+          "drug": "antibiotic",
+          "legend": "resistance allele (arose by chance)",
+          "captions": [
+            {
+              "text": "A large bacterial population",
+              "at": 0
+            },
+            {
+              "text": "A rare few already resistant",
+              "at": 91
+            },
+            {
+              "text": "Antibiotic kills the susceptible cells",
+              "at": 243
+            },
+            {
+              "text": "Resistant survivors multiply",
+              "at": 436
+            },
+            {
+              "text": "The drug selects; it doesn’t create",
+              "at": 619,
+              "amber": true
+            }
+          ],
+          "beats": {
+            "pop": 0,
+            "mutants": 91,
+            "drug": 243,
+            "survive": 345,
+            "reproduce": 436
+          },
+          "footer": [
+            {
+              "text": "Same logic: DDT and mosquitoes, herbicides and weeds",
+              "at": 792
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1125
+    },
+    {
+      "id": "concept-harvest",
+      "type": "concept",
+      "heading": "Harvesting as a pressure",
+      "body": "Size-selective fishing removes the largest fish, so the smaller-maturing fish leave more offspring.",
+      "bullets": [
+        {
+          "text": "Variation: cod differ in size at maturity, partly heritable."
+        },
+        {
+          "text": "Pressure: fishing removes the largest fish."
+        },
+        {
+          "text": "Smaller-maturing fish breed more, so the population shifts."
+        }
+      ],
+      "callout": "The nets favoured the fish nobody wanted.",
+      "caption": "Fishing the largest cod selects for maturing at a smaller size.",
+      "voiceover": {
+        "text": "Harvesting works the same way. Cod vary in the size at which they mature, and that's partly heritable. Fishing that targets the largest fish removes the big, late-maturing individuals before many of them breed. So who's left to reproduce? The fish that mature at a smaller size. Their offspring inherit that tendency, and over generations the population comes to mature smaller. Nobody chose this outcome. The fishing nets were the selective pressure, and they favoured exactly the fish that fishers didn't want."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aShift",
+        "props": {
+          "xLabel": "Size at maturity",
+          "ends": [
+            "smaller",
+            "larger"
+          ],
+          "glyph": "fish",
+          "yLabel": "Number of fish",
+          "before": {
+            "mean": 55,
+            "sd": 13,
+            "label": "before heavy fishing",
+            "at": 0
+          },
+          "pressure": {
+            "favours": "low",
+            "edge": 56,
+            "width": 6,
+            "label": "nets take the largest",
+            "at": 121
+          },
+          "survivors": {
+            "label": "left to breed",
+            "at": 284
+          },
+          "offspring": {
+            "label": "next generations",
+            "at": 416
+          },
+          "shiftText": {
+            "text": "matures smaller",
+            "at": 477
+          }
+        }
+      },
+      "durationInFrames": 930
+    },
+    {
+      "id": "concept-deliberate",
+      "type": "concept",
+      "heading": "Deliberate or accidental",
+      "body": "Human pressures range from deliberate selective breeding to side effects nobody intended. Both work by the natural selection mechanism.",
+      "bullets": [
+        {
+          "text": "Deliberate: artificial selection, such as cabbage to broccoli, wolf to dog."
+        },
+        {
+          "text": "Accidental: resistance, size-selective fishing."
+        },
+        {
+          "text": "Cane toads: a deliberate release with unintended selection."
+        }
+      ],
+      "callout": "The only difference is human intent.",
+      "caption": "Artificial selection is deliberate; resistance and fishing effects are accidental.",
+      "voiceover": {
+        "text": "Human-induced pressures sit on a spectrum. At one end is artificial selection, where people deliberately choose which individuals breed. Wild cabbage was bred into broccoli, cauliflower and kale, and wolves were bred into hundreds of dog breeds. At the other end are accidental pressures, by-products nobody intended, like antibiotic and pesticide resistance, and size-selective fishing. Cane toads show both sides. They were released deliberately in Queensland in nineteen thirty five, but the selection that followed was unintended. At the invasion front, toads with longer legs spread fastest, and the front sped up from about ten kilometres a year to more than fifty. Snakes from toad areas now have relatively smaller heads, because snakes able to swallow a large toad were killed by it."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Sorter",
+        "props": {
+          "bins": [
+            {
+              "title": "Deliberate",
+              "sub": "artificial selection"
+            },
+            {
+              "title": "Accidental",
+              "sub": "unintended side effect",
+              "tone": "warm"
+            }
+          ],
+          "items": [
+            {
+              "text": "Wild cabbage → broccoli, kale",
+              "bin": 0,
+              "at": 131,
+              "icon": "plant"
+            },
+            {
+              "text": "Wolf → dog breeds",
+              "bin": 0,
+              "at": 223
+            },
+            {
+              "text": "Antibiotic resistance",
+              "bin": 1,
+              "at": 416,
+              "icon": "bacterium"
+            },
+            {
+              "text": "Pesticide resistance",
+              "bin": 1,
+              "at": 436,
+              "icon": "mosquito"
+            },
+            {
+              "text": "Size-selective fishing",
+              "bin": 1,
+              "at": 467
+            },
+            {
+              "text": "Cane toads: longer legs at the front",
+              "bin": 1,
+              "at": 721,
+              "amber": true
+            },
+            {
+              "text": "Snakes: smaller heads",
+              "bin": 1,
+              "at": 975
+            }
+          ],
+          "size": 16
+        }
+      },
+      "durationInFrames": 1380
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Human-induced pressure: a selective pressure resulting from human activity."
+        },
+        {
+          "text": "Anthropogenic: caused or produced by humans."
+        },
+        {
+          "text": "Artificial selection: humans deliberately choose which individuals reproduce."
+        },
+        {
+          "text": "Resistance: an inherited ability to survive a chemical that kills others of the species."
+        },
+        {
+          "text": "Harvesting pressure: selection caused by removing individuals with a particular trait."
+        }
+      ],
+      "callout": "Resistance is inherited, not acquired.",
+      "caption": "Human-induced pressure, anthropogenic, artificial selection, resistance, harvesting pressure.",
+      "voiceover": {
+        "text": "Five terms. A human-induced pressure is a selective pressure that results from human activity. Anthropogenic means caused or produced by humans, from the Greek word for human. Artificial selection is selective breeding, where humans deliberately choose which individuals reproduce. Resistance is an inherited ability to survive a chemical, like a herbicide or an antibiotic, that kills others of the species. And harvesting pressure is selection caused by humans removing individuals with a particular trait, like only catching the largest fish."
+      },
+      "durationInFrames": 900
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Explain the herbicide case",
+      "question": "Explain how the repeated use of a herbicide on a weed population functions as a human-induced selective pressure.",
+      "coachNote": "Get the direction of cause right: the variation comes first, the spray only sorts it.",
+      "steps": [
+        "Before spraying, a few weeds already carry alleles giving some tolerance, arising by chance.",
+        "Spraying kills the susceptible majority; the tolerant few survive with less competition.",
+        "Survivors set seed and pass on the resistance alleles.",
+        "Repeated spraying repeats the sorting, so resistance alleles climb each season.",
+        "Answer: humans choose the chemical, dose and timing, so the pressure is human-induced; the herbicide never created resistance."
+      ],
+      "caption": "Tolerance exists first; spraying sorts the population; resistance alleles climb.",
+      "voiceover": {
+        "text": "Let's explain the herbicide case the way markers want it. Start with the variation. Before any spraying, a few weeds already carry alleles that give some tolerance, which arose by chance. Spraying kills the susceptible majority, and the tolerant few survive, now with less competition for light and water. They set seed and pass on their resistance alleles. Spray again next season, and the sorting repeats, so resistance alleles climb until the herbicide stops working. This has happened in Australian crops, most prominently in annual ryegrass. It's human-induced because people choose the chemical, the dose and the timing. And the herbicide never created resistance."
+      },
+      "durationInFrames": 1200
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The spray made them resistant",
+      "body": "Wrong: spraying a pesticide makes the insects become resistant, because the chemical causes the mutation.",
+      "secondary": "Right: the resistance allele already existed in a few individuals by chance. The pesticide kills the susceptible insects and lets the resistant ones reproduce.",
+      "mistakeTag": "Direction of cause",
+      "callout": "Selection reveals existing variation. It does not generate it on demand.",
+      "caption": "Chemicals select pre-existing resistance; they do not cause it.",
+      "voiceover": {
+        "text": "Here's the misconception this lesson is built to fix. A student writes that spraying a pesticide made the insects resistant, because the chemical caused the mutation. That's backwards. The resistance allele already existed in a few individuals, by chance, before any spraying. The pesticide can't direct a mutation. It just kills the susceptible insects and leaves the resistant ones to reproduce. And no individual insect changes. A susceptible insect stays susceptible for life. What changes is the population, because the proportion of already-resistant individuals rises."
+      },
+      "durationInFrames": 960
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Propose a strategy to slow the evolution of herbicide resistance in a weed population, and justify it in terms of selective pressure.",
+      "pausePrompt": "Pause: what makes resistance evolve fastest, and how could you weaken that?",
+      "answerSteps": [
+        "Resistance spreads fastest under one pressure applied repeatedly and strongly.",
+        "Rotate herbicides with different modes of action between seasons.",
+        "Add a non-chemical control, such as crop rotation or cultivation.",
+        "A plant would need several unrelated resistances to survive everything.",
+        "Answer: this lowers the advantage of any single resistance allele, so it rises more slowly."
+      ],
+      "caption": "Rotate modes of action and add non-chemical control to slow resistance.",
+      "voiceover": {
+        "text": "Quick check. Propose a strategy to slow the evolution of herbicide resistance, and justify it using selective pressure. Pause, and think about what makes resistance evolve fastest. Here's a strong answer. Resistance spreads fastest when one pressure is applied repeatedly and strongly. So rotate between herbicides with different modes of action, and add a non-chemical control, like crop rotation or cultivation. Now a plant needs several unrelated resistances to survive everything, which is far less likely. That lowers the advantage of any single resistance allele, so it rises more slowly."
+      },
+      "durationInFrames": 1080
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Human activities act as selective pressures by the same mechanism as natural ones.",
+        "Chemicals select pre-existing resistance; they do not create it.",
+        "Harvesting the largest fish favours smaller-maturing fish.",
+        "Artificial selection is deliberate; resistance and fishing effects are accidental.",
+        "Human pressures are often intense, so change can be fast."
+      ],
+      "finalPrompt": "Variation first, then the human pressure sorts it, then inheritance.",
+      "caption": "Human pressures select existing variation, often fast.",
+      "voiceover": {
+        "text": "Let's lock it in. Human activities act as selective pressures, using exactly the same mechanism as natural ones. Chemicals like antibiotics and herbicides select for resistance that already exists. They never create it. Harvesting the largest fish favours the fish that mature smaller. Artificial selection is deliberate, while resistance and fishing effects are accidental side effects. And because human pressures are often intense, the change can be fast. Next lesson, how natural selection produces new species."
+      },
+      "durationInFrames": 855
+    }
+  ]
+}

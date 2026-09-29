@@ -1,0 +1,401 @@
+{
+  "title": "Monotremes and Marsupials",
+  "subtitle": "Isolation and adaptation in Australian mammals",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 6",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Evaluate the role of isolation and adaptation in the evolution of Australian monotremes and marsupials"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03"
+  ],
+  "inquiryQuestion": "Why did monotremes and marsupials survive and diversify in Australia?",
+  "lessonIntent": "Students can evaluate how isolation and adaptation together shaped Australian monotremes and marsupials, using named examples.",
+  "examSkill": "Credit isolation with the opportunity (no placental competitors) and adaptation with the fit (named traits), then judge that both were necessary.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is Biology. Today, Australia's monotremes and marsupials, and why they're here. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Monotremes and Marsupials — isolation and adaptation"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Only here",
+      "body": "Kangaroos, koalas, platypuses and echidnas are found naturally only in Australia and nearby islands.",
+      "callout": "The answer is written in the movement of continents.",
+      "image": "bioY11M3L6Megafauna",
+      "caption": "Why did Australia keep its monotremes and marsupials?",
+      "voiceover": {
+        "text": "Kangaroos, koalas, platypuses and echidnas. They're found naturally only in Australia and nearby islands, and almost nowhere else on Earth. On most continents, placental mammals, like cats, dogs and deer, fill the roles of grazers and predators. In Australia, marsupials filled most of those roles instead. Why? The answer is written in the movement of continents, and in natural selection."
+      },
+      "durationInFrames": 810
+    },
+    {
+      "id": "concept-three-groups",
+      "type": "concept",
+      "heading": "Three kinds of mammal",
+      "body": "All three groups have hair and produce milk. They differ mainly in how they reproduce.",
+      "bullets": [
+        {
+          "text": "Monotremes lay eggs: platypus and echidnas."
+        },
+        {
+          "text": "Marsupials: tiny young finish growing on a teat, usually in a pouch."
+        },
+        {
+          "text": "Placentals: young develop further in the uterus via a placenta."
+        }
+      ],
+      "callout": "Australia is the only continent where monotremes survive.",
+      "caption": "Monotremes lay eggs; marsupials have pouch young; placentals have a placenta.",
+      "voiceover": {
+        "text": "Mammals fall into three groups, based on how they reproduce. Monotremes lay eggs. The only living ones are the platypus and the echidnas, found in Australia and New Guinea. Marsupials give birth to tiny, underdeveloped young that finish growing attached to a teat, usually in a pouch. Think kangaroos, koalas and wombats. Placental mammals nourish their young to a much more advanced stage inside the uterus, through a placenta, before birth. All three are true mammals. They have hair and they produce milk. And the monotreme lineage here is very old. Fossils like Teinolophos from Victoria date to about one hundred and twenty million years ago, when Australia was still part of Gondwana."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aGrid",
+        "props": {
+          "columns": [
+            {
+              "title": "Monotremes",
+              "at": 40
+            },
+            {
+              "title": "Marsupials",
+              "tone": "warm",
+              "at": 233
+            },
+            {
+              "title": "Placentals",
+              "tone": "grey",
+              "at": 467
+            }
+          ],
+          "rowLabels": [
+            {
+              "text": "Young"
+            },
+            {
+              "text": "Examples"
+            },
+            {
+              "text": "Hair and\nmilk"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "lay eggs"
+              },
+              {
+                "text": "tiny young finish\ngrowing on a teat"
+              },
+              {
+                "text": "developed in uterus\nvia a placenta"
+              }
+            ],
+            [
+              {
+                "text": "platypus,\nechidnas",
+                "at": 70
+              },
+              {
+                "text": "kangaroo, koala,\nwombat",
+                "at": 416
+              },
+              {
+                "text": "cat, deer,\nhuman",
+                "at": 640
+              }
+            ],
+            [
+              {
+                "ok": true,
+                "at": 660
+              },
+              {
+                "ok": true,
+                "at": 660
+              },
+              {
+                "ok": true,
+                "at": 660
+              }
+            ]
+          ],
+          "footer": [
+            {
+              "text": "Monotremes here since about 120 million years ago",
+              "at": 863,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1275
+    },
+    {
+      "id": "concept-isolation",
+      "type": "concept",
+      "heading": "The role of isolation",
+      "body": "As Australia separated from Gondwana, ocean became a barrier that kept placental mammals from arriving by land.",
+      "bullets": [
+        {
+          "text": "Rifting from about 85 million years ago; deep ocean by about 35 to 33 million."
+        },
+        {
+          "text": "Marsupials arrived from South America across Antarctica first."
+        },
+        {
+          "text": "Without placental competitors, marsupials radiated."
+        }
+      ],
+      "callout": "Isolation removed placental competition and created opportunity.",
+      "caption": "Ocean isolation kept placentals out; marsupials radiated into many roles.",
+      "voiceover": {
+        "text": "So why did Australia keep these groups? Isolation. Australia began rifting away from Antarctica from roughly eighty five million years ago, and deep ocean finally separated them by about thirty five to thirty three million years ago. Before that door closed, marsupials had reached Australia from South America, across Antarctica, while the three were still connected. Once the ocean surrounded Australia, no land mammal could walk here. Placental mammals couldn't arrive by land, apart from bats, which flew, and later some rodents that crossed water. So with no placental competitors, monotremes persisted, and marsupials radiated into grazers, burrowers, climbers, gliders and predators."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aGondwana",
+        "props": {
+          "beats": {
+            "connected": 0,
+            "marsupials": 19,
+            "rift": 507,
+            "blocked": 619,
+            "radiate": 884
+          },
+          "dates": [
+            {
+              "text": "rifting from ~85 million years ago",
+              "at": 19
+            },
+            {
+              "text": "deep ocean by ~35–33 million years ago",
+              "at": 162
+            }
+          ],
+          "exceptions": {
+            "text": "exceptions: bats flew; later, some rodents",
+            "at": 680
+          },
+          "roles": [
+            "grazers",
+            "burrowers",
+            "climbers",
+            "gliders",
+            "predators"
+          ]
+        }
+      },
+      "durationInFrames": 1155
+    },
+    {
+      "id": "concept-adaptation",
+      "type": "concept",
+      "heading": "The role of adaptation",
+      "body": "Isolation gave the opportunity; adaptation by natural selection fitted each species to Australian conditions.",
+      "bullets": [
+        {
+          "text": "Kangaroo: hopping for long distances across dry country."
+        },
+        {
+          "text": "Koala: a gut that detoxifies eucalyptus leaves."
+        },
+        {
+          "text": "Platypus: electroreceptors in the bill."
+        },
+        {
+          "text": "Echidna: spines and a long sticky tongue."
+        }
+      ],
+      "callout": "Both necessary. Neither alone explains the outcome.",
+      "caption": "Isolation gave the opportunity; adaptation gave the fit.",
+      "voiceover": {
+        "text": "But was isolation enough on its own? No. Isolation gave these mammals the opportunity. Adaptation, by natural selection, is what fitted each species to Australia's dry and variable environments. Kangaroos have powerful hind legs and energy-efficient hopping, for travelling long distances across dry, open country. Koalas have a gut that can detoxify and digest eucalyptus leaves. The platypus bill carries about forty thousand electroreceptors, so it can find prey with its eyes, ears and nostrils shut. And echidnas have spines for defence, and a long sticky tongue for ants and termites. Isolation without adaptation would have left animals unsuited to Australia. Adaptation without isolation could have been overwhelmed by placental competitors."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aGrid",
+        "props": {
+          "columns": [
+            {
+              "title": "Isolation gave…",
+              "at": 19
+            },
+            {
+              "title": "Adaptation gave…",
+              "tone": "warm",
+              "at": 80
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "no placental\ncompetitors",
+                "at": 19
+              },
+              {
+                "text": "kangaroo: efficient\nhopping",
+                "at": 233
+              }
+            ],
+            [
+              {
+                "text": "room to\ndiversify",
+                "at": 19
+              },
+              {
+                "text": "koala: gut detoxifies\neucalyptus",
+                "at": 396
+              }
+            ],
+            [
+              {
+                "text": "monotremes\npersisted",
+                "at": 19
+              },
+              {
+                "text": "platypus: ~40,000\nelectroreceptors",
+                "at": 507
+              }
+            ],
+            [
+              {
+                "text": "without adaptation:\nunsuited",
+                "at": 863
+              },
+              {
+                "text": "without isolation:\noutcompeted",
+                "at": 965
+              }
+            ]
+          ],
+          "footer": [
+            {
+              "text": "Both were necessary",
+              "at": 965,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1245
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Monotreme: an egg-laying mammal, such as the platypus and echidnas."
+        },
+        {
+          "text": "Marsupial: a mammal whose very underdeveloped young complete development on a teat, usually in a pouch."
+        },
+        {
+          "text": "Placental mammal: young develop further in the uterus, nourished by a placenta."
+        },
+        {
+          "text": "Gondwana: the ancient southern supercontinent Australia separated from."
+        },
+        {
+          "text": "Geographic isolation: a physical barrier, here ocean, that prevents gene flow."
+        }
+      ],
+      "callout": "Different, not primitive.",
+      "caption": "Monotreme, marsupial, placental mammal, Gondwana, geographic isolation.",
+      "voiceover": {
+        "text": "Five terms. A monotreme is an egg-laying mammal, and the only living examples are the platypus and the echidnas. A marsupial is a mammal that gives birth to very underdeveloped young, which complete their development attached to a teat, usually in a pouch. A placental mammal's young develop more fully inside the mother, nourished by a placenta. Gondwana is the ancient southern supercontinent that Australia separated from. And geographic isolation is separation by a physical barrier, here the ocean, that prevents gene flow with mammals elsewhere."
+      },
+      "durationInFrames": 975
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Evaluate the claim",
+      "question": "A student claims: \"Australia's unique mammals are entirely due to isolation; adaptation played no real part.\" Evaluate this claim.",
+      "coachNote": "Credit isolation with the opportunity, adaptation with the fit, then judge.",
+      "steps": [
+        "Isolation: ocean kept placental mammals out, so monotremes persisted and marsupials radiated.",
+        "Adaptation: selection fitted species to arid, variable Australia.",
+        "Evidence: kangaroo hopping; embryonic diapause pauses an embryo until conditions improve.",
+        "Evidence: platypus electroreception finds prey in murky water.",
+        "Judgement: the claim is too strong. Isolation gave the opportunity; adaptation filled it. Both were necessary."
+      ],
+      "caption": "Isolation gave opportunity; adaptation gave fit; the claim overstates isolation.",
+      "voiceover": {
+        "text": "Let's evaluate the claim that Australia's mammals are entirely due to isolation. First, credit isolation. The ocean barrier kept placental mammals out, so monotremes persisted and marsupials radiated into empty roles. Then credit adaptation. Surviving an increasingly arid, unpredictable continent needed traits like the kangaroo's efficient hopping, and embryonic diapause, where a female can pause an embryo's development until conditions improve. The platypus finds prey in murky water using electroreception. So the judgement. The claim is too strong. Isolation gave the opportunity, but adaptation filled it. A lineage that was isolated but poorly adapted wouldn't have survived."
+      },
+      "durationInFrames": 1170
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Primitive mammals?",
+      "body": "Wrong: monotremes and marsupials are primitive or failed mammals that placentals would replace if given the chance.",
+      "secondary": "Right: they are highly successful and well adapted to Australian conditions: a different, equally valid way of being a mammal.",
+      "mistakeTag": "Different, not inferior",
+      "callout": "Egg laying is one surviving branch, not a failed first attempt.",
+      "caption": "Monotremes and marsupials are successful, well-adapted mammals.",
+      "voiceover": {
+        "text": "Here's a misconception to fix. Some people describe monotremes and marsupials as primitive, or failed mammals, that placentals would replace if given the chance. That's wrong. They're highly successful, and well adapted to Australian conditions. Egg laying isn't a failed first attempt at being a mammal. It's one surviving branch of a group that's been here longer than the continent has been an island. And be careful with wording. The safe claim is that Australia's mammals evolved without placental competitors, not that placentals simply out-competed every marsupial elsewhere."
+      },
+      "durationInFrames": 990
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "The dingo arrived with people roughly 3,500 to 5,000 years ago; foxes, cats and rabbits after 1788. Many native mammals then declined severely. How does this support the role of isolation?",
+      "pausePrompt": "Pause: what happened when the barrier was crossed?",
+      "answerSteps": [
+        "Isolation had kept placental predators and competitors out.",
+        "People carried placental mammals across the barrier.",
+        "Native mammals had evolved without these predators and competitors.",
+        "Answer: when isolation ended, severe declines followed, so isolation had been protecting them."
+      ],
+      "caption": "When isolation ended, native mammals declined, showing isolation had protected them.",
+      "voiceover": {
+        "text": "Quick check. The dingo arrived with human travellers roughly three and a half to five thousand years ago. Foxes, cats and rabbits arrived after seventeen eighty eight, and many native mammals declined severely. How does this support the role of isolation? Pause and think about what the barrier had been doing. Here's the answer. Isolation had kept placental predators and competitors out, and native mammals had evolved without them. When people carried placentals across the barrier, severe declines followed. So the protection ended when the isolation did. That's why predator-free islands and fenced reserves try to restore it."
+      },
+      "durationInFrames": 1110
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Monotremes lay eggs; marsupials have pouch young; placentals use a placenta.",
+        "Australia separated from Gondwana; ocean kept placental mammals out.",
+        "Without placental competitors, marsupials radiated and monotremes persisted.",
+        "Adaptation fitted each species: hopping, eucalypt digestion, electroreception, spines.",
+        "Both isolation and adaptation were necessary."
+      ],
+      "finalPrompt": "Isolation gave the opportunity; adaptation filled it. Name an example of each.",
+      "caption": "Isolation plus adaptation shaped Australian monotremes and marsupials.",
+      "voiceover": {
+        "text": "Let's lock it in. Monotremes lay eggs, marsupials raise tiny young on a teat, and placentals develop their young using a placenta. When Australia separated from Gondwana, the ocean kept placental mammals out. Without placental competitors, marsupials radiated into many roles, and monotremes persisted. Adaptation fitted each species to Australian conditions, through traits like hopping, eucalypt digestion, electroreception and spines. Both were necessary. Next lesson, we'll model natural selection ourselves."
+      },
+      "durationInFrames": 795
+    }
+  ]
+}

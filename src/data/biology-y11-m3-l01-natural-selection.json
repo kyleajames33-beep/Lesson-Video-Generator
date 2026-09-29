@@ -1,0 +1,414 @@
+{
+  "title": "Natural Selection",
+  "subtitle": "Variation, inheritance and selective pressure",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Discuss the role of genetic variation, inheritance and selective pressures in contributing to the process of evolution by natural selection"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-07"
+  ],
+  "inquiryQuestion": "How do variation, inheritance and selective pressure combine to change a population?",
+  "lessonIntent": "Students can explain evolution by natural selection as a sequence driven by heritable variation, inheritance and a selective pressure, and say why populations evolve but individuals do not.",
+  "examSkill": "Write the four-step sequence: heritable variation exists, a named pressure acts, better-suited variants survive and reproduce more, their alleles increase in frequency.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is Biology. Today, natural selection, the engine behind evolution. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Natural Selection — variation, inheritance and selective pressure"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Nobody changed colour",
+      "body": "Soot blackened the trees around English cities, and within about fifty years the rare dark peppered moth became the common one.",
+      "callout": "No single moth changed. So what did?",
+      "image": "bioY11M3L1PepperedMoths",
+      "caption": "Soot darkened the bark, and dark peppered moths went from rare to common.",
+      "voiceover": {
+        "text": "Here's a puzzle. In the eighteen hundreds, soot from coal fires blackened the tree trunks around English cities. Peppered moths rest on those trunks, and most of them were pale. A dark form existed, but it was rare. Within about fifty years, the dark form had become the common one. Now, a moth can't choose to become darker, and no single moth ever changed its own colour. So how did a whole population end up better suited to its environment? Today we'll build that explanation step by step."
+      },
+      "durationInFrames": 990
+    },
+    {
+      "id": "concept-ingredients",
+      "type": "concept",
+      "heading": "Three ingredients",
+      "body": "Natural selection emerges when three ordinary biological facts come together in a population.",
+      "bullets": [
+        {
+          "text": "Genetic variation: individuals differ in their alleles, by chance."
+        },
+        {
+          "text": "Inheritance: the trait must be passed to offspring."
+        },
+        {
+          "text": "Selective pressure: not every individual survives and reproduces equally."
+        }
+      ],
+      "callout": "Together: differential reproductive success.",
+      "caption": "Variation, inheritance and a selective pressure combine to cause differential reproductive success.",
+      "voiceover": {
+        "text": "Natural selection isn't one force. It's what happens when three ordinary facts come together in a population. First, genetic variation. Individuals differ in their alleles, so they differ in traits like colour or beak shape, and that variation arises by chance, through mutation and sexual reproduction. Second, inheritance. The trait has to be heritable, so the alleles behind it can be passed to offspring. A tan or a scar can't drive evolution, because it isn't inherited. Third, a selective pressure, something in the environment, like predators, drought or cold, that means not everyone survives and reproduces equally. Put the three together and you get differential reproductive success. The better-suited variants leave more offspring, so their alleles become more common."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8Fan",
+        "props": {
+          "direction": "converge",
+          "items": [
+            {
+              "label": "Genetic variation",
+              "sub": "different alleles, by chance\n(mutation, sexual reproduction)",
+              "at": 111
+            },
+            {
+              "label": "Inheritance",
+              "sub": "alleles passed to offspring",
+              "at": 406
+            },
+            {
+              "label": "Selective pressure",
+              "sub": "not all survive and\nreproduce equally",
+              "at": 711
+            }
+          ],
+          "hub": {
+            "label": "Differential",
+            "sub": "reproductive success",
+            "at": 924
+          },
+          "notes": [
+            {
+              "text": "Better-suited variants leave more offspring",
+              "at": 1026,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1335
+    },
+    {
+      "id": "concept-four-steps",
+      "type": "concept",
+      "heading": "From variation to evolution",
+      "body": "The same four-step sequence works for any example. Here it is traced through the peppered moth on soot-darkened bark.",
+      "bullets": [
+        {
+          "text": "Variation: pale and dark moths, a heritable difference."
+        },
+        {
+          "text": "Pressure: birds eat the moths they can see."
+        },
+        {
+          "text": "Dark moths survive and reproduce more."
+        },
+        {
+          "text": "The dark allele increases in frequency."
+        }
+      ],
+      "callout": "Selection acts on individuals. Evolution happens to populations.",
+      "caption": "Variation, pressure, differential survival and reproduction, then the population shifts.",
+      "voiceover": {
+        "text": "So how do the three ingredients chain together? Natural selection always runs through the same four steps, and the peppered moth shows them clearly. Step one, variation exists. The population already has pale moths and dark moths, and the colour difference is heritable. Step two, a selective pressure acts. On soot-darkened bark, birds spot the pale moths easily and eat them. Step three, differential survival and reproduction. The dark moths survive more often and leave more offspring. Step four, the population changes. Generation after generation, the dark allele becomes more common. And notice what never happens on the board. Not one moth changes colour. Selection acts on individuals, but evolution happens to populations."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aCamouflage",
+        "props": {
+          "habitat": "darkBark",
+          "prey": "moth",
+          "predator": "bird",
+          "legend": [
+            "dark moths",
+            "pale moths"
+          ],
+          "chartLabel": "Dark moths in the population",
+          "showPct": false,
+          "steps": [
+            {
+              "text": "Variation",
+              "at": 182
+            },
+            {
+              "text": "Pressure",
+              "at": 375
+            },
+            {
+              "text": "Survive, reproduce",
+              "at": 558
+            },
+            {
+              "text": "Population shifts",
+              "at": 721
+            }
+          ],
+          "generations": [
+            {
+              "camo": 4,
+              "visible": 16,
+              "at": 182
+            },
+            {
+              "camo": 8,
+              "visible": 12,
+              "at": 578
+            },
+            {
+              "camo": 13,
+              "visible": 7,
+              "at": 772
+            },
+            {
+              "camo": 17,
+              "visible": 3,
+              "at": 812
+            }
+          ],
+          "footer": [
+            {
+              "text": "Not one moth changes colour: the population changes",
+              "at": 945,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1275
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Genetic variation: differences in alleles between individuals in a population."
+        },
+        {
+          "text": "Inheritance: passing alleles from parents to offspring."
+        },
+        {
+          "text": "Selective pressure: an environmental factor that affects survival and reproduction."
+        },
+        {
+          "text": "Fitness: reproductive success, the surviving offspring an organism leaves."
+        },
+        {
+          "text": "Evolution: a change in allele frequencies of a population across generations."
+        }
+      ],
+      "callout": "Fittest means best suited, not strongest.",
+      "caption": "Genetic variation, inheritance, selective pressure, fitness, evolution.",
+      "voiceover": {
+        "text": "Let's pin down five terms. Genetic variation is the difference in alleles between individuals in a population. Inheritance is the passing of alleles from parents to offspring. A selective pressure is an environmental factor, like predators, climate or food supply, that affects an organism's chance of surviving and reproducing. Fitness is reproductive success, how many surviving offspring an organism leaves compared with others. So the fittest isn't the strongest, it's the best suited to that environment. And evolution is a change in the allele frequencies of a population across generations. Notice that one's defined for a population, not an individual."
+      },
+      "durationInFrames": 1125
+    },
+    {
+      "id": "concept-missing",
+      "type": "concept",
+      "heading": "When selection cannot act",
+      "body": "All three ingredients are necessary. Remove any one and the population cannot evolve by natural selection.",
+      "bullets": [
+        {
+          "text": "No variation: nothing to favour."
+        },
+        {
+          "text": "No inheritance: the advantage is not passed on."
+        },
+        {
+          "text": "No pressure: no variant reproduces more than another."
+        }
+      ],
+      "callout": "Take away any one, and selection stalls.",
+      "caption": "No variation, no inheritance or no pressure means no evolution by natural selection.",
+      "voiceover": {
+        "text": "Here's the test of whether you really understand it. What happens if one ingredient is missing? No variation. If every individual is genetically identical for the trait, there's nothing to favour, so the population can't shift. No inheritance. If the helpful trait can't be passed on, like a learned skill, the survivors' offspring are no more likely to have it, so the advantage is lost every generation. No selective pressure. If the environment treats every variant equally, no variant out-reproduces the others, so allele frequencies don't shift in any consistent direction. Take away any one of the three, and natural selection can't drive evolution, however harsh the environment is."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aGrid",
+        "props": {
+          "columns": [
+            {
+              "title": "No variation",
+              "at": 101
+            },
+            {
+              "title": "No inheritance",
+              "at": 304
+            },
+            {
+              "title": "No pressure",
+              "at": 619
+            }
+          ],
+          "rowLabels": [
+            {
+              "text": "Variation"
+            },
+            {
+              "text": "Inheritance"
+            },
+            {
+              "text": "Selective\npressure"
+            },
+            {
+              "text": "Result"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ok": false,
+                "text": "all identical",
+                "amber": true
+              },
+              {
+                "ok": true
+              },
+              {
+                "ok": true
+              }
+            ],
+            [
+              {
+                "ok": true
+              },
+              {
+                "ok": false,
+                "text": "not passed on",
+                "amber": true
+              },
+              {
+                "ok": true
+              }
+            ],
+            [
+              {
+                "ok": true
+              },
+              {
+                "ok": true
+              },
+              {
+                "ok": false,
+                "text": "all treated\nequally",
+                "amber": true
+              }
+            ],
+            [
+              {
+                "text": "nothing to\nfavour",
+                "at": 268
+              },
+              {
+                "text": "advantage\nlost each\ngeneration",
+                "at": 548
+              },
+              {
+                "text": "no consistent\nshift",
+                "at": 772
+              }
+            ]
+          ],
+          "footer": [
+            {
+              "text": "Remove any one: no evolution by natural selection",
+              "at": 863
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1230
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Write the four steps",
+      "question": "Wild rabbits live in a region that is becoming colder. They vary in fur thickness, and fur thickness is heritable. Explain how natural selection could lead to thicker-furred rabbits over many generations.",
+      "coachNote": "Name all four: variation, pressure, differential survival and reproduction, change in the population.",
+      "steps": [
+        "Variation: the population already contains rabbits with thinner and thicker fur, a heritable difference.",
+        "Pressure: the colder climate is the selective pressure.",
+        "Thicker-furred rabbits lose less heat, so more survive winter and reproduce.",
+        "They pass on alleles for thicker fur, so those alleles increase in frequency.",
+        "Answer: over many generations the population becomes thicker-furred; no rabbit grew thicker fur to order."
+      ],
+      "caption": "Variation, cold as the pressure, differential survival and reproduction, then allele frequency rises.",
+      "voiceover": {
+        "text": "Let's apply the four steps to a new example. Wild rabbits live in a region that's getting colder. They vary in fur thickness, and fur thickness is heritable. Step one, variation. The population already contains rabbits with thinner fur and rabbits with thicker fur. Step two, the pressure. The colder climate is the selective pressure. Step three, differential survival and reproduction. Thicker-furred rabbits lose less heat, so more of them survive winter and breed. Step four, the population changes. They pass on their alleles for thicker fur, so those alleles become more common each generation. Notice the wording. No rabbit grew thicker fur because it needed to. An answer that skips a step is the most common way marks are lost here."
+      },
+      "durationInFrames": 1380
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The stretching giraffe",
+      "body": "Wrong: the giraffe stretched its neck to reach high leaves and its offspring inherited the longer neck.",
+      "secondary": "Right: individuals do not adapt during their lifetime. Neck length already varied by chance; longer-necked giraffes left more offspring, so the alleles for longer necks became more common.",
+      "mistakeTag": "Need does not create variation",
+      "callout": "Selection chooses among existing variation. It does not create it on demand.",
+      "caption": "Individuals do not change their alleles; selection acts on variation that already exists.",
+      "voiceover": {
+        "text": "Here's the trap this lesson is built to fix. A student writes that the giraffe stretched its neck to reach higher leaves, and its offspring inherited the longer neck. That's wrong on two counts. A stretched neck is a change in the body, not in the alleles, so it can't be passed on. And organisms don't produce the variation they need. The right account is that neck length already varied by chance. Giraffes that happened to have longer necks reached more food, survived and left more offspring, so the alleles for longer necks became more common. Selection chooses among existing variation. It doesn't create it on demand."
+      },
+      "durationInFrames": 1200
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A few bacteria on a hospital surface happen to carry an allele that lets them survive a disinfectant, which is used every day. Using variation, inheritance and selective pressure, explain what happens to the proportion of resistant cells.",
+      "pausePrompt": "Pause: which part is the pressure, and was the resistance there first?",
+      "answerSteps": [
+        "Variation: a few cells already carry the resistance allele, which arose by chance.",
+        "Pressure: the disinfectant kills susceptible cells, so survival is unequal.",
+        "Inheritance: resistant survivors pass the allele to their offspring.",
+        "Answer: the proportion of resistant cells rises each generation until the population is largely resistant."
+      ],
+      "caption": "Pre-existing resistance, disinfectant as the pressure, inheritance, rising proportion.",
+      "voiceover": {
+        "text": "Quick check. A hospital surface carries a large population of bacteria. A few cells happen to carry an allele that lets them survive a disinfectant, and the disinfectant is used every day. Using variation, inheritance and selective pressure, explain what happens to the proportion of resistant cells. Pause and decide which part is the pressure. Here's the answer. The variation was there first, a few cells already carried the resistance allele by chance. The disinfectant is the selective pressure, it kills the susceptible cells. The resistant survivors pass the allele to their offspring, so the proportion of resistant cells rises every generation."
+      },
+      "durationInFrames": 1155
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Natural selection needs heritable variation, inheritance and a selective pressure.",
+        "Better-suited variants leave more offspring: differential reproductive success.",
+        "Four steps: variation, pressure, survival and reproduction, population change.",
+        "Remove any one ingredient and selection cannot act.",
+        "Individuals are selected; populations evolve."
+      ],
+      "finalPrompt": "Every answer: name the variation, the pressure, who reproduces more, and what changes.",
+      "caption": "Three ingredients, four steps, populations evolve.",
+      "voiceover": {
+        "text": "Let's lock it in. Natural selection needs three ingredients, heritable variation, inheritance and a selective pressure. Together they give differential reproductive success, the better-suited variants leave more offspring. Every explanation runs through four steps, variation, pressure, survival and reproduction, then a change in the population. Remove any one ingredient and selection can't act. And remember, individuals are selected, but populations evolve. Next lesson, we'll look at the selective pressures themselves."
+      },
+      "durationInFrames": 795
+    }
+  ]
+}

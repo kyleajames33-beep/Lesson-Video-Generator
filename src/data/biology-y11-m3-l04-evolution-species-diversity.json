@@ -1,0 +1,347 @@
+{
+  "title": "Evolution and Species Diversity",
+  "subtitle": "How one species becomes many",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 4",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Analyse how evolution causes species diversity"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-05"
+  ],
+  "inquiryQuestion": "How does evolution produce the diversity of species?",
+  "lessonIntent": "Students can analyse how isolation, different selective pressures and reproductive isolation turn one population into separate species, and how repeated speciation builds diversity.",
+  "examSkill": "Set out speciation as linked stages (isolation, divergent selection, reproductive isolation) and finish by showing how the sequence repeats to produce many species.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is Biology. Today, how evolution multiplies species. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Evolution and Species Diversity"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Millions of species, one code",
+      "body": "Earth has tens of millions of species, yet all life shares one genetic code and a common ancestor.",
+      "callout": "How does one process turn one starting point into so much variety?",
+      "image": "bioM5L13GalapagosFinches",
+      "caption": "All species share one genetic code and a common ancestor.",
+      "voiceover": {
+        "text": "Earth has tens of millions of species. Beetles, eucalypts, finches, fungi. And yet all of them share one genetic code, and trace back to a common ancestor. So how does a single process, natural selection, produce such staggering variety from one starting point? Natural selection changes populations. Today we'll see how it can also split one species into two, and then into many."
+      },
+      "durationInFrames": 810
+    },
+    {
+      "id": "concept-species",
+      "type": "concept",
+      "heading": "What counts as a species",
+      "body": "A species is a group of organisms that can interbreed in nature to produce fertile offspring.",
+      "bullets": [
+        {
+          "text": "Horse and donkey can mate and produce a mule."
+        },
+        {
+          "text": "The mule is almost always sterile, so no gene flow."
+        },
+        {
+          "text": "Different species are reproductively isolated."
+        }
+      ],
+      "callout": "Fertile is the word that does the work.",
+      "caption": "Biological species concept: interbreed to produce fertile offspring.",
+      "voiceover": {
+        "text": "Before we can explain diversity, we need a clear test for when two groups count as different species. Under the biological species concept, a species is a group of organisms that can interbreed in nature to produce fertile offspring. Horses and donkeys show why the word fertile matters. They can mate, and they produce a mule. But the mule is almost always sterile, so genes don't flow between the horse and donkey populations across generations. That's why they're two species. So species diversity is really about the number of separate gene pools, populations that are reproductively isolated from each other."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8Fan",
+        "props": {
+          "direction": "converge",
+          "items": [
+            {
+              "label": "Horse",
+              "sub": "one species",
+              "at": 335
+            },
+            {
+              "label": "Donkey",
+              "sub": "another species",
+              "at": 426
+            }
+          ],
+          "hub": {
+            "label": "Mule",
+            "sub": "almost always sterile",
+            "at": 457
+          },
+          "notes": [
+            {
+              "text": "No fertile offspring → no gene flow → two species",
+              "at": 579,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1125
+    },
+    {
+      "id": "concept-speciation",
+      "type": "concept",
+      "heading": "How one species becomes two",
+      "body": "A barrier stops gene flow, different pressures push each group a different way, and eventually they cannot interbreed.",
+      "bullets": [
+        {
+          "text": "Isolation: a barrier stops gene flow."
+        },
+        {
+          "text": "Different selection pressures on each side."
+        },
+        {
+          "text": "Gene pools diverge over many generations."
+        },
+        {
+          "text": "Reproductive isolation: two species."
+        }
+      ],
+      "callout": "Geographic isolation starts it; reproductive isolation completes it.",
+      "caption": "Isolation, different pressures, divergence, reproductive isolation.",
+      "voiceover": {
+        "text": "So how does one species split into two? Speciation usually runs through four stages. Step one, isolation. A barrier, like a river, an ocean or a mountain range, splits a population so the two parts can no longer interbreed. Gene flow stops. Step two, different selection pressures. The two environments are rarely the same, so here, one side is dry and sandy and the other is damp and shaded, and selection favours different traits on each side. Step three, the gene pools diverge. Over many generations, each accumulates different alleles. Step four, reproductive isolation. Eventually the differences are so great that even if the river dries up and the groups meet again, they can't produce fertile offspring. One species has become two."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aSpeciation",
+        "props": {
+          "mode": "split",
+          "steps": [
+            {
+              "text": "Isolation",
+              "at": 80
+            },
+            {
+              "text": "Different pressures",
+              "at": 365
+            },
+            {
+              "text": "Gene pools diverge",
+              "at": 721
+            },
+            {
+              "text": "Reproductive isolation",
+              "at": 853
+            }
+          ],
+          "sideLabels": [
+            "dry and sandy",
+            "damp and shaded"
+          ],
+          "speciesLabels": [
+            "Species A",
+            "Species B"
+          ],
+          "beats": {
+            "pop": 0,
+            "barrier": 111,
+            "diverge": 721,
+            "reunite": 965,
+            "species": 1128
+          }
+        }
+      },
+      "durationInFrames": 1380
+    },
+    {
+      "id": "concept-radiation",
+      "type": "concept",
+      "heading": "From speciation to biodiversity",
+      "body": "Repeated speciation, pruned by extinction, builds the tree of life.",
+      "bullets": [
+        {
+          "text": "Adaptive radiation: one ancestor diversifies into many niche-adapted species."
+        },
+        {
+          "text": "Darwin's finches: one colonising species, now around fifteen."
+        },
+        {
+          "text": "Extinction prunes some branches."
+        }
+      ],
+      "callout": "Evolution does not just change species. It multiplies them.",
+      "caption": "Adaptive radiation: Darwin's finches diversified from one ancestor.",
+      "voiceover": {
+        "text": "Now scale that up. When one ancestral species spreads into many empty niches and rapidly diversifies into several new species, each adapted to a different way of life, we call it adaptive radiation. Darwin's finches are the classic case. One ancestral finch species colonised the Galápagos Islands, and today there are around fifteen species, with beaks suited to different foods, like large seeds, small seeds, insects or cactus. Run speciation forward over hundreds of millions of years, with extinctions pruning some branches, and you get the whole tree of life. So evolution doesn't just change species. It multiplies them."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aSpeciation",
+        "props": {
+          "mode": "tree",
+          "ancestor": {
+            "label": "one ancestral finch species",
+            "at": 335
+          },
+          "growAt": 335,
+          "tipsAt": 497,
+          "tips": [
+            {
+              "label": "large seeds",
+              "beak": {
+                "depth": 20,
+                "length": 16
+              }
+            },
+            {
+              "label": "small seeds",
+              "beak": {
+                "depth": 10,
+                "length": 12
+              }
+            },
+            {
+              "label": "insects",
+              "beak": {
+                "depth": 5,
+                "length": 20
+              }
+            },
+            {
+              "label": "cactus",
+              "beak": {
+                "depth": 8,
+                "length": 26
+              }
+            }
+          ],
+          "extinct": {
+            "at": 731,
+            "label": "extinct"
+          },
+          "footer": [
+            {
+              "text": "Repeated speciation builds diversity",
+              "at": 863,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1125
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Species: organisms that can interbreed to produce fertile offspring."
+        },
+        {
+          "text": "Speciation: one species splitting into two or more new species."
+        },
+        {
+          "text": "Geographic isolation: a physical barrier separates populations."
+        },
+        {
+          "text": "Reproductive isolation: populations can no longer produce fertile offspring together."
+        },
+        {
+          "text": "Adaptive radiation: one ancestor rapidly diversifies into many niche-adapted species."
+        }
+      ],
+      "callout": "A barrier can be removed. Reproductive isolation cannot.",
+      "caption": "Species, speciation, geographic and reproductive isolation, adaptive radiation.",
+      "voiceover": {
+        "text": "Five terms. A species is a group of organisms that can interbreed to produce fertile offspring. Speciation is the process where one species splits into two or more new species. Geographic isolation is when a physical barrier, like a river, ocean or mountain, separates populations so they can't interbreed. Reproductive isolation is when populations can no longer produce fertile offspring together, even if they're brought back together. And adaptive radiation is the rapid diversification of one ancestral species into many, each adapted to a different niche."
+      },
+      "durationInFrames": 975
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Analyse Darwin's finches",
+      "question": "One ancestral finch species colonised the Galápagos Islands, which differ in available food. Today there are around fifteen finch species with different beaks. Use the speciation stages to analyse how one species became many.",
+      "coachNote": "Name the isolation, the differing pressures, what diverged, then why it repeated.",
+      "steps": [
+        "Isolation: finches on different islands were separated by ocean, so gene flow stopped.",
+        "Different pressures: islands offered different food, such as large seeds, small seeds, insects or cactus.",
+        "Divergence: selection favoured different beaks, so the island gene pools diverged.",
+        "Reproductive isolation: the populations could no longer interbreed.",
+        "Answer: repeated across islands, this adaptive radiation produced many species from one."
+      ],
+      "caption": "Isolation on islands, different foods, diverging beaks, reproductive isolation, repeated.",
+      "voiceover": {
+        "text": "Let's analyse Darwin's finches using the stages. First, isolation. Finches that reached different islands were separated by ocean, so gene flow between them stopped. Second, different pressures. The islands offered different food, large seeds on one, insects or cactus on another. Third, divergence. Selection favoured different beak shapes on each island, so their gene pools grew apart. Fourth, reproductive isolation. Eventually the populations could no longer interbreed. And the answer to diversity is that this happened again and again across the islands. That's adaptive radiation. And a good scientist asks what would weaken it, like finding that birds from different islands still interbreed freely."
+      },
+      "durationInFrames": 1200
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Born a new species?",
+      "body": "Wrong: a new species appears suddenly when an individual is born different enough from its parents.",
+      "secondary": "Right: speciation happens gradually to whole populations. Two populations slowly accumulate genetic differences until they can no longer interbreed.",
+      "mistakeTag": "Populations, not individuals",
+      "callout": "There is no single moment, and no single individual, where one species becomes two.",
+      "caption": "Speciation happens gradually to populations, not to single individuals.",
+      "voiceover": {
+        "text": "A common misconception is that a new species appears suddenly, when one individual is born different enough from its parents. That's not how it works. Speciation happens gradually, to whole populations, not to single individuals. Two populations slowly accumulate genetic differences, generation after generation, until they can no longer interbreed. There's no single moment, and no single individual, where one species becomes two. And remember, a species is defined by a population's ability to produce fertile offspring, so it only makes sense for groups."
+      },
+      "durationInFrames": 945
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Explain why reproductive isolation, rather than geographic isolation alone, is what marks the formation of a new species.",
+      "pausePrompt": "Pause: what does the species definition actually test?",
+      "answerSteps": [
+        "A species is defined by the ability to interbreed and produce fertile offspring.",
+        "Geographic isolation stops the opportunity, not the ability. Remove the barrier and they may breed again.",
+        "Reproductive isolation is a property of the organisms themselves.",
+        "Horse and donkey: not separated, yet two species because the mule is sterile.",
+        "Answer: only reproductive isolation makes the gene pools permanently separate."
+      ],
+      "caption": "Geographic isolation is reversible; reproductive isolation defines the species.",
+      "voiceover": {
+        "text": "Quick check. Why is reproductive isolation, rather than geographic isolation alone, what marks a new species? Pause, and think about what the species definition actually tests. Here's the answer. A species is defined by the ability to produce fertile offspring. A barrier only removes the opportunity to breed. Take it away, and the groups may breed again, showing they were still one species. Reproductive isolation is a property of the organisms themselves. The horse and donkey prove it. They aren't separated, yet they're two species, because the mule is sterile."
+      },
+      "durationInFrames": 1050
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A species can interbreed to produce fertile offspring.",
+        "Speciation: isolation, different pressures, divergence, reproductive isolation.",
+        "Geographic isolation starts it; reproductive isolation completes it.",
+        "Adaptive radiation: one ancestor diversifies into many niches.",
+        "Repeated speciation, pruned by extinction, builds biodiversity."
+      ],
+      "finalPrompt": "Speciation answer: barrier, different pressures, diverging gene pools, no fertile offspring, repeat.",
+      "caption": "Isolation plus different pressures, repeated, builds species diversity.",
+      "voiceover": {
+        "text": "Let's lock it in. A species is a group that can interbreed to produce fertile offspring. Speciation runs through four stages, isolation, different pressures, diverging gene pools, and reproductive isolation. Geographic isolation starts the process, but reproductive isolation completes it. Adaptive radiation is one ancestor diversifying into many niches, like Darwin's finches. And repeated speciation, pruned by extinction, builds the diversity of life. Next lesson, the giant animals of ancient Australia."
+      },
+      "durationInFrames": 810
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "title": "Selective Pressures",
+  "subtitle": "Abiotic and biotic factors that do the choosing",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 2",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Use examples to demonstrate how abiotic and biotic factors exert selective pressures on populations"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-06"
+  ],
+  "inquiryQuestion": "How do abiotic and biotic factors exert selective pressures on populations?",
+  "lessonIntent": "Students can classify a factor as abiotic or biotic and use a named example to show how it selects for a particular heritable trait.",
+  "examSkill": "Name the factor, say whether it is abiotic or biotic, name the variant it favours, and link that to differential survival and reproduction.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is Biology. Today, selective pressures, the factors that decide who survives to breed. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Selective Pressures — abiotic and biotic factors"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Frost, fox, hunger, disease",
+      "body": "A drought, a predator, a competitor for food: any of them can decide which individuals survive to breed.",
+      "callout": "What do they have in common, and how would you sort them?",
+      "image": "bioM6L6FinchBeaks",
+      "caption": "Drought, predators and competitors can all decide which individuals breed.",
+      "voiceover": {
+        "text": "Think about what could kill a young rabbit before it ever gets to breed. A hard frost. A fox. Not enough grass to eat. A disease. Four very different threats, but they have something in common. Each one decides which individuals survive long enough to reproduce, and that makes each of them a selective pressure. So how would you sort them into two groups? That's today's lesson."
+      },
+      "durationInFrames": 870
+    },
+    {
+      "id": "concept-two-kinds",
+      "type": "concept",
+      "heading": "Two kinds of pressure",
+      "body": "The environment splits into non-living and living parts, and both can act as selective pressures.",
+      "bullets": [
+        {
+          "text": "Abiotic: non-living, such as temperature, water, light, salinity, pH, fire."
+        },
+        {
+          "text": "Biotic: living, such as predators, competitors, parasites, pathogens, mates."
+        },
+        {
+          "text": "One population usually faces both at once."
+        }
+      ],
+      "callout": "Living or non-living: that is the dividing line.",
+      "caption": "Abiotic pressures are non-living; biotic pressures are other organisms.",
+      "voiceover": {
+        "text": "Every selective pressure comes from the environment, and the environment splits cleanly into two halves, the things that are alive and the things that aren't. Abiotic factors are the non-living parts. Temperature, water availability, light, salinity, soil pH and fire. Biotic factors are the living parts. Predators, competitors, parasites, pathogens, and even potential mates. So the frost goes on the abiotic side, and the fox and the disease go on the biotic side. And here's the key point. These two groups aren't rivals. A single population usually faces both at once. A desert plant is pressured by water scarcity and by herbivores eating its leaves, at the same time."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Sorter",
+        "props": {
+          "bins": [
+            {
+              "title": "Abiotic",
+              "sub": "non-living"
+            },
+            {
+              "title": "Biotic",
+              "sub": "living",
+              "tone": "warm"
+            }
+          ],
+          "items": [
+            {
+              "text": "Temperature",
+              "bin": 0,
+              "at": 253
+            },
+            {
+              "text": "Water availability",
+              "bin": 0,
+              "at": 263,
+              "icon": "drop"
+            },
+            {
+              "text": "Salinity",
+              "bin": 0,
+              "at": 294
+            },
+            {
+              "text": "Fire",
+              "bin": 0,
+              "at": 324
+            },
+            {
+              "text": "Predators",
+              "bin": 1,
+              "at": 406
+            },
+            {
+              "text": "Competitors",
+              "bin": 1,
+              "at": 416
+            },
+            {
+              "text": "Parasites",
+              "bin": 1,
+              "at": 426,
+              "icon": "worm"
+            },
+            {
+              "text": "Pathogens",
+              "bin": 1,
+              "at": 436,
+              "icon": "virus"
+            }
+          ],
+          "footer": [
+            {
+              "text": "One population usually faces both at once",
+              "at": 731,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1230
+    },
+    {
+      "id": "concept-abiotic",
+      "type": "concept",
+      "heading": "Abiotic pressure at work",
+      "body": "An abiotic pressure sets a physical challenge that some variants are better built to meet.",
+      "bullets": [
+        {
+          "text": "Drought: deep-beaked finches cracked the hard seeds that were left."
+        },
+        {
+          "text": "Cold: thicker-furred mammals survive winter better."
+        },
+        {
+          "text": "Salinity: only salt-tolerant plants survive and set seed."
+        }
+      ],
+      "callout": "Fewer survived, and the mean beak depth shifted up.",
+      "caption": "After the drought, surviving finches had deeper beaks on average (Grant and Grant, Daphne Major).",
+      "voiceover": {
+        "text": "So what does an abiotic pressure look like when it actually drives selection? The classic example is Peter and Rosemary Grant's finches on the Galápagos island of Daphne Major. Beak depth varies between the finches, and it's heritable. Then a drought struck. Small, soft seeds ran out, and what was left were large, hard seeds that only deep-beaked birds could crack. Most finches died, and the survivors tended to have deeper beaks. So the population's mean beak depth shifted upward in a single generation. The same logic applies to other abiotic factors. In cold climates, mammals with thicker fur survive winter better. In salty soils, only plants that tolerate high salt concentrations survive and set seed."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aShift",
+        "props": {
+          "xLabel": "Beak depth",
+          "ends": [
+            "shallow",
+            "deep"
+          ],
+          "glyph": "beak",
+          "yLabel": "Number of finches",
+          "before": {
+            "mean": 44,
+            "sd": 13,
+            "label": "before the drought",
+            "at": 243
+          },
+          "pressure": {
+            "favours": "high",
+            "edge": 52,
+            "width": 6,
+            "label": "drought: only hard seeds left",
+            "at": 335
+          },
+          "survivors": {
+            "label": "survivors",
+            "at": 569
+          },
+          "shiftText": {
+            "text": "mean beak depth shifts up",
+            "at": 680
+          },
+          "footer": []
+        }
+      },
+      "durationInFrames": 1320
+    },
+    {
+      "id": "concept-biotic",
+      "type": "concept",
+      "heading": "Biotic pressure at work",
+      "body": "Other organisms pressure a population by eating it, competing with it or infecting it.",
+      "bullets": [
+        {
+          "text": "Predation favours faster, camouflaged or defended prey."
+        },
+        {
+          "text": "Competition favours the best competitors."
+        },
+        {
+          "text": "Disease favours resistant individuals."
+        }
+      ],
+      "callout": "The virus selected resistance. It did not create it.",
+      "caption": "Myxoma virus (1950) killed over 99% of infected rabbits; resistant rabbits survived and bred.",
+      "voiceover": {
+        "text": "Now the living half. Other organisms pressure a population in three main ways. Predation selects for prey that are faster, better camouflaged or better defended. Competition for food, water, territory or mates favours the individuals best able to secure them. And disease selects for resistance. Here's an Australian example. Rabbits vary, and a few already carried alleles for resistance to the myxoma virus. In nineteen fifty, the virus was released into Australian rabbit populations, and it killed more than ninety nine percent of the rabbits it reached in the first epidemics. The resistant few survived and bred, and within about seven years, rabbits from previously exposed populations were surviving far better. The virus didn't create those resistance alleles. It selected the ones that were already there."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aSweep",
+        "props": {
+          "organism": "rabbit",
+          "pressure": {
+            "label": "myxoma virus, 1950",
+            "kind": "virus"
+          },
+          "resistant": [
+            3,
+            11
+          ],
+          "lucky": [
+            7
+          ],
+          "ringLabel": "resistance alleles already present",
+          "afterLabel": "survivors breed: resistance spreads",
+          "stages": [
+            "Before",
+            "Virus released",
+            "Next generations"
+          ],
+          "beats": {
+            "pop": 396,
+            "marked": 457,
+            "pressure": 579,
+            "reproduce": 863
+          }
+        }
+      },
+      "durationInFrames": 1425
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Abiotic factor: a non-living part of the environment, such as temperature or salinity."
+        },
+        {
+          "text": "Biotic factor: a living part of the environment, such as a predator or competitor."
+        },
+        {
+          "text": "Selective pressure: any factor that affects which individuals survive and reproduce."
+        },
+        {
+          "text": "Population: individuals of one species in the same area at the same time."
+        },
+        {
+          "text": "Predation: one organism kills and eats another."
+        }
+      ],
+      "callout": "A pressure decides which variants reproduce more.",
+      "caption": "Abiotic factor, biotic factor, selective pressure, population, predation.",
+      "voiceover": {
+        "text": "Five terms to lock in. An abiotic factor is a non-living part of the environment, like temperature, water or salinity. A biotic factor is a living part, like a predator, a competitor or a parasite. A selective pressure is any factor that affects which individuals survive and reproduce. A population is a group of individuals of the same species living in the same area at the same time. And predation is an interaction where one organism, the predator, kills and eats another, the prey. Notice that a pressure acts on a population, and it always favours some variants over others."
+      },
+      "durationInFrames": 1125
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Predict the change",
+      "question": "A prolonged drought begins in a grassland. A native grass population varies heritably in root depth. Predict how the population will change over several generations, and justify it.",
+      "coachNote": "Lead with the prediction, then justify: the pressure, the varying trait, then inheritance across generations.",
+      "steps": [
+        "Prediction: mean root depth increases over several generations.",
+        "Pressure: drought dries the upper soil, so water limits survival. This is abiotic.",
+        "Shallow-rooted plants lose water first; deeper-rooted plants still reach water, so more of them set seed.",
+        "Root depth is heritable, so seed comes mostly from deeper-rooted parents.",
+        "Answer: alleles for deeper roots rise in frequency, so the population mean shifts deeper."
+      ],
+      "caption": "Drought selects for deeper roots; seed comes mostly from deeper-rooted parents.",
+      "voiceover": {
+        "text": "Let's predict a change. A long drought hits a grassland, and a native grass population varies heritably in root depth. Lead with the prediction. The mean root depth will increase over several generations. Now justify it. The drought dries the upper soil, so water becomes the limiting factor, an abiotic pressure. Shallow-rooted plants lose access to water first, and are more likely to die before setting seed. Deeper-rooted plants can still reach water lower down, so more of them survive to flower. Because root depth is heritable, the seed comes mostly from deeper-rooted parents. So alleles for deeper roots rise in frequency, and the population mean shifts deeper."
+      },
+      "durationInFrames": 1215
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Pressures are not just attacks",
+      "body": "Wrong: a selective pressure is always something harmful, like a predator or a disease.",
+      "secondary": "Right: a selective pressure is anything that makes some variants reproduce more than others. Competition for mates, food supply and climate all qualify.",
+      "mistakeTag": "Not always a threat",
+      "callout": "If it changes who reproduces, it is a selective pressure.",
+      "caption": "Any factor that makes some variants reproduce more is a selective pressure.",
+      "voiceover": {
+        "text": "Here's a common trap. Students think a selective pressure has to be something that attacks, like a predator or a disease. It doesn't. A selective pressure is anything that makes some variants reproduce more than others. Competition for mates is a selective pressure, even though nothing is killed. So is the amount of food available, or the climate. Many pressures aren't attacks at all. They just mean resources or opportunities are unequally available. So ask one question. Does this factor change which individuals get to reproduce? If it does, it's a selective pressure."
+      },
+      "durationInFrames": 1050
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Classify each as abiotic or biotic, and name one trait it would select for: (a) more frequent bushfire; (b) a fast-running introduced predator; (c) rising soil salinity; (d) competition for nesting sites.",
+      "pausePrompt": "Pause: living or non-living? Then, which variant survives it better?",
+      "answerSteps": [
+        "(a) Abiotic: thicker insulating bark or seed released after heat.",
+        "(b) Biotic: faster escape, better camouflage, or sheltering in burrows.",
+        "(c) Abiotic: tolerance of high salt concentrations.",
+        "(d) Biotic: individuals better able to secure a nest site.",
+        "Answer: fire and salinity are abiotic; the predator and the competition are biotic."
+      ],
+      "caption": "Fire and salinity are abiotic; predators and competition are biotic.",
+      "voiceover": {
+        "text": "Quick check. Classify each factor as abiotic or biotic, and name one trait it would select for. A, more frequent bushfire. B, a fast-running introduced predator. C, rising soil salinity. D, competition for nesting sites. Pause, and decide living or non-living first. Here we go. Bushfire is abiotic, and it could select for thicker insulating bark, or seed released after heat. The predator is biotic, selecting for faster escape or better shelter use. Salinity is abiotic, selecting for salt tolerance. And competition for nest sites is biotic, favouring the individuals best able to secure one."
+      },
+      "durationInFrames": 1080
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Selective pressures come from the environment: abiotic (non-living) or biotic (living).",
+        "Drought favoured deep-beaked finches: an abiotic pressure.",
+        "Myxoma virus favoured resistant rabbits: a biotic pressure.",
+        "One population usually faces both kinds at once.",
+        "A pressure selects existing variation; it does not create it."
+      ],
+      "finalPrompt": "Name the factor, say abiotic or biotic, then name the variant it favours.",
+      "caption": "Abiotic and biotic pressures both select existing variation.",
+      "voiceover": {
+        "text": "Let's lock it in. Selective pressures come from the environment, and they're either abiotic, non-living, or biotic, living. Drought on Daphne Major favoured deep-beaked finches, an abiotic pressure. The myxoma virus favoured resistant rabbits, a biotic pressure. A single population usually faces both kinds at once. And every pressure selects from variation that already exists. It never creates it. Next lesson, a third source of pressure, us."
+      },
+      "durationInFrames": 765
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "title": "Australian Megafauna: Aboriginal Evidence",
+  "subtitle": "Rock art, oral tradition and fossil bone",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 5",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Describe examples from Aboriginal palaeontological evidence that demonstrate the existence of Australian megafauna"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03"
+  ],
+  "inquiryQuestion": "How does Aboriginal knowledge provide evidence of Australian megafauna?",
+  "lessonIntent": "Students can describe rock art and oral tradition as Aboriginal palaeontological evidence for Australian megafauna, and explain what each adds to fossil bone.",
+  "examSkill": "Establish the overlap in time first, name specific examples with their People and Country, state what each source adds beyond bone, and note that identifications are interpretations.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is Biology. Today, Australia's megafauna, and the Aboriginal evidence that they lived. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Australian Megafauna: Aboriginal Evidence"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Seen alive",
+      "body": "Fossil bones cannot show an animal’s colour, its sounds or how it behaved. People who lived alongside it could.",
+      "callout": "What else can tell us about an animal no scientist ever saw?",
+      "image": "bioY11M3L6Megafauna",
+      "caption": "Aboriginal knowledge is part of the evidence for Australia’s megafauna.",
+      "voiceover": {
+        "text": "How can we know what a long-extinct animal looked like, or how it behaved, when no scientist ever saw it alive? Fossil bones tell us a lot, like size and shape. But bones can't show an animal's colour, the sounds it made, or how it moved. In Australia, part of the answer comes from people who were there. Aboriginal Peoples have held knowledge of Country for tens of thousands of years, and some of it records animals that are now extinct."
+      },
+      "durationInFrames": 915
+    },
+    {
+      "id": "concept-overlap",
+      "type": "concept",
+      "heading": "Australia's giant animals",
+      "body": "Aboriginal Peoples were already living here while many megafauna species still walked the land.",
+      "bullets": [
+        {
+          "text": "Diprotodon, Genyornis, Thylacoleo, a short-faced kangaroo, a giant goanna."
+        },
+        {
+          "text": "Most disappear from the record by about 40,000 years ago."
+        },
+        {
+          "text": "Madjedbebe, Mirarr Country: people present about 65,000 years ago."
+        }
+      ],
+      "callout": "People and megafauna shared Country for many thousands of years.",
+      "caption": "People present by about 65,000 years ago; most megafauna gone by about 40,000.",
+      "voiceover": {
+        "text": "During the Pleistocene, Australia was home to giant animals, its megafauna. Diprotodon, a wombat relative estimated at around two point seven tonnes, the largest marsupial ever known. Genyornis, a flightless bird about two metres tall. Thylacoleo, the marsupial lion, with a huge slicing premolar and a hooked thumb claw. Plus a short-faced kangaroo and a giant goanna. Most of these disappear from the record by roughly forty thousand years ago. Now the critical part. Excavation at the Madjedbebe rock shelter, on Mirarr Country in the Northern Territory, places people here about sixty five thousand years ago. So people and megafauna shared Country for many thousands of years, and the people who made records could have seen these animals alive."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aTimeline",
+        "props": {
+          "axis": {
+            "from": 80,
+            "to": 0,
+            "step": 10,
+            "unit": "thousand years ago"
+          },
+          "bars": [
+            {
+              "label": "Most megafauna",
+              "from": 80,
+              "to": 40,
+              "openStart": true,
+              "tone": "warm",
+              "at": 0,
+              "sub": "most gone by about 40,000 years ago"
+            },
+            {
+              "label": "People on the continent",
+              "from": 65,
+              "to": 0,
+              "at": 823,
+              "sub": "Madjedbebe, Mirarr Country: about 65,000 years ago"
+            }
+          ],
+          "overlap": {
+            "a": 0,
+            "b": 1,
+            "label": "shared Country",
+            "at": 914
+          }
+        }
+      },
+      "durationInFrames": 1335
+    },
+    {
+      "id": "concept-two-forms",
+      "type": "concept",
+      "heading": "Rock art and oral tradition",
+      "body": "Aboriginal evidence for megafauna comes mainly from rock art that depicts the animals and oral traditions that describe them.",
+      "bullets": [
+        {
+          "text": "Rock art: a Kimberley painting identified as Thylacoleo."
+        },
+        {
+          "text": "Oral tradition: the Tjapwurrung mihirung paringmal, a giant bird."
+        },
+        {
+          "text": "Identifications are interpretations, and specialists sometimes disagree."
+        }
+      ],
+      "callout": "An identification is a claim to be tested.",
+      "caption": "Kimberley rock art (Thylacoleo) and Tjapwurrung oral tradition (mihirung paringmal).",
+      "voiceover": {
+        "text": "Aboriginal evidence for megafauna comes in two main forms. The first is rock art. A painting recorded in the north Kimberley shows a striped, thick-tailed animal with a heavy forelimb and a prominent clawed thumb. Kim Akerman identified it as Thylacoleo, the marsupial lion, because that anatomy matches its skeleton and no living animal. The second form is oral tradition. Tjapwurrung traditions from western Victoria, recorded in the eighteen hundreds, describe a giant emu-like bird hunted by people, the mihirung paringmal. Palaeontologists later adopted that Tjapwurrung name for the whole family of extinct giant birds. But identifications are interpretations. A painting in Arnhem Land suggested to show Genyornis has been argued by others to show an emu or a bustard."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aGrid",
+        "props": {
+          "columns": [
+            {
+              "title": "Rock art",
+              "at": 30
+            },
+            {
+              "title": "Oral tradition",
+              "tone": "warm",
+              "at": 487
+            }
+          ],
+          "rowLabels": [
+            {
+              "text": "Example"
+            },
+            {
+              "text": "What it\nrecords"
+            },
+            {
+              "text": "Caution"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "north Kimberley painting\nidentified as Thylacoleo",
+                "at": 80
+              },
+              {
+                "text": "Tjapwurrung tradition:\nmihirung paringmal",
+                "at": 548
+              }
+            ],
+            [
+              {
+                "text": "stripes, thick tail,\nclawed thumb",
+                "at": 172
+              },
+              {
+                "text": "a giant emu-like bird\nhunted by people",
+                "at": 650
+              }
+            ],
+            [
+              {
+                "text": "Arnhem Land \"Genyornis\"\nis debated",
+                "at": 945,
+                "amber": true
+              },
+              {
+                "text": "name later adopted\nby palaeontologists",
+                "at": 762
+              }
+            ]
+          ]
+        }
+      },
+      "durationInFrames": 1350
+    },
+    {
+      "id": "concept-tested",
+      "type": "concept",
+      "heading": "A tradition put to the test",
+      "body": "Traditions describing volcanic eruptions in western Victoria match eruptions dated independently to about 37,000 years ago.",
+      "bullets": [
+        {
+          "text": "Gunditjmara and Tjapwurrung traditions describe the eruptions."
+        },
+        {
+          "text": "Argon dating: Budj Bim and Tower Hill erupted about 37,000 years ago."
+        },
+        {
+          "text": "A stone tool under the ash shows people were there first."
+        }
+      ],
+      "callout": "Tested against an independent date, the tradition held.",
+      "caption": "Oral tradition matches eruptions dated to about 37,000 years ago.",
+      "voiceover": {
+        "text": "Why trust an oral tradition across tens of thousands of years? Because it has been tested. Gunditjmara and Tjapwurrung traditions describe volcanic eruptions in western Victoria. Argon dating places the Budj Bim and Tower Hill eruptions at roughly thirty seven thousand years ago. And a stone tool found beneath the Tower Hill ash shows people were there before the eruption. So the traditions carry an accurate account of a specific event, independently dated, across tens of thousands of years. If a tradition can carry that, the same rigour applies to what it records about the animals of that time. That's not an argument from respect. It's an argument from evidence."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aTimeline",
+        "props": {
+          "axis": {
+            "from": 50,
+            "to": 0,
+            "step": 10,
+            "unit": "thousand years ago"
+          },
+          "bars": [
+            {
+              "label": "People present",
+              "from": 50,
+              "to": 0,
+              "openStart": true,
+              "at": 385,
+              "sub": "stone tool found beneath the Tower Hill ash"
+            },
+            {
+              "label": "Eruption carried in tradition",
+              "from": 37,
+              "to": 0,
+              "tone": "warm",
+              "at": 548,
+              "sub": "Gunditjmara and Tjapwurrung traditions"
+            }
+          ],
+          "markers": [
+            {
+              "ka": 37,
+              "label": "Budj Bim and Tower Hill erupt",
+              "at": 202
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1245
+    },
+    {
+      "id": "concept-sources",
+      "type": "concept",
+      "heading": "Why multiple sources matter",
+      "body": "No single source gives the whole picture. Combining Aboriginal knowledge with the fossil record gives a fuller, more reliable account.",
+      "bullets": [
+        {
+          "text": "Fossil bones: size, skeleton, date."
+        },
+        {
+          "text": "Rock art: appearance and posture."
+        },
+        {
+          "text": "Oral tradition: behaviour, habitat, relationship with Country."
+        }
+      ],
+      "callout": "Independent lines that agree make the conclusion strong.",
+      "caption": "Bones, rock art and oral tradition each add different information.",
+      "voiceover": {
+        "text": "So how does Aboriginal evidence fit with the fossils scientists dig up? Each source contributes something different. Fossil bones give the animal's size and skeleton, and dating methods estimate when it lived. Rock art can show external appearance and posture, details that bones don't preserve. Oral tradition can preserve behaviour, habitat, and the animal's relationship with people and Country. When these independent lines agree, the conclusion that the megafauna existed, and that people lived alongside them, becomes very strong. Aboriginal knowledge isn't a replacement for the fossil record, and it isn't inferior to it. It complements it."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8Fan",
+        "props": {
+          "direction": "converge",
+          "items": [
+            {
+              "label": "Fossil bones",
+              "sub": "size, skeleton, date",
+              "at": 111
+            },
+            {
+              "label": "Rock art",
+              "sub": "appearance, posture",
+              "at": 263
+            },
+            {
+              "label": "Oral tradition",
+              "sub": "behaviour, habitat,\nrelationship with Country",
+              "at": 396
+            }
+          ],
+          "hub": {
+            "label": "Strong conclusion",
+            "sub": "independent lines agree",
+            "at": 538
+          },
+          "notes": [
+            {
+              "text": "Complementary, not a replacement or inferior",
+              "at": 741,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1095
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Megafauna: large-bodied animals; in Australia, extinct giant marsupials, birds and reptiles."
+        },
+        {
+          "text": "Palaeontological evidence: evidence about past life, from fossils and from records made by people who lived alongside it."
+        },
+        {
+          "text": "Oral tradition: knowledge passed down in spoken accounts across generations."
+        },
+        {
+          "text": "Rock art: images created on rock surfaces."
+        },
+        {
+          "text": "Diprotodon: the largest known marsupial, a giant wombat relative."
+        }
+      ],
+      "callout": "Records made by people who were there count as evidence.",
+      "caption": "Megafauna, palaeontological evidence, oral tradition, rock art, Diprotodon.",
+      "voiceover": {
+        "text": "Five terms. Megafauna are large-bodied animals, and in Australia that means the giant marsupials, birds and reptiles of the Pleistocene that are now extinct. Palaeontological evidence is evidence about past life. Traditionally that means fossils, but it also includes records made by people who lived alongside the animals. Oral tradition is knowledge passed down in spoken accounts across generations, and in Aboriginal cultures it's a rigorous, long-lived record of Country. Rock art is images created on rock surfaces. And Diprotodon is the largest known marsupial, a giant relative of the wombat."
+      },
+      "durationInFrames": 1035
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "How a claim gets tested",
+      "question": "Burnt eggshell fragments from arid Australia were said to show that people harvested Genyornis eggs. How was this claim tested?",
+      "coachNote": "Follow the sequence: claim, challenge, independent method.",
+      "steps": [
+        "1999: dated eggshell disappears from the record about 50,000 years ago.",
+        "2016 claim: burnt fragments are the remains of cooking fires, so people harvested Genyornis eggs.",
+        "Challenge: others argued the shell was too small and thin, and came from a giant megapode.",
+        "2022: ancient proteins sequenced from the shell matched Genyornis.",
+        "Answer: a claim, a challenge, then an independent method settled it. No single line carries a conclusion alone."
+      ],
+      "caption": "Claim, challenge, then ancient protein sequencing settled the Genyornis eggshell.",
+      "voiceover": {
+        "text": "Here's how palaeontology actually tests a claim. In nineteen ninety nine, dated eggshell from arid sites was shown to disappear from the record about fifty thousand years ago. In twenty sixteen, burnt fragments of that shell were argued to be the remains of cooking fires, evidence that people harvested Genyornis eggs. That claim was challenged. Other researchers said the shell was too small and thin, and belonged to a giant megapode instead. The dispute was settled in twenty twenty two by a method neither side had used, sequencing ancient proteins preserved in the shell. They matched Genyornis. Claim, challenge, independent test."
+      },
+      "durationInFrames": 1170
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Just stories\"",
+      "body": "Wrong: only fossil bones give real evidence about extinct animals; Aboriginal accounts are just stories.",
+      "secondary": "Right: rock art and oral traditions are detailed, durable records that scientists recognise as palaeontological evidence. They complement bone and can add what bone cannot.",
+      "mistakeTag": "Evidence, not folklore",
+      "callout": "Weigh every source against independent evidence, Aboriginal or Western.",
+      "caption": "Aboriginal records are recognised palaeontological evidence that complements bone.",
+      "voiceover": {
+        "text": "Here's the misconception to fix. Some people assume only fossil bones count as real evidence, and that Aboriginal accounts are just stories. That's wrong. Rock art and oral traditions are detailed, durable records, made by people who lived alongside these animals, and scientists recognise them as palaeontological evidence. Like any source, they're weighed against independent evidence, and specialists can disagree about a particular identification. And one more thing. Much of this knowledge belongs to particular communities. When you write about it, name the People and Country, cite your source, and say when an identification is an interpretation."
+      },
+      "durationInFrames": 1095
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A scientist has dated Genyornis eggshell fragments and Aboriginal rock art of a large bird from the same region. What does each source contribute, what can the art show that the shell cannot, and why are both stronger together?",
+      "pausePrompt": "Pause: what can a painting record that a dated fragment cannot?",
+      "answerSteps": [
+        "Eggshell: a dated physical record that the bird lived there.",
+        "Rock art: the external appearance of the living animal.",
+        "The art can show how the bird looked; the shell cannot.",
+        "Answer: two independent lines agreeing make the conclusion far stronger than either alone."
+      ],
+      "caption": "Dated shell plus rock art: independent lines agreeing strengthen the conclusion.",
+      "voiceover": {
+        "text": "Quick check. A scientist has two pieces of evidence, dated Genyornis eggshell and Aboriginal rock art of a large bird from the same region. What does each contribute, what can the art show that the shell can't, and why is using both stronger? Pause and decide. Here's the answer. The shell gives a dated, physical record that the bird was there. The art records what the living animal looked like, which no fragment of shell can show. And because the two lines are independent, their agreement makes the conclusion far stronger than either alone."
+      },
+      "durationInFrames": 1080
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "People were here by about 65,000 years ago; most megafauna were gone by about 40,000.",
+        "Rock art, such as the Kimberley Thylacoleo painting, records appearance.",
+        "Oral tradition, such as the Tjapwurrung mihirung paringmal, records behaviour and habitat.",
+        "Oral traditions of eruptions match dating of about 37,000 years ago.",
+        "Identifications are interpretations, weighed with fossil evidence."
+      ],
+      "finalPrompt": "Overlap in time first, then name the example, its People and Country, and what it adds beyond bone.",
+      "caption": "Aboriginal rock art and oral tradition are palaeontological evidence for megafauna.",
+      "voiceover": {
+        "text": "Let's lock it in. People were on this continent by about sixty five thousand years ago, and most megafauna were gone by about forty thousand, so they shared Country. Rock art, like the Kimberley painting of Thylacoleo, records appearance. Oral tradition, like the Tjapwurrung mihirung paringmal, records behaviour and habitat, and traditions of eruptions have been matched to dates of about thirty seven thousand years. Every identification is an interpretation, weighed alongside fossil evidence. Next lesson, Australia's monotremes and marsupials."
+      },
+      "durationInFrames": 900
+    }
+  ]
+}
