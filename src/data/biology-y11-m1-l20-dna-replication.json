@@ -1,0 +1,316 @@
+{
+  "title": "DNA Replication",
+  "subtitle": "Modelling the replication fork, its enzymes, and judging the model",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 20",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Conduct a practical investigation to model the process of DNA replication, demonstrating the role of complementary bases, the replication fork with leading and lagging strands, and the enzymes of helicase, primase, DNA polymerases and ligase",
+    "Assess the use of models to demonstrate DNA replication"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01",
+    "BI-11WS-02"
+  ],
+  "inquiryQuestion": "How does a cell copy its DNA so accurately, and how good are our models of it?",
+  "lessonIntent": "Students can model DNA replication, explaining complementary base pairing, the replication fork, leading and lagging strands and the roles of helicase, primase, DNA polymerase and ligase, and assess the model.",
+  "examSkill": "Sequence the enzymes at a replication fork, explain leading versus lagging strands, and weigh a model's strengths and limitations to a judgement.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, DNA replication. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "DNA Replication"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A shape that gives away the secret",
+      "body": "Watson and Crick ended their 1953 paper noting that their structure \"immediately suggests a possible copying mechanism\".",
+      "callout": "What about a double helix reveals how DNA copies itself?",
+      "image": "dnaHelix",
+      "caption": "The double helix itself suggested how DNA is copied.",
+      "durationInFrames": 1048,
+      "voiceover": {
+        "text": "Before a cell divides, it has to copy all of its DNA, billions of base pairs, with almost no mistakes. When Watson and Crick published the double helix in nineteen fifty three, they ended with a famous understatement. They noted that the structure immediately suggests a possible copying mechanism. So what was it about a double helix that gave the secret away? Today we'll model the whole process, the fork, the strands and the enzymes, and then judge how good our models really are."
+      }
+    },
+    {
+      "id": "concept-unzip",
+      "type": "concept",
+      "heading": "Unzip, then template",
+      "body": "Helicase unzips the helix at a replication fork; each exposed strand is a template for a new partner.",
+      "bullets": [
+        {
+          "text": "Helicase breaks the hydrogen bonds and unwinds the helix: a Y-shaped fork."
+        },
+        {
+          "text": "Free nucleotides pair with each exposed strand: A–T, C–G."
+        },
+        {
+          "text": "Each new molecule = one original strand + one new strand (semi-conservative)."
+        }
+      ],
+      "callout": "The old strand is the template, so the copy is accurate.",
+      "caption": "Each parent strand templates a new one: two molecules, each one old strand and one new.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Dna",
+        "delay": 30,
+        "props": {
+          "mode": "replication",
+          "sequence": "ACTGGA",
+          "at": {
+            "unzip": 62,
+            "template": 316,
+            "build": 408,
+            "two": 616,
+            "rule": 824
+          }
+        }
+      },
+      "durationInFrames": 1186,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Replication starts when the double helix is unzipped. An enzyme called helicase breaks the hydrogen bonds between the bases and unwinds the helix, forming a Y shaped replication fork. Now each exposed strand can act as a template. Free nucleotides pair up with the exposed bases, following the rule, A with T, and C with G. The result is two DNA molecules, and each one keeps one original strand and one newly built strand. That's why replication is called semi conservative. Because every new strand is built against an original template, the copies are extremely accurate."
+      }
+    },
+    {
+      "id": "concept-enzymes",
+      "type": "concept",
+      "heading": "The enzyme team",
+      "body": "Helicase unzips, primase primes, DNA polymerase builds, ligase joins: one strand continuous, one in fragments.",
+      "bullets": [
+        {
+          "text": "Helicase: unzips the helix at the fork."
+        },
+        {
+          "text": "Primase: lays a short primer, a starting point."
+        },
+        {
+          "text": "DNA polymerase: adds complementary nucleotides along each template."
+        },
+        {
+          "text": "Leading strand: continuous, toward the fork. Lagging strand: fragments, away from it."
+        },
+        {
+          "text": "Ligase: joins the lagging-strand fragments."
+        }
+      ],
+      "callout": "Helicase, primase, polymerase, ligase.",
+      "caption": "Leading strand built continuously; lagging strand in fragments joined by ligase.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Fork",
+        "delay": 30,
+        "props": {
+          "at": {
+            "fork": 74,
+            "direction": 489,
+            "opposite": 570,
+            "leading": 732,
+            "lagging": 801,
+            "fragments": 974,
+            "primers": 1020,
+            "ligase": 1124,
+            "rule": 1182
+          }
+        }
+      },
+      "durationInFrames": 1336,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "So which enzymes do the building? It's a team. Helicase unzips the helix at the fork. Primase lays down a short primer, a starting point, because DNA polymerase can't start a new strand from nothing. DNA polymerase then adds complementary nucleotides along each template, but it can only build in one direction. On one template, that direction runs toward the fork, so the new strand is built continuously. That's the leading strand. On the other template it runs away from the fork, so the new strand is built in short fragments, each from its own primer. That's the lagging strand. Finally, ligase joins those fragments into one continuous strand."
+      }
+    },
+    {
+      "id": "concept-models",
+      "type": "concept",
+      "heading": "How good is the model?",
+      "body": "A physical model makes replication visible, but it simplifies scale, speed and chemistry.",
+      "bullets": [
+        {
+          "text": "Strengths: shows the steps, base pairing and each enzyme's role; hands-on."
+        },
+        {
+          "text": "Limitations: wrong scale; no real speed or accuracy; beads are not molecules."
+        },
+        {
+          "text": "Judgement: useful for learning the process, not an exact picture of the molecule."
+        }
+      ],
+      "callout": "Assess = strengths, limitations, then a judgement.",
+      "caption": "Weigh the model's strengths against its limitations, then judge.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bWeigh",
+        "delay": 30,
+        "props": {
+          "title": {
+            "text": "a bead-and-string model of replication",
+            "at": 0
+          },
+          "left": {
+            "title": "strengths",
+            "cards": [
+              {
+                "text": "makes an invisible process visible",
+                "at": 282
+              },
+              {
+                "text": "shows the steps, base pairing and each enzyme's role",
+                "at": 351
+              },
+              {
+                "text": "hands-on, so it helps you remember",
+                "at": 547
+              }
+            ]
+          },
+          "right": {
+            "title": "limitations",
+            "cards": [
+              {
+                "text": "wrong scale: real DNA is huge and 3-D",
+                "at": 720
+              },
+              {
+                "text": "can't show the real speed or accuracy",
+                "at": 858
+              },
+              {
+                "text": "beads aren't molecules: misses proofreading, antiparallel detail",
+                "at": 985
+              }
+            ]
+          },
+          "verdict": {
+            "text": "Useful for learning the steps and enzyme roles; not an accurate picture of the real molecule",
+            "at": 1216
+          }
+        }
+      },
+      "durationInFrames": 1613,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "In the practical, you model replication with beads, paper strips or pipe cleaners. So how good is that model? Let's weigh it up. On the strengths side, it makes an invisible process visible. It shows the order of the steps, the base pairing rule, and where each enzyme acts. And because you build it with your hands, it helps you remember. On the limitations side, the scale is wrong, because real DNA is enormous and three dimensional. It can't show the real speed or accuracy of copying. And beads and string don't behave like real molecules, so details like proofreading and the antiparallel strands usually get left out. So the judgement is, it's a useful tool for learning the steps and the enzyme roles, but not an accurate picture of the real molecule."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Replication fork: the Y-shaped point where the helix is unzipped and copied."
+        },
+        {
+          "text": "Helicase: unwinds and unzips the helix by breaking hydrogen bonds between bases."
+        },
+        {
+          "text": "Primase: lays down a short RNA primer, a starting point for DNA polymerase."
+        },
+        {
+          "text": "DNA polymerase: adds complementary nucleotides to build the new strand."
+        },
+        {
+          "text": "Ligase: joins the lagging strand's fragments into one continuous strand."
+        }
+      ],
+      "callout": "Semi-conservative: each new molecule keeps one original strand.",
+      "caption": "Replication fork, helicase, primase, DNA polymerase, ligase.",
+      "durationInFrames": 955,
+      "voiceover": {
+        "text": "Here are the terms. The replication fork is the Y shaped point where the helix is unzipped and copying happens. Helicase is the enzyme that unwinds and unzips the helix, by breaking the hydrogen bonds between bases. Primase lays down a short R N A primer, which gives DNA polymerase a starting point. DNA polymerase adds complementary nucleotides to build the new strand. And ligase joins the fragments of the lagging strand into one continuous strand."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "The fork, in order",
+      "question": "Describe the role of each enzyme at a replication fork in the order they act, and explain why one new strand is made in fragments.",
+      "coachNote": "Unzip, prime, build, join. Then: polymerase builds in one direction only.",
+      "steps": [
+        "Helicase unzips the double helix by breaking the hydrogen bonds, forming the fork.",
+        "Primase lays down a short primer on each template as a starting point.",
+        "DNA polymerase adds complementary nucleotides (A–T, C–G) along each template.",
+        "Polymerase builds in one direction only: toward the fork on one template (leading, continuous), away from it on the other (lagging).",
+        "So the lagging strand is made in short fragments, each with its own primer, and ligase joins them ✓"
+      ],
+      "caption": "Helicase, primase, DNA polymerase, ligase; the lagging strand is built in fragments.",
+      "durationInFrames": 1428,
+      "voiceover": {
+        "text": "Here's a classic question. Describe the role of each enzyme at a replication fork, in the order they act, and explain why one new strand is made in fragments. First, helicase unzips the double helix by breaking the hydrogen bonds, forming the fork. Second, primase lays down a short primer on each template as a starting point. Third, DNA polymerase adds complementary nucleotides along each template. Now the why. Polymerase can only build in one direction. On one template that's toward the fork, so it builds continuously, the leading strand. On the other it's away from the fork, so the lagging strand is made in short fragments, each with its own primer. Finally, ligase joins them up."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two replication traps",
+      "body": "Trap 1: 'Each new DNA molecule is completely new.' No: replication is semi-conservative. Each new double helix keeps one original strand as the template, plus one new strand.",
+      "secondary": "Trap 2: 'DNA polymerase unzips the helix.' Helicase does that, by breaking hydrogen bonds, not the backbone. DNA polymerase builds the new strands.",
+      "mistakeTag": "Semi-conservative",
+      "callout": "Helicase unzips; polymerase builds; each molecule keeps one old strand.",
+      "caption": "Replication is semi-conservative, and helicase, not polymerase, unzips the helix.",
+      "durationInFrames": 1036,
+      "voiceover": {
+        "text": "Two traps. Trap one, thinking each new DNA molecule is made entirely of new nucleotides, with the old strands thrown away. Replication is semi conservative. Each new double helix keeps one original strand, which acted as its template, and adds one newly built strand. That's exactly why the copies are so accurate. Trap two, mixing up the enzymes. DNA polymerase doesn't unzip the helix. Helicase does, and it only breaks the hydrogen bonds between bases, not the backbone. DNA polymerase is the builder."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "After replication, each DNA molecule contains one strand from the original molecule. What is this called, and why does it make copying accurate?",
+      "pausePrompt": "Pause: what does the original strand do during copying?",
+      "answerSteps": [
+        "It is called semi-conservative replication.",
+        "Each original strand acts as a template for its new partner.",
+        "Complementary base pairing (A–T, C–G) means each new strand is fixed by its template, so the copy matches the original ✓"
+      ],
+      "caption": "Semi-conservative: the original strand templates the new one by base pairing.",
+      "durationInFrames": 1013,
+      "voiceover": {
+        "text": "Quick check. After replication, each DNA molecule contains one strand from the original molecule. What's this called, and why does it make copying so accurate? Pause, and think about what the original strand does during copying. OK. It's called semi conservative replication. Each original strand acts as a template for its new partner, and because of complementary base pairing, A with T and C with G, the template fixes exactly which nucleotide goes where. So the new molecule matches the original."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Helicase unzips the helix at the replication fork; each strand becomes a template.",
+        "Primase lays a primer; DNA polymerase adds complementary nucleotides (A–T, C–G).",
+        "Leading strand: continuous. Lagging strand: fragments joined by ligase.",
+        "Replication is semi-conservative: one old strand + one new in each molecule.",
+        "Models show the steps well but not the real scale, speed or chemistry."
+      ],
+      "finalPrompt": "Replication question? Unzip, prime, build, join, and say semi-conservative.",
+      "caption": "Five takeaways: fork, enzymes, two strands, semi-conservative, models.",
+      "durationInFrames": 967,
+      "voiceover": {
+        "text": "Let's lock it in. First, helicase unzips the helix at the replication fork, and each strand becomes a template. Second, primase lays a primer, and DNA polymerase adds complementary nucleotides. Third, the leading strand is continuous, and the lagging strand is made in fragments joined by ligase. Fourth, replication is semi conservative. And fifth, models show the steps well, but not the real scale, speed or chemistry. Next lesson, how DNA is packaged in prokaryotes and eukaryotes."
+      }
+    }
+  ]
+}

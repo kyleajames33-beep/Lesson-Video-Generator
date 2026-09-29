@@ -1,0 +1,285 @@
+{
+  "title": "The DNA Double Helix",
+  "subtitle": "Nucleotides, complementary base pairing and hydrogen bonds",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 19",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Use the deoxyribonucleic acid (DNA) double helix model to demonstrate the structure of DNA, including nucleotide composition, complementary base pairing and hydrogen bonding"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "inquiryQuestion": "How can four letters store the instructions for a whole organism?",
+  "lessonIntent": "Students can use the double helix model to describe DNA structure: the three parts of a nucleotide, complementary base pairing (A–T, C–G) and the role of hydrogen bonds.",
+  "examSkill": "Write the complementary strand for a sequence and label nucleotides, base pairs and hydrogen bonds on a DNA diagram.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, the DNA double helix. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "The DNA Double Helix"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two metres, four letters",
+      "body": "A human cell holds about 2 metres of DNA in a nucleus too small to see, written with an alphabet of just four letters.",
+      "callout": "How can four letters spell out an entire human being?",
+      "image": "bioM5L6DoubleHelix",
+      "caption": "About 2 metres of DNA per cell, written in four letters: A, T, C and G.",
+      "durationInFrames": 1163,
+      "voiceover": {
+        "text": "A typical human cell holds about two metres of DNA, packed into a nucleus far too small to see. And the instructions it carries are written with an alphabet of just four letters. So how can four letters spell out an entire human being? The answer is in the structure, a model Watson and Crick put together in nineteen fifty three, built on clues like Rosalind Franklin's X ray images. Today we'll build that double helix from the bottom up, and see why its shape is so well suited to storing and copying information."
+      }
+    },
+    {
+      "id": "concept-nucleotide",
+      "type": "concept",
+      "heading": "The nucleotide building block",
+      "body": "DNA is a polymer of nucleotides: phosphate, deoxyribose sugar and one of four bases.",
+      "bullets": [
+        {
+          "text": "Nucleotide: a phosphate group + a deoxyribose sugar + a nitrogenous base."
+        },
+        {
+          "text": "The four bases: adenine (A), thymine (T), cytosine (C) and guanine (G)."
+        },
+        {
+          "text": "Sugars and phosphates link into the backbone; the bases point inward."
+        }
+      ],
+      "callout": "The backbone repeats; the order of bases carries the message.",
+      "caption": "Phosphate, deoxyribose and a base make a nucleotide; the base order carries the information.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Dna",
+        "delay": 30,
+        "props": {
+          "mode": "nucleotide",
+          "sequence": "ACTGGA",
+          "at": {
+            "parts": 120,
+            "phosphate": 178,
+            "sugar": 212,
+            "base": 258,
+            "link": 512,
+            "backbone": 605,
+            "twist": 720,
+            "info": 928,
+            "sequence": 1055
+          }
+        }
+      },
+      "durationInFrames": 1278,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "DNA is a polymer, a long chain built from repeating units called nucleotides. Each nucleotide has three parts. A phosphate group, a sugar called deoxyribose, and a nitrogenous base. There are four bases, adenine, thymine, cytosine and guanine, which we write as A, T, C and G. Nucleotides join through their sugars and phosphates, making a long sugar phosphate backbone, with the bases pointing inward. Two of these strands wind around each other to make the double helix. And here's the key idea. The backbone is the same repeating sugar and phosphate every time. The information is carried by the order of the bases."
+      }
+    },
+    {
+      "id": "concept-pairing",
+      "type": "concept",
+      "heading": "Complementary base pairing",
+      "body": "A always pairs with T, and C always pairs with G, held by hydrogen bonds.",
+      "bullets": [
+        {
+          "text": "A–T: two hydrogen bonds."
+        },
+        {
+          "text": "C–G: three hydrogen bonds."
+        },
+        {
+          "text": "The strands run in opposite directions (antiparallel)."
+        },
+        {
+          "text": "One strand's sequence fixes the other exactly."
+        }
+      ],
+      "callout": "Know one strand, and you know the other.",
+      "caption": "A pairs with T by two hydrogen bonds; C pairs with G by three.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Dna",
+        "delay": 30,
+        "props": {
+          "mode": "pairing",
+          "sequence": "ACTGGA",
+          "at": {
+            "at": 155,
+            "cg": 224,
+            "nofit": 282,
+            "hbonds": 385,
+            "two": 443,
+            "three": 535,
+            "anti": 639,
+            "template": 789
+          }
+        }
+      },
+      "durationInFrames": 1140,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "So how do the two strands join? Through complementary base pairing, and the rule is strict. Adenine always pairs with thymine, and cytosine always pairs with guanine. Any other combination simply doesn't fit. Each pair is held together by hydrogen bonds. A and T form two hydrogen bonds, while C and G form three. The two strands also run in opposite directions, which is called antiparallel. Because the pairing is fixed, if you know the sequence of one strand, you can work out the other exactly. That's what makes DNA copying possible."
+      }
+    },
+    {
+      "id": "concept-helix",
+      "type": "concept",
+      "heading": "Weak bonds, strong helix",
+      "body": "Hydrogen bonds are weak one at a time but strong together, so DNA is stable yet easy to unzip.",
+      "bullets": [
+        {
+          "text": "Two antiparallel backbones twist into a double helix, with base pairs as the rungs."
+        },
+        {
+          "text": "Millions of hydrogen bonds together hold the strands firmly."
+        },
+        {
+          "text": "Each bond is weak, so enzymes can unzip the strands without breaking the backbone."
+        }
+      ],
+      "callout": "Stable enough to store, easy enough to copy.",
+      "caption": "Hydrogen bonds are weak individually but strong collectively, so the strands can unzip.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bZipper",
+        "delay": 30,
+        "props": {
+          "sequence": "TACGGATCGATC",
+          "at": {
+            "strands": 0,
+            "pairs": 10,
+            "bonds": 40,
+            "one": 201,
+            "many": 305,
+            "unzip": 743,
+            "rule": 1020
+          },
+          "rule": "Weak one at a time, strong together"
+        }
+      },
+      "durationInFrames": 1267,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Why hold the strands together with hydrogen bonds, which are weak? Because DNA needs to be both stable and separable. A single hydrogen bond is weak, and breaks easily. But look how many there are, two or three in every base pair, and millions along a real DNA molecule. Together they hold the two strands firmly, so the molecule is stable. And because each bond is weak, enzymes can unzip the strands easily when DNA needs to be read or copied, separating the bases without breaking the strong sugar phosphate backbone. Weak one at a time, strong together. That's exactly what DNA needs."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Nucleotide: the repeating unit of DNA; a phosphate, a deoxyribose sugar and a nitrogenous base."
+        },
+        {
+          "text": "Nitrogenous base: adenine, thymine, cytosine or guanine; the letters of the code."
+        },
+        {
+          "text": "Complementary base pairing: A always pairs with T, and C always pairs with G."
+        },
+        {
+          "text": "Hydrogen bond: a weak attraction holding paired bases together."
+        },
+        {
+          "text": "Double helix: two DNA strands twisted around each other like a spiral ladder."
+        }
+      ],
+      "callout": "Backbone = sugar + phosphate. Rungs = base pairs.",
+      "caption": "Nucleotide, nitrogenous base, complementary base pairing, hydrogen bond, double helix.",
+      "durationInFrames": 1094,
+      "voiceover": {
+        "text": "Here are the terms. A nucleotide is the repeating unit of DNA, made of a phosphate group, a deoxyribose sugar and a nitrogenous base. The nitrogenous bases are adenine, thymine, cytosine and guanine, the letters of the genetic code. Complementary base pairing is the rule that A always pairs with T, and C always pairs with G. A hydrogen bond is the weak attraction that holds paired bases together. And the double helix is the shape of two DNA strands twisted around each other, like a spiral ladder."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Build the complementary strand",
+      "question": "Write the complementary strand for T–A–C–G–G–A–T–C, and find how many hydrogen bonds hold the eight base pairs together.",
+      "coachNote": "Apply the rule base by base, then count: A–T pairs 2, C–G pairs 3.",
+      "steps": [
+        "Rule: A pairs with T, and C pairs with G.",
+        "T–A–C–G–G–A–T–C pairs with A–T–G–C–C–T–A–G.",
+        "A–T type pairs: 4, each with 2 hydrogen bonds = 8.",
+        "C–G type pairs: 4, each with 3 hydrogen bonds = 12.",
+        "Total: 8 + 12 = 20 hydrogen bonds ✓"
+      ],
+      "caption": "Complement A–T–G–C–C–T–A–G, held by 20 hydrogen bonds.",
+      "durationInFrames": 1371,
+      "voiceover": {
+        "text": "Let's build a complementary strand. Write the partner for T, A, C, G, G, A, T, C, and work out how many hydrogen bonds hold the eight pairs together. Apply the rule base by base. T pairs with A, A with T, C with G, G with C, G with C, A with T, T with A, and C with G. So the complementary strand is A, T, G, C, C, T, A, G. Now count. Four of the pairs are A with T, at two hydrogen bonds each, which makes eight. The other four are C with G, at three each, which makes twelve. So the total is twenty hydrogen bonds."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two DNA traps",
+      "body": "Trap 1: 'Any base can pair with any other.' Pairing is strictly complementary: A only with T, C only with G, because of their shapes and the hydrogen bonds they can form.",
+      "secondary": "Trap 2: 'The information is stored in the backbone.' The sugar–phosphate backbone is the same repeating unit all the way along. The information is the order of the bases.",
+      "mistakeTag": "A–T and C–G only",
+      "callout": "The pairing rule is what makes accurate copying possible.",
+      "caption": "Only A–T and C–G pair, and the message is in the base sequence, not the backbone.",
+      "durationInFrames": 1082,
+      "voiceover": {
+        "text": "Two traps. Trap one, thinking any base can pair with any other. Pairing is strictly complementary. Adenine only pairs with thymine, and cytosine only with guanine, because of their shapes and the number of hydrogen bonds they can form, two for A T and three for C G. That strict rule is what makes accurate copying possible. Trap two, saying the genetic information is stored in the backbone. The backbone is just sugar and phosphate repeated over and over. The information is the order of the bases."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "One DNA strand reads A–C–G–T. Write the complementary strand, and say which kind of base pair is held by three hydrogen bonds.",
+      "pausePrompt": "Pause: apply A–T and C–G one base at a time.",
+      "answerSteps": [
+        "A pairs with T, C with G, G with C, T with A.",
+        "Complementary strand: T–G–C–A.",
+        "C–G pairs are held by three hydrogen bonds (A–T by two) ✓"
+      ],
+      "caption": "A–C–G–T pairs with T–G–C–A; C–G pairs have three hydrogen bonds.",
+      "durationInFrames": 990,
+      "voiceover": {
+        "text": "Quick check. One DNA strand reads A, C, G, T. Write the complementary strand, and say which kind of base pair is held by three hydrogen bonds. Pause, and apply the rule one base at a time. OK. A pairs with T, C with G, G with C, and T with A. So the complementary strand is T, G, C, A. And the pairs held by three hydrogen bonds are the C G pairs. A T pairs have two."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A nucleotide: phosphate + deoxyribose sugar + one of four bases (A, T, C, G).",
+        "Sugars and phosphates form the backbone; the bases carry the information.",
+        "A pairs with T (2 hydrogen bonds); C pairs with G (3 hydrogen bonds).",
+        "Two antiparallel strands twist into a double helix.",
+        "Hydrogen bonds: weak alone, strong together, so DNA is stable but can unzip."
+      ],
+      "finalPrompt": "DNA structure question? Nucleotide, pairing rule, hydrogen bonds, in that order.",
+      "caption": "Five takeaways: nucleotides, backbone, pairing, double helix, hydrogen bonds.",
+      "durationInFrames": 1082,
+      "voiceover": {
+        "text": "Let's lock it in. First, a nucleotide is a phosphate, a deoxyribose sugar and one of four bases. Second, sugars and phosphates form the backbone, and the order of the bases carries the information. Third, A pairs with T by two hydrogen bonds, and C pairs with G by three. Fourth, two antiparallel strands twist into a double helix. And fifth, hydrogen bonds are weak on their own but strong together, so DNA is stable but can still unzip. Next lesson, we use that to copy DNA."
+      }
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "title": "Somatic vs Gametic Cells",
+  "subtitle": "Body cells, sex cells, and why gametes carry half",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 22",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Compare the structures and roles of somatic and gametic cells"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "inquiryQuestion": "Why do sex cells carry only half the usual number of chromosomes?",
+  "lessonIntent": "Students can compare somatic (diploid, mitosis, growth and repair) and gametic (haploid, meiosis, fertilisation) cells and explain how fertilisation restores the diploid number.",
+  "examSkill": "Compare the two cell types feature by feature, using diploid, haploid and the human numbers 46 and 23.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, somatic and gametic cells. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Somatic vs Gametic Cells"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The doubling problem",
+      "body": "If a sperm and an egg each carried all 46 chromosomes, every generation would double its chromosome number. Yet humans always have 46.",
+      "callout": "How does the body avoid this explosion?",
+      "image": "bioM6L5SomaticGermline",
+      "caption": "Humans keep 46 chromosomes, generation after generation.",
+      "durationInFrames": 1082,
+      "voiceover": {
+        "text": "Your body contains two very different kinds of cell. Almost all of them, skin, muscle, nerve and liver, are body cells that build and maintain you. A tiny, special minority are sex cells, whose only job is to start the next generation. Here's the puzzle. If a sperm and an egg each carried a full set of forty six chromosomes, the baby would have ninety two, and the number would double every generation. Yet humans always have forty six. So how does the body avoid that explosion?"
+      }
+    },
+    {
+      "id": "concept-somatic",
+      "type": "concept",
+      "heading": "Somatic cells: the body cells",
+      "body": "Diploid body cells, with two full sets of chromosomes, that build, grow and repair the organism.",
+      "bullets": [
+        {
+          "text": "All body cells except sex cells: skin, muscle, nerve, bone, liver."
+        },
+        {
+          "text": "Human somatic cells: 46 chromosomes in 23 pairs, so diploid (2n)."
+        },
+        {
+          "text": "Role: build tissues and organs; grow, repair and replace."
+        },
+        {
+          "text": "They divide by mitosis, making identical diploid cells."
+        }
+      ],
+      "callout": "Somatic = body = diploid = mitosis.",
+      "caption": "Somatic cells are diploid body cells, 46 chromosomes in humans, made by mitosis.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bSomaticGametic",
+        "delay": 30,
+        "props": {
+          "at": {
+            "somatic": 0,
+            "gametic": 99999
+          },
+          "rows": [
+            {
+              "label": "chromosomes (human)",
+              "left": "46 (23 pairs)",
+              "right": "23 (one of each pair)",
+              "at": 305,
+              "rightAt": 99999
+            },
+            {
+              "label": "sets",
+              "left": "2 sets: diploid (2n)",
+              "right": "1 set: haploid (n)",
+              "at": 524,
+              "rightAt": 99999
+            },
+            {
+              "label": "role",
+              "left": "build, grow, repair the body",
+              "right": "fuse at fertilisation",
+              "at": 593,
+              "rightAt": 99999
+            },
+            {
+              "label": "made by",
+              "left": "mitosis",
+              "right": "meiosis",
+              "at": 835,
+              "rightAt": 99999
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1059,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Somatic cells are all the body cells of an organism, except the sex cells. Skin, muscle, nerve, bone and liver cells are all somatic. In humans, each one carries forty six chromosomes, arranged as twenty three pairs, with one set inherited from each parent. Having two full sets makes them diploid, written two n. Their job is to build the body's tissues and organs, and to grow, repair and replace themselves. They do that by dividing by mitosis, which produces two genetically identical diploid cells."
+      }
+    },
+    {
+      "id": "concept-gametic",
+      "type": "concept",
+      "heading": "Gametic cells: the sex cells",
+      "body": "Haploid sex cells, with one set of chromosomes, that fuse at fertilisation to make a diploid zygote.",
+      "bullets": [
+        {
+          "text": "Gametes: sperm and egg, 23 chromosomes in humans (one of each pair): haploid (n)."
+        },
+        {
+          "text": "Made by meiosis, the division that halves the chromosome number."
+        },
+        {
+          "text": "Fertilisation: n + n = 2n, a zygote with 46."
+        },
+        {
+          "text": "Built for the job: sperm have a tail to swim; eggs are large with a food store."
+        }
+      ],
+      "callout": "Halve in the gametes, restore at fertilisation.",
+      "caption": "A haploid sperm and a haploid egg fuse into a diploid zygote: n + n = 2n.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Ploidy",
+        "delay": 30,
+        "props": {
+          "mode": "fertilise",
+          "at": {
+            "gametes": 97,
+            "fuse": 558,
+            "zygote": 685,
+            "rule": 801,
+            "sequence": 847
+          }
+        }
+      },
+      "durationInFrames": 1267,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Gametic cells, or gametes, are the sex cells, sperm and egg. Each human gamete carries just twenty three chromosomes, one from each pair. That's one set, so gametes are haploid, written n. Gametes are made by meiosis, the division that halves the chromosome number. Their job is to fuse at fertilisation. A haploid sperm joins a haploid egg, n plus n, and the result is a diploid zygote with forty six chromosomes, the full number restored. Gametes are also built for the job. A sperm has a tail to swim, and an egg is large, with a food store for the early embryo."
+      }
+    },
+    {
+      "id": "concept-compare",
+      "type": "concept",
+      "heading": "Comparing structures and roles",
+      "body": "Somatic cells keep the chromosome number stable in the body; gametes halve it so fertilisation restores it.",
+      "bullets": [
+        {
+          "text": "Somatic: diploid, 46, mitosis, growth and repair."
+        },
+        {
+          "text": "Gametic: haploid, 23, meiosis, fertilisation."
+        },
+        {
+          "text": "Halving then fusing keeps the species' number constant at 46."
+        }
+      ],
+      "callout": "If gametes were diploid, the number would double every generation.",
+      "caption": "Diploid body cells made by mitosis; haploid sex cells made by meiosis.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bSomaticGametic",
+        "delay": 30,
+        "props": {
+          "at": {
+            "somatic": 39,
+            "gametic": 155
+          },
+          "rows": [
+            {
+              "label": "chromosomes (human)",
+              "left": "46 (23 pairs)",
+              "right": "23 (one of each pair)",
+              "at": 155
+            },
+            {
+              "label": "sets",
+              "left": "2 sets: diploid (2n)",
+              "right": "1 set: haploid (n)",
+              "at": 175
+            },
+            {
+              "label": "role",
+              "left": "build, grow, repair the body",
+              "right": "fuse at fertilisation",
+              "at": 224
+            },
+            {
+              "label": "made by",
+              "left": "mitosis: same number",
+              "right": "meiosis: halves it",
+              "at": 489
+            }
+          ],
+          "rule": {
+            "text": "Halve, then fuse: 46 every generation",
+            "at": 743
+          }
+        }
+      },
+      "durationInFrames": 1232,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Now put them side by side. Somatic cells are diploid, with forty six chromosomes in humans. Gametes are haploid, with twenty three. Their jobs differ too. Somatic cells build, grow and repair the body, while gametes fuse at fertilisation to start a new organism. And they're made differently. Somatic cells come from mitosis, which keeps the number the same, and gametes come from meiosis, which halves it. That halving is the answer to our puzzle. Because each gamete carries one set, fertilisation restores exactly two sets, so the chromosome number stays at forty six, generation after generation, instead of doubling."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Somatic cell: a body cell (e.g. skin, muscle, nerve); diploid; not involved in reproduction."
+        },
+        {
+          "text": "Gametic cell (gamete): a sex cell (sperm or egg); haploid; fuses at fertilisation."
+        },
+        {
+          "text": "Diploid (2n): two full sets of chromosomes (46 in humans)."
+        },
+        {
+          "text": "Haploid (n): one set of chromosomes (23 in humans)."
+        },
+        {
+          "text": "Fertilisation: the fusion of two haploid gametes to form a diploid zygote."
+        }
+      ],
+      "callout": "2n = 46 in body cells; n = 23 in gametes.",
+      "caption": "Somatic cell, gamete, diploid, haploid, fertilisation.",
+      "durationInFrames": 1036,
+      "voiceover": {
+        "text": "Here are the terms. A somatic cell is a body cell, like a skin, muscle or nerve cell. It's diploid and isn't involved in reproduction. A gametic cell, or gamete, is a sex cell, a sperm or an egg. It's haploid and fuses at fertilisation. Diploid, two n, means having two full sets of chromosomes, forty six in humans. Haploid, n, means having one set, twenty three in humans. And fertilisation is the fusion of two haploid gametes to form a diploid zygote."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Compare them properly",
+      "question": "Compare the structures and roles of somatic and gametic cells in humans, and explain what would happen if gametes were diploid.",
+      "coachNote": "Feature by feature for both cells, then follow the numbers through fertilisation.",
+      "steps": [
+        "Chromosomes: somatic 46 (diploid, 2n); gametic 23 (haploid, n).",
+        "Structure: somatic cells are specialised for their tissue; sperm have a tail, eggs are large with a food store.",
+        "Made by: somatic cells by mitosis; gametes by meiosis.",
+        "Role: somatic cells build, grow and repair; gametes fuse at fertilisation (23 + 23 = 46).",
+        "If gametes were diploid: 46 + 46 = 92, and the number would double every generation ✓"
+      ],
+      "caption": "Numbers, structure, how made, role; diploid gametes would give 92.",
+      "durationInFrames": 1325,
+      "voiceover": {
+        "text": "Let's answer a compare question properly. Compare the structures and roles of somatic and gametic cells in humans, and explain what would happen if gametes were diploid. Go feature by feature. Chromosomes, somatic cells have forty six and are diploid, gametes have twenty three and are haploid. Structure, somatic cells are specialised for their tissue, while a sperm has a tail and an egg is large, with a food store. How they're made, mitosis versus meiosis. Role, growth and repair versus fertilisation, where twenty three plus twenty three gives forty six. And if gametes were diploid, forty six plus forty six would give ninety two, doubling every generation."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two gamete traps",
+      "body": "Trap 1: 'A gamete has half-chromosomes.' No: it has half the NUMBER of chromosomes, one of each pair, and every chromosome it carries is complete.",
+      "secondary": "Trap 2: 'A sperm cell has 46 chromosomes, like a body cell.' Sperm and eggs have 23. Only the zygote, and the body cells that come from it, have 46.",
+      "mistakeTag": "Half the number, not half a chromosome",
+      "callout": "23 whole chromosomes in a gamete; 23 pairs in a body cell.",
+      "caption": "Gametes have 23 complete chromosomes, one of each pair.",
+      "durationInFrames": 1059,
+      "voiceover": {
+        "text": "Two traps. Trap one, thinking a gamete has half chromosomes, as if each chromosome were cut in half. A gamete has half the number of chromosomes, one from each pair, and every chromosome it carries is complete. So it's twenty three whole chromosomes in a gamete, versus twenty three pairs in a body cell. Trap two, saying a sperm has forty six chromosomes, like a body cell. It has twenty three. Only the zygote, and the body cells that come from it, have forty six."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A dog's body cells contain 78 chromosomes. How many chromosomes are in a dog sperm cell? Is a dog skin cell haploid or diploid, and which division makes it?",
+      "pausePrompt": "Pause: which cell has half, and which division halves?",
+      "answerSteps": [
+        "Body cells are diploid: 78 chromosomes = 39 pairs.",
+        "A sperm is haploid, with one of each pair: 39 chromosomes.",
+        "A skin cell is somatic, so it is diploid (78) and is made by mitosis ✓"
+      ],
+      "caption": "Dog sperm: 39 chromosomes. Dog skin cell: diploid, 78, made by mitosis.",
+      "durationInFrames": 1071,
+      "voiceover": {
+        "text": "Quick check. A dog's body cells contain seventy eight chromosomes. How many are in a dog sperm cell? And is a dog skin cell haploid or diploid, and which division makes it? Pause, and work out which cell has half. Right. Body cells are diploid, so seventy eight chromosomes means thirty nine pairs. A sperm is haploid, with one of each pair, so it has thirty nine. And a skin cell is a somatic cell, so it's diploid, with seventy eight, and it's made by mitosis."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Somatic cells are body cells: diploid (2n), 46 in humans, made by mitosis.",
+        "Somatic cells build, grow and repair the body.",
+        "Gametes are sperm and egg: haploid (n), 23 in humans, made by meiosis.",
+        "Gametes are specialised for fertilisation: tail to swim; large with a food store.",
+        "n + n = 2n: halving then fusing keeps the chromosome number constant."
+      ],
+      "finalPrompt": "Somatic or gametic? Check the number: 2n or n.",
+      "caption": "Five takeaways: two cell types, their numbers, how they are made and why.",
+      "durationInFrames": 886,
+      "voiceover": {
+        "text": "Let's lock it in. First, somatic cells are diploid body cells, with forty six chromosomes in humans, made by mitosis. Second, they build, grow and repair the body. Third, gametes are haploid sperm and eggs, with twenty three, made by meiosis. Fourth, gametes are specialised for fertilisation. And fifth, n plus n gives two n, so halving then fusing keeps the number constant. Next lesson, the cell cycle and mitosis."
+      }
+    }
+  ]
+}

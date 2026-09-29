@@ -1,0 +1,292 @@
+{
+  "title": "The Cell Cycle and Mitosis",
+  "subtitle": "G1, S, G2 and M, and modelling mitosis and cytokinesis",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 23",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Account for the phases of gap 1 (G1), synthesis, gap 2 (G2) and mitosis in the cell cycle",
+    "Conduct a practical investigation to model the named phases of mitosis and cytokinesis"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01",
+    "BI-11WS-02"
+  ],
+  "inquiryQuestion": "How does a cell make sure both daughters get a complete set of chromosomes?",
+  "lessonIntent": "Students can account for G1, S, G2 and M in order, model prophase, metaphase, anaphase, telophase and cytokinesis, and explain why the order produces two identical daughter cells.",
+  "examSkill": "Sequence the cell cycle and mitosis, explain why S must come before M, and track chromosome number.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, the cell cycle and mitosis. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "The Cell Cycle and Mitosis"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A perfect copy, every time",
+      "body": "Every cell in your body came from one fertilised egg dividing again and again, and your body makes billions of new cells every day.",
+      "callout": "How does a cell guarantee both daughters get a complete set of chromosomes?",
+      "image": "bioM5L7HelaCells",
+      "caption": "Each division must give both daughter cells a complete, identical set of chromosomes.",
+      "durationInFrames": 1048,
+      "voiceover": {
+        "text": "Every cell in your body came from one fertilised egg, dividing again and again. Even now, you're making billions of new cells every day, each one a copy of its parent, with the same DNA and the same chromosome number. That cycle of growth, copying and division is so tightly controlled that a single error can lead to cancer. So how does a cell guarantee that both daughters get a perfect, complete set of chromosomes, never one too many, and never one too few?"
+      }
+    },
+    {
+      "id": "concept-interphase",
+      "type": "concept",
+      "heading": "Interphase: G1, S and G2",
+      "body": "Most of the cycle is interphase, preparing to divide; only then does the cell enter M phase.",
+      "bullets": [
+        {
+          "text": "G1 (gap 1): the cell grows, makes proteins and organelles, and does its normal job."
+        },
+        {
+          "text": "S (synthesis): DNA is replicated, so each chromosome becomes two sister chromatids."
+        },
+        {
+          "text": "G2 (gap 2): more growth, division proteins made, the copied DNA checked."
+        },
+        {
+          "text": "M: mitosis divides the nucleus, then cytokinesis divides the cytoplasm."
+        }
+      ],
+      "callout": "Copy first, in S. Divide later, in M.",
+      "caption": "G1 growth, S DNA replication, G2 preparation and checking, then mitosis and cytokinesis.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5CellCycle",
+        "delay": 30,
+        "props": {
+          "at": {
+            "interphase": 85,
+            "g1": 201,
+            "s": 420,
+            "g2": 662,
+            "m": 916,
+            "rule": 1124
+          }
+        }
+      },
+      "durationInFrames": 1382,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Most of a cell's life isn't spent dividing at all. It's spent in interphase, preparing, and interphase has three phases. In gap one, or G1, the cell grows, makes proteins and organelles, and gets on with its normal job. In the synthesis phase, S, the DNA is replicated, so each chromosome becomes two identical sister chromatids, joined at a centromere. In gap two, G2, the cell grows further, makes the proteins it needs for division, and checks the copied DNA for errors. Only then does the cell enter M phase, where mitosis divides the nucleus and cytokinesis divides the cytoplasm. So the rule is, copy first in S, and divide later in M."
+      }
+    },
+    {
+      "id": "concept-mitosis",
+      "type": "concept",
+      "heading": "Mitosis, then cytokinesis",
+      "body": "Four ordered phases separate the copied chromosomes; cytokinesis then splits the cell in two.",
+      "bullets": [
+        {
+          "text": "Prophase: chromosomes condense; nuclear membrane breaks down; spindle fibres form."
+        },
+        {
+          "text": "Metaphase: chromosomes line up along the equator."
+        },
+        {
+          "text": "Anaphase: sister chromatids are pulled to opposite poles."
+        },
+        {
+          "text": "Telophase: two new nuclear membranes form."
+        },
+        {
+          "text": "Cytokinesis: the cytoplasm divides into two identical daughter cells."
+        }
+      ],
+      "callout": "Condense, line up, separate, rebuild, split.",
+      "caption": "Prophase, metaphase, anaphase, telophase, then cytokinesis: two identical cells.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m5Mitosis",
+        "delay": 30,
+        "props": {
+          "at": {
+            "prophase": 85,
+            "metaphase": 339,
+            "anaphase": 524,
+            "telophase": 651,
+            "cytokinesis": 801,
+            "result": 1066
+          }
+        }
+      },
+      "durationInFrames": 1302,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Now the division itself. Mitosis runs in four named phases. In prophase, the chromosomes condense and become visible, each as two sister chromatids, the nuclear membrane breaks down, and spindle fibres form. In metaphase, the chromosomes line up along the equator of the cell, attached to the spindle. In anaphase, the sister chromatids are pulled apart, to opposite poles. And in telophase, two new nuclear membranes form around the two identical sets. Then cytokinesis divides the cytoplasm, giving two separate daughter cells. In the practical, you model exactly this with two colours of modelling clay. Each daughter ends up with the same chromosomes as the parent."
+      }
+    },
+    {
+      "id": "concept-order",
+      "type": "concept",
+      "heading": "Why the order matters",
+      "body": "DNA must be copied in S before mitosis, and checkpoints verify it, so each daughter gets a complete set.",
+      "bullets": [
+        {
+          "text": "S before M: otherwise daughters would not each get a complete set."
+        },
+        {
+          "text": "Checkpoints (especially before mitosis) check the DNA is fully and correctly copied."
+        },
+        {
+          "text": "Mitosis before cytokinesis: each new cell needs a full nucleus."
+        },
+        {
+          "text": "Result: two daughter cells, identical to each other and to the parent."
+        }
+      ],
+      "callout": "Copied exactly, shared equally: identical daughters.",
+      "caption": "Copying in S and checking before mitosis give each daughter a complete set.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bCheckpoint",
+        "delay": 30,
+        "props": {
+          "at": {
+            "g1": 0,
+            "s": 20,
+            "gate": 489,
+            "m": 732,
+            "result": 792,
+            "skip": 258,
+            "skipResult": 420,
+            "rule": 974
+          },
+          "note": {
+            "text": "and mitosis before cytokinesis: each new cell needs a full nucleus",
+            "at": 778
+          },
+          "rule": "Copied exactly, shared equally: identical daughters"
+        }
+      },
+      "durationInFrames": 1348,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Why must it happen in exactly this order? Each phase depends on the one before. DNA has to be replicated in S phase before mitosis. If a cell divided without copying first, its chromosomes would be shared out, and each daughter would be missing some. The cell also uses checkpoints, especially between G2 and mitosis, to check that the DNA has been fully and correctly copied before division goes ahead. And mitosis must separate the chromatids before cytokinesis, or a new cell wouldn't get a full nucleus. Because the DNA is copied exactly and shared equally, the two daughter cells are genetically identical to each other and to the parent."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Interphase: G1, S and G2 together; the cell grows and copies its DNA."
+        },
+        {
+          "text": "S phase (synthesis): DNA is replicated, so each chromosome becomes two sister chromatids."
+        },
+        {
+          "text": "Mitosis: division of the nucleus into two genetically identical nuclei."
+        },
+        {
+          "text": "Sister chromatids: two identical copies of a chromosome joined at the centromere."
+        },
+        {
+          "text": "Cytokinesis: division of the cytoplasm after mitosis, making two separate cells."
+        }
+      ],
+      "callout": "Mitosis divides the nucleus; cytokinesis divides the cell.",
+      "caption": "Interphase, S phase, mitosis, sister chromatids, cytokinesis.",
+      "durationInFrames": 1013,
+      "voiceover": {
+        "text": "Here are the terms. Interphase is G1, S and G2 together, when the cell grows and copies its DNA before it divides. S phase, or synthesis, is when the DNA is replicated, so each chromosome becomes two identical sister chromatids. Mitosis is the division of the nucleus, producing two genetically identical nuclei. Sister chromatids are the two identical copies of a chromosome, joined at the centromere. And cytokinesis is the division of the cytoplasm after mitosis, producing two separate daughter cells."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Model it, phase by phase",
+      "question": "Using two colours of modelling clay, a student models a cell with two pairs of chromosomes (4 chromosomes) through one cell cycle. Describe what the model should show at each stage.",
+      "coachNote": "Copy in S, then follow the chromatids through each named phase.",
+      "steps": [
+        "S phase: each of the 4 chromosomes is doubled into 2 sister chromatids joined at a centromere.",
+        "Prophase: chromosomes condense; the nuclear membrane (string loop) is removed.",
+        "Metaphase: the 4 chromosomes line up along the equator.",
+        "Anaphase: sister chromatids are pulled to opposite poles.",
+        "Telophase and cytokinesis: two nuclei, then two cells, each with 4 chromosomes, identical to the parent ✓"
+      ],
+      "caption": "Double in S, then prophase, metaphase, anaphase, telophase, cytokinesis: 4 in each cell.",
+      "durationInFrames": 1255,
+      "voiceover": {
+        "text": "Here's the practical as a question. A student uses two colours of modelling clay to model a cell with two pairs of chromosomes, four in total, through one cell cycle. What should the model show? First, in S phase, each of the four chromosomes is doubled into two sister chromatids joined at a centromere. In prophase, the chromosomes condense, and the nuclear membrane is removed. In metaphase, the four chromosomes line up along the equator. In anaphase, the sister chromatids are pulled to opposite poles. And after telophase and cytokinesis, there are two cells, each with four chromosomes, identical to the parent."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two cell cycle traps",
+      "body": "Trap 1: 'Mitosis is the whole cell cycle, and it makes four cells.' Mitosis is only the nuclear division; most of the cycle is interphase. Mitosis plus cytokinesis makes TWO identical cells. Four cells with half the chromosomes is meiosis.",
+      "secondary": "Trap 2: 'DNA is copied during mitosis.' It is copied earlier, in the S phase of interphase.",
+      "mistakeTag": "Two cells, not four",
+      "callout": "Copy in S. Mitosis + cytokinesis = two identical cells.",
+      "caption": "Mitosis makes two identical cells, and DNA is copied in S phase, not mitosis.",
+      "durationInFrames": 1013,
+      "voiceover": {
+        "text": "Two traps. Trap one, saying mitosis is the whole cell cycle, and that it makes four cells. Mitosis is only the nuclear division part, and most of the cycle is interphase. Mitosis followed by cytokinesis makes two genetically identical cells. Four cells with half the chromosomes is meiosis, a different process. Trap two, saying the DNA is copied during mitosis. It's copied earlier, in the S phase of interphase. By the time mitosis starts, every chromosome is already two sister chromatids."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Explain why DNA must be replicated in S phase before mitosis begins.",
+      "pausePrompt": "Pause: what does each daughter cell need to receive?",
+      "answerSteps": [
+        "In mitosis, sister chromatids are separated, one to each daughter cell.",
+        "Sister chromatids only exist if the DNA was copied first, in S phase.",
+        "Without S, each daughter would receive an incomplete set of chromosomes.",
+        "So S before M means each daughter gets a complete, identical set ✓"
+      ],
+      "caption": "Copying first means both daughters get a complete, identical set.",
+      "durationInFrames": 978,
+      "voiceover": {
+        "text": "Quick check. Explain why DNA must be replicated in S phase before mitosis begins. Pause, and think about what each daughter cell needs to receive. OK. In mitosis, the sister chromatids are separated, one to each daughter cell. But sister chromatids only exist if the DNA was copied first, in S phase. Without that copy, each daughter would get an incomplete set of chromosomes. So replicating in S before M means each daughter gets a complete, identical set."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Interphase: G1 (grow), S (replicate DNA), G2 (grow, prepare, check).",
+        "Mitosis: prophase, metaphase, anaphase, telophase; then cytokinesis.",
+        "Anaphase separates sister chromatids to opposite poles.",
+        "Checkpoints make sure DNA is fully copied before division.",
+        "Result: two genetically identical daughter cells with the parent's chromosome number."
+      ],
+      "finalPrompt": "Cell cycle question? Copy in S, check, divide in M, then split.",
+      "caption": "Five takeaways: interphase, the phases of mitosis, checkpoints, identical daughters.",
+      "durationInFrames": 909,
+      "voiceover": {
+        "text": "Let's lock it in. First, interphase is G1 to grow, S to replicate the DNA, and G2 to grow, prepare and check. Second, mitosis runs prophase, metaphase, anaphase, telophase, then cytokinesis splits the cell. Third, anaphase separates the sister chromatids. Fourth, checkpoints make sure the DNA is fully copied before division. And fifth, the result is two identical daughter cells. Next lesson, meiosis, the division that halves the number and creates variety."
+      }
+    }
+  ]
+}
