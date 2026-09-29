@@ -1,0 +1,392 @@
+{
+  "title": "Inside Leaf, Stem & Root",
+  "subtitle": "Microscopic structures for gas exchange and transport",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 12",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Conduct a practical investigation to explain the functions of gas exchange, water and nutrient transport in microscopic leaf, stem and root structures"
+  ],
+  "moduleLessonCount": 25,
+  "lessonIntent": "Students can prepare and examine sections of leaf, stem and root, and use what they observe to explain gas exchange, water transport and nutrient transport.",
+  "examSkill": "For each function, name the structure, describe what it looks like under the microscope, and explain how that appearance delivers the function.",
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, a plant's plumbing under the microscope. Let's get into it."
+  },
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Inside Leaf, Stem & Root"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two opposite problems",
+      "body": "A leaf must let carbon dioxide in without losing too much water. A root must soak up water without leaking it back out.",
+      "callout": "How can a thin slice under a microscope reveal the answer?",
+      "image": "plantCell",
+      "caption": "Stomata, xylem, phloem and root hairs, each built for its job.",
+      "voiceover": {
+        "text": "A leaf has to let carbon dioxide in, but not let too much water out. A root has to soak up water from the soil, without leaking it back. How does the same plant solve two opposite problems? Cut a thin slice across a leaf, a stem or a root, stain it, and slide it under a microscope, and the plant's plumbing comes into view. Pores for swapping gases, hollow tubes for water, living tubes for sugar, and hairs for drinking."
+      },
+      "durationInFrames": 1032
+    },
+    {
+      "id": "concept-sections",
+      "type": "concept",
+      "heading": "Preparing and observing sections",
+      "body": "To explain what a structure does, first make it visible.",
+      "bullets": [
+        {
+          "text": "Cut very thin cross-sections of stem and root, or use prepared slides.",
+          "at": 1.2
+        },
+        {
+          "text": "Peel the lower epidermis of a leaf to see the stomata.",
+          "at": 6.8
+        },
+        {
+          "text": "Stain with methylene blue or iodine; mount in water under a coverslip.",
+          "at": 11.2
+        },
+        {
+          "text": "Standing a stem in dye first stains the xylem, so you can find it.",
+          "at": 21.2
+        },
+        {
+          "text": "Find the tissue on low power, then switch to high power for detail.",
+          "at": 36
+        }
+      ],
+      "callout": "Low power to find it, high power to study it.",
+      "caption": "A celery stalk stood in red dye: the xylem is stained, the phloem is not.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Sections",
+        "props": {
+          "mode": "celery",
+          "at": 0,
+          "rise": 636,
+          "cut": 780,
+          "headings": [
+            {
+              "text": "celery in red dye",
+              "at": 636
+            },
+            {
+              "text": "cross-section",
+              "at": 780
+            }
+          ],
+          "tags": [
+            {
+              "text": "dye rises in strands",
+              "at": 676,
+              "anchor": "stalk",
+              "x": 300,
+              "y": 150
+            },
+            {
+              "text": "stained xylem",
+              "at": 800,
+              "anchor": "dots",
+              "x": 560,
+              "y": 110,
+              "tone": "amber"
+            },
+            {
+              "text": "phloem: unstained",
+              "at": 996,
+              "anchor": "phloemC",
+              "x": 600,
+              "y": 390
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "First, the method. Cut very thin cross-sections of a stem and a root, or use prepared slides. To see stomata, peel off the lower epidermis of a leaf. Stain the sections with a dye like methylene blue or iodine, so the cell walls stand out, and mount them in water under a coverslip. Here's a neat trick. Stand a celery stalk in red dye first, and when you cut across it, the xylem is stained red, in separate dots near the outer edge. The phloem beside each dot stays unstained. Always find the tissue on low power first, then switch to high power for detail."
+      },
+      "durationInFrames": 1320,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-leaf",
+      "type": "concept",
+      "heading": "The leaf: gas exchange",
+      "body": "Stomata and the air spaces of the spongy mesophyll handle gas exchange.",
+      "bullets": [
+        {
+          "text": "Stomata: pores in the lower epidermis, each between two guard cells.",
+          "at": 10
+        },
+        {
+          "text": "Guard cells change shape, so the pore can close to limit water loss.",
+          "at": 16.4
+        },
+        {
+          "text": "Spongy mesophyll: loose cells with large air spaces linked to the stomata.",
+          "at": 24.4
+        },
+        {
+          "text": "CO₂ diffuses in; O₂ and water vapour diffuse out.",
+          "at": 30
+        }
+      ],
+      "callout": "Pores to swap gases, air spaces to spread them.",
+      "caption": "Leaf section: palisade, spongy mesophyll with air spaces, and a stoma between guard cells.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Sections",
+        "props": {
+          "mode": "leaf",
+          "at": 0,
+          "gas": 900,
+          "tags": [
+            {
+              "text": "waxy cuticle",
+              "at": 60,
+              "anchor": "cuticle",
+              "x": 640,
+              "y": 30
+            },
+            {
+              "text": "palisade mesophyll",
+              "at": 120,
+              "anchor": "palisade",
+              "x": 170,
+              "y": 30
+            },
+            {
+              "text": "stoma + guard cells",
+              "at": 300,
+              "anchor": "stoma",
+              "x": 420,
+              "y": 435,
+              "tone": "amber"
+            },
+            {
+              "text": "spongy mesophyll: air spaces",
+              "at": 732,
+              "anchor": "airspace",
+              "x": 590,
+              "y": 390
+            },
+            {
+              "text": "vein: xylem above phloem",
+              "at": 1176,
+              "anchor": "vein",
+              "x": 170,
+              "y": 400
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Let's read a leaf section. At the top, there's a waxy cuticle and the upper epidermis, then the tightly packed palisade cells, full of chloroplasts. On the underside are the stomata, small pores, each between a pair of curved guard cells. Because the guard cells can change shape, the pore can open or close, so the leaf can limit water loss. Above the stomata is the spongy mesophyll, loosely packed cells with large air spaces. Carbon dioxide diffuses in through the stomata and spreads through the air spaces to every cell, while oxygen and water vapour diffuse out. And in the middle is a vein, with xylem and phloem."
+      },
+      "durationInFrames": 1368,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-stem-root",
+      "type": "concept",
+      "heading": "Stem and root: water and nutrient transport",
+      "body": "Xylem carries water and minerals up; phloem carries sugars; root hairs absorb.",
+      "bullets": [
+        {
+          "text": "Stem: vascular bundles in a ring; xylem towards the centre, phloem towards the outside.",
+          "at": 2.4
+        },
+        {
+          "text": "Xylem: thick-walled, hollow tubes, stained by the dye: water transport.",
+          "at": 11.6
+        },
+        {
+          "text": "Phloem: smaller living cells with sieve plates: sugar transport.",
+          "at": 22
+        },
+        {
+          "text": "Root: root hair cells give a huge surface area for absorbing water and minerals.",
+          "at": 37.6
+        }
+      ],
+      "callout": "Every claim about function is backed by an observation.",
+      "caption": "Stem: ring of bundles. Root: central xylem, root hairs taking up water.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Sections",
+        "props": {
+          "mode": "stemroot",
+          "at": 0,
+          "stain": 348,
+          "water": 1320,
+          "headings": [
+            {
+              "text": "stem",
+              "at": 72
+            },
+            {
+              "text": "root",
+              "at": 924
+            }
+          ],
+          "tags": [
+            {
+              "text": "xylem (stained)",
+              "at": 348,
+              "anchor": "xylemS",
+              "x": 130,
+              "y": 470,
+              "tone": "amber"
+            },
+            {
+              "text": "phloem",
+              "at": 660,
+              "anchor": "phloemS",
+              "x": 330,
+              "y": 470
+            },
+            {
+              "text": "central xylem",
+              "at": 924,
+              "anchor": "xylemR",
+              "x": 520,
+              "y": 470
+            },
+            {
+              "text": "root hairs",
+              "at": 1128,
+              "anchor": "roothair",
+              "x": 690,
+              "y": 90
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Now the stem and the root. In a stem section, the vascular bundles sit in a ring, with the xylem towards the centre and the phloem towards the outside. The xylem shows up as thick-walled, hollow tubes, and if the stem stood in dye, these are the stained ones. That's direct evidence they carry water. The phloem is made of smaller, living cells with sieve plates, and it stays unstained, because it carries sugars, not the water. In a root section, the xylem forms a star in the centre, with phloem between its arms. And on the outside are root hair cells, whose long extensions give a huge surface area for absorbing water and minerals, which then pass inwards to the xylem."
+      },
+      "durationInFrames": 1524,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five structures to find under the microscope.",
+      "bullets": [
+        {
+          "text": "Stomata: pores on the leaf surface (mainly underside) between guard cells; open for gas exchange, close to limit water loss."
+        },
+        {
+          "text": "Mesophyll: the leaf’s photosynthetic tissue; the spongy mesophyll has air spaces for gas diffusion."
+        },
+        {
+          "text": "Xylem: dead, hollow tubes carrying water and dissolved minerals up from root to leaf."
+        },
+        {
+          "text": "Phloem: living tissue carrying dissolved sugars made in the leaf to the rest of the plant."
+        },
+        {
+          "text": "Root hair cell: a root epidermal cell with a long extension that increases surface area for absorption."
+        }
+      ],
+      "callout": "Name the structure, then its function.",
+      "caption": "Stomata, mesophyll, xylem, phloem, root hair cell.",
+      "voiceover": {
+        "text": "Let's lock in the structures. Stomata are pores on the leaf surface, mostly underneath, between guard cells. They open for gas exchange and close to limit water loss. Mesophyll is the leaf's photosynthetic tissue, and the spongy mesophyll has air spaces for gases to diffuse through. Xylem is dead, hollow tubes carrying water and dissolved minerals from root to leaf. Phloem is living tissue carrying dissolved sugars from the leaf to the rest of the plant. And a root hair cell is a root epidermal cell with a long extension that increases the surface area for absorbing water and minerals."
+      },
+      "durationInFrames": 1260
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Read the celery stalk as evidence",
+      "question": "A celery stalk is left overnight in red dye and then cut across. Describe what a student would observe, and explain how that observation is evidence for the function of a named tissue.",
+      "coachNote": "Describe first, then infer. What you see is not the same as what it means.",
+      "steps": [
+        "Observe: discrete red dots near the outer edge of the cut surface, not a uniformly red surface.",
+        "Identify: the red dots are xylem vessels inside the vascular bundles.",
+        "Infer: the dye travelled up from the base, so water moved up through those vessels.",
+        "So xylem transports water and dissolved minerals upward, drawn by the transpiration stream.",
+        "The unstained phloem in the same bundles is evidence that it carries something else."
+      ],
+      "caption": "Stained xylem dots show the path water took; unstained phloem carries something else.",
+      "voiceover": {
+        "text": "Let's read an observation as evidence. A celery stalk sits in red dye overnight, then it's cut across. First, describe what you see. The cut surface shows separate red dots near the outer edge, not an evenly red surface. Then identify them. Those dots are the xylem vessels in the vascular bundles. Now the inference. The dye started in the water at the base, and travelled up, so water must have moved up through those vessels. That's evidence that xylem transports water and dissolved minerals upward. And the phloem, in the same bundles, stayed unstained, which is evidence it carries something else."
+      },
+      "durationInFrames": 1284
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Do plants breathe through their roots?",
+      "body": "Wrong: plants get all their gases through their roots, like drinking water.",
+      "secondary": "Right: the gases used in photosynthesis are exchanged mainly through the stomata of the leaves (and lenticels in the stem). Roots take up water and dissolved minerals.",
+      "mistakeTag": "Gases through the stomata",
+      "callout": "Leaves for gases, roots for water and minerals.",
+      "caption": "CO₂ and O₂ for photosynthesis move through the stomata, not the roots.",
+      "voiceover": {
+        "text": "Here's a misconception to clear up. Plants get their gases through their roots, the same way they drink water. Not for photosynthesis. Carbon dioxide diffuses in, and oxygen diffuses out, mainly through the stomata of the leaves, with some exchange through small pores in the stem called lenticels. The roots are there to take up water and dissolved minerals. Root cells do still need a little oxygen for their own respiration, but the gases for photosynthesis go through the leaves."
+      },
+      "durationInFrames": 1020
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Under the microscope you see: (a) pairs of curved cells around small pores; (b) thick-walled, empty tubes stained red; (c) long, thin extensions on root epidermal cells. Name each structure and the function its appearance explains.",
+      "pausePrompt": "Pause: name the structure, then link its look to its job.",
+      "answerSteps": [
+        "(a) Stomata with guard cells: pores for gas exchange, adjustable to limit water loss.",
+        "(b) Xylem: hollow, lignified tubes for low-resistance water and mineral transport; the dye shows the path.",
+        "(c) Root hair cells: long extensions give a large surface area for absorbing water and minerals."
+      ],
+      "caption": "Guard cells and stomata, stained xylem, root hairs: each look explains a job.",
+      "voiceover": {
+        "text": "Quick check. Under the microscope you see three things. Pairs of curved cells around small pores. Thick-walled, empty tubes stained red. And long, thin extensions on the root's outer cells. Name each, and the function its appearance explains. Pause and try it. OK. The first is stomata with their guard cells, pores for gas exchange that can close to limit water loss. The second is xylem, hollow, lignified tubes for moving water and minerals, and the dye shows the path the water took. The third is root hair cells, whose long extensions give a large surface area for absorbing water and minerals."
+      },
+      "durationInFrames": 1284
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Prepare thin, stained sections; find tissue on low power, then high power.",
+        "Leaf: stomata and guard cells, plus spongy mesophyll air spaces, for gas exchange.",
+        "Stem: vascular bundles with xylem (water, stained by dye) and phloem (sugars).",
+        "Root: root hair cells give a large surface area for water and mineral uptake.",
+        "Back every claim about function with something you observed."
+      ],
+      "finalPrompt": "Section question? Structure, what it looks like, then the job it does.",
+      "caption": "Stomata for gases, xylem for water, phloem for sugars, root hairs for uptake.",
+      "voiceover": {
+        "text": "Let's lock it in. Prepare thin, stained sections, and find the tissue on low power before switching to high power. In the leaf, stomata with guard cells, and the air spaces of the spongy mesophyll, handle gas exchange. In the stem, vascular bundles hold xylem, which carries water and is stained by dye, and phloem, which carries sugars. In the root, root hair cells give a large surface area for taking up water and minerals. And always back up a claim about function with something you actually observed."
+      },
+      "durationInFrames": 1116
+    }
+  ]
+}

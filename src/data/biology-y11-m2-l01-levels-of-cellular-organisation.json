@@ -1,0 +1,366 @@
+{
+  "title": "Levels of Cellular Organisation",
+  "subtitle": "Unicellular, colonial and multicellular life",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Compare the characteristics and structures of cells in unicellular, colonial and multicellular organisms"
+  ],
+  "moduleLessonCount": 25,
+  "lessonIntent": "Students can compare the characteristics and structures of cells in unicellular, colonial and multicellular organisms, and justify why a specialised cell cannot live independently.",
+  "examSkill": "Compare the three levels on the same criteria (cell number, specialisation, independence, structures) and use interdependence, not cell count, to classify an organism.",
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, how life goes from one cell doing everything to whole organisms. Let's get into it."
+  },
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Levels of Cellular Organisation"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why can a pond Amoeba live alone, but your liver cell can’t?",
+      "body": "Every one of your cells came from one fertilised egg, yet a liver cell dies in pond water while a single-celled Amoeba thrives there.",
+      "callout": "What did multicellular life trade away to become big?",
+      "image": "bioY11M2L1VolvoxColony",
+      "caption": "One cell that lives alone, colonies in between, and bodies of cells that can’t.",
+      "voiceover": {
+        "text": "Here's a puzzle. Every cell in your body came from one fertilised egg. But drop one of your liver cells into a glass of pond water, and it dies within hours. Drop in an Amoeba, which is just one cell, and it's perfectly happy. And somewhere in between sit colonies, like the green ball called Volvox, where lots of cells live together but stop just short of being one body. So what did multicellular life trade away to become big? Let's find out."
+      },
+      "durationInFrames": 1056
+    },
+    {
+      "id": "concept-uni",
+      "type": "concept",
+      "heading": "One cell that does everything",
+      "body": "A unicellular organism is a single cell that carries out every function of life on its own.",
+      "bullets": [
+        {
+          "text": "Examples: Amoeba, Paramecium, yeast and bacteria.",
+          "at": 7.2
+        },
+        {
+          "text": "One cell handles nutrition, respiration, excretion, movement, sensitivity and reproduction.",
+          "at": 14.8
+        },
+        {
+          "text": "So the cell is a generalist, carrying extra structures: pseudopodia, a contractile vacuole.",
+          "at": 25.2
+        }
+      ],
+      "callout": "One cell, every job: a structural generalist.",
+      "caption": "An Amoeba moves and feeds with pseudopodia and pumps out water with a contractile vacuole.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Orgs",
+        "props": {
+          "mode": "uni",
+          "at": 0,
+          "reach": 736,
+          "engulf": 840,
+          "tags": [
+            {
+              "text": "pseudopodium",
+              "at": 756,
+              "anchor": "pseudo"
+            },
+            {
+              "text": "food vacuole",
+              "at": 870,
+              "anchor": "food"
+            },
+            {
+              "text": "contractile vacuole",
+              "at": 900,
+              "anchor": "vacuole"
+            },
+            {
+              "text": "nucleus",
+              "at": 216,
+              "anchor": "nucleus"
+            }
+          ],
+          "functions": [
+            {
+              "text": "nutrition",
+              "at": 444
+            },
+            {
+              "text": "respiration",
+              "at": 456
+            },
+            {
+              "text": "excretion",
+              "at": 468
+            },
+            {
+              "text": "movement",
+              "at": 516
+            },
+            {
+              "text": "sensitivity",
+              "at": 528
+            },
+            {
+              "text": "reproduction",
+              "at": 564
+            }
+          ],
+          "verdict": {
+            "text": "One generalist cell performs every function of life",
+            "at": 1128
+          }
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Start at the simplest level. A unicellular organism is an organism whose whole body is one single cell, like an Amoeba, a Paramecium, yeast or bacteria. That one cell has to do every job of staying alive, nutrition, respiration, getting rid of waste, moving, sensing its surroundings and reproducing. So it's a generalist, and it carries structures a specialised cell would never need. An Amoeba pushes out pseudopodia to move and to engulf its food. And a contractile vacuole fills with the water that leaks in from the pond, then pumps it back out. One cell, every job."
+      },
+      "durationInFrames": 1236,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-colony",
+      "type": "concept",
+      "heading": "Colonial life: together, but independent",
+      "body": "A colony is a group of identical or near-identical cells living together with little or no specialisation.",
+      "bullets": [
+        {
+          "text": "Each cell stays largely independent: a generalist that could, in principle, survive on its own.",
+          "at": 13.2
+        },
+        {
+          "text": "Volvox: hundreds of cells in a hollow ball, each with its own flagella, each photosynthesising for itself.",
+          "at": 19.6
+        },
+        {
+          "text": "A hint of teamwork: flagella beat together so the colony rolls towards light.",
+          "at": 30
+        }
+      ],
+      "callout": "More than one cell, but not yet one body.",
+      "caption": "Colonial cells are near-identical and largely independent; Volvox rolls towards light.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Orgs",
+        "props": {
+          "mode": "colony",
+          "at": 168,
+          "light": 900,
+          "tags": [
+            {
+              "text": "near-identical cells",
+              "at": 588,
+              "anchor": "cell"
+            },
+            {
+              "text": "own flagella",
+              "at": 744,
+              "anchor": "flagella"
+            },
+            {
+              "text": "own chloroplast",
+              "at": 852,
+              "anchor": "chloro"
+            }
+          ],
+          "verdict": {
+            "text": "Between one cell and one body",
+            "at": 1152
+          }
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "So what happens when lots of single cells live together? You get a colony. A colonial organism is a group of identical, or nearly identical, cells living together, with little or no specialisation. Each cell stays largely independent, still a generalist that could, in principle, survive on its own. Volvox is the classic example. It's a hollow ball of hundreds of cells, and each cell has its own pair of flagella and photosynthesises for itself. There is a hint of teamwork, though. The cells beat their flagella together, so the whole ball rolls towards the light. That's why a colony sits in between. It's more than one cell, but not yet one body."
+      },
+      "durationInFrames": 1416,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-multi",
+      "type": "concept",
+      "heading": "Multicellular: specialised and dependent",
+      "body": "Many specialised cells that depend on one another, so no single cell can survive alone.",
+      "bullets": [
+        {
+          "text": "Specialised cells do one job very well and lose the ability to do the others.",
+          "at": 4.4
+        },
+        {
+          "text": "Nerve cells signal, red blood cells carry oxygen, gut cells absorb food.",
+          "at": 11.2
+        },
+        {
+          "text": "Division of labour makes the organism efficient, but every cell dependent.",
+          "at": 26.4
+        },
+        {
+          "text": "The test: separate a cell. A colony cell lives on; a body cell dies.",
+          "at": 33.6
+        }
+      ],
+      "callout": "Specialisation creates interdependence.",
+      "caption": "Specialised cells depend on each other: a separated body cell dies, a colony cell survives.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Orgs",
+        "props": {
+          "mode": "multi",
+          "cells": [
+            {
+              "name": "nerve cell",
+              "at": 336
+            },
+            {
+              "name": "red blood cell",
+              "at": 444
+            },
+            {
+              "name": "gut lining cell",
+              "at": 648
+            }
+          ],
+          "link": {
+            "text": "each depends on the others",
+            "at": 792
+          },
+          "test": {
+            "at": 1008,
+            "result": 1176,
+            "colonyText": "colony cell, separated: lives",
+            "multiText": "body cell, separated: dies"
+          },
+          "verdict": {
+            "text": "Specialisation and interdependence, not cell count",
+            "at": 1308
+          }
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "So what tips an organism over into being truly multicellular? Specialisation. Once a cell becomes very good at one job, it loses the ability to do the others. A nerve cell signals, but it can't carry oxygen. A red blood cell carries oxygen, and has even lost its nucleus to fit in more haemoglobin. A gut cell absorbs food, but can't do either of those jobs. That division of labour makes the whole organism efficient, but it makes every cell dependent on the others. Here's the test. Pull one cell out of a colony, and it keeps living. Pull one cell out of a multicellular body, and it dies. It's not the number of cells that counts. It's specialisation and interdependence."
+      },
+      "durationInFrames": 1512,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for comparing the three levels.",
+      "bullets": [
+        {
+          "text": "Unicellular: an organism whose entire body is one cell performing all life functions (Amoeba, yeast, bacteria)."
+        },
+        {
+          "text": "Colonial: identical or near-identical cells living together, each largely able to survive alone (Volvox)."
+        },
+        {
+          "text": "Multicellular: many specialised cells that depend on one another and cannot survive independently."
+        },
+        {
+          "text": "Cell specialisation: cells developing different structures suited to a particular function (differentiation)."
+        },
+        {
+          "text": "Interdependence: cells relying on one another to survive, the hallmark of multicellular organisms."
+        }
+      ],
+      "callout": "Specialisation leads to interdependence.",
+      "caption": "Unicellular, colonial, multicellular, cell specialisation, interdependence.",
+      "voiceover": {
+        "text": "Let's pin down the vocabulary. Unicellular means the entire organism is one cell that performs every life function, like an Amoeba, yeast or bacteria. Colonial means identical, or nearly identical, cells living together, where each cell could largely survive on its own, like Volvox. Multicellular means many specialised cells that depend on one another and can't survive independently. Cell specialisation, also called differentiation, is cells developing different structures suited to one particular job. And interdependence is cells relying on one another to survive, which is the hallmark of a multicellular organism."
+      },
+      "durationInFrames": 1152
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "The liver cell and the Amoeba",
+      "question": "A liver cell placed in pond water dies within hours, while an Amoeba in the same water thrives. Explain this difference by referring to the characteristics of cells at different levels of organisation.",
+      "coachNote": "Explain means cause and effect. Name what any cell needs, then what each cell has or has lost.",
+      "steps": [
+        "To survive alone a cell must obtain nutrients, exchange gases, remove wastes and control its water content.",
+        "The Amoeba is unicellular: a generalist with pseudopodia to feed and a contractile vacuole to expel water.",
+        "The liver cell is specialised: it lost those structures, and relies on the gut, lungs, blood and kidneys.",
+        "In pond water it takes in water by osmosis with no way to expel it, and gets no nutrients or oxygen.",
+        "Answer: specialisation buys efficiency at the price of independence, so the liver cell dies."
+      ],
+      "caption": "The Amoeba keeps the structures for independent life; the specialised liver cell traded them away.",
+      "voiceover": {
+        "text": "Let's answer the hook as an exam question. Explain means cause and effect. First, name what any cell needs to survive alone. It has to get nutrients, exchange gases, remove wastes and control its water content. The Amoeba is unicellular, so it's a generalist. It feeds with pseudopodia, and its contractile vacuole pumps out the water that floods in from the pond. The liver cell is specialised. It lost those structures, and relies on the gut, the lungs, the blood and the kidneys to do those jobs for it. So in pond water, water rushes in by osmosis with no way out, and it gets no food or oxygen. Specialisation buys efficiency, but costs independence."
+      },
+      "durationInFrames": 1440
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "A colony is just a multicellular organism?",
+      "body": "Wrong: a colony and a multicellular organism are the same thing, both just many cells stuck together.",
+      "secondary": "Right: colony cells are largely identical and each can survive alone; multicellular cells are specialised and interdependent, so a single cell can’t survive on its own.",
+      "mistakeTag": "Cell count is not the test",
+      "callout": "Ask: are the cells specialised, and could one live alone?",
+      "caption": "The test is specialisation and interdependence, not the number of cells.",
+      "voiceover": {
+        "text": "Here's the trap. It's tempting to say a colony and a multicellular organism are the same thing, because both are just lots of cells stuck together. But the number of cells isn't the test. In a colony the cells are largely identical, and each one can survive on its own. In a multicellular organism the cells are specialised and interdependent, so a single cell can't survive alone. So whenever you're asked to classify an organism, ask two questions. Are the cells specialised? And could one of them live by itself?"
+      },
+      "durationInFrames": 1140
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Organism X is a green sphere of about 2000 identical flagellated cells; separated cells keep swimming and photosynthesising for days. Organism Y is broken apart the same way and every cell dies within hours. Classify each and justify.",
+      "pausePrompt": "Pause: what does the separation result tell you?",
+      "answerSteps": [
+        "X is colonial: identical, unspecialised cells that keep the structures for independent life.",
+        "Y is multicellular: specialised, interdependent cells that lack the structures to live alone.",
+        "Both have thousands of cells, so cell number can’t separate them.",
+        "Answer: the separation result is the evidence, not cell count."
+      ],
+      "caption": "X is colonial, Y is multicellular: the separation test decides, not cell number.",
+      "voiceover": {
+        "text": "Quick check. Organism X is a green sphere of about two thousand identical cells with flagella, and when it's broken apart the separated cells keep swimming and photosynthesising for days. Organism Y is broken apart the same way, and every cell dies within hours. Classify each one. Pause, and think about what the separation result tells you. OK. X is colonial. Its cells are identical and unspecialised, and each keeps the structures it needs to live alone. Y is multicellular. Its cells are specialised and interdependent, so a separated cell can't survive. Both have thousands of cells, so the evidence is the separation test, not the cell count."
+      },
+      "durationInFrames": 1356
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Unicellular: one generalist cell performs every function of life (Amoeba, Paramecium).",
+        "Colonial: near-identical cells live together, with little specialisation, each largely independent (Volvox).",
+        "Multicellular: specialised cells that depend on each other; none survives alone.",
+        "Moving up the levels, specialisation rises and independence falls.",
+        "Classify by specialisation and interdependence, never by cell number."
+      ],
+      "finalPrompt": "Classifying an organism? Ask: specialised cells, and could one live alone?",
+      "caption": "Unicellular, colonial, multicellular: specialisation up, independence down.",
+      "voiceover": {
+        "text": "Let's lock it in. A unicellular organism is one generalist cell that performs every function of life. A colonial organism is near-identical cells living together, with little specialisation, and each cell is largely independent. A multicellular organism is specialised cells that depend on each other, so none can survive alone. As you move up the levels, specialisation rises and independence falls. And classify by specialisation and interdependence, never by the number of cells. Next lesson, we'll see why cells can't just keep getting bigger."
+      },
+      "durationInFrames": 1068
+    }
+  ]
+}

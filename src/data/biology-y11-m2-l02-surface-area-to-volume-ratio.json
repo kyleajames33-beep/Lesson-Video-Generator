@@ -1,0 +1,315 @@
+{
+  "title": "Surface-Area-to-Volume Ratio",
+  "subtitle": "Why no cell is the size of a tennis ball",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 2",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Explain the effect of the surface-area-to-volume ratio on the rate of movement of materials into and out of a cell",
+    "Conduct a laboratory experiment to predict the effect of the surface-area-to-volume ratio on the rate of movement of materials into and out of a cell"
+  ],
+  "moduleLessonCount": 25,
+  "lessonIntent": "Students can calculate SA:V for model cubes, explain how SA:V affects the rate of movement of materials into and out of a cell, and predict the result of a diffusion-into-cubes experiment.",
+  "examSkill": "Calculate SA:V = 6/L, link a falling ratio and a longer diffusion distance to slower exchange, and predict and justify an agar-cube result.",
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, surface area to volume ratio, and why cells stay small. Let's get into it."
+  },
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Surface-Area-to-Volume Ratio"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same potato, same dye, different result",
+      "body": "Small potato cubes turn fully coloured in dye while one big cube of the same total volume stays pale in the middle.",
+      "callout": "Why does size alone decide how fast the inside gets supplied?",
+      "image": "bioY11M1L6CellInputsOutputs",
+      "caption": "Small cubes colour right through; the big cube keeps a pale core.",
+      "voiceover": {
+        "text": "Here's a strange result. Cut one big potato cube, and then several small cubes with the same total volume. Drop them all into dye for the same time. The small cubes turn coloured right through, but the big one stays pale in the middle. Same potato, same dye, same time. So why does size alone decide how fast the inside gets supplied? The answer is geometry, and it's the same rule that forces every cell in your body to stay tiny."
+      },
+      "durationInFrames": 1032
+    },
+    {
+      "id": "concept-calc",
+      "type": "concept",
+      "heading": "Calculating SA:V",
+      "body": "For a cube of side L: surface area = 6L², volume = L³, so SA:V = 6/L.",
+      "bullets": [
+        {
+          "text": "Small cube, L = 1: SA = 6, V = 1, so SA:V = 6 : 1.",
+          "at": 17.6
+        },
+        {
+          "text": "Large cube, L = 3: SA = 54, V = 27, so SA:V = 2 : 1.",
+          "at": 28
+        },
+        {
+          "text": "Surface area grows with L², volume with L³, so the ratio falls as size increases.",
+          "at": 41.2
+        }
+      ],
+      "callout": "Triple the side and the ratio drops to a third.",
+      "caption": "SA = 6L², V = L³, SA:V = 6/L: 6 : 1 for L = 1, 2 : 1 for L = 3.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Cubes",
+        "props": {
+          "mode": "calc",
+          "sides": [
+            1,
+            3
+          ],
+          "unit": "cm",
+          "beats": {
+            "cubes": 60,
+            "sa": 528,
+            "v": 660,
+            "ratio": 756,
+            "verdict": 1236
+          },
+          "verdict": "Side × 3, so SA:V ÷ 3"
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Let's put numbers on it. For a cube with side length L, the surface area is six faces, so six L squared, and the volume is L cubed. That makes the ratio six over L. Take a small cube with a side of one. Its surface area is six times one squared, which is six. Its volume is one cubed, which is one. So its ratio is six to one. Now a big cube with a side of three. The surface area is six times nine, fifty four. The volume is three cubed, twenty seven. So its ratio is only two to one. Surface area grows with the square of the length, but volume grows with the cube. Triple the side, and the ratio drops to a third."
+      },
+      "durationInFrames": 1596,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-exchange",
+      "type": "concept",
+      "heading": "Why a high SA:V means fast exchange",
+      "body": "Materials enter and leave only through the surface, while the volume sets the demand.",
+      "bullets": [
+        {
+          "text": "Surface: the cell membrane, the only route for oxygen, glucose and ions in, and carbon dioxide and wastes out.",
+          "at": 4
+        },
+        {
+          "text": "Volume: the living cytoplasm that uses the supplies and makes the waste.",
+          "at": 15.2
+        },
+        {
+          "text": "High SA:V means more membrane per unit of volume, so faster exchange for the cell’s needs.",
+          "at": 38.4
+        },
+        {
+          "text": "A bigger cell also has a longer diffusion distance to its centre.",
+          "at": 42.4
+        }
+      ],
+      "callout": "The surface supplies; the volume demands.",
+      "caption": "Acid reaches the same depth in each cube, so only the smallest changes right through.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Cubes",
+        "props": {
+          "mode": "diffuse",
+          "sides": [
+            1,
+            2,
+            3
+          ],
+          "unit": "cm",
+          "depth": 0.5,
+          "beats": {
+            "cubes": 0,
+            "start": 624,
+            "end": 1272,
+            "sa": 948,
+            "ratio": 1152,
+            "verdict": 1272
+          }
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "So why does the ratio matter to a living cell? The surface is the cell membrane, and it's the only door. Oxygen, glucose and ions come in through it, and carbon dioxide and wastes go out through it. The volume is the living cytoplasm, which uses those supplies and makes that waste. Now watch acid soak into three agar cubes, cut in half so we can see inside. The acid moves in about the same distance in all three, but the distance to the centre is half a centimetre, one centimetre, then one and a half. The smallest cube has the most surface for its volume, so it's changed right through, while the biggest still has an unchanged core. A large cell has exactly that problem. Its middle is undersupplied."
+      },
+      "durationInFrames": 1620,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-limit",
+      "type": "concept",
+      "heading": "SA:V sets the limit on cell size",
+      "body": "As a cell grows its SA:V falls, until the surface cannot supply the interior.",
+      "bullets": [
+        {
+          "text": "A cell that grows too large is starved of oxygen and clogged with waste at its centre.",
+          "at": 10.8
+        },
+        {
+          "text": "So SA:V sets an upper limit on cell size.",
+          "at": 18
+        },
+        {
+          "text": "Organisms keep cells small and become multicellular, or change cell shape to raise surface area.",
+          "at": 25.2
+        }
+      ],
+      "callout": "Stay small, or change shape.",
+      "caption": "As the cube grows, SA:V falls from 6 : 1 to 2 : 1 and the centre is undersupplied.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Cubes",
+        "props": {
+          "mode": "grow",
+          "from": 1,
+          "to": 3,
+          "unit": "cm",
+          "beats": {
+            "start": 0,
+            "end": 324
+          },
+          "chips": [
+            {
+              "text": "keep cells small: be multicellular",
+              "at": 756,
+              "tone": "amber"
+            },
+            {
+              "text": "long and thin (nerve cells)",
+              "at": 1092
+            },
+            {
+              "text": "flattened or folded",
+              "at": 1152
+            },
+            {
+              "text": "covered in microvilli",
+              "at": 1200
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Now let a cell keep growing, and watch the numbers. As the side gets longer, the volume races ahead of the surface, and the ratio keeps falling. Eventually the surface just can't keep up, so the centre is starved of oxygen and clogged with waste. That's why the ratio sets an upper limit on cell size. Life gets around it in two ways. Keep cells small, and build a big body out of lots of them. That's being multicellular. Or change the shape of the cell to boost its surface area, like long, thin nerve cells, flattened or folded cells, and cells covered in microvilli. You'll see the same idea again in leaves, lungs and the intestine."
+      },
+      "durationInFrames": 1464,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for every SA:V answer.",
+      "bullets": [
+        {
+          "text": "Surface area: the total area of the cell’s outer boundary, the membrane materials must cross."
+        },
+        {
+          "text": "Volume: the space inside the cell, the contents that need supplying and make waste."
+        },
+        {
+          "text": "SA:V ratio: surface area divided by volume; exchange surface per unit of contents."
+        },
+        {
+          "text": "Rate of exchange: how fast materials cross the membrane per unit of volume; higher when SA:V is high."
+        },
+        {
+          "text": "Diffusion distance: how far a molecule travels from the surface to the centre; longer in larger cells."
+        }
+      ],
+      "callout": "Always compare the ratio, not the raw area.",
+      "caption": "Surface area, volume, SA:V ratio, rate of exchange, diffusion distance.",
+      "voiceover": {
+        "text": "Let's lock in the vocabulary. Surface area is the total area of the cell's outer boundary, the membrane that everything has to cross. Volume is the space inside, the contents that need supplying and that make waste. The SA:V ratio is surface area divided by volume, so it tells you how much exchange surface there is for each unit of contents. The rate of exchange is how fast materials cross the membrane for each unit of volume, and it's higher when the ratio is high. And diffusion distance is how far a molecule has to travel from the surface to the centre, which gets longer as a cell gets bigger."
+      },
+      "durationInFrames": 1380
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Predict the agar-cube experiment",
+      "question": "Agar cubes of side 1 cm, 2 cm and 3 cm, containing an indicator, sit in the same dilute acid for ten minutes. Predict which cube is colour-changed through the greatest proportion of its volume, and justify your prediction.",
+      "coachNote": "Calculate SA:V = 6/L first. Then predict, then justify two ways.",
+      "steps": [
+        "SA:V = 6/L: 6 ÷ 1 = 6 : 1, 6 ÷ 2 = 3 : 1, 6 ÷ 3 = 2 : 1.",
+        "Prediction: the 1 cm cube changes through the greatest proportion; the 3 cm cube the least.",
+        "The acid reaches a similar depth in all three, but that depth is a larger fraction of the small cube.",
+        "Diffusion distance to the centre: 0.5 cm for the 1 cm cube, 1.5 cm for the 3 cm cube.",
+        "Fair test: same agar block, same acid concentration and volume, same temperature and time, cubes fully submerged."
+      ],
+      "caption": "SA:V of 6 : 1, 3 : 1 and 2 : 1: the 1 cm cube changes through the greatest proportion.",
+      "voiceover": {
+        "text": "Let's predict the classic practical. Agar cubes of one, two and three centimetres sit in the same acid for ten minutes. Which one is colour changed through the greatest proportion of its volume? Start with the numbers. Six over L gives ratios of six to one, three to one and two to one. So the prediction is that the one centimetre cube changes the most, and the three centimetre cube the least. Now justify it two ways. The acid gets about the same distance into every cube, but that's a bigger fraction of the small one. And the distance to the centre is only half a centimetre, compared with one and a half. Finish with the controls: same agar, same acid, same temperature and same time."
+      },
+      "durationInFrames": 1572
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Bigger cell, bigger surface, so it keeps up?",
+      "body": "Wrong: as a cell grows, its surface area and volume both increase, so exchange keeps up fine.",
+      "secondary": "Right: volume increases faster (with L³) than surface area (with L²), so SA:V falls and the growing interior is undersupplied.",
+      "mistakeTag": "Ratio, not raw area",
+      "callout": "A bigger cell has more surface, but less surface per unit of volume.",
+      "caption": "Surface area rises, but volume rises faster, so SA:V falls.",
+      "voiceover": {
+        "text": "Here's the trap. It sounds reasonable to say that as a cell grows, its surface area and its volume both get bigger, so the exchange keeps up. Both do increase, that part's true. But the volume increases faster, with the cube of the length, while the surface only increases with the square. So the ratio falls, and there's less and less membrane for each unit of cell to be supplied. A bigger cell has more surface, but less surface per unit of volume, and that's what decides whether it survives."
+      },
+      "durationInFrames": 1140
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A cell doubles its side length from 1 unit to 2 units. What happens to its SA:V, and what does this mean for the movement of materials into and out of it?",
+      "pausePrompt": "Pause: use 6/L before you explain.",
+      "answerSteps": [
+        "SA:V = 6/L: from 6 : 1 to 3 : 1, so the ratio halves.",
+        "Each unit of volume now has half as much membrane serving it.",
+        "The diffusion distance to the centre has doubled as well.",
+        "Answer: exchange is slower relative to the cell’s needs, so its centre is harder to supply."
+      ],
+      "caption": "Doubling the side halves SA:V (6 : 1 to 3 : 1), so exchange slows relative to need.",
+      "voiceover": {
+        "text": "Quick check. A cell doubles its side length from one unit to two. What happens to its ratio, and what does that mean for moving materials in and out? Pause, and use six over L before you explain. OK. Six over one is six to one, and six over two is three to one, so the ratio halves. That means each unit of the cell's volume has only half as much membrane serving it. On top of that, the distance to the centre has doubled. So exchange is slower relative to what the cell needs, and its centre is harder to supply."
+      },
+      "durationInFrames": 1284
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "For a cube: SA = 6L², V = L³, so SA:V = 6/L.",
+        "As size increases, volume outgrows surface area, so SA:V falls.",
+        "The membrane is the only route in and out; the volume sets the demand.",
+        "Low SA:V and long diffusion distance mean slow exchange for the cell’s needs.",
+        "So cells stay small, are multicellular, or change shape to keep SA:V high."
+      ],
+      "finalPrompt": "Exchange question? Calculate the ratio, then name the diffusion distance.",
+      "caption": "Five takeaways: 6/L, the falling ratio, surface versus demand, slow exchange, staying small.",
+      "voiceover": {
+        "text": "Let's lock it in. For a cube, surface area is six L squared, volume is L cubed, and the ratio is six over L. As size increases, volume outgrows surface area, so the ratio falls. The membrane is the only route in and out, while the volume sets the demand. A low ratio and a long diffusion distance both mean slow exchange for the cell's needs. And that's why cells stay small, organisms are multicellular, and cells change shape to keep the ratio high. Next lesson, we'll build those small cells into tissues, organs and systems."
+      },
+      "durationInFrames": 1212
+    }
+  ]
+}

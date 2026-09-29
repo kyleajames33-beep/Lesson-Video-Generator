@@ -1,0 +1,298 @@
+{
+  "title": "Translocation in Phloem",
+  "subtitle": "Sources, sinks and the pressure-flow theory",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 8",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Use the translocation theory to explain the movement of nutrients through phloem tissue"
+  ],
+  "moduleLessonCount": 25,
+  "lessonIntent": "Students can use the translocation (pressure-flow) theory to explain how sugar moves through phloem from source to sink, and why the direction can reverse.",
+  "examSkill": "Define source and sink, then sequence loading, osmosis, unloading and bulk flow, each step causing the next, with a named source and sink.",
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, how a plant with no pump moves sugar wherever it's needed. Let's get into it."
+  },
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Translocation in Phloem"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A pump with no moving parts",
+      "body": "A plant drives sticky sugar sap from a leaf to a root tip metres away, and can reverse the direction months later.",
+      "callout": "With no heart and no pump, what pushes the sap along?",
+      "image": "leaf",
+      "caption": "Phloem sap moves under pressure, from where sugar is made to where it’s needed.",
+      "voiceover": {
+        "text": "In spring, sugar flows up a plant to its bursting buds. In summer, it flows down to swelling roots and fruit. The same phloem can carry sugar in opposite directions at different times of the year. But a plant has no heart and no pump. So what pushes thick, sugary sap exactly where it's needed? The answer is an elegant system driven by nothing more than water and osmosis. It's called the translocation theory."
+      },
+      "durationInFrames": 948
+    },
+    {
+      "id": "concept-sources",
+      "type": "concept",
+      "heading": "Sources, sinks and translocation",
+      "body": "Translocation moves organic nutrients, mainly sucrose, through phloem from a source to a sink.",
+      "bullets": [
+        {
+          "text": "Source: makes or releases sugar, like a photosynthesising leaf.",
+          "at": 6.8
+        },
+        {
+          "text": "Sink: uses or stores sugar, like a root, fruit or growing tip.",
+          "at": 15.2
+        },
+        {
+          "text": "Sugar travels towards every sink, up or down.",
+          "at": 24
+        }
+      ],
+      "callout": "From where it’s made, to where it’s used.",
+      "caption": "Sucrose moves from a source leaf to sinks: roots, tuber and flower.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2SourceSink",
+        "props": {
+          "at": 0,
+          "phases": [
+            {
+              "at": 204,
+              "source": "leaves",
+              "sinks": [
+                "roots",
+                "tuber",
+                "flower"
+              ],
+              "label": "Summer"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "First, some definitions. Translocation is the movement of organic nutrients, mainly the sugar sucrose, through the phloem. It runs from a source, which is any part that makes or releases sugar, like a leaf photosynthesising in the sun, to a sink, which is any part that uses or stores sugar, like a root, a developing fruit or a growing tip. In summer, this leaf is the source, and it sends sugar down to the roots and the storage tuber, and up to the flower. The direction simply depends on where the sinks are."
+      },
+      "durationInFrames": 1176,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-pressure-flow",
+      "type": "concept",
+      "heading": "The pressure-flow mechanism",
+      "body": "Loading sugar pulls water in by osmosis, building pressure that drives the sap to the sink.",
+      "bullets": [
+        {
+          "text": "1. At the source, sugar is actively loaded into the phloem, using ATP from companion cells.",
+          "at": 3.2
+        },
+        {
+          "text": "2. This lowers the water potential, so water enters from the xylem by osmosis: pressure rises.",
+          "at": 9.6
+        },
+        {
+          "text": "3. At the sink, sugar is unloaded, water leaves, and pressure falls.",
+          "at": 22
+        },
+        {
+          "text": "4. The pressure difference drives bulk flow of sap from source to sink.",
+          "at": 31.2
+        }
+      ],
+      "callout": "Load, water in, unload, flow.",
+      "caption": "Active loading, osmosis, unloading and bulk flow down the pressure gradient.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2PressureFlow",
+        "props": {
+          "at": 0,
+          "beats": {
+            "load": 96,
+            "water": 288,
+            "high": 516,
+            "unload": 660,
+            "waterOut": 828,
+            "low": 876,
+            "flow": 936
+          }
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "So what actually pushes the sap? Four steps. One. At the source, companion cells use ATP to actively load sugar into the sieve tubes. Two. That lowers the water potential inside the tube, so water moves in from the nearby xylem by osmosis. Because the tube is enclosed, the pressure at the source end rises. Three. At the sink, sugar is unloaded, to be used or stored as starch, so water leaves again, and the pressure there falls. Four. There's now a pressure difference along the tube, high at the source and low at the sink, and it drives the bulk flow of sap, carrying the sugar with it."
+      },
+      "durationInFrames": 1368,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-reverse",
+      "type": "concept",
+      "heading": "Why the direction can reverse",
+      "body": "Sap flows from wherever sugar is loaded to wherever it is unloaded, so the direction follows the sources and sinks.",
+      "bullets": [
+        {
+          "text": "Summer: leaves are the source; the potato tuber is a sink, filling with starch.",
+          "at": 4
+        },
+        {
+          "text": "Spring: the tuber becomes a source, sending sugar up to new shoots.",
+          "at": 14.8
+        },
+        {
+          "text": "Flow always runs from high pressure (source) to low pressure (sink).",
+          "at": 26
+        }
+      ],
+      "callout": "The same tube can run either way.",
+      "caption": "A tuber is a sink in summer and a source in spring, so phloem flow reverses.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2SourceSink",
+        "props": {
+          "at": 0,
+          "phases": [
+            {
+              "at": 120,
+              "source": "leaves",
+              "sinks": [
+                "tuber"
+              ],
+              "label": "Summer: tuber is a sink"
+            },
+            {
+              "at": 444,
+              "source": "tuber",
+              "sinks": [
+                "shoots"
+              ],
+              "label": "Spring: tuber is a source"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Why can phloem run in either direction, when xylem can't? Because the flow just follows the sources and sinks. In summer, the leaves are the source, and a potato tuber is a sink, filling up with starch. But in spring, before there are many leaves, that same tuber becomes a source. It breaks its starch down and sends sugar up to fuel the new shoots. The sap always flows from high pressure at the source to low pressure at the sink, whichever way that points. And that's why phloem has to be living, with companion cells pumping sugar, because a dead one-way pipe could never reverse."
+      },
+      "durationInFrames": 1332,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for translocation.",
+      "bullets": [
+        {
+          "text": "Translocation: movement of organic nutrients, mainly sucrose, through phloem from source to sink."
+        },
+        {
+          "text": "Source: a part that makes or releases sugar, like a photosynthesising leaf or a storage organ in spring."
+        },
+        {
+          "text": "Sink: a part that uses or stores sugar, like a root, fruit or growing tip."
+        },
+        {
+          "text": "Active loading: active transport of sugar into phloem at the source, using ATP from companion cells."
+        },
+        {
+          "text": "Pressure-flow: a pressure difference between source and sink drives bulk flow of phloem sap."
+        }
+      ],
+      "callout": "Sucrose, not glucose, is what phloem carries.",
+      "caption": "Translocation, source, sink, active loading, pressure-flow.",
+      "voiceover": {
+        "text": "Let's lock in the terms. Translocation is the movement of organic nutrients, mainly sucrose, through the phloem from source to sink. A source is a part that makes or releases sugar, like a photosynthesising leaf, or a storage organ in spring. A sink is a part that uses or stores sugar, like a root, a fruit or a growing tip. Active loading is the active transport of sugar into the phloem at the source, using ATP from companion cells. And pressure-flow is the idea that a pressure difference between source and sink drives the bulk flow of sap."
+      },
+      "durationInFrames": 1236
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Explain translocation, step by step",
+      "question": "Use the translocation theory to explain the movement of nutrients through phloem tissue from a source to a sink.",
+      "coachNote": "Define source and sink first. Then each step must cause the next.",
+      "steps": [
+        "Define: sucrose moves through phloem from a source (leaf) to a sink (root, fruit, growing tip).",
+        "At the source, sucrose is actively loaded into sieve tubes, using ATP from companion cells.",
+        "Loading lowers the water potential, so water enters from the xylem by osmosis; pressure rises.",
+        "At the sink, sucrose is unloaded and used or stored; water leaves, so pressure falls.",
+        "The pressure difference drives bulk flow of sap from source to sink, e.g. leaf to potato tuber in summer."
+      ],
+      "caption": "Load, osmosis, unload, bulk flow: each step causes the next.",
+      "voiceover": {
+        "text": "Let's write the full answer. Start by defining the terms. Sucrose moves through the phloem from a source, like a leaf, to a sink, like a root or fruit. Then run the steps, each one causing the next. At the source, sucrose is actively loaded into the sieve tubes using ATP from companion cells. That lowers the water potential, so water enters from the xylem by osmosis, and the pressure rises. At the sink, sucrose is unloaded and used or stored, water leaves, and the pressure falls. Finally, that pressure difference drives bulk flow from source to sink. Name a real example, like a leaf feeding a potato tuber in summer."
+      },
+      "durationInFrames": 1392
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Sugar just falls down to the roots?",
+      "body": "Wrong: sugar always travels downwards in phloem, from leaves to roots, because of gravity.",
+      "secondary": "Right: translocation moves sugar from source to sink in whichever direction the sink lies. It is driven by a pressure difference, not gravity.",
+      "mistakeTag": "Pressure, not gravity",
+      "callout": "Find the source and the sink, and the direction follows.",
+      "caption": "Phloem flow goes source to sink, up or down, driven by pressure.",
+      "voiceover": {
+        "text": "Here's the trap. Sugar always travels down the phloem, from the leaves to the roots, because of gravity. Not true. Translocation moves sugar from a source to a sink, in whichever direction the sink happens to be. A growing shoot tip, a flower or a ripening fruit often sits above the leaves that feed it, so sugar has to travel up. The flow is driven by a pressure difference, not by gravity. So find the source and the sink, and the direction follows."
+      },
+      "durationInFrames": 1056
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Aphids feed by pushing a needle-like mouthpart into a single sieve tube. When a feeding aphid is anaesthetised and its body cut away, sap keeps oozing from the mouthpart for hours. What does this show about phloem?",
+      "pausePrompt": "Pause: if the aphid isn’t sucking, what is pushing the sap?",
+      "answerSteps": [
+        "Sap flows out without any sucking, so the phloem contents must be under positive pressure.",
+        "That pressure is generated by the plant: active sugar loading and the water that follows by osmosis.",
+        "Answer: it is direct evidence for the pressure-flow theory, and for phloem being living and active."
+      ],
+      "caption": "Sap oozing from a cut aphid mouthpart shows phloem sap is under pressure.",
+      "voiceover": {
+        "text": "Quick check. Aphids feed by pushing a needle-like mouthpart into a single sieve tube. Scientists anaesthetised feeding aphids, cut their bodies away, and sap kept oozing out of the mouthparts for hours. What does that show? Pause, and ask what's pushing the sap if the aphid isn't sucking. OK. The sap flows out on its own, so the phloem contents must be under positive pressure. That pressure is made by the plant itself, by actively loading sugar and drawing water in by osmosis. So it's direct evidence for the pressure-flow theory."
+      },
+      "durationInFrames": 1152
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Translocation moves sucrose through phloem from source to sink.",
+        "Source: makes or releases sugar. Sink: uses or stores it.",
+        "Active loading (ATP) → water enters by osmosis → high pressure at the source.",
+        "Unloading at the sink → water leaves → low pressure; bulk flow runs high to low.",
+        "Direction follows the sources and sinks, so phloem can run either way."
+      ],
+      "finalPrompt": "Translocation question? Name the source and sink, then load, osmosis, unload, flow.",
+      "caption": "Source to sink by pressure-flow, in either direction.",
+      "voiceover": {
+        "text": "Let's lock it in. Translocation moves sucrose through the phloem from source to sink. A source makes or releases sugar, and a sink uses or stores it. At the source, active loading draws water in by osmosis, raising the pressure. At the sink, unloading lets water leave, so the pressure falls, and sap flows in bulk from high to low. And because the direction just follows the sources and sinks, phloem can run either way. Next lesson, the other half of the story, how xylem lifts water."
+      },
+      "durationInFrames": 1104
+    }
+  ]
+}

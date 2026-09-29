@@ -1,0 +1,368 @@
+{
+  "title": "Xylem & Phloem",
+  "subtitle": "Structure and function of the plant transport tissues",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 7",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Use a variety of sources to compare the structures and functions of xylem and phloem in the plant transport system"
+  ],
+  "moduleLessonCount": 25,
+  "lessonIntent": "Students can compare the structures and functions of xylem and phloem and link each structural feature to the job it does.",
+  "examSkill": "Compare xylem and phloem on shared criteria (what, direction, living or dead, walls and ends, associated cells), pairing every feature with its function.",
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, the plant's two sets of pipes, xylem and phloem. Let's get into it."
+  },
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Xylem & Phloem"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two sets of pipes, running opposite ways",
+      "body": "A tall gum tree lifts water nearly 100 metres to its leaves, while sending sugar back down to roots that have no light of their own.",
+      "callout": "Could one tube carry both, or does a plant need two?",
+      "image": "bioM7L8PlantDefenceCrossSection",
+      "caption": "Water goes up to the leaves; sugar goes wherever it is needed.",
+      "voiceover": {
+        "text": "A tall gum tree has to lift water nearly a hundred metres, from its roots to its highest leaves. At the same time, it has to send sugar back down to feed roots that never see any light. It does this with two completely different sets of pipes, running side by side. Stand a white flower in dyed water, and within hours the petals change colour. So which tissue carried the dye up, and why doesn't the other one?"
+      },
+      "durationInFrames": 1008
+    },
+    {
+      "id": "concept-xylem",
+      "type": "concept",
+      "heading": "Xylem: water going up",
+      "body": "Xylem carries water and dissolved mineral ions upwards, from roots to leaves, in one direction only.",
+      "bullets": [
+        {
+          "text": "Vessels are dead, hollow cells joined end to end.",
+          "at": 8.8
+        },
+        {
+          "text": "End walls removed, forming continuous pipes.",
+          "at": 13.6
+        },
+        {
+          "text": "Walls thickened with lignin: waterproof, and no collapse under tension.",
+          "at": 17.6
+        },
+        {
+          "text": "Little resistance to flow; lignin also supports the plant (wood).",
+          "at": 26.4
+        }
+      ],
+      "callout": "Dead, hollow, lignified, one way: up.",
+      "caption": "Xylem: dead, hollow vessels with no end walls and lignin-thickened walls; water flows up.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Vessels",
+        "props": {
+          "mode": "xylem",
+          "at": 0,
+          "flow": 48,
+          "tags": [
+            {
+              "text": "water + minerals: up only",
+              "at": 48,
+              "anchor": "water",
+              "side": "right"
+            },
+            {
+              "text": "dead, hollow cell",
+              "at": 264,
+              "anchor": "hollow",
+              "side": "left"
+            },
+            {
+              "text": "end walls removed",
+              "at": 408,
+              "anchor": "end",
+              "side": "right"
+            },
+            {
+              "text": "lignin thickening",
+              "at": 528,
+              "anchor": "lignin",
+              "side": "left",
+              "tone": "amber"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Let's start with xylem. Xylem carries water and dissolved mineral ions in one direction only, upwards, from the roots to the leaves. Its vessels are made from dead, hollow cells, joined end to end, with their end walls removed, so they form continuous pipes. Their walls are thickened with lignin, a strong, waterproof substance that stops the vessels collapsing when the water inside is pulled upward. Because the cells are dead and empty, water meets very little resistance, and all that lignin also holds the plant up. In fact, xylem is the wood of a tree."
+      },
+      "durationInFrames": 1212,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-phloem",
+      "type": "concept",
+      "heading": "Phloem: sugar going anywhere",
+      "body": "Phloem carries sugars, as sap, in either direction, from where they’re made to where they’re needed.",
+      "bullets": [
+        {
+          "text": "Living sieve-tube cells, joined end to end.",
+          "at": 8
+        },
+        {
+          "text": "Perforated sieve plates let sap flow from cell to cell.",
+          "at": 12
+        },
+        {
+          "text": "Each sieve tube has no nucleus; a companion cell beside it supplies energy.",
+          "at": 20
+        },
+        {
+          "text": "Sap moves up or down, from sources to sinks.",
+          "at": 31.2
+        }
+      ],
+      "callout": "Living tubes, with a companion cell doing the work.",
+      "caption": "Phloem: living sieve tubes, sieve plates and companion cells; sugar moves either way.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Vessels",
+        "props": {
+          "mode": "phloem",
+          "at": 0,
+          "flow": 84,
+          "reverse": 936,
+          "tags": [
+            {
+              "text": "living sieve-tube cell",
+              "at": 240,
+              "anchor": "sieve",
+              "side": "left"
+            },
+            {
+              "text": "sieve plate",
+              "at": 360,
+              "anchor": "plate",
+              "side": "left",
+              "dy": 30
+            },
+            {
+              "text": "companion cell",
+              "at": 600,
+              "anchor": "companion",
+              "side": "right"
+            },
+            {
+              "text": "sugar: either direction",
+              "at": 936,
+              "anchor": "sugar",
+              "side": "left",
+              "tone": "amber"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Now phloem, which is built completely differently. Phloem carries sugars, dissolved as sap, from the leaves to wherever they're needed. It's made of living sieve-tube cells, joined end to end, and the walls between them are perforated sieve plates, which let the sap flow from one cell to the next. A mature sieve-tube cell has no nucleus, so beside each one is a companion cell, packed with mitochondria, that supplies the energy and metabolism the sieve tube lacks. And unlike xylem, phloem can move sap in either direction, up to a growing tip or fruit, or down to the roots."
+      },
+      "durationInFrames": 1260,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-structure",
+      "type": "concept",
+      "heading": "Structure suits function",
+      "body": "Each tissue is built for its own transport job.",
+      "bullets": [
+        {
+          "text": "Xylem: an empty, unobstructed pipe for fast water flow; lignin waterproofs and supports.",
+          "at": 6
+        },
+        {
+          "text": "Phloem: sieve plates pass sap between living cells.",
+          "at": 17.6
+        },
+        {
+          "text": "Companion cells supply the ATP to load sugar.",
+          "at": 22.8
+        },
+        {
+          "text": "Being alive lets phloem control transport and reverse direction.",
+          "at": 28
+        }
+      ],
+      "callout": "Always pair a feature with the job it does.",
+      "caption": "Xylem: dead pipe, water up. Phloem: living tube with companion cells, sugar either way.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Vessels",
+        "props": {
+          "mode": "both",
+          "at": 0,
+          "flow": 0,
+          "headings": {
+            "xylem": "xylem: dead",
+            "phloem": "phloem: living",
+            "at": 0
+          },
+          "tags": [
+            {
+              "text": "unobstructed pipe",
+              "at": 180,
+              "anchor": "hollow",
+              "side": "left"
+            },
+            {
+              "text": "lignin: support",
+              "at": 220,
+              "anchor": "lignin",
+              "side": "left"
+            },
+            {
+              "text": "sieve plates",
+              "at": 528,
+              "anchor": "plate",
+              "side": "right"
+            },
+            {
+              "text": "ATP to load sugar",
+              "at": 684,
+              "anchor": "companion",
+              "side": "right",
+              "tone": "amber"
+            }
+          ],
+          "notes": [
+            {
+              "text": "Dead pipe, one way  ·  Living tube, either way",
+              "at": 840
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "So why is each tissue built the way it is? Every feature matches a job. Xylem's hollow vessels, with no end walls and nothing living inside, give an unobstructed pipe for fast water flow, and the lignin waterproofs the pipe and supports the plant. Phloem's sieve plates let sap pass from one living cell to the next. Its companion cells supply the ATP needed to load sugar into the tubes. And because phloem is alive, it can actively control transport and even reverse the direction as the plant's needs change. This habit of pairing each feature with its job will come back again and again."
+      },
+      "durationInFrames": 1320,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for plant transport tissues.",
+      "bullets": [
+        {
+          "text": "Xylem: dead, hollow vessels that carry water and dissolved minerals up from roots to leaves."
+        },
+        {
+          "text": "Phloem: living sieve tubes that carry sugars (sap) in any direction to where they’re needed."
+        },
+        {
+          "text": "Lignin: a strong, waterproof substance that thickens xylem walls and stops them collapsing."
+        },
+        {
+          "text": "Sieve plate: a perforated end wall between sieve-tube cells that lets sap flow through."
+        },
+        {
+          "text": "Companion cell: a living cell beside each sieve tube, supplying the energy it lacks."
+        }
+      ],
+      "callout": "Xylem is dead; phloem is alive.",
+      "caption": "Xylem, phloem, lignin, sieve plate, companion cell.",
+      "voiceover": {
+        "text": "Let's lock in the terms. Xylem is tissue made of dead, hollow vessels that carry water and dissolved minerals upward, from roots to leaves. Phloem is tissue made of living sieve tubes that carry sugars, as sap, in any direction, to where they're needed. Lignin is a strong, waterproof substance that thickens xylem walls and stops them collapsing. A sieve plate is a perforated end wall between sieve-tube cells that lets the sap flow through. And a companion cell is the living cell beside each sieve tube that supplies the energy the sieve tube lacks."
+      },
+      "durationInFrames": 1200
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Why can xylem be dead, but not phloem?",
+      "question": "Explain why xylem can carry out its function while its cells are dead, but phloem cannot.",
+      "coachNote": "Explain means cause and effect. Ask where the energy for each flow comes from.",
+      "steps": [
+        "Xylem flow is passive: water is pulled up by evaporation from the leaves, powered ultimately by the sun.",
+        "The vessel only provides a path, so dead, hollow, lignified cells are an advantage.",
+        "Phloem needs sugar actively loaded at the source, against a gradient, which uses ATP.",
+        "Only living cells respire to make ATP; the companion cell supplies it.",
+        "Answer: xylem’s energy comes from outside the tissue; phloem’s comes from within, so it must be alive."
+      ],
+      "caption": "Xylem flow is powered from outside; phloem loading needs ATP from living cells.",
+      "voiceover": {
+        "text": "Here's a classic question. Explain why xylem can do its job while its cells are dead, but phloem can't. The key is where the energy comes from. Xylem flow is passive. Water is pulled up by evaporation from the leaves, so the energy comes from outside the tissue, ultimately from the sun. The vessel just provides a path, so being dead and empty is actually an advantage. Phloem is different. Sugar has to be actively loaded into the sieve tubes, against its concentration gradient, and that needs ATP. Only living cells can respire to make ATP, and the companion cell supplies it. So phloem must stay alive."
+      },
+      "durationInFrames": 1344
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two of the same tube?",
+      "body": "Wrong: xylem and phloem are basically the same kind of tube, just carrying different liquids.",
+      "secondary": "Right: xylem is dead, hollow and lignified, so water can be pulled through an empty pipe. Phloem is living, with sieve plates and companion cells, because moving sugar needs energy.",
+      "mistakeTag": "Dead versus living",
+      "callout": "Different jobs, different builds.",
+      "caption": "Xylem is dead and hollow; phloem is living with companion cells.",
+      "voiceover": {
+        "text": "Here's the trap. It's easy to think of xylem and phloem as the same kind of tube, just carrying different liquids. They're built differently because their jobs are different. Xylem is dead, hollow and lignified, because water can simply be pulled through an empty pipe. Phloem is alive, with sieve plates and companion cells, because moving sugar takes energy, and only living cells can supply it. One is dead, one is alive."
+      },
+      "durationInFrames": 924
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A complete ring of bark, including the phloem, is cut from around a tree trunk, but the deeper xylem is left intact. Predict what happens to the leaves and the roots over the following weeks.",
+      "pausePrompt": "Pause: which tissue was cut, and which way does it carry things?",
+      "answerSteps": [
+        "Phloem sits just inside the bark, so it is cut; xylem, deeper in the wood, is not.",
+        "Water still travels up the xylem, so the leaves keep getting water at first.",
+        "Sugar can no longer travel down past the ring, so the roots are cut off from food.",
+        "Answer: the roots slowly starve, and eventually the tree dies from the bottom up."
+      ],
+      "caption": "Ring-barking cuts the phloem: water still rises, but the roots starve.",
+      "voiceover": {
+        "text": "Quick check. A complete ring of bark, including the phloem, is cut from around a tree trunk, but the deeper xylem is left untouched. Predict what happens to the leaves and the roots. Pause, and work out which tissue was cut. OK. Phloem sits just inside the bark, so it's been cut, but the xylem deeper in the wood is fine. So water still travels up to the leaves, and at first they look healthy. But sugar can no longer travel down past the ring, so the roots are cut off from their food. They slowly starve, and eventually the whole tree dies, from the bottom up."
+      },
+      "durationInFrames": 1344
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Xylem carries water and minerals up only; phloem carries sugars in either direction.",
+        "Xylem: dead, hollow cells, end walls removed, lignin-thickened walls.",
+        "Phloem: living sieve-tube cells, sieve plates, and companion cells supplying ATP.",
+        "Xylem flow is passive; phloem needs energy, so it must be alive.",
+        "Pair every structural feature with the job it does."
+      ],
+      "finalPrompt": "Comparing tissues? Use the same criteria for both, and attach a function to every feature.",
+      "caption": "Xylem: dead, up only. Phloem: living, either way.",
+      "voiceover": {
+        "text": "Let's lock it in. Xylem carries water and minerals up only, while phloem carries sugars in either direction. Xylem vessels are dead, hollow cells with their end walls removed and lignin in their walls. Phloem is living sieve-tube cells, sieve plates, and companion cells that supply ATP. Xylem flow is passive, but phloem needs energy, so it has to be alive. Next lesson, we'll see exactly how phloem moves sugar, with the translocation theory."
+      },
+      "durationInFrames": 948
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "title": "Measuring Transpiration Rate",
+  "subtitle": "The potometer practical",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 11",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Conduct a practical investigation to demonstrate the effect of an environmental factor on the rate of transpiration"
+  ],
+  "moduleLessonCount": 25,
+  "lessonIntent": "Students can use a potometer to demonstrate the effect of one environmental factor on transpiration, calculate rates, and evaluate validity, reliability and accuracy.",
+  "examSkill": "Convert bubble readings to rates (distance ÷ time) before comparing, name the variables, and state that water uptake slightly overstates transpiration.",
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, measuring transpiration with a potometer. Let's get into it."
+  },
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Measuring Transpiration Rate"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Catching invisible water loss",
+      "body": "You can’t see water leaving a leaf, but you can watch water entering the plant. A potometer turns it into a moving bubble.",
+      "callout": "How can a device that tracks water going in tell us about water going out?",
+      "image": "waterMolecule",
+      "caption": "A potometer measures water uptake, a stand-in for transpiration.",
+      "voiceover": {
+        "text": "You can't see water leaving a leaf. But every drop the leaves lose has to be replaced by water drawn into the stem. A potometer turns that invisible flow into a tiny air bubble moving along a scale, which you can time with a stopwatch and a ruler. But here's the catch. It measures water going in, not water going out. So how can it tell us about transpiration, and what does that assumption cost us in accuracy?"
+      },
+      "durationInFrames": 996
+    },
+    {
+      "id": "concept-method",
+      "type": "concept",
+      "heading": "The potometer method",
+      "body": "As the shoot transpires, it draws water in, and an air bubble moves along a graduated tube.",
+      "bullets": [
+        {
+          "text": "Cut a leafy shoot under water, so air can’t enter the xylem.",
+          "at": 1.6
+        },
+        {
+          "text": "Seal it airtight into the potometer and add one air bubble.",
+          "at": 9.6
+        },
+        {
+          "text": "Time how far the bubble moves in a set period.",
+          "at": 16.4
+        },
+        {
+          "text": "Rate of water uptake = distance ÷ time.",
+          "at": 28
+        }
+      ],
+      "callout": "Rate = distance moved ÷ time taken.",
+      "caption": "The bubble moves 18 mm in 6 min: 18 ÷ 6 = 3 mm per minute.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Potometer",
+        "props": {
+          "at": 0,
+          "runs": [
+            {
+              "label": "still air",
+              "mm": 18,
+              "min": 6,
+              "at": 492,
+              "dur": 150
+            }
+          ],
+          "tags": [
+            {
+              "text": "cut under water, sealed airtight",
+              "at": 48,
+              "anchor": "cut"
+            },
+            {
+              "text": "air bubble",
+              "at": 288,
+              "anchor": "bubble"
+            },
+            {
+              "text": "graduated scale (mm)",
+              "at": 512,
+              "anchor": "scale"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Here's how it works. First, cut a leafy shoot under water, so that no air gets into the xylem and breaks the water column. Then seal it airtight into the potometer, and introduce a single air bubble into the graduated tube. As the shoot transpires, it draws water up to replace what it loses, and the bubble moves along the tube towards the shoot. You time how far it travels. Here it moves eighteen millimetres in six minutes. So the rate of water uptake is distance divided by time, eighteen divided by six, which is three millimetres per minute."
+      },
+      "durationInFrames": 1248,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-fair-test",
+      "type": "concept",
+      "heading": "A fair test for one factor",
+      "body": "Change only the chosen factor, here wind, and keep everything else the same.",
+      "bullets": [
+        {
+          "text": "Independent variable: wind (fan off, then fan on).",
+          "at": 4.4
+        },
+        {
+          "text": "Dependent variable: rate of water uptake (mm of bubble movement per minute).",
+          "at": 10.4
+        },
+        {
+          "text": "Controlled: same shoot and leaf area, temperature, light, humidity, time, potometer.",
+          "at": 14
+        },
+        {
+          "text": "A higher rate with the fan demonstrates that wind increases transpiration.",
+          "at": 37.2
+        }
+      ],
+      "callout": "Change one factor; hold the rest.",
+      "caption": "Still air 3 mm/min; with a fan 8 mm/min.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Potometer",
+        "props": {
+          "at": 0,
+          "runs": [
+            {
+              "label": "still air",
+              "mm": 18,
+              "min": 6,
+              "at": 732,
+              "dur": 100
+            },
+            {
+              "label": "fan on",
+              "mm": 40,
+              "min": 5,
+              "at": 912,
+              "dur": 100,
+              "fan": true
+            }
+          ],
+          "tags": [
+            {
+              "text": "independent: wind (fan)",
+              "at": 132,
+              "anchor": "fan",
+              "tone": "amber"
+            },
+            {
+              "text": "dependent: bubble distance per minute",
+              "at": 312,
+              "anchor": "bubble"
+            },
+            {
+              "text": "controlled: same shoot",
+              "at": 420,
+              "anchor": "shoot"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "To demonstrate one factor, say wind, we change only that factor. The independent variable is wind, first with the fan off, then with the fan on. The dependent variable is the rate of water uptake. Everything else is controlled. The same shoot, so the same leaf area, the same temperature, light and humidity, the same time period and the same potometer. In still air, the bubble moves eighteen millimetres in six minutes, three millimetres per minute. With the fan on, it moves forty millimetres in five minutes, which is eight millimetres per minute. The higher rate demonstrates that wind increases transpiration."
+      },
+      "durationInFrames": 1272,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-trust",
+      "type": "concept",
+      "heading": "Validity, reliability and accuracy",
+      "body": "A good result is one you can defend.",
+      "bullets": [
+        {
+          "text": "Validity: only the chosen factor changed, so the result really tests it.",
+          "at": 4
+        },
+        {
+          "text": "Reliability: repeats that agree closely, averaged.",
+          "at": 14.4
+        },
+        {
+          "text": "Accuracy: uptake slightly overstates transpiration; some water is used in photosynthesis and turgor.",
+          "at": 25.2
+        },
+        {
+          "text": "Other issues: leaks, a dissolving bubble, temperature drifting.",
+          "at": 37.6
+        }
+      ],
+      "callout": "Uptake is a close proxy for transpiration, not an exact one.",
+      "caption": "Three repeats with the fan average 8 mm per minute.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Potometer",
+        "props": {
+          "at": 0,
+          "runs": [
+            {
+              "label": "fan: trial 1",
+              "mm": 40,
+              "min": 5,
+              "at": 432,
+              "dur": 70,
+              "fan": true
+            },
+            {
+              "label": "fan: trial 2",
+              "mm": 38,
+              "min": 5,
+              "at": 512,
+              "dur": 70,
+              "fan": true
+            },
+            {
+              "label": "fan: trial 3",
+              "mm": 42,
+              "min": 5,
+              "at": 592,
+              "dur": 70,
+              "fan": true
+            }
+          ],
+          "average": {
+            "at": 636,
+            "label": "mean"
+          },
+          "proxy": {
+            "at": 756,
+            "text": "Some water taken up is used in photosynthesis and turgor, so uptake slightly overstates transpiration."
+          }
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "How much should we trust the result? Check three things. Validity means only the chosen factor changed, so the result genuinely tests wind. A fan can also cool the shoot, so temperature has to be watched. Reliability means repeating the measurement. Here are three runs with the fan, and because they're close together, the average of eight millimetres per minute can be trusted. Accuracy is the subtle one. The potometer measures water uptake, and a little of that water is used in photosynthesis or kept in cells for turgor, so uptake slightly overstates transpiration. Leaks, a dissolving bubble or a drifting temperature can also affect accuracy."
+      },
+      "durationInFrames": 1332,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for the potometer practical.",
+      "bullets": [
+        {
+          "text": "Potometer: measures the rate of water uptake by a leafy shoot, by timing an air bubble along a graduated tube."
+        },
+        {
+          "text": "Independent variable: the one factor deliberately changed (wind, light or humidity)."
+        },
+        {
+          "text": "Dependent variable: the rate of water uptake, used as a measure of transpiration."
+        },
+        {
+          "text": "Controlled variable: a factor kept constant so the test is fair (valid)."
+        },
+        {
+          "text": "Reliability: how consistent results are when repeated; improved by repeats and averaging."
+        }
+      ],
+      "callout": "A potometer measures uptake, not transpiration directly.",
+      "caption": "Potometer, independent, dependent and controlled variables, reliability.",
+      "voiceover": {
+        "text": "Let's lock in the terms. A potometer measures the rate of water uptake by a leafy shoot, by timing an air bubble along a graduated tube. The independent variable is the one factor you deliberately change, like wind, light or humidity. The dependent variable is the rate of water uptake, which we use as a measure of transpiration. A controlled variable is kept constant, so the test is fair, or valid. And reliability is how consistent the results are when you repeat them, which you improve by repeating and averaging."
+      },
+      "durationInFrames": 1140
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Analyse the potometer results",
+      "question": "A potometer bubble moves 18 mm in 6 minutes with no fan, and 40 mm in 5 minutes with a fan. Calculate both rates, state what the comparison shows, and explain why the rate slightly overstates transpiration.",
+      "coachNote": "The times differ, so convert both readings to rates before comparing.",
+      "steps": [
+        "No fan: 18 mm ÷ 6 min = 3 mm/min.",
+        "Fan: 40 mm ÷ 5 min = 8 mm/min.",
+        "8 ÷ 3 ≈ 2.7, so wind increased the rate about 2.7 times in this shoot.",
+        "Mechanism: the fan strips away the humid boundary layer, keeping the vapour gradient steep.",
+        "Uptake exceeds transpiration slightly (photosynthesis, turgor), but this affects both readings equally."
+      ],
+      "unitCancel": {
+        "left": "mm",
+        "right": "min",
+        "result": "rate in mm per minute"
+      },
+      "caption": "3 mm/min without the fan, 8 mm/min with it: about 2.7 times faster.",
+      "voiceover": {
+        "text": "Let's analyse the data. With no fan the bubble moved eighteen millimetres in six minutes. With the fan, forty millimetres in five minutes. The trap is comparing eighteen with forty directly, because the times are different. So convert both to rates. Eighteen divided by six is three millimetres per minute. Forty divided by five is eight. Eight divided by three is about two point seven, so wind increased the rate about two point seven times. The reason is the boundary layer, which the fan strips away. And the limitation? Uptake slightly overstates transpiration, but that affects both readings equally, so the comparison still holds."
+      },
+      "durationInFrames": 1308
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "A potometer measures transpiration directly?",
+      "body": "Wrong: a potometer measures transpiration directly.",
+      "secondary": "Right: it measures the rate of water uptake. Almost all of that water is transpired, so uptake is a close proxy, but a little is used in photosynthesis and to keep cells turgid.",
+      "mistakeTag": "Uptake, not loss",
+      "callout": "Call it water uptake, then say it slightly overstates transpiration.",
+      "caption": "A potometer measures water uptake, a close but not exact proxy.",
+      "voiceover": {
+        "text": "Here's the precise point examiners love. A potometer does not measure transpiration directly. It measures the rate of water uptake. We assume almost all the water taken up is lost by transpiration, so uptake is a close stand-in. But a small amount is used in photosynthesis, and some is kept in cells to keep them turgid. So uptake slightly overstates transpiration. That's a known limit on accuracy, not a mistake in your method."
+      },
+      "durationInFrames": 936
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Why must the leafy shoot be cut under water and sealed airtight into the potometer?",
+      "pausePrompt": "Pause: what would air do to the water column?",
+      "answerSteps": [
+        "Cutting in air lets air enter the xylem, breaking the continuous water column.",
+        "A broken column can’t transmit tension, so the shoot draws up little or no water.",
+        "An airtight seal stops leaks, so the bubble moves only because of the shoot’s uptake.",
+        "Answer: both keep the measurement valid."
+      ],
+      "caption": "Air in the xylem breaks the column; leaks give false readings.",
+      "voiceover": {
+        "text": "Quick check. Why must the shoot be cut under water, and sealed airtight into the potometer? Pause, and think about what air would do to the water column. OK. If you cut the shoot in air, air gets into the xylem and breaks the continuous water column. Cohesion can't pass the pull along a broken column, so the shoot draws up little or no water. And an airtight seal stops leaks, so the bubble only moves because of the shoot's uptake. Both keep the measurement valid."
+      },
+      "durationInFrames": 1092
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A potometer measures water uptake, a close proxy for transpiration.",
+        "Cut the shoot under water and seal it airtight.",
+        "Rate = distance the bubble moves ÷ time.",
+        "Change one factor; control the rest; repeat and average.",
+        "Uptake slightly overstates transpiration: some water is used, not lost."
+      ],
+      "finalPrompt": "Potometer data? Convert to rates before you compare.",
+      "caption": "Uptake as a proxy, rate = distance ÷ time, fair tests and repeats.",
+      "voiceover": {
+        "text": "Let's lock it in. A potometer measures water uptake, which is a close stand-in for transpiration. Cut the shoot under water, and seal it airtight. The rate is the distance the bubble moves divided by the time. Change one factor, control the rest, and repeat and average. And remember that uptake slightly overstates transpiration, because some water is used rather than lost. Next lesson, we'll look inside the leaf, stem and root."
+      },
+      "durationInFrames": 924
+    }
+  ]
+}

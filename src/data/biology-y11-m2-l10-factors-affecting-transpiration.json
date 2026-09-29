@@ -1,0 +1,374 @@
+{
+  "title": "Factors Affecting Transpiration",
+  "subtitle": "Light, temperature, wind and humidity",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 10",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Explain how light, temperature, wind and humidity affect the rate of transpiration in plants"
+  ],
+  "moduleLessonCount": 25,
+  "lessonIntent": "Students can explain how light, temperature, wind and humidity each change the rate of transpiration, and reduce all four to stomatal opening and the water-vapour gradient.",
+  "examSkill": "Give every factor a direction and a mechanism, flag humidity as the one that lowers the rate, and link each to the stomata or the vapour gradient.",
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, what speeds up transpiration, and what slows it down. Let's get into it."
+  },
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Factors Affecting Transpiration"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same plant, different weather",
+      "body": "A large tree can lose hundreds of litres of water on a hot, dry, windy day, and almost none on a cool, still, humid one.",
+      "callout": "Why does a breeze across the leaves make a plant lose water faster?",
+      "image": "bioM8L5DesertPlant",
+      "caption": "The plant hasn’t changed; the weather has.",
+      "voiceover": {
+        "text": "A single large tree can lose hundreds of litres of water on a hot, dry, windy day, and almost none on a cool, still, humid one. The plant hasn't changed, only the weather has. Wilted plants often recover overnight, even without watering. So why does the same plant lose so much more water at midday than at midnight? And why does a breeze across the leaves make it lose water faster still?"
+      },
+      "durationInFrames": 924
+    },
+    {
+      "id": "concept-light-temp",
+      "type": "concept",
+      "heading": "Light and temperature",
+      "body": "Both increase the rate of transpiration: light opens the stomata, and heat speeds evaporation.",
+      "bullets": [
+        {
+          "text": "Light: guard cells open the stomata so CO₂ can enter for photosynthesis.",
+          "at": 10
+        },
+        {
+          "text": "More open stomata, so more water vapour diffuses out.",
+          "at": 18.4
+        },
+        {
+          "text": "Temperature: water molecules gain kinetic energy and evaporate faster.",
+          "at": 24.8
+        },
+        {
+          "text": "Warm air holds more vapour, so the gradient out of the leaf steepens.",
+          "at": 34
+        }
+      ],
+      "callout": "Light opens the door; heat speeds the escape.",
+      "caption": "Light opens the stomata; higher temperature speeds evaporation. Both raise the rate.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Transpire",
+        "props": {
+          "states": [
+            {
+              "at": 0,
+              "light": 0.1,
+              "temp": 0.3,
+              "wind": 0.3,
+              "humidity": 0.4,
+              "label": "dark: stomata mostly closed"
+            },
+            {
+              "at": 300,
+              "light": 1,
+              "temp": 0.3,
+              "wind": 0.3,
+              "humidity": 0.4,
+              "label": "light: stomata open"
+            },
+            {
+              "at": 744,
+              "light": 1,
+              "temp": 0.9,
+              "wind": 0.3,
+              "humidity": 0.4,
+              "label": "warmer: faster evaporation"
+            }
+          ],
+          "tags": [
+            {
+              "text": "stoma",
+              "at": 300,
+              "anchor": "stoma"
+            },
+            {
+              "text": "moist air spaces",
+              "at": 156,
+              "anchor": "airspace"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Transpiration is water vapour diffusing out of the leaf, mostly through the stomata. In the dark, most stomata are closed, so very little water escapes. Now add light. In the light, the guard cells open the stomata, so that carbon dioxide can get in for photosynthesis. With the stomata open, much more water vapour can diffuse out, so the rate goes up. Next, raise the temperature. Heat gives the water molecules more kinetic energy, so they evaporate from the moist surfaces inside the leaf faster. Warm air can also hold more vapour, so the gradient out of the leaf gets steeper. Light opens the door, and heat speeds the escape."
+      },
+      "durationInFrames": 1380,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-wind-humidity",
+      "type": "concept",
+      "heading": "Wind and humidity",
+      "body": "Both act on the water-vapour gradient at the leaf surface, but in opposite directions.",
+      "bullets": [
+        {
+          "text": "Still air: a humid boundary layer builds up against the leaf.",
+          "at": 2.4
+        },
+        {
+          "text": "Wind sweeps the boundary layer away, keeping the gradient steep: rate rises.",
+          "at": 14
+        },
+        {
+          "text": "Humidity: moist air outside flattens the gradient: rate falls.",
+          "at": 22
+        },
+        {
+          "text": "Very strong wind can make stomata close, lowering the rate again.",
+          "at": 34.4
+        }
+      ],
+      "callout": "Wind steepens the gradient; humidity flattens it.",
+      "caption": "Wind removes the humid boundary layer; high humidity reduces the vapour gradient.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Transpire",
+        "props": {
+          "states": [
+            {
+              "at": 0,
+              "light": 0.8,
+              "temp": 0.5,
+              "wind": 0,
+              "humidity": 0.3,
+              "label": "still air: humid boundary layer"
+            },
+            {
+              "at": 420,
+              "light": 0.8,
+              "temp": 0.5,
+              "wind": 0.9,
+              "humidity": 0.3,
+              "label": "wind: boundary layer swept away"
+            },
+            {
+              "at": 660,
+              "light": 0.8,
+              "temp": 0.5,
+              "wind": 0.9,
+              "humidity": 0.9,
+              "label": "humid air: gradient flattens"
+            }
+          ],
+          "tags": [
+            {
+              "text": "boundary layer",
+              "at": 72,
+              "anchor": "boundary"
+            },
+            {
+              "text": "outside air",
+              "at": 102,
+              "anchor": "outside"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Now the air around the leaf. In still air, water vapour builds up in a thin layer of humid air right against the leaf, called the boundary layer. That flattens the gradient, so diffusion slows. Wind blows that boundary layer away and replaces it with drier air, keeping the gradient steep, so transpiration speeds up. Humidity does the opposite. The more water vapour already in the air, the smaller the difference between inside and outside the leaf, so less vapour diffuses out, and the rate falls. One qualification. Very strong, hot, dry wind can stress the plant so it closes its stomata, which lowers the rate again."
+      },
+      "durationInFrames": 1344,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "concept-together",
+      "type": "concept",
+      "heading": "Putting the four factors together",
+      "body": "All four factors work through just two mechanisms: how open the stomata are, and how steep the vapour gradient is.",
+      "bullets": [
+        {
+          "text": "Stomata: light opens them.",
+          "at": 7.2
+        },
+        {
+          "text": "Gradient: heat and wind steepen it; humidity flattens it.",
+          "at": 12.8
+        },
+        {
+          "text": "Fastest: hot, bright, windy and dry.",
+          "at": 20
+        },
+        {
+          "text": "Slowest: cool, dark, still and humid.",
+          "at": 24.4
+        }
+      ],
+      "callout": "Two mechanisms explain all four factors.",
+      "caption": "Hot, bright, windy and dry is fastest; cool, dark, still and humid is slowest.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Transpire",
+        "props": {
+          "states": [
+            {
+              "at": 0,
+              "light": 0.5,
+              "temp": 0.5,
+              "wind": 0.4,
+              "humidity": 0.5,
+              "label": "moderate conditions"
+            },
+            {
+              "at": 600,
+              "light": 1,
+              "temp": 1,
+              "wind": 1,
+              "humidity": 0,
+              "label": "hot, bright, windy, dry: fastest"
+            },
+            {
+              "at": 732,
+              "light": 0,
+              "temp": 0,
+              "wind": 0,
+              "humidity": 1,
+              "label": "cool, dark, still, humid: slowest"
+            }
+          ],
+          "tags": [
+            {
+              "text": "stoma",
+              "at": 216,
+              "anchor": "stoma"
+            }
+          ]
+        },
+        "delay": 6
+      },
+      "voiceover": {
+        "text": "Here's the big idea that ties all four together. Every factor works through one of just two mechanisms. The first is how wide the stomata are open, and that's what light controls. The second is how steep the water-vapour gradient is. Temperature and wind steepen it, and humidity flattens it. So the fastest transpiration happens in hot, bright, windy, dry conditions. And the slowest is in cool, dark, still, humid conditions. That's why plants from hot, dry, windy places often have adaptations that slow water loss, like sunken stomata and thick waxy cuticles."
+      },
+      "durationInFrames": 1176,
+      "revealDelays": {
+        "diagram": 6
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for transpiration questions.",
+      "bullets": [
+        {
+          "text": "Transpiration: evaporation of water from a plant, mainly as vapour diffusing out of the stomata."
+        },
+        {
+          "text": "Stomata: leaf pores, opened and closed by guard cells, for gas exchange and water loss."
+        },
+        {
+          "text": "Water-vapour gradient: the difference in vapour concentration between the moist leaf interior and the air outside."
+        },
+        {
+          "text": "Humidity: the amount of water vapour already in the air; high humidity reduces the gradient."
+        },
+        {
+          "text": "Boundary layer: the thin layer of still, humid air against the leaf surface."
+        }
+      ],
+      "callout": "A steeper gradient means faster diffusion out.",
+      "caption": "Transpiration, stomata, water-vapour gradient, humidity, boundary layer.",
+      "voiceover": {
+        "text": "Let's lock in the terms. Transpiration is the evaporation of water from a plant, mainly as vapour diffusing out of the stomata. Stomata are the leaf pores, opened and closed by guard cells. The water-vapour gradient is the difference in vapour concentration between the moist air inside the leaf and the drier air outside, and a steeper gradient means faster diffusion. Humidity is the amount of water vapour already in the air. And the boundary layer is the thin layer of still, humid air clinging to the leaf surface."
+      },
+      "durationInFrames": 1128
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Compare wind and humidity",
+      "question": "Compare the effects of wind and humidity on the rate of transpiration, explaining why two factors that act on the same mechanism push the rate in opposite directions.",
+      "coachNote": "Name the shared mechanism first: the water-vapour gradient. Then run each factor through it.",
+      "steps": [
+        "Shared mechanism: both change the water-vapour gradient between the leaf interior and the air outside.",
+        "Wind: removes the humid boundary layer and brings drier air, steepening the gradient. Rate increases.",
+        "Humidity: more vapour in the air shrinks the difference. Rate decreases.",
+        "Wind changes which air sits at the leaf; humidity sets how moist that air is.",
+        "So they can cancel: a windy but very humid day may transpire little more than a still, dry one."
+      ],
+      "caption": "Same mechanism, the vapour gradient: wind steepens it, humidity flattens it.",
+      "voiceover": {
+        "text": "Let's compare wind and humidity, the two factors that act on the same thing. Start by naming that shared mechanism, the water-vapour gradient between the inside of the leaf and the air outside. Wind removes the humid boundary layer and replaces it with drier air, so the gradient gets steeper and transpiration speeds up. Humidity is the amount of vapour already in the air, so more of it shrinks the difference, and transpiration slows down. The neat insight is that wind changes which air sits at the leaf, while humidity sets how moist that air is. So on a windy but very humid day, they can almost cancel out."
+      },
+      "durationInFrames": 1368
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "More humidity, more transpiration?",
+      "body": "Wrong: more humidity means more water around, so the plant transpires more.",
+      "secondary": "Right: high humidity slows transpiration. Humid air already holds lots of vapour, so the gradient out of the leaf is small and less water diffuses out.",
+      "mistakeTag": "Humidity is the exception",
+      "callout": "Humidity is the one factor that lowers the rate as it rises.",
+      "caption": "Higher humidity means a smaller vapour gradient, so a slower rate.",
+      "voiceover": {
+        "text": "Here's the most common mistake in this topic. More humidity means more water around the plant, so it must transpire more. It's the other way round. Transpiration is vapour diffusing out of the leaf, and that depends on the gradient between the moist inside of the leaf and the air outside. Humid air already holds lots of vapour, so the gradient is small, and less water diffuses out. Of the four factors, humidity is the only one that slows transpiration as it increases."
+      },
+      "durationInFrames": 1056
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A florist wants cut flowers to lose as little water as possible. Which conditions should the storeroom have, and why? Give the mechanism for each.",
+      "pausePrompt": "Pause: which way does each factor push the rate?",
+      "answerSteps": [
+        "Cool: water molecules have less energy, so evaporation is slower.",
+        "Still air: a humid boundary layer stays around the flowers, flattening the gradient.",
+        "Humid: less difference in vapour concentration, so less diffusion out.",
+        "Dim: fewer stomata open. Answer: cool, still, humid and dim air gives the slowest water loss."
+      ],
+      "caption": "Cool, still, humid, dim: slowest transpiration.",
+      "voiceover": {
+        "text": "Quick check. A florist wants cut flowers to lose as little water as possible. What conditions should the storeroom have, and why? Pause, and decide which way each factor pushes the rate. OK. Keep it cool, so the water molecules have less energy and evaporate more slowly. Keep the air still, so a humid boundary layer stays around the leaves and petals. Keep it humid, so the gradient out of the plant is small. And keep it dim, so fewer stomata are open. Cool, still, humid and dim gives the slowest water loss."
+      },
+      "durationInFrames": 1176
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Light increases transpiration by opening the stomata.",
+        "Higher temperature increases it: faster evaporation and a steeper gradient.",
+        "Wind increases it by removing the humid boundary layer.",
+        "Higher humidity decreases it by flattening the vapour gradient.",
+        "Two mechanisms: stomatal opening and the water-vapour gradient."
+      ],
+      "finalPrompt": "For each factor: direction, then mechanism. Stomata, or gradient?",
+      "caption": "Light, heat and wind raise the rate; humidity lowers it.",
+      "voiceover": {
+        "text": "Let's lock it in. Light increases transpiration by opening the stomata. A higher temperature increases it too, through faster evaporation and a steeper gradient. Wind increases it by stripping away the humid boundary layer. And higher humidity decreases it, by flattening the gradient. All four come down to two mechanisms, how open the stomata are, and how steep the vapour gradient is. Next lesson, we'll measure transpiration ourselves with a potometer."
+      },
+      "durationInFrames": 912
+    }
+  ]
+}
