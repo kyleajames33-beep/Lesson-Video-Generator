@@ -15,12 +15,12 @@ Scope: static checks across the 308 current lesson JSON files; a focused content
 ## Validation
 
 - `npm run check` (TypeScript): passed.
-- Final `npm run check:all` (registry generation, TypeScript and whole-catalogue validation): passed.
+- `npm run check:all` (registry generation, TypeScript and whole-catalogue validation) passed on the original PR #36 correction set. The later A27 phenolphthalein follow-up is structurally valid JSON and has its narration link cleared, but still needs a fresh command-level rerun on a repository runner.
 - Whole-catalogue `node scripts/validate-lesson.mjs`: zero structural errors. Warnings remain, especially estimated speech budgets and absent local media.
 - Original M5–M6 pacing scan: 0 FAIL / 0 WARN across 37 lessons. Corrected lessons individually also pass the pacing linter.
 - Whole-catalogue linked narration text hashes: no stale hashes remain after the repair.
 - `git diff --check`: passed.
-- Preflight regression fixtures: five independent cases passed (healthy media prerequisites, stale narration, audio cutoff, late reveal and unregistered composition).
+- Preflight regression fixtures: five independent cases passed (healthy media prerequisites, stale narration, audio cutoff, late reveal and unregistered composition) on the original PR #36 correction set. Re-run the render-readiness command after the A27 follow-up on the machine/runner with the repository and media.
 - Read-only preflight script added: `scripts/check-render-readiness.mjs`. It checks registration, narration hashes, audio/sidecar presence, image registration/presence, alignment-based audio cutoff and transition timing, and late reveals. It does not inspect audio quality, certify captions, or replace the structural/content/visual reviews.
 
 ## Audio queue for this batch
