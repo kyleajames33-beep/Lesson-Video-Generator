@@ -396,20 +396,19 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "Phenolphthalein is added to three solutions: pH 5, pH 9, pH 12. What colour is each?",
+      "question": "Phenolphthalein is added to three solutions: pH 5, pH 9, pH 10.5. What colour is each?",
       "pausePrompt": "Pause and work it through.",
       "answerSteps": [
-        "Phenolphthalein transition range is pH 8.3 to 10.0; colourless below, pink above",
+        "Phenolphthalein transition range is pH 8.3 to 10.0; colourless below and pink through the basic form above the transition under ordinary observation conditions",
         "pH 5 is below 8.3, so HIn dominates → colourless",
-        "pH 9 is inside 8.3 to 10.0, so In⁻ dominates → pink",
-        "pH 12 is above 10.0, so In⁻ still dominates → pink (it does not return to colourless)",
-        "Answer: pH 5 colourless, pH 9 pink, pH 12 pink ✓"
+        "pH 9 is inside 8.3 to 10.0 → pink",
+        "pH 10.5 is just above the transition range → pink under ordinary indicator conditions",
+        "Answer: pH 5 colourless, pH 9 pink, pH 10.5 pink ✓"
       ],
       "durationInFrames": 1080,
-      "caption": "Phenolphthalein: pH 5 colourless, pH 9 pink, pH 12 pink.",
+      "caption": "Phenolphthalein: pH 5 colourless, pH 9 pink, pH 10.5 pink.",
       "voiceover": {
-        "text": "Quick check. Phenolphthalein is added to three solutions, pH five, pH nine, and pH twelve. What colour is each? Pause and work it through. Right, let's check it. Phenolphthalein's transition range is eight-point-three to ten, colourless below it and pink above it. At pH five we're well below the range, so the acid form dominates and it stays colourless. At pH nine we're inside the range, so the base form takes over and it turns pink. At pH twelve we're above the range, and here's the catch, it stays pink, because the base form still dominates at high pH. It does not go back to colourless. So colourless, pink, pink.",
-        "audioFile": "public/audio/Chemistry-Y12-M6-L2/quick-check.c78ee1a9c325.mp3"
+        "text": "Quick check. Phenolphthalein is added to three solutions, pH five, pH nine, and pH ten-point-five. What colour is each? Pause and work it through. Right, let's check it. Phenolphthalein's transition range is about eight-point-three to ten. At pH five we're well below the range, so the acid form dominates and it stays colourless. At pH nine we're inside the transition range, so you see pink. At pH ten-point-five we're just above the transition range, so under ordinary indicator conditions it is pink. So colourless, pink, pink."
       }
     },
     {
