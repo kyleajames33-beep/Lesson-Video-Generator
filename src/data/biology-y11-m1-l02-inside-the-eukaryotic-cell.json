@@ -1,0 +1,385 @@
+{
+  "title": "Inside the Eukaryotic Cell",
+  "subtitle": "A factory floor of organelles",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 2",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Describe the structure and function of the cell wall, cell membrane, cytoplasm, nucleus, mitochondria, chloroplast, endoplasmic reticulum, Golgi body, ribosomes, lysosomes and vacuoles in eukaryotic cells"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "lessonIntent": "Students can describe the structure and function of each eukaryotic organelle named in the syllabus and trace a protein along the ribosome, ER, Golgi and vesicle pathway.",
+  "examSkill": "Give one structural detail and one function for each named organelle, and link organelles into the protein production pathway.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, we walk through the eukaryotic cell, organelle by organelle. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Inside the Eukaryotic Cell"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Why lock the enzymes away?",
+      "body": "A cell walls off its digestive enzymes inside lysosomes instead of letting them float in the cytoplasm.",
+      "callout": "Compartments let a cell run dangerous, incompatible jobs at the same time.",
+      "image": "bioY11M1L1TwoCellPlans",
+      "durationInFrames": 1194,
+      "caption": "Compartments let a eukaryotic cell run incompatible jobs side by side.",
+      "voiceover": {
+        "text": "Why would a cell bother to wall off its digestive enzymes inside little sacs, instead of letting them float around in the cytoplasm? For the same reason a factory keeps its acid bath in a sealed room. A eukaryotic cell isn't a bag of soup. It's a factory floor, with walls, departments and delivery routes. Each membrane bound organelle does one job extremely well, and the cell works because those jobs are kept apart, yet connected. That's called compartmentalisation. Today we walk the floor, organelle by organelle."
+      }
+    },
+    {
+      "id": "concept-boundary-control-power",
+      "type": "concept",
+      "heading": "Boundary, control centre, power supply",
+      "body": "Before any specialised department, a cell needs a boundary, a control centre and a power supply.",
+      "bullets": [
+        {
+          "text": "Cell membrane: phospholipid bilayer, controls what enters and leaves. Cell wall (plants): cellulose, shape and support."
+        },
+        {
+          "text": "Cytoplasm: jelly-like fluid where many reactions occur."
+        },
+        {
+          "text": "Nucleus: holds the DNA, the instructions for every protein, so it controls the cell."
+        },
+        {
+          "text": "Mitochondria: double membrane, folded cristae; aerobic respiration transfers energy to ATP."
+        }
+      ],
+      "callout": "Cells that use lots of energy, like muscle cells, have many mitochondria.",
+      "durationInFrames": 1814,
+      "caption": "Membrane, wall, cytoplasm, nucleus and mitochondria: boundary, control and power.",
+      "voiceover": {
+        "text": "Let's start with the basics, shown here in a plant cell. The cell membrane is a phospholipid bilayer that surrounds the cell and controls what enters and leaves, so it's partially permeable. Plant cells also have a cell wall, made of cellulose, a rigid outer layer that gives shape and support. Animal cells don't have one. The cytoplasm is the jelly like fluid filling the cell, where many reactions happen. The nucleus is a membrane bound organelle holding the cell's DNA. It controls the cell, because that DNA carries the instructions for every protein the cell makes. And the mitochondria have a double membrane, with the inner one folded into cristae. They're the site of aerobic respiration, transferring energy from glucose into ATP. So cells that use lots of energy, like muscle cells, have lots of them."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Cell",
+        "props": {
+          "type": "plant",
+          "labels": [
+            {
+              "part": "membrane",
+              "text": "cell membrane",
+              "note": "controls entry and exit",
+              "at": 82
+            },
+            {
+              "part": "wall",
+              "text": "cell wall",
+              "note": "cellulose: shape, support",
+              "at": 382
+            },
+            {
+              "part": "cytoplasm",
+              "text": "cytoplasm",
+              "note": "reactions happen here",
+              "at": 622
+            },
+            {
+              "part": "nucleus",
+              "text": "nucleus",
+              "note": "holds the DNA",
+              "at": 790
+            },
+            {
+              "part": "mitochondrion",
+              "text": "mitochondrion",
+              "note": "cristae; respiration → ATP",
+              "at": 1126,
+              "amber": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-production-line",
+      "type": "concept",
+      "heading": "The protein production line",
+      "body": "Making and exporting a protein is a sequence, and a different organelle owns each step.",
+      "bullets": [
+        {
+          "text": "Ribosomes: protein synthesis, free or on the ER."
+        },
+        {
+          "text": "Rough ER (with ribosomes): makes and folds proteins. Smooth ER: makes lipids, detoxifies."
+        },
+        {
+          "text": "Golgi body: modifies, packages and dispatches proteins in vesicles."
+        }
+      ],
+      "callout": "Ribosome → rough ER → Golgi body → vesicle → out.",
+      "durationInFrames": 1622,
+      "caption": "Proteins are built on ribosomes, processed in the rough ER, packaged by the Golgi and shipped in vesicles.",
+      "voiceover": {
+        "text": "The nucleus holds the instructions, so how does a cell turn them into a finished, exported protein? With an assembly line. Ribosomes are tiny structures, free in the cytoplasm or attached to the ER, and they're the site of protein synthesis. The endoplasmic reticulum is a network of membranes. Rough ER is studded with ribosomes, and it makes and folds proteins. Smooth ER has no ribosomes, and it makes lipids and detoxifies substances. Next, the new protein moves to the Golgi body, a stack of flattened membranes that modifies the protein, packages it, and dispatches it in a vesicle. The vesicle carries it to the membrane, and out of the cell. So remember the order. Ribosome, rough ER, Golgi body, vesicle."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Cell",
+        "props": {
+          "type": "animal",
+          "labels": [
+            {
+              "part": "ribosome",
+              "text": "ribosome",
+              "note": "builds the protein",
+              "at": 190
+            },
+            {
+              "part": "rer",
+              "text": "rough ER",
+              "note": "makes and folds proteins",
+              "at": 442
+            },
+            {
+              "part": "ser",
+              "text": "smooth ER",
+              "note": "lipids, detox",
+              "at": 670
+            },
+            {
+              "part": "golgi",
+              "text": "Golgi body",
+              "note": "modifies, packages",
+              "at": 898,
+              "amber": true
+            }
+          ],
+          "route": [
+            {
+              "part": "rer",
+              "text": "built on ribosomes, rough ER",
+              "at": 462
+            },
+            {
+              "part": "golgi",
+              "text": "Golgi modifies and packages",
+              "at": 908
+            },
+            {
+              "part": "vesicle",
+              "text": "vesicle carries it",
+              "at": 1114
+            },
+            {
+              "part": "membrane",
+              "text": "released outside",
+              "at": 1198
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-digest-store-capture",
+      "type": "concept",
+      "heading": "Digestion, storage, sunlight",
+      "body": "Three more membrane-bound organelles break down waste, store materials and, in plants, capture light.",
+      "bullets": [
+        {
+          "text": "Lysosomes: sacs of digestive enzymes that break down worn-out organelles, waste and engulfed material."
+        },
+        {
+          "text": "Vacuoles: store water, nutrients and wastes; a plant’s large central vacuole gives turgor."
+        },
+        {
+          "text": "Chloroplasts: chlorophyll; the site of photosynthesis, capturing light to build glucose."
+        }
+      ],
+      "callout": "The lysosome’s membrane keeps its enzymes safely contained.",
+      "durationInFrames": 1658,
+      "caption": "Lysosomes digest, vacuoles store, chloroplasts photosynthesise.",
+      "voiceover": {
+        "text": "Three more organelles finish the list. Lysosomes are membrane bound sacs of digestive enzymes. They break down worn out organelles, waste, and anything the cell has engulfed, and their membrane keeps those enzymes safely contained. That's the answer to our hook. Vacuoles are fluid filled sacs that store water, nutrients and wastes. In a plant cell, one large central vacuole also pushes out on the wall, giving turgor pressure that supports the cell. And chloroplasts, found in plants and some protists, contain the green pigment chlorophyll. They're the site of photosynthesis, capturing light energy to build glucose. When one of these fails, the whole organism can suffer. In Tay Sachs disease, a faulty lysosomal enzyme lets a fatty substance build up in nerve cells."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Cell",
+        "props": {
+          "layout": "pair",
+          "cells": [
+            {
+              "type": "animal",
+              "title": "Animal cell"
+            },
+            {
+              "type": "plant",
+              "title": "Plant cell"
+            }
+          ],
+          "rows": [
+            {
+              "label": "Lysosomes",
+              "cells": [
+                {
+                  "text": "digest waste, old organelles"
+                },
+                {
+                  "text": "not typical"
+                }
+              ],
+              "parts": [
+                "lysosome",
+                null
+              ],
+              "at": 10
+            },
+            {
+              "label": "Vacuoles",
+              "cells": [
+                {
+                  "text": "small: storage"
+                },
+                {
+                  "text": "large, central: turgor"
+                }
+              ],
+              "parts": [
+                "vacuole",
+                "vacuole"
+              ],
+              "at": 430
+            },
+            {
+              "label": "Chloroplasts",
+              "cells": [
+                {
+                  "text": "none",
+                  "ok": false
+                },
+                {
+                  "text": "photosynthesis",
+                  "ok": true
+                }
+              ],
+              "parts": [
+                null,
+                "chloroplast"
+              ],
+              "at": 826,
+              "amber": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Organelle: a specialised structure within a cell that carries out a particular function."
+        },
+        {
+          "text": "Endoplasmic reticulum: a membrane network; rough ER makes proteins, smooth ER makes lipids."
+        },
+        {
+          "text": "Golgi body: stacked flattened membranes that modify, package and dispatch proteins in vesicles."
+        },
+        {
+          "text": "Lysosome: a membrane-bound sac of digestive enzymes."
+        },
+        {
+          "text": "Cristae: folds of the inner mitochondrial membrane that increase surface area for respiration."
+        }
+      ],
+      "callout": "Structure suits function: folds add surface, membranes keep contents apart.",
+      "durationInFrames": 1158,
+      "caption": "Organelle, endoplasmic reticulum, Golgi body, lysosome, cristae.",
+      "voiceover": {
+        "text": "Five terms to lock in. An organelle is a specialised structure inside a cell that carries out a particular function. The endoplasmic reticulum is a network of membranes. Rough ER, with ribosomes, makes proteins, and smooth ER makes lipids. The Golgi body is a stack of flattened membranes that modifies, packages and dispatches proteins in vesicles. A lysosome is a membrane bound sac of digestive enzymes. And cristae are the folds of the inner mitochondrial membrane, which increase the surface area for aerobic respiration."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Explaining the mitochondrion",
+      "question": "Explain how the structure of the mitochondrion suits it to its function. (5 marks)",
+      "coachNote": "Name the function first, then carry each structural feature through to what it lets the organelle do.",
+      "steps": [
+        "Function: the site of aerobic respiration, releasing energy from glucose and storing it as ATP.",
+        "The inner membrane is folded into cristae, which increases its surface area.",
+        "More membrane area holds more of the proteins that make ATP, so more ATP can be made.",
+        "Two membranes separate an inner space, the matrix, which holds enzymes for earlier stages.",
+        "Answer: function first, then cristae → surface area, and double membrane → separate compartments ✓"
+      ],
+      "durationInFrames": 1524,
+      "caption": "Function first; then each structure carried through to what it allows.",
+      "voiceover": {
+        "text": "Here's a five mark explain question. Explain how the structure of the mitochondrion suits it to its function. Explain means every feature you name must be carried through to what it lets the organelle do. So start with the function. The mitochondrion is the site of aerobic respiration, releasing energy from glucose and storing it as ATP. Then feature one. The inner membrane is folded into cristae, which increases its surface area, so more of the proteins that make ATP fit inside, and more ATP can be made. Feature two. The double membrane separates an inner space, the matrix, which holds enzymes for the earlier stages. Each feature, linked to a job."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The making-energy trap",
+      "body": "Trap: 'The mitochondrion makes energy.'",
+      "secondary": "Energy is never created. The mitochondrion transfers the chemical energy stored in glucose into ATP through aerobic respiration. Organelles transform energy and matter; they never create it.",
+      "mistakeTag": "Transfers, not makes",
+      "callout": "Write \"transfers energy from glucose to ATP\".",
+      "durationInFrames": 1002,
+      "caption": "Mitochondria transfer energy from glucose to ATP; they do not create it.",
+      "voiceover": {
+        "text": "Here's a trap that loses marks. Writing that the mitochondrion makes energy. Energy is never created. What the mitochondrion does is transfer the chemical energy stored in glucose into ATP, through aerobic respiration. So organelles transform energy and matter, but they never create either. In an answer, write that the mitochondrion transfers energy from glucose to ATP, or releases the energy in glucose. Never that it makes energy out of nothing."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Cells in the pancreas secrete large amounts of digestive enzymes, which are proteins. Predict two organelles that would be especially abundant in these cells, and justify each.",
+      "pausePrompt": "Pause: trace the protein production line.",
+      "answerSteps": [
+        "The enzymes are proteins for export, so the cell needs lots of rough ER with ribosomes to make them.",
+        "A large Golgi body is needed to modify and package them into vesicles for release.",
+        "Mitochondria would also be plentiful, supplying ATP for all that synthesis.",
+        "Answer: any two of rough ER, Golgi body and mitochondria, each linked to its job ✓"
+      ],
+      "durationInFrames": 1244,
+      "caption": "Protein-exporting cells are rich in rough ER and Golgi.",
+      "voiceover": {
+        "text": "Quick check. Cells in your pancreas secrete huge amounts of digestive enzymes, which are proteins. Predict two organelles that would be especially abundant in these cells, and justify each one. Pause, and trace the production line. OK. The enzymes are proteins for export, so you'd expect plenty of rough ER, with its ribosomes, to make and fold them. You'd also expect a large Golgi body, to modify them and package them into vesicles for release. And all that work needs energy, so mitochondria would be plentiful too."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Membrane controls entry and exit; the cellulose wall (plants) gives shape; cytoplasm hosts reactions.",
+        "The nucleus holds the DNA and controls the cell; mitochondria transfer energy from glucose to ATP.",
+        "Proteins: ribosome → rough ER → Golgi body → vesicle; smooth ER makes lipids.",
+        "Lysosomes digest, vacuoles store, chloroplasts photosynthesise.",
+        "Compartments keep incompatible jobs apart, yet connected."
+      ],
+      "finalPrompt": "For every organelle: one structural detail, then its function.",
+      "durationInFrames": 1206,
+      "caption": "Every organelle: one structure, one function, all connected.",
+      "voiceover": {
+        "text": "Let's lock it in. The membrane controls what enters and leaves, a cellulose wall gives plant cells their shape, and the cytoplasm is where many reactions happen. The nucleus holds the DNA and controls the cell, and mitochondria transfer energy from glucose to ATP. Proteins run from ribosome, to rough ER, to Golgi body, to vesicle, while smooth ER makes lipids. Lysosomes digest, vacuoles store, and chloroplasts photosynthesise. For every organelle, give one structural detail, then its function. Next time, why plant and animal cells stock different organelles."
+      }
+    }
+  ]
+}

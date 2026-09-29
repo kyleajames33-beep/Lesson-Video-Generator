@@ -1,0 +1,428 @@
+{
+  "title": "Prokaryotic vs Eukaryotic Cells",
+  "subtitle": "One line divides all cellular life",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 1",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Use a variety of sources to compare the cellular structures of eukaryotic and prokaryotic cells"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "lessonIntent": "Students can compare prokaryotic and eukaryotic cells, stating the features they share as well as the differences in nucleus, organelles, DNA, size and ribosomes.",
+  "examSkill": "Compare two cell types on the same named criteria, similarities first, and classify an unknown cell from its described features.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, the two kinds of cell that all life is built from. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Prokaryotic vs Eukaryotic Cells"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Two cells, two plans",
+      "body": "A human cell and a bacterium both respire and make proteins, yet one keeps its DNA locked in a nucleus and the other lets it lie free.",
+      "callout": "How can we tell them apart, and what do they share?",
+      "image": "bioY11M1L1TwoCellPlans",
+      "durationInFrames": 1314,
+      "caption": "Both cells are alive, but one locks its DNA in a nucleus and the other does not.",
+      "voiceover": {
+        "text": "Here's a puzzle to start. A cell from your cheek and a bacterium from your mouth are both alive. Both respire, both make proteins, both copy their DNA. Yet one keeps its DNA locked inside a nucleus, and the other just lets it lie free in the cell. So why are there two completely different ways to run a cell, and how can we even tell them apart? That's today. We'll find the one feature that divides all cellular life, compare the two cell types feature by feature, and see how we actually know any of this."
+      }
+    },
+    {
+      "id": "concept-dividing-line",
+      "type": "concept",
+      "heading": "One dividing line: the nucleus",
+      "body": "Every cell is either prokaryotic or eukaryotic, and the dividing line is whether its DNA is wrapped in its own membrane.",
+      "bullets": [
+        {
+          "text": "Prokaryote: no membrane-bound nucleus or organelles; DNA lies in the nucleoid."
+        },
+        {
+          "text": "Eukaryote: DNA inside a membrane-bound nucleus, plus membrane-bound organelles."
+        },
+        {
+          "text": "Both have a cell membrane, cytoplasm, ribosomes and DNA."
+        }
+      ],
+      "callout": "The difference is how the cell is organised, not what it contains.",
+      "durationInFrames": 1550,
+      "caption": "Prokaryotes lack a nucleus and membrane-bound organelles; both share membrane, cytoplasm, ribosomes and DNA.",
+      "voiceover": {
+        "text": "Every cell ever found belongs to one of two groups. A prokaryote, from the Greek for before the nucleus, has no membrane bound nucleus. Its single circular DNA molecule lies free in the cytoplasm, in a region called the nucleoid. It also has no membrane bound organelles. All bacteria are prokaryotes. A eukaryote, meaning true nucleus, keeps its DNA inside a membrane bound nucleus, and it has membrane bound organelles, such as mitochondria. Animal, plant, fungal and protist cells are all eukaryotic. Now here's the crucial part. Both kinds of cell still share the basics of life, a cell membrane, cytoplasm, ribosomes and DNA. So the difference isn't what they contain. It's how it's organised."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Cell",
+        "props": {
+          "layout": "pair",
+          "cells": [
+            {
+              "type": "prokaryote",
+              "title": "Prokaryotic cell",
+              "size": "not to scale",
+              "at": 70
+            },
+            {
+              "type": "animal",
+              "title": "Eukaryotic cell",
+              "at": 542
+            }
+          ],
+          "rows": [
+            {
+              "label": "Nucleus",
+              "cells": [
+                {
+                  "text": "none: DNA in nucleoid",
+                  "ok": false
+                },
+                {
+                  "text": "membrane-bound",
+                  "ok": true
+                }
+              ],
+              "parts": [
+                "nucleoid",
+                "nucleus"
+              ],
+              "at": 406
+            },
+            {
+              "label": "Organelles",
+              "cells": [
+                {
+                  "text": "no membrane-bound",
+                  "ok": false
+                },
+                {
+                  "text": "membrane-bound",
+                  "ok": true
+                }
+              ],
+              "parts": [
+                null,
+                "mitochondrion"
+              ],
+              "at": 622
+            },
+            {
+              "label": "Both have",
+              "cells": [
+                {
+                  "text": "membrane · cytoplasm · ribosomes · DNA",
+                  "ok": true
+                }
+              ],
+              "parts": [
+                "ribosome",
+                "ribosome"
+              ],
+              "at": 982,
+              "amber": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-feature-by-feature",
+      "type": "concept",
+      "heading": "Feature by feature",
+      "body": "Having a nucleus, or not, comes bundled with differences in DNA shape, size and ribosomes.",
+      "bullets": [
+        {
+          "text": "DNA: one circular chromosome, often plasmids, versus several linear chromosomes."
+        },
+        {
+          "text": "Size: about 1 to 5 µm versus about 10 to 100 µm."
+        },
+        {
+          "text": "Ribosomes: 70S in prokaryotes, 80S in eukaryotes."
+        }
+      ],
+      "callout": "State the shared features too: comparisons that only list differences miss marks.",
+      "durationInFrames": 1646,
+      "caption": "Prokaryotes: circular DNA, 1–5 µm, 70S ribosomes. Eukaryotes: linear chromosomes, 10–100 µm, 80S.",
+      "voiceover": {
+        "text": "Once you have a nucleus, or don't, a whole set of other differences comes bundled with it. First, the DNA. A prokaryote has a single circular chromosome, and often small extra rings called plasmids. A eukaryote has several linear chromosomes, all inside the nucleus. Second, size. Prokaryotic cells are small, about one to five micrometres. Eukaryotic cells are much bigger, about ten to a hundred micrometres. Third, ribosomes. Both cell types have them, but prokaryotic ribosomes are smaller, called seventy S, while eukaryotic ones are eighty S. And for examples, think bacteria such as E coli on one side, and plant, animal and fungal cells on the other. One exam tip. When you compare, always state what's shared as well as what differs."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Cell",
+        "props": {
+          "layout": "pair",
+          "cells": [
+            {
+              "type": "prokaryote",
+              "title": "Prokaryotic",
+              "size": "~1–5 µm"
+            },
+            {
+              "type": "animal",
+              "title": "Eukaryotic",
+              "size": "~10–100 µm"
+            }
+          ],
+          "rows": [
+            {
+              "label": "Chromosome",
+              "cells": [
+                {
+                  "text": "one, circular (+ plasmids)"
+                },
+                {
+                  "text": "several, linear"
+                }
+              ],
+              "parts": [
+                "nucleoid",
+                "nucleus"
+              ],
+              "at": 166
+            },
+            {
+              "label": "Typical size",
+              "cells": [
+                {
+                  "text": "about 1–5 µm"
+                },
+                {
+                  "text": "about 10–100 µm"
+                }
+              ],
+              "parts": [
+                "membrane",
+                "membrane"
+              ],
+              "at": 478
+            },
+            {
+              "label": "Ribosomes",
+              "cells": [
+                {
+                  "text": "70S (smaller)"
+                },
+                {
+                  "text": "80S (larger)"
+                }
+              ],
+              "parts": [
+                "ribosome",
+                "ribosome"
+              ],
+              "at": 742
+            },
+            {
+              "label": "Examples",
+              "cells": [
+                {
+                  "text": "bacteria, e.g. E. coli"
+                },
+                {
+                  "text": "plant, animal, fungal cells"
+                }
+              ],
+              "at": 1006
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-how-we-know",
+      "type": "concept",
+      "heading": "How we know: resolution",
+      "body": "What we can claim about a cell is limited by the tool we look with.",
+      "bullets": [
+        {
+          "text": "Light microscope: resolves about 200 nm, enough for cells and nuclei."
+        },
+        {
+          "text": "Electron microscope: about 0.2 nm, a thousand times finer."
+        },
+        {
+          "text": "It showed prokaryotes lack internal membrane-bound compartments."
+        }
+      ],
+      "callout": "Cross-check a variety of sources: any one can be schematic or misleading about scale.",
+      "durationInFrames": 1598,
+      "caption": "Only the electron microscope could show that prokaryotes lack internal membranes.",
+      "voiceover": {
+        "text": "So how do scientists actually know that prokaryotes have no internal membranes? It comes down to resolution, the smallest distance between two points that a microscope can still show as separate. A light microscope resolves points about two hundred nanometres apart. That's enough to see a whole cell and its nucleus, but not the fine internal membranes. The electron microscope resolves to around zero point two nanometres, a thousand times finer, and that's what revealed that prokaryotes lack the internal compartments eukaryotes have. There's a second lesson here too. Any single diagram or micrograph can be schematic, incomplete, or misleading about scale, so scientists compare a variety of sources, micrographs, labelled diagrams and data tables, and cross check them."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Scale",
+        "props": {
+          "mode": "ruler",
+          "fromNm": 0.1,
+          "toNm": 100000,
+          "items": [
+            {
+              "name": "eukaryotic cell",
+              "nm": 30000,
+              "icon": "cell",
+              "size": "~10–100 µm",
+              "at": 20
+            },
+            {
+              "name": "prokaryotic cell",
+              "nm": 2200,
+              "icon": "bacterium",
+              "size": "~1–5 µm",
+              "at": 40
+            },
+            {
+              "name": "nucleus",
+              "nm": 6000,
+              "icon": "nucleus",
+              "at": 292
+            },
+            {
+              "name": "internal membranes",
+              "nm": 8,
+              "icon": "membrane",
+              "at": 598
+            }
+          ],
+          "limits": [
+            {
+              "name": "light microscope",
+              "nm": 200,
+              "label": "~200 nm",
+              "at": 322
+            },
+            {
+              "name": "electron microscope",
+              "nm": 0.2,
+              "label": "~0.2 nm",
+              "at": 634,
+              "amber": true
+            }
+          ],
+          "footer": [
+            {
+              "text": "cross-check micrographs, diagrams and data tables",
+              "at": 1186
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Prokaryote: a cell with no membrane-bound nucleus or organelles; its DNA lies free in the cytoplasm."
+        },
+        {
+          "text": "Eukaryote: a cell with a membrane-bound nucleus and membrane-bound organelles."
+        },
+        {
+          "text": "Organelle: a specialised structure within a cell that carries out a particular function."
+        },
+        {
+          "text": "Nucleoid: the region of a prokaryotic cell where the circular chromosome sits, with no membrane around it."
+        },
+        {
+          "text": "Resolution: the smallest distance between two points a microscope can still show as separate."
+        }
+      ],
+      "callout": "Pro means before, karyon means kernel: before the nucleus.",
+      "durationInFrames": 1398,
+      "caption": "Prokaryote, eukaryote, organelle, nucleoid, resolution.",
+      "voiceover": {
+        "text": "Let's pin down five terms. A prokaryote is a cell with no membrane bound nucleus and no membrane bound organelles, so its DNA lies free in the cytoplasm. The name helps. Pro means before, and karyon means kernel, or nucleus. A eukaryote, true nucleus, has a membrane bound nucleus and membrane bound organelles. An organelle is a specialised structure inside a cell that carries out a particular function. The nucleoid is the region of a prokaryotic cell where its circular chromosome sits, with no membrane around it. And resolution is the smallest distance between two points that a microscope can still show as separate."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Building a six-mark comparison",
+      "question": "Compare the cellular structures of prokaryotic and eukaryotic cells. (6 marks)",
+      "coachNote": "Compare means similarities and differences, on the same criteria, in the same sentence.",
+      "steps": [
+        "Similarities first: both have a cell membrane, cytoplasm, DNA and ribosomes.",
+        "DNA: eukaryotes have linear DNA in a nuclear membrane; prokaryotes have one circular chromosome free in the nucleoid, often with plasmids.",
+        "Organelles: eukaryotes have membrane-bound organelles such as mitochondria; prokaryotes have none.",
+        "Size and ribosomes: prokaryotes about 1–5 µm with 70S ribosomes; eukaryotes about 10–100 µm with 80S.",
+        "Answer: four shared features, then three criteria each stated for both cell types ✓"
+      ],
+      "durationInFrames": 1536,
+      "caption": "Similarities first, then DNA, organelles, size and ribosomes, each stated for both.",
+      "voiceover": {
+        "text": "Here's a classic six mark question. Compare the cellular structures of prokaryotic and eukaryotic cells. Compare means similarities and differences, on the same criteria, so don't write one paragraph on each cell and leave the marker to do the comparing. Start with the similarities. Both cells have a membrane, cytoplasm, DNA and ribosomes, and that's the similarity marks in one sentence. Then criterion one, the DNA. Linear and inside a nuclear membrane in eukaryotes, one circular chromosome free in the nucleoid in prokaryotes, often with plasmids. Criterion two, organelles. Eukaryotes have membrane bound organelles, prokaryotes have none. Criterion three, size and ribosomes. Every difference is stated for both cells, in the same sentence."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The primitive trap",
+      "body": "Trap: 'Prokaryotes are primitive and can't do much, because they have no organelles.'",
+      "secondary": "Prokaryotes carry out every life process; they just do it without membrane-bound compartments. And no nucleus does not mean no DNA: their DNA sits in the nucleoid.",
+      "mistakeTag": "Simpler is not less capable",
+      "callout": "Say \"no membrane-bound organelles\", and never \"no DNA\".",
+      "durationInFrames": 1374,
+      "caption": "Prokaryotes carry out all life processes without compartments, and they still have DNA.",
+      "voiceover": {
+        "text": "Here's the trap. Thinking that prokaryotes are primitive, and can't do much, because they have no organelles. That's wrong. Prokaryotes are hugely successful, and they carry out every life process. They respire, they make proteins, they reproduce. They just do it without splitting the jobs into membrane bound compartments. A simpler structure is not a less capable cell. And watch for the related slip, saying prokaryotes have no DNA because they have no nucleus. They absolutely have DNA. It just sits in the nucleoid, with no membrane around it. So in an answer, say no membrane bound organelles, and never no DNA."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A cell is 3 µm long. Its DNA is a single circular molecule lying free in the cytoplasm, and it has ribosomes but no membrane-bound organelles. Classify it and justify your answer with two features.",
+      "pausePrompt": "Pause: check the nucleus first, then the size.",
+      "answerSteps": [
+        "No nuclear membrane: the DNA lies free, so there is no nucleus.",
+        "A single circular chromosome is the prokaryotic arrangement.",
+        "At 3 µm it sits in the 1–5 µm prokaryotic range, not 10–100 µm.",
+        "Answer: prokaryotic, because it has no membrane-bound nucleus and a single circular chromosome ✓"
+      ],
+      "durationInFrames": 1316,
+      "caption": "No nucleus, circular DNA and 3 µm long: a prokaryotic cell.",
+      "voiceover": {
+        "text": "Quick check. A cell is three micrometres long. Its DNA is a single circular molecule lying free in the cytoplasm, and it has ribosomes but no membrane bound organelles. Classify it, and justify your answer with two features. Pause, and check the nucleus first, then the size. OK. There's no nuclear membrane, the DNA lies free, so there's no nucleus. A single circular chromosome is the prokaryotic arrangement. And three micrometres sits right in the prokaryotic range. So it's a prokaryotic cell, and the ribosomes don't change that, because every cell has them."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "The dividing line is a membrane-bound nucleus: eukaryotes have one, prokaryotes do not.",
+        "Both share a cell membrane, cytoplasm, ribosomes and DNA.",
+        "Prokaryotes: circular DNA in a nucleoid, no membrane-bound organelles, ~1–5 µm, 70S ribosomes.",
+        "Eukaryotes: linear chromosomes in a nucleus, membrane-bound organelles, ~10–100 µm, 80S ribosomes.",
+        "The electron microscope revealed the difference; cross-check a variety of sources."
+      ],
+      "finalPrompt": "Comparing cells? Shared features first, then each difference stated for both.",
+      "durationInFrames": 1350,
+      "caption": "The nucleus divides the two cell types; state what they share as well as how they differ.",
+      "voiceover": {
+        "text": "Let's lock it in. The dividing line is a membrane bound nucleus. Eukaryotes have one, prokaryotes don't. Both still share a cell membrane, cytoplasm, ribosomes and DNA. Prokaryotes have circular DNA in a nucleoid, no membrane bound organelles, they're about one to five micrometres, with seventy S ribosomes. Eukaryotes have linear chromosomes in a nucleus, membrane bound organelles, they're about ten to a hundred micrometres, with eighty S ribosomes. And it was the electron microscope that revealed the difference, which is why we cross check a variety of sources. Next time, we open up the eukaryotic cell, organelle by organelle."
+      }
+    }
+  ]
+}

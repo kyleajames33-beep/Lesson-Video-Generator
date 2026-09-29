@@ -1,0 +1,385 @@
+{
+  "title": "Plant vs Animal Cells",
+  "subtitle": "Structure follows function",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Contrast the cell structure and organelles of plant and animal cells based on the function of the cell"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "lessonIntent": "Students can contrast plant and animal cells and justify each difference by the function the cell performs.",
+  "examSkill": "Contrast two cell types by linking each difference to a reason: \"has X because it needs to Y\".",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, plant cells versus animal cells, and why they differ. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Plant vs Animal Cells"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A quirk, or a prediction?",
+      "body": "A plant cell has a rigid cell wall and an animal cell does not. You can predict that from what each cell needs to do.",
+      "callout": "A plant cell makes its own food and cannot run away.",
+      "image": "plantCell",
+      "durationInFrames": 1098,
+      "caption": "Plant and animal cells differ because they do different jobs.",
+      "voiceover": {
+        "text": "A leaf cell and a muscle cell are both eukaryotic, yet they look and behave nothing alike. A plant cell has a rigid cell wall, and an animal cell doesn't. Is that just a quirk? No. You could predict it. The wall, the chloroplasts and the big vacuole all follow from one fact. A plant cell makes its own food, and it can't run away. Structure follows function. So today we'll read a cell's organelles like a job description."
+      }
+    },
+    {
+      "id": "concept-same-toolkit",
+      "type": "concept",
+      "heading": "Same toolkit, different tools",
+      "body": "Both are eukaryotic, so they share the core organelles; the differences are a short, predictable list.",
+      "bullets": [
+        {
+          "text": "Both: membrane, cytoplasm, nucleus, mitochondria, ribosomes, ER, Golgi body."
+        },
+        {
+          "text": "Plant only: cellulose cell wall, chloroplasts, one large central vacuole."
+        },
+        {
+          "text": "Animal: no wall or chloroplasts; small vacuoles; typically lysosomes and centrioles."
+        }
+      ],
+      "callout": "Contrast means each difference tied to what the cell does.",
+      "durationInFrames": 1310,
+      "caption": "Shared core organelles; plants add a wall, chloroplasts and a large central vacuole.",
+      "voiceover": {
+        "text": "Plant and animal cells are both eukaryotic, so they share the core toolkit. Both have a cell membrane, cytoplasm, a nucleus, mitochondria, ribosomes, endoplasmic reticulum and a Golgi body. The differences are a short list. Plant cells also have a cellulose cell wall, chloroplasts, and a single large central vacuole. Animal cells have no wall and no chloroplasts, their vacuoles are small and more numerous, and they typically have lysosomes and centrioles. But the syllabus asks you to contrast these cells based on their function, so a list isn't enough. Every difference needs a reason."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Cell",
+        "props": {
+          "layout": "pair",
+          "cells": [
+            {
+              "type": "plant",
+              "title": "Plant cell"
+            },
+            {
+              "type": "animal",
+              "title": "Animal cell"
+            }
+          ],
+          "rows": [
+            {
+              "label": "Both have",
+              "cells": [
+                {
+                  "text": "nucleus · mitochondria · ribosomes · ER · Golgi",
+                  "ok": true
+                }
+              ],
+              "parts": [
+                "mitochondrion",
+                "mitochondrion"
+              ],
+              "at": 94
+            },
+            {
+              "label": "Cell wall",
+              "cells": [
+                {
+                  "text": "cellulose",
+                  "ok": true
+                },
+                {
+                  "text": "none",
+                  "ok": false
+                }
+              ],
+              "parts": [
+                "wall",
+                null
+              ],
+              "at": 418
+            },
+            {
+              "label": "Chloroplasts",
+              "cells": [
+                {
+                  "text": "yes",
+                  "ok": true
+                },
+                {
+                  "text": "none",
+                  "ok": false
+                }
+              ],
+              "parts": [
+                "chloroplast",
+                null
+              ],
+              "at": 454
+            },
+            {
+              "label": "Vacuole",
+              "cells": [
+                {
+                  "text": "one large, central"
+                },
+                {
+                  "text": "small, several"
+                }
+              ],
+              "parts": [
+                "vacuole",
+                "vacuole"
+              ],
+              "at": 490
+            },
+            {
+              "label": "Lysosomes",
+              "cells": [
+                {
+                  "text": "not typical"
+                },
+                {
+                  "text": "typically present"
+                }
+              ],
+              "parts": [
+                null,
+                "lysosome"
+              ],
+              "at": 766
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-plant-cell",
+      "type": "concept",
+      "heading": "Why a plant cell looks the way it does",
+      "body": "A plant cell makes its own food and cannot move, so it must capture light, store products and hold itself rigid.",
+      "bullets": [
+        {
+          "text": "Cell wall: fixed shape, and stops the cell bursting when water enters."
+        },
+        {
+          "text": "Chloroplasts: the plant is an autotroph, so it captures light to make glucose."
+        },
+        {
+          "text": "Large central vacuole: stores cell sap and presses on the wall to keep turgor."
+        }
+      ],
+      "callout": "Plant cells have mitochondria too: they respire day and night.",
+      "durationInFrames": 1574,
+      "caption": "Wall, chloroplasts and vacuole all follow from being a stationary food-maker.",
+      "voiceover": {
+        "text": "So why these three extras? Start with the cell wall. It gives the plant cell a fixed shape, and stops it bursting when water rushes in. That matters, because plants stay upright using turgor, water pressure against the wall, instead of a skeleton. Next, chloroplasts. A plant is an autotroph. It has to capture light energy to make its own glucose by photosynthesis. Then the large central vacuole. It stores cell sap, nutrients and wastes, and presses outward on the wall to maintain turgor. That's why a plant wilts when you forget to water it. And notice what's still there, mitochondria. Plant cells make glucose, but they still respire it to release usable energy, day and night."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Cell",
+        "props": {
+          "type": "plant",
+          "labels": [
+            {
+              "part": "wall",
+              "text": "cellulose wall",
+              "note": "shape; stops bursting",
+              "at": 34
+            },
+            {
+              "part": "chloroplast",
+              "text": "chloroplast",
+              "note": "captures light → glucose",
+              "at": 466
+            },
+            {
+              "part": "vacuole",
+              "text": "central vacuole",
+              "note": "cell sap; turgor",
+              "at": 718
+            },
+            {
+              "part": "mitochondrion",
+              "text": "mitochondrion",
+              "note": "respires day and night",
+              "at": 1138,
+              "amber": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "concept-animal-cell",
+      "type": "concept",
+      "heading": "Why an animal cell travels light",
+      "body": "An animal is a heterotroph that moves and eats, so its cells are built for flexibility, not rigidity.",
+      "bullets": [
+        {
+          "text": "No cell wall: the cell can change shape, move and engulf material."
+        },
+        {
+          "text": "No chloroplasts: it gets glucose by eating."
+        },
+        {
+          "text": "Small, temporary vacuoles; lysosomes digest; centrioles organise the spindle in division."
+        }
+      ],
+      "callout": "A cell stocks the organelles its function requires.",
+      "durationInFrames": 1454,
+      "caption": "No wall means flexibility: animal cells change shape, move and engulf.",
+      "voiceover": {
+        "text": "What does an animal cell gain by skipping those extras? Flexibility. With no cell wall, its membrane is the outer boundary, so the cell can change shape, move, and even engulf material. White blood cells do exactly that to pathogens. It has no chloroplasts, because an animal is a heterotroph. It gets its glucose by eating. Its vacuoles are small and temporary. Many animal cells rely on lysosomes for digestion, and have centrioles, which organise the spindle when the cell divides. And instead of turgor, a whole animal holds itself up with a skeleton. The general principle is simple. A cell stocks the organelles its function needs."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1Cell",
+        "props": {
+          "type": "animal",
+          "labels": [
+            {
+              "part": "membrane",
+              "text": "membrane: no wall",
+              "note": "changes shape, engulfs",
+              "at": 82,
+              "amber": true
+            },
+            {
+              "part": "vacuole",
+              "text": "small vacuoles",
+              "note": "temporary",
+              "at": 622
+            },
+            {
+              "part": "lysosome",
+              "text": "lysosome",
+              "note": "digestion",
+              "at": 742
+            },
+            {
+              "part": "centriole",
+              "text": "centrioles",
+              "note": "organise the spindle",
+              "at": 802
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Autotroph: an organism that makes its own food using light energy, through photosynthesis."
+        },
+        {
+          "text": "Heterotroph: an organism that obtains food by consuming other organisms."
+        },
+        {
+          "text": "Cellulose cell wall: the rigid outer layer of a plant cell that gives shape and resists turgor pressure."
+        },
+        {
+          "text": "Central vacuole: the large fluid-filled sac in a plant cell that stores cell sap and maintains turgor."
+        },
+        {
+          "text": "Turgor pressure: the outward push of the vacuole’s contents against the cell wall."
+        }
+      ],
+      "callout": "Autotrophs make food; heterotrophs eat it.",
+      "durationInFrames": 1218,
+      "caption": "Autotroph, heterotroph, cellulose cell wall, central vacuole, turgor pressure.",
+      "voiceover": {
+        "text": "Five terms. An autotroph, like a plant, makes its own food using light energy, through photosynthesis. A heterotroph, like an animal, gets its food by consuming other organisms. The cellulose cell wall is the rigid outer layer of a plant cell that gives it shape and resists turgor pressure. The central vacuole is the single large fluid filled sac in a plant cell that stores cell sap and maintains turgor. And turgor pressure is the outward push of the vacuole's contents against the wall, which keeps a plant firm."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Contrast, linked to function",
+      "question": "Contrast the cell structure and organelles of plant and animal cells, and relate the differences to the function of each cell. (6 marks)",
+      "coachNote": "Contrast asks only for differences, and each one needs a because.",
+      "steps": [
+        "Plant cells have a cellulose wall; animal cells do not, because plants rely on turgor for support while animal cells need to change shape.",
+        "Plant cells have chloroplasts; animal cells do not, because plants are autotrophs that make glucose, while animals eat.",
+        "Plant cells have one large central vacuole that maintains turgor; animal cells have small, temporary vacuoles.",
+        "Animal cells typically have lysosomes and centrioles, for digestion and organising the spindle.",
+        "Answer: each difference stated for both cells, with a because linked to function ✓"
+      ],
+      "durationInFrames": 1320,
+      "caption": "Every difference: plant has, animal lacks, because of what each cell does.",
+      "voiceover": {
+        "text": "Here's a six mark contrast question. Contrast the cell structure and organelles of plant and animal cells, and relate the differences to the function of each cell. Contrast asks only for differences, and this question adds a requirement, each one tied to function. So use a pattern. A plant cell has a cellulose wall and an animal cell doesn't, because the plant relies on turgor for support, while the animal cell needs to change shape. Plant cells have chloroplasts, because they're autotrophs. Then the vacuole, and the lysosomes and centrioles. Every difference has a because."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The no-mitochondria trap",
+      "body": "Trap: 'Plant cells don’t have mitochondria, because they make their own food in chloroplasts.'",
+      "secondary": "Plant cells have BOTH chloroplasts and mitochondria. They make glucose by photosynthesis, then respire that glucose in mitochondria to release usable energy, including at night when there is no light.",
+      "mistakeTag": "Plants photosynthesise AND respire",
+      "callout": "Chloroplasts make the glucose; mitochondria release its energy.",
+      "durationInFrames": 1098,
+      "caption": "Plant cells have chloroplasts and mitochondria.",
+      "voiceover": {
+        "text": "Here's the classic trap. Saying plant cells don't have mitochondria, because they make their own food in chloroplasts. That's wrong. Plant cells have both. Chloroplasts make glucose by photosynthesis, but the cell still has to respire that glucose in its mitochondria to release energy it can actually use. And it has to keep doing that at night, when there's no light at all. Even a root cell, which has no chloroplasts, still has mitochondria. So, plants photosynthesise and respire."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A cell has a nucleus, mitochondria and a cellulose cell wall, but no chloroplasts. It comes from a plant root. Identify it as plant or animal, and explain why it has no chloroplasts.",
+      "pausePrompt": "Pause: which feature decides plant or animal, and what does a root cell do?",
+      "answerSteps": [
+        "A cellulose cell wall means it is a plant cell.",
+        "Chloroplasts capture light for photosynthesis.",
+        "A root grows underground, in the dark, so chloroplasts would have no job there.",
+        "Answer: a plant cell; its function underground does not need chloroplasts, but it still respires in mitochondria ✓"
+      ],
+      "durationInFrames": 1232,
+      "caption": "A root cell is a plant cell without chloroplasts: no light, no job for them.",
+      "voiceover": {
+        "text": "Quick check. A cell has a nucleus, mitochondria and a cellulose cell wall, but no chloroplasts. It comes from a plant root. Is it a plant or an animal cell, and why doesn't it have chloroplasts? Pause, and think about what decides it, and what a root cell does. OK. The cellulose wall tells you it's a plant cell. Chloroplasts capture light, and a root lives underground, in the dark, so they'd have no job. The cell still respires in its mitochondria. Structure follows function again."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Both: membrane, cytoplasm, nucleus, mitochondria, ribosomes, ER, Golgi body.",
+        "Plant only: cellulose wall (support, stops bursting), chloroplasts (make glucose), large central vacuole (turgor).",
+        "Animal: no wall, so it can change shape and engulf; small vacuoles; lysosomes and centrioles.",
+        "Plant cells have mitochondria too: they respire day and night.",
+        "A cell stocks the organelles its function requires."
+      ],
+      "finalPrompt": "Contrast question? Plant has, animal lacks, because the cell needs to…",
+      "durationInFrames": 1230,
+      "caption": "Each difference between plant and animal cells follows from function.",
+      "voiceover": {
+        "text": "Let's lock it in. Both cell types share the core organelles. Plant cells add a cellulose wall, for support and to stop bursting, chloroplasts to make glucose, and a large central vacuole for turgor. Animal cells have no wall, so they can change shape and engulf things, with small vacuoles, and usually lysosomes and centrioles. Plant cells have mitochondria too, and respire day and night. In a contrast question, say what one cell has and the other lacks, and then say because. Next time, the prokaryotic cell, structure by structure."
+      }
+    }
+  ]
+}
