@@ -18,7 +18,7 @@ import {interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
 import {DioramaDefs, DioramaPlinth, idleBob, idlePulse} from '../../diorama';
-import {H, Notes, Tag, Title, W, clamp, fadeAt, mix, textWidth, type Note, type Tone} from './shared';
+import {H, Lines, Notes, Tag, Title, W, clamp, fadeAt, mix, textWidth, type Note, type Tone} from './shared';
 
 type Beats = {cubes: number; sa: number; v: number; ratio: number; verdict: number; start: number; end: number};
 export type CubesProps = {
@@ -91,9 +91,9 @@ export const CubesDiagram = ({
 						<circle cx={cx - s * 0.12} cy={baseY - s / 2} r={7 + 2 * pulse} fill={core} stroke="#fff" strokeWidth={2} opacity={fadeAt(frame, b.start)} />
 					</g>
 				</DioramaPlinth>
-				<text x={cx} y={baseY + 104} textAnchor="middle" fill={core} fontSize={20} fontWeight={800} opacity={fadeAt(frame, b.start)}>
-					{tBad < 0.5 ? 'centre: supplied' : 'centre: starved of O₂, clogged with waste'}
-				</text>
+				<g opacity={fadeAt(frame, b.start)}>
+					<Lines x={cx} y={baseY + 104} lines={tBad < 0.5 ? ['centre: supplied'] : ['centre: starved of O₂,', 'clogged with waste']} size={20} color={core} />
+				</g>
 				<g opacity={fadeAt(frame, b.start - 20)}>
 					{[
 						[`side L = ${L.toFixed(1)} ${unit}`, TOK.ink],
