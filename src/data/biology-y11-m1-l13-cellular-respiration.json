@@ -1,0 +1,303 @@
+{
+  "title": "Cellular Respiration",
+  "subtitle": "Using the summary equation to describe how cells release energy",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 13",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Use the summary equation to describe the process of cellular respiration"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "inquiryQuestion": "How do cells release the energy stored in glucose?",
+  "lessonIntent": "Students can write the word and balanced summary equations for aerobic respiration and use them to describe the process, including the role of each reactant and product and ATP.",
+  "examSkill": "Write the balanced summary equation for respiration and use it, term by term, as the structure of a description.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, cellular respiration. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Cellular Respiration"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A fire that never burns you",
+      "body": "The energy in your breakfast is released in your cells by the same overall reaction as a fire, but slowly, in tiny controlled steps.",
+      "callout": "How does one short equation capture that whole controlled burn?",
+      "image": "bioY11M1L6CellInputsOutputs",
+      "caption": "Cells release the energy in glucose like a fire, but slowly and under control.",
+      "durationInFrames": 1198,
+      "voiceover": {
+        "text": "Right now, in almost every one of your cells, glucose is being taken apart to release energy. And here's the strange part. Overall, it's the same reaction as burning. Glucose and oxygen go in, carbon dioxide and water come out, and energy is released. A campfire does it all at once, in flames. Your cells do it slowly, in tiny controlled steps, without ever catching fire. So how can one short equation capture that whole controlled burn? Today we'll write that equation, name every reactant and product, and see what it tells us, and what it hides."
+      }
+    },
+    {
+      "id": "concept-equation",
+      "type": "concept",
+      "heading": "The summary equation",
+      "body": "Respiration breaks glucose down with oxygen and captures the energy released as ATP.",
+      "bullets": [
+        {
+          "text": "Word: glucose + oxygen → carbon dioxide + water + energy (ATP)"
+        },
+        {
+          "text": "Balanced: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy (ATP)"
+        },
+        {
+          "text": "Aerobic, because it uses oxygen; it happens largely in the mitochondria."
+        }
+      ],
+      "callout": "Reactants in: glucose and oxygen. Products out: carbon dioxide and water.",
+      "caption": "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy, captured as ATP.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bEnergy",
+        "delay": 30,
+        "props": {
+          "mode": "respiration",
+          "at": {
+            "organelle": 0,
+            "reactants": 74,
+            "products": 155,
+            "energy": 362,
+            "words": 466,
+            "equation": 639,
+            "tally": 962,
+            "rule": 1124
+          },
+          "notes": [
+            {
+              "text": "first stage in the cytoplasm, the rest in the mitochondria",
+              "at": 1297
+            }
+          ],
+          "rule": "Aerobic: uses oxygen, mostly in the mitochondria"
+        }
+      },
+      "durationInFrames": 1590,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Here's the whole process in one line. Cellular respiration takes glucose and oxygen, the reactants, and releases carbon dioxide and water, the products. The energy stored in the bonds of glucose is released, and the cell captures it in a molecule called ATP. As a word equation, that's glucose plus oxygen gives carbon dioxide plus water plus energy. As a balanced symbol equation, it's C six H twelve O six, plus six O two, gives six C O two, plus six H two O, plus energy. Check it balances, with six carbons, twelve hydrogens and eighteen oxygens on each side. Because it uses oxygen, this is aerobic respiration, and it happens largely in the mitochondria. The very first stage starts in the cytoplasm, and the rest is finished inside the mitochondrion."
+      }
+    },
+    {
+      "id": "concept-summary",
+      "type": "concept",
+      "heading": "One arrow, many steps",
+      "body": "The equation is only a summary: its single arrow hides a long chain of small, enzyme-controlled steps.",
+      "bullets": [
+        {
+          "text": "Glucose is the fuel; oxygen lets it be broken down completely."
+        },
+        {
+          "text": "Carbon dioxide and water are wastes; the energy goes into ATP."
+        },
+        {
+          "text": "Small steps release energy gradually, so it is captured, not lost as heat."
+        }
+      ],
+      "callout": "A controlled release of energy, not one big burst.",
+      "caption": "Many small enzyme-controlled steps release energy gradually, so it can be captured as ATP.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bStepwise",
+        "delay": 30,
+        "props": {
+          "at": {
+            "levels": 570,
+            "steps": 674,
+            "enzymes": 789,
+            "burn": 962,
+            "atp": 1147,
+            "rule": 1285
+          },
+          "rule": "Same total energy, released in small steps"
+        }
+      },
+      "durationInFrames": 1509,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "So what does each part mean? On the left, glucose is the fuel, and oxygen is what lets it be broken down completely. On the right, carbon dioxide and water are waste products the cell has to get rid of, and the energy ends up in ATP, ready to spend on work. But notice that single arrow. It isn't one reaction. It's a summary of a long sequence of small steps, each one controlled by its own enzyme. If all that energy came out at once, like it does in a fire, it would burst out as heat the cell couldn't capture. Released a little at a time, it can be packed into ATP. That's why respiration is called a controlled release of energy."
+      }
+    },
+    {
+      "id": "concept-anaerobic",
+      "type": "concept",
+      "heading": "When oxygen runs out",
+      "body": "Without oxygen, cells use anaerobic respiration, which releases far less energy from the same glucose.",
+      "bullets": [
+        {
+          "text": "Animal (muscle) cells: glucose → lactic acid + a little ATP"
+        },
+        {
+          "text": "Yeast and plant cells: glucose → ethanol + carbon dioxide + a little ATP"
+        },
+        {
+          "text": "Glucose is only partly broken down, so far less energy is released."
+        }
+      ],
+      "callout": "Extension: for the exam, the aerobic equation is the one you need.",
+      "caption": "Anaerobic respiration: lactic acid in animals, ethanol and CO₂ in yeast, far less ATP.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bPathways",
+        "delay": 30,
+        "props": {
+          "tag": "extension: beyond the syllabus",
+          "routes": [
+            {
+              "condition": "oxygen available: aerobic",
+              "who": "the route from the summary equation",
+              "products": "carbon dioxide + water",
+              "energyLabel": "far more ATP",
+              "energy": 0.94,
+              "at": 0
+            },
+            {
+              "condition": "no oxygen: anaerobic",
+              "who": "animal cells, such as muscle",
+              "products": "lactic acid",
+              "energyLabel": "a little ATP",
+              "energy": 0.12,
+              "at": 362
+            },
+            {
+              "condition": "no oxygen: anaerobic",
+              "who": "yeast and plant cells",
+              "products": "ethanol + carbon dioxide",
+              "energyLabel": "a little ATP",
+              "energy": 0.12,
+              "at": 582
+            }
+          ],
+          "compareAt": 789,
+          "compareText": "glucose only partly broken down: far less energy"
+        }
+      },
+      "durationInFrames": 1440,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "What happens when a cell can't get enough oxygen? This part goes a little beyond what the syllabus requires, but it shows why oxygen matters so much. Without oxygen, cells switch to anaerobic respiration. In animal cells, like your muscles, glucose is turned into lactic acid, with only a small amount of ATP. In yeast and in plant cells, glucose becomes ethanol and carbon dioxide, again with only a little ATP. Because the glucose is only partly broken down, anaerobic respiration releases far less energy than aerobic respiration. That's why you breathe hard after a sprint. Your muscles ran short of oxygen and built up lactic acid. And the carbon dioxide from yeast is what makes bread rise."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Cellular respiration: cells break down glucose to release the energy stored in its bonds."
+        },
+        {
+          "text": "Aerobic: using oxygen; releases the most energy from glucose."
+        },
+        {
+          "text": "Anaerobic: without oxygen; far less energy, making lactic acid or ethanol."
+        },
+        {
+          "text": "ATP: the energy-carrying molecule the cell makes in respiration and spends on work."
+        },
+        {
+          "text": "Summary equation: one equation showing the overall reactants and products of a many-step process."
+        }
+      ],
+      "callout": "Energy is released and transferred, never created.",
+      "caption": "Cellular respiration, aerobic, anaerobic, ATP, summary equation.",
+      "durationInFrames": 1198,
+      "voiceover": {
+        "text": "Let's pin down the terms. Cellular respiration is the process in which cells break down glucose to release the energy stored in its chemical bonds. Aerobic means using oxygen, and it releases the most energy from glucose. Anaerobic means without oxygen, which releases far less energy and makes products such as lactic acid or ethanol. ATP, short for adenosine triphosphate, is the energy-carrying molecule the cell makes during respiration and then spends on work. And a summary equation is a single equation that shows the overall reactants and products of a process that really has many steps."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Describe it using the equation",
+      "question": "Use the summary equation to describe the process of aerobic cellular respiration. (6 marks)",
+      "coachNote": "Write the equation first, then use it term by term as the skeleton of your answer.",
+      "steps": [
+        "Equation: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy (ATP); in words, glucose + oxygen → carbon dioxide + water + energy.",
+        "Reactants: glucose is the fuel; oxygen allows it to be broken down completely.",
+        "Products: carbon dioxide and water are waste products that leave the cell.",
+        "Energy is not a substance: it is released from glucose and captured in ATP, with some lost as heat.",
+        "Location: the first stage is in the cytoplasm; the rest happens in the mitochondria.",
+        "Summary: many small enzyme-controlled steps release the energy gradually ✓"
+      ],
+      "caption": "Equation first, then reactants, products, energy, location and the steps it hides.",
+      "durationInFrames": 1636,
+      "voiceover": {
+        "text": "Here's a six mark question. Use the summary equation to describe the process of aerobic cellular respiration. The trick is to write the equation first, then use it as the skeleton of your answer. Step one, write it both ways, in words and as the balanced symbol equation. Step two, the reactants. Glucose is the fuel, and oxygen lets it be broken down completely. Step three, the products. Carbon dioxide and water are waste products that leave the cell. Step four, the energy. It isn't a substance like the others. It's released from the bonds of glucose and captured in ATP, with some lost as heat. Step five, where it happens, starting in the cytoplasm and finishing in the mitochondria. And step six, say what the equation hides, a long chain of small enzyme-controlled steps."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two respiration traps",
+      "body": "Trap 1: 'Respiration creates energy.' Energy can't be created. It is released from the bonds of glucose and transferred to ATP, with some lost as heat.",
+      "secondary": "Trap 2: 'Respiration is breathing.' Breathing moves air in and out of the lungs. Cellular respiration is a chemical reaction inside cells; breathing just supplies its oxygen and removes its carbon dioxide.",
+      "mistakeTag": "Words that cost marks",
+      "callout": "Energy is released, not created. Respiration happens in cells; breathing happens in lungs.",
+      "caption": "Respiration releases energy rather than creating it, and it is not the same as breathing.",
+      "durationInFrames": 1232,
+      "voiceover": {
+        "text": "Two traps. Trap one, writing that respiration creates energy. Energy can't be created. It was already stored in the bonds of glucose, and respiration releases it and transfers it into ATP, with some lost as heat. So the word to use is released. Trap two, treating respiration and breathing as the same thing. Breathing, or ventilation, just moves air in and out of your lungs. Cellular respiration is a chemical reaction happening inside your cells. Breathing supports it, by bringing in the oxygen it needs and getting rid of the carbon dioxide it makes, but they're not the same process."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Explain why cellular respiration is described as a controlled release of energy, even though the summary equation shows only a single arrow. (3 marks)",
+      "pausePrompt": "Pause: what does the single arrow hide?",
+      "answerSteps": [
+        "The single arrow summarises a long sequence of small reactions, not one event.",
+        "Each step is controlled by a specific enzyme, so energy is released in small amounts.",
+        "Small amounts can be captured in ATP; released all at once, the energy would be lost as heat that could damage the cell ✓"
+      ],
+      "caption": "One arrow, many enzyme-controlled steps: energy released gradually and captured as ATP.",
+      "durationInFrames": 1290,
+      "voiceover": {
+        "text": "Quick check. Explain why cellular respiration is described as a controlled release of energy, even though the summary equation shows only a single arrow. That's three marks. Pause, and ask yourself what the arrow hides. OK. First, the single arrow is a summary of a long sequence of small reactions, not one event. Second, each of those steps is controlled by a specific enzyme, so the energy stored in glucose comes out in small amounts. And third, small amounts can be captured in ATP as they're released. If it all came out at once, it would be lost as heat, which could damage the cell."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Word: glucose + oxygen → carbon dioxide + water + energy (ATP).",
+        "Balanced: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy, with 6 C, 12 H and 18 O on each side.",
+        "Glucose is the fuel, oxygen breaks it down fully, CO₂ and water are wastes, energy goes to ATP.",
+        "It is aerobic and happens largely in the mitochondria.",
+        "One arrow summarises many enzyme-controlled steps: a controlled release of energy."
+      ],
+      "finalPrompt": "Respiration question? Write the equation, then describe it term by term.",
+      "caption": "Five takeaways: two equations, the role of each term, where, and the steps it hides.",
+      "durationInFrames": 1198,
+      "voiceover": {
+        "text": "Let's lock it in. First, glucose plus oxygen gives carbon dioxide plus water plus energy, captured as ATP. Second, the balanced version, C six H twelve O six plus six O two gives six C O two plus six H two O, balanced on every atom. Third, glucose is the fuel, oxygen breaks it down fully, carbon dioxide and water are wastes, and the energy goes into ATP. Fourth, it's aerobic and happens largely in the mitochondria. And fifth, that one arrow stands for many enzyme-controlled steps. Next lesson, we run the equation in reverse, with photosynthesis."
+      }
+    }
+  ]
+}

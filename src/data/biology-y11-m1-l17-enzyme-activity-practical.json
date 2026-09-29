@@ -1,0 +1,333 @@
+{
+  "title": "What Affects Enzyme Activity",
+  "subtitle": "Planning a fair test with catalase and hydrogen peroxide",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 17",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Plan and conduct laboratory experiments to demonstrate the effect of temperature, pH and substrate concentration on the efficiency of a selected enzyme"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01",
+    "BI-11WS-02",
+    "BI-11WS-03"
+  ],
+  "inquiryQuestion": "How can we show what temperature, pH and substrate concentration do to an enzyme?",
+  "lessonIntent": "Students can plan a valid, reliable experiment on one factor affecting catalase, naming the independent, dependent and controlled variables, a control and safety precautions.",
+  "examSkill": "Identify variables, write a valid method with repeats and a control, and suggest improvements to an enzyme practical.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, a practical: what affects enzyme activity. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "What Affects Enzyme Activity"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "The jelly that never sets",
+      "body": "Fresh pineapple stops jelly setting; tinned pineapple does not. Heating during canning destroys an enzyme in the fruit.",
+      "callout": "How could you design a fair test to prove temperature is the cause?",
+      "image": "bioY11M1L7EnzymeActiveSite",
+      "caption": "Fresh pineapple ruins jelly; heated, tinned pineapple does not.",
+      "durationInFrames": 967,
+      "voiceover": {
+        "text": "Here's a kitchen mystery. Make jelly with fresh pineapple and it never sets. Make it with tinned pineapple and it sets fine. The difference is heat. Fresh pineapple contains an enzyme that breaks down the proteins in gelatine, and the heating during canning destroys it. But how would you prove that temperature really is the cause? That's this lesson, planning a fair experiment that changes one factor at a time, and measures how a real enzyme responds."
+      }
+    },
+    {
+      "id": "concept-factors",
+      "type": "concept",
+      "heading": "Three factors",
+      "body": "Enzyme efficiency depends on temperature, pH and substrate concentration.",
+      "bullets": [
+        {
+          "text": "Temperature: the rate rises to an optimum, then the enzyme denatures."
+        },
+        {
+          "text": "pH: each enzyme has an optimum pH; too acidic or alkaline denatures it."
+        },
+        {
+          "text": "Substrate concentration: the rate rises until the enzyme is saturated."
+        }
+      ],
+      "callout": "Test one factor at a time.",
+      "caption": "Temperature and pH have an optimum; substrate concentration saturates.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bEnzymeGraph",
+        "delay": 30,
+        "props": {
+          "factor": "trio",
+          "at": {
+            "temperature": 108,
+            "ph": 443,
+            "substrate": 651,
+            "rule": 985
+          },
+          "rule": "Change one factor at a time"
+        }
+      },
+      "durationInFrames": 1186,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Three conditions have a big effect on how efficiently an enzyme works. First, temperature. Raising it speeds the rate up to an optimum, but then high heat denatures the enzyme, permanently changing the shape of its active site, and activity collapses. Second, pH. Each enzyme has an optimum pH, and going too acidic or too alkaline also denatures it. Third, substrate concentration. More substrate raises the rate, until every active site is busy. That's called saturation, and after that, adding more substrate makes no difference. In a practical, you test one of these at a time."
+      }
+    },
+    {
+      "id": "concept-fair-test",
+      "type": "concept",
+      "heading": "Planning a fair test",
+      "body": "Change one factor, measure the rate, and keep everything else the same.",
+      "bullets": [
+        {
+          "text": "Independent variable: temperature, set with water baths."
+        },
+        {
+          "text": "Dependent variable: rate of oxygen produced (bubbles, gas volume or foam height)."
+        },
+        {
+          "text": "Controlled: enzyme amount, H₂O₂ volume and concentration, time, pH."
+        }
+      ],
+      "callout": "Most oxygen at 37 °C; few bubbles at 10 °C and at 70 °C.",
+      "caption": "Catalase at 10, 37 and 70 °C: the most oxygen at 37 °C, little at 70 °C because it is denatured.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bPractical",
+        "delay": 30,
+        "props": {
+          "title": "catalase + hydrogen peroxide → water + oxygen",
+          "tubes": [
+            {
+              "label": "10 °C",
+              "sub": "few bubbles",
+              "subAt": 939,
+              "rate": 0.28,
+              "at": 328
+            },
+            {
+              "label": "37 °C",
+              "sub": "most bubbles",
+              "subAt": 835,
+              "rate": 0.95,
+              "at": 348,
+              "amber": true
+            },
+            {
+              "label": "70 °C",
+              "sub": "denatured: few",
+              "subAt": 1032,
+              "rate": 0.14,
+              "at": 368
+            }
+          ],
+          "chips": [
+            {
+              "tag": "IV",
+              "text": "temperature (water baths)",
+              "at": 420
+            },
+            {
+              "tag": "DV",
+              "text": "rate of O₂ produced (bubbles, gas volume, foam)",
+              "at": 535
+            },
+            {
+              "tag": "CV",
+              "text": "enzyme amount, H₂O₂ volume and conc., time, pH",
+              "at": 1147
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1544,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Here's a typical plan, using the enzyme catalase, from liver or potato, which breaks hydrogen peroxide down into water and oxygen. To test temperature, you set up tubes in water baths, say at ten, thirty seven and seventy degrees. Temperature is the independent variable, the one thing you change. The dependent variable is what you measure, the rate of oxygen produced, as bubbles per minute, the volume of gas, or the height of the foam. At thirty seven degrees you get the most bubbles. At ten degrees there are only a few, and at seventy, few again, because the enzyme is denatured. Everything else is a controlled variable, kept the same, the amount of enzyme, the volume and concentration of hydrogen peroxide, the time, and the pH."
+      }
+    },
+    {
+      "id": "concept-reliability",
+      "type": "concept",
+      "heading": "Valid, reliable and controlled",
+      "body": "Valid: it tests what it claims. Reliable: repeats agree. A control shows the effect is real.",
+      "bullets": [
+        {
+          "text": "Validity: change only the independent variable; control the rest."
+        },
+        {
+          "text": "Reliability: repeat each level at least three times and average."
+        },
+        {
+          "text": "Control: a tube of boiled (denatured) enzyme should give no oxygen."
+        },
+        {
+          "text": "Accuracy: a gas syringe beats counting bubbles by eye."
+        }
+      ],
+      "callout": "One variable, three repeats, one control.",
+      "caption": "Repeat and average each temperature, and include a boiled-enzyme control.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bPractical",
+        "delay": 30,
+        "props": {
+          "tubes": [
+            {
+              "label": "10 °C",
+              "rate": 0.28,
+              "at": 0
+            },
+            {
+              "label": "37 °C",
+              "rate": 0.95,
+              "at": 10
+            },
+            {
+              "label": "70 °C",
+              "rate": 0.14,
+              "at": 20
+            },
+            {
+              "label": "boiled enzyme",
+              "sub": "control: no O₂",
+              "subAt": 778,
+              "rate": 0,
+              "at": 639,
+              "bath": "warm",
+              "amber": true
+            }
+          ],
+          "trialsAt": 408,
+          "rule": {
+            "text": "One variable changed, repeats averaged, a control included",
+            "at": 985
+          }
+        }
+      },
+      "durationInFrames": 1348,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "How do you know your results can be trusted? Validity means the experiment really tests what it claims to, so only the independent variable changes and everything else is controlled. Reliability means repeated trials give consistent results, so you run each temperature at least three times and average the readings, because a single reading could be a fluke. You also include a control, like a tube of boiled, denatured enzyme. If it produces no oxygen, you know the bubbles in the other tubes come from the active enzyme. And accuracy improves with better tools. A gas syringe measures the volume of oxygen far more accurately than counting bubbles by eye."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Independent variable: the one factor you deliberately change."
+        },
+        {
+          "text": "Dependent variable: the factor you measure as the outcome."
+        },
+        {
+          "text": "Controlled variable: a factor kept the same so it cannot affect the result."
+        },
+        {
+          "text": "Validity: the experiment tests what it claims to; only one variable is changed."
+        },
+        {
+          "text": "Reliability: repeated trials give consistent results; improved by repeating and averaging."
+        }
+      ],
+      "callout": "Change one, measure one, control the rest.",
+      "caption": "Independent, dependent and controlled variables, validity, reliability.",
+      "durationInFrames": 1059,
+      "voiceover": {
+        "text": "Here are the terms for any practical. The independent variable is the one factor you deliberately change, like temperature. The dependent variable is the factor you measure as the outcome, like the rate of oxygen produced. A controlled variable is a factor you keep the same, so it can't affect the result. Validity is whether the experiment actually tests what it claims to, which needs only one variable changed. And reliability is whether repeated trials give consistent results, which you improve by repeating and averaging."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Write the method",
+      "question": "Plan a valid, reliable experiment to test the effect of temperature on the activity of catalase.",
+      "coachNote": "Hypothesis, then IV, DV and CVs, then a numbered method with repeats, a control and safety.",
+      "steps": [
+        "Hypothesis: the rate of oxygen production rises to an optimum near 37 °C, then falls as catalase denatures.",
+        "IV: temperature, using water baths at 10, 20, 30, 37, 50 and 70 °C.",
+        "DV: volume of oxygen collected in a gas syringe in 60 seconds.",
+        "CV: same mass of liver or potato, same volume and concentration of H₂O₂, same pH and time.",
+        "Warm the tubes in the bath before mixing; repeat 3 times at each temperature and average; include a boiled-enzyme control.",
+        "Safety: safety glasses (H₂O₂ is an irritant), heat-proof gloves, wash hands after handling tissue ✓"
+      ],
+      "caption": "A plan: hypothesis, variables, gas-syringe measurement, repeats, a control and safety.",
+      "durationInFrames": 1567,
+      "voiceover": {
+        "text": "Let's write a full plan to test the effect of temperature on catalase. Start with a hypothesis. The rate of oxygen production will rise to an optimum near thirty seven degrees, then fall as catalase denatures. The independent variable is temperature, with water baths at a range of temperatures. The dependent variable is the volume of oxygen collected in a gas syringe in sixty seconds. Control the mass of liver or potato, the volume and concentration of hydrogen peroxide, the pH and the time. Warm each tube in its bath before mixing, repeat three times at each temperature and average, and include a boiled enzyme control. Finally, safety. Wear safety glasses, because hydrogen peroxide is an irritant, use heat proof gloves, and wash your hands after handling the tissue."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two practical traps",
+      "body": "Trap 1: 'Change two variables at once to get a bigger effect.' Then you can't tell which one caused the result, and the test is invalid. Run separate experiments for temperature, pH and substrate concentration.",
+      "secondary": "Trap 2: 'One reading at each temperature is enough.' A single reading could be a fluke. Repeat at least three times and average to make the results reliable.",
+      "mistakeTag": "One variable at a time",
+      "callout": "Change one variable, and repeat every level.",
+      "caption": "Changing two variables makes a test invalid; one reading per level is unreliable.",
+      "durationInFrames": 1094,
+      "voiceover": {
+        "text": "Two practical traps. Trap one, changing two variables at once, say raising the temperature and adding more substrate, to see a bigger effect. If you do, you can't tell which change caused the result, so the experiment is invalid. Run a separate experiment for each factor. Trap two, taking one reading at each temperature and calling it done. A single reading could be a fluke, from a timing delay or an uneven water bath. Repeat each level at least three times and average, and your results become reliable."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "In a catalase experiment on temperature: (a) What is the dependent variable? (b) Why include a tube of boiled enzyme? (c) Name two controlled variables.",
+      "pausePrompt": "Pause: what do you measure, and what does the boiled tube prove?",
+      "answerSteps": [
+        "(a) The rate of oxygen produced, for example the volume of gas per minute.",
+        "(b) It is a control: boiled catalase is denatured, so no oxygen shows that the oxygen elsewhere comes from the active enzyme.",
+        "(c) Any two of: amount of enzyme, volume and concentration of H₂O₂, pH, time ✓"
+      ],
+      "caption": "DV: rate of oxygen; boiled enzyme is the control; control enzyme, H₂O₂, pH and time.",
+      "durationInFrames": 1336,
+      "voiceover": {
+        "text": "Quick check. In a catalase experiment on temperature, A, what's the dependent variable? B, why include a tube of boiled enzyme? And C, name two controlled variables. Pause, and think about what you measure, and what the boiled tube proves. Right. A, the dependent variable is the rate of oxygen produced, like the volume of gas per minute. B, the boiled tube is a control. Boiling denatures the catalase, so if that tube makes no oxygen, the oxygen in the other tubes must come from the active enzyme. And C, any two of the amount of enzyme, the volume and concentration of hydrogen peroxide, the pH, or the time."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Temperature, pH and substrate concentration all affect enzyme efficiency.",
+        "Change one independent variable; measure the rate as the dependent variable.",
+        "Keep everything else controlled: enzyme amount, H₂O₂ volume and concentration, pH, time.",
+        "Repeat each level at least three times and average; include a boiled-enzyme control.",
+        "Measure accurately (gas syringe) and work safely (glasses, gloves)."
+      ],
+      "finalPrompt": "Planning question? Change one, measure one, control the rest, repeat, control.",
+      "caption": "Five takeaways for planning an enzyme practical.",
+      "durationInFrames": 875,
+      "voiceover": {
+        "text": "Let's lock it in. First, temperature, pH and substrate concentration all affect how efficiently an enzyme works. Second, change one independent variable, and measure the rate as your dependent variable. Third, keep everything else controlled. Fourth, repeat each level at least three times and average, and include a boiled enzyme control. And fifth, measure accurately and work safely. Next lesson, we read the graphs this kind of data produces."
+      }
+    }
+  ]
+}

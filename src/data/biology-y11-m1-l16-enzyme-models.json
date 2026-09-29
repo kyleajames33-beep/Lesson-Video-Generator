@@ -1,0 +1,289 @@
+{
+  "title": "Enzyme Models",
+  "subtitle": "Lock and key versus induced fit",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 16",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Use diagrams of the induced fit model and the lock and key model to explain the interaction between enzymes and specific substrates"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "inquiryQuestion": "How does an enzyme recognise its one specific substrate?",
+  "lessonIntent": "Students can use labelled diagrams of the lock-and-key and induced fit models to explain enzyme–substrate specificity and compare the two models.",
+  "examSkill": "Draw and label both models (enzyme, active site, substrate, complex) and state what is the same and what differs.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, two models of how enzymes work. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Enzyme Models"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A lock that grips the key",
+      "body": "A key opens only its own lock. But what if the lock could reshape itself as the right key arrived, gripping it more tightly?",
+      "callout": "How does an enzyme recognise its one substrate?",
+      "image": "bioY11M1L7EnzymeActiveSite",
+      "caption": "Two models picture how an enzyme recognises its specific substrate.",
+      "durationInFrames": 1105,
+      "voiceover": {
+        "text": "Out of the thousands of molecules jostling around inside a cell, how does an enzyme recognise the one molecule it's meant to act on? For more than a century, biologists have pictured it with two models. One is a rigid lock and key. The other is a lock that subtly reshapes itself the moment the right key arrives, gripping it more tightly. That small change in thinking changed how we understand enzymes. Today we'll use diagrams of both models to explain how enzymes and their specific substrates come together."
+      }
+    },
+    {
+      "id": "concept-lock-key",
+      "type": "concept",
+      "heading": "The lock-and-key model",
+      "body": "The active site has a fixed, rigid shape that only an exactly complementary substrate can fit.",
+      "bullets": [
+        {
+          "text": "Proposed by Emil Fischer in 1894."
+        },
+        {
+          "text": "Only a substrate with an exactly complementary shape fits the rigid active site."
+        },
+        {
+          "text": "It forms the enzyme–substrate complex; the site does not change shape."
+        }
+      ],
+      "callout": "Rigid site, exact fit: that is why each enzyme is specific.",
+      "caption": "Lock and key: a rigid active site that only an exactly matching substrate fits.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bEnzyme",
+        "delay": 30,
+        "props": {
+          "mode": "lockKey",
+          "at": {
+            "enzyme": 0,
+            "substrate": 270,
+            "fit": 362,
+            "complex": 524,
+            "wrong": 778,
+            "rule": 882
+          },
+          "rule": "Rigid site, exact fit: specificity"
+        }
+      },
+      "durationInFrames": 1255,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "First, the lock and key model, proposed by Emil Fischer in eighteen ninety four. In this model the enzyme's active site has a fixed, rigid shape. Only a substrate with an exactly complementary shape can slot in, just as only one key fits a lock. When it does, it forms the enzyme substrate complex. The reaction happens, the product is released, and the active site hasn't changed shape at all. A molecule with the wrong shape simply can't fit. So the lock and key model explains specificity. Each enzyme acts on one substrate, because only that substrate matches the rigid active site."
+      }
+    },
+    {
+      "id": "concept-induced-fit",
+      "type": "concept",
+      "heading": "The induced fit model",
+      "body": "The active site is flexible and moulds around the correct substrate as it binds, gripping it tightly.",
+      "bullets": [
+        {
+          "text": "Proposed by Daniel Koshland in 1958."
+        },
+        {
+          "text": "The active site is not a perfect match at first; it changes shape as the substrate binds."
+        },
+        {
+          "text": "The tight grip strains the substrate's bonds, helping lower the activation energy."
+        },
+        {
+          "text": "Still specific: a wrong-shaped molecule cannot trigger the change."
+        }
+      ],
+      "callout": "A flexible site that moulds around the correct substrate.",
+      "caption": "Induced fit: the active site changes shape to grip the correct substrate.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bEnzyme",
+        "delay": 30,
+        "props": {
+          "mode": "inducedFit",
+          "at": {
+            "enzyme": 143,
+            "substrate": 247,
+            "mould": 385,
+            "grip": 628,
+            "complex": 628,
+            "strain": 674,
+            "wrong": 916,
+            "rule": 870
+          },
+          "rule": "Flexible site moulds around the correct substrate"
+        }
+      },
+      "durationInFrames": 1163,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "But enzymes are proteins, and proteins are flexible. So in nineteen fifty eight, Daniel Koshland proposed the induced fit model. Here the active site isn't a perfect match to begin with. As the correct substrate binds, the active site changes shape, moulding itself around the substrate, a bit like a glove around a hand. It ends up gripping the substrate tightly. That tight grip strains the bonds in the substrate, which helps lower the activation energy even further. And it's still specific. A wrong shaped molecule can't trigger that change, so it won't bind."
+      }
+    },
+    {
+      "id": "concept-compare",
+      "type": "concept",
+      "heading": "Comparing the two models",
+      "body": "Both explain specificity and an enzyme–substrate complex; they differ only in whether the active site is rigid or flexible.",
+      "bullets": [
+        {
+          "text": "Same: only the right-shaped substrate binds; a complex forms."
+        },
+        {
+          "text": "Different: rigid, exact site (lock and key) vs flexible site that moulds (induced fit)."
+        },
+        {
+          "text": "Induced fit is preferred because enzymes are flexible proteins."
+        }
+      ],
+      "callout": "Knowing both shows how a model is refined by evidence.",
+      "caption": "Both models explain specificity; induced fit adds a flexible active site.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bEnzyme",
+        "delay": 30,
+        "props": {
+          "mode": "compare",
+          "same": "both explain specificity; both form an enzyme–substrate complex",
+          "different": "rigid, exact site vs flexible site that moulds",
+          "at": {
+            "l_enzyme": 39,
+            "i_enzyme": 49,
+            "l_substrate": 69,
+            "i_substrate": 79,
+            "l_fit": 108,
+            "l_complex": 128,
+            "i_mould": 108,
+            "i_grip": 148,
+            "i_complex": 168,
+            "same": 143,
+            "different": 362,
+            "rule": 732
+          },
+          "rule": "Induced fit is preferred: enzymes are flexible"
+        }
+      },
+      "durationInFrames": 1359,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "So how do the two compare? Here they are side by side. What's the same? Both models explain specificity, because only the right shaped substrate binds, and in both an enzyme substrate complex forms. What's different is just the active site. In lock and key it's rigid, and the substrate must already match exactly. In induced fit it's flexible, and it moulds around the correct substrate. Induced fit is now the preferred model, because we know enzymes are flexible proteins. But lock and key is still useful, because it's a simple, clear picture of why enzymes are specific. Knowing both lets you explain how a model gets refined by new evidence."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Active site: the specifically shaped region where the substrate binds and reacts."
+        },
+        {
+          "text": "Lock-and-key model: a rigid active site with an exactly complementary shape."
+        },
+        {
+          "text": "Induced fit model: the active site changes shape slightly to grip the substrate as it binds."
+        },
+        {
+          "text": "Enzyme–substrate complex: the temporary structure of enzyme and substrate bound together."
+        },
+        {
+          "text": "Complementary: matching shapes that fit together, like a hand and a glove."
+        }
+      ],
+      "callout": "Label all four on every diagram: enzyme, active site, substrate, complex.",
+      "caption": "Active site, lock-and-key, induced fit, enzyme–substrate complex, complementary.",
+      "durationInFrames": 1140,
+      "voiceover": {
+        "text": "Here are the terms. The active site is the specifically shaped region of an enzyme where the substrate binds and the reaction happens. The lock and key model says the active site is rigid, with a shape exactly complementary to the substrate. The induced fit model says the active site changes shape slightly to grip the substrate as it binds. The enzyme substrate complex is the temporary structure formed when the enzyme and substrate are bound together. And complementary means having matching shapes that fit together, like a hand and a glove."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Two diagrams, one comparison",
+      "question": "Use diagrams of the lock-and-key and induced fit models to explain how an enzyme interacts with its specific substrate. (5 marks)",
+      "coachNote": "Draw and label both, then say what is the same and what differs.",
+      "steps": [
+        "Draw both models, labelling the enzyme, active site, substrate and enzyme–substrate complex.",
+        "Lock and key: the active site is rigid; only an exactly complementary substrate fits, and the site does not change.",
+        "Induced fit: the active site changes shape as the correct substrate binds, gripping it and straining its bonds.",
+        "Same: both explain specificity and form an enzyme–substrate complex; the products are released and the enzyme is unchanged.",
+        "Judgement: induced fit is more accurate, because enzymes are flexible proteins ✓"
+      ],
+      "caption": "Labelled diagrams, one line per model, then same, different and a judgement.",
+      "durationInFrames": 1405,
+      "voiceover": {
+        "text": "Here's a five mark question. Use diagrams of the lock and key and induced fit models to explain how an enzyme interacts with its specific substrate. Step one, draw both, and label the enzyme, the active site, the substrate and the enzyme substrate complex on each. Step two, lock and key. The active site is rigid, only an exactly complementary substrate fits, and the site doesn't change. Step three, induced fit. The active site changes shape as the correct substrate binds, gripping it and straining its bonds. Step four, what's the same. Both explain specificity, and both form a complex. And finish with a judgement. Induced fit is more accurate, because enzymes are flexible proteins."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two model traps",
+      "body": "Trap 1: 'In induced fit, the enzyme changes shape to fit any substrate.' The site only adjusts to grip the correct substrate. A wrong shape cannot trigger the change, so the enzyme stays specific.",
+      "secondary": "Trap 2: 'In lock and key, the active site changes shape.' No. In lock and key the site is rigid; the change of shape belongs to induced fit.",
+      "mistakeTag": "Induced fit is still specific",
+      "callout": "Induced fit refines lock and key; it does not make enzymes unspecific.",
+      "caption": "Induced fit only adjusts for the correct substrate; lock and key has a rigid site.",
+      "durationInFrames": 1128,
+      "voiceover": {
+        "text": "Two traps. Trap one, thinking that in induced fit the enzyme can change shape to fit any substrate. It can't. The active site only adjusts to grip the correct substrate more tightly. A molecule with the wrong shape can't trigger that change, and won't bind, so the enzyme is just as specific. Induced fit refines lock and key, it doesn't make enzymes less fussy. Trap two, mixing up which model has the shape change. In lock and key the active site is rigid. The change of shape belongs to induced fit."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Which model does each statement describe: lock and key only, induced fit only, or both? (a) A rigid active site, proposed in 1894. (b) The active site strains the substrate's bonds as it closes. (c) Explains why an enzyme is specific to one substrate.",
+      "pausePrompt": "Pause: is the active site rigid or flexible in each?",
+      "answerSteps": [
+        "(a) Lock and key only: Fischer, 1894, a rigid active site.",
+        "(b) Induced fit only: the site moulds around the substrate and strains its bonds.",
+        "(c) Both: in each model, only the right-shaped substrate binds ✓"
+      ],
+      "caption": "(a) lock and key, (b) induced fit, (c) both.",
+      "durationInFrames": 1186,
+      "voiceover": {
+        "text": "Quick check. For each statement, is it lock and key only, induced fit only, or both? A, a rigid active site, proposed in eighteen ninety four. B, the active site strains the substrate's bonds as it closes around it. C, it explains why an enzyme is specific to one substrate. Pause, and ask whether the active site is rigid or flexible in each. OK. A is lock and key only, Fischer's rigid site. B is induced fit only, because only a flexible site can close around the substrate. And C is both. Each model explains specificity."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Lock and key (Fischer, 1894): a rigid active site that only an exactly complementary substrate fits.",
+        "Induced fit (Koshland, 1958): a flexible active site moulds around the correct substrate.",
+        "Both explain specificity and form an enzyme–substrate complex.",
+        "The tight grip in induced fit strains the substrate's bonds, lowering activation energy.",
+        "Induced fit is preferred because enzymes are flexible proteins."
+      ],
+      "finalPrompt": "Model question? Label both diagrams, then say rigid or flexible.",
+      "caption": "Five takeaways: two models, what they share, what differs, and which is preferred.",
+      "durationInFrames": 1105,
+      "voiceover": {
+        "text": "Let's lock it in. First, lock and key, from Fischer in eighteen ninety four, has a rigid active site that only an exactly complementary substrate fits. Second, induced fit, from Koshland in nineteen fifty eight, has a flexible active site that moulds around the correct substrate. Third, both explain specificity and form an enzyme substrate complex. Fourth, the tight grip of induced fit strains the substrate's bonds. And fifth, induced fit is preferred, because enzymes are flexible proteins. Next lesson, we test what affects enzyme activity in the lab."
+      }
+    }
+  ]
+}

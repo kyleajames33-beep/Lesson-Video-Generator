@@ -1,0 +1,286 @@
+{
+  "title": "Photosynthesis",
+  "subtitle": "Using the summary equation to describe how plants store light energy in glucose",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 1",
+  "lesson": "Lesson 14",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells as the basis of life",
+  "syllabusDotPoints": [
+    "Use the summary equation to describe the process of photosynthesis"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-01"
+  ],
+  "inquiryQuestion": "Where does a plant's mass come from, and how is light energy stored?",
+  "lessonIntent": "Students can write the word and balanced summary equations for photosynthesis, identify its reactants, products and energy input, and describe how it complements respiration.",
+  "examSkill": "Write the balanced photosynthesis equation with light and chlorophyll as conditions, and use it to describe the process.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome back to HSC Biology. Today, photosynthesis. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 110,
+      "caption": "Photosynthesis"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A tree made of thin air",
+      "body": "Van Helmont grew a willow in a weighed pot of soil for five years. The tree gained about 74 kg; the soil lost only about 57 g.",
+      "callout": "If not from the soil, where does a plant's mass come from?",
+      "image": "bioY11M2L2WillowPot",
+      "caption": "A willow gained about 74 kg while its soil lost only about 57 g.",
+      "durationInFrames": 1128,
+      "voiceover": {
+        "text": "In the sixteen hundreds, Jan van Helmont planted a small willow in a pot of carefully weighed soil, and for five years he gave it nothing but water. By the end, the tree had gained about seventy four kilograms. The soil had lost only about fifty seven grams. So where did the tree come from? The startling answer is, mostly out of thin air, using the energy of sunlight. Today we'll write the one summary equation that explains it, and see how it links to the respiration equation from last lesson."
+      }
+    },
+    {
+      "id": "concept-what",
+      "type": "concept",
+      "heading": "Light in, glucose out",
+      "body": "In chloroplasts, light energy absorbed by chlorophyll is used to build glucose from carbon dioxide and water, releasing oxygen.",
+      "bullets": [
+        {
+          "text": "Chlorophyll, in chloroplasts, absorbs mostly red and blue light."
+        },
+        {
+          "text": "Reactants: carbon dioxide from the air, water from the roots."
+        },
+        {
+          "text": "Products: glucose, which stores the energy, and oxygen."
+        },
+        {
+          "text": "It builds a large molecule and stores energy: an anabolic process."
+        }
+      ],
+      "callout": "Light energy becomes chemical energy in the bonds of glucose.",
+      "caption": "Chlorophyll absorbs light; carbon dioxide and water become glucose and oxygen.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bEnergy",
+        "delay": 30,
+        "props": {
+          "mode": "photosynthesis",
+          "at": {
+            "organelle": 0,
+            "energy": 97,
+            "reactants": 282,
+            "products": 651,
+            "words": 789,
+            "equation": 99999,
+            "rule": 1124
+          },
+          "rule": "Anabolic: builds glucose and stores energy"
+        }
+      },
+      "durationInFrames": 1359,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Photosynthesis happens inside chloroplasts, which contain a green pigment called chlorophyll. Chlorophyll absorbs light, mostly the red and blue wavelengths, and that absorbed energy powers the reaction. The raw materials, the reactants, are carbon dioxide, taken in from the air, and water, taken up by the roots. Using the light energy, the plant rearranges the atoms in those molecules to make glucose, a high energy sugar, and oxygen, which is released. So light energy is converted into chemical energy, stored in the bonds of glucose. And because it builds a large molecule from small ones, and stores energy, photosynthesis is described as anabolic, a building up process, the opposite of respiration."
+      }
+    },
+    {
+      "id": "concept-equation",
+      "type": "concept",
+      "heading": "The summary equation",
+      "body": "Six carbon dioxide and six water, driven by light energy absorbed by chlorophyll, give one glucose and six oxygen.",
+      "bullets": [
+        {
+          "text": "Word: carbon dioxide + water → glucose + oxygen"
+        },
+        {
+          "text": "Balanced: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂"
+        },
+        {
+          "text": "Light energy and chlorophyll go near the arrow: conditions, not reactants."
+        }
+      ],
+      "callout": "Check it balances: 6 C, 12 H and 18 O on each side.",
+      "caption": "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂, with light energy and chlorophyll at the arrow.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bEnergy",
+        "delay": 30,
+        "props": {
+          "mode": "photosynthesis",
+          "at": {
+            "organelle": 0,
+            "energy": 10,
+            "reactants": 20,
+            "products": 30,
+            "words": 28,
+            "equation": 247,
+            "tally": 535,
+            "rule": 1020
+          },
+          "rule": "Light and chlorophyll are conditions, not reactants"
+        }
+      },
+      "durationInFrames": 1336,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Now let's write it precisely. In words, carbon dioxide plus water gives glucose plus oxygen, with light energy and chlorophyll written above the arrow. As a balanced symbol equation, six C O two plus six H two O gives C six H twelve O six plus six O two. Check the balance, six carbons, twelve hydrogens and eighteen oxygens on each side. The reactants are carbon dioxide and water, and the products are glucose and oxygen. Notice that light energy and chlorophyll sit near the arrow, not in with the reactants. They're conditions. Light is the energy input, and chlorophyll absorbs it, but neither is built into the products."
+      }
+    },
+    {
+      "id": "concept-cycle",
+      "type": "concept",
+      "heading": "Photosynthesis and respiration",
+      "body": "The products of photosynthesis are the reactants of respiration, and the other way round.",
+      "bullets": [
+        {
+          "text": "Photosynthesis stores energy by building glucose, using light."
+        },
+        {
+          "text": "Respiration releases that energy by breaking glucose down, as ATP."
+        },
+        {
+          "text": "Plants do both, respiring day and night; animals only respire."
+        }
+      ],
+      "callout": "Complementary: together they cycle carbon, oxygen and energy.",
+      "caption": "Photosynthesis and respiration run in opposite directions and cycle the same materials.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m1bCycle",
+        "delay": 30,
+        "props": {
+          "at": {
+            "equations": 108,
+            "photo": 155,
+            "forward": 235,
+            "resp": 282,
+            "back": 351,
+            "light": 605,
+            "atp": 732,
+            "rule": 778,
+            "footer": 835
+          },
+          "footer": "plants do both; animals only respire",
+          "rule": "Each one's products are the other's reactants"
+        }
+      },
+      "durationInFrames": 1302,
+      "revealDelays": {
+        "diagram": 30
+      },
+      "voiceover": {
+        "text": "Put this next to last lesson's respiration equation and something jumps out. They're almost mirror images. Photosynthesis takes carbon dioxide and water and makes glucose and oxygen. Respiration takes glucose and oxygen and gives back carbon dioxide and water. The products of one are the reactants of the other. Photosynthesis stores energy by building glucose, using light, and respiration releases that energy by breaking glucose down, capturing it as ATP. That's why they're called complementary. Plants do both. They photosynthesise in the light, and respire all the time, day and night. Animals only respire, so they depend completely on the glucose and oxygen that photosynthesis provides."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Photosynthesis: using light energy to convert carbon dioxide and water into glucose and oxygen."
+        },
+        {
+          "text": "Chloroplast: the organelle in plant and algal cells where photosynthesis happens."
+        },
+        {
+          "text": "Chlorophyll: the green pigment that absorbs the light energy."
+        },
+        {
+          "text": "Reactant: a substance used up by a reaction (here, CO₂ and water)."
+        },
+        {
+          "text": "Product: a substance made by a reaction (here, glucose and oxygen)."
+        }
+      ],
+      "callout": "Chlorophyll absorbs light; it is not used up.",
+      "caption": "Photosynthesis, chloroplast, chlorophyll, reactant, product.",
+      "durationInFrames": 1025,
+      "voiceover": {
+        "text": "Let's pin down the terms. Photosynthesis is the process that uses light energy to convert carbon dioxide and water into glucose and oxygen. A chloroplast is the organelle in plant and algal cells where it happens. Chlorophyll is the green pigment inside it that absorbs the light energy. A reactant is a substance present at the start and used up by the reaction, here carbon dioxide and water. And a product is a substance made by the reaction, here glucose and oxygen."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Describe it using the equation",
+      "question": "Use the summary equation to describe the process of photosynthesis. (5 marks)",
+      "coachNote": "Write both equations first, then walk through reactants, energy, products and what it achieves.",
+      "steps": [
+        "Equation: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (light energy, chlorophyll); in words, carbon dioxide + water → glucose + oxygen.",
+        "Reactants: carbon dioxide from the air and water from the roots.",
+        "Energy: light is absorbed by chlorophyll in the chloroplasts and drives the reaction.",
+        "Products: glucose, which stores the energy in its bonds, and oxygen, which is released.",
+        "Overall: light energy is converted to chemical energy; the process builds glucose (anabolic) ✓"
+      ],
+      "caption": "Equation first, then reactants, energy input, products and the energy change.",
+      "durationInFrames": 1255,
+      "voiceover": {
+        "text": "Here's a five mark question. Use the summary equation to describe the process of photosynthesis. Start by writing the equation, in symbols and in words, with light and chlorophyll at the arrow. Then walk through it. The reactants are carbon dioxide, from the air, and water, from the roots. The energy input is light, absorbed by chlorophyll in the chloroplasts. The products are glucose, which stores that energy in its chemical bonds, and oxygen, which is released. Finish with what it achieves overall. Light energy is converted into chemical energy, and a large molecule is built from small ones, so it's anabolic."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two photosynthesis traps",
+      "body": "Trap 1: 'Plants get their mass from the soil.' Most of a plant's new mass is carbon from carbon dioxide in the air, fixed into glucose. Soil mainly supplies water and small amounts of mineral ions.",
+      "secondary": "Trap 2: 'Light and chlorophyll are reactants.' They are conditions. Light is the energy input and chlorophyll absorbs it; neither becomes part of the glucose or oxygen.",
+      "mistakeTag": "Where photosynthesis marks go",
+      "callout": "A plant is built mostly from air, using light as the energy.",
+      "caption": "Plant mass comes mostly from carbon dioxide in the air; light and chlorophyll are conditions.",
+      "durationInFrames": 1152,
+      "voiceover": {
+        "text": "Two traps. Trap one, thinking plants get their mass from the soil. Van Helmont's soil barely lost any weight. Most of a plant's new mass is carbon that came from carbon dioxide in the air, fixed into glucose by photosynthesis. The soil mainly supplies water and small amounts of mineral ions. Trap two, writing light or chlorophyll as reactants. They're conditions. Light is the energy input, and chlorophyll absorbs it, but neither ends up in the glucose or the oxygen. That's why they go near the arrow, not on the left hand side."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A student writes: 'Plants photosynthesise, so they don't need to respire.' Assess this statement.",
+      "pausePrompt": "Pause: what does each process do for the plant?",
+      "answerSteps": [
+        "Photosynthesis stores energy by building glucose; it does not supply ATP for the cell's work.",
+        "Every living plant cell needs ATP, so plants respire continuously, day and night.",
+        "In light, both processes run; in the dark, only respiration continues.",
+        "The statement is incorrect: plants do both, and respiration releases the energy photosynthesis stored ✓"
+      ],
+      "caption": "Plants photosynthesise and respire; respiration releases the energy photosynthesis stores.",
+      "durationInFrames": 1152,
+      "voiceover": {
+        "text": "Quick check. A student writes, plants photosynthesise, so they don't need to respire. Assess that statement. Pause, and think about what each process actually does for the plant. OK. Photosynthesis stores energy by building glucose, but that energy isn't usable until it's released. Every living plant cell needs ATP for its work, so plants respire all the time, day and night. In the light, both processes are running, and in the dark only respiration continues. So the statement is wrong. Plants do both, and respiration is what releases the energy that photosynthesis stored."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Photosynthesis happens in chloroplasts; chlorophyll absorbs the light energy.",
+        "Word: carbon dioxide + water → glucose + oxygen.",
+        "Balanced: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂, with light and chlorophyll at the arrow.",
+        "Light energy becomes chemical energy in glucose: an anabolic, energy-storing process.",
+        "It complements respiration: each one's products are the other's reactants."
+      ],
+      "finalPrompt": "Photosynthesis question? Equation first, with light and chlorophyll at the arrow.",
+      "caption": "Five takeaways: where, both equations, the energy change, and the link to respiration.",
+      "durationInFrames": 1025,
+      "voiceover": {
+        "text": "Let's lock it in. First, photosynthesis happens in chloroplasts, where chlorophyll absorbs the light energy. Second, carbon dioxide plus water gives glucose plus oxygen. Third, balanced, six C O two plus six H two O gives C six H twelve O six plus six O two, with light and chlorophyll at the arrow. Fourth, light energy becomes chemical energy in glucose, so it's an anabolic, energy storing process. And fifth, it complements respiration. Next lesson, the enzymes that make both processes possible."
+      }
+    }
+  ]
+}
