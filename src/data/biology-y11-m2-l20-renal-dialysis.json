@@ -1,0 +1,442 @@
+{
+  "title": "Renal Dialysis",
+  "subtitle": "Comparing a machine with a working kidney",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 20",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Conduct a secondary-source investigation to compare the process of renal dialysis to the function of the kidney"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-02"
+  ],
+  "lessonIntent": "Students can explain how haemodialysis cleans the blood, compare it with the kidney using similarities and differences, and judge the reliability of the sources used.",
+  "examSkill": "Explain the dialysate first, then give similarities and differences in comparative sentences (whereas, in contrast), and finish with a judgement backed by reliable sources.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, renal dialysis. Let's get into it."
+  },
+  "scenes": [
+    {
+      "durationInFrames": 105,
+      "id": "title",
+      "type": "title",
+      "caption": "Renal Dialysis"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A machine that knows what to keep",
+      "body": "A dialysis machine removes urea from the blood, but the patient doesn't lose their glucose.",
+      "callout": "How can a machine that only uses diffusion keep the glucose and lose the urea?",
+      "image": "bioM8L20DialysisMachine",
+      "caption": "Dialysis does part of the kidney's job from outside the body.",
+      "voiceover": {
+        "text": "When the kidneys fail, urea builds up in the blood, and without help a person would die within days. Renal dialysis is a machine that does part of the kidney's job from outside the body. Thousands of Australians rely on it, typically about four hours, three times a week. Kidney disease rates are especially high in some remote Aboriginal and Torres Strait Islander communities, where getting dialysis can mean travelling or moving far from home. Here's the puzzle. The machine removes urea, but the patient doesn't lose their glucose. How can a machine that only uses diffusion know what to keep?"
+      },
+      "durationInFrames": 1302
+    },
+    {
+      "id": "concept-dialysis",
+      "type": "concept",
+      "heading": "How dialysis cleans the blood",
+      "body": "Blood flows past a selectively permeable membrane, with a carefully designed fluid on the other side.",
+      "bullets": [
+        {
+          "text": "Dialysate has no urea, so urea diffuses out.",
+          "at": 11.8
+        },
+        {
+          "text": "Glucose and salts matched, so no net loss.",
+          "at": 20.7
+        },
+        {
+          "text": "Cells and proteins are too big to cross.",
+          "at": 27.1
+        }
+      ],
+      "callout": "The dialysate's recipe decides what leaves the blood.",
+      "caption": "Urea diffuses into the dialysate; matched substances stay balanced.",
+      "voiceover": {
+        "text": "In haemodialysis, the patient's blood is pumped through tubes made of a selectively permeable membrane. On the other side flows a fluid called dialysate. The clever part is the dialysate's recipe. It contains no urea, so urea diffuses out of the blood, down its concentration gradient, and is carried away. But glucose and useful salts are matched to healthy blood levels, so there's no gradient for them, and there's no net loss. Blood cells and large proteins are too big to cross the membrane, so they stay in the blood, just like at the kidney. Excess water and salts are drawn off too, and the cleaned blood goes back to the patient."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8Membrane",
+        "props": {
+          "mode": "dialysis",
+          "topLabel": "Blood",
+          "bottomLabel": "Dialysate",
+          "crossAt": 334,
+          "counterAt": 109,
+          "species": [
+            {
+              "key": "urea",
+              "label": "urea",
+              "color": "teal",
+              "size": "small",
+              "behaviour": "cross",
+              "count": 10,
+              "at": 292
+            },
+            {
+              "key": "gl",
+              "label": "glucose",
+              "color": "violet",
+              "size": "small",
+              "behaviour": "balanced",
+              "count": 3,
+              "at": 495
+            },
+            {
+              "key": "cells",
+              "label": "cells, proteins",
+              "color": "red",
+              "size": "large",
+              "behaviour": "stay",
+              "count": 3,
+              "at": 752
+            }
+          ],
+          "notes": [
+            {
+              "text": "no urea in the dialysate: a steep gradient",
+              "at": 409,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1434
+    },
+    {
+      "id": "concept-compare",
+      "type": "concept",
+      "heading": "Dialysis vs the kidney",
+      "body": "Dialysis copies the kidney's outcome, clean blood, using a simpler mechanism.",
+      "bullets": [
+        {
+          "text": "Both remove urea, keep cells and glucose.",
+          "at": 2.9
+        },
+        {
+          "text": "Kidney: continuous. Dialysis: intermittent.",
+          "at": 17.9
+        },
+        {
+          "text": "Only the kidney makes hormones.",
+          "at": 34.3
+        }
+      ],
+      "callout": "The kidney is a regulating organ. The machine is a filter.",
+      "caption": "Similarities and differences between dialysis and the kidney.",
+      "voiceover": {
+        "text": "So how close is the match? Similarities first. Both remove urea and excess water and salts. Both use a selectively permeable barrier, so both keep blood cells and proteins in the blood. And both keep glucose, the kidney by reabsorbing it, the machine by matching the dialysate. Now the differences. The kidney works continuously, correcting the blood minute by minute, whereas dialysis runs a few times a week, so wastes build up between sessions. The kidney uses active transport to reabsorb exactly what's needed, whereas dialysis relies on diffusion alone. And a healthy kidney also makes hormones, including ones that regulate blood pressure and stimulate red blood cell production. Dialysis does none of that."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Compare",
+        "props": {
+          "columns": [
+            {
+              "name": "Kidney",
+              "icon": "kidney",
+              "at": 0
+            },
+            {
+              "name": "Dialysis",
+              "icon": "dialyser",
+              "at": 0
+            }
+          ],
+          "rowLabels": [
+            {
+              "text": "removes urea, excess water and salts",
+              "at": 24
+            },
+            {
+              "text": "keeps cells and proteins",
+              "at": 174
+            },
+            {
+              "text": "keeps glucose",
+              "at": 281
+            },
+            {
+              "text": "timing",
+              "at": 474
+            },
+            {
+              "text": "mechanism",
+              "at": 752
+            },
+            {
+              "text": "makes hormones",
+              "at": 967
+            }
+          ],
+          "rows": [
+            [
+              {
+                "ok": true,
+                "text": "yes"
+              },
+              {
+                "ok": true,
+                "text": "yes"
+              }
+            ],
+            [
+              {
+                "ok": true,
+                "text": "yes"
+              },
+              {
+                "ok": true,
+                "text": "yes"
+              }
+            ],
+            [
+              {
+                "text": "by reabsorption"
+              },
+              {
+                "text": "by matched dialysate"
+              }
+            ],
+            [
+              {
+                "text": "continuous"
+              },
+              {
+                "text": "about 3 × a week"
+              }
+            ],
+            [
+              {
+                "text": "active transport + diffusion"
+              },
+              {
+                "text": "diffusion only"
+              }
+            ],
+            [
+              {
+                "ok": true,
+                "text": "yes"
+              },
+              {
+                "ok": false,
+                "text": "no",
+                "amber": true
+              }
+            ]
+          ]
+        }
+      },
+      "durationInFrames": 1458
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Renal dialysis: a treatment that removes wastes and excess water from the blood when the kidneys cannot, using a machine."
+        },
+        {
+          "text": "Dialysate: the fluid on the other side of the dialysis membrane, matched to healthy blood so mainly wastes leave."
+        },
+        {
+          "text": "Selectively permeable membrane: a barrier that lets small molecules such as urea and salts pass, but not large ones such as cells and proteins."
+        },
+        {
+          "text": "Secondary source: information gathered by someone else (textbooks, websites, data), used and evaluated rather than measured first-hand."
+        },
+        {
+          "text": "Reliability: whether a source is trustworthy and consistent, for example peer-reviewed, recent and from a recognised body."
+        }
+      ],
+      "callout": "In a secondary-source investigation, judging the sources is part of the science.",
+      "caption": "Renal dialysis, dialysate, selectively permeable membrane, secondary source, reliability.",
+      "voiceover": {
+        "text": "Five terms. Renal dialysis is a treatment that removes wastes and excess water from the blood when the kidneys can't, using a machine. The dialysate is the fluid on the other side of the membrane, matched to healthy blood so mainly wastes leave. A selectively permeable membrane lets small molecules like urea and salts through, but not large ones like cells and proteins. A secondary source is information gathered by someone else, textbooks, websites or data, that you use and evaluate. And reliability is whether a source is trustworthy and consistent, peer-reviewed, recent, from a recognised body."
+      },
+      "durationInFrames": 1254
+    },
+    {
+      "id": "concept-sources",
+      "type": "concept",
+      "heading": "Judging your sources",
+      "body": "This is a secondary-source investigation, so the conclusion is only as good as the sources behind it.",
+      "bullets": [
+        {
+          "text": "Who wrote it, and why?",
+          "at": 6.8
+        },
+        {
+          "text": "Is it current?",
+          "at": 8.6
+        },
+        {
+          "text": "Do independent sources agree?",
+          "at": 11.4
+        }
+      ],
+      "callout": "Agreement between independent sources is what makes a conclusion strong.",
+      "caption": "Three sources judged on author, purpose, currency and agreement.",
+      "voiceover": {
+        "text": "Because you're using other people's information, you have to judge it. Ask three questions of every source. Who wrote it, and why? Is it current, since medical technology changes? And do independent sources agree? Say you've got three. A peer-reviewed review article is the most reliable, because experts checked it before publication, though check how old it is. A national kidney foundation webpage is generally reliable too, with no commercial interest, but it's written for patients, so it may simplify. And a leaflet from a dialysis equipment maker is the least reliable. It may have accurate technical detail, but the company has an interest in the product looking good. If all three agree that dialysis removes urea well, that claim is well supported."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Compare",
+        "props": {
+          "columns": [
+            {
+              "name": "Review article",
+              "sub": "peer-reviewed",
+              "icon": "source",
+              "at": 377,
+              "amber": true,
+              "lines": [
+                {
+                  "text": "checked by experts",
+                  "ok": true,
+                  "at": 484
+                },
+                {
+                  "text": "check how old it is",
+                  "ok": false,
+                  "at": 549
+                }
+              ]
+            },
+            {
+              "name": "Kidney foundation",
+              "sub": "webpage",
+              "icon": "source",
+              "at": 602,
+              "lines": [
+                {
+                  "text": "no commercial interest",
+                  "ok": true,
+                  "at": 709
+                },
+                {
+                  "text": "may simplify",
+                  "ok": false,
+                  "at": 806
+                }
+              ]
+            },
+            {
+              "name": "Manufacturer",
+              "sub": "leaflet",
+              "icon": "source",
+              "at": 859,
+              "lines": [
+                {
+                  "text": "may have technical detail",
+                  "ok": true,
+                  "at": 1009
+                },
+                {
+                  "text": "wants the product to look good",
+                  "ok": false,
+                  "at": 1084
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "text": "independent sources agree → well supported",
+              "at": 1159,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1566
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Compare dialysis and the kidney",
+      "question": "Compare the process of renal dialysis with the function of the kidney, identifying at least two similarities and two differences.",
+      "coachNote": "Explain the dialysate first, then write every point as a comparison: \"both…\", \"whereas…\".",
+      "steps": [
+        "Dialysis: blood passes a selectively permeable membrane; the dialysate has no urea (urea diffuses out) but matches healthy glucose and salt levels (no net loss).",
+        "Similarity 1: both remove urea and excess water and salts, and keep cells, proteins and glucose (kidney by reabsorption, machine by matched dialysate).",
+        "Similarity 2: both pass blood across a selectively permeable barrier.",
+        "Differences: the kidney is continuous, whereas dialysis is about 4 hours, 3 times a week; the kidney uses active transport, whereas dialysis uses diffusion only.",
+        "The kidney also makes hormones, whereas dialysis does not: it manages kidney failure but doesn't cure it ✓"
+      ],
+      "caption": "Two similarities, three differences, one judgement.",
+      "voiceover": {
+        "text": "Let's build a comparison answer. First explain the mechanism. Blood passes a selectively permeable membrane, and the dialysate has no urea, so urea diffuses out, but it matches healthy glucose and salt levels, so those aren't lost. Then the similarities. Both remove urea and excess water and salts, and both keep cells, proteins and glucose. Both pass blood across a selectively permeable barrier. Then the differences, each one as a comparison. The kidney works continuously, whereas dialysis runs about four hours, three times a week. The kidney uses active transport, whereas dialysis relies on diffusion. And the kidney makes hormones, whereas dialysis doesn't. So dialysis manages kidney failure, but doesn't cure it."
+      },
+      "durationInFrames": 1434
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Dialysis is not a new kidney",
+      "body": "Wrong: a dialysis machine is exactly the same as a kidney and cures kidney failure.",
+      "secondary": "Right: dialysis copies only the kidney's cleaning job, and only a few times a week. It does not reproduce the kidney's hormone production or its continuous, finely tuned regulation. It manages kidney failure; a transplant replaces the kidney.",
+      "mistakeTag": "Manages, doesn't cure",
+      "callout": "Dialysis is a treatment, not a cure.",
+      "caption": "Dialysis manages kidney failure; it does not replace every kidney function.",
+      "voiceover": {
+        "text": "Here's the trap. It's easy to think a dialysis machine is just an external kidney that cures kidney failure. It isn't. Dialysis copies only the cleaning job, and only a few times a week. It doesn't make the kidney's hormones, and it can't do the kidney's continuous, fine-tuned regulation. So dialysis manages kidney failure, it doesn't cure it. That's why a transplant, a real kidney with all its functions, is a far better outcome, and why organ donation matters so much."
+      },
+      "durationInFrames": 1062
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A new dialysate is made up with no glucose in it. Predict what would happen to the patient's blood glucose during dialysis, and explain why.",
+      "pausePrompt": "Pause: which way would the glucose gradient point now?",
+      "answerSteps": [
+        "Glucose is small enough to cross the membrane.",
+        "With no glucose in the dialysate, there is now a gradient from blood to dialysate.",
+        "Glucose would diffuse out of the blood, so blood glucose would fall. That's why dialysate is matched to healthy blood ✓"
+      ],
+      "caption": "No glucose in the dialysate: glucose would diffuse out of the blood.",
+      "voiceover": {
+        "text": "Quick check. Suppose a dialysate was made up with no glucose in it at all. What would happen to the patient's blood glucose during dialysis, and why? Pause, and think about which way the glucose gradient would point. Okay. Glucose is small enough to cross the membrane. With none in the dialysate, there's now a gradient from the blood to the dialysate, so glucose would diffuse out, and blood glucose would fall. That's exactly why the dialysate is matched to healthy blood, it's the recipe that makes the machine selective."
+      },
+      "durationInFrames": 1170
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Dialysis passes blood across a selectively permeable membrane into dialysate.",
+        "No urea in the dialysate, so urea diffuses out; matched glucose and salts, so no net loss.",
+        "Similar to the kidney: removes urea and excess water and salts, keeps cells, proteins and glucose.",
+        "Different: intermittent, diffusion only, and no hormones.",
+        "Judge sources by author, purpose, currency and agreement."
+      ],
+      "finalPrompt": "Comparing? Write \"both…\" for similarities and \"whereas…\" for differences.",
+      "caption": "How dialysis works, how it compares, and how to judge the sources.",
+      "voiceover": {
+        "text": "Let's lock it in. Dialysis passes blood across a selectively permeable membrane into a dialysate. There's no urea in the dialysate, so urea diffuses out, and glucose and salts are matched, so there's no net loss. Like the kidney, it removes urea and excess water and salts, and keeps cells, proteins and glucose. Unlike the kidney, it's intermittent, uses diffusion only, and makes no hormones. And in a secondary-source investigation, judge every source by who wrote it and why, how current it is, and whether independent sources agree."
+      },
+      "durationInFrames": 1146
+    }
+  ]
+}

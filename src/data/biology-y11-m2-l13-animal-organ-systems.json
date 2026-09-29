@@ -1,0 +1,378 @@
+{
+  "title": "Animal Organ Systems",
+  "subtitle": "The systems that manage nutrients, water, gases and wastes",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 13",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Describe the organ systems required for nutrient, water, gas and waste management in animals"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-02"
+  ],
+  "lessonIntent": "Students can describe the organ system that manages each of the four needs (nutrients, water, gases, wastes) and explain how the circulatory system links them to every cell.",
+  "examSkill": "For each need, name the system, at least one organ and its job, then explain the circulatory system as the two-way link that makes the systems interdependent.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, animal organ systems. Let's get into it."
+  },
+  "scenes": [
+    {
+      "durationInFrames": 105,
+      "id": "title",
+      "type": "title",
+      "caption": "Animal Organ Systems"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "One cell, a long way from lunch",
+      "body": "A cell deep inside your body is a long way from the food you ate and the air you breathed. No single organ can serve it.",
+      "callout": "So how does it get glucose, water and oxygen, and lose its waste, fast enough to stay alive?",
+      "image": "bioY11M1L6CellInputsOutputs",
+      "caption": "Every cell needs supplies in and wastes out, even deep inside a large body.",
+      "voiceover": {
+        "text": "Think about one cell deep inside your thigh muscle. It's a long way from the sandwich you ate at lunch, and a long way from the air you just breathed in. Yet every second it needs glucose, water and oxygen coming in, and carbon dioxide and other wastes going out. No single organ can do all of that for it. A single-celled amoeba manages by diffusion straight across its membrane. A blue whale can't, and neither can you. So today, the team of organ systems that keeps every one of your cells supplied."
+      },
+      "durationInFrames": 1206
+    },
+    {
+      "id": "concept-why-systems",
+      "type": "concept",
+      "heading": "Diffusion alone is too slow for a big, busy body",
+      "body": "A large, active animal cannot supply its cells by diffusion across its body surface alone.",
+      "bullets": [
+        {
+          "text": "Size: bigger body, lower SA:V ratio.",
+          "at": 4.6
+        },
+        {
+          "text": "Distance: diffusion is fast only over short distances.",
+          "at": 16.1
+        },
+        {
+          "text": "Demand: active heterotrophs use supplies fast.",
+          "at": 26.4
+        }
+      ],
+      "callout": "Organ systems bring supplies close to every cell, so diffusion only does the last short step.",
+      "caption": "Size, distance and demand: why animals need organ systems.",
+      "voiceover": {
+        "text": "So why can't a big animal just rely on diffusion? Three reasons. First, size. As a body gets bigger, its volume grows faster than its surface area, so the surface-area-to-volume ratio falls. There's less surface for a lot more tissue. Second, distance. Diffusion is only fast over very short distances. Supplies can soak into the outer layer of cells, but the cells deep inside are simply too far away. Third, demand. Animals are heterotrophs, they have to take in ready-made food, and they're active, so their cells use nutrients and oxygen quickly and make wastes quickly. The solution is organ systems. Blood vessels carry supplies right up to every cell, and diffusion only has to do the last, short step."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Reach",
+        "props": {
+          "small": {
+            "label": "one cell: diffusion reaches every part",
+            "at": 0
+          },
+          "large": {
+            "label": "a large body: far more tissue to supply",
+            "at": 77
+          },
+          "diffuseAt": 420,
+          "tooFar": {
+            "label": "too far for diffusion",
+            "at": 656
+          },
+          "vessels": {
+            "label": "blood vessels bring supplies close",
+            "at": 1095
+          }
+        }
+      },
+      "durationInFrames": 1530
+    },
+    {
+      "id": "concept-four-systems",
+      "type": "concept",
+      "heading": "Four needs, four jobs",
+      "body": "Each need is managed mainly by one organ system, built from a team of organs suited to that job.",
+      "bullets": [
+        {
+          "text": "Nutrients: digestive. Gases: respiratory.",
+          "at": 4.3
+        },
+        {
+          "text": "Water: digestive absorbs it, kidneys regulate it.",
+          "at": 12.1
+        },
+        {
+          "text": "Wastes: excretory (urea, salts); lungs remove CO₂.",
+          "at": 32.9
+        }
+      ],
+      "callout": "Water has no system of its own: absorption and regulation are split between two.",
+      "caption": "Nutrients, water, gases and wastes, each with its organ system.",
+      "voiceover": {
+        "text": "Every cell has four needs to manage, nutrients, water, gases and wastes. Nutrients are the job of the digestive system, the mouth, stomach, intestines, liver and pancreas, which break food down and absorb it. Water is the tricky one, because it has no system of its own. The digestive system absorbs water from food and drink, and the excretory system, mainly the kidneys, regulates how much is kept. Gases belong to the respiratory system, the lungs, trachea and bronchi, or gills in a fish. It takes in oxygen and removes carbon dioxide. And wastes go to the excretory system, the kidneys, ureters and bladder, which remove urea and excess salts. Carbon dioxide is a waste too, but that one leaves through the lungs."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Compare",
+        "props": {
+          "columns": [
+            {
+              "name": "Nutrients",
+              "sub": "digestive system",
+              "icon": "intestine",
+              "at": 67,
+              "lines": [
+                {
+                  "text": "mouth, stomach, intestines, liver, pancreas",
+                  "at": 152
+                },
+                {
+                  "text": "break food down and absorb it",
+                  "at": 227
+                }
+              ]
+            },
+            {
+              "name": "Water",
+              "sub": "digestive + excretory",
+              "icon": "kidney",
+              "at": 302,
+              "amber": true,
+              "lines": [
+                {
+                  "text": "digestive system absorbs it",
+                  "at": 442
+                },
+                {
+                  "text": "kidneys regulate how much is kept",
+                  "at": 613
+                }
+              ]
+            },
+            {
+              "name": "Gases",
+              "sub": "respiratory system",
+              "icon": "lungs",
+              "at": 667,
+              "lines": [
+                {
+                  "text": "lungs, trachea, bronchi (gills in fish)",
+                  "at": 731
+                },
+                {
+                  "text": "O₂ in, CO₂ out",
+                  "at": 838
+                }
+              ]
+            },
+            {
+              "name": "Wastes",
+              "sub": "excretory system",
+              "icon": "bladder",
+              "at": 924,
+              "lines": [
+                {
+                  "text": "kidneys, ureters, bladder",
+                  "at": 999
+                },
+                {
+                  "text": "remove urea and excess salts",
+                  "at": 1052
+                },
+                {
+                  "text": "CO₂ leaves by the lungs",
+                  "at": 1213,
+                  "amber": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1566
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Organ system: a group of organs that work together to perform a major body function."
+        },
+        {
+          "text": "Digestive system: breaks food down and absorbs nutrients and water."
+        },
+        {
+          "text": "Respiratory system: exchanges oxygen and carbon dioxide between air and blood."
+        },
+        {
+          "text": "Excretory system: removes metabolic wastes and regulates water and salts."
+        },
+        {
+          "text": "Circulatory system: the heart, blood vessels and blood, which transport materials between all the other systems and the cells."
+        }
+      ],
+      "callout": "Four needs, three specialist systems, and one transport system linking them.",
+      "caption": "Organ system, digestive, respiratory, excretory and circulatory systems.",
+      "voiceover": {
+        "text": "Let's pin down the terms. An organ system is a group of organs that work together to perform a major body function. The digestive system breaks food down and absorbs nutrients and water. The respiratory system exchanges oxygen and carbon dioxide between the air and the blood. The excretory system removes metabolic wastes and regulates water and salts. And the circulatory system, the heart, blood vessels and blood, transports materials between all the other systems and the cells."
+      },
+      "durationInFrames": 1026
+    },
+    {
+      "id": "concept-circulatory",
+      "type": "concept",
+      "heading": "The circulatory system ties it together",
+      "body": "No system reaches the body's cells directly. They all hand their materials to the blood.",
+      "bullets": [
+        {
+          "text": "Picks up nutrients, water and oxygen.",
+          "at": 10
+        },
+        {
+          "text": "Delivers them to every cell.",
+          "at": 17.9
+        },
+        {
+          "text": "Carries CO₂ to the lungs and urea to the kidneys.",
+          "at": 25.7
+        }
+      ],
+      "callout": "Two-way traffic: supply to the cells, wastes away from them.",
+      "caption": "The circulatory system links every system to every cell.",
+      "voiceover": {
+        "text": "Here's the key idea. None of these systems reaches your cells directly. They all hand their materials to the blood, and the circulatory system does the delivering. Blood picks up nutrients and water from the digestive system. At the lungs, it picks up oxygen and drops off carbon dioxide. It carries those supplies to every body cell, and on the way back it collects the cells' wastes, carbon dioxide and urea. The urea is dropped off at the kidneys, for the excretory system to remove. So it's two-way traffic, supplies to the cells, and wastes away from them. That's why the circulatory system appears in every one of the four stories."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Hub",
+        "props": {
+          "centre": {
+            "name": "Circulatory system",
+            "sub": "heart, vessels, blood",
+            "icon": "heart",
+            "at": 184
+          },
+          "spokes": [
+            {
+              "name": "Digestive",
+              "icon": "intestine",
+              "side": "tl",
+              "flow": "in",
+              "color": "glucose",
+              "label": "nutrients + water in",
+              "at": 238
+            },
+            {
+              "name": "Respiratory",
+              "icon": "lungs",
+              "side": "tr",
+              "flow": "both",
+              "color": "oxygen",
+              "color2": "co2",
+              "label": "O₂ in, CO₂ out",
+              "at": 345
+            },
+            {
+              "name": "Body cells",
+              "icon": "cell",
+              "side": "br",
+              "flow": "both",
+              "color": "co2",
+              "color2": "oxygen",
+              "label": "supplies out, wastes in",
+              "amber": true,
+              "at": 474
+            },
+            {
+              "name": "Excretory",
+              "icon": "kidney",
+              "side": "bl",
+              "flow": "out",
+              "color": "urea",
+              "label": "urea out",
+              "at": 709
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1422
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Trace one glucose molecule",
+      "question": "Trace a glucose molecule from a meal to a leg muscle cell, then trace the carbon dioxide that cell produces out of the body. Name every organ system involved.",
+      "coachNote": "Follow the molecule, and name the system at every hand-over.",
+      "steps": [
+        "Digestive system: glucose is released by chemical digestion and absorbed across the small intestine wall into the blood.",
+        "Circulatory system: blood carries the glucose to the capillaries around the leg muscle, where it diffuses into the muscle cell.",
+        "In the cell, glucose is used in cellular respiration, which produces carbon dioxide.",
+        "Circulatory system: the carbon dioxide diffuses into the blood and is carried back to the heart and on to the lungs.",
+        "Respiratory system: carbon dioxide diffuses into the alveoli and is breathed out. Circulatory appears in both journeys ✓"
+      ],
+      "caption": "Digestive → circulatory → muscle cell → circulatory → respiratory.",
+      "voiceover": {
+        "text": "Let's trace one glucose molecule, and name every system as it gets handed on. It starts in the digestive system. Chemical digestion releases the glucose, and it's absorbed across the wall of the small intestine into the blood. Now the circulatory system takes over. The blood carries it to the capillaries around your leg muscle, where it diffuses into a muscle cell. Inside the cell it's used in cellular respiration, and that makes carbon dioxide. The carbon dioxide diffuses out into the blood, so the circulatory system carries it back to the heart and on to the lungs. Finally the respiratory system takes over, the carbon dioxide diffuses into the air sacs and you breathe it out. Notice that the circulatory system shows up in both journeys. It's the link every time."
+      },
+      "durationInFrames": 1674
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Systems do not work alone",
+      "body": "Wrong: each organ system manages its own need, independently of the others.",
+      "secondary": "Right: the systems are interdependent. The circulatory system links them all, so when one fails, every cell feels it. If the kidneys fail, urea and excess water and salts build up in the blood that reaches every cell, which is why dialysis has to take over the kidney's job.",
+      "mistakeTag": "Interdependent, not independent",
+      "callout": "One system failing affects the whole body, because the blood connects them all.",
+      "caption": "Organ systems are interdependent, linked by the blood.",
+      "voiceover": {
+        "text": "Here's the trap. It's tempting to think of each organ system as working on its own, digestion doing digestion, lungs doing gases, and so on. But they're interdependent. Because the circulatory system links them all, a problem in one ripples through the rest. When the kidneys fail, urea, excess water and salts build up in the blood, and that's the same blood that's delivered to every cell. So the person feels unwell all over the body, not just near their kidneys. That's why renal dialysis has to take over the kidney's job, and we'll look at that later in this focus area."
+      },
+      "durationInFrames": 1314
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A student writes: \"The respiratory system removes all of the body's wastes.\" Correct the statement, naming the systems involved.",
+      "pausePrompt": "Pause: which waste does the respiratory system remove, and which does it not?",
+      "answerSteps": [
+        "The respiratory system removes only one waste: carbon dioxide, breathed out from the lungs.",
+        "Nitrogenous waste (urea), excess salts and excess water are removed by the excretory system: kidneys, ureters and bladder.",
+        "The circulatory system carries each waste from the cells to the right organ ✓"
+      ],
+      "caption": "Lungs remove CO₂; kidneys remove urea, excess salts and water.",
+      "voiceover": {
+        "text": "Quick check. A student writes, the respiratory system removes all of the body's wastes. Correct that statement, and name the systems involved. Pause and decide which waste the lungs actually remove. Right. The respiratory system removes just one waste, carbon dioxide, which you breathe out. Urea, excess salts and excess water are removed by the excretory system, the kidneys, ureters and bladder. And the circulatory system carries each waste from the cells to the right organ. Waste management is shared."
+      },
+      "durationInFrames": 1050
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "A large, active animal cannot supply its cells by diffusion alone: low SA:V, long distances, high demand.",
+        "Nutrients: digestive. Gases: respiratory. Wastes: excretory, with CO₂ removed by the lungs.",
+        "Water is shared: the digestive system absorbs it, the kidneys regulate it.",
+        "The circulatory system links every system to every cell, in both directions.",
+        "The systems are interdependent: one failing affects the whole body."
+      ],
+      "finalPrompt": "For any need, ask: which system brings it in or takes it out, and how does the blood connect it to the cell?",
+      "caption": "Four needs, their systems, and the circulatory link.",
+      "voiceover": {
+        "text": "Let's lock it in. A large, active animal can't supply its cells by diffusion alone, because of a low surface-area-to-volume ratio, long distances and high demand. Nutrients are managed by the digestive system, gases by the respiratory system, and wastes by the excretory system, with carbon dioxide leaving through the lungs. Water is shared, absorbed by the digestive system and regulated by the kidneys. The circulatory system links every system to every cell, in both directions. And that makes the systems interdependent. Next lesson, we zoom in on the first of these, human digestion."
+      },
+      "durationInFrames": 1218
+    }
+  ]
+}

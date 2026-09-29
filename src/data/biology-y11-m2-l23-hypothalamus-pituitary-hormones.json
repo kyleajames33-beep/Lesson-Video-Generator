@@ -1,0 +1,381 @@
+{
+  "title": "Hypothalamus, Pituitary & Hormones",
+  "subtitle": "The control room of the endocrine system",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 23",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Discuss the role of the hypothalamus and pituitary gland in regulating the secretion of hormones"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-02"
+  ],
+  "lessonIntent": "Students can discuss how the hypothalamus controls the pituitary, how the pituitary's tropic hormones control target glands, and how negative feedback regulates the chain.",
+  "examSkill": "Establish the hypothalamus as the nervous-endocrine link, the pituitary as the relay (tropic hormones), trace one chain end to end, then explain the negative feedback that regulates it.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, the hypothalamus, the pituitary and hormones. Let's get into it."
+  },
+  "scenes": [
+    {
+      "durationInFrames": 105,
+      "id": "title",
+      "type": "title",
+      "caption": "Hypothalamus, Pituitary & Hormones"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Who controls the master gland?",
+      "body": "The pituitary is called the \"master gland\", yet it takes its orders from something else.",
+      "callout": "How does the brain talk to the hormone system at all?",
+      "image": "bioM8L21IntegratedCare",
+      "caption": "The hypothalamus and pituitary link the brain to the hormones.",
+      "voiceover": {
+        "text": "Deep in the base of your brain sits a structure about the size of an almond, keeping watch over your whole body. And it commands a pea-sized gland just beneath it. Together, the hypothalamus and the pituitary form the control room of your endocrine system, the link between your brain and your hormones. The pituitary is often called the master gland, because it controls so many other glands. But it takes its orders from somewhere else. So who controls the master gland, and how does the brain talk to the hormone system at all?"
+      },
+      "durationInFrames": 1218
+    },
+    {
+      "id": "concept-hypothalamus",
+      "type": "concept",
+      "heading": "The hypothalamus: brain meets hormones",
+      "body": "The hypothalamus turns the brain's signals into hormonal commands, bridging the nervous and endocrine systems.",
+      "bullets": [
+        {
+          "text": "Monitors temperature, water and blood.",
+          "at": 4.3
+        },
+        {
+          "text": "Receives nerve signals, makes hormones.",
+          "at": 13.6
+        },
+        {
+          "text": "Controls the pituitary with releasing hormones.",
+          "at": 27.1
+        }
+      ],
+      "callout": "Nervous signal in, hormonal command out.",
+      "caption": "The hypothalamus monitors the body and controls the pituitary.",
+      "voiceover": {
+        "text": "Start with the hypothalamus, a region at the base of the brain. It monitors the body's internal conditions, like temperature, water balance and the composition of the blood. And it's the link between two systems. It both receives nerve signals, and produces hormones. So a nervous signal, like detecting stress, can be turned here into a hormonal response that affects the whole body. The hypothalamus controls the pituitary gland just below it. It secretes releasing hormones, and inhibiting hormones, which travel the short distance to the pituitary and switch its hormone secretion on or off."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Hub",
+        "props": {
+          "centre": {
+            "name": "Hypothalamus",
+            "sub": "nervous → endocrine",
+            "icon": "brain",
+            "at": 0
+          },
+          "spokes": [
+            {
+              "name": "Temperature",
+              "icon": "thermometer",
+              "side": "tl",
+              "flow": "in",
+              "color": "oxygen",
+              "label": "monitored",
+              "at": 142
+            },
+            {
+              "name": "Water balance",
+              "icon": "kidney",
+              "side": "l",
+              "flow": "in",
+              "color": "water",
+              "label": "monitored",
+              "at": 163
+            },
+            {
+              "name": "Blood",
+              "icon": "blood",
+              "side": "bl",
+              "flow": "in",
+              "color": "blood",
+              "label": "monitored",
+              "at": 195
+            },
+            {
+              "name": "Nerve signals",
+              "icon": "person",
+              "side": "tr",
+              "flow": "in",
+              "color": "salt",
+              "label": "e.g. stress",
+              "at": 356
+            },
+            {
+              "name": "Pituitary",
+              "icon": "pituitary",
+              "side": "br",
+              "flow": "out",
+              "color": "gland",
+              "label": "releasing hormones",
+              "amber": true,
+              "at": 634
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1230
+    },
+    {
+      "id": "concept-pituitary",
+      "type": "concept",
+      "heading": "The pituitary: the master gland",
+      "body": "The pituitary relays the hypothalamus's instructions to glands all over the body.",
+      "bullets": [
+        {
+          "text": "Secretes hormones into the blood.",
+          "at": 5
+        },
+        {
+          "text": "Tropic hormones target other glands.",
+          "at": 8.9
+        },
+        {
+          "text": "TSH → thyroid; ACTH → adrenal cortex.",
+          "at": 15.4
+        }
+      ],
+      "callout": "Master of the other glands, but directed by the hypothalamus.",
+      "caption": "Pituitary tropic hormones control the thyroid and adrenal cortex.",
+      "voiceover": {
+        "text": "The pituitary sits just below the hypothalamus. When the releasing hormones arrive, the pituitary secretes its own hormones into the blood. Many of these are tropic hormones, which means their target is another endocrine gland, and they control that gland's hormone secretion. Thyroid stimulating hormone, T S H, travels to the thyroid gland. Adrenocorticotropic hormone, A C T H, travels to the adrenal cortex. Others act on the gonads and on growth. So the pituitary relays a local instruction from the hypothalamus into a signal that reaches glands all over the body. It's master of those glands, but it's directed by the hypothalamus."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Hub",
+        "props": {
+          "centre": {
+            "name": "Pituitary gland",
+            "sub": "secretes into the blood",
+            "icon": "pituitary",
+            "at": 0
+          },
+          "spokes": [
+            {
+              "name": "Hypothalamus",
+              "icon": "brain",
+              "side": "t",
+              "flow": "in",
+              "color": "gland",
+              "label": "releasing hormones",
+              "at": 13
+            },
+            {
+              "name": "Thyroid",
+              "icon": "thyroid",
+              "side": "bl",
+              "flow": "out",
+              "color": "thyroid",
+              "label": "TSH",
+              "at": 399
+            },
+            {
+              "name": "Adrenal cortex",
+              "icon": "adrenal",
+              "side": "br",
+              "flow": "out",
+              "color": "adrenal",
+              "label": "ACTH",
+              "at": 517
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1326
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Endocrine system: the glands that secrete hormones directly into the blood to regulate body functions."
+        },
+        {
+          "text": "Hormone: a chemical messenger secreted by a gland into the blood that acts on specific target cells."
+        },
+        {
+          "text": "Hypothalamus: a region at the base of the brain that links the nervous and endocrine systems and controls the pituitary."
+        },
+        {
+          "text": "Pituitary gland: a small gland below the hypothalamus whose hormones control many other endocrine glands."
+        },
+        {
+          "text": "Tropic hormone: a pituitary hormone whose target is another endocrine gland, such as TSH or ACTH."
+        }
+      ],
+      "callout": "Hypothalamus: releasing hormones. Pituitary: tropic hormones.",
+      "caption": "Endocrine system, hormone, hypothalamus, pituitary, tropic hormone.",
+      "voiceover": {
+        "text": "Five terms. The endocrine system is the set of glands that secrete hormones directly into the blood to regulate body functions. A hormone is a chemical messenger secreted by a gland into the blood, which acts on specific target cells. The hypothalamus is a region at the base of the brain that links the nervous and endocrine systems and controls the pituitary. The pituitary gland is a small gland below the hypothalamus whose hormones control many other endocrine glands. And a tropic hormone is a pituitary hormone whose target is another endocrine gland, like T S H or A C T H."
+      },
+      "durationInFrames": 1314
+    },
+    {
+      "id": "concept-feedback",
+      "type": "concept",
+      "heading": "Feedback regulates the whole chain",
+      "body": "The hormones the chain produces switch the hypothalamus and pituitary back down.",
+      "bullets": [
+        {
+          "text": "Hypothalamus → pituitary → thyroid → cells.",
+          "at": 0
+        },
+        {
+          "text": "Rising thyroxine is detected upstream.",
+          "at": 18.6
+        },
+        {
+          "text": "Secretion falls, so less thyroxine is made.",
+          "at": 23.6
+        }
+      ],
+      "callout": "No part of the chain acts unchecked.",
+      "caption": "Thyroxine feeds back to reduce releasing hormone and TSH.",
+      "voiceover": {
+        "text": "Follow the chain for one hormone, thyroxine. The hypothalamus secretes a releasing hormone onto the pituitary. The pituitary secretes T S H into the blood. T S H travels to the thyroid, which secretes thyroxine, and thyroxine acts on body cells to regulate their metabolic rate. So what stops it over-producing? As thyroxine rises, it's detected by the hypothalamus and the pituitary, and they reduce their secretion of the releasing hormone and T S H. So less thyroxine is made. If thyroxine falls too low, secretion goes up again. That's negative feedback, keeping hormone levels in a narrow range."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Axis",
+        "props": {
+          "stations": [
+            {
+              "name": "Hypothalamus",
+              "icon": "brain",
+              "hot": true,
+              "at": 13
+            },
+            {
+              "name": "Pituitary",
+              "icon": "pituitary",
+              "at": 77
+            },
+            {
+              "name": "Thyroid",
+              "icon": "thyroid",
+              "at": 206
+            },
+            {
+              "name": "Body cells",
+              "icon": "cell",
+              "note": "metabolic rate",
+              "at": 334
+            }
+          ],
+          "links": [
+            {
+              "text": "releasing hormone",
+              "at": 34
+            },
+            {
+              "text": "TSH",
+              "at": 109
+            },
+            {
+              "text": "thyroxine",
+              "at": 281
+            }
+          ],
+          "level": {
+            "label": "thyroxine level",
+            "at": 281
+          },
+          "feedback": {
+            "at": 495,
+            "text": "high thyroxine: secretion down",
+            "targets": [
+              0,
+              1
+            ]
+          }
+        }
+      },
+      "durationInFrames": 1278
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Discuss the control room",
+      "question": "Discuss the role of the hypothalamus and pituitary gland in regulating the secretion of hormones.",
+      "coachNote": "\"Regulating\" is the key word: describe the chain, then the feedback that governs it.",
+      "steps": [
+        "Hypothalamus: monitors internal conditions and links the nervous and endocrine systems, turning nerve signals into hormonal commands.",
+        "It controls the pituitary by secreting releasing (and inhibiting) hormones.",
+        "Pituitary: the \"master gland\" secretes tropic hormones into the blood, e.g. TSH → thyroid, ACTH → adrenal cortex. It is master only of those glands.",
+        "Chain: releasing hormone → pituitary → TSH → thyroid → thyroxine → body cells (metabolic rate).",
+        "Regulation: rising thyroxine reduces secretion by the hypothalamus and pituitary (negative feedback), holding levels in a narrow range ✓"
+      ],
+      "caption": "Integrator, relay, one chain, negative feedback.",
+      "voiceover": {
+        "text": "Here's a full discussion. The hypothalamus monitors internal conditions and links the nervous and endocrine systems, turning nerve signals into hormonal commands. It controls the pituitary with releasing and inhibiting hormones. The pituitary, the master gland, secretes tropic hormones into the blood, T S H to the thyroid, A C T H to the adrenal cortex. But it's only master of those glands, because the hypothalamus directs it. Then trace one chain, releasing hormone, T S H, thyroxine, body cells. And finish with regulation, the part the question is really about. Rising thyroxine reduces secretion by the hypothalamus and pituitary, so levels stay in a narrow range."
+      },
+      "durationInFrames": 1374
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps about the master gland",
+      "body": "Trap 1: the pituitary is in charge of everything on its own. It controls many glands, but it is directed by the hypothalamus, and the whole chain is switched down by negative feedback.",
+      "secondary": "Trap 2: a hormone is always released by the gland that made it. Some hormones are made in the hypothalamus but stored in and released from the pituitary, so say which role you mean.",
+      "mistakeTag": "Nothing is in charge alone",
+      "callout": "Hypothalamus directs. Pituitary relays. Feedback regulates.",
+      "caption": "The pituitary is directed by the hypothalamus and regulated by feedback.",
+      "voiceover": {
+        "text": "Two traps. First, thinking the pituitary is in charge of everything on its own, because it's called the master gland. It does control many glands, but the hypothalamus directs it, and rising hormone levels switch both of them down. Nothing in the chain is in charge alone. Second, assuming a hormone is always released by the gland that made it. Not in this pathway. Some hormones are actually made in the hypothalamus, then stored in and released from the pituitary. So when you write about them, say whether you mean where it's made, or where it's released."
+      },
+      "durationInFrames": 1254
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Two patients both have low thyroxine. Patient 1 has high TSH; patient 2 has low TSH. Where is the fault in each?",
+      "pausePrompt": "Pause: when thyroxine is low, what should TSH be doing?",
+      "answerSteps": [
+        "Normally, low thyroxine makes the pituitary raise TSH: the two move in opposite directions.",
+        "Patient 1: high TSH is the correct response, yet thyroxine stays low, so the thyroid itself is failing.",
+        "Patient 2: TSH has not risen, so the fault is upstream, in the pituitary or hypothalamus ✓"
+      ],
+      "caption": "High TSH: thyroid fault. Low TSH: pituitary or hypothalamus fault.",
+      "voiceover": {
+        "text": "Quick check. Two patients both have low thyroxine. Patient one has high T S H, and patient two has low T S H. Where's the fault in each? Pause, and think about what T S H should be doing when thyroxine is low. Right. Normally, low thyroxine makes the pituitary raise T S H, so the two move in opposite directions. Patient one's high T S H is the correct response, but thyroxine is still low, so the thyroid itself isn't responding. Patient two's T S H hasn't risen, so the fault is upstream, in the pituitary or the hypothalamus. That's why doctors measure both."
+      },
+      "durationInFrames": 1350
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "The hypothalamus links the nervous and endocrine systems and monitors the body.",
+        "It controls the pituitary with releasing (and inhibiting) hormones.",
+        "The pituitary secretes tropic hormones that control other glands: TSH → thyroid, ACTH → adrenal cortex.",
+        "Rising target hormone levels switch the hypothalamus and pituitary down: negative feedback.",
+        "Low thyroxine with high TSH points to the thyroid; with low TSH, upstream."
+      ],
+      "finalPrompt": "Any hormone chain: who releases, who relays, who responds, and what switches it off?",
+      "caption": "Hypothalamus, pituitary, target gland, feedback.",
+      "voiceover": {
+        "text": "Let's lock it in. The hypothalamus links the nervous and endocrine systems, and monitors the body's conditions. It controls the pituitary with releasing and inhibiting hormones. The pituitary secretes tropic hormones that control other glands, T S H to the thyroid, A C T H to the adrenal cortex. Rising target hormone levels switch the hypothalamus and pituitary back down, by negative feedback. And that's why a thyroid blood test can find where the fault is. Next lesson, the hormones of blood sugar and stress."
+      },
+      "durationInFrames": 1110
+    }
+  ]
+}

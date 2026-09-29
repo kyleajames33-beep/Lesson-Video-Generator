@@ -1,0 +1,360 @@
+{
+  "title": "What's in Blood?",
+  "subtitle": "Plasma, red cells, white cells and platelets",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 17",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Explain the relationship between the structure of plasma, red blood cells, white blood cells and platelets and their function within blood"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-02"
+  ],
+  "lessonIntent": "Students can explain how the structure of plasma, red blood cells, white blood cells and platelets suits each one's function.",
+  "examSkill": "For each component, give a structural feature, then an arrow, then the function it enables: feature → consequence → job.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, what's in blood. Let's get into it."
+  },
+  "scenes": [
+    {
+      "durationInFrames": 105,
+      "id": "title",
+      "type": "title",
+      "caption": "What's in Blood?"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "A cell that threw away its own nucleus",
+      "body": "A mature red blood cell has no nucleus, and it is caved in at the middle like a tiny biscuit.",
+      "callout": "Why would a cell give up its control centre and bend its own shape?",
+      "image": "bioY11M1L4RedBloodCells",
+      "caption": "Every blood component's structure fits its job.",
+      "voiceover": {
+        "text": "Spin a tube of blood in a centrifuge and it separates. A straw-coloured liquid floats on top of a dark red layer. So blood isn't just a red liquid, it's a tissue, a watery fluid carrying billions of specialised cells. And some of those cells are strange. A mature red blood cell has thrown away its own nucleus, and it's caved in at the middle, like a tiny biscuit. Why would a cell give up its control centre and bend its own shape? Because in blood, every structure fits a job."
+      },
+      "durationInFrames": 1182
+    },
+    {
+      "id": "concept-plasma",
+      "type": "concept",
+      "heading": "Plasma: the transport fluid",
+      "body": "About 55% of blood is plasma, and being mostly water is exactly what makes it a universal carrier.",
+      "bullets": [
+        {
+          "text": "Plasma is about 90% water.",
+          "at": 11.4
+        },
+        {
+          "text": "It dissolves and carries many substances.",
+          "at": 16.1
+        },
+        {
+          "text": "It also spreads heat around the body.",
+          "at": 31.1
+        }
+      ],
+      "callout": "Structure: mostly water. Function: carry almost everything.",
+      "caption": "Plasma, about 55% of blood and about 90% water, carries dissolved substances.",
+      "voiceover": {
+        "text": "Here's that tube after spinning. The top layer is plasma, the pale yellow liquid part of blood. It's about fifty five per cent of the blood, and plasma itself is about ninety per cent water. That's the key to its job. Because so many things dissolve in water, plasma can carry glucose, amino acids, ions, hormones, carbon dioxide and the waste urea, all at the same time. Being a flowing liquid, it carries the blood cells too, even through the narrowest capillaries. And plasma distributes heat around the body, which helps keep your temperature even. Below it sits a thin pale layer of white cells and platelets, and at the bottom, the packed red cells."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Blood",
+        "props": {
+          "mode": "tube",
+          "tube": {
+            "spinAt": 0,
+            "plasma": {
+              "label": "plasma: about 55% of blood",
+              "share": 0.55
+            },
+            "cellsLabel": "red blood cells",
+            "buffyLabel": "white cells + platelets",
+            "carries": [
+              {
+                "text": "glucose",
+                "at": 495
+              },
+              {
+                "text": "amino acids",
+                "at": 527
+              },
+              {
+                "text": "ions",
+                "at": 549
+              },
+              {
+                "text": "hormones",
+                "at": 559
+              },
+              {
+                "text": "carbon dioxide",
+                "at": 570
+              },
+              {
+                "text": "urea",
+                "at": 602
+              },
+              {
+                "text": "heat",
+                "at": 870
+              }
+            ]
+          }
+        }
+      },
+      "durationInFrames": 1470
+    },
+    {
+      "id": "concept-cells",
+      "type": "concept",
+      "heading": "Three cellular components",
+      "body": "Each cell type is shaped, sometimes literally, for one specialised role.",
+      "bullets": [
+        {
+          "text": "Red cells: carry oxygen.",
+          "at": 2.5
+        },
+        {
+          "text": "White cells: defend against pathogens.",
+          "at": 22.1
+        },
+        {
+          "text": "Platelets: form clots, stop bleeding.",
+          "at": 30.4
+        }
+      ],
+      "callout": "Feature, then arrow, then job.",
+      "caption": "Red cells, white cells and platelets, each built for its role.",
+      "voiceover": {
+        "text": "Now the cells in that bottom layer. Red blood cells carry oxygen. Each one is a biconcave disc, dipped in on both sides, which gives it a large surface area for oxygen to move in and out. It has no nucleus, which leaves more room for haemoglobin, the protein that carries oxygen. And it's flexible, so it can squeeze through capillaries. White blood cells defend against pathogens. They keep their nucleus, and they can change shape, to squeeze out of capillaries and engulf microbes. Platelets are small fragments of cells, not whole cells. There are huge numbers of them, and at a wound they release clotting factors that start a clot and stop the bleeding."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Blood",
+        "props": {
+          "mode": "cells",
+          "scaleNote": "not to scale with each other",
+          "red": {
+            "name": "Red blood cell",
+            "at": 13,
+            "lines": [
+              {
+                "text": "biconcave: large surface area",
+                "at": 67
+              },
+              {
+                "text": "no nucleus: more haemoglobin",
+                "at": 334
+              },
+              {
+                "text": "flexible: fits capillaries",
+                "at": 495
+              }
+            ]
+          },
+          "white": {
+            "name": "White blood cell",
+            "at": 602,
+            "lines": [
+              {
+                "text": "keeps its nucleus",
+                "at": 667
+              },
+              {
+                "text": "changes shape to engulf microbes",
+                "at": 709
+              }
+            ]
+          },
+          "platelets": {
+            "name": "Platelets",
+            "at": 849,
+            "lines": [
+              {
+                "text": "cell fragments, no nucleus",
+                "at": 913
+              },
+              {
+                "text": "release clotting factors",
+                "at": 1052
+              }
+            ]
+          }
+        }
+      },
+      "durationInFrames": 1470
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Plasma: the pale yellow liquid part of blood, mostly water, carrying dissolved substances and the cells."
+        },
+        {
+          "text": "Red blood cell (erythrocyte): a biconcave cell with no nucleus, packed with haemoglobin, that carries oxygen."
+        },
+        {
+          "text": "Haemoglobin: the iron-containing protein in red cells that binds and carries oxygen."
+        },
+        {
+          "text": "White blood cell (leukocyte): a nucleated cell of the immune system that defends against pathogens."
+        },
+        {
+          "text": "Platelet: a small cell fragment, not a whole cell, that triggers blood clotting at wounds."
+        }
+      ],
+      "callout": "Red is haemoglobin's colour, from its iron. Oxygen carrying is haemoglobin's job.",
+      "caption": "Plasma, erythrocyte, haemoglobin, leukocyte, platelet.",
+      "voiceover": {
+        "text": "Five terms. Plasma is the pale yellow liquid part of blood, mostly water, carrying dissolved substances and the cells. A red blood cell, or erythrocyte, is a biconcave cell with no nucleus, packed with haemoglobin, and it carries oxygen. Haemoglobin is the iron-containing protein in red cells that binds and carries oxygen. A white blood cell, or leukocyte, is a nucleated cell of the immune system that defends against pathogens. And a platelet is a small cell fragment, not a whole cell, that triggers clotting at a wound."
+      },
+      "durationInFrames": 1146
+    },
+    {
+      "id": "concept-trade",
+      "type": "concept",
+      "heading": "Give it up, or keep it",
+      "body": "The real skill is justifying why a feature exists, not just naming it.",
+      "bullets": [
+        {
+          "text": "Red cell drops its nucleus to carry more.",
+          "at": 6.4
+        },
+        {
+          "text": "White cell keeps it to make and respond.",
+          "at": 23.6
+        },
+        {
+          "text": "Platelets: many small triggers, fast.",
+          "at": 35.4
+        }
+      ],
+      "callout": "In blood, giving something up is often what makes the job possible.",
+      "caption": "Red cells give up the nucleus; white cells keep it.",
+      "voiceover": {
+        "text": "Here's the skill the syllabus is really testing, explaining why each feature exists. Compare the two cells. The red cell gave up its nucleus. Losing it frees space, so each cell can be packed with more haemoglobin and carry more oxygen. Its biconcave shape gives more surface area, so oxygen loads and unloads faster. Every feature serves one job, carry as much oxygen as possible. The white cell keeps its nucleus, because it has to follow its D N A instructions to make proteins, and some types make antibodies. Its flexible shape lets it chase and engulf microbes. And a platelet can be just a fragment, because clotting needs lots of small triggers arriving fast, not whole cells."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Blood",
+        "props": {
+          "mode": "cells",
+          "red": {
+            "name": "Red blood cell",
+            "at": 131,
+            "lines": [
+              {
+                "text": "no nucleus → more haemoglobin → more O₂",
+                "at": 206,
+                "amber": true
+              },
+              {
+                "text": "biconcave → more surface → faster loading",
+                "at": 388
+              }
+            ]
+          },
+          "white": {
+            "name": "White blood cell",
+            "at": 645,
+            "lines": [
+              {
+                "text": "keeps nucleus → DNA directs protein making",
+                "at": 709
+              },
+              {
+                "text": "flexible → engulfs microbes",
+                "at": 902
+              }
+            ]
+          }
+        }
+      },
+      "durationInFrames": 1506
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Explain all four",
+      "question": "Explain the relationship between the structure of plasma, red blood cells, white blood cells and platelets, and their functions within blood.",
+      "coachNote": "Feature, then arrow, then job, for every component. Give the red cell all three features.",
+      "steps": [
+        "Plasma: about 90% water, a good solvent → carries glucose, amino acids, ions, hormones, CO₂ and urea at once, and distributes heat.",
+        "Red blood cell: biconcave → larger surface area → faster O₂ loading; no nucleus → more haemoglobin → more O₂; flexible → squeezes through capillaries.",
+        "White blood cell: keeps its nucleus → DNA directs protein making (some make antibodies); changes shape → leaves capillaries and engulfs microbes.",
+        "Platelets: small cell fragments → huge numbers gather fast at a wound → release clotting factors that start a clot.",
+        "One principle: each structure is justified by the function it serves ✓"
+      ],
+      "caption": "Every component: structure → function.",
+      "voiceover": {
+        "text": "Let's build the full answer. Use the arrow habit, feature, then consequence, then job. Plasma is about ninety per cent water, and water's a good solvent, so it carries glucose, amino acids, ions, hormones, carbon dioxide and urea all at once, and it spreads heat. The red cell gets three features. Biconcave, so a larger surface area and faster oxygen loading. No nucleus, so more haemoglobin and more oxygen. Flexible, so it squeezes through capillaries. The white cell keeps its nucleus, so its D N A can direct protein making, and it changes shape to leave capillaries and engulf microbes. Platelets are small fragments, so huge numbers gather fast at a wound and release clotting factors. One principle ties it all together. Structure fits function."
+      },
+      "durationInFrames": 1590
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Red is not the reason",
+      "body": "Wrong: red blood cells carry oxygen because they are red, and all blood cells are complete cells with a nucleus.",
+      "secondary": "Right: red cells carry oxygen because they are packed with haemoglobin. The red colour comes from the iron in it. Mature red cells have no nucleus, and platelets are fragments, not complete cells.",
+      "mistakeTag": "Haemoglobin does the work",
+      "callout": "Colour is a side-effect. Haemoglobin is the mechanism.",
+      "caption": "Haemoglobin carries oxygen; red cells lack a nucleus; platelets are fragments.",
+      "voiceover": {
+        "text": "Watch out for this one. Students sometimes write that red blood cells carry oxygen because they're red. The colour isn't the reason. Red cells carry oxygen because they're packed with haemoglobin, and the red colour is just a side-effect of the iron in it. And not every blood cell is a complete cell with a nucleus. Mature red cells have no nucleus at all, and platelets aren't whole cells, they're fragments. If a question says every blood cell has a nucleus, that's the wrong one."
+      },
+      "durationInFrames": 1110
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A person with iron-deficiency anaemia has a normal number of red blood cells, but each has less haemoglobin. Why do they feel tired and breathless?",
+      "pausePrompt": "Pause: the cell count is normal. So what's missing?",
+      "answerSteps": [
+        "Haemoglobin needs iron, so each red cell is under-filled with haemoglobin.",
+        "Less haemoglobin per cell means the blood carries less oxygen, even with a normal cell count.",
+        "Cells get less oxygen, so less aerobic respiration and less ATP: tiredness. Breathing faster can't fix the blood's carrying capacity ✓"
+      ],
+      "caption": "Less haemoglobin, less oxygen carried, less ATP.",
+      "voiceover": {
+        "text": "Quick check. A person with iron-deficiency anaemia has a normal number of red blood cells, but each one has less haemoglobin. Why do they feel tired and breathless? Pause, the cell count is normal, so what's actually missing? Right. Haemoglobin needs iron, so each red cell is under-filled. Less haemoglobin means the blood carries less oxygen, even with a normal cell count. So the cells get less oxygen, do less aerobic respiration and make less A T P, and that's the tiredness. Breathing harder can't fix it, because the problem is the blood's carrying capacity, not the air."
+      },
+      "durationInFrames": 1266
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Plasma: about 55% of blood, about 90% water, so it carries dissolved substances and heat.",
+        "Red cells: biconcave, no nucleus, flexible, all to carry more oxygen.",
+        "White cells: keep a nucleus and change shape to defend against pathogens.",
+        "Platelets: small cell fragments that release clotting factors at wounds.",
+        "Haemoglobin, not the colour, is what carries the oxygen."
+      ],
+      "finalPrompt": "Explaining a blood component? Feature, then arrow, then job.",
+      "caption": "Four components, each structure fitted to its function.",
+      "voiceover": {
+        "text": "Let's lock it in. Plasma is about fifty five per cent of blood and about ninety per cent water, so it carries dissolved substances and heat. Red cells are biconcave, have no nucleus and are flexible, all so they carry more oxygen. White cells keep a nucleus and change shape to defend against pathogens. Platelets are small cell fragments that release clotting factors at wounds. And haemoglobin, not the colour, is what carries the oxygen. Feature, then arrow, then job."
+      },
+      "durationInFrames": 1050
+    }
+  ]
+}

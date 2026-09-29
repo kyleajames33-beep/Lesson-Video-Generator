@@ -1,0 +1,352 @@
+{
+  "title": "Negative Feedback & Homeostasis",
+  "subtitle": "The loop that always pushes back",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 22",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Construct and interpret diagrams of negative feedback loops to demonstrate maintenance of homeostasis"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-02"
+  ],
+  "lessonIntent": "Students can construct a labelled negative feedback loop for thermoregulation, and interpret it to explain how the response opposes the change in either direction.",
+  "examSkill": "Name the set point, write the five components as a closed loop, explain how the response opposes the change, and show it works in both directions.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, negative feedback and homeostasis. Let's get into it."
+  },
+  "scenes": [
+    {
+      "durationInFrames": 105,
+      "id": "title",
+      "type": "title",
+      "caption": "Negative Feedback & Homeostasis"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "37 degrees, snow or sun",
+      "body": "Your body temperature barely moves from about 37 °C, whether you're shivering in the snow or sweating in the sun.",
+      "callout": "Why is it called negative feedback, when nothing is going wrong?",
+      "image": "bioM8L1GlucoseStability",
+      "caption": "Negative feedback holds variables near their set points.",
+      "voiceover": {
+        "text": "Your body temperature barely moves from about thirty seven degrees, whether you're shivering in the snow or sweating in the sun. Your blood glucose, water balance and blood p H are held within narrow limits the same way. A home thermostat does something similar. It switches the heater off when the room is warm enough, and on again when it cools. But how does your body's response know to reverse the change? And why is it called negative feedback, when nothing's going wrong? This lesson shows you how to draw and read these loops."
+      },
+      "durationInFrames": 1218
+    },
+    {
+      "id": "concept-negative",
+      "type": "concept",
+      "heading": "The response reverses the change",
+      "body": "In negative feedback, a change away from the set point triggers a response that pushes the variable back.",
+      "bullets": [
+        {
+          "text": "A rise is detected and signalled.",
+          "at": 9.6
+        },
+        {
+          "text": "Sweating and vasodilation lose heat.",
+          "at": 21.1
+        },
+        {
+          "text": "Temperature falls back to the set point.",
+          "at": 32.9
+        }
+      ],
+      "callout": "\"Negative\" means opposite in direction, not bad.",
+      "caption": "Too hot: the negative feedback loop for body temperature.",
+      "voiceover": {
+        "text": "Here's the loop drawn for a hot day. The set point is about thirty seven degrees. The stimulus is your body temperature rising above it. Temperature receptors in the skin and the hypothalamus detect the rise. The hypothalamus is the control centre. It compares the temperature with the set point and signals a response. The effectors are the sweat glands and the smooth muscle in the skin arterioles. The response is sweating, and vasodilation, the arterioles widening so more warm blood flows near the skin. Both lose heat, so the temperature falls back toward the set point, and the loop closes. The response acted in the opposite direction to the change. A rise caused a fall. That's what negative means."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Loop",
+        "props": {
+          "variable": {
+            "label": "body temperature",
+            "setLabel": "about 37 °C",
+            "direction": "rise",
+            "outLabel": "too hot"
+          },
+          "stations": [
+            {
+              "role": "Stimulus",
+              "label": "temperature rises",
+              "icon": "thermometer",
+              "at": 120
+            },
+            {
+              "role": "Receptor",
+              "label": "receptors in skin, hypothalamus",
+              "icon": "skin",
+              "at": 217
+            },
+            {
+              "role": "Control centre",
+              "label": "hypothalamus",
+              "icon": "brain",
+              "hot": true,
+              "at": 334
+            },
+            {
+              "role": "Effector",
+              "label": "sweat glands, skin arterioles",
+              "icon": "skin",
+              "at": 527
+            },
+            {
+              "role": "Response",
+              "label": "sweating, vasodilation",
+              "icon": "person",
+              "at": 677
+            }
+          ],
+          "pushAt": 152,
+          "returnAt": 859,
+          "loop": {
+            "label": "response opposes the change",
+            "at": 999
+          }
+        }
+      },
+      "durationInFrames": 1530
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Homeostasis: maintaining a stable internal environment within narrow limits, despite changes outside the body."
+        },
+        {
+          "text": "Set point: the normal value, or narrow range, that a variable such as body temperature is held around."
+        },
+        {
+          "text": "Negative feedback: a control loop in which the response reverses the change that triggered it, returning the variable toward the set point."
+        },
+        {
+          "text": "Effector: a muscle or gland that carries out the response, such as sweat glands or skeletal muscle."
+        },
+        {
+          "text": "Control centre: the part, often the brain's hypothalamus, that compares the value with the set point and triggers a response."
+        }
+      ],
+      "callout": "Negative feedback is the normal, stabilising mechanism of homeostasis.",
+      "caption": "Homeostasis, set point, negative feedback, effector, control centre.",
+      "voiceover": {
+        "text": "Five terms. Homeostasis is maintaining a stable internal environment within narrow limits, despite changes outside the body. The set point is the normal value, or narrow range, that a variable like body temperature is held around. Negative feedback is a control loop where the response reverses the change that triggered it, returning the variable toward the set point. An effector is a muscle or gland that carries out the response, like sweat glands or skeletal muscle. And the control centre, often the hypothalamus, compares the value with the set point and triggers the response."
+      },
+      "durationInFrames": 1218
+    },
+    {
+      "id": "concept-both-ways",
+      "type": "concept",
+      "heading": "One loop, both directions",
+      "body": "Negative feedback corrects a variable whether it rises or falls, because the response always opposes the change.",
+      "bullets": [
+        {
+          "text": "Too cold: shivering makes heat.",
+          "at": 17.5
+        },
+        {
+          "text": "Vasoconstriction keeps heat in.",
+          "at": 21.1
+        },
+        {
+          "text": "Temperature rises back to the set point.",
+          "at": 29.6
+        }
+      ],
+      "callout": "Rise → response that lowers. Fall → response that raises.",
+      "caption": "Too cold: the same loop drives the opposite response.",
+      "voiceover": {
+        "text": "Now read the same loop the other way. This time your body temperature falls below the set point, on a cold morning. The same receptors detect the fall, and the same control centre, the hypothalamus, compares it with the set point. But now it signals the opposite response. It triggers shivering, rapid muscle contractions that generate heat. It causes vasoconstriction, the skin arterioles narrowing, so less warm blood reaches the surface and less heat is lost. And sweating is reduced. So the temperature rises back to the set point. A fall caused a rise. When you interpret a loop, name each component, state which way the variable changed, and explain how the response opposes it."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Loop",
+        "props": {
+          "variable": {
+            "label": "body temperature",
+            "setLabel": "about 37 °C",
+            "direction": "fall",
+            "outLabel": "too cold"
+          },
+          "stations": [
+            {
+              "role": "Stimulus",
+              "label": "temperature falls",
+              "icon": "thermometer",
+              "at": 24
+            },
+            {
+              "role": "Receptor",
+              "label": "same receptors",
+              "icon": "skin",
+              "at": 174
+            },
+            {
+              "role": "Control centre",
+              "label": "hypothalamus",
+              "icon": "brain",
+              "hot": true,
+              "at": 249
+            },
+            {
+              "role": "Effector",
+              "label": "skeletal muscles, skin arterioles",
+              "icon": "muscle",
+              "at": 452
+            },
+            {
+              "role": "Response",
+              "label": "shivering, vasoconstriction",
+              "icon": "person",
+              "at": 549
+            }
+          ],
+          "pushAt": 77,
+          "returnAt": 795,
+          "loop": {
+            "label": "a fall causes a rise",
+            "at": 892
+          }
+        }
+      },
+      "durationInFrames": 1470
+    },
+    {
+      "id": "concept-neg-vs-pos",
+      "type": "concept",
+      "heading": "Why negative, not positive?",
+      "body": "Negative feedback is self-limiting. Positive feedback amplifies the change until something outside stops it.",
+      "bullets": [
+        {
+          "text": "Negative: the response shrinks as it succeeds.",
+          "at": 10.4
+        },
+        {
+          "text": "Positive: the response amplifies the change.",
+          "at": 15.4
+        },
+        {
+          "text": "Only negative feedback can hold a variable steady.",
+          "at": 41.1
+        }
+      ],
+      "callout": "Negative feedback settles. Positive feedback escalates.",
+      "caption": "Negative feedback oscillates around the set point; positive feedback runs away.",
+      "voiceover": {
+        "text": "Why is homeostasis run by negative feedback? Because it's self-limiting. As the temperature comes back toward the set point, the receptors detect less and less change, so the response gets smaller, and the variable settles, oscillating gently around the set point. Positive feedback does the reverse. The response amplifies the change, so the variable runs further and further away, until something outside stops it. That's useful for finishing a job, like contractions in childbirth, where cervical stretch releases oxytocin, which strengthens contractions, which stretch it more. But if body temperature ran on positive feedback, a small rise would trigger more heating, and it would climb until enzymes were destroyed. That's why only negative feedback can hold a variable steady."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8FeedbackCurves",
+        "props": {
+          "negative": {
+            "title": "Negative feedback: self-limiting",
+            "at": 13,
+            "doneAt": 334,
+            "label": "settles around the set point"
+          },
+          "positive": {
+            "title": "Positive feedback: amplifies the change",
+            "at": 399,
+            "stopAt": 592,
+            "stopLabel": "baby delivered: loop stops",
+            "loop": {
+              "steps": [
+                "cervical stretch",
+                "oxytocin",
+                "stronger contractions"
+              ],
+              "at": 763
+            }
+          }
+        }
+      },
+      "durationInFrames": 1518
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Construct and explain the loop",
+      "question": "Construct a negative feedback loop for body temperature, and use it to explain how homeostasis is maintained when a person becomes too hot.",
+      "coachNote": "Name the set point first, write all five components as a closed loop, then explain how the response opposes the change.",
+      "steps": [
+        "Set point: about 37 °C. Stimulus: temperature rises. Receptor: temperature receptors in skin and hypothalamus.",
+        "Control centre: hypothalamus. Effectors: sweat glands and skin arterioles. Response: sweating and vasodilation.",
+        "Mechanism: sweat evaporates, absorbing heat; vasodilation brings warm blood to the skin, so heat is lost.",
+        "The response opposes the stimulus (a rise causes a fall): that is negative feedback. As temperature returns, the response switches down.",
+        "The same loop triggers shivering and vasoconstriction if temperature falls: homeostasis in both directions ✓"
+      ],
+      "caption": "Set point, five components, mechanism, opposition, both directions.",
+      "voiceover": {
+        "text": "Here's how a top answer builds the loop. Start with the set point, about thirty seven degrees. Then the chain. The stimulus is temperature rising, the receptors are in the skin and hypothalamus, the control centre is the hypothalamus, the effectors are the sweat glands and skin arterioles, and the response is sweating and vasodilation. Next, explain how each response loses heat. Sweat evaporates, and evaporation absorbs heat, and vasodilation brings warm blood to the skin to lose heat. Then say why it's negative. The response opposes the stimulus, a rise causes a fall, and as the temperature returns, the response switches itself down. Finish by showing it works both ways, shivering and vasoconstriction when temperature falls."
+      },
+      "durationInFrames": 1494
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "\"Negative\" doesn't mean bad",
+      "body": "Wrong: negative feedback means the feedback is harmful, or that the variable is always decreasing.",
+      "secondary": "Right: \"negative\" means the response acts in the opposite direction to the change. A rise triggers a response that lowers the variable, and a fall triggers one that raises it. Negative feedback is the normal, healthy mechanism that keeps you stable.",
+      "mistakeTag": "Direction, not damage",
+      "callout": "Negative = opposes the change. That's it.",
+      "caption": "Negative feedback opposes change in either direction.",
+      "voiceover": {
+        "text": "Here's the misconception. Because of the word negative, students think negative feedback is harmful, or that it means the variable is always going down. Neither is true. Negative just means the response acts in the opposite direction to the change. If the variable rises, the response lowers it. If the variable falls, the response raises it. Negative feedback is the normal, healthy mechanism that keeps you alive and stable. So in an exam, define negative by direction, and give an example going each way."
+      },
+      "durationInFrames": 1098
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "On an extremely hot, humid day, sweat drips off the skin instead of evaporating. Use the negative feedback loop to explain why body temperature can keep rising.",
+      "pausePrompt": "Pause: which part of the loop stops working?",
+      "answerSteps": [
+        "The stimulus (rising temperature) is still detected, and the hypothalamus still signals the sweat glands.",
+        "But sweat only removes heat when it evaporates. In very humid air it can't, so the response no longer opposes the change.",
+        "Temperature keeps climbing past what the loop can correct, leading to heatstroke ✓"
+      ],
+      "caption": "If sweat can't evaporate, the response can't oppose the rise.",
+      "voiceover": {
+        "text": "Quick check. On an extremely hot, humid day, sweat drips off your skin instead of evaporating. Use the loop to explain why body temperature can keep rising. Pause, and work out which part of the loop stops working. Okay. The receptors still detect the rise, and the hypothalamus still tells the sweat glands to work. But sweat only removes heat when it evaporates, and in very humid air it can't. So the response no longer opposes the change, and temperature keeps climbing, past what the loop can correct. That's heatstroke, and it's where we're heading in lesson twenty five."
+      },
+      "durationInFrames": 1278
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Negative feedback: the response reverses the change, returning the variable to its set point.",
+        "A loop diagram: set point, stimulus, receptor, control centre, effector, response, back to set point.",
+        "Too hot: sweating and vasodilation. Too cold: shivering and vasoconstriction.",
+        "Negative feedback is self-limiting, so the variable oscillates gently around the set point.",
+        "\"Negative\" means opposite in direction, not harmful."
+      ],
+      "finalPrompt": "Interpreting a loop? Name each part, state the direction of change, show the response opposes it.",
+      "caption": "Negative feedback loops maintain homeostasis.",
+      "voiceover": {
+        "text": "Let's lock it in. In negative feedback, the response reverses the change and returns the variable to its set point. A loop diagram runs from the set point, through stimulus, receptor, control centre, effector and response, and back to the set point. Too hot, sweating and vasodilation. Too cold, shivering and vasoconstriction. Negative feedback is self-limiting, so the variable oscillates gently around the set point. And negative means opposite in direction, not harmful. Next lesson, the control centres that run your hormones."
+      },
+      "durationInFrames": 1074
+    }
+  ]
+}

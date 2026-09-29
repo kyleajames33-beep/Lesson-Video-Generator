@@ -1,0 +1,430 @@
+{
+  "title": "Blood Through the Organs",
+  "subtitle": "What each organ adds to the blood and takes from it",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 15",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Account for changes in the concentration of gases, nutrients and wastes in blood as it travels through the lungs, liver, small intestine, large intestine, kidneys and muscles organs in mammals"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-02"
+  ],
+  "lessonIntent": "Students can account for the changes in gases, nutrients and wastes in blood leaving the lungs, small intestine, large intestine, liver, kidneys and muscles, using one rule.",
+  "examSkill": "State the rule once (organs remove what they use and add what they make or absorb, down concentration gradients), then apply it organ by organ, including what stays unchanged.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, how blood changes as it passes through the organs. Let's get into it."
+  },
+  "scenes": [
+    {
+      "durationInFrames": 105,
+      "id": "title",
+      "type": "title",
+      "caption": "Blood Through the Organs"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same blood, different story",
+      "body": "Blood leaving your gut after a meal is rich in glucose. Blood leaving a working muscle is loaded with carbon dioxide.",
+      "callout": "Read the blood, and you can work out where it has been.",
+      "image": "bioY11M2L5BloodCircuit",
+      "caption": "Blood composition changes with every organ it passes through.",
+      "voiceover": {
+        "text": "The same litre of blood that just dropped off oxygen in your leg muscle will, seconds later, be picking up glucose in your gut, and after that dumping urea at your kidney. Blood isn't a passive river. What's in it changes depending on which organ it's just passed through. Sample the blood leaving your small intestine after a meal, and it's rich in glucose. Sample the blood leaving a working muscle, and it's loaded with carbon dioxide. So what did each organ add, and what did it take away?"
+      },
+      "durationInFrames": 1158
+    },
+    {
+      "id": "concept-rule",
+      "type": "concept",
+      "heading": "One rule explains every change",
+      "body": "An organ removes from the blood whatever it uses, and adds whatever it makes or absorbs.",
+      "bullets": [
+        {
+          "text": "Substances move down their concentration gradients.",
+          "at": 10
+        },
+        {
+          "text": "Muscle uses O₂ and glucose, makes CO₂.",
+          "at": 18.9
+        },
+        {
+          "text": "Lungs load O₂ and unload CO₂.",
+          "at": 26.8
+        }
+      ],
+      "callout": "Ask: what does this organ do, so what does it take from or give to the blood?",
+      "caption": "Organs remove what they use and add what they make or absorb.",
+      "voiceover": {
+        "text": "Every change in the blood follows one simple rule. An organ removes from the blood whatever it uses, and adds to the blood whatever it makes or absorbs. Substances move down their concentration gradients. Where an organ's cells use something up, its concentration inside them is low, so it leaves the blood. Take a working muscle. It's respiring fast, so it takes oxygen and glucose out of the blood, and adds carbon dioxide. Now the lungs. The blood arrives low in oxygen and high in carbon dioxide, so oxygen diffuses in from the air and carbon dioxide diffuses out. We track three kinds of thing, gases, nutrients and wastes, and you never need to memorise a list. Just ask what the organ does."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2OrganTrack",
+        "props": {
+          "substances": [
+            {
+              "key": "oxygen",
+              "label": "O₂"
+            },
+            {
+              "key": "glucose",
+              "label": "glucose"
+            },
+            {
+              "key": "co2",
+              "label": "CO₂"
+            }
+          ],
+          "start": {
+            "oxygen": 4,
+            "glucose": 3,
+            "co2": 1
+          },
+          "panel": {
+            "title": "blood leaving the last organ",
+            "at": 0
+          },
+          "stations": [
+            {
+              "name": "Working muscle",
+              "icon": "muscle",
+              "at": 506,
+              "changes": {
+                "oxygen": -2,
+                "glucose": -1,
+                "co2": 2
+              }
+            },
+            {
+              "name": "Lungs",
+              "icon": "lungs",
+              "at": 742,
+              "changes": {
+                "oxygen": 2,
+                "co2": -2
+              }
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1566
+    },
+    {
+      "id": "concept-organs",
+      "type": "concept",
+      "heading": "Organ by organ",
+      "body": "Apply the rule to each organ and you get the full map of how blood changes.",
+      "bullets": [
+        {
+          "text": "Gut adds nutrients; large intestine, water.",
+          "at": 5
+        },
+        {
+          "text": "Liver makes urea; the kidney removes it.",
+          "at": 12.9
+        },
+        {
+          "text": "Every respiring organ: O₂ down, CO₂ up.",
+          "at": 27.5
+        }
+      ],
+      "callout": "Liver makes urea. Kidney removes urea. Don't swap them.",
+      "caption": "Lungs, small intestine, large intestine, liver, muscle, kidney.",
+      "voiceover": {
+        "text": "Let's go organ by organ. The lungs add oxygen and remove carbon dioxide. The small intestine, after a meal, adds nutrients, glucose and amino acids, by absorption. The large intestine reabsorbs water into the blood. The liver regulates glucose, and it makes urea, so urea goes up in the blood leaving it. A working muscle removes oxygen and glucose and adds carbon dioxide. And the kidney removes urea, plus excess water and salts. One more thing. Every respiring organ, even your gut and your kidneys, uses a little oxygen and makes a little carbon dioxide. The liver and kidney are the pair people swap. The liver makes urea, the kidney removes it."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2OrganTrack",
+        "props": {
+          "substances": [
+            {
+              "key": "oxygen",
+              "label": "O₂"
+            },
+            {
+              "key": "co2",
+              "label": "CO₂"
+            },
+            {
+              "key": "glucose",
+              "label": "nutrients"
+            },
+            {
+              "key": "water",
+              "label": "water"
+            },
+            {
+              "key": "urea",
+              "label": "urea"
+            },
+            {
+              "key": "salt",
+              "label": "salts"
+            }
+          ],
+          "stations": [
+            {
+              "name": "Lungs",
+              "icon": "lungs",
+              "at": 2,
+              "changes": {
+                "oxygen": 1,
+                "co2": -1
+              }
+            },
+            {
+              "name": "Small intestine",
+              "icon": "intestine",
+              "at": 88,
+              "changes": {
+                "glucose": 1
+              }
+            },
+            {
+              "name": "Large intestine",
+              "icon": "largeIntestine",
+              "at": 238,
+              "changes": {
+                "water": 1
+              }
+            },
+            {
+              "name": "Liver",
+              "icon": "liver",
+              "at": 324,
+              "changes": {
+                "urea": 1
+              },
+              "notes": [
+                {
+                  "text": "regulates glucose",
+                  "at": 334
+                }
+              ],
+              "amber": true
+            },
+            {
+              "name": "Muscle",
+              "icon": "muscle",
+              "at": 506,
+              "changes": {
+                "oxygen": -1,
+                "glucose": -1,
+                "co2": 1
+              }
+            },
+            {
+              "name": "Kidney",
+              "icon": "kidney",
+              "at": 624,
+              "changes": {
+                "urea": -1,
+                "water": -1,
+                "salt": -1
+              },
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1434
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Concentration gradient: a difference in concentration between two regions; substances diffuse from high to low."
+        },
+        {
+          "text": "Urea: a nitrogenous waste made by the liver from excess amino acids, removed from the blood by the kidneys."
+        },
+        {
+          "text": "Hepatic portal vein: carries nutrient-rich blood from the small intestine straight to the liver."
+        },
+        {
+          "text": "Deamination: the liver removes the amino group from excess amino acids, making ammonia, which becomes urea."
+        },
+        {
+          "text": "Metabolic waste: a by-product of cell chemistry, such as carbon dioxide or urea, that must be removed from the blood."
+        }
+      ],
+      "callout": "Urea has one source, the liver, and one exit, the kidneys.",
+      "caption": "Concentration gradient, urea, hepatic portal vein, deamination, metabolic waste.",
+      "voiceover": {
+        "text": "Five terms. A concentration gradient is a difference in concentration between two regions, and substances diffuse from high to low. Urea is a nitrogenous waste made by the liver from excess amino acids, and removed from the blood by the kidneys. The hepatic portal vein carries nutrient-rich blood from the small intestine straight to the liver. Deamination is how the liver removes the amino group from excess amino acids, making ammonia, which is converted into urea. And a metabolic waste is any by-product of cell chemistry, like carbon dioxide or urea, that has to be removed from the blood."
+      },
+      "durationInFrames": 1278
+    },
+    {
+      "id": "concept-liver",
+      "type": "concept",
+      "heading": "The liver: the blood's manager",
+      "body": "Blood from the gut goes to the liver first, so the liver can smooth out the spike in nutrients.",
+      "bullets": [
+        {
+          "text": "Gut blood reaches the liver first.",
+          "at": 9.6
+        },
+        {
+          "text": "Excess glucose is stored as glycogen.",
+          "at": 17.1
+        },
+        {
+          "text": "Excess amino acids become urea.",
+          "at": 30.7
+        }
+      ],
+      "callout": "Leaving the liver: glucose back toward normal, urea up.",
+      "caption": "The liver buffers glucose and makes urea.",
+      "voiceover": {
+        "text": "Why does the liver get special treatment? After a meal, the blood leaving the small intestine is packed with glucose and amino acids. It travels in the hepatic portal vein straight to the liver, before it reaches the rest of the body. When glucose is high, the liver stores the excess as glycogen, and when blood glucose falls, it releases glucose back. So the rest of your body gets a steady supply, whenever you last ate. Excess amino acids can't be stored, so the liver deaminates them. It removes their amino groups, making ammonia, which it turns into urea. That urea goes into the blood. So blood leaving the liver has glucose brought back toward normal, and more urea. The kidneys will remove it later."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2OrganTrack",
+        "props": {
+          "substances": [
+            {
+              "key": "glucose",
+              "label": "glucose"
+            },
+            {
+              "key": "amino",
+              "label": "amino acids"
+            },
+            {
+              "key": "urea",
+              "label": "urea"
+            }
+          ],
+          "start": {
+            "glucose": 2,
+            "amino": 1,
+            "urea": 1
+          },
+          "panel": {
+            "title": "blood leaving the last organ",
+            "at": 0
+          },
+          "stations": [
+            {
+              "name": "Small intestine",
+              "icon": "intestine",
+              "at": 13,
+              "changes": {
+                "glucose": 2,
+                "amino": 2
+              }
+            },
+            {
+              "name": "Liver",
+              "icon": "liver",
+              "amber": true,
+              "at": 259,
+              "changes": {
+                "glucose": -2,
+                "amino": -2,
+                "urea": 2
+              },
+              "notes": [
+                {
+                  "text": "glucose → glycogen",
+                  "at": 452
+                },
+                {
+                  "text": "amino acids → urea",
+                  "at": 977
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1590
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Account for the changes",
+      "question": "One hour after a large meal, account for the changes in gases, nutrients and wastes in blood as it passes the small intestine, then the liver, then a working leg muscle, then the lungs.",
+      "coachNote": "State the rule once, then apply it at every organ, including what stays the same.",
+      "steps": [
+        "Small intestine: glucose and amino acids absorbed across the villi, so nutrients rise sharply; the gut wall respires, so O₂ falls slightly and CO₂ rises slightly.",
+        "Liver (via the hepatic portal vein): excess glucose stored as glycogen, so glucose falls back toward normal; excess amino acids deaminated, so urea rises.",
+        "Leg muscle: rapid respiration uses O₂ and glucose and makes CO₂, so O₂ and glucose fall and CO₂ rises. Urea is unchanged.",
+        "Lungs: O₂ diffuses from alveolar air into the blood and CO₂ diffuses out, both down their gradients. Urea is unchanged.",
+        "Every change: the organ removes what it uses and adds what it makes or absorbs ✓"
+      ],
+      "caption": "Small intestine, liver, muscle, lungs: each change explained by what the organ does.",
+      "voiceover": {
+        "text": "Here's an exam-style question. One hour after a big meal, account for the changes in the blood as it passes the small intestine, then the liver, then a working leg muscle, then the lungs. State the rule once, then apply it. At the small intestine, absorption is at its peak, so glucose and amino acids rise sharply. The gut wall is respiring too, so oxygen dips slightly and carbon dioxide rises slightly. At the liver, excess glucose is stored as glycogen, so glucose drops back toward normal, and excess amino acids are deaminated, so urea goes up. At the leg muscle, fast respiration uses oxygen and glucose and makes carbon dioxide. Urea doesn't change there. And at the lungs, oxygen diffuses in and carbon dioxide diffuses out, down their gradients. Urea doesn't change there either."
+      },
+      "durationInFrames": 1710
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps about blood",
+      "body": "Trap 1: blood has one fixed composition everywhere. It changes at every organ, depending on what that organ does.",
+      "secondary": "Trap 2: arteries always carry oxygenated blood. The pulmonary artery carries deoxygenated blood to the lungs, and the pulmonary vein brings oxygenated blood back. Arteries carry blood away from the heart; veins carry it back.",
+      "mistakeTag": "Direction, not oxygen",
+      "callout": "Arteries: away from the heart. Veins: back to the heart.",
+      "caption": "Blood composition varies; arteries and veins are defined by direction.",
+      "voiceover": {
+        "text": "Two traps. First, thinking blood has one fixed composition everywhere. It doesn't. The oxygen, glucose, urea and carbon dioxide in it depend entirely on which organ it's just passed. Second, the classic, arteries always carry oxygenated blood and veins always carry deoxygenated blood. That works around the body, but it breaks at the lungs. The pulmonary artery carries deoxygenated blood from the heart to the lungs, and the pulmonary vein brings oxygenated blood back. The rule that never breaks is about direction. Arteries carry blood away from the heart, veins carry it back."
+      },
+      "durationInFrames": 1206
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Two blood samples are taken moments apart. Both are low in oxygen. Sample A is high in urea; sample B is low in urea. Which organ has each sample just left?",
+      "pausePrompt": "Pause: oxygen can't tell them apart. What can?",
+      "answerSteps": [
+        "Both are low in O₂, so both have passed through respiring tissue; oxygen can't tell them apart.",
+        "Sample A, high urea: only the liver adds urea, so it has just left the liver (hepatic vein).",
+        "Sample B, low urea: the kidney removes urea, so it has just left the kidney (renal vein) ✓"
+      ],
+      "caption": "High urea: just left the liver. Low urea: just left the kidney.",
+      "voiceover": {
+        "text": "Quick check. Two blood samples are taken moments apart. Both are low in oxygen. Sample A is high in urea, and sample B is low in urea. Which organ has each one just left? Pause, and think about which substance can actually tell them apart. Okay. Low oxygen just tells you both have passed through respiring tissue, so it can't separate them. Urea can. Only the liver adds urea, so sample A has just left the liver. The kidney removes urea, so sample B has just left the kidney. Two ends of one pathway."
+      },
+      "durationInFrames": 1218
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Organs remove what they use and add what they make or absorb, down concentration gradients.",
+        "Lungs: O₂ up, CO₂ down. Muscle: O₂ and glucose down, CO₂ up.",
+        "Small intestine adds nutrients; large intestine reabsorbs water.",
+        "Liver buffers glucose and makes urea; the kidney removes urea, excess water and salts.",
+        "Arteries carry blood away from the heart; veins carry it back."
+      ],
+      "finalPrompt": "For any organ, ask: what does it use, and what does it make or absorb?",
+      "caption": "One rule, applied organ by organ.",
+      "voiceover": {
+        "text": "Let's lock it in. Organs remove what they use and add what they make or absorb, with substances moving down their concentration gradients. The lungs push oxygen up and carbon dioxide down. A working muscle takes oxygen and glucose, and adds carbon dioxide. The small intestine adds nutrients, and the large intestine reabsorbs water. The liver buffers glucose and makes urea, and the kidney removes urea, excess water and salts. And arteries are defined by direction, away from the heart. For any organ, ask what it uses, and what it makes."
+      },
+      "durationInFrames": 1182
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "title": "Gas Exchange in the Lungs",
+  "subtitle": "How alveoli and capillaries make diffusion fast",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 18",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Cells to systems",
+  "syllabusDotPoints": [
+    "Use models to demonstrate how the organisation of alveoli and capillaries in the lungs allows for efficient gas exchange"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-02"
+  ],
+  "lessonIntent": "Students can explain how the organisation of alveoli and capillaries gives a large surface area, a short diffusion distance, a steep gradient and a moist surface, and use a model to demonstrate this.",
+  "examSkill": "Start with \"gas exchange is passive diffusion\", name the four features that speed diffusion, show how the lung delivers each, then bound the model with its limits.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, gas exchange in the lungs. Let's get into it."
+  },
+  "scenes": [
+    {
+      "durationInFrames": 105,
+      "id": "title",
+      "type": "title",
+      "caption": "Gas Exchange in the Lungs"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Half a tennis court in your chest",
+      "body": "Unfold every tiny air sac in your lungs and lay them flat, and they would cover roughly half a tennis court.",
+      "callout": "What would you design into a surface to swap gases as fast as possible?",
+      "image": "bioY11M2L6AlveoliCluster",
+      "caption": "The lungs are organised to make diffusion as fast as possible.",
+      "voiceover": {
+        "text": "If you could unfold all the tiny air sacs in your lungs and lay them out flat, they'd cover roughly half a tennis court. And all of that is packed inside your chest. That's no accident. Oxygen has to cross from an air sac into a red blood cell in a fraction of a second, hundreds of millions of times over. So if you were designing a surface to swap gases as fast as physically possible, what would you build into it? Your lungs have already answered that question."
+      },
+      "durationInFrames": 1158
+    },
+    {
+      "id": "concept-exchange",
+      "type": "concept",
+      "heading": "Built to make diffusion fast",
+      "body": "Gas exchange is passive diffusion. The lung's organisation makes that diffusion as fast as possible.",
+      "bullets": [
+        {
+          "text": "Millions of alveoli: huge surface area.",
+          "at": 24.3
+        },
+        {
+          "text": "Two thin walls: short diffusion distance.",
+          "at": 30.7
+        },
+        {
+          "text": "Flowing blood keeps the gradient steep.",
+          "at": 38.2
+        }
+      ],
+      "callout": "Large area, short distance, steep gradient, moist surface.",
+      "caption": "An alveolus wrapped in a capillary: O₂ in, CO₂ out, by diffusion.",
+      "voiceover": {
+        "text": "Here's one alveolus, a tiny air sac at the end of an airway, wrapped in a capillary. Gas exchange here is passive diffusion. Oxygen moves from the air, where its concentration is high, into the blood, where it's low. Carbon dioxide moves the other way, down its own gradient. Diffusion is fastest with four features, and the lung maximises all four. First, surface area. There are millions of alveoli, so the total area is vast. Second, a short diffusion distance. The alveolar wall is one cell thick, and so is the capillary wall, so a gas only crosses two thin cells. Third, a steep gradient. Blood keeps flowing, carrying oxygenated blood away and bringing in more that's low in oxygen, and breathing refreshes the air. And fourth, a moist lining, so oxygen can dissolve before it crosses."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Alveolus",
+        "props": {
+          "mode": "exchange",
+          "exchange": {
+            "alveolusAt": 0,
+            "capillaryAt": 88,
+            "o2At": 195,
+            "co2At": 377,
+            "airLabel": "air in the alveolus",
+            "bloodIn": "low O₂, high CO₂",
+            "bloodOut": "oxygenated",
+            "features": [
+              {
+                "text": "huge surface area",
+                "at": 613
+              },
+              {
+                "text": "two cells thick: short distance",
+                "at": 763
+              },
+              {
+                "text": "blood flow: steep gradient",
+                "at": 1042,
+                "amber": true
+              },
+              {
+                "text": "moist lining",
+                "at": 1309
+              }
+            ]
+          }
+        }
+      },
+      "durationInFrames": 1734
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "bullets": [
+        {
+          "text": "Alveolus: a tiny air sac in the lung where gas exchange with the blood happens; there are millions of them."
+        },
+        {
+          "text": "Gas exchange: oxygen moving into the blood and carbon dioxide moving out of it, by diffusion."
+        },
+        {
+          "text": "Diffusion distance: the thickness a gas must cross; the shorter it is, the faster diffusion happens."
+        },
+        {
+          "text": "Capillary network: the dense web of capillaries wrapping each alveolus, bringing blood right up against the air."
+        },
+        {
+          "text": "Concentration gradient: the difference in gas concentration between the alveolar air and the blood, which drives diffusion."
+        }
+      ],
+      "callout": "Diffusion, not pumping: the lung spends no energy moving the gases.",
+      "caption": "Alveolus, gas exchange, diffusion distance, capillary network, concentration gradient.",
+      "voiceover": {
+        "text": "Five terms. An alveolus is a tiny air sac in the lung where gas exchange with the blood happens, and there are millions of them. Gas exchange is oxygen moving into the blood and carbon dioxide moving out, by diffusion. The diffusion distance is the thickness a gas has to cross, and the shorter it is, the faster diffusion happens. The capillary network is the dense web of capillaries wrapping each alveolus, bringing blood right up against the air. And the concentration gradient is the difference in gas concentration between the air in the alveolus and the blood, which is what drives the diffusion."
+      },
+      "durationInFrames": 1338
+    },
+    {
+      "id": "concept-model",
+      "type": "concept",
+      "heading": "Modelling the alveoli, and the limits",
+      "body": "A simple model shows why many small sacs beat one big one.",
+      "bullets": [
+        {
+          "text": "Same volume, split into small sacs.",
+          "at": 5
+        },
+        {
+          "text": "Split into 8, area doubles.",
+          "at": 16.1
+        },
+        {
+          "text": "Limits: too thick, static, wrong scale.",
+          "at": 31.8
+        }
+      ],
+      "callout": "A model demonstrates the organisation, not the process.",
+      "caption": "Eight small spheres have twice the surface area of one sphere of the same volume.",
+      "voiceover": {
+        "text": "The syllabus asks you to use a model, and here's a neat one. Take one big balloon, then split the same volume of air into eight smaller balloons. Each small balloon has half the radius. Add up their surfaces, and the eight together have twice the surface area of the one big balloon. Split it further and the gain keeps growing. That's why millions of tiny alveoli give a vast surface. Wrap a balloon in red wool, and you can model the capillaries hugging the sac too. But the model has limits. No everyday material is one cell thick, so it can't show the real diffusion distance. It's static, so it can't show diffusion or blood flow. And the scale is wrong, real alveoli are microscopic."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m2Alveolus",
+        "props": {
+          "mode": "subdivide",
+          "subdivide": {
+            "n": 8,
+            "bigAt": 88,
+            "smallAt": 206,
+            "bigLabel": "one big sac",
+            "smallLabel": "eight small sacs",
+            "barsAt": 324,
+            "volumeNote": "same total volume"
+          },
+          "footer": [
+            {
+              "text": "limits: too thick, static, wrong scale",
+              "at": 892,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1602
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Explain efficient gas exchange",
+      "question": "Explain how the organisation of alveoli and capillaries allows efficient gas exchange. Refer to at least three features, and state what a model of the alveolus can and cannot show.",
+      "coachNote": "Open with \"gas exchange is passive diffusion\", then answer one question: what makes diffusion fast?",
+      "steps": [
+        "Mechanism: O₂ diffuses from alveolar air (high) into the blood (low); CO₂ diffuses the other way. The lung uses no energy to move them.",
+        "Surface area: millions of alveoli give a vast combined area, so lots of gas crosses at once.",
+        "Distance: alveolar wall and capillary wall are each one cell thick, so gases cross only two thin cells.",
+        "Gradient: continuous blood flow and breathing keep the gradient steep; a moist lining lets O₂ dissolve.",
+        "Model: balloons in red wool show the organisation; they can't show the true thinness, diffusion itself or the scale ✓"
+      ],
+      "caption": "Passive diffusion, made fast by area, distance, gradient and moisture.",
+      "voiceover": {
+        "text": "Here's a full answer, built step by step. Start with the mechanism. Gas exchange is passive diffusion. Oxygen moves from the alveolar air into the blood, and carbon dioxide moves out, and the lung spends no energy moving them. Then the features. Millions of alveoli give a vast surface area, so lots of gas crosses at once. The alveolar and capillary walls are each one cell thick, so the distance is tiny. Continuous blood flow and breathing keep the gradient steep, and a moist lining lets oxygen dissolve. Then the model. Balloons wrapped in red wool show the organisation well, but they can't show the true thinness, the diffusion itself, or the real scale."
+      },
+      "durationInFrames": 1458
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "The lungs don't pump oxygen in",
+      "body": "Wrong: the lungs actively pump oxygen into the blood.",
+      "secondary": "Right: gas exchange in the alveoli is passive diffusion. Each gas moves down its own concentration gradient, and the lung uses no energy to move it. The lung's structure simply makes that diffusion fast.",
+      "mistakeTag": "Passive, not active",
+      "callout": "Breathing moves air. Diffusion moves the gases across.",
+      "caption": "Gas exchange is passive diffusion down concentration gradients.",
+      "voiceover": {
+        "text": "Here's a common slip. Students write that the lungs pump oxygen into the blood. They don't. Gas exchange in the alveoli is passive diffusion. Oxygen and carbon dioxide each move down their own concentration gradient, and the lung doesn't spend any energy moving them across. Breathing uses muscles to move air in and out, but the crossing itself is diffusion. The lung's structure, the huge area, the thin walls, the flowing blood, just makes that diffusion as fast as it can be."
+      },
+      "durationInFrames": 1074
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "In emphysema, the walls between alveoli break down, so many small sacs merge into fewer large ones, and the remaining walls thicken. Which features of an efficient exchange surface are affected, and why does the person become breathless?",
+      "pausePrompt": "Pause: run down the four features. Which two are damaged?",
+      "answerSteps": [
+        "Surface area falls: fewer, larger sacs have much less total surface than many small ones.",
+        "Diffusion distance rises: thickened walls mean gases cross further, so diffusion slows.",
+        "The gradient and moist lining are largely unaffected.",
+        "Less O₂ enters the blood, so tissues get less O₂: breathlessness, which breathing harder can't fully fix ✓"
+      ],
+      "caption": "Emphysema: less surface area and a longer diffusion distance.",
+      "voiceover": {
+        "text": "Quick check. In emphysema, the walls between alveoli break down, so many small sacs merge into fewer big ones, and the walls that are left get thicker. Which features of an efficient exchange surface are affected, and why is the person breathless? Pause and run down the four features. Okay. Surface area falls, because fewer, bigger sacs have far less total surface than many small ones. That's the balloon model in reverse. And the diffusion distance goes up, because thicker walls mean gases have further to cross. The gradient and the moist lining are mostly fine. So less oxygen gets into the blood, and breathing harder can't fully fix a surface that's been lost."
+      },
+      "durationInFrames": 1458
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Gas exchange is passive diffusion: O₂ into the blood, CO₂ out, each down its gradient.",
+        "Millions of alveoli give a vast surface area.",
+        "Alveolar and capillary walls are each one cell thick: a very short diffusion distance.",
+        "Flowing blood and breathing keep the gradient steep; a moist lining lets gases dissolve.",
+        "Models show the organisation, but not the true thinness, the process or the scale."
+      ],
+      "finalPrompt": "For any exchange surface, check four things: area, distance, gradient, moisture.",
+      "caption": "Area, distance, gradient, moisture.",
+      "voiceover": {
+        "text": "Let's lock it in. Gas exchange is passive diffusion, oxygen into the blood and carbon dioxide out, each down its own gradient. Millions of alveoli give a vast surface area. The alveolar and capillary walls are each one cell thick, so the diffusion distance is tiny. Flowing blood and breathing keep the gradient steep, and a moist lining lets the gases dissolve. And a model shows the organisation, but not the real thinness, the process, or the scale. For any exchange surface, check four things, area, distance, gradient and moisture."
+      },
+      "durationInFrames": 1170
+    }
+  ]
+}
