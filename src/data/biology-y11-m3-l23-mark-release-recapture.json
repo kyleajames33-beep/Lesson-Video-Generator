@@ -1,0 +1,386 @@
+{
+  "title": "Mark-Release-Recapture (Practical)",
+  "subtitle": "Estimating mobile populations with the Lincoln index",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 23",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Conduct a practical investigation to model the mark-release-recapture method and estimate abundance of mobile organisms"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-03",
+    "BI-11WS-06"
+  ],
+  "lessonIntent": "Students can model mark-release-recapture, calculate a population estimate with the Lincoln index N = (M × C) ÷ R, state its assumptions and predict the direction of error when one is broken.",
+  "examSkill": "N = (M × C) ÷ R: R is on the bottom, so anything that lowers recaptures inflates the estimate.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, mark, release, recapture. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Mark, release, recapture"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "image": "bioM5L2SalmonSpawning",
+      "heading": "Counting fish you can't see",
+      "body": "Mark 40 fish and return them. Later, catch 50, of which 10 are marked. You can estimate the whole lake without ever catching every fish.",
+      "callout": "How does one fraction reveal the total?",
+      "caption": "A marked fraction can reveal a whole population.",
+      "voiceover": {
+        "text": "A quadrat works for a plant that stays put. But how do you count fish in a lake, or beetles in a paddock, when they move and hide? You can't. So ecologists use a clever trick. Say you catch forty fish, mark them, and let them go. Later you catch fifty, and ten of them carry your mark. From that alone, you can estimate how many fish are in the whole lake, without ever catching them all. How does one fraction reveal the total? Let's see."
+      },
+      "durationInFrames": 1120
+    },
+    {
+      "id": "concept-method",
+      "type": "concept",
+      "heading": "Why a fraction gives the whole",
+      "body": "If marked animals mix evenly back in, the marked fraction of a second catch equals the marked fraction of the whole population.",
+      "bullets": [
+        {
+          "text": "Capture a first sample, M; mark them harmlessly; release them."
+        },
+        {
+          "text": "Allow time to mix, then capture a second sample, C, and count how many are marked, R."
+        },
+        {
+          "text": "R ÷ C = M ÷ N, so N = (M × C) ÷ R: the Lincoln index."
+        }
+      ],
+      "callout": "Few recaptures means a big population.",
+      "caption": "Mark, release, recapture, and the Lincoln index.",
+      "voiceover": {
+        "text": "Here's the method. First, capture a sample. That's M, here forty. Mark each one harmlessly, and release them. Give them time to mix back into the population. Then capture a second sample. That's C, fifty animals, and count how many carry a mark. That's R, eight. Now the logic. If the marks have mixed evenly, the marked fraction of your second catch, R over C, equals the marked fraction of the whole population, M over N. Rearrange it, and N equals M times C, divided by R. Forty times fifty, divided by eight, is two hundred and fifty. A small marked fraction means a large population."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Mrr",
+        "props": {
+          "title": "Catch, mark, release, recatch",
+          "M": 40,
+          "C": 50,
+          "R": 8,
+          "organism": "beetle",
+          "noun": "animals",
+          "beats": {
+            "pop": 0,
+            "capture1": 0,
+            "mark": 76,
+            "release": 126,
+            "capture2": 288,
+            "ratio": 513,
+            "solve": 888
+          }
+        }
+      },
+      "durationInFrames": 1371
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "The method, the formula and its three letters.",
+      "bullets": [
+        {
+          "text": "Mark-release-recapture: estimating the size of a mobile-animal population by marking, releasing and re-sampling."
+        },
+        {
+          "text": "Lincoln index: N = (M × C) ÷ R, the estimated population size."
+        },
+        {
+          "text": "M: the number caught, marked and released in the first sample."
+        },
+        {
+          "text": "C: the total caught in the second sample. R: the number in the second sample already marked."
+        }
+      ],
+      "callout": "N = (M × C) ÷ R",
+      "caption": "Mark-release-recapture, the Lincoln index, M, C and R.",
+      "voiceover": {
+        "text": "Let's lock in the letters. Mark-release-recapture estimates the size of a mobile-animal population, by marking, releasing and re-sampling. The Lincoln index is the formula, N equals M times C, divided by R. M is the number caught, marked and released in the first sample. C is the total number caught in the second sample. And R is the number in that second sample that were already marked. Get those three straight, and the calculation is easy."
+      },
+      "durationInFrames": 995
+    },
+    {
+      "id": "concept-model",
+      "type": "concept",
+      "heading": "Modelling it with beans",
+      "body": "In class, a container of beans models the population, so the maths can be done without handling animals.",
+      "bullets": [
+        {
+          "text": "Take a handful (M), swap each for a marked bean, return them and shake to mix."
+        },
+        {
+          "text": "Take a second handful: count the total (C) and the marked beans (R), then use N = (M × C) ÷ R."
+        },
+        {
+          "text": "Handling live animals causes stress and, in NSW, needs ethics approval and a scientific licence."
+        }
+      ],
+      "secondary": "The trade-off: beans cannot die, breed, move away, learn to avoid the scoop or lose their mark, so the model obeys every assumption and cannot show how a real survey goes wrong.",
+      "callout": "A perfect model hides real-world error.",
+      "caption": "The bean model, and why it is used instead of animals.",
+      "voiceover": {
+        "text": "In class, you model the method with beans. Fill a container with dried beans, that's your population. Take out a handful, that's M, swap each one for a marked bean, put them back, and shake to mix. Then take a second handful, count the total, C, and the marked beans, R, and apply the formula. Why beans? Capturing and marking live animals causes stress, and in New South Wales it needs ethics approval and a scientific licence. But there's a trade-off. Beans can't die, breed, move away, or lose their mark. The model obeys every assumption perfectly, so it can't show how badly a real survey can go wrong."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Panels",
+        "props": {
+          "title": "A container of beans stands in for animals",
+          "columns": [
+            {
+              "name": "First handful",
+              "sub": "M, then marked",
+              "icon": "bean",
+              "iconOpts": {
+                "marked": true
+              },
+              "at": 151,
+              "lines": [
+                {
+                  "text": "swap for marked beans, return, shake",
+                  "at": 226
+                }
+              ]
+            },
+            {
+              "name": "Second handful",
+              "sub": "count C and R",
+              "icon": "bean",
+              "at": 401,
+              "lines": [
+                {
+                  "text": "N = (M × C) ÷ R",
+                  "at": 588
+                }
+              ]
+            },
+            {
+              "name": "Trade-off",
+              "sub": "a perfect model",
+              "icon": "beetle",
+              "at": 901,
+              "amber": true,
+              "lines": [
+                {
+                  "text": "beans never die, breed, leave or lose marks",
+                  "ok": false,
+                  "at": 950
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "text": "Why beans? Animal welfare: ethics approval and a licence",
+              "at": 626
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1408
+    },
+    {
+      "id": "concept-assumptions",
+      "type": "concept",
+      "heading": "When the estimate goes wrong",
+      "body": "The Lincoln index assumes marks mix fully, stay on, do no harm, and that nothing is born, dies or moves between samples.",
+      "bullets": [
+        {
+          "text": "R is on the bottom of the fraction: anything that lowers R inflates N; anything that raises R shrinks it."
+        },
+        {
+          "text": "Marks rub off, marked animals die or emigrate, too little mixing, or trap-shy animals: R falls, N over-estimated."
+        },
+        {
+          "text": "A mark that makes animals easier to catch, or trap-happy animals: R rises, N under-estimated."
+        }
+      ],
+      "secondary": "Improve it: leave enough time to mix (but not so long that births and deaths occur), use a harmless, durable mark, take large samples, and repeat.",
+      "callout": "Reason it through with the formula in front of you.",
+      "caption": "Breaking an assumption changes R, and so biases N.",
+      "voiceover": {
+        "text": "The formula only works if its assumptions hold. Marked animals mix fully back in. The mark doesn't harm them, fall off, or change how catchable they are. And nothing is born, dies, arrives or leaves between samples. When one breaks, work out the direction of the error. R sits on the bottom of the fraction. So if marks rub off, if marked animals die or move away, or if they haven't had time to mix, R falls, and N comes out too big. But if the mark makes animals easier to catch, or they become trap-happy, returning for the bait, R rises, and N comes out too small."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Panels",
+        "props": {
+          "layout": "matrix",
+          "title": "N = (M × C) ÷ R: follow R",
+          "columns": [
+            {
+              "name": "Effect on R",
+              "sub": "marked recaptures",
+              "icon": "beetle",
+              "iconOpts": {
+                "marked": true
+              },
+              "at": 526
+            },
+            {
+              "name": "Estimate of N",
+              "icon": "tally",
+              "at": 546
+            }
+          ],
+          "rowLabels": [
+            {
+              "text": "Marks rub off",
+              "at": 638
+            },
+            {
+              "text": "Marked animals die or leave",
+              "at": 726
+            },
+            {
+              "text": "Too little time to mix",
+              "at": 813
+            },
+            {
+              "text": "Mark makes them easier to catch",
+              "at": 1050
+            },
+            {
+              "text": "Trap-happy animals",
+              "at": 1113
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "falls"
+              },
+              {
+                "text": "over-estimate",
+                "amber": true
+              }
+            ],
+            [
+              {
+                "text": "falls"
+              },
+              {
+                "text": "over-estimate",
+                "amber": true
+              }
+            ],
+            [
+              {
+                "text": "falls"
+              },
+              {
+                "text": "over-estimate",
+                "amber": true
+              }
+            ],
+            [
+              {
+                "text": "rises"
+              },
+              {
+                "text": "under-estimate"
+              }
+            ],
+            [
+              {
+                "text": "rises"
+              },
+              {
+                "text": "under-estimate"
+              }
+            ]
+          ]
+        }
+      },
+      "durationInFrames": 1395
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Agile wallabies in Kakadu",
+      "question": "In Kakadu, 45 agile wallabies were caught, tagged and released. A second catch of 60 contained 15 tagged animals. Estimate the population.",
+      "coachNote": "Label M, C and R before you touch the calculator.",
+      "steps": [
+        "M = 45 (tagged and released); C = 60 (second catch); R = 15 (tagged in the second catch).",
+        "N = (M × C) ÷ R = (45 × 60) ÷ 15.",
+        "45 × 60 = 2700; 2700 ÷ 15 = 180.",
+        "The whole estimate rests on just 15 recaptures, so the assumptions matter.",
+        "Answer: about 180 wallabies ✓"
+      ],
+      "caption": "N = (45 × 60) ÷ 15 = 180 wallabies.",
+      "voiceover": {
+        "text": "Now real animals. In Kakadu, forty-five agile wallabies were caught, tagged and released. A second catch of sixty contained fifteen tagged animals. Estimate the population. First, label the letters. M is forty-five, the number tagged. C is sixty, the second catch. R is fifteen, the tagged ones in that catch. Then N equals M times C, divided by R. Forty-five times sixty is two thousand seven hundred. Divided by fifteen, that's one hundred and eighty wallabies. And notice, the whole estimate rests on just fifteen recaptures, which is why the assumptions matter so much more in the field than in a container of beans."
+      },
+      "durationInFrames": 1345
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "It's not a head count",
+      "body": "Wrong: the population is just the number of animals you caught in total, the first catch plus the second.",
+      "secondary": "Right: you never catch the whole population. The estimate comes from the proportion of the second catch that is marked. A small marked fraction means your marked animals are a small part of a large population.",
+      "mistakeTag": "A proportion, not a total",
+      "callout": "Forty plus fifty is not the answer; the fraction is.",
+      "caption": "The Lincoln index scales a proportion; it does not add catches.",
+      "voiceover": {
+        "text": "Here's the trap. Thinking the population is just the animals you caught, first catch plus second catch. In the hook, that would be forty plus fifty, ninety fish. Wrong. You never catch the whole population. The estimate comes from the proportion of the second catch that's marked. Ten out of fifty is one fifth, so your forty marked fish are about one fifth of the lake. That's two hundred fish, not ninety. The Lincoln index turns a proportion into a total. It isn't a head count."
+      },
+      "durationInFrames": 1120
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "30 animals are marked and released. A second catch of 40 contains 6 marked. Estimate the population, and say what happens to the estimate if some marks wash off.",
+      "pausePrompt": "Pause: label M, C and R first.",
+      "answerSteps": [
+        "M = 30, C = 40, R = 6.",
+        "N = (30 × 40) ÷ 6 = 1200 ÷ 6 = 200.",
+        "If marks wash off, marked animals are counted as unmarked, so R falls.",
+        "Answer: about 200; lost marks would make the estimate too high ✓"
+      ],
+      "caption": "N = (30 × 40) ÷ 6 = 200; lost marks inflate N.",
+      "voiceover": {
+        "text": "Quick check. Thirty animals are marked and released. A second catch of forty contains six marked. Estimate the population, then say what happens to your estimate if some marks wash off. Pause, and label M, C and R first. OK. M is thirty, C is forty, R is six. So N equals thirty times forty, twelve hundred, divided by six, two hundred. And if marks wash off, marked animals get counted as unmarked, so R falls. R is on the bottom, so the estimate comes out too high."
+      },
+      "durationInFrames": 1146
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Mark-release-recapture estimates mobile populations you cannot count directly.",
+        "Lincoln index: N = (M × C) ÷ R, because R ÷ C = M ÷ N.",
+        "Assumptions: full mixing, harmless lasting marks, equal catchability, a closed population.",
+        "Lower R, bigger N: lost marks or emigration over-estimate; trap-happy animals under-estimate.",
+        "Model with beans for welfare; improve real surveys with bigger samples and repeats."
+      ],
+      "finalPrompt": "Label M, C and R, then ask: what would push R up or down?",
+      "caption": "Five takeaways on mark-release-recapture.",
+      "voiceover": {
+        "text": "Let's lock it in. Mark-release-recapture estimates mobile populations you can't count directly. The Lincoln index is N equals M times C, divided by R, because R over C equals M over N. It assumes full mixing, harmless marks that stay on, equal catchability, and a closed population. Lower R means a bigger N, so lost marks or emigration give an over-estimate, and trap-happy animals give an under-estimate. And model it with beans for animal welfare. Label M, C and R, then ask what would push R up or down."
+      },
+      "durationInFrames": 1158
+    }
+  ]
+}

@@ -1,0 +1,510 @@
+{
+  "title": "Carrying Capacity & Data Validity",
+  "subtitle": "What sets a population's ceiling, and how far to trust the data",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 25",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Explain how the carrying capacity of a selected ecosystem is affected by biotic and abiotic factors",
+    "Evaluate the validity, reliability and accuracy of ecological sampling data when drawing conclusions about ecosystem dynamics"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-05"
+  ],
+  "lessonIntent": "Students can explain carrying capacity and logistic growth, explain how biotic and abiotic factors set and shift carrying capacity in a selected ecosystem, and evaluate ecological data for validity, reliability and accuracy.",
+  "examSkill": "K moves when a limiting factor changes; reliable is not the same as accurate, and every evaluation ends with a judgement.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, carrying capacity and data validity. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Carrying capacity and data validity"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "image": "bioY11M3L8QuadratSampling",
+      "heading": "An invisible ceiling",
+      "body": "A few rabbits are released onto an island with plenty of grass. Their numbers explode, then growth slows and the population levels off, with no disaster at all.",
+      "callout": "What invisible ceiling halts it, and why does the ceiling move?",
+      "caption": "Every population meets a ceiling: its carrying capacity.",
+      "voiceover": {
+        "text": "A few rabbits are released onto an island with plenty of grass. At first their numbers explode. Then the growth slows, and the population levels off, even though no predator or disease arrives. What invisible ceiling halts it? And why would that ceiling move up or down as the seasons change? That ceiling is the carrying capacity. And in this final lesson, we'll also ask a scientist's question. How far can we trust the data behind conclusions like these?"
+      },
+      "durationInFrames": 1033
+    },
+    {
+      "id": "concept-logistic",
+      "type": "concept",
+      "heading": "Why every population hits a ceiling",
+      "body": "Carrying capacity, K, is the maximum population an ecosystem can support sustainably, given its resources.",
+      "bullets": [
+        {
+          "text": "Logistic, S-shaped growth: slow at first, then rapid, then slowing as resources run short."
+        },
+        {
+          "text": "As numbers rise, competition for food, water, space and shelter increases, and waste, disease and predation rise too."
+        },
+        {
+          "text": "Births fall and deaths rise until they balance at K; the population may oscillate slightly around it."
+        }
+      ],
+      "callout": "Without limits, growth would be exponential and unsustainable.",
+      "caption": "A logistic growth curve levelling off at carrying capacity.",
+      "voiceover": {
+        "text": "Carrying capacity, K, is the maximum population size an ecosystem can support sustainably, given its resources. Watch a population grow. Slow at first, then rapid, as numbers and breeders increase. Then it slows, because as the population gets crowded, individuals compete for finite food, water, space and shelter, and waste, disease and predation rise too. Births fall and deaths rise, until they balance. That plateau is K. This is logistic, or S-shaped, growth, and the population may wobble slightly around K rather than sitting perfectly still. Without those limits, growth would be exponential, and unsustainable."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Graph",
+        "props": {
+          "title": "Logistic (S-shaped) growth",
+          "x": {
+            "label": "time",
+            "min": 0,
+            "max": 20
+          },
+          "y": {
+            "label": "population size",
+            "min": 0,
+            "max": 100
+          },
+          "series": [
+            {
+              "label": "",
+              "curve": {
+                "type": "logistic",
+                "K": 80,
+                "r": 0.7,
+                "t0": 8,
+                "floor": 2
+              },
+              "at": 138,
+              "dur": 330
+            }
+          ],
+          "kLines": [
+            {
+              "y": 80,
+              "label": "carrying capacity, K",
+              "at": 726,
+              "amber": true
+            }
+          ],
+          "notes": [
+            {
+              "text": "slow start",
+              "x": 150,
+              "y": 400,
+              "at": 188
+            },
+            {
+              "text": "rapid growth",
+              "x": 330,
+              "y": 250,
+              "at": 226
+            },
+            {
+              "text": "slowing: resources limit",
+              "x": 600,
+              "y": 215,
+              "at": 313
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1233
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Two terms for populations, three for data quality.",
+      "bullets": [
+        {
+          "text": "Carrying capacity (K): the maximum population an ecosystem can support sustainably over time. Logistic growth: rapid, then slowing, then levelling off at K."
+        },
+        {
+          "text": "Validity: does the method measure what it claims, with the right variables controlled?"
+        },
+        {
+          "text": "Reliability: do repeated measurements give consistent results?"
+        },
+        {
+          "text": "Accuracy: how close is the measurement to the true value?"
+        }
+      ],
+      "callout": "Reliable is not the same as accurate.",
+      "caption": "Carrying capacity, logistic growth, validity, reliability, accuracy.",
+      "voiceover": {
+        "text": "Let's lock in five terms. Carrying capacity is the maximum population an ecosystem can support sustainably over time. Logistic growth is growth that's rapid at first, then slows and levels off at carrying capacity. Now the data words. Validity asks, does the method actually measure what it claims to, with the right variables controlled? Reliability asks, do repeated measurements give consistent results? And accuracy asks, how close is the measurement to the true value? Keep the last two apart. Reliable is not the same as accurate."
+      },
+      "durationInFrames": 1120
+    },
+    {
+      "id": "concept-shift",
+      "type": "concept",
+      "heading": "K is not fixed",
+      "body": "Carrying capacity rises when a limiting resource increases and falls when it decreases, whether the factor is living or non-living.",
+      "bullets": [
+        {
+          "text": "Abiotic: water, light, nutrients, temperature, space, shelter. Rain grows food and raises K; drought or fire lowers it."
+        },
+        {
+          "text": "Biotic: food supply, predators, competitors, disease. More predators or a new competitor lower K."
+        },
+        {
+          "text": "On the island, a drought that halves the grass lowers K, and the rabbits fall to the new K; a good season raises it again."
+        }
+      ],
+      "secondary": "A persistent factor moves K for good: myxoma virus, released in 1950, cut Australia's rabbits from something like 600 million to about 100 million, and they levelled off at a new, lower K.",
+      "callout": "Change a limiting factor, and K moves.",
+      "caption": "Carrying capacity falling in a drought and rising in a good season.",
+      "voiceover": {
+        "text": "Here's the key idea. K isn't a fixed number. It rises when a limiting resource increases, and falls when it decreases. Back to the island rabbits, living at their carrying capacity. Then a drought halves the grass. The ceiling drops, and the rabbit population has to fall to the new, lower K. Then a good season grows more grass. The ceiling rises, and the population can grow again. Abiotic factors like water, nutrients, temperature and shelter set K, and so do biotic factors, like food, predators, competitors and disease. And a factor that persists can move K for good. After myxoma virus was released in nineteen fifty, rabbits levelled off at a new, lower ceiling."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Graph",
+        "props": {
+          "title": "The ceiling moves; the population follows",
+          "x": {
+            "label": "time",
+            "min": 0,
+            "max": 30
+          },
+          "y": {
+            "label": "rabbit population",
+            "min": 0,
+            "max": 100
+          },
+          "series": [
+            {
+              "label": "rabbits",
+              "points": [
+                [
+                  0,
+                  78
+                ],
+                [
+                  2,
+                  80
+                ],
+                [
+                  4,
+                  79
+                ],
+                [
+                  6,
+                  80
+                ],
+                [
+                  8,
+                  79
+                ],
+                [
+                  10,
+                  76
+                ],
+                [
+                  11,
+                  66
+                ],
+                [
+                  12,
+                  55
+                ],
+                [
+                  13,
+                  47
+                ],
+                [
+                  14,
+                  43
+                ],
+                [
+                  15,
+                  41
+                ],
+                [
+                  16,
+                  40
+                ],
+                [
+                  17,
+                  41
+                ],
+                [
+                  18,
+                  40
+                ],
+                [
+                  19,
+                  41
+                ],
+                [
+                  20,
+                  44
+                ],
+                [
+                  21,
+                  52
+                ],
+                [
+                  22,
+                  62
+                ],
+                [
+                  23,
+                  70
+                ],
+                [
+                  24,
+                  76
+                ],
+                [
+                  25,
+                  80
+                ],
+                [
+                  26,
+                  83
+                ],
+                [
+                  27,
+                  85
+                ],
+                [
+                  28,
+                  86
+                ],
+                [
+                  30,
+                  86
+                ]
+              ],
+              "at": 263,
+              "dur": 420,
+              "labelAt": 4,
+              "labelDy": 30
+            }
+          ],
+          "kLines": [
+            {
+              "y": 80,
+              "label": "K",
+              "from": 0,
+              "to": 10,
+              "at": 263
+            },
+            {
+              "y": 40,
+              "label": "lower K",
+              "from": 10,
+              "to": 20,
+              "at": 401,
+              "amber": true
+            },
+            {
+              "y": 86,
+              "label": "higher K",
+              "from": 20,
+              "to": 30,
+              "at": 676
+            }
+          ],
+          "markers": [
+            {
+              "x": 10,
+              "text": "drought",
+              "at": 326
+            },
+            {
+              "x": 20,
+              "text": "good season",
+              "at": 588
+            }
+          ],
+          "footer": [
+            {
+              "text": "Abiotic and biotic limiting factors both move K",
+              "at": 788,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1483
+    },
+    {
+      "id": "concept-quality",
+      "type": "concept",
+      "heading": "Can you trust the numbers?",
+      "body": "Two groups estimate the same daisy population in the same 500 m² plot on the same day. An exhaustive count later finds 1850.",
+      "bullets": [
+        {
+          "text": "Group A: twelve random 1 m² quadrats, repeated three times: 1780, 1920, 1835."
+        },
+        {
+          "text": "Group B: three quadrats, all in the greenest corner, repeated three times: 3040, 3110, 3075."
+        },
+        {
+          "text": "B is more consistent, so more reliable, yet far from the truth. A is valid and accurate to better than 1%."
+        }
+      ],
+      "secondary": "B's error is a bias in the design, with a known direction (upward). No number of repeats can remove it.",
+      "callout": "Repeating a method tells you nothing about whether the method is any good.",
+      "caption": "Reliable but inaccurate (Group B) versus valid and accurate (Group A).",
+      "voiceover": {
+        "text": "Now judge some data. Two groups estimate the same daisy population in the same plot, on the same day. Later, an exhaustive count finds eighteen hundred and fifty. Group A used twelve quadrats at random coordinates, three times, and got estimates close to that. Group B used just three quadrats, all in the greenest corner, and got about three thousand, every time. Reliability first. Group B's estimates are tighter, so B is actually more reliable. Now accuracy. Group A's mean is within five of the truth. Group B is out by more than twelve hundred. That's reliable but not accurate. And validity explains why. B's sample could never represent the plot."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Estimates",
+        "props": {
+          "title": "Same plot, same day, true value known",
+          "truth": 1850,
+          "axis": {
+            "min": 1500,
+            "max": 3300,
+            "ticks": [
+              1500,
+              2000,
+              2500,
+              3000
+            ],
+            "label": "estimated number of daisies"
+          },
+          "groups": [
+            {
+              "name": "Group A",
+              "method": "12 random quadrats",
+              "values": [
+                1780,
+                1920,
+                1835
+              ],
+              "at": 288,
+              "verdict": {
+                "text": "valid, accurate",
+                "at": 901
+              }
+            },
+            {
+              "name": "Group B",
+              "method": "3 quadrats, greenest corner",
+              "values": [
+                3040,
+                3110,
+                3075
+              ],
+              "at": 488,
+              "verdict": {
+                "text": "reliable, NOT accurate",
+                "at": 1126,
+                "amber": true
+              }
+            }
+          ],
+          "beats": {
+            "truth": 188,
+            "spread": 713,
+            "error": 876
+          },
+          "footer": [
+            {
+              "text": "B's sample could never represent the plot: invalid design",
+              "at": 1200,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1433
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Carrying capacity in a selected ecosystem",
+      "question": "Explain how biotic and abiotic factors affect the carrying capacity of red kangaroos in the semi-arid rangelands of western New South Wales.",
+      "coachNote": "Name the ecosystem, each limiting factor, the direction it pushes K, and the evidence.",
+      "steps": [
+        "Abiotic: rainfall is low and unpredictable. Rain grows pasture, pasture feeds kangaroos, so numbers track pasture, which tracks rainfall with a lag of months.",
+        "Evidence: aerial surveys showed kangaroo numbers falling heavily in the 1982–83 drought, then recovering in the wet years after.",
+        "Biotic: the dingo fence separates country with and without dingoes, with similar soils, rainfall and vegetation; kangaroo density is much higher where dingoes are absent.",
+        "So rainfall sets how high the ceiling can go, and dingo predation holds the population below it.",
+        "Answer: K rises and falls with rainfall, and predation lowers it wherever dingoes are present ✓"
+      ],
+      "caption": "Rainfall sets the ceiling; dingo predation holds kangaroos below it.",
+      "voiceover": {
+        "text": "Let's explain carrying capacity in a selected ecosystem, the semi-arid rangelands of western New South Wales, and the red kangaroo. The abiotic factor is rainfall, low and unpredictable. Rain doesn't feed a kangaroo directly. Rain grows pasture, and pasture feeds kangaroos, so their numbers track pasture, which tracks rainfall with a lag of months. Long-running aerial surveys showed numbers falling heavily in the drought of nineteen eighty-two and eighty-three, then climbing again. The biotic factor is predation. The dingo fence separates country with and without dingoes, with similar soils, rain and vegetation, and kangaroo density is much higher where dingoes are absent. So rainfall sets how high the ceiling can go, and dingoes hold the population below it."
+      },
+      "durationInFrames": 1521
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two traps in one lesson",
+      "body": "Wrong: carrying capacity is a fixed number for a species, and \"reliable\" data is the same as \"accurate\" data.",
+      "secondary": "Right: K changes whenever the limiting factors change: a drought lowers it, more rain raises it. And a method can give the same wrong answer every time: reliable but not accurate. You need validity, reliability AND accuracy.",
+      "mistakeTag": "K moves; reliable ≠ accurate",
+      "callout": "Name the flaw, say which quality it damages, say which way it pushes the result, then judge.",
+      "caption": "K is not fixed, and reliability is not accuracy.",
+      "voiceover": {
+        "text": "Two traps. First, treating carrying capacity as a fixed number for a species. It isn't. K changes whenever the limiting factors change. A drought lowers it, more rain raises it. Second, thinking reliable data means accurate data. A method can give the same wrong answer every time, like Group B. That's reliable, but not accurate. To trust a conclusion you need all three, validity, reliability and accuracy. So in an evaluation, name the specific flaw, say which quality it damages, say which way it pushes the result, then state how much confidence the conclusion deserves."
+      },
+      "durationInFrames": 1233
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "True count: 415 daisies. Group C (twelve random quadrats) got 412, 388 and 400. Group D (three quadrats by the path, where daisies were densest) got 690, 702 and 696. Evaluate the two surveys.",
+      "pausePrompt": "Pause: spread for reliability, distance from 415 for accuracy.",
+      "answerSteps": [
+        "Reliability: C spans 24; D spans only 12, so D is more consistent.",
+        "Accuracy: C's mean is 400, 15 below the truth; D's mean is 696, 281 too high.",
+        "Validity: D sampled only the densest patch, a biased design; C sampled at random.",
+        "Answer: accept C's conclusion; reject D's, because its error is an upward bias that repeats cannot fix ✓"
+      ],
+      "caption": "Group C is valid and accurate; Group D is reliably biased.",
+      "voiceover": {
+        "text": "Quick check. The true count is four hundred and fifteen daisies. Group C used twelve random quadrats and got four hundred and twelve, three hundred and eighty-eight, and four hundred. Group D used three quadrats by the path, where daisies were densest, and got six hundred and ninety, seven hundred and two, and six hundred and ninety-six. Evaluate the two surveys. Pause, and use spread for reliability, and distance from four fifteen for accuracy. OK. D is actually more consistent. But C's mean, four hundred, is close to the truth, while D's, six ninety-six, is far too high. D sampled only the densest patch, a biased design. So accept C, and reject D."
+      },
+      "durationInFrames": 1458
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Carrying capacity (K): the largest population an ecosystem can sustain; logistic growth levels off at K.",
+        "Abiotic (water, nutrients, temperature, shelter) and biotic (food, predators, competitors, disease) factors set K.",
+        "Change a limiting factor and K moves: rainfall and dingoes for kangaroos; myxoma for rabbits.",
+        "Validity: right thing measured, representative. Reliability: consistent. Accuracy: close to the truth.",
+        "Reliable is not accurate: judge all three, then state how far the conclusion is supported."
+      ],
+      "finalPrompt": "End every evaluation with a judgement about how much the conclusion can be trusted.",
+      "caption": "Five takeaways on carrying capacity and data quality.",
+      "voiceover": {
+        "text": "Let's lock it in, and close out this focus area. Carrying capacity is the largest population an ecosystem can sustain, and logistic growth levels off at K. Abiotic factors, like water, nutrients, temperature and shelter, and biotic factors, like food, predators, competitors and disease, set K. Change a limiting factor, and K moves, rainfall and dingoes for kangaroos, myxoma for rabbits. Validity means measuring the right thing, representatively. Reliability means consistent. Accuracy means close to the truth. And reliable is not accurate. End every evaluation with a judgement about how far the conclusion can be trusted."
+      },
+      "durationInFrames": 1245
+    }
+  ]
+}

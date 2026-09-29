@@ -1,0 +1,307 @@
+{
+  "title": "What Shapes a Community",
+  "subtitle": "How abiotic and biotic factors set abundance, distribution and diversity",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 21",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Explain how abiotic and biotic factors influence the abundance, distribution and diversity of species in an ecosystem"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03"
+  ],
+  "lessonIntent": "Students can explain how abiotic factors (through tolerance ranges and limiting factors) and biotic factors (competition, predation, disease) together influence the abundance, distribution and diversity of species.",
+  "examSkill": "Name the factor, say whether it is abiotic or biotic, and say which of abundance, distribution or diversity it changes, and how.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, what shapes a community. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "What shapes a community"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "image": "bioY11M3L9LynxHare",
+      "heading": "Remove the hunter, lose species?",
+      "body": "Remove the predator from a rocky shore and, surprisingly, the number of species can crash rather than rise.",
+      "callout": "How can losing a hunter reduce diversity?",
+      "caption": "Living factors shape a community as powerfully as non-living ones.",
+      "voiceover": {
+        "text": "Why are thousands of species packed into a rainforest, but only a handful scattered across a salt lake? Why does one barnacle live high on a rock, and another low down? And here's a real puzzle. Remove the predator from a rocky shore, and the number of species can crash, rather than rise. How can losing a hunter reduce diversity? The answer is a tug-of-war between the non-living conditions and the living organisms. Let's see how they shape a community."
+      },
+      "durationInFrames": 1046
+    },
+    {
+      "id": "concept-measures",
+      "type": "concept",
+      "heading": "How many, where, how varied",
+      "body": "Ecologists describe a community with three measures, and every factor can change one or all of them.",
+      "bullets": [
+        {
+          "text": "Abundance: how many individuals of a species are present."
+        },
+        {
+          "text": "Distribution: where the species is found, its spatial pattern."
+        },
+        {
+          "text": "Diversity: the variety of different species in the ecosystem."
+        }
+      ],
+      "secondary": "Low water can reduce a plant's abundance, restrict it to wetter patches, and lower the whole ecosystem's diversity.",
+      "callout": "One factor can move all three measures.",
+      "caption": "Abundance, distribution and diversity.",
+      "voiceover": {
+        "text": "Ecologists describe a community with three measures. Abundance is how many, the number of individuals of a species present. Distribution is where, the spatial pattern of where the species is found. And diversity is how varied, the number of different species in the ecosystem. A single factor can move all three. Take low water availability. It can reduce a plant's abundance, restrict its distribution to the wetter patches, and lower the overall diversity of the ecosystem. And the factors come in two groups, abiotic, like temperature, water, light and salinity, and biotic, like competition, predation and disease."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Panels",
+        "props": {
+          "title": "Three measures of a community",
+          "columns": [
+            {
+              "name": "Abundance",
+              "sub": "how many",
+              "icon": "tally",
+              "at": 26,
+              "lines": [
+                {
+                  "text": "low water: fewer plants",
+                  "at": 650
+                }
+              ]
+            },
+            {
+              "name": "Distribution",
+              "sub": "where",
+              "icon": "map",
+              "at": 176,
+              "lines": [
+                {
+                  "text": "low water: only in wetter patches",
+                  "at": 700
+                }
+              ]
+            },
+            {
+              "name": "Diversity",
+              "sub": "how varied",
+              "icon": "variety",
+              "at": 338,
+              "lines": [
+                {
+                  "text": "low water: fewer species overall",
+                  "at": 800
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "text": "Abiotic and biotic factors both move all three",
+              "at": 901,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1258
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Two more terms make the abiotic story precise.",
+      "bullets": [
+        {
+          "text": "Abundance: how many individuals of a species are in an area. Distribution: where it is found."
+        },
+        {
+          "text": "Diversity: the variety of different species present in an ecosystem."
+        },
+        {
+          "text": "Limiting factor: the factor in shortest supply, or at an extreme, that restricts a population's size or range."
+        },
+        {
+          "text": "Tolerance range: the range of an abiotic factor a species can survive; outside it, the species cannot persist."
+        }
+      ],
+      "callout": "The limiting factor caps abundance; the tolerance range sets distribution.",
+      "caption": "Abundance, distribution, diversity, limiting factor, tolerance range.",
+      "voiceover": {
+        "text": "Two more terms make this precise. A limiting factor is the factor in shortest supply, or at an extreme, that restricts a population's size or where it can live. In a desert, that's usually water. And a tolerance range is the range of an abiotic factor, like temperature, salinity or pH, that a species can survive. Outside that range, the species can't persist at all. So keep them straight. The limiting factor caps abundance, and the tolerance range sets distribution."
+      },
+      "durationInFrames": 1046
+    },
+    {
+      "id": "concept-tolerance",
+      "type": "concept",
+      "heading": "Tolerance ranges set distribution",
+      "body": "Every species survives only within a range of each abiotic factor, and the factor furthest from its optimum limits it.",
+      "bullets": [
+        {
+          "text": "Near the optimum: thriving and abundant. Near the edges: stressed and rarer. Beyond the limits: absent."
+        },
+        {
+          "text": "So along a gradient, the crowd thins towards the edges and stops at the limits."
+        },
+        {
+          "text": "Harsh or extreme conditions suit few species, so diversity is low: a salt lake or hot spring, versus a stable rainforest."
+        }
+      ],
+      "callout": "The same gradient that sets the boundary shapes the numbers inside it.",
+      "caption": "A tolerance range: optimum, stress zones and limits.",
+      "voiceover": {
+        "text": "Here's how an abiotic factor actually changes a community. Watch the graph of abundance against a factor, say temperature. Every species has a tolerance range. In the middle is the optimum zone, where it thrives and is most abundant. Towards the edges are zones of stress, where individuals survive but grow poorly, so they're rarer. And beyond the limits, the species is absent. Now look at the ground along that same gradient. The organisms crowd in the middle, thin out towards the edges, and stop at the limits. That's distribution, set by tolerance. And harsh conditions suit very few species, which is why a salt lake has low diversity, and a stable rainforest has so much."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Tolerance",
+        "props": {
+          "title": "One species, one abiotic factor",
+          "factor": "temperature",
+          "organism": "shrub",
+          "beats": {
+            "curve": 50,
+            "zones": 176,
+            "optimum": 401,
+            "ground": 738,
+            "limit": 988
+          },
+          "limitText": "beyond the limit: absent"
+        }
+      },
+      "durationInFrames": 1495
+    },
+    {
+      "id": "concept-shore",
+      "type": "concept",
+      "heading": "Abiotic and biotic, on the same shore",
+      "body": "On a rocky shore, species form bands. An experiment showed the two kinds of factor set different edges of the same bands.",
+      "bullets": [
+        {
+          "text": "Connell (1961) removed one barnacle species and watched the other."
+        },
+        {
+          "text": "The lower-shore species' upper limit was set by drying out: an abiotic tolerance limit."
+        },
+        {
+          "text": "The upper-shore species' lower limit was set by being crowded out by its competitor: a biotic limit that vanished when the competitor was removed."
+        }
+      ],
+      "secondary": "Biotic factors can override conditions: a predator can raise diversity by stopping one prey species taking over all the space.",
+      "callout": "Abiotic sets the possibilities; biotic decides who fills them.",
+      "caption": "Connell's barnacles: one edge set by drying, the other by competition.",
+      "voiceover": {
+        "text": "The rocky shore is the classic worked example, and it was settled by an experiment. Two barnacle species live in two bands. It's tempting to think each band is just where that species can tolerate drying out. Joseph Connell tested it, in nineteen sixty-one. The upper limit of the lower-shore species was set by drying out, an abiotic tolerance limit. But the lower limit of the upper-shore species was set by its competitor crowding it out, a biotic limit. When Connell removed the competitor, the upper-shore species spread down into that zone. So both kinds of factor shape the same band. And biotic factors can even raise diversity, like a predator stopping one prey species taking over all the space."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Shore",
+        "props": {
+          "title": "Two barnacle species on one shore",
+          "beats": {
+            "shore": 0,
+            "upper": 126,
+            "lower": 150,
+            "dry": 588,
+            "compete": 800,
+            "remove": 926
+          },
+          "footer": [
+            {
+              "text": "Abiotic sets one edge; biotic sets the other",
+              "at": 1088,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1545
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Classify and explain the factors",
+      "question": "For each factor, say abiotic or biotic, and which measure it most affects: (a) a sudden frost, (b) a new predator arriving, (c) rich, deep soil, (d) two bird species competing for the same nest holes.",
+      "coachNote": "Classify first, then name the measure, then give the effect in one line.",
+      "steps": [
+        "(a) Frost: abiotic. Abundance falls as individuals outside their tolerance range die.",
+        "(b) New predator: biotic. Prey abundance falls; prey distribution may shrink to refuges.",
+        "(c) Rich, deep soil: abiotic. Raises plant abundance and can support more species (diversity).",
+        "(d) Competing birds: biotic. The weaker competitor's abundance falls, or it is pushed out of part of its range (distribution).",
+        "Answer: frost and soil abiotic; predator and competitor biotic, each changing a named measure ✓"
+      ],
+      "caption": "Classify each factor, then name the measure it changes.",
+      "voiceover": {
+        "text": "Let's classify some factors, and say which measure each affects most. A, a sudden frost. That's abiotic, and it lowers abundance, as individuals pushed outside their tolerance range die. B, a new predator arrives. Biotic. Prey abundance falls, and the prey may be restricted to refuges, changing distribution. C, rich, deep soil. Abiotic. It raises plant abundance, and can support more species, so diversity too. D, two bird species competing for the same nest holes. Biotic. The weaker competitor's abundance falls, or it's pushed out of part of its range, its distribution. Classify, name the measure, give the effect."
+      },
+      "durationInFrames": 1283
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "It's not only the physical environment",
+      "body": "Wrong: only the physical environment, the abiotic factors, decides which species live where.",
+      "secondary": "Right: biotic factors are just as important. Competition, predation, disease and food supply shape abundance, distribution and diversity, and can override the conditions.",
+      "mistakeTag": "Able to live there ≠ living there",
+      "callout": "A species may be physically able to live somewhere, yet be kept out by a competitor or predator.",
+      "caption": "Biotic factors can exclude a species the conditions would allow.",
+      "voiceover": {
+        "text": "Here's the misconception. Thinking only the physical environment decides which species live where. Biotic factors are just as important. Competition, predation, disease and food supply all shape abundance, distribution and diversity, and sometimes they override the conditions completely. Connell's barnacle could live lower on the shore, but its competitor kept it out. So a species being able to live somewhere, isn't the same as it actually living there. The full explanation always combines both kinds of factor."
+      },
+      "durationInFrames": 1008
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Back to the hook: removing the predator from a rocky shore can make the number of species fall. Explain how.",
+      "pausePrompt": "Pause: what did the predator stop one prey species from doing?",
+      "answerSteps": [
+        "The predator kept a dominant prey species in check.",
+        "Without it, that prey species increases and takes over the space.",
+        "Other species are crowded out, so fewer species persist.",
+        "Answer: the predator raised diversity by stopping one prey species monopolising the shore ✓"
+      ],
+      "caption": "A predator can raise diversity by keeping a dominant prey in check.",
+      "voiceover": {
+        "text": "Quick check, and it's the hook. Removing the predator from a rocky shore can make the number of species fall. Explain how. Pause, and think about what the predator was stopping one prey species from doing. OK. The predator was keeping a dominant prey species in check. Take the predator away, and that prey species multiplies and takes over the space. The other species get crowded out, so fewer species persist. So the predator was actually raising diversity, by stopping one species monopolising the shore."
+      },
+      "durationInFrames": 1108
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Communities are described by abundance (how many), distribution (where) and diversity (how varied).",
+        "Tolerance ranges set distribution; the limiting factor caps abundance.",
+        "Harsh, extreme conditions mean few species; stable, favourable ones mean many.",
+        "Competition, predation and disease reshape the community and can override conditions.",
+        "Connell's barnacles: one band edge set by drying, the other by competition."
+      ],
+      "finalPrompt": "For any pattern: abiotic or biotic, and which of the three measures does it move?",
+      "caption": "Five takeaways on what shapes a community.",
+      "voiceover": {
+        "text": "Let's lock it in. A community is described by abundance, distribution and diversity. Tolerance ranges set distribution, and the limiting factor caps abundance. Harsh, extreme conditions mean few species, and stable, favourable ones mean many. Competition, predation and disease reshape the community, and can override the conditions. And Connell's barnacles show both at once, one band edge set by drying out, the other by competition. For any pattern, ask, abiotic or biotic, and which measure does it move?"
+      },
+      "durationInFrames": 1020
+    }
+  ]
+}

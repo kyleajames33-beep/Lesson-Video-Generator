@@ -1,0 +1,426 @@
+{
+  "title": "Features of an Ecosystem (Practical)",
+  "subtitle": "Collecting abiotic and biotic data to describe how an ecosystem works",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 19",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Conduct a practical investigation to collect and analyse abiotic and biotic data, to discuss the features of an ecosystem"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-02",
+    "BI-11WS-03",
+    "BI-11WS-04"
+  ],
+  "lessonIntent": "Students can plan and conduct a field investigation that collects abiotic and biotic data, analyse the data, and use it to discuss the features of an ecosystem.",
+  "examSkill": "Link the biotic pattern to the abiotic measurements taken at the same places, and state that a single site shows a relationship, not proof of cause.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, the features of an ecosystem. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Features of an ecosystem"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "image": "bioY11M3L8QuadratSampling",
+      "heading": "Why is the moss only on one side?",
+      "body": "One side of a tree carries thick moss while the other side is bare. Same tree, same species of moss nearby.",
+      "callout": "Measure the light, moisture and temperature, and the pattern of life starts to make sense.",
+      "caption": "Living things and non-living conditions are linked.",
+      "voiceover": {
+        "text": "Here's something you've probably walked past. One side of a tree is covered in thick moss, and the other side is bare. Same tree, same patch of bush. Why? The living and the non-living aren't separate. Measure the light, the moisture and the temperature on each side, and the pattern of life suddenly makes sense. To understand an ecosystem as a scientist, you can't just look, you have to measure. So today, how to collect the data that describes an ecosystem."
+      },
+      "durationInFrames": 1058
+    },
+    {
+      "id": "concept-halves",
+      "type": "concept",
+      "heading": "The two halves of every ecosystem",
+      "body": "An ecosystem is a community of living organisms interacting with each other and with their non-living environment in a particular area.",
+      "bullets": [
+        {
+          "text": "Abiotic factors: temperature, light intensity, soil or water pH, moisture, salinity, dissolved oxygen, wind."
+        },
+        {
+          "text": "Biotic factors: the species present, their abundance and distribution, and interactions such as feeding relationships."
+        },
+        {
+          "text": "The abiotic conditions set the stage; a change in one, like more shade or saltier soil, usually changes the community."
+        }
+      ],
+      "callout": "Record both, or you can only describe half the ecosystem.",
+      "caption": "Sorting abiotic and biotic features of an ecosystem.",
+      "voiceover": {
+        "text": "Every ecosystem has two halves. The biotic half is the living part, and the abiotic half is the non-living part. Let's sort them. Temperature, abiotic. Light intensity, abiotic. The pH of soil or water, abiotic. Moisture, salinity, dissolved oxygen, wind, all abiotic. On the other side, the species present, biotic. How abundant each one is, and where it's found, biotic. And interactions, like who eats whom, biotic too. The abiotic conditions set the stage, and the biotic data show who's on it. Change one abiotic factor, like more shade, and the community usually changes with it."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Sorter",
+        "props": {
+          "title": "Abiotic or biotic?",
+          "bins": [
+            {
+              "title": "Abiotic",
+              "sub": "non-living conditions",
+              "tone": "grey"
+            },
+            {
+              "title": "Biotic",
+              "sub": "living components",
+              "tone": "accent"
+            }
+          ],
+          "items": [
+            {
+              "text": "temperature",
+              "bin": 0,
+              "at": 226
+            },
+            {
+              "text": "light intensity",
+              "bin": 0,
+              "at": 251
+            },
+            {
+              "text": "pH",
+              "bin": 0,
+              "at": 288
+            },
+            {
+              "text": "moisture",
+              "bin": 0,
+              "at": 376
+            },
+            {
+              "text": "salinity",
+              "bin": 0,
+              "at": 388
+            },
+            {
+              "text": "dissolved oxygen",
+              "bin": 0,
+              "at": 401
+            },
+            {
+              "text": "species present",
+              "bin": 1,
+              "at": 513
+            },
+            {
+              "text": "abundance",
+              "bin": 1,
+              "at": 563
+            },
+            {
+              "text": "distribution",
+              "bin": 1,
+              "at": 638
+            },
+            {
+              "text": "feeding relationships",
+              "bin": 1,
+              "at": 726
+            }
+          ],
+          "footer": [
+            {
+              "text": "Abiotic sets the stage; biotic shows who is on it",
+              "at": 788,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1245
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for fieldwork.",
+      "bullets": [
+        {
+          "text": "Ecosystem: a community of organisms together with the non-living environment they interact with."
+        },
+        {
+          "text": "Abiotic factor: a non-living physical or chemical feature, such as temperature, light or pH. Biotic factor: a living component and its interactions."
+        },
+        {
+          "text": "Quadrat: a square frame of known area placed on the ground to sample the organisms inside it."
+        },
+        {
+          "text": "Abundance: the number of individuals of a species in an area, or a measure such as percentage cover."
+        }
+      ],
+      "callout": "An ecosystem is the community AND its environment.",
+      "caption": "Ecosystem, abiotic, biotic, quadrat, abundance.",
+      "voiceover": {
+        "text": "The key words. An ecosystem is a community of organisms together with the non-living environment they interact with, in a particular area. An abiotic factor is a non-living physical or chemical feature, like temperature, light or pH. A biotic factor is a living component, like a plant, animal or fungus, and its interactions. A quadrat is a square frame of known area, placed on the ground to sample what's inside it. And abundance is the number of individuals of a species in an area, or a measure like percentage cover."
+      },
+      "durationInFrames": 1170
+    },
+    {
+      "id": "concept-collect",
+      "type": "concept",
+      "heading": "Collecting the data",
+      "body": "Each abiotic factor has its own instrument, and biotic abundance is sampled with quadrats placed in a planned way.",
+      "bullets": [
+        {
+          "text": "Temperature: thermometer or data logger. Light: light meter. pH: pH meter or probe. Soil moisture: moisture meter."
+        },
+        {
+          "text": "Biotic: place several quadrats at random; in each, record the species and their abundance (a count, or percentage cover)."
+        },
+        {
+          "text": "Measure abiotic and biotic data at the same places, so they can be related."
+        }
+      ],
+      "secondary": "Write a risk assessment first: uneven ground and water edges, sun and heat, bites and stings, unknown plants. Disturb the site as little as possible.",
+      "callout": "Same places, same times, or the data cannot be linked.",
+      "caption": "Instruments for abiotic factors, quadrats for biotic data.",
+      "voiceover": {
+        "text": "So how do you actually collect the data? Each abiotic factor has its own instrument. Temperature, a thermometer or data logger. Light intensity, a light meter. pH of soil or water, a pH meter or probe. Soil moisture, a soil-moisture meter. For the biotic data, you use quadrats. Place several at random, and in each one record which species are present and how abundant they are, as a count, or percentage cover for plants. And here's the key detail. Take the abiotic readings at the same places as the quadrats, so the two can be linked. Before any of this, write a risk assessment, and leave the site as you found it."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Panels",
+        "props": {
+          "layout": "tiles",
+          "title": "The right tool for each measurement",
+          "columns": [
+            {
+              "name": "Thermometer",
+              "sub": "temperature",
+              "icon": "thermometer",
+              "badge": "abiotic",
+              "at": 126
+            },
+            {
+              "name": "Light meter",
+              "sub": "light intensity",
+              "icon": "lightMeter",
+              "badge": "abiotic",
+              "at": 200
+            },
+            {
+              "name": "pH probe",
+              "sub": "soil or water pH",
+              "icon": "phProbe",
+              "badge": "abiotic",
+              "at": 263
+            },
+            {
+              "name": "Moisture meter",
+              "sub": "soil moisture",
+              "icon": "moistureMeter",
+              "badge": "abiotic",
+              "at": 388
+            },
+            {
+              "name": "Quadrat",
+              "sub": "species and abundance",
+              "icon": "quadrat",
+              "badge": "biotic",
+              "at": 500,
+              "amber": true
+            }
+          ],
+          "footer": [
+            {
+              "text": "Measure both at the same places",
+              "at": 926,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1446
+    },
+    {
+      "id": "concept-analyse",
+      "type": "concept",
+      "heading": "Turning numbers into features",
+      "body": "Tabulate the readings and counts, average them, graph them, then explain the community in terms of the conditions.",
+      "bullets": [
+        {
+          "text": "A creek bank, two zones. Shaded: 200 lux, high soil moisture, ferns and mosses abundant."
+        },
+        {
+          "text": "Open: 18 000 lux, low soil moisture, grasses and a few hardy shrubs."
+        },
+        {
+          "text": "Discuss the features: dominant species, diversity, zonation, and how abiotic factors explain the distribution."
+        }
+      ],
+      "secondary": "Improve it: repeat and average readings, use several random quadrats, measure at consistent times. A single visit is only a snapshot.",
+      "callout": "Biotic pattern + abiotic gradient = a feature you can explain.",
+      "caption": "Shaded and open zones of a creek bank, compared.",
+      "voiceover": {
+        "text": "Now the analysis. Here's data a class recorded on a creek bank with two zones. The shaded zone, two hundred lux of light, high soil moisture, with ferns and mosses abundant. The open zone, eighteen thousand lux, low soil moisture, with grasses and a few hardy shrubs. See how the plant community lines up with the conditions? That's zonation. Different communities in different conditions. To discuss the features, name the dominant species, the diversity, the zonation, and how the abiotic factors explain the distribution. And to make it trustworthy, repeat readings and average them, use several random quadrats, and measure at consistent times. One visit is only a snapshot."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Panels",
+        "props": {
+          "layout": "matrix",
+          "title": "A creek bank, two zones",
+          "columns": [
+            {
+              "name": "Shaded zone",
+              "icons": [
+                "fern",
+                "moss"
+              ],
+              "at": 126
+            },
+            {
+              "name": "Open zone",
+              "icons": [
+                "grass",
+                "shrub"
+              ],
+              "at": 326
+            }
+          ],
+          "rowLabels": [
+            {
+              "text": "Light",
+              "at": 163
+            },
+            {
+              "text": "Soil moisture",
+              "at": 226
+            },
+            {
+              "text": "Plants",
+              "at": 276
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "200 lux"
+              },
+              {
+                "text": "18 000 lux",
+                "at": 363
+              }
+            ],
+            [
+              {
+                "text": "high"
+              },
+              {
+                "text": "low",
+                "at": 401
+              }
+            ],
+            [
+              {
+                "text": "ferns and mosses abundant"
+              },
+              {
+                "text": "grasses, a few hardy shrubs",
+                "at": 451
+              }
+            ]
+          ],
+          "footer": [
+            {
+              "text": "Different conditions, different communities: zonation",
+              "at": 650,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1408
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Link the data",
+      "question": "Shaded zone: 200 lux, high soil moisture, ferns and mosses abundant. Open zone: 18 000 lux, low soil moisture, grasses and hardy shrubs. Use the abiotic data to explain the difference, and state one feature it reveals.",
+      "coachNote": "Quote the numbers, link them to the plants, then state the limit.",
+      "steps": [
+        "The shaded zone gets far less light (200 against 18 000 lux) and keeps its soil moist.",
+        "Ferns and mosses suit low light and damp conditions, so they dominate there.",
+        "The bright, dry open zone favours grasses and hardy, drought-tolerant shrubs.",
+        "Feature revealed: zonation, with the community changing along the light and moisture gradient.",
+        "Limit: this shows a relationship at one site, not proven cause; repeat across sites ✓"
+      ],
+      "caption": "The communities track the light and moisture gradient: zonation.",
+      "voiceover": {
+        "text": "Let's link the data. Start with the numbers. The shaded zone gets far less light, two hundred lux against eighteen thousand, and it keeps its soil moist. Now link them to the plants. Ferns and mosses suit low light and damp conditions, so they dominate the shaded zone. The bright, dry open zone favours grasses and hardy shrubs that can tolerate drought. So the feature this reveals is zonation, the community changes along a gradient of light and moisture. And the top-band sentence. At one site this shows a relationship, not proven cause. Something else, like soil type, could be involved, so you'd repeat it at other sites."
+      },
+      "durationInFrames": 1395
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "An ecosystem is more than its organisms",
+      "body": "Wrong: an ecosystem is just the collection of living things in an area.",
+      "secondary": "Right: an ecosystem is the living community AND the non-living environment, plus the interactions between them. Abiotic conditions shape which organisms can live there.",
+      "mistakeTag": "Community + environment",
+      "callout": "Biotic data alone tells you what is there, never why.",
+      "caption": "An ecosystem includes the abiotic environment.",
+      "voiceover": {
+        "text": "Here's the misconception. Thinking an ecosystem is just the living things in an area. It isn't. An ecosystem is the living community, and the non-living environment, and the interactions between them. That's why you record both kinds of data. Biotic data alone tell you what's there and how many, but never why. Abiotic data alone describe the conditions, but not who actually lives there. Only together, collected at the same places, can you explain the features of the ecosystem."
+      },
+      "durationInFrames": 1033
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "A student counts species in quadrats across two zones but takes no other measurements. What can they not conclude, and what should they add?",
+      "pausePrompt": "Pause: which half of the ecosystem is missing?",
+      "answerSteps": [
+        "They can describe which species are where, and how abundant.",
+        "They cannot explain why the zones differ: there are no abiotic data.",
+        "Add light, moisture, temperature and pH readings at the same quadrat positions.",
+        "Answer: no explanation without abiotic data; measure both at the same places ✓"
+      ],
+      "caption": "Without abiotic data, a biotic pattern has no explanation.",
+      "voiceover": {
+        "text": "Quick check. A student counts species in quadrats across two zones, but takes no other measurements. What can't they conclude, and what should they add? Pause, and think about which half of the ecosystem is missing. OK. They can describe which species are where, and how abundant they are. But they can't explain why the zones differ, because there are no abiotic data. So they should add readings, like light, moisture, temperature and pH, taken at the same quadrat positions. Then the pattern can be linked to the conditions."
+      },
+      "durationInFrames": 1158
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "An ecosystem = living community + non-living environment + their interactions.",
+        "Abiotic: thermometer, light meter, pH probe, moisture meter. Biotic: random quadrats.",
+        "Measure both at the same places so they can be related.",
+        "Discuss features: dominant species, diversity, zonation, and the abiotic explanation.",
+        "Repeat and average; one visit is a snapshot, and a pattern is not proof of cause."
+      ],
+      "finalPrompt": "Every biotic pattern needs its abiotic explanation, measured in the same place.",
+      "caption": "Five takeaways on describing an ecosystem.",
+      "voiceover": {
+        "text": "Let's lock it in. An ecosystem is the living community, plus the non-living environment, plus their interactions. Abiotic factors need instruments, a thermometer, a light meter, a pH probe, a moisture meter, and biotic data come from random quadrats. Measure both at the same places so they can be related. Discuss the features, dominant species, diversity, zonation, and the abiotic explanation. And repeat and average, because one visit is a snapshot, and a pattern isn't proof of cause. Every biotic pattern needs its abiotic explanation, measured in the same place."
+      },
+      "durationInFrames": 1170
+    }
+  ]
+}

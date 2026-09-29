@@ -1,0 +1,358 @@
+{
+  "title": "Inferring Evolutionary Relationships from Sequences",
+  "subtitle": "Align, count the differences, build the tree",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 17",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Conduct a scientific investigation to infer evolutionary relationships between species using DNA and amino acid sequences"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-04",
+    "BI-11WS-05"
+  ],
+  "lessonIntent": "Students can align DNA or amino-acid sequences, count and tabulate differences in a difference matrix, infer relative relatedness and sketch a phylogenetic tree, stating the molecular-clock assumption and a limitation.",
+  "examSkill": "Fewer differences means a more recent common ancestor: rank the pairs, join the most similar first, and state the assumption.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, inferring evolutionary relationships from sequences. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Inferring relationships from sequences"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "image": "bioM5L16SnpComparison",
+      "heading": "The molecules can overrule appearance",
+      "body": "Two animals can look nothing alike yet share 98% of a key protein's sequence, while two look-alikes share far less.",
+      "callout": "So how do we let the sequences tell us the family tree?",
+      "caption": "Sequences record ancestry, even when looks mislead.",
+      "voiceover": {
+        "text": "Hidden inside every cell is a record of ancestry, written in four DNA letters and twenty amino acids. And it can surprise you. Two animals can look nothing alike, yet share ninety-eight percent of a key protein's sequence, while two look-alikes share far less. The molecules can overrule appearance. So today you're a molecular detective. We'll compare sequences, count the differences, and draw the family tree the molecules reveal."
+      },
+      "durationInFrames": 908
+    },
+    {
+      "id": "concept-count",
+      "type": "concept",
+      "heading": "Align, count, tabulate",
+      "body": "After two lineages split, each builds up its own mutations. So the longer ago they split, the more their sequences differ.",
+      "bullets": [
+        {
+          "text": "Take the same gene or protein from each species and align it, position by position."
+        },
+        {
+          "text": "For every pair, count the positions that differ, and record the counts in a difference matrix."
+        },
+        {
+          "text": "The pair with the fewest differences shared the most recent common ancestor."
+        }
+      ],
+      "callout": "Fewer differences, more recent common ancestor.",
+      "caption": "Aligned sequences, counted differences and a difference matrix.",
+      "voiceover": {
+        "text": "Here's the principle. When two species split from a common ancestor, their DNA slowly builds up separate mutations. So the longer ago they split, the more their sequences differ. The method is simple. Take the same stretch of DNA from each species, and line them up, position by position. Species one and species two are identical here. Now compare species three with species one. They differ at positions two, five and seven, three differences. Do that for every pair and record the counts in a difference matrix. Zero, three, three. The smallest count marks the closest pair. So species one and two are the most closely related, and species three is the most distant."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Seq",
+        "props": {
+          "mode": "align",
+          "title": "Same stretch of DNA, three species",
+          "rows": [
+            {
+              "name": "Sp1",
+              "seq": "ACGTACG",
+              "at": 476
+            },
+            {
+              "name": "Sp2",
+              "seq": "ACGTACG",
+              "at": 496
+            },
+            {
+              "name": "Sp3",
+              "seq": "ATGTGCA",
+              "at": 516
+            }
+          ],
+          "beats": {
+            "diff": 650,
+            "matrix": 1001,
+            "closest": 1063
+          }
+        }
+      },
+      "durationInFrames": 1470
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for a molecular investigation.",
+      "bullets": [
+        {
+          "text": "Sequence alignment: lining up the same gene or protein from different species, position by position."
+        },
+        {
+          "text": "Phylogenetic tree: a branching diagram of inferred relationships; shared branch points are common ancestors."
+        },
+        {
+          "text": "Conserved sequence: part of a gene or protein that changes very little because it is essential to function."
+        },
+        {
+          "text": "Molecular clock: the idea that mutations build up at a roughly steady rate, so differences estimate time since divergence."
+        }
+      ],
+      "callout": "Same sequence, carefully aligned, or the count means nothing.",
+      "caption": "Alignment, phylogenetic tree, conserved sequence, molecular clock.",
+      "voiceover": {
+        "text": "The key words. A sequence alignment lines up the same gene or protein from different species, position by position. A phylogenetic tree is a branching diagram of inferred relationships, where shared branch points are common ancestors. A common ancestor is a species that two or more later species both descend from. A conserved sequence is part of a gene or protein that changes very little, because it's essential to function. And the molecular clock is the idea that mutations build up at a roughly steady rate, so the number of differences estimates time since two lineages split."
+      },
+      "durationInFrames": 1258
+    },
+    {
+      "id": "concept-tree",
+      "type": "concept",
+      "heading": "From counts to a tree",
+      "body": "Cytochrome c, a small respiratory protein found in almost every aerobic organism, is the classic conserved sequence.",
+      "bullets": [
+        {
+          "text": "Amino-acid differences from humans: chimpanzee 0, rhesus monkey 1, horse 12, tuna 21, baker's yeast 44."
+        },
+        {
+          "text": "Join the least different species at the most recent branch point; more different species join further back."
+        },
+        {
+          "text": "A difference of 0 does not make a chimpanzee a human: this protein is so constrained it has barely changed."
+        }
+      ],
+      "callout": "The ordering matches anatomy and fossils: independent methods agree.",
+      "caption": "Cytochrome c differences from humans, turned into a branching order.",
+      "voiceover": {
+        "text": "Let's use real numbers. Cytochrome c is a small respiratory protein, found in almost every aerobic organism, so it's great for comparing very distant groups. Count the amino-acid differences from the human sequence. Chimpanzee, zero. Rhesus monkey, one. Horse, twelve. Tuna, twenty-one. Baker's yeast, forty-four. Now build the tree. The least different species joins our lineage at the most recent branch point, and more different species branch off further back. So yeast splits off first, then tuna, then horse, then the monkey. And a zero doesn't make a chimp a human. This protein is so constrained that it simply hasn't changed. Notice the order matches what anatomy and fossils tell us."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Seq",
+        "props": {
+          "mode": "tree",
+          "title": "Cytochrome c: amino-acid differences from humans",
+          "reference": "Human",
+          "unit": "differences",
+          "species": [
+            {
+              "name": "Chimpanzee",
+              "diff": 0,
+              "at": 350
+            },
+            {
+              "name": "Rhesus monkey",
+              "diff": 1,
+              "at": 376
+            },
+            {
+              "name": "Horse",
+              "diff": 12,
+              "at": 413
+            },
+            {
+              "name": "Tuna",
+              "diff": 21,
+              "at": 438
+            },
+            {
+              "name": "Baker's yeast",
+              "diff": 44,
+              "at": 463
+            }
+          ],
+          "beats": {
+            "tree": 500
+          },
+          "footer": [
+            {
+              "text": "Branching order only: a 0 is not \"the same species\"",
+              "at": 1001,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1433
+    },
+    {
+      "id": "concept-limits",
+      "type": "concept",
+      "heading": "How far can we trust the tree?",
+      "body": "The method rests on assumptions, and knowing them is part of the investigation.",
+      "bullets": [
+        {
+          "text": "It assumes mutations build up at a roughly steady rate, a molecular clock, which is not perfectly true for every gene."
+        },
+        {
+          "text": "One short sequence can give a misleading tree."
+        },
+        {
+          "text": "Validity: compare the same conserved sequence and align carefully. Reliability: repeat with more genes and see if the trees agree."
+        }
+      ],
+      "callout": "Treat any tree as a hypothesis to test.",
+      "caption": "The molecular clock assumption, and how to improve validity and reliability.",
+      "voiceover": {
+        "text": "So how far can we trust a tree like that? The whole method assumes a molecular clock, that mutations build up at a roughly steady rate. That's not perfectly true for every gene, and rates can vary between lineages. Next, one short sequence can mislead. A few differences more or less can swap the order. So how do you make it better? For validity, compare the same conserved sequence in every species, and align it carefully. For reliability, repeat with more genes or proteins, and check that the trees agree. And remember, the tree is a hypothesis, to be tested against other evidence."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Panels",
+        "props": {
+          "title": "Assumptions and fixes",
+          "columns": [
+            {
+              "name": "Assumption",
+              "sub": "a molecular clock",
+              "icon": "dna",
+              "at": 100,
+              "lines": [
+                {
+                  "text": "mutations build up at a roughly steady rate",
+                  "at": 226
+                },
+                {
+                  "text": "not perfectly true for every gene",
+                  "ok": false,
+                  "at": 263
+                }
+              ]
+            },
+            {
+              "name": "Limitation",
+              "sub": "one short sequence",
+              "icon": "tally",
+              "at": 438,
+              "lines": [
+                {
+                  "text": "a few differences can swap the order",
+                  "ok": false,
+                  "at": 500
+                }
+              ]
+            },
+            {
+              "name": "Improve it",
+              "sub": "validity and reliability",
+              "icon": "molecule",
+              "at": 676,
+              "amber": true,
+              "lines": [
+                {
+                  "text": "validity: same conserved sequence, careful alignment",
+                  "ok": true,
+                  "at": 713
+                },
+                {
+                  "text": "reliability: more genes, trees agree",
+                  "ok": true,
+                  "at": 888
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "text": "A tree is a hypothesis to test",
+              "at": 1088,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1333
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Build the tree from the data",
+      "question": "Amino-acid differences in a conserved protein, compared with humans: chimpanzee 0, gorilla 1, mouse 9, chicken 18. Rank them and describe the branching order.",
+      "coachNote": "Rank by fewest differences, then join the most similar first.",
+      "steps": [
+        "Rank, fewest differences first: chimpanzee (0), gorilla (1), mouse (9), chicken (18).",
+        "Fewer differences = more recent common ancestor with humans.",
+        "Branching order: chicken splits off first, then mouse, then gorilla, then chimpanzee most recently.",
+        "Check: species at the base (chicken) have large counts; close relatives have small ones.",
+        "Answer: most to least closely related: chimpanzee, gorilla, mouse, chicken ✓"
+      ],
+      "caption": "Rank by differences, then join the most similar first.",
+      "voiceover": {
+        "text": "Let's build a tree from data. A conserved protein is compared with humans. Chimpanzee, zero differences. Gorilla, one. Mouse, nine. Chicken, eighteen. First, rank them, fewest differences first. Chimpanzee, gorilla, mouse, chicken. Next, apply the rule. Fewer differences means a more recent common ancestor with us. So the branching order runs from the base up. Chicken splits off first, then mouse, then gorilla, and chimpanzee joins most recently. Then check it against the data. The species at the base has the biggest count, and the closest relatives have the smallest. So, most to least closely related, chimpanzee, gorilla, mouse, chicken."
+      },
+      "durationInFrames": 1296
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Looks can lie",
+      "body": "Wrong: species that look most alike must be the most closely related, so sequence data just confirms appearance.",
+      "secondary": "Right: convergent evolution can make unrelated species look alike. Sequences compare the underlying genetic code, so they can reveal relationships that looks alone get wrong.",
+      "mistakeTag": "Similar looks, not similar ancestry",
+      "callout": "When looks and sequences disagree, the sequences usually win.",
+      "caption": "Convergence fools the eye; sequences compare the code itself.",
+      "voiceover": {
+        "text": "Here's the trap. Thinking that species that look the most alike must be the most closely related, so sequence data just confirms what we can see. That's wrong. Remember convergent evolution. Unrelated species facing similar pressures can end up looking alike. DNA and amino-acid sequences compare the underlying genetic code itself, so they can reveal relationships that appearance gets wrong. That's exactly why molecular data is so valuable, and why it has reclassified organisms whose true relationships looks had hidden."
+      },
+      "durationInFrames": 1046
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "The same stretch of DNA: species A and B differ at 2 positions; A and C differ at 11. Which pair is more closely related, and what assumption are you making?",
+      "pausePrompt": "Pause: fewer differences means what about the common ancestor?",
+      "answerSteps": [
+        "A and B have fewer differences (2 against 11).",
+        "Fewer differences means a more recent common ancestor.",
+        "Assumption: mutations build up at a roughly steady rate, so differences track time since the split.",
+        "Answer: A and B are more closely related, assuming a roughly steady molecular clock ✓"
+      ],
+      "caption": "Two differences beats eleven, if the molecular clock holds.",
+      "voiceover": {
+        "text": "Quick check. You compare the same stretch of DNA in three species. A and B differ at two positions. A and C differ at eleven. Which pair is more closely related, and what assumption are you making? Pause, and decide. OK. A and B have fewer differences, two against eleven, so they shared a more recent common ancestor, and they're more closely related. The assumption is the molecular clock, that mutations build up at a roughly steady rate, so more differences means more time since the split."
+      },
+      "durationInFrames": 1133
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Sequences record ancestry: after a split, each lineage builds up its own mutations.",
+        "Method: same gene or protein, align, count differences for each pair, difference matrix.",
+        "Fewer differences = more recent common ancestor; join the most similar first.",
+        "Cytochrome c from humans: chimp 0, rhesus 1, horse 12, tuna 21, yeast 44.",
+        "Assumes a molecular clock; compare several genes for a reliable tree."
+      ],
+      "finalPrompt": "Before you rank anything: is it the same sequence, properly aligned?",
+      "caption": "Five takeaways on molecular evidence for relationships.",
+      "voiceover": {
+        "text": "Let's lock it in. Sequences record ancestry, because after a split each lineage builds up its own mutations. The method is, same gene or protein, align it, count the differences for every pair, and record a difference matrix. Fewer differences means a more recent common ancestor, so join the most similar species first. For cytochrome c, chimp zero, rhesus one, horse twelve, tuna twenty-one, and yeast forty-four. And the method assumes a molecular clock, so compare several genes for a reliable tree. Before you rank anything, check it's the same sequence, properly aligned."
+      },
+      "durationInFrames": 1208
+    }
+  ]
+}

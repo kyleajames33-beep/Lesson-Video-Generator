@@ -1,0 +1,377 @@
+{
+  "title": "Antibiotic & DDT Resistance",
+  "subtitle": "Human-made chemicals as selective pressures, read from secondary-source data",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 15",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Conduct a secondary-source investigation to analyse how human-induced pressures can drive the emergence of antibiotic-resistant strains of bacteria and Dichloro-Diphenyl-Trichloroethane (DDT)-resistant mosquitoes"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-05"
+  ],
+  "lessonIntent": "Students can explain the emergence of antibiotic-resistant bacteria and DDT-resistant mosquitoes as natural selection driven by a human-induced pressure, and analyse and evaluate secondary-source data showing resistance rising.",
+  "examSkill": "Explain resistance step by step (variation, selection, survival and reproduction, spread) and evaluate a secondary source before trusting its trend.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, antibiotic and DDT resistance. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Antibiotic and DDT resistance"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "image": "bioY11M3L5AntibioticPlate",
+      "heading": "Chemicals that breed a stronger enemy",
+      "body": "Penicillin reached hospitals in the 1940s and DDT was sprayed across malarial swamps. Within about a decade, bacteria and mosquitoes were fighting back.",
+      "callout": "How can a chemical designed to kill an organism end up selecting a stronger version of it?",
+      "caption": "Resistance: natural selection run in fast-forward by our own chemicals.",
+      "voiceover": {
+        "text": "When penicillin reached hospitals in the nineteen forties, and DDT was sprayed across malarial swamps, it looked like we'd finally beaten bacteria and mosquitoes. Within about a decade, both were fighting back. Stopping a course of antibiotics halfway, or spraying the same insecticide year after year, can make a disease harder to control, not easier. So how can the very chemical designed to kill an organism end up producing a stronger version of it? The answer is natural selection, running in fast-forward, with our chemical as the selective pressure."
+      },
+      "durationInFrames": 1158
+    },
+    {
+      "id": "concept-selection",
+      "type": "concept",
+      "heading": "Natural selection in fast-forward",
+      "body": "A resistant population is not produced by the drug. It is produced by selection acting on variation that already exists.",
+      "bullets": [
+        {
+          "text": "Random mutation means a few bacteria are already resistant before any antibiotic is used."
+        },
+        {
+          "text": "The antibiotic is the selective pressure: it kills the susceptible majority."
+        },
+        {
+          "text": "The rare resistant survivors reproduce; over generations the resistance allele becomes common and a resistant strain emerges."
+        }
+      ],
+      "callout": "The drug selects resistance. It does not create it.",
+      "caption": "Variation, selection, survival and reproduction, a resistant strain.",
+      "voiceover": {
+        "text": "Here's the sequence, and it's always the same four steps. One, random mutation produces variation, so a few bacteria are already resistant before any antibiotic is used. Look, they're there from the start. Two, the antibiotic is a selective pressure. It kills the susceptible majority. Three, the rare resistant survivors reproduce. And four, over generations, the resistance allele becomes common, and a resistant strain emerges. Why so fast? Bacteria can divide as often as every twenty minutes in good conditions, so what takes thousands of years in slow-breeding animals can happen here in months or years."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Selection",
+        "props": {
+          "organism": "bacterium",
+          "drug": "antibiotic",
+          "title": "The drug selects; it does not create",
+          "beats": {
+            "pop": 0,
+            "mutants": 188,
+            "drug": 363,
+            "survive": 451,
+            "reproduce": 550
+          },
+          "captions": [
+            {
+              "text": "1 Variation: a few already resistant",
+              "at": 188
+            },
+            {
+              "text": "2 Antibiotic kills the susceptible",
+              "at": 451
+            },
+            {
+              "text": "3 Resistant survivors reproduce",
+              "at": 550
+            },
+            {
+              "text": "4 A resistant strain emerges",
+              "at": 726,
+              "amber": true
+            }
+          ],
+          "legend": "amber ring = resistance allele"
+        }
+      },
+      "durationInFrames": 1245
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for a secondary-source investigation of resistance.",
+      "bullets": [
+        {
+          "text": "Antibiotic resistance: a bacterial strain can survive and reproduce in an antibiotic that would normally kill it."
+        },
+        {
+          "text": "DDT: Dichloro-Diphenyl-Trichloroethane, a synthetic insecticide once widely used against malaria-carrying mosquitoes."
+        },
+        {
+          "text": "Human-induced selective pressure: a pressure created by human activity that changes which individuals survive and reproduce."
+        },
+        {
+          "text": "Resistant strain: a population descended from rare survivors, where resistance is now common. Secondary source: data collected by someone else, which you analyse."
+        }
+      ],
+      "callout": "Resistance belongs to the population, not to the patient.",
+      "caption": "Antibiotic resistance, DDT, human-induced pressure, resistant strain, secondary source.",
+      "voiceover": {
+        "text": "Let's lock in the language. Antibiotic resistance is when a bacterial strain can survive and reproduce in an antibiotic that would normally kill it. DDT stands for dichloro-diphenyl-trichloroethane, a synthetic insecticide once used widely against malaria-carrying mosquitoes. A human-induced selective pressure is one created by human activity, like using a drug or an insecticide, that changes who survives and reproduces. A resistant strain is a population descended from rare survivors, where resistance is now common. And a secondary source is data someone else collected, which you analyse rather than gather yourself."
+      },
+      "durationInFrames": 1183
+    },
+    {
+      "id": "concept-cases",
+      "type": "concept",
+      "heading": "Two cases, one logic",
+      "body": "Antibiotic resistance in bacteria and DDT resistance in mosquitoes are the same process. Only the organism and the chemical differ.",
+      "bullets": [
+        {
+          "text": "Bacteria, for example MRSA: pressure from antibiotics, sped up by overuse and unfinished courses."
+        },
+        {
+          "text": "Mosquitoes, for example Anopheles: pressure from repeated, widespread DDT spraying."
+        },
+        {
+          "text": "DDT was used on a large scale from the mid-1940s; resistance was reported within about a decade and was widespread by the 1960s."
+        }
+      ],
+      "secondary": "Blanket spraying left no untreated refuge where susceptible mosquitoes could persist, so the pressure hit whole populations at once.",
+      "callout": "Short generations plus constant pressure means fast resistance.",
+      "caption": "MRSA and DDT-resistant Anopheles: the same selection sequence.",
+      "voiceover": {
+        "text": "Does it really play out the same way for a bacterium and an insect? Yes. For bacteria, like MRSA, resistant Staphylococcus aureus, the pressure is antibiotics, sped up by overuse and unfinished courses, with very short generations. For mosquitoes, like the Anopheles that carry malaria, the pressure is DDT spraying, repeated and widespread, and their generations take a few weeks. The DDT story in dates. Large-scale use against malaria mosquitoes began in the mid nineteen forties. Resistance was reported within about a decade, and by the nineteen sixties it was a major reason the global malaria eradication campaign was scaled back. Blanket spraying left no untreated refuge, so susceptible mosquitoes had nowhere to persist."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Panels",
+        "props": {
+          "layout": "matrix",
+          "title": "Different organism, same selection",
+          "columns": [
+            {
+              "name": "Bacteria",
+              "sub": "e.g. MRSA",
+              "icon": "bacterium",
+              "at": 126
+            },
+            {
+              "name": "Mosquitoes",
+              "sub": "e.g. Anopheles",
+              "icon": "mosquito",
+              "at": 401
+            }
+          ],
+          "rowLabels": [
+            {
+              "text": "Selective pressure",
+              "at": 213
+            },
+            {
+              "text": "Sped up by",
+              "at": 263
+            },
+            {
+              "text": "Generation time",
+              "at": 613
+            },
+            {
+              "text": "Resistance reported",
+              "at": 888
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "antibiotics"
+              },
+              {
+                "text": "DDT spraying"
+              }
+            ],
+            [
+              {
+                "text": "overuse, unfinished courses"
+              },
+              {
+                "text": "repeated, widespread spraying",
+                "at": 563
+              }
+            ],
+            [
+              {
+                "text": "as little as ~20 minutes"
+              },
+              {
+                "text": "a few weeks"
+              }
+            ],
+            [
+              {
+                "text": "resistant strains, e.g. MRSA"
+              },
+              {
+                "text": "within about a decade; widespread by the 1960s",
+                "amber": true
+              }
+            ]
+          ]
+        }
+      },
+      "durationInFrames": 1470
+    },
+    {
+      "id": "concept-data",
+      "type": "concept",
+      "heading": "Reading, and judging, a secondary source",
+      "body": "Resistance data comes from surveillance collected by others. Read the trend, explain it, then judge the source.",
+      "bullets": [
+        {
+          "text": "Illustrative data: % of isolates resistant rose from 4 in 2000 to 12, 31 and 58 by 2024."
+        },
+        {
+          "text": "Explain it with selection: heavy, repeated use keeps the pressure on, so resistant strains become more common."
+        },
+        {
+          "text": "Before trusting a real dataset, check who collected it, the sample size, representativeness, time span and other explanations."
+        }
+      ],
+      "secondary": "Real Australian figures: the AURA reports (Antimicrobial Use and Resistance in Australia); worldwide, the WHO GLASS system. Both state their samples and methods.",
+      "callout": "Read the trend, then judge the source.",
+      "caption": "An illustrative resistance trend, and how to evaluate a secondary source.",
+      "voiceover": {
+        "text": "Now the investigation part. These figures are illustrative, modelled on the shape of published surveillance trends, not a real dataset. Resistance was four percent in two thousand, then twelve, then thirty-one, and fifty-eight percent by twenty twenty-four. Describe it. Resistance rises, and the rise gets steeper. Explain it with selection. Heavy, repeated use keeps the pressure on, so resistant strains take over. But before you trust a real graph, evaluate it. Who collected it? How big and representative was the sample? What time span, and could anything else explain the trend? Reliable sources, like Australia's AURA reports or the World Health Organization's GLASS system, state exactly that."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Graph",
+        "props": {
+          "title": "Resistance rising (illustrative figures)",
+          "x": {
+            "label": "year",
+            "min": 0,
+            "max": 1
+          },
+          "y": {
+            "label": "% resistant",
+            "min": 0,
+            "max": 70,
+            "ticks": [
+              0,
+              20,
+              40,
+              60
+            ],
+            "unit": "%"
+          },
+          "bars": {
+            "categories": [
+              "2000",
+              "2008",
+              "2016",
+              "2024"
+            ],
+            "values": [
+              4,
+              12,
+              31,
+              58
+            ],
+            "at": 213,
+            "step": 30,
+            "amberIndex": 3
+          },
+          "footer": [
+            {
+              "text": "Check: who collected it, sample size, time span, other causes",
+              "at": 800,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1383
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Analyse the DDT case",
+      "question": "Analyse how the widespread spraying of DDT drove the emergence of DDT-resistant mosquito populations.",
+      "coachNote": "Variation first, then the sorting, then why this pressure was so fast.",
+      "steps": [
+        "Before spraying, a few mosquitoes already carried alleles giving some tolerance, from random mutation.",
+        "DDT killed the susceptible majority; tolerant individuals survived and bred, passing the alleles on.",
+        "Generations of a few weeks let the allele frequency rise quickly, over years not millennia.",
+        "Blanket, repeated spraying hit whole populations with no untreated refuge, so susceptible mosquitoes could not persist.",
+        "Answer: resistance was reported within about a decade, and helped malaria rebound where it had been suppressed ✓"
+      ],
+      "caption": "Pre-existing variation, sorted by DDT, sped up by short generations and blanket spraying.",
+      "voiceover": {
+        "text": "Let's analyse the DDT case, the way a five-mark answer wants it. Start with variation. Before any spraying, a small proportion of mosquitoes already carried alleles giving some tolerance, from random mutation. Next, the sorting. DDT killed the susceptible majority, and the tolerant ones survived and bred, passing those alleles on. Then the rate. Mosquito generations take a few weeks, so the allele frequency could climb in years. Now the analytical bit, what made this pressure so effective. Spraying was blanket and repeated, so it hit whole populations at once, with no untreated refuge. Consequence? Resistance was reported within about a decade, and it helped malaria rebound where it had been pushed back."
+      },
+      "durationInFrames": 1458
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Bacteria don't learn",
+      "body": "Wrong: bacteria \"become resistant\" because the antibiotic teaches them, or because they want to survive.",
+      "secondary": "Right: a few are already resistant because of random mutation. The antibiotic kills the non-resistant majority and leaves the resistant few to reproduce. It selects for resistance; it does not create it.",
+      "mistakeTag": "Selection, not learning",
+      "callout": "Ask: were the resistant ones there before the drug arrived? Yes, always.",
+      "caption": "Resistance comes from pre-existing variation, not from the drug.",
+      "voiceover": {
+        "text": "Here's the trap. Writing that bacteria become resistant because the antibiotic teaches them to fight it, or because they want to survive. That's wrong, and it costs marks. A few individuals are already resistant because of random mutation, before the antibiotic is ever used. The antibiotic doesn't create resistance. It selects for it, by killing the non-resistant majority and leaving the resistant few to reproduce. So every time you explain resistance, start with the variation that was already there. And remember, it's the bacterial population that becomes resistant, not the patient."
+      },
+      "durationInFrames": 1183
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Which most increases how fast resistance spreads: using a chemical once at a high dose, a long generation time, or repeated, widespread use of the same chemical? Explain.",
+      "pausePrompt": "Pause: which one keeps the selective pressure on?",
+      "answerSteps": [
+        "Resistance spreads when resistant individuals keep out-surviving and out-breeding susceptible ones.",
+        "Repeated, widespread use applies that pressure to whole populations, generation after generation.",
+        "A long generation time would slow the spread; a single use gives only one round of selection.",
+        "Answer: repeated, widespread use of the same chemical ✓"
+      ],
+      "caption": "Constant, widespread pressure drives resistance fastest.",
+      "voiceover": {
+        "text": "Quick check. Which most increases how fast resistance spreads? Using a chemical once at a high dose, a long generation time in the organism, or repeated, widespread use of the same chemical? Pause, and ask which one keeps the selective pressure on. OK. Resistance spreads when resistant individuals keep out-surviving and out-breeding the susceptible ones. Repeated, widespread use applies that pressure to whole populations, generation after generation. A long generation time would actually slow the spread, and a single use gives just one round of selection. So the answer is repeated, widespread use of the same chemical."
+      },
+      "durationInFrames": 1258
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Antibiotics and DDT are human-induced selective pressures.",
+        "Resistance comes from pre-existing variation: the chemical selects it, it does not create it.",
+        "Short generations and repeated, widespread use make resistance appear in years.",
+        "Analyse a secondary source: describe the trend, explain it with selection, then evaluate the data.",
+        "Responses such as stewardship and rotating chemicals slow the pressure; they cannot switch selection off."
+      ],
+      "finalPrompt": "Explaining resistance? Start with the variation that was already there.",
+      "caption": "Five takeaways on antibiotic and DDT resistance.",
+      "voiceover": {
+        "text": "Let's lock it in. Antibiotics and DDT are human-induced selective pressures. Resistance comes from variation that was already there. The chemical selects it, it doesn't create it. Short generations, plus repeated and widespread use, make resistance appear in years. When you analyse a secondary source, describe the trend, explain it with selection, then evaluate the data. And responses like antibiotic stewardship and rotating insecticides slow the pressure, they can't switch selection off. Explaining resistance? Start with the variation that was already there."
+      },
+      "durationInFrames": 1071
+    }
+  ]
+}

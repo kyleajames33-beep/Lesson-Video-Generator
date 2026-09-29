@@ -1,0 +1,449 @@
+{
+  "title": "Comparing Ecosystems",
+  "subtitle": "Abiotic fingerprints of aquatic and terrestrial ecosystems",
+  "subject": "Biology",
+  "syllabusNeutral": true,
+  "yearLevel": "Year 11",
+  "module": "Module 3",
+  "lesson": "Lesson 20",
+  "syllabusVersion": "Biology 11–12 (2025)",
+  "syllabusModule": "Evolution and ecosystems",
+  "syllabusDotPoints": [
+    "Compare abiotic data from a variety of aquatic and terrestrial ecosystems"
+  ],
+  "moduleLessonCount": 25,
+  "nesaOutcomes": [
+    "BI-11-03",
+    "BI-11WS-05"
+  ],
+  "lessonIntent": "Students can compare abiotic data across aquatic and terrestrial ecosystems, identify which factors are shared and which are specific, and link the differences to the communities each ecosystem supports.",
+  "examSkill": "Compare the shared factors directly, measure fairly, then link each abiotic difference to the life it supports.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusic": "audio/music/lofi-bed.mp3",
+  "backgroundMusicVolume": 0.1,
+  "introVoiceover": {
+    "text": "Welcome to HSC Science. This is HSC Biology. Today, comparing ecosystems. Let's get into it."
+  },
+  "scenes": [
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 105,
+      "caption": "Comparing ecosystems"
+    },
+    {
+      "id": "hook",
+      "type": "hook",
+      "image": "bioM8L5DesertPlant",
+      "heading": "Stable or extreme?",
+      "body": "A desert can be scorching by day and close to freezing at night, while the deep ocean barely changes temperature at all.",
+      "callout": "Why are some ecosystems so stable and others so extreme, and what does that mean for life there?",
+      "caption": "Every ecosystem has its own abiotic fingerprint.",
+      "voiceover": {
+        "text": "A coral reef, a fast mountain stream, a mangrove mudflat and a desert dune are all ecosystems. But measure their light, temperature, oxygen and salinity, and you get wildly different profiles. A desert can be scorching by day and close to freezing at night, while the deep ocean barely changes temperature at all. Why are some ecosystems so stable, and others so extreme? And what does that mean for the things living there? The abiotic numbers are a fingerprint, and today you'll learn to compare them."
+      },
+      "durationInFrames": 1120
+    },
+    {
+      "id": "concept-factors",
+      "type": "concept",
+      "heading": "Which factors, where",
+      "body": "Aquatic and terrestrial ecosystems share some abiotic factors, and each also has factors specific to it.",
+      "bullets": [
+        {
+          "text": "Shared: temperature, light intensity, pH."
+        },
+        {
+          "text": "Aquatic-specific: dissolved oxygen, salinity, turbidity, water flow, depth."
+        },
+        {
+          "text": "Terrestrial-specific: soil type and moisture, humidity, wind speed, slope and aspect."
+        }
+      ],
+      "callout": "Measure what matters in each; compare the shared factors directly.",
+      "caption": "Shared, aquatic-specific and terrestrial-specific abiotic factors.",
+      "voiceover": {
+        "text": "First, which factors do you measure, and where? Some are shared, measured in both kinds of ecosystem. Temperature, light intensity, and pH. Some are aquatic-specific. Dissolved oxygen, salinity, turbidity, which is how cloudy the water is, plus water flow and depth. And some matter more on land. Soil type and moisture, humidity, wind speed, and slope and aspect. So a fair comparison measures the relevant factors in each ecosystem, and then compares the shared ones directly."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m7Sorter",
+        "props": {
+          "title": "Sort the abiotic factors",
+          "bins": [
+            {
+              "title": "Shared",
+              "sub": "both kinds",
+              "tone": "accent"
+            },
+            {
+              "title": "Aquatic",
+              "sub": "water only",
+              "tone": "grey"
+            },
+            {
+              "title": "Terrestrial",
+              "sub": "mostly on land",
+              "tone": "warm"
+            }
+          ],
+          "items": [
+            {
+              "text": "temperature",
+              "bin": 0,
+              "at": 151
+            },
+            {
+              "text": "light intensity",
+              "bin": 0,
+              "at": 163
+            },
+            {
+              "text": "pH",
+              "bin": 0,
+              "at": 188
+            },
+            {
+              "text": "dissolved oxygen",
+              "bin": 1,
+              "at": 251
+            },
+            {
+              "text": "salinity",
+              "bin": 1,
+              "at": 276
+            },
+            {
+              "text": "turbidity",
+              "bin": 1,
+              "at": 288
+            },
+            {
+              "text": "flow, depth",
+              "bin": 1,
+              "at": 401
+            },
+            {
+              "text": "soil moisture",
+              "bin": 2,
+              "at": 526
+            },
+            {
+              "text": "humidity",
+              "bin": 2,
+              "at": 576
+            },
+            {
+              "text": "wind speed",
+              "bin": 2,
+              "at": 588
+            }
+          ],
+          "footer": [
+            {
+              "text": "Compare the shared factors directly",
+              "at": 826,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 995
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "The words you need",
+      "body": "Five terms for comparing ecosystems.",
+      "bullets": [
+        {
+          "text": "Aquatic ecosystem: water-based, freshwater or marine. Terrestrial ecosystem: land-based, such as forest, grassland or desert."
+        },
+        {
+          "text": "Dissolved oxygen: oxygen gas dissolved in water, a key factor for aquatic life."
+        },
+        {
+          "text": "Salinity: the concentration of dissolved salts, high in the sea and low in fresh water."
+        },
+        {
+          "text": "Turbidity: how cloudy water is from suspended particles; high turbidity cuts light penetration."
+        }
+      ],
+      "callout": "Dissolved oxygen, salinity and turbidity are water words.",
+      "caption": "Aquatic, terrestrial, dissolved oxygen, salinity, turbidity.",
+      "voiceover": {
+        "text": "Let's set the words. An aquatic ecosystem is water-based, freshwater like rivers and lakes, or marine like reefs and estuaries. A terrestrial ecosystem is land-based, like a forest, grassland or desert. Dissolved oxygen is the amount of oxygen gas dissolved in water, a key factor for aquatic life. Salinity is the concentration of dissolved salts, high in marine systems and low in fresh water. And turbidity is how cloudy water is from suspended particles. The cloudier it is, the less light gets through."
+      },
+      "durationInFrames": 1083
+    },
+    {
+      "id": "concept-profiles",
+      "type": "concept",
+      "heading": "A reef and a desert, side by side",
+      "body": "Laying the data out in a table makes the differences jump out, and explains the life each ecosystem supports.",
+      "bullets": [
+        {
+          "text": "Coral reef: about 24 to 29 °C and very stable, salinity about 35 ppt, pH about 8.1, light high near the surface."
+        },
+        {
+          "text": "Arid desert: an extreme daily temperature swing, very intense light, very low humidity and soil moisture."
+        },
+        {
+          "text": "Water has a high heat capacity, so aquatic ecosystems usually have much smaller temperature ranges than terrestrial ones."
+        }
+      ],
+      "callout": "Water moderates temperature.",
+      "caption": "Abiotic profiles of a coral reef and an arid desert.",
+      "voiceover": {
+        "text": "Let's compare two very different ecosystems. A coral reef first. Its temperature sits around twenty-four to twenty-nine degrees, and it's very stable. Salinity is high, about thirty-five parts per thousand. Dissolved oxygen is moderate to high, light is strong near the surface, and the seawater pH is about eight point one. Now an arid desert. The temperature swings hugely between day and night. Dissolved oxygen doesn't apply, there's no water body. Light is intense, and humidity and soil moisture are very low. Why the difference in stability? Water has a high heat capacity, so it moderates temperature change. That's the big pattern."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Panels",
+        "props": {
+          "layout": "matrix",
+          "title": "Two abiotic fingerprints",
+          "columns": [
+            {
+              "name": "Coral reef",
+              "icons": [
+                "coral",
+                "fish"
+              ],
+              "at": 13
+            },
+            {
+              "name": "Arid desert",
+              "icons": [
+                "sun",
+                "rock"
+              ],
+              "at": 576
+            }
+          ],
+          "rowLabels": [
+            {
+              "text": "Temperature",
+              "at": 63
+            },
+            {
+              "text": "Salinity",
+              "at": 213
+            },
+            {
+              "text": "Dissolved oxygen",
+              "at": 313
+            },
+            {
+              "text": "Light",
+              "at": 388
+            },
+            {
+              "text": "pH / moisture",
+              "at": 500
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "~24–29 °C, very stable",
+                "ok": true
+              },
+              {
+                "text": "huge day–night swing",
+                "ok": false,
+                "at": 626
+              }
+            ],
+            [
+              {
+                "text": "~35 ppt (marine)"
+              },
+              {
+                "text": "soil can be salty in places",
+                "at": 626
+              }
+            ],
+            [
+              {
+                "text": "moderate to high"
+              },
+              {
+                "text": "not applicable",
+                "at": 726
+              }
+            ],
+            [
+              {
+                "text": "high near surface"
+              },
+              {
+                "text": "intense",
+                "at": 826
+              }
+            ],
+            [
+              {
+                "text": "pH ~8.1"
+              },
+              {
+                "text": "very low humidity and moisture",
+                "at": 876
+              }
+            ]
+          ],
+          "footer": [
+            {
+              "text": "Water has a high heat capacity: it moderates temperature",
+              "at": 1026,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1320
+    },
+    {
+      "id": "concept-oxygen",
+      "type": "concept",
+      "heading": "Two numbers that explain a lot",
+      "body": "Comparisons of aquatic ecosystems often turn on oxygen and salt.",
+      "bullets": [
+        {
+          "text": "Dissolved oxygen falls as water warms: about 11 mg/L at 10 °C, but only about 8 mg/L at 25 °C."
+        },
+        {
+          "text": "So a cold, turbulent mountain stream is oxygen-rich; a warm, slow lowland pool is oxygen-poor."
+        },
+        {
+          "text": "Salinity: fresh water below about 0.5 ppt, seawater about 35 ppt; an estuary swings between them with the tide."
+        }
+      ],
+      "callout": "Warm water holds less oxygen.",
+      "caption": "Dissolved oxygen falls as water warms; salinity swings in an estuary.",
+      "voiceover": {
+        "text": "Two numbers explain a lot about aquatic life. First, dissolved oxygen falls as water warms. Fresh water holds about eleven milligrams of oxygen per litre at ten degrees, but only about eight at twenty-five. So a cold, turbulent mountain stream is oxygen-rich, while a warm, slow lowland pool is oxygen-poor. That's why warming and low flow are often reported together as a threat to fish. Second, salinity. Fresh water is below about half a part per thousand, and seawater is about thirty-five. An estuary swings between the two with the tide, so its species must be able to osmoregulate across a range."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Graph",
+        "props": {
+          "title": "Dissolved oxygen in fresh water (approximate)",
+          "x": {
+            "label": "water temperature",
+            "min": 0,
+            "max": 1
+          },
+          "y": {
+            "label": "dissolved O₂ (mg/L)",
+            "min": 0,
+            "max": 12,
+            "ticks": [
+              0,
+              4,
+              8,
+              12
+            ]
+          },
+          "bars": {
+            "categories": [
+              "10 °C",
+              "25 °C"
+            ],
+            "values": [
+              11,
+              8
+            ],
+            "at": 163,
+            "step": 45,
+            "amberIndex": 1
+          },
+          "footer": [
+            {
+              "text": "Cold, turbulent stream: oxygen-rich. Warm, slow pool: oxygen-poor",
+              "at": 363
+            },
+            {
+              "text": "Salinity: fresh < 0.5 ppt · estuary varies · sea ~35 ppt",
+              "at": 751,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1320
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Compare three ecosystems",
+      "question": "Mountain stream: 8–12 °C, dissolved O₂ high, pH 7.2, salinity ~0 ppt. Estuary: 14–26 °C, O₂ moderate, pH 7.8, salinity 5–25 ppt. Mangrove mudflat: 18–34 °C, waterlogged saline soil, low soil O₂, pH 7. Compare salinity and temperature stability, and judge which is hardest to live in.",
+      "coachNote": "Compare the shared factor (temperature range) directly, then salinity.",
+      "steps": [
+        "Temperature range: stream 4 °C (most stable), estuary 12 °C, mangrove 16 °C (least stable).",
+        "Salinity: stream steady and fresh; estuary swings 5–25 ppt with the tide; mangrove soil is saline.",
+        "Stream: cold and stable, so it is oxygen-rich; organisms face few swings.",
+        "Mangrove: the widest temperature range, saline soil and low soil oxygen, several stresses at once.",
+        "Judgement: the mangrove mudflat is hardest overall; the estuary is hardest for salt balance alone ✓"
+      ],
+      "caption": "Temperature range and salinity compared across three ecosystems.",
+      "voiceover": {
+        "text": "Let's compare three ecosystems. Start with the shared factor, temperature, and work out each range. The mountain stream runs eight to twelve degrees, a range of four. The estuary, fourteen to twenty-six, a range of twelve. The mangrove mudflat, eighteen to thirty-four, a range of sixteen. So the stream is the most stable. Now salinity. The stream is fresh and steady. The estuary swings from five to twenty-five parts per thousand with the tide. And the mangrove soil is waterlogged and saline. Which is hardest to live in? The mangrove mudflat faces the most stresses at once, the widest temperature range, salty soil, and low soil oxygen. Though for salt balance alone, the swinging estuary is the toughest."
+      },
+      "durationInFrames": 1521
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "You don't measure the same things everywhere",
+      "body": "Wrong: the same abiotic factors matter equally in every ecosystem, so you measure the same things everywhere.",
+      "secondary": "Right: some factors are shared (temperature, pH, light), but dissolved oxygen, salinity and turbidity matter in water, while soil, wind and humidity matter more on land. Record the relevant factors for each, then compare the shared ones.",
+      "mistakeTag": "Relevant factors, fair comparison",
+      "callout": "And land still has limits: water, not dissolved oxygen, is often the one that bites.",
+      "caption": "Measure what is relevant to each ecosystem, and compare fairly.",
+      "voiceover": {
+        "text": "Here's the trap. Thinking the same abiotic factors matter equally everywhere, so you measure the same list in every ecosystem. Some factors are shared, like temperature, pH and light. But dissolved oxygen, salinity and turbidity matter in water, while soil, wind and humidity matter more on land. So a fair comparison records the relevant factors for each ecosystem, then compares the shared ones directly. And make it fair in how you measure too. The same instrument and method, at comparable times and seasons, with repeated readings averaged."
+      },
+      "durationInFrames": 1133
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Quick check",
+      "question": "Why does a coral reef have a much smaller daily temperature range than a desert? What does that mean for the organisms in each?",
+      "pausePrompt": "Pause: what property of water matters here?",
+      "answerSteps": [
+        "Water has a high heat capacity: it takes a lot of energy to change its temperature.",
+        "So the reef's water moderates temperature change; the desert's air and sand do not.",
+        "Reef organisms like corals live in a narrow, stable range; desert organisms need heat and drought adaptations.",
+        "Answer: water moderates temperature, so each ecosystem supports different life ✓"
+      ],
+      "caption": "Water's high heat capacity keeps a reef's temperature stable.",
+      "voiceover": {
+        "text": "Quick check. Why does a coral reef have a much smaller daily temperature range than a desert? And what does that mean for the organisms in each? Pause, and think about a property of water. OK. Water has a high heat capacity. It takes a lot of energy to change its temperature, so the reef's water moderates temperature change, while the desert's air and sand heat up and cool down fast. That means reef organisms, like corals, live within a narrow, stable range, which is why a rise of just one to two degrees can trigger bleaching. Desert organisms need the heat and drought adaptations you met earlier."
+      },
+      "durationInFrames": 1395
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Lock it in",
+      "points": [
+        "Shared factors: temperature, light, pH. Aquatic: dissolved oxygen, salinity, turbidity, flow, depth.",
+        "Terrestrial: soil type and moisture, humidity, wind, slope and aspect.",
+        "Water has a high heat capacity, so aquatic temperatures are more stable.",
+        "Dissolved oxygen falls as water warms; salinity runs from under 0.5 ppt (fresh) to about 35 ppt (sea).",
+        "Compare fairly (same method, comparable times, repeats), then link each difference to the life supported."
+      ],
+      "finalPrompt": "For every abiotic difference, say what it means for the organisms living there.",
+      "caption": "Five takeaways on comparing ecosystems.",
+      "voiceover": {
+        "text": "Let's lock it in. Temperature, light and pH are shared factors. Dissolved oxygen, salinity, turbidity, flow and depth are aquatic. Soil type and moisture, humidity, wind, and slope and aspect matter on land. Water's high heat capacity makes aquatic temperatures more stable. Dissolved oxygen falls as water warms, and salinity runs from under half a part per thousand in fresh water to about thirty-five in the sea. Compare fairly, then link each abiotic difference to the life it supports."
+      },
+      "durationInFrames": 1033
+    }
+  ]
+}
