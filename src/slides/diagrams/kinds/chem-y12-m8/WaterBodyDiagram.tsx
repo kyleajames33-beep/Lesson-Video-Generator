@@ -609,8 +609,8 @@ const ManagementMode = ({id, frame, b, accent}: ModeArgs) => {
 			</g>
 			{labelA.map((l) => (
 				<g key={l.n} opacity={ramp(frame, l.t, 16)}>
-					<circle cx={l.x - textWidth(l.title) / 2 - 16} cy={84} r={12} fill={accent} />
-					<text x={l.x - textWidth(l.title) / 2 - 16} y={90} textAnchor="middle" fill="#ffffff" fontSize={15} fontWeight={800}>{l.n}</text>
+					{/* plain bullet: these are parallel measures (they build in narration order, not left to right) */}
+					<circle cx={l.x - textWidth(l.title) / 2 - 14} cy={84} r={6} fill={accent} />
 					<text x={l.x} y={90} textAnchor="middle" fill={TOK.ink} fontSize={18} fontWeight={800}>{l.title}</text>
 					<text x={l.x} y={112} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>{l.sub}</text>
 				</g>
@@ -622,8 +622,7 @@ const ManagementMode = ({id, frame, b, accent}: ModeArgs) => {
 				{[0, 1, 2, 3].map((k) => (
 					<Plant key={k} x={plantX + 16 + k * 19} baseY={rowB + 22} h={40} frame={frame} seed={k + 4} />
 				))}
-				<circle cx={plantX + 90 - textWidth('Sewage upgrade + wetlands') / 2 - 16} cy={rowB - 70} r={12} fill={accent} />
-				<text x={plantX + 90 - textWidth('Sewage upgrade + wetlands') / 2 - 16} y={rowB - 64} textAnchor="middle" fill="#ffffff" fontSize={15} fontWeight={800}>3</text>
+				<circle cx={plantX + 90 - textWidth('Sewage upgrade + wetlands') / 2 - 14} cy={rowB - 70} r={6} fill={accent} />
 				<text x={plantX + 90} y={rowB - 64} textAnchor="middle" fill={TOK.ink} fontSize={18} fontWeight={800}>Sewage upgrade + wetlands</text>
 				<text x={plantX + 90} y={rowB - 44} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>remove phosphate before discharge</text>
 			</g>
