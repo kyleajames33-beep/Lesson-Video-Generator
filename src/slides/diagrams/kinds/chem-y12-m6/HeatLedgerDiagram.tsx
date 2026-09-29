@@ -127,7 +127,7 @@ export const HeatLedgerDiagram = ({steps = [], markers, floor, formula, numbers 
 							<line x1={x - gap} y1={ky(blocks[i - 1].s.kind === 'cost' ? blocks[i - 1].top : blocks[i - 1].bottom)} x2={x} y2={ky(blocks[i - 1].s.kind === 'cost' ? blocks[i - 1].top : blocks[i - 1].bottom)} stroke={TOK.inkMute} strokeWidth={1.5} strokeDasharray="4 4" opacity={t} />
 						)}
 						<rect x={x} y={y} width={bw} height={Math.max(0, h)} rx={8} fill={c} opacity={0.88} stroke={shade(c.startsWith('#') ? c : '#888888', -0.25)} strokeWidth={s.kind === 'cost' ? 2 + pulse * 1.5 : 1.5} />
-						<rect x={x + 8} y={y + 6} width={10} height={Math.max(0, h - 12)} rx={5} fill="#ffffff" opacity={0.3} />
+						<rect x={x + 8} y={y + 6} width={10} height={Math.max(0, h - 12)} rx={5} fill="#ffffff" opacity={0.18 + 0.2 * idlePulse(frame + i * 20, 70)} />
 						<text x={x + bw / 2} y={(labelBelow ? yB + 26 : yA - 44)} textAnchor="middle" fill={TOK.ink} fontSize={18} fontWeight={800} opacity={fadeAt(frame, s.at + 18)}>{s.label}</text>
 						{s.sub && <text x={x + bw / 2} y={(labelBelow ? yB + 48 : yA - 22)} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700} opacity={fadeAt(frame, s.at + 18)}>{s.sub}</text>}
 						{(numbers || s.kind === 'release' || s.valueText) && (

@@ -63,7 +63,7 @@ export const NetIonicDiagram = ({
 			<g opacity={fadeAt(frame, ionsAt, 14)}>
 				<text x={cx - bw / 4} y={112} textAnchor="middle" fill={TOK.ink} fontSize={20} fontWeight={800} opacity={1 - lift}>strong acid: all ions</text>
 				<text x={cx + bw / 4} y={112} textAnchor="middle" fill={TOK.ink} fontSize={20} fontWeight={800} opacity={1 - lift}>strong base: all ions</text>
-				<DioramaPlinth id={ID} cx={cx} cy={baseY + 14} rx={330} />
+				<DioramaPlinth id={ID} cx={cx} cy={baseY + 14} rx={316} />
 				<rect x={cx - bw / 2} y={baseY - bh * 0.62} width={bw} height={bh * 0.62} rx={12} fill="rgba(150,190,225,0.22)" />
 				{/* divider */}
 				<rect x={cx - 3} y={baseY - bh + 10 - lift * 200} width={6} height={bh - 16} rx={3} fill="rgba(70,90,110,0.5)" opacity={1 - lift} />
