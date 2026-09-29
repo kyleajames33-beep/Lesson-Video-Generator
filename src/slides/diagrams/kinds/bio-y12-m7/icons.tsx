@@ -138,14 +138,16 @@ const draw = (id: string, name: IconName, frame: number, o: IconOpts): ReactNode
 		case 'viroid':
 			// A tiny closed ring of RNA, no protein coat.
 			return (
-				<g transform={`rotate(${frame / 3})`}>
+				<g>
 					<Shadow rx={26} y={32} />
+					<g transform={`rotate(${frame / 3})`}>
 					<circle r={22} fill="none" stroke={edge('rna', -0.15)} strokeWidth={9} />
 					<circle r={22} fill="none" stroke={PAL.rna} strokeWidth={6} />
 					{Array.from({length: 18}, (_, k) => {
 						const a = (k / 18) * Math.PI * 2;
 						return <line key={k} x1={Math.cos(a) * 17} y1={Math.sin(a) * 17} x2={Math.cos(a) * 12} y2={Math.sin(a) * 12} stroke={PAL.rna} strokeWidth={2} />;
 					})}
+					</g>
 				</g>
 			);
 		case 'mosquito': {

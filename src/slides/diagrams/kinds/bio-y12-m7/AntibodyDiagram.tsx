@@ -226,7 +226,7 @@ export const AntibodyDiagram = ({mode = 'structure', title, labels = {}, beats, 
 				return (
 					<g key={i} opacity={Math.min(1, p * 1.4)} transform={`translate(${x + tw / 2},${y + th / 2}) scale(${0.9 + 0.1 * Math.min(1, p)}) translate(${-x - tw / 2},${-y - th / 2})`}>
 						<rect x={x} y={y} width={tw} height={th} rx={14} fill="#ffffff" stroke={theme.accent} strokeWidth={1.5} />
-						<text x={x + tw / 2} y={y + 26} textAnchor="middle" fill={theme.accent} fontSize={17} fontWeight={800}>{t.name}</text>
+						<text x={x + tw / 2} y={y + 26} textAnchor="middle" fill={theme.accent} fontSize={t.name.length > 16 ? 15 : 17} fontWeight={800}>{t.name}</text>
 						{tileArt(i, x, y)}
 					</g>
 				);

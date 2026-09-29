@@ -88,7 +88,7 @@ export const PhagoDiagram = ({title, steps = ['Chemotaxis', 'Adherence', 'Ingest
 					const a = k * 2.4;
 					return <circle key={k} cx={B.x - Math.abs(Math.cos(a)) * r} cy={B.y - 70 + Math.sin(a) * r * 0.35 + idleBob(frame, k, 1.5)} r={3} fill={theme.accent} opacity={Math.max(0.08, 0.7 - k * 0.025)} />;
 				})}
-				<text x={B.x + 60} y={top + 110} fill={theme.accent} fontSize={16} fontWeight={800}>{labels.gradient ?? 'chemokine gradient'}</text>
+				<text x={B.x - 60} y={top + 118} textAnchor="end" fill={theme.accent} fontSize={16} fontWeight={800}>{labels.gradient ?? 'chemokine gradient'}</text>
 			</g>
 			{/* bacterium (inside the phagosome once sealed) */}
 			<g opacity={1 - digest}>

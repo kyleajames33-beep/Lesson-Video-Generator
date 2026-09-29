@@ -111,8 +111,8 @@ export const MembraneDiagram = ({title, labels = {}, range = [], footer = [], be
 				<Lines x={160} y={top + 44} lines={wrap(labels.source ?? 'tea tree leaves, distilled', 30)} size={17} color={TOK.ink} anchor="start" />
 			</g>
 			<g opacity={fadeAt(frame, b.oil)}>
-				<ellipse cx={W - 230} cy={top + 42} rx={9} ry={5} fill={`url(#${ID}-ball-oil)`} />
-				<text x={W - 214} y={top + 48} fill={TOK.ink} fontSize={17} fontWeight={800}>{labels.oil ?? 'terpinen-4-ol'}</text>
+				<ellipse cx={W - 230} cy={top + 60} rx={9} ry={5} fill={`url(#${ID}-ball-oil)`} />
+				<text x={W - 214} y={top + 66} fill={TOK.ink} fontSize={17} fontWeight={800}>{labels.oil ?? 'terpinen-4-ol'}</text>
 			</g>
 			{/* step captions */}
 			{[
@@ -121,7 +121,7 @@ export const MembraneDiagram = ({title, labels = {}, range = [], footer = [], be
 				{t: labels.die ?? 'respiration disrupted: the cell dies', at: b.die},
 			].map((c, i, arr) => {
 				const on = fadeAt(frame, c.at, 10) * (i < arr.length - 1 ? 1 - fadeAt(frame, arr[i + 1].at, 10) : 1);
-				return <text key={i} x={W / 2} y={top + 92} textAnchor="middle" fill={i === 2 ? TOK.amberInk : theme.accent} fontSize={19} fontWeight={800} opacity={on}>{c.t}</text>;
+				return <text key={i} x={W / 2} y={top + 26} textAnchor="middle" fill={i === 2 ? TOK.amberInk : theme.accent} fontSize={19} fontWeight={800} opacity={on}>{c.t}</text>;
 			})}
 			{/* range of microbes */}
 			{range.map((r, i) => {

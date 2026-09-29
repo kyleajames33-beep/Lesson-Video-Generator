@@ -138,7 +138,7 @@ export const FlaskDiagram = ({title, labels = {}, beats, delay = 62}: FlaskProps
 						})}
 					</g>
 				))}
-				<text x={W / 2 + 10} y={top + 36} textAnchor="middle" fill="#5a8fb0" fontSize={16} fontWeight={800}>air flows in</text>
+				<text x={Rr.x + 110} y={top + 60} textAnchor="middle" fill="#5a8fb0" fontSize={16} fontWeight={800}>air flows in</text>
 			</g>
 			{/* left: swan neck */}
 			<g opacity={fadeAt(frame, b.swan, 14)}>

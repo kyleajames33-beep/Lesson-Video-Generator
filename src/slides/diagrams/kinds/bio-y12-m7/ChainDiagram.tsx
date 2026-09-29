@@ -134,7 +134,7 @@ export const ChainDiagram = ({title, links, snap, breakers = [], footer = [], de
 			{/* link names, outside the loop */}
 			{links.map((l, i) => {
 				const a = ang(i);
-				const p = {x: C.x + Math.cos(a) * (RX + 34), y: C.y + Math.sin(a) * (RY + 34)};
+				const p = {x: C.x + Math.cos(a) * (RX + 48), y: C.y + Math.sin(a) * (RY + 34)};
 				const anchor = Math.abs(Math.cos(a)) < 0.3 ? 'middle' : Math.cos(a) > 0 ? 'start' : 'end';
 				const lines = wrap(l.name, 14);
 				const isSnap = i === snap.index && snapT > 0;
@@ -153,7 +153,7 @@ export const ChainDiagram = ({title, links, snap, breakers = [], footer = [], de
 				if (pop <= 0) return null;
 				const w = textWidth(br.text, 15) + 22;
 				const below = Math.sin(a) > 0.3;
-				const lp = {x: C.x + Math.cos(a) * (RX + 34), y: C.y + Math.sin(a) * (RY + 34)};
+				const lp = {x: C.x + Math.cos(a) * (RX + 48), y: C.y + Math.sin(a) * (RY + 34)};
 				const nl = wrap(links[br.index].name, 14).length;
 				const cx = Math.abs(Math.cos(a)) < 0.3 ? lp.x : Math.cos(a) > 0 ? Math.min(W - w / 2 - 4, lp.x + w / 2 - 20) : Math.max(w / 2 + 4, lp.x - w / 2 + 20);
 				const cy = below ? lp.y + 14 + nl * 20 + 6 : lp.y + 6 + (nl - 1) * 11 + 26;

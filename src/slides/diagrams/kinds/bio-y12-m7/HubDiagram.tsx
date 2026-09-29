@@ -100,7 +100,7 @@ export const HubDiagram = ({title, centre, source, spokes, knockout, signalColor
 					<Icon id={ID} name={centre.icon} x={C.x} y={C.y + idleBob(frame, 0, 1.2) * (1 - ko)} s={1.35} frame={frame} />
 				</g>
 				<text x={C.x} y={C.y + 108} textAnchor="middle" fill={ko > 0.5 ? TOK.inkMute : TOK.amberInk} fontSize={20} fontWeight={800}>{centre.name}</text>
-				{centre.sub && <text x={C.x} y={C.y + 130} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800} opacity={fadeAt(frame, centre.subAt ?? centre.at)}>{centre.sub}</text>}
+				{centre.sub && <text x={C.x} y={C.y - 74} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800} opacity={fadeAt(frame, centre.subAt ?? centre.at)}>{centre.sub}</text>}
 				{ko > 0 && <Mark x={C.x + 40} y={C.y - 40} ok={false} r={16} opacity={ko} />}
 			</g>
 			{/* knockout: viruses converge on the centre */}
