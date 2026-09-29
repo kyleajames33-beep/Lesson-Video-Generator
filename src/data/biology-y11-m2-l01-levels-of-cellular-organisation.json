@@ -12,8 +12,8 @@
     "Compare the characteristics and structures of cells in unicellular, colonial and multicellular organisms"
   ],
   "moduleLessonCount": 25,
-  "lessonIntent": "Students can compare the characteristics and structures of cells in unicellular, colonial and multicellular organisms, and justify why a specialised cell cannot live independently.",
-  "examSkill": "Compare the three levels on the same criteria (cell number, specialisation, independence, structures) and use interdependence, not cell count, to classify an organism.",
+  "lessonIntent": "Students can compare unicellular, colonial and multicellular organisation using cell specialisation, division of labour and interdependence rather than a universal survival-after-separation test.",
+  "examSkill": "Compare the three levels on the same criteria: cell number, specialisation, division of labour and interdependence. Treat colonial-to-multicellular organisation as a spectrum in some lineages.",
   "introVoiceover": {
     "text": "Welcome back to HSC Biology. Today, how life goes from one cell doing everything to whole organisms. Let's get into it."
   },
@@ -138,24 +138,21 @@
     {
       "id": "concept-colony",
       "type": "concept",
-      "heading": "Colonial life: together, but independent",
-      "body": "A colony is a group of identical or near-identical cells living together with little or no specialisation.",
+      "heading": "Colonial life: coordinated cells with limited specialisation",
+      "body": "Colonial organisms contain multiple cells that remain relatively similar, with less division of labour than strongly multicellular organisms.",
       "bullets": [
         {
-          "text": "Each cell stays largely independent: a generalist that could, in principle, survive on its own.",
-          "at": 13.2
+          "text": "Gonium is a clear volvocine-colony example: a small sheet of similar flagellated cells that coordinate movement."
         },
         {
-          "text": "Volvox: hundreds of cells in a hollow ball, each with its own flagella, each photosynthesising for itself.",
-          "at": 19.6
+          "text": "Colonial lineages can show intermediate levels of integration, so avoid a rigid 'independent cell versus body cell' rule."
         },
         {
-          "text": "A hint of teamwork: flagella beat together so the colony rolls towards light.",
-          "at": 30
+          "text": "Volvox is more specialised: species such as Volvox carteri have differentiated somatic and reproductive cells."
         }
       ],
-      "callout": "More than one cell, but not yet one body.",
-      "caption": "Colonial cells are near-identical and largely independent; Volvox rolls towards light.",
+      "callout": "Colonial and multicellular organisation can form a spectrum of integration.",
+      "caption": "Colonies have multiple coordinated cells; some volvocine algae show intermediate specialisation.",
       "diagram": {
         "type": "diorama",
         "kind": "bio11m2Orgs",
@@ -165,7 +162,7 @@
           "light": 900,
           "tags": [
             {
-              "text": "near-identical cells",
+              "text": "similar cells",
               "at": 588,
               "anchor": "cell"
             },
@@ -181,14 +178,14 @@
             }
           ],
           "verdict": {
-            "text": "Between one cell and one body",
+            "text": "Integration ranges from similar coordinated cells to specialised multicellularity",
             "at": 1152
           }
         },
         "delay": 6
       },
       "voiceover": {
-        "text": "So what happens when lots of single cells live together? You get a colony. A colonial organism is a group of identical, or nearly identical, cells living together, with little or no specialisation. Each cell stays largely independent, still a generalist that could, in principle, survive on its own. Volvox is the classic example. It's a hollow ball of hundreds of cells, and each cell has its own pair of flagella and photosynthesises for itself. There is a hint of teamwork, though. The cells beat their flagella together, so the whole ball rolls towards the light. That's why a colony sits in between. It's more than one cell, but not yet one body."
+        "text": "Colonial life is best treated as a spectrum rather than a sharp survival test. A clear example is Gonium, a small colony of similar flagellated green-algal cells that coordinate their movement. Other volvocine algae show more integration. Volvox carteri, for example, has differentiated somatic cells and reproductive cells, so it should not be described as a ball of identical independent cells. The useful comparison is the degree of division of labour and interdependence."
       },
       "durationInFrames": 1416,
       "revealDelays": {
@@ -199,27 +196,20 @@
       "id": "concept-multi",
       "type": "concept",
       "heading": "Multicellular: specialised and dependent",
-      "body": "Many specialised cells that depend on one another, so no single cell can survive alone.",
+      "body": "Multicellular organisms show sustained division of labour among specialised cell types that function as an integrated whole.",
       "bullets": [
         {
-          "text": "Specialised cells do one job very well and lose the ability to do the others.",
-          "at": 4.4
+          "text": "Specialised cell types perform different roles within tissues and organs."
         },
         {
-          "text": "Nerve cells signal, red blood cells carry oxygen, gut cells absorb food.",
-          "at": 11.2
+          "text": "Division of labour increases dependence among cell types, even though some cultured cells can survive outside the organism under suitable conditions."
         },
         {
-          "text": "Division of labour makes the organism efficient, but every cell dependent.",
-          "at": 26.4
-        },
-        {
-          "text": "The test: separate a cell. A colony cell lives on; a body cell dies.",
-          "at": 33.6
+          "text": "Classify using specialisation, coordinated development and interdependence, not whether every isolated cell dies."
         }
       ],
-      "callout": "Specialisation creates interdependence.",
-      "caption": "Specialised cells depend on each other: a separated body cell dies, a colony cell survives.",
+      "callout": "Specialisation and division of labour are stronger evidence than a separation test.",
+      "caption": "Multicellularity is characterised by specialised, interdependent cell types organised into a whole.",
       "diagram": {
         "type": "diorama",
         "kind": "bio11m2Orgs",
@@ -246,8 +236,8 @@
           "test": {
             "at": 1008,
             "result": 1176,
-            "colonyText": "colony cell, separated: lives",
-            "multiText": "body cell, separated: dies"
+            "colonyText": "less specialisation / division of labour",
+            "multiText": "specialised, integrated cell types"
           },
           "verdict": {
             "text": "Specialisation and interdependence, not cell count",
@@ -257,7 +247,7 @@
         "delay": 6
       },
       "voiceover": {
-        "text": "So what tips an organism over into being truly multicellular? Specialisation. Once a cell becomes very good at one job, it loses the ability to do the others. A nerve cell signals, but it can't carry oxygen. A red blood cell carries oxygen, and has even lost its nucleus to fit in more haemoglobin. A gut cell absorbs food, but can't do either of those jobs. That division of labour makes the whole organism efficient, but it makes every cell dependent on the others. Here's the test. Pull one cell out of a colony, and it keeps living. Pull one cell out of a multicellular body, and it dies. It's not the number of cells that counts. It's specialisation and interdependence."
+        "text": "Strong multicellularity is characterised by division of labour. Different cell types specialise for different jobs and work as an integrated organism. That creates interdependence, but do not turn that into the universal claim that every body cell dies as soon as it is separated; many animal and plant cells can survive in culture when supplied with suitable conditions. The stronger evidence is specialised cell types, coordinated development, tissues and sustained division of labour."
       },
       "durationInFrames": 1512,
       "revealDelays": {
@@ -330,17 +320,17 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "Organism X is a green sphere of about 2000 identical flagellated cells; separated cells keep swimming and photosynthesising for days. Organism Y is broken apart the same way and every cell dies within hours. Classify each and justify.",
-      "pausePrompt": "Pause: what does the separation result tell you?",
+      "question": "Organism X is a small sheet of similar flagellated cells that coordinate movement but show little division of labour. Organism Y contains specialised nerve, muscle and digestive cells organised into tissues. Classify the organisation of each and justify.",
+      "pausePrompt": "Pause: use specialisation and division of labour, not a survival-after-separation rule.",
       "answerSteps": [
-        "X is colonial: identical, unspecialised cells that keep the structures for independent life.",
-        "Y is multicellular: specialised, interdependent cells that lack the structures to live alone.",
-        "Both have thousands of cells, so cell number can’t separate them.",
-        "Answer: the separation result is the evidence, not cell count."
+        "X is colonial: multiple coordinated cells with little specialisation or division of labour.",
+        "Y is multicellular: distinct specialised cell types are organised into tissues and depend on coordinated functions.",
+        "Cell number alone does not separate the categories.",
+        "Answer: classify from degree of specialisation and integration ✓"
       ],
-      "caption": "X is colonial, Y is multicellular: the separation test decides, not cell number.",
+      "caption": "X: colonial with little division of labour. Y: multicellular with specialised tissues.",
       "voiceover": {
-        "text": "Quick check. Organism X is a green sphere of about two thousand identical cells with flagella, and when it's broken apart the separated cells keep swimming and photosynthesising for days. Organism Y is broken apart the same way, and every cell dies within hours. Classify each one. Pause, and think about what the separation result tells you. OK. X is colonial. Its cells are identical and unspecialised, and each keeps the structures it needs to live alone. Y is multicellular. Its cells are specialised and interdependent, so a separated cell can't survive. Both have thousands of cells, so the evidence is the separation test, not the cell count."
+        "text": "Quick check. Organism X is a small sheet of similar flagellated cells that coordinate movement but show little division of labour. Organism Y contains specialised nerve, muscle and digestive cells organised into tissues. X is colonial because its cells remain similar and division of labour is limited. Y is multicellular because specialised cell types are organised into tissues and integrated functions. Cell number by itself is not enough, and neither is a universal claim about whether an isolated cell can survive."
       },
       "durationInFrames": 1356
     },
