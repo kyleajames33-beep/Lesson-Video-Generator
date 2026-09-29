@@ -128,47 +128,45 @@
       "secondary": "Sickle cell disease comes from a single base substitution in the beta globin gene. Fetal haemoglobin does not sickle, so switching it back on reduces sickling.",
       "callout": "Edited outside the body, then returned: an ex vivo gene therapy.",
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "collect",
-            "label": "Collect stem cells"
+        "type": "diorama",
+        "kind": "bio12m6ExVivo",
+        "props": {
+          "steps": [
+            {
+              "label": "1 · Collect",
+              "tool": "blood stem cells",
+              "at": 582
+            },
+            {
+              "label": "2 · Edit",
+              "tool": "CRISPR-Cas9",
+              "at": 690
+            },
+            {
+              "label": "3 · Chemo",
+              "tool": "clears marrow",
+              "at": 1230
+            },
+            {
+              "label": "4 · Infuse",
+              "tool": "edited cells back",
+              "at": 1362
+            }
+          ],
+          "beats": {
+            "collect": 586,
+            "edit": 694,
+            "clear": 1234,
+            "infuse": 1366,
+            "outcome": 1470
           },
-          {
-            "id": "edit",
-            "label": "CRISPR disables BCL11A switch"
-          },
-          {
-            "id": "chemo",
-            "label": "Chemo clears marrow"
-          },
-          {
-            "id": "infuse",
-            "label": "Infuse edited cells"
-          },
-          {
-            "id": "out",
-            "label": "Fetal haemoglobin, fewer crises"
+          "editLabel": "BCL11A switch disabled",
+          "outcome": "Trials: over 90% had no severe pain crises for at least a year",
+          "footer": {
+            "text": "Edited outside the body, then returned: ex vivo",
+            "at": 1734
           }
-        ],
-        "edges": [
-          {
-            "from": "collect",
-            "to": "edit"
-          },
-          {
-            "from": "edit",
-            "to": "chemo"
-          },
-          {
-            "from": "chemo",
-            "to": "infuse"
-          },
-          {
-            "from": "infuse",
-            "to": "out"
-          }
-        ]
+        }
       },
       "durationInFrames": 2096,
       "caption": "Casgevy: ex vivo CRISPR edit of blood stem cells switches fetal haemoglobin back on.",

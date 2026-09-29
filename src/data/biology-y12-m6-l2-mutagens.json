@@ -65,6 +65,34 @@
       "caption": "A mutagen increases mutation risk; the mutation is the lasting copied change.",
       "voiceover": {
         "text": "Let's get the central distinction crystal clear, because the exam tests it constantly. A mutagen is any agent that increases the rate of mutation. It might physically damage DNA, alter a base, interfere with accurate base pairing, or insert foreign genetic material. A mutation, by contrast, is the lasting DNA sequence change itself, and it only exists if that damage is not repaired and then gets copied into the next generation of cells. So a mutagen is the cause of risk, and a mutation is the outcome that sometimes follows. Think about sunlight on skin. The UV can damage skin-cell DNA, but whether that becomes a real mutation depends on how much damage there is, how long the exposure lasts, and crucially whether the repair systems catch it before the cell divides. Exposure is a risk factor, it is never a guarantee."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6DnaDamage",
+        "props": {
+          "mode": "outcome",
+          "outcome": {
+            "bases": "ATGCGTACGA",
+            "i": 2,
+            "changedTo": "A",
+            "damageAt": 128,
+            "agentLabel": "A mutagen damages one base",
+            "repair": {
+              "title": "Repaired before division",
+              "at": 330,
+              "tag": "No mutation"
+            },
+            "copy": {
+              "title": "Not repaired, then copied",
+              "at": 370,
+              "tag": "Mutation: a lasting change"
+            }
+          },
+          "footer": {
+            "text": "Exposure is a risk factor, never a guarantee",
+            "at": 895
+          }
+        }
       }
     },
     {
@@ -102,29 +130,61 @@
         "text": "Let's compare the two radiation mutagens, because the exam loves to contrast them. UV radiation, the type in everyday sunlight, mainly works by causing abnormal bonds to form between neighbouring bases, particularly thymine bases sitting next to each other. That distorts the shape of the DNA and can jam up replication. Ionising radiation is a different beast. X-rays, gamma rays, and some radioactive emissions carry so much energy that they can strip electrons clean off atoms, and that lets them break one or even both strands of the DNA backbone. So at HSC depth you don't need every molecular detail, but you absolutely need the comparison. UV distorts base pairing and warps the helix, while ionising radiation produces more severe, larger-scale damage like strand breaks. Both raise mutation risk, but through clearly different mechanisms."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Mutagen",
-          "Example source",
-          "Main DNA effect"
-        ],
-        "rows": [
-          [
-            "UV radiation",
-            "Sunlight",
-            "Abnormal base bonding, distortion"
+        "type": "diorama",
+        "kind": "bio12m6DnaDamage",
+        "props": {
+          "panels": [
+            {
+              "title": "UV radiation · sunlight",
+              "bases": "CGATTACGTC",
+              "at": 20,
+              "agent": {
+                "type": "uv",
+                "at": 60
+              },
+              "effect": {
+                "type": "dimer",
+                "i": 3,
+                "at": 160
+              },
+              "tag": {
+                "text": "Distorts base pairing",
+                "at": 222
+              },
+              "caption": {
+                "text": "Abnormal bond between neighbouring thymines",
+                "at": 190
+              }
+            },
+            {
+              "title": "Ionising · X-rays, gamma rays",
+              "bases": "GACTGCATGC",
+              "at": 300,
+              "agent": {
+                "type": "ionising",
+                "at": 330
+              },
+              "effect": {
+                "type": "break",
+                "i": 4,
+                "strands": 2,
+                "at": 505
+              },
+              "tag": {
+                "text": "Breaks strands",
+                "at": 530
+              },
+              "caption": {
+                "text": "Can break one or both strands: more severe",
+                "at": 560
+              }
+            }
           ],
-          [
-            "Ionising radiation",
-            "X-rays, gamma rays",
-            "Strand breaks, severe damage"
-          ],
-          [
-            "Chemical mutagen",
-            "Base-modifying compounds",
-            "Mispairing or faulty replication"
-          ]
-        ]
+          "footer": {
+            "text": "Both raise mutation risk, by different mechanisms",
+            "at": 845
+          }
+        }
       }
     },
     {
@@ -143,6 +203,60 @@
       "caption": "Natural mutagens like background radiation and some viruses also damage DNA.",
       "voiceover": {
         "text": "Now an idea students often get wrong. Not every mutagen is artificial. Plenty of them are completely natural. Background radiation, for instance, comes from rocks, soil, and cosmic rays, and it's low-level ionising radiation that's been around far longer than humans. Certain viruses are mutagenic too, because their genetic material can insert itself right into the host's DNA, and that insertion can interrupt a gene or scramble how it's regulated. Here's the trap to avoid. People assume natural means harmless and artificial means dangerous, but that's just poor biology. The thing that actually determines risk is the mechanism, how the agent damages DNA, and the exposure, how much and for how long. A natural source can absolutely cause mutations, and a label like natural tells you nothing about safety."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6DnaDamage",
+        "props": {
+          "panels": [
+            {
+              "title": "Background radiation",
+              "bases": "GACTGCATGC",
+              "at": 60,
+              "agent": {
+                "type": "ionising",
+                "at": 80
+              },
+              "effect": {
+                "type": "break",
+                "i": 4,
+                "strands": 1,
+                "at": 170
+              },
+              "tag": {
+                "text": "Natural, still ionising",
+                "at": 200
+              },
+              "caption": {
+                "text": "From rocks, soil and cosmic rays",
+                "at": 100
+              }
+            },
+            {
+              "title": "Some viruses",
+              "bases": "ATCGGATCCA",
+              "at": 240,
+              "agent": {
+                "type": "virus",
+                "at": 250
+              },
+              "effect": {
+                "type": "insert",
+                "i": 5,
+                "bases": "GAC",
+                "at": 320
+              },
+              "tag": {
+                "text": "Inserts into host DNA",
+                "at": 345
+              },
+              "caption": {
+                "text": "Can interrupt a gene or how it is regulated",
+                "at": 405
+              }
+            }
+          ]
+        }
       }
     },
     {

@@ -244,6 +244,53 @@
       "caption": "Agricultural benefits coexist with biodiversity trade-offs; a strong answer names both.",
       "voiceover": {
         "text": "Now the balance, because a benefit does not cancel a trade off. Agricultural biotechnology delivers genuine benefits, but it also carries the strongest biodiversity trade offs of the three domains. Reliance on a narrow range of successful genotypes reduces genetic diversity in the crop, and lower diversity reduces resilience to disease and to environmental change, exactly as we saw back in the biodiversity lesson. The point is that the benefit and the trade off both genuinely exist, so a strong answer names both. The highest scoring HSC judgement states the benefit clearly, names the biodiversity risk explicitly, and then ends with conditional, balanced language, rather than letting an impressive benefit quietly silence a real cost."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6Crop",
+        "props": {
+          "fields": [
+            {
+              "title": "Many genotypes",
+              "genotypes": [
+                0,
+                1,
+                2,
+                1,
+                0,
+                2,
+                2,
+                0,
+                1
+              ],
+              "at": 40
+            },
+            {
+              "title": "A few successful genotypes",
+              "genotypes": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "at": 292
+            }
+          ],
+          "susceptible": 0,
+          "disease": {
+            "label": "a new disease",
+            "at": 474
+          },
+          "footer": {
+            "text": "The benefit and the trade-off both exist: name both",
+            "at": 822
+          }
+        }
       }
     },
     {

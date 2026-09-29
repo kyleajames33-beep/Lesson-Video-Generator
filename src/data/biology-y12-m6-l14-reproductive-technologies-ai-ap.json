@@ -123,47 +123,52 @@
       "secondary": "The bag keeps out stray pollen from wind or insects, so the only pollen that reaches the stigma is the pollen you chose.",
       "callout": "Emasculate, bag, pollinate, re-bag: the bag is what makes the cross controlled.",
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {
-            "id": "choose",
-            "label": "Choose parents"
+        "type": "diorama",
+        "kind": "bio12m6Cross",
+        "props": {
+          "steps": [
+            {
+              "label": "1 · Choose",
+              "tool": "two parents",
+              "at": 150
+            },
+            {
+              "label": "2 · Emasculate",
+              "tool": "remove anthers, bag",
+              "at": 414
+            },
+            {
+              "label": "3 · Pollinate",
+              "tool": "chosen pollen, re-bag",
+              "at": 894
+            },
+            {
+              "label": "4 · Grow",
+              "tool": "collect seed, test",
+              "at": 1218
+            }
+          ],
+          "beats": {
+            "choose": 150,
+            "emasculate": 606,
+            "bag": 666,
+            "pollinate": 894,
+            "rebag": 1074,
+            "seed": 1218
           },
-          {
-            "id": "emas",
-            "label": "Emasculate and bag"
+          "female": {
+            "label": "A",
+            "trait": "high yield"
           },
-          {
-            "id": "poll",
-            "label": "Apply chosen pollen"
+          "male": {
+            "label": "B",
+            "trait": "disease resistance"
           },
-          {
-            "id": "rebag",
-            "label": "Re-bag and label"
-          },
-          {
-            "id": "seed",
-            "label": "Grow and test seed"
+          "footer": {
+            "text": "The bag keeps out stray pollen: that makes the cross controlled",
+            "at": 1446
           }
-        ],
-        "edges": [
-          {
-            "from": "choose",
-            "to": "emas"
-          },
-          {
-            "from": "emas",
-            "to": "poll"
-          },
-          {
-            "from": "poll",
-            "to": "rebag"
-          },
-          {
-            "from": "rebag",
-            "to": "seed"
-          }
-        ]
+        }
       },
       "durationInFrames": 1786,
       "caption": "A controlled cross: choose parents, emasculate and bag, apply chosen pollen, re-bag, grow and test.",

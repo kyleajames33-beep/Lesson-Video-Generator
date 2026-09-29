@@ -65,6 +65,53 @@
       "caption": "Point mutations: substitution, insertion, deletion at base level.",
       "voiceover": {
         "text": "Let's set up the categories. A point mutation is a change to the DNA at the level of a single base, or a very small number of bases. There are three kinds. A substitution swaps one base for another, and because nothing is added or removed, the reading frame usually stays intact. An insertion adds an extra base into the sequence. A deletion removes a base. Now here's the key idea to hold on to. The phrase point mutation describes the scale of the change, base-level, it does not tell you the size of the effect. Because the genetic code is read in triplets, in codons of three bases, even a single base change can alter how the messenger RNA is read during translation. So the real question is always what the change does to the codons downstream, and that's where substitution and frameshift behave very differently."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6Codons",
+        "props": {
+          "rows": [
+            {
+              "label": "Substitution",
+              "seq": "ATGCCGAAGCTG",
+              "op": {
+                "type": "sub",
+                "pos": 4,
+                "base": "A"
+              },
+              "at": 20,
+              "opAt": 180,
+              "tag": "Frame kept · one codon changes"
+            },
+            {
+              "label": "Insertion",
+              "seq": "ATGCCGAAGCTG",
+              "op": {
+                "type": "ins",
+                "pos": 4,
+                "base": "A"
+              },
+              "at": 290,
+              "opAt": 312
+            },
+            {
+              "label": "Deletion",
+              "seq": "ATGCCGAAGCTG",
+              "op": {
+                "type": "del",
+                "pos": 4
+              },
+              "at": 352,
+              "opAt": 374
+            }
+          ],
+          "footer": [
+            {
+              "text": "Read in triplets: one base in or out shifts every codon after it",
+              "at": 660
+            }
+          ]
+        }
       }
     },
     {
@@ -103,29 +150,49 @@
         "text": "Let's zoom in on substitutions, because they have three very different outcomes. Remember the genetic code is degenerate, several codons can code for the same amino acid. So sometimes a substitution changes a codon but lands on a synonym, for example G A A changing to G A G, both of which still code for glutamic acid. No amino acid changes, that's silent. Other times the new codon codes for a genuinely different amino acid, and that's missense, exactly what happens in sickle cell where one substitution swaps glutamic acid for valine in beta-globin. And sometimes the new codon becomes a stop signal, which is nonsense, ending the protein early and usually breaking it. So the same type of mutation, a single substitution, can do nothing, swap one amino acid, or wreck the whole protein, depending purely on which codon you land on."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Outcome",
-          "Codon-level change",
-          "Likely protein effect"
-        ],
-        "rows": [
-          [
-            "Silent",
-            "Same amino acid coded",
-            "Often little or no effect"
-          ],
-          [
-            "Missense",
-            "Different amino acid coded",
-            "Function may change, e.g. sickle cell"
-          ],
-          [
-            "Nonsense",
-            "Becomes a stop codon",
-            "Shortened, often non-functional"
+        "type": "diorama",
+        "kind": "bio12m6Codons",
+        "props": {
+          "rows": [
+            {
+              "label": "Change the third base",
+              "seq": "GAA",
+              "op": {
+                "type": "sub",
+                "pos": 2,
+                "base": "G"
+              },
+              "at": 30,
+              "opAt": 232,
+              "chain": true
+            },
+            {
+              "label": "Sickle cell, β-globin",
+              "seq": "GAG",
+              "op": {
+                "type": "sub",
+                "pos": 1,
+                "base": "T"
+              },
+              "at": 452,
+              "opAt": 486,
+              "firstCodon": 6,
+              "chain": true
+            },
+            {
+              "label": "Change the first base",
+              "seq": "GAA",
+              "op": {
+                "type": "sub",
+                "pos": 0,
+                "base": "T"
+              },
+              "at": 636,
+              "opAt": 662,
+              "chain": true
+            }
           ]
-        ]
+        }
       }
     },
     {
@@ -163,6 +230,59 @@
       "caption": "Point mutation effect depends on both the type and the position.",
       "voiceover": {
         "text": "Here's the nuance that separates a top answer. You cannot simply rank point mutations as always harmless or always severe, because the effect depends on two things together, the type and the position. On the smaller end, a silent substitution, or a change sitting in a less critical region of the protein, may barely matter. On the larger end, a nonsense mutation that ends the protein early, a frameshift near the start of the gene, or a missense change right in the active site, can be devastating. Position is genuinely important. A change near the end of a gene affects fewer amino acids than one near the start, and a swapped amino acid matters far more if it sits in the active site or disrupts folding. And the logic chain you should be able to recite is, DNA change leads to codon change, leads to amino acid change, leads to protein structure change, leads to a possible phenotype change."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6Gene",
+        "props": {
+          "mode": "position",
+          "length": 24,
+          "rows": [
+            {
+              "label": "Silent change",
+              "type": "none",
+              "pos": 9,
+              "at": 138,
+              "tag": "no amino acid changes"
+            },
+            {
+              "label": "Frameshift near the start",
+              "type": "shift",
+              "pos": 2,
+              "at": 345,
+              "tag": "most of the chain changes"
+            },
+            {
+              "label": "Frameshift near the end",
+              "type": "shift",
+              "pos": 21,
+              "at": 505,
+              "tag": "only the last few change"
+            },
+            {
+              "label": "Missense in the active site",
+              "type": "missense",
+              "pos": 12,
+              "site": [
+                10,
+                14
+              ],
+              "at": 672,
+              "tag": "one change, where it matters"
+            }
+          ],
+          "chain": {
+            "items": [
+              "DNA",
+              "codon",
+              "amino acid",
+              "protein",
+              "phenotype"
+            ],
+            "at": 775,
+            "step": 22
+          }
+        }
       }
     },
     {

@@ -5,6 +5,30 @@
 // See docs/diorama-system.md.
 
 import type {DioramaKindMap} from './types';
+import {CodonsDiagram} from '../kinds/bio-y12-m6/CodonsDiagram';
+import {AlleleJobsDiagram} from '../kinds/bio-y12-m6/AlleleJobsDiagram';
+import {GenePoolDiagram} from '../kinds/bio-y12-m6/GenePoolDiagram';
+import {DnaDamageDiagram} from '../kinds/bio-y12-m6/DnaDamageDiagram';
+import {ChromosomesDiagram} from '../kinds/bio-y12-m6/ChromosomesDiagram';
+import {LineageDiagram} from '../kinds/bio-y12-m6/LineageDiagram';
+import {GeneDiagram} from '../kinds/bio-y12-m6/GeneDiagram';
+import {RecombinantDiagram} from '../kinds/bio-y12-m6/RecombinantDiagram';
+import {CloningDiagram} from '../kinds/bio-y12-m6/CloningDiagram';
+import {CrossDiagram} from '../kinds/bio-y12-m6/CrossDiagram';
+import {CropDiagram} from '../kinds/bio-y12-m6/CropDiagram';
+import {ExVivoDiagram} from '../kinds/bio-y12-m6/ExVivoDiagram';
 
 export const KINDS: DioramaKindMap = {
+  bio12m6Codons: CodonsDiagram,
+  bio12m6AlleleJobs: AlleleJobsDiagram,
+  bio12m6GenePool: GenePoolDiagram,
+  bio12m6DnaDamage: DnaDamageDiagram,
+  bio12m6Chromosomes: ChromosomesDiagram,
+  bio12m6Lineage: LineageDiagram,
+  bio12m6Gene: GeneDiagram,
+  bio12m6Recombinant: RecombinantDiagram,
+  bio12m6Cloning: CloningDiagram,
+  bio12m6Cross: CrossDiagram,
+  bio12m6Crop: CropDiagram,
+  bio12m6ExVivo: ExVivoDiagram,
 };

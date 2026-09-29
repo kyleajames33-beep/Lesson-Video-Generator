@@ -66,6 +66,29 @@
       "caption": "Whole-organism cloning copies the genome; gene cloning copies one sequence.",
       "voiceover": {
         "text": "Let's set up the contrast first. Cloning just means copying genetic material, but the level you copy at changes everything, so these are two distinct technologies. Whole-organism cloning copies an organism's entire nuclear genome, the whole set of instructions, aiming to recreate a whole individual. Gene cloning copies only one selected DNA sequence, a single gene or fragment, nothing more. They have different processes, different uses and different limitations. Both are genuinely called cloning, which is exactly why students mix them up, but they answer completely different problems. The dividing line to hold onto is whole genome versus single sequence."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6Cloning",
+        "props": {
+          "mode": "compare",
+          "panels": [
+            {
+              "title": "Whole-organism cloning",
+              "at": 150,
+              "tag": "Entire nuclear genome"
+            },
+            {
+              "title": "Gene cloning",
+              "at": 305,
+              "tag": "One selected sequence"
+            }
+          ],
+          "footer": {
+            "text": "Whole genome versus single sequence",
+            "at": 660
+          }
+        }
       }
     },
     {
@@ -104,18 +127,37 @@
         "text": "Here's whole-organism cloning, step by step, and the method is called somatic cell nuclear transfer. First, you remove the nucleus from an egg cell, leaving it empty of its own DNA. Second, you insert a donor body-cell nucleus into that empty egg, and stimulate the egg to start dividing as if it had been fertilised. Third, you implant the resulting embryo into a surrogate to develop and be born. The strength of this is that it can preserve a valuable genotype, for instance an elite or endangered animal. But the weaknesses are serious, low success rates, frequent developmental failure, and it never guarantees an identical phenotype. Dolly is the proof, same genotype as her donor, but not the same outcome, because environment and development still shape the animal."
       },
       "diagram": {
-        "type": "flow",
-        "nodes": [
-          {"id": "enucleate", "label": "Remove egg nucleus"},
-          {"id": "insert", "label": "Insert donor nucleus"},
-          {"id": "stimulate", "label": "Stimulate division"},
-          {"id": "implant", "label": "Implant in surrogate"}
-        ],
-        "edges": [
-          {"from": "enucleate", "to": "insert"},
-          {"from": "insert", "to": "stimulate"},
-          {"from": "stimulate", "to": "implant"}
-        ]
+        "type": "diorama",
+        "kind": "bio12m6Cloning",
+        "props": {
+          "mode": "scnt",
+          "steps": [
+            {
+              "label": "1 · Remove",
+              "tool": "egg nucleus out",
+              "at": 36
+            },
+            {
+              "label": "2 · Insert",
+              "tool": "donor nucleus in",
+              "at": 143
+            },
+            {
+              "label": "3 · Stimulate",
+              "tool": "egg divides",
+              "at": 222
+            },
+            {
+              "label": "4 · Implant",
+              "tool": "into a surrogate",
+              "at": 302
+            }
+          ],
+          "footer": {
+            "text": "Same genotype as the donor; identical phenotype not guaranteed",
+            "at": 644
+          }
+        }
       }
     },
     {
@@ -134,6 +176,37 @@
       "caption": "Gene cloning copies one sequence efficiently; effectiveness is judged against the goal.",
       "voiceover": {
         "text": "Now gene cloning, and how we judge effectiveness. The process is, you insert a target DNA fragment into a vector, usually a plasmid, then put that vector into a host cell, and the host replicates over and over to make many identical copies of your sequence. This is efficient and scalable, and it sits at the heart of recombinant DNA work, DNA analysis and protein manufacture. Now the assessment part, effectiveness always depends on the goal. Whole-organism cloning is biologically significant but limited by low efficiency and phenotype variation. Gene cloning is usually more effective for practical biotechnology, because the target is specific and genuinely achievable. The honest summary is that neither is perfect copying, so judge each one against what it was actually trying to do."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6Recombinant",
+        "props": {
+          "steps": [
+            {
+              "label": "Into a vector",
+              "tool": "e.g. a plasmid",
+              "at": 12
+            },
+            {
+              "label": "Into a host cell",
+              "at": 96
+            },
+            {
+              "label": "Host replicates",
+              "at": 158
+            }
+          ],
+          "actions": [
+            "join",
+            "insert",
+            "copy"
+          ],
+          "geneLabel": "target DNA",
+          "footer": {
+            "text": "Efficient and scalable: judge it against the goal",
+            "at": 555
+          }
+        }
       }
     },
     {

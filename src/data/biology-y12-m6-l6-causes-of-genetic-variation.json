@@ -65,6 +65,60 @@
       "caption": "Mutation makes new alleles; meiosis and fertilisation reshuffle existing ones.",
       "voiceover": {
         "text": "Let's set up the comparison that the whole lesson hangs on. Three processes generate genetic variation, but they each have a distinct job. Mutation creates genuinely new alleles, by changing the DNA sequence itself. Meiosis reshuffles the alleles that already exist, dealing them out into genetically different gametes. And fertilisation combines those gametes at random, producing new genotypes in the offspring. Notice the division of labour. Mutation is the only one supplying real novelty, brand new alleles. Meiosis and fertilisation, by contrast, spread and recombine what's already there. That's why, after the drought, the finch population could shift so fast, it was reshuffling and selecting existing variation, no new alleles required. So the line to hold on to is simple, a new combination of alleles is not the same thing as a new allele."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6AlleleJobs",
+        "props": {
+          "panels": [
+            {
+              "title": "Mutation",
+              "action": "mutate",
+              "at": 95,
+              "actAt": 120,
+              "caption": [
+                "Changes the DNA sequence"
+              ],
+              "verdict": {
+                "text": "Creates new alleles",
+                "amber": true
+              }
+            },
+            {
+              "title": "Meiosis",
+              "action": "shuffle",
+              "genotype": "AaBb",
+              "at": 180,
+              "actAt": 200,
+              "caption": [
+                "Deals existing alleles",
+                "into different gametes"
+              ],
+              "verdict": {
+                "text": "Reshuffles",
+                "at": 396
+              }
+            },
+            {
+              "title": "Fertilisation",
+              "action": "combine",
+              "genotype": "AaBb",
+              "at": 285,
+              "actAt": 305,
+              "caption": [
+                "Fuses gametes at random"
+              ],
+              "verdict": {
+                "text": "New genotypes",
+                "at": 410
+              }
+            }
+          ],
+          "footer": {
+            "text": "A new combination is not a new allele",
+            "at": 830
+          }
+        }
       }
     },
     {
@@ -104,29 +158,20 @@
         "text": "Let's look closer at meiosis, because it does its work before fertilisation even starts. It contributes to variation in two major ways. First, independent assortment, the homologous chromosomes line up and separate randomly, so different combinations of maternal and paternal chromosomes end up in different gametes. Second, crossing over, where homologous chromosomes physically exchange segments, producing recombinant chromatids that mix maternal and paternal alleles on the same chromosome. Put those together and one parent can produce an enormous number of genetically different gametes, all without a single new mutation. This is exactly why brothers and sisters differ so much, it's mostly because each parent makes a different set of gametes through meiosis, not because a new mutation pops up in the relevant genes every generation. Many different gametes, zero new alleles."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Process",
-          "What it does",
-          "Creates a new allele?"
-        ],
-        "rows": [
-          [
-            "Mutation",
-            "Changes DNA sequence",
-            "Yes"
-          ],
-          [
-            "Meiosis",
-            "Assortment and crossing over",
-            "Not usually"
-          ],
-          [
-            "Fertilisation",
-            "Fuses gametes randomly",
-            "No"
-          ]
-        ]
+        "type": "diorama",
+        "kind": "bio12m6Chromosomes",
+        "props": {
+          "mode": "meiosis",
+          "genotype": "AaBb",
+          "beats": {
+            "assort": 100,
+            "cross": 280
+          },
+          "footer": {
+            "text": "Many different gametes, zero new alleles",
+            "at": 865
+          }
+        }
       }
     },
     {
@@ -145,6 +190,22 @@
       "caption": "Fertilisation randomly combines gametes into new genotypes.",
       "voiceover": {
         "text": "Now the third layer, fertilisation. Even after meiosis has produced a huge variety of gametes, fertilisation adds yet more variation, because which sperm meets which egg is largely a matter of chance. That random fusion brings together one set of maternal alleles and one set of paternal alleles into a brand new genotype in the offspring. But notice the pattern holding from earlier, fertilisation does not create new alleles by itself, it creates new combinations of alleles that already existed. So why does it matter biologically? Because natural selection acts on whole phenotypes, the integrated outcome of all those combined alleles, not on isolated alleles one at a time. Fertilisation keeps generating fresh genotypes for selection to test. New genotypes, yes, but still no new alleles."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6Chromosomes",
+        "props": {
+          "mode": "fertilise",
+          "genotype": "AaBb",
+          "beats": {
+            "meet": 96,
+            "fill": 178
+          },
+          "footer": {
+            "text": "New genotypes, still no new alleles",
+            "at": 820
+          }
+        }
       }
     },
     {

@@ -72,24 +72,30 @@
       ],
       "callout": "Ask: will the next generation inherit it?",
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Change",
-          "Cells affected",
-          "Inherited?"
-        ],
-        "rows": [
-          [
-            "Germline",
-            "Gametes, early embryo",
-            "Yes"
-          ],
-          [
-            "Somatic",
-            "Body cells only",
-            "No"
+        "type": "diorama",
+        "kind": "bio12m6Lineage",
+        "props": {
+          "panels": [
+            {
+              "kind": "germline",
+              "title": "Germline change",
+              "at": 30,
+              "changeAt": 60,
+              "passAt": 320,
+              "tag": "Inherited",
+              "tagAt": 382
+            },
+            {
+              "kind": "somatic",
+              "title": "Somatic change",
+              "at": 425,
+              "changeAt": 450,
+              "passAt": 660,
+              "tag": "Not inherited",
+              "tagAt": 718
+            }
           ]
-        ]
+        }
       },
       "durationInFrames": 1637,
       "caption": "Germline changes are inherited; somatic changes affect only the individual.",
@@ -150,34 +156,42 @@
         "text": "So how does each family change the germline. Reproductive technologies choose the parents. Artificial insemination, artificial pollination, and IVF with embryo transfer all decide which gametes combine, and how many offspring a chosen parent leaves. No sequence changes, but the combination of alleles in each offspring changes, and across a herd or a crop the allele frequencies shift, sometimes very quickly. Whole organism cloning is the extreme case, copying one genotype exactly, with no new combination at all. Genetic engineering works differently. The DNA is altered in a single cell, which then grows into the whole organism, so the new sequence ends up in every cell, including the pollen, eggs or sperm. From then on it's inherited like any other gene. The clean way to hold it is this, reproductive control changes the combination, and genetic engineering changes the sequence."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Technology",
-          "Germline change",
-          "Example"
-        ],
-        "rows": [
-          [
-            "Artificial insemination or pollination",
-            "Which alleles combine; frequencies shift",
-            "One bull sires thousands of calves"
-          ],
-          [
-            "IVF and embryo transfer",
-            "More offspring from chosen parents",
-            "Elite cattle embryos"
-          ],
-          [
-            "Whole-organism cloning",
-            "Copies one genotype, no new combination",
-            "Cloned livestock"
-          ],
-          [
-            "Recombinant DNA",
-            "New sequence in every cell, inherited",
-            "Bt cotton"
+        "type": "diorama",
+        "kind": "bio12m6AlleleJobs",
+        "props": {
+          "panels": [
+            {
+              "title": "Reproductive technologies",
+              "action": "combine",
+              "genotype": "AaBb",
+              "at": 30,
+              "actAt": 330,
+              "caption": [
+                "Choose which gametes combine;",
+                "no sequence changes"
+              ],
+              "verdict": {
+                "text": "Changes the combination",
+                "at": 1486
+              }
+            },
+            {
+              "title": "Genetic engineering",
+              "action": "insert",
+              "at": 870,
+              "actAt": 900,
+              "caption": [
+                "DNA altered in one cell,",
+                "which grows into every cell"
+              ],
+              "verdict": {
+                "text": "Changes the sequence",
+                "amber": true,
+                "at": 1500
+              }
+            }
           ]
-        ]
+        }
       }
     },
     {

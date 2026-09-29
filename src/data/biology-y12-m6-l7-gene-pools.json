@@ -65,6 +65,33 @@
       "caption": "A gene pool is the total set of alleles in a population.",
       "voiceover": {
         "text": "Let's start with what a gene pool actually is, because it's a population-level idea, and that framing matters. A gene pool is the total set of alleles present across a whole population. So when biologists say a process changes the gene pool, they mean it changes which alleles are present, or how frequent each one is, within that population. This is different from looking at one organism's genotype. Evolution and long-term genetic change are tracked at population scale, across generations, not by examining a single individual. And the three processes we're about to compare, mutation, gene flow, and genetic drift, are all population-level in their consequences, even though some of them begin with an event in just one cell or one individual. So keep your eye on the population, not the individual."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6GenePool",
+        "props": {
+          "mode": "pool",
+          "individuals": [
+            "AA",
+            "Aa",
+            "Aa",
+            "aa",
+            "AA",
+            "Aa",
+            "Aa",
+            "AA",
+            "Aa",
+            "aa"
+          ],
+          "populationAt": 40,
+          "poolAt": 90,
+          "percentAt": 300,
+          "organismAt": 395,
+          "footer": {
+            "text": "Evolution is tracked at population scale, over generations",
+            "at": 496
+          }
+        }
       }
     },
     {
@@ -104,29 +131,57 @@
         "text": "Let's lay the three processes side by side, because each changes the gene pool differently. Mutation adds genuinely new alleles, although on its own it usually changes population frequencies quite slowly. It's essential, though, because without it no new allele ever appears. Gene flow moves existing alleles between populations, when individuals migrate and then breed, and it often reduces the differences between populations by mixing their alleles. Crucially, gene flow transfers alleles, it does not create them. Genetic drift shifts allele frequencies purely by chance, the random sampling of who survives and reproduces, and in small populations it can sharply change frequencies and even reduce genetic diversity. And remember, drift is random, not adaptive, so an allele that becomes common by drift is not necessarily the best one. Add, move, randomise, three distinct mechanisms."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Process",
-          "Effect on gene pool",
-          "Key idea"
-        ],
-        "rows": [
-          [
-            "Mutation",
-            "Adds new alleles",
-            "Source of novelty"
+        "type": "diorama",
+        "kind": "bio12m6AlleleJobs",
+        "props": {
+          "panels": [
+            {
+              "title": "Mutation",
+              "action": "mutate",
+              "at": 40,
+              "actAt": 70,
+              "caption": [
+                "Adds new alleles"
+              ],
+              "verdict": {
+                "text": "Source of novelty",
+                "amber": true
+              }
+            },
+            {
+              "title": "Gene flow",
+              "action": "flow",
+              "at": 245,
+              "actAt": 275,
+              "caption": [
+                "Moves alleles between",
+                "populations"
+              ],
+              "verdict": {
+                "text": "Transfers, doesn’t create",
+                "at": 448
+              }
+            },
+            {
+              "title": "Genetic drift",
+              "action": "drift",
+              "at": 510,
+              "actAt": 560,
+              "caption": [
+                "Changes frequency",
+                "by chance"
+              ],
+              "verdict": {
+                "text": "Random, not adaptive",
+                "at": 756
+              }
+            }
           ],
-          [
-            "Gene flow",
-            "Moves alleles between populations",
-            "Transfers, does not create"
-          ],
-          [
-            "Genetic drift",
-            "Changes frequency by chance",
-            "Random, strongest in small populations"
-          ]
-        ]
+          "footer": {
+            "text": "Add, move, randomise",
+            "at": 895
+          }
+        }
       }
     },
     {
@@ -145,6 +200,35 @@
       "caption": "Drift is strongest in small populations; founder effects and bottlenecks.",
       "voiceover": {
         "text": "Now let's see when genetic drift really takes over, because it's all about population size. In a large population, chance events tend to average out, one unlucky death here is balanced by a lucky survival there, so allele frequencies stay relatively stable. But in a small population, chance has far more power, it can shift allele frequencies sharply from one generation to the next. That's why founder effects and bottlenecks are such important examples of drift. In a founder effect, a small group colonises a new area, and the particular alleles those few founders happen to carry can become unusually common, even if they're not advantageous in any way. A bottleneck is similar, a sharp crash leaves only a few survivors carrying a limited sample of alleles. And the key reminder, drift is random, it is not adaptation, so a common allele isn't automatically the best one."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6GenePool",
+        "props": {
+          "mode": "drift",
+          "populations": [
+            {
+              "label": "Large population",
+              "size": 40,
+              "seed": 7,
+              "at": 20
+            },
+            {
+              "label": "Small population",
+              "size": 8,
+              "seed": 57,
+              "at": 195
+            }
+          ],
+          "p0": 0.5,
+          "generations": 10,
+          "startAt": 225,
+          "framesPerGen": 30,
+          "footer": {
+            "text": "Founder effects and bottlenecks: few individuals, strong drift",
+            "at": 425
+          }
+        }
       }
     },
     {

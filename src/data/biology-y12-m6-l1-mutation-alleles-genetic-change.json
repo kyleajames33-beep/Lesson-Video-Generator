@@ -67,6 +67,43 @@
       "caption": "Mutation creates new alleles; it is random with respect to need.",
       "voiceover": {
         "text": "Let's nail the central idea. A mutation is a change in the DNA sequence, and since a gene is just a stretch of DNA, changing it can produce a brand new version of that gene, which we call a new allele. This is the only process that introduces genuinely new genetic information into a population. Hold on to that, because meiosis and fertilisation feel like they create new things, but they don't, they only shuffle alleles that are already there. The other key phrase is this, mutation is random with respect to need. The environment never instructs an organism to make exactly the change it needs. The mutation happens first, by chance. Then, much later, if that allele helps survival, natural selection might make it more common. So the order matters, mutation comes first, selection comes afterward, and they are two separate steps."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m6AlleleJobs",
+        "props": {
+          "arrows": true,
+          "panels": [
+            {
+              "title": "1 · Mutation, by chance",
+              "action": "mutate",
+              "at": 0,
+              "actAt": 215,
+              "caption": [
+                "A change in the DNA sequence",
+                "makes a new allele"
+              ],
+              "verdict": {
+                "text": "Random with respect to need",
+                "at": 612
+              }
+            },
+            {
+              "title": "2 · Selection, later",
+              "action": "select",
+              "at": 740,
+              "actAt": 830,
+              "caption": [
+                "If the allele helps survival,",
+                "it may become more common"
+              ]
+            }
+          ],
+          "footer": {
+            "text": "Mutation first, selection afterward: two separate steps",
+            "at": 950
+          }
+        }
       }
     },
     {
@@ -104,29 +141,61 @@
         "text": "So if mutation makes new alleles, what exactly do meiosis and fertilisation do? They generate an enormous amount of variation, but in a different way. Back in Module 5 you saw that meiosis shuffles the deck, through independent assortment of chromosomes and crossing over between them, so each gamete ends up genetically different. Then fertilisation combines one gamete from each parent at random, creating fresh combinations in the offspring. Here's the crucial point, though. Neither process writes a single new letter of DNA. They are rearranging alleles that the parents already carried. That's why two siblings can look completely different without any new mutation, it's all reshuffling. So a new combination is not the same thing as a new allele, and that distinction is the whole inquiry question in one line."
       },
       "diagram": {
-        "type": "table",
-        "headers": [
-          "Process",
-          "Main effect",
-          "Creates a new allele?"
-        ],
-        "rows": [
-          [
-            "Mutation",
-            "Changes the DNA sequence",
-            "Yes"
+        "type": "diorama",
+        "kind": "bio12m6AlleleJobs",
+        "props": {
+          "panels": [
+            {
+              "title": "Mutation",
+              "action": "mutate",
+              "at": 0,
+              "actAt": 50,
+              "caption": [
+                "Changes the",
+                "DNA sequence"
+              ],
+              "verdict": {
+                "text": "New allele: yes",
+                "amber": true,
+                "at": 90
+              }
+            },
+            {
+              "title": "Meiosis",
+              "action": "shuffle",
+              "genotype": "AaBb",
+              "at": 170,
+              "actAt": 200,
+              "caption": [
+                "Reshuffles chromosomes",
+                "and alleles"
+              ],
+              "verdict": {
+                "text": "New allele: not usually",
+                "at": 523
+              }
+            },
+            {
+              "title": "Fertilisation",
+              "action": "combine",
+              "genotype": "AaBb",
+              "at": 335,
+              "actAt": 365,
+              "caption": [
+                "Combines gametes",
+                "randomly"
+              ],
+              "verdict": {
+                "text": "New allele: no",
+                "at": 535
+              }
+            }
           ],
-          [
-            "Meiosis",
-            "Reshuffles chromosomes and alleles",
-            "Not usually"
-          ],
-          [
-            "Fertilisation",
-            "Combines gametes randomly",
-            "No"
-          ]
-        ]
+          "footer": {
+            "text": "New combination is not the same as new allele",
+            "at": 795
+          }
+        }
       }
     },
     {
