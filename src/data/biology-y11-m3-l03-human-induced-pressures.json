@@ -17,7 +17,7 @@
   ],
   "inquiryQuestion": "How can human-induced changes act as selective pressures?",
   "lessonIntent": "Students can explain how a human activity acts as a selective pressure, identify the trait selected, and distinguish artificial selection from natural selection.",
-  "examSkill": "Establish the pre-existing variation, show the human activity sorting the population, then carry the favoured allele across generations; never say the chemical caused resistance.",
+  "examSkill": "Establish heritable variation, show how the human-induced pressure changes survival or reproduction, then track resistant variants across generations. Mutations are not directed toward what the organism needs, and resistance may also spread by horizontal gene transfer.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -127,10 +127,10 @@
           "text": "Resistant survivors reproduce and take over."
         }
       ],
-      "callout": "The chemical selects resistance. It does not create it.",
-      "caption": "Resistance exists first; the chemical kills the rest; resistant cells repopulate.",
+      "callout": "The chemical selects resistant variants; it does not purposefully create the mutation needed.",
+      "caption": "Selection favours resistant variants; mutations are not directed toward the organism's needs, and resistance genes can also spread horizontally.",
       "voiceover": {
-        "text": "The clearest case is chemical resistance. Picture a large population of bacteria. Most are susceptible, but a rare few already carry a resistance allele, which arose earlier by chance mutation. Now the antibiotic is applied. It kills the susceptible cells, and the resistant ones survive. With their competitors gone, the resistant cells multiply, and soon the population is resistant. Notice what the drug did and didn't do. It didn't cause any mutation. It removed the susceptible cells, and revealed variation that was already there. The same logic applies to insecticides, like DDT and mosquitoes, and to herbicides and resistant weeds."
+        "text": "Chemical resistance is a clear example of selection. A population contains heritable variation, including rare resistant variants that may have arisen by mutation or arrived by horizontal gene transfer. When an antibiotic is applied, susceptible cells are removed and resistant cells survive and reproduce, so resistance becomes more common. The key principle is that mutation is not purposeful or directed toward what the organism needs. Avoid the stronger claim that an antibiotic can never affect mutation rate: some antibiotic stresses can increase mutation rates. Selection still explains why resistant variants become enriched."
       },
       "diagram": {
         "type": "diorama",
@@ -171,7 +171,7 @@
           },
           "footer": [
             {
-              "text": "Same logic: DDT and mosquitoes, herbicides and weeds",
+              "text": "Resistance can arise by mutation or spread by horizontal gene transfer",
               "at": 792
             }
           ]

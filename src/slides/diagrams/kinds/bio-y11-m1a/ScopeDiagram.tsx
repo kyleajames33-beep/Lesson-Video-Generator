@@ -31,6 +31,9 @@ export type ScopeProps = {
 	squareUm?: number;
 	span?: number;
 	mag?: number;
+	fieldDiameterUm?: number;
+	cellsAcross?: number;
+	cellSizeUm?: number;
 	at?: {grid?: number; cell?: number; count?: number; real?: number; forward?: number; image?: number};
 	delay?: number;
 };
@@ -40,7 +43,7 @@ const ease = Easing.inOut(Easing.cubic);
 const IODINE = '#b8742a';
 const fmt = (n: number) => (Math.round(n * 1000) / 1000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 
-export const ScopeDiagram = ({mode = 'mount', steps = {}, view, squareUm = 100, span = 4, mag = 100, at = {}, delay = 62}: ScopeProps) => {
+export const ScopeDiagram = ({mode = 'mount', steps = {}, view, squareUm = 100, span = 4, mag = 100, fieldDiameterUm, cellsAcross, cellSizeUm, at = {}, delay = 62}: ScopeProps) => {
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
@@ -48,17 +51,20 @@ export const ScopeDiagram = ({mode = 'mount', steps = {}, view, squareUm = 100, 
 
 	if (mode === 'grid') {
 		const cx = 236;
+		const fieldMode = fieldDiameterUm !== undefined && cellsAcross !== undefined;
+		const estimatedCellUm = cellSizeUm ?? (fieldMode ? fieldDiameterUm / cellsAcross : undefined);
 		const cy = 250;
 		const R = 196;
 		const sq = 64;
 		const tg = at.grid ?? 0;
 		const tc = at.cell ?? 60;
 		const tn = at.count ?? 120;
-		const real = span * squareUm;
+		const real = fieldMode ? estimatedCellUm! : span * squareUm;
 		const imageUm = real * mag;
-		const cellW = span * sq;
-		const gx0 = cx - cellW / 2;
-		const count = Math.min(span, Math.floor(interpolate(frame, [tn, tn + span * 20], [0, span + 0.999], clamp)));
+		const cellW = fieldMode ? (R * 2) / cellsAcross! : span * sq;
+		const gx0 = fieldMode ? cx - R : cx - cellW / 2;
+		const targetCount = fieldMode ? cellsAcross! : span;
+		const count = Math.min(targetCount, Math.floor(interpolate(frame, [tn, tn + targetCount * 20], [0, targetCount + 0.999], clamp)));
 		return (
 			<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Measuring a cell with a stage grid" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 				<DioramaDefs id={ID} />
@@ -76,8 +82,15 @@ export const ScopeDiagram = ({mode = 'mount', steps = {}, view, squareUm = 100, 
 						))}
 					</g>
 					<g opacity={fadeAt(frame, tc, 16)} transform={`translate(0 ${idleBob(frame, 1, 0.8)})`}>
-						<rect x={gx0} y={cy + 6} width={cellW} height={52} rx={22} fill="#f3e3b8" stroke={IODINE} strokeWidth={4} />
-						<ellipse cx={gx0 + 40} cy={cy + 32} rx={14} ry={10} fill={IODINE} opacity={0.8} />
+						{fieldMode ? Array.from({length: cellsAcross!}, (_, k) => (
+							<g key={k}>
+								<rect x={gx0 + k * cellW + 2} y={cy + 4} width={cellW - 4} height={56} rx={18} fill="#f3e3b8" stroke={IODINE} strokeWidth={3} />
+								<ellipse cx={gx0 + k * cellW + cellW * 0.35} cy={cy + 32} rx={10} ry={8} fill={IODINE} opacity={0.8} />
+							</g>
+						)) : <>
+							<rect x={gx0} y={cy + 6} width={cellW} height={52} rx={22} fill="#f3e3b8" stroke={IODINE} strokeWidth={4} />
+							<ellipse cx={gx0 + 40} cy={cy + 32} rx={14} ry={10} fill={IODINE} opacity={0.8} />
+						</>}
 					</g>
 					{Array.from({length: count}, (_, k) => (
 						<g key={k}>
@@ -87,15 +100,15 @@ export const ScopeDiagram = ({mode = 'mount', steps = {}, view, squareUm = 100, 
 					))}
 				</g>
 				<g opacity={fadeAt(frame, tg + 20)}>
-					<line x1={cx - 4 * sq + 4 * sq} y1={cy + R - 34} x2={cx - 4 * sq + 5 * sq} y2={cy + R - 34} stroke={TOK.ink} strokeWidth={3} />
-					<text x={cx + sq / 2} y={cy + R - 44} textAnchor="middle" fill={TOK.ink} fontSize={16} fontWeight={800}>{fmt(squareUm)} µm</text>
+					<line x1={cx - R + 12} y1={cy + R - 34} x2={cx + R - 12} y2={cy + R - 34} stroke={TOK.ink} strokeWidth={3} />
+					<text x={cx} y={cy + R - 44} textAnchor="middle" fill={TOK.ink} fontSize={16} fontWeight={800}>{fieldMode ? `field diameter = ${fmt(fieldDiameterUm!)} µm` : `${fmt(squareUm)} µm per square`}</text>
 				</g>
 				{/* working */}
 				<g>
-					<text x={590} y={70} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={800} opacity={fadeAt(frame, tg)}>each square = {fmt(squareUm)} µm</text>
-					<Stat x={590} y={100} text={`${span} squares × ${fmt(squareUm)} µm`} opacity={fadeAt(frame, at.real ?? tn + 90)} />
-					<Stat x={590} y={148} text={`real size = ${fmt(real)} µm`} border={TOK.amber} color={TOK.amberInk} size={21} opacity={fadeAt(frame, (at.real ?? tn + 90) + 30)} />
-					<text x={590} y={214} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800} opacity={fadeAt(frame, (at.real ?? tn + 90) + 50)}>grid magnified too: no division</text>
+					<text x={590} y={70} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={800} opacity={fadeAt(frame, tg)}>{fieldMode ? `field diameter = ${fmt(fieldDiameterUm!)} µm` : `each square = ${fmt(squareUm)} µm`}</text>
+					<Stat x={590} y={100} text={fieldMode ? `${fmt(fieldDiameterUm!)} µm ÷ ${cellsAcross} cells` : `${span} squares × ${fmt(squareUm)} µm`} opacity={fadeAt(frame, at.real ?? tn + 90)} />
+					<Stat x={590} y={148} text={`estimated cell size = ${fmt(real)} µm`} border={TOK.amber} color={TOK.amberInk} size={21} opacity={fadeAt(frame, (at.real ?? tn + 90) + 30)} />
+					<text x={590} y={214} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800} opacity={fadeAt(frame, (at.real ?? tn + 90) + 50)}>{fieldMode ? "field of view ÷ cells across" : "grid magnified too: no division"}</text>
 					<g opacity={fadeAt(frame, at.forward ?? 400)}>
 						<text x={590} y={272} textAnchor="middle" fill={theme.accent} fontSize={18} fontWeight={800}>forwards, at ×{fmt(mag)}:</text>
 						<Stat x={590} y={288} text="image = real × magnification" size={17} />

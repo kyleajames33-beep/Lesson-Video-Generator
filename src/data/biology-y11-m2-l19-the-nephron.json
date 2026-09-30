@@ -17,7 +17,7 @@
     "BI-11-02"
   ],
   "lessonIntent": "Students can explain how filtration at the glomerulus and Bowman's capsule, and selective reabsorption and secretion in the tubules, together remove waste in a nephron.",
-  "examSkill": "Follow the filtrate in order: filtration (un-selective, by size), selective reabsorption (useful substances back, by active transport), secretion (extra wastes in), and what remains is urine.",
+  "examSkill": "Follow filtrate in order: glomerular filtration, selective reabsorption, secretion and excretion. Some urea is reabsorbed/recycled while net urea excretion removes nitrogenous waste; water reabsorption changes with hydration and ADH.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -144,7 +144,7 @@
           "at": 8.9
         },
         {
-          "text": "Urea is not reabsorbed.",
+          "text": "Some filtered urea is reabsorbed and recycled; net urea excretion still removes nitrogenous waste.",
           "at": 28.9
         },
         {
@@ -153,9 +153,9 @@
         }
       ],
       "callout": "Reabsorption: tubule to blood. Secretion: blood to tubule.",
-      "caption": "Selective reabsorption and secretion along the tubule; what remains is urine.",
+      "caption": "Selective reabsorption and secretion occur along the tubule; some urea is recycled while net urea is excreted.",
       "voiceover": {
-        "text": "Watch the filtrate flow along the tubule. At first, everything that was filtered just runs on toward the urine, glucose and all. That's where selective reabsorption comes in. As the filtrate flows along, the tubule takes back what the body needs. All the glucose, most of the water and amino acids, and the salts the body needs, move back into the blood in the capillary running alongside. Much of this uses active transport, which is why it can be selective. Urea is not reabsorbed, so it stays in the tubule. Then secretion works the other way. Extra wastes and excess ions are moved from the blood into the tubule. Whatever's left, urea, excess salts and excess water, is urine."
+        "text": "Watch filtrate move along the tubule. Selective reabsorption returns useful substances and regulated amounts of water and ions to the blood. Glucose and amino acids are normally reabsorbed very effectively, and water reabsorption varies along the nephron. Urea is different: it is a waste product overall, but it is not true that none is reabsorbed. Some filtered urea is reabsorbed and recycled within the kidney, helping the medullary concentration gradient, while net urea excretion still removes nitrogenous waste. Secretion moves selected ions and wastes from blood into the tubule. What remains becomes urine."
       },
       "diagram": {
         "type": "diorama",
@@ -202,8 +202,9 @@
             },
             {
               "key": "urea",
-              "label": "urea",
-              "fate": "stay"
+              "label": "urea: some recycled, net excreted",
+              "fate": "reabsorb",
+              "leave": 3
             },
             {
               "key": "salt",
@@ -275,7 +276,7 @@
           "at": 1.4
         },
         {
-          "text": "Reabsorption adjusts water and salts to need.",
+          "text": "Water reabsorption is adjusted to hydration needs; dehydration generally increases ADH and water reabsorption.",
           "at": 10.4
         },
         {
@@ -286,7 +287,7 @@
       "callout": "Structure maps to process: capsule filters, tubules reclaim and secrete.",
       "caption": "Each nephron structure and the process it performs.",
       "voiceover": {
-        "text": "So why this design? By filtering broadly, the nephron makes sure every small waste gets pushed out, even ones the body has never met before, like a new drug. Reabsorption then reclaims exactly what the body needs right now. On a hot day, less water is reclaimed, and on a cold day, more. And secretion adds a final top-up of wastes the filter missed. So the nephron does two jobs at once. It removes urea, which is excretion, and it adjusts the blood's water and salts, which is homeostasis. And the structures map neatly onto the processes. The glomerulus and Bowman's capsule do filtration. The tubules do reabsorption and secretion."
+        "text": "So why filter and then reclaim? Broad filtration moves many small solutes into the nephron, then selective transport lets the kidney regulate what returns to the blood. Water reabsorption is adjusted to the body's hydration state. During dehydration from sweating, for example, increased ADH makes the collecting ducts more permeable to water, so more water is reabsorbed and a smaller volume of more concentrated urine is produced. Temperature by itself does not determine ADH. Secretion adds selected wastes and ions to the tubule, so the nephron combines excretion with homeostatic regulation."
       },
       "diagram": {
         "type": "diorama",
@@ -321,7 +322,7 @@
                   "at": 281
                 },
                 {
-                  "text": "hot day: less water reclaimed",
+                  "text": "dehydration: ADH ↑, water reabsorption ↑",
                   "at": 356
                 }
               ]
@@ -359,13 +360,13 @@
       "steps": [
         "Filtration: high pressure in the glomerulus forces water, glucose, salts, amino acids and urea into Bowman's capsule; cells and proteins stay in the blood.",
         "Filtration is un-selective: it sorts by size, so useful substances are in the filtrate too.",
-        "Selective reabsorption (tubules): all glucose, most water, amino acids and needed salts return to the blood, much by active transport; urea stays.",
+        "Selective reabsorption (tubules): glucose, amino acids, regulated salts and water return to blood; some urea is also reabsorbed/recycled, but net urea is excreted.",
         "Secretion (tubules): extra wastes and excess ions move from the blood into the tubule.",
-        "What remains, urea, excess salts and water, is urine: waste removed, useful substances kept ✓"
+        "Urine contains net-excreted urea plus regulated amounts of water and ions: waste removal and homeostasis occur together ✓"
       ],
       "caption": "Filtration, reabsorption and secretion, each in its structure.",
       "voiceover": {
-        "text": "Here's how the full answer runs. Follow the filtrate in order. Filtration first. High pressure in the glomerulus forces water, glucose, salts, amino acids and urea into Bowman's capsule, and cells and proteins stay in the blood. Say that filtration is un-selective. It sorts by size, so useful substances end up in the filtrate too. Then selective reabsorption in the tubules. All the glucose, most of the water, the amino acids and needed salts go back into the blood, much of it by active transport, but urea stays. Then secretion, extra wastes moving from the blood into the tubule. What's left is urine, so the waste is removed and the useful substances are kept."
+        "text": "Follow the filtrate in order. Glomerular filtration moves water and small solutes into Bowman's capsule while cells and most proteins remain in the blood. Then selective reabsorption returns glucose, amino acids and regulated amounts of salts and water to the blood. Some urea is also reabsorbed and recycled within the kidney, so do not equate excretion with zero reabsorption; the key is that there is net urea excretion. Tubular secretion moves selected ions and wastes from blood into the tubule. The final urine therefore reflects both waste removal and regulation of water and solutes."
       },
       "durationInFrames": 1458
     },

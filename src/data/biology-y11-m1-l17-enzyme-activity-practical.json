@@ -59,14 +59,14 @@
           "text": "Temperature: the rate rises to an optimum, then the enzyme denatures."
         },
         {
-          "text": "pH: each enzyme has an optimum pH; too acidic or alkaline denatures it."
+          "text": "pH: moving from the optimum can alter active-site charge and binding; sufficiently extreme pH can denature the enzyme."
         },
         {
           "text": "Substrate concentration: the rate rises until the enzyme is saturated."
         }
       ],
       "callout": "Test one factor at a time.",
-      "caption": "Temperature and pH have an optimum; substrate concentration saturates.",
+      "caption": "Temperature has an optimum; pH affects charge/binding and can denature at extremes; substrate concentration saturates.",
       "diagram": {
         "type": "diorama",
         "kind": "bio11m1bEnzymeGraph",
@@ -87,7 +87,7 @@
         "diagram": 30
       },
       "voiceover": {
-        "text": "Three conditions have a big effect on how efficiently an enzyme works. First, temperature. Raising it speeds the rate up to an optimum, but then high heat denatures the enzyme, permanently changing the shape of its active site, and activity collapses. Second, pH. Each enzyme has an optimum pH, and going too acidic or too alkaline also denatures it. Third, substrate concentration. More substrate raises the rate, until every active site is busy. That's called saturation, and after that, adding more substrate makes no difference. In a practical, you test one of these at a time."
+        "text": "Three conditions have a big effect on enzyme activity. First, temperature. Raising it increases molecular motion and collision frequency up to an optimum; sufficiently high temperatures can disrupt the enzyme's structure and cause denaturation. Second, pH. Moving away from the optimum can change the ionisation and charge of amino acid side chains, altering substrate binding or catalysis without necessarily unfolding the whole enzyme. At sufficiently extreme pH, denaturation can occur. Third, substrate concentration. More substrate raises the rate until active sites are saturated. In a practical, test one factor at a time."
       }
     },
     {
@@ -100,14 +100,17 @@
           "text": "Independent variable: temperature, set with water baths."
         },
         {
-          "text": "Dependent variable: rate of oxygen produced (bubbles, gas volume or foam height)."
+          "text": "Dependent variable: oxygen-production rate (prefer gas volume per unit time)."
         },
         {
-          "text": "Controlled: enzyme amount, H₂O₂ volume and concentration, time, pH."
+          "text": "Controlled: enzyme source/amount, H₂O₂ volume and concentration, pH and measurement method."
+        },
+        {
+          "text": "Use the observed data to identify the preparation's optimum; do not assume a fixed 37 °C value."
         }
       ],
-      "callout": "Most oxygen at 37 °C; few bubbles at 10 °C and at 70 °C.",
-      "caption": "Catalase at 10, 37 and 70 °C: the most oxygen at 37 °C, little at 70 °C because it is denatured.",
+      "callout": "Example temperatures are illustrative; determine the peak for the enzyme preparation you actually test.",
+      "caption": "Illustrative catalase trial: compare controlled temperatures and measure oxygen rate; do not assume a universal 37 °C optimum.",
       "diagram": {
         "type": "diorama",
         "kind": "bio11m1bPractical",
@@ -117,14 +120,14 @@
           "tubes": [
             {
               "label": "10 °C",
-              "sub": "few bubbles",
+              "sub": "example: lower rate",
               "subAt": 939,
               "rate": 0.28,
               "at": 328
             },
             {
               "label": "37 °C",
-              "sub": "most bubbles",
+              "sub": "example: higher rate",
               "subAt": 835,
               "rate": 0.95,
               "at": 348,
@@ -132,7 +135,7 @@
             },
             {
               "label": "70 °C",
-              "sub": "denatured: few",
+              "sub": "example: lower rate",
               "subAt": 1032,
               "rate": 0.14,
               "at": 368
@@ -154,7 +157,8 @@
               "text": "enzyme amount, H₂O₂ volume and conc., time, pH",
               "at": 1147
             }
-          ]
+          ],
+          "note": "illustrative data; optimum depends on enzyme source and method"
         }
       },
       "durationInFrames": 1544,
@@ -162,7 +166,7 @@
         "diagram": 30
       },
       "voiceover": {
-        "text": "Here's a typical plan, using the enzyme catalase, from liver or potato, which breaks hydrogen peroxide down into water and oxygen. To test temperature, you set up tubes in water baths, say at ten, thirty seven and seventy degrees. Temperature is the independent variable, the one thing you change. The dependent variable is what you measure, the rate of oxygen produced, as bubbles per minute, the volume of gas, or the height of the foam. At thirty seven degrees you get the most bubbles. At ten degrees there are only a few, and at seventy, few again, because the enzyme is denatured. Everything else is a controlled variable, kept the same, the amount of enzyme, the volume and concentration of hydrogen peroxide, the time, and the pH."
+        "text": "Here's a fair way to investigate catalase, from a stated enzyme source such as potato or liver. Use water baths to set the independent variable, temperature, and measure the dependent variable as an oxygen production rate, ideally gas volume per unit time. Keep enzyme source and amount, hydrogen peroxide volume and concentration, pH and the measurement method constant. The temperatures shown here are illustrative example conditions, not a claim that catalase always has an optimum of thirty seven degrees. Use the actual results to locate the peak for the preparation and method you tested."
       }
     },
     {

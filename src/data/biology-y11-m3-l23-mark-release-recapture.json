@@ -18,7 +18,7 @@
     "BI-11WS-06"
   ],
   "lessonIntent": "Students can model mark-release-recapture, calculate a population estimate with the Lincoln index N = (M × C) ÷ R, state its assumptions and predict the direction of error when one is broken.",
-  "examSkill": "N = (M × C) ÷ R: R is on the bottom, so anything that lowers recaptures inflates the estimate.",
+  "examSkill": "Use N = (M × C) ÷ R and reason from how a broken assumption changes the marked fraction in the recapture sample. Incomplete mixing can bias R upward or downward depending on where and when recapture occurs.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -205,20 +205,20 @@
       "body": "The Lincoln index assumes marks mix fully, stay on, do no harm, and that nothing is born, dies or moves between samples.",
       "bullets": [
         {
-          "text": "R is on the bottom of the fraction: anything that lowers R inflates N; anything that raises R shrinks it."
+          "text": "R is on the bottom: if a bias lowers marked recaptures, N is over-estimated; if it raises marked recaptures, N is under-estimated."
         },
         {
-          "text": "Marks rub off, marked animals die or emigrate, too little mixing, or trap-shy animals: R falls, N over-estimated."
+          "text": "Marks lost, marked animals dying/emigrating or trap-shy behaviour can lower R and inflate N."
         },
         {
-          "text": "A mark that makes animals easier to catch, or trap-happy animals: R rises, N under-estimated."
+          "text": "Incomplete mixing has no fixed direction: sampling near release may over-represent marks (R high, N low); sampling where marks are under-represented reverses the bias."
         }
       ],
-      "secondary": "Improve it: leave enough time to mix (but not so long that births and deaths occur), use a harmless, durable mark, take large samples, and repeat.",
-      "callout": "Reason it through with the formula in front of you.",
-      "caption": "Breaking an assumption changes R, and so biases N.",
+      "secondary": "Improve it: allow appropriate mixing, sample representatively across the habitat, use harmless durable marks, take large samples and repeat.",
+      "callout": "For incomplete mixing, ask whether marked animals are over- or under-represented in the recapture sample.",
+      "caption": "Broken assumptions bias the marked fraction; incomplete mixing can push the estimate either way.",
       "voiceover": {
-        "text": "The formula only works if its assumptions hold. Marked animals mix fully back in. The mark doesn't harm them, fall off, or change how catchable they are. And nothing is born, dies, arrives or leaves between samples. When one breaks, work out the direction of the error. R sits on the bottom of the fraction. So if marks rub off, if marked animals die or move away, or if they haven't had time to mix, R falls, and N comes out too big. But if the mark makes animals easier to catch, or they become trap-happy, returning for the bait, R rises, and N comes out too small."
+        "text": "The Lincoln index works only when its assumptions are reasonable. R, the number of marked animals recaptured, is on the bottom of the fraction. A bias that lowers R inflates the estimate, while a bias that raises R shrinks it. Lost marks, marked animals dying or emigrating, or trap-shy behaviour can lower R. Incomplete mixing is different: it has no fixed direction. If you sample close to the release point and marked animals are over-represented, R is too high and N is under-estimated. If marked animals are under-represented in the area sampled, R is too low and N is over-estimated. Always reason from the actual sampling bias."
       },
       "diagram": {
         "type": "diorama",
@@ -252,7 +252,7 @@
               "at": 726
             },
             {
-              "text": "Too little time to mix",
+              "text": "Incomplete mixing",
               "at": 813
             },
             {
@@ -285,10 +285,10 @@
             ],
             [
               {
-                "text": "falls"
+                "text": "can rise or fall"
               },
               {
-                "text": "over-estimate",
+                "text": "under- or over-estimate",
                 "amber": true
               }
             ],

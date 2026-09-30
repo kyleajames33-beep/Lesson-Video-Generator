@@ -395,16 +395,17 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "Two blood samples are taken moments apart. Both are low in oxygen. Sample A is high in urea; sample B is low in urea. Which organ has each sample just left?",
-      "pausePrompt": "Pause: oxygen can't tell them apart. What can?",
+      "question": "For each organ, compare blood entering with blood leaving under otherwise similar conditions. Across Organ X, urea concentration rises while oxygen falls slightly. Across Organ Y, urea concentration falls while oxygen also falls slightly. Identify X and Y and justify from the change in urea.",
+      "pausePrompt": "Pause: use the before-and-after change through each named candidate organ, not one isolated concentration.",
       "answerSteps": [
-        "Both are low in O₂, so both have passed through respiring tissue; oxygen can't tell them apart.",
-        "Sample A, high urea: only the liver adds urea, so it has just left the liver (hepatic vein).",
-        "Sample B, low urea: the kidney removes urea, so it has just left the kidney (renal vein) ✓"
+        "Organ X increases blood urea across the organ: this is consistent with the liver producing urea from amino-acid breakdown.",
+        "Organ Y decreases blood urea across the organ: this is consistent with the kidney removing urea into urine.",
+        "The oxygen fall can occur because organ tissues respire; it is not the identifying variable here.",
+        "Answer: X = liver, Y = kidney, based on paired concentration changes ✓"
       ],
-      "caption": "High urea: just left the liver. Low urea: just left the kidney.",
+      "caption": "Paired changes identify function: urea rises across the liver and falls across the kidney.",
       "voiceover": {
-        "text": "Quick check. Two blood samples are taken moments apart. Both are low in oxygen. Sample A is high in urea, and sample B is low in urea. Which organ has each one just left? Pause, and think about which substance can actually tell them apart. Okay. Low oxygen just tells you both have passed through respiring tissue, so it can't separate them. Urea can. Only the liver adds urea, so sample A has just left the liver. The kidney removes urea, so sample B has just left the kidney. Two ends of one pathway."
+        "text": "Quick check. Compare blood entering and leaving two specified organs under otherwise similar conditions. Across Organ X, urea rises while oxygen falls slightly. Across Organ Y, urea falls while oxygen also falls slightly. The paired change is what matters. The liver produces urea during amino-acid metabolism, so urea can rise across it. The kidney removes urea from blood into urine, so urea falls across it. Oxygen use by the tissue does not distinguish the two. So X is the liver and Y is the kidney, justified by the direction of the urea change."
       },
       "durationInFrames": 1218
     },
