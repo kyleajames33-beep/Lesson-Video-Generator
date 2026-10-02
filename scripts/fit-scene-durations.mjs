@@ -6,7 +6,7 @@
 //   - scene runs 10s past audio end (dead air)
 //
 // Usage:
-//   node scripts/fit-scene-durations.mjs <lesson-json> [--tail-seconds=1.5] [--dry-run]
+//   node scripts/fit-scene-durations.mjs <lesson-json> [--tail-seconds=1.5] [--extend-only] [--dry-run]
 
 import {readFileSync, writeFileSync, existsSync} from 'node:fs';
 import path from 'node:path';
@@ -15,6 +15,7 @@ import process from 'node:process';
 const args = process.argv.slice(2);
 const lessonPath = args.find((a) => !a.startsWith('--'));
 const dryRun = args.includes('--dry-run');
+const extendOnly = args.includes('--extend-only');
 const tailArg = args.find((a) => a.startsWith('--tail-seconds='));
 const TAIL = tailArg ? Number(tailArg.split('=')[1]) : 1.5;
 
@@ -42,6 +43,7 @@ for (const scene of lesson.scenes) {
 	const targetSec = audioDur + TAIL;
 	const newFrames = Math.ceil(targetSec * fps);
 	const oldFrames = scene.durationInFrames;
+	if (extendOnly && newFrames <= oldFrames) continue;
 	const oldSec = (oldFrames / fps).toFixed(1);
 	const newSec = (newFrames / fps).toFixed(1);
 

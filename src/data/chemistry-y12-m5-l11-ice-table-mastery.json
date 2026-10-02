@@ -43,7 +43,7 @@
       "body": "A past HSC ICE-table question was worth seven marks, and most students dropped some, for three predictable reasons.",
       "callout": "Three habits separate a clean ICE answer from a leaky one.",
       "image": "m5L11HookExamTrap",
-      "durationInFrames": 690,
+      "durationInFrames": 1180,
       "caption": "Consolidation: the three ICE habits that win the marks most students lose.",
       "voiceover": {
         "text": "OK, this is a consolidation lesson, so we're not learning the ICE table from scratch, you already did that last lesson. Instead, we're closing the gaps that cost real marks. Here's the motivation. In a recent HSC, a full ICE-table question was worth seven marks, and only about twelve percent of students earned all of them. The marks didn't vanish randomly, they leaked in three predictable places. Forgetting the stoichiometric ratios in the Change row, mishandling the algebra when the simplifying shortcut doesn't apply, and never checking the direction the reaction shifts. Today we fix all three, so when that seven-marker lands, you bank the lot.",
@@ -68,7 +68,7 @@
       ],
       "secondary": "If the post-check fails, throw away that answer and solve the full quadratic instead. The assumption is a shortcut, not a licence to ignore x whenever Keq is small.",
       "callout": "Pre-check before you assume, post-check after you solve.",
-      "durationInFrames": 1170,
+      "durationInFrames": 1600,
       "caption": "Small-x assumption valid when Keq/[initial] < 5%; always post-check x/[initial].",
       "voiceover": {
         "text": "Let's start with the shortcut that saves you from algebra, the small-x assumption. The idea is simple. If the equilibrium constant is tiny compared with your starting concentration, then almost no reaction happens, so x is so small that subtracting it from the initial concentration barely changes anything. The test is a clean one. Take Keq, divide by the initial concentration, times a hundred. If that's under five percent, you're allowed to treat the quantity initial minus x as just the initial value, and the maths collapses to something easy. But there's a catch students forget. After you solve, you must go back and check that x divided by the initial, times a hundred, really is under five percent. If it isn't, the assumption was never valid, so you bin that answer and solve the full quadratic. Pre-check before, post-check after. The assumption is a tool, not an excuse to drop x just because Keq looks small.",
@@ -109,7 +109,7 @@
       ],
       "secondary": "Assuming the reaction always goes right when products are present is a classic trap. The direction depends entirely on Q versus Keq, not on which species happen to be in the flask.",
       "callout": "Never guess the direction. Q versus Keq decides it.",
-      "durationInFrames": 1140,
+      "durationInFrames": 1722,
       "caption": "Non-zero products: calculate Q first, compare to Keq, then set the Change-row signs.",
       "voiceover": {
         "text": "Now the second leak. Most ICE problems start with pure reactants, products at zero, so the reaction can only go forwards. But sometimes the question gives you starting amounts of products as well, and then you genuinely don't know which way it will move. So you calculate the reaction quotient, Q, using those initial concentrations. It's the exact same expression as Keq, just with current values instead of equilibrium ones, and we'll go deeper on Q next lesson. Compare it to Keq. If Q is less than Keq, there aren't enough products yet, so the reaction shifts right. If Q is greater than Keq, there's too much product, so it shifts left. And if they're equal, you're already at equilibrium and nothing changes. Only once you know the direction do you write the Change row, so the minus and plus signs point the right way. The trap is assuming it always goes right just because products are sitting there. It doesn't. Q versus Keq is the only thing that decides.",
@@ -198,7 +198,7 @@
       ],
       "secondary": "One root is always physically impossible, giving a negative concentration. Pick the other one, then verify by substituting your equilibrium values back into Keq.",
       "callout": "Two roots come out; only the one with positive concentrations is real.",
-      "durationInFrames": 1140,
+      "durationInFrames": 1465,
       "caption": "Quadratic ICE: rearrange to ax²+bx+c=0, solve, keep the positive-concentration root.",
       "voiceover": {
         "text": "When the post-check fails, there's no avoiding it, you solve the quadratic. The process is mechanical once you've set it up. Substitute your equilibrium row into the Keq expression, then rearrange everything to the standard form, a x squared plus b x plus c equals zero. Then apply the quadratic formula, x equals minus b plus or minus the square root of b squared minus four a c, all over two a. That plus or minus gives you two answers, and here's the key judgement. One of them is always physically impossible, because it would make a concentration negative, and you can't have less than zero of a substance. So you keep the root that leaves every equilibrium concentration positive, and discard the other. Then, as always, verify, substitute your final concentrations back into Keq and check you recover the value you started with.",
@@ -238,7 +238,7 @@
         "Equilibrium: [PCl₅] = 0.376, [PCl₃] = [Cl₂] = 0.124 mol L⁻¹.",
         "Verify: (0.124)(0.124) ÷ 0.376 = 0.041 ✓"
       ],
-      "durationInFrames": 1650,
+      "durationInFrames": 2315,
       "caption": "Keq/[initial] = 8.2% → quadratic → x = 0.124; [PCl₅] = 0.376 mol L⁻¹.",
       "voiceover": {
         "text": "Let's do the full quadratic case. Half a mole of phosphorus pentachloride in a one litre flask, decomposing into phosphorus trichloride and chlorine, with Keq nought-point-zero-four-one. First, the pre-check. Keq over the initial concentration is nought-point-zero-four-one over nought-point-five, which is eight-point-two percent. That's above five, so the shortcut is off the table, we commit to the quadratic. Now the table. The flask is one litre, so moles are concentrations. Phosphorus pentachloride is nought-point-five minus x, and both products are x. Substitute into Keq, x squared over nought-point-five minus x equals nought-point-zero-four-one. Multiply out and rearrange to standard form, x squared plus nought-point-zero-four-one x minus nought-point-zero-two-zero-five equals zero. Into the quadratic formula. The positive root is nought-point-one-two-four, and the negative root we throw out because it gives impossible concentrations. So phosphorus pentachloride ends at nought-point-three-seven-six, and the two products at nought-point-one-two-four each. Verify, multiply the products and divide by the reactant, and you get nought-point-zero-four-one back. The eight-point-two percent flag was the whole ballgame, it told you not to take the shortcut.",
@@ -272,7 +272,7 @@
         "Q (5.3) < Keq (16), so the system shifts RIGHT.",
         "Answer: Keq = 16; adding CO drops Q below Keq, so it shifts right to remake products ✓"
       ],
-      "durationInFrames": 1350,
+      "durationInFrames": 2022,
       "caption": "Keq = 16; adding CO gives Q = 5.3 < 16 → shifts right.",
       "voiceover": {
         "text": "Your turn, and this one ties the Q idea straight to Le Chatelier. The water-gas shift, carbon monoxide plus water vapour making carbon dioxide and hydrogen. At equilibrium, the reactants are both nought-point-one and the products both nought-point-four. Find Keq, then predict what happens when you add nought-point-two moles of carbon monoxide to the one litre vessel. Pause and try it. Right. Part a, Keq is the products multiplied over the reactants multiplied, nought-point-four times nought-point-four over nought-point-one times nought-point-one, which is sixteen. Part b, adding nought-point-two moles to one litre pushes carbon monoxide up to nought-point-three, while everything else is momentarily unchanged. So recalculate the quotient. Nought-point-four times nought-point-four, over nought-point-three times nought-point-one. That's nought-point-one-six over nought-point-zero-three, which is five-point-three. Five-point-three is less than sixteen, so Q is below Keq, and the system shifts right to rebuild products until Q climbs back to sixteen. Exactly what Le Chatelier predicts, now with a number behind it.",
@@ -291,7 +291,7 @@
         "Always report the Equilibrium row, with correct coefficients, and verify."
       ],
       "finalPrompt": "Pre-check, choose your method, pick the physical root, then verify.",
-      "durationInFrames": 1200,
+      "durationInFrames": 1497,
       "caption": "Five habits: 5% pre/post-check, quadratic root choice, Q for direction, verify.",
       "voiceover": {
         "text": "Let's lock in the consolidation. Five habits that bank the marks. First, the small-x assumption is valid only when Keq divided by the initial concentration is under five percent, and you must post-check after solving. Second, if that post-check fails, you discard the assumption answer and solve the full quadratic. Third, when you solve the quadratic, you rearrange to standard form and keep only the root that makes every concentration positive. Fourth, when a problem starts with products present, calculate the reaction quotient first to find which way it shifts, before you commit any signs to the Change row. And fifth, always report the equilibrium row, with the right coefficients, and verify by substituting back into Keq. Do those five every time and the seven-mark question is yours. Next lesson, we put the reaction quotient under the microscope. See you there.",
