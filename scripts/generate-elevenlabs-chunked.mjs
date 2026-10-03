@@ -14,6 +14,7 @@
 import {mkdirSync, readFileSync, writeFileSync} from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
+import {DEFAULT_TTS_MODEL} from './elevenlabs-request.mjs';
 
 const args = process.argv.slice(2);
 const positional = args.filter((a) => !a.startsWith('--'));
@@ -70,7 +71,7 @@ const callElevenLabs = async (text) => {
 			text,
 			// Match the LOCKED production config (docs/lesson-build-checklist.md §2)
 			// so chunked fallback audio is indistinguishable from batch audio.
-			model_id: 'eleven_turbo_v2_5',
+			model_id: DEFAULT_TTS_MODEL,
 			voice_settings: {stability: 0.5, similarity_boost: 0.75, style: 0.3, use_speaker_boost: true, speed: 1.0},
 		}),
 	});

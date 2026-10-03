@@ -4,7 +4,7 @@ import process from 'node:process';
 import {spawnSync} from 'node:child_process';
 import {getCompositionId} from './lesson-utils.mjs';
 
-const TRANSITION_FRAMES = 24;
+import {lessonTimeline} from '../src/lesson/timeline.mjs';
 
 const usage = () => {
   console.error('Usage: node scripts/render-lesson-posters.mjs <lesson-json> [output-file]');
@@ -19,12 +19,7 @@ const renderPoster = (compositionId, lesson, outputFile) => {
   // Prefer the hook scene at ~65% through — it usually has the most
   // visually interesting layout (heading + diagram + callout).
   // Fall back to title scene, then first non-title scene.
-  const sceneStarts = [];
-  let start = 0;
-  for (const scene of lesson.scenes) {
-    sceneStarts.push({scene, start});
-    start += scene.durationInFrames - TRANSITION_FRAMES;
-  }
+  const sceneStarts = lessonTimeline(lesson).scenes.map(({scene, startFrame}) => ({scene, start: startFrame}));
 
   let target = sceneStarts.find(({scene}) => scene.type === 'hook');
   if (!target) {

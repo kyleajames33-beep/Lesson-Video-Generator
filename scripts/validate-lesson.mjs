@@ -3,6 +3,8 @@ import path from 'node:path';
 import process from 'node:process';
 import {fileURLToPath} from 'node:url';
 import {getVoiceoverBudget} from './lesson-utils.mjs';
+import {validateSeriesCircuit, validateShellOccupancy} from '../src/slides/diagrams/physics-models.mjs';
+import {validateQuantitativeDiagram} from '../src/slides/diagrams/quantitative-models.mjs';
 
 const supportedSceneTypes = new Set([
   'title',
@@ -187,6 +189,13 @@ const validateDiagram = (diagram, errors, pathLabel) => {
   }
   if (!supportedDiagramTypes.has(diagram.type)) {
     errors.push(`${pathLabel}: unsupported diagram type "${diagram.type}"`);
+  }
+  try {
+    validateQuantitativeDiagram(diagram, {requireCues: false});
+    if (diagram.type === 'circuit3d') validateSeriesCircuit(diagram.components, diagram.showCurrent);
+    if (diagram.type === 'orbit') validateShellOccupancy(diagram.electrons);
+  } catch (error) {
+    errors.push(`${pathLabel}: ${error.message}`);
   }
 };
 

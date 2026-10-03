@@ -20,11 +20,7 @@ import process from 'node:process';
 import {spawnSync} from 'node:child_process';
 import {getCompositionId} from './lesson-utils.mjs';
 
-// Mirror src/lesson/timing.ts. The intro stinger plays before scene 1, so
-// scene start frames are offset by it (without this every review frame landed
-// 270 frames early — often in the previous scene).
-const TRANSITION_FRAMES = 24;
-const INTRO_STINGER_FRAMES = 270;
+import {lessonTimeline} from '../src/lesson/timeline.mjs';
 
 const REVIEW_SCENE_TYPES = [
   'title', 'hook', 'concept', 'definition', 'formula',
@@ -85,12 +81,7 @@ const exportReviewFrames = (jsonPath) => {
   console.log(`  output: ${outDir}`);
 
   // Calculate cumulative start frame for each scene
-  const sceneMeta = [];
-  let cumulative = INTRO_STINGER_FRAMES;
-  for (const scene of lesson.scenes) {
-    sceneMeta.push({scene, start: cumulative});
-    cumulative += scene.durationInFrames - TRANSITION_FRAMES;
-  }
+  const sceneMeta = lessonTimeline(lesson).scenes.map(({scene, startFrame}) => ({scene, start: startFrame}));
 
   let exported = 0;
   let skipped = 0;

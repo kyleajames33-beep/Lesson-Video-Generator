@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "molar-mass-script-comparison",
+  "status": "draft-for-science-and-production-review",
+  "sourceProtocol": "docs/research/pilot-protocol.md",
+  "sourceProtocolSha256": "1f45d59000d94e43db6ff83f649d56ba62370bb60b1c583f493a96b57af88270",
+  "scope": "Isolated script comparison; not a replacement lesson or an audio generation request",
+  "target": {
+    "subject": "Chemistry",
+    "yearLevel": "Year 11 foundations",
+    "syllabusVersion": "2017",
+    "objective": "Choose and explain a mass/mole operation using mass per mole",
+    "teacherApproval": "pending"
+  },
+  "controls": {
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "voiceName": "Simon - Australian male",
+    "trialModelId": "eleven_v4",
+    "modelDecision": "same in both variants; not a library-wide model commitment",
+    "settings": null,
+    "fps": 30,
+    "visual": "same existing calculation board",
+    "responseHoldSeconds": 6,
+    "feedback": "identical",
+    "captionPolicy": "faithful speech; no answer during hold",
+    "opening": "no stinger in isolated comparison; separate from production lesson opening decision"
+  },
+  "suppliedValues": {
+    "carbonMolarMass": 12.01,
+    "unit": "g mol^-1",
+    "workedAmountMol": 2,
+    "workedMassGuardDigitsG": 24.02,
+    "workedMassReportedG": "24.0",
+    "promptMassG": 36.03,
+    "promptAmountMol": "3.00"
+  },
+  "unresolved": [
+    "Subject review",
+    "Supported model settings and generation budget",
+    "Selected fresh takes and listening review",
+    "Actual duration and reveal/caption timeline",
+    "Phone/export review",
+    "Learner recruitment and consent"
+  ],
+  "variants": [
+    {
+      "id": "A",
+      "label": "Descriptive worked explanation",
+      "segments": [
+        {
+          "id": "introduction",
+          "kind": "speech",
+          "text": "Molar mass is mass per mole. For carbon, use twelve point zero one grams per mole. We will find the mass of two point zero zero moles of carbon, then find an amount in moles from a mass.",
+          "wordCount": 38,
+          "textSha256": "49fdf88c90709f8508ba909549fd356dc8168618851a41b413fd65c7349a144d",
+          "selectedAudio": null,
+          "alignment": null,
+          "resolvedDurationFrames": null
+        },
+        {
+          "id": "worked-explanation",
+          "kind": "speech",
+          "text": "To find mass, use m equals n times M. Substitute two point zero zero for n and twelve point zero one for M. Multiply the values to get twenty-four point zero two grams. Report twenty-four point zero grams to three significant figures. To find an amount in moles from a mass, use n equals m divided by M. Substitute the values, divide, then report your result.",
+          "wordCount": 66,
+          "textSha256": "233448b79a9f5c1a15220a83465f8a169fe25dbafc9d6087544438092744965c",
+          "selectedAudio": null,
+          "alignment": null,
+          "resolvedDurationFrames": null
+        },
+        {
+          "id": "prompt",
+          "kind": "speech",
+          "text": "A sample contains thirty-six point zero three grams of carbon. Would you multiply or divide by twelve point zero one to find the amount in moles? Explain why. Pause if you need longer.",
+          "wordCount": 33,
+          "textSha256": "be4b5efd7053d182f16fab70ba5b37b6f1285d7b69ee9d4961aab5bf75dcade1",
+          "selectedAudio": null,
+          "alignment": null,
+          "resolvedDurationFrames": null
+        },
+        {
+          "id": "response-hold",
+          "kind": "silence",
+          "durationSeconds": 6,
+          "durationFrames": 180,
+          "allowLongerViewerPause": true,
+          "answerVisible": false
+        },
+        {
+          "id": "feedback",
+          "kind": "speech",
+          "text": "Divide. You are finding how many one-mole masses fit into the sample. Thirty-six point zero three divided by twelve point zero one gives three point zero zero moles. Multiplication finds a mass from an amount; division finds an amount from a mass.",
+          "wordCount": 42,
+          "textSha256": "92335e55047b0d69e9da97481d332e6a3094feeed11b012c9d082c051a1ba5a7",
+          "selectedAudio": null,
+          "alignment": null,
+          "resolvedDurationFrames": null
+        }
+      ],
+      "totalSpokenWords": 179,
+      "render": null
+    },
+    {
+      "id": "B",
+      "label": "Causal worked explanation",
+      "segments": [
+        {
+          "id": "introduction",
+          "kind": "speech",
+          "text": "Molar mass is mass per mole. For carbon, use twelve point zero one grams per mole. We will find the mass of two point zero zero moles of carbon, then find an amount in moles from a mass.",
+          "wordCount": 38,
+          "textSha256": "49fdf88c90709f8508ba909549fd356dc8168618851a41b413fd65c7349a144d",
+          "selectedAudio": null,
+          "alignment": null,
+          "resolvedDurationFrames": null
+        },
+        {
+          "id": "worked-explanation",
+          "kind": "speech",
+          "text": "Each mole contributes twelve point zero one grams. Two moles contribute twice that mass, so m equals n times M. Multiplying gives twenty-four point zero two grams. Report twenty-four point zero grams to three significant figures. To find an amount in moles from a mass, ask how many one-mole masses fit into the sample. That is a division, so n equals m divided by M.",
+          "wordCount": 65,
+          "textSha256": "a03293d5f46489e4d0d65b904ebddd0dceab47e50cbee50cd1cbcfd32663be92",
+          "selectedAudio": null,
+          "alignment": null,
+          "resolvedDurationFrames": null
+        },
+        {
+          "id": "prompt",
+          "kind": "speech",
+          "text": "A sample contains thirty-six point zero three grams of carbon. Would you multiply or divide by twelve point zero one to find the amount in moles? Explain why. Pause if you need longer.",
+          "wordCount": 33,
+          "textSha256": "be4b5efd7053d182f16fab70ba5b37b6f1285d7b69ee9d4961aab5bf75dcade1",
+          "selectedAudio": null,
+          "alignment": null,
+          "resolvedDurationFrames": null
+        },
+        {
+          "id": "response-hold",
+          "kind": "silence",
+          "durationSeconds": 6,
+          "durationFrames": 180,
+          "allowLongerViewerPause": true,
+          "answerVisible": false
+        },
+        {
+          "id": "feedback",
+          "kind": "speech",
+          "text": "Divide. You are finding how many one-mole masses fit into the sample. Thirty-six point zero three divided by twelve point zero one gives three point zero zero moles. Multiplication finds a mass from an amount; division finds an amount from a mass.",
+          "wordCount": 42,
+          "textSha256": "92335e55047b0d69e9da97481d332e6a3094feeed11b012c9d082c051a1ba5a7",
+          "selectedAudio": null,
+          "alignment": null,
+          "resolvedDurationFrames": null
+        }
+      ],
+      "totalSpokenWords": 178,
+      "render": null
+    }
+  ],
+  "assessment": {
+    "primary": "new mass-to-amount calculation plus operation explanation, 0 to 4",
+    "secondary": [
+      "opposite direction, 0 to 2",
+      "misconception repair, 0 to 2",
+      "delayed meaning and transfer"
+    ],
+    "formCounterbalancing": "Both immediate forms used within each variant; unused form at delayed test",
+    "forms": [
+      {
+        "id": "A",
+        "carbonMolarMass": 12.01,
+        "primaryMassG": 18.015,
+        "primaryAmountMol": "1.500",
+        "oppositeAmountMol": "0.500",
+        "oppositeMassG": "6.01"
+      },
+      {
+        "id": "B",
+        "carbonMolarMass": 12.01,
+        "primaryMassG": 30.025,
+        "primaryAmountMol": "2.500",
+        "oppositeAmountMol": "0.250",
+        "oppositeMassG": "3.00"
+      }
+    ]
+  }
+}

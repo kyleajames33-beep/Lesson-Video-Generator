@@ -1,0 +1,10 @@
+export function clampUnit(value: number): number;
+export function temperatureRate(value: number, optimum?: number, zero?: number): number;
+export function phRate(value: number, optimum?: number): number;
+export function substrateRate(value: number, enzymeAmount?: number): number;
+export function enzymeInsetState(factor: 'temperature' | 'ph' | 'substrate', value: number, optimum?: number, zero?: number, denaturationModel?: boolean): {warp: number; bound: number; label: string};
+export function forkProcessingTimes(at?: {leading?: number; lagging?: number; primers?: number; processing?: number; ligase?: number; rule?: number}): {replace: number; seal: number; rule: number};
+export function complementaryBase(base: string): string;
+export function dnaSequence(sequence: string, max?: number): string[];
+export function handDnaSchedule(xs: number[], travelFrames?: number): {leading: number[]; lagging: number[]; processing: number; joined: number; end: number};
+export function newDnaBondAt(arrivals: number[], index: number, processing: number, lagging?: boolean): number;

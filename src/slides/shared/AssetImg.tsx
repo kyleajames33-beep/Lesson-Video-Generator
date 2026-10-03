@@ -10,7 +10,7 @@ import {useAccent} from '../../styles/theme';
 // that, logs a warning (visible in render logs) and draws a quiet subject-
 // tinted placeholder so the scene keeps its composition.
 //
-// `npm run audit:production` is still the gate for missing assets — this only
+// `npm run release:preflight -- <lesson.json>` gates missing assets — this only
 // stops one missing file from killing a 10-minute render.
 
 type Props = ComponentProps<typeof Img>;

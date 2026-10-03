@@ -1,4 +1,4 @@
-// EnergyLadderDiagram — energy-level dioramas for thermochemistry (Chem Y11 M4).
+// EnergyLadderDiagram: energy-level dioramas for thermochemistry (Chem Y11 M4).
 //
 // Each panel has an energy axis and stone "ledges" standing at their enthalpy
 // levels, with the species' molecules (glossy CPK balls) standing on them.
@@ -17,6 +17,7 @@ import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
 import {DioramaDefs, ELEMENT_COLORS, Molecule, STONE, idleBob, idlePulse} from '../../diorama';
 import {Ball, ExtraAtomDefs, clamp, ramp} from './shared';
+import {validateQuantitativeDiagram} from '../../quantitative-models.mjs';
 
 type Tone = 'ink' | 'accent' | 'amber' | 'hot' | 'cold';
 export type LadderLevel = {
@@ -59,6 +60,7 @@ const Y_BOT = 452;
 const Y_TOP = 132;
 
 export const EnergyLadderDiagram = ({delay = 90, header, headerAt = 0, panels, steps = []}: EnergyLadderProps) => {
+	validateQuantitativeDiagram({type: 'diorama', kind: 'chem11m4EnergyLadder', props: {delay, headerAt, panels, steps}});
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const theme = useAccent();

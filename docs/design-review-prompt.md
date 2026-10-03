@@ -6,15 +6,15 @@
 You are reviewing frames from an HSC Science video lesson rendered in Remotion (React + TypeScript, 1920×1080, 30fps).
 
 Design system brief:
-- Dark cinematic: bg #0a0f0d, surface #0f1614, ink #e8efe9
-- One amber accent (#f0a830) per beat — never two competing
+- Light editorial: bg #f7f7f5, white cards, ink #1a1a1a; subject accents come from useAccent().
+- One amber accent (#f0a830) per beat : never two competing
 - Typography: hero 220px / title 96px / section 56px / body 28px (min 24px)
 - Mono: JetBrains Mono 22px, letter-spacing 0.15em
-- All diagrams draw via stroke-dashoffset; never cut in instantly
+- Diagrams reveal via stroke-dashoffset, staged construction, or FadeUp; teaching labels stay locked after reveal.
 - Chrome anchors in first 400ms (top row subject/module, bottom row dot/count)
-- No dead frames: ambient motion on glows/borders only, never on readable text
+- Purposeful motion: deliberate reading/thinking holds are valid; never move readable text during a hold
 
-Evaluate every frame against the 6 motion principles in docs/visual-design-handbook.md.
+Evaluate frames against the 7 motion principles in docs/visual-design-handbook.md. Use short clips to judge timing and movement.
 Do NOT explain the design system back to me. Do NOT compliment good work.
 ```
 
@@ -29,9 +29,9 @@ If a frame passes all checks, write "OK".
 
 CHECKLIST:
 1. Typography hierarchy respected (eyebrow < heading < body < callout)
-2. One accent per beat (amber or chem1, never both competing)
+2. One focal amber accent per beat; subject colour supports structure without competing
 3. Chrome visible within first 12 frames; counter accurate
-4. No dead frames — something moves (glow, float, pulse) on hold
+4. Holds sustain the teaching task; subtle glow/pulse only where it helps, never moving readable text
 5. Diagrams/annotations draw in, not cut (stroke-dashoffset or FadeUp)
 6. Text never breathes/vibrates after it lands; ambient motion only on containers
 
@@ -41,7 +41,7 @@ FRAMES:
 OUTPUT FORMAT:
 Frame 1: OK
 Frame 2: [VIOLATION-3] Chrome counter missing
-Frame 3: [SUGGESTION] Add AmbientGlow to VisualStage at delay 62
+Frame 3: [VIOLATION-4] Result appears before the narrated operation
 ```
 
 ---
@@ -51,8 +51,8 @@ Frame 3: [SUGGESTION] Add AmbientGlow to VisualStage at delay 62
 ```
 Apply these fixes. Do not explain reasoning. Confirm changed files.
 
-- Frame 2: SlideChrome — add sceneIndex/totalScenes props
-- Frame 3: ConceptSlide — wrap VisualStage in AmbientGlow (left="8%", top=300, width="84%", height=520, delay=62, opacity=0.07)
+- Frame 2: SlideChrome : add sceneIndex/totalScenes props
+- Frame 3: ConceptSlide: delay the result until the narrated operation completes
 ```
 
 ---
@@ -70,5 +70,5 @@ Here is the relevant code section only. Do not modify anything outside this bloc
 ## Tips
 
 - **Number frames in filenames** (`l2-concept-450.png`) so the AI can reference them precisely.
-- **Crop irrelevant chrome** if you're only reviewing the central diagram — smaller images = fewer tokens.
+- **Crop irrelevant chrome** if you're only reviewing the central diagram : smaller images = fewer tokens.
 - **If the AI starts rambling**, append: "Keep response under 150 words. Bullet points only."

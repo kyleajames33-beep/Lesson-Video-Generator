@@ -1,4 +1,4 @@
-// Circuit3DDiagram — a series circuit drawn as a 3D loop lying on a "bench",
+// Circuit3DDiagram: a constrained series circuit on a schematic bench,
 // viewed from a tilted camera, rendered in SVG via the shared engine3d
 // pipeline (rotate → project → depthLerp → painter sort).
 //
@@ -10,17 +10,19 @@
 // Beats: wire draws around the loop clockwise from the first component →
 // components pop in as the wire reaches them → (showCurrent) the switch
 // closes → current dots begin to flow and any lamp glows accent2.
-// Fully deterministic — pure function of frame+props.
+// Fully deterministic: pure function of frame+props.
 
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {FONT_DISPLAY, TOK} from '../../styles/tokens';
 import {useAccent} from '../../styles/theme';
 import {depthLerp, paintersSort, project, rotate} from './engine3d';
 import type {DepthItem, Vec3, ViewSpec} from './engine3d';
+import {validateSeriesCircuit, circuitMotion, conventionalCurrentPosition} from './physics-models.mjs';
+import type {SeriesComponentKind} from './physics-models.mjs';
 
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
 
-export type CircuitComponentKind = 'battery' | 'resistor' | 'lamp' | 'switch' | 'ammeter' | 'voltmeter';
+export type CircuitComponentKind = SeriesComponentKind;
 
 type Props = {
 	/** Placed clockwise around the loop; components[0] sits front-centre. */
@@ -83,7 +85,7 @@ const symbolFor = (
 	accent2: string,
 	litProgress: number,
 	switchAngle: number,
-	/** Screen rotation of the whole symbol group — counter-rotate text so meter faces stay upright. */
+	/** Screen rotation of the whole symbol group; counter-rotate text so meter faces stay upright. */
 	tangent: number,
 ) => {
 	const stub = (bodyHalf: number) => (
@@ -143,14 +145,13 @@ const symbolFor = (
 			);
 		}
 		case 'ammeter':
-		case 'voltmeter':
 			return (
 				<g>
 					{stub(17)}
 					<circle r={17} fill={TOK.bgLift} stroke={TOK.ink} strokeWidth={3} />
 					<g transform={`rotate(${-tangent})`}>
 						<text y={6.5} textAnchor="middle" fontFamily={FONT_DISPLAY} fontSize={18} fontWeight={800} fill={TOK.ink}>
-							{kind === 'ammeter' ? 'A' : 'V'}
+							A
 						</text>
 					</g>
 				</g>
@@ -159,11 +160,12 @@ const symbolFor = (
 };
 
 export const Circuit3DDiagram = ({components, showCurrent = false, delay = 0}: Props) => {
+	validateSeriesCircuit(components, showCurrent);
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
 	const t = frame / fps;
-	// Gentle sway instead of full turntable — labels must stay readable.
+	// Gentle sway instead of full turntable; labels must stay readable.
 	const yaw = -0.38 + 0.24 * Math.sin((2 * Math.PI * t) / 11);
 
 	const n = Math.max(1, components.length);
@@ -214,8 +216,7 @@ export const Circuit3DDiagram = ({components, showCurrent = false, delay = 0}: P
 	});
 
 	// showCurrent beat: the switch lever closes, then current starts.
-	const switchAngle = showCurrent ? interpolate(frame, [delay + 64, delay + 74], [-28, -3], clamp) : -28;
-	const currentOn = showCurrent ? interpolate(frame, [delay + 76, delay + 90], [0, 1], clamp) : 0;
+	const {switchAngle, currentOn} = circuitMotion(frame, delay, showCurrent);
 
 	// Components pop in as the wire draw reaches their slot.
 	const labelEls: DepthItem['el'][] = [];
@@ -272,7 +273,7 @@ export const Circuit3DDiagram = ({components, showCurrent = false, delay = 0}: P
 	if (currentOn > 0) {
 		const DOTS = 9;
 		for (let j = 0; j < DOTS; j++) {
-			const s = (t * 0.085 + j / DOTS) % 1;
+			const s = conventionalCurrentPosition(Math.max(0, (frame - delay - 76) / fps), j / DOTS);
 			const nearComponent = slots.some((sc) => {
 				const d = Math.abs(s - sc);
 				return Math.min(d, 1 - d) < GAP_HALF * 1.4;
@@ -298,8 +299,10 @@ export const Circuit3DDiagram = ({components, showCurrent = false, delay = 0}: P
 
 	return (
 		<svg viewBox="0 0 720 440" className="diagram" role="img" aria-label="3D series circuit diagram">
+			<text x={360} y={22} textAnchor="middle" fontFamily={FONT_DISPLAY} fontSize={16} fill={TOK.inkDim}>Series topology only; idealised components</text>
 			{paintersSort(items)}
 			<g>{labelEls}</g>
+			{showCurrent && <text x={360} y={420} textAnchor="middle" fontFamily={FONT_DISPLAY} fontSize={16} fill={TOK.inkDim}>Dots show conventional-current direction, not electron speed</text>}
 		</svg>
 	);
 };

@@ -4,17 +4,17 @@ The standing brief for Claude as designer-of-record on HSCScience video generati
 
 ## Role
 
-The user has delegated visual/animation/UX design authority. Don't round-trip every decision — make the call, record the reasoning here, move on. Reserve user input for product direction, content correctness, and taste calls on finished output.
+The user has delegated visual/animation/UX design authority. Don't round-trip every decision : make the call, record the reasoning here, move on. Reserve user input for product direction, content correctness, and taste calls on finished output.
 
 ## The mental model
 
 The pipeline is four layers:
 
 ```
-1. LESSON CONTENT (src/data/*.json)       — what to teach
-2. SCENE TYPES   (src/lesson/types.ts)     — the menu of lesson moments
-3. SLIDE COMPONENTS (src/slides/*.tsx)     — how each moment looks/animates
-4. RENDERER (src/LessonVideo.tsx)          — stitches them into one MP4
+1. LESSON CONTENT (src/data/*.json)       : what to teach
+2. SCENE TYPES   (src/lesson/types.ts)     : the menu of lesson moments
+3. SLIDE COMPONENTS (src/slides/*.tsx)     : how each moment looks/animates
+4. RENDERER (src/LessonVideo.tsx)          : stitches them into one MP4
 ```
 
 The JSON specifies which scenes appear in what order. `LessonVideo.tsx` switches on `scene.type` and renders the matching slide component. To add a feature: add a scene type, build the slide component, add a `case` to the switch. That's it.
@@ -23,18 +23,18 @@ The JSON specifies which scenes appear in what order. `LessonVideo.tsx` switches
 
 ## Visual direction (current standard)
 
-**Light, editorial, hand-drawn** — Atomi/Kurzgesagt-school motion on a paper-white stage. (The project started dark/cinematic; the code moved to light and this doc was updated to match on 2026-09-24. The JSX files in `docs/design-canvas-reference/` still show the old dark palette — use them for *motion and layout* reference only, not colour.)
+**Light, editorial, hand-drawn** : Atomi/Kurzgesagt-school motion on a paper-white stage. (The project started dark/cinematic; the code moved to light and this doc was updated to match on 2026-09-24. The JSX files in `docs/design-canvas-reference/` still show the old dark palette : use them for *motion and layout* reference only, not colour.)
 
-**Tokens** — source of truth is [src/styles/tokens.ts](../src/styles/tokens.ts):
+**Tokens** : source of truth is [src/styles/tokens.ts](../src/styles/tokens.ts):
 - Stage `TOK.bg` `#f7f7f5` (warm off-white) with a soft vignette; lift `#ffffff`
-- Cards/panels: `TOK.card` (white 94%) + `TOK.cardBorder` hairline + `TOK.cardShadow` (low, soft). **Never a dark translucent fill** — every `rgba(15,22,20,…)` card from the dark era rendered dark ink on near-black.
+- Cards/panels: `TOK.card` (white 94%) + `TOK.cardBorder` hairline + `TOK.cardShadow` (low, soft). **Never a dark translucent fill** : every `rgba(15,22,20,…)` card from the dark era rendered dark ink on near-black.
 - Images: `filter: TOK.imageShadow` (the old 0.4–0.45 black drop-shadows were built for a dark stage)
-- Subjects (accent / accent2 / soft tint), resolved per lesson via `useAccent()` — never hard-code a subject hue in a shared component:
+- Subjects (accent / accent2 / soft tint), resolved per lesson via `useAccent()` : never hard-code a subject hue in a shared component:
   - Chemistry `#0d6b52` / `#148a6f` / `#e8f5f0`
   - Biology `#1f6fb2` / `#3a8ad9` / `#e9f2fb`
   - Physics `#c2410c` / `#e07a3a` / `#fdf0e8`
   - Maths `#6d28d9` / `#9b6dd9` / `#f2ebfb`
-- Universal accent **amber** — reserved for the single most important thing on screen:
+- Universal accent **amber** : reserved for the single most important thing on screen:
   - `TOK.amber` `#f0a830` for strokes, doodles, underlines, fills, rules
   - `TOK.amberInk` `#b86e0a` for **text**. Raw amber text is 1.9:1 on the stage (fails at any size); amberInk is 3.7:1 (fine for the large/bold type amber is used on)
 - Ink: `#1a1a1a` / `#5a5a5a` / `#828282` (primary / secondary / tertiary-labels)
@@ -42,25 +42,36 @@ The JSON specifies which scenes appear in what order. `LessonVideo.tsx` switches
 **Fonts** are self-hosted in `public/fonts/` and loaded by [src/styles/fonts.ts](../src/styles/fonts.ts) with `delayRender`, so no frame renders before they're ready and renders never depend on fonts.googleapis.com.
 
 **Type scale** (1080p frame):
-- Hero — 220px, weight 800, letter-spacing -0.04em
-- Title — 96px, weight 700, letter-spacing -0.03em
-- Section — 56px, weight 700
-- Body — 28px (never below 24)
-- Mono — 22px, letter-spacing 0.15em — used for chrome, labels, units, timecodes
+- Hero : 220px, weight 800, letter-spacing -0.04em
+- Title : 96px, weight 700, letter-spacing -0.03em
+- Section : 56px, weight 700
+- Body : 28px (never below 24)
+- Mono : 22px, letter-spacing 0.15em : used for chrome, labels, units, timecodes
 
 **Fonts**: `Inter Tight` for display, `JetBrains Mono` for mono, `Caveat` / `Kalam` for handwritten margin annotations. All are variable fonts except Kalam, so in-between weights (760, 820…) render true.
 
-## The six motion principles
+## Copy and style selection
+
+Do not use em dashes (U+2014) in new or revised copy, narration, captions or
+titles. Use ordinary sentence punctuation. Check the selected lesson before
+speech generation; a narration edit requires refreshed audio and alignment.
+
+User feedback on 2026-10-02 supports a mix of hand-drawn, painted and existing
+editorial treatments. Preserve usable designs. Select by teaching purpose,
+with shared typography, colours and caption space. Follow
+[animation planning](animation-planning.md) before production.
+
+## The seven motion principles
 
 Every motion decision must satisfy these. They are non-negotiable.
 
 1. **Reveal, don't announce.** Type slides up 16px and fades in over 400ms with `cubic-bezier(.2,.7,.3,1)`. Stagger between siblings: 60ms for words, 120ms for blocks.
 2. **Always anchor with a frame.** Top-row chrome (subject + module) and bottom-row chrome (syllabus dot + episode count) appear within the first 400ms and persist. Students never lose context.
 3. **One accent per beat.** Amber is reserved for the single most important word, equation term, or callout. Never two ambers competing.
-4. **Diagrams draw, they don't cut.** SVG strokes use `stroke-dashoffset` animation. Leader lines, arrows, brackets all draw from origin to target — never appear instantly.
+4. **Diagrams draw, they don't cut.** SVG strokes use `stroke-dashoffset` animation. Leader lines, arrows, brackets all draw from origin to target : never appear instantly.
 5. **Hold long enough to read.** Minimum 2.5s on screen for any 28px body line. Equations get 4s minimum. Recap items get 3s each.
 6. **Cuts are punctuation.** Hard cut on beat changes (hook → title, process step → next). Cross-dissolves only inside continuous explanations.
-7. **No dead frames.** Vox-grade explainer journalism never holds a still frame for more than ~0.5s without something moving — a number ticking, a label sliding in, a chart bar building. If a scene has a 1-second flat moment, it reads as "the video stalled." Always have *something* on a sub-second cycle: a slow ambient float, a chart cursor, a doodle stroke completing. Apply only after primary reveals have landed; never compete with the main teaching moment.
+7. **Purposeful motion and deliberate holds.** Animate to explain a change, direct attention or supply useful context. A still equation, comparison or recall prompt may need a sustained reading or thinking hold. There is no requirement for movement every half-second. Remove motion that competes with reasoning; shorten holds only when they serve no teaching purpose.
 
 Implementation rule: use [src/animations/AmbientMotion.tsx](../src/animations/AmbientMotion.tsx) for hold-state life. `AmbientGlow`, `AmbientBreathe`, and `AmbientBorderPulse` are deliberately low-contrast; if the student notices them before the teaching object, they are too strong. Use them on static hold-heavy regions only, not as decoration.
 
@@ -74,28 +85,28 @@ This is the highest-leverage visual asset for HSC explainers. The seeded scribbl
 
 > **Rule: doodles must focus attention or prevent a mistake.** Decorative scribbles dilute the technique. (See `production-memory.md` "Mistakes To Avoid".)
 
-Vocabulary: `ScribbleCircle`, `ScribbleUnderline`, `ScribbleArrow`, `ScribbleBox`, `ScribbleMark` (✓/✗), `ScribbleBracket`, `ScribbleHatch`, `ScribbleHighlight`, `ScribbleStar`, `ScribbleAnnotation`. All seeded — same seed = same doodle every render (Remotion-stable).
+Vocabulary: `ScribbleCircle`, `ScribbleUnderline`, `ScribbleArrow`, `ScribbleBox`, `ScribbleMark` (✓/✗), `ScribbleBracket`, `ScribbleHatch`, `ScribbleHighlight`, `ScribbleStar`, `ScribbleAnnotation`. All seeded : same seed = same doodle every render (Remotion-stable).
 
 When porting to Remotion: animate via `useCurrentFrame()` + `interpolate(frame, [start, end], [length, 0])` on `strokeDashoffset`.
 
-## Curation philosophy — features are vocabulary, not weapons
+## Curation philosophy : features are vocabulary, not weapons
 
 **More features ≠ better videos.** Atomi/Kurzgesagt look polished because they have a *small* vocabulary used *consistently*. A bigger catalog means more decisions to make, more inconsistency, more "feature soup". Curation > accumulation.
 
 Two rules to keep this honest:
 
-- **Every component must earn its keep.** If a slide component or animation primitive hasn't made a real lesson better, delete it. No emotional attachment to code.
+- **Every component must earn its use.** Choose components that improve the current explanation. Keep useful existing designs available; lack of pilot use alone is not a reason to delete catalogue assets.
 - **Write rules, not just code.** Every "use X for Y, never Z" decision goes in this doc or `gold-standard-video-standard.md`. The rules are a more durable asset than the components themselves.
 
 ## How to find features worth adding
 
 In rough order of value:
 
-1. **Reference videos — specifically.** Watch with a notepad. Log moves with timestamps and concrete specs ("Atomi 3:42 — three bullet points slide in left-to-right, each with a small scribble check 0.3s after text lands"). Channels worth mining: Atomi, Antidote, Kurzgesagt, 3Blue1Brown, Veritasium, MinutePhysics, Domain of Science, Up and Atom, AsapSCIENCE.
+1. **Reference videos : specifically.** Watch with a notepad. Log moves with timestamps and concrete specs ("Atomi 3:42 : three bullet points slide in left-to-right, each with a small scribble check 0.3s after text lands"). Channels worth mining: Atomi, Antidote, Kurzgesagt, 3Blue1Brown, Veritasium, MinutePhysics, Domain of Science, Up and Atom, AsapSCIENCE.
 2. **Content-driven gaps.** When writing a lesson, note where existing slides can't carry the idea ("I need to show units cancelling", "I need a misconception getting crossed out"). These are real, grounded feature requests.
-3. **Post-render review.** Watch finished videos for dead spots — places where attention drifts or visuals feel generic. Each is a feature gap.
+3. **Post-render review.** Watch finished videos for dead spots : places where attention drifts or visuals feel generic. Each is a feature gap.
 4. **Prompted brainstorming with raw material.** Generic "give me ideas" produces slop. Give Claude a script + reference links + screenshot of a flat slide and ask for 3 specific moves.
-5. **Online catalogues (lower value).** Remotion gallery, motion design twitter, awesome-remotion. Mostly for inspiration, not direct copying — most isn't tuned for educational content.
+5. **Online catalogues (lower value).** Remotion gallery, motion design twitter, awesome-remotion. Mostly for inspiration, not direct copying : most isn't tuned for educational content.
 
 ## The recommended feature workflow
 
@@ -105,7 +116,7 @@ For each candidate feature:
   1. Watch one reference video → log 3-5 moves you can't currently do
   2. Build ONE missing primitive
   3. Use it in ONE real lesson (not a demo file)
-  4. Watch the finished render — does it feel better?
+  4. Watch the finished render : does it feel better?
      → if yes: keep, document the rule for when to use it here
      → if no:  delete, no shame
   5. Repeat
@@ -115,26 +126,26 @@ Avoid building "for the catalog". Build for a real lesson, then promote.
 
 ## What lives where
 
-- **Visual reference (specs, not runtime):** `docs/design-canvas-reference/` — `scenes.jsx`, `scenes-v2.jsx`, `animated-scenes*.jsx`, `system.jsx`, `doodles.jsx`, `animations.jsx`, `design-canvas.jsx`, `HSC Video Template System.html`. Open the HTML in a browser to pan/zoom the canvas.
-- **Runtime code:** `src/` — Remotion components that actually render to MP4.
-- **Tokens:** [src/styles/tokens.ts](../src/styles/tokens.ts) — exports `TOK`, `FONT_DISPLAY`, `FONT_MONO`, `FONT_HAND`, `TYPE`, `MOTION`, `subjectColor()`.
-- **Doodle library:** [src/animations/DoodlePrimitives.tsx](../src/animations/DoodlePrimitives.tsx) — 10 scribble primitives (`ScribbleCircle`, `ScribbleUnderline`, `ScribbleArrow`, `ScribbleBox`, `ScribbleMark`, `ScribbleBracket`, `ScribbleHatch`, `ScribbleHighlight`, `ScribbleStar`, `ScribbleAnnotation`) plus `MarginNote` (P0.5) and the legacy `DoodleArrow` / `MistakeTag` / `UnitCancel`. All seeded; same seed = same path every render.
-- **Reveal primitive:** [src/animations/FadeUp.tsx](../src/animations/FadeUp.tsx) — `<FadeUp>` (block reveal), `<FadeUpStagger>` (word-by-word), `useFrames()` (seconds→frames helper).
-- **Attention primitives:** [src/animations/AttentionPrimitives.tsx](../src/animations/AttentionPrimitives.tsx) — `<LeaderLineCallout>` (P0.2), `<HighlightWipe>` (P0.3), `<Spotlight>`, `<UnderlineDraw>`, `<Callout>`, `<Checkmark>`.
-- **Motion primitives:** [src/animations/MotionPrimitives.tsx](../src/animations/MotionPrimitives.tsx) — `<NumberTicker>` (P0.4), `OdometerText`, `TypewriterText`, `WordReveal`, `KenBurns`, `CameraFrame`, etc.
-- **Diagram primitives:** [src/animations/DiagramPrimitives.tsx](../src/animations/DiagramPrimitives.tsx) — `<DataChart>` (P0.7), `DrawPath`, `SpringNumber`, `PulseBeacon`, `HighlightBox`, `PhaseReveal`, etc.
-- **Diorama primitives (pilot, 2026-09-24):** [src/slides/diagrams/diorama.tsx](../src/slides/diagrams/diorama.tsx) — `DioramaPlinth` (neutral stone display plinth; the first grass-and-soil version was dropped on review as cartoony), `idleBob` / `idlePulse` hold-state life, glossy CPK `Molecule` balls, `plinthSlots`. Used by `reactionRun` (live reaction + self-drawing graph) and `coefficientDivide` (moles ÷ coefficient columns). All lanes follow `docs/diorama-system.md`. Painted props (not yet made) are briefed in `docs/diorama-asset-brief-chem-y11-m2-l13.md`. Painted art never carries text; the coded layer carries every label and number.
-- **Ambient motion primitive:** [src/animations/AmbientMotion.tsx](../src/animations/AmbientMotion.tsx) — `AmbientGlow`, `AmbientBreathe`, `AmbientBorderPulse` for subtle hold-state motion after primary reveals.
+- **Visual reference (specs, not runtime):** `docs/design-canvas-reference/` : `scenes.jsx`, `scenes-v2.jsx`, `animated-scenes*.jsx`, `system.jsx`, `doodles.jsx`, `animations.jsx`, `design-canvas.jsx`, `HSC Video Template System.html`. Open the HTML in a browser to pan/zoom the canvas.
+- **Runtime code:** `src/` : Remotion components that actually render to MP4.
+- **Tokens:** [src/styles/tokens.ts](../src/styles/tokens.ts) : exports `TOK`, `FONT_DISPLAY`, `FONT_MONO`, `FONT_HAND`, `TYPE`, `MOTION`, `subjectColor()`.
+- **Doodle library:** [src/animations/DoodlePrimitives.tsx](../src/animations/DoodlePrimitives.tsx) : 10 scribble primitives (`ScribbleCircle`, `ScribbleUnderline`, `ScribbleArrow`, `ScribbleBox`, `ScribbleMark`, `ScribbleBracket`, `ScribbleHatch`, `ScribbleHighlight`, `ScribbleStar`, `ScribbleAnnotation`) plus `MarginNote` (P0.5) and the legacy `DoodleArrow` / `MistakeTag` / `UnitCancel`. All seeded; same seed = same path every render.
+- **Reveal primitive:** [src/animations/FadeUp.tsx](../src/animations/FadeUp.tsx) : `<FadeUp>` (block reveal), `<FadeUpStagger>` (word-by-word), `useFrames()` (seconds→frames helper).
+- **Attention primitives:** [src/animations/AttentionPrimitives.tsx](../src/animations/AttentionPrimitives.tsx) : `<LeaderLineCallout>` (P0.2), `<HighlightWipe>` (P0.3), `<Spotlight>`, `<UnderlineDraw>`, `<Callout>`, `<Checkmark>`.
+- **Motion primitives:** [src/animations/MotionPrimitives.tsx](../src/animations/MotionPrimitives.tsx) : `<NumberTicker>` (P0.4), `OdometerText`, `TypewriterText`, `WordReveal`, `KenBurns`, `CameraFrame`, etc.
+- **Diagram primitives:** [src/animations/DiagramPrimitives.tsx](../src/animations/DiagramPrimitives.tsx) : `<DataChart>` (P0.7), `DrawPath`, `SpringNumber`, `PulseBeacon`, `HighlightBox`, `PhaseReveal`, etc.
+- **Diorama primitives (pilot, 2026-09-24):** [src/slides/diagrams/diorama.tsx](../src/slides/diagrams/diorama.tsx) : `DioramaPlinth` (neutral stone display plinth; the first grass-and-soil version was dropped on review as cartoony), `idleBob` / `idlePulse` hold-state life, glossy CPK `Molecule` balls, `plinthSlots`. Used by `reactionRun` (live reaction + self-drawing graph) and `coefficientDivide` (moles ÷ coefficient columns). All lanes follow `docs/diorama-system.md`. Painted props (not yet made) are briefed in `docs/diorama-asset-brief-chem-y11-m2-l13.md`. Painted art never carries text; the coded layer carries every label and number.
+- **Ambient motion primitive:** [src/animations/AmbientMotion.tsx](../src/animations/AmbientMotion.tsx) : `AmbientGlow`, `AmbientBreathe`, `AmbientBorderPulse` for subtle hold-state motion after primary reveals.
 - **Slide shell:** [src/slides/shared/SlideFrame.tsx](../src/slides/shared/SlideFrame.tsx) (light stage with optional vignette) and [src/slides/shared/SlideChrome.tsx](../src/slides/shared/SlideChrome.tsx) (top/bottom chrome rows). New gold-standard slides use these instead of the legacy `SlideLayout`.
-- **Slide components:** `src/slides/*.tsx` — all core lesson slides are on the light system. Keep any future slide on `SlideFrame` / `SlideChrome`; do not reintroduce legacy `SlideLayout` unless deliberately building a compatibility view.
+- **Slide components:** `src/slides/*.tsx` : all core lesson slides are on the light system. Keep any future slide on `SlideFrame` / `SlideChrome`; do not reintroduce legacy `SlideLayout` unless deliberately building a compatibility view.
 - **Slide shell:** [src/slides/shared/SlideFrame.tsx](../src/slides/shared/SlideFrame.tsx) (light stage with optional vignette) and [src/slides/shared/SlideChrome.tsx](../src/slides/shared/SlideChrome.tsx) (top/bottom chrome rows). New gold-standard slides use these instead of the legacy `SlideLayout`.
 
 ## Companion docs
 
-- `docs/gold-standard-video-standard.md` — the rubric for what "good" means at the lesson level (teaching quality, structure, score targets). Read alongside this handbook.
-- `docs/lesson-reference-style.md` — script and content rules.
-- `docs/production-memory.md` — accumulated learnings; update after every shipped lesson.
-- `docs/feature-wishlist.md` — the prioritised feature backlog driven by reference-video study.
+- `docs/gold-standard-video-standard.md` : the rubric for what "good" means at the lesson level (teaching quality, structure, score targets). Read alongside this handbook.
+- `docs/lesson-reference-style.md` : script and content rules.
+- `docs/production-memory.md` : accumulated learnings; update after every shipped lesson.
+- `docs/feature-wishlist.md` : the prioritised feature backlog driven by reference-video study.
 
 ## Implementation gotchas (learnt during builds)
 
@@ -142,14 +153,14 @@ Avoid building "for the catalog". Build for a real lesson, then promote.
 
 `FadeUp` applies `transform: translateY(...)` to its wrapper, which makes that wrapper a CSS containing block for absolutely-positioned descendants. Concrete consequence:
 
-**Wrong** — `bottom: 150` resolves to "150px above a zero-height box" → renders off-screen above:
+**Wrong** : `bottom: 150` resolves to "150px above a zero-height box" → renders off-screen above:
 ```tsx
 <FadeUp delay={140}>
   <div style={{position: 'absolute', bottom: 150, left: 64}}>callout</div>
 </FadeUp>
 ```
 
-**Right** — keep absolute positioning on the outer wrapper, put `FadeUp` inside:
+**Right** : keep absolute positioning on the outer wrapper, put `FadeUp` inside:
 ```tsx
 <div style={{position: 'absolute', bottom: 150, left: 64}}>
   <FadeUp delay={140}>
@@ -158,15 +169,15 @@ Avoid building "for the catalog". Build for a real lesson, then promote.
 </div>
 ```
 
-This pattern works for both `top` and `bottom` — the inner content flows normally, only the FadeUp wraps the children with animation. Same fix applies if using `position: fixed` children.
+This pattern works for both `top` and `bottom` : the inner content flows normally, only the FadeUp wraps the children with animation. Same fix applies if using `position: fixed` children.
 
 ### Diagrams inside the concept visual stage
 
-`DiagramRenderer` output sits inside the concept slide's white visual stage (inner box ≈ 744×554). Diagrams in `FULL_SIZE_DIAGRAMS` get the whole box — design new coded diagrams for that size.
+`DiagramRenderer` output sits inside the concept slide's white visual stage (inner box ≈ 744×554). Diagrams in `FULL_SIZE_DIAGRAMS` get the whole box : design new coded diagrams for that size.
 
 - Use `useAccent()` for colour; never hard-code indigo/emerald. (`flow`, `venn` and `table` were rebuilt on 2026-09-24 for exactly this.)
 - Lay text out in HTML (wraps) rather than SVG `<text>` (doesn't wrap), and **fit the font to the data**: long labels and many rows shrink, short ones grow. The table used to hard-code two CSS columns; 90 of the 102 tables have 3–4 columns and rendered scrambled.
-- Branching data (trees, fan-outs) must lay out as branches — 8 of the 49 flows are trees.
+- Branching data (trees, fan-outs) must lay out as branches : 8 of the 49 flows are trees.
 
 ### Images
 
@@ -176,13 +187,13 @@ Always render lesson images with `<AssetImg>` (src/slides/shared/AssetImg.tsx), 
 
 ### Transitions
 
-Picked by what the cut means ([src/transitions/pickTransition.ts](../src/transitions/pickTransition.ts)), in the subject accent — not rotated through a pool:
+Picked by what the cut means ([src/transitions/pickTransition.ts](../src/transitions/pickTransition.ts)), in the subject accent : not rotated through a pool:
 - out of title/hook → **iris** (zooming into the idea)
-- into a misconception → **crash zoom** (the "wait — trap" beat)
+- into a misconception → **crash zoom** (the "wait : trap" beat)
 - into quick check / summary / end card → **shape wipe** (chapter punctuation)
 - everything else → **camera blur** (one continuous camera move)
 
-A transition overlay must reach opacity 0 at progress 1 and must not clip the entering scene at progress 1 — Remotion keeps the presentation mounted for the rest of the scene. (Both bugs shipped: a glowing circle that sat top-right on every scene after a `morphCut`, and a white wedge left in the corner after a `shapeWipe`.)
+A transition overlay must reach opacity 0 at progress 1 and must not clip the entering scene at progress 1 : Remotion keeps the presentation mounted for the rest of the scene. (Both bugs shipped: a glowing circle that sat top-right on every scene after a `morphCut`, and a white wedge left in the corner after a `shapeWipe`.)
 
 ### Syllabus-neutral lessons (`"syllabusNeutral": true`)
 
@@ -195,7 +206,7 @@ Hook scenes should leave one clear thought in the student's head before the less
 Rules:
 - Long hook questions own the lower two-thirds of the frame. Move the visual into the upper-right, shrink it if needed, and never let it crowd or sit behind the question text.
 - If the body text is longer than ~100 characters, reduce hero type before wrapping into four lines. A three-line hook at 70-76px usually reads better than a crowded 88px block.
-- When the scene has a `heading` (all 228 hooks do), the **heading is the hero** (h1–h4 by length) and the body is a 40px supporting line in `inkDim`. Never the reverse — it used to be a 56px heading over an 88px dimmed body.
+- When the scene has a `heading` (all 228 hooks do), the **heading is the hero** (h1–h4 by length) and the body is a 40px supporting line in `inkDim`. Never the reverse : it used to be a 56px heading over an 88px dimmed body.
 - The atom/visual is secondary. It can pulse slowly for life, but it must not compete with the question.
 - Use annotation only when it names the visual (`↑ one atom`, `↑ a counting word`). If the annotation line crosses major text, move the visual, not the text.
 
@@ -273,44 +284,55 @@ Rules:
 - Background formulas/atoms must stay low contrast. If the student reads the backdrop before the title, it is too bright.
 - The title must clear the caption bar at full hold. Render both an early build frame and a final hold frame.
 
-### P0 animation vocabulary — usage rules
+### P0 animation vocabulary : usage rules
 
 These are the new primitives built in Phase 2. Each must earn its keep; use them only when the lesson content justifies the motion.
 
-**`<LeaderLineCallout>` (P0.2)** — `src/animations/AttentionPrimitives.tsx`
+**`<LeaderLineCallout>` (P0.2)** : `src/animations/AttentionPrimitives.tsx`
 - Use when labelling parts of a diagram simultaneously (atom shells, equation terms, anatomy).
 - Line draws first (200ms), label fades up 150ms after line completes. Stagger multiple instances 120ms apart.
 - Colour should match the thing being labelled (chem1 for oxygen, chem2 for hydrogen, etc.), not default to amber.
-- Do not use for text that is already adjacent — leader lines are for distance.
+- Do not use for text that is already adjacent : leader lines are for distance.
 
-**`<HighlightWipe>` (P0.3)** — `src/animations/AttentionPrimitives.tsx`
+**`<HighlightWipe>` (P0.3)** : `src/animations/AttentionPrimitives.tsx`
 - Use for *recall* emphasis on a previously-introduced phrase (e.g. "remember **protons**?").
 - Animates `clip-path` inset left-to-right over 400ms. The element underneath stays put.
 - Default: amber at 22% opacity.
-- Do not use on first reveal — that is `FadeUp`'s job. Reserve `HighlightWipe` for re-focusing attention.
+- Do not use on first reveal : that is `FadeUp`'s job. Reserve `HighlightWipe` for re-focusing attention.
 
-**`<NumberTicker>` (P0.4)** — `src/animations/MotionPrimitives.tsx`
-- Use when a number needs to feel visceral — Avogadro's constant, atomic mass, reaction rate.
+**`<NumberTicker>` (P0.4)** : `src/animations/MotionPrimitives.tsx`
+- Use when a number needs to feel visceral : Avogadro's constant, atomic mass, reaction rate.
 - Default duration: 800ms (`durationFrames={24}` at 30fps) with `easeOutCubic`.
 - Scientific notation: pass the full string as `to` (e.g. `"6.022 × 10²³"`). The mantissa counts up, the exponent fades up at 75% progress.
 - Always enable `tabularNums` (default true) to prevent width thrash during the count.
-- Do not ticker-count numbers that are not the teaching focus — it draws attention whether you want it or not.
+- Do not ticker-count numbers that are not the teaching focus : it draws attention whether you want it or not.
 
-**`<MarginNote>` (P0.5)** — `src/animations/DoodlePrimitives.tsx`
+**`<MarginNote>` (P0.5)** : `src/animations/DoodlePrimitives.tsx`
 - Use for handwritten marginalia on a main diagram (the Atomi signature move).
 - Text: Caveat 48–56px, rotated -4° to -8°, fades up over 400ms.
 - Arrow: `ScribbleArrow` draws 200ms after text starts, from the note's nearest edge to the diagram point.
 - One note per diagram. Two notes only if they label completely separate regions.
-- Do not use margin notes on body text or callouts — they belong on visual diagrams only.
+- Do not use margin notes on body text or callouts : they belong on visual diagrams only.
 
-**`<DataChart>` (P0.7)** — `src/animations/DiagramPrimitives.tsx`
+**`<DataChart>` (P0.7)** : `src/animations/DiagramPrimitives.tsx`
 - Use for any quantitative claim that benefits from visual comparison (atomic masses, scale comparisons, periodic trends).
 - Axes draw first (300ms), then bars/lines build sequentially. Bar stagger: 120ms.
 - Default size 520×320px; scale via `width`/`height` props if the visual stage is larger.
 - Bar colour defaults to amber; override per-bar with `color` on individual data points.
 - Line charts: path strokes left-to-right over 800ms, points fade up after path completes.
-- Do not use for tables of symbols — charts are for *comparison*, not lookup.
+- Do not use for tables of symbols : charts are for *comparison*, not lookup.
 
 ## Update rule
 
-When you (Claude) make a non-obvious design decision in any session — adding a new motion primitive, choosing a timing, picking a colour, killing a feature — append a short note to the relevant section here. The handbook is the project's design memory; if it's not written down, the next session won't know.
+When you (Claude) make a non-obvious design decision in any session : adding a new motion primitive, choosing a timing, picking a colour, killing a feature : append a short note to the relevant section here. The handbook is the project's design memory; if it's not written down, the next session won't know.
+
+### Measured response timing, 3 October 2026
+
+New assembled response tasks keep their complete solution hidden until the end
+of the measured silent interval. Use `responseHold` and `answerVisibleStart`;
+the countdown covers the actual interval. Existing midpoint fades are preserved
+for old lessons until selected review. Worked-example diagrams, coach notes and
+solution steps must also wait when they contain an answer. Hold the completed
+solution long enough to read before the outgoing transition. The technical
+fixture verifies boundary behaviour; it does not approve scientific content or
+replace a full narrated clip/device review.

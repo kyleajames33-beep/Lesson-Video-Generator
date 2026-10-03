@@ -1,0 +1,454 @@
+{
+  "researchDate": "2026-10-02",
+  "status": "Focused audit snapshot, not release approval",
+  "scope": "Representative source files and four saved stills; six existing media files probed",
+  "limitations": [
+    "No audio assessed by listening",
+    "No complete exported video watched",
+    "No Physics lesson JSON found in src/data; Physics findings concern inspected components and proposed examples",
+    "Hashes record inspected files at report completion, not a pre-task backup or proof of catalogue-wide correctness",
+    "No existing lessons, recordings, captions or artwork edited for this research task",
+    "Local browser review failed and local-file navigation was blocked; no playback workaround attempted"
+  ],
+  "lessonInventory": {
+    "total": 308,
+    "chemistry": 149,
+    "biology": 159,
+    "physics": 0
+  },
+  "entries": [
+    {
+      "path": "AGENTS.md",
+      "inspection": "source/text inspection",
+      "bytes": 850,
+      "sha256": "e528ad3ff08e69b15002f95f0ce485676d27836d629c0c8b4a5a36d9fb776b5c"
+    },
+    {
+      "path": "docs/visual-design-handbook.md",
+      "inspection": "source/text inspection",
+      "bytes": 27827,
+      "sha256": "3b9fd152a86cea72df68e0a349cc28ab45e38264e40636a628b5df00adc0ee43"
+    },
+    {
+      "path": "docs/animation-planning.md",
+      "inspection": "source/text inspection",
+      "bytes": 4527,
+      "sha256": "05fbc35d200e32595ec8e6bad18c03c84263481fe3dd3c1205fb2f5ec0d0b5cb"
+    },
+    {
+      "path": "docs/lesson-reference-style.md",
+      "inspection": "source/text inspection",
+      "bytes": 5344,
+      "sha256": "8a2e0f0e057806ab03f881a73899dc0efecbb6f6f6c1e2237ae7efadc096536b"
+    },
+    {
+      "path": "docs/gold-standard-video-standard.md",
+      "inspection": "source/text inspection",
+      "bytes": 4178,
+      "sha256": "62bb7dc50dfe6b34cf9cc3f5f3b9932f68f5b69b694e00e662f91e3fa674fd92"
+    },
+    {
+      "path": "docs/design-prototypes-plan.md",
+      "inspection": "source/text inspection",
+      "bytes": 5999,
+      "sha256": "def60d74fcf940b8fe5d6f86afbc43b8c8bec3ad349229f6b905136dc8810ec7"
+    },
+    {
+      "path": "docs/molar-mass-full-review.md",
+      "inspection": "source/text inspection",
+      "bytes": 14376,
+      "sha256": "d63b4311c5386905e2ba50279ce406a2d41fdb7fcd9deb898b3e70a58357a3a5"
+    },
+    {
+      "path": "src/LessonVideo.tsx",
+      "inspection": "source/text inspection",
+      "bytes": 7862,
+      "sha256": "f276682a14e75cf24eb6caa45dbf623b0729721d6b47f5d5d03dd0e2862f3c95"
+    },
+    {
+      "path": "src/lesson/types.ts",
+      "inspection": "source/text inspection",
+      "bytes": 15680,
+      "sha256": "81afe71bebea6ffb7ed0d9baf7346834682b1ac6f79aceee201b53a72dfcad0a"
+    },
+    {
+      "path": "src/lesson/timing-constants.json",
+      "inspection": "source/text inspection",
+      "bytes": 61,
+      "sha256": "c34b61a31cadec788dfee08495e51e16a40cedc2a276c9580b48f2c989285b57"
+    },
+    {
+      "path": "src/audio/SceneVoiceover.tsx",
+      "inspection": "source/text inspection",
+      "bytes": 921,
+      "sha256": "95efc2fd14caa23bc7bc4983ac283082a9db179359a90aa145cbdbabc6a27cb8"
+    },
+    {
+      "path": "src/slides/QuickCheckSlide.tsx",
+      "inspection": "source/text inspection",
+      "bytes": 11394,
+      "sha256": "6eb7da48cfb5e4c0cdd35c5da589a86f7a60dc4500d0e48de67ed2173842946d"
+    },
+    {
+      "path": "scripts/export-captions-srt.mjs",
+      "inspection": "source/text inspection",
+      "bytes": 6995,
+      "sha256": "8f3d29ed353e7b8c11bf335f053575b21f75fa10b638ad9de000b2f4e639cac4"
+    },
+    {
+      "path": "scripts/release-preflight.mjs",
+      "inspection": "source/text inspection",
+      "bytes": 6120,
+      "sha256": "7dc23d9c14483d78620dd453ec31815865c52435a79d22bf85209b169920c938"
+    },
+    {
+      "path": "scripts/elevenlabs-request.mjs",
+      "inspection": "source/text inspection",
+      "bytes": 2132,
+      "sha256": "928cd2e42f8ae27c6a9306fc5219da0088ae4c6d5ae9b202f6bef9372937489e"
+    },
+    {
+      "path": "src/prototypes/MolarMassPilot.tsx",
+      "inspection": "source/text inspection",
+      "bytes": 7807,
+      "sha256": "8b835bf313a6d876b7fec8fb130913b440b487705bfacb77d11cd2b54ec9e4f1"
+    },
+    {
+      "path": "src/prototypes/CapabilityTests.tsx",
+      "inspection": "source/text inspection",
+      "bytes": 4051,
+      "sha256": "8486f75f270ca8042497c7c5d47c510dd38343668870db2486d125f4cf8e1e8f"
+    },
+    {
+      "path": "src/prototypes/DesignDirections.tsx",
+      "inspection": "source/text inspection",
+      "bytes": 7783,
+      "sha256": "8906ed76483a129d4922147b9f32b9c505435f31682bb863428ce957040f784b"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/handdrawn/HdDnaReplication.tsx",
+      "inspection": "source/text inspection",
+      "bytes": 8257,
+      "sha256": "49aafbc096293d7c7d2f8cf1814f52ca4ce3236bcc20d8e035f3d0da61eeba19"
+    },
+    {
+      "path": "src/slides/diagrams/Circuit3DDiagram.tsx",
+      "inspection": "source/text inspection",
+      "bytes": 10427,
+      "sha256": "302d792668c0c5a49bd580e8f5f063ba9441a442d42d5b4b22139d17a71fe248"
+    },
+    {
+      "path": "src/slides/diagrams/OrbitDiagram.tsx",
+      "inspection": "source/text inspection",
+      "bytes": 3575,
+      "sha256": "713dc05d6a707ab52f5fd5027a6fda9e6e29461e8275ef39807d89a887f73a08"
+    },
+    {
+      "path": "src/animations/AttentionPrimitives.tsx",
+      "inspection": "source/text inspection",
+      "bytes": 7098,
+      "sha256": "7f23e0eaf1f3e4a1de465fe71125942aebde2420d5ce0f5846a208783dee618d"
+    },
+    {
+      "path": "src/prototypes/data/molar-mass-v2.json",
+      "inspection": "source/text inspection",
+      "bytes": 13514,
+      "sha256": "fb0d5d1e07b14a2fc6b4d27bdb81619eef8c10c6365d525d9398c63efe9971b8"
+    },
+    {
+      "path": "src/prototypes/data/molar-mass-v3.json",
+      "inspection": "source/text inspection",
+      "bytes": 12868,
+      "sha256": "bec4ca8a85d7b591023af255f19e30c501c519058b332b5f0c162887e6ae40d9"
+    },
+    {
+      "path": "src/prototypes/data/molar-mass-voice-selection.json",
+      "inspection": "source/text inspection",
+      "bytes": 467,
+      "sha256": "7b1f4a1b2c2c07c28aa5efba379c9949953dc93100134ba5518d5c8d8174dfc9"
+    },
+    {
+      "path": "src/data/chemistry-y11-m2-l2-molar-mass.json",
+      "inspection": "source/text inspection",
+      "bytes": 183009,
+      "sha256": "10d023192e47706d280b99c9bdd813b3da0335b2dd3b01efa2deaa51a078096f"
+    },
+    {
+      "path": "src/data/chemistry-y11-m2-l13-limiting-reagents.json",
+      "inspection": "source/text inspection",
+      "bytes": 15290,
+      "sha256": "3ad34610a7a9ea1b3092a8b3bc262dc31cd63c9de817acb10a034d4a44e24a22"
+    },
+    {
+      "path": "src/data/biology-y11-m1-l20-dna-replication.json",
+      "inspection": "source/text inspection",
+      "bytes": 17146,
+      "sha256": "5e293db2b9693387c8e42029ad9d02710f830b27badde52027274fee378a2b4d"
+    },
+    {
+      "path": "src/data/biology-y11-m1-l17-enzyme-activity-practical.json",
+      "inspection": "source/text inspection",
+      "bytes": 17968,
+      "sha256": "3f90b5f7734dfeb6f828f3c2170ecd162a4e26be944edaed4d0542cb276515ba"
+    },
+    {
+      "path": "src/data/biology-y11-m1-l18-reading-enzyme-graphs.json",
+      "inspection": "source/text inspection",
+      "bytes": 16779,
+      "sha256": "f7b2bf0cfe73036435d343600280ce2a4433e0de048b402aaa03c188cb0dd50b"
+    },
+    {
+      "path": "out/prototypes/index.html",
+      "inspection": "source/text inspection",
+      "bytes": 6833,
+      "sha256": "90faad84749c649e02105c6a85555240371603555ce5d035e0b1c330390e2d5a"
+    },
+    {
+      "path": "out/prototypes/capability-tests/index.html",
+      "inspection": "source/text inspection",
+      "bytes": 3036,
+      "sha256": "c9638e3f4ceb473f64413ba50658f4141d0a87f0bada7528368885dff093a1c7"
+    },
+    {
+      "path": "out/prototypes/connected-chemistry/index.html",
+      "inspection": "source/text inspection",
+      "bytes": 1982,
+      "sha256": "e90cf49b591e9877b51bd2691e79eca7e2c0a904c89298785b8603e83739e4d6"
+    },
+    {
+      "path": "out/prototypes/molar-mass-pilot-v2/index.html",
+      "inspection": "source/text inspection",
+      "bytes": 2263,
+      "sha256": "5bf49c22e53132490a33d87285f634b855577418bf308c02cad9e5f37d1e0100"
+    },
+    {
+      "path": "out/prototypes/molar-mass-full-review/index.html",
+      "inspection": "source/text inspection",
+      "bytes": 9108,
+      "sha256": "e3ddcfe78e828758885a7828a8525082b0e69be6e16c4605b5edb73cc37d8e56"
+    },
+    {
+      "path": "out/prototypes/molar-mass-script-v3/index.html",
+      "inspection": "source/text inspection",
+      "bytes": 14930,
+      "sha256": "75746487b5306304a7a5bd9a4e8c430ec8742445a61fb7be71edc2049e187b23"
+    },
+    {
+      "path": "out/prototypes/molar-mass-script-v3/SCRIPT.md",
+      "inspection": "source/text inspection",
+      "bytes": 7819,
+      "sha256": "da514e440582e8add577c24b6019bf20de6b7ebdbc2d751553f795b575894451"
+    },
+    {
+      "path": "out/prototypes/australian-voice-review/index.html",
+      "inspection": "source/text inspection",
+      "bytes": 4261,
+      "sha256": "44e8b32b23ea63880abd8cc77dc349582c8368e53ea0d85c8f3c278afac371ca"
+    },
+    {
+      "path": "out/prototypes/molar-mass-pilot-v2/pilot.audio-review.json",
+      "inspection": "source/text inspection",
+      "bytes": 730,
+      "sha256": "66ff809eddabec6bca4e7b80538121e6d5e30aedef2c1f10d195c4b6ad2131e7"
+    },
+    {
+      "path": "out/prototypes/painted-divide.png",
+      "inspection": "saved still viewed",
+      "bytes": 667676,
+      "sha256": "e3adfe2bd8aa6137d02961ceeecbdf18cdb119af65e6d848cfcc218d9e187199"
+    },
+    {
+      "path": "out/prototypes/capability-tests/dna-9.png",
+      "inspection": "saved still viewed",
+      "bytes": 283284,
+      "sha256": "db8bc565bbab3a968483eb94f631e30fb81551fc8762f35dcfa992700d049100"
+    },
+    {
+      "path": "out/prototypes/molar-mass-full-review/brackets-480.png",
+      "inspection": "saved still viewed",
+      "bytes": 84534,
+      "sha256": "dafb4ea03784c405f20889f39e42bea6478c21334316d5d4cd899b0b111593fb"
+    },
+    {
+      "path": "out/prototypes/molar-mass-pilot-v2/formula.png",
+      "inspection": "saved still viewed",
+      "bytes": 46283,
+      "sha256": "f630c91e3c4ad844e8c26a4d11d4f1a99f7b21aabd1e1967214a092d9a7bee43"
+    },
+    {
+      "path": "out/prototypes/editorial.mp4",
+      "inspection": "metadata probe only, no playback or listening",
+      "bytes": 1595119,
+      "sha256": "a63a72355d920136193ce05e2a860616c11c6f74869257bfedcca08978e1566a",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "30/1",
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "24.042667"
+        }
+      }
+    },
+    {
+      "path": "out/prototypes/handdrawn.mp4",
+      "inspection": "metadata probe only, no playback or listening",
+      "bytes": 3651961,
+      "sha256": "c1bdad9f72161b4d87862f8c21d2056fe607aba56d2262c2a25184f4c6ae1d06",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "30/1",
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "24.042667"
+        }
+      }
+    },
+    {
+      "path": "out/prototypes/painted.mp4",
+      "inspection": "metadata probe only, no playback or listening",
+      "bytes": 1770723,
+      "sha256": "a29b02ee7d7e98794ba0d5f3f7f157443f6a1b6adac07c2a8d7f462b6f62b333",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "30/1",
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "24.042667"
+        }
+      }
+    },
+    {
+      "path": "out/prototypes/capability-tests/dna.mp4",
+      "inspection": "metadata probe only, no playback or listening",
+      "bytes": 1991032,
+      "sha256": "2847aaf46cf969c7da3be0ddb1e98ab80e5cce52a2ef75fb78c7f0ecc9ff2e0c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "30/1",
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "18.048000"
+        }
+      }
+    },
+    {
+      "path": "out/prototypes/molar-mass-pilot-v2/pilot.mp4",
+      "inspection": "metadata probe only, no playback or listening",
+      "bytes": 2976003,
+      "sha256": "a7cd89bcd2cc3507c9f01aa1d913015bbaea804fd172189bbe3eb1775fe4b525",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "30/1",
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "72.933333"
+        }
+      }
+    },
+    {
+      "path": "out/prototypes/molar-mass-full-review/brackets.mp4",
+      "inspection": "metadata probe only, no playback or listening",
+      "bytes": 363505,
+      "sha256": "1a7c3203d75f2bcab76e30f1643607c8860f0361b61582e4962a142bea350d4a",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "30/1",
+            "side_data_list": [
+              {}
+            ]
+          }
+        ],
+        "format": {
+          "duration": "18.000000"
+        }
+      }
+    }
+  ]
+}

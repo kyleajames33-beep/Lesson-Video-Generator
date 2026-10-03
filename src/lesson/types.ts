@@ -43,8 +43,11 @@ export type SceneBase = {
      */
     translatedAudioFiles?: Record<string, string>;
   };
-  /** Optional per-element reveal delays (frames). Overrides component defaults. */
+  /** Optional reveal delays (frames). Quick checks can use answerVisibleStart
+   * for the earliest answer boundary; legacy answerStart is a fade midpoint. */
   revealDelays?: Record<string, number>;
+  /** Measured silent response interval, local to the scene timeline. */
+  responseHold?: {startFrame: number; endFrame: number};
   /**
    * Burned-in caption track, compiled from alignment data by build-captions.mjs.
    * Uses the canonical @remotion/captions Caption shape so the data is
@@ -126,6 +129,8 @@ export type DiagramConfig =
       type: 'orbit';
       nucleus: string;
       electrons: {label: string; shell: number}[];
+      /** Shell-occupancy schematic with stationary markers, not trajectories. */
+      delay?: number;
     }
   | {
       type: 'table';
@@ -276,7 +281,7 @@ export type DiagramConfig =
       type: 'circuit3d';
       /** Series components, clockwise; components[0] sits front-centre. */
       components: {
-        kind: 'battery' | 'resistor' | 'lamp' | 'switch' | 'ammeter' | 'voltmeter';
+        kind: 'battery' | 'resistor' | 'lamp' | 'switch' | 'ammeter';
         label?: string;
       }[];
       /** Animate current dots (closes any switch first). Default false. */
@@ -463,6 +468,10 @@ export type LessonData = {
     text: string;
     audioFile?: string;
   };
+  /** Faithful intro speech tokens, local to the stinger start. */
+  introCaptions?: SceneBase['captions'];
+  /** Explicit opening duration. Zero starts directly on the first scene. */
+  introDurationInFrames?: number;
   /**
    * Optional path to a background music MP3 (relative to public/).
    * E.g. "audio/music/lofi-study.mp3". When set, the track auto-loops at

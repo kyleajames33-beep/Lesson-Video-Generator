@@ -3,7 +3,7 @@ import path from 'node:path';
 import process from 'node:process';
 import {spawnSync} from 'node:child_process';
 
-const TRANSITION_FRAMES = 24;
+import {lessonTimeline} from '../src/lesson/timeline.mjs';
 
 const usage = () => {
   console.error('Usage: node scripts/render-lesson-stills.mjs <composition-id> <lesson-json> [output-dir]');
@@ -21,12 +21,7 @@ const lesson = JSON.parse(readFileSync(lessonPath, 'utf8'));
 const outputDir = outputDirArg ?? 'out/checks';
 mkdirSync(outputDir, {recursive: true});
 
-const sceneStarts = [];
-let start = 0;
-for (const scene of lesson.scenes) {
-  sceneStarts.push({scene, start});
-  start += scene.durationInFrames - TRANSITION_FRAMES;
-}
+const sceneStarts = lessonTimeline(lesson).scenes.map(({scene, startFrame}) => ({scene, start: startFrame}));
 
 const checks = [
   {type: 'hook', fraction: 0.68},

@@ -24,7 +24,8 @@ import {IntroStinger} from './slides/shared/IntroStinger';
 import {LessonProgressBar} from './slides/shared/LessonProgressBar';
 import type {LessonData, SceneData} from './lesson/types';
 import {AccentContext, themeFor} from './styles/theme';
-import {TRANSITION_FRAMES, INTRO_STINGER_FRAMES} from './lesson/timing';
+import {TRANSITION_FRAMES} from './lesson/timing';
+import {lessonTimeline} from './lesson/timeline.mjs';
 import type {TransitionPresentation} from '@remotion/transitions';
 import {cinematicTransition} from './transitions/cinematicTransitions';
 import {pickTransition} from './transitions/pickTransition';
@@ -75,6 +76,8 @@ const renderSlide = (scene: SceneData, lesson: LessonData, sceneIndex: number, t
 
 export const LessonVideo = ({lesson}: LessonVideoProps) => {
   const items: React.ReactNode[] = [];
+  const timeline = lessonTimeline(lesson);
+  const introFrames = timeline.introFrames;
 
   const theme = themeFor(lesson.subject);
   const neutral = Boolean(lesson.syllabusNeutral);
@@ -123,20 +126,20 @@ export const LessonVideo = ({lesson}: LessonVideoProps) => {
   });
 
   // Total raw lesson length (after transitions) for the second Series slot.
-  const lessonRawDuration = lesson.scenes.reduce((t, s) => t + s.durationInFrames, 0) - (lesson.scenes.length - 1) * TRANSITION_FRAMES;
+  const lessonRawDuration = timeline.durationInFrames - introFrames;
 
   return (
     <AbsoluteFill className="video-shell">
       <AccentContext.Provider value={themeFor(lesson.subject)}>
       <Series>
-        <Series.Sequence durationInFrames={INTRO_STINGER_FRAMES}>
+        {introFrames > 0 && <Series.Sequence durationInFrames={introFrames}>
           {/* Background music bed plays ONLY during the stinger — fills the
               otherwise-silent opener without competing with narration during
               the teaching scenes. No-op if lesson.backgroundMusic is unset. */}
           <BackgroundMusic
             src={lesson.backgroundMusic}
             volume={lesson.backgroundMusicVolume}
-            playForFrames={INTRO_STINGER_FRAMES}
+            playForFrames={introFrames}
           />
           <IntroVoiceover src={lesson.introVoiceover?.audioFile} />
           <IntroStinger
@@ -150,7 +153,7 @@ export const LessonVideo = ({lesson}: LessonVideoProps) => {
             todayTitle={neutral ? lesson.title : undefined}
             todaySubtitle={neutral ? lesson.subtitle : undefined}
           />
-        </Series.Sequence>
+        </Series.Sequence>}
         <Series.Sequence durationInFrames={lessonRawDuration}>
           <TransitionSeries>{items}</TransitionSeries>
           <LessonProgressBar totalFrames={lessonRawDuration} />

@@ -26,6 +26,7 @@
 import {mkdirSync, readFileSync, writeFileSync, existsSync} from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
+import {DEFAULT_TTS_MODEL} from './elevenlabs-request.mjs';
 
 const args = process.argv.slice(2);
 const positional = args.filter((a) => !a.startsWith('--'));
@@ -75,7 +76,7 @@ const callTTS = async (text, voiceId, settings) => {
 		headers: {'Content-Type': 'application/json', 'xi-api-key': apiKey},
 		body: JSON.stringify({
 			text,
-			model_id: 'eleven_turbo_v2_5',
+			model_id: DEFAULT_TTS_MODEL,
 			voice_settings: settings,
 		}),
 	});

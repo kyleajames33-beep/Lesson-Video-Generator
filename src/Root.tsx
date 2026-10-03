@@ -37,7 +37,7 @@ export const Root = () => {
           id={id}
           component={LessonVideo}
           durationInFrames={getLessonDurationInFrames(data)}
-          fps={VIDEO_FPS}
+          fps={data.fps ?? VIDEO_FPS}
           height={VIDEO_HEIGHT}
           key={id}
           width={VIDEO_WIDTH}

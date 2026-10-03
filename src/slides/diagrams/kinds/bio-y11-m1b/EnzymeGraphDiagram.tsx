@@ -1,16 +1,16 @@
-// EnzymeGraphDiagram (bio11m1bEnzymeGraph) — the three classic enzyme graphs,
+// EnzymeGraphDiagram (bio11m1bEnzymeGraph): illustrative enzyme-rate curves,
 // drawn by a pen in step with the narration, with the active site shown in an
 // inset beside the graph.
 //
 // factor 'temperature'  rate doubles every 10 °C below the optimum (a gentle
-//                       rise), then falls steeply to zero at `zeroAt` as the
-//                       enzyme denatures (a quadratic drop). Ticks in °C.
+//                       rise), then an imposed quadratic fall to `zeroAt`.
+//                       This shape alone does not establish denaturation.
 // factor 'ph'           a bell curve around each series' optimum pH; two
 //                       series allowed (e.g. pepsin at 2, a cytoplasmic enzyme
 //                       at 7). Ticks 0–14.
 // factor 'substrate'    rate = Vmax·S/(K + S): rises, then plateaus
 //                       (saturation). Optional second line with double the
-//                       enzyme (2·Vmax): only more enzyme lifts the plateau.
+//                       active enzyme (2·Vmax), under otherwise fixed conditions.
 // factor 'trio'         all three shapes as small panels, one after another.
 //
 // Every curve is computed from these formulas and the props (optimum, zeroAt,
@@ -31,17 +31,20 @@ import {useAccent} from '../../../../styles/theme';
 import {DioramaDefs, idlePulse} from '../../diorama';
 import {fadeAt, ease, lerp, mix, shade, CORAL, SLATE, Ledge} from './shared';
 import {enzymePath, substratePath, FIT} from './EnzymeDiagram';
+import {temperatureRate as tempRate, phRate, substrateRate as subRate, enzymeInsetState} from '../../scientific-models.mjs';
 
-type Note = {text: string; x: number; at: number; tone?: 'accent' | 'coral' | 'amber' | 'ink'; dy?: number; dx?: number; r?: number};
+type Note = {text: string; x: number; at?: number; tone?: 'accent' | 'coral' | 'amber' | 'ink'; dy?: number; dx?: number; r?: number};
 export type EnzymeGraphProps = {
 	factor?: 'temperature' | 'ph' | 'substrate' | 'trio';
 	optimum?: number;
 	zeroAt?: number;
-	series?: {label: string; optimum: number; at: number}[];
+	series?: {label: string; optimum: number; at?: number}[];
 	moreEnzyme?: number;
 	notes?: Note[];
 	at?: {axes?: number; draw?: number; drawEnd?: number; optimum?: number; rule?: number; temperature?: number; ph?: number; substrate?: number};
 	inset?: boolean;
+	/** Distortion is an assumed mechanism, never inferred from the plotted rate. */
+	temperatureMechanism?: 'activity-only' | 'denaturation';
 	rule?: string;
 	delay?: number;
 };
@@ -49,11 +52,6 @@ export type EnzymeGraphProps = {
 const ID = 'b11m1bEg';
 const W = 760, H = 530;
 const DRAW = 110;
-
-const tempRate = (T: number, opt: number, zero: number) => (T <= opt ? Math.pow(2, (T - opt) / 10) : Math.max(0, 1 - ((T - opt) / (zero - opt)) ** 2));
-const phRate = (p: number, opt: number) => Math.exp(-(((p - opt) / 1.5) ** 2));
-const K = 1.6;
-const subRate = (S: number, vmax = 1) => (vmax * S) / (K + S);
 
 type Box = {x0: number; x1: number; y0: number; y1: number};
 const toneCol = (t: Note['tone'], accent: string) => (t === 'coral' ? CORAL : t === 'amber' ? TOK.amberInk : t === 'ink' ? TOK.ink : accent);
@@ -110,7 +108,7 @@ const Graph = ({box, xMin, xMax, ticks, xLabel, curves, frame, tAx, notes = [], 
 				const f = curves[0]?.fn ?? (() => 0);
 				const x = gx(n.x) + (n.dx ?? 0), y = gy(n.r ?? f(n.x)) - 22 + (n.dy ?? 0);
 				return (
-					<text key={i} x={x} y={y} textAnchor={n.dx ? 'start' : 'middle'} fill={toneCol(n.tone, accent)} fontSize={16} fontWeight={800} opacity={fadeAt(frame, n.at)}>{n.text}</text>
+					<text key={i} x={x} y={y} textAnchor={n.dx ? 'start' : 'middle'} fill={toneCol(n.tone, accent)} fontSize={16} fontWeight={800} opacity={fadeAt(frame, n.at ?? tAx)}>{n.text}</text>
 				);
 			})}
 		</g>
@@ -129,7 +127,7 @@ const EnzymeInset = ({x, y, warp, bound, label, accent}: {x: number; y: number; 
 	</g>
 );
 
-export const EnzymeGraphDiagram = ({factor = 'temperature', optimum, zeroAt, series, moreEnzyme, notes = [], at = {}, inset = true, rule, delay = 62}: EnzymeGraphProps) => {
+export const EnzymeGraphDiagram = ({factor = 'temperature', optimum, zeroAt, series, moreEnzyme, notes = [], at = {}, inset = true, temperatureMechanism = 'activity-only', rule, delay = 62}: EnzymeGraphProps) => {
 	const frame = useCurrentFrame() - delay;
 	const theme = useAccent();
 	const tAx = at.axes ?? 0, tD = at.draw ?? 30, tR = at.rule ?? 9999;
@@ -139,13 +137,14 @@ export const EnzymeGraphDiagram = ({factor = 'temperature', optimum, zeroAt, ser
 	if (factor === 'trio') {
 		const tT = at.temperature ?? 20, tP = at.ph ?? 140, tS = at.substrate ?? 260;
 		const panels = [
-			{t: tT, title: 'temperature', fn: (v: number) => tempRate(v, 40, 60), min: 0, max: 70, word: 'optimum, then denatured', label: 'temperature →'},
+			{t: tT, title: 'temperature', fn: (v: number) => tempRate(v, 40, 60), min: 0, max: 70, word: 'assay peak, then lower rate', label: 'temperature →'},
 			{t: tP, title: 'pH', fn: (v: number) => phRate(v, 7), min: 0, max: 14, word: 'optimum pH', label: 'pH →'},
-			{t: tS, title: 'substrate', fn: (v: number) => subRate(v) / subRate(10), min: 0, max: 10, word: 'saturation', label: 'substrate conc. →'},
+			{t: tS, title: 'substrate', fn: (v: number) => subRate(v), min: 0, max: 10, word: 'approaches a limiting rate', label: 'substrate conc. →'},
 		];
 		return (
 			<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Enzyme activity against temperature, pH and substrate concentration" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 				<DioramaDefs id={ID} />
+				<text x={W / 2} y={24} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800}>Illustrative models, not measured data</text>
 				{panels.map((p, i) => {
 					const box = {x0: 50 + i * 245, x1: 50 + i * 245 + 190, y0: 130, y1: 330};
 					return (
@@ -172,26 +171,20 @@ export const EnzymeGraphDiagram = ({factor = 'temperature', optimum, zeroAt, ser
 		xMax = 70; xLabel = 'temperature (°C)';
 		ticks = [0, 10, 20, 30, 40, 50, 60, 70].map((v) => ({v, label: `${v}`}));
 		curves = [{fn: (v) => tempRate(v, opt, zero), at: tD, color: theme.accent}];
-		insetState = (v) => (v < opt - 6 ? {warp: 0, bound: 0.35, label: 'slow: fewer collisions'} : v <= opt + 3 ? {warp: 0, bound: 1, label: 'optimum: fastest'} : {warp: Math.min(1, (v - opt) / (zero - opt) + 0.3), bound: 0, label: 'denatured'});
+		insetState = (v) => enzymeInsetState('temperature', v, opt, zero, temperatureMechanism === 'denaturation');
 	} else if (factor === 'ph') {
 		xMax = 14; xLabel = 'pH';
 		ticks = [0, 2, 4, 6, 7, 8, 10, 12, 14].filter((v) => v !== 6 && v !== 8).map((v) => ({v, label: `${v}`}));
-		const ss = series ?? [{label: 'enzyme', optimum: opt, at: tD}];
-		curves = ss.map((s, i) => ({fn: (v: number) => phRate(v, s.optimum), at: s.at, color: i === 0 ? theme.accent : CORAL, label: s.label, labelAt: s.optimum}));
+		const ss = series?.length ? series : [{label: 'enzyme', optimum: opt, at: tD}];
+		curves = ss.map((s, i) => ({fn: (v: number) => phRate(v, s.optimum), at: s.at ?? tD, color: i === 0 ? theme.accent : CORAL, label: s.label, labelAt: s.optimum}));
 		const o0 = ss[0].optimum;
-		insetState = (v) => {
-			const r = phRate(v, o0);
-			return r > 0.8 ? {warp: 0, bound: 1, label: 'optimum pH: site fits'} : {warp: Math.min(1, (1 - r) * 1.1), bound: r > 0.4 ? 0.5 : 0, label: v < o0 ? 'too acidic: site distorted' : 'too alkaline: site distorted'};
-		};
+		insetState = (v) => enzymeInsetState('ph', v, o0);
 	} else {
 		xMax = 10; xLabel = 'substrate concentration →';
-		const top = moreEnzyme !== undefined ? subRate(10, 2) : subRate(10);
+		const top = moreEnzyme !== undefined ? 2 : 1;
 		curves = [{fn: (v) => subRate(v) / top, at: tD, color: theme.accent, label: 'fixed amount of enzyme', labelAt: 6.6}];
-		if (moreEnzyme !== undefined) curves.push({fn: (v) => subRate(v, 2) / top, at: moreEnzyme, color: CORAL, dash: '10 8', label: 'double the enzyme', labelAt: 6.6});
-		insetState = (v) => {
-			const f = subRate(v) / subRate(10);
-			return {warp: 0, bound: f, label: f > 0.8 ? 'active sites full: saturated' : 'free active sites'};
-		};
+		if (moreEnzyme !== undefined) curves.push({fn: (v) => subRate(v, 2) / top, at: moreEnzyme, color: CORAL, dash: '10 8', label: 'double active enzyme', labelAt: 6.6});
+		insetState = (v) => enzymeInsetState('substrate', v);
 	}
 
 	const drawLen = at.drawEnd !== undefined ? Math.max(40, at.drawEnd - tD) : DRAW;
@@ -204,6 +197,7 @@ export const EnzymeGraphDiagram = ({factor = 'temperature', optimum, zeroAt, ser
 	return (
 		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Enzyme activity against ${factor}`} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={ID} />
+			<text x={W / 2} y={24} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800}>Illustrative assay model; other conditions fixed</text>
 			<Graph box={box} xMin={xMin} xMax={xMax} ticks={ticks} xLabel={xLabel} curves={curves} frame={frame} tAx={tAx} notes={notes} accent={theme.accent} cursor={cursor} drawLen={drawLen} />
 			{/* optimum marker */}
 			{factor !== 'substrate' && at.optimum !== undefined && (() => {

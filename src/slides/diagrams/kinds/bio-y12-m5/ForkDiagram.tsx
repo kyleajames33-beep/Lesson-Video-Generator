@@ -1,5 +1,4 @@
-// ForkDiagram — a replication fork: leading strand continuous, lagging strand
-// in Okazaki fragments joined by ligase.
+// ForkDiagram: replication fork, primer replacement, then nick sealing.
 //
 // Geometry (fork opening to the right; the unopened duplex is on the right):
 //   top template     3′ (left) … 5′ (duplex)   → its new strand is built
@@ -21,6 +20,7 @@ import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
 import {DioramaDefs, idlePulse} from '../../diorama';
 import {Arrow, CORAL, GlossDefs, Ledge, Pill, SLATE, ease, fadeAt, lerp, popAt} from './shared';
+import {forkProcessingTimes} from '../../scientific-models.mjs';
 
 export type ForkProps = {
 	at?: Record<string, number>;
@@ -53,15 +53,18 @@ export const ForkDiagram = ({at = {}, delay = 62}: ForkProps) => {
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
-	const tFork = at.fork ?? 20, tDir = at.direction ?? 120, tOpp = at.opposite ?? 200, tLead = at.leading ?? 300, tLag = at.lagging ?? 500, tFrag = at.fragments ?? 640, tPrim = at.primers ?? 700, tLig = at.ligase ?? 760, tRule = at.rule ?? 900;
+	const tFork = at.fork ?? 20, tDir = at.direction ?? 120, tOpp = at.opposite ?? 200, tLead = at.leading ?? 300, tLag = at.lagging ?? 500, tFrag = at.fragments ?? 640, tPrim = at.primers ?? 700;
+	const stages = forkProcessingTimes(at);
+	const tProcessing = stages.replace, tLig = stages.seal, tRule = stages.rule;
 
 	const lead = ease(frame, tLead - 40, tLead + 140); // leading strand growth (toward the fork)
 	const fragT = (k: number) => ease(frame, tLag + k * 70, tLag + k * 70 + 60);
 	const ligate = ease(frame, tLig, tLig + 40);
+	const replacement = ease(frame, tProcessing, tProcessing + 40);
 
 	const topArm = `M ${XL} ${YT} L ${XA} ${YT} Q ${XA + 60} ${YT} ${FORK.x - 10} ${YD1}`;
 	const botArm = `M ${XL} ${YB} L ${XA} ${YB} Q ${XA + 60} ${YB} ${FORK.x - 10} ${YD2}`;
-	const leadX1 = lerp(66, XA - 6, lead);
+	const leadX1 = lerp(90, XA - 6, lead);
 	const polymerase = (x: number, y: number, show: number) => (
 		<g opacity={show}>
 			<ellipse cx={x} cy={y} rx={17} ry={14} fill={`url(#${ID}-g-pol)`} stroke="rgba(0,0,0,0.25)" />
@@ -71,6 +74,7 @@ export const ForkDiagram = ({at = {}, delay = 62}: ForkProps) => {
 	return (
 		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Replication fork: leading strand built continuously toward the fork, lagging strand built away from the fork in Okazaki fragments joined by ligase" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={ID} />
+			<text x={W / 2} y={24} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800}>Simplified fork model; proofreading and repair omitted</text>
 			<GlossDefs id={ID} colors={{pol: '#9aa7b4', heli: '#c9a24a'}} />
 			<Ledge x={30} y={470} w={700} opacity={fadeAt(frame, 0)} />
 
@@ -110,8 +114,9 @@ export const ForkDiagram = ({at = {}, delay = 62}: ForkProps) => {
 
 			{/* Leading strand: one primer, continuous, toward the fork */}
 			<g opacity={fadeAt(frame, tLead - 40)}>
-				<Tube d={`M 66 ${NEW_T} L ${leadX1} ${NEW_T}`} color={theme.accent} w={8} />
-				<Tube d={`M 66 ${NEW_T} L 90 ${NEW_T}`} color={CORAL} w={8} />
+				<Tube d={`M 90 ${NEW_T} L ${leadX1} ${NEW_T}`} color={theme.accent} w={8} />
+				<Tube d={`M 66 ${NEW_T} L 90 ${NEW_T}`} color={CORAL} w={8} opacity={1 - replacement} />
+				<Tube d={`M 66 ${NEW_T} L 90 ${NEW_T}`} color={theme.accent} w={8} opacity={replacement} />
 				{polymerase(leadX1 + 14, NEW_T, lead < 1 ? 1 : 1 - fadeAt(frame, tLead + 160))}
 				<Arrow x1={leadX1 - 60} y1={NEW_T + 26} x2={leadX1 - 4} y2={NEW_T + 26} color={theme.accent} width={3} head={10} t={lead > 0.3 ? 1 : 0} />
 				<text x={90} y={NEW_T + 30} fill={theme.accent} fontSize={15} fontWeight={800} opacity={fadeAt(frame, tLead)}>5′→3′</text>
@@ -124,13 +129,12 @@ export const ForkDiagram = ({at = {}, delay = 62}: ForkProps) => {
 			{FRAGS.map((f, k) => {
 				const t = fragT(k);
 				if (t <= 0) return null;
-				const x0 = lerp(f.x1, f.x0, t);
+				const x0 = lerp(f.x1 - 20, f.x0, t);
 				return (
 					<g key={k}>
-						<Tube d={`M ${f.x1} ${NEW_B} L ${x0} ${NEW_B}`} color={theme.accent} w={8} />
-						<g opacity={1 - ligate}>
-							<Tube d={`M ${f.x1} ${NEW_B} L ${f.x1 - 20} ${NEW_B}`} color={CORAL} w={8} opacity={fadeAt(frame, tPrim - 10)} />
-						</g>
+						<Tube d={`M ${f.x1 - 20} ${NEW_B} L ${x0} ${NEW_B}`} color={theme.accent} w={8} />
+						<Tube d={`M ${f.x1} ${NEW_B} L ${f.x1 - 20} ${NEW_B}`} color={CORAL} w={8} opacity={1 - replacement} />
+						<Tube d={`M ${f.x1} ${NEW_B} L ${f.x1 - 20} ${NEW_B}`} color={theme.accent} w={8} opacity={replacement} />
 						{polymerase(x0 - 14, NEW_B, t < 1 ? 1 : 0)}
 						<Arrow x1={f.x1 - 20} y1={NEW_B - 24} x2={f.x0 + 10} y2={NEW_B - 24} color={theme.accent} width={2.5} head={9} t={t > 0.5 ? 1 : 0} />
 					</g>
@@ -140,12 +144,13 @@ export const ForkDiagram = ({at = {}, delay = 62}: ForkProps) => {
 			<g opacity={fadeAt(frame, tFrag)}>
 				<Pill x={240} y={NEW_B - 62} text="lagging strand: Okazaki fragments, away from the fork" color={theme.accent} fill={theme.soft} size={15} />
 			</g>
-			<g opacity={fadeAt(frame, tPrim) * (1 - ligate)}>
+			<g opacity={fadeAt(frame, tPrim) * (1 - replacement)}>
 				<text x={FRAGS[2].x1 - 10} y={YB + 32} textAnchor="middle" fill={CORAL} fontSize={15} fontWeight={800}>primer</text>
 				<text x={FRAGS[1].x1 - 10} y={YB + 32} textAnchor="middle" fill={CORAL} fontSize={15} fontWeight={800}>primer</text>
 				<text x={FRAGS[0].x1 - 10} y={YB + 32} textAnchor="middle" fill={CORAL} fontSize={15} fontWeight={800}>primer</text>
 			</g>
-			{/* Ligase seals the gaps */}
+			<text x={380} y={438} textAnchor="middle" fill={theme.accent} fontSize={16} fontWeight={800} opacity={fadeAt(frame, tProcessing) * (1 - fadeAt(frame, tLig))}>RNA primers removed and replaced with DNA</text>
+			{/* Ligase seals remaining nicks after primer replacement. Spacing is schematic. */}
 			{FRAGS.slice(0, -1).map((f, k) => {
 				const gx = (f.x1 + FRAGS[k + 1].x0) / 2;
 				return (

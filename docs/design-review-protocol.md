@@ -20,8 +20,9 @@ At the start of a design session, paste **one** message that loads the design sy
 
 ```
 You are reviewing frames from an HSC Science video lesson rendered in Remotion.
-Design system: dark cinematic (#0a0f0d), one amber accent per beat, all diagrams
-use stroke-draw animation, typography scale: hero 220px / title 96px / body 28px.
+Design system: light editorial (#f7f7f5), dark ink (#1a1a1a), subject accents,
+one focal amber accent per beat. Reveal diagrams in stages; lock readable text.
+Typography scale: hero 220px / title 96px / body 28px.
 
 Full design brief: docs/visual-design-handbook.md
 Current gold standard: docs/gold-standard-lesson-reference.md
@@ -40,10 +41,10 @@ Don't render full videos. Export PNG frames at specific timestamps:
 
 ```bash
 # Export frame 450 (15s) from Lesson 2 as a review PNG
-npx remotion render src/index.tsx Lesson2 out/review/l2-frame-450.png --frame=450 --image-format=png
+npx remotion still src/index.ts Chemistry-Y11-M2-L2 out/review/l2-frame-450.png --frame=450 --image-format=png
 
 # Or use the review script (see scripts/export-review-frames.mjs)
-npm run review:frames -- --lesson chemistry-y11-m2-l2 --frames 0,450,900,1350
+npm run review:frames -- src/data/chemistry-y11-m2-l2-molar-mass.json
 ```
 
 Rule of thumb: **max 6 frames per review batch**. More than that and the response gets shallow.
@@ -86,7 +87,7 @@ If the AI needs to see the code, paste **only** the relevant component (not the 
 
 ## Step 5 — Validate without re-rendering
 
-After code changes, run `npm run check:all` (TypeScript + validation). Only proxy-render if the changes affect timing or layout. Most design tweaks (colours, spacing, animation delays) don't need a full re-render — the code is the source of truth.
+After code changes, run `npm run check:all` (TypeScript + validation). Render representative stills for colour, spacing, typography and layout changes. Use short preview clips for animation delays, shimmer and transitions; stills cannot verify motion. A full render is only needed for the final audiovisual review.
 
 ---
 
@@ -97,7 +98,7 @@ After code changes, run `npm run check:all` (TypeScript + validation). Only prox
 | "Here's a screenshot, what do you think?" | "Frame 3: evaluate against checklist, violations only" |
 | Send 12 frames in one go | Send 4–6 frames max per batch |
 | "Make it look better" | "Increase heading fontSize from 68 to 76 to match type scale" |
-| Re-explain the dark theme every message | Paste the design context once at session start |
+| Re-explain the theme every message | Paste the current light design context once at session start |
 | Render a 3-minute video to check one colour change | Check the hex code in the file, render only if needed |
 
 ---
