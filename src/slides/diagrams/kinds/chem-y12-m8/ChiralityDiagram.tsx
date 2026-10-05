@@ -8,8 +8,8 @@
 //               C₄H₁₀), geometric (cis / trans but-2-ene), enantiomers.
 //   receptor    (concept-biology)      a chiral binding site with three pockets:
 //               one enantiomer makes all three contacts, its mirror image two.
-//   racemic     (concept-thalidomide)  50:50 R + S given together (R sedative,
-//               S teratogenic); even pure R racemises in the body (R ⇌ S).
+//   racemic     (concept-thalidomide)  legacy labels remain unless the reviewed
+//               safety opt-in is enabled; thalidomide forms interconvert (R ⇌ S).
 //   polarimeter (concept-polarimetry)  source → polariser → sample → analyser;
 //               pure enantiomer rotates the plane, racemic and achiral read zero.
 //
@@ -20,18 +20,22 @@ import {useCurrentFrame, useVideoConfig} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
 import {DioramaDefs, DioramaPlinth, idleBob, idlePulse} from '../../diorama';
-import {Arrow, Ball, Flask, GlossDefs, Mark, Pill, ease, pop, ramp} from './shared';
+import {Arrow, Ball, Flask, GlossDefs, Mark, Pill, ease, pop, ramp, textW} from './shared';
 import {TetraModel, tetraGroupXY, type TetraGroup} from './mol-tetra';
 import {MolDraw, but2ene, butane, centreOn, methylpropane} from './mol-draw';
+import {validateSafetyMedicineDiagram} from '../../safety-medicine-models.mjs';
 
 export type ChiralityProps = {
 	mode?: 'mirror' | 'compare' | 'receptor' | 'racemic' | 'polarimeter';
 	delay?: number;
 	beats?: number[];
+	/** Opt in only after narration and source copy have been reviewed together. */
+	reviewedSafetyMedicine?: boolean;
 };
 
 const W = 760;
 const H = 530;
+type ModeArgs = {frame: number; fps: number; b: number[]; reviewedSafetyMedicine: boolean};
 const RED = '#c0392b';
 
 const DEFAULT_BEATS: Record<NonNullable<ChiralityProps['mode']>, number[]> = {
@@ -73,7 +77,7 @@ const StepCaption = ({frame, steps, y, size = 22}: {frame: number; steps: {t: nu
 };
 
 // ── mirror ──────────────────────────────────────────────────────────────────
-const MirrorMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) => {
+const MirrorMode = ({frame, fps, b, reviewedSafetyMedicine}: ModeArgs) => {
 	const ID = 'c12m8chir-mir';
 	const [tCentre, tFour, tTwo, tMirror, tNotId, tRot, tEnan, tArr] = b;
 	const AZ: [number, number, number] = [-10, 110, 230];
@@ -107,16 +111,17 @@ const MirrorMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) 
 				frame={frame}
 				y={36}
 				steps={[
-					{t: -60, text: 'A carbon with four groups'},
-					{t: tCentre, text: 'Chiral centre: a carbon…'},
-					{t: tFour, text: '…bonded to four DIFFERENT groups'},
+					{t: -60, text: reviewedSafetyMedicine ? 'Common single-stereocentre example' : 'A carbon with four groups'},
+					{t: tCentre, text: reviewedSafetyMedicine ? 'Here: one tetrahedral carbon centre' : 'Chiral centre: a carbon…'},
+					{t: tFour, text: reviewedSafetyMedicine ? 'Four different groups at this centre' : '…bonded to four DIFFERENT groups'},
 					{t: tTwo, text: 'Two ways to arrange them in 3D'},
 					{t: tMirror, text: 'The two forms are mirror images'},
 					{t: tRot, text: 'Rotate one: it can’t land on the other'},
 					{t: tEnan, text: 'A pair of enantiomers'},
-					{t: tArr, text: 'Chirality = 3D arrangement, not formula'},
+					{t: tArr, text: reviewedSafetyMedicine ? 'Chirality: not superimposable on its mirror image' : 'Chirality = 3D arrangement, not formula'},
 				]}
 			/>
+			{reviewedSafetyMedicine && <text x={W / 2} y={61} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>This common example is not an exhaustive test for chirality</text>}
 			<g opacity={Math.min(1, enter * 1.3)}>
 				<DioramaPlinth id={`${ID}-l`} cx={LX} cy={PL_Y} rx={124} />
 			</g>
@@ -172,7 +177,7 @@ const SkelDots = ({mol, x, y, s}: {mol: ReturnType<typeof butane>; x: number; y:
 	</g>
 );
 
-const CompareMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) => {
+const CompareMode = ({frame, fps, b, reviewedSafetyMedicine}: ModeArgs) => {
 	const theme = useAccent();
 	const ID = 'c12m8chir-cmp';
 	const [tStruct, tWhich, tGeo, tCis, tEnan, tSame, tCall] = b;
@@ -246,9 +251,10 @@ const CompareMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]})
 				<TetraModel id={ID} cx={XB} cy={362} R={50} groups={ALANINE} az={[-10, 110, 230]} rot={w} mirror />
 			</g>
 			{/* callout */}
+			{reviewedSafetyMedicine && <text x={W / 2} y={447} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700} opacity={call}>Matching melting points in achiral conditions</text>}
 			<g opacity={call}>
 				<text x={W / 2} y={466 + 12} textAnchor="middle" fill={TOK.ink} fontSize={19} fontWeight={800}>Different connectivity? → structural isomers</text>
-				<text x={W / 2} y={500 + 12} textAnchor="middle" fill={TOK.amberInk} fontSize={19} fontWeight={800}>Same connectivity, mirror image? → enantiomers</text>
+				<text x={W / 2} y={500 + 12} textAnchor="middle" fill={TOK.amberInk} fontSize={reviewedSafetyMedicine ? 17 : 19} fontWeight={800}>{reviewedSafetyMedicine ? 'Same connectivity + non-superimposable mirror images' : 'Same connectivity, mirror image? → enantiomers'}</text>
 			</g>
 		</g>
 	);
@@ -265,7 +271,7 @@ const SITE: TetraGroup[] = [
 const SITE_MIRROR: TetraGroup[] = [SITE[3], SITE[1], SITE[2], SITE[0]];
 const POCKET_COLORS = ['#e0433a', '#3f6fd8', '#4fbf4a'];
 
-const ReceptorMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) => {
+const ReceptorMode = ({frame, fps, b, reviewedSafetyMedicine}: ModeArgs) => {
 	const theme = useAccent();
 	const ID = 'c12m8chir-rec';
 	const [, tEnz, tSite, tGlove, tTher, tOther, tDeep] = b;
@@ -317,20 +323,20 @@ const ReceptorMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}
 						)}
 						<g opacity={ramp(frame, p.t + 50, 14)}>
 							<text x={p.cx} y={468} textAnchor="middle" fill={isMirror ? TOK.amberInk : theme.accent} fontSize={19} fontWeight={800}>
-								{isMirror ? '2 contacts: binds weakly' : '3 contacts: binds well'}
+								{reviewedSafetyMedicine ? (isMirror ? 'illustrative 2-point fit' : 'illustrative 3-point fit') : (isMirror ? '2 contacts: binds weakly' : '3 contacts: binds well')}
 							</text>
 							<text x={p.cx} y={492} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>
-								{isMirror ? 'inactive, or even harmful' : 'therapeutic effect'}
+								{reviewedSafetyMedicine ? 'effect requires evidence' : (isMirror ? 'inactive, or even harmful' : 'therapeutic effect')}
 							</text>
 						</g>
 					</g>
 				);
 			})}
 			<text x={W / 2} y={68} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700} opacity={ramp(frame, tGlove, 14)}>
-				like a glove: it fits one hand, not the other
+				{reviewedSafetyMedicine ? 'Simplified binding model: real interactions require evidence' : 'like a glove: it fits one hand, not the other'}
 			</text>
 			<text x={W / 2} y={522} textAnchor="middle" fill={TOK.ink} fontSize={18} fontWeight={800} opacity={ramp(frame, tDeep, 14)}>
-				same atoms ≠ same biological outcome
+				{reviewedSafetyMedicine ? 'Same connectivity; biological effects may differ' : 'same atoms ≠ same biological outcome'}
 			</text>
 		</g>
 	);
@@ -348,7 +354,7 @@ const Token = ({id, x, y, r, s, flip = 0, opacity = 1}: {id: string; x: number; 
 	);
 };
 
-const RacemicMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) => {
+const RacemicMode = ({frame, fps, b, reviewedSafetyMedicine}: ModeArgs) => {
 	const theme = useAccent();
 	const ID = 'c12m8chir-rac';
 	const [tR, tSed, tS, tTer, tRac, tFifty, tBoth, tSting, tPure, tRacem, tAssess] = b;
@@ -369,16 +375,21 @@ const RacemicMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]})
 			<GlossDefs id={ID} colors={GLOSS} />
 			{/* effects list */}
 			{[
-				{t: tR, t2: tSed, s: 'R' as const, head: 'R-enantiomer', text: 'sedative: the intended effect', ok: true, y: 62},
-				{t: tS, t2: tTer, s: 'S' as const, head: 'S-enantiomer', text: 'teratogenic: birth defects', ok: false, y: 142},
+				{t: tR, t2: tSed, s: 'R' as const, head: 'R-enantiomer', text: reviewedSafetyMedicine ? 'requires benefit/risk assessment' : 'sedative: the intended effect', ok: true, y: 62},
+				{t: tS, t2: tTer, s: 'S' as const, head: 'S-enantiomer', text: reviewedSafetyMedicine ? 'requires benefit/risk assessment' : 'teratogenic: birth defects', ok: false, y: 142},
 			].map((row) => {
 				const p = pop(frame, fps, row.t);
 				return (
 					<g key={row.s} opacity={Math.min(1, p * 1.3)}>
 						<Token id={ID} x={330} y={row.y} r={22} s={row.s} />
-						<text x={364} y={row.y - 6} fill={row.ok ? theme.accent : RED} fontSize={21} fontWeight={800}>{row.head}</text>
-						<text x={364} y={row.y + 20} fill={TOK.ink} fontSize={18} fontWeight={700} opacity={ramp(frame, row.t2, 12)}>{row.text}</text>
-						<Mark x={718} y={row.y} ok={row.ok} size={15} color={row.ok ? TOK.chem2 : RED} opacity={ramp(frame, row.t2, 12)} />
+						<text x={364} y={row.y - 6} fill={reviewedSafetyMedicine ? TOK.ink : row.ok ? theme.accent : RED} fontSize={21} fontWeight={800}>{row.head}</text>
+						<text x={364} y={row.y + 20} fill={TOK.ink} fontSize={reviewedSafetyMedicine ? 17 : 18} fontWeight={700} opacity={ramp(frame, row.t2, 12)}>{row.text}</text>
+						{reviewedSafetyMedicine ? (
+							<g opacity={ramp(frame, row.t2, 12)} transform={`translate(718,${row.y})`}>
+								<circle r={15} fill="#ffffff" stroke={TOK.inkDim} strokeWidth={2.5} />
+								<text y={6} textAnchor="middle" fill={TOK.inkDim} fontSize={20} fontWeight={800}>?</text>
+							</g>
+						) : <Mark x={718} y={row.y} ok={row.ok} size={15} color={row.ok ? TOK.chem2 : RED} opacity={ramp(frame, row.t2, 12)} />}
 					</g>
 				);
 			})}
@@ -401,10 +412,11 @@ const RacemicMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]})
 				<text x={520} y={206} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={800}>both forms given together</text>
 			</g>
 
+			{reviewedSafetyMedicine && <text x={520} y={233} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>R/S: configuration tokens, not drug structures</text>}
 			{/* the sting: pure R still racemises */}
 			<g opacity={stingIn}>
 				<line x1={24} y1={250} x2={W - 24} y2={250} stroke={TOK.rule} strokeWidth={2} />
-				<text x={W / 2} y={282} textAnchor="middle" fill={TOK.ink} fontSize={20} fontWeight={800}>Even pure R isn’t a clean fix</text>
+				<text x={W / 2} y={282} textAnchor="middle" fill={TOK.ink} fontSize={20} fontWeight={800}>{reviewedSafetyMedicine ? 'Thalidomide: neither form is presumed safe' : 'Even pure R isn’t a clean fix'}</text>
 			</g>
 			<g opacity={ramp(frame, tPure, 14)}>
 				<DioramaPlinth id={`${ID}-b`} cx={110} cy={452} rx={74} />
@@ -427,11 +439,11 @@ const RacemicMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]})
 			<g opacity={ramp(frame, tRacem, 14)}>
 				<text x={660} y={372} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>R ⇌ S</text>
 				<text x={660} y={396} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>racemisation</text>
-				<text x={660} y={430} textAnchor="middle" fill={RED} fontSize={17} fontWeight={800}>some S forms</text>
-				<text x={660} y={450} textAnchor="middle" fill={RED} fontSize={17} fontWeight={800}>anyway</text>
+				<text x={660} y={430} textAnchor="middle" fill={reviewedSafetyMedicine ? TOK.inkDim : RED} fontSize={17} fontWeight={800}>{reviewedSafetyMedicine ? 'both forms' : 'some S forms'}</text>
+				<text x={660} y={450} textAnchor="middle" fill={reviewedSafetyMedicine ? TOK.inkDim : RED} fontSize={17} fontWeight={800}>{reviewedSafetyMedicine ? 'interconvert' : 'anyway'}</text>
 			</g>
 			<g opacity={ramp(frame, tAssess, 16)}>
-				<Pill x={W / 2} y={500} text="assess each enantiomer independently" size={19} color={TOK.amber} fill="#fff6e6" textColor={TOK.amberInk} strokeWidth={2 + pulse * 1.5} />
+				<Pill x={W / 2} y={500} text={reviewedSafetyMedicine ? 'Assess both forms and interconversion' : 'assess each enantiomer independently'} padX={reviewedSafetyMedicine ? 12 + (textW('assess each enantiomer independently', 19) - textW('Assess both forms and interconversion', 19)) / 2 : 12} size={19} color={TOK.amber} fill="#fff6e6" textColor={TOK.amberInk} strokeWidth={2 + pulse * 1.5} />
 			</g>
 		</g>
 	);
@@ -464,7 +476,7 @@ const PolarGlyph = ({x, y, angle, star = false, color, r = 26, ghost}: {x: numbe
 	);
 };
 
-const PolarimeterMode = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) => {
+const PolarimeterMode = ({frame, fps, b, reviewedSafetyMedicine}: ModeArgs) => {
 	const theme = useAccent();
 	const ID = 'c12m8chir-pol';
 	const [tPol, tPlane, tPure, tRac, tZero, tCancel, tNot, tAchiral, tEvid] = b;
@@ -477,9 +489,9 @@ const PolarimeterMode = ({frame, fps, b}: {frame: number; fps: number; b: number
 	const tubeTokens = [0, 1, 2, 3, 4, 5].map((i) => ({x: 350 + i * 25, y: BEAM + (i % 2 ? 9 : -9)}));
 	const tokenKind = (i: number): 'R' | 'S' | 'A' => (state === 'pure' ? 'R' : state === 'racemic' ? (i % 2 ? 'S' : 'R') : state === 'achiral' ? 'A' : 'A');
 	const beamIn = ramp(frame, tPol - 20, 20);
-	const sampleLabel = state === 'pure' ? 'pure enantiomer' : state === 'racemic' ? 'racemic 50 : 50' : state === 'achiral' ? 'achiral compound' : 'sample';
+	const sampleLabel = state === 'pure' ? (reviewedSafetyMedicine ? 'pure sample (+)' : 'pure enantiomer') : state === 'racemic' ? 'racemic 50 : 50' : state === 'achiral' ? 'achiral compound' : 'sample';
 	const rows = [
-		{t: tPure, label: 'pure enantiomer', reading: 'plane rotated', angle: ROT, amber: false},
+		{t: tPure, label: reviewedSafetyMedicine ? 'pure sample (+), ideal' : 'pure enantiomer', reading: 'plane rotated', angle: ROT, amber: false},
 		{t: tRac, label: 'racemic mixture (50 : 50)', reading: '0: rotations cancel', angle: 0, amber: true, ghost: [ROT, -ROT]},
 		{t: tAchiral, label: 'achiral compound', reading: '0', angle: 0, amber: true},
 	];
@@ -507,7 +519,7 @@ const PolarimeterMode = ({frame, fps, b}: {frame: number; fps: number; b: number
 				<ellipse cx={490} cy={BEAM} rx={8} ry={26} fill="rgba(170,205,230,0.5)" stroke="rgba(70,90,110,0.6)" strokeWidth={2} />
 				{state !== 'none' && tubeTokens.map((t, i) => {
 					const k = tokenKind(i);
-					return <Ball key={i} id={ID} name={k === 'A' ? 'grey' : k} color={k === 'S' ? RED : k === 'R' ? '#148a6f' : '#9a9a9a'} x={t.x + idleBob(frame, i, 1.2)} y={t.y + idleBob(frame, i + 7, 1.2)} r={12} label={k === 'A' ? '' : k} labelSize={15} />;
+					return <Ball key={i} id={ID} name={k === 'A' ? 'grey' : k} color={k === 'S' ? RED : k === 'R' ? '#148a6f' : '#9a9a9a'} x={t.x + idleBob(frame, i, 1.2)} y={t.y + idleBob(frame, i + 7, 1.2)} r={12} label={k === 'A' ? '' : reviewedSafetyMedicine ? (k === 'R' ? '+' : '−') : k} labelSize={15} />;
 				})}
 				<rect x={352} y={BEAM + 26} width={12} height={28} fill="#8f8b83" />
 				<rect x={456} y={BEAM + 26} width={12} height={28} fill="#8f8b83" />
@@ -538,6 +550,7 @@ const PolarimeterMode = ({frame, fps, b}: {frame: number; fps: number; b: number
 					{state === 'pure' ? 'plane rotated' : 'no net rotation'}
 				</text>
 			</g>
+			{reviewedSafetyMedicine && <text x={W / 2} y={278} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>Supplied ideal example: the pure sample has nonzero rotation</text>}
 			{/* readings table */}
 			{rows.map((r, i) => {
 				const o = ramp(frame, r.t, 14);
@@ -558,16 +571,19 @@ const PolarimeterMode = ({frame, fps, b}: {frame: number; fps: number; b: number
 			<g opacity={ramp(frame, tNot + 60, 16)}>
 				<path d="M 600 350 L 612 350 L 612 428 L 600 428" fill="none" stroke={TOK.amber} strokeWidth={3} />
 				<text x={680} y={384} textAnchor="middle" fill={TOK.amberInk} fontSize={20} fontWeight={800}>zero ≠</text>
-				<text x={680} y={408} textAnchor="middle" fill={TOK.amberInk} fontSize={20} fontWeight={800}>pure</text>
+				<text x={680} y={408} textAnchor="middle" fill={TOK.amberInk} fontSize={20} fontWeight={800}>{reviewedSafetyMedicine ? 'proof' : 'pure'}</text>
 			</g>
+			{reviewedSafetyMedicine && <text x={W / 2} y={473} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700} opacity={ramp(frame, tEvid, 14)}>R/S configuration does not determine (+)/(−) optical sign</text>}
 			<text x={W / 2} y={498} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={700} opacity={ramp(frame, tEvid, 14)}>
-				evidence of optical activity, not the structure
+				{reviewedSafetyMedicine ? 'Zero rotation alone proves neither a racemate nor purity' : 'evidence of optical activity, not the structure'}
 			</text>
 		</g>
 	);
 };
 
-export const ChiralityDiagram = ({mode = 'mirror', delay = 62, beats}: ChiralityProps) => {
+export const ChiralityDiagram = (props: ChiralityProps) => {
+	validateSafetyMedicineDiagram({type: 'diorama', kind: 'chem12m8Chirality', props});
+	const {mode = 'mirror', delay = 62, beats, reviewedSafetyMedicine = false} = props;
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const b = beatsFor(mode, beats);
@@ -578,13 +594,20 @@ export const ChiralityDiagram = ({mode = 'mirror', delay = 62, beats}: Chirality
 		racemic: 'A racemic mixture gives R and S together; even pure R racemises in the body',
 		polarimeter: 'Polarimeter: a pure enantiomer rotates plane-polarised light; racemic and achiral samples read zero',
 	}[mode];
+	const reviewedLabels = {
+		mirror: 'A common single-stereocentre example: a tetrahedral carbon with four different groups. Chirality means non-superimposability on the mirror image; this example is not an exhaustive criterion.',
+		compare: 'Structural and geometric isomers compared with non-superimposable mirror-image enantiomers. Enantiomers have equal physical and chemical properties in achiral conditions, except equal and opposite optical rotation under identical conditions.',
+		receptor: 'Simplified chiral receptor model: different contacts illustrate possible different interactions, not measured binding strengths or clinical effects. Biological effects require evidence; enantiomers share connectivity, while optical rotation is equal and opposite under identical conditions.',
+		racemic: 'Thalidomide R and S enantiomers both require benefit and risk assessment and interconvert in the body. Neither is presumed safe. The R/S balls are stereochemical bookkeeping, not real drug molecular models; R/S does not specify optical sign.',
+		polarimeter: 'Supplied ideal polarimetry example with nonzero rotation for the pure sample. A racemate and an achiral sample give zero in this example, but zero rotation alone does not establish a racemate or purity. R/S configuration and optical sign are distinct.',
+	};
 	return (
-		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={label} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
-			{mode === 'mirror' && <MirrorMode frame={frame} fps={fps} b={b} />}
-			{mode === 'compare' && <CompareMode frame={frame} fps={fps} b={b} />}
-			{mode === 'receptor' && <ReceptorMode frame={frame} fps={fps} b={b} />}
-			{mode === 'racemic' && <RacemicMode frame={frame} fps={fps} b={b} />}
-			{mode === 'polarimeter' && <PolarimeterMode frame={frame} fps={fps} b={b} />}
+		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={reviewedSafetyMedicine ? reviewedLabels[mode] : label} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+			{mode === 'mirror' && <MirrorMode frame={frame} fps={fps} b={b} reviewedSafetyMedicine={reviewedSafetyMedicine} />}
+			{mode === 'compare' && <CompareMode frame={frame} fps={fps} b={b} reviewedSafetyMedicine={reviewedSafetyMedicine} />}
+			{mode === 'receptor' && <ReceptorMode frame={frame} fps={fps} b={b} reviewedSafetyMedicine={reviewedSafetyMedicine} />}
+			{mode === 'racemic' && <RacemicMode frame={frame} fps={fps} b={b} reviewedSafetyMedicine={reviewedSafetyMedicine} />}
+			{mode === 'polarimeter' && <PolarimeterMode frame={frame} fps={fps} b={b} reviewedSafetyMedicine={reviewedSafetyMedicine} />}
 		</svg>
 	);
 };

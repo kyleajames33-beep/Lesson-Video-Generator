@@ -251,6 +251,24 @@ export function integratedQuantitativeDraft(name, bytes) {
       'Apply balanced ratios and any sample/blank corrections.', 'Conductometry can support endpoint detection without a colour indicator.', 'Fit appropriate curve branches; the HCl/NaOH minimum is a scoped example.'],
       finalPrompt: 'Which assumptions and endpoint evidence support the analyte inference?', caption: 'Reaction validity, full-sample accounting, ratios and scoped conductometric interpretation.'},
     'Back titration needs a suitable selective reaction and verified completion. Subtract measured remaining reagent from the known added amount, then apply balanced ratios and any method corrections. Conductometry offers an endpoint signal without a colour indicator, but it still needs suitable sample conditions and sensor behaviour. Fit the appropriate curve branches. The HCl with NaOH minimum is an example, not a universal rule.');
+    // Reconcile historical Chemistry C36 with this newer isolated package.
+    // Carbonate-derived dissolved CO2 can consume base during back titration.
+    // State the ideal measurement assumption without prescribing a lab method.
+    const carbonateAssumption = 'Assume carbonate-derived CO₂ has been removed without acid loss and does not contribute to the NaOH titre.';
+    const carbonateSpeech = 'Assume carbon dioxide from the carbonate reaction has been removed without losing acid and does not contribute to the sodium hydroxide titre. This is a calculation assumption; an experimental method must validate the treatment and endpoint.';
+    const back = draft.scenes.find((scene) => scene.id === 'concept-back');
+    back.bullets.push({text: carbonateAssumption});
+    back.voiceover.text += ' ' + carbonateSpeech;
+    const workedExample = draft.scenes.find((scene) => scene.id === 'worked-example');
+    workedExample.question += ' ' + carbonateAssumption;
+    workedExample.voiceover.text = carbonateSpeech + ' ' + workedExample.voiceover.text;
+    const quickCheck = draft.scenes.find((scene) => scene.id === 'quick-check');
+    quickCheck.question += ' ' + carbonateAssumption;
+    responses['quick-check'].promptText = carbonateSpeech + ' ' + responses['quick-check'].promptText;
+    quickCheck.voiceover.text = responses['quick-check'].promptText + ' ' + responses['quick-check'].answerText;
+    const recap = draft.scenes.find((scene) => scene.id === 'summary');
+    recap.points[2] = 'Apply balanced ratios and corrections; exclude carbonate-derived CO₂ from the excess-acid titre.';
+    recap.voiceover.text += ' In the carbonate calculation, carbon dioxide is assumed not to contribute to the base titre and no acid is lost during its removal.';
   } else throw new Error(`No whole-lesson integration for ${name}`);
 
   const pacing = [];

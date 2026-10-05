@@ -243,3 +243,55 @@ tasks. `npm run validate:biology-package` also refuses stale text, reordered
 feedback and changed teacher/student material. See the [Biology handoff](docs/production/biology-lesson-integration-2026-10-04.md).
 The source suite now has 81 tests. Source recovery includes all three complete
 review packages and both selected curriculum audits, without rendering or audio.
+
+## PR #38 reconciliation and held source proposals
+
+The [current reconciliation](docs/production/pr38-reconciliation-2026-10-04.md)
+preserves all current catalogue bytes and legacy renderer output while retaining every
+historical correction intent. The old 323-scene handoff is not an audio queue.
+Run `npm run audit:reconciliation` with full Git history to inspect exact source
+dispositions. `prepare:indicator-corrections` and `validate:indicator-package`
+produce and check a complete isolated unvoiced indicator proposal. The existing
+quantitative package also now states the carbonate/CO2 back-titration assumption.
+No final source, voice, media or release approval is implied.
+
+The semantic continuation now covers all 71 historical Chemistry groups,
+including cases where the earlier audit was overbroad.
+`prepare:reconciled-chemistry-scenes` and `validate:reconciled-chemistry-scenes`
+prepare/check five partial amendments for precision and missing-data questions.
+Their schema fixtures contain unreviewed original scenes and are not render inputs.
+
+`prepare:medicine-lessons` and `validate:medicine-package` prepare/check two
+complete medicine-enrichment proposals. Narrow opt-in diagram corrections are
+covered by actual React/SVG output tests, including 72 preserved-main baseline
+comparisons. These are not visual-fit or playback approval. Both legacy medicine
+lessons and new proposals remain release-held; no audio is authorised.
+
+`prepare:priority-science-lessons` and `validate:priority-science-package` cover
+four complete drafts for tolerance limits, recombinant DNA, nitrate/purity and
+trace-element analysis. They preserve seven current narration texts, correct
+28, and retain strict media/release holds. Sixteen further main-baseline
+component comparisons protect the default reference-band/food-chain diagrams.
+
+`prepare:water-health` and `validate:water-health` prepare/check four complete
+source-only proposals for buffers, dissolved oxygen/BOD, eutrophication and
+water treatment. These correct bounded health/environmental inferences and
+retain the 2017 curriculum context without inventing named requirements.
+`test:water-health` covers source guards, arithmetic, catalogue preservation,
+release holds and opt-in component output. Teacher/science, visual and media
+approval remain pending; no executable narration queue is authorised.
+
+`prepare:safety-medicine` and `validate:safety-medicine` prepare/check the
+separation-safety and remaining chirality/delivery enrichment drafts.
+`test:safety-medicine` protects original catalogue bytes and default diagram
+output while checking qualified evidence, strict Lipinski boundaries and
+non-executable review holds. The source-remedy inventory separates prepared
+claims from 51 remaining substantive finding groups, eight qualifications
+and one unverified correspondence; these overlapping counts are not audio jobs.
+
+`prepare:analytical-inference` and `validate:analytical-inference` integrate the
+two titration scene-repair packages into complete lessons and prepare both
+curve-reading lessons plus qualitative ion analysis. `test:analytical-inference`
+checks exact prior amendments, independent arithmetic, inference conditions,
+legacy output and release holds. C17/C19 are fully integrated as source drafts;
+the Hess C28 remedy remains a partial scene proposal.

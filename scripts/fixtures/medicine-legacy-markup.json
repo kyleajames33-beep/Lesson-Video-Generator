@@ -1,0 +1,346 @@
+{
+  "baselineCommit": "ca58c157f0349b29774f93a76cd041aefab3a2a2",
+  "description": "Actual ReactDOMServer component output with synthetic useCurrentFrame/useVideoConfig hooks. Floating literals normalised to six decimals. Not pixel or playback QA.",
+  "frames": [
+    0,
+    240,
+    500,
+    1000
+  ],
+  "cases": [
+    {
+      "name": "skeletal-gallery",
+      "kind": "skeletal",
+      "props": {
+        "mode": "gallery"
+      },
+      "hashes": [
+        "a1e44a242031406472948e7fa96d44ac95b5a02b0d2820bb097411ba065dcb88",
+        "53224251ef277cabb35e7d39355bbfe3a04b22b54522db8dcd599036ab46c3e5",
+        "ddb2ed7397dd44974a27eb05d79943ff365a40906fc46f521751fc7f361cae37",
+        "ee89a03ed9b44d8d06e66ac12f1bee9dc41f5346672828805db090c5655cad9f"
+      ]
+    },
+    {
+      "name": "skeletal-read",
+      "kind": "skeletal",
+      "props": {
+        "mode": "read"
+      },
+      "hashes": [
+        "e0f2f151accd954a6f2495405ccf4f19adca236aafc209a313a906288c984be7",
+        "a2019df7eea8a21265ff58b2854204a03a2fdb4ca324a05312d1d2ac75205982",
+        "308e4c7f664695320d47e2060e0f197a42bcec99db1c99335c5c5fa0143decbe",
+        "cd712a8e1208c7834226f8665830c533b8f3a0e369b10a3aa0c5193cb35fe90b"
+      ]
+    },
+    {
+      "name": "skeletal-modify",
+      "kind": "skeletal",
+      "props": {
+        "mode": "modify"
+      },
+      "hashes": [
+        "26da8bf70a15e4d0af51e3238df2450c6d8dc42ef1c7a025785457f2a904e185",
+        "05b708765742d14e91735cd2f6317f183b99a12be0a937cf42887d07543f82b4",
+        "67fe6376e65f62da93a43ae3c2289e3772bbed3c45e75ef7475ade2160abe74c",
+        "b5d68a24acd4fa49929e2a37ee52b586ad2fb8675af1c01309b0e05fe8ceaa26"
+      ]
+    },
+    {
+      "name": "skeletal-reaction",
+      "kind": "skeletal",
+      "props": {
+        "mode": "reaction"
+      },
+      "hashes": [
+        "2f4d1696cad5e80fb37088ae6ceb27761eb67f34e1f35ad9d2719c8040f4cb87",
+        "2318918a7b9f3a19e3795c038e5c19e1f3e366b061321b8386781113a231e625",
+        "668a5e5aa4db338d0301cedb3478b60ef663fddd7c447195c9013958eba69ff8",
+        "e02985616c2da99391bdb0c8066339fb3ac5831256e6343fdd901d6748ba299c"
+      ]
+    },
+    {
+      "name": "ionisation-forms",
+      "kind": "ionisation",
+      "props": {
+        "mode": "forms"
+      },
+      "hashes": [
+        "79624a03f310bddef78883685a3bf5db3745df6db6c3a0788ba4f41abc8b3bcc",
+        "4a7b37dd4491841292046ee969ee34d3012566520d2fce64aa274a37fee6de35",
+        "a01e562a546f4fedc674a2bc8a67efbca8edc11c88286985bd8ceaea700fda88",
+        "2222705eb59f87d1ca12a4079839792faeb346f7a24e45b1aecf93d193b1af7d"
+      ]
+    },
+    {
+      "name": "ionisation-hh",
+      "kind": "ionisation",
+      "props": {
+        "mode": "hh"
+      },
+      "hashes": [
+        "016dffbf2b4fdad8f635310cef0e5c0d379ba8b8419d0c25fa82661ffd7f8467",
+        "05fa2874f330f920a2a6e0f6ede4e0cbd3918200cca725ad0526c485d5c0af2e",
+        "9484f214591206e01ab7c70da75ccb65c0f9e235cea6ae91e2c976b2283573a6",
+        "d42e1cc69a65f616d57666c5aaf1fbe2e454ce8a88e60d518504105cd52c1e6a"
+      ]
+    },
+    {
+      "name": "ionisation-compare",
+      "kind": "ionisation",
+      "props": {
+        "mode": "compare"
+      },
+      "hashes": [
+        "09263c0ffcb34700d805e83ad7240a53c7b9df9ee4b9e0ffb44d4d2cf6c34916",
+        "7c2ff9169ab99e5d1219a317ff8cbf8f1a1aabf27b6869007ee0ef6a3ec67cc9",
+        "8c5fdc3e5520990a75fe318792fbf338df90e07bf52bbd75f4b21ab7be9eb028",
+        "a645f4baca3219fd3b28280cc06c2c348202816c3f013c7bd90ece884e68beb8"
+      ]
+    },
+    {
+      "name": "ionisation-salts",
+      "kind": "ionisation",
+      "props": {
+        "mode": "salts"
+      },
+      "hashes": [
+        "67a6da2695931ee810651910340cef1480e3ac29dabde1e247e238b422f4fdcf",
+        "cd83c1918dec51d52c910da45a48b78b3a2893730e8a3b8b57499a54dd0e5e0c",
+        "6df46987aaa7110f71a23fb493f5e9b295c463854d7a9556cc2d4935f020804b",
+        "87478808c850ee99d58493c9cf50a8ea680bb5affbdbfa557d3efac4c25e88f2"
+      ]
+    },
+    {
+      "name": "ionisation-hocl",
+      "kind": "ionisation",
+      "props": {
+        "mode": "hocl"
+      },
+      "hashes": [
+        "d0c4c937c072d24748b0fef483e7a9100054255a175dc3f554ba36198ad48a1f",
+        "461cd4afd09576bcd4bfa8c3cf5084182d3aa37c14504f0bac3fcd7a9f6e9ee3",
+        "12cfa09933a7ea726145eb1151357cd86d623446e5b3ca138ecc73b37ab655c1",
+        "9e00d7ad3c030bb9c6488ca815d6a54f880e19b6127173888208ad9dbd033b03"
+      ]
+    },
+    {
+      "name": "chemistry-y12-m8-l10-water-treatment-processes.json:concept-chlorination",
+      "kind": "ionisation",
+      "props": {
+        "mode": "hocl",
+        "beats": [
+          216,
+          334,
+          444,
+          547,
+          602,
+          752
+        ]
+      },
+      "hashes": [
+        "d0c4c937c072d24748b0fef483e7a9100054255a175dc3f554ba36198ad48a1f",
+        "461cd4afd09576bcd4bfa8c3cf5084182d3aa37c14504f0bac3fcd7a9f6e9ee3",
+        "12cfa09933a7ea726145eb1151357cd86d623446e5b3ca138ecc73b37ab655c1",
+        "9e00d7ad3c030bb9c6488ca815d6a54f880e19b6127173888208ad9dbd033b03"
+      ]
+    },
+    {
+      "name": "chemistry-y12-m8-l11-drug-classification-functional-groups.json:concept-classify",
+      "kind": "skeletal",
+      "props": {
+        "mode": "gallery",
+        "beats": [
+          210,
+          255,
+          285,
+          322,
+          329,
+          374,
+          457,
+          614,
+          718,
+          90,
+          150
+        ]
+      },
+      "hashes": [
+        "a1e44a242031406472948e7fa96d44ac95b5a02b0d2820bb097411ba065dcb88",
+        "53224251ef277cabb35e7d39355bbfe3a04b22b54522db8dcd599036ab46c3e5",
+        "ddb2ed7397dd44974a27eb05d79943ff365a40906fc46f521751fc7f361cae37",
+        "ee89a03ed9b44d8d06e66ac12f1bee9dc41f5346672828805db090c5655cad9f"
+      ]
+    },
+    {
+      "name": "chemistry-y12-m8-l11-drug-classification-functional-groups.json:concept-reading",
+      "kind": "skeletal",
+      "props": {
+        "mode": "read",
+        "beats": [
+          247,
+          270,
+          300,
+          315,
+          404,
+          427,
+          449,
+          464,
+          532,
+          554,
+          591,
+          614
+        ]
+      },
+      "hashes": [
+        "e0f2f151accd954a6f2495405ccf4f19adca236aafc209a313a906288c984be7",
+        "a2019df7eea8a21265ff58b2854204a03a2fdb4ca324a05312d1d2ac75205982",
+        "308e4c7f664695320d47e2060e0f197a42bcec99db1c99335c5c5fa0143decbe",
+        "cd712a8e1208c7834226f8665830c533b8f3a0e369b10a3aa0c5193cb35fe90b"
+      ]
+    },
+    {
+      "name": "chemistry-y12-m8-l11-drug-classification-functional-groups.json:concept-pharmacophore",
+      "kind": "skeletal",
+      "props": {
+        "mode": "modify",
+        "beats": [
+          65,
+          155,
+          203,
+          292,
+          334,
+          375,
+          437,
+          698
+        ]
+      },
+      "hashes": [
+        "26da8bf70a15e4d0af51e3238df2450c6d8dc42ef1c7a025785457f2a904e185",
+        "05b708765742d14e91735cd2f6317f183b99a12be0a937cf42887d07543f82b4",
+        "67fe6376e65f62da93a43ae3c2289e3772bbed3c45e75ef7475ade2160abe74c",
+        "b5d68a24acd4fa49929e2a37ee52b586ad2fb8675af1c01309b0e05fe8ceaa26"
+      ]
+    },
+    {
+      "name": "chemistry-y12-m8-l12-acid-base-properties-drug-molecules.json:concept-forms",
+      "kind": "ionisation",
+      "props": {
+        "mode": "forms",
+        "beats": [
+          205,
+          454,
+          496,
+          593,
+          725
+        ]
+      },
+      "hashes": [
+        "79624a03f310bddef78883685a3bf5db3745df6db6c3a0788ba4f41abc8b3bcc",
+        "4a7b37dd4491841292046ee969ee34d3012566520d2fce64aa274a37fee6de35",
+        "a01e562a546f4fedc674a2bc8a67efbca8edc11c88286985bd8ceaea700fda88",
+        "2222705eb59f87d1ca12a4079839792faeb346f7a24e45b1aecf93d193b1af7d"
+      ]
+    },
+    {
+      "name": "chemistry-y12-m8-l12-acid-base-properties-drug-molecules.json:concept-hh",
+      "kind": "ionisation",
+      "props": {
+        "mode": "hh",
+        "beats": [
+          331,
+          431,
+          532,
+          653,
+          727
+        ]
+      },
+      "hashes": [
+        "016dffbf2b4fdad8f635310cef0e5c0d379ba8b8419d0c25fa82661ffd7f8467",
+        "05fa2874f330f920a2a6e0f6ede4e0cbd3918200cca725ad0526c485d5c0af2e",
+        "9484f214591206e01ab7c70da75ccb65c0f9e235cea6ae91e2c976b2283573a6",
+        "d42e1cc69a65f616d57666c5aaf1fbe2e454ce8a88e60d518504105cd52c1e6a"
+      ]
+    },
+    {
+      "name": "chemistry-y12-m8-l12-acid-base-properties-drug-molecules.json:concept-aspirin",
+      "kind": "ionisation",
+      "props": {
+        "mode": "compare",
+        "beats": [
+          119,
+          304,
+          408,
+          609,
+          765
+        ],
+        "pKa": 3.5,
+        "stomachRange": [
+          1,
+          2
+        ],
+        "intestineRange": [
+          6,
+          7
+        ],
+        "stomachPH": 2,
+        "intestinePH": 6
+      },
+      "hashes": [
+        "09263c0ffcb34700d805e83ad7240a53c7b9df9ee4b9e0ffb44d4d2cf6c34916",
+        "7c2ff9169ab99e5d1219a317ff8cbf8f1a1aabf27b6869007ee0ef6a3ec67cc9",
+        "8c5fdc3e5520990a75fe318792fbf338df90e07bf52bbd75f4b21ab7be9eb028",
+        "a645f4baca3219fd3b28280cc06c2c348202816c3f013c7bd90ece884e68beb8"
+      ]
+    },
+    {
+      "name": "chemistry-y12-m8-l12-acid-base-properties-drug-molecules.json:concept-salts",
+      "kind": "ionisation",
+      "props": {
+        "mode": "salts",
+        "beats": [
+          26,
+          111,
+          181,
+          329,
+          555,
+          586,
+          702,
+          790
+        ],
+        "acidSolubility": 3,
+        "saltSolubility": 500,
+        "foldLabel": "160-fold"
+      },
+      "hashes": [
+        "67a6da2695931ee810651910340cef1480e3ac29dabde1e247e238b422f4fdcf",
+        "cd83c1918dec51d52c910da45a48b78b3a2893730e8a3b8b57499a54dd0e5e0c",
+        "6df46987aaa7110f71a23fb493f5e9b295c463854d7a9556cc2d4935f020804b",
+        "87478808c850ee99d58493c9cf50a8ea680bb5affbdbfa557d3efac4c25e88f2"
+      ]
+    },
+    {
+      "name": "chemistry-y12-m8-l15-drug-synthesis-green-chemistry.json:concept-aspirin-synth",
+      "kind": "skeletal",
+      "props": {
+        "mode": "reaction",
+        "beats": [
+          94,
+          132,
+          208,
+          254,
+          308,
+          346,
+          400,
+          438
+        ]
+      },
+      "hashes": [
+        "2f4d1696cad5e80fb37088ae6ceb27761eb67f34e1f35ad9d2719c8040f4cb87",
+        "2318918a7b9f3a19e3795c038e5c19e1f3e366b061321b8386781113a231e625",
+        "668a5e5aa4db338d0301cedb3478b60ef663fddd7c447195c9013958eba69ff8",
+        "e02985616c2da99391bdb0c8066339fb3ac5831256e6343fdd901d6748ba299c"
+      ]
+    }
+  ]
+}

@@ -24,12 +24,18 @@ import {useCurrentFrame} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
 import {DioramaDefs, DioramaPlinth, Molecule, idleBob, idlePulse} from '../../diorama';
-import {Arrow, Beaker, GlossDefs, Pill, ease, ramp, shade} from './shared';
+import {Arrow, Beaker, GlossDefs, Pill, ease, ramp, shade, textW} from './shared';
 import {ACID_GLOSS, A_COLOR, AcidParticle, Bilayer, HA_COLOR, flipRanks, flipState, fracIonised, popSlots, tri} from './drug-parts';
+
+import {weakAcidFractions, illustrativeSolubilityRatio, validateReviewedMedicineDiagram} from '../../medicine-models.mjs';
 
 type Mode = 'forms' | 'hh' | 'compare' | 'salts' | 'hocl';
 
 export type IonisationProps = {
+	/** Isolated source-reviewed enrichment only; legacy output is the default. */
+	reviewedMedicine?: boolean;
+	/** Source-reviewed HOCl speciation only; cannot combine with medicine review. */
+	reviewedWaterHealth?: boolean;
 	delay?: number;
 	mode?: Mode;
 	/** Frames after `delay`; meaning depends on mode (see defaults below). */
@@ -102,7 +108,7 @@ const Population = ({
 };
 
 // ─────────────────────────────────────────────────────────────── forms
-const FormsMode = ({frame, beats, id}: {frame: number; beats: number[]; id: string}) => {
+const FormsMode = ({frame, beats, id, reviewedMedicine}: {frame: number; beats: number[]; id: string; reviewedMedicine: boolean}) => {
 	const [tEq, tTags, tCross, tBlock, tSum] = beats;
 	const PCX = 380, PCY = 368;
 	const BW = 500, BH = 236;
@@ -146,8 +152,8 @@ const FormsMode = ({frame, beats, id}: {frame: number; beats: number[]; id: stri
 	const tagsIn = ramp(frame, tTags, 16);
 	const caption =
 		frame >= tSum ? null
-		: frame >= tBlock ? {t: 'A⁻: more polar → dissolves in water, poor at crossing', c: INK_A}
-		: frame >= tCross ? {t: 'HA: less polar → crosses the lipid membrane', c: INK_HA}
+		: frame >= tBlock ? {t: reviewedMedicine ? 'A⁻: passive lipid diffusion is usually less favourable' : 'A⁻: more polar → dissolves in water, poor at crossing', c: INK_A}
+		: frame >= tCross ? {t: reviewedMedicine ? 'HA: passive lipid diffusion is often more favourable' : 'HA: less polar → crosses the lipid membrane', c: INK_HA}
 		: null;
 	const capStart = frame >= tBlock ? tBlock : tCross;
 
@@ -200,7 +206,7 @@ const FormsMode = ({frame, beats, id}: {frame: number; beats: number[]; id: stri
 			)}
 			{frame >= tSum && (
 				<g opacity={ramp(frame, tSum, 16)}>
-					<Pill x={W / 2} y={496} text="Ionisation controls solubility and membrane crossing" color={TOK.amber} textColor={TOK.amberInk} size={19} strokeWidth={2 + idlePulse(frame) * 1.5} />
+					<Pill x={W / 2} y={496} text={reviewedMedicine ? "Schematic passive diffusion, not total absorption" : "Ionisation controls solubility and membrane crossing"} color={TOK.amber} textColor={TOK.amberInk} size={19} strokeWidth={2 + idlePulse(frame) * 1.5} />
 				</g>
 			)}
 		</g>
@@ -213,7 +219,7 @@ const hash = (k: number, salt: number) => {
 };
 
 // ─────────────────────────────────────────────────────────────── hh
-const HHMode = ({frame, beats, id}: {frame: number; beats: number[]; id: string}) => {
+const HHMode = ({frame, beats, id, reviewedMedicine}: {frame: number; beats: number[]; id: string; reviewedMedicine: boolean}) => {
 	const [tBelow, tAbove, tEqual, tDir, tSweep] = beats;
 	// pH − pKa over time: piecewise eased moves.
 	const moves: [number, number, number, number][] = [
@@ -293,7 +299,7 @@ const HHMode = ({frame, beats, id}: {frame: number; beats: number[]; id: string}
 				<text x={606} y={380} fill={INK_HA} fontSize={21} fontWeight={800}>HA × {N - nAint}</text>
 				<AcidParticle id={id} x={578} y={420} r={17} s={1} />
 				<text x={606} y={428} fill={INK_A} fontSize={21} fontWeight={800}>A⁻ × {nAint}</text>
-				<text x={632} y={466} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>of {N} molecules</text>
+				<text x={632} y={466} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>{reviewedMedicine ? `of ${N} schematic particles` : `of ${N} molecules`}</text>
 			</g>
 		</g>
 	);
@@ -301,8 +307,8 @@ const HHMode = ({frame, beats, id}: {frame: number; beats: number[]; id: string}
 
 // ─────────────────────────────────────────────────────────────── compare
 const CompareMode = ({
-	frame, beats, id, pKa, stomachRange, intestineRange, stomachPH, intestinePH,
-}: {frame: number; beats: number[]; id: string; pKa: number; stomachRange: [number, number]; intestineRange: [number, number]; stomachPH: number; intestinePH: number}) => {
+	frame, beats, id, pKa, stomachRange, intestineRange, stomachPH, intestinePH, reviewedMedicine,
+}: {frame: number; beats: number[]; id: string; pKa: number; stomachRange: [number, number]; intestineRange: [number, number]; stomachPH: number; intestinePH: number; reviewedMedicine: boolean}) => {
 	const [tStom, tStomTag, tInt, tIntTag, tKey] = beats;
 	const N = ROWS.reduce((s, n) => s + n, 0);
 	const X = (p: number) => 60 + p * 80;
@@ -330,15 +336,15 @@ const CompareMode = ({
 					</g>
 				))}
 				<text x={X(0) - 14} y={SY + 6} textAnchor="end" fill={TOK.ink} fontSize={18} fontWeight={800}>pH</text>
-				<text x={(X(stomachRange[0]) + X(stomachRange[1])) / 2} y={SY - 24} textAnchor="middle" fill={INK_HA} fontSize={18} fontWeight={800} opacity={ramp(frame, tStom, 14)}>stomach</text>
-				<text x={(X(intestineRange[0]) + X(intestineRange[1])) / 2} y={SY - 24} textAnchor="middle" fill={INK_A} fontSize={18} fontWeight={800} opacity={ramp(frame, tInt, 14)}>small intestine</text>
+				<text x={(X(stomachRange[0]) + X(stomachRange[1])) / 2} y={SY - 24} textAnchor="middle" fill={INK_HA} fontSize={18} fontWeight={800} opacity={ramp(frame, tStom, 14)}>{reviewedMedicine ? 'acidic range' : 'stomach'}</text>
+				<text x={(X(intestineRange[0]) + X(intestineRange[1])) / 2} y={SY - 24} textAnchor="middle" fill={INK_A} fontSize={18} fontWeight={800} opacity={ramp(frame, tInt, 14)}>{reviewedMedicine ? 'higher pH range' : 'small intestine'}</text>
 				<line x1={X(pKa)} y1={SY - 18} x2={X(pKa)} y2={SY + 18} stroke={TOK.amber} strokeWidth={4 + pulse * 2} strokeLinecap="round" />
 				<text x={X(pKa)} y={SY - 24} textAnchor="middle" fill={TOK.amberInk} fontSize={19} fontWeight={800}>pKa {pKa}</text>
 			</g>
 
 			{/* Stomach */}
 			<g opacity={ramp(frame, tStom, 14)}>
-				<text x={195} y={166} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>Stomach, {range(stomachRange)}</text>
+				<text x={195} y={166} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>{reviewedMedicine ? `Sample pH ${stomachPH}` : `Stomach, ${range(stomachRange)}`}</text>
 				<text x={195} y={192} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={700}>pH below pKa</text>
 			</g>
 			<DioramaPlinth id={`${id}s`} cx={195} cy={334} rx={165}>
@@ -348,13 +354,13 @@ const CompareMode = ({
 				<text x={195} y={458} textAnchor="middle" fill={INK_HA} fontSize={22} fontWeight={800}>Mostly HA, unionised</text>
 			</g>
 			<g opacity={ramp(frame, tStomTag, 14)}>
-				<text x={195} y={484} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>crosses lipid membranes</text>
-				<text x={195} y={506} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>more easily</text>
+				<text x={195} y={484} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>{reviewedMedicine ? `${(weakAcidFractions(stomachPH,pKa).unionised*100).toFixed(2)}% HA (ideal model)` : 'crosses lipid membranes'}</text>
+				<text x={195} y={506} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>{reviewedMedicine ? 'not an absorption percentage' : 'more easily'}</text>
 			</g>
 
 			{/* Small intestine */}
 			<g opacity={ramp(frame, tInt, 14)}>
-				<text x={565} y={166} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>Small intestine, {range(intestineRange)}</text>
+				<text x={565} y={166} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>{reviewedMedicine ? `Sample pH ${intestinePH}` : `Small intestine, ${range(intestineRange)}`}</text>
 				<text x={565} y={192} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={700}>pH above pKa</text>
 			</g>
 			<DioramaPlinth id={`${id}i`} cx={565} cy={334} rx={165}>
@@ -364,8 +370,8 @@ const CompareMode = ({
 				<text x={565} y={458} textAnchor="middle" fill={INK_A} fontSize={22} fontWeight={800}>Mostly A⁻, ionised</text>
 			</g>
 			<g opacity={ramp(frame, tIntTag, 14)}>
-				<text x={565} y={484} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>more water-soluble,</text>
-				<text x={565} y={506} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>less membrane-permeable</text>
+				<text x={565} y={484} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>{reviewedMedicine ? `${(weakAcidFractions(intestinePH,pKa).ionised*100).toFixed(2)}% A⁻ (ideal model)` : 'more water-soluble,'}</text>
+				<text x={565} y={506} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>{reviewedMedicine ? 'particles show rounded fractions' : 'less membrane-permeable'}</text>
 			</g>
 		</g>
 	);
@@ -373,12 +379,12 @@ const CompareMode = ({
 
 // ─────────────────────────────────────────────────────────────── salts
 const SaltsMode = ({
-	frame, beats, id, acidSolubility, saltSolubility, foldLabel,
-}: {frame: number; beats: number[]; id: string; acidSolubility: number; saltSolubility: number; foldLabel: string}) => {
+	frame, beats, id, acidSolubility, saltSolubility, foldLabel, reviewedMedicine,
+}: {frame: number; beats: number[]; id: string; acidSolubility: number; saltSolubility: number; foldLabel: string; reviewedMedicine: boolean}) => {
 	const [tAcid, tSalt, tFold, tNote, tPanel, tRise, tOpp, tLowest] = beats;
 	const PCY = 424;
 	const scale = 240 / saltSolubility; // px per g/L
-	const hAcid = Math.max(2, acidSolubility * scale) * ease(ramp(frame, tAcid, 24));
+	const hAcid = (reviewedMedicine ? acidSolubility * scale : Math.max(2, acidSolubility * scale)) * ease(ramp(frame, tAcid, 24));
 	const hSalt = saltSolubility * scale * ease(ramp(frame, tSalt, 40));
 	const AX = 118, SX = 272, BWd = 74;
 	const enter = ramp(frame, 0, 18);
@@ -395,11 +401,11 @@ const SaltsMode = ({
 		<g>
 			{/* Left: solubility to scale */}
 			<g opacity={enter}>
-				<text x={195} y={40} textAnchor="middle" fill={TOK.ink} fontSize={23} fontWeight={800}>Aspirin in water</text>
+				<text x={195} y={40} textAnchor="middle" fill={TOK.ink} fontSize={23} fontWeight={800}>{reviewedMedicine ? 'Illustrative data only' : 'Aspirin in water'}</text>
 			</g>
 			<g opacity={ramp(frame, tNote, 16)}>
-				<text x={195} y={70} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>Salt forms (e.g. morphine sulfate):</text>
-				<text x={195} y={92} textAnchor="middle" fill={TOK.ink} fontSize={16} fontWeight={800}>fix solubility, not membrane crossing</text>
+				<text x={195} y={70} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>{reviewedMedicine ? 'Not measured aspirin solubilities' : 'Salt forms (e.g. morphine sulfate):'}</text>
+				<text x={195} y={92} textAnchor="middle" fill={TOK.ink} fontSize={16} fontWeight={800}>{reviewedMedicine ? 'Salt formation is not a universal fix' : 'fix solubility, not membrane crossing'}</text>
 			</g>
 			<DioramaPlinth id={id} cx={195} cy={PCY} rx={160}>
 				<g opacity={enter}>
@@ -413,18 +419,18 @@ const SaltsMode = ({
 					<ellipse cx={AX} cy={PCY} rx={BWd / 2} ry={7} fill="none" stroke={TOK.inkMute} strokeWidth={1.5} strokeDasharray="4 4" />
 				</g>
 				<g opacity={ramp(frame, tAcid + 10, 14)}>
-					<text x={AX} y={PCY - hAcid - 16} textAnchor="middle" fill={INK_HA} fontSize={19} fontWeight={800}>about 3 g/L</text>
+					<text x={AX} y={PCY - hAcid - 16} textAnchor="middle" fill={INK_HA} fontSize={19} fontWeight={800}>{reviewedMedicine ? `${acidSolubility} g/L` : 'about 3 g/L'}</text>
 					<text x={AX} y={PCY + 38} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>free acid</text>
 				</g>
 				<g opacity={ramp(frame, tSalt + 36, 14)}>
-					<text x={SX} y={PCY - saltSolubility * scale - 16} textAnchor="middle" fill={INK_A} fontSize={19} fontWeight={800}>over 500 g/L</text>
+					<text x={SX} y={PCY - saltSolubility * scale - 16} textAnchor="middle" fill={INK_A} fontSize={19} fontWeight={800}>{reviewedMedicine ? `${saltSolubility} g/L` : 'over 500 g/L'}</text>
 				</g>
 				<g opacity={ramp(frame, tSalt, 14)}>
-					<text x={SX} y={PCY + 38} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>sodium salt</text>
+					<text x={SX} y={PCY + 38} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={800}>{reviewedMedicine ? 'salt form' : 'sodium salt'}</text>
 				</g>
 			</DioramaPlinth>
 			<g opacity={ramp(frame, tFold, 16)}>
-				<text x={AX + 8} y={262} textAnchor="middle" fill={TOK.ink} fontSize={24} fontWeight={800}>{foldLabel}</text>
+				<text x={AX + 8} y={262} textAnchor="middle" fill={TOK.ink} fontSize={24} fontWeight={800}>{reviewedMedicine ? `${illustrativeSolubilityRatio(acidSolubility,saltSolubility).toFixed(1)}-fold` : foldLabel}</text>
 				<text x={AX + 8} y={288} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={700}>jump</text>
 				<Arrow x1={AX + 8} y1={352} x2={AX + 8} y2={306} color={TOK.inkDim} width={3} head={12} progress={ramp(frame, tFold, 20)} />
 			</g>
@@ -433,7 +439,7 @@ const SaltsMode = ({
 
 			{/* Right: Ka vs pKa */}
 			<g opacity={panelIn}>
-				<text x={575} y={40} textAnchor="middle" fill={TOK.ink} fontSize={23} fontWeight={800}>Ranking acid strength</text>
+				<text x={575} y={40} textAnchor="middle" fill={TOK.ink} fontSize={23} fontWeight={800}>{reviewedMedicine ? 'Same solvent and temperature' : 'Ranking acid strength'}</text>
 				<text x={575} y={118} textAnchor="middle" fill={TOK.ink} fontSize={19} fontWeight={800}>stronger acid</text>
 				<text x={575} y={414} textAnchor="middle" fill={TOK.inkDim} fontSize={19} fontWeight={700}>weaker acid</text>
 				<Arrow x1={KX} y1={BOTY} x2={KX} y2={TOPY} color={TOK.ink} width={3.5} head={14} />
@@ -459,7 +465,7 @@ const SaltsMode = ({
 };
 
 // ─────────────────────────────────────────────────────────────── hocl
-const HoclMode = ({frame, beats, id, pKa, lowerPH, higherPH}: {frame: number; beats: number[]; id: string; pKa: number; lowerPH: number; higherPH: number}) => {
+const HoclMode = ({frame, beats, id, pKa, lowerPH, higherPH, reviewedWaterHealth}: {frame: number; beats: number[]; id: string; pKa: number; lowerPH: number; higherPH: number; reviewedWaterHealth: boolean}) => {
 	const [tEq1, tEq2, tTag, tHigh, tRise, tVerdict] = beats;
 	const N = ROWS.reduce((s, n) => s + n, 0);
 	const nLow = N * fracIonised(lowerPH, pKa);
@@ -498,11 +504,11 @@ const HoclMode = ({frame, beats, id, pKa, lowerPH, higherPH}: {frame: number; be
 	return (
 		<g>
 			<g opacity={ramp(frame, 0, 16) * (1 - ramp(frame, tEq1 - 16, 16))}>
-				<text x={W / 2} y={60} textAnchor="middle" fill={TOK.ink} fontSize={26} fontWeight={800}>Not how much chlorine,</text>
-				<text x={W / 2} y={94} textAnchor="middle" fill={TOK.inkDim} fontSize={26} fontWeight={800}>but which species is present?</text>
+				<text x={W / 2} y={60} textAnchor="middle" fill={TOK.ink} fontSize={26} fontWeight={800}>{reviewedWaterHealth ? 'Species, concentration' : 'Not how much chlorine,'}</text>
+				<text x={W / 2} y={94} textAnchor="middle" fill={TOK.inkDim} fontSize={26} fontWeight={800}>{reviewedWaterHealth ? 'and contact time all matter' : 'but which species is present?'}</text>
 			</g>
 			<g opacity={ramp(frame, tEq1, 16)}>
-				<text x={W / 2} y={40} textAnchor="middle" fill={TOK.ink} fontSize={26} fontWeight={800}>Cl₂ + H₂O → HOCl + HCl</text>
+				<text x={W / 2} y={40} textAnchor="middle" fill={TOK.ink} fontSize={26} fontWeight={800}>{reviewedWaterHealth ? 'Cl₂ + H₂O ⇌ HOCl + H⁺ + Cl⁻' : 'Cl₂ + H₂O → HOCl + HCl'}</text>
 			</g>
 			<g opacity={ramp(frame, tEq2, 16)}>
 				<text x={W / 2} y={80} textAnchor="middle" fill={TOK.ink} fontSize={26} fontWeight={800}>
@@ -514,14 +520,14 @@ const HoclMode = ({frame, beats, id, pKa, lowerPH, higherPH}: {frame: number; be
 			<g opacity={ramp(frame, tTag, 16)}>
 				<Molecule id={id} atoms={['O', 'H', 'Cl']} x={58} y={128} r={12} />
 				<text x={84} y={137} fill={TOK.ink} fontSize={20} fontWeight={800}>HOCl</text>
-				<Pill x={290} y={130} text="more effective disinfectant" color={TOK.amber} textColor={TOK.amberInk} size={17} strokeWidth={2 + idlePulse(frame) * 1.5} />
+				<Pill x={290} y={130} text={reviewedWaterHealth ? "hypochlorous acid" : "more effective disinfectant"} padX={reviewedWaterHealth ? 12 + (textW("more effective disinfectant", 17) - textW("hypochlorous acid", 17)) / 2 : 12} color={TOK.amber} textColor={TOK.amberInk} size={17} strokeWidth={2 + idlePulse(frame) * 1.5} />
 			</g>
 			<g opacity={ramp(frame, tRise, 16)}>
 				<ellipse cx={470} cy={127} rx={25} ry={19} fill={A_COLOR} opacity={0.45} stroke={A_COLOR} strokeWidth={2} strokeOpacity={0.9} />
 				<Molecule id={id} atoms={['O', 'Cl']} x={470} y={128} r={12} />
 				<text x={483} y={122} fill={TOK.ink} fontSize={21} fontWeight={900}>−</text>
 				<text x={500} y={137} fill={TOK.ink} fontSize={20} fontWeight={800}>OCl⁻</text>
-				<text x={554} y={137} fill={TOK.inkDim} fontSize={17} fontWeight={700}>weaker disinfectant</text>
+				<text x={554} y={137} fill={TOK.inkDim} fontSize={17} fontWeight={700}>{reviewedWaterHealth ? 'hypochlorite ion' : 'weaker disinfectant'}</text>
 			</g>
 
 			<g opacity={ramp(frame, tHigh, 16)}>
@@ -543,30 +549,40 @@ const HoclMode = ({frame, beats, id, pKa, lowerPH, higherPH}: {frame: number; be
 				<text x={565} y={462} textAnchor="middle" fill={INK_A} fontSize={22} fontWeight={800}>Mostly OCl⁻</text>
 			</g>
 			<g opacity={ramp(frame, tVerdict, 16)}>
-				<Pill x={195} y={496} text="stronger disinfection" color={TOK.amber} textColor={TOK.amberInk} size={18} strokeWidth={2 + idlePulse(frame) * 1.5} />
-				<text x={565} y={502} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={700}>weaker disinfection</text>
+				<Pill x={195} y={496} text={reviewedWaterHealth ? "more HOCl" : "stronger disinfection"} padX={reviewedWaterHealth ? 12 + (textW("stronger disinfection", 18) - textW("more HOCl", 18)) / 2 : 12} color={TOK.amber} textColor={TOK.amberInk} size={18} strokeWidth={2 + idlePulse(frame) * 1.5} />
+				<text x={565} y={502} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={700}>{reviewedWaterHealth ? 'more OCl⁻' : 'weaker disinfection'}</text>
 			</g>
 		</g>
 	);
 };
 
 // ─────────────────────────────────────────────────────────────── root
-export const IonisationDiagram = ({
-	delay = 62,
-	mode = 'hh',
-	beats,
-	pKa = 3.5,
-	stomachRange = [1, 2],
-	intestineRange = [6, 7],
-	stomachPH = 2,
-	intestinePH = 6,
-	hoclPKa = 7.5,
-	lowerPH = 6.5,
-	higherPH = 8.5,
-	acidSolubility = 3,
-	saltSolubility = 500,
-	foldLabel = '160-fold',
-}: IonisationProps) => {
+export const IonisationDiagram = (props: IonisationProps) => {
+	const {
+		delay = 62,
+		mode = 'hh',
+		reviewedMedicine = false,
+		reviewedWaterHealth = false,
+		beats,
+		pKa = 3.5,
+		stomachRange = [1, 2],
+		intestineRange = [6, 7],
+		stomachPH = 2,
+		intestinePH = 6,
+		hoclPKa = 7.5,
+		lowerPH = 6.5,
+		higherPH = 8.5,
+		acidSolubility = 3,
+		saltSolubility = 500,
+		foldLabel = '160-fold',
+	} = props;
+	if (typeof reviewedWaterHealth !== 'boolean') throw new Error('reviewedWaterHealth must be boolean');
+	if (reviewedWaterHealth) {
+		if (reviewedMedicine) throw new Error('Water-health and medicine opt-ins cannot be combined');
+		if (mode !== 'hocl') throw new Error('Reviewed water-health ionisation is limited to hocl mode');
+		if (![hoclPKa, lowerPH, higherPH].every(Number.isFinite) || !(lowerPH < hoclPKa && hoclPKa < higherPH)) throw new Error('Reviewed HOCl requires finite pH values below and above pKa');
+	}
+	validateReviewedMedicineDiagram({type: 'diorama', kind: 'chem12m8Ionisation', props});
 	const frame = useCurrentFrame() - delay;
 	useAccent();
 	const b = beats && beats.length >= DEFAULT_BEATS[mode].length ? beats : DEFAULT_BEATS[mode];
@@ -579,17 +595,26 @@ export const IonisationDiagram = ({
 		hocl: 'Chlorine and water give HOCl and HCl; HOCl ionises to H+ and OCl-. At lower pH the chlorine is mostly HOCl, the more effective disinfectant; at higher pH it is mostly OCl-, the weaker one.',
 	};
 
+	if (reviewedMedicine) {
+		aria.forms = 'Simplified passive lipid-diffusion illustration of unionised HA and ionised A-. It does not model every transport route or predict total absorption.';
+		aria.hh = 'Ideal dilute single-site weak-acid equilibrium. The ratio is calculated; displayed particle counts are rounded and do not measure absorption.';
+		aria.compare = `Ideal weak-acid model with pKa ${pKa}, sampled at pH ${stomachPH} and ${intestinePH}. Equilibrium ionisation fractions, not absorption percentages; particle counts are rounded.`;
+		aria.salts = `Illustrative free-acid and salt solubilities of ${acidSolubility} and ${saltSolubility} g/L. These are not measured aspirin values or a universal prediction. Compare acid strength in the same solvent and temperature.`;
+	}
+	if (reviewedWaterHealth) {
+		aria.hocl = 'Illustrative ideal HOCl and OCl⁻ equilibrium at the same total free chlorine concentration. Lower pH favours more HOCl; higher pH favours more OCl⁻. This speciation model does not predict treatment efficacy by itself: species, concentration and contact time all matter, together with water quality, temperature and the target organism.';
+	}
 	return (
 		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={aria[mode]} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={id} elements={['O', 'H', 'Cl']} />
 			<GlossDefs id={id} colors={{...ACID_GLOSS, knob: '#6a6a6a'}} />
-			{mode === 'forms' && <FormsMode frame={frame} beats={b} id={id} />}
-			{mode === 'hh' && <HHMode frame={frame} beats={b} id={id} />}
+			{mode === 'forms' && <FormsMode frame={frame} beats={b} id={id} reviewedMedicine={reviewedMedicine} />}
+			{mode === 'hh' && <HHMode frame={frame} beats={b} id={id} reviewedMedicine={reviewedMedicine} />}
 			{mode === 'compare' && (
-				<CompareMode frame={frame} beats={b} id={id} pKa={pKa} stomachRange={stomachRange} intestineRange={intestineRange} stomachPH={stomachPH} intestinePH={intestinePH} />
+				<CompareMode frame={frame} beats={b} id={id} pKa={pKa} stomachRange={stomachRange} intestineRange={intestineRange} stomachPH={stomachPH} intestinePH={intestinePH} reviewedMedicine={reviewedMedicine} />
 			)}
-			{mode === 'salts' && <SaltsMode frame={frame} beats={b} id={id} acidSolubility={acidSolubility} saltSolubility={saltSolubility} foldLabel={foldLabel} />}
-			{mode === 'hocl' && <HoclMode frame={frame} beats={b} id={id} pKa={hoclPKa} lowerPH={lowerPH} higherPH={higherPH} />}
+			{mode === 'salts' && <SaltsMode frame={frame} beats={b} id={id} acidSolubility={acidSolubility} saltSolubility={saltSolubility} foldLabel={foldLabel} reviewedMedicine={reviewedMedicine} />}
+			{mode === 'hocl' && <HoclMode frame={frame} beats={b} id={id} pKa={hoclPKa} lowerPH={lowerPH} higherPH={higherPH} reviewedWaterHealth={reviewedWaterHealth} />}
 		</svg>
 	);
 };

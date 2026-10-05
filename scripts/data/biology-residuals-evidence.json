@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-04",
+  "baseCommit": "013bb2984e1ac371c201dcd46733cb91850443ab",
+  "semanticLedgerSha256": "eb9f02e446808433c32bdbff1a2066e3d6ef62ea9668725fc0661da310d6c7b8",
+  "status": "five complete isolated unvoiced source proposals; independent review pending",
+  "catalogueEdited": false,
+  "audioGenerated": false,
+  "published": false,
+  "lessons": {
+    "biology-y11-m1-l07-fluid-mosaic-membrane": {
+      "finding": "original:A10",
+      "sourceSha256": "68783b0fb2b4398318d4ef280fb413725a58ac942da993a5faaeffc2bdfc3b2d",
+      "remedyStatus": "complete isolated proposal prepared; preserved catalogue finding remains open",
+      "sourceEvidence": [
+        {
+          "title": "Entova et al. (2018), Insights into the key determinants of membrane protein topology enable the identification of new monotopic folds",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6133551/",
+          "kind": "primary research",
+          "reviewed": "full-text abstract, introduction and topology evidence",
+          "supports": "PglC supplies a membrane-embedded reentrant example that does not span the bilayer. Integral and transmembrane must not be treated as synonyms.",
+          "limit": "A structural example does not establish all membrane-protein classes or universal transport behaviour."
+        },
+        {
+          "title": "Influence of Cholesterol on Phospholipid Bilayer Structure and Dynamics (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27771953/",
+          "kind": "primary modelling study",
+          "reviewed": "indexed abstract",
+          "supports": "Membrane behaviour depends on composition, saturation, cholesterol and temperature.",
+          "limit": "Do not turn a model-bilayer trend into an exact clinical or universal cell prediction."
+        }
+      ],
+      "curriculum": {
+        "edition": "Biology 11–12 (2025)",
+        "yearLevel": "Year 11",
+        "focusArea": "Cells as the basis of life",
+        "selectedOriginalWording": [
+          "Use the fluid mosaic model of the cell membrane to explain the structure and function of protein channels, phospholipids, peripheral proteins, integral proteins, cholesterol and glycoproteins"
+        ],
+        "originalOutcomeCodes": [
+          "BI-11-01"
+        ],
+        "contentUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+        "courseUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/overview/course",
+        "reviewedOn": "2026-10-04",
+        "implementation": "Year 11 starts Term 1 2027; Year 12 starts Term 4 2027; first new HSC 2028. In 2026 the 2017 course remains current.",
+        "scope": "Existing metadata is preserved as a future-cohort target. Module identifiers remain catalogue organisation, not new-syllabus focus-area names.",
+        "evidenceBoundary": "Learner explanation or documented source/model investigation is required; coverage and outcome achievement are not certified."
+      },
+      "fixInventory": [
+        "Integral versus transmembrane corrected in definition, summary, question and diagram labels.",
+        "Na⁺ channels are one specified route; passive ion direction depends on electrochemical gradient.",
+        "Cholesterol effects and lateral mobility are qualified; unsupported guaranteed leaky-membrane prediction removed."
+      ],
+      "independentTask": {
+        "prompt": "A protein has a hydrophobic segment embedded in one leaflet. Both ends remain on the cytoplasmic side. Is it integral, transmembrane, or both?",
+        "answer": [
+          "It is integral because it is embedded in the bilayer.",
+          "It is not transmembrane because it does not cross to the other side.",
+          "This is a monotopic topology."
+        ],
+        "thinkingSeconds": 60,
+        "assessmentStatus": "original formative prompt, not an official NESA examination item or validated assessment"
+      }
+    },
+    "biology-y11-m2-l19-the-nephron": {
+      "finding": "original:A02",
+      "sourceSha256": "aa42bd09f7089a2d0d5729919159c5ee7e80bb585ecc649643d4f6ce1e9af85b",
+      "remedyStatus": "complete isolated proposal prepared; preserved catalogue finding remains open",
+      "sourceEvidence": [
+        {
+          "title": "Lei et al. (2011), Role of thin descending limb urea transport in renal urea handling and the urine concentrating mechanism",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21849488/",
+          "kind": "primary research",
+          "reviewed": "PubMed abstract and indexed figure descriptions",
+          "supports": "Transporter-knockout experiments investigate urea recycling and urine concentration, inconsistent with treating urea as never reabsorbed.",
+          "limit": "Mouse transporter effects are not universal human fractions. The source does not supply the synthetic balance values."
+        },
+        {
+          "title": "NIDDK, Your Kidneys & How They Work",
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work",
+          "kind": "official patient information",
+          "reviewed": "glomerulus, tubule and hormone sections",
+          "supports": "Basic nephron structures, return of water and nutrients, waste removal and endocrine functions.",
+          "limit": "Patient-facing simplification is supplemented with primary urea evidence."
+        },
+        {
+          "title": "Layton and Layton (2019), A computational model of epithelial solute and water transport along a human nephron",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6405173/",
+          "kind": "primary modelling research",
+          "reviewed": "indexed abstract and methods specifying the steady-state model",
+          "supports": "Renal transport models explicitly state whether accumulation is excluded by steady-state assumptions.",
+          "limit": "The draft uses an independently derived finite-interval conservation balance with zero net tubular accumulation and no other sources or sinks. The paper does not supply the synthetic 60/40-unit answer values."
+        }
+      ],
+      "curriculum": {
+        "edition": "Biology 11–12 (2025)",
+        "yearLevel": "Year 11",
+        "focusArea": "Cells to systems",
+        "selectedOriginalWording": [
+          "Explain how glomerular filtration, selective reabsorption and secretion contribute to the removal of waste in nephrons",
+          "Use models to explain how the glomerulus, Bowman’s capsule and nephron tubules contribute to filtration and reabsorption for waste removal in the kidney"
+        ],
+        "originalOutcomeCodes": [
+          "BI-11-02"
+        ],
+        "contentUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa79a477bc",
+        "courseUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/overview/course",
+        "reviewedOn": "2026-10-04",
+        "implementation": "Year 11 starts Term 1 2027; Year 12 starts Term 4 2027; first new HSC 2028. In 2026 the 2017 course remains current.",
+        "scope": "Existing metadata is preserved as a future-cohort target. Module identifiers remain catalogue organisation, not new-syllabus focus-area names.",
+        "evidenceBoundary": "Learner explanation or documented source/model investigation is required; coverage and outcome achievement are not certified."
+      },
+      "fixInventory": [
+        "Urea reabsorption/recycling and positive net excretion agree in all scene copy and answers.",
+        "Filtration has physical selectivity, not zero selectivity or universal passage of every small molecule.",
+        "Synthetic amount balance replaces an over-specific glucose/diabetes inference; matched interval and units are stated.",
+        "Finite-interval arithmetic explicitly assumes unchanged tubular solute content and no other production, consumption, sources or sinks."
+      ],
+      "independentTask": {
+        "prompt": "A synthetic interval has 80 units filtered, 50 reabsorbed and 10 secreted. Assume unchanged tubular solute content over the interval and no other sources or sinks, including production or consumption. What is net excretion? Does it imply no reabsorption occurred?",
+        "answer": [
+          "With unchanged tubular solute content and no other sources or sinks: 80 − 50 + 10 = 40 units excreted.",
+          "No. The data explicitly include 50 units reabsorbed.",
+          "Positive net excretion and reabsorption can coexist."
+        ],
+        "thinkingSeconds": 60,
+        "assessmentStatus": "original formative prompt, not an official NESA examination item or validated assessment"
+      },
+      "calculationContract": {
+        "sameSoluteAndInterval": true,
+        "unchangedTubularSoluteContent": true,
+        "noOtherSourcesOrSinks": true,
+        "excludedProcesses": "No other production, consumption or unlisted inflow/outflow.",
+        "rationale": "Conservation over a finite interval includes change in tubular solute content. The simplified excreted = filtered − reabsorbed + secreted relation applies only when accumulation and other net production/consumption terms are zero.",
+        "numbers": "100 − 60 + 20 = 60; 80 − 50 + 10 = 40, under the explicit assumptions."
+      }
+    },
+    "biology-y11-m2-l20-renal-dialysis": {
+      "finding": "original:A03",
+      "sourceSha256": "c1a4b5ec2aef8f1033bf119b596b2bd91e5dd230fb15fd55fce674433e3f9671",
+      "remedyStatus": "complete isolated proposal prepared; preserved catalogue finding remains open",
+      "sourceEvidence": [
+        {
+          "title": "Model of fluid and solute shifts during hemodialysis with active transport of sodium and potassium (2018)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6310262/",
+          "kind": "primary modelling research",
+          "reviewed": "transport model, fluid removal and solute-flow description",
+          "supports": "The dialyser model separates water ultrafiltration from diffusive and convective solute transfer.",
+          "limit": "Model parameters and predictions are not a treatment prescription or full clinical validation."
+        },
+        {
+          "title": "NIDDK, Hemodialysis",
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/hemodialysis",
+          "kind": "official patient information",
+          "reviewed": "function, limitations and treatment schedules",
+          "supports": "Haemodialysis replaces part of kidney function and treatment schedules vary.",
+          "limit": "Do not infer an individual treatment choice or universal glucose/salt balance."
+        }
+      ],
+      "curriculum": {
+        "edition": "Biology 11–12 (2025)",
+        "yearLevel": "Year 11",
+        "focusArea": "Cells to systems",
+        "selectedOriginalWording": [
+          "Conduct a secondary-source investigation to compare the process of renal dialysis to the function of the kidney"
+        ],
+        "originalOutcomeCodes": [
+          "BI-11-02"
+        ],
+        "contentUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa79a477bc",
+        "courseUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/overview/course",
+        "reviewedOn": "2026-10-04",
+        "implementation": "Year 11 starts Term 1 2027; Year 12 starts Term 4 2027; first new HSC 2028. In 2026 the 2017 course remains current.",
+        "scope": "Existing metadata is preserved as a future-cohort target. Module identifiers remain catalogue organisation, not new-syllabus focus-area names.",
+        "evidenceBoundary": "Learner explanation or documented source/model investigation is required; coverage and outcome achievement are not certified."
+      },
+      "fixInventory": [
+        "Diffusion-only hook/summary removed; ultrafiltration and convection distinguished.",
+        "No universal no-loss glucose/salt claim, schedule, survival deadline or transplant recommendation retained.",
+        "Dialysis scope is haemodialysis; sources evaluated by evidence without an automatic institutional ranking."
+      ],
+      "independentTask": {
+        "prompt": "A simple membrane model has urea higher in blood than fresh dialysate. What drives net urea diffusion? What separately drives excess-water removal in haemodialysis?",
+        "answer": [
+          "The urea concentration difference drives net diffusion towards dialysate.",
+          "A controlled transmembrane pressure difference drives ultrafiltration of water.",
+          "The two processes are distinct; some solute may also move by convection."
+        ],
+        "thinkingSeconds": 60,
+        "assessmentStatus": "original formative prompt, not an official NESA examination item or validated assessment"
+      }
+    },
+    "biology-y11-m2-l11-measuring-transpiration-rate": {
+      "finding": "original:A13",
+      "sourceSha256": "bf44c558bdc1a633cf0ee09cd7a4d8d8e461f13efd5ee7c5c8408e7035f2dec9",
+      "remedyStatus": "complete isolated proposal prepared; preserved catalogue finding remains open",
+      "sourceEvidence": [
+        {
+          "title": "Ehrler, van Bavel and Nakayama (1966), Transpiration, Water Absorption, and Internal Water Balance of Cotton Plants as Affected by Light and Changes in Saturation Deficit",
+          "url": "https://academic.oup.com/plphys/article/41/1/71/6090660",
+          "doi": "10.1104/pp.41.1.71",
+          "kind": "primary research",
+          "reviewed": "publisher abstract describing simultaneous water-balance measurements",
+          "supports": "Measured water absorption can lag a transpiration response and internal water content changes.",
+          "limit": "The cotton experiment supports the possibility of transient divergence, not an exact bias for every cut-shoot potometer."
+        }
+      ],
+      "curriculum": {
+        "edition": "Biology 11–12 (2025)",
+        "yearLevel": "Year 11",
+        "focusArea": "Cells to systems",
+        "selectedOriginalWording": [
+          "Conduct a practical investigation to demonstrate the effect of an environmental factor on the rate of transpiration"
+        ],
+        "originalOutcomeCodes": [],
+        "contentUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa79a477bc",
+        "courseUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/overview/course",
+        "reviewedOn": "2026-10-04",
+        "implementation": "Year 11 starts Term 1 2027; Year 12 starts Term 4 2027; first new HSC 2028. In 2026 the 2017 course remains current.",
+        "scope": "Existing metadata is preserved as a future-cohort target. Module identifiers remain catalogue organisation, not new-syllabus focus-area names.",
+        "evidenceBoundary": "Actual teacher-supervised investigation, learner construction/measurements and records required; synthetic examples and viewing do not satisfy conduct."
+      },
+      "fixInventory": [
+        "Uptake is a conditional proxy; storage can reverse bias direction.",
+        "Linear bubble speed separated from volume flow; capillary calibration and units explicit.",
+        "Controls, acclimation and order effects qualify causal claims; repeats do not prove accuracy."
+      ],
+      "independentTask": {
+        "prompt": "In a simplified 5-minute water balance, a shoot takes up 20 μL and loses 26 μL by transpiration. Neglect metabolism and other fluxes. What happens to stored water, and which rate is larger?",
+        "answer": [
+          "Storage change = 20 − 26 = −6 μL.",
+          "Uptake rate = 20 ÷ 5 = 4.0 μL/min.",
+          "Transpiration rate = 26 ÷ 5 = 5.2 μL/min.",
+          "Stored water decreased, so transpiration exceeded uptake in this interval."
+        ],
+        "thinkingSeconds": 60,
+        "assessmentStatus": "original formative prompt, not an official NESA examination item or validated assessment"
+      }
+    },
+    "biology-y11-m1-l24-meiosis": {
+      "finding": "original:A23",
+      "sourceSha256": "9bd0169be333fc55d429dc0e885ba313e8aeb4d19036e9fbcee21751283d2c83",
+      "remedyStatus": "complete isolated proposal prepared; preserved catalogue finding remains open",
+      "sourceEvidence": [
+        {
+          "title": "Bell et al. (2020), Insights into variation in meiosis from 31,228 human sperm genomes",
+          "url": "https://www.nature.com/articles/s41586-020-2347-0",
+          "alternate": "https://pubmed.ncbi.nlm.nih.gov/32494014/",
+          "kind": "primary research",
+          "reviewed": "indexed article abstract and data-availability record",
+          "supports": "Observed crossover and meiotic outcomes vary among sperm and donors.",
+          "limit": "This observational sample cannot establish that every gamete is unique. The no-crossover countermodel and 2ⁿ calculations are explicit mathematical constructions, not measured claims from this paper."
+        }
+      ],
+      "curriculum": {
+        "edition": "Biology 11–12 (2025)",
+        "yearLevel": "Year 11",
+        "focusArea": "Cells as the basis of life",
+        "selectedOriginalWording": [
+          "Describe the processes of crossing over, independent assortment and random segregation during meiosis",
+          "Conduct a practical investigation to model the named phases of meiosis and cytokinesis"
+        ],
+        "originalOutcomeCodes": [
+          "BI-11-01",
+          "BI-11WS-02"
+        ],
+        "contentUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+        "courseUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/overview/course",
+        "reviewedOn": "2026-10-04",
+        "implementation": "Year 11 starts Term 1 2027; Year 12 starts Term 4 2027; first new HSC 2028. In 2026 the 2017 course remains current.",
+        "scope": "Existing metadata is preserved as a future-cohort target. Module identifiers remain catalogue organisation, not new-syllabus focus-area names.",
+        "evidenceBoundary": "Actual teacher-supervised investigation, learner construction/measurements and records required; synthetic examples and viewing do not satisfy conduct."
+      },
+      "fixInventory": [
+        "Guaranteed uniqueness removed throughout all learner-visible copy and answers.",
+        "2ⁿ possible parental-origin combinations distinguished from one meiosis and allele genotype count.",
+        "Non-sister crossing over, two-pair modelling and life-cycle scope stated.",
+        "Opt-in diagrams show single chromatids in post-meiosis gametes and label possible types honestly."
+      ],
+      "independentTask": {
+        "prompt": "A model has 2n = 6 with distinguishable parental-origin homologues and independent assortment, ignoring crossing over. How many whole-chromosome combinations are possible across many meioses? Does one meiosis produce that many cells?",
+        "answer": [
+          "2n = 6 gives n = 3 homologous pairs.",
+          "2³ = 8 possible whole-chromosome combinations across many meioses.",
+          "One completed meiosis has four haploid nuclear products, not eight.",
+          "This count does not guarantee distinct allele genotypes at every locus."
+        ],
+        "thinkingSeconds": 60,
+        "assessmentStatus": "original formative prompt, not an official NESA examination item or validated assessment"
+      }
+    }
+  }
+}

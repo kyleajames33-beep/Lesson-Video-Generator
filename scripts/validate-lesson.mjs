@@ -1,3 +1,10 @@
+import {validateBiologyResidualDiagram} from '../src/slides/diagrams/biology-residuals-models.mjs';
+import {validateAnalyticalDiagram} from '../src/slides/diagrams/analytical-inference-models.mjs';
+import {validateSafetyMedicineDiagram} from '../src/slides/diagrams/safety-medicine-models.mjs';
+import {validateWaterHealthDiagram} from '../src/slides/diagrams/water-health-models.mjs';
+import {validateReviewedPolymerDiagram} from '../src/slides/diagrams/reviewed-polymer-models.mjs';
+import {validatePriorityScienceDiagram} from '../src/slides/diagrams/priority-science-models.mjs';
+import {validateReviewedMedicineDiagram} from '../src/slides/diagrams/medicine-models.mjs';
 import {existsSync, readFileSync, readdirSync} from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
@@ -191,6 +198,13 @@ const validateDiagram = (diagram, errors, pathLabel) => {
     errors.push(`${pathLabel}: unsupported diagram type "${diagram.type}"`);
   }
   try {
+    validateBiologyResidualDiagram(diagram);
+    validateAnalyticalDiagram(diagram);
+    validateSafetyMedicineDiagram(diagram);
+    validateWaterHealthDiagram(diagram);
+    validateReviewedMedicineDiagram(diagram);
+    validatePriorityScienceDiagram(diagram);
+    validateReviewedPolymerDiagram(diagram);
     validateQuantitativeDiagram(diagram, {requireCues: false});
     if (diagram.type === 'circuit3d') validateSeriesCircuit(diagram.components, diagram.showCurrent);
     if (diagram.type === 'orbit') validateShellOccupancy(diagram.electrons);

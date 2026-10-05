@@ -1,0 +1,281 @@
+{
+  "chemistry-y11-m1-l3-separation-physical-methods": {
+    "sources": [
+      {
+        "url": "https://www.acs.org/content/dam/acsorg/about/governance/committees/chemicalsafety/publications/safety-in-academic-chemistry-laboratories-students.pdf",
+        "scope": "ACS manual printed p51/PDF p53 identifies distillation heating to dryness as a hazard. Separate teacher-approved salt recovery is an instructional repair, not a method specified by ACS.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://pubs.usgs.gov/bul/0669/report.pdf",
+        "scope": "Official compiled NaCl solubility values support only the qualitative modest temperature dependence. No precision model or high cooling yield is asserted.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://pubs.acs.org/doi/10.1021/acs.oprd.0c00166",
+        "scope": "Primary crystallisation research documents impurity incorporation, adhering material and trapped mother liquor. Purity is not guaranteed by a fixed recrystallisation count.",
+        "checked": "2026-10-04"
+      }
+    ],
+    "curriculum": {
+      "sourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "syllabusSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42",
+      "publishedReferences": [
+        {
+          "id": "p696",
+          "text": "Inquiry question: How do the properties of substances help us to classify and separate them?",
+          "textSha256": "131574d871ee5b12cbac7edf03d638a4dd4b03dc4e3651d9c3c487dbf6a8f702"
+        },
+        {
+          "id": "p699",
+          "text": "explore homogeneous mixtures and heterogeneous mixtures through practical investigations:",
+          "textSha256": "b4f0bdb5877a9a083ae1582337a1c06d4282cd6bad06fdc4417a861b0134e467"
+        },
+        {
+          "id": "p700",
+          "text": "using separation techniques based on physical properties (ACSCH026)",
+          "textSha256": "17a7cba0aec0f66e4f2fa75b9ed113b23d749a45061dca139322d32881a5d95e"
+        }
+      ],
+      "scope": "2017 source context retained. Separation supports physical-property investigations without certifying a completed practical. Medicine L13/L14 are enrichment; they do not replace prescribed NMR, IR or mass-spectrometry coverage. No clinical advice, HSC marking entitlement, practical approval or 2025 remapping is certified.",
+      "originalMapping": {
+        "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+        "syllabusModule": "Module 1: Properties and Structure of Matter",
+        "syllabusDotPoints": [
+          "explore homogeneous mixtures and heterogeneous mixtures through practical investigations:"
+        ],
+        "nesaOutcomes": [
+          "CH11-8",
+          "CH11/12-2",
+          "CH11/12-3",
+          "CH11/12-4",
+          "CH11/12-7"
+        ]
+      }
+    }
+  },
+  "chemistry-y12-m8-l13-optical-isomerism-chirality": {
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/7702998/",
+        "scope": "Eriksson et al. 1995 direct human separate-enantiomer/racemate dosing study reports rapid thalidomide R/S interconversion.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/development-new-stereoisomeric-drugs",
+        "scope": "Official evaluation guidance: assess individual activity, toxicity, disposition and interconversion; a single isomer can be more toxic than its racemate.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://old.goldbook.iupac.org/html/O/O04313.html",
+        "scope": "IUPAC optical rotatory power defines concentration/path-length normalization; zero-signal nonuniqueness follows from the measurement model and stated missing information.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.260-217.pdf",
+        "scope": "NIST original optical-rotation reference report documents wavelength, temperature, calibration and uncertainty controls.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://pubs.acs.org/doi/abs/10.1021/acs.oprd.1c00320",
+        "scope": "Primary chiral-crystallisation measurement combines polarimetry with concentration/impurity data and specified optical conditions.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://goldbook.iupac.org/terms/view/C01058",
+        "scope": "IUPAC chirality: non-superimposability on a mirror image is the definition; a tetrahedral carbon stereocentre is one common example. Official indexed definition checked; direct page returned HTTP 403, with no bypass.",
+        "checked": "2026-10-04"
+      }
+    ],
+    "curriculum": {
+      "sourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "syllabusSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42",
+      "publishedReferences": [
+        {
+          "id": "p1306",
+          "text": "investigate the processes used to analyse the structure of simple organic compounds addressed in the course, including but not limited to:",
+          "textSha256": "9cd83ea63d097a024f6a1eb619d18b6771edc7b2801de4c2102169eabf24c234"
+        },
+        {
+          "id": "p1307",
+          "text": "proton and carbon-13 NMR",
+          "textSha256": "85ec7a70f40b89418adc58d67ddd35ea2deb4f0aafc3ca58c6f3e45f1d5b6d76"
+        },
+        {
+          "id": "p1308",
+          "text": "mass spectrometry",
+          "textSha256": "b51d2b8f407c1713a735947cea4ba7005685e537264071d1ec03b41d36c3ee44"
+        },
+        {
+          "id": "p1309",
+          "text": "infrared spectroscopy (ACSCH130)",
+          "textSha256": "f44eb5527f89ab886f05100bab8e00665db2ce58dfbd79fbce978e4a64a97d8d"
+        },
+        {
+          "id": "p1314",
+          "text": "evaluate the factors that need to be considered when designing a chemical synthesis process, including but not limited to:",
+          "textSha256": "f3a7228c951d5c0fd4213a75408453f48cd035855b8367086587938137dc97d0"
+        },
+        {
+          "id": "p1315",
+          "text": "availability of reagents",
+          "textSha256": "9edf76a4b60089cced22ae30ad527c4c0d723f1a853ce9c8ad0efe87ead2317e"
+        },
+        {
+          "id": "p1316",
+          "text": "reaction conditions (ACSCH133)",
+          "textSha256": "8008f07b40571c6671cc6e85a057f8e4ce5cf91c5d3fcbab3c495772c4854ff0"
+        },
+        {
+          "id": "p1317",
+          "text": "yield and purity (ACSCH134)",
+          "textSha256": "06f16631c7d9fbdd18d760be94060edba0c36e0c081403498fd5033bd5bd190b"
+        },
+        {
+          "id": "p1318",
+          "text": "industrial uses (eg pharmaceutical, cosmetics, cleaning products, fuels) (ACSCH131)",
+          "textSha256": "a84a8401cbd156f6b2671c7666a6925550ca39ed7ad599932f9ee195dc9ea089"
+        },
+        {
+          "id": "p1319",
+          "text": "environmental, social and economic issues",
+          "textSha256": "81b905e54b18c6d389ac6bbc03b49166bd7055ab5ef3876b93f23f9c8fff698e"
+        }
+      ],
+      "scope": "2017 source context retained. Separation supports physical-property investigations without certifying a completed practical. Medicine L13/L14 are enrichment; they do not replace prescribed NMR, IR or mass-spectrometry coverage. No clinical advice, HSC marking entitlement, practical approval or 2025 remapping is certified.",
+      "originalMapping": {
+        "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+        "syllabusModule": "Module 8: Applying Chemical Ideas",
+        "syllabusDotPoints": [
+          "investigate the processes used to analyse the structure of simple organic compounds addressed in the course",
+          "examine the structural formulae and properties of optical isomers (enantiomers) and their significance in medicine"
+        ],
+        "nesaOutcomes": [
+          "CH12-15",
+          "CH11/12-1",
+          "CH11/12-2",
+          "CH11/12-3",
+          "CH11/12-4",
+          "CH11/12-7"
+        ]
+      }
+    }
+  },
+  "chemistry-y12-m8-l14-solubility-polarity-drug-delivery": {
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11259830/",
+        "scope": "Original Lipinski author abstract gives strictly greater-than risk thresholds (500 mass, calculated logP5, donors5, acceptors10). Boundary values do not exceed them; heuristic does not prove efficacy.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.oecd-ilibrary.org/test-no-117-partition-coefficient-n-octanol-water-hplc-method_5lmqcr2k7slp.pdf",
+        "scope": "OECD authored method distinguishes equilibrium concentration ratio from its base-ten logarithm. Neutral-species partitioning and pH conditions matter.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://goldbook.iupac.org/terms/view/D01817/plain",
+        "scope": "IUPAC distribution ratio includes analytical concentration across forms and depends on conditions, including pH.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=7ab27392-9c6e-4ec3-85e7-06b43fcab3b1&type=display",
+        "scope": "Official codeine label describes mu-opioid agonist activity of weaker affinity than morphine and CYP2D6 morphine formation. No dose, substitution or prescribing recommendation follows.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.fda.gov/industry/generic-drug-user-fee-amendments/fys-2013-2017-gdufa-science-and-research-report-transdermal-drug-products",
+        "scope": "FDA research report supports transdermal delivery avoiding initial gastrointestinal/portal first-pass exposure.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=242759ef-cb6d-4e3e-9f8d-5e31efa1f289",
+        "scope": "Official transdermal product label documents subsequent metabolism and hepatic elimination contribution; used only to disprove bypassing liver forever.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b11026f8-dea0-49ac-8725-0ef7dc27923f",
+        "scope": "Official extended-release oral product label demonstrates that controlled release is not exclusive to patches. No product recommendation is made.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.fda.gov/media/132674/download",
+        "scope": "FDA 2019 draft, nonbinding and not final, identifies formulation/release/permeation and in-vivo performance considerations. Not presented as current binding regulatory requirements.",
+        "checked": "2026-10-04"
+      }
+    ],
+    "curriculum": {
+      "sourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "syllabusSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42",
+      "publishedReferences": [
+        {
+          "id": "p1306",
+          "text": "investigate the processes used to analyse the structure of simple organic compounds addressed in the course, including but not limited to:",
+          "textSha256": "9cd83ea63d097a024f6a1eb619d18b6771edc7b2801de4c2102169eabf24c234"
+        },
+        {
+          "id": "p1307",
+          "text": "proton and carbon-13 NMR",
+          "textSha256": "85ec7a70f40b89418adc58d67ddd35ea2deb4f0aafc3ca58c6f3e45f1d5b6d76"
+        },
+        {
+          "id": "p1308",
+          "text": "mass spectrometry",
+          "textSha256": "b51d2b8f407c1713a735947cea4ba7005685e537264071d1ec03b41d36c3ee44"
+        },
+        {
+          "id": "p1309",
+          "text": "infrared spectroscopy (ACSCH130)",
+          "textSha256": "f44eb5527f89ab886f05100bab8e00665db2ce58dfbd79fbce978e4a64a97d8d"
+        },
+        {
+          "id": "p1314",
+          "text": "evaluate the factors that need to be considered when designing a chemical synthesis process, including but not limited to:",
+          "textSha256": "f3a7228c951d5c0fd4213a75408453f48cd035855b8367086587938137dc97d0"
+        },
+        {
+          "id": "p1315",
+          "text": "availability of reagents",
+          "textSha256": "9edf76a4b60089cced22ae30ad527c4c0d723f1a853ce9c8ad0efe87ead2317e"
+        },
+        {
+          "id": "p1316",
+          "text": "reaction conditions (ACSCH133)",
+          "textSha256": "8008f07b40571c6671cc6e85a057f8e4ce5cf91c5d3fcbab3c495772c4854ff0"
+        },
+        {
+          "id": "p1317",
+          "text": "yield and purity (ACSCH134)",
+          "textSha256": "06f16631c7d9fbdd18d760be94060edba0c36e0c081403498fd5033bd5bd190b"
+        },
+        {
+          "id": "p1318",
+          "text": "industrial uses (eg pharmaceutical, cosmetics, cleaning products, fuels) (ACSCH131)",
+          "textSha256": "a84a8401cbd156f6b2671c7666a6925550ca39ed7ad599932f9ee195dc9ea089"
+        },
+        {
+          "id": "p1319",
+          "text": "environmental, social and economic issues",
+          "textSha256": "81b905e54b18c6d389ac6bbc03b49166bd7055ab5ef3876b93f23f9c8fff698e"
+        }
+      ],
+      "scope": "2017 source context retained. Separation supports physical-property investigations without certifying a completed practical. Medicine L13/L14 are enrichment; they do not replace prescribed NMR, IR or mass-spectrometry coverage. No clinical advice, HSC marking entitlement, practical approval or 2025 remapping is certified.",
+      "originalMapping": {
+        "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+        "syllabusModule": "Module 8: Applying Chemical Ideas",
+        "syllabusDotPoints": [
+          "investigate the structure and action of named medicines in terms of their functional groups",
+          "relate the polarity and solubility of a drug to its absorption and method of delivery"
+        ],
+        "nesaOutcomes": [
+          "CH12-15",
+          "CH11/12-1",
+          "CH11/12-2",
+          "CH11/12-3",
+          "CH11/12-4",
+          "CH11/12-7"
+        ]
+      }
+    }
+  }
+}

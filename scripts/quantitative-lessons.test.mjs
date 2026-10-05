@@ -69,3 +69,18 @@ test('neutralisation whole-lesson copy removes the universal 1:1 water shortcut'
   assert.match(draft.scenes.find((scene) => scene.id === 'concept').voiceover.text, /balanced equation/u);
   assert.match(draft.scenes.find((scene) => scene.id === 'quick-check').answerSteps.join(' '), /0.100 mol H₂O/u);
 });
+test('carbonate back-titration proposal explicitly bounds dissolved CO2 interference in explanation and both questions', async () => {
+  const name = 'chemistry-y12-m6-l18-back-conductometric-titration';
+  const {draft, pacing} = integratedQuantitativeDraft(name, await readFile(`src/data/${name}.json`));
+  for (const id of ['concept-back', 'worked-example', 'quick-check']) {
+    const scene = draft.scenes.find(scene => scene.id === id);
+    assert.match(scene.voiceover.text, /carbon dioxide/iu);
+    assert.match(scene.voiceover.text, /without losing acid/u);
+    assert.match(scene.voiceover.text, /does not contribute to the sodium hydroxide titre/u);
+    if (scene.question) assert.match(scene.question, /CO₂ has been removed without acid loss/u);
+  }
+  const response = pacing.find(scene => scene.scene === 'quick-check').response;
+  assert.match(response.promptText, /carbon dioxide/iu);
+  assert.equal(draft.scenes.find(scene => scene.id === 'quick-check').voiceover.text, `${response.promptText} ${response.answerText}`);
+  assert.match(draft.scenes.find(scene => scene.id === 'summary').points.join(' '), /CO₂/u);
+});

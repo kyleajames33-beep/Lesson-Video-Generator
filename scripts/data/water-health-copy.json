@@ -1,0 +1,725 @@
+{
+  "chemistry-y12-m6-l13-buffers": {
+    "root": {
+      "subtitle": "Finite buffer capacity and a carefully scoped blood model",
+      "lessonIntent": "Explain buffer action, calculate an ideal weak-acid buffer pH, and distinguish the physiological bicarbonate/CO2 relation from a diagnosis.",
+      "examSkill": "Use neutralisation stoichiometry before the equilibrium ratio. Keep guard digits and state the assumptions of the physiological model."
+    },
+    "scenes": {
+      "hook": {
+        "heading": "Why does a buffer change less?",
+        "body": "A hypothetical comparison: add a small acid dose to water and to a prepared buffer of equal volume.",
+        "callout": "The size of the change depends on composition and dose.",
+        "caption": "Buffers resist pH change within their finite capacity; no numerical experiment is claimed.",
+        "voiceover": {
+          "text": "Imagine adding a small amount of acid to two equal volumes, one plain water and one prepared acetate buffer. Provided the buffer components are present in sufficient amounts, the buffer undergoes a smaller pH change. We have not specified concentrations or the acid dose, so we cannot attach numerical pH changes to this comparison. Blood also resists pH change, but it is a much more complex, regulated system. Today we will build the chemical model first, then examine exactly what the blood example can and cannot tell us."
+        }
+      },
+      "concept-what": {
+        "body": "A buffer contains appreciable amounts of a weak conjugate acid/base pair. It resists pH change within a finite capacity.",
+        "bullets": [
+          {
+            "text": "A weak acid HA with its conjugate base A⁻, such as acetic acid/acetate."
+          },
+          {
+            "text": "A weak base with its conjugate acid also works, such as NH₃/NH₄⁺."
+          },
+          {
+            "text": "The components react with small additions of strong acid or base."
+          }
+        ],
+        "secondary": "Buffers need not be neutral. An equal-concentration acetate buffer is near pH 4.74 in the stated ideal model.",
+        "callout": "A conjugate pair in sufficient amounts.",
+        "caption": "Buffer action depends on the pair, its ratio, and the amount of each component.",
+        "voiceover": {
+          "text": "An aqueous buffer contains appreciable amounts of a weak acid and its conjugate base, or equivalently a weak base and its conjugate acid. Acetic acid and acetate are one example; ammonium and ammonia are another. The base component consumes added acid, and the acid component consumes added base. This is neutralisation chemistry that limits the change in pH, rather than holding pH perfectly constant. Buffer capacity is finite. The acetate pair has a pH near its pKa when the concentrations are similar, but changing their ratio changes the pH."
+        }
+      },
+      "concept-mechanism": {
+        "body": "Added acid or base is consumed by the conjugate pair. Small additions change the ratio only slightly.",
+        "bullets": [
+          {
+            "text": "CH₃COO⁻ + H⁺ → CH₃COOH"
+          },
+          {
+            "text": "CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O"
+          },
+          {
+            "text": "Small additions relative to both components give a small ratio change."
+          }
+        ],
+        "secondary": "Moderate dilution approximately preserves pH but lowers capacity per unit volume. Extreme dilution invalidates the simple approximation.",
+        "callout": "Neutralisation occurs; pH change is limited.",
+        "caption": "The buffer consumes added acid or base. Its capacity is finite.",
+        "voiceover": {
+          "text": "For an acetate buffer, acetate reacts with added hydrogen ions to form acetic acid. Acetic acid reacts with hydroxide to form acetate and water. When the added amount is small compared with both buffer components, their concentration ratio changes only a little. That is why the pH changes only a little. Moderate dilution approximately preserves this ratio in the ideal concentration model, but it lowers buffer capacity per unit volume. At high dilution, water ionisation and other departures from the approximation matter. The word resists describes the pH response; it does not mean that neutralisation has failed to occur."
+        }
+      },
+      "definition": {
+        "bullets": [
+          {
+            "text": "Ideal concentration approximation: pH ≈ pKa + log₁₀([A⁻]/[HA])."
+          },
+          {
+            "text": "For fixed total concentration, capacity is greatest near pH = pKa."
+          },
+          {
+            "text": "pKa ± 1 is a working guide, not a strict boundary."
+          },
+          {
+            "text": "React added strong acid/base first; then check remaining components."
+          }
+        ],
+        "callout": "Amounts, ratio and approximation all matter.",
+        "caption": "Use the concentration form of Henderson-Hasselbalch only within its stated approximation.",
+        "voiceover": {
+          "text": "For a suitable dilute aqueous weak-acid buffer, Henderson-Hasselbalch gives pH approximately equal to pKa plus the base-ten logarithm of base concentration divided by acid concentration. The thermodynamic expression uses activities; our calculation approximates them with concentrations. At equal equilibrium concentrations the pH is approximately pKa. For a fixed total concentration, buffer capacity is greatest near that point. The common pKa plus or minus one working range is a guide, not a sharp boundary. After adding strong acid or base, do the stoichiometric reaction first and check that appreciable amounts of both components remain before using their ratio."
+        }
+      },
+      "worked-example": {
+        "question": "An ideal buffer contains 0.15 mol CH₃COOH and 0.10 mol CH₃COONa in 1.00 L. Use Ka = 1.8 × 10⁻⁵. Calculate pH before and after adding 0.01 mol NaOH, neglecting volume change. Report pH to two decimal places.",
+        "coachNote": "Carry the unrounded pKa and ratio. React OH⁻ completely before calculating the new ratio.",
+        "steps": [
+          "pKa = −log₁₀(1.8 × 10⁻⁵) ≈ 4.744727",
+          "Initial pH ≈ −log₁₀(1.8 × 10⁻⁵) + log₁₀(0.10/0.15) ≈ 4.568636 → 4.57",
+          "After OH⁻ addition: n(HA) = 0.14 mol; n(A⁻) = 0.11 mol",
+          "Final pH ≈ −log₁₀(1.8 × 10⁻⁵) + log₁₀(0.11/0.14) ≈ 4.639992 → 4.64",
+          "Both components remain appreciable; calculated increase ≈ 0.0714 pH units."
+        ],
+        "caption": "Carry guard digits: the ideal buffer pH changes from 4.57 to 4.64.",
+        "voiceover": {
+          "text": "Use the supplied acid dissociation constant, one point eight times ten to the minus five, and keep its unrounded negative logarithm in the calculation. Initially the ratio of acetate to acetic acid is nought point one zero divided by nought point one five. The calculated pH is approximately four point five six eight six, which is four point five seven to two decimal places. Added hydroxide consumes nought point zero one moles of acid and makes the same amount of acetate. The new amounts are nought point one four and nought point one one moles. Substituting their ratio gives approximately four point six three nine nine nine, or four point six four. The rise is about nought point zero seven pH units. These are ideal-model calculations, not measured values."
+        }
+      },
+      "concept-blood": {
+        "heading": "The bicarbonate/CO₂ model",
+        "body": "Near 37°C: pH ≈ 6.1 + log₁₀([HCO₃⁻]/[CO₂(aq)]), using the physiological apparent constant.",
+        "bullets": [
+          {
+            "text": "6.1 is an apparent pKa for the coupled CO₂/bicarbonate system."
+          },
+          {
+            "text": "A ratio near 20 gives pH near 7.40 in this model."
+          },
+          {
+            "text": "Lungs, kidneys and other buffers participate in regulation."
+          }
+        ],
+        "secondary": "Do not equate CO₂(aq) with intact H₂CO₃ or treat this simplified model as a clinical diagnosis.",
+        "callout": "Name the denominator: dissolved CO₂.",
+        "caption": "Use the apparent CO₂/bicarbonate relation, not an H₂CO₃-only pKa of 6.1.",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m8Cards",
+          "props": {
+            "cards": [
+              {
+                "icons": [
+                  {
+                    "name": "evidenceStack"
+                  }
+                ],
+                "title": "Chemical ratio",
+                "lines": [
+                  "[HCO₃⁻] / [CO₂(aq)]",
+                  "Apparent pKa ≈ 6.1",
+                  "Near 37°C"
+                ]
+              },
+              {
+                "icons": [
+                  {
+                    "name": "evidenceStack"
+                  }
+                ],
+                "title": "Open regulation",
+                "lines": [
+                  "Lungs exchange CO₂",
+                  "Kidneys regulate bicarbonate",
+                  "Other buffers contribute"
+                ]
+              }
+            ],
+            "footer": {
+              "text": "Ratio ≈ 20 gives pH ≈ 7.40",
+              "sub": "A teaching model, not a diagnosis or unlimited capacity."
+            }
+          }
+        },
+        "voiceover": {
+          "text": "In a simplified physiological model near thirty-seven degrees Celsius, arterial pH is approximately six point one plus the logarithm of bicarbonate concentration divided by dissolved carbon dioxide concentration. Six point one is an apparent pKa for the coupled carbon dioxide and bicarbonate system. It is not the dissociation constant of intact carbonic acid alone. A bicarbonate to dissolved carbon dioxide ratio of about twenty gives a pH near seven point four. Carbon dioxide is exchanged through the lungs, while the kidneys regulate bicarbonate and net acid excretion. Other buffers also contribute. This open, regulated system cannot be represented as an unlimited bottle of weak acid, and the ratio alone cannot identify the cause of a disturbance."
+        }
+      },
+      "misconception": {
+        "heading": "Buffer traps to avoid",
+        "body": "A buffer can be acidic or basic. It does not have to be pH 7.",
+        "secondary": "Its components neutralise added acid/base; the resulting pH change is limited, not abolished. In NH₄⁺/NH₃, NH₄⁺ is the acid.",
+        "callout": "Neutralisation and pH resistance describe the same mechanism.",
+        "caption": "Buffers can neutralise added acid/base while still changing pH.",
+        "voiceover": {
+          "text": "Three corrections matter. A buffer does not have to sit at pH seven. Its pH depends on the acid/base pair and their ratio. Second, it is correct to say that buffer components neutralise added strong acid or base. That reaction explains why pH changes less, but it does not make the buffer inexhaustible or the pH fixed. Third, in an ammonia and ammonium buffer, ammonium is the acid and ammonia is the base. For blood, also name the denominator carefully: the physiological relation uses dissolved carbon dioxide with an apparent constant, not just intact carbonic acid."
+        }
+      },
+      "quick-check": {
+        "question": "Use the simplified 37°C relation pH ≈ 6.10 + log₁₀([HCO₃⁻]/[CO₂(aq)]). (a) Find the ratio at pH 7.40. (b) At arterial pH 7.30, what can the ratio and pH tell us, and what cannot be concluded?",
+        "pausePrompt": "Pause to calculate and separate observation from cause.",
+        "answerSteps": [
+          "At pH 7.40: ratio = 10^(7.40 − 6.10) ≈ 19.95, about 20:1.",
+          "At pH 7.30: ratio = 10^1.20 ≈ 15.85.",
+          "Relative to the usual arterial reference range 7.35–7.45, pH 7.30 is acidemia.",
+          "Acidosis describes a process tending to lower pH; mixed processes can coexist.",
+          "The lower ratio may involve lower bicarbonate, higher CO₂, or both. pH alone does not identify the cause."
+        ],
+        "caption": "A lower bicarbonate/CO₂ ratio does not by itself prove that CO₂ increased.",
+        "voiceover": {
+          "text": "Use the supplied physiological relation at thirty-seven degrees: pH is approximately six point one plus the logarithm of bicarbonate divided by dissolved carbon dioxide. Find the ratio at pH seven point four. Then interpret arterial pH seven point three. What is known, and what is not? Pause to calculate and reason. At seven point four, ten to the power one point three is about nineteen point nine five, or twenty to one. At seven point three, the ratio is about fifteen point eight five. The low arterial pH is called acidemia. Acidosis describes a process tending to lower pH, and several processes can coexist. A falling ratio could come from less bicarbonate, more dissolved carbon dioxide, or both. The pH and ratio alone cannot diagnose the cause."
+        }
+      },
+      "summary": {
+        "points": [
+          "A buffer needs appreciable amounts of a weak conjugate acid/base pair.",
+          "Its components neutralise small acid/base additions; capacity is finite.",
+          "React first, then calculate the appropriate ratio with guard digits.",
+          "Dilution lowers capacity per unit volume, even when pH changes little.",
+          "Blood uses an apparent CO₂/bicarbonate relation; a low pH does not identify its cause."
+        ],
+        "finalPrompt": "State the model and its limits before interpreting the number.",
+        "caption": "Conjugate pairs, finite capacity, careful calculation, and bounded physiological inference.",
+        "voiceover": {
+          "text": "A buffer contains appreciable amounts of a weak conjugate acid/base pair. Its components neutralise small additions of strong acid or base, limiting the pH change within a finite capacity. Do the stoichiometry first, then use an appropriate equilibrium approximation with guard digits. For a fixed total concentration, capacity is greatest near the pKa, and moderate dilution lowers capacity per unit volume. In the physiological bicarbonate system, six point one is an apparent constant used with dissolved carbon dioxide. A low arterial pH is acidemia; the underlying processes require more evidence. Neither a chemical ratio nor a reference interval alone is a diagnosis."
+        }
+      }
+    },
+    "response": {
+      "promptText": "Use the supplied physiological relation at thirty-seven degrees: pH is approximately six point one plus the logarithm of bicarbonate divided by dissolved carbon dioxide. Find the ratio at pH seven point four. Then interpret arterial pH seven point three. What is known, and what is not? Pause to calculate and reason.",
+      "answerText": "At seven point four, ten to the power one point three is about nineteen point nine five, or twenty to one. At seven point three, the ratio is about fifteen point eight five. The low arterial pH is called acidemia. Acidosis describes a process tending to lower pH, and several processes can coexist. A falling ratio could come from less bicarbonate, more dissolved carbon dioxide, or both. The pH and ratio alone cannot diagnose the cause.",
+      "minimumThinkingSeconds": 50,
+      "rationale": "Allow calculation and interpretation before feedback. Final pause and reveal boundaries require measured takes.",
+      "status": "unmeasured planning target, not assembled silence"
+    }
+  },
+  "chemistry-y12-m8-l7-monitoring-dissolved-oxygen-bod": {
+    "root": {
+      "subtitle": "Measure oxygen and interpret a controlled five-day assay",
+      "lessonIntent": "Use the Winkler stoichiometric ratio, calculate BOD₅ under explicit assay assumptions, and distinguish bottle results from ecological diagnosis. This contextual/enrichment example does not claim that its specific technique is a named 2017 requirement.",
+      "examSkill": "Convert the titre to oxygen using the 1:4 ratio. Apply the stated dilution and seed assumptions, then describe what the evidence supports.",
+      "syllabusDotPoints": [
+        "analyse the need for monitoring the environment"
+      ]
+    },
+    "scenes": {
+      "hook": {
+        "heading": "Two measurements, two questions",
+        "body": "A hypothetical lake: how much oxygen is present, and how much is consumed in a controlled assay?",
+        "callout": "An assay result is not a fish-kill forecast.",
+        "caption": "DO is a field measurement; BOD₅ is a controlled incubation result.",
+        "voiceover": {
+          "text": "Imagine a lake with abundant algal growth. We want to know how much oxygen is present now and how strongly the sampled material can consume oxygen under controlled conditions. These are different questions. Dissolved oxygen is measured in the water at a particular place and time. Biochemical oxygen demand is measured during a specified laboratory incubation. A BOD result can inform concern about oxygen demand, but it cannot predict the date of a fish kill by itself. Mixing, temperature, light, respiration and incoming water also affect the lake."
+        }
+      },
+      "concept": {
+        "body": "Measured DO reflects oxygen supply, transport and consumption. Low oxygen can stress aquatic organisms.",
+        "bullets": [
+          {
+            "text": "Warmer water has lower oxygen saturation concentration under comparable conditions."
+          },
+          {
+            "text": "Mixing and exchange may replenish oxygen; photosynthesis adds oxygen in light."
+          },
+          {
+            "text": "Respiration consumes oxygen, including respiration by living algae."
+          }
+        ],
+        "secondary": "Interpret readings with temperature, time, depth, species and local reference information.",
+        "callout": "A reading is evidence from one place and time.",
+        "caption": "DO depends on several processes, rather than temperature or pollution alone.",
+        "voiceover": {
+          "text": "Dissolved oxygen is oxygen gas present in water. Fish, many invertebrates and aerobic microbes use it. Warmer water has a lower oxygen saturation concentration at otherwise comparable conditions. Mixing and air-water exchange can replenish oxygen, while respiration consumes it. Photosynthesis can add oxygen in light. The measured concentration reflects these processes together, so temperature alone does not determine a field reading. Low dissolved oxygen can stress organisms, with effects depending on species, exposure time and other conditions. Measure across times and depths rather than assuming one result describes the whole water body."
+        }
+      },
+      "concept-winkler": {
+        "body": "Oxygen is fixed using manganese chemistry; liberated iodine is titrated with thiosulfate.",
+        "bullets": [
+          {
+            "text": "Alkaline manganese chemistry fixes the oxygen content."
+          },
+          {
+            "text": "On acidification, the oxidised manganese species release I₂ from iodide."
+          },
+          {
+            "text": "I₂ + 2S₂O₃²⁻ → 2I⁻ + S₄O₆²⁻"
+          }
+        ],
+        "secondary": "Ideal chain: 1 mol O₂ corresponds to 2 mol I₂ and 4 mol S₂O₃²⁻. Valid sampling and interference control are required.",
+        "callout": "Titrate iodine, then infer oxygen.",
+        "caption": "The simplified Winkler electron balance gives 1 O₂ : 4 S₂O₃²⁻.",
+        "voiceover": {
+          "text": "In the Winkler method, the oxygen content is fixed through reactions involving manganese in alkaline solution. The oxidised manganese species subsequently liberate iodine from iodide under acidic conditions. The iodine is titrated with thiosulfate. For the stated ideal stoichiometric chain, one mole of oxygen corresponds to two moles of iodine and four moles of thiosulfate. This electron balance gives the calculation shortcut. Actual sampling must prevent unintended oxygen exchange, and the analytical method must control interferences. The diagram is a simplified stoichiometric model, not a full laboratory procedure."
+        }
+      },
+      "worked-example": {
+        "question": "In an ideal interference-free Winkler determination, the titre represents all the oxygen in an original 50.0 mL water sample. It requires 4.00 mL of 0.0100 mol L⁻¹ Na₂S₂O₃. Find DO in mg L⁻¹ using M(O₂) = 32.00 g mol⁻¹.",
+        "coachNote": "The original sample volume represented by the titre is specified. Divide thiosulfate moles by four."
+      },
+      "concept-bod": {
+        "body": "BOD₅ is oxygen demand measured under defined assay conditions, referred to the original sample.",
+        "bullets": [
+          {
+            "text": "Five days at 20°C in the dark, using the selected validated method."
+          },
+          {
+            "text": "Simple initial DO − final DO: only an accepted undiluted, unseeded test with no correction required."
+          },
+          {
+            "text": "Dilution, microbial seed, blanks and method validity must be handled explicitly."
+          }
+        ],
+        "secondary": "BOD may include nitrification unless inhibited. A result alone neither grades all waterways nor predicts field oxygen on day five.",
+        "callout": "State assay conditions before subtracting.",
+        "caption": "BOD₅ is a controlled assay; universal pollution bands are not supplied.",
+        "voiceover": {
+          "text": "BOD-five measures oxygen consumed during a specified five-day incubation at twenty degrees Celsius in the dark. It is reported as an oxygen concentration referred to the original sample. For an accepted undiluted test with no added seed and no required correction, subtract final dissolved oxygen from initial dissolved oxygen. A diluted test requires the sample-volume fraction, and an added microbial seed requires its oxygen-use correction. Laboratory controls also check whether oxygen depletion and oxygen remaining meet the method. Depending on the method, nitrification may contribute; carbonaceous BOD uses an inhibitor to distinguish that component. There is no universal set of clean, moderate and heavy pollution bands that follows from this calculation."
+        }
+      },
+      "misconception": {
+        "heading": "Four interpretation traps",
+        "body": "Thiosulfate titrates iodine; the 1:4 ratio links that titre to oxygen.",
+        "secondary": "BOD measures assay oxygen consumption, not oxygen available, a guaranteed fish kill or a universal pollution category. Dilution and seed corrections may be necessary.",
+        "callout": "Calculate correctly, then limit the inference.",
+        "caption": "Use the 1:4 ratio and the actual assay conditions; do not overinterpret BOD.",
+        "voiceover": {
+          "text": "The thiosulfate titrates iodine, not oxygen directly. Divide thiosulfate moles by four before calculating the oxygen concentration. A higher BOD under comparable valid assay conditions means more oxygen consumed in that assay, not more oxygen available. It is useful evidence of oxygen demand, but it does not identify every pollutant or prove that fish will die. Finally, initial minus final oxygen is not the full calculation for every sample. Check dilution, seeding and method controls before reporting a result."
+        }
+      },
+      "quick-check": {
+        "question": "An accepted undiluted, unseeded BOD₅ test has no required blank correction. DO is 7.2 mg L⁻¹ initially and 3.6 mg L⁻¹ after 5 days at 20°C in the dark. Calculate BOD₅. Can this result alone establish a pollution class or a future fish kill?",
+        "pausePrompt": "Pause to calculate and identify the missing evidence.",
+        "answerSteps": [
+          "Here, BOD₅ = initial DO − final DO.",
+          "BOD₅ = 7.2 − 3.6 = 3.6 mg L⁻¹.",
+          "This is oxygen consumed under the specified assay conditions.",
+          "No universal pollution category follows from the result alone.",
+          "Field DO, temperature, ecology, sampling context and relevant local criteria are needed."
+        ],
+        "caption": "BOD₅ = 3.6 mg L⁻¹ under the given assumptions; ecological classification needs more evidence.",
+        "voiceover": {
+          "text": "An accepted undiluted and unseeded test needs no blank correction. Initial oxygen is seven point two milligrams per litre, falling to three point six after five days at twenty degrees in the dark. Calculate BOD-five. Can this result alone classify pollution or predict a fish kill? Pause to work it through. For the stated assumptions, subtract three point six from seven point two. BOD-five is three point six milligrams per litre. That is the oxygen consumed in this controlled assay. It does not by itself assign a universal pollution category or predict a fish kill. We need field measurements, biological context and relevant local assessment criteria."
+        }
+      },
+      "summary": {
+        "points": [
+          "DO is measured oxygen concentration at a place and time.",
+          "In the simplified Winkler chain, iodine is titrated with thiosulfate.",
+          "1 mol O₂ corresponds to 4 mol S₂O₃²⁻.",
+          "BOD₅ is a defined incubation result with dilution/seed conditions.",
+          "Interpret assay results alongside field evidence and local criteria."
+        ],
+        "finalPrompt": "What was measured, under which conditions, and what does it support?",
+        "caption": "DO, stoichiometry, controlled BOD conditions and evidence-limited interpretation.",
+        "voiceover": {
+          "text": "Dissolved oxygen is a concentration measured at a place and time. Its ecological meaning depends on the organisms and conditions. In the simplified Winkler chain, one mole of oxygen corresponds to four moles of thiosulfate, so divide by four. BOD-five measures oxygen consumed during a controlled five-day incubation. Initial minus final oxygen applies directly only under the stated undiluted and unseeded assumptions; other tests need the appropriate corrections and controls. Compare like methods and interpret BOD alongside field evidence. Do not turn a bottle result into a guaranteed fish-kill forecast or an invented pollution category."
+        }
+      }
+    },
+    "response": {
+      "promptText": "An accepted undiluted and unseeded test needs no blank correction. Initial oxygen is seven point two milligrams per litre, falling to three point six after five days at twenty degrees in the dark. Calculate BOD-five. Can this result alone classify pollution or predict a fish kill? Pause to work it through.",
+      "answerText": "For the stated assumptions, subtract three point six from seven point two. BOD-five is three point six milligrams per litre. That is the oxygen consumed in this controlled assay. It does not by itself assign a universal pollution category or predict a fish kill. We need field measurements, biological context and relevant local assessment criteria.",
+      "minimumThinkingSeconds": 40,
+      "rationale": "Allow calculation and interpretation before feedback. Final pause and reveal boundaries require measured takes.",
+      "status": "unmeasured planning target, not assembled silence"
+    }
+  },
+  "chemistry-y12-m8-l9-nutrient-pollution-eutrophication": {
+    "root": {
+      "subtitle": "Follow the oxygen balance without inventing observations",
+      "lessonIntent": "Explain possible nutrient-enrichment effects, distinguish observations from inference, and compare validated nutrient-measurement methods. This contextual/enrichment example does not claim that its specific technique is a named 2017 requirement.",
+      "examSkill": "Use the supplied nutrient and oxygen evidence, state its limits, and explain respiration, decomposition and oxygen replenishment.",
+      "syllabusDotPoints": [
+        "analyse the need for monitoring the environment"
+      ]
+    },
+    "scenes": {
+      "hook": {
+        "heading": "How can nutrient loading alter a lake?",
+        "body": "A hypothetical case: runoff adds nutrients. What happens depends on the lake and its oxygen balance.",
+        "callout": "Separate the mechanism from an observed outcome.",
+        "caption": "Nutrient loading can increase oxygen stress; no particular disaster or fish kill is asserted.",
+        "voiceover": {
+          "text": "Imagine nutrient-rich runoff entering a lake. Extra nutrients may support more algae, but the outcome depends on light, temperature, mixing and which nutrient was limiting. Living algae can produce oxygen in light and also consume it through respiration. When biomass dies, decomposers consume oxygen too. If consumption outpaces replenishment, low oxygen can harm aquatic life. Some harmful blooms also produce toxins, a separate mechanism. This is a hypothetical example, not evidence that a particular lake experienced a fish kill."
+        }
+      },
+      "concept-nutrients": {
+        "body": "Nitrogen and phosphorus are essential. Extra inputs can stimulate growth when conditions and nutrient limitation allow.",
+        "bullets": [
+          {
+            "text": "Nitrate and ammonium are among the available nitrogen forms."
+          },
+          {
+            "text": "Phosphate speciation depends on pH; PO₄³⁻ is not the only dissolved form."
+          },
+          {
+            "text": "State whether results are reported as ions or as N/P."
+          }
+        ],
+        "secondary": "Concentration, chemical form, loading, retention time, light and ecology all matter.",
+        "callout": "Extra nutrients can change productivity; outcomes are conditional.",
+        "caption": "Nutrient form and reporting basis matter when comparing concentrations.",
+        "voiceover": {
+          "text": "Nitrogen and phosphorus are essential nutrients. Excess inputs can increase primary production when the added nutrient relieves a growth limitation. Nitrate is one available nitrogen form, but ammonium and other forms also matter. Dissolved inorganic phosphorus occurs in several phosphate forms whose proportions depend on pH. The familiar phosphate formula is useful chemical bookkeeping, but it does not mean every phosphorus species in a lake is the triply charged ion. Interpretation also depends on whether a laboratory reports nitrate as nitrate or as nitrogen, and phosphate as phosphate or as phosphorus. Keep that reporting basis consistent."
+        }
+      },
+      "concept-sources": {
+        "bullets": [
+          {
+            "text": "Fertiliser runoff can carry dissolved and particle-associated nutrients."
+          },
+          {
+            "text": "Wastewater can add nutrients and oxygen-demanding organic matter."
+          },
+          {
+            "text": "Phosphate-containing detergents have been an important source in some settings."
+          }
+        ],
+        "secondary": "Source contributions differ between catchments; measurements and local evidence guide management.",
+        "callout": "Investigate sources before selecting controls.",
+        "caption": "Nutrient sources are context-dependent and require evidence.",
+        "voiceover": {
+          "text": "Fertiliser runoff, wastewater and some detergents can contribute nitrogen or phosphorus. Their importance varies by catchment and treatment practices. Runoff can transport dissolved nutrients and phosphorus associated with particles. Wastewater may also add organic matter that creates oxygen demand. A source investigation helps choose an intervention, but observing nutrient enrichment does not identify the source on its own. Evaluate the local inputs and water movement before recommending controls."
+        }
+      },
+      "definition": {
+        "bullets": [
+          {
+            "text": "Eutrophication: nutrient enrichment that increases production and can alter ecology."
+          },
+          {
+            "text": "Bloom: increased algae/cyanobacteria; toxicity and location vary."
+          },
+          {
+            "text": "BOD: oxygen consumption in a specified controlled assay."
+          },
+          {
+            "text": "Hypoxia: low oxygen that can limit organisms, depending on tolerance and exposure."
+          }
+        ],
+        "callout": "Related processes, not an inevitable outcome.",
+        "caption": "Define enrichment, blooms, BOD and hypoxia without guaranteeing mortality.",
+        "voiceover": {
+          "text": "Eutrophication is enrichment with nutrients that increases biological production and can alter water quality and ecology. An algal bloom is a substantial increase in algae or cyanobacteria; not every bloom is toxic or occurs only at the surface. Biochemical oxygen demand is a controlled measure of oxygen consumption under specified conditions. Hypoxia means low oxygen relative to biological needs, with tolerances varying between species. A so-called dead zone is an oxygen-depleted region where many organisms cannot persist. These terms describe related processes, but they do not require every lake to follow one inevitable sequence."
+        }
+      },
+      "concept-chain": {
+        "heading": "A possible oxygen-depletion pathway",
+        "body": "Nutrient enrichment can increase production and oxygen demand. The oxygen balance determines the outcome.",
+        "bullets": [
+          {
+            "text": "Growth and shading may change plant and algal biomass."
+          },
+          {
+            "text": "Living algae respire, including at night; decomposition also consumes O₂."
+          },
+          {
+            "text": "Hypoxia can develop if consumption exceeds replenishment."
+          }
+        ],
+        "secondary": "Fish effects depend on species, severity and duration. Harmful-bloom toxins are a separate possible hazard.",
+        "callout": "Both living respiration and decomposition matter.",
+        "caption": "Illustrative pathway: greater oxygen demand may lead to hypoxia, not certain mortality.",
+        "voiceover": {
+          "text": "One possible pathway starts when nutrients promote a bloom. Dense growth can reduce light to submerged plants. Living algae and other organisms continue to respire, and without photosynthesis in darkness this can lower dissolved oxygen. When algae or other biomass dies, aerobic decomposition adds to oxygen consumption. Whether oxygen falls depends on those demands relative to photosynthesis, mixing and air-water exchange. Severe oxygen depletion can cause fish to leave or die, but this is not guaranteed after every bloom. Some cyanobacteria also produce toxins, which must be considered separately from oxygen depletion."
+        }
+      },
+      "concept-measuring": {
+        "body": "Select and validate an analytical method for the stated nutrient and reporting basis.",
+        "bullets": [
+          {
+            "text": "Colorimetry uses a calibrated reaction and absorbance measurement."
+          },
+          {
+            "text": "Ion chromatography separates anions before detection, commonly by conductivity."
+          },
+          {
+            "text": "Check blanks, standards, interferences, detection limits and sample preparation."
+          }
+        ],
+        "secondary": "Ion chromatography is enrichment here; it is not explicitly named as the required method in the verified 2017 syllabus.",
+        "callout": "Calibration and method scope determine valid results.",
+        "caption": "Colorimetry and ion chromatography use different measurement principles.",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m8Cards",
+          "props": {
+            "cards": [
+              {
+                "icons": [
+                  {
+                    "name": "cuvetteSeries",
+                    "color": "#c2185b"
+                  }
+                ],
+                "title": "Colorimetry",
+                "lines": [
+                  "validated colour reaction",
+                  "calibrated absorbance",
+                  "report analyte and units"
+                ]
+              },
+              {
+                "icons": [
+                  {
+                    "name": "icColumn"
+                  }
+                ],
+                "title": "Ion chromatography",
+                "lines": [
+                  "anion separation",
+                  "often conductivity detection",
+                  "method-dependent scope"
+                ],
+                "tag": "enrichment example"
+              }
+            ],
+            "highlight": 1,
+            "footer": {
+              "text": "Validate calibration, interferences and reporting basis.",
+              "sub": "Neither method is automatically best for every sample."
+            }
+          }
+        },
+        "voiceover": {
+          "text": "Reliable nutrient measurements require a specified analyte, method, calibration and reporting basis. Colorimetric methods form a coloured product and relate its absorbance to concentration over a validated range. One established nitrate method uses a reduction step before colour development. Ion chromatography separates anions before detection, commonly by conductivity; it is not inherently a UV-visible method. Method choice depends on interferences, detection limits and sample treatment, not a blanket claim that one method is always more precise. Ion chromatography is useful enrichment here, but the verified twenty-seventeen syllabus does not specifically name it as the required nitrate and phosphate method."
+        }
+      },
+      "worked-example": {
+        "question": "Invented teaching data from comparable samples: A has nitrate 0.35 mg NO₃⁻ L⁻¹, phosphate 0.02 mg PO₄ L⁻¹, DO 8.4 mg O₂ L⁻¹; B: 1.40, 0.18, 6.1; C: 1.75, 0.25, 3.9 in the same respective units. Which site warrants greatest investigation for nutrient-related oxygen stress? What is not established?",
+        "coachNote": "Compare the supplied measurements. Phosphate is reported as PO₄ mass equivalent, not a claim that all ions are PO₄³⁻.",
+        "steps": [
+          "C has the highest nitrate and phosphate values among the three samples.",
+          "C also has the lowest measured DO, 3.9 mg O₂ L⁻¹.",
+          "C is the strongest relative concern in this limited comparison.",
+          "The table does not report blooms, dead fish, cause, or a time sequence.",
+          "Seek repeat DO/time/depth measurements and ecological/source evidence."
+        ],
+        "caption": "Site C merits greatest investigation; these invented data do not establish blooms or mortality.",
+        "voiceover": {
+          "text": "These are invented teaching data from three sites sampled under comparable conditions, not a real monitoring record. Site C has the highest nitrate and phosphate concentrations and the lowest measured dissolved oxygen. That makes C the strongest priority for further investigation within this comparison. The measurements do not say whether a bloom was visible, whether fish had died, or whether the three sites represent stages over time. We would seek repeated oxygen readings, including time and depth, together with biomass observations, temperature, flow and nutrient-source evidence. A defensible answer states the relative concern without inventing observations or asserting a single cause."
+        }
+      },
+      "concept-management": {
+        "body": "Reduce nutrient inputs using controls suited to the catchment, then monitor their effectiveness.",
+        "bullets": [
+          {
+            "text": "Vegetated buffers can intercept some runoff and sediment."
+          },
+          {
+            "text": "Fertiliser rate and timing can reduce nutrient losses."
+          },
+          {
+            "text": "Validated wastewater treatment and suitable wetlands can reduce nutrient loads."
+          }
+        ],
+        "secondary": "Effectiveness depends on design, maintenance, hydrology and nutrient form. No specific spending total or guaranteed reduction is claimed.",
+        "callout": "Choose locally supported controls and verify outcomes.",
+        "caption": "Nutrient management needs source evidence, suitable design and monitoring.",
+        "voiceover": {
+          "text": "Long-term management often aims to reduce nutrient inputs using measures suited to the catchment. Vegetated buffers can intercept some runoff, and fertiliser timing and rates can reduce losses. Wastewater treatment can remove nitrogen or phosphorus, while appropriately designed wetlands may also retain or remove nutrients. Performance depends on design, maintenance, hydrology and the nutrient form; it must be measured. Established blooms may require additional management, but no single intervention is guaranteed to solve every case. The lesson is to connect the chosen measure to a demonstrated source and verify its effect."
+        }
+      },
+      "misconception": {
+        "heading": "Avoid a false either-or explanation",
+        "body": "Living algae respire; decomposers consume oxygen too.",
+        "secondary": "Oxygen depletion is one possible mechanism of harm. Bloom toxins are another. No outcome follows automatically from nutrient concentrations alone.",
+        "callout": "Explain the relevant mechanism without inventing evidence.",
+        "caption": "Both living respiration and decomposition contribute to the oxygen balance.",
+        "voiceover": {
+          "text": "Do not say that only dead algae can affect oxygen. Living algae respire too, and their oxygen consumption continues in darkness. Decomposition of dead biomass is another important demand. Do not assume that all blooms kill fish, or that every bloom-related fish kill has the same cause. Oxygen depletion is one mechanism; toxins and other factors may also matter. Explain the mechanism relevant to the evidence supplied, and distinguish a plausible risk from a recorded outcome."
+        }
+      },
+      "quick-check": {
+        "question": "A bloom dies and sinks. Explain how this could lower DO and harm fish. Why is a fish kill not inevitable, and can living algae also consume oxygen?",
+        "pausePrompt": "Pause and explain the oxygen balance.",
+        "answerSteps": [
+          "Dead biomass supplies material for aerobic decomposition.",
+          "Decomposer respiration consumes dissolved oxygen.",
+          "Living algae and other organisms also respire.",
+          "Hypoxia may develop if oxygen consumption exceeds replenishment.",
+          "Severity, duration, mixing, photosynthesis and species tolerance affect outcomes; mortality is not inevitable."
+        ],
+        "caption": "Decomposition adds oxygen demand; the net balance and biological context determine harm.",
+        "voiceover": {
+          "text": "A bloom dies and sinks. Explain how this could lower dissolved oxygen and harm fish. Why is a fish kill not inevitable? Can living algae also consume oxygen? Pause and explain the balance. Aerobic decomposition of dead biomass consumes oxygen. Living algae and other organisms also respire, including in darkness. If demand exceeds oxygen supplied by photosynthesis, mixing and air-water exchange, hypoxia may develop. Fish may be stressed, leave, or die depending on the severity and duration and their tolerance. The oxygen balance determines the outcome, so a fish kill is possible rather than inevitable."
+        }
+      },
+      "summary": {
+        "points": [
+          "Nitrogen and phosphorus enrichment can change biological production.",
+          "Living respiration and decomposition both consume oxygen.",
+          "Oxygen replenishment, species and exposure affect ecological outcomes.",
+          "Measurements support bounded inferences, not invented observations.",
+          "Validate analytical methods and nutrient controls; ion chromatography is enrichment here."
+        ],
+        "finalPrompt": "Which claims are measurements, which are inferences, and what evidence is missing?",
+        "caption": "Nutrient chemistry, oxygen balance and evidence-limited interpretation.",
+        "voiceover": {
+          "text": "Nutrient enrichment can increase biological production when conditions allow. Nutrient form, source and reporting basis matter. Living algae respire, and decomposition of dead biomass adds oxygen demand; both belong in the oxygen balance. Hypoxia and fish harm are possible consequences, not guaranteed outcomes. Concentrations alone do not establish visible blooms, deaths or a time sequence. Colorimetry and ion chromatography are distinct analytical approaches that need validation. Choose source controls using local evidence and monitor whether they work."
+        }
+      }
+    },
+    "response": {
+      "promptText": "A bloom dies and sinks. Explain how this could lower dissolved oxygen and harm fish. Why is a fish kill not inevitable? Can living algae also consume oxygen? Pause and explain the balance.",
+      "answerText": "Aerobic decomposition of dead biomass consumes oxygen. Living algae and other organisms also respire, including in darkness. If demand exceeds oxygen supplied by photosynthesis, mixing and air-water exchange, hypoxia may develop. Fish may be stressed, leave, or die depending on the severity and duration and their tolerance. The oxygen balance determines the outcome, so a fish kill is possible rather than inevitable.",
+      "minimumThinkingSeconds": 45,
+      "rationale": "Allow calculation and interpretation before feedback. Final pause and reveal boundaries require measured takes.",
+      "status": "unmeasured planning target, not assembled silence"
+    }
+  },
+  "chemistry-y12-m8-l10-water-treatment-processes": {
+    "root": {
+      "subtitle": "Match barriers to risks and evaluate disinfection conditions",
+      "lessonIntent": "Explain a site-specific treatment train, distinguish disinfectant speciation from dose/contact time, and evaluate residual and by-product tradeoffs. This contextual/enrichment example does not claim that its specific technique is a named 2017 requirement.",
+      "examSkill": "State the pathogen target, treatment conditions, concentration-contact time and by-product constraints before recommending a disinfectant.",
+      "syllabusDotPoints": [
+        "analyse the need for monitoring the environment"
+      ]
+    },
+    "scenes": {
+      "hook": {
+        "heading": "When source water changes",
+        "body": "A hypothetical source change can alter particle, organic, microbial and corrosion-control needs.",
+        "callout": "Reassess the whole system and verify performance.",
+        "caption": "A hypothetical treatment scenario; no disaster statistics or universal safe limit is claimed.",
+        "voiceover": {
+          "text": "Imagine a treatment plant switching to a different raw-water source. The new water may have different particles, organic matter, alkalinity and corrosion behaviour. A treatment plan that worked before must be reassessed against those conditions and the distribution system. Clear water alone does not prove that microbial or chemical risks are controlled. This hypothetical example shows why water treatment uses multiple barriers and continued monitoring, rather than one chemical step claimed to guarantee safety."
+        }
+      },
+      "concept-train": {
+        "heading": "A site-specific treatment train",
+        "body": "Different barriers address different hazards. This diagram shows one conventional example.",
+        "bullets": [
+          {
+            "text": "Coagulation/flocculation can aggregate fine particles."
+          },
+          {
+            "text": "Sedimentation/filtration can remove particles and associated material."
+          },
+          {
+            "text": "Disinfection and distribution control require validated conditions."
+          }
+        ],
+        "secondary": "The sequence and additional barriers depend on source water, pathogen targets, contaminants and the network.",
+        "callout": "An example sequence, not a universal recipe.",
+        "caption": "Illustrative conventional train; actual barrier design is site-specific.",
+        "voiceover": {
+          "text": "A treatment train combines barriers selected for the source water and the risks to control. One conventional example uses coagulation, flocculation, sedimentation, filtration and then disinfection. This is an illustrative sequence, not a rule for every plant. Some systems use different barriers or apply disinfectants at more than one point. Particle removal, pathogen inactivation, dissolved-contaminant control and distribution protection require different measures. Corrosion control and monitoring may also be necessary. The important question is whether the complete system meets its validated targets."
+        }
+      },
+      "concept-chlorination": {
+        "body": "Free-chlorine speciation, effective concentration and contact time all matter.",
+        "bullets": [
+          {
+            "text": "Cl₂ + H₂O ⇌ HOCl + H⁺ + Cl⁻"
+          },
+          {
+            "text": "HOCl ⇌ H⁺ + OCl⁻; pH controls their relative amounts."
+          },
+          {
+            "text": "HOCl is generally more effective than OCl⁻ under comparable conditions."
+          }
+        ],
+        "secondary": "Evaluate pathogen target, residual concentration, contact time, temperature, demand and turbidity. Lower pH is not automatically the safest treatment choice.",
+        "callout": "Speciation plus validated concentration and contact time.",
+        "caption": "HOCl/OCl⁻ speciation is one part of disinfection performance, not a substitute for dose and contact time.",
+        "voiceover": {
+          "text": "Free chlorine in water includes hypochlorous acid and hypochlorite, with their relative proportions controlled by pH. Under otherwise comparable conditions, hypochlorous acid is generally the more effective disinfectant. But speciation does not replace concentration and contact time. Disinfectant demand, temperature, turbidity and the target organism also affect inactivation. More hypochlorous acid at a lower pH is a chemical trend within a suitable operating range, not advice to lower pH without limit. Treatment operators validate conditions and also control corrosion and by-products. Dose, residual concentration, contact time and pH must be considered together."
+        }
+      },
+      "definition": {
+        "bullets": [
+          {
+            "text": "Free chlorine: inactivation and residual, with chlorinated-DBP tradeoffs."
+          },
+          {
+            "text": "UV: validated exposure required; no persistent disinfectant residual."
+          },
+          {
+            "text": "Ozone: no persistent network residual; evaluate bromate where relevant."
+          },
+          {
+            "text": "Monochloramine: persistent residual, slower action, different DBP risks including NDMA."
+          }
+        ],
+        "callout": "Compare specific hazards and validated performance.",
+        "caption": "Methods differ in inactivation, residual protection and by-product risks.",
+        "voiceover": {
+          "text": "Disinfection choices have different strengths and tradeoffs. Free chlorine can provide effective inactivation and a residual, while reactions with precursors can form chlorinated by-products. Ultraviolet treatment can inactivate susceptible pathogens at a validated dose, but it does not leave a disinfectant residual in the pipes. Ozone also requires validated conditions and does not provide a persistent network residual; bromate formation can matter when bromide is present. Monochloramine is slower than free chlorine for many targets and often provides a persistent distribution residual. It can reduce many chlorinated by-products, but may form others, including NDMA. No option is universally best."
+        }
+      },
+      "worked-example": {
+        "question": "For each issue, identify a relevant treatment option, then state why this is not enough to approve a whole plant: suspended particles; selected dissolved organics; a distribution disinfectant residual; dissolved salts.",
+        "coachNote": "Match options to purposes. The clues do not establish a complete validated treatment design.",
+        "steps": [
+          "Suspended particles: consider coagulation/flocculation, settling and filtration.",
+          "Selected dissolved organics: consider appropriately designed activated carbon treatment.",
+          "Distribution residual: chlorine or monochloramine, with verified primary inactivation.",
+          "Dissolved salts: consider appropriately designed reverse osmosis.",
+          "Final selection requires source-water data, validated performance and monitoring."
+        ],
+        "caption": "Match relevant options to needs without claiming a complete approved treatment design.",
+        "voiceover": {
+          "text": "Treat this as identifying relevant options, not designing a plant from four clues. High suspended particles may call for coagulation, flocculation, settling and filtration. Selected dissolved organic compounds may be reduced with suitable activated carbon, but performance depends on the compound and operating conditions. Chlorine or monochloramine can provide a distribution residual, provided the full treatment train also meets its pathogen-inactivation targets. Reverse osmosis can reduce dissolved salts under suitable design and operation. A final system needs source-specific validation, monitoring and management of waste streams."
+        }
+      },
+      "misconception": {
+        "heading": "Three disinfection traps",
+        "body": "Speciation does not replace effective concentration and contact time.",
+        "secondary": "A chloramine residual does not prove adequate primary inactivation. Reducing one by-product class can introduce other concerns, including NDMA and nitrification.",
+        "callout": "A residual is one barrier, not proof of every barrier.",
+        "caption": "Validate inactivation and assess specific by-product and distribution risks.",
+        "voiceover": {
+          "text": "Chlorination is a chemical disinfection process, not physical filtration. Its effectiveness depends on more than pH: effective concentration, contact time, temperature and organism susceptibility matter too. Another trap is to assume that switching to chloramine automatically removes all by-product concerns. It may reduce many chlorinated by-products while creating other risks, including nitrosamines and distribution-system nitrification. Finally, a persistent residual is not proof that initial pathogen inactivation was sufficient. Check the validated treatment targets as well as downstream protection."
+        }
+      },
+      "quick-check": {
+        "question": "A large network seeks effective pathogen control and a persistent residual while limiting DBPs. What evidence is needed before choosing free chlorine, monochloramine, or a combined approach?",
+        "pausePrompt": "Pause and list the conditions a recommendation must satisfy.",
+        "answerSteps": [
+          "Specify pathogen targets, source-water demand, temperature, pH and available contact time.",
+          "Verify the required concentration × contact time before the first customer.",
+          "Free chlorine followed by monochloramine is one possible staged approach, not a universal prescription.",
+          "Primary monochloramination is possible where validated conditions and sufficient contact time meet the targets.",
+          "Compare specific DBPs, including NDMA, and manage residual decay/nitrification. The supplied information cannot select a single best design."
+        ],
+        "caption": "No unique treatment recommendation without inactivation, contact-time and DBP evidence.",
+        "voiceover": {
+          "text": "A large network wants effective pathogen control, a persistent residual and limited disinfection by-products. What evidence is needed before selecting free chlorine, monochloramine, or a combined approach? Pause and work through the constraints. Identify the pathogen targets, source-water demand, pH, temperature and available contact time. Verify the necessary disinfectant concentration times contact time before the first customer. Free chlorine followed by monochloramine can combine initial inactivation with a persistent residual. Primary monochloramination is also possible where validated conditions provide adequate inactivation. Compare specific by-products, including NDMA, and manage nitrification and residual decay. The question gives too little evidence to declare one design universally best."
+        }
+      },
+      "summary": {
+        "points": [
+          "Treatment barriers and their sequence are site-specific.",
+          "Coagulation, filtration, adsorption and membranes address different needs.",
+          "Disinfection depends on species, concentration, contact time and conditions.",
+          "Primary inactivation and distribution residual are distinct requirements.",
+          "Evaluate specific DBPs, NDMA, nitrification and monitoring before recommending a design."
+        ],
+        "finalPrompt": "What evidence would make this treatment recommendation defensible?",
+        "caption": "Site-specific barriers, validated inactivation, residual protection and specific tradeoffs.",
+        "voiceover": {
+          "text": "Water treatment combines barriers suited to the source and distribution system. Coagulation and filtration address particles, while selected adsorption or membrane processes address other needs. Free-chlorine speciation depends on pH, but inactivation also depends on concentration, contact time and operating conditions. Monochloramine can provide a persistent residual and may serve as a primary disinfectant where validated conditions achieve the target. It reduces some by-products but can produce others, including NDMA. A sound recommendation connects specific risks to validated performance, monitoring and tradeoffs. It is not a one-chemical guarantee of safe water."
+        }
+      },
+      "concept-coagulation": {
+        "voiceover": {
+          "text": "Let's examine the chemistry of this coagulation example. Many suspended particles in raw water are just too small and too stable to settle on their own. Alum fixes that. Alum is aluminium sulfate, and in water it provides aluminium three plus ions. Those ions hydrolyse, aluminium three plus plus three water molecules gives a gelatinous aluminium hydroxide colloid plus three hydrogen ions. That aluminium hydroxide colloid is the workhorse, it adsorbs the suspended particles onto its surface and destabilises them. Then flocculation, gentle mixing, lets those destabilised particles collide and grow into larger flocs. And sedimentation lets gravity settle the flocs out. One thing to be careful about, coagulation is about removing particles, it is not mainly about killing microbes. That's a separate job for disinfection later."
+        }
+      }
+    },
+    "response": {
+      "promptText": "A large network wants effective pathogen control, a persistent residual and limited disinfection by-products. What evidence is needed before selecting free chlorine, monochloramine, or a combined approach? Pause and work through the constraints.",
+      "answerText": "Identify the pathogen targets, source-water demand, pH, temperature and available contact time. Verify the necessary disinfectant concentration times contact time before the first customer. Free chlorine followed by monochloramine can combine initial inactivation with a persistent residual. Primary monochloramination is also possible where validated conditions provide adequate inactivation. Compare specific by-products, including NDMA, and manage nitrification and residual decay. The question gives too little evidence to declare one design universally best.",
+      "minimumThinkingSeconds": 50,
+      "rationale": "Allow calculation and interpretation before feedback. Final pause and reveal boundaries require measured takes.",
+      "status": "unmeasured planning target, not assembled silence"
+    }
+  }
+}

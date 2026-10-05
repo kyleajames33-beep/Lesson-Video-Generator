@@ -1,0 +1,579 @@
+{
+  "chemistry-y11-m4-l13-gibbs-free-energy": {
+    "root": {
+      "subtitle": "Standard reaction energy, composition and thermodynamic direction",
+      "lessonIntent": "Calculate standard reaction Gibbs energy, distinguish it from actual-composition direction, and evaluate a constant-property crossover estimate.",
+      "examSkill": "Use kelvin and consistent energy units; qualify ΔG° with the standard-state model, and state the assumptions of T0 = ΔH°/ΔS°."
+    },
+    "scenes": {
+      "hook": {
+        "heading": "Which direction is thermodynamically favoured?",
+        "body": "At constant temperature and pressure, distinguish the current-composition reaction Gibbs energy ΔG from the standard reaction value ΔG°.",
+        "bullets": [
+          {
+            "text": "ΔG = ΔH − TΔS for consistently specified conditions."
+          },
+          {
+            "text": "For a reaction mixture: ΔG = ΔG° + RT ln Q."
+          },
+          {
+            "text": "Q is the dimensionless activity-based reaction quotient."
+          },
+          {
+            "text": "Thermodynamic direction and reaction rate are different questions."
+          }
+        ],
+        "callout": "Standard-state data need a composition qualification.",
+        "caption": "The diagram is a direction analogy, not a prediction of reaction speed.",
+        "voiceover": {
+          "text": "Enthalpy and entropy together help us assess thermodynamic direction. At constant temperature and pressure, the sign of the reaction Gibbs energy tells us which direction lowers Gibbs energy for the current composition. A standard reaction value has an extra qualification: it refers to standard states. We must not use that standard value as a guarantee about every possible mixture. And thermodynamic direction does not tell us how fast a reaction will proceed."
+        }
+      },
+      "formula": {
+        "body": "Use standard quantities at the same temperature. ΔG° alone describes the Q = 1 reference condition, not every mixture.",
+        "bullets": [
+          {
+            "text": "T/K = t/°C + 273.15."
+          },
+          {
+            "text": "Match J or kJ in ΔH° and TΔS°."
+          },
+          {
+            "text": "At Q = 1, ΔG = ΔG°; negative favours the forward direction."
+          },
+          {
+            "text": "Otherwise ΔG = ΔG° + RT ln Q; rate still needs kinetic evidence."
+          }
+        ],
+        "callout": "The ° symbol denotes standard state, not zero temperature.",
+        "caption": "At constant T and p, actual direction follows ΔG; standard-state calculation uses ΔG°.",
+        "voiceover": {
+          "text": "For standard reaction quantities at the same temperature, delta G standard equals delta H standard minus T delta S standard. Use kelvin and consistent energy units. Twenty-five degrees Celsius is two hundred and ninety-eight point one five kelvin. Convert entropy from joules to kilojoules if enthalpy is in kilojoules. The standard value equals the actual reaction Gibbs energy when the activity-based reaction quotient Q is one. Otherwise composition contributes R T natural log Q. We include that relation to explain the limit of the standard-state calculation, not to claim a new Year eleven calculation requirement."
+        }
+      },
+      "worked-example": {
+        "heading": "Haber reaction: standard value and model estimate",
+        "question": "For N₂(g) + 3H₂(g) → 2NH₃(g), use ΔH° = −92.4 kJ mol⁻¹ and ΔS° = −198.9 J K⁻¹ mol⁻¹. Calculate ΔG° at 298.15 K and estimate T0 where ΔG° = 0, assuming ΔH° and ΔS° constant.",
+        "coachNote": "Values are per mole of reaction as written. Retain guard digits and state the model scope.",
+        "steps": [
+          "ΔS° = −0.1989 kJ K⁻¹ mol⁻¹.",
+          "ΔG° = −92.4 − 298.15(−0.1989) = −33.097965 kJ mol⁻¹.",
+          "Report ΔG° ≈ −33.1 kJ mol⁻¹; forward-favoured at Q = 1.",
+          "Constant-property estimate: T0 = (−92.4)/(−0.1989) = 464.555... K ≈ 465 K.",
+          "At ΔG° = 0, the standard equilibrium constant K = 1.",
+          "A real mixture is at equilibrium when Q = K; its direction also depends on Q."
+        ],
+        "caption": "ΔG° ≈ −33.1 kJ mol⁻¹; approximate standard-state crossover T0 ≈ 465 K.",
+        "voiceover": {
+          "text": "For the Haber equation as written, use the supplied enthalpy of minus ninety-two point four kilojoules per mole of reaction and entropy of minus one hundred and ninety-eight point nine joules per kelvin per mole. At two hundred and ninety-eight point one five kelvin, the standard Gibbs energy is minus thirty-three point one kilojoules per mole. That favours the forward direction for Q equal to one, not for every possible mixture. If we neglect the temperature dependence of the supplied enthalpy and entropy, setting the standard Gibbs energy to zero gives about four hundred and sixty-five kelvin. This is a constant-property estimate. It is neither a universal equilibrium temperature nor a statement that industrial ammonia formation stops above it."
+        }
+      },
+      "misconception": {
+        "body": "Negative actual reaction ΔG favours forward change at constant T and p; it does not remove an activation barrier or guarantee an observable rate.",
+        "callout": "ΔG° also needs a composition qualification.",
+        "caption": "Thermodynamic favourability is not reaction speed or complete conversion.",
+        "voiceover": {
+          "text": "A negative actual reaction Gibbs energy indicates a thermodynamically favoured forward change at constant temperature and pressure. It does not remove an activation barrier or establish a measurable rate. A negative standard reaction value needs an additional composition qualification. At room temperature, the supplied Haber data give a negative standard value, but uncatalysed nitrogen and hydrogen react extremely slowly. Do not translate spontaneous into immediate, complete conversion, or no possible need for activation."
+        }
+      },
+      "quick-check": {
+        "question": "For C₂H₄(g) + H₂(g) → C₂H₆(g), use ΔH° = −137 kJ mol⁻¹ and ΔS° = −120.7 J K⁻¹ mol⁻¹ at 298.15 K. Calculate ΔG° and explain what its sign establishes.",
+        "pausePrompt": "Pause: match units, calculate, then qualify the interpretation.",
+        "answerSteps": [
+          "ΔS° = −0.1207 kJ K⁻¹ mol⁻¹.",
+          "ΔG° = −137 − 298.15(−0.1207) = −101.013295 kJ mol⁻¹.",
+          "Rounded to the supplied enthalpy precision: ΔG° ≈ −101 kJ mol⁻¹.",
+          "Forward-favoured at Q = 1; another composition requires Q.",
+          "No reaction rate or heat release is calculated from ΔG° alone."
+        ],
+        "caption": "ΔG° ≈ −101 kJ mol⁻¹ is a standard reaction value, not a measured heat release.",
+        "voiceover": {
+          "text": "For ethene plus hydrogen forming ethane, use delta H standard of minus one hundred and thirty-seven kilojoules per mole and delta S standard of minus one hundred and twenty point seven joules per kelvin per mole at two hundred and ninety-eight point one five kelvin. Find delta G standard and explain exactly what its sign establishes. Pause and calculate. Convert entropy to minus nought point one two zero seven kilojoules per kelvin per mole. Substitution gives minus one hundred and one point zero one three two nine five, reported as about minus one hundred and one kilojoules per mole. The forward direction is favoured at Q equal to one. Other compositions require Q, and the calculation does not determine the rate or the heat released."
+        }
+      },
+      "summary": {
+        "points": [
+          "ΔG° = ΔH° − TΔS° uses standard quantities at one temperature.",
+          "Use kelvin and matching J or kJ units.",
+          "ΔG = ΔG° + RT ln Q distinguishes actual composition.",
+          "T0 = ΔH°/ΔS° assumes negligible temperature dependence.",
+          "Thermodynamic direction does not determine rate or completion."
+        ],
+        "finalPrompt": "Which conditions, composition and approximations support your conclusion?",
+        "caption": "Separate standard-state calculation, actual direction and kinetics.",
+        "voiceover": {
+          "text": "Use standard enthalpy and entropy at the same temperature, kelvin, and matching energy units. A standard Gibbs energy is not automatically the actual value for every mixture. At constant temperature and pressure, actual reaction Gibbs energy governs thermodynamic direction; composition enters through Q. A crossover found from fixed enthalpy and entropy is an approximation and concerns the standard value. Finally, favourability says neither how fast a reaction proceeds nor that it runs to completion."
+        }
+      }
+    },
+    "response": {
+      "promptText": "For ethene plus hydrogen forming ethane, use delta H standard of minus one hundred and thirty-seven kilojoules per mole and delta S standard of minus one hundred and twenty point seven joules per kelvin per mole at two hundred and ninety-eight point one five kelvin. Find delta G standard and explain exactly what its sign establishes. Pause and calculate.",
+      "answerText": "Convert entropy to minus nought point one two zero seven kilojoules per kelvin per mole. Substitution gives minus one hundred and one point zero one three two nine five, reported as about minus one hundred and one kilojoules per mole. The forward direction is favoured at Q equal to one. Other compositions require Q, and the calculation does not determine the rate or the heat released.",
+      "minimumThinkingSeconds": 45
+    }
+  },
+  "chemistry-y11-m4-cp3-entropy-gibbs": {
+    "root": {
+      "lessonIntent": "Combine qualitative entropy reasoning and standard-reference calculations while stating composition and temperature-model limits.",
+      "examSkill": "Calculate coefficient-weighted ΔS° and ΔG° with consistent units; distinguish a reference-state result from actual-composition direction and approximate crossovers."
+    },
+    "scenes": {
+      "cold-open": {
+        "heading": "Three skills, with the conditions stated",
+        "body": "Predict, calculate and interpret. Gas-mole counting is a qualitative clue; standard-state data do not describe every mixture.",
+        "bullets": [
+          {
+            "text": "Consider physical states and gas amounts."
+          },
+          {
+            "text": "Calculate coefficient-weighted ΣS°(products) − ΣS°(reactants)."
+          },
+          {
+            "text": "Calculate ΔG° with consistent units and kelvin."
+          },
+          {
+            "text": "Interpret at Q = 1; actual composition can change the direction."
+          }
+        ],
+        "callout": "A calculation needs a correctly scoped interpretation.",
+        "caption": "Entropy reasoning and standard-reference Gibbs calculations.",
+        "voiceover": {
+          "text": "This checkpoint combines three skills. Predict the likely entropy-change sign from physical states and gas amounts, calculate the standard entropy change from a table, then combine it with standard enthalpy using the Gibbs equation. Gas counting is a useful clue, not a universal theorem. A standard Gibbs calculation gives a reference-state result. To decide direction for a different mixture, composition also matters. Keep those qualifications alongside the arithmetic."
+        }
+      },
+      "decision-tree": {
+        "bullets": [
+          {
+            "text": "Qualitative ΔS: use states and gas amounts as clues."
+          },
+          {
+            "text": "Table of S°: coefficient-weighted products minus reactants."
+          },
+          {
+            "text": "ΔG°: same-temperature standard data and matching units."
+          },
+          {
+            "text": "T0 estimate: positive ΔH°/ΔS° with constant-property assumption."
+          }
+        ],
+        "callout": "ΔG° = 0 means K = 1; equilibrium also requires Q = K.",
+        "caption": "Do not substitute a standard-state sign for an unspecified mixture.",
+        "voiceover": {
+          "text": "Choose the skill the question needs. For a qualitative entropy prediction, consider physical states, gas amounts and molecular changes. Given standard entropies, take the coefficient-weighted products minus reactants. Given standard enthalpy and entropy at one temperature, calculate standard Gibbs energy. For a crossover estimate, set that standard value to zero and explicitly assume enthalpy and entropy remain approximately constant. Actual mixture direction needs the reaction quotient as well; an equilibrium mixture satisfies Q equal to K."
+        }
+      },
+      "walkthrough-1": {
+        "coachNote": "These are qualitative predictions; calculate from matched reference data when a value or a close comparison is needed.",
+        "steps": [
+          "(a) 3 mol gas → 2 mol gas suggests ΔS < 0.",
+          "(b) Gas is produced from solids, suggesting ΔS > 0.",
+          "(c) Freezing water decreases the system entropy, ΔS < 0.",
+          "Gas-mole counting is a useful clue, not a universal sign theorem.",
+          "The second law concerns system plus surroundings."
+        ],
+        "caption": "Predicted signs for these examples: negative, positive, negative.",
+        "voiceover": {
+          "text": "For these examples, gas amounts and physical states give useful predictions. Three moles of gaseous reactants forming two moles of gaseous product suggest a negative entropy change. Producing carbon dioxide from solid calcium carbonate suggests a positive change. Freezing liquid water to ice decreases the entropy of the water. These are predictions about the system. Gas counting alone is not a universal calculation, and the entropy of the surroundings must be considered when applying the second law."
+        }
+      },
+      "walkthrough-3": {
+        "heading": "Walkthrough 3: standard Gibbs energy and T0 estimate",
+        "question": "For N₂(g) + 3H₂(g) → 2NH₃(g), ΔH° = −92.4 kJ mol⁻¹ and ΔS° = −198.9 J K⁻¹ mol⁻¹. Find ΔG° at 298.15 K and a constant-property estimate of T0 where ΔG° = 0.",
+        "coachNote": "Keep the reaction stoichiometry, units and standard-state scope explicit.",
+        "steps": [
+          "Convert ΔS° to −0.1989 kJ K⁻¹ mol⁻¹.",
+          "ΔG° = −92.4 − 298.15(−0.1989) = −33.097965 kJ mol⁻¹.",
+          "ΔG° ≈ −33.1 kJ mol⁻¹; forward-favoured at Q = 1.",
+          "Neglect temperature variation of ΔH° and ΔS° for this estimate.",
+          "T0 = (−92.4)/(−0.1989) ≈ 465 K.",
+          "ΔG° = 0 means K = 1, not equilibrium for every possible mixture."
+        ],
+        "caption": "A standard-state model estimate, not a universal mixture crossover.",
+        "voiceover": {
+          "text": "Use the supplied Haber standard enthalpy and entropy for the equation as written. At two hundred and ninety-eight point one five kelvin, delta G standard is minus thirty-three point zero nine seven nine six five kilojoules per mole, rounded to minus thirty-three point one. The forward direction is favoured at Q equal to one. Assuming the supplied enthalpy and entropy are constant, their ratio gives a standard-value crossover estimate of about four hundred and sixty-five kelvin. A real mixture reaches equilibrium when Q equals K. The estimated temperature does not say that all mixtures switch direction there."
+        }
+      },
+      "exam-pitfalls": {
+        "heading": "Keep the quantities and conditions distinct",
+        "body": "System entropy can decrease. Elemental standard molar entropy is not assigned zero at ordinary temperatures. A standard Gibbs sign needs a composition qualification.",
+        "callout": "ΔG° is not heat release, and favourability is not speed.",
+        "caption": "Entropy convention, reference-state scope, energy quantity and rate.",
+        "voiceover": {
+          "text": "Four checks prevent common errors. The system entropy can decrease; for a spontaneous process the combined entropy of system and surroundings increases. Standard molar entropies at ordinary temperatures are not set to zero for elemental reference states. That zero convention belongs to standard enthalpies of formation. A negative standard Gibbs energy needs a reference-state or Q-equals-one qualification. And thermodynamic favourability does not determine rate. Do not describe the calculated Gibbs energy as heat released; enthalpy and Gibbs energy are different quantities."
+        }
+      },
+      "quick-check": {
+        "question": "For C₂H₄(g) + H₂(g) → C₂H₆(g), ΔH° = −137 kJ mol⁻¹ and ΔS° = −120.7 J K⁻¹ mol⁻¹. Predict ΔS sign, calculate ΔG° at 298.15 K, and estimate T0 assuming constant ΔH° and ΔS°.",
+        "pausePrompt": "Pause: predict, calculate and state the reference-state and extrapolation limits.",
+        "answerSteps": [
+          "2 mol gas → 1 mol gas suggests a negative ΔS; the supplied value agrees.",
+          "ΔS° = −0.1207 kJ K⁻¹ mol⁻¹.",
+          "ΔG° = −137 − 298.15(−0.1207) ≈ −101 kJ mol⁻¹.",
+          "Forward-favoured at Q = 1; rate is not determined.",
+          "T0 = (−137)/(−0.1207) = 1135.045... K, about 1.14 × 10³ K.",
+          "This long-range constant-property extrapolation is a model estimate, not a verified transition temperature."
+        ],
+        "caption": "ΔG° ≈ −101 kJ mol⁻¹; approximate constant-property T0 ≈ 1.14 × 10³ K.",
+        "voiceover": {
+          "text": "For ethene plus hydrogen forming ethane, delta H standard is minus one hundred and thirty-seven kilojoules per mole and delta S standard is minus one hundred and twenty point seven joules per kelvin per mole. Predict the entropy sign, calculate standard Gibbs energy at two hundred and ninety-eight point one five kelvin, then estimate the temperature where it is zero assuming fixed enthalpy and entropy. State the limits. Pause and work. Two gas moles becoming one suggests a negative entropy change, consistent with the supplied data. Convert entropy to kilojoules and obtain standard Gibbs energy of about minus one hundred and one kilojoules per mole. That favours forward change at Q equal to one, without establishing a rate. The constant-property ratio gives about one point one four times ten cubed kelvin. Such a large temperature extrapolation needs explicit qualification; it is not a verified physical transition temperature."
+        }
+      },
+      "summary": {
+        "points": [
+          "Qualitative entropy predictions need context; gas counting is a clue.",
+          "ΔS° = coefficient-weighted ΣS°(products) − ΣS°(reactants).",
+          "Use consistent energy units and kelvin in ΔG° = ΔH° − TΔS°.",
+          "Actual reaction ΔG = ΔG° + RT ln Q.",
+          "T0 = ΔH°/ΔS° is a constant-property estimate; rate remains separate."
+        ],
+        "finalPrompt": "State the model before drawing the conclusion.",
+        "caption": "Quantitative reference-state work with explicit limits.",
+        "voiceover": {
+          "text": "Use states and gas amounts as qualitative clues, then calculate standard entropy from coefficient-weighted reference values. Keep joules and kilojoules consistent before using the Gibbs equation. Standard Gibbs energy refers to standard states; actual mixture direction at constant temperature and pressure also depends on composition. A temperature from the enthalpy-to-entropy ratio assumes those quantities stay approximately constant. The sign does not give a rate, complete conversion or a heat-release measurement."
+        }
+      }
+    },
+    "response": {
+      "promptText": "For ethene plus hydrogen forming ethane, delta H standard is minus one hundred and thirty-seven kilojoules per mole and delta S standard is minus one hundred and twenty point seven joules per kelvin per mole. Predict the entropy sign, calculate standard Gibbs energy at two hundred and ninety-eight point one five kelvin, then estimate the temperature where it is zero assuming fixed enthalpy and entropy. State the limits. Pause and work.",
+      "answerText": "Two gas moles becoming one suggests a negative entropy change, consistent with the supplied data. Convert entropy to kilojoules and obtain standard Gibbs energy of about minus one hundred and one kilojoules per mole. That favours forward change at Q equal to one, without establishing a rate. The constant-property ratio gives about one point one four times ten cubed kelvin. Such a large temperature extrapolation needs explicit qualification; it is not a verified physical transition temperature.",
+      "minimumThinkingSeconds": 60
+    }
+  },
+  "chemistry-y12-m7-l21-addition-polymers": {
+    "root": {
+      "subtitle": "From alkene monomers to repeat units, with the scope stated",
+      "examSkill": "Convert the specified monoalkene and repeat unit without changing atom counts, and evaluate property claims using structure and material evidence."
+    },
+    "scenes": {
+      "concept-mechanism": {
+        "heading": "Scope the monoalkene model",
+        "body": "For ethene and related monoalkenes, the reacting C=C becomes a backbone C–C bond as new chain bonds form.",
+        "bullets": [
+          {
+            "text": "The ideal repeat unit retains the monomer atoms."
+          },
+          {
+            "text": "No small molecule is eliminated in these examples."
+          },
+          {
+            "text": "The two-carbon rule applies to the selected monoalkenes."
+          },
+          {
+            "text": "Diene polymers can retain C=C, for example –CH₂–CH=CH–CH₂–."
+          }
+        ],
+        "secondary": "The ethene animation illustrates one example. It does not model every polymerisation mechanism.",
+        "callout": "One consumed C=C does not mean every polymer must be saturated.",
+        "caption": "An ideal repeat-unit model omits initiator fragments and chain ends.",
+        "voiceover": {
+          "text": "For the monoalkene examples in this lesson, such as ethene and chloroethene, the carbon-carbon pi bond is used in forming new bonds that extend the chain. The ideal repeat unit retains the atoms of the monomer without eliminating a small molecule. Chain ends and initiator fragments are omitted from this repeat-unit model. Do not turn the monoalkene example into a universal ban on double bonds in addition polymers. A diene has more than one double bond. For example, one-four addition of buta-one-three-diene can produce a repeat unit that still contains a carbon-carbon double bond."
+        }
+      },
+      "definition": {
+        "bullets": [
+          {
+            "text": "For these monoalkenes, retain both backbone carbons and all substituents."
+          },
+          {
+            "text": "Show brackets, chain-continuation bonds and n."
+          },
+          {
+            "text": "Reverse: remove continuation bonds and restore C=C."
+          },
+          {
+            "text": "Keep the existing hydrogens; do not add extra H."
+          }
+        ],
+        "callout": "Check four bonds per carbon and conservation of atoms.",
+        "caption": "The reverse method is scoped to the displayed monoalkene-derived repeat units.",
+        "voiceover": {
+          "text": "For a repeat unit made from one of these monoalkenes, show the two backbone carbons with the original substituents, square brackets, continuation bonds crossing the brackets, and n outside. To recover the monomer, remove the two chain-continuation bonds and change the bond between the backbone carbons from single to double. Keep the existing hydrogens and side groups. Do not add hydrogen as well: that would give too many bonds for these carbons. Check both valence and the atom count. More complicated polymers require their actual monomer and linkage pattern."
+        }
+      },
+      "concept-properties": {
+        "body": "Branching, packing, crystallinity, side groups and formulation all affect a polymer material.",
+        "bullets": [
+          {
+            "text": "Conventional HDPE: more nearly linear, closer packing and higher density."
+          },
+          {
+            "text": "Conventional LDPE: more branching, lower density and greater flexibility."
+          },
+          {
+            "text": "PVC properties depend on formulation; plasticisers can lower Tg."
+          },
+          {
+            "text": "PTFE: fluorinated surface, low adhesion and high chemical resistance."
+          }
+        ],
+        "callout": "A structural feature is a clue; compare specified materials and conditions.",
+        "caption": "Avoid a universal PVC-versus-polyethylene melting-point claim.",
+        "voiceover": {
+          "text": "High-density and low-density polyethylene illustrate how branching affects packing and crystallinity. Conventional H D P E is more nearly linear and usually denser and stiffer; L D P E has more branching and is usually more flexible. These are material trends, not a claim that each chain is perfectly unbranched or that branching is the only variable. P V C has polar carbon-chlorine bonds, but its thermal behaviour and flexibility also depend on formulation and structure. Plasticisers can lower its glass transition. Do not infer one universal melting-point ranking against polyethylene. P T F E has a fluorinated surface with low adhesion and high chemical resistance; a bond-strength slogan alone is not a complete surface explanation."
+        }
+      },
+      "concept-thermo": {
+        "heading": "Thermoplastic behaviour is not a recycling guarantee",
+        "body": "Use conventional polyethylene as the example. Material behaviour, recycling systems and environmental breakdown are distinct questions.",
+        "bullets": [
+          {
+            "text": "Heating can allow uncrosslinked thermoplastic chains to move and be reshaped."
+          },
+          {
+            "text": "Actual recycling depends on collection, sorting, contamination and processing."
+          },
+          {
+            "text": "Conventional polyethylene is not readily biodegradable in ordinary environments."
+          },
+          {
+            "text": "Fragmentation into smaller pieces is not complete biodegradation."
+          }
+        ],
+        "callout": "Specify the polymer, product, process and conditions.",
+        "caption": "A polyethylene example, not a universal verdict for addition polymers.",
+        "voiceover": {
+          "text": "Polyethylene is a thermoplastic. Its chains can gain mobility on heating so a suitable material can be reshaped, provided processing does not excessively degrade it. That does not guarantee that every product is practically recyclable. Collection, sorting, contamination, additives and processing history matter. Conventional polyethylene is not readily biodegradable in ordinary environmental conditions. Weathering can produce smaller fragments without demonstrating complete biodegradation. These are qualified statements about this material. Addition polymerisation by itself does not prove that every resulting polymer is thermoplastic, recyclable or incapable of any biodegradation."
+        }
+      },
+      "worked-example": {
+        "heading": "PVC repeat unit and an evidence-based property claim",
+        "question": "Draw the repeat unit from chloroethene, CH₂=CHCl. Does the presence of polar C–Cl bonds alone prove that every PVC material melts above every polyethylene material?",
+        "coachNote": "Conserve atoms, check valence, then identify the evidence missing from the property claim.",
+        "steps": [
+          "Repeat unit: [–CH₂–CHCl–]ₙ, with continuation bonds through the brackets.",
+          "Hydrogens and the chlorine substituent stay on the same carbons.",
+          "Carbon valence is four; no extra hydrogen is added.",
+          "C–Cl polarity is relevant to interactions but is not a complete thermal model.",
+          "Specify formulation, crystallinity and measurement conditions.",
+          "Distinguish glass transition, melting and degradation; do not assert a universal ranking."
+        ],
+        "caption": "Correct repeat-unit notation does not establish a universal thermal-property ranking.",
+        "voiceover": {
+          "text": "For chloroethene, retain the C H two group and the C H chlorine group while replacing their double bond with a single bond and adding the chain-continuation bonds. The ideal P V C repeat unit has the same atom count as the monomer. Now evaluate the property claim. Polar carbon-chlorine bonds can contribute to interactions, but they do not establish a universal melting-point ranking against polyethylene. P V C formulation, including plasticiser content, changes its behaviour. A comparison needs the specified materials and thermal measurements, with glass transition distinguished from melting and degradation."
+        }
+      },
+      "misconception": {
+        "heading": "A diene is a counterexample",
+        "body": "Polyethylene has a saturated repeat unit. Some diene addition polymers retain C=C.",
+        "secondary": "Example of 1,4-addition of buta-1,3-diene: [–CH₂–CH=CH–CH₂–]ₙ. Use the actual monomer and addition pattern.",
+        "callout": "Do not mark every unsaturated repeat unit as impossible.",
+        "mistakeTag": "Scope the monoalkene rule",
+        "caption": "Residual unsaturation can be valid in a diene polymer.",
+        "voiceover": {
+          "text": "For polyethylene made from ethene, the reacting double bond is consumed and the repeat unit has a saturated backbone. That is a valid check for this example. It is not a universal test for addition polymers. Buta-one-three-diene has two double bonds, and one-four addition can leave a double bond within each repeat unit, written C H two, C H double bond C H, C H two. Different diene addition patterns can also give different structures. Judge the proposed repeat unit from the monomer, linkage pattern, atom count and valence rather than banning every carbon-carbon double bond."
+        }
+      },
+      "quick-check": {
+        "answerSteps": [
+          "The repeat unit is –CH₂–CH(CH₃)–.",
+          "Remove both chain-continuation bonds.",
+          "Restore C=C between the two backbone carbons.",
+          "Retain the existing H and CH₃ groups: CH₂=CHCH₃, propene.",
+          "Check valence and C₃H₆ atom count; no extra H is added.",
+          "This is the monoalkene addition-polymer model."
+        ],
+        "voiceover": {
+          "text": "A polymer has the repeat unit C H two joined to C H with a methyl side group. Recover the monomer, name it and state the polymerisation type. Explain what happens to the continuation bonds and whether any hydrogen should be added. Pause and check every carbon. Remove the two continuation bonds and restore a double bond between the backbone carbons. Keep the hydrogens and methyl group already shown. The result is C H two double bond C H C H three, propene. Both structures retain the C three H six repeat-unit atom count. Do not add extra hydrogen after restoring the double bond. This is addition polymerisation of a monoalkene."
+        }
+      },
+      "summary": {
+        "points": [
+          "Monoalkene examples retain monomer atoms in the ideal repeat unit.",
+          "Reverse the continuation bonds into C=C without extra H.",
+          "Diene addition polymers can retain unsaturation.",
+          "Properties also depend on crystallinity and formulation.",
+          "Recyclability and biodegradation need stated conditions."
+        ],
+        "finalPrompt": "Check the monomer, linkage, valence and scope of every property claim.",
+        "caption": "Apply the model to the specified structure and material.",
+        "voiceover": {
+          "text": "For the selected monoalkenes, the reacting double bond forms the saturated backbone repeat unit, with no small molecule eliminated. Use brackets, continuation bonds and n, and preserve the atom count. Reversing the drawing restores the double bond without adding hydrogen. Diene polymers can retain unsaturation, so do not generalise the monoalkene rule. Branching and side groups influence properties, while formulation and crystallinity also matter. Recycling and biodegradation claims require a specified material, process and environment."
+        }
+      }
+    },
+    "response": {
+      "promptText": "A polymer has the repeat unit C H two joined to C H with a methyl side group. Recover the monomer, name it and state the polymerisation type. Explain what happens to the continuation bonds and whether any hydrogen should be added. Pause and check every carbon.",
+      "answerText": "Remove the two continuation bonds and restore a double bond between the backbone carbons. Keep the hydrogens and methyl group already shown. The result is C H two double bond C H C H three, propene. Both structures retain the C three H six repeat-unit atom count. Do not add extra hydrogen after restoring the double bond. This is addition polymerisation of a monoalkene.",
+      "minimumThinkingSeconds": 45
+    }
+  },
+  "chemistry-y12-m6-l2-nomenclature-indicators-acid-reactions": {
+    "root": {
+      "subtitle": "Common names, indicator limits and qualified reaction patterns",
+      "lessonIntent": "Name selected common inorganic acids and bases, interpret a simplified indicator model, and balance acid reactions with suitable conditions stated.",
+      "examSkill": "Apply the named examples and supplied indicator data; distinguish hydroxide neutralisation, carbonate reactions and suitable non-oxidising-acid/metal reactions."
+    },
+    "scenes": {
+      "hook": {
+        "heading": "A colour needs its reference",
+        "body": "Hypothetical observation: an indicator changes colour. Which indicator, range and conditions make the result meaningful?",
+        "callout": "An unspecified colour is not an acidity measurement.",
+        "caption": "A hypothetical teaching example, not a documented wine, medicine or soil decision.",
+        "voiceover": {
+          "text": "Imagine observing a colour change after adding an indicator to an unknown solution. The colour by itself is not enough. You need the indicator identity, its transition range and the observation conditions. An unspecified yellow, orange or pink result cannot establish acidity, a treatment decision or the chemistry of an aspirin solution. We will use clearly stated examples to connect names, indicator behaviour and acid reactions. The goal is a qualified chemical explanation, not a universal colour code."
+        }
+      },
+      "concept-naming": {
+        "heading": "Common inorganic-acid naming examples",
+        "body": "Use these conventional names for the selected aqueous inorganic acids. They are not a complete naming algorithm for every acid.",
+        "bullets": [
+          {
+            "text": "HCl(aq): hydrochloric acid; HCl(g): hydrogen chloride."
+          },
+          {
+            "text": "HBr(aq): hydrobromic acid."
+          },
+          {
+            "text": "Familiar -ate/-ite examples give -ic/-ous acid names."
+          }
+        ],
+        "secondary": "H₂SO₄ is sulfuric acid; H₂S(aq) may be called hydrosulfuric acid.",
+        "callout": "Identify the species, aqueous context and naming scope.",
+        "caption": "These common names do not cover every acid family.",
+        "voiceover": {
+          "text": "For the common inorganic acids shown here, recognise the naming pattern and state the aqueous context. Hydrogen chloride gas and hydrochloric acid in water are not interchangeable names. Aqueous hydrogen bromide is hydrobromic acid. For familiar oxoacids, sulfate corresponds to sulfuric acid and nitrite to nitrous acid. Aqueous hydrogen sulfide is conventionally called hydrosulfuric acid. These examples are useful, but oxygen presence is not a universal algorithm for naming every acid. Learn the scope of the examples as well as the names."
+        }
+      },
+      "definition": {
+        "bullets": [
+          {
+            "text": "Common binary-acid examples: HCl(aq) and HBr(aq)."
+          },
+          {
+            "text": "Oxoacid example: H₂SO₄."
+          },
+          {
+            "text": "NaOH, KOH, Ca(OH)₂ and Ba(OH)₂ are examples, not an exhaustive list."
+          },
+          {
+            "text": "Strength, solubility and solution concentration are distinct."
+          },
+          {
+            "text": "An indicator has differently coloured forms; the model has limits."
+          }
+        ],
+        "callout": "LiOH is another strong-base example; “only four” is false.",
+        "caption": "Separate names, strength, solubility and indicator models.",
+        "voiceover": {
+          "text": "A binary compound contains two elements; the binary acid examples here are their aqueous acidic solutions. An oxoacid contains oxygen. Sodium, potassium, calcium and barium hydroxides are familiar strong-base examples, but the list is not exhaustive. Lithium hydroxide is another counterexample to the claim that exactly four exist. Distinguish how much solid dissolves from the acid-base behaviour of what is dissolved. Ammonia is a weak base that reacts with water to form ammonium and hydroxide ions at equilibrium. Many indicators can be modelled as a weak acid or weak base with differently coloured forms; a one-step model is not every indicator mechanism."
+        }
+      },
+      "concept-indicators": {
+        "heading": "A useful model with an operating range",
+        "body": "HIn ⇌ H⁺ + In⁻ explains a simple weak-acid indicator transition. Other equilibria and observation conditions can matter.",
+        "bullets": [
+          {
+            "text": "At lower pH the acid form is favoured in this model."
+          },
+          {
+            "text": "At higher pH the conjugate-base form is favoured within its useful range."
+          },
+          {
+            "text": "Use the named indicator and its empirical transition interval."
+          }
+        ],
+        "secondary": "Phenolphthalein is normally colourless at pH 7; alkaline fading means the two-form model must not be extrapolated indefinitely.",
+        "callout": "The colour illustration is qualitative, not a fraction or time-course measurement.",
+        "caption": "Approximate ranges at ordinary aqueous conditions; actual observations depend on conditions.",
+        "voiceover": {
+          "text": "A simple weak-acid indicator model writes H In in equilibrium with hydrogen ion and In minus. Increasing p H changes the ratio towards the conjugate-base form. Actual indicators can involve additional equilibria, and their visible ranges are empirical. Approximate ranges supplied here are three point one to four point four for methyl orange, six to seven point six for bromothymol blue, and eight point three to ten for phenolphthalein. The diagram is a qualitative colour guide, not a measured composition or absorbance scale. Phenolphthalein can also fade under sufficiently alkaline conditions over time. The simple two-form picture does not justify saying pink persists at every high p H indefinitely."
+        }
+      },
+      "concept-patterns": {
+        "heading": "Reaction patterns need conditions",
+        "body": "Choose a chemically appropriate example before balancing its atoms and charges.",
+        "bullets": [
+          {
+            "text": "HCl + NaOH → NaCl + H₂O; NH₃ + H⁺ → NH₄⁺."
+          },
+          {
+            "text": "Sufficient acid + carbonate → salt + water + CO₂."
+          },
+          {
+            "text": "Mg + 2HCl → MgCl₂ + H₂ (dilute HCl); do not generalise to every acid."
+          }
+        ],
+        "secondary": "Oxidising acids, passivation and acid amount can change the outcome. A balanced formula is not proof the proposed reaction occurs.",
+        "callout": "First establish the chemistry, then balance.",
+        "caption": "The three beakers show specific examples, not universal acid rules.",
+        "voiceover": {
+          "text": "Use reaction patterns with their scope stated. Hydrochloric acid and sodium hydroxide form salt and water, with hydrogen ion plus hydroxide ion giving water. Ammonia also accepts a proton, but its net reaction does not require water as a product. With sufficient acid, a carbonate can form salt, water and carbon dioxide; partial protonation can instead leave hydrogen carbonate. Magnesium and dilute hydrochloric acid provide a suitable salt-plus-hydrogen example. Nitric acid is an oxidising acid, so the simple rule cannot be applied automatically. Copper can react with it while nitrogen-containing products form. Reactivity, passivation and conditions all matter. These are equations to interpret, not practical instructions."
+        }
+      },
+      "worked-example": {
+        "question": "Name and classify these stated aqueous examples: HNO₂(aq), H₂S(aq) and dissolved Ba(OH)₂.",
+        "coachNote": "Distinguish the aqueous acid name, acid-base strength and solubility.",
+        "steps": [
+          "HNO₂(aq): nitrous acid, a weak acid.",
+          "H₂S(aq): hydrogen sulfide solution, conventionally hydrosulfuric acid; weak.",
+          "Ba(OH)₂: barium hydroxide, a strong-base example.",
+          "Dissolved Ba(OH)₂ supplies Ba²⁺ and 2OH⁻.",
+          "This is not an exhaustive list of strong bases or a claim of unlimited solubility."
+        ],
+        "caption": "Common aqueous names and qualified acid-base classifications.",
+        "voiceover": {
+          "text": "For the stated aqueous examples, H N O two is nitrous acid, a weak acid. Aqueous H two S is hydrogen sulfide solution, conventionally called hydrosulfuric acid, and is weak. Barium hydroxide is a strong-base example: the dissolved ionic material supplies hydroxide. That statement does not say there are only four strong bases or that all solid hydroxides dissolve without limit. Naming, acid-base strength and solubility answer different questions."
+        }
+      },
+      "worked-example-2": {
+        "question": "Write balanced equations for (a) CaCO₃ with sufficient HCl(aq), and (b) Mg with dilute HCl(aq).",
+        "coachNote": "These are specific non-oxidising-acid examples. Do not substitute nitric acid automatically.",
+        "steps": [
+          "(a) CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g).",
+          "(b) Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g).",
+          "Check atom conservation and the diatomic hydrogen product.",
+          "Nitric-acid/metal chemistry needs the actual conditions and products."
+        ],
+        "caption": "Replace the unsupported HNO₃/Al hydrogen example with Mg/dilute HCl.",
+        "voiceover": {
+          "text": "Use hydrochloric acid for both examples, with enough acid to complete the stated reaction. Calcium carbonate gives calcium chloride, water and carbon dioxide. The balanced equation uses two hydrochloric acid units for each calcium carbonate. Magnesium gives magnesium chloride and hydrogen, also using two hydrochloric acid units per magnesium atom. We deliberately use a suitable non-oxidising acid here. Replacing it with nitric acid and aluminium would require different chemical evidence and conditions; simply balancing a salt-plus-hydrogen formula would not establish that reaction."
+        }
+      },
+      "misconception": {
+        "heading": "Avoid three overgeneralised rules",
+        "body": "Naming examples do not name every acid; bond strength alone does not determine aqueous acid strength.",
+        "secondary": "A balanced salt-plus-hydrogen equation is not proof that every acid/metal pair follows that pattern.",
+        "callout": "State the scope, then justify the products.",
+        "mistakeTag": "A balanced equation can still describe the wrong reaction",
+        "caption": "Names, aqueous equilibria and reaction conditions each matter.",
+        "voiceover": {
+          "text": "Three distinctions matter. Sulfuric acid and aqueous hydrogen sulfide have different names and compositions. H F is weak in water, but acidity reflects the overall free-energy balance in the solvent, not bond strength alone. And an acid-reaction template has limits: hydroxide and ammonia neutralisation differ, carbonate protonation depends on acid amount, and oxidising acids can give different metal-reaction products. A formula can balance perfectly while describing the wrong chemistry. State the conditions and justify the products before balancing."
+        }
+      },
+      "quick-check": {
+        "question": "Using a supplied phenolphthalein transition interval of pH 8.3–10.0, describe pH 5 and pH 9 qualitatively. Why is pH 12 alone insufficient to guarantee a permanent pink colour?",
+        "pausePrompt": "Pause: separate transition-range behaviour from alkaline fading.",
+        "answerSteps": [
+          "pH 5: normally colourless under ordinary observation conditions.",
+          "pH 9: within the transition; some pink may be visible, with intensity condition-dependent.",
+          "The transition does not prove one form dominates at every point in it.",
+          "At sufficiently high alkalinity, phenolphthalein can fade over time.",
+          "At pH 12, an exact time-dependent colour needs conditions and observation time."
+        ],
+        "caption": "Do not claim either permanently pink or instantly colourless at every high pH.",
+        "voiceover": {
+          "text": "Use a supplied phenolphthalein transition interval from p H eight point three to ten. Describe p H five and p H nine qualitatively. Why is p H twelve alone insufficient to guarantee that pink persists indefinitely? Pause and separate the normal transition from slower alkaline chemistry. At p H five it is normally colourless. At p H nine it is within the transition, so some pink can be visible and the intensity depends on conditions; the range alone does not prove a single form dominates. Phenolphthalein can fade over time in sufficiently alkaline solution. A precise prediction at p H twelve needs the concentration, conditions and observation time. Do not replace always pink with an equally universal instantly colourless rule."
+        }
+      },
+      "summary": {
+        "points": [
+          "Use common naming examples within their aqueous inorganic scope.",
+          "Strong-base examples are not an exhaustive list; solubility is separate.",
+          "Indicator identity, range, chemistry and observation time matter.",
+          "Reaction patterns require suitable reactants and conditions.",
+          "Establish the products, then balance atoms and charge."
+        ],
+        "finalPrompt": "What conditions make your name, colour inference or equation valid?",
+        "caption": "Qualified examples support reasoning; practical achievement still needs learner evidence.",
+        "voiceover": {
+          "text": "Use the conventional naming patterns for the selected common aqueous inorganic acids, without claiming they name every acid. Strong-base examples are not an exhaustive four-item list, and strength is different from solubility. Interpret indicators using their identity, transition range and observation conditions; simple models have limits. State the conditions of acid reactions and establish the products before balancing. Hydroxide, ammonia, carbonate and metal examples need their own qualifications. These source explanations do not establish that a learner has performed or evaluated the required practical investigations."
+        }
+      }
+    },
+    "response": {
+      "promptText": "Use a supplied phenolphthalein transition interval from p H eight point three to ten. Describe p H five and p H nine qualitatively. Why is p H twelve alone insufficient to guarantee that pink persists indefinitely? Pause and separate the normal transition from slower alkaline chemistry.",
+      "answerText": "At p H five it is normally colourless. At p H nine it is within the transition, so some pink can be visible and the intensity depends on conditions; the range alone does not prove a single form dominates. Phenolphthalein can fade over time in sufficiently alkaline solution. A precise prediction at p H twelve needs the concentration, conditions and observation time. Do not replace always pink with an equally universal instantly colourless rule.",
+      "minimumThinkingSeconds": 45
+    }
+  }
+}

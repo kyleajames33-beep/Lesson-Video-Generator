@@ -139,6 +139,7 @@ test('WAV assembly sidecars support caption building, intro coverage and physica
   // No actual intro audio was written, so remove its reference for the scene
   // physical check. This test does not fake evidence of intro decoding.
   delete built.introVoiceover;
+  delete built.introCaptions; // Do not retain orphan captions after removing narration.
   writeFileSync(path.join(dir, 'lesson.json'), JSON.stringify(built));
   const preflight = runScript('release-preflight.mjs');
   assert.equal(preflight.status, 0, preflight.stderr + preflight.stdout);

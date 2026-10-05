@@ -1,3 +1,4 @@
+import {validateBiologyResidualProps} from '../../biology-residuals-models.mjs';
 // AssortmentDiagram (bio11m1bAssortment) — how fast independent assortment
 // multiplies gamete variety.
 //
@@ -19,6 +20,8 @@ import {DioramaDefs, idleBob, idlePulse} from '../../diorama';
 import {fadeAt, popAt, CORAL, GlossDefs, Chromosome, Ledge, Pill} from './shared';
 
 export type AssortmentProps = {
+	/** Explicit source-review opt-in; omitted/false keeps legacy output. */
+	reviewedBiologyResiduals?: boolean;
 	at?: {one?: number; two?: number; three?: number; human?: number; crossing?: number; fertilisation?: number; rule?: number};
 	pairs?: number;
 	rule?: string;
@@ -33,7 +36,9 @@ const combos = (n: number) => Array.from({length: 2 ** n}, (_, i) => Array.from(
 const sup = (v: number) => v.toString().split('').map((d) => '⁰¹²³⁴⁵⁶⁷⁸⁹'[+d]).join('');
 const group = (v: number) => v.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
-export const AssortmentDiagram = ({at = {}, pairs = 23, rule, delay = 62}: AssortmentProps) => {
+export const AssortmentDiagram = (props: AssortmentProps) => {
+	validateBiologyResidualProps('bio11m1bAssortment', props);
+	const {at = {}, pairs = 23, rule, delay = 62, reviewedBiologyResiduals = false} = props;
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
@@ -79,7 +84,7 @@ export const AssortmentDiagram = ({at = {}, pairs = 23, rule, delay = 62}: Assor
 							);
 						})}
 						<text x={c.x} y={c.n === 3 ? 292 : 238} textAnchor="middle" fill={theme.accent} fontSize={18} fontWeight={800} opacity={fadeAt(frame, t[ci] + 30 + gam.length * 6)}>
-							2{sup(c.n)} = {gam.length} gametes
+							2{sup(c.n)} = {gam.length} {reviewedBiologyResiduals ? 'possible types' : 'gametes'}
 						</text>
 					</g>
 				);
@@ -91,10 +96,10 @@ export const AssortmentDiagram = ({at = {}, pairs = 23, rule, delay = 62}: Assor
 				<text x={380} y={384} textAnchor="middle" fill={TOK.amberInk} fontSize={26} fontWeight={800} opacity={0.85 + 0.15 * pulse}>2{sup(pairs)} = {group(human)}</text>
 			</g>
 			<g opacity={fadeAt(frame, tC)}>
-				<Pill x={250} y={428} text="× crossing over" color={theme.accent} size={16} />
+				<Pill x={250} y={428} text={reviewedBiologyResiduals ? 'Crossing over adds combinations' : '× crossing over'} color={theme.accent} size={16} />
 			</g>
 			<g opacity={fadeAt(frame, tF)}>
-				<Pill x={510} y={428} text="× random fertilisation" color={CORAL} size={16} />
+				<Pill x={510} y={428} text={reviewedBiologyResiduals ? 'Fertilisation: offspring variety' : '× random fertilisation'} color={CORAL} size={16} />
 			</g>
 			{rule && <text x={W / 2} y={H - 14} textAnchor="middle" fill={TOK.amberInk} fontSize={19} fontWeight={800} opacity={fadeAt(frame, tR) * (0.82 + 0.18 * pulse)}>{rule}</text>}
 		</svg>

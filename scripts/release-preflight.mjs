@@ -1,3 +1,10 @@
+import {inspectNarration, narrationFilenameTextHash} from './lib/narration-integrity.mjs';
+import {validateBiologyResidualDiagram} from '../src/slides/diagrams/biology-residuals-models.mjs';
+import {validateAnalyticalDiagram} from '../src/slides/diagrams/analytical-inference-models.mjs';
+import {validateSafetyMedicineDiagram} from '../src/slides/diagrams/safety-medicine-models.mjs';
+import {validateWaterHealthDiagram} from '../src/slides/diagrams/water-health-models.mjs';
+import {validatePriorityScienceDiagram} from '../src/slides/diagrams/priority-science-models.mjs';
+import {validateReviewedMedicineDiagram} from '../src/slides/diagrams/medicine-models.mjs';
 import {existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync} from 'node:fs';
 import path from 'node:path';
 import {alignmentPathFor, lessonCaptionCues} from './lib/caption-timeline.mjs';
@@ -20,6 +27,13 @@ if (!files.length) {
   console.error('Usage: node scripts/release-preflight.mjs <lesson.json> [more.json] | --all');
   process.exit(1);
 }
+const heldBiologyResidualLessons = new Set(['Biology-Y11-M1-L7', 'Biology-Y11-M1-L24', 'Biology-Y11-M2-L11', 'Biology-Y11-M2-L19', 'Biology-Y11-M2-L20']);
+const heldAnalyticalLessons = new Set(['Chemistry-Y11-M2-L10', 'Chemistry-Y11-M2-L17', 'Chemistry-Y12-M6-L16', 'Chemistry-Y12-M6-L17', 'Chemistry-Y12-M8-L3']);
+const heldSafetyMedicineLessons = new Set(['Chemistry-Y11-M1-L3', 'Chemistry-Y12-M8-L13', 'Chemistry-Y12-M8-L14']);
+const heldWaterHealthLessons = new Set(['Chemistry-Y12-M6-L13', 'Chemistry-Y12-M8-L7', 'Chemistry-Y12-M8-L9', 'Chemistry-Y12-M8-L10']);
+const heldFoundationsLessons = new Set(['Chemistry-Y11-M4-L13', 'Chemistry-Y11-M4-Checkpoint3', 'Chemistry-Y12-M7-L21', 'Chemistry-Y12-M6-L2']);
+const heldPriorityLessons = new Set(['Biology-Y11-M2-L25', 'Biology-Y12-M6-L16', 'Chemistry-Y11-M2-L8', 'Chemistry-Y12-M8-L8']);
+const heldMedicineLessons = new Set(['Chemistry-Y12-M8-L11', 'Chemistry-Y12-M8-L12']);
 const registry = readFileSync('src/assets/index.ts', 'utf8');
 const assets = new Map([...registry.matchAll(/(\w+)\s*:\s*staticFile\('([^']+)'\)/g)].map(m => [m[1], m[2]]));
 const mediaPath = value => path.resolve('public', value.replace(/^public[\\/]/, '').replace(/\\/g, '/'));
@@ -42,13 +56,45 @@ const reports = files.map(file => {
     else if (value && typeof value === 'object') Object.entries(value).forEach(([key, item]) => inspectCopy(item, field + '.' + key));
   };
   inspectCopy(lesson);
+  if (heldBiologyResidualLessons.has(getCompositionId(lesson))) error('lesson', 'BIOLOGY_RESIDUAL_SOURCE_REVIEW_PENDING', 'Membrane, kidney, dialysis, potometer and meiosis source proposals require teacher/science, curriculum, visual and media approval.');
+  if (heldAnalyticalLessons.has(getCompositionId(lesson))) error('lesson', 'ANALYTICAL_SOURCE_REVIEW_PENDING', 'Titration and qualitative-identification source proposals require teacher/science, visual and media approval.');
+  if (heldSafetyMedicineLessons.has(getCompositionId(lesson))) error('lesson', 'SAFETY_MEDICINE_SOURCE_REVIEW_PENDING', 'Separation safety and medicine-enrichment source proposals require teacher/science, visual and media approval.');
+  if (heldWaterHealthLessons.has(getCompositionId(lesson))) error('lesson', 'WATER_HEALTH_SOURCE_REVIEW_PENDING', 'Legacy blood-buffer, environmental and treatment claims or their source proposals need teacher/science, visual and media approval.');
+  if (heldFoundationsLessons.has(getCompositionId(lesson))) error('lesson', 'FOUNDATIONS_SOURCE_REVIEW_PENDING', 'Legacy thermodynamics, polymers and acid-reaction claims or their isolated proposals require teacher/source approval and actual visual/audio evidence.');
+  if (heldPriorityLessons.has(getCompositionId(lesson))) error('lesson', 'PRIORITY_SOURCE_REVIEW_PENDING', 'Confirmed legacy science claims and their isolated replacement proposals require source, teacher and actual visual/media review.');
+  if (heldMedicineLessons.has(getCompositionId(lesson))) error('lesson', 'MEDICINE_SOURCE_REVIEW_PENDING', 'Legacy medicine claims or their isolated replacement proposal require specialist/teacher source review and actual visual/playback evidence before release.');
   if ((timeline?.introFrames ?? INTRO_STINGER_FRAMES) > 0) {
     if (lesson.backgroundMusic) checkMedia('intro', lesson.backgroundMusic);
     if (lesson.introVoiceover?.audioFile) checkMedia('intro', lesson.introVoiceover.audioFile);
     else warn('intro', 'INTRO_SILENT', 'Intro has no recorded narration. Review the opening for retention.');
   }
+  // Check exact text/alignment/caption pairing for ordinary and assembled takes,
+  // including intros. Run even when audio is absent so staleness is not hidden.
+  const narratedSegments = [...lesson.scenes];
+  if ((timeline?.introFrames ?? INTRO_STINGER_FRAMES) > 0) narratedSegments.push({id: 'intro', voiceover: lesson.introVoiceover, captions: lesson.introCaptions});
+  const integrityIssues = [];
+  for (const segment of narratedSegments) {
+    const integrity = inspectNarration(segment);
+    for (const issue of integrity.errors) integrityIssues.push({sceneId: segment.id, ...issue});
+  }
   for (const scene of lesson.scenes) {
+    // These slides currently do not render an authored diagram. Keep release
+    // blocked until scoped renderer integration and actual visual QA exist.
+    if (scene.diagram && ['workedExample', 'summary'].includes(scene.type)) error(scene.id, 'DIAGRAM_HOST_UNSUPPORTED', 'Authored diagram is ignored by this slide; renderer integration and visual review required.');
+    if (scene.diagram?.props?.reviewedBiologyResiduals) error(scene.id, 'BIOLOGY_RESIDUAL_VISUAL_REVIEW_PENDING', 'Opt-in Biology diagrams have no measured cue, visual-fit or playback approval.');
+    if (scene.diagram?.props?.reviewedAnalytical) error(scene.id, 'ANALYTICAL_VISUAL_REVIEW_PENDING', 'Analytical diagram opt-ins have no actual visual-fit, measured-cue or playback approval.');
+    if (scene.diagram?.props?.reviewedSafetyMedicine) error(scene.id, 'SAFETY_MEDICINE_VISUAL_REVIEW_PENDING', 'Chirality/delivery opt-ins have no actual visual-fit, measured-cue or playback approval.');
+    if (scene.diagram?.props?.reviewedWaterHealth) error(scene.id, 'WATER_HEALTH_VISUAL_REVIEW_PENDING', 'Source-only water-health diagram changes require visual-fit, measured-cue and playback review.');
+    if (scene.diagram?.props?.reviewedPolymer) error(scene.id, 'FOUNDATIONS_VISUAL_REVIEW_PENDING', 'Reviewed polymer source labels have no visual-fit, measured-cue or playback approval.');
+    if (scene.diagram?.props?.reviewedMedicine) error(scene.id, 'MEDICINE_VISUAL_REVIEW_PENDING', 'Opt-in medicine enrichment is an unapproved source proposal; actual visual-fit, timing and playback review are pending.');
+    if (scene.diagram?.props?.referenceBandOnly || scene.diagram?.props?.reviewedMethylmercury) error(scene.id, 'PRIORITY_VISUAL_REVIEW_PENDING', 'Opt-in reference-band/food-web illustration has no actual visual-fit, cue or playback approval.');
     try {
+      validateBiologyResidualDiagram(scene.diagram);
+      validateAnalyticalDiagram(scene.diagram);
+      validateSafetyMedicineDiagram(scene.diagram);
+      validateWaterHealthDiagram(scene.diagram);
+      validateReviewedMedicineDiagram(scene.diagram);
+      validatePriorityScienceDiagram(scene.diagram);
       validateQuantitativeDiagram(scene.diagram);
       if (scene.diagram?.type === 'circuit3d') validateSeriesCircuit(scene.diagram.components, scene.diagram.showCurrent);
       if (scene.diagram?.type === 'orbit') validateShellOccupancy(scene.diagram.electrons);
@@ -66,7 +112,7 @@ const reports = files.map(file => {
     const audio = mediaPath(vo.audioFile);
     if (!present(audio)) { error(scene.id, 'AUDIO_MISSING', vo.audioFile); continue; }
     const hash = createHash('sha256').update(vo.text).digest('hex').slice(0, 12);
-    const filenameHash = path.basename(audio).match(/\.([a-f0-9]{12})\.(?:mp3|wav)$/i)?.[1];
+    const filenameHash = narrationFilenameTextHash(audio);
     if (filenameHash && filenameHash !== hash) error(scene.id, 'AUDIO_STALE', 'Filename text hash differs from current narration.');
     if (!filenameHash) warn(scene.id, 'AUDIO_UNVERSIONED', 'Cannot verify narration text against this filename.');
     try {
@@ -92,6 +138,7 @@ const reports = files.map(file => {
       error(scene.id, 'CAPTIONS_INVALID', 'Captions must be ordered, finite and fit the narration playback scene.');
     }
   }
+  for (const issue of integrityIssues) if (!errors.some(e => e.sceneId === issue.sceneId && e.code === issue.code)) errors.push(issue);
   for (const scene of lesson.scenes) {
     if (scene.voiceover?.audioFile && present(mediaPath(scene.voiceover.audioFile))) {
       try { for (const message of verifyAssembly(scene, fps)) error(scene.id, 'ASSEMBLY_STALE', message); }
@@ -117,9 +164,12 @@ const reports = files.map(file => {
 });
 mkdirSync('out/audits', {recursive: true});
 writeFileSync('out/audits/release-preflight.json', JSON.stringify({generatedAt: new Date().toISOString(), lessons: reports}, null, 2) + '\n');
+if (args.includes('--json')) console.log(JSON.stringify({lessons: reports}, null, 2));
+else {
 for (const report of reports) {
   console.log(`${report.compositionId}: ${report.errors.length} errors, ${report.warnings.length} warnings`);
   if (!args.includes('--all')) for (const issue of [...report.errors, ...report.warnings]) console.log(`  ${issue.sceneId} ${issue.code}: ${issue.message}`);
 }
 console.log(`Media ready: ${reports.filter(r => r.mediaReady).length}/${reports.length}. Details: out/audits/release-preflight.json`);
+}
 process.exitCode = reports.some(r => !r.mediaReady) ? 1 : 0;

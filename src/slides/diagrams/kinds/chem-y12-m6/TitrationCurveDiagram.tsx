@@ -1,25 +1,26 @@
-// TitrationCurveDiagram — titration curves that draw themselves as titrant is
-// added, computed from real chemistry.
+// TitrationCurveDiagram: curves drawn from the existing ideal charge-balance
+// model, with water equilibria fixed at 25 °C. Concentrations and volumes are
+// supplied in props. This is an ideal dilute, monoprotic acid/monobasic base
+// model, not a claim of exact measured pH or indicator endpoint performance.
 //
-// Every point is an exact pH from charge balance (solvePH) for the analyte
-// (strong or weak acid, c and V from props) after V mL of titrant (strong or
-// weak base), so the start pH, the buffer region, the equivalence pH and the
-// size of the jump all come out of the numbers, never hand-drawn. Several
-// curve types can draw one after another (the four fingerprints), or one curve
-// can draw beside a burette dripping into a flask on a stone plinth, with
-// reading markers: the equivalence volume, the half-equivalence point (pH =
-// pKa) and the buffer region.
+// reviewedAnalytical retains the curve geometry and qualifies the readings:
+// equivalence follows stoichiometry; pH is approximately pKa at half-equivalence
+// only in the supported weak-acid/strong-base buffer regime. Legacy labels and
+// optional jump readings are preserved only when the opt-in is omitted/false.
 
 import {interpolate, useCurrentFrame} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
 import {DioramaDefs, DioramaPlinth, idlePulse} from '../../diorama';
 import {BLUE, clamp, ease, fadeAt, phColor, solvePH} from './shared';
+import {validateAnalyticalDiagram} from '../../analytical-inference-models.mjs';
 
 export type CurveType = 'SA-SB' | 'WA-SB' | 'SA-WB' | 'WA-WB';
 /** `epLabel` may contain {pH}, replaced by the computed equivalence pH. */
 export type CurveSeries = {type: CurveType; label: string; at: number; dur?: number; epLabel?: string};
 export type TitrationCurveProps = {
+	/** Enable only with matching source-reviewed narration and lesson copy. */
+	reviewedAnalytical?: boolean;
 	series: CurveSeries[];
 	/** Analyte acid: mol L⁻¹ and mL; titrant base mol L⁻¹. */
 	ca?: number;
@@ -63,14 +64,19 @@ export const curvePH = (type: CurveType, V: number, ca: number, va: number, cb: 
 	});
 };
 
-export const TitrationCurveDiagram = ({
-	series, ca = 0.1, va = 25, cb = 0.1, pKa = 4.74, pKb = 4.75, vMax = 50, apparatus = false, markers = {}, epDots = false, grid = false, jumpRead, bands = [], wrongPins = [], delay = 62,
-}: TitrationCurveProps) => {
+export const TitrationCurveDiagram = (props: TitrationCurveProps) => {
+	validateAnalyticalDiagram({type: 'diorama', kind: 'chem12m6TitrationCurve', props});
+	const {
+		reviewedAnalytical = false,
+		series, ca = 0.1, va = 25, cb = 0.1, pKa = 4.74, pKb = 4.75, vMax = 50, apparatus = false, markers = {}, epDots = false, grid = false, jumpRead, bands = [], wrongPins = [], delay = 62,
+	} = props;
 	const frame = useCurrentFrame() - delay;
 	const theme = useAccent();
 	const Ka = 10 ** -pKa, Kb = 10 ** -pKb;
 	const vEq = (ca * va) / cb;
 	const cols = COLORS(theme.accent);
+	const modelNote = 'Ideal dilute model, 25 °C; monoprotic acid and monobasic base';
+	const reviewedLabel = `Titration curve: pH against volume of base added. ${modelNote}. Charge balance includes water and acid-base equilibria. Equivalence is the stoichiometric volume, not an arithmetic average of pH bounds. Half-equivalence pH is approximately pKa only for the stated weak-acid and strong-base buffer model. Indicator bands show transition ranges only; suitability requires endpoint-volume error and experimental conditions.`;
 
 	const GX0 = apparatus ? 272 : 74, GX1 = apparatus ? 700 : bands.length ? 566 : 600, GY0 = 30, GY1 = 440;
 	const gx = (v: number) => GX0 + (v / vMax) * (GX1 - GX0);
@@ -101,8 +107,9 @@ export const TitrationCurveDiagram = ({
 		const cols2 = 2;
 		const pw = 330, ph = 200;
 		return (
-			<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Four titration curve types" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+			<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={reviewedAnalytical ? `Four titration curve types. ${reviewedLabel}` : 'Four titration curve types'} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 				<DioramaDefs id={ID} />
+				{reviewedAnalytical && <text x={W / 2} y={18} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>{modelNote}</text>}
 				{series.map((s, i) => {
 					const ox = 50 + (i % cols2) * (pw + 44), oy = 26 + Math.floor(i / cols2) * (ph + 62);
 					const px = (v: number) => ox + (v / vMax) * pw;
@@ -150,8 +157,9 @@ export const TitrationCurveDiagram = ({
 	const halfPH = single ? curvePH(single.type, vEq / 2, ca, va, cb, Ka, Kb) : 0;
 
 	return (
-		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Titration curve: pH against volume of base added" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={reviewedAnalytical ? reviewedLabel : 'Titration curve: pH against volume of base added'} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={ID} />
+			{reviewedAnalytical && <text x={W / 2} y={520} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>{modelNote}</text>}
 
 			{/* Graph card on a stone ledge */}
 			<g opacity={fadeAt(frame, 0, 14)}>
@@ -216,7 +224,7 @@ export const TitrationCurveDiagram = ({
 						<line x1={gx(vEq)} y1={GY1} x2={gx(vEq)} y2={GY1 - (GY1 - gy(ep)) * t} stroke={TOK.amber} strokeWidth={3} strokeDasharray="7 6" />
 						<circle cx={gx(vEq)} cy={gy(ep)} r={8 + idlePulse(frame) * 2} fill="#ffffff" stroke={TOK.amber} strokeWidth={3.5} />
 						<text x={gx(vEq) + 14} y={gy(ep) + 34} fill={TOK.amberInk} fontSize={18} fontWeight={800}>equivalence: {vEq.toFixed(2)} mL</text>
-						<text x={gx(vEq) + 14} y={gy(ep) + 56} fill={TOK.amberInk} fontSize={16} fontWeight={800}>{jumpRead ? `halfway up the jump: pH ≈ ${ep.toFixed(1)}` : 'middle of the jump'}</text>
+						<text x={gx(vEq) + 14} y={gy(ep) + 56} fill={TOK.amberInk} fontSize={16} fontWeight={800}>{reviewedAnalytical ? `charge balance: pH ${ep.toFixed(2)}` : jumpRead ? `halfway up the jump: pH ≈ ${ep.toFixed(1)}` : 'middle of the jump'}</text>
 					</g>
 				);
 			})()}
@@ -230,7 +238,7 @@ export const TitrationCurveDiagram = ({
 						<g opacity={t2}>
 							<line x1={GX0} y1={gy(halfPH)} x2={gx(vEq / 2)} y2={gy(halfPH)} stroke={theme.accent} strokeWidth={2.5} strokeDasharray="6 6" />
 							<circle cx={gx(vEq / 2)} cy={gy(halfPH)} r={7} fill="#ffffff" stroke={theme.accent} strokeWidth={3} />
-							<text x={gx(vEq / 2) + 14} y={gy(halfPH) + 28} fill={theme.accent} fontSize={18} fontWeight={800}>pH = pKa = {halfPH.toFixed(2)}</text>
+							<text x={gx(vEq / 2) + 14} y={gy(halfPH) + 28} fill={theme.accent} fontSize={18} fontWeight={800}>{reviewedAnalytical ? `pH ≈ pKa = ${pKa.toFixed(2)}` : `pH = pKa = ${halfPH.toFixed(2)}`}</text>
 						</g>
 					</g>
 				);
@@ -260,7 +268,9 @@ export const TitrationCurveDiagram = ({
 						<rect x={GX1 + 4} y={y0} width={8} height={y1 - y0} rx={3} fill={b.color} />
 						<text x={GX1 + 18} y={(y0 + y1) / 2 + 6} fill={b.wrong ? TOK.amberInk : TOK.ink} fontSize={16} fontWeight={800}>{b.label}</text>
 						{b.wrong && <line x1={GX1 + 16} y1={(y0 + y1) / 2} x2={GX1 + 18 + b.label.length * 8.6} y2={(y0 + y1) / 2} stroke={TOK.amberInk} strokeWidth={2.5} />}
-						{!b.wrong && <text x={GX1 + 18} y={(y0 + y1) / 2 + 26} fill={GOOD} fontSize={16} fontWeight={800}>✓ brackets the jump</text>}
+						{reviewedAnalytical && <text x={GX1 + 18} y={(y0 + y1) / 2 + 26} fill={TOK.inkDim} fontSize={16} fontWeight={700}>transition interval</text>}
+						{reviewedAnalytical && <text x={GX1 + 18} y={(y0 + y1) / 2 + 46} fill={TOK.inkDim} fontSize={16} fontWeight={700}>check volume error</text>}
+						{!reviewedAnalytical && !b.wrong && <text x={GX1 + 18} y={(y0 + y1) / 2 + 26} fill={GOOD} fontSize={16} fontWeight={800}>✓ brackets the jump</text>}
 					</g>
 				);
 			})}

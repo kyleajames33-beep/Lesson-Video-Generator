@@ -17,7 +17,11 @@ import {useAccent} from '../../../../styles/theme';
 import {DioramaDefs, STONE, idlePulse} from '../../diorama';
 import {Chip2, Foot, FootLine, GLOSS, GlossDefs, H, PAL, W, alongPoly, fadeAt, mix, popAt} from './shared';
 
+import {validatePriorityScienceDiagram} from '../../priority-science-models.mjs';
+
 export type ZonesProps = {
+	/** Isolated reference-band teaching: do not imply universal clinical cutoffs. */
+	referenceBandOnly?: boolean;
 	scale: {min: number; max: number; step: number; unit: string; label: string};
 	optimal: {from: number; to: number; label: string; at: number};
 	tolerance: {from: number; to: number; label: string; at: number};
@@ -31,7 +35,8 @@ export type ZonesProps = {
 const ID = 'b11m2zone';
 const L = 60, R = 700;
 
-export const ZonesDiagram = ({scale, optimal, tolerance, critical, markers = [], enzyme, footer = [], delay = 62}: ZonesProps) => {
+export const ZonesDiagram = ({scale, optimal, tolerance, critical, markers = [], enzyme, footer = [], delay = 62, referenceBandOnly = false}: ZonesProps) => {
+	validatePriorityScienceDiagram({type: 'diorama', kind: 'bio11m2Zones', props: {referenceBandOnly, scale, optimal, tolerance, critical, enzyme}});
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
@@ -74,15 +79,15 @@ export const ZonesDiagram = ({scale, optimal, tolerance, critical, markers = [],
 	const eT = enzyme ? Math.max(0, Math.min(1, (frame - enzyme.at) / 80)) : 0;
 
 	return (
-		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${scale.label}: ${optimal.label} ${optimal.from}–${optimal.to} ${scale.unit}`} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={referenceBandOnly ? `${scale.label}: usual reference interval ${optimal.from} to ${optimal.to} ${scale.unit}. No universal safety or survival boundaries are asserted.` : `${scale.label}: ${optimal.label} ${optimal.from}–${optimal.to} ${scale.unit}`} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={ID} />
 			<GlossDefs id={ID} colors={GLOSS} />
 			<rect x={24} y={enzyme ? 20 : 40} width={W - 48} height={enzyme ? SY + 100 - 20 : SY + 60} rx={20} fill={STONE.shadow} transform="translate(6, 10)" />
 			<rect x={24} y={enzyme ? 20 : 40} width={W - 48} height={enzyme ? SY + 100 - 20 : SY + 60} rx={20} fill="#fbfaf7" stroke={STONE.topEdge} strokeWidth={3} />
 
 			{/* bands */}
-			{band(scale.min, tolerance.from, red, cO, 'fl')}
-			{band(tolerance.to, scale.max, red, cO, 'fh')}
+			{!referenceBandOnly && band(scale.min, tolerance.from, red, cO, 'fl')}
+			{!referenceBandOnly && band(tolerance.to, scale.max, red, cO, 'fh')}
 			{band(tolerance.from, optimal.from, amb, tO, 'tl')}
 			{band(optimal.to, tolerance.to, amb, tO, 'th')}
 			{band(optimal.from, optimal.to, opt, oO, 'o')}
@@ -97,7 +102,7 @@ export const ZonesDiagram = ({scale, optimal, tolerance, critical, markers = [],
 			<text x={(px(tolerance.from) + px(optimal.from)) / 2} y={SY - BH / 2 + 6} textAnchor="middle" fill={TOK.amberInk} fontSize={enzyme ? 16 : 18} fontWeight={800} opacity={tO}>{tolerance.label}</text>
 			<text x={(px(scale.min) + px(tolerance.from)) / 2} y={SY - BH / 2 + 6} textAnchor="middle" fill={PAL.stop} fontSize={enzyme ? 16 : 18} fontWeight={800} opacity={cO}>{critical.failLabel}</text>
 			<text x={(px(tolerance.to) + px(scale.max)) / 2} y={SY - BH / 2 + 6} textAnchor="middle" fill={PAL.stop} fontSize={enzyme ? 16 : 18} fontWeight={800} opacity={cO}>{critical.failLabel}</text>
-			{[tolerance.from, tolerance.to].map((v, k) => (
+			{!referenceBandOnly && [tolerance.from, tolerance.to].map((v, k) => (
 				<g key={k} opacity={cO}>
 					<line x1={px(v)} x2={px(v)} y1={SY - BH - 6} y2={SY + 8} stroke={PAL.stop} strokeWidth={3} />
 				</g>

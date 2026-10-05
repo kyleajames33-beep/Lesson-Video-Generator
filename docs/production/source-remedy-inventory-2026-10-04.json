@@ -1,0 +1,841 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-04",
+  "preservedCatalogue": "ca58c157f0349b29774f93a76cd041aefab3a2a2",
+  "semanticLedgerSha256": "eb9f02e446808433c32bdbff1a2066e3d6ef62ea9668725fc0661da310d6c7b8",
+  "scope": "Estimate of named historical finding-group source-remedy coverage, not whole-lesson certification or production readiness. Groups overlap and are not distinct defects, lessons or audio jobs.",
+  "counts": {
+    "narrowClaimResolvedInMain": 7,
+    "coveredByCompleteIsolatedProposals": 31,
+    "coveredByPartialSceneProposals": 1,
+    "unaddressedSubstantiveResidual": 51,
+    "unaddressedNarrowQualification": 8,
+    "unverifiedCorrespondence": 1
+  },
+  "categories": {
+    "narrowClaimResolvedInMain": [
+      {
+        "key": "original:A01",
+        "sourceStatus": "resolved-original-claim",
+        "remedyStatus": "preserve-existing-source-fix",
+        "lessonPrefixes": [
+          "biology-y11-m2-l19"
+        ]
+      },
+      {
+        "key": "original:A04",
+        "sourceStatus": "resolved-original-claim",
+        "remedyStatus": "preserve-existing-source-fix",
+        "lessonPrefixes": [
+          "biology-y11-m2-l12"
+        ]
+      },
+      {
+        "key": "original:A06",
+        "sourceStatus": "resolved-original-claim",
+        "remedyStatus": "preserve-existing-source-fix",
+        "lessonPrefixes": [
+          "biology-y11-m1-l05"
+        ]
+      },
+      {
+        "key": "original:A07",
+        "sourceStatus": "resolved-original-claim",
+        "remedyStatus": "preserve-existing-source-fix",
+        "lessonPrefixes": [
+          "biology-y11-m2-l24"
+        ]
+      },
+      {
+        "key": "original:A14",
+        "sourceStatus": "resolved-original-claim",
+        "remedyStatus": "preserve-existing-source-fix",
+        "lessonPrefixes": [
+          "biology-y11-m2-l15"
+        ]
+      },
+      {
+        "key": "original:A18",
+        "sourceStatus": "resolved-original-claim",
+        "remedyStatus": "preserve-existing-source-fix",
+        "lessonPrefixes": [
+          "biology-y11-m3-l23"
+        ]
+      },
+      {
+        "key": "original:A21",
+        "sourceStatus": "resolved-original-claim",
+        "remedyStatus": "preserve-existing-source-fix",
+        "lessonPrefixes": [
+          "biology-y11-m3-l21"
+        ]
+      }
+    ],
+    "coveredByCompleteIsolatedProposals": [
+      {
+        "key": "original:A05",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "superseded-by-complete-priority-science-proposal",
+        "lessonPrefixes": [
+          "biology-y11-m2-l25"
+        ]
+      },
+      {
+        "key": "original:A11",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "superseded-by-newer-biology-proposals",
+        "lessonPrefixes": [
+          "biology-y11-m1-l17",
+          "biology-y11-m1-l18"
+        ]
+      },
+      {
+        "key": "original:A24",
+        "sourceStatus": "still-present",
+        "remedyStatus": "superseded-by-complete-priority-science-proposal",
+        "lessonPrefixes": [
+          "biology-y12-m6-l16"
+        ]
+      },
+      {
+        "key": "original:A25",
+        "sourceStatus": "still-present",
+        "remedyStatus": "superseded-by-complete-priority-science-proposal",
+        "lessonPrefixes": [
+          "biology-y12-m6-l16"
+        ]
+      },
+      {
+        "key": "original:A26",
+        "sourceStatus": "still-present",
+        "remedyStatus": "complete-isolated-foundations-chemistry-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l21"
+        ]
+      },
+      {
+        "key": "original:A27",
+        "sourceStatus": "still-present",
+        "remedyStatus": "complete-isolated-foundations-chemistry-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y12-m6-l2"
+        ]
+      },
+      {
+        "key": "chemistry:C02",
+        "sourceStatus": "still-present",
+        "remedyStatus": "complete-isolated-safety-medicine-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y11-m1-l3"
+        ]
+      },
+      {
+        "key": "chemistry:C16",
+        "sourceStatus": "still-present",
+        "remedyStatus": "superseded-by-complete-priority-science-proposal",
+        "lessonPrefixes": [
+          "chemistry-y11-m2-l8"
+        ]
+      },
+      {
+        "key": "chemistry:C17",
+        "sourceStatus": "still-present",
+        "remedyStatus": "complete-isolated-analytical-inference-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y11-m2-l10"
+        ]
+      },
+      {
+        "key": "chemistry:C19",
+        "sourceStatus": "still-present",
+        "remedyStatus": "complete-isolated-analytical-inference-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y11-m2-l17"
+        ]
+      },
+      {
+        "key": "chemistry:C25",
+        "sourceStatus": "still-present",
+        "remedyStatus": "superseded-by-existing-complete-proposal",
+        "lessonPrefixes": [
+          "chemistry-y11-m4-l3"
+        ]
+      },
+      {
+        "key": "chemistry:C26",
+        "sourceStatus": "still-present",
+        "remedyStatus": "superseded-by-existing-complete-proposal",
+        "lessonPrefixes": [
+          "chemistry-y11-m4-l4"
+        ]
+      },
+      {
+        "key": "chemistry:C27",
+        "sourceStatus": "still-present",
+        "remedyStatus": "superseded-by-existing-complete-proposal",
+        "lessonPrefixes": [
+          "chemistry-y11-m4-l7"
+        ]
+      },
+      {
+        "key": "chemistry:C29",
+        "sourceStatus": "still-present",
+        "remedyStatus": "complete-isolated-foundations-chemistry-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y11-m4-l13",
+          "chemistry-y11-m4-cp3"
+        ]
+      },
+      {
+        "key": "chemistry:C33",
+        "sourceStatus": "still-present",
+        "remedyStatus": "complete-isolated-water-health-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y12-m6-l13"
+        ]
+      },
+      {
+        "key": "chemistry:C34",
+        "sourceStatus": "still-present",
+        "remedyStatus": "superseded-by-new-complete-indicator-proposal",
+        "lessonPrefixes": [
+          "chemistry-y12-m6-l15"
+        ]
+      },
+      {
+        "key": "chemistry:C35",
+        "sourceStatus": "still-present",
+        "remedyStatus": "complete-isolated-analytical-inference-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y12-m6-l16",
+          "chemistry-y12-m6-l17"
+        ]
+      },
+      {
+        "key": "chemistry:C36",
+        "sourceStatus": "still-present",
+        "remedyStatus": "superseded-by-updated-complete-proposal",
+        "lessonPrefixes": [
+          "chemistry-y12-m6-l18"
+        ]
+      },
+      {
+        "key": "chemistry:C51",
+        "sourceStatus": "still-present",
+        "remedyStatus": "complete-isolated-foundations-chemistry-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l21"
+        ]
+      },
+      {
+        "key": "chemistry:C54",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "complete-isolated-analytical-inference-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l3"
+        ]
+      },
+      {
+        "key": "chemistry:C57",
+        "sourceStatus": "still-present",
+        "remedyStatus": "complete-isolated-water-health-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l7"
+        ]
+      },
+      {
+        "key": "chemistry:C58",
+        "sourceStatus": "still-present",
+        "remedyStatus": "superseded-by-complete-priority-science-proposal",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l8"
+        ]
+      },
+      {
+        "key": "chemistry:C59",
+        "sourceStatus": "still-present",
+        "remedyStatus": "complete-isolated-water-health-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l9"
+        ]
+      },
+      {
+        "key": "chemistry:C60",
+        "sourceStatus": "qualification-needed",
+        "remedyStatus": "complete-isolated-water-health-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l10"
+        ]
+      },
+      {
+        "key": "chemistry:C61",
+        "sourceStatus": "still-present",
+        "remedyStatus": "superseded-by-complete-medicine-enrichment-proposal",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l11"
+        ]
+      },
+      {
+        "key": "chemistry:C62",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "superseded-by-complete-medicine-enrichment-proposal",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l12"
+        ]
+      },
+      {
+        "key": "chemistry:C63",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "complete-isolated-safety-medicine-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l13"
+        ]
+      },
+      {
+        "key": "chemistry:C64",
+        "sourceStatus": "still-present",
+        "remedyStatus": "complete-isolated-safety-medicine-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l14"
+        ]
+      },
+      {
+        "key": "chemistry:C67",
+        "sourceStatus": "still-present",
+        "remedyStatus": "covered-by-four-isolated-medicine-enrichment-proposals",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l11",
+          "chemistry-y12-m8-l12",
+          "chemistry-y12-m8-l13",
+          "chemistry-y12-m8-l14"
+        ]
+      },
+      {
+        "key": "chemistry:C70",
+        "sourceStatus": "still-present",
+        "remedyStatus": "superseded-by-existing-complete-proposal",
+        "lessonPrefixes": [
+          "chemistry-y11-m2-l3"
+        ]
+      },
+      {
+        "key": "chemistry:C71",
+        "sourceStatus": "still-present",
+        "remedyStatus": "complete-isolated-water-health-proposal-prepared",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l9"
+        ]
+      }
+    ],
+    "coveredByPartialSceneProposals": [
+      {
+        "key": "chemistry:C28",
+        "sourceStatus": "still-present",
+        "remedyStatus": "source-checked-scene-proposal-prepared-full-integration-pending",
+        "lessonPrefixes": [
+          "chemistry-y11-m4-l10"
+        ]
+      }
+    ],
+    "unaddressedSubstantiveResidual": [
+      {
+        "key": "original:A02",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "preserve-fixed-fields-review-residuals",
+        "lessonPrefixes": [
+          "biology-y11-m2-l19"
+        ]
+      },
+      {
+        "key": "original:A03",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "preserve-fixed-fields-review-residuals",
+        "lessonPrefixes": [
+          "biology-y11-m2-l20"
+        ]
+      },
+      {
+        "key": "original:A08",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "preserve-fixed-fields-review-residuals",
+        "lessonPrefixes": [
+          "biology-y11-m2-l01"
+        ]
+      },
+      {
+        "key": "original:A09",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "preserve-fixed-fields-review-residuals",
+        "lessonPrefixes": [
+          "biology-y11-m2-l03"
+        ]
+      },
+      {
+        "key": "original:A10",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "preserve-fixed-fields-review-residuals",
+        "lessonPrefixes": [
+          "biology-y11-m1-l07"
+        ]
+      },
+      {
+        "key": "original:A12",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "preserve-fixed-fields-review-residuals",
+        "lessonPrefixes": [
+          "biology-y11-m2-l05"
+        ]
+      },
+      {
+        "key": "original:A13",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "preserve-fixed-fields-review-residuals",
+        "lessonPrefixes": [
+          "biology-y11-m2-l11"
+        ]
+      },
+      {
+        "key": "original:A15",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "preserve-fixed-fields-review-residuals",
+        "lessonPrefixes": [
+          "biology-y11-m3-l03"
+        ]
+      },
+      {
+        "key": "original:A16",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "preserve-fixed-fields-review-residuals",
+        "lessonPrefixes": [
+          "biology-y11-m3-l05"
+        ]
+      },
+      {
+        "key": "original:A19",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "preserve-fixed-fields-review-residuals",
+        "lessonPrefixes": [
+          "biology-y11-m3-l24"
+        ]
+      },
+      {
+        "key": "original:A20",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "preserve-fixed-fields-review-residuals",
+        "lessonPrefixes": [
+          "biology-y11-m3-l17"
+        ]
+      },
+      {
+        "key": "original:A22",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "preserve-fixed-fields-review-residuals",
+        "lessonPrefixes": [
+          "biology-y11-m1-l01"
+        ]
+      },
+      {
+        "key": "original:A23",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "preserve-fixed-fields-review-residuals",
+        "lessonPrefixes": [
+          "biology-y11-m1-l24"
+        ]
+      },
+      {
+        "key": "original:A28",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "partially-superseded-by-newer-biology-proposal",
+        "lessonPrefixes": [
+          "biology-y11-m1-l15",
+          "biology-y11-m1-l16",
+          "biology-y11-m1-l17"
+        ]
+      },
+      {
+        "key": "chemistry:C01",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m1-l1"
+        ]
+      },
+      {
+        "key": "chemistry:C03",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m1-l4"
+        ]
+      },
+      {
+        "key": "chemistry:C04",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m1-l5"
+        ]
+      },
+      {
+        "key": "chemistry:C05",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m1-l7"
+        ]
+      },
+      {
+        "key": "chemistry:C07",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m1-l9"
+        ]
+      },
+      {
+        "key": "chemistry:C08",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m1-l10"
+        ]
+      },
+      {
+        "key": "chemistry:C09",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m1-l12"
+        ]
+      },
+      {
+        "key": "chemistry:C10",
+        "sourceStatus": "still-present",
+        "remedyStatus": "source-checked-scene-proposal-prepared-full-integration-pending",
+        "lessonPrefixes": [
+          "chemistry-y11-m1-l14"
+        ]
+      },
+      {
+        "key": "chemistry:C11",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m1-l15"
+        ]
+      },
+      {
+        "key": "chemistry:C12",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m1-l17"
+        ]
+      },
+      {
+        "key": "chemistry:C13",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-awaits-review",
+        "lessonPrefixes": [
+          "chemistry-y11-m2-l1",
+          "chemistry-y11-m2-l1a"
+        ]
+      },
+      {
+        "key": "chemistry:C14",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m2-l2"
+        ]
+      },
+      {
+        "key": "chemistry:C20",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m3-cp1"
+        ]
+      },
+      {
+        "key": "chemistry:C21",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m3-cp3"
+        ]
+      },
+      {
+        "key": "chemistry:C22",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m3-l2"
+        ]
+      },
+      {
+        "key": "chemistry:C23",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m3-l5"
+        ]
+      },
+      {
+        "key": "chemistry:C24",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m3-l12"
+        ]
+      },
+      {
+        "key": "chemistry:C30",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m5-l4"
+        ]
+      },
+      {
+        "key": "chemistry:C37",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l1"
+        ]
+      },
+      {
+        "key": "chemistry:C38",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l2"
+        ]
+      },
+      {
+        "key": "chemistry:C40",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l4"
+        ]
+      },
+      {
+        "key": "chemistry:C41",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l6",
+          "chemistry-y12-m7-l8"
+        ]
+      },
+      {
+        "key": "chemistry:C42",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l7"
+        ]
+      },
+      {
+        "key": "chemistry:C43",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l8"
+        ]
+      },
+      {
+        "key": "chemistry:C44",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l9"
+        ]
+      },
+      {
+        "key": "chemistry:C45",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l10"
+        ]
+      },
+      {
+        "key": "chemistry:C46",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l11"
+        ]
+      },
+      {
+        "key": "chemistry:C47",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l12"
+        ]
+      },
+      {
+        "key": "chemistry:C48",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l13"
+        ]
+      },
+      {
+        "key": "chemistry:C49",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l14"
+        ]
+      },
+      {
+        "key": "chemistry:C50",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l16",
+          "chemistry-y12-m7-l18"
+        ]
+      },
+      {
+        "key": "chemistry:C52",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l22",
+          "chemistry-y12-m7-l23"
+        ]
+      },
+      {
+        "key": "chemistry:C53",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l1"
+        ]
+      },
+      {
+        "key": "chemistry:C65",
+        "sourceStatus": "mixed-residual",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l15"
+        ]
+      },
+      {
+        "key": "chemistry:C66",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l16"
+        ]
+      },
+      {
+        "key": "chemistry:C68",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m1-l2"
+        ]
+      },
+      {
+        "key": "chemistry:C69",
+        "sourceStatus": "still-present",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m5-l2"
+        ]
+      }
+    ],
+    "unaddressedNarrowQualification": [
+      {
+        "key": "chemistry:C06",
+        "sourceStatus": "qualification-needed",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m1-l8"
+        ]
+      },
+      {
+        "key": "chemistry:C15",
+        "sourceStatus": "qualification-needed",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m2-l4"
+        ]
+      },
+      {
+        "key": "chemistry:C18",
+        "sourceStatus": "qualification-needed",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y11-m2-l16"
+        ]
+      },
+      {
+        "key": "chemistry:C31",
+        "sourceStatus": "qualification-needed",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m5-l7"
+        ]
+      },
+      {
+        "key": "chemistry:C32",
+        "sourceStatus": "qualification-needed",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m5-l15"
+        ]
+      },
+      {
+        "key": "chemistry:C39",
+        "sourceStatus": "qualification-needed",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m7-l3"
+        ]
+      },
+      {
+        "key": "chemistry:C55",
+        "sourceStatus": "qualification-needed",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l4"
+        ]
+      },
+      {
+        "key": "chemistry:C56",
+        "sourceStatus": "qualification-needed",
+        "remedyStatus": "historical-proposal-needs-targeted-integration",
+        "lessonPrefixes": [
+          "chemistry-y12-m8-l6"
+        ]
+      }
+    ],
+    "unverifiedCorrespondence": [
+      {
+        "key": "original:A17",
+        "sourceStatus": "unverified-current-pass",
+        "remedyStatus": "preserve-fixed-fields-review-residuals",
+        "lessonPrefixes": [
+          "biology-y11-m3-l13"
+        ]
+      }
+    ]
+  },
+  "qualifications": [
+    "Original:A07 and A14 are narrow original-claim resolutions with additional editorial qualifications explicitly retained in the semantic ledger.",
+    "C10 remains in substantive residuals because its bromine calculation has a scene amendment but the isotope-behaviour claim remains open.",
+    "C28 has an isolated scene repair; whole-lesson integration/review remains pending. C17/C19 are integrated into complete analytical-inference proposals.",
+    "C67 is covered by four isolated medicine-enrichment proposals; missing prescribed spectroscopy teaching is not supplied by that attribution correction.",
+    "No isolation package has final teacher, visual, audio or release approval.",
+    "The estimate uses verified unchanged current catalogue hashes and existing claim-level assessments; it is not a fresh independent reaudit of all 99 groups."
+  ]
+}

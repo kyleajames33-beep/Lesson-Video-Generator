@@ -1,3 +1,4 @@
+import {validateBiologyResidualProps} from '../../biology-residuals-models.mjs';
 // ReshuffleDiagram — the two reshuffles inside meiosis, side by side.
 //
 // Left, CROSSING OVER: a homologous pair lies together as four chromatids
@@ -22,6 +23,8 @@ import {DioramaDefs, DioramaPlinth, idleBob, idlePulse} from '../../diorama';
 import {Arrow, CORAL, Chromosome, GlossDefs, Pill, ease, fadeAt, lerp, popAt} from './shared';
 
 export type ReshuffleProps = {
+	/** Explicit source-review opt-in; omitted/false keeps legacy output. */
+	reviewedBiologyResiduals?: boolean;
 	at?: {cross?: number; swap?: number; assort?: number; arrange2?: number; result?: number};
 	rule?: string;
 	delay?: number;
@@ -47,7 +50,9 @@ const Rod = ({x, top, len, c1, c2, cut, a1, a2, opacity = 1}: {x: number; top: n
 	);
 };
 
-export const ReshuffleDiagram = ({at = {}, rule = 'new combinations, not new alleles', delay = 62}: ReshuffleProps) => {
+export const ReshuffleDiagram = (props: ReshuffleProps) => {
+	validateBiologyResidualProps('bio12m5Reshuffle', props);
+	const {at = {}, rule = 'new combinations, not new alleles', delay = 62, reviewedBiologyResiduals = false} = props;
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
@@ -139,8 +144,8 @@ export const ReshuffleDiagram = ({at = {}, rule = 'new combinations, not new all
 								<g key={g} opacity={go}>
 									<Arrow x1={RX + 36} y1={ar.y + (g === 0 ? -10 : 10)} x2={gx - 42} y2={gy} color={TOK.inkMute} width={2} head={8} t={go} />
 									<circle cx={gx} cy={gy} r={38} fill={`url(#${ID}-cyto)`} stroke="#b9ab93" strokeWidth={3} />
-									<Chromosome id={ID} x={gx - 10} y={gy - 2 + idleBob(frame, k * 4 + g, 1)} len={34} w={9} color={cols[0]} splay={4} />
-									<Chromosome id={ID} x={gx + 11} y={gy + 4 + idleBob(frame, k * 4 + g + 2, 1)} len={24} w={9} color={cols[1]} splay={4} />
+									<Chromosome id={ID} x={gx - 10} y={gy - 2 + idleBob(frame, k * 4 + g, 1)} len={34} w={9} color={cols[0]} splay={4} chromatids={reviewedBiologyResiduals ? 1 : 2} />
+									<Chromosome id={ID} x={gx + 11} y={gy + 4 + idleBob(frame, k * 4 + g + 2, 1)} len={24} w={9} color={cols[1]} splay={4} chromatids={reviewedBiologyResiduals ? 1 : 2} />
 								</g>
 							);
 						})}
@@ -148,7 +153,7 @@ export const ReshuffleDiagram = ({at = {}, rule = 'new combinations, not new all
 				);
 			})}
 			<g opacity={fadeAt(frame, tA2 + 80)}>
-				<Pill x={574} y={462} text={`${PAIRS} pairs → ${mixes} gamete mixes`} color={theme.accent} fill={theme.soft} size={16} />
+				<Pill x={574} y={462} text={reviewedBiologyResiduals ? `${PAIRS} pairs → ${mixes} possible types` : `${PAIRS} pairs → ${mixes} gamete mixes`} color={theme.accent} fill={theme.soft} size={16} />
 			</g>
 
 			{/* Result line */}

@@ -1,3 +1,4 @@
+import {alignmentToCaptions} from './lib/caption-timeline.mjs';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {mkdtempSync, mkdirSync, readFileSync, writeFileSync} from 'node:fs';
@@ -21,7 +22,7 @@ const makeFixture = () => {
   const alignment = {characters: [...text], character_start_times_seconds: [...text].map((_, i) => i / 10), character_end_times_seconds: [...text].map((_, i) => (i + 1) / 10)};
   writeFileSync(path.join(dir, audioFile.replace('.mp3', '.alignment.json')), JSON.stringify(alignment));
   const lesson = {subject: 'Chemistry', yearLevel: 'Year 11', module: 'Module 2', lesson: 'Lesson 1', fps: 30,
-    scenes: [{id: 'concept', type: 'concept', durationInFrames: 180, voiceover: {text, audioFile}, captions: [{text, startMs: 0, endMs: 2600}]}]};
+    scenes: [{id: 'concept', type: 'concept', durationInFrames: 180, voiceover: {text, audioFile}, captions: alignmentToCaptions(alignment)}]};
   return {dir, lesson, alignment};
 };
 const runPreflight = fixture => {
@@ -89,4 +90,25 @@ test('caption offsets match fps, delayed narration and concatenated intros', () 
   assert.equal(firstIntroRun.status, 0, firstIntroRun.stderr);
   const firstIntroSrt = readFileSync(path.join(fixture.dir, 'out/captions/Chemistry-Y11-M2-L1-combined.srt'), 'utf8');
   assert.ok(firstIntroSrt.includes('00:00:15,500 --> 00:00:16,000'));
+});
+test('authored diagrams on unsupported worked-example and summary hosts fail release preflight', () => {
+  for (const type of ['workedExample', 'summary']) {
+    const fixture = makeFixture();
+    fixture.lesson.scenes[0].type = type;
+    fixture.lesson.scenes[0].diagram = {type: 'table', headers: ['A', 'B'], rows: [['1', '2']]};
+    const {run, report} = runPreflight(fixture);
+    assert.equal(run.status, 1);
+    assert.ok(report.errors.some(error => error.code === 'DIAGRAM_HOST_UNSUPPORTED'));
+  }
+});
+test('legacy readiness JSON uses the current gate and never returns an old report after a failed input', () => {
+  const fixture = makeFixture();
+  writeFileSync(path.join(fixture.dir, 'lesson.json'), JSON.stringify(fixture.lesson));
+  const wrapper = path.join(root, 'scripts/check-render-readiness.mjs');
+  const good = spawnSync(process.execPath, [wrapper, 'lesson.json', '--json'], {cwd: fixture.dir, encoding: 'utf8'});
+  assert.equal(good.status, 0, good.stderr);
+  assert.equal(JSON.parse(good.stdout).lessons[0].mediaReady, true);
+  const bad = spawnSync(process.execPath, [wrapper, 'missing.json', '--json'], {cwd: fixture.dir, encoding: 'utf8'});
+  assert.notEqual(bad.status, 0);
+  assert.equal(bad.stdout, '');
 });

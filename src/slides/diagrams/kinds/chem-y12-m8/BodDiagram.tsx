@@ -21,6 +21,8 @@ import {clamp, ease, pop, ramp} from './shared';
 import {Bacterium, O2, Organic, Tag, WATER, wander} from './water-parts';
 
 export type BodProps = {
+	/** Source-reviewed assay qualifications; legacy output is the default. */
+	reviewedWaterHealth?: boolean;
 	delay?: number;
 	/** Frames after `delay`: [bottles, incubate, initial DO, final DO + formula, scale, clean, moderate, heavy, key]. */
 	beats?: number[];
@@ -57,7 +59,8 @@ const Bottle = ({cx, base, children, clipId}: {cx: number; base: number; childre
 	);
 };
 
-export const BodDiagram = ({delay = 62, beats}: BodProps) => {
+export const BodDiagram = ({delay = 62, beats, reviewedWaterHealth = false}: BodProps) => {
+	if (typeof reviewedWaterHealth !== 'boolean') throw new Error('reviewedWaterHealth must be boolean');
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
@@ -115,7 +118,7 @@ export const BodDiagram = ({delay = 62, beats}: BodProps) => {
 	const BY = 424, BH = 34;
 
 	return (
-		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="BOD: two sealed bottles of the same sample; one is measured at the start, the other after 5 days at 20 °C in the dark. BOD₅ = initial DO − final DO. Under 2 mg per litre is clean, 2 to 8 moderate, above 8 heavy pollution." style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={reviewedWaterHealth ? 'Illustrative BOD₅ assay: initial and final dissolved oxygen are measured over 5 days at 20 °C in the dark. Initial DO minus final DO applies to an undiluted, unseeded sample meeting test acceptance criteria. Diluted or seeded samples need dilution and seed corrections. This assay is not a field oxygen forecast or a universal water-quality classification.' : "BOD: two sealed bottles of the same sample; one is measured at the start, the other after 5 days at 20 °C in the dark. BOD₅ = initial DO − final DO. Under 2 mg per litre is clean, 2 to 8 moderate, above 8 heavy pollution."} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={ID} elements={['O']} />
 
 			{/* day labels */}
@@ -162,7 +165,7 @@ export const BodDiagram = ({delay = 62, beats}: BodProps) => {
 					<text x={624} y={247} fill={TOK.inkDim} fontSize={19} fontWeight={800}>O₂ used up</text>
 				</g>
 				<g opacity={key}>
-					<Tag x={640} y={250} lines={['O₂ consumed', '= the BOD']} color={TOK.amber} textColor={TOK.amberInk} subColor={TOK.amberInk} size={20} strokeWidth={2.5 + idlePulse(frame) * 1.5} />
+					<Tag x={640} y={250} lines={reviewedWaterHealth ? ['O₂ consumed', 'during test'] : ['O₂ consumed', '= the BOD']} color={TOK.amber} textColor={TOK.amberInk} subColor={TOK.amberInk} size={20} strokeWidth={2.5 + idlePulse(frame) * 1.5} />
 				</g>
 			</g>
 
@@ -175,12 +178,18 @@ export const BodDiagram = ({delay = 62, beats}: BodProps) => {
 			</g>
 
 			{/* formula */}
-			<text x={W / 2} y={392} textAnchor="middle" fill={TOK.ink} fontSize={27} fontWeight={800} opacity={ramp(frame, tFinal + 10, 16)}>
-				BOD₅ = initial DO − final DO
+			<text x={W / 2} y={392} textAnchor="middle" fill={TOK.ink} fontSize={reviewedWaterHealth ? 22 : 27} fontWeight={800} opacity={ramp(frame, tFinal + 10, 16)}>
+				{reviewedWaterHealth ? 'Undiluted, unseeded: BOD₅ = initial DO − final DO' : 'BOD₅ = initial DO − final DO'}
 			</text>
 
-			{/* BOD scale */}
-			<g opacity={ramp(frame, tScale, 16)}>
+			{/* The reviewed assay replaces universal pollution bands with method limits. */}
+			{reviewedWaterHealth ? (
+				<g opacity={ramp(frame, tScale, 16)}>
+					<text x={W / 2} y={430} textAnchor="middle" fill={TOK.ink} fontSize={19} fontWeight={800}>Accepted test: check method validity criteria</text>
+					<text x={W / 2} y={454} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={700}>Diluted or seeded? Apply dilution and seed corrections</text>
+					<text x={W / 2} y={478} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={700}>A five-day assay, not a field oxygen forecast</text>
+				</g>
+			) : <g opacity={ramp(frame, tScale, 16)}>
 				<rect x={sx(0)} y={BY} width={sx(12) - sx(0)} height={BH} rx={8} fill="#ffffff" stroke={TOK.rule} strokeWidth={2} />
 				{bands.map((bd, i) => {
 					const on = ramp(frame, bd.t, 16);
@@ -208,13 +217,13 @@ export const BodDiagram = ({delay = 62, beats}: BodProps) => {
 					</g>
 				))}
 				<text x={sx(12)} y={BY + BH + 28} textAnchor="end" fill={TOK.inkDim} fontSize={18} fontWeight={800}>BOD₅ / mg L⁻¹</text>
-			</g>
+			</g>}
 
 			{/* key point */}
 			<g opacity={key}>
 				<rect x={W / 2 - 250} y={494} width={500} height={34} rx={17} fill="#ffffff" stroke={TOK.amber} strokeWidth={2.5 + idlePulse(frame) * 1.5} />
-				<text x={W / 2} y={518} textAnchor="middle" fill={TOK.amberInk} fontSize={20} fontWeight={800}>
-					BOD = oxygen consumed, not oxygen present
+				<text x={W / 2} y={518} textAnchor="middle" fill={TOK.amberInk} fontSize={reviewedWaterHealth ? 18 : 20} fontWeight={800}>
+					{reviewedWaterHealth ? 'BOD measures oxygen demand under test conditions' : 'BOD = oxygen consumed, not oxygen present'}
 				</text>
 			</g>
 		</svg>

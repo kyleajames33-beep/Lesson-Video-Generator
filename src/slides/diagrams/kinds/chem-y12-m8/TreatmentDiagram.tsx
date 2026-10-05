@@ -27,6 +27,8 @@ import {Bacterium, Dot, Tag, WATER, mix, wander} from './water-parts';
 
 export type TreatmentMode = 'train' | 'coag' | 'filter';
 export type TreatmentProps = {
+	/** Reviews the illustrative train only; other modes retain legacy output. */
+	reviewedWaterHealth?: boolean;
 	delay?: number;
 	mode?: TreatmentMode;
 	/** Frames after `delay`; meaning depends on the mode (see file header). */
@@ -45,7 +47,7 @@ const RAW = '#b89a6a'; // turbid raw water tint
 const CL = ELEMENT_COLORS.Cl;
 const ORG = '#7b4f9e'; // dissolved organic matter (symbolic marker)
 
-type ModeArgs = {id: string; frame: number; fps: number; b: number[]; accent: string};
+type ModeArgs = {id: string; frame: number; fps: number; b: number[]; accent: string; reviewedWaterHealth: boolean};
 
 /** A small glass tank; children clipped inside. */
 const MiniTank = ({id, cx, base, w, h, tint = 0, children, stroke = WATER.glass, strokeW = 3}: {id: string; cx: number; base: number; w: number; h: number; tint?: number; children?: ReactNode; stroke?: string; strokeW?: number}) => {
@@ -93,7 +95,7 @@ const Cl2 = ({x, y, r = 9}: {x: number; y: number; r?: number}) => (
 );
 
 // ───────────────────────────────────────────── train (concept-train) ──
-const TrainMode = ({id, frame, fps, b, accent}: ModeArgs) => {
+const TrainMode = ({id, frame, fps, b, accent, reviewedWaterHealth}: ModeArgs) => {
 	const [tOrder, tNames, tClump, tSettle, tStrain, tDis, tBar, tKey] = b;
 	const xs = [84, 232, 380, 528, 676];
 	const TW = 112, TH = 132, BASE = 284;
@@ -215,8 +217,8 @@ const TrainMode = ({id, frame, fps, b, accent}: ModeArgs) => {
 			</g>
 			<g opacity={key}>
 				<rect x={W / 2 - 300} y={452} width={600} height={62} rx={16} fill="#ffffff" stroke={TOK.amber} strokeWidth={2.5 + idlePulse(frame) * 1.5} />
-				<text x={W / 2} y={478} textAnchor="middle" fill={TOK.amberInk} fontSize={20} fontWeight={800}>Not “just adding chlorine”</text>
-				<text x={W / 2} y={503} textAnchor="middle" fill={TOK.ink} fontSize={18} fontWeight={700}>Chlorination is only the final stage</text>
+				<text x={W / 2} y={478} textAnchor="middle" fill={TOK.amberInk} fontSize={20} fontWeight={800}>{reviewedWaterHealth ? 'Treatment uses multiple barriers' : 'Not “just adding chlorine”'}</text>
+				<text x={W / 2} y={503} textAnchor="middle" fill={TOK.ink} fontSize={18} fontWeight={700}>{reviewedWaterHealth ? 'Illustrative sequence; barriers are site-specific' : 'Chlorination is only the final stage'}</text>
 			</g>
 		</>
 	);
@@ -481,20 +483,22 @@ const FilterMode = ({id, frame, b, accent}: ModeArgs) => {
 	);
 };
 
-export const TreatmentDiagram = ({delay = 62, mode = 'train', beats}: TreatmentProps) => {
+export const TreatmentDiagram = ({delay = 62, mode = 'train', beats, reviewedWaterHealth = false}: TreatmentProps) => {
+	if (typeof reviewedWaterHealth !== 'boolean') throw new Error('reviewedWaterHealth must be boolean');
+	if (reviewedWaterHealth && mode !== 'train') throw new Error('Reviewed water treatment is limited to train mode');
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
 	const b = beats && beats.length >= DEFAULT_BEATS[mode].length ? beats : DEFAULT_BEATS[mode];
 	const id = `c12m8tr${mode}`;
-	const args: ModeArgs = {id, frame, fps, b, accent: theme.accent};
+	const args: ModeArgs = {id, frame, fps, b, accent: theme.accent, reviewedWaterHealth};
 	const labels: Record<TreatmentMode, string> = {
 		train: 'Water treatment train: coagulation, flocculation, sedimentation, filtration, then disinfection as the final stage',
 		coag: 'Alum provides Al³⁺, which hydrolyses to an Al(OH)₃ colloid that adsorbs particles; flocs grow and settle',
 		filter: 'Filter bed: activated carbon adsorbs dissolved organics, sand and gravel trap particles; removing organics before chlorination means fewer by-products',
 	};
 	return (
-		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={labels[mode]} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={reviewedWaterHealth ? 'Illustrative drinking-water treatment sequence: coagulation, flocculation, sedimentation, filtration and disinfection. Barrier selection and ordering are site-specific; chlorination is not universally confined to a final stage.' : labels[mode]} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={id} elements={[]} />
 			{mode === 'train' && <TrainMode {...args} />}
 			{mode === 'coag' && <CoagMode {...args} />}

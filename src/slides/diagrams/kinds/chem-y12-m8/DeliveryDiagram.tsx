@@ -1,15 +1,15 @@
-// DeliveryDiagram — how a drug gets where it is needed (Chem Y12 M8 L14).
+// DeliveryDiagram: how a drug gets where it is needed (Chem Y12 M8 L14).
 //
 // Modes:
-//   like      — "like dissolves like": watery blood plasma (polar) on one
+//   like: "like dissolves like": watery blood plasma (polar) on one
 //               plinth, a lipid cell membrane (non-polar) on the other, and a
 //               drug molecule between them whose polar groups (−OH, −COOH) face
 //               the plasma and whose hydrocarbon-rich tail faces the lipid. A
 //               good drug is a compromise: it must do both (concept-like).
-//   firstpass — a swallowed dose is absorbed from the gut and passes through
+//   firstpass: a swallowed dose is absorbed from the gut and passes through
 //               the liver BEFORE general circulation; much of it is
 //               metabolised there, so less active drug reaches the body
-//               (lower oral bioavailability). Prodrug strip: codeine → morphine
+//               (legacy view; opt in to reviewed labels below). Codeine → morphine
 //               (concept-firstpass). No percentages: the scene gives none.
 //
 // Beats are frames after `delay`, placed where the voiceover says the words.
@@ -18,8 +18,9 @@ import {useCurrentFrame} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
 import {DioramaDefs, DioramaPlinth, ELEMENT_COLORS, Molecule, idleBob, idlePulse} from '../../diorama';
-import {Arrow, Beaker, GlossDefs, Pill, ease, hash01, ramp, shade} from './shared';
+import {Arrow, Beaker, GlossDefs, Pill, ease, hash01, ramp, shade, textW} from './shared';
 import {Bilayer} from './drug-parts';
+import {validateSafetyMedicineDiagram} from '../../safety-medicine-models.mjs';
 
 type Mode = 'like' | 'firstpass';
 
@@ -31,6 +32,8 @@ export type DeliveryProps = {
 	/** firstpass: the prodrug pair named in the scene. */
 	prodrug?: string;
 	activeDrug?: string;
+	/** Source-reviewed model labels; does not alter existing narration. */
+	reviewedSafetyMedicine?: boolean;
 };
 
 const W = 760;
@@ -46,7 +49,7 @@ const DEFAULT_BEATS: Record<Mode, number[]> = {
 };
 
 // ─────────────────────────────────────────────────────────────── like
-const LikeMode = ({frame, beats, id, accent}: {frame: number; beats: number[]; id: string; accent: string}) => {
+const LikeMode = ({frame, beats, id, accent, reviewedSafetyMedicine}: {frame: number; beats: number[]; id: string; accent: string; reviewedSafetyMedicine: boolean}) => {
 	const [tPlasma, tMem, tPolar, tNon, tComp, tGood] = beats;
 	const polarIn = ramp(frame, tPolar, 16);
 	const nonIn = ramp(frame, tNon, 16);
@@ -86,9 +89,10 @@ const LikeMode = ({frame, beats, id, accent}: {frame: number; beats: number[]; i
 	return (
 		<g>
 			<g opacity={compIn}>
-				<Pill x={W / 2} y={40} text="A good drug: dissolves in plasma AND crosses membranes" color={TOK.amber} textColor={TOK.amberInk} size={19} strokeWidth={2 + idlePulse(frame) * 1.5} />
+				<Pill x={W / 2} y={40} text={reviewedSafetyMedicine ? 'Simple affinity model: aqueous and lipid interactions' : 'A good drug: dissolves in plasma AND crosses membranes'} padX={reviewedSafetyMedicine ? 12 + (textW('A good drug: dissolves in plasma AND crosses membranes', 19) - textW('Simple affinity model: aqueous and lipid interactions', 19)) / 2 : 12} color={TOK.amber} textColor={TOK.amberInk} size={19} strokeWidth={2 + idlePulse(frame) * 1.5} />
 			</g>
 
+			{reviewedSafetyMedicine && <text x={W / 2} y={72} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>Polarity alone cannot establish solubility or absorption</text>}
 			{/* Plasma */}
 			<g opacity={ramp(frame, 0, 16)}>
 				<text x={165} y={112} textAnchor="middle" fill={TOK.ink} fontSize={23} fontWeight={800}>Blood plasma</text>
@@ -109,7 +113,7 @@ const LikeMode = ({frame, beats, id, accent}: {frame: number; beats: number[]; i
 				<text x={605} y={112} textAnchor="middle" fill={TOK.ink} fontSize={23} fontWeight={800}>Cell membrane</text>
 			</g>
 			<g opacity={ramp(frame, tMem, 16)}>
-				<text x={605} y={138} textAnchor="middle" fill={LIPID} fontSize={18} fontWeight={800}>lipid, non-polar</text>
+				<text x={605} y={138} textAnchor="middle" fill={LIPID} fontSize={18} fontWeight={800}>{reviewedSafetyMedicine ? 'non-polar interior' : 'lipid, non-polar'}</text>
 			</g>
 			<DioramaPlinth id={`${id}b`} cx={605} cy={386} rx={130}>
 				<g transform={`translate(0, ${idleBob(frame, 9, 1)})`}>
@@ -139,10 +143,11 @@ const LikeMode = ({frame, beats, id, accent}: {frame: number; beats: number[]; i
 				<text x={CX + 60} y={CY - 58} textAnchor="middle" fill={LIPID} fontSize={18} fontWeight={800}>non-polar</text>
 			</g>
 
+			{reviewedSafetyMedicine && <text x={W / 2} y={521} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700} opacity={compIn}>pH, formulation and measured data also matter</text>}
 			{/* What each region prefers */}
 			<g opacity={polarIn}>
 				<text x={165} y={470} textAnchor="middle" fill={accent} fontSize={17} fontWeight={800}>polar groups, H-bonding</text>
-				<text x={165} y={494} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={700}>→ dissolve in plasma</text>
+				<text x={165} y={494} textAnchor="middle" fill={TOK.ink} fontSize={17} fontWeight={700}>{reviewedSafetyMedicine ? '→ aqueous affinity' : '→ dissolve in plasma'}</text>
 			</g>
 			<g opacity={nonIn}>
 				<text x={605} y={470} textAnchor="middle" fill={LIPID} fontSize={17} fontWeight={800}>hydrocarbon-rich regions</text>
@@ -151,7 +156,7 @@ const LikeMode = ({frame, beats, id, accent}: {frame: number; beats: number[]; i
 			<g opacity={compIn}>
 				<Arrow x1={330} y1={446} x2={272} y2={446} color={TOK.amber} width={3.5} head={12} />
 				<Arrow x1={430} y1={446} x2={488} y2={446} color={TOK.amber} width={3.5} head={12} />
-				<text x={380} y={452} textAnchor="middle" fill={TOK.amberInk} fontSize={17} fontWeight={800}>both</text>
+				<text x={380} y={452} textAnchor="middle" fill={TOK.amberInk} fontSize={17} fontWeight={800}>{reviewedSafetyMedicine ? 'affinity' : 'both'}</text>
 			</g>
 		</g>
 	);
@@ -160,7 +165,7 @@ const LikeMode = ({frame, beats, id, accent}: {frame: number; beats: number[]; i
 // ─────────────────────────────────────────────────────────────── firstpass
 const GUT = 120, LIV = 375, CIRC = 630, PY = 290;
 
-const FirstPassMode = ({frame, beats, id, accent, prodrug, activeDrug}: {frame: number; beats: number[]; id: string; accent: string; prodrug: string; activeDrug: string}) => {
+const FirstPassMode = ({frame, beats, id, accent, prodrug, activeDrug, reviewedSafetyMedicine}: {frame: number; beats: number[]; id: string; accent: string; prodrug: string; activeDrug: string; reviewedSafetyMedicine: boolean}) => {
 	const [tDose, tLiver, tMetab, tBio, tPro, tPair] = beats;
 	const GREY = '#9c9890';
 
@@ -241,9 +246,14 @@ const FirstPassMode = ({frame, beats, id, accent, prodrug, activeDrug}: {frame: 
 				<rect x={0} y={-12} width={10} height={24} fill="#f4f1ea" />
 			</g>
 
+			{reviewedSafetyMedicine && <g opacity={ramp(frame, tLiver, 16)}>
+				<text x={430} y={52} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>Parent-drug view: metabolites and their effects are not shown</text>
+				<text x={430} y={78} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>Presystemic metabolism can occur in gut wall and liver</text>
+				<text x={430} y={101} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>Metabolism changes molecules; it does not always inactivate them</text>
+			</g>}
 			{/* amber: liver comes first */}
 			<g opacity={ramp(frame, tLiver, 16)}>
-				<Pill x={372} y={130} text="reaches the liver BEFORE general circulation" color={TOK.amber} textColor={TOK.amberInk} size={18} strokeWidth={2 + idlePulse(frame) * 1.5} />
+				<Pill x={372} y={130} text={reviewedSafetyMedicine ? 'Illustrative oral route: gut → liver → circulation' : 'reaches the liver BEFORE general circulation'} padX={reviewedSafetyMedicine ? 12 + (textW('reaches the liver BEFORE general circulation', 18) - textW('Illustrative oral route: gut → liver → circulation', 18)) / 2 : 12} color={TOK.amber} textColor={TOK.amberInk} size={18} strokeWidth={2 + idlePulse(frame) * 1.5} />
 			</g>
 
 			{/* Plinths + organs */}
@@ -289,21 +299,21 @@ const FirstPassMode = ({frame, beats, id, accent, prodrug, activeDrug}: {frame: 
 				<text x={CIRC} y={384} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>General circulation</text>
 			</g>
 			<g opacity={ramp(frame, tLiver, 14)}>
-				<text x={GUT} y={406} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>absorbed</text>
+				<text x={GUT} y={406} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>{reviewedSafetyMedicine ? 'absorbed parent' : 'absorbed'}</text>
 			</g>
 			<g opacity={ramp(frame, tMetab, 14)}>
-				<text x={LIV} y={406} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>a large fraction</text>
-				<text x={LIV} y={425} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>metabolised</text>
+				<text x={LIV} y={406} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>{reviewedSafetyMedicine ? 'presystemic' : 'a large fraction'}</text>
+				<text x={LIV} y={425} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>{reviewedSafetyMedicine ? 'metabolism varies' : 'metabolised'}</text>
 			</g>
 			<g opacity={ramp(frame, tBio, 14)}>
-				<text x={CIRC} y={406} textAnchor="middle" fill={accent} fontSize={17} fontWeight={800}>less active drug</text>
-				<text x={CIRC} y={425} textAnchor="middle" fill={accent} fontSize={17} fontWeight={800}>lower oral bioavailability</text>
+				<text x={CIRC} y={406} textAnchor="middle" fill={accent} fontSize={17} fontWeight={800}>{reviewedSafetyMedicine ? 'unchanged parent may fall' : 'less active drug'}</text>
+				<text x={CIRC} y={425} textAnchor="middle" fill={accent} fontSize={reviewedSafetyMedicine ? 16 : 17} fontWeight={800}>{reviewedSafetyMedicine ? 'oral bioavailability may fall' : 'lower oral bioavailability'}</text>
 			</g>
 
 			{/* Prodrug strip */}
 			<g opacity={ramp(frame, tPro, 16)}>
 				<rect x={40} y={442} width={680} height={80} rx={16} fill="#ffffff" stroke={TOK.cardBorder} strokeWidth={2} />
-				<text x={W / 2} y={472} textAnchor="middle" fill={TOK.ink} fontSize={19} fontWeight={800}>Prodrug: given inactive, activated in the body</text>
+				<text x={W / 2} y={472} textAnchor="middle" fill={TOK.ink} fontSize={19} fontWeight={800}>{reviewedSafetyMedicine ? 'Codeine has activity; morphine also contributes' : 'Prodrug: given inactive, activated in the body'}</text>
 			</g>
 			<g opacity={ramp(frame, tPair, 16)}>
 				<circle cx={250} cy={500} r={10} fill={`url(#${id}-g-grey)`} stroke="#77736b" />
@@ -317,7 +327,9 @@ const FirstPassMode = ({frame, beats, id, accent, prodrug, activeDrug}: {frame: 
 };
 
 // ─────────────────────────────────────────────────────────────── root
-export const DeliveryDiagram = ({delay = 62, mode = 'like', beats, prodrug = 'codeine', activeDrug = 'morphine'}: DeliveryProps) => {
+export const DeliveryDiagram = (props: DeliveryProps) => {
+	validateSafetyMedicineDiagram({type: 'diorama', kind: 'chem12m8Delivery', props});
+	const {delay = 62, mode = 'like', beats, prodrug = 'codeine', activeDrug = 'morphine', reviewedSafetyMedicine = false} = props;
 	const frame = useCurrentFrame() - delay;
 	const theme = useAccent();
 	const b = beats && beats.length >= DEFAULT_BEATS[mode].length ? beats : DEFAULT_BEATS[mode];
@@ -326,14 +338,17 @@ export const DeliveryDiagram = ({delay = 62, mode = 'like', beats, prodrug = 'co
 		mode === 'like'
 			? 'Like dissolves like: blood plasma is aqueous and polar, the cell membrane is lipid and non-polar. A drug molecule has polar groups (-OH, -COOH) that dissolve in plasma and a hydrocarbon-rich region that favours the lipid; a good drug must do both.'
 			: `First-pass metabolism: a swallowed dose is absorbed from the gut and reaches the liver before general circulation; a large fraction is metabolised, so less active drug reaches the body. A prodrug is given inactive and activated in the body, e.g. ${prodrug} to ${activeDrug}.`;
+	const reviewedAria = mode === 'like'
+		? 'Simple affinity model: polar groups can favour aqueous interactions and hydrocarbon-rich regions can favour the lipid interior. Structural polarity alone does not establish solubility or absorption; pH, formulation and measured data also matter.'
+		: 'Illustrative oral parent-drug route through gut and liver. Presystemic metabolism may reduce unchanged parent reaching general circulation; the amount varies. Fading particles represent loss of parent identity, not destruction of all drug activity. Metabolites and their effects are not shown. Codeine has activity and its metabolite morphine contributes to effects.';
 	return (
-		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={aria} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={reviewedSafetyMedicine ? reviewedAria : aria} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={id} elements={['O', 'H', 'C']} />
 			<GlossDefs id={id} colors={{drug: '#1f9477', grey: '#9c9890', liver: '#8e3b2e'}} />
 			{mode === 'like' ? (
-				<LikeMode frame={frame} beats={b} id={id} accent={theme.accent} />
+				<LikeMode frame={frame} beats={b} id={id} accent={theme.accent} reviewedSafetyMedicine={reviewedSafetyMedicine} />
 			) : (
-				<FirstPassMode frame={frame} beats={b} id={id} accent={theme.accent} prodrug={prodrug} activeDrug={activeDrug} />
+				<FirstPassMode frame={frame} beats={b} id={id} accent={theme.accent} prodrug={prodrug} activeDrug={activeDrug} reviewedSafetyMedicine={reviewedSafetyMedicine} />
 			)}
 		</svg>
 	);
