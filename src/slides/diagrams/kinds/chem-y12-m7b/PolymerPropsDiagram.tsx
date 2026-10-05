@@ -16,6 +16,7 @@ import {Ball, Chip, ELEMENTS, Stick, Title, atomR, fadeAt, shade} from './shared
 import {Chain, chainPts} from './PolymerFateDiagram';
 
 export type PolymerPropsProps = {
+	reviewedPolymer?: boolean;
 	title?: string;
 	beats?: {hdpe?: number; hdpeChip?: number; ldpe?: number; ldpeChip?: number; pvc?: number; ptfe?: number};
 	delay?: number;
@@ -68,7 +69,7 @@ const PTFE: U[] = [
 	{el: 'F', x: 60, y: 46},
 ];
 
-export const PolymerPropsDiagram = ({title = 'Same monomer, different packing', beats = {}, delay = 62}: PolymerPropsProps) => {
+export const PolymerPropsDiagram = ({title = 'Same monomer, different packing', beats = {}, delay = 62, reviewedPolymer = false}: PolymerPropsProps) => {
 	const frame = useCurrentFrame() - delay;
 	const theme = useAccent();
 	const pulse = idlePulse(frame);
@@ -142,13 +143,13 @@ export const PolymerPropsDiagram = ({title = 'Same monomer, different packing', 
 				<circle cx={L} cy={494 + idleBob(frame, 3, 1.2)} r={24 + pulse * 2} fill="none" stroke={TOK.amber} strokeWidth={3} strokeDasharray="5 4" />
 				<text x={L + 100} y={430} fill={TOK.ink} fontSize={19} fontWeight={800}>PVC</text>
 				<text x={L + 100} y={452} fill={TOK.inkDim} fontSize={15} fontWeight={800}>polar C–Cl:</text>
-				<text x={L + 100} y={471} fill={TOK.inkDim} fontSize={15} fontWeight={800}>properties vary</text>
+				<text x={L + 100} y={471} fill={TOK.inkDim} fontSize={15} fontWeight={800}>{reviewedPolymer ? 'formulation matters' : 'higher MP'}</text>
 			</g>
 			<g opacity={fadeAt(frame, b.ptfe, 12)}>
 				<Unit atoms={PTFE} bonds={[[0, 1], [0, 2], [0, 3], [1, 4], [1, 5]]} x={R - 96} y={446} frame={frame} seed={4} />
 				<text x={R + 64} y={430} fill={TOK.ink} fontSize={19} fontWeight={800}>PTFE</text>
-				<text x={R + 64} y={452} fill={TOK.inkDim} fontSize={15} fontWeight={800}>strong C–F:</text>
-				<text x={R + 64} y={471} fill={TOK.inkDim} fontSize={15} fontWeight={800}>inert, non-stick</text>
+				<text x={R + 64} y={452} fill={TOK.inkDim} fontSize={15} fontWeight={800}>{reviewedPolymer ? 'fluorinated surface:' : 'strong C–F:'}</text>
+				<text x={R + 64} y={471} fill={TOK.inkDim} fontSize={15} fontWeight={800}>{reviewedPolymer ? 'low adhesion' : 'inert, non-stick'}</text>
 			</g>
 		</svg>
 	);

@@ -1,0 +1,28 @@
+# Keep source tooling stable across Windows and Linux checkouts.
+* text=auto eol=lf
+
+# Reviewed catalogue fingerprints were established against these exact bytes.
+# Preserve the working-file convention without changing recorded lesson copy.
+src/data/biology-*.json text eol=crlf
+src/data/chemistry-y11-*.json text eol=crlf
+src/data/chemistry-y12-m7-*.json text eol=crlf
+src/data/chemistry-y12-m8-*.json text eol=crlf
+
+# These existing Year 11 lessons use LF; Year 12 Modules 5/6 use the default LF.
+src/data/chemistry-y11-m1-l15-periodic-table-organisation.json text eol=lf
+src/data/chemistry-y11-m1-l16-electron-configuration-subshells.json text eol=lf
+src/data/chemistry-y11-m1-l7-ionic-bonding-properties.json text eol=lf
+src/data/chemistry-y11-m1-l8-metallic-bonding-properties.json text eol=lf
+src/data/chemistry-y11-m2-l1-mole-concept.json text eol=lf
+src/data/chemistry-y11-m3-cp1-predicting-products.json text eol=lf
+src/data/chemistry-y11-m3-cp2-metal-reactivity.json text eol=lf
+src/data/chemistry-y11-m3-cp3-rates-synthesis.json text eol=lf
+src/data/chemistry-y11-m3-l6-indigenous-detoxification.json text eol=lf
+src/data/chemistry-y11-m3-l7-metal-activity-series.json text eol=lf
+src/data/chemistry-y11-m4-cp1-energy-changes.json text eol=lf
+src/data/chemistry-y11-m4-cp2-enthalpy-hess.json text eol=lf
+src/data/chemistry-y11-m4-cp3-entropy-gibbs.json text eol=lf
+src/data/chemistry-y11-m4-l10-hess-combustion-consolidation.json text eol=lf
+src/data/chemistry-y11-m4-l12-calculating-entropy.json text eol=lf
+src/data/chemistry-y11-m4-l13-gibbs-free-energy.json text eol=lf
+src/data/chemistry-y12-m7-l11-combustion-of-alcohols.json text eol=lf

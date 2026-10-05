@@ -12,7 +12,7 @@
 import {readFileSync, writeFileSync, mkdirSync, existsSync} from 'node:fs';
 import path from 'node:path';
 import {getCompositionId} from './lesson-utils.mjs';
-import {INTRO_STINGER_FRAMES, TRANSITION_FRAMES} from './_yt-constants.mjs';
+import {lessonTimeline} from '../src/lesson/timeline.mjs';
 
 const args = process.argv.slice(2);
 const lessonPath = args.find((a) => !a.startsWith('--'));
@@ -52,13 +52,12 @@ const sceneTitleFor = (scene, index) => {
 	return scene.type;
 };
 
-const chapters = [{time: 0, title: 'Welcome'}];
-let cursorFrames = INTRO_STINGER_FRAMES;
-for (let i = 0; i < lesson.scenes.length; i++) {
-	const scene = lesson.scenes[i];
-	const startSec = cursorFrames / fps;
+const timeline = lessonTimeline(lesson);
+const chapters = timeline.introFrames > 0 ? [{time: 0, title: 'Welcome'}] : [];
+for (let i = 0; i < timeline.scenes.length; i++) {
+	const {scene, startFrame} = timeline.scenes[i];
+	const startSec = startFrame / fps;
 	chapters.push({time: startSec, title: sceneTitleFor(scene, i + 1)});
-	cursorFrames += scene.durationInFrames - (i < lesson.scenes.length - 1 ? TRANSITION_FRAMES : 0);
 }
 
 const chapterLines = chapters.map((c) => `${fmtTimestamp(c.time)} ${c.title}`).join('\n');

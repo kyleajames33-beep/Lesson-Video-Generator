@@ -1,0 +1,319 @@
+{
+  "chemistry-y12-m8-l3-precipitation-qualitative-analysis": {
+    "root": {
+      "subtitle": "Evidence, controls and limits in selected ion tests",
+      "syllabusDotPoints": [
+        "conduct qualitative investigations – using flame tests, precipitation and complexation reactions as appropriate – to test for the presence in aqueous solution of the following ions:",
+        "cations: barium (Ba2+), calcium (Ca2+), magnesium (Mg2+), lead(II) (Pb2+), silver ion (Ag+), copper(II) (Cu2+), iron(II) (Fe2+), iron(III) (Fe3+)",
+        "anions: chloride (Cl–), bromide (Br–), iodide (I–), hydroxide (OH–), acetate (CH3COO–), carbonate (CO32–), sulfate (SO42–), phosphate (PO43–)"
+      ],
+      "lessonIntent": "Evaluate selected qualitative ion-test observations using candidate sets, interference controls and net ionic equations. Supplementary ammonium and Group 1 examples do not replace the complete prescribed ion list.",
+      "examSkill": "Link each conclusion to its observations and conditions, balance net ionic equations, and state what remains unresolved. No particular test or mark entitlement is claimed."
+    },
+    "scenes": {
+      "title": {
+        "caption": "Precipitation Reactions and Qualitative Analysis (Year 12 Chemistry, Module 8, Lesson 3)"
+      },
+      "hook": {
+        "heading": "What does the evidence support?",
+        "body": "A controlled ion test can narrow the possibilities. An unexplained white solid cannot identify a whole sample.",
+        "callout": "State the candidates and controls.",
+        "caption": "Selected ion tests illustrate evidence-based identification under stated conditions.",
+        "voiceover": {
+          "text": "A laboratory receives an unknown aqueous sample. Which ions might it contain, and which observations would distinguish them? A precipitate or flame colour can narrow the possibilities, but an observation only has meaning alongside the reagents, conditions and candidate ions. Repeating an ambiguous test does not make its result unique. We will use selected anion and cation tests, connect them to net ionic equations, and separate justified conclusions from missing evidence. These are supervised laboratory examples, not instructions for testing an unlabelled substance yourself."
+        }
+      },
+      "concept": {
+        "heading": "Qualitative versus quantitative",
+        "body": "Qualitative analysis investigates identity. These observations alone do not give a numerical concentration.",
+        "bullets": [
+          {
+            "text": "A positive result may fit more than one ion."
+          },
+          {
+            "text": "Use a candidate set, reagent blank and known reference samples."
+          },
+          {
+            "text": "An absent visible result may reflect the detection limit."
+          }
+        ],
+        "secondary": "A controlled test may distinguish candidates in a stated set. More tests help only when they add relevant evidence.",
+        "callout": "Observation + conditions + alternatives.",
+        "caption": "Identity evidence is conditional; numerical amounts need a suitable measurement method.",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m8Cards",
+          "props": {
+            "cards": [
+              {
+                "ask": "What might be present?",
+                "icons": [
+                  {
+                    "name": "testTube",
+                    "label": "controlled test"
+                  }
+                ],
+                "title": "Qualitative",
+                "lines": [
+                  "identity evidence",
+                  "consider alternatives"
+                ]
+              },
+              {
+                "ask": "How much?",
+                "icons": [
+                  {
+                    "name": "burette"
+                  },
+                  {
+                    "name": "balance",
+                    "load": "crucible"
+                  }
+                ],
+                "title": "Quantitative",
+                "lines": [
+                  "numerical amount",
+                  "validated measurement"
+                ]
+              },
+              {
+                "icons": [
+                  {
+                    "name": "evidenceStack"
+                  }
+                ],
+                "title": "Check the inference",
+                "lines": [
+                  "candidate set",
+                  "blanks and controls"
+                ]
+              }
+            ],
+            "footer": {
+              "text": "Interpret observations within the test conditions.",
+              "amber": true
+            },
+            "beats": [
+              47,
+              345,
+              498,
+              669
+            ]
+          }
+        },
+        "voiceover": {
+          "text": "Qualitative analysis investigates what is present. Quantitative analysis determines a numerical amount or concentration using a suitable measurement method. A visible precipitate alone does not supply that number. For identification, ask which candidate ions could produce the observation. A reagent blank helps reveal contamination, and known reference samples help check that the test and interpretation work. No visible change is not automatic proof of absence: a concentration may be below the test's detection limit. One well-controlled test can distinguish a restricted set; several poorly controlled tests can still leave the identity unresolved."
+        }
+      },
+      "concept-net-ionic": {
+        "body": "For these soluble ionic reactants, write the dissolved ions and cancel spectators. Check atoms, charge and states.",
+        "bullets": [
+          {
+            "text": "Spectators appear unchanged on both sides."
+          },
+          {
+            "text": "Ag⁺(aq) + Cl⁻(aq) → AgCl(s)"
+          },
+          {
+            "text": "Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)"
+          }
+        ],
+        "secondary": "A balanced equation explains a proposed reaction. It does not prove that an unknown precipitate is that product.",
+        "callout": "Balance the reaction; justify the identity separately.",
+        "caption": "Net ionic equations describe reactions; identifying an unknown requires evidence.",
+        "voiceover": {
+          "text": "Net ionic equations show the reacting species. Consider known silver nitrate and sodium chloride solutions. Represent these soluble ionic compounds as dissolved ions. Sodium and nitrate appear unchanged on both sides, so cancel them. Silver ion plus chloride ion gives solid silver chloride. For known sulfate reacting with barium ions, the corresponding product is solid barium sulfate. Check both atoms and total charge, and include state symbols. These equations explain the proposed reactions. Writing a familiar equation does not establish that an unknown white solid really is silver chloride or barium sulfate; that identification still needs the appropriate test conditions and evidence."
+        }
+      },
+      "definition": {
+        "heading": "Anion tests need controls",
+        "body": "Use separate aliquots: fresh portions of the original sample for different tests.",
+        "bullets": [
+          {
+            "text": "Chloride evidence: dilute HNO₃, then AgNO₃; interpret the precipitate."
+          },
+          {
+            "text": "Sulfate evidence: dilute HCl, then BaCl₂; control carbonate interference."
+          },
+          {
+            "text": "Carbonate evidence: acid releases gas; CO₂ initially turns limewater cloudy in the approved test."
+          }
+        ],
+        "secondary": "Do not introduce the target ion: HCl or BaCl₂ contaminates a later chloride test; sulfuric acid contaminates a sulfate test.",
+        "callout": "Choose the acid; protect each aliquot.",
+        "caption": "Conceptual test conditions only. Use the approved procedure, clean apparatus and controls.",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m8TubeTests",
+          "props": {
+            "mode": "anion",
+            "beats": [
+              80,
+              150,
+              220,
+              290,
+              375,
+              430,
+              740,
+              790,
+              850
+            ],
+            "reviewedAnalytical": true
+          }
+        },
+        "voiceover": {
+          "text": "Different tests use fresh aliquots, meaning separate portions of the original sample. In the chloride test, dilute nitric acid precedes silver nitrate to control carbonate and other acid-sensitive interference. Hydrochloric acid would itself add chloride, so it is unsuitable here. For sulfate, dilute hydrochloric acid before barium chloride controls carbonate interference. Do not substitute sulfuric acid because it adds sulfate. In a comparison restricted to barium sulfate and barium carbonate, dilute hydrochloric acid leaves sulfate solid but dissolves carbonate with gas evolution. Acid-released gas needs safe confirmation as carbon dioxide, for example the initial milky or cloudy limewater response. Hydrogencarbonate can also release carbon dioxide. Use approved supervised methods, blanks and reference samples; fizzing or a white solid alone is insufficient."
+        }
+      },
+      "concept-cations": {
+        "heading": "Cation patterns and their limits",
+        "body": "Known-ion examples link hydroxide precipitate colours to possible cations.",
+        "bullets": [
+          {
+            "text": "Fe²⁺: green; Fe³⁺: red-brown; Cu²⁺: pale blue hydroxide."
+          },
+          {
+            "text": "A white hydroxide insoluble in excess NaOH does not uniquely identify Mg²⁺."
+          },
+          {
+            "text": "Supplementary NH₄⁺ test: released NH₃ turns damp red litmus blue."
+          }
+        ],
+        "secondary": "Ca²⁺ can also give a white hydroxide under suitable conditions. A white carbonate is not unique to calcium either.",
+        "callout": "Use a discriminating test, not colour alone.",
+        "caption": "Cation tests require controlled conditions; never smell gases directly.",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m8TubeTests",
+          "props": {
+            "mode": "cation",
+            "beats": [
+              150,
+              180,
+              205,
+              240,
+              265,
+              300,
+              365,
+              490,
+              600,
+              660,
+              745,
+              800,
+              870
+            ],
+            "reviewedAnalytical": true
+          }
+        },
+        "voiceover": {
+          "text": "For known iron two, iron three and copper two samples, sodium hydroxide can produce green, red-brown and pale blue precipitates respectively. These patterns support identification within a suitable candidate set. A white precipitate insoluble in excess sodium hydroxide does not uniquely identify magnesium: calcium can also give a white hydroxide under suitable concentration conditions. Likewise, calcium's white carbonate is not unique among metal carbonates. Ammonium is a supplementary example here. In the approved supervised test, sodium hydroxide and controlled warming release ammonia, which turns damp red litmus blue. Never smell gases directly. Additional evidence must distinguish the remaining candidates; merely adding another familiar colour does not guarantee identification."
+        }
+      },
+      "concept-flame": {
+        "heading": "Flame tests as support",
+        "body": "Excited species in a flame emit light. The observed colour can support a proposed metal-ion identity.",
+        "bullets": [
+          {
+            "text": "Li⁺ crimson, Na⁺ yellow, K⁺ lilac: supplementary examples."
+          },
+          {
+            "text": "Ca²⁺ brick red, Ba²⁺ pale green, Cu²⁺ blue-green: typical observations."
+          },
+          {
+            "text": "Clean apparatus and reference samples help control contamination."
+          }
+        ],
+        "secondary": "Sodium yellow can mask weaker colours. No visible characteristic colour does not automatically exclude an ion.",
+        "callout": "Compare under controlled conditions.",
+        "caption": "Typical flame colours support identification; contamination and masking limit the inference.",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m8FlameTests",
+          "props": {
+            "beats": [
+              100,
+              360,
+              390,
+              410,
+              430,
+              465,
+              495,
+              590,
+              665,
+              800
+            ],
+            "reviewedAnalytical": true
+          }
+        },
+        "voiceover": {
+          "text": "In a supervised flame test, heating creates excited species that can emit visible light as they return to lower energy states. The emitters are not necessarily the same ions that were present in the solution. Typical observations include crimson for lithium, yellow for sodium, lilac for potassium, brick red for calcium, pale green for barium and blue-green for copper. Lithium, sodium and potassium are supplementary examples in this lesson. Clean apparatus and known reference samples matter because contamination can change the observed colour. Sodium's strong yellow can mask weaker colours. A colour supports a proposed identity within the stated candidates, while an absent colour may leave the question unresolved."
+        }
+      },
+      "worked-example": {
+        "heading": "Identify within a stated set",
+        "question": "Separate aliquots give a white precipitate after dilute HNO₃ then AgNO₃, and a pale blue precipitate with NaOH. Which candidate ions fit? Write their net ionic equations.",
+        "coachNote": "Model: one cation from Cu²⁺, Fe²⁺ or Fe³⁺; one anion from Cl⁻, Br⁻ or NO₃⁻. No other interference; blank and known controls behave as expected.",
+        "steps": [
+          "Within the stated anion set, white silver precipitate supports Cl⁻.",
+          "Ag⁺(aq) + Cl⁻(aq) → AgCl(s)",
+          "Within the stated cation set, pale blue hydroxide supports Cu²⁺.",
+          "Cu²⁺(aq) + 2OH⁻(aq) → Cu(OH)₂(s)",
+          "Conclusion: Cu²⁺ and Cl⁻ under the model and control assumptions."
+        ],
+        "caption": "The candidate set, separate aliquots and valid controls make the inference defensible.",
+        "voiceover": {
+          "text": "Now use an explicit model. The solution has one cation from copper two, iron two or iron three, and one anion from chloride, bromide or nitrate. No other interfering species are present, and the blank and known controls behave as expected. A fresh aliquot gives a white precipitate after dilute nitric acid and silver nitrate. Within this set, that supports chloride; bromide gives a cream precipitate, while nitrate does not give this precipitation. The net ionic equation is silver ion plus chloride ion gives solid silver chloride. A separate aliquot gives a pale blue hydroxide, supporting copper two within the cation set. Copper two plus two hydroxide ions gives solid copper hydroxide. The answer depends on the stated candidate set and controls."
+        }
+      },
+      "misconception": {
+        "heading": "Three inference traps",
+        "body": "Trap 1: a familiar precipitate is not automatically unique to one ion.",
+        "secondary": "Trap 2: reusing an aliquot can introduce the ion being tested for. Trap 3: a balanced equation is not identification evidence.",
+        "mistakeTag": "Check what each result establishes",
+        "callout": "Candidates, aliquots, controls, then conclusion.",
+        "caption": "Independent, discriminating evidence matters more than the number of tests.",
+        "voiceover": {
+          "text": "Three traps can make an answer sound more certain than the evidence. First, treating a familiar precipitate as unique. A white hydroxide does not automatically mean magnesium, and barium chloride without interference controls does not automatically mean sulfate. Second, contaminating a later test. Hydrochloric acid and barium chloride both introduce chloride, so a portion already exposed to either cannot establish whether chloride was in the original sample. Sulfuric acid similarly introduces sulfate. Third, writing a balanced equation as if it proved the product's identity. State the candidates and choose tests that distinguish them. Use fresh aliquots, an appropriate acid, a reagent blank and known controls before drawing the conclusion."
+        }
+      },
+      "quick-check": {
+        "heading": "What remains unresolved?",
+        "question": "A colourless unknown gives a white hydroxide insoluble in excess NaOH. A separate, unacidified aliquot gives a white precipitate with BaCl₂. Are Mg²⁺ and SO₄²⁻ uniquely identified? Explain missing evidence and give a conditional sulfate equation.",
+        "pausePrompt": "Pause. Separate the observations from the identities claimed.",
+        "answerSteps": [
+          "No. A white hydroxide insoluble in excess NaOH is not unique to Mg²⁺.",
+          "Ca²⁺ is another possibility under suitable conditions; request a candidate set and discriminating test.",
+          "Unacidified BaCl₂ can also precipitate carbonate: sulfate is not established.",
+          "Use a fresh aliquot with approved dilute-HCl/BaCl₂ conditions, a blank and known controls.",
+          "If sulfate is supported: Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s). The original cation remains unresolved."
+        ],
+        "caption": "Neither ion is uniquely identified by the supplied uncontrolled observations.",
+        "voiceover": {
+          "text": "A colourless unknown gives a white hydroxide insoluble in excess sodium hydroxide. A separate, unacidified aliquot gives a white precipitate with barium chloride. Are magnesium and sulfate uniquely identified? Explain missing evidence and give a conditional sulfate equation. Pause. Separate the observations from the identities claimed. Neither identification is unique. Calcium can also form a white hydroxide under suitable conditions, so request the candidate set and a discriminating test. Unacidified barium chloride can precipitate carbonate as well as sulfate. A fresh aliquot tested under approved dilute hydrochloric acid and barium chloride conditions, with a blank and known controls, would address this interference. If that evidence supports sulfate, barium ions plus sulfate ions give solid barium sulfate. The original observations still leave the cation unresolved."
+        }
+      },
+      "summary": {
+        "heading": "Conclude only what follows",
+        "points": [
+          "Qualitative observations support identity under stated conditions.",
+          "Candidate sets and discriminating tests determine what can be concluded.",
+          "Use fresh aliquots, suitable acids, blanks and known controls.",
+          "A balanced net ionic equation explains a reaction, not a unique identity.",
+          "Use supervised procedures; never smell gases directly."
+        ],
+        "finalPrompt": "Which alternatives remain, and what evidence would distinguish them?",
+        "caption": "Selected tests teach defensible inference; they do not cover the full prescribed ion list.",
+        "voiceover": {
+          "text": "Qualitative analysis connects observations to possible identities under stated conditions. A white solid or a flame colour can be useful evidence, but the candidate set and possible interference determine what it establishes. Keep different tests on fresh aliquots, select acids that do not add the target ion, and interpret results alongside blanks and known controls. Balance net ionic equations without mistaking an equation for proof of identity. Use supervised, approved procedures and never smell gases directly. These selected examples do not replace investigation of the full prescribed ion list. Before concluding, ask which alternatives remain and what further evidence would distinguish them."
+        }
+      }
+    },
+    "response": {
+      "promptText": "A colourless unknown gives a white hydroxide insoluble in excess sodium hydroxide. A separate, unacidified aliquot gives a white precipitate with barium chloride. Are magnesium and sulfate uniquely identified? Explain missing evidence and give a conditional sulfate equation. Pause. Separate the observations from the identities claimed.",
+      "answerText": "Neither identification is unique. Calcium can also form a white hydroxide under suitable conditions, so request the candidate set and a discriminating test. Unacidified barium chloride can precipitate carbonate as well as sulfate. A fresh aliquot tested under approved dilute hydrochloric acid and barium chloride conditions, with a blank and known controls, would address this interference. If that evidence supports sulfate, barium ions plus sulfate ions give solid barium sulfate. The original observations still leave the cation unresolved.",
+      "minimumThinkingSeconds": 45,
+      "rationale": "Allow time to identify both nonunique inferences, name missing controls and write a conditional equation. Measure prompt-end, silent hold and reveal timing after new audio and alignment.",
+      "status": "unmeasured planning target, not assembled silence"
+    }
+  }
+}

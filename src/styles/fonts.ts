@@ -8,7 +8,7 @@
 // the type scale uses (760, 820, 840...). Glyphs outside these subsets (e.g.
 // subscript digits) fall back per-glyph, exactly as with Google Fonts.
 
-import {continueRender, delayRender, staticFile} from 'remotion';
+import {cancelRender, continueRender, delayRender, staticFile} from 'remotion';
 
 type FontFile = {family: string; file: string; weight: string; unicodeRange: string};
 
@@ -48,8 +48,7 @@ export const loadFonts = () => {
 	)
 		.then(() => continueRender(handle))
 		.catch((err) => {
-			console.error('Font load failed', err);
-			continueRender(handle);
+			cancelRender(new Error(`Required font failed to load: ${String(err)}`));
 		});
 };
 

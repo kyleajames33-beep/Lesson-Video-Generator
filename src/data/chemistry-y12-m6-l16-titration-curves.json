@@ -44,7 +44,7 @@
       "heading": "A drug's pKa, read straight off a graph",
       "body": "Chemists read a drug candidate's pKa directly from one titration curve, no extra calculation.",
       "callout": "Every feature of the curve is data.",
-      "durationInFrames": 630,
+      "durationInFrames": 1146,
       "caption": "A titration curve encodes the equivalence point, the pKa, and the right indicator.",
       "voiceover": {
         "text": "OK, here's something powerful. When a pharmaceutical team needed the pKa of a new drug candidate, they didn't run a separate experiment. They read it straight off a titration curve, at the half-equivalence point, and got four-point-five-eight. From that same graph they also found the equivalence point and chose the right indicator. One curve, three answers. That's the thing about a titration curve. It isn't just a line that goes up. Every feature on it, the starting height, the flat stretch, the sudden leap, the midpoint of that leap, is quantitative information. Today you learn to read all of it, and to tell the four curve types apart at a glance.",
@@ -69,7 +69,7 @@
       ],
       "secondary": "Weak acid with weak base has almost no sharp jump, so no indicator works; you need a pH meter.",
       "callout": "Read four features to name any curve.",
-      "durationInFrames": 1170,
+      "durationInFrames": 1747,
       "caption": "Four curve types by start pH, buffer region, equivalence pH, and jump size.",
       "voiceover": {
         "text": "There are four curve types, and four diagnostic features tell them apart. Start with a strong acid titrated by a strong base. It starts at a low pH, has no buffer region, and shows the biggest, most vertical jump, centred right at pH seven. Next, a weak acid with a strong base. It starts higher, around pH three, rises gently through a flat buffer region, and its jump is smaller, centred above seven, near eight-point-seven. Then a strong acid with a weak base. It starts low, but its equivalence point is below seven, and the buffer region appears after the equivalence point, not before. And finally a weak acid with a weak base, which barely jumps at all, so no indicator can pin the endpoint, and you'd use a pH meter. So the four checks are, the starting pH, whether there's a buffer region and where, the equivalence pH above, at, or below seven, and the size of the jump. Those four uniquely identify any curve.",
@@ -117,10 +117,10 @@
       "id": "concept-reading",
       "type": "concept",
       "heading": "Reading the key points",
-      "body": "The equivalence volume is where stoichiometric amounts have reacted; a sharp inflection can help locate it. The pKa hides at the half-equivalence volume.",
+      "body": "The equivalence point is the middle of the steep jump. The pKa hides at the half-equivalence volume.",
       "bullets": [
         {
-          "text": "Equivalence point: the inflection near the stoichiometric equivalence volume, read on the volume axis."
+          "text": "Equivalence point: the midpoint of the steepest section, read on the volume axis."
         },
         {
           "text": "Half-equivalence volume is V(EP) ÷ 2; the pH there equals pKa."
@@ -131,10 +131,11 @@
       ],
       "secondary": "The starting pH is not the equivalence point, and the pKa is neither pH 7 nor the starting pH.",
       "callout": "pKa lives at half the equivalence volume.",
-      "durationInFrames": 1145,
+      "durationInFrames": 1662,
       "caption": "EP = midpoint of the steep jump; pKa = pH at V(EP) ÷ 2.",
       "voiceover": {
-        "text": "Reading the key points The equivalence volume is where stoichiometric amounts have reacted; a sharp inflection can help locate it. The pKa hides at the half-equivalence volume. Equivalence point: the inflection near the stoichiometric equivalence volume, read on the volume axis. Half-equivalence volume is V(EP) ÷ 2; the pH there equals pKa. The buffer region surrounds the half-equivalence point, where pH ≈ pKa. The starting pH is not the equivalence point, and the pKa is neither pH 7 nor the starting pH."
+        "text": "Now how to actually read the points off a curve. The equivalence point is the middle of the steep, near-vertical jump, and you locate it on the volume axis, the horizontal one. That volume tells you how much titrant exactly neutralised the acid. Here's the elegant trick for a weak acid. Go to half that volume, the half-equivalence point, and read the pH there. That pH equals the pKa of the acid. Why? Because at the halfway mark, exactly half the acid has been converted to its conjugate base, so the acid and conjugate base concentrations are equal, and Henderson-Hasselbalch collapses to pH equals pKa. That whole flat buffer region sits around the half-equivalence point, where the pH barely moves. Two things to keep straight. The starting pH is not the equivalence point, and the pKa is neither pH seven nor the starting pH. It's specifically the pH at half the equivalence volume.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L16/concept-reading.c75425ec4910.mp3"
       },
       "diagram": {
         "type": "diorama",
@@ -177,7 +178,7 @@
         }
       ],
       "callout": "Half-equivalence point reveals the pKa.",
-      "durationInFrames": 930,
+      "durationInFrames": 1100,
       "caption": "Equivalence point, half-equivalence point, buffer region, and inflection.",
       "voiceover": {
         "text": "Quick vocabulary for the features. The equivalence point is the steepest part of the curve, where the moles of titrant exactly match the moles of analyte. The half-equivalence point is at half that volume, and it's special because the pH there equals the pKa. The buffer region is the flat stretch that appears before the equivalence point when you're titrating a weak acid, where added base barely changes the pH. And the inflection is the centre of the vertical jump, which marks the equivalence point itself. Knowing which feature is which is what lets you pull numbers straight off a graph instead of calculating from scratch.",
@@ -188,18 +189,20 @@
       "id": "worked-example",
       "type": "workedExample",
       "heading": "Reading a curve",
-      "question": "A weak monoprotic acid/NaOH curve identifies equivalence at 25.00 mL with measured pH 8.72. At 12.50 mL, pH is 4.74. The nearby steep change spans pH 7.5 to 11.5. Find EP pH, pKa and a suitable indicator.",
-      "coachNote": "Read pH at the identified equivalence volume; for this weak monoprotic acid, read pKa near half-equivalence.",
+      "question": "A curve for a weak acid titrated with 0.100 mol L⁻¹ NaOH starts at pH 3, jumps between pH 7.5 and 11.5 at 25.00 mL, and at 12.50 mL the pH is 4.74. Find the EP pH, the pKa, and a suitable indicator.",
+      "coachNote": "EP is the midpoint of the jump; pKa is the pH at half the EP volume.",
       "steps": [
-        "Read pH at the identified equivalence volume: 8.72.",
-        "Half-equivalence volume = 12.50 mL; pH ≈ pKa = 4.74.",
-        "Do not average the pH limits of the jump; pH is logarithmic and the curve need not be symmetric.",
-        "Phenolphthalein (8.3–10.0) is suitable for this stated steep region."
+        "Equivalence point volume = 25.00 mL (centre of the steep jump)",
+        "EP pH = midpoint of the jump = (7.5 + 11.5) ÷ 2 ≈ 9.5",
+        "Half-equivalence volume = 25.00 ÷ 2 = 12.50 mL",
+        "pH at 12.50 mL = 4.74, so pKa = 4.74",
+        "EP pH ≈ 9.5 → phenolphthalein (8.3–10.0) is suitable ✓"
       ],
-      "durationInFrames": 1440,
-      "caption": "Read equivalence pH from the curve at the stoichiometric volume, not the mean jump pH.",
+      "durationInFrames": 1703,
+      "caption": "EP at 25.00 mL, pH ≈ 9.5; pKa = 4.74; phenolphthalein suits.",
       "voiceover": {
-        "text": "The curve identifies equivalence at 25 millilitres, where the measured p H is 8.72. At half that volume, the measured p H is 4.74. For a weak monoprotic acid titrated with a strong base, p H at half-equivalence is approximately p K a, so p K a is 4.74. The equivalence p H is read at the stoichiometric equivalence volume; it is not the arithmetic mean of p H values at the edges of the jump. Phenolphthalein is suitable here because its transition lies in the steep region near equivalence. Both the curve and the permitted volume error matter."
+        "text": "Let's read a real curve. A weak acid is titrated with nought-point-one mole per litre sodium hydroxide. The curve starts at pH three, then jumps between pH seven-point-five and eleven-point-five at twenty-five millilitres, and at twelve-point-five millilitres the pH reads four-point-seven-four. First, the equivalence point. It's the centre of the steep jump, at twenty-five millilitres, and its pH is the midpoint of the jump, halfway between seven-point-five and eleven-point-five, which is about nine-point-five. Next, the pKa. Go to half the equivalence volume, twelve-point-five millilitres, and read the pH there, which is four-point-seven-four. That pH is the pKa. Finally, the indicator. The equivalence point is around nine-point-five, so phenolphthalein, with its range of eight-point-three to ten, fits perfectly. Three pieces of information, all read straight off the graph.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L16/worked-example.cb51a0549428.mp3"
       }
     },
     {
@@ -210,7 +213,7 @@
       "secondary": "Trap 2: reading pKa as pH 7 or as the starting pH; it's the pH at half the EP volume. Trap 3: confusing the starting pH with the equivalence pH.",
       "mistakeTag": "Where titration curve marks vanish",
       "callout": "EP by salt, pKa at half-EP, start ≠ EP.",
-      "durationInFrames": 1230,
+      "durationInFrames": 1560,
       "caption": "EP not always 7; pKa = pH at half-EP; starting pH isn't the EP.",
       "voiceover": {
         "text": "Three traps, and these are exactly the ones examiners report most. Trap one, placing the equivalence point at pH seven on a weak acid curve. Only a strong acid with a strong base sits at seven. For a weak acid with a strong base the equivalence point is up above seven, because the conjugate base makes the solution basic. Trap two, reading the pKa as pH seven, or as the starting pH of the curve. Neither is right. The pKa is specifically the pH at the half-equivalence volume, half of the equivalence point volume. Trap three, confusing the starting pH with the equivalence pH. The starting pH is the leftmost point, before any titrant is added. The equivalence point is the middle of the jump. These two errors, wrong equivalence point and wrong indicator, usually travel together, so fixing one fixes both.",
@@ -230,7 +233,7 @@
         "(b) pKa(acid) does not apply, since the acid is strong and fully ionised",
         "Methyl orange (3.1–4.4) suits the acidic equivalence point"
       ],
-      "durationInFrames": 1260,
+      "durationInFrames": 1701,
       "caption": "Low start + EP below 7 → strong acid + weak base; no acid pKa to read.",
       "voiceover": {
         "text": "Quick check. A titration curve starts at pH one, has no buffer region, and its sharp jump is centred below pH seven. Part a, which titration type is it? Part b, where would you read the pKa, if anywhere? Pause and run the four checks. Right, let's reason it out. Starting at pH one is very acidic, which means a strong acid, fully ionised from the start. No buffer region before the jump backs that up. And the jump being centred below seven means the salt is acidic, which points to a weak base. So part a, this is a strong acid with a weak base. Part b is the catch. There's no acid pKa to read here, because the acid is strong and fully ionised, so it has no meaningful Ka. The pKa-from-half-equivalence trick only applies to the weak species. And since the equivalence point is acidic, methyl orange would be the right indicator. Four quick checks, full identification.",
@@ -245,14 +248,15 @@
         "Four features identify a curve: start pH, buffer region, EP pH, jump size.",
         "Strong + strong: EP at 7, biggest jump, no buffer.",
         "Weak acid + strong base: buffer before EP, EP above 7.",
-        "Read pH at the stoichiometric equivalence volume; do not average the jump limits.",
+        "The equivalence point is the midpoint of the steep jump.",
         "pKa is the pH at the half-equivalence volume, V(EP) ÷ 2."
       ],
       "finalPrompt": "Reading a curve? Find the EP first, then halve the volume for pKa.",
-      "durationInFrames": 1140,
+      "durationInFrames": 1499,
       "caption": "Five takeaways: the four fingerprints, the EP, and pKa at half-EP.",
       "voiceover": {
-        "text": "Lock it in Four features identify a curve: start pH, buffer region, EP pH, jump size. Strong + strong: EP at 7, biggest jump, no buffer. Weak acid + strong base: buffer before EP, EP above 7. Read pH at the stoichiometric equivalence volume; do not average the jump limits. pKa is the pH at the half-equivalence volume, V(EP) ÷ 2."
+        "text": "Let's lock it in. Five things to take away. First, four features identify any curve, the starting pH, whether there's a buffer region and where, the equivalence point pH, and the size of the jump. Second, a strong acid with a strong base has its equivalence point at seven, the biggest jump, and no buffer region. Third, a weak acid with a strong base shows a buffer region before the equivalence point, which sits above seven. Fourth, the equivalence point is the midpoint of the steep, near-vertical jump, read on the volume axis. And fifth, the pKa is the pH at the half-equivalence volume, half of the equivalence point volume. When you read a curve, find the equivalence point first, then halve its volume to pull out the pKa. See you in the next lesson.",
+        "audioFile": "public/audio/Chemistry-Y12-M6-L16/summary.92d84b6c8cf3.mp3"
       }
     }
   ]

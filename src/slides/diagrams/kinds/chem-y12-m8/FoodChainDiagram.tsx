@@ -18,7 +18,11 @@ import {DioramaDefs, DioramaPlinth, idleBob, idlePulse} from '../../diorama';
 import {Arrow, Beaker, clamp, ease, pop, ramp} from './shared';
 import {Alga, Dot, Fish, Tag, WATER, wander} from './water-parts';
 
+import {validatePriorityScienceDiagram} from '../../priority-science-models.mjs';
+
 export type FoodChainProps = {
+	/** Qualitative methylmercury example, with water uptake distinguished. */
+	reviewedMethylmercury?: boolean;
 	delay?: number;
 	/** Frames after `delay`: [bioaccumulation, biomagnification, Hg in water, plankton, small fish, predator, climb, key]. */
 	beats?: number[];
@@ -31,7 +35,8 @@ const W = 760;
 const H = 530;
 const DEFAULT_BEATS = [117, 285, 411, 512, 546, 605, 757, 807];
 
-export const FoodChainDiagram = ({delay = 62, beats, contaminant = 'Hg'}: FoodChainProps) => {
+export const FoodChainDiagram = ({delay = 62, beats, contaminant = 'Hg', reviewedMethylmercury = false}: FoodChainProps) => {
+	validatePriorityScienceDiagram({type: 'diorama', kind: 'chem12m8FoodChain', props: {reviewedMethylmercury, contaminant}});
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
@@ -57,7 +62,7 @@ export const FoodChainDiagram = ({delay = 62, beats, contaminant = 'Hg'}: FoodCh
 	const BAR_B = 334, BAR_H = 56;
 
 	return (
-		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Bioaccumulation: ${contaminant} builds up in one fish over time. Biomagnification: its concentration rises from water to plankton to small fish to predator.`} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={reviewedMethylmercury ? "Qualitative methylmercury example. Accumulation within one organism is distinct from uptake from water and dietary transfer between trophic levels. Water is not a trophic level; dots and bars are not measurements." : `Bioaccumulation: ${contaminant} builds up in one fish over time. Biomagnification: its concentration rises from water to plankton to small fish to predator.`} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={ID} elements={[]} />
 
 			{/* legend */}
@@ -86,7 +91,7 @@ export const FoodChainDiagram = ({delay = 62, beats, contaminant = 'Hg'}: FoodCh
 					);
 				})}
 				<text x={W / 2} y={198} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={800} opacity={ramp(frame, tAcc + 90, 16)}>
-					the same fish, older → more {contaminant} inside
+					{reviewedMethylmercury ? 'Illustrative build-up when uptake exceeds elimination' : <>the same fish, older → more {contaminant} inside</>}
 				</text>
 			</g>
 
@@ -94,8 +99,8 @@ export const FoodChainDiagram = ({delay = 62, beats, contaminant = 'Hg'}: FoodCh
 
 			{/* ─ BIOMAGNIFICATION ─ */}
 			<g opacity={ramp(frame, tMag - 10, 16)}>
-				<text x={30} y={246} fill={theme.accent} fontSize={23} fontWeight={800}>Biomagnification</text>
-				<text x={30} y={271} fill={TOK.inkDim} fontSize={18} fontWeight={700}>concentration rises at each higher level of a food chain</text>
+				<text x={30} y={246} fill={theme.accent} fontSize={23} fontWeight={800}>{reviewedMethylmercury ? 'Uptake and trophic transfer' : 'Biomagnification'}</text>
+				<text x={30} y={271} fill={TOK.inkDim} fontSize={18} fontWeight={700}>{reviewedMethylmercury ? 'Schematic MeHg: water uptake, then food-chain transfer' : 'concentration rises at each higher level of a food chain'}</text>
 			</g>
 
 			{stages.map((st, i) => {

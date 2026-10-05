@@ -18,7 +18,7 @@
     "BI-11WS-06"
   ],
   "lessonIntent": "Students can model mark-release-recapture, calculate a population estimate with the Lincoln index N = (M × C) ÷ R, state its assumptions and predict the direction of error when one is broken.",
-  "examSkill": "N = (M × C) ÷ R: R is on the bottom, so anything that lowers recaptures inflates the estimate.",
+  "examSkill": "Use N = (M × C) ÷ R and reason from how a broken assumption changes the marked fraction in the recapture sample. Incomplete mixing can bias R upward or downward depending on where and when recapture occurs.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -138,7 +138,7 @@
       "callout": "A perfect model hides real-world error.",
       "caption": "The bean model, and why it is used instead of animals.",
       "voiceover": {
-        "text": "In class, you model the method with beans. Fill a container with dried beans, that's your population. Take out a handful, that's M, swap each one for a marked bean, put them back, and shake to mix. Then take a second handful, count the total, C, and the marked beans, R, and apply the formula. Why beans? Capturing and marking live animals causes stress, and in New South Wales it needs ethics approval and a scientific licence. But there's a trade-off. Beans can't die, breed, move away, or lose their mark. A carefully mixed bean model can approximate the assumptions, so it can't show how badly a real survey can go wrong."
+        "text": "In class, you model the method with beans. Fill a container with dried beans, that's your population. Take out a handful, that's M, swap each one for a marked bean, put them back, and shake to mix. Then take a second handful, count the total, C, and the marked beans, R, and apply the formula. Why beans? Capturing and marking live animals causes stress, and in New South Wales it needs ethics approval and a scientific licence. But there's a trade-off. Beans can't die, breed, move away, or lose their mark. The model obeys every assumption perfectly, so it can't show how badly a real survey can go wrong."
       },
       "diagram": {
         "type": "diorama",
@@ -196,7 +196,7 @@
           ]
         }
       },
-      "durationInFrames": 1530
+      "durationInFrames": 1408
     },
     {
       "id": "concept-assumptions",
@@ -205,22 +205,113 @@
       "body": "The Lincoln index assumes marks mix fully, stay on, do no harm, and that nothing is born, dies or moves between samples.",
       "bullets": [
         {
-          "text": "Full mixing, retained harmless marks, equal catchability and a closed population."
+          "text": "R is on the bottom: if a bias lowers marked recaptures, N is over-estimated; if it raises marked recaptures, N is under-estimated."
         },
         {
-          "text": "Lost marks can reduce R and overestimate N."
+          "text": "Marks lost, marked animals dying/emigrating or trap-shy behaviour can lower R and inflate N."
         },
         {
-          "text": "Incomplete mixing can bias either way, depending on where recapture occurs."
+          "text": "Incomplete mixing has no fixed direction: sampling near release may over-represent marks (R high, N low); sampling where marks are under-represented reverses the bias."
         }
       ],
-      "secondary": "Improve it: leave enough time to mix (but not so long that births and deaths occur), use a harmless, durable mark, take large samples, and repeat.",
-      "callout": "Reason it through with the formula in front of you.",
-      "caption": "Breaking an assumption changes R, and so biases N.",
+      "secondary": "Improve it: allow appropriate mixing, sample representatively across the habitat, use harmless durable marks, take large samples and repeat.",
+      "callout": "For incomplete mixing, ask whether marked animals are over- or under-represented in the recapture sample.",
+      "caption": "Broken assumptions bias the marked fraction; incomplete mixing can push the estimate either way.",
       "voiceover": {
-        "text": "The formula only works if its assumptions hold. Marked animals mix fully back in. The mark doesn't harm them, fall off, or change how catchable they are. And nothing is born, dies, arrives or leaves between samples. When one breaks, work out the direction of the error. R sits on the bottom of the fraction. So if marks rub off, if marked animals die or move away, R falls, and N comes out too big. But if the mark makes animals easier to catch, or they become trap-happy, returning for the bait, R rises, and N comes out too small. Incomplete mixing can bias either way. Sampling near a cluster of released marked animals can increase R and underestimate N; sampling away from it can decrease R and overestimate N."
+        "text": "The Lincoln index works only when its assumptions are reasonable. R, the number of marked animals recaptured, is on the bottom of the fraction. A bias that lowers R inflates the estimate, while a bias that raises R shrinks it. Lost marks, marked animals dying or emigrating, or trap-shy behaviour can lower R. Incomplete mixing is different: it has no fixed direction. If you sample close to the release point and marked animals are over-represented, R is too high and N is under-estimated. If marked animals are under-represented in the area sampled, R is too low and N is over-estimated. Always reason from the actual sampling bias."
       },
-      "durationInFrames": 1762
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Panels",
+        "props": {
+          "layout": "matrix",
+          "title": "N = (M × C) ÷ R: follow R",
+          "columns": [
+            {
+              "name": "Effect on R",
+              "sub": "marked recaptures",
+              "icon": "beetle",
+              "iconOpts": {
+                "marked": true
+              },
+              "at": 526
+            },
+            {
+              "name": "Estimate of N",
+              "icon": "tally",
+              "at": 546
+            }
+          ],
+          "rowLabels": [
+            {
+              "text": "Marks rub off",
+              "at": 638
+            },
+            {
+              "text": "Marked animals die or leave",
+              "at": 726
+            },
+            {
+              "text": "Incomplete mixing",
+              "at": 813
+            },
+            {
+              "text": "Mark makes them easier to catch",
+              "at": 1050
+            },
+            {
+              "text": "Trap-happy animals",
+              "at": 1113
+            }
+          ],
+          "rows": [
+            [
+              {
+                "text": "falls"
+              },
+              {
+                "text": "over-estimate",
+                "amber": true
+              }
+            ],
+            [
+              {
+                "text": "falls"
+              },
+              {
+                "text": "over-estimate",
+                "amber": true
+              }
+            ],
+            [
+              {
+                "text": "can rise or fall"
+              },
+              {
+                "text": "under- or over-estimate",
+                "amber": true
+              }
+            ],
+            [
+              {
+                "text": "rises"
+              },
+              {
+                "text": "under-estimate"
+              }
+            ],
+            [
+              {
+                "text": "rises"
+              },
+              {
+                "text": "under-estimate"
+              }
+            ]
+          ]
+        }
+      },
+      "durationInFrames": 1395
     },
     {
       "id": "worked-example",
@@ -237,9 +328,9 @@
       ],
       "caption": "N = (45 × 60) ÷ 15 = 180 wallabies.",
       "voiceover": {
-        "text": "Now an illustrative field example. In Kakadu, forty-five agile wallabies were caught, tagged and released. A second catch of sixty contained fifteen tagged animals. Estimate the population. First, label the letters. M is forty-five, the number tagged. C is sixty, the second catch. R is fifteen, the tagged ones in that catch. Then N equals M times C, divided by R. Forty-five times sixty is two thousand seven hundred. Divided by fifteen, that's one hundred and eighty wallabies. And notice, the whole estimate rests on just fifteen recaptures, which is why the assumptions matter so much more in the field than in a container of beans."
+        "text": "Now real animals. In Kakadu, forty-five agile wallabies were caught, tagged and released. A second catch of sixty contained fifteen tagged animals. Estimate the population. First, label the letters. M is forty-five, the number tagged. C is sixty, the second catch. R is fifteen, the tagged ones in that catch. Then N equals M times C, divided by R. Forty-five times sixty is two thousand seven hundred. Divided by fifteen, that's one hundred and eighty wallabies. And notice, the whole estimate rests on just fifteen recaptures, which is why the assumptions matter so much more in the field than in a container of beans."
       },
-      "durationInFrames": 1453
+      "durationInFrames": 1345
     },
     {
       "id": "misconception",

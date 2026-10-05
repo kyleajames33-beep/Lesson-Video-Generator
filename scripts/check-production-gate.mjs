@@ -27,12 +27,13 @@ const blocked = gatedLessons.filter((lesson) => {
 });
 
 if (blocked.length === 0) {
-  console.log(`Production gate passed at ${threshold}/10.`);
+  console.log(`Heuristic diagnostic check passed at ${threshold}/10. This is not release approval.`);
+  console.log('Use npm run gate:release with exact package review evidence before release.');
   console.log(includeReference ? 'Included reference lessons.' : 'Reference lessons excluded. Use --include-reference to gate them too.');
   process.exit(0);
 }
 
-console.error(`Production gate failed at ${threshold}/10.`);
+console.error(`Heuristic diagnostic check failed at ${threshold}/10. Scores are advisory, not release approval.`);
 console.error(includeReference ? 'Included reference lessons.' : 'Reference lessons excluded. Use --include-reference to gate them too.');
 
 for (const lesson of blocked) {

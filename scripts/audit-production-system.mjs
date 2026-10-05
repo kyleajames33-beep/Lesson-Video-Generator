@@ -1,11 +1,11 @@
 import {mkdirSync, readFileSync, readdirSync, writeFileSync} from 'node:fs';
 import path from 'node:path';
 import {countWords, getCompositionId, getVoiceoverBudget} from './lesson-utils.mjs';
+import {INTRO_STINGER_FRAMES, TRANSITION_FRAMES} from './_yt-constants.mjs';
 
 const dataDir = path.resolve('src/data');
 const outputDir = 'out/audits';
 const fpsFallback = 30;
-const transitionFrames = 24;
 const preferredDurationSeconds = {
   min: 60,
   max: 210,
@@ -26,8 +26,8 @@ const getDurationSeconds = (lesson) => {
   const fps = lesson.fps ?? fpsFallback;
   const scenes = lesson.scenes ?? [];
   const rawFrames = scenes.reduce((sum, scene) => sum + scene.durationInFrames, 0);
-  const transitionOverlap = transitionFrames * Math.max(0, scenes.length - 1);
-  return (rawFrames - transitionOverlap) / fps;
+  const transitionOverlap = TRANSITION_FRAMES * Math.max(0, scenes.length - 1);
+  return (INTRO_STINGER_FRAMES + rawFrames - transitionOverlap) / fps;
 };
 
 const getDurationStatus = (durationSeconds) => {

@@ -26,3 +26,9 @@ jobs:
 
       - name: Generate registry + typecheck + validate lessons
         run: npm run check:all
+
+      - name: Test media readiness and voice request contracts
+        run: npm run test:production
+
+      - name: Test scientific source, model constraints and review evidence
+        run: npm run test:source

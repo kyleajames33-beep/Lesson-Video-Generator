@@ -1,0 +1,2988 @@
+{
+  "schemaVersion": 1,
+  "preservedMain": "ca58c157f0349b29774f93a76cd041aefab3a2a2",
+  "reviewDate": "2026-10-04",
+  "scope": "Claim-level semantic source reconciliation. Resolved means the original narrow claim, not whole-lesson scientific approval. Mixed records preserve corrected fields and identify residuals. Newer proposals remain unvoiced and unapproved.",
+  "counts": {
+    "resolved-original-claim": 7,
+    "mixed-residual": 26,
+    "unverified-current-pass": 1,
+    "still-present": 56,
+    "qualification-needed": 9
+  },
+  "findings": [
+    {
+      "key": "original:A01",
+      "historicalId": "A01",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m2-l19"
+      ],
+      "originalProblem": "Hot-day water conservation is reversed: narration says less water is reclaimed on a hot day and more on a cold day.",
+      "status": "resolved-original-claim",
+      "remedyStatus": "preserve-existing-source-fix",
+      "assessment": "concept-design explains dehydration, increased ADH, collecting-duct permeability and increased reabsorption; temperature alone does not determine ADH.",
+      "scenes": [
+        "concept-design"
+      ],
+      "sources": [
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/26-2-water-balance"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m2-l19-the-nephron.json",
+          "workingSha256": "aa42bd09f7089a2d0d5729919159c5ee7e80bb585ecc649643d4f6ce1e9af85b"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A02",
+      "historicalId": "A02",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m2-l19"
+      ],
+      "originalProblem": "Urea is said not to be reabsorbed. This incorrectly treats excretion as meaning no tubular reabsorption.",
+      "status": "mixed-residual",
+      "remedyStatus": "preserve-fixed-fields-review-residuals",
+      "assessment": "concept-tubule and worked-example repair urea recycling. misconception.secondary and narration still say reabsorption leaves urea behind.",
+      "scenes": [
+        "concept-tubule",
+        "worked-example",
+        "misconception"
+      ],
+      "sources": [
+        "https://open.oregonstate.education/anatomy/chapter/25-3-physiology-of-urine-formation-overview/"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m2-l19-the-nephron.json",
+          "workingSha256": "aa42bd09f7089a2d0d5729919159c5ee7e80bb585ecc649643d4f6ce1e9af85b"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A03",
+      "historicalId": "A03",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m2-l20"
+      ],
+      "originalProblem": "Dialysis is said to rely on diffusion alone, although the same lesson describes removal of excess water.",
+      "status": "mixed-residual",
+      "remedyStatus": "preserve-fixed-fields-review-residuals",
+      "assessment": "concept-compare and worked-example distinguish solute diffusion and water ultrafiltration. hook and summary still claim diffusion only.",
+      "scenes": [
+        "concept-compare",
+        "worked-example",
+        "hook",
+        "summary"
+      ],
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5056503/"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m2-l20-renal-dialysis.json",
+          "workingSha256": "c1a4b5ec2aef8f1033bf119b596b2bd91e5dd230fb15fd55fce674433e3f9671"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A04",
+      "historicalId": "A04",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m2-l12"
+      ],
+      "originalProblem": "The phloem is said to carry sugars, not water; absence of dye is overinterpreted as evidence of that claim.",
+      "status": "resolved-original-claim",
+      "remedyStatus": "preserve-existing-source-fix",
+      "assessment": "concept-stem-root and worked-example explicitly describe aqueous phloem and reject the inference from absent staining. Summary abbreviates transport without denying water.",
+      "scenes": [
+        "concept-stem-root",
+        "worked-example",
+        "summary"
+      ],
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2949042/"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m2-l12-inside-leaf-stem-and-root.json",
+          "workingSha256": "2eb5a028d6c1df1f615b6bec16751a32ab7ec6c663d9d1711344d760f301e3a9"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A05",
+      "historicalId": "A05",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m2-l25"
+      ],
+      "originalProblem": "40°C is described as posing no immediate danger; 42°C is presented as a universal irreversible enzyme-damage boundary. The lesson also claims fever simply slows all enzymes.",
+      "status": "mixed-residual",
+      "remedyStatus": "superseded-by-complete-priority-science-proposal",
+      "assessment": "Named target scenes repair fixed thresholds, but concept-enzymes diagram still labels 28–42 degrees as coping. Summary restores coping at 40, fixed 42/28 limits and irreversible enzyme claims. Highest-priority residual.",
+      "scenes": [
+        "concept-zones",
+        "concept-enzymes",
+        "worked-example",
+        "quick-check",
+        "hook",
+        "misconception",
+        "summary"
+      ],
+      "sources": [
+        "https://www.cdc.gov/niosh/docs/2010-114/default.html"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m2-l25-optimal-range-tolerance-limits.json",
+          "workingSha256": "a28b0724947c66d221e51ec555a6929d799e152a16632c92dd04facbf93e5fd6"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalAssessment": "Complete source-hash-guarded isolated draft prepared. Existing valid fields and recorded catalogue preserved. Full-draft schema/source checks do not establish teacher/specialist, actual visual, audio or release approval. Three repaired narration scenes remain byte-identical; residual summary/definitions/pH limits and reference-band diagrams are corrected in the proposal."
+    },
+    {
+      "key": "original:A06",
+      "historicalId": "A06",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m1-l05"
+      ],
+      "originalProblem": "The mapped NESA content explicitly requires cell size = diameter of field of view / number of cells across it. The script teaches direct grid reading and image-size/magnification instead, without the specified equation.",
+      "status": "resolved-original-claim",
+      "remedyStatus": "preserve-existing-source-fix",
+      "assessment": "Field-of-view equation is in metadata, concept-mini-grid, worked-example and summary. Example: 1.8 mm / 6 = 300 micrometres. ScopeDiagram supports the new fieldDiameterUm/cellsAcross props.",
+      "scenes": [
+        "concept-mini-grid",
+        "worked-example",
+        "summary"
+      ],
+      "sources": [
+        "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m1-l05-using-the-microscope.json",
+          "workingSha256": "1472cc0538edcec9d1f0e293d47c9d2f4eb2559c51dd3de311b755892052c397"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A07",
+      "historicalId": "A07",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m2-l24"
+      ],
+      "originalProblem": "The lesson maps to analysis of hormone levels and physiological processes, but the data scene/diagram contains glucose only, with no measured hormone series.",
+      "status": "resolved-original-claim",
+      "remedyStatus": "preserve-existing-source-fix",
+      "assessment": "concept-data now shows insulin and glucose on matching times and labels data illustrative. Some callout/footer wording still says measured; review provenance phrasing before release.",
+      "scenes": [
+        "concept-data"
+      ],
+      "sources": [
+        "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa79a477bc"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m2-l24-blood-sugar-stress-diabetes.json",
+          "workingSha256": "86a7beedaa63f4c6ceace0a0f2a1a7ac171971c84418b56f264be39f5ffdfc9e"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A08",
+      "historicalId": "A08",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m2-l01"
+      ],
+      "originalProblem": "Volvox is presented as identical, independent cells without specialisation, and the colony/multicellular distinction is reduced to whether isolated cells die. Volvox carteri has differentiated somatic and reproductive cells; cultured multicellular-organism cells can survive independently under suitable conditions.",
+      "status": "mixed-residual",
+      "remedyStatus": "preserve-fixed-fields-review-residuals",
+      "assessment": "concept-colony, concept-multi and quick-check use Gonium and differentiated Volvox. Definition, misconception and summary still describe identical/independent cells and a universal separation test.",
+      "scenes": [
+        "concept-colony",
+        "concept-multi",
+        "quick-check",
+        "definition",
+        "misconception",
+        "summary"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/21680429/"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m2-l01-levels-of-cellular-organisation.json",
+          "workingSha256": "e45b03045fc888f42d8237600d260454c42e89a6b2980c8e93e59f25cce20f4c"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A09",
+      "historicalId": "A09",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m2-l03"
+      ],
+      "originalProblem": "A tissue is defined as one type of cell, yet the lesson itself calls xylem a tissue. Complex tissues contain multiple cell types.",
+      "status": "mixed-residual",
+      "remedyStatus": "preserve-fixed-fields-review-residuals",
+      "assessment": "worked-example permits several tissue cell types; misconception narration still defines tissue as one type of cell.",
+      "scenes": [
+        "worked-example",
+        "misconception"
+      ],
+      "sources": [
+        "Internal contradiction with the xylem example in this same lesson."
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m2-l03-from-organelles-to-systems.json",
+          "workingSha256": "31aed2d2f0aff50f905b59821432ef3b8f41158d8db2c846512be1dce2d0ee23"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A10",
+      "historicalId": "A10",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m1-l07"
+      ],
+      "originalProblem": "All integral proteins are said to span the whole bilayer; that specifically describes transmembrane proteins.",
+      "status": "mixed-residual",
+      "remedyStatus": "preserve-fixed-fields-review-residuals",
+      "assessment": "concept-proteins distinguishes integral and transmembrane. Definition and summary still universally describe integral proteins spanning the bilayer.",
+      "scenes": [
+        "concept-proteins",
+        "definition",
+        "summary"
+      ],
+      "sources": [
+        "https://openstax.org/books/concepts-biology/pages/3-4-the-cell-membrane"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m1-l07-fluid-mosaic-membrane.json",
+          "workingSha256": "68783b0fb2b4398318d4ef280fb413725a58ac942da993a5faaeffc2bdfc3b2d"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A11",
+      "historicalId": "A11",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m1-l17",
+        "biology-y11-m1-l18"
+      ],
+      "originalProblem": "All activity loss either side of optimum pH is labelled denaturation. Changes in active-site ionisation can reduce activity without permanent unfolding.",
+      "status": "mixed-residual",
+      "remedyStatus": "superseded-by-newer-biology-proposals",
+      "assessment": "Target narration qualifies pH effects, but reading-enzyme-graphs definition.callout still equates temperature/pH rate falls with denaturation. Use newer complete Biology proposals for L17/L18.",
+      "scenes": [
+        "concept-factors",
+        "concept-ph",
+        "quick-check",
+        "misconception",
+        "summary",
+        "definition"
+      ],
+      "sources": [
+        "https://openstax.org/books/microbiology/pages/8-1-energy-matter-and-enzymes"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m1-l17-enzyme-activity-practical.json",
+          "workingSha256": "3f90b5f7734dfeb6f828f3c2170ecd162a4e26be944edaed4d0542cb276515ba"
+        },
+        {
+          "file": "src/data/biology-y11-m1-l18-reading-enzyme-graphs.json",
+          "workingSha256": "f7b2bf0cfe73036435d343600280ce2a4433e0de048b402aaa03c188cb0dd50b"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A12",
+      "historicalId": "A12",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m2-l05"
+      ],
+      "originalProblem": "Bright light and a warm day are treated as enough information to prove carbon dioxide is limiting. Water, species, leaf temperature, stomatal conductance and actual light-response data are unspecified.",
+      "status": "mixed-residual",
+      "remedyStatus": "preserve-fixed-fields-review-residuals",
+      "assessment": "worked-example now supplies controlled response data. concept-temperature narration still says light and CO2 can be raised forever.",
+      "scenes": [
+        "worked-example",
+        "concept-temperature"
+      ],
+      "sources": [
+        "The lesson's own limiting-factor rule allows multiple factors to cap rate; the question does not identify which one applies."
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m2-l05-conditions-for-photosynthesis.json",
+          "workingSha256": "ca6601b137ef905619b2f9dd61f4a72fc0a1b5cbdf4c9995418ecf036b30824f"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A13",
+      "historicalId": "A13",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m2-l11"
+      ],
+      "originalProblem": "The potometer limitation is said to affect both readings equally so the comparison holds, without evidence. The text says time is controlled while comparing six-minute and five-minute trials.",
+      "status": "mixed-residual",
+      "remedyStatus": "preserve-fixed-fields-review-residuals",
+      "assessment": "Narration normalises unequal intervals and rejects error cancellation. Worked question still presupposes uptake slightly overstates transpiration; fair-test bullet overstates its inference.",
+      "scenes": [
+        "concept-fair-test",
+        "worked-example"
+      ],
+      "sources": [
+        "Internal comparison: 18 mm/6 min and 40 mm/5 min."
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m2-l11-measuring-transpiration-rate.json",
+          "workingSha256": "bf44c558bdc1a633cf0ee09cd7a4d8d8e461f13efd5ee7c5c8408e7035f2dec9"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A14",
+      "historicalId": "A14",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m2-l15"
+      ],
+      "originalProblem": "Two isolated blood samples, low in oxygen and high/low in urea, are treated as uniquely identifying liver and kidney. Concentrations alone without paired entering/leaving samples or context do not establish the organs.",
+      "status": "resolved-original-claim",
+      "remedyStatus": "preserve-existing-source-fix",
+      "assessment": "Quick-check uses paired entering/leaving urea changes. Candidate organs remain implicit; name liver and kidney before claiming unique identification.",
+      "scenes": [
+        "quick-check"
+      ],
+      "sources": [
+        "Underdetermined question: baseline urea, renal status, circulation location and comparative samples are unspecified."
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m2-l15-blood-through-the-organs.json",
+          "workingSha256": "78d6c4fa03326b0db9462e65e143e7bf73eb7c4f3ac88c208bc8336d1a703237"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A15",
+      "historicalId": "A15",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m3-l03"
+      ],
+      "originalProblem": "The antibiotic is said not to cause any mutation. This overstates the useful principle that mutations are not directed toward the organism's needs.",
+      "status": "mixed-residual",
+      "remedyStatus": "preserve-fixed-fields-review-residuals",
+      "assessment": "Narration distinguishes non-purposeful mutation, mutation-rate changes and horizontal transfer. Diagram caption still categorically says the drug selects, it does not create.",
+      "scenes": [
+        "concept-chemicals"
+      ],
+      "sources": [
+        "https://www.nature.com/articles/ncomms2607"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m3-l03-human-induced-pressures.json",
+          "workingSha256": "5ca562636718b4d184127f5fde213248cb5ac0a03c1fc08125dea1548dad41bd"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A16",
+      "historicalId": "A16",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m3-l05"
+      ],
+      "originalProblem": "Dating a volcano and evidence of prior occupation are presented as proving continuous accurate oral transmission for tens of thousands of years. The original researchers frame this as a possibility, conditional on the traditions referring to those eruptions.",
+      "status": "mixed-residual",
+      "remedyStatus": "preserve-fixed-fields-review-residuals",
+      "assessment": "concept-tested qualifies long continuity and names Matchan et al. Summary again states traditions match eruptions without immediate qualification; community attribution remains incomplete.",
+      "scenes": [
+        "concept-tested",
+        "summary"
+      ],
+      "sources": [
+        "https://pursuit.unimelb.edu.au/articles/victoria-s-volcanic-history-confirms-the-state-s-aboriginal-inhabitation-before-34-000-years"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m3-l05-megafauna-aboriginal-evidence.json",
+          "workingSha256": "a2ea637bd5481d33112efe91c66809a00028e20483de04347e042e9c8e8d9c8b"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A17",
+      "historicalId": "A17",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m3-l13"
+      ],
+      "originalProblem": "Specific Cultural Knowledge claims and named communities have no scene-level source trail. The examples cover Aboriginal Peoples but do not include a distinct Torres Strait Islander example.",
+      "status": "unverified-current-pass",
+      "remedyStatus": "preserve-fixed-fields-review-residuals",
+      "assessment": "Main now names Wreck Bay/ANBG, Gunditjmara/Budj Bim and Masigalgal/BOM sources and adds Torres Strait content. BOM and Budj Bim sources were located; exact correspondence of every claim, Wreck Bay page and reuse permissions remain unverified.",
+      "scenes": [
+        "concept-plants",
+        "concept-animals",
+        "concept-calendar"
+      ],
+      "sources": [
+        "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fad715a0de"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m3-l13-first-nations-use-of-adaptations.json",
+          "workingSha256": "b9e1dc80c24997bf59b9a3ad1a687eb7899148962c0525e3bf2ef63b1197f5b2"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A18",
+      "historicalId": "A18",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m3-l23"
+      ],
+      "originalProblem": "Incomplete mixing is said always to decrease marked recaptures and overestimate abundance. The direction depends on where/when the second sample is taken.",
+      "status": "resolved-original-claim",
+      "remedyStatus": "preserve-existing-source-fix",
+      "assessment": "concept-assumptions narration, bullets and diagram give both possible directions of incomplete-mixing bias. Summary does not reinstate a fixed direction.",
+      "scenes": [
+        "concept-assumptions",
+        "summary"
+      ],
+      "sources": [
+        "The lesson's correct N = MC/R formula determines the direction once sampling bias is specified."
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m3-l23-mark-release-recapture.json",
+          "workingSha256": "d2a1e01363f14c5787ad75931e4b67d735d30d29d2a19fd29e095cd6ce0dd162"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A19",
+      "historicalId": "A19",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m3-l24"
+      ],
+      "originalProblem": "Predator peaks are said always to lag prey peaks; a lag alone is then used to assert that prey drives predators, not the reverse.",
+      "status": "mixed-residual",
+      "remedyStatus": "preserve-fixed-fields-review-residuals",
+      "assessment": "Hook, concept-cycle and worked-example qualify lag and causation. Summary still generalises that predator peaks lag prey peaks.",
+      "scenes": [
+        "hook",
+        "concept-cycle",
+        "worked-example",
+        "summary"
+      ],
+      "sources": [
+        "The same lesson later acknowledges food-predation interaction; observed lag alone cannot establish causal direction."
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m3-l24-relationships-between-organisms.json",
+          "workingSha256": "eb807d0b3d725a09f6a0617d7c8e9b01c427bdca1847a98533e504a0e31577c5"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A20",
+      "historicalId": "A20",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m3-l17"
+      ],
+      "originalProblem": "A numerical cytochrome-c table is called real without a sequence accession/source. Phylogenetic inference as a whole is said to assume a molecular clock, which is broader than the simple classroom distance ranking.",
+      "status": "mixed-residual",
+      "remedyStatus": "preserve-fixed-fields-review-residuals",
+      "assessment": "concept-tree/worked-example label counts illustrative and qualify equal rates. concept-limits and summary still make a broad molecular-clock assumption and repeat specific counts.",
+      "scenes": [
+        "concept-tree",
+        "worked-example",
+        "concept-limits",
+        "summary"
+      ],
+      "sources": [
+        "Source/provenance absent from lesson JSON."
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m3-l17-relationships-from-sequences.json",
+          "workingSha256": "40b18d7252fdf3ecc8491fefaa6a0d3b7499c7ef0e4e1932d6b9a43b460fdcfa"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A21",
+      "historicalId": "A21",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m3-l21"
+      ],
+      "originalProblem": "Diversity is defined only as the number of species, which is species richness; evenness is omitted.",
+      "status": "resolved-original-claim",
+      "remedyStatus": "preserve-existing-source-fix",
+      "assessment": "concept-measures and diagram now include evenness and richness. Definition and later examples are abbreviated, but the original omission is repaired.",
+      "scenes": [
+        "concept-measures",
+        "definition"
+      ],
+      "sources": [
+        "https://openstax.org/books/biology-2e/pages/45-6-community-ecology"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m3-l21-what-shapes-a-community.json",
+          "workingSha256": "372201a44b66a62b16c179bfd7ed7d8290e90611fe9556825b5da80ac3a427ac"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "original:A22",
+      "historicalId": "A22",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m1-l01"
+      ],
+      "originalProblem": "Lack of eukaryotic membrane-bound organelles is overextended to lack of internal membranes in all prokaryotes.",
+      "status": "mixed-residual",
+      "remedyStatus": "preserve-fixed-fields-review-residuals",
+      "assessment": "concept-how-we-know repairs the internal-membrane claim; concept-feature-by-feature qualifies patterns. concept-dividing-line, worked-example and summary retain categorical chromosome/size/ribosome generalisations.",
+      "scenes": [
+        "concept-how-we-know",
+        "concept-feature-by-feature",
+        "concept-dividing-line",
+        "worked-example",
+        "summary"
+      ],
+      "sources": [
+        "https://openstax.org/books/microbiology/pages/8-6-photosynthesis"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m1-l01-prokaryotic-vs-eukaryotic-cells.json",
+          "workingSha256": "355c00ee76da8dbe8ffd8dcc83115c382018333e1219a83225a4becbbfb51581"
+        }
+      ],
+      "releaseApproved": false,
+      "sceneReferenceCorrections": [
+        {
+          "previousAlias": "concept-comparison",
+          "currentScene": "concept-feature-by-feature",
+          "reason": "Previous semantic-review label did not exist in current source; reconciled against actual scene content."
+        },
+        {
+          "previousAlias": "concept-types",
+          "currentScene": "concept-dividing-line",
+          "reason": "Previous semantic-review label did not exist in current source; reconciled against actual scene content."
+        }
+      ]
+    },
+    {
+      "key": "original:A23",
+      "historicalId": "A23",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m1-l24"
+      ],
+      "originalProblem": "Every gamete is said to be unique, and all four products of every meiosis genetically different. These are expected sources of variation, not mathematical guarantees for every meiosis or comparison.",
+      "status": "mixed-residual",
+      "remedyStatus": "preserve-fixed-fields-review-residuals",
+      "assessment": "concept-combined/worked-example narration says generally varied. Inquiry/hook, concept-variation and captions still promise all four cells are different.",
+      "scenes": [
+        "concept-combined",
+        "worked-example",
+        "hook",
+        "concept-variation",
+        "misconception"
+      ],
+      "sources": [
+        "The 2^n combinations calculation counts possible chromosome combinations, not guaranteed distinct outputs of every division."
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m1-l24-meiosis.json",
+          "workingSha256": "9bd0169be333fc55d429dc0e885ba313e8aeb4d19036e9fbcee21751283d2c83"
+        }
+      ],
+      "releaseApproved": false,
+      "sceneReferenceCorrections": [
+        {
+          "previousAlias": "concept-mechanisms",
+          "currentScene": "concept-variation",
+          "reason": "Previous semantic-review label did not exist in current source; reconciled against actual scene content."
+        }
+      ]
+    },
+    {
+      "key": "original:A24",
+      "historicalId": "A24",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y12-m6-l16"
+      ],
+      "originalProblem": "The same restriction enzyme is asserted to be the only way to generate ligatable ends. Different enzymes can generate compatible cohesive ends; blunt-end ligation also exists. The quiz does not supply actual cut-end sequences.",
+      "status": "still-present",
+      "remedyStatus": "superseded-by-complete-priority-science-proposal",
+      "assessment": "Current recombinant-DNA lesson still requires the same restriction enzyme universally. Different enzymes can make compatible overhangs; verify actual ends.",
+      "scenes": [
+        "worked-example",
+        "misconception",
+        "quick-check",
+        "summary"
+      ],
+      "sources": [
+        "https://www.neb.com/en-ca/tools-and-resources/selection-charts/compatible-cohesive-ends-and-generation-of-new-restriction-sites"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y12-m6-l16-recombinant-dna-transgenic-organisms.json",
+          "workingSha256": "4e0fcb306b1dbf81577d21553a7a56f01b48ea2891ca26a3aea56feef78dd14d"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalAssessment": "Complete source-hash-guarded isolated draft prepared. Existing valid fields and recorded catalogue preserved. Full-draft schema/source checks do not establish teacher/specialist, actual visual, audio or release approval.",
+      "sceneReferenceCorrections": [
+        {
+          "previousAlias": "concept-tools",
+          "currentScene": "worked-example",
+          "reason": "Previous semantic-review label did not exist in current source; reconciled against actual scene content."
+        }
+      ]
+    },
+    {
+      "key": "original:A25",
+      "historicalId": "A25",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y12-m6-l16"
+      ],
+      "originalProblem": "The insulin example cuts the human gene straight from genomic DNA for expression in E. coli, omitting introns and expression design.",
+      "status": "still-present",
+      "remedyStatus": "superseded-by-complete-priority-science-proposal",
+      "assessment": "Current insulin example directly cuts a human genomic gene for bacterial expression and omits expression design. Original insulin work used synthetic A/B-chain genes and expression fusions.",
+      "scenes": [
+        "worked-example"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/85300/"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y12-m6-l16-recombinant-dna-transgenic-organisms.json",
+          "workingSha256": "4e0fcb306b1dbf81577d21553a7a56f01b48ea2891ca26a3aea56feef78dd14d"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalAssessment": "Complete source-hash-guarded isolated draft prepared. Existing valid fields and recorded catalogue preserved. Full-draft schema/source checks do not establish teacher/specialist, actual visual, audio or release approval."
+    },
+    {
+      "key": "original:A26",
+      "historicalId": "A26",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l21"
+      ],
+      "originalProblem": "Any C=C remaining in an addition-polymer repeat unit is called impossible. Addition polymerisation of dienes can retain unsaturation, as in polybutadiene.",
+      "status": "still-present",
+      "remedyStatus": "complete-isolated-foundations-chemistry-proposal-prepared",
+      "assessment": "Current addition-polymer scenes prohibit any remaining C=C. Diene polymers provide counterexamples; scope the monoalkene rule.",
+      "scenes": [
+        "concept-mechanism",
+        "misconception",
+        "summary"
+      ],
+      "sources": [
+        "https://openstax.org/books/organic-chemistry/pages/14-6-diene-polymers-natural-and-synthetic-rubbers",
+        "https://pubs.rsc.org/en/content/articlehtml/2021/ra/d1ra02467a",
+        "https://media.iupac.org/publications/pac/2009/pdf/8106x1131.pdf",
+        "https://pubs.acs.org/doi/10.1021/acsomega.0c00826",
+        "https://www.hitachi-hightech.com/file/global/pdf/products/science/appli/ana/thermal/application_DMS_008e.pdf",
+        "https://www.epa.gov/plastics/advanced-recycling-plastics",
+        "https://www.epa.gov/trash-free-waters/frequently-asked-questions-about-plastic-recycling-and-composting"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l21-addition-polymers.json",
+          "workingSha256": "f4fc04d15f4245ba67917b620a08657a6dc6594d8ed3adb84021c4091a3b5c1d"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalFiles": [
+        "scripts/lib/foundations-chemistry-lessons.mjs",
+        "scripts/data/foundations-chemistry-copy.json",
+        "scripts/data/foundations-chemistry-evidence.json"
+      ],
+      "proposalScope": "Complete unvoiced lesson package prepared. Current recorded-source status is unchanged; candidate needs teacher/source and actual visual/audio approval."
+    },
+    {
+      "key": "original:A27",
+      "historicalId": "A27",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "chemistry-y12-m6-l2"
+      ],
+      "originalProblem": "Phenolphthalein at high pH is explicitly said never to return to colourless. Alkaline fading is a documented reaction, with observed colour dependent on conditions and time.",
+      "status": "still-present",
+      "remedyStatus": "complete-isolated-foundations-chemistry-proposal-prepared",
+      "assessment": "Quick-check retains universal denial of phenolphthalein fading. Published alkaline-fading experiments contradict that universal claim; this does not specify the colour at an arbitrary observation time.",
+      "scenes": [
+        "quick-check"
+      ],
+      "sources": [
+        "https://pubs.acs.org/doi/10.1021/ed066p725",
+        "https://www.inchem.org/documents/icsc/icsc/eics0913.htm",
+        "https://demolab.chem.wisc.edu/types-of-chemical-reactions-nitric-acid-acts-on-copper/",
+        "https://edu.rsc.org/experiments/reactions-of-metals-with-acids-producing-salts/446.article",
+        "https://media.iupac.org/didac/Didac%20Eng/Didac02/Content/E13.htm",
+        "https://iupac.org/wp-content/uploads/2016/07/Red_Book_2005.pdf"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m6-l2-nomenclature-indicators-acid-reactions.json",
+          "workingSha256": "7f94be85b78fa64463745eb3427b53f1862fda635326a451029c7693fa8e8696"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalFiles": [
+        "scripts/lib/foundations-chemistry-lessons.mjs",
+        "scripts/data/foundations-chemistry-copy.json",
+        "scripts/data/foundations-chemistry-evidence.json"
+      ],
+      "proposalScope": "Complete unvoiced lesson package prepared. Current recorded-source status is unchanged; candidate needs teacher/source and actual visual/audio approval.",
+      "additionalConfirmedSameLessonClaims": [
+        "Only-four-strong-bases assertion contradicted by LiOH.",
+        "Unspecified colour and aspirin hook cannot establish the claimed conclusion.",
+        "HNO3/Al salt-plus-H2 pattern is unsupported without conditions; replace teaching example with Mg/dilute HCl.",
+        "Ammonia neutralisation does not require water product; sufficient acid must be stated for carbonate CO2 production.",
+        "Naming shortcuts need common aqueous inorganic-example scope."
+      ]
+    },
+    {
+      "key": "original:A28",
+      "historicalId": "A28",
+      "historicalFamily": "original",
+      "lessonPrefixes": [
+        "biology-y11-m1-l15",
+        "biology-y11-m1-l16",
+        "biology-y11-m1-l17"
+      ],
+      "originalProblem": "Specificity is repeatedly reduced to exactly one substrate, and liver/potato catalase is given a fixed 37°C optimum without source or method dependence.",
+      "status": "mixed-residual",
+      "remedyStatus": "partially-superseded-by-newer-biology-proposal",
+      "assessment": "Selected enzyme-specificity and fair-test scenes are repaired. L16 hook/inquiry/quick-check still say one substrate; L17 worked-example still predicts 37-degree optimum. New Biology L17 proposal covers only that portion.",
+      "scenes": [
+        "concept-what",
+        "concept-lock-key",
+        "concept-fair-test",
+        "hook",
+        "quick-check",
+        "worked-example"
+      ],
+      "sources": [
+        "https://openstax.org/books/biology-2e/pages/6-5-enzymes"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/biology-y11-m1-l15-enzymes-biological-catalysts.json",
+          "workingSha256": "e3c5666a4235ac6e3cc541f50e2cebfda9cb84129f5c1b6da27c6a63f1fe7657"
+        },
+        {
+          "file": "src/data/biology-y11-m1-l16-enzyme-models.json",
+          "workingSha256": "68cf89ac6acea384abe6aabd283e901ae30529b61713757423fc76b5c03fb824"
+        },
+        {
+          "file": "src/data/biology-y11-m1-l17-enzyme-activity-practical.json",
+          "workingSha256": "3f90b5f7734dfeb6f828f3c2170ecd162a4e26be944edaed4d0542cb276515ba"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C01",
+      "historicalId": "C01",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m1-l1"
+      ],
+      "originalProblem": "A fixed boiling point is incorrectly treated as definitive proof of purity.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Quick-check treats an invariant boiling point as proof of purity. Azeotropic mixtures are counterexamples; composition/independent tests are needed.",
+      "scenes": [
+        "quick-check"
+      ],
+      "sources": [
+        "https://ocw.mit.edu/courses/10-34-numerical-methods-applied-to-chemical-engineering-fall-2015/6fa9fd0533d3b3423d37a88d49aa7eaa_MIT10_34F15_Homework3.pdf"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m1-l1-properties-classification.json",
+          "workingSha256": "956056b30f13e4f71a0b64dd7a26ccd7d43ca1a2c7b01405da1e984ac29050c2"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C02",
+      "historicalId": "C02",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m1-l3"
+      ],
+      "originalProblem": "NaCl recovery over-relies on cooling crystallisation; distillation instructions imply boiling the flask dry.",
+      "status": "still-present",
+      "remedyStatus": "complete-isolated-safety-medicine-proposal-prepared",
+      "assessment": "Quick-check implies continuing distillation until dry salt remains. ACS flags heating a distillation to dryness as a hazard. The separate evaporating-basin workflow is different; the poor cooling-crystallisation yield is not quantified in this pass.",
+      "scenes": [
+        "quick-check",
+        "worked-example"
+      ],
+      "sources": [
+        "https://www.acs.org/content/dam/acsorg/about/governance/committees/chemicalsafety/publications/safety-in-academic-chemistry-laboratories-students.pdf",
+        "https://pubs.usgs.gov/bul/0669/report.pdf",
+        "https://pubs.acs.org/doi/10.1021/acs.oprd.0c00166"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m1-l3-separation-physical-methods.json",
+          "workingSha256": "df8a72affd79ff284aec281a1e13e77dbf62a5ca117c24565c19a773a60a42e6"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalScope": "L3, L13 and L14 have complete source-only drafts. Medicine L11-L14 now use explicit enrichment attribution in isolated proposals; no missing spectroscopy coverage is claimed filled. Recorded catalogue unchanged; teacher/science, visual and media review pending."
+    },
+    {
+      "key": "chemistry:C03",
+      "historicalId": "C03",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m1-l4"
+      ],
+      "originalProblem": "Chromatographic Rf matching is treated as unique identification; ethanol distillation needs the azeotrope qualification.",
+      "status": "mixed-residual",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Rf example still guarantees unique identity from an Rf match, despite possible co-elution. Distillation narration already says enrich ethanol, so it is not itself an explicit pure-ethanol claim; add the azeotrope limit and preserve the correct enrichment wording.",
+      "scenes": [
+        "worked-example",
+        "worked-example-2"
+      ],
+      "sources": [
+        "https://www2.chem.wisc.edu/deptfiles/genchem/lab/labdocs/modules/tlc/tlcinterp.htm",
+        "https://ocw.mit.edu/courses/10-34-numerical-methods-applied-to-chemical-engineering-fall-2015/6fa9fd0533d3b3423d37a88d49aa7eaa_MIT10_34F15_Homework3.pdf"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m1-l4-separation-advanced-methods.json",
+          "workingSha256": "0e01f9e7f9fe9b1dcaaadfd8af8c290fadba823755c63f3224c84b6f2c392a9c"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C04",
+      "historicalId": "C04",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m1-l5"
+      ],
+      "originalProblem": "The proposed chromatography/distillation sequence does not explain recovery of iodine and sugar.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "The answer combines chromatography or distillation under one phase-affinity rationale and does not specify how iodine is collected. Chromatography may be preparative, but a usable recovery sequence and solvent conditions are missing; do not infer that every chromatographic option is impossible.",
+      "scenes": [
+        "quick-check"
+      ],
+      "sources": [
+        "https://www.acs.org/content/dam/acsorg/about/governance/committees/chemicalsafety/publications/safety-in-academic-chemistry-laboratories-students.pdf",
+        "https://www2.chem.wisc.edu/deptfiles/genchem/lab/labdocs/modules/tlc/tlcinterp.htm"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m1-l5-iq1-consolidation.json",
+          "workingSha256": "d6083a57ba6845ffc323f84588aaef24cc95b155d12a0268a77fac70cccc68f4"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C05",
+      "historicalId": "C05",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m1-l7"
+      ],
+      "originalProblem": "Charge-product comparison is stated as an exact fourfold actual attraction and a universal ranking rule.",
+      "status": "mixed-residual",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Worked narration already conditions its fourfold point-charge comparison on similar spacing. Keep that conditional calculation. Formula/callout/misconception still make charge an absolute first priority and size only a tiebreaker; actual spacing and lattice structure also matter.",
+      "scenes": [
+        "formula",
+        "worked-example",
+        "misconception",
+        "quick-check"
+      ],
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/7-5-strengths-of-ionic-and-covalent-bonds"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m1-l7-ionic-bonding-properties.json",
+          "workingSha256": "d41c0b433ac16168a71de569282afaefae518528a9fd67ac35d73e76adab7c6a"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C06",
+      "historicalId": "C06",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m1-l8"
+      ],
+      "originalProblem": "Elemental tungsten is modelled as a small highly charged cation donating about six electrons.",
+      "status": "qualification-needed",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "The prompt explicitly asks for an electron-sea model. Tungsten's 5d4 6s2 valence count does support six valence electrons; the audit should not call that count intrinsically false. Clarify that the model is not literal W6+ ions in an ionic solid or a quantitative proof of melting temperature. A real solid-state mechanism remains outside this review.",
+      "scenes": [
+        "quick-check"
+      ],
+      "sources": [
+        "https://physics.nist.gov/PhysRefData/Handbook/Tables/tungstentable1_a.htm",
+        "https://www.open.edu/openlearn/science-maths-technology/minerals-and-the-crystalline-state/content-section-4.1"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m1-l8-metallic-bonding-properties.json",
+          "workingSha256": "ce6c40d2dd9e67b28e1392d85ce0f6a627f155d2c0fed9de5ca21ae4e604930e"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C07",
+      "historicalId": "C07",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m1-l9"
+      ],
+      "originalProblem": "CO₂ sublimation is called boiling and diamond is assigned an ordinary atmospheric melting point.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Worked question/narration call the roughly minus-78-degree CO2 transition melting or boiling. At 1 atm it is sublimation. The quoted diamond melting point also lacks required pressure/phase context; no numerical replacement for diamond is certified here.",
+      "scenes": [
+        "hook",
+        "concept",
+        "formula",
+        "worked-example"
+      ],
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/10-4-phase-diagrams"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m1-l9-covalent-molecular-network.json",
+          "workingSha256": "629f778e5abbcc8c37662b4b4d59c48a82129d1dda500bf544ff7d06ad9c6c67"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C08",
+      "historicalId": "C08",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m1-l10"
+      ],
+      "originalProblem": "A universal IMF-strength ladder ignores size, polarizability and molecular shape.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Examples can have the stated orders, but the lesson extends a dispersion < dipole < hydrogen-bond ladder universally. Molecular size/polarisability/shape must be considered; correct sample order does not establish a universal ranking rule.",
+      "scenes": [
+        "concept",
+        "worked-example",
+        "quick-check"
+      ],
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/10-1-intermolecular-forces"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m1-l10-intermolecular-forces.json",
+          "workingSha256": "230aa42c830003d636acb7cacb0ae607d5a5d1f578ec312ff2dafb190ff822b8"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C09",
+      "historicalId": "C09",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m1-l12"
+      ],
+      "originalProblem": "Solubility is determined from enthalpy alone, omitting entropy and exceptions.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Concept and examples make enthalpic payback necessary for dissolution. Endothermic spontaneous dissolution and entropy contributions contradict that requirement. Preserve the qualitative force accounting while separating it from the Gibbs-energy criterion.",
+      "scenes": [
+        "concept-energy",
+        "concept-water",
+        "worked-example",
+        "quick-check"
+      ],
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/11-1-the-dissolution-process"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m1-l12-solubility-like-dissolves-like.json",
+          "workingSha256": "9cab7e3b1d124f4925dc45ac7a34b94ee063bfe1547d0581c44ae47ebead9642"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C10",
+      "historicalId": "C10",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m1-l14"
+      ],
+      "originalProblem": "Isotope chemistry is called identical and an approximate mass-number average is not distinguished from tabulated atomic weight.",
+      "status": "still-present",
+      "remedyStatus": "source-checked-scene-proposal-prepared-full-integration-pending",
+      "assessment": "Isotope narration claims chemically identical behaviour without isotope effects. Worked bromine average 79.9862 rounds to 79.99 only when mass numbers 79/81 are used as approximate masses; NIST isotope masses give 79.9035278 for those abundances. State the approximation rather than replacing the valid mass-number arithmetic with a different input set.",
+      "scenes": [
+        "concept-isotopes",
+        "worked-example"
+      ],
+      "sources": [
+        "https://www.old.goldbook.iupac.org/html/K/K03405.html",
+        "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ascii=ascii&ele=Br"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m1-l14-isotopes-relative-atomic-mass.json",
+          "workingSha256": "3c4a4646acc7987c66ed70b135abb4d66e0dae0a262807bf7ff4244fc8336586"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C11",
+      "historicalId": "C11",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m1-l15"
+      ],
+      "originalProblem": "Main-group number is equated directly with valence-electron count despite the 1–18 group convention.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Narration equates main-group number with valence count under the 1–18 layout. Main groups 13–18 require group minus ten, with helium as the usual two-electron exception.",
+      "scenes": [
+        "concept-ordering"
+      ],
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/6-4-electronic-structure-of-atoms-electron-configurations"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m1-l15-periodic-table-organisation.json",
+          "workingSha256": "f2f9fe230b88f985cde180c53aadfba3c2486e05fb733ac0a7b6530b0d0b4713"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C12",
+      "historicalId": "C12",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m1-l17"
+      ],
+      "originalProblem": "The quick check incorrectly says Cl⁻ has more shells than Na and gives an unsupported mixed-radius order.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Quick-check says chloride has more occupied shells than neutral sodium. Both have occupied n=3 shells; Na+ loses its third-shell electron. A universal mixed neutral/ionic radius order is not established without radius conventions/data.",
+      "scenes": [
+        "quick-check"
+      ],
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/6-4-electronic-structure-of-atoms-electron-configurations"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m1-l17-periodic-trends-atomic-radius.json",
+          "workingSha256": "01e9f0b8b66666ede7caea16998747c62ae1b19b2438f4d07cb1951ca1f473b8"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C13",
+      "historicalId": "C13",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m2-l1",
+        "chemistry-y11-m2-l1a"
+      ],
+      "originalProblem": "The pre-2019 carbon-12 mole definition is presented as current.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-awaits-review",
+      "assessment": "Current mole-definition teaching retains the carbon-12 mass definition. Current SI defines the mole by an exact entity count.",
+      "scenes": [
+        "definition",
+        "concept-scale",
+        "concept-carbon12",
+        "summary"
+      ],
+      "sources": [
+        "https://www.bipm.org/en/si-base-units/mole"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m2-l1-mole-concept.json",
+          "workingSha256": "a0894add513f2c387e84bd53164b3cc604714dc169e4809db00b6d8c7fd73c21"
+        },
+        {
+          "file": "src/data/chemistry-y11-m2-l1a-mole-understanding.json",
+          "workingSha256": "b066ec353476f489ab3a8a464775c1b1d57930ac52f3ba350aa7a9f02f87f3be"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C14",
+      "historicalId": "C14",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m2-l2"
+      ],
+      "originalProblem": "Molar mass invokes the old mole definition; Ca(H₂PO₄)₂ rounding is inconsistent.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Production molar-mass narration retains the historical exact carbon-12 definition. Supplied Ca/H/P/O values give 234.044 before rounding, not 234.05. The existing molar-mass pilot is a separate scope and does not establish correction of this production worked example.",
+      "scenes": [
+        "concept",
+        "worked-example"
+      ],
+      "sources": [
+        "https://www.bipm.org/en/si-base-units/mole"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m2-l2-molar-mass.json",
+          "workingSha256": "10d023192e47706d280b99c9bdd813b3da0335b2dd3b01efa2deaa51a078096f"
+        }
+      ],
+      "releaseApproved": false,
+      "independentCheck": "independent supplied-value arithmetic"
+    },
+    {
+      "key": "chemistry:C15",
+      "historicalId": "C15",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m2-l4"
+      ],
+      "originalProblem": "Fixed-volume examples can imply changing temperature changes the moles in a sealed sample.",
+      "status": "qualification-needed",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "The two fixed-volume calculations are valid for separate gas samples at their stated conditions. No scene explicitly seals and heats one sample, so the audit's alleged mole-change error is not established. Clarify separate samples and conservation for a sealed, nonreacting sample rather than rejecting the correct ideal-gas calculations.",
+      "scenes": [
+        "concept",
+        "worked-example-2"
+      ],
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/9-2-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m2-l4-gases-molar-volume.json",
+          "workingSha256": "776de9731061af4aba0243270f26e9cde9a60040d72ed5192400ac8fffc5eaa9"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C16",
+      "historicalId": "C16",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m2-l8"
+      ],
+      "originalProblem": "WHO nitrate guideline is overstated tenfold; ppm/ppb omit density and basis qualifications.",
+      "status": "still-present",
+      "remedyStatus": "superseded-by-complete-priority-science-proposal",
+      "assessment": "Current nitrate example uses a tenfold overstated guideline and concludes water is safe from this comparison alone. WHO gives 50 mg/L as nitrate; 0.050 g/L is about 8.0645e-4 mol/L for 62 g/mol, equal to that concentration, not tenfold below.",
+      "scenes": [
+        "worked-example-2",
+        "concept"
+      ],
+      "sources": [
+        "https://cdn.who.int/media/docs/default-source/wash-documents/water-safety-and-quality/chemical-fact-sheets-2022/nitrate-and-nitrite-fact-sheet-2022.pdf"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m2-l8-concentration-in-context.json",
+          "workingSha256": "4e91b8d82f35dbd43508f542c427e0d86e37765d9e91065648801a2449c82350"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalAssessment": "Complete source-hash-guarded isolated draft prepared. Existing valid fields and recorded catalogue preserved. Full-draft schema/source checks do not establish teacher/specialist, actual visual, audio or release approval."
+    },
+    {
+      "key": "chemistry:C17",
+      "historicalId": "C17",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m2-l10"
+      ],
+      "originalProblem": "Endpoint is conflated with equivalence point; worked result prematurely rounds four-significant-figure data.",
+      "status": "still-present",
+      "remedyStatus": "complete-isolated-analytical-inference-proposal-prepared",
+      "assessment": "Concept equates observed endpoint with exact completion and overstates concordance as accuracy. Four-significant-figure working truncates the final result to 0.0739. Unrounded average gives 0.0739066667 mol/L; explicitly choose a reporting convention and retain guard digits.",
+      "scenes": [
+        "concept",
+        "worked-example"
+      ],
+      "sources": [
+        "https://media.iupac.org/publications/analytical_compendium/Cha06sec2.pdf",
+        "https://goldbook.iupac.org/terms/view/09042",
+        "https://goldbook.iupac.org/terms/view/T06387",
+        "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-d1-terminology",
+        "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations",
+        "https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_by_David_Harvey/Analytical_Chemistry_2.1_(Harvey)/09:_Titrimetric_Methods/9.02:_AcidBase_Titrations",
+        "https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh",
+        "https://www.chemguide.co.uk/physical/acidbaseeqia/phcurves.html",
+        "https://www.metrohm.com/content/dam/metrohm/shared/documents/monographs/81085041EN.pdf"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m2-l10-volumetric-analysis-titration.json",
+          "workingSha256": "6b6e483410a6d6bf8063ac47346a98e389b143543139e984364c61cb294c978c"
+        }
+      ],
+      "releaseApproved": false,
+      "independentCheck": "independent supplied-value arithmetic",
+      "proposalAssessment": "Complete source-only proposals cover the listed lessons and carry their scientific corrections through all affected fields. C17/C19 partial scene repairs are integrated with their exact text retained. Source claims are prepared, not approved for production.",
+      "proposalScope": "Current catalogue and recorded media remain unchanged. Teacher/science, practical delivery and actual visual/media review remain pending."
+    },
+    {
+      "key": "chemistry:C18",
+      "historicalId": "C18",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m2-l16"
+      ],
+      "originalProblem": "NaOH concentration is missing from a salt-yield calculation; carbonate limited-acid example ignores bicarbonate formation.",
+      "status": "qualification-needed",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Worked narration explicitly assumes the HCl is neutralised, which can justify its salt amount; displayed question should make sufficient NaOH explicit. The quick-check algebra is valid relative to the supplied complete-neutralisation equation, but actual 1:1 proton addition predominantly forms bicarbonate rather than leaving half the carbonate untouched.",
+      "scenes": [
+        "worked-example-2",
+        "quick-check"
+      ],
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/14-5-polyprotic-acids"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m2-l16-stoichiometry-in-solution.json",
+          "workingSha256": "84b926c0c1b01f497a38729b93cdf5daba90e47f7baca2761dd0dcb3978f7be3"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C19",
+      "historicalId": "C19",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m2-l17"
+      ],
+      "originalProblem": "Intermediate rounding is inconsistent with the worked final concentration; retain guard digits.",
+      "status": "still-present",
+      "remedyStatus": "complete-isolated-analytical-inference-proposal-prepared",
+      "assessment": "Final 0.0893 mol/L is compatible with unrounded mean titre 22.3333 mL, but not the displayed equality 0.00223/0.0250. Mark intermediate approximations and carry the mean through; the final result itself is not the error.",
+      "scenes": [
+        "worked-example"
+      ],
+      "sources": [
+        "https://goldbook.iupac.org/terms/view/09042",
+        "https://goldbook.iupac.org/terms/view/T06387",
+        "https://media.iupac.org/publications/analytical_compendium/Cha06sec2.pdf",
+        "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-d1-terminology",
+        "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations",
+        "https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_by_David_Harvey/Analytical_Chemistry_2.1_(Harvey)/09:_Titrimetric_Methods/9.02:_AcidBase_Titrations",
+        "https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh",
+        "https://www.chemguide.co.uk/physical/acidbaseeqia/phcurves.html",
+        "https://www.metrohm.com/content/dam/metrohm/shared/documents/monographs/81085041EN.pdf"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m2-l17-back-calculations.json",
+          "workingSha256": "9914d6f5fb6463ce016733c994218cd2de81b0ef5cf3d59150f74a1492d09a65"
+        }
+      ],
+      "releaseApproved": false,
+      "independentCheck": "independent supplied-value arithmetic",
+      "proposalAssessment": "Complete source-only proposals cover the listed lessons and carry their scientific corrections through all affected fields. C17/C19 partial scene repairs are integrated with their exact text retained. Source claims are prepared, not approved for production.",
+      "proposalScope": "Current catalogue and recorded media remain unchanged. Teacher/science, practical delivery and actual visual/media review remain pending."
+    },
+    {
+      "key": "chemistry:C20",
+      "historicalId": "C20",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m3-cp1"
+      ],
+      "originalProblem": "CaSO₄ is universally labelled aqueous; bubbling is treated as a unique carbonate test.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Decision-tree and walkthrough infer carbonate solely from solid-plus-acid bubbling; acid-metal reactions are a counterexample. CaSO4 is presented as universally aqueous without solubility conditions. Preserve the known-carbonate example while qualifying the generic test and state symbol.",
+      "scenes": [
+        "decision-tree",
+        "walkthrough-3"
+      ],
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m3-cp1-predicting-products.json",
+          "workingSha256": "d1a18ea1b26f38f295a42ab3c1dd0031bb37eeb9e991e94236041e7c3cf645dc"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C21",
+      "historicalId": "C21",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m3-cp3"
+      ],
+      "originalProblem": "Temperature is incorrectly said never to affect equilibrium yield.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Decision-tree, walkthrough-2 and summary incorrectly guarantee equilibrium yield is unchanged by temperature. Distinguish equilibrium shift from rate and an ideal complete-reaction yield. The separate total glow-stick light claim also lacks experimental support.",
+      "scenes": [
+        "decision-tree",
+        "walkthrough-2",
+        "walkthrough-3",
+        "summary"
+      ],
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m3-cp3-rates-synthesis.json",
+          "workingSha256": "521f12d6b4010fff5c7e94f75d95b566d1df4eff7bc1d82c06015f22afd3907c"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C22",
+      "historicalId": "C22",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m3-l2"
+      ],
+      "originalProblem": "Reactant count alone is used to classify synthesis, ignoring displacement and other multi-reactant reactions.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Concept counts reactants alone and classifies any two-reactant process as synthesis. A displacement reaction has two reactants and two products; classify using the complete reaction pattern, not reactant count alone.",
+      "scenes": [
+        "concept"
+      ],
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m3-l2-synthesis-decomposition.json",
+          "workingSha256": "18da5e003750f4dd66d61206c146045ae760a306c09e8cc8430a7960a8a44c97"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C23",
+      "historicalId": "C23",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m3-l5"
+      ],
+      "originalProblem": "Reaction stoichiometry is used to guarantee a patient will not burp; limited-acid carbonate conditions are omitted.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Balanced Mg(OH)2 neutralisation produces no CO2 in that reaction; it cannot guarantee a person will not belch, since swallowed air is another source. Carbonate gas production also needs stated acid conditions. Keep chemical product inference separate from a physiological guarantee.",
+      "scenes": [
+        "concept",
+        "quick-check"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/gas-digestive-tract/symptoms-causes",
+        "https://openstax.org/books/chemistry-2e/pages/14-5-polyprotic-acids"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m3-l5-acid-base-acid-carbonate.json",
+          "workingSha256": "7aaf79da5384becbe3f6176ce68ebded11e537ede72176f5d52ef0883edff462"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C24",
+      "historicalId": "C24",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m3-l12"
+      ],
+      "originalProblem": "Exact rate doubling is inferred without a rate law; final yield is declared unchanged without a limiting-reagent condition.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Worked rate doubling and 40 cm3 in 30 seconds require a measured/stated rate law and short-interval assumptions. Quick-check yield invariance also needs the same limiting reactant and complete-reaction assumptions; raising acid concentration can change available reagent amount.",
+      "scenes": [
+        "worked-example",
+        "quick-check"
+      ],
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/12-3-rate-laws"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m3-l12-factors-affecting-rate.json",
+          "workingSha256": "458f3a59a9c9a68fb09e7a77c5caa0d4286d88af5ec977d552d068450f81fed7"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C25",
+      "historicalId": "C25",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m4-l3"
+      ],
+      "originalProblem": "The 1:1 neutralisation mole calculation is presented as a universal rule for polyprotic acids/bases.",
+      "status": "still-present",
+      "remedyStatus": "superseded-by-existing-complete-proposal",
+      "assessment": "Production copy remains unchanged; the newer complete neutralisation proposal explicitly uses balanced water stoichiometry rather than universal 1:1.",
+      "scenes": [
+        "concept"
+      ],
+      "sources": [
+        "scripts/lib/quantitative-lessons.mjs"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m4-l3-calorimetry-neutralisation.json",
+          "workingSha256": "c31b38ab5d71fb012c42196bf22695428d97cf761566871fbbedfd821d8b2daf"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C26",
+      "historicalId": "C26",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m4-l4"
+      ],
+      "originalProblem": "Dissolution calorimetry swaps the sign of ΔT and omits the model behind using water mass rather than total solution.",
+      "status": "still-present",
+      "remedyStatus": "superseded-by-existing-complete-proposal",
+      "assessment": "Production copy remains unchanged; the complete dissolution proposal consistently uses signed temperature change, stated solution heat capacity and total solution mass.",
+      "scenes": [
+        "worked-example",
+        "quick-check"
+      ],
+      "sources": [
+        "scripts/lib/quantitative-lessons.mjs"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m4-l4-calorimetry-dissolution.json",
+          "workingSha256": "d1ec0c41dd68cc23802f9f76ec6ab59def3886457d194e0c4b5c295fe2e4160c"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C27",
+      "historicalId": "C27",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m4-l7"
+      ],
+      "originalProblem": "Standard-state pressure is given as 1 atm instead of current 100 kPa convention.",
+      "status": "still-present",
+      "remedyStatus": "superseded-by-existing-complete-proposal",
+      "assessment": "Production retains old pressure convention; complete thermochemistry proposal specifies 1 bar separately from tabulation temperature.",
+      "scenes": [
+        "concept"
+      ],
+      "sources": [
+        "scripts/lib/thermochemistry-lessons.mjs"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m4-l7-enthalpy-of-formation.json",
+          "workingSha256": "7e224e9c5f003926de59cc7289ff804558d1f508893a73925e77b23bec178f3a"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C28",
+      "historicalId": "C28",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m4-l10"
+      ],
+      "originalProblem": "The ethyne hydrogenation Hess problem omits H₂ combustion enthalpy; the stated equations alone cannot yield the target.",
+      "status": "still-present",
+      "remedyStatus": "source-checked-scene-proposal-prepared-full-integration-pending",
+      "assessment": "The two combustion equations contain no H2 species, so no linear combination can produce the target's 2H2 reactant. Hydrogen combustion enthalpy with consistent phases is missing; reversing ethane combustion alone cannot yield the stated target.",
+      "scenes": [
+        "quick-check"
+      ],
+      "sources": [],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m4-l10-hess-combustion-consolidation.json",
+          "workingSha256": "24852f478c5e10dcaefbef71ee325a88067e098e81d0f83ae59d849ff7ed8665"
+        }
+      ],
+      "releaseApproved": false,
+      "independentCheck": "independent stoichiometric-vector check"
+    },
+    {
+      "key": "chemistry:C29",
+      "historicalId": "C29",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m4-l13",
+        "chemistry-y11-m4-cp3"
+      ],
+      "originalProblem": "Standard ΔG° is confused with actual-composition spontaneity, and crossover-temperature approximations are unstated.",
+      "status": "still-present",
+      "remedyStatus": "complete-isolated-foundations-chemistry-proposal-prepared",
+      "assessment": "ΔG° is repeatedly used as a guarantee about an unspecified actual mixture. Use ΔG = ΔG° + RT ln Q and state the composition/standard-state scope. ΔH°/ΔS° crossover estimates also assume their temperature variation can be neglected.",
+      "scenes": [
+        "formula",
+        "worked-example",
+        "misconception",
+        "quick-check",
+        "walkthrough-3",
+        "summary"
+      ],
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/16-4-free-energy",
+        "https://goldbook.iupac.org/terms/view/S05915",
+        "https://www.old.goldbook.iupac.org/html/C/C01023.html",
+        "https://media.iupac.org/publications/pac/1994/pdf/6603x0533.pdf"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m4-l13-gibbs-free-energy.json",
+          "workingSha256": "afdbaaa865567fe909a15d82e3f2ba05db5f4b781d384e5fd3eb3de68bdb8b08"
+        },
+        {
+          "file": "src/data/chemistry-y11-m4-cp3-entropy-gibbs.json",
+          "workingSha256": "5bf741b73f621ba00e49f280d6fe6e32de507357b5f4844ac62d1e8949007d8e"
+        }
+      ],
+      "releaseApproved": false,
+      "sceneReferenceCorrections": [
+        {
+          "previousAlias": "concept",
+          "currentScene": "formula",
+          "reason": "Previous semantic-review label did not exist in current source; reconciled against actual scene content."
+        }
+      ],
+      "proposalFiles": [
+        "scripts/lib/foundations-chemistry-lessons.mjs",
+        "scripts/data/foundations-chemistry-copy.json",
+        "scripts/data/foundations-chemistry-evidence.json"
+      ],
+      "proposalScope": "Complete unvoiced lesson package prepared. Current recorded-source status is unchanged; candidate needs teacher/source and actual visual/audio approval."
+    },
+    {
+      "key": "chemistry:C30",
+      "historicalId": "C30",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m5-l4"
+      ],
+      "originalProblem": "An unstated K value is used to guarantee NH₃ outnumbers every reactant, without composition or temperature conditions.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Large K does not make ammonia exceed every reactant for arbitrary totals. Example concentrations N2=1e-8, H2=1 and NH3=sqrt(0.006) satisfy the concentration-form ratio 6e5 while NH3 is below H2. State reaction convention, temperature and initial inventory.",
+      "scenes": [
+        "worked-example"
+      ],
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m5-l4-equilibrium-analogies-misconceptions.json",
+          "workingSha256": "f89da1dd003bf165f80c4b168a3d9899c2309e6b668156a6316b01caa08e7122"
+        }
+      ],
+      "releaseApproved": false,
+      "independentCheck": "independent equilibrium-ratio counterexample"
+    },
+    {
+      "key": "chemistry:C31",
+      "historicalId": "C31",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m5-l7"
+      ],
+      "originalProblem": "The catalyst is called dead below a fixed temperature; a K value has no pressure/concentration convention stated.",
+      "status": "qualification-needed",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Industrial temperature compromise is appropriate, but a hard catalyst-dead-below-300-degree rule and unspecified K convention overreach. Low-temperature iron-based catalysts exist under different conditions; that does not prove the standard commercial catalyst is efficient there. Use a practical operating window, not a universal mechanism cutoff.",
+      "scenes": [
+        "concept-tradeoff",
+        "worked-example-2",
+        "quick-check"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/33318640/",
+        "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m5-l7-industrial-applications-equilibrium.json",
+          "workingSha256": "f9ef48bdc77a792c389c81764a0b43174529a0f6653e92d9729536517d16dc40"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C32",
+      "historicalId": "C32",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m5-l15"
+      ],
+      "originalProblem": "Leaching is said never to stop; a single cycad procedure is generalised without public attribution.",
+      "status": "qualification-needed",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Running water can sustain a concentration gradient while extractable material remains; it does not establish unlimited removal or a validated food-safety procedure. The named cultural/toxin claims require a precise community source and species/process scope. This pass does not certify the cultural-method correspondence.",
+      "scenes": [
+        "quick-check"
+      ],
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/11-1-the-dissolution-process"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m5-l15-dissolution-atsi.json",
+          "workingSha256": "0b09e741f0a66df18feb6912f58b8e55c112895b810df24e85053668d7682267"
+        }
+      ],
+      "releaseApproved": false,
+      "independentCheck": "finite-solute mass balance; cultural attribution remains unresolved"
+    },
+    {
+      "key": "chemistry:C33",
+      "historicalId": "C33",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m6-l13"
+      ],
+      "originalProblem": "Blood-buffer pKa is assigned to H₂CO₃ alone; acidaemia is conflated with acidosis; low ratio is assumed to mean raised CO₂.",
+      "status": "still-present",
+      "remedyStatus": "complete-isolated-water-health-proposal-prepared",
+      "assessment": "pKa about 6.1 is apparent for the physiological CO2/bicarbonate system, not intact H2CO3 alone. Low pH describes acidemia; processes are acidoses. A lower bicarbonate/CO2 ratio can reflect falling numerator, not necessarily rising CO2. Distinguish those variables and avoid clinical inference from pH alone.",
+      "scenes": [
+        "concept-blood",
+        "quick-check",
+        "summary"
+      ],
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5747581/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4725444/",
+        "https://www.merckmanuals.com/professional/nephrology/acid-base-regulation-and-disorders/acid-base-disorders?autoredirectid=37399&media=print.html",
+        "https://pubmed.ncbi.nlm.nih.gov/26862781/",
+        "https://assets.cureus.com/uploads/case_report/pdf/3332/1493841937-20170503-652-1b0miux.pdf",
+        "https://www.merckmanuals.com/professional/nephrology/acid-base-regulation-and-disorders/acid-base-disorders",
+        "https://openstax.org/books/chemistry-2e/pages/14-6-buffers"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m6-l13-buffers.json",
+          "workingSha256": "51e64bc2c8dc71e3aee0fe0a3c0df119e9ef1d3919cfb859c3bd749d1751cf57"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalScope": "Complete source-only drafts repair the named residual across narration, displayed copy and associated diagram opt-ins. Catalogue unchanged; teacher/science and actual visual/media review pending."
+    },
+    {
+      "key": "chemistry:C34",
+      "historicalId": "C34",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m6-l15"
+      ],
+      "originalProblem": "Methyl orange 3.1–4.4 is said to bracket pH 5; exact EP bracketing is presented as the universal criterion.",
+      "status": "still-present",
+      "remedyStatus": "superseded-by-new-complete-indicator-proposal",
+      "assessment": "Production and historical two-scene proposal leave inconsistent indicator rules and a fabricated hook. New isolated nine-scene lesson consistently uses endpoint-volume error; eight narration scenes revised.",
+      "scenes": [
+        "hook",
+        "concept-mechanism",
+        "concept-ep",
+        "definition",
+        "worked-example",
+        "misconception",
+        "quick-check",
+        "summary"
+      ],
+      "sources": [
+        "scripts/lib/indicator-corrections.mjs"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m6-l15-indicators.json",
+          "workingSha256": "bd8f3954b80afc24ee904692083bde33fb716ae322740402c8ddebf06be7bf6c"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C35",
+      "historicalId": "C35",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m6-l16",
+        "chemistry-y12-m6-l17"
+      ],
+      "originalProblem": "Equivalence pH is incorrectly calculated by arithmetically averaging the jump’s pH bounds.",
+      "status": "still-present",
+      "remedyStatus": "complete-isolated-analytical-inference-proposal-prepared",
+      "assessment": "Current L16/L17 narrations still average the pH bounds of a drawn jump. Equivalence follows stoichiometry; pH must come from the actual curve or equilibrium at that volume.",
+      "scenes": [
+        "worked-example",
+        "concept-students",
+        "summary"
+      ],
+      "sources": [
+        "https://media.iupac.org/publications/analytical_compendium/Cha06sec2.pdf",
+        "https://goldbook.iupac.org/terms/view/09042",
+        "https://goldbook.iupac.org/terms/view/T06387",
+        "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-d1-terminology",
+        "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations",
+        "https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_by_David_Harvey/Analytical_Chemistry_2.1_(Harvey)/09:_Titrimetric_Methods/9.02:_AcidBase_Titrations",
+        "https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh",
+        "https://www.chemguide.co.uk/physical/acidbaseeqia/phcurves.html",
+        "https://www.metrohm.com/content/dam/metrohm/shared/documents/monographs/81085041EN.pdf"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m6-l16-titration-curves.json",
+          "workingSha256": "d9b402eecd4da835e231177ec52b4aa6b322891018e219ca63fbac9f0fa16aec"
+        },
+        {
+          "file": "src/data/chemistry-y12-m6-l17-titration-indicator-mastery.json",
+          "workingSha256": "c6800bb97501a3b4bcb25caf68964ee2755837776fe221455ff9f29abbac78ca"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalAssessment": "Complete source-only proposals cover the listed lessons and carry their scientific corrections through all affected fields. C17/C19 partial scene repairs are integrated with their exact text retained. Source claims are prepared, not approved for production.",
+      "proposalScope": "Current catalogue and recorded media remain unchanged. Teacher/science, practical delivery and actual visual/media review remain pending."
+    },
+    {
+      "key": "chemistry:C36",
+      "historicalId": "C36",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m6-l18"
+      ],
+      "originalProblem": "Antacid assay omits other acid-reactive ingredients and dissolved CO₂ interference assumptions.",
+      "status": "still-present",
+      "remedyStatus": "superseded-by-updated-complete-proposal",
+      "assessment": "Newer back-titration proposal already added selectivity. This reconciliation also excludes carbonate-derived CO2 from the base titre without acid loss in explanation, worked example, quick-check and summary. Production remains unchanged.",
+      "scenes": [
+        "concept-back",
+        "worked-example",
+        "quick-check",
+        "summary"
+      ],
+      "sources": [
+        "https://www.webassign.net/sample/ucsclgc1ed1/lab_4/manual.html"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m6-l18-back-conductometric-titration.json",
+          "workingSha256": "8d5da0f8de7b2fa6b2ca65529eb35cbf9050f550f5198123f8e67fea1498488f"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C37",
+      "historicalId": "C37",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l1"
+      ],
+      "originalProblem": "General formulas omit ring/multiple-unsaturation limits; branches and multiple bonds have incorrect equal naming priority.",
+      "status": "mixed-residual",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Multiple-bond priority already appears in formula-naming-rules narration, secondary text, diagram and summary. Repair the contradicting bullet and state the acyclic/single-unsaturation limits of the general formulas; preserve the correct naming explanation.",
+      "scenes": [
+        "formula-naming-rules",
+        "concept-general-formulas",
+        "summary"
+      ],
+      "sources": [
+        "https://goldbook.iupac.org/terms/view/A00224/pdf",
+        "https://iupac.qmul.ac.uk/BlueBook/P3.html"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l1-intro-iupac-nomenclature.json",
+          "workingSha256": "430a1da94c7af41791186eb25bebbd07bea008c55628538d56d385b6839cbb15"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C38",
+      "historicalId": "C38",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l2"
+      ],
+      "originalProblem": "An ester is described as a C–O–O peroxide linkage; methanol classification exception is omitted.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "worked-example.steps calls an ester C–O–O, rather than C(=O)–O. Alcohol-classification content also needs methanol's zero-carbon-neighbour exception.",
+      "scenes": [
+        "worked-example",
+        "concept-alcohols-classification",
+        "summary"
+      ],
+      "sources": [
+        "https://goldbook.iupac.org/terms/view/E02219/pdf"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l2-functional-groups-isomers.json",
+          "workingSha256": "84c30a109d667389a18b290ae985f52eb553e0b0c35961ae0061b39fe962092f"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C39",
+      "historicalId": "C39",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l3"
+      ],
+      "originalProblem": "All C5+ alkanes are said to be liquids, ignoring higher solids and branched-isomer exceptions.",
+      "status": "qualification-needed",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Narration explicitly scopes its state trend to the first eight straight-chain alkanes. Narrow the unlimited C5+ bullet/caption; do not treat the valid scoped straight-chain trend as a claim about every isomer.",
+      "scenes": [
+        "concept-alkane-reference"
+      ],
+      "sources": [
+        "https://webbook.nist.gov/cgi/inchi?ID=C463821&Type=TBOIL"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l3-hydrocarbons-properties.json",
+          "workingSha256": "17ab663c1d62bd9505641af26b8caf296352fdda99f37f9f097d4802cc47c48d"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C40",
+      "historicalId": "C40",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l4"
+      ],
+      "originalProblem": "Alkanes are said to react only by substitution, contradicting combustion and cracking.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "formula-reactivity and summary say alkanes only undergo substitution. Restrict that to the compared halogen reaction; combustion is a counterexample to the universal wording.",
+      "scenes": [
+        "formula-reactivity",
+        "summary"
+      ],
+      "sources": [
+        "https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2126.pdf"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l4-structure-bonding.json",
+          "workingSha256": "49a545b1906e9dbb623c64305f6dc87ea89ce688aad935ed0236de35e6ce6abd"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C41",
+      "historicalId": "C41",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l6",
+        "chemistry-y12-m7-l8"
+      ],
+      "originalProblem": "Industrial supported-phosphoric-acid ethene conditions are conflated with dilute sulfuric-acid laboratory hydration.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Industrial steam/high-pressure ethene hydration is conflated with interchangeable dilute sulfuric/phosphoric acid conditions. Distinguish supported phosphoric-acid industrial conditions from other routes.",
+      "scenes": [
+        "concept-hydration",
+        "worked-example-2"
+      ],
+      "sources": [
+        "https://www.essentialchemicalindustry.org/chemicals/ethanol.html"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l6-alkene-reactions.json",
+          "workingSha256": "d8689b84700307ab90c2cb4a4f39069085c9899d27ae85324dd2ced6c67b3b02"
+        },
+        {
+          "file": "src/data/chemistry-y12-m7-l8-reactions-mastery.json",
+          "workingSha256": "e44039732694b98a0dd550af85b15cf394c1b66106931c5730927d8372c5c31a"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C42",
+      "historicalId": "C42",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l7"
+      ],
+      "originalProblem": "Two arbitrary bromine-water portions are used to identify an alkyne without controlling sample amounts.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Two unspecified bromine-water portions cannot identify an alkyne without substrate amounts and bromine molarity/portion sizes. Supply molar equivalents and candidate limits; preserve valid full-addition stoichiometry.",
+      "scenes": [
+        "quick-check"
+      ],
+      "sources": [],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l7-alkyne-alkane-reactions.json",
+          "workingSha256": "ad3c3965a319fc9cd8e678f8dad612fab875e9af73a516f2c30856c08cdbb7a4"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C43",
+      "historicalId": "C43",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l8"
+      ],
+      "originalProblem": "All alkyne hydration is said to give a ketone; ethyne gives ethanal under the described conditions.",
+      "status": "mixed-residual",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "m7-l8 concept-conditions universally gives a ketone, while adjacent m7-l7 concept-alkyne-hydration, misconception and summary already correctly give ethyne to ethanal. Carry the existing exception into consolidation, rather than rewrite the correct adjacent lesson.",
+      "scenes": [
+        "concept-conditions",
+        "concept-alkyne-hydration",
+        "misconception",
+        "summary"
+      ],
+      "sources": [
+        "https://pubs.acs.org/doi/abs/10.1021/ja01283a037",
+        "https://pubs.rsc.org/en/content/articlehtml/2022/ya/d2ya00272h"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l8-reactions-mastery.json",
+          "workingSha256": "e44039732694b98a0dd550af85b15cf394c1b66106931c5730927d8372c5c31a"
+        },
+        {
+          "file": "src/data/chemistry-y12-m7-l7-alkyne-alkane-reactions.json",
+          "workingSha256": "ad3c3965a319fc9cd8e678f8dad612fab875e9af73a516f2c30856c08cdbb7a4"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C44",
+      "historicalId": "C44",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l9"
+      ],
+      "originalProblem": "Ethanol and ethane are called similar-mass controls; alcohol solubility has an absolute C5 cutoff and H-bonding is assumed identical.",
+      "status": "mixed-residual",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "concept-solubility already denies a sharp cutoff. Preserve that. Ethanol and ethane are incorrectly treated as similar-mass controls; claims of equal hydrogen bonding and dispersion-only isomer differences require qualification.",
+      "scenes": [
+        "concept-solubility",
+        "concept-boiling-vs-alkane",
+        "worked-example",
+        "summary"
+      ],
+      "sources": [
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=C64175&Mask=100D"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l9-alcohol-structure-properties.json",
+          "workingSha256": "94ce17cdc56543da75168b0536e9fdf2a5e89cf0d3aa14fe1001266744a51a2a"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C45",
+      "historicalId": "C45",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l10"
+      ],
+      "originalProblem": "Fermentation has a universal 35°C optimum and an absolute no-ethanol-with-oxygen rule; purified and raw product concentrations are compared.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Fermentation scenes prohibit all ethanol production with oxygen and prescribe a universal 35-degree optimum. Comparison mixes purified hydration product with raw broth. Bound by strain/process conditions and comparable purification stages.",
+      "scenes": [
+        "formula-fermentation",
+        "quick-check",
+        "concept-comparison"
+      ],
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3711898/",
+        "https://www.essentialchemicalindustry.org/chemicals/ethanol.html"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l10-alcohol-production.json",
+          "workingSha256": "c846e97d9510c62adb37c7b879b33c9b46c83960e690fee706ed2d06f049ddd4"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C46",
+      "historicalId": "C46",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l11"
+      ],
+      "originalProblem": "Fuel-bond breaking is implied to release energy; experimental enthalpy bias is described as inevitable.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Bond-energy explanation needs breaking-versus-forming accounting; discrepancy scenes overstate always-low experimental values. Near-neutral biofuel emissions also need pathway-specific lifecycle evidence.",
+      "scenes": [
+        "formula-trend",
+        "hook",
+        "concept-discrepancy",
+        "worked-example-2",
+        "concept-biofuel",
+        "summary"
+      ],
+      "sources": [
+        "https://goldbook.iupac.org/terms/view/B00699",
+        "https://www.epa.gov/renewable-fuel-standard/lifecycle-analysis-greenhouse-gas-emissions-under-renewable-fuel-standard"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l11-combustion-of-alcohols.json",
+          "workingSha256": "5d68c9fa54dde031191338a867e613a68f6d20d118a14d97a75014b6157af8bf"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C47",
+      "historicalId": "C47",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l12"
+      ],
+      "originalProblem": "Butan-1-ol is treated as the only primary C4 alcohol; ketones are declared impossible to oxidise under any conditions.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "2-methylpropan-1-ol also fits the given primary C4-alcohol tests; butan-1-ol is not uniquely identified. Preserve acidified-dichromate scope and remove universal claims that ketones cannot be oxidised.",
+      "scenes": [
+        "worked-example-2",
+        "definition",
+        "formula-oxidation",
+        "worked-example",
+        "summary"
+      ],
+      "sources": [
+        "https://pubchem.ncbi.nlm.nih.gov/compound/Isobutanol",
+        "https://pubs.rsc.org/en/content/articlehtml/2000/p2/b000116n"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l12-alcohol-reactions.json",
+          "workingSha256": "700e8b381eb87aab222d362d38e7f6cb090eeb5e6de9918a3977c021153f6a9d"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C48",
+      "historicalId": "C48",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l13"
+      ],
+      "originalProblem": "C4H8O is assumed to imply only carbonyl compounds and a positive Tollens result uniquely implies butanal.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "C4H8O does not itself establish a carbonyl, and Tollens positivity does not uniquely establish butanal rather than 2-methylpropanal. Add candidates or evidence. Retain normal-conditions qualification in narration and carry it into displayed copy.",
+      "scenes": [
+        "quick-check",
+        "concept-oxidation",
+        "summary"
+      ],
+      "sources": [
+        "https://pubchem.ncbi.nlm.nih.gov/compound/2-methylpropanal",
+        "https://pubs.rsc.org/en/content/articlehtml/2000/p2/b000116n"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l13-aldehydes-and-ketones.json",
+          "workingSha256": "01b22fab63b90af858f5cd53064f2f3c6dd53c4ebd767adef3821a6035ddb472"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C49",
+      "historicalId": "C49",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l14"
+      ],
+      "originalProblem": "Dimer bonds must break simultaneously, ionisation is fixed at 1%, and Mg acid reaction is said not to fizz.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Dimer narrative simultaneously requires breaking both H-bonds and vaporisation as intact pairs. Ionisation is fixed at 1% without concentration. The Mg example produces hydrogen yet denies its bubbling. Correct specific contradictions rather than asserting all gas-phase dimers are impossible.",
+      "scenes": [
+        "concept-structure",
+        "concept-weak-acid",
+        "worked-example"
+      ],
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7248931/"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l14-carboxylic-acids.json",
+          "workingSha256": "a2ba630f45b1ae75a7f75a65ac74a8b6d8d4b06cfa81ced61115107fa2823a37"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C50",
+      "historicalId": "C50",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l16",
+        "chemistry-y12-m7-l18"
+      ],
+      "originalProblem": "Amides cannot ever accept a proton and carboxylic acids are the strongest organic acid class; diagnostic candidate restrictions are missing.",
+      "status": "mixed-residual",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Some narration correctly calls amides effectively neutral in water, while other fields absolutely deny proton acceptance. Preserve aqueous weak basicity and qualify suitable protonating conditions. Acid-class and 1%-ionisation claims also exceed the specified candidates/conditions.",
+      "scenes": [
+        "concept-amide",
+        "quick-check",
+        "summary",
+        "concept-pka",
+        "worked-example"
+      ],
+      "sources": [
+        "https://pubs.acs.org/doi/10.1021/jp012830k"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l16-amines-and-amides.json",
+          "workingSha256": "ab2aab773a78f2a8ea1b68bd372326d355fd8347ebcdb130c1eca2f91ae60cf7"
+        },
+        {
+          "file": "src/data/chemistry-y12-m7-l18-organic-acids-and-bases.json",
+          "workingSha256": "0d5b745d596b2b532069e49e6729e5e4f96c91f3c1df49c374944eea25c90298"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C51",
+      "historicalId": "C51",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l21"
+      ],
+      "originalProblem": "Reverse-polymer method adds extra H and violates carbon valency; PVC/recycling generalisations require correction.",
+      "status": "still-present",
+      "remedyStatus": "complete-isolated-foundations-chemistry-proposal-prepared",
+      "assessment": "Current source still adds extra H when restoring C=C, bans diene residual unsaturation, and asserts universal PVC melting/recycling behaviour. Primary-source continuation confirms these property generalisations also need qualification. The isolated draft repairs visible text/narration and adds narrow default-preserving polymer diagram opt-ins; recorded main remains unchanged.",
+      "scenes": [
+        "definition",
+        "quick-check",
+        "concept-mechanism",
+        "misconception",
+        "summary"
+      ],
+      "sources": [
+        "https://openstax.org/books/organic-chemistry/pages/14-6-diene-polymers-natural-and-synthetic-rubbers",
+        "https://pubs.rsc.org/en/content/articlehtml/2021/ra/d1ra02467a",
+        "https://media.iupac.org/publications/pac/2009/pdf/8106x1131.pdf",
+        "https://pubs.acs.org/doi/10.1021/acsomega.0c00826",
+        "https://www.hitachi-hightech.com/file/global/pdf/products/science/appli/ana/thermal/application_DMS_008e.pdf",
+        "https://www.epa.gov/plastics/advanced-recycling-plastics",
+        "https://www.epa.gov/trash-free-waters/frequently-asked-questions-about-plastic-recycling-and-composting"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l21-addition-polymers.json",
+          "workingSha256": "f4fc04d15f4245ba67917b620a08657a6dc6594d8ed3adb84021c4091a3b5c1d"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalFiles": [
+        "scripts/lib/foundations-chemistry-lessons.mjs",
+        "scripts/data/foundations-chemistry-copy.json",
+        "scripts/data/foundations-chemistry-evidence.json"
+      ],
+      "proposalScope": "Complete unvoiced lesson package prepared. Current recorded-source status is unchanged; candidate needs teacher/source and actual visual/audio approval."
+    },
+    {
+      "key": "chemistry:C52",
+      "historicalId": "C52",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m7-l22",
+        "chemistry-y12-m7-l23"
+      ],
+      "originalProblem": "Polyamides are assumed readily biodegradable, thermosets categorically unrecyclable, and finite-chain byproduct/end-group approximations are unstated.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Hydrolysability is not a guarantee of environmental biodegradation. Nylon text already says slowly, so rapid-decay allegations overstate it. State end-group convention for 2n water, and distinguish inability to remelt thermosets from chemical recycling.",
+      "scenes": [
+        "concept-vs-addition",
+        "summary",
+        "worked-example",
+        "definition",
+        "concept-environment",
+        "misconception"
+      ],
+      "sources": [
+        "https://www.nature.com/articles/s41467-024-45523-5",
+        "https://www.nature.com/articles/s41586-025-09067-y"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m7-l22-condensation-polymers.json",
+          "workingSha256": "de1ed656ffdb1f518fb83dad00b631fb5157fdb106b36af0026611fe3c9da25e"
+        },
+        {
+          "file": "src/data/chemistry-y12-m7-l23-polymers-properties-and-environment.json",
+          "workingSha256": "1155ea53097a818611d67c0f1ee8bfca9071aefae61d368823c893c15b79e365"
+        }
+      ],
+      "releaseApproved": false,
+      "sceneReferenceCorrections": [
+        {
+          "previousAlias": "concept-thermo",
+          "currentScene": "definition",
+          "reason": "Previous semantic-review label did not exist in current source; reconciled against actual scene content."
+        }
+      ]
+    },
+    {
+      "key": "chemistry:C53",
+      "historicalId": "C53",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l1"
+      ],
+      "originalProblem": "Back-titration composition and CO₂ assumptions are missing; reported answers drop justified significant figures.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Titration working drops 0.09840 to 0.0984. Back-titration lacks sole-active-ingredient and CO2-control assumptions. Raw bicarbonate mass is 0.6855216 g; 0.685 is wrong nearest rounding. Specify the subtraction/precision convention before choosing 0.6855 or 0.686.",
+      "scenes": [
+        "worked-example",
+        "worked-example-2"
+      ],
+      "sources": [
+        "https://faculty.uml.edu/david_ryan/84.315/315%20Anal%20Lab%20I%20Manual.pdf"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l1-acid-base-titrations-indicators.json",
+          "workingSha256": "6dec295a475e697f419ca0a4146c474222a28af7c4e8fc32212497dd911204af"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C54",
+      "historicalId": "C54",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l3"
+      ],
+      "originalProblem": "Precipitate colour alone is treated as unique identification without interference controls or restricted candidates.",
+      "status": "mixed-residual",
+      "remedyStatus": "complete-isolated-analytical-inference-proposal-prepared",
+      "assessment": "Concept warns that one test rarely proves identity; keep it. Worked-example/quick-check still uniquely name ions without candidate/interference controls. White hydroxide insoluble in excess is not unique to Mg2+.",
+      "scenes": [
+        "concept",
+        "worked-example",
+        "quick-check"
+      ],
+      "sources": [
+        "https://edu.rsc.org/experiments/testing-salts-for-anions-and-cations/464.article",
+        "https://edu.rsc.org/practical/qualitative-tests-for-anions-and-cations-practical-videos-16-18-students/4012298.article",
+        "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/test-chloride-ions-iron-treatment-silver-nitrate.html",
+        "https://www.cambridgeinternational.org/Images/671421-june-2024-question-paper-61.pdf",
+        "https://edu.rsc.org/experiments/what-are-the-dissolved-solids-in-seawater/1785.article",
+        "https://edu.rsc.org/resources/flame-tests-using-metal-salts/1875.article",
+        "https://edu.rsc.org/download?ac=14937",
+        "https://blink.ucsd.edu/safety/research-lab/chemical/general/index.html"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l3-precipitation-qualitative-analysis.json",
+          "workingSha256": "ed93f94f9be06b5d75a7a8f6aa05acef2569502976a4dd0b0795e08ac8ff6e5a"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalAssessment": "Complete source-only proposals cover the listed lessons and carry their scientific corrections through all affected fields. C17/C19 partial scene repairs are integrated with their exact text retained. Source claims are prepared, not approved for production.",
+      "proposalScope": "Current catalogue and recorded media remain unchanged. Teacher/science, practical delivery and actual visual/media review remain pending."
+    },
+    {
+      "key": "chemistry:C55",
+      "historicalId": "C55",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l4"
+      ],
+      "originalProblem": "UV-visible spectroscopy is restricted to visibly coloured species; conventional AAS limits are generalised to all instruments.",
+      "status": "qualification-needed",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Visible-absorption discussion is correct within its scope; absence of a UV example is not proof of denying all UV absorption. Add scope for colourless UV absorbers. Narration says AAS usually measures one element, but summary loses usually; instrument capability depends on configuration.",
+      "scenes": [
+        "hook",
+        "concept",
+        "concept-compare",
+        "summary"
+      ],
+      "sources": [
+        "https://www.agilent.com/en/product/atomic-spectroscopy/atomic-absorption/atomic-absorption-hollow-cathode-lamps/multi-element-hollow-cathode-lamps",
+        "https://www.shimadzu.com/an/apl/13713/index.html"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l4-spectroscopic-analysis-uv-vis-aas.json",
+          "workingSha256": "e2990263d4840a54b3e1ee7aa83a00e9e07877a6ff25a6c99f45c326eb5dc9de"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C56",
+      "historicalId": "C56",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l6"
+      ],
+      "originalProblem": "Total coliforms are equated with a specific faecal-contamination indicator.",
+      "status": "qualification-needed",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Definition says microbial risk and quiz says possible faecal contamination, not proof. Clarify whether the count means total coliforms or E. coli and retain system-specific interpretation; the historical equating allegation is stronger than the wording.",
+      "scenes": [
+        "definition",
+        "quick-check"
+      ],
+      "sources": [
+        "https://guidelines.nhmrc.gov.au/australian-drinking-water-guidelines/part-5/microorganisms/microbial-indicators/total-coliforms"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l6-water-quality-parameters-standards.json",
+          "workingSha256": "7f4c85b40676e22796b2334d7f1fdebf2e2197bd294aa9b3a83c43ac74894e53"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C57",
+      "historicalId": "C57",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l7"
+      ],
+      "originalProblem": "Unreferenced BOD bands are presented as universal pollution standards; the simple formula lacks assay assumptions.",
+      "status": "still-present",
+      "remedyStatus": "complete-isolated-water-health-proposal-prepared",
+      "assessment": "BOD categories below 2, 2–8 and above 8 are unsourced as universal standards. The 7.2-minus-3.6 calculation is valid for an undiluted model; specify dilution/seed conditions and avoid direct ecological inference from this assay alone.",
+      "scenes": [
+        "concept-bod",
+        "quick-check",
+        "summary"
+      ],
+      "sources": [
+        "https://semspub.epa.gov/work/03/137790.pdf",
+        "https://www.nemi.gov/methods/method_pdf/5253/",
+        "https://dnr.wisconsin.gov/topic/labCert/BODMethod.html",
+        "https://dnr.wisconsin.gov/topic/labCert/BODSeeding.html",
+        "https://dnr.wisconsin.gov/topic/labCert/BODQC.html",
+        "https://dnr.wisconsin.gov/topic/labCert/BODNitrification.html",
+        "https://www.waterquality.gov.au/anz-guidelines/guideline-values",
+        "https://www.epa.gov/caddis/dissolved-oxygen"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l7-monitoring-dissolved-oxygen-bod.json",
+          "workingSha256": "5065dbdb2a2680db9e29b7a8d9837cad0807065a4aa1e7d2af1a64811e7d2526"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalScope": "Complete source-only drafts repair the named residual across narration, displayed copy and associated diagram opt-ins. Catalogue unchanged; teacher/science and actual visual/media review pending."
+    },
+    {
+      "key": "chemistry:C58",
+      "historicalId": "C58",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l8"
+      ],
+      "originalProblem": "Arsenic drinking-water guideline is ten times too high and arsenic biomagnification is incorrectly asserted.",
+      "status": "still-present",
+      "remedyStatus": "superseded-by-complete-priority-science-proposal",
+      "assessment": "Current worked example gives an arsenic guideline of 0.10 mg/L. NHMRC states 0.01 mg/L; 0.125/0.01 = 12.5. Biomagnification part needs its own review and is not freshly certified here.",
+      "scenes": [
+        "worked-example"
+      ],
+      "sources": [
+        "https://www.nhmrc.gov.au/sites/default/files/documents/attachments/publications/Australian-drinking-water-guidelines-6-Version%204.pdf"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l8-heavy-metal-contamination-analysis.json",
+          "workingSha256": "ea59cff569e44d26f8272f15451c15de1617e4b19b48bb1266fbf0b3045c7632"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalAssessment": "Complete source-hash-guarded isolated draft prepared. Existing valid fields and recorded catalogue preserved. Full-draft schema/source checks do not establish teacher/specialist, actual visual, audio or release approval. Also qualifies AAS detection limits and removes unsupported universal arsenic biomagnification and invented Minamata measurements."
+    },
+    {
+      "key": "chemistry:C59",
+      "historicalId": "C59",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l9"
+      ],
+      "originalProblem": "Invented observations of blooms/fish deaths are inferred from a three-site concentration table; living algae respiration is omitted.",
+      "status": "still-present",
+      "remedyStatus": "complete-isolated-water-health-proposal-prepared",
+      "assessment": "Worked-example invents blooms, dead fish and real observations from concentration-only data. Use relative concern, not observed mortality. Living-algal respiration also needs inclusion in the oxygen balance.",
+      "scenes": [
+        "worked-example",
+        "concept-chain",
+        "quick-check",
+        "summary"
+      ],
+      "sources": [
+        "https://www.epa.gov/caddis/dissolved-oxygen",
+        "https://www.epa.gov/nutrientpollution/effects-environment",
+        "https://www.epa.gov/sites/default/files/2015-08/documents/method_300-0_rev_2-1_1993.pdf",
+        "https://archive.epa.gov/epa/nutrient-policy-data/n-steps-nutrient-and-response-variable-overviews.html"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l9-nutrient-pollution-eutrophication.json",
+          "workingSha256": "4a5bfa525aca17d873242a62419889f6ac4069bd53d4556de472c30edd4aecac"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalScope": "Complete source-only drafts repair the named residual across narration, displayed copy and associated diagram opt-ins. Catalogue unchanged; teacher/science and actual visual/media review pending."
+    },
+    {
+      "key": "chemistry:C60",
+      "historicalId": "C60",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l10"
+      ],
+      "originalProblem": "Chloramine residual is recommended as sufficient strong disinfection and a universal lower-DBP solution.",
+      "status": "qualification-needed",
+      "remedyStatus": "complete-isolated-water-health-proposal-prepared",
+      "assessment": "The recommendation omits primary-disinfection/contact-time and DBP-specific evaluation. Do not replace it with a categorical ban on chloramine primary disinfection: NHMRC permits suitable concentration-contact time. Chloramination may produce NDMA and other tradeoffs.",
+      "scenes": [
+        "quick-check"
+      ],
+      "sources": [
+        "https://guidelines.nhmrc.gov.au/australian-drinking-water-guidelines/part-5/physical-chemical-characteristics/monochloramine",
+        "https://guidelines.nhmrc.gov.au/australian-drinking-water-guidelines/part-5/physical-chemical-characteristics/n-nitrosodimethylamine-ndma",
+        "https://guidelines.nhmrc.gov.au/australian-drinking-water-guidelines/part-4/disinfection/1.4-chloramines",
+        "https://guidelines.nhmrc.gov.au/australian-drinking-water-guidelines/part-4/disinfection/1.3-disinfection-with-chlorine",
+        "https://guidelines.nhmrc.gov.au/australian-drinking-water-guidelines/part-4/disinfection/1.1-introduction-to-water-treatment",
+        "https://guidelines.nhmrc.gov.au/australian-drinking-water-guidelines/part-4/disinfection/1.6-disinfection-with-ozone"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l10-water-treatment-processes.json",
+          "workingSha256": "32ebf7953390095063039d405a12b3a5e8af3125d2c3882655bf424df0715074"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalScope": "Complete source-only drafts repair the named residual across narration, displayed copy and associated diagram opt-ins. Catalogue unchanged; teacher/science and actual visual/media review pending."
+    },
+    {
+      "key": "chemistry:C61",
+      "historicalId": "C61",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l11"
+      ],
+      "originalProblem": "Carboxyl retention is treated as proof of analgesia and ester formation as proof of improved stomach safety.",
+      "status": "still-present",
+      "remedyStatus": "superseded-by-complete-medicine-enrichment-proposal",
+      "assessment": "Aspirin scenes treat retained COOH as sufficient analgesic proof and its acetyl ester as merely an irritation fix. Acetylating action matters, and structural inspection alone cannot establish safety. Ibuprofen is also overidentified from general functional groups.",
+      "scenes": [
+        "hook",
+        "concept-pharmacophore",
+        "worked-example"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/810797/",
+        "https://www.fda.gov/drugs/safe-use-aspirin/aspirin-questions-and-answers"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l11-drug-classification-functional-groups.json",
+          "workingSha256": "79bea4a37ac1beaeda455923fd5c7a64f1b2f0240331271f54e6c10e2649d3b8"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalAssessment": "Complete hash-guarded unvoiced lesson covers all ten narrated scenes, including residual definitions, quizzes, summaries and opt-in diagram labels. Current recorded catalogue remains unchanged and held. No teacher/specialist, physical audio or actual visual QA approval.",
+      "proposalSources": [
+        "https://goldbook.iupac.org/terms/view/11485",
+        "https://pubmed.ncbi.nlm.nih.gov/810797/",
+        "https://pubmed.ncbi.nlm.nih.gov/3733281/",
+        "https://pubmed.ncbi.nlm.nih.gov/11228592/",
+        "https://pubmed.ncbi.nlm.nih.gov/1888645/"
+      ]
+    },
+    {
+      "key": "chemistry:C62",
+      "historicalId": "C62",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l12"
+      ],
+      "originalProblem": "Drug pKa interpretations omit acid/base identity and confuse solubility with guaranteed absorption.",
+      "status": "mixed-residual",
+      "remedyStatus": "superseded-by-complete-medicine-enrichment-proposal",
+      "assessment": "Lesson largely scopes weak acids, so the audit should not allege total absence of acid/base identity. Hook still overpredicts absorption and ulcer protection from pKa. Supplied conditions give 99.01% unionised at pH1.5 and 99.90% ionised at pH6.5, not its 99.7% figures. Worked-example's 0.01:1 ratio is correct.",
+      "scenes": [
+        "hook",
+        "worked-example"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/8937281/",
+        "https://pubmed.ncbi.nlm.nih.gov/7094976/"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l12-acid-base-properties-drug-molecules.json",
+          "workingSha256": "40ae029fbdabcb51281d2d9c1253b14fb884386d4febe659a7e8a52820bde900"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalAssessment": "Complete hash-guarded unvoiced lesson covers all ten narrated scenes, including residual definitions, quizzes, summaries and opt-in diagram labels. Current recorded catalogue remains unchanged and held. No teacher/specialist, physical audio or actual visual QA approval.",
+      "proposalSources": [
+        "https://goldbook.iupac.org/terms/view/11485",
+        "https://pubmed.ncbi.nlm.nih.gov/810797/",
+        "https://pubmed.ncbi.nlm.nih.gov/3733281/",
+        "https://pubmed.ncbi.nlm.nih.gov/11228592/",
+        "https://pubmed.ncbi.nlm.nih.gov/1888645/"
+      ]
+    },
+    {
+      "key": "chemistry:C63",
+      "historicalId": "C63",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l13"
+      ],
+      "originalProblem": "Thalidomide good-R/bad-S model omits in-vivo interconversion; zero optical rotation is treated as proof of a racemate.",
+      "status": "mixed-residual",
+      "remedyStatus": "complete-isolated-safety-medicine-proposal-prepared",
+      "assessment": "concept-thalidomide already explains in-vivo interconversion. Preserve it. Hook still calls R safe, and quick-check infers equal enantiomers from zero rotation, despite summary acknowledging achiral compounds can also give zero.",
+      "scenes": [
+        "concept-thalidomide",
+        "hook",
+        "quick-check",
+        "summary"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/9860497/",
+        "https://pubmed.ncbi.nlm.nih.gov/7702998/",
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/development-new-stereoisomeric-drugs",
+        "https://old.goldbook.iupac.org/html/O/O04313.html",
+        "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.260-217.pdf",
+        "https://pubs.acs.org/doi/abs/10.1021/acs.oprd.1c00320",
+        "https://goldbook.iupac.org/terms/view/C01058"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l13-optical-isomerism-chirality.json",
+          "workingSha256": "e7d28c8de10f93888c76bbcbea05d43ff81d40c25176474973a753a672b5a62f"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalScope": "L3, L13 and L14 have complete source-only drafts. Medicine L11-L14 now use explicit enrichment attribution in isolated proposals; no missing spectroscopy coverage is claimed filled. Recorded catalogue unchanged; teacher/science, visual and media review pending."
+    },
+    {
+      "key": "chemistry:C64",
+      "historicalId": "C64",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l14"
+      ],
+      "originalProblem": "Rule-of-Five cut-offs wrongly exclude boundary values; codeine is called wholly inactive; patch suitability is assumed.",
+      "status": "still-present",
+      "remedyStatus": "complete-isolated-safety-medicine-proposal-prepared",
+      "assessment": "Lipinski prose/diagram exclude boundary values rather than only exceeding original thresholds. Codeine is categorically labelled inactive. A patch recommendation lacks skin-permeability, dose and formulation evidence.",
+      "scenes": [
+        "concept-lipinski",
+        "concept-firstpass",
+        "summary",
+        "worked-example"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/11259830/",
+        "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=7ab27392-9c6e-4ec3-85e7-06b43fcab3b1&type=display",
+        "https://www.oecd-ilibrary.org/test-no-117-partition-coefficient-n-octanol-water-hplc-method_5lmqcr2k7slp.pdf",
+        "https://goldbook.iupac.org/terms/view/D01817/plain",
+        "https://www.fda.gov/industry/generic-drug-user-fee-amendments/fys-2013-2017-gdufa-science-and-research-report-transdermal-drug-products",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=242759ef-cb6d-4e3e-9f8d-5e31efa1f289",
+        "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b11026f8-dea0-49ac-8725-0ef7dc27923f",
+        "https://www.fda.gov/media/132674/download"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l14-solubility-polarity-drug-delivery.json",
+          "workingSha256": "7cd09926831313c9e581c4a7aba145ea99cabef5ccb1a93d2a1d8173f8b93d41"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalScope": "L3, L13 and L14 have complete source-only drafts. Medicine L11-L14 now use explicit enrichment attribution in isolated proposals; no missing spectroscopy coverage is claimed filled. Recorded catalogue unchanged; teacher/science, visual and media review pending."
+    },
+    {
+      "key": "chemistry:C65",
+      "historicalId": "C65",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l15"
+      ],
+      "originalProblem": "Atom-economy formula omits stoichiometric coefficients and E-factor alone is claimed to establish overall sustainability.",
+      "status": "mixed-residual",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "General metrics omit stoichiometric weighting, but balanced product-side accounting is valid and aspirin's 75% example is correct. Quick-check uses both atom economy and E-factor, not only E-factor, yet cannot establish overall sustainability without energy/toxicity/lifecycle evidence.",
+      "scenes": [
+        "concept-metrics",
+        "definition",
+        "summary",
+        "quick-check"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/1962206/",
+        "https://pubs.acs.org/doi/10.1021/op049803n"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l15-drug-synthesis-green-chemistry.json",
+          "workingSha256": "9c0b1d85758d3ee24772dd5f0506eee2bf075359d8101597ce6675d0f1dc29ff"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C66",
+      "historicalId": "C66",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l16"
+      ],
+      "originalProblem": "Charring before melting is treated as unique proof of a cross-linked thermoset.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Charring without melting is not unique proof of a cross-linked thermoset. Kevlar is a relevant counterexample to that inference. Supply structural evidence or a bounded candidate set.",
+      "scenes": [
+        "quick-check"
+      ],
+      "sources": [
+        "https://www.dupont.com/content/dam/dupont/amer/us/en/safety/public/documents/en/Kevlar_Technical_Guide_0319.pdf"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l16-polymers-structure-properties.json",
+          "workingSha256": "241c8ac477e6731a0c8e5e1ca68268544f1c18e878cc8f589d33353b6dfee57b"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C67",
+      "historicalId": "C67",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l11",
+        "chemistry-y12-m8-l12",
+        "chemistry-y12-m8-l13",
+        "chemistry-y12-m8-l14"
+      ],
+      "originalProblem": "Medicine-action/delivery metadata invents required 2017 syllabus statements; label enrichment and retain core spectroscopy coverage gap.",
+      "status": "still-present",
+      "remedyStatus": "covered-by-four-isolated-medicine-enrichment-proposals",
+      "assessment": "M8 L11-L14 metadata invents required medicine-action/delivery/enantiomer content under the official 2017 syllabus. Keep useful enrichment but label it accurately; prescribed Module 8 includes proton/carbon-13 NMR, mass spectrometry and IR. Exact official DOCX hash matches the repository fixture pin.",
+      "scenes": [
+        "syllabusDotPoints",
+        "productionRole"
+      ],
+      "sources": [
+        "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+        "https://pubmed.ncbi.nlm.nih.gov/7702998/",
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/development-new-stereoisomeric-drugs",
+        "https://old.goldbook.iupac.org/html/O/O04313.html",
+        "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.260-217.pdf",
+        "https://pubs.acs.org/doi/abs/10.1021/acs.oprd.1c00320",
+        "https://goldbook.iupac.org/terms/view/C01058",
+        "https://pubmed.ncbi.nlm.nih.gov/11259830/",
+        "https://www.oecd-ilibrary.org/test-no-117-partition-coefficient-n-octanol-water-hplc-method_5lmqcr2k7slp.pdf",
+        "https://goldbook.iupac.org/terms/view/D01817/plain",
+        "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=7ab27392-9c6e-4ec3-85e7-06b43fcab3b1&type=display",
+        "https://www.fda.gov/industry/generic-drug-user-fee-amendments/fys-2013-2017-gdufa-science-and-research-report-transdermal-drug-products",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=242759ef-cb6d-4e3e-9f8d-5e31efa1f289",
+        "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b11026f8-dea0-49ac-8725-0ef7dc27923f",
+        "https://www.fda.gov/media/132674/download"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l11-drug-classification-functional-groups.json",
+          "workingSha256": "79bea4a37ac1beaeda455923fd5c7a64f1b2f0240331271f54e6c10e2649d3b8"
+        },
+        {
+          "file": "src/data/chemistry-y12-m8-l12-acid-base-properties-drug-molecules.json",
+          "workingSha256": "40ae029fbdabcb51281d2d9c1253b14fb884386d4febe659a7e8a52820bde900"
+        },
+        {
+          "file": "src/data/chemistry-y12-m8-l13-optical-isomerism-chirality.json",
+          "workingSha256": "e7d28c8de10f93888c76bbcbea05d43ff81d40c25176474973a753a672b5a62f"
+        },
+        {
+          "file": "src/data/chemistry-y12-m8-l14-solubility-polarity-drug-delivery.json",
+          "workingSha256": "7cd09926831313c9e581c4a7aba145ea99cabef5ccb1a93d2a1d8173f8b93d41"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalAssessment": "L11-L14 now have complete isolated enrichment proposals with original disputed mapping retained in review evidence and unsupported named dot points/outcomes removed from drafts. Recorded catalogue attribution is unchanged. Required spectroscopy teaching, teacher/curriculum approval and visual/media readiness remain open.",
+      "proposalScope": "L3, L13 and L14 have complete source-only drafts. Medicine L11-L14 now use explicit enrichment attribution in isolated proposals; no missing spectroscopy coverage is claimed filled. Recorded catalogue unchanged; teacher/science, visual and media review pending."
+    },
+    {
+      "key": "chemistry:C68",
+      "historicalId": "C68",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m1-l2"
+      ],
+      "originalProblem": "A boiling plateau proves purity and CO₂ sublimation is called melting.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Worked-example calls the minus-78-degree CO2 transition both sublimation and melting. Quick-check and summary treat fixed boiling as certain proof of purity. Correct phase-change language and allow azeotropes.",
+      "scenes": [
+        "worked-example",
+        "quick-check",
+        "summary"
+      ],
+      "sources": [
+        "https://nvlpubs.nist.gov/nistpubs/jres/10/jresv10n3p381_A2b.pdf",
+        "https://tsapps.nist.gov/srmext/certificates/archives/1828.pdf"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m1-l2-properties-elements-compounds-mixtures.json",
+          "workingSha256": "6dedf628c34c6d891f098f9fd4ce42634e2177fea2dca4d50c3edb5673e91f16"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C69",
+      "historicalId": "C69",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m5-l2"
+      ],
+      "originalProblem": "ΔG versus ΔG° is conflated; finite favourability is called fundamentally irreversible and glucose entropy is inferred without adequate data.",
+      "status": "still-present",
+      "remedyStatus": "historical-proposal-needs-targeted-integration",
+      "assessment": "Actual ΔG is confused with ΔG° and equilibrium extent. Glucose example asserts more gas despite six gas moles on each side, infers ΔS without adequate data and overextends temperature conclusions. Separate composition, favourability and kinetics.",
+      "scenes": [
+        "concept-spectrum",
+        "worked-example",
+        "worked-example-2",
+        "summary"
+      ],
+      "sources": [
+        "https://goldbook.iupac.org/terms/view/S05915"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m5-l2-reversibility-entropy.json",
+          "workingSha256": "9afec6d66e5e61b0dd9aeccf646b0d75579c561095194b776123bd0991f5e7b3"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C70",
+      "historicalId": "C70",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y11-m2-l3"
+      ],
+      "originalProblem": "Mass spectrometry is incorrectly described as direct elemental percentage-composition analysis.",
+      "status": "still-present",
+      "remedyStatus": "superseded-by-existing-complete-proposal",
+      "assessment": "Current hook presents mass spectrometry as direct elemental-percent analysis. Newer empirical-formula proposal removes that assertion and treats composition as supplied data; no instrument-method certification is claimed.",
+      "scenes": [
+        "hook"
+      ],
+      "sources": [
+        "scripts/lib/quantitative-lessons.mjs"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y11-m2-l3-empirical-molecular-formulas.json",
+          "workingSha256": "f9a9533286af5012c7ae0b520fa1526dd06dbefe49acf73cb07109bf1a5c85af"
+        }
+      ],
+      "releaseApproved": false
+    },
+    {
+      "key": "chemistry:C71",
+      "historicalId": "C71",
+      "historicalFamily": "chemistry",
+      "lessonPrefixes": [
+        "chemistry-y12-m8-l9"
+      ],
+      "originalProblem": "Ion chromatography for nitrate/phosphate is falsely described as explicitly named in the 2017 syllabus.",
+      "status": "still-present",
+      "remedyStatus": "complete-isolated-water-health-proposal-prepared",
+      "assessment": "Ion chromatography is valid enrichment but is not explicitly named in the verified official 2017 syllabus. Remove that attribution in narration/callout, diagram tag and summary.",
+      "scenes": [
+        "concept-measuring",
+        "summary"
+      ],
+      "sources": [
+        "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+        "https://www.epa.gov/caddis/dissolved-oxygen",
+        "https://www.epa.gov/nutrientpollution/effects-environment",
+        "https://www.epa.gov/sites/default/files/2015-08/documents/method_300-0_rev_2-1_1993.pdf",
+        "https://archive.epa.gov/epa/nutrient-policy-data/n-steps-nutrient-and-response-variable-overviews.html"
+      ],
+      "currentSources": [
+        {
+          "file": "src/data/chemistry-y12-m8-l9-nutrient-pollution-eutrophication.json",
+          "workingSha256": "4a5bfa525aca17d873242a62419889f6ac4069bd53d4556de472c30edd4aecac"
+        }
+      ],
+      "releaseApproved": false,
+      "proposalScope": "Complete source-only drafts repair the named residual across narration, displayed copy and associated diagram opt-ins. Catalogue unchanged; teacher/science and actual visual/media review pending."
+    }
+  ],
+  "sourceNotes": [
+    "Primary-source spot checks refreshed for SI mole, compatible DNA ends, original synthetic insulin, nitrate and arsenic guidance, titrimetric definitions and curriculum implementation.",
+    "Historical initial-pass note: other Chemistry groups were then unverified. The completed continuation dispositions below supersede that initial limit.",
+    "BOM Masig and Budj Bim community sources located, but A17 remains unverified for complete claim correspondence and reuse permissions.",
+    "Continuation: 28 more Chemistry groups in C01-C36 semantically reviewed. Audit overstatements are explicitly qualified. Five isolated scene proposals prepared for C10/C17/C19/C28; these do not clear whole lessons.",
+    "Continuation complete: all 71 Chemistry finding groups now have source-level dispositions; each recorded qualification remains explicit. These are not replacement-script approvals. Some specific subclaims still require specialist review. Organic Syntheses returned a non-retryable robots block; that source route was stopped.",
+    "Bounded four-lesson continuation prepares complete Gibbs/checkpoint/polymer/acid-reaction source proposals. It independently checks standard-state/composition arithmetic, diene valence, indicator fading and acid exceptions, while leaving recorded-source statuses and approved audio queues unchanged."
+  ],
+  "audioGenerationQueue": {
+    "ready": [],
+    "generate": [],
+    "regenerate": [],
+    "reason": "No final source/voice/media approval. The separate review ledger is not an executable audio list."
+  },
+  "officialChemistrySyllabus": {
+    "file": ".agents/syllabi/chemistry-stage6-syllabus-word (3).docx",
+    "sha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42",
+    "url": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx"
+  }
+}

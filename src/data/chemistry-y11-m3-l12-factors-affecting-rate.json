@@ -150,19 +150,29 @@
       "id": "worked-example",
       "type": "workedExample",
       "heading": "Identify the rate factor",
-      "question": "Doubling HCl concentration increases Mg reaction rate. Under what extra assumptions would 20 cm³ in 30 s become 40 cm³, and when is final H₂ unchanged?",
+      "question": "A student investigates the reaction between magnesium ribbon and hydrochloric acid. In Experiment 1, they use 1.0 mol/L HCl at 25°C with a 5 cm strip of Mg ribbon. The reaction produces 20 cm³ of hydrogen gas in 30 seconds. In Experiment 2, they double the HCl concentration to 2.0 mol/L while keeping everything else the same. Predict what happens to the rate and calculate the new volume of hydrogen produced in 30 seconds. Explain your reasoning using collision theory.",
       "coachNote": "Target: concentration doubles, so collision frequency doubles and the rate doubles. Twice the rate means twice the H₂ in the same 30 seconds.",
       "steps": [
-        "Qualitatively predict faster initial reaction.",
-        "Exact doubling needs a first-order rate assumption or data.",
-        "40 cm³ follows only if rate doubles throughout the interval and Mg is not exhausted.",
-        "Final H₂ is unchanged only for the same limiting Mg mass and excess acid in both runs."
+        "Known: Experiment 1: 1.0 mol/L HCl, 25°C, 5 cm Mg ribbon, 20 cm³ H₂ in 30 s. Experiment 2: 2.0 mol/L HCl, same T, same Mg.",
+        "Find: Predict rate change and calculate H₂ volume in 30 s for Experiment 2.",
+        "Formula: Rate ∝ concentration. Doubling concentration doubles collision frequency.",
+        "Substitute: Concentration ×2 → collision frequency ×2 → rate ×2.",
+        "Answer: Rate doubles. H₂ volume in 30 s = 20 × 2 = 40 cm³. Total H₂ possible from complete reaction is unchanged.",
+        "Explanation: More HCl particles per unit volume means more collisions with Mg per second. More effective collisions per second means faster rate."
       ],
       "image": "l12WorkedExampleScenarios",
       "durationInFrames": 1560,
-      "caption": "Collision theory gives direction; a rate law gives a numerical factor.",
+      "caption": "Match observations to factors and explain using collision theory.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "coachNote": 180,
+        "stepsStart": 240,
+        "stepInterval": 100
+      },
       "voiceover": {
-        "text": "Doubling hydrochloric acid concentration will usually increase the initial rate with magnesium, but collision theory alone does not establish an exact doubling. A rate law or measured calibration is needed. If the question explicitly assumes the rate is first order in acid over the interval and magnesium is not exhausted, twice the rate would give about forty cubic centimetres in thirty seconds rather than twenty. For the same fixed mass of limiting magnesium and excess acid in both experiments, the final hydrogen amount is unchanged. If acid is limiting, changing its amount can change the final yield."
+        "text": "A student investigates magnesium plus hydrochloric acid. Experiment one: one molar HCl at twenty five degrees, five centimetres magnesium ribbon, twenty cubic centimetres hydrogen in thirty seconds. Experiment two: two molar HCl, same temperature, same magnesium. Predict rate change and calculate hydrogen volume. Known: concentration doubles. Find: predict rate and volume. Formula: rate is proportional to concentration. Doubling concentration doubles collision frequency. Substitute: concentration times two means collision frequency times two, rate times two. Answer: rate doubles. Hydrogen volume in thirty seconds equals twenty times two equals forty cubic centimetres. Total hydrogen possible is unchanged. Explanation: more HCl particles per unit volume means more collisions with magnesium per second, so faster rate.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L12/worked-example.cce3783aacdd.mp3"
       },
       "unitCancel": {
         "left": "mol/L",
@@ -204,14 +214,21 @@
         "Method 2: Increase temperature OR use Mg powder instead of ribbon.",
         "Temperature mechanism: higher T → more molecules exceed Ea → rate ↑.",
         "Surface area mechanism: powder has more exposed Mg → more collision sites → rate ↑.",
-        "Final H₂ is unchanged if the same Mg amount is limiting and acid remains in excess.",
-        "Answer: increase concentration or temperature/surface area. Rate increases. Final H₂ unchanged only with the same limiting Mg and excess acid."
+        "Total H₂: unchanged. These factors affect rate, not total yield.",
+        "Answer: increase concentration or temperature/surface area. Rate increases. Total H₂ unchanged."
       ],
       "image": "l12QuickCheckMagnesium",
-      "durationInFrames": 1775,
+      "durationInFrames": 1440,
       "caption": "Two methods to increase rate, with mechanisms, without changing total yield.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 540,
+        "answerInterval": 100
+      },
       "voiceover": {
-        "text": "Your turn. Magnesium plus hydrochloric acid produces hydrogen gas. Suggest two ways to increase the rate, explain the collision theory mechanism for each, and state whether either one changes the total hydrogen produced. Pause now and work it through. The first method is to increase the HCl concentration, because more acid particles per unit volume means more collisions with the magnesium each second, so the rate goes up. The second method is to raise the temperature or to use magnesium powder, since a higher temperature gives more molecules energy above Ea, while powder exposes far more surface and so more collision sites. With the same fixed limiting amount of magnesium and excess acid in both cases, the final hydrogen amount stays the same; changing a limiting reactant amount can change yield."
+        "text": "Your turn. Magnesium plus hydrochloric acid produces hydrogen gas. Suggest two ways to increase the rate, explain the collision theory mechanism for each, and state whether either one changes the total hydrogen produced. Pause now and work it through. The first method is to increase the HCl concentration, because more acid particles per unit volume means more collisions with the magnesium each second, so the rate goes up. The second method is to raise the temperature or to use magnesium powder, since a higher temperature gives more molecules energy above Ea, while powder exposes far more surface and so more collision sites. In both cases the total hydrogen produced stays the same, because these factors change the rate, not the final yield."
       }
     },
     {

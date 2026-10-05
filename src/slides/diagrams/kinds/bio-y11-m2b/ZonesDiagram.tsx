@@ -5,10 +5,10 @@
 // the optimal range, the tolerance range either side ("copes") and the zones
 // beyond the critical limits ("fails"); every boundary sits at its prop value.
 // Marker pins drop onto the scale at their values on their beats (e.g. 37,
-// a 40 °C fever, 42 °C). Optional `enzyme`: a curve of enzyme activity drawn
-// above the same axis: rising to a peak at the optimum, then falling steeply
-// to zero at the upper limit, where enzymes denature. It is a qualitative
-// shape (labelled as such), anchored to the scene's own values.
+// example temperature markers). Optional `enzyme`: a qualitative activity
+// curve. When `zeroAt` is supplied, the curve falls to zero there. When it is
+// omitted, the post-optimum curve declines without implying a universal
+// zero-activity or denaturation threshold.
 // Hold: the latest marker breathes; the curve's reading bead drifts.
 
 import {useCurrentFrame, useVideoConfig} from 'remotion';
@@ -17,13 +17,17 @@ import {useAccent} from '../../../../styles/theme';
 import {DioramaDefs, STONE, idlePulse} from '../../diorama';
 import {Chip2, Foot, FootLine, GLOSS, GlossDefs, H, PAL, W, alongPoly, fadeAt, mix, popAt} from './shared';
 
+import {validatePriorityScienceDiagram} from '../../priority-science-models.mjs';
+
 export type ZonesProps = {
+	/** Isolated reference-band teaching: do not imply universal clinical cutoffs. */
+	referenceBandOnly?: boolean;
 	scale: {min: number; max: number; step: number; unit: string; label: string};
 	optimal: {from: number; to: number; label: string; at: number};
 	tolerance: {from: number; to: number; label: string; at: number};
 	critical: {label: string; failLabel: string; at: number};
 	markers?: {value: number; label: string; at: number; amber?: boolean}[];
-	enzyme?: {at: number; label: string; optimum: number; zeroAt: number; note?: string; denature?: {label: string; at: number; value: number}};
+	enzyme?: {at: number; label: string; optimum: number; zeroAt?: number; note?: string; denature?: {label: string; at: number; value: number}};
 	footer?: FootLine[];
 	delay?: number;
 };
@@ -31,7 +35,8 @@ export type ZonesProps = {
 const ID = 'b11m2zone';
 const L = 60, R = 700;
 
-export const ZonesDiagram = ({scale, optimal, tolerance, critical, markers = [], enzyme, footer = [], delay = 62}: ZonesProps) => {
+export const ZonesDiagram = ({scale, optimal, tolerance, critical, markers = [], enzyme, footer = [], delay = 62, referenceBandOnly = false}: ZonesProps) => {
+	validatePriorityScienceDiagram({type: 'diorama', kind: 'bio11m2Zones', props: {referenceBandOnly, scale, optimal, tolerance, critical, enzyme}});
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
@@ -50,7 +55,7 @@ export const ZonesDiagram = ({scale, optimal, tolerance, critical, markers = [],
 	const amb = mix('#ffffff', TOK.amber, 0.3);
 	const opt = mix('#ffffff', theme.accent, 0.42);
 
-	// enzyme curve (qualitative): smooth rise to the optimum, steep fall to zero at zeroAt
+	// enzyme curve (qualitative): rise to the optimum; optionally fall to zero at zeroAt
 	const curve = enzyme
 		? Array.from({length: 61}, (_, i) => {
 			const v = scale.min + ((scale.max - scale.min) * i) / 60;
@@ -58,25 +63,31 @@ export const ZonesDiagram = ({scale, optimal, tolerance, critical, markers = [],
 			if (v <= enzyme.optimum) {
 				const u = (v - scale.min) / (enzyme.optimum - scale.min);
 				a = 0.25 + 0.75 * Math.sin((u * Math.PI) / 2) ** 1.5;
-			} else if (v < enzyme.zeroAt) {
-				const u = (v - enzyme.optimum) / (enzyme.zeroAt - enzyme.optimum);
-				a = Math.cos((u * Math.PI) / 2) ** 0.8;
-			} else a = 0;
+			} else if (enzyme.zeroAt !== undefined) {
+				if (v < enzyme.zeroAt) {
+					const u = (v - enzyme.optimum) / (enzyme.zeroAt - enzyme.optimum);
+					a = Math.cos((u * Math.PI) / 2) ** 0.8;
+				} else a = 0;
+			} else {
+				// No asserted cutoff: show a qualitative decline that stays above zero.
+				const u = (v - enzyme.optimum) / Math.max(1e-9, scale.max - enzyme.optimum);
+				a = Math.max(0.3, 1 - 0.7 * u);
+			}
 			return {x: px(v), y: SY - BH - 40 - a * 210};
 		})
 		: [];
 	const eT = enzyme ? Math.max(0, Math.min(1, (frame - enzyme.at) / 80)) : 0;
 
 	return (
-		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${scale.label}: ${optimal.label} ${optimal.from}–${optimal.to} ${scale.unit}`} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={referenceBandOnly ? `${scale.label}: usual reference interval ${optimal.from} to ${optimal.to} ${scale.unit}. No universal safety or survival boundaries are asserted.` : `${scale.label}: ${optimal.label} ${optimal.from}–${optimal.to} ${scale.unit}`} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={ID} />
 			<GlossDefs id={ID} colors={GLOSS} />
 			<rect x={24} y={enzyme ? 20 : 40} width={W - 48} height={enzyme ? SY + 100 - 20 : SY + 60} rx={20} fill={STONE.shadow} transform="translate(6, 10)" />
 			<rect x={24} y={enzyme ? 20 : 40} width={W - 48} height={enzyme ? SY + 100 - 20 : SY + 60} rx={20} fill="#fbfaf7" stroke={STONE.topEdge} strokeWidth={3} />
 
 			{/* bands */}
-			{band(scale.min, tolerance.from, red, cO, 'fl')}
-			{band(tolerance.to, scale.max, red, cO, 'fh')}
+			{!referenceBandOnly && band(scale.min, tolerance.from, red, cO, 'fl')}
+			{!referenceBandOnly && band(tolerance.to, scale.max, red, cO, 'fh')}
 			{band(tolerance.from, optimal.from, amb, tO, 'tl')}
 			{band(optimal.to, tolerance.to, amb, tO, 'th')}
 			{band(optimal.from, optimal.to, opt, oO, 'o')}
@@ -91,7 +102,7 @@ export const ZonesDiagram = ({scale, optimal, tolerance, critical, markers = [],
 			<text x={(px(tolerance.from) + px(optimal.from)) / 2} y={SY - BH / 2 + 6} textAnchor="middle" fill={TOK.amberInk} fontSize={enzyme ? 16 : 18} fontWeight={800} opacity={tO}>{tolerance.label}</text>
 			<text x={(px(scale.min) + px(tolerance.from)) / 2} y={SY - BH / 2 + 6} textAnchor="middle" fill={PAL.stop} fontSize={enzyme ? 16 : 18} fontWeight={800} opacity={cO}>{critical.failLabel}</text>
 			<text x={(px(tolerance.to) + px(scale.max)) / 2} y={SY - BH / 2 + 6} textAnchor="middle" fill={PAL.stop} fontSize={enzyme ? 16 : 18} fontWeight={800} opacity={cO}>{critical.failLabel}</text>
-			{[tolerance.from, tolerance.to].map((v, k) => (
+			{!referenceBandOnly && [tolerance.from, tolerance.to].map((v, k) => (
 				<g key={k} opacity={cO}>
 					<line x1={px(v)} x2={px(v)} y1={SY - BH - 6} y2={SY + 8} stroke={PAL.stop} strokeWidth={3} />
 				</g>

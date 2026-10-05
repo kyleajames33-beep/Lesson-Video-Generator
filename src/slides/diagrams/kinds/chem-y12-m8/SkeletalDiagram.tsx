@@ -28,8 +28,11 @@ import {
 	type MolDef,
 } from './mol-draw';
 import {interpolate} from 'remotion';
+import {validateReviewedMedicineDiagram} from '../../medicine-models.mjs';
 
 export type SkeletalProps = {
+	/** Isolated source-reviewed enrichment only; legacy output is the default. */
+	reviewedMedicine?: boolean;
 	mode?: 'gallery' | 'read' | 'modify' | 'reaction';
 	delay?: number;
 	beats?: number[];
@@ -274,7 +277,7 @@ const Read = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) => {
 };
 
 // ── modify ──────────────────────────────────────────────────────────────────
-const Modify = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) => {
+const Modify = ({frame, fps, b, reviewedMedicine}: {frame: number; fps: number; b: number[]; reviewedMedicine: boolean}) => {
 	const theme = useAccent();
 	const ID = 'c12m8skel-mod';
 	const [tStart, tKeep, tPharm, tOH, tConv, tResult, tIrr, tBoth] = b;
@@ -304,7 +307,7 @@ const Modify = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) => {
 			<g opacity={ramp(frame, tStart - 40, 14)}>
 				<text x={W / 2} y={34} textAnchor="middle" fill={TOK.ink} fontSize={27} fontWeight={800} opacity={1 - titleSwap}>Salicylic acid</text>
 				<text x={W / 2} y={34} textAnchor="middle" fill={TOK.ink} fontSize={27} fontWeight={800} opacity={titleSwap}>
-					Aspirin <tspan fill={TOK.inkDim} fontSize={20} fontWeight={700}>(Bayer, 1897)</tspan>
+					Aspirin <tspan fill={TOK.inkDim} fontSize={20} fontWeight={700}>{reviewedMedicine ? '(acetylsalicylic acid)' : '(Bayer, 1897)'}</tspan>
 				</text>
 			</g>
 			<g opacity={Math.min(1, enter * 1.3)}>
@@ -326,15 +329,15 @@ const Modify = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) => {
 			<g opacity={pharm}>
 				<line x1={COOH.X - S * 1.55} y1={COOH.Y - S * 0.35} x2={196} y2={COOH.Y - S * 0.35} stroke={TOK.amber} strokeWidth={2.5} />
 				<text x={104} y={COOH.Y - S * 0.35 - 42} textAnchor="middle" fill={TOK.amberInk} fontSize={21} fontWeight={800}>–COOH kept</text>
-				<text x={104} y={COOH.Y - S * 0.35 - 16} textAnchor="middle" fill={TOK.amberInk} fontSize={16} fontWeight={800} letterSpacing="0.06em">PHARMACOPHORE</text>
-				<text x={104} y={COOH.Y - S * 0.35 + 20} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>inhibits COX</text>
-				<text x={104} y={COOH.Y - S * 0.35 + 40} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>enzymes</text>
-				<text x={104} y={COOH.Y - S * 0.35 + 62} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>→ pain relief</text>
+				<text x={104} y={COOH.Y - S * 0.35 - 16} textAnchor="middle" fill={TOK.amberInk} fontSize={16} fontWeight={800} letterSpacing="0.06em">{reviewedMedicine ? 'RETAINED GROUP' : 'PHARMACOPHORE'}</text>
+				<text x={104} y={COOH.Y - S * 0.35 + 20} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>{reviewedMedicine ? 'acid-base role' : 'inhibits COX'}</text>
+				<text x={104} y={COOH.Y - S * 0.35 + 40} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>{reviewedMedicine ? 'not sufficient' : 'enzymes'}</text>
+				<text x={104} y={COOH.Y - S * 0.35 + 62} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>{reviewedMedicine ? 'to prove efficacy' : '→ pain relief'}</text>
 			</g>
 			{/* modified-site tag, right */}
 			<g opacity={ohTag}>
 				<text x={668} y={112} textAnchor="middle" fill={theme.accent} fontSize={21} fontWeight={800} opacity={1 - conv}>–OH</text>
-				<text x={668} y={136} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700} opacity={1 - conv}>irritating group</text>
+				<text x={668} y={136} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700} opacity={1 - conv}>{reviewedMedicine ? 'phenolic group' : 'irritating group'}</text>
 				<text x={668} y={112} textAnchor="middle" fill={theme.accent} fontSize={21} fontWeight={800} opacity={conv}>–OCOCH₃</text>
 				<text x={668} y={136} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700} opacity={conv}>now an ester</text>
 				<line x1={668} y1={148} x2={O9.X + 26} y2={O9.Y + 30} stroke={theme.accent} strokeWidth={2.5} opacity={1 - conv} />
@@ -342,8 +345,8 @@ const Modify = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) => {
 			</g>
 			{/* outcomes */}
 			{[
-				{t: tResult, ok: true, text: 'pain relief kept'},
-				{t: tIrr, ok: true, text: 'stomach irritation ↓'},
+				{t: tResult, ok: true, text: reviewedMedicine ? 'acetyl group matters' : 'pain relief kept'},
+				{t: tIrr, ok: true, text: reviewedMedicine ? 'safety needs evidence' : 'stomach irritation ↓'},
 			].map((o, i) => {
 				const p = pop(frame, fps, o.t);
 				const cx = i === 0 ? 226 : 520;
@@ -356,7 +359,7 @@ const Modify = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) => {
 				);
 			})}
 			<text x={W / 2} y={518} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700} opacity={ramp(frame, tBoth, 16)}>
-				but reshape the pharmacophore and potency or effect can shift
+				{reviewedMedicine ? 'Structure alone cannot establish effectiveness or safety' : 'but reshape the pharmacophore and potency or effect can shift'}
 			</text>
 		</g>
 	);
@@ -455,20 +458,21 @@ const Reaction = ({frame, fps, b}: {frame: number; fps: number; b: number[]}) =>
 	);
 };
 
-export const SkeletalDiagram = ({mode = 'gallery', delay = 62, beats}: SkeletalProps) => {
+export const SkeletalDiagram = ({mode = 'gallery', delay = 62, beats, reviewedMedicine = false}: SkeletalProps) => {
+	validateReviewedMedicineDiagram({type: 'diorama', kind: 'chem12m8Skeletal', props: {mode, reviewedMedicine}});
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const b = beatsFor(mode, beats);
 	const label =
 		mode === 'gallery' ? 'Aspirin, ibuprofen and paracetamol are all analgesics yet have different structures'
 		: mode === 'read' ? 'Functional groups of aspirin, paracetamol and ibuprofen highlighted in turn'
-		: mode === 'modify' ? 'Salicylic acid becomes aspirin: the -COOH pharmacophore is kept and only the -OH becomes an -OCOCH3 ester'
+		: mode === 'modify' ? (reviewedMedicine ? 'Salicylic acid becomes aspirin: the carboxylic acid is retained and the phenolic OH is acetylated. This does not establish equal efficacy or improved clinical safety.' : 'Salicylic acid becomes aspirin: the -COOH pharmacophore is kept and only the -OH becomes an -OCOCH3 ester')
 		: 'Salicylic acid plus acetic anhydride gives aspirin plus ethanoic acid with an acid catalyst and gentle heat';
 	return (
 		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={label} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			{mode === 'gallery' && <Gallery frame={frame} fps={fps} b={b} />}
 			{mode === 'read' && <Read frame={frame} fps={fps} b={b} />}
-			{mode === 'modify' && <Modify frame={frame} fps={fps} b={b} />}
+			{mode === 'modify' && <Modify frame={frame} fps={fps} b={b} reviewedMedicine={reviewedMedicine} />}
 			{mode === 'reaction' && <Reaction frame={frame} fps={fps} b={b} />}
 		</svg>
 	);

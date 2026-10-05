@@ -1,0 +1,258 @@
+{
+  "title": "Molar Mass",
+  "subtitle": "Connecting moles to mass",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 2",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "explore the concept of the mole and relate this to Avogadro's constant to describe, calculate and manipulate numbers of particles, chemical amounts and masses",
+    "conduct a practical investigation to demonstrate and calculate the molar mass (mass of one mole) of an element and a compound"
+  ],
+  "lessonIntent": "Students can calculate molar mass and use it to move between grams and moles.",
+  "examSkill": "Identify molar mass as the bridge between mass and moles in quantitative chemistry questions.",
+  "productionRole": "prototype",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same particle count. Which sample is heavier?",
+      "body": "One mole of carbon atoms. One mole of oxygen atoms.",
+      "callout": "Equal amounts do not mean equal masses.",
+      "image": "l2HookBalance",
+      "durationInFrames": 840,
+      "caption": "The mole counts invisible particles. Molar mass tells us how much they weigh.",
+      "voiceover": {
+        "text": "One mole of carbon atoms. One mole of oxygen atoms. Same number of atoms. So, would they weigh the same? It’s a reasonable guess. But oxygen atoms are heavier. Equal amounts can have different masses. Molar mass explains the difference, and lets us turn a mass on a balance into an amount in moles."
+      }
+    },
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 90,
+      "caption": "Molar Mass, Year 11 Chemistry, Module 2",
+      "voiceover": {
+        "text": "Molar mass."
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Molar mass tells us the mass per mole",
+      "body": "Molar mass is mass divided by amount of substance, in grams per mole.",
+      "bullets": [
+        {
+          "text": "M = m ÷ n, in g mol⁻¹.",
+          "at": 2
+        },
+        {
+          "text": "For carbon atoms: M = 12.01 g mol⁻¹.",
+          "at": 8
+        },
+        {
+          "text": "Use the complete formula for molecules and compounds.",
+          "at": 18
+        }
+      ],
+      "callout": "One mole has a predictable mass.",
+      "durationInFrames": 1080,
+      "caption": "Use periodic-table values for atoms. Compounds and molecules require their full formula.",
+      "confidenceCheck": "Determine molar mass from atomic masses and the specified chemical entities.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2MolarScale",
+        "delay": 0,
+        "props": {
+          "header": {
+            "text": "One mole of atoms. Different masses.",
+            "beat": 97
+          },
+          "elements": [
+            {
+              "sym": "H",
+              "name": "hydrogen",
+              "ar": "1.008",
+              "grams": "1.008 g",
+              "beat": 30
+            },
+            {
+              "sym": "C",
+              "name": "carbon",
+              "ar": "12.01",
+              "grams": "12.01 g",
+              "beat": 150
+            },
+            {
+              "sym": "O",
+              "name": "oxygen",
+              "ar": "16.00",
+              "grams": "16.00 g",
+              "beat": 270
+            }
+          ]
+        }
+      },
+      "voiceover": {
+        "text": "Think of molar mass as the mass per mole. For carbon atoms, the periodic-table value gives twelve point zero one grams per mole. For oxygen atoms, sixteen point zero zero. That explains our heavier sample. For these school calculations, the relative atomic mass gives the numerical molar mass of the atoms. But check what you’re counting. Oxygen gas is O two: two atoms in each molecule. Its molar mass is twice the atomic value."
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "More sample. Same molar mass.",
+      "body": "g mol⁻¹ means grams per mole.",
+      "secondary": "m is sample mass. M is mass per mole.",
+      "callout": "Same substance: M stays fixed when sample size changes.",
+      "image": "l2DefinitionUnitsCube",
+      "durationInFrames": 720,
+      "caption": "Molar mass is measured in grams per mole, or g mol to the negative one.",
+      "confidenceCheck": "Identify g mol⁻¹ as the unit signalling 'mass per one mole'.",
+      "voiceover": {
+        "text": "Here’s a useful distinction. Lowercase m is your sample’s mass. Capital M is its mass per mole. Double a sample of the same substance: twice the mass, twice the amount. The molar mass stays the same. And that unit, grams per mole, tells you why."
+      }
+    },
+    {
+      "id": "lab-footage",
+      "type": "labFootage",
+      "heading": "The balance gives grams. We want moles.",
+      "body": "Tare the container, measure sample mass in grams, then convert using molar mass.",
+      "image": "l2LabFootageBalance",
+      "annotations": [
+        {
+          "text": "balance reads grams",
+          "position": "top-right"
+        },
+        {
+          "text": "molar mass converts",
+          "position": "bottom-left"
+        }
+      ],
+      "durationInFrames": 690,
+      "caption": "A tared balance measures sample mass. This is a schematic, not experimental data.",
+      "voiceover": {
+        "text": "A balance gives us grams, not moles. Tare the empty container, add the sample, and read its mass. Now we need a bridge from that mass to an amount. If we know the substance and its molar mass, we can make the conversion."
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "What are you trying to find?",
+      "body": "m = n × M",
+      "secondary": "m is mass in grams. n is amount in moles. M is molar mass in grams per mole.",
+      "callout": "Mass: multiply. Amount: divide.",
+      "image": "l2FormulaEquation",
+      "unitCancel": {
+        "left": "mol",
+        "right": "g mol⁻¹",
+        "result": "mol cancels → answer is in grams"
+      },
+      "durationInFrames": 930,
+      "caption": "Use m equals n times M to calculate mass from moles and molar mass.",
+      "confidenceCheck": "Apply m = n × M to convert between mass and amount of substance.",
+      "voiceover": {
+        "text": "Start with what you want to find. Mass? Multiply the amount in moles, lowercase n, by the molar mass, capital M. That gives m equals n times capital M. Watch the units: moles times grams per mole leaves grams. Finding the amount instead? Divide mass by molar mass. The units help check the setup. They don’t check your atom counts for you."
+      }
+    },
+    {
+      "id": "mass-example",
+      "type": "workedExample",
+      "heading": "Two moles of carbon: multiply or divide?",
+      "question": "What is the mass of 2.00 mol of carbon atoms?",
+      "coachNote": "Find mass, so multiply n by M. Keep guard digits until the final answer.",
+      "steps": [
+        "m = n × M",
+        "m = 2.00 × 12.01 = 24.02 g",
+        "m = 24.0 g (3 significant figures)"
+      ],
+      "caption": "2.00 mol of carbon atoms has mass 24.0 g, using M = 12.01 g mol⁻¹.",
+      "durationInFrames": 990,
+      "voiceover": {
+        "text": "Let’s try it. What is the mass of two point zero zero moles of carbon atoms? We want grams, so multiply. Two point zero zero times twelve point zero one gives twenty-four point zero two grams. Keep those digits for now. The amount has three significant figures, so our final answer is twenty-four point zero grams. That last zero matters: it records the precision of the answer."
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "What does the outside 2 multiply?",
+      "question": "Calculate M for Ca(H₂PO₄)₂ using Ca 40.08, H 1.008, P 30.97 and O 15.999.",
+      "coachNote": "Count first: Ca 1, H 4, P 2, O 8. Then calculate.",
+      "steps": [
+        "Ca: 1 × 40.08 = 40.08",
+        "H₄: 4 × 1.008 = 4.032; P₂: 2 × 30.97 = 61.94",
+        "O₈: 8 × 15.999 = 127.992",
+        "M = 234.044 → 234.04 g mol⁻¹"
+      ],
+      "durationInFrames": 1740,
+      "caption": "Ca(H₂PO₄)₂ has molar mass 234.04 g mol⁻¹ with the supplied values.",
+      "confidenceCheck": "Calculate the molar mass of a compound, including those with brackets.",
+      "voiceover": {
+        "text": "Now for the bracket trap. Calcium dihydrogen phosphate looks busy, but we can unpack it. The two outside the bracket doubles everything inside. Calcium sits outside, so it stays at one. Before you touch the calculator, count the oxygen atoms. Eight oxygen atoms. Four inside each group, with two groups. The full count is one calcium, four hydrogens, two phosphorus atoms and eight oxygens. Multiply each count by its supplied atomic mass, then add the contributions shown. Keep the extra digits until the end. The total is two hundred thirty-four point zero four four grams per mole. Rounded to two decimal places: two hundred thirty-four point zero four grams per mole. Count first. Calculate second."
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Two ways to catch a wrong setup",
+      "body": "Changing sample size does not change M for the same composition.",
+      "secondary": "The outside 2 multiplies H, P and O, but not Ca.",
+      "callout": "Identify the quantity, then count atoms before calculating.",
+      "mistakeTag": "Check before substituting",
+      "durationInFrames": 870,
+      "caption": "Do not confuse sample mass with molar mass. Multiply every atom inside brackets.",
+      "confidenceCheck": "Distinguish molar mass (M) from sample mass (m) before substituting.",
+      "voiceover": {
+        "text": "If your answer feels wrong, check two things before you start again. Did you confuse sample mass with molar mass? More sample doesn’t mean a bigger molar mass. And did you apply the outside subscript to every atom inside the bracket? It doubles hydrogen, phosphorus and oxygen, but not calcium. Catch the setup error before repeating the arithmetic."
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Your turn: what must you calculate first?",
+      "question": "How many moles are in 71.0 g of chlorine gas, Cl₂?",
+      "pausePrompt": "Find M(Cl₂), then choose the conversion. Take five seconds or pause longer.",
+      "answerSteps": [
+        "M(Cl₂) = 2 × 35.45 = 70.90 g mol⁻¹",
+        "n = 71.0 ÷ 70.90 = 1.00141… mol",
+        "n = 1.00 mol (3 significant figures)",
+        "g ÷ (g mol⁻¹) = mol"
+      ],
+      "durationInFrames": 1740,
+      "caption": "Find the molar mass of Cl₂ (remember the diatomic), then divide.",
+      "confidenceCheck": "Rearrange m = n × M to solve for any of the three quantities.",
+      "voiceover": {
+        "text": "Your turn. You have seventy-one point zero grams of chlorine gas, Cl two. How many moles is that? Use thirty-five point four five for chlorine. First decide what the complete formula tells you. Take five seconds to start, or pause for longer. Chlorine gas has two atoms per molecule, so double the atomic value. Its molar mass is seventy point nine zero grams per mole. We want moles, so divide mass by molar mass. The calculation gives about one point zero zero one four one moles. To three significant figures: one point zero zero moles. If you used the atomic value just once, go back to Cl two. That’s the step to fix."
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Choose the target. Check the formula.",
+      "finalPrompt": "What are you finding: M, m or n?",
+      "image": "l2SummaryBadges",
+      "points": [
+        "M: mass per mole, in g mol⁻¹.",
+        "Count every atom in the complete formula.",
+        "Find mass: multiply. Find amount: divide.",
+        "Keep guard digits. Round the final answer."
+      ],
+      "durationInFrames": 870,
+      "caption": "Molar mass connects amount in moles to mass in grams.",
+      "voiceover": {
+        "text": "When you meet the next question, make three decisions. What am I finding: mass, amount, or molar mass? Have I counted every atom in the formula? And do the units fit? Find mass: multiply. Find amount: divide. Keep extra digits during the working, then round the final answer. That’s a method you can take into the next problem."
+      }
+    }
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": [
+    "CH11-9",
+    "CH11/12-4",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "How are measurements made in chemistry?",
+  "scriptRevision": "engagement-v3"
+}

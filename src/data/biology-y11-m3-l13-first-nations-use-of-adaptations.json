@@ -38,11 +38,11 @@
       "type": "hook",
       "image": "l6HookCycad",
       "heading": "How do you make a toxic seed safe to eat?",
-      "body": "Use public, attributed examples to connect biological features with human knowledge.",
-      "callout": "Name the source, People and Country where the source identifies them.",
-      "caption": "Public sources support specific examples, not continent-wide generalisations.",
+      "body": "Macrozamia cycad seeds are packed with starch, and with toxins the plant makes to stop seed-eaters. Aboriginal Peoples turned them into a safe, storable staple.",
+      "callout": "How does a plant's defence become food, or a fishing tool, and what did people need to know?",
+      "caption": "Plant and animal adaptations, put to specific purposes.",
       "voiceover": {
-        "text": "Plants and animals have features that support survival and reproduction. People can apply detailed knowledge of those features to food resources and management. Today we use publicly documented examples: plant compounds described by the Australian National Botanic Gardens, Gunditjmara eel aquaculture at Budj Bim, and community seasonal knowledge shared through the Bureau of Meteorology. These sources support specific claims; they do not authorise generalising a practice to all First Nations communities."
+        "text": "Here's a puzzle. Macrozamia cycad seeds are packed with starch, but they're also toxic. The plant makes those toxins as a defence, to stop animals eating its seeds. Yet Aboriginal Peoples across northern and eastern Australia turned them into a safe, storable staple food. Another plant's defence chemical became a fishing tool. So how does a plant's adaptation, which exists for the plant's own survival, get put to a human purpose? And what did people need to know to do it? That's today's lesson."
       },
       "durationInFrames": 1095
     },
@@ -76,23 +76,53 @@
       "id": "concept-plants",
       "type": "concept",
       "heading": "Plant defences, put to a purpose",
-      "body": "Public botanical sources describe plant-compound uses; local practices require local attribution.",
+      "body": "A plant defence can also become a resource when people know how to manage it safely.",
       "bullets": [
         {
-          "text": "ANBG documents uses of Tephrosia purpurea and processed Macrozamia seeds."
+          "text": "Macrozamia communis (burrawang) produces starch-rich seeds that are poisonous without careful processing."
         },
         {
-          "text": "Plant chemistry and human processing are different things."
+          "text": "Wreck Bay community knowledge documented by the Australian National Botanic Gardens describes placing the seeds in creek water so running water leaches them before use."
         },
         {
-          "text": "Avoid assigning one method to every community or treating this as a preparation guide."
+          "text": "The biological link: chemical defence deters consumers; cultural processing works around that defence to make the food resource usable."
         }
       ],
-      "secondary": "Using the cycad meant defeating the adaptation: knowing which part is toxic, what removes the toxin, and how long treatment must run.",
-      "callout": "Source each cultural attribution at the level claimed.",
-      "caption": "ANBG botanical examples; methods and attribution require specificity.",
+      "secondary": "Source trail: Australian National Botanic Gardens, Aboriginal Plant Use — Macrozamia communis, citing Wreck Bay Community & Renwick (2000).",
+      "callout": "Name the plant adaptation, then explain how community knowledge makes safe use possible.",
+      "caption": "Burrawang seeds: plant chemical defence, with community-documented processing to make them usable as food.",
       "voiceover": {
-        "text": "The Australian National Botanic Gardens describes plant uses including Tephrosia purpurea and processing of Macrozamia seeds. These illustrate knowledge of plant compounds and their effects. A chemical defence is a physiological feature of the plant; a human processing method is a response to that feature. Practices differ by species and community. The Gardens’ broad account is not enough to assign one exact method to every community, and it is not a preparation guide. For a local cultural example, use a source that identifies the particular People and Country."
+        "text": "For a plant example, use one with a clear source trail. Macrozamia communis, or burrawang, produces starch-rich seeds that are poisonous without careful processing. The Australian National Botanic Gardens records Wreck Bay community knowledge describing the seeds being placed in creek water so running water could leach them before use. Biologically, the plant's chemical defence discourages consumers. The cultural response is knowledge of how to process the seed safely enough to use the large food resource. Keep the community attribution with the example rather than presenting the practice as generic."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Uses",
+        "props": {
+          "title": "A plant defence, managed with community knowledge",
+          "rows": [
+            {
+              "organism": "seeds",
+              "name": "Macrozamia communis (burrawang)",
+              "people": "Wreck Bay community",
+              "adaptation": "poisonous starch-rich seeds deter consumers",
+              "type": "physiological / chemical",
+              "method": "community-documented processing includes leaching in running creek water",
+              "purpose": "processed food resource",
+              "purposeIcon": "loaf",
+              "at": 120,
+              "adaptAt": 360,
+              "useAt": 650,
+              "amber": true
+            }
+          ],
+          "footer": [
+            {
+              "text": "Source: Australian National Botanic Gardens; Wreck Bay Community & Renwick (2000)",
+              "at": 1120,
+              "amber": true
+            }
+          ]
+        }
       },
       "durationInFrames": 1570
     },
@@ -100,23 +130,56 @@
       "id": "concept-animals",
       "type": "concept",
       "heading": "Reading animal behaviour",
-      "body": "Gunditjmara eel aquaculture at Budj Bim connects ecology with deliberate resource management.",
+      "body": "Knowing an animal's behavioural adaptation, its migration or its timing, tells you when and where it can be reliably harvested.",
       "bullets": [
         {
-          "text": "Gunditjmara Country, south-western Victoria."
+          "text": "Short-finned eels are catadromous: they migrate downstream to the sea to spawn. Gunditjmara engineering at Budj Bim used channels, weirs and holding ponds to intercept and hold eels."
         },
         {
-          "text": "Channels direct water and kooyang into holding ponds."
-        },
-        {
-          "text": "Explain animal ecology and human engineering separately."
+          "text": "At Masig in the Torres Strait, Masigalgal seasonal knowledge links the start of Sulawal turtle mating with local seasonal indicators, including ripening Kubil Gim fruit and Biru Biru bee-eater migration."
         }
       ],
-      "secondary": "Parts of the Budj Bim system date to at least about 6,600 years ago; the Budj Bim Cultural Landscape was World Heritage listed in 2019.",
-      "callout": "Attribute the example to Gunditjmara Country.",
-      "caption": "Budj Bim’s public account supports the aquaculture example.",
+      "secondary": "Source trail: Budj Bim Cultural Landscape — Gunditjmara community/UNESCO documentation. Masig example — Masigalgal RNTBC and Masigalgal Rangers seasonal calendar, published with the Bureau of Meteorology (2018).",
+      "callout": "Community knowledge links predictable biological timing to sustainable use and management.",
+      "caption": "Gunditjmara eel systems at Budj Bim; Masigalgal seasonal knowledge on Masig in the Torres Strait.",
       "voiceover": {
-        "text": "For an attributed animal example, consider Gunditjmara Country at Budj Bim in south-western Victoria. Public accounts from the Gunditjmara-managed Budj Bim organisation describe channels directing water and short-finned eels into holding ponds. The system applies knowledge of eel ecology and movement. Its constructed features show deliberate management of waterways and living resources. The animal’s behaviour is one part of the explanation; the engineering and the cultural knowledge are distinct human responses."
+        "text": "Animal behaviour and seasonal timing can make a resource predictable. On Gunditjmara Country at Budj Bim, short-finned eels migrate through waterways on their way to the sea to spawn. Channels, weirs and holding ponds were engineered around that movement so eels could be trapped and kept alive. For a distinct Torres Strait Islander example, the Masigalgal seasonal calendar for Masig records community knowledge of Sulawal turtle mating and the environmental signs that accompany it, including ripening Kubil Gim fruit and the arrival of Biru Biru bee-eaters. These examples should be taught with their named community sources, not as generic First Nations knowledge."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Uses",
+        "props": {
+          "title": "Predictable biology, community knowledge and use",
+          "rows": [
+            {
+              "organism": "eel",
+              "name": "Short-finned eel",
+              "people": "Gunditjmara, Budj Bim",
+              "adaptation": "catadromous migration through waterways toward the sea to spawn",
+              "type": "behavioural",
+              "method": "channels, weirs and holding ponds intercept and hold moving eels",
+              "purpose": "managed food resource",
+              "purposeIcon": "pond",
+              "at": 26,
+              "adaptAt": 251,
+              "useAt": 451
+            },
+            {
+              "organism": "fish",
+              "name": "Sulawal turtle",
+              "people": "Masigalgal, Masig (Torres Strait)",
+              "adaptation": "seasonal mating occurs with locally observed seasonal conditions",
+              "type": "behavioural",
+              "method": "read community seasonal indicators such as Kubil Gim fruit and Biru Biru migration",
+              "purpose": "timing knowledge for sea-country use and management",
+              "purposeIcon": "basket",
+              "at": 888,
+              "adaptAt": 938,
+              "useAt": 1188,
+              "amber": true
+            }
+          ]
+        }
       },
       "durationInFrames": 1671
     },
@@ -124,24 +187,56 @@
       "id": "concept-calendar",
       "type": "concept",
       "heading": "Reading the calendar the environment writes",
-      "body": "Seasonal indicators are place-based; calendars differ between communities.",
+      "body": "Seasonal calendars are community knowledge systems that record natural indicators of changing seasons and resource timing.",
       "bullets": [
         {
-          "text": "BOM shares community-attributed seasonal knowledge."
+          "text": "Masigalgal people of Masig in the Torres Strait developed a community-led seasonal calendar with elders and rangers."
         },
         {
-          "text": "A public D’harawal example uses quoll mating calls."
+          "text": "In Naigai season, ripening Kubil Gim (Sea Ebony) fruit and Biru Biru bee-eater migration are indicators associated with the start of Sulawal turtle mating."
         },
         {
-          "text": "Shared seasonal timing is not automatically direct causation."
+          "text": "The indicator does not cause the animal event; both reflect seasonal environmental conditions observed over generations."
         }
       ],
-      "callout": "Use the community’s published account and attribution.",
-      "caption": "Public seasonal indicators link environmental conditions and species behaviour.",
+      "callout": "Attribute cultural knowledge to the community that owns and documents it.",
+      "caption": "Masig seasonal calendar: Masigalgal indicators connect seasonal change with Sulawal turtle mating.",
       "voiceover": {
-        "text": "The Bureau of Meteorology publishes seasonal knowledge shared by particular communities. One public D’harawal example associates a season with quoll mating calls. Such signs can connect animal behaviour with seasonal conditions. Do not assume that every calendar uses the same number of seasons or the same signs. If a flowering event and another resource event occur together, they may respond to related environmental cues. An association is not evidence that one directly causes the other; examine the community’s own explanation and the relevant biology."
+        "text": "Seasonal calendars are not generic lists of signs; they are community knowledge systems tied to Country and Sea Country. On Masig in the Torres Strait, Masigalgal elders and rangers developed a seasonal calendar through a community-led project. In the Naigai season, the calendar records signs including ripening Kubil Gim, or Sea Ebony, fruit and the migration of Biru Biru bee-eaters alongside the start of Sulawal turtle mating. The sign does not cause the turtle behaviour. The value is the long-observed relationship between several biological and environmental events. Always attribute this knowledge to the Masigalgal community source."
       },
-      "durationInFrames": 1583
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio12m8Fan",
+        "props": {
+          "direction": "diverge",
+          "hub": {
+            "label": "Naigai seasonal conditions",
+            "sub": "Masig, Torres Strait",
+            "at": 650
+          },
+          "items": [
+            {
+              "label": "Kubil Gim fruit ripens",
+              "sub": "community seasonal indicator",
+              "at": 838
+            },
+            {
+              "label": "Sulawal turtle mating begins",
+              "sub": "seasonal animal behaviour",
+              "at": 926
+            }
+          ],
+          "notes": [
+            {
+              "text": "Masigalgal seasonal calendar — community-attributed knowledge",
+              "at": 1188,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1583,
+      "secondary": "Source: Masigalgal RNTBC and Masigalgal Rangers, Masig seasonal calendar; Bureau of Meteorology Indigenous Weather Knowledge, 2018."
     },
     {
       "id": "worked-example",
@@ -158,38 +253,39 @@
       ],
       "caption": "Every part of Budj Bim is matched to a feature of the eel migration.",
       "voiceover": {
-        "text": "Let's analyse Budj Bim, the way an exam wants it. Start with the adaptation. Short-finned eels are catadromous, migrating downstream to the sea to spawn, in large numbers, along water courses, at predictable times. Next, what knowing that makes possible. If you know where and when the eels will move, a mobile resource becomes a predictable one, and you can build for it. Then match each structure to the behaviour. Channels intercepted the route. Weirs controlled the flow. Holding ponds kept the eels alive once trapped. And that's the decisive part. Holding them alive supports storage and management beyond an immediate catch. That's aquaculture, not just catching fish. Finally, the age of the system, thousands of years, shows knowledge built up and refined over generations."
+        "text": "Let's analyse Budj Bim, the way an exam wants it. Start with the adaptation. Short-finned eels are catadromous, migrating downstream to the sea to spawn, in large numbers, along water courses, at predictable times. Next, what knowing that makes possible. If you know where and when the eels will move, a mobile resource becomes a predictable one, and you can build for it. Then match each structure to the behaviour. Channels intercepted the route. Weirs controlled the flow. Holding ponds kept the eels alive once trapped. And that's the decisive part. Holding them alive turns one seasonal run into a year-round food supply. That's aquaculture, not just catching fish. Finally, the age of the system, thousands of years, shows knowledge built up and refined over generations."
       },
-      "durationInFrames": 1698
+      "durationInFrames": 1620
     },
     {
       "id": "misconception",
       "type": "misconception",
       "heading": "It wasn't trial and error",
       "body": "Wrong: using plants and animals was simple trial and error, or \"folklore\".",
-      "secondary": "Right: it is an empirical knowledge system, developed and maintained through observation and cultural practice across generations and specific to each Country. Knowing which species, which part, how to prepare it and when it is available is deep biological understanding.",
+      "secondary": "Right: it is an empirical knowledge system, built from repeated observation over tens of thousands of years and specific to each Country. Knowing which species, which part, how to prepare it and when it is available is deep biological understanding.",
       "mistakeTag": "Name the People and the Country",
       "callout": "Never write \"Aboriginal people used\", as if the whole continent held one set of practices.",
       "caption": "An empirical, place-based knowledge system, not guesswork.",
       "voiceover": {
-        "text": "Here's the misconception this lesson is built to fix. Describing this knowledge as simple trial and error, or folklore. It's an empirical knowledge system, developed and maintained through observation and cultural practice across generations, and tested across generations. Public accounts of plant processing illustrate detailed biological knowledge, but a general institutional summary does not establish one method for all communities. And a writing habit that matters. Name the People and the Country, and cite where you read it. Never write Aboriginal people used, as if the whole continent held one set of practices. The species, the seasons and the methods differ from Country to Country."
+        "text": "Here's the misconception this lesson is built to fix. Describing this knowledge as simple trial and error, or folklore. It's an empirical knowledge system, built from repeated observation over tens of thousands of years, and tested across generations. Look at what the cycad needs. You have to know which part is toxic, what removes the toxin, and how long the treatment must run. That's detailed biology. And a writing habit that matters. Name the People and the Country, and cite where you read it. Never write Aboriginal people used, as if the whole continent held one set of practices. The species, the seasons and the methods differ from Country to Country."
       },
-      "durationInFrames": 1440
+      "durationInFrames": 1433
     },
     {
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "Distinguish a plant’s defensive chemistry from human processing, and explain how to attribute a cultural example.",
-      "pausePrompt": "Pause: whose feature and whose response?",
+      "question": "Macrozamia seeds contain cycasin and macrozamin, yet were processed into a staple food. Identify the adaptation being used, classify it, and say what the processing shows.",
+      "pausePrompt": "Pause: is the adaptation the toxin, or the leaching?",
       "answerSteps": [
-        "Defensive compounds are part of plant physiology.",
-        "Processing is a human response, not the plant’s adaptation.",
-        "Cite a public source; do not extend attribution beyond the evidence."
+        "The adaptation is the toxin: a chemical defence against seed predators.",
+        "Making a defensive chemical is an internal process, so it is physiological.",
+        "The leaching, or ageing and fermenting, is the human response to it.",
+        "Answer: it shows people knew the toxin could be removed, from which part, and for how long ✓"
       ],
-      "caption": "Separate biological features, human responses and cultural attribution.",
+      "caption": "The toxin is the adaptation; the leaching is the human response.",
       "voiceover": {
-        "text": "Quick check. Distinguish a plant’s defensive compounds from a human method for processing that plant. Which is the organism’s physiological feature? Pause. The compounds are part of the plant’s physiology. Processing is a human response to the chemistry. To discuss a cultural use, cite the published source and attribute only what it establishes. Do not infer one preparation method across communities."
+        "text": "Quick check. Macrozamia seeds contain toxins called cycasin and macrozamin, yet they were processed into a staple food. Identify the adaptation being used, classify it, and say what the processing shows. Careful, is the adaptation the toxin, or the leaching? Pause and decide. Right. The adaptation is the toxin, a chemical defence the plant makes against seed predators. Making a chemical is an internal process, so it's a physiological adaptation. The leaching, or the ageing and fermenting, isn't an adaptation at all. It's the human response to one. And what does it show? That people knew the toxin could be removed, which part carries it, and how long treatment has to run, before the seed is safe."
       },
       "durationInFrames": 1508
     },
@@ -198,16 +294,16 @@
       "type": "summary",
       "heading": "Lock it in",
       "points": [
-        "Identify the biological feature and its role.",
-        "Distinguish the organism’s feature from a human response.",
-        "Use publicly documented, attributed examples.",
-        "Budj Bim documents Gunditjmara eel aquaculture.",
-        "Seasonal indicators are community-specific; association is not direct causation."
+        "Every adaptation exists for the organism; knowing why it has the feature is what makes it usable.",
+        "Plant defences: Tephrosia to harvest fish; Macrozamia seeds leached into a staple food.",
+        "Animal behaviour: Bogong moth aestivation in the Alps; eel migration at Budj Bim.",
+        "Seasonal indicators work because two species respond to the same cue.",
+        "Name the People and Country, cite the source, and treat it as empirical knowledge."
       ],
-      "finalPrompt": "Feature, role, human response, source and attribution.",
-      "caption": "Public sources and precise attribution support biological interpretation.",
+      "finalPrompt": "For any use: name the adaptation, classify it, then say what had to be known.",
+      "caption": "Five takeaways on First Nations use of adaptations.",
       "voiceover": {
-        "text": "Connect an organism’s feature to its biological role, then explain how knowledge of that feature supports a human response. Public botanical sources describe plant-compound uses, Budj Bim’s public account documents Gunditjmara aquaculture, and community seasonal calendars connect conditions with biological events. Cite the source and name People and Country where the source identifies them. Practices differ, and publicly shared knowledge should not be expanded into unsupported claims."
+        "text": "Let's lock it in. Every adaptation exists for the organism's own survival, and knowing why it has the feature is what makes it usable. Plant defences were put to work, Tephrosia to harvest fish, and Macrozamia seeds leached into a staple food. Animal behaviour was read, the Bogong moth's summer in the Alps, and the eel migration engineered around at Budj Bim. Seasonal indicators work because two species respond to the same cue. And always name the People and the Country, and cite your source. For any example, name the adaptation, classify it, then say what had to be known."
       },
       "durationInFrames": 1296
     }

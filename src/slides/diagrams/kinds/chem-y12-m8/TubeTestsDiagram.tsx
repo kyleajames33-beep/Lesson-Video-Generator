@@ -1,4 +1,4 @@
-// TubeTestsDiagram — qualitative ion tests in test tubes on stone plinths
+// TubeTestsDiagram: qualitative ion tests in test tubes on stone plinths
 // (Chem Y12 M8 L3). Two modes, each in two acts:
 //
 // mode "anion" (scene `definition`): Cl⁻ + AgNO₃ → white AgCl; SO₄²⁻ + BaCl₂ →
@@ -21,6 +21,7 @@ import {interpolate, useCurrentFrame} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {DioramaDefs, DioramaPlinth, idleBob, idlePulse} from '../../diorama';
 import {TestTube, clamp, ease, ramp} from './shared';
+import {validateAnalyticalDiagram} from '../../analytical-inference-models.mjs';
 import {Burner, BurnerDefs, Dropper, Fizz, Flame, Specks, WireLoop, dropPhase} from './lab-parts';
 
 type Tube = {
@@ -36,6 +37,8 @@ type Tube = {
 };
 
 export type TubeTestsProps = {
+	/** Controlled examples only, with matching source-reviewed lesson copy. */
+	reviewedAnalytical?: boolean;
 	delay?: number;
 	mode?: 'anion' | 'cation';
 	beats?: number[];
@@ -65,7 +68,9 @@ const DEFAULT_BEATS = {
 
 const PLINTH_Y = 392;
 
-export const TubeTestsDiagram = ({delay = 62, mode = 'anion', beats}: TubeTestsProps) => {
+export const TubeTestsDiagram = (props: TubeTestsProps) => {
+	validateAnalyticalDiagram({type: 'diorama', kind: 'chem12m8TubeTests', props});
+	const {delay = 62, mode = 'anion', beats, reviewedAnalytical = false} = props;
 	const frame = useCurrentFrame() - delay;
 	const ID = `c12m8tube${mode}`;
 	const tubes = mode === 'anion' ? ANION_TUBES : CATION_TUBES;
@@ -135,11 +140,12 @@ export const TubeTestsDiagram = ({delay = 62, mode = 'anion', beats}: TubeTestsP
 				{big && (
 					<text x={cx} y={74} textAnchor="middle" fill={TOK.inkDim} fontSize={19} fontWeight={700} opacity={ramp(frame, tDrip - 24, 12)}>+ {t.reagent}</text>
 				)}
+				{reviewedAnalytical && big && <text x={cx} y={98} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700} opacity={ramp(frame, tDrip - 24, 12)}>{['dilute HNO₃ first', 'dilute HCl first', 'limewater: initially cloudy'][i]}</text>}
 				{t.gas === 'warm' && (
 					<text x={cx + 30} y={tubeTop - 26} textAnchor="start" fill={TOK.inkDim} fontSize={16} fontWeight={800} opacity={gasOn}>NH₃</text>
 				)}
 				{/* result */}
-				<text x={cx} y={big ? 478 : 460} textAnchor="middle" fill={TOK.ink} fontSize={big ? 21 : 19} fontWeight={800} opacity={labelIn}>{t.title}</text>
+				<text x={cx} y={big ? 478 : 460} textAnchor="middle" fill={TOK.ink} fontSize={big ? 21 : 19} fontWeight={800} opacity={labelIn}>{reviewedAnalytical && t.ion === 'Ca²⁺' ? 'white; not unique' : t.title}</text>
 				<text x={cx} y={big ? 502 : 484} textAnchor="middle" fill={TOK.inkDim} fontSize={big ? 17 : 16} fontWeight={700} opacity={subIn}>{t.sub}</text>
 			</g>
 		);
@@ -164,7 +170,8 @@ export const TubeTestsDiagram = ({delay = 62, mode = 'anion', beats}: TubeTestsP
 		const fizzR = ramp(frame, tRes2 - 14, 10) * (1 - ramp(frame, tRes2 + 120, 30) * 0.6);
 		return (
 			<g opacity={act2}>
-				<text x={W / 2} y={44} textAnchor="middle" fill={TOK.ink} fontSize={25} fontWeight={800}>Sulfate or carbonate? Add dilute acid</text>
+				<text x={W / 2} y={44} textAnchor="middle" fill={TOK.ink} fontSize={25} fontWeight={800}>{reviewedAnalytical ? 'Known BaSO₄ and BaCO₃: add dilute HCl' : 'Sulfate or carbonate? Add dilute acid'}</text>
+				{reviewedAnalytical && <text x={W / 2} y={76} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={700}>This comparison is limited to these two precipitates</text>}
 				{[L, R].map((cx, k) => (
 					<DioramaPlinth key={k} id={`${ID}-a2`} cx={cx} cy={PLINTH_Y} rx={112}>
 						<TestTube cx={cx} baseY={tubeBase} w={aw} h={ah} fill={0.5} liquid={COLOURLESS} solid={k === 0 ? 1 : 1 - dissolve} solidColor={WHITE}>
@@ -179,11 +186,11 @@ export const TubeTestsDiagram = ({delay = 62, mode = 'anion', beats}: TubeTestsP
 				<g opacity={ramp(frame, tRes1, 14)}>
 					<rect x={L - 92} y={454} width={184} height={34} rx={17} fill="#ffffff" stroke={TOK.amber} strokeWidth={2 + pulse * 1.5} />
 					<text x={L} y={478} textAnchor="middle" fill={TOK.amberInk} fontSize={22} fontWeight={800}>stays solid</text>
-					<text x={L} y={510} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>insoluble in acid</text>
+					<text x={L} y={510} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>{reviewedAnalytical ? 'persists in dilute HCl' : 'insoluble in acid'}</text>
 				</g>
 				<g opacity={ramp(frame, tRes2, 14)}>
 					<text x={R} y={478} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800}>dissolves, fizzes</text>
-					<text x={R} y={510} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>CO₂ given off</text>
+					<text x={R} y={510} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>{reviewedAnalytical ? 'CO₂ from known BaCO₃' : 'CO₂ given off'}</text>
 				</g>
 			</g>
 		);
@@ -198,7 +205,7 @@ export const TubeTestsDiagram = ({delay = 62, mode = 'anion', beats}: TubeTestsP
 		const lt = tubeBase - ah * 0.5;
 		return (
 			<g opacity={act2}>
-				<text x={W / 2} y={44} textAnchor="middle" fill={TOK.ink} fontSize={25} fontWeight={800}>Combine the tests</text>
+				<text x={W / 2} y={44} textAnchor="middle" fill={TOK.ink} fontSize={25} fontWeight={800}>{reviewedAnalytical ? 'Combine evidence from fresh aliquots' : 'Combine the tests'}</text>
 				<g opacity={flameIn}>
 					<DioramaPlinth id={`${ID}-a2`} cx={F} cy={PLINTH_Y} rx={100}>
 						<Burner id={ID} cx={F} baseY={PLINTH_Y + 2} barrelH={84} />
@@ -217,13 +224,13 @@ export const TubeTestsDiagram = ({delay = 62, mode = 'anion', beats}: TubeTestsP
 					<text x={T} y={478} textAnchor="middle" fill={TOK.ink} fontSize={21} fontWeight={800}>pale blue precipitate</text>
 					<text x={T} y={502} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>with NaOH</text>
 				</g>
-				<text x={542} y={290} textAnchor="middle" fill={TOK.inkDim} fontSize={44} fontWeight={800} opacity={verdict}>=</text>
+				<text x={542} y={290} textAnchor="middle" fill={TOK.inkDim} fontSize={44} fontWeight={800} opacity={verdict}>{reviewedAnalytical ? '→' : '='}</text>
 				<g opacity={verdict} transform={`translate(652 ${276 + idleBob(frame, 1, 1.5)})`}>
 					<rect x={-88} y={-72} width={176} height={150} rx={22} fill="#ffffff" stroke={TOK.amber} strokeWidth={3 + pulse * 1.5} />
 					<text x={0} y={-10} textAnchor="middle" fill={TOK.amberInk} fontSize={50} fontWeight={800}>Cu²⁺</text>
-					<text x={0} y={24} textAnchor="middle" fill={TOK.ink} fontSize={19} fontWeight={800}>strong case</text>
-					<text x={0} y={48} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>stronger than</text>
-					<text x={0} y={66} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>either test alone</text>
+					<text x={0} y={24} textAnchor="middle" fill={TOK.ink} fontSize={19} fontWeight={800}>{reviewedAnalytical ? 'supports' : 'strong case'}</text>
+					<text x={0} y={48} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>{reviewedAnalytical ? 'not unique' : 'stronger than'}</text>
+					<text x={0} y={66} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>{reviewedAnalytical ? 'identification' : 'either test alone'}</text>
 				</g>
 			</g>
 		);
@@ -234,7 +241,11 @@ export const TubeTestsDiagram = ({delay = 62, mode = 'anion', beats}: TubeTestsP
 			viewBox={`0 0 ${W} 530`}
 			role="img"
 			aria-label={
-				mode === 'anion'
+				reviewedAnalytical
+					? mode === 'anion'
+						? 'Controlled examples with known ions in separate fresh aliquots, not a unique-identification lookup. Acidify the chloride aliquot with dilute nitric acid before silver nitrate; acidify the sulfate aliquot with dilute hydrochloric acid before barium chloride, never sulfuric acid. Known carbonate releases carbon dioxide with dilute acid; check the initial milky or cloudy limewater response rather than identifying gas from bubbles alone. The dilute hydrochloric acid comparison distinguishes the shown barium sulfate and barium carbonate only; other interferents require controls.'
+						: 'Controlled known-ion examples in separate fresh aliquots. With sodium hydroxide, iron(II) gives green, iron(III) red-brown and copper(II) pale blue precipitates. Ammonium releases ammonia on warming with sodium hydroxide; test the gas with moist red litmus, which turns blue. Do not smell gases. Known calcium gives white calcium carbonate with sodium carbonate, but a white carbonate precipitate is not unique to calcium. A blue-green flame and pale blue precipitate support copper(II), but do not prove a unique identity.'
+					: mode === 'anion'
 					? 'Anion tests: chloride with silver nitrate gives white silver chloride, sulfate with barium chloride gives white barium sulfate, carbonate with dilute acid fizzes with carbon dioxide; with acid, barium sulfate stays solid while barium carbonate dissolves'
 					: 'Cation tests with sodium hydroxide: iron(II) green, iron(III) red-brown, copper(II) pale blue, ammonium gives ammonia gas when warmed; calcium with sodium carbonate gives white; a blue-green flame plus a pale blue precipitate makes a strong case for copper(II)'
 			}
@@ -247,7 +258,9 @@ export const TubeTestsDiagram = ({delay = 62, mode = 'anion', beats}: TubeTestsP
 				<g opacity={act1}>
 					{mode === 'cation' && bracket(xs[0] - 40, xs[3] + 40, 'add NaOH(aq) dropwise', b[0] - 110)}
 					{mode === 'cation' && bracket(xs[4] - 58, xs[4] + 58, 'add Na₂CO₃(aq)', b[8] - 30)}
+					{reviewedAnalytical && <text x={W / 2} y={big ? 18 : 112} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>Known-ion examples; fresh aliquots; supervised tests</text>}
 					{tubes.map(column)}
+					{reviewedAnalytical && mode === 'cation' && <text x={W / 2} y={520} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700} opacity={ramp(frame, b[7], 14)}>NH₃: moist red litmus turns blue. Do not smell gases.</text>}
 				</g>
 			)}
 			{act2 > 0 && (mode === 'anion' ? act2Anion() : act2Cation())}

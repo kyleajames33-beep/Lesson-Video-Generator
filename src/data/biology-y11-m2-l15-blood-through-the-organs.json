@@ -395,16 +395,17 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "Matched entry–exit blood samples show urea rises across organ A and falls across organ B. Under controlled conditions, identify each from the candidates liver and kidney.",
-      "pausePrompt": "Pause: which organ produces urea and which removes it?",
+      "question": "For each organ, compare blood entering with blood leaving under otherwise similar conditions. Across Organ X, urea concentration rises while oxygen falls slightly. Across Organ Y, urea concentration falls while oxygen also falls slightly. Identify X and Y and justify from the change in urea.",
+      "pausePrompt": "Pause: use the before-and-after change through each named candidate organ, not one isolated concentration.",
       "answerSteps": [
-        "A: liver; net urea production increases urea in outgoing blood.",
-        "B: kidney; net urea removal decreases urea in outgoing blood.",
-        "Use controlled entry–exit changes; absolute high/low urea alone is insufficient."
+        "Organ X increases blood urea across the organ: this is consistent with the liver producing urea from amino-acid breakdown.",
+        "Organ Y decreases blood urea across the organ: this is consistent with the kidney removing urea into urine.",
+        "The oxygen fall can occur because organ tissues respire; it is not the identifying variable here.",
+        "Answer: X = liver, Y = kidney, based on paired concentration changes ✓"
       ],
-      "caption": "Paired entry–exit measurements support organ identification.",
+      "caption": "Paired changes identify function: urea rises across the liver and falls across the kidney.",
       "voiceover": {
-        "text": "Quick check. Matched entry and exit blood samples are taken across two healthy organs, with blood flow and sampling conditions controlled. Urea concentration rises across organ A and falls across organ B. The candidate organs are liver and kidney. Which is which? Pause. A is the liver, which produces urea from amino-acid nitrogen. B is the kidney, which removes a net amount of urea into urine. Entry-to-exit changes support the identification. One isolated sample described as high or low in urea would not uniquely identify an organ."
+        "text": "Quick check. Compare blood entering and leaving two specified organs under otherwise similar conditions. Across Organ X, urea rises while oxygen falls slightly. Across Organ Y, urea falls while oxygen also falls slightly. The paired change is what matters. The liver produces urea during amino-acid metabolism, so urea can rise across it. The kidney removes urea from blood into urine, so urea falls across it. Oxygen use by the tissue does not distinguish the two. So X is the liver and Y is the kidney, justified by the direction of the urea change."
       },
       "durationInFrames": 1218
     },

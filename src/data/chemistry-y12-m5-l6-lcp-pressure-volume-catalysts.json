@@ -45,7 +45,7 @@
       "body": "Compress a gas equilibrium and it shifts toward the side with fewer molecules. One count tells you which way.",
       "callout": "Pressure pushes toward fewer gas molecules.",
       "image": "m5L6GasSyringeCompression",
-      "durationInFrames": 690,
+      "durationInFrames": 1395,
       "caption": "Compressing a gas equilibrium shifts it toward the side with fewer gas moles.",
       "voiceover": {
         "text": "OK, here's a striking demonstration. Take a sealed syringe of brown nitrogen dioxide gas in equilibrium with its colourless dimer, and push the plunger in. For a split second the gas goes darker, then it fades to paler than it started. Something shifted. Back in 1913, BASF's engineers worked out that running the Haber process at a thousand atmospheres would push the ammonia yield over seventy percent, but the steel vessels needed would cost forty times more, so they settled on two hundred. Pressure genuinely shifts equilibrium, and today you'll learn the one simple skill that predicts which way, counting the moles of gas on each side. We'll also nail down what a catalyst does, and just as importantly, what it can never do.",
@@ -70,7 +70,7 @@
       ],
       "secondary": "No effect if both sides have equal gas moles, or if there are no gases. Keq never changes with pressure, only temperature changes Keq.",
       "callout": "Count the gas moles first, then predict.",
-      "durationInFrames": 1140,
+      "durationInFrames": 1574,
       "caption": "Pressure shifts toward fewer gas moles; count only gases; Keq unchanged.",
       "voiceover": {
         "text": "Here's the rule, and it's purely about counting. When you increase the pressure on a gas equilibrium, by compressing it, the system shifts toward whichever side has fewer moles of gas, because fewer gas molecules means lower pressure, which partially counteracts your squeeze. Decrease the pressure, and it shifts the other way, toward more moles of gas. Take the Haber process, nitrogen plus three hydrogen giving two ammonia. The left has four moles of gas, the right has two, so compressing it shifts right, toward ammonia. Two crucial details. First, count only the gases. Solids, liquids and dissolved species don't contribute to gas pressure, so you ignore them. Second, if both sides have equal moles of gas, or there are no gases at all, pressure has no effect on the position. And throughout, the equilibrium constant does not change, because only temperature changes the equilibrium constant.",
@@ -122,7 +122,7 @@
         }
       ],
       "callout": "Volume down equals pressure up; inert gas at fixed volume does nothing.",
-      "durationInFrames": 990,
+      "durationInFrames": 1382,
       "caption": "Pressure disturbance, volume disturbance, inert gas, catalyst.",
       "voiceover": {
         "text": "Four ideas to lock in. A pressure disturbance, increasing the pressure shifts the equilibrium toward the side with fewer gas moles. A volume disturbance, decreasing the volume raises the pressure, so it does exactly the same thing, those two are really one rule. Adding an inert gas at constant volume, like pumping in argon without changing the size of the container, does nothing, because the partial pressures of the actual reactants and products are unchanged, so they still collide just as often. And a catalyst speeds up both the forward and reverse directions equally, lowering the activation energy, but without changing the equilibrium constant or the position. Watch that inert gas one, it's a favourite exam trap, more total pressure but no shift, because the reacting gases haven't been squeezed any closer together.",
@@ -147,10 +147,11 @@
       ],
       "secondary": "The iron catalyst in the Haber process makes profitable production possible at 400 to 500°C, but only temperature and pressure can change the yield. A catalyst buys speed, not yield.",
       "callout": "Faster to the same place, never a better place.",
-      "durationInFrames": 1839,
+      "durationInFrames": 1411,
       "caption": "A catalyst lowers both barriers equally: faster equilibrium, no change to position or Keq.",
       "voiceover": {
-        "text": "Now the most-misremembered idea in this whole inquiry question, the catalyst. Here's what it does, it provides an alternative pathway with a lower activation energy, and it accelerates forward and reverse processes without changing the equilibrium constant. If the system is already at equilibrium, where the rates were already equal, speeding them up equally keeps them equal, so there's no shift at all. And here's what it cannot do, it can't change the equilibrium constant, it can't change the enthalpy change, and it can't change the position. All it changes is how quickly you arrive. The iron catalyst in the Haber process is what makes ammonia production profitable at four to five hundred degrees, but it does not raise the yield, only temperature and pressure do that. So remember, a catalyst buys you speed, never yield."
+        "text": "Now the most-misremembered idea in this whole inquiry question, the catalyst. Here's what it does, it provides an alternative pathway with a lower activation energy, and it lowers that barrier by the same amount for the forward and the reverse reaction. So both rates speed up by the same factor. If the system is already at equilibrium, where the rates were already equal, speeding them up equally keeps them equal, so there's no shift at all. And here's what it cannot do, it can't change the equilibrium constant, it can't change the enthalpy change, and it can't change the position. All it changes is how quickly you arrive. The iron catalyst in the Haber process is what makes ammonia production profitable at four to five hundred degrees, but it does not raise the yield, only temperature and pressure do that. So remember, a catalyst buys you speed, never yield.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L6/concept-catalyst.96906c8654fa.mp3"
       },
       "diagram": {
         "type": "diorama",
@@ -191,7 +192,7 @@
         "Keq is unchanged in every case, since temperature is constant.",
         "Answer: (a) right, (b) no shift, (c) no shift ✓"
       ],
-      "durationInFrames": 1410,
+      "durationInFrames": 1745,
       "caption": "(a) shift right; (b) no shift (2=2); (c) no shift (4 gas = 4 gas, solids excluded).",
       "voiceover": {
         "text": "Let's practise the counting. For each reaction, predict what increasing the pressure by halving the volume does. Part a, the Haber process. Left side, one nitrogen plus three hydrogen, that's four moles of gas. Right side, two moles of ammonia. Fewer on the right, so it shifts right, making more ammonia. Part b, hydrogen plus chlorine giving hydrogen chloride. Left, one plus one is two moles. Right, two moles. Equal moles of gas, so pressure has no effect, no shift. Part c is the trap. Iron oxide plus hydrogen giving iron plus steam. It looks lopsided, but count only the gases. The iron oxide and the iron are solids, so ignore them. That leaves four moles of hydrogen on the left and four moles of water vapour on the right. Equal gas moles, so no shift. And in all three, the equilibrium constant doesn't budge, because the temperature stayed constant. The whole skill is counting gases and excluding solids.",
@@ -202,19 +203,20 @@
       "id": "worked-example-2",
       "type": "workedExample",
       "heading": "Two changes that fight",
-      "question": "Haber: N₂(g) + 3H₂(g) ⇌ 2NH₃(g), ΔH = −92 kJ mol⁻¹. Temperature is raised and the mixture is compressed. Predict each separate effect and explain whether Le Chatelier’s principle alone determines the net change in ammonia yield.",
+      "question": "Haber: N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ mol⁻¹. An engineer raises T from 450°C to 550°C and pressure from 200 to 300 atm at once. Predict each effect and whether they reinforce or oppose.",
       "coachNote": "Do temperature and pressure separately, then combine.",
       "steps": [
-        "At fixed pressure, heating favours the endothermic reverse reaction: less NH₃; Keq decreases.",
-        "At fixed temperature, compression favours the side with fewer gas moles: more NH₃; Keq is unchanged.",
-        "The temperature and compression effects oppose each other.",
-        "Le Chatelier’s principle alone does not quantify which effect dominates.",
-        "Answer: opposing effects; quantitative equilibrium data are needed to determine the net yield change."
+        "Temperature: forward is exothermic, so raising T shifts left, less NH₃, and Keq decreases.",
+        "Pressure: left has 4 mol gas, right has 2, so raising P shifts right, more NH₃, Keq unchanged.",
+        "The two effects oppose each other on yield.",
+        "Temperature usually dominates yield, so the net effect is a slight left shift, less NH₃.",
+        "Answer: T shifts left, P shifts right; they oppose, net slightly left ✓"
       ],
-      "durationInFrames": 1410,
-      "caption": "Heating favours reactants; compression favours products. Qualitative rules alone do not determine the net yield change.",
+      "durationInFrames": 1809,
+      "caption": "Heating shifts left (Keq down); compressing shifts right; effects oppose, T usually wins.",
       "voiceover": {
-        "text": "Now consider two changes together, heating the Haber mixture and compressing it. Handle each separately first. The forward reaction is exothermic, so heating favours the reverse reaction and lowers the equilibrium constant. Compression, at a fixed temperature, favours ammonia because the product side has fewer moles of gas. These effects oppose each other. Can we say which wins just by applying Le Chatelier's principle? No. It gives the direction of each separate effect, not their relative sizes. To determine the final ammonia yield we need quantitative equilibrium data for the new conditions. The correct conclusion here is opposing effects, with the net change undetermined by the qualitative rules alone."
+        "text": "Now a tougher one, two changes at the same time. The Haber process, exothermic with an enthalpy change of minus ninety-two. An engineer simultaneously raises the temperature from four hundred and fifty to five hundred and fifty degrees, and the pressure from two hundred to three hundred atmospheres. Handle them separately first. Temperature, the forward reaction is exothermic, so raising the temperature shifts the equilibrium left, making less ammonia, and the equilibrium constant decreases. Pressure, the left has four moles of gas and the right has two, so raising the pressure shifts it right, making more ammonia, with the equilibrium constant unchanged. So the two effects oppose each other on yield, one pushing left, one pushing right. Which wins? In the Haber process the temperature effect on yield is usually the stronger one, so the net result is a slight shift left, a little less ammonia overall, even though the reaction is now faster. That tug of war is the heart of the industrial compromise.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L6/worked-example-2.461d347306de.mp3"
       }
     },
     {
@@ -225,7 +227,7 @@
       "secondary": "Trap 2: counting solids and liquids when comparing moles. Count gases only. Trap 3: thinking an inert gas added at constant volume causes a shift. It raises total pressure but leaves the reacting partial pressures, and Keq, untouched.",
       "mistakeTag": "Where pressure marks vanish",
       "callout": "Fewer-moles side, gases only, inert gas does nothing.",
-      "durationInFrames": 1230,
+      "durationInFrames": 1414,
       "caption": "Pressure isn't always rightward; count only gases; inert gas at fixed V = no shift.",
       "voiceover": {
         "text": "Three traps. Trap one, thinking increasing pressure always shifts the equilibrium to the right. It doesn't. It shifts toward the side with fewer moles of gas, which might be the left, and if the moles are equal it doesn't shift at all. Always count both sides before you commit. Trap two, counting solids and liquids when you tally the moles. Only gases contribute to pressure, so a solid on one side is invisible to a pressure change. That iron oxide reaction caught a lot of people. Trap three, thinking an inert gas pumped in at constant volume causes a shift. It raises the total pressure, sure, but it doesn't squeeze the reacting molecules any closer, so their partial pressures and collision frequencies are unchanged, and there's no shift. Get those three right and pressure questions are just careful counting.",
@@ -242,13 +244,14 @@
         "(a) Increasing volume lowers pressure, so the system shifts toward more gas moles.",
         "Left has 2 + 1 = 3 mol gas, right has 2, so it shifts left.",
         "Keq is unchanged for the volume change, since temperature is constant.",
-        "(b) A catalyst speeds both directions without changing K, so there's no shift and Keq is unchanged.",
+        "(b) A catalyst speeds both rates equally, so there's no shift and Keq is unchanged.",
         "Answer: (a) shift left, Keq unchanged; (b) no shift, Keq unchanged ✓"
       ],
-      "durationInFrames": 2006,
+      "durationInFrames": 1769,
       "caption": "Expanding the Contact process shifts left (3 vs 2 mol); a catalyst does nothing to position.",
       "voiceover": {
-        "text": "Quick check, the Contact process, two sulfur dioxide plus oxygen giving sulfur trioxide, exothermic. Part a, you increase the volume of the container at constant temperature. Part b, you add a catalyst. Predict the position and the equilibrium constant for each. Pause and reason it through. Right, let's check it. Part a, increasing the volume lowers the pressure, so the system shifts toward the side with more moles of gas. Count them, the left has two sulfur dioxide plus one oxygen, that's three moles of gas, the right has two. So it shifts left, toward reactants. And the equilibrium constant is unchanged, because the temperature didn't change. Part b, the catalyst. It accelerates both forward and reverse processes without changing equilibrium, so there's no shift, and again the equilibrium constant is unchanged. The one thing that would have changed the constant, temperature, is the one thing we didn't touch."
+        "text": "Quick check, the Contact process, two sulfur dioxide plus oxygen giving sulfur trioxide, exothermic. Part a, you increase the volume of the container at constant temperature. Part b, you add a catalyst. Predict the position and the equilibrium constant for each. Pause and reason it through. Right, let's check it. Part a, increasing the volume lowers the pressure, so the system shifts toward the side with more moles of gas. Count them, the left has two sulfur dioxide plus one oxygen, that's three moles of gas, the right has two. So it shifts left, toward reactants. And the equilibrium constant is unchanged, because the temperature didn't change. Part b, the catalyst. It speeds up both the forward and reverse rates equally, so there's no shift, and again the equilibrium constant is unchanged. The one thing that would have changed the constant, temperature, is the one thing we didn't touch.",
+        "audioFile": "public/audio/Chemistry-Y12-M5-L6/quick-check.41d7b01f1ef5.mp3"
       }
     },
     {
@@ -263,7 +266,7 @@
         "A catalyst changes rate only; only temperature changes Keq."
       ],
       "finalPrompt": "Pressure question? Count the gas moles on each side before you predict.",
-      "durationInFrames": 1110,
+      "durationInFrames": 1584,
       "caption": "Five takeaways: pressure rule, gases only, equal-moles, inert gas, catalyst.",
       "voiceover": {
         "text": "Let's lock it in. Five things to take away. First, increasing the pressure shifts the equilibrium toward the side with fewer moles of gas, and decreasing it shifts toward more. Second, count only the gases, solids and liquids and dissolved species don't contribute to pressure. Third, if the gas moles are equal on both sides, or there are no gases, pressure has no effect on the position. Fourth, an inert gas added at constant volume causes no shift, because the reacting partial pressures are unchanged. And fifth, a catalyst changes only the rate, never the position, and only temperature changes the equilibrium constant. So whenever you face a pressure question, the first move is always the same, count the gas moles on each side. See you next lesson.",

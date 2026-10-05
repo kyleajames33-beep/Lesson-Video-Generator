@@ -12,12 +12,7 @@
     "explore and distinguish the different types of structural isomers, including saturated and unsaturated hydrocarbons, including: (ACSCH035)"
   ],
   "moduleLessonCount": 23,
-  "nesaOutcomes": [
-    "CH12-14",
-    "CH11/12-5",
-    "CH11/12-6",
-    "CH11/12-7"
-  ],
+  "nesaOutcomes": ["CH12-14", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
   "inquiryQuestion": "How do we systematically name organic chemical compounds?",
   "lessonIntent": "Students can name compounds across the eight functional group classes and classify a pair of structural isomers as chain, position or functional group isomers.",
   "examSkill": "Read the functional group to fix the suffix, name esters as alkyl alkanoate with the alkyl first, and tell position isomers from functional group isomers.",
@@ -54,18 +49,10 @@
       "type": "definition",
       "heading": "The eight functional group classes",
       "bullets": [
-        {
-          "text": "Alcohol -OH, suffix -ol; aldehyde -CHO at C1, suffix -al."
-        },
-        {
-          "text": "Ketone internal C=O, suffix -one; carboxylic acid -COOH at C1, suffix -oic acid."
-        },
-        {
-          "text": "Ester R-COO-R', named alkyl alkanoate; haloalkane R-X, prefix chloro/bromo."
-        },
-        {
-          "text": "Amine R-NH2, suffix -amine (a weak base); amide R-CONH2, suffix -amide (neutral)."
-        }
+        {"text": "Alcohol -OH, suffix -ol; aldehyde -CHO at C1, suffix -al."},
+        {"text": "Ketone internal C=O, suffix -one; carboxylic acid -COOH at C1, suffix -oic acid."},
+        {"text": "Ester R-COO-R', named alkyl alkanoate; haloalkane R-X, prefix chloro/bromo."},
+        {"text": "Amine R-NH2, suffix -amine (a weak base); amide R-CONH2, suffix -amide (neutral)."}
       ],
       "callout": "The suffix is decided entirely by the functional group present.",
       "durationInFrames": 1110,
@@ -80,15 +67,9 @@
       "heading": "Primary, secondary, tertiary",
       "body": "For alcohols and amines, classification comes from counting carbon neighbours on the key atom.",
       "bullets": [
-        {
-          "text": "Find the C-OH carbon, then count only its carbon neighbours."
-        },
-        {
-          "text": "One carbon neighbour is primary (methanol is conventionally grouped with primary alcohols); two is secondary; three is tertiary."
-        },
-        {
-          "text": "Same rule on nitrogen for amines: one, two or three alkyl groups."
-        }
+        {"text": "Find the C-OH carbon, then count only its carbon neighbours."},
+        {"text": "One carbon neighbour is primary; two is secondary; three is tertiary."},
+        {"text": "Same rule on nitrogen for amines: one, two or three alkyl groups."}
       ],
       "secondary": "This classification is not just a label. It decides what oxidation products an alcohol can form, which matters in later lessons.",
       "callout": "Count carbon neighbours of the key atom, nothing else.",
@@ -199,10 +180,10 @@
           ]
         }
       },
-      "durationInFrames": 1093,
+      "durationInFrames": 1020,
       "caption": "1, 2 or 3 carbon neighbours on the C-OH carbon gives primary, secondary, tertiary.",
       "voiceover": {
-        "text": "Primary, secondary, tertiary For alcohols and amines, classification comes from counting carbon neighbours on the key atom. Find the C-OH carbon, then count only its carbon neighbours. One carbon neighbour is primary (methanol is conventionally grouped with primary alcohols); two is secondary; three is tertiary. Same rule on nitrogen for amines: one, two or three alkyl groups. This classification is not just a label. It decides what oxidation products an alcohol can form, which matters in later lessons."
+        "text": "A few of these classes get split further into primary, secondary, and tertiary, and there's one clean rule for it. For an alcohol, find the carbon that carries the oxygen hydrogen group, then count how many other carbons are bonded to that one carbon. One carbon neighbour makes it primary, two makes it secondary, and three makes it tertiary. Don't count the oxygen, and don't count hydrogens, just the carbon neighbours. Ethanol is primary, propan-two-ol is secondary, and two-methylpropan-two-ol is tertiary. The same logic applies to amines, but you count the alkyl groups on the nitrogen instead. This isn't just a naming label, by the way. It decides what an alcohol can be oxidised to, which becomes the whole story in lesson twelve."
       }
     },
     {
@@ -211,15 +192,9 @@
       "heading": "Reading the carbonyl",
       "body": "Aldehyde, ketone and carboxylic acid all contain a C=O. What sits next to it decides which class you have.",
       "bullets": [
-        {
-          "text": "Hydrogen on the carbonyl carbon, at the chain end: aldehyde (-al)."
-        },
-        {
-          "text": "Two carbon neighbours on the carbonyl carbon: ketone (-one)."
-        },
-        {
-          "text": "An -OH on the carbonyl carbon, at the chain end: carboxylic acid (-oic acid)."
-        }
+        {"text": "Hydrogen on the carbonyl carbon, at the chain end: aldehyde (-al)."},
+        {"text": "Two carbon neighbours on the carbonyl carbon: ketone (-one)."},
+        {"text": "An -OH on the carbonyl carbon, at the chain end: carboxylic acid (-oic acid)."}
       ],
       "secondary": "Propanal and propanone are both C3H6O, but one is an aldehyde and one a ketone. This five second check stops the most common mix-up.",
       "callout": "Check what is bonded to the C=O carbon before you name it.",
@@ -368,15 +343,9 @@
       "heading": "Naming esters: alkyl alkanoate",
       "body": "Esters get a two-word name. The alkyl part comes from the alcohol and is written first; the alkanoate comes from the acid.",
       "bullets": [
-        {
-          "text": "Write the template \"alkyl alkanoate\" before you start."
-        },
-        {
-          "text": "Alkyl = the group on the single-bonded oxygen (from the alcohol)."
-        },
-        {
-          "text": "Alkanoate = the RCOO part (from the acid), written second."
-        }
+        {"text": "Write the template \"alkyl alkanoate\" before you start."},
+        {"text": "Alkyl = the group on the single-bonded oxygen (from the alcohol)."},
+        {"text": "Alkanoate = the RCOO part (from the acid), written second."}
       ],
       "secondary": "CH3COOCH2CH3 is ethyl ethanoate, never ethanoate ethyl. The alkyl always comes first.",
       "callout": "Alcohol first, then acid: alkyl alkanoate.",
@@ -488,15 +457,9 @@
       "heading": "Three kinds of structural isomer",
       "body": "Structural isomers share a molecular formula but differ in how the atoms connect. There are three types to tell apart.",
       "bullets": [
-        {
-          "text": "Chain isomers: same group, different carbon skeleton (butane vs 2-methylpropane)."
-        },
-        {
-          "text": "Position isomers: same group and skeleton, group in a different place (propan-1-ol vs propan-2-ol)."
-        },
-        {
-          "text": "Functional group isomers: same formula, different functional group (propanal vs propanone)."
-        }
+        {"text": "Chain isomers: same group, different carbon skeleton (butane vs 2-methylpropane)."},
+        {"text": "Position isomers: same group and skeleton, group in a different place (propan-1-ol vs propan-2-ol)."},
+        {"text": "Functional group isomers: same formula, different functional group (propanal vs propanone)."}
       ],
       "secondary": "If two drawings give the same IUPAC name, they are the same compound, not two isomers.",
       "callout": "Ask what changed: the skeleton, the position, or the group itself.",
@@ -691,14 +654,14 @@
       "steps": [
         "(a) Terminal C=O with an H → aldehyde; 3 carbons → propanal",
         "(b) Internal C=O between two carbons → ketone; 3 carbons → propanone",
-        "(c) C(=O)-O linkage → ester; acid part CH3CH2COO = propanoate",
+        "(c) C-O-O linkage → ester; acid part CH3CH2COO = propanoate",
         "(c) Alkyl part -OCH3 = methyl, written first",
         "Answer: (a) propanal, (b) propanone, (c) methyl propanoate ✓"
       ],
       "durationInFrames": 1290,
       "caption": "propanal, propanone, methyl propanoate.",
       "voiceover": {
-        "text": "Name across the classes Name: (a) CH3CH2CHO  (b) CH3COCH3  (c) CH3CH2COOCH3. (a) Terminal C=O with an H → aldehyde; 3 carbons → propanal (b) Internal C=O between two carbons → ketone; 3 carbons → propanone (c) C(=O)-O linkage → ester; acid part CH3CH2COO = propanoate (c) Alkyl part -OCH3 = methyl, written first Answer: (a) propanal, (b) propanone, (c) methyl propanoate ✓"
+        "text": "Let's name three compounds from different classes. Part a, C H three C H two C H O. The carbon double bond oxygen is at the end with a hydrogen on it, so it's an aldehyde, and with three carbons that's propanal. Part b, C H three C O C H three. Here the carbonyl is in the middle, between two carbons, so it's a ketone, and three carbons gives propanone. Part c, C H three C H two C O O C H three. That C O O linkage between two carbon groups is an ester, so we use the alkyl alkanoate pattern. The acid part, C H three C H two C O O, is propanoate. The alkyl part, the O C H three, is methyl, and it goes first. So the name is methyl propanoate. Functional group first every time, and for the ester, the alcohol part leads."
       }
     },
     {

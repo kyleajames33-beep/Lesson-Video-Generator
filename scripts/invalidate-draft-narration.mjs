@@ -1,0 +1,12 @@
+import {readFileSync} from 'node:fs';
+import {invalidateDraftNarration} from './lib/draft-invalidation.mjs';
+import {writeIsolatedPackage} from './lib/isolated-output.mjs';
+import {sha256} from './lib/playback-assembly.mjs';
+const args = process.argv.slice(2), input = args.filter(a => !a.startsWith('--'));
+const output = args.find(a => a.startsWith('--output='))?.slice(9);
+if (input.length !== 2 || !output) throw new Error('Usage: npm run draft:invalidate -- before.json edited.json --output=out/review/new-draft');
+const bytes = input.map(file => readFileSync(file));
+const result = invalidateDraftNarration(...bytes.map(b => JSON.parse(b)));
+result.report.inputs = input.map((file, i) => ({file, sha256: sha256(bytes[i])}));
+console.log(writeIsolatedPackage(output, {'lesson.json': result.draft, 'invalidation.json': result.report}));
+console.log(`${result.report.changes.length} changed segments invalidated. Inputs and media are unchanged; no generation authorised.`);

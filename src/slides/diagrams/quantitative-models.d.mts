@@ -1,0 +1,11 @@
+export type ConductometricParameters = {lambda?: {H: number; OH: number; Cl: number; Na: number}; units?: number; vAcid?: number; vPerUnit?: number};
+export type ConductometricCues = {runAt: number; epAt: number; endAt: number};
+export const CONDUCTOMETRIC_LAMBDA: Readonly<{H: number; OH: number; Cl: number; Na: number}>;
+export const NEUTRALISATION_AMOUNT_RULE: string;
+export const CONDUCTOMETRIC_DESCRIPTION: string;
+export function createConductometricModel(parameters?: ConductometricParameters): {ions(added: number): {H: number; OH: number; Cl: number; Na: number}; signal(added: number): number; maximum: number; equivalenceUnits: number; totalUnits: number};
+export function conductometricAddedAt(frame: number, units: number, cues: ConductometricCues): number;
+export function conductometricIonArrival(ion: 'Na' | 'OH', index: number, units: number, cues: ConductometricCues): number;
+export function validateQuantitativeDiagram(diagram: unknown, options?: {requireCues?: boolean}): string[];
+export type HeatLedgerStep = {label: string; sub?: string; kind: 'release' | 'cost' | 'net'; value: number; valueText?: string; at?: number};
+export function heatLedgerModel(props?: {steps?: HeatLedgerStep[]; markers?: {value: number; label: string; at?: number}[]; reference?: {value: number; label: string; at?: number}; floor?: {value: number; label: string; at?: number}; markerRange?: [number, number]; scaleMax?: number}): {scaleMax: number; markerRange: [number, number]; reference: {value: number; label: string; at?: number} | null; blocks: {s: HeatLedgerStep; top: number; bottom: number}[]};

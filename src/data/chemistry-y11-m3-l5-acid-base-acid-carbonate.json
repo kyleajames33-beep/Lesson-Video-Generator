@@ -55,16 +55,20 @@
       "body": "Acids react with two important kinds of base in HSC. The products always follow a fixed pattern, depending on which kind of base it is.",
       "bullets": [
         {
-          "text": "Acid + base (hydroxide or oxide) → salt + water."
+          "text": "Acid + base (hydroxide or oxide) → salt + water.",
+          "at": 4
         },
         {
-          "text": "Acid + carbonate → salt + water + CO₂ gas."
+          "text": "Acid + carbonate → salt + water + CO₂ gas.",
+          "at": 11
         },
         {
-          "text": "The salt's cation comes from the base. The anion comes from the acid."
+          "text": "The salt's cation comes from the base. The anion comes from the acid.",
+          "at": 19
         },
         {
-          "text": "With sufficient acid, carbonate neutralisation releases CO₂ — that's the fizz."
+          "text": "Carbonates always release CO₂ — that's the fizz.",
+          "at": 27
         }
       ],
       "callout": "Hydroxide → no fizz. Carbonate → fizz.",
@@ -75,8 +79,14 @@
       },
       "durationInFrames": 1260,
       "caption": "Two product patterns. The carbonate one always includes CO₂.",
+      "revealDelays": {
+        "heading": 15,
+        "callout": 1020,
+        "diagram": 90
+      },
       "voiceover": {
-        "text": "Two reactions, two product sets. Acid plus base — meaning a hydroxide or an oxide — gives a salt plus water. That's neutralisation. Acid plus carbonate gives a salt plus water plus carbon dioxide gas. The cation in the salt always comes from the base. The anion always comes from the acid. So HCl plus NaOH gives sodium chloride: sodium from the base, chloride from the acid. And carbonates release carbon dioxide with sufficient acid — that's the fizz you see when an antacid tablet drops into water."
+        "text": "Two reactions, two product sets. Acid plus base — meaning a hydroxide or an oxide — gives a salt plus water. That's neutralisation. Acid plus carbonate gives a salt plus water plus carbon dioxide gas. The cation in the salt always comes from the base. The anion always comes from the acid. So HCl plus NaOH gives sodium chloride: sodium from the base, chloride from the acid. And carbonates always release CO two — that's the fizz you see when an antacid tablet drops into water.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L5/concept.56535ad07a34.mp3"
       }
     },
     {
@@ -243,20 +253,28 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Your turn",
-      "question": "A patient takes magnesium hydroxide Mg(OH)₂(s) for stomach acid (HCl). Predict the products, write the balanced equation with states, and explain in one sentence why this reaction does not produce CO₂.",
+      "question": "A patient takes magnesium hydroxide Mg(OH)₂(s) for stomach acid (HCl). Predict the products, write the balanced equation with states, and explain in one sentence why the patient does NOT burp.",
       "pausePrompt": "Pause: identify reaction type, find the salt, balance, then explain.",
       "answerSteps": [
         "Identify type: acid + base (hydroxide) → salt + water (NOT a carbonate, so no SWC).",
         "Identify the salt: Mg²⁺ from Mg(OH)₂ + Cl⁻ from HCl → MgCl₂.",
         "Unbalanced: HCl(aq) + Mg(OH)₂(s) → MgCl₂(aq) + H₂O(l).",
         "Balance: 2 HCl needed (2 Cl needed); 2 H₂O needed (4 H total). 2HCl(aq) + Mg(OH)₂(s) → MgCl₂(aq) + 2H₂O(l).",
-        "Answer = no CO₂ produced. Mg(OH)₂ is a hydroxide, not a carbonate — this reaction generates no CO₂; it does not predict all bodily burping."
+        "Answer = no CO₂ produced. Mg(OH)₂ is a hydroxide, not a carbonate — no fizz, no burp."
       ],
       "image": "l5QuickCheckMgOH2",
-      "durationInFrames": 1620,
+      "durationInFrames": 1500,
       "caption": "2HCl(aq) + Mg(OH)₂(s) → MgCl₂(aq) + 2H₂O(l). No CO₂ — no burp.",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 540,
+        "answerInterval": 100
+      },
       "voiceover": {
-        "text": "Your turn. A patient takes magnesium hydroxide for stomach acid. Predict the products, balance the equation, and explain why this reaction does not produce carbon dioxide. Pause now and try before the answer plays. This is acid plus a hydroxide base — neutralisation, not SWC. Salt: magnesium chloride. Magnesium hydroxide has two hydroxide groups, so we need two HCl on the left and two H two O on the right. Final equation: two HCl plus Mg of OH twice gives MgCl two plus two H two O. No CO two produced anywhere. Magnesium hydroxide is a hydroxide, not a carbonate — so this reaction does not generate carbon dioxide; this does not predict every reason a patient might burp."
+        "text": "Your turn. A patient takes magnesium hydroxide for stomach acid. Predict the products, balance the equation, and explain why there's no burp. Pause now and try before the answer plays. This is acid plus a hydroxide base — neutralisation, not SWC. Salt: magnesium chloride. Magnesium hydroxide has two hydroxide groups, so we need two HCl on the left and two H two O on the right. Final equation: two HCl plus Mg of OH twice gives MgCl two plus two H two O. No CO two produced anywhere. Magnesium hydroxide is a hydroxide, not a carbonate — that's why the patient doesn't burp.",
+        "audioFile": "public/audio/Chemistry-Y11-M3-L5/quick-check.321533463aec.mp3"
       }
     },
     {

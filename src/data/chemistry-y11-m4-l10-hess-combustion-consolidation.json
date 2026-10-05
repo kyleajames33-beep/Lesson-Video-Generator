@@ -163,20 +163,27 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Your turn",
-      "question": "A question gives you ΔH for ethyne combustion (−1300 kJ mol⁻¹) and ΔH for ethane combustion (−1560 kJ mol⁻¹), then asks for ΔH of the hydrogenation of ethyne: C₂H₂ + 2H₂ → C₂H₆. Which method do you use, and why? Is enough information supplied to calculate a numerical answer?",
+      "question": "A question gives you ΔH for ethyne combustion (−1300 kJ mol⁻¹) and ΔH for ethane combustion (−1560 kJ mol⁻¹), then asks for ΔH of the hydrogenation of ethyne: C₂H₂ + 2H₂ → C₂H₆. Which method do you use, and why?",
       "pausePrompt": "Pause: look at what you've been given. What method fits?",
       "answerSteps": [
         "Given: two combustion ΔH values for ethyne and ethane.",
         "Target: hydrogenation reaction (C₂H₂ + 2H₂ → C₂H₆).",
         "No bond energies, no ΔH°f table, only equations and their ΔH.",
         "Method choice: Hess's Law from given equations (reverse + scale + add).",
-        "Answer: use Hess from given combustion equations, set up so C₂H₂ + 2H₂ → C₂H₆ comes out after reversing the ethane combustion.",
-        "A numerical result also requires the enthalpy for H₂ combustion; the two hydrocarbon values alone are insufficient."
+        "Answer: use Hess from given combustion equations, set up so C₂H₂ + 2H₂ → C₂H₆ comes out after reversing the ethane combustion."
       ],
-      "durationInFrames": 1672,
+      "durationInFrames": 1380,
       "caption": "Method choice: Hess from given equations (no table, no bond energies).",
+      "revealDelays": {
+        "heading": 15,
+        "question": 60,
+        "pausePrompt": 180,
+        "answerStart": 600,
+        "answerInterval": 110
+      },
       "voiceover": {
-        "text": "Your turn — but this one's about method choice, not calculation. The question gives you delta H for ethyne combustion and ethane combustion, and asks for delta H of the hydrogenation of ethyne. Pause and decide: which method do you use? You weren't given bond energies. You weren't given a formation table. You were given two thermochemical equations with their delta H values. That's the Hess-from-equations setup. You'd reverse the ethane combustion to get ethane as a product, then add it to the ethyne combustion, and the right combination produces the hydrogenation reaction. But the two hydrocarbon combustion values alone are insufficient for a numerical result. We also need hydrogen’s combustion enthalpy to account for the two hydrogen molecules in the target reaction."
+        "text": "Your turn — but this one's about method choice, not calculation. The question gives you delta H for ethyne combustion and ethane combustion, and asks for delta H of the hydrogenation of ethyne. Pause and decide: which method do you use? You weren't given bond energies. You weren't given a formation table. You were given two thermochemical equations with their delta H values. That's the Hess-from-equations setup. You'd reverse the ethane combustion to get ethane as a product, then add it to the ethyne combustion, and the right combination produces the hydrogenation reaction.",
+        "audioFile": "public/audio/Chemistry-Y11-M4-L10/quick-check.0914064daec4.mp3"
       }
     },
     {

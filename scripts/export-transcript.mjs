@@ -1,86 +1,35 @@
 import {mkdirSync, readFileSync, readdirSync, writeFileSync} from 'node:fs';
 import path from 'node:path';
-import process from 'node:process';
 import {getCompositionId} from './lesson-utils.mjs';
-
-const dataDir = path.resolve('src/data');
-const outputDir = process.argv[2] ?? 'out/transcripts';
-const lessonArgs = process.argv.slice(3);
-
-const formatTimestamp = (seconds) => {
-  const clamped = Math.max(0, seconds);
-  const hours = Math.floor(clamped / 3600);
-  const minutes = Math.floor((clamped % 3600) / 60);
-  const wholeSeconds = Math.floor(clamped % 60);
-  const milliseconds = Math.round((clamped - Math.floor(clamped)) * 1000);
-
-  return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(wholeSeconds).padStart(2, '0')}.${String(milliseconds).padStart(3, '0')}`;
-};
-
-const getLessonFiles = () => {
-  if (lessonArgs.length > 0) {
-    return lessonArgs.map((file) => path.resolve(file));
-  }
-
-  return readdirSync(dataDir)
-    .filter((file) => file.endsWith('.json'))
-    .sort()
-    .map((file) => path.join(dataDir, file));
-};
-
+import {lessonCaptionCues, toVtt} from './lib/caption-timeline.mjs';
+// Accept documented lesson-first usage and legacy output-dir-first usage.
+const args = process.argv.slice(2);
+const option = args.find(a => a.startsWith('--output-dir='));
+const positional = args.filter(a => !a.startsWith('--'));
+const oldOutput = positional[0] && !positional[0].endsWith('.json') ? positional.shift() : undefined;
+const outputDir = option?.slice('--output-dir='.length) ?? oldOutput ?? 'out/transcripts';
+const files = positional.length ? positional : readdirSync('src/data').filter(f => f.endsWith('.json')).sort().map(f => path.join('src/data', f));
+const resolved = files.map(file => {
+  const lesson = JSON.parse(readFileSync(file, 'utf8'));
+  const {timeline, cues: speechCues, warnings} = lessonCaptionCues(lesson);
+  const cues = timeline.scenes.map(({scene, startFrame, endFrame, audioStartMs}) => ({
+    sceneId: scene.id, type: scene.type, startFrame, endFrame,
+    startSeconds: startFrame / timeline.fps, endSeconds: endFrame / timeline.fps,
+    audioStartSeconds: audioStartMs / 1000, caption: scene.caption,
+    text: scene.voiceover?.text ?? scene.caption,
+  }));
+  return {lesson, file, cues, speechCues, warnings, timeline, id: getCompositionId(lesson)};
+});
 mkdirSync(outputDir, {recursive: true});
-
-for (const lessonPath of getLessonFiles()) {
-  const lesson = JSON.parse(readFileSync(lessonPath, 'utf8'));
-  const compositionId = getCompositionId(lesson);
-  const fps = lesson.fps ?? 30;
-  const transitionFrames = 24;
-  let cursor = 0;
-
-  const cues = lesson.scenes.map((scene, index) => {
-    const startFrame = cursor;
-    const endFrame = startFrame + scene.durationInFrames;
-    cursor = endFrame - (index === lesson.scenes.length - 1 ? 0 : transitionFrames);
-
-    return {
-      sceneId: scene.id,
-      type: scene.type,
-      startFrame,
-      endFrame,
-      startSeconds: Number((startFrame / fps).toFixed(3)),
-      endSeconds: Number((endFrame / fps).toFixed(3)),
-      caption: scene.caption,
-      text: scene.voiceover?.text ?? scene.caption,
-    };
-  });
-
-  const transcript = {
-    compositionId,
-    sourceJson: path.relative(process.cwd(), lessonPath).replace(/\\/g, '/'),
-    title: lesson.title,
-    syllabusVersion: lesson.syllabusVersion ?? null,
-    syllabusModule: lesson.syllabusModule ?? null,
-    syllabusDotPoints: lesson.syllabusDotPoints ?? [],
-    productionRole: lesson.productionRole ?? 'production',
-    fps,
-    cues,
-  };
-
-  const jsonPath = path.join(outputDir, `${compositionId}.json`);
-  const vttPath = path.join(outputDir, `${compositionId}.vtt`);
-  const vtt = [
-    'WEBVTT',
-    '',
-    ...cues.flatMap((cue, index) => [
-      String(index + 1),
-      `${formatTimestamp(cue.startSeconds)} --> ${formatTimestamp(cue.endSeconds)}`,
-      cue.text,
-      '',
-    ]),
-  ].join('\n');
-
-  writeFileSync(jsonPath, `${JSON.stringify(transcript, null, 2)}\n`);
-  writeFileSync(vttPath, `${vtt}\n`);
-  console.log(`Wrote ${jsonPath}`);
-  console.log(`Wrote ${vttPath}`);
+for (const {lesson, file, cues, speechCues, warnings, timeline, id} of resolved) {
+  const transcript = {compositionId: id, sourceJson: path.relative(process.cwd(), file).replace(/\\/g, '/'),
+    title: lesson.title, syllabusVersion: lesson.syllabusVersion ?? null, syllabusModule: lesson.syllabusModule ?? null,
+    syllabusDotPoints: lesson.syllabusDotPoints ?? [], productionRole: lesson.productionRole ?? 'production',
+    fps: timeline.fps, durationSeconds: timeline.durationMs / 1000, introText: lesson.introVoiceover?.text ?? null,
+    cues, speechCues, warnings};
+  writeFileSync(path.join(outputDir, id + '.json'), JSON.stringify(transcript, null, 2) + '\n');
+  // Only aligned speech becomes subtitles. Scene summaries remain in JSON.
+  writeFileSync(path.join(outputDir, id + '.vtt'), toVtt(speechCues));
+  for (const warning of warnings) console.warn(`${id}: ${warning}`);
+  console.log(`Exported ${id} transcript and aligned speech VTT.`);
 }

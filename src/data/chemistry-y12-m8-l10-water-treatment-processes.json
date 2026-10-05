@@ -8,17 +8,11 @@
   "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
   "syllabusModule": "Module 8: Applying Chemical Ideas",
   "syllabusDotPoints": [
-    "Module 8 environmental-monitoring and synthesis/design context; treatment details are extension. (Audit mapping paraphrase, not an official quotation.)"
+    "analyse the need for monitoring the environment",
+    "investigate the chemistry involved in the maintenance of water quality in a chosen body of water"
   ],
   "moduleLessonCount": 16,
-  "nesaOutcomes": [
-    "CH12-15",
-    "CH11/12-1",
-    "CH11/12-2",
-    "CH11/12-3",
-    "CH11/12-4",
-    "CH11/12-7"
-  ],
+  "nesaOutcomes": ["CH12-15", "CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-7"],
   "inquiryQuestion": "How are the ions present in the environment identified and measured?",
   "lessonIntent": "Students can describe each stage of the drinking-water treatment train by its chemical purpose and explain why HOCl is the active disinfecting species.",
   "examSkill": "Link a water-quality problem to the correct treatment stage, and use the HOCl/OCl- equilibrium to explain how pH controls disinfection.",
@@ -59,30 +53,12 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Treatment",
-        "props": {
-          "mode": "train",
-          "beats": [
-            154,
-            244,
-            327,
-            417,
-            475,
-            516,
-            590,
-            853
-          ]
-        }
+        "props": {"mode": "train", "beats": [154, 244, 327, 417, 475, 516, 590, 853]}
       },
       "bullets": [
-        {
-          "text": "Coagulation and flocculation: destabilise and clump fine particles."
-        },
-        {
-          "text": "Sedimentation and filtration: settle then strain the solids out."
-        },
-        {
-          "text": "Disinfection: the final step that reduces pathogen risk."
-        }
+        {"text": "Coagulation and flocculation: destabilise and clump fine particles."},
+        {"text": "Sedimentation and filtration: settle then strain the solids out."},
+        {"text": "Disinfection: the final step that reduces pathogen risk."}
       ],
       "secondary": "Clear-looking water can still hold fine particles, dissolved organics, and microbes. Each stage targets a different class of risk.",
       "callout": "Don't call treatment just adding chlorine. That's only the last stage.",
@@ -98,15 +74,9 @@
       "heading": "Coagulation chemistry",
       "body": "Many particles in raw water are too small and too stable to settle on their own. Alum changes that.",
       "bullets": [
-        {
-          "text": "Alum, Al2(SO4)3, provides Al3+ ions in the water."
-        },
-        {
-          "text": "Al3+ plus 3H2O gives Al(OH)3 colloid plus 3H+."
-        },
-        {
-          "text": "The Al(OH)3 colloid adsorbs and destabilises the particles."
-        }
+        {"text": "Alum, Al2(SO4)3, provides Al3+ ions in the water."},
+        {"text": "Al3+ plus 3H2O gives Al(OH)3 colloid plus 3H+."},
+        {"text": "The Al(OH)3 colloid adsorbs and destabilises the particles."}
       ],
       "secondary": "Flocculation then uses gentle mixing to grow larger flocs, and sedimentation lets gravity pull them down. Coagulation is about particles, not killing microbes.",
       "callout": "Al(OH)3 is the workhorse: it grabs particles by adsorption.",
@@ -118,19 +88,7 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Treatment",
-        "props": {
-          "mode": "coag",
-          "beats": [
-            47,
-            208,
-            308,
-            331,
-            461,
-            598,
-            706,
-            767
-          ]
-        }
+        "props": {"mode": "coag", "beats": [47, 208, 308, 331, 461, 598, 706, 767]}
       }
     },
     {
@@ -139,15 +97,9 @@
       "heading": "Filtration and the organics problem",
       "body": "Sedimentation removes a lot, but not everything. Filtration is the next barrier for the smaller particles left behind.",
       "bullets": [
-        {
-          "text": "Sand and gravel beds trap remaining particulate matter."
-        },
-        {
-          "text": "Activated carbon adsorbs dissolved organics affecting taste and odour."
-        },
-        {
-          "text": "Removing organics before chlorination is chemically important."
-        }
+        {"text": "Sand and gravel beds trap remaining particulate matter."},
+        {"text": "Activated carbon adsorbs dissolved organics affecting taste and odour."},
+        {"text": "Removing organics before chlorination is chemically important."}
       ],
       "secondary": "Dissolved organic matter can react with chlorine to form disinfection by-products. Stripping organics out first lowers that risk downstream.",
       "callout": "Cut the organics now, or pay in by-products later.",
@@ -159,16 +111,7 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Treatment",
-        "props": {
-          "mode": "filter",
-          "beats": [
-            94,
-            204,
-            459,
-            518,
-            591
-          ]
-        }
+        "props": {"mode": "filter", "beats": [94, 204, 459, 518, 591]}
       }
     },
     {
@@ -177,15 +120,9 @@
       "heading": "Chlorination and pH",
       "body": "When chlorine is added, the real question isn't the dose. It's which chemical species is present.",
       "bullets": [
-        {
-          "text": "Cl2 plus H2O gives HOCl plus HCl."
-        },
-        {
-          "text": "Then HOCl is in equilibrium with H+ plus OCl minus."
-        },
-        {
-          "text": "HOCl is the more effective disinfecting species."
-        }
+        {"text": "Cl2 plus H2O gives HOCl plus HCl."},
+        {"text": "Then HOCl is in equilibrium with H+ plus OCl minus."},
+        {"text": "HOCl is the more effective disinfecting species."}
       ],
       "secondary": "As pH rises, more chlorine sits as OCl minus, the weaker disinfectant. So lower pH favours HOCl and stronger disinfection. pH matters even after dosing.",
       "callout": "Lower pH, more HOCl, stronger kill.",
@@ -197,17 +134,7 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Ionisation",
-        "props": {
-          "mode": "hocl",
-          "beats": [
-            216,
-            334,
-            444,
-            547,
-            602,
-            752
-          ]
-        }
+        "props": {"mode": "hocl", "beats": [216, 334, 444, 547, 602, 752]}
       }
     },
     {
@@ -215,18 +142,10 @@
       "type": "definition",
       "heading": "Disinfection trade-offs",
       "bullets": [
-        {
-          "text": "DBPs: by-products like trihalomethanes, formed when chlorine meets organic matter."
-        },
-        {
-          "text": "UV: no DBPs, but leaves no residual disinfectant in the pipes."
-        },
-        {
-          "text": "Ozone: powerful, but no residual and high energy cost."
-        },
-        {
-          "text": "Chloramines: fewer DBPs and a residual, but slower than free chlorine."
-        }
+        {"text": "DBPs: by-products like trihalomethanes, formed when chlorine meets organic matter."},
+        {"text": "UV: no DBPs, but leaves no residual disinfectant in the pipes."},
+        {"text": "Ozone: powerful, but no residual and high energy cost."},
+        {"text": "Chloramines: fewer DBPs and a residual, but slower than free chlorine."}
       ],
       "callout": "Reverse osmosis removes salts, but it's energy-hungry.",
       "durationInFrames": 1020,
@@ -275,15 +194,16 @@
       "question": "A large network wants strong disinfection while limiting DBP formation. Compare free chlorine with chloramines, and recommend an approach.",
       "pausePrompt": "Pause and work it through.",
       "answerSteps": [
-        "Free chlorine generally disinfects faster; chloramine can provide a persistent residual.",
-        "Chloramination can reduce some DBPs but creates other risks.",
-        "Remove precursors and validate primary disinfection.",
-        "Choose and monitor a secondary residual suited to the plant and network."
+        "Free chlorine: strong, fast, leaves a residual, but forms more DBPs with organics.",
+        "Chloramines: form fewer DBPs and still leave a residual, but act more slowly.",
+        "Reducing organics first lowers DBP risk for either choice.",
+        "Recommendation: remove organics, then use chloramines for residual protection.",
+        "Answer: chloramines balance residual protection against lower DBP formation."
       ],
       "durationInFrames": 1050,
-      "caption": "Primary disinfection and secondary residual are distinct design decisions.",
+      "caption": "Remove organics first, then chloramines for residual with fewer DBPs.",
       "voiceover": {
-        "text": "Free chlorine generally provides faster primary disinfection than chloramines under comparable conditions. Chloramines can provide a longer-lasting distribution residual and reduce some chlorinated by-products, but they also have different by-product and nitrification risks. Remove organic precursors and validate primary disinfection first. A plant may then use an appropriate secondary residual such as chloramine if monitoring, pathogen control and water chemistry support it. There is no universally best disinfectant based on a simple fewer-by-products claim."
+        "text": "Quick check, an evaluate-style question. A large distribution network wants strong disinfection but also wants to limit by-product formation. Compare free chlorine with chloramines, and recommend an approach. Pause and work it through. Right, let's reason it out. Step one, free chlorine. It's strong and fast and it leaves a residual, but it forms more by-products when organic matter is present. Step two, chloramines. They form fewer by-products and still leave a useful residual, but they disinfect more slowly. Step three, whichever you choose, removing organics first lowers the by-product risk. Step four, so the recommendation, strip the organics out, then use chloramines for the residual protection through the pipes. The answer, chloramines are usually the better balance here, because they keep a residual while cutting by-product formation, and that's exactly the trade-off the question is testing."
       }
     },
     {
@@ -304,6 +224,5 @@
         "text": "Let's lock it in. Five things to take away. First, drinking water treatment is a multi-barrier train, not a single step, with each stage solving a different problem. Second, in coagulation, alum hydrolyses to an aluminium hydroxide colloid that adsorbs suspended particles so they can settle. Third, in chlorination, hypochlorous acid is the active disinfectant, and lower pH favours it over the weaker hypochlorite ion. Fourth, remove organic matter before chlorination, or chlorine reacts with it to form by-products like trihalomethanes. And fifth, every disinfection method is a trade-off between speed, residual protection, and by-product risk. When you get a treatment question, match each water-quality problem to its specific stage. Next lesson, we move into medicinal chemistry, starting with drug functional groups. See you there."
       }
     }
-  ],
-  "productionNotes": "2017 syllabus mapping checked: Module 8 environmental-monitoring and synthesis/design context; treatment details are extension."
+  ]
 }

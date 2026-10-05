@@ -213,20 +213,24 @@
       "body": "Xylem carries water and minerals up; phloem carries sugars; root hairs absorb.",
       "bullets": [
         {
-          "text": "Stem: vascular bundles in a ring; xylem towards the centre, phloem towards the outside."
+          "text": "Stem: vascular bundles in a ring; xylem towards the centre, phloem towards the outside.",
+          "at": 2.4
         },
         {
-          "text": "Xylem: thick-walled, hollow tubes, stained by the dye: water transport."
+          "text": "Xylem: thick-walled, hollow tubes, stained by the dye: water transport.",
+          "at": 11.6
         },
         {
-          "text": "Phloem: smaller living cells with sieve plates: sugar transport."
+          "text": "Phloem: living transport tissue carrying sugars and other solutes dissolved in water.",
+          "at": 22
         },
         {
-          "text": "Root: root hair cells give a huge surface area for absorbing water and minerals."
+          "text": "Root: root hair cells give a huge surface area for absorbing water and minerals.",
+          "at": 37.6
         }
       ],
-      "callout": "Every claim about function is backed by an observation.",
-      "caption": "Stem: ring of bundles. Root: central xylem, root hairs taking up water.",
+      "callout": "The dye traces the xylem pathway in this setup; lack of phloem staining is not proof that phloem carries no water.",
+      "caption": "Xylem carries the dyed water in this setup; phloem transports sugars dissolved in water.",
       "diagram": {
         "type": "diorama",
         "kind": "bio11m2Sections",
@@ -255,7 +259,7 @@
               "tone": "amber"
             },
             {
-              "text": "phloem",
+              "text": "phloem: sugars dissolved in water",
               "at": 660,
               "anchor": "phloemS",
               "x": 330,
@@ -280,9 +284,12 @@
         "delay": 6
       },
       "voiceover": {
-        "text": "Now the stem and the root. In a stem section, the vascular bundles sit in a ring, with the xylem towards the centre and the phloem towards the outside. The xylem shows up as thick-walled, hollow tubes, and if the stem stood in dye, these are the stained ones. That's direct evidence they carry water. The phloem is made of smaller, living cells with sieve plates, and it carries sugars dissolved in water. Lack of staining here does not show that phloem transports no water. In a root section, the xylem forms a star in the centre, with phloem between its arms. And on the outside are root hair cells, whose long extensions give a huge surface area for absorbing water and minerals, which then pass inwards to the xylem."
+        "text": "Now the stem and root. In a stem section, vascular bundles sit in a ring, with xylem towards the centre and phloem towards the outside. Xylem appears as thick-walled hollow vessels, and in a celery dye setup these are the structures that become visibly stained, which traces the main pathway of the dyed water. Phloem is living transport tissue with sieve elements and companion cells; it carries sugars and other solutes dissolved in water. If the dye does not visibly stain phloem in this setup, that does not prove that phloem contains no water. In roots, root hairs increase surface area for absorbing water and mineral ions before water enters the xylem."
       },
-      "durationInFrames": 1762
+      "durationInFrames": 1524,
+      "revealDelays": {
+        "diagram": 6
+      }
     },
     {
       "id": "definition",
@@ -320,17 +327,17 @@
       "question": "A celery stalk is left overnight in red dye and then cut across. Describe what a student would observe, and explain how that observation is evidence for the function of a named tissue.",
       "coachNote": "Describe first, then infer. What you see is not the same as what it means.",
       "steps": [
-        "Observe: discrete red dots near the outer edge of the cut surface, not a uniformly red surface.",
-        "Identify: the red dots are xylem vessels inside the vascular bundles.",
-        "Infer: the dye travelled up from the base, so water moved up through those vessels.",
-        "So xylem transports water and dissolved minerals upward, drawn by the transpiration stream.",
-        "Unstained phloem does not establish absence of water transport: phloem transports sugars in an aqueous solution."
+        "Observe: discrete red-stained vascular regions are visible in the cut celery stalk rather than the whole surface staining uniformly.",
+        "Identify: the stained vessels are xylem in the vascular bundles.",
+        "Infer: the dye moved with water through xylem, so this setup traces the xylem water-transport pathway.",
+        "Do not infer that unstained phloem carries no water; phloem translocates sugars and other solutes in an aqueous sap.",
+        "Answer: observation supports xylem water transport, not absence of water from phloem ✓"
       ],
-      "caption": "Stained xylem traces water movement in this setup; phloem also transports water with sugars.",
+      "caption": "Celery dye traces xylem water transport; unstained phloem does not mean water-free phloem.",
       "voiceover": {
-        "text": "Let's read an observation as evidence. A celery stalk sits in red dye overnight, then it's cut across. First, describe what you see. The cut surface shows separate red dots near the outer edge, not an evenly red surface. Then identify them. Those dots are the xylem vessels in the vascular bundles. Now the inference. The dye started in the water at the base, and travelled up, so water must have moved up through those vessels. That's evidence that xylem transports water and dissolved minerals upward. And the phloem stayed unstained in this setup. That does not mean it carries no water: its sugars travel in an aqueous solution."
+        "text": "Read the celery result as evidence, not as more than it can show. You observe red-stained vascular regions in the cut stalk. Those stained vessels are xylem, so the dye has moved with water through the xylem pathway. That supports the function of xylem in water transport. But do not say that unstained phloem proves phloem carries no water. Phloem sap is aqueous: sugars and other solutes are transported dissolved in water. The dye experiment traces one pathway under these conditions; it does not establish that water is absent from every other tissue."
       },
-      "durationInFrames": 1492
+      "durationInFrames": 1284
     },
     {
       "id": "misconception",

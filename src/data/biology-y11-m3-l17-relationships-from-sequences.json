@@ -17,8 +17,8 @@
     "BI-11WS-04",
     "BI-11WS-05"
   ],
-  "lessonIntent": "Students can align DNA or amino-acid sequences, count and tabulate differences in a difference matrix, infer relative relatedness and sketch a phylogenetic tree, stating the molecular-clock assumption and a limitation.",
-  "examSkill": "Fewer differences means a more recent common ancestor: rank the pairs, join the most similar first, and state the assumption.",
+  "lessonIntent": "Students can align DNA or amino-acid sequences, count and tabulate differences, use a simplified classroom distance comparison to infer relative relatedness, and state the assumptions and limitations without implying that all phylogenetic methods require a strict molecular clock.",
+  "examSkill": "For a supplied classroom dataset, fewer differences can support a more recent common ancestor when compared consistently. Treat equal-rate reasoning as a simplifying assumption, not a universal rule of phylogenetics.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -131,10 +131,10 @@
       "id": "concept-tree",
       "type": "concept",
       "heading": "From counts to a tree",
-      "body": "Illustrative cytochrome-c difference counts for practising a simplified inference; not measured data.",
+      "body": "Use this as an illustrative classroom dataset showing how simple sequence-difference counts can be turned into a relative branching hypothesis.",
       "bullets": [
         {
-          "text": "Amino-acid differences from humans: chimpanzee 0, rhesus monkey 1, horse 12, tuna 21, baker's yeast 44."
+          "text": "Illustrative amino-acid differences from a human reference: chimpanzee 0, rhesus monkey 1, horse 12, tuna 21, baker's yeast 44."
         },
         {
           "text": "Join the least different species at the most recent branch point; more different species join further back."
@@ -143,17 +143,17 @@
           "text": "A difference of 0 does not make a chimpanzee a human: this protein is so constrained it has barely changed."
         }
       ],
-      "callout": "The ordering matches anatomy and fossils: independent methods agree.",
-      "caption": "Illustrative differences from humans, turned into a branching order.",
+      "callout": "Illustrative counts show the method; they are not presented as a sourced experimental table.",
+      "caption": "Illustrative sequence-difference counts used to build a simple branching hypothesis.",
       "voiceover": {
-        "text": "Let's use an illustrative, simplified dataset, not a verified sequence alignment. Cytochrome c is a small respiratory protein, found in almost every aerobic organism, so it's great for comparing very distant groups. Count the amino-acid differences from the human sequence. Chimpanzee, zero. Rhesus monkey, one. Horse, twelve. Tuna, twenty-one. Baker's yeast, forty-four. Now build the tree. The least different species joins our lineage at the most recent branch point, and more different species branch off further back. So yeast splits off first, then tuna, then horse, then the monkey. And a zero doesn't make a chimp a human. This protein is so constrained that it simply hasn't changed. Notice the order matches what anatomy and fossils tell us."
+        "text": "Let's use an illustrative classroom dataset to practise the method. Imagine a conserved protein compared with a human reference. The supplied difference counts are chimpanzee zero, rhesus monkey one, horse twelve, tuna twenty one and baker's yeast forty four. For this simplified exercise, fewer differences are treated as evidence of a more recent common ancestor with the reference. That produces a relative branching hypothesis. These numbers are illustrative unless an exact sequence source or accession is supplied, so do not call them a real experimental table. And this simple distance ranking uses an equal-rate style assumption for teaching; phylogenetic methods in general do not all require a strict molecular clock."
       },
       "diagram": {
         "type": "diorama",
         "kind": "bio11m3Seq",
         "props": {
           "mode": "tree",
-          "title": "Cytochrome c: amino-acid differences from humans",
+          "title": "Illustrative conserved-protein differences from human",
           "reference": "Human",
           "unit": "differences",
           "species": [
@@ -188,14 +188,14 @@
           },
           "footer": [
             {
-              "text": "Branching order only: a 0 is not \"the same species\"",
+              "text": "Illustrative counts; simple distance ranking, not a universal molecular-clock rule",
               "at": 1001,
               "amber": true
             }
           ]
         }
       },
-      "durationInFrames": 1608
+      "durationInFrames": 1433
     },
     {
       "id": "concept-limits",
@@ -216,7 +216,7 @@
       "callout": "Treat any tree as a hypothesis to test.",
       "caption": "The molecular clock assumption, and how to improve validity and reliability.",
       "voiceover": {
-        "text": "So how far can we trust a tree like that? This simple difference-count ranking assumes comparable evolutionary rates, that mutations build up at a roughly steady rate. That's not perfectly true for every gene, and rates can vary between lineages. Next, one short sequence can mislead. A few differences more or less can swap the order. So how do you make it better? For validity, compare the same conserved sequence in every species, and align it carefully. For reliability, repeat with more genes or proteins, and check that the trees agree. And remember, the tree is a hypothesis, to be tested against other evidence. A molecular clock is useful for estimating divergence times, but is not required by every method of inferring a tree. Robust trees use aligned sequences, appropriate models and additional evidence."
+        "text": "So how far can we trust a tree like that? The whole method assumes a molecular clock, that mutations build up at a roughly steady rate. That's not perfectly true for every gene, and rates can vary between lineages. Next, one short sequence can mislead. A few differences more or less can swap the order. So how do you make it better? For validity, compare the same conserved sequence in every species, and align it carefully. For reliability, repeat with more genes or proteins, and check that the trees agree. And remember, the tree is a hypothesis, to be tested against other evidence."
       },
       "diagram": {
         "type": "diorama",
@@ -283,26 +283,26 @@
           ]
         }
       },
-      "durationInFrames": 1813
+      "durationInFrames": 1333
     },
     {
       "id": "worked-example",
       "type": "workedExample",
       "heading": "Build the tree from the data",
-      "question": "Using this illustrative conserved-protein dataset, infer a tentative order of relationship to humans: chimpanzee 0, gorilla 1, mouse 9, chicken 18 differences. State the equal-rate assumption.",
-      "coachNote": "Rank by fewest differences, then join the most similar first.",
+      "question": "Illustrative amino-acid differences in a conserved protein, compared with a human reference: chimpanzee 0, gorilla 1, mouse 9, chicken 18. Rank them and describe the simple branching hypothesis.",
+      "coachNote": "For this supplied classroom dataset, rank by fewest differences; state that the inference uses a simplified equal-rate comparison.",
       "steps": [
         "Rank, fewest differences first: chimpanzee (0), gorilla (1), mouse (9), chicken (18).",
-        "Fewer differences = more recent common ancestor with humans.",
+        "In this simplified exercise, fewer differences are treated as evidence of a more recent common ancestor with the human reference.",
         "Branching order: chicken splits off first, then mouse, then gorilla, then chimpanzee most recently.",
-        "Check: species at the base (chicken) have large counts; close relatives have small ones.",
+        "Limitation: this ranking assumes comparable rates and uses one supplied sequence measure; real phylogenetic analyses can use more complex models and multiple loci.",
         "Answer: most to least closely related: chimpanzee, gorilla, mouse, chicken ✓"
       ],
-      "caption": "Rank by differences, then join the most similar first.",
+      "caption": "Illustrative distance ranking: useful classroom inference, with its equal-rate simplification stated.",
       "voiceover": {
-        "text": "Let's build a tree from data. In an illustrative dataset, a conserved protein is compared with humans. Chimpanzee, zero differences. Gorilla, one. Mouse, nine. Chicken, eighteen. First, rank them, fewest differences first. Chimpanzee, gorilla, mouse, chicken. Next, apply the rule. Fewer differences means a more recent common ancestor with us. So the branching order runs from the base up. Chicken splits off first, then mouse, then gorilla, and chimpanzee joins most recently. Then check it against the data. The species at the base has the biggest count, and the closest relatives have the smallest. So, most to least closely related, chimpanzee, gorilla, mouse, chicken."
+        "text": "Let's build a simple branching hypothesis from supplied illustrative counts. Chimpanzee has zero differences, gorilla one, mouse nine and chicken eighteen. Rank them from fewest differences to most. In this classroom method, fewer differences are treated as evidence of a more recent common ancestor with the human reference, so chicken branches earlier, then mouse, then gorilla, with chimpanzee closest by this measure. State the limitation: this is a simplified distance comparison with an equal-rate assumption and one protein. General phylogenetic methods can use multiple genes and models that do not impose a strict molecular clock."
       },
-      "durationInFrames": 1428
+      "durationInFrames": 1296
     },
     {
       "id": "misconception",
@@ -350,9 +350,9 @@
       "finalPrompt": "Before you rank anything: is it the same sequence, properly aligned?",
       "caption": "Five takeaways on molecular evidence for relationships.",
       "voiceover": {
-        "text": "Let's lock it in. Sequences record ancestry, because after a split each lineage builds up its own mutations. The method is, same gene or protein, align it, count the differences for every pair, and record a difference matrix. Fewer differences means a more recent common ancestor, so join the most similar species first. In our illustrative cytochrome c example, chimp zero, rhesus one, horse twelve, tuna twenty-one, and yeast forty-four. And this simple ranking assumes comparable rates; modern phylogenetic methods can model rate variation, so compare several genes for a reliable tree. Before you rank anything, check it's the same sequence, properly aligned."
+        "text": "Let's lock it in. Sequences record ancestry, because after a split each lineage builds up its own mutations. The method is, same gene or protein, align it, count the differences for every pair, and record a difference matrix. Fewer differences means a more recent common ancestor, so join the most similar species first. For cytochrome c, chimp zero, rhesus one, horse twelve, tuna twenty-one, and yeast forty-four. And the method assumes a molecular clock, so compare several genes for a reliable tree. Before you rank anything, check it's the same sequence, properly aligned."
       },
-      "durationInFrames": 1415
+      "durationInFrames": 1208
     }
   ]
 }

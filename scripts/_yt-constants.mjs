@@ -1,4 +1,4 @@
-// Mirrors src/lesson/timing.ts for use from Node scripts that can't
-// import TS. Update both files together.
-export const TRANSITION_FRAMES = 24;
-export const INTRO_STINGER_FRAMES = 270;
+import {readFileSync} from 'node:fs';
+// Shared with the renderer; captions, chapters and review frames must agree.
+const timing = JSON.parse(readFileSync(new URL('../src/lesson/timing-constants.json', import.meta.url), 'utf8'));
+export const {TRANSITION_FRAMES, INTRO_STINGER_FRAMES} = timing;

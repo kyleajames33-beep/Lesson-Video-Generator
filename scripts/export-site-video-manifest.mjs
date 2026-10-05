@@ -2,6 +2,7 @@ import {mkdirSync, readFileSync, readdirSync, writeFileSync} from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
 import {getCompositionId} from './lesson-utils.mjs';
+import {lessonTimeline} from '../src/lesson/timeline.mjs';
 
 const dataDir = path.resolve('src/data');
 const outputFile = process.argv[2] ?? 'out/site-video-manifest.json';
@@ -14,9 +15,7 @@ const lessons = readdirSync(dataDir)
     const lessonPath = path.join(dataDir, file);
     const lesson = JSON.parse(readFileSync(lessonPath, 'utf8'));
     const compositionId = getCompositionId(lesson);
-    const totalFrames = lesson.scenes.reduce((sum, scene) => sum + scene.durationInFrames, 0);
-    const transitionFrames = 24 * Math.max(0, lesson.scenes.length - 1);
-    const durationSeconds = (totalFrames - transitionFrames) / (lesson.fps ?? 30);
+    const durationSeconds = lessonTimeline(lesson).durationMs / 1000;
 
     return {
       compositionId,

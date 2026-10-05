@@ -11,13 +11,7 @@
     "explore homogeneous mixtures and heterogeneous mixtures through practical investigations:"
   ],
   "moduleLessonCount": 20,
-  "nesaOutcomes": [
-    "CH11-8",
-    "CH11/12-2",
-    "CH11/12-3",
-    "CH11/12-4",
-    "CH11/12-7"
-  ],
+  "nesaOutcomes": ["CH11-8", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-7"],
   "inquiryQuestion": "How do the properties of substances help us to classify and separate them?",
   "lessonIntent": "Students can choose between filtration and crystallisation based on whether a solid is undissolved or dissolved, and describe each procedure.",
   "examSkill": "Match the technique to the property that differs: particle size → filtration; solubility-temperature change → crystallisation.",
@@ -58,48 +52,21 @@
       "diagram": {
         "type": "flow",
         "nodes": [
-          {
-            "id": "mix",
-            "label": "Mixture poured in"
-          },
-          {
-            "id": "paper",
-            "label": "Filter paper"
-          },
-          {
-            "id": "res",
-            "label": "Residue (solid on paper)"
-          },
-          {
-            "id": "filt",
-            "label": "Filtrate (liquid below)"
-          }
+          {"id": "mix", "label": "Mixture poured in"},
+          {"id": "paper", "label": "Filter paper"},
+          {"id": "res", "label": "Residue (solid on paper)"},
+          {"id": "filt", "label": "Filtrate (liquid below)"}
         ],
         "edges": [
-          {
-            "from": "mix",
-            "to": "paper"
-          },
-          {
-            "from": "paper",
-            "to": "res"
-          },
-          {
-            "from": "paper",
-            "to": "filt"
-          }
+          {"from": "mix", "to": "paper"},
+          {"from": "paper", "to": "res"},
+          {"from": "paper", "to": "filt"}
         ]
       },
       "bullets": [
-        {
-          "text": "Separation basis: particle size — the solid must be insoluble."
-        },
-        {
-          "text": "Residue: the solid retained on the filter paper."
-        },
-        {
-          "text": "Filtrate: the liquid, plus anything dissolved, collected below."
-        }
+        {"text": "Separation basis: particle size — the solid must be insoluble."},
+        {"text": "Residue: the solid retained on the filter paper."},
+        {"text": "Filtrate: the liquid, plus anything dissolved, collected below."}
       ],
       "secondary": "Filtration can't separate a dissolved solute. Dissolved ions are far smaller than the pores, so they pass straight through.",
       "callout": "Insoluble solid stays; dissolved solute escapes.",
@@ -114,18 +81,10 @@
       "type": "definition",
       "heading": "Crystallisation, step by step",
       "bullets": [
-        {
-          "text": "Dissolve the solid in the minimum volume of hot solvent."
-        },
-        {
-          "text": "Heat in an evaporating basin until the solution is concentrated."
-        },
-        {
-          "text": "Cool slowly so the excess solute comes out as crystals."
-        },
-        {
-          "text": "Filter off the crystals and dry them."
-        }
+        {"text": "Dissolve the solid in the minimum volume of hot solvent."},
+        {"text": "Heat in an evaporating basin until the solution is concentrated."},
+        {"text": "Cool slowly so the excess solute comes out as crystals."},
+        {"text": "Filter off the crystals and dry them."}
       ],
       "callout": "Slow cooling gives larger, purer crystals.",
       "durationInFrames": 990,
@@ -140,15 +99,9 @@
       "heading": "Choosing between the two",
       "body": "Ask one question first: is the solid dissolved or undissolved?",
       "bullets": [
-        {
-          "text": "Undissolved solid → filtration (separates by particle size)."
-        },
-        {
-          "text": "Dissolved solid → crystallisation (separates by solubility change)."
-        },
-        {
-          "text": "Crystallisation also purifies — each cycle raises purity."
-        }
+        {"text": "Undissolved solid → filtration (separates by particle size)."},
+        {"text": "Dissolved solid → crystallisation (separates by solubility change)."},
+        {"text": "Crystallisation also purifies — each cycle raises purity."}
       ],
       "secondary": "Many real mixtures need both in sequence. Filter out the insoluble part first, then crystallise the dissolved part.",
       "callout": "Undissolved? Filter. Dissolved? Crystallise.",
@@ -200,13 +153,13 @@
         "Sand is insoluble; salt is dissolved — that decides each method",
         "Sand: filter the mixture — sand is the residue, rinse and dry it",
         "Salt: the filtrate is salt water — heat to concentrate it",
-        "For NaCl, whose solubility changes little on cooling, evaporate sufficient water to crystallise salt, then separate and dry the crystals",
+        "Cool slowly, filter off the salt crystals, and dry them",
         "Answer: filtration for sand, crystallisation for salt ✓"
       ],
-      "durationInFrames": 2186,
+      "durationInFrames": 1320,
       "caption": "Filter sand out first, then crystallise salt from the filtrate.",
       "voiceover": {
-        "text": "Let's separate muddy salt water, which is water, sand, and dissolved salt. We want pure dry sand and pure dry salt. First, identify what's dissolved and what isn't. Sand is insoluble, and salt is dissolved, and that decides everything. To get the sand, you filter the mixture. The sand is too large to pass through, so it stays on the paper as the residue, and you rinse it with distilled water to wash off any clinging salt, then dry it. To get the salt, you work with the filtrate, which is salt water. You heat it in an evaporating basin to concentrate it, cool it slowly so the salt crystallises out, then filter off the crystals and dry them. So filtration for the sand, because it's insoluble, and crystallisation for the salt, because it's dissolved. Neither one alone could do both. Sodium chloride has little change in solubility with temperature, so evaporation is more effective than cooling alone. Stop distillation before boiling dry."
+        "text": "Let's separate muddy salt water, which is water, sand, and dissolved salt. We want pure dry sand and pure dry salt. First, identify what's dissolved and what isn't. Sand is insoluble, and salt is dissolved, and that decides everything. To get the sand, you filter the mixture. The sand is too large to pass through, so it stays on the paper as the residue, and you rinse it with distilled water to wash off any clinging salt, then dry it. To get the salt, you work with the filtrate, which is salt water. You heat it in an evaporating basin to concentrate it, cool it slowly so the salt crystallises out, then filter off the crystals and dry them. So filtration for the sand, because it's insoluble, and crystallisation for the salt, because it's dissolved. Neither one alone could do both."
       }
     },
     {
@@ -252,13 +205,13 @@
         "Sand is undissolved → filter first; sand is the residue",
         "The filtrate is salt water — sand is now gone",
         "Distil the filtrate to collect pure water as the distillate",
-        "Collect water by distillation, then stop before boiling dry; recover and dry salt separately",
+        "Keep heating until the salt crystallises out as a dry solid",
         "Answer: filter sand, then distil/crystallise for water and salt ✓"
       ],
-      "durationInFrames": 1826,
+      "durationInFrames": 1140,
       "caption": "Filter sand first, then recover water and salt from the filtrate.",
       "voiceover": {
-        "text": "Quick check. A mixture is sand stirred into salt water. What sequence cleanly separates all three, the sand, the salt, and the water? Pause and work it through. Right, let's check it. Step one, the sand is undissolved, so you filter first, and the sand stays on the paper as the residue. Step two, the filtrate is now just salt water, with the sand removed. Step three, to recover the water itself, you distil the filtrate, collecting pure water as the distillate, a technique we cover properly next lesson. Step four, stop the distillation before boiling dry and recover the salt separately by suitable evaporation and drying. The trap answer was filtration alone, but filtration can never catch the dissolved salt. You always remove the insoluble sand first, then deal with the dissolved salt second."
+        "text": "Quick check. A mixture is sand stirred into salt water. What sequence cleanly separates all three, the sand, the salt, and the water? Pause and work it through. Right, let's check it. Step one, the sand is undissolved, so you filter first, and the sand stays on the paper as the residue. Step two, the filtrate is now just salt water, with the sand removed. Step three, to recover the water itself, you distil the filtrate, collecting pure water as the distillate, a technique we cover properly next lesson. Step four, keep heating, and the salt crystallises out as a dry solid. The trap answer was filtration alone, but filtration can never catch the dissolved salt. You always remove the insoluble sand first, then deal with the dissolved salt second."
       }
     },
     {

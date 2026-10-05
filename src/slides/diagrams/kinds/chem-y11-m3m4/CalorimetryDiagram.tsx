@@ -1,15 +1,15 @@
-// CalorimetryDiagram — calorimetry as a working bench diorama (Chem Y11 M4).
+// CalorimetryDiagram: calorimetry as a working bench diorama (Chem Y11 M4).
 //
 // mode 'combustion' (L2): a spirit burner heats a can of water held by a clamp
 // stand; heat waves rise into the can, the thermometer column climbs, and later
-// a few grey waves escape sideways (heat lost, so measured answers come out a
-// little low). Step cards on the right build the method: q = mcΔT, then
+// a few grey waves illustrate possible external heat transfer. They do not
+// diagnose a measured discrepancy. Step cards build the method: q = mcΔT, then
 // ΔHc = −q ÷ n, negative because combustion releases heat.
 //
 // mode 'neutralisation' (L3): an acid beaker and a base beaker pour into one
 // polystyrene cup; the combined solution warms. Cards: m = total mass of
-// solution, c = 4.18 J g⁻¹ °C⁻¹, n = moles of water formed (c × V of the
-// limiting reactant), ΔHn = −q ÷ n.
+// solution, c = 4.18 J g⁻¹ °C⁻¹ as an assumed solution heat capacity,
+// n = moles of water formed from balanced stoichiometry, ΔHn = −q ÷ n.
 //
 // No measured values are drawn (the concept scenes are qualitative); the
 // thermometer only shows the temperature rising.
@@ -19,6 +19,7 @@ import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
 import {DioramaDefs, DioramaPlinth, idlePulse} from '../../diorama';
 import {Beaker, clamp, ramp} from './shared';
+import {NEUTRALISATION_AMOUNT_RULE, validateQuantitativeDiagram} from '../../quantitative-models.mjs';
 
 type Card = {at: number; title: string; eq: string; key?: boolean};
 export type CalorimetryProps = {
@@ -44,7 +45,7 @@ const COMBUSTION_CARDS: Card[] = [
 const NEUTRAL_CARDS: Card[] = [
 	{at: 500, title: 'm = total mass of solution', eq: 'acid + base combined', key: true},
 	{at: 760, title: 'c = 4.18 J g⁻¹ °C⁻¹', eq: 'dilute solution ≈ water'},
-	{at: 890, title: 'n = moles of water formed', eq: 'c × V of limiting reactant'},
+	{at: 890, title: 'n = moles of water formed', eq: NEUTRALISATION_AMOUNT_RULE},
 	{at: 1120, title: 'ΔHn = −q ÷ n', eq: 'negative: heat released'},
 ];
 
@@ -83,6 +84,7 @@ const Wave = ({x, y, dir, color, o}: {x: number; y: number; dir: 'up' | 'left' |
 };
 
 export const CalorimetryDiagram = ({delay = 90, mode = 'combustion', cards, beats, note}: CalorimetryProps) => {
+	validateQuantitativeDiagram({type: 'diorama', kind: 'chem11m4Calorimetry', props: {delay, mode, cards, beats, note}});
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
@@ -108,7 +110,7 @@ export const CalorimetryDiagram = ({delay = 90, mode = 'combustion', cards, beat
 	const cupLevel = 0.15 + 0.6 * pour;
 
 	return (
-		<svg viewBox={`0 0 ${W} 530`} role="img" aria-label={mode === 'combustion' ? 'Combustion calorimetry: burning fuel heats water; q = mcΔT, then divide by moles of fuel; ΔHc is negative' : 'Neutralisation calorimetry: acid and base mixed in a cup; use the total solution mass in q = mcΔT, divide by moles of water formed; ΔHn is negative'} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+		<svg viewBox={`0 0 ${W} 530`} role="img" aria-label={mode === 'combustion' ? 'Combustion illustration: burning fuel heats water. Estimate water heat with q = mcΔT; the negative molar reaction estimate requires the stated constant-pressure heat-balance assumptions.' : 'Neutralisation illustration: the combined solution warms. Use total solution mass for q = mcΔT and balanced reaction ratios for water amount. The negative molar estimate applies to the illustrated exothermic case under stated heat-balance assumptions.'} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={ID} elements={[]} />
 
 			<DioramaPlinth id={ID} cx={PX} cy={PY} rx={160}>

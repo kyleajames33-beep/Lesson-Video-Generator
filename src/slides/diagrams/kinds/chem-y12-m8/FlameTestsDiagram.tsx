@@ -1,9 +1,9 @@
-// FlameTestsDiagram — flame tests as supporting evidence (Chem Y12 M8 L3,
+// FlameTestsDiagram: flame tests as supporting evidence (Chem Y12 M8 L3,
 // concept-flame).
 //
 // Act 1: six Bunsen burners on stone plinths, each with a plain blue flame. A
 // clean nichrome wire loop carrying a sample dips into each flame in turn and
-// the flame takes the ion's characteristic emission colour: Li⁺ crimson,
+// the flame takes the sample's characteristic flame colour: Li⁺ crimson,
 // Na⁺ yellow, K⁺ lilac, Ca²⁺ brick red, Ba²⁺ pale green, Cu²⁺ blue-green.
 // Act 2: the limitation. A K⁺ sample gives lilac; the same K⁺ sample with a
 // trace of Na⁺ just looks yellow, because sodium's bright yellow swamps it. An
@@ -16,10 +16,13 @@ import {useCurrentFrame} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {DioramaDefs, DioramaPlinth, idlePulse} from '../../diorama';
 import {ease, ramp} from './shared';
+import {validateAnalyticalDiagram} from '../../analytical-inference-models.mjs';
 import {Burner, BurnerDefs, Flame, WireLoop} from './lab-parts';
 
 export type FlameIon = {ion: string; color: string; name: string};
 export type FlameTestsProps = {
+	/** Enable only with matching source-reviewed narration and lesson copy. */
+	reviewedAnalytical?: boolean;
 	delay?: number;
 	ions?: FlameIon[];
 	beats?: number[];
@@ -39,7 +42,9 @@ const ID = 'c12m8flame';
 const W = 760;
 const PY = 392;
 
-export const FlameTestsDiagram = ({delay = 62, ions = DEFAULT_IONS, beats = [100, 360, 390, 410, 430, 465, 495, 590, 665, 800]}: FlameTestsProps) => {
+export const FlameTestsDiagram = (props: FlameTestsProps) => {
+	validateAnalyticalDiagram({type: 'diorama', kind: 'chem12m8FlameTests', props});
+	const {delay = 62, ions = DEFAULT_IONS, beats = [100, 360, 390, 410, 430, 465, 495, 590, 665, 800], reviewedAnalytical = false} = props;
 	const frame = useCurrentFrame() - delay;
 	const n = ions.length;
 	const tLoop0 = beats[0];
@@ -60,7 +65,7 @@ export const FlameTestsDiagram = ({delay = 62, ions = DEFAULT_IONS, beats = [100
 	const fh = 150;
 
 	// Top caption for act 1
-	const cap = frame < 150 ? 'Clean nichrome wire, dipped in the sample' : 'Excited metal ions emit characteristic colours';
+	const cap = frame < 150 ? 'Clean nichrome wire, dipped in the sample' : reviewedAnalytical ? 'Excited species in the flame emit characteristic light' : 'Excited metal ions emit characteristic colours';
 	const capIn = frame < 150 ? ramp(frame, 10, 14) : ramp(frame, 150, 14);
 
 	const loopPos = (cx: number, tEnter: number, tShow = tEnter) => {
@@ -70,13 +75,14 @@ export const FlameTestsDiagram = ({delay = 62, ions = DEFAULT_IONS, beats = [100
 	};
 
 	return (
-		<svg viewBox={`0 0 ${W} 530`} role="img" aria-label="Flame tests: Li⁺ crimson, Na⁺ yellow, K⁺ lilac, Ca²⁺ brick red, Ba²⁺ pale green, Cu²⁺ blue-green; sodium's yellow can mask other colours, so a flame test is supporting evidence, not proof" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+		<svg viewBox={`0 0 ${W} 530`} role="img" aria-label={(reviewedAnalytical ? 'Controlled known-ion samples. Excited species in the flame, often neutral atoms, emit light; the ion labels describe the starting samples. ' : '') + "Flame tests: Li⁺ crimson, Na⁺ yellow, K⁺ lilac, Ca²⁺ brick red, Ba²⁺ pale green, Cu²⁺ blue-green; sodium's yellow can mask other colours, so a flame test is supporting evidence, not proof"} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={ID} />
 			<BurnerDefs id={ID} />
 
 			{act1 > 0 && (
 				<g opacity={act1}>
 					<text x={W / 2} y={42} textAnchor="middle" fill={TOK.inkDim} fontSize={21} fontWeight={700} opacity={capIn}>{cap}</text>
+					{reviewedAnalytical && <text x={W / 2} y={70} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700} opacity={ramp(frame, 150, 14)}>Often neutral atoms; ion labels identify the starting samples</text>}
 					{ions.map((ion, i) => {
 						const cx = xs[i];
 						const appear = ramp(frame, i * 3, 14);

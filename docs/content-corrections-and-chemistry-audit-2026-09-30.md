@@ -1,5 +1,7 @@
 # Content corrections and Chemistry audit
 
+Historical report. Its production and 323-scene audio instructions are superseded by the [October 4 reconciliation](production/pr38-reconciliation-2026-10-04.md). Original findings remain evidence; they are not current production approval.
+
 Completed 29 September 2026 UTC. The earlier 30 September filename convention is retained for continuity. Main baseline: `b3796f22c311e30df3778732a9cd254cc5029a22`.
 
 The 28 earlier findings have lesson-content corrections. Chemistry now has a principal-scene audit across all 149 lesson JSON files and 71 additional findings/qualifications. This is a script-level review, not permission to render final videos. Across the consolidated change, 323 narration scenes in 105 lessons differ from main and require new audio/alignment. No ElevenLabs generation or paid media work was performed.

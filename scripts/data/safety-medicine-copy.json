@@ -1,0 +1,636 @@
+{
+  "chemistry-y11-m1-l3-separation-physical-methods": {
+    "root": {
+      "title": "Separation Techniques: Physical Methods",
+      "subtitle": "Filtration, crystallisation and safe recovery limits",
+      "lessonIntent": "Choose a suitable physical separation from particle size, solubility and volatility, and distinguish recovery from certified purity.",
+      "examSkill": "State which property differs, what each fraction contains and the assumptions and safety limits of the proposed sequence."
+    },
+    "scenes": {
+      "title": {
+        "caption": "Separation Techniques: Physical Methods (Year 11 Chemistry, Module 1, Lesson 3)"
+      },
+      "hook": {
+        "heading": "Two mixtures, one ordinary filter",
+        "body": "Coarse sand is retained by suitable filter paper. Dissolved NaCl passes through with water.",
+        "callout": "Start with the physical state and the desired fraction.",
+        "caption": "A conceptual comparison using ordinary filter paper; pore size and sample composition matter.",
+        "voiceover": {
+          "text": "Consider two simple mixtures: coarse sand in water, and a fully dissolved sodium chloride solution. An ordinary school filter paper retains the sand grains but lets the dissolved salt pass with the water. That observation helps us choose a separation, but we must also consider particle size, the kind of filter and which material we want to recover. Dissolved or undissolved is a useful first question, not a complete rule for every mixture."
+        }
+      },
+      "concept": {
+        "body": "The chosen filter retains particles too large for its pores. Ordinary filter paper does not remove dissolved NaCl.",
+        "bullets": [
+          {
+            "text": "Residue: material retained by the filter."
+          },
+          {
+            "text": "Filtrate: liquid and substances that pass through."
+          },
+          {
+            "text": "Retention depends on particle size and the chosen filter."
+          }
+        ],
+        "secondary": "Fine particles can pass through some filters. Membrane processes are a different scope from this ordinary-paper example.",
+        "callout": "Match the filter to the particles.",
+        "caption": "Ordinary filtration retains sufficiently large particles; dissolved ions pass with water.",
+        "voiceover": {
+          "text": "Ordinary filtration separates particles large enough to be retained by the chosen filter from material that passes through. The retained solid is the residue, and the liquid collected below is the filtrate. Dissolved sodium and chloride ions pass through ordinary school filter paper with the water, so that paper does not recover dissolved salt. Not every undissolved particle is large enough to be captured: fine colloidal particles may pass. Special membranes can behave differently, so name the filter and the particle-size assumption rather than making a rule about every filtration technology."
+        }
+      },
+      "definition": {
+        "heading": "Crystallisation and its conditions",
+        "bullets": [
+          {
+            "text": "Supersaturation may be produced by cooling or by removing some solvent."
+          },
+          {
+            "text": "Cooling recovery depends on the solubility-temperature relationship."
+          },
+          {
+            "text": "Impurities may stay in the mother liquor or contaminate crystals."
+          },
+          {
+            "text": "Use a teacher-approved procedure and check the recovered product."
+          }
+        ],
+        "callout": "Crystal formation is not proof of purity.",
+        "caption": "Choose crystallisation conditions from the substance and solvent; purity and yield require evidence.",
+        "voiceover": {
+          "text": "Crystallisation recovers a solid when a solution becomes supersaturated. Cooling works well when the solute is substantially less soluble at the lower temperature. Removing some solvent can also promote crystallisation. The choice depends on the substance and solvent; not every solid has a strong temperature dependence. In an approved recrystallisation procedure, controlled cooling can help crystals grow and reduce impurity trapping, but it does not guarantee purity. Soluble impurities may remain in the mother liquor, while some can enter or adhere to crystals. Separation, washing, drying and purity checks are part of the chosen validated procedure."
+        }
+      },
+      "formula": {
+        "heading": "Choose the property and the goal",
+        "body": "Dissolved or undissolved is the first question. Then consider solubility, volatility and the desired product.",
+        "bullets": [
+          {
+            "text": "Suitable undissolved particles: ordinary filtration may work."
+          },
+          {
+            "text": "Dissolved solid: use its solubility behaviour to plan crystallisation."
+          },
+          {
+            "text": "Recovering solvent: consider a suitable distillation procedure."
+          }
+        ],
+        "secondary": "Purification may cost yield. No fixed number of crystallisations guarantees a pure product.",
+        "callout": "State the substance, method and assumptions.",
+        "caption": "A decision guide, not a universal separation algorithm.",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem11m1DecisionTree",
+          "props": {
+            "title": "Which fraction do we want to recover?",
+            "highlight": "Is the solid dissolved?",
+            "root": {
+              "q": "Is the solid dissolved?",
+              "branches": [
+                {
+                  "label": "No: sufficiently large particles",
+                  "node": {
+                    "leaf": "Suitable filtration",
+                    "sub": "check filter pore size",
+                    "icon": "filtration"
+                  }
+                },
+                {
+                  "label": "Yes: check solubility data",
+                  "node": {
+                    "leaf": "Plan crystallisation",
+                    "sub": "cooling or solvent removal",
+                    "icon": "crystallisation"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "voiceover": {
+          "text": "First ask what you want to recover. For sufficiently large undissolved particles, ordinary filtration may be suitable. For a dissolved solid, consider crystallisation by cooling or partial solvent removal, using the relevant solubility data. If recovering the solvent matters, distillation may collect a solvent-rich fraction when volatility permits. A sequence can combine these methods, but its suitability depends on the particular mixture. Recrystallisation can improve purity under suitable conditions, often with a loss of yield; repeating it does not guarantee purity after any fixed number of cycles."
+        }
+      },
+      "worked-example": {
+        "question": "Assume a mixture contains only clean coarse sand, NaCl and water, with all NaCl dissolved. Explain a suitable way to recover sand and salt. Why is ordinary cooling alone a limited strategy for NaCl?",
+        "coachNote": "This is a separation plan, not a complete laboratory procedure. Follow the teacher-approved method.",
+        "steps": [
+          "Filter using paper that retains the sand; dissolved NaCl remains in the filtrate.",
+          "Rinse and dry the sand as specified by the approved procedure.",
+          "NaCl solubility has only a modest temperature dependence.",
+          "Use an appropriate separate evaporation/crystallisation method for salt recovery.",
+          "Ordinary evaporation does not collect water; purity and recovery are not automatically complete."
+        ],
+        "caption": "Recovering sand and NaCl requires a substance-appropriate method; cooling alone has limited NaCl yield.",
+        "voiceover": {
+          "text": "Assume the only materials are clean coarse sand, sodium chloride and water. Suitable filter paper retains the sand. Under the approved procedure, rinsing the residue removes adhering salt solution, and the sand is dried. The filtrate contains dissolved salt. Sodium chloride solubility changes only modestly with temperature, so cooling alone is not an efficient general recovery strategy. An appropriate teacher-approved evaporation or crystallisation method can recover salt from that solution. Ordinary evaporation does not collect the water. Calling either recovered solid pure still requires that the assumptions, separation and purity checks are satisfied; real muddy water may contain many other materials."
+        }
+      },
+      "worked-example-2": {
+        "question": "Supplied teaching data: 80 g KNO₃ is initially dissolved in 100 g water at 60°C. At 20°C, the solubility is 31 g per 100 g water. With constant water mass, no solute loss/reaction and equilibrium crystallisation, what mass crystallises?",
+        "coachNote": "Use the stated model assumptions and supplied values; do not assume 100% solute recovery.",
+        "steps": [
+          "Initially dissolved KNO₃ = 80 g in 100 g water.",
+          "At the final equilibrium, 31 g remains dissolved in the same water mass.",
+          "Crystallised mass = 80 − 31 = 49 g.",
+          "The mother liquor still contains dissolved solute.",
+          "49 g is the ideal model yield, not a guaranteed isolated laboratory yield."
+        ],
+        "caption": "Under the supplied assumptions, 49 g crystallises and 31 g stays dissolved.",
+        "voiceover": {
+          "text": "Use the supplied teaching values, rather than treating them as new experimental measurements. Initially, eighty grams of potassium nitrate is dissolved in one hundred grams of water. The question states that thirty-one grams can remain dissolved at the final temperature. Assume the water amount stays constant, no solute is lost or reacts, and equilibrium crystallisation occurs. The difference is eighty minus thirty-one, giving forty-nine grams of crystals in the ideal model. Some solute remains in the mother liquor, and an actual isolated yield can differ because of incomplete crystallisation, handling losses or retained solution."
+        }
+      },
+      "misconception": {
+        "heading": "Separation and safety traps",
+        "body": "Ordinary paper filtration does not remove dissolved salt; crystallisation does not certify purity.",
+        "secondary": "Never distil to dryness. Stop with liquid remaining according to the approved procedure; any later salt recovery is a separate controlled operation.",
+        "callout": "A distillation flask is not a dry-salt recovery vessel.",
+        "caption": "Do not distil to dryness; recovery, yield and purity are separate questions.",
+        "voiceover": {
+          "text": "An ordinary filter does not recover dissolved sodium chloride, and a filter also cannot be assumed to catch every very small particle. Crystallisation does not automatically make a chemically pure product. Impurity behaviour, cooling conditions, washing and losses matter, and additional cycles can sacrifice yield. Most importantly, do not continue a distillation until the flask is dry. Follow the approved stopping point while liquid remains. Recovering a solid from the remaining solution is a separate operation with appropriate apparatus and safety controls, not a reason to boil a distillation dry."
+        }
+      },
+      "quick-check": {
+        "question": "For the ideal sand/NaCl/water mixture, propose a safe conceptual sequence to collect sand, a water fraction and salt. State the distillation stopping boundary rather than requiring every drop of water to be recovered.",
+        "pausePrompt": "Pause and identify the separation and safety boundaries.",
+        "answerSteps": [
+          "Filter first to retain sufficiently coarse sand; rinse/dry by the approved method.",
+          "Use a suitable teacher-approved distillation to collect a water fraction from the filtrate.",
+          "Stop heating at the approved point while liquid remains. Never distil to dryness.",
+          "After safe cooling/handling, use a separate approved crystallisation or evaporation procedure for the remaining salt solution.",
+          "This plan does not promise complete recovery or certified purity of every fraction."
+        ],
+        "caption": "Collect a water fraction, stop distillation with liquid remaining, and handle solid recovery separately.",
+        "voiceover": {
+          "text": "For the ideal mixture of sand, sodium chloride and water, propose a conceptual sequence to collect sand, a water fraction and salt. State the distillation stopping boundary rather than requiring every drop of water to be recovered. Pause and identify the safe sequence. Filter first to retain the coarse sand. A suitable approved distillation can collect a water fraction from the salt solution, but stop at the approved point while liquid remains. Never distil to dryness. Following safe cooling and handling, salt recovery uses a separate approved evaporation or crystallisation procedure. The sequence does not guarantee complete recovery or certified purity. Practical work requires the teacher-approved risk assessment and procedure."
+        }
+      },
+      "summary": {
+        "points": [
+          "Ordinary filtration retains particles appropriate to the filter pore size.",
+          "Dissolved NaCl passes through school filter paper.",
+          "Crystallisation depends on solubility and supersaturation.",
+          "Purification and complete recovery are different goals.",
+          "Never distil to dryness; follow approved practical procedures."
+        ],
+        "finalPrompt": "Name the property, the desired fraction and the safety boundary.",
+        "caption": "Physical-property reasoning, qualified recovery claims and an explicit distillation safety limit.",
+        "voiceover": {
+          "text": "Choose a physical separation by the property that differs and the fraction you need. Ordinary paper filtration can retain coarse sand while dissolved salt passes through. Crystallisation depends on supersaturation and substance-specific solubility; sodium chloride has only a modest temperature dependence. Recrystallisation may improve purity under suitable conditions but can reduce yield and cannot certify purity on its own. Distillation can collect a solvent fraction, but must not be taken to dryness. State the model assumptions and follow an approved practical procedure rather than treating this conceptual sequence as a laboratory instruction sheet."
+        }
+      }
+    },
+    "response": {
+      "promptText": "For the ideal mixture of sand, sodium chloride and water, propose a conceptual sequence to collect sand, a water fraction and salt. State the distillation stopping boundary rather than requiring every drop of water to be recovered. Pause and identify the safe sequence.",
+      "answerText": "Filter first to retain the coarse sand. A suitable approved distillation can collect a water fraction from the salt solution, but stop at the approved point while liquid remains. Never distil to dryness. Following safe cooling and handling, salt recovery uses a separate approved evaporation or crystallisation procedure. The sequence does not guarantee complete recovery or certified purity. Practical work requires the teacher-approved risk assessment and procedure.",
+      "minimumThinkingSeconds": 45,
+      "rationale": "Leave time to distinguish supported inference from missing evidence. Measure final pause and reveal timing later.",
+      "status": "unmeasured planning target, not assembled silence"
+    }
+  },
+  "chemistry-y12-m8-l13-optical-isomerism-chirality": {
+    "root": {
+      "subtitle": "Enrichment: molecular handedness and limits of evidence",
+      "lessonIntent": "Recognise simple single-centre chirality, distinguish optical measurements from identity, and explain why enantiopurity cannot establish clinical safety.",
+      "examSkill": "Apply chemical reasoning to an enrichment example under stated assumptions. No specific HSC marking claim or practical outcome is certified.",
+      "inquiryQuestion": "What can molecular handedness and optical rotation establish, and what requires independent evidence?"
+    },
+    "scenes": {
+      "title": {
+        "caption": "Molecular chirality and medicines: chemistry enrichment"
+      },
+      "hook": {
+        "body": "Thalidomide enantiomers interconvert in the body. A single-enantiomer preparation cannot simply be presumed safe.",
+        "callout": "Handedness matters; safety still requires evidence.",
+        "caption": "The thalidomide example does not support a safe-R versus harmful-S guarantee.",
+        "voiceover": {
+          "text": "Thalidomide is a warning against treating a small structural distinction as a safety guarantee. It has two enantiomers, and these forms can interconvert in the body. The drug can cause severe developmental harm; giving a single enantiomer cannot simply be assumed to remove that risk. Rather than calling one form safe and the other harmful, we need evidence about the activity, toxicity, metabolism and interconversion of each form. This chemistry enrichment lesson examines molecular handedness and what the available evidence can establish. It is not advice about taking a medicine."
+        }
+      },
+      "concept-chiral": {
+        "body": "Chirality means non-superimposability on the mirror image. One tetrahedral carbon with four different groups is a common simple example.",
+        "bullets": [
+          {
+            "text": "The definition concerns the whole molecule and its mirror image."
+          },
+          {
+            "text": "Our example has one tetrahedral carbon with four different groups."
+          },
+          {
+            "text": "Other forms of chirality and multi-centre cases need further analysis."
+          }
+        ],
+        "secondary": "A stereocentre is a structural clue; it is not the complete definition of molecular chirality.",
+        "callout": "Define chirality by the mirror-image test.",
+        "caption": "A single tetrahedral stereocentre is the introductory example, not an exhaustive rule.",
+        "voiceover": {
+          "text": "A molecule is chiral when it cannot be superimposed on its mirror image. A common introductory example has one tetrahedral carbon bonded to four different groups. Its two mirror-image arrangements are enantiomers. This is a useful structural clue, not an exhaustive definition of every chiral molecule. Chirality can arise in other ways, and molecules with several stereocentres require examination of the whole structure because internal symmetry can matter. Here we stay with the simple single-centre example illustrated by the four different groups."
+        }
+      },
+      "definition": {
+        "bullets": [
+          {
+            "text": "Enantiomers: non-superimposable mirror-image stereoisomers."
+          },
+          {
+            "text": "Racemate: equal amounts of an enantiomer pair."
+          },
+          {
+            "text": "R/S describes configuration; +/− describes measured optical rotation."
+          },
+          {
+            "text": "Compare physical properties and rotation under matching conditions."
+          }
+        ],
+        "callout": "R/S does not predict the sign of optical rotation.",
+        "caption": "Keep molecular configuration, sample composition and measured rotation distinct.",
+        "voiceover": {
+          "text": "Enantiomers are non-superimposable mirror-image stereoisomers, with the same formula and connectivity. In the same achiral environment they share properties such as melting point and have equal-and-opposite optical rotations under matching measurement conditions. They can behave differently in chiral environments. A racemate contains equal amounts of the two enantiomers and has cancelling rotation under the ideal stated conditions. R and S describe absolute configuration using a priority convention; they do not tell you whether rotation is positive or negative. Optical rotation is a sample measurement that depends on conditions, not a structural identity certificate."
+        }
+      },
+      "concept-vs-isomers": {
+        "body": "Compare connectivity, then the three-dimensional relationship.",
+        "bullets": [
+          {
+            "text": "Structural isomers differ in connectivity."
+          },
+          {
+            "text": "Geometric isomers differ in arrangement at an appropriate restricted structure."
+          },
+          {
+            "text": "Enantiomers have identical connectivity and non-superimposable mirror-image arrangements."
+          }
+        ],
+        "secondary": "Formula and connectivity are the same for an enantiomer pair by definition.",
+        "callout": "Connectivity first, spatial relationship second.",
+        "caption": "Structural and stereochemical differences are different classifications.",
+        "voiceover": {
+          "text": "Structural isomers have the same molecular formula but different atom connectivity. Stereoisomers have the same connectivity and differ in spatial arrangement. Geometric isomers are one type, including appropriate cis/trans or E/Z cases around restricted structures. Enantiomers are the non-superimposable mirror-image case. Their formula and connectivity are the same by definition, rather than usually the same. To classify a pair, compare connectivity first and then examine the three-dimensional relationship."
+        }
+      },
+      "concept-thalidomide": {
+        "body": "Biological effects and in-vivo interconversion must be assessed together. A pure-enantiomer label is not a safety guarantee.",
+        "bullets": [
+          {
+            "text": "Thalidomide is associated with severe developmental toxicity."
+          },
+          {
+            "text": "R and S can interconvert under biological conditions."
+          },
+          {
+            "text": "Assess activity, toxicity, exposure and interconversion rather than assuming one form is safe."
+          }
+        ],
+        "secondary": "The simplified R/S diagram tracks configuration labels, not a complete molecular or clinical model.",
+        "callout": "Enantiopurity alone cannot establish safety.",
+        "caption": "Thalidomide interconversion defeats the simple “give safe R only” argument.",
+        "voiceover": {
+          "text": "Thalidomide's biological effects cannot be reduced to a safe R form and a harmful S form. Studies distinguish interactions and effects of its enantiomers, but both the administered form and what happens afterward matter. The enantiomers interconvert in biological conditions, including in humans. Consequently, administering a purified enantiomer does not guarantee that only that form will be present in the body, or establish safety during pregnancy. Drug evaluation needs activity, toxicity, exposure and interconversion evidence. The coloured symbols in this diagram only track configurations and their interconversion; they do not model a safe and a dangerous molecule."
+        }
+      },
+      "concept-polarimetry": {
+        "body": "Polarimetry measures sample rotation under specified conditions. A zero reading has several possible explanations.",
+        "bullets": [
+          {
+            "text": "Specify wavelength, temperature, solvent, concentration and path length."
+          },
+          {
+            "text": "Use an appropriate reference and validated sensitivity."
+          },
+          {
+            "text": "Zero rotation alone proves neither a racemate nor chemical purity."
+          }
+        ],
+        "secondary": "An enantiomeric ratio can be inferred only with additional analyte, reference and interference assumptions.",
+        "callout": "A rotation measurement is not unique structural identification.",
+        "caption": "Zero optical rotation is not unique evidence for a 50:50 enantiomer mixture.",
+        "voiceover": {
+          "text": "A polarimeter measures the rotation of plane-polarised light by a sample under specified conditions. Interpreting it requires wavelength, temperature, path length, concentration and solvent, together with an appropriate reference and measurement sensitivity. A known enantiomer with a nonzero reference rotation gives an expected signal under matched conditions. Equal amounts of a pair give cancellation in an ideal model. But a zero result is not unique to a racemate: an achiral sample, an undetectably small signal, unsuitable conditions or other components can also matter. Identity and composition require appropriate validated analytical evidence. Chiral chromatography can help where a suitable method and standards are available; it is not a blanket safety certificate."
+        }
+      },
+      "misconception": {
+        "heading": "Three evidence traps",
+        "body": "Same formula does not guarantee the same biological effect; enantiopurity does not guarantee safety.",
+        "secondary": "Zero rotation alone proves neither purity nor a 50:50 composition.",
+        "mistakeTag": "Configuration, measurement and evidence",
+        "callout": "State the conditions and what is still unknown.",
+        "caption": "Avoid both biological guarantees and overinterpretation of zero rotation.",
+        "voiceover": {
+          "text": "Sharing formula and functional groups does not establish identical biological effects because chiral environments can distinguish enantiomers. The opposite overstatement is also wrong: a single-enantiomer preparation is not automatically safer. Effects and interconversion need evidence. A zero rotation reading is another inference trap. It does not by itself prove purity or equal enantiomer amounts. State which substance is present, the reference rotation and the measurement assumptions before trying to turn a rotation into a composition."
+        }
+      },
+      "quick-check": {
+        "question": "A sample gives zero net optical rotation. (a) Does this prove it is a pure active enantiomer, or a 50:50 mixture? (b) What additional assumptions would let an ideal zero signal support equal amounts of a known enantiomer pair?",
+        "pausePrompt": "Pause and distinguish the observation from a conditional model.",
+        "answerSteps": [
+          "No. Zero rotation alone establishes neither purity nor a 50:50 ratio.",
+          "Consider identity, concentration, path length, solvent, temperature, wavelength and sensitivity.",
+          "For a known pair only, assume matched nonzero equal-and-opposite reference rotations and no interfering components.",
+          "Under that validated ideal model, cancellation supports equal amounts within measurement uncertainty.",
+          "This compositional inference does not establish pharmacological activity or safety."
+        ],
+        "caption": "Zero rotation becomes a composition inference only with justified additional assumptions.",
+        "voiceover": {
+          "text": "A sample gives zero optical rotation. Does this prove a pure active enantiomer or a fifty-fifty mixture? What additional assumptions would make cancellation evidence for equal amounts of a known enantiomer pair? Pause and separate observation from inference. Neither conclusion follows from zero alone. Establish the analyte, concentration, path length and measurement conditions, with sufficient sensitivity. If the only optically active components are a known pair with nonzero equal-and-opposite reference rotations under matched conditions, an ideal zero signal supports equal amounts within uncertainty. Without those assumptions it is not unique evidence for a racemate. Even a validated composition result does not establish clinical activity or safety."
+        }
+      },
+      "summary": {
+        "points": [
+          "Define chirality by non-superimposable mirror images.",
+          "A single tetrahedral stereocentre is one common introductory example.",
+          "Chiral interactions may differ, but safety is not guaranteed by configuration or purity.",
+          "R/S and the sign of optical rotation are different descriptions.",
+          "Interpret polarimetry using references, conditions, uncertainty and independent evidence."
+        ],
+        "finalPrompt": "What does the measurement establish under the stated assumptions?",
+        "caption": "Chemistry enrichment: configuration, optical evidence and explicit limits.",
+        "voiceover": {
+          "text": "Chirality is defined by a non-superimposable mirror image. A single tetrahedral carbon with four different groups is a useful introductory example. Enantiomers have the same formula and connectivity but may interact differently with chiral biological systems. R and S describe configuration, not the sign of optical rotation. Thalidomide shows why interconversion and toxicity need evidence rather than a safe-enantiomer assumption. Polarimetry measures rotation under specified conditions; a zero reading alone does not identify the sample, its purity or a unique enantiomeric ratio."
+        }
+      }
+    },
+    "response": {
+      "promptText": "A sample gives zero optical rotation. Does this prove a pure active enantiomer or a fifty-fifty mixture? What additional assumptions would make cancellation evidence for equal amounts of a known enantiomer pair? Pause and separate observation from inference.",
+      "answerText": "Neither conclusion follows from zero alone. Establish the analyte, concentration, path length and measurement conditions, with sufficient sensitivity. If the only optically active components are a known pair with nonzero equal-and-opposite reference rotations under matched conditions, an ideal zero signal supports equal amounts within uncertainty. Without those assumptions it is not unique evidence for a racemate. Even a validated composition result does not establish clinical activity or safety.",
+      "minimumThinkingSeconds": 50,
+      "rationale": "Leave time to distinguish supported inference from missing evidence. Measure final pause and reveal timing later.",
+      "status": "unmeasured planning target, not assembled silence"
+    }
+  },
+  "chemistry-y12-m8-l14-solubility-polarity-drug-delivery": {
+    "root": {
+      "subtitle": "Enrichment: physicochemical properties and delivery evidence",
+      "lessonIntent": "Distinguish partitioning, solubility and permeability; apply the original Rule of Five boundaries; and explain why route selection requires more than polarity or metabolism.",
+      "examSkill": "Apply chemical reasoning to an enrichment example under stated assumptions. No specific HSC marking claim or practical outcome is certified.",
+      "inquiryQuestion": "Which physicochemical properties inform delivery, and what additional evidence is required?"
+    },
+    "scenes": {
+      "title": {
+        "caption": "Solubility, polarity and delivery: chemistry enrichment"
+      },
+      "hook": {
+        "heading": "Would a patch actually solve the problem?",
+        "body": "Hypothetical compound: substantial oral first-pass metabolism. Skin delivery is a possibility that needs evidence.",
+        "callout": "Bypassing first-pass is not bypassing all metabolism.",
+        "caption": "A hypothetical design question, with no product-specific absorption percentages or route advice.",
+        "voiceover": {
+          "text": "Imagine an unnamed compound that undergoes substantial metabolism before an oral dose reaches systemic circulation. Could a skin patch help? It might bypass that initial gut and portal-liver route, but only if the compound and formulation can deliver a suitable amount through skin over the required time. Once in circulation, the compound can still reach the liver and be metabolised. Polarity alone cannot settle the design. This hypothetical example introduces delivery constraints without claiming a particular product, dose or clinical recommendation."
+        }
+      },
+      "concept-like": {
+        "heading": "Affinity, solubility and permeability",
+        "body": "Molecular interactions inform hypotheses, but partitioning, solubility and membrane transport are different properties.",
+        "bullets": [
+          {
+            "text": "Polar groups may favour interactions with water."
+          },
+          {
+            "text": "Nonpolar regions may favour lipid environments."
+          },
+          {
+            "text": "Solid state, ionisation, formulation and transport mechanisms also matter."
+          }
+        ],
+        "secondary": "A structural feature alone does not establish total absorption or an appropriate route.",
+        "callout": "Use structure to ask questions, then measure.",
+        "caption": "The affinity illustration does not predict clinical absorption or delivery.",
+        "voiceover": {
+          "text": "Polar groups can interact favourably with water, while nonpolar regions can favour lipid environments. This is a useful starting model, but it does not calculate a drug's solubility or absorption. Crystal packing, ionisation, temperature and formulation also matter. Partitioning describes distribution between phases at equilibrium; permeability describes how readily material crosses a barrier over time. Those are different properties. Transporters and other uptake pathways can matter in addition to passive diffusion. We therefore use structure to propose measurements, not to declare a compound soluble, absorbable or suitable for a particular patient."
+        }
+      },
+      "definition": {
+        "bullets": [
+          {
+            "text": "P = c(octanol)/c(water) for a specified species at equilibrium; log P = log₁₀(P)."
+          },
+          {
+            "text": "log D includes the forms present at a specified pH."
+          },
+          {
+            "text": "First-pass metabolism is presystemic conversion, not necessarily destruction."
+          },
+          {
+            "text": "Absolute F concerns systemic availability of unchanged parent in the stated comparison."
+          }
+        ],
+        "callout": "A ratio, its logarithm and a delivered dose are different quantities.",
+        "caption": "Define partitioning and bioavailability carefully; metabolism may create active products.",
+        "voiceover": {
+          "text": "The partition coefficient P is an equilibrium concentration ratio for a specified species between phases, commonly octanol and water. Log P is the base-ten logarithm of that ratio, conventionally for the neutral species. A distribution coefficient D includes the forms present at a specified pH, so log D can vary with pH for an ionisable compound. A prodrug is designed for conversion to an active species, but the precursor need not have literally zero biological activity. First-pass metabolism is presystemic conversion in the gut wall or liver, which can reduce unchanged parent reaching circulation. In the conventional absolute-bioavailability comparison, F describes the fraction of a dose reaching systemic circulation as unchanged parent; active metabolites are considered separately."
+        }
+      },
+      "concept-lipinski": {
+        "body": "The original empirical thresholds flag risk when exceeded. They do not certify oral effectiveness.",
+        "bullets": [
+          {
+            "text": "Molecular mass > 500 and calculated log P > 5 flag risk."
+          },
+          {
+            "text": "More than 5 donors or more than 10 acceptors flag risk."
+          },
+          {
+            "text": "Values exactly at those boundaries do not exceed them."
+          }
+        ],
+        "secondary": "The heuristic has a defined empirical scope and exceptions. Satisfying it does not establish efficacy, safety or bioavailability.",
+        "callout": "Use > for the original violation boundaries.",
+        "caption": "Rule of Five boundary values are included; the rule is a screening heuristic.",
+        "diagram": {
+          "type": "diorama",
+          "kind": "chem12m8Cards",
+          "props": {
+            "header": "Original boundaries: exceeding them flags risk",
+            "cards": [
+              {
+                "icons": [
+                  {
+                    "name": "balance",
+                    "load": "molecule",
+                    "value": "≤ 500"
+                  }
+                ],
+                "title": "Mass ≤ 500 Da",
+                "lines": [
+                  "not above this boundary"
+                ]
+              },
+              {
+                "icons": [
+                  {
+                    "name": "oilWater"
+                  }
+                ],
+                "title": "log P ≤ 5",
+                "lines": [
+                  "not above this boundary"
+                ]
+              },
+              {
+                "icons": [
+                  {
+                    "name": "hbond",
+                    "role": "donor"
+                  }
+                ],
+                "title": "Donors ≤ 5",
+                "lines": [
+                  "not above this boundary"
+                ]
+              },
+              {
+                "icons": [
+                  {
+                    "name": "hbond",
+                    "role": "acceptor"
+                  }
+                ],
+                "title": "Acceptors ≤ 10",
+                "lines": [
+                  "not above this boundary"
+                ]
+              }
+            ],
+            "footer": {
+              "text": "A screening guide, not a clinical guarantee",
+              "sub": "Solubility, transport, metabolism and formulation still require evidence.",
+              "amber": true
+            }
+          }
+        },
+        "voiceover": {
+          "text": "Lipinski's original Rule of Five associates increased risk of poor absorption or permeation with more than five hydrogen-bond donors, more than ten acceptors, molecular mass greater than five hundred, and calculated log P greater than five. Exactly five donors, ten acceptors, mass five hundred or log P five do not exceed those respective boundaries. The rule is an empirical screening guide, with scope and exceptions, not a clinical efficacy rule or a guarantee of oral bioavailability. A candidate within the boundaries still needs measurements of solubility, permeability, stability, metabolism and formulation performance."
+        }
+      },
+      "concept-firstpass": {
+        "body": "Presystemic metabolism may reduce unchanged parent reaching circulation and may form active metabolites.",
+        "bullets": [
+          {
+            "text": "Gut-wall and hepatic metabolism can affect an oral dose before systemic circulation."
+          },
+          {
+            "text": "The effect depends on the compound and circumstances."
+          },
+          {
+            "text": "Codeine has activity; conversion to morphine contributes to its effects."
+          }
+        ],
+        "secondary": "This example explains a chemical/metabolic distinction. It does not recommend a medicine, dose or route.",
+        "callout": "Metabolism changes molecules; it does not always inactivate them.",
+        "caption": "Codeine is not categorically inactive, and first-pass loss is not the whole fate of a dose.",
+        "voiceover": {
+          "text": "For many orally absorbed compounds, passage through the intestinal wall and portal circulation exposes the compound to metabolism before systemic circulation. This can reduce unchanged parent availability, although the extent depends on the compound and other factors. Metabolism can also produce active metabolites. Codeine is not a simple inactive molecule: it has opioid-receptor activity, and conversion to morphine contributes importantly to its effects. The simplified diagram tracks a metabolic relationship, not an inactive-to-safe activation guarantee. Alternative delivery routes may alter presystemic exposure, but they do not prevent later metabolism throughout the body."
+        }
+      },
+      "concept-routes": {
+        "heading": "Routes and formulations are different",
+        "body": "Each option has distinct delivery, compatibility and validation requirements.",
+        "bullets": [
+          {
+            "text": "Oral: release, dissolution, absorption and presystemic fate."
+          },
+          {
+            "text": "Transdermal: sufficient validated skin flux for the required dose and duration."
+          },
+          {
+            "text": "Intravenous: appropriate formulation and direct systemic administration."
+          }
+        ],
+        "secondary": "Liposomes are formulations, not a separate anatomical route or automatic targeting guarantee.",
+        "callout": "Route choice needs more than polarity.",
+        "caption": "Separate route from formulation and validate the relevant delivery requirements.",
+        "diagram": {
+          "type": "table",
+          "headers": [
+            "Option",
+            "Key considerations"
+          ],
+          "rows": [
+            [
+              "Oral route",
+              "Release, dissolution, absorption, first-pass"
+            ],
+            [
+              "Transdermal route",
+              "Skin flux, dose, area, duration, formulation"
+            ],
+            [
+              "Intravenous route",
+              "Compatibility, formulation, direct systemic delivery"
+            ],
+            [
+              "Liposome formulation",
+              "Carrier performance and route-specific validation"
+            ]
+          ]
+        },
+        "voiceover": {
+          "text": "Oral, transdermal and intravenous administration are routes, whereas a liposome is a delivery formulation that may be used with an appropriate route. Oral formulations need suitable release, dissolution and absorption; some provide controlled release. Passive skin delivery depends on permeability, dose, area, duration and formulation, not simply being nonpolar. Technologies that enhance skin transport have their own validation requirements. Intravenous administration puts the formulated dose directly into systemic circulation but still requires compatibility and safety evidence, and later metabolism continues. Liposomes do not automatically target a desired tissue. Route and formulation choices need experimental and clinical evidence."
+        }
+      },
+      "worked-example": {
+        "heading": "Is there enough information to choose?",
+        "question": "An unnamed compound has substantial oral first-pass metabolism and needs exposure over several hours. Is that enough to recommend a transdermal patch over an oral formulation? Identify the evidence still needed.",
+        "coachNote": "Compare options conditionally; this is a formulation-evidence exercise, not a clinical recommendation.",
+        "steps": [
+          "First-pass metabolism motivates investigation but does not establish skin delivery.",
+          "A patch needs adequate permeability, dose/area, stability, local tolerance and validated release.",
+          "Avoiding initial first-pass exposure does not prevent later hepatic metabolism.",
+          "Oral formulations can have different release profiles; not every tablet has the same peak.",
+          "Conclusion: insufficient data to select a route or prescribe a formulation."
+        ],
+        "caption": "First-pass metabolism and desired duration do not uniquely justify a patch.",
+        "voiceover": {
+          "text": "We are given substantial first-pass metabolism and a need for exposure over several hours. These facts motivate investigation of alternatives, but do not select a route. A transdermal formulation would need evidence of adequate skin permeation, deliverable dose, stability, local tolerance and release performance. It avoids the initial gastrointestinal and portal-liver pathway, not subsequent liver metabolism. An oral controlled-release formulation can sometimes alter the time profile, so not every tablet produces the same sharp peak. We also need exposure targets and relevant safety evidence. The defensible conclusion is that the supplied facts are insufficient to recommend a patch or a tablet."
+        }
+      },
+      "misconception": {
+        "heading": "Three delivery overclaims",
+        "body": "Rule of Five compliance does not establish oral efficacy or safety.",
+        "secondary": "A salt form does not automatically improve absorption, and bypassing first-pass does not remove later metabolism.",
+        "mistakeTag": "Chemical tendencies need validation",
+        "callout": "A heuristic is not a delivery certificate.",
+        "caption": "Separate screening rules and molecular forms from measured clinical outcomes.",
+        "voiceover": {
+          "text": "A candidate within all Rule of Five boundaries is not guaranteed to work orally. The rule is a risk screen, and formulation, transport and metabolism still matter. Salt formation is another useful strategy with limits: it can affect dissolution, stability and formulation, but it does not guarantee improved total absorption. Passive diffusion of neutral species is only one possible transport mechanism. Finally, bypassing initial gut and portal-liver exposure does not mean that the compound never reaches the liver. Keep chemical tendencies separate from a measured delivery result or a clinical decision."
+        }
+      },
+      "quick-check": {
+        "question": "A hypothetical candidate has MW 500, calculated log P 5, 5 hydrogen-bond donors and 10 acceptors. (a) Does it exceed any of these original Rule of Five boundaries? (b) Does that establish effective oral delivery or safety?",
+        "pausePrompt": "Pause and check the boundary signs, then the scope of the inference.",
+        "answerSteps": [
+          "The original listed risk thresholds use > 500, > 5, > 5 donors and > 10 acceptors.",
+          "The supplied values equal their boundaries, so none exceeds them.",
+          "That result only answers this limited screening comparison.",
+          "It does not establish solubility, permeability, bioavailability, efficacy or safety.",
+          "Those outcomes need additional experimental and clinical evidence."
+        ],
+        "caption": "Boundary values do not exceed the original thresholds, and passing the screen is not clinical proof.",
+        "voiceover": {
+          "text": "A hypothetical candidate has molecular mass five hundred, calculated log P five, five hydrogen-bond donors and ten acceptors. Does it exceed any original Rule of Five boundary? Does that establish effective oral delivery or safety? Pause to check both the numbers and the scope. Each value equals its stated boundary, so none exceeds it. The original risk flags use greater than five hundred, greater than five, more than five donors and more than ten acceptors. This is only a screening comparison. It does not establish solubility, permeability, bioavailability, effectiveness or safety. Those require additional evidence."
+        }
+      },
+      "summary": {
+        "points": [
+          "Solubility, partitioning and permeability are different properties.",
+          "log P is logarithmic; log D is specified at a pH.",
+          "The original Rule of Five uses strictly exceeded risk boundaries.",
+          "Metabolism can produce active products; codeine itself has activity.",
+          "Route and formulation selection need evidence beyond polarity or first-pass."
+        ],
+        "finalPrompt": "Which property is measured, and which conclusion still needs evidence?",
+        "caption": "Chemistry enrichment, not a treatment recommendation or certified syllabus requirement.",
+        "voiceover": {
+          "text": "Molecular interactions can suggest affinity, but solubility, partitioning and permeability are different properties. Log P is the logarithm of a specified partition ratio, while log D is pH-dependent for an ionisable compound. Lipinski's original thresholds flag risk only when exceeded; they are not clinical guarantees. Metabolism can reduce unchanged parent and can generate active metabolites, and codeine is not simply inactive. A route or formulation needs evidence about delivery performance, dose and safety. Neither polarity nor first-pass metabolism alone is enough to choose one."
+        }
+      }
+    },
+    "response": {
+      "promptText": "A hypothetical candidate has molecular mass five hundred, calculated log P five, five hydrogen-bond donors and ten acceptors. Does it exceed any original Rule of Five boundary? Does that establish effective oral delivery or safety? Pause to check both the numbers and the scope.",
+      "answerText": "Each value equals its stated boundary, so none exceeds it. The original risk flags use greater than five hundred, greater than five, more than five donors and more than ten acceptors. This is only a screening comparison. It does not establish solubility, permeability, bioavailability, effectiveness or safety. Those require additional evidence.",
+      "minimumThinkingSeconds": 40,
+      "rationale": "Leave time to distinguish supported inference from missing evidence. Measure final pause and reveal timing later.",
+      "status": "unmeasured planning target, not assembled silence"
+    }
+  }
+}

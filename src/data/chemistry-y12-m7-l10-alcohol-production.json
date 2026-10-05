@@ -12,12 +12,7 @@
     "write equations, state conditions and predict products to represent the reactions of alcohols, including but not limited to (ACSCH128, ACSCH136):"
   ],
   "moduleLessonCount": 23,
-  "nesaOutcomes": [
-    "CH12-14",
-    "CH11/12-5",
-    "CH11/12-6",
-    "CH11/12-7"
-  ],
+  "nesaOutcomes": ["CH12-14", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
   "inquiryQuestion": "How can alcohols be produced and what are their properties?",
   "lessonIntent": "Students can write equations and conditions for producing alcohols by hydration, haloalkane substitution and fermentation, and compare the methods.",
   "examSkill": "Use the reversible arrow for hydration, explain pressure and temperature with Le Chatelier, and pick substitution vs elimination from aqueous vs alcoholic hydroxide.",
@@ -54,18 +49,10 @@
       "type": "definition",
       "heading": "Three routes to an alcohol",
       "bullets": [
-        {
-          "text": "Alkene hydration: CH2=CH2 + H2O gives ethanol; reversible, an equilibrium."
-        },
-        {
-          "text": "Haloalkane substitution: R-X + NaOH(aq) gives R-OH + NaX."
-        },
-        {
-          "text": "Fermentation: glucose C6H12O6 gives 2 ethanol + 2 CO2, with yeast."
-        },
-        {
-          "text": "Reflux: a condenser returns vapour to the flask, preventing loss of reactants."
-        }
+        {"text": "Alkene hydration: CH2=CH2 + H2O gives ethanol; reversible, an equilibrium."},
+        {"text": "Haloalkane substitution: R-X + NaOH(aq) gives R-OH + NaX."},
+        {"text": "Fermentation: glucose C6H12O6 gives 2 ethanol + 2 CO2, with yeast."},
+        {"text": "Reflux: a condenser returns vapour to the flask, preventing loss of reactants."}
       ],
       "callout": "Hydration is reversible; substitution and fermentation go essentially to completion.",
       "durationInFrames": 1080,
@@ -80,15 +67,9 @@
       "heading": "Hydration as an equilibrium",
       "body": "Industrial hydration is reversible, so the conditions are chosen using Le Chatelier's principle to push toward ethanol.",
       "bullets": [
-        {
-          "text": "Conditions: steam, H3PO4 catalyst, about 300 degrees, about 65 atmospheres."
-        },
-        {
-          "text": "High pressure favours the side with fewer gas moles, the ethanol side."
-        },
-        {
-          "text": "Single-pass conversion is low, so unreacted ethene is recycled."
-        }
+        {"text": "Conditions: steam, H3PO4 catalyst, about 300 degrees, about 65 atmospheres."},
+        {"text": "High pressure favours the side with fewer gas moles, the ethanol side."},
+        {"text": "Single-pass conversion is low, so unreacted ethene is recycled."}
       ],
       "secondary": "300 degrees is a rate compromise, not a yield choice. The forward reaction is exothermic, so a lower temperature would give more ethanol but too slowly.",
       "callout": "High pressure for yield; high temperature for rate, not yield.",
@@ -166,15 +147,9 @@
       "heading": "Substitution: aqueous or alcoholic?",
       "body": "A haloalkane heated with hydroxide can give an alcohol or an alkene. The solvent decides which.",
       "bullets": [
-        {
-          "text": "Aqueous NaOH: nucleophilic substitution, -OH replaces the halogen, gives an alcohol."
-        },
-        {
-          "text": "Alcoholic NaOH: elimination instead, gives an alkene."
-        },
-        {
-          "text": "R-X + NaOH(aq) -> R-OH + NaX, heated under reflux."
-        }
+        {"text": "Aqueous NaOH: nucleophilic substitution, -OH replaces the halogen, gives an alcohol."},
+        {"text": "Alcoholic NaOH: elimination instead, gives an alkene."},
+        {"text": "R-X + NaOH(aq) -> R-OH + NaX, heated under reflux."}
       ],
       "secondary": "Halide reactivity is R-I > R-Br > R-Cl, since C-I is the weakest bond. The product is NaX, not separate Na and X.",
       "callout": "Aqueous gives the alcohol; alcoholic gives the alkene.",
@@ -325,22 +300,16 @@
       "heading": "Fermentation: the biological route",
       "body": "Yeast converts glucose to ethanol and carbon dioxide. Three conditions are required, all of them.",
       "bullets": [
-        {
-          "text": "C6H12O6 -> 2 C2H5OH + 2 CO2, catalysed by yeast (zymase)."
-        },
-        {
-          "text": "A controlled moderate temperature, often about 25–35 °C depending on strain/process; overheating impairs fermentation."
-        },
-        {
-          "text": "Anaerobic: oxygen-limited conditions favour the desired process; some yeasts also ferment with oxygen at high sugar."
-        }
+        {"text": "C6H12O6 -> 2 C2H5OH + 2 CO2, catalysed by yeast (zymase)."},
+        {"text": "About 35 degrees: the enzyme's optimum; too hot denatures it."},
+        {"text": "Anaerobic: no oxygen, or the yeast respires to CO2 and water instead."}
       ],
       "secondary": "Fermentation stops near 15 percent ethanol, which is toxic to yeast, so spirits need fractional distillation. The most-omitted condition is anaerobic.",
       "callout": "Yeast, about 35 degrees, and no oxygen, all three.",
-      "durationInFrames": 1132,
+      "durationInFrames": 1080,
       "caption": "C6H12O6 -> 2 C2H5OH + 2 CO2, with yeast, ~35C, anaerobic.",
       "voiceover": {
-        "text": "Fermentation: the biological route Yeast converts glucose to ethanol and carbon dioxide. Three conditions are required, all of them. C6H12O6 -> 2 C2H5OH + 2 CO2, catalysed by yeast (zymase). A controlled moderate temperature, often about 25–35 °C depending on strain/process; overheating impairs fermentation. Anaerobic: oxygen-limited conditions favour the desired process; some yeasts also ferment with oxygen at high sugar. Fermentation stops near 15 percent ethanol, which is toxic to yeast, so spirits need fractional distillation. The most-omitted condition is anaerobic."
+        "text": "The third route is fermentation, the oldest one humans have used on purpose. Yeast contains an enzyme, zymase, that converts glucose into ethanol and carbon dioxide. The balanced equation is glucose gives two ethanol plus two carbon dioxide, and that coefficient of two on both products is essential, an unbalanced version loses marks. Three conditions are required, all of them. First, about thirty-five degrees, the enzyme's optimum, because much hotter denatures it and much colder is too slow. Second, anaerobic conditions, no oxygen, because if oxygen is present the yeast respires aerobically and makes carbon dioxide and water instead of ethanol. And third, the yeast itself as the catalyst. Fermentation stalls at around fifteen percent ethanol, which becomes toxic to the yeast, so making spirits needs fractional distillation afterwards. The condition students forget most is anaerobic, so write it every time."
       }
     },
     {
@@ -349,22 +318,16 @@
       "heading": "Comparing the three methods",
       "body": "Choosing a route is an engineering and environmental decision. Compare them directly, point by point.",
       "bullets": [
-        {
-          "text": "Rate: hydration is fast and continuous; fermentation is slow and batch."
-        },
-        {
-          "text": "Compare product streams after stated processing; raw broth concentration differs from purified ethanol."
-        },
-        {
-          "text": "Sustainability: fermentation uses renewable biomass; hydration uses fossil ethene."
-        }
+        {"text": "Rate: hydration is fast and continuous; fermentation is slow and batch."},
+        {"text": "Purity: hydration gives about 95 percent; fermentation only about 15 percent."},
+        {"text": "Sustainability: fermentation uses renewable biomass; hydration uses fossil ethene."}
       ],
       "secondary": "Write comparative statements, not separate descriptions. Marks reward fermentation is slower than hydration because..., with both advantages and limitations acknowledged.",
       "callout": "Compare on rate, purity, and sustainability, side by side.",
       "durationInFrames": 1050,
       "caption": "Hydration: fast, pure, fossil. Fermentation: slow, dilute, renewable.",
       "voiceover": {
-        "text": "Comparing the three methods Choosing a route is an engineering and environmental decision. Compare them directly, point by point. Rate: hydration is fast and continuous; fermentation is slow and batch. Compare product streams after stated processing; raw broth concentration differs from purified ethanol. Sustainability: fermentation uses renewable biomass; hydration uses fossil ethene. Write comparative statements, not separate descriptions. Marks reward fermentation is slower than hydration because..., with both advantages and limitations acknowledged."
+        "text": "Now let's compare the methods, because choosing one is really an engineering and environmental decision. Compare them point by point. On rate, hydration is fast and runs continuously, while fermentation is slow and done in batches over days. On purity, hydration gives high purity ethanol, around ninety-five percent, straight from the reactor, while fermentation gives only about fifteen percent, which must be distilled up. On sustainability, fermentation wins, it uses renewable plant biomass and is close to carbon neutral, since the plants absorbed carbon dioxide as they grew, whereas hydration relies on ethene from fossil fuels. The exam technique here is crucial, write comparative statements, not separate descriptions. Say fermentation is slower than hydration because, rather than describing each one in isolation. And acknowledge both advantages and limitations of each, because a one-sided answer caps your marks."
       }
     },
     {
@@ -427,15 +390,15 @@
       "pausePrompt": "Pause and work it through.",
       "answerSteps": [
         "Condition 1: yeast (the enzyme zymase) as the biological catalyst",
-        "Condition 2: a controlled moderate temperature appropriate to the yeast and process",
+        "Condition 2: about 35 degrees, the enzyme's optimum temperature",
         "Condition 3: anaerobic, with oxygen excluded",
-        "Oxygen availability influences metabolism, but some yeasts ferment high-sugar media even with oxygen",
+        "With oxygen, yeast respires aerobically -> CO2 + H2O, not ethanol",
         "Answer: yeast, ~35C, anaerobic; oxygen would give CO2 and water instead ✓"
       ],
-      "durationInFrames": 2096,
+      "durationInFrames": 1230,
       "caption": "Fermentation needs yeast, ~35C, anaerobic; oxygen would give respiration instead.",
       "voiceover": {
-        "text": "Quick check. State the three conditions for fermentation, and explain why the anaerobic condition is essential. Pause and work it through. Right. Condition one, yeast, which provides the enzyme zymase as the biological catalyst. Condition two, a temperature of about thirty-five degrees, which is the enzyme's optimum, hot enough to work quickly but not so hot it denatures. Condition three, anaerobic conditions, meaning oxygen is excluded. Now why does anaerobic matter so much? Because if oxygen is present, the yeast switches to aerobic respiration, breaking the glucose all the way down to carbon dioxide and water, and producing no ethanol at all. So excluding oxygen is what forces the yeast to ferment rather than respire. The three conditions are yeast, about thirty-five degrees, and anaerobic, and the anaerobic one is the condition most often left out. This is a process model, not an absolute metabolic rule: some yeasts ferment high-sugar media even when oxygen is available."
+        "text": "Quick check. State the three conditions for fermentation, and explain why the anaerobic condition is essential. Pause and work it through. Right. Condition one, yeast, which provides the enzyme zymase as the biological catalyst. Condition two, a temperature of about thirty-five degrees, which is the enzyme's optimum, hot enough to work quickly but not so hot it denatures. Condition three, anaerobic conditions, meaning oxygen is excluded. Now why does anaerobic matter so much? Because if oxygen is present, the yeast switches to aerobic respiration, breaking the glucose all the way down to carbon dioxide and water, and producing no ethanol at all. So excluding oxygen is what forces the yeast to ferment rather than respire. The three conditions are yeast, about thirty-five degrees, and anaerobic, and the anaerobic one is the condition most often left out."
       }
     },
     {

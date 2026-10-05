@@ -9,15 +9,14 @@
   "syllabusVersion": "Biology 11–12 (2025)",
   "syllabusModule": "Cells as the basis of life",
   "syllabusDotPoints": [
-    "Conduct a practical investigation to prepare a wet mount slide and identify the cytoplasm, cell wall and nucleus under a light microscope",
-    "Conduct a practical investigation to calculate the size of a variety of specialised cells under the microscope using a mini-grid and the equation"
+    "Use calibrated microscope measurements to estimate cell size, including cell size = diameter of field of view ÷ number of cells across the field"
   ],
   "moduleLessonCount": 25,
   "nesaOutcomes": [
     "BI-11-01"
   ],
-  "lessonIntent": "Students can prepare a wet mount, identify the cytoplasm, cell wall and nucleus, and calculate a cell’s real size using a mini-grid and the magnification equation.",
-  "examSkill": "Decide whether a measured length is real (read off a stage grid) or magnified (read off an image) before choosing whether to divide by the magnification.",
+  "lessonIntent": "Students can prepare and observe cells, distinguish a calibrated field-of-view measurement from an image measurement, and calculate real cell size using both methods.",
+  "examSkill": "Choose the method from the information given: cell size = field-of-view diameter ÷ number of cells across, or real size = image size ÷ magnification. Convert units before calculating.",
   "productionRole": "production",
   "fps": 30,
   "width": 1920,
@@ -129,23 +128,23 @@
       "id": "concept-mini-grid",
       "type": "concept",
       "heading": "Measuring with a mini-grid",
-      "body": "A grid on the stage is magnified along with the cell, so reading the cell against it gives the real size straight away.",
+      "body": "A calibrated field of view turns what you see into a real measurement. If several similar cells span the field, estimate one cell by dividing the field diameter by the number across.",
       "bullets": [
         {
-          "text": "Count the squares the cell spans: 4 squares × 100 µm = 400 µm."
+          "text": "Field-of-view method: cell size = diameter of field of view ÷ number of cells across it."
         },
         {
-          "text": "magnification = image size ÷ real size."
+          "text": "Example: 2.0 mm field ÷ 5 cells = 0.40 mm = 400 µm."
         },
         {
-          "text": "Forwards: at ×100 that 400 µm cell appears 40 000 µm, or 40 mm, wide."
+          "text": "Image method: magnification = image size ÷ real size; use this only when measuring a magnified image."
         }
       ],
-      "callout": "The grid is magnified too: its reading is already real, so there is nothing to divide.",
-      "durationInFrames": 1762,
-      "caption": "Grid reading = real size; the equation converts between real size and image size.",
+      "callout": "Field of view ÷ cells across gives an estimated real cell size.",
+      "durationInFrames": 1574,
+      "caption": "Cell size = field-of-view diameter ÷ number of cells across; image measurements use magnification.",
       "voiceover": {
-        "text": "Now, how big is a cell? A mini grid lies on the stage beside the specimen. Its squares have a known size, here one hundred micrometres, and because the grid is magnified by exactly the same amount as the cell, it's a ruler marked in real micrometres. So just count the squares the cell spans. This one covers four squares, so its real size is four times one hundred, four hundred micrometres. There's nothing to divide. The magnification equation links the three quantities. Magnification equals image size divided by real size. Use it forwards as a check. At times one hundred, a four hundred micrometre cell appears forty thousand micrometres wide. That is a forty millimetre image on a correctly scaled photomicrograph, not the physical diameter of the microscope field."
+        "text": "A calibrated field of view gives another direct way to estimate cell size. If five similar cells fit across a field that is two point zero millimetres wide, use the NESA equation: cell size equals the diameter of the field of view divided by the number of cells across it. Two point zero millimetres divided by five is zero point four zero millimetres, or four hundred micrometres. If instead you measure a cell on a photograph or screen, that is an image measurement, so use magnification equals image size divided by real size. The key is to identify which kind of measurement the question gives you."
       },
       "diagram": {
         "type": "diorama",
@@ -155,6 +154,9 @@
           "squareUm": 100,
           "span": 4,
           "mag": 100,
+          "fieldDiameterUm": 2000,
+          "cellsAcross": 5,
+          "cellSizeUm": 400,
           "at": {
             "grid": 130,
             "cell": 170,
@@ -165,29 +167,6 @@
           }
         }
       }
-    },
-    {
-      "id": "concept-field-of-view",
-      "type": "concept",
-      "heading": "Estimate size from the field of view",
-      "body": "Use a calibrated field-of-view diameter at the same objective setting.",
-      "bullets": [
-        {
-          "text": "Cell size ≈ field-of-view diameter ÷ number of cells across the diameter."
-        },
-        {
-          "text": "Example: 1.8 mm ÷ 6 cells = 0.30 mm = 300 µm."
-        },
-        {
-          "text": "Estimate along the same direction, include partial cells, and repeat across several cells."
-        }
-      ],
-      "callout": "The field-of-view diameter is already a real specimen distance.",
-      "caption": "A calibrated field of view gives an approximate cell size.",
-      "voiceover": {
-        "text": "There is another measurement method required by the new syllabus. Calibrate the diameter of the field of view at your objective setting, then estimate how many cells fit across that diameter. Cell size is approximately the field-of-view diameter divided by the number of cells across the view. If the diameter is one point eight millimetres and six cells fit across it, the mean cell size is zero point three millimetres, or three hundred micrometres. Do not divide that result by magnification again. Include partial cells, use the same direction for both lengths, and repeat because cells vary in size."
-      },
-      "durationInFrames": 1500
     },
     {
       "id": "concept-cell-sizes",
@@ -217,7 +196,7 @@
         "props": {
           "mode": "ruler",
           "fromNm": 1000,
-          "toNm": 1000000000.0,
+          "toNm": 1000000000,
           "items": [
             {
               "name": "red blood cell",
@@ -242,7 +221,7 @@
             },
             {
               "name": "nerve cell",
-              "nm": 1000000000.0,
+              "nm": 1000000000,
               "icon": "cell",
               "size": "over 1 m",
               "at": 550
@@ -289,20 +268,20 @@
     {
       "id": "worked-example",
       "type": "workedExample",
-      "heading": "Real size from a photomicrograph",
-      "question": "A cell measures 30 mm across on a photomicrograph taken at ×100. Calculate its real size in micrometres.",
-      "coachNote": "This length was read off a magnified image, so divide by the magnification.",
+      "heading": "Estimate cell size from field of view",
+      "question": "A microscope field of view is 1.8 mm wide. About 6 similar cells fit across its diameter. Estimate the width of one cell in micrometres.",
+      "coachNote": "Use cell size = field-of-view diameter ÷ number of cells across, then convert millimetres to micrometres.",
       "steps": [
-        "Known: image size = 30 mm; magnification = ×100.",
-        "Convert: 30 mm × 1000 = 30 000 µm.",
-        "Formula: real size = image size ÷ magnification.",
-        "Substitute: 30 000 µm ÷ 100 = 300 µm.",
-        "Answer: 300 µm, plausible for a large plant cell ✓"
+        "Known: field-of-view diameter = 1.8 mm; cells across = 6.",
+        "Formula: cell size = field-of-view diameter ÷ number of cells across.",
+        "1.8 mm ÷ 6 = 0.30 mm.",
+        "Convert: 0.30 mm × 1000 = 300 µm.",
+        "Answer: estimated cell width = 300 µm ✓"
       ],
       "durationInFrames": 1152,
-      "caption": "Image measurement: convert to µm, then divide by the magnification.",
+      "caption": "1.8 mm ÷ 6 = 0.30 mm = 300 µm.",
       "voiceover": {
-        "text": "Here's the other direction. A cell measures thirty millimetres across on a photomicrograph taken at times one hundred. What's its real size? First decide what you measured. This length came off a magnified image, so this time you do divide. Convert first. Thirty millimetres is thirty thousand micrometres. Then real size equals image size divided by magnification. Thirty thousand divided by one hundred is three hundred micrometres. And sanity check it. Three hundred micrometres is plausible for a large plant cell."
+        "text": "Here's the field-of-view calculation. The field is one point eight millimetres wide and about six similar cells fit across it. Use cell size equals field-of-view diameter divided by the number of cells across. One point eight divided by six is zero point three zero millimetres. Convert that to micrometres by multiplying by one thousand, giving three hundred micrometres. Because the cells do not usually line up perfectly, report it as an estimate."
       }
     },
     {
@@ -344,16 +323,15 @@
       "points": [
         "Wet mount: water, thin specimen, stain, coverslip at an angle, low power first.",
         "Wall: firm boundary; cytoplasm: pale jelly; nucleus: darker and stained.",
-        "A stage-grid reading is already the real size: no division.",
-        "Field-of-view estimate: cell size ≈ calibrated diameter ÷ cells across the diameter.",
-        "magnification = image size ÷ real size; divide only a magnified image measurement.",
+        "Field-of-view method: cell size = field-of-view diameter ÷ number of cells across.",
+        "Image method: magnification = image size ÷ real size; divide a magnified image measurement by magnification.",
         "Measure several specialised cells and take the mean; include units."
       ],
-      "finalPrompt": "Before you divide: did this length come from a grid, or from an image?",
-      "durationInFrames": 1518,
+      "finalPrompt": "Before calculating: field of view, or magnified image?",
+      "durationInFrames": 1254,
       "caption": "Prepare, identify, measure: grid readings are real, image readings get divided.",
       "voiceover": {
-        "text": "Let's lock it in. For a wet mount, use water, a thin specimen, a stain, and a coverslip lowered at an angle, then focus on low power first. The cell wall is the firm boundary, the cytoplasm is pale, and the nucleus is darker and stained. A stage grid reading is already the real size. Magnification equals image size over real size, and you only divide a measurement from a magnified image. Before you divide, ask where the length came from. Next time, how better microscopes changed what we know about cells. You can also estimate cell size by dividing a calibrated field-of-view diameter by the number of cells across it."
+        "text": "Let's lock it in. Prepare the specimen carefully, identify the structures you can actually see, then choose the measurement method from the information given. For a calibrated field of view, cell size equals the field diameter divided by the number of cells across it. For a magnified photograph or screen measurement, magnification equals image size divided by real size, so divide the image measurement by magnification. Convert units before you calculate and include units in the answer."
       }
     }
   ]

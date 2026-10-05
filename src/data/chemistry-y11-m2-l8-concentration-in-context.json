@@ -11,11 +11,7 @@
     "calculate the concentration of solutions and apply concentration to real contexts including purity and parts per million (ppm)"
   ],
   "moduleLessonCount": 20,
-  "nesaOutcomes": [
-    "CH11-9",
-    "CH11/12-4",
-    "CH11/12-6"
-  ],
+  "nesaOutcomes": ["CH11-9", "CH11/12-4", "CH11/12-6"],
   "inquiryQuestion": "How are chemicals in solutions measured?",
   "lessonIntent": "Students can apply concentration calculations to real contexts: correcting for sample purity and converting between ppm, g L⁻¹, and mol L⁻¹.",
   "examSkill": "Apply a purity factor before converting mass to moles; convert ppm (mg L⁻¹) to mol L⁻¹ by dividing by molar mass.",
@@ -54,22 +50,16 @@
       "body": "Real chemicals aren't 100% pure, and real pollutants are measured in tiny trace units.",
       "image": "l8PurityPpm",
       "bullets": [
-        {
-          "text": "Purity: only part of a weighed sample is the actual chemical."
-        },
-        {
-          "text": "For dilute water with density ≈ 1 kg/L, 1 ppm by mass ≈ 1 mg/L."
-        },
-        {
-          "text": "For dilute water with density ≈ 1 kg/L, 1 ppb by mass ≈ 1 µg/L."
-        }
+        {"text": "Purity: only part of a weighed sample is the actual chemical."},
+        {"text": "Parts per million, ppm: one milligram of solute per litre."},
+        {"text": "Parts per billion, ppb: one microgram per litre, for tiny traces."}
       ],
       "secondary": "ppm and mg per litre mean the same thing in dilute water solutions. Both convert to mol L⁻¹ by dividing by molar mass.",
       "callout": "Purity shrinks the useful mass. ppm just scales the units.",
-      "durationInFrames": 1916,
+      "durationInFrames": 1110,
       "caption": "Purity reduces usable mass; ppm and ppb measure trace concentrations.",
       "voiceover": {
-        "text": "Two real-world ideas drive this lesson. First, purity. A bottle of sodium hydroxide labelled ninety-six percent pure means only ninety-six percent of what you weigh is actually sodium hydroxide. The rest is impurity, often absorbed water. So before any mole calculation, you scale the mass down to the part that's real. Second, trace amounts. Pollutants in water are far too dilute for moles per litre to be friendly, so we use parts per million, where one mass-based ppm is one milligram per kilogram, approximately one milligram per litre in dilute water of density near one kilogram per litre. For even tinier traces we use parts per billion, one microgram per litre. The useful fact, ppm and milligrams per litre are approximately numerically equal in dilute water near that density, and both convert to moles per litre by dividing by the molar mass."
+        "text": "Two real-world ideas drive this lesson. First, purity. A bottle of sodium hydroxide labelled ninety-six percent pure means only ninety-six percent of what you weigh is actually sodium hydroxide. The rest is impurity, often absorbed water. So before any mole calculation, you scale the mass down to the part that's real. Second, trace amounts. Pollutants in water are far too dilute for moles per litre to be friendly, so we use parts per million, where one ppm is one milligram of solute per litre. For even tinier traces we use parts per billion, one microgram per litre. The useful fact, ppm and milligrams per litre are the same thing in dilute water, and both convert to moles per litre by dividing by the molar mass."
       }
     },
     {
@@ -77,18 +67,10 @@
       "type": "definition",
       "heading": "The words you need",
       "bullets": [
-        {
-          "text": "Purity: the percentage of a sample that is the actual substance."
-        },
-        {
-          "text": "Parts per million (ppm): milligrams of solute per litre of solution."
-        },
-        {
-          "text": "Parts per billion (ppb): micrograms of solute per litre."
-        },
-        {
-          "text": "Safe limit: a regulated maximum concentration, e.g. fluoride ≤ 1.5 mg L⁻¹."
-        }
+        {"text": "Purity: the percentage of a sample that is the actual substance."},
+        {"text": "Parts per million (ppm): milligrams of solute per litre of solution."},
+        {"text": "Parts per billion (ppb): micrograms of solute per litre."},
+        {"text": "Safe limit: a regulated maximum concentration, e.g. fluoride ≤ 1.5 mg L⁻¹."}
       ],
       "callout": "ppm in dilute water = mg L⁻¹. Same number, different name.",
       "durationInFrames": 930,
@@ -103,15 +85,9 @@
       "heading": "The tools, reused",
       "body": "No new formula. You combine purity with the tools from earlier lessons.",
       "bullets": [
-        {
-          "text": "Apply purity: real mass = weighed mass × purity fraction."
-        },
-        {
-          "text": "Mass to moles: n = m ÷ M, as always."
-        },
-        {
-          "text": "ppm to mol L⁻¹: divide mg L⁻¹ by molar mass, then by 1000."
-        }
+        {"text": "Apply purity: real mass = weighed mass × purity fraction."},
+        {"text": "Mass to moles: n = m ÷ M, as always."},
+        {"text": "ppm to mol L⁻¹: divide mg L⁻¹ by molar mass, then by 1000."}
       ],
       "secondary": "Purity is a multiply step. Going from impure mass needed back up uses divide. Track the direction carefully.",
       "callout": "Decide first: am I scaling mass down, or working backwards up?",
@@ -164,18 +140,19 @@
       "id": "worked-example-2",
       "type": "workedExample",
       "heading": "ppm in drinking water",
-      "question": "Convert 0.0500 g/L nitrate ion to mol/L and compare with the WHO guideline of 50 mg/L as NO₃⁻. M(NO₃⁻) = 62.00 g/mol.",
+      "question": "A water sample contains 0.0500 g L⁻¹ of nitrate (NO₃⁻). Is it under the WHO limit of 8.06 × 10⁻³ mol L⁻¹? (N 14.007, O 15.999)",
       "coachNote": "Convert g L⁻¹ to mol L⁻¹, then compare.",
       "steps": [
-        "c = 0.0500 ÷ 62.00 = 8.06 × 10⁻⁴ mol/L.",
-        "50 mg/L = 0.050 g/L ≈ 8.06 × 10⁻⁴ mol/L.",
-        "The sample is at the quoted guideline to supplied precision, not 10× below.",
-        "This checks nitrate concentration only, not overall water safety."
+        "M(NO₃⁻) = 14.007 + 3(15.999) = 62.00 g mol⁻¹",
+        "c = (g L⁻¹) ÷ M = 0.0500 ÷ 62.00",
+        "c = 8.06 × 10⁻⁴ mol L⁻¹",
+        "Compare: 8.06 × 10⁻⁴ vs limit 8.06 × 10⁻³",
+        "Answer: well under the limit (10× lower) ✓"
       ],
-      "durationInFrames": 1608,
-      "caption": "The original guideline conversion was ten times too large.",
+      "durationInFrames": 1410,
+      "caption": "0.0500 g L⁻¹ nitrate = 8.06 × 10⁻⁴ mol L⁻¹, ten times under the WHO limit.",
       "voiceover": {
-        "text": "A water sample contains zero point zero five zero zero grams per litre of nitrate ion. Convert this to moles per litre and compare it with the WHO nitrate guideline of fifty milligrams per litre as nitrate ion. The molar mass is sixty two point zero zero grams per mole. Dividing zero point zero five zero zero by sixty two gives eight point zero six times ten to the minus four moles per litre. Fifty milligrams per litre is also zero point zero five zero grams per litre. So the sample is at the quoted guideline, to the supplied precision, not ten times below it. This comparison concerns nitrate only and is not a complete drinking-water safety assessment."
+        "text": "Now a real context. A water sample contains nought-point-zero-five grams per litre of nitrate ions. Is it under the World Health Organisation safe limit of eight-point-zero-six times ten to the minus three moles per litre? First, recognise that grams per litre is a concentration. To compare with the limit, convert it to moles per litre. Step one, molar mass of the nitrate ion. Nitrogen plus three oxygens, sixty-two grams per mole. Step two, divide the grams per litre by the molar mass. Nought-point-zero-five over sixty-two is eight-point-zero-six times ten to the minus four moles per litre. Step three, compare. Our value is ten to the minus four, the limit is ten to the minus three. So the sample is ten times below the limit. Safe to drink. The skill was recognising you had to convert before you could compare."
       }
     },
     {

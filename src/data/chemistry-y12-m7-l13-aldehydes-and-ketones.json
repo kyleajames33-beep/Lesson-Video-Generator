@@ -232,23 +232,27 @@
       "body": "Oxidising a carbonyl compound means removing the hydrogen from the carbonyl carbon. A ketone simply has none to remove.",
       "bullets": [
         {
-          "text": "Aldehyde: the carbonyl carbon has one H, so it oxidises to a carboxylic acid."
+          "text": "Aldehyde: the carbonyl carbon has one H, so it oxidises to a carboxylic acid.",
+          "at": 8
         },
         {
-          "text": "Ketone: the carbonyl carbon has no H, so oxidation is resisted under these mild test conditions."
+          "text": "Ketone: the carbonyl carbon has no H, so oxidation cannot proceed.",
+          "at": 16
         },
         {
-          "text": "This is structural, not a special rule you have to memorise."
+          "text": "This is structural, not a special rule you have to memorise.",
+          "at": 24
         },
         {
-          "text": "So secondary alcohol to ketone is a dead end for further oxidation."
+          "text": "So secondary alcohol to ketone is a dead end for further oxidation.",
+          "at": 31
         }
       ],
       "callout": "No hydrogen on the carbonyl carbon means no further oxidation.",
       "durationInFrames": 1921,
       "caption": "Ketones resist oxidation because the carbonyl carbon has no H to remove.",
       "voiceover": {
-        "text": "Why ketones hit a dead end Oxidising a carbonyl compound means removing the hydrogen from the carbonyl carbon. A ketone simply has none to remove. Aldehyde: the carbonyl carbon has one H, so it oxidises to a carboxylic acid. Ketone: the carbonyl carbon has no H, so oxidation is resisted under these mild test conditions. This is structural, not a special rule you have to memorise. So secondary alcohol to ketone is a dead end for further oxidation."
+        "text": "Let's make the oxidation logic airtight, because it explains the test results and it's a guaranteed exam point. To oxidise a carbonyl compound, an oxidising agent has to remove the hydrogen attached to the carbonyl carbon. An aldehyde has exactly one hydrogen sitting there, so it readily oxidises up to a carboxylic acid. A ketone has two carbon groups on its carbonyl carbon and no hydrogen, so there is simply nothing for the oxidising agent to take. That's why ketones don't react with Tollens', Fehling's, or dichromate under normal conditions. Notice this is a structural argument, not a rule to memorise. And it links straight back to alcohols. A primary alcohol oxidises to an aldehyde and onward to an acid, but a secondary alcohol oxidises to a ketone and stops dead. The ketone is the end of the line."
       },
       "diagram": {
         "type": "diorama",
@@ -373,18 +377,19 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Your turn",
-      "question": "Candidates are acyclic aldehydes and ketones only. A (C₄H₈O) gives a silver mirror; B (C₄H₈O) is negative in the stated mild oxidation tests. Classify them and list the possible identities.",
+      "question": "Compound A (C4H8O) gives a silver mirror with Tollens'. Compound B (C4H8O) gives no reaction with Tollens', Fehling's, or acidified dichromate. Classify A and B, name each, and explain B's negative tests.",
       "pausePrompt": "Pause and reason from the tests before the answer plays.",
       "answerSteps": [
-        "Within the stated candidate set, A is an aldehyde.",
-        "A can be butanal or 2-methylpropanal; tests do not distinguish them.",
-        "B is butan-2-one within the restricted candidate set.",
-        "Formula and negative tests alone do not prove ketone identity among all possible compounds."
+        "Both are C4H8O, so each is an aldehyde or a ketone (one degree of unsaturation, the C=O).",
+        "A gives a silver mirror, so A is an aldehyde: butanal, CH3CH2CH2CHO.",
+        "B gives no Tollens', no Fehling's, and no dichromate change, so it cannot be oxidised: a ketone.",
+        "The only C4 ketone is butan-2-one, CH3COCH2CH3.",
+        "B is negative because its carbonyl carbon has no hydrogen for the oxidising agent to remove."
       ],
       "durationInFrames": 2043,
-      "caption": "State the candidate set and retain structural ambiguity.",
+      "caption": "A = butanal (aldehyde); B = butan-2-one (ketone, no H to oxidise).",
       "voiceover": {
-        "text": "The candidate set is restricted to acyclic aldehydes and ketones. A positive Tollens test supports an aldehyde, but there are two C four aldehydes: butanal and two-methylpropanal. Both fit A. Within this restricted candidate set, B is the ketone butan-two-one. A formula and negative oxidation tests alone would not rule out every other functional group outside that set. Additional structural data is needed for a unique aldehyde identification."
+        "text": "Your turn. Two compounds, both C4H8O. Compound A gives a silver mirror with Tollens'. Compound B gives no reaction with Tollens', no reaction with Fehling's, and no colour change with acidified dichromate. Classify and name both, and explain why B is negative. Pause now and reason it through. Right, let's check. Both formulas are C4H8O, which has one degree of unsaturation, and that's the carbon-oxygen double bond, so each must be an aldehyde or a ketone. A gives a silver mirror, so A is an aldehyde, and the straight-chain C4 aldehyde is butanal. B refuses every oxidising test, which means it can't be oxidised at all, so B is a ketone. The only four-carbon ketone is butan-2-one. And the reason B is negative is the heart of the lesson. Its carbonyl carbon has two carbon groups and no hydrogen, so there's nothing for the oxidising agent to remove."
       }
     },
     {

@@ -8,17 +8,11 @@
   "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
   "syllabusModule": "Module 8: Applying Chemical Ideas",
   "syllabusDotPoints": [
-    "Module 8 environmental-monitoring context; nitrate/phosphate ion chromatography is extension, not a named 2017 requirement. (Audit mapping paraphrase, not an official quotation.)"
+    "analyse the need for monitoring the environment",
+    "conduct investigations to analyse the concentration of an appropriate range of ions in a local body of water"
   ],
   "moduleLessonCount": 16,
-  "nesaOutcomes": [
-    "CH12-15",
-    "CH11/12-1",
-    "CH11/12-2",
-    "CH11/12-3",
-    "CH11/12-4",
-    "CH11/12-7"
-  ],
+  "nesaOutcomes": ["CH12-15", "CH11/12-1", "CH11/12-2", "CH11/12-3", "CH11/12-4", "CH11/12-7"],
   "inquiryQuestion": "How are the ions present in the environment identified and measured?",
   "lessonIntent": "Students can trace the eutrophication sequence from nutrient loading to fish kill and identify the analytical methods used to monitor nitrate and phosphate.",
   "examSkill": "Explain eutrophication as an oxygen-collapse mechanism driven by decomposition and rising BOD, not the algae themselves, and interpret monitoring data.",
@@ -57,15 +51,9 @@
       "heading": "Nutrients that turn into pollutants",
       "body": "Nitrogen and phosphorus aren't inherently bad. They're essential nutrients. The trouble starts when their concentration overwhelms what the water can process.",
       "bullets": [
-        {
-          "text": "Nitrate, NO3 minus, is the main nitrogen form driving algal growth in water."
-        },
-        {
-          "text": "Phosphate, PO4 three minus, is the key phosphorus nutrient."
-        },
-        {
-          "text": "In excess, both drive abnormal algal productivity."
-        }
+        {"text": "Nitrate, NO3 minus, is the main nitrogen form driving algal growth in water."},
+        {"text": "Phosphate, PO4 three minus, is the key phosphorus nutrient."},
+        {"text": "In excess, both drive abnormal algal productivity."}
       ],
       "secondary": "Water chemists treat nitrate and phosphate as both ecological nutrients and potential pollutants. The effect depends entirely on concentration and context.",
       "callout": "Same ions, helpful at low levels, harmful in excess.",
@@ -77,17 +65,7 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8WaterBody",
-        "props": {
-          "mode": "nutrients",
-          "beats": [
-            365,
-            424,
-            432,
-            599,
-            691,
-            716
-          ]
-        }
+        "props": {"mode": "nutrients", "beats": [365, 424, 432, 599, 691, 716]}
       }
     },
     {
@@ -96,15 +74,9 @@
       "heading": "Where the excess comes from",
       "body": "The source matters, because it sets both the chemistry of the problem and the intervention that will actually work.",
       "bullets": [
-        {
-          "text": "Fertiliser runoff: adds nitrate and phosphate after heavy rain."
-        },
-        {
-          "text": "Sewage effluent: nitrate, phosphate, plus organic matter that raises oxygen demand."
-        },
-        {
-          "text": "Detergents: a historically important phosphate source."
-        }
+        {"text": "Fertiliser runoff: adds nitrate and phosphate after heavy rain."},
+        {"text": "Sewage effluent: nitrate, phosphate, plus organic matter that raises oxygen demand."},
+        {"text": "Detergents: a historically important phosphate source."}
       ],
       "secondary": "In a lake hit by fertiliser runoff, the danger isn't just that nutrients arrive. It's that the nutrient load can tip the whole oxygen balance of the water.",
       "callout": "Trace the source, and you know which fix to reach for.",
@@ -113,37 +85,17 @@
       "voiceover": {
         "text": "So where does all that excess come from? Three main sources, and the source matters, because it sets both the chemistry of the problem and the kind of fix that will work. First, fertiliser runoff. After heavy rain, water washes nitrate and phosphate off farmland straight into rivers and lakes. Second, sewage effluent, which carries nitrate and phosphate, but also organic matter that raises the oxygen demand of the water. And third, detergents, historically a really important phosphate source. Here's the lake-level point to hold onto. When a lake is hit by fertiliser runoff, the danger isn't just that nutrients have arrived. It's that the nutrient load can shift the entire oxygen balance of the water body, and that's what tips it into eutrophication."
       },
-      "diagram": {
-        "type": "diorama",
-        "kind": "chem12m8WaterBody",
-        "props": {
-          "mode": "sources",
-          "beats": [
-            193,
-            331,
-            484,
-            607
-          ]
-        }
-      }
+      "diagram": {"type": "diorama", "kind": "chem12m8WaterBody", "props": {"mode": "sources", "beats": [193, 331, 484, 607]}}
     },
     {
       "id": "definition",
       "type": "definition",
       "heading": "The words you need",
       "bullets": [
-        {
-          "text": "Eutrophication: nutrient enrichment causing excess algal growth and oxygen depletion."
-        },
-        {
-          "text": "Algal bloom: rapid surface algal growth that blocks light and depletes oxygen as it decomposes."
-        },
-        {
-          "text": "BOD: biochemical oxygen demand, the oxygen microbes use to break down organic matter."
-        },
-        {
-          "text": "Dead zone: a hypoxic region where dissolved oxygen is too low for most aquatic life."
-        }
+        {"text": "Eutrophication: nutrient enrichment causing excess algal growth and oxygen depletion."},
+        {"text": "Algal bloom: rapid surface algal growth that blocks light and depletes oxygen as it decomposes."},
+        {"text": "BOD: biochemical oxygen demand, the oxygen microbes use to break down organic matter."},
+        {"text": "Dead zone: a hypoxic region where dissolved oxygen is too low for most aquatic life."}
       ],
       "callout": "Bloom, then decomposition, then oxygen demand, then collapse.",
       "durationInFrames": 990,
@@ -160,38 +112,19 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8WaterBody",
-        "props": {
-          "mode": "chain",
-          "beats": [
-            166,
-            266,
-            400,
-            475,
-            559,
-            668,
-            710,
-            785,
-            902
-          ]
-        }
+        "props": {"mode": "chain", "beats": [166, 266, 400, 475, 559, 668, 710, 785, 902]}
       },
       "bullets": [
-        {
-          "text": "Loading then bloom: nutrients arrive, algae grow explosively."
-        },
-        {
-          "text": "Light blockage then plant death: submerged plants lose their light."
-        },
-        {
-          "text": "Decomposition raises BOD: oxygen crashes, and fish die."
-        }
+        {"text": "Loading then bloom: nutrients arrive, algae grow explosively."},
+        {"text": "Light blockage then plant death: submerged plants lose their light."},
+        {"text": "Decomposition raises BOD: oxygen crashes, and fish die."}
       ],
       "secondary": "The critical mechanism is microbial decomposition raising BOD. The dissolved oxygen collapse is the direct cause of the fish kill, not the algae.",
       "callout": "The killer step is decomposition, not the bloom itself.",
-      "durationInFrames": 1865,
+      "durationInFrames": 1170,
       "caption": "Loading to bloom to plant death to decomposition to hypoxia and fish kill.",
       "voiceover": {
-        "text": "Now the heart of the lesson, the full chain. Eutrophication isn't just more algae in the water, it's a connected sequence that ends in oxygen collapse. It starts with nutrient loading, excess nitrate and phosphate entering the water. That triggers an algal bloom, because the thing that was limiting algal growth has been removed. The dense bloom blocks light from reaching submerged plants, so those plants die. Then comes the step everyone misses. Bacteria decompose all that dead biomass, and microbial respiration uses up oxygen, so biochemical oxygen demand shoots up. Dissolved oxygen falls to dangerously low levels, that's hypoxia, and the oxygen-dependent fish either die or are forced out. So read this carefully. The direct cause of the fish kill is the oxygen collapse driven by decomposition and rising B-O-D, with both decomposition and living-organism respiration contributing."
+        "text": "Now the heart of the lesson, the full chain. Eutrophication isn't just more algae in the water, it's a connected sequence that ends in oxygen collapse. It starts with nutrient loading, excess nitrate and phosphate entering the water. That triggers an algal bloom, because the thing that was limiting algal growth has been removed. The dense bloom blocks light from reaching submerged plants, so those plants die. Then comes the step everyone misses. Bacteria decompose all that dead biomass, and microbial respiration uses up oxygen, so biochemical oxygen demand shoots up. Dissolved oxygen falls to dangerously low levels, that's hypoxia, and the oxygen-dependent fish either die or are forced out. So read this carefully. The direct cause of the fish kill is the oxygen collapse driven by decomposition and rising B-O-D, not the living algae."
       }
     },
     {
@@ -200,22 +133,16 @@
       "heading": "Measuring nitrate and phosphate",
       "body": "To manage nutrient pollution, chemists first need reliable concentration data, sensitive enough to catch trouble early.",
       "bullets": [
-        {
-          "text": "Colorimetry: a reaction produces colour whose intensity tracks concentration, read by UV-Vis."
-        },
-        {
-          "text": "Ion chromatography: separates dissolved ions instrumentally, the method named for nitrate and phosphate."
-        },
-        {
-          "text": "Colour intensity versus instrumental separation, two different questions."
-        }
+        {"text": "Colorimetry: a reaction produces colour whose intensity tracks concentration, read by UV-Vis."},
+        {"text": "Ion chromatography: separates dissolved ions instrumentally, the method named for nitrate and phosphate."},
+        {"text": "Colour intensity versus instrumental separation, two different questions."}
       ],
       "secondary": "Colorimetry suits routine work. Ion chromatography gives stronger separation and precision for complex samples. Both rely on the UV-Vis ideas from Lesson 4.",
       "callout": "Ion chromatography is the syllabus-named instrumental method.",
-      "durationInFrames": 2032,
+      "durationInFrames": 1020,
       "caption": "Colorimetry and ion chromatography both measure nitrate and phosphate.",
       "voiceover": {
-        "text": "Before you can manage nutrient pollution, you need numbers, reliable concentration data sensitive enough to catch a problem before the ecology goes haywire. Two main approaches. The first is colorimetry, where a chemical reaction produces a colour whose intensity is proportional to the nutrient concentration, and you read that colour with U-V visible spectroscopy, the technique we covered back in Lesson 4. For nitrate, a cadmium reduction step converts it before the colour develops. The second approach is ion chromatography, which separates the dissolved ions instrumentally before detection, and it is a useful analytical context, rather than an explicitly mandated nitrate/phosphate method in the 2017 syllabus. The way to keep them straight, colorimetry asks how strong the colour is, while ion chromatography asks whether we can separate and quantify the ions instrumentally. Colorimetry is great for routine measurements, and ion chromatography gives stronger separation and precision when the sample is complex."
+        "text": "Before you can manage nutrient pollution, you need numbers, reliable concentration data sensitive enough to catch a problem before the ecology goes haywire. Two main approaches. The first is colorimetry, where a chemical reaction produces a colour whose intensity is proportional to the nutrient concentration, and you read that colour with U-V visible spectroscopy, the technique we covered back in Lesson 4. For nitrate, a cadmium reduction step converts it before the colour develops. The second approach is ion chromatography, which separates the dissolved ions instrumentally before detection, and that's the method specifically named in the syllabus for nitrate and phosphate. The way to keep them straight, colorimetry asks how strong the colour is, while ion chromatography asks whether we can separate and quantify the ions instrumentally. Colorimetry is great for routine measurements, and ion chromatography gives stronger separation and precision when the sample is complex."
       },
       "diagram": {
         "type": "diorama",
@@ -223,31 +150,14 @@
         "props": {
           "cards": [
             {
-              "icons": [
-                {
-                  "name": "cuvetteSeries",
-                  "color": "#c2185b"
-                }
-              ],
+              "icons": [{"name": "cuvetteSeries", "color": "#c2185b"}],
               "title": "Colorimetry",
-              "lines": [
-                "colour intensity ∝ concentration",
-                "read by UV-Vis",
-                "nitrate: Cd reduction first"
-              ]
+              "lines": ["colour intensity ∝ concentration", "read by UV-Vis", "nitrate: Cd reduction first"]
             },
             {
-              "icons": [
-                {
-                  "name": "icColumn"
-                }
-              ],
+              "icons": [{"name": "icColumn"}],
               "title": "Ion chromatography",
-              "lines": [
-                "separates dissolved ions",
-                "before detection",
-                "for NO₃⁻ and PO₄³⁻"
-              ],
+              "lines": ["separates dissolved ions", "before detection", "for NO₃⁻ and PO₄³⁻"],
               "tag": "syllabus-named",
               "tagAt": 586
             }
@@ -257,11 +167,7 @@
             "text": "Colorimetry: how strong is the colour?",
             "sub": "Ion chromatography: can we separate and quantify the ions?"
           },
-          "beats": [
-            123,
-            445,
-            666
-          ]
+          "beats": [123, 445, 666]
         }
       }
     },
@@ -272,16 +178,16 @@
       "question": "Three lake sites are sampled. Which is the strongest eutrophication concern, and why? Site A: nitrate 0.35, phosphate 0.02, DO 8.4. Site B: nitrate 1.40, phosphate 0.18, DO 6.1. Site C: nitrate 1.75, phosphate 0.25, DO 3.9 (all mg per L).",
       "coachNote": "Read nutrients and oxygen together, then place each site on the eutrophication pathway.",
       "steps": [
-        "A has the lowest nutrient concentrations and highest DO in this dataset.",
-        "B is intermediate in these measurements.",
-        "C has the highest nutrients and lowest DO: strongest concern.",
-        "The pattern is consistent with eutrophication but does not prove cause or a fish kill.",
-        "Investigate biological observations, temperature, trends and local criteria."
+        "Site A: low nutrients, high DO of 8.4. Clear water, no bloom, healthy baseline.",
+        "Site B: nutrients elevated, DO 6.1 still moderate. Bloom developing, oxygen not yet collapsed.",
+        "Site C: highest nutrients, DO crashed to 3.9. Fish already dying near shore.",
+        "Compare DO: 8.4 to 6.1 to 3.9 tracks progression down the pathway.",
+        "Answer: Site C is the strongest concern, high nutrients with low oxygen confirm advanced eutrophication."
       ],
       "durationInFrames": 1410,
-      "caption": "C is the strongest concern; inferred blooms and fish kills need evidence.",
+      "caption": "Site C: highest nutrients plus lowest DO equals advanced eutrophication.",
       "voiceover": {
-        "text": "Site C has the highest nitrate and phosphate values and the lowest measured dissolved oxygen. It is the strongest concern in this comparison. The pattern is consistent with nutrient enrichment and oxygen stress, but these measurements alone do not prove a bloom, a fish kill or the cause of the oxygen difference. Site A has the lowest nutrients and highest oxygen in this dataset; that does not establish complete ecosystem health. Confirm with repeated monitoring, temperature, biological observations and appropriate local reference conditions."
+        "text": "Let's interpret some real monitoring data, because this is exactly the exam skill. Three sites in a lake, each with a nitrate level, a phosphate level, and a dissolved oxygen level in milligrams per litre. Step one, Site A. Nutrients are low and dissolved oxygen is high at eight point four. That's clear water with no bloom, a healthy baseline. Step two, Site B. Nutrients are clearly elevated, but dissolved oxygen is still moderate at six point one. So a bloom is developing here, but the oxygen hasn't collapsed yet. Step three, Site C. Nutrients are the highest of the three, and dissolved oxygen has crashed to three point nine, with dead fish already near the shore. Step four, look at the oxygen trend across the sites, eight point four down to six point one down to three point nine. That falling oxygen tracks the progression down the eutrophication pathway. So the answer, Site C is the strongest concern, because high nutrients combined with low oxygen confirm it's the furthest along. Notice the good answer reads nutrients and oxygen together, it doesn't just say the numbers are high."
       }
     },
     {
@@ -290,15 +196,9 @@
       "heading": "Managing nutrient pollution",
       "body": "Once a bloom is established, the decomposition chemistry can't simply be switched off. So the strongest strategies are preventative.",
       "bullets": [
-        {
-          "text": "Buffer zones: vegetated strips that intercept runoff before it reaches water."
-        },
-        {
-          "text": "Precision agriculture: optimised dosing cuts the fertiliser lost as runoff."
-        },
-        {
-          "text": "Upgraded sewage treatment and wetlands: remove phosphate before discharge."
-        }
+        {"text": "Buffer zones: vegetated strips that intercept runoff before it reaches water."},
+        {"text": "Precision agriculture: optimised dosing cuts the fertiliser lost as runoff."},
+        {"text": "Upgraded sewage treatment and wetlands: remove phosphate before discharge."}
       ],
       "secondary": "After the 2014 bloom, governments spent 200 million dollars on these measures around Lake Erie, all preventative, because nutrient pollution is diffuse and recurring.",
       "callout": "Prevention beats reaction once eutrophication is underway.",
@@ -310,17 +210,7 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8WaterBody",
-        "props": {
-          "mode": "management",
-          "beats": [
-            144,
-            256,
-            333,
-            466,
-            557,
-            697
-          ]
-        }
+        "props": {"mode": "management", "beats": [144, 256, 333, 466, 557, 697]}
       }
     },
     {
@@ -348,12 +238,12 @@
         "Aerobic bacteria decompose it, consuming dissolved oxygen and raising BOD.",
         "Dissolved oxygen falls toward hypoxia, near zero in bad cases.",
         "Fish suffocate, a fish kill.",
-        "Answer: DO collapses and fish die, driven by decomposition, with both decomposition and living-organism respiration contributing."
+        "Answer: DO collapses and fish die, driven by decomposition, not the living algae."
       ],
-      "durationInFrames": 1749,
+      "durationInFrames": 1050,
       "caption": "Bloom dies, bacteria decompose it, BOD rises, DO crashes, fish die.",
       "voiceover": {
-        "text": "Quick check, and this is the exact mechanism we just covered. A lake has a large algal bloom in summer. When the bloom dies and sinks, what happens to dissolved oxygen and fish over the next few weeks, and why? Pause and reason it through. Right, let's check it. Step one, the dead algae are a huge mass of organic material. Step two, aerobic bacteria move in and decompose it, and that consumes dissolved oxygen while raising biochemical oxygen demand. Step three, dissolved oxygen falls toward hypoxia, sometimes near zero. Step four, the fish suffocate, that's the fish kill. So the answer, dissolved oxygen collapses and fish die, and the driver is the decomposition of the dead bloom, with both decomposition and living-organism respiration contributing. Same mechanism every time."
+        "text": "Quick check, and this is the exact mechanism we just covered. A lake has a large algal bloom in summer. When the bloom dies and sinks, what happens to dissolved oxygen and fish over the next few weeks, and why? Pause and reason it through. Right, let's check it. Step one, the dead algae are a huge mass of organic material. Step two, aerobic bacteria move in and decompose it, and that consumes dissolved oxygen while raising biochemical oxygen demand. Step three, dissolved oxygen falls toward hypoxia, sometimes near zero. Step four, the fish suffocate, that's the fish kill. So the answer, dissolved oxygen collapses and fish die, and the driver is the decomposition of the dead bloom, not the living algae. Same mechanism every time."
       }
     },
     {
@@ -374,6 +264,5 @@
         "text": "Let's lock it in. Five things to take away. First, nitrate and phosphate are essential nutrients that only become pollutants when they're present in excess. Second, the main sources are fertiliser runoff, sewage effluent, and historically detergents. Third, the eutrophication chain runs from nutrient loading, to algal bloom, to plant death, to decomposition, to hypoxia, and finally fish kill. Fourth, and this is the one that earns marks, the fish kill is caused by microbial decomposition raising biochemical oxygen demand and crashing the dissolved oxygen, not by the algae directly. And fifth, the analytical method named in the syllabus for measuring nitrate and phosphate is ion chromatography, with colorimetry as the routine alternative. Next lesson, we follow the water into the treatment plant. See you there."
       }
     }
-  ],
-  "productionNotes": "2017 syllabus mapping checked: Module 8 environmental-monitoring context; nitrate/phosphate ion chromatography is extension, not a named 2017 requirement."
+  ]
 }

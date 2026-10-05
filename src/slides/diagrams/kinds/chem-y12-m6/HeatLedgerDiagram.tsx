@@ -1,29 +1,24 @@
-// HeatLedgerDiagram — where the heat of neutralisation goes, as an energy
-// waterfall on a stone ledge.
-//
-// Blocks hang from a 0 kJ line: the water-forming step drops the full
-// release (−57), an ionisation cost climbs back up, and the net block shows
-// what the thermometer actually sees. Values come from props (the lesson's
-// own figures) and bar heights are drawn to scale; with `numbers: false` the
-// cost is drawn but not labelled with a figure (when the lesson gives none).
-//
-// `markers` mode is a vertical ΔH scale instead: 0 at the top, the −57
-// maximum as a floor, and pins for values to compare (less exothermic above
-// the floor; anything past it flagged as a measurement error).
+// HeatLedgerDiagram: a supplied exothermic release/cost accounting cycle,
+// or a comparison of supplied negative enthalpy values. Magnitudes are positive
+// release depths. A reference is a comparison line, never a universal limit.
+// Neither mode establishes acid strength or a measured ionisation enthalpy.
 
 import {useCurrentFrame} from 'remotion';
 import {TOK, FONT_DISPLAY} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
 import {DioramaDefs, idlePulse} from '../../diorama';
 import {BLUE, ease, fadeAt, shade} from './shared';
+import {heatLedgerModel, validateQuantitativeDiagram} from '../../quantitative-models.mjs';
 
 export type LedgerStep = {label: string; sub?: string; kind: 'release' | 'cost' | 'net'; value: number; valueText?: string; at: number};
 export type LedgerMarker = {value: number; label: string; at: number; tone?: 'accent' | 'blue' | 'amber'};
 export type HeatLedgerProps = {
 	steps?: LedgerStep[];
 	markers?: LedgerMarker[];
-	/** Floor line (the maximum release), e.g. 57. */
+	/** Legacy alias for a comparison reference. It does not establish a limit. */
 	floor?: {value: number; label: string; at: number};
+	reference?: {value: number; label: string; at: number};
+	markerRange?: [number, number];
 	formula?: {text: string; at: number};
 	numbers?: boolean;
 	scaleMax?: number;
@@ -34,7 +29,10 @@ const ID = 'c12m6heat';
 const W = 760;
 const H = 530;
 
-export const HeatLedgerDiagram = ({steps = [], markers, floor, formula, numbers = true, scaleMax = 60, delay = 62}: HeatLedgerProps) => {
+export const HeatLedgerDiagram = ({steps = [], markers, floor, reference, markerRange, formula, numbers = true, scaleMax = 60, delay = 62}: HeatLedgerProps) => {
+	const props = {steps, markers, floor, reference, markerRange, formula, scaleMax, delay};
+	validateQuantitativeDiagram({type: 'diorama', kind: 'chem12m6HeatLedger', props});
+	const model = heatLedgerModel(props), referenceLine = model.reference;
 	const frame = useCurrentFrame() - delay;
 	const theme = useAccent();
 	const Y0 = 96, Y1 = 430;
@@ -44,29 +42,29 @@ export const HeatLedgerDiagram = ({steps = [], markers, floor, formula, numbers 
 
 	if (markers) {
 		const x = 250;
-		const lo = 40, hi = 62;
+		const [lo, hi] = model.markerRange;
+		const ticks = markerRange ? Array.from({length: 5}, (_, i) => lo + (hi - lo) * i / 4) : [40, 45, 50, 55, 60];
 		const ky = (kj: number) => Y0 + ((kj - lo) / (hi - lo)) * (Y1 - Y0);
 		return (
-			<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Enthalpy of neutralisation scale for comparing measured values" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+			<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Comparison of supplied negative enthalpies. A reference value is not a universal limit." style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 				<DioramaDefs id={ID} />
 				<g opacity={fadeAt(frame, 0, 14)}>
 					<rect x={x - 22} y={Y0 - 10} width={44} height={Y1 - Y0 + 60} rx={12} fill="#d3cfc7" stroke="#8f8b83" strokeWidth={2} />
 					<rect x={x - 14} y={Y0} width={28} height={Y1 - Y0 + 40} rx={8} fill="#ffffff" opacity={0.8} />
-					{[40, 45, 50, 55, 60].map((v) => (
+					{ticks.map((v) => (
 						<g key={v}>
 							<line x1={x - 22} y1={ky(v)} x2={x - 34} y2={ky(v)} stroke={TOK.inkMute} strokeWidth={2} />
-							<text x={x - 42} y={ky(v) + 6} textAnchor="end" fill={TOK.inkDim} fontSize={16} fontWeight={700}>−{v}</text>
+							<text x={x - 42} y={ky(v) + 6} textAnchor="end" fill={TOK.inkDim} fontSize={16} fontWeight={700}>−{Number(v.toFixed(2))}</text>
 						</g>
 					))}
 					<text x={x - 96} y={(Y0 + Y1) / 2} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800} transform={`rotate(-90 ${x - 96} ${(Y0 + Y1) / 2})`}>ΔHn (kJ mol⁻¹)</text>
 					<text x={x} y={Y0 - 26} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800}>less heat released ↑</text>
 					<text x={x} y={Y1 + 76} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800}>↓ more heat released</text>
 				</g>
-				{floor && (
-					<g opacity={fadeAt(frame, floor.at)}>
-						<rect x={x - 22} y={ky(floor.value)} width={470} height={ky(hi) - ky(floor.value) + 30} fill={TOK.amber} opacity={0.08} />
-						<line x1={x - 30} y1={ky(floor.value)} x2={x + 450} y2={ky(floor.value)} stroke={theme.accent} strokeWidth={3.5} />
-						<text x={x + 450} y={ky(hi) + 22} textAnchor="end" fill={TOK.amberInk} fontSize={17} fontWeight={800}>{floor.label}</text>
+				{referenceLine && (
+					<g opacity={fadeAt(frame, referenceLine.at!)}>
+						<line x1={x - 30} y1={ky(referenceLine.value)} x2={x + 450} y2={ky(referenceLine.value)} stroke={theme.accent} strokeWidth={3.5} />
+						<text x={x + 450} y={ky(hi) + 22} textAnchor="end" fill={TOK.inkDim} fontSize={17} fontWeight={800}>{referenceLine.label}</text>
 					</g>
 				)}
 				{markers.map((m, i) => {
@@ -78,7 +76,7 @@ export const HeatLedgerDiagram = ({steps = [], markers, floor, formula, numbers 
 						<g key={i} opacity={t}>
 							<circle cx={x} cy={y} r={10 + (m.tone === 'amber' ? idlePulse(frame) * 2 : 0)} fill="#ffffff" stroke={c} strokeWidth={4} />
 							<line x1={x + 12} y1={y} x2={x + 40 * t} y2={y} stroke={c} strokeWidth={3} />
-							<text x={x + 48} y={floor && Math.abs(m.value - floor.value) < 0.5 ? y - 9 : y + 7} fill={m.tone === 'amber' ? TOK.amberInk : c} fontSize={19} fontWeight={800}>−{m.value}  {m.label}</text>
+							<text x={x + 48} y={referenceLine && Math.abs(m.value - referenceLine.value) < 0.5 ? y - 9 : y + 7} fill={m.tone === 'amber' ? TOK.amberInk : c} fontSize={19} fontWeight={800}>−{m.value}  {m.label}</text>
 						</g>
 					);
 				})}
@@ -90,14 +88,8 @@ export const HeatLedgerDiagram = ({steps = [], markers, floor, formula, numbers 
 	const n = steps.length;
 	const bw = 128;
 	const gap = (W - 80 - n * bw) / Math.max(1, n - 1);
-	let level = 0; // current depth (positive = released)
-	const blocks = steps.map((s) => {
-		let top: number, bottom: number;
-		if (s.kind === 'release') { top = level; bottom = level + s.value; level = bottom; }
-		else if (s.kind === 'cost') { bottom = level; top = level - s.value; level = top; }
-		else { top = 0; bottom = s.value; }
-		return {s, top, bottom};
-	});
+	// Runtime validation above requires the final reveal cues before drawing.
+	const blocks = model.blocks as {s: LedgerStep; top: number; bottom: number}[];
 	const colorOf = (k: LedgerStep['kind']) => (k === 'release' ? theme.accent : k === 'cost' ? TOK.amber : BLUE);
 
 	return (
@@ -106,8 +98,8 @@ export const HeatLedgerDiagram = ({steps = [], markers, floor, formula, numbers 
 			<g opacity={fadeAt(frame, 0, 14)}>
 				<rect x={24} y={Y0 - 16} width={W - 48} height={14} rx={6} fill="#bdb8ae" />
 				<rect x={24} y={Y0 - 6} width={W - 48} height={7} rx={3} fill="#8f8b83" />
-				<text x={30} y={Y0 - 26} fill={TOK.inkDim} fontSize={16} fontWeight={800}>0 kJ</text>
-				<line x1={30} y1={ky(57)} x2={W - 30} y2={ky(57)} stroke={TOK.inkMute} strokeWidth={1.5} strokeDasharray="6 6" opacity={numbers ? 0.8 : 0.8} />
+				<text x={30} y={Y0 - 26} fill={TOK.inkDim} fontSize={16} fontWeight={800}>0 kJ mol⁻¹ (stated basis)</text>
+				{referenceLine && <line x1={30} y1={ky(referenceLine.value)} x2={W - 30} y2={ky(referenceLine.value)} stroke={TOK.inkMute} strokeWidth={1.5} strokeDasharray="6 6" opacity={fadeAt(frame, referenceLine.at!)} />}
 			</g>
 			{blocks.map(({s, top, bottom}, i) => {
 				const x = 40 + i * (bw + gap);

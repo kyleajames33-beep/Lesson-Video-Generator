@@ -8,15 +8,10 @@
   "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
   "syllabusModule": "Module 8: Applying Chemical Ideas",
   "syllabusDotPoints": [
-    "Module 8: concentration measurement using colourimetry, UV-visible spectrophotometry and AAS. (Audit mapping paraphrase, not an official quotation.)"
+    "conduct investigations and/or process data to determine the concentration of coloured species and/or metal ions using colourimetry or UV-visible spectrophotometry, and atomic absorption spectroscopy"
   ],
   "moduleLessonCount": 16,
-  "nesaOutcomes": [
-    "CH12-15",
-    "CH11/12-4",
-    "CH11/12-5",
-    "CH11/12-7"
-  ],
+  "nesaOutcomes": ["CH12-15", "CH11/12-4", "CH11/12-5", "CH11/12-7"],
   "inquiryQuestion": "How are the ions present in the environment identified and measured?",
   "lessonIntent": "Students can apply the Beer-Lambert law, read an unknown from a calibration curve, explain that AAS measures ground-state atoms after atomisation, and choose between UV-Vis and AAS for a task.",
   "examSkill": "Use A = εcl and its rearrangement, interpolate within a calibration range, and justify technique choice by sensitivity, sample type, and limitations like matrix effects.",
@@ -54,40 +49,21 @@
       "heading": "UV-Vis and the Beer-Lambert law",
       "body": "Pass light through a solution, measure what's absorbed, and link that absorbance to concentration.",
       "bullets": [
-        {
-          "text": "Coloured species absorb visible light; more particles absorb more."
-        },
-        {
-          "text": "Beer-Lambert law: A = εcl, absorbance proportional to concentration."
-        },
-        {
-          "text": "Rearrange to find concentration: c = A ÷ (εl)."
-        }
+        {"text": "Coloured species absorb visible light; more particles absorb more."},
+        {"text": "Beer-Lambert law: A = εcl, absorbance proportional to concentration."},
+        {"text": "Rearrange to find concentration: c = A ÷ (εl)."}
       ],
       "secondary": "A is absorbance with no units, ε is molar absorptivity, c is concentration, and l is the path length in cm. Don't drop the l.",
       "callout": "Absorbance tracks concentration, with the path length in.",
-      "durationInFrames": 1826,
+      "durationInFrames": 1080,
       "caption": "Beer-Lambert: A = εcl, so c = A ÷ (εl). Keep the path length.",
       "voiceover": {
-        "text": "Start with UV-Vis. The instrument isolates one wavelength, sends it through your solution, and measures how much light gets absorbed. Coloured species absorb visible light selectively, and the more absorbing particles there are, the more light disappears. That relationship is the Beer-Lambert law, A equals epsilon c l. A is the absorbance, with no units. Epsilon is the molar absorptivity, a constant for that species at that wavelength. c is the concentration, and l is the path length the light travels through the sample, in centimetres. To find an unknown concentration, rearrange to c equals A over epsilon l. And the classic slip is dropping the l. The full law is A equals epsilon c l, not just epsilon c. Visible colourimetry requires visible absorption, but UV-visible spectroscopy also detects colourless compounds absorbing ultraviolet light."
+        "text": "Start with UV-Vis. The instrument isolates one wavelength, sends it through your solution, and measures how much light gets absorbed. Coloured species absorb visible light selectively, and the more absorbing particles there are, the more light disappears. That relationship is the Beer-Lambert law, A equals epsilon c l. A is the absorbance, with no units. Epsilon is the molar absorptivity, a constant for that species at that wavelength. c is the concentration, and l is the path length the light travels through the sample, in centimetres. To find an unknown concentration, rearrange to c equals A over epsilon l. And the classic slip is dropping the l. The full law is A equals epsilon c l, not just epsilon c."
       },
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Spectro",
-        "props": {
-          "mode": "uvvis",
-          "beats": [
-            30,
-            190,
-            305,
-            365,
-            425,
-            537,
-            580,
-            740,
-            820
-          ]
-        }
+        "props": {"mode": "uvvis", "beats": [30, 190, 305, 365, 425, 537, 580, 740, 820]}
       }
     },
     {
@@ -106,140 +82,47 @@
           "yMin": 0,
           "yMax": 0.4,
           "xTicks": [
-            {
-              "value": 0.5,
-              "label": "0.50"
-            },
-            {
-              "value": 1,
-              "label": "1.00"
-            },
-            {
-              "value": 1.5,
-              "label": "1.50"
-            },
-            {
-              "value": 2,
-              "label": "2.00"
-            }
+            {"value": 0.5, "label": "0.50"},
+            {"value": 1, "label": "1.00"},
+            {"value": 1.5, "label": "1.50"},
+            {"value": 2, "label": "2.00"}
           ],
           "yTicks": [
-            {
-              "value": 0,
-              "label": "0"
-            },
-            {
-              "value": 0.08,
-              "label": "0.08"
-            },
-            {
-              "value": 0.16,
-              "label": "0.16"
-            },
-            {
-              "value": 0.24,
-              "label": "0.24"
-            },
-            {
-              "value": 0.32,
-              "label": "0.32"
-            }
+            {"value": 0, "label": "0"},
+            {"value": 0.08, "label": "0.08"},
+            {"value": 0.16, "label": "0.16"},
+            {"value": 0.24, "label": "0.24"},
+            {"value": 0.32, "label": "0.32"}
           ],
           "cuvettes": {
             "color": "#6a3fb5",
             "title": "standards of known concentration, one wavelength",
             "items": [
-              {
-                "label": "0.50",
-                "strength": 0.25,
-                "beat": 181
-              },
-              {
-                "label": "1.00",
-                "strength": 0.45,
-                "beat": 196
-              },
-              {
-                "label": "1.50",
-                "strength": 0.65,
-                "beat": 211
-              },
-              {
-                "label": "2.00",
-                "strength": 0.85,
-                "beat": 226
-              },
-              {
-                "label": "unknown",
-                "strength": 0.55,
-                "beat": 558,
-                "unknown": true
-              }
+              {"label": "0.50", "strength": 0.25, "beat": 181},
+              {"label": "1.00", "strength": 0.45, "beat": 196},
+              {"label": "1.50", "strength": 0.65, "beat": 211},
+              {"label": "2.00", "strength": 0.85, "beat": 226},
+              {"label": "unknown", "strength": 0.55, "beat": 558, "unknown": true}
             ]
           },
           "points": [
-            {
-              "x": 0.5,
-              "y": 0.08,
-              "beat": 250
-            },
-            {
-              "x": 1,
-              "y": 0.16,
-              "beat": 280
-            },
-            {
-              "x": 1.5,
-              "y": 0.24,
-              "beat": 310
-            },
-            {
-              "x": 2,
-              "y": 0.32,
-              "beat": 340
-            }
+            {"x": 0.5, "y": 0.08, "beat": 250},
+            {"x": 1, "y": 0.16, "beat": 280},
+            {"x": 1.5, "y": 0.24, "beat": 310},
+            {"x": 2, "y": 0.32, "beat": 340}
           ],
           "series": [
             {
-              "gen": {
-                "type": "line",
-                "slope": 0.16,
-                "from": 0,
-                "to": 2
-              },
+              "gen": {"type": "line", "slope": 0.16, "from": 0, "to": 2},
               "color": "accent",
               "beat": 495,
               "dur": 60,
               "label": "straight line through origin",
-              "labelAt": [
-                0.08,
-                0.27
-              ],
+              "labelAt": [0.08, 0.27],
               "labelAnchor": "start"
             },
             {
-              "points": [
-                [
-                  2,
-                  0.32
-                ],
-                [
-                  2.15,
-                  0.3413
-                ],
-                [
-                  2.3,
-                  0.3572
-                ],
-                [
-                  2.45,
-                  0.3677
-                ],
-                [
-                  2.6,
-                  0.3728
-                ]
-              ],
+              "points": [[2, 0.32], [2.15, 0.3413], [2.3, 0.3572], [2.45, 0.3677], [2.6, 0.3728]],
               "color": "mute",
               "dash": "6 8",
               "width": 3.5,
@@ -281,28 +164,14 @@
               "color": "ink",
               "mark": "cross"
             },
-            {
-              "x": 2.3,
-              "y": 0.395,
-              "text": "may curve",
-              "anchor": "middle",
-              "beat": 960,
-              "size": 15,
-              "color": "mute"
-            }
+            {"x": 2.3, "y": 0.395, "text": "may curve", "anchor": "middle", "beat": 960, "size": 15, "color": "mute"}
           ]
         }
       },
       "bullets": [
-        {
-          "text": "Measure absorbance for several standards at one wavelength."
-        },
-        {
-          "text": "Plot absorbance on the y-axis against concentration on the x-axis."
-        },
-        {
-          "text": "Read the unknown across to the line, then down to concentration."
-        }
+        {"text": "Measure absorbance for several standards at one wavelength."},
+        {"text": "Plot absorbance on the y-axis against concentration on the x-axis."},
+        {"text": "Read the unknown across to the line, then down to concentration."}
       ],
       "secondary": "If Beer-Lambert holds, the plot is linear through the origin. The unknown must sit inside the calibrated range, so interpolate, never extrapolate.",
       "callout": "Standards first, then read the unknown inside the range.",
@@ -336,15 +205,9 @@
       "heading": "Atomic absorption spectroscopy",
       "body": "Atomise the sample into free atoms, then measure the element-specific light those atoms absorb.",
       "bullets": [
-        {
-          "text": "A flame or graphite furnace atomises the sample into free atoms."
-        },
-        {
-          "text": "A hollow cathode lamp emits the element's characteristic wavelength."
-        },
-        {
-          "text": "Ground-state atoms absorb it; the drop in signal gives concentration."
-        }
+        {"text": "A flame or graphite furnace atomises the sample into free atoms."},
+        {"text": "A hollow cathode lamp emits the element's characteristic wavelength."},
+        {"text": "Ground-state atoms absorb it; the drop in signal gives concentration."}
       ],
       "secondary": "AAS does not detect ions in solution. It measures ground-state atoms produced after atomisation, which is exactly why students lose this mark.",
       "callout": "It reads atoms, not the ions you started with.",
@@ -356,17 +219,7 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Spectro",
-        "props": {
-          "mode": "aas",
-          "beats": [
-            210,
-            300,
-            410,
-            612,
-            690,
-            830
-          ]
-        }
+        "props": {"mode": "aas", "beats": [210, 300, 410, 612, 690, 830]}
       }
     },
     {
@@ -375,15 +228,9 @@
       "heading": "UV-Vis or AAS?",
       "body": "Match the technique to the sample. Colour points to UV-Vis; trace metals point to AAS.",
       "bullets": [
-        {
-          "text": "UV-Vis and colourimetry suit coloured species or coloured complexes."
-        },
-        {
-          "text": "AAS is sensitive and element-specific for trace metals like Pb and Cd."
-        },
-        {
-          "text": "AAS limits: one element per run, matrix effects, higher cost."
-        }
+        {"text": "UV-Vis and colourimetry suit coloured species or coloured complexes."},
+        {"text": "AAS is sensitive and element-specific for trace metals like Pb and Cd."},
+        {"text": "AAS limits: one element per run, matrix effects, higher cost."}
       ],
       "secondary": "A high calcium or magnesium matrix can suppress an AAS lead result. The fix is matrix-matching the standards to the sample.",
       "callout": "No technique is universally best; justify the choice.",
@@ -398,79 +245,33 @@
         "props": {
           "cards": [
             {
-              "icons": [
-                {
-                  "name": "cuvette",
-                  "color": "#2f5fd0"
-                }
-              ],
+              "icons": [{"name": "cuvette", "color": "#2f5fd0"}],
               "title": "UV-Vis",
-              "lines": [
-                "coloured species",
-                "simple, fast, cheap"
-              ]
+              "lines": ["coloured species", "simple, fast, cheap"]
             },
             {
-              "icons": [
-                {
-                  "name": "aasFlame",
-                  "label": "Pb"
-                }
-              ],
+              "icons": [{"name": "aasFlame", "label": "Pb"}],
               "title": "AAS",
-              "lines": [
-                "trace metals: Pb, Cd",
-                "sensitive,",
-                "element-specific"
-              ]
+              "lines": ["trace metals: Pb, Cd", "sensitive,", "element-specific"]
             },
             {
-              "icons": [
-                {
-                  "name": "lamp",
-                  "label": "Pb"
-                },
-                {
-                  "name": "lamp",
-                  "label": "Cd"
-                }
-              ],
+              "icons": [{"name": "lamp", "label": "Pb"}, {"name": "lamp", "label": "Cd"}],
               "title": "One per run",
-              "lines": [
-                "each element needs",
-                "its own lamp"
-              ]
+              "lines": ["each element needs", "its own lamp"]
             },
             {
               "icons": [
                 {
                   "name": "ionBeaker",
                   "ions": [
-                    {
-                      "label": "Ca",
-                      "color": "#c9ced4",
-                      "n": 4,
-                      "ink": "#1a1a1a"
-                    },
-                    {
-                      "label": "Mg",
-                      "color": "#e3e6ea",
-                      "n": 3,
-                      "ink": "#1a1a1a"
-                    },
-                    {
-                      "label": "Pb",
-                      "color": "#56606b",
-                      "n": 1
-                    }
+                    {"label": "Ca", "color": "#c9ced4", "n": 4, "ink": "#1a1a1a"},
+                    {"label": "Mg", "color": "#e3e6ea", "n": 3, "ink": "#1a1a1a"},
+                    {"label": "Pb", "color": "#56606b", "n": 1}
                   ]
                 }
               ],
               "title": "Matrix effects",
-              "lines": [
-                "high Ca, Mg can",
-                "suppress Pb reading"
-              ],
+              "lines": ["high Ca, Mg can", "suppress Pb reading"],
               "tag": "fix: matrix-match",
               "tagAt": 830
             }
@@ -480,13 +281,7 @@
             "sub": "AAS also costs more than wet chemistry",
             "amber": true
           },
-          "beats": [
-            49,
-            235,
-            506,
-            615,
-            845
-          ]
+          "beats": [49, 235, 506, 615, 845]
         }
       }
     },
@@ -531,16 +326,15 @@
         "UV-Vis links absorbance to concentration through A = εcl, so c = A ÷ (εl).",
         "Build a calibration curve from standards and interpolate the unknown.",
         "AAS atomises the sample, then ground-state atoms absorb the lamp's wavelength.",
-        "AAS suits trace metals; UV-Vis suits species absorbing the chosen UV or visible wavelength.",
+        "AAS suits trace metals; UV-Vis suits coloured species.",
         "Name an AAS limitation: one element per run, matrix effects, or cost."
       ],
       "finalPrompt": "Choosing a technique? Coloured species or trace metal, and what's the limitation?",
-      "durationInFrames": 1492,
+      "durationInFrames": 1140,
       "caption": "Five takeaways: Beer-Lambert, calibration, AAS atomisation, technique choice, limitations.",
       "voiceover": {
-        "text": "Let's lock it in. Five things to take away. First, UV-Vis links absorbance to concentration through the Beer-Lambert law, A equals epsilon c l, so concentration is A over epsilon l. Second, you build a calibration curve from standards and interpolate the unknown inside that range. Third, AAS atomises the sample first, and the free ground-state atoms absorb the lamp's characteristic wavelength. Fourth, AAS suits trace metals while UV-Vis suits species absorbing the chosen UV or visible wavelength. And fifth, whenever you evaluate AAS, name a limitation, one element per run, matrix effects, or cost. Match the technique to the sample, and state its limits. See you next lesson."
+        "text": "Let's lock it in. Five things to take away. First, UV-Vis links absorbance to concentration through the Beer-Lambert law, A equals epsilon c l, so concentration is A over epsilon l. Second, you build a calibration curve from standards and interpolate the unknown inside that range. Third, AAS atomises the sample first, and the free ground-state atoms absorb the lamp's characteristic wavelength. Fourth, AAS suits trace metals while UV-Vis suits coloured species. And fifth, whenever you evaluate AAS, name a limitation, one element per run, matrix effects, or cost. Match the technique to the sample, and state its limits. See you next lesson."
       }
     }
-  ],
-  "productionNotes": "2017 syllabus mapping checked: Module 8: concentration measurement using colourimetry, UV-visible spectrophotometry and AAS."
+  ]
 }

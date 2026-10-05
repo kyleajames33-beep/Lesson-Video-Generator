@@ -388,7 +388,7 @@ const Denature = ({frame, accent, at, p}: Ctx) => {
 						<Label x={cx - 250} y={top - 120} text="too hot" color="#c0473a" size={20} />
 					</>
 				) : (
-					<Label x={cx - 250} y={top - 120} text="extreme pH: possible denaturation" color="#c0473a" size={18} anchor="start" />
+					<Label x={cx - 250} y={top - 120} text="pH too far from the optimum" color="#c0473a" size={18} anchor="start" />
 				)}
 			</g>
 			<Label x={cx} y={top - 176} text="bonds holding the shape break" color="#c0473a" opacity={fadeAt(frame, tWarp) * (1 - fadeAt(frame, tNo))} />

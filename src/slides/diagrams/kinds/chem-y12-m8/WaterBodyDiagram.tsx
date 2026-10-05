@@ -31,6 +31,8 @@ import {
 
 export type WaterBodyMode = 'oxygen' | 'nutrients' | 'sources' | 'chain' | 'management';
 export type WaterBodyProps = {
+	/** Qualifies these animations as illustrative, source-reviewed scenarios. */
+	reviewedWaterHealth?: boolean;
 	delay?: number;
 	mode?: WaterBodyMode;
 	/** Frames after `delay`; meaning depends on the mode (see file header). */
@@ -48,10 +50,10 @@ const DEFAULT_BEATS: Record<WaterBodyMode, number[]> = {
 const W = 760;
 const H = 530;
 
-type ModeArgs = {id: string; frame: number; fps: number; b: number[]; accent: string};
+type ModeArgs = {id: string; frame: number; fps: number; b: number[]; accent: string; reviewedWaterHealth: boolean};
 
 // ───────────────────────────────────────────── oxygen (L7 concept) ──────
-const OxygenMode = ({id, frame, fps, b, accent}: ModeArgs) => {
+const OxygenMode = ({id, frame, fps, b, accent, reviewedWaterHealth}: ModeArgs) => {
 	const [tLife, tTemp, tMix, tUse, tWarn] = b;
 	const TX = 70, TY = 110, TW = 440, TH = 280;
 	const surf = TY + TH * 0.14;
@@ -79,7 +81,7 @@ const OxygenMode = ({id, frame, fps, b, accent}: ModeArgs) => {
 		<>
 			{/* intro line, replaced by the three causes */}
 			<text x={W / 2} y={52} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800} opacity={ramp(frame, 0) * (1 - ramp(frame, tTemp - 24, 16))}>
-				Dissolved O₂: the supply aerobic life needs
+				{reviewedWaterHealth ? 'Illustrative O₂ balance: several processes interact' : 'Dissolved O₂: the supply aerobic life needs'}
 			</text>
 			{causes.map((c, i) => {
 				const cx = 130 + i * 250;
@@ -150,21 +152,22 @@ const OxygenMode = ({id, frame, fps, b, accent}: ModeArgs) => {
 			<DioramaPlinth id={`${id}-g`} cx={640} cy={372} rx={70} />
 			<DoGauge x={636} top={150} h={210} level={level} okColor={accent} lowAt={0.3} pulse={idlePulse(frame)} opacity={ramp(frame, 4)} />
 
+			{reviewedWaterHealth && <text x={290} y={490} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700} opacity={ramp(frame, 0)}>Illustrative scenario; response varies by species</text>}
 			<g opacity={warn}>
 				<rect x={548} y={432} width={204} height={70} rx={14} fill="#ffffff" stroke={TOK.amber} strokeWidth={2.5 + idlePulse(frame) * 1.5} />
 				<text x={650} y={462} textAnchor="middle" fill={TOK.amberInk} fontSize={19} fontWeight={800}>Low oxygen:</text>
-				<text x={650} y={487} textAnchor="middle" fill={TOK.amberInk} fontSize={17} fontWeight={800}>organisms in trouble</text>
+				<text x={650} y={487} textAnchor="middle" fill={TOK.amberInk} fontSize={17} fontWeight={800}>{reviewedWaterHealth ? 'possible stress' : 'organisms in trouble'}</text>
 			</g>
 		</>
 	);
 };
 
 // ───────────────────────────────────────── nutrients (L9 concept-nutrients) ──
-const NutrientsMode = ({id, frame, fps, b, accent}: ModeArgs) => {
+const NutrientsMode = ({id, frame, fps, b, accent, reviewedWaterHealth}: ModeArgs) => {
 	const [tN, tP, tBal, tEx, tBloom, tKey] = b;
 	const tanks = [
-		{x: 32, label: 'Low levels', excess: false},
-		{x: 418, label: 'Excess', excess: true},
+		{x: 32, label: reviewedWaterHealth ? 'Lower loading' : 'Low levels', excess: false},
+		{x: 418, label: reviewedWaterHealth ? 'Higher loading' : 'Excess', excess: true},
 	];
 	const TY = 118, TW = 310, TH = 250;
 	const surf = TY + TH * 0.14;
@@ -181,8 +184,9 @@ const NutrientsMode = ({id, frame, fps, b, accent}: ModeArgs) => {
 			</g>
 			<g opacity={ramp(frame, tP, 14)}>
 				<Dot x={420} y={33} r={11} color={WATER.phosphate} />
-				<text x={440} y={41} fill={TOK.ink} fontSize={22} fontWeight={800}>phosphate <tspan fill={WATER.phosphate}>PO₄³⁻</tspan></text>
+				<text x={440} y={41} fill={TOK.ink} fontSize={22} fontWeight={800}>phosphate <tspan fill={WATER.phosphate}>{reviewedWaterHealth ? 'PO₄' : 'PO₄³⁻'}</tspan></text>
 			</g>
+			{reviewedWaterHealth && <text x={W / 2} y={65} textAnchor="middle" fill={TOK.inkDim} fontSize={14} fontWeight={700} opacity={ramp(frame, tP, 14)}>PO₄ is analytical shorthand; H₂PO₄⁻ / HPO₄²⁻ vary with pH</text>}
 			{tanks.map((t, ti) => {
 				const nIons = t.excess ? 3 + Math.round(15 * ease(interpolate(frame, [tEx, tEx + 70], [0, 1], clamp))) : 3;
 				const murk = t.excess ? 0.85 * bloom : 0;
@@ -228,16 +232,16 @@ const NutrientsMode = ({id, frame, fps, b, accent}: ModeArgs) => {
 			})}
 			<g opacity={ramp(frame, tBal, 16)}>
 				<Mark x={80} y={478} ok size={15} />
-				<text x={104} y={485} fill={TOK.ink} fontSize={20} fontWeight={800}>Balanced ecosystem</text>
+				<text x={104} y={485} fill={TOK.ink} fontSize={20} fontWeight={800}>{reviewedWaterHealth ? 'Growth may be limited' : 'Balanced ecosystem'}</text>
 			</g>
 			<g opacity={ramp(frame, tBloom, 16)}>
 				<Mark x={452} y={478} ok={false} size={15} />
-				<text x={476} y={485} fill={TOK.ink} fontSize={20} fontWeight={800}>Explosive algal growth</text>
+				<text x={476} y={485} fill={TOK.ink} fontSize={20} fontWeight={800}>{reviewedWaterHealth ? 'Bloom risk can rise' : 'Explosive algal growth'}</text>
 			</g>
 			<g opacity={ramp(frame, tKey, 16)}>
 				<rect x={W / 2 - 280} y={498} width={560} height={30} rx={15} fill="#ffffff" stroke={TOK.amber} strokeWidth={2 + idlePulse(frame) * 1.5} />
-				<text x={W / 2} y={519} textAnchor="middle" fill={TOK.amberInk} fontSize={19} fontWeight={800}>
-					Same ions: helpful at low levels, harmful in excess
+				<text x={W / 2} y={519} textAnchor="middle" fill={TOK.amberInk} fontSize={reviewedWaterHealth ? 17 : 19} fontWeight={800}>
+					{reviewedWaterHealth ? 'Illustrative scenario: light, flow and nutrient limits matter' : 'Same ions: helpful at low levels, harmful in excess'}
 				</text>
 			</g>
 		</>
@@ -245,7 +249,7 @@ const NutrientsMode = ({id, frame, fps, b, accent}: ModeArgs) => {
 };
 
 // ───────────────────────────────────────── sources (L9 concept-sources) ──
-const SourcesMode = ({id, frame, b}: ModeArgs) => {
+const SourcesMode = ({id, frame, b, reviewedWaterHealth}: ModeArgs) => {
 	const [tF, tS, tD, tTip] = b;
 	const LX = 60, LY = 238, LW = 460, LH = 168;
 	const surf = LY + LH * 0.14;
@@ -253,7 +257,7 @@ const SourcesMode = ({id, frame, b}: ModeArgs) => {
 	const cols = [
 		{x: 110, t: tF, title: 'Fertiliser runoff', sub: 'after heavy rain', ions: ['N', 'P'], organic: false, enter: 150},
 		{x: 290, t: tS, title: 'Sewage effluent', sub: 'nutrients + organic matter', ions: ['N', 'P'], organic: true, enter: 290},
-		{x: 470, t: tD, title: 'Detergents', sub: 'phosphate source', ions: ['P'], organic: false, enter: 430},
+		{x: 470, t: tD, title: 'Detergents', sub: reviewedWaterHealth ? 'some formulations' : 'phosphate source', ions: ['P'], organic: false, enter: 430},
 	];
 	const tip = ease(interpolate(frame, [tTip, tTip + 70], [0, 1], clamp));
 	const demand = cols.filter((c) => frame >= c.t + 20).length;
@@ -310,7 +314,7 @@ const SourcesMode = ({id, frame, b}: ModeArgs) => {
 							<rect x={c.x - (c.organic ? 108 : c.ions.length * 34 + 6)} y={170} width={c.organic ? 216 : c.ions.length * 68 + 12} height={32} rx={16} fill="#ffffff" stroke={TOK.rule} strokeWidth={2} />
 							<text x={c.x} y={192} textAnchor="middle" fontSize={18} fontWeight={800}>
 								{c.ions.includes('N') && <tspan fill={WATER.nitrate}>NO₃⁻ </tspan>}
-								<tspan fill={WATER.phosphate}>PO₄³⁻</tspan>
+								<tspan fill={WATER.phosphate}>{reviewedWaterHealth ? 'PO₄' : 'PO₄³⁻'}</tspan>
 								{c.organic && <tspan fill={WATER.organic}> + organic</tspan>}
 							</text>
 						</g>
@@ -348,6 +352,10 @@ const SourcesMode = ({id, frame, b}: ModeArgs) => {
 				LAKE
 			</text>
 
+			{reviewedWaterHealth && <g opacity={ramp(frame, tTip, 16)}>
+				<text x={290} y={475} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>PO₄: analytical shorthand; species vary with pH</text>
+				<text x={290} y={500} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>Illustrative inputs; effects depend on local conditions</text>
+			</g>}
 			{/* O₂ balance: supply vs demand */}
 			<g opacity={ramp(frame, 4)}>
 				<DioramaPlinth id={`${id}-b`} cx={655} cy={432} rx={70} />
@@ -379,24 +387,24 @@ const SourcesMode = ({id, frame, b}: ModeArgs) => {
 				<text x={711} y={400} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800}>O₂ used</text>
 			</g>
 			<g opacity={ramp(frame, tTip + 30, 16)}>
-				<Tag x={655} y={494} lines={['Balance tips']} color={TOK.amber} textColor={TOK.amberInk} size={19} strokeWidth={2 + idlePulse(frame) * 1.5} />
+				<Tag x={655} y={494} lines={reviewedWaterHealth ? ['May tip here'] : ['Balance tips']} color={TOK.amber} textColor={TOK.amberInk} size={19} strokeWidth={2 + idlePulse(frame) * 1.5} />
 			</g>
 		</>
 	);
 };
 
 // ───────────────────────────────────────── chain (L9 concept-chain) ──
-const ChainMode = ({id, frame, fps, b, accent}: ModeArgs) => {
+const ChainMode = ({id, frame, fps, b, accent, reviewedWaterHealth}: ModeArgs) => {
 	const [tLoad, tBloom, tLight, tDie, tBact, tBod, tHyp, tKill, tKey] = b;
 	const TX = 30, TY = 118, TW = 510, TH = 270;
 	const surf = TY + TH * 0.14;
 	const bed = TY + TH - 26;
 	const steps = [
-		{t: tLoad, title: 'Nutrients', sub: 'NO₃⁻, PO₄³⁻ in'},
-		{t: tBloom, title: 'Algal bloom', sub: 'blocks light'},
-		{t: tDie, title: 'Plants die', sub: 'no light'},
+		{t: tLoad, title: 'Nutrients', sub: reviewedWaterHealth ? 'N + P inputs' : 'NO₃⁻, PO₄³⁻ in'},
+		{t: tBloom, title: 'Algal bloom', sub: reviewedWaterHealth ? 'may shade plants' : 'blocks light'},
+		{t: tDie, title: reviewedWaterHealth ? 'Plant loss' : 'Plants die', sub: reviewedWaterHealth ? 'if light is limited' : 'no light'},
 		{t: tBact, title: 'Decomposition', sub: 'BOD rises'},
-		{t: tHyp, title: 'Hypoxia', sub: 'fish die'},
+		{t: tHyp, title: reviewedWaterHealth ? 'Possible hypoxia' : 'Hypoxia', sub: reviewedWaterHealth ? 'fish may die' : 'fish die'},
 	];
 	const bloom = ease(interpolate(frame, [tBloom, tBloom + 110], [0, 1], clamp));
 	const block = ease(interpolate(frame, [tLight, tLight + 60], [0, 1], clamp));
@@ -511,7 +519,7 @@ const ChainMode = ({id, frame, fps, b, accent}: ModeArgs) => {
 				<Tag
 					x={TX + TW / 2}
 					y={bed - 70 - (key > 0 ? 12 * key : 0)}
-					lines={key > 0.01 ? ['Decomposition: BOD ↑', 'O₂ collapse kills fish'] : ['Decomposition: BOD ↑']}
+					lines={key > 0.01 ? ['Decomposition: BOD ↑', reviewedWaterHealth ? 'Possible oxygen stress' : 'O₂ collapse kills fish'] : ['Decomposition: BOD ↑']}
 					color={TOK.amber}
 					textColor={TOK.amberInk}
 					subColor={TOK.ink}
@@ -520,17 +528,21 @@ const ChainMode = ({id, frame, fps, b, accent}: ModeArgs) => {
 				/>
 			</g>
 
+			{reviewedWaterHealth && <g opacity={ramp(frame, tBod, 16)}>
+				<text x={285} y={458} textAnchor="middle" fill={TOK.inkDim} fontSize={17} fontWeight={700}>Living algae respire in light and darkness</text>
+				<text x={285} y={486} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={700}>Illustrative pathway; outcomes depend on conditions</text>
+			</g>}
 			<DioramaPlinth id={`${id}-g`} cx={650} cy={390} rx={62} />
 			<DoGauge x={646} top={182} h={196} level={level} okColor={accent} lowAt={0.3} lowColor="#c0392b" lowInk="#c0392b" opacity={ramp(frame, 4)} />
 			<g opacity={ramp(frame, tHyp, 16)}>
-				<text x={650} y={450} textAnchor="middle" fill="#c0392b" fontSize={18} fontWeight={800}>hypoxia</text>
+				<text x={650} y={450} textAnchor="middle" fill="#c0392b" fontSize={18} fontWeight={800}>{reviewedWaterHealth ? 'possible hypoxia' : 'hypoxia'}</text>
 			</g>
 		</>
 	);
 };
 
 // ───────────────────────────────────────── management (L9 concept-management) ──
-const ManagementMode = ({id, frame, b, accent}: ModeArgs) => {
+const ManagementMode = ({id, frame, b, accent, reviewedWaterHealth}: ModeArgs) => {
 	const [tPrev, tBuf, tPrec, tSew, tErie, tKey] = b;
 	const LX = 548, LY = 112, LW = 196, LH = 232;
 	const surf = LY + LH * 0.14;
@@ -566,15 +578,15 @@ const ManagementMode = ({id, frame, b, accent}: ModeArgs) => {
 		return out;
 	};
 	const labelA = [
-		{x: 215, t: tPrec, n: 2, title: 'Precision agriculture', sub: 'less fertiliser applied'},
-		{x: 420, t: tBuf, n: 1, title: 'Buffer zone', sub: 'plants intercept runoff'},
+		{x: 215, t: tPrec, n: 2, title: 'Precision agriculture', sub: reviewedWaterHealth ? 'match fertiliser to need' : 'less fertiliser applied'},
+		{x: 420, t: tBuf, n: 1, title: 'Buffer zone', sub: reviewedWaterHealth ? 'can intercept runoff' : 'plants intercept runoff'},
 	];
 	const inflow = 1 - 0.3 * ramp(frame, tBuf, 40) - 0.2 * ramp(frame, tPrec, 40) - 0.25 * ramp(frame, tSew, 40);
 	const lakeDots = Math.round(10 + 8 * inflow);
 	return (
 		<>
 			<text x={W / 2} y={30} textAnchor="middle" fill={accent} fontSize={21} fontWeight={800} opacity={ramp(frame, tPrev, 16)}>
-				Stop nutrients before they reach the water
+				{reviewedWaterHealth ? 'Reduce nutrient loads with locally validated controls' : 'Stop nutrients before they reach the water'}
 			</text>
 
 			{/* row A: farm runoff */}
@@ -624,7 +636,7 @@ const ManagementMode = ({id, frame, b, accent}: ModeArgs) => {
 				))}
 				<circle cx={plantX + 90 - textWidth('Sewage upgrade + wetlands') / 2 - 14} cy={rowB - 70} r={6} fill={accent} />
 				<text x={plantX + 90} y={rowB - 64} textAnchor="middle" fill={TOK.ink} fontSize={18} fontWeight={800}>Sewage upgrade + wetlands</text>
-				<text x={plantX + 90} y={rowB - 44} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>remove phosphate before discharge</text>
+				<text x={plantX + 90} y={rowB - 44} textAnchor="middle" fill={TOK.inkDim} fontSize={15} fontWeight={700}>{reviewedWaterHealth ? 'reduce phosphorus before discharge' : 'remove phosphate before discharge'}</text>
 			</g>
 
 			<DioramaPlinth id={id} cx={LX + LW / 2} cy={LY + LH - 4} rx={118} />
@@ -646,13 +658,13 @@ const ManagementMode = ({id, frame, b, accent}: ModeArgs) => {
 			</text>
 
 			<g opacity={ramp(frame, tErie, 16)}>
-				<text x={W / 2 - 60} y={446} textAnchor="middle" fill={TOK.ink} fontSize={19} fontWeight={800}>After the 2014 Lake Erie bloom:</text>
+				<text x={W / 2 - 60} y={446} textAnchor="middle" fill={TOK.ink} fontSize={19} fontWeight={800}>{reviewedWaterHealth ? 'Illustrative controls: validate their local effects' : 'After the 2014 Lake Erie bloom:'}</text>
 				<text x={W / 2 - 60} y={472} textAnchor="middle" fill={TOK.inkDim} fontSize={18} fontWeight={700}>
-					US and Canada invested <tspan fill={TOK.ink} fontWeight={800}>200 million dollars</tspan> in prevention
+					{reviewedWaterHealth ? 'Measure nutrient loads and ecological response' : <>US and Canada invested <tspan fill={TOK.ink} fontWeight={800}>200 million dollars</tspan> in prevention</>}
 				</text>
 			</g>
 			<g opacity={ramp(frame, tKey, 16)}>
-				<Tag x={W / 2 - 60} y={508} lines={['Prevention beats reaction']} color={TOK.amber} textColor={TOK.amberInk} size={20} strokeWidth={2.5 + idlePulse(frame) * 1.5} />
+				<Tag x={W / 2 - 60} y={508} lines={reviewedWaterHealth ? ['Results depend on context'] : ['Prevention beats reaction']} color={TOK.amber} textColor={TOK.amberInk} size={20} strokeWidth={2.5 + idlePulse(frame) * 1.5} />
 			</g>
 		</>
 	);
@@ -660,13 +672,15 @@ const ManagementMode = ({id, frame, b, accent}: ModeArgs) => {
 
 const textWidth = (s: string) => s.length * 18 * 0.56;
 
-export const WaterBodyDiagram = ({delay = 62, mode = 'oxygen', beats}: WaterBodyProps) => {
+export const WaterBodyDiagram = ({delay = 62, mode = 'oxygen', beats, reviewedWaterHealth = false}: WaterBodyProps) => {
+	if (typeof reviewedWaterHealth !== 'boolean') throw new Error('reviewedWaterHealth must be boolean');
+	if (reviewedWaterHealth && !Object.hasOwn(DEFAULT_BEATS, mode)) throw new Error('Unsupported reviewed water-body mode');
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
 	const b = beats && beats.length >= DEFAULT_BEATS[mode].length ? beats : DEFAULT_BEATS[mode];
 	const id = `c12m8wb${mode}`;
-	const args: ModeArgs = {id, frame, fps, b, accent: theme.accent};
+	const args: ModeArgs = {id, frame, fps, b, accent: theme.accent, reviewedWaterHealth};
 	const labels: Record<WaterBodyMode, string> = {
 		oxygen: 'A water body: higher temperature, reduced mixing and microbial consumption lower dissolved oxygen until organisms are in trouble',
 		nutrients: 'Two tanks: low nitrate and phosphate keep a balanced ecosystem; excess drives explosive algal growth',
@@ -674,8 +688,15 @@ export const WaterBodyDiagram = ({delay = 62, mode = 'oxygen', beats}: WaterBody
 		chain: 'Eutrophication chain: nutrients, algal bloom, plants die, bacteria decompose and BOD rises, oxygen collapses and fish die',
 		management: 'Buffer zones, precision agriculture and sewage upgrades with wetlands stop nutrients before they reach the lake',
 	};
+	const reviewedLabels: Record<WaterBodyMode, string> = {
+		oxygen: 'Illustrative dissolved-oxygen scenario. Warming can lower oxygen solubility, while mixing and respiration influence oxygen balance. Stress depends on species and conditions; this is not a field forecast.',
+		nutrients: 'Illustrative nutrient-loading comparison, not guaranteed ecosystem outcomes. Bloom risk depends on nutrient limits, light and flow. PO₄ is analytical shorthand; phosphate species such as H₂PO₄⁻ and HPO₄²⁻ vary with pH.',
+		sources: 'Illustrative potential inputs: fertiliser runoff, sewage effluent and some detergent formulations. Oxygen balance may tip depending on loading and local conditions. PO₄ is analytical shorthand, not a claim that PO₄³⁻ dominates in water.',
+		chain: 'Illustrative eutrophication pathway, not a guaranteed sequence. Nutrient enrichment can promote blooms; shading, respiration and decomposition can contribute to possible oxygen stress. Living algae respire in light and darkness. Fish mortality depends on conditions.',
+		management: 'Illustrative nutrient-reduction controls: buffers, precision agriculture, sewage upgrades and wetlands. Use locally validated controls and monitor nutrient loads and ecological response; outcomes vary.',
+	};
 	return (
-		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={labels[mode]} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
+		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={reviewedWaterHealth ? reviewedLabels[mode] : labels[mode]} style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={id} elements={['O']} />
 			{mode === 'oxygen' && <OxygenMode {...args} />}
 			{mode === 'nutrients' && <NutrientsMode {...args} />}

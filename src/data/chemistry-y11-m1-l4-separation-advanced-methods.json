@@ -11,11 +11,7 @@
     "explore homogeneous mixtures and heterogeneous mixtures through practical investigations:"
   ],
   "moduleLessonCount": 20,
-  "nesaOutcomes": [
-    "CH11-8",
-    "CH11/12-4",
-    "CH11/12-7"
-  ],
+  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-7"],
   "inquiryQuestion": "How do the properties of substances help us to classify and separate them?",
   "lessonIntent": "Students can choose between simple distillation, fractional distillation, and chromatography, and calculate Rf values.",
   "examSkill": "Match technique to property: large BP gap → simple distillation; close BPs → fractional; phase affinity → chromatography (Rf).",
@@ -60,15 +56,9 @@
         "afterContent": "Close BPs (<25°C). A column gives many cycles. e.g. ethanol (78°C) / water (100°C)."
       },
       "bullets": [
-        {
-          "text": "Simple distillation: large BP gap, or a non-volatile solute."
-        },
-        {
-          "text": "Fractional distillation: close boiling points, both volatile."
-        },
-        {
-          "text": "The fractionating column gives many vaporise–condense cycles."
-        }
+        {"text": "Simple distillation: large BP gap, or a non-volatile solute."},
+        {"text": "Fractional distillation: close boiling points, both volatile."},
+        {"text": "The fractionating column gives many vaporise–condense cycles."}
       ],
       "secondary": "A longer fractionating column means more cycles and a cleaner separation. That's why it works where simple distillation fails.",
       "callout": "Big gap, go simple. Small gap, go fractional.",
@@ -83,18 +73,10 @@
       "type": "definition",
       "heading": "Chromatography and the Rf value",
       "bullets": [
-        {
-          "text": "Stationary phase: the paper or silica that holds components back."
-        },
-        {
-          "text": "Mobile phase: the solvent that rises and carries components up."
-        },
-        {
-          "text": "Rf = distance moved by component ÷ distance moved by solvent front."
-        },
-        {
-          "text": "Rf is always between 0 and 1, and is characteristic for each compound."
-        }
+        {"text": "Stationary phase: the paper or silica that holds components back."},
+        {"text": "Mobile phase: the solvent that rises and carries components up."},
+        {"text": "Rf = distance moved by component ÷ distance moved by solvent front."},
+        {"text": "Rf is always between 0 and 1, and is characteristic for each compound."}
       ],
       "callout": "Higher Rf means greater affinity for the mobile phase.",
       "durationInFrames": 1020,
@@ -109,18 +91,10 @@
       "heading": "Four techniques, one question",
       "body": "Choosing always comes down to which physical property differs between the components.",
       "bullets": [
-        {
-          "text": "Particle size → filtration."
-        },
-        {
-          "text": "Solubility change with temperature → crystallisation."
-        },
-        {
-          "text": "Boiling point, large gap → simple distillation."
-        },
-        {
-          "text": "Boiling point, close → fractional; phase affinity → chromatography."
-        }
+        {"text": "Particle size → filtration."},
+        {"text": "Solubility change with temperature → crystallisation."},
+        {"text": "Boiling point, large gap → simple distillation."},
+        {"text": "Boiling point, close → fractional; phase affinity → chromatography."}
       ],
       "secondary": "Chromatography also identifies components, by comparing each spot's Rf to known standards run in the same system.",
       "callout": "Name the property that differs, then pick the technique.",
@@ -197,29 +171,29 @@
         "B: both volatile, close BPs → fractional distillation with a column",
         "Answer: A simple distillation, B fractional distillation ✓"
       ],
-      "durationInFrames": 2019,
+      "durationInFrames": 1320,
       "caption": "Sea water → simple; ethanol/water (22°C gap) → fractional.",
       "voiceover": {
-        "text": "Let's pick the right distillation for each scenario. Scenario A, pure water from sea water. The salt is non-volatile, it doesn't boil at any sensible temperature, so the effective boiling point gap is enormous. That means a single vaporise and condense cycle is enough, so simple distillation works. The water boils off and condenses pure, while the salt stays behind in the flask. Scenario B, ethanol from an ethanol water mixture. Ethanol boils at seventy-eight, water at one hundred, so the gap is only twenty-two degrees, and both are volatile liquids. That's too close for simple distillation, so you need fractional distillation with a fractionating column, which gives the many cycles required to enrich the vapour in ethanol. So scenario A is simple, scenario B is fractional, and the boiling point gap decided both. Ordinary fractional distillation enriches ethanol but cannot pass the ethanol-water azeotrope to obtain completely pure ethanol."
+        "text": "Let's pick the right distillation for each scenario. Scenario A, pure water from sea water. The salt is non-volatile, it doesn't boil at any sensible temperature, so the effective boiling point gap is enormous. That means a single vaporise and condense cycle is enough, so simple distillation works. The water boils off and condenses pure, while the salt stays behind in the flask. Scenario B, ethanol from an ethanol water mixture. Ethanol boils at seventy-eight, water at one hundred, so the gap is only twenty-two degrees, and both are volatile liquids. That's too close for simple distillation, so you need fractional distillation with a fractionating column, which gives the many cycles required to enrich the vapour in ethanol. So scenario A is simple, scenario B is fractional, and the boiling point gap decided both."
       }
     },
     {
       "id": "worked-example-2",
       "type": "workedExample",
       "heading": "Identify spots by Rf",
-      "question": "Solvent front travels 8.0 cm. Spot P moves 2.4 cm, Spot Q moves 6.4 cm. Standards: X has Rf 0.30, Y has Rf 0.80. Suggest identities for P and Q under the same chromatographic conditions.",
+      "question": "Solvent front travels 8.0 cm. Spot P moves 2.4 cm, Spot Q moves 6.4 cm. Standards: X has Rf 0.30, Y has Rf 0.80. Identify P and Q.",
       "coachNote": "Rf = component distance ÷ solvent front distance.",
       "steps": [
         "Rf = distance moved by component ÷ distance moved by solvent front",
         "Rf(P) = 2.4 ÷ 8.0 = 0.30",
         "Rf(Q) = 6.4 ÷ 8.0 = 0.80",
-        "Compare with standards run under identical conditions: P matches X and Q matches Y",
-        "Answer: P is consistent with X, Q with Y, under identical conditions; Rf alone is not definitive ✓"
+        "Match to standards: 0.30 = X, 0.80 = Y",
+        "Answer: P is compound X, Q is compound Y ✓"
       ],
-      "durationInFrames": 1903,
+      "durationInFrames": 1290,
       "caption": "Rf(P) = 0.30 matches X; Rf(Q) = 0.80 matches Y.",
       "voiceover": {
-        "text": "Now an R f calculation. The solvent front travels eight centimetres up the strip. Spot P moves two-point-four centimetres, and spot Q moves six-point-four. We also have reference standards, compound X with an R f of nought-point-three, and compound Y with an R f of nought-point-eight. Identify the spots. Step one, the formula is component distance divided by solvent front distance. Step two, R f of P is two-point-four over eight, which is nought-point-three exactly. Step three, R f of Q is six-point-four over eight, which is nought-point-eight. Step four, match those to the standards. Nought-point-three is compound X, and nought-point-eight is compound Y. So P is X and Q is Y. As long as the conditions are identical, matching R f values means matching compounds. These are tentative matches under identical conditions; different compounds can share an R f value."
+        "text": "Now an R f calculation. The solvent front travels eight centimetres up the strip. Spot P moves two-point-four centimetres, and spot Q moves six-point-four. We also have reference standards, compound X with an R f of nought-point-three, and compound Y with an R f of nought-point-eight. Identify the spots. Step one, the formula is component distance divided by solvent front distance. Step two, R f of P is two-point-four over eight, which is nought-point-three exactly. Step three, R f of Q is six-point-four over eight, which is nought-point-eight. Step four, match those to the standards. Nought-point-three is compound X, and nought-point-eight is compound Y. So P is X and Q is Y. As long as the conditions are identical, matching R f values means matching compounds."
       }
     },
     {

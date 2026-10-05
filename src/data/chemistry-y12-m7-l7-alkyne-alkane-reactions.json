@@ -12,12 +12,7 @@
     "investigate, write equations and construct models to represent the reactions of saturated hydrocarbons when substituted with halogens"
   ],
   "moduleLessonCount": 23,
-  "nesaOutcomes": [
-    "CH12-14",
-    "CH11/12-5",
-    "CH11/12-6",
-    "CH11/12-7"
-  ],
+  "nesaOutcomes": ["CH12-14", "CH11/12-5", "CH11/12-6", "CH11/12-7"],
   "inquiryQuestion": "What are the products of reactions of hydrocarbons and how do they react?",
   "lessonIntent": "Students can write two-step alkyne additions, explain why alkyne hydration gives a ketone, and state correctly that UV light is the energy source for alkane substitution.",
   "examSkill": "Use two equivalents for full alkyne addition, give both catalysts for alkyne hydration, label UV light as an energy source, and balance combustion by C then H then O.",
@@ -55,15 +50,9 @@
       "heading": "Alkynes react in two steps",
       "body": "A triple bond is one sigma plus two pi bonds. Each pi bond adds independently, so full addition needs two equivalents.",
       "bullets": [
-        {
-          "text": "Step 1: the first pi bond opens, alkyne -> alkene-type product."
-        },
-        {
-          "text": "Step 2: the second pi bond opens -> fully saturated product."
-        },
-        {
-          "text": "Full halogenation of ethyne consumes two Br2: -> tetrabromoethane."
-        }
+        {"text": "Step 1: the first pi bond opens, alkyne -> alkene-type product."},
+        {"text": "Step 2: the second pi bond opens -> fully saturated product."},
+        {"text": "Full halogenation of ethyne consumes two Br2: -> tetrabromoethane."}
       ],
       "secondary": "Hydrohalogenation is two-step too, with Markovnikov each time, giving a geminal dihalide with both halogens on the same carbon.",
       "callout": "Two pi bonds, two equivalents, two steps.",
@@ -202,18 +191,10 @@
       "type": "definition",
       "heading": "The words you need",
       "bullets": [
-        {
-          "text": "Two-step addition: each pi bond of a triple bond reacts separately."
-        },
-        {
-          "text": "Lindlar catalyst: poisoned palladium that stops hydrogenation at the alkene."
-        },
-        {
-          "text": "Enol tautomerism: an unstable vinyl alcohol rearranges to a carbonyl (keto) form."
-        },
-        {
-          "text": "Geminal dihalide: two halogens on the same carbon; vicinal: on adjacent carbons."
-        }
+        {"text": "Two-step addition: each pi bond of a triple bond reacts separately."},
+        {"text": "Lindlar catalyst: poisoned palladium that stops hydrogenation at the alkene."},
+        {"text": "Enol tautomerism: an unstable vinyl alcohol rearranges to a carbonyl (keto) form."},
+        {"text": "Geminal dihalide: two halogens on the same carbon; vicinal: on adjacent carbons."}
       ],
       "callout": "Lindlar stops halfway; enol tautomerism flips an OH into a C=O.",
       "durationInFrames": 990,
@@ -228,15 +209,9 @@
       "heading": "Alkyne hydration gives a ketone",
       "body": "Every other addition behaves as expected. Alkyne hydration is the surprise: the product is a ketone, not an alcohol.",
       "bullets": [
-        {
-          "text": "Conditions: dilute H2SO4 AND Hg2+ catalyst, both required, about 60 degrees."
-        },
-        {
-          "text": "The first product is an unstable enol (a vinyl alcohol)."
-        },
-        {
-          "text": "It tautomerises instantly to the keto form: a ketone."
-        }
+        {"text": "Conditions: dilute H2SO4 AND Hg2+ catalyst, both required, about 60 degrees."},
+        {"text": "The first product is an unstable enol (a vinyl alcohol)."},
+        {"text": "It tautomerises instantly to the keto form: a ketone."}
       ],
       "secondary": "Propyne + water -> propanone, a ketone. The exception is ethyne, which gives ethanal, an aldehyde, because its carbonyl lands on a terminal carbon.",
       "callout": "Both catalysts, and the product is a ketone, not an alcohol.",
@@ -355,15 +330,9 @@
       "heading": "Alkane substitution: UV is energy",
       "body": "Alkanes only react with halogens under UV light, and the wording about UV light is heavily tested.",
       "bullets": [
-        {
-          "text": "CH4 + Cl2 -> CH3Cl + HCl, under UV light."
-        },
-        {
-          "text": "One H is replaced by one halogen; HX is the second product."
-        },
-        {
-          "text": "UV light is an energy source, not a catalyst: it is energy, not matter."
-        }
+        {"text": "CH4 + Cl2 -> CH3Cl + HCl, under UV light."},
+        {"text": "One H is replaced by one halogen; HX is the second product."},
+        {"text": "UV light is an energy source, not a catalyst: it is energy, not matter."}
       ],
       "secondary": "UV light breaks the halogen molecule into radicals and is consumed doing so. A catalyst is a substance that is regenerated; UV light is neither.",
       "callout": "Energy source, not catalyst. Energy cannot be a catalyst.",
@@ -492,15 +461,9 @@
       "heading": "Balancing combustion: C, H, O",
       "body": "All hydrocarbons combust. Balance in a fixed order to avoid going in circles.",
       "bullets": [
-        {
-          "text": "Balance carbon first: CO2 coefficient equals the carbon count."
-        },
-        {
-          "text": "Balance hydrogen next: H2O coefficient is half the hydrogen count."
-        },
-        {
-          "text": "Balance oxygen last: total the right-hand O, divide by 2; double if fractional."
-        }
+        {"text": "Balance carbon first: CO2 coefficient equals the carbon count."},
+        {"text": "Balance hydrogen next: H2O coefficient is half the hydrogen count."},
+        {"text": "Balance oxygen last: total the right-hand O, divide by 2; double if fractional."}
       ],
       "secondary": "NOx forms from atmospheric N2 reacting with O2 at high flame temperatures, not from nitrogen in the fuel. Most hydrocarbon fuels contain no nitrogen.",
       "callout": "Carbon, then hydrogen, then oxygen.",
@@ -566,17 +529,19 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "Can a qualitative bromine decolourisation test distinguish but-1-yne from but-1-ene? State what a quantitative comparison needs, then balance propane combustion.",
+      "question": "How would you distinguish but-1-yne from but-1-ene using bromine water? And balance combustion of propane.",
       "pausePrompt": "Pause and work it through.",
       "answerSteps": [
-        "Both decolourise bromine; a qualitative positive result cannot distinguish them.",
-        "Known equal mole amounts and controlled conditions are needed to compare one versus two Br₂ equivalents.",
-        "C₃H₈ + 5O₂ → 3CO₂ + 4H₂O."
+        "But-1-yne has two pi bonds; but-1-ene has one",
+        "The alkyne decolourises TWO portions of Br2 water; the alkene only one",
+        "Propane combustion: C: 3 -> 3CO2; H: 8 -> 4H2O",
+        "O on right: 6 + 4 = 10, so O2 = 5",
+        "Answer: alkyne decolourises twice; C3H8 + 5O2 -> 3CO2 + 4H2O ✓"
       ],
       "durationInFrames": 1260,
-      "caption": "Qualitative unsaturation testing is different from quantitative reagent uptake.",
+      "caption": "Alkyne decolourises two portions of Br2; C3H8 + 5O2 -> 3CO2 + 4H2O.",
       "voiceover": {
-        "text": "Both but-one-yne and but-one-ene decolourise bromine, so a simple positive bromine test cannot distinguish them. In a controlled quantitative experiment using known equal amounts and appropriate reaction conditions, the alkyne can add two equivalents of bromine while the alkene adds one. Two arbitrary portions of bromine water are not decisive without sample amounts and concentrations. For propane combustion, three carbons require three carbon dioxide, eight hydrogens require four water, and ten oxygen atoms require five oxygen molecules."
+        "text": "Quick check, two parts. First, how do you tell but-one-yne from but-one-ene using bromine water? Pause and think. Right. But-one-yne is an alkyne with two pi bonds, while but-one-ene is an alkene with one. So the alkyne will decolourise two successive portions of bromine water, one for each pi bond, whereas the alkene decolourises only one. That two portion behaviour is the distinguishing test. Second part, balance the combustion of propane, C three H eight. Carbon first, three carbons gives three carbon dioxide. Hydrogen next, eight hydrogens gives four water. Oxygen last, six plus four is ten oxygen atoms on the right, so five oxygen molecules. The balanced equation is propane plus five oxygen gives three carbon dioxide plus four water. So, the alkyne decolourises twice, and that's the balanced combustion equation."
       }
     },
     {

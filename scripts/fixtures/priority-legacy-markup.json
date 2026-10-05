@@ -1,0 +1,166 @@
+{
+  "baselineCommit": "ca58c157f0349b29774f93a76cd041aefab3a2a2",
+  "description": "Actual ReactDOMServer component output with synthetic useCurrentFrame/useVideoConfig hooks. Floating literals normalised to six decimals. Not pixel or playback QA.",
+  "frames": [
+    0,
+    240,
+    500,
+    1000
+  ],
+  "cases": [
+    {
+      "name": "biology-y11-m2-l25-optimal-range-tolerance-limits.json:concept-zones",
+      "kind": "zones",
+      "props": {
+        "scale": {
+          "min": 24,
+          "max": 46,
+          "step": 2,
+          "unit": "°C",
+          "label": "body temperature"
+        },
+        "optimal": {
+          "from": 36.5,
+          "to": 37.5,
+          "label": "optimal",
+          "at": 34
+        },
+        "tolerance": {
+          "from": 34,
+          "to": 40,
+          "label": "increasing physiological stress",
+          "at": 302
+        },
+        "critical": {
+          "label": "critical risk depends on duration, cause and individual factors",
+          "failLabel": "regulation may fail",
+          "at": 699
+        },
+        "markers": [
+          {
+            "value": 37,
+            "label": "~37 °C normal",
+            "at": 163
+          },
+          {
+            "value": 40,
+            "label": "~40 °C: severe heat illness can occur",
+            "at": 474,
+            "amber": true
+          }
+        ]
+      },
+      "hashes": [
+        "6df5cca9774b12ab2978a4b5275f628288b66eea67ca80b0062527915d28b8b2",
+        "81c6e65c95e4e246511d29ca50d6e314639cc01fbb15067fe6f85e12980ee9e9",
+        "b65bca1a3448e0e982d86890b5eca4b4905a08db4376b35f8a8c70b7403e582a",
+        "c5f35fa015e7f1ef45ace3a9798de5044c7be8bb4704f99fe82cda5ca30b93d3"
+      ]
+    },
+    {
+      "name": "biology-y11-m2-l25-optimal-range-tolerance-limits.json:concept-enzymes",
+      "kind": "zones",
+      "props": {
+        "scale": {
+          "min": 24,
+          "max": 46,
+          "step": 2,
+          "unit": "°C",
+          "label": "body temperature"
+        },
+        "optimal": {
+          "from": 36.5,
+          "to": 37.5,
+          "label": "optimal",
+          "at": 0
+        },
+        "tolerance": {
+          "from": 28,
+          "to": 42,
+          "label": "copes",
+          "at": 0
+        },
+        "critical": {
+          "label": "high-temperature injury: no single universal threshold",
+          "failLabel": "fails",
+          "at": 784
+        },
+        "enzyme": {
+          "at": 152,
+          "label": "enzyme activity",
+          "note": "illustrative shape only; not a universal human-enzyme threshold",
+          "optimum": 37,
+          "denature": {
+            "label": "high heat can denature proteins",
+            "at": 784,
+            "value": 41
+          }
+        }
+      },
+      "hashes": [
+        "5d6072139d66e2016afa3e95ff5a09084a0fc9ebf9984619d398e43c4e0f6a62",
+        "0d08fdc60767799ef48da8c9b3890686e52553dbfe71da3c6cfb695dd95be3ed",
+        "1cc6de53a70b0e2434cf9d3f0aa394452a98767ea86910a31007c3a6e8cddc68",
+        "5122ba57f6719bcd0426f0facf59e4abf855a1c038c572bccfc3d6304d0b3370"
+      ]
+    },
+    {
+      "name": "biology-y11-m2-l25-optimal-range-tolerance-limits.json:concept-other",
+      "kind": "zones",
+      "props": {
+        "scale": {
+          "min": 6.6,
+          "max": 8,
+          "step": 0.2,
+          "unit": "pH",
+          "label": "blood pH"
+        },
+        "optimal": {
+          "from": 7.35,
+          "to": 7.45,
+          "label": "optimal",
+          "at": 67
+        },
+        "tolerance": {
+          "from": 6.8,
+          "to": 7.8,
+          "label": "copes",
+          "at": 217
+        },
+        "critical": {
+          "label": "critical limits: about 6.8 and 7.8",
+          "failLabel": "fails",
+          "at": 259
+        }
+      },
+      "hashes": [
+        "682e71597d525b2c5246f51525858979e46986774cbc5093ec82d31717fd9456",
+        "19e6d2df97fdcca66fc1ed3b5e6ce70740fbf9d9c1e54c0e00d5dec2ea19175c",
+        "eced07af66c3860e6ee494c2e3d0aa8eac423ffc6e337317fb657ddb37443858",
+        "eced07af66c3860e6ee494c2e3d0aa8eac423ffc6e337317fb657ddb37443858"
+      ]
+    },
+    {
+      "name": "chemistry-y12-m8-l8-heavy-metal-contamination-analysis.json:concept-biomag",
+      "kind": "foodchain",
+      "props": {
+        "beats": [
+          117,
+          285,
+          411,
+          512,
+          546,
+          605,
+          757,
+          807
+        ]
+      },
+      "hashes": [
+        "3f0d83efdc02f0e453a882decfb07d3e72ee80bad9ba202cf56b7d7b02140cc8",
+        "46354ccdde953f9ed610d968254eca2a0cfc294e4140c5bdc42f27f8e3792987",
+        "9b90d74f217de9deeb263fa366efb0707cb34ae8f79815d7a9b10d301844f8ae",
+        "f60bb3d3e1e869a828c1f9f0bcf828d4b46e84ca4ac5dd03e571ff00453157f7"
+      ]
+    }
+  ]
+}

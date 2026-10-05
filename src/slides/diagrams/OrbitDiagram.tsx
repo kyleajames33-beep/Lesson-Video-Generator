@@ -1,6 +1,6 @@
-// OrbitDiagram — a Bohr-style atom in the diorama family: a glossy nucleus
+// OrbitDiagram: a shell-occupancy schematic in the diorama family, with a glossy nucleus
 // marble floating over a soft ground shadow, painted shell rings, and glossy
-// electron marbles that keep orbiting (so it is never frozen). Shells appear
+// stationary electron markers. Rings represent shell membership, not trajectories. Shells appear
 // inner to outer. Colours follow the subject accent; the nucleus is the one
 // warm (amber) item.
 
@@ -9,22 +9,23 @@ import {FONT_DISPLAY, TOK} from '../../styles/tokens';
 import {useAccent} from '../../styles/theme';
 import {DioramaDefs, idleBob} from './diorama';
 import {PaintDefs, clamp, idHash, shade} from './kinds/restyle-generic/paint';
+import {validateShellOccupancy, shellElectronAngle} from './physics-models.mjs';
 
 type Electron = {label: string; shell: number};
 type Props = {nucleus: string; electrons: Electron[]; delay?: number};
 
 const SHELLS = [
-	{radius: 96, speed: 1.9},
-	{radius: 160, speed: 1.25},
-	{radius: 218, speed: 0.72},
+	{radius: 96},
+	{radius: 160},
+	{radius: 218},
 ];
 
 export const OrbitDiagram = ({nucleus, electrons, delay = 0}: Props) => {
+	validateShellOccupancy(electrons);
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const theme = useAccent();
 	const ID = `orbit-${idHash(nucleus + electrons.length)}`;
-	const t = frame / fps;
 	const cx = 350;
 	const cy = 244 + idleBob(frame, 2, 2);
 
@@ -32,12 +33,13 @@ export const OrbitDiagram = ({nucleus, electrons, delay = 0}: Props) => {
 	const nucP = spring({frame: frame - delay, fps, config: {damping: 13, stiffness: 190, mass: 0.7}});
 
 	return (
-		<svg viewBox="0 0 700 500" className="diagram" role="img" aria-label={`Atom model: nucleus ${nucleus}, ${electrons.length} electrons`} style={{fontFamily: FONT_DISPLAY}}>
+		<svg viewBox="0 0 700 500" className="diagram" role="img" aria-label={`Shell-occupancy schematic: nucleus ${nucleus}, ${electrons.length} electrons. Marker positions are not electron trajectories.`} style={{fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={ID} />
 			<defs>
 				<PaintDefs id={ID} colors={{e: theme.accent2, n: TOK.amber}} />
 			</defs>
 			<ellipse cx={354} cy={486} rx={220} ry={16} fill="rgba(58,40,18,0.16)" filter={`url(#${ID}-blur)`} />
+			<text x={350} y={18} textAnchor="middle" fontSize={16} fill={TOK.inkDim}>Shell occupancy only; positions and distances are schematic</text>
 
 			{usedShells.map((shellNum) => {
 				const sh = SHELLS[shellNum - 1];
@@ -52,9 +54,8 @@ export const OrbitDiagram = ({nucleus, electrons, delay = 0}: Props) => {
 			})}
 
 			{electrons.map((e, i) => {
-				const sh = SHELLS[e.shell - 1] ?? SHELLS[0];
-				const sibs = electrons.filter((x) => x.shell === e.shell);
-				const angle = t * sh.speed + (2 * Math.PI * sibs.indexOf(e)) / sibs.length;
+				const sh = SHELLS[e.shell - 1];
+				const angle = shellElectronAngle(electrons, i);
 				const ex = cx + Math.cos(angle) * sh.radius;
 				const ey = cy + Math.sin(angle) * sh.radius;
 				const appear = spring({frame: frame - delay - 18 - (e.shell - 1) * 14, fps, config: {damping: 15, stiffness: 200, mass: 0.65}});

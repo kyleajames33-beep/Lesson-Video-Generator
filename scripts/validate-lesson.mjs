@@ -1,7 +1,17 @@
+import {validateBiologyResidualDiagram} from '../src/slides/diagrams/biology-residuals-models.mjs';
+import {validateAnalyticalDiagram} from '../src/slides/diagrams/analytical-inference-models.mjs';
+import {validateSafetyMedicineDiagram} from '../src/slides/diagrams/safety-medicine-models.mjs';
+import {validateWaterHealthDiagram} from '../src/slides/diagrams/water-health-models.mjs';
+import {validateReviewedPolymerDiagram} from '../src/slides/diagrams/reviewed-polymer-models.mjs';
+import {validatePriorityScienceDiagram} from '../src/slides/diagrams/priority-science-models.mjs';
+import {validateReviewedMedicineDiagram} from '../src/slides/diagrams/medicine-models.mjs';
 import {existsSync, readFileSync, readdirSync} from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
+import {fileURLToPath} from 'node:url';
 import {getVoiceoverBudget} from './lesson-utils.mjs';
+import {validateSeriesCircuit, validateShellOccupancy} from '../src/slides/diagrams/physics-models.mjs';
+import {validateQuantitativeDiagram} from '../src/slides/diagrams/quantitative-models.mjs';
 
 const supportedSceneTypes = new Set([
   'title',
@@ -120,6 +130,19 @@ const requireOptionalRootString = (lesson, field, warnings, reason) => {
   }
 };
 
+const recordedVoiceoverSeconds = (audioFile) => {
+  if (!isNonEmptyString(audioFile) || !/\.mp3$/i.test(audioFile)) return null;
+  const alignmentFile = audioFile.replace(/\.mp3$/i, '.alignment.json');
+  if (!existsSync(alignmentFile)) return null;
+  try {
+    const ends = JSON.parse(readFileSync(alignmentFile, 'utf8')).character_end_times_seconds;
+    const lastEnd = ends?.at(-1);
+    return Number.isFinite(lastEnd) ? lastEnd : null;
+  } catch {
+    return null;
+  }
+};
+
 const validateUnitCancel = (unitCancel, errors, pathLabel) => {
   if (!isObject(unitCancel)) {
     errors.push(`${pathLabel}: "unitCancel" must be an object`);
@@ -138,7 +161,7 @@ const validateUnitCancel = (unitCancel, errors, pathLabel) => {
 let dioramaKindCache;
 const dioramaKinds = () => {
   if (dioramaKindCache) return dioramaKindCache;
-  const dir = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'src', 'slides', 'diagrams', 'dioramaKinds');
+  const dir = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'src', 'slides', 'diagrams', 'dioramaKinds');
   const seen = new Map();
   for (const file of readdirSync(dir).filter((f) => /^lane-.*\.ts$/.test(f))) {
     const body = readFileSync(path.join(dir, file), 'utf8').split('export const KINDS')[1] ?? '';
@@ -173,6 +196,20 @@ const validateDiagram = (diagram, errors, pathLabel) => {
   }
   if (!supportedDiagramTypes.has(diagram.type)) {
     errors.push(`${pathLabel}: unsupported diagram type "${diagram.type}"`);
+  }
+  try {
+    validateBiologyResidualDiagram(diagram);
+    validateAnalyticalDiagram(diagram);
+    validateSafetyMedicineDiagram(diagram);
+    validateWaterHealthDiagram(diagram);
+    validateReviewedMedicineDiagram(diagram);
+    validatePriorityScienceDiagram(diagram);
+    validateReviewedPolymerDiagram(diagram);
+    validateQuantitativeDiagram(diagram, {requireCues: false});
+    if (diagram.type === 'circuit3d') validateSeriesCircuit(diagram.components, diagram.showCurrent);
+    if (diagram.type === 'orbit') validateShellOccupancy(diagram.electrons);
+  } catch (error) {
+    errors.push(`${pathLabel}: ${error.message}`);
   }
 };
 
@@ -212,7 +249,10 @@ const validateScene = (scene, index, errors, warnings, fps) => {
       // spoken length by ~27% and floods this check with false "too long" hits.
       wordsPerMinute: 185,
     });
-    if (budget.status === 'tight') {
+    const recordedSeconds = recordedVoiceoverSeconds(scene.voiceover.audioFile);
+    if (recordedSeconds !== null && recordedSeconds + 1.5 > scene.durationInFrames / fps) {
+      warnings.push(`${pathLabel}: voiceover audio exceeds scene duration (${recordedSeconds.toFixed(1)}s audio plus 1.5s tail)`);
+    } else if (recordedSeconds === null && budget.status === 'tight') {
       warnings.push(
         `${pathLabel}: voiceover may be too long (${budget.estimatedSeconds.toFixed(1)}s estimated; target ${budget.targetSeconds.toFixed(1)}s / ${budget.targetWords} words)`
       );
@@ -261,8 +301,6 @@ const validateScene = (scene, index, errors, warnings, fps) => {
 
     if (scene.unitCancel) {
       validateUnitCancel(scene.unitCancel, errors, pathLabel);
-    } else {
-      warnings.push(`${pathLabel}: consider adding "unitCancel" when units determine the answer`);
     }
   }
 
@@ -407,16 +445,19 @@ const validateLesson = (lesson, filePath) => {
       warnings.push('scene[0]: first scene should usually be "title"');
     }
 
-    if (!lesson.scenes.some((scene) => scene.type === 'hook')) {
+    const isPartA = /Lesson \d+A$/i.test(lesson.lesson);
+    const isPartB = /Lesson \d+B$/i.test(lesson.lesson);
+    const isModuleReview = /module .*review/i.test(lesson.title);
+    if (!isPartB && !lesson.scenes.some((scene) => scene.type === 'hook')) {
       warnings.push('lesson should include a "hook" scene');
     }
-    if (!lesson.scenes.some((scene) => scene.type === 'quickCheck')) {
+    if (!isPartA && !lesson.scenes.some((scene) => scene.type === 'quickCheck')) {
       warnings.push('lesson should include a "quickCheck" scene');
     }
-    if (!lesson.scenes.some((scene) => scene.type === 'misconception')) {
+    if (!isPartA && !isModuleReview && !lesson.scenes.some((scene) => scene.type === 'misconception')) {
       warnings.push('lesson should include a "misconception" scene');
     }
-    if (!lesson.scenes.some((scene) => scene.type === 'summary')) {
+    if (!isPartA && !lesson.scenes.some((scene) => scene.type === 'summary')) {
       warnings.push('lesson should include a "summary" scene');
     }
   }

@@ -193,25 +193,63 @@
     {
       "id": "concept-tested",
       "type": "concept",
-      "heading": "Independent evidence and conditional interpretation",
-      "body": "Eruption dates, human occupation and oral transmission are different claims.",
+      "heading": "A tradition put to the test",
+      "body": "Independently dated eruptions and evidence of human presence make long-term continuity of some western Victorian traditions a supported possibility, if those traditions refer to those eruptions.",
       "bullets": [
         {
-          "text": "Eruptions dated to roughly 37,000 years ago."
+          "text": "Gunditjmara traditions are associated with Budj Bim; Tjapwurrung traditions have been discussed in relation to volcanic events in western Victoria."
         },
         {
-          "text": "A reported artefact beneath ash supports earlier human presence."
+          "text": "40Ar/39Ar dating places Budj Bim and Tower Hill eruptions at about 37,000 years ago; archaeology shows people were present in the region."
         },
         {
-          "text": "A connection to the traditions is a hypothesis; the date alone does not prove continuous transmission."
+          "text": "Researchers describe preservation of eruption memories over that span as a possibility conditional on identifying the traditions with those dated eruptions."
         }
       ],
-      "callout": "Independent dating supports context, not every interpretive claim.",
-      "caption": "Separate physical dates from hypotheses about oral transmission.",
+      "callout": "Independent dating supports the inference; it does not by itself prove uninterrupted exact transmission for 37,000 years.",
+      "caption": "Dated eruptions plus community traditions support a possible deep-time connection, with the inference stated conditionally.",
       "voiceover": {
-        "text": "A useful case compares geology with cultural traditions. Research dates the Budj Bim and Tower Hill eruptions to roughly thirty seven thousand years ago. A stone artefact reported beneath Tower Hill ash supports human presence before that eruption. Researchers considered whether traditions could refer to these events. If that connection is correct, the traditions may preserve a very old account. The geological date does not by itself prove uninterrupted transmission for thirty seven thousand years, or validate every identification of an extinct animal. State what each line of evidence establishes, and where an interpretation remains conditional."
+        "text": "Independent dating gives us a powerful comparison, but the conclusion needs careful wording. Argon dating places the Budj Bim and Tower Hill eruptions at roughly thirty seven thousand years ago, and archaeological evidence shows people were present in the region. Community traditions have been discussed in relation to volcanic events in western Victoria. If those traditions refer to those dated eruptions, they may preserve information across an extraordinary span of time. That is a supported possibility, not proof of perfectly continuous and unchanged transmission for thirty seven thousand years. The traditions should also be attributed to the relevant People and community sources, while the volcanic dates come from independent geochronology."
       },
-      "durationInFrames": 1325
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3aTimeline",
+        "props": {
+          "axis": {
+            "from": 50,
+            "to": 0,
+            "step": 10,
+            "unit": "thousand years ago"
+          },
+          "bars": [
+            {
+              "label": "People present",
+              "from": 50,
+              "to": 0,
+              "openStart": true,
+              "at": 385,
+              "sub": "stone tool found beneath the Tower Hill ash"
+            },
+            {
+              "label": "Traditions possibly referring to eruption",
+              "from": 37,
+              "to": 0,
+              "tone": "warm",
+              "at": 548,
+              "sub": "conditional interpretation; attribute to community sources"
+            }
+          ],
+          "markers": [
+            {
+              "ka": 37,
+              "label": "Budj Bim and Tower Hill erupt",
+              "at": 202
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1245,
+      "secondary": "Source note: volcanic ages reported by Matchan et al. (2020, Geology); Cultural Knowledge should be attributed to the relevant community source rather than treated as generic oral history."
     },
     {
       "id": "concept-sources",
@@ -365,9 +403,9 @@
       "finalPrompt": "Overlap in time first, then name the example, its People and Country, and what it adds beyond bone.",
       "caption": "Aboriginal rock art and oral tradition are palaeontological evidence for megafauna.",
       "voiceover": {
-        "text": "Let's lock it in. People were on this continent by about sixty five thousand years ago, and most megafauna were gone by about forty thousand, so they shared Country. Rock art, like the Kimberley painting of Thylacoleo, records appearance. Oral tradition, like the Tjapwurrung mihirung paringmal, records behaviour and habitat, and researchers have proposed links between eruption traditions and events dated around thirty seven thousand years ago, without that date proving continuous transmission. Every identification is an interpretation, weighed alongside fossil evidence. Next lesson, Australia's monotremes and marsupials."
+        "text": "Let's lock it in. People were on this continent by about sixty five thousand years ago, and most megafauna were gone by about forty thousand, so they shared Country. Rock art, like the Kimberley painting of Thylacoleo, records appearance. Oral tradition, like the Tjapwurrung mihirung paringmal, records behaviour and habitat, and traditions of eruptions have been matched to dates of about thirty seven thousand years. Every identification is an interpretation, weighed alongside fossil evidence. Next lesson, Australia's monotremes and marsupials."
       },
-      "durationInFrames": 1222
+      "durationInFrames": 900
     }
   ]
 }

@@ -1,0 +1,539 @@
+{
+  "chemistry-y11-m2-l10-volumetric-analysis-titration": {
+    "sources": [
+      {
+        "url": "https://goldbook.iupac.org/terms/view/09042",
+        "scope": "IUPAC equivalence condition is stoichiometric, rather than an arbitrary pH or pH-bound average.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://goldbook.iupac.org/terms/view/T06387",
+        "scope": "IUPAC titration definition distinguishes the measured endpoint from the equivalence condition.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://media.iupac.org/publications/analytical_compendium/Cha06sec2.pdf",
+        "scope": "Primary IUPAC analytical recommendations distinguish observed endpoints, equivalence and suitable analytical conditions. Direct PDF retrieval was unavailable in the independent check (HTTP 403); the bounded claims were cross-checked with official indexed IUPAC definitions and authored sources, without claiming a fresh full-PDF read.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-d1-terminology",
+        "scope": "Official metrology terminology distinguishes repeatability/precision from accuracy. Concordance cannot by itself eliminate systematic error.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations",
+        "scope": "Authored textbook examples support specified monoprotic curve equilibria and indicator transition in a steep volume interval; no exact-pH bracketing requirement.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_by_David_Harvey/Analytical_Chemistry_2.1_(Harvey)/09:_Titrimetric_Methods/9.02:_AcidBase_Titrations",
+        "scope": "Author-written analytical text discusses inflection/stoichiometric offsets, endpoint method limitations and approximate half-neutralisation relationships.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh",
+        "scope": "Neutral pH is pKw/2 in the stated concentration model, approximately7 at25C; temperature and activities require qualification.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.chemguide.co.uk/physical/acidbaseeqia/phcurves.html",
+        "scope": "Authored curve explanation supports direction-dependent weak-base/conjugate-acid buffer formation after equivalence.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.metrohm.com/content/dam/metrohm/shared/documents/monographs/81085041EN.pdf",
+        "scope": "Manufacturer-authored titration monograph discusses practical endpoint detection, weak systems and aqueous levelling. A pH meter is not a guaranteed sharp endpoint.",
+        "checked": "2026-10-04"
+      }
+    ],
+    "curriculum": {
+      "sourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "syllabusSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42",
+      "publishedReferences": [
+        {
+          "id": "p788",
+          "text": "Concentration and Molarity",
+          "textSha256": "99e7cf73ebd05e44546e5d6f0001c849350c9517f717429e6d52062a557abf5b"
+        },
+        {
+          "id": "p789",
+          "text": "Inquiry question: How are chemicals in solutions measured?",
+          "textSha256": "db0bf5e30eb658b407cdd38fc3b939ee85625d356fdc24d98c102d1b5d99a430"
+        },
+        {
+          "id": "p792",
+          "text": "conduct practical investigations to determine the concentrations of solutions and investigate the different ways in which concentrations are measured (ACSCH046, ACSCH063)  ",
+          "textSha256": "d42ffc0a4a86785d50c6964ec42675d3e0bb4c7eb0426bf0cb388b1e639aeb03"
+        },
+        {
+          "id": "p793",
+          "text": "manipulate variables and solve problems to calculate concentration, mass or volume using:",
+          "textSha256": "ac62751922bf9281244a0fcc3084e91f1c01726adc986669d1967f859086630b"
+        },
+        {
+          "id": "p794",
+          "text": "c=nV  (molarity formula) (ACSCH063) ",
+          "textSha256": "01bfd75b1410e15b4b5e37232ef0f857a8de75733916e9817be2f70259f1b391"
+        },
+        {
+          "id": "p795",
+          "text": "dilutions (number of moles before dilution = number of moles of sample after dilution)  ",
+          "textSha256": "cc5bc8dda164cd007ff28d8407acf3244cb205ceb9e0b2083508cddbc56f9adf"
+        },
+        {
+          "id": "p796",
+          "text": "conduct an investigation to make a standard solution and perform a dilution",
+          "textSha256": "382c3db73ab0ca0071a2fbf8c0fcdb415c83022fe9e2b7fc817af078ed4acf21"
+        }
+      ],
+      "scope": "2017 mapping retained with actual parent/child hierarchy. Year11 titration calculations are teaching examples supporting concentration work, not a separately named compulsory titration exercise in Module2. The weak/weak curve is a bounded comparison, not an additional separately prescribed example. No completed practical, full course coverage, marking entitlement or 2025 mapping is certified. Mathematical p794 text flattening in the fixture is explicitly repaired only in displayed metadata.",
+      "originalMapping": {
+        "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+        "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+        "syllabusDotPoints": [
+          "conduct a titration to determine the concentration of an unknown solution using a standard solution and the mole ratio of the reaction"
+        ],
+        "nesaOutcomes": [
+          "CH11-9",
+          "CH11/12-4",
+          "CH11/12-6"
+        ]
+      }
+    },
+    "models": {
+      "scope": "Independent ideal concentration/charge-balance calculations, not experimental measurements or validated endpoint precision. Volumes additive, no interfering species, Kw=1e-14 at25C.",
+      "retainedPartialAmendments": [
+        "C17 concept and worked-example",
+        "C19 worked-example"
+      ],
+      "modelExamples": [
+        {
+          "acidM": 0.1,
+          "volumeMl": 25,
+          "titrantM": 0.1,
+          "pKa": 4.74,
+          "halfPH": 4.740473640488018,
+          "equivalencePH": 8.719541263730576,
+          "pH8_3volume": 24.99411133218549,
+          "pH10volume": 25.04991247796457
+        },
+        {
+          "acidM": 0.1,
+          "volumeMl": 30,
+          "titrantM": 0.1,
+          "pKa": 4.2,
+          "halfPH": 4.201637936424541,
+          "equivalencePH": 8.449746648240442,
+          "pH8_3volume": 29.99881133117609,
+          "pH10volume": 30.060012405625194
+        }
+      ]
+    }
+  },
+  "chemistry-y11-m2-l17-back-calculations": {
+    "sources": [
+      {
+        "url": "https://goldbook.iupac.org/terms/view/09042",
+        "scope": "IUPAC equivalence condition is stoichiometric, rather than an arbitrary pH or pH-bound average.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://goldbook.iupac.org/terms/view/T06387",
+        "scope": "IUPAC titration definition distinguishes the measured endpoint from the equivalence condition.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://media.iupac.org/publications/analytical_compendium/Cha06sec2.pdf",
+        "scope": "Primary IUPAC analytical recommendations distinguish observed endpoints, equivalence and suitable analytical conditions. Direct PDF retrieval was unavailable in the independent check (HTTP 403); the bounded claims were cross-checked with official indexed IUPAC definitions and authored sources, without claiming a fresh full-PDF read.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-d1-terminology",
+        "scope": "Official metrology terminology distinguishes repeatability/precision from accuracy. Concordance cannot by itself eliminate systematic error.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations",
+        "scope": "Authored textbook examples support specified monoprotic curve equilibria and indicator transition in a steep volume interval; no exact-pH bracketing requirement.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_by_David_Harvey/Analytical_Chemistry_2.1_(Harvey)/09:_Titrimetric_Methods/9.02:_AcidBase_Titrations",
+        "scope": "Author-written analytical text discusses inflection/stoichiometric offsets, endpoint method limitations and approximate half-neutralisation relationships.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh",
+        "scope": "Neutral pH is pKw/2 in the stated concentration model, approximately7 at25C; temperature and activities require qualification.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.chemguide.co.uk/physical/acidbaseeqia/phcurves.html",
+        "scope": "Authored curve explanation supports direction-dependent weak-base/conjugate-acid buffer formation after equivalence.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.metrohm.com/content/dam/metrohm/shared/documents/monographs/81085041EN.pdf",
+        "scope": "Manufacturer-authored titration monograph discusses practical endpoint detection, weak systems and aqueous levelling. A pH meter is not a guaranteed sharp endpoint.",
+        "checked": "2026-10-04"
+      }
+    ],
+    "curriculum": {
+      "sourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "syllabusSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42",
+      "publishedReferences": [
+        {
+          "id": "p788",
+          "text": "Concentration and Molarity",
+          "textSha256": "99e7cf73ebd05e44546e5d6f0001c849350c9517f717429e6d52062a557abf5b"
+        },
+        {
+          "id": "p789",
+          "text": "Inquiry question: How are chemicals in solutions measured?",
+          "textSha256": "db0bf5e30eb658b407cdd38fc3b939ee85625d356fdc24d98c102d1b5d99a430"
+        },
+        {
+          "id": "p792",
+          "text": "conduct practical investigations to determine the concentrations of solutions and investigate the different ways in which concentrations are measured (ACSCH046, ACSCH063)  ",
+          "textSha256": "d42ffc0a4a86785d50c6964ec42675d3e0bb4c7eb0426bf0cb388b1e639aeb03"
+        },
+        {
+          "id": "p793",
+          "text": "manipulate variables and solve problems to calculate concentration, mass or volume using:",
+          "textSha256": "ac62751922bf9281244a0fcc3084e91f1c01726adc986669d1967f859086630b"
+        },
+        {
+          "id": "p794",
+          "text": "c=nV  (molarity formula) (ACSCH063) ",
+          "textSha256": "01bfd75b1410e15b4b5e37232ef0f857a8de75733916e9817be2f70259f1b391"
+        },
+        {
+          "id": "p795",
+          "text": "dilutions (number of moles before dilution = number of moles of sample after dilution)  ",
+          "textSha256": "cc5bc8dda164cd007ff28d8407acf3244cb205ceb9e0b2083508cddbc56f9adf"
+        },
+        {
+          "id": "p796",
+          "text": "conduct an investigation to make a standard solution and perform a dilution",
+          "textSha256": "382c3db73ab0ca0071a2fbf8c0fcdb415c83022fe9e2b7fc817af078ed4acf21"
+        }
+      ],
+      "scope": "2017 mapping retained with actual parent/child hierarchy. Year11 titration calculations are teaching examples supporting concentration work, not a separately named compulsory titration exercise in Module2. The weak/weak curve is a bounded comparison, not an additional separately prescribed example. No completed practical, full course coverage, marking entitlement or 2025 mapping is certified. Mathematical p794 text flattening in the fixture is explicitly repaired only in displayed metadata.",
+      "originalMapping": {
+        "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+        "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+        "syllabusDotPoints": [
+          "perform back-calculations to determine unknown concentrations and amounts from experimental results"
+        ],
+        "nesaOutcomes": [
+          "CH11-9",
+          "CH11/12-4",
+          "CH11/12-6"
+        ]
+      }
+    },
+    "models": {
+      "scope": "Independent ideal concentration/charge-balance calculations, not experimental measurements or validated endpoint precision. Volumes additive, no interfering species, Kw=1e-14 at25C.",
+      "retainedPartialAmendments": [
+        "C17 concept and worked-example",
+        "C19 worked-example"
+      ],
+      "modelExamples": [
+        {
+          "acidM": 0.1,
+          "volumeMl": 25,
+          "titrantM": 0.1,
+          "pKa": 4.74,
+          "halfPH": 4.740473640488018,
+          "equivalencePH": 8.719541263730576,
+          "pH8_3volume": 24.99411133218549,
+          "pH10volume": 25.04991247796457
+        },
+        {
+          "acidM": 0.1,
+          "volumeMl": 30,
+          "titrantM": 0.1,
+          "pKa": 4.2,
+          "halfPH": 4.201637936424541,
+          "equivalencePH": 8.449746648240442,
+          "pH8_3volume": 29.99881133117609,
+          "pH10volume": 30.060012405625194
+        }
+      ]
+    }
+  },
+  "chemistry-y12-m6-l16-titration-curves": {
+    "sources": [
+      {
+        "url": "https://goldbook.iupac.org/terms/view/09042",
+        "scope": "IUPAC equivalence condition is stoichiometric, rather than an arbitrary pH or pH-bound average.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://goldbook.iupac.org/terms/view/T06387",
+        "scope": "IUPAC titration definition distinguishes the measured endpoint from the equivalence condition.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://media.iupac.org/publications/analytical_compendium/Cha06sec2.pdf",
+        "scope": "Primary IUPAC analytical recommendations distinguish observed endpoints, equivalence and suitable analytical conditions. Direct PDF retrieval was unavailable in the independent check (HTTP 403); the bounded claims were cross-checked with official indexed IUPAC definitions and authored sources, without claiming a fresh full-PDF read.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-d1-terminology",
+        "scope": "Official metrology terminology distinguishes repeatability/precision from accuracy. Concordance cannot by itself eliminate systematic error.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations",
+        "scope": "Authored textbook examples support specified monoprotic curve equilibria and indicator transition in a steep volume interval; no exact-pH bracketing requirement.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_by_David_Harvey/Analytical_Chemistry_2.1_(Harvey)/09:_Titrimetric_Methods/9.02:_AcidBase_Titrations",
+        "scope": "Author-written analytical text discusses inflection/stoichiometric offsets, endpoint method limitations and approximate half-neutralisation relationships.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh",
+        "scope": "Neutral pH is pKw/2 in the stated concentration model, approximately7 at25C; temperature and activities require qualification.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.chemguide.co.uk/physical/acidbaseeqia/phcurves.html",
+        "scope": "Authored curve explanation supports direction-dependent weak-base/conjugate-acid buffer formation after equivalence.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.metrohm.com/content/dam/metrohm/shared/documents/monographs/81085041EN.pdf",
+        "scope": "Manufacturer-authored titration monograph discusses practical endpoint detection, weak systems and aqueous levelling. A pH meter is not a guaranteed sharp endpoint.",
+        "checked": "2026-10-04"
+      }
+    ],
+    "curriculum": {
+      "sourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "syllabusSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42",
+      "publishedReferences": [
+        {
+          "id": "p1143",
+          "text": "Inquiry question: How are solutions of acids and bases analysed?",
+          "textSha256": "5ce2d6ae10799f965fa3e958349b18615665e5b85dd21d8b2210e110e6503eee"
+        },
+        {
+          "id": "p1146",
+          "text": "conduct practical investigations to analyse the concentration of an unknown acid or base by titration  ",
+          "textSha256": "b202d9eda8e8fddbf4a5bd3b418da6f704750fafd7ac369f548b2858eb5a1480"
+        },
+        {
+          "id": "p1147",
+          "text": "investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles, for example: ",
+          "textSha256": "9538d9416815c375778ece17fbec7e9a11a2131dfb89fe3bfd3c2ff5c8e00cd7"
+        },
+        {
+          "id": "p1148",
+          "text": "strong acid/strong base",
+          "textSha256": "9b65d0c0ac3052468276edd97e54a61798291dfe008bb1141395e04f355894ed"
+        },
+        {
+          "id": "p1149",
+          "text": "strong acid/weak base",
+          "textSha256": "4701625e08fd1638bd800b5cb5b54d091bd787b2b3d4ed0c41d080e5665867e1"
+        },
+        {
+          "id": "p1150",
+          "text": "weak acid/strong base (ACSCH080, ACSCH102)",
+          "textSha256": "91506b778e4c158b3e15ea66f3b2817684e08cad24cf2231dacb1a8266021da7"
+        },
+        {
+          "id": "p1151",
+          "text": "model neutralisation of strong and weak acids and bases using a variety of media ",
+          "textSha256": "744ae0d8605c58782772647fe0eba8185d0d11a879e27bf4bed529d7f457e467"
+        },
+        {
+          "id": "p1152",
+          "text": "calculate and apply the dissociation constant (Ka) and pKa (pKa = -log10 (Ka)) to determine the difference between strong and weak acids (ACSCH098)  ",
+          "textSha256": "508b975d75019d951311ab30ad8e82bb27847d1fbe82af04b8e53ae2ff1913f5"
+        }
+      ],
+      "scope": "2017 mapping retained with actual parent/child hierarchy. Year11 titration calculations are teaching examples supporting concentration work, not a separately named compulsory titration exercise in Module2. The weak/weak curve is a bounded comparison, not an additional separately prescribed example. No completed practical, full course coverage, marking entitlement or 2025 mapping is certified. Mathematical p794 text flattening in the fixture is explicitly repaired only in displayed metadata.",
+      "originalMapping": {
+        "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+        "syllabusModule": "Module 6: Acid/Base Reactions",
+        "syllabusDotPoints": [
+          "investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles"
+        ],
+        "nesaOutcomes": [
+          "CH12-13",
+          "CH11/12-1",
+          "CH11/12-2",
+          "CH11/12-3",
+          "CH11/12-5",
+          "CH11/12-7"
+        ]
+      }
+    },
+    "models": {
+      "scope": "Independent ideal concentration/charge-balance calculations, not experimental measurements or validated endpoint precision. Volumes additive, no interfering species, Kw=1e-14 at25C.",
+      "retainedPartialAmendments": [],
+      "modelExamples": [
+        {
+          "acidM": 0.1,
+          "volumeMl": 25,
+          "titrantM": 0.1,
+          "pKa": 4.74,
+          "halfPH": 4.740473640488018,
+          "equivalencePH": 8.719541263730576,
+          "pH8_3volume": 24.99411133218549,
+          "pH10volume": 25.04991247796457
+        },
+        {
+          "acidM": 0.1,
+          "volumeMl": 30,
+          "titrantM": 0.1,
+          "pKa": 4.2,
+          "halfPH": 4.201637936424541,
+          "equivalencePH": 8.449746648240442,
+          "pH8_3volume": 29.99881133117609,
+          "pH10volume": 30.060012405625194
+        }
+      ]
+    }
+  },
+  "chemistry-y12-m6-l17-titration-indicator-mastery": {
+    "sources": [
+      {
+        "url": "https://goldbook.iupac.org/terms/view/09042",
+        "scope": "IUPAC equivalence condition is stoichiometric, rather than an arbitrary pH or pH-bound average.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://goldbook.iupac.org/terms/view/T06387",
+        "scope": "IUPAC titration definition distinguishes the measured endpoint from the equivalence condition.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://media.iupac.org/publications/analytical_compendium/Cha06sec2.pdf",
+        "scope": "Primary IUPAC analytical recommendations distinguish observed endpoints, equivalence and suitable analytical conditions. Direct PDF retrieval was unavailable in the independent check (HTTP 403); the bounded claims were cross-checked with official indexed IUPAC definitions and authored sources, without claiming a fresh full-PDF read.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-d1-terminology",
+        "scope": "Official metrology terminology distinguishes repeatability/precision from accuracy. Concordance cannot by itself eliminate systematic error.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations",
+        "scope": "Authored textbook examples support specified monoprotic curve equilibria and indicator transition in a steep volume interval; no exact-pH bracketing requirement.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_by_David_Harvey/Analytical_Chemistry_2.1_(Harvey)/09:_Titrimetric_Methods/9.02:_AcidBase_Titrations",
+        "scope": "Author-written analytical text discusses inflection/stoichiometric offsets, endpoint method limitations and approximate half-neutralisation relationships.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh",
+        "scope": "Neutral pH is pKw/2 in the stated concentration model, approximately7 at25C; temperature and activities require qualification.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.chemguide.co.uk/physical/acidbaseeqia/phcurves.html",
+        "scope": "Authored curve explanation supports direction-dependent weak-base/conjugate-acid buffer formation after equivalence.",
+        "checked": "2026-10-04"
+      },
+      {
+        "url": "https://www.metrohm.com/content/dam/metrohm/shared/documents/monographs/81085041EN.pdf",
+        "scope": "Manufacturer-authored titration monograph discusses practical endpoint detection, weak systems and aqueous levelling. A pH meter is not a guaranteed sharp endpoint.",
+        "checked": "2026-10-04"
+      }
+    ],
+    "curriculum": {
+      "sourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
+      "syllabusSha256": "7c75fc806d4d8154499b0c596eda048ce4367547922bbd4058da075d9c319d42",
+      "publishedReferences": [
+        {
+          "id": "p1143",
+          "text": "Inquiry question: How are solutions of acids and bases analysed?",
+          "textSha256": "5ce2d6ae10799f965fa3e958349b18615665e5b85dd21d8b2210e110e6503eee"
+        },
+        {
+          "id": "p1146",
+          "text": "conduct practical investigations to analyse the concentration of an unknown acid or base by titration  ",
+          "textSha256": "b202d9eda8e8fddbf4a5bd3b418da6f704750fafd7ac369f548b2858eb5a1480"
+        },
+        {
+          "id": "p1147",
+          "text": "investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles, for example: ",
+          "textSha256": "9538d9416815c375778ece17fbec7e9a11a2131dfb89fe3bfd3c2ff5c8e00cd7"
+        },
+        {
+          "id": "p1148",
+          "text": "strong acid/strong base",
+          "textSha256": "9b65d0c0ac3052468276edd97e54a61798291dfe008bb1141395e04f355894ed"
+        },
+        {
+          "id": "p1149",
+          "text": "strong acid/weak base",
+          "textSha256": "4701625e08fd1638bd800b5cb5b54d091bd787b2b3d4ed0c41d080e5665867e1"
+        },
+        {
+          "id": "p1150",
+          "text": "weak acid/strong base (ACSCH080, ACSCH102)",
+          "textSha256": "91506b778e4c158b3e15ea66f3b2817684e08cad24cf2231dacb1a8266021da7"
+        },
+        {
+          "id": "p1151",
+          "text": "model neutralisation of strong and weak acids and bases using a variety of media ",
+          "textSha256": "744ae0d8605c58782772647fe0eba8185d0d11a879e27bf4bed529d7f457e467"
+        },
+        {
+          "id": "p1152",
+          "text": "calculate and apply the dissociation constant (Ka) and pKa (pKa = -log10 (Ka)) to determine the difference between strong and weak acids (ACSCH098)  ",
+          "textSha256": "508b975d75019d951311ab30ad8e82bb27847d1fbe82af04b8e53ae2ff1913f5"
+        }
+      ],
+      "scope": "2017 mapping retained with actual parent/child hierarchy. Year11 titration calculations are teaching examples supporting concentration work, not a separately named compulsory titration exercise in Module2. The weak/weak curve is a bounded comparison, not an additional separately prescribed example. No completed practical, full course coverage, marking entitlement or 2025 mapping is certified. Mathematical p794 text flattening in the fixture is explicitly repaired only in displayed metadata.",
+      "originalMapping": {
+        "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+        "syllabusModule": "Module 6: Acid/Base Reactions",
+        "syllabusDotPoints": [
+          "conduct practical investigations to analyse the concentration of an unknown acid or base by titration",
+          "investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles"
+        ],
+        "nesaOutcomes": [
+          "CH12-13",
+          "CH11/12-4",
+          "CH11/12-5",
+          "CH11/12-7"
+        ]
+      }
+    },
+    "models": {
+      "scope": "Independent ideal concentration/charge-balance calculations, not experimental measurements or validated endpoint precision. Volumes additive, no interfering species, Kw=1e-14 at25C.",
+      "retainedPartialAmendments": [],
+      "modelExamples": [
+        {
+          "acidM": 0.1,
+          "volumeMl": 25,
+          "titrantM": 0.1,
+          "pKa": 4.74,
+          "halfPH": 4.740473640488018,
+          "equivalencePH": 8.719541263730576,
+          "pH8_3volume": 24.99411133218549,
+          "pH10volume": 25.04991247796457
+        },
+        {
+          "acidM": 0.1,
+          "volumeMl": 30,
+          "titrantM": 0.1,
+          "pKa": 4.2,
+          "halfPH": 4.201637936424541,
+          "equivalencePH": 8.449746648240442,
+          "pH8_3volume": 29.99881133117609,
+          "pH10volume": 30.060012405625194
+        }
+      ]
+    }
+  }
+}

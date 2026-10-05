@@ -1,4 +1,4 @@
-// QuickCheckSlide — gold-standard re-skin (Phase 1.10, 2026-05-01).
+// QuickCheckSlide: gold-standard re-skin (Phase 1.10, 2026-05-01).
 //
 // Active recall moment: question first, explicit pause, then answer board.
 // Uses the Claude quiz reference for timing/handwritten pause treatment, but
@@ -19,6 +19,7 @@ import {Eyebrow} from './shared/Eyebrow';
 import {FONT_HAND, FONT_MONO, TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
 import {AssetImg} from './shared/AssetImg';
+import {answerTiming} from '../lesson/answer-timing.mjs';
 
 type QuickCheckSlideProps = {
 	scene: QuickCheckScene;
@@ -33,10 +34,11 @@ export const QuickCheckSlide = ({scene, lesson, sceneIndex, totalScenes}: QuickC
 	const rd = scene.revealDelays ?? {};
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
-	const answerStart = rd.answerStart ?? 360;
-	const pauseStartFrame = (rd.pausePrompt ?? 70) + 24;
-	const answerProgress = interpolate(frame, [answerStart - 24, answerStart + 24], [0, 1], clamp);
-	const pauseOpacity = interpolate(frame, [answerStart - 28, answerStart + 8], [1, 0], clamp);
+	const timing = answerTiming(rd, scene.responseHold);
+	const answerStart = timing.countdownEnd;
+	const pauseStartFrame = scene.responseHold?.startFrame ?? rd.responseHoldStart ?? ((rd.pausePrompt ?? 70) + 24);
+	const answerProgress = interpolate(frame, [timing.fadeStart, timing.fadeEnd], [0, 1], clamp);
+	const pauseOpacity = interpolate(frame, [timing.pauseFadeStart, timing.pauseFadeEnd], [1, 0], clamp);
 
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
@@ -129,6 +131,7 @@ export const QuickCheckSlide = ({scene, lesson, sceneIndex, totalScenes}: QuickC
 						startFrame={pauseStartFrame}
 						endFrame={answerStart}
 						fps={fps}
+						durationSeconds={rd.answerVisibleStart === undefined && !scene.responseHold ? COUNTDOWN_SECONDS : (answerStart - pauseStartFrame) / fps}
 						opacity={pauseOpacity}
 					/>
 					<PauseInstruction opacity={pauseOpacity} />
@@ -180,15 +183,17 @@ const PauseCountdown = ({
 	endFrame: _endFrame,
 	fps,
 	opacity,
+	durationSeconds,
 }: {
 	startFrame: number;
 	endFrame: number;
 	fps: number;
 	opacity: number;
+	durationSeconds: number;
 }) => {
 	const frame = useCurrentFrame();
 	if (frame < startFrame) return null;
-	const totalSec = COUNTDOWN_SECONDS;
+	const totalSec = durationSeconds;
 	const elapsedSec = (frame - startFrame) / fps;
 	if (elapsedSec >= totalSec) return null;
 	const remainSec = Math.max(0, Math.ceil(totalSec - elapsedSec));
@@ -280,7 +285,7 @@ const PauseInstruction = ({opacity}: {opacity: number}) => (
 					transform: 'rotate(-1deg)',
 				}}
 			>
-				take the pause — then keep watching
+				take the pause, then keep watching
 			</div>
 		</FadeUp>
 	</div>

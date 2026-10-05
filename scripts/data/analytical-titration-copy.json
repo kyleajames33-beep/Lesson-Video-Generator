@@ -1,0 +1,603 @@
+{
+  "chemistry-y11-m2-l10-volumetric-analysis-titration": {
+    "root": {
+      "subtitle": "Stoichiometry, endpoint evidence and reporting precision",
+      "lessonIntent": "Distinguish endpoint from equivalence, calculate concentrations with the stated reaction ratio and accepted titres, and qualify precision and uncertainty.",
+      "examSkill": "Use the specified titre-acceptance and reporting rules, carry guard digits, and match each mole amount with its own solution volume.",
+      "syllabusDotPoints": [
+        "conduct practical investigations to determine the concentrations of solutions and investigate the different ways in which concentrations are measured (ACSCH046, ACSCH063)",
+        "manipulate variables and solve problems to calculate concentration, mass or volume using:",
+        "c = n/V (molarity formula, mathematical layout restored from the official DOCX)",
+        "dilutions (number of moles before dilution = number of moles of sample after dilution)",
+        "conduct an investigation to make a standard solution and perform a dilution"
+      ]
+    },
+    "scenes": {
+      "hook": {
+        "heading": "A known amount helps determine an unknown",
+        "body": "A suitable titration combines a standard, reaction stoichiometry and a measured endpoint.",
+        "callout": "Method suitability and measurement uncertainty matter.",
+        "caption": "Titration is one analytical approach, not a universal claim about products or clinical measurements.",
+        "voiceover": {
+          "text": "Titration can measure the amount or concentration of a substance when it reacts sufficiently completely and selectively with a standard under a suitable method. A known standard and a measured endpoint volume provide the starting data. This does not mean that every medicine batch or blood-pH measurement uses titration. Nor is the standard concentration known without uncertainty. Today we will use supplied titration data and a balanced equation, while keeping the observed endpoint distinct from the stoichiometric condition."
+        }
+      },
+      "concept": {
+        "bullets": [
+          {
+            "text": "The standard has an established concentration and uncertainty."
+          },
+          {
+            "text": "The endpoint is an observed signal near the required stoichiometric condition."
+          },
+          {
+            "text": "Replicate agreement assesses repeatability; systematic errors can remain."
+          }
+        ],
+        "secondary": "Use the method’s stated acceptance rule. A 0.10 mL tolerance is an example, not a universal definition."
+      },
+      "definition": {
+        "bullets": [
+          {
+            "text": "Equivalence: stoichiometric proportions for the stated reaction."
+          },
+          {
+            "text": "Endpoint: observed signal used by the method."
+          },
+          {
+            "text": "Titre: delivered volume associated with that endpoint."
+          },
+          {
+            "text": "Accepted replicates meet the stated method rule; repeatability is not accuracy."
+          }
+        ],
+        "callout": "Define the signal and the acceptance rule.",
+        "caption": "Endpoint, equivalence, titre and accepted replicate results have distinct meanings.",
+        "voiceover": {
+          "text": "Equivalence is the condition at which the reacting amounts are in the stoichiometric proportions specified by the balanced equation. The endpoint is the observed signal used to stop or evaluate a titration. Their volumes may differ. The titre is the delivered burette volume associated with the endpoint. A standard has an established concentration, including its uncertainty. Concordant titres meet an acceptance rule defined for the method; agreement does not by itself show accuracy. A deliberately rough run is normally excluded from the calculation under the stated procedure, rather than silently mixed with accepted analytical measurements."
+        }
+      },
+      "formula": {
+        "body": "Known amount → balanced reaction ratio → required amount → matching solution volume.",
+        "bullets": [
+          {
+            "text": "n = cV for the known concentration and its measured volume."
+          },
+          {
+            "text": "Use the coefficients of the specified reaction and endpoint."
+          },
+          {
+            "text": "Divide the inferred amount by the volume containing that amount."
+          }
+        ],
+        "secondary": "The unknown can be in either vessel. Complete H₂SO₄ neutralisation by NaOH has acid:base = 1:2.",
+        "callout": "Match the amount to the correct solution volume.",
+        "caption": "Use the specified reaction ratio and preserve guard digits.",
+        "voiceover": {
+          "text": "Use the accepted titre data and keep guard digits. First find the moles of the substance whose concentration and volume are known. Apply the coefficients of the specified balanced reaction to obtain the moles of the other substance. Then divide by the volume containing those moles to obtain its concentration. The standard may be in the burette or in the flask, depending on the experiment. For complete neutralisation of sulfuric acid by sodium hydroxide, one mole of acid reacts with two moles of base. Other reactions or endpoints require their own equation and assumptions."
+        }
+      },
+      "worked-example-2": {
+        "question": "An accepted endpoint represents complete neutralisation of 20.00 mL of 0.2500 mol L⁻¹ NaOH by H₂SO₄ delivered from the burette. The mean acid titre is 12.50 mL. Assuming no other reacting species or endpoint bias, find c(H₂SO₄) to four significant figures.",
+        "coachNote": "2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O. Here the unknown acid is delivered, so its volume is the titre."
+      },
+      "misconception": {
+        "heading": "Ratio, repeatability and representation",
+        "body": "A reaction ratio must come from the specified equation, and repeatability does not remove systematic error.",
+        "secondary": "Use the stated data-selection rule. Scale an aliquot only when it represents a known fraction of a well-mixed preparation.",
+        "callout": "State the reaction and the sample preparation.",
+        "caption": "Check stoichiometry, accepted data and aliquot representation.",
+        "voiceover": {
+          "text": "Do not assume every titration has a one-to-one reaction ratio. Use the balanced equation for the stated endpoint. Do not treat agreement among repeat titres as proof that the result is accurate; a biased endpoint or calibration error can affect them all. Apply the defined rule for selecting accepted runs rather than cherry-picking convenient values. Finally, an aliquot represents only part of a well-mixed sample. Scale its amount to the whole preparation only when the sample preparation and dilution history justify that factor."
+        }
+      },
+      "quick-check": {
+        "question": "Assume the accepted endpoint corresponds to HCl + NaOH → NaCl + H₂O, with no interfering species or endpoint bias. 25.00 mL HCl reacts with 20.00 mL of 0.150 mol L⁻¹ NaOH. Find c(HCl) to three significant figures.",
+        "pausePrompt": "Pause and match each amount with its solution volume.",
+        "voiceover": {
+          "text": "Under the supplied one-to-one reaction and ideal endpoint assumptions, twenty-five point zero zero millilitres of hydrochloric acid reacts with twenty point zero zero millilitres of nought point one five zero molar sodium hydroxide. Find the acid concentration to three significant figures. Pause and calculate. The sodium hydroxide amount is nought point one five zero times nought point zero two zero zero zero, or three point zero zero times ten to the minus three moles. The one-to-one equation gives the same acid amount. Divide by nought point zero two five zero zero litres of acid. The concentration is nought point one two zero moles per litre to three significant figures."
+        }
+      },
+      "summary": {
+        "points": [
+          "Equivalence is stoichiometric; endpoint is observed.",
+          "Accepted titres follow the stated method rule.",
+          "Repeatability alone does not establish accuracy.",
+          "Use n = cV and the specified balanced reaction.",
+          "Match amount to volume and retain guard digits until reporting."
+        ],
+        "finalPrompt": "What does this volume belong to, and what assumptions justify the result?",
+        "caption": "Stoichiometry, endpoint evidence, correct volume and reporting precision.",
+        "voiceover": {
+          "text": "A titration uses reaction stoichiometry and an observed endpoint to infer an amount. A suitable method controls selectivity, reaction extent and endpoint error. Use the stated rule for accepted measurements, but do not equate repeatability with accuracy. Keep guard digits when averaging and applying the mole ratio. Divide by the solution volume that contains the inferred amount, which may be an aliquot or a burette-delivered volume. Scaling to a whole sample also requires the preparation and dilution history. The numerical result does not replace an uncertainty assessment or a practical investigation."
+        }
+      }
+    },
+    "response": {
+      "promptText": "Under the supplied one-to-one reaction and ideal endpoint assumptions, twenty-five point zero zero millilitres of hydrochloric acid reacts with twenty point zero zero millilitres of nought point one five zero molar sodium hydroxide. Find the acid concentration to three significant figures. Pause and calculate.",
+      "answerText": "The sodium hydroxide amount is nought point one five zero times nought point zero two zero zero zero, or three point zero zero times ten to the minus three moles. The one-to-one equation gives the same acid amount. Divide by nought point zero two five zero zero litres of acid. The concentration is nought point one two zero moles per litre to three significant figures.",
+      "minimumThinkingSeconds": 40,
+      "rationale": "Work through stoichiometry or bounded inference before feedback; measure the final pause after approved recording.",
+      "status": "unmeasured planning target, not assembled silence"
+    }
+  },
+  "chemistry-y11-m2-l17-back-calculations": {
+    "root": {
+      "subtitle": "Follow the known amount and the correct solution volume",
+      "lessonIntent": "Work backwards from accepted analytical data using reaction coefficients, guard digits and explicit sample-volume identities.",
+      "examSkill": "Match each inferred amount to the volume containing it. An unknown delivered from a burette requires its titre volume, not a universal aliquot rule.",
+      "syllabusDotPoints": [
+        "conduct practical investigations to determine the concentrations of solutions and investigate the different ways in which concentrations are measured (ACSCH046, ACSCH063)",
+        "manipulate variables and solve problems to calculate concentration, mass or volume using:",
+        "c = n/V (molarity formula, mathematical layout restored from the official DOCX)",
+        "dilutions (number of moles before dilution = number of moles of sample after dilution)",
+        "conduct an investigation to make a standard solution and perform a dilution"
+      ]
+    },
+    "scenes": {
+      "concept": {
+        "body": "Start with a known amount, cross the specified reaction ratio, then use the volume containing the inferred amount.",
+        "bullets": [
+          {
+            "text": "A known concentration and its volume, or a known mass, establishes amount."
+          },
+          {
+            "text": "Apply the coefficients for the stated reaction and endpoint."
+          },
+          {
+            "text": "The unknown may be in the flask or delivered from the burette."
+          }
+        ],
+        "secondary": "The diagram shows one common arrangement. It does not make the titre always the standard or the aliquot always the unknown.",
+        "callout": "Match the amount and volume by substance.",
+        "caption": "Use the correct solution volume, which can be an aliquot or a titre.",
+        "voiceover": {
+          "text": "Start from a substance whose amount can be established from the supplied data. That might be a standard solution of known concentration and measured volume, or a known mass used to prepare a solution. Use the specified balanced reaction to infer the amount of the other substance. Then divide by the volume containing that amount if concentration is required. In the pictured arrangement the standard is in the burette and the unknown aliquot is in the flask, but that arrangement can be reversed. Name the substances and volumes each time; never decide the denominator solely from the words titre or aliquot."
+        }
+      },
+      "definition": {
+        "bullets": [
+          {
+            "text": "Back calculation: infer an unknown from analytical data."
+          },
+          {
+            "text": "Aliquot: a measured portion of a well-mixed preparation."
+          },
+          {
+            "text": "Titre: a delivered volume associated with the endpoint."
+          },
+          {
+            "text": "Scaling: relate a representative aliquot to its known preparation."
+          }
+        ],
+        "callout": "Vessel position does not determine known versus unknown.",
+        "caption": "Aliquot and titre name measured volumes, not fixed analytical roles.",
+        "voiceover": {
+          "text": "A back calculation infers an earlier unknown quantity from measured or supplied results; it is not necessarily a back titration. An aliquot is a measured portion of a well-mixed sample, which may be known or unknown. A titre is a delivered burette volume associated with an endpoint, again whether that solution is known or unknown. Scaling converts an aliquot amount to a larger preparation only when the preparation and dilution history are known. These definitions describe measurements, not permanent assignments of a standard to one vessel."
+        }
+      },
+      "formula": {
+        "body": "Known amount → specified reaction ratio → amount/appropriate volume, with guard digits.",
+        "bullets": [
+          {
+            "text": "Use the reaction and endpoint stated in the question."
+          },
+          {
+            "text": "Keep unrounded expressions through the calculation."
+          },
+          {
+            "text": "Track aliquot fractions and any dilution separately."
+          }
+        ],
+        "secondary": "Carbonate can undergo stepwise protonation. The supplied complete-neutralisation equation fixes the 1:2 ratio used here.",
+        "callout": "Guard digits are not a substitute for an uncertainty assessment.",
+        "caption": "Reaction scope, volume identity and careful rounding keep the back calculation consistent.",
+        "voiceover": {
+          "text": "Keep guard digits rather than replacing an unrounded expression with a rounded intermediate. Find the known amount, apply the specified mole ratio and use the volume containing the inferred amount. Full neutralisation of one carbonate ion consumes two hydrogen ions, but an earlier endpoint can represent a different stoichiometric step. Therefore the reaction and endpoint must be stated. When only part of a prepared solution is used, account for its aliquot fraction and any dilution. Round the final answer to the requested convention without pretending that displayed decimal places establish experimental uncertainty."
+        }
+      },
+      "worked-example-2": {
+        "question": "An accepted endpoint represents complete neutralisation of 25.0 mL H₂SO₄ by 0.200 mol L⁻¹ NaOH. The mean base titre is 18.50 mL. Assume no interfering species or endpoint bias. Find [H₂SO₄] to three significant figures using H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O.",
+        "coachNote": "Use the supplied complete-neutralisation ratio, 1 acid : 2 base; retain guard digits."
+      },
+      "misconception": {
+        "heading": "Do not memorise the wrong denominator",
+        "body": "Use the volume containing the inferred amount, even when that volume is a titre.",
+        "secondary": "State the reaction endpoint, track sample preparation and avoid premature rounding.",
+        "mistakeTag": "Substance, amount and volume",
+        "callout": "The unknown can be in either vessel.",
+        "caption": "An unknown burette solution requires its titre volume for concentration.",
+        "voiceover": {
+          "text": "The denominator is not always the aliquot. If the unknown solution was delivered from the burette, its titre can be the correct volume. Conversely, when its inferred moles belong to a pipetted portion, divide by that aliquot volume. The reaction ratio is also conditional on the stated endpoint, particularly for substances that react in steps. Finally, keep guard digits and distinguish equality from approximation. A sensible final number can still have inconsistent working if a rounded intermediate is presented as an exact value."
+        }
+      },
+      "quick-check": {
+        "question": "Assume pure anhydrous Na₂CO₃, quantitative transfer and complete neutralisation at an accepted endpoint with no interference. Dissolve 0.530 g to 100.0 mL and titrate 25.0 mL aliquots using unknown HCl in the burette: mean titre 24.5 mL. Find [HCl] to 3 s.f. Use Na = 22.99, C = 12.011, O = 15.999 and Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂.",
+        "pausePrompt": "Pause: which solution has known amount, and which volume belongs to the unknown?",
+        "answerSteps": [
+          "M(Na₂CO₃) = 2(22.99) + 12.011 + 3(15.999) = 105.988 g mol⁻¹.",
+          "n in aliquot = (0.530/105.988) × (25.0/100.0) mol.",
+          "Complete neutralisation gives n(HCl) = 2 × that aliquot amount.",
+          "[HCl] = [2 × (0.530/105.988) × (25.0/100.0)] / 0.0245.",
+          "Unrounded [HCl] ≈ 0.102052 mol L⁻¹; report 0.102 mol L⁻¹ (3 s.f.)."
+        ],
+        "caption": "HCl is the unknown burette solution here; divide by its titre and obtain 0.102 mol L⁻¹.",
+        "voiceover": {
+          "text": "Pure anhydrous sodium carbonate, mass nought point five three zero grams, is quantitatively dissolved to one hundred point zero millilitres. A twenty-five point zero millilitre aliquot is fully neutralised by twenty-four point five millilitres of unknown hydrochloric acid from the burette. Use the supplied atomic masses and complete-neutralisation equation. Find the acid concentration to three significant figures. Pause to identify the known amount and the correct volume. The supplied atomic masses give sodium carbonate molar mass one hundred and five point nine eight eight grams per mole. Divide the mass by that value and multiply by twenty-five over one hundred for the aliquot. Complete neutralisation uses twice that amount of hydrochloric acid. Divide by the acid titre, nought point zero two four five litres, because the unknown acid was delivered from the burette. The calculated concentration is about nought point one zero two zero five two moles per litre, reported as nought point one zero two. The sodium carbonate preparation is the standard; hydrochloric acid is the unknown being standardised."
+        }
+      },
+      "summary": {
+        "points": [
+          "Begin with an established amount and the specified reaction.",
+          "Aliquot and titre can belong to either known or unknown solutions.",
+          "Divide inferred amount by the matching solution volume.",
+          "Track aliquot fractions, dilution and endpoint stoichiometry.",
+          "Retain guard digits; mark approximations and round at the end."
+        ],
+        "finalPrompt": "Label every amount and volume with its substance.",
+        "caption": "The correct denominator follows the substance, not its vessel.",
+        "voiceover": {
+          "text": "Back calculations begin with an established amount and a specified reaction. An aliquot can contain a standard, and the unknown can be delivered from a burette. Use the volume belonging to the inferred amount rather than memorising never titre or always aliquot. Track complete versus partial reaction endpoints and the preparation or dilution history. Keep unrounded expressions through the calculation, mark approximations honestly and round at the final reporting stage. Our carbonate example retains its nought point one zero two molar answer while correctly identifying the acid as the unknown."
+        }
+      }
+    },
+    "response": {
+      "promptText": "Pure anhydrous sodium carbonate, mass nought point five three zero grams, is quantitatively dissolved to one hundred point zero millilitres. A twenty-five point zero millilitre aliquot is fully neutralised by twenty-four point five millilitres of unknown hydrochloric acid from the burette. Use the supplied atomic masses and complete-neutralisation equation. Find the acid concentration to three significant figures. Pause to identify the known amount and the correct volume.",
+      "answerText": "The supplied atomic masses give sodium carbonate molar mass one hundred and five point nine eight eight grams per mole. Divide the mass by that value and multiply by twenty-five over one hundred for the aliquot. Complete neutralisation uses twice that amount of hydrochloric acid. Divide by the acid titre, nought point zero two four five litres, because the unknown acid was delivered from the burette. The calculated concentration is about nought point one zero two zero five two moles per litre, reported as nought point one zero two. The sodium carbonate preparation is the standard; hydrochloric acid is the unknown being standardised.",
+      "minimumThinkingSeconds": 50,
+      "rationale": "Work through stoichiometry or bounded inference before feedback; measure the final pause after approved recording.",
+      "status": "unmeasured planning target, not assembled silence"
+    }
+  },
+  "chemistry-y12-m6-l16-titration-curves": {
+    "root": {
+      "subtitle": "Stoichiometric equivalence and conditional curve interpretation",
+      "lessonIntent": "Interpret specified monoprotic titration models while distinguishing equivalence volume, solution pH, approximate half-equivalence relations and endpoint suitability.",
+      "examSkill": "Use supplied conditions and evidence. Do not average jump pH bounds, infer acid strength from starting pH alone or choose an indicator from equivalence pH alone.",
+      "syllabusDotPoints": [
+        "conduct practical investigations to analyse the concentration of an unknown acid or base by titration",
+        "investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles, for example:",
+        "strong acid/strong base",
+        "strong acid/weak base",
+        "weak acid/strong base (ACSCH080, ACSCH102)",
+        "model neutralisation of strong and weak acids and bases using a variety of media",
+        "calculate and apply the dissociation constant (Ka) and pKa (pKa = -log10 (Ka)) to determine the difference between strong and weak acids (ACSCH098)"
+      ]
+    },
+    "scenes": {
+      "hook": {
+        "heading": "What can a titration curve tell us?",
+        "body": "A curve gives pH-volume data. Interpreting its features requires a chemical model and stated conditions.",
+        "callout": "Start with the system, not a memorised shape.",
+        "caption": "Simple monoprotic models illustrate interpretation; complex samples need further evidence.",
+        "voiceover": {
+          "text": "A titration curve plots measured or modelled pH against added volume. For a suitable monoprotic weak acid titrated with strong base, its buffer region can help estimate a pKa. That is a conditional use of the curve, not a promise that any drug molecule yields one pKa without analysis. Multiple ionisations, concentration, activity effects and measurement quality can complicate the interpretation. We will use simple specified models and distinguish what follows from stoichiometry from what requires equilibrium data or an observed signal."
+        }
+      },
+      "concept-four-types": {
+        "heading": "Four specified model comparisons",
+        "body": "Compare ideal dilute monoprotic systems at 25°C, with the concentrations and constants stated in the model.",
+        "bullets": [
+          {
+            "text": "Strong acid/strong base: neutral equivalence, pH 7 for this 25°C model."
+          },
+          {
+            "text": "Weak acid/strong base: pre-equivalence buffer; equivalence is basic."
+          },
+          {
+            "text": "Strong acid/weak base: acidic equivalence; a buffer may form after it."
+          }
+        ],
+        "secondary": "Weak/weak endpoint resolution can be poor even with a pH meter. Concentration and equilibrium constants affect every curve.",
+        "callout": "These are model examples, not unique fingerprints.",
+        "caption": "Model curve features depend on specified concentrations, constants and temperature.",
+        "voiceover": {
+          "text": "The four diagrams compare stated model systems with matched concentrations at twenty-five degrees Celsius. Strong acid with strong base is neutral at equivalence, about pH seven under these ideal conditions. A weak acid titrated with strong base has a buffer region before equivalence and a basic conjugate-base solution at equivalence. Strong acid titrated with weak base gives an acidic conjugate-acid solution at equivalence; with added excess weak base, a buffer mixture can form afterward. A weak acid and weak base can have a poorly resolved pH change. Concentration and equilibrium constants affect the shapes, so a starting pH or apparent jump alone is not a universal identity test."
+        }
+      },
+      "concept-reading": {
+        "body": "Locate stoichiometric equivalence, then determine the solution pH there. A jump-bound average is not an equilibrium calculation.",
+        "bullets": [
+          {
+            "text": "Equivalence volume follows the reaction amounts or a justified curve analysis."
+          },
+          {
+            "text": "Read or calculate pH at that volume; do not average jump pH bounds."
+          },
+          {
+            "text": "For this monoprotic weak-acid/strong-base model, pH ≈ pKa at half-equivalence."
+          }
+        ],
+        "secondary": "The half-volume relationship is approximate and system-specific, not a rule for any curve.",
+        "callout": "Volume first; pH from data or equilibrium.",
+        "caption": "Equivalence is stoichiometric; half-equivalence pH approximates pKa only under suitable assumptions.",
+        "voiceover": {
+          "text": "First determine the equivalence volume from stoichiometry or a justified analysis of the measured curve. A steep-region inflection can help locate it for a suitable simple titration, but that is not the definition of equivalence. Once the volume is known, read the pH at that volume from reliable data or calculate it using the equilibrium model. Do not average the pH values chosen as the top and bottom of a jump. For the stated monoprotic weak acid with strong base, half of the equivalence volume gives comparable acid and conjugate-base amounts. Under the usual concentration approximation, the pH there is approximately the pKa."
+        }
+      },
+      "definition": {
+        "bullets": [
+          {
+            "text": "Equivalence: the stoichiometric reaction condition."
+          },
+          {
+            "text": "Inflection: a curve feature used by a justified endpoint-analysis method."
+          },
+          {
+            "text": "Endpoint: the observed analytical signal, with possible volume error."
+          },
+          {
+            "text": "Half-equivalence pH ≈ pKa only for a suitable weak-acid/strong-base model."
+          }
+        ],
+        "callout": "A curve feature is not the chemical definition.",
+        "caption": "Keep equivalence, endpoint, inflection and the pKa approximation distinct.",
+        "voiceover": {
+          "text": "Equivalence is a stoichiometric condition. Its volume is not defined by pH seven or by halfway between two pH labels. An inflection is a geometrical feature that may help estimate equivalence when the method and chemical system justify it. The endpoint is the observed signal used for analysis and can differ from equivalence. A buffer region contains appreciable amounts of a weak conjugate pair and resists small pH changes. For a suitable single weak acid titrated with strong base, half-neutralisation supports an approximate pKa estimate. State those assumptions whenever you use the shortcut."
+        }
+      },
+      "worked-example": {
+        "question": "Ideal 25°C model: 25.00 mL of 0.100 mol L⁻¹ monoprotic HA, pKa 4.74, titrated with 0.100 mol L⁻¹ NaOH. Supplied charge-balance data: pH 8.72 at 25.00 mL and 4.74 at 12.50 mL. Phenolphthalein pH 8.3–10.0 maps to 24.994–25.050 mL. Find Veq, interpret the pKa estimate and judge an illustrative ±0.10 mL endpoint tolerance. Why not average arbitrary jump bounds 7.5 and 11.5?",
+        "coachNote": "Supplied model data are calculations, not measured precision. Compare volumes and state the weak-acid assumptions.",
+        "steps": [
+          "Veq = caVa/cb = 25.00 mL for the stated 1:1 reaction.",
+          "At Veq, the supplied equilibrium pH is 8.72, not (7.5 + 11.5)/2 = 9.5.",
+          "Half-equivalence is 12.50 mL; pH ≈ pKa = 4.74 under the stated approximation.",
+          "Supplied transition errors range from about −0.006 to +0.050 mL.",
+          "These satisfy the illustrative ±0.10 mL criterion; a real method needs its own endpoint and uncertainty assessment."
+        ],
+        "caption": "This model gives Veq 25.00 mL and pH 8.72; jump-bound averaging gives the wrong result.",
+        "voiceover": {
+          "text": "The stated model is twenty-five point zero zero millilitres of nought point one zero zero molar monoprotic weak acid, with pKa four point seven four, titrated by the same concentration of sodium hydroxide at twenty-five degrees Celsius. Stoichiometry gives equivalence at twenty-five point zero zero millilitres. The supplied charge-balance values are pH eight point seven two there and about four point seven four at twelve point five zero millilitres. Averaging the arbitrary jump bounds seven point five and eleven point five would give nine point five, which is not the equivalence pH. The supplied phenolphthalein transition volumes lie from about twenty-four point nine nine four to twenty-five point zero five zero millilitres. They satisfy this example's plus or minus nought point one zero millilitre tolerance. That is a volume-error argument, not an automatic indicator rule."
+        }
+      },
+      "misconception": {
+        "heading": "Avoid four interpretation shortcuts",
+        "body": "Starting pH, jump midpoint and exact-pH bracketing are not universal inference rules.",
+        "secondary": "Use the specified system, temperature, concentration, reaction and endpoint error. Half-equivalence pKa is a conditional approximation.",
+        "mistakeTag": "Model conditions come first",
+        "callout": "A familiar shape is not sufficient evidence.",
+        "caption": "Avoid universal pH, midpoint and indicator shortcuts.",
+        "voiceover": {
+          "text": "A low starting pH does not prove an acid is strong without concentration and system information. Equivalence pH is not always seven, and even neutral pH depends on temperature. Do not calculate equivalence pH by averaging jump bounds: the selected bounds are not a chemical equation. Finally, pH at half the equivalence volume only approximates the pKa for a suitable single weak-acid system. Polyprotic compounds, overlapping equilibria and very dilute solutions need more care. Indicator suitability requires an acceptable endpoint volume error on the actual curve."
+        }
+      },
+      "quick-check": {
+        "question": "A stated 25°C model titrates HCl with aqueous NH₃. (a) Why is the equivalence solution acidic? (b) Can a buffer form after equivalence? (c) Does pH at half the equivalence volume give the pKa of the original strong acid?",
+        "pausePrompt": "Pause and identify the species before and after equivalence.",
+        "answerSteps": [
+          "At equivalence, NH₄⁺ is the acidic conjugate species.",
+          "After equivalence, excess NH₃ can coexist with NH₄⁺ as a buffer pair.",
+          "The original strong-acid half-equivalence shortcut is not applicable.",
+          "The sharpness and analytical suitability still depend on concentrations and conditions."
+        ],
+        "caption": "Strong-acid/weak-base titration can have an acidic equivalence solution and a post-equivalence buffer.",
+        "voiceover": {
+          "text": "In a stated twenty-five degree model, hydrochloric acid is titrated with aqueous ammonia. Why is equivalence acidic? Can a buffer form after equivalence? And does pH at half the equivalence volume give a pKa for the original strong acid? Pause and identify the species. The equivalence solution contains ammonium, the conjugate acid of ammonia, so it is acidic in this model. Further added ammonia can coexist with ammonium, forming a buffer pair after equivalence. The original acid is strong, so the weak-acid half-equivalence shortcut does not apply to it. Curve sharpness and endpoint suitability still require the actual concentrations and conditions."
+        }
+      },
+      "summary": {
+        "points": [
+          "Specify the reaction, concentrations, constants and temperature.",
+          "Stoichiometry defines equivalence; data/equilibrium determine its pH.",
+          "Do not average arbitrary jump pH bounds.",
+          "Half-equivalence pH ≈ pKa is a conditional weak-acid approximation.",
+          "Evaluate endpoint-volume error; a pH meter is not an automatic cure."
+        ],
+        "finalPrompt": "Which conclusion follows from chemistry, and which needs further data?",
+        "caption": "Conditional models replace universal curve-reading shortcuts.",
+        "voiceover": {
+          "text": "A titration curve is interpreted using its chemical system and conditions. Stoichiometry defines equivalence. Read or calculate the pH at that volume rather than averaging arbitrary jump boundaries. A neutral equivalence pH is seven only under the stated twenty-five degree ideal model. For a suitable monoprotic weak acid titrated with strong base, half-equivalence pH approximates pKa. Other systems require different reasoning. Choose an endpoint method using its volume error and the required precision; even a pH meter cannot guarantee a sharply resolved titration."
+        }
+      }
+    },
+    "response": {
+      "promptText": "In a stated twenty-five degree model, hydrochloric acid is titrated with aqueous ammonia. Why is equivalence acidic? Can a buffer form after equivalence? And does pH at half the equivalence volume give a pKa for the original strong acid? Pause and identify the species.",
+      "answerText": "The equivalence solution contains ammonium, the conjugate acid of ammonia, so it is acidic in this model. Further added ammonia can coexist with ammonium, forming a buffer pair after equivalence. The original acid is strong, so the weak-acid half-equivalence shortcut does not apply to it. Curve sharpness and endpoint suitability still require the actual concentrations and conditions.",
+      "minimumThinkingSeconds": 45,
+      "rationale": "Work through stoichiometry or bounded inference before feedback; measure the final pause after approved recording.",
+      "status": "unmeasured planning target, not assembled silence"
+    }
+  },
+  "chemistry-y12-m6-l17-titration-indicator-mastery": {
+    "root": {
+      "subtitle": "Evaluate proposed answers against the actual curve and tolerance",
+      "lessonIntent": "Reject unsupported equivalence-pH averages and indicator rules, then use specified model data to assess pKa and endpoint-volume error.",
+      "examSkill": "State what is supplied, distinguish approximations from measurements and test an endpoint against an explicit volume tolerance.",
+      "syllabusDotPoints": [
+        "conduct practical investigations to analyse the concentration of an unknown acid or base by titration",
+        "investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles, for example:",
+        "strong acid/strong base",
+        "strong acid/weak base",
+        "weak acid/strong base (ACSCH080, ACSCH102)",
+        "model neutralisation of strong and weak acids and bases using a variety of media",
+        "calculate and apply the dissociation constant (Ka) and pKa (pKa = -log10 (Ka)) to determine the difference between strong and weak acids (ACSCH098)"
+      ]
+    },
+    "scenes": {
+      "hook": {
+        "heading": "Several answers, different missing assumptions",
+        "body": "Hypothetical answers confuse equivalence pH, jump averages and indicator suitability.",
+        "callout": "Check the chemical model and the actual volume error.",
+        "caption": "Invented teaching responses illustrate reasoning errors; no student-performance statistics are claimed.",
+        "voiceover": {
+          "text": "Consider a set of hypothetical answers to a weak-acid titration question. One puts equivalence at pH seven. Another averages the top and bottom pH values of a drawn jump. A third chooses an indicator only because its transition includes a particular pH. Each answer misses information about the reaction or the curve. Instead, establish the equivalence volume, determine the solution pH there, and evaluate the observed endpoint volume against the required tolerance. These are invented teaching responses, not evidence about how often students make an error."
+        }
+      },
+      "concept-students": {
+        "heading": "Check each inference separately",
+        "body": "For this model, Veq = 25.00 mL and pH(Veq) ≈ 8.72. The pKa estimate and endpoint criterion are separate questions.",
+        "bullets": [
+          {
+            "text": "Veq follows the specified 1:1 amounts, not a pH-bound average."
+          },
+          {
+            "text": "pH at half-equivalence is approximately 4.74 for this simple weak acid."
+          },
+          {
+            "text": "Judge the indicator using transition volumes and the required tolerance."
+          }
+        ],
+        "secondary": "A basic equivalence pH alone neither proves nor excludes an indicator.",
+        "callout": "Equivalence volume, equilibrium pH and observed endpoint differ.",
+        "caption": "Correct model interpretation: Veq 25.00 mL, pH 8.72, conditional pKa estimate 4.74.",
+        "voiceover": {
+          "text": "Use the stated example: equal nought point one molar weak acid and sodium hydroxide, twenty-five millilitres of acid and pKa four point seven four at twenty-five degrees Celsius. Stoichiometry gives equivalence at twenty-five millilitres. The ideal equilibrium calculation gives pH about eight point seven two, not nine point five from averaging a selected jump range. Half-equivalence is twelve point five millilitres, where pH is approximately four point seven four. Indicator choice is a separate test: map its observed transition to volume and compare the error with the permitted tolerance. A basic equivalence pH does not automatically prove every other indicator unsuitable."
+        }
+      },
+      "concept-framework": {
+        "heading": "Six evidence checks",
+        "body": "Work from the specified chemical system to the limits of the available evidence.",
+        "bullets": [
+          {
+            "text": "State the system, reaction and known conditions."
+          },
+          {
+            "text": "Establish Veq, then obtain pH(Veq) from data or equilibrium."
+          },
+          {
+            "text": "Check pKa-model scope and evaluate endpoint-volume error."
+          }
+        ],
+        "secondary": "Some questions are underdetermined. A valid answer identifies missing information.",
+        "callout": "Use the framework to find missing evidence too.",
+        "caption": "System → conditions → Veq → pH(Veq) → pKa assumptions → endpoint error.",
+        "diagram": {
+          "type": "flow",
+          "nodes": [
+            {
+              "id": "types",
+              "label": "Specified system/reaction?"
+            },
+            {
+              "id": "conc",
+              "label": "Known conditions/data?"
+            },
+            {
+              "id": "vep",
+              "label": "Stoichiometric Veq?"
+            },
+            {
+              "id": "eppH",
+              "label": "pH there: data/model?"
+            },
+            {
+              "id": "pka",
+              "label": "pKa approximation valid?"
+            },
+            {
+              "id": "ind",
+              "label": "Endpoint volume error?"
+            }
+          ],
+          "edges": [
+            {
+              "from": "types",
+              "to": "conc"
+            },
+            {
+              "from": "conc",
+              "to": "vep"
+            },
+            {
+              "from": "vep",
+              "to": "eppH"
+            },
+            {
+              "from": "eppH",
+              "to": "pka"
+            },
+            {
+              "from": "pka",
+              "to": "ind"
+            }
+          ]
+        },
+        "voiceover": {
+          "text": "Ask six questions. What system, reaction and endpoint are specified? Which concentrations, volumes and temperature are known? What establishes the equivalence volume? Is the pH there supplied by data or calculated from an equilibrium model? Does a half-equivalence pKa approximation apply to this system? Finally, what endpoint volume would the indicator signal mark, and is its error acceptable? This is a reasoning framework, not a promise that any unfamiliar curve contains every answer. When necessary data are missing, say so rather than manufacture a pH or a unique identity."
+        }
+      },
+      "definition": {
+        "bullets": [
+          {
+            "text": "Veq: the specified stoichiometric condition."
+          },
+          {
+            "text": "pH(Veq): read from reliable data or calculated for the solution."
+          },
+          {
+            "text": "Endpoint: observed signal with a possible volume error."
+          },
+          {
+            "text": "Indicator choice: acceptable endpoint error, not mandatory exact-pH bracketing."
+          }
+        ],
+        "callout": "A pH interval is not an uncertainty statement.",
+        "caption": "Evaluate the observed endpoint separately from stoichiometric equivalence.",
+        "voiceover": {
+          "text": "The equivalence volume is fixed by reaction stoichiometry for the stated system. The equivalence pH follows from the resulting solution, including any acid-base equilibria. The endpoint volume comes from an observed signal and may differ. For a suitable monoprotic weak acid and strong base, half-equivalence pH is approximately pKa. An indicator transition need not contain the exact equivalence pH. What matters analytically is whether the method's defined endpoint volume is close enough for the required purpose. Neither a transition interval nor a schematic jump defines measurement uncertainty on its own."
+        }
+      },
+      "worked-example": {
+        "question": "Ideal 25°C model: 30.00 mL of 0.100 mol L⁻¹ monoprotic HA, pKa 4.20, titrated with 0.100 mol L⁻¹ NaOH. Supplied model values: pH(30.00 mL) = 8.45; pH(15.00 mL) ≈ 4.20. A pH 8.3–10.0 transition maps to 29.999–30.060 mL. Evaluate an illustrative ±0.10 mL endpoint tolerance. Are arbitrary jump bounds 7.6 and 11.0 sufficient to calculate equivalence pH?",
+        "coachNote": "Use the supplied model data and volume criterion, not an arithmetic mean of pH bounds.",
+        "steps": [
+          "Stoichiometry gives Veq = 30.00 mL for this 1:1 system.",
+          "Supplied pH(Veq) = 8.45, not (7.6 + 11.0)/2 = 9.3.",
+          "Half-equivalence is 15.00 mL; pH ≈ pKa under the stated weak-acid approximation.",
+          "Supplied transition errors are approximately −0.001 to +0.060 mL.",
+          "This interval satisfies the illustrative ±0.10 mL criterion; tighter criteria require reassessment."
+        ],
+        "caption": "Veq 30.00 mL and model pH 8.45; arbitrary jump bounds do not determine that pH.",
+        "voiceover": {
+          "text": "Take the stated ideal model: thirty millilitres of nought point one molar monoprotic acid, pKa four point two zero, titrated with nought point one molar sodium hydroxide at twenty-five degrees Celsius. Equivalence is thirty millilitres by stoichiometry. Supplied charge-balance data give pH about eight point four five at that volume and about four point two zero at fifteen millilitres. Averaging jump bounds seven point six and eleven point zero would incorrectly give nine point three. The supplied indicator interval maps from twenty-nine point nine nine nine to thirty point zero six zero millilitres, so its endpoints lie within the illustrative plus or minus nought point one zero millilitre tolerance. If a tighter tolerance were required, or the concentrations changed, we would reassess the endpoint method."
+        }
+      },
+      "misconception": {
+        "heading": "Separate three kinds of evidence",
+        "body": "Stoichiometry locates equivalence, equilibrium/data gives pH and the observed signal defines endpoint.",
+        "secondary": "Half-equivalence and indicator shortcuts need conditions. An indicator can have small volume error without its range containing the exact equivalence pH.",
+        "callout": "No jump-average or exact-pH-bracketing rule.",
+        "caption": "Use chemistry and endpoint-volume error instead of visual shortcuts.",
+        "voiceover": {
+          "text": "Do not default equivalence to pH seven, and do not average a drawn jump's upper and lower pH labels. Use the reaction amounts and the solution equilibrium. Do not apply half-equivalence pKa to every titration or treat it as an exact identity without assumptions. Finally, an indicator interval need not contain the exact equivalence pH. For a strong acid and strong base, a clearly defined slightly basic endpoint may be very close in volume to neutral equivalence. That possibility must be checked quantitatively against the actual curve and the specified tolerance."
+        }
+      },
+      "quick-check": {
+        "question": "For an ideal 25°C titration of 25.00 mL 0.100 mol L⁻¹ HCl with 0.100 mol L⁻¹ NaOH, Veq = 25.00 mL and pH(Veq) = 7.00. A defined endpoint at pH 9.00 occurs at 25.00500 mL. Does it satisfy an illustrative ±0.02 mL volume criterion even though its pH is not 7? What would change if a different endpoint were used?",
+        "pausePrompt": "Pause and compare volume error with the stated tolerance.",
+        "answerSteps": [
+          "Endpoint error = 25.00500 − 25.00 = +0.00500 mL.",
+          "This is smaller than the stated 0.02 mL tolerance.",
+          "Endpoint pH need not equal equivalence pH to give sufficiently small volume error.",
+          "A different observation criterion, concentration or precision requirement needs a new check."
+        ],
+        "caption": "A pH 9 endpoint can have only +0.005 mL error in this specified strong-acid model.",
+        "voiceover": {
+          "text": "A supplied ideal strong-acid and strong-base model has equivalence at twenty-five point zero zero millilitres and pH seven. A defined endpoint at pH nine occurs at twenty-five point zero zero five zero zero millilitres. Does it meet a plus or minus nought point zero two millilitre volume criterion? What changes if the endpoint criterion changes? Pause and compare the volumes. The error is plus nought point zero zero five millilitres, smaller than nought point zero two, so it meets this illustrative criterion. The endpoint pH differs from the equivalence pH, but its volume is close enough under the supplied assumptions. A different observation criterion, concentration or tolerance needs a fresh calculation. This does not establish the performance of an untested laboratory method."
+        }
+      },
+      "summary": {
+        "points": [
+          "Establish Veq using reaction amounts or justified curve analysis.",
+          "Determine pH(Veq) from data or equilibrium, not a jump average.",
+          "Half-equivalence pKa is a conditional approximation.",
+          "Use the observed endpoint-volume error and stated tolerance.",
+          "Identify missing evidence instead of manufacturing a unique answer."
+        ],
+        "finalPrompt": "Does this conclusion follow from the stated system and data?",
+        "caption": "Equivalence, pKa and indicator suitability each require their own evidence.",
+        "voiceover": {
+          "text": "Use stoichiometry to establish equivalence and obtain the pH there from appropriate data or an equilibrium model. Never average arbitrary jump bounds. Apply half-equivalence pKa only to a suitable weak-acid system and state the approximation. Evaluate an indicator or other endpoint by its volume error and the analytical tolerance; exact equivalence-pH bracketing is not a requirement. If the data are insufficient, identify the missing evidence. These model calculations support reasoning, but practical accuracy still needs method validation and an uncertainty assessment."
+        }
+      }
+    },
+    "response": {
+      "promptText": "A supplied ideal strong-acid and strong-base model has equivalence at twenty-five point zero zero millilitres and pH seven. A defined endpoint at pH nine occurs at twenty-five point zero zero five zero zero millilitres. Does it meet a plus or minus nought point zero two millilitre volume criterion? What changes if the endpoint criterion changes? Pause and compare the volumes.",
+      "answerText": "The error is plus nought point zero zero five millilitres, smaller than nought point zero two, so it meets this illustrative criterion. The endpoint pH differs from the equivalence pH, but its volume is close enough under the supplied assumptions. A different observation criterion, concentration or tolerance needs a fresh calculation. This does not establish the performance of an untested laboratory method.",
+      "minimumThinkingSeconds": 45,
+      "rationale": "Work through stoichiometry or bounded inference before feedback; measure the final pause after approved recording.",
+      "status": "unmeasured planning target, not assembled silence"
+    }
+  }
+}

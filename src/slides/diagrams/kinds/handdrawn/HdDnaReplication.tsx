@@ -1,4 +1,4 @@
-// hdDnaReplication — semi-conservative DNA replication, hand-drawn style.
+// hdDnaReplication: semi-conservative copying in a simplified hand-drawn model.
 //
 // A short stretch of double-stranded DNA (the `sequence` prop is the top
 // strand; the bottom is computed by base pairing, A–T and G–C) is unzipped by
@@ -22,9 +22,9 @@ import {useCurrentFrame} from 'remotion';
 import {TOK} from '../../../../styles/tokens';
 import {useAccent} from '../../../../styles/theme';
 import {Hand, HandSvg, PENCIL, ramp} from './shared';
+import {complementaryBase, dnaSequence, handDnaSchedule, newDnaBondAt} from '../../scientific-models.mjs';
 
 const ID = 'hddna';
-const PAIR: Record<string, string> = {A: 'T', T: 'A', G: 'C', C: 'G'};
 const X0 = 88;
 const DX = 50;
 const FORK_FROM = 40;
@@ -37,18 +37,20 @@ const clamp01 = (v: number) => Math.max(0, Math.min(1, v));
 
 export type HdDnaReplicationProps = {
 	delay?: number;
-	/** Top-strand bases, 6–12 of A/T/G/C (default ATGCGTACCTGA). */
+	/** Top-strand bases, 2–12 of A/T/G/C (default ATGCGTACCTGA). Invalid bases are rejected. */
 	sequence?: string;
 	/** Frames for the fork to cross the molecule (default 200). */
 	travelFrames?: number;
 	/** Show leading/lagging strand labels (default true). */
 	strandLabels?: boolean;
+	/** Larger letters for a full-frame teaching view. Existing card default stays 22. */
+	baseFontSize?: number;
 };
 
-export const HdDnaReplication = ({delay = 62, sequence = 'ATGCGTACCTGA', travelFrames = 200, strandLabels = true}: HdDnaReplicationProps) => {
+export const HdDnaReplication = ({delay = 62, sequence = 'ATGCGTACCTGA', travelFrames = 200, strandLabels = true, baseFontSize = 22}: HdDnaReplicationProps) => {
 	const f = useCurrentFrame() - delay;
 	const theme = useAccent();
-	const top = sequence.toUpperCase().replace(/[^ATGC]/g, '').slice(0, 12).split('');
+	const top = dnaSequence(sequence);
 	const n = top.length;
 	const xs = top.map((_, i) => X0 + i * DX + ((12 - n) * DX) / 2);
 
@@ -61,13 +63,8 @@ export const HdDnaReplication = ({delay = 62, sequence = 'ATGCGTACCTGA', travelF
 	const yBot = (x: number) => lerp(Y.bot, Y.botDown, u(x));
 
 	// When each new nucleotide arrives (frames relative to delay).
-	const leadAt = xs.map((x) => tPass(x + UNZIP + 12));
-	const lagAt = xs.map((_, i) => {
-		const k = Math.floor(i / 3);
-		const last = Math.min(n - 1, 3 * k + 2);
-		return tPass(xs[last] + UNZIP + 12) + 4 + (last - i) * 6; // built backwards, away from the fork
-	});
-	const endAt = Math.max(...leadAt, ...lagAt) + 10;
+	const schedule = handDnaSchedule(xs, travelFrames);
+	const leadAt = schedule.leading, lagAt = schedule.lagging, endAt = schedule.end;
 
 	const draw = ramp(f, 0, 20);
 	const pop = (t: number) => ramp(f, t, t + 6);
@@ -80,20 +77,23 @@ export const HdDnaReplication = ({delay = 62, sequence = 'ATGCGTACCTGA', travelF
 	const xR = xs[n - 1] + 34;
 
 	// new-strand backbone segments between neighbouring nucleotides that exist
-	const newSegs = (at: number[], y: number) =>
+	const newSegs = (at: number[], y: number, lagging = false) =>
 		xs.slice(0, -1).map((x, i) => {
-			const o = Math.min(pop(at[i]), pop(at[i + 1]));
+			const boundary = lagging && Math.floor(i / 3) !== Math.floor((i + 1) / 3);
+			const joinAt = boundary ? schedule.joined : schedule.processing;
+			const o = Math.min(pop(at[i]), pop(at[i + 1]), pop(newDnaBondAt(at, i, joinAt, lagging)));
 			return o > 0 ? <line key={i} x1={x} y1={y} x2={x + DX} y2={y} stroke={theme.accent} strokeWidth={6} strokeLinecap="round" opacity={o} /> : null;
 		});
 
 	const letter = (x: number, y: number, b: string, color: string, o = 1) => (
-		<Hand x={x + 14} y={y + 8} size={22} color={color} anchor="start" o={o}>
+		<Hand x={x + 14} y={y + 8} size={baseFontSize} color={color} anchor="start" o={o}>
 			{b}
 		</Hand>
 	);
 
 	return (
 		<HandSvg id={ID}>
+			<Hand x={380} y={35} size={20} color={PENCIL.inkSoft}>Simplified copying model; error control omitted</Hand>
 			{/* original strands (graphite) */}
 			<g fill="none" stroke={PENCIL.ink} strokeWidth={6} strokeLinecap="round" pathLength={1}>
 				<path d={backbone(yTop, xL, xR)} pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - draw} />
@@ -111,19 +111,19 @@ export const HdDnaReplication = ({delay = 62, sequence = 'ATGCGTACCTGA', travelF
 						<line x1={x} y1={yt} x2={x} y2={yt + tl} stroke={PENCIL.ink} strokeWidth={3.4} strokeLinecap="round" />
 						{letter(x, yt + tl / 2 - 2, top[i], PENCIL.ink)}
 						<line x1={x} y1={yb} x2={x} y2={yb - tl} stroke={PENCIL.ink} strokeWidth={3.4} strokeLinecap="round" />
-						{letter(x, yb - tl / 2 + 2, PAIR[top[i]], PENCIL.ink)}
+						{letter(x, yb - tl / 2 + 2, complementaryBase(top[i]), PENCIL.ink)}
 					</g>
 				);
 			})}
 
 			{/* new nucleotides: leading (pairs with top template) + lagging (pairs with bottom) */}
 			{newSegs(leadAt, Y.topNew)}
-			{newSegs(lagAt, Y.botNew)}
+			{newSegs(lagAt, Y.botNew, true)}
 			{xs.map((x, i) => (
 				<g key={i}>
 					<g opacity={pop(leadAt[i])}>
 						<line x1={x} y1={Y.topNew} x2={x} y2={Y.topNew - 40} stroke={theme.accent} strokeWidth={3.4} strokeLinecap="round" />
-						{letter(x, Y.topNew - 22, PAIR[top[i]], theme.accent)}
+						{letter(x, Y.topNew - 22, complementaryBase(top[i]), theme.accent)}
 					</g>
 					<g opacity={pop(lagAt[i])}>
 						<line x1={x} y1={Y.botNew} x2={x} y2={Y.botNew + 40} stroke={theme.accent} strokeWidth={3.4} strokeLinecap="round" />
@@ -162,6 +162,9 @@ export const HdDnaReplication = ({delay = 62, sequence = 'ATGCGTACCTGA', travelF
 			)}
 
 			{/* legend + caption */}
+			<Hand x={380} y={74} size={20} color={PENCIL.inkSoft} o={ramp(f, schedule.processing, schedule.processing + 6) * (1 - ramp(f, schedule.joined + 12, schedule.joined + 18))}>
+				primer replacement, then nick sealing (steps simplified)
+			</Hand>
 			<g opacity={ramp(f, 10, 20)}>
 				<line x1={140} y1={462} x2={176} y2={462} stroke={PENCIL.ink} strokeWidth={6} strokeLinecap="round" />
 				<Hand x={186} y={469} size={24} anchor="start">original strand</Hand>

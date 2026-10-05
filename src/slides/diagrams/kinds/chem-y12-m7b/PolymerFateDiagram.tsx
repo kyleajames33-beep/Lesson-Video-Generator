@@ -26,6 +26,7 @@ import {DioramaDefs, DioramaPlinth, ELEMENT_COLORS, idleBob} from '../../diorama
 import {Chip, ELEMENTS, Mol, Title, clamp, fadeAt, shade} from './shared';
 
 export type PolymerFateProps = {
+	reviewedPolymer?: boolean;
 	mode?: 'thermo' | 'hydrolysis' | 'environment';
 	title?: string;
 	beats?: {
@@ -131,7 +132,8 @@ const Sun = ({x, y, frame}: {x: number; y: number; frame: number}) => (
 	</g>
 );
 
-export const PolymerFateDiagram = ({mode = 'thermo', title, beats = {}, delay = 62}: PolymerFateProps) => {
+export const PolymerFateDiagram = ({mode = 'thermo', title, beats = {}, delay = 62, reviewedPolymer = false}: PolymerFateProps) => {
+	if (reviewedPolymer && mode !== 'thermo') throw new Error('Reviewed polymer fate is limited to thermo');
 	const frame = useCurrentFrame() - delay;
 	const theme = useAccent();
 	const b = {
@@ -140,7 +142,7 @@ export const PolymerFateDiagram = ({mode = 'thermo', title, beats = {}, delay = 
 		thermoplastic: 1354, thermoset: 1450,
 		...beats,
 	};
-	const titles = {thermo: 'Held by IMFs only: melt, remould, persist', hydrolysis: 'Water can cut a link, not a C–C backbone', environment: 'The backbone decides the fate'};
+	const titles = {thermo: reviewedPolymer ? 'Polyethylene: processing and persistence' : 'Held by IMFs only: melt, remould, persist', hydrolysis: 'Water can cut a link, not a C–C backbone', environment: 'The backbone decides the fate'};
 
 	// ── helpers for the addition side (used by all three modes) ──
 	const enzymeRun = (at: number, tx: number, ty: number) => {
@@ -182,26 +184,26 @@ export const PolymerFateDiagram = ({mode = 'thermo', title, beats = {}, delay = 
 						})}
 					</g>
 					<g opacity={fadeAt(frame, b.imf, 12) * (1 - fadeAt(frame, b.heat, 10))}>
-						<Chip x={cx} y={82} text="chains held only by intermolecular forces" color={theme.accent} size={18} />
+						<Chip x={cx} y={82} text={reviewedPolymer ? 'uncrosslinked chains: interactions and entanglement' : 'chains held only by intermolecular forces'} color={theme.accent} size={18} />
 					</g>
 					<g opacity={fadeAt(frame, b.heat, 10) * (1 - fadeAt(frame, b.cool, 10))}>
 						<Chip x={cx} y={82} text="heat: forces loosen, it softens and remoulds" color={TOK.amberInk} size={18} />
 					</g>
 					<g opacity={fadeAt(frame, b.cool, 10) * (1 - fadeAt(frame, b.enzyme - 10, 10))}>
-						<Chip x={cx} y={82} text={frame >= b.recycle ? 'thermoplastic: often remouldable' : 'cool: forces re-form, it hardens'} color={theme.accent} size={18} />
+						<Chip x={cx} y={82} text={frame >= b.recycle ? (reviewedPolymer ? 'reprocessing depends on material and system' : 'thermoplastic: melt and recycle ✓') : (reviewedPolymer ? 'cool: chain mobility decreases' : 'cool: forces re-form, it hardens')} color={theme.accent} size={18} />
 					</g>
 					{/* enzyme bounces off */}
 					<g opacity={en.on * (1 - fadeAt(frame, b.uv, 12))}>
 						<Enzyme x={en.x} y={en.y} color="#9bc27a" />
 						{en.hit && <Stop x={cx + 64} y={180} />}
-						<Chip x={cx} y={82} text="ordinary biodegradation is very slow" color={STOP} size={18} />
+						<Chip x={cx} y={82} text={reviewedPolymer ? 'conventional PE: not readily biodegradable' : 'no microbe enzyme can cut the C–C backbone'} color={STOP} size={18} />
 					</g>
 					<g opacity={fadeAt(frame, b.uv, 12)}>
 						<Sun x={cx + 250} y={110} frame={frame} />
 						<Chip x={cx - 40} y={82} text={frame >= b.micro ? 'smaller and smaller: microplastics' : 'UV and abrasion: it fragments'} color={TOK.amberInk} size={18} />
 					</g>
 					<text x={cx} y={H - 26} textAnchor="middle" fill={TOK.ink} fontSize={22} fontWeight={800} opacity={fadeAt(frame, b.verdict, 14)}>
-						Recyclable, yes. Biodegradable, no.
+						{reviewedPolymer ? 'Fragmentation is not complete biodegradation' : 'Recyclable, yes. Biodegradable, no.'}
 					</text>
 				</g>
 			);
@@ -284,7 +286,7 @@ export const PolymerFateDiagram = ({mode = 'thermo', title, beats = {}, delay = 
 							<Enzyme x={en.x} y={en.y} color="#9bc27a" />
 							{en.hit && <Stop x={L + 30} y={200} />}
 						</g>
-						<text x={L} y={420} textAnchor="middle" fill={STOP} fontSize={17} fontWeight={800} opacity={fadeAt(frame, b.enzyme + 40, 12) * (1 - fadeAt(frame, b.uv, 10))}>C–C backbone usually persists</text>
+						<text x={L} y={420} textAnchor="middle" fill={STOP} fontSize={17} fontWeight={800} opacity={fadeAt(frame, b.enzyme + 40, 12) * (1 - fadeAt(frame, b.uv, 10))}>microbes have no enzyme for C–C</text>
 						<g opacity={fadeAt(frame, b.uv, 12)}>
 							<Sun x={L + 140} y={170} frame={frame} />
 							<text x={L} y={420} textAnchor="middle" fill={TOK.amberInk} fontSize={17} fontWeight={800}>{frame >= b.micro ? 'fragments → microplastics' : 'UV + abrasion: fragments'}</text>
@@ -297,10 +299,10 @@ export const PolymerFateDiagram = ({mode = 'thermo', title, beats = {}, delay = 
 						</g>
 						<text x={R} y={420} textAnchor="middle" fill={theme.accent} fontSize={17} fontWeight={800} opacity={fadeAt(frame, b.water + 110, 12)}>links hydrolyse: it breaks down</text>
 						<g opacity={fadeAt(frame, b.thermoplastic, 12)}>
-							<Chip x={200} y={470} text="thermoplastic: often remouldable" color={theme.accent} size={17} />
+							<Chip x={200} y={470} text="thermoplastic: melt and recycle ✓" color={theme.accent} size={17} />
 						</g>
 						<g opacity={fadeAt(frame, b.thermoset, 12)}>
-							<Chip x={560} y={470} text="thermoset: cannot remelt" color={STOP} size={17} />
+							<Chip x={560} y={470} text="cross-linked thermoset: can’t ✗" color={STOP} size={17} />
 						</g>
 					</>
 				)}

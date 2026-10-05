@@ -1,4 +1,4 @@
-// DnaDiagram — a DNA ladder model on a stone ledge, in three teaching modes.
+// DnaDiagram: a DNA ladder model on a stone ledge, in three teaching modes.
 // The sequence is a prop; every partner base is computed (A–T, C–G), so the
 // pairing can never be drawn wrong.
 //
@@ -214,6 +214,7 @@ const ReplicationMode = ({frame, fps, theme, top, bot, n, xs, at}: Common) => {
 	return (
 		<g>
 			{/* old strands */}
+			<text x={380} y={20} textAnchor="middle" fill={TOK.inkDim} fontSize={16} fontWeight={800}>Strand-inheritance model; enzyme steps omitted</text>
 			<g opacity={fadeAt(frame, 0, 14)}>
 				<Strand xs={xs} y={yt} dir={1} bases={top} color="old" baseColor={white} frame={frame} />
 				<Strand xs={xs} y={yb} dir={-1} bases={bot} color="old" baseColor={white} frame={frame} />

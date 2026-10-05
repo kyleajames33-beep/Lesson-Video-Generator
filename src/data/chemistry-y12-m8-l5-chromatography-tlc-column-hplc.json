@@ -8,15 +8,11 @@
   "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
   "syllabusModule": "Module 8: Applying Chemical Ideas",
   "syllabusDotPoints": [
-    "Module 8: quantitative environmental analysis context; does not replace precipitation titrations. (Audit mapping paraphrase, not an official quotation.)"
+    "conduct investigations and/or process data involving chromatographic techniques to separate and identify the components of a mixture",
+    "calculate Rf values and interpret chromatographic data to identify components and assess purity"
   ],
   "moduleLessonCount": 16,
-  "nesaOutcomes": [
-    "CH12-15",
-    "CH11/12-2",
-    "CH11/12-5",
-    "CH11/12-7"
-  ],
+  "nesaOutcomes": ["CH12-15", "CH11/12-2", "CH11/12-5", "CH11/12-7"],
   "inquiryQuestion": "How are the ions present in the environment identified and measured?",
   "lessonIntent": "Students can explain separation by differential affinity, calculate and interpret Rf, choose between TLC, column and HPLC, and read a chromatogram for identity and purity.",
   "examSkill": "Compute Rf as compound distance over solvent-front distance, link a low Rf to strong stationary-phase affinity, and read extra spots or peaks as evidence of a mixture.",
@@ -54,15 +50,9 @@
       "heading": "The principle of chromatography",
       "body": "Components separate because they split differently between a stationary phase and a moving mobile phase.",
       "bullets": [
-        {
-          "text": "Stronger attraction to the stationary phase means slower movement."
-        },
-        {
-          "text": "Greater affinity for the mobile phase means faster movement."
-        },
-        {
-          "text": "Separation reflects real properties: polarity and intermolecular forces."
-        }
+        {"text": "Stronger attraction to the stationary phase means slower movement."},
+        {"text": "Greater affinity for the mobile phase means faster movement."},
+        {"text": "Separation reflects real properties: polarity and intermolecular forces."}
       ],
       "secondary": "Separation isn't random. A component's speed encodes its chemistry, so different substances spread out along the path.",
       "callout": "Differential affinity for two phases does the sorting.",
@@ -74,18 +64,7 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Separation",
-        "props": {
-          "mode": "principle",
-          "beats": [
-            110,
-            190,
-            250,
-            300,
-            470,
-            570,
-            740
-          ]
-        }
+        "props": {"mode": "principle", "beats": [110, 190, 250, 300, 470, 570, 740]}
       }
     },
     {
@@ -94,15 +73,9 @@
       "heading": "TLC and the Rf value",
       "body": "Spot the mixture on a plate, let solvent rise, and measure how far each component travels.",
       "bullets": [
-        {
-          "text": "Stationary phase is silica on a plate; the solvent rises by capillary action."
-        },
-        {
-          "text": "Rf = distance the compound travels ÷ distance the solvent front travels."
-        },
-        {
-          "text": "Rf has no units and always sits between 0 and 1."
-        }
+        {"text": "Stationary phase is silica on a plate; the solvent rises by capillary action."},
+        {"text": "Rf = distance the compound travels ÷ distance the solvent front travels."},
+        {"text": "Rf has no units and always sits between 0 and 1."}
       ],
       "secondary": "More than one spot from a supposedly pure sample is evidence of more than one component. A polar compound on silica gives a low Rf.",
       "callout": "Compound distance on top, so Rf stays under 1.",
@@ -114,21 +87,7 @@
       "diagram": {
         "type": "diorama",
         "kind": "chem12m8Separation",
-        "props": {
-          "mode": "tlc",
-          "beats": [
-            20,
-            130,
-            215,
-            280,
-            430,
-            450,
-            545,
-            575,
-            750,
-            850
-          ]
-        }
+        "props": {"mode": "tlc", "beats": [20, 130, 215, 280, 430, 450, 545, 575, 750, 850]}
       }
     },
     {
@@ -138,39 +97,17 @@
       "body": "Same principle, three scales. Quick check, preparative collection, or high-precision analysis.",
       "diagram": {
         "type": "table",
-        "headers": [
-          "Technique",
-          "Main use",
-          "Sensitivity"
-        ],
+        "headers": ["Technique", "Main use", "Sensitivity"],
         "rows": [
-          [
-            "TLC",
-            "Check purity fast",
-            "Moderate"
-          ],
-          [
-            "Column",
-            "Collect fractions",
-            "Moderate"
-          ],
-          [
-            "HPLC",
-            "Precise analysis",
-            "High"
-          ]
+          ["TLC", "Check purity fast", "Moderate"],
+          ["Column", "Collect fractions", "Moderate"],
+          ["HPLC", "Precise analysis", "High"]
         ]
       },
       "bullets": [
-        {
-          "text": "TLC: a fast, small-scale purity and identity check."
-        },
-        {
-          "text": "Column: preparative, for physically collecting separated fractions."
-        },
-        {
-          "text": "HPLC: fast, automated, high-sensitivity quantitative analysis."
-        }
+        {"text": "TLC: a fast, small-scale purity and identity check."},
+        {"text": "Column: preparative, for physically collecting separated fractions."},
+        {"text": "HPLC: fast, automated, high-sensitivity quantitative analysis."}
       ],
       "secondary": "HPLC drives the mobile phase through the column under high pressure, giving rapid, highly reproducible separations with instrument detection.",
       "callout": "Pick the scale the question actually needs.",
@@ -205,15 +142,9 @@
       "heading": "Reading an HPLC chromatogram",
       "body": "Each peak is a component leaving the column. Its retention time and the number of peaks tell the story.",
       "bullets": [
-        {
-          "text": "Retention time is how long a component takes to reach the detector."
-        },
-        {
-          "text": "A matching retention time, under identical conditions, supports identity."
-        },
-        {
-          "text": "One clean peak suggests purity; extra peaks mean a mixture or impurity."
-        }
+        {"text": "Retention time is how long a component takes to reach the detector."},
+        {"text": "A matching retention time, under identical conditions, supports identity."},
+        {"text": "One clean peak suggests purity; extra peaks mean a mixture or impurity."}
       ],
       "secondary": "A matching retention time is strong evidence, but not absolute proof on its own, and only when the operating conditions are identical.",
       "callout": "Same conditions, or the retention time means nothing.",
@@ -234,40 +165,16 @@
           "yMax": 10.4,
           "series": [
             {
-              "gen": {
-                "type": "peaks",
-                "base": 6,
-                "from": 0,
-                "to": 8,
-                "peaks": [
-                  {
-                    "t": 4.2,
-                    "h": 3.4,
-                    "w": 0.13
-                  }
-                ]
-              },
+              "gen": {"type": "peaks", "base": 6, "from": 0, "to": 8, "peaks": [{"t": 4.2, "h": 3.4, "w": 0.13}]},
               "color": "mute",
               "width": 4,
               "beat": 30,
               "dur": 170,
               "label": "standard",
-              "labelAt": [
-                0.25,
-                6.45
-              ]
+              "labelAt": [0.25, 6.45]
             },
             {
-              "points": [
-                [
-                  0.05,
-                  5.45
-                ],
-                [
-                  4.2,
-                  5.45
-                ]
-              ],
+              "points": [[0.05, 5.45], [4.2, 5.45]],
               "color": "accent",
               "width": 3,
               "dash": "8 6",
@@ -280,28 +187,14 @@
                 "base": 0.6,
                 "from": 0,
                 "to": 5.2,
-                "peaks": [
-                  {
-                    "t": 4.2,
-                    "h": 3.6,
-                    "w": 0.13
-                  },
-                  {
-                    "t": 6.1,
-                    "h": 0.9,
-                    "w": 0.11
-                  }
-                ]
+                "peaks": [{"t": 4.2, "h": 3.6, "w": 0.13}, {"t": 6.1, "h": 0.9, "w": 0.11}]
               },
               "color": "accent",
               "width": 4.5,
               "beat": 395,
               "dur": 110,
               "label": "your sample",
-              "labelAt": [
-                0.25,
-                1.05
-              ]
+              "labelAt": [0.25, 1.05]
             },
             {
               "gen": {
@@ -309,18 +202,7 @@
                 "base": 0.6,
                 "from": 5.2,
                 "to": 8,
-                "peaks": [
-                  {
-                    "t": 4.2,
-                    "h": 3.6,
-                    "w": 0.13
-                  },
-                  {
-                    "t": 6.1,
-                    "h": 0.9,
-                    "w": 0.11
-                  }
-                ]
+                "peaks": [{"t": 4.2, "h": 3.6, "w": 0.13}, {"t": 6.1, "h": 0.9, "w": 0.11}]
               },
               "color": "accent",
               "width": 4.5,
@@ -329,15 +211,7 @@
             }
           ],
           "penSeries": 3,
-          "refs": [
-            {
-              "axis": "x",
-              "value": 4.2,
-              "label": "same retention time",
-              "beat": 470,
-              "labelPos": 10.1
-            }
-          ],
+          "refs": [{"axis": "x", "value": 4.2, "label": "same retention time", "beat": 470, "labelPos": 10.1}],
           "notes": [
             {
               "x": 4.45,
@@ -441,6 +315,5 @@
         "text": "Let's lock it in. Five things to take away. First, chromatography separates a mixture by differential affinity for the stationary and mobile phases. Second, Rf is the compound distance over the solvent front distance, always between zero and one. Third, a low Rf means the compound is strongly held by the stationary phase. Fourth, TLC checks purity, column chromatography collects fractions, and HPLC gives precise quantitative data. And fifth, extra spots or peaks are evidence of a mixture or an impurity, never assume purity from one signal. Compound over solvent, and count the peaks. See you next lesson."
       }
     }
-  ],
-  "productionNotes": "2017 syllabus mapping checked: Module 8: quantitative environmental analysis context; does not replace precipitation titrations."
+  ]
 }

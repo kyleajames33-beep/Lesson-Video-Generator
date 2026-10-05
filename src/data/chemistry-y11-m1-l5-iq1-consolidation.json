@@ -12,11 +12,7 @@
     "classify the elements based on their properties and position in the periodic table through their:"
   ],
   "moduleLessonCount": 20,
-  "nesaOutcomes": [
-    "CH11-8",
-    "CH11/12-4",
-    "CH11/12-7"
-  ],
+  "nesaOutcomes": ["CH11-8", "CH11/12-4", "CH11/12-7"],
   "inquiryQuestion": "How do the properties of substances help us to classify and separate them?",
   "lessonIntent": "Students can perform a gravimetric analysis calculation via the mole ratio and select the right separation technique for any mixture.",
   "examSkill": "Convert precipitate mass to ion mass using n = m ÷ M, the mole ratio, then m = n × M; and justify a chosen separation technique.",
@@ -56,56 +52,23 @@
       "diagram": {
         "type": "flow",
         "nodes": [
-          {
-            "id": "react",
-            "label": "Add excess reagent"
-          },
-          {
-            "id": "ppt",
-            "label": "Precipitate forms"
-          },
-          {
-            "id": "filt",
-            "label": "Filter (ashless)"
-          },
-          {
-            "id": "wash",
-            "label": "Wash + dry to constant mass"
-          },
-          {
-            "id": "weigh",
-            "label": "Weigh + calculate"
-          }
+          {"id": "react", "label": "Add excess reagent"},
+          {"id": "ppt", "label": "Precipitate forms"},
+          {"id": "filt", "label": "Filter (ashless)"},
+          {"id": "wash", "label": "Wash + dry to constant mass"},
+          {"id": "weigh", "label": "Weigh + calculate"}
         ],
         "edges": [
-          {
-            "from": "react",
-            "to": "ppt"
-          },
-          {
-            "from": "ppt",
-            "to": "filt"
-          },
-          {
-            "from": "filt",
-            "to": "wash"
-          },
-          {
-            "from": "wash",
-            "to": "weigh"
-          }
+          {"from": "react", "to": "ppt"},
+          {"from": "ppt", "to": "filt"},
+          {"from": "filt", "to": "wash"},
+          {"from": "wash", "to": "weigh"}
         ]
       },
       "bullets": [
-        {
-          "text": "Add excess reagent so all of the target ion precipitates."
-        },
-        {
-          "text": "Filter with ashless paper, then wash off soluble impurities."
-        },
-        {
-          "text": "Dry to constant mass, weigh, then calculate with stoichiometry."
-        }
+        {"text": "Add excess reagent so all of the target ion precipitates."},
+        {"text": "Filter with ashless paper, then wash off soluble impurities."},
+        {"text": "Dry to constant mass, weigh, then calculate with stoichiometry."}
       ],
       "secondary": "Each step exists to protect the mass. Excess reagent prevents underestimation; washing and drying prevent inflated mass.",
       "callout": "Form it, filter it, dry it, weigh it, calculate.",
@@ -120,18 +83,10 @@
       "type": "definition",
       "heading": "The decision tree, all six techniques",
       "bullets": [
-        {
-          "text": "Undissolved solid → filtration (particle size)."
-        },
-        {
-          "text": "Dissolved solid → crystallisation (solubility falls on cooling)."
-        },
-        {
-          "text": "Boiling point: large gap → simple distillation; close → fractional."
-        },
-        {
-          "text": "Phase affinity → chromatography; quantify an ion → gravimetric analysis."
-        }
+        {"text": "Undissolved solid → filtration (particle size)."},
+        {"text": "Dissolved solid → crystallisation (solubility falls on cooling)."},
+        {"text": "Boiling point: large gap → simple distillation; close → fractional."},
+        {"text": "Phase affinity → chromatography; quantify an ion → gravimetric analysis."}
       ],
       "callout": "Pick the technique that targets the property that differs.",
       "durationInFrames": 1020,
@@ -146,15 +101,9 @@
       "heading": "The gravimetric calculation route",
       "body": "Never go straight from precipitate mass to ion mass. Go through moles and the mole ratio.",
       "bullets": [
-        {
-          "text": "1. Moles of precipitate: n = m ÷ M."
-        },
-        {
-          "text": "2. Apply the mole ratio from the balanced equation."
-        },
-        {
-          "text": "3. Mass of the target ion: m = n × M of the ion."
-        }
+        {"text": "1. Moles of precipitate: n = m ÷ M."},
+        {"text": "2. Apply the mole ratio from the balanced equation."},
+        {"text": "3. Mass of the target ion: m = n × M of the ion."}
       ],
       "secondary": "The mole ratio is the bridge. Skipping it is the single most common way students lose marks here.",
       "callout": "Mass → moles → ratio → moles → mass.",
@@ -296,18 +245,19 @@
       "id": "quick-check",
       "type": "quickCheck",
       "heading": "Quick check",
-      "question": "Suggest how to recover sand, sugar and iodine separately from a mixture. Distinguish identifying spots from collecting separated substances.",
+      "question": "A sample contains sand, dissolved sugar, and dissolved iodine. Propose a sequence to separate all three and justify each step.",
       "pausePrompt": "Pause and work it through.",
       "answerSteps": [
-        "Filter, wash and dry the insoluble sand.",
-        "Use a suitable preparative separation method for the dissolved components.",
-        "Collect fractions and remove their solvents appropriately.",
-        "Analytical paper chromatography alone does not recover bulk pure components."
+        "Sand is undissolved → filter first; sand is the residue",
+        "The filtrate now holds dissolved sugar and iodine",
+        "Chromatography (or distillation) separates iodine and sugar by phase affinity",
+        "Crystallise the remaining solution to recover the sugar from water",
+        "Answer: filter → chromatography/distil → crystallise ✓"
       ],
       "durationInFrames": 1170,
-      "caption": "Specify recovery, not only separation on an analytical chromatogram.",
+      "caption": "Filter sand, separate iodine and sugar, then crystallise the sugar.",
       "voiceover": {
-        "text": "A mixture contains insoluble sand, dissolved sugar and a small amount of dissolved iodine. Suggest a separation sequence. Filter and wash the sand first. To separate the dissolved substances, use a suitable preparative chromatography method and collect the iodine and sugar fractions, then remove their solvents under appropriate conditions. A paper chromatogram that merely shows separated spots is not recovery of bulk pure substances. Solvent extraction could be another method if appropriate solvents and distribution information are supplied."
+        "text": "Quick check, using the whole decision tree. A water sample contains sand, dissolved sugar, and a small amount of dissolved iodine. Propose a sequence to separate all three, and justify each step. Pause and work it through. Right, let's check it. Step one, the sand is undissolved, so filter first, and the sand stays on the paper as the residue. Step two, the filtrate now carries the dissolved sugar and iodine. Step three, those two differ in how they interact with a solvent, so chromatography, or distillation, separates them by phase affinity. Step four, finally you crystallise the remaining solution to recover the sugar from the water. So it's filter, then separate the dissolved pair, then crystallise. The golden rule holds, always remove the insoluble part first."
       }
     },
     {

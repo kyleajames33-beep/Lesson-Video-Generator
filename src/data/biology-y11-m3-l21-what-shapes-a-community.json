@@ -53,22 +53,74 @@
       "body": "Ecologists describe a community with three measures, and every factor can change one or all of them.",
       "bullets": [
         {
-          "text": "Abundance: number of individuals of a species."
+          "text": "Abundance: how many individuals of a species are present."
         },
         {
-          "text": "Distribution: spatial pattern."
+          "text": "Distribution: where the species is found, its spatial pattern."
         },
         {
-          "text": "Species diversity: richness and evenness of relative abundances."
+          "text": "Diversity: includes species richness and how evenly individuals are distributed among species (evenness)."
         }
       ],
-      "secondary": "Low water can reduce a plant's abundance, restrict it to wetter patches, and lower the whole ecosystem's diversity.",
-      "callout": "One factor can move all three measures.",
-      "caption": "Abundance, distribution and diversity.",
+      "secondary": "Species richness is the number of species. Diversity is broader because communities with the same richness can differ greatly in relative abundance.",
+      "callout": "Richness counts species; diversity also considers relative abundance/evenness.",
+      "caption": "Abundance, distribution and diversity; diversity includes richness and evenness.",
       "voiceover": {
-        "text": "Ecologists describe a community with three measures. Abundance is how many, the number of individuals of a species present. Distribution is where, the spatial pattern of where the species is found. And species diversity includes richness, the number of species, and evenness, how evenly individuals are distributed among them. A single factor can move all three. Take low water availability. It can reduce a plant's abundance, restrict its distribution to the wetter patches, and lower the overall diversity of the ecosystem. And the factors come in two groups, abiotic, like temperature, water, light and salinity, and biotic, like competition, predation and disease."
+        "text": "Ecologists describe communities with related measures. Abundance is how many individuals of a species are present. Distribution is where that species occurs. Species richness is the number of species present. Diversity is broader: it considers richness and the relative abundance, or evenness, of those species. Two communities can therefore have the same number of species but different diversity if one is dominated by a single species. Abiotic and biotic factors can change all of these patterns."
       },
-      "durationInFrames": 1402
+      "diagram": {
+        "type": "diorama",
+        "kind": "bio11m3Panels",
+        "props": {
+          "title": "Three measures of a community",
+          "columns": [
+            {
+              "name": "Abundance",
+              "sub": "how many",
+              "icon": "tally",
+              "at": 26,
+              "lines": [
+                {
+                  "text": "low water: fewer plants",
+                  "at": 650
+                }
+              ]
+            },
+            {
+              "name": "Distribution",
+              "sub": "where",
+              "icon": "map",
+              "at": 176,
+              "lines": [
+                {
+                  "text": "low water: only in wetter patches",
+                  "at": 700
+                }
+              ]
+            },
+            {
+              "name": "Diversity",
+              "sub": "richness + evenness",
+              "icon": "variety",
+              "at": 338,
+              "lines": [
+                {
+                  "text": "low water can reduce richness or shift evenness",
+                  "at": 800
+                }
+              ]
+            }
+          ],
+          "footer": [
+            {
+              "text": "Abiotic and biotic factors both move all three",
+              "at": 901,
+              "amber": true
+            }
+          ]
+        }
+      },
+      "durationInFrames": 1258
     },
     {
       "id": "definition",
