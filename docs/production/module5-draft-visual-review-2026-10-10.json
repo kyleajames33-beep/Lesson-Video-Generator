@@ -1,0 +1,185 @@
+{
+  "source": "docs/production/drafts/module5-chemistry-l1-2026-10-10/lesson.json",
+  "sourceSha256": "1bbd79a6b9f8ca574df39967855784aa9b63044ba69911c3c21ab73fdddf7972",
+  "scope": "Exact LessonVideo/release entry with draft source props. Native 1920x1080 and 384x216 surrogate phone stills. No selected speech, actual device, external captions or motion approval.",
+  "dependencies": [
+    {
+      "path": "src/dev/release-entry.tsx",
+      "sha256": "db40ab64f1604b4a08be8504383b9dea9c77ca999094eac222cb6ecca101c9dc"
+    },
+    {
+      "path": "src/LessonVideo.tsx",
+      "sha256": "f86792588be7f08ec09b8ff4c1a7f90487809d6ecef5b67bfcd8e410b5f0dc99"
+    },
+    {
+      "path": "src/slides/HookSlide.tsx",
+      "sha256": "7310b1665a522e12c07defd23f321656dd45d45e39c355108dc575d93f478873"
+    },
+    {
+      "path": "src/slides/ConceptSlide.tsx",
+      "sha256": "c77dd61bdae5a12de62cf0f64af13e842e1311e53f83c0b92ef3fb3070b08dd3"
+    },
+    {
+      "path": "src/slides/WorkedExampleSlide.tsx",
+      "sha256": "b88bc5a76011adbd579c62ddf01a578b1d31678eedd7407acad6b5e5a2db0acf"
+    },
+    {
+      "path": "src/slides/QuickCheckSlide.tsx",
+      "sha256": "a3688e1ff6eeacd95e9e96e5121a98aeac9a4644a0541fc7522123213f14c750"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/ExchangeDiagram.tsx",
+      "sha256": "550f20f17681ff2f8c95d5dd75208f848fe5427706e09f74afc567e527d9598d"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/chem-y12-m5/exchangeSim.ts",
+      "sha256": "ef1cb933a4a16cd1d01eb3d1e9fa282b16664302b0cf3d99cce2a3d6b065eca2"
+    },
+    {
+      "path": "src/lesson/answer-timing.mjs",
+      "sha256": "3ddcab52b4b0a33cc404dd0c60c0d31c35c926ff0caec410a5c72605e7e54656"
+    },
+    {
+      "path": "src/lesson/timeline.mjs",
+      "sha256": "6a397f94d35765d17972ed4519f51d9eea60ab1385e2a663c48a0e2842851512"
+    }
+  ],
+  "frames": [
+    {
+      "sceneId": "hook",
+      "sceneLocalFrame": 300,
+      "compositionFrame": 351,
+      "scale": 1,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/hook-300.png",
+      "sha256": "f6a76e4a8af890ca2ebfb58239faf5ceacc46fd5e69cc634a7eb38d3fe9ce3b4"
+    },
+    {
+      "sceneId": "hook",
+      "sceneLocalFrame": 300,
+      "compositionFrame": 351,
+      "scale": 0.2,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/hook-300-phone-384.png",
+      "sha256": "b89638ac13f3e9239d57afd78e835fe0fa1f3bb0004c043950618df6619a17d9"
+    },
+    {
+      "sceneId": "concept-two-states",
+      "sceneLocalFrame": 699,
+      "compositionFrame": 1599,
+      "scale": 1,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/concept-two-states-699.png",
+      "sha256": "59711e56446ea002bc8c50102c27d1291c663499fa19daeb29394ed4f7ad6079"
+    },
+    {
+      "sceneId": "concept-two-states",
+      "sceneLocalFrame": 930,
+      "compositionFrame": 1830,
+      "scale": 1,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/concept-two-states-930.png",
+      "sha256": "8f7015883f545e63d2d89c6ba148e3570d3e61ea128189f4fac2843ebb88e124"
+    },
+    {
+      "sceneId": "concept-two-states",
+      "sceneLocalFrame": 930,
+      "compositionFrame": 1830,
+      "scale": 0.2,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/concept-two-states-930-phone-384.png",
+      "sha256": "92a11578e5bf0f04d38544a2bf990ba75774c01049cd9a334b442f5c8627a785"
+    },
+    {
+      "sceneId": "concept-two-states",
+      "sceneLocalFrame": 1800,
+      "compositionFrame": 2700,
+      "scale": 1,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/concept-two-states-1800.png",
+      "sha256": "1fb89e9e4ed84cae78c08b9dfbd732f7610eb226b3bfeaf47100b44a904e2a14"
+    },
+    {
+      "sceneId": "concept-two-states",
+      "sceneLocalFrame": 1800,
+      "compositionFrame": 2700,
+      "scale": 0.2,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/concept-two-states-1800-phone-384.png",
+      "sha256": "812201861bae5b11931f2f224f775aa90c46384233e8eadc1622a82dae25e07c"
+    },
+    {
+      "sceneId": "worked-example",
+      "sceneLocalFrame": 1500,
+      "compositionFrame": 7155,
+      "scale": 1,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/worked-example-1500.png",
+      "sha256": "d1fa73c83f3ad7c030c303a751059f424fffc1b12fcf06937f7a308d67cce54f"
+    },
+    {
+      "sceneId": "worked-example",
+      "sceneLocalFrame": 1500,
+      "compositionFrame": 7155,
+      "scale": 0.2,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/worked-example-1500-phone-384.png",
+      "sha256": "30697dd4dc9e6dcd986e8538b9cdf2bc91c643fec4073a0f8ec233e84e6ad8af"
+    },
+    {
+      "sceneId": "quick-check",
+      "sceneLocalFrame": 1367,
+      "compositionFrame": 11757,
+      "scale": 1,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/quick-check-1367.png",
+      "sha256": "4f7c2291b40221581d6ea8e99f184d95b0a9816fbc8009a58c92b1933105b3e8"
+    },
+    {
+      "sceneId": "quick-check",
+      "sceneLocalFrame": 1367,
+      "compositionFrame": 11757,
+      "scale": 0.2,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/quick-check-1367-phone-384.png",
+      "sha256": "a12ce8a38bcdc12990a1304c719d53192abc6ae7829db7b43c86c557cd85e625"
+    },
+    {
+      "sceneId": "quick-check",
+      "sceneLocalFrame": 1420,
+      "compositionFrame": 11810,
+      "scale": 1,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/quick-check-1420.png",
+      "sha256": "1e38b512a4c85d5b2de35ab15facb2ffb88dfe6e9097dadae1e41bdc537ccfee"
+    },
+    {
+      "sceneId": "quick-check",
+      "sceneLocalFrame": 2000,
+      "compositionFrame": 12390,
+      "scale": 1,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/quick-check-2000.png",
+      "sha256": "203f2e45f33b1e47137cf44fa0b20986905f691e2d1f16e1bf704c3b3b8c22d0"
+    },
+    {
+      "sceneId": "quick-check",
+      "sceneLocalFrame": 2000,
+      "compositionFrame": 12390,
+      "scale": 0.2,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/quick-check-2000-phone-384.png",
+      "sha256": "380e9a86d4993c639e7595a635c00dd2c6cecb9a1a9c110ec18c92bad03bd53f"
+    },
+    {
+      "sceneId": "concept-two-states",
+      "sceneLocalFrame": 910,
+      "compositionFrame": 1810,
+      "scale": 1,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/concept-two-states-910.png",
+      "sha256": "4e49e82abfbec664674a69dd722fcc52977f04e2b9e48361e95716b4c84a8973"
+    },
+    {
+      "sceneId": "concept-two-states",
+      "sceneLocalFrame": 1950,
+      "compositionFrame": 2850,
+      "scale": 1,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/concept-two-states-1950.png",
+      "sha256": "503a9930396e7c7a2883569d4bf1f48f3360611aa97840603d00a25ab7b146f3"
+    },
+    {
+      "sceneId": "quick-check",
+      "sceneLocalFrame": 1368,
+      "compositionFrame": 11758,
+      "scale": 1,
+      "path": "out/prototypes/module5-draft-visual-review-2026-10-10/quick-check-1368.png",
+      "sha256": "68646c5e92c83596cf9b5326eee5f456702bcf6633ce6c792a9d207c1698768d"
+    }
+  ]
+}

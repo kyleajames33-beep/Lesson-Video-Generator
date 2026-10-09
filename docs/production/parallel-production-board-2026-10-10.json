@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "owner": "/root",
+  "purpose": "Coordinate the current calculation release and first Year 12 Module 5 Chemistry/Biology drafts under the accepted minimum production standard.",
+  "authorization": "User explicitly requested project management, multiple parallel agents and task-dependent model selection on 10 October 2026.",
+  "concurrency": {
+    "totalSlots": 4,
+    "coordinatorSlots": 1,
+    "workerSlots": 3,
+    "strategy": "Run independent bounded assignments in waves; review stable drafts after authors finish."
+  },
+  "modelRouting": [
+    {
+      "model": "gpt-6-astra",
+      "use": "Difficult visual teaching design and model representation judgement"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "use": "Conversational script authoring, implementation, integration and independent science review"
+    },
+    {
+      "model": "gpt-6-luna",
+      "use": "Bounded metadata extraction, file inventory and mechanical rule checks, checked by coordinator"
+    }
+  ],
+  "routingLimit": "These are project routing judgements using models offered in this session, not a measured model comparison, token budget or price claim.",
+  "productionOrder": [
+    "Finish review and release of the current four calculation revisions",
+    "Year 12 Chemistry Module 5: dynamic equilibrium",
+    "Year 12 Biology Module 5: reproduction and continuity",
+    "Follow prerequisite order within each subject; harder applications follow their matching core"
+  ],
+  "rules": [
+    "One writer owns each path; reviewers do not silently rewrite the author source",
+    "Preserve frozen calculation sources, audio and evidence",
+    "No new recorded words bound to old audio",
+    "No paid narration before recording-stage brief and independent source review",
+    "No full export before exact voiced-preview gate",
+    "No public posting before current full-package release evidence and human listening",
+    "Root alone integrates selected revisions, commits and publishes",
+    "Evidence must distinguish source, static image, continuous playback and human listening"
+  ],
+  "tasks": [
+    {
+      "id": "visual-reuse",
+      "agent": "/root/m5_visual_design",
+      "model": "gpt-6-astra",
+      "status": "review-complete",
+      "scope": "Audit relevant existing diagrams, dioramas, prototypes and artwork for both Module 5 opening lessons",
+      "ownedPaths": [
+        "docs/production/module5-visual-reuse-review-2026-10-10.md",
+        "out/prototypes/module5-visual-review-2026-10-10/"
+      ],
+      "knownFindings": [
+        "Bottle control cap and zero-dissolution animation contradict sealed equilibrium",
+        "Static comparison confuses no net process with no molecular motion",
+        "Population animation guarantees infection/survival outcomes"
+      ],
+      "evidence": [
+        "docs/production/module5-visual-reuse-review-2026-10-10.md",
+        "docs/production/evidence/module5-visual-review-2026-10-10/frames.json"
+      ]
+    },
+    {
+      "id": "chemistry-author",
+      "agent": "/root/m5_chem_script",
+      "model": "gpt-6.1-sol",
+      "status": "draft-complete-layout-followup-required",
+      "scope": "Portable silent Chemistry M5 L1 draft, conversational narration and exact teaching brief",
+      "ownedPaths": [
+        "docs/production/drafts/module5-chemistry-l1-2026-10-10/",
+        "out/prototypes/module5-chemistry-l1-draft-2026-10-10/"
+      ],
+      "evidence": [
+        "docs/production/drafts/module5-chemistry-l1-2026-10-10/lesson.json",
+        "docs/production/drafts/module5-chemistry-l1-2026-10-10/author-validation.json"
+      ],
+      "sourceSha256": "14e05ef9c9f6808bb07565d1d9d3030515f157cfc161c24e58ddd9e5f43b497a"
+    },
+    {
+      "id": "biology-author",
+      "agent": "/root/m5_bio_script",
+      "model": "gpt-6.1-sol",
+      "status": "draft-complete-layout-followup-required",
+      "scope": "Portable silent Biology M5 L1 draft, conversational narration and exact teaching brief",
+      "ownedPaths": [
+        "docs/production/drafts/module5-biology-l1-2026-10-10/",
+        "out/prototypes/module5-biology-l1-draft-2026-10-10/"
+      ],
+      "evidence": [
+        "docs/production/drafts/module5-biology-l1-2026-10-10/lesson.json",
+        "docs/production/drafts/module5-biology-l1-2026-10-10/validation.json"
+      ],
+      "sourceSha256": "17591531e1050b33a758f5a43a470b217330c7e969240a991d08bf5d1d3c826e"
+    },
+    {
+      "id": "independent-science",
+      "model": "gpt-6.1-sol",
+      "status": "both-final-drafts-source-pass",
+      "dependsOn": [
+        "chemistry-author",
+        "biology-author"
+      ],
+      "scope": "Review exact stable drafts independently of each author; science, causal explanations, model limits, syllabus scope and response task",
+      "ownedPaths": [
+        "docs/production/module5-independent-science-teaching-review-2026-10-10.md"
+      ],
+      "evidence": [
+        "docs/production/module5-independent-science-teaching-review-2026-10-10.md"
+      ],
+      "agent": "/root/m5_science_teaching_review"
+    },
+    {
+      "id": "rules-prototypes",
+      "model": "gpt-6-luna",
+      "status": "both-final-drafts-mechanical-checks-pass",
+      "dependsOn": [
+        "chemistry-author",
+        "biology-author",
+        "visual-reuse"
+      ],
+      "scope": "Check read-map, scene decisions, exact source/brief bindings, old-audio removal, punctuation, response gates and honest review states",
+      "ownedPaths": [
+        "docs/production/parallel-rules-audit-2026-10-10.json"
+      ],
+      "evidence": [
+        "docs/production/parallel-rules-audit-2026-10-10.json"
+      ],
+      "agent": "/root/m5_rules_audit"
+    },
+    {
+      "id": "youtube-preparation",
+      "model": "gpt-6-luna",
+      "status": "prepared-awaiting-release-gates",
+      "scope": "Prepare current four-video posting queue and metadata from exact current sources; preserve existing upload IDs, distinguish upload order and playlists, enumerate missing release evidence",
+      "ownedPaths": [
+        "docs/production/youtube-queue-2026-10-10.json",
+        "docs/production/youtube-queue-2026-10-10.md"
+      ],
+      "evidence": [
+        "docs/production/youtube-queue-2026-10-10.json",
+        "docs/production/youtube-queue-2026-10-10.md"
+      ],
+      "agent": "/root/youtube_queue"
+    },
+    {
+      "id": "integration",
+      "agent": "/root",
+      "status": "draft-review-wave-complete",
+      "scope": "Resolve cross-agent findings, validate drafts, maintain durable planning and handoff, select next implementation and release actions",
+      "ownedPaths": [
+        "AGENTS.md",
+        "HANDOFF.md",
+        "docs/production-memory.md",
+        "docs/production/parallel-production-board-2026-10-10.json"
+      ],
+      "evidence": [
+        "docs/production/parallel-production-board-2026-10-10.json",
+        "HANDOFF.md"
+      ]
+    },
+    {
+      "id": "draft-visual-review",
+      "agent": "/root/m5_visual_design",
+      "model": "gpt-6-astra",
+      "status": "complete-with-followup-findings",
+      "scope": "Exact revised native and 384-wide static samples for both Module 5 opening drafts; no continuous playback or listening pass",
+      "ownedPaths": [
+        "docs/production/module5-draft-visual-review-2026-10-10.md",
+        "out/prototypes/module5-draft-visual-review-2026-10-10/"
+      ],
+      "evidence": [
+        "docs/production/module5-draft-visual-review-2026-10-10.md",
+        "docs/production/module5-draft-visual-review-2026-10-10-revisions.json"
+      ]
+    },
+    {
+      "id": "next-visual-implementation",
+      "agent": "/root",
+      "status": "queued-before-recording",
+      "scope": "Enlarge essential reference/condition/model labels at narrow-player scale using opt-in layouts; repair Biology continuity bullet and lineage event cues; inspect actual motion before recording-stage approval.",
+      "dependsOn": [
+        "draft-visual-review",
+        "independent-science"
+      ],
+      "ownedPaths": [],
+      "evidence": [
+        "docs/production/module5-draft-visual-review-2026-10-10.md"
+      ]
+    }
+  ],
+  "currentRelease": {
+    "reviewUrl": "http://127.0.0.1:8778/calculation-batch-review-2026-10-10/",
+    "sources": "docs/production/calculation-feedback-2026-10-10.json",
+    "status": "exact revised playback/listening pending; no new full release or posting approval"
+  },
+  "nextAction": "Resolve narrow-player typography and Biology lineage cue findings on additive drafts, then recording-stage review, fresh segmented narration, measured cues and exact voiced pilots. Current calculation listening and full-package release checks remain required before YouTube posting."
+}

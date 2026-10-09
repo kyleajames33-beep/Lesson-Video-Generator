@@ -1,5 +1,9 @@
 # Production handoff: 9 October 2026
 
+Parallel production, 10 October: the user explicitly asks root to act as project manager, choose available worker models and run bounded work in parallel. Start with [the live production board](docs/production/parallel-production-board-2026-10-10.json). Chemistry and Biology Module 5 opening drafts, visual reuse, independent accuracy/rules checks and YouTube preparation are separate assignments. Root owns final integration, recordings, exports and posting. The four calculation feedback packages stay frozen while their revised listening is pending. The latest request authorises new Module 5 draft preparation alongside the current batch's release work.
+
+First parallel wave completed: two portable silent Module 5 opening drafts and independent source/static-frame reviews are under `docs/production/drafts/`. The next implementation is larger essential small-player text and Biology lineage cues. See [the precise visual findings](docs/production/module5-draft-visual-review-2026-10-10.md). Draft/schema checks and source reviews do not establish recording, playback or listening approval. The [production desk](http://127.0.0.1:8778/parallel-production-2026-10-10/) shows scripts, responsibilities and the prepared YouTube queue.
+
 Latest steering, 10 October: finish/post the current chemistry batch, then prioritise **Year 12 Module 5 Chemistry and Biology** (equilibrium and heredity) for the teacher's current term. Use [the new priority plan](docs/production/year12-module5-teaching-priority-2026-10-10.md). Year 11 and the yield/purity audit are deferred. The teacher reports the general clips are good, requests explicit coefficient fractions in the acid calculation and a slightly gentler pace during difficult explanations. New additive feedback candidates are specified in [the feedback record](docs/production/calculation-feedback-2026-10-10.json); the previous exact sources and approvals remain historical evidence. New paced playback/listening remains pending.
 
 This is the starting point for a new computer or agent. The user asked to commit and push all work and continue the course without losing the accepted teaching changes. The repository contains the code, research, standards and course plans. A checked-in state archive restores ignored lesson drafts and review records. Audio, artwork and MP4s are available through the separate verified GitHub release backup described below.
@@ -14,7 +18,7 @@ The latest batch was also restored into a standalone fresh Git clone. All six se
 
 The user subsequently requested online media backup and continued production here. Read [the continuation review](docs/production/continuation-review-2026-10-09.md) before using the older lesson-state details below. The empirical script now has eleven fresh Simon v4 recordings, measured alignment and a new 321.1667-second voiced candidate at `out/prototypes/empirical-formulas-voiced-2026-10-09/narrated.lesson.json`. The original silent draft is preserved. The next mole-ratios source, portable script and independent science review are also prepared; its recording preparation and voiced review remain pending. Verified short limiting and empirical pilots plus complete empirical listening audio are available at http://127.0.0.1:8778/continuation-review-2026-10-09/. Continuous playback, actual-device/caption checks and human listening are still pending; no full export or publication approval is claimed.
 
-The online backup is published on a [dedicated GitHub release](https://github.com/kyleajames33-beep/Lesson-Video-Generator/releases/tag/workspace-media-2026-10-09), including all four additive continuation snapshots. All seven remote assets match their expected sizes and SHA-256 hashes. Use the [download/restore instructions](docs/production/github-media-backup-2026-10-09.md); a manual media copy is optional. The original local ZIP and checksum remain valid as an alternative.
+The online backup is published on a [dedicated GitHub release](https://github.com/kyleajames33-beep/Lesson-Video-Generator/releases/tag/workspace-media-2026-10-09), including all five additive continuation snapshots. All eight remote assets match their expected sizes and SHA-256 hashes. Use the [download/restore instructions](docs/production/github-media-backup-2026-10-09.md); a manual media copy is optional. The original local ZIP and checksum remain valid as an alternative.
 
 ## Move to the other computer
 
@@ -46,6 +50,8 @@ python scripts/github-media-transfer.py download-continuation --continuation cal
 python scripts/transfer-workspace.py restore-media out/archives/calculation-feedback-media-2026-10-10.zip
 python scripts/github-media-transfer.py download-continuation --continuation calculation-feedback-frames-2026-10-10.zip
 python scripts/transfer-workspace.py restore-media out/archives/calculation-feedback-frames-2026-10-10.zip
+python scripts/github-media-transfer.py download-continuation --continuation module5-parallel-review-media-2026-10-10.zip
+python scripts/transfer-workspace.py restore-media out/archives/module5-parallel-review-media-2026-10-10.zip
 npm run check:all
 node scripts/check-course-content-checklist.mjs
 node scripts/check-course-ledger.mjs
@@ -56,6 +62,8 @@ Install GitHub CLI for the downloads and sign in if the repository requires auth
 The state archive preserves selected lesson JSON, props, briefs, alignments, caption files, publication records, review reports, HTML review pages and pinned curriculum research at their original `out/` paths. The media archive carries the matching state archive too, but the documented restore uses the Git copy as its reference. Do not repack these dated archives during normal production. Later transfers should have their own version and checksum.
 
 Git alone restores the catalogue and planning documents, but cannot play the selected narration or show all artwork. Never mark missing-media previews as approved. `scripts/backup-media.mjs` backs up public audio/artwork only; it does not replace this transfer of ignored production state and historical outputs.
+
+The parallel Module 5 work uses portable silent draft packages under `docs/production/drafts/`, independent science and mechanical reports, and two visual review reports. Original diagnostic PNGs are also checked into `docs/production/evidence/`. The additional Module 5 review ZIP preserves ignored native and small-player frame evidence with its source hashes. Consult the transfer record for exact upload verification. The production reading desk can be rebuilt with `python scripts/build-parallel-production-review.py` and opened at http://127.0.0.1:8778/parallel-production-2026-10-10/. It is a saved work checkpoint, not an unattended agent service. Follow the board's next action and exact current review hashes; source review does not close remaining typography, voiced-preview or listening work.
 
 ### Credentials and local services
 

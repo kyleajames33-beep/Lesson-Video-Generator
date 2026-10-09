@@ -1,0 +1,486 @@
+{
+  "schemaVersion": 1,
+  "preparedDate": "2026-10-10",
+  "channel": {
+    "name": "HSCScience",
+    "handle": "@HSCScience-u7i",
+    "url": "https://www.youtube.com/@HSCScience-u7i"
+  },
+  "purpose": "Local metadata and dependency queue for the four current calculation feedback candidates. Root retains export and publication. No browser or live channel check was performed.",
+  "learnerOrder": {
+    "candidateSequence": [
+      "empirical-formulas",
+      "mole-ratios",
+      "mass-to-mass",
+      "limiting"
+    ],
+    "context": "These occupy the current batch sequence after the existing mole-concept and molar-mass prerequisites. Course playlist order is separate from upload chronology.",
+    "earlierRecordedVideoIds": [
+      "MCmEsRHKtTU",
+      "g9zmc5w7kQU"
+    ]
+  },
+  "videos": [
+    {
+      "key": "empirical-formulas",
+      "sequence": 4,
+      "title": "Empirical Formulas: Percentage Composition to Atom Ratios | Year 11 Chemistry",
+      "legacyTopic": "Percentage composition and empirical formulas",
+      "contentId": "cibccbf29b",
+      "prerequisite": "Chemical formula reading, molar mass and grams-to-moles conversion.",
+      "startsWith": "Mass composition as a clue to an atom ratio, not a unique identity.",
+      "stopsAfter": "Infer simplest whole-number atom ratios from composition; molecular inference stays a labelled extension.",
+      "nextHandoff": "Mole ratios between substances from a balanced equation.",
+      "exactSource": {
+        "path": "out/prototypes/empirical-formulas-paced-2026-10-10/narrated.lesson.json",
+        "sha256": "92611f178fba8dce8f4c37e86354a266583862ad0c4ff8c19bafc98503af0776",
+        "titleInLesson": "Empirical formulas",
+        "fullConfigPath": "out/prototypes/empirical-formulas-paced-2026-10-10/full-config.json",
+        "productionBriefPath": "out/prototypes/empirical-formulas-paced-2026-10-10/production-brief.json",
+        "productionBriefSchemaVersion": 2,
+        "sourceStatus": "current selected paced candidate"
+      },
+      "captionCandidates": [
+        {
+          "format": "SRT",
+          "path": "out/prototypes/empirical-formulas-paced-2026-10-10/full-captions.srt",
+          "sha256": "2019199a939bcb86cd8a80b7e8a5a2077add2b84d602ae4c31222f8547731b89",
+          "bytes": 8753,
+          "role": "full lesson caption candidate, bind/recheck after full export"
+        },
+        {
+          "format": "VTT",
+          "path": "out/prototypes/empirical-formulas-paced-2026-10-10/full-captions.vtt",
+          "sha256": "9fbc7d5beb3efd2ec1a97fe0ab5588c7fe3aca4c953c8f07e77ac914a5089449",
+          "bytes": 8381,
+          "role": "full lesson caption candidate, bind/recheck after full export"
+        }
+      ],
+      "availablePilot": {
+        "path": "out/prototypes/empirical-formulas-paced-2026-10-10/worked-pilot-02/video.mp4",
+        "sha256": "f8365e43526a7870874be7743802796ba00f7811edc834eebe5ffbce036d1248",
+        "frameRange": [
+          4369,
+          5365
+        ],
+        "type": "short worked-example frameRange pilot",
+        "uploadable": false,
+        "notFullLesson": true
+      },
+      "availableListeningAudio": {
+        "path": "out/prototypes/empirical-formulas-paced-2026-10-10/narration-listen.m4a",
+        "sha256": "02e641e6d969935f3c8e4022010f63ab05d055e51ce6de5f573a54f98139f8dd",
+        "note": "Full narration listening track, audio only. It is not a full video export and does not count as human listening."
+      },
+      "releaseGates": {
+        "fullExport": {
+          "status": "missing",
+          "note": "No current full export exists for this exact paced lesson."
+        },
+        "preview": {
+          "status": "pending",
+          "note": "Exact voiced revision preview in Remotion or a short recorded pilot must be completed and findings resolved."
+        },
+        "humanListening": {
+          "status": "pending",
+          "note": "Pending is not a pass. Full narration and pilot audio are available as candidates."
+        },
+        "exportStageBriefCheck": {
+          "status": "pending",
+          "note": "Check the current teaching brief at export stage after preview findings resolve, then freeze inputs."
+        },
+        "fullPackageReview": {
+          "status": "pending",
+          "note": "The existing full-package release gate has not passed for this exact lesson."
+        },
+        "captions": {
+          "status": "candidate",
+          "note": "Full SRT/VTT candidates are attached to the exact paced source, but require final timing/caption review against the frozen full export."
+        },
+        "chapters": {
+          "status": "pending",
+          "note": "No final chapters prepared. Derive and validate only after exact full export freezes."
+        },
+        "uploadable": false
+      },
+      "syllabus": {
+        "legacyVersion": "Chemistry Stage 6 Syllabus (2017), Year 11 Module 2: Introduction to Quantitative Chemistry",
+        "legacyOfficialUrl": "https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017",
+        "newCourseSummary": "Supports calculating percentage composition by mass and deriving simplest whole-number atom ratios. The molecular-formula inference remains a labelled extension and composition alone does not identify a substance.",
+        "newCourseContentId": "cibccbf29b",
+        "newCourseOfficialUrl": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "mappingLimit": "Paraphrased support mapping only. No complete dotpoint, module, practical or course coverage is claimed."
+      },
+      "proposedDescription": "Use element composition to calculate mass percentages, convert element masses to mole amounts and reduce them to the simplest atom ratio. A labelled extension distinguishes an empirical formula from a molecular formula.\n\nChemistry 2017: Year 11 Module 2, Introduction to Quantitative Chemistry. Supports percentage composition and the mole concept.\nChemistry 2025: Year 11 Quantitative chemistry. Supports percentage composition and empirical-formula calculations (content ID cibccbf29b). This lesson does not establish practical or full course coverage.\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\nOfficial 2025 content: https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f\n\nPrerequisite: Read chemical formulas, calculate molar mass and convert grams to moles. Next: Mole ratios from a balanced equation.\n\n#Year11Chemistry #Chemistry #HSCScience",
+      "playlistCandidate": {
+        "name": "Year 11 Chemistry: Module 2 (2017 Syllabus)",
+        "id": "PLw0N4j18fnb6AqJ79YRTczpIqZ8FnbV6e",
+        "membershipForCandidate": "not assigned; existing playlist order remains separate from upload chronology"
+      },
+      "priorPublicationRecord": "No earlier YouTube publication record found for this lesson in the inspected publication package. This is a local record search, not a live channel check."
+    },
+    {
+      "key": "mole-ratios",
+      "sequence": 5,
+      "title": "Mole Ratios: Using Balanced Equations to Compare Reactants and Products | Year 11 Chemistry",
+      "legacyTopic": "Mole ratios from balanced chemical equations",
+      "contentId": "ci94bdbfc4",
+      "prerequisite": "Formula reading, atom conservation, balancing and mole amount. Empirical formulas is not a required prerequisite.",
+      "startsWith": "Different comparisons within the same balanced equation can have different ratios.",
+      "stopsAfter": "Convert between given and wanted mole amounts under stated reaction assumptions.",
+      "nextHandoff": "Mass-to-mass stoichiometry using each species molar mass.",
+      "exactSource": {
+        "path": "out/prototypes/mole-ratios-paced-2026-10-10/narrated.lesson.json",
+        "sha256": "6914afbed82d18dc16b575c2ad7475e605306fc5cd602c54b0263332b2d60764",
+        "titleInLesson": "Mole ratios",
+        "fullConfigPath": "out/prototypes/mole-ratios-paced-2026-10-10/full-config.json",
+        "productionBriefPath": "out/prototypes/mole-ratios-paced-2026-10-10/production-brief.json",
+        "productionBriefSchemaVersion": 2,
+        "sourceStatus": "current selected paced candidate"
+      },
+      "captionCandidates": [
+        {
+          "format": "SRT",
+          "path": "out/prototypes/mole-ratios-paced-2026-10-10/full-captions.srt",
+          "sha256": "3bd1937ef282488135c0e54a97fd4d9dc85ce4d3304ed3c667f12db416c2f555",
+          "bytes": 8215,
+          "role": "full lesson caption candidate, bind/recheck after full export"
+        },
+        {
+          "format": "VTT",
+          "path": "out/prototypes/mole-ratios-paced-2026-10-10/full-captions.vtt",
+          "sha256": "a5b45bbe15922e7292aefa8d594951c0fcce6e2db9d8b332b339d68502b88a77",
+          "bytes": 7871,
+          "role": "full lesson caption candidate, bind/recheck after full export"
+        }
+      ],
+      "availablePilot": {
+        "path": "out/prototypes/mole-ratios-paced-2026-10-10/worked-pilot-02/video.mp4",
+        "sha256": "63ca39223b1b7a715cd6c651c5bc40a96dd44fd8b99e645efedc63e5dcbb37bf",
+        "frameRange": [
+          4702,
+          5739
+        ],
+        "type": "short worked-example frameRange pilot",
+        "uploadable": false,
+        "notFullLesson": true
+      },
+      "availableListeningAudio": {
+        "path": "out/prototypes/mole-ratios-paced-2026-10-10/narration-listen.m4a",
+        "sha256": "81015cd173885a72cda9af1c32ccd574e04565427fb3a89db1f6922b9dd7e365",
+        "note": "Full narration listening track, audio only. It is not a full video export and does not count as human listening."
+      },
+      "releaseGates": {
+        "fullExport": {
+          "status": "missing",
+          "note": "No current full export exists for this exact paced lesson."
+        },
+        "preview": {
+          "status": "pending",
+          "note": "Exact voiced revision preview in Remotion or a short recorded pilot must be completed and findings resolved."
+        },
+        "humanListening": {
+          "status": "pending",
+          "note": "Pending is not a pass. Full narration and pilot audio are available as candidates."
+        },
+        "exportStageBriefCheck": {
+          "status": "pending",
+          "note": "Check the current teaching brief at export stage after preview findings resolve, then freeze inputs."
+        },
+        "fullPackageReview": {
+          "status": "pending",
+          "note": "The existing full-package release gate has not passed for this exact lesson."
+        },
+        "captions": {
+          "status": "candidate",
+          "note": "Full SRT/VTT candidates are attached to the exact paced source, but require final timing/caption review against the frozen full export."
+        },
+        "chapters": {
+          "status": "pending",
+          "note": "No final chapters prepared. Derive and validate only after exact full export freezes."
+        },
+        "uploadable": false
+      },
+      "syllabus": {
+        "legacyVersion": "Chemistry Stage 6 Syllabus (2017), Year 11 Module 2: Introduction to Quantitative Chemistry",
+        "legacyOfficialUrl": "https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017",
+        "newCourseSummary": "Supports reading whole-number mole ratios from balanced-equation coefficients and converting between reacting amounts. The mapped practical requirement is separate and is not completed by this explanation.",
+        "newCourseContentId": "ci94bdbfc4",
+        "newCourseOfficialUrl": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "mappingLimit": "Paraphrased support mapping only. No complete dotpoint, module, practical or course coverage is claimed."
+      },
+      "proposedDescription": "Read the coefficient ratio from a balanced equation, then use it to convert a known amount of one substance into the amount of another. Worked comparisons show why the ratio depends on which two substances you choose.\n\nChemistry 2017: Year 11 Module 2, Introduction to Quantitative Chemistry. Supports mole-ratio calculations from balanced equations.\nChemistry 2025: Year 11 Quantitative chemistry. This explanation supports understanding whole-number ratios; the practical investigation requirement (content ID ci94bdbfc4) remains separate.\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\nOfficial 2025 content: https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f\n\nPrerequisite: Read formulas, conserve atoms when balancing, and understand mole amount. Empirical formulas is not required first. Next: Mass-to-mass stoichiometry using each species molar mass.\n\n#Year11Chemistry #Stoichiometry #HSCScience",
+      "playlistCandidate": {
+        "name": "Year 11 Chemistry: Module 2 (2017 Syllabus)",
+        "id": "PLw0N4j18fnb6AqJ79YRTczpIqZ8FnbV6e",
+        "membershipForCandidate": "not assigned; existing playlist order remains separate from upload chronology"
+      },
+      "priorPublicationRecord": "No earlier YouTube publication record found for this lesson in the inspected publication package. This is a local record search, not a live channel check."
+    },
+    {
+      "key": "mass-to-mass",
+      "sequence": 6,
+      "title": "Mass-to-Mass Stoichiometry: Calculate Reacting Masses | Year 11 Chemistry",
+      "legacyTopic": "Mass-to-mass stoichiometric calculations",
+      "contentId": "ci47b34fec",
+      "prerequisite": "Read formulas and an already-balanced equation; calculate formula molar mass; use n=m/M and m=nM; choose a wanted/known coefficient ratio. Empirical formulas is not a compulsory prerequisite.",
+      "startsWith": "Carbon dioxide can outweigh its starting carbon because oxygen also contributes mass.",
+      "stopsAfter": "Predict and interpret a theoretical mass in either direction using species molar masses, balanced coefficients and stated assumptions.",
+      "nextHandoff": "Limiting reactants: compare two finite reactant supplies before predicting product and excess.",
+      "exactSource": {
+        "path": "out/prototypes/mass-to-mass-paced-2026-10-10/narrated.lesson.json",
+        "sha256": "b90681774be533bdedca5bebca550f18530e1110ad85b28bc2a1d02b282da33e",
+        "titleInLesson": "Mass-to-mass stoichiometry",
+        "fullConfigPath": "out/prototypes/mass-to-mass-paced-2026-10-10/full-config.json",
+        "productionBriefPath": "out/prototypes/mass-to-mass-paced-2026-10-10/production-brief.json",
+        "productionBriefSchemaVersion": 2,
+        "sourceStatus": "current selected paced candidate"
+      },
+      "captionCandidates": [
+        {
+          "format": "SRT",
+          "path": "out/prototypes/mass-to-mass-paced-2026-10-10/full-captions.srt",
+          "sha256": "17f94f03304902f0d4bb7cf2d355d3a296c62b9e58f1c81b32866faa5f1b5488",
+          "bytes": 11216,
+          "role": "full lesson caption candidate, bind/recheck after full export"
+        },
+        {
+          "format": "VTT",
+          "path": "out/prototypes/mass-to-mass-paced-2026-10-10/full-captions.vtt",
+          "sha256": "fd274abb6f12a748280adda6263abf72da9bab3c521cd533f49ee55080c6b9d7",
+          "bytes": 10708,
+          "role": "full lesson caption candidate, bind/recheck after full export"
+        }
+      ],
+      "availablePilot": {
+        "path": "out/prototypes/mass-to-mass-paced-2026-10-10/worked-pilot-02/video.mp4",
+        "sha256": "3d51fbd79d89dab43b3b38c9b87a724f4c3aab7c487c2294c0b99c193605127b",
+        "frameRange": [
+          6143,
+          7933
+        ],
+        "type": "short worked-example frameRange pilot",
+        "uploadable": false,
+        "notFullLesson": true
+      },
+      "availableListeningAudio": {
+        "path": "out/prototypes/mass-to-mass-paced-2026-10-10/narration-listen.m4a",
+        "sha256": "8cd6c8ee1e995239c07c03b62b55da0259d1a7ceaf0e4cbe3c602b5245ed31bb",
+        "note": "Full narration listening track, audio only. It is not a full video export and does not count as human listening."
+      },
+      "releaseGates": {
+        "fullExport": {
+          "status": "missing",
+          "note": "No current full export exists for this exact paced lesson."
+        },
+        "preview": {
+          "status": "pending",
+          "note": "Exact voiced revision preview in Remotion or a short recorded pilot must be completed and findings resolved."
+        },
+        "humanListening": {
+          "status": "pending",
+          "note": "Pending is not a pass. Full narration and pilot audio are available as candidates."
+        },
+        "exportStageBriefCheck": {
+          "status": "pending",
+          "note": "Check the current teaching brief at export stage after preview findings resolve, then freeze inputs."
+        },
+        "fullPackageReview": {
+          "status": "pending",
+          "note": "The existing full-package release gate has not passed for this exact lesson."
+        },
+        "captions": {
+          "status": "candidate",
+          "note": "Full SRT/VTT candidates are attached to the exact paced source, but require final timing/caption review against the frozen full export."
+        },
+        "chapters": {
+          "status": "pending",
+          "note": "No final chapters prepared. Derive and validate only after exact full export freezes."
+        },
+        "uploadable": false
+      },
+      "syllabus": {
+        "legacyVersion": "Chemistry Stage 6 Syllabus (2017), Year 11 Module 2: Introduction to Quantitative Chemistry",
+        "legacyOfficialUrl": "https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017",
+        "newCourseSummary": "Supports predicting a theoretical reacting or product mass using a balanced equation, mole conversion and the molar masses of the known and wanted substances.",
+        "newCourseContentId": "ci47b34fec",
+        "newCourseOfficialUrl": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "mappingLimit": "Paraphrased support mapping only. No complete dotpoint, module, practical or course coverage is claimed."
+      },
+      "proposedDescription": "Connect a known mass to moles, apply the balanced-equation coefficient ratio, then convert the wanted amount back to mass. Worked examples show why equal mole amounts do not mean equal masses.\n\nChemistry 2017: Year 11 Module 2, Introduction to Quantitative Chemistry. Supports mass-to-mass stoichiometric calculations based on balanced equations.\nChemistry 2025: Year 11 Quantitative chemistry. Supports reacting-mass calculations (content ID ci47b34fec). This is a theoretical calculation lesson, not evidence of a practical investigation.\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\nOfficial 2025 content: https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f\n\nPrerequisite: Read formulas and a balanced equation, calculate molar mass, use n=m/M and m=nM, and choose a wanted-to-known coefficient ratio. Next: Limiting reagents, then actual yield and purity.\n\n#Year11Chemistry #Stoichiometry #HSCScience",
+      "playlistCandidate": {
+        "name": "Year 11 Chemistry: Module 2 (2017 Syllabus)",
+        "id": "PLw0N4j18fnb6AqJ79YRTczpIqZ8FnbV6e",
+        "membershipForCandidate": "not assigned; existing playlist order remains separate from upload chronology"
+      },
+      "priorPublicationRecord": "No earlier YouTube publication record found for this lesson in the inspected publication package. This is a local record search, not a live channel check."
+    },
+    {
+      "key": "limiting",
+      "sequence": 7,
+      "title": "Limiting Reagents: Theoretical Yield and Excess Reactant | Year 11 Chemistry",
+      "legacyTopic": "Limiting reagents and theoretical yields",
+      "contentId": "ci04298531",
+      "prerequisite": "Molar mass, grams/moles and balanced-equation ratios.",
+      "startsWith": "Two fixed reactant supplies and a reaction recipe.",
+      "stopsAfter": "Identify the limiting reactant, theoretical yield and excess remaining.",
+      "nextHandoff": "Actual yield and purity, after prerequisite mole-ratios and mass-to-mass videos are reviewed.",
+      "exactSource": {
+        "path": "out/prototypes/limiting-paced-2026-10-10/narrated.lesson.json",
+        "sha256": "96fedf688aef15f7e3785ff7c78b1f3a04675a8eb93d8edd9c832e45f807d91a",
+        "titleInLesson": "Limiting reagents",
+        "fullConfigPath": "out/prototypes/limiting-paced-2026-10-10/full-config.json",
+        "productionBriefPath": "out/prototypes/limiting-paced-2026-10-10/production-brief.json",
+        "productionBriefSchemaVersion": 2,
+        "sourceStatus": "current selected paced candidate"
+      },
+      "captionCandidates": [
+        {
+          "format": "SRT",
+          "path": "out/prototypes/limiting-paced-2026-10-10/full-captions.srt",
+          "sha256": "a523b7d51a2ef60e66e5d793f8f01285f0d02b6ba311abd5b8e5edb1f523345a",
+          "bytes": 8058,
+          "role": "full lesson caption candidate, bind/recheck after full export"
+        },
+        {
+          "format": "VTT",
+          "path": "out/prototypes/limiting-paced-2026-10-10/full-captions.vtt",
+          "sha256": "2513544870aee24b70810a41965d3bb7c1a284b4003d1a9084ef41d50d57efc7",
+          "bytes": 7710,
+          "role": "full lesson caption candidate, bind/recheck after full export"
+        }
+      ],
+      "availablePilot": {
+        "path": "out/prototypes/limiting-paced-2026-10-10/worked-pilot-02/video.mp4",
+        "sha256": "9cc7f6565df55adb4097177cad698f36399d08639848e67093ab6b3fee706eb5",
+        "frameRange": [
+          3524,
+          5712
+        ],
+        "type": "short worked-example frameRange pilot",
+        "uploadable": false,
+        "notFullLesson": true
+      },
+      "availableListeningAudio": {
+        "path": "out/prototypes/limiting-paced-2026-10-10/narration-listen.m4a",
+        "sha256": "ae42dbffec462ba1c279a683661df0729ba273d3da6910479ca276eec6460533",
+        "note": "Full narration listening track, audio only. It is not a full video export and does not count as human listening."
+      },
+      "releaseGates": {
+        "fullExport": {
+          "status": "missing",
+          "note": "No current full export exists for this exact paced lesson."
+        },
+        "preview": {
+          "status": "pending",
+          "note": "Exact voiced revision preview in Remotion or a short recorded pilot must be completed and findings resolved."
+        },
+        "humanListening": {
+          "status": "pending",
+          "note": "Pending is not a pass. Full narration and pilot audio are available as candidates."
+        },
+        "exportStageBriefCheck": {
+          "status": "pending",
+          "note": "Check the current teaching brief at export stage after preview findings resolve, then freeze inputs."
+        },
+        "fullPackageReview": {
+          "status": "pending",
+          "note": "The existing full-package release gate has not passed for this exact lesson."
+        },
+        "captions": {
+          "status": "candidate",
+          "note": "Full SRT/VTT candidates are attached to the exact paced source, but require final timing/caption review against the frozen full export."
+        },
+        "chapters": {
+          "status": "pending",
+          "note": "No final chapters prepared. Derive and validate only after exact full export freezes."
+        },
+        "uploadable": false
+      },
+      "syllabus": {
+        "legacyVersion": "Chemistry Stage 6 Syllabus (2017), Year 11 Module 2: Introduction to Quantitative Chemistry",
+        "legacyOfficialUrl": "https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017",
+        "newCourseSummary": "Supports identifying the limiting reactant from coefficient-adjusted mole amounts, then calculating theoretical yield and excess remaining under stated completion assumptions.",
+        "newCourseContentId": "ci04298531",
+        "newCourseOfficialUrl": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "mappingLimit": "Paraphrased support mapping only. No complete dotpoint, module, practical or course coverage is claimed."
+      },
+      "proposedDescription": "Compare each reactant amount with its balanced-equation coefficient to find which supply runs out first. Then calculate theoretical yield and the excess reactant remaining under the stated reaction-completion assumption.\n\nChemistry 2017: Year 11 Module 2, Introduction to Quantitative Chemistry. Supports limiting-reagent problems and mole-ratio calculations.\nChemistry 2025: Year 11 Quantitative chemistry. Supports limiting-reagent calculations (content ID ci04298531). Complete mole-ratio and mass-to-mass lessons first.\nOfficial 2017 course: https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017\nOfficial 2025 content: https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f\n\nPrerequisite: Molar mass, grams/moles and balanced-equation ratios. Next: Actual yield and purity after the mole-ratio and mass-to-mass lessons are reviewed.\n\n#Year11Chemistry #LimitingReagent #HSCScience",
+      "playlistCandidate": {
+        "name": "Year 11 Chemistry: Module 2 (2017 Syllabus)",
+        "id": "PLw0N4j18fnb6AqJ79YRTczpIqZ8FnbV6e",
+        "membershipForCandidate": "not assigned; existing playlist order remains separate from upload chronology"
+      },
+      "priorPublicationRecord": "Earlier local publication records preserve unlisted review video sijXK98W_9w, later superseded as preferred review by unlisted video b7OCuLsXgG8. Captions and unlisted review status were recorded for both; complete user watch-through and human listening remained pending in the 9 October records. These are historical recorded states, not a live visibility check."
+    }
+  ],
+  "chapters": {
+    "status": "pending for every current candidate",
+    "policy": "Do not present final chapters until the exact full export is frozen. Provisional source cue timings are intentionally omitted."
+  },
+  "historicalPublicationStates": {
+    "source": "out/prototypes/continuity-batch-01/youtube/publication-state.json, updated 2026-10-09",
+    "molarMass": {
+      "id": "g9zmc5w7kQU",
+      "visibilityAsRecorded": "public",
+      "captionStatusAsRecorded": "published",
+      "liveStatusChecked": false
+    },
+    "limitingReagents": {
+      "olderId": "sijXK98W_9w",
+      "visibilityAsRecorded": "unlisted",
+      "preferredRevisionId": "b7OCuLsXgG8",
+      "visibilityAsRecordedPreferredRevision": "unlisted",
+      "captionStatusAsRecorded": "published on both records",
+      "liveStatusChecked": false,
+      "preserveAllIds": true
+    },
+    "additionalSource": "docs/production/youtube-publishing-plan-2026-10-09.md, dated feedback-revision records",
+    "enzymeModels": {
+      "olderId": "tXBotBaNakU",
+      "preferredRevisionId": "ZTxQP7kI5_o",
+      "visibilityAsRecorded": "unlisted",
+      "liveStatusChecked": false,
+      "preserveAllIds": true
+    }
+  },
+  "futureYear12CandidatesOnly": [
+    {
+      "subject": "Chemistry",
+      "candidateTitle": "Dynamic Equilibrium: Equal Rates, Not Equal Concentrations | HSC Chemistry Module 5",
+      "playlistCandidate": "Year 12 Chemistry: Module 5, Equilibrium and Acid Reactions (2017 Syllabus)",
+      "cohortContext": "Year 12 2027 HSC cohort, legacy 2017 syllabus, per verified priority plan",
+      "officialCourseUrl": "https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/chemistry-stage-6-2017",
+      "status": "silent draft and draft brief prepared; source/visual review in progress; no selected narration, full export or uploadable package",
+      "draftLessonPath": "docs/production/drafts/module5-chemistry-l1-2026-10-10/lesson.json",
+      "draftBriefPath": "docs/production/drafts/module5-chemistry-l1-2026-10-10/production-brief.json"
+    },
+    {
+      "subject": "Biology",
+      "candidateTitle": "Sexual vs Asexual Reproduction: Continuity and Variation | HSC Biology Module 5",
+      "playlistCandidate": "Year 12 Biology: Module 5, Heredity (2017 Syllabus)",
+      "cohortContext": "Year 12 2027 HSC cohort, legacy 2017 syllabus, per verified priority plan",
+      "officialCourseUrl": "https://www.nsw.gov.au/education-and-training/nesa/curriculum/science/biology-stage-6-2017",
+      "status": "silent draft and draft brief prepared; source/visual review in progress; no selected narration, full export or uploadable package",
+      "draftLessonPath": "docs/production/drafts/module5-biology-l1-2026-10-10/lesson.json",
+      "draftBriefPath": "docs/production/drafts/module5-biology-l1-2026-10-10/production-brief.json"
+    }
+  ],
+  "globalBlockers": [
+    "Exact voiced preview review is pending.",
+    "Human listening is pending for the current paced revisions.",
+    "No current full exports exist.",
+    "Export-stage brief checks and input freeze remain pending.",
+    "Full-package release review remains pending.",
+    "Final chapters depend on exact frozen full exports.",
+    "No new current candidates are uploadable.",
+    "Historical visibility is from dated local records only, not a live channel check."
+  ],
+  "coordinatorVerification": {
+    "boundFileHashesChecked": 20,
+    "date": "2026-10-10",
+    "liveChannelChecked": false,
+    "scope": "Every queued file path with a SHA-256 matches local bytes; no publication approval."
+  },
+  "productionPriorityAfterCurrentBatch": "Year 12 Module 5 in Chemistry and Biology. Year 11 yield/purity remains a learner-route handoff but is deferred in production."
+}

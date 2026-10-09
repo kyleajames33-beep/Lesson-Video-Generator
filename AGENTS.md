@@ -43,3 +43,17 @@
   still/UI observations and human listening separate. Pending listening is
   not a pass; public release needs the existing full-package review gate and
   its current teachingBriefPath. Preserve old releases and their evidence.
+
+- The user explicitly authorised coordinated parallel agents for this video
+  production project on 10 October 2026. Root acts as project manager, assigns
+  bounded file ownership and selects available models by task. Prefer Astra
+  for difficult visual teaching design, Sol 6.1 for authoring, implementation
+  and science review, and a lighter model for bounded mechanical inventory.
+  These are routing judgements, not claims of guaranteed quality or savings.
+  Keep authoring and independent review separate. Root resolves findings and
+  owns selected source integration, paid narration, exports and publication.
+  Respect the session concurrency limit; queue roles in waves. Do not let
+  parallel writers modify the same files or frozen release inputs. Maintain
+  docs/production/parallel-production-board-2026-10-10.json with actual task
+  state, ownership, evidence and unresolved gates. Delegation never supplies
+  missing human listening or release approval.

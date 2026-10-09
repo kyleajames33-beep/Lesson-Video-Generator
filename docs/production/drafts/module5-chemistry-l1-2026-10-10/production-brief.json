@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "docs/production/drafts/module5-chemistry-l1-2026-10-10/lesson.json",
+    "lessonSha256": "14e05ef9c9f6808bb07565d1d9d3030515f157cfc161c24e58ddd9e5f43b497a"
+  },
+  "progression": {
+    "planPath": "docs/production/year12-module5-teaching-priority-2026-10-10.md",
+    "prerequisiteKnowledge": "Reactants/products, particle model and rate as change per time. Entry check: in A ⇌ B, can each arrow describe an ongoing conversion? If unclear, revisit Year 11 particle/rate support; support source review is pending. No ICE prerequisite.",
+    "startsWith": "A sealed drink looks unchanged, although exchange can continue.",
+    "stopsAfter": "Learner explains equal non-zero forward/reverse rates, stable observable composition, unequal concentrations and closed-system scope. Static mechanical contrast is labelled. Observation alone is not proof.",
+    "nextLesson": "C2: how a specified reactant-rich reversible system approaches equilibrium, using selected L2/L3 cores. Its independent review is pending. No disturbance prediction, K expression or ICE table in this lesson."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/visual-design-handbook.md",
+    "docs/production/preview-first-review.md",
+    "docs/production/course-progression-plan-2026-10-09.md",
+    "docs/production/course-content-checklist-2026-10-09.md"
+  ],
+  "teaching": {
+    "task": "Explain dynamic equilibrium using equal non-zero forward and reverse rates, stable composition and a stated closed-system model. Distinguish equal rates from equal concentrations and steady observation from evidence of exchange.",
+    "causalExplanation": "In the supplied one-to-one model, forward conversion removes A at the rate reverse conversion replaces it. Both rates are non-zero, but their effects cancel, keeping each concentration steady. Concentration is amount per volume, not traffic per time.",
+    "conversationalApproach": "Connected Australian English with sealed-drink context and traffic metaphor. Essential visual relationships are spoken. No viewing-command sequence, promised marks or unverified historical anecdote. Gentler 130 WPM planning allowance is a hypothesis, not selected delivery.",
+    "openingDecision": "Rhetorical surprise: can an unchanged drink still exchange CO₂? It motivates the observable/process distinction. Actual independent response is protected later in quick-check.",
+    "understandingCheck": "Synthetic C ⇌ D transfer with unequal steady concentrations and supplied equal non-zero conversion counts. Require classification, causal balance and why steady readings alone would be insufficient. Prompt/feedback are separate planned recordings with assembled silence, not a narration tag.",
+    "curriculumScope": "Chemistry Year 12 Module 5, 2017 syllabus for 2027 HSC cohort per dated priority plan. Candidate contribution to static/dynamic models and open/closed analysis, not complete ACSCH079/091 action coverage or practical conduct. Mechanical static model is explicit. Fixed-temperature, fixed-volume, closed, reversible model; no ICE/K calculations, catalysts or disturbance rules."
+  },
+  "scenes": [
+    {
+      "sceneId": "title",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/TitleSlide.tsx",
+      "teachingReason": "Retain identity layout and correct the short title.",
+      "narrationCue": "Static and Dynamic Equilibrium",
+      "motionPurpose": "Title reveal then stable hold.",
+      "holdPurpose": "Short readable identity hold; no spoken catalogue metadata."
+    },
+    {
+      "sceneId": "hook",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/HookSlide.tsx comparison cards; planned m5L1SparklingBottle asset remains inactive",
+      "teachingReason": "Retain sealed-drink context with neutral Now/Later cards. Explicit comparison suppresses the unrelated default atom and one-atom label when the bottle image is missing.",
+      "narrationCue": "Does that mean the carbon dioxide has stopped moving?",
+      "motionPurpose": "Stable question; opening is rhetorical, not a scored prediction.",
+      "holdPurpose": "Hold the question while the distinction is introduced."
+    },
+    {
+      "sceneId": "concept-two-states",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx diagramFocus; src/slides/diagrams/kinds/chem-y12-m5/ExchangeDiagram.tsx (chem12m5Exchange)",
+      "teachingReason": "Replace incorrect combustion diorama with existing ongoing equilibrium exchange. startAtEq with 6 A and 2 B keeps average composition stable while conversions continue. The supported book stays a labelled static mechanical contrast in copy.",
+      "narrationCue": "Book contrast at 2 seconds; chemical contrast at 22 seconds; thermal-motion caveat at frame540; exchange entrance frame660. All estimates from draft speech, not measured alignment.",
+      "motionPurpose": "Two-way exchange explains continuing conversion with unchanged unequal amounts. Two plinths mean species in one mixture, not compartments; motion is schematic. graph none and no disturbances keep approach/K out of scope. Meter disabled because its 15px labels are too small; essential equal non-zero rates remain large stable scene copy.",
+      "holdPurpose": "The first22 seconds deliberately hold the supported-book distinction and thermal-motion caveat. Blank diagram space is inactive during this static contrast. The explicit dynamic bullet arrives at22 seconds, rather than being distributed near scene end. Replace cue estimates after recording."
+    },
+    {
+      "sceneId": "definition",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/DefinitionSlide.tsx",
+      "teachingReason": "Retain the stable vocabulary board with accurate boundary definitions.",
+      "narrationCue": "A closed system keeps matter inside, although energy can cross.",
+      "motionPurpose": "Reveal definitions as stable blocks, not vibrating words.",
+      "holdPurpose": "Give the matter/energy distinction a reading hold."
+    },
+    {
+      "sceneId": "concept-conditions",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx and src/slides/diagrams/TableReveal.tsx",
+      "teachingReason": "Retain sealed/open comparison; remove defective BottleDiagram binding until opt-in correction is reviewed.",
+      "narrationCue": "The problem is the net loss, not the complete disappearance of the reverse process.",
+      "motionPurpose": "Reveal boundary comparison; no zero-dissolution/drain-all animation.",
+      "holdPurpose": "Keep fixed conditions and the net-loss caveat available."
+    },
+    {
+      "sceneId": "worked-example",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/WorkedExampleSlide.tsx with calculationPresentation; src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "Separate the short explanation task, one-to-one equation, two large opposite-direction rate cards, concentration references with units and scope note. Essential 4 particles per second evidence is no longer coach-note-only.",
+      "narrationCue": "The reverse process replaces A just as quickly.",
+      "motionPurpose": "One active reasoning stage at frames780,1050,1290, retaining established results. Rates/givens stay available while removal/replacement, stable composition and unequal amounts are explained. Draft cue estimates only.",
+      "holdPurpose": "Reasoning stages hold separately; example is synthetic, not experimental data."
+    },
+    {
+      "sceneId": "worked-example-2",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/WorkedExampleSlide.tsx",
+      "teachingReason": "Retain evidence-oriented example; replace disruptive isotope-addition proof with detection-limit reasoning.",
+      "narrationCue": "The reaction might simply be too slow to detect over that time.",
+      "motionPurpose": "Separate observation, possible explanations and discriminating process evidence.",
+      "holdPurpose": "Allow reading of both possible explanations before the justified conclusion."
+    },
+    {
+      "sceneId": "misconception",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/MisconceptionSlide.tsx",
+      "teachingReason": "Retain contrast layout; explicitly separate rate, concentration and completion.",
+      "narrationCue": "Rate describes how fast conversion happens.",
+      "motionPurpose": "Emphasise the rate/amount distinction once; stable copy afterwards.",
+      "holdPurpose": "Reading hold protects the equal-or-unequal concentration qualification."
+    },
+    {
+      "sceneId": "quick-check",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/QuickCheckSlide.tsx with calculationPresentation; src/slides/shared/OrganisedCalculation.tsx; src/lesson/answer-timing.mjs",
+      "teachingReason": "Separate short task/equation from two opposing average rate cards, steady/unequal concentration stimulus, system conditions and explanation prompts. Full original question remains in question and spoken prompt; no answer is in stimulus.",
+      "narrationCue": "Prompt ends at Take a moment; feedback starts Yes, this supplied evidence.",
+      "motionPurpose": "All reasoning stages remain hidden until answerVisibleStart1368 and then land at1368,1608,1848. Prompt/evidence remain visible during the planned8-second response interval1128-1368. No measured timing claim.",
+      "holdPurpose": "Planned 8-second silence at1128-1368. Duplicate left pause prompt removed after exact bb97 frame1367 placed it near bottom chrome. The existing right-side pause instruction remains. Shortened neutral note improves left caption clearance. Frame estimates, not measured assembly. Phone reference/given-label readability remains unresolved."
+    },
+    {
+      "sceneId": "summary",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "Retain recap board and handoff, replacing absolute closure and equal-amount claims.",
+      "narrationCue": "Closure helps make equilibrium possible; it does not prove it has been reached.",
+      "motionPurpose": "Stable recap items and final approach-to-equilibrium handoff.",
+      "holdPurpose": "Read core distinctions; no ICE/K calculation or rate-curve approach teaching here."
+    }
+  ],
+  "scriptReview": {
+    "status": "pending",
+    "reviewer": "",
+    "evidence": null
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Additive silent source draft. All timing/reveals are estimates. Independent science/curriculum review, native visual QA, continuous playback and human listening are pending. No selected audio/captions/alignment. Original source and recordings remain historical evidence. Neither recording nor export stage is approved."
+}

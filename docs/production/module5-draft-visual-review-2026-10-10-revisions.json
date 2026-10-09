@@ -1,0 +1,452 @@
+{
+  "additionalInspectedDependencies": [
+    {
+      "sha256": "b3bdb4000dc88ee6eeb23472aec149f03cfd85da31e2639e79d1316bc522dd12",
+      "path": "src/slides/diagrams/kinds/bio-y12-m5/LineageDiagram.tsx"
+    },
+    {
+      "sha256": "cd95929581bbed8948ea35838a4a62210d24cd660f0649c6d475575dcfbb274f",
+      "path": "src/slides/diagrams/TableReveal.tsx"
+    }
+  ],
+  "runs": [
+    {
+      "source": "docs/production/drafts/module5-chemistry-l1-2026-10-10/lesson.json",
+      "sourceSha256": "bb97d2349e3088da83b2581662dc2237876a1ed41fec27b51af86898660ea3aa",
+      "scope": "Exact LessonVideo/release entry with draft source props. Native 1920x1080 and 384x216 surrogate phone stills. No selected speech, actual device, external captions or motion approval.",
+      "dependencies": [
+        {
+          "path": "src/dev/release-entry.tsx",
+          "sha256": "db40ab64f1604b4a08be8504383b9dea9c77ca999094eac222cb6ecca101c9dc"
+        },
+        {
+          "path": "src/LessonVideo.tsx",
+          "sha256": "f86792588be7f08ec09b8ff4c1a7f90487809d6ecef5b67bfcd8e410b5f0dc99"
+        },
+        {
+          "path": "src/slides/HookSlide.tsx",
+          "sha256": "7310b1665a522e12c07defd23f321656dd45d45e39c355108dc575d93f478873"
+        },
+        {
+          "path": "src/slides/ConceptSlide.tsx",
+          "sha256": "c77dd61bdae5a12de62cf0f64af13e842e1311e53f83c0b92ef3fb3070b08dd3"
+        },
+        {
+          "path": "src/slides/WorkedExampleSlide.tsx",
+          "sha256": "b88bc5a76011adbd579c62ddf01a578b1d31678eedd7407acad6b5e5a2db0acf"
+        },
+        {
+          "path": "src/slides/QuickCheckSlide.tsx",
+          "sha256": "a3688e1ff6eeacd95e9e96e5121a98aeac9a4644a0541fc7522123213f14c750"
+        },
+        {
+          "path": "src/slides/diagrams/kinds/chem-y12-m5/ExchangeDiagram.tsx",
+          "sha256": "550f20f17681ff2f8c95d5dd75208f848fe5427706e09f74afc567e527d9598d"
+        },
+        {
+          "path": "src/slides/diagrams/kinds/chem-y12-m5/exchangeSim.ts",
+          "sha256": "ef1cb933a4a16cd1d01eb3d1e9fa282b16664302b0cf3d99cce2a3d6b065eca2"
+        },
+        {
+          "path": "src/lesson/answer-timing.mjs",
+          "sha256": "3ddcab52b4b0a33cc404dd0c60c0d31c35c926ff0caec410a5c72605e7e54656"
+        },
+        {
+          "path": "src/lesson/timeline.mjs",
+          "sha256": "6a397f94d35765d17972ed4519f51d9eea60ab1385e2a663c48a0e2842851512"
+        }
+      ],
+      "frames": [
+        {
+          "sceneId": "concept-two-states",
+          "sceneLocalFrame": 690,
+          "compositionFrame": 1590,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/chem-revised-concept-two-states-690.png",
+          "sha256": "9e18f818220c19896904a17e24c94db9f2333463d530b48f74089f2133460354"
+        },
+        {
+          "sceneId": "concept-two-states",
+          "sceneLocalFrame": 690,
+          "compositionFrame": 1590,
+          "scale": 0.2,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/chem-revised-concept-two-states-690-phone-384.png",
+          "sha256": "57ea8a2cb651a474b45875644f469dc8b8e149fb703d3e4ff5e3c221de4953c9"
+        },
+        {
+          "sceneId": "concept-two-states",
+          "sceneLocalFrame": 910,
+          "compositionFrame": 1810,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/chem-revised-concept-two-states-910.png",
+          "sha256": "703ec1d412d805dc264c3088b810e2ce60ed6b3d621703d62b542b35f15fe47b"
+        },
+        {
+          "sceneId": "worked-example",
+          "sceneLocalFrame": 1000,
+          "compositionFrame": 6655,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/chem-revised-worked-example-1000.png",
+          "sha256": "3a251de861b6538dfca6ac2b665e44fbba81e87636eb6058ec4b50379e2fbc66"
+        },
+        {
+          "sceneId": "worked-example",
+          "sceneLocalFrame": 1500,
+          "compositionFrame": 7155,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/chem-revised-worked-example-1500.png",
+          "sha256": "96de13e797a24401372874d9a446ca12ad75919dcb8806e37a1efe871ccc9655"
+        },
+        {
+          "sceneId": "worked-example",
+          "sceneLocalFrame": 1500,
+          "compositionFrame": 7155,
+          "scale": 0.2,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/chem-revised-worked-example-1500-phone-384.png",
+          "sha256": "6fbd0af1a0b64bd6831251c0a8e33208064309cdee1bf9f6f9dcaebcf71adb08"
+        },
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 1367,
+          "compositionFrame": 11757,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/chem-revised-quick-check-1367.png",
+          "sha256": "75bbbcd8d90890321274b327b3dfd302d4d5948e65928530b679a4580b1571b3"
+        },
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 1367,
+          "compositionFrame": 11757,
+          "scale": 0.2,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/chem-revised-quick-check-1367-phone-384.png",
+          "sha256": "82fa5483ab34b46e038feee0e6a8c0cb01e33ac1550754b85434d08a26574033"
+        },
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 1420,
+          "compositionFrame": 11810,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/chem-revised-quick-check-1420.png",
+          "sha256": "f8a3182e52b023397be547d937cbb6708e1ddb540898be7860efb957b53cb585"
+        },
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 2000,
+          "compositionFrame": 12390,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/chem-revised-quick-check-2000.png",
+          "sha256": "36d502657492882126dc4d62d81588d910037920781bcdeb054fd0c38b6d8c9a"
+        },
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 2000,
+          "compositionFrame": 12390,
+          "scale": 0.2,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/chem-revised-quick-check-2000-phone-384.png",
+          "sha256": "29cd3f611cdf9266ae867e08c3f18219726daa876756dacb7b990a406e95bd95"
+        }
+      ]
+    },
+    {
+      "source": "docs/production/drafts/module5-chemistry-l1-2026-10-10/lesson.json",
+      "sourceSha256": "14e05ef9c9f6808bb07565d1d9d3030515f157cfc161c24e58ddd9e5f43b497a",
+      "scope": "Exact LessonVideo/release entry with draft source props. Native 1920x1080 and 384x216 surrogate phone stills. No selected speech, actual device, external captions or motion approval.",
+      "dependencies": [
+        {
+          "path": "src/dev/release-entry.tsx",
+          "sha256": "db40ab64f1604b4a08be8504383b9dea9c77ca999094eac222cb6ecca101c9dc"
+        },
+        {
+          "path": "src/LessonVideo.tsx",
+          "sha256": "f86792588be7f08ec09b8ff4c1a7f90487809d6ecef5b67bfcd8e410b5f0dc99"
+        },
+        {
+          "path": "src/slides/HookSlide.tsx",
+          "sha256": "7310b1665a522e12c07defd23f321656dd45d45e39c355108dc575d93f478873"
+        },
+        {
+          "path": "src/slides/ConceptSlide.tsx",
+          "sha256": "c77dd61bdae5a12de62cf0f64af13e842e1311e53f83c0b92ef3fb3070b08dd3"
+        },
+        {
+          "path": "src/slides/WorkedExampleSlide.tsx",
+          "sha256": "b88bc5a76011adbd579c62ddf01a578b1d31678eedd7407acad6b5e5a2db0acf"
+        },
+        {
+          "path": "src/slides/QuickCheckSlide.tsx",
+          "sha256": "a3688e1ff6eeacd95e9e96e5121a98aeac9a4644a0541fc7522123213f14c750"
+        },
+        {
+          "path": "src/slides/diagrams/kinds/chem-y12-m5/ExchangeDiagram.tsx",
+          "sha256": "550f20f17681ff2f8c95d5dd75208f848fe5427706e09f74afc567e527d9598d"
+        },
+        {
+          "path": "src/slides/diagrams/kinds/chem-y12-m5/exchangeSim.ts",
+          "sha256": "ef1cb933a4a16cd1d01eb3d1e9fa282b16664302b0cf3d99cce2a3d6b065eca2"
+        },
+        {
+          "path": "src/lesson/answer-timing.mjs",
+          "sha256": "3ddcab52b4b0a33cc404dd0c60c0d31c35c926ff0caec410a5c72605e7e54656"
+        },
+        {
+          "path": "src/lesson/timeline.mjs",
+          "sha256": "6a397f94d35765d17972ed4519f51d9eea60ab1385e2a663c48a0e2842851512"
+        }
+      ],
+      "frames": [
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 1367,
+          "compositionFrame": 11757,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/chem-final-clearance-quick-check-1367.png",
+          "sha256": "a894fd5a57d37791ba95ea7bccbf4305dafdb3d644ffa85be71b9d178583eeff"
+        },
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 1367,
+          "compositionFrame": 11757,
+          "scale": 0.2,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/chem-final-clearance-quick-check-1367-phone-384.png",
+          "sha256": "255152c332762368c9bed8836f28152ef39b00084ca12628f10f6ac07439a16e"
+        }
+      ]
+    },
+    {
+      "source": "docs/production/drafts/module5-biology-l1-2026-10-10/lesson.json",
+      "sourceSha256": "712a505e6c41fb5acb0d670c25614c88162dd5895013174c7b0d9988a872fb26",
+      "scope": "Exact LessonVideo/release entry with draft source props. Native 1920x1080 and 384x216 surrogate phone stills. No selected speech, actual device, external captions or motion approval.",
+      "dependencies": [
+        {
+          "path": "src/dev/release-entry.tsx",
+          "sha256": "db40ab64f1604b4a08be8504383b9dea9c77ca999094eac222cb6ecca101c9dc"
+        },
+        {
+          "path": "src/LessonVideo.tsx",
+          "sha256": "f86792588be7f08ec09b8ff4c1a7f90487809d6ecef5b67bfcd8e410b5f0dc99"
+        },
+        {
+          "path": "src/slides/HookSlide.tsx",
+          "sha256": "7310b1665a522e12c07defd23f321656dd45d45e39c355108dc575d93f478873"
+        },
+        {
+          "path": "src/slides/ConceptSlide.tsx",
+          "sha256": "c77dd61bdae5a12de62cf0f64af13e842e1311e53f83c0b92ef3fb3070b08dd3"
+        },
+        {
+          "path": "src/slides/WorkedExampleSlide.tsx",
+          "sha256": "b88bc5a76011adbd579c62ddf01a578b1d31678eedd7407acad6b5e5a2db0acf"
+        },
+        {
+          "path": "src/slides/QuickCheckSlide.tsx",
+          "sha256": "a3688e1ff6eeacd95e9e96e5121a98aeac9a4644a0541fc7522123213f14c750"
+        },
+        {
+          "path": "src/slides/diagrams/kinds/chem-y12-m5/ExchangeDiagram.tsx",
+          "sha256": "550f20f17681ff2f8c95d5dd75208f848fe5427706e09f74afc567e527d9598d"
+        },
+        {
+          "path": "src/slides/diagrams/kinds/chem-y12-m5/exchangeSim.ts",
+          "sha256": "ef1cb933a4a16cd1d01eb3d1e9fa282b16664302b0cf3d99cce2a3d6b065eca2"
+        },
+        {
+          "path": "src/lesson/answer-timing.mjs",
+          "sha256": "3ddcab52b4b0a33cc404dd0c60c0d31c35c926ff0caec410a5c72605e7e54656"
+        },
+        {
+          "path": "src/lesson/timeline.mjs",
+          "sha256": "6a397f94d35765d17972ed4519f51d9eea60ab1385e2a663c48a0e2842851512"
+        }
+      ],
+      "frames": [
+        {
+          "sceneId": "hook",
+          "sceneLocalFrame": 300,
+          "compositionFrame": 656,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-corrected-hook-300.png",
+          "sha256": "309cf3ceedb292ea0031598ba9c3522a3507da83498f79dda89071a5fe5796da"
+        },
+        {
+          "sceneId": "hook",
+          "sceneLocalFrame": 300,
+          "compositionFrame": 656,
+          "scale": 0.2,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-corrected-hook-300-phone-384.png",
+          "sha256": "757a65aa2fef76990072dc10d1c4aeef85a22c5e4119f6b786a29087b8653e37"
+        },
+        {
+          "sceneId": "concept-continuity",
+          "sceneLocalFrame": 520,
+          "compositionFrame": 1752,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-corrected-concept-continuity-520.png",
+          "sha256": "447e2079646ab1ad0854a761de578d9f980d09768d5895181c9408d98e582052"
+        },
+        {
+          "sceneId": "concept-continuity",
+          "sceneLocalFrame": 1300,
+          "compositionFrame": 2532,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-corrected-concept-continuity-1300.png",
+          "sha256": "356de2a898c6de8d7a9f81d3382606018a54df7927804eda522c8e13361182f8"
+        },
+        {
+          "sceneId": "concept-continuity",
+          "sceneLocalFrame": 1300,
+          "compositionFrame": 2532,
+          "scale": 0.2,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-corrected-concept-continuity-1300-phone-384.png",
+          "sha256": "9ad03ff7bb910347285aa2f194b3bcd197bdb0879db9efcf2ac7836a3f67667c"
+        },
+        {
+          "sceneId": "concept-tradeoff",
+          "sceneLocalFrame": 1340,
+          "compositionFrame": 7996,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-corrected-concept-tradeoff-1340.png",
+          "sha256": "ec85bc8cab03ac503f72d98641268517b8abe774225236f03bcfe20c8ece5143"
+        },
+        {
+          "sceneId": "concept-tradeoff",
+          "sceneLocalFrame": 1340,
+          "compositionFrame": 7996,
+          "scale": 0.2,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-corrected-concept-tradeoff-1340-phone-384.png",
+          "sha256": "ab8c9a1b39ab02c1deb0d0cc2523059c9cc5ce31aa7fd9bbb160a89dbd145061"
+        },
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 959,
+          "compositionFrame": 10753,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-corrected-quick-check-959.png",
+          "sha256": "dac34597e67d0cb28c26db732f256b91968ff774c260f001c771ae708fff7305"
+        },
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 959,
+          "compositionFrame": 10753,
+          "scale": 0.2,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-corrected-quick-check-959-phone-384.png",
+          "sha256": "a3a368ae985b0e3e6186e4cccba7ca9c5dddd2ef6487d883e0d40a64ee58a610"
+        },
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 1012,
+          "compositionFrame": 10806,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-corrected-quick-check-1012.png",
+          "sha256": "8e0a4b417059b9e2214f012121cb18e402e99e5a6be3d74d5141abfac2f86b04"
+        },
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 1300,
+          "compositionFrame": 11094,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-corrected-quick-check-1300.png",
+          "sha256": "1a4edcf7d7980b126a693d86e01a606875de3f02db226322d5c953a009e748a6"
+        },
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 1300,
+          "compositionFrame": 11094,
+          "scale": 0.2,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-corrected-quick-check-1300-phone-384.png",
+          "sha256": "5492f8febe2ae96992309480d85c420c8f7fac49411f12512125a7ccf244c971"
+        }
+      ]
+    },
+    {
+      "source": "docs/production/drafts/module5-biology-l1-2026-10-10/lesson.json",
+      "sourceSha256": "17591531e1050b33a758f5a43a470b217330c7e969240a991d08bf5d1d3c826e",
+      "scope": "Exact LessonVideo/release entry with draft source props. Native 1920x1080 and 384x216 surrogate phone stills. No selected speech, actual device, external captions or motion approval.",
+      "dependencies": [
+        {
+          "path": "src/dev/release-entry.tsx",
+          "sha256": "db40ab64f1604b4a08be8504383b9dea9c77ca999094eac222cb6ecca101c9dc"
+        },
+        {
+          "path": "src/LessonVideo.tsx",
+          "sha256": "f86792588be7f08ec09b8ff4c1a7f90487809d6ecef5b67bfcd8e410b5f0dc99"
+        },
+        {
+          "path": "src/slides/HookSlide.tsx",
+          "sha256": "7310b1665a522e12c07defd23f321656dd45d45e39c355108dc575d93f478873"
+        },
+        {
+          "path": "src/slides/ConceptSlide.tsx",
+          "sha256": "c77dd61bdae5a12de62cf0f64af13e842e1311e53f83c0b92ef3fb3070b08dd3"
+        },
+        {
+          "path": "src/slides/WorkedExampleSlide.tsx",
+          "sha256": "b88bc5a76011adbd579c62ddf01a578b1d31678eedd7407acad6b5e5a2db0acf"
+        },
+        {
+          "path": "src/slides/QuickCheckSlide.tsx",
+          "sha256": "a3688e1ff6eeacd95e9e96e5121a98aeac9a4644a0541fc7522123213f14c750"
+        },
+        {
+          "path": "src/slides/diagrams/kinds/chem-y12-m5/ExchangeDiagram.tsx",
+          "sha256": "550f20f17681ff2f8c95d5dd75208f848fe5427706e09f74afc567e527d9598d"
+        },
+        {
+          "path": "src/slides/diagrams/kinds/chem-y12-m5/exchangeSim.ts",
+          "sha256": "ef1cb933a4a16cd1d01eb3d1e9fa282b16664302b0cf3d99cce2a3d6b065eca2"
+        },
+        {
+          "path": "src/lesson/answer-timing.mjs",
+          "sha256": "3ddcab52b4b0a33cc404dd0c60c0d31c35c926ff0caec410a5c72605e7e54656"
+        },
+        {
+          "path": "src/lesson/timeline.mjs",
+          "sha256": "6a397f94d35765d17972ed4519f51d9eea60ab1385e2a663c48a0e2842851512"
+        }
+      ],
+      "frames": [
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 959,
+          "compositionFrame": 10753,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-grouped-final-quick-check-959.png",
+          "sha256": "832cece0aaa6f131efa6e7f7258d23e021902cebf9ff75370ba8aaedfdf20dfd"
+        },
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 959,
+          "compositionFrame": 10753,
+          "scale": 0.2,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-grouped-final-quick-check-959-phone-384.png",
+          "sha256": "af5a17772263c344451f095604b2268f3c213739e9e68fe4bc1a6150a1b81808"
+        },
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 1012,
+          "compositionFrame": 10806,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-grouped-final-quick-check-1012.png",
+          "sha256": "8b121a5b85e1456fdaddf1e5260aad1e996d7237f68d23332d920257ad8d2c60"
+        },
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 1700,
+          "compositionFrame": 11494,
+          "scale": 1,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-grouped-final-quick-check-1700.png",
+          "sha256": "ae98f66c8f7e737cbcf1343b590ceebad3ed442f9f03e11a82fbfc67d1542189"
+        },
+        {
+          "sceneId": "quick-check",
+          "sceneLocalFrame": 1700,
+          "compositionFrame": 11494,
+          "scale": 0.2,
+          "path": "out/prototypes/module5-draft-visual-review-2026-10-10/bio-grouped-final-quick-check-1700-phone-384.png",
+          "sha256": "27731ce5fddfad136c956920d46e35d1f75df8d54ae1d4c68557d5420975fb5b"
+        }
+      ]
+    }
+  ],
+  "reviewDate": "2026-10-10",
+  "scope": "Silent sampled layout review through actual LessonVideo release entry; no motion, audio, device, external captions or release approval"
+}

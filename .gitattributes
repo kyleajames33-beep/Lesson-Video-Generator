@@ -437,3 +437,7 @@ src/styles/fonts.ts -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,
 src/styles/tokens.ts text eol=crlf
 src/transitions/cinematicTransitions.tsx text eol=crlf
 src/transitions/pickTransition.ts text eol=crlf
+
+# Preserve exact Module 5 draft/review fingerprints across transfer and checkout.
+docs/production/drafts/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/production/module5-*-2026-10-10* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "auditor": "/root/m5_rules_audit",
+  "scope": "Mechanical rules and provenance audit for stable silent Module 5 opening drafts. No science, visual quality, pacing, or playback approval is implied.",
+  "biology": {
+    "status": "checked-initial-stable-draft",
+    "lessonPath": "docs/production/drafts/module5-biology-l1-2026-10-10/lesson.json",
+    "lessonSha256": "921923cfabfb29cc27c693f9b59bb1e364e16b3b02854ca2b9d36ba1965b6af6",
+    "scopeNote": "This check binds only to the exact initial stable draft hash above. A substantive script revision is forthcoming and will require a fresh mechanical check before its hash can be reported as checked.",
+    "briefPath": "docs/production/drafts/module5-biology-l1-2026-10-10/production-brief.json",
+    "briefBindsExactLesson": true,
+    "originPath": "src/data/biology-y12-m5-l1-reproduction-continuity.json",
+    "originSha256": "104d48a5c1308965859ac7ac2035fc9a586bbd4faffb370e98dfba35ab6bdf02",
+    "originHashMatchesBriefAndGenerator": true,
+    "commands": [
+      {
+        "command": "node scripts/validate-lesson.mjs docs/production/drafts/module5-biology-l1-2026-10-10/lesson.json",
+        "result": "pass"
+      },
+      {
+        "command": "node scripts/check-production-brief.mjs docs/production/drafts/module5-biology-l1-2026-10-10/production-brief.json --stage=draft",
+        "result": "ready, no blockers; script/source review, exact voiced preview, and human listening correctly remain pending"
+      },
+      {
+        "command": "Get-FileHash <lesson.json and original source> -Algorithm SHA256",
+        "result": "both hashes match the report and brief"
+      },
+      {
+        "command": "Punctuation/media-binding scan of the Biology draft directory",
+        "result": "no U+2014 found; audio/alignment/caption terms occur only in notes, limitations, recording instructions, and silent recording plan, not as bound lesson media"
+      }
+    ],
+    "checks": {
+      "allOriginalSceneIdsAndTypesPreserved": true,
+      "eachSceneHasDecisionReferencePurposeCueMotionAndHold": true,
+      "progressionEntryStartStopNextPresent": true,
+      "researchReferencesExist": true,
+      "draftAndVisualPrototypeReferencesExist": true,
+      "oldAudioAlignmentTimedCaptionBindingsAbsent": true,
+      "reviewStatesRemainPending": true,
+      "quickCheckPromptAndFeedbackSeparate": true,
+      "responseGapIsProposedAndUnmeasured": true,
+      "noPlaybackOrHumanListeningApprovalClaimed": true
+    },
+      "findings": [
+      {
+        "severity": "known-inactive-resource",
+        "finding": "Registered original hook image bioM5L1BananaClone is absent from its local public asset path, but it is excluded from the active lesson. The selected draft uses explicit comparison cards and has no image binding. The author notes and visual-reuse review disclose the missing resource; this audit does not assess card visual quality.",
+        "evidence": [
+          "docs/production/drafts/module5-biology-l1-2026-10-10/production-brief.json",
+          "docs/production/module5-visual-reuse-review-2026-10-10.md",
+          "docs/production/asset-index.json"
+        ]
+      }
+    ],
+    "pendingGates": [
+      "Independent science and syllabus review",
+      "Native visual/layout review and any required asset resolution",
+      "Exact voiced Remotion playback or short rendered pilot after recording",
+      "Human listening of the selected recording",
+      "External captions/device inspection"
+    ],
+    "finalRevisionAudit": {
+      "status": "checked",
+      "lessonSha256": "712a505e6c41fb5acb0d670c25614c88162dd5895013174c7b0d9988a872fb26",
+      "briefSha256": "bbc943415f0c0540417f42ba2f891abbd0422d67615d7bd0dfa637363d00e9f3",
+      "briefBindsExactLesson": true,
+      "originSha256": "104d48a5c1308965859ac7ac2035fc9a586bbd4faffb370e98dfba35ab6bdf02",
+      "initialDraftPreservedAt": "docs/production/drafts/module5-biology-l1-2026-10-10/initial-review/lesson.json",
+      "validation": {
+        "lessonSchema": "pass",
+        "draftBrief": "ready, no blockers",
+        "originalSceneIdsAndTypes": "11 retained",
+        "briefSceneRows": "11 complete",
+        "researchReferences": "present",
+        "progressionFields": "entry, start, stop, next present",
+        "oldAudioTimedCaptionAlignmentBindings": "none in selected lesson",
+        "prohibitedPunctuationAndMojibakeScan": "no U+2014, U+00E2, U+00C3, or U+FFFD candidates in either active draft directory"
+      },
+      "responsePlan": {
+        "promptAndFeedback": "separate in recording-segments.json",
+        "plannedSilenceSeconds": 8,
+        "timingStatus": "estimated-not-measured",
+        "answerVisibleStart": 960,
+        "measuredAssembly": false
+      },
+      "briefReviewStates": {
+        "scriptReview": "pending",
+        "voicedPreview": "pending",
+        "humanListening": "pending"
+      },
+      "limitations": [
+        "The author validation marks its independent science state as pending re-review. A separate semantic reviewer outcome is outside this mechanical audit and does not change the brief's pending review fields.",
+        "No exact voiced playback, human listening, or release approval is claimed."
+      ],
+      "laterFinalAddendum": {
+        "status": "checked",
+        "lessonSha256": "17591531e1050b33a758f5a43a470b217330c7e969240a991d08bf5d1d3c826e",
+        "briefSha256": "0e98e5a66403af76a5d7f46b4c98972edac587f348b323b3a6d15b8b03961bc3",
+        "briefBindsExactLesson": true,
+        "previousReviewedRevisionSha256": "712a505e6c41fb5acb0d670c25614c88162dd5895013174c7b0d9988a872fb26",
+        "previousReviewedRevisionPath": "docs/production/drafts/module5-biology-l1-2026-10-10/source-reviewed/lesson.json",
+        "originSha256": "104d48a5c1308965859ac7ac2035fc9a586bbd4faffb370e98dfba35ab6bdf02",
+        "validation": {
+          "lessonSchema": "pass with advisory: pausePrompt intentionally omitted; spoken pause invitation and right-side pause instruction remain",
+          "draftBrief": "ready, no blockers",
+          "sourceReviewedRevisionHashVerified": true,
+          "originalSceneIdsAndTypes": "11 retained",
+          "briefSceneRows": "11 complete",
+          "progressionAndResearchReferences": "present",
+          "oldAudioTimedCaptionAlignmentBindings": "none in selected lesson",
+          "punctuationMojibakeAndBindings": "no U+2014, U+00E2, U+00C3, U+FFFD, old audio, alignment, or timed-caption bindings in active package"
+        },
+        "unchangedNarrationAndRecordingPlan": {
+          "narrationSha256": "cad3edd37cb186f50792d4996f0fc662421d90114040df134dde3f55aa512e1a",
+          "matchesSourceReviewedRevision": true,
+          "recordingSegmentsSha256": "bfd3bf44fa2fc34d343cecab500d6107c81884ac0214e7138019454d21da99f8",
+          "matchesSourceReviewedRevision": true,
+          "promptAndFeedbackRemainSeparate": true,
+          "plannedSilenceSeconds": 8,
+          "timingStatus": "estimated-not-measured"
+        },
+        "quizReveal": {
+          "calculationPresentationStageCount": 4,
+          "stepAts": [960, 1190, 1410, 1640],
+          "answerVisibleStart": 960,
+          "responseHoldStart": 720,
+          "noAnswerStageBeforeFrame960": true,
+          "measuredAssembly": false
+        },
+        "briefReviewStates": {
+          "scriptReview": "pending",
+          "voicedPreview": "pending",
+          "humanListening": "pending"
+        },
+        "visualReviewContext": {
+          "bothSubjectReports": "static samples complete only",
+          "phoneTypography": "pending",
+          "biologyLineageCues": "pending",
+          "continuousPlayback": "pending",
+          "humanListening": "pending"
+        },
+        "limits": [
+          "A separate semantic reviewer reportedly passed classification/curriculum/source review; this mechanical audit did not perform or upgrade that review, and the brief's review states remain pending.",
+          "No playback, human-listening, or release approval is claimed."
+        ]
+      }
+    }
+  },
+  "chemistry": {
+    "status": "checked-initial-stable-draft",
+    "lessonPath": "docs/production/drafts/module5-chemistry-l1-2026-10-10/lesson.json",
+    "lessonSha256": "1bbd79a6b9f8ca574df39967855784aa9b63044ba69911c3c21ab73fdddf7972",
+    "briefPath": "docs/production/drafts/module5-chemistry-l1-2026-10-10/production-brief.json",
+    "briefSha256AfterCopyRepairs": "2f1e8610e2895114f41c85c08a573f3c1a4ea5f4119db7861470592636bb8868",
+    "briefBindsExactLesson": true,
+    "originPath": "src/data/chemistry-y12-m5-l1-static-dynamic-equilibrium.json",
+    "originSha256": "35a841568a024037c706c1fd44f3877e1bc8005486b37aaffd9719553c8e6bf9",
+    "originHashMatchesAuthorValidationAndNotes": true,
+    "originProvenanceInProductionBrief": false,
+    "commands": [
+      {
+        "command": "node scripts/validate-lesson.mjs docs/production/drafts/module5-chemistry-l1-2026-10-10/lesson.json",
+        "result": "pass"
+      },
+      {
+        "command": "node scripts/check-production-brief.mjs docs/production/drafts/module5-chemistry-l1-2026-10-10/production-brief.json --stage=draft",
+        "result": "ready, no blockers after the coordinator repaired the reversible-arrow and CO₂ mojibake; script/source review, exact voiced preview, and human listening correctly remain pending"
+      },
+      {
+        "command": "Get-FileHash <lesson.json and original source> -Algorithm SHA256",
+        "result": "both hashes match the report, current-source brief binding, and original-source author evidence"
+      },
+      {
+        "command": "PowerShell JSON path/scene comparison and Test-Path checks for brief references, original IDs/types, code references, and shared prototype folder",
+        "result": "all 10 original scene IDs/types retained; all 10 brief scene rows complete; all referenced plan/research paths and inspected code/prototype paths exist"
+      },
+      {
+        "command": "Unicode U+2014 scan of both draft directories",
+        "result": "no U+2014 found in either draft package"
+      },
+      {
+        "command": "Unicode mojibake scan for U+00E2, U+00C3, and U+FFFD in both draft directories",
+        "result": "no remaining candidates after the coordinator's brief copy repairs"
+      },
+      {
+        "command": "rg -n 'audioFile|alignment|captionFile|captionPath|audioSrc|backgroundMusic|introVoiceover|\"image\"|\"asset\"|public/assets|audio/' docs/production/drafts/module5-chemistry-l1-2026-10-10/lesson.json",
+        "result": "no old media, timed-caption, alignment, or media asset bindings in selected silent lesson"
+      }
+    ],
+    "checks": {
+      "allOriginalSceneIdsAndTypesPreserved": true,
+      "eachSceneHasDecisionReferencePurposeCueMotionAndHold": true,
+      "progressionEntryStartStopNextPresent": true,
+      "researchReferencesExist": true,
+      "draftAndVisualPrototypeReferencesExist": true,
+      "oldAudioAlignmentTimedCaptionBindingsAbsent": true,
+      "reviewStatesRemainPending": true,
+      "quickCheckPromptAndFeedbackSeparatedInTextOnlyPlan": true,
+      "responseGapIsProposedAndUnmeasured": true,
+      "noPlaybackOrHumanListeningApprovalClaimed": true,
+      "activeMediaBindingsResolve": true
+    },
+    "findings": [
+      {
+        "severity": "resolved",
+        "finding": "The production brief previously contained literal mojibake in reversible-reaction arrow text and the CO₂ formula. The coordinator repaired both. The resulting brief hash is recorded above, the scan found no remaining mojibake candidates in either draft directory, and the draft-stage brief check passes against the unchanged exact lesson hash.",
+        "evidence": [
+          "docs/production/drafts/module5-chemistry-l1-2026-10-10/production-brief.json"
+        ]
+      },
+      {
+        "severity": "provenance-recording-note",
+        "finding": "The production brief binds the exact selected lesson hash but contains no original-source provenance block. The original source path/hash are recorded in author-validation.json and author-notes.md; those values match the source file hash.",
+        "evidence": [
+          "docs/production/drafts/module5-chemistry-l1-2026-10-10/author-validation.json",
+          "docs/production/drafts/module5-chemistry-l1-2026-10-10/author-notes.md"
+        ]
+      },
+      {
+        "severity": "known-inactive-resource",
+        "finding": "Registry resource m5L1SparklingBottle is absent at its registered local path, but it is excluded from the active lesson. The selected lesson has no image, asset, audio, or public-media binding. Existing HookSlide and ExchangeDiagram source references resolve, and the shared visual prototype folder exists.",
+        "evidence": [
+          "docs/production/drafts/module5-chemistry-l1-2026-10-10/author-notes.md",
+          "docs/production/asset-index.json",
+          "docs/production/module5-visual-reuse-review-2026-10-10.md"
+        ]
+      },
+      {
+        "severity": "estimated-timing",
+        "finding": "The silent lesson has responseHoldStart=1128 and answerVisibleStart=1368. The brief and validation label this eight-second boundary as estimated at 30 fps. The text-only plan separates prompt and feedback and proposes a measured assembly after fresh recordings. No actual silence, playback, or listener approval is established.",
+        "evidence": [
+          "docs/production/drafts/module5-chemistry-l1-2026-10-10/lesson.json",
+          "docs/production/drafts/module5-chemistry-l1-2026-10-10/voice-segments.text-only.json",
+          "docs/production/drafts/module5-chemistry-l1-2026-10-10/author-validation.json"
+        ]
+      }
+    ],
+    "pendingGates": [
+      "Independent science and syllabus review",
+      "Native visual/layout review, including whether to restore the inactive bottle image after media restoration",
+      "Fresh separate prompt/feedback recordings and measured response-gap assembly",
+      "Exact voiced Remotion playback or short rendered pilot after recording",
+      "Human listening of the selected recording",
+      "External captions/device inspection"
+    ],
+    "finalRevisionAudit": {
+      "status": "checked",
+      "lessonSha256": "14e05ef9c9f6808bb07565d1d9d3030515f157cfc161c24e58ddd9e5f43b497a",
+      "briefSha256": "cf219070cf30d4cde567db657237a984de4ad4c58a6e8e2c66ece00c3c194feb",
+      "briefBindsExactLesson": true,
+      "originSha256": "35a841568a024037c706c1fd44f3877e1bc8005486b37aaffd9719553c8e6bf9",
+      "originProvenanceEvidence": [
+        "docs/production/drafts/module5-chemistry-l1-2026-10-10/author-validation.json",
+        "docs/production/drafts/module5-chemistry-l1-2026-10-10/author-notes.md"
+      ],
+      "initialDraftPreservedAt": "docs/production/drafts/module5-chemistry-l1-2026-10-10/initial-review/lesson.json",
+      "previousVisualReviewRevisionPreservedAt": "docs/production/drafts/module5-chemistry-l1-2026-10-10/grouped-board-review/lesson.json",
+      "changeSincePreviousRevision": "Removed duplicate quick-check pausePrompt and shortened its neutral display note for lower-left clearance; narration unchanged.",
+      "validation": {
+        "lessonSchema": "pass with advisory: pausePrompt intentionally omitted; right pause instruction and spoken pause invitation remain",
+        "draftBrief": "ready, no blockers",
+        "originalSceneIdsAndTypes": "10 retained",
+        "briefSceneRows": "10 complete",
+        "researchAndCodeReferences": "present",
+        "progressionFields": "entry, start, stop, next present",
+        "oldAudioTimedCaptionAlignmentBindings": "none in selected lesson",
+        "prohibitedPunctuationAndMojibakeScan": "no U+2014, U+00E2, U+00C3, or U+FFFD candidates in either active draft directory"
+      },
+      "calculationPresentation": {
+        "scenes": {
+          "worked-example": { "stages": 3, "taskEquationGivensAndReferencesSeparate": true },
+          "quick-check": { "stages": 3, "taskEquationGivensAndReferencesSeparate": true }
+        },
+        "timingStatus": "draft estimates; no measured alignment or responseHold"
+      },
+      "responsePlan": {
+        "promptAndFeedback": "separate in voice-segments.text-only.json",
+        "plannedSilenceSeconds": 8,
+        "timingStatus": "estimated-unrecorded",
+        "responseHoldStart": 1128,
+        "answerVisibleStart": 1368,
+        "measuredAssembly": false
+      },
+      "diagramAnnotation": "One diagram-level caption label at frame zero identifies a schematic. It is not a speech-synced caption track or measured alignment.",
+      "briefReviewStates": {
+        "scriptReview": "pending",
+        "voicedPreview": "pending",
+        "humanListening": "pending"
+      },
+      "additionalPendingStates": {
+        "scienceVerificationOfChangedDisplayedScience": "required by author-validation note before proceeding",
+        "nativeVisualFinalSample": "pending",
+        "continuousPlayback": "pending",
+        "humanListening": "pending",
+        "learnerEvidence": "pending",
+        "phoneReadability": "unresolved for essential givens/reference typography per author-validation"
+      },
+      "limitations": [
+        "No exact voiced playback, human listening, or release approval is claimed."
+      ]
+    }
+  },
+  "overallLimit": "These checks establish declared structure, provenance bindings, file/reference presence, and honest pending states only. They do not approve scientific meaning, teaching quality, visual design, animation timing, pacing, playback, or release."
+}
