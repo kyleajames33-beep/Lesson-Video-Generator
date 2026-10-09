@@ -1,6 +1,6 @@
 # Production handoff: 9 October 2026
 
-This is the starting point for a new computer or agent. The user asked to commit and push all work and continue the course without losing the accepted teaching changes. The repository contains the code, research, standards and course plans. A checked-in state archive restores ignored lesson drafts and review records. Audio, artwork and MP4s require the separate local transfer archive described below.
+This is the starting point for a new computer or agent. The user asked to commit and push all work and continue the course without losing the accepted teaching changes. The repository contains the code, research, standards and course plans. A checked-in state archive restores ignored lesson drafts and review records. Audio, artwork and MP4s are available through the separate verified GitHub release backup described below.
 
 The next production lesson is **percentage composition and empirical formulas**. First finish the exact voiced-preview check of the latest **limiting-reagents clear-working layout**. Do not restart the scripts or replace the accepted voice takes. The current sources and pending checks are listed below.
 
@@ -8,7 +8,7 @@ The next production lesson is **percentage composition and empirical formulas**.
 
 The user subsequently requested online media backup and continued production here. Read [the continuation review](docs/production/continuation-review-2026-10-09.md) before using the older lesson-state details below. The empirical script now has eleven fresh Simon v4 recordings, measured alignment and a new 321.1667-second voiced candidate at `out/prototypes/empirical-formulas-voiced-2026-10-09/narrated.lesson.json`. The original silent draft is preserved. The next mole-ratios source, portable script and independent science review are also prepared; its recording preparation and voiced review remain pending. Verified short limiting and empirical pilots plus complete empirical listening audio are available at http://127.0.0.1:8778/continuation-review-2026-10-09/. Continuous playback, actual-device/caption checks and human listening are still pending; no full export or publication approval is claimed.
 
-The online backup is being uploaded to a [dedicated GitHub release](docs/production/github-media-backup-2026-10-09.md), including an additive snapshot of this continuation. Consult the checked-in transfer record for verified upload status. Once available, use its download/restore instructions instead of requiring a manual media copy. The original local ZIP and checksum remain valid as an alternative.
+The online backup is published on a [dedicated GitHub release](https://github.com/kyleajames33-beep/Lesson-Video-Generator/releases/tag/workspace-media-2026-10-09), including an additive snapshot of this continuation. All four remote assets match their expected sizes and SHA-256 hashes. Use the [download/restore instructions](docs/production/github-media-backup-2026-10-09.md); a manual media copy is optional. The original local ZIP and checksum remain valid as an alternative.
 
 ## Move to the other computer
 
@@ -16,12 +16,12 @@ Repository: https://github.com/kyleajames33-beep/Lesson-Video-Generator
 
 Branch: `main`. Pull the handoff commit, not an older checkout. Use `npm ci` to install the locked dependencies. The current machine used Node 20.16.0 and npm 10.9.3. Use a compatible Node version with `process.loadEnvFile` support and Python 3.9 or newer for transfer. FFmpeg/FFprobe are needed by the media workflow; see `scripts/lib/media-tools.mjs` for discovery and overrides.
 
-**Copy these two local files to the other computer before retiring this machine:**
+**The media can now be downloaded from GitHub. These two local files are an optional manual-copy alternative:**
 
 - `out/archives/computer-transfer-2026-10-09.zip`
 - `out/archives/computer-transfer-2026-10-09.zip.sha256`
 
-They are ignored by Git and are not on GitHub. The ZIP is 3,062,795,215 bytes (about 2.85 GiB), with 4245 media files. They preserve public audio/artwork, historical rendered media, frozen public copies and visual evidence. The archive excludes reproducible runtime bundles, dependency folders and test scratch. Its SHA-256 is recorded in the companion file and the checked-in [transfer record](docs/production/computer-transfer-2026-10-09.json). Verify it after copying, for example with PowerShell `Get-FileHash`.
+They are ignored by ordinary Git. The ZIP is available on the release as two verified parts, with its checksum file alongside. The ZIP is 3,062,795,215 bytes (about 2.85 GiB), with 4245 media files. They preserve public audio/artwork, historical rendered media, frozen public copies and visual evidence. The archive excludes reproducible runtime bundles, dependency folders and test scratch. Its SHA-256 is recorded in the companion file and the checked-in [transfer record](docs/production/computer-transfer-2026-10-09.json). Verify it after copying, for example with PowerShell `Get-FileHash`.
 
 From a fresh checkout:
 
@@ -29,14 +29,17 @@ From a fresh checkout:
 git clone https://github.com/kyleajames33-beep/Lesson-Video-Generator.git
 cd Lesson-Video-Generator
 npm ci
+python scripts/github-media-transfer.py download
 python scripts/transfer-workspace.py restore-state
-python scripts/transfer-workspace.py restore-media "D:/Transfer/computer-transfer-2026-10-09.zip"
+python scripts/transfer-workspace.py restore-media
+python scripts/github-media-transfer.py download-continuation
+python scripts/transfer-workspace.py restore-media out/archives/continuation-media-2026-10-09.zip
 npm run check:all
 node scripts/check-course-content-checklist.mjs
 node scripts/check-course-ledger.mjs
 ```
 
-Replace the transfer path with the actual location. `restore-state` uses `docs/production/handoff-state-2026-10-09.zip` and its checked-in SHA-256 manifest. Both restore commands validate hashes and refuse to overwrite a different existing file. Restore into a fresh checkout to avoid mixing old local work. Matching existing files are retained. If a conflict is reported, preserve both versions and inspect it before changing anything.
+Install GitHub CLI for the downloads and sign in if the repository requires authentication. Alternatively, supply the complete local ZIP path to `restore-media`. `restore-state` uses `docs/production/handoff-state-2026-10-09.zip` and its checked-in SHA-256 manifest. Both restore commands validate hashes and refuse to overwrite a different existing file. Restore into a fresh checkout to avoid mixing old local work. Matching existing files are retained. If a conflict is reported, preserve both versions and inspect it before changing anything.
 
 The state archive preserves selected lesson JSON, props, briefs, alignments, caption files, publication records, review reports, HTML review pages and pinned curriculum research at their original `out/` paths. The media archive carries the matching state archive too, but the documented restore uses the Git copy as its reference. Do not repack these dated archives during normal production. Later transfers should have their own version and checksum.
 
@@ -53,9 +56,9 @@ node -e "require('fs').mkdirSync('out/local',{recursive:true});require('fs').wri
 npx remotion studio src/dev/release-entry.tsx --props=out/prototypes/limiting-clear-working-2026-10-09/remotion-props.json --env-file=out/local/studio.env --port=8783 --no-open
 ```
 
-For empirical formulas, change the props path to `out/prototypes/empirical-formulas-organised-2026-10-09/remotion-props.json` and use another free port, for example 8784. This draft is deliberately silent until fresh narration is recorded. The release entry's default composition is a placeholder, so always supply the selected props. Remotion running on the old computer does not remain available on the new one.
+For the current voiced empirical candidate, change the props path to `out/prototypes/empirical-formulas-voiced-2026-10-09/remotion-props.json` and use another free port, for example 8784. The older `empirical-formulas-organised-2026-10-09` draft remains deliberately silent historical evidence. The release entry's default composition is a placeholder, so always supply the selected props. Remotion running on the old computer does not remain available on the new one.
 
-Start the review server with `node scripts/serve-prototype-review.mjs`. Default local review address: http://127.0.0.1:8778/. Relevant restored pages include `/calculation-layout-review-2026-10-09/`, `/video-syllabus-map-2026-10-09/` and `/limiting-conversational-2026-10-09/`. Inspect the server's output for its actual port. `node scripts/build-video-syllabus-view.mjs` can rebuild the searchable course view after restore.
+Start the review server with `node scripts/serve-prototype-review.mjs`. Default local review address: http://127.0.0.1:8778/. Relevant restored pages include `/continuation-review-2026-10-09/`, `/calculation-layout-review-2026-10-09/`, `/video-syllabus-map-2026-10-09/` and `/limiting-conversational-2026-10-09/`. Inspect the server's output for its actual port. `node scripts/build-video-syllabus-view.mjs` can rebuild the searchable course view after restore.
 
 ## Rules that must carry forward
 

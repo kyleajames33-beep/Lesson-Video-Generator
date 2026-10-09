@@ -1,6 +1,6 @@
 # GitHub media backup
 
-The user asked to put the media on GitHub as well as the code, and continue production on the current computer. The repository's ignored media snapshot is therefore being uploaded as split assets on a dedicated GitHub release.
+The user asked to put the media on GitHub as well as the code, and continue production on the current computer. The repository's ignored media snapshot is stored as split assets on a dedicated GitHub release.
 
 Release: https://github.com/kyleajames33-beep/Lesson-Video-Generator/releases/tag/workspace-media-2026-10-09
 
@@ -22,6 +22,6 @@ Sign in with `gh auth login` if the repository requires authentication. The down
 
 Alternatively, download both `.part01` and `.part02` assets from the release into `out/archives/`, then run `python scripts/github-media-transfer.py join` before the restore commands. A plain Git clone still does not download release assets automatically. Existing local copies of the complete ZIP remain valid.
 
-The release is prepared as a draft and only published after both uploads have matching server-side sizes and SHA-256 digests. A prepared or draft status is not proof that the off-machine backup is available.
+Both archive parts, the checksum file and the additive continuation ZIP have matching server-side sizes and SHA-256 digests. The archives also passed content verification and restore checks locally. The release was published on 9 October 2026 after those checks. See the transfer record for the publication timestamp and hash evidence.
 
 The additive continuation snapshot restores the subsequently recorded empirical lesson and verified pilots over the original handoff. See [the current review](continuation-review-2026-10-09.md) for the selected paths and remaining checks. Its download helper verifies the full ZIP hash before restoration. Future changes require a fresh dated snapshot; this release does not automatically synchronise ignored files.
