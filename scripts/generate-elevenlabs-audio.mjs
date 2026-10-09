@@ -4,8 +4,11 @@ import process from 'node:process';
 import {buildSpeechRequest, DEFAULT_TTS_MODEL, validateSpeechPayload} from './elevenlabs-request.mjs';
 import {canonical} from './lib/playback-assembly.mjs';
 
+// Local credentials stay outside Git and never appear in generation logs.
+if (existsSync('.env.local')) process.loadEnvFile(path.resolve('.env.local'));
+
 const usage = () => {
-  console.error('Usage: node scripts/generate-elevenlabs-audio.mjs <manifest-json> [--voice-id=<id>] [--model=<id>] [--scene=<id>] [--output-dir=<dir>] [--dry-run]');
+  console.error('Usage: node scripts/generate-elevenlabs-audio.mjs <manifest-json> [--voice-id=<id>] [--model=<id>] [--request-options=<json-file>] [--scene=<id>] [--output-dir=<dir>] [--dry-run]');
   console.error('Example: node scripts/generate-elevenlabs-audio.mjs out/voiceover/Chemistry-Y11-M2-L2.manifest.json --voice-id=21m00Tcm4TlvDq8ikWAM');
   console.error('');
   console.error('Environment: ELEVENLABS_API_KEY must be set.');
@@ -17,8 +20,9 @@ const args = process.argv.slice(2);
 const manifestPath = args.find((a) => !a.startsWith('--'));
 const dryRun = args.includes('--dry-run');
 const voiceIdArg = args.find((a) => a.startsWith('--voice-id='));
-const voiceId = voiceIdArg ? voiceIdArg.split('=')[1] : process.env.ELEVENLABS_VOICE_ID;
-const modelId = args.find(a => a.startsWith('--model='))?.slice(8) ?? process.env.ELEVENLABS_MODEL_ID ?? DEFAULT_TTS_MODEL;
+const requestedVoiceId = voiceIdArg ? voiceIdArg.slice(11) : process.env.ELEVENLABS_VOICE_ID;
+const requestedModelId = args.find(a => a.startsWith('--model='))?.slice(8) ?? process.env.ELEVENLABS_MODEL_ID;
+const requestOptionsPath = args.find(a => a.startsWith('--request-options='))?.slice(18);
 const onlyScene = args.find(a => a.startsWith('--scene='))?.slice(8);
 const outputDir = args.find(a => a.startsWith('--output-dir='))?.slice(13);
 
@@ -35,20 +39,28 @@ if (!apiKey && !dryRun) {
   process.exit(1);
 }
 
+const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
+const voiceId = requestedVoiceId ?? manifest.voiceSelection?.voiceId;
+const modelId = requestedModelId ?? manifest.voiceSelection?.modelId ?? DEFAULT_TTS_MODEL;
+const requestOptions = requestOptionsPath ? JSON.parse(readFileSync(requestOptionsPath, 'utf8')) : {};
+if (!outputDir && manifest.voiceSelection &&
+    ((manifest.voiceSelection.voiceId && voiceId !== manifest.voiceSelection.voiceId) ||
+     (manifest.voiceSelection.modelId && modelId !== manifest.voiceSelection.modelId))) {
+  throw new Error('Voice/model differs from the selected production voice. Use --output-dir for a separate audition.');
+}
 if (!voiceId && !dryRun) {
   console.error('Error: No voice ID provided. Use --voice-id=<id> or set ELEVENLABS_VOICE_ID.');
   usage();
   process.exit(1);
 }
 
-const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
 const {compositionId} = manifest;
 const scenes = manifest.scenes.filter(s => s.text?.trim() && (!onlyScene || s.id === onlyScene)).map(s => ({...s,
   audioFile: outputDir ? path.join(outputDir, path.basename(s.audioFile)) : s.audioFile}));
 if (!scenes.length) throw new Error('No narrated scenes matched the request.');
 if (scenes.some(s => s.text.includes(String.fromCodePoint(0x2014)))) throw new Error('Selected narration contains U+2014. Revise the script before generation.');
 // Validate every request before any paid generation begins.
-const requests = scenes.map(s => buildSpeechRequest({text: s.text, voiceId: voiceId ?? 'dry-run', modelId}));
+const requests = scenes.map(s => buildSpeechRequest({text: s.text, voiceId: voiceId ?? 'dry-run', modelId, requestOptions}));
 
 console.log(`ElevenLabs batch generation for ${compositionId}`);
 console.log(`Scenes: ${scenes.length}`);

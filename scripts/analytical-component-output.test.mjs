@@ -36,7 +36,7 @@ async function renderer(source = 'current') {
       builder.onResolve({filter: /^remotion$/}, () => ({path: 'fixture', namespace: 'fixture'}));
       builder.onLoad({filter: /.*/, namespace: 'fixture'}, () => ({contents: stub, loader: 'js', resolveDir: root}));
       if (source !== 'current') builder.onLoad({filter: /(?:TitrationCurve|TubeTests|FlameTests)Diagram\.tsx$/}, args => {
-        const relative = path.relative(root, args.path);
+        const relative = path.relative(root, args.path).split(path.sep).join('/');
         assert.ok(changedFiles.includes(relative));
         return {contents: git(source === 'local' ? localBaseline : baseline, relative), loader: 'tsx', resolveDir: path.dirname(args.path)};
       });
@@ -276,7 +276,8 @@ test('solver and shared illustration dependencies retain baseline source bytes',
     'src/slides/diagrams/kinds/chem-y12-m8/shared.tsx',
     'src/slides/diagrams/kinds/chem-y12-m8/lab-parts.tsx',
   ]) {
-    const source = await readFile(path.join(root, file), 'utf8');
+    // Git fixtures use LF; Windows checkouts may use CRLF without source drift.
+    const source = (await readFile(path.join(root, file), 'utf8')).replace(/\r\n/g, '\n');
     assert.equal(source, git(baseline, file), `${file} main drift guard`);
     assert.equal(source, git(localBaseline, file), `${file} local drift guard`);
   }

@@ -19,6 +19,7 @@ import {ConcentrationCompareDiagram} from './ConcentrationCompareDiagram';
 import {TitrationSetupDiagram} from './TitrationSetupDiagram';
 import {LimitingExcessDiagram} from './LimitingExcessDiagram';
 import {ReactionRunDiagram} from './ReactionRunDiagram';
+import {RecipeCountDiagram} from './RecipeCountDiagram';
 import {CoefficientDivideDiagram} from './CoefficientDivideDiagram';
 import {DIORAMA_KINDS} from './dioramaKinds';
 import {ErrorDartboardDiagram} from './ErrorDartboardDiagram';
@@ -63,6 +64,7 @@ export const DiagramRenderer = ({diagram}: {diagram: DiagramConfig}) => {
 		case 'titrationSetup': return <TitrationSetupDiagram />;
 		case 'limitingExcess': return <LimitingExcessDiagram />;
 		case 'reactionRun':    return <ReactionRunDiagram {...diagram} />;
+		case 'recipeCount':    return <RecipeCountDiagram {...diagram} />;
 		case 'coefficientDivide': return <CoefficientDivideDiagram {...diagram} />;
 		case 'diorama': {
 			const Kind = DIORAMA_KINDS[diagram.kind];

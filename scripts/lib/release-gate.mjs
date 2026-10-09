@@ -2,6 +2,8 @@ import {readFileSync} from 'node:fs';
 import path from 'node:path';
 import {verifyRelease} from './release-snapshot.mjs';
 import {verifyReview} from './release-review.mjs';
+import {checkProductionBrief} from './production-brief.mjs';
+import {sha256} from './playback-assembly.mjs';
 
 export const reviewScopes = ['science', 'listening', 'motion', 'device', 'accessibility'];
 
@@ -11,6 +13,7 @@ export function assessReleaseEvidence(facts) {
   const block = (code, detail) => blockers.push({code, detail});
   if (!facts.snapshotValid) block('PACKAGE_INVALID', 'Export dependencies changed, are missing or could not be verified.');
   if (!facts.inputValid) block('INPUT_PACKAGE_INVALID', 'Render inputs changed, are missing or could not be verified.');
+  if (facts.teachingBriefValid !== true) block('TEACHING_BRIEF_REQUIRED', 'Provide a current teaching/visual brief with named script review and exact voiced-preview evidence.');
   const record = facts.renderRecord;
   if (!record || !facts.renderRecordTracked) block('RENDER_RECORD_MISSING', 'An exact hashed render record must be part of the export snapshot.');
   if (record) {
@@ -50,7 +53,7 @@ function workspacePath(root, value) {
   return file;
 }
 export function checkReleaseEvidence(root, config) {
-  const allowed = new Set(['snapshotPath', 'inputSnapshotPath', 'renderRecordPath', 'reviews']);
+  const allowed = new Set(['snapshotPath', 'inputSnapshotPath', 'renderRecordPath', 'reviews', 'teachingBriefPath']);
   if (!config || Object.keys(config).some((key) => !allowed.has(key)) || !Array.isArray(config.reviews)) throw new Error('Gate config needs snapshotPath, inputSnapshotPath, renderRecordPath and a reviews array. No scoring thresholds or scope waivers.');
   const load = (file) => JSON.parse(readFileSync(workspacePath(root, file), 'utf8'));
   const snapshot = load(config.snapshotPath), inputs = load(config.inputSnapshotPath), renderRecord = load(config.renderRecordPath);
@@ -65,10 +68,23 @@ export function checkReleaseEvidence(root, config) {
     } catch { return {path: file, valid: false}; }
   });
   const videos = exports.filter((file) => /\.mp4$/iu.test(file.path));
-  return assessReleaseEvidence({snapshotValid: verification(snapshot), inputValid: verification(inputs),
+  let teachingBrief = {ready: false, blockers: [{code: 'BRIEF_MISSING', detail: 'Set teachingBriefPath in this gate config.'}]};
+  let teachingBriefSha256 = null;
+  if (config.teachingBriefPath) {
+    teachingBrief = checkProductionBrief(root, config.teachingBriefPath, {stage: 'export'});
+    teachingBriefSha256 = sha256(readFileSync(workspacePath(root, config.teachingBriefPath)));
+    const source = teachingBrief.source;
+    if (source && !inputs.files?.some(file => file.path === relative(source.lessonPath) && file.sha256 === source.lessonSha256)) {
+      teachingBrief.ready = false;
+      teachingBrief.blockers.push({code: 'BRIEF_RENDER_INPUT_MISMATCH', detail: 'Brief must belong to the exact lesson used by this full render.'});
+    }
+  }
+  const report = assessReleaseEvidence({snapshotValid: verification(snapshot), inputValid: verification(inputs), teachingBriefValid: teachingBrief.ready,
     packageSha256: snapshot.packageSha256, inputPackageSha256: inputs.packageSha256, renderRecord,
     renderRecordTracked: exports.some((file) => file.path === relative(config.renderRecordPath) && file.sha256),
     videoSha256: videos.length === 1 ? videos[0].sha256 : null,
     captionsTracked: exports.some((file) => /\.srt$/iu.test(file.path) && file.sha256) && exports.some((file) => /\.vtt$/iu.test(file.path) && file.sha256),
     fps: inputs.timeline?.fps, durationInFrames: inputs.timeline?.durationInFrames, reviews});
+  return {...report, teachingBrief: {...teachingBrief, path: config.teachingBriefPath ?? null, sha256: teachingBriefSha256},
+    limitation: report.limitation + ' The brief checks declared teaching/visual decisions and exact preview evidence, not the quality of those judgements. Human listening still needs the existing full-package listening review.'};
 }

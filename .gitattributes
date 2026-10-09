@@ -26,3 +26,7 @@ src/data/chemistry-y11-m4-l10-hess-combustion-consolidation.json text eol=lf
 src/data/chemistry-y11-m4-l12-calculating-entropy.json text eol=lf
 src/data/chemistry-y11-m4-l13-gibbs-free-energy.json text eol=lf
 src/data/chemistry-y12-m7-l11-combustion-of-alcohols.json text eol=lf
+
+# Preserve pinned comparison-document fingerprints in the course ledger.
+docs/chemistry-syllabus-crossover.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/biology-syllabus-crossover.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

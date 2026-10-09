@@ -35,6 +35,9 @@ export function verifyAssembly(scene, fps, root = process.cwd()) {
       if (scene.type === 'workedExample' && ((scene.revealDelays?.stepsStart ?? 116) < gap.endFrame ||
         (scene.revealDelays?.coachNote ?? 42) < gap.endFrame || (scene.revealDelays?.diagram ?? 30) < gap.endFrame ||
         scene.revealDelays?.stepAts?.some(t => t < gap.endFrame))) fail('Worked solution begins before response hold ends.');
+      if (scene.type === 'hook' && ((scene.revealDelays?.answerVisibleStart ?? 0) < gap.endFrame ||
+        (scene.revealDelays?.glyph ?? 12) < gap.endFrame || (scene.revealDelays?.annotation ?? 100) < gap.endFrame ||
+        (scene.revealDelays?.callout ?? 165) < gap.endFrame)) fail('Hook answer artwork or feedback begins before response hold ends.');
       if (expected.some(c => c.startMs < gap.endFrame / fps * 1000 && c.endMs > gap.startFrame / fps * 1000)) fail('Caption leaks across response hold.');
     }
   } catch (error) { fail('Cannot verify assembled dependencies: ' + error.message); }

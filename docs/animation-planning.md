@@ -41,6 +41,12 @@ a specific gap to fix, not a reason to rebuild a working design.
 
 ## Review sequence
 
+User feedback on 9 October 2026 adds a preview-first production workflow:
+[play the exact lesson in Remotion and use independent scoped checks](production/preview-first-review.md)
+before a full export. A short narrated render is the fallback when live
+playback cannot reliably show motion and timing. Record listening separately
+from source inspection, still checks and UI playback observations.
+
 1. Audit the selected lesson's existing scenes and assets. Keep what already
    explains the idea. Record changes as reuse, adjust or genuinely missing.
 2. Check science and scene logic before generating narration. Check all

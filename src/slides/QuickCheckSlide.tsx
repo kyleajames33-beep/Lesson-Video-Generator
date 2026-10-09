@@ -20,6 +20,7 @@ import {FONT_HAND, FONT_MONO, TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
 import {AssetImg} from './shared/AssetImg';
 import {answerTiming} from '../lesson/answer-timing.mjs';
+import {CalculationProblem, FocusedWorking} from './shared/OrganisedCalculation';
 
 type QuickCheckSlideProps = {
 	scene: QuickCheckScene;
@@ -39,6 +40,20 @@ export const QuickCheckSlide = ({scene, lesson, sceneIndex, totalScenes}: QuickC
 	const pauseStartFrame = scene.responseHold?.startFrame ?? rd.responseHoldStart ?? ((rd.pausePrompt ?? 70) + 24);
 	const answerProgress = interpolate(frame, [timing.fadeStart, timing.fadeEnd], [0, 1], clamp);
 	const pauseOpacity = interpolate(frame, [timing.pauseFadeStart, timing.pauseFadeEnd], [1, 0], clamp);
+	if (scene.calculationPresentation) {
+		if (scene.calculationPresentation.stages.length !== scene.answerSteps.length) throw new Error('Quick check presentation needs one stage per answer step.');
+		const ats = (rd as {stepAts?: number[]}).stepAts;
+		const delays = scene.answerSteps.map((_, i) => Math.max(answerStart, ats?.[i] ?? answerStart + 16 + i * 68));
+		return <SlideFrame sceneDurationInFrames={scene.durationInFrames}>
+			<SlideChrome lesson={lesson} topic="YOUR TURN" sceneType="quickCheck" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<CalculationProblem presentation={scene.calculationPresentation} eyebrow="QUICK CHECK · TRY IT FIRST" delay={rd.heading ?? 24} prompt={scene.pausePrompt} promptOpacity={pauseOpacity} />
+			{answerProgress < 0.98 ? <>
+				<PauseCountdown startFrame={pauseStartFrame} endFrame={answerStart} fps={fps} durationSeconds={(answerStart - pauseStartFrame) / fps} opacity={pauseOpacity} focused />
+				<PauseInstruction opacity={pauseOpacity} focused />
+			</> : null}
+			<FocusedWorking presentation={scene.calculationPresentation} delays={delays} earliestFrame={answerStart} />
+		</SlideFrame>;
+	}
 
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
@@ -148,7 +163,7 @@ export const QuickCheckSlide = ({scene, lesson, sceneIndex, totalScenes}: QuickC
 				}}
 			>
 				<AmbientGlow left="10%" top={-16} width="80%" height={430} delay={answerStart + 260} opacity={0.07} speedSeconds={6.2} />
-				<AnswerBoard steps={scene.answerSteps} startDelay={answerStart} />
+				<AnswerBoard steps={scene.answerSteps} startDelay={answerStart} stepAts={(rd as {stepAts?: number[]}).stepAts} />
 			</div>
 		</SlideFrame>
 	);
@@ -184,12 +199,14 @@ const PauseCountdown = ({
 	fps,
 	opacity,
 	durationSeconds,
+	focused = false,
 }: {
 	startFrame: number;
 	endFrame: number;
 	fps: number;
 	opacity: number;
 	durationSeconds: number;
+	focused?: boolean;
 }) => {
 	const frame = useCurrentFrame();
 	if (frame < startFrame) return null;
@@ -214,8 +231,8 @@ const PauseCountdown = ({
 		<div
 			style={{
 				position: 'absolute',
-				left: 0,
-				right: 0,
+				left: focused ? 634 : 0,
+				right: focused ? 64 : 0,
 				bottom: 252,
 				display: 'flex',
 				justifyContent: 'center',
@@ -264,11 +281,11 @@ const PauseCountdown = ({
 	);
 };
 
-const PauseInstruction = ({opacity}: {opacity: number}) => (
+const PauseInstruction = ({opacity, focused = false}: {opacity: number; focused?: boolean}) => (
 	<div
 		style={{
 			position: 'absolute',
-			left: 64,
+			left: focused ? 634 : 64,
 			right: 64,
 			bottom: 168,
 			opacity,
@@ -291,7 +308,7 @@ const PauseInstruction = ({opacity}: {opacity: number}) => (
 	</div>
 );
 
-const AnswerBoard = ({steps, startDelay}: {steps: string[]; startDelay: number}) => {
+const AnswerBoard = ({steps, startDelay, stepAts}: {steps: string[]; startDelay: number; stepAts?: number[]}) => {
 	const n = steps.length;
 	// Board starts at y=540; the bottom chrome row starts ~y=960.
 	const fontSize = fitStepFontSize(steps, {base: 38, width: 1300, height: 410, rowPad: 20, gap: 22, finalBoost: 6});
@@ -306,7 +323,9 @@ const AnswerBoard = ({steps, startDelay}: {steps: string[]; startDelay: number})
 			}}
 		>
 			{steps.map((step, index) => {
-				const delay = startDelay + 16 + index * 68;
+				// Recorded row cues are opt-in. The response boundary remains the
+				// earliest exposure even if an authored cue precedes it.
+				const delay = Math.max(startDelay, stepAts?.[index] ?? (startDelay + 16 + index * 68));
 				const isFinal = index === n - 1;
 				const kind = getCalculationStepKind(step, index, n);
 

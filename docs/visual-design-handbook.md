@@ -336,3 +336,20 @@ solution steps must also wait when they contain an answer. Hold the completed
 solution long enough to read before the outgoing transition. The technical
 fixture verifies boundary behaviour; it does not approve scientific content or
 replace a full narrated clip/device review.
+
+## Selected integration rules from the limiting pilot (9 October 2026)
+
+- The native recipe-count hook is available through a `recipeCount` diagram in HookSlide. Use the one-bun/one-patty illustration only for the limiting-ingredient analogy it explains. An unrelated atom is not a fallback for a mechanism or analogy.
+- For a coefficient-two capacity comparison, `attention: handdrawn` on `coefficientDivide` links the divisor to the exact half-height while preserving the original amount. Select it through the lesson brief; default diagrams retain their prior treatment. Geometry and limiting selection use exact values; numbers may round for display.
+- `highlightLeftovers` and an aligned `leftoversAt` cue on `reactionRun` focus on unconsumed molecules after completion. Keep the counting-model limit explicit. Do not use these grouped events or the progress graph to imply molecular collisions or reaction speed.
+- A `workedVisualLayout: compact` calculation board makes room for several related steps and both requested outcomes. Verify its actual longest rows and caption clearance; this is not a reason to reduce every lesson to tiny text.
+- Prototype scenes are visual references, not approved narration templates. Apply their useful teaching moves to the accepted conversational script. Whole-stage displacement or line-boil must not distort readable labels.
+- Record each choice in the selected production brief. A stable equation, comparison or thinking hold can be the right visual. The brief and preview-first checks replace feature quotas.
+
+## Organised quantitative examples (9 October 2026)
+
+- The accepted conversational teaching and purposeful visual fixes are the minimum for new selected lessons. Preserve useful existing art and layouts.
+- Avoid a single heading that mixes the question, reaction, masses and constants. Use a short task, a separate reaction when relevant, and stable grouped givens. Keep units and the corresponding molar mass beside each quantity.
+- Use the optional `calculationPresentation` for demanding examples and practice. Show one current operation with its purpose, then retain a compact trail of established results. Future conclusions must not enter that trail.
+- Keep a calculation basis or supplied reference visible rather than flashing it as a short working stage. Use measured `lineAts` when a result is explained later than its relationship. Replace estimated cues after recording.
+- Keep quiz solutions completely hidden through the measured response hold. Inspect actual longest rows, final trails and external captions in voiced playback, including a smaller landscape view. Still-frame checks do not approve listening or actual-device readability.

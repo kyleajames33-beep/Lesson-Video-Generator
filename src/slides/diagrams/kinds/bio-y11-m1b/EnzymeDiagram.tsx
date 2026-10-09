@@ -26,7 +26,7 @@
 //
 // Beats (`at`, frames after `delay`) are named per mode below; all labels are
 // props or fixed biology terms. Hold: the counter/loop keeps going (cycle,
-// saturation) or the pieces jostle (idleBob) and the key label breathes.
+// saturation) or the pieces jostle (idleBob). Readable labels stay stable.
 
 import type {ReactNode} from 'react';
 import {useCurrentFrame, useVideoConfig} from 'remotion';
@@ -47,6 +47,7 @@ export type EnzymeProps = {
 	same?: string;
 	different?: string;
 	rule?: string;
+	bindingLabel?: string;
 	delay?: number;
 };
 
@@ -120,7 +121,6 @@ export const EnzymeDiagram = (props: EnzymeProps) => {
 	else if (mode === 'specific') body = <Specific {...ctx} />;
 	else if (mode === 'denature') body = <Denature {...ctx} />;
 	else body = <Saturation {...ctx} />;
-	const pulse = idlePulse(frame, 50);
 	return (
 		<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Enzyme and substrate at the active site" style={{width: '100%', fontFamily: FONT_DISPLAY}}>
 			<DioramaDefs id={ID} />
@@ -133,7 +133,7 @@ export const EnzymeDiagram = (props: EnzymeProps) => {
 			</defs>
 			{body}
 			{props.rule && (
-				<text x={W / 2} y={H - 12} textAnchor="middle" fill={TOK.amberInk} fontSize={20} fontWeight={800} opacity={fadeAt(frame, props.at?.rule ?? 9999) * (0.82 + 0.18 * pulse)}>{props.rule}</text>
+				<text x={W / 2} y={H - 12} textAnchor="middle" fill={TOK.amberInk} fontSize={20} fontWeight={800} opacity={fadeAt(frame, props.at?.rule ?? 9999)}>{props.rule}</text>
 			)}
 		</svg>
 	);
@@ -218,14 +218,14 @@ const Cycle = ({frame, accent, at}: Ctx) => {
 };
 
 // ── lock-and-key / induced fit ───────────────────────────────────────────
-const Model = ({frame, accent, at, kind, cx, top, big}: Ctx & {kind: 'lockKey' | 'inducedFit'; cx: number; top: number; big?: boolean}) => {
+const Model = ({frame, accent, at, p, kind, cx, top, big}: Ctx & {kind: 'lockKey' | 'inducedFit'; cx: number; top: number; big?: boolean}) => {
 	const pre = big ? '' : kind === 'lockKey' ? 'l_' : 'i_';
 	const g = (k: string, d: number) => at[pre + k] ?? at[k] ?? d;
 	const tE = g('enzyme', 10), tS = g('substrate', 60), tFit = g('fit', 120), tMould = g('mould', 120), tGrip = g('grip', 170), tStrain = g('strain', 9999), tWr = g('wrong', 9999), tCx = g('complex', tFit + 40);
 	const s = big ? 1 : 0.85;
 	const w = 250 * s, h = 124 * s;
 	const induced = kind === 'inducedFit';
-	const approach = ease(frame, tS, induced ? tMould : tFit);
+	const approach = ease(frame, tS, g('approach', induced ? tMould : tFit));
 	const mould = induced ? ease(frame, tMould, tGrip) : 1;
 	const notch: Notch = induced ? {tw: lerp(OPEN.tw, TW, mould), bw: lerp(OPEN.bw, BW, mould), d: lerp(OPEN.d, D, mould), round: lerp(OPEN.round, 0, mould)} : FIT;
 	const seatY = D;
@@ -268,7 +268,7 @@ const Model = ({frame, accent, at, kind, cx, top, big}: Ctx & {kind: 'lockKey' |
 					<Label x={cx - 210} y={top - 78} text={induced ? 'active site (flexible)' : 'active site (rigid)'} opacity={fadeAt(frame, tE + 20)} />
 					<Label x={cx + 200} y={top - 150} text="substrate" color={CORAL} opacity={fadeAt(frame, tS) * (1 - fadeAt(frame, tCx))} />
 					{induced && <Label x={cx + 200} y={top - 40} text="site moulds around it" color={accent} opacity={fadeAt(frame, tMould) * (1 - fadeAt(frame, tGrip + 30))} />}
-					{induced && <Label x={cx + 200} y={top - 40} text="grips it tightly" color={accent} opacity={fadeAt(frame, tGrip + 30)} />}
+					{induced && <Label x={cx + 200} y={top - 40} text={p.bindingLabel ?? 'grips it tightly'} color={accent} opacity={fadeAt(frame, tGrip + 30)} />}
 					{!induced && <Label x={cx + 200} y={top - 40} text="exact fit, no change" color={accent} opacity={fadeAt(frame, tFit + 10)} />}
 					<Label x={cx} y={top - 190} text="enzyme–substrate complex" opacity={fadeAt(frame, tCx)} size={18} />
 					{induced && <Label x={cx} y={top - 150} text="the tight grip strains the substrate's bonds" color={TOK.inkDim} size={16} opacity={strain} />}

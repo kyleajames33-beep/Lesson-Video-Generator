@@ -32,7 +32,7 @@ async function renderer(source = 'current') {
       builder.onResolve({filter: /^remotion$/}, () => ({path: 'fixture', namespace: 'fixture'}));
       builder.onLoad({filter: /.*/, namespace: 'fixture'}, () => ({contents: stub, loader: 'js', resolveDir: root}));
       if (source !== 'current') builder.onLoad({filter: /(?:Bod|WaterBody|Treatment|Ionisation)Diagram\.tsx$/}, args => {
-        const relative = path.relative(root, args.path);
+        const relative = path.relative(root, args.path).split(path.sep).join('/');
         assert.ok(changedFiles.includes(relative));
         return {contents: componentBaselineSource(source !== 'main' && relative.endsWith('/IonisationDiagram.tsx') ? reviewedBaseline : baseline, relative), loader: 'tsx', resolveDir: path.dirname(args.path)};
       });

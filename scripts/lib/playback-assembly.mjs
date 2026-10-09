@@ -5,6 +5,7 @@ import {decodePcm, pcmWav} from './media-tools.mjs';
 import {alignmentPathFor, alignmentToCaptions} from './caption-timeline.mjs';
 import {lessonTimeline} from '../../src/lesson/timeline.mjs';
 import {TRANSITION_FRAMES} from '../_yt-constants.mjs';
+import {hookRevealTiming} from '../../src/lesson/answer-timing.mjs';
 
 export const sha256 = data => createHash('sha256').update(data).digest('hex');
 export const canonical = value => JSON.stringify(value, (_, v) => v && typeof v === 'object' && !Array.isArray(v)
@@ -60,13 +61,29 @@ export function resolvePlayback({lesson, manifest, plan, root = process.cwd(), d
       const file = publicPath(root, segment.audioFile);
       const bytes = readFileSync(file);
       const alignmentFile = alignmentPathFor(file), alignmentBytes = readFileSync(alignmentFile);
-      const sourceAlignment = JSON.parse(alignmentBytes);
+      let sourceAlignment = JSON.parse(alignmentBytes);
       alignmentToCaptions(sourceAlignment);
       if (sourceAlignment.characters.join('').replace(/\s+/g, ' ').trim() !== segment.text.replace(/\s+/g, ' ').trim()) throw new Error(`Alignment text differs from script: ${segment.id}`);
       const pcm = decode(file);
       if (!Buffer.isBuffer(pcm) || !pcm.length || pcm.length % 2) throw new Error('Decoded audio must be nonempty mono 16-bit PCM.');
       const durationSeconds = pcm.length / 96000;
-      if (sourceAlignment.character_end_times_seconds.at(-1) > durationSeconds + 1 / 48000) throw new Error(`Alignment exceeds decoded audio: ${segment.id}`);
+      let alignmentAdjustment;
+      if (sourceAlignment.character_end_times_seconds.at(-1) > durationSeconds + 1 / 48000) {
+        // Some v4 responses extend their terminal full stop 80 ms past media.
+        // Preserve spoken-character timing and raw sidecars. Bound only a small
+        // terminal punctuation interval, and record the derivation explicitly.
+        const overrun = sourceAlignment.character_end_times_seconds.at(-1) - durationSeconds;
+        const firstPast = sourceAlignment.character_end_times_seconds.findIndex(t => t > durationSeconds);
+        if (overrun > 0.1 + 1e-9 || sourceAlignment.characters.slice(firstPast).some(c => !/^[.!?,;:\s]$/.test(c))) {
+          throw new Error(`Alignment exceeds decoded audio: ${segment.id}`);
+        }
+        alignmentAdjustment = {kind: 'terminal-punctuation-bounded-to-decoded-media', overrunSeconds: overrun,
+          firstCharacter: firstPast, decodedDurationSeconds: durationSeconds};
+        sourceAlignment = {...sourceAlignment,
+          character_start_times_seconds: sourceAlignment.character_start_times_seconds.map(t => Math.min(t, durationSeconds)),
+          character_end_times_seconds: sourceAlignment.character_end_times_seconds.map(t => Math.min(t, durationSeconds))};
+        alignmentToCaptions(sourceAlignment);
+      }
       const frameCount = Math.ceil(durationSeconds * fps - 1e-9);
       const padding = Buffer.alloc(frameCount * (48000 / fps) * 2 - pcm.length);
       buffers.push(pcm, padding);
@@ -90,7 +107,8 @@ export function resolvePlayback({lesson, manifest, plan, root = process.cwd(), d
       }
       dependencies.push({audioFile: segment.audioFile, audioSha256: sha256(bytes), alignmentSha256: sha256(alignmentBytes),
         generationSha256: existsSync(metadata) ? sha256(readFileSync(metadata)) : null, textSha256: sha256(segment.text)});
-      items.push({kind: 'audio', segmentId: segment.id, startFrame, endFrame: cursorSamples / (48000 / fps), decodedDurationSeconds: durationSeconds});
+      items.push({kind: 'audio', segmentId: segment.id, startFrame, endFrame: cursorSamples / (48000 / fps), decodedDurationSeconds: durationSeconds,
+        ...(alignmentAdjustment ? {alignmentAdjustment} : {})});
     }
     if (texts.join(' ') !== scene.voiceover?.text) throw new Error(`Playback changes narration: ${scene.id}`);
     const pcm = Buffer.concat(buffers), wav = pcmWav(pcm);
@@ -112,6 +130,8 @@ export function resolvePlayback({lesson, manifest, plan, root = process.cwd(), d
         scene.revealDelays.coachNote = boundary;
         delete scene.revealDelays.stepAts;
         scene.revealDelays.diagram = boundary;
+      } else if (scene.type === 'hook') {
+        scene.revealDelays = hookRevealTiming(scene.revealDelays);
       } else if (scene.type !== 'quickCheck') throw new Error(`Response gap needs supported visual treatment: ${scene.id}`);
     }
     const lastSolutionFrame = scene.type === 'quickCheck'

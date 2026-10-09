@@ -126,7 +126,9 @@ const reports = files.map(file => {
         const endFrame = vo.endFrame ?? scene.durationInFrames;
         if (startFrame < 0 || endFrame <= startFrame || endFrame > scene.durationInFrames) error(scene.id, 'AUDIO_WINDOW', 'Invalid narration playback window.');
         const available = (endFrame - startFrame) / fps;
-        if (ends.at(-1) > available) error(scene.id, 'AUDIO_CLIPPED', `${ends.at(-1).toFixed(2)}s narration exceeds ${available.toFixed(2)}s playback.`);
+        // Concatenated decimal timestamps can differ from the exact frame
+        // boundary by floating-point noise. This is far below one audio sample.
+        if (ends.at(-1) > available + 1e-9) error(scene.id, 'AUDIO_CLIPPED', `${ends.at(-1).toFixed(2)}s narration exceeds ${available.toFixed(2)}s playback.`);
         else if (ends.at(-1) + 1.5 > (scene.durationInFrames - startFrame - TRANSITION_FRAMES) / fps) warn(scene.id, 'SHORT_TAIL', 'Less than 1.5s of scene hold after narration before the outgoing transition.');
       }
     } catch {

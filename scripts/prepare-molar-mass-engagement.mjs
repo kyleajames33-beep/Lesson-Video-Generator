@@ -9,10 +9,11 @@ const lessonPath='src/prototypes/data/molar-mass-v3.json';
 const source=JSON.parse(readFileSync(sourcePath,'utf8'));
 const selection=JSON.parse(readFileSync('src/prototypes/data/molar-mass-voice-selection.json','utf8'));
 const revisions={
-  hook:{heading:'Same particle count. Which sample is heavier?',body:'One mole of carbon atoms. One mole of oxygen atoms.',callout:'Equal amounts do not mean equal masses.',
-    text:'One mole of carbon atoms. One mole of oxygen atoms. Same number of atoms. So, would they weigh the same? It’s a reasonable guess. But oxygen atoms are heavier. Equal amounts can have different masses. Molar mass explains the difference, and lets us turn a mass on a balance into an amount in moles.',
-    delivery:'Curious question, then a warm correction. Stress same number and heavier. Let the contrast land.',
-    visual:'Reuse the molar-scale atoms. Compare carbon and oxygen with equal entity counts, then reveal their different masses. Do not suggest one mole is a single atom.'},
+  hook:{heading:'Same number of atoms. Which sample has more mass?',caption:'Compare the two samples and make a prediction.',body:'One mole of carbon atoms. One mole of oxygen atoms.',callout:'Equal amounts do not mean equal masses.',
+    comparison:[{label:'Carbon atoms',amount:'1 mol',mass:'12.01 g'},{label:'Oxygen atoms',amount:'1 mol',mass:'16.00 g'}],
+    text:'One mole of carbon atoms. One mole of oxygen atoms. Both samples contain the same number of atoms. Which sample has more mass? Make a prediction. Take a moment, or pause for longer. The oxygen sample has more mass because each oxygen atom is heavier. The mole tells us how many particles we have. Molar mass tells us the mass per mole. It connects an amount in moles to the mass we measure on a balance.',
+    delivery:'Invite a genuine prediction. Record prompt and answer separately with a four-second silent hold. Then explain the heavier oxygen atoms.',
+    visual:'Keep the question and equal-amount body visible. Hide the labelled carbon and oxygen mass cards and answer callout through the four-second thinking hold. Reveal them with the explanation. The old 63.55 g balance image does not represent this comparison; retain it in the asset library.'},
   title:{text:'Molar mass.',delivery:'Brief, confident chapter punctuation.',visual:'Reuse the existing title after the opening question. Keep the year and module in chrome; do not speak the metadata.'},
   concept:{heading:'Molar mass tells us the mass per mole',body:'Molar mass is mass divided by amount of substance, in grams per mole.',
     bullets:[{text:'M = m ÷ n, in g mol⁻¹.',at:2},{text:'For carbon atoms: M = 12.01 g mol⁻¹.',at:8},{text:'Use the complete formula for molecules and compounds.',at:18}],
@@ -28,8 +29,8 @@ const revisions={
     delivery:'Practical and purposeful. Small lift on now we need a bridge.',
     visual:'Preserve the tared balance schematic and its schematic caption. Highlight mass in grams. No invented measurement or implication of a completed practical.'},
   formula:{heading:'What are you trying to find?',callout:'Mass: multiply. Amount: divide.',
-    text:'Start with what you want to find. Mass? Multiply the amount in moles, lowercase n, by the molar mass, capital M. That gives m equals n times capital M. Watch the units: moles times grams per mole leaves grams. Finding the amount instead? Divide mass by molar mass. The units help check the setup. They don’t check your atom counts for you.',
-    delivery:'Two clear questions with different intonation. Confident on multiply and divide. Slow for the unit cancellation.',
+    text:'For our supplied value, each mole of carbon atoms contributes twelve point zero one grams. Two moles contribute twice that mass. That is why we multiply the amount in moles, lowercase n, by the molar mass, capital M. Sample mass, lowercase m, equals n times capital M. Moles times grams per mole leaves grams. Finding the amount instead? Divide the mass by the mass per mole. That tells us how many moles the sample contains. The units check the kind of answer, but we still need the right formula and values.',
+    delivery:'Connect each mole contributing mass to multiplication. Contrast lowercase m and capital M clearly. Slow for the unit cancellation.',
     visual:'Reuse the readable m, n and M cards and unit cancellation. Show one target at a time. Hold each equation for at least four seconds; do not flash the rearrangement.'},
   'mass-example':{heading:'Two moles of carbon: multiply or divide?',coachNote:'Find mass, so multiply n by M. Keep guard digits until the final answer.',
     text:'Let’s try it. What is the mass of two point zero zero moles of carbon atoms? We want grams, so multiply. Two point zero zero times twelve point zero one gives twenty-four point zero two grams. Keep those digits for now. The amount has three significant figures, so our final answer is twenty-four point zero grams. That last zero matters: it records the precision of the answer.',
@@ -54,12 +55,13 @@ const revisions={
     visual:'Reuse summary. End on the decision rule and hold it. No new decorative motion or catalogue restyling.'},
 };
 const order=['hook','title','concept','definition','lab-footage','formula','mass-example','worked-example','misconception','quick-check','summary'];
-const lesson={...structuredClone(source),productionRole:'prototype',scriptRevision:'engagement-v3',scenes:order.map(id=>{
+const lesson={...structuredClone(source),productionRole:'reference',syllabusNeutral:true,scriptRevision:'engagement-v3-prediction-causal-2026-10-08',scenes:order.map(id=>{
   const base=structuredClone(source.scenes.find(s=>s.id===id));
   const {text,delivery,visual,...copy}=revisions[id];
   delete base.captions;delete base.voiceover;delete base.revealDelays;
+  if(id==='hook')delete base.image;
   const words=text.split(/\s+/).length;
-  const seconds=id==='title'?3:Math.ceil(words/140*60)+4+(id==='worked-example'?4:0)+(id==='quick-check'?5:0);
+  const seconds=id==='title'?3:Math.ceil(words/140*60)+4+(id==='hook'?4:0)+(id==='worked-example'?4:0)+(id==='quick-check'?5:0);
   return {...base,...copy,durationInFrames:seconds*source.fps,voiceover:{text}};
 })};
 delete lesson.introVoiceover;
@@ -70,6 +72,7 @@ writeFileSync(lessonPath,JSON.stringify(lesson,null,2)+'\n');
 const recordings=[];
 const playback=[];
 const splitRules={
+  hook:{marker:'The oxygen sample has more mass',gapSeconds:4},
   'worked-example':{marker:'Eight oxygen atoms.',gapSeconds:4},
   'quick-check':{marker:'Chlorine gas has two atoms per molecule',gapSeconds:5},
 };

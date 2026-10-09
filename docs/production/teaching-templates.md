@@ -2,6 +2,8 @@
 
 Draft standard for selected pilots, 2 October 2026. Derived from the [research report](../research/hsc-video-production-standard-2026-10-02.md) and its [evidence matrix](../research/evidence-matrix.md). These structures apply across subjects; no template mandates a scene count, art style or universal duration. Existing project instructions still govern design and animation.
 
+For every selected production lesson, complete the [teaching/visual brief](teaching-visual-brief-template.md) and use its draft, recording and export checks. This records how the research applies to the actual script and scenes; choosing a template does not complete review. Keep exact voiced-preview evidence distinct from source/still inspection and human listening.
+
 ## Common lesson brief
 
 Copy and fill before writing speech:

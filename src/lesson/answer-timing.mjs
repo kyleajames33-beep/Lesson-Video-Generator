@@ -9,3 +9,14 @@ export function answerTiming(revealDelays = {}, responseHold) {
     ? {fadeStart: midpoint - 24, fadeEnd: midpoint + 24, pauseFadeStart: midpoint - 28, pauseFadeEnd: midpoint + 8, countdownEnd: midpoint}
     : {fadeStart: boundary, fadeEnd: boundary + 48, pauseFadeStart: boundary, pauseFadeEnd: boundary + 36, countdownEnd: boundary};
 }
+
+// Prediction hooks keep solution-bearing artwork and feedback out of the attempt.
+export function hookRevealTiming(revealDelays = {}, responseHold) {
+  const boundary = revealDelays.answerVisibleStart ?? responseHold?.endFrame;
+  if (boundary === undefined) return revealDelays;
+  answerTiming(revealDelays, responseHold);
+  return {...revealDelays,
+    glyph: Math.max(revealDelays.glyph ?? 12, boundary),
+    annotation: Math.max(revealDelays.annotation ?? 100, boundary),
+    callout: Math.max(revealDelays.callout ?? 165, boundary)};
+}

@@ -5,7 +5,7 @@ import {tmpdir} from 'node:os';
 import path from 'node:path';
 import {assessReleaseEvidence, checkReleaseEvidence, reviewScopes} from './lib/release-gate.mjs';
 
-const facts = () => ({snapshotValid: true, inputValid: true, packageSha256: 'package', inputPackageSha256: 'inputs',
+const facts = () => ({snapshotValid: true, inputValid: true, teachingBriefValid: true, packageSha256: 'package', inputPackageSha256: 'inputs',
   renderRecordTracked: true, videoSha256: 'video', captionsTracked: true, fps: 30, durationInFrames: 900,
   renderRecord: {status: 'full-render-unreviewed', inputDriftCheckPassed: true, inputPackageSha256: 'inputs', videoSha256: 'video', render: {fps: 30, frameRange: [0, 899]}},
   reviews: reviewScopes.map((scope) => ({valid: true, record: {packageSha256: 'package', scope, outcome: 'pass', reviewer: 'Named fixture reviewer', recordedAt: '2026-10-03T00:00:00Z'}}))});
@@ -20,6 +20,14 @@ test('scores and a video alone cannot replace named reviews', () => {
   const result = assessReleaseEvidence(selected);
   assert.equal(result.ready, false);
   assert.equal(result.blockers.filter((item) => item.code === 'REVIEW_MISSING').length, 5);
+});
+
+test('passing media and all review scopes cannot replace the teaching and exact-preview brief', () => {
+  for (const teachingBriefValid of [false, undefined]) {
+    const result = assessReleaseEvidence({...facts(), teachingBriefValid});
+    assert.equal(result.ready, false);
+    assert.ok(result.blockers.some(item => item.code === 'TEACHING_BRIEF_REQUIRED'));
+  }
 });
 test('one reviewer can cover multiple scopes, but omissions and stale records fail', () => {
   const selected = facts();

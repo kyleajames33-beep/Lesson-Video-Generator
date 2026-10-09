@@ -13,7 +13,7 @@
   ],
   "lessonIntent": "Students can calculate molar mass and use it to move between grams and moles.",
   "examSkill": "Identify molar mass as the bridge between mass and moles in quantitative chemistry questions.",
-  "productionRole": "prototype",
+  "productionRole": "reference",
   "fps": 30,
   "width": 1920,
   "height": 1080,
@@ -21,14 +21,25 @@
     {
       "id": "hook",
       "type": "hook",
-      "heading": "Same particle count. Which sample is heavier?",
+      "heading": "Same number of atoms. Which sample has more mass?",
       "body": "One mole of carbon atoms. One mole of oxygen atoms.",
       "callout": "Equal amounts do not mean equal masses.",
-      "image": "l2HookBalance",
-      "durationInFrames": 840,
-      "caption": "The mole counts invisible particles. Molar mass tells us how much they weigh.",
+      "durationInFrames": 1230,
+      "caption": "Compare the two samples and make a prediction.",
+      "comparison": [
+        {
+          "label": "Carbon atoms",
+          "amount": "1 mol",
+          "mass": "12.01 g"
+        },
+        {
+          "label": "Oxygen atoms",
+          "amount": "1 mol",
+          "mass": "16.00 g"
+        }
+      ],
       "voiceover": {
-        "text": "One mole of carbon atoms. One mole of oxygen atoms. Same number of atoms. So, would they weigh the same? It’s a reasonable guess. But oxygen atoms are heavier. Equal amounts can have different masses. Molar mass explains the difference, and lets us turn a mass on a balance into an amount in moles."
+        "text": "One mole of carbon atoms. One mole of oxygen atoms. Both samples contain the same number of atoms. Which sample has more mass? Make a prediction. Take a moment, or pause for longer. The oxygen sample has more mass because each oxygen atom is heavier. The mole tells us how many particles we have. Molar mass tells us the mass per mole. It connects an amount in moles to the mass we measure on a balance."
       }
     },
     {
@@ -151,11 +162,11 @@
         "right": "g mol⁻¹",
         "result": "mol cancels → answer is in grams"
       },
-      "durationInFrames": 930,
+      "durationInFrames": 1290,
       "caption": "Use m equals n times M to calculate mass from moles and molar mass.",
       "confidenceCheck": "Apply m = n × M to convert between mass and amount of substance.",
       "voiceover": {
-        "text": "Start with what you want to find. Mass? Multiply the amount in moles, lowercase n, by the molar mass, capital M. That gives m equals n times capital M. Watch the units: moles times grams per mole leaves grams. Finding the amount instead? Divide mass by molar mass. The units help check the setup. They don’t check your atom counts for you."
+        "text": "For our supplied value, each mole of carbon atoms contributes twelve point zero one grams. Two moles contribute twice that mass. That is why we multiply the amount in moles, lowercase n, by the molar mass, capital M. Sample mass, lowercase m, equals n times capital M. Moles times grams per mole leaves grams. Finding the amount instead? Divide the mass by the mass per mole. That tells us how many moles the sample contains. The units check the kind of answer, but we still need the right formula and values."
       }
     },
     {
@@ -254,5 +265,6 @@
     "CH11/12-6"
   ],
   "inquiryQuestion": "How are measurements made in chemistry?",
-  "scriptRevision": "engagement-v3"
+  "syllabusNeutral": true,
+  "scriptRevision": "engagement-v3-prediction-causal-2026-10-08"
 }

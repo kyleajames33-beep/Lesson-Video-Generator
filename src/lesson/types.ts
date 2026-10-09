@@ -23,6 +23,8 @@ export type SceneBase = {
     | 'endCard'
     | 'mnemonic';
   durationInFrames: number;
+  /** Selected reusable teaching boards, with cues resolved from narration. */
+  teachingLayout?: 'molarMassDefinition' | 'molarMassBalance' | 'molarMassFormula' | 'molarMassCarbon' | 'molarMassBrackets' | 'molarMassChlorine';
   caption: string;
   voiceover?: {
     text: string;
@@ -188,7 +190,14 @@ export type DiagramConfig =
       delay?: number;
     }
   | {
-      type: 'reactionRun';
+    type: 'recipeCount';
+    delay?: number;
+    /** Complete the four one-to-one ingredient pairs at this narration cue. */
+    assembleAt?: number;
+    extraBunsAt?: number;
+  }
+  | {
+    type: 'reactionRun';
       /** Header, e.g. "2H₂ + O₂ → 2H₂O". Defaults to the H₂/O₂ reaction. */
       equation?: string;
       /** Molecule counts on each reactant plinth; atoms are element symbols. */
@@ -196,6 +205,11 @@ export type DiagramConfig =
       product?: {label: string; atoms: string[]; coef: number};
       delay?: number;
       framesPerEvent?: number;
+      /** Frames after diagram entrance before consuming any molecules. */
+    runStart?: number;
+    /** Opt-in attention on leftover molecules after the reaction stops. */
+    highlightLeftovers?: boolean;
+    leftoversAt?: number;
     }
   | {
       type: 'coefficientDivide';
@@ -206,6 +220,8 @@ export type DiagramConfig =
       delay?: number;
       /** Frames after delay for: raw moles, divide, crown. */
       steps?: [number, number, number];
+      /** Optional drawn cue linking a coefficient of two to half the capacity. */
+      attention?: 'handdrawn';
     }
   | {type: 'errorDartboard'}
   | {type: 'calorimeter'}
@@ -349,6 +365,8 @@ export type TextScene = SceneBase & {
   mistakeTag?: string;
   unitCancel?: UnitCancelConfig;
   diagram?: DiagramConfig;
+  /** Give a teaching diagram more space while keeping its text alongside it. */
+  conceptVisualLayout?: 'diagramFocus';
   /**
    * Draw this scene's diagram in the hand-drawn stop-motion style (line boil,
    * held drawings, paper grain) — or force the default look. Overrides the
@@ -356,10 +374,28 @@ export type TextScene = SceneBase & {
    */
   diagramStyle?: DiagramStyle;
   image?: string;
+  /** Equal-amount comparison cards for a prediction hook. */
+  comparison?: {label: string; amount: string; mass: string}[];
+  /** These cards contain the question's given quantities, not its answer. */
+  comparisonIsPrompt?: boolean;
+};
+
+/** Stable givens alongside one calculation stage at a time. Stage order matches
+ * the scene's recorded step cues; summaries retain established results only. */
+export type CalculationPresentation = {
+  task: string;
+  equation?: string;
+  givens: Array<{label: string; value: string; reference?: string}>;
+  references?: Array<{label: string; value: string}>;
+  note?: string;
+  stages: Array<{label: string; lines: string[]; summary: string; lineAts?: number[]}>;
 };
 
 export type WorkedExampleScene = SceneBase & {
   type: 'workedExample';
+  /** Compact board for several related operations with long given quantities. */
+  workedVisualLayout?: 'compact';
+  calculationPresentation?: CalculationPresentation;
   heading: string;
   question: string;
   coachNote?: string;
@@ -374,6 +410,7 @@ export type QuickCheckScene = SceneBase & {
   question: string;
   pausePrompt?: string;
   answerSteps: string[];
+  calculationPresentation?: CalculationPresentation;
   image?: string;
 };
 

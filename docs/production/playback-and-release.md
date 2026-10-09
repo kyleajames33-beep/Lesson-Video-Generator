@@ -46,6 +46,13 @@ Assembly preserves source recordings; it does not normalize loudness or trim
 their beginning/end silence. The output is lossless PCM, avoiding MP3 encoder
 delay and raw MP3 byte concatenation.
 
+Some v4 timestamp responses extend a terminal full stop up to 80 milliseconds
+past the decoded audio. Assembly can bound a terminal punctuation/whitespace
+overrun of at most 100 milliseconds to the decoded end. It preserves all spoken
+character timings and raw alignment sidecars, and records the adjustment in
+the assembled item provenance. Spoken-character overruns and larger overruns
+still fail. This rule does not shift or rescale narration timestamps.
+
 Quick checks use `answerVisibleStart`, plus the measured `responseHold`. Legacy
 `answerStart` remains the midpoint of the old fade. New measured scenes use the
 end of the silent interval as their first permitted answer boundary. The
@@ -82,13 +89,23 @@ npm run render:release -- out/production/molar-mass-v3/render.json --output-dir=
 ```
 
 The output directory must be new. The render command runs physical preflight,
-requires caption coverage, stages the selected public dependencies, renders at
-one-worker concurrency and verifies inputs have not changed during rendering.
+requires caption coverage, stages the selected public dependencies and verifies
+inputs have not changed during rendering. Concurrency defaults to one worker;
+an explicit `concurrency` integer from 1 to 8 selects a different worker count.
+The actual value is recorded with the render invocation.
 It emits the video, matching SRT/VTT, input and export snapshots and a render
 record linking their hashes. An optional inclusive `frameRange: [start, end]`
 produces a preview with clipped, offset captions and `preview-unreviewed` status.
 Unspecified encoding choices use the installed Remotion defaults and the hashed
 environment. Loudness and true-peak approval remain separate checks.
+
+An optional `normalizeAudio: true` masters the exported audio to the established
+review target of -18 LUFS, using a -2 dBTP normalization ceiling. The renderer
+measures the mastered result and requires an integrated level within 1 LU of
+the target and true peak no higher than -1.5 dBTP. It retains the unmastered
+video and source recordings, records measured results, and binds both video
+versions and the audio report into the release snapshot. Listening review is
+still required; these measurements do not approve pronunciation or delivery.
 
 ```powershell
 npm run release:snapshot -- verify out/production/molar-mass-v3/render-01/release.snapshot.json

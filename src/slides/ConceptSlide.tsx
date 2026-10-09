@@ -42,6 +42,7 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 	// Prevents the empty grey "visual stage" box from sitting next to the
 	// content (e.g. recap scene in L1B).
 	const hasVisual = Boolean(scene.image || scene.diagram);
+	const diagramFocus = hasVisual && scene.conceptVisualLayout === 'diagramFocus';
 	// Text-only concepts get the full width and larger type instead of
 	// leaving the right half of the frame empty.
 	const wide = !hasVisual;
@@ -52,15 +53,15 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 			<div
 				style={{
 					position: 'absolute',
-					top: 154,
+					top: diagramFocus ? 120 : 154,
 					left: 64,
 					right: 64,
-					bottom: 132,
+					bottom: diagramFocus ? 110 : 132,
 					display: 'grid',
 					gridTemplateColumns: hasVisual
-						? 'minmax(0, 0.98fr) minmax(560px, 0.92fr)'
+						? diagramFocus ? '600px minmax(0, 1fr)' : 'minmax(0, 0.98fr) minmax(560px, 0.92fr)'
 						: 'minmax(0, 1fr)',
-					gap: 56,
+					gap: diagramFocus ? 40 : 56,
 					alignItems: 'center',
 				}}
 			>
@@ -73,7 +74,7 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 								style={{
 									margin: 0,
 									maxWidth: wide ? 1500 : 910,
-									fontSize: fitHeadingSize(scene.heading),
+									fontSize: diagramFocus ? 58 : fitHeadingSize(scene.heading),
 									fontWeight: 800,
 									lineHeight: 1.02,
 									letterSpacing: '-0.035em',
@@ -99,7 +100,7 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 								startFrame={bulletStart}
 								endFrame={bulletEnd}
 								markerColor={theme.accent}
-								fontSize={wide ? 42 : TYPE.bodyLarge.fontSize}
+								fontSize={diagramFocus ? 34 : wide ? 42 : TYPE.bodyLarge.fontSize}
 							/>
 						) : (
 							<div
@@ -123,7 +124,7 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 									style={{
 										margin: '26px 0 0',
 										maxWidth: wide ? 1300 : 860,
-										fontSize: wide ? 30 : 25,
+									fontSize: diagramFocus ? 28 : wide ? 30 : 25,
 										lineHeight: 1.42,
 										color: TOK.inkDim,
 									}}
@@ -141,7 +142,7 @@ export const ConceptSlide = ({scene, lesson, sceneIndex, totalScenes}: ConceptSl
 											display: 'inline-flex',
 											alignItems: 'center',
 											gap: 14,
-											fontSize: 28,
+											fontSize: diagramFocus ? 30 : 28,
 											fontWeight: 600,
 											fontStyle: 'italic',
 											color: TOK.amberInk,
@@ -182,7 +183,7 @@ const VisualStage = ({scene, lesson}: {scene: TextScene; lesson: LessonData}) =>
 			style={{
 				position: 'relative',
 				width: '100%',
-				height: 650,
+					height: scene.conceptVisualLayout === 'diagramFocus' ? 820 : 650,
 				borderRadius: 18,
 				border: `1px solid ${TOK.rule}`,
 				background:
@@ -218,7 +219,7 @@ const VisualStage = ({scene, lesson}: {scene: TextScene; lesson: LessonData}) =>
 			<div
 				style={{
 					position: 'absolute',
-					inset: 48,
+					inset: scene.conceptVisualLayout === 'diagramFocus' ? 16 : 48,
 					display: 'flex',
 					alignItems: 'center',
 					justifyContent: 'center',
@@ -312,7 +313,7 @@ const ConceptDiagram = ({scene, lesson}: {scene: TextScene; lesson: LessonData})
 
 	const diagram = <DiagramRenderer diagram={scene.diagram} />;
 	return (
-		<div style={diagramWrapStyle(scene.diagram.type)}>
+		<div style={scene.conceptVisualLayout === 'diagramFocus' ? {width: '100%'} : diagramWrapStyle(scene.diagram.type)}>
 			{resolveDiagramStyle(lesson.visualStyle, scene.diagramStyle) === 'handDrawn' ? (
 				<HandDrawnStage id={`hd-${scene.id}`}>{diagram}</HandDrawnStage>
 			) : (

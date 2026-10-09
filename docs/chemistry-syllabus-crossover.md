@@ -1,5 +1,7 @@
 # Chemistry: 2017 syllabus vs new Chemistry 11–12 (2025) syllabus, crossover audit
 
+Current production triage: [8 October continuity review](production/curriculum-continuity-2026-10-08.md). This September report is historical scope evidence. Its crossover labels and voicing recommendations do not establish current scientific, listening or release approval. Some purported new-course gaps were already required in 2017.
+
 Prepared 2026-09-24. This audit covers all 149 Chemistry lesson JSONs in `src/data/chemistry-*.json`: Y11 M1–M4 (73 files, including M2's legacy L1 plus its L1A/L1B split, and the M3/M4 checkpoints) and Y12 M5–M8 (76 files). Each lesson is classified against the new NESA Chemistry 11–12 syllabus. The aim is to find content taught under **both** syllabuses, so that audio and image credits go on lessons that keep their value after the changeover. It mirrors `docs/biology-syllabus-crossover.md`.
 
 **Yes, the new syllabus exists.** NESA has published *Chemistry 11–12 Syllabus (2025)* on the Digital Curriculum. Unlike Biology, it starts **one year later** (Year 11 in 2028).

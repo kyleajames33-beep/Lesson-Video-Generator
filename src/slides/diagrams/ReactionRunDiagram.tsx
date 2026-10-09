@@ -30,6 +30,9 @@ export type ReactionRunProps = {
 	product?: ReactionRunSpecies;
 	delay?: number;
 	framesPerEvent?: number;
+	runStart?: number;
+	highlightLeftovers?: boolean;
+	leftoversAt?: number;
 };
 
 // Defaults mirror the lesson's hook (10 bread + 4 cheese, 2 : 1) as real chemistry.
@@ -52,6 +55,9 @@ export const ReactionRunDiagram = ({
 	product = DEFAULT_PRODUCT,
 	delay = 62,
 	framesPerEvent = 36,
+	runStart = 60,
+	highlightLeftovers = false,
+	leftoversAt,
 }: ReactionRunProps) => {
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
@@ -62,11 +68,11 @@ export const ReactionRunDiagram = ({
 	const limitingIdx = reactants.reduce((best, r, i) => (r.count / r.coef < reactants[best].count / reactants[best].coef ? i : best), 0);
 	const productTotal = events * product.coef;
 
-	const runStart = 60;
 	const runEnd = runStart + events * framesPerEvent;
 	const p = interpolate(frame, [runStart, runEnd], [0, events], clamp); // events elapsed (continuous)
 	const evT = (k: number) => Math.max(0, Math.min(1, p - k)); // 0..1 progress of event k
 	const done = interpolate(frame, [runEnd, runEnd + 14], [0, 1], clamp);
+	const leftoverDraw = interpolate(frame, [Math.max(runEnd, leftoversAt ?? runEnd), Math.max(runEnd, leftoversAt ?? runEnd) + 20], [0, 1], clamp);
 
 	const xs = [118, 380, 642];
 	const allAtoms = Array.from(new Set([...reactants.flatMap((r) => r.atoms), ...product.atoms]));
@@ -125,6 +131,9 @@ export const ReactionRunDiagram = ({
 						);
 					})}
 				</DioramaPlinth>
+				{highlightLeftovers && slots.filter((_,j)=>j>=events*r.coef).map((s,j)=>(
+					<ellipse key={`leftover-${j}`} data-leftover-focus={r.label} cx={s.x} cy={s.y} rx={28} ry={25} fill="none" stroke={theme.accent} strokeWidth={3} pathLength={1} strokeDasharray={1} strokeDashoffset={1-leftoverDraw} opacity={leftoverDraw} />
+				))}
 			</g>
 		);
 	};

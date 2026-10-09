@@ -19,6 +19,7 @@ import {Eyebrow} from './shared/Eyebrow';
 import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
 import {AssetImg} from './shared/AssetImg';
+import {CalculationProblem, FocusedWorking} from './shared/OrganisedCalculation';
 
 type WorkedExampleSlideProps = {
 	scene: WorkedExampleScene;
@@ -32,6 +33,7 @@ const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as c
 export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: WorkedExampleSlideProps) => {
 	const rd = scene.revealDelays ?? {};
 	const n = scene.steps.length;
+	const compact = scene.workedVisualLayout === 'compact';
 	// Steps start at y=470; the bottom chrome row starts ~y=960.
 	const stepFontSize = fitStepFontSize(scene.steps, {
 		base: TYPE.math.fontSize,
@@ -44,11 +46,21 @@ export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: Wor
 	});
 	const stepsStart = rd.stepsStart ?? 116;
 	const stepInterval = rd.stepInterval ?? 86;
+	if (scene.calculationPresentation) {
+		if (scene.calculationPresentation.stages.length !== n) throw new Error('Worked presentation needs one stage per step.');
+		const ats = (rd as {stepAts?: number[]}).stepAts;
+		const delays = scene.steps.map((_, i) => ats?.[i] ?? stepsStart + i * stepInterval);
+		return <SlideFrame sceneDurationInFrames={scene.durationInFrames}>
+			<SlideChrome lesson={lesson} topic="WORKED EXAMPLE" sceneType="workedExample" sceneIndex={sceneIndex} totalScenes={totalScenes} />
+			<CalculationProblem presentation={scene.calculationPresentation} eyebrow="WORKED EXAMPLE" delay={rd.heading ?? 18} />
+			<FocusedWorking presentation={scene.calculationPresentation} delays={delays} />
+		</SlideFrame>;
+	}
 	return (
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
 			<SlideChrome lesson={lesson} topic="WORKED EXAMPLE" sceneType="workedExample" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
-			<div style={{position: 'absolute', top: 142, left: 64, right: 64}}>
+			<div data-worked-question style={{position: 'absolute', top: 142, left: 64, right: 64}}>
 				<Eyebrow color={TOK.inkDim}>PROBLEM · {scene.heading.toUpperCase()}</Eyebrow>
 			{scene.image && ASSETS[scene.image as AssetName] && (
 				<FadeUp delay={rd.diagram ?? 30} durationFrames={16} dy={16}>
@@ -108,12 +120,12 @@ export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: Wor
 			<div
 				style={{
 					position: 'absolute',
-					top: 470,
+					top: compact ? 385 : 470,
 					left: 64,
 					right: 64,
 					display: 'grid',
 					gridTemplateColumns: 'minmax(0, 1fr)',
-					gap: 18,
+					gap: compact ? 12 : 18,
 				}}
 			>
 				<AmbientGlow left="8%" top={300} width="84%" height={520} delay={260} opacity={0.07} speedSeconds={6.8} />
@@ -136,6 +148,7 @@ export const WorkedExampleSlide = ({scene, lesson, sceneIndex, totalScenes}: Wor
 							delay={delay}
 							index={index}
 							isFinal={isFinal}
+							compact={compact}
 							fontSize={stepFontSize}
 							newNumbers={index > 0 && !isFinal ? newNumbersSince(scene.steps[index - 1], step) : undefined}
 							unitCancel={isFinal ? scene.unitCancel : undefined}
@@ -153,6 +166,7 @@ const WorkedStep = ({
 	delay,
 	index,
 	isFinal,
+	compact,
 	fontSize,
 	newNumbers,
 	unitCancel,
@@ -164,6 +178,7 @@ const WorkedStep = ({
 	delay: number;
 	index: number;
 	isFinal: boolean;
+	compact: boolean;
 	unitCancel?: {left: string; right: string; result: string};
 }) => {
 	const theme = useAccent();
@@ -178,14 +193,15 @@ const WorkedStep = ({
 	return (
 		<FadeUp delay={delay} durationFrames={16} dy={24}>
 			<div
+				data-worked-row={index}
 				style={{
 					position: 'relative',
 					display: 'grid',
 					gridTemplateColumns: '156px minmax(0, 1fr) 64px',
 					gap: 32,
 					alignItems: isFinal ? 'start' : 'center',
-					minHeight: isFinal ? (unitCancel ? 154 : 78) : 78,
-					padding: '12px 18px 12px 0',
+					minHeight: isFinal ? (unitCancel ? 154 : compact ? 64 : 78) : compact ? 64 : 78,
+					padding: compact ? '8px 18px 8px 0' : '12px 18px 12px 0',
 					borderBottom: `1px solid ${index < 4 ? TOK.rule : 'transparent'}`,
 				}}
 			>

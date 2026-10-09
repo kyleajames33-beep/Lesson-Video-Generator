@@ -250,3 +250,308 @@ Use `docs/lesson-retrospective-template.md` for the review, then copy durable le
 - All 13 final v3 molar mass recording paths remain missing. Revised narration
   requires its own selected recordings/alignment before the production handoff.
 - Usage and limitations: `docs/production/playback-and-release.md`.
+
+## Voice, curriculum and engagement reconciliation, 8 October 2026
+
+- Six Simon v4 auditions compared default controls, higher stability and higher
+  similarity. The user found them similar and acceptable. Keep stability 0.50
+  and similarity 0.75 as the starting controls. This feedback covers the short
+  passage only; final v3 narration still needs listening review.
+- Signed-in browser generation was available using promotional credits.
+  No API credential was created or stored. UI downloads have no timestamps.
+- The generator now honours manifest voice/model selection, supports explicit
+  v4 Dialogue controls and versioned pronunciation dictionaries, and isolates
+  conflicting voice/model auditions. SSML is rejected for v4.
+- Curriculum triage now covers all 308 lessons. Shared concepts, scope changes,
+  moved topics and legacy priorities remain candidates, not unchanged-script
+  approvals. See `docs/production/curriculum-continuity-2026-10-08.md`.
+- The research work exists, but the full engagement rollout is incomplete.
+  Molar mass v3 has 691 spoken words, prediction/decision wording and two
+  planned response gaps. The opening hold and stronger causal formula wording
+  from the research remain unresolved before final recording.
+- The matched script experiment, task templates and nephron interaction
+  proposals are distinct from a completed narrated catalogue lesson. No learner
+  findings establish improved outcomes. See the engagement implementation
+  status document before describing the research as fully applied.
+- Current Windows verification: 261 source tests and 34 production tests pass.
+
+## Molar mass opening and recording setup, 8 October 2026
+
+- Completed the opening prediction prompt and causal multiplication wording in
+  unvoiced v3. The current script has 742 spoken words, 11 scenes and 14 exact
+  recording segments. Planned response gaps are four, four and five seconds.
+- Hooks now opt into the measured response boundary. Answer-bearing graphics,
+  annotations and callouts remain hidden until it ends. Legacy hooks retain
+  their existing timing. Assembly verification rejects early answer cues.
+- Visual inspection caught the old hook image's unrelated 63.55 g weight.
+  Replaced it only in the selected opening with carbon/oxygen comparison cards,
+  retaining the original asset and the other lesson designs.
+- `render-molar-mass-opening-review.mjs` produces an explicitly unvoiced timing
+  fixture. Its provisional cue times are not final measured narration.
+- Created an ignored, blank `.env.local` and taught the audio generator to load
+  it. The existing browser key exposes its ID only. Prepared a restricted key
+  form for user completion; no credential creation or secret copying performed.
+- Production timing tests now pass 35/35, including the new hook protection.
+  Source checks passed 261/261. Final recordings, measured assembly and the
+  complete narrated export still require the API credential and later review.
+
+## Molar mass complete narrated review draft, 8 October 2026
+
+- The user privately configured the ignored `.env.local`. All 14 fresh Simon
+  v4 recordings and original timestamp sidecars are now complete. No credential
+  is stored in tracked files or review artifacts.
+- The final measured lesson is `narrated.lesson-v2.json` in
+  `out/prototypes/molar-mass-continuity-handoff/`. Its 742 words span 11 scenes
+  and 336.3 seconds, with four, four and five seconds of protected response
+  silence. Phrase-aligned teaching boards explain the mass-per-mole reasoning.
+- The complete 1920 by 1080, 30 fps export is
+  `narrated-render-02/video.mp4` (10,089 frames). An unmastered version remains
+  alongside it. Final audio measures -18.04 LUFS and -1.76 dBTP.
+- Physical preflight has zero errors or warnings. TypeScript, 36 production
+  tests, four teaching-board tests and 261 source regression tests passed.
+  The final release snapshot verifies with no drift or missing required inputs.
+- The local review page includes captions, chapters, phone-size view, notes,
+  the recording script and a descriptive transcript with visual calculations.
+  Browser checks confirm video metadata, captions and chapter navigation.
+- Status remains `full-render-unreviewed`. A complete watch-through and science,
+  listening, motion, device and accessibility review remain pending. Do not
+  treat technical checks or selected still inspection as those approvals.
+
+## First continuity batch started, 9 October 2026
+
+- The user watched molar mass and said it was good, then asked about animation
+  density and authorised the next batch. Record this as general feedback on
+  the exact exported video, not five inferred formal scope passes.
+- Calculation reading holds are intentional. The next selected lessons are
+  limiting reagents and enzyme models, with existing dioramas retained and
+  phrase-aligned. DNA replication remains a later candidate, with expanded
+  enzyme and model-assessment scope to check before recording.
+- Corrected chlorine molar-mass consistency, premature rounding and the old
+  quick-check capacity-ratio claim. Enzyme narration now distinguishes shape
+  from chemical interactions, selective productive binding from binding alone,
+  and transition-state stabilisation from universal bond-strain claims.
+- Both isolated lessons have ten fresh Simon v4 recordings, exact captions,
+  protected four/five-second holds and zero-error media preflight. Short motion
+  exports are complete and snapshots verify. Selected browser preview states
+  and layout stills were inspected; full listening/device approval is pending.
+- Full 1080p renders started in sequence through
+  `out/prototypes/continuity-batch-01/render-queue.mjs`. The live status file
+  reports rendering, queued, ready or failure. It verifies snapshots before
+  declaring a video ready. Check actual status before claiming full completion.
+- Review at http://127.0.0.1:8778/continuity-batch-01/. Titles, descriptions,
+  captions, descriptive transcripts and covers are prepared. Nothing was
+  uploaded or posted. The publishing platform and channel have been requested.
+- Shared render code and production tools are unchanged. The accepted molar
+  mass snapshot still verifies. Batch preparation code and all generated media
+  are in the isolated local package; `docs/production/continuity-batch-01-2026-10-09.md`
+  records the scientific changes, motion plans and current boundary.
+
+## YouTube preparation and complete batch exports, 9 October 2026
+
+- The user chose YouTube and identified HSCScience, @HSCScience-u7i. Its public
+  handle and Manage videos link match Studio channel UCNUGtH2mgBMCRLG9fiqWm8Q.
+- Studio has public Part A (MCmEsRHKtTU) and a Part B draft. Do not duplicate
+  either by assuming an empty channel. The existing Chemistry Module 2
+  playlist was saved as Year 11 Chemistry: Module 2 (2017 Syllabus), with
+  description and manual sorting for course order.
+- Both complete new 1080p exports are ready for user review. Limiting release
+  package hash is c891b92a4a8292942eb91b1948535c5b628707b61a2e1c7fb1b1f9f1c412abde;
+  enzyme package hash is feee6aabbeef862a876b31d88ece69fa6bdf6ab1578f1e4ac2a3219eb2e89cec.
+  Both new exports and the exact accepted molar-mass snapshot verify.
+- All three YouTube packages are prepared in
+  out/prototypes/continuity-batch-01/youtube/. They contain search-led titles,
+  paraphrased syllabus coverage, official links, measured valid chapters,
+  captions, covers and explicit review/visibility status. Keyword choices are
+  hypotheses, not measured search volumes. The publishing plan is
+  docs/production/youtube-publishing-plan-2026-10-09.md.
+- The next chemistry prerequisites to complete are empirical formulas, mole
+  ratios and mass-to-mass stoichiometry. Limiting reagents belongs after them;
+  do not label it episode two solely because it was the next video rendered.
+- Chrome local-file upload was rejected because the ChatGPT extension lacks
+  Allow access to file URLs. The documented setup instruction was sent to the
+  user. No new video has been uploaded or posted. Check pending user reply and
+  actual Studio state before resuming; do not repeat channel approval questions.
+
+## YouTube uploads completed, 9 October 2026
+
+- The user replied enabled. Chrome local-file selection now works. All three
+  exact verified MP4s are uploaded: molar mass g9zmc5w7kQU is public; limiting
+  reagents sijXK98W_9w and enzyme models tXBotBaNakU are unlisted review videos.
+  Studio's final channel table verifies these visibility states.
+- Supplied aligned SRT tracks are published as English (Australia) on all
+  three. Copyright checks report no issues found. Titles, descriptions,
+  syllabus mappings, chapters and specific tags are entered. Australia/Year
+  11 Education metadata and realistic AI narration disclosure are set.
+- The public 2017 chemistry playlist PLw0N4j18fnb6AqJ79YRTczpIqZ8FnbV6e
+  visibly shows Manual sorting: Part A at index 1, molar mass at index 2.
+  New public 2025 quantitative chemistry playlist PLEzyRLo5kAAs contains the
+  same molar-mass upload, with a growing-course description and manual order.
+  Unlisted review drafts are excluded from public course playlists.
+- An unsaved background playlist-editor change caused by the upload dialogue
+  was undone. Existing Part A remains in its original 2017 playlist. Its
+  narration, captions, title and description were not changed. Part B draft
+  remains untouched.
+- Custom thumbnail upload requires YouTube channel phone verification.
+  External description links require a separate one-off verification.
+  No account verification or permission change was performed. Local covers
+  remain prepared; generated video frames are in use. The molar thumbnail
+  visibly shows its atom-counting calculation.
+- The review hub now links all three YouTube videos. Exact publication state
+  is in out/prototypes/continuity-batch-01/youtube/publication-state.json.
+  Preserve these records if regenerating upload metadata. New lesson complete
+  user watch-throughs remain pending; upload success does not replace them.
+
+## Limiting-reagents playback feedback, 9 October 2026
+
+- The user reported blur, pronounced pauses and small diagrams on the unlisted
+  limiting-reagents upload sijXK98W_9w. Its paused watch player was on Auto
+  (360p). Switched that player to 1080p HD and verified the quality selection.
+  A frame extracted from the native export is sharp.
+- A separate feedback revision is prepared in
+  out/prototypes/limiting-reagents-feedback-2026-10-09/. Reused particle and
+  coefficient diagrams have about 50% more width. An optional diagram-focused
+  concept layout preserves all existing lesson defaults.
+- The particle model now enters after one second instead of 10.5 seconds.
+  A separate runStart parameter keeps the reaction and stop at the original
+  recorded cues. Starting quantities appear during their introduction.
+- Response gaps are two seconds each. The five-second practice instruction
+  was replaced with an invitation to pause, with a fresh Simon v4 recording
+  and alignment. Nine other recording segments remain unchanged. Scene tails
+  are 0.5 seconds after narration. The revised lesson is 4:53, previously 5:13.7.
+- Media preflight has zero errors and eight intentional SHORT_TAIL warnings.
+  Type checking and 34 playback/timeline/model tests pass. Layout stills and
+  the narrated 84.7-second motion pilot are prepared. Full rendering and
+  revised unlisted upload are in progress. Do not treat this as completed
+  publication or complete listening approval until actual results are saved.
+- Future batch planning should give key diagrams enough room and avoid long
+  automatic silence after every scene. Keep real reading and thinking holds
+  where the teaching task calls for them. Do not restyle the catalogue.
+- Detailed decisions and validation are in
+  docs/production/limiting-reagents-feedback-2026-10-09.md. Shared source edits
+  cause source drift in historical snapshots, while old MP4s and recordings
+  remain preserved. Capture a fresh package for the revised export.
+
+## Enzyme narration and visual feedback, 9 October 2026
+
+- The user rejected the unrelated "one atom" model and described the enzyme
+  script as robotic directions without personality or education. Treat this
+  as feedback on the explanation, not just a voice-settings problem.
+- A separate enzyme revision starts with milk, lactose and lactase, then
+  explains active-site interactions, induced shape change, catalytic-group
+  positioning and transition-state stabilisation. Binding and catalysis are
+  explicitly distinguished. A comparison question checks the model clue,
+  and the conclusion returns to the starting example.
+- All nine enzyme narration segments have fresh Simon v4 audio and provider
+  alignment. The old recordings and uploaded review are preserved. The new
+  timeline is approximately 3:54, with a two-second practice gap and half-second
+  tails. The opening uses the existing enzyme cycle instead of an atom.
+- Use a familiar example and a causal explanation for future scripts. Define
+  terms when needed, explain why a visible change matters, and let occasional
+  questions invite reasoning. Avoid strings of "watch", "notice", "label"
+  and "compare" instructions as a substitute for teaching. Voice tuning alone
+  cannot repair an instructional script. Preserve deliberate thinking holds.
+- The induced-fit and lock-and-key diagrams are enlarged. Both old YouTube
+  players were using Auto (360p); 1080p HD was selected and verified. Keep
+  native-export clarity distinct from YouTube's selected playback quality.
+- The first limiting full render failed in Remotion's temporary audio mixer.
+  The optional alignedPcm path uses exact shared-timeline offsets and voice
+  windows, then muxes and masters the track. A 75-second enzyme pilot succeeded
+  at -18.04 LUFS and -1.98 dBTP. Thirty playback, timeline and audio tests pass.
+- Native review caught an oversized enzyme title. The title is now short,
+  with the full topic in the subtitle; the title component also preserves
+  the space between its black and coloured words. The first interrupted
+  full exports are retained as incomplete, not release candidates.
+- Revised full renders and unlisted uploads are in progress. Track actual
+  completion in the revision packages and publication-state.json. Complete
+  user watch-through remains pending. Reproducible lesson preparation is in
+  scripts/prepare-enzyme-feedback-revision.mjs and
+  scripts/prepare-limiting-feedback-revision.mjs.
+
+## Preview-first workflow and independent review, 9 October 2026
+
+- The user explicitly requested Remotion checks before rendering and separate
+  chats to review work and prepare later videos. Three scoped agents reviewed
+  enzyme teaching/science, visual/timing and next-batch preparation. Their
+  reports and resolution ledger are under
+  out/prototypes/feedback-independent-reviews/. Use the ordered workflow in
+  docs/production/preview-first-review.md, linked from animation planning.
+- Exact final enzyme and limiting props were played and inspected in Studio.
+  Live preview was slow on this 8 GB computer; use a short encoded pilot when
+  needed, and run full exports sequentially. Freeze production inputs while
+  rendering. Opening the release composition with default placeholder props
+  is not a lesson review. Use a blank Studio env file so local API secrets are
+  not passed into the browser through automatic env loading.
+- Independent timing findings corrected early diagram masking, quiz rows
+  appearing ahead of their recorded phrases, and inconsistent binding states
+  in the enzyme comparison. Meaningful motion remains task-specific; preserve
+  existing usable artwork and avoid a catalogue-wide restyle.
+- Enzyme final render-03 is complete, 1920 by 1080 at 30 fps, 233.533 seconds,
+  -18.07 LUFS and -1.68 dBTP. Its dependency snapshot and all 94 exported SRT/VTT
+  cues pass independent verification. Revised unlisted upload ZTxQP7kI5_o has
+  supplied English (Australia) captions, accurate syllabus scope and measured
+  chapters. The watch page confirms Unlisted, AI disclosure and 1080p HD.
+- Natural narration, complete human listening and portrait-phone legibility
+  must not be claimed from code review, stills, UI playback or audio statistics.
+  Complete user watch-through remains pending before public course placement.
+- Next empirical-formula work is a separate 729-word unrecorded draft in
+  out/prototypes/next-chemistry-review-2026-10-09/. It corrects substance-identity
+  claims and inconsistent arithmetic, reuses the existing counting diagrams
+  and separates molecular inference as an extension. All cues are estimates,
+  with no stale audio or faithful captions attached. Review it in Remotion
+  before recording. Then prepare mole ratios and mass-to-mass in course order.
+- Limiting final render-04 is complete, 1920 by 1080 at 30 fps, 293 seconds,
+  -18.03 LUFS and -1.90 dBTP. The final snapshot and all 115 SRT/VTT cues pass
+  independent verification. Revised unlisted upload b7OCuLsXgG8 has published
+  English (Australia) captions and HD playback, with public playlists and
+  notifications excluded. Old review sijXK98W_9w is preserved.
+- Both revised YouTube previews reached the end through continuous UI playback
+  at decoded 1920 by 1080 without a player error. They are left paused at the
+  beginning. This evidence does not replace human listening or user review.
+- The exact updated empirical-formula silent draft has been inspected in
+  Remotion. Its late formaldehyde, calculation and recap reveals were corrected
+  before recording, and selected practice frames hide the answer during the
+  planned hold. The current lesson hash is
+  f07d4895edda75f3aa171429a94fd4cacc675402c7f297d1e778c6b39edca4ea.
+  All cues remain estimated. Slow Studio playback is not a smooth-motion pass.
+
+## 9 October: research application and conversational limiting pilot
+
+- Prior research was pushed: remote main fb61505e1d2f73653d31f48ed284488f5f4cf0c6 contains ca58c15 and the six tracked research files. The user finds the recent videos bland. Technical safeguards were applied more consistently than conversational teaching and the preferred visual treatments. See docs/production/research-application-gap-2026-10-09.md.
+- A separate 695-word limiting rewrite now explains reasons, uses a meaningful sodium/chlorine reversal and replaces the command-style recap with three causal ideas. Only concept, formula and summary have fresh Simon v4 recordings and alignment. The remaining seven scenes are unrecorded. Do not generate the whole lesson before the short tone review.
+- Shared SummarySlide content flow fixes wrapping overlap. Fourteen actual-layout cases and TypeScript checking passed. Original usable artwork remains.
+- Short 79.1-second teaching and 28.433-second recap exports have matching audio/captions and verified dependency snapshots. The local review URL is http://127.0.0.1:8778/limiting-conversational-2026-10-09/ and voiced Studio is http://localhost:8781/Lesson-release. The older empirical-formula Studio draft is intentionally unrecorded and silent. Browser playback does not establish human listening, natural delivery or learning approval.
+- Image interpretation falsely suggested missing glyphs. Independent pixel comparisons disproved the apparent defect. Renderer experiment removed and original exports reverified. No additional YouTube upload or full-lesson render was made for this tone trial.
+
+## 9 October: accepted script direction and durable visual integration
+
+- User says the conversational limiting script is much better and asks to integrate useful planning/prototypes, then prevent the same omissions in future videos. Preserve this tone direction: explain reasons, use connected conversational language and a useful content-specific surprise. Do not return to command recitals or try to repair flat scripts with voice settings alone.
+- All ten segments are recorded in the isolated limiting conversational revision. Actual full source has 8423 frames, 280.7667 seconds. New native recipe counts, leftover focus, optional hand-drawn coefficient/half-capacity marks and compact worked board are bound. Existing usable dioramas stay available.
+- Durable rules are now in AGENTS.md and docs/production/teaching-visual-brief-template.md. Draft preparation creates a pending brief. Recording-stage checks require meaningful scene choices and source review; the default full release renderer requires exact voiced-preview evidence and freezes the brief. Public release retains separate full-package listening/review requirements. Technical or model-only evidence must never claim someone listened.
+- Future work begins by reading the research, task templates, visual handbook and previous feedback, then recording per-scene reuse/adjust/new/none and why it teaches. Review the exact voiced lesson before a full render. No mandatory joke, painted background, diorama count or constant-motion rule.
+- Remotion revision8782 was inspected before export: actual audio ready and unmuted, opening and key capacity/answer sequences played, complete worked and recap frames checked. Studio performance is slow; use the revised short encoded pilot to assess exact timing. Full media review and user listening remain pending at this update.
+
+## 9 October: complete integrated limiting review export
+
+- The revised 79.1-second pilot02 played continuously to its end at 640px landscape width with captions showing and no player error. Independent decoded samples confirm correct leftover counts, coefficient-halving order and stable labels. This is browser/visual evidence, not human listening or 390px portrait approval.
+- Full local export is out/prototypes/limiting-conversational-2026-10-09/full-render-01/video.mp4: 8423 frames, 1920x1080, 30fps, 280.7667 seconds, measured -18.04 LUFS and -1.92 dBTP. Exact dependency snapshot, media hash, duration and all 116 SRT/VTT cues passed. The uncompressed full timeline has exactly two seconds of digital silence in the practice hold.
+- The frozen full export binds the exact production brief and preview evidence. Human listening remains pending; do not edit its brief or source to fabricate a release pass. Save subsequent full-package listening evidence separately through the release workflow.
+- Review page is http://127.0.0.1:8778/limiting-conversational-2026-10-09/. New upload metadata is a local draft with freshly measured chapters, not an uploaded revision. Prior YouTube review b7OCuLsXgG8 is preserved.
+- Next empirical formulas, mole ratios and mass-to-mass work have pending preparation briefs under out/prototypes/next-chemistry-review-2026-10-09/. Their reviewed authoring decisions do not approve old scripts, voice provenance or recordings. Recording/export stages must resolve the stated pending findings first.
+- The complete revised MP4 reached its end through continuous UI playback with captions showing, unmuted, no player error and decoded 1920x1080. Display started at 1150px and changed to 640px landscape at 116 seconds; selected worked and recap views have no caption collision. Exact scoped evidence is full-browser-playback-review.json in the selected revision folder. This does not pass natural narration, actual-device readability or user listening. Leave the review paused at its beginning for the user.
+
+## 9 October: minimum standard, organised calculations and course boundaries
+
+- User loves the integrated fixes and makes them the minimum standard. New examples must reduce competing information: short task, separate reaction, grouped givens and constants, one current stage, retained established results. Apply the accepted conversational teaching and useful visual treatments through each production brief.
+- Selected limiting display revision is `out/prototypes/limiting-clear-working-2026-10-09/lesson.json`. Its recorded speech and captions match the accepted full conversational lesson. Product ratio and later mass result have separate recorded cues. No new full export or upload has been made for this display revision; preserve earlier frozen media and evidence.
+- Actual native frames for this revision and the next empirical draft are at http://127.0.0.1:8778/calculation-layout-review-2026-10-09/. Source and sampled native-layout review are separate from continuous voiced playback, external captions, actual-device readability and human listening.
+- Next selected empirical draft is `out/prototypes/empirical-formulas-organised-2026-10-09/lesson.json`. It has an explicit grams-to-moles entry, a within-substance-ratio stopping point, and a handoff to ratios between substances. The 100 g basis stays visible; four useful working stages replace a fleeting preliminary stage. Molecular inference is a labelled extension. Consistent molar-mass wording is applied before recording. Speech and timing remain unrecorded estimates.
+- Use `docs/production/course-progression-plan-2026-10-09.md` and its source-bound ledger before choosing the next lesson. Immediate order: molar mass, percentage composition/empirical formulas, balanced-equation mole ratios, mass-to-mass, limiting reagents, then yield/purity and solution/gas topics. Playlist order and upload chronology are different.
+- The ledger inventories 308 chemistry/biology lesson sources and 30 old-module/new-focus-area rows. It does not certify full coverage. The mandatory-action checklist maps 27 quantitative-chemistry and four enzyme points into 63 action rows; none is automatically approved. Other major areas still need point-level mapping. Practical conduct, analysis and required contexts need their own evidence.
+- New production briefs use schema 2 and require prerequisite knowledge, entry, stopping point, next lesson and an existing progression plan before recording/export. Historical schema-1 briefs retain their original contract. Do not rewrite frozen approvals to hide subsequent source drift.
+
+## 9 October: complete user-facing video and syllabus list
+
+- User requests the full Chemistry/Biology video list with syllabus mapping and specifies Year 11 Biology uses 2025 only. Treat this as production targeting, not a claim that the official 2027 implementation already occurred in 2026. Keep old Year 11 Biology comparisons as historical evidence, outside the active course route.
+- `scripts/build-video-syllabus-view.mjs` creates the searchable local view at http://127.0.0.1:8778/video-syllabus-map-2026-10-09/ and the full list/data in `docs/production/video-syllabus-map-2026-10-09.md` and `.json`. All 308 registered sources are shown: Chemistry 73 Year 11 and 76 Year 12; Biology 75 Year 11 and 84 Year 12. These are source counts, not counts of finished uploads.
+- The view distinguishes direct continuity point references, exact normalised lesson-metadata matches and provisional required-action candidates. Specific 2025 references are available for 121 sources; other rows retain topic/focus-area candidates and pending mapping. No lesson or full course is certified complete by this export. Detailed official point text remains bound to the 8 October cache.
+- Destination syllabus year differs from the source filename year. The 2025 Year 11 Biology filter includes older Year 12 reuse candidates as well as the 75 new-structured drafts. Do not count those candidates as additional approved course videos or build duplicate DNA/homeostasis lessons before reviewing overlap.

@@ -1,5 +1,7 @@
 # Biology: 2017 syllabus vs new Biology 11–12 (2025) syllabus, crossover audit
 
+Current production triage: [8 October continuity review](production/curriculum-continuity-2026-10-08.md). This September report is historical scope evidence. Its Year 11 counts, gap claims and voicing recommendations are stale. Do not treat crossover labels as approval to record a current script unchanged.
+
 Prepared 2026-09-24. Scope: all 84 Biology lesson JSONs in `src/data/biology-y12-m{5..8}-*.json`. That is the 80 lessons plus 4 lessons that were split into A/B parts (M8 L13, L17, L18, L19). Each one is classified against the new NESA syllabus. The goal is to find content taught under **both** syllabuses so that audio and image credits go only on lessons that stay useful after the changeover.
 
 ## Status (updated 2026-09-24, after the crossover build)

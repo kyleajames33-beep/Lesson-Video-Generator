@@ -33,56 +33,68 @@ export const SummarySlide = ({scene, lesson, sceneIndex, totalScenes}: SummarySl
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
 			<SlideChrome lesson={lesson} topic="THE RECAP" sceneType="summary" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
-			<header style={{position: 'absolute', top: 138, left: 64, right: 64}}>
-				<Eyebrow color={TOK.inkDim}>◆ FIVE THINGS TO REMEMBER</Eyebrow>
-				<FadeUp delay={rd.heading ?? 18} durationFrames={16} dy={24}>
-					<StampInTitle delay={18} color={TOK.ink} underlineColor={TOK.amber}>
-						<h1
-							style={{
-								margin: '18px 0 0',
-								fontSize: TYPE.h1.fontSize,
-								fontWeight: TYPE.h1.fontWeight,
-								lineHeight: TYPE.h1.lineHeight,
-								letterSpacing: '-0.04em',
-								maxWidth: 1120,
-							}}
-						>
-							{scene.heading.replace(/[ ,—–-]+Key Ideas\.?$/i, '')}
-						</h1>
-					</StampInTitle>
-				</FadeUp>
-			</header>
-
+			{/* Keep the list after the full heading height, including wrapped lines. */}
 			<div
 				style={{
 					position: 'absolute',
-					top: 286,
+					top: 138,
 					left: 64,
-					// Stay clear of the FinalRuleCard (right:64 width:560) → 1920-64-560-32 gap
-					width: scene.finalPrompt ? 1080 : 1792,
-					display: 'grid',
-					gap: 2,
+					width: scene.finalPrompt ? 1120 : 1792,
+					display: 'flex',
+					flexDirection: 'column',
+					gap: 24,
 				}}
 			>
-				{takeaways.map((takeaway, index) => {
-					// Per-takeaway anchored delays take precedence over the
-					// uniform start+interval timing. Auto-sync-reveals fills
-					// `takeawayAts` by matching each point against narration.
-					const ats = (rd as {takeawayAts?: number[]}).takeawayAts;
-					const delay = ats && ats[index] !== undefined
-						? ats[index]
-						: (rd.takeawaysStart ?? 52) + index * (rd.takeawayInterval ?? 54);
-					return (
-						<TakeawayRow
-							key={`${index}-${takeaway.title}`}
-							index={index}
-							title={takeaway.title}
-							detail={takeaway.detail}
-							compact={takeaways.length >= 5}
-							delay={delay}
-						/>
-					);
-				})}
+				<header>
+					<Eyebrow color={TOK.inkDim}>◆ {scene.points.length === 5 ? 'FIVE' : scene.points.length} THINGS TO REMEMBER</Eyebrow>
+					<FadeUp delay={rd.heading ?? 18} durationFrames={16} dy={24}>
+						<StampInTitle delay={18} color={TOK.ink} underlineColor={TOK.amber}>
+							<h1
+								data-summary-heading
+								style={{
+									margin: '18px 0 0',
+									fontSize: TYPE.h1.fontSize,
+									fontWeight: TYPE.h1.fontWeight,
+									lineHeight: TYPE.h1.lineHeight,
+									letterSpacing: '-0.04em',
+									maxWidth: 1120,
+								}}
+							>
+								{scene.heading.replace(/[ ,\u2014\u2013-]+Key Ideas\.?$/i, '')}
+							</h1>
+						</StampInTitle>
+					</FadeUp>
+				</header>
+
+				<div
+					data-summary-takeaways
+					style={{
+						// Stay clear of the FinalRuleCard (right:64 width:560) → 1920-64-560-32 gap
+						width: scene.finalPrompt ? 1080 : 1792,
+						display: 'grid',
+						gap: 2,
+					}}
+				>
+					{takeaways.map((takeaway, index) => {
+						// Per-takeaway anchored delays take precedence over the
+						// uniform start+interval timing. Auto-sync-reveals fills
+						// `takeawayAts` by matching each point against narration.
+						const ats = (rd as {takeawayAts?: number[]}).takeawayAts;
+						const delay = ats && ats[index] !== undefined
+							? ats[index]
+							: (rd.takeawaysStart ?? 52) + index * (rd.takeawayInterval ?? 54);
+						return (
+							<TakeawayRow
+								key={`${index}-${takeaway.title}`}
+								index={index}
+								title={takeaway.title}
+								detail={takeaway.detail}
+								compact={takeaways.length >= 5}
+								delay={delay}
+							/>
+						);
+					})}
+				</div>
 			</div>
 
 			{scene.image && ASSETS[scene.image as AssetName] && (
@@ -132,6 +144,7 @@ const TakeawayRow = ({
 	return (
 		<FadeUp delay={delay} durationFrames={16} dy={22}>
 			<div
+				data-summary-row
 				style={{
 					display: 'grid',
 					gridTemplateColumns: '74px minmax(0, 1fr)',

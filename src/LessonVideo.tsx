@@ -14,6 +14,7 @@ import {MarginaliaSlide} from './slides/MarginaliaSlide';
 import {LabFootageSlide} from './slides/LabFootageSlide';
 import {EndCardSlide} from './slides/EndCardSlide';
 import {MnemonicSlide} from './slides/MnemonicSlide';
+import {MolarMassTeachingSlide} from './slides/MolarMassTeachingSlide';
 import {SceneVoiceover} from './audio/SceneVoiceover';
 import {BackgroundMusic} from './audio/BackgroundMusic';
 import {IntroVoiceover} from './audio/IntroVoiceover';
@@ -42,6 +43,7 @@ type LessonVideoProps = {
 };
 
 const renderSlide = (scene: SceneData, lesson: LessonData, sceneIndex: number, totalScenes: number) => {
+  if (scene.teachingLayout) return <MolarMassTeachingSlide scene={scene} lesson={lesson} sceneIndex={sceneIndex} totalScenes={totalScenes} />;
   switch (scene.type) {
     case 'title':
       return <TitleSlide lesson={lesson} scene={scene} sceneIndex={sceneIndex} totalScenes={totalScenes} />;

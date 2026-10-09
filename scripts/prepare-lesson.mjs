@@ -1,15 +1,16 @@
-import {existsSync, readFileSync} from 'node:fs';
+import {existsSync, readFileSync, writeFileSync, mkdirSync} from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
 import {spawnSync} from 'node:child_process';
 import {getCompositionId} from './lesson-utils.mjs';
+import {checkProductionBrief, companionBriefPath, createProductionBrief} from './lib/production-brief.mjs';
 
 const usage = () => {
-  console.error('Usage: node scripts/prepare-lesson.mjs <lesson-json>');
+  console.error('Usage: node scripts/prepare-lesson.mjs <lesson-json> [--brief=brief.json] [--review-stage=draft|recording|export]');
   console.error('Example: node scripts/prepare-lesson.mjs src/data/chemistry-y11-m2-l1-mole-concept.json');
 };
 
-const [lessonPath] = process.argv.slice(2);
+const [lessonPath, ...options] = process.argv.slice(2);
 
 if (!lessonPath) {
   usage();
@@ -38,6 +39,20 @@ const run = (label, command, args) => {
 const lesson = JSON.parse(readFileSync(lessonPath, 'utf8'));
 const compositionId = getCompositionId(lesson);
 const outputDir = path.join('out/checks', compositionId);
+const briefPath = options.find(arg => arg.startsWith('--brief='))?.slice(8) ?? companionBriefPath(lessonPath);
+const reviewStage = options.find(arg => arg.startsWith('--review-stage='))?.slice(15) ?? 'draft';
+if (!existsSync(briefPath)) {
+  mkdirSync(path.dirname(path.resolve(briefPath)), {recursive: true});
+  writeFileSync(briefPath, JSON.stringify(createProductionBrief(process.cwd(), lessonPath), null, 2) + '\n', {flag: 'wx'});
+  console.log('Created pending teaching/visual brief: ' + briefPath);
+}
+const briefReport = checkProductionBrief(process.cwd(), briefPath, {stage: reviewStage, expectedLessonPath: lessonPath});
+if (!briefReport.ready) {
+  console.error(JSON.stringify(briefReport, null, 2));
+  process.exit(1);
+}
+console.log('Teaching/visual brief checked at ' + reviewStage + ' stage. Pending items: ' + briefReport.pending.length);
+console.log('Before recording, fill the brief and run scripts/check-production-brief.mjs ' + briefPath + ' --stage=recording');
 
 run('1. Regenerating lesson registry', 'node', ['scripts/generate-lesson-registry.mjs']);
 run('2. Validating this lesson JSON', 'node', ['scripts/validate-lesson.mjs', lessonPath]);

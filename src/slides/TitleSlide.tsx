@@ -62,6 +62,7 @@ export const TitleSlide = ({lesson, scene, sceneIndex, totalScenes}: TitleSlideP
 							{titleParts.first}
 						</div>
 					</StampInTitle>
+					{' '}
 					<StampInTitle delay={26} color={theme.accent} underlineColor={TOK.amber}>
 						<div style={{fontSize: 208, fontWeight: 840, lineHeight: 0.92, letterSpacing: '-0.045em'}}>
 							{titleParts.second}.

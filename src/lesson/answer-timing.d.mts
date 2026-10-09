@@ -5,3 +5,4 @@ export function answerTiming(revealDelays?: Record<string, number>, responseHold
   pauseFadeEnd: number;
   countdownEnd: number;
 };
+export function hookRevealTiming(revealDelays?: Record<string, number>, responseHold?: {startFrame: number; endFrame: number}): Record<string, number>;

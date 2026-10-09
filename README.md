@@ -1,5 +1,9 @@
 # Lesson Video Generator
 
+For the current production state, accepted teaching rules, course plans and
+setup on another computer, start with [HANDOFF.md](HANDOFF.md). Restore the
+ignored state and media described there before resuming selected-video work.
+
 Remotion-based pipeline that turns HSC Science lesson JSON into narrated MP4
 lesson videos. Part of a two-repo system — the rendered output is consumed by
 the separate site at hscscience.com.au.

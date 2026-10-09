@@ -1,4 +1,4 @@
-// CoefficientDivideDiagram — "moles ÷ coefficient" as a diorama bar chart.
+// CoefficientDivideDiagram: "moles ÷ coefficient" as a diorama bar chart.
 //
 // Each reactant is a painted-style column standing on a plinth. Step 1 grows
 // the columns to raw moles, and the one with FEWER moles looks limiting. Step 2
@@ -7,12 +7,13 @@
 // default Na / Cl₂ data the order flips between step 1 and step 2, which is
 // exactly lesson trap 1: fewer moles is not the test, moles ÷ coefficient is.
 //
-// Numbers come from the config. Ratios are rounded half-up from the displayed
-// 3-significant-figure moles (0.435 ÷ 2 = 0.2175 → 0.218), matching the worked
-// example's working rather than recomputing from unrounded masses.
+// Geometry and limiting selection use exact ratios from the configured moles.
+// Only displayed labels round half-up (0.435 ÷ 2 = 0.2175 → 0.218), matching
+// the working rather than recomputing from unrounded masses.
 
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {TOK, FONT_DISPLAY} from '../../styles/tokens';
+import {TOK, FONT_DISPLAY, FONT_HAND} from '../../styles/tokens';
+import {ScribbleCircle} from '../../animations/DoodlePrimitives';
 import {DioramaDefs, DioramaPlinth, ELEMENT_COLORS, Molecule, idleBob} from './diorama';
 
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
@@ -24,6 +25,8 @@ export type CoefficientDivideProps = {
 	delay?: number;
 	/** Frames (relative to delay) for: raw moles, divide, crown. */
 	steps?: [number, number, number];
+	/** Draw attention from a coefficient of two to the halved reaction capacity. */
+	attention?: 'handdrawn';
 };
 
 const DEFAULT_REACTANTS: CoefficientDivideReactant[] = [
@@ -52,12 +55,13 @@ export const CoefficientDivideDiagram = ({
 	reactants = DEFAULT_REACTANTS,
 	delay = 62,
 	steps = [20, 190, 440],
+	attention,
 }: CoefficientDivideProps) => {
 	const frame = useCurrentFrame() - delay;
 	const {fps} = useVideoConfig();
 	const [s1, s2, s3] = steps;
 
-	const ratios = reactants.map((r) => Number(round3(r.moles / r.coef)));
+	const ratios = reactants.map((r) => r.moles / r.coef);
 	const limitingIdx = ratios.indexOf(Math.min(...ratios));
 	const fewestMolesIdx = reactants.map((r) => r.moles).indexOf(Math.min(...reactants.map((r) => r.moles)));
 	const flips = fewestMolesIdx !== limitingIdx;
@@ -111,7 +115,7 @@ export const CoefficientDivideDiagram = ({
 			{reactants.map((r, i) => {
 				const cx = xs[i];
 				const raw = hOf(r.moles) * Math.max(0, grow);
-				const h = raw + (hOf(ratios[i]) - hOf(r.moles)) * divide;
+				const h = raw * (1 - divide + divide / r.coef);
 				const top = BASE_Y - h;
 				const capRy = COL_W * 0.17;
 				const c = ELEMENT_COLORS[r.atoms[0]] ?? TOK.inkDim;
@@ -127,13 +131,13 @@ export const CoefficientDivideDiagram = ({
 							{/* translucent ghost of the raw-moles column, once it has been divided */}
 							{hasGhost && (
 								<g opacity={divide * 0.3}>
-									<rect x={cx - COL_W / 2} y={ghostTop} width={COL_W} height={hOf(r.moles)} fill={`url(#${ID}-col-${i})`} />
+									<rect data-raw-reference={r.label} x={cx - COL_W / 2} y={ghostTop} width={COL_W} height={hOf(r.moles)} fill={`url(#${ID}-col-${i})`} />
 									<ellipse cx={cx} cy={ghostTop} rx={COL_W / 2} ry={capRy} fill={shade(c, 0.28)} />
 								</g>
 							)}
 							{h > 1 && (
 								<g>
-									<rect x={cx - COL_W / 2} y={top} width={COL_W} height={h} fill={`url(#${ID}-col-${i})`} />
+									<rect data-capacity-column={r.label} x={cx - COL_W / 2} y={top} width={COL_W} height={h} fill={`url(#${ID}-col-${i})`} />
 									<ellipse cx={cx} cy={BASE_Y} rx={COL_W / 2} ry={capRy} fill={shade(c, -0.25)} />
 									<ellipse cx={cx} cy={top} rx={COL_W / 2} ry={capRy} fill={shade(c, 0.28)} />
 									<rect x={cx - COL_W / 2 + 12} y={top + 8} width={8} height={Math.max(0, h - 16)} rx={4} fill="#ffffff" opacity={0.28} />
@@ -144,11 +148,11 @@ export const CoefficientDivideDiagram = ({
 						</DioramaPlinth>
 
 						{/* value: raw moles stays at the ghost's top (dimmed) once the divided value appears */}
-						<text x={cx} y={(hasGhost ? ghostTopNow : top) - 20} textAnchor="middle" fill={hasGhost && divide > 0 ? TOK.inkMute : TOK.ink} fontSize={hasGhost ? 28 - 6 * divide : 28} fontWeight={800} opacity={fade(s1 + 10)} textDecoration={hasGhost && divide >= 1 ? 'line-through' : undefined}>
+						<text data-raw-amount={r.label} x={cx} y={(hasGhost ? ghostTopNow : top) - 20} textAnchor="middle" fill={hasGhost && divide > 0 ? TOK.inkMute : TOK.ink} fontSize={hasGhost ? 28 - 6 * divide : 28} fontWeight={800} opacity={fade(s1 + 10)} textDecoration={hasGhost && divide >= 1 && !attention ? 'line-through' : undefined}>
 							{hasGhost ? r.moles.toFixed(3) : shown}
 						</text>
 						{hasGhost && (
-							<text x={cx} y={top - 20} textAnchor="middle" fill={isLimiting && frame >= s3 ? TOK.amberInk : TOK.ink} fontSize={28} fontWeight={800} opacity={divide}>
+							<text data-capacity-value={r.label} x={cx} y={top - 20} textAnchor="middle" fill={isLimiting && frame >= s3 ? TOK.amberInk : TOK.ink} fontSize={28} fontWeight={800} opacity={divide}>
 								{shown}
 							</text>
 						)}
@@ -166,6 +170,33 @@ export const CoefficientDivideDiagram = ({
 								÷ {r.coef}
 							</text>
 						</g>
+
+						{attention === 'handdrawn' && r.coef === 2 && (
+							<g data-capacity-attention={r.label} opacity={fade(s2, 6) * (1 - fade(s3, 12))}>
+								{/* Circle the operation before the bar transforms. The arrow
+								    then draws towards its exact half-height reference. */}
+								<g transform={`translate(${cx + 34}, ${ghostTop - 59})`}>
+									<ScribbleCircle width={98} height={64} loops={1} strokeWidth={2} seed={37 + i} color={TOK.amber} delay={delay + s2} durationFrames={18} />
+								</g>
+								<path
+									data-capacity-link
+									d={`M ${cx + 134} ${ghostTop - 27} Q ${cx + 146} ${ghostTop + 30}, ${cx + 61} ${BASE_Y - hOf(ratios[i]) + 8} M ${cx + 75} ${BASE_Y - hOf(ratios[i]) - 2} L ${cx + 61} ${BASE_Y - hOf(ratios[i]) + 8} L ${cx + 78} ${BASE_Y - hOf(ratios[i]) + 13}`}
+									fill="none"
+									stroke={TOK.amber}
+									strokeWidth={2.5}
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									pathLength={1}
+									strokeDasharray={1}
+									strokeDashoffset={1 - interpolate(frame, [s2 + 18, s2 + 48], [0, 1], clamp)}
+								/>
+								{reactants.length === 2 && (
+									<text data-capacity-note x={cx - 65} y={BASE_Y - hOf(ratios[i]) + 44} textAnchor="end" fill={TOK.inkDim} fontFamily={FONT_HAND} fontSize={24} fontWeight={700} opacity={fade(s2 + 48)}>
+										Half the capacity
+									</text>
+								)}
+							</g>
+						)}
 
 						{/* role tag + crown */}
 						<text x={cx} y={LABEL_Y + 52} textAnchor="middle" fill={isLimiting ? TOK.amberInk : TOK.inkDim} fontSize={17} fontWeight={800} letterSpacing="0.06em" opacity={fade(s3 + 12)}>

@@ -25,6 +25,8 @@ import {Eyebrow} from './shared/Eyebrow';
 import {FONT_MONO, TYPE, TOK} from '../styles/tokens';
 import {useAccent} from '../styles/theme';
 import {AssetImg} from './shared/AssetImg';
+import {hookRevealTiming} from '../lesson/answer-timing.mjs';
+import {DiagramRenderer} from './diagrams/DiagramRenderer';
 
 type HookSlideProps = {
 	scene: TextScene;
@@ -36,7 +38,7 @@ type HookSlideProps = {
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
 
 export const HookSlide = ({scene, lesson, sceneIndex, totalScenes}: HookSlideProps) => {
-	const rd = scene.revealDelays ?? {};
+	const rd = hookRevealTiming(scene.revealDelays, scene.responseHold);
 	const keyPhrase = pickKeyPhrase(scene.body);
 	const isLongHook = scene.body.length > 95;
 	const atom = isLongHook
@@ -47,7 +49,24 @@ export const HookSlide = ({scene, lesson, sceneIndex, totalScenes}: HookSlidePro
 		<SlideFrame sceneDurationInFrames={scene.durationInFrames}>
 			<SlideChrome lesson={lesson} topic="A QUESTION" sceneType="hook" sceneIndex={sceneIndex} totalScenes={totalScenes} />
 
-			{scene.image && ASSETS[scene.image as AssetName] ? (
+			{scene.diagram ? (
+				<FadeUp delay={rd.diagram ?? 12} durationFrames={18} dy={16}>
+					<div style={{position:'absolute',left:250,right:250,top:132}}>
+						<DiagramRenderer diagram={scene.diagram}/>
+					</div>
+				</FadeUp>
+			) : scene.comparison ? (
+				<FadeUp delay={scene.comparisonIsPrompt ? (rd.body ?? 30) : (rd.glyph ?? 12)} durationFrames={18} dy={16}>
+					<div style={{position: 'absolute', left: 370, right: 370, top: 180, display: 'flex', gap: 40}}>
+						{scene.comparison.map(sample => <div key={sample.label} style={{flex: 1, textAlign: 'center',
+							background: TOK.card, border: `1px solid ${TOK.cardBorder}`, borderRadius: 18, padding: '30px 24px'}}>
+							<div style={{fontSize: 48, fontWeight: 700, color: TOK.ink}}>{sample.label}</div>
+							<div style={{fontSize: 40, color: TOK.inkDim, marginTop: 10}}>{sample.amount}</div>
+							<div style={{fontSize: 76, fontWeight: 800, color: TOK.ink, marginTop: 16}}>{sample.mass}</div>
+						</div>)}
+					</div>
+				</FadeUp>
+			) : scene.image && ASSETS[scene.image as AssetName] ? (
 				<FadeUp delay={rd.glyph ?? 12} durationFrames={18} dy={16}>
 					<AssetImg
 						src={ASSETS[scene.image as AssetName]}
@@ -69,7 +88,7 @@ export const HookSlide = ({scene, lesson, sceneIndex, totalScenes}: HookSlidePro
 			)}
 
 			{/* Margin annotation pointing at the glyph */}
-			{!scene.image && (
+			{!scene.image && !scene.comparison && !scene.diagram && (
 				<ScribbleAnnotation
 					x={atom.x + 46}
 					y={atom.y}

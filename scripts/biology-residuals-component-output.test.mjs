@@ -27,7 +27,7 @@ async function renderer(baseline=false){
  const kinds=Object.entries(components).map(([k,[,,alias]])=>`${k}:${alias}`).join(',');
  const built=await build({stdin:{contents:`import React from 'react';import {renderToStaticMarkup} from 'react-dom/server';${imports}const kinds={${kinds}};export const render=(kind,props,frame)=>{globalThis.__bioResidualFrame=frame;return renderToStaticMarkup(React.createElement(kinds[kind],props));};`,resolveDir:root,loader:'tsx'},bundle:true,write:false,format:'esm',platform:'node',jsx:'automatic',packages:'external',plugins:[{name:'time-hooks-and-exact-baseline',setup(b){
   b.onResolve({filter:/^remotion$/},()=>({path:'fixture',namespace:'fixture'}));b.onLoad({filter:/.*/,namespace:'fixture'},()=>({contents:stub,loader:'js',resolveDir:root}));
-  if(baseline)b.onLoad({filter:/(?:Reshuffle|Assortment)Diagram\.tsx$/},args=>{const relative=path.relative(root,args.path),entry=fixture.sources[relative];assert.ok(entry);assert.equal(hash(entry.content),entry.sha256);return{contents:entry.content,loader:'tsx',resolveDir:path.dirname(args.path)};});
+  if(baseline)b.onLoad({filter:/(?:Reshuffle|Assortment)Diagram\.tsx$/},args=>{const relative=path.relative(root,args.path).split(path.sep).join('/'),entry=fixture.sources[relative];assert.ok(entry);assert.equal(hash(entry.content),entry.sha256);return{contents:entry.content,loader:'tsx',resolveDir:path.dirname(args.path)};});
  }}]});
  const p=path.join(temp,baseline?'baseline.mjs':'current.mjs');await writeFile(p,built.outputFiles[0].text);return import(pathToFileURL(p));
 }

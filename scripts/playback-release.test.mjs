@@ -12,6 +12,7 @@ import {decodePcm, pcmWav, mediaTool} from './lib/media-tools.mjs';
 import {lessonCaptionCues, toSrt, toVtt} from './lib/caption-timeline.mjs';
 import {lessonTimeline} from '../src/lesson/timeline.mjs';
 import {answerTiming} from '../src/lesson/answer-timing.mjs';
+import {hookRevealTiming} from '../src/lesson/answer-timing.mjs';
 import {recordReview, verifyReview} from './lib/release-review.mjs';
 
 const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -93,6 +94,28 @@ test('assembly rejects changed text, contradictory gaps, unsupported fps and inv
   assert.throws(f.resolve, /alignment/i);
 });
 
+test('small terminal punctuation overruns retain raw provenance and word timing; spoken or larger overruns fail', () => {
+  const f = fixture(), file = f.manifest.scenes[0].audioFile.replace('.wav', '.alignment.json');
+  const original = JSON.parse(readFileSync(path.join(f.root, file), 'utf8'));
+  const adjusted = structuredClone(original);
+  adjusted.character_end_times_seconds[adjusted.characters.length - 1] = 1.08;
+  f.put(file, JSON.stringify(adjusted));
+  const result = f.resolve();
+  assert.deepEqual(result.scenes[0].alignment.character_end_times_seconds.slice(0, original.characters.length - 1), original.character_end_times_seconds.slice(0, -1));
+  assert.equal(result.scenes[0].alignment.character_end_times_seconds[original.characters.length - 1], 1);
+  assert.equal(result.scenes[0].provenance.items[0].alignmentAdjustment.kind, 'terminal-punctuation-bounded-to-decoded-media');
+  assert.equal(JSON.parse(readFileSync(path.join(f.root, file), 'utf8')).character_end_times_seconds.at(-1), 1.08);
+  writePlayback(result, f.root);
+  assert.deepEqual(verifyAssembly(result.lesson.scenes[0], 30, f.root), []);
+  adjusted.character_end_times_seconds[adjusted.characters.length - 1] = 1.11;
+  f.put(file, JSON.stringify(adjusted));
+  assert.throws(f.resolve, /Alignment exceeds decoded audio/);
+  adjusted.character_end_times_seconds[adjusted.characters.length - 1] = 1.08;
+  adjusted.character_end_times_seconds[adjusted.characters.length - 2] = 1.02;
+  f.put(file, JSON.stringify(adjusted));
+  assert.throws(f.resolve, /Alignment exceeds decoded audio/);
+});
+
 test('worked example solution cues wait for the measured hold, including existing per-step overrides', () => {
   const f = fixture();
   Object.assign(f.lesson.scenes[0], {type: 'workedExample', steps: ['Count atoms.', 'Calculate.'], revealDelays: {stepAts: [0, 30]}});
@@ -104,6 +127,25 @@ test('worked example solution cues wait for the measured hold, including existin
   assert.deepEqual(verifyAssembly(scene, 30, f.root), []);
 });
 
+test('prediction hook retains its prompt while answer-bearing artwork and feedback wait for measured silence', () => {
+  const f = fixture();
+  Object.assign(f.lesson.scenes[0], {type:'hook', body:'Same number of atoms.', heading:'Which sample has more mass?',
+    image:'fixture', callout:'Oxygen atoms are heavier.', revealDelays:{glyph:0,annotation:5,callout:10,heading:6,body:30}});
+  const result = f.resolve(), scene = result.lesson.scenes[0];
+  writePlayback(result, f.root);
+  assert.equal(scene.revealDelays.glyph,180);
+  assert.equal(scene.revealDelays.annotation,180);
+  assert.equal(scene.revealDelays.callout,180);
+  assert.equal(scene.revealDelays.heading,6);
+  assert.equal(scene.revealDelays.body,30);
+  assert.deepEqual(verifyAssembly(scene,30,f.root),[]);
+  scene.revealDelays.glyph=179;
+  assert.ok(verifyAssembly(scene,30,f.root).some(e=>e.includes('Hook answer')));
+  assert.equal(hookRevealTiming(scene.revealDelays,scene.responseHold).glyph,180);
+  assert.throws(()=>hookRevealTiming({answerVisibleStart:179},scene.responseHold),/during/);
+  const legacy={glyph:12,callout:165};
+  assert.equal(hookRevealTiming(legacy),legacy);
+});
 test('timeline handles overlapping transitions, delayed audio and explicit hook-first opening', () => {
   const lesson = {fps: 60, introDurationInFrames: 0, scenes: [{id: 'a', durationInFrames: 120, voiceover: {startFrame: 30}}, {id: 'b', durationInFrames: 180}]};
   const timeline = lessonTimeline(lesson);

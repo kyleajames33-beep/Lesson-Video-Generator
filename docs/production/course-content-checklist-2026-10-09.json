@@ -1,0 +1,1725 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-09T07:11:59.458Z",
+  "scope": "All 27 cached 2025 Year 11 Chemistry Quantitative chemistry points plus the four enzyme role/model/practical/graph points in Biology. Remaining focus areas need point-level mapping.",
+  "evidenceBoundary": "Uses official detailed pages fetched 8 October, not a fresh detailed-syllabus verification. Cached extraction can flatten mathematical notation; raw HTML must be checked before recording. Content actions remain distinct from lesson publication and practical conduct.",
+  "sources": {
+    "extraction": {
+      "path": "out/research/continuity-2026-10-08/official-content.json",
+      "sha256": "a2bb6b0ee2cef9b88b67616e99c775562e90e3958a9cfe26309af93ce33528cf",
+      "generatedAt": "2026-10-08T07:34:55.369Z"
+    },
+    "pages": [
+      {
+        "subject": "biology",
+        "year": 11,
+        "area": "fa0edb304c",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+        "file": "out/research/continuity-2026-10-08/biology-fa0edb304c.html",
+        "sha256": "d1dde6525e7e3d5d5de7824aa541ecca5047b77beec3cc7c492a5e71f00ba97b",
+        "fetchedAt": "2026-10-08T07:34:42.171Z"
+      },
+      {
+        "subject": "chemistry",
+        "year": 11,
+        "area": "faf0876f2f",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "file": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html",
+        "sha256": "705dc49e5b964ded3eb3c51db5f4816c73eea925e601196a37b41c1364e3f65d",
+        "fetchedAt": "2026-10-08T07:34:43.669Z"
+      }
+    ]
+  },
+  "statusDefinitions": {
+    "planned-unreviewed": "Named explanation/calculation/data candidate. Exact scene/action equivalence not approved.",
+    "known-scope-gap": "Specific action not established by current source scope.",
+    "conduct-not-evidenced": "Practical conduct required; explanation or planning does not demonstrate completion."
+  },
+  "plannedVideos": [
+    {
+      "id": "conservation-systems",
+      "title": "Conservation, systems and reacting mass",
+      "sourcePath": "src/data/chemistry-y11-m3-l1-physical-chemical-change.json",
+      "sourceSha256": "f05cd179e9ff0b53b4df8186a2907d276ebbea16ed05badb1d7a38593aebb467",
+      "state": "candidate-source-unreviewed",
+      "limits": "Existing physical/chemical-change source is a recut candidate; its intent is classification, not complete conservation/system coverage."
+    },
+    {
+      "id": "conservation-practical",
+      "title": "Mass, gas-volume and conservation practical tasks",
+      "sourcePath": null,
+      "sourceSha256": null,
+      "state": "planned-gap-no-selected-source",
+      "limits": "Planned preparation route with distinct gas measurement and conservation-model tasks. Actual laboratory conduct remains separate."
+    },
+    {
+      "id": "first-nations-systems",
+      "title": "Open/closed cooking systems and plant extraction contexts",
+      "sourcePath": null,
+      "sourceSha256": null,
+      "state": "planned-gap-no-selected-source",
+      "limits": "Required coal/pit-oven and chemical-delivery contexts need direct respectful sourcing and cultural review, not generic stock art. Optional source examples are not mandatory extra videos."
+    },
+    {
+      "id": "mole-a",
+      "title": "Mole concept Part A",
+      "sourcePath": "src/data/chemistry-y11-m2-l1a-mole-understanding.json",
+      "sourceSha256": "b066ec353476f489ab3a8a464775c1b1d57930ac52f3ba350aa7a9f02f87f3be",
+      "state": "candidate-source-unreviewed",
+      "limits": "Public record exists; exact source/public narration equivalence and fixed-SI definition check pending."
+    },
+    {
+      "id": "relative-atomic-mass",
+      "title": "Relative atomic mass and carbon-12 reference",
+      "sourcePath": "src/data/chemistry-y11-m1-l14-isotopes-relative-atomic-mass.json",
+      "sourceSha256": "3c4a4646acc7987c66ed70b135abb4d66e0dae0a262807bf7ff4244fc8336586",
+      "state": "candidate-source-unreviewed",
+      "limits": "Existing candidate. Carbon-12 relative mass reference is distinct from the current exact SI mole definition."
+    },
+    {
+      "id": "molar-mass",
+      "title": "Molar mass and mass/amount calculations",
+      "sourcePath": "src/data/chemistry-y11-m2-l2-molar-mass.json",
+      "sourceSha256": "10d023192e47706d280b99c9bdd813b3da0335b2dd3b01efa2deaa51a078096f",
+      "state": "candidate-source-unreviewed",
+      "limits": "Public accepted export exists; solve-for-MM action still needs exact scene/example audit.",
+      "selectedRevision": {
+        "path": "src/prototypes/data/molar-mass-v3.json",
+        "sha256": "2826d43bbb8b0292882a041c4e89a35b1cc921f4c90ee1c3de10f7de8dfef8b9"
+      }
+    },
+    {
+      "id": "equimolar-practical",
+      "title": "Compare pure equimolar substance masses",
+      "sourcePath": null,
+      "sourceSha256": null,
+      "state": "planned-gap-no-selected-source",
+      "limits": "Planned practical preparation. Existing molar-mass comparison is explanatory, not evidence of physical investigation."
+    },
+    {
+      "id": "mole-ratios",
+      "title": "Balanced equations and mole ratios",
+      "sourcePath": "src/data/chemistry-y11-m2-l11-stoichiometry-mole-ratios.json",
+      "sourceSha256": "e482bd8cbce4713a5490e2849b45b417669e99392f0d949ce9b116816ec2b41c",
+      "state": "candidate-source-unreviewed",
+      "limits": "Pending correction brief. Coefficients encode relative entities and moles, not only moles."
+    },
+    {
+      "id": "molar-ratio-practical",
+      "title": "Quantitative simple whole-number reacting ratios",
+      "sourcePath": null,
+      "sourceSha256": null,
+      "state": "planned-gap-no-selected-source",
+      "limits": "Distinct accurate quantitative investigation; a recipe animation does not conduct it."
+    },
+    {
+      "id": "empirical",
+      "title": "Percentage composition and empirical formulas",
+      "sourcePath": "src/data/chemistry-y11-m2-l3-empirical-molecular-formulas.json",
+      "sourceSha256": "f9a9533286af5012c7ae0b520fa1526dd06dbefe49acf73cb07109bf1a5c85af",
+      "state": "organised-silent-draft-source-reviewed-recording-ready",
+      "limits": "Organised silent draft with entry knowledge, grouped/staged calculations and a next-lesson handoff. No audio or approved review. Molecular inference remains a labelled extension.",
+      "selectedRevision": {
+        "path": "out/prototypes/empirical-formulas-organised-2026-10-09/lesson.json",
+        "sha256": "5df66bb49e0947f8e8d52e1bd1c5b8ac9c463adae0e792c7dd6123192abc8d82"
+      },
+      "briefPath": "out/prototypes/empirical-formulas-organised-2026-10-09/production-brief.json",
+      "priorRevisions": [
+        {
+          "path": "out/prototypes/next-chemistry-review-2026-10-09/empirical-formulas.lesson.json",
+          "sha256": "f07d4895edda75f3aa171429a94fd4cacc675402c7f297d1e778c6b39edca4ea",
+          "state": "previous-silent-draft-preserved"
+        }
+      ]
+    },
+    {
+      "id": "limiting",
+      "title": "Limiting reagents",
+      "sourcePath": "src/data/chemistry-y11-m2-l13-limiting-reagents.json",
+      "sourceSha256": "3ad34610a7a9ea1b3092a8b3bc262dc31cd63c9de817acb10a034d4a44e24a22",
+      "state": "display-only-voiced-draft-review-pending",
+      "limits": "New display-only voiced draft with retained audio and pending review. Previous full conversational export and prior unlisted upload are historical; no new full export/upload is claimed.",
+      "selectedRevision": {
+        "path": "out/prototypes/limiting-clear-working-2026-10-09/lesson.json",
+        "sha256": "22a844720d33ee16fad5da5d8cf4e0120237615b4906ad2e4fd269cab6326323"
+      },
+      "briefPath": "out/prototypes/limiting-clear-working-2026-10-09/production-brief.json",
+      "priorRevisions": [
+        {
+          "path": "out/prototypes/limiting-conversational-2026-10-09/narrated.lesson.json",
+          "sha256": "2f1d6188296a492b05eb70c97c6d6f36bd45d6ac9abed580525ac43c91d41320",
+          "state": "previous-full-local-review-export-preserved"
+        }
+      ],
+      "currentSelectedFullExported": false,
+      "currentSelectedUploaded": false
+    },
+    {
+      "id": "mass-to-mass",
+      "title": "Reacting-mass problems",
+      "sourcePath": "src/data/chemistry-y11-m2-l12-mass-mass-stoichiometry.json",
+      "sourceSha256": "9aa731a83961d8ee91ca77f49f0cadd5511e060cc5c581b0f874daca639f622b",
+      "state": "candidate-source-unreviewed",
+      "limits": "Pending corrections include oxygen contribution, stated pure oxide/excess assumptions and valid combined conversion."
+    },
+    {
+      "id": "concentration",
+      "title": "Molar concentration",
+      "sourcePath": "src/data/chemistry-y11-m2-l6-concentration.json",
+      "sourceSha256": "b410266ddda4f893f6637ee49610aaa8fd1b9fe50ddea19801df419bf467c268",
+      "state": "candidate-source-unreviewed",
+      "limits": "Existing source; C,n,V calculations and units need current scene review."
+    },
+    {
+      "id": "concentration-measures",
+      "title": "Uses and calculations across concentration measures",
+      "sourcePath": "src/data/chemistry-y11-m2-l8-concentration-in-context.json",
+      "sourceSha256": "4e91b8d82f35dbd43508f542c427e0d86e37765d9e91065648801a2449c82350",
+      "state": "candidate-source-unreviewed",
+      "limits": "Existing purity/ppm context is only a candidate for all eight measures. Missing taught uses/examples must be filled explicitly."
+    },
+    {
+      "id": "standard-dilution",
+      "title": "Standard solutions and dilution",
+      "sourcePath": "src/data/chemistry-y11-m2-l7-standard-solutions-dilutions.json",
+      "sourceSha256": "e3b496281ceebacc1d660265d79859f286d64453c23238e3ba4c56fb6be4f1f8",
+      "state": "candidate-source-unreviewed",
+      "limits": "Candidate explanation/preparation; not completed actual laboratory work."
+    },
+    {
+      "id": "solution-stoichiometry",
+      "title": "Reacting masses and solutions",
+      "sourcePath": "src/data/chemistry-y11-m2-l16-stoichiometry-in-solution.json",
+      "sourceSha256": "84b926c0c1b01f497a38729b93cdf5daba90e47f7baca2761dd0dcb3978f7be3",
+      "state": "candidate-source-unreviewed",
+      "limits": "Existing candidate; equations, quantities and enough-reactant conditions must be independently checked."
+    },
+    {
+      "id": "ideal-gas",
+      "title": "Ideal particles, gas conditions and PV=nRT",
+      "sourcePath": "src/data/chemistry-y11-m2-l4-gases-molar-volume.json",
+      "sourceSha256": "776de9731061af4aba0243270f26e9cde9a60040d72ed5192400ac8fffc5eaa9",
+      "state": "candidate-source-unreviewed",
+      "limits": "Molar-volume source is not established as a dedicated complete ideal-gas-law lesson. New focused scenes/lesson may be needed."
+    },
+    {
+      "id": "gas-data",
+      "title": "Pressure-volume-temperature data interpretation",
+      "sourcePath": null,
+      "sourceSha256": null,
+      "state": "planned-gap-no-selected-source",
+      "limits": "Planned data tasks for all three specified controlled-condition relationships, using axes/units and real supplied data rather than curve recognition alone."
+    },
+    {
+      "id": "gas-stoichiometry",
+      "title": "Gas stoichiometry",
+      "sourcePath": "src/data/chemistry-y11-m2-l15-gas-stoichiometry.json",
+      "sourceSha256": "cc403c8da1e55dbd1b89681e805bc2c8625f961a96e1b21a573248f991402a82",
+      "state": "candidate-source-unreviewed",
+      "limits": "Existing fixed-molar-volume candidate; STP/pressure/temperature convention and coverage need checking."
+    },
+    {
+      "id": "integrated-mass-solution-gas",
+      "title": "Mixed reacting mass, solution and gas applications",
+      "sourcePath": "src/data/chemistry-y11-m2-l19-synthesis-exam-practice.json",
+      "sourceSha256": "502eeae2fa2c914e7e387ab5cfb3f4cba79322a2caf0868ab263651f18fdacb4",
+      "state": "candidate-source-unreviewed",
+      "limits": "Candidate capstone with L15/L16 support. Existing separate topics do not establish required integrated application."
+    },
+    {
+      "id": "enzyme-role",
+      "title": "Enzymes in cells",
+      "sourcePath": "src/data/biology-y11-m1-l15-enzymes-biological-catalysts.json",
+      "sourceSha256": "e3c5666a4235ac6e3cc541f50e2cebfda9cb84129f5c1b6da27c6a63f1fe7657",
+      "state": "candidate-source-unreviewed",
+      "limits": "Unreviewed candidate explains specificity, reusable catalysis and activation energy."
+    },
+    {
+      "id": "enzyme-models",
+      "title": "Enzyme models",
+      "sourcePath": "src/data/biology-y11-m1-l16-enzyme-models.json",
+      "sourceSha256": "68cf89ac6acea384abe6aabd283e901ae30529b61713757423fc76b5c03fb824",
+      "state": "candidate-source-unreviewed",
+      "limits": "Revised unlisted video; exact diagram/explanation and complete listening approval remain distinct.",
+      "selectedRevision": {
+        "path": "out/prototypes/enzyme-story-feedback-2026-10-09/narrated.lesson.json",
+        "sha256": "1fa2991beeeacb0af1954da8c734bacba96b6f07f0eb53fb5c345111d94dc7cb"
+      }
+    },
+    {
+      "id": "enzyme-practical",
+      "title": "Enzyme temperature, pH and substrate investigations",
+      "sourcePath": "src/data/biology-y11-m1-l17-enzyme-activity-practical.json",
+      "sourceSha256": "3f90b5f7734dfeb6f828f3c2170ecd162a4e26be944edaed4d0542cb276515ba",
+      "state": "candidate-source-unreviewed",
+      "limits": "Actual source develops a temperature method. pH/substrate discussion alone does not establish complete methods or actual conduct for all three."
+    },
+    {
+      "id": "enzyme-graphs",
+      "title": "Enzyme temperature, pH and substrate graphs",
+      "sourcePath": "src/data/biology-y11-m1-l18-reading-enzyme-graphs.json",
+      "sourceSha256": "f7b2bf0cfe73036435d343600280ce2a4433e0de048b402aaa03c188cb0dd50b",
+      "state": "candidate-source-unreviewed",
+      "limits": "Existing source has three corresponding concept scenes, but complete graph explanation/task equivalence is not approved."
+    }
+  ],
+  "points": [
+    {
+      "id": "ci39fc23e2",
+      "subject": "biology",
+      "year": 11,
+      "focusArea": "Cells as the basis of life",
+      "group": "Biochemical processes",
+      "official": {
+        "text": "Explain the role of enzymes in cells",
+        "including": "",
+        "examples": "",
+        "contentSha256": "c15755aafbb6d49c8ca0e1991db70125f6d4f0e6b71a7668868368dceb9bb1b4",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+        "rawPage": "out/research/continuity-2026-10-08/biology-fa0edb304c.html"
+      },
+      "actions": [
+        {
+          "key": "enzyme-role-cells",
+          "requiredAction": "Explain the role of enzymes in cells.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "enzyme-role"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Source has reusable catalysis/activation/specificity scenes, but current science, narration and unseen explanation review remains pending.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ciaeeb3210",
+      "subject": "biology",
+      "year": 11,
+      "focusArea": "Cells as the basis of life",
+      "group": "Biochemical processes",
+      "official": {
+        "text": "Use diagrams of the induced fit model and the lock and key model to explain the interaction between enzymes and specific substrates",
+        "including": "",
+        "examples": "",
+        "contentSha256": "52bcfe2c8eb47a45ce8b7c337006871e2db7f49bb210c2bb142408ce90a30620",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+        "rawPage": "out/research/continuity-2026-10-08/biology-fa0edb304c.html"
+      },
+      "actions": [
+        {
+          "key": "lock-key-diagram",
+          "requiredAction": "Use a lock-and-key diagram to explain specific enzyme/substrate interaction.",
+          "kind": "diagram-explanation",
+          "plannedVideos": [
+            "enzyme-models"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Exact revised diagram/scoped playback is available, but complete required-action and listening approval remain pending.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "induced-fit-diagram",
+          "requiredAction": "Use an induced-fit diagram to explain specific enzyme/substrate interaction.",
+          "kind": "diagram-explanation",
+          "plannedVideos": [
+            "enzyme-models"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Explain binding-associated shape change and model scope, rather than simply naming a model or showing unrelated particles.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci75e851a5",
+      "subject": "biology",
+      "year": 11,
+      "focusArea": "Cells as the basis of life",
+      "group": "Biochemical processes",
+      "official": {
+        "text": "Plan and conduct laboratory experiments to demonstrate the effect of temperature, pH and substrate concentration on the efficiency of a selected enzyme",
+        "including": "",
+        "examples": "",
+        "contentSha256": "5c77d68a8d3a24be848134d7f85d662faa2b183931909b32fc63ef62612a104f",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+        "rawPage": "out/research/continuity-2026-10-08/biology-fa0edb304c.html"
+      },
+      "actions": [
+        {
+          "key": "plan-0",
+          "requiredAction": "Plan a selected-enzyme laboratory experiment on temperature.",
+          "kind": "practical-planning",
+          "plannedVideos": [
+            "enzyme-practical"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "L17 develops a temperature method; exact valid controls/rate measure, source and limitations still need review.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "conduct-0",
+          "requiredAction": "Conduct a selected-enzyme laboratory experiment demonstrating the effect of temperature.",
+          "kind": "practical-conduct",
+          "plannedVideos": [
+            "enzyme-practical"
+          ],
+          "status": "conduct-not-evidenced",
+          "gap": "No actual laboratory conduct/result evidence is recorded here. Watching the model or preparation video does not fulfil this action.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "plan-1",
+          "requiredAction": "Plan a selected-enzyme laboratory experiment on pH.",
+          "kind": "practical-planning",
+          "plannedVideos": [
+            "enzyme-practical"
+          ],
+          "status": "known-scope-gap",
+          "gap": "L17 discusses this factor, but has not established a complete method for it; add/select specific planning support.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "conduct-1",
+          "requiredAction": "Conduct a selected-enzyme laboratory experiment demonstrating the effect of pH.",
+          "kind": "practical-conduct",
+          "plannedVideos": [
+            "enzyme-practical"
+          ],
+          "status": "conduct-not-evidenced",
+          "gap": "No actual laboratory conduct/result evidence is recorded here. Watching the model or preparation video does not fulfil this action.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "plan-2",
+          "requiredAction": "Plan a selected-enzyme laboratory experiment on substrate concentration.",
+          "kind": "practical-planning",
+          "plannedVideos": [
+            "enzyme-practical"
+          ],
+          "status": "known-scope-gap",
+          "gap": "L17 discusses this factor, but has not established a complete method for it; add/select specific planning support.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "conduct-2",
+          "requiredAction": "Conduct a selected-enzyme laboratory experiment demonstrating the effect of substrate concentration.",
+          "kind": "practical-conduct",
+          "plannedVideos": [
+            "enzyme-practical"
+          ],
+          "status": "conduct-not-evidenced",
+          "gap": "No actual laboratory conduct/result evidence is recorded here. Watching the model or preparation video does not fulfil this action.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "cia9a328b1",
+      "subject": "biology",
+      "year": 11,
+      "focusArea": "Cells as the basis of life",
+      "group": "Biochemical processes",
+      "official": {
+        "text": "Analyse graphs to explain the effect of temperature, pH and substrate concentration on enzyme activity",
+        "including": "",
+        "examples": "",
+        "contentSha256": "7fcaaa834df402e700650961537bff19007c8278b6bb0920f4b6b213753c238b",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c",
+        "rawPage": "out/research/continuity-2026-10-08/biology-fa0edb304c.html"
+      },
+      "actions": [
+        {
+          "key": "temperature-graph",
+          "requiredAction": "Analyse a temperature/activity graph and explain its effects on enzyme activity.",
+          "kind": "data-analysis",
+          "plannedVideos": [
+            "enzyme-graphs"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Candidate scene concept-temperature; explain the supplied curve under stated conditions, not a universal temperature optimum.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "pH-graph",
+          "requiredAction": "Analyse a pH/activity graph and explain its effects on enzyme activity.",
+          "kind": "data-analysis",
+          "plannedVideos": [
+            "enzyme-graphs"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Candidate scene concept-ph; distinguish charge/binding effects from sufficient extremes causing denaturation.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "substrate-graph",
+          "requiredAction": "Analyse a substrate-concentration/activity graph and explain its effects on enzyme activity.",
+          "kind": "data-analysis",
+          "plannedVideos": [
+            "enzyme-graphs"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Candidate scene concept-substrate; saturation inference needs fixed active enzyme/other conditions. Shape matching alone does not establish graph explanation.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "cideb5018a",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Conservation of mass",
+      "official": {
+        "text": "Relate the law of conservation of mass to stoichiometry",
+        "including": "",
+        "examples": "",
+        "contentSha256": "14caeb1023261598eda41103fb88ca7ffff0e40006fcce579e42ce0d3687c22e",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "relate",
+          "requiredAction": "Relate mass conservation to stoichiometric relationships.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "conservation-systems",
+            "mole-ratios",
+            "mass-to-mass"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Conservation needs explicit system/atom reasoning, not only arithmetic.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci12602445",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Conservation of mass",
+      "official": {
+        "text": "Conduct a laboratory experiment to measure the mass and volume of gas produced in a chemical reaction",
+        "including": "",
+        "examples": "",
+        "contentSha256": "0799546646d71fd64110706a178928154a84b98b05e46f6c090605d4cc8d4f7e",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "measure-mass-and-gas-volume",
+          "requiredAction": "Carry out a laboratory reaction measuring produced gas mass and volume.",
+          "kind": "practical-conduct",
+          "plannedVideos": [
+            "conservation-practical"
+          ],
+          "status": "conduct-not-evidenced",
+          "gap": "No selected method, apparatus/data evidence or actual conduct recorded for this action.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "cib7c4a7c6",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Conservation of mass",
+      "official": {
+        "text": "Describe the features of open and closed systems",
+        "including": "",
+        "examples": "",
+        "contentSha256": "823ada2d7ea72325284f2ec15fb01275c627c0c60d90c6fb7e63a4ce45aceb8c",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "describe-systems",
+          "requiredAction": "Describe features of both open and closed systems.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "conservation-systems"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Physical/chemical-change candidate has a different primary intent; system boundary coverage needs review.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci56c28e81",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Conservation of mass",
+      "official": {
+        "text": "Explain Aboriginal cooking processes that used coals and enclosed pit ovens as examples of open and closed systems",
+        "including": "",
+        "examples": "",
+        "contentSha256": "82b07ea0b4796810225742348a72e05b6f702d66c147676dfdd70c118ed5b49a",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "coal-open-context",
+          "requiredAction": "Explain the open-system cooking context using coals.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "first-nations-systems"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Required Aboriginal cooking context unreviewed; needs direct sourcing and cultural protocols.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "pit-enclosed-context",
+          "requiredAction": "Explain enclosed pit-oven cooking as a closed-system example in the specified context.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "first-nations-systems"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Do not confuse idealised classroom system boundaries with an unsupported claim that an oven is perfectly sealed.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci568b5f05",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Conservation of mass",
+      "official": {
+        "text": "Conduct a practical investigation to model the law of conservation of mass in a chemical reaction",
+        "including": "",
+        "examples": "",
+        "contentSha256": "d82bc2ac23cbfa32fc26b4c38c04eaffaae95322b237c676aa4c0ad45cf34664",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "model-conservation",
+          "requiredAction": "Carry out a practical model of mass conservation in a chemical reaction.",
+          "kind": "practical-conduct",
+          "plannedVideos": [
+            "conservation-practical"
+          ],
+          "status": "conduct-not-evidenced",
+          "gap": "A diagram/video model explains the idea but does not evidence performing the practical investigation.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "cib73314e0",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Conservation of mass",
+      "official": {
+        "text": "Solve problems involving changes of mass in chemical reactions",
+        "including": "",
+        "examples": "",
+        "contentSha256": "adea9604e2cdfb7549f5f5037a0f82b7c2db41fe319a0124cdf13971ce256cee",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "mass-change-problems",
+          "requiredAction": "Solve chemical-reaction mass-change problems.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "conservation-systems",
+            "mass-to-mass"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Explicit missing/remaining/system mass problems still need selected examples and independent transfer.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "cia5fb8ee9",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Mole concept",
+      "official": {
+        "text": "Relate the Avogadro constant to the concept of the mole",
+        "including": "",
+        "examples": "",
+        "contentSha256": "a6e920399e831ae4d2fe367329b51845af94e9bd86346d0abbd601c104e64f38",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "avogadro-mole",
+          "requiredAction": "Relate the Avogadro constant to the mole concept.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "mole-a"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Public status does not establish current SI-definition or complete scene equivalence.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ciaa9279b7",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Mole concept",
+      "official": {
+        "text": "Relate the relative atomic mass of an atom to carbon-12",
+        "including": "",
+        "examples": "",
+        "contentSha256": "003229c95a8909cebbe2c10ab9a557a17e693e6effc00599f228bbfaa448ac3e",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "relative-mass-carbon12",
+          "requiredAction": "Relate atom relative mass to carbon-12.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "relative-atomic-mass",
+            "mole-a"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Keep relative atomic mass reference separate from the fixed SI mole definition; do not revive outdated mole definition.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci18f59d1c",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Mole concept",
+      "official": {
+        "text": "Solve problems using n = m MM ( n = chemical amount in moles, m = mass in grams, MM = molar mass in g mol -1 ) to determine the quantities in moles, mass in grams and molar mass in g mol -1",
+        "including": "",
+        "examples": "",
+        "contentSha256": "3eb5c4ffdb5b177416a4373e2c2591d07d29f06f563b30be0e5dd7b6f6b7136d",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "find-n",
+          "requiredAction": "Determine amount from mass and molar mass.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "molar-mass"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Exact selected example/feedback review pending.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "find-m",
+          "requiredAction": "Determine mass from amount and molar mass.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "molar-mass"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Exact selected example/feedback review pending.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "find-MM",
+          "requiredAction": "Determine molar mass from supplied mass and amount.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "molar-mass"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Computing molar mass from a formula does not itself establish solving MM from given m and n; locate or add an explicit example.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci128bb632",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Mole concept",
+      "official": {
+        "text": "Conduct a practical investigation to physically compare masses of equimolar amounts of pure substances",
+        "including": "",
+        "examples": "",
+        "contentSha256": "648865ee523ffc4dd20d2afcfc627899dd5dd3a81f16f8e9d2da1c14ef69944a",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "physical-equimolar-comparison",
+          "requiredAction": "Physically compare masses of equimolar amounts of pure substances in a practical investigation.",
+          "kind": "practical-conduct",
+          "plannedVideos": [
+            "equimolar-practical"
+          ],
+          "status": "conduct-not-evidenced",
+          "gap": "Existing animated mass comparison is explanation only; pure substance quantities and actual measurement/conduct remain open.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci94bdbfc4",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Mole concept",
+      "official": {
+        "text": "Conduct a practical investigation to accurately and quantitatively demonstrate how chemicals react in simple whole-number molar ratios",
+        "including": "",
+        "examples": "",
+        "contentSha256": "802db7df5c9d3456237f238bdbd9b192c087a7ac11ce1239d30c403655841114",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "quantitative-molar-ratio-investigation",
+          "requiredAction": "Accurately and quantitatively demonstrate simple whole-number reacting molar ratios in a practical investigation.",
+          "kind": "practical-conduct",
+          "plannedVideos": [
+            "molar-ratio-practical",
+            "mole-ratios"
+          ],
+          "status": "conduct-not-evidenced",
+          "gap": "The concept video supports the required investigation but does not replace measurement, accuracy and conduct evidence.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "cibccbf29b",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Mole concept",
+      "official": {
+        "text": "Determine the percentage composition by mass (% w/w) and the empirical formulas of compounds",
+        "including": "",
+        "examples": "",
+        "contentSha256": "12e2a707719212f32afbc0665052f016e54fddd0a0688f3902184bd268c09bcb",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "percentage-composition",
+          "requiredAction": "Determine element mass percentage (% w/w) of compounds.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "empirical"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Corrected silent draft now includes forward percentage calculation; selected final scene equivalence/review pending.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "empirical-ratio",
+          "requiredAction": "Determine empirical formulas of compounds.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "empirical"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Check percentage basis versus actual masses, guard digits/fractional ratios and inference limits. Molecular inference is optional related extension, not this point.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci04298531",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Mole concept",
+      "official": {
+        "text": "Solve problems that involve limiting reagents of chemical reactions",
+        "including": "",
+        "examples": "",
+        "contentSha256": "504a60adc990f9010ea71e5bd4ef34a2a89ad10253d55dd0ae94c587ac503f81",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "limiting-problems",
+          "requiredAction": "Solve reaction limiting-reagent problems.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "limiting"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "New display-only voiced draft is not a new full export or upload. Previous local review export does not approve its changed visuals; exact current preview/brief and complete listening/public review remain pending.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci47b34fec",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Mole concept",
+      "official": {
+        "text": "Solve real-world problems using combinations of stoichiometric principles that involve reacting masses",
+        "including": "",
+        "examples": "",
+        "contentSha256": "df7bd6587540c0aad0f467d1ad625340163eee4681b7748a29c66e86ffa83135",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "real-world-reacting-mass",
+          "requiredAction": "Solve real-world problems combining stoichiometry with reacting masses.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "mass-to-mass",
+            "limiting"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Use an actual interpreted context, purity/excess/completion assumptions and unseen application, not only a generic formula substitution.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "cic640839c",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Measures of concentration",
+      "official": {
+        "text": "Outline the uses of the following measures: mol L -1 , g L -1 , mg L -1 , % (w/w), % (w/v), % (v/v), ppm, ppb",
+        "including": "",
+        "examples": "",
+        "contentSha256": "30bb83943c2850dd34ad972bd72f696c74daca168bfff85000d46234983ae447",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "use-0",
+          "requiredAction": "Outline uses of mol L-1.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "concentration",
+            "concentration-measures"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "The existing L8 scope centres on purity/ppm. Each specified measure needs a meaningful use, with ppm/ppb mass fraction versus dilute aqueous mg/L assumptions explicit.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "mol L-1"
+        },
+        {
+          "key": "use-1",
+          "requiredAction": "Outline uses of g L-1.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "concentration",
+            "concentration-measures"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "The existing L8 scope centres on purity/ppm. Each specified measure needs a meaningful use, with ppm/ppb mass fraction versus dilute aqueous mg/L assumptions explicit.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "g L-1"
+        },
+        {
+          "key": "use-2",
+          "requiredAction": "Outline uses of mg L-1.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "concentration",
+            "concentration-measures"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "The existing L8 scope centres on purity/ppm. Each specified measure needs a meaningful use, with ppm/ppb mass fraction versus dilute aqueous mg/L assumptions explicit.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "mg L-1"
+        },
+        {
+          "key": "use-3",
+          "requiredAction": "Outline uses of % (w/w).",
+          "kind": "explanation",
+          "plannedVideos": [
+            "concentration",
+            "concentration-measures"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "The existing L8 scope centres on purity/ppm. Each specified measure needs a meaningful use, with ppm/ppb mass fraction versus dilute aqueous mg/L assumptions explicit.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "% (w/w)"
+        },
+        {
+          "key": "use-4",
+          "requiredAction": "Outline uses of % (w/v).",
+          "kind": "explanation",
+          "plannedVideos": [
+            "concentration",
+            "concentration-measures"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "The existing L8 scope centres on purity/ppm. Each specified measure needs a meaningful use, with ppm/ppb mass fraction versus dilute aqueous mg/L assumptions explicit.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "% (w/v)"
+        },
+        {
+          "key": "use-5",
+          "requiredAction": "Outline uses of % (v/v).",
+          "kind": "explanation",
+          "plannedVideos": [
+            "concentration",
+            "concentration-measures"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "The existing L8 scope centres on purity/ppm. Each specified measure needs a meaningful use, with ppm/ppb mass fraction versus dilute aqueous mg/L assumptions explicit.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "% (v/v)"
+        },
+        {
+          "key": "use-6",
+          "requiredAction": "Outline uses of ppm.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "concentration",
+            "concentration-measures"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "The existing L8 scope centres on purity/ppm. Each specified measure needs a meaningful use, with ppm/ppb mass fraction versus dilute aqueous mg/L assumptions explicit.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "ppm"
+        },
+        {
+          "key": "use-7",
+          "requiredAction": "Outline uses of ppb.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "concentration",
+            "concentration-measures"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "The existing L8 scope centres on purity/ppm. Each specified measure needs a meaningful use, with ppm/ppb mass fraction versus dilute aqueous mg/L assumptions explicit.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "ppb"
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "cidc3eeb7d",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Measures of concentration",
+      "official": {
+        "text": "Manipulate variables and solve problems to calculate molar concentration , moles and volume by applying C = n V (molarity formula)",
+        "including": "",
+        "examples": "",
+        "contentSha256": "d8d127ab5c094ef76f642f95dc3e7b03cd012011396ee6bcfe420b871b2c8691",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "find-C",
+          "requiredAction": "Solve for molar concentration using C=n/V.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "concentration"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Require volume units and species definition; exact scenes pending.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "find-n",
+          "requiredAction": "Rearrange C=n/V to determine moles.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "concentration",
+            "solution-stoichiometry"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Ensure a learner chooses the relationship, not just follows a direction.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "find-V",
+          "requiredAction": "Rearrange C=n/V to determine volume.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "concentration"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Locate or add a reverse variable problem; do not assume a single concentration example covers it.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "cia8281b8c",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Measures of concentration",
+      "official": {
+        "text": "Perform calculations involving mol L -1 , g L -1 , mg L -1 , % (w/w), % (w/v), % (v/v), ppm and ppb",
+        "including": "",
+        "examples": "",
+        "contentSha256": "b06d62c7a2001031d656763cb1e1a8adf2acf8805390e5f0e84238b0e15b78b2",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "calculate-0",
+          "requiredAction": "Perform calculations involving mol L-1.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "concentration-measures",
+            "concentration"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Required unit-by-unit calculation coverage remains open. Defining a unit or showing a purity factor is not sufficient evidence for concentration calculations in all listed measures.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "mol L-1"
+        },
+        {
+          "key": "calculate-1",
+          "requiredAction": "Perform calculations involving g L-1.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "concentration-measures",
+            "concentration"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Required unit-by-unit calculation coverage remains open. Defining a unit or showing a purity factor is not sufficient evidence for concentration calculations in all listed measures.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "g L-1"
+        },
+        {
+          "key": "calculate-2",
+          "requiredAction": "Perform calculations involving mg L-1.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "concentration-measures",
+            "concentration"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Required unit-by-unit calculation coverage remains open. Defining a unit or showing a purity factor is not sufficient evidence for concentration calculations in all listed measures.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "mg L-1"
+        },
+        {
+          "key": "calculate-3",
+          "requiredAction": "Perform calculations involving % (w/w).",
+          "kind": "calculation",
+          "plannedVideos": [
+            "concentration-measures",
+            "concentration"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Required unit-by-unit calculation coverage remains open. Defining a unit or showing a purity factor is not sufficient evidence for concentration calculations in all listed measures.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "% (w/w)"
+        },
+        {
+          "key": "calculate-4",
+          "requiredAction": "Perform calculations involving % (w/v).",
+          "kind": "calculation",
+          "plannedVideos": [
+            "concentration-measures",
+            "concentration"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Required unit-by-unit calculation coverage remains open. Defining a unit or showing a purity factor is not sufficient evidence for concentration calculations in all listed measures.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "% (w/v)"
+        },
+        {
+          "key": "calculate-5",
+          "requiredAction": "Perform calculations involving % (v/v).",
+          "kind": "calculation",
+          "plannedVideos": [
+            "concentration-measures",
+            "concentration"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Required unit-by-unit calculation coverage remains open. Defining a unit or showing a purity factor is not sufficient evidence for concentration calculations in all listed measures.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "% (v/v)"
+        },
+        {
+          "key": "calculate-6",
+          "requiredAction": "Perform calculations involving ppm.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "concentration-measures",
+            "concentration"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Required unit-by-unit calculation coverage remains open. Defining a unit or showing a purity factor is not sufficient evidence for concentration calculations in all listed measures.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "ppm"
+        },
+        {
+          "key": "calculate-7",
+          "requiredAction": "Perform calculations involving ppb.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "concentration-measures",
+            "concentration"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Required unit-by-unit calculation coverage remains open. Defining a unit or showing a purity factor is not sufficient evidence for concentration calculations in all listed measures.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false,
+          "requiredFacet": "ppb"
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "cib35d8262",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Measures of concentration",
+      "official": {
+        "text": "Manipulate variables and solve dilution problems by applying C 1 V 1 = C 2 V 2",
+        "including": "",
+        "examples": "",
+        "contentSha256": "a27ce2ee25f3f2acd4bdf3fa5cea0415031302b361c5577777541449576bfdc3",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "dilution-variables",
+          "requiredAction": "Manipulate dilution variables and solve with C1V1=C2V2.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "standard-dilution"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Check amount-preserved assumptions, total final volume, units and a rearranged/unseen case.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci9478b4ef",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Measures of concentration",
+      "official": {
+        "text": "Conduct a laboratory experiment to prepare a primary standard solution and perform a dilution with a calculated concentration",
+        "including": "",
+        "examples": "",
+        "contentSha256": "8b0935fe12d9360d7295accdbf2a7da96015f8afd38d4371a45f472d2f34e9ca",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "prepare-primary-standard",
+          "requiredAction": "Conduct laboratory preparation of a primary standard solution.",
+          "kind": "practical-conduct",
+          "plannedVideos": [
+            "standard-dilution"
+          ],
+          "status": "conduct-not-evidenced",
+          "gap": "Preparation video/method is only support; actual suitable primary standard, weighing/transfer/volumetric conduct and evidence are required.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "perform-calculated-dilution",
+          "requiredAction": "Perform a dilution with a calculated concentration in the laboratory.",
+          "kind": "practical-conduct",
+          "plannedVideos": [
+            "standard-dilution"
+          ],
+          "status": "conduct-not-evidenced",
+          "gap": "A C1V1 calculation alone does not evidence performing the dilution.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci580e1753",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Measures of concentration",
+      "official": {
+        "text": "Discuss Aboriginal and Torres Strait Islander Peoples’ methods of infusion, roasting, pounding and leaching to extract chemicals from plants to control the rate of chemical delivery",
+        "including": "",
+        "examples": "Slowly dehydrate clay by controlled heat, smash and mix the clay with plant material for a slower release (suck or place on skin) or embed into a woven material that is placed in contact with skin.",
+        "contentSha256": "dc0d75ee81cbc18e5c693f44ea332f13d5c9eaf5d49af6b5aec1db818893a4ba",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "infusion",
+          "requiredAction": "Discuss infusion in the specified Aboriginal and Torres Strait Islander plant-extraction/chemical-delivery context.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "first-nations-systems"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Required methods/context need respectful direct sourcing and an explanation of delivery-rate control. The optional clay example is not a separate compulsory requirement.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "roasting",
+          "requiredAction": "Discuss roasting in the specified Aboriginal and Torres Strait Islander plant-extraction/chemical-delivery context.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "first-nations-systems"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Required methods/context need respectful direct sourcing and an explanation of delivery-rate control. The optional clay example is not a separate compulsory requirement.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "pounding",
+          "requiredAction": "Discuss pounding in the specified Aboriginal and Torres Strait Islander plant-extraction/chemical-delivery context.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "first-nations-systems"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Required methods/context need respectful direct sourcing and an explanation of delivery-rate control. The optional clay example is not a separate compulsory requirement.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        },
+        {
+          "key": "leaching",
+          "requiredAction": "Discuss leaching in the specified Aboriginal and Torres Strait Islander plant-extraction/chemical-delivery context.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "first-nations-systems"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Required methods/context need respectful direct sourcing and an explanation of delivery-rate control. The optional clay example is not a separate compulsory requirement.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci39c4c80a",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Measures of concentration",
+      "official": {
+        "text": "Solve real-world problems using combinations of stoichiometric principles that involve reacting masses and solutions",
+        "including": "",
+        "examples": "",
+        "contentSha256": "a865debe802b9d29af383d2c0408e3f414e2033c06d142f43c231cba98fc6705",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "combined-masses-solutions",
+          "requiredAction": "Solve real-world stoichiometric problems involving reacting masses and solutions.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "solution-stoichiometry"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Existing L16 is only a source candidate. Check all quantities, reaction/availability assumptions and contextual interpretation before mapping scenes.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci02b3b4f6",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Properties of gases",
+      "official": {
+        "text": "Use the particle theory to describe the properties of ideal gases",
+        "including": "",
+        "examples": "",
+        "contentSha256": "08fb15f75458bffe83e17dce475b7f4cd49d4f3938868db0140a92187dbd5875",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "ideal-particle-model",
+          "requiredAction": "Use particle theory to describe ideal gas properties.",
+          "kind": "explanation",
+          "plannedVideos": [
+            "ideal-gas"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "A fixed molar-volume relationship alone does not teach the ideal-particle model or its scope.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci421ca667",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Properties of gases",
+      "official": {
+        "text": "Manipulate variables and solve problems using PV = nRT for ideal gases at standard temperature and pressure (STP)",
+        "including": "",
+        "examples": "",
+        "contentSha256": "8560874a3402ebfb0f2c539d4566811b95179db319155f72eb928941cbabaeaa",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "PVnRT-variables",
+          "requiredAction": "Manipulate variables and solve ideal gas problems using PV=nRT at stated STP.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "ideal-gas"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Dedicated law coverage is not established; inspect raw source notation, exact STP convention and compatible units/constants before recording.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci36ebe2fd",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Properties of gases",
+      "official": {
+        "text": "Use data to analyse the relationship between pressure in kPa and volume in L in a closed gas system at a constant temperature",
+        "including": "",
+        "examples": "",
+        "contentSha256": "039c1330b463602e9337706116fdfb802a390ab3948c0723c311c4f1dfac2780",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "pressure-volume-data",
+          "requiredAction": "Analyse pressure (kPa) versus volume (L) data in a closed system at constant temperature.",
+          "kind": "data-analysis",
+          "plannedVideos": [
+            "gas-data"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "No dedicated selected data task/review; preserve controlled temperature, gas amount, axes/units and evidence interpretation.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "ci440a58fc",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Properties of gases",
+      "official": {
+        "text": "Use data to analyse the relationship between temperature in K and pressure in kPa in a closed gas system at a constant volume",
+        "including": "",
+        "examples": "",
+        "contentSha256": "a79e5e19ffcb225d17a69b757f6521287ad99ed3784e18ab913a54c11fca2fd0",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "temperature-pressure-data",
+          "requiredAction": "Analyse temperature (K) versus pressure (kPa) data in a closed system at constant volume.",
+          "kind": "data-analysis",
+          "plannedVideos": [
+            "gas-data"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "No dedicated selected data task/review; Celsius plots must not substitute for the specified Kelvin relationship.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "cibf9522ee",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Properties of gases",
+      "official": {
+        "text": "Use data to analyse the relationship between temperature in K and volume in L in a closed gas system at a constant pressure",
+        "including": "",
+        "examples": "",
+        "contentSha256": "648826a83fbc203e1375d25de788e1249cadcdae8e0115cecf155a40f9ca1f3a",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "temperature-volume-data",
+          "requiredAction": "Analyse temperature (K) versus volume (L) data in a closed system at constant pressure.",
+          "kind": "data-analysis",
+          "plannedVideos": [
+            "gas-data"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "No dedicated selected data task/review; preserve the specified constant-pressure conditions.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    },
+    {
+      "id": "cia40dc747",
+      "subject": "chemistry",
+      "year": 11,
+      "focusArea": "Quantitative chemistry",
+      "group": "Properties of gases",
+      "official": {
+        "text": "Solve real-world problems using combinations of stoichiometric principles that involve reacting masses, solutions and gases",
+        "including": "",
+        "examples": "",
+        "contentSha256": "a623a2066b2e17874aeadcc4660ed98b82bf979ab6de4bef34e14c850c675421",
+        "url": "https://curriculum.nsw.edu.au/learning-areas/science/chemistry-11-12-2025/content/year-11/faf0876f2f",
+        "rawPage": "out/research/continuity-2026-10-08/chemistry-faf0876f2f.html"
+      },
+      "actions": [
+        {
+          "key": "combined-masses-solutions-gases",
+          "requiredAction": "Solve real-world problems combining reacting masses, solutions and gases.",
+          "kind": "calculation",
+          "plannedVideos": [
+            "integrated-mass-solution-gas",
+            "gas-stoichiometry",
+            "solution-stoichiometry"
+          ],
+          "status": "planned-unreviewed",
+          "gap": "Separate gas-only and solution-only boards do not establish this integrated requirement. A suitable combined application and context remain to select/audit.",
+          "sceneEquivalence": "pending",
+          "reviewEvidence": null,
+          "claimedComplete": false
+        }
+      ],
+      "coverageStatus": "provisional-not-approved",
+      "claimedComplete": false
+    }
+  ],
+  "remainingAreas": "All other Chemistry/Biology focus areas remain mandatory-point/action-to-scene mapping pending. Only this complete quantitative point set and the scoped four enzyme points are itemised here; the rest of Cells as the basis of life is not certified by the enzyme route.",
+  "counts": {
+    "chemistryPoints": 27,
+    "biologyEnzymePoints": 4,
+    "approvedPoints": 0,
+    "actions": 63
+  },
+  "nextProduction": "Corrected empirical formulas remains next. The two actions under cibccbf29b are forward percentage composition and empirical-ratio inference; review both before recording, with molecular-formula inference as a separate extension."
+}

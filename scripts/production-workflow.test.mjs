@@ -59,6 +59,20 @@ test('malformed alignment fails before publishing', () => {
   writeFileSync(path.join(fixture.dir, fixture.lesson.scenes[0].voiceover.audioFile.replace('.mp3', '.alignment.json')), JSON.stringify(fixture.alignment));
   assert.ok(runPreflight(fixture).report.errors.some(e => e.code === 'ALIGNMENT_INVALID'));
 });
+
+test('exact frame-boundary narration tolerates decimal addition noise but still rejects a millisecond of clipping', () => {
+  const fixture = makeFixture();
+  const scene = fixture.lesson.scenes[0];
+  scene.voiceover.endFrame = Math.ceil(fixture.alignment.character_end_times_seconds.at(-1) * 30);
+  const boundary = scene.voiceover.endFrame / 30;
+  const alignmentPath = path.join(fixture.dir, scene.voiceover.audioFile.replace('.mp3', '.alignment.json'));
+  fixture.alignment.character_end_times_seconds[fixture.alignment.characters.length - 1] = boundary + 4e-15;
+  writeFileSync(alignmentPath, JSON.stringify(fixture.alignment));
+  assert.ok(!runPreflight(fixture).report.errors.some(e => e.code === 'AUDIO_CLIPPED'));
+  fixture.alignment.character_end_times_seconds[fixture.alignment.characters.length - 1] = boundary + 0.001;
+  writeFileSync(alignmentPath, JSON.stringify(fixture.alignment));
+  assert.ok(runPreflight(fixture).report.errors.some(e => e.code === 'AUDIO_CLIPPED'));
+});
 test('v4 uses dialogue endpoint and omits unsupported legacy settings', () => {
   const request = buildSpeechRequest({text: 'Hello', voiceId: 'voice', modelId: 'eleven_v4'});
   assert.ok(request.endpoint.endsWith('/text-to-dialogue/with-timestamps'));
@@ -71,6 +85,38 @@ test('default narration uses Flash and rejects empty provider timestamps', () =>
   assert.equal(request.body.model_id, 'eleven_flash_v2_5');
   assert.throws(() => validateSpeechPayload({audio_base64: 'AA==', alignment: {characters: [], character_start_times_seconds: [], character_end_times_seconds: []}}));
   assert.throws(() => buildSpeechRequest({text: '[STUDENT]Why?[/STUDENT]', voiceId: 'voice'}));
+});
+test('v4 records supported controls and rejects unversioned dictionaries and legacy controls', () => {
+  const requestOptions = {stability: 0.65, similarity: 0.8, language_code: 'en', seed: 42,
+    apply_text_normalization: 'off', pronunciation_dictionary_locators: [{pronunciation_dictionary_id: 'dict', version_id: 'version'}]};
+  const input = {text: 'Two point zero zero moles.', voiceId: 'Simon', modelId: 'eleven_v4'};
+  const request = buildSpeechRequest({...input, requestOptions});
+  assert.deepEqual(request.body.settings, {stability: 0.65, similarity: 0.8});
+  assert.equal(request.body.seed, 42);
+  assert.deepEqual(request.body.pronunciation_dictionary_locators, requestOptions.pronunciation_dictionary_locators);
+  for (const options of [{speed: 0.9}, {style: 0.3}, {similarity_boost: 0.8}, {stability: 1.01}, {similarity: NaN},
+    {language_code: 'en-AU'}, {seed: -1}, {apply_text_normalization: 'yes'},
+    {pronunciation_dictionary_locators: [{pronunciation_dictionary_id: 'dict'}]}]) {
+    assert.throws(() => buildSpeechRequest({...input, requestOptions: options}));
+  }
+  assert.throws(() => buildSpeechRequest({...input, modelId: 'eleven_v3', requestOptions}));
+});
+test('generation honors the selected manifest voice and isolates alternate auditions', () => {
+  const fixture = makeFixture();
+  const manifestPath = path.join(fixture.dir, 'voice-manifest.json');
+  writeFileSync(manifestPath, JSON.stringify({compositionId: 'test', voiceSelection: {voiceId: 'Simon', modelId: 'eleven_v4'},
+    scenes: [{id: 'test', text: 'One mole.', audioFile: 'public/audio/test.mp3'}]}));
+  const executable = path.join(root, 'scripts/generate-elevenlabs-audio.mjs');
+  const env = {...process.env};
+  delete env.ELEVENLABS_MODEL_ID; delete env.ELEVENLABS_VOICE_ID;
+  const run = flags => spawnSync(process.execPath, [executable, manifestPath, '--dry-run', ...flags], {cwd: fixture.dir, env, encoding: 'utf8'});
+  const selected = run([]);
+  assert.equal(selected.status, 0, selected.stderr);
+  assert.match(selected.stdout, /Voice ID: Simon/);
+  assert.match(selected.stdout, /Model: eleven_v4/);
+  assert.notEqual(run(['--model=eleven_flash_v2_5']).status, 0);
+  assert.equal(run(['--model=eleven_flash_v2_5', '--output-dir=out/audition']).status, 0);
+  assert.throws(() => buildSpeechRequest({text: 'Think. <break time="4s"/> Answer.', voiceId: 'Simon', modelId: 'eleven_v4'}));
 });
 test('caption offsets match fps, delayed narration and concatenated intros', () => {
   const fixture = makeFixture();

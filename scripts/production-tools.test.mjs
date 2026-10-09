@@ -97,7 +97,9 @@ test('proposal writer refuses catalogue paths, symlinks, overwrites and unsafe f
   assert.throws(() => writeIsolatedPackage('out/review/new', {'../x': {}}, root), /filenames/u);
   writeIsolatedPackage('out/review/new', {'lesson.json': {}}, root);
   assert.throws(() => writeIsolatedPackage('out/review/new', {'lesson.json': {}}, root), /already exists/u);
-  mkdirSync(path.join(root, 'elsewhere')); symlinkSync(path.join(root, 'elsewhere'), path.join(root, 'out/review/link'));
+  mkdirSync(path.join(root, 'elsewhere'));
+  // Directory junctions exercise the same path guard without Windows symlink privileges.
+  symlinkSync(path.join(root, 'elsewhere'), path.join(root, 'out/review/link'), process.platform === 'win32' ? 'junction' : 'dir');
   assert.throws(() => writeIsolatedPackage('out/review/link/new', {'lesson.json': {}}, root), /symlinks/u);
 });
 test('visual science checklist covers five science dimensions and binds each unreviewed scene', () => {
