@@ -8,6 +8,10 @@ import re
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
+# Frozen public copies can exceed Windows' legacy 260-character path limit.
+# Keep the same resolved workspace boundary while using extended-length paths.
+if os.name == 'nt' and not str(ROOT).startswith('\\\\?\\'):
+    ROOT = Path('\\\\?\\UNC\\' + str(ROOT)[2:] if str(ROOT).startswith('\\\\') else '\\\\?\\' + str(ROOT))
 STATE = ROOT / 'docs/production/handoff-state-2026-10-09.zip'
 MANIFEST = ROOT / 'docs/production/handoff-state-2026-10-09.manifest.json'
 MEDIA = ROOT / 'out/archives/computer-transfer-2026-10-09.zip'
