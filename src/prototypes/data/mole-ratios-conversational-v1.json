@@ -1,0 +1,459 @@
+{
+  "title": "Mole ratios",
+  "subtitle": "The relationship depends on the substances you compare",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 11",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "use balanced chemical equations and the mole concept to calculate mole ratios of reactants and products"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": [
+    "CH11-9",
+    "CH11/12-4",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "What happens in chemical reactions?",
+  "lessonIntent": "Explain coefficient-based entity/mole ratios and convert between reacting amounts under stated assumptions.",
+  "examSkill": "Take the mole ratio from coefficients (not subscripts), then scale a known amount to find an unknown amount.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusicVolume": 0.1,
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same reaction. Different ratios.",
+      "body": "2H₂ + O₂ → 2H₂O",
+      "callout": "Choose the two substances being compared.",
+      "durationInFrames": 720,
+      "caption": "Compare the chosen substances using a balanced equation.",
+      "voiceover": {
+        "text": "Two hydrogen molecules make two water molecules. So is every reaction one for one? That would make the maths very easy. Unfortunately, the oxygen in that same reaction has a different deal: one oxygen molecule for two water molecules. The equation gives us the relationship. The job is to choose the two substances we're comparing."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "body": 30
+      }
+    },
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 168,
+      "caption": "Mole ratios from balanced equations",
+      "voiceover": {
+        "text": "Mole ratios. Reading the amounts in a balanced equation."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "body": 30
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Whole entities, unchanged formulas",
+      "body": "2H₂ + O₂ → 2H₂O",
+      "bullets": [
+        {
+          "text": "Coefficients compare relative entity counts, and therefore mole amounts.",
+          "at": 5.2
+        },
+        {
+          "text": "Subscripts describe each molecule or formula unit.",
+          "at": 20.8
+        }
+      ],
+      "secondary": "Schematic counting model. Drawn particles are not literal moles.",
+      "callout": "Big numbers out front give the mole ratio.",
+      "durationInFrames": 1224,
+      "caption": "Compare the chosen substances using a balanced equation.",
+      "voiceover": {
+        "text": "In two H two plus O two gives two H two O, the numbers out front compare whole chemical entities: two hydrogen molecules, one oxygen molecule, two water molecules. We can scale all those counts up together. Multiply by Avogadro's number and the same relationship becomes two moles, one mole, two moles. The small two inside H two O has a different job. It describes each water molecule: two hydrogen atoms and one oxygen atom. Changing that small number would change the substance. These drawings are a counting model, not the size or arrangement of real particles."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2CoefSub",
+        "props": {
+          "species": [
+            {
+              "parts": [
+                [
+                  "H",
+                  "₂"
+                ]
+              ],
+              "coef": 2,
+              "atoms": [
+                "H",
+                "H"
+              ],
+              "side": "left"
+            },
+            {
+              "parts": [
+                [
+                  "O",
+                  "₂"
+                ]
+              ],
+              "coef": 1,
+              "atoms": [
+                "O",
+                "O"
+              ],
+              "side": "left"
+            },
+            {
+              "parts": [
+                [
+                  "H",
+                  "₂"
+                ],
+                [
+                  "O",
+                  ""
+                ]
+              ],
+              "coef": 2,
+              "atoms": [
+                "O",
+                "H",
+                "H"
+              ],
+              "side": "right"
+            }
+          ],
+          "ratio": [
+            0,
+            2
+          ],
+          "beats": {
+            "coef": 126,
+            "molecules": 210,
+            "counts": 318,
+            "ratio": 414,
+            "sub": 594,
+            "subLabel": 726,
+            "dim": 966
+          }
+        },
+        "delay": 30
+      },
+      "revealDelays": {
+        "heading": 15,
+        "body": 30,
+        "diagram": 30
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Balance atoms. Preserve formulas.",
+      "bullets": [
+        {
+          "text": "Keep the same atom totals on both sides.",
+          "at": 1
+        },
+        {
+          "text": "Change coefficients, keeping each substance formula intact.",
+          "at": 7
+        },
+        {
+          "text": "Use the compared coefficients for the mole conversion.",
+          "at": 17
+        }
+      ],
+      "callout": "Subscripts help with atom accounting, not the conversion multiplier.",
+      "durationInFrames": 792,
+      "caption": "Compare the chosen substances using a balanced equation.",
+      "voiceover": {
+        "text": "Balancing is an atom-accounting check. The same atoms have to appear on both sides, because an ordinary chemical reaction rearranges them. We adjust the numbers of whole entities, keeping each formula intact. That's why the coefficients can give us an amount ratio. The subscripts help us check the atom totals, but they aren't the numbers we use for the wanted-over-known conversion."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "body": 30
+      }
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "Twice the acid for this base",
+      "body": "2HCl + Ca(OH)₂ → CaCl₂ + 2H₂O",
+      "bullets": [
+        {
+          "text": "0.300 mol Ca(OH)₂ requires 0.600 mol HCl.",
+          "at": 10
+        }
+      ],
+      "secondary": "Schematic mole amounts. The molecular equation does not show all solution ions.",
+      "callout": "Moles known × (wanted ÷ known) = moles wanted.",
+      "durationInFrames": 960,
+      "caption": "Compare the chosen substances using a balanced equation.",
+      "voiceover": {
+        "text": "Here's a two-to-one relationship in a different reaction. Each mole of calcium hydroxide needs two moles of hydrochloric acid for this neutralisation. Three tenths of a mole of the base therefore needs six tenths of a mole of acid. Doubling the amount of base would double the required acid, without changing the recipe. These crates are labelled mole amounts. They aren't literal containers of molecules, and this equation doesn't show every ion in the solution."
+      },
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Ratio",
+        "props": {
+          "equation": "2HCl + Ca(OH)₂ → CaCl₂ + 2H₂O",
+          "known": {
+            "label": "Ca(OH)₂",
+            "coef": 1,
+            "moles": 0.3
+          },
+          "wanted": {
+            "label": "HCl",
+            "coef": 2
+          },
+          "crate": 0.1,
+          "dp": 3,
+          "beats": {
+            "known": 234,
+            "ratio": 66,
+            "wanted": 354,
+            "onTop": 438
+          }
+        },
+        "delay": 30
+      },
+      "revealDelays": {
+        "heading": 15,
+        "body": 30,
+        "diagram": 30
+      }
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Check the equation before the ratio",
+      "question": "Check the balanced equation and compare Fe with Fe₂O₃.",
+      "coachNote": "Only change coefficients to balance.",
+      "steps": [
+        "Check the conserved atom totals",
+        "Choose the compared coefficients",
+        "Simplify their amount ratio"
+      ],
+      "durationInFrames": 973,
+      "caption": "Compare the chosen substances using a balanced equation.",
+      "voiceover": {
+        "text": "Before using a ratio, the equation needs to balance. This iron example has four iron atoms and six oxygen atoms on each side. The subscripts stayed the same; the coefficients made the totals agree. Now compare iron with iron three oxide. Four to two, or two to one. That's the relative number of iron atoms and oxide formula units, and it's also their mole ratio. We aren't describing separate iron three oxide molecules in the solid."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "body": 30,
+        "stepAts": [
+          45,
+          330,
+          480
+        ]
+      },
+      "calculationPresentation": {
+        "task": "Check the balanced equation, then read Fe : Fe₂O₃",
+        "equation": "4Fe + 3O₂ → 2Fe₂O₃",
+        "givens": [
+          {
+            "label": "Fe coefficient",
+            "value": "4"
+          },
+          {
+            "label": "Fe₂O₃ coefficient",
+            "value": "2"
+          }
+        ],
+        "note": "Atom counts refer to the formal equation. Fe₂O₃ is represented by formula units.",
+        "stages": [
+          {
+            "label": "Check conserved atoms",
+            "lines": [
+              "Fe: 4 = 2 × 2",
+              "O: 3 × 2 = 2 × 3"
+            ],
+            "summary": "Four Fe and six O atoms on each side"
+          },
+          {
+            "label": "Compare the chosen coefficients",
+            "lines": [
+              "Fe : Fe₂O₃ = 4 : 2"
+            ],
+            "summary": "Four Fe entities compared with two oxide formula units"
+          },
+          {
+            "label": "Reduce without changing the proportion",
+            "lines": [
+              "Fe : Fe₂O₃ = 4 : 2 = 2 : 1"
+            ],
+            "summary": "Same ratio for entity counts and mole amounts"
+          }
+        ]
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "heading": "Find the acid amount required",
+      "question": "Find the HCl required for 0.300 mol reacting Ca(OH)₂.",
+      "coachNote": "Ratio is wanted (HCl) over known Ca(OH)₂.",
+      "steps": [
+        "Choose the compared coefficients",
+        "Use the required amount ratio",
+        "Calculate the acid amount"
+      ],
+      "durationInFrames": 1033,
+      "caption": "Compare the chosen substances using a balanced equation.",
+      "voiceover": {
+        "text": "Suppose zero point three zero zero moles of calcium hydroxide reacts completely. How much hydrochloric acid does it require? The equation says twice the amount of acid for the base. Multiplying by two over one therefore makes sense before we reach for the calculator. The required acid amount is zero point six zero zero moles. Going the other way would use one over two. The ratio follows what we want to find; it isn't one fraction to memorise for every question."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "body": 30,
+        "stepAts": [
+          45,
+          240,
+          450
+        ]
+      },
+      "calculationPresentation": {
+        "task": "Find the HCl required for this reacting base amount",
+        "equation": "2HCl + Ca(OH)₂ → CaCl₂ + 2H₂O",
+        "givens": [
+          {
+            "label": "Reacting Ca(OH)₂",
+            "value": "0.300 mol"
+          }
+        ],
+        "note": "Assume complete reaction by the stated equation.",
+        "stages": [
+          {
+            "label": "Compare acid with base",
+            "lines": [
+              "HCl : Ca(OH)₂ = 2 : 1"
+            ],
+            "summary": "Twice as much acid as base, in moles"
+          },
+          {
+            "label": "Convert onto the required acid scale",
+            "lines": [
+              "n(HCl) = n(Ca(OH)₂) × (2 ÷ 1)"
+            ],
+            "summary": "Wanted coefficient over known coefficient"
+          },
+          {
+            "label": "Calculate the required amount",
+            "lines": [
+              "n(HCl) = 0.300 × 2 = 0.600 mol"
+            ],
+            "summary": "Required HCl: 0.600 mol"
+          }
+        ]
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Does the answer fit the recipe?",
+      "body": "Using the formula subscripts, or the right coefficients upside down, gives the wrong comparison.",
+      "secondary": "Use the compared coefficients in the wanted/known direction. Check against the reaction.",
+      "mistakeTag": "Does it fit the equation?",
+      "callout": "The calculated amount must fit the stated reaction.",
+      "durationInFrames": 1140,
+      "caption": "Compare the chosen substances using a balanced equation.",
+      "voiceover": {
+        "text": "There are two easy ways to get a plausible-looking wrong answer. One is taking the little numbers inside the formulas as the mole ratio. The other is using the right coefficients upside down. A quick sense-check helps. If the reaction needs twice as much acid as base, an acid answer that's half the base amount doesn't fit the equation. For a product prediction, we also need the stated reactant amount to react completely, with enough of the other reactants. The equation alone can't guarantee what we'll recover in the lab."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "body": 30
+      }
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "Two comparisons from the same amount",
+      "question": "4.00 mol H₂ reacts completely. Find water formed and oxygen required.",
+      "pausePrompt": "Pause here if you would like to try both ratios.",
+      "answerSteps": [
+        "Find the water amount",
+        "Find the oxygen required"
+      ],
+      "durationInFrames": 1356,
+      "caption": "Compare each wanted substance with the supplied hydrogen amount.",
+      "voiceover": {
+        "text": "Back to the water equation. Four point zero zero moles of hydrogen react completely, with enough oxygen. How many moles of water form, and how much oxygen is required? It's the same hydrogen amount, but we're comparing it with two different substances. Pause here if you'd like to work out both ratios. Water uses the two-to-two ratio. Four point zero zero moles of hydrogen therefore gives four point zero zero moles of water. Oxygen uses one over two, so the required oxygen amount is two point zero zero moles. One starting amount, two different comparisons. The balanced coefficients explain why the answers differ."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "pausePrompt": 30,
+        "answerVisibleStart": 684,
+        "stepAts": [
+          684,
+          934
+        ]
+      },
+      "responseHold": {
+        "startFrame": 624,
+        "endFrame": 684
+      },
+      "calculationPresentation": {
+        "task": "Find H₂O formed and O₂ required",
+        "equation": "2H₂ + O₂ → 2H₂O",
+        "givens": [
+          {
+            "label": "Reacting H₂",
+            "value": "4.00 mol"
+          }
+        ],
+        "note": "Complete reaction with enough oxygen. Compare each wanted substance with H₂.",
+        "stages": [
+          {
+            "label": "Compare water with hydrogen",
+            "lines": [
+              "n(H₂O) = 4.00 × (2 ÷ 2) = 4.00 mol"
+            ],
+            "summary": "Water formed: 4.00 mol"
+          },
+          {
+            "label": "Compare oxygen with hydrogen",
+            "lines": [
+              "n(O₂) = 4.00 × (1 ÷ 2) = 2.00 mol"
+            ],
+            "summary": "Oxygen required: 2.00 mol"
+          }
+        ]
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "Which two substances?",
+      "points": [
+        "Balanced coefficients compare whole entities and mole amounts.",
+        "Use the wanted coefficient over the known coefficient.",
+        "State the reaction assumptions and check the amount against the recipe."
+      ],
+      "finalPrompt": "Next: connect the mole ratio to each substance’s mass.",
+      "durationInFrames": 900,
+      "caption": "Keep formulas intact, compare the chosen coefficients and state the assumptions.",
+      "voiceover": {
+        "text": "The useful question is: which substance do we know, and which one do we want? A balanced equation compares intact chemical entities. The same proportions apply to moles. The wanted coefficient divided by the known coefficient converts between those amounts, and a quick check against the recipe helps catch an upside-down ratio. Next we'll connect this amount relationship to grams. Each substance brings its own molar mass into that calculation."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "takeawayAts": [
+          90,
+          270,
+          450
+        ],
+        "finalPrompt": 600
+      }
+    }
+  ],
+  "introDurationInFrames": 0,
+  "syllabusNeutral": true
+}

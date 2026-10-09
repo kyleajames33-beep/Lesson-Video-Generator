@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "src/prototypes/data/mole-ratios-conversational-v1.json",
+    "lessonSha256": "ae34f21390318392f6bbeea304600718dba492cf1687faeb1bd3acf4628cfd8e"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Formula reading, atom conservation, balancing and mole amount. Empirical formulas is not a required prerequisite.",
+    "startsWith": "Different comparisons within the same balanced equation can have different ratios",
+    "stopsAfter": "Convert between given and wanted mole amounts under stated reaction assumptions",
+    "nextLesson": "Mass-to-mass stoichiometry using each species molar mass"
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md"
+  ],
+  "teaching": {
+    "task": "Read conserved entity and mole ratios from a balanced equation, distinguish coefficients from subscripts and calculate a wanted amount from a given amount.",
+    "causalExplanation": "Chemical reactions rearrange atoms. The balanced coefficients encode relative numbers of reacting entities; scaling each entity count by the same factor preserves those ratios, including when amounts are measured in moles.",
+    "conversationalApproach": "Explain what each number means before naming the method. Use the unchanged water formula and the acid/base relationship to make the amount scaling understandable. Let stable working carry repeated arithmetic instead of reciting four instructions.",
+    "openingDecision": "Keep the useful recipe comparison but qualify its scope. Ask why two hydrogen molecules require one oxygen molecule, then connect the same relationship to moles. Do not promise a balanced equation alone predicts actual recovered yield.",
+    "understandingCheck": "Keep the hydrogen/water 4.00 mol case as a near-transfer check, then add a changed-ratio decision using the same equation: 4.00 mol H2 requires 2.00 mol O2 for complete reaction. Prompt and feedback must be separately recorded with an answer-free response opportunity and invitation to pause.",
+    "curriculumScope": "Reusable balanced-equation/molar-ratio explanation. The cached continuity analysis maps 2017 p783 and 2025 ci94bdbfc4 to practical investigation of simple whole-number molar ratios. This explanation supports that task; viewing does not fulfil the practical. Keep cohort-specific mapping in descriptions/playlists, with exact coverage still pending."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "reuse",
+      "visualReference": "Existing hook slide",
+      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "narrationCue": "Proposed, estimated until fresh recording: One oxygen molecule for two water molecules: contrast which pair is being compared",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "title",
+      "visualDecision": "reuse",
+      "visualReference": "Existing title slide",
+      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "narrationCue": "Proposed, estimated until fresh recording: Mole ratios: brief orientation",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "concept",
+      "visualDecision": "adjust",
+      "visualReference": "Existing chem11m2CoefSub diagram",
+      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "narrationCue": "Proposed, estimated until fresh recording: Numbers out front; scale the counts; small two inside H₂O; counting-model limit",
+      "motionPurpose": "Compare correct quantities in proportion; keep labels readable. Coefficient-only-moles label disabled in the selected diagram.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "definition",
+      "visualDecision": "reuse",
+      "visualReference": "Existing definition slide",
+      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "narrationCue": "Proposed, estimated until fresh recording: Adjust the numbers of whole entities, keeping each formula intact",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "formula",
+      "visualDecision": "adjust",
+      "visualReference": "Existing chem11m2Ratio diagram",
+      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "narrationCue": "Proposed, estimated until fresh recording: Each mole of base needs two moles of acid; 0.300 and 0.600 mol relationship",
+      "motionPurpose": "Compare correct quantities in proportion; keep labels readable. Coefficient-only-moles label disabled in the selected diagram.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "worked-example",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "Check the conserved totals, identify the chosen coefficients and reduce their ratio in separate stages.",
+      "narrationCue": "Proposed, estimated until fresh recording: Four Fe and six O on each side; now compare iron with iron three oxide",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "worked-example-2",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "narrationCue": "Proposed, estimated until fresh recording: Twice the amount of acid; wanted/known 2/1; 0.600 mol",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "misconception",
+      "visualDecision": "reuse",
+      "visualReference": "Existing misconception slide",
+      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "narrationCue": "Proposed, estimated until fresh recording: An acid answer half the base amount does not fit; state complete-reaction conditions",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    },
+    {
+      "sceneId": "quick-check",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "narrationCue": "Proposed, estimated until fresh recording: Prompt asks two ratios; planned silent attempt before water and oxygen calculations",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Planned two-second answer-free start gap with invitation to pause longer. Not yet measured."
+    },
+    {
+      "sceneId": "summary",
+      "visualDecision": "reuse",
+      "visualReference": "Existing summary slide",
+      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "narrationCue": "Proposed, estimated until fresh recording: Which substance do we know and want; next connect each amount to its mass",
+      "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
+      "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
+    }
+  ],
+  "scriptReview": {
+    "status": "pending",
+    "reviewer": "",
+    "evidence": null
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Unrecorded new script and layout draft. Exact source/science and visual review pending. No recording, export, listening or syllabus-completion approval."
+}

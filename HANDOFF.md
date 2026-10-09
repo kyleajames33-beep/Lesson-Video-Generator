@@ -4,6 +4,12 @@ This is the starting point for a new computer or agent. The user asked to commit
 
 The next production lesson is **percentage composition and empirical formulas**. First finish the exact voiced-preview check of the latest **limiting-reagents clear-working layout**. Do not restart the scripts or replace the accepted voice takes. The current sources and pending checks are listed below.
 
+## Continuation on the current computer
+
+The user subsequently requested online media backup and continued production here. Read [the continuation review](docs/production/continuation-review-2026-10-09.md) before using the older lesson-state details below. The empirical script now has eleven fresh Simon v4 recordings, measured alignment and a new 321.1667-second voiced candidate at `out/prototypes/empirical-formulas-voiced-2026-10-09/narrated.lesson.json`. The original silent draft is preserved. The next mole-ratios source, portable script and independent science review are also prepared; its recording preparation and voiced review remain pending. Verified short limiting and empirical pilots plus complete empirical listening audio are available at http://127.0.0.1:8778/continuation-review-2026-10-09/. Continuous playback, actual-device/caption checks and human listening are still pending; no full export or publication approval is claimed.
+
+The online backup is being uploaded to a [dedicated GitHub release](docs/production/github-media-backup-2026-10-09.md), including an additive snapshot of this continuation. Consult the checked-in transfer record for verified upload status. Once available, use its download/restore instructions instead of requiring a manual media copy. The original local ZIP and checksum remain valid as an alternative.
+
 ## Move to the other computer
 
 Repository: https://github.com/kyleajames33-beep/Lesson-Video-Generator

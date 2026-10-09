@@ -17,5 +17,33 @@
   "verification": [
     "Every ZIP member passed CRC verification",
     "All media files have restore-time SHA-256 checks"
+  ],
+  "githubRelease": {
+    "repository": "kyleajames33-beep/Lesson-Video-Generator",
+    "tag": "workspace-media-2026-10-09",
+    "url": "https://github.com/kyleajames33-beep/Lesson-Video-Generator/releases/tag/workspace-media-2026-10-09",
+    "status": "prepared-upload-pending",
+    "parts": [
+      {
+        "name": "computer-transfer-2026-10-09.zip.part01",
+        "bytes": 1610612736,
+        "sha256": "91ddea8b65c9526e5837e62a8b2c2ef697c65af93fe6d9bafab31dd714c0f939"
+      },
+      {
+        "name": "computer-transfer-2026-10-09.zip.part02",
+        "bytes": 1452182479,
+        "sha256": "49c58d1dba41b0145dd3971c8a5ed7e725bdc124f17d668b762a01377daceeb3"
+      }
+    ]
+  },
+  "continuations": [
+    {
+      "name": "continuation-media-2026-10-09.zip",
+      "bytes": 176391662,
+      "sha256": "118b32333347f241294fa0ea321e2f3c8e4bb4c40647dc309e157ec20ffffe42",
+      "files": 259,
+      "status": "prepared-upload-pending",
+      "scope": "Additive fresh empirical recordings, measured assembly, verified limiting/empirical pilots and review page. No full export or listening approval."
+    }
   ]
 }
