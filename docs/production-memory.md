@@ -1,5 +1,13 @@
 # Production Memory
 
+## 10 October: ratio notation, difficult explanations and Year 12 priority
+
+- The teacher accepts the general direction of the calculation review clips but notes that the acid example says two over one and one over two while the substitution simplifies to multiplication by two. Keep the wanted/known coefficient fraction visible through substitution. Show a spoken reverse comparison when it is explained, after the forward result. Equivalent arithmetic can still be a poor explanatory match.
+- Ease the pace at difficult reasoning rather than slowing every opening and bridge. The current trial uses pitch-preserving 0.94 tempo only on selected calculation explanations, with rebuilt alignment/captions/cues and preserved practice gaps. This is a listening candidate, not a universal speech-rate rule. Future scripts should explain the reason in short connected chunks and allow time for the current stage. Avoid slow decimal recital and long arbitrary silences.
+- Add separate harder-question companions for limiting-reactant transfer, equilibrium, titration and heredity applications. Establish prerequisites, give an unseen task and an answer-free attempt, explain why the method fits, then diagnose plausible wrong reasoning. Keep core explanations, challenge application and practical/data evidence distinct. Do not promise marks or call authored questions official HSC questions.
+- After finishing/posting the current batch, prioritise **Year 12 Module 5 Chemistry and Biology** for this term: equilibrium and heredity. Use [the scoped source/cohort plan](production/year12-module5-teaching-priority-2026-10-10.md). Year 11 and the yield/purity audit are deferred, not discarded. Maintain learner playlist order separately from upload chronology.
+- General positive feedback on earlier clips is recorded as that feedback. It does not approve the new paced revision, complete lessons, all device layouts or full exports. Preserve old takes/previews and use the exact revised preview and release gates.
+
 This file records what the system learns while producing HSCScience videos. Update it when a lesson reveals a repeatable improvement, common failure, or reusable pattern.
 
 ## Best Ideas To Keep
