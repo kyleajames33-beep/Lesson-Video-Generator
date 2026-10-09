@@ -14,8 +14,10 @@ After cloning the latest `main`, install Python and GitHub CLI, then:
 python scripts/github-media-transfer.py download
 python scripts/transfer-workspace.py restore-state
 python scripts/transfer-workspace.py restore-media
-python scripts/github-media-transfer.py download-continuation
+python scripts/github-media-transfer.py download-continuation --continuation continuation-media-2026-10-09.zip
 python scripts/transfer-workspace.py restore-media out/archives/continuation-media-2026-10-09.zip
+python scripts/github-media-transfer.py download-continuation --continuation calculation-batch-media-2026-10-09.zip
+python scripts/transfer-workspace.py restore-media out/archives/calculation-batch-media-2026-10-09.zip
 ```
 
 Sign in with `gh auth login` if the repository requires authentication. The downloader preserves matching existing parts and refuses conflicting files. It checks each part and the joined ZIP against the checked-in hashes. The subsequent restore checks individual contents.
@@ -24,4 +26,4 @@ Alternatively, download both `.part01` and `.part02` assets from the release int
 
 Both archive parts, the checksum file and the additive continuation ZIP have matching server-side sizes and SHA-256 digests. The archives also passed content verification and restore checks locally. The release was published on 9 October 2026 after those checks. See the transfer record for the publication timestamp and hash evidence.
 
-The additive continuation snapshot restores the subsequently recorded empirical lesson and verified pilots over the original handoff. See [the current review](continuation-review-2026-10-09.md) for the selected paths and remaining checks. Its download helper verifies the full ZIP hash before restoration. Future changes require a fresh dated snapshot; this release does not automatically synchronise ignored files.
+The first additive continuation restores the recorded empirical lesson and its verified pilots over the original handoff. The second, `calculation-batch-media-2026-10-09.zip`, adds mole-ratios and mass-to-mass recordings, measured sources and four short pilots, plus the combined review page. See [the current batch](calculation-review-batch-2026-10-09.md) for selected paths and remaining checks. Restore both continuations in the documented order. The helper verifies each full ZIP hash before restoration; use explicit names because its unnamed default selects the latest continuation. Future work needs a new dated snapshot; this release does not automatically synchronise ignored files.

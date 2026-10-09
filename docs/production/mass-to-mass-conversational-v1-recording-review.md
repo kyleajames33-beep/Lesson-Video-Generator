@@ -1,0 +1,13 @@
+# Mass-to-mass independent recording-stage review
+
+Reviewer: coordinating agent, independently inspecting the next-batch author's selected draft. Exact source: `src/prototypes/data/mass-to-mass-conversational-v1.json`, SHA-256 `5fdae5ebe2b79515908ee25d4d29955061dd53b991380e19303bbbb0a5a47f9b`.
+
+Read the full settled script and all calculation presentations. The narration uses approximate mole amounts while maintaining unrounded arithmetic on the board. Recomputed with supplied C 12.011, O 15.999, Fe 55.845 and Mg 24.305 g mol^-1: 12.0 g carbon gives 43.9686953626 g CO2, reported 44.0 g; 80.0 g Fe2O3 gives 55.9544609142 g iron, reported 56.0 g; target 20.0 g MgO requires 12.0608376340 g Mg, reported 12.1 g. All three equations conserve atoms. Final masses use three significant figures; intermediate displays are explicitly approximate.
+
+Pure stated reactants, complete reaction and enough other reactant are explicit. Carbon gains oxygen mass; oxide loses oxygen into CO2. Coefficients compare mole amounts, not gram amounts. A combined mass expression is valid with the appropriate species molar masses and coefficients, and different species may have equal numerical molar masses. The moving packet and equal piles are labelled calculation models. This source stops before finite limiting supplies and does not fulfil practical investigation or certify full dotpoint coverage.
+
+Resolved two production findings before recording: connected approximate explanations replace repeated six-decimal spoken values, and the selected revision has zero intro frames with syllabus-neutral visual chrome. Exact arithmetic and all worked-example values are retained. The original author report records the earlier source hashes and their corrections.
+
+Inspected the current native pathway sample at `out/prototypes/mass-to-mass-conversational-2026-10-09/pathway-current-native.png`: matching 1:1 piles, species-specific operations, useful large labels and explicit model limitations. Older iron/oxide samples used pre-neutral props and remain historical geometry observations only. Their given/reference panels and wide equation lines fit those sampled desktop frames. Full measured timing, difficult current-source encoded frames, phone size and caption clearance still require review.
+
+The text-only manifest reconstructs all reviewed words and separates the practice prompt and answer. Generate fresh Simon takes only after this brief passes recording stage. Assemble sixty silent frames, derive actual caption/stage/result/diagram cues, and retain useful previous results. Source preparation passes. Exact voiced playback and actual human listening remain pending for the user's later combined review. No full export or public release is approved.

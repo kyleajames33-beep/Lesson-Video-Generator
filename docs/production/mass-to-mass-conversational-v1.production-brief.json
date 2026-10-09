@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "src/prototypes/data/mass-to-mass-conversational-v1.json",
+    "lessonSha256": "5fdae5ebe2b79515908ee25d4d29955061dd53b991380e19303bbbb0a5a47f9b"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "Read formulas and an already-balanced equation; calculate formula molar mass; use n=m/M and m=nM; choose a wanted/known coefficient ratio. Empirical formulas is not a compulsory prerequisite.",
+    "startsWith": "Carbon dioxide can outweigh its starting carbon because oxygen also contributes mass.",
+    "stopsAfter": "Predict and interpret a theoretical mass in either direction using species molar masses, balanced coefficients and stated assumptions.",
+    "nextLesson": "Limiting reactants: compare two finite reactant supplies before predicting product and excess."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-templates.md",
+    "docs/production/next-chemistry-batch-review-2026-10-09.md",
+    "docs/visual-design-handbook.md",
+    "docs/animation-planning.md"
+  ],
+  "teaching": {
+    "task": "Predict a theoretical reacting or product mass from a balanced equation, using each species molar mass and stated conditions.",
+    "causalExplanation": "Balanced coefficients compare amounts, not grams. Each species molar mass links mass and amount; different compositions explain why equal mole amounts need not have equal mass. Added oxygen and oxygen transferred to CO₂ preserve mass accounting.",
+    "conversationalApproach": "Open with a concrete mass surprise, explain why the relationships work, then compare a unit-ratio carbon case with a non-unit oxide case. Working carries repeated arithmetic; narration connects the stages and interprets the result. Numerical guard digits and exact supplied constants stay on stable boards; speech explains approximate amounts and the chemical relationship, then reports the final precision.",
+    "openingDecision": "About 44 g CO₂ from 12 g carbon: where did the extra mass come from? Include oxygen in the initial system rather than implying a conservation exception.",
+    "understandingCheck": "Reverse MgO-to-Mg task, using supplied atomic values and conditions. Text-only manifest separates prompt and answer; planned short silence is not yet measured. Final audio, captions and reveals must protect the attempt.",
+    "curriculumScope": "Reusable reacting-mass explanation. Cached course-content checklist provisionally associates 2025 ci47b34fec with problems combining stoichiometry and reacting masses, and legacy quantitative work. Complete action/scene equivalence is pending. This draft does not complete limiting supplies, yield/purity, concentration/gas integration or practical conduct."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "reuse",
+      "visualReference": "Existing HookSlide",
+      "teachingReason": "Make added oxygen mass a useful topic-specific surprise, without suggesting carbon creates matter.",
+      "narrationCue": "Estimated until fresh audio: Where did the extra mass come from?",
+      "motionPurpose": "A stable equation anchors the mass contrast; no unrelated artwork.",
+      "holdPurpose": "Keep carbon plus oxygen visible while explaining the system boundary."
+    },
+    {
+      "sceneId": "title",
+      "visualDecision": "reuse",
+      "visualReference": "Existing TitleSlide",
+      "teachingReason": "Name the task briefly after the concrete question.",
+      "narrationCue": "Estimated until fresh audio: Mass-to-mass stoichiometry",
+      "motionPurpose": "Short orientation; no long opening stinger.",
+      "holdPurpose": "Hold the title through its spoken phrase."
+    },
+    {
+      "sceneId": "concept",
+      "visualDecision": "adjust",
+      "visualReference": "chem11m2Pathway, MolePathwayDiagram.tsx",
+      "teachingReason": "Connect two mass conversions through an explicitly 1:1 amount relationship. Replace misleading default 3:6 piles with 3:3.",
+      "narrationCue": "Estimated until fresh audio: Carbon molar mass; equation connects moles; CO₂ own molar mass",
+      "motionPurpose": "Three packet movements cue the three relationships. This is a calculation schematic, not physical particles or a ban on combined expressions.",
+      "holdPurpose": "Labels and completed bridges remain visible for comparison."
+    },
+    {
+      "sceneId": "definition",
+      "visualDecision": "adjust",
+      "visualReference": "Existing DefinitionSlide",
+      "teachingReason": "State reaction/purity assumptions and distinguish prediction from recovery before numerical examples.",
+      "narrationCue": "Estimated until fresh audio: Complete combustion; pure oxide; theoretical mass",
+      "motionPurpose": "Three phrase-cued conditions, rather than decorative motion.",
+      "holdPurpose": "Leave conditions available while the narration qualifies the prediction."
+    },
+    {
+      "sceneId": "formula",
+      "visualDecision": "adjust",
+      "visualReference": "Existing ConceptSlide and phrase-cued bullets",
+      "teachingReason": "Show units and mathematical roles without reciting an unexplained checklist.",
+      "narrationCue": "Estimated until fresh audio: Divide known mass; wanted over known; finally wanted molar mass",
+      "motionPurpose": "Reveal each relationship when named. Combined expression is explicitly valid.",
+      "holdPurpose": "Keep prior relationships visible while the later one is introduced."
+    },
+    {
+      "sceneId": "worked-example",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "Separate short task, equation, supplied mass/constants and three stages. Show oxygen contribution after obtaining the mass.",
+      "narrationCue": "Estimated until fresh audio: Carbon molar mass; just under one mole; one-to-one amount; CO₂ includes oxygen; 44.0 g.",
+      "motionPurpose": "Estimated stepAts and per-line lineAts separate setup from results. Established trail retains useful amount relationships.",
+      "holdPurpose": "Stable result and equation support the added oxygen-mass interpretation."
+    },
+    {
+      "sceneId": "worked-example-2",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
+      "teachingReason": "Contrast non-unit mole scaling with a smaller product mass. Specify pure Fe₂O₃, not ore.",
+      "narrationCue": "Estimated until fresh audio: Oxide molar mass; just over half a mole; iron amount doubles to just over one mole; iron molar mass; 56.0 g.",
+      "motionPurpose": "Three stages with result-line estimates and retained trail. All arithmetic uses the unrounded expressions displayed.",
+      "holdPurpose": "Hold iron result while tracing oxygen into CO₂."
+    },
+    {
+      "sceneId": "misconception",
+      "visualDecision": "adjust",
+      "visualReference": "Existing MisconceptionSlide",
+      "teachingReason": "Use the two actual examples to disprove direct coefficient scaling of grams. Avoid unsupported marks claims.",
+      "narrationCue": "Estimated until fresh audio: One to one yet masses differ; one to two yet iron weighs less",
+      "motionPurpose": "Stable paired numerical contrasts carry the argument.",
+      "holdPurpose": "Read both comparisons and distinguish combined conversion from multiplying grams by coefficients alone."
+    },
+    {
+      "sceneId": "quick-check",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/shared/OrganisedCalculation.tsx and QuickCheckSlide",
+      "teachingReason": "Reverse known/wanted roles with a product mass, giving a genuine transfer task.",
+      "narrationCue": "Estimated until fresh audio: Separate prompt; assembled silence; MgO molar mass; just under half a mole; 2:2 amount; magnesium molar mass; 12.1 g.",
+      "motionPurpose": "Prompt and feedback are separate manifest segments. Estimated answerVisibleStart clamps all working, with later result line cues. No measured responseHold is claimed.",
+      "holdPurpose": "Planned two-second answer-free opportunity with invitation to pause. Must rebind to measured prompt/silence and rebuild captions."
+    },
+    {
+      "sceneId": "summary",
+      "visualDecision": "adjust",
+      "visualReference": "Existing SummarySlide",
+      "teachingReason": "State exactly what was completed and hand off to the limiting-supplies question.",
+      "narrationCue": "Estimated until fresh audio: Each own molar mass; coefficients in the middle; both supplies fixed next",
+      "motionPurpose": "Three concise takeaway points, no generic five-item recap or artwork quota.",
+      "holdPurpose": "Hold the explicit next boundary without claiming the next upload is already public."
+    }
+  ],
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Coordinating agent (independent of draft author)",
+    "evidence": {
+      "path": "docs/production/mass-to-mass-conversational-v1-recording-review.md",
+      "sha256": "ce28b0e10b0950fdb355b01b0e7a320ed29fd6d6f1037919224ded27ff5a6812"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "preparationEvidence": {
+    "path": "docs/production/mass-to-mass-conversational-v1-source-review-2026-10-09.md",
+    "kind": "author source check, independent review pending"
+  },
+  "limitation": "Independent science/script and selected static layout review passed for recording. Exact voiced preview, phone/caption checks and human listening remain pending."
+}

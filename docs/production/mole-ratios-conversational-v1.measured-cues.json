@@ -1,0 +1,172 @@
+{
+  "scenes": {
+    "hook": {
+      "reveals": {
+        "callout": "The equation gives us the relationship"
+      }
+    },
+    "title": {},
+    "concept": {
+      "bullets": [
+        "the numbers out front compare",
+        "The small two inside H two O"
+      ],
+      "reveals": {
+        "callout": "the same relationship becomes",
+        "secondary": "These drawings are a counting model"
+      },
+      "diagramBeats": {
+        "coef": "the numbers out front compare",
+        "molecules": "two hydrogen molecules one oxygen molecule",
+        "counts": "We can scale all those counts",
+        "ratio": "the same relationship becomes",
+        "sub": "The small two inside H two O",
+        "subLabel": "It describes each water molecule",
+        "dim": "Changing that small number"
+      }
+    },
+    "definition": {
+      "bullets": [
+        "The same atoms have to appear",
+        "We adjust the numbers",
+        "the coefficients can give us an amount ratio"
+      ],
+      "reveals": {
+        "callout": "The subscripts help us check"
+      }
+    },
+    "formula": {
+      "bullets": [
+        "six tenths of a mole of acid"
+      ],
+      "reveals": {
+        "secondary": "These crates are labelled mole amounts",
+        "callout": "without changing the recipe"
+      },
+      "diagramBeats": {
+        "ratio": "a two-to-one relationship",
+        "known": "Three tenths of a mole",
+        "wanted": "six tenths of a mole of acid",
+        "onTop": "Each mole of calcium hydroxide"
+      }
+    },
+    "worked-example": {
+      "reveals": {
+        "stepAts": [
+          "This iron example",
+          "Now compare iron",
+          "That's the relative number"
+        ]
+      },
+      "stageLines": {
+        "0": [
+          {
+            "text": "Fe: 4 = 2 × 2",
+            "cue": "four iron atoms"
+          },
+          {
+            "text": "O: 3 × 2 = 2 × 3",
+            "cue": "six oxygen atoms"
+          }
+        ],
+        "1": [
+          {
+            "text": "Fe : Fe₂O₃ = 4 : 2",
+            "cue": "Four to two"
+          }
+        ],
+        "2": [
+          {
+            "text": "Fe : Fe₂O₃ = 4 : 2 = 2 : 1",
+            "cue": "That's the relative number"
+          }
+        ]
+      }
+    },
+    "worked-example-2": {
+      "reveals": {
+        "stepAts": [
+          "The equation says twice",
+          "Multiplying by two over one",
+          "The required acid amount is"
+        ]
+      },
+      "stageLines": {
+        "0": [
+          {
+            "text": "HCl : Ca(OH)₂ = 2 : 1",
+            "cue": "twice the amount of acid"
+          }
+        ],
+        "1": [
+          {
+            "text": "n(HCl) = n(Ca(OH)₂) × (2 ÷ 1)",
+            "cue": "Multiplying by two over one"
+          }
+        ],
+        "2": [
+          {
+            "text": "n(HCl) = 0.300 × 2",
+            "cue": "The required acid amount is"
+          },
+          {
+            "text": "n(HCl) = 0.600 mol",
+            "cue": "zero point six zero zero moles"
+          }
+        ]
+      }
+    },
+    "misconception": {
+      "reveals": {
+        "body": "One is taking the little numbers",
+        "secondary": "A quick sense-check helps",
+        "callout": "The equation alone"
+      }
+    },
+    "quick-check": {
+      "reveals": {
+        "stepAts": [
+          "Water uses the two-to-two ratio",
+          "Oxygen uses one over two"
+        ]
+      },
+      "stageLines": {
+        "0": [
+          {
+            "text": "n(H₂O) = 4.00 × (2 ÷ 2)",
+            "cue": "Water uses the two-to-two ratio"
+          },
+          {
+            "text": "n(H₂O) = 4.00 mol",
+            "cue": "gives four point zero zero moles of water"
+          }
+        ],
+        "1": [
+          {
+            "text": "n(O₂) = 4.00 × (1 ÷ 2)",
+            "cue": "Oxygen uses one over two"
+          },
+          {
+            "text": "n(O₂) = 2.00 mol",
+            "cue": "two point zero zero moles"
+          }
+        ]
+      }
+    },
+    "summary": {
+      "reveals": {
+        "takeawayAts": [
+          "A balanced equation compares",
+          "The wanted coefficient divided",
+          "and a quick check"
+        ],
+        "finalPrompt": "Next we'll connect this amount"
+      }
+    }
+  },
+  "pilots": {
+    "diagram": "formula",
+    "worked": "worked-example-2",
+    "quiz": "quick-check"
+  }
+}

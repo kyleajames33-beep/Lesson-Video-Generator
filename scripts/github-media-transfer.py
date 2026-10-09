@@ -90,12 +90,16 @@ def join(record, folder):
 parser = argparse.ArgumentParser()
 parser.add_argument('command', choices=['split', 'join', 'download', 'download-continuation'])
 parser.add_argument('--directory', default='out/archives')
+parser.add_argument('--continuation', help='Exact continuation archive name; default is the latest snapshot.')
 args = parser.parse_args()
 record = json.loads(RECORD.read_text(encoding='utf-8'))
 folder = (ROOT / args.directory).resolve()
 folder.mkdir(parents=True, exist_ok=True)
 if args.command == 'download-continuation':
-    continuation = record['continuations'][-1]
+    matching = [item for item in record['continuations'] if item['name'] == args.continuation] if args.continuation else record['continuations'][-1:]
+    if len(matching) != 1:
+        raise RuntimeError('Unknown or duplicate continuation archive name.')
+    continuation = matching[0]
     file = folder / continuation['name']
     if not file.exists():
         subprocess.run(['gh', 'release', 'download', TAG, '--repo', REPO,

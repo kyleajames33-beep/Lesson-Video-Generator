@@ -2,9 +2,11 @@
 
 This is the starting point for a new computer or agent. The user asked to commit and push all work and continue the course without losing the accepted teaching changes. The repository contains the code, research, standards and course plans. A checked-in state archive restores ignored lesson drafts and review records. Audio, artwork and MP4s are available through the separate verified GitHub release backup described below.
 
-The next production lesson is **percentage composition and empirical formulas**. First finish the exact voiced-preview check of the latest **limiting-reagents clear-working layout**. Do not restart the scripts or replace the accepted voice takes. The current sources and pending checks are listed below.
+The current voiced review batch is **empirical formulas, mole ratios, mass-to-mass stoichiometry and limiting reactants**. The user requested continued preparation while delaying review. Start with [the latest batch record](docs/production/calculation-review-batch-2026-10-09.json) and [combined review](http://127.0.0.1:8778/calculation-batch-review-2026-10-09/). Yield/purity is the next source-preparation topic. Preserve existing selected takes and old evidence; listening and exact playback remain pending.
 
 ## Continuation on the current computer
+
+Latest selection: [the calculation batch report](docs/production/calculation-review-batch-2026-10-09.md) supersedes the earlier preparation states in the next paragraph. Mole ratios and mass-to-mass now each have eleven fresh takes, measured sources/captions, full listening audio and two technically verified short pilots. All human listening and exact playback review remains pending for the user's later combined review. The earlier narrative records the first continuation snapshot rather than the latest recording state.
 
 The user subsequently requested online media backup and continued production here. Read [the continuation review](docs/production/continuation-review-2026-10-09.md) before using the older lesson-state details below. The empirical script now has eleven fresh Simon v4 recordings, measured alignment and a new 321.1667-second voiced candidate at `out/prototypes/empirical-formulas-voiced-2026-10-09/narrated.lesson.json`. The original silent draft is preserved. The next mole-ratios source, portable script and independent science review are also prepared; its recording preparation and voiced review remain pending. Verified short limiting and empirical pilots plus complete empirical listening audio are available at http://127.0.0.1:8778/continuation-review-2026-10-09/. Continuous playback, actual-device/caption checks and human listening are still pending; no full export or publication approval is claimed.
 
@@ -32,8 +34,10 @@ npm ci
 python scripts/github-media-transfer.py download
 python scripts/transfer-workspace.py restore-state
 python scripts/transfer-workspace.py restore-media
-python scripts/github-media-transfer.py download-continuation
+python scripts/github-media-transfer.py download-continuation --continuation continuation-media-2026-10-09.zip
 python scripts/transfer-workspace.py restore-media out/archives/continuation-media-2026-10-09.zip
+python scripts/github-media-transfer.py download-continuation --continuation calculation-batch-media-2026-10-09.zip
+python scripts/transfer-workspace.py restore-media out/archives/calculation-batch-media-2026-10-09.zip
 npm run check:all
 node scripts/check-course-content-checklist.mjs
 node scripts/check-course-ledger.mjs

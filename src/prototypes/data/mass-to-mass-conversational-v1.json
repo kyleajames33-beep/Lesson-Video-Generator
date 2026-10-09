@@ -1,0 +1,486 @@
+{
+  "title": "Mass-to-mass stoichiometry",
+  "subtitle": "Same reacting amount does not mean the same mass",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 12",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "solve problems using mass-to-mass stoichiometric calculations based on balanced chemical equations"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": [
+    "CH11-9",
+    "CH11/12-4",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "What happens in chemical reactions?",
+  "lessonIntent": "Predict a theoretical reacting or product mass from a balanced equation, using each species molar mass and stated conditions.",
+  "examSkill": "Connect a known mass to mole amount, apply the wanted/known coefficient ratio and use the wanted species molar mass. Interpret the predicted mass.",
+  "productionRole": "production",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "backgroundMusicVolume": 0.08,
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "hook",
+      "durationInFrames": 876,
+      "caption": "Carbon dioxide includes mass from carbon and oxygen.",
+      "voiceover": {
+        "text": "Burn twelve grams of carbon and you can make about forty-four grams of carbon dioxide. That sounds like a very generous reaction. Where did the extra mass come from? The oxygen was part of the starting materials too. The carbon hasn't multiplied; its atoms have joined oxygen atoms. Today we'll work out that product mass, then try a reaction where the mole amounts change as well."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "body": 30
+      },
+      "heading": "12 g carbon. About 44 g carbon dioxide?",
+      "body": "C + O₂ → CO₂",
+      "callout": "Oxygen supplies the extra mass."
+    },
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 180,
+      "caption": "Mass-to-mass stoichiometry",
+      "voiceover": {
+        "text": "Mass-to-mass stoichiometry. Connecting the reaction's amounts to grams."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "body": 30
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "durationInFrames": 1272,
+      "caption": "A 1:1 mole ratio does not imply equal masses.",
+      "voiceover": {
+        "text": "From the last lesson, a balanced equation compares mole amounts. Here carbon and carbon dioxide are one for one in moles. But one mole of carbon dioxide includes oxygen, so it weighs more than one mole of carbon. That's why the one-to-one coefficients aren't a one-to-one mass ratio. Carbon's molar mass connects its grams to its moles. The equation then connects those moles to carbon dioxide moles. Carbon dioxide's own molar mass takes us back to grams. The moving packet marks a calculation step. These equal piles show the one-to-one amount relationship, not literal particles travelling across a bridge."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "body": 30
+      },
+      "heading": "One for one in moles, not grams",
+      "body": "C + O₂ → CO₂",
+      "bullets": [
+        {
+          "text": "Carbon grams → carbon moles",
+          "at": 20
+        },
+        {
+          "text": "The equation compares mole amounts",
+          "at": 23.6
+        },
+        {
+          "text": "CO₂ moles → CO₂ grams",
+          "at": 27.6
+        }
+      ],
+      "secondary": "Calculation model. Equal piles represent a 1:1 mole ratio, not literal particles.",
+      "callout": "Use the molar mass belonging to each species.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Pathway",
+        "delay": 30,
+        "props": {
+          "given": {
+            "icon": "mass",
+            "label": "m(C)",
+            "sub": "known mass"
+          },
+          "wanted": {
+            "icon": "mass",
+            "label": "m(CO₂)",
+            "sub": "wanted mass"
+          },
+          "inOp": "÷ M(C)",
+          "ratioOp": "× 1 ÷ 1",
+          "outOp": "× M(CO₂)",
+          "molesGiven": "n(C)",
+          "molesWanted": "n(CO₂)",
+          "piles": [
+            3,
+            3
+          ],
+          "trap": "Equal moles can have different masses",
+          "trapOn": "wanted",
+          "beats": {
+            "in": 570,
+            "ratio": 678,
+            "out": 798,
+            "trap": 918
+          }
+        }
+      }
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "durationInFrames": 1188,
+      "caption": "Predicted product mass depends on stated reaction and sample conditions.",
+      "voiceover": {
+        "text": "There is a condition hiding behind a product prediction: the stated reactant amount has to react completely by the equation we're using. For the carbon example, that means enough oxygen and complete combustion to carbon dioxide. For the iron example, we'll start with pure iron three oxide, rather than assuming a whole ore sample is pure oxide. The answer is a theoretical mass under those conditions. What we actually collect can be lower because the reaction or recovery isn't perfect. We'll deal with limiting supplies and measured yield in their own lessons."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "body": 30
+      },
+      "heading": "What does the prediction assume?",
+      "bullets": [
+        {
+          "text": "Complete reaction by the stated equation; enough other reactant.",
+          "at": 1
+        },
+        {
+          "text": "Use the mass of the pure reacting substance.",
+          "at": 15.2
+        },
+        {
+          "text": "Theoretical prediction and recovered product are different.",
+          "at": 23.6
+        }
+      ],
+      "callout": "State the conditions before interpreting the answer."
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "durationInFrames": 1272,
+      "caption": "Molar masses connect grams and moles. Coefficients connect mole amounts.",
+      "voiceover": {
+        "text": "If mass-to-mole conversion and mole ratios already make sense, this is where they meet. We divide the known mass by that substance's molar mass. The units become moles. We then multiply by the wanted coefficient over the known coefficient, because the equation compares amounts. Finally, the wanted substance's molar mass turns its moles into grams. Each end needs the molar mass of the substance at that end. The two numbers might happen to be equal; their identity still matters. You can combine the three relationships into one expression. Showing the mole pathway helps us see why that expression works."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "body": 30
+      },
+      "heading": "Three relationships, connected",
+      "body": "Known mass → known amount → wanted amount → wanted mass",
+      "bullets": [
+        {
+          "text": "n(known) = m(known) ÷ M(known)",
+          "at": 6.4
+        },
+        {
+          "text": "n(wanted) = n(known) × wanted coefficient ÷ known coefficient",
+          "at": 12
+        },
+        {
+          "text": "m(wanted) = n(wanted) × M(wanted)",
+          "at": 18.4
+        }
+      ],
+      "secondary": "A combined expression is valid when all three relationships are included.",
+      "callout": "Each species has its own molar mass, even if the values happen to match."
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "durationInFrames": 1596,
+      "caption": "The product includes the oxygen contribution.",
+      "voiceover": {
+        "text": "Let's put numbers on the carbon question. Twelve point zero grams of pure carbon burns completely, with enough oxygen. What carbon dioxide mass does the equation predict? Carbon's molar mass turns the given mass into an amount: just under one mole. That's an approximation for talking about the result; the calculation keeps the unrounded value. The equation gives one mole of carbon dioxide for each mole of carbon, so the product amount is the same. For the mass, we need carbon dioxide's own molar mass. It includes one carbon and two oxygens, not just the carbon we started with. Multiplying by that molar mass gives forty-four point zero grams, to three significant figures. About thirty-two grams came from oxygen. Counting both starting substances, mass is conserved."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "stepAts": [
+          348,
+          684,
+          924
+        ]
+      },
+      "heading": "Carbon dioxide from carbon",
+      "question": "Find the theoretical CO₂ mass.",
+      "coachNote": "Keep unrounded internal values. Final answer: three significant figures.",
+      "steps": [
+        "Convert carbon mass to amount",
+        "Apply the CO₂ : C amount ratio",
+        "Find the carbon dioxide mass"
+      ],
+      "calculationPresentation": {
+        "task": "Find the theoretical CO₂ mass",
+        "equation": "C + O₂ → CO₂",
+        "givens": [
+          {
+            "label": "Pure carbon",
+            "value": "12.0 g"
+          }
+        ],
+        "references": [
+          {
+            "label": "C",
+            "value": "12.011 g mol⁻¹"
+          },
+          {
+            "label": "O",
+            "value": "15.999 g mol⁻¹"
+          }
+        ],
+        "note": "Complete combustion with enough oxygen. Displayed intermediates are approximate; calculate with unrounded values.",
+        "stages": [
+          {
+            "label": "Known carbon amount",
+            "lines": [
+              "n(C) = 12.0 ÷ 12.011",
+              "n(C) ≈ 0.999084 mol"
+            ],
+            "summary": "Carbon amount ≈ 0.999084 mol",
+            "lineAts": [
+              348,
+              468
+            ]
+          },
+          {
+            "label": "Wanted carbon dioxide amount",
+            "lines": [
+              "CO₂ : C = 1 : 1",
+              "n(CO₂) = n(C) × (1 ÷ 1)"
+            ],
+            "summary": "CO₂ amount = carbon amount",
+            "lineAts": [
+              684,
+              840
+            ]
+          },
+          {
+            "label": "Wanted carbon dioxide mass",
+            "lines": [
+              "M(CO₂) = 12.011 + 2(15.999) = 44.009 g mol⁻¹",
+              "m(CO₂) = (12.0 ÷ 12.011) × 44.009",
+              "m(CO₂) ≈ 43.969 g → 44.0 g"
+            ],
+            "summary": "Theoretical CO₂ mass: 44.0 g",
+            "lineAts": [
+              1044,
+              1212,
+              1284
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "worked-example-2",
+      "type": "workedExample",
+      "durationInFrames": 1800,
+      "caption": "Pure oxide and complete reaction assumptions determine this prediction.",
+      "voiceover": {
+        "text": "Now the relationship really changes the amount. We have eighty point zero grams of pure iron three oxide and enough carbon monoxide for complete reaction by the displayed equation. How much iron does it predict? The oxide's own molar mass includes two irons and three oxygens. Dividing the sample mass by that gives just over half a mole of oxide. We'll keep the unrounded value in the calculation. One mole of oxide produces two moles of iron, so the iron amount doubles to just over one mole. Those are approximate mole amounts, not a claim that the iron mass doubles. Now iron's molar mass converts that wanted amount into grams. The predicted iron mass is fifty-six point zero grams, to three significant figures. It's less than the original oxide mass because the oxygen ends up in carbon dioxide, not in the iron product."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "stepAts": [
+          444,
+          840,
+          1224
+        ]
+      },
+      "heading": "Iron from pure oxide",
+      "question": "Find the theoretical iron mass.",
+      "coachNote": "Fe : Fe₂O₃ is 2:1 in mole amount. It is not a mass ratio.",
+      "steps": [
+        "Convert oxide mass to amount",
+        "Apply the Fe : Fe₂O₃ amount ratio",
+        "Find the iron mass"
+      ],
+      "calculationPresentation": {
+        "task": "Find the theoretical iron mass",
+        "equation": "Fe₂O₃ + 3CO → 2Fe + 3CO₂",
+        "givens": [
+          {
+            "label": "Pure Fe₂O₃",
+            "value": "80.0 g"
+          }
+        ],
+        "references": [
+          {
+            "label": "Fe",
+            "value": "55.845 g mol⁻¹"
+          },
+          {
+            "label": "O",
+            "value": "15.999 g mol⁻¹"
+          }
+        ],
+        "note": "Enough CO; complete reaction by this equation. Not the mass of an unspecified ore sample. Calculate with unrounded values.",
+        "stages": [
+          {
+            "label": "Known oxide amount",
+            "lines": [
+              "M(Fe₂O₃) = 2(55.845) + 3(15.999) = 159.687 g mol⁻¹",
+              "n(Fe₂O₃) = 80.0 ÷ 159.687 ≈ 0.500980 mol"
+            ],
+            "summary": "Oxide amount ≈ 0.500980 mol",
+            "lineAts": [
+              444,
+              660
+            ]
+          },
+          {
+            "label": "Wanted iron amount",
+            "lines": [
+              "Fe : Fe₂O₃ = 2 : 1",
+              "n(Fe) = n(Fe₂O₃) × (2 ÷ 1) ≈ 1.001960 mol"
+            ],
+            "summary": "Iron amount = twice the oxide amount",
+            "lineAts": [
+              840,
+              948
+            ]
+          },
+          {
+            "label": "Wanted iron mass",
+            "lines": [
+              "m(Fe) = (80.0 ÷ 159.687) × 2 × 55.845",
+              "m(Fe) ≈ 55.954 g → 56.0 g"
+            ],
+            "summary": "Theoretical iron mass: 56.0 g",
+            "lineAts": [
+              1224,
+              1404
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "durationInFrames": 1272,
+      "caption": "Coefficient ratios cannot be applied to grams alone.",
+      "voiceover": {
+        "text": "A useful check is to ask what your ratio is actually comparing. Carbon to carbon dioxide was one to one in moles, yet their masses differed. Oxide to iron was one to two in moles, yet the iron weighed less than the starting oxide. Multiplying the starting grams by the coefficients would miss both relationships. And a mass-to-mass expression isn't wrong just because it skips writing an intermediate line. It needs the correct species molar masses and the coefficient ratio. Keep unrounded values in the calculation, and round the final result to the precision supported by the supplied data."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "body": 30
+      },
+      "heading": "Coefficients compare amounts, not masses",
+      "body": "C : CO₂ = 1:1 in moles, yet 12.0 g C gives 44.0 g CO₂.",
+      "secondary": "Fe₂O₃ : Fe = 1:2 in moles, yet 80.0 g Fe₂O₃ gives 56.0 g Fe.",
+      "mistakeTag": "Check what the ratio compares",
+      "callout": "Use the correct species molar masses. Keep guard digits."
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "durationInFrames": 2004,
+      "caption": "Known: MgO mass. Wanted: Mg mass. Try the reverse calculation.",
+      "voiceover": {
+        "text": "Let's run the method backwards. What mass of pure magnesium must react completely to produce twenty point zero grams of magnesium oxide, with enough oxygen? The balanced equation and atomic values are supplied. Here the known substance is the product, magnesium oxide, and the wanted substance is magnesium. Pause here if you'd like to work through the two molar masses and the ratio. The known magnesium oxide includes magnesium and oxygen, so we use the oxide's own molar mass. Dividing twenty point zero grams by that gives just under half a mole. That's approximate; we'll keep the unrounded value in the calculation. Magnesium to magnesium oxide is two to two, so the required magnesium amount is the same. Now magnesium's own molar mass converts that amount into grams. Multiplying gives twelve point one grams of magnesium, to three significant figures. Less magnesium mass than product mass makes sense, because oxygen supplies the rest."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "pausePrompt": 30,
+        "answerVisibleStart": 840,
+        "stepAts": [
+          840,
+          1308,
+          1500
+        ],
+        "responseHoldStart": 780
+      },
+      "heading": "Run the calculation backwards",
+      "question": "Find the magnesium mass needed.",
+      "pausePrompt": "Pause here if you would like to work through the two molar masses and the ratio.",
+      "answerSteps": [
+        "Convert known MgO mass to amount",
+        "Compare Mg with MgO",
+        "Find the required magnesium mass"
+      ],
+      "calculationPresentation": {
+        "task": "Find the Mg mass needed to produce this MgO mass",
+        "equation": "2Mg + O₂ → 2MgO",
+        "givens": [
+          {
+            "label": "Target MgO",
+            "value": "20.0 g"
+          }
+        ],
+        "references": [
+          {
+            "label": "Mg",
+            "value": "24.305 g mol⁻¹"
+          },
+          {
+            "label": "O",
+            "value": "15.999 g mol⁻¹"
+          }
+        ],
+        "note": "Pure magnesium, enough oxygen and complete reaction to MgO. Report three significant figures.",
+        "stages": [
+          {
+            "label": "Known magnesium oxide amount",
+            "lines": [
+              "M(MgO) = 24.305 + 15.999 = 40.304 g mol⁻¹",
+              "n(MgO) = 20.0 ÷ 40.304 ≈ 0.496229 mol"
+            ],
+            "summary": "MgO amount ≈ 0.496229 mol",
+            "lineAts": [
+              972,
+              1128
+            ]
+          },
+          {
+            "label": "Wanted magnesium amount",
+            "lines": [
+              "Mg : MgO = 2 : 2 = 1 : 1",
+              "n(Mg) = n(MgO) × (2 ÷ 2)"
+            ],
+            "summary": "Required Mg amount = MgO amount",
+            "lineAts": [
+              1308,
+              1404
+            ]
+          },
+          {
+            "label": "Wanted magnesium mass",
+            "lines": [
+              "m(Mg) = (20.0 ÷ 40.304) × 24.305",
+              "m(Mg) ≈ 12.061 g → 12.1 g"
+            ],
+            "summary": "Required pure magnesium: 12.1 g",
+            "lineAts": [
+              1500,
+              1644
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "durationInFrames": 1056,
+      "caption": "Next: identify the limiting reactant when both starting supplies are known.",
+      "voiceover": {
+        "text": "We started with a mole ratio and connected it to mass. Each substance's own molar mass links its grams and moles; the balanced coefficients connect the two amounts in the middle. That explains both the larger carbon dioxide mass and the smaller iron mass, without creating or losing atoms. The method also runs backwards when a product amount is known. So far we've assumed enough of the other reactant. Next, limiting reactants asks what changes when both starting supplies are fixed."
+      },
+      "revealDelays": {
+        "heading": 15,
+        "body": 30,
+        "takeawayAts": [
+          156,
+          276,
+          396
+        ],
+        "finalPrompt": 852
+      },
+      "heading": "Amounts connect the two masses",
+      "points": [
+        "Use each substance’s molar mass to connect grams and moles.",
+        "Use balanced coefficients to connect the mole amounts.",
+        "Interpret the predicted mass under the stated conditions."
+      ],
+      "finalPrompt": "Next: both reactant supplies are fixed. Which one limits the reaction?"
+    }
+  ],
+  "introDurationInFrames": 0,
+  "syllabusNeutral": true
+}

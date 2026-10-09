@@ -1,0 +1,197 @@
+{
+  "scenes": {
+    "hook": {
+      "reveals": {
+        "callout": "The oxygen was part of the starting materials too"
+      }
+    },
+    "title": {},
+    "concept": {
+      "bullets": [
+        "Carbon's molar mass connects its grams",
+        "The equation then connects those moles",
+        "Carbon dioxide's own molar mass"
+      ],
+      "reveals": {
+        "secondary": "The moving packet marks a calculation step",
+        "callout": "Carbon dioxide's own molar mass"
+      },
+      "diagramBeats": {
+        "in": "Carbon's molar mass connects its grams",
+        "ratio": "The equation then connects those moles",
+        "out": "Carbon dioxide's own molar mass",
+        "trap": "These equal piles show the one-to-one amount relationship"
+      }
+    },
+    "definition": {
+      "bullets": [
+        "the stated reactant amount has to react completely",
+        "we'll start with pure iron three oxide",
+        "The answer is a theoretical mass"
+      ],
+      "reveals": {
+        "callout": "What we actually collect can be lower"
+      }
+    },
+    "formula": {
+      "bullets": [
+        "We divide the known mass",
+        "We then multiply by the wanted coefficient",
+        "Finally the wanted substance's molar mass"
+      ],
+      "reveals": {
+        "secondary": "You can combine the three relationships",
+        "callout": "The two numbers might happen to be equal"
+      }
+    },
+    "worked-example": {
+      "reveals": {
+        "stepAts": [
+          "Carbon's molar mass turns",
+          "The equation gives one mole",
+          "For the mass we need"
+        ]
+      },
+      "stageLines": {
+        "0": [
+          {
+            "text": "n(C) = 12.0 ÷ 12.011",
+            "cue": "Carbon's molar mass turns"
+          },
+          {
+            "text": "n(C) ≈ 0.999084 mol",
+            "cue": "just under one mole"
+          }
+        ],
+        "1": [
+          {
+            "text": "CO₂ : C = 1 : 1",
+            "cue": "The equation gives one mole"
+          },
+          {
+            "text": "n(CO₂) = n(C) × (1 ÷ 1)",
+            "cue": "so the product amount is the same"
+          }
+        ],
+        "2": [
+          {
+            "text": "M(CO₂) = 12.011 + 2(15.999) = 44.009 g mol⁻¹",
+            "cue": "It includes one carbon and two oxygens"
+          },
+          {
+            "text": "m(CO₂) = (12.0 ÷ 12.011) × 44.009",
+            "cue": "Multiplying by that molar mass gives"
+          },
+          {
+            "text": "m(CO₂) ≈ 43.969 g → 44.0 g",
+            "cue": "forty-four point zero grams"
+          }
+        ]
+      }
+    },
+    "worked-example-2": {
+      "reveals": {
+        "stepAts": [
+          "The oxide's own molar mass",
+          "One mole of oxide produces two moles of iron",
+          "Now iron's molar mass"
+        ]
+      },
+      "stageLines": {
+        "0": [
+          {
+            "text": "M(Fe₂O₃) = 2(55.845) + 3(15.999) = 159.687 g mol⁻¹",
+            "cue": "The oxide's own molar mass"
+          },
+          {
+            "text": "n(Fe₂O₃) = 80.0 ÷ 159.687 ≈ 0.500980 mol",
+            "cue": "just over half a mole of oxide"
+          }
+        ],
+        "1": [
+          {
+            "text": "Fe : Fe₂O₃ = 2 : 1",
+            "cue": "One mole of oxide produces two moles of iron"
+          },
+          {
+            "text": "n(Fe) = n(Fe₂O₃) × (2 ÷ 1) ≈ 1.001960 mol",
+            "cue": "so the iron amount doubles"
+          }
+        ],
+        "2": [
+          {
+            "text": "m(Fe) = (80.0 ÷ 159.687) × 2 × 55.845",
+            "cue": "Now iron's molar mass"
+          },
+          {
+            "text": "m(Fe) ≈ 55.954 g → 56.0 g",
+            "cue": "fifty-six point zero grams"
+          }
+        ]
+      }
+    },
+    "misconception": {
+      "reveals": {
+        "body": "Carbon to carbon dioxide was one to one",
+        "secondary": "Oxide to iron was one to two",
+        "callout": "Keep unrounded values in the calculation"
+      }
+    },
+    "quick-check": {
+      "reveals": {
+        "stepAts": [
+          "The known magnesium oxide includes",
+          "Magnesium to magnesium oxide is two to two",
+          "Now magnesium's own molar mass"
+        ]
+      },
+      "stageLines": {
+        "0": [
+          {
+            "text": "M(MgO) = 24.305 + 15.999 = 40.304 g mol⁻¹",
+            "cue": "so we use the oxide's own molar mass"
+          },
+          {
+            "text": "n(MgO) = 20.0 ÷ 40.304 ≈ 0.496229 mol",
+            "cue": "just under half a mole"
+          }
+        ],
+        "1": [
+          {
+            "text": "Mg : MgO = 2 : 2 = 1 : 1",
+            "cue": "Magnesium to magnesium oxide is two to two"
+          },
+          {
+            "text": "n(Mg) = n(MgO) × (2 ÷ 2)",
+            "cue": "the required magnesium amount is the same"
+          }
+        ],
+        "2": [
+          {
+            "text": "m(Mg) = (20.0 ÷ 40.304) × 24.305",
+            "cue": "Now magnesium's own molar mass"
+          },
+          {
+            "text": "m(Mg) ≈ 12.061 g → 12.1 g",
+            "cue": "twelve point one grams of magnesium"
+          }
+        ]
+      }
+    },
+    "summary": {
+      "reveals": {
+        "takeawayAts": [
+          "Each substance's own molar mass",
+          "the balanced coefficients connect",
+          "So far we've assumed enough"
+        ],
+        "finalPrompt": "Next limiting reactants asks"
+      }
+    }
+  },
+  "pilots": {
+    "diagram": "concept",
+    "worked": "worked-example-2",
+    "quiz": "quick-check"
+  }
+}

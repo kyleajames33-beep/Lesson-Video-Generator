@@ -29,7 +29,7 @@
       "sceneId": "hook",
       "visualDecision": "reuse",
       "visualReference": "Existing hook slide",
-      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "teachingReason": "Contrast H2:H2O with O2:H2O inside one equation so the selected pair, not a memorised fraction, determines the answer.",
       "narrationCue": "Proposed, estimated until fresh recording: One oxygen molecule for two water molecules: contrast which pair is being compared",
       "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
       "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
@@ -38,7 +38,7 @@
       "sceneId": "title",
       "visualDecision": "reuse",
       "visualReference": "Existing title slide",
-      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "teachingReason": "Name the calculation after the useful comparison, without a long introductory delay.",
       "narrationCue": "Proposed, estimated until fresh recording: Mole ratios: brief orientation",
       "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
       "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
@@ -47,7 +47,7 @@
       "sceneId": "concept",
       "visualDecision": "adjust",
       "visualReference": "Existing chem11m2CoefSub diagram",
-      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "teachingReason": "Keep formulas intact while entity groups and coefficient boxes establish the scalable 2:1:2 relationship. Shift attention to the subscript without implying it is the conversion ratio.",
       "narrationCue": "Proposed, estimated until fresh recording: Numbers out front; scale the counts; small two inside H₂O; counting-model limit",
       "motionPurpose": "Compare correct quantities in proportion; keep labels readable. Coefficient-only-moles label disabled in the selected diagram.",
       "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
@@ -56,7 +56,7 @@
       "sceneId": "definition",
       "visualDecision": "reuse",
       "visualReference": "Existing definition slide",
-      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "teachingReason": "Explain conserved atom totals as the reason for balancing while preserving individual formulas.",
       "narrationCue": "Proposed, estimated until fresh recording: Adjust the numbers of whole entities, keeping each formula intact",
       "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
       "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
@@ -65,7 +65,7 @@
       "sceneId": "formula",
       "visualDecision": "adjust",
       "visualReference": "Existing chem11m2Ratio diagram",
-      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "teachingReason": "Use labelled amount crates to make doubling from 0.300 to 0.600 mol visible. This is a formal equation model with solution ions explicitly omitted.",
       "narrationCue": "Proposed, estimated until fresh recording: Each mole of base needs two moles of acid; 0.300 and 0.600 mol relationship",
       "motionPurpose": "Compare correct quantities in proportion; keep labels readable. Coefficient-only-moles label disabled in the selected diagram.",
       "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
@@ -74,7 +74,7 @@
       "sceneId": "worked-example",
       "visualDecision": "reuse",
       "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
-      "teachingReason": "Check the conserved totals, identify the chosen coefficients and reduce their ratio in separate stages.",
+      "teachingReason": "Check conserved Fe/O totals first, then compare the selected coefficients and reduce their ratio. Keep earlier facts in a compact trail.",
       "narrationCue": "Proposed, estimated until fresh recording: Four Fe and six O on each side; now compare iron with iron three oxide",
       "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
       "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
@@ -83,7 +83,7 @@
       "sceneId": "worked-example-2",
       "visualDecision": "reuse",
       "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
-      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "teachingReason": "Separate the required acid task, balanced equation and given amount. Explain why wanted/known is 2/1 before evaluating the number.",
       "narrationCue": "Proposed, estimated until fresh recording: Twice the amount of acid; wanted/known 2/1; 0.600 mol",
       "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
       "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
@@ -92,7 +92,7 @@
       "sceneId": "misconception",
       "visualDecision": "reuse",
       "visualReference": "Existing misconception slide",
-      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "teachingReason": "Diagnose subscripts and an upside-down ratio using the reaction relationship, then bound predictions to the stated reactant assumptions.",
       "narrationCue": "Proposed, estimated until fresh recording: An acid answer half the base amount does not fit; state complete-reaction conditions",
       "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
       "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
@@ -101,7 +101,7 @@
       "sceneId": "quick-check",
       "visualDecision": "reuse",
       "visualReference": "src/slides/shared/OrganisedCalculation.tsx",
-      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "teachingReason": "Preserve the same hydrogen amount while asking for two different substances. Keep all answer working hidden during the separately assembled attempt.",
       "narrationCue": "Proposed, estimated until fresh recording: Prompt asks two ratios; planned silent attempt before water and oxygen calculations",
       "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
       "holdPurpose": "Planned two-second answer-free start gap with invitation to pause longer. Not yet measured."
@@ -110,16 +110,19 @@
       "sceneId": "summary",
       "visualDecision": "reuse",
       "visualReference": "Existing summary slide",
-      "teachingReason": "Explain the chosen entity/mole relationship while retaining formulas and supplied quantities.",
+      "teachingReason": "Close with selecting the known and wanted substances, then connect to the next lesson using each substance molar mass.",
       "narrationCue": "Proposed, estimated until fresh recording: Which substance do we know and want; next connect each amount to its mass",
       "motionPurpose": "Reveal one reasoning stage and keep useful established results.",
       "holdPurpose": "Hold formulas and given amounts long enough to compare the relationship."
     }
   ],
   "scriptReview": {
-    "status": "pending",
-    "reviewer": "",
-    "evidence": null
+    "status": "pass",
+    "reviewer": "Coordinating agent, supported by independent science/source review",
+    "evidence": {
+      "path": "docs/production/mole-ratios-conversational-v1-recording-review.md",
+      "sha256": "8522aabf284664b24ae011e7cc4ffe2aa67970e3f80b066690ba1cc7db52ee50"
+    }
   },
   "voicedPreview": {
     "status": "pending",
@@ -134,5 +137,5 @@
       "evidence": null
     }
   },
-  "limitation": "Unrecorded new script and layout draft. Exact source/science and visual review pending. No recording, export, listening or syllabus-completion approval."
+  "limitation": "Recording-stage source and static layout checks passed. All speech/cue times are estimated until fresh recording. Exact voiced playback and human listening remain pending."
 }
