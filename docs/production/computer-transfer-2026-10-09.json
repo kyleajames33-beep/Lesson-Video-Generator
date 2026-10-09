@@ -36,8 +36,8 @@
       }
     ],
     "releaseId": 407764183,
-    "verifiedAt": "2026-10-09T10:28:00Z",
-    "verification": "GitHub API uploaded state, size and SHA-256 digest match both expected part records.",
+    "verifiedAt": "2026-10-09T21:27:08Z",
+    "verification": "GitHub API uploaded state, size and SHA-256 digest match all seven expected immutable release assets.",
     "publishedAt": "2026-10-09T10:28:37Z"
   },
   "continuations": [
@@ -57,6 +57,26 @@
       "status": "published-verified",
       "verification": "GitHub API uploaded state, 357630898-byte size and SHA-256 digest match the local verified archive.",
       "scope": "Additive mole-ratios and mass-to-mass takes, measured sources/captions, four verified short pilots and combined review. Listening/full exports pending."
+    },
+    {
+      "name": "calculation-feedback-media-2026-10-10.zip",
+      "bytes": 569206176,
+      "sha256": "113192676ff0c48060ece5e1cc22e3274827119bccd524168f19814208b5cfd7",
+      "files": 725,
+      "status": "published-verified",
+      "scope": "Additive explicit-ratio/paced calculation revisions, four short pilots and full listening tracks; new exact playback/listening and full exports remain pending.",
+      "verifiedAt": "2026-10-09T21:27:08Z",
+      "verification": "GitHub API uploaded state, size and SHA-256 digest match the locally verified immutable archive. Contents restored into an isolated Git clone."
+    },
+    {
+      "name": "calculation-feedback-frames-2026-10-10.zip",
+      "bytes": 12690209,
+      "sha256": "68f9ad46310742ef6812364ac1457ccc3f014ddcb774d5b324a1f5e7b86a49f0",
+      "files": 27,
+      "status": "published-verified",
+      "scope": "Companion native decoded-frame evidence for the four paced pilots, referenced by the independent review; no continuous playback or listening approval.",
+      "verifiedAt": "2026-10-09T21:27:08Z",
+      "verification": "GitHub API uploaded state, size and SHA-256 digest match the locally verified immutable archive. Contents restored into an isolated Git clone."
     }
   ]
 }

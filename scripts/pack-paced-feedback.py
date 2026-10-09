@@ -41,7 +41,7 @@ for entry in spec['lessons']:
 review = ROOT / 'out/prototypes/calculation-batch-review-2026-10-10'
 files.update(file for file in review.rglob('*') if file.is_file())
 for file in (ROOT / 'out/prototypes/feedback-independent-reviews').glob('*'):
-    if file.is_file() and 'paced' in file.name and '2026-10-10' in file.name:
+    if file.is_file() and 'paced' in file.name and ('2026-10-10' in file.name or '-paced-pilot02-' in file.name):
         files.add(file)
 secrets = []
 for name in ['.env.local', '.env']:

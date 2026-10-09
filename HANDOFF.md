@@ -4,7 +4,7 @@ Latest steering, 10 October: finish/post the current chemistry batch, then prior
 
 This is the starting point for a new computer or agent. The user asked to commit and push all work and continue the course without losing the accepted teaching changes. The repository contains the code, research, standards and course plans. A checked-in state archive restores ignored lesson drafts and review records. Audio, artwork and MP4s are available through the separate verified GitHub release backup described below.
 
-The current voiced review batch is **empirical formulas, mole ratios, mass-to-mass stoichiometry and limiting reactants**. The user requested continued preparation while delaying review. Start with [the latest batch record](docs/production/calculation-review-batch-2026-10-09.json) and [combined review](http://127.0.0.1:8778/calculation-batch-review-2026-10-09/). Yield/purity is the next source-preparation topic. Preserve existing selected takes and old evidence; listening and exact playback remain pending.
+The current voiced review batch is **empirical formulas, mole ratios, mass-to-mass stoichiometry and limiting reactants**. Start with [the current feedback record](docs/production/calculation-feedback-2026-10-10.md) and [updated combined review](http://127.0.0.1:8778/calculation-batch-review-2026-10-10/). The four additive candidates show explicit coefficient fractions and use slightly gentler delivery for difficult passages. Original takes and the [earlier batch record](docs/production/calculation-review-batch-2026-10-09.json) remain historical evidence. Revised human listening and exact playback are pending. After finishing/posting this batch, proceed to Year 12 Module 5 in both subjects; yield/purity is deferred.
 
 ## Continuation on the current computer
 
@@ -14,7 +14,7 @@ The latest batch was also restored into a standalone fresh Git clone. All six se
 
 The user subsequently requested online media backup and continued production here. Read [the continuation review](docs/production/continuation-review-2026-10-09.md) before using the older lesson-state details below. The empirical script now has eleven fresh Simon v4 recordings, measured alignment and a new 321.1667-second voiced candidate at `out/prototypes/empirical-formulas-voiced-2026-10-09/narrated.lesson.json`. The original silent draft is preserved. The next mole-ratios source, portable script and independent science review are also prepared; its recording preparation and voiced review remain pending. Verified short limiting and empirical pilots plus complete empirical listening audio are available at http://127.0.0.1:8778/continuation-review-2026-10-09/. Continuous playback, actual-device/caption checks and human listening are still pending; no full export or publication approval is claimed.
 
-The online backup is published on a [dedicated GitHub release](https://github.com/kyleajames33-beep/Lesson-Video-Generator/releases/tag/workspace-media-2026-10-09), including both additive continuation snapshots. All five remote assets match their expected sizes and SHA-256 hashes. Use the [download/restore instructions](docs/production/github-media-backup-2026-10-09.md); a manual media copy is optional. The original local ZIP and checksum remain valid as an alternative.
+The online backup is published on a [dedicated GitHub release](https://github.com/kyleajames33-beep/Lesson-Video-Generator/releases/tag/workspace-media-2026-10-09), including all four additive continuation snapshots. All seven remote assets match their expected sizes and SHA-256 hashes. Use the [download/restore instructions](docs/production/github-media-backup-2026-10-09.md); a manual media copy is optional. The original local ZIP and checksum remain valid as an alternative.
 
 ## Move to the other computer
 
@@ -42,6 +42,10 @@ python scripts/github-media-transfer.py download-continuation --continuation con
 python scripts/transfer-workspace.py restore-media out/archives/continuation-media-2026-10-09.zip
 python scripts/github-media-transfer.py download-continuation --continuation calculation-batch-media-2026-10-09.zip
 python scripts/transfer-workspace.py restore-media out/archives/calculation-batch-media-2026-10-09.zip
+python scripts/github-media-transfer.py download-continuation --continuation calculation-feedback-media-2026-10-10.zip
+python scripts/transfer-workspace.py restore-media out/archives/calculation-feedback-media-2026-10-10.zip
+python scripts/github-media-transfer.py download-continuation --continuation calculation-feedback-frames-2026-10-10.zip
+python scripts/transfer-workspace.py restore-media out/archives/calculation-feedback-frames-2026-10-10.zip
 npm run check:all
 node scripts/check-course-content-checklist.mjs
 node scripts/check-course-ledger.mjs
@@ -66,7 +70,7 @@ npx remotion studio src/dev/release-entry.tsx --props=out/prototypes/limiting-cl
 
 For the current voiced empirical candidate, change the props path to `out/prototypes/empirical-formulas-voiced-2026-10-09/remotion-props.json` and use another free port, for example 8784. The older `empirical-formulas-organised-2026-10-09` draft remains deliberately silent historical evidence. The release entry's default composition is a placeholder, so always supply the selected props. Remotion running on the old computer does not remain available on the new one.
 
-Start the review server with `node scripts/serve-prototype-review.mjs`. Default local review address: http://127.0.0.1:8778/. Relevant restored pages include `/continuation-review-2026-10-09/`, `/calculation-layout-review-2026-10-09/`, `/video-syllabus-map-2026-10-09/` and `/limiting-conversational-2026-10-09/`. Inspect the server's output for its actual port. `node scripts/build-video-syllabus-view.mjs` can rebuild the searchable course view after restore.
+Start the review server with `node scripts/serve-prototype-review.mjs`. Default local review address: http://127.0.0.1:8778/. The current page is `/calculation-batch-review-2026-10-10/`. Earlier restored pages include `/continuation-review-2026-10-09/`, `/calculation-layout-review-2026-10-09/`, `/video-syllabus-map-2026-10-09/` and `/limiting-conversational-2026-10-09/`. Inspect the server's output for its actual port. `node scripts/build-video-syllabus-view.mjs` can rebuild the searchable course view after restore.
 
 ## Rules that must carry forward
 
