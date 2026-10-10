@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-10T09:46:02.428Z",
+  "scope": "Independent finite axis-clipping diagnostic; no source fix or release pass",
+  "source": {
+    "path": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceClearDiagram.tsx",
+    "sha256": "1a15eb52c937b3e1fd8335c1ab6bb7b363561c1ef98efdaaa7cae6d1973c87b6",
+    "matchesFrozen": true,
+    "modified": false
+  },
+  "pipeline": {
+    "script": "scripts/render-release.mjs",
+    "originalBundle": "out/prototypes/module5-c3-reference-2026-10-10/full-render-01/bundle",
+    "compositionId": "Lesson-release",
+    "codec": "h264",
+    "scale": 1,
+    "crf": 16,
+    "concurrency": 2,
+    "imageFormat": "jpeg renderer default",
+    "frameRange": [
+      1109,
+      2956
+    ],
+    "muted": true,
+    "enforceAudioTrack": false,
+    "timeoutInMilliseconds": 60000,
+    "audioMuxMastering": "Omitted: silent diagnostic only"
+  },
+  "findings": [
+    {
+      "test": "Current bundle isolated PNG and JPEG stills, original bundle isolated JPEG still2700",
+      "result": "Complete lower graph-axis glyphs; JPEG downscales480/960 complete."
+    },
+    {
+      "test": "Current bundle short video2700..2729, concurrency2",
+      "result": "Complete lower axis glyphs in first extracted frame."
+    },
+    {
+      "test": "Original full video-silent frame2700",
+      "result": "Clipped lower axis glyphs already present before audio mux/mastering."
+    },
+    {
+      "test": "Original bundle complete sequential Add A video1109..2956",
+      "result": "REPRODUCED clipping at original frame2700 (pilot offset1591 / 53.033333 seconds). Before/Add A/Model time lower portions clipped; A legend also partially clipped. Text paint bounds shift while plot geometry remains fixed."
+    }
+  ],
+  "conclusion": "Export-capture/sequential rendering defect reproduced. Isolated frame tests cannot clear the original export. Not explained by the SVG bottom viewBox edge: later footer at y593 is complete while labels y521 clip. Do not apply guessed viewBox padding. No source edits made.",
+  "nextInvestigation": "Explicit helper text keys failed. Keep original source and device/accessibility hold; diagnose sequential SVG/font paint behavior separately before authorising another candidate.",
+  "limitations": [
+    "No continuous video viewing or human listening performed.",
+    "Only extracted original-frame2700 compared from sequential pilot.",
+    "No full export/public release/coverage approval.",
+    "No frozen inputs or documentation changed."
+  ],
+  "artifacts": [
+    {
+      "path": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/axis-before-native960.png",
+      "sha256": "280f929c9c3ebb19d3335a9c989ee71cc092eac759fd052bec4cd9369b28dbc7"
+    },
+    {
+      "path": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/axis-before-native1920.png",
+      "sha256": "f4f7ee993ef02a2500236e0e291c81312277f06dd73c737c0494bad8a0dc52b2"
+    },
+    {
+      "path": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/axis-before-video-pilot.mp4",
+      "sha256": "6091ccb595422c81cea1333b4b8a04f7321492ffc65b97406d26b78ad0890bca"
+    },
+    {
+      "path": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/axis-before-video1920.png",
+      "sha256": "2c48da0a82745f66baf45dc2e5b296e5eb3629f7ba265d79526530560eeec07f"
+    },
+    {
+      "path": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/axis-original-bundle-still2700.jpg",
+      "sha256": "cdc601720a1bc03db6efb521828d743c4b67921515d972b4559a058f20aafcd5"
+    },
+    {
+      "path": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/axis-original-silent90.png",
+      "sha256": "d7d7dc38120993869a81d7cd682b173a4dc3c436f1924a09f9a3673f8ac6416c"
+    },
+    {
+      "path": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/axis-original-bundle-add-scene.mp4",
+      "sha256": "0f3f83143c9e2d14e7ec954f72e93cc015f2aadfaaccd12d1999d3335b07fa0b"
+    },
+    {
+      "path": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/axis-original-bundle-add2700.png",
+      "sha256": "f4076e914a82e79a9610347b0079ad4dfcc0e45a59f3a3b5a851c9a092a9c9fd"
+    }
+  ],
+  "candidateExperiment": {
+    "hypothesis": "Explicit stable React identity for helper SVG text may prevent stale paint bounds from node reuse.",
+    "change": "Single helper line key based on mode,x,y,size,anchor,label.",
+    "settings": {
+      "newBundle": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/axis-keyed-bundle",
+      "frameRange": [
+        1109,
+        2956
+      ],
+      "codec": "h264",
+      "scale": 1,
+      "crf": 16,
+      "concurrency": 2,
+      "imageFormat": "jpeg default",
+      "muted": true,
+      "enforceAudioTrack": false
+    },
+    "check": "npm run check passed",
+    "result": "FAILED: frame2700 lower Before/Add A/Model time glyphs and partial A legend remain clipped at1920,960,480. Explicit helper text identity does not resolve the reproduced sequential rendering defect.",
+    "action": "Reverted exact candidate line; source hash restored.",
+    "restoredSourceSha256": "1a15eb52c937b3e1fd8335c1ab6bb7b363561c1ef98efdaaa7cae6d1973c87b6",
+    "artifacts": [
+      {
+        "path": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/axis-keyed-add-scene.mp4",
+        "sha256": "024cbf55e667fb97a5126ad519995c25510b500e76e768e761135f0cbb5db77c"
+      },
+      {
+        "path": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/axis-keyed-add2700.png",
+        "sha256": "08f3e71e11a3a256a10fbede90416a5a1b8cb61f6af5bdbfe6ae924b2af2520a"
+      },
+      {
+        "path": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/axis-keyed-add2700-960.png",
+        "sha256": "024d2146c559f38149fc9aa82abb6ebd74ae679f2ccbbd6d0bddbb598c2f8041"
+      },
+      {
+        "path": "out/prototypes/module5-c3-reference-2026-10-10/technical-review/axis-keyed-add2700-480.png",
+        "sha256": "2d31a275fb1bb1bee86b4844558108c71fb650887d27926959f5e0d07d488bcb"
+      }
+    ],
+    "limitations": "No other modes tested; no source fix, voiced or export pass. No further capture authorized by this task."
+  }
+}
