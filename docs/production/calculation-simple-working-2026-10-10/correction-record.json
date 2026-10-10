@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "status": "Two P1 display corrections pass independent source/native checks. Exact voiced pilots available for continuous review and human listening.",
+  "preserved": "Recorded words, audio, captions, durations, holds, original reveal cues and all nonselected scenes. Earlier full exports and pinned runtimes remain historical evidence.",
+  "sources": [
+    {
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/limiting/narrated.lesson.json",
+      "sha256": "a05f3d2f43357cea376b2e1d956cffaaf0ca395ea81da8b016be6ee7e56cb1f2"
+    },
+    {
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/narrated.lesson.json",
+      "sha256": "50854468d743c26f40e137e6a07d61a1ba76886a5f8d97671447bb6bb83a34ef"
+    }
+  ],
+  "sharedSource": [
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "67600ae68f7879fd42b956af003a66f0c0e5b366e19527ffc9d41f26a0f64082"
+    },
+    {
+      "path": "src/slides/shared/OrganisedCalculation.tsx",
+      "sha256": "85b896120ec0cc40f27374cc83a78d94e4ab4f7f0a9263b0b0508103d2153e8d"
+    }
+  ],
+  "independentReview": {
+    "path": "docs/production/calculation-simple-working-review-2026-10-10.md",
+    "sha256": "8c3db8584cb8aaa9b1f85ec5a41bea3602bcede53499d668cbc6accecb79ad8e"
+  },
+  "nativeEvidence": {
+    "path": "out/prototypes/calculation-simple-working-2026-10-10/native/frames.json",
+    "sha256": "dd4864de477489484518b3e2bc56584ec4bd105337fbdaaa9c4d6ad20adebb94"
+  },
+  "markupCheck": {
+    "path": "docs/production/calculation-simple-working-2026-10-10/markup-check.json",
+    "sha256": "e039b3e6e6cc944f2b8ee9fcf01b4665c8aa578245867db09bee37f1cc35185b"
+  },
+  "pilotCheck": {
+    "path": "docs/production/calculation-simple-working-2026-10-10/pilot-check.json",
+    "sha256": "12db458a6b2a531136542c86e6455e7fbb20ad80ec4e183d0592c9f84b9ee7be"
+  },
+  "pilots": [
+    {
+      "key": "limiting",
+      "packagePath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/pilot-01",
+      "packageSha256": "b2ec1c4af50b2d91b65373a90cb1f6d79bbbe0be17b4927ce5dbd417e696117b",
+      "inputPackageSha256": "adbc352b632dbe145f31c8730345d0d5ce0d591246e2110a37c8c963e9bbc909",
+      "videoSha256": "eee9cb904988025481142ee80eb057df1c04bbf543855dc1ba59f8fb4ebdfbee",
+      "render": {
+        "entryPoint": "src/dev/release-entry.tsx",
+        "compositionId": "Lesson-release",
+        "codec": "h264",
+        "scale": 1,
+        "crf": 16,
+        "concurrency": 1,
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "frameRange": [
+          3524,
+          5712
+        ]
+      }
+    },
+    {
+      "key": "empirical-formulas",
+      "packagePath": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/pilot-01",
+      "packageSha256": "08a4d3d48e2ec1207a918b97656efa8bce6d55d0951bae20c73d496ca30c7ebf",
+      "inputPackageSha256": "afaf5986c535e8a21cfc4d68b6d6ba44fc1ac2c8c3f4ec86b24677d7c24b95bd",
+      "videoSha256": "a7f4f115a018cc97fdb7aa3297cc7b531117bffd98a34be91d9d889632291ddf",
+      "render": {
+        "entryPoint": "src/dev/release-entry.tsx",
+        "compositionId": "Lesson-release",
+        "codec": "h264",
+        "scale": 1,
+        "crf": 16,
+        "concurrency": 1,
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "frameRange": [
+          5342,
+          6483
+        ]
+      }
+    }
+  ],
+  "reviewPage": {
+    "url": "http://127.0.0.1:8778/calculation-simple-working-review-2026-10-10/",
+    "path": "out/prototypes/calculation-simple-working-review-2026-10-10/index.html",
+    "sha256": "fe44684d0674565a32aaffddbbd5a918a14a18156bf9011d39ddd2ba3995435d",
+    "builder": {
+      "path": "scripts/build-calculation-simple-working-review.py",
+      "sha256": "617f8401bad11469966957ee08c9f71fb64a65b9411d1ecc7a5f128088032122"
+    }
+  },
+  "remaining": [
+    "Human listening and exact continuous voiced review",
+    "Actual caption/control and device clearance",
+    "Separate P2 followups in the prior audit",
+    "New full-package export/release evidence before posting"
+  ],
+  "minimumRule": "Retain only previous results used in the current explanation. An omitted opt-in selection preserves historical defaults.",
+  "runtimePreservation": [
+    "out/checks/review-batch-byte-preserved-2026-10-09 @ 5ff1e4a2851193d4bad26750145592c1ae97d4bf",
+    "out/checks/module5-simple-working-v5-transfer-2026-10-10 @ dd6b120c48079cd0edbe240a624b8d711c1e885c"
+  ]
+}

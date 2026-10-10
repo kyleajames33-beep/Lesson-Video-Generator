@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "role": "Author source validation, not independent review",
+  "source": {
+    "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/lesson.json",
+    "sha256": "ef61ae0d2fdf7ac0dbff1db569b98f7f67b01a161c49752c36c4f695dda3133b"
+  },
+  "frozenOutputs": [
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/author-validation.json",
+      "sha256": "c8d741c880e246ca47a4c53012e730ad6e57f872cb4d6991b271c223910cb198"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/lesson.json",
+      "sha256": "ef61ae0d2fdf7ac0dbff1db569b98f7f67b01a161c49752c36c4f695dda3133b"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/narration-plan.json",
+      "sha256": "8275f54a701e697acdb45980a8a0f70e236d179ca533a1a9c4d6e047e88187cf"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/production-brief.json",
+      "sha256": "616d102506c2a6378e008d3cf3e2bfa959fab415fb8779db5638f5d7559cfdb9"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/remotion-props.json",
+      "sha256": "f8f0074b251b7de11691b9921644df310f9fe1ff141ec7616e520f9c42c32528"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/traceability.json",
+      "sha256": "e7cf8765338c6d6787ed19d1ceb1f5a6f9ba90ea02d62cfe20877f393faff0b7"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/visual-implementation-proposal.json",
+      "sha256": "96a4ecbbecdd21456b4f594c344183bfa43188cb803c6878c60f6d6ea53150ae"
+    }
+  ],
+  "inspectedRuntime": [
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "67600ae68f7879fd42b956af003a66f0c0e5b366e19527ffc9d41f26a0f64082",
+      "scope": "Read-only source reference, not frozen runtime/render capture"
+    },
+    {
+      "path": "src/slides/TitleSlide.tsx",
+      "sha256": "2ec14a707ccb019f7bb558c39631518a5402ff89653ed0c04aff43b94524dc6a",
+      "scope": "Read-only source reference, not frozen runtime/render capture"
+    },
+    {
+      "path": "src/slides/HookSlide.tsx",
+      "sha256": "7310b1665a522e12c07defd23f321656dd45d45e39c355108dc575d93f478873",
+      "scope": "Read-only source reference, not frozen runtime/render capture"
+    },
+    {
+      "path": "src/slides/ConceptSlide.tsx",
+      "sha256": "c77dd61bdae5a12de62cf0f64af13e842e1311e53f83c0b92ef3fb3070b08dd3",
+      "scope": "Read-only source reference, not frozen runtime/render capture"
+    },
+    {
+      "path": "src/animations/BulletReveal.tsx",
+      "sha256": "335259c068a369e53d27b4d626902090eed24f66a297e4d6b64d1dbb70b41576",
+      "scope": "Read-only source reference, not frozen runtime/render capture"
+    },
+    {
+      "path": "src/slides/WorkedExampleSlide.tsx",
+      "sha256": "b88bc5a76011adbd579c62ddf01a578b1d31678eedd7407acad6b5e5a2db0acf",
+      "scope": "Read-only source reference, not frozen runtime/render capture"
+    },
+    {
+      "path": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "sha256": "092554d51375d0272482857f46115e810c7a6c427aa38490cea826cb2698d46f",
+      "scope": "Read-only source reference, not frozen runtime/render capture"
+    },
+    {
+      "path": "src/slides/SummarySlide.tsx",
+      "sha256": "6aed4e82a19f808a237b9526f9490d699ab18405a10eca77501979342c922c06",
+      "scope": "Read-only source reference, not frozen runtime/render capture"
+    },
+    {
+      "path": "src/slides/diagrams/kinds/bio-y12-m5/FlowerDiagram.tsx",
+      "sha256": "749fa2399823f135c86cf9425c250878f09a0122533e5092fbc80bf6617c0640",
+      "scope": "Read-only source reference, not frozen runtime/render capture"
+    },
+    {
+      "path": "scripts/validate-lesson.mjs",
+      "sha256": "529732f8f3d5d39be8adc600c44b6bd921d4ec67f9c9f4c3dbe7608e9cef6251",
+      "scope": "Read-only source reference, not frozen runtime/render capture"
+    },
+    {
+      "path": "scripts/lib/production-brief.mjs",
+      "sha256": "41103eab0af214b43c8c78fc2ef0b9d7443f2b1eb194246acd54c7586a3bd72b",
+      "scope": "Read-only source reference, not frozen runtime/render capture"
+    }
+  ],
+  "checks": [
+    {
+      "command": [
+        "node",
+        "scripts/check-production-brief.mjs",
+        "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/production-brief.json",
+        "--stage=draft"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"ready\": true,\n  \"stage\": \"draft\",\n  \"blockers\": [],\n  \"pending\": [\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Script/source review: pending\"\n    },\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Exact voiced preview: pending\"\n    },\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Human listening: pending\"\n    }\n  ],\n  \"source\": {\n    \"lessonPath\": \"docs/production/drafts/module5-plants-beginner-selected-2026-10-10/lesson.json\",\n    \"lessonSha256\": \"ef61ae0d2fdf7ac0dbff1db569b98f7f67b01a161c49752c36c4f695dda3133b\"\n  },\n  \"limitation\": \"Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval.\"\n}\n",
+      "stderr": "(node:18240) ExperimentalWarning: Importing JSON modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/validate-lesson.mjs",
+        "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/lesson.json"
+      ],
+      "exitCode": 0,
+      "stdout": "\nC:\\lesson-video-generator\\docs\\production\\drafts\\module5-plants-beginner-selected-2026-10-10\\lesson.json\n  warning: root: consider adding \"syllabusDotPoints\" (syllabus coverage tracking)\n  warning: scene[1] (b3-hook): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[2] (b3-flower): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[3] (b3-delivery): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[4] (b3-seed): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[5] (b3-runner): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[6] (b3-self-cross): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[7] (b3-worked): consider adding \"coachNote\" (target/method decision)\n  warning: scene[8] (b3-conditions): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[10] (b3-check-feedback): consider adding \"coachNote\" (target/method decision)\n  warning: lesson should include a \"quickCheck\" scene\n  warning: lesson should include a \"misconception\" scene\n",
+      "stderr": ""
+    }
+  ],
+  "warningsDisposition": "Structural validation has no errors. Generic suggestions for more callouts, coach notes, quickCheck and misconception scene types are not feature quotas. The conceptual prompt and separate feedback deliberately preserve an answer-free planned response boundary. Syllabus association and open actions are in the exact traceability record, without claiming completed coverage.",
+  "scopeLimits": [
+    "No rendered frame or device fit observed for this selected source.",
+    "No fresh voice, captions, measured hold or actual listening.",
+    "Essential spatial integrations remain explicitly blocked; existing boards are stable supported source candidates.",
+    "No shared sources, prior preparations, media, route, ledger or gates changed."
+  ],
+  "pending": [
+    "Different exact selected-source review",
+    "Root decision and integration of essential spatial explanations",
+    "Native/narrow caption and controls observations",
+    "Recording-stage brief review",
+    "Fresh voice, measured alignment and silence",
+    "Exact voiced preview, human listening and downstream export/release gates"
+  ]
+}

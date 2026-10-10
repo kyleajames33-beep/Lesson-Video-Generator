@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "author": "Sol 6.1 /root/bio_b2_independent_review_sol, author role for these candidates",
+  "date": "2026-10-10",
+  "scope": "Additive selected P1 display-only correction. No narration, captions, audio, durations or response holds changed.",
+  "baselineRuntimeToPreserve": "out/checks/review-batch-byte-preserved-2026-10-09 @ 5ff1e4a2851193d4bad26750145592c1ae97d4bf",
+  "audit": {
+    "path": "docs/production/calculation-beginner-reading-audit-2026-10-10.md",
+    "sha256": "50937f81b8a4b051a9ccf690657ffe2fb827c9bbe7546767a72f76d04643b856"
+  },
+  "schemaContract": {
+    "stage.retainedStageIndexes": "Optional zero-based prior stage indexes. Omitted retains old all-prior default, [] clears trail.",
+    "stage.phases": "Optional ordered scene-local {at,label,lines,lineAts?,retainedStageIndexes?}. Latest phase at or before frame. Entrance clamped to original stage cue; current card opacity remains based on original stage cue. Phase retention inherits stage selection if omitted.",
+    "retainedLineTiming": "Phase can repeat original lineAts for retained equations; their opacity must not restart on phase changes.",
+    "focusedContext": "Not used. Original givens and numerical constants retained."
+  },
+  "packages": [
+    {
+      "key": "limiting",
+      "selectedSceneId": "worked-example-2",
+      "parent": {
+        "path": "out/prototypes/limiting-paced-2026-10-10/narrated.lesson.json",
+        "sha256": "96fedf688aef15f7e3785ff7c78b1f3a04675a8eb93d8edd9c832e45f807d91a",
+        "briefPath": "docs/production/calculation-export-briefs-2026-10-10/limiting/production-brief.json",
+        "briefSha256": "e8569ea2a428067658575e268a9980aa190415b8390b758ed2251fc8810035bc"
+      },
+      "candidate": {
+        "trackedPath": "docs/production/calculation-simple-working-2026-10-10/limiting/lesson.json",
+        "path": "out/prototypes/calculation-simple-working-2026-10-10/limiting/narrated.lesson.json",
+        "sha256": "a05f3d2f43357cea376b2e1d956cffaaf0ca395ea81da8b016be6ee7e56cb1f2",
+        "propsPath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/remotion-props.json",
+        "propsSha256": "e020d09a38d72989bdd5562ccc3900e7bab84cdef7a4fbe191ea095a8331bf6e",
+        "briefPath": "docs/production/calculation-simple-working-2026-10-10/limiting/production-brief.json",
+        "briefSha256": "61f71123adb764267a6c2105f88c3aaedbab3da53cee578fc6609625c8d98c5d",
+        "configPath": "docs/production/calculation-simple-working-2026-10-10/limiting/pilot-config.json",
+        "configSha256": "32e282ca3e263c48ed7dee441257dc011e94265fedf18d99767ee7ce478c76a9"
+      },
+      "selectedAudio": {
+        "path": "public/audio/assembled/worked-example-2.b280f3d68627f9743abb.f00d343bc44e.wav",
+        "sha256": "c4695c5d68159eb1aac42a8f1f2597c633cca523e90f83cae7af696006da1d3b",
+        "alignmentPath": "public/audio/assembled/worked-example-2.b280f3d68627f9743abb.f00d343bc44e.alignment.json",
+        "alignmentSha256": "b1e96a8d5589db6fa3458c62274b0733eb06c6d506e486746688066f1b80e4f1",
+        "localVoiceoverStartFrame": 0,
+        "localVoiceoverEndFrame": 2150,
+        "alignmentCharactersMatchExactVoiceoverText": true,
+        "sceneWordCaptionsConcatenateToSameText": true
+      },
+      "stageRetainedIndexes": [
+        [],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        []
+      ],
+      "cueDerivations": [
+        {
+          "phrase": "What's left",
+          "characterSpan": [
+            842,
+            853
+          ],
+          "startSeconds": 59.319148936170215,
+          "endSeconds": 60,
+          "at": 1780,
+          "method": "ceil(actual assembled character start seconds * 30); scene-local, no extra tempo scaling or offset"
+        },
+        {
+          "phrase": "four point five eight",
+          "characterSpan": [
+            896,
+            917
+          ],
+          "startSeconds": 63.14893617021277,
+          "endSeconds": 64.25531914893617,
+          "at": 1895,
+          "method": "ceil(actual assembled character start seconds * 30); scene-local, no extra tempo scaling or offset"
+        },
+        {
+          "phrase": "these final masses",
+          "characterSpan": [
+            969,
+            987
+          ],
+          "startSeconds": 68.17021276595744,
+          "endSeconds": 69.19148936170214,
+          "at": 2046,
+          "method": "ceil(actual assembled character start seconds * 30); scene-local, no extra tempo scaling or offset"
+        }
+      ],
+      "cueRationale": "1894 was a rounded word-cue proposal, corrected to ceiling1895. Earlier1977 matched The working, but final recap now uses the more specific these final masses2046. Values have already been spoken; both final-result labels appear together as a recap.",
+      "sceneStartFrame": 3524,
+      "pilotFrameRange": [
+        3524,
+        5712
+      ],
+      "pilotRangeNote": "Complete original scene interval, including its existing overlap with the incoming next-scene transition. No timeline shortening.",
+      "changedPaths": [
+        "/scenes/4/calculationPresentation/note",
+        "/scenes/4/calculationPresentation/stages/0/retainedStageIndexes",
+        "/scenes/4/calculationPresentation/stages/1/retainedStageIndexes",
+        "/scenes/4/calculationPresentation/stages/2/retainedStageIndexes",
+        "/scenes/4/calculationPresentation/stages/3/retainedStageIndexes",
+        "/scenes/4/calculationPresentation/stages/4/phases",
+        "/scenes/4/calculationPresentation/stages/4/retainedStageIndexes"
+      ],
+      "assertedInvariants": {
+        "allRecordedWordsAudioCaptionRecordsPreserved": true,
+        "allSceneDurationsHoldsExistingRevealCuesPreserved": true,
+        "allNonselectedScenesDeepEqual": true,
+        "originalGivensReferencesPreserved": true,
+        "trackedAndOutLessonBytesEqual": true,
+        "onlySelectedPresentationChanged": true
+      },
+      "status": "author-source-prepared-independent-review-and-native-pilot-pending"
+    },
+    {
+      "key": "empirical-formulas",
+      "selectedSceneId": "molecular-extension",
+      "parent": {
+        "path": "out/prototypes/empirical-formulas-paced-2026-10-10/narrated.lesson.json",
+        "sha256": "92611f178fba8dce8f4c37e86354a266583862ad0c4ff8c19bafc98503af0776",
+        "briefPath": "docs/production/calculation-export-briefs-2026-10-10/empirical-formulas/production-brief.json",
+        "briefSha256": "225b3f6a637bc1a8bdf69b69f68df17b589c88967b051782b8a73c8850f800d2"
+      },
+      "candidate": {
+        "trackedPath": "docs/production/calculation-simple-working-2026-10-10/empirical-formulas/lesson.json",
+        "path": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/narrated.lesson.json",
+        "sha256": "50854468d743c26f40e137e6a07d61a1ba76886a5f8d97671447bb6bb83a34ef",
+        "propsPath": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/remotion-props.json",
+        "propsSha256": "d4b256789904167f06f469da5f54cc36d316707bd8d6d2465cd56f2ad0609b04",
+        "briefPath": "docs/production/calculation-simple-working-2026-10-10/empirical-formulas/production-brief.json",
+        "briefSha256": "8707ca426ecf0c7f8621048532cc3c0f59b49cb89e60915d419fcd7d9e3a2a02",
+        "configPath": "docs/production/calculation-simple-working-2026-10-10/empirical-formulas/pilot-config.json",
+        "configSha256": "1310d7dd5207455d26f105f5df9a64d6ef1d156c1c432a58e2db9b60a4fddf33"
+      },
+      "selectedAudio": {
+        "path": "public/audio/assembled/molecular-extension.ada0b412f64231becf25.3049cfc0f386.wav",
+        "sha256": "cf1ce0a63d42dc8011e177fb36f16d4cade3dba71caa38651c526f881a793566",
+        "alignmentPath": "public/audio/assembled/molecular-extension.ada0b412f64231becf25.3049cfc0f386.alignment.json",
+        "alignmentSha256": "ba208c2d0b0345c654fae451689d94f06abd18436478fe05cc69bca07d11d317",
+        "localVoiceoverStartFrame": 0,
+        "localVoiceoverEndFrame": 1103,
+        "alignmentCharactersMatchExactVoiceoverText": true,
+        "sceneWordCaptionsConcatenateToSameText": true
+      },
+      "stageRetainedIndexes": [
+        [],
+        [],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "cueDerivations": [
+        {
+          "phrase": "but the formula alone doesn't prove the substance is glucose.",
+          "characterSpan": [
+            385,
+            446
+          ],
+          "startSeconds": 29.659574468085108,
+          "endSeconds": 33.87234042553192,
+          "at": 890,
+          "method": "ceil(actual assembled character start seconds * 30); scene-local, no extra tempo scaling or offset"
+        },
+        {
+          "phrase": "arranged still matters",
+          "characterSpan": [
+            467,
+            489
+          ],
+          "startSeconds": 34.8936170212766,
+          "endSeconds": 36.59574468085106,
+          "at": 1047,
+          "method": "ceil(actual assembled character start seconds * 30); scene-local, no extra tempo scaling or offset"
+        }
+      ],
+      "cueRationale": "Identity-stage890 is inherited and equals the aligned start of but; formula alone begins899. The cue uses the full caution phrase, not an invented word offset. Earlier1019 matched How those atoms, while new arrangement phase uses specific arranged still matters1047. Glucose qualification stays on board during the first caution phase and unchanged in audio/captions throughout.",
+      "sceneStartFrame": 5342,
+      "pilotFrameRange": [
+        5342,
+        6483
+      ],
+      "pilotRangeNote": "Complete original scene interval, including its existing overlap with the incoming next-scene transition. No timeline shortening.",
+      "changedPaths": [
+        "/scenes/6/calculationPresentation/note",
+        "/scenes/6/calculationPresentation/stages/0/retainedStageIndexes",
+        "/scenes/6/calculationPresentation/stages/1/retainedStageIndexes",
+        "/scenes/6/calculationPresentation/stages/2/retainedStageIndexes",
+        "/scenes/6/calculationPresentation/stages/3/retainedStageIndexes",
+        "/scenes/6/calculationPresentation/stages/4/phases",
+        "/scenes/6/calculationPresentation/stages/4/retainedStageIndexes"
+      ],
+      "assertedInvariants": {
+        "allRecordedWordsAudioCaptionRecordsPreserved": true,
+        "allSceneDurationsHoldsExistingRevealCuesPreserved": true,
+        "allNonselectedScenesDeepEqual": true,
+        "originalGivensReferencesPreserved": true,
+        "trackedAndOutLessonBytesEqual": true,
+        "onlySelectedPresentationChanged": true
+      },
+      "status": "author-source-prepared-independent-review-and-native-pilot-pending"
+    }
+  ],
+  "newBoardCopyIsRecordedSpeech": false,
+  "paidVoiceCalls": 0,
+  "rendersCreated": 0,
+  "independentReviewStatus": "pending-different-reviewer",
+  "pending": [
+    "Shared opt-in implementation and exact source review",
+    "Native phase boundary and settled-frame checks, left note glyph endings and right panels against conservative y850 caption reserve",
+    "Exact voiced selected pilots and browser caption/controls checks",
+    "Human listening, device/continuous review and new export-stage gate",
+    "New complete exports and full-package/public-release gates"
+  ],
+  "limitation": "Author invariant comparison and actual character alignment inspection only. No own independent pass, native fit, listening, motion or learner-effectiveness approval."
+}

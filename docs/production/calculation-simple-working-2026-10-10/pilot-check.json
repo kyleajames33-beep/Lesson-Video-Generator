@@ -1,0 +1,94 @@
+[
+  {
+    "key": "limiting",
+    "packagePath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/pilot-01",
+    "packageSha256": "b2ec1c4af50b2d91b65373a90cb1f6d79bbbe0be17b4927ce5dbd417e696117b",
+    "inputPackageSha256": "adbc352b632dbe145f31c8730345d0d5ce0d591246e2110a37c8c963e9bbc909",
+    "videoSha256": "eee9cb904988025481142ee80eb057df1c04bbf543855dc1ba59f8fb4ebdfbee",
+    "snapshotVerification": {
+      "valid": true,
+      "packageSha256": "b2ec1c4af50b2d91b65373a90cb1f6d79bbbe0be17b4927ce5dbd417e696117b",
+      "changes": [],
+      "missingRequired": []
+    },
+    "render": {
+      "entryPoint": "src/dev/release-entry.tsx",
+      "compositionId": "Lesson-release",
+      "codec": "h264",
+      "scale": 1,
+      "crf": 16,
+      "concurrency": 1,
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frameRange": [
+        3524,
+        5712
+      ]
+    },
+    "frames": [
+      {
+        "localFrame": 1796,
+        "globalFrame": 5320,
+        "path": "out/prototypes/calculation-simple-working-2026-10-10/decoded/limiting-1796.png",
+        "sha256": "3d01878ae6a56ff64eb235b83b01047ddd693e7ad56ef646b15f4ff578b4d127"
+      },
+      {
+        "localFrame": 1911,
+        "globalFrame": 5435,
+        "path": "out/prototypes/calculation-simple-working-2026-10-10/decoded/limiting-1911.png",
+        "sha256": "30d72f3eedb5f72baa1ecd8e3088e367c68e3ec02dc9d3b0b1a0c85e6380a38f"
+      },
+      {
+        "localFrame": 2062,
+        "globalFrame": 5586,
+        "path": "out/prototypes/calculation-simple-working-2026-10-10/decoded/limiting-2062.png",
+        "sha256": "020c859e546069c5b9f2143c075a22e1173b1ea21508cc52a0b5b380b3011492"
+      }
+    ],
+    "scope": "Exact pilot dependency verification and sampled decoded output. No continuous playback, caption/player observations, device or human listening pass."
+  },
+  {
+    "key": "empirical-formulas",
+    "packagePath": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/pilot-01",
+    "packageSha256": "08a4d3d48e2ec1207a918b97656efa8bce6d55d0951bae20c73d496ca30c7ebf",
+    "inputPackageSha256": "afaf5986c535e8a21cfc4d68b6d6ba44fc1ac2c8c3f4ec86b24677d7c24b95bd",
+    "videoSha256": "a7f4f115a018cc97fdb7aa3297cc7b531117bffd98a34be91d9d889632291ddf",
+    "snapshotVerification": {
+      "valid": true,
+      "packageSha256": "08a4d3d48e2ec1207a918b97656efa8bce6d55d0951bae20c73d496ca30c7ebf",
+      "changes": [],
+      "missingRequired": []
+    },
+    "render": {
+      "entryPoint": "src/dev/release-entry.tsx",
+      "compositionId": "Lesson-release",
+      "codec": "h264",
+      "scale": 1,
+      "crf": 16,
+      "concurrency": 1,
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frameRange": [
+        5342,
+        6483
+      ]
+    },
+    "frames": [
+      {
+        "localFrame": 906,
+        "globalFrame": 6248,
+        "path": "out/prototypes/calculation-simple-working-2026-10-10/decoded/empirical-formulas-906.png",
+        "sha256": "7ed0287464902ffe07ff3ad1077c10d87f195eb5698e3c6e9f42b98c569814d0"
+      },
+      {
+        "localFrame": 1063,
+        "globalFrame": 6405,
+        "path": "out/prototypes/calculation-simple-working-2026-10-10/decoded/empirical-formulas-1063.png",
+        "sha256": "161ba0226635bb70345f839391c972c8bd2bab1fabac468dacd712a95dfbc704"
+      }
+    ],
+    "scope": "Exact pilot dependency verification and sampled decoded output. No continuous playback, caption/player observations, device or human listening pass."
+  }
+]

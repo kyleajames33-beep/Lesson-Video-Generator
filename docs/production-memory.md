@@ -20,6 +20,23 @@
   rederived captions/cues. Unrecorded next scripts can receive these beginner
   bridges before their first narration. Exact preview, listening and full
   release evidence remain separate.
+- The selected limiting and molecular-formula P1 corrections use optional
+  `retainedStageIndexes` and alignment-derived `phases` in the standard
+  organised calculation board. Keep a repeated line's original cue when a
+  later line appears, so useful working stays stable. These fields currently
+  belong to `OrganisedCalculation`; the separate `module5Evidence` renderer
+  uses its supported `focusedContext` path. Review actual consumers before
+  selecting an interface. See the exact calculation simple-working record.
+- Compute every response boundary with `lessonTimeline` and the actual
+  renderer's 24-frame overlap. A separate feedback scene needs sufficient
+  trailing frames for its transition to begin after the protected hold.
+  Record unvoiced response intervals as estimates in the narration plan.
+  Measure and rebuild them after recording. The plant revision caught an
+  ignored transition override that would have disclosed feedback early.
+- Check paused native captions together with controls. The calculation
+  review page regenerates separate positioned VTT tracks with unchanged
+  words and timestamps. Production and YouTube behaviour need their own
+  complete-package checks; original caption artifacts remain preserved.
 
 ## 10 October: selected-source integration and accepted calculation review
 

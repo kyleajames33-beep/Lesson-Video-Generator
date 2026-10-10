@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "Codex Sol 6.1 independent read-only follow-up",
+  "status": "pass-source-overlap-boundary-only",
+  "scope": "Actual lessonTimeline invocation and same-scene answer source gates. Silent estimates only, no measured media/native/listening approval.",
+  "preservedReviews": [
+    {
+      "path": "docs/production/module5-c3-beginner-selected-review-2026-10-10.md",
+      "sha256": "80244f5debd27dfbb4980ac4afc56775764c35cd7a89a8cf8e30be84003f2e09"
+    },
+    {
+      "path": "docs/production/module5-c3-beginner-selected-review-findings-2026-10-10.json",
+      "sha256": "290c821185e6648b0f95fffcca757491f43cf61aa5900c959b8e892e7ff384e4"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/lesson.json",
+      "sha256": "8e6c7bdeaabda0d37c5ccff2a3db0cb4a11c2104db61c478269205dad1a003ba"
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/narration-plan.json",
+      "sha256": "c62ddce9274148804a62e26f4904c30365f8bd7f83bb44ca8e4a2b404b89b79a"
+    },
+    {
+      "path": "src/lesson/timeline.mjs",
+      "sha256": "6a397f94d35765d17972ed4519f51d9eea60ab1385e2a663c48a0e2842851512"
+    },
+    {
+      "path": "src/lesson/timing-constants.json",
+      "sha256": "c34b61a31cadec788dfee08495e51e16a40cedc2a276c9580b48f2c989285b57"
+    },
+    {
+      "path": "src/lesson/answer-timing.mjs",
+      "sha256": "3ddcab52b4b0a33cc404dd0c60c0d31c35c926ff0caec410a5c72605e7e54656"
+    }
+  ],
+  "runtimeTransitionFrames": 24,
+  "unsupportedTransitionDurationInFramesPresentInLessonOrProps": false,
+  "results": [
+    {
+      "sceneId": "c3-transfer-a",
+      "sceneStartFrame": 11375,
+      "sceneEndExclusive": 13561,
+      "holdLocal": [
+        720,
+        1080
+      ],
+      "holdGlobal": [
+        12095,
+        12455
+      ],
+      "ownAnswerFadeStart": 1080,
+      "firstOwnStage": 1093,
+      "nextScene": "c3-transfer-b",
+      "nextSceneStartGlobal": 13537,
+      "nextSceneStartLocal": 2162,
+      "clearanceAfterHoldFrames": 1082
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "sceneStartFrame": 13537,
+      "sceneEndExclusive": 15544,
+      "holdLocal": [
+        849,
+        1209
+      ],
+      "holdGlobal": [
+        14386,
+        14746
+      ],
+      "ownAnswerFadeStart": 1209,
+      "firstOwnStage": 1222,
+      "nextScene": "c3-summary",
+      "nextSceneStartGlobal": 15520,
+      "nextSceneStartLocal": 1983,
+      "clearanceAfterHoldFrames": 774
+    }
+  ],
+  "conclusion": "No equivalent plant overlap defect in frozen C3. Both entire planned response intervals finish well before the incoming next-scene transition. Same-scene feedback stage gates remain after each interval. Future visual/recording revision must preserve actual runtime overlap checks and must not introduce an ignored transition override."
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/lesson.json",
+    "sha256": "543ffd4cd3f3ddb810d007b35279d70a39a0e6a48990646670214e63e5221e03"
+  },
+  "acceptedPreparation": {
+    "path": "docs/production/drafts/module5-beginner-preparation-2026-10-10/biology-b3-plants.md",
+    "sha256": "0a2ab244ed56d890953bf65424208aa51dad2e1c285be54a80d2373283472aad"
+  },
+  "acceptedPreparationReview": {
+    "path": "docs/production/module5-beginner-next-preparation-review-2026-10-10.md",
+    "sha256": "c939d86f608969eee9ffb67f316f65d675a3274be6ed5704f445d65ca2519429",
+    "scope": "Exact human-readable science/beginner preparation only"
+  },
+  "selection": {
+    "path": "docs/production/module5-beginner-next-selection-2026-10-10.json",
+    "sha256": "0739fe54559e4bf38a11b9b9c9a32e16cc30959cbaddb0609dd8ac6c59f7b6d7"
+  },
+  "route": {
+    "path": "docs/production/module5-video-route-2026-10-10.json",
+    "sha256": "28458a3f7ca9124bbf2c0ce08baa0a651baa6d9870d171270a997a2c4d4e7b49",
+    "canonicalId": "bio-m5-b02b",
+    "canonicalPlaylistOrder": 3,
+    "deliveryPartOrder": 1,
+    "syllabusActions": [
+      "B-plants"
+    ],
+    "remainingGroupActions": [
+      "B-fungi",
+      "B-bacteria",
+      "B-protists"
+    ],
+    "uploadChronology": "Not set by author"
+  },
+  "boundaries": {
+    "entryKnowledge": "reproduction connects generations; cells contain inherited information in DNA; gametes are reproductive cells; sexual reproduction involves fusion of gametes, while asexual reproduction does not. Basic root, stem and leaf vocabulary helps with a runner. `bio-m5-b01` is the canonical prerequisite. Its selected draft provides the fusion criterion and a strawberry runner example; it is support material, not a presumed public upload. The animal contribution `bio-m5-b02a` is preceding playlist context, but its internal/external classification and chromosome-set model are not prerequisites for the plant explanation.",
+    "entryDiagnostic": "“If one plant supplies both gametes, does that make fusion asexual?” Expected reason: no, the event is sexual because gametes fuse. The opening reminder and the self-pollination scene supply support if this distinction is insecure. This is a diagnostic for a lesson page or teacher, not a second timed task added to the video.",
+    "start": "one strawberry plant can produce a new plant from a runner. A self-compatible flowering plant can also supply both gametes in a sexual reproductive event. One visible parent does not settle the classification.",
+    "stop": "the learner can explain pollen transfer, pollen-tube delivery and sperm-egg fusion in the supplied flowering-plant model; distinguish zygote-to-embryo development from ovule-to-seed development; explain strawberry runner propagation without fusion; classify supplied self-fertilisation and cross-fertilisation cases by fusion; and predict why interrupting the delivery pathway can prevent fusion despite successful pollination. Conditions and later establishment remain distinct from classification.",
+    "next": "the fungi, bacteria and protists contributions to `bio-m5-b02b` remain to be prepared and reviewed. They need their own named mechanisms and organism limits. After those group contributions, the existing canonical route points to `bio-m5-b03a` for mammalian fertilisation, implantation, pregnancy and birth, and `bio-m5-b03b` for agricultural manipulation. This plant contribution does not justify skipping the missing groups. Root decides the final focused playlist subdivision.",
+    "outside": "a complete alternation-of-generations life cycle; meiosis and allele segregation; detailed embryo-sac development, double fertilisation and endosperm formation; seed dispersal, dormancy and germination mechanisms; fern, moss and gymnosperm mechanisms; a catalogue of bulbs, tubers, cuttings and grafts; plant breeding or controlled-pollination procedures. These are limits of the selected model, not claims that all these details are separately mandated by the quoted plant row. Named typical mechanisms can support that broad row; independent review must judge the adequacy of the proposed action evidence. Agricultural evaluation is a distinct required action and remains open."
+  },
+  "cachedSyllabus": [
+    {
+      "path": "out/research/continuity-2026-10-08/biology-2017.docx",
+      "sha256": "0314aff268e37fea5e75dfeb689326c4bcfbc6ff07c0d960b5ebabc07cf3e3b7"
+    },
+    {
+      "path": "out/research/continuity-2026-10-08/biology-2017-paragraphs.json",
+      "sha256": "1d3a94b77ef662892ef058032f1ef51980c85779efe6043011cc7f5af652c8a8"
+    }
+  ],
+  "cachedParagraphs": {
+    "p1022": "Reproduction inquiry",
+    "p1025": "Parent variety-of-organisms sexual/asexual action",
+    "p1027": "plants: asexual and sexual reproduction",
+    "p1028": "Fungi contribution open",
+    "p1029": "Bacteria contribution open",
+    "p1030": "Protists contribution open",
+    "p1031": "Mammalian action later",
+    "p1032": "Agricultural evaluation open"
+  },
+  "spokenSegments": {
+    "b3-hook": {
+      "heading": "`hook` (`b3-hook`)",
+      "characterSpan": [
+        10641,
+        11136
+      ],
+      "textSha256": "be0056d8395e53cb4c2a0d296dd5d0d8db41ddb580364ba362e27134f093d2e1"
+    },
+    "b3-flower": {
+      "heading": "`concept-flower` (`b3-flower`)",
+      "characterSpan": [
+        11186,
+        11833
+      ],
+      "textSha256": "dd53652d24ddf96c21608bd50e22b52aa49bfce7932befa70fe4dc7c74c6c4c0"
+    },
+    "b3-delivery": {
+      "heading": "`concept-delivery` (`b3-delivery`)",
+      "characterSpan": [
+        11887,
+        12619
+      ],
+      "textSha256": "57155746fcb324738757507f4d18b29b0ea26015e6b097d354d36aac85654748"
+    },
+    "b3-seed": {
+      "heading": "`concept-seed` (`b3-seed`)",
+      "characterSpan": [
+        12665,
+        13245
+      ],
+      "textSha256": "4cbad6c9982552e3418a55513d6d5d753b58fb562e43e1f8dd257eeae9d5e07e"
+    },
+    "b3-runner": {
+      "heading": "`concept-runner` (`b3-runner`)",
+      "characterSpan": [
+        13295,
+        14060
+      ],
+      "textSha256": "53b5e69fb71abc7af46ee3625d94485ec28fc5abff1fd2ef3dcaab86ff9789e1"
+    },
+    "b3-self-cross": {
+      "heading": "`definition-self-cross` (`b3-self-cross`)",
+      "characterSpan": [
+        14121,
+        14866
+      ],
+      "textSha256": "2721568572782b41b93afb4493e6b71182eeec4e477499571f95585cabebeb11"
+    },
+    "b3-worked": {
+      "heading": "`worked-classification` (`b3-worked`)",
+      "characterSpan": [
+        14923,
+        15630
+      ],
+      "textSha256": "964e591bca86fcef71a9c3876fa57165f7717a09ff60a2be350b6bb434c40115"
+    },
+    "b3-conditions": {
+      "heading": "`concept-conditions` (`b3-conditions`)",
+      "characterSpan": [
+        15688,
+        16199
+      ],
+      "textSha256": "a203bb50e2b54a25b36a86c459fbd7f48432904967321d99091c731a5a235233"
+    },
+    "b3-check-prompt": {
+      "heading": "`quick-check` prompt (`b3-check-prompt`)",
+      "characterSpan": [
+        16259,
+        16801
+      ],
+      "textSha256": "c48a91f8171a08ac49620673402af15a2582437b30de4da6786e8bedb09bb702"
+    },
+    "b3-check-feedback": {
+      "heading": "`quick-check` feedback (`b3-check-feedback`)",
+      "characterSpan": [
+        17225,
+        17604
+      ],
+      "textSha256": "4939dcdd7b28410898b17c9de8d0c2ce05ae56e6c44d70e6f3c716432c8fab6c"
+    },
+    "b3-summary": {
+      "heading": "`summary` (`b3-summary`)",
+      "characterSpan": [
+        17648,
+        18165
+      ],
+      "textSha256": "3f7780c96d29b90675c0809bcdaa7d9175e1cd4a74c947aefa15c975cbfdaffe"
+    }
+  },
+  "unchangedSpokenWords": 1081,
+  "boundaryNote": "Accepted prose retained exactly in boundaries. Canonical combined route stopping boundary is not completed by this plant-only contribution.",
+  "parentSelectedSource": {
+    "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/lesson.json",
+    "sha256": "ef61ae0d2fdf7ac0dbff1db569b98f7f67b01a161c49752c36c4f695dda3133b",
+    "status": "preserved, changes required because planned interval overlaps runtime feedback"
+  }
+}

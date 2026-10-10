@@ -1,0 +1,6048 @@
+{
+  "title": "Empirical formulas",
+  "subtitle": "Percentage composition, atom ratios and a molecular-formula extension",
+  "subject": "Chemistry",
+  "yearLevel": "Year 11",
+  "module": "Module 2",
+  "lesson": "Lesson 3",
+  "syllabusVersion": "Chemistry Stage 6 Syllabus (2017)",
+  "syllabusModule": "Module 2: Introduction to Quantitative Chemistry",
+  "syllabusDotPoints": [
+    "explore the concept of the mole and relate this to Avogadro's constant to describe, calculate and manipulate numbers of particles, chemical amounts and masses",
+    "calculate percentage composition by mass of multi-element compounds"
+  ],
+  "moduleLessonCount": 20,
+  "nesaOutcomes": [
+    "CH11-9",
+    "CH11/12-4",
+    "CH11/12-6"
+  ],
+  "inquiryQuestion": "How are measurements made in chemistry?",
+  "lessonIntent": "Explain mass-to-mole ratio reasoning, derive an empirical formula and distinguish related molecular inference from substance identification.",
+  "examSkill": "Convert element masses to moles, preserve ratios and interpret what composition data can establish.",
+  "productionRole": "reference",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "hook",
+      "heading": "Same ratio, different substances",
+      "body": "An empirical formula gives composition. It does not identify the substance.",
+      "callout": "First find the ratio of atoms.",
+      "durationInFrames": 1016,
+      "caption": "Different substances can share an empirical formula.",
+      "voiceover": {
+        "text": "We already know how to turn grams into moles. Now we can use that idea to work backwards from a compound's composition. Glucose and formaldehyde are very different substances. Yet both have the same simplest ratio of carbon, hydrogen and oxygen atoms: one to two to one. So a composition result can give us a useful clue without telling us exactly what the substance is. The first clue is an empirical formula. Let's see how a measurement of mass becomes a ratio of atoms.",
+        "audioFile": "public/audio/assembled/hook.a6cb059d17fbf672ae3b.280a05e560b1.wav",
+        "startFrame": 0,
+        "endFrame": 977
+      },
+      "comparison": [
+        {
+          "label": "Formaldehyde",
+          "amount": "Known molecular formula",
+          "mass": "CH₂O"
+        },
+        {
+          "label": "Glucose",
+          "amount": "Known molecular formula",
+          "mass": "C₆H₁₂O₆"
+        }
+      ],
+      "comparisonIsPrompt": true,
+      "revealDelays": {
+        "heading": 15,
+        "body": 30,
+        "glyph": 30,
+        "callout": 778
+      },
+      "captions": [
+        {
+          "text": "We",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 240,
+          "endMs": 560,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " know",
+          "startMs": 640,
+          "endMs": 880,
+          "timestampMs": 760,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 960,
+          "endMs": 1040,
+          "timestampMs": 1000,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 1120,
+          "endMs": 1200,
+          "timestampMs": 1160,
+          "confidence": null
+        },
+        {
+          "text": " turn",
+          "startMs": 1320,
+          "endMs": 1440,
+          "timestampMs": 1380,
+          "confidence": null
+        },
+        {
+          "text": " grams",
+          "startMs": 1520,
+          "endMs": 1920,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 2000,
+          "endMs": 2080,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " moles.",
+          "startMs": 2160,
+          "endMs": 3120,
+          "timestampMs": 2640,
+          "confidence": null
+        },
+        {
+          "text": " Now",
+          "startMs": 3200,
+          "endMs": 3520,
+          "timestampMs": 3360,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 3880,
+          "endMs": 4000,
+          "timestampMs": 3940,
+          "confidence": null
+        },
+        {
+          "text": " use",
+          "startMs": 4080,
+          "endMs": 4240,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 4320,
+          "endMs": 4400,
+          "timestampMs": 4360,
+          "confidence": null
+        },
+        {
+          "text": " idea",
+          "startMs": 4480,
+          "endMs": 4880,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 4960,
+          "endMs": 5040,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " work",
+          "startMs": 5120,
+          "endMs": 5360,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " backwards",
+          "startMs": 5520,
+          "endMs": 5840,
+          "timestampMs": 5680,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 5920,
+          "endMs": 6000,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 6080,
+          "endMs": 6160,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " compound's",
+          "startMs": 6360,
+          "endMs": 6640,
+          "timestampMs": 6500,
+          "confidence": null
+        },
+        {
+          "text": " composition.",
+          "startMs": 6960,
+          "endMs": 7920,
+          "timestampMs": 7440,
+          "confidence": null
+        },
+        {
+          "text": " Glucose",
+          "startMs": 8000,
+          "endMs": 8480,
+          "timestampMs": 8240,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8560,
+          "endMs": 8640,
+          "timestampMs": 8600,
+          "confidence": null
+        },
+        {
+          "text": " formaldehyde",
+          "startMs": 8760,
+          "endMs": 9520,
+          "timestampMs": 9140,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 9640,
+          "endMs": 9760,
+          "timestampMs": 9700,
+          "confidence": null
+        },
+        {
+          "text": " very",
+          "startMs": 9840,
+          "endMs": 10160,
+          "timestampMs": 10000,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 10320,
+          "endMs": 10480,
+          "timestampMs": 10400,
+          "confidence": null
+        },
+        {
+          "text": " substances.",
+          "startMs": 10600,
+          "endMs": 11680,
+          "timestampMs": 11140,
+          "confidence": null
+        },
+        {
+          "text": " Yet",
+          "startMs": 11880,
+          "endMs": 12080,
+          "timestampMs": 11980,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 12280,
+          "endMs": 12480,
+          "timestampMs": 12380,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 12560,
+          "endMs": 12640,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12720,
+          "endMs": 12880,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 13040,
+          "endMs": 13200,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " simplest",
+          "startMs": 13360,
+          "endMs": 13760,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " ratio",
+          "startMs": 14040,
+          "endMs": 14320,
+          "timestampMs": 14180,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 14440,
+          "endMs": 14560,
+          "timestampMs": 14500,
+          "confidence": null
+        },
+        {
+          "text": " carbon,",
+          "startMs": 14760,
+          "endMs": 15200,
+          "timestampMs": 14980,
+          "confidence": null
+        },
+        {
+          "text": " hydrogen",
+          "startMs": 15360,
+          "endMs": 15760,
+          "timestampMs": 15560,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 15880,
+          "endMs": 16000,
+          "timestampMs": 15940,
+          "confidence": null
+        },
+        {
+          "text": " oxygen",
+          "startMs": 16079.999999999998,
+          "endMs": 16400,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " atoms:",
+          "startMs": 16480,
+          "endMs": 17360,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 17440,
+          "endMs": 17680,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 17920,
+          "endMs": 18080,
+          "timestampMs": 18000,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 18280,
+          "endMs": 18480,
+          "timestampMs": 18380,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 18560,
+          "endMs": 18640,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " one.",
+          "startMs": 18720,
+          "endMs": 19600,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 19720,
+          "endMs": 19840,
+          "timestampMs": 19780,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 19920,
+          "endMs": 20000,
+          "timestampMs": 19960,
+          "confidence": null
+        },
+        {
+          "text": " composition",
+          "startMs": 20080,
+          "endMs": 20640,
+          "timestampMs": 20360,
+          "confidence": null
+        },
+        {
+          "text": " result",
+          "startMs": 20720,
+          "endMs": 21120,
+          "timestampMs": 20920,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 21200,
+          "endMs": 21360,
+          "timestampMs": 21280,
+          "confidence": null
+        },
+        {
+          "text": " give",
+          "startMs": 21400,
+          "endMs": 21440,
+          "timestampMs": 21420,
+          "confidence": null
+        },
+        {
+          "text": " us",
+          "startMs": 21520,
+          "endMs": 21600,
+          "timestampMs": 21560,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 21680,
+          "endMs": 21760,
+          "timestampMs": 21720,
+          "confidence": null
+        },
+        {
+          "text": " useful",
+          "startMs": 21840,
+          "endMs": 22240,
+          "timestampMs": 22040,
+          "confidence": null
+        },
+        {
+          "text": " clue",
+          "startMs": 22320,
+          "endMs": 22720,
+          "timestampMs": 22520,
+          "confidence": null
+        },
+        {
+          "text": " without",
+          "startMs": 22920,
+          "endMs": 23120,
+          "timestampMs": 23020,
+          "confidence": null
+        },
+        {
+          "text": " telling",
+          "startMs": 23160,
+          "endMs": 23360,
+          "timestampMs": 23260,
+          "confidence": null
+        },
+        {
+          "text": " us",
+          "startMs": 23440,
+          "endMs": 23520,
+          "timestampMs": 23480,
+          "confidence": null
+        },
+        {
+          "text": " exactly",
+          "startMs": 23600,
+          "endMs": 24160,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 24240,
+          "endMs": 24320,
+          "timestampMs": 24280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24360,
+          "endMs": 24400,
+          "timestampMs": 24380,
+          "confidence": null
+        },
+        {
+          "text": " substance",
+          "startMs": 24480,
+          "endMs": 24880,
+          "timestampMs": 24680,
+          "confidence": null
+        },
+        {
+          "text": " is.",
+          "startMs": 25040,
+          "endMs": 25840,
+          "timestampMs": 25440,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 25920,
+          "endMs": 26000,
+          "timestampMs": 25960,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 26080,
+          "endMs": 26320,
+          "timestampMs": 26200,
+          "confidence": null
+        },
+        {
+          "text": " clue",
+          "startMs": 26400,
+          "endMs": 26800,
+          "timestampMs": 26600,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 26880,
+          "endMs": 26960,
+          "timestampMs": 26920,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 27000,
+          "endMs": 27040,
+          "timestampMs": 27020,
+          "confidence": null
+        },
+        {
+          "text": " empirical",
+          "startMs": 27200,
+          "endMs": 27680,
+          "timestampMs": 27440,
+          "confidence": null
+        },
+        {
+          "text": " formula.",
+          "startMs": 27760,
+          "endMs": 28800,
+          "timestampMs": 28280,
+          "confidence": null
+        },
+        {
+          "text": " Let's",
+          "startMs": 28880,
+          "endMs": 29040,
+          "timestampMs": 28960,
+          "confidence": null
+        },
+        {
+          "text": " see",
+          "startMs": 29120,
+          "endMs": 29280,
+          "timestampMs": 29200,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 29360,
+          "endMs": 29440,
+          "timestampMs": 29400,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 29520,
+          "endMs": 29600,
+          "timestampMs": 29560,
+          "confidence": null
+        },
+        {
+          "text": " measurement",
+          "startMs": 29800,
+          "endMs": 30000,
+          "timestampMs": 29900,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 30080,
+          "endMs": 30160,
+          "timestampMs": 30120,
+          "confidence": null
+        },
+        {
+          "text": " mass",
+          "startMs": 30240,
+          "endMs": 30640,
+          "timestampMs": 30440,
+          "confidence": null
+        },
+        {
+          "text": " becomes",
+          "startMs": 30720,
+          "endMs": 31040,
+          "timestampMs": 30880,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 31120,
+          "endMs": 31200,
+          "timestampMs": 31160,
+          "confidence": null
+        },
+        {
+          "text": " ratio",
+          "startMs": 31440,
+          "endMs": 31680,
+          "timestampMs": 31560,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 31760,
+          "endMs": 31840,
+          "timestampMs": 31800,
+          "confidence": null
+        },
+        {
+          "text": " atoms.",
+          "startMs": 32080,
+          "endMs": 32560.000000000004,
+          "timestampMs": 32320,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "title",
+      "type": "title",
+      "durationInFrames": 198,
+      "caption": "Empirical formulas",
+      "voiceover": {
+        "text": "Empirical formulas: from percentage composition to a ratio of atoms.",
+        "audioFile": "public/audio/assembled/title.343aa8f6a5684b0abb58.2da6fc0d428c.wav",
+        "startFrame": 0,
+        "endFrame": 159
+      },
+      "captions": [
+        {
+          "text": "Empirical",
+          "startMs": 0,
+          "endMs": 560,
+          "timestampMs": 280,
+          "confidence": null
+        },
+        {
+          "text": " formulas:",
+          "startMs": 720,
+          "endMs": 1840,
+          "timestampMs": 1280,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 1920,
+          "endMs": 2000,
+          "timestampMs": 1960,
+          "confidence": null
+        },
+        {
+          "text": " percentage",
+          "startMs": 2080,
+          "endMs": 2560,
+          "timestampMs": 2320,
+          "confidence": null
+        },
+        {
+          "text": " composition",
+          "startMs": 2640,
+          "endMs": 3360,
+          "timestampMs": 3000,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 3520,
+          "endMs": 3600,
+          "timestampMs": 3560,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " ratio",
+          "startMs": 3840,
+          "endMs": 4240,
+          "timestampMs": 4040,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 4320,
+          "endMs": 4400,
+          "timestampMs": 4360,
+          "confidence": null
+        },
+        {
+          "text": " atoms.",
+          "startMs": 4480,
+          "endMs": 5280,
+          "timestampMs": 4880,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "heading": "Ratio versus actual count",
+      "body": "Empirical formula: simplest whole-number ratio. Molecular formula: atoms in one molecule.",
+      "bullets": [
+        {
+          "text": "Glucose: C₆H₁₂O₆. Count ratio 6:12:6.",
+          "at": 0
+        },
+        {
+          "text": "Formaldehyde: CH₂O. Count ratio 1:2:1.",
+          "at": 14
+        }
+      ],
+      "secondary": "Counting model only. Blocks do not show bonds or separate glucose fragments.",
+      "callout": "Same simplest ratio, different substances.",
+      "durationInFrames": 1050,
+      "caption": "Empirical formulas preserve proportions; molecular formulas preserve actual counts.",
+      "diagram": {
+        "type": "diorama",
+        "kind": "chem11m2Empirical",
+        "delay": 15,
+        "props": {
+          "unit": {
+            "C": 1,
+            "H": 2,
+            "O": 1
+          },
+          "unitFormula": "CH₂O",
+          "big": {
+            "name": "glucose",
+            "formula": "C₆H₁₂O₆",
+            "n": 6
+          },
+          "small": {
+            "name": "formaldehyde",
+            "formula": "CH₂O",
+            "n": 1
+          },
+          "beats": {
+            "big": 0,
+            "sort": 175,
+            "small": 405,
+            "same": 645,
+            "times": 727,
+            "nBig": 727,
+            "nSmall": 727
+          }
+        }
+      },
+      "voiceover": {
+        "text": "Glucose has six carbon atoms, twelve hydrogens and six oxygens in each molecule. That six to twelve to six ratio reduces to one to two to one, written C H two O. Formaldehyde already has one carbon, two hydrogens and one oxygen. Its formula reduces to the same ratio. The empirical formula keeps the proportion. The molecular formula keeps the actual atom count in one molecule. These blocks are a counting model; they don't show how the atoms are bonded.",
+        "audioFile": "public/audio/assembled/concept.23a1c0a37b489232ec8c.d8eee1c13e49.wav",
+        "startFrame": 0,
+        "endFrame": 1011
+      },
+      "conceptVisualLayout": "diagramFocus",
+      "revealDelays": {
+        "heading": 15,
+        "body": 30,
+        "diagram": 15,
+        "bulletsStart": 60,
+        "secondary": 881,
+        "callout": 660
+      },
+      "captions": [
+        {
+          "text": "Glucose",
+          "startMs": 0,
+          "endMs": 560,
+          "timestampMs": 280,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 680,
+          "endMs": 800,
+          "timestampMs": 740,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 880,
+          "endMs": 1120,
+          "timestampMs": 1000,
+          "confidence": null
+        },
+        {
+          "text": " carbon",
+          "startMs": 1200,
+          "endMs": 1520,
+          "timestampMs": 1360,
+          "confidence": null
+        },
+        {
+          "text": " atoms,",
+          "startMs": 1600,
+          "endMs": 2240,
+          "timestampMs": 1920,
+          "confidence": null
+        },
+        {
+          "text": " twelve",
+          "startMs": 2320,
+          "endMs": 2560,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " hydrogens",
+          "startMs": 2720,
+          "endMs": 3280,
+          "timestampMs": 3000,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 3360,
+          "endMs": 3520,
+          "timestampMs": 3440,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 3680,
+          "endMs": 3920,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " oxygens",
+          "startMs": 4000,
+          "endMs": 4560,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 4600,
+          "endMs": 4640,
+          "timestampMs": 4620,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 4800,
+          "endMs": 4960,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " molecule.",
+          "startMs": 5040,
+          "endMs": 5760,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 6320,
+          "endMs": 6480,
+          "timestampMs": 6400,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 6640,
+          "endMs": 6880,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 6960,
+          "endMs": 7120,
+          "timestampMs": 7040,
+          "confidence": null
+        },
+        {
+          "text": " twelve",
+          "startMs": 7200,
+          "endMs": 7440,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 7520,
+          "endMs": 7680,
+          "timestampMs": 7600,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 7760,
+          "endMs": 7920,
+          "timestampMs": 7840,
+          "confidence": null
+        },
+        {
+          "text": " ratio",
+          "startMs": 8000,
+          "endMs": 8480,
+          "timestampMs": 8240,
+          "confidence": null
+        },
+        {
+          "text": " reduces",
+          "startMs": 8800,
+          "endMs": 9280,
+          "timestampMs": 9040,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 9360,
+          "endMs": 9440,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 9600,
+          "endMs": 9840,
+          "timestampMs": 9720,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 10000,
+          "endMs": 10160,
+          "timestampMs": 10080,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 10240,
+          "endMs": 10480,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 10560,
+          "endMs": 10720,
+          "timestampMs": 10640,
+          "confidence": null
+        },
+        {
+          "text": " one,",
+          "startMs": 10800,
+          "endMs": 11440,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": " written",
+          "startMs": 11600,
+          "endMs": 11760,
+          "timestampMs": 11680,
+          "confidence": null
+        },
+        {
+          "text": " C",
+          "startMs": 12080,
+          "endMs": 12240,
+          "timestampMs": 12160,
+          "confidence": null
+        },
+        {
+          "text": " H",
+          "startMs": 12320,
+          "endMs": 12560,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 12640,
+          "endMs": 12800,
+          "timestampMs": 12720,
+          "confidence": null
+        },
+        {
+          "text": " O.",
+          "startMs": 13040,
+          "endMs": 13360,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " Formaldehyde",
+          "startMs": 14000,
+          "endMs": 14720,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 14880,
+          "endMs": 15280,
+          "timestampMs": 15080,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 15360,
+          "endMs": 15520,
+          "timestampMs": 15440,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 15680,
+          "endMs": 15840,
+          "timestampMs": 15760,
+          "confidence": null
+        },
+        {
+          "text": " carbon,",
+          "startMs": 15920,
+          "endMs": 16560,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 16640,
+          "endMs": 16720,
+          "timestampMs": 16680,
+          "confidence": null
+        },
+        {
+          "text": " hydrogens",
+          "startMs": 16800,
+          "endMs": 17440,
+          "timestampMs": 17120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 17520,
+          "endMs": 17600,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 17760,
+          "endMs": 17840,
+          "timestampMs": 17800,
+          "confidence": null
+        },
+        {
+          "text": " oxygen.",
+          "startMs": 17920,
+          "endMs": 18480,
+          "timestampMs": 18200,
+          "confidence": null
+        },
+        {
+          "text": " Its",
+          "startMs": 19040,
+          "endMs": 19200,
+          "timestampMs": 19120,
+          "confidence": null
+        },
+        {
+          "text": " formula",
+          "startMs": 19280,
+          "endMs": 19680,
+          "timestampMs": 19480,
+          "confidence": null
+        },
+        {
+          "text": " reduces",
+          "startMs": 19760,
+          "endMs": 20160,
+          "timestampMs": 19960,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 20240,
+          "endMs": 20320,
+          "timestampMs": 20280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20400,
+          "endMs": 20480,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 20560,
+          "endMs": 20800,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " ratio.",
+          "startMs": 21080,
+          "endMs": 21680,
+          "timestampMs": 21380,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 22000,
+          "endMs": 22080,
+          "timestampMs": 22040,
+          "confidence": null
+        },
+        {
+          "text": " empirical",
+          "startMs": 22200,
+          "endMs": 22640,
+          "timestampMs": 22420,
+          "confidence": null
+        },
+        {
+          "text": " formula",
+          "startMs": 22720,
+          "endMs": 23120,
+          "timestampMs": 22920,
+          "confidence": null
+        },
+        {
+          "text": " keeps",
+          "startMs": 23280,
+          "endMs": 23520,
+          "timestampMs": 23400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 23600,
+          "endMs": 23640,
+          "timestampMs": 23620,
+          "confidence": null
+        },
+        {
+          "text": " proportion.",
+          "startMs": 23680,
+          "endMs": 24400,
+          "timestampMs": 24040,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 24720,
+          "endMs": 24800,
+          "timestampMs": 24760,
+          "confidence": null
+        },
+        {
+          "text": " molecular",
+          "startMs": 24880,
+          "endMs": 25360,
+          "timestampMs": 25120,
+          "confidence": null
+        },
+        {
+          "text": " formula",
+          "startMs": 25440,
+          "endMs": 25840,
+          "timestampMs": 25640,
+          "confidence": null
+        },
+        {
+          "text": " keeps",
+          "startMs": 26000,
+          "endMs": 26240,
+          "timestampMs": 26120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 26280,
+          "endMs": 26320,
+          "timestampMs": 26300,
+          "confidence": null
+        },
+        {
+          "text": " actual",
+          "startMs": 26480,
+          "endMs": 26880,
+          "timestampMs": 26680,
+          "confidence": null
+        },
+        {
+          "text": " atom",
+          "startMs": 26960,
+          "endMs": 27280,
+          "timestampMs": 27120,
+          "confidence": null
+        },
+        {
+          "text": " count",
+          "startMs": 27360,
+          "endMs": 27600,
+          "timestampMs": 27480,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 27680,
+          "endMs": 27840,
+          "timestampMs": 27760,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 27920,
+          "endMs": 28080,
+          "timestampMs": 28000,
+          "confidence": null
+        },
+        {
+          "text": " molecule.",
+          "startMs": 28160,
+          "endMs": 28800,
+          "timestampMs": 28480,
+          "confidence": null
+        },
+        {
+          "text": " These",
+          "startMs": 29360,
+          "endMs": 29520,
+          "timestampMs": 29440,
+          "confidence": null
+        },
+        {
+          "text": " blocks",
+          "startMs": 29600,
+          "endMs": 29920,
+          "timestampMs": 29760,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 29960,
+          "endMs": 30000,
+          "timestampMs": 29980,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 30080,
+          "endMs": 30160,
+          "timestampMs": 30120,
+          "confidence": null
+        },
+        {
+          "text": " counting",
+          "startMs": 30320,
+          "endMs": 30640,
+          "timestampMs": 30480,
+          "confidence": null
+        },
+        {
+          "text": " model;",
+          "startMs": 30720,
+          "endMs": 31280,
+          "timestampMs": 31000,
+          "confidence": null
+        },
+        {
+          "text": " they",
+          "startMs": 31400,
+          "endMs": 31520,
+          "timestampMs": 31460,
+          "confidence": null
+        },
+        {
+          "text": " don't",
+          "startMs": 31600,
+          "endMs": 31760,
+          "timestampMs": 31680,
+          "confidence": null
+        },
+        {
+          "text": " show",
+          "startMs": 31840,
+          "endMs": 32000,
+          "timestampMs": 31920,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 32159.999999999996,
+          "endMs": 32400,
+          "timestampMs": 32280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 32479.999999999996,
+          "endMs": 32520.000000000004,
+          "timestampMs": 32500,
+          "confidence": null
+        },
+        {
+          "text": " atoms",
+          "startMs": 32560.000000000004,
+          "endMs": 32880,
+          "timestampMs": 32720,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 32920,
+          "endMs": 32960,
+          "timestampMs": 32940,
+          "confidence": null
+        },
+        {
+          "text": " bonded.",
+          "startMs": 33040,
+          "endMs": 33680,
+          "timestampMs": 33360,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "definition",
+      "type": "definition",
+      "heading": "Mass percentage",
+      "callout": "Atom ratios and mass percentages describe different relationships.",
+      "durationInFrames": 1086,
+      "caption": "Mass percentage compares an element’s mass contribution with the total.",
+      "bullets": [
+        {
+          "text": "Mass percentage = element mass ÷ total mass × 100.",
+          "at": 0
+        },
+        {
+          "text": "CH₂O: 12.01 + 2(1.008) + 16.00 = 30.026 g mol⁻¹.",
+          "at": 7.3
+        },
+        {
+          "text": "Carbon: 12.01 ÷ 30.026 × 100 ≈ 40.00% by mass.",
+          "at": 17.466666666666665
+        }
+      ],
+      "voiceover": {
+        "text": "Percentage composition measures a different relationship: how much of a compound's mass comes from each element. For C H two O, the carbon contributes twelve point zero one out of a total of thirty point zero two six grams per mole, using our supplied values. Divide the carbon contribution by the total, then multiply by one hundred. That's about forty percent carbon by mass. The hydrogen count is twice the carbon count, but hydrogen atoms are much lighter. Atom ratios and mass percentages won't generally be the same numbers.",
+        "audioFile": "public/audio/assembled/definition.6853c39237022b85a2cb.415d7e976642.wav",
+        "startFrame": 0,
+        "endFrame": 1047
+      },
+      "revealDelays": {
+        "heading": 15,
+        "bulletsStart": 30,
+        "callout": 927
+      },
+      "captions": [
+        {
+          "text": "Percentage",
+          "startMs": 0,
+          "endMs": 480,
+          "timestampMs": 240,
+          "confidence": null
+        },
+        {
+          "text": " composition",
+          "startMs": 560,
+          "endMs": 1200,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " measures",
+          "startMs": 1280,
+          "endMs": 1600,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 1680,
+          "endMs": 1760,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 1920,
+          "endMs": 2240,
+          "timestampMs": 2080,
+          "confidence": null
+        },
+        {
+          "text": " relationship:",
+          "startMs": 2600,
+          "endMs": 3440,
+          "timestampMs": 3020,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 3520,
+          "endMs": 3680,
+          "timestampMs": 3600,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 3760,
+          "endMs": 3920,
+          "timestampMs": 3840,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 3960,
+          "endMs": 4000,
+          "timestampMs": 3980,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4040,
+          "endMs": 4080,
+          "timestampMs": 4060,
+          "confidence": null
+        },
+        {
+          "text": " compound's",
+          "startMs": 4160,
+          "endMs": 4720,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " mass",
+          "startMs": 4800,
+          "endMs": 5200,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " comes",
+          "startMs": 5280,
+          "endMs": 5520,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 5600,
+          "endMs": 5680,
+          "timestampMs": 5640,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 5840,
+          "endMs": 6080,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " element.",
+          "startMs": 6160,
+          "endMs": 6640,
+          "timestampMs": 6400,
+          "confidence": null
+        },
+        {
+          "text": " For",
+          "startMs": 7280,
+          "endMs": 7360,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " C",
+          "startMs": 7440,
+          "endMs": 7600,
+          "timestampMs": 7520,
+          "confidence": null
+        },
+        {
+          "text": " H",
+          "startMs": 7680,
+          "endMs": 7840,
+          "timestampMs": 7760,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 7920,
+          "endMs": 8000,
+          "timestampMs": 7960,
+          "confidence": null
+        },
+        {
+          "text": " O,",
+          "startMs": 8160,
+          "endMs": 8720,
+          "timestampMs": 8440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8800,
+          "endMs": 8880,
+          "timestampMs": 8840,
+          "confidence": null
+        },
+        {
+          "text": " carbon",
+          "startMs": 9080,
+          "endMs": 9280,
+          "timestampMs": 9180,
+          "confidence": null
+        },
+        {
+          "text": " contributes",
+          "startMs": 9360,
+          "endMs": 9920,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " twelve",
+          "startMs": 10000,
+          "endMs": 10240,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 10400,
+          "endMs": 10560,
+          "timestampMs": 10480,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 10720,
+          "endMs": 10880,
+          "timestampMs": 10800,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 11120,
+          "endMs": 11280,
+          "timestampMs": 11200,
+          "confidence": null
+        },
+        {
+          "text": " out",
+          "startMs": 11600,
+          "endMs": 11680,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 11720,
+          "endMs": 11760,
+          "timestampMs": 11740,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 11840,
+          "endMs": 11920,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " total",
+          "startMs": 12080,
+          "endMs": 12240,
+          "timestampMs": 12160,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 12320,
+          "endMs": 12400,
+          "timestampMs": 12360,
+          "confidence": null
+        },
+        {
+          "text": " thirty",
+          "startMs": 12480,
+          "endMs": 12720,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 12880,
+          "endMs": 13120,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 13200,
+          "endMs": 13360,
+          "timestampMs": 13280,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 13520,
+          "endMs": 13680,
+          "timestampMs": 13600,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 13840,
+          "endMs": 14080,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " grams",
+          "startMs": 14160,
+          "endMs": 14480,
+          "timestampMs": 14320,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 14560,
+          "endMs": 14640,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " mole,",
+          "startMs": 14720,
+          "endMs": 15200,
+          "timestampMs": 14960,
+          "confidence": null
+        },
+        {
+          "text": " using",
+          "startMs": 15280,
+          "endMs": 15520,
+          "timestampMs": 15400,
+          "confidence": null
+        },
+        {
+          "text": " our",
+          "startMs": 15600,
+          "endMs": 15680,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " supplied",
+          "startMs": 15760,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15920,
+          "confidence": null
+        },
+        {
+          "text": " values.",
+          "startMs": 16160,
+          "endMs": 16720,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " Divide",
+          "startMs": 17440,
+          "endMs": 17760,
+          "timestampMs": 17600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17800,
+          "endMs": 17840,
+          "timestampMs": 17820,
+          "confidence": null
+        },
+        {
+          "text": " carbon",
+          "startMs": 17920,
+          "endMs": 18240,
+          "timestampMs": 18080,
+          "confidence": null
+        },
+        {
+          "text": " contribution",
+          "startMs": 18320,
+          "endMs": 18880,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 18960,
+          "endMs": 19040,
+          "timestampMs": 19000,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19120,
+          "endMs": 19200,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " total,",
+          "startMs": 19280,
+          "endMs": 20000,
+          "timestampMs": 19640,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 20120,
+          "endMs": 20240,
+          "timestampMs": 20180,
+          "confidence": null
+        },
+        {
+          "text": " multiply",
+          "startMs": 20320,
+          "endMs": 20800,
+          "timestampMs": 20560,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 20880,
+          "endMs": 20960,
+          "timestampMs": 20920,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 21120,
+          "endMs": 21200,
+          "timestampMs": 21160,
+          "confidence": null
+        },
+        {
+          "text": " hundred.",
+          "startMs": 21280,
+          "endMs": 21760,
+          "timestampMs": 21520,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 22240,
+          "endMs": 22400,
+          "timestampMs": 22320,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 22560,
+          "endMs": 22720,
+          "timestampMs": 22640,
+          "confidence": null
+        },
+        {
+          "text": " forty",
+          "startMs": 22880,
+          "endMs": 23160,
+          "timestampMs": 23020,
+          "confidence": null
+        },
+        {
+          "text": " percent",
+          "startMs": 23200,
+          "endMs": 23600,
+          "timestampMs": 23400,
+          "confidence": null
+        },
+        {
+          "text": " carbon",
+          "startMs": 23680,
+          "endMs": 24000,
+          "timestampMs": 23840,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 24080,
+          "endMs": 24160,
+          "timestampMs": 24120,
+          "confidence": null
+        },
+        {
+          "text": " mass.",
+          "startMs": 24240,
+          "endMs": 24720,
+          "timestampMs": 24480,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 25440,
+          "endMs": 25520,
+          "timestampMs": 25480,
+          "confidence": null
+        },
+        {
+          "text": " hydrogen",
+          "startMs": 25680,
+          "endMs": 26000,
+          "timestampMs": 25840,
+          "confidence": null
+        },
+        {
+          "text": " count",
+          "startMs": 26080,
+          "endMs": 26320,
+          "timestampMs": 26200,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 26400,
+          "endMs": 26560,
+          "timestampMs": 26480,
+          "confidence": null
+        },
+        {
+          "text": " twice",
+          "startMs": 26640,
+          "endMs": 27040,
+          "timestampMs": 26840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 27080,
+          "endMs": 27120,
+          "timestampMs": 27100,
+          "confidence": null
+        },
+        {
+          "text": " carbon",
+          "startMs": 27200,
+          "endMs": 27520,
+          "timestampMs": 27360,
+          "confidence": null
+        },
+        {
+          "text": " count,",
+          "startMs": 27600,
+          "endMs": 28160,
+          "timestampMs": 27880,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 28240,
+          "endMs": 28320,
+          "timestampMs": 28280,
+          "confidence": null
+        },
+        {
+          "text": " hydrogen",
+          "startMs": 28400,
+          "endMs": 28880,
+          "timestampMs": 28640,
+          "confidence": null
+        },
+        {
+          "text": " atoms",
+          "startMs": 29040,
+          "endMs": 29200,
+          "timestampMs": 29120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 29280,
+          "endMs": 29360,
+          "timestampMs": 29320,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 29520,
+          "endMs": 29760,
+          "timestampMs": 29640,
+          "confidence": null
+        },
+        {
+          "text": " lighter.",
+          "startMs": 29840,
+          "endMs": 30560,
+          "timestampMs": 30200,
+          "confidence": null
+        },
+        {
+          "text": " Atom",
+          "startMs": 30880,
+          "endMs": 31120,
+          "timestampMs": 31000,
+          "confidence": null
+        },
+        {
+          "text": " ratios",
+          "startMs": 31200,
+          "endMs": 31760,
+          "timestampMs": 31480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 31800,
+          "endMs": 31840,
+          "timestampMs": 31820,
+          "confidence": null
+        },
+        {
+          "text": " mass",
+          "startMs": 31920,
+          "endMs": 32080,
+          "timestampMs": 32000,
+          "confidence": null
+        },
+        {
+          "text": " percentages",
+          "startMs": 32159.999999999996,
+          "endMs": 32800,
+          "timestampMs": 32480,
+          "confidence": null
+        },
+        {
+          "text": " won't",
+          "startMs": 32880,
+          "endMs": 33200,
+          "timestampMs": 33040,
+          "confidence": null
+        },
+        {
+          "text": " generally",
+          "startMs": 33320,
+          "endMs": 33680,
+          "timestampMs": 33500,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 33720,
+          "endMs": 33760,
+          "timestampMs": 33740,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 33840,
+          "endMs": 33920,
+          "timestampMs": 33880,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 34000,
+          "endMs": 34160,
+          "timestampMs": 34080,
+          "confidence": null
+        },
+        {
+          "text": " numbers.",
+          "startMs": 34240,
+          "endMs": 34880,
+          "timestampMs": 34560,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "heading": "Mass to moles to ratio",
+      "body": "A 100 g calculation basis turns each mass percentage into grams.",
+      "bullets": [
+        {
+          "text": "Choose a basis, or use the actual element masses supplied.",
+          "at": 9.866666666666667
+        },
+        {
+          "text": "Convert each mass to moles using its own molar mass.",
+          "at": 29.2
+        }
+      ],
+      "secondary": "Schematic mass accounting. This is not physically separating a compound into elements.",
+      "callout": "Moles put all elements on a common counting scale.",
+      "durationInFrames": 1139,
+      "caption": "A convenient basis changes sample size, not percentage composition.",
+      "diagram": {
+        "type": "massBreakdown",
+        "segments": [
+          {
+            "label": "C",
+            "percent": 40,
+            "color": "#2d2d2d"
+          },
+          {
+            "label": "H",
+            "percent": 6.71,
+            "color": "#c9a24a"
+          },
+          {
+            "label": "O",
+            "percent": 53.29,
+            "color": "#148a6f"
+          }
+        ]
+      },
+      "voiceover": {
+        "text": "Suppose an analysis gives forty point zero zero percent carbon, six point seven one percent hydrogen and fifty-three point two nine percent oxygen. A hundred-gram calculation basis makes those percentages easy to use: forty grams, six point seven one grams and fifty-three point two nine grams. We haven't changed the composition, just chosen a convenient sample size. If actual element masses are already given, use them directly. Next, dividing each mass by its own molar mass puts all three elements onto a common counting scale: moles.",
+        "audioFile": "public/audio/assembled/formula.edfe8addaddc02efe953.0749287857bd.wav",
+        "startFrame": 0,
+        "endFrame": 1100
+      },
+      "conceptVisualLayout": "diagramFocus",
+      "revealDelays": {
+        "heading": 15,
+        "body": 30,
+        "diagram": 30,
+        "bulletsStart": 60,
+        "secondary": 90,
+        "callout": 1020
+      },
+      "captions": [
+        {
+          "text": "Suppose",
+          "startMs": 0,
+          "endMs": 400,
+          "timestampMs": 200,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 480,
+          "endMs": 560,
+          "timestampMs": 520,
+          "confidence": null
+        },
+        {
+          "text": " analysis",
+          "startMs": 840,
+          "endMs": 1120,
+          "timestampMs": 980,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 1200,
+          "endMs": 1440,
+          "timestampMs": 1320,
+          "confidence": null
+        },
+        {
+          "text": " forty",
+          "startMs": 1600,
+          "endMs": 1920,
+          "timestampMs": 1760,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 2000,
+          "endMs": 2240,
+          "timestampMs": 2120,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 2320,
+          "endMs": 2560,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 2720,
+          "endMs": 2880,
+          "timestampMs": 2800,
+          "confidence": null
+        },
+        {
+          "text": " percent",
+          "startMs": 2960,
+          "endMs": 3280,
+          "timestampMs": 3120,
+          "confidence": null
+        },
+        {
+          "text": " carbon,",
+          "startMs": 3360,
+          "endMs": 4160,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 4240,
+          "endMs": 4400,
+          "timestampMs": 4320,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 4480,
+          "endMs": 4800,
+          "timestampMs": 4640,
+          "confidence": null
+        },
+        {
+          "text": " seven",
+          "startMs": 4880,
+          "endMs": 4960,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 5200,
+          "endMs": 5280,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " percent",
+          "startMs": 5360,
+          "endMs": 5680,
+          "timestampMs": 5520,
+          "confidence": null
+        },
+        {
+          "text": " hydrogen",
+          "startMs": 5760,
+          "endMs": 6320,
+          "timestampMs": 6040,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6640,
+          "endMs": 6880,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " fifty-three",
+          "startMs": 6920,
+          "endMs": 7440,
+          "timestampMs": 7180,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 7600,
+          "endMs": 7840,
+          "timestampMs": 7720,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 7920,
+          "endMs": 8000,
+          "timestampMs": 7960,
+          "confidence": null
+        },
+        {
+          "text": " nine",
+          "startMs": 8160,
+          "endMs": 8240,
+          "timestampMs": 8200,
+          "confidence": null
+        },
+        {
+          "text": " percent",
+          "startMs": 8400,
+          "endMs": 8640,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " oxygen.",
+          "startMs": 8800,
+          "endMs": 9560,
+          "timestampMs": 9180,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 9840,
+          "endMs": 9920,
+          "timestampMs": 9880,
+          "confidence": null
+        },
+        {
+          "text": " hundred-gram",
+          "startMs": 10000,
+          "endMs": 10560,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " calculation",
+          "startMs": 10640,
+          "endMs": 11280,
+          "timestampMs": 10960,
+          "confidence": null
+        },
+        {
+          "text": " basis",
+          "startMs": 11360,
+          "endMs": 11760,
+          "timestampMs": 11560,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 11840,
+          "endMs": 12080,
+          "timestampMs": 11960,
+          "confidence": null
+        },
+        {
+          "text": " those",
+          "startMs": 12160,
+          "endMs": 12240,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " percentages",
+          "startMs": 12320,
+          "endMs": 12960,
+          "timestampMs": 12640,
+          "confidence": null
+        },
+        {
+          "text": " easy",
+          "startMs": 13040,
+          "endMs": 13280,
+          "timestampMs": 13160,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 13360,
+          "endMs": 13440,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " use:",
+          "startMs": 13520,
+          "endMs": 14400,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " forty",
+          "startMs": 14520,
+          "endMs": 14680,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " grams,",
+          "startMs": 14720,
+          "endMs": 15520,
+          "timestampMs": 15120,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 15600,
+          "endMs": 15680,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 15840,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15960,
+          "confidence": null
+        },
+        {
+          "text": " seven",
+          "startMs": 16160,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16200,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 16400,
+          "endMs": 16480,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " grams",
+          "startMs": 16640,
+          "endMs": 17040,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 17360,
+          "endMs": 17600,
+          "timestampMs": 17480,
+          "confidence": null
+        },
+        {
+          "text": " fifty-three",
+          "startMs": 17640,
+          "endMs": 18080,
+          "timestampMs": 17860,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 18320,
+          "endMs": 18560,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 18600,
+          "endMs": 18640,
+          "timestampMs": 18620,
+          "confidence": null
+        },
+        {
+          "text": " nine",
+          "startMs": 18800,
+          "endMs": 18960,
+          "timestampMs": 18880,
+          "confidence": null
+        },
+        {
+          "text": " grams.",
+          "startMs": 19120,
+          "endMs": 19880,
+          "timestampMs": 19500,
+          "confidence": null
+        },
+        {
+          "text": " We",
+          "startMs": 20160,
+          "endMs": 20240,
+          "timestampMs": 20200,
+          "confidence": null
+        },
+        {
+          "text": " haven't",
+          "startMs": 20320,
+          "endMs": 20480,
+          "timestampMs": 20400,
+          "confidence": null
+        },
+        {
+          "text": " changed",
+          "startMs": 20560,
+          "endMs": 20800,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20840,
+          "endMs": 20880,
+          "timestampMs": 20860,
+          "confidence": null
+        },
+        {
+          "text": " composition,",
+          "startMs": 20960,
+          "endMs": 21920,
+          "timestampMs": 21440,
+          "confidence": null
+        },
+        {
+          "text": " just",
+          "startMs": 22000,
+          "endMs": 22160,
+          "timestampMs": 22080,
+          "confidence": null
+        },
+        {
+          "text": " chosen",
+          "startMs": 22240,
+          "endMs": 22480,
+          "timestampMs": 22360,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 22560,
+          "endMs": 22640,
+          "timestampMs": 22600,
+          "confidence": null
+        },
+        {
+          "text": " convenient",
+          "startMs": 22760,
+          "endMs": 23200,
+          "timestampMs": 22980,
+          "confidence": null
+        },
+        {
+          "text": " sample",
+          "startMs": 23280,
+          "endMs": 23600,
+          "timestampMs": 23440,
+          "confidence": null
+        },
+        {
+          "text": " size.",
+          "startMs": 23680,
+          "endMs": 24440,
+          "timestampMs": 24060,
+          "confidence": null
+        },
+        {
+          "text": " If",
+          "startMs": 24720,
+          "endMs": 24880,
+          "timestampMs": 24800,
+          "confidence": null
+        },
+        {
+          "text": " actual",
+          "startMs": 25080,
+          "endMs": 25280,
+          "timestampMs": 25180,
+          "confidence": null
+        },
+        {
+          "text": " element",
+          "startMs": 25360,
+          "endMs": 25680,
+          "timestampMs": 25520,
+          "confidence": null
+        },
+        {
+          "text": " masses",
+          "startMs": 25760,
+          "endMs": 26080,
+          "timestampMs": 25920,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 26160,
+          "endMs": 26240,
+          "timestampMs": 26200,
+          "confidence": null
+        },
+        {
+          "text": " already",
+          "startMs": 26440,
+          "endMs": 26640,
+          "timestampMs": 26540,
+          "confidence": null
+        },
+        {
+          "text": " given,",
+          "startMs": 26800,
+          "endMs": 27360,
+          "timestampMs": 27080,
+          "confidence": null
+        },
+        {
+          "text": " use",
+          "startMs": 27440,
+          "endMs": 27600,
+          "timestampMs": 27520,
+          "confidence": null
+        },
+        {
+          "text": " them",
+          "startMs": 27680,
+          "endMs": 27760,
+          "timestampMs": 27720,
+          "confidence": null
+        },
+        {
+          "text": " directly.",
+          "startMs": 27960,
+          "endMs": 28960,
+          "timestampMs": 28460,
+          "confidence": null
+        },
+        {
+          "text": " Next,",
+          "startMs": 29200,
+          "endMs": 29760,
+          "timestampMs": 29480,
+          "confidence": null
+        },
+        {
+          "text": " dividing",
+          "startMs": 29840,
+          "endMs": 30320,
+          "timestampMs": 30080,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 30440,
+          "endMs": 30560,
+          "timestampMs": 30500,
+          "confidence": null
+        },
+        {
+          "text": " mass",
+          "startMs": 30640,
+          "endMs": 30880,
+          "timestampMs": 30760,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 30960,
+          "endMs": 31040,
+          "timestampMs": 31000,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 31160,
+          "endMs": 31280,
+          "timestampMs": 31220,
+          "confidence": null
+        },
+        {
+          "text": " own",
+          "startMs": 31360,
+          "endMs": 31520,
+          "timestampMs": 31440,
+          "confidence": null
+        },
+        {
+          "text": " molar",
+          "startMs": 31600,
+          "endMs": 31920,
+          "timestampMs": 31760,
+          "confidence": null
+        },
+        {
+          "text": " mass",
+          "startMs": 32000,
+          "endMs": 32320,
+          "timestampMs": 32160,
+          "confidence": null
+        },
+        {
+          "text": " puts",
+          "startMs": 32400,
+          "endMs": 32720,
+          "timestampMs": 32560,
+          "confidence": null
+        },
+        {
+          "text": " all",
+          "startMs": 32800,
+          "endMs": 32960,
+          "timestampMs": 32880,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 33040,
+          "endMs": 33200,
+          "timestampMs": 33120,
+          "confidence": null
+        },
+        {
+          "text": " elements",
+          "startMs": 33280,
+          "endMs": 33680,
+          "timestampMs": 33480,
+          "confidence": null
+        },
+        {
+          "text": " onto",
+          "startMs": 33760,
+          "endMs": 33920,
+          "timestampMs": 33840,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 34000,
+          "endMs": 34080,
+          "timestampMs": 34040,
+          "confidence": null
+        },
+        {
+          "text": " common",
+          "startMs": 34160,
+          "endMs": 34400,
+          "timestampMs": 34280,
+          "confidence": null
+        },
+        {
+          "text": " counting",
+          "startMs": 34480,
+          "endMs": 34880,
+          "timestampMs": 34680,
+          "confidence": null
+        },
+        {
+          "text": " scale:",
+          "startMs": 34960,
+          "endMs": 35760,
+          "timestampMs": 35360,
+          "confidence": null
+        },
+        {
+          "text": " moles.",
+          "startMs": 35840,
+          "endMs": 36640,
+          "timestampMs": 36240,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "worked-example",
+      "type": "workedExample",
+      "heading": "Find the empirical formula",
+      "question": "Composition: 40.00% C, 6.71% H, 53.29% O. Find the empirical formula. Use C 12.01, H 1.008, O 16.00 g mol⁻¹.",
+      "coachNote": "Use a 100 g basis and retain guard digits.",
+      "steps": [
+        "Convert the elemental masses to moles",
+        "Divide by the smallest unrounded amount",
+        "Recognise the whole-number atom ratio",
+        "Write the empirical formula"
+      ],
+      "durationInFrames": 997,
+      "caption": "Masses must become mole amounts before comparing atom ratios.",
+      "voiceover": {
+        "text": "The board shows those three conversions. Carbon gives about three point three three moles, hydrogen about six point six six, and oxygen about three point three three. Hydrogen's smaller mass contains nearly twice as many atoms. Dividing every amount by the smallest keeps their proportions but makes them easier to recognise. With the extra digits retained, the ratio is very close to one, two, one. So the empirical formula is C H two O.",
+        "audioFile": "public/audio/assembled/worked-example.d5e652c92076cdeef659.0f45ea1041d6.wav",
+        "startFrame": 0,
+        "endFrame": 958
+      },
+      "revealDelays": {
+        "heading": 16,
+        "coachNote": 32,
+        "stepsStart": 49,
+        "stepAts": [
+          32,
+          489,
+          680,
+          852
+        ]
+      },
+      "calculationPresentation": {
+        "task": "Find the empirical formula from composition",
+        "givens": [
+          {
+            "label": "Carbon (C)",
+            "value": "40.00%",
+            "reference": "M = 12.01 g mol⁻¹"
+          },
+          {
+            "label": "Hydrogen (H)",
+            "value": "6.71%",
+            "reference": "M = 1.008 g mol⁻¹"
+          },
+          {
+            "label": "Oxygen (O)",
+            "value": "53.29%",
+            "reference": "M = 16.00 g mol⁻¹"
+          }
+        ],
+        "note": "Choose a 100 g calculation basis. Retain unrounded amounts for the ratios.",
+        "stages": [
+          {
+            "label": "Convert each elemental mass to moles",
+            "lines": [
+              "n(C) = 40.00 ÷ 12.01 ≈ 3.3306 mol",
+              "n(H) = 6.71 ÷ 1.008 ≈ 6.6567 mol",
+              "n(O) = 53.29 ÷ 16.00 ≈ 3.3306 mol"
+            ],
+            "summary": "C: 3.3306 mol; H: 6.6567 mol; O: 3.3306 mol",
+            "lineAts": [
+              90,
+              187,
+              263
+            ]
+          },
+          {
+            "label": "Divide all amounts by the smallest",
+            "lines": [
+              "Using unrounded mole amounts:",
+              "C : H : O ≈ 1 : 1.99869 : 1.00002"
+            ],
+            "summary": "Normalised ratio: close to 1 : 2 : 1"
+          },
+          {
+            "label": "Recognise the simplest whole-number ratio",
+            "lines": [
+              "C : H : O = 1 : 2 : 1"
+            ],
+            "summary": "One carbon, two hydrogens, one oxygen"
+          },
+          {
+            "label": "Write the empirical formula",
+            "lines": [
+              "CH₂O"
+            ],
+            "summary": "Empirical formula: CH₂O"
+          }
+        ]
+      },
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 170.21276595744683,
+          "timestampMs": 85.10638297872342,
+          "confidence": null
+        },
+        {
+          "text": " board",
+          "startMs": 340.42553191489367,
+          "endMs": 510.6382978723404,
+          "timestampMs": 425.531914893617,
+          "confidence": null
+        },
+        {
+          "text": " shows",
+          "startMs": 680.8510638297873,
+          "endMs": 851.0638297872341,
+          "timestampMs": 765.9574468085107,
+          "confidence": null
+        },
+        {
+          "text": " those",
+          "startMs": 936.1702127659574,
+          "endMs": 1191.4893617021278,
+          "timestampMs": 1063.8297872340427,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 1276.595744680851,
+          "endMs": 1531.9148936170213,
+          "timestampMs": 1404.2553191489362,
+          "confidence": null
+        },
+        {
+          "text": " conversions.",
+          "startMs": 1617.021276595745,
+          "endMs": 2680.851063829787,
+          "timestampMs": 2148.9361702127662,
+          "confidence": null
+        },
+        {
+          "text": " Carbon",
+          "startMs": 2978.723404255319,
+          "endMs": 3404.2553191489365,
+          "timestampMs": 3191.489361702128,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 3489.3617021276596,
+          "endMs": 3659.574468085106,
+          "timestampMs": 3574.468085106383,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 3829.7872340425533,
+          "endMs": 4000,
+          "timestampMs": 3914.8936170212764,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 4085.106382978723,
+          "endMs": 4170.212765957447,
+          "timestampMs": 4127.659574468085,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 4340.425531914894,
+          "endMs": 4595.744680851064,
+          "timestampMs": 4468.08510638298,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 4680.8510638297885,
+          "endMs": 4851.063829787234,
+          "timestampMs": 4765.957446808511,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 5021.276595744681,
+          "endMs": 5191.489361702128,
+          "timestampMs": 5106.382978723404,
+          "confidence": null
+        },
+        {
+          "text": " moles,",
+          "startMs": 5361.702127659574,
+          "endMs": 6127.659574468085,
+          "timestampMs": 5744.680851063829,
+          "confidence": null
+        },
+        {
+          "text": " hydrogen",
+          "startMs": 6212.765957446809,
+          "endMs": 6723.404255319149,
+          "timestampMs": 6468.08510638298,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 6808.510638297873,
+          "endMs": 7148.936170212766,
+          "timestampMs": 6978.723404255319,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 7234.04255319149,
+          "endMs": 7319.148936170212,
+          "timestampMs": 7276.595744680852,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 7404.255319148937,
+          "endMs": 7659.574468085107,
+          "timestampMs": 7531.914893617022,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 7829.787234042554,
+          "endMs": 8000,
+          "timestampMs": 7914.893617021276,
+          "confidence": null
+        },
+        {
+          "text": " six,",
+          "startMs": 8170.212765957446,
+          "endMs": 8680.851063829788,
+          "timestampMs": 8425.531914893618,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8765.957446808512,
+          "endMs": 8851.063829787234,
+          "timestampMs": 8808.510638297874,
+          "confidence": null
+        },
+        {
+          "text": " oxygen",
+          "startMs": 8936.17021276596,
+          "endMs": 9531.914893617022,
+          "timestampMs": 9234.042553191492,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 9702.127659574468,
+          "endMs": 9872.340425531915,
+          "timestampMs": 9787.234042553191,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 9957.446808510638,
+          "endMs": 10127.659574468085,
+          "timestampMs": 10042.553191489362,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 10212.765957446809,
+          "endMs": 10468.08510638298,
+          "timestampMs": 10340.425531914894,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 10553.191489361703,
+          "endMs": 10638.297872340425,
+          "timestampMs": 10595.744680851065,
+          "confidence": null
+        },
+        {
+          "text": " three.",
+          "startMs": 10808.510638297874,
+          "endMs": 11744.68085106383,
+          "timestampMs": 11276.595744680852,
+          "confidence": null
+        },
+        {
+          "text": " Hydrogen's",
+          "startMs": 11829.787234042555,
+          "endMs": 12425.531914893618,
+          "timestampMs": 12127.659574468085,
+          "confidence": null
+        },
+        {
+          "text": " smaller",
+          "startMs": 12595.744680851065,
+          "endMs": 12851.063829787234,
+          "timestampMs": 12723.40425531915,
+          "confidence": null
+        },
+        {
+          "text": " mass",
+          "startMs": 12936.17021276596,
+          "endMs": 13276.595744680852,
+          "timestampMs": 13106.382978723406,
+          "confidence": null
+        },
+        {
+          "text": " contains",
+          "startMs": 13361.702127659577,
+          "endMs": 13787.234042553193,
+          "timestampMs": 13574.468085106386,
+          "confidence": null
+        },
+        {
+          "text": " nearly",
+          "startMs": 13829.787234042555,
+          "endMs": 14212.765957446809,
+          "timestampMs": 14021.276595744683,
+          "confidence": null
+        },
+        {
+          "text": " twice",
+          "startMs": 14297.872340425532,
+          "endMs": 14638.297872340425,
+          "timestampMs": 14468.08510638298,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 14723.404255319148,
+          "endMs": 14808.510638297874,
+          "timestampMs": 14765.957446808512,
+          "confidence": null
+        },
+        {
+          "text": " many",
+          "startMs": 14936.170212765957,
+          "endMs": 15063.829787234043,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " atoms.",
+          "startMs": 15148.936170212768,
+          "endMs": 16170.212765957447,
+          "timestampMs": 15659.574468085108,
+          "confidence": null
+        },
+        {
+          "text": " Dividing",
+          "startMs": 16297.872340425534,
+          "endMs": 16765.957446808512,
+          "timestampMs": 16531.914893617024,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 16851.063829787236,
+          "endMs": 17106.382978723403,
+          "timestampMs": 16978.723404255317,
+          "confidence": null
+        },
+        {
+          "text": " amount",
+          "startMs": 17319.148936170215,
+          "endMs": 17531.914893617024,
+          "timestampMs": 17425.531914893618,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 17574.468085106382,
+          "endMs": 17617.021276595744,
+          "timestampMs": 17595.744680851065,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17702.127659574468,
+          "endMs": 17872.34042553192,
+          "timestampMs": 17787.234042553195,
+          "confidence": null
+        },
+        {
+          "text": " smallest",
+          "startMs": 17957.44680851064,
+          "endMs": 18553.191489361703,
+          "timestampMs": 18255.31914893617,
+          "confidence": null
+        },
+        {
+          "text": " keeps",
+          "startMs": 18638.297872340427,
+          "endMs": 18893.617021276597,
+          "timestampMs": 18765.957446808512,
+          "confidence": null
+        },
+        {
+          "text": " their",
+          "startMs": 18978.72340425532,
+          "endMs": 19063.829787234044,
+          "timestampMs": 19021.276595744683,
+          "confidence": null
+        },
+        {
+          "text": " proportions",
+          "startMs": 19148.936170212768,
+          "endMs": 19829.787234042557,
+          "timestampMs": 19489.361702127662,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 20170.212765957447,
+          "endMs": 20255.31914893617,
+          "timestampMs": 20212.76595744681,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 20340.425531914894,
+          "endMs": 20510.638297872345,
+          "timestampMs": 20425.531914893618,
+          "confidence": null
+        },
+        {
+          "text": " them",
+          "startMs": 20595.744680851065,
+          "endMs": 20680.85106382979,
+          "timestampMs": 20638.297872340427,
+          "confidence": null
+        },
+        {
+          "text": " easier",
+          "startMs": 20765.957446808512,
+          "endMs": 21106.382978723406,
+          "timestampMs": 20936.17021276596,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 21191.489361702133,
+          "endMs": 21276.59574468085,
+          "timestampMs": 21234.04255319149,
+          "confidence": null
+        },
+        {
+          "text": " recognise.",
+          "startMs": 21446.808510638297,
+          "endMs": 22553.191489361703,
+          "timestampMs": 22000,
+          "confidence": null
+        },
+        {
+          "text": " With",
+          "startMs": 22638.297872340427,
+          "endMs": 22723.40425531915,
+          "timestampMs": 22680.85106382979,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22808.510638297874,
+          "endMs": 22893.617021276597,
+          "timestampMs": 22851.063829787236,
+          "confidence": null
+        },
+        {
+          "text": " extra",
+          "startMs": 22978.723404255325,
+          "endMs": 23234.042553191488,
+          "timestampMs": 23106.382978723406,
+          "confidence": null
+        },
+        {
+          "text": " digits",
+          "startMs": 23319.148936170215,
+          "endMs": 23574.468085106386,
+          "timestampMs": 23446.8085106383,
+          "confidence": null
+        },
+        {
+          "text": " retained,",
+          "startMs": 23659.57446808511,
+          "endMs": 24510.63829787234,
+          "timestampMs": 24085.106382978724,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24553.191489361703,
+          "endMs": 24595.744680851065,
+          "timestampMs": 24574.468085106382,
+          "confidence": null
+        },
+        {
+          "text": " ratio",
+          "startMs": 24680.85106382979,
+          "endMs": 25191.48936170213,
+          "timestampMs": 24936.17021276596,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 25276.595744680853,
+          "endMs": 25531.914893617024,
+          "timestampMs": 25404.25531914894,
+          "confidence": null
+        },
+        {
+          "text": " very",
+          "startMs": 25617.021276595744,
+          "endMs": 25872.34042553192,
+          "timestampMs": 25744.68085106383,
+          "confidence": null
+        },
+        {
+          "text": " close",
+          "startMs": 25957.44680851064,
+          "endMs": 26297.872340425532,
+          "timestampMs": 26127.659574468085,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 26382.978723404256,
+          "endMs": 26553.191489361703,
+          "timestampMs": 26468.08510638298,
+          "confidence": null
+        },
+        {
+          "text": " one,",
+          "startMs": 26638.297872340427,
+          "endMs": 26978.72340425532,
+          "timestampMs": 26808.510638297874,
+          "confidence": null
+        },
+        {
+          "text": " two,",
+          "startMs": 27106.382978723406,
+          "endMs": 27319.148936170215,
+          "timestampMs": 27212.765957446813,
+          "confidence": null
+        },
+        {
+          "text": " one.",
+          "startMs": 27404.255319148942,
+          "endMs": 28255.31914893617,
+          "timestampMs": 27829.787234042557,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 28382.978723404256,
+          "endMs": 28510.638297872345,
+          "timestampMs": 28446.8085106383,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 28680.85106382979,
+          "endMs": 28765.957446808512,
+          "timestampMs": 28723.40425531915,
+          "confidence": null
+        },
+        {
+          "text": " empirical",
+          "startMs": 28893.617021276597,
+          "endMs": 29276.59574468085,
+          "timestampMs": 29085.106382978724,
+          "confidence": null
+        },
+        {
+          "text": " formula",
+          "startMs": 29361.702127659577,
+          "endMs": 29872.340425531915,
+          "timestampMs": 29617.021276595748,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 30042.55319148936,
+          "endMs": 30212.76595744681,
+          "timestampMs": 30127.659574468085,
+          "confidence": null
+        },
+        {
+          "text": " C",
+          "startMs": 30297.872340425536,
+          "endMs": 30553.191489361703,
+          "timestampMs": 30425.531914893618,
+          "confidence": null
+        },
+        {
+          "text": " H",
+          "startMs": 30723.40425531915,
+          "endMs": 30978.723404255325,
+          "timestampMs": 30851.063829787236,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 31148.936170212768,
+          "endMs": 31234.042553191488,
+          "timestampMs": 31191.48936170213,
+          "confidence": null
+        },
+        {
+          "text": " O.",
+          "startMs": 31489.361702127662,
+          "endMs": 31914.893617021276,
+          "timestampMs": 31702.12765957447,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "molecular-extension",
+      "type": "workedExample",
+      "heading": "Extension: molecular formula",
+      "question": "For a single molecular substance with empirical formula CH₂O and molar mass 180.16 g mol⁻¹, find its molecular formula.",
+      "coachNote": "Molar mass supplies the scale. A formula does not uniquely identify a substance.",
+      "steps": [
+        "Empirical-formula molar mass = 12.01 + 2(1.008) + 16.00",
+        "Empirical-formula molar mass = 30.026 g mol⁻¹",
+        "Multiplier = 180.16 ÷ 30.026 ≈ 6",
+        "Multiply every subscript by 6: C₆H₁₂O₆",
+        "Result is consistent with glucose, but does not identify it."
+      ],
+      "durationInFrames": 1142,
+      "caption": "Molecular-formula inference is a related extension to the empirical-formula core.",
+      "voiceover": {
+        "text": "If the question also supplies a molecular molar mass, we can go one step further. Here it is one hundred and eighty point one six grams per mole. The empirical-formula molar mass is thirty point zero two six grams per mole. The supplied molar mass is about six times that value, so every subscript is multiplied by six. We get C six H twelve O six. Glucose has that molecular formula, but the formula alone doesn't prove the substance is glucose. How those atoms are arranged still matters.",
+        "audioFile": "public/audio/assembled/molecular-extension.ada0b412f64231becf25.3049cfc0f386.wav",
+        "startFrame": 0,
+        "endFrame": 1103
+      },
+      "revealDelays": {
+        "heading": 16,
+        "coachNote": 32,
+        "stepsStart": 48,
+        "stepAts": [
+          32,
+          309,
+          480,
+          692,
+          890
+        ]
+      },
+      "calculationPresentation": {
+        "task": "Extension: find the molecular formula",
+        "givens": [
+          {
+            "label": "Empirical formula",
+            "value": "CH₂O"
+          },
+          {
+            "label": "Molecular M",
+            "value": "180.16 g mol⁻¹"
+          }
+        ],
+        "references": [
+          {
+            "label": "M(C)",
+            "value": "12.01 g mol⁻¹"
+          },
+          {
+            "label": "M(H)",
+            "value": "1.008 g mol⁻¹"
+          },
+          {
+            "label": "M(O)",
+            "value": "16.00 g mol⁻¹"
+          }
+        ],
+        "note": "Use one whole-number multiplier.",
+        "stages": [
+          {
+            "label": "Find the mass of one empirical-formula amount",
+            "lines": [
+              "M(CH₂O) = 12.01 + 2(1.008) + 16.00"
+            ],
+            "summary": "Add the elemental contributions",
+            "retainedStageIndexes": []
+          },
+          {
+            "label": "Keep the empirical molar mass",
+            "lines": [
+              "M(CH₂O) = 30.026 g mol⁻¹"
+            ],
+            "summary": "Empirical-formula molar mass: 30.026 g mol⁻¹",
+            "retainedStageIndexes": []
+          },
+          {
+            "label": "Find the whole-number multiplier",
+            "lines": [
+              "180.16 ÷ 30.026 ≈ 6"
+            ],
+            "summary": "Molecular formula is 6 times the empirical ratio",
+            "retainedStageIndexes": [
+              1
+            ]
+          },
+          {
+            "label": "Multiply every subscript by the same number",
+            "lines": [
+              "(CH₂O) × 6 → C₆H₁₂O₆"
+            ],
+            "summary": "Molecular formula: C₆H₁₂O₆",
+            "retainedStageIndexes": [
+              2
+            ]
+          },
+          {
+            "label": "Keep the identification claim limited",
+            "lines": [
+              "Glucose has this molecular formula.",
+              "The formula alone does not identify a substance."
+            ],
+            "summary": "Formula is composition, not a unique identity",
+            "phases": [
+              {
+                "at": 890,
+                "label": "Formula alone does not identify the substance",
+                "lines": [
+                  "Glucose has this molecular formula."
+                ],
+                "lineAts": [
+                  890
+                ],
+                "retainedStageIndexes": [
+                  3
+                ]
+              },
+              {
+                "at": 1047,
+                "label": "Atom arrangement matters",
+                "lines": [
+                  "Same formula can describe different substances."
+                ],
+                "lineAts": [
+                  1047
+                ],
+                "retainedStageIndexes": [
+                  3
+                ]
+              }
+            ],
+            "retainedStageIndexes": [
+              3
+            ]
+          }
+        ]
+      },
+      "captions": [
+        {
+          "text": "If",
+          "startMs": 0,
+          "endMs": 170.21276595744683,
+          "timestampMs": 85.10638297872342,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 212.76595744680853,
+          "endMs": 255.3191489361702,
+          "timestampMs": 234.04255319148936,
+          "confidence": null
+        },
+        {
+          "text": " question",
+          "startMs": 340.42553191489367,
+          "endMs": 765.9574468085107,
+          "timestampMs": 553.1914893617022,
+          "confidence": null
+        },
+        {
+          "text": " also",
+          "startMs": 936.1702127659574,
+          "endMs": 1276.595744680851,
+          "timestampMs": 1106.3829787234042,
+          "confidence": null
+        },
+        {
+          "text": " supplies",
+          "startMs": 1361.7021276595747,
+          "endMs": 1787.2340425531916,
+          "timestampMs": 1574.4680851063831,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 1872.340425531915,
+          "endMs": 1914.8936170212767,
+          "timestampMs": 1893.6170212765958,
+          "confidence": null
+        },
+        {
+          "text": " molecular",
+          "startMs": 1957.4468085106384,
+          "endMs": 2468.0851063829787,
+          "timestampMs": 2212.7659574468084,
+          "confidence": null
+        },
+        {
+          "text": " molar",
+          "startMs": 2553.191489361702,
+          "endMs": 2893.617021276596,
+          "timestampMs": 2723.4042553191493,
+          "confidence": null
+        },
+        {
+          "text": " mass,",
+          "startMs": 3106.3829787234044,
+          "endMs": 3489.3617021276596,
+          "timestampMs": 3297.872340425532,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 3531.9148936170213,
+          "endMs": 3574.468085106383,
+          "timestampMs": 3553.191489361702,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 3659.574468085106,
+          "endMs": 3744.68085106383,
+          "timestampMs": 3702.127659574468,
+          "confidence": null
+        },
+        {
+          "text": " go",
+          "startMs": 3829.7872340425533,
+          "endMs": 3914.893617021277,
+          "timestampMs": 3872.340425531915,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 4085.106382978723,
+          "endMs": 4255.31914893617,
+          "timestampMs": 4170.212765957446,
+          "confidence": null
+        },
+        {
+          "text": " step",
+          "startMs": 4340.425531914894,
+          "endMs": 4595.744680851064,
+          "timestampMs": 4468.08510638298,
+          "confidence": null
+        },
+        {
+          "text": " further.",
+          "startMs": 4680.8510638297885,
+          "endMs": 5191.489361702128,
+          "timestampMs": 4936.170212765958,
+          "confidence": null
+        },
+        {
+          "text": " Here",
+          "startMs": 5872.340425531915,
+          "endMs": 6212.765957446809,
+          "timestampMs": 6042.553191489362,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 6382.978723404256,
+          "endMs": 6468.08510638298,
+          "timestampMs": 6425.531914893618,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 6553.191489361702,
+          "endMs": 6638.297872340426,
+          "timestampMs": 6595.744680851064,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 6723.404255319149,
+          "endMs": 6893.6170212765965,
+          "timestampMs": 6808.510638297873,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 6978.723404255319,
+          "endMs": 7234.04255319149,
+          "timestampMs": 7106.382978723404,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7319.148936170212,
+          "endMs": 7404.255319148937,
+          "timestampMs": 7361.702127659575,
+          "confidence": null
+        },
+        {
+          "text": " eighty",
+          "startMs": 7489.36170212766,
+          "endMs": 7744.680851063831,
+          "timestampMs": 7617.021276595746,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 7829.787234042554,
+          "endMs": 8000,
+          "timestampMs": 7914.893617021276,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 8170.212765957446,
+          "endMs": 8255.31914893617,
+          "timestampMs": 8212.765957446809,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 8510.63829787234,
+          "endMs": 8680.851063829788,
+          "timestampMs": 8595.744680851065,
+          "confidence": null
+        },
+        {
+          "text": " grams",
+          "startMs": 8851.063829787234,
+          "endMs": 9191.489361702128,
+          "timestampMs": 9021.27659574468,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 9276.595744680852,
+          "endMs": 9361.702127659577,
+          "timestampMs": 9319.148936170215,
+          "confidence": null
+        },
+        {
+          "text": " mole.",
+          "startMs": 9446.808510638299,
+          "endMs": 9872.340425531915,
+          "timestampMs": 9659.574468085106,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 10297.872340425532,
+          "endMs": 10340.425531914894,
+          "timestampMs": 10319.148936170213,
+          "confidence": null
+        },
+        {
+          "text": " empirical-formula",
+          "startMs": 10382.978723404256,
+          "endMs": 11489.361702127662,
+          "timestampMs": 10936.17021276596,
+          "confidence": null
+        },
+        {
+          "text": " molar",
+          "startMs": 11574.468085106384,
+          "endMs": 11829.787234042555,
+          "timestampMs": 11702.12765957447,
+          "confidence": null
+        },
+        {
+          "text": " mass",
+          "startMs": 11914.893617021276,
+          "endMs": 12255.31914893617,
+          "timestampMs": 12085.106382978724,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 12340.425531914894,
+          "endMs": 12595.744680851065,
+          "timestampMs": 12468.08510638298,
+          "confidence": null
+        },
+        {
+          "text": " thirty",
+          "startMs": 12680.851063829788,
+          "endMs": 12936.17021276596,
+          "timestampMs": 12808.510638297874,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 13106.382978723404,
+          "endMs": 13361.702127659577,
+          "timestampMs": 13234.042553191492,
+          "confidence": null
+        },
+        {
+          "text": " zero",
+          "startMs": 13446.808510638299,
+          "endMs": 13702.127659574471,
+          "timestampMs": 13574.468085106386,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 13872.340425531915,
+          "endMs": 14127.659574468085,
+          "timestampMs": 14000,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 14212.765957446809,
+          "endMs": 14468.08510638298,
+          "timestampMs": 14340.425531914894,
+          "confidence": null
+        },
+        {
+          "text": " grams",
+          "startMs": 14553.191489361703,
+          "endMs": 14893.617021276597,
+          "timestampMs": 14723.40425531915,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 14978.72340425532,
+          "endMs": 15063.829787234043,
+          "timestampMs": 15021.27659574468,
+          "confidence": null
+        },
+        {
+          "text": " mole.",
+          "startMs": 15148.936170212768,
+          "endMs": 15744.680851063831,
+          "timestampMs": 15446.8085106383,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 16000,
+          "endMs": 16085.106382978722,
+          "timestampMs": 16042.553191489362,
+          "confidence": null
+        },
+        {
+          "text": " supplied",
+          "startMs": 16170.212765957447,
+          "endMs": 16595.744680851065,
+          "timestampMs": 16382.978723404256,
+          "confidence": null
+        },
+        {
+          "text": " molar",
+          "startMs": 16680.85106382979,
+          "endMs": 16936.17021276596,
+          "timestampMs": 16808.510638297874,
+          "confidence": null
+        },
+        {
+          "text": " mass",
+          "startMs": 17021.27659574468,
+          "endMs": 17276.59574468085,
+          "timestampMs": 17148.936170212764,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 17361.702127659577,
+          "endMs": 17446.808510638297,
+          "timestampMs": 17404.255319148935,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 17617.021276595744,
+          "endMs": 17787.23404255319,
+          "timestampMs": 17702.127659574468,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 17957.44680851064,
+          "endMs": 18212.76595744681,
+          "timestampMs": 18085.106382978724,
+          "confidence": null
+        },
+        {
+          "text": " times",
+          "startMs": 18297.872340425532,
+          "endMs": 18638.297872340427,
+          "timestampMs": 18468.08510638298,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 18723.404255319154,
+          "endMs": 18808.51063829787,
+          "timestampMs": 18765.957446808512,
+          "confidence": null
+        },
+        {
+          "text": " value,",
+          "startMs": 18893.617021276597,
+          "endMs": 19659.57446808511,
+          "timestampMs": 19276.595744680853,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 19744.68085106383,
+          "endMs": 19914.893617021276,
+          "timestampMs": 19829.787234042553,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 20000.000000000004,
+          "endMs": 20340.425531914894,
+          "timestampMs": 20170.212765957447,
+          "confidence": null
+        },
+        {
+          "text": " subscript",
+          "startMs": 20425.531914893618,
+          "endMs": 20936.17021276596,
+          "timestampMs": 20680.85106382979,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 21021.276595744683,
+          "endMs": 21106.382978723406,
+          "timestampMs": 21063.829787234044,
+          "confidence": null
+        },
+        {
+          "text": " multiplied",
+          "startMs": 21191.489361702133,
+          "endMs": 21702.127659574468,
+          "timestampMs": 21446.8085106383,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 21787.234042553195,
+          "endMs": 21872.340425531915,
+          "timestampMs": 21829.787234042553,
+          "confidence": null
+        },
+        {
+          "text": " six.",
+          "startMs": 22042.55319148936,
+          "endMs": 22553.191489361703,
+          "timestampMs": 22297.872340425532,
+          "confidence": null
+        },
+        {
+          "text": " We",
+          "startMs": 23063.829787234044,
+          "endMs": 23148.936170212768,
+          "timestampMs": 23106.382978723406,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 23234.042553191488,
+          "endMs": 23404.25531914894,
+          "timestampMs": 23319.14893617021,
+          "confidence": null
+        },
+        {
+          "text": " C",
+          "startMs": 23744.68085106383,
+          "endMs": 23914.893617021276,
+          "timestampMs": 23829.787234042553,
+          "confidence": null
+        },
+        {
+          "text": " six",
+          "startMs": 24000,
+          "endMs": 24340.42553191489,
+          "timestampMs": 24170.212765957447,
+          "confidence": null
+        },
+        {
+          "text": " H",
+          "startMs": 24680.85106382979,
+          "endMs": 24936.170212765963,
+          "timestampMs": 24808.510638297877,
+          "confidence": null
+        },
+        {
+          "text": " twelve",
+          "startMs": 25021.27659574468,
+          "endMs": 25276.595744680853,
+          "timestampMs": 25148.936170212764,
+          "confidence": null
+        },
+        {
+          "text": " O",
+          "startMs": 25617.021276595744,
+          "endMs": 25787.23404255319,
+          "timestampMs": 25702.127659574468,
+          "confidence": null
+        },
+        {
+          "text": " six.",
+          "startMs": 25872.34042553192,
+          "endMs": 26638.297872340427,
+          "timestampMs": 26255.31914893617,
+          "confidence": null
+        },
+        {
+          "text": " Glucose",
+          "startMs": 26978.72340425532,
+          "endMs": 27574.468085106386,
+          "timestampMs": 27276.595744680853,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 27744.68085106383,
+          "endMs": 27914.893617021276,
+          "timestampMs": 27829.787234042553,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 28000.000000000004,
+          "endMs": 28085.106382978724,
+          "timestampMs": 28042.553191489365,
+          "confidence": null
+        },
+        {
+          "text": " molecular",
+          "startMs": 28170.212765957447,
+          "endMs": 28595.744680851065,
+          "timestampMs": 28382.978723404256,
+          "confidence": null
+        },
+        {
+          "text": " formula,",
+          "startMs": 28680.85106382979,
+          "endMs": 29617.021276595748,
+          "timestampMs": 29148.936170212768,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 29659.57446808511,
+          "endMs": 29702.12765957447,
+          "timestampMs": 29680.85106382979,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 29787.234042553195,
+          "endMs": 29872.340425531915,
+          "timestampMs": 29829.787234042553,
+          "confidence": null
+        },
+        {
+          "text": " formula",
+          "startMs": 29957.44680851064,
+          "endMs": 30382.978723404256,
+          "timestampMs": 30170.212765957447,
+          "confidence": null
+        },
+        {
+          "text": " alone",
+          "startMs": 30638.297872340427,
+          "endMs": 30893.617021276597,
+          "timestampMs": 30765.957446808512,
+          "confidence": null
+        },
+        {
+          "text": " doesn't",
+          "startMs": 31063.829787234044,
+          "endMs": 31489.361702127662,
+          "timestampMs": 31276.595744680853,
+          "confidence": null
+        },
+        {
+          "text": " prove",
+          "startMs": 31659.574468085113,
+          "endMs": 31829.787234042557,
+          "timestampMs": 31744.680851063837,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 31914.893617021276,
+          "endMs": 32000,
+          "timestampMs": 31957.44680851064,
+          "confidence": null
+        },
+        {
+          "text": " substance",
+          "startMs": 32085.106382978724,
+          "endMs": 32510.63829787234,
+          "timestampMs": 32297.872340425532,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 32553.191489361707,
+          "endMs": 32595.74468085107,
+          "timestampMs": 32574.46808510639,
+          "confidence": null
+        },
+        {
+          "text": " glucose.",
+          "startMs": 32680.851063829785,
+          "endMs": 33872.34042553192,
+          "timestampMs": 33276.59574468085,
+          "confidence": null
+        },
+        {
+          "text": " How",
+          "startMs": 33957.44680851064,
+          "endMs": 34042.55319148936,
+          "timestampMs": 34000,
+          "confidence": null
+        },
+        {
+          "text": " those",
+          "startMs": 34127.65957446808,
+          "endMs": 34297.872340425536,
+          "timestampMs": 34212.76595744681,
+          "confidence": null
+        },
+        {
+          "text": " atoms",
+          "startMs": 34382.97872340426,
+          "endMs": 34723.404255319154,
+          "timestampMs": 34553.19148936171,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 34765.95744680851,
+          "endMs": 34808.51063829788,
+          "timestampMs": 34787.234042553195,
+          "confidence": null
+        },
+        {
+          "text": " arranged",
+          "startMs": 34893.617021276594,
+          "endMs": 35574.46808510638,
+          "timestampMs": 35234.04255319149,
+          "confidence": null
+        },
+        {
+          "text": " still",
+          "startMs": 35744.68085106384,
+          "endMs": 36085.10638297873,
+          "timestampMs": 35914.893617021284,
+          "confidence": null
+        },
+        {
+          "text": " matters.",
+          "startMs": 36127.65957446809,
+          "endMs": 36765.95744680851,
+          "timestampMs": 36446.8085106383,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "misconception",
+      "type": "misconception",
+      "heading": "Keep the proportion",
+      "body": "Wrong: round 1:1.5 to 1:2. That changes the ratio.",
+      "secondary": "Correct: multiply both terms by 2 to get 2:3. The ratio stays the same.",
+      "mistakeTag": "Rounding can change the substance",
+      "callout": "Preserve every term together. Check unexpected ratios.",
+      "durationInFrames": 872,
+      "caption": "Multiplying all ratio terms preserves their proportions.",
+      "voiceover": {
+        "text": "A ratio of one to one point five can look awkward, but rounding it to one to two changes the proportion. Multiplying both values by two gives two to three and preserves it. The same idea helps with thirds and quarters. Keep the calculation digits until you can judge the pattern. Small departures from whole numbers can come from rounded measurements; an unexpected result is a reason to check the data, not force an answer.",
+        "audioFile": "public/audio/assembled/misconception.5a31c7bc3e9f4a0c50cc.1528f87c9104.wav",
+        "startFrame": 0,
+        "endFrame": 833
+      },
+      "revealDelays": {
+        "heading": 15,
+        "wrongCard": 45,
+        "rightCard": 221,
+        "callout": 461
+      },
+      "captions": [
+        {
+          "text": "A",
+          "startMs": 0,
+          "endMs": 80,
+          "timestampMs": 40,
+          "confidence": null
+        },
+        {
+          "text": " ratio",
+          "startMs": 320,
+          "endMs": 560,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 640,
+          "endMs": 720,
+          "timestampMs": 680,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 880,
+          "endMs": 1040,
+          "timestampMs": 960,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 1120,
+          "endMs": 1280,
+          "timestampMs": 1200,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 1360,
+          "endMs": 1440,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 1520,
+          "endMs": 1840,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 2040,
+          "endMs": 2240,
+          "timestampMs": 2140,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 2320,
+          "endMs": 2480,
+          "timestampMs": 2400,
+          "confidence": null
+        },
+        {
+          "text": " look",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " awkward,",
+          "startMs": 2800,
+          "endMs": 3600,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " rounding",
+          "startMs": 3840,
+          "endMs": 4160,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 4240,
+          "endMs": 4320,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 4360,
+          "endMs": 4400,
+          "timestampMs": 4380,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 4560,
+          "endMs": 4640,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 4720,
+          "endMs": 4960,
+          "timestampMs": 4840,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 5040,
+          "endMs": 5360,
+          "timestampMs": 5200,
+          "confidence": null
+        },
+        {
+          "text": " changes",
+          "startMs": 5520,
+          "endMs": 5920,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5960,
+          "endMs": 6000,
+          "timestampMs": 5980,
+          "confidence": null
+        },
+        {
+          "text": " proportion.",
+          "startMs": 6080,
+          "endMs": 7040,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " Multiplying",
+          "startMs": 7360,
+          "endMs": 7920,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 8000,
+          "endMs": 8240,
+          "timestampMs": 8120,
+          "confidence": null
+        },
+        {
+          "text": " values",
+          "startMs": 8440,
+          "endMs": 8640,
+          "timestampMs": 8540,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 8720,
+          "endMs": 8800,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 8960,
+          "endMs": 9280,
+          "timestampMs": 9120,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 9440,
+          "endMs": 9680,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 9760,
+          "endMs": 9840,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 10000,
+          "endMs": 10160,
+          "timestampMs": 10080,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 10360,
+          "endMs": 10560,
+          "timestampMs": 10460,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10720,
+          "endMs": 10800,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " preserves",
+          "startMs": 10880,
+          "endMs": 11280,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 11360,
+          "endMs": 11600,
+          "timestampMs": 11480,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 12240,
+          "endMs": 12320,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 12440,
+          "endMs": 12560,
+          "timestampMs": 12500,
+          "confidence": null
+        },
+        {
+          "text": " idea",
+          "startMs": 12640,
+          "endMs": 12960,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " helps",
+          "startMs": 13040,
+          "endMs": 13280,
+          "timestampMs": 13160,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 13360,
+          "endMs": 13440,
+          "timestampMs": 13400,
+          "confidence": null
+        },
+        {
+          "text": " thirds",
+          "startMs": 13520,
+          "endMs": 13920,
+          "timestampMs": 13720,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 14000,
+          "endMs": 14080,
+          "timestampMs": 14040,
+          "confidence": null
+        },
+        {
+          "text": " quarters.",
+          "startMs": 14160,
+          "endMs": 14800,
+          "timestampMs": 14480,
+          "confidence": null
+        },
+        {
+          "text": " Keep",
+          "startMs": 15360,
+          "endMs": 15520,
+          "timestampMs": 15440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15600,
+          "endMs": 15640,
+          "timestampMs": 15620,
+          "confidence": null
+        },
+        {
+          "text": " calculation",
+          "startMs": 15680,
+          "endMs": 16320,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " digits",
+          "startMs": 16400,
+          "endMs": 16800,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " until",
+          "startMs": 16880,
+          "endMs": 17200,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 17280,
+          "endMs": 17360,
+          "timestampMs": 17320,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 17440,
+          "endMs": 17520,
+          "timestampMs": 17480,
+          "confidence": null
+        },
+        {
+          "text": " judge",
+          "startMs": 17600,
+          "endMs": 17840,
+          "timestampMs": 17720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17920,
+          "endMs": 18000,
+          "timestampMs": 17960,
+          "confidence": null
+        },
+        {
+          "text": " pattern.",
+          "startMs": 18080,
+          "endMs": 18480,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " Small",
+          "startMs": 19120,
+          "endMs": 19360,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " departures",
+          "startMs": 19440,
+          "endMs": 20000,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 20080,
+          "endMs": 20160,
+          "timestampMs": 20120,
+          "confidence": null
+        },
+        {
+          "text": " whole",
+          "startMs": 20240,
+          "endMs": 20400,
+          "timestampMs": 20320,
+          "confidence": null
+        },
+        {
+          "text": " numbers",
+          "startMs": 20480,
+          "endMs": 20880,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 20960,
+          "endMs": 21040,
+          "timestampMs": 21000,
+          "confidence": null
+        },
+        {
+          "text": " come",
+          "startMs": 21120,
+          "endMs": 21280,
+          "timestampMs": 21200,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 21360,
+          "endMs": 21520,
+          "timestampMs": 21440,
+          "confidence": null
+        },
+        {
+          "text": " rounded",
+          "startMs": 21600,
+          "endMs": 22000,
+          "timestampMs": 21800,
+          "confidence": null
+        },
+        {
+          "text": " measurements;",
+          "startMs": 22080,
+          "endMs": 23040,
+          "timestampMs": 22560,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 23120,
+          "endMs": 23200,
+          "timestampMs": 23160,
+          "confidence": null
+        },
+        {
+          "text": " unexpected",
+          "startMs": 23280,
+          "endMs": 23840,
+          "timestampMs": 23560,
+          "confidence": null
+        },
+        {
+          "text": " result",
+          "startMs": 24080,
+          "endMs": 24320,
+          "timestampMs": 24200,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 24400,
+          "endMs": 24480,
+          "timestampMs": 24440,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 24560,
+          "endMs": 24600,
+          "timestampMs": 24580,
+          "confidence": null
+        },
+        {
+          "text": " reason",
+          "startMs": 24640,
+          "endMs": 24960,
+          "timestampMs": 24800,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 25040,
+          "endMs": 25120,
+          "timestampMs": 25080,
+          "confidence": null
+        },
+        {
+          "text": " check",
+          "startMs": 25200,
+          "endMs": 25440,
+          "timestampMs": 25320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 25520,
+          "endMs": 25600,
+          "timestampMs": 25560,
+          "confidence": null
+        },
+        {
+          "text": " data,",
+          "startMs": 25800,
+          "endMs": 26320,
+          "timestampMs": 26060,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 26400,
+          "endMs": 26640,
+          "timestampMs": 26520,
+          "confidence": null
+        },
+        {
+          "text": " force",
+          "startMs": 26800,
+          "endMs": 27040,
+          "timestampMs": 26920,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 27080,
+          "endMs": 27120,
+          "timestampMs": 27100,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 27200,
+          "endMs": 27760,
+          "timestampMs": 27480,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "quick-check",
+      "type": "quickCheck",
+      "heading": "A new pair of elements",
+      "question": "Approximately 30.45% N and 69.55% O by mass. Find the empirical formula. Use N 14.01 and O 16.00 g mol⁻¹.",
+      "pausePrompt": "Pause for time to calculate.",
+      "answerSteps": [
+        "Convert composition masses to moles",
+        "Divide both mole amounts by the smaller",
+        "Empirical formula NO₂"
+      ],
+      "durationInFrames": 1423,
+      "caption": "Find the simplest whole-number ratio from these mass percentages.",
+      "voiceover": {
+        "text": "Try a new pair of elements. A compound contains approximately thirty point four five percent nitrogen and sixty-nine point five five percent oxygen by mass. Find its empirical formula, using the supplied molar masses. Pause here if you'd like time to calculate it. On a hundred-gram basis, the nitrogen gives about two point one seven moles and the oxygen about four point three five. Dividing by the nitrogen amount gives approximately one to two. The empirical formula is N O two. If you compared the two masses directly, oxygen would look like just over twice the nitrogen. Converting to moles is what makes that comparison about atoms.",
+        "audioFile": "public/audio/assembled/quick-check.e89de2d6ea0c1d3a6322.eef24504c522.wav",
+        "startFrame": 0,
+        "endFrame": 1384
+      },
+      "revealDelays": {
+        "heading": 15,
+        "pauseBadge": 15,
+        "pausePrompt": 30,
+        "responseHoldStart": 524,
+        "answerVisibleStart": 584,
+        "stepAts": [
+          584,
+          837,
+          967
+        ]
+      },
+      "calculationPresentation": {
+        "task": "Find the empirical formula of this compound",
+        "givens": [
+          {
+            "label": "Nitrogen (N)",
+            "value": "30.45%",
+            "reference": "M = 14.01 g mol⁻¹"
+          },
+          {
+            "label": "Oxygen (O)",
+            "value": "69.55%",
+            "reference": "M = 16.00 g mol⁻¹"
+          }
+        ],
+        "note": "Percentages are by mass. A 100 g calculation basis gives 30.45 g N and 69.55 g O.",
+        "stages": [
+          {
+            "label": "Convert the composition masses to moles",
+            "lines": [
+              "n(N) = 30.45 ÷ 14.01 ≈ 2.1734 mol",
+              "n(O) = 69.55 ÷ 16.00 ≈ 4.3469 mol"
+            ],
+            "summary": "N: 2.1734 mol; O: 4.3469 mol",
+            "lineAts": [
+              637,
+              735
+            ]
+          },
+          {
+            "label": "Divide both amounts by the smaller",
+            "lines": [
+              "Using unrounded mole amounts:",
+              "N : O ≈ 1 : 2"
+            ],
+            "summary": "Simplest atom ratio: 1 : 2"
+          },
+          {
+            "label": "Write the empirical formula",
+            "lines": [
+              "NO₂"
+            ],
+            "summary": "Empirical formula: NO₂"
+          }
+        ]
+      },
+      "captions": [
+        {
+          "text": "Try",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " new",
+          "startMs": 560,
+          "endMs": 720,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " pair",
+          "startMs": 800,
+          "endMs": 960,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 1040,
+          "endMs": 1120,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " elements.",
+          "startMs": 1400,
+          "endMs": 1960,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 2240,
+          "endMs": 2400,
+          "timestampMs": 2320,
+          "confidence": null
+        },
+        {
+          "text": " compound",
+          "startMs": 2640,
+          "endMs": 2880,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " contains",
+          "startMs": 2960,
+          "endMs": 3360,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " approximately",
+          "startMs": 3720,
+          "endMs": 4080,
+          "timestampMs": 3900,
+          "confidence": null
+        },
+        {
+          "text": " thirty",
+          "startMs": 4240,
+          "endMs": 4480,
+          "timestampMs": 4360,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 4560,
+          "endMs": 4880,
+          "timestampMs": 4720,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 4960,
+          "endMs": 5040,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 5200,
+          "endMs": 5360,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " percent",
+          "startMs": 5440,
+          "endMs": 5760,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " nitrogen",
+          "startMs": 5840,
+          "endMs": 6400,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6720,
+          "endMs": 6960,
+          "timestampMs": 6840,
+          "confidence": null
+        },
+        {
+          "text": " sixty-nine",
+          "startMs": 7080,
+          "endMs": 7520,
+          "timestampMs": 7300,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 7680,
+          "endMs": 7920,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 8000,
+          "endMs": 8160,
+          "timestampMs": 8080,
+          "confidence": null
+        },
+        {
+          "text": " five",
+          "startMs": 8320,
+          "endMs": 8400,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " percent",
+          "startMs": 8560,
+          "endMs": 8800,
+          "timestampMs": 8680,
+          "confidence": null
+        },
+        {
+          "text": " oxygen",
+          "startMs": 8960,
+          "endMs": 9440,
+          "timestampMs": 9200,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 9520,
+          "endMs": 9600,
+          "timestampMs": 9560,
+          "confidence": null
+        },
+        {
+          "text": " mass.",
+          "startMs": 9680,
+          "endMs": 10480,
+          "timestampMs": 10080,
+          "confidence": null
+        },
+        {
+          "text": " Find",
+          "startMs": 10800,
+          "endMs": 11040,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 11120,
+          "endMs": 11200,
+          "timestampMs": 11160,
+          "confidence": null
+        },
+        {
+          "text": " empirical",
+          "startMs": 11320,
+          "endMs": 11680,
+          "timestampMs": 11500,
+          "confidence": null
+        },
+        {
+          "text": " formula,",
+          "startMs": 11840,
+          "endMs": 12560,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " using",
+          "startMs": 12720,
+          "endMs": 12880,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12960,
+          "endMs": 13000,
+          "timestampMs": 12980,
+          "confidence": null
+        },
+        {
+          "text": " supplied",
+          "startMs": 13040,
+          "endMs": 13520,
+          "timestampMs": 13280,
+          "confidence": null
+        },
+        {
+          "text": " molar",
+          "startMs": 13600,
+          "endMs": 13840,
+          "timestampMs": 13720,
+          "confidence": null
+        },
+        {
+          "text": " masses.",
+          "startMs": 13920,
+          "endMs": 14480,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 15040,
+          "endMs": 15280,
+          "timestampMs": 15160,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 15360,
+          "endMs": 15600,
+          "timestampMs": 15480,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 15680,
+          "endMs": 15760,
+          "timestampMs": 15720,
+          "confidence": null
+        },
+        {
+          "text": " you'd",
+          "startMs": 15800,
+          "endMs": 15920,
+          "timestampMs": 15860,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 16040,
+          "endMs": 16160,
+          "timestampMs": 16100,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 16280.000000000002,
+          "endMs": 16400,
+          "timestampMs": 16340,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 16440,
+          "endMs": 16480,
+          "timestampMs": 16460,
+          "confidence": null
+        },
+        {
+          "text": " calculate",
+          "startMs": 16560,
+          "endMs": 17040,
+          "timestampMs": 16800,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 17120,
+          "endMs": 17440,
+          "timestampMs": 17280,
+          "confidence": null
+        },
+        {
+          "text": " On",
+          "startMs": 19466.666666666664,
+          "endMs": 19551.773049645388,
+          "timestampMs": 19509.219858156026,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 19636.87943262411,
+          "endMs": 19721.985815602835,
+          "timestampMs": 19679.432624113473,
+          "confidence": null
+        },
+        {
+          "text": " hundred-gram",
+          "startMs": 19764.539007092197,
+          "endMs": 20317.730496453896,
+          "timestampMs": 20041.134751773046,
+          "confidence": null
+        },
+        {
+          "text": " basis,",
+          "startMs": 20402.836879432623,
+          "endMs": 21168.794326241135,
+          "timestampMs": 20785.81560283688,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21211.347517730494,
+          "endMs": 21253.900709219855,
+          "timestampMs": 21232.624113475176,
+          "confidence": null
+        },
+        {
+          "text": " nitrogen",
+          "startMs": 21339.00709219858,
+          "endMs": 21849.64539007092,
+          "timestampMs": 21594.32624113475,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 21934.751773049644,
+          "endMs": 22104.96453900709,
+          "timestampMs": 22019.858156028367,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 22190.070921985814,
+          "endMs": 22530.496453900705,
+          "timestampMs": 22360.283687943258,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 22615.602836879432,
+          "endMs": 22700.709219858156,
+          "timestampMs": 22658.156028368794,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 22870.921985815603,
+          "endMs": 23126.241134751774,
+          "timestampMs": 22998.58156028369,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 23211.347517730494,
+          "endMs": 23296.453900709217,
+          "timestampMs": 23253.900709219855,
+          "confidence": null
+        },
+        {
+          "text": " seven",
+          "startMs": 23466.666666666664,
+          "endMs": 23721.985815602835,
+          "timestampMs": 23594.32624113475,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 23892.198581560282,
+          "endMs": 24317.730496453896,
+          "timestampMs": 24104.964539007087,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 24487.943262411347,
+          "endMs": 24573.04964539007,
+          "timestampMs": 24530.49645390071,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24658.156028368794,
+          "endMs": 24743.262411347514,
+          "timestampMs": 24700.709219858152,
+          "confidence": null
+        },
+        {
+          "text": " oxygen",
+          "startMs": 24828.368794326238,
+          "endMs": 25424.113475177302,
+          "timestampMs": 25126.24113475177,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 25636.87943262411,
+          "endMs": 25849.64539007092,
+          "timestampMs": 25743.262411347518,
+          "confidence": null
+        },
+        {
+          "text": " four",
+          "startMs": 25934.751773049644,
+          "endMs": 26019.858156028367,
+          "timestampMs": 25977.304964539006,
+          "confidence": null
+        },
+        {
+          "text": " point",
+          "startMs": 26190.070921985814,
+          "endMs": 26445.390070921985,
+          "timestampMs": 26317.7304964539,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 26573.04964539007,
+          "endMs": 26700.709219858156,
+          "timestampMs": 26636.87943262411,
+          "confidence": null
+        },
+        {
+          "text": " five.",
+          "startMs": 26785.815602836876,
+          "endMs": 27551.77304964539,
+          "timestampMs": 27168.794326241135,
+          "confidence": null
+        },
+        {
+          "text": " Dividing",
+          "startMs": 27892.198581560282,
+          "endMs": 28317.730496453896,
+          "timestampMs": 28104.964539007087,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 28402.836879432623,
+          "endMs": 28487.94326241135,
+          "timestampMs": 28445.39007092199,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 28530.49645390071,
+          "endMs": 28573.04964539007,
+          "timestampMs": 28551.773049645388,
+          "confidence": null
+        },
+        {
+          "text": " nitrogen",
+          "startMs": 28658.156028368794,
+          "endMs": 29168.794326241135,
+          "timestampMs": 28913.475177304965,
+          "confidence": null
+        },
+        {
+          "text": " amount",
+          "startMs": 29253.900709219855,
+          "endMs": 29594.326241134753,
+          "timestampMs": 29424.113475177306,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 29679.432624113473,
+          "endMs": 29849.645390070917,
+          "timestampMs": 29764.539007092193,
+          "confidence": null
+        },
+        {
+          "text": " approximately",
+          "startMs": 30232.624113475176,
+          "endMs": 30615.602836879432,
+          "timestampMs": 30424.113475177306,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 30785.815602836876,
+          "endMs": 30956.028368794327,
+          "timestampMs": 30870.9219858156,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 31041.13475177305,
+          "endMs": 31296.453900709217,
+          "timestampMs": 31168.794326241135,
+          "confidence": null
+        },
+        {
+          "text": " two.",
+          "startMs": 31466.666666666664,
+          "endMs": 31721.985815602835,
+          "timestampMs": 31594.32624113475,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 32232.624113475176,
+          "endMs": 32317.730496453896,
+          "timestampMs": 32275.177304964534,
+          "confidence": null
+        },
+        {
+          "text": " empirical",
+          "startMs": 32402.836879432627,
+          "endMs": 32828.36879432624,
+          "timestampMs": 32615.602836879436,
+          "confidence": null
+        },
+        {
+          "text": " formula",
+          "startMs": 32913.47517730496,
+          "endMs": 33339.007092198575,
+          "timestampMs": 33126.24113475176,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 33594.32624113475,
+          "endMs": 33679.43262411348,
+          "timestampMs": 33636.87943262412,
+          "confidence": null
+        },
+        {
+          "text": " N",
+          "startMs": 33934.75177304964,
+          "endMs": 34190.07092198581,
+          "timestampMs": 34062.41134751773,
+          "confidence": null
+        },
+        {
+          "text": " O",
+          "startMs": 34360.283687943265,
+          "endMs": 34615.602836879436,
+          "timestampMs": 34487.943262411354,
+          "confidence": null
+        },
+        {
+          "text": " two.",
+          "startMs": 34700.70921985815,
+          "endMs": 35041.134751773054,
+          "timestampMs": 34870.9219858156,
+          "confidence": null
+        },
+        {
+          "text": " If",
+          "startMs": 35636.87943262411,
+          "endMs": 35721.985815602835,
+          "timestampMs": 35679.43262411347,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 35764.53900709219,
+          "endMs": 35807.09219858156,
+          "timestampMs": 35785.815602836876,
+          "confidence": null
+        },
+        {
+          "text": " compared",
+          "startMs": 35892.19858156028,
+          "endMs": 36317.73049645391,
+          "timestampMs": 36104.964539007095,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 36360.283687943265,
+          "endMs": 36402.83687943262,
+          "timestampMs": 36381.56028368794,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 36487.94326241135,
+          "endMs": 36658.156028368794,
+          "timestampMs": 36573.04964539007,
+          "confidence": null
+        },
+        {
+          "text": " masses",
+          "startMs": 36743.26241134752,
+          "endMs": 37083.687943262405,
+          "timestampMs": 36913.475177304965,
+          "confidence": null
+        },
+        {
+          "text": " directly,",
+          "startMs": 37168.794326241135,
+          "endMs": 38190.07092198582,
+          "timestampMs": 37679.43262411348,
+          "confidence": null
+        },
+        {
+          "text": " oxygen",
+          "startMs": 38275.177304964534,
+          "endMs": 38700.70921985815,
+          "timestampMs": 38487.94326241134,
+          "confidence": null
+        },
+        {
+          "text": " would",
+          "startMs": 38785.815602836876,
+          "endMs": 38870.9219858156,
+          "timestampMs": 38828.368794326234,
+          "confidence": null
+        },
+        {
+          "text": " look",
+          "startMs": 38956.02836879432,
+          "endMs": 39126.24113475177,
+          "timestampMs": 39041.13475177305,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 39211.34751773049,
+          "endMs": 39381.56028368795,
+          "timestampMs": 39296.453900709224,
+          "confidence": null
+        },
+        {
+          "text": " just",
+          "startMs": 39551.77304964539,
+          "endMs": 39807.09219858156,
+          "timestampMs": 39679.43262411347,
+          "confidence": null
+        },
+        {
+          "text": " over",
+          "startMs": 39892.19858156028,
+          "endMs": 40062.41134751773,
+          "timestampMs": 39977.304964539006,
+          "confidence": null
+        },
+        {
+          "text": " twice",
+          "startMs": 40147.51773049645,
+          "endMs": 40573.04964539007,
+          "timestampMs": 40360.28368794326,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 40658.156028368794,
+          "endMs": 40700.70921985815,
+          "timestampMs": 40679.43262411347,
+          "confidence": null
+        },
+        {
+          "text": " nitrogen.",
+          "startMs": 40743.26241134752,
+          "endMs": 41424.113475177306,
+          "timestampMs": 41083.68794326241,
+          "confidence": null
+        },
+        {
+          "text": " Converting",
+          "startMs": 41934.75177304965,
+          "endMs": 42360.283687943265,
+          "timestampMs": 42147.51773049646,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 42445.39007092199,
+          "endMs": 42530.49645390071,
+          "timestampMs": 42487.943262411354,
+          "confidence": null
+        },
+        {
+          "text": " moles",
+          "startMs": 42615.602836879436,
+          "endMs": 43126.24113475177,
+          "timestampMs": 42870.9219858156,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 43211.34751773049,
+          "endMs": 43296.45390070922,
+          "timestampMs": 43253.90070921986,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 43381.56028368795,
+          "endMs": 43551.77304964539,
+          "timestampMs": 43466.66666666667,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 43679.43262411348,
+          "endMs": 43807.09219858156,
+          "timestampMs": 43743.26241134752,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 43892.19858156028,
+          "endMs": 44062.41134751773,
+          "timestampMs": 43977.304964539006,
+          "confidence": null
+        },
+        {
+          "text": " comparison",
+          "startMs": 44147.51773049645,
+          "endMs": 44743.26241134752,
+          "timestampMs": 44445.39007092199,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 44913.475177304965,
+          "endMs": 45253.90070921986,
+          "timestampMs": 45083.68794326241,
+          "confidence": null
+        },
+        {
+          "text": " atoms.",
+          "startMs": 45339.00709219858,
+          "endMs": 46104.964539007095,
+          "timestampMs": 45721.985815602835,
+          "confidence": null
+        }
+      ],
+      "responseHold": {
+        "startFrame": 524,
+        "endFrame": 584
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "heading": "From mass to atom ratio",
+      "points": [
+        "Choose a basis, or use the supplied element masses.",
+        "Compare mole amounts to infer the simplest whole-number ratio.",
+        "Molecular molar mass supplies scale, but not unique identity."
+      ],
+      "finalPrompt": "Preserve the ratio. Check what the data actually establish.",
+      "durationInFrames": 1100,
+      "caption": "An empirical formula describes a ratio, not a complete substance identification.",
+      "voiceover": {
+        "text": "Composition questions connect mass to atom ratios. Choose a convenient basis, convert each element to moles, then find the simplest whole-number ratio without rounding the proportion away. A molecular molar mass can supply the scale for a molecular formula. And remember our starting puzzle: a ratio is a clue to composition, not a complete identification of the substance. Next, a balanced equation lets us compare amounts of different substances in a reaction. That is a different ratio, and it is where stoichiometry begins.",
+        "audioFile": "public/audio/assembled/summary.d5600b52d602f51f1778.4b365a758b96.wav",
+        "startFrame": 0,
+        "endFrame": 1061
+      },
+      "revealDelays": {
+        "heading": 15,
+        "takeawaysStart": 30,
+        "takeawayAts": [
+          116,
+          233,
+          389
+        ],
+        "finalPrompt": 761
+      },
+      "captions": [
+        {
+          "text": "Composition",
+          "startMs": 0,
+          "endMs": 535,
+          "timestampMs": 267.5,
+          "confidence": null
+        },
+        {
+          "text": " questions",
+          "startMs": 560,
+          "endMs": 1200,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " connect",
+          "startMs": 1280,
+          "endMs": 1600,
+          "timestampMs": 1440,
+          "confidence": null
+        },
+        {
+          "text": " mass",
+          "startMs": 1680,
+          "endMs": 2080,
+          "timestampMs": 1880,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 2120,
+          "endMs": 2160,
+          "timestampMs": 2140,
+          "confidence": null
+        },
+        {
+          "text": " atom",
+          "startMs": 2320,
+          "endMs": 2560,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " ratios.",
+          "startMs": 2640,
+          "endMs": 3560,
+          "timestampMs": 3100,
+          "confidence": null
+        },
+        {
+          "text": " Choose",
+          "startMs": 3840,
+          "endMs": 4080,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4120,
+          "endMs": 4160,
+          "timestampMs": 4140,
+          "confidence": null
+        },
+        {
+          "text": " convenient",
+          "startMs": 4240,
+          "endMs": 4640,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " basis,",
+          "startMs": 4720,
+          "endMs": 5600,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " convert",
+          "startMs": 5800,
+          "endMs": 6000,
+          "timestampMs": 5900,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 6160,
+          "endMs": 6320,
+          "timestampMs": 6240,
+          "confidence": null
+        },
+        {
+          "text": " element",
+          "startMs": 6400,
+          "endMs": 6720,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 6760,
+          "endMs": 6800,
+          "timestampMs": 6780,
+          "confidence": null
+        },
+        {
+          "text": " moles,",
+          "startMs": 6880,
+          "endMs": 7680,
+          "timestampMs": 7280,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 7760,
+          "endMs": 8000,
+          "timestampMs": 7880,
+          "confidence": null
+        },
+        {
+          "text": " find",
+          "startMs": 8240,
+          "endMs": 8400,
+          "timestampMs": 8320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8480,
+          "endMs": 8560,
+          "timestampMs": 8520,
+          "confidence": null
+        },
+        {
+          "text": " simplest",
+          "startMs": 8720,
+          "endMs": 9200,
+          "timestampMs": 8960,
+          "confidence": null
+        },
+        {
+          "text": " whole-number",
+          "startMs": 9280,
+          "endMs": 9760,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " ratio",
+          "startMs": 9840,
+          "endMs": 10320,
+          "timestampMs": 10080,
+          "confidence": null
+        },
+        {
+          "text": " without",
+          "startMs": 10480,
+          "endMs": 10880,
+          "timestampMs": 10680,
+          "confidence": null
+        },
+        {
+          "text": " rounding",
+          "startMs": 10960,
+          "endMs": 11280,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11320,
+          "endMs": 11360,
+          "timestampMs": 11340,
+          "confidence": null
+        },
+        {
+          "text": " proportion",
+          "startMs": 11440,
+          "endMs": 11840,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " away.",
+          "startMs": 11920,
+          "endMs": 12640,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 12960,
+          "endMs": 13040,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " molecular",
+          "startMs": 13080,
+          "endMs": 13600,
+          "timestampMs": 13340,
+          "confidence": null
+        },
+        {
+          "text": " molar",
+          "startMs": 13680,
+          "endMs": 14000,
+          "timestampMs": 13840,
+          "confidence": null
+        },
+        {
+          "text": " mass",
+          "startMs": 14160,
+          "endMs": 14320,
+          "timestampMs": 14240,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 14400,
+          "endMs": 14560,
+          "timestampMs": 14480,
+          "confidence": null
+        },
+        {
+          "text": " supply",
+          "startMs": 14760,
+          "endMs": 14960,
+          "timestampMs": 14860,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15000,
+          "endMs": 15040,
+          "timestampMs": 15020,
+          "confidence": null
+        },
+        {
+          "text": " scale",
+          "startMs": 15120,
+          "endMs": 15520,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 15600,
+          "endMs": 15680,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 15720,
+          "endMs": 15760,
+          "timestampMs": 15740,
+          "confidence": null
+        },
+        {
+          "text": " molecular",
+          "startMs": 15840,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16040,
+          "confidence": null
+        },
+        {
+          "text": " formula.",
+          "startMs": 16400,
+          "endMs": 17160,
+          "timestampMs": 16780,
+          "confidence": null
+        },
+        {
+          "text": " And",
+          "startMs": 17440,
+          "endMs": 17520,
+          "timestampMs": 17480,
+          "confidence": null
+        },
+        {
+          "text": " remember",
+          "startMs": 17720,
+          "endMs": 17920,
+          "timestampMs": 17820,
+          "confidence": null
+        },
+        {
+          "text": " our",
+          "startMs": 18000,
+          "endMs": 18080,
+          "timestampMs": 18040,
+          "confidence": null
+        },
+        {
+          "text": " starting",
+          "startMs": 18160,
+          "endMs": 18480,
+          "timestampMs": 18320,
+          "confidence": null
+        },
+        {
+          "text": " puzzle:",
+          "startMs": 18560,
+          "endMs": 19360,
+          "timestampMs": 18960,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 19400,
+          "endMs": 19440,
+          "timestampMs": 19420,
+          "confidence": null
+        },
+        {
+          "text": " ratio",
+          "startMs": 19520,
+          "endMs": 20080,
+          "timestampMs": 19800,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 20160,
+          "endMs": 20240,
+          "timestampMs": 20200,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 20320,
+          "endMs": 20400,
+          "timestampMs": 20360,
+          "confidence": null
+        },
+        {
+          "text": " clue",
+          "startMs": 20480,
+          "endMs": 20720,
+          "timestampMs": 20600,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 20800,
+          "endMs": 20880,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " composition,",
+          "startMs": 20960,
+          "endMs": 21840,
+          "timestampMs": 21400,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 21920,
+          "endMs": 22160,
+          "timestampMs": 22040,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 22240,
+          "endMs": 22320,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " complete",
+          "startMs": 22400,
+          "endMs": 22800,
+          "timestampMs": 22600,
+          "confidence": null
+        },
+        {
+          "text": " identification",
+          "startMs": 22880,
+          "endMs": 23600,
+          "timestampMs": 23240,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 23640,
+          "endMs": 23680,
+          "timestampMs": 23660,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 23760,
+          "endMs": 23800,
+          "timestampMs": 23780,
+          "confidence": null
+        },
+        {
+          "text": " substance.",
+          "startMs": 23840,
+          "endMs": 24920,
+          "timestampMs": 24380,
+          "confidence": null
+        },
+        {
+          "text": " Next,",
+          "startMs": 25360,
+          "endMs": 26080,
+          "timestampMs": 25720,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 26160,
+          "endMs": 26240,
+          "timestampMs": 26200,
+          "confidence": null
+        },
+        {
+          "text": " balanced",
+          "startMs": 26320,
+          "endMs": 26640,
+          "timestampMs": 26480,
+          "confidence": null
+        },
+        {
+          "text": " equation",
+          "startMs": 26800,
+          "endMs": 27360,
+          "timestampMs": 27080,
+          "confidence": null
+        },
+        {
+          "text": " lets",
+          "startMs": 27480,
+          "endMs": 27600,
+          "timestampMs": 27540,
+          "confidence": null
+        },
+        {
+          "text": " us",
+          "startMs": 27640,
+          "endMs": 27680,
+          "timestampMs": 27660,
+          "confidence": null
+        },
+        {
+          "text": " compare",
+          "startMs": 27760,
+          "endMs": 28160,
+          "timestampMs": 27960,
+          "confidence": null
+        },
+        {
+          "text": " amounts",
+          "startMs": 28360,
+          "endMs": 28600,
+          "timestampMs": 28480,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 28640,
+          "endMs": 28720,
+          "timestampMs": 28680,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 28800,
+          "endMs": 29120,
+          "timestampMs": 28960,
+          "confidence": null
+        },
+        {
+          "text": " substances",
+          "startMs": 29200,
+          "endMs": 29760,
+          "timestampMs": 29480,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 29840,
+          "endMs": 29920,
+          "timestampMs": 29880,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 29960,
+          "endMs": 30000,
+          "timestampMs": 29980,
+          "confidence": null
+        },
+        {
+          "text": " reaction.",
+          "startMs": 30280,
+          "endMs": 30640,
+          "timestampMs": 30460,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 31120,
+          "endMs": 31440,
+          "timestampMs": 31280,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 31520,
+          "endMs": 31600,
+          "timestampMs": 31560,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 31680,
+          "endMs": 31760,
+          "timestampMs": 31720,
+          "confidence": null
+        },
+        {
+          "text": " different",
+          "startMs": 31840,
+          "endMs": 32159.999999999996,
+          "timestampMs": 32000,
+          "confidence": null
+        },
+        {
+          "text": " ratio,",
+          "startMs": 32240.000000000004,
+          "endMs": 33040,
+          "timestampMs": 32640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 33080,
+          "endMs": 33120,
+          "timestampMs": 33100,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 33200,
+          "endMs": 33240,
+          "timestampMs": 33220,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 33280,
+          "endMs": 33360,
+          "timestampMs": 33320,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 33440,
+          "endMs": 33600,
+          "timestampMs": 33520,
+          "confidence": null
+        },
+        {
+          "text": " stoichiometry",
+          "startMs": 33680,
+          "endMs": 34480,
+          "timestampMs": 34080,
+          "confidence": null
+        },
+        {
+          "text": " begins.",
+          "startMs": 34560,
+          "endMs": 35360,
+          "timestampMs": 34960,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "syllabusNeutral": true,
+  "introDurationInFrames": 0,
+  "transitionDurationInFrames": 24
+}

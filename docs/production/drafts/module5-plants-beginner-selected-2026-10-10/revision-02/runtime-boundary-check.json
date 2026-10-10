@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/lesson.json",
+    "sha256": "543ffd4cd3f3ddb810d007b35279d70a39a0e6a48990646670214e63e5221e03"
+  },
+  "runtimeBindings": [
+    {
+      "path": "src/LessonVideo.tsx",
+      "sha256": "f86792588be7f08ec09b8ff4c1a7f90487809d6ecef5b67bfcd8e410b5f0dc99"
+    },
+    {
+      "path": "src/lesson/timeline.mjs",
+      "sha256": "6a397f94d35765d17972ed4519f51d9eea60ab1385e2a663c48a0e2842851512"
+    },
+    {
+      "path": "src/lesson/timing-constants.json",
+      "sha256": "c34b61a31cadec788dfee08495e51e16a40cedc2a276c9580b48f2c989285b57"
+    },
+    {
+      "path": "src/slides/ConceptSlide.tsx",
+      "sha256": "c77dd61bdae5a12de62cf0f64af13e842e1311e53f83c0b92ef3fb3070b08dd3"
+    },
+    {
+      "path": "src/slides/WorkedExampleSlide.tsx",
+      "sha256": "b88bc5a76011adbd579c62ddf01a578b1d31678eedd7407acad6b5e5a2db0acf"
+    },
+    {
+      "path": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "sha256": "092554d51375d0272482857f46115e810c7a6c427aa38490cea826cb2698d46f"
+    }
+  ],
+  "runtimeTransitionFrames": 24,
+  "estimatedPrompt": {
+    "globalStartFrame": 11282,
+    "globalEndFrame": 12785,
+    "plannedResponseStartFrame": 12401,
+    "plannedResponseEndFrame": 12761,
+    "plannedResponseFrames": 360,
+    "nonHoldTailFrames": 24
+  },
+  "feedbackGlobalStartFrame": 12761,
+  "samples": [
+    {
+      "globalFrame": 12400,
+      "promptLocalFrame": 1118,
+      "activeRuntimeScenes": [
+        {
+          "id": "b3-check-prompt",
+          "localFrame": 1118
+        }
+      ],
+      "feedbackMounted": false,
+      "markup": {
+        "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/runtime-global-12400.html",
+        "sha256": "8ed03a38dd770035a151c447531b983746f86b061d226e4477d1c8ebc051472f"
+      }
+    },
+    {
+      "globalFrame": 12401,
+      "promptLocalFrame": 1119,
+      "activeRuntimeScenes": [
+        {
+          "id": "b3-check-prompt",
+          "localFrame": 1119
+        }
+      ],
+      "feedbackMounted": false,
+      "markup": {
+        "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/runtime-global-12401.html",
+        "sha256": "ddff2cde1f437f6487306181a1278b824c66bea819bc178f41e60d36a3d9375f"
+      }
+    },
+    {
+      "globalFrame": 12760,
+      "promptLocalFrame": 1478,
+      "activeRuntimeScenes": [
+        {
+          "id": "b3-check-prompt",
+          "localFrame": 1478
+        }
+      ],
+      "feedbackMounted": false,
+      "markup": {
+        "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/runtime-global-12760.html",
+        "sha256": "7a8e1ba89fcf1f5fd0c9bb875d1d84deb20a5926ffc04a14b514a105382d3c4a"
+      }
+    },
+    {
+      "globalFrame": 12761,
+      "promptLocalFrame": 1479,
+      "activeRuntimeScenes": [
+        {
+          "id": "b3-check-prompt",
+          "localFrame": 1479
+        },
+        {
+          "id": "b3-check-feedback",
+          "localFrame": 0
+        }
+      ],
+      "feedbackMounted": true,
+      "markup": {
+        "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/runtime-global-12761.html",
+        "sha256": "cd488817c69e845652018c9614eb99bf9a8511ee7bec6c814f0b65d898628439"
+      }
+    },
+    {
+      "globalFrame": 12762,
+      "promptLocalFrame": 1480,
+      "activeRuntimeScenes": [
+        {
+          "id": "b3-check-prompt",
+          "localFrame": 1480
+        },
+        {
+          "id": "b3-check-feedback",
+          "localFrame": 1
+        }
+      ],
+      "feedbackMounted": true,
+      "markup": {
+        "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/runtime-global-12762.html",
+        "sha256": "52dde6968c0aded6416a5d4e4e0bb3d37eb1cfb60207bf59da162ef8e5712084"
+      }
+    },
+    {
+      "globalFrame": 12777,
+      "promptLocalFrame": 1495,
+      "activeRuntimeScenes": [
+        {
+          "id": "b3-check-prompt",
+          "localFrame": 1495
+        },
+        {
+          "id": "b3-check-feedback",
+          "localFrame": 16
+        }
+      ],
+      "feedbackMounted": true,
+      "markup": {
+        "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/runtime-global-12777.html",
+        "sha256": "8ff2bb980a7c691d49f262d046b7b28935f50c5f8958cee145b0566aa4cc8a1c"
+      }
+    }
+  ],
+  "method": "Actual lessonTimeline and actual LessonVideo rendered through actual Remotion Player with initialFrame and ReactDOMServer. No frame hooks, sequences or transitions mocked. CSS loading omitted for server markup only.",
+  "limitations": [
+    "Source/component mounting evidence only, not pixels or browser playback.",
+    "No selected audio or captions exist, so this does not prove actual answer-free silence or measured speech completion.",
+    "No continuous motion, device fit, caption clearance or listening claim."
+  ]
+}

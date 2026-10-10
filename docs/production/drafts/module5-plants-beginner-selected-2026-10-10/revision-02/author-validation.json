@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "status": "author correction frozen, separate independent review pending",
+  "role": "Author, not independent reviewer",
+  "source": {
+    "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/lesson.json",
+    "sha256": "543ffd4cd3f3ddb810d007b35279d70a39a0e6a48990646670214e63e5221e03"
+  },
+  "parentSource": {
+    "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/lesson.json",
+    "sha256": "ef61ae0d2fdf7ac0dbff1db569b98f7f67b01a161c49752c36c4f695dda3133b",
+    "disposition": "Preserved first candidate, changes required because its final 24 planned response frames overlap feedback."
+  },
+  "lessonChanges": [
+    {
+      "jsonPointer": "/transitionDurationInFrames",
+      "before": 0,
+      "after": "removed",
+      "reason": "Ignored by actual runtime; unsupported field."
+    },
+    {
+      "jsonPointer": "/scenes/9/responseHold",
+      "before": {
+        "startFrame": 1119,
+        "endFrame": 1479
+      },
+      "after": "removed",
+      "reason": "Unmeasured estimates belong in plan/brief, not measured responseHold."
+    },
+    {
+      "jsonPointer": "/scenes/9/durationInFrames",
+      "before": 1479,
+      "after": 1503,
+      "reason": "Add 24 non-hold tail frames after the planned 360-frame response interval to account for the actual transition overlap."
+    }
+  ],
+  "checks": {
+    "deepDiffRestrictedToThreeListedPaths": true,
+    "all11AcceptedSegmentsExact": true,
+    "spokenWords": 1081,
+    "allScreenConditionsAndBothDemandsUnchanged": true,
+    "allOtherSceneDurationsAndCuesUnchanged": true,
+    "propsDeepEqualLesson": true,
+    "originalPackageFilesUnchanged": true,
+    "unsupportedTransitionFieldAbsent": true,
+    "noUnmeasuredResponseHoldInSelectedSource": true,
+    "noAudioOrCaptionAdded": true,
+    "noSharedRuntimeChanged": true,
+    "noRenderOrPaidVoicePerformed": true,
+    "ownIndependentPassClaimed": false
+  },
+  "runtimeBoundaryEvidence": {
+    "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/runtime-boundary-check.json",
+    "sha256": "6f155f8ad76003a25953f9973721a636106131f4257ea3d767e00825dd129498",
+    "scope": "Actual runtime SSR component mounting at global boundaries, not native pixels, browser playback, sound or measured silence."
+  },
+  "planningInterval": {
+    "localStartFrame": 1119,
+    "localEndFrameExclusive": 1479,
+    "frames": 360,
+    "globalStartFrame": 12401,
+    "globalEndFrameExclusive": 12761,
+    "feedbackGlobalStartFrame": 12761,
+    "nonHoldTailFrames": 24,
+    "status": "Unmeasured estimate only"
+  },
+  "downstreamPending": [
+    "Different exact selected-source review",
+    "Essential spatial model integration and scientific review",
+    "Native/device/caption observations",
+    "Recording-stage brief check",
+    "Fresh voice and measured assembly with responseHold established only from actual audio",
+    "Exact voiced preview and separate listening",
+    "Full export and release gates"
+  ]
+}

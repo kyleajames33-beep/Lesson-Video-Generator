@@ -1,0 +1,1054 @@
+{
+  "schemaVersion": 1,
+  "status": "pass",
+  "reviewType": "Author exact-source, model-reference and synthetic React-markup checks only",
+  "source": {
+    "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/lesson.json",
+    "sha256": "8e6c7bdeaabda0d37c5ccff2a3db0cb4a11c2104db61c478269205dad1a003ba"
+  },
+  "preparation": {
+    "path": "docs/production/drafts/module5-beginner-preparation-2026-10-10/chemistry-c3.md",
+    "sha256": "22bcd7f9a2d7279dd2f7c8df7f9a9e091fcff11e23d4df20b4012d8420f98ff2"
+  },
+  "inputs": [
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/lesson.json",
+      "sha256": "8e6c7bdeaabda0d37c5ccff2a3db0cb4a11c2104db61c478269205dad1a003ba",
+      "bytes": 21070
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/remotion-props.json",
+      "sha256": "e681e528013fe5fabaabf6316030fdafc0c565accce9b3b7d1e4d8f0d70b60b1",
+      "bytes": 22028
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/production-brief.json",
+      "sha256": "42671cdba84a56552feb12c3440e32db2744094c7771282bb5a51d35016daa47",
+      "bytes": 23769
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/narration-plan.json",
+      "sha256": "c62ddce9274148804a62e26f4904c30365f8bd7f83bb44ca8e4a2b404b89b79a",
+      "bytes": 11963
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/traceability.json",
+      "sha256": "c80a81214e85a69bdf185939d7778f41fbdaf1482f3d30729189f71a81a656e5",
+      "bytes": 10256
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/visual-implementation-proposal.json",
+      "sha256": "322def33b542709f419cd88963d53224222bb4b7cd282169e96d5dfc4d47ad03",
+      "bytes": 5871
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/prepare-selected.mjs",
+      "sha256": "b812de3e47c6e5f83e0b105612274ed15e11c74c798e0fb9ca412e072188ac1d",
+      "bytes": 20238
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/check-author-package.mjs",
+      "sha256": "ae5bea5d58a8d957ce3156db710c4f829c5fccaea440783bd29af8b915a6c804",
+      "bytes": 10422
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/README.md",
+      "sha256": "03d9026a0fb3c1dbf16413eac775181de80609847d50645bc2370c7091cbdca8",
+      "bytes": 3575
+    }
+  ],
+  "results": {
+    "speechExactlyPreserved": true,
+    "spokenWords": 1184,
+    "recordingSegments": 12,
+    "scenes": 11,
+    "portablePropsExact": true,
+    "noAudioOrCaptionsOrMeasuredHolds": true,
+    "noProhibitedPunctuation": true,
+    "noUnsupportedOrFlawedDiagramAttached": true,
+    "meaningfulHookCardsAvoidGenericAtomFallback": true,
+    "twoDistinctCompleteAttempts": true,
+    "twoPlannedTwelveSecondIntervals": true,
+    "bulletAtSeconds": true,
+    "stageAndLineAtsLocalFrames": true,
+    "modelReferenceMath": true
+  },
+  "timeline": {
+    "fps": 30,
+    "introFrames": 0,
+    "introDurationMs": 0,
+    "durationInFrames": 16729,
+    "durationMs": 557633.3333333334,
+    "scenes": [
+      {
+        "scene": {
+          "id": "c3-title",
+          "type": "title",
+          "durationInFrames": 120,
+          "caption": "Disturbing equilibrium: concentration and temperature",
+          "syllabusDotPointIndex": -1
+        },
+        "startFrame": 0,
+        "endFrame": 120,
+        "audioStartMs": 0
+      },
+      {
+        "scene": {
+          "id": "c3-hook",
+          "durationInFrames": 1119,
+          "caption": "Separate the direct addition from the later reaction.",
+          "voiceover": {
+            "text": "Our mixture is already at equilibrium. A keeps changing into B, and B keeps changing into A. Rate means how much changes per unit time. At equilibrium, those opposing rates are equal, so the amounts stay steady. Now we briefly add more A. Does B increase at that same instant? No. We added A, not B. Any extra B has to be made by reaction. Keep those two moments separate: what we change directly, and what the reaction does afterwards."
+          },
+          "syllabusDotPointIndex": -1,
+          "type": "hook",
+          "heading": "Add A: what changes immediately?",
+          "body": "A ⇌ B. Brief addition, then close the mixture again.",
+          "comparison": [
+            {
+              "label": "Initial equilibrium",
+              "amount": "One-to-one model",
+              "mass": "A: 2; B: 1"
+            },
+            {
+              "label": "Brief addition",
+              "amount": "Fixed temperature and volume",
+              "mass": "Add A only"
+            }
+          ],
+          "comparisonIsPrompt": true,
+          "callout": "Extra B has to be made by reaction.",
+          "revealDelays": {
+            "heading": 12,
+            "body": 24,
+            "callout": 720
+          }
+        },
+        "startFrame": 96,
+        "endFrame": 1215,
+        "audioStartMs": 3200
+      },
+      {
+        "scene": {
+          "id": "c3-add",
+          "durationInFrames": 2032,
+          "caption": "Only A jumps. Reaction changes both concentrations afterwards.",
+          "voiceover": {
+            "text": "Use our simple one-to-one model: one A can become one B, and one B can become one A. In this model, each direction's rate depends on how much of its starting form is present. Concentration means amount per volume. We keep volume and temperature fixed, briefly add A, and close the container again. A's concentration rises immediately. B's does not. Straight after mixing, more A makes the A-to-B rate higher. The B-to-A rate is initially unchanged because B has not changed. So A is being used to make B faster than B is being used to make A. That is a net change towards B. A now falls from its jump, while B rises. Their changing concentrations bring the rates back towards equality. In this model, the new equilibrium has more A and more B than the original mixture. But A is lower than it was just after we added it."
+          },
+          "syllabusDotPointIndex": -1,
+          "type": "concept",
+          "heading": "Add A: direct change, then reaction",
+          "body": "A ⇌ B. Fixed temperature and volume.",
+          "bullets": [
+            {
+              "text": "A ⇌ B. Fixed temperature and volume.",
+              "at": 0.8
+            },
+            {
+              "text": "Only A rises immediately.",
+              "at": 22.733333333333334
+            },
+            {
+              "text": "A to B initially faster; B to A unchanged.",
+              "at": 25.733333333333334
+            },
+            {
+              "text": "A falls from its jump; B rises.",
+              "at": 45
+            },
+            {
+              "text": "Final: more A and B than originally, in this model.",
+              "at": 52.733333333333334
+            }
+          ],
+          "revealDelays": {
+            "heading": 12,
+            "body": 24
+          }
+        },
+        "startFrame": 1191,
+        "endFrame": 3223,
+        "audioStartMs": 39700
+      },
+      {
+        "scene": {
+          "id": "c3-remove",
+          "durationInFrames": 1710,
+          "caption": "Reset the experiment. Replacement is partial in this model.",
+          "voiceover": {
+            "text": "Start again from the original equilibrium. This time, remove some B and close the container again. B drops immediately because we took it out. A does not jump. With less B available, the B-to-A process initially slows. The A-to-B process is now faster, so more B is being made than used. B starts rising from its lowered value, while A falls. We call that response a shift to the right, towards B in our written equation. But compare B with its original level. In this model, it finishes below that level. The reaction replaces some of what we removed, not all of it. A rightward shift describes the reaction after the disturbance. It does not mean the final B concentration is higher than every earlier value."
+          },
+          "syllabusDotPointIndex": -1,
+          "type": "concept",
+          "heading": "Separate experiment: remove B",
+          "body": "A ⇌ B. Fixed temperature and volume; reclose.",
+          "bullets": [
+            {
+              "text": "A ⇌ B. Fixed temperature and volume; reclose.",
+              "at": 0.8
+            },
+            {
+              "text": "Only B drops immediately.",
+              "at": 6.866666666666666
+            },
+            {
+              "text": "B to A initially slower; A to B faster.",
+              "at": 12
+            },
+            {
+              "text": "B partly recovers, but remains below original.",
+              "at": 32.6
+            }
+          ],
+          "revealDelays": {
+            "heading": 12,
+            "body": 24
+          }
+        },
+        "startFrame": 3199,
+        "endFrame": 4909,
+        "audioStartMs": 106633.33333333334
+      },
+      {
+        "scene": {
+          "id": "c3-principle",
+          "durationInFrames": 1698,
+          "caption": "Same temperature, same equilibrium relationship.",
+          "voiceover": {
+            "text": "Le Chatelier's principle is a way to summarise these responses. A disturbed equilibrium tends to react in a direction that opposes the imposed change. Our model gives a reason: one direction is temporarily faster than the other. The mixture is not deciding to push back, and it does not undo the change completely. We also need a new term, the equilibrium constant, called K. It is a number describing the equilibrium relationship between the reacting substances for the reaction as written, at a particular temperature. We will build its expression in a later lesson. Adding or removing A or B changes the equilibrium concentrations, but it does not change K while the temperature stays the same. Different concentrations can still satisfy the same equilibrium relationship."
+          },
+          "syllabusDotPointIndex": -1,
+          "type": "concept",
+          "heading": "Same temperature: same K",
+          "body": "One direction is temporarily faster.",
+          "bullets": [
+            {
+              "text": "One direction is temporarily faster.",
+              "at": 0.8
+            },
+            {
+              "text": "K describes the equilibrium relationship.",
+              "at": 22.733333333333334
+            },
+            {
+              "text": "Adding or removing material at fixed temperature: same K.",
+              "at": 40.3
+            }
+          ],
+          "revealDelays": {
+            "heading": 12,
+            "body": 24
+          }
+        },
+        "startFrame": 4885,
+        "endFrame": 6583,
+        "audioStartMs": 162833.33333333334
+      },
+      {
+        "scene": {
+          "id": "c3-temperature",
+          "durationInFrames": 1788,
+          "caption": "Use the written heat-releasing direction to predict the response.",
+          "voiceover": {
+            "text": "Now keep the material inside and change the temperature instead. Two nitrogen dioxide molecules can join to form one dinitrogen tetroxide molecule. We call joining the forward direction in the displayed equation. It releases heat. A heat-releasing reaction is exothermic, and its enthalpy change is written as delta H. The negative sign identifies this forward reaction as heat-releasing. The reverse direction absorbs heat. That makes it endothermic. Heating favours the heat-absorbing direction in the new equilibrium, so this mixture ends with more nitrogen dioxide and less dinitrogen tetroxide. Cooling favours the heat-releasing direction and gives the opposite change. Nitrogen dioxide is brown and dinitrogen tetroxide is colourless, so the comparison has a visible chemical meaning. Heating does not always give more products. First identify which direction releases heat and which absorbs it."
+          },
+          "syllabusDotPointIndex": -1,
+          "type": "concept",
+          "heading": "Which direction releases heat?",
+          "body": "2NO₂(g) ⇌ N₂O₄(g). Closed; fixed volume.",
+          "bullets": [
+            {
+              "text": "2NO₂(g) ⇌ N₂O₄(g). Closed; fixed volume.",
+              "at": 0.8
+            },
+            {
+              "text": "Joining releases heat: exothermic, ΔH < 0.",
+              "at": 13.733333333333333
+            },
+            {
+              "text": "Splitting absorbs heat: endothermic.",
+              "at": 24.866666666666667
+            },
+            {
+              "text": "Heating favours splitting; cooling favours joining.",
+              "at": 28.733333333333334
+            }
+          ],
+          "revealDelays": {
+            "heading": 12,
+            "body": 24
+          }
+        },
+        "startFrame": 6559,
+        "endFrame": 8347,
+        "audioStartMs": 218633.3333333333
+      },
+      {
+        "scene": {
+          "id": "c3-temperature-response",
+          "durationInFrames": 1852,
+          "caption": "Temperature changes K; composition adjusts afterwards.",
+          "voiceover": {
+            "text": "Heating can make reactions happen more readily because more particles have enough energy to overcome reaction barriers. But the opposing rates need not increase by the same proportion. At the old composition, their balance can be lost, and one direction temporarily changes more substance than the other. Now separate the temperature change from the later composition change. In an idealised rapid temperature change at fixed volume, we have not added or removed nitrogen dioxide or dinitrogen tetroxide. Their concentrations therefore do not jump just because temperature changed. They change afterwards through reaction. K has a value for the new temperature straight away; it does not wait for the mixture to settle. For our written heat-releasing forward reaction, heating lowers K and cooling raises it. Hold the new temperature fixed while the concentrations approach the new equilibrium balance."
+          },
+          "syllabusDotPointIndex": -1,
+          "type": "concept",
+          "heading": "Temperature first, composition later",
+          "body": "Closed; fixed volume. No material added or removed.",
+          "bullets": [
+            {
+              "text": "Closed; fixed volume. No material added or removed.",
+              "at": 0.8
+            },
+            {
+              "text": "No imposed concentration jump. Reaction follows.",
+              "at": 33
+            },
+            {
+              "text": "K belongs to the new temperature immediately.",
+              "at": 39.43333333333333
+            },
+            {
+              "text": "Written exothermic forward reaction: heating lowers K.",
+              "at": 47.6
+            }
+          ],
+          "revealDelays": {
+            "heading": 12,
+            "body": 24
+          }
+        },
+        "startFrame": 8323,
+        "endFrame": 10175,
+        "audioStartMs": 277433.3333333333
+      },
+      {
+        "scene": {
+          "id": "c3-water",
+          "durationInFrames": 1248,
+          "caption": "An open oven can combine heating and water removal.",
+          "voiceover": {
+            "text": "One experimental boundary matters here. A hydrated material contains water within its structure. If we warm it in an open oven, some water may leave into the surrounding air. That combines two changes: heating and removal of a participating substance. The observation cannot tell us the effect of temperature alone. For a temperature-only comparison, keep the material contained and state which reaction direction releases heat. For a water-removal comparison, hold temperature fixed and identify the substance leaving. A colour change by itself does not tell us which controls were used."
+          },
+          "syllabusDotPointIndex": -1,
+          "type": "concept",
+          "heading": "An open oven can change two things",
+          "body": "Heating plus possible water removal.",
+          "bullets": [
+            {
+              "text": "Heating plus possible water removal.",
+              "at": 0.8
+            },
+            {
+              "text": "Heating only: material retained.",
+              "at": 21.433333333333334
+            },
+            {
+              "text": "Water removal only: temperature fixed.",
+              "at": 27.866666666666667
+            }
+          ],
+          "revealDelays": {
+            "heading": 12,
+            "body": 24
+          }
+        },
+        "startFrame": 10151,
+        "endFrame": 11399,
+        "audioStartMs": 338366.6666666667
+      },
+      {
+        "scene": {
+          "id": "c3-transfer-a",
+          "durationInFrames": 2186,
+          "caption": "Separate the imposed removal from the later reaction.",
+          "voiceover": {
+            "text": "Try this experiment on its own. Our one-to-one A and B model starts at equilibrium. Temperature and volume stay fixed. We remove some A, then close the container again. Which concentration changes immediately? Use the model's rate relationship to explain the direction of the reaction afterwards. Does K change? Pause here to work through those steps. Only A drops immediately, because only A was removed. Less A initially makes the A-to-B process slower. B has not changed yet, so the B-to-A rate is initially unchanged. B is now being converted to A faster than A is being converted to B. A starts recovering from its drop, while B decreases. K stays the same because the temperature stayed fixed. If you made both concentrations jump immediately, separate the removal we imposed from the reaction that follows."
+          },
+          "syllabusDotPointIndex": -1,
+          "type": "quickCheck",
+          "heading": "Separate experiment: remove A",
+          "question": "Remove A: what changes immediately? Explain the later direction. Does K change?",
+          "pausePrompt": "Pause to explain your reason.",
+          "answerSteps": [
+            "Only A drops immediately.",
+            "A to B initially slower. B to A initially unchanged.",
+            "B to A is initially faster. A partly recovers; B decreases.",
+            "K stays the same. Temperature stayed fixed."
+          ],
+          "calculationPresentation": {
+            "layout": "module5Evidence",
+            "captionSafeWorking": true,
+            "task": "Remove A: what changes immediately?",
+            "givens": [],
+            "stages": [
+              {
+                "label": "Immediate change",
+                "lines": [
+                  "Only A drops immediately."
+                ],
+                "summary": "Only A drops immediately.",
+                "lineAts": [
+                  1093
+                ]
+              },
+              {
+                "label": "Initial rate comparison",
+                "lines": [
+                  "A to B initially slower.",
+                  "B to A initially unchanged."
+                ],
+                "summary": "A to B initially slower. B to A initially unchanged.",
+                "lineAts": [
+                  1196,
+                  1299
+                ]
+              },
+              {
+                "label": "Reaction afterwards",
+                "lines": [
+                  "B to A is initially faster.",
+                  "A partly recovers; B decreases."
+                ],
+                "summary": "B to A is initially faster. A partly recovers; B decreases.",
+                "lineAts": [
+                  1453,
+                  1646
+                ]
+              },
+              {
+                "label": "Temperature and K",
+                "lines": [
+                  "K stays the same.",
+                  "Temperature stayed fixed."
+                ],
+                "summary": "K stays the same. Temperature stayed fixed.",
+                "lineAts": [
+                  1762,
+                  1839
+                ]
+              }
+            ],
+            "focusedContext": [
+              {
+                "at": 0,
+                "title": "A ⇌ B: one-for-one",
+                "lines": [
+                  "Initially at equilibrium",
+                  "Remove A, then reclose",
+                  "Fixed temperature and volume",
+                  "Each rate depends on its starting form"
+                ],
+                "task": "Remove A: what changes immediately?",
+                "secondaryTask": "Explain the later direction. Does K change?"
+              }
+            ]
+          },
+          "revealDelays": {
+            "heading": 12,
+            "responseHoldStart": 720,
+            "pausePrompt": 630,
+            "answerVisibleStart": 1080,
+            "stepAts": [
+              1093,
+              1196,
+              1453,
+              1762
+            ]
+          }
+        },
+        "startFrame": 11375,
+        "endFrame": 13561,
+        "audioStartMs": 379166.6666666667
+      },
+      {
+        "scene": {
+          "id": "c3-transfer-b",
+          "durationInFrames": 2007,
+          "caption": "Use the stated heat change and written reaction.",
+          "voiceover": {
+            "text": "Now use a separate experiment. A closed mixture starts at equilibrium for two nitrogen dioxide forming dinitrogen tetroxide. The displayed forward direction releases heat, so it is exothermic. We cool the mixture and keep its volume fixed. Will the new equilibrium contain more or less dinitrogen tetroxide? Will K be larger or smaller? Explain using the direction that releases heat. Pause here to give your reason. Cooling favours the direction that releases heat. Here that is the forward joining reaction, so the new equilibrium contains more dinitrogen tetroxide. For this written exothermic reaction, K is larger at the lower temperature. If you chose less product because cooling slows reactions, separate how quickly the mixture changes from the final equilibrium it approaches."
+          },
+          "syllabusDotPointIndex": -1,
+          "type": "quickCheck",
+          "heading": "Separate experiment: cool",
+          "question": "After cooling: more or less N₂O₄? Is K larger or smaller? Explain using heat release.",
+          "pausePrompt": "Pause to explain your reason.",
+          "answerSteps": [
+            "Cooling favours heat release. Here, that means joining.",
+            "More N₂O₄ at equilibrium.",
+            "K is larger at lower temperature."
+          ],
+          "calculationPresentation": {
+            "layout": "module5Evidence",
+            "captionSafeWorking": true,
+            "task": "After cooling: more or less N₂O₄?",
+            "givens": [],
+            "stages": [
+              {
+                "label": "Use the stated heat change",
+                "lines": [
+                  "Cooling favours heat release.",
+                  "Here, that means joining."
+                ],
+                "summary": "Cooling favours heat release. Here, that means joining.",
+                "lineAts": [
+                  1222,
+                  1299
+                ]
+              },
+              {
+                "label": "Composition after cooling",
+                "lines": [
+                  "More N₂O₄ at equilibrium."
+                ],
+                "summary": "More N₂O₄ at equilibrium.",
+                "lineAts": [
+                  1441
+                ]
+              },
+              {
+                "label": "K at the new temperature",
+                "lines": [
+                  "K is larger at lower temperature."
+                ],
+                "summary": "K is larger at lower temperature.",
+                "lineAts": [
+                  1557
+                ]
+              }
+            ],
+            "focusedContext": [
+              {
+                "at": 0,
+                "title": "2NO₂(g) ⇌ N₂O₄(g)",
+                "lines": [
+                  "Initially at equilibrium",
+                  "Closed; fixed volume",
+                  "Cool the mixture",
+                  "Forward releases heat: ΔH < 0"
+                ],
+                "task": "After cooling: more or less N₂O₄?",
+                "secondaryTask": "Is K larger or smaller? Explain using heat release."
+              }
+            ]
+          },
+          "revealDelays": {
+            "heading": 12,
+            "responseHoldStart": 849,
+            "pausePrompt": 759,
+            "answerVisibleStart": 1209,
+            "stepAts": [
+              1222,
+              1441,
+              1557
+            ]
+          }
+        },
+        "startFrame": 13537,
+        "endFrame": 15544,
+        "audioStartMs": 451233.3333333334
+      },
+      {
+        "scene": {
+          "id": "c3-summary",
+          "durationInFrames": 1209,
+          "caption": "Identify the disturbance before predicting the response.",
+          "voiceover": {
+            "text": "Start with what changed directly. Then ask which reaction direction is initially faster and how that changes the mixture afterwards. Adding or removing a substance can change its concentration immediately. Reaction changes the mixture later, and K stays the same if temperature stays fixed. For heating or cooling, first identify the heat-releasing and heat-absorbing directions. Temperature can change K as well as the final composition. Keep the written equation and conditions clear. Next, we will change the volume of gaseous equilibria and compare that with a catalyst."
+          },
+          "syllabusDotPointIndex": -1,
+          "type": "summary",
+          "heading": "Direct change, then reaction",
+          "points": [
+            "What changed directly?",
+            "Which direction is initially faster?",
+            "Same or changed temperature?"
+          ],
+          "finalPrompt": "Next: gaseous volume changes and catalysts.",
+          "revealDelays": {
+            "heading": 12,
+            "takeawayAts": [
+              13,
+              65,
+              566
+            ],
+            "finalPrompt": 926
+          }
+        },
+        "startFrame": 15520,
+        "endFrame": 16729,
+        "audioStartMs": 517333.3333333334
+      }
+    ],
+    "allTimingsEstimated": true
+  },
+  "renderedCases": [
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 0,
+      "activeStage": -1,
+      "resultOpacities": [],
+      "markupSha256": "f3fc4cceb2bd053d45f83460a15ef8f2dd3d8cfef0aaafa4e5c6447290aade6a"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 60,
+      "activeStage": -1,
+      "resultOpacities": [],
+      "markupSha256": "22ac7b1b51f2212dea3837ca85b8697268674b269615282d07c3d04467881445"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 720,
+      "activeStage": -1,
+      "resultOpacities": [],
+      "markupSha256": "0bc0c852466ff9e896c2d1564521f5a6f08a25b75a90d4b5cb4d4c7c8d944bc8"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1079,
+      "activeStage": -1,
+      "resultOpacities": [],
+      "markupSha256": "452a2f51a07e347d3393efa9f19427ea898e1d4c7c8386de42d3e26d6743ef55"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1080,
+      "activeStage": -1,
+      "resultOpacities": [],
+      "markupSha256": "0c30fd0e3aa5ebb2a1991db9c207717c9c0b77808c02e9ca218cbf87f5370709"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1093,
+      "activeStage": 0,
+      "resultOpacities": [
+        0
+      ],
+      "markupSha256": "66c001827fc684d5cf45883d32bc14cf89638612e1472087afe7f50d91a582ee"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1196,
+      "activeStage": 1,
+      "resultOpacities": [
+        0,
+        0
+      ],
+      "markupSha256": "d41014d9a78d1bfb148cf0ad5bdaeb1c4b684ffd6b8af67907d985b71bac4458"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1453,
+      "activeStage": 2,
+      "resultOpacities": [
+        0,
+        0
+      ],
+      "markupSha256": "337d4d15f9e1f4032050face4d5af2e88cdea3668493643efda120c223572355"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1762,
+      "activeStage": 3,
+      "resultOpacities": [
+        0,
+        0
+      ],
+      "markupSha256": "3833853b97e31ce278bb50ef40da49f03f95b1c865ca7311421269fae4bb1160"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1092,
+      "activeStage": -1,
+      "resultOpacities": [],
+      "markupSha256": "99c142a1f4712adbaa3df7b427098a1e6c0aaa39935e97f22454952d9c0b4432"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1109,
+      "activeStage": 0,
+      "resultOpacities": [
+        1
+      ],
+      "markupSha256": "5998c73a32921ea3f2afbaeaedd4a97169985193e995300494d1cde5b11d82e2"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1195,
+      "activeStage": 0,
+      "resultOpacities": [
+        1
+      ],
+      "markupSha256": "d7dba46d9b86e21a2762c679b9b6b94195bf9dc613213d54558fa2519d6e8a30"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1212,
+      "activeStage": 1,
+      "resultOpacities": [
+        1,
+        0
+      ],
+      "markupSha256": "5a1ff13ea105fa49163dc7f8bc2019eaf4ccd6b438e89da4839286cfce53a911"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1298,
+      "activeStage": 1,
+      "resultOpacities": [
+        1,
+        0
+      ],
+      "markupSha256": "5a1ff13ea105fa49163dc7f8bc2019eaf4ccd6b438e89da4839286cfce53a911"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1299,
+      "activeStage": 1,
+      "resultOpacities": [
+        1,
+        0
+      ],
+      "markupSha256": "5a1ff13ea105fa49163dc7f8bc2019eaf4ccd6b438e89da4839286cfce53a911"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1315,
+      "activeStage": 1,
+      "resultOpacities": [
+        1,
+        1
+      ],
+      "markupSha256": "c91167a9e8d0d0bd9a77f1741efa87509f6e1265775b0fb050b81a7edaa2a4a1"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1452,
+      "activeStage": 1,
+      "resultOpacities": [
+        1,
+        1
+      ],
+      "markupSha256": "c91167a9e8d0d0bd9a77f1741efa87509f6e1265775b0fb050b81a7edaa2a4a1"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1469,
+      "activeStage": 2,
+      "resultOpacities": [
+        1,
+        0
+      ],
+      "markupSha256": "589b6728c7c42c0d11d9dda3654f0eb09ccb29b6713b8ad0d2328177437b2937"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1645,
+      "activeStage": 2,
+      "resultOpacities": [
+        1,
+        0
+      ],
+      "markupSha256": "589b6728c7c42c0d11d9dda3654f0eb09ccb29b6713b8ad0d2328177437b2937"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1646,
+      "activeStage": 2,
+      "resultOpacities": [
+        1,
+        0
+      ],
+      "markupSha256": "589b6728c7c42c0d11d9dda3654f0eb09ccb29b6713b8ad0d2328177437b2937"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1662,
+      "activeStage": 2,
+      "resultOpacities": [
+        1,
+        1
+      ],
+      "markupSha256": "5f45db71762d779106aa5c8dddfb785733f2bcbed1ff0fb8c89f6aa15f9e7df4"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1761,
+      "activeStage": 2,
+      "resultOpacities": [
+        1,
+        1
+      ],
+      "markupSha256": "5f45db71762d779106aa5c8dddfb785733f2bcbed1ff0fb8c89f6aa15f9e7df4"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1778,
+      "activeStage": 3,
+      "resultOpacities": [
+        1,
+        0
+      ],
+      "markupSha256": "fc6f1f404c1cc10269a23948bc6383fe9808a08dc7ff6d27743941d371d5f2c9"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1838,
+      "activeStage": 3,
+      "resultOpacities": [
+        1,
+        0
+      ],
+      "markupSha256": "fc6f1f404c1cc10269a23948bc6383fe9808a08dc7ff6d27743941d371d5f2c9"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1839,
+      "activeStage": 3,
+      "resultOpacities": [
+        1,
+        0
+      ],
+      "markupSha256": "fc6f1f404c1cc10269a23948bc6383fe9808a08dc7ff6d27743941d371d5f2c9"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 1855,
+      "activeStage": 3,
+      "resultOpacities": [
+        1,
+        1
+      ],
+      "markupSha256": "fb30a9bdb61559b1bc6bc469260b7a3803d3aa402c9f2e395ca7514893b28f3e"
+    },
+    {
+      "sceneId": "c3-transfer-a",
+      "frame": 2126,
+      "activeStage": 3,
+      "resultOpacities": [
+        1,
+        1
+      ],
+      "markupSha256": "fb30a9bdb61559b1bc6bc469260b7a3803d3aa402c9f2e395ca7514893b28f3e"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 0,
+      "activeStage": -1,
+      "resultOpacities": [],
+      "markupSha256": "f6ae9acd85dee7b0a8f7c2d9180c1f276eb44f8419c8488a7d1a9db05eda55e2"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 60,
+      "activeStage": -1,
+      "resultOpacities": [],
+      "markupSha256": "9fb1396ed24863e05efb8b56a5a8ad3b3f6efd950320a81585465926fc101083"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 849,
+      "activeStage": -1,
+      "resultOpacities": [],
+      "markupSha256": "b82cdf9bfcda401b1b0e217097e70b4ee4e9448b57b5790f0c61d7e633cc35d0"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 1208,
+      "activeStage": -1,
+      "resultOpacities": [],
+      "markupSha256": "a634632a7d369691268da533d32ca23186f1dd0cd5dbc38bba0bddc90d20fe24"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 1209,
+      "activeStage": -1,
+      "resultOpacities": [],
+      "markupSha256": "f474c10d4da457164a92faf1b54afe8a505b5d373048ae097df700c3b06ce2dc"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 1222,
+      "activeStage": 0,
+      "resultOpacities": [
+        0,
+        0
+      ],
+      "markupSha256": "76dbdce94f0fb617367b0ee58035175fa8ca6753ee2df818753ec13b9708cc38"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 1441,
+      "activeStage": 1,
+      "resultOpacities": [
+        0
+      ],
+      "markupSha256": "8f33d54f3aad5ebdcf871d38c15ce50d882e7f9261a22969a9295d972041b782"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 1557,
+      "activeStage": 2,
+      "resultOpacities": [
+        0
+      ],
+      "markupSha256": "77ffea9153f3eb8a7a5128a69dda2c67cf2969698b7bdaf7ebd218179871422c"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 1221,
+      "activeStage": -1,
+      "resultOpacities": [],
+      "markupSha256": "911f63657cd53a86d19196fea59ae163aca90d5ae693b223437105b8f5b66979"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 1238,
+      "activeStage": 0,
+      "resultOpacities": [
+        1,
+        0
+      ],
+      "markupSha256": "03cba398f10d05c09d7c37adbe5365a213b7c33f32474bc5011eef72c11ce645"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 1298,
+      "activeStage": 0,
+      "resultOpacities": [
+        1,
+        0
+      ],
+      "markupSha256": "d875e9e1b67e1485d7d961de3a891a02d45acbca21556374e40bc4fde456766f"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 1299,
+      "activeStage": 0,
+      "resultOpacities": [
+        1,
+        0
+      ],
+      "markupSha256": "d875e9e1b67e1485d7d961de3a891a02d45acbca21556374e40bc4fde456766f"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 1315,
+      "activeStage": 0,
+      "resultOpacities": [
+        1,
+        1
+      ],
+      "markupSha256": "32f8dc9ad9a5b001f6f5024b4bb40bdf3fcad17bc4621776fb05d4a66552b7dc"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 1440,
+      "activeStage": 0,
+      "resultOpacities": [
+        1,
+        1
+      ],
+      "markupSha256": "32f8dc9ad9a5b001f6f5024b4bb40bdf3fcad17bc4621776fb05d4a66552b7dc"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 1457,
+      "activeStage": 1,
+      "resultOpacities": [
+        1
+      ],
+      "markupSha256": "daf2ab43bf3ddde4d825a88a8fe197f4da47a28f7246dbf68ac226f5da0ec920"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 1556,
+      "activeStage": 1,
+      "resultOpacities": [
+        1
+      ],
+      "markupSha256": "daf2ab43bf3ddde4d825a88a8fe197f4da47a28f7246dbf68ac226f5da0ec920"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 1573,
+      "activeStage": 2,
+      "resultOpacities": [
+        1
+      ],
+      "markupSha256": "3dc124f286556985a3ef6b60c8eacc8d3726f239574de69c2da3b009670e0e6d"
+    },
+    {
+      "sceneId": "c3-transfer-b",
+      "frame": 1947,
+      "activeStage": 2,
+      "resultOpacities": [
+        1
+      ],
+      "markupSha256": "3dc124f286556985a3ef6b60c8eacc8d3726f239574de69c2da3b009670e0e6d"
+    }
+  ],
+  "draftBrief": {
+    "ready": true,
+    "stage": "draft",
+    "blockers": [],
+    "pending": [
+      {
+        "code": "BRIEF_REVIEW_PENDING",
+        "detail": "Script/source review: pending"
+      },
+      {
+        "code": "BRIEF_REVIEW_PENDING",
+        "detail": "Exact voiced preview: pending"
+      },
+      {
+        "code": "BRIEF_REVIEW_PENDING",
+        "detail": "Human listening: pending"
+      }
+    ],
+    "source": {
+      "lessonPath": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/lesson.json",
+      "lessonSha256": "8e6c7bdeaabda0d37c5ccff2a3db0cb4a11c2104db61c478269205dad1a003ba"
+    },
+    "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+  },
+  "recordingBrief": {
+    "ready": false,
+    "stage": "recording",
+    "blockers": [
+      {
+        "code": "BRIEF_REVIEW_PENDING",
+        "detail": "Script/source review: pending"
+      }
+    ],
+    "pending": [
+      {
+        "code": "BRIEF_REVIEW_PENDING",
+        "detail": "Exact voiced preview: pending"
+      },
+      {
+        "code": "BRIEF_REVIEW_PENDING",
+        "detail": "Human listening: pending"
+      }
+    ],
+    "source": {
+      "lessonPath": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/lesson.json",
+      "lessonSha256": "8e6c7bdeaabda0d37c5ccff2a3db0cb4a11c2104db61c478269205dad1a003ba"
+    },
+    "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+  },
+  "lessonValidation": {
+    "exitCode": 0,
+    "stdout": "\nC:\\lesson-video-generator\\docs\\production\\drafts\\module5-c3-beginner-selected-2026-10-10\\lesson.json\n  warning: scene[2] (c3-add): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[3] (c3-remove): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[4] (c3-principle): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[5] (c3-temperature): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[6] (c3-temperature-response): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[7] (c3-water): consider adding \"callout\" (student-thinking prompt)\n  warning: lesson should include a \"misconception\" scene\n",
+    "stderr": ""
+  },
+  "limitations": [
+    "No independent exact-selected-source pass.",
+    "Six accepted staged visual treatments remain blocked pending isolated implementation.",
+    "Synthetic SSR verifies DOM gates and retained prompts, not native glyph bounds, actual audio/caption timing, device fit, continuous playback, human listening or learner comprehension.",
+    "Model mathematics checks silent references, not any implemented graph simulation."
+  ]
+}

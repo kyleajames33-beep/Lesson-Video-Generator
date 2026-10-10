@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "Codex Sol 6.1 independent selected-source review",
+  "status": "pass-current-supported-source-only",
+  "scope": "Exact silent selected JSON, recorded-word selection before recording, estimated response/source gates and declared science/route boundaries. No completed essential staged visual, native/render/audio/recording approval.",
+  "inputs": [
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/lesson.json",
+      "sha256": "8e6c7bdeaabda0d37c5ccff2a3db0cb4a11c2104db61c478269205dad1a003ba"
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/remotion-props.json",
+      "sha256": "e681e528013fe5fabaabf6316030fdafc0c565accce9b3b7d1e4d8f0d70b60b1"
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/production-brief.json",
+      "sha256": "42671cdba84a56552feb12c3440e32db2744094c7771282bb5a51d35016daa47"
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/narration-plan.json",
+      "sha256": "c62ddce9274148804a62e26f4904c30365f8bd7f83bb44ca8e4a2b404b89b79a"
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/traceability.json",
+      "sha256": "c80a81214e85a69bdf185939d7778f41fbdaf1482f3d30729189f71a81a656e5"
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/visual-implementation-proposal.json",
+      "sha256": "322def33b542709f419cd88963d53224222bb4b7cd282169e96d5dfc4d47ad03"
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/author-checks.json",
+      "sha256": "a56e30ac4034fcc8162915ac774d236f5f725acdfef628b3ade12d7d22750886"
+    },
+    {
+      "path": "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/revision.json",
+      "sha256": "4e6781dbd49cac57074e47fe47d41b617087e6fd30f1a9264de2f41c3386ab34"
+    }
+  ],
+  "preparation": {
+    "path": "docs/production/drafts/module5-beginner-preparation-2026-10-10/chemistry-c3.md",
+    "sha256": "22bcd7f9a2d7279dd2f7c8df7f9a9e091fcff11e23d4df20b4012d8420f98ff2"
+  },
+  "verified": {
+    "words": 1184,
+    "speechSegments": 12,
+    "scenes": 11,
+    "acceptedSpeechExactlyPreserved": true,
+    "propsBriefTraceabilityBinding": true,
+    "separateCompleteAttempts": true,
+    "estimatedResponseIntervals": [
+      {
+        "sceneId": "c3-transfer-a",
+        "startFrame": 720,
+        "endFrame": 1080,
+        "frames": 360,
+        "seconds": 12,
+        "status": "planning-estimate-not-measured",
+        "audioAssemblyRequired": "Separate prompt and feedback takes with twelve seconds of assembled silence after accepted prompt audio."
+      },
+      {
+        "sceneId": "c3-transfer-b",
+        "startFrame": 849,
+        "endFrame": 1209,
+        "frames": 360,
+        "seconds": 12,
+        "status": "planning-estimate-not-measured",
+        "audioAssemblyRequired": "Separate prompt and feedback takes with twelve seconds of assembled silence after accepted prompt audio."
+      }
+    ],
+    "everyAnswerStageLineAtAfterOwnEstimatedBoundary": true,
+    "noOldAudioCaptionsMeasuredResponseHoldOrDiagram": true,
+    "meaningfulHookComparisonAvoidsGenericAtomDefault": true,
+    "noEmDash": true
+  },
+  "science": {
+    "additionModel": {
+      "initial": [
+        2,
+        1
+      ],
+      "afterAOnlyAddition": [
+        5,
+        1
+      ],
+      "exactLimit": [
+        4,
+        2
+      ],
+      "fixedRateCoefficients": [
+        1,
+        2
+      ]
+    },
+    "removalModel": {
+      "initial": [
+        2,
+        1
+      ],
+      "afterBOnlyRemoval": [
+        2,
+        0.5
+      ],
+      "exactLimit": [
+        "5/3",
+        "5/6"
+      ],
+      "fixedRateCoefficients": [
+        1,
+        2
+      ]
+    },
+    "plainTerms": [
+      "rate",
+      "concentration",
+      "equilibrium constant K",
+      "exothermic",
+      "endothermic",
+      "forward/reverse direction",
+      "hydrated material"
+    ],
+    "limits": "Declared model rate laws only; no universal stoichiometric rate law; no numerical K teaching or finite exact equilibrium claim."
+  },
+  "recordingBlockers": [
+    {
+      "code": "essential-staged-visuals-not-implemented",
+      "scenes": [
+        "c3-hook",
+        "c3-add",
+        "c3-remove",
+        "c3-principle",
+        "c3-temperature",
+        "c3-temperature-response"
+      ],
+      "status": "changes-required"
+    },
+    {
+      "code": "fresh-recording-and-actual-alignment-not-created",
+      "status": "pending"
+    },
+    {
+      "code": "actual-native-voiced-device-and-caption-review",
+      "status": "pending"
+    }
+  ],
+  "newSourceBlockers": [],
+  "notApproved": [
+    "Six essential staged graph/reference/association treatments",
+    "Recording readiness",
+    "Actual measured response silence or cues",
+    "Native fit or continuous visual playback",
+    "Human listening",
+    "Practical/complete syllabus action coverage",
+    "Full export or public release"
+  ],
+  "primaryCrossCheck": {
+    "url": "https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle",
+    "scope": "Independent factual cross-check of rate imbalance and temperature-dependent equilibrium relationship, not practical coverage."
+  }
+}

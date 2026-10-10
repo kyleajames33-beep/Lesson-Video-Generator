@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "status": "essential-spatial-integration-blocked-pending-root-and-independent-review",
+  "selectedSource": {
+    "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/lesson.json",
+    "sha256": "543ffd4cd3f3ddb810d007b35279d70a39a0e6a48990646670214e63e5221e03"
+  },
+  "selectedSourceCurrentlyUses": "Existing concise supported boards; no unmodified legacy diagram or unsupported kind selected.",
+  "forbiddenDefault": {
+    "path": "src/slides/diagrams/kinds/bio-y12-m5/FlowerDiagram.tsx",
+    "sha256": "749fa2399823f135c86cf9425c250878f09a0122533e5092fbc80bf6617c0640",
+    "reason": "Hardcoded whole-ovule-to-zygote, seed-varied and runner-identical-clone claims; small embedded split-panel labels. Retiming does not repair structures or semantics. Existing historical defaults must remain preserved."
+  },
+  "boundedCodeProposal": {
+    "owner": "Root-selected implementation role, not this author",
+    "approach": "Add an opt-in native plant mechanism board or a corrected selected consumer of flower/runner motifs. Reuse the editorial tokens, stable large labels and existing useful art. Do not replace catalogue defaults.",
+    "proposedComponent": "src/slides/diagrams/kinds/bio-y12-m5/PlantReproductionBoard.tsx (not created)",
+    "proposedRegistryKind": "bioM5PlantReproduction (not registered or selected)",
+    "proposedProps": {
+      "mode": "locations | delivery | seed | runner | selfCross",
+      "at": "Semantic local frame cues resolved from fresh selected alignment; account for any renderer delay exactly once.",
+      "modelScope": "Embryo-forming sperm-egg fusion focus, not full angiosperm life cycle."
+    }
+  },
+  "essentialModes": [
+    {
+      "sceneId": "b3-flower",
+      "mode": "locations",
+      "requirements": [
+        "Anther makes pollen; stigma receives pollen, neither is a gamete.",
+        "Stigma/style/ovary maintain orientation; introduce a nested inset for ovule, embryo sac and egg.",
+        "Ovary contains ovules; ovule contains embryo sac; egg is inside that sac. Containment is not a transformation.",
+        "Pollen grain differs from sperm cell. Stage landmarks and close-up labels instead of seven simultaneous labels on a small flower."
+      ]
+    },
+    {
+      "sceneId": "b3-delivery",
+      "mode": "delivery",
+      "requirements": [
+        "Pollen remains at stigma while a tube provides a route through style towards ovule.",
+        "Separately labelled sperm travels through the route to embryo sac and egg; the entire pollen grain does not become sperm or pass through the egg.",
+        "Show sperm-egg fusion forming a zygote as a cell inset, retaining the surrounding ovule.",
+        "Stop transfer, tube delivery and fusion at separately spoken cues; arrival alone is not completed fusion."
+      ]
+    },
+    {
+      "sceneId": "b3-seed",
+      "mode": "seed",
+      "requirements": [
+        "Zygote divides/develops into embryo; retain the embryo inside a seed boundary.",
+        "Surrounding ovule develops into seed, not into zygote; seed coat is not drawn as generated only by the zygote.",
+        "Ovary-to-fruit is separate and qualified usually.",
+        "State embryo-forming focus; omit endosperm consistently rather than displaying a second embryo or claiming a complete life cycle."
+      ]
+    },
+    {
+      "sceneId": "b3-runner",
+      "mode": "runner",
+      "requirements": [
+        "Runner is a stem from parent; node is a leaf/bud location.",
+        "Roots and shoot develop at a suitable node before a new plant can become independent.",
+        "No instantaneous detachment, stem-length-only reproduction or universal identical-clone label.",
+        "Use no-fusion as event criterion; mutation/resource/later-survival limits remain in exact speech."
+      ]
+    }
+  ],
+  "optionalMode": {
+    "sceneId": "b3-self-cross",
+    "mode": "selfCross",
+    "requirements": [
+      "Same-plant and different-plant pollen source/destination cases shown sequentially.",
+      "Fusion is a separate conditional step after compatible pollen, not a guaranteed result of a transfer arrow."
+    ]
+  },
+  "taskImplementation": "Current full-width prompt retains all conditions and both demands. Feedback uses a separate one-reason-at-a-time focused board. Prompt duration includes 24 non-hold tail frames after the estimated attempt to accommodate the actual runtime transition. No feedback verdict, zygote/embryo result or correct tick belongs in the attempt. All spatial-integration blockers remain unchanged.",
+  "nativeReviewRequired": [
+    "Early anther/pollen and stigma identity",
+    "Settled ovary/ovule/embryo-sac/egg containment",
+    "Tube/sperm separation and actual fusion inset",
+    "Embryo inside seed, ovary/fruit distinction",
+    "Runner node roots/shoot and independence order",
+    "Every current worked case, prompt last-speech/first-hold/last-hold/first-feedback boundaries",
+    "Text glyph endings and conservative y850 caption reserve, narrow browser captions/controls and continuous motion separately"
+  ],
+  "openActions": [
+    "Root chooses/implements the bounded spatial treatment or obtains explicit scoped evidence that the location/process boards alone adequately meet the selected learner action.",
+    "Different reviewer checks exact integrated model/source.",
+    "Native and narrow observations before recording-stage selection.",
+    "Fresh voice/alignment/captions and measured12-second interval, then separate listening and export gates."
+  ],
+  "scopeLimits": [
+    "No double-fertilisation/endosperm development, alternation-of-generations, meiosis detail or apomixis mechanism.",
+    "Task explicitly requires fusion for embryo formation in its supplied model; no universal seed rule.",
+    "No fungi/bacteria/protist or agricultural/practical completion."
+  ],
+  "createdCodeOrAssets": false,
+  "limitation": "Proposal and blockers only. Existing supported board rendering is not claimed to implement these spatial diagrams or prove native/device fit."
+}

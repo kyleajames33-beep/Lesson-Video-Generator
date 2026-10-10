@@ -450,18 +450,67 @@
     "userReviewEvidence": "docs/production/user-calculation-review-2026-10-10.json",
     "fullReviewUrl": "http://127.0.0.1:8778/calculation-full-review-2026-10-10/"
   },
-  "nextAction": "Finish exact complete-package listening, motion, device and accessibility reviews before public posting. Module5 v4 resolves the late selected trail issue, with all three voiced pilots and native evidence preserved; human listening and whole-lesson review precede full exports. Next selected integrations are C3 concentration/temperature and plant reproduction.",
+  "nextAction": "Implement bounded essential C3 and flowering-plant visuals from their selected proposals, then review exact source, native/narrow states and motion before paid narration. Human review of the current calculation and Module 5 pilots remains pending.",
   "modelPreference": "Latest user steering, 10 October: no demonstrated same-task quality advantage from Astra in this project. Default to Sol 6.1. Retain historical agent/model attribution.",
   "currentBeginnerRevision": {
     "feedback": "docs/production/beginner-working-feedback-2026-10-10.json",
     "selectedAuthor": "docs/production/module5-c2-b2-simple-working-2026-10-10/correction-record.json",
     "currentRuntimeAuthority": "docs/production/module5-c2-b2-simple-working-2026-10-10/native-adjustment-01/correction-record.json",
     "nextUnrecorded": "docs/production/drafts/module5-beginner-preparation-2026-10-10/revision-record.json",
-    "status": "Three complete-selected-scene previews finalized and technically verified; independent source/native and next-document reviews pass bounded scopes. Human listening/continuous/device release checks pending. Older calculation reading followup open.",
+    "status": "Module 5 v5 and two P1 calculation pilots technically verified. C3 and plant revision 02 pass supported-silent-source checks. Human listening, continuous/device release checks and essential next-lesson visuals remain pending.",
     "nextSelection": "docs/production/module5-beginner-next-selection-2026-10-10.json",
     "sourceAndNativeReview": "docs/production/module5-c2-b2-simple-working-v5-review-2026-10-10.md",
     "nextDocumentReview": "docs/production/module5-beginner-next-preparation-review-2026-10-10.md",
     "priorCalculationFollowup": "docs/production/calculation-beginner-followup-queue-2026-10-10.json",
     "reviewUrl": "http://127.0.0.1:8778/module5-simple-working-review-2026-10-10/"
+  },
+  "activeContinuation": {
+    "date": "2026-10-10",
+    "scope": "Two P1 calculation display corrections with exact voiced pilots, plus Chemistry C3 and plant Biology silent integrations with independent source review.",
+    "assignments": [
+      {
+        "owner": "/root",
+        "paths": [
+          "src/lesson/types.ts",
+          "src/slides/shared/OrganisedCalculation.tsx"
+        ],
+        "status": "Implementation, 136 default and 43 selected markup checks, type check and 22 native states complete; two exact voiced pilots verified."
+      },
+      {
+        "owner": "/root/bio_b2_independent_review_sol",
+        "paths": [
+          "docs/production/calculation-simple-working-2026-10-10/",
+          "out/prototypes/calculation-simple-working-2026-10-10/"
+        ],
+        "status": "Additive calculation candidates and plant revision 02 frozen; author checks complete."
+      },
+      {
+        "owner": "/root/review_page_access_sol",
+        "paths": [
+          "docs/production/calculation-simple-working-review-2026-10-10.md",
+          "docs/production/calculation-simple-working-review-findings-2026-10-10.json"
+        ],
+        "status": "Independent calculation source/native and C3 supported-source/transition checks complete."
+      },
+      {
+        "owner": "/root/chem_c2_selected_implementation",
+        "paths": [
+          "docs/production/drafts/module5-c3-beginner-selected-2026-10-10/"
+        ],
+        "status": "C3 silent integration and separate plant revision-02 source review complete."
+      }
+    ],
+    "releaseLimit": "No full replacement export or public upload until current exact review gates pass. Earlier frozen packages preserved.",
+    "calculationStatus": "Two P1 display corrections pass independent source/native checks. Exact voiced pilots available for continuous review and human listening.",
+    "calculationRecord": {
+      "path": "docs/production/calculation-simple-working-2026-10-10/correction-record.json",
+      "sha256": "64119b27a8b313b3751cc96e5b8edc41a6249d95658f71535028d7155d438b6d"
+    },
+    "calculationReviewUrl": "http://127.0.0.1:8778/calculation-simple-working-review-2026-10-10/",
+    "nextSelection": {
+      "path": "docs/production/module5-beginner-next-selection-2026-10-10.json",
+      "sha256": "44dbdf15f03641ffc9be208e7ebcc1bbdef367615398268ebf3aeed7108fcfc8"
+    },
+    "nextWork": "Implement bounded essential C3 and flowering-plant visuals from their selected proposals, then review exact source, native/narrow states and motion before paid narration. Human review of the current calculation and Module 5 pilots remains pending."
   }
 }

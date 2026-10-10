@@ -62,27 +62,37 @@ export const FocusedWorking = ({presentation, delays, earliestFrame = 0}: {
   const activeIndex = cues.reduce((index, cue, i) => frame >= cue ? i : index, -1);
   if (activeIndex < 0) return null;
   const active = presentation.stages[activeIndex];
+  const phase = active.phases?.reduce<typeof active.phases[number] | undefined>(
+    (selected, candidate) => frame >= Math.max(cues[activeIndex], candidate.at) ? candidate : selected,
+    undefined,
+  );
+  const display = phase ?? active;
+  const retainedIndexes = phase?.retainedStageIndexes ?? active.retainedStageIndexes
+    ?? presentation.stages.slice(0, activeIndex).map((_, index) => index);
+  if (retainedIndexes.some((index, position) => !Number.isInteger(index) || index < 0 || index >= activeIndex || retainedIndexes.indexOf(index) !== position)) {
+    throw new Error('Retained calculation results must be unique earlier stage indexes.');
+  }
   const opacity = interpolate(frame, [cues[activeIndex], cues[activeIndex] + 16], [0, 1], clamp);
   const isFinal = activeIndex === presentation.stages.length - 1;
-  const size = active.lines.some(line => line.length > 62) ? 36 : 42;
+  const size = display.lines.some(line => line.length > 62) ? 36 : 42;
   return <div data-calculation-working style={{position: 'absolute', top: 344, left: 634, right: 64}}>
     <div data-calculation-active={activeIndex} style={{minHeight: 280, opacity, padding: '22px 28px', background: TOK.card, border: `1px solid ${TOK.rule}`, borderTop: `4px solid ${isFinal ? TOK.amber : theme.accent}`}}>
       <div style={{display: 'flex', gap: 18, alignItems: 'baseline', marginBottom: 24}}>
         <span style={{fontFamily: FONT_MONO, fontSize: 28, color: theme.accent}}>{String(activeIndex + 1).padStart(2, '0')}</span>
-        <div data-calculation-stage-label style={{fontSize: 32, lineHeight: 1.2, fontWeight: 650}}>{active.label}</div>
+        <div data-calculation-stage-label style={{fontSize: 32, lineHeight: 1.2, fontWeight: 650}}>{display.label}</div>
       </div>
       <div style={{display: 'grid', gap: 16}}>
-        {active.lines.map((line, index) => {
-          const lineCue = Math.max(cues[activeIndex], active.lineAts?.[index] ?? cues[activeIndex]);
+        {display.lines.map((line, index) => {
+          const lineCue = Math.max(cues[activeIndex], display.lineAts?.[index] ?? phase?.at ?? cues[activeIndex]);
           const lineOpacity = interpolate(frame, [lineCue, lineCue + 16], [0, 1], clamp);
           return <div key={index} data-calculation-line style={{opacity: lineOpacity, fontFamily: FONT_MONO, fontSize: size, lineHeight: 1.3, letterSpacing: '-0.035em', fontWeight: 600, color: isFinal ? TOK.amberInk : TOK.ink}}><MathText text={line} isFinal={isFinal} /></div>;
         })}
       </div>
     </div>
-    {activeIndex > 0 ? <div data-calculation-trail style={{marginTop: 24}}>
+    {retainedIndexes.length > 0 ? <div data-calculation-trail style={{marginTop: 24}}>
       <div style={{...labelStyle, marginBottom: 12}}>ESTABLISHED SO FAR</div>
-      {presentation.stages.slice(0, activeIndex).map((stage, index) => <div key={index} data-calculation-result={index} style={{display: 'grid', gridTemplateColumns: '44px minmax(0, 1fr)', alignItems: 'baseline', gap: 16, padding: '8px 0', borderBottom: `1px solid ${TOK.rule}`, fontSize: 30, lineHeight: 1.25}}>
-        <span style={{fontFamily: FONT_MONO, color: theme.accent, fontSize: 22}}>{String(index + 1).padStart(2, '0')}</span><span>{stage.summary}</span>
+      {retainedIndexes.map(index => <div key={index} data-calculation-result={index} style={{display: 'grid', gridTemplateColumns: '44px minmax(0, 1fr)', alignItems: 'baseline', gap: 16, padding: '8px 0', borderBottom: `1px solid ${TOK.rule}`, fontSize: 30, lineHeight: 1.25}}>
+        <span style={{fontFamily: FONT_MONO, color: theme.accent, fontSize: 22}}>{String(index + 1).padStart(2, '0')}</span><span>{presentation.stages[index].summary}</span>
       </div>)}
     </div> : null}
   </div>;

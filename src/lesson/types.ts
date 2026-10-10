@@ -401,7 +401,24 @@ export type CalculationPresentation = {
   givens: Array<{label: string; value: string; reference?: string}>;
   references?: Array<{label: string; value: string}>;
   note?: string;
-  stages: Array<{label: string; lines: string[]; summary: string; lineAts?: number[]}>;
+  stages: Array<{
+    label: string;
+    lines: string[];
+    summary: string;
+    lineAts?: number[];
+    /** Selected boards keep only these earlier stage summaries. Zero-based
+     * indexes; omission preserves the existing complete history. */
+    retainedStageIndexes?: number[];
+    /** Display-only beats inside a recorded stage. Times are local scene
+     * frames from alignment; existing stage and narration cues stay fixed. */
+    phases?: Array<{
+      at: number;
+      label: string;
+      lines: string[];
+      lineAts?: number[];
+      retainedStageIndexes?: number[];
+    }>;
+  }>;
 };
 
 export type WorkedExampleScene = SceneBase & {

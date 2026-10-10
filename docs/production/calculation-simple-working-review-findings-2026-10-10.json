@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "status": "pass-exact-selected-source-and-sampled-native-only",
+  "reviewer": "Codex Sol 6.1 independent review",
+  "scope": "Independent exact selected display-only source and all22 native PNG observations. No continuous playback, human listening, caption/control/device or publication approval.",
+  "baselineSources": [
+    {
+      "path": "out/prototypes/limiting-paced-2026-10-10/narrated.lesson.json",
+      "sha256": "96fedf688aef15f7e3785ff7c78b1f3a04675a8eb93d8edd9c832e45f807d91a",
+      "selectedSceneId": "worked-example-2",
+      "alignmentPath": "public/audio/assembled/worked-example-2.b280f3d68627f9743abb.f00d343bc44e.alignment.json",
+      "alignmentSha256": "b1e96a8d5589db6fa3458c62274b0733eb06c6d506e486746688066f1b80e4f1"
+    },
+    {
+      "path": "out/prototypes/empirical-formulas-paced-2026-10-10/narrated.lesson.json",
+      "sha256": "92611f178fba8dce8f4c37e86354a266583862ad0c4ff8c19bafc98503af0776",
+      "selectedSceneId": "molecular-extension",
+      "alignmentPath": "public/audio/assembled/molecular-extension.ada0b412f64231becf25.3049cfc0f386.alignment.json",
+      "alignmentSha256": "ba208c2d0b0345c654fae451689d94f06abd18436478fe05cc69bca07d11d317"
+    }
+  ],
+  "arithmetic": {
+    "sodiumMoles": 0.4349717268377556,
+    "chlorineInitialMoles": 0.2820874471086036,
+    "chlorineUsedMoles": 0.2174858634188778,
+    "NaClGrams": 25.419747716398437,
+    "chlorineLeftGrams": 4.580252283601562,
+    "empiricalMolarMass": 30.026,
+    "molecularMultiplier": 6.000133217877839
+  },
+  "boundaryCases": [
+    "Every new stage/retention/line cue: cue-1, cue, cue+16 and settled late state.",
+    "Limiting subtraction: initial and used chlorine quantities labelled by species; clear older capacity and sodium conversion history.",
+    "Limiting final reporting: both requested masses, no duplicated yield trail; no early chlorine4.58g result before relevant spoken cue.",
+    "Empirical multiplier: both molar masses with units remain available; atomic constants remain through their use.",
+    "Empirical identity caution: retain molecular formula; clear irrelevant addition/multiplier history; no unique glucose identity claim.",
+    "Compare nonselected scenes and default rendering to frozen baseline; retain all existing words/audio/captions/timing except expressly allowed display line cues."
+  ],
+  "cueDerivations": {
+    "limiting": [
+      {
+        "phrase": "What's left",
+        "characterSpan": [
+          842,
+          853
+        ],
+        "startSeconds": 59.319148936170215,
+        "ceilFrame": 1780
+      },
+      {
+        "phrase": "starting amount minus that amount",
+        "characterSpan": [
+          861,
+          894
+        ],
+        "startSeconds": 60.51063829787235,
+        "ceilFrame": 1816
+      },
+      {
+        "phrase": "four point five eight",
+        "characterSpan": [
+          896,
+          917
+        ],
+        "startSeconds": 63.14893617021277,
+        "ceilFrame": 1895
+      },
+      {
+        "phrase": "these final masses",
+        "characterSpan": [
+          969,
+          987
+        ],
+        "startSeconds": 68.17021276595744,
+        "ceilFrame": 2046
+      }
+    ],
+    "empirical": [
+      {
+        "phrase": "We get",
+        "characterSpan": [
+          320,
+          326
+        ],
+        "startSeconds": 23.063829787234045,
+        "ceilFrame": 692
+      },
+      {
+        "phrase": "Glucose has",
+        "characterSpan": [
+          349,
+          360
+        ],
+        "startSeconds": 26.97872340425532,
+        "ceilFrame": 810
+      },
+      {
+        "phrase": "formula alone",
+        "characterSpan": [
+          393,
+          406
+        ],
+        "startSeconds": 29.95744680851064,
+        "ceilFrame": 899
+      },
+      {
+        "phrase": "arranged still matters",
+        "characterSpan": [
+          467,
+          489
+        ],
+        "startSeconds": 34.8936170212766,
+        "ceilFrame": 1047
+      }
+    ]
+  },
+  "unitConvention": "Character alignment in seconds; scene-local cues ceil(startSeconds * 30). Character spans zero-based, end-exclusive. This is recorded alignment evidence, not human listening.",
+  "candidateAuthority": {
+    "path": "docs/production/calculation-simple-working-2026-10-10/author-validation.json",
+    "sha256": "8da6ea90d4d7f46b63d704e819851def187f8ebc5285d2b13409e15d40e8e284"
+  },
+  "finalAuthorCheck": {
+    "path": "docs/production/calculation-simple-working-2026-10-10/final-author-check.json",
+    "sha256": "25880eb3f565ed1207562fe05e35c94d3cfbac5f7421c0060f0515a3f164f734"
+  },
+  "renderer": [
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "67600ae68f7879fd42b956af003a66f0c0e5b366e19527ffc9d41f26a0f64082"
+    },
+    {
+      "path": "src/slides/shared/OrganisedCalculation.tsx",
+      "sha256": "85b896120ec0cc40f27374cc83a78d94e4ab4f7f0a9263b0b0508103d2153e8d"
+    }
+  ],
+  "nativeManifest": {
+    "path": "out/prototypes/calculation-simple-working-2026-10-10/native/frames.json",
+    "sha256": "dd4864de477489484518b3e2bc56584ec4bd105337fbdaaa9c4d6ad20adebb94"
+  },
+  "observedFrames": [
+    {
+      "key": "limiting",
+      "sceneId": "worked-example-2",
+      "localFrame": 120,
+      "globalFrame": 3644,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/limiting-120.png",
+      "sha256": "b09f22a201f1d6a6e0fb973ccea846640a46d39029090b0ed98ec5f947a6e87e",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/narrated.lesson.json",
+      "sourceSha256": "a05f3d2f43357cea376b2e1d956cffaaf0ca395ea81da8b016be6ee7e56cb1f2"
+    },
+    {
+      "key": "limiting",
+      "sceneId": "worked-example-2",
+      "localFrame": 700,
+      "globalFrame": 4224,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/limiting-700.png",
+      "sha256": "c527aa5debe1bc57ca5b8b44b446b8e81a4c130573462b69717283eebfc113e6",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/narrated.lesson.json",
+      "sourceSha256": "a05f3d2f43357cea376b2e1d956cffaaf0ca395ea81da8b016be6ee7e56cb1f2"
+    },
+    {
+      "key": "limiting",
+      "sceneId": "worked-example-2",
+      "localFrame": 920,
+      "globalFrame": 4444,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/limiting-920.png",
+      "sha256": "aaece06739132fe72ad013ac99a328df5f8889a6bb34c8e84c99ceb02bba371a",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/narrated.lesson.json",
+      "sourceSha256": "a05f3d2f43357cea376b2e1d956cffaaf0ca395ea81da8b016be6ee7e56cb1f2"
+    },
+    {
+      "key": "limiting",
+      "sceneId": "worked-example-2",
+      "localFrame": 1310,
+      "globalFrame": 4834,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/limiting-1310.png",
+      "sha256": "088c54bafb6fe9b9539dd9a0a548603c0b4eae96d9947d812dbc90557a77b945",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/narrated.lesson.json",
+      "sourceSha256": "a05f3d2f43357cea376b2e1d956cffaaf0ca395ea81da8b016be6ee7e56cb1f2"
+    },
+    {
+      "key": "limiting",
+      "sceneId": "worked-example-2",
+      "localFrame": 1650,
+      "globalFrame": 5174,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/limiting-1650.png",
+      "sha256": "25e66a8087dad974e600d3f82df7429e5819712e7b5764ea33438d484024c183",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/narrated.lesson.json",
+      "sourceSha256": "a05f3d2f43357cea376b2e1d956cffaaf0ca395ea81da8b016be6ee7e56cb1f2"
+    },
+    {
+      "key": "limiting",
+      "sceneId": "worked-example-2",
+      "localFrame": 1779,
+      "globalFrame": 5303,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/limiting-1779.png",
+      "sha256": "bf1cadf0f5b7e151673cb809efbb0837ee6011459fcbc718249fcc5125c7a00d",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/narrated.lesson.json",
+      "sourceSha256": "a05f3d2f43357cea376b2e1d956cffaaf0ca395ea81da8b016be6ee7e56cb1f2"
+    },
+    {
+      "key": "limiting",
+      "sceneId": "worked-example-2",
+      "localFrame": 1796,
+      "globalFrame": 5320,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/limiting-1796.png",
+      "sha256": "7442fdbc4628de5d4e74b9b108d6909be45d0256ce5bf234952424566a36d9ee",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/narrated.lesson.json",
+      "sourceSha256": "a05f3d2f43357cea376b2e1d956cffaaf0ca395ea81da8b016be6ee7e56cb1f2"
+    },
+    {
+      "key": "limiting",
+      "sceneId": "worked-example-2",
+      "localFrame": 1911,
+      "globalFrame": 5435,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/limiting-1911.png",
+      "sha256": "ac4a84fdece7ef0fbc59fa923a2d14a604777829db8d6550ef7dc2ec5b7d82c1",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/narrated.lesson.json",
+      "sourceSha256": "a05f3d2f43357cea376b2e1d956cffaaf0ca395ea81da8b016be6ee7e56cb1f2"
+    },
+    {
+      "key": "limiting",
+      "sceneId": "worked-example-2",
+      "localFrame": 2000,
+      "globalFrame": 5524,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/limiting-2000.png",
+      "sha256": "206be55ee8dbbf682fe7c0e5824b925b2b9d74c0f30f3809aa8f19e05efd27d0",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/narrated.lesson.json",
+      "sourceSha256": "a05f3d2f43357cea376b2e1d956cffaaf0ca395ea81da8b016be6ee7e56cb1f2"
+    },
+    {
+      "key": "limiting",
+      "sceneId": "worked-example-2",
+      "localFrame": 2045,
+      "globalFrame": 5569,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/limiting-2045.png",
+      "sha256": "4b4b91853b662c135a116a51c34e05a3437cea7cbce705aebeadbe4f158ff5ae",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/narrated.lesson.json",
+      "sourceSha256": "a05f3d2f43357cea376b2e1d956cffaaf0ca395ea81da8b016be6ee7e56cb1f2"
+    },
+    {
+      "key": "limiting",
+      "sceneId": "worked-example-2",
+      "localFrame": 2062,
+      "globalFrame": 5586,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/limiting-2062.png",
+      "sha256": "3772037f0492752b86ac5afcf0fc943f016f51e2d4b1f78674113c76ec0ec64e",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/narrated.lesson.json",
+      "sourceSha256": "a05f3d2f43357cea376b2e1d956cffaaf0ca395ea81da8b016be6ee7e56cb1f2"
+    },
+    {
+      "key": "limiting",
+      "sceneId": "worked-example-2",
+      "localFrame": 2150,
+      "globalFrame": 5674,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/limiting-2150.png",
+      "sha256": "988f919f8be1249e699d734791bb96620badfd9ddc492ba35eec8105b7cd2cd2",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/narrated.lesson.json",
+      "sourceSha256": "a05f3d2f43357cea376b2e1d956cffaaf0ca395ea81da8b016be6ee7e56cb1f2"
+    },
+    {
+      "key": "empirical-formulas",
+      "sceneId": "molecular-extension",
+      "localFrame": 90,
+      "globalFrame": 5432,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/empirical-formulas-90.png",
+      "sha256": "ebb80cf28917c3d6e0dc818e7d3378e412355c019a73e13951ce3d09d205905e",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/narrated.lesson.json",
+      "sourceSha256": "50854468d743c26f40e137e6a07d61a1ba76886a5f8d97671447bb6bb83a34ef"
+    },
+    {
+      "key": "empirical-formulas",
+      "sceneId": "molecular-extension",
+      "localFrame": 330,
+      "globalFrame": 5672,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/empirical-formulas-330.png",
+      "sha256": "c74d717213a8bcddf7beffedb23b1e680bf6e4af5600aab9cb002fe75794bf91",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/narrated.lesson.json",
+      "sourceSha256": "50854468d743c26f40e137e6a07d61a1ba76886a5f8d97671447bb6bb83a34ef"
+    },
+    {
+      "key": "empirical-formulas",
+      "sceneId": "molecular-extension",
+      "localFrame": 496,
+      "globalFrame": 5838,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/empirical-formulas-496.png",
+      "sha256": "9268abb16fbae5aa70d09524f4c1b2fb4fd4e80fac15088843266033079f1458",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/narrated.lesson.json",
+      "sourceSha256": "50854468d743c26f40e137e6a07d61a1ba76886a5f8d97671447bb6bb83a34ef"
+    },
+    {
+      "key": "empirical-formulas",
+      "sceneId": "molecular-extension",
+      "localFrame": 708,
+      "globalFrame": 6050,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/empirical-formulas-708.png",
+      "sha256": "6948465c0cf704f47107a3c07e8af2e58544252b96b52c8f4d5ded7f31912792",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/narrated.lesson.json",
+      "sourceSha256": "50854468d743c26f40e137e6a07d61a1ba76886a5f8d97671447bb6bb83a34ef"
+    },
+    {
+      "key": "empirical-formulas",
+      "sceneId": "molecular-extension",
+      "localFrame": 889,
+      "globalFrame": 6231,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/empirical-formulas-889.png",
+      "sha256": "ff89af07b677b732c012f99a235941e88d04c8902caca848901c517b9caa5cad",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/narrated.lesson.json",
+      "sourceSha256": "50854468d743c26f40e137e6a07d61a1ba76886a5f8d97671447bb6bb83a34ef"
+    },
+    {
+      "key": "empirical-formulas",
+      "sceneId": "molecular-extension",
+      "localFrame": 906,
+      "globalFrame": 6248,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/empirical-formulas-906.png",
+      "sha256": "708a106f7ba47ca25752363419a10f8e2578e304387f06406c1dde17fc235da2",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/narrated.lesson.json",
+      "sourceSha256": "50854468d743c26f40e137e6a07d61a1ba76886a5f8d97671447bb6bb83a34ef"
+    },
+    {
+      "key": "empirical-formulas",
+      "sceneId": "molecular-extension",
+      "localFrame": 1046,
+      "globalFrame": 6388,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/empirical-formulas-1046.png",
+      "sha256": "0cc546fad1447981f87fdf26e7b00242f55c97fd3d2b03c0f3b89451eed9017a",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/narrated.lesson.json",
+      "sourceSha256": "50854468d743c26f40e137e6a07d61a1ba76886a5f8d97671447bb6bb83a34ef"
+    },
+    {
+      "key": "empirical-formulas",
+      "sceneId": "molecular-extension",
+      "localFrame": 1050,
+      "globalFrame": 6392,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/empirical-formulas-1050.png",
+      "sha256": "9bed16545eaadd56ae55f0565585a844bd461763ff35805fefcda173ed05f5b8",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/narrated.lesson.json",
+      "sourceSha256": "50854468d743c26f40e137e6a07d61a1ba76886a5f8d97671447bb6bb83a34ef"
+    },
+    {
+      "key": "empirical-formulas",
+      "sceneId": "molecular-extension",
+      "localFrame": 1063,
+      "globalFrame": 6405,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/empirical-formulas-1063.png",
+      "sha256": "1bfcab2ceae9ea6eade79123b6a1248731b25e408926cfb58a947854ed7753a6",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/narrated.lesson.json",
+      "sourceSha256": "50854468d743c26f40e137e6a07d61a1ba76886a5f8d97671447bb6bb83a34ef"
+    },
+    {
+      "key": "empirical-formulas",
+      "sceneId": "molecular-extension",
+      "localFrame": 1100,
+      "globalFrame": 6442,
+      "path": "out/prototypes/calculation-simple-working-2026-10-10/native/empirical-formulas-1100.png",
+      "sha256": "a6b7e7051931b6ebfb9b91d90d10aa3ac6b0023b5b3e2ed00f0888311baa54b9",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/narrated.lesson.json",
+      "sourceSha256": "50854468d743c26f40e137e6a07d61a1ba76886a5f8d97671447bb6bb83a34ef"
+    }
+  ],
+  "blockers": [],
+  "remaining": [
+    "Exact voiced continuous selected-scene preview",
+    "Human listening",
+    "Caption/player-control and device checks",
+    "Whole-package export/release gates"
+  ],
+  "verifiedInvariants": [
+    "Only selected note and opt-in retained indexes/phases change",
+    "Original stage labels/lines/summaries/lineAts preserved",
+    "All original narration/audio/captions/durations/holds/reveal cues and nonselected scenes identical",
+    "Tracked/out source byte equality and exact props/brief/config bindings",
+    "Actual selected audio/alignment hashes and every authored cue character span verified"
+  ],
+  "defaultEvidence": {
+    "sourceDiffReviewed": true,
+    "rootMechanicalCheck": {
+      "path": "docs/production/calculation-simple-working-2026-10-10/markup-check.json",
+      "sha256": "e039b3e6e6cc944f2b8ee9fcf01b4665c8aa578245867db09bee37f1cc35185b",
+      "scope": "Root-authored actual ReactDOMServer synthetic-frame evidence,136 default cases and43 selected cases. Reviewed, not independently rerun."
+    }
+  }
+}

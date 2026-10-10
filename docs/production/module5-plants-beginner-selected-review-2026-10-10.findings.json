@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "status": "changes-required",
+  "reviewer": "Sol 6.1 /root/chem_c2_selected_implementation",
+  "scope": "Independent exact initial selected-source science, traceability, consumer/timeline and synthetic React markup. No native render or listening.",
+  "reviewedDate": "2026-10-10",
+  "source": {
+    "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/lesson.json",
+    "sha256": "ef61ae0d2fdf7ac0dbff1db569b98f7f67b01a161c49752c36c4f695dda3133b"
+  },
+  "inputs": [
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/lesson.json",
+      "sha256": "ef61ae0d2fdf7ac0dbff1db569b98f7f67b01a161c49752c36c4f695dda3133b"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/production-brief.json",
+      "sha256": "616d102506c2a6378e008d3cf3e2bfa959fab415fb8779db5638f5d7559cfdb9"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/remotion-props.json",
+      "sha256": "f8f0074b251b7de11691b9921644df310f9fe1ff141ec7616e520f9c42c32528"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/narration-plan.json",
+      "sha256": "8275f54a701e697acdb45980a8a0f70e236d179ca533a1a9c4d6e047e88187cf"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/traceability.json",
+      "sha256": "e7cf8765338c6d6787ed19d1ceb1f5a6f9ba90ea02d62cfe20877f393faff0b7"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/author-validation.json",
+      "sha256": "c8d741c880e246ca47a4c53012e730ad6e57f872cb4d6991b271c223910cb198"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/final-author-check.json",
+      "sha256": "8858e7a60ada43af7681b0976df969b8dff1741a3d191bb95c9a7b8be784cc1b"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/visual-implementation-proposal.json",
+      "sha256": "96a4ecbbecdd21456b4f594c344183bfa43188cb803c6878c60f6d6ea53150ae"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/README.md",
+      "sha256": "c045cdcb780548fb1fd6a7923545eba51211a0c9bf8f148acdc32faf28e8901b"
+    }
+  ],
+  "runtimeReferences": [
+    {
+      "path": "src/LessonVideo.tsx",
+      "sha256": "f86792588be7f08ec09b8ff4c1a7f90487809d6ecef5b67bfcd8e410b5f0dc99"
+    },
+    {
+      "path": "src/lesson/timeline.mjs",
+      "sha256": "6a397f94d35765d17972ed4519f51d9eea60ab1385e2a663c48a0e2842851512"
+    },
+    {
+      "path": "src/lesson/timing-constants.json",
+      "sha256": "c34b61a31cadec788dfee08495e51e16a40cedc2a276c9580b48f2c989285b57"
+    },
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "67600ae68f7879fd42b956af003a66f0c0e5b366e19527ffc9d41f26a0f64082"
+    },
+    {
+      "path": "src/slides/shared/Module5EvidenceBoard.tsx",
+      "sha256": "092554d51375d0272482857f46115e810c7a6c427aa38490cea826cb2698d46f"
+    },
+    {
+      "path": "src/slides/ConceptSlide.tsx",
+      "sha256": "c77dd61bdae5a12de62cf0f64af13e842e1311e53f83c0b92ef3fb3070b08dd3"
+    },
+    {
+      "path": "src/animations/BulletReveal.tsx",
+      "sha256": "335259c068a369e53d27b4d626902090eed24f66a297e4d6b64d1dbb70b41576"
+    },
+    {
+      "path": "src/slides/WorkedExampleSlide.tsx",
+      "sha256": "b88bc5a76011adbd579c62ddf01a578b1d31678eedd7407acad6b5e5a2db0acf"
+    }
+  ],
+  "acceptedPreparation": {
+    "path": "docs/production/drafts/module5-beginner-preparation-2026-10-10/biology-b3-plants.md",
+    "sha256": "0a2ab244ed56d890953bf65424208aa51dad2e1c285be54a80d2373283472aad"
+  },
+  "cases": {
+    "exact11SpokenBlocks": true,
+    "words": 1081,
+    "scenes": 12,
+    "propsMatch": true,
+    "pollenSpermAndNestingPreserved": true,
+    "embryoSeedFruitDistinct": true,
+    "runnerQualificationsPreserved": true,
+    "selfCrossFusionCriterionPreserved": true,
+    "workedCaseSuppressionVerified": true,
+    "promptAllConditionsBothQuestionsVerified": true,
+    "noLegacyDiagramAudioCaptionAttached": true,
+    "canonicalRouteAndOpenActionsPreserved": true
+  },
+  "findings": [
+    {
+      "id": "PLANTS-SOURCE-01",
+      "severity": "blocking",
+      "status": "open",
+      "sceneIds": [
+        "b3-check-prompt",
+        "b3-check-feedback"
+      ],
+      "issue": "Ignored transitionDurationInFrames field falsely implies zero overlap. Actual 24-frame transition starts feedback inside the declared estimated responseHold.",
+      "timeline": {
+        "promptGlobalStart": 11282,
+        "promptGlobalEnd": 12761,
+        "feedbackGlobalStart": 12737,
+        "feedbackPromptLocalStart": 1455,
+        "declaredLocalHold": {
+          "startFrame": 1119,
+          "endFrame": 1479
+        },
+        "overlapFrames": 24,
+        "overlapSeconds": 0.8
+      },
+      "correction": "Additive revision only. Remove ignored override and unmeasured responseHold, preserve estimate in narration plan, add 24-frame post-hold tail so feedback begins at estimated hold end. Bind new hashes and correct evidence claims."
+    }
+  ],
+  "syntheticSSR": {
+    "method": "In-memory esbuild and React renderToStaticMarkup with synthetic local frame hooks; no files/bundle/media written.",
+    "promptFrames": [
+      1119,
+      1455,
+      1478
+    ],
+    "allFiveConditionsAndBothQuestions": true,
+    "withinPromptAnswerWorkingAbsent": true,
+    "feedback": [
+      {
+        "frame": 0,
+        "cardOpacity": 0,
+        "resultOpacity": 0
+      },
+      {
+        "frame": 1,
+        "cardOpacity": 0.0625,
+        "resultOpacity": 0.0625
+      },
+      {
+        "frame": 23,
+        "cardOpacity": 1,
+        "resultOpacity": 1
+      }
+    ],
+    "workedCaseSwitches": [
+      {
+        "contextAt": 540,
+        "previousWorkingSuppressedUntil": 746
+      },
+      {
+        "contextAt": 939,
+        "previousWorkingSuppressedUntil": 1106
+      }
+    ],
+    "limitation": "SSR validates source gates and retained DOM text. Does not measure actual transition presentation pixels, glyph bounds, external captions, audio or listening."
+  },
+  "validation": {
+    "exitCode": 0,
+    "stdout": "\nC:\\lesson-video-generator\\docs\\production\\drafts\\module5-plants-beginner-selected-2026-10-10\\lesson.json\n  warning: root: consider adding \"syllabusDotPoints\" (syllabus coverage tracking)\n  warning: scene[1] (b3-hook): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[2] (b3-flower): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[3] (b3-delivery): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[4] (b3-seed): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[5] (b3-runner): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[6] (b3-self-cross): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[7] (b3-worked): consider adding \"coachNote\" (target/method decision)\n  warning: scene[8] (b3-conditions): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[10] (b3-check-feedback): consider adding \"coachNote\" (target/method decision)\n  warning: lesson should include a \"quickCheck\" scene\n  warning: lesson should include a \"misconception\" scene\n",
+    "stderr": "",
+    "draft": {
+      "ready": true,
+      "stage": "draft",
+      "blockers": [],
+      "pending": [
+        {
+          "code": "BRIEF_REVIEW_PENDING",
+          "detail": "Script/source review: pending"
+        },
+        {
+          "code": "BRIEF_REVIEW_PENDING",
+          "detail": "Exact voiced preview: pending"
+        },
+        {
+          "code": "BRIEF_REVIEW_PENDING",
+          "detail": "Human listening: pending"
+        }
+      ],
+      "source": {
+        "lessonPath": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/lesson.json",
+        "lessonSha256": "ef61ae0d2fdf7ac0dbff1db569b98f7f67b01a161c49752c36c4f695dda3133b"
+      },
+      "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+    },
+    "recording": {
+      "ready": false,
+      "stage": "recording",
+      "blockers": [
+        {
+          "code": "BRIEF_REVIEW_PENDING",
+          "detail": "Script/source review: pending"
+        }
+      ],
+      "pending": [
+        {
+          "code": "BRIEF_REVIEW_PENDING",
+          "detail": "Exact voiced preview: pending"
+        },
+        {
+          "code": "BRIEF_REVIEW_PENDING",
+          "detail": "Human listening: pending"
+        }
+      ],
+      "source": {
+        "lessonPath": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/lesson.json",
+        "lessonSha256": "ef61ae0d2fdf7ac0dbff1db569b98f7f67b01a161c49752c36c4f695dda3133b"
+      },
+      "limitation": "Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval."
+    }
+  },
+  "gates": {
+    "scienceAndSpeech": "pass",
+    "selectedSource": "changes-required",
+    "spatialVisualIntegration": "changes-required",
+    "nativeNarrow": "pending",
+    "recording": "not-approved",
+    "freshVoiceAlignmentSilence": "pending",
+    "voicedPreview": "pending",
+    "humanListening": "pending",
+    "coveragePracticalRelease": "pending"
+  },
+  "preservation": "Read-only selected inputs. Initial report remains immutable; corrected revision needs separate independent addendum."
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "scope": "Author validation and exact additive correction proof, not independent pass",
+  "source": {
+    "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/lesson.json",
+    "sha256": "543ffd4cd3f3ddb810d007b35279d70a39a0e6a48990646670214e63e5221e03"
+  },
+  "outputs": [
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/author-validation.json",
+      "sha256": "6a126a1b07d703ba7c813019102530d3a80b79dc63b2ee787ddc599c85161b52"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/lesson.json",
+      "sha256": "543ffd4cd3f3ddb810d007b35279d70a39a0e6a48990646670214e63e5221e03"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/narration-plan.json",
+      "sha256": "c167e0622dc97a1c2af36461b16719fb25dffda8f59ee5403d3ee96fb12db7cb"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/production-brief.json",
+      "sha256": "7eedb733adb1872d1cb9a9b8ec8991a8f9c027892e405c682714365f80be129f"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/README.md",
+      "sha256": "d4bd6475eeb6c7e9701c0c002b6ae3c3824da94539575700159a50b423e03e3d"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/remotion-props.json",
+      "sha256": "ce59da87562a6daf8d8fed562d45191c9e1e15c969a53e36a9820e8e77c6fa9d"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/runtime-boundary-check.json",
+      "sha256": "6f155f8ad76003a25953f9973721a636106131f4257ea3d767e00825dd129498"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/runtime-global-12400.html",
+      "sha256": "8ed03a38dd770035a151c447531b983746f86b061d226e4477d1c8ebc051472f"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/runtime-global-12401.html",
+      "sha256": "ddff2cde1f437f6487306181a1278b824c66bea819bc178f41e60d36a3d9375f"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/runtime-global-12760.html",
+      "sha256": "7a8e1ba89fcf1f5fd0c9bb875d1d84deb20a5926ffc04a14b514a105382d3c4a"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/runtime-global-12761.html",
+      "sha256": "cd488817c69e845652018c9614eb99bf9a8511ee7bec6c814f0b65d898628439"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/runtime-global-12762.html",
+      "sha256": "52dde6968c0aded6416a5d4e4e0bb3d37eb1cfb60207bf59da162ef8e5712084"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/runtime-global-12777.html",
+      "sha256": "8ff2bb980a7c691d49f262d046b7b28935f50c5f8958cee145b0566aa4cc8a1c"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/traceability.json",
+      "sha256": "2f194a040263454fd5ab32b5e53762ba33cdcbf08f1f547824f9fabf69a43bc8"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/verify-runtime-boundaries.mjs",
+      "sha256": "6ab343ca408747cdae0445f8376006e22bdefbfb5062973dff223f3c0f03157a"
+    },
+    {
+      "path": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/visual-implementation-proposal.json",
+      "sha256": "bb95efdddae0486817014bc47eb6eb4d7a0b59f08c6a84aa24e3d85ccb3798ad"
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "node",
+        "scripts/check-production-brief.mjs",
+        "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/production-brief.json",
+        "--stage=draft"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"ready\": true,\n  \"stage\": \"draft\",\n  \"blockers\": [],\n  \"pending\": [\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Script/source review: pending\"\n    },\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Exact voiced preview: pending\"\n    },\n    {\n      \"code\": \"BRIEF_REVIEW_PENDING\",\n      \"detail\": \"Human listening: pending\"\n    }\n  ],\n  \"source\": {\n    \"lessonPath\": \"docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/lesson.json\",\n    \"lessonSha256\": \"543ffd4cd3f3ddb810d007b35279d70a39a0e6a48990646670214e63e5221e03\"\n  },\n  \"limitation\": \"Checks evidence presence, declared scope and exact dependencies. Does not judge teaching quality, verify reviewer identity or invent listening approval.\"\n}\n",
+      "stderr": "(node:16628) ExperimentalWarning: Importing JSON modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/validate-lesson.mjs",
+        "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/revision-02/lesson.json"
+      ],
+      "exitCode": 0,
+      "stdout": "\nC:\\lesson-video-generator\\docs\\production\\drafts\\module5-plants-beginner-selected-2026-10-10\\revision-02\\lesson.json\n  warning: root: consider adding \"syllabusDotPoints\" (syllabus coverage tracking)\n  warning: scene[1] (b3-hook): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[2] (b3-flower): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[3] (b3-delivery): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[4] (b3-seed): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[5] (b3-runner): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[6] (b3-self-cross): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[7] (b3-worked): consider adding \"coachNote\" (target/method decision)\n  warning: scene[8] (b3-conditions): consider adding \"callout\" (student-thinking prompt)\n  warning: scene[10] (b3-check-feedback): consider adding \"coachNote\" (target/method decision)\n  warning: lesson should include a \"quickCheck\" scene\n  warning: lesson should include a \"misconception\" scene\n",
+      "stderr": ""
+    }
+  ],
+  "runtimePackages": [
+    {
+      "path": "node_modules/remotion/package.json",
+      "sha256": "69a540bcbd016a9af8441b8bb34259d04eb6279aae135544b5bf8a08d6453ce0"
+    },
+    {
+      "path": "node_modules/@remotion/player/package.json",
+      "sha256": "e7423bf1e1ba9fc3c79490dde0ae6f0fcde8f539fe3fc752c709838a404005de"
+    },
+    {
+      "path": "node_modules/@remotion/transitions/package.json",
+      "sha256": "b46728ce773e0bdbf65778ed11756c1e0358645785f0fc970092d0b2602da78b"
+    },
+    {
+      "path": "node_modules/react/package.json",
+      "sha256": "ce01a280a6109d1a837e88ce99784f318785079dbffda086a870aad61adc94e1"
+    },
+    {
+      "path": "node_modules/react-dom/package.json",
+      "sha256": "92aa96480eaab724565c5bb8a4b1dd355114506e5babd36c48c783407ff9937d"
+    },
+    {
+      "path": "node_modules/esbuild/package.json",
+      "sha256": "63c56f3176b0503f074a6a0c862c7c99d591b27139dde6d8b838824c988c5905"
+    }
+  ],
+  "limitation": "Runtime metadata and server markup verify source/component mounting only. All response timings remain unmeasured; spatial integration, native pixels, listening and downstream approvals remain pending."
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "proposed-bounded-interface-not-implemented",
+  "scope": "Selected chem-m5-c03 only. Existing registered graph defaults, types and sources remain unchanged. Do not attach an unsupported diagram kind to the current draft.",
+  "blockedScenes": ["c3-hook", "c3-add", "c3-remove", "c3-principle", "c3-temperature", "c3-temperature-response"],
+  "currentTreatment": "Meaningful HookSlide comparison cards and full-width ConceptSlide concise labelled text. The accepted graph, reference and association progression has not been completed by these provisional treatments.",
+  "proposedInterface": {
+    "componentPath": "src/slides/diagrams/kinds/chem-y12-m5/Module5DisturbanceDiagram.tsx",
+    "kind": "chem12m5Disturbance",
+    "props": {
+      "mode": "'additionHook' | 'addA' | 'removeB' | 'fixedK' | 'associationHeat' | 'temperatureResponse'",
+      "at": "Record<string, number>: nonnegative local scene frames, no internal delay subtraction",
+      "model": "Optional declared model record: initialA 2, initialB 1, forwardCoefficient 1, reverseCoefficient 2; addition/removal specified by mode",
+      "temperatureEvent": "Optional 'heating' | 'cooling'; written equation always 2NO₂(g) ⇌ N₂O₄(g), forward heat-releasing",
+      "phaseLabels": "Explicit original, imposed event, finite approach and separate exact limiting reference. No exact finite equilibrium timestamp."
+    },
+    "rootHooksNeeded": [
+      "Approve bounded component ownership and isolated implementation, then add one opt-in registry entry. No default legacy replacement.",
+      "Choose a full-width selected board entry in ConceptSlide only if the existing diagramFocus shell cannot retain large essential labels. A proposed new optional conceptBoard field needs explicit type/renderer review; do not cast unsupported props into this draft.",
+      "Wire only after actual source/component review. Replace the provisional selected treatments additively, bind changed hashes and rerun exact-source review."
+    ]
+  },
+  "sceneContracts": [
+    {"sceneId": "c3-hook", "mode": "additionHook", "cues": {"event": "Now we briefly add more A", "response": "Any extra B has to be made by reaction"}, "required": "A-only upward step; B unchanged through the direct-change explanation. One mixture, original reference ghost, equation visible. No extra rate graph."},
+    {"sceneId": "c3-add", "mode": "addA", "cues": {"event": "A's concentration rises immediately", "rateReason": "Straight after mixing", "response": "A now falls from its jump", "limit": "In this model, the new equilibrium"}, "required": "A 2 to 5 then tends to 4; B 1 continuous then tends to 2. One same-scale concentration graph; separate rate-reason label. Original, immediately after transfer and limiting references. Limit is exact reference, finite trace is approaching."},
+    {"sceneId": "c3-remove", "mode": "removeB", "cues": {"event": "B drops immediately", "response": "B starts rising", "originalCompare": "But compare B with its original level"}, "required": "Independent reset A = 2, B = 1. B-only step to 0.5 then limit 5/6; A continuous to 5/3. Original B reference retained to show partial replacement. No addition final state carried over."},
+    {"sceneId": "c3-principle", "mode": "fixedK", "cues": {"defineK": "We also need a new term", "sameK": "Adding or removing A or B"}, "required": "Original and changed equilibrium reference only; constant-temperature same-K badge. No products-over-reactants formula, measured numeric K or composition-driven K meter."},
+    {"sceneId": "c3-temperature", "mode": "associationHeat", "cues": {"association": "Two nitrogen dioxide molecules", "exothermic": "A heat-releasing reaction is exothermic", "reverse": "The reverse direction absorbs heat", "heating": "Heating favours", "cooling": "Cooling favours"}, "required": "Two distinct NO₂ molecules and one N₂O₄ conserve two N/four O. Net relationship illustration, not full mechanism. Forward releases heat, reverse absorbs. Sequential heat-direction comparison; schematic colour context, no concentration measurement."},
+    {"sceneId": "c3-temperature-response", "mode": "temperatureResponse", "cues": {"event": "Now separate the temperature change", "continuousConcentrations": "Their concentrations therefore do not jump", "defineNewK": "K has a value for the new temperature", "response": "Hold the new temperature fixed"}, "required": "Closed fixed-volume temperature event updates qualitative T/K together. Concentration traces are continuous then respond. K follows T, never conversion. Ramp must be labelled if used. Separate limiting reference, no arbitrary numeric K or recycled one-to-one atom conservation."}
+  ],
+  "consumerUnits": {"BulletReveal.at": "seconds", "revealDelays": "frames", "focusedContext.at": "local scene frames", "stage.lineAts": "local scene frames", "proposedDiagram.at": "local scene frames with no extra delay subtraction"},
+  "readabilityContract": "Essential coded graph/entity labels at least 50px at 1920x1080, fit actual native board; limit context to necessary facts. Reserve lower region from about y850 for player captions. Measure wrapping and header/context/working bottom bounds; geometry estimates are not observation or whole-lesson clearance.",
+  "legacyRestrictions": ["Do not select ExchangeDiagram's 4 percent tolerance marker as exact equilibrium.", "Do not relabel SignaturesDiagram A ⇌ 2B as one-to-one A ⇌ B.", "Do not select HeatShiftDiagram's composition-progress-driven K meter.", "Do not interpret colour or arbitrary particle counts as measured concentrations."],
+  "downstream": "Exact fresh alignment supplies event/reason/result cues after accepted selected source and recording-stage checks. No code, native frame, voiced observation or independent selected-source approval supplied by this proposal."
+}

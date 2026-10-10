@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "status": "author-frozen-source-preparation-only",
+  "authorValidation": {
+    "path": "docs/production/calculation-simple-working-2026-10-10/author-validation.json",
+    "sha256": "8da6ea90d4d7f46b63d704e819851def187f8ebc5285d2b13409e15d40e8e284"
+  },
+  "packages": [
+    {
+      "key": "limiting",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/limiting/narrated.lesson.json",
+      "sourceSha256": "a05f3d2f43357cea376b2e1d956cffaaf0ca395ea81da8b016be6ee7e56cb1f2",
+      "briefPath": "docs/production/calculation-simple-working-2026-10-10/limiting/production-brief.json",
+      "briefSha256": "61f71123adb764267a6c2105f88c3aaedbab3da53cee578fc6609625c8d98c5d",
+      "configPath": "docs/production/calculation-simple-working-2026-10-10/limiting/pilot-config.json",
+      "configSha256": "32e282ca3e263c48ed7dee441257dc011e94265fedf18d99767ee7ce478c76a9",
+      "draftBriefCheck": {
+        "ready": true,
+        "blockers": [],
+        "pending": [
+          "Script/source review",
+          "Exact voiced preview",
+          "Human listening"
+        ]
+      },
+      "note": "Observed actual check-production-brief.mjs --stage=draft results; readiness is draft structure only, not export readiness."
+    },
+    {
+      "key": "empirical-formulas",
+      "sourcePath": "out/prototypes/calculation-simple-working-2026-10-10/empirical-formulas/narrated.lesson.json",
+      "sourceSha256": "50854468d743c26f40e137e6a07d61a1ba76886a5f8d97671447bb6bb83a34ef",
+      "briefPath": "docs/production/calculation-simple-working-2026-10-10/empirical-formulas/production-brief.json",
+      "briefSha256": "8707ca426ecf0c7f8621048532cc3c0f59b49cb89e60915d419fcd7d9e3a2a02",
+      "configPath": "docs/production/calculation-simple-working-2026-10-10/empirical-formulas/pilot-config.json",
+      "configSha256": "1310d7dd5207455d26f105f5df9a64d6ef1d156c1c432a58e2db9b60a4fddf33",
+      "draftBriefCheck": {
+        "ready": true,
+        "blockers": [],
+        "pending": [
+          "Script/source review",
+          "Exact voiced preview",
+          "Human listening"
+        ]
+      },
+      "note": "Observed actual check-production-brief.mjs --stage=draft results; readiness is draft structure only, not export readiness."
+    }
+  ],
+  "rootOwnedSharedComponentsReadAtFinalCheck": [
+    {
+      "path": "src/lesson/types.ts",
+      "sha256": "67600ae68f7879fd42b956af003a66f0c0e5b366e19527ffc9d41f26a0f64082"
+    },
+    {
+      "path": "src/slides/shared/OrganisedCalculation.tsx",
+      "sha256": "85b896120ec0cc40f27374cc83a78d94e4ab4f7f0a9263b0b0508103d2153e8d"
+    }
+  ],
+  "schemaCheck": "Root implementation supports the agreed optional retainedStageIndexes and phases. Existing lineAts are carried into later phases so subtraction does not re-fade. Card entrance uses original stage cue. Source reading is separate from actual native or motion observation.",
+  "actualChecks": [
+    "Exact parent/candidate/tracked-copy/config/brief hashes agree with frozen author record",
+    "All selected audio/alignment hashes remain equal to recorded author bindings",
+    "Both actual draft-stage brief checks ready true with no blockers and all reviews pending",
+    "No new em dashes in authored JSONs",
+    "Pinned baseline runtime remains separate and untouched by this author"
+  ],
+  "nativeObservation": null,
+  "humanListening": "pending",
+  "independentReview": "pending-different-reviewer",
+  "scope": "No full export, paid voice, renderer/source integration outside owned candidate directories, or approval."
+}

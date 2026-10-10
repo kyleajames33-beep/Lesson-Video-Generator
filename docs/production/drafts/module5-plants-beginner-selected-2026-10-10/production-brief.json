@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "source": {
+    "lessonPath": "docs/production/drafts/module5-plants-beginner-selected-2026-10-10/lesson.json",
+    "lessonSha256": "ef61ae0d2fdf7ac0dbff1db569b98f7f67b01a161c49752c36c4f695dda3133b"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "reproduction connects generations; cells contain inherited information in DNA; gametes are reproductive cells; sexual reproduction involves fusion of gametes, while asexual reproduction does not. Basic root, stem and leaf vocabulary helps with a runner. `bio-m5-b01` is the canonical prerequisite. Its selected draft provides the fusion criterion and a strawberry runner example; it is support material, not a presumed public upload. The animal contribution `bio-m5-b02a` is preceding playlist context, but its internal/external classification and chromosome-set model are not prerequisites for the plant explanation.",
+    "startsWith": "one strawberry plant can produce a new plant from a runner. A self-compatible flowering plant can also supply both gametes in a sexual reproductive event. One visible parent does not settle the classification.",
+    "stopsAfter": "the learner can explain pollen transfer, pollen-tube delivery and sperm-egg fusion in the supplied flowering-plant model; distinguish zygote-to-embryo development from ovule-to-seed development; explain strawberry runner propagation without fusion; classify supplied self-fertilisation and cross-fertilisation cases by fusion; and predict why interrupting the delivery pathway can prevent fusion despite successful pollination. Conditions and later establishment remain distinct from classification.",
+    "nextLesson": "the fungi, bacteria and protists contributions to `bio-m5-b02b` remain to be prepared and reviewed. They need their own named mechanisms and organism limits. After those group contributions, the existing canonical route points to `bio-m5-b03a` for mammalian fertilisation, implantation, pregnancy and birth, and `bio-m5-b03b` for agricultural manipulation. This plant contribution does not justify skipping the missing groups. Root decides the final focused playlist subdivision."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/research/library-implementation-plan.md",
+    "docs/production/teaching-templates.md",
+    "docs/production/teaching-visual-brief-template.md",
+    "docs/visual-design-handbook.md",
+    "docs/animation-planning.md",
+    "docs/production/preview-first-review.md",
+    "docs/production/module5-video-route-2026-10-10.json",
+    "docs/production/course-progression-ledger-2026-10-09.json",
+    "docs/production/course-content-checklist-2026-10-09.json",
+    "docs/production/module5-beginner-next-selection-2026-10-10.json"
+  ],
+  "teaching": {
+    "task": "Explain sexual flowering-plant delivery/fusion and named strawberry runner propagation; classify supplied events and predict a stopped-tube pathway.",
+    "causalExplanation": "Pollen transfer supplies the starting structure, tube growth provides sperm delivery, and sperm-egg fusion forms the zygote developing into an embryo. The ovule develops into seed containing that embryo. A rooted runner plant develops without fusion. Classification depends on this event mechanism; later establishment is a separate condition.",
+    "conversationalApproach": "All 11 accepted spoken blocks remain exact. First-use meanings and supplied reasons precede classification. Screen labels are short authored anchors, not textbook paragraphs or replacement captions.",
+    "openingDecision": "One visible parent can participate in a runner event or self-fertilisation; disclosed contrasting fusion mechanisms, not a protected attempt.",
+    "understandingCheck": "Separate exact prompt and feedback scenes. Retain both Group 2 questions and all conditions throughout the prompt and hold: compatible/viable pollen, interrupted tubes, unfertilised eggs, no alternative route and stipulated embryo-fusion conditions. A planned 12-second silence follows fresh prompt speech with no transition overlap; measured boundaries and learner completion remain pending.",
+    "curriculumScope": "Current Biology (2017), Year 12 Module 5. Canonical bio-m5-b02b, plants delivery part 1 at canonical playlist position 3, contributes only B-plants. Official cached p1025/p1027 mapping retained, not full four-group action coverage. Fungi, bacteria, protists, practical conduct and agricultural evaluation remain open."
+  },
+  "scenes": [
+    {
+      "sceneId": "b3-title",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/TitleSlide.tsx",
+      "teachingReason": "Silent plant-only identity; no four-group coverage implied.",
+      "narrationCue": "Silent title.",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. All cue times are planning estimates until fresh alignment.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-hook",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/HookSlide.tsx supplied comparison cards",
+      "teachingReason": "Disclosed runner/fusion contrast; no generic atom or unrelated animal backdrop.",
+      "narrationCue": "[]",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. All cue times are planning estimates until fresh alignment.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-flower",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx full-width supported location board",
+      "teachingReason": "Large concise structure statements, in narrated order. Explicit containment wording avoids a false transformation arrow. Staged spatial nesting remains blocked.",
+      "narrationCue": "[{\"sceneId\": \"b3-flower\", \"field\": \"bullets.0.at\", \"phrase\": \"The anther makes pollen.\", \"characterOffset\": 55, \"wordPosition\": 9, \"estimatedFrame\": 116, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-flower\", \"field\": \"bullets.1.at\", \"phrase\": \"A pollen grain is not just a sperm cell.\", \"characterOffset\": 128, \"wordPosition\": 21, \"estimatedFrame\": 270, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-flower\", \"field\": \"bullets.2.at\", \"phrase\": \"The style lies between the stigma and the ovary.\", \"characterOffset\": 296, \"wordPosition\": 52, \"estimatedFrame\": 669, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-flower\", \"field\": \"bullets.3.at\", \"phrase\": \"Inside an ovule is an embryo sac\", \"characterOffset\": 372, \"wordPosition\": 65, \"estimatedFrame\": 836, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}]",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. All cue times are planning estimates until fresh alignment.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-delivery",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx full-width supported mechanism board",
+      "teachingReason": "Short transfer/delivery/fusion anchors. Tube and sperm identities remain explicit; an actual spatial delivery inset is not yet integrated.",
+      "narrationCue": "[{\"sceneId\": \"b3-delivery\", \"field\": \"bullets.0.at\", \"phrase\": \"Pollination means transferring pollen\", \"characterOffset\": 0, \"wordPosition\": 0, \"estimatedFrame\": 0, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-delivery\", \"field\": \"bullets.1.at\", \"phrase\": \"The tube grows through the style\", \"characterOffset\": 296, \"wordPosition\": 50, \"estimatedFrame\": 643, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-delivery\", \"field\": \"bullets.2.at\", \"phrase\": \"A sperm cell then joins the egg cell.\", \"characterOffset\": 409, \"wordPosition\": 71, \"estimatedFrame\": 913, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}]",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. All cue times are planning estimates until fresh alignment.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-seed",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx full-width supported structure board",
+      "teachingReason": "Different structure-to-development relationships and literal embryo-inside-seed wording. An actual nested seed model remains blocked.",
+      "narrationCue": "[{\"sceneId\": \"b3-seed\", \"field\": \"bullets.0.at\", \"phrase\": \"After that fusion\", \"characterOffset\": 0, \"wordPosition\": 0, \"estimatedFrame\": 0, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-seed\", \"field\": \"bullets.1.at\", \"phrase\": \"The surrounding ovule develops into a seed.\", \"characterOffset\": 93, \"wordPosition\": 15, \"estimatedFrame\": 193, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-seed\", \"field\": \"bullets.2.at\", \"phrase\": \"The ovary usually develops into the fruit\", \"characterOffset\": 281, \"wordPosition\": 48, \"estimatedFrame\": 618, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}]",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. All cue times are planning estimates until fresh alignment.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-runner",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx full-width supported runner board",
+      "teachingReason": "Stem, node and new rooted plant are distinct; no identical-clone or guaranteed-survival label. Rooted-node spatial progression remains blocked.",
+      "narrationCue": "[{\"sceneId\": \"b3-runner\", \"field\": \"bullets.0.at\", \"phrase\": \"A strawberry runner is a stem\", \"characterOffset\": 0, \"wordPosition\": 0, \"estimatedFrame\": 0, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-runner\", \"field\": \"bullets.1.at\", \"phrase\": \"A node is a point on the stem\", \"characterOffset\": 63, \"wordPosition\": 11, \"estimatedFrame\": 142, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-runner\", \"field\": \"bullets.2.at\", \"phrase\": \"At a suitable node\", \"characterOffset\": 121, \"wordPosition\": 25, \"estimatedFrame\": 322, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-runner\", \"field\": \"bullets.3.at\", \"phrase\": \"That builds the new plant without sperm and egg joining.\", \"characterOffset\": 312, \"wordPosition\": 62, \"estimatedFrame\": 798, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}]",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. All cue times are planning estimates until fresh alignment.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-self-cross",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx full-width supported source/destination board",
+      "teachingReason": "Same/different plant source precedes conditional fusion; no transfer arrow treated as proof of fusion.",
+      "narrationCue": "[{\"sceneId\": \"b3-self-cross\", \"field\": \"bullets.0.at\", \"phrase\": \"Self-pollination means pollen\", \"characterOffset\": 0, \"wordPosition\": 0, \"estimatedFrame\": 0, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-self-cross\", \"field\": \"bullets.1.at\", \"phrase\": \"Cross-pollination means pollen\", \"characterOffset\": 92, \"wordPosition\": 14, \"estimatedFrame\": 180, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-self-cross\", \"field\": \"bullets.2.at\", \"phrase\": \"When compatible pollen leads to sperm joining an egg\", \"characterOffset\": 287, \"wordPosition\": 44, \"estimatedFrame\": 566, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}]",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. All cue times are planning estimates until fresh alignment.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-worked",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/WorkedExampleSlide.tsx and src/slides/shared/Module5EvidenceBoard.tsx",
+      "teachingReason": "Focused context replaces each earlier case before its own classification cue. Supplied fusion reason precedes classification; no accumulated three-case paragraph trail.",
+      "narrationCue": "[{\"sceneId\": \"b3-worked\", \"field\": \"focusedContext.1.at\", \"phrase\": \"Second, a self-compatible\", \"characterOffset\": 246, \"wordPosition\": 42, \"estimatedFrame\": 540, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-worked\", \"field\": \"focusedContext.2.at\", \"phrase\": \"Third, pollen comes\", \"characterOffset\": 443, \"wordPosition\": 73, \"estimatedFrame\": 939, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-worked\", \"field\": \"stepAts.0\", \"phrase\": \"The prompt confirms there is no gamete fusion.\", \"characterOffset\": 113, \"wordPosition\": 20, \"estimatedFrame\": 258, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-worked\", \"field\": \"stepAts.1\", \"phrase\": \"Fusion occurs, so that event is sexual\", \"characterOffset\": 357, \"wordPosition\": 58, \"estimatedFrame\": 746, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-worked\", \"field\": \"stepAts.2\", \"phrase\": \"Fusion makes this event sexual too.\", \"characterOffset\": 528, \"wordPosition\": 86, \"estimatedFrame\": 1106, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-worked\", \"field\": \"stages.0.lineAts.0\", \"phrase\": \"A new plant develops from the stem\", \"characterOffset\": 160, \"wordPosition\": 28, \"estimatedFrame\": 360, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-worked\", \"field\": \"stages.0.lineAts.1\", \"phrase\": \"so that event is asexual vegetative propagation.\", \"characterOffset\": 196, \"wordPosition\": 35, \"estimatedFrame\": 450, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}]",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. All cue times are planning estimates until fresh alignment.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-conditions",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx full-width supported conditions board",
+      "teachingReason": "Necessary conditions, sexual delivery constraints and later survival limits; no winner badge or made-up counts.",
+      "narrationCue": "[{\"sceneId\": \"b3-conditions\", \"field\": \"bullets.0.at\", \"phrase\": \"Suppose pollen transfer becomes limited\", \"characterOffset\": 0, \"wordPosition\": 0, \"estimatedFrame\": 0, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-conditions\", \"field\": \"bullets.1.at\", \"phrase\": \"The sexual pathway can combine inherited information\", \"characterOffset\": 245, \"wordPosition\": 38, \"estimatedFrame\": 489, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-conditions\", \"field\": \"bullets.2.at\", \"phrase\": \"Neither promises that the resulting plant will survive\", \"characterOffset\": 442, \"wordPosition\": 65, \"estimatedFrame\": 836, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}]",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. All cue times are planning estimates until fresh alignment.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-check-prompt",
+      "visualDecision": "adjust",
+      "visualReference": "src/slides/ConceptSlide.tsx full-width stimulus board, separate prompt scene",
+      "teachingReason": "Five short supplied-condition bullets and both question demands remain through the proposed hold. Separate scene prevents an answer panel from appearing. No misleading completed-task countdown.",
+      "narrationCue": "[{\"sceneId\": \"b3-check-prompt\", \"field\": \"revealDelays.callout\", \"phrase\": \"Pause here to work it through.\", \"characterOffset\": 512, \"wordPosition\": 81, \"estimatedFrame\": 1042, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}]",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. All cue times are planning estimates until fresh alignment.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-check-feedback",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/WorkedExampleSlide.tsx and src/slides/shared/Module5EvidenceBoard.tsx",
+      "teachingReason": "One active reason with relevant interrupted-delivery stimulus. Feedback is separate from the protected attempt; no accumulated answer trail.",
+      "narrationCue": "[{\"sceneId\": \"b3-check-feedback\", \"field\": \"stepAts.1\", \"phrase\": \"But the tubes stop\", \"characterOffset\": 53, \"wordPosition\": 7, \"estimatedFrame\": 90, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-check-feedback\", \"field\": \"stepAts.2\", \"phrase\": \"Without that delivery\", \"characterOffset\": 123, \"wordPosition\": 20, \"estimatedFrame\": 258, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-check-feedback\", \"field\": \"stepAts.3\", \"phrase\": \"The model also gives no basis\", \"characterOffset\": 319, \"wordPosition\": 53, \"estimatedFrame\": 682, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-check-feedback\", \"field\": \"stages.0.lineAts.0\", \"phrase\": \"pollen reached the stigma.\", \"characterOffset\": 26, \"wordPosition\": 3, \"estimatedFrame\": 39, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-check-feedback\", \"field\": \"stages.2.lineAts.1\", \"phrase\": \"No zygote forms\", \"characterOffset\": 192, \"wordPosition\": 32, \"estimatedFrame\": 412, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}]",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. All cue times are planning estimates until fresh alignment.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    },
+    {
+      "sceneId": "b3-summary",
+      "visualDecision": "reuse",
+      "visualReference": "src/slides/SummarySlide.tsx",
+      "teachingReason": "Compact relationship anchors and explicit missing-group next handoff, with no full module/practical coverage claim.",
+      "narrationCue": "[{\"sceneId\": \"b3-summary\", \"field\": \"takeawayAts.0\", \"phrase\": \"In our sexual flowering-plant example\", \"characterOffset\": 39, \"wordPosition\": 5, \"estimatedFrame\": 65, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-summary\", \"field\": \"takeawayAts.1\", \"phrase\": \"The ovule develops into a seed\", \"characterOffset\": 156, \"wordPosition\": 21, \"estimatedFrame\": 270, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-summary\", \"field\": \"takeawayAts.2\", \"phrase\": \"A strawberry runner makes\", \"characterOffset\": 211, \"wordPosition\": 30, \"estimatedFrame\": 386, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-summary\", \"field\": \"takeawayAts.3\", \"phrase\": \"Self-pollination and cross-pollination\", \"characterOffset\": 272, \"wordPosition\": 40, \"estimatedFrame\": 515, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}, {\"sceneId\": \"b3-summary\", \"field\": \"revealDelays.finalPrompt\", \"phrase\": \"The next contributions compare\", \"characterOffset\": 441, \"wordPosition\": 62, \"estimatedFrame\": 798, \"unit\": \"scene-local frames\", \"basis\": \"Word-position planning estimate at a hypothetical 140 words/minute, not alignment or selected voice delivery.\"}]",
+      "motionPurpose": "Narrated-order label reveals and stable reading. No generic movement or unrelated scene decorations. All cue times are planning estimates until fresh alignment.",
+      "holdPurpose": "Preserve the current relationship and necessary facts; clear unrelated cases. Prompt retains every demand/condition and has no answer content. Actual native fit, measured silence and voiced/device review remain pending."
+    }
+  ],
+  "scriptReview": {
+    "status": "pending",
+    "reviewer": "",
+    "evidence": null
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Accepted human-readable preparation review does not pass this exact selected JSON. Essential spatial model integrations and native/narrow caption checks remain pending; source and silent board estimates do not establish voiced playback, human listening, practical/action completion, recording or release approval."
+}
